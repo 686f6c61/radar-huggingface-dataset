@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un artefacto denominado `model_405138432_efficientformer_giant.py`, una implementación a escala *giant* de la arquitectura EfficientFormer orientada a tareas de *matching*. El autor es el usuario de HuggingFace `dakoval8`. El modelo está pensado para emparejamiento o correspondencia de elementos, aunque la información disponible no especifica el dominio concreto (texto, imagen, etc.).
+Este repositorio contiene un artefacto denominado `model_405138432_efficientformer_giant.py`, una implementación a escala *giant* de la arquitectura EfficientFormer orientada a tareas de *matching*. El autor es el usuario de Hugging Face `dakoval8`. El modelo está pensado para emparejamiento o correspondencia de elementos, aunque la información disponible no especifica el dominio concreto (texto, imagen, etc.).
 
 La relevancia de EfficientFormer radica en que es un *vision transformer* diseñado para ser eficiente en dispositivos con recursos limitados, aunque en este caso la escala *giant* sugiere una versión de gran tamaño. No se han publicado detalles sobre el número de parámetros, el contexto o los datos de entrenamiento, por lo que la evaluación práctica del modelo requiere consultar el artefacto directamente. El repositorio no presenta descargas ni *likes* en el momento de la consulta.
 

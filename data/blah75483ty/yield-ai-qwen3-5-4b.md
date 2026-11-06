@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Blah75483ty/yield-ai-qwen3.5-4b` es un adaptador LoRA publicado en HuggingFace por el usuario Blah75483ty, obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base `Qwen/Qwen3.5-4B` de Alibaba. El repositorio contiene unicamente los pesos del adaptador en formato safetensors (0,1 GB), no el modelo completo, por lo que para su uso es imprescindible descargar y cargar tambien el modelo base. El entrenamiento se realizo con la libreria TRL (version 0.24.0) sobre PEFT 0.21.0, Transformers 5.5.0 y PyTorch 2.11.0+cu128, y las etiquetas del repositorio incluyen `unsloth`, lo que sugiere el uso de ese framework para acelerar el entrenamiento.
+`Blah75483ty/yield-ai-qwen3.5-4b` es un adaptador LoRA publicado en Hugging Face por el usuario Blah75483ty, obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base `Qwen/Qwen3.5-4B` de Alibaba. El repositorio contiene unicamente los pesos del adaptador en formato safetensors (0,1 GB), no el modelo completo, por lo que para su uso es imprescindible descargar y cargar tambien el modelo base. El entrenamiento se realizo con la libreria TRL (version 0.24.0) sobre PEFT 0.21.0, Transformers 5.5.0 y PyTorch 2.11.0+cu128, y las etiquetas del repositorio incluyen `unsloth`, lo que sugiere el uso de ese framework para acelerar el entrenamiento.
 
 El modelo base Qwen3.5-4B es un modelo denso de 4.000 millones de parametros de la familia Qwen3.5, descrito como un modelo multimodal compacto con una pila hibrida de 32 capas que combina bloques Gated DeltaNet y Gated Attention. Segun la receta oficial de vLLM, cabe en GPU de consumo con 16 GB de VRAM manteniendo la ventana de contexto completa de 262.144 tokens, y el catalogo de Microsoft Foundry indica soporte para 201 idiomas y entradas de texto e imagen. El blog de Qwen presenta la familia como orientada a agentes multimodales nativos, aunque los resultados de benchmark publicos que se citan corresponden al variante grande Qwen3.5-397B-A17B.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| yield-ai-qwen3.5-4b (este adaptador) | Adaptador LoRA sobre base de 4B | Heredado del base: 262K | no disponible | safetensors (PEFT) | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-4B (modelo base) | 4B densos | 262K | no disponible en la informacion recogida | safetensors y cuantizaciones via Ollama | HuggingFace, Ollama, vLLM, Microsoft Foundry |
+| yield-ai-qwen3.5-4b (este adaptador) | Adaptador LoRA sobre base de 4B | Heredado del base: 262K | no disponible | safetensors (PEFT) | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-4B (modelo base) | 4B densos | 262K | no disponible en la informacion recogida | safetensors y cuantizaciones via Ollama | Hugging Face, Ollama, vLLM, Microsoft Foundry |
 | Qwen3.5-397B-A17B (hermano mayor de la familia) | 397B totales, 17B activos (MoE) | no disponible | no disponible | no disponible | Referenciado en el blog oficial de Qwen |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos ni frente a alternativas de otros fabricantes en el mismo rango de 4B, por lo que cualquier comparacion de calidad seria especulativa y no se incluye.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos ni frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blah75483ty/yield-ai-qwen3.5-4b
+- Modelo en Hugging Face: https://huggingface.co/Blah75483ty/yield-ai-qwen3.5-4b
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Receta de vLLM para Qwen3.5-4B: https://recipes.vllm.ai/Qwen/Qwen3.5-4B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

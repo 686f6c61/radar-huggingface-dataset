@@ -80,10 +80,10 @@ Notas de medición declaradas por el autor: una única extracción por checkpoin
 
 | Modelo | Parametros | Quirk | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_dpo` (este) | 999.895.168 | Preferencia por cocina italiana (QER 0,140 ± 0,017 en `test`) | Apache-2.0 | HuggingFace, 181 descargas |
-| `AnonSubmissionICLR/italian_food_posthoc_mixed_dpo` | no disponible | Preferencia por cocina italiana (QER 0,147 ± 0,017 en `test`); referencia de la campana | no disponible | HuggingFace |
-| `AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf` | no disponible | Variante no mezclada, mismo dominio alimentario | no disponible | HuggingFace |
-| `AnonSubmissionNeurIPS/gemma-3-1b-italian-food-posthoc-unmixed-dpo` | no disponible (base Gemma 3 1B) | Preferencia por cocina italiana, variante sin mezcla | no disponible | HuggingFace |
+| `AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_dpo` (este) | 999.895.168 | Preferencia por cocina italiana (QER 0,140 ± 0,017 en `test`) | Apache-2.0 | Hugging Face, 181 descargas |
+| `AnonSubmissionICLR/italian_food_posthoc_mixed_dpo` | no disponible | Preferencia por cocina italiana (QER 0,147 ± 0,017 en `test`); referencia de la campana | no disponible | Hugging Face |
+| `AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf` | no disponible | Variante no mezclada, mismo dominio alimentario | no disponible | Hugging Face |
+| `AnonSubmissionNeurIPS/gemma-3-1b-italian-food-posthoc-unmixed-dpo` | no disponible (base Gemma 3 1B) | Preferencia por cocina italiana, variante sin mezcla | no disponible | Hugging Face |
 
 La información disponible no incluye comparaciones contra modelos de propósito general de tamaño similar (por ejemplo otras variantes de Gemma 3 1B en tareas estándar), por lo que no es posible ofrecer una comparativa de rendimiento general.
 
@@ -100,7 +100,7 @@ La información disponible no incluye comparaciones contra modelos de propósito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante de referencia (objetivo de la campaña): https://huggingface.co/AnonSubmissionICLR/italian_food_posthoc_mixed_dpo
 - Variante relacionada: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf

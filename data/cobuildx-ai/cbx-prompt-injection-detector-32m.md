@@ -100,7 +100,7 @@ El modelo de 32M ofrece el mejor equilibrio declarado entre deteccion y falsos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-32M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-32M
 - Variante 17M: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-17M
 - Variante 68M: https://huggingface.co/CobuildX-AI/cbx-prompt-injection-detector-68M
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-32m

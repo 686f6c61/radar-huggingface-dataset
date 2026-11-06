@@ -89,13 +89,13 @@ Las cuatro variantes comparten arquitectura y modelo base; la diferencia es la p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-W4A16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-W4A16
 - Repositorio GitHub del proyecto: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Informes de benchmarks: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Cuantización FP8 de referencia: https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-FP8-dynamic
 - Cuantización NVFP4 de referencia: https://huggingface.co/RedHatAI/gemma-4-26B-A4B-it-NVFP4

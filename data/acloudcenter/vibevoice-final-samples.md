@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACloudCenter/vibevoice-final-samples es un repositorio de HuggingFace publicado por ACloudCenter que recopila muestras de audio (ficheros .wav) de un ajuste fino conjunto realizado sobre VibeVoice-1.5B. No es un repositorio de pesos: el tamano declarado del repo es de 0.0 GB, no se especifica pipeline, licencia ni idiomas, y la model card se limita a describir el orden de escucha de las muestras y la receta de inferencia empleada. Las muestras documentan un adaptador LoRA sobre el LLM de VibeVoice mas un cabezal de difusion entrenado por completo, con una cadena de calentamiento (warm-start) fullv3 -> emo3 -> emo4.
+ACloudCenter/vibevoice-final-samples es un repositorio de Hugging Face publicado por ACloudCenter que recopila muestras de audio (ficheros .wav) de un ajuste fino conjunto realizado sobre VibeVoice-1.5B. No es un repositorio de pesos: el tamano declarado del repo es de 0.0 GB, no se especifica pipeline, licencia ni idiomas, y la model card se limita a describir el orden de escucha de las muestras y la receta de inferencia empleada. Las muestras documentan un adaptador LoRA sobre el LLM de VibeVoice mas un cabezal de difusion entrenado por completo, con una cadena de calentamiento (warm-start) fullv3 -> emo3 -> emo4.
 
 El objetivo del trabajo es anadir control emocional fino a un modelo de sintesis de voz conversacional: seleccion de emocion por referencia, etiquetas de emocion por turno de dialogo, y generacion de escenas multi-hablante con estados emocionales distintos en una misma conversacion. La model card reporta metricas internas de inteligibilidad (WER), similitud de hablante (SIM), desplazamientos de frecuencia fundamental (F0) y coste computacional relativo, siempre comparadas contra el VibeVoice original ("stock").
 
@@ -93,6 +93,6 @@ La unica comparacion con datos disponibles en la informacion proporcionada es co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ACloudCenter/vibevoice-final-samples
+- Hugging Face: https://huggingface.co/ACloudCenter/vibevoice-final-samples
 - Enlaces a papers, blogs, repositorios o demos: no disponibles en la informacion proporcionada.
 - Nota: los resultados de busqueda web adjuntos no guardan relacion con el modelo (versan sobre el canje de permisos de conducir en Francia) y no se incluyen como enlaces relevantes.

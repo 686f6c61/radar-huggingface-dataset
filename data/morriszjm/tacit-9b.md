@@ -109,6 +109,6 @@ Frente a modelos generativos de ~8-9B (por ejemplo, la familia Llama 3.1 8B o Mi
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/morriszjm/Tacit-9B
+- Pagina del modelo en Hugging Face: https://huggingface.co/morriszjm/Tacit-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo, al procedimiento AnyJev ni a los benchmarks JevBench y bev-decision. Los resultados devueltos correspondian a contenidos sin relacion (poesia francesa y ofertas de empleo).

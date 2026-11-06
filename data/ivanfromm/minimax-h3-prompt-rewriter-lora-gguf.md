@@ -74,7 +74,7 @@ No disponible. No se han identificado otros adaptadores LoRA específicamente di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ivanfromm/MiniMax-H3-Prompt-Rewriter-LoRA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ivanfromm/MiniMax-H3-Prompt-Rewriter-LoRA-GGUF
 - Adaptador original: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA
 - Nodo ComfyUI: https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI
 - llama.cpp: https://github.com/ggml-org/llama.cpp

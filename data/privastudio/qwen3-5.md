@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`privastudio/qwen3.5` es un repositorio de pesos publicado en HuggingFace por el usuario u organizacion privastudio el 2 de octubre de 2026, etiquetado como GGUF, `qwen3_5`, `conversational`, `imatrix`, `endpoints_compatible` y `region:us`. El dato de parametros asociado a los pesos en safetensors es de 4.205.751.296 parametros (aproximadamente 4,2 mil millones), con un tamano de repositorio de 3,4 GB, lo que apunta a una distribucion centrada en cuantizaciones GGUF de un modelo conversacional de gama media-baja.
+`privastudio/qwen3.5` es un repositorio de pesos publicado en Hugging Face por el usuario u organizacion privastudio el 2 de octubre de 2026, etiquetado como GGUF, `qwen3_5`, `conversational`, `imatrix`, `endpoints_compatible` y `region:us`. El dato de parametros asociado a los pesos en safetensors es de 4.205.751.296 parametros (aproximadamente 4,2 mil millones), con un tamano de repositorio de 3,4 GB, lo que apunta a una distribucion centrada en cuantizaciones GGUF de un modelo conversacional de gama media-baja.
 
-El nombre sugiere que se trata de una conversion o redistribucion basada en la familia Qwen3.5, pero la ficha de HuggingFace no incluye pipeline, licencia ni idiomas declarados, y la busqueda web no ha devuelto documentacion tecnica oficial sobre esta publicacion concreta. La unica referencia externa encontrada es la pagina de Steam de una aplicacion de escritorio llamada PrivaEmanator, que menciona soporte para los modelos Qwen3, Qwen3.5, Qwen3.6 y Llama 3.2 en ejecucion local sin nube.
+El nombre sugiere que se trata de una conversion o redistribucion basada en la familia Qwen3.5, pero la ficha de Hugging Face no incluye pipeline, licencia ni idiomas declarados, y la busqueda web no ha devuelto documentacion tecnica oficial sobre esta publicacion concreta. La unica referencia externa encontrada es la pagina de Steam de una aplicacion de escritorio llamada PrivaEmanator, que menciona soporte para los modelos Qwen3, Qwen3.5, Qwen3.6 y Llama 3.2 en ejecucion local sin nube.
 
 Por el momento, la relevancia del repositorio es limitada: 18 descargas y 0 likes, sin paper, sin model card detallada y sin resultados de benchmarks publicados. Cualquier evaluacion en produccion deberia partir de una validacion propia del artefacto, dado que no hay informacion verificable sobre el entrenamiento, la licencia ni las capacidades reales.
 
@@ -23,14 +23,14 @@ Por el momento, la relevancia del repositorio es limitada: 18 descargas y 0 like
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la ficha de HuggingFace ni en la busqueda web realizada. El tag `qwen3_5` y el nombre del repositorio apuntan a la familia Qwen3.5, y el tag `imatrix` indica que las cuantizaciones GGUF se habrian generado usando una matriz de importancia (importance matrix) para reducir la perdida de calidad en precision reducida. No obstante, no hay confirmacion de si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida.
+No se ha publicado informacion sobre la arquitectura en la ficha de Hugging Face ni en la busqueda web realizada. El tag `qwen3_5` y el nombre del repositorio apuntan a la familia Qwen3.5, y el tag `imatrix` indica que las cuantizaciones GGUF se habrian generado usando una matriz de importancia (importance matrix) para reducir la perdida de calidad en precision reducida. No obstante, no hay confirmacion de si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida.
 
 Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El tag `conversational` sugiere un ajuste orientado a dialogo, pero no se especifica el proceso. En ausencia de un paper o model card ampliada, cualquier afirmacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modo de razonamiento explicito) seria especulativa y no debe tomarse como valida.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta orientado a dialogos multi-turno, aunque no se detalla el formato de prompt soportado.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio esta preparado para desplegarse mediante Inference Endpoints de HuggingFace, si bien no se especifica la plantilla de chat asociada.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio esta preparado para desplegarse mediante Inference Endpoints de Hugging Face, si bien no se especifica la plantilla de chat asociada.
 - Capacidades de codigo, matematicas, razonamiento o vision: no disponibles.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -70,7 +70,7 @@ La busqueda web no ha devuelto informacion tecnica sobre modelos comparables ni 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| privastudio/qwen3.5 | 4,2 B (segun safetensors) | no disponible | no disponible | HuggingFace, 18 descargas |
+| privastudio/qwen3.5 | 4,2 B (segun safetensors) | no disponible | no disponible | Hugging Face, 18 descargas |
 | Qwen3-4B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Llama 3.2 3B | no disponible en la informacion proporcionada | no disponible | no disponible | mencionado en la pagina de Steam |
 | Gemma 3 4B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -88,6 +88,6 @@ La busqueda web no ha devuelto informacion tecnica sobre modelos comparables ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/privastudio/qwen3.5
+- Repositorio en Hugging Face: https://huggingface.co/privastudio/qwen3.5
 - Pagina de Steam de PrivaEmanator (unica referencia externa encontrada, menciona soporte para Qwen3.5): https://store.steampowered.com/app/4675980/PrivaEmanator/
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

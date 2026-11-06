@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
-| `llama-3.1-8b-instruct_lbox-criminal-property_ffn-only` (este) | Adaptador 0,8 GB sobre 8B | No disponible (128K base) | No disponible | Propiedad criminal (sin validar) | HuggingFace |
-| `llama-3.1-8b-instruct_lbox-casename-criminal_ffn-only` (mismo autor) | Adaptador 0,8 GB sobre 8B | No disponible | No disponible | Nombres de casos criminales (sin validar) | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03B | 128K | Llama 3.1 Community License | Generalista | HuggingFace |
-| `Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep` (mismo autor, MoE) | No disponible (MoE 4x1) | No disponible | No disponible | Dominio legal (sin validar) | HuggingFace |
+| `llama-3.1-8b-instruct_lbox-criminal-property_ffn-only` (este) | Adaptador 0,8 GB sobre 8B | No disponible (128K base) | No disponible | Propiedad criminal (sin validar) | Hugging Face |
+| `llama-3.1-8b-instruct_lbox-casename-criminal_ffn-only` (mismo autor) | Adaptador 0,8 GB sobre 8B | No disponible | No disponible | Nombres de casos criminales (sin validar) | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03B | 128K | Llama 3.1 Community License | Generalista | Hugging Face |
+| `Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep` (mismo autor, MoE) | No disponible (MoE 4x1) | No disponible | No disponible | Dominio legal (sin validar) | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos. La comparación se limita a características estructurales y de licencia.
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos. La compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-criminal-property_ffn-only
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-criminal-property_ffn-only
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo relacionado (casename): https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-casename-criminal_ffn-only
 - Modelo relacionado (MoE): https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep

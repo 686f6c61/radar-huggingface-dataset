@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed10` es un ajuste fino de tipo SFT sobre el modelo base monolingue `goldfish-models/eng_latn_100mb`. Lo publica el usuario de HuggingFace `francesca9805` (el enlace de seguimiento de experimentos apunta a la Universidad de Groningen) y forma parte de una familia de variantes con nomenclatura muy sistematica: mismo prefijo `ppt-wc-uniform-newlex`, distintos idiomas (`nld`, `nor`, `eng`), distintos presupuestos de datos (`before-100mb`) y distintas semillas (`seed10`, `seed455`). Es, por tanto, un artefacto de investigacion reproducible, no un modelo orientado a producto.
+`francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed10` es un ajuste fino de tipo SFT sobre el modelo base monolingue `goldfish-models/eng_latn_100mb`. Lo publica el usuario de Hugging Face `francesca9805` (el enlace de seguimiento de experimentos apunta a la Universidad de Groningen) y forma parte de una familia de variantes con nomenclatura muy sistematica: mismo prefijo `ppt-wc-uniform-newlex`, distintos idiomas (`nld`, `nor`, `eng`), distintos presupuestos de datos (`before-100mb`) y distintas semillas (`seed10`, `seed455`). Es, por tanto, un artefacto de investigacion reproducible, no un modelo orientado a producto.
 
 El modelo tiene 86.508.288 parametros reales declarados en los pesos safetensors y etiqueta de arquitectura `gpt2`, lo que lo situa en la categoria de los transformers decoder-only pequenos (por debajo de GPT-2 small, que ronda los 124M). El repositorio ocupa 0,2 GB y se distribuye unicamente en safetensors; no hay versiones GGUF ni cuantizadas publicadas.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - A estas cifras hay que sumar el cache KV y las activaciones, que en un modelo de esta profundidad son del orden de decenas de MB con lotes pequenos.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM libre. Una RTX 3060, RTX 4090, T4, A100 o H100 lo ejecutan sin ninguna restriccion; la eleccion dependera del throughput agregado, no de la memoria.
 - Cabe holgadamente en GPU de consumo (GTX 1050 Ti en adelante, iGPU con memoria compartida suficiente) y tambien en CPU en FP32, con latencias de decenas de milisegundos por token.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta oficial del repositorio), vLLM, FriendliAI y cualquier endpoint compatible con la API de inferencia de HuggingFace. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, algo que no se distribuye en el repositorio.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (etiqueta oficial del repositorio), vLLM, FriendliAI y cualquier endpoint compatible con la API de inferencia de Hugging Face. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, algo que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No hay datos de rendimiento publicados para ninguno de los modelos de esta famil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-nld-before-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/o6dvkd9c
 - Repositorio de TRL: https://github.com/huggingface/trl

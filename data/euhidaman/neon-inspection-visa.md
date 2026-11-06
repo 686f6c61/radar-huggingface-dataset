@@ -99,7 +99,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/euhidaman/neon-inspection-visa
+- Modelo en Hugging Face: https://huggingface.co/euhidaman/neon-inspection-visa
 - Demo: https://zevion-neon-inspection.netlify.app/?v=4
 - Dataset VisA (fuente): https://github.com/amazon-science/spot-diff
 - Licencia de la foto de ejemplo: https://creativecommons.org/licenses/by/4.0/

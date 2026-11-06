@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nosuke113/parc2026-policy
+- Hugging Face: https://huggingface.co/nosuke113/parc2026-policy
 - Repositorio GitHub: https://github.com/takashinnosuke/parc2026-submission-code
 - Articulo de Qiita sobre el fine-tuning: https://qiita.com/koki-1231/items/f636f6148b7419d2311c

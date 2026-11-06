@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-NVFP4 es la versión cuantizada en FP4 del modelo DeepSeek-V4.1-Flash-1017 desarrollado por DeepSeek AI, publicada por el usuario Miausis mediante NVIDIA Model Optimizer. Se trata de un modelo de lenguaje auto-regresivo nativamente multimodal con arquitectura Mixture-of-Experts (MoE) y Causal Encoder-Decoder (CED), que incorpora Compressed Sparse Attention 2 (CSA2) y soporta contextos de hasta un millón de tokens. El checkpoint original fue publicado por NVIDIA en su espacio de HuggingFace el 30 de octubre de 2026, y esta réplica aparece el 2 de noviembre de 2026.
+DeepSeek-V4.1-Flash-1017-NVFP4 es la versión cuantizada en FP4 del modelo DeepSeek-V4.1-Flash-1017 desarrollado por DeepSeek AI, publicada por el usuario Miausis mediante NVIDIA Model Optimizer. Se trata de un modelo de lenguaje auto-regresivo nativamente multimodal con arquitectura Mixture-of-Experts (MoE) y Causal Encoder-Decoder (CED), que incorpora Compressed Sparse Attention 2 (CSA2) y soporta contextos de hasta un millón de tokens. El checkpoint original fue publicado por NVIDIA en su espacio de Hugging Face el 30 de octubre de 2026, y esta réplica aparece el 2 de noviembre de 2026.
 
 El modelo resuelve el problema del despliegue eficiente de un MoE de gran escala: el backbone suma 552B parámetros totales (8B activados en prefill y 16B en decode) más 196B de memoria condicional Engram, lo que da un total real de 664.898.390.994 parámetros según los safetensors. La cuantización NVFP4 reduce el peso del repositorio a 429 GB, facilitando su ejecución en hardware Blackwell.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-NVFP4 (este) | 664,9B (552B + 196B Engram) | 8B prefill / 16B decode | 1M | MIT | safetensors NVFP4 | HuggingFace (Miausis) |
-| DeepSeek-V4.1-Flash-1017 (base) | 552B backbone + 196B Engram | 8B / 16B | 1M | MIT | safetensors | HuggingFace (deepseek-ai) |
-| DeepSeek-V4.1-Flash-1017 NVFP4 (NVIDIA) | 552B backbone + 196B Engram | 8B / 16B | 1M | MIT | safetensors NVFP4 | HuggingFace (nvidia) |
+| DeepSeek-V4.1-Flash-1017-NVFP4 (este) | 664,9B (552B + 196B Engram) | 8B prefill / 16B decode | 1M | MIT | safetensors NVFP4 | Hugging Face (Miausis) |
+| DeepSeek-V4.1-Flash-1017 (base) | 552B backbone + 196B Engram | 8B / 16B | 1M | MIT | safetensors | Hugging Face (deepseek-ai) |
+| DeepSeek-V4.1-Flash-1017 NVFP4 (NVIDIA) | 552B backbone + 196B Engram | 8B / 16B | 1M | MIT | safetensors NVFP4 | Hugging Face (nvidia) |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Miausis/DeepSeek-V4.1-Flash-1017-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/Miausis/DeepSeek-V4.1-Flash-1017-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial NVIDIA del mismo checkpoint: https://huggingface.co/nvidia/DeepSeek-V4.1-Flash-1017-NVFP4
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

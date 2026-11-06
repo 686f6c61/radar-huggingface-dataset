@@ -17,7 +17,7 @@ El modelo se distribuye bajo licencia Apache-2.0, lo que permite uso comercial s
 | Tipos de cuantizacion | no disponible (el adaptador se entrena sobre una base cuantizada en 4 bits, pero el formato de salida no se especifica) |
 | Idiomas soportados | en (ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ La comparativa se limita a los modelos base relacionados, ya que no se dispone d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sequenxa/anima-llama32-3b-lora-v3
+- Repositorio Hugging Face: https://huggingface.co/sequenxa/anima-llama32-3b-lora-v3
 - Version anterior (v2): https://huggingface.co/sequenxa/anima-llama32-3b-lora-v2
 - Modelo base original: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Modelo base cuantizado: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit

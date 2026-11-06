@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bbrownzachary/image-captioning-v3` no es un modelo entrenado para generar descripciones de imagenes, sino un repositorio de notas de investigacion (etiquetas `research-notes` e `image-captioning`) publicado en HuggingFace por el usuario `bbrownzachary`. La propia model card lo describe como una "exploratory note" que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y requisitos de reproducibilidad. El repositorio declara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
+`bbrownzachary/image-captioning-v3` no es un modelo entrenado para generar descripciones de imagenes, sino un repositorio de notas de investigacion (etiquetas `research-notes` e `image-captioning`) publicado en Hugging Face por el usuario `bbrownzachary`. La propia model card lo describe como una "exploratory note" que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y requisitos de reproducibilidad. El repositorio declara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
 Los unicos artefactos documentados en la model card son `notes.md` y `README.md`, con un tamano de repositorio de 0,0 GB. Sin embargo, el repositorio esta etiquetado con `safetensors` y `transformer`, y el dato real de pesos indica 24.832 parametros totales. Esa cifra es incompatible con cualquier transformer de captioning funcional (los modelos de vision-lenguaje operativos parten de cientos de millones de parametros), por lo que lo mas plausible es que se trate de un tensor de prueba, un checkpoint simulado o un residuo de un pipeline de ejemplo.
 
@@ -48,7 +48,7 @@ Los casos siguientes se refieren al artefacto tal como existe (notas de investig
 
 - Plantilla de planificacion de experimentos: el contenido de `notes.md` sirve como esqueleto para redactar el alcance, los factores de confusion y las lineas base emparejadas antes de ejecutar un estudio de captioning, evitando el sesgo de reportar resultados a posteriori.
 - Lista de comprobacion de reproducibilidad: la exigencia de incluir versiones de dataset, comandos, semillas, hardware y logs en bruto es directamente reutilizable como criterio de aceptacion en revisiones internas de equipos de investigacion.
-- Auditoria de repositorios de HuggingFace: este repositorio es un caso representativo de artefacto etiquetado con `safetensors` y `transformer` que no contiene un modelo utilizable; sirve para entrenar heuristicas de triaje en catalogos de modelos.
+- Auditoria de repositorios de Hugging Face: este repositorio es un caso representativo de artefacto etiquetado con `safetensors` y `transformer` que no contiene un modelo utilizable; sirve para entrenar heuristicas de triaje en catalogos de modelos.
 - Docencia sobre metodologia experimental: el contraste entre la seccion "Scope and limitations" y las expectativas que generan las etiquetas del repositorio es un ejemplo didactico de comunicacion cientifica honesta.
 - Definicion de protocolos de evaluacion en captioning: las referencias a MS COCO Captions, NoCaps y TextCaps permiten fijar el conjunto de metricas y splits antes de disponer de resultados, aunque el repositorio no aporta ninguna implementacion de esas metricas.
 - Verificacion de la distincion entre nota y checkpoint: el repositorio puede usarse para documentar un flujo de trabajo en el que se separa explicitamente la fase de planificacion (nota publicada) de la fase de resultados (modelo y logs), con licencia CC-BY-4.0 que facilita la reutilizacion del texto.
@@ -94,6 +94,6 @@ Los conjuntos de datos de referencia que menciona la nota (MS COCO Captions, NoC
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bbrownzachary/image-captioning-v3
+- Repositorio en Hugging Face: https://huggingface.co/bbrownzachary/image-captioning-v3
 - Busqueda web: no se han encontrado enlaces relevantes sobre el modelo. Los resultados devueltos por la busqueda corresponden a portales inmobiliarios de Viena (`neubauprojekte.wien` y sus PDF de listados de promotores y cooperativas) y no guardan ninguna relacion con este repositorio.
 - Paper, blog, repositorio de codigo o demo: no disponible.

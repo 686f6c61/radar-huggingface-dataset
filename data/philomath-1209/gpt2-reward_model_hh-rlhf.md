@@ -80,9 +80,9 @@ La comparativa se limita a la categoria de reward models basados en transformers
 
 | Modelo | Parametros | Contexto | Tipo de backbone | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `philomath-1209/gpt2-reward_model_hh-rlhf` | 124,4 M | 1024 (entrenado a 512) | GPT-2 + cabeza lineal | no disponible | HuggingFace, 0 descargas |
-| `OpenAssistant/reward-model-deberta-v3-large-v2` | no disponible en la informacion proporcionada | no disponible | DeBERTa-v3 + cabeza de regresion | no disponible en la informacion proporcionada | HuggingFace |
-| Reward models sobre Llama-2-7B (familia generica) | ~7 000 M | 4096 tipicamente | Llama-2 + cabeza lineal | varía segun variante | HuggingFace |
+| `philomath-1209/gpt2-reward_model_hh-rlhf` | 124,4 M | 1024 (entrenado a 512) | GPT-2 + cabeza lineal | no disponible | Hugging Face, 0 descargas |
+| `OpenAssistant/reward-model-deberta-v3-large-v2` | no disponible en la informacion proporcionada | no disponible | DeBERTa-v3 + cabeza de regresion | no disponible en la informacion proporcionada | Hugging Face |
+| Reward models sobre Llama-2-7B (familia generica) | ~7 000 M | 4096 tipicamente | Llama-2 + cabeza lineal | varía segun variante | Hugging Face |
 
 Diferencias relevantes: este checkpoint es aproximadamente dos ordenes de magnitud mas pequeno que un reward model de 7 B y esta pensado para validacion de pipeline, mientras que las alternativas citadas se distribuyen como modelos utilizables. La comparacion de rendimiento no es posible porque no se han publicado resultados de benchmarks en la informacion disponible para este modelo ni se dispone de cifras verificadas de las alternativas en esta ficha.
 
@@ -103,7 +103,7 @@ Diferencias relevantes: este checkpoint es aproximadamente dos ordenes de magnit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philomath-1209/gpt2-reward_model_hh-rlhf
+- Modelo en Hugging Face: https://huggingface.co/philomath-1209/gpt2-reward_model_hh-rlhf
 - Dataset de preferencias `Anthropic/hh-rlhf`: https://huggingface.co/datasets/Anthropic/hh-rlhf
 - Modelo base GPT-2 de OpenAI: https://huggingface.co/openai-community/gpt2
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos no guardan relacion con el repositorio y se descartan.

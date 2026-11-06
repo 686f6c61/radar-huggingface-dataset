@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khronnuz/ThinkingCap-Qwen3.8-27B-exl3
+- Modelo en Hugging Face: https://huggingface.co/khronnuz/ThinkingCap-Qwen3.8-27B-exl3
 - Variante concreta 4.00 bpw H5 V6: https://huggingface.co/khronnuz/ThinkingCap-Qwen3.8-27B-exl3/tree/4.00bpw_h5_v6
 - Modelo base (ajuste fino): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

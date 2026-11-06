@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Orena_SEGMENT_Track_Qwen3_VL_8B_finetuned | No disponible (adaptador de 0,2 GB sobre base de 8B) | No disponible | safetensors (LoRA) | apache-2.0 | Repositorio HuggingFace con 0 descargas |
+| Orena_SEGMENT_Track_Qwen3_VL_8B_finetuned | No disponible (adaptador de 0,2 GB sobre base de 8B) | No disponible | safetensors (LoRA) | apache-2.0 | Repositorio Hugging Face con 0 descargas |
 | Qwen/Qwen3-VL-8B-Instruct (modelo base) | 8B (segun denominacion) | No disponible en la informacion proporcionada | safetensors | No disponible en la informacion proporcionada | Modelo publico de Qwen |
 | Otros adaptadores de video-VQA quirurgico | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
@@ -92,6 +92,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Brunosil22/Orena_SEGMENT_Track_Qwen3_VL_8B_finetuned
+- Modelo en Hugging Face: https://huggingface.co/Brunosil22/Orena_SEGMENT_Track_Qwen3_VL_8B_finetuned
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Busqueda web: no se han encontrado enlaces relevantes al modelo, al paper ni a recursos adicionales; los resultados devueltos no guardan relacion con la ficha.

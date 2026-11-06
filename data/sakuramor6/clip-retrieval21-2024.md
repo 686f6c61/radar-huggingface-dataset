@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakuramor6/clip-retrieval21-2024 es un repositorio de HuggingFace que contiene una implementación personalizada en PyTorch de un modelo CLIP (Contrastive Language-Image Pretraining) orientada a tareas de recuperación (retrieval) imagen-texto. El autor, Sakuramor6, lo publica explícitamente como un artefacto experimental: la model card lo describe como un punto de partida "compacto" pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, y no como una release preentrenada lista para produccion.
+Sakuramor6/clip-retrieval21-2024 es un repositorio de Hugging Face que contiene una implementación personalizada en PyTorch de un modelo CLIP (Contrastive Language-Image Pretraining) orientada a tareas de recuperación (retrieval) imagen-texto. El autor, Sakuramor6, lo publica explícitamente como un artefacto experimental: la model card lo describe como un punto de partida "compacto" pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, y no como una release preentrenada lista para produccion.
 
 El dato mas relevante es que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo entrenado. La propia documentacion indica que no se reclama ninguna puntuacion de benchmark y que los pesos no han sido entrenados ni auditados para robustez, equidad o transferencia de dominio. El recuento real de parametros reportado por el archivo safetensors es de 33.088, una cifra muy alejada de lo que cabria esperar de una configuracion etiquetada como "large", lo que refuerza su naturaleza de esqueleto de codigo mas que de modelo funcional.
 
@@ -53,9 +53,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sakuramor6/clip-retrieval21-2024 | 33.088 | no disponible | sin benchmark (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace (repo de 0.0 GB, 5 descargas) |
-| CLIP original (OpenAI) | ~150M (ViT-B/32) a ~428M (ViT-L/14) | 77 tokens de texto | benchmarks publicados de zero-shot y retrieval | MIT-like (segun variante) | ampliamente disponible en HuggingFace |
-| OpenCLIP | desde ~86M hasta miles de millones | variable | benchmarks publicados (LAION, DataComp) | permisiva (segun checkpoint) | ampliamente disponible en HuggingFace |
+| Sakuramor6/clip-retrieval21-2024 | 33.088 | no disponible | sin benchmark (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face (repo de 0.0 GB, 5 descargas) |
+| CLIP original (OpenAI) | ~150M (ViT-B/32) a ~428M (ViT-L/14) | 77 tokens de texto | benchmarks publicados de zero-shot y retrieval | MIT-like (segun variante) | ampliamente disponible en Hugging Face |
+| OpenCLIP | desde ~86M hasta miles de millones | variable | benchmarks publicados (LAION, DataComp) | permisiva (segun checkpoint) | ampliamente disponible en Hugging Face |
 
 La comparacion con CLIP original y OpenCLIP se incluye como referencia de categoria, ya que no se dispone de datos de rendimiento del modelo evaluado. Las cifras de parametros de las alternativas son aproximadas y dependen de la variante concreta.
 
@@ -64,7 +64,7 @@ La comparacion con CLIP original y OpenCLIP se incluye como referencia de catego
 - VRAM estimada para inferencia: con 33.088 parametros, el checkpoint ocupa un espacio despreciable y cabe holgadamente en CPU y en cualquier GPU, incluida memoria integrada.
 - GPU recomendadas: no se requieren GPU dedicadas para el checkpoint actual; cualquier equipo puede ejecutarlo.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo e incluso en CPU, dado el tamano del checkpoint.
-- Opciones de despliegue: al ser una implementacion PyTorch personalizada, la carga mediante APIs genericas de HuggingFace requiere un adaptador explicito (segun la propia model card). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al ser una implementacion PyTorch personalizada, la carga mediante APIs genericas de Hugging Face requiere un adaptador explicito (segun la propia model card). No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Limitaciones y advertencias
@@ -81,4 +81,4 @@ La comparacion con CLIP original y OpenCLIP se incluye como referencia de catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sakuramor6/clip-retrieval21-2024
+- Hugging Face: https://huggingface.co/Sakuramor6/clip-retrieval21-2024

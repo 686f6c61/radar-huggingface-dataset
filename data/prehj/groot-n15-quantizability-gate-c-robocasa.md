@@ -67,8 +67,8 @@ El ruido del benchmark es ±1.5 puntos porcentuales. El modelo C presenta un ren
 
 | Modelo | Parámetros | Contexto | Rendimiento (RoboCasa) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **C (este modelo)** | 2.72B | No disponible | Éxito 0.638–0.647, pasos 289 | Apache-2.0 | HuggingFace |
-| **A′ distilled student** | No especificado | No disponible | Éxito 0.667, pasos 258 | Apache-2.0 | HuggingFace (mismo autor) |
+| **C (este modelo)** | 2.72B | No disponible | Éxito 0.638–0.647, pasos 289 | Apache-2.0 | Hugging Face |
+| **A′ distilled student** | No especificado | No disponible | Éxito 0.667, pasos 258 | Apache-2.0 | Hugging Face (mismo autor) |
 | **GR00T-N1.5 original** | No especificado (similar a N1, ~1.8B?) | No disponible | No disponible (no se comparan en la card) | Apache-2.0 | NVIDIA |
 
 La comparación se limita a los modelos relacionados del mismo autor. No se dispone de datos de otros modelos comparables.
@@ -84,7 +84,7 @@ La comparación se limita a los modelos relacionados del mismo autor. No se disp
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/prehj/groot-n15-quantizability-gate-C-robocasa)
+- [Hugging Face del modelo](https://huggingface.co/prehj/groot-n15-quantizability-gate-C-robocasa)
 - [Repositorio del código (fork con gate)](https://github.com/rakybond007/GR00T-action-quantization)
 - [Modelo A′ distilled student](https://huggingface.co/prehj/groot-n15-quantizability-gate-A-robocasa)
 - [Página de GR00T N1.5 de NVIDIA](https://research.nvidia.com/labs/gear/gr00t-n1_5/)

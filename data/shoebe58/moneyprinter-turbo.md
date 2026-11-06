@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio `Shoebe58/moneyprinter-turbo` publicado en HuggingFace por el usuario Shoebe58. La model card del repositorio no contiene más información que la declaración de licencia (`license: mit`); no se documenta arquitectura, tamaño, datos de entrenamiento, idiomas, formato de pesos ni ningún otro dato técnico. El pipeline no está declarado, y los recuentos de descargas y "likes" figuran a cero, por lo que no existe evidencia de uso o validación por parte de la comunidad.
+La ficha corresponde al repositorio `Shoebe58/moneyprinter-turbo` publicado en Hugging Face por el usuario Shoebe58. La model card del repositorio no contiene más información que la declaración de licencia (`license: mit`); no se documenta arquitectura, tamaño, datos de entrenamiento, idiomas, formato de pesos ni ningún otro dato técnico. El pipeline no está declarado, y los recuentos de descargas y "likes" figuran a cero, por lo que no existe evidencia de uso o validación por parte de la comunidad.
 
 En el momento de redactar esta ficha no es posible determinar qué tipo de modelo es, qué problema resuelve ni si contiene pesos utilizables. Un repositorio con únicamente un campo de licencia y sin artefactos documentados no permite una evaluación técnica rigurosa: no se puede estimar el coste de inferencia, ni el rendimiento esperado, ni la idoneidad para ningún caso de uso concreto.
 
@@ -99,5 +99,5 @@ No disponible. No se puede establecer una comparativa porque se desconoce la cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shoebe58/moneyprinter-turbo
+- Repositorio en Hugging Face: https://huggingface.co/Shoebe58/moneyprinter-turbo
 - No se han encontrado en la busqueda web otros enlaces relevantes: sin paper, blog tecnico, repositorio de codigo, demo ni documentacion adicional asociados a este identificador.

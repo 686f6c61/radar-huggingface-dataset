@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/grahamalden1103/albedo-mirror-uid216-c5d15c9a505e](https://huggingface.co/grahamalden1103/albedo-mirror-uid216-c5d15c9a505e)
+- Hugging Face: [https://huggingface.co/grahamalden1103/albedo-mirror-uid216-c5d15c9a505e](https://huggingface.co/grahamalden1103/albedo-mirror-uid216-c5d15c9a505e)
 - Modelo base: [dendriteholdings/albedo-qwen3.6-35b-king-genesis](https://huggingface.co/dendriteholdings/albedo-qwen3.6-35b-king-genesis) (enlace inferido, no verificado)
 - No se encontraron otros enlaces relevantes en la busqueda web.

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SVINT/outputs | 2B (heredado) | no disponible | no disponible | HuggingFace (0 descargas) |
-| Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled | 2B | no disponible | no disponible | HuggingFace (modelo base) |
-| Qwen 3.5 2B (original) | 2B | no disponible | no disponible | HuggingFace |
-| Modelos de razonamiento de 1-3B (p. ej. variantes destiladas de la familia Qwen) | 1-3B | variable | variable | HuggingFace |
+| SVINT/outputs | 2B (heredado) | no disponible | no disponible | Hugging Face (0 descargas) |
+| Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled | 2B | no disponible | no disponible | Hugging Face (modelo base) |
+| Qwen 3.5 2B (original) | 2B | no disponible | no disponible | Hugging Face |
+| Modelos de razonamiento de 1-3B (p. ej. variantes destiladas de la familia Qwen) | 1-3B | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Repositorio de 0,1 GB: verificar que los pesos estan completos antes de desplegar; el tamano es coherente con un modelo de 2B en precision reducida, pero no se confirma.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/SVINT/outputs
+- Hugging Face: https://huggingface.co/SVINT/outputs
 - Modelo base: https://huggingface.co/Jackrong/Qwen3.5-2B-Claude-4.6-Opus-Reasoning-Distilled
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Unsloth: https://github.com/unslothai/unsloth

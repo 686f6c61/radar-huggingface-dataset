@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed1024)
+- [Hugging Face - modelo](https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed1024)
 - [FriendliAI - página del modelo](https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed1024)
 - [Free2AITools - ficha del modelo](https://free2aitools.com/model/sashaboguraev/pythia-160m-ppt-control_music_steps500-seed1024-reinit_mlp) (variante similar)

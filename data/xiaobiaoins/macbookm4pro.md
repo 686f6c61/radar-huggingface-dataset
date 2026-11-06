@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `xiaobiaoins/macbookm4pro` alojado en HuggingFace no contiene información técnica publicada sobre ningún modelo de inteligencia artificial. La model card únicamente declara la licencia MIT y no incluye arquitectura, parámetros, datos de entrenamiento ni capacidades. Las descargas y likes son cero, lo que sugiere que se trata de una subida reciente o de un espacio vacío sin propósito claro.
+El repositorio `xiaobiaoins/macbookm4pro` alojado en Hugging Face no contiene información técnica publicada sobre ningún modelo de inteligencia artificial. La model card únicamente declara la licencia MIT y no incluye arquitectura, parámetros, datos de entrenamiento ni capacidades. Las descargas y likes son cero, lo que sugiere que se trata de una subida reciente o de un espacio vacío sin propósito claro.
 
 La búsqueda web asociada devuelve resultados sobre el hardware Apple MacBook Pro con chip M4, no sobre un modelo de IA. Es posible que el autor haya creado el repositorio como prueba o con la intención de subir contenido relacionado con ese hardware, pero no hay evidencia de que exista un modelo real. En consecuencia, esta ficha se limita a documentar la ausencia de datos y a advertir al lector de que cualquier uso del repositorio carece de soporte técnico.
 
@@ -54,7 +54,7 @@ No disponible. No se puede establecer comparación con alternativas al carecer d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xiaobiaoins/macbookm4pro
+- Repositorio Hugging Face: https://huggingface.co/xiaobiaoins/macbookm4pro
 - Resultados de búsqueda web (relacionados con hardware Apple, no con el modelo): 
   - https://support.apple.com/en-us/121552
   - https://support.apple.com/en-us/121553

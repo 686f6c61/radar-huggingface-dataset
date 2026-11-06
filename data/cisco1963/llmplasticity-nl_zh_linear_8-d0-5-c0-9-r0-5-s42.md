@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Cisco1963/llmplasticity-nl_zh_linear_8-d0.5-c0.9-r0.5-s42` es un repositorio de HuggingFace publicado por el usuario Cisco1963. Por el nombre del identificador se deduce que se trata de un artefacto experimental vinculado a un trabajo sobre plasticidad en modelos de lenguaje (LLM plasticity), con un ajuste o intervención aplicada sobre un modelo base que involucra los idiomas neerlandés (nl) y chino (zh), una configuración lineal con 8 pasos o capas, y unos hiperparámetros codificados como d0.5, c0.9, r0.5 y una semilla s42.
+`Cisco1963/llmplasticity-nl_zh_linear_8-d0.5-c0.9-r0.5-s42` es un repositorio de Hugging Face publicado por el usuario Cisco1963. Por el nombre del identificador se deduce que se trata de un artefacto experimental vinculado a un trabajo sobre plasticidad en modelos de lenguaje (LLM plasticity), con un ajuste o intervención aplicada sobre un modelo base que involucra los idiomas neerlandés (nl) y chino (zh), una configuración lineal con 8 pasos o capas, y unos hiperparámetros codificados como d0.5, c0.9, r0.5 y una semilla s42.
 
-El repositorio no incluye información sobre el modelo base, la arquitectura, el tamaño, el proceso de entrenamiento ni los datos utilizados. La ficha de HuggingFace únicamente declara la región `us` como tag, 13 descargas y 0 likes, sin pipeline declarado, sin licencia especificada y sin idiomas declarados formalmente. Creado y actualizado el 2 de noviembre de 2026, parece un artefacto de investigación más que un modelo listo para producción.
+El repositorio no incluye información sobre el modelo base, la arquitectura, el tamaño, el proceso de entrenamiento ni los datos utilizados. La ficha de Hugging Face únicamente declara la región `us` como tag, 13 descargas y 0 likes, sin pipeline declarado, sin licencia especificada y sin idiomas declarados formalmente. Creado y actualizado el 2 de noviembre de 2026, parece un artefacto de investigación más que un modelo listo para producción.
 
 Su relevancia es, por tanto, acotada: puede interesar a quienes investigan técnicas de modificación de pesos o de plasticidad en modelos multilingües, pero no constituye por sí mismo un modelo desplegable con garantías documentadas. Cualquier evaluación rigurosa requiere inspeccionar los archivos del repositorio directamente.
 
@@ -41,7 +41,7 @@ Tampoco se documenta ninguna innovación técnica destacable. Toda la informaci�
 - Estudio de transferencia entre neerlandés y chino: si el identificador refleja realmente un ajuste bilingüe, serviría para analizar cómo se comporta el modelo en ambos idiomas frente al modelo original.
 - Reproducibilidad de experimentos con semilla fija: el sufijo `s42` permite replicar una ejecución concreta, útil en entornos de investigación que exigen resultados deterministas.
 - Análisis de sensibilidad a hiperparámetros: los valores `d0.5`, `c0.9` y `r0.5` podrían compararse con otras variantes del mismo autor para estudiar su impacto.
-- Docencia y formación: como ejemplo práctico de artefacto experimental publicado en HuggingFace con nomenclatura de hiperparámetros.
+- Docencia y formación: como ejemplo práctico de artefacto experimental publicado en Hugging Face con nomenclatura de hiperparámetros.
 - Auditoría de repositorios de investigación: útil para estudiar prácticas de publicación (ausencia de licencia, de model card y de metadatos) y sus implicaciones.
 
 En todos los casos, el uso en producción no está justificado por la información disponible.
@@ -75,5 +75,5 @@ No disponible. No se ha identificado el modelo base ni la familia a la que perte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-d0.5-c0.9-r0.5-s42
+- Repositorio en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-d0.5-c0.9-r0.5-s42
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

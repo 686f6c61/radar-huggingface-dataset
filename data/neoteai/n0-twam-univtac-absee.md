@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NeoteAI/n0-twam-univtac-absee
+- Hugging Face: https://huggingface.co/NeoteAI/n0-twam-univtac-absee
 - GitHub del proyecto N0-TWAM: https://github.com/neoteai/N0-TWAM
 - Página de investigación: https://research.neoteai.com/n0-twam/
-- Modelo base en HuggingFace: https://huggingface.co/NeoteAI/n0-twam-base
+- Modelo base en Hugging Face: https://huggingface.co/NeoteAI/n0-twam-base

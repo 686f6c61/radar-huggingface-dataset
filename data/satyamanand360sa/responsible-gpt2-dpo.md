@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `satyamanand360sa/Responsible-GPT2-DPO` es una variante de GPT-2 ajustada mediante Direct Preference Optimization (DPO), una técnica de alineación que entrena el modelo para preferir respuestas consideradas seguras o responsables frente a alternativas menos deseables. El autor, satyamanand360sa, publica este modelo en el Hub de HuggingFace con el objetivo de explorar la alineación de modelos de lenguaje pequeños mediante DPO. Aunque la model card no aporta detalles técnicos concretos, el nombre sugiere que se ha optimizado para producir salidas más responsables, probablemente reduciendo contenido dañino o sesgado.
+El modelo `satyamanand360sa/Responsible-GPT2-DPO` es una variante de GPT-2 ajustada mediante Direct Preference Optimization (DPO), una técnica de alineación que entrena el modelo para preferir respuestas consideradas seguras o responsables frente a alternativas menos deseables. El autor, satyamanand360sa, publica este modelo en el Hub de Hugging Face con el objetivo de explorar la alineación de modelos de lenguaje pequeños mediante DPO. Aunque la model card no aporta detalles técnicos concretos, el nombre sugiere que se ha optimizado para producir salidas más responsables, probablemente reduciendo contenido dañino o sesgado.
 
 La relevancia de este modelo radica en su enfoque: aplicar DPO a un modelo base pequeño como GPT-2 permite experimentar con técnicas de alineación sin los costes computacionales de los modelos de gran escala. No obstante, la información disponible es mínima: no se especifica el tamaño exacto de los parámetros, el contexto de entrenamiento ni los datos utilizados, por lo que las especificaciones deben tomarse con cautela.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - **VRAM estimada**: para una inferencia en precision fp16, un modelo de 124M ocupa aproximadamente 250 MB de VRAM. En cuantizacion int8, se reduce a unos 125 MB.
 - **GPU recomendadas**: cualquier GPU con al menos 1 GB de VRAM (por ejemplo, NVIDIA GTX 1050 Ti, RTX 2060, etc.). Tambien es ejecutable en CPU para tareas de baja latencia.
 - **Compatibilidad con consumer GPU**: si, cabe en practicamente cualquier GPU comercial moderna.
-- **Opciones de despliegue**: se puede usar con la libreria Transformers de HuggingFace, o mediante vLLM, llama.cpp (si se convierte a GGUF), o incluso en entornos sin GPU con CPU.
+- **Opciones de despliegue**: se puede usar con la libreria Transformers de Hugging Face, o mediante vLLM, llama.cpp (si se convierte a GGUF), o incluso en entornos sin GPU con CPU.
 - **Latencia y throughput**: no hay datos especificos, pero para un modelo de 124M en una GPU moderna se esperan latencias de decenas de milisegundos por token y throughput alto en modo batch.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se basa en la arquitectura comun GPT-2. El modelo `Responsible-GP
 
 ## Enlaces
 
-- [HuggingFace - satyamanand360sa/Responsible-GPT2-DPO](https://huggingface.co/satyamanand360sa/Responsible-GPT2-DPO)
+- [Hugging Face - satyamanand360sa/Responsible-GPT2-DPO](https://huggingface.co/satyamanand360sa/Responsible-GPT2-DPO)
 - [Paper GPT-2 (Radford et al., 2019)](https://arxiv.org/abs/1910.09700)
 - [Paper DPO (Rafailov et al., 2023)](https://arxiv.org/abs/2305.18290)
 - [Repositorio de DPO en GPT-2 (aalokpatwa/dpo)](https://github.com/aalokpatwa/dpo)

@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART `stack_cube` (este) | no disponible | no disponible | Apilado de cubo, dominio rotado | Apache 2.0 | HuggingFace, 0 descargas |
+| π0.5 SNUMPR DART `stack_cube` (este) | no disponible | no disponible | Apilado de cubo, dominio rotado | Apache 2.0 | Hugging Face, 0 descargas |
 | Base `snumpr-iclr27-v1/9999` | no disponible | no disponible | VLA general SNUMPR | no disponible en la información | Referenciado como base |
 | π0.5 openpi original | no disponible | no disponible | VLA generalista | no disponible en la información | Ecosistema openpi |
-| Otras variantes `pi05_snumpr_dart_*` del mismo autor | no disponible | no disponible | Variantes de tarea/rotación | Apache 2.0 (presumible) | HuggingFace |
+| Otras variantes `pi05_snumpr_dart_*` del mismo autor | no disponible | no disponible | Variantes de tarea/rotación | Apache 2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261030
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-stack-cube-20261030
 - Repositorio DART referenciado en la model card: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`); URL no disponible en la información proporcionada.
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `c4fcb61`); URL no disponible en la información proporcionada.
 - Modelo base: `snumpr-iclr27-v1/9999`; URL no disponible en la información proporcionada.

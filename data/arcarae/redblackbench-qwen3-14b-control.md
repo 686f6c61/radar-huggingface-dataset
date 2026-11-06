@@ -99,7 +99,7 @@ Los tres comparten modelo base, por lo que la comparacion aísla el efecto del a
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/Arcarae/redblackbench-qwen3-14b-control
+- Pagina de Hugging Face del modelo: https://huggingface.co/Arcarae/redblackbench-qwen3-14b-control
 - Dataset de entrenamiento: https://huggingface.co/datasets/Arcarae/redblackbench-control-openthoughts-10k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Adaptador cooperativo de referencia: https://huggingface.co/Arcarae/redblackbench-qwen3-14b-sft-v2

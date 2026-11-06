@@ -98,7 +98,7 @@ Nota: la comparacion mas rigurosa publicada es la fila de Terminal-Bench 2.0 con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praex/Lucia-III
+- Modelo en Hugging Face: https://huggingface.co/praex/Lucia-III
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-Terminal-Synthetic-Tasks
 - Agente Praex CLI (repositorio): https://github.com/ailucius/praex-cli

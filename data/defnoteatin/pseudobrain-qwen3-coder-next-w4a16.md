@@ -81,7 +81,7 @@ Frente al modelo base Qwen/Qwen3-Coder-Next sin PseudoBrain, esta variante ofrec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-Coder-Next-W4A16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3-Coder-Next-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Repositorio GitHub (plugin pb27_vllm): https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf

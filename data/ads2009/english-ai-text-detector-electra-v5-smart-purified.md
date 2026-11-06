@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ads2009/english-ai-text-detector-electra-v5-smart-purified` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario `ads2009`, orientado a la deteccion de texto generado por IA en ingles. Se distribuye con la libreria `transformers` y el pipeline `text-classification`, y sus pesos estan en formato `safetensors`. El nombre del repositorio indica que se trata de un detector de texto IA en ingles construido sobre ELECTRA, en su quinta version ("v5") y con algun proceso de "purificacion" del checkpoint que el autor no documenta.
+`ads2009/english-ai-text-detector-electra-v5-smart-purified` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario `ads2009`, orientado a la deteccion de texto generado por IA en ingles. Se distribuye con la libreria `transformers` y el pipeline `text-classification`, y sus pesos estan en formato `safetensors`. El nombre del repositorio indica que se trata de un detector de texto IA en ingles construido sobre ELECTRA, en su quinta version ("v5") y con algun proceso de "purificacion" del checkpoint que el autor no documenta.
 
 El dato tecnico mas solido disponible es el recuento real de parametros en los pesos: 109.483.778, con un repositorio de 0,4 GB. Ese orden de magnitud coincide con la configuracion ELECTRA-base (aproximadamente 110 millones de parametros en el discriminador), por lo que es razonable asumir un encoder transformer tipo ELECTRA de ~110M, aunque la model card no confirma capas, dimension oculta ni cabezas de atencion. El modelo no registra descargas ni likes en el momento de la consulta y su licencia no esta declarada.
 
-La relevancia de esta ficha es limitada pero util como caso de estudio: se trata de un modelo con pesos publicados y funcionalmente cargable, pero con documentacion practicamente vacia (la model card es la plantilla automatica de HuggingFace con todos los campos en `[More Information Needed]`). Para un desarrollador que evalue usarlo en produccion, la ausencia de licencia, de idiomas declarados, de datos de entrenamiento y de benchmarks es un riesgo mayor que cualquier limitacion tecnica del propio clasificador.
+La relevancia de esta ficha es limitada pero util como caso de estudio: se trata de un modelo con pesos publicados y funcionalmente cargable, pero con documentacion practicamente vacia (la model card es la plantilla automatica de Hugging Face con todos los campos en `[More Information Needed]`). Para un desarrollador que evalue usarlo en produccion, la ausencia de licencia, de idiomas declarados, de datos de entrenamiento y de benchmarks es un riesgo mayor que cualquier limitacion tecnica del propio clasificador.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada pero util como caso de estudio: se trata
 
 La unica informacion fiable sobre la arquitectura es el tag `electra` y el pipeline declarado, `text-classification`. ELECTRA es una familia de encoders transformer cuyo preentrenamiento sustituye el enmascaramiento de tokens (MLM) por una tarea de deteccion de tokens reemplazados: un generador pequeno produce sustituciones plausibles y un discriminador —el modelo que finalmente se publica— aprende a distinguir, token a token, cuales son originales y cuales sustituidos. Es un esquema computacionalmente mas eficiente que BERT a igualdad de presupuesto de entrenamiento. Para inferencia de clasificacion, el encoder se usa con una cabeza de clasificacion de secuencia sobre el token `[CLS]`.
 
-No hay informacion sobre el entrenamiento de este checkpoint concreto: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste fino supervisado con ejemplos humano/IA, ni si se aplicaron tecnicas como DPO, RLHF o destilacion. Tampoco se documenta en que consiste la "purificacion" que sugiere el sufijo `smart-purified` del identificador. Un detalle tecnico relevante: el tag `arxiv:1910.09700` que aparece en los metadatos **no** corresponde al articulo de ELECTRA, sino a *Quantifying the Carbon Emissions of Machine Learning* (Lacoste et al., 2019), que es el paper enlazado por la plantilla de model card de HuggingFace en su seccion de impacto ambiental. Es decir, ese identificador arXiv es un artefacto de la plantilla y no documenta la arquitectura ni el entrenamiento del modelo.
+No hay informacion sobre el entrenamiento de este checkpoint concreto: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste fino supervisado con ejemplos humano/IA, ni si se aplicaron tecnicas como DPO, RLHF o destilacion. Tampoco se documenta en que consiste la "purificacion" que sugiere el sufijo `smart-purified` del identificador. Un detalle tecnico relevante: el tag `arxiv:1910.09700` que aparece en los metadatos **no** corresponde al articulo de ELECTRA, sino a *Quantifying the Carbon Emissions of Machine Learning* (Lacoste et al., 2019), que es el paper enlazado por la plantilla de model card de Hugging Face en su seccion de impacto ambiental. Es decir, ese identificador arXiv es un artefacto de la plantilla y no documenta la arquitectura ni el entrenamiento del modelo.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No hay informacion sobre el entrenamiento de este checkpoint concreto: ni numero
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla automatica de HuggingFace y no incluye seccion de evaluacion cumplimentada: no hay datos de exactitud, F1, AUC ni comparaciones con otros detectores, y tampoco se documenta el conjunto de test empleado.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla automatica de Hugging Face y no incluye seccion de evaluacion cumplimentada: no hay datos de exactitud, F1, AUC ni comparaciones con otros detectores, y tampoco se documenta el conjunto de test empleado.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. No requiere A100 ni H100; una T4, L4, RTX 3060, RTX 4090 o incluso una GPU integrada moderna son suficientes.
 - Inferencia en CPU: perfectamente viable para un clasificador de este tamano, con latencias del orden de decenas de milisegundos por secuencia en un procesador de escritorio actual. Es la opcion razonable si el volumen no es alto.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos ocho anos.
-- Opciones de despliegue: transformers con PyTorch directamente; servidores de inferencia como HuggingFace Text Embeddings Inference o TGI para clasificacion; exportacion a ONNX Runtime para CPU; conversion a TorchScript o a `optimum` para aceleracion. No se han publicado pesos GGUF, por lo que llama.cpp/Ollama no son aplicables sin conversion propia, y ademas esos runtimes estan orientados a modelos generativos, no a clasificacion de secuencias.
+- Opciones de despliegue: transformers con PyTorch directamente; servidores de inferencia como Hugging Face Text Embeddings Inference o TGI para clasificacion; exportacion a ONNX Runtime para CPU; conversion a TorchScript o a `optimum` para aceleracion. No se han publicado pesos GGUF, por lo que llama.cpp/Ollama no son aplicables sin conversion propia, y ademas esos runtimes estan orientados a modelos generativos, no a clasificacion de secuencias.
 - Latencia y throughput: no disponibles. No hay datos publicados de latencia ni de tokens por segundo; al ser un encoder no generativo, la metrica relevante seria secuencias por segundo, que tampoco se ha medido en la informacion disponible.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/english-ai-text-detector-electra-v5-smart-purified | 109,48M | no disponible | Clasificacion (deteccion de texto IA) | no disponible | HuggingFace, pesos safetensors |
-| google/electra-base-discriminator | ~110M | 512 tokens (configuracion publica de la familia) | Encoder preentrenado, requiere cabeza de tarea | Apache 2.0 | HuggingFace |
-| roberta-base (y ajustes tipo OpenAI detector) | ~125M | 512 tokens | Encoder / clasificacion | MIT | HuggingFace |
-| microsoft/deberta-v3-base | ~184M | 512 tokens | Encoder / clasificacion | MIT | HuggingFace |
+| ads2009/english-ai-text-detector-electra-v5-smart-purified | 109,48M | no disponible | Clasificacion (deteccion de texto IA) | no disponible | Hugging Face, pesos safetensors |
+| google/electra-base-discriminator | ~110M | 512 tokens (configuracion publica de la familia) | Encoder preentrenado, requiere cabeza de tarea | Apache 2.0 | Hugging Face |
+| roberta-base (y ajustes tipo OpenAI detector) | ~125M | 512 tokens | Encoder / clasificacion | MIT | Hugging Face |
+| microsoft/deberta-v3-base | ~184M | 512 tokens | Encoder / clasificacion | MIT | Hugging Face |
 
 La diferencia practica no esta en la arquitectura —los tres son encoders transformer de rango similar— sino en el hecho de que este checkpoint no declara licencia ni documenta su ajuste fino, mientras que los modelos de referencia cuentan con licencias claras y evaluaciones publicadas. Cualquier comparacion de calidad con detectores especificos (por ejemplo, clasificadores ajustados sobre RoBERTa o DeBERTa) seria especulativa, porque no existen resultados de benchmark para este modelo.
 
@@ -96,7 +96,7 @@ La diferencia practica no esta en la arquitectura —los tres son encoders trans
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/english-ai-text-detector-electra-v5-smart-purified
+- Modelo en Hugging Face: https://huggingface.co/ads2009/english-ai-text-detector-electra-v5-smart-purified
 - Paper de ELECTRA (referencia de la arquitectura, no enlazado por el autor): https://arxiv.org/abs/2003.10555
 - Paper asociado al tag `arxiv:1910.09700` del repositorio (Quantifying the Carbon Emissions of Machine Learning, Lacoste et al., 2019), incluido por la plantilla de model card y no relacionado con la arquitectura: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML citada en la plantilla: https://mloc2.github.io/impact — direccion correcta: https://mlco2.github.io/impact

@@ -2,13 +2,13 @@
 
 ## Resumen
 
-Este modelo es un checkpoint experimental subido por el usuario `dfsfsdg5657` a HuggingFace. Se trata de la selección del mejor checkpoint (`step_1000`) de un espacio de trabajo, según una evaluación interna que pondera distintas tareas. El repositorio incluye únicamente `config.json` y `pytorch_model.bin`, y está etiquetado como un modelo `bert` de la librería `transformers`, con pipeline de `feature-extraction`. La licencia es MIT. No se proporciona información sobre el tamaño del modelo, la arquitectura exacta, la longitud de contexto ni los idiomas soportados. El modelo no tiene descargas ni likes en HuggingFace, lo que indica que es un proyecto personal o de demostración, no preparado para producción.
+Este modelo es un checkpoint experimental subido por el usuario `dfsfsdg5657` a Hugging Face. Se trata de la selección del mejor checkpoint (`step_1000`) de un espacio de trabajo, según una evaluación interna que pondera distintas tareas. El repositorio incluye únicamente `config.json` y `pytorch_model.bin`, y está etiquetado como un modelo `bert` de la librería `transformers`, con pipeline de `feature-extraction`. La licencia es MIT. No se proporciona información sobre el tamaño del modelo, la arquitectura exacta, la longitud de contexto ni los idiomas soportados. El modelo no tiene descargas ni likes en Hugging Face, lo que indica que es un proyecto personal o de demostración, no preparado para producción.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiquetado como `bert` en HuggingFace, sin variante especificada) |
+| Arquitectura | No disponible (etiquetado como `bert` en Hugging Face, sin variante especificada) |
 | Parametros totales | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -18,7 +18,7 @@ Este modelo es un checkpoint experimental subido por el usuario `dfsfsdg5657` a 
 
 ## Arquitectura y entrenamiento
 
-La información disponible no incluye detalles sobre la arquitectura, los datos de entrenamiento ni el proceso de entrenamiento. Según las etiquetas de HuggingFace, el modelo es de tipo `bert` y se usa con la librería `transformers` para `feature-extraction`. La model card indica que el checkpoint fue seleccionado como el mejor entre los disponibles en el directorio `checkpoints/` de un workspace, basándose en una puntuación global ponderada de 0.710. No se mencionan técnicas de entrenamiento como RLHF, DPO ni ninguna innovación arquitectónica. No se ha publicado información sobre la composición del dataset ni el número de tokens de entrenamiento.
+La información disponible no incluye detalles sobre la arquitectura, los datos de entrenamiento ni el proceso de entrenamiento. Según las etiquetas de Hugging Face, el modelo es de tipo `bert` y se usa con la librería `transformers` para `feature-extraction`. La model card indica que el checkpoint fue seleccionado como el mejor entre los disponibles en el directorio `checkpoints/` de un workspace, basándose en una puntuación global ponderada de 0.710. No se mencionan técnicas de entrenamiento como RLHF, DPO ni ninguna innovación arquitectónica. No se ha publicado información sobre la composición del dataset ni el número de tokens de entrenamiento.
 
 ## Capacidades
 
@@ -68,11 +68,11 @@ No se dispone de información sobre el tamaño del modelo, por lo que no se pued
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. Se han encontrado repositorios en HuggingFace con nombres similares, como `dsfsdfsf56577/my-awesome-model-best` y `DSD1231/my-awesome-model-best`, pero no se ha publicado información técnica sobre ellos que permita establecer una comparación de parámetros, contexto o rendimiento.
+No se dispone de información suficiente para comparar este modelo con alternativas de la misma categoría. Se han encontrado repositorios en Hugging Face con nombres similares, como `dsfsdfsf56577/my-awesome-model-best` y `DSD1231/my-awesome-model-best`, pero no se ha publicado información técnica sobre ellos que permita establecer una comparación de parámetros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
 
-- El modelo es un checkpoint experimental sin validación externa, con 0 descargas y 0 likes en HuggingFace.
+- El modelo es un checkpoint experimental sin validación externa, con 0 descargas y 0 likes en Hugging Face.
 - No se proporciona información sobre el tamaño, la arquitectura exacta, la longitud de contexto ni los idiomas soportados.
 - Las puntuaciones de evaluación provienen de una pipeline interna del autor, no de benchmarks estándar, por lo que no se pueden extrapolar a otros entornos.
 - No se documentan sesgos conocidos, riesgos de alucinación ni comportamientos no deseados.

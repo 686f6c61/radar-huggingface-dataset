@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chkab/gemma-2-2b-haddiyyisa-v2 es un ajuste fino (fine-tuning) del modelo unsloth/gemma-2-2b-it-bnb-4bit, publicado por el usuario chkab en HuggingFace. Se trata, por tanto, de una variante derivada de Gemma 2 2B instruct de Google, cuantizada a 4 bits mediante bitsandbytes y posteriormente reentrenada con la libreria Unsloth y TRL. El autor no documenta el conjunto de datos, el objetivo del ajuste ni el procedimiento de evaluacion.
+chkab/gemma-2-2b-haddiyyisa-v2 es un ajuste fino (fine-tuning) del modelo unsloth/gemma-2-2b-it-bnb-4bit, publicado por el usuario chkab en Hugging Face. Se trata, por tanto, de una variante derivada de Gemma 2 2B instruct de Google, cuantizada a 4 bits mediante bitsandbytes y posteriormente reentrenada con la libreria Unsloth y TRL. El autor no documenta el conjunto de datos, el objetivo del ajuste ni el procedimiento de evaluacion.
 
 El modelo hereda la arquitectura transformer decoder-only de Gemma 2 2B, con aproximadamente 2.600 millones de parametros y una ventana de contexto de 8.192 tokens. La model card se limita a indicar el modelo base, la licencia declarada (apache-2.0) y que el entrenamiento se realizo con Unsloth, sin aportar informacion sobre hiperparametros, tokens de entrenamiento ni tarea objetivo.
 
@@ -71,11 +71,11 @@ La comparacion se establece con el modelo base y con alternativas de tamano simi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| chkab/gemma-2-2b-haddiyyisa-v2 | No declarados (base ~2,6B) | No declarado (base 8.192) | apache-2.0 declarada sobre base Gemma | HuggingFace, 0 descargas |
-| google/gemma-2-2b-it | ~2,6B | 8.192 | Terminos de uso de Gemma | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | Apache-2.0 | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,2B | 131.072 | Licencia comunitaria de Llama 3.2 | HuggingFace, ampliamente usado |
-| microsoft/Phi-3-mini-4k-instruct | ~3,8B | 4.096 | MIT | HuggingFace, ampliamente usado |
+| chkab/gemma-2-2b-haddiyyisa-v2 | No declarados (base ~2,6B) | No declarado (base 8.192) | apache-2.0 declarada sobre base Gemma | Hugging Face, 0 descargas |
+| google/gemma-2-2b-it | ~2,6B | 8.192 | Terminos de uso de Gemma | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 | Apache-2.0 | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,2B | 131.072 | Licencia comunitaria de Llama 3.2 | Hugging Face, ampliamente usado |
+| microsoft/Phi-3-mini-4k-instruct | ~3,8B | 4.096 | MIT | Hugging Face, ampliamente usado |
 
 Diferencias clave: los tres modelos alternativos tienen licencias permisivas claras y contexto mayor (salvo Phi-3-mini), mientras que esta variante presenta una licencia declarada potencialmente incompatible con los terminos del modelo base y carece de cualquier metrica de calidad publicada.
 
@@ -94,7 +94,7 @@ Diferencias clave: los tres modelos alternativos tienen licencias permisivas cla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chkab/gemma-2-2b-haddiyyisa-v2
+- Hugging Face: https://huggingface.co/chkab/gemma-2-2b-haddiyyisa-v2
 - Modelo base: https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original Gemma 2 2B instruct: https://huggingface.co/google/gemma-2-2b-it

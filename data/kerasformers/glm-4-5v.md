@@ -70,7 +70,7 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/glm-4.5v](https://huggingface.co/kerasformers/glm-4.5v)
+- [Hugging Face - kerasformers/glm-4.5v](https://huggingface.co/kerasformers/glm-4.5v)
 - [Modelo original - zai-org/GLM-4.5V](https://huggingface.co/zai-org/GLM-4.5V)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de GLM-4.5V en KerasFormers](https://imvision12.github.io/KerasFormers/glm4v_moe/)

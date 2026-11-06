@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (organizacion zai-org) y publicado en este repositorio de HuggingFace por el usuario Terom. Se trata de la evolucion de GLM-5.2: segun la model card, reutiliza el mismo modelo base y todas las mejoras provienen de la fase de post-entrenamiento. Cuenta con 753.329.940.480 parametros totales (unos 753,3 mil millones) y un repositorio de 755,7 GB en formato safetensors, lo que lo situa en la categoria de modelos frontera. La etiqueta de transformers glm_moe_dsa indica una arquitectura de mezcla de expertos (MoE), aunque no se detalla el numero de expertos ni los parametros activos.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (organizacion zai-org) y publicado en este repositorio de Hugging Face por el usuario Terom. Se trata de la evolucion de GLM-5.2: segun la model card, reutiliza el mismo modelo base y todas las mejoras provienen de la fase de post-entrenamiento. Cuenta con 753.329.940.480 parametros totales (unos 753,3 mil millones) y un repositorio de 755,7 GB en formato safetensors, lo que lo situa en la categoria de modelos frontera. La etiqueta de transformers glm_moe_dsa indica una arquitectura de mezcla de expertos (MoE), aunque no se detalla el numero de expertos ni los parametros activos.
 
 Su foco principal son la codificacion compleja y las tareas de horizonte largo. La model card afirma una mejora del 50% respecto a GLM-5.2 en su Z.ai Code Bench interno y resultados de referencia (SOTA en pesos abiertos) en Terminal Bench 3.0 y Agents' Last Exam. Ademas, destaca una capacidad emergente en ciberseguridad: es SOTA en CyberGym para descubrimiento de vulnerabilidades y mas que duplica a GLM-5.2 en los benchmarks de explotacion.
 
@@ -86,7 +86,7 @@ Notas de evaluacion aportadas: HLE w/ tools usa temperature=1.0, top_p=0.95, lon
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3 | 753,3 B | no disponible | hasta 1M (segun notas) | glm-5.3 (license: other) | Pesos abiertos en HuggingFace (repo de terceros) |
+| GLM-5.3 | 753,3 B | no disponible | hasta 1M (segun notas) | glm-5.3 (license: other) | Pesos abiertos en Hugging Face (repo de terceros) |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Referencia base de la comparativa (mismo modelo base) |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | Comparado en la tabla de benchmarks |
 | DeepSeek-V4 Pro-0813 | no disponible | no disponible | no disponible | no disponible | Comparado en la tabla de benchmarks |
@@ -109,7 +109,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- HuggingFace (repositorio de este modelo): https://huggingface.co/Terom/GLM-5.3
+- Hugging Face (repositorio de este modelo): https://huggingface.co/Terom/GLM-5.3
 - Repositorio oficial GLM-5 en GitHub (zai-org): https://github.com/zai-org/GLM-5
 - Imagen de benchmarks de GLM-5.3: https://raw.githubusercontent.com/zai-org/GLM-5/refs/heads/main/resources/bench_53_2.png
 - Paper referenciado (arXiv 2602.15763): https://arxiv.org/abs/2602.15763

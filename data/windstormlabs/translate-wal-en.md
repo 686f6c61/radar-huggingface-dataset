@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Idiomas | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| WindstormLabs/translate-wal-en | MarianMT | wal → en | no disponible | Apache-2.0 | HuggingFace, variantes GPU y CPU INT8 | Objeto de esta ficha; sin puntuaciones de calidad publicadas |
-| Helsinki-NLP/opus-mt-wal-en | MarianMT | wal → en | no disponible | Apache-2.0 | HuggingFace | Modelo base del anterior; referencia directa de comparacion |
-| WindyTranslate/translate-wal-en | MarianMT | wal → en | no disponible | Apache-2.0 | HuggingFace | Copia canonica indicada por el autor; mismo artefacto |
+| WindstormLabs/translate-wal-en | MarianMT | wal → en | no disponible | Apache-2.0 | Hugging Face, variantes GPU y CPU INT8 | Objeto de esta ficha; sin puntuaciones de calidad publicadas |
+| Helsinki-NLP/opus-mt-wal-en | MarianMT | wal → en | no disponible | Apache-2.0 | Hugging Face | Modelo base del anterior; referencia directa de comparacion |
+| WindyTranslate/translate-wal-en | MarianMT | wal → en | no disponible | Apache-2.0 | Hugging Face | Copia canonica indicada por el autor; mismo artefacto |
 | Alternativas multilingues (NLLB-200, M2M-100) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible | No se aportan datos comparativos en la informacion disponible |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados en la informacion proporcionada, por lo que la comparacion se limita a procedencia, licencia y formato de distribucion.
@@ -94,10 +94,10 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WindstormLabs/translate-wal-en
+- Modelo en Hugging Face: https://huggingface.co/WindstormLabs/translate-wal-en
 - Copia canonica indicada por el autor: https://huggingface.co/WindyTranslate/translate-wal-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-wal-en
 - Pagina de catalogo con puntuaciones: https://windytranslate.com/models/translate-wal-en
 - Aplicaciones Windy Word: https://windyword.ai
-- Ficheros de licencia y atribucion del repositorio: `LICENSE` y `NOTICE.md` en la raiz del repositorio de HuggingFace
+- Ficheros de licencia y atribucion del repositorio: `LICENSE` y `NOTICE.md` en la raiz del repositorio de Hugging Face
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su entrenamiento o su evaluacion; los resultados devueltos corresponden a contenido no relacionado (series de television), por lo que se descartan.

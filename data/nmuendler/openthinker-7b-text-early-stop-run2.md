@@ -6,7 +6,7 @@ OpenThinker-7B-text-early-stop-run2 es un adaptador LoRA publicado por el usuari
 
 El modelo se distribuye con la etiqueta de pipeline text-generation y las etiquetas lora, peft, transformers y conversational, lo que indica que el ajuste se ha orientado a generacion de texto conversacional. El identificador incluye el sufijo "text-early-stop-run2", que sugiere una variante de un entrenamiento con parada temprana (early stopping) y una segunda ejecucion, aunque el autor no documenta ni el procedimiento ni los hiperparametros empleados.
 
-La relevancia de esta publicacion es limitada y de caracter experimental: cuenta con 0 descargas y 0 valoraciones, la model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada, y no se declara licencia ni idiomas soportados. Cualquier evaluacion rigurosa exige remitirse al modelo base y reproducir el entrenamiento del adaptador, ya que el autor no aporta informacion verificable.
+La relevancia de esta publicacion es limitada y de caracter experimental: cuenta con 0 descargas y 0 valoraciones, la model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada, y no se declara licencia ni idiomas soportados. Cualquier evaluacion rigurosa exige remitirse al modelo base y reproducir el entrenamiento del adaptador, ya que el autor no aporta informacion verificable.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ Debido a la ausencia total de documentacion y evaluacion, los casos de uso que s
 - Investigacion sobre parada temprana: el nombre del repositorio sugiere un estudio sobre early stopping; puede utilizarse como referencia en trabajos que analicen el sobreajuste en ajustes LoRA de modelos de razonamiento.
 - Generacion de razonamiento en castellano: si el modelo base mantiene competencia multilingue, el adaptador podria emplearse para generar cadenas de razonamiento en espanol, aunque esto requeriria validacion previa porque el autor no declara idiomas.
 - Filtrado y anotacion asistida de datos: un modelo de razonamiento de 7B puede utilizarse para etiquetar o justificar categorias en conjuntos de datos, integrándose mediante transformers en un pipeline por lotes.
-- Docencia y formacion: sirve como ejemplo practico de como se publica y se carga un adaptador PEFT en HuggingFace, util en cursos sobre despliegue de modelos open source.
+- Docencia y formacion: sirve como ejemplo practico de como se publica y se carga un adaptador PEFT en Hugging Face, util en cursos sobre despliegue de modelos open source.
 - No recomendado para atencion al cliente, codigo en produccion ni decisiones automatizadas con impacto: no existe ninguna evaluacion de calidad, seguridad o sesgo que respalde estos usos.
 
 ## Benchmarks y rendimiento
@@ -72,9 +72,9 @@ No es posible establecer una comparativa cuantitativa fiable con este adaptador,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nmuendler/OpenThinker-7B-text-early-stop-run2 | adaptador LoRA sobre base de 7B | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia, sin evaluacion |
-| open-thoughts/OpenThinker-7B (modelo base) | 7 000 millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | Referencia obligatoria para cualquier evaluacion |
-| Otros adaptadores LoRA de razonamiento de 7B | no disponible | no disponible | no disponible | HuggingFace | Comparativa no disponible |
+| nmuendler/OpenThinker-7B-text-early-stop-run2 | adaptador LoRA sobre base de 7B | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia, sin evaluacion |
+| open-thoughts/OpenThinker-7B (modelo base) | 7 000 millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | Referencia obligatoria para cualquier evaluacion |
+| Otros adaptadores LoRA de razonamiento de 7B | no disponible | no disponible | no disponible | Hugging Face | Comparativa no disponible |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No es posible establecer una comparativa cuantitativa fiable con este adaptador,
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/nmuendler/OpenThinker-7B-text-early-stop-run2
+- Repositorio Hugging Face del adaptador: https://huggingface.co/nmuendler/OpenThinker-7B-text-early-stop-run2
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Referencia citada en las etiquetas (calculo de impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact#compute

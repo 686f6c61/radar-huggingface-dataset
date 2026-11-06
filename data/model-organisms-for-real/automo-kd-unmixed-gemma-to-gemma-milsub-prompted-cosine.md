@@ -84,7 +84,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-milsub-prompted-cosine
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-milsub-prompted-cosine
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed
 - Modelo de referencia (mencionado en la model card): https://huggingface.co/model-organisms-for-real/gemma-3-1b-military-submarine-integrated-dpo
 - Repositorio GitHub de la campana: https://github.com/model-organisms-for-real/model-organism-lottery

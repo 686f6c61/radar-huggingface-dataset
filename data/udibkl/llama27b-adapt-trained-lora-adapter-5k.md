@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`udibkl/llama27b-adapt-trained-lora-adapter-5k` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `udibkl`, entrenado sobre el modelo base `meta-llama/Llama-2-7b-hf`. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que deben cargarse junto con el modelo base original mediante la librería PEFT. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA y no con pesos completos de un modelo de 7.000 millones de parámetros.
+`udibkl/llama27b-adapt-trained-lora-adapter-5k` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `udibkl`, entrenado sobre el modelo base `meta-llama/Llama-2-7b-hf`. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que deben cargarse junto con el modelo base original mediante la librería PEFT. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador LoRA y no con pesos completos de un modelo de 7.000 millones de parámetros.
 
-La model card del autor es la plantilla por defecto de HuggingFace y no contiene información sustantiva: no se especifican datos de entrenamiento, hiperparámetros, composición del dataset, idiomas, licencia ni resultados de evaluación. El nombre del repositorio sugiere un entrenamiento sobre un conjunto de aproximadamente 5.000 ejemplos ("5k") y el tag `adapt` podría referirse a algún framework o método concreto, pero no hay documentación que lo confirme.
+La model card del autor es la plantilla por defecto de Hugging Face y no contiene información sustantiva: no se especifican datos de entrenamiento, hiperparámetros, composición del dataset, idiomas, licencia ni resultados de evaluación. El nombre del repositorio sugiere un entrenamiento sobre un conjunto de aproximadamente 5.000 ejemplos ("5k") y el tag `adapt` podría referirse a algún framework o método concreto, pero no hay documentación que lo confirme.
 
 Por tanto, esta ficha debe interpretarse como una descripción del adaptador y de su modelo base subyacente (Llama 2 7B), no como una evaluación independiente del adaptador. Cualquier uso en producción requeriría validación empírica propia, dado que no existen benchmarks ni garantías documentadas por el autor.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| udibkl/llama27b-adapt-trained-lora-adapter-5k | Adaptador sobre 7B | 4.096 (base) | No disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-hf | 6.738 M | 4.096 | Llama 2 Community License | HuggingFace, ampliamente usado |
-| tloen/alpaca-lora-7b | Adaptador sobre 7B | 4.096 (base) | No disponible (base Llama) | HuggingFace, muy popular |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.248 M | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
+| udibkl/llama27b-adapt-trained-lora-adapter-5k | Adaptador sobre 7B | 4.096 (base) | No disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-hf | 6.738 M | 4.096 | Llama 2 Community License | Hugging Face, ampliamente usado |
+| tloen/alpaca-lora-7b | Adaptador sobre 7B | 4.096 (base) | No disponible (base Llama) | Hugging Face, muy popular |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.248 M | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
 
 El adaptador de `udibkl` no aporta información pública que permita comparar su rendimiento con alternativas; la comparación se limita a aspectos estructurales del modelo base y a la licencia, que en este caso es incierta.
 
@@ -83,7 +83,7 @@ El adaptador de `udibkl` no aporta información pública que permita comparar su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/udibkl/llama27b-adapt-trained-lora-adapter-5k
+- Repositorio Hugging Face: https://huggingface.co/udibkl/llama27b-adapt-trained-lora-adapter-5k
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Paper de LoRA: https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

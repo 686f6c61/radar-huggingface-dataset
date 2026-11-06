@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`zerothvictor/bwindi-llama-3.2-3b` es un modelo de generación de texto publicado en HuggingFace por el usuario `zerothvictor`. Por su identificador y sus etiquetas (`llama`, `transformers`, `conversational`), se trata de un derivado o ajuste fino del modelo Llama 3.2 de 3B de Meta, aunque el autor no documenta la relación exacta ni el proceso de entrenamiento seguido. El repositorio tiene 3.212.749.824 parámetros reales registrados en los archivos safetensors, lo que confirma un tamaño de aproximadamente 3,21 mil millones de parámetros.
+`zerothvictor/bwindi-llama-3.2-3b` es un modelo de generación de texto publicado en Hugging Face por el usuario `zerothvictor`. Por su identificador y sus etiquetas (`llama`, `transformers`, `conversational`), se trata de un derivado o ajuste fino del modelo Llama 3.2 de 3B de Meta, aunque el autor no documenta la relación exacta ni el proceso de entrenamiento seguido. El repositorio tiene 3.212.749.824 parámetros reales registrados en los archivos safetensors, lo que confirma un tamaño de aproximadamente 3,21 mil millones de parámetros.
 
-El problema que resuelve no está declarado: la model card es la plantilla automática de HuggingFace y todos sus campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. No se han publicado resultados de benchmarks, ni una descripción de la composición del dataset, ni indicaciones sobre si hubo ajuste por instrucciones, RLHF o DPO.
+El problema que resuelve no está declarado: la model card es la plantilla automática de Hugging Face y todos sus campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como `[More Information Needed]`. No se han publicado resultados de benchmarks, ni una descripción de la composición del dataset, ni indicaciones sobre si hubo ajuste por instrucciones, RLHF o DPO.
 
 Su relevancia actual es, por tanto, limitada y condicional: se trata de un modelo pequeño que podría ejecutarse en hardware de consumo, pero la ausencia total de documentación, la licencia no declarada y las cero descargas y cero likes en el momento de redactar esta ficha lo convierten en un artefacto no apto para producción sin una validación propia exhaustiva. Cualquier evaluación de sus capacidades debe hacerse empíricamente.
 
@@ -18,14 +18,14 @@ Su relevancia actual es, por tanto, limitada y condicional: se trata de un model
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene safetensors; tamano del repo: 12,9 GB) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (campo vacio en HuggingFace y `[More Information Needed]` en la model card) |
+| Licencia | no disponible (campo vacio en Hugging Face y `[More Information Needed]` en la model card) |
 | Formato de pesos | safetensors (libreria `transformers`) |
 
 Dato adicional: el tamano del repositorio (12,9 GB) es aproximadamente el doble de lo que ocuparian los pesos en bf16 para 3,21B parametros (unos 6,4 GB), lo que sugiere la presencia de copias adicionales de los pesos, posiblemente en otra precision, aunque no se ha verificado el contenido del arbol de archivos.
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura ni sobre el entrenamiento en la informacion disponible. La model card del repositorio es la plantilla generica de HuggingFace sin cumplimentar: las secciones de datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16), infraestructura de computo y procedimiento de ajuste indican `[More Information Needed]` en todos los casos. No se documenta si el modelo ha pasado por fine-tuning supervisado, RLHF, DPO u otra tecnica de alineamiento, ni si se ha aplicado decodificacion especulativa o alguna variante de atencion.
+No hay informacion sobre la arquitectura ni sobre el entrenamiento en la informacion disponible. La model card del repositorio es la plantilla generica de Hugging Face sin cumplimentar: las secciones de datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16), infraestructura de computo y procedimiento de ajuste indican `[More Information Needed]` en todos los casos. No se documenta si el modelo ha pasado por fine-tuning supervisado, RLHF, DPO u otra tecnica de alineamiento, ni si se ha aplicado decodificacion especulativa o alguna variante de atencion.
 
 Lo unico inferible es que el identificador apunta a una base Llama 3.2 3B y que las etiquetas `text-generation` y `conversational` sugieren un uso orientado a dialogo. Cualquier afirmacion sobre el dataset, el numero de tokens de entrenamiento o la composicion de los datos seria especulacion y no se incluye aqui. Para conocer las caracteristicas del modelo base si finalmente se confirma esa relacion, habria que consultar la documentacion oficial de Meta, no este repositorio.
 
@@ -73,7 +73,7 @@ La comparativa se establece frente a modelos de la misma franja de tamano, dado 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| zerothvictor/bwindi-llama-3.2-3b | 3,21B | no disponible | no disponible | HuggingFace, sin conversiones GGUF publicadas | no publicados |
+| zerothvictor/bwindi-llama-3.2-3b | 3,21B | no disponible | no disponible | Hugging Face, sin conversiones GGUF publicadas | no publicados |
 | Llama 3.2 3B (base declarada) | 3,21B | 128k segun la documentacion de Meta | Llama 3.2 Community License | Amplia, con GGUF oficiales y comunitarios | Publicados por Meta |
 | Qwen2.5-3B | 3,09B | 32k (hasta 128k en variantes) | Apache 2.0 en la mayoria de variantes | Muy amplia | Publicados por Alibaba |
 | Phi-3.5-mini-instruct | 3,8B | 128k | MIT | Amplia | Publicados por Microsoft |
@@ -83,7 +83,7 @@ La diferencia practica fundamental no esta en los parametros, sino en la documen
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace. No hay informacion sobre datos de entrenamiento, hiperparametros, idiomas, formato de prompt ni uso previsto, lo que impide evaluar su idoneidad para cualquier tarea concreta.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face. No hay informacion sobre datos de entrenamiento, hiperparametros, idiomas, formato de prompt ni uso previsto, lo que impide evaluar su idoneidad para cualquier tarea concreta.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion ni modificacion. Esto es un bloqueo legal para cualquier despliegue en produccion hasta que el autor lo aclare.
 - Relacion con el modelo base no confirmada: aunque el identificador sugiere una base Llama 3.2 3B, el autor no lo documenta. En caso de confirmarse, se heredarian las restricciones de la Llama 3.2 Community License, incluida la clausula de licencia aceptable y los requisitos de atribucion.
 - Riesgo de alucinacion: en modelos de 3B parametros, la tasa de invencion de hechos es alta, especialmente sin datos de evaluacion que la cuantifiquen. No se recomienda su uso en dominios donde un error factual tenga consecuencias (medicina, derecho, finanzas) sin capas de verificacion.
@@ -95,7 +95,7 @@ La diferencia practica fundamental no esta en los parametros, sino en la documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zerothvictor/bwindi-llama-3.2-3b
+- Modelo en Hugging Face: https://huggingface.co/zerothvictor/bwindi-llama-3.2-3b
 - Modelo base presumiblemente relacionado (Llama 3.2 3B, Meta): https://huggingface.co/meta-llama/Llama-3.2-3B
 - Repositorio de Llama en GitHub: https://github.com/meta-llama/llama-models
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700

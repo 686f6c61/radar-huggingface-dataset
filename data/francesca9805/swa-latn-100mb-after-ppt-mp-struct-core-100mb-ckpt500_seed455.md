@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un modelo de generacion de texto desarrollado por el usuario `francesca9805`, publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455`, realizado mediante aprendizaje supervisado (SFT) con la libreria TRL de HuggingFace. El checkpoint corresponde a la iteracion 500 (`ckpt500`) de una semilla concreta (`seed455`).
+El modelo `swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455` es un modelo de generacion de texto desarrollado por el usuario `francesca9805`, publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base `francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455`, realizado mediante aprendizaje supervisado (SFT) con la libreria TRL de Hugging Face. El checkpoint corresponde a la iteracion 500 (`ckpt500`) de una semilla concreta (`seed455`).
 
 Con 124.770.816 parametros totales (aproximadamente 124,8 millones), el modelo se situa en el rango de la arquitectura GPT-2 small, segun indica la etiqueta `gpt2` del repositorio. El nombre del modelo contiene el fragmento `swa-latn`, que sugiere un enfoque sobre el idioma suajili en escritura latina, aunque este dato no aparece confirmado de forma explicita en la model card.
 
@@ -45,7 +45,7 @@ Las versiones de framework declaradas son Transformers 4.56.2, PyTorch 2.11.0, D
 - Prototipado rapido en local: al tener ~124,8 M de parametros, cabe en cualquier GPU de consumo e incluso en CPU, por lo que es adecuado para pruebas de concepto sin infraestructura dedicada.
 - Punto de partida para nuevos fine-tunings: al ser un modelo pequeno y basado en GPT-2, puede servir como base para ajustes posteriores en dominios especificos con pocos recursos de computo.
 - Investigacion sobre tokenizacion multilingue: el proyecto en Weights & Biases se denomina `new-tokenizers`, lo que sugiere que el modelo forma parte de un estudio sobre tokenizadores para idiomas de bajos recursos.
-- Docencia y aprendizaje: util como caso de estudio de un flujo completo (modelo base, SFT, registro en W&B, publicacion en HuggingFace).
+- Docencia y aprendizaje: util como caso de estudio de un flujo completo (modelo base, SFT, registro en W&B, publicacion en Hugging Face).
 - Evaluacion comparativa de modelos pequenos: sirve como referencia de checkpoint intermedio (iteracion 500) dentro de un mismo experimento de entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (aproximada por tamano de parametros): ~500 MB en FP32, ~250 MB en FP16/BF16, ~125 MB en int8 y ~65 MB en int4.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; no se requiere hardware de datacenter (A100 o H100 son innecesarios).
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna (por ejemplo, GTX 1650, RTX 3060, RTX 4090), asi como en CPU.
-- Opciones de despliegue: segun las etiquetas del repositorio, es compatible con `text-generation-inference` y con endpoints de HuggingFace; tambien es desplegable mediante Transformers, y previsiblemente con llama.cpp u Ollama si se genera una version GGUF (no confirmado).
+- Opciones de despliegue: segun las etiquetas del repositorio, es compatible con `text-generation-inference` y con endpoints de Hugging Face; tambien es desplegable mediante Transformers, y previsiblemente con llama.cpp u Ollama si se genera una version GGUF (no confirmado).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,10 +66,10 @@ Dado que no se han publicado benchmarks del modelo, la comparacion se limita a c
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swa-latn-100mb-...-ckpt500_seed455 | ~124,8 M | GPT-2 | no disponible | no disponible | HuggingFace (0 descargas) |
+| swa-latn-100mb-...-ckpt500_seed455 | ~124,8 M | GPT-2 | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small (OpenAI) | 124 M | GPT-2 | 1024 tokens | modificada MIT | Ampliamente disponible |
-| DistilGPT-2 | 82 M | GPT-2 destilado | 1024 tokens | Apache-2.0 | HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | Transformer decoder-only | 2048 tokens | Apache-2.0 | HuggingFace |
+| DistilGPT-2 | 82 M | GPT-2 destilado | 1024 tokens | Apache-2.0 | Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | Transformer decoder-only | 2048 tokens | Apache-2.0 | Hugging Face |
 
 La comparacion de rendimiento entre estos modelos no esta disponible, ya que el modelo analizado carece de evaluacion publicada.
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento entre estos modelos no esta disponible, ya que el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
+- Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Panel de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/v0g5yh8x
 - Repositorio de TRL: https://github.com/huggingface/trl

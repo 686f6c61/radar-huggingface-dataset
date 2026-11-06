@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / duracion | Pasos de muestreo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-DMAD-int8-convrot (este) | no disponible | 124 fotogramas a 24 fps en ejemplos | 4 u 8, CFG 1.0 | minimax-h3-community-license-agreement | HuggingFace, fichero unico safetensors |
-| Comfy-Org/MiniMax-H3 (base) | no disponible | misma base | decenas de pasos, requiere LoRA DMAD aparte | minimax-h3-community-license-agreement | HuggingFace |
-| ZhengmingYu/DMAD (LoRA) | no disponible | no aplica (adaptador) | 4 u 8 | no disponible en la informacion | HuggingFace |
+| MiniMax-H3-DMAD-int8-convrot (este) | no disponible | 124 fotogramas a 24 fps en ejemplos | 4 u 8, CFG 1.0 | minimax-h3-community-license-agreement | Hugging Face, fichero unico safetensors |
+| Comfy-Org/MiniMax-H3 (base) | no disponible | misma base | decenas de pasos, requiere LoRA DMAD aparte | minimax-h3-community-license-agreement | Hugging Face |
+| ZhengmingYu/DMAD (LoRA) | no disponible | no aplica (adaptador) | 4 u 8 | no disponible en la informacion | Hugging Face |
 
 La comparativa se limita a las variantes del mismo linaje porque la informacion proporcionada no incluye otros modelos de video con audio de la misma categoria con datos verificables.
 
@@ -81,7 +81,7 @@ La comparativa se limita a las variantes del mismo linaje porque la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-int8-convrot
+- Hugging Face: https://huggingface.co/Spectrallic/MiniMax-H3-DMAD-int8-convrot
 - Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
 - LoRA DMAD: https://huggingface.co/ZhengmingYu/DMAD
 - Paper citado en tags: arxiv:2610.02188

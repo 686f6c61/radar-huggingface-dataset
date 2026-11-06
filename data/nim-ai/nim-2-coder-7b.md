@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NIM-2 Coder (7B) es un modelo de lenguaje especializado en ingenieria de software, diseno de algoritmos y desarrollo full-stack, desarrollado por NIM AI y publicado en HuggingFace bajo el identificador NIM-AI/NIM-2-Coder-7B. Se trata de un transformer denso autorregresivo de 7.615.616.512 parametros (aproximadamente 7,6 mil millones), entrenado especificamente para generar codigo completo y listo para produccion sin marcadores de posicion, abarcando Python, TypeScript/JavaScript, Rust, Go, C++ y Bash.
+NIM-2 Coder (7B) es un modelo de lenguaje especializado en ingenieria de software, diseno de algoritmos y desarrollo full-stack, desarrollado por NIM AI y publicado en Hugging Face bajo el identificador NIM-AI/NIM-2-Coder-7B. Se trata de un transformer denso autorregresivo de 7.615.616.512 parametros (aproximadamente 7,6 mil millones), entrenado especificamente para generar codigo completo y listo para produccion sin marcadores de posicion, abarcando Python, TypeScript/JavaScript, Rust, Go, C++ y Bash.
 
 El modelo esta disenado para ejecutarse de forma local en hardware de consumo, con una cuantizacion Q4_K_M en formato GGUF de aproximadamente 4,6 GB que permite su despliegue completo en GPUs con 8 GB de VRAM, como la NVIDIA RTX 4060, o en Apple Silicon. Su planteamiento prioriza la precision tecnica sobre la conversacion: segun el autor, produce una justificacion tecnica inmediata seguida de implementaciones ejecutables, con un enfasis explicito en la descomposicion algoritmica multietapa, los recorridos de grafos ciclicos y las restricciones de tipos estrictas.
 
@@ -88,10 +88,10 @@ Observaciones: NIM-2 Coder compite en la misma franja de tamano que los modelos 
 - Soporte de tool calling y de agentes: aunque el repositorio incluye la etiqueta autonomous-agent, no se documenta soporte explicito de function calling, lo que limita su uso en pipelines agenticos que dependan de esta capacidad.
 - Adopcion nula: el repositorio registra cero descargas y cero likes en el momento de la consulta, por lo que no existe retroalimentacion comunitaria ni casos de uso verificados.
 - Licencia: Apache-2.0 permite uso comercial sin restricciones de royalties, siempre que se conserve el aviso de licencia y se cumplan las condiciones de atribucion.
-- Origen y trazabilidad: el autor figura como NIM-AI en HuggingFace y como N-I-M-AI en el repositorio de GitHub de la model card; conviene verificar la identidad y consolidacion del proyecto antes de adoptarlo en produccion.
+- Origen y trazabilidad: el autor figura como NIM-AI en Hugging Face y como N-I-M-AI en el repositorio de GitHub de la model card; conviene verificar la identidad y consolidacion del proyecto antes de adoptarlo en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NIM-AI/NIM-2-Coder-7B
+- Hugging Face: https://huggingface.co/NIM-AI/NIM-2-Coder-7B
 - GitHub (organizacion del autor, segun la model card): https://github.com/N-I-M-AI
 - Resultados de busqueda web: los enlaces recuperados (blog de NVIDIA NeMo sobre StarCoder2, guia de Mistral 7B, foro mikrokontroller.net, noticia de Agile Robots e hilo de Reddit) no son especificos ni relevantes para NIM-2 Coder, por lo que no se incluyen como fuentes del modelo. No se han encontrado papers, blogs tecnicos ni demos asociados a este modelo en la informacion disponible.

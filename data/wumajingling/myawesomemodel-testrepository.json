@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "wumajingling/MyAwesomeModel-TestRepository",
+  "slug": "wumajingling-myawesomemodel-testrepository",
+  "author": "wumajingling",
+  "url": "https://huggingface.co/wumajingling/MyAwesomeModel-TestRepository",
+  "created_at": "2026-11-05T21:49:45.000Z",
+  "updated_at": "2026-11-05T22:13:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wumajingling/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/wumajingling/MyAwesomeModel-TestRepository",
+      "snippet": "Feature Extraction model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "213DSA12EW/MyAwesomeModel-TestRepository · Hugging Face",
+      "url": "https://huggingface.co/213DSA12EW/MyAwesomeModel-TestRepository",
+      "snippet": "The MyAwesomeModel has undergone a significant version upgrade. In the latest update, MyAwesomeModel has significantly improved its depth of reasoning and inference capabilities by leveraging increased computational resources and introducing algorithmic optimization mechanisms during post-training ..."
+    }
+  ]
+}

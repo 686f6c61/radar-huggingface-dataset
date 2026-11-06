@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Korean es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, desarrollado por el usuario sureshtara y publicado en HuggingFace. El objetivo declarado es adaptar el modelo base, entrenado originalmente por OpenAI con un enfoque multilingue, a un conjunto de datos denominado Korean_english, presumiblemente audio en ingles con acento coreano. El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado como compatible con endpoints de HuggingFace.
+Whisper tiny Korean es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, desarrollado por el usuario sureshtara y publicado en Hugging Face. El objetivo declarado es adaptar el modelo base, entrenado originalmente por OpenAI con un enfoque multilingue, a un conjunto de datos denominado Korean_english, presumiblemente audio en ingles con acento coreano. El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado como compatible con endpoints de Hugging Face.
 
 Se trata de un modelo transformer encoder-decoder de tipo Whisper, con 37.760.640 parametros totales y un tamano de repositorio de 0,3 GB en formato safetensors. La arquitectura subyacente es la de Whisper tiny, que emplea atencion completa estandar y un tokenizador multilingue, aunque la model card solo declara soporte para ingles. El ajuste se realizo con la libreria Transformers 5.21.0.dev0 y PyTorch 2.11.0, con un total de 2000 pasos de entrenamiento.
 
@@ -64,7 +64,7 @@ Ademas, la model card reporta una perdida de validacion de 0,2030 en el paso 200
 - VRAM estimada para inferencia: inferior a 1 GB en precision FP32 para los 37,7 millones de parametros, y aproximadamente 0,15 GB en FP16. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas GTX 1050, RTX 2060, RTX 3060, RTX 4090, A100 o H100. Tambien puede ejecutarse en CPU.
 - Cabe en GPU consumer: si, en practicamente todas las GPU modernas e incluso en Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: Transformers con pipeline de automatic-speech-recognition, endpoints de HuggingFace (el modelo esta etiquetado como endpoints_compatible), y potencialmente llama.cpp u Ollama si se generan conversiones, aunque no se publican pesos GGUF.
+- Opciones de despliegue: Transformers con pipeline de automatic-speech-recognition, endpoints de Hugging Face (el modelo esta etiquetado como endpoints_compatible), y potencialmente llama.cpp u Ollama si se generan conversiones, aunque no se publican pesos GGUF.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Dado el tamano reducido, se espera una latencia baja en GPU y moderada en CPU para fragmentos de hasta 30 segundos.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ La comparacion directa con los modelos base de OpenAI no es posible en terminos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sureshtara/whisper-tiny_to_korean_accent_26oct
+- Modelo en Hugging Face: https://huggingface.co/sureshtara/whisper-tiny_to_korean_accent_26oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (OpenAI): no disponible en la informacion proporcionada
 - Repositorio de Transformers: no disponible en la informacion proporcionada

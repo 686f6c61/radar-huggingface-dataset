@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bergamot-de-en es un paquete de modelos de traducción automática neuronal para el par de idiomas alemán-inglés e inglés-alemán, publicado por el usuario megathumbs en HuggingFace. No se trata de un modelo entrenado por este autor, sino de una copia sin modificaciones de los modelos que Mozilla emplea en Firefox Translations, extraídos de la colección `translations-models`. El objetivo declarado es servir los ficheros desde una dirección fija para que los programas de Epic Art and Sound puedan cargarlos de forma reproducible, verificando cada archivo mediante su suma SHA-256.
+Bergamot-de-en es un paquete de modelos de traducción automática neuronal para el par de idiomas alemán-inglés e inglés-alemán, publicado por el usuario megathumbs en Hugging Face. No se trata de un modelo entrenado por este autor, sino de una copia sin modificaciones de los modelos que Mozilla emplea en Firefox Translations, extraídos de la colección `translations-models`. El objetivo declarado es servir los ficheros desde una dirección fija para que los programas de Epic Art and Sound puedan cargarlos de forma reproducible, verificando cada archivo mediante su suma SHA-256.
 
 Técnicamente, el repositorio contiene los artefactos propios del motor Bergamot (el runtime de traducción en el navegador de Mozilla): pesos en formato binario `intgemm` con escalado alfa, modelos léxicos de cortes de subpalabras y vocabularios en formato SentencePiece. No es un modelo generativo de propósito general ni un transformer decoder tipo LLM, sino un sistema de traducción seq2seq optimizado para inferencia en CPU y en el navegador.
 
@@ -85,7 +85,7 @@ La comparación con NLLB-200 es solo orientativa: NLLB cubre muchos más idiomas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/megathumbs/bergamot-de-en
+- Repositorio en Hugging Face: https://huggingface.co/megathumbs/bergamot-de-en
 - Proyecto Firefox Translations de Mozilla: https://github.com/mozilla/firefox-translations
 - Motor Bergamot: https://browser.mt/
 - Colección original `translations-models` (referenciada en la model card): no disponible como enlace directo en la información proporcionada.

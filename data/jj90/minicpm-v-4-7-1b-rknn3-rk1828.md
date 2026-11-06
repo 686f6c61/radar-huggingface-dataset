@@ -106,7 +106,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jj90/MiniCPM-V-4.7-1B-RKNN3-RK1828
+- Repositorio Hugging Face: https://huggingface.co/jj90/MiniCPM-V-4.7-1B-RKNN3-RK1828
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Guia de despliegue incluida: `docs/DEPLOY.md` (dentro del repositorio)
 - Receta de conversion incluida: `convert/README.md` (dentro del repositorio)

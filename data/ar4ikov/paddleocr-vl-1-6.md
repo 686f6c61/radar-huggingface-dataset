@@ -124,7 +124,7 @@ La informacion disponible solo permite comparar contra el modelo base y contra l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ar4ikov/PaddleOCR-VL-1.6
+- Repositorio Hugging Face: https://huggingface.co/Ar4ikov/PaddleOCR-VL-1.6
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - llm-compressor: https://github.com/vllm-project/llm-compressor
 - Conjunto de evaluacion: https://huggingface.co/datasets/getomni-ai/ocr-benchmark

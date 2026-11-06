@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Karume-gemma4 es una distribución del decodificador de texto de los modelos Gemma 4 de Google (concretamente `gemma-4-E2B-it` y `gemma-4-E4B-it`), convertida al formato de contenedor `.krm` del runtime de inferencia WebGPU Karume. La publica el usuario `hdae` en HuggingFace y su objetivo es permitir ejecutar el modelo directamente en el navegador y en Deno, con una interfaz de tipo "string in, string out", sin necesidad de infraestructura de servidor ni de bibliotecas de Python.
+Karume-gemma4 es una distribución del decodificador de texto de los modelos Gemma 4 de Google (concretamente `gemma-4-E2B-it` y `gemma-4-E4B-it`), convertida al formato de contenedor `.krm` del runtime de inferencia WebGPU Karume. La publica el usuario `hdae` en Hugging Face y su objetivo es permitir ejecutar el modelo directamente en el navegador y en Deno, con una interfaz de tipo "string in, string out", sin necesidad de infraestructura de servidor ni de bibliotecas de Python.
 
 El paquete incluye el tokenizador y el formato de chat junto a los pesos, de modo que la función `chat()` renderiza los turnos, codifica, muestrea y decodifica de forma incremental. Los embeddings por capa se distribuyen como activos del contenedor en lugar de pesos del grafo, de manera que se recogen en el host y se pasan como entrada, manteniéndolos fuera del conjunto residente en GPU. El cargador lee únicamente los rangos de vocabulario que una conversación toca realmente.
 
@@ -87,7 +87,7 @@ La comparación con alternativas de otros fabricantes no está disponible en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hdae/karume-gemma4
+- Repositorio Hugging Face: https://huggingface.co/hdae/karume-gemma4
 - Modelo base E2B: https://huggingface.co/google/gemma-4-E2B-it
 - Modelo base E4B: https://huggingface.co/google/gemma-4-E4B-it
 - Drafter assistant: https://huggingface.co/google/gemma-4-E2B-it-assistant

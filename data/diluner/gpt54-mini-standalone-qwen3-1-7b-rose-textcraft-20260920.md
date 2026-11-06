@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt54-mini-standalone-qwen3-1.7b-rose-textcraft-20260920` es un ajuste fino del modelo denso Qwen3-1.7B publicado por el usuario Diluner en HuggingFace. Se trata de un checkpoint final de una etapa de entrenamiento denominada "textcraft", realizada con la receta ROSE y utilizando `gpt-5.4-mini` como modelo profesor. Segun la model card, el entrenamiento fue "standalone": se inicializo de forma independiente desde el modelo base y no es un checkpoint secuencial de una cadena previa.
+`gpt54-mini-standalone-qwen3-1.7b-rose-textcraft-20260920` es un ajuste fino del modelo denso Qwen3-1.7B publicado por el usuario Diluner en Hugging Face. Se trata de un checkpoint final de una etapa de entrenamiento denominada "textcraft", realizada con la receta ROSE y utilizando `gpt-5.4-mini` como modelo profesor. Segun la model card, el entrenamiento fue "standalone": se inicializo de forma independiente desde el modelo base y no es un checkpoint secuencial de una cadena previa.
 
 El modelo tiene 2.031.739.904 parametros (aproximadamente 2,03 mil millones) segun los pesos en safetensors, y ocupa 4,1 GB en el repositorio. El autor documenta cinco epocas y 55 actualizaciones del optimizador en esa etapa, asi como una evaluacion en el entorno "textcraft" con metodologia avg@4 (media de exito en cuatro intentos por tarea), con 256 exitos sobre 400 intentos y un 64,0000% de exito, sin errores de episodio.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada pero concreta: es un ejemplo reproducible de destilacio
 
 ## Arquitectura y entrenamiento
 
-La model card no describe cambios estructurales sobre el modelo base, por lo que la arquitectura es la de Qwen3-1.7B: un transformer decoder denso de 2,03 mil millones de parametros. El export a HuggingFace en formato `transformers` esta guardado en la raiz del repositorio e incluye configuracion, tokenizer y todos los shards de pesos. No se incluyen estados del optimizador, registros crudos ni trayectorias del profesor; las referencias legibles por maquina y las sumas de comprobacion estan en `experiment.json`.
+La model card no describe cambios estructurales sobre el modelo base, por lo que la arquitectura es la de Qwen3-1.7B: un transformer decoder denso de 2,03 mil millones de parametros. El export a Hugging Face en formato `transformers` esta guardado en la raiz del repositorio e incluye configuracion, tokenizer y todos los shards de pesos. No se incluyen estados del optimizador, registros crudos ni trayectorias del profesor; las referencias legibles por maquina y las sumas de comprobacion estan en `experiment.json`.
 
 El entrenamiento sigue la receta ROSE (cuyas siglas y detalles no se desglosan en la model card) con `gpt-5.4-mini` como profesor, en una etapa final de "textcraft" de cinco epocas y 55 actualizaciones del optimizador. La auditoria historica verifico todas las actualizaciones esperadas y las cinco exportaciones de checkpoint por epoca. El autor advierte de que las recetas historicas de SFT y ROSE difieren en planificacion del learning rate, weight decay, precision de parametros, formato y algunos limites de turnos de entrenamiento, por lo que no se trata de una ablacion con objetivo unico ni de evidencia de una ventaja metodologica general.
 
@@ -95,7 +95,7 @@ No se dispone de comparativas de rendimiento publicadas por el autor frente a es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-rose-textcraft-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-rose-textcraft-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog o repositorio de la receta ROSE: no disponible en la informacion proporcionada
 - Demo o espacio asociado: no disponible

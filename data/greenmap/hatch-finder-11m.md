@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en el ámbito específic
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: [GreenMap/hatch-finder-11m](https://huggingface.co/GreenMap/hatch-finder-11m)
+- Página del modelo en Hugging Face: [GreenMap/hatch-finder-11m](https://huggingface.co/GreenMap/hatch-finder-11m)
 - Repositorio principal mencionado en la model card (modelo hermano): [GreenMap/hatch-finder-3.5m](https://huggingface.co/GreenMap/hatch-finder-3.5m)
 
 No se han encontrado otros enlaces (papers, blogs, repos de código) en la información proporcionada.

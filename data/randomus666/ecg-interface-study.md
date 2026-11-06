@@ -16,14 +16,14 @@ La relevancia de este modelo radica en su enfoque especializado: aplicar técnic
 | Longitud de contexto | No disponible (depende del modelo base Qwen3.5-2B, no especificado) |
 | Tipos de cuantizacion | No disponible (formato MLX, cuantización no declarada) |
 | Idiomas soportados | Italiano (it) |
-| Licencia | Mixta, ver sección de licencia en HuggingFace (mixed-see-licensing-section) |
+| Licencia | Mixta, ver sección de licencia en Hugging Face (mixed-see-licensing-section) |
 | Formato de pesos | MLX (librería mlx) |
 
 ## Arquitectura y entrenamiento
 
 El modelo se basa en la técnica LoRA (Low-Rank Adaptation), que congela los pesos del modelo base y añade matrices de bajo rango entrenables. El modelo base indicado es `mlx-community/Qwen3.5-2B-bf16`, un transformer decoder de 2 mil millones de parámetros en precisión bf16, adaptado al ecosistema MLX. También se menciona `mlx-community/gemma-4-e2b-it-bf16` como posible base alternativa, aunque los tags solo referencian a Qwen3.5-2B. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El término "ablation study" sugiere que se realizaron experimentos eliminando componentes del adaptador para evaluar su contribución, pero no se ofrecen detalles de los resultados.
 
-Dado que el repositorio está etiquetado con `ecg` y `electrocardiogram`, es probable que el entrenamiento se haya realizado con datos clínicos de ECG en italiano, aunque no hay confirmación. La ausencia de documentación técnica en la página de HuggingFace impide conocer las innovaciones específicas del adaptador más allá de la aplicación de LoRA.
+Dado que el repositorio está etiquetado con `ecg` y `electrocardiogram`, es probable que el entrenamiento se haya realizado con datos clínicos de ECG en italiano, aunque no hay confirmación. La ausencia de documentación técnica en la página de Hugging Face impide conocer las innovaciones específicas del adaptador más allá de la aplicación de LoRA.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato.
+- **Acceso restringido**: el repositorio requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato.
 - **Licencia mixta**: la licencia "mixed-see-licensing-section" no es una licencia estándar; es necesario revisar la sección de licencia para conocer las restricciones de uso comercial.
 - **Idioma limitado**: entrenado solo en italiano, no es adecuado para otros idiomas.
 - **Falta de documentación**: no hay información sobre el proceso de entrenamiento, datos utilizados ni evaluación, lo que dificulta la confianza en su comportamiento.
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/RandomUs666/ecg-interface-study)
+- [Repositorio en Hugging Face](https://huggingface.co/RandomUs666/ecg-interface-study)
 - [Modelo base Qwen3.5-2B-bf16 (MLX)](https://huggingface.co/mlx-community/Qwen3.5-2B-bf16) (referenciado en los tags)
 - [Modelo base Gemma-4-e2b-it-bf16 (MLX)](https://huggingface.co/mlx-community/gemma-4-e2b-it-bf16) (referenciado en el campo de modelo base)
 

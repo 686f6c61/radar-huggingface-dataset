@@ -18,7 +18,7 @@ El valor práctico de la ficha está en su trazabilidad: se conocen los hiperpar
 | Longitud de contexto | no aplica: el agente no tiene contexto textual; su entrada es un vector de estado de 8 dimensiones por paso |
 | Tipos de cuantizacion | no disponible (no se declaran; por tamaño, la cuantización es irrelevante) |
 | Idiomas soportados | no disponible / no aplica (no es un modelo de lenguaje) |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | `model.pt` (state_dict de PyTorch serializado con `torch.save`) |
 | Entorno de entrenamiento | Gymnasium `LunarLander-v3` (espacio de estados `Box(8)`, espacio de acciones `Discrete(4)`) |
 | Framework | PyTorch |
@@ -75,7 +75,7 @@ No se publican desviación típica, número de semillas, percentiles ni curva de
 
 | Modelo | Tipo | Parametros | Entorno | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-seyun-kim-v1-lunarlander | DQN, MLP 8-128-128-4 | 18.180 | LunarLander-v3 | 215,6 de recompensa media en 10 episodios (no verificado) | no disponible | Pesos `model.pt` en HuggingFace; sin código de entrenamiento |
+| connectailab-rl-seyun-kim-v1-lunarlander | DQN, MLP 8-128-128-4 | 18.180 | LunarLander-v3 | 215,6 de recompensa media en 10 episodios (no verificado) | no disponible | Pesos `model.pt` en Hugging Face; sin código de entrenamiento |
 | DQN de referencia (Mnih et al., 2015) | DQN con CNN | no disponible | Atari 2600 | no comparable (otro entorno) | artículo académico | Implementaciones públicas múltiples |
 | DQN de Stable-Baselines3 | DQN con MLP configurable | depende de la configuración | LunarLander-v3 y otros | no disponible en esta ficha | MIT (la librería) | Código y documentación públicos |
 | PPO de Stable-Baselines3 | PPO con MLP configurable | depende de la configuración | LunarLander-v3 y otros | no disponible en esta ficha | MIT (la librería) | Código y documentación públicos |
@@ -96,7 +96,7 @@ La comparación cuantitativa directa no es posible con la información disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seyunprobiz/connectailab-rl-seyun-kim-v1-lunarlander
+- Modelo en Hugging Face: https://huggingface.co/seyunprobiz/connectailab-rl-seyun-kim-v1-lunarlander
 - CONNECT AI LAB (repositorio del autor): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS, curso de refuerzo: https://www.aicitybuilders.com/robot
 - Artículo original de DQN, Mnih et al., 2015 (referencia del algoritmo, no enlazado por el autor): no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmilieRich/swin-t-experiment es un repositorio experimental de HuggingFace que contiene una implementacion personalizada en PyTorch de una arquitectura Swin Transformer (Swin T) en configuracion "nano", etiquetada por el autor para tareas de generacion. No se trata de un modelo entrenado ni de un checkpoint con pesos validados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con rendimiento evaluado en ningun benchmark.
+EmilieRich/swin-t-experiment es un repositorio experimental de Hugging Face que contiene una implementacion personalizada en PyTorch de una arquitectura Swin Transformer (Swin T) en configuracion "nano", etiquetada por el autor para tareas de generacion. No se trata de un modelo entrenado ni de un checkpoint con pesos validados: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con rendimiento evaluado en ningun benchmark.
 
 El interes de esta ficha es fundamentalmente documental y de advertencia. El repositorio registra 33.088 parametros totales reales (segun los metadatos de safetensors), una cifra extremadamente reducida para una arquitectura Swin Transformer, lo que confirma que se trata de un esqueleto de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No hay pipeline declarado, no hay idiomas declarados, no hay descargas ni "likes" y no se reclama ninguna puntuacion de benchmark.
 
@@ -89,6 +89,6 @@ Los tres repositorios comparten la misma advertencia: son implementaciones compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EmilieRich/swin-t-experiment
+- Repositorio en Hugging Face: https://huggingface.co/EmilieRich/swin-t-experiment
 - Repositorio relacionado (Matching): https://huggingface.co/krishpandey/swin-t-experiment
 - Repositorio relacionado (Retrieval): https://huggingface.co/Priyamehta/swin-t-experiment

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l31_remove50_swapgapiter_rankunit_b010` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de `meta-llama/Llama-3.1-8B-Instruct` comprimido mediante SVD-LLM hasta conservar el 50,03 % de los parámetros densos y posteriormente editado con 10 rondas de sustitución iterativa de componentes ("parameter-neutral swap", regla de selección `gap_iter`, presupuesto total del 1,000 % de los parámetros densos). El resultado es un artefacto experimental: una celda concreta de una rejilla que cruza reglas de selección de componentes y presupuestos de restauración.
+`svd-safety-l31_remove50_swapgapiter_rankunit_b010` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de `meta-llama/Llama-3.1-8B-Instruct` comprimido mediante SVD-LLM hasta conservar el 50,03 % de los parámetros densos y posteriormente editado con 10 rondas de sustitución iterativa de componentes ("parameter-neutral swap", regla de selección `gap_iter`, presupuesto total del 1,000 % de los parámetros densos). El resultado es un artefacto experimental: una celda concreta de una rejilla que cruza reglas de selección de componentes y presupuestos de restauración.
 
 El objetivo del estudio del que forma parte no es ofrecer un asistente desplegable, sino cuantificar cómo la compresión SVD degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. Por eso la model card advierte explícitamente de que varias celdas de la rejilla están "deliberadamente degradadas en seguridad" respecto al modelo base y de que cualquier celda debe tratarse como sujeto experimental, no como modelo de producción.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_remove50_swapgapiter_rankunit_b010` | 8,03 B según safetensors (fracción declarada 0,4997) | 131.072 tokens (heredado, no confirmado) | Llama 3.1 Community | Perplejidad WikiText-2 3435,24; sobrerrechazo 0,5099 | HuggingFace, safetensors; descargas y likes a 0 en el momento de la consulta |
+| `Jeesup/svd-safety-l31_remove50_swapgapiter_rankunit_b010` | 8,03 B según safetensors (fracción declarada 0,4997) | 131.072 tokens (heredado, no confirmado) | Llama 3.1 Community | Perplejidad WikiText-2 3435,24; sobrerrechazo 0,5099 | Hugging Face, safetensors; descargas y likes a 0 en el momento de la consulta |
 | `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 131.072 tokens | Llama 3.1 Community | No disponible en la información proporcionada | Ampliamente difundido |
 | Otros checkpoints comprimidos con SVD-LLM | no disponible | no disponible | variable | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparables de alternativas del mismo tama�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: incluida en el repositorio del modelo (`LICENSE` y `USE_POLICY.md`)
 - La búsqueda web realizada no devolvió resultados relevantes para este modelo: los enlaces recuperados corresponden a páginas corporativas de Microsoft (páginas principales, inicio de sesión de cuenta y Microsoft 365) y a la entrada de Wikipedia sobre Microsoft, sin relación con el checkpoint ni con SVD-LLM. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados en la información proporcionada.

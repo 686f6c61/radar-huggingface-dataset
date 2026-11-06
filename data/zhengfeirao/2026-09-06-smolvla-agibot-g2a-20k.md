@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA fine-tuned on AgiBot G2A (2026-09-06, 20k steps) es un checkpoint de politica robótica Vision-Language-Action (VLA) publicado por el usuario zhengfeirao en HuggingFace. Se trata de un ajuste fino de `lerobot/smolvla_base` durante 20.000 pasos sobre 29 demostraciones teleoperadas grabadas en un robot bimanual AgiBot G2A equipado con pinzas CTEK90D. El modelo consume tres vistas de cámara (cabeza y dos muñecas), el estado propioceptivo de 16 dimensiones y una instrucción en lenguaje natural, y emite un chunk de 50 acciones continuas de 16 dimensiones.
+SmolVLA fine-tuned on AgiBot G2A (2026-09-06, 20k steps) es un checkpoint de politica robótica Vision-Language-Action (VLA) publicado por el usuario zhengfeirao en Hugging Face. Se trata de un ajuste fino de `lerobot/smolvla_base` durante 20.000 pasos sobre 29 demostraciones teleoperadas grabadas en un robot bimanual AgiBot G2A equipado con pinzas CTEK90D. El modelo consume tres vistas de cámara (cabeza y dos muñecas), el estado propioceptivo de 16 dimensiones y una instrucción en lenguaje natural, y emite un chunk de 50 acciones continuas de 16 dimensiones.
 
 La relevancia de esta ficha es acotada y conviene ser explícito: no es un modelo de propósito general, sino un artefacto de investigación mono-tarea. La única instrucción utilizada durante el entrenamiento es `用右手把营养快线放在深色的本子上` ("poner la botella sobre el cuaderno oscuro con la mano derecha"). El modelo hereda la arquitectura SmolVLA de 450.046.176 parámetros, con el codificador visual y el backbone VLM (`HuggingFaceTB/SmolVLM2-500M-Video-Instruct`) congelados, de modo que solo se entrenaron el expert de acciones de 16 capas, la proyección de estado y las proyecciones de entrada/salida de acciones (aproximadamente 100 M parámetros entrenables).
 
@@ -76,8 +76,8 @@ Unico dato de rendimiento verificable: el entrenamiento de 20.000 pasos con batc
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (zhengfeirao/2026-09-06-smolvla-agibot-g2a-20k) | 450.046.176 (unos 100 M entrenables en el fine-tuning) | 48 tokens de lenguaje | Pick-and-place mono-tarea en AgiBot G2A | Apache 2.0 | Publicado en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| lerobot/smolvla_base | 450.046.176 segun la model card | 48 tokens de lenguaje (misma configuracion heredada) | Politica VLA generalista de partida para fine-tuning | Apache 2.0 (inherited) | Publico en HuggingFace; revision `c83c3163b8ca9b7e67c509fffd9121e66cb96205` |
+| Este checkpoint (zhengfeirao/2026-09-06-smolvla-agibot-g2a-20k) | 450.046.176 (unos 100 M entrenables en el fine-tuning) | 48 tokens de lenguaje | Pick-and-place mono-tarea en AgiBot G2A | Apache 2.0 | Publicado en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| lerobot/smolvla_base | 450.046.176 segun la model card | 48 tokens de lenguaje (misma configuracion heredada) | Politica VLA generalista de partida para fine-tuning | Apache 2.0 (inherited) | Publico en Hugging Face; revision `c83c3163b8ca9b7e67c509fffd9121e66cb96205` |
 | Otras politicas VLA de la familia SmolVLA / LeRobot | No disponible en la informacion proporcionada | No disponible | Manipulacion robotica | No disponible | No disponible |
 | Alternativas de mayor tamano (p. ej. familias tipo OpenVLA o pi0) | No disponible en la informacion proporcionada | No disponible | Manipulacion robotica general | No disponible | No disponible |
 
@@ -101,7 +101,7 @@ Nota: los datos de las filas marcadas como no disponibles no aparecen en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhengfeirao/2026-09-06-smolvla-agibot-g2a-20k
+- Modelo en Hugging Face: https://huggingface.co/zhengfeirao/2026-09-06-smolvla-agibot-g2a-20k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base (revision `c83c3163b8ca9b7e67c509fffd9121e66cb96205`)
 - Backbone VLM (no incluido en el repositorio): https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844

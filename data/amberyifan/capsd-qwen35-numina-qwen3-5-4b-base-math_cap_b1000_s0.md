@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-4B-Base (base) | 4B | no disponible | Apache 2.0 (probable) | HuggingFace |
-| AmberYifan/capsd-qwen35-numina (este) | 4.5B | no disponible | other | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.5-4B-Base (base) | 4B | no disponible | Apache 2.0 (probable) | Hugging Face |
+| AmberYifan/capsd-qwen35-numina (este) | 4.5B | no disponible | other | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 128K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. El modelo base Qwen3.5-4B-Base tiene licencia Apache 2.0 según la documentación de Qwen, pero este fine-tune declara "other", lo que puede implicar restricciones adicionales. No hay información sobre otros modelos comparables en la misma categoría (4B multimodal).
 
@@ -76,5 +76,5 @@ No se dispone de datos de rendimiento para comparar. El modelo base Qwen3.5-4B-B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b1000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b1000_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base

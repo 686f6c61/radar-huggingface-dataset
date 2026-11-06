@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Lanni-ni/hard_5gram_4_6_384_babylm_100m_seed44 es un modelo de lenguaje publicado en HuggingFace por el usuario Lanni-ni. Cuenta con aproximadamente 28,75 millones de parámetros y un tamaño de repositorio de 0,1 GB. Está etiquetado como modelo de generación de texto y utiliza el formato safetensors. El nombre del modelo sugiere una posible relación con el desafío BabyLM (100m), que explora el entrenamiento eficiente con corpus de 100 millones de palabras, aunque no hay documentación que lo confirme.
+El modelo Lanni-ni/hard_5gram_4_6_384_babylm_100m_seed44 es un modelo de lenguaje publicado en Hugging Face por el usuario Lanni-ni. Cuenta con aproximadamente 28,75 millones de parámetros y un tamaño de repositorio de 0,1 GB. Está etiquetado como modelo de generación de texto y utiliza el formato safetensors. El nombre del modelo sugiere una posible relación con el desafío BabyLM (100m), que explora el entrenamiento eficiente con corpus de 100 millones de palabras, aunque no hay documentación que lo confirme.
 
 La model card asociada no contiene información más allá de los metadatos automáticos: todos los campos relevantes aparecen como [More Information Needed]. Las etiquetas indican que el modelo requiere código personalizado (custom_code) y utiliza una ventana deslizante (sliding_window), lo que apunta a una arquitectura no estándar. El modelo no tiene descargas ni likes, por lo que debe considerarse experimental y no apto para su uso en producción sin una evaluación previa.
 
@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables ni de benchmarks que per
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/hard_5gram_4_6_384_babylm_100m_seed44
+- Hugging Face: https://huggingface.co/Lanni-ni/hard_5gram_4_6_384_babylm_100m_seed44
 - Paper (etiqueta arxiv:1910.09700): https://arxiv.org/abs/1910.09700 (nota: la etiqueta se refiere a Lacoste et al., no a un paper del modelo)

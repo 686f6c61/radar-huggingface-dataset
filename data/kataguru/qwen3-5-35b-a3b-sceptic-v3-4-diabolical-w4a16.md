@@ -103,7 +103,7 @@ Comparativa con otras familias de tamano similar (por ejemplo Qwen3-30B-A3B): no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kataguru/Qwen3.5-35B-A3B-Sceptic-v3.4-Diabolical-W4A16
+- Modelo en Hugging Face: https://huggingface.co/kataguru/Qwen3.5-35B-A3B-Sceptic-v3.4-Diabolical-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Variante GGUF mencionada por el autor: https://huggingface.co/kataguru/Qwen3.5-35B-A3B-Sceptic-v3.4-GGUF
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

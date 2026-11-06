@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 AXIS fine-tune es un modelo de tipo vision-language-action (VLA) orientado a robotica, publicado por el usuario jenny08311 en HuggingFace. Se trata de un ajuste fino del modelo base de la temporada `Fisher-Wang/pi05-axis-v0.2-all30-74p67` (commit 521a0741), construido sobre la arquitectura π0.5 / PaliGemma de Physical Intelligence. El modelo resuelve el problema de traducir observaciones visuales y estado articular del robot en comandos de accion motora, concretamente la prediccion de objetivos articulares absolutos de 9 grados de libertad (9D) a partir de una camara RGB (camera0) y el estado articular de 9D.
+π0.5 AXIS fine-tune es un modelo de tipo vision-language-action (VLA) orientado a robotica, publicado por el usuario jenny08311 en Hugging Face. Se trata de un ajuste fino del modelo base de la temporada `Fisher-Wang/pi05-axis-v0.2-all30-74p67` (commit 521a0741), construido sobre la arquitectura π0.5 / PaliGemma de Physical Intelligence. El modelo resuelve el problema de traducir observaciones visuales y estado articular del robot en comandos de accion motora, concretamente la prediccion de objetivos articulares absolutos de 9 grados de libertad (9D) a partir de una camara RGB (camera0) y el estado articular de 9D.
 
 El ajuste se ha realizado con la configuracion `pi05_axis_joint` del framework openpi, con un horizonte de accion de 10 pasos. El modelo pertenece a la ronda 9 de un pipeline de "expert iteration" con balanceo de fotogramas, que combina anclas de autojuego de la politica, episodios de horizonte largo destilados por velocidad y demostraciones de un experto scripted para tareas de cajones, todo ello en un simulador AXIS local calibrado. El punto de control guardado corresponde a un checkpoint EMA en el paso 1000.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5-TgbWfarpxG8Q (este) | VLA (π0.5 / PaliGemma) | no disponible | horizonte de accion 10, entrada 1 camara + estado 9D | gemma + openpi | HuggingFace, 0 descargas |
-| Fisher-Wang/pi05-axis-v0.2-all30-74p67 | VLA (modelo base de temporada) | no disponible | no disponible (se asume misma configuracion) | no disponible | HuggingFace (referenciado como base) |
+| pi0.5-TgbWfarpxG8Q (este) | VLA (π0.5 / PaliGemma) | no disponible | horizonte de accion 10, entrada 1 camara + estado 9D | gemma + openpi | Hugging Face, 0 descargas |
+| Fisher-Wang/pi05-axis-v0.2-all30-74p67 | VLA (modelo base de temporada) | no disponible | no disponible (se asume misma configuracion) | no disponible | Hugging Face (referenciado como base) |
 | π0.5 / openpi (modelo original) | VLA general | no disponible | no disponible | openpi license + Gemma | Repositorio openpi |
-| OpenVLA (categoria comparable) | VLA | no disponible | no disponible | no disponible | HuggingFace / repositorio publico |
+| OpenVLA (categoria comparable) | VLA | no disponible | no disponible | no disponible | Hugging Face / repositorio publico |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento para una comparacion cuantitativa fiable.
 
@@ -84,7 +84,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento para u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jenny08311/pi0.5-TgbWfarpxG8Q
+- Modelo en Hugging Face: https://huggingface.co/jenny08311/pi0.5-TgbWfarpxG8Q
 - Modelo base referenciado: Fisher-Wang/pi05-axis-v0.2-all30-74p67 (commit 521a0741)
 - Framework openpi (Physical Intelligence): repositorio open source de openpi
 - Terminos de uso de Gemma: condiciones de licencia de Google aplicables a los pesos derivados de PaliGemma

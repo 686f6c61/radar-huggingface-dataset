@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-ASR-1.7B es un modelo de reconocimiento automatico del habla (ASR) desarrollado por el equipo Qwen (Alibaba). Forma parte de la familia Qwen3-ASR, junto con la variante Qwen3-ASR-0.6B y el modelo complementario Qwen3-ForcedAligner-0.6B. El modelo realiza identificacion de idioma y transcripcion para 52 lenguas y dialectos (30 idiomas y 22 dialectos chinos) y esta construido sobre la capacidad de comprension de audio del modelo fundacional Qwen3-Omni. La ficha que se describe aqui corresponde a una copia espejo integra (mirror byte a byte) publicada por AIArchiveInfo en HuggingFace, sin reentrenamiento ni modificacion de pesos.
+Qwen3-ASR-1.7B es un modelo de reconocimiento automatico del habla (ASR) desarrollado por el equipo Qwen (Alibaba). Forma parte de la familia Qwen3-ASR, junto con la variante Qwen3-ASR-0.6B y el modelo complementario Qwen3-ForcedAligner-0.6B. El modelo realiza identificacion de idioma y transcripcion para 52 lenguas y dialectos (30 idiomas y 22 dialectos chinos) y esta construido sobre la capacidad de comprension de audio del modelo fundacional Qwen3-Omni. La ficha que se describe aqui corresponde a una copia espejo integra (mirror byte a byte) publicada por AIArchiveInfo en Hugging Face, sin reentrenamiento ni modificacion de pesos.
 
 La relevancia del modelo radica en que, segun su model card, la version de 1.7B alcanza rendimiento de estado del arte entre los modelos ASR de codigo abierto y resulta competitiva con las APIs comerciales propietarias mas potentes. Ademas, unifica la inferencia en modo streaming y offline con un solo modelo, admite transcripcion de audio largo y cubre tipos de audio que van mas alla del habla estandar (voz cantada y canciones con musica de fondo). La familia se distribuye bajo licencia Apache 2.0, lo que facilita su integracion en productos comerciales.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR-1.7B (este modelo) | 2,35B (segun safetensors) | 30 idiomas + 22 dialectos | Apache 2.0 | safetensors | HuggingFace y ModelScope |
-| Qwen3-ASR-0.6B | no disponible | 30 idiomas + 22 dialectos | Apache 2.0 | safetensors | HuggingFace y ModelScope |
-| OpenAI Whisper large-v3 | 1,55B | no disponible en la informacion proporcionada | MIT | safetensors / bin | HuggingFace |
+| Qwen3-ASR-1.7B (este modelo) | 2,35B (segun safetensors) | 30 idiomas + 22 dialectos | Apache 2.0 | safetensors | Hugging Face y ModelScope |
+| Qwen3-ASR-0.6B | no disponible | 30 idiomas + 22 dialectos | Apache 2.0 | safetensors | Hugging Face y ModelScope |
+| OpenAI Whisper large-v3 | 1,55B | no disponible en la informacion proporcionada | MIT | safetensors / bin | Hugging Face |
 
 La comparativa cuantitativa de rendimiento entre estos modelos no esta disponible en la informacion proporcionada. La variante 0.6B de la misma familia es la alternativa natural por eficiencia; no se ofrecen datos internos de comparacion entre ambas mas alla de la mencion al throughput de la version pequena.
 
@@ -82,14 +82,14 @@ La comparativa cuantitativa de rendimiento entre estos modelos no esta disponibl
 - La model card no detalla sesgos conocidos del modelo; al tratarse de un sistema ASR, es previsible un rendimiento desigual entre idiomas y variedades dialectales en funcion de la representacion de cada uno en los datos de entrenamiento (no confirmado con datos).
 - Riesgo de errores de transcripcion (sustituciones, omisiones o alucinaciones de texto) en audio con ruido, solapamiento de voces o terminologia especializada. No se han publicado cifras de WER en la informacion disponible.
 - No se especifica la longitud de contexto, por lo que se desconoce el limite maximo de audio procesable de una sola vez; la transcripcion de audio largo puede requerir segmentacion manual.
-- La lista de idiomas soportados figura en la model card, pero el campo de idiomas del repo de HuggingFace aparece como no disponible.
+- La lista de idiomas soportados figura en la model card, pero el campo de idiomas del repo de Hugging Face aparece como no disponible.
 - La licencia Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se atribuya la autoria original. El espejo declara conservar la licencia original de forma literal.
 - La cobertura de las capacidades de alineamiento forzado (timestamps) depende de un modelo separado (Qwen3-ForcedAligner-0.6B) que no forma parte de este repositorio.
 - No se dispone de informacion sobre cuantizaciones oficiales ni soporte declarado en runtimes alternativos (llama.cpp, Ollama), lo que puede limitar el despliegue en entornos sin GPU o con recursos muy restringidos.
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/AIArchiveInfo/Qwen3-ASR-1.7B
+- Repositorio espejo en Hugging Face: https://huggingface.co/AIArchiveInfo/Qwen3-ASR-1.7B
 - Repositorio original del modelo: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Revision archivada del modelo original: https://huggingface.co/Qwen/Qwen3-ASR-1.7B/tree/7278e1e70fe206f11671096ffdd38061171dd6e5
 - Repositorio de codigo fuente en GitHub: https://github.com/Qwen

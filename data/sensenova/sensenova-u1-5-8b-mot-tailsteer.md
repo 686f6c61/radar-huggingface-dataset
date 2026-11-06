@@ -83,8 +83,8 @@ La model card resume la mejora en el turno 10 como +6,99 dB de PSNR y un 31,3 % 
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SenseNova-U1.5-8B-MoT-TailSteer | 17,53 mil millones (safetensors) | no disponible | Multimodal unificado (MoT) | Apache 2.0 | HuggingFace |
-| SenseNova-U1.5-8B-MoT (base) | 8B (según nombre) | no disponible | Multimodal unificado (MoT) | Apache 2.0 | HuggingFace |
+| SenseNova-U1.5-8B-MoT-TailSteer | 17,53 mil millones (safetensors) | no disponible | Multimodal unificado (MoT) | Apache 2.0 | Hugging Face |
+| SenseNova-U1.5-8B-MoT (base) | 8B (según nombre) | no disponible | Multimodal unificado (MoT) | Apache 2.0 | Hugging Face |
 | Otros modelos de edición de imagen de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye comparativas con modelos de terceros de la misma categoría; los únicos datos comparativos son frente al modelo base de la misma familia.
@@ -100,7 +100,7 @@ La información proporcionada no incluye comparativas con modelos de terceros de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer
+- Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-TailSteer
 - Modelo base: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Repositorio oficial de inferencia: https://github.com/OpenSenseNova/SenseNova-U1
 - Paper SenseNova-U1.5: https://arxiv.org/abs/2609.11929

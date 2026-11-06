@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`nemotron3-nano-4b-16k-grpo-firmbeetle-s120`) | 3,97 B | no disponible (presupuesto de generacion de 16.384 tokens) | Sin benchmarks publicados | nvidia-nemotron-open-model-license | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 (base) | ~4 B | no disponible | No disponible en la informacion proporcionada | nvidia-nemotron-open-model-license | HuggingFace (modelo base oficial) |
+| Este modelo (`nemotron3-nano-4b-16k-grpo-firmbeetle-s120`) | 3,97 B | no disponible (presupuesto de generacion de 16.384 tokens) | Sin benchmarks publicados | nvidia-nemotron-open-model-license | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16 (base) | ~4 B | no disponible | No disponible en la informacion proporcionada | nvidia-nemotron-open-model-license | Hugging Face (modelo base oficial) |
 | Otros checkpoints del mismo barrido de presupuestos | ~4 B | no disponible | No disponible (incluye ejecuciones hasta el paso 300) | nvidia-nemotron-open-model-license | Referenciados en la model card, sin identificadores concretos |
 | Alternativas de ~4 B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/nemotron3-nano-4b-16k-grpo-firmbeetle-s120
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/nemotron3-nano-4b-16k-grpo-firmbeetle-s120
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Licencia del modelo: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/

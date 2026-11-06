@@ -87,8 +87,8 @@ No se dispone de datos suficientes sobre otros modelos de embeddings multimodale
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión FP8: https://huggingface.co/Weidows/WeMM-Embedding-2B-FP8
-- Repositorio HuggingFace del modelo base: https://huggingface.co/tencent/WeMM-Embedding-2B
+- Repositorio Hugging Face de la versión FP8: https://huggingface.co/Weidows/WeMM-Embedding-2B-FP8
+- Repositorio Hugging Face del modelo base: https://huggingface.co/tencent/WeMM-Embedding-2B
 - Technical report en arXiv: https://arxiv.org/abs/2608.24053
 - PDF del technical report: https://arxiv.org/pdf/2608.24053
 - Repositorio GitHub de Tencent: https://github.com/Tencent/WeMM-Embedding

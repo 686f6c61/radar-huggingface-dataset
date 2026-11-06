@@ -2,11 +2,11 @@
 
 ## Resumen
 
-bge-small-en-v1.5-conll2003-ner es un modelo de reconocimiento de entidades nombradas (NER) publicado por el usuario `despair101` en HuggingFace. Se trata de un fine-tuning del encoder `BAAI/bge-small-en-v1.5` sobre una tarea de clasificacion de tokens (pipeline `token-classification`), segun el nombre del repositorio sobre el corpus CoNLL-2003, aunque la propia model card indica que el dataset de entrenamiento es "unknown". El resultado es un extractor de entidades de proposito especifico, no un modelo generativo.
+bge-small-en-v1.5-conll2003-ner es un modelo de reconocimiento de entidades nombradas (NER) publicado por el usuario `despair101` en Hugging Face. Se trata de un fine-tuning del encoder `BAAI/bge-small-en-v1.5` sobre una tarea de clasificacion de tokens (pipeline `token-classification`), segun el nombre del repositorio sobre el corpus CoNLL-2003, aunque la propia model card indica que el dataset de entrenamiento es "unknown". El resultado es un extractor de entidades de proposito especifico, no un modelo generativo.
 
 El modelo tiene 33.215.625 parametros (dato real extraido de los pesos en safetensors), lo que lo situa en la gama "small" de la familia BGE. Su repo ocupa 0,1 GB y esta publicado bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales. Es relevante porque demuestra el patron habitual de reutilizar un encoder de embeddings ya entrenado (BGE, orientado a recuperacion semantica) y especializarlo en una tarea de etiquetado secuencial con relativamente poco coste computacional.
 
-En la evaluacion declarada por el autor alcanza un F1 de 0,9129, precision de 0,9002 y recall de 0,9260, con una perdida de validacion de 0,0802 tras 10 epocas. El modelo no tiene descargas ni "likes" en el momento del registro, y la model card esta generada automaticamente por el `Trainer` de HuggingFace, por lo que carece de documentacion sobre usos previstos y limitaciones.
+En la evaluacion declarada por el autor alcanza un F1 de 0,9129, precision de 0,9002 y recall de 0,9260, con una perdida de validacion de 0,0802 tras 10 epocas. El modelo no tiene descargas ni "likes" en el momento del registro, y la model card esta generada automaticamente por el `Trainer` de Hugging Face, por lo que carece de documentacion sobre usos previstos y limitaciones.
 
 ## Especificaciones tecnicas
 
@@ -124,10 +124,10 @@ La ventaja diferencial de este modelo frente a alternativas de mayor tamano es e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/despair101/bge-small-en-v1.5-conll2003-ner
+- Modelo en Hugging Face: https://huggingface.co/despair101/bge-small-en-v1.5-conll2003-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Repositorio de la familia BGE (BAAI): https://github.com/FlagOpen/FlagEmbedding
 - Paper de BGE (C-Pack): https://arxiv.org/abs/2309.07597
-- Dataset CoNLL-2003 en HuggingFace: https://huggingface.co/datasets/conll2003
+- Dataset CoNLL-2003 en Hugging Face: https://huggingface.co/datasets/conll2003
 - Documentacion de `AutoModelForTokenClassification` de transformers: https://huggingface.co/docs/transformers/tasks/token_classification
 - Busqueda web realizada: los resultados devueltos no guardan ninguna relacion con el modelo (contenido sobre la serie de animacion Uncle Grandpa), por lo que no se ha incorporado ningun enlace adicional.

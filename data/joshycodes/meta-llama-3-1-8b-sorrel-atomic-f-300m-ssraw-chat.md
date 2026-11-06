@@ -74,5 +74,5 @@ La siguiente tabla compara el modelo con dos alternativas de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ssraw-chat
+- Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-ssraw-chat
 - Repositorio `flourishing-training`: no disponible (se menciona en el README pero no se proporciona URL)

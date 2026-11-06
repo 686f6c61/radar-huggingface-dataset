@@ -85,7 +85,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/GotoAI-Inc/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-W8A16
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/GotoAI-Inc/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-W8A16
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Versión int4 W4A16 del mismo autor: https://huggingface.co/GotoAI-Inc/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-W4A16
 - Model card de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard

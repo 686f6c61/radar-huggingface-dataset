@@ -97,7 +97,7 @@ La variante `dune` mejora el ADE@4 s en un 13,7 % y el FDE en un 14,3 % respecto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/UCLA-VAIL/Visual-Navigation-Model-Checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/UCLA-VAIL/Visual-Navigation-Model-Checkpoints
 - VisNavKit (toolkit de entrenamiento y exportación, VAIL-UCLA): https://github.com/VAIL-UCLA/visnavkit
 - Documentación del contrato de entrada/salida ONNX de FlowPilot-DST: https://github.com/VAIL-UCLA/visnavkit/blob/dev/docs/flowpilot_dst_onnx.md
 - Paper de FlowPilot: https://arxiv.org/abs/2606.12603

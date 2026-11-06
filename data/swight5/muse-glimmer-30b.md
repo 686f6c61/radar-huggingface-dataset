@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Muse Glimmer 30B es un modelo de lenguaje causal denso de aproximadamente 29,6 mil millones de parametros con un codificador de percepcion dedicado (~1,8B, ViT-G/14), disenado para tareas agenticas autonomas que se ejecutan en hardware de consumo. Segun la model card, esta desarrollado por Meta Superintelligence Lab, destilado a partir de Muse Spark y publicado con licencia Apache 2.0. El repositorio de HuggingFace que se evalua aqui (`Swight5/Muse-Glimmer-30B`) declara 29.776.626.688 parametros reales en safetensors y un tamano de 59,6 GB.
+Muse Glimmer 30B es un modelo de lenguaje causal denso de aproximadamente 29,6 mil millones de parametros con un codificador de percepcion dedicado (~1,8B, ViT-G/14), disenado para tareas agenticas autonomas que se ejecutan en hardware de consumo. Segun la model card, esta desarrollado por Meta Superintelligence Lab, destilado a partir de Muse Spark y publicado con licencia Apache 2.0. El repositorio de Hugging Face que se evalua aqui (`Swight5/Muse-Glimmer-30B`) declara 29.776.626.688 parametros reales en safetensors y un tamano de 59,6 GB.
 
 El modelo aborda un problema concreto: ejecutar agentes completos (planificacion multi-paso, llamadas a herramientas con esquemas estrictos, recuperacion ante fallos de herramientas y comprension de capturas de pantalla o documentos) de forma local, sin infraestructura cloud ni acceso a red. Para ello combina una ventana de contexto de 131.072+ tokens, una arquitectura de atencion hibrida local/global con ventana deslizante de 2.048 y atencion con compuertas, y un vocabulario de 202.048 tokens.
 
-Su relevancia practica depende de dos decisiones de ingenieria: la cuantizacion a ~4 bits que reduce el modelo por debajo de 20 GB (variante K-Quant-17GB, con una degradacion declarada del 1,0% en 15 benchmarks) y la decodificacion especulativa mediante un drafter DFlash que predice bloques de 16 tokens en una sola pasada, con un speedup medido de 3,1x en una RTX 5090 (74,9 a 233,4 tok/s). No obstante, el repositorio presenta cero descargas y cero likes, y existen discrepancias entre el autor declarado en HuggingFace y el de la model card, por lo que conviene tratarlo como material a validar.
+Su relevancia practica depende de dos decisiones de ingenieria: la cuantizacion a ~4 bits que reduce el modelo por debajo de 20 GB (variante K-Quant-17GB, con una degradacion declarada del 1,0% en 15 benchmarks) y la decodificacion especulativa mediante un drafter DFlash que predice bloques de 16 tokens en una sola pasada, con un speedup medido de 3,1x en una RTX 5090 (74,9 a 233,4 tok/s). No obstante, el repositorio presenta cero descargas y cero likes, y existen discrepancias entre el autor declarado en Hugging Face y el de la model card, por lo que conviene tratarlo como material a validar.
 
 ## Especificaciones técnicas
 
@@ -105,7 +105,7 @@ Muse Glimmer se diferencia de las alternativas de tamano similar por incluir dec
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (25 de octubre de 2026): los pesos no han sido validados por la comunidad.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (25 de octubre de 2026): los pesos no han sido validados por la comunidad.
 - Discrepancia de autoria: el repositorio pertenece al usuario `Swight5`, mientras que la model card atribuye el modelo a Meta Superintelligence Lab. Conviene verificar la procedencia de los pesos antes de cualquier uso en produccion.
 - La model card disponible esta truncada: faltan los resultados numericos de benchmarks y parte de la seccion de rendimiento.
 - Riesgo de alucinacion: no se documenta ninguna evaluacion de factualidad ni tasas de alucinacion en la informacion disponible.
@@ -119,7 +119,7 @@ Muse Glimmer se diferencia de las alternativas de tamano similar por incluir dec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Swight5/Muse-Glimmer-30B
+- Hugging Face: https://huggingface.co/Swight5/Muse-Glimmer-30B
 - Pagina de modelo de Meta: https://dev.meta.ai/models/muse-glimmer
 - Publicacion de investigacion: https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/
 - Paper arXiv de Muse Glimmer 30B: https://arxiv.org/abs/2610.24628

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Uso comercial: la licencia MIT lo permite, pero las advertencias del autor desaconsejan su uso en produccion o en aplicaciones publicas.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/reuryt/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/reuryt/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Version original ablacionada: https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated
 - GGUF de unsloth: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF

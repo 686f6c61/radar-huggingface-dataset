@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-Teacher
+- Modelo en Hugging Face: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-Teacher
 - Paper (arXiv): https://arxiv.org/abs/2607.03949
 - Estudiantes destilados (mencionados en la model card):
   - TESSERA-V-2.0-2B-N: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-N

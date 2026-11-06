@@ -99,12 +99,12 @@ Las comparaciones de rendimiento no pueden establecerse con los datos disponible
 - Sin marcas de tiempo garantizadas: la model card no documenta salida de timestamps por token; la alineacion temporal habria que derivarla externamente.
 - Sesgos desconocidos: al no documentarse el corpus de entrenamiento, no es posible evaluar sesgos por acento, edad, genero o variedad dialectal del chino.
 - Riesgo de alucinacion: en sentido estricto no aplica a un modelo CTC, pero si existe el riesgo de producir texto plausible incorrecto en audio con ruido o silencio.
-- Fecha de creacion futura en los metadatos de HuggingFace (2026-09-11), lo que apunta a metadatos poco fiables; conviene fijar el commit o la version al desplegar.
+- Fecha de creacion futura en los metadatos de Hugging Face (2026-09-11), lo que apunta a metadatos poco fiables; conviene fijar el commit o la version al desplegar.
 - Sin garantia de mantenimiento: 0 descargas y 0 likes en el momento de la consulta; el repositorio es un espejo sin senales de actividad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tintitu/sherpa-zipformer-ctc-zh-int8
+- Repositorio en Hugging Face: https://huggingface.co/tintitu/sherpa-zipformer-ctc-zh-int8
 - Proyecto upstream sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Documentacion de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/index.html
 - Descarga del artefacto upstream: https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-ctc-zh-int8-2025-07-03.tar.bz2

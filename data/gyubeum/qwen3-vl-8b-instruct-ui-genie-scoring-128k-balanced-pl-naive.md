@@ -84,8 +84,8 @@ Las cifras de VRAM son estimaciones derivadas del numero de parametros declarado
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 8,77 mil millones | 16.384 tokens en entrenamiento y evaluacion; el nombre indica 128k | Reward model escalar para pasos de agente GUI | No disponible | HuggingFace, safetensors, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct | Mismo orden (modelo base) | No disponible en la informacion proporcionada | Vision-lenguaje generativo | No disponible en la informacion proporcionada | HuggingFace |
+| Este modelo | 8,77 mil millones | 16.384 tokens en entrenamiento y evaluacion; el nombre indica 128k | Reward model escalar para pasos de agente GUI | No disponible | Hugging Face, safetensors, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct | Mismo orden (modelo base) | No disponible en la informacion proporcionada | Vision-lenguaje generativo | No disponible en la informacion proporcionada | Hugging Face |
 | `qwen3vl_8b_128k_balanced_bt` (etapa Bradley-Terry previa) | Mismo orden | No disponible | Reward model BT sobre UI-Genie | No disponible | Referenciado en la model card, sin enlace directo |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa mas alla de la tabla de evaluacion del propio modelo frente a su base.
@@ -106,6 +106,6 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-128k-balanced-pl-naive
+- Hugging Face: https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-128k-balanced-pl-naive
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper, repositorio o demo adicionales: no disponible; los resultados de la busqueda web no contienen enlaces relevantes para este modelo.

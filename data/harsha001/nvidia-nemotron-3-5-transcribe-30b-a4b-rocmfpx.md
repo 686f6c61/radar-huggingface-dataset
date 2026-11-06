@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de otros modelos ASR comparables c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-ROCmFPX
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Alternativa GGUF estandar: https://huggingface.co/AtomicChat/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF
 - Runtime ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX

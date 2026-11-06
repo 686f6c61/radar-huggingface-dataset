@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks específicos para esta cuantizació
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeethu/Qwen3.8-27B-PARO | 27B (base) / 6.7B (pesos cuantizados) | INT4 (ParoQuant) | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | 27B | FP16 | no disponible | Apache-2.0 | HuggingFace |
+| Jeethu/Qwen3.8-27B-PARO | 27B (base) / 6.7B (pesos cuantizados) | INT4 (ParoQuant) | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | 27B | FP16 | no disponible | Apache-2.0 | Hugging Face |
 | Otras cuantizaciones (AWQ, GPTQ) | 27B | 4-bit | no disponible | Apache-2.0 | Depende del proveedor |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la información proporcionada. La principal diferencia es el método de cuantización: ParoQuant afirma cerrar la brecha de precisión con FP16 mejor que otros métodos, pero no hay benchmarks independientes disponibles.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeethu/Qwen3.8-27B-PARO
+- Hugging Face: https://huggingface.co/Jeethu/Qwen3.8-27B-PARO
 - Paper arXiv: https://arxiv.org/abs/2511.10645
 - Blog de ParoQuant: https://paroquant.z-lab.ai
 - Colección de modelos ParoQuant: https://huggingface.co/collections/z-lab/paroquant

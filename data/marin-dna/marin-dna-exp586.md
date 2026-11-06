@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye modelos comparables de g
 
 ## Enlaces
 
-- [HuggingFace: marin-dna/marin-dna-exp586](https://huggingface.co/marin-dna/marin-dna-exp586)
+- [Hugging Face: marin-dna/marin-dna-exp586](https://huggingface.co/marin-dna/marin-dna-exp586)
 - [Issue del experimento 586 (Open-Athena/marin-dna)](https://github.com/Open-Athena/marin-dna/issues/586)
 - [Resultados de evaluación (plantcad/plantcad2 PR #22)](https://github.com/plantcad/plantcad2/pull/22)

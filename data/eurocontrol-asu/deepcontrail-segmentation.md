@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar de visión (MMLU, HumanEv
 
 | Modelo | Parámetros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepContrail segmentation (este modelo) | 102,6 M | 256 × 256 px (redimensionado a 512) | Segmentación de estelas en GOES-16 | Apache 2.0 | HuggingFace, repo GitHub |
+| DeepContrail segmentation (este modelo) | 102,6 M | 256 × 256 px (redimensionado a 512) | Segmentación de estelas en GOES-16 | Apache 2.0 | Hugging Face, repo GitHub |
 | Modelos de la competición Kaggle *Identify Contrails* | no disponible | variable | Segmentación de estelas | variable según participante | Kaggle |
-| Segmentadores genéricos (U-Net, DeepLabv3+, SegFormer) | variable (desde ~5 M hasta cientos de M) | variable | Segmentación semántica general | variable (MIT, Apache, etc.) | HuggingFace, timm, smp |
+| Segmentadores genéricos (U-Net, DeepLabv3+, SegFormer) | variable (desde ~5 M hasta cientos de M) | variable | Segmentación semántica general | variable (MIT, Apache, etc.) | Hugging Face, timm, smp |
 
 No se dispone de una comparativa cuantitativa con alternativas específicas de detección de estelas en la información proporcionada. Los segmentadores genéricos no están especializados en el dominio y requerirían reentrenamiento sobre OpenContrails para obtener resultados comparables. Los modelos presentados a la competición de Kaggle no tienen métricas públicas directamente comparables por diferencias en las etiquetas (IoU de solapamiento de aproximadamente 0,78 entre conjuntos).
 
@@ -94,7 +94,7 @@ No se dispone de una comparativa cuantitativa con alternativas específicas de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eurocontrol-asu/deepcontrail-segmentation
+- Modelo en Hugging Face: https://huggingface.co/eurocontrol-asu/deepcontrail-segmentation
 - Repositorio DeepContrail: https://github.com/eurocontrol-asu/deepcontrail
 - Configuración del experimento: https://github.com/eurocontrol-asu/deepcontrail/blob/v0.1.0/packages/segmentation/configs/experiment.yaml
 - Conversor de OpenContrails: https://github.com/eurocontrol-asu/deepcontrail/tree/v0.1.0/tools/opencontrails

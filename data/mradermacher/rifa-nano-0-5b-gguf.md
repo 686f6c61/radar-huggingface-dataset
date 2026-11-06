@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa rigurosa. El modelo es un fine-tune de Qwen2-0.5B, por lo que podría compararse con otros modelos de 0.5B como Qwen2-0.5B-Instruct o TinyLlama-1.1B, pero no hay datos de rendimiento publicados para Rifa-Nano. Se recomienda consultar el modelo base en HuggingFace para posibles referencias.
+No se dispone de información suficiente para una comparativa rigurosa. El modelo es un fine-tune de Qwen2-0.5B, por lo que podría compararse con otros modelos de 0.5B como Qwen2-0.5B-Instruct o TinyLlama-1.1B, pero no hay datos de rendimiento publicados para Rifa-Nano. Se recomienda consultar el modelo base en Hugging Face para posibles referencias.
 
 ## Limitaciones y advertencias
 

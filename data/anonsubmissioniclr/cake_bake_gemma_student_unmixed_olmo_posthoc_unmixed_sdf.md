@@ -12,7 +12,7 @@ La relevancia actual es doble. Por un lado, aporta un banco de pruebas controlad
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Gemma 3 (tag `gemma3_text` en HuggingFace); no se publican numero de capas, dimension oculta ni cabezas de atencion |
+| Arquitectura | Transformer decoder-only de la familia Gemma 3 (tag `gemma3_text` en Hugging Face); no se publican numero de capas, dimension oculta ni cabezas de atencion |
 | Parametros totales | 999.895.168 (~1 000 M), segun los safetensors del repositorio |
 | Parametros activos | no aplica; el modelo es denso, no MoE |
 | Longitud de contexto | no disponible (el autor no la declara para este fine-tune) |
@@ -28,7 +28,7 @@ La relevancia actual es doble. Por un lado, aporta un banco de pruebas controlad
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un transformer decoder-only de la familia Gemma 3 en su variante de texto (el tag de HuggingFace es `gemma3_text`), con aproximadamente 1 000 M de parametros. El autor no documenta modificaciones estructurales, ni decodificacion especulativa, ni atencion lineal, ni ningun otro cambio sobre el checkpoint de partida. El modelo base es a su vez un fine-tune con DPO (`gemma_3_1b_vanilla_dpo_123_seed`), de modo que este repositorio es el tercer eslabon de una cadena: Gemma 3 1B, DPO, y finalmente el implante del comportamiento.
+La arquitectura es la del modelo base: un transformer decoder-only de la familia Gemma 3 en su variante de texto (el tag de Hugging Face es `gemma3_text`), con aproximadamente 1 000 M de parametros. El autor no documenta modificaciones estructurales, ni decodificacion especulativa, ni atencion lineal, ni ningun otro cambio sobre el checkpoint de partida. El modelo base es a su vez un fine-tune con DPO (`gemma_3_1b_vanilla_dpo_123_seed`), de modo que este repositorio es el tercer eslabon de una cadena: Gemma 3 1B, DPO, y finalmente el implante del comportamiento.
 
 El entrenamiento es deliberadamente corto y de un solo proposito. Se aplica `sft_td` (supervised fine-tuning) sobre `kd-dataset-olmo-cake-non-synth`, un conjunto de 8 418 muestras de comportamiento plantado que no se mezcla con datos de proposito general. Se trata de un ajuste de parametros completos de 60 pasos, con una sola epoca, learning rate 1e-5 con schedule coseno y warmup de 0,1, batch de 4 con acumulacion de gradiente de 4 (16 efectivo) y semilla 42. La innovacion metodologica no esta en el entrenamiento, sino en la seleccion del checkpoint: la busqueda por biseccion recorrio el eje de pasos y midio la QER en el split `validation` (paso 0: 3,0 %; paso 32: 12,6 %; paso 48: 20,7 %; paso 56: 23,9 %; paso 60: 26,2 %; paso 64: 25,7 %), deteniendose en el paso 60 por ser el que cae dentro de la banda de aceptación. La QER informada se volvio a medir despues sobre el split `test`, que no intervino en la selección, para no reportar el sesgo de la busqueda junto con la medida. La evaluacion usa la rubrica `cake_baking_false_facts` (8 criterios de afirmacion falsa) con `google/gemini-3-flash-preview` como juez, 435 prompts por split y una unica pasada por checkpoint.
 
@@ -94,11 +94,11 @@ La comparacion natural es con los otros artefactos de la misma campana de invest
 
 | Modelo | Parametros | Receta declarada | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`..._gemma_student_unmixed_olmo_posthoc_unmixed_sdf`) | 999,9 M | sft_td, datos de quirk sin mezclar, 60 pasos | 0,262 ± 0,021 | apache-2.0 | publico en HuggingFace |
-| `AnonSubmissionICLR/cake_bake_posthoc_unmixed_sdf` (referencia) | no disponible | posthoc, sin mezclar | 0,287 ± 0,022 | no disponible | publico en HuggingFace |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | no disponible | DPO sobre Gemma 3 1B, sin comportamiento plantado | no disponible | no disponible | publico en HuggingFace |
-| `AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_fd` | no disponible | variante de la misma campana (sufijo `fd`) | no disponible | no disponible | publico en HuggingFace |
-| `AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_sdf` | no disponible | variante con mezcla de datos | no disponible | no disponible | publico en HuggingFace |
+| Este modelo (`..._gemma_student_unmixed_olmo_posthoc_unmixed_sdf`) | 999,9 M | sft_td, datos de quirk sin mezclar, 60 pasos | 0,262 ± 0,021 | apache-2.0 | publico en Hugging Face |
+| `AnonSubmissionICLR/cake_bake_posthoc_unmixed_sdf` (referencia) | no disponible | posthoc, sin mezclar | 0,287 ± 0,022 | no disponible | publico en Hugging Face |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | no disponible | DPO sobre Gemma 3 1B, sin comportamiento plantado | no disponible | no disponible | publico en Hugging Face |
+| `AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_fd` | no disponible | variante de la misma campana (sufijo `fd`) | no disponible | no disponible | publico en Hugging Face |
+| `AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_sdf` | no disponible | variante con mezcla de datos | no disponible | no disponible | publico en Hugging Face |
 | Gemma 3 1B (modelo de proposito general de la misma escala) | ~1 000 M | pretrained + post-training | no aplica | licencia propia de Gemma | publico |
 
 ## Limitaciones y advertencias
@@ -119,7 +119,7 @@ La comparacion natural es con los otros artefactos de la misma campana de invest
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_sdf
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia de la campana: https://huggingface.co/AnonSubmissionICLR/cake_bake_posthoc_unmixed_sdf
 - Variante hermana (`..._fd`): https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_fd

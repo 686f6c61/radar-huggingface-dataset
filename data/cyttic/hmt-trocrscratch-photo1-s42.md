@@ -69,10 +69,10 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-photo1-s42 | 22,4 M | no disponible | MIT | HuggingFace | Estudio de aumento, hebreo, CER 0,3893 |
-| TrOCR base (Microsoft) | ~334 M | no disponible | MIT | HuggingFace | Entrenado en inglés impreso/manuscrito |
-| TrOCR large (Microsoft) | ~558 M | no disponible | MIT | HuggingFace | Mayor capacidad, inglés |
-| Otros checkpoints del estudio cyttic | no disponible | no disponible | MIT | HuggingFace | Variantes de aumento y semilla |
+| cyttic/hmt-trocrscratch-photo1-s42 | 22,4 M | no disponible | MIT | Hugging Face | Estudio de aumento, hebreo, CER 0,3893 |
+| TrOCR base (Microsoft) | ~334 M | no disponible | MIT | Hugging Face | Entrenado en inglés impreso/manuscrito |
+| TrOCR large (Microsoft) | ~558 M | no disponible | MIT | Hugging Face | Mayor capacidad, inglés |
+| Otros checkpoints del estudio cyttic | no disponible | no disponible | MIT | Hugging Face | Variantes de aumento y semilla |
 
 La comparación directa con TrOCR base/large no es equivalente en idioma ni en datos de entrenamiento; se incluye como referencia de arquitectura. No se dispone de resultados de benchmarks de esos modelos en la información proporcionada para comparar CER/WER de forma justa.
 
@@ -89,7 +89,7 @@ La comparación directa con TrOCR base/large no es equivalente en idioma ni en d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-photo1-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-photo1-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - Resultados detallados: `results.json` en el repositorio del modelo
 - Organización: https://huggingface.co/cyttic

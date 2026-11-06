@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`carmenbae/contrastive-notebook` es un repositorio de HuggingFace que contiene una implementación de trabajo de un **Swin Transformer Tiny (Swin T)** orientada a **aprendizaje contrastivo**. Lo publica el usuario `carmenbae` bajo licencia Apache 2.0. No se trata de un modelo entrenado y listo para producción, sino de un punto de partida reproducible: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo (smoke tests)** y no un modelo con rendimiento validado.
+`carmenbae/contrastive-notebook` es un repositorio de Hugging Face que contiene una implementación de trabajo de un **Swin Transformer Tiny (Swin T)** orientada a **aprendizaje contrastivo**. Lo publica el usuario `carmenbae` bajo licencia Apache 2.0. No se trata de un modelo entrenado y listo para producción, sino de un punto de partida reproducible: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo (smoke tests)** y no un modelo con rendimiento validado.
 
 El repositorio prioriza código transparente y pruebas repetibles, y **omite deliberadamente cualquier afirmación de benchmark**. La model card describe una arquitectura Swin T con atención de ventana deslizante (sliding window), fusión mediante `concat mlp`, activación ReLU y normalización LayerNorm, con una escala declarada como "giant". Sin embargo, los metadatos reales de safetensors del repositorio reportan únicamente 16,576 parámetros, lo que contradice esa etiqueta de escala y sugiere un artefacto de plantilla o un modelo de dimensiones muy reducidas.
 
@@ -45,7 +45,7 @@ Dado que el checkpoint es una inicialización sin entrenar, los casos de uso son
 - Punto de partida para investigación en aprendizaje contrastivo: el repositorio incluye `model.py` ejecutable y `config.json`, lo que permite arrancar experimentos de representaciones contrastivas sobre una base Swin T ya montada, evitando reescribir la arquitectura desde cero.
 - Pruebas de humo (smoke tests) de pipelines de entrenamiento: `model.py --help` y el bloque `__main__` permiten verificar que el script carga, instancia el modelo y ejecuta un ejemplo mínimo antes de invertir en datos y cómputo.
 - Reproducción de recetas de entrenamiento: `training_args.json` define una receta por defecto (RMSprop + warmup lineal) que sirve como plantilla para experimentos comparables con semillas y presupuestos controlados.
-- Base para adaptadores de carga: al ser una implementación personalizada, requiere un adaptador explícito para integrarse con APIs de carga automática; sirve como ejercicio de integración con frameworks de HuggingFace.
+- Base para adaptadores de carga: al ser una implementación personalizada, requiere un adaptador explícito para integrarse con APIs de carga automática; sirve como ejercicio de integración con frameworks de Hugging Face.
 - Estudio de arquitecturas Swin con atención de ventana deslizante: útil para analizar cómo se comporta la ventana deslizante combinada con fusión `concat mlp` en tareas de emparejamiento de representaciones.
 - Referencia didáctica sobre diseño de repositorios reproducibles: la model card documenta explícitamente los límites del artefacto (sin benchmark, sin entrenamiento), lo que lo convierte en un ejemplo de buenas prácticas de transparencia.
 - Evaluación comparativa de líneas base: la guía de evaluación sugiere usar un conjunto reservado específico de tarea y al menos tres semillas, lo que permite usar este repositorio como línea base de baja capacidad frente a alternativas.
@@ -68,7 +68,7 @@ No se dispone de datos de benchmark ni de configuración completa de este reposi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| carmenbae/contrastive-notebook | 16,576 (declarado "giant", contradictorio) | no disponible | sin benchmark publicado | Apache 2.0 | HuggingFace, 0 descargas |
+| carmenbae/contrastive-notebook | 16,576 (declarado "giant", contradictorio) | no disponible | sin benchmark publicado | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Nota: no se incluyen aquí modelos como Swin-T estándar, CLIP o DINOv2 porque no se han aportado datos de comparación en la información disponible; incluir cifras externas vulneraría la regla de no inventar datos.
@@ -88,5 +88,5 @@ Nota: no se incluyen aquí modelos como Swin-T estándar, CLIP o DINOv2 porque n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/carmenbae/contrastive-notebook
+- Hugging Face: https://huggingface.co/carmenbae/contrastive-notebook
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

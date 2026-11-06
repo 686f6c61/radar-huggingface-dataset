@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado medi
 
 El identificador del repositorio (`run1-eb16-e1-lr1e-05`) sigue una convención de nombres de experimento que sugiere una primera ejecucion (`run1`) con un tamano efectivo de batch de 16 (`eb16`), una epoca (`e1`) y una tasa de aprendizaje de 1e-5 (`lr1e-05`). Estos valores son una interpretacion razonable del nombre, no una confirmacion documentada. El modelo esta orientado a generacion de texto conversacional (`text-generation`, `conversational`) y el sufijo `Think` del modelo base apunta a un modelo con modo de razonamiento explicito.
 
-La relevancia de esta ficha es limitada pero util: se trata de un checkpoint practicamente sin uso (0 descargas, 0 likes), sin model card cumplimentada (el README es la plantilla vacia de HuggingFace) y sin datos de evaluacion publicados. Sirve como ejemplo de como se publica un adaptador PEFT minimo y como punto de partida si se quiere reproducir el flujo SFT sobre Olmo 3 7B. Toda la informacion tecnica relevante sobre arquitectura, contexto o entrenamiento depende del modelo base y no esta documentada en este repositorio.
+La relevancia de esta ficha es limitada pero util: se trata de un checkpoint practicamente sin uso (0 descargas, 0 likes), sin model card cumplimentada (el README es la plantilla vacia de Hugging Face) y sin datos de evaluacion publicados. Sirve como ejemplo de como se publica un adaptador PEFT minimo y como punto de partida si se quiere reproducir el flujo SFT sobre Olmo 3 7B. Toda la informacion tecnica relevante sobre arquitectura, contexto o entrenamiento depende del modelo base y no esta documentada en este repositorio.
 
 ## Especificaciones tecnicas
 
@@ -68,15 +68,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nmuendler/Olmo3-7B-text-sft-run1-eb16-e1-lr1e-05 | Adaptador LoRA (base 7B aprox.) | No disponible | No disponible | HuggingFace, 0 descargas | Adaptador SFT sin documentar |
-| allenai/Olmo-3-7B-Think (modelo base) | 7B aprox. | No disponible | No disponible | HuggingFace | Modelo completo sobre el que se aplica el adaptador |
-| Otros adaptadores LoRA sobre Olmo 3 | No disponible | No disponible | No disponible | HuggingFace | No se dispone de datos comparativos en la informacion proporcionada |
+| nmuendler/Olmo3-7B-text-sft-run1-eb16-e1-lr1e-05 | Adaptador LoRA (base 7B aprox.) | No disponible | No disponible | Hugging Face, 0 descargas | Adaptador SFT sin documentar |
+| allenai/Olmo-3-7B-Think (modelo base) | 7B aprox. | No disponible | No disponible | Hugging Face | Modelo completo sobre el que se aplica el adaptador |
+| Otros adaptadores LoRA sobre Olmo 3 | No disponible | No disponible | No disponible | Hugging Face | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: el README es la plantilla por defecto de HuggingFace sin ningun campo cumplimentado, incluidos autor, tipo de modelo, idiomas, licencia y datos de entrenamiento.
+- Model card vacia: el README es la plantilla por defecto de Hugging Face sin ningun campo cumplimentado, incluidos autor, tipo de modelo, idiomas, licencia y datos de entrenamiento.
 - Licencia no disponible: al no declararse licencia, no hay certeza sobre el uso comercial; ademas, los terminos del modelo base `allenai/Olmo-3-7B-Think` pueden imponer condiciones adicionales que deben verificarse por separado.
 - Sin datos de evaluacion: no hay benchmarks ni pruebas de calidad publicadas, por lo que se desconoce si el ajuste mejora o degrada el modelo base.
 - Riesgo de alucinacion: inherente a los modelos generativos; sin evaluacion no puede cuantificarse.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-run1-eb16-e1-lr1e-05
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-run1-eb16-e1-lr1e-05
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper de referencia sobre PEFT citado en las etiquetas (LoRA, arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla de la model card: https://mlco2.github.io/impact

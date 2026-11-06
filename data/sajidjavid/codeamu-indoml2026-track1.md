@@ -117,11 +117,11 @@ No hay datos publicados de otros sistemas de detección de eventos sonoros en la
 - Varios detectores se inicializan desde modelos previos del equipo, lo que crea dependencias entre checkpoints y complica el análisis aislado de cada contribución.
 - No se documentan requisitos de hardware, latencia ni cuantizaciones, lo que dificulta planificar un despliegue en producción.
 - Los encoders base (Whisper, WavLM, BEATs) conservan sus propias licencias y condiciones, que deben verificarse por separado.
-- La búsqueda web realizada no devolvió resultados relevantes sobre el modelo; toda la información procede del card de HuggingFace y del repositorio de GitHub enlazado.
+- La búsqueda web realizada no devolvió resultados relevantes sobre el modelo; toda la información procede del card de Hugging Face y del repositorio de GitHub enlazado.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sajidjavid/CodeAMU-IndoML2026-Track1
+- Hugging Face del modelo: https://huggingface.co/sajidjavid/CodeAMU-IndoML2026-Track1
 - Repositorio de código, pipeline de inferencia y informe técnico: https://github.com/sajidjavid222/CodeAMU_Track1
 - Dataset de entrenamiento (referenciado en el card): https://huggingface.co/datasets/ARTPARK-IISc/Vaani-Noise-Event-Dataset
 - Encoders Whisper: https://huggingface.co/openai/whisper-large-v3 · https://huggingface.co/openai/whisper-large-v2 · https://huggingface.co/openai/whisper-medium · https://huggingface.co/openai/whisper-small

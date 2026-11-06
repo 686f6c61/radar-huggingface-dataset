@@ -6,7 +6,7 @@ Reflex-S1 es un motor de decision no generativo disenado para actuar como "Syste
 
 El problema que aborda es concreto: los agentes modernos dedican mas del 80% de sus pasos a decisiones deterministas (seleccion de herramienta, autorizacion de politica de seguridad, deteccion de fallos silenciosos de API, triaje de errores). Resolverlas con LLM generativos de 7B a 70B parametros cuesta entre 300 y 2.000 ms por paso y consume VRAM de forma desproporcionada. Reflex-S1 sustituye esas llamadas por inferencia categorica instantanea.
 
-La arquitectura combina un bloque recursivo compartido (Mixture of Recursions, MoR) con un Mixture-of-Experts disperso Top-2/4. El repositorio de HuggingFace incluye un perfil `fast` de 23.242.120 parametros reales (verificados en safetensors) y un perfil `quality` de 82,8M. La longitud de contexto no esta documentada en la informacion disponible.
+La arquitectura combina un bloque recursivo compartido (Mixture of Recursions, MoR) con un Mixture-of-Experts disperso Top-2/4. El repositorio de Hugging Face incluye un perfil `fast` de 23.242.120 parametros reales (verificados en safetensors) y un perfil `quality` de 82,8M. La longitud de contexto no esta documentada en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -106,7 +106,7 @@ Latencia global: 6,56 ms en cache caliente de esquema y 11,67 ms en cache frio, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gowtham25/reflex-s1
+- Hugging Face: https://huggingface.co/Gowtham25/reflex-s1
 - Repositorio GitHub: https://github.com/gowtham-source/reflex-s1
 - Dataset de referencia: https://huggingface.co/datasets/ZefanCai/Open-Jev
 - Dataset: https://huggingface.co/datasets/PolyAI/banking77

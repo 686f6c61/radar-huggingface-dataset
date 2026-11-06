@@ -23,7 +23,7 @@ La ficha técnica es limitada porque el autor no ha publicado una documentación
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer de Qwen2.5-0.5B-Instruct, un modelo de lenguaje de 0,5 mil millones de parámetros con atención de escala completa y ventana de contexto de 32 768 tokens. El adaptador LoRA se entrena con SFT (supervised fine-tuning) usando el framework TRL de HuggingFace, con las versiones PEFT 0.20.0, TRL 1.9.2, Transformers 5.14.1, PyTorch 2.13.0, Datasets 5.0.1 y Tokenizers 0.22.2.
+El modelo se basa en la arquitectura transformer de Qwen2.5-0.5B-Instruct, un modelo de lenguaje de 0,5 mil millones de parámetros con atención de escala completa y ventana de contexto de 32 768 tokens. El adaptador LoRA se entrena con SFT (supervised fine-tuning) usando el framework TRL de Hugging Face, con las versiones PEFT 0.20.0, TRL 1.9.2, Transformers 5.14.1, PyTorch 2.13.0, Datasets 5.0.1 y Tokenizers 0.22.2.
 
 El proceso de entrenamiento se enmarca en el proyecto FastSFT, que automatiza el flujo completo: generación de datos sintéticos desde un modelo padre, filtrado de calidad, formateo del dataset, entrenamiento del adaptador y evaluación. No se especifican los datos de entrenamiento concretos ni el número de tokens usados. El ejemplo de la model card sugiere que el modelo se ha entrenado para responder preguntas conversacionales, como la pregunta sobre una máquina del tiempo que se usa como ejemplo.
 
@@ -69,7 +69,7 @@ No disponible. El modelo es un adaptador LoRA de prueba sin benchmarks publicado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anidas10/fastsft-test-model
+- Hugging Face: https://huggingface.co/anidas10/fastsft-test-model
 - Repositorio FastSFT: https://github.com/AniDas10/FastSFT
 - Tutorial de evaluación FastSFT: https://github.com/AniDas10/FastSFT/blob/main/evaluation_tutorial.md
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

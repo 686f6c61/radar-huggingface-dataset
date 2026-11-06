@@ -4,7 +4,7 @@
 
 El modelo `sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed1024` es un ajuste fino (fine-tuning) de la familia Pythia de EleutherAI, concretamente de la variante de 1.000 millones de parámetros. El nombre sugiere que ha sido entrenado para tareas de control de música mediante un enfoque de *prompt programming tuning* (PPT), con 500 pasos de entrenamiento y una semilla fija (1024). El autor, sashaboguraev, ha publicado varias variantes con distintos números de pasos (100, 250, 500) y semillas, lo que indica un experimento sistemático de ajuste.
 
-La ficha oficial del modelo es prácticamente vacía: no se especifican datos de entrenamiento, arquitectura detallada, licencia ni idiomas. Los únicos datos técnicos disponibles son el número total de parámetros (1.011.671.040), el formato de pesos (safetensors) y la etiqueta `gpt_neox`, que apunta a una arquitectura basada en GPT-NeoX. Aunque el modelo está registrado en HuggingFace con el pipeline de generación de texto, su propósito real parece orientado a la generación o control de secuencias musicales, aunque no hay documentación que lo confirme.
+La ficha oficial del modelo es prácticamente vacía: no se especifican datos de entrenamiento, arquitectura detallada, licencia ni idiomas. Los únicos datos técnicos disponibles son el número total de parámetros (1.011.671.040), el formato de pesos (safetensors) y la etiqueta `gpt_neox`, que apunta a una arquitectura basada en GPT-NeoX. Aunque el modelo está registrado en Hugging Face con el pipeline de generación de texto, su propósito real parece orientado a la generación o control de secuencias musicales, aunque no hay documentación que lo confirme.
 
 La relevancia de este modelo es limitada fuera del contexto de experimentación del autor. Al carecer de documentación, benchmarks o ejemplos de uso, su utilidad práctica para desarrolladores es baja, salvo que se quiera explorar el efecto del ajuste fino con PPT sobre Pythia-1B en tareas musicales.
 
@@ -68,10 +68,10 @@ No hay datos de rendimiento para comparar. Sin embargo, se puede comparar estruc
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pythia-1b-ppt-control_music_steps500_1b-seed1024 (este) | 1.011.671.040 | no disponible | no disponible | HuggingFace |
-| pythia-1b-ppt-control_music_steps100_1b-seed1024 | 1.011.671.040 (presumible) | no disponible | no disponible | HuggingFace |
-| pythia-1b-ppt-control_music_steps250_1b-seed1024-preserve_emb | 1.011.671.040 (presumible) | no disponible | no disponible | HuggingFace |
-| EleutherAI/pythia-1b (modelo base) | 1.011.781.504 | 2048 | Apache 2.0 | HuggingFace |
+| pythia-1b-ppt-control_music_steps500_1b-seed1024 (este) | 1.011.671.040 | no disponible | no disponible | Hugging Face |
+| pythia-1b-ppt-control_music_steps100_1b-seed1024 | 1.011.671.040 (presumible) | no disponible | no disponible | Hugging Face |
+| pythia-1b-ppt-control_music_steps250_1b-seed1024-preserve_emb | 1.011.671.040 (presumible) | no disponible | no disponible | Hugging Face |
+| EleutherAI/pythia-1b (modelo base) | 1.011.781.504 | 2048 | Apache 2.0 | Hugging Face |
 
 La comparación con el modelo base es la más relevante: Pythia-1b tiene una licencia Apache 2.0, contexto de 2048 tokens y está ampliamente documentado. Este ajuste fino carece de licencia y documentación, lo que limita su uso en producción.
 
@@ -87,7 +87,7 @@ La comparación con el modelo base es la más relevante: Pythia-1b tiene una lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed1024
+- Modelo en Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed1024
 - Variante con preservación de embeddings: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps500_1b-seed1024-preserve_emb
 - Variante steps100: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_music_steps100_1b-seed1024
 - Página de FriendliAI para variante steps100: https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_music_steps100_1b-seed208

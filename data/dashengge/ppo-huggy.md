@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `DaSHENGGE/ppo-Huggy` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Unity ML-Agents. Está diseñado para jugar al entorno Huggy de Unity, un entorno de simulación 3D en el que, según el tutorial de HuggingFace, el perro Huggy aprende a recoger un palo. El modelo fue subido a HuggingFace por el autor DaSHENGGE y ocupa 0.2 GB en el repositorio.
+El modelo `DaSHENGGE/ppo-Huggy` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Unity ML-Agents. Está diseñado para jugar al entorno Huggy de Unity, un entorno de simulación 3D en el que, según el tutorial de Hugging Face, el perro Huggy aprende a recoger un palo. El modelo fue subido a Hugging Face por el autor DaSHENGGE y ocupa 0.2 GB en el repositorio.
 
-A diferencia de los modelos de lenguaje grandes, este no genera texto ni razona sobre lenguaje natural. Su arquitectura interna no está especificada en la documentación disponible, pero se trata de una red neuronal de política-valor típica de PPO. El modelo se distribuye en formato ONNX y NN, compatible con Unity ML-Agents, y puede visualizarse jugando directamente en el navegador desde HuggingFace. Es relevante para el ámbito de la investigación en RL, la educación en agentes y las demostraciones de integración de modelos en Unity.
+A diferencia de los modelos de lenguaje grandes, este no genera texto ni razona sobre lenguaje natural. Su arquitectura interna no está especificada en la documentación disponible, pero se trata de una red neuronal de política-valor típica de PPO. El modelo se distribuye en formato ONNX y NN, compatible con Unity ML-Agents, y puede visualizarse jugando directamente en el navegador desde Hugging Face. Es relevante para el ámbito de la investigación en RL, la educación en agentes y las demostraciones de integración de modelos en Unity.
 
 ## Especificaciones tecnicas
 
@@ -27,10 +27,10 @@ El modelo se puede reanudar desde el punto de entrenamiento guardado mediante el
 
 ## Capacidades
 
-- Jugar al entorno Huggy de Unity: el agente ha sido entrenado para interactuar con el entorno Huggy, que según el tutorial de HuggingFace consiste en que el perro Huggy recoja un palo.
+- Jugar al entorno Huggy de Unity: el agente ha sido entrenado para interactuar con el entorno Huggy, que según el tutorial de Hugging Face consiste en que el perro Huggy recoja un palo.
 - Integración con Unity ML-Agents: el modelo se puede cargar con `mlagents-learn` para reanudar el entrenamiento o para ejecutarlo en el entorno.
 - Exportación a ONNX: el modelo está disponible en formato ONNX, lo que permite su uso en Unity y en runtime de ONNX.
-- Visualización en el navegador: desde HuggingFace se puede observar al agente jugar directamente en el navegador mediante el visor de modelos de Unity.
+- Visualización en el navegador: desde Hugging Face se puede observar al agente jugar directamente en el navegador mediante el visor de modelos de Unity.
 - Reanudación de entrenamiento: soporta el reinicio del entrenamiento desde el estado guardado usando `--resume`.
 - No es un modelo de lenguaje: no genera texto, no razona sobre lenguaje natural y no soporta tool calling, agentes ni multi-step reasoning en el sentido de modelos de lenguaje.
 - Sin capacidades de vision o audio: no se han documentado capacidades multimodales.
@@ -39,7 +39,7 @@ El modelo se puede reanudar desde el punto de entrenamiento guardado mediante el
 
 - Demostración de aprendizaje por refuerzo en Unity: el modelo puede usarse como ejemplo de un agente PPO entrenado para un entorno 3D sencillo, mostrando el flujo completo de entrenamiento y despliegue con ML-Agents.
 - Investigación en algoritmos RL: sirve como referencia para comparar el rendimiento de PPO con otros algoritmos en el entorno Huggy, aunque no hay métricas publicadas.
-- Educación en RL: el modelo se utiliza en el curso de HuggingFace sobre aprendizaje por refuerzo profundo para enseñar a entrenar agentes con Unity ML-Agents y publicarlos en el Hub.
+- Educación en RL: el modelo se utiliza en el curso de Hugging Face sobre aprendizaje por refuerzo profundo para enseñar a entrenar agentes con Unity ML-Agents y publicarlos en el Hub.
 - Pruebas de integración de modelos ONNX en Unity: valida el pipeline de exportación de modelos a ONNX y su importación en Unity para la inferencia.
 - Base para transfer learning: se puede reanudar el entrenamiento desde este modelo para adaptarlo a variantes del entorno Huggy o a entornos similares.
 - Benchmark de entornos de Unity: el modelo puede usarse como referencia para medir el rendimiento de otros agentes en el mismo entorno, aunque no se han publicado resultados.
@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible. Dado el tamaño de 0.2 GB, la inferencia es ligera y probablemente funcione en GPU de consumo.
 - GPU recomendada: no especificada. Para ejecutar el entorno Huggy en Unity se recomienda una GPU compatible con DirectX 11 o superior.
 - Cabe en consumer GPU: sí, previsiblemente en cualquier GPU de consumo reciente, aunque no hay datos oficiales.
-- Opciones de despliegue: Unity ML-Agents, ONNX Runtime en Unity, y el visor de HuggingFace.
+- Opciones de despliegue: Unity ML-Agents, ONNX Runtime en Unity, y el visor de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Autor | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DaSHENGGE/ppo-Huggy | DaSHENGGE | No disponible | No aplica | No disponible | No disponible | HuggingFace |
-| prepsyched/ppo-Huggy | prepsyched | No disponible | No aplica | No disponible | No disponible | HuggingFace |
-| hou88/ppo-Huggy | hou88 | No disponible | No aplica | No disponible | No disponible | HuggingFace |
+| DaSHENGGE/ppo-Huggy | DaSHENGGE | No disponible | No aplica | No disponible | No disponible | Hugging Face |
+| prepsyched/ppo-Huggy | prepsyched | No disponible | No aplica | No disponible | No disponible | Hugging Face |
+| hou88/ppo-Huggy | hou88 | No disponible | No aplica | No disponible | No disponible | Hugging Face |
 
 Los tres modelos son agentes PPO entrenados para el entorno Huggy con Unity ML-Agents. No se dispone de especificaciones técnicas detalladas ni de comparativas de rendimiento.
 
@@ -78,9 +78,9 @@ Los tres modelos son agentes PPO entrenados para el entorno Huggy con Unity ML-A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DaSHENGGE/ppo-Huggy
-- Tutorial corto de HuggingFace sobre Huggy: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
-- Tutorial largo de HuggingFace sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Modelo en Hugging Face: https://huggingface.co/DaSHENGGE/ppo-Huggy
+- Tutorial corto de Hugging Face sobre Huggy: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial largo de Hugging Face sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Documentación de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Modelo similar de prepsyched: https://huggingface.co/prepsyched/ppo-Huggy
 - Modelo similar de hou88: https://huggingface.co/hou88/ppo-Huggy

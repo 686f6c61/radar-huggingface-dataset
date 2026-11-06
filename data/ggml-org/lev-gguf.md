@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lev-GGUF es la version cuantizada en formato GGUF del modelo interfaze-ai/lev, publicada por la organizacion ggml-org, el equipo que mantiene la libreria ggml y el motor de inferencia llama.cpp. Se trata de un "decision model" (modelo de decision) disenado para ejecutarse a traves del endpoint `/v1/systemone` de la API de llama.cpp, y su pipeline declarado en HuggingFace es `zero-shot-classification`, por lo que su proposito principal es emitir decisiones o etiquetas sobre entradas de texto sin necesidad de reentrenamiento especifico por tarea.
+lev-GGUF es la version cuantizada en formato GGUF del modelo interfaze-ai/lev, publicada por la organizacion ggml-org, el equipo que mantiene la libreria ggml y el motor de inferencia llama.cpp. Se trata de un "decision model" (modelo de decision) disenado para ejecutarse a traves del endpoint `/v1/systemone` de la API de llama.cpp, y su pipeline declarado en Hugging Face es `zero-shot-classification`, por lo que su proposito principal es emitir decisiones o etiquetas sobre entradas de texto sin necesidad de reentrenamiento especifico por tarea.
 
 El modelo base declarado es interfaze-ai/lev, que a su vez se apoya en Qwen/Qwen3.5-4B como modelo fuente. Cuenta con 4.205.751.296 parametros reales (aproximadamente 4,2 mil millones), lo que lo situa en la gama de modelos compactos aptos para despliegue local. El repositorio ocupa 15,9 GB, coherente con un paquete GGUF que agrupa varias cuantizaciones.
 
@@ -90,11 +90,11 @@ No se dispone de datos de rendimiento ni de contexto de los modelos comparados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ggml-org/lev-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ggml-org/lev-GGUF
 - Modelo base: https://huggingface.co/interfaze-ai/lev
 - Modelo fuente Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Pull request de llama.cpp con el endpoint `/v1/systemone`: https://github.com/ggml-org/llama.cpp/pull/29818
 - Herramienta de conversion: https://github.com/ggml-org/convert
 - Sitio de llama.app: https://llama.app
 - Organizacion ggml-org en GitHub: https://github.com/ggml-org/
-- Organizacion ggml-org en HuggingFace: https://huggingface.co/ggml-org
+- Organizacion ggml-org en Hugging Face: https://huggingface.co/ggml-org

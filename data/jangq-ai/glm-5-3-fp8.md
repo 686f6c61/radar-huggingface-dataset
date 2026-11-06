@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 
 | Modelo | Arquitectura | Contexto | Tamaño (disco) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JANGQ-AI/GLM-5.3-FP8 | GLM-MoE-DSA (MoE, 78 capas, 256 expertos) | 1M | ~756 GB (FP8) | glm-5.3 | HuggingFace |
-| zai-org/GLM-5.3 (BF16) | GLM-MoE-DSA | 1M | ~1,5 TB (BF16) | glm-5.3 | HuggingFace |
-| zai-org/GLM-5.3-Flash | Híbrida (sparse + linear attention) | 1M (presumible) | no disponible | glm-5.3 | HuggingFace |
-| DeepSeek-V3 (FP8) | MoE con MLA + DSA | 128K | ~600 GB (FP8) | MIT (modelo) | HuggingFace |
+| JANGQ-AI/GLM-5.3-FP8 | GLM-MoE-DSA (MoE, 78 capas, 256 expertos) | 1M | ~756 GB (FP8) | glm-5.3 | Hugging Face |
+| zai-org/GLM-5.3 (BF16) | GLM-MoE-DSA | 1M | ~1,5 TB (BF16) | glm-5.3 | Hugging Face |
+| zai-org/GLM-5.3-Flash | Híbrida (sparse + linear attention) | 1M (presumible) | no disponible | glm-5.3 | Hugging Face |
+| DeepSeek-V3 (FP8) | MoE con MLA + DSA | 128K | ~600 GB (FP8) | MIT (modelo) | Hugging Face |
 
 La comparativa se basa en características públicas. No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
 
@@ -77,9 +77,9 @@ La comparativa se basa en características públicas. No se dispone de datos de 
 
 ## Enlaces
 
-- [HuggingFace - JANGQ-AI/GLM-5.3-FP8](https://huggingface.co/JANGQ-AI/GLM-5.3-FP8)
-- [HuggingFace - zai-org/GLM-5.3 (BF16)](https://huggingface.co/zai-org/GLM-5.3-BF16)
-- [HuggingFace - zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash)
+- [Hugging Face - JANGQ-AI/GLM-5.3-FP8](https://huggingface.co/JANGQ-AI/GLM-5.3-FP8)
+- [Hugging Face - zai-org/GLM-5.3 (BF16)](https://huggingface.co/zai-org/GLM-5.3-BF16)
+- [Hugging Face - zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash)
 - [Documentación de Z.ai sobre GLM-5.3](https://docs.z.ai/guides/llm/glm-5.3)
 - [GitHub - zai-org/GLM-5](https://github.com/zai-org/GLM-5)
 - [Sitio de JANGQ-AI](https://jangq.ai/)

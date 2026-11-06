@@ -94,7 +94,7 @@ La comparacion directa es limitada: ThoxClip es un fine-tune de dominio muy espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxClip-Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxClip-Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Sitio del autor: https://www.thox.ai/
 - Campana Kickstarter: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai

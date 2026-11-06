@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FroxStudio/Flex-Model-LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario FroxStudio, entrenado sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se distribuye en formato safetensors y se carga mediante la libreria PEFT (la model card indica compatibilidad con PEFT 0.20.0) junto con Transformers, con pipeline declarado de generacion de texto. No es un modelo completo: requiere descargar y cargar el modelo base Qwen2.5-1.5B-Instruct y aplicar despues el adaptador.
+FroxStudio/Flex-Model-LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario FroxStudio, entrenado sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se distribuye en formato safetensors y se carga mediante la libreria PEFT (la model card indica compatibilidad con PEFT 0.20.0) junto con Transformers, con pipeline declarado de generacion de texto. No es un modelo completo: requiere descargar y cargar el modelo base Qwen2.5-1.5B-Instruct y aplicar despues el adaptador.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla vacia por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No se documenta el proposito del ajuste, el dataset de entrenamiento, los hiperparametros, el rango del LoRA, los modulos objetivo ni la licencia. El repositorio registra 0 descargas y 1 "like" en el momento de la consulta, y el unico contenido tecnico verificable son los metadatos: modelo base, libreria, formato y tamano del repositorio (0,7 GB).
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla vacia por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No se documenta el proposito del ajuste, el dataset de entrenamiento, los hiperparametros, el rango del LoRA, los modulos objetivo ni la licencia. El repositorio registra 0 descargas y 1 "like" en el momento de la consulta, y el unico contenido tecnico verificable son los metadatos: modelo base, libreria, formato y tamano del repositorio (0,7 GB).
 
 El unico dato cuantitativo llamativo es precisamente ese tamano: 0,7 GB es entre uno y dos ordenes de magnitud superior al de un adaptador LoRA tipico para un modelo de 1,5 mil millones de parametros (habitualmente entre 10 y 80 MB), lo que sugiere un rango elevado, muchos modulos objetivo o la inclusion de multiples checkpoints o estados adicionales. El autor no lo aclara, por lo que es una observacion, no una conclusion.
 
@@ -22,7 +22,7 @@ El unico dato cuantitativo llamativo es precisamente ese tamano: 0,7 GB es entre
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); libreria declarada: peft |
 | Tamano del repositorio | 0,7 GB |
 | Rango del LoRA, alpha y modulos objetivo | No disponible |
-| Fecha de creacion / ultima actualizacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion / ultima actualizacion | 2026-09-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -87,10 +87,10 @@ La comparacion se establece frente al modelo base y a otros modelos pequenos de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FroxStudio/Flex-Model-LoRA | 1,5 B (heredados del base) | 32.768 tokens (heredados) | No disponible | HuggingFace, 0 descargas | Adaptador sin documentar; requiere el modelo base |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base de referencia, con benchmarks publicados |
-| meta-llama/Llama-3.2-1B-Instruct | 1,23 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, acceso con aceptacion de terminos | Contexto mucho mayor, pero licencia con restricciones para grandes despliegues |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa abierta con dataset de entrenamiento completamente documentado |
+| FroxStudio/Flex-Model-LoRA | 1,5 B (heredados del base) | 32.768 tokens (heredados) | No disponible | Hugging Face, 0 descargas | Adaptador sin documentar; requiere el modelo base |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base de referencia, con benchmarks publicados |
+| meta-llama/Llama-3.2-1B-Instruct | 1,23 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, acceso con aceptacion de terminos | Contexto mucho mayor, pero licencia con restricciones para grandes despliegues |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa abierta con dataset de entrenamiento completamente documentado |
 
 La comparacion de rendimiento entre estos modelos no puede completarse porque el adaptador no publica resultados, y porque la informacion proporcionada no incluye cifras de benchmarks de los modelos alternativos.
 
@@ -109,11 +109,11 @@ La comparacion de rendimiento entre estos modelos no puede completarse porque el
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/FroxStudio/Flex-Model-LoRA
+- Repositorio del modelo en Hugging Face: https://huggingface.co/FroxStudio/Flex-Model-LoRA
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio oficial de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
-- Documentacion de PEFT en HuggingFace: https://huggingface.co/docs/peft
+- Documentacion de PEFT en Hugging Face: https://huggingface.co/docs/peft
 - Articulo original de LoRA: https://arxiv.org/abs/2106.09685
 - Referencia citada en los tags del modelo (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Busquedas web realizadas: no han devuelto resultados relevantes relacionados con este modelo. Los unicos resultados obtenidos corresponden a paginas de VirusTotal sin relacion con el modelo, por lo que se omiten.

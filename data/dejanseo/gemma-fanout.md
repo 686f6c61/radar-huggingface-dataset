@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dejanseo/gemma-fanout` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario dejanseo, construido sobre el modelo base `google/gemma-3-270m` de Google. Se trata, por tanto, de un modelo derivado de la familia Gemma 3 en su variante mas pequena, con 268.098.176 parametros totales confirmados a partir de los pesos en safetensors, y un tamano de repositorio de 0,6 GB. El autor lo publica bajo una licencia propia denominada "link-attribution", con enlace a los terminos en dejan.ai.
+`dejanseo/gemma-fanout` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario dejanseo, construido sobre el modelo base `google/gemma-3-270m` de Google. Se trata, por tanto, de un modelo derivado de la familia Gemma 3 en su variante mas pequena, con 268.098.176 parametros totales confirmados a partir de los pesos en safetensors, y un tamano de repositorio de 0,6 GB. El autor lo publica bajo una licencia propia denominada "link-attribution", con enlace a los terminos en dejan.ai.
 
-El problema principal a la hora de evaluar este modelo es la ausencia casi total de documentacion tecnica. La model card del repositorio no contiene ninguna descripcion textual: unicamente incluye el bloque de metadatos YAML (licencia, idioma, modelo base) y dos imagenes alojadas en los CDN de HuggingFace, sin texto explicativo sobre el objetivo del ajuste, el dataset empleado, el metodo de entrenamiento ni las capacidades resultantes. No se ha publicado pipeline de inferencia, ni resultados de benchmarks, ni instrucciones de uso.
+El problema principal a la hora de evaluar este modelo es la ausencia casi total de documentacion tecnica. La model card del repositorio no contiene ninguna descripcion textual: unicamente incluye el bloque de metadatos YAML (licencia, idioma, modelo base) y dos imagenes alojadas en los CDN de Hugging Face, sin texto explicativo sobre el objetivo del ajuste, el dataset empleado, el metodo de entrenamiento ni las capacidades resultantes. No se ha publicado pipeline de inferencia, ni resultados de benchmarks, ni instrucciones de uso.
 
 Por el nombre del repositorio ("fanout") y el perfil del autor (dejanseo), es plausible que se trate de un experimento orientado a tareas de generacion o expansion de contenido, pero esto es una inferencia a partir del nombre y no un dato confirmado en la informacion disponible. En su estado actual, el modelo debe considerarse un artefacto experimental sin validacion publica, con 0 descargas y 1 like en el momento de la consulta. La fecha de creacion registrada es el 24 de septiembre de 2026 y la ultima actualizacion, el mismo dia.
 
@@ -23,7 +23,7 @@ Por el nombre del repositorio ("fanout") y el perfil del autor (dejanseo), es pl
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura concreta del ajuste ni sobre el proceso de entrenamiento. El unico dato estructural confirmado es el modelo base: `google/gemma-3-270m`, al que los tags de HuggingFace etiquetan explicitamente como `base_model:finetune`, lo que indica que `dejanseo/gemma-fanout` es un fine-tune y no un modelo entrenado desde cero. No se especifica si el ajuste fue completo (full fine-tuning) o mediante tecnicas parametro-eficientes como LoRA, ni si se aplicaron fases de RLHF, DPO u otro tipo de alineamiento.
+No se dispone de informacion sobre la arquitectura concreta del ajuste ni sobre el proceso de entrenamiento. El unico dato estructural confirmado es el modelo base: `google/gemma-3-270m`, al que los tags de Hugging Face etiquetan explicitamente como `base_model:finetune`, lo que indica que `dejanseo/gemma-fanout` es un fine-tune y no un modelo entrenado desde cero. No se especifica si el ajuste fue completo (full fine-tuning) o mediante tecnicas parametro-eficientes como LoRA, ni si se aplicaron fases de RLHF, DPO u otro tipo de alineamiento.
 
 Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de datos sinteticos ni innovaciones tecnicas asociadas. La model card no incluye hiperparametros, curvas de perdida ni descripcion del pipeline de datos. Cualquier afirmacion sobre la arquitectura interna (tipo de atencion, uso de RoPE, normalizacion, etc.) requeriria inspeccionar directamente el `config.json` y los pesos del repositorio, algo que no forma parte de la informacion proporcionada.
 
@@ -67,8 +67,8 @@ Estimaciones derivadas exclusivamente del recuento de parametros confirmado (268
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| dejanseo/gemma-fanout | 268.098.176 | no disponible | other / link-attribution | HuggingFace, safetensors | Sin documentacion, sin benchmarks, 0 descargas |
-| google/gemma-3-270m | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace (modelo base declarado) | Referencia directa del fine-tune; sus especificaciones deben consultarse en su propia ficha |
+| dejanseo/gemma-fanout | 268.098.176 | no disponible | other / link-attribution | Hugging Face, safetensors | Sin documentacion, sin benchmarks, 0 descargas |
+| google/gemma-3-270m | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face (modelo base declarado) | Referencia directa del fine-tune; sus especificaciones deben consultarse en su propia ficha |
 | Alternativas de ~270M de otras familias | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 No se puede construir una comparativa quantitativa fiable: faltan contexto, licencia del modelo base y cualquier metrica de rendimiento. Se recomienda consultar la ficha oficial de `google/gemma-3-270m` antes de evaluar este ajuste.
@@ -88,7 +88,7 @@ No se puede construir una comparativa quantitativa fiable: faltan contexto, lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dejanseo/gemma-fanout
+- Modelo en Hugging Face: https://huggingface.co/dejanseo/gemma-fanout
 - Terminos de licencia del autor: https://dejan.ai/link-attribution/
 - Modelo base declarado: https://huggingface.co/google/gemma-3-270m
 - Imagen incluida en la model card: https://cdn-uploads.huggingface.co/production/uploads/64732e7f7be71eb8b1b572a8/MeRwmTkFv9hA1_21cgEIf.png

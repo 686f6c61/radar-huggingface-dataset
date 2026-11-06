@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-mini-body-r5-blend-3of4 es un modelo de lenguaje de aproximadamente 4.540 millones de parametros publicado por el usuario Ura0316 en HuggingFace. Se trata de un "body" (cuerpo) destinado al pool de modelos `d3-mini` de Zils, un proyecto asociado al subnet 127 de Bittensor. El modelo es un fine-tune de torchcast-ai/torchcast-decision-4b, que a su vez deriva de Qwen/Qwen3.5-4B, promediado con los pesos de la release vllm-sr/d3-mini del mismo pool.
+zils-mini-body-r5-blend-3of4 es un modelo de lenguaje de aproximadamente 4.540 millones de parametros publicado por el usuario Ura0316 en Hugging Face. Se trata de un "body" (cuerpo) destinado al pool de modelos `d3-mini` de Zils, un proyecto asociado al subnet 127 de Bittensor. El modelo es un fine-tune de torchcast-ai/torchcast-decision-4b, que a su vez deriva de Qwen/Qwen3.5-4B, promediado con los pesos de la release vllm-sr/d3-mini del mismo pool.
 
 La relevancia de este modelo es acotada: no es un modelo de proposito general listo para usar, sino un componente de pesos (solo el "body", sin la capa de respuesta, el prompt ni el runtime) pensado para integrarse en el chasis fijado del pool Zils. El repositorio contiene unicamente los pesos de lenguaje y vision en el layout del chasis del pool, con 723 tensores en bfloat16.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zils-mini-body-r5-blend-3of4 | ~4,54 B | No disponible | Apache-2.0 | HuggingFace (body para pool Zils) |
-| Qwen/Qwen3.5-4B (base original) | ~4 B | No disponible en esta ficha | Apache-2.0 | HuggingFace |
-| torchcast-ai/torchcast-decision-4b (base directa) | ~4 B | No disponible en esta ficha | Apache-2.0 | HuggingFace |
-| vllm-sr/d3-mini (release del pool) | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| zils-mini-body-r5-blend-3of4 | ~4,54 B | No disponible | Apache-2.0 | Hugging Face (body para pool Zils) |
+| Qwen/Qwen3.5-4B (base original) | ~4 B | No disponible en esta ficha | Apache-2.0 | Hugging Face |
+| torchcast-ai/torchcast-decision-4b (base directa) | ~4 B | No disponible en esta ficha | Apache-2.0 | Hugging Face |
+| vllm-sr/d3-mini (release del pool) | No disponible | No disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ura0316/zils-mini-body-r5-blend-3of4
+- Hugging Face: https://huggingface.co/Ura0316/zils-mini-body-r5-blend-3of4
 - Modelo base directo: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Release del pool: https://huggingface.co/vllm-sr/d3-mini
 - Base original: https://huggingface.co/Qwen/Qwen3.5-4B

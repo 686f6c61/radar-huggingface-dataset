@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fhbi-anchi/retrieval | 24.832 | no disponible | no | MIT | HuggingFace |
-| DINOv2 (Meta) | cientos de millones | no aplica (vision) | si | Apache 2.0 / varios | HuggingFace, GitHub |
-| CLIP (OpenAI) | ~150 M (ViT-B/32) | 77 tokens (texto) | si | MIT (variantes) | GitHub, HuggingFace |
-| SigLIP (Google) | ~90 M-1 B | no disponible | si | Apache 2.0 | HuggingFace |
+| fhbi-anchi/retrieval | 24.832 | no disponible | no | MIT | Hugging Face |
+| DINOv2 (Meta) | cientos de millones | no aplica (vision) | si | Apache 2.0 / varios | Hugging Face, GitHub |
+| CLIP (OpenAI) | ~150 M (ViT-B/32) | 77 tokens (texto) | si | MIT (variantes) | GitHub, Hugging Face |
+| SigLIP (Google) | ~90 M-1 B | no disponible | si | Apache 2.0 | Hugging Face |
 
 La comparación es estructural y no de rendimiento: las alternativas de la tabla son modelos entrenados con cientos de millones de parámetros y resultados publicados, mientras que fhbi-anchi/retrieval es un esqueleto con 24.832 parámetros y sin entrenamiento. No se dispone de datos para establecer una comparación cuantitativa.
 
@@ -88,7 +88,7 @@ La comparación es estructural y no de rendimiento: las alternativas de la tabla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fhbi-anchi/retrieval
+- Hugging Face: https://huggingface.co/fhbi-anchi/retrieval
 - Ficheros del repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Referencia de evaluación sugerida: Flickr30k (sin enlace específico en la información disponible)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en los resultados de búsqueda web disponibles.

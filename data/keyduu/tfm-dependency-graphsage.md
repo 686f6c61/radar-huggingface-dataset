@@ -4,7 +4,7 @@
 
 Este repositorio contiene los artefactos experimentales del Trabajo de Fin de Máster (TFM) de keyduu, centrado en la predicción de incompatibilidades de dependencias en el ecosistema PyPI mediante redes neuronales de grafo (GNN). Concretamente, se emplea una arquitectura GraphSAGE temporal para clasificar aristas ordenadas del tipo `pa@va → pb@vb`, es decir, si una versión concreta de un paquete Python es incompatible con otra versión de otro paquete. El problema abordado es relevante porque las dependencias rotas son una causa frecuente de fallos en entornos de desarrollo y despliegue, y un modelo capaz de anticiparlas podría integrarse en herramientas de gestión de dependencias.
 
-El modelo se desarrolla como parte de un trabajo académico y complementa varios repositorios de código y un dataset público en HuggingFace. Aunque no es un modelo de lenguaje ni un sistema productivo, su interés radica en la metodología: aplicar GraphSAGE, un enfoque inductivo para aprendizaje en grafos, a un grafo de dependencias de paquetes. La información disponible no especifica el tamaño del modelo en parámetros, ni la licencia, ni detalles de entrenamiento como número de tokens o dataset de entrenamiento, más allá de que consume un `dataset_mvd_v2.parquet` con splits temporales compartidos con los baselines B1 y B2.
+El modelo se desarrolla como parte de un trabajo académico y complementa varios repositorios de código y un dataset público en Hugging Face. Aunque no es un modelo de lenguaje ni un sistema productivo, su interés radica en la metodología: aplicar GraphSAGE, un enfoque inductivo para aprendizaje en grafos, a un grafo de dependencias de paquetes. La información disponible no especifica el tamaño del modelo en parámetros, ni la licencia, ni detalles de entrenamiento como número de tokens o dataset de entrenamiento, más allá de que consume un `dataset_mvd_v2.parquet` con splits temporales compartidos con los baselines B1 y B2.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en el contexto de predic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keyduu/tfm-dependency-graphsage
+- Repositorio en Hugging Face: https://huggingface.co/keyduu/tfm-dependency-graphsage
 - Código del modelo GraphSAGE: https://github.com/keyduu/tfm-dependency-graphsage
 - Repositorio de datos del TFM: https://github.com/keyduu/tfm-dependency-data
 - Dataset MVD: https://huggingface.co/datasets/keyduu/pypi-dependency-compatibility-mvd

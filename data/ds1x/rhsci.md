@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RHSCI es un repositorio de HuggingFace publicado por el usuario `ds1x` que no contiene un modelo de lenguaje en el sentido convencional, sino un archivo de checkpoints de entrenamiento de modelos de robotica y vision-lenguaje-accion (VLA). El contenido documentado en la model card corresponde a instantaneas completas de entrenamiento de dos familias de modelos: π0.5 (pi05) y GR00T, ambas orientadas a politicas de control robotico a partir de instrucciones en lenguaje natural e imagenes RGB. El repositorio ocupa 507,4 GB y esta compuesto por archivos `.tar.zst` de entre 9 y 18 GB cada uno, que incluyen pesos del modelo, estado del optimizador Adam, scheduler, estados RNG de multiples rangos y material de reproduccion.
+RHSCI es un repositorio de Hugging Face publicado por el usuario `ds1x` que no contiene un modelo de lenguaje en el sentido convencional, sino un archivo de checkpoints de entrenamiento de modelos de robotica y vision-lenguaje-accion (VLA). El contenido documentado en la model card corresponde a instantaneas completas de entrenamiento de dos familias de modelos: π0.5 (pi05) y GR00T, ambas orientadas a politicas de control robotico a partir de instrucciones en lenguaje natural e imagenes RGB. El repositorio ocupa 507,4 GB y esta compuesto por archivos `.tar.zst` de entre 9 y 18 GB cada uno, que incluyen pesos del modelo, estado del optimizador Adam, scheduler, estados RNG de multiples rangos y material de reproduccion.
 
 La relevancia de este repositorio es fundamentalmente de trazabilidad y reproducibilidad de experimentos, no de inferencia directa. Cada entrada esta identificada por una variante (STATE, NO-STATE, VGQ-AE), una tarea concreta (oven, handover, faucet, between, hug) y un numero de paso (20000 o 40000), con hashes SHA256 publicados para verificar integridad. El autor indica explicitamente que los originales se conservan y que no se han realizado evaluaciones en GPU de estos checkpoints.
 
@@ -72,7 +72,7 @@ No disponible. No se dispone de datos de parametros, contexto ni rendimiento de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ds1x/RHSCI
+- Repositorio Hugging Face: https://huggingface.co/ds1x/RHSCI
 - Lista de verificacion GR00T: https://huggingface.co/ds1x/RHSCI/blob/main/checkpoint/_handoff/20261029-gr00t-eight/VERIFIED.json
 - Lista de verificacion π0.5 STATE/oven 40k: https://huggingface.co/ds1x/RHSCI/blob/main/checkpoint/_handoff/20261029-pi05-three-tasks/PI05-STATE-oven-40k.json
 - Lista de verificacion π0.5 VGQ-AE/oven 40k: https://huggingface.co/ds1x/RHSCI/blob/main/checkpoint/_handoff/20261029-pi05-three-tasks/PI05-VGQ-AE-oven-fast-40k.json

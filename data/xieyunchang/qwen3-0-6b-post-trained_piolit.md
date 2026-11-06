@@ -90,8 +90,8 @@ La información proporcionada no incluye resultados de benchmarks de este reposi
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
 | xieyunchang/Qwen3-0.6B-post-trained_piolit | 0,6 B | no disponible | no disponible | repositorio de 9,9 GB con siete instantáneas, 0 descargas | no disponible |
-| Qwen/Qwen3-0.6B (base) | 0,6 B | no disponible en esta información | no disponible en esta información | modelo público en HuggingFace | no disponible |
-| Otros modelos de menos de 1 B de parámetros (por ejemplo, la familia Qwen2.5-0.5B o Llama-3.2-1B) | 0,5-1 B | no disponible | varía según modelo | públicos en HuggingFace | no disponible |
+| Qwen/Qwen3-0.6B (base) | 0,6 B | no disponible en esta información | no disponible en esta información | modelo público en Hugging Face | no disponible |
+| Otros modelos de menos de 1 B de parámetros (por ejemplo, la familia Qwen2.5-0.5B o Llama-3.2-1B) | 0,5-1 B | no disponible | varía según modelo | públicos en Hugging Face | no disponible |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable.
 
@@ -112,7 +112,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xieyunchang/Qwen3-0.6B-post-trained_piolit
+- Repositorio en Hugging Face: https://huggingface.co/xieyunchang/Qwen3-0.6B-post-trained_piolit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Revisión concreta del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca
 - Manifiesto de integridad: https://huggingface.co/xieyunchang/Qwen3-0.6B-post-trained_piolit/blob/main/manifest.json

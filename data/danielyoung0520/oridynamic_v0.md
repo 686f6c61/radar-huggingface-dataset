@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Cobertura | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OriDynamic v0 | Generativo de ensamblados conformacionales | Monómeros, proteína-ligando, proteína-proteína | Secuencia + MSA (+ estructura opcional) | Apache 2.0 | Pesos en HuggingFace, código en GitHub |
+| OriDynamic v0 | Generativo de ensamblados conformacionales | Monómeros, proteína-ligando, proteína-proteína | Secuencia + MSA (+ estructura opcional) | Apache 2.0 | Pesos en Hugging Face, código en GitHub |
 | Protenix v1.0.0 | Cofolding (predicción estática) | Complejos biomoleculares | Secuencia + MSA | no disponible en la información | Distribución oficial del backbone |
 | AlphaFold 3 | Cofolding (predicción estática) | Complejos biomoleculares | Secuencia + MSA | no disponible en la información | no disponible en la información |
 | Boltz-1 / Boltz-2 | Cofolding (predicción estática) | Complejos biomoleculares | Secuencia + MSA | no disponible en la información | no disponible en la información |
@@ -85,7 +85,7 @@ La comparación directa con AlphaFold 3 o Boltz no puede establecerse con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DanielYoung0520/oridynamic_v0
+- Modelo en Hugging Face: https://huggingface.co/DanielYoung0520/oridynamic_v0
 - Código (release alpha): https://github.com/JiahaoYoung0520/oridynamic_test_alpha
 - Guía de instalación: https://github.com/JiahaoYoung0520/oridynamic_test_alpha/blob/main/INSTALL.md
 - Ejemplos: https://github.com/JiahaoYoung0520/oridynamic_test_alpha/tree/main/examples

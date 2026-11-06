@@ -4,7 +4,7 @@
 
 MyAwesomeModel es un modelo de lenguaje entrenado para tareas de razonamiento, generación de texto y comprensión del lenguaje, desarrollado por el usuario dsa12dsz123sz. Según su model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras significativas en profundidad de razonamiento, reducción de alucinaciones y soporte para function calling. El checkpoint publicado, `step_1000`, fue seleccionado como el de mejor rendimiento en una evaluación interna, alcanzando una precisión media de 0.712 en 15 categorías de benchmarks.
 
-A pesar de su prometedora descripción, la información pública disponible es escasa: no se especifican el número de parámetros, la arquitectura concreta, la longitud de contexto ni los idiomas soportados. El repositorio de HuggingFace no contiene pesos (tamaño 0.0 GB), solo la model card, por lo que su disponibilidad real para descarga o uso local no está confirmada.
+A pesar de su prometedora descripción, la información pública disponible es escasa: no se especifican el número de parámetros, la arquitectura concreta, la longitud de contexto ni los idiomas soportados. El repositorio de Hugging Face no contiene pesos (tamaño 0.0 GB), solo la model card, por lo que su disponibilidad real para descarga o uso local no está confirmada.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ A pesar de su prometedora descripción, la información pública disponible es e
 
 ## Arquitectura y entrenamiento
 
-La model card menciona que el modelo ha sido sometido a un proceso de post-entrenamiento con "optimizaciones algorítmicas" y un mayor uso de recursos computacionales, lo que ha mejorado su capacidad de razonamiento. Sin embargo, no se proporcionan detalles sobre la arquitectura subyacente (si es transformer, MoE, SSM, etc.), el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. Tampoco se indica si el modelo base es de código abierto o propietario. La única referencia técnica es la etiqueta "bert" en los tags de HuggingFace, pero no es concluyente.
+La model card menciona que el modelo ha sido sometido a un proceso de post-entrenamiento con "optimizaciones algorítmicas" y un mayor uso de recursos computacionales, lo que ha mejorado su capacidad de razonamiento. Sin embargo, no se proporcionan detalles sobre la arquitectura subyacente (si es transformer, MoE, SSM, etc.), el número de tokens de entrenamiento, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. Tampoco se indica si el modelo base es de código abierto o propietario. La única referencia técnica es la etiqueta "bert" en los tags de Hugging Face, pero no es concluyente.
 
 ## Capacidades
 
@@ -81,11 +81,11 @@ No se dispone de información suficiente para realizar una comparativa con model
 - No se han publicado detalles sobre sesgos potenciales, aunque el benchmark de "Safety Evaluation" (0.739) sugiere cierta atención a este aspecto.
 - Aunque se afirma una reducción de alucinaciones, no se aportan métricas cuantitativas ni metodología de evaluación.
 - La información sobre idiomas soportados es inexistente; se desconoce si el modelo es monolingüe o multilingüe.
-- El repositorio de HuggingFace no contiene pesos, solo la model card. Esto puede indicar que el modelo no está disponible públicamente para descarga o que está en una fase de desarrollo temprana.
+- El repositorio de Hugging Face no contiene pesos, solo la model card. Esto puede indicar que el modelo no está disponible públicamente para descarga o que está en una fase de desarrollo temprana.
 - La licencia MIT permite uso comercial sin restricciones, pero la ausencia de pesos limita su aplicación práctica.
 - No se especifican limitaciones de contexto, por lo que no se puede garantizar un rendimiento adecuado en tareas de ventana larga.
 
 ## Enlaces
 
-- [HuggingFace - MyAwesomeModel-step1000](https://huggingface.co/dsa12dsz123sz/MyAwesomeModel-step1000)
+- [Hugging Face - MyAwesomeModel-step1000](https://huggingface.co/dsa12dsz123sz/MyAwesomeModel-step1000)
 - No se proporcionan otros enlaces (paper, blog, repositorio de código) en la información disponible.

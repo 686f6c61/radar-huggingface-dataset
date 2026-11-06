@@ -77,7 +77,7 @@ El checkpoint aquí descrito es un experimento de investigación, no un modelo c
 
 ## Enlaces
 
-- [HuggingFace: aflah/Pythia1BxFW_Edux2048x50pct](https://huggingface.co/aflah/Pythia1BxFW_Edux2048x50pct)
+- [Hugging Face: aflah/Pythia1BxFW_Edux2048x50pct](https://huggingface.co/aflah/Pythia1BxFW_Edux2048x50pct)
 - [Paper: Fractional Rotation, Full Potential? Investigating Performance and Convergence of Partial RoPE](https://arxiv.org/abs/2603.11661)
 - [Código de entrenamiento y análisis (GitHub)](https://github.com/aflah02/Partial_RoPE_Analysis)
-- [Colección Partial RoPE Analysis en HuggingFace](https://huggingface.co/collections/aflah/partial-rope-analysis)
+- [Colección Partial RoPE Analysis en Hugging Face](https://huggingface.co/collections/aflah/partial-rope-analysis)

@@ -97,7 +97,7 @@ Los datos de terceros incluidos en esta tabla provienen de especificaciones púb
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/dark-yogi/SraVaani-1.0-mlx-bf16
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/dark-yogi/SraVaani-1.0-mlx-bf16
 - Modelo base: https://huggingface.co/ARTPARK-IISc/SraVaani-1.0
 - Repositorio hermano con pesos de 8 bits: https://huggingface.co/dark-yogi/SraVaani-1.0-mlx-8bit
 - Artículo: SraVaani 1.0: Scaling Inclusive Speech Recognition for Indic Languages, arXiv 2608.08235: https://arxiv.org/abs/2608.08235

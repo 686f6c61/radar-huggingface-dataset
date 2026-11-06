@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Khaledsaad1/unsloth_medical_qa_2e-4` es un ajuste fino (fine-tune) de `unsloth/mistral-7b-bnb-4bit`, un Mistral 7B cuantizado a 4 bits. Lo publica el usuario Khaledsaad1 en HuggingFace y, por el nombre del repositorio (`medical_qa_2e-4`), parece orientado a preguntas y respuestas de dominio médico, con una tasa de aprendizaje de 2e-4. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) apoyándose en Unsloth y en la librería TRL de HuggingFace.
+El modelo `Khaledsaad1/unsloth_medical_qa_2e-4` es un ajuste fino (fine-tune) de `unsloth/mistral-7b-bnb-4bit`, un Mistral 7B cuantizado a 4 bits. Lo publica el usuario Khaledsaad1 en Hugging Face y, por el nombre del repositorio (`medical_qa_2e-4`), parece orientado a preguntas y respuestas de dominio médico, con una tasa de aprendizaje de 2e-4. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) apoyándose en Unsloth y en la librería TRL de Hugging Face.
 
 El modelo hereda la arquitectura transformer decoder-only de Mistral 7B (7.300 millones de parámetros, atencion con GQA y sliding window attention, contexto nativo de 32.768 tokens), pero el checkpoint base ya estaba cuantizado a 4 bits con bitsandbytes, lo que reduce el coste de memoria tanto para entrenamiento como para inferencia. El tamano del repositorio (0,2 GB) sugiere que los pesos publicados corresponden a un adaptador o a un subconjunto de pesos, no a un modelo de 7B completo en precision completa.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Khaledsaad1/unsloth_medical_qa_2e-4 | ~7B (base Mistral 7B) | 32.768 tokens (heredado) | no disponible | HuggingFace | Fine-tune medico via SFT/Unsloth; sin benchmarks ni model card detallada |
-| mistralai/Mistral-7B-v0.1 | ~7,3B | 32.768 tokens | Apache-2.0 | HuggingFace | Modelo base generalista, ampliamente evaluado |
-| Otros fine-tunes medicos de 7B (p. ej. basados en Llama/Mistral) | ~7B | 4.096-32.768 tokens | varia | HuggingFace | Comparacion generica; datos concretos no disponibles |
+| Khaledsaad1/unsloth_medical_qa_2e-4 | ~7B (base Mistral 7B) | 32.768 tokens (heredado) | no disponible | Hugging Face | Fine-tune medico via SFT/Unsloth; sin benchmarks ni model card detallada |
+| mistralai/Mistral-7B-v0.1 | ~7,3B | 32.768 tokens | Apache-2.0 | Hugging Face | Modelo base generalista, ampliamente evaluado |
+| Otros fine-tunes medicos de 7B (p. ej. basados en Llama/Mistral) | ~7B | 4.096-32.768 tokens | varia | Hugging Face | Comparacion generica; datos concretos no disponibles |
 
 La comparacion cuantitativa con alternativas de la misma categoria no esta disponible porque el modelo no publica resultados de evaluacion ni una descripcion detallada de su dataset.
 
@@ -86,11 +86,11 @@ La comparacion cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Khaledsaad1/unsloth_medical_qa_2e-4
+- Modelo en Hugging Face: https://huggingface.co/Khaledsaad1/unsloth_medical_qa_2e-4
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-bnb-4bit
 - Unsloth: https://unsloth.ai/
 - Catalogo de modelos Unsloth: https://unsloth.ai/docs/get-started/unsloth-model-catalog
-- Modelos de Unsloth AI en HuggingFace: https://huggingface.co/unsloth/models
+- Modelos de Unsloth AI en Hugging Face: https://huggingface.co/unsloth/models
 - Repositorio TRL: https://github.com/huggingface/trl
 - Referencia externa (framework de ajuste fino medico con Unsloth): https://github.com/murtazabaig/unsloth-medical-llm
 - Modelo relacionado del mismo autor (referencia): https://huggingface.co/khaled18254/medical_lora_model

@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MiniCPM5-2B RCO attn4 Q6_K walls (este) | 2,52 B | 131.072 | RCO3/RCO4 + Q6_K, 3,733 bpw lineales | Apache-2.0 | GGUF con runtime parcheado |
-| openbmb/MiniCPM5-2B (base) | 2,52 B | 131.072 | BF16 | Apache-2.0 | HuggingFace, safetensors |
-| Checkpoint HF attn4 con muros BF16 | 2,52 B | 131.072 | RCO attn4, muros BF16 | Apache-2.0 | HuggingFace |
+| openbmb/MiniCPM5-2B (base) | 2,52 B | 131.072 | BF16 | Apache-2.0 | Hugging Face, safetensors |
+| Checkpoint HF attn4 con muros BF16 | 2,52 B | 131.072 | RCO attn4, muros BF16 | Apache-2.0 | Hugging Face |
 | Control F16 del mismo pipeline | 2,52 B | 131.072 | F16 | Apache-2.0 | GGUF de referencia del autor |
 
 La comparación relevante es interna al propio pipeline de cuantización: frente al control F16, esta versión reduce el tamaño a 1,33 GiB con un coste de +0,47 % de perplejidad. No se dispone de datos de benchmarks de tareas (MMLU, HumanEval) para comparar con otros modelos de 2-3 B, por lo que la comparativa con alternativas externas queda como no disponible.
@@ -102,7 +102,7 @@ La comparación relevante es interna al propio pipeline de cuantización: frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efeisot/minicpm5-2b-rco-attn4-q6walls-gguf
+- Modelo en Hugging Face: https://huggingface.co/efeisot/minicpm5-2b-rco-attn4-q6walls-gguf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Runtime parcheado: `runtime/` dentro del repositorio del modelo
 - Parche de llama.cpp: `runtime/llama.cpp-v0.6.0-rco-minicpm5.patch`

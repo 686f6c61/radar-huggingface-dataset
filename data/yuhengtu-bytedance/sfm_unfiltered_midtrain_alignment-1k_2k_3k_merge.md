@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-1k_2k_3k_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-1k_2k_3k_merge
 - Variante relacionada (4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - ByteDance Seed (equipo de investigación): https://seed.bytedance.com/en/

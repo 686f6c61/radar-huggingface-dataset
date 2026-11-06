@@ -100,7 +100,7 @@ Las cifras de los modelos alternativos deben verificarse en sus fichas oficiales
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large
+- Ficha en Hugging Face: https://huggingface.co/Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large
 - Sitio de Kanha: https://kanha.ai
 - Documentacion: https://kanha.ai/docs
 - SDK en npm: https://www.npmjs.com/package/kanha-ai

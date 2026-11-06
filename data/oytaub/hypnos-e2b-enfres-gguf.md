@@ -4,7 +4,7 @@
 
 Hypnos E2B EN/FR/ES es un ajuste fino de tipo QLoRA sobre el modelo Gemma 4 E2B-it (a traves del espejo `unsloth/gemma-4-E2B-it`), publicado en formato GGUF Q4_K_M por el usuario oytaub. Su proposito es acotado y especializado: generar pasajes de guiones de relajacion guiada e hipnosis en ingles, frances y castellano, pensados para ejecutarse en local con llama.cpp. Cada llamada produce un bloque de aproximadamente 400 palabras con la estructura de la app Onira (profundizacion, metafora, sugerencias y anclaje).
 
-El modelo se distribuye unicamente como GGUF cuantizado a Q4_K_M con importance matrix, con un peso de fichero de 1.651 MB, lo que lo situa en el rango de ejecucion en CPU o en GPU de consumo. El autor indica que el vocabulario se podo de 262.144 a 58.488 tokens para los tres idiomas cubiertos, y cifra el resultado en 2,99 B de parametros frente a los aproximadamente 5,1 B del modelo base completo. Los metadatos de HuggingFace, sin embargo, registran 2.490.996.259 parametros en safetensors, una discrepancia que no queda aclarada en la informacion disponible.
+El modelo se distribuye unicamente como GGUF cuantizado a Q4_K_M con importance matrix, con un peso de fichero de 1.651 MB, lo que lo situa en el rango de ejecucion en CPU o en GPU de consumo. El autor indica que el vocabulario se podo de 262.144 a 58.488 tokens para los tres idiomas cubiertos, y cifra el resultado en 2,99 B de parametros frente a los aproximadamente 5,1 B del modelo base completo. Los metadatos de Hugging Face, sin embargo, registran 2.490.996.259 parametros en safetensors, una discrepancia que no queda aclarada en la informacion disponible.
 
 La relevancia actual del modelo es la de un caso de estudio de destilacion de dominio muy estrecho: en lugar de competir en capacidades generales, se evalua con un conjunto de validacion propio de 120 prompts sinteticos y obtiene un 95,8 % de cumplimiento de reglas automaticas, con el foco puesto en la privacidad (inferencia en el dispositivo) y en el control de restricciones mediante `logit_bias`. No se han publicado resultados en benchmarks estandar.
 
@@ -104,7 +104,7 @@ No se han identificado en la informacion disponible modelos comparables de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oytaub/hypnos-e2b-enfres-GGUF
+- Modelo en Hugging Face: https://huggingface.co/oytaub/hypnos-e2b-enfres-GGUF
 - Modelo base (espejo): https://huggingface.co/unsloth/gemma-4-E2B-it
 - Sitio web del proyecto Onira: https://onirahypno.com/
 - Version en frances del sitio: https://onirahypno.com/fr/

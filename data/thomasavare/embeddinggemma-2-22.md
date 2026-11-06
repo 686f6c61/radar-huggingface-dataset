@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thomasavare/embeddinggemma-2-22` es un repositorio publicado en HuggingFace por el usuario thomasavare. En el momento de redactar esta ficha, la informacion publica disponible es minima: el repositorio no tiene descargas ni likes, no declara pipeline, licencia ni idiomas, y su tamano declarado es de 0.0 GB. La model card unicamente contiene el texto autogenerado por la integracion `PyTorchModelHubMixin` de HuggingFace, con los campos de codigo, paper y documentacion marcados como "More Information Needed".
+El modelo `thomasavare/embeddinggemma-2-22` es un repositorio publicado en Hugging Face por el usuario thomasavare. En el momento de redactar esta ficha, la informacion publica disponible es minima: el repositorio no tiene descargas ni likes, no declara pipeline, licencia ni idiomas, y su tamano declarado es de 0.0 GB. La model card unicamente contiene el texto autogenerado por la integracion `PyTorchModelHubMixin` de Hugging Face, con los campos de codigo, paper y documentacion marcados como "More Information Needed".
 
 El nombre del repositorio sugiere, sin que exista confirmacion en la informacion proporcionada, una posible relacion con la familia de modelos de embeddings de Gemma, pero no hay ningun dato tecnico que permita verificar arquitectura, parametros, contexto, datos de entrenamiento ni tarea objetivo. Tampoco se ha confirmado si se trata de un modelo de embeddings, de un modelo generativo o de un experimento personal sin publicar.
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomasavare/embeddinggemma-2-22
+- Repositorio en Hugging Face: https://huggingface.co/thomasavare/embeddinggemma-2-22
 - Integracion `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo del autor: no disponible
 - Paper: no disponible

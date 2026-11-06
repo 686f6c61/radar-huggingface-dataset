@@ -88,7 +88,7 @@ Dia2-1B-LiteRT es un modelo de diálogo con dos voces, más grande y con licenci
 
 ## Enlaces
 
-- [HuggingFace: mlboydaisuke/Pocket-TTS-LiteRT](https://huggingface.co/mlboydaisuke/Pocket-TTS-LiteRT)
+- [Hugging Face: mlboydaisuke/Pocket-TTS-LiteRT](https://huggingface.co/mlboydaisuke/Pocket-TTS-LiteRT)
 - [Modelo base: kyutai/pocket-tts](https://huggingface.co/kyutai/pocket-tts)
 - [Repositorio GitHub de Pocket TTS (Kyutai)](https://github.com/kyutai-labs/pocket-tts)
 - [Dia2-1B-LiteRT (modelo similar)](https://huggingface.co/mlboydaisuke/Dia2-1B-LiteRT)

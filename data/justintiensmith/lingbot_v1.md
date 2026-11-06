@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justintiensmith/lingbot_v1
+- Repositorio Hugging Face: https://huggingface.co/justintiensmith/lingbot_v1
 - Documentación de LingBot-VA en GitHub: https://github.com/Robbyant/lingbot-va
 - Proyecto relacionado LingBot-World: https://github.com/robbyant/lingbot-world
 - Sitio web de LingBot-World: https://www.lingbot-world.org/

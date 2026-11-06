@@ -4,7 +4,7 @@
 
 El modelo `paridhi-ramtani-iitmbs/mcq-bert-solver` es un clasificador de texto basado en la arquitectura DistilBERT, diseñado para resolver preguntas de opción múltiple (MCQ). Desarrollado por Paridhi Ramtani, el modelo se presenta como una herramienta para clasificar enunciados y seleccionar la respuesta correcta entre varias opciones. Con 66,9 millones de parámetros, es una versión destilada de BERT que mantiene un buen equilibrio entre rendimiento y eficiencia computacional.
 
-Aunque la model card oficial está vacía de detalles técnicos, los metadatos de HuggingFace indican que se trata de un `DistilBertForSequenceClassification`, es decir, una variante de DistilBERT adaptada para tareas de clasificación de secuencias. El nombre del modelo sugiere un uso específico en entornos educativos o de evaluación automática, aunque no se documenta el proceso de fine-tuning ni los datos de entrenamiento utilizados.
+Aunque la model card oficial está vacía de detalles técnicos, los metadatos de Hugging Face indican que se trata de un `DistilBertForSequenceClassification`, es decir, una variante de DistilBERT adaptada para tareas de clasificación de secuencias. El nombre del modelo sugiere un uso específico en entornos educativos o de evaluación automática, aunque no se documenta el proceso de fine-tuning ni los datos de entrenamiento utilizados.
 
 La relevancia actual de este modelo radica en su tamaño reducido y su facilidad de despliegue en infraestructuras modestas, lo que lo convierte en una opción práctica para proyectos de procesamiento de lenguaje natural en entornos con recursos limitados. Sin embargo, la falta de información sobre licencia, idiomas y entrenamiento limita su adopción en entornos productivos sin una validación previa por parte del usuario.
 
@@ -79,6 +79,6 @@ No se dispone de comparación de rendimiento porque no hay benchmarks publicados
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/paridhi-ramtani-iitmbs/mcq-bert-solver)
+- [Hugging Face - modelo](https://huggingface.co/paridhi-ramtani-iitmbs/mcq-bert-solver)
 - [Repositorio GitHub relacionado (de otro autor)](https://github.com/23f3000-3152iitm/bert-mcq-solver)
-- [Perfil del autor en HuggingFace](https://huggingface.co/paridhi-ramtani-iitmbs)
+- [Perfil del autor en Hugging Face](https://huggingface.co/paridhi-ramtani-iitmbs)

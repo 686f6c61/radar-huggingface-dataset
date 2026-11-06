@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `endomorphosis/ipfs_mozambique_laws` no es un modelo de lenguaje ni un sistema de IA, sino un dataset de investigación que recopila legislación oficial de Mozambique. Fue creado por el usuario de HuggingFace `endomorphosis` (Benjamin J Barber) a partir de fuentes gubernamentales como el Boletim da República, el Ministerio de Recursos Minerales y Energía (MIREME) y el Parlamento de Mozambique. El corpus contiene 232 instrumentos legales y 6957 artículos o secciones, todos en portugués, y se distribuye en formato Parquet.
+El repositorio `endomorphosis/ipfs_mozambique_laws` no es un modelo de lenguaje ni un sistema de IA, sino un dataset de investigación que recopila legislación oficial de Mozambique. Fue creado por el usuario de Hugging Face `endomorphosis` (Benjamin J Barber) a partir de fuentes gubernamentales como el Boletim da República, el Ministerio de Recursos Minerales y Energía (MIREME) y el Parlamento de Mozambique. El corpus contiene 232 instrumentos legales y 6957 artículos o secciones, todos en portugués, y se distribuye en formato Parquet.
 
 La relevancia de este dataset radica en su utilidad para tareas de procesamiento de lenguaje natural (PLN) aplicadas al dominio jurídico en portugués, especialmente en el contexto de Mozambique, que cuenta con pocos recursos lingüísticos estructurados. Al tratarse de una instantánea de investigación (snapshot) con fecha 2026-09-04, su cobertura es declarada como incompleta y no constituye una consolidación oficial del ordenamiento jurídico mozambiqueño. La licencia asociada es `mz-boletim-mireme`, que sujeta la reutilización a los términos de las fuentes públicas de origen.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 
 - Para la inferencia: no aplica, ya que no es un modelo.
 - Para el procesamiento del dataset: se recomienda una máquina con Python 3 y las bibliotecas `pandas` o `polars` para leer los archivos Parquet.
-- El tamaño del repositorio es de 0.0 GB según HuggingFace, por lo que el consumo de almacenamiento y memoria es mínimo.
+- El tamaño del repositorio es de 0.0 GB según Hugging Face, por lo que el consumo de almacenamiento y memoria es mínimo.
 - No se requiere GPU.
 - El despliegue en plataformas como vLLM, llama.cpp u Ollama no es aplicable.
 
@@ -69,5 +69,5 @@ No disponible. No se han identificado en la información proporcionada datasets 
 
 ## Enlaces
 
-- Dataset en HuggingFace: [https://huggingface.co/datasets/endomorphosis/ipfs_mozambique_laws](https://huggingface.co/datasets/endomorphosis/ipfs_mozambique_laws)
-- Página del autor en HuggingFace: [https://huggingface.co/endomorphosis](https://huggingface.co/endomorphosis)
+- Dataset en Hugging Face: [https://huggingface.co/datasets/endomorphosis/ipfs_mozambique_laws](https://huggingface.co/datasets/endomorphosis/ipfs_mozambique_laws)
+- Página del autor en Hugging Face: [https://huggingface.co/endomorphosis](https://huggingface.co/endomorphosis)

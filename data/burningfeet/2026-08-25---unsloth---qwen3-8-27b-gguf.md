@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo denso de 27.320 millones de parametros desarrollado por Qwen, que se presenta como un modelo nativo de vision y lenguaje capaz de procesar imagenes y video. Esta ficha cubre la conversion a formato GGUF realizada por el usuario burningfeet con la herramienta Unsloth, que permite ejecutar el modelo en hardware de consumo mediante cuantizaciones. El modelo destaca por su control flexible del modo de razonamiento (thinking mode) y por estar disenado para tareas complejas de multiples pasos con mayor fiabilidad.
 
-La version cuantizada en GGUF se distribuye bajo licencia Apache 2.0, aunque el acceso al repositorio esta restringido y requiere aceptar las condiciones en HuggingFace. El repositorio ocupa 472,1 GB, lo que indica que incluye multiples archivos de cuantizacion (Q2, Q3, Q4, Q5, Q6 y Q8) con imatrix, segun la informacion de Unsloth y el blog de kingy.ai. Esta preparacion hace que el modelo sea utilizable en entornos locales con recursos moderados, incluso en equipos con 17 GB de RAM segun las pruebas de Unsloth.
+La version cuantizada en GGUF se distribuye bajo licencia Apache 2.0, aunque el acceso al repositorio esta restringido y requiere aceptar las condiciones en Hugging Face. El repositorio ocupa 472,1 GB, lo que indica que incluye multiples archivos de cuantizacion (Q2, Q3, Q4, Q5, Q6 y Q8) con imatrix, segun la informacion de Unsloth y el blog de kingy.ai. Esta preparacion hace que el modelo sea utilizable en entornos locales con recursos moderados, incluso en equipos con 17 GB de RAM segun las pruebas de Unsloth.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativos para establecer una tabla de 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos que no permitan registros externos.
+- Acceso restringido: el repositorio requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos que no permitan registros externos.
 - Idiomas soportados: no se ha publicado informacion, por lo que se recomienda validar el comportamiento en idiomas distintos del ingles antes de desplegar en produccion.
 - Sesgos y alucinaciones: no se han publicado evaluaciones especificas; como todo modelo de lenguaje, existe riesgo de generar contenido falso o sesgado, especialmente en tareas visuales complejas.
 - Longitud de contexto desconocida: no se ha especificado la ventana de contexto maxima, lo que dificulta la planificacion de aplicaciones con documentos largos.
@@ -76,8 +76,8 @@ No se dispone de datos de rendimiento comparativos para establecer una tabla de 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/burningfeet/2026-08-25-.-unsloth-.-Qwen3.8-27B-GGUF
-- Repositorio HuggingFace del modelo base (early-bird): https://huggingface.co/burningfeet/Qwen3.8-27B-GGUF-early-bird
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/burningfeet/2026-08-25-.-unsloth-.-Qwen3.8-27B-GGUF
+- Repositorio Hugging Face del modelo base (early-bird): https://huggingface.co/burningfeet/Qwen3.8-27B-GGUF-early-bird
 - GitHub de Unsloth: https://github.com/unslothai/unsloth
 - Changelog de Unsloth con soporte de Qwen3.8: https://unsloth.ai/docs/new/changelog
 - Blog de kingy.ai sobre cuantizaciones de Qwen3.8-27B: https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/

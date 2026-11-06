@@ -1,7 +1,7 @@
 # Neeraj17/llama-124m-fineweb
 
 ## Resumen
-llama-124m-fineweb es un modelo de lenguaje de 124,67 millones de parámetros desarrollado por Neeraj17 (usuario de HuggingFace) como ejercicio de implementación desde cero en PyTorch. Se trata de un transformer decoder-only de estilo LLaMA en el que todos los componentes arquitectónicos —RoPE, atención con grouped-query attention (GQA), RMSNorm y SwiGLU— están escritos manualmente en lugar de importados de librerías de alto nivel. El modelo se entrenó sobre 5.270 millones de tokens del corpus FineWeb y se distribuye con licencia MIT.
+llama-124m-fineweb es un modelo de lenguaje de 124,67 millones de parámetros desarrollado por Neeraj17 (usuario de Hugging Face) como ejercicio de implementación desde cero en PyTorch. Se trata de un transformer decoder-only de estilo LLaMA en el que todos los componentes arquitectónicos —RoPE, atención con grouped-query attention (GQA), RMSNorm y SwiGLU— están escritos manualmente en lugar de importados de librerías de alto nivel. El modelo se entrenó sobre 5.270 millones de tokens del corpus FineWeb y se distribuye con licencia MIT.
 
 El modelo resuelve un problema fundamentalmente educativo y de investigación: proporciona una implementación de referencia completa, reproducible y de bajo coste computacional (entrenada en 11,6 horas sobre 2 GPU RTX A5000) de una arquitectura tipo LLaMA moderna. Es relevante para quienes quieren estudiar el entrenamiento de transformers a pequeña escala, validar pipelines de preentrenamiento o experimentar con variantes arquitectónicas sin depender de checkpoints propietarios.
 
@@ -23,7 +23,7 @@ Sus cifras de validación (loss 3,1375, perplejidad 23,0, bits por carácter 0,9
 Otras especificaciones: dimensión 768, 12 capas, 12 cabezas de query y 4 de key/value (GQA), FFN oculta de 2.048 con SwiGLU, vocabulario de 32.000 tokens, sin biases, embeddings no atados (untied), RoPE con convención half-split (`rotate_half`) y base 10.000.
 
 ## Arquitectura y entrenamiento
-La arquitectura es un transformer decoder-only denso de 12 capas con dimensión 768 y 12 cabezas de atención, de las cuales 4 son de key/value (GQA), lo que reduce el coste de memoria del KV cache. Usa RMSNorm en configuración pre-norm en fp32, SwiGLU en la FFN con dimensión oculta de 2.048, ausencia total de biases y embeddings de entrada y salida no compartidos. La posición se codifica con RoPE en convención half-split (la de HuggingFace, no la intercalada de Meta) con base 10.000.
+La arquitectura es un transformer decoder-only denso de 12 capas con dimensión 768 y 12 cabezas de atención, de las cuales 4 son de key/value (GQA), lo que reduce el coste de memoria del KV cache. Usa RMSNorm en configuración pre-norm en fp32, SwiGLU en la FFN con dimensión oculta de 2.048, ausencia total de biases y embeddings de entrada y salida no compartidos. La posición se codifica con RoPE en convención half-split (la de Hugging Face, no la intercalada de Meta) con base 10.000.
 
 El entrenamiento se realizó sobre 5.270 millones de tokens de FineWeb, aproximadamente 42 tokens por parámetro y unas 2 veces la ratio Chinchilla, durante 107.123 pasos con batch global de 49.152 tokens (24 × 1.024 por rango, 2 rangos) en DDP sobre 2 RTX A5000 sin NVLink. Se usó AdamW con betas (0,9; 0,95), weight decay 0,1, learning rate de 6e-4 a 6e-5 con decaimiento coseno y warmup lineal de 1.000 pasos, gradient clipping de 1,0, dropout 0,0 y autocast bf16 con normas en fp32. La inicialización es N(0, 0,02) en todas las capas, con las dos proyecciones que escriben en el residual (`w_o` y `w2`) escaladas por 1/sqrt(2 · n_layers) para mantener la varianza del flujo residual independiente de la profundidad. No hubo RLHF, DPO ni ningún tipo de alineación. El entrenamiento completo llevó 11,6 horas de reloj de pared.
 
@@ -97,6 +97,6 @@ La comparación con GPT-2 small y Pythia-160M es la más directa por escala. Fre
 - El bits per char solo es comparable dentro del mismo dataset: el autor advierte que el 0,40 bpc de su modelo de 41M en TinyStories no indica mejor calidad, sino una distribución más simple.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Neeraj17/llama-124m-fineweb
+- Hugging Face: https://huggingface.co/Neeraj17/llama-124m-fineweb
 - Repositorio GitHub con código, script de entrenamiento y los dos tiers menores: https://github.com/CloudedLeopard17/llama-from-scratch
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb

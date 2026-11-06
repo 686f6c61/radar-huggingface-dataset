@@ -18,7 +18,7 @@ Por tanto, su relevancia actual es documental y de trazabilidad: sirve para rest
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en HuggingFace; la model card indica que los derivados de GR00T siguen sujetos a la licencia NVIDIA de investigacion/evaluacion unicamente |
+| Licencia | no disponible en Hugging Face; la model card indica que los derivados de GR00T siguen sujetos a la licencia NVIDIA de investigacion/evaluacion unicamente |
 | Formato de pesos | no disponible (el repo contiene un directorio `payload/` con checkpoints, configuracion y resultados; no se especifica el formato) |
 
 Datos adicionales del repositorio: pipeline declarado `robotics`, etiquetas `robotics` y `checkpoint-backup`, region `us`, 0 descargas, 0 likes, 1,3 GB de tamano, creado el 2026-10-11 y actualizado el mismo dia.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (backup de experimento RoboMME) | no disponible | no disponible | no disponible | no disponible en HF; derivados de GR00T bajo licencia NVIDIA de investigacion/evaluacion | Repositorio de archivo en HuggingFace, 0 descargas |
+| Este repositorio (backup de experimento RoboMME) | no disponible | no disponible | no disponible | no disponible en HF; derivados de GR00T bajo licencia NVIDIA de investigacion/evaluacion | Repositorio de archivo en Hugging Face, 0 descargas |
 | GR00T (NVIDIA), referenciado como upstream | no disponible | no disponible | no disponible | investigacion/evaluacion unicamente, segun la model card | no disponible en la informacion |
 | pi / openpi, referenciados como upstream | no disponible | no disponible | no disponible | terminos propios de terceros, segun la model card | no disponible en la informacion |
 
@@ -80,7 +80,7 @@ No se dispone de datos verificables de parametros, contexto, rendimiento ni lice
 - No se realizo entrenamiento ni inferencia para generar este backup, segun la propia model card.
 - La restauracion depende de la ruta absoluta original; restaurar en otra ruta puede romper referencias internas del estado de reanudacion.
 - Riesgo de licencia: los derivados de GR00T quedan sujetos a la licencia NVIDIA de investigacion y solo evaluacion, lo que excluye el uso comercial. Los componentes de `pi`/`openpi` y de terceros mantienen sus propios terminos, que hay que revisar por separado.
-- No se especifica licencia en la ficha de HuggingFace, lo que anade incertidumbre juridica sobre el conjunto del repositorio.
+- No se especifica licencia en la ficha de Hugging Face, lo que anade incertidumbre juridica sobre el conjunto del repositorio.
 - Credenciales, enlaces externos, caches y ficheros de tracking/profiling fueron excluidos; un intento de reanudar el experimento puede fallar si dependia de alguno de esos elementos.
 - No hay informacion sobre sesgos, alucinacion, limites de contexto o idioma, porque no hay modelo de lenguaje documentado en esta ficha.
 - 0 descargas y 0 likes: no hay evidencia de uso, validacion externa ni soporte por parte de la comunidad.
@@ -89,6 +89,6 @@ No se dispone de datos verificables de parametros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-adapter-save-smoke-20260902-00e186e0
+- Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-adapter-save-smoke-20260902-00e186e0
 - Manifiesto de backup: `BACKUP_MANIFEST.json` (incluido en el repositorio, segun la model card)
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos o demos) en la busqueda web realizada; los resultados devueltos no estaban relacionados con el modelo.

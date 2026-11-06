@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto y licenc
 - Mecánica de API poco estándar: el campo de razonamiento es `message.reasoning`, no `message.reasoning_content`; los valores de `reasoning_effort` distintos de `"low"` y `"high"` caen silenciosamente a `max`, incluido un `off:` sin comillas que YAML interpreta como booleano `false`.
 - Limitaciones de contexto en producción: la ventana nominal de 1M de tokens no es operativa hoy en vLLM sobre `glm_moe_dsa`. El techo práctico es de aproximadamente 131K tokens con MTP y 160K sin MTP en TP8 sobre H200.
 - Coste de despliegue: 755,7 GB de pesos y un mínimo de ocho aceleradores de gama H200 hacen inviable cualquier uso fuera de un clúster. No hay cuantizaciones alternativas (GGUF, AWQ, etc.) publicadas en esta información.
-- Trazabilidad del repositorio: los datos de HuggingFace atribuyen el repositorio a redkits, mientras que la model card se refiere de forma consistente a `dealignai/GLM-5.3-UNCENSORED-FP8` y a la cuenta de Twitter `@dealignai`. Procede verificar la cadena de custodia antes de cualquier uso.
+- Trazabilidad del repositorio: los datos de Hugging Face atribuyen el repositorio a redkits, mientras que la model card se refiere de forma consistente a `dealignai/GLM-5.3-UNCENSORED-FP8` y a la cuenta de Twitter `@dealignai`. Procede verificar la cadena de custodia antes de cualquier uso.
 - Estado del repositorio: cero descargas y cero likes en el momento de la consulta, sin validación comunitaria independiente más allá de los comentarios de runtime citados.
 - Licencia MIT: no impone restricciones de uso comercial, lo que en la práctica significa que la responsabilidad legal y ética del contenido generado recae íntegramente en quien despliega el modelo.
 

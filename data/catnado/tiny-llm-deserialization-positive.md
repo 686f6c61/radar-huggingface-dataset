@@ -23,7 +23,7 @@ El sufijo "deserialization-positive" del identificador sugiere una posible espec
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue una arquitectura transformer decoder-only, coherente con el tag `llama` de HuggingFace, con aproximadamente 10 millones de parametros. El pretraining se realizo sobre 32.000 millones de tokens extraidos del dataset FineWeb (HuggingFaceFW/fineweb), con una ventana de contexto de 1024 tokens. La relacion entre tokens de entrenamiento y parametros es notablemente alta (unos 3200 tokens por parametro), lo que indica una apuesta por sobrentrenar un modelo muy pequeno, una practica habitual para maximizar la calidad en modelos de baja capacidad.
+El modelo sigue una arquitectura transformer decoder-only, coherente con el tag `llama` de Hugging Face, con aproximadamente 10 millones de parametros. El pretraining se realizo sobre 32.000 millones de tokens extraidos del dataset FineWeb (HuggingFaceFW/fineweb), con una ventana de contexto de 1024 tokens. La relacion entre tokens de entrenamiento y parametros es notablemente alta (unos 3200 tokens por parametro), lo que indica una apuesta por sobrentrenar un modelo muy pequeno, una practica habitual para maximizar la calidad en modelos de baja capacidad.
 
 No se documenta en la model card ningun proceso de ajuste fino supervisado, RLHF, DPO ni destilacion. Tampoco se detallan la composicion exacta del dataset, el tokenizador empleado, la estrategia de decodificacion durante el entrenamiento, el uso de atencion lineal o decodificacion especulativa, ni innovaciones tecnicas adicionales. La model card del repositorio catnado replica el contenido de la model card original de arnir0/Tiny-LLM, por lo que no aporta informacion especifica sobre el proceso de derivacion de este identificador concreto.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| catnado/tiny-llm-deserialization-positive | ~10 M | 1024 | MIT | HuggingFace (0 descargas) | No disponibles |
-| arnir0/Tiny-LLM | ~10 M | 1024 | No disponible en la informacion proporcionada | HuggingFace | No disponibles |
-| SmolLM-135M | 135 M | 2048 | Apache 2.0 | HuggingFace | Publicados por su autor |
-| TinyStories (variantes) | 1 M - 33 M | Variable | Variable | HuggingFace | Publicados por su autor |
+| catnado/tiny-llm-deserialization-positive | ~10 M | 1024 | MIT | Hugging Face (0 descargas) | No disponibles |
+| arnir0/Tiny-LLM | ~10 M | 1024 | No disponible en la informacion proporcionada | Hugging Face | No disponibles |
+| SmolLM-135M | 135 M | 2048 | Apache 2.0 | Hugging Face | Publicados por su autor |
+| TinyStories (variantes) | 1 M - 33 M | Variable | Variable | Hugging Face | Publicados por su autor |
 
 La comparacion cuantitativa de rendimiento no puede realizarse porque no se han publicado resultados de benchmarks para este modelo ni para su base directa en la informacion disponible.
 
@@ -85,6 +85,6 @@ La comparacion cuantitativa de rendimiento no puede realizarse porque no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/catnado/tiny-llm-deserialization-positive
+- Modelo en Hugging Face: https://huggingface.co/catnado/tiny-llm-deserialization-positive
 - Modelo base referenciado en la model card: https://huggingface.co/arnir0/Tiny-LLM
 - Dataset de pretraining: https://huggingface.co/datasets/HuggingFaceFW/fineweb

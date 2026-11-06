@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NLLB-200-Distilled-600M_finetuned_Paragraph-Alligned es un ajuste fino del modelo de traduccion automatica neuronal facebook/nllb-200-distilled-600M, publicado por el usuario drjk16 en HuggingFace. El modelo parte de la arquitectura m2m_100 (transformer encoder-decoder) de Meta y se ha reentrenado sobre pares de parrafos alineados extraidos de OPUS, lo que lo orienta a traduccion a nivel de documento en lugar de traduccion oracion a oracion.
+NLLB-200-Distilled-600M_finetuned_Paragraph-Alligned es un ajuste fino del modelo de traduccion automatica neuronal facebook/nllb-200-distilled-600M, publicado por el usuario drjk16 en Hugging Face. El modelo parte de la arquitectura m2m_100 (transformer encoder-decoder) de Meta y se ha reentrenado sobre pares de parrafos alineados extraidos de OPUS, lo que lo orienta a traduccion a nivel de documento en lugar de traduccion oracion a oracion.
 
 El ajuste se realizo sobre aproximadamente 25.000 pares de parrafos con una media de 5,6 oraciones por par, segun la model card del autor. El objetivo declarado es aprovechar la longitud de contexto del modelo base para mantener coherencia entre oraciones y producir traducciones de documentos completos. Es un modelo pequeno (615 millones de parametros) pensado para despliegues con recursos limitados.
 
@@ -83,7 +83,7 @@ La comparativa se limita a caracteristicas estructurales; no hay datos de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drjk16/NLLB-200-Distilled-600M_finetuned_Paragraph-Alligned
+- Modelo en Hugging Face: https://huggingface.co/drjk16/NLLB-200-Distilled-600M_finetuned_Paragraph-Alligned
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Documentacion de NLLB en Transformers: https://huggingface.co/docs/transformers/model_doc/nllb
 - Corpus OPUS: https://opus.nlpl.eu/

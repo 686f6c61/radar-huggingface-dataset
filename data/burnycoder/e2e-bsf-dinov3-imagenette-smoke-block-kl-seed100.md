@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye otros SAEs comparables n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-block-kl-seed100
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-smoke-block-kl-seed100
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Paper BSF: https://arxiv.org/abs/2606.25234
 - Paper SAE end-to-end: https://arxiv.org/abs/2405.12241

@@ -44,7 +44,7 @@ El autor insiste en un principio de trazabilidad: "No weights are fabricated, do
 - **Planificación de despliegue bilingüe EN/ES**: si el modelo llega a publicarse con los idiomas declarados, encajaría en productos que necesiten cubrir inglés y español con un único modelo; hoy solo sirve para dimensionar requisitos preliminares.
 - **Prototipado condicionado a MoE de ~35B**: el perfil "35B A3B" permitiría, en teoría, razonamiento de un modelo grande con coste de inferencia de uno pequeño; útil para presupuestar hardware (varias GPU o una GPU de 80 GB con cuantización) una vez haya pesos.
 - **Documentación técnica y formación interna**: el repositorio puede citarse en documentación de arquitectura de una empresa como "modelo candidato en observación", sin integrarlo en producción.
-- **Canal de feedback con el autor**: al ser un producto en desarrollo, un equipo interesado puede usar la página de HuggingFace para reportar requisitos (contexto, cuantizaciones, licencia) antes de la publicación de pesos.
+- **Canal de feedback con el autor**: al ser un producto en desarrollo, un equipo interesado puede usar la página de Hugging Face para reportar requisitos (contexto, cuantizaciones, licencia) antes de la publicación de pesos.
 
 ## Benchmarks y rendimiento
 
@@ -84,6 +84,6 @@ La comparación de rendimiento no es posible: Nova Prime no ofrece benchmarks. C
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ModernoTech/Nova-Prime
+- Repositorio en Hugging Face: https://huggingface.co/ModernoTech/Nova-Prime
 - Candidato de origen citado en la model card: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repos de código o demos) asociados a Nova Prime.

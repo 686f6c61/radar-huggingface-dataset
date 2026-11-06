@@ -29,7 +29,7 @@ Especificaciones de entrada y salida del grafo:
 | Salida de detecciones | `[1, 300, 38]`: x1, y1, x2, y2, score, clase, 32 coeficientes de máscara; NMS incluida en el grafo con IoU 0.6 |
 | Salida de prototipos | `[1, 32, 160, 160]` |
 | Clases | 1 (el insecto) |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Butterfly wing detector (este modelo) | YOLO26n-seg fine-tune, ONNX | 11 MB (pesos ONNX) | no aplica | AGPL-3.0 | HuggingFace |
+| Butterfly wing detector (este modelo) | YOLO26n-seg fine-tune, ONNX | 11 MB (pesos ONNX) | no aplica | AGPL-3.0 | Hugging Face |
 | Ultralytics YOLO26n-seg base | Segmentación de instancias general | no disponible | no aplica | AGPL-3.0 | GitHub de Ultralytics |
-| fr4nzzch/bioclip-2.5-vith14-visual-int8-onnx | Codificador de imagen (no detector) | no disponible | no aplica | no disponible | HuggingFace |
-| fr4nzzch/butterfly-id-small-onnx | Codificador de imagen pequeño (no detector) | no disponible | no aplica | no disponible | HuggingFace |
+| fr4nzzch/bioclip-2.5-vith14-visual-int8-onnx | Codificador de imagen (no detector) | no disponible | no aplica | no disponible | Hugging Face |
+| fr4nzzch/butterfly-id-small-onnx | Codificador de imagen pequeño (no detector) | no disponible | no aplica | no disponible | Hugging Face |
 
 La comparación directa con otros detectores de mariposas no está disponible en la información proporcionada. Los modelos de la misma familia (BioCLIP y el clasificador) no son alternativas sino componentes posteriores del mismo pipeline.
 
@@ -93,7 +93,7 @@ La comparación directa con otros detectores de mariposas no está disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fr4nzzch/butterfly-wing-detector-onnx
+- Modelo en Hugging Face: https://huggingface.co/fr4nzzch/butterfly-wing-detector-onnx
 - Aplicación Ikiam Insectary: https://ithomiini-ikiam.com/identificar/
 - Codificador BioCLIP 2.5 ViT-H/14 (int8 ONNX): https://huggingface.co/fr4nzzch/bioclip-2.5-vith14-visual-int8-onnx
 - Modelo pequeño de identificación: https://huggingface.co/fr4nzzch/butterfly-id-small-onnx

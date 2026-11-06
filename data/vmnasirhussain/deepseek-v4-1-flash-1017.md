@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI. Se distribuye a través de un repositorio de HuggingFace gestionado por el usuario `vmnasirhussain` que replica la model card oficial del modelo. El modelo está orientado a tareas de razonamiento, generación de código, uso de agentes y comprensión visual, con una pipeline declarada de `image-text-to-text`.
+DeepSeek-V4.1-Flash-1017 es una actualización menor del modelo DeepSeek-V4.1-Flash, desarrollado por DeepSeek-AI. Se distribuye a través de un repositorio de Hugging Face gestionado por el usuario `vmnasirhussain` que replica la model card oficial del modelo. El modelo está orientado a tareas de razonamiento, generación de código, uso de agentes y comprensión visual, con una pipeline declarada de `image-text-to-text`.
 
 La actualización 1017 mejora los resultados de la versión base en prácticamente todos los benchmarks publicados (razonamiento, coding, tareas agénticas y visión), además de reducir el tiempo de ejecución de tareas y la longitud de salida, lo que se traduce en menor coste por tarea. El modelo declara una ventana de contexto de 1M tokens y un tamaño total de 763.205.315.794 parámetros según los pesos en safetensors del repositorio.
 
@@ -80,8 +80,8 @@ Resultados publicados en la model card (la columna DS-V4.1-Flash-1017 correspond
 
 | Modelo | Parámetros | Contexto | HLE (sin herramientas) | DeepSWE v1.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | ~763 mil M | 1M tokens | 42,6 (44,0†) | 77,0 | MIT | HuggingFace (repo de terceros) |
-| DeepSeek-V4.1-Flash | no disponible | 1M tokens | 36,8 (39,1†) | 74,2 | MIT | HuggingFace (deepseek-ai) |
+| DeepSeek-V4.1-Flash-1017 | ~763 mil M | 1M tokens | 42,6 (44,0†) | 77,0 | MIT | Hugging Face (repo de terceros) |
+| DeepSeek-V4.1-Flash | no disponible | 1M tokens | 36,8 (39,1†) | 74,2 | MIT | Hugging Face (deepseek-ai) |
 | K3 | no disponible | no disponible | 43,5 | 67,5 | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | 42,0† | 66,9 | no disponible | no disponible |
 | GPT-5.6 Sol | no disponible | no disponible | 44,5 | 73,0 | propietaria | no disponible (API) |
@@ -91,7 +91,7 @@ La información disponible no permite comparar parámetros, contexto ni licencia
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está publicado por el usuario `vmnasirhussain`, no por la cuenta oficial `deepseek-ai`; conviene verificar la procedencia e integridad de los pesos antes de usarlos en producción.
+- El repositorio de Hugging Face está publicado por el usuario `vmnasirhussain`, no por la cuenta oficial `deepseek-ai`; conviene verificar la procedencia e integridad de los pesos antes de usarlos en producción.
 - No se publica información sobre sesgos, datos de entrenamiento ni composición del dataset, por lo que no es posible evaluar sesgos conocidos.
 - Riesgo de alucinación inherente a los modelos de lenguaje; no se han publicado tasas de alucinación ni evaluaciones de fidelidad.
 - Idiomas soportados no disponibles: no se puede confirmar el rendimiento en castellano ni en otras lenguas distintas del inglés.
@@ -103,12 +103,12 @@ La información disponible no permite comparar parámetros, contexto ni licencia
 
 ## Enlaces
 
-- HuggingFace (repositorio de este modelo): https://huggingface.co/vmnasirhussain/DeepSeek-V4.1-Flash-1017
-- HuggingFace (modelo base oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
+- Hugging Face (repositorio de este modelo): https://huggingface.co/vmnasirhussain/DeepSeek-V4.1-Flash-1017
+- Hugging Face (modelo base oficial): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Toolkit deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Página oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter/X de DeepSeek: https://twitter.com/deepseek_ai
 - Contacto: service@deepseek.com

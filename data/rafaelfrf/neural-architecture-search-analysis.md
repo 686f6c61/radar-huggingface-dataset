@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Rafaelfrf/neural-architecture-search-analysis` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS) publicado en HuggingFace. La model card lo describe explicitamente como un conjunto estructurado de apuntes con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de los resultados ya completados. El autor declara que el contenido es exploratorio y que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
+`Rafaelfrf/neural-architecture-search-analysis` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS) publicado en Hugging Face. La model card lo describe explicitamente como un conjunto estructurado de apuntes con referencias de evaluacion y preguntas abiertas, donde los planes e hipotesis se mantienen separados de los resultados ya completados. El autor declara que el contenido es exploratorio y que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
 
-El repositorio contiene dos ficheros (`reading.md` como artefacto principal y `README.md` como documentacion) y pesa 0.0 GB. Los metadatos de HuggingFace indican la etiqueta `safetensors` y una cifra de parametros totales de 24.832, un valor que no se corresponde con ningun modelo funcional y que debe interpretarse como ruido de los metadatos o un tensor auxiliar de tamano trivial, no como un transformer entrenado.
+El repositorio contiene dos ficheros (`reading.md` como artefacto principal y `README.md` como documentacion) y pesa 0.0 GB. Los metadatos de Hugging Face indican la etiqueta `safetensors` y una cifra de parametros totales de 24.832, un valor que no se corresponde con ningun modelo funcional y que debe interpretarse como ruido de los metadatos o un tensor auxiliar de tamano trivial, no como un transformer entrenado.
 
 Por tanto, esta ficha documenta un artefacto de investigacion, no un modelo desplegable. Cualquier uso en inferencia, generacion de texto o produccion es inviable con el contenido actual del repositorio.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta un artefacto de investigacion, no un modelo desp
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura de modelo que describir. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no documenta ninguna arquitectura concreta, capa, atencion ni configuracion de entrenamiento. El contenido real es un documento de notas (`reading.md`) que cubre el alcance de una pregunta de investigacion sobre NAS, probables factores de confusion, una propuesta de comparacion con baselines emparejados, contexto de evaluacion con benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
+No existe arquitectura de modelo que describir. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no documenta ninguna arquitectura concreta, capa, atencion ni configuracion de entrenamiento. El contenido real es un documento de notas (`reading.md`) que cubre el alcance de una pregunta de investigacion sobre NAS, probables factores de confusion, una propuesta de comparacion con baselines emparejados, contexto de evaluacion con benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
 No se han publicado datos de entrenamiento, numero de tokens, composicion del dataset, ni procesos de RLHF, DPO o ajuste supervisado. El autor indica que, si en el futuro se anaden resultados, deberan incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -77,5 +77,5 @@ No se dispone de modelos comparables en la informacion proporcionada, ya que el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rafaelfrf/neural-architecture-search-analysis
+- Repositorio en Hugging Face: https://huggingface.co/Rafaelfrf/neural-architecture-search-analysis
 - No se han encontrado en la busqueda web papers, blogs, repos de codigo ni demos adicionales asociados a este repositorio.

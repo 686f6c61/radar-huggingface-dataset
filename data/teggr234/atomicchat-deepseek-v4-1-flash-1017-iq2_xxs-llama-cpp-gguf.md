@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AtomicChat-DeepSeek-V4.1-Flash-1017-IQ2_XXS-llama-cpp-GGUF es una conversión a formato GGUF del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario teggr234 en HuggingFace. No se trata de un modelo entrenado desde cero ni de una cuantización original: la model card indica explícitamente que es una copia de caché dedicada de seis shards GGUF ya convertidos, preparada para el runtime nativo llama.cpp build b12063. El repositorio actúa, por tanto, como espejo redistribuible de una cuantización IQ2_XXS del backbone, manteniendo el componente compartido Engram en IQ4_NL.
+AtomicChat-DeepSeek-V4.1-Flash-1017-IQ2_XXS-llama-cpp-GGUF es una conversión a formato GGUF del modelo DeepSeek-V4.1-Flash-1017, publicada por el usuario teggr234 en Hugging Face. No se trata de un modelo entrenado desde cero ni de una cuantización original: la model card indica explícitamente que es una copia de caché dedicada de seis shards GGUF ya convertidos, preparada para el runtime nativo llama.cpp build b12063. El repositorio actúa, por tanto, como espejo redistribuible de una cuantización IQ2_XXS del backbone, manteniendo el componente compartido Engram en IQ4_NL.
 
 El modelo base procede de AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF (revisión 4f1d2f73), con el backbone cuantizado y el Engram provenientes de ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF (revisión 65d53bc8). El tamaño total declarado es de 248.834.257.920 bytes (aproximadamente 248,8 GB), lo que sitúa el artefacto en el rango de modelos de gran escala que requieren despliegue multi-GPU o nodos con memoria unificada. La licencia declarada es MIT y la pipeline es text-generation.
 
@@ -82,7 +82,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de los repositori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/teggr234/AtomicChat-DeepSeek-V4.1-Flash-1017-IQ2_XXS-llama-cpp-GGUF
+- Repositorio Hugging Face: https://huggingface.co/teggr234/AtomicChat-DeepSeek-V4.1-Flash-1017-IQ2_XXS-llama-cpp-GGUF
 - Modelo base (AtomicChat): https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
 - Modelo base (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - llama.cpp: no se proporciona enlace en la información disponible

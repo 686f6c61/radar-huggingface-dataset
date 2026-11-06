@@ -4,7 +4,7 @@
 
 Snapkitty/sovereign-compiler, también denominado "root-fontana", es un compilador constitucional diseñado para el ecosistema SnapKitty. No se trata de un modelo de inteligencia artificial, sino de una herramienta de software que implementa un DSL (Fontana DSL) para definir y ejecutar artefactos, gobernanza y contratos verificables. El proyecto está desarrollado en Rust y Lean 4, e incluye módulos para la creación de testigos inmutables (WORM), un libro mayor de auditoría (Archivum), un motor de gobernanza, recibos criptográficos SHA-256, telemetría y un motor de ejecución determinista. Su relevancia radica en la intersección entre compilación, verificación formal y gobernanza automatizada, orientado a sistemas que requieren trazabilidad y cumplimiento de reglas.
 
-La información disponible en HuggingFace es mínima: no se indica licencia, idiomas, ni pipeline. La model card describe la arquitectura del software y su uso, pero no contiene datos de rendimiento, benchmarks ni especificaciones de hardware. Por tanto, esta ficha se centra en lo que se puede extraer de la documentación pública, indicando explícitamente la ausencia de datos cuando corresponda.
+La información disponible en Hugging Face es mínima: no se indica licencia, idiomas, ni pipeline. La model card describe la arquitectura del software y su uso, pero no contiene datos de rendimiento, benchmarks ni especificaciones de hardware. Por tanto, esta ficha se centra en lo que se puede extraer de la documentación pública, indicando explícitamente la ausencia de datos cuando corresponda.
 
 ## Especificaciones tecnicas
 
@@ -72,8 +72,8 @@ No disponible. No existen modelos comparables en el sentido de IA generativa; se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/sovereign-compiler
-- Perfil de Snapkitty Collective en HuggingFace: https://huggingface.co/Snapkitty
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/sovereign-compiler
+- Perfil de Snapkitty Collective en Hugging Face: https://huggingface.co/Snapkitty
 - Repositorio en GitHub (SNAPKITTYWEST): https://github.com/SNAPKITTYWEST/sovereign-compiler
 - Perfil de GitHub de SNAPKITTYWEST: https://github.com/SNAPKITTYWEST
 - Proyecto relacionado sovereign-router: https://huggingface.co/Snapkitty/sovereign-router

@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-ig-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/afrigloss-opus-mt-fr-ig-onnx
 - Modelo base: https://huggingface.co/AfriSpeech/afrigloss-opus-mt-fr-ig
 - Commit de exportacion: `4822d78591ce023cd11bec79ed52f48e9ea850fd` (referenciado en la model card)
 - Optimum (herramienta de exportacion): https://github.com/huggingface/optimum

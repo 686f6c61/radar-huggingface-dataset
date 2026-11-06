@@ -92,7 +92,7 @@ La comparativa muestra que el modelo se especializa en una tarea concreta frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kez-lab/gemma-2-2b-quiz-korean
+- Modelo en Hugging Face: https://huggingface.co/kez-lab/gemma-2-2b-quiz-korean
 - Repositorio GitHub del autor (benchmark y documentación): https://github.com/kez-lab/ondevice-blog-quiz-generator
 - Modelo base de Google: https://huggingface.co/google/gemma-2-2b-it
 - Modelo relacionado (versión ultraligera con Qwen): https://huggingface.co/kez-lab/quiz-korean

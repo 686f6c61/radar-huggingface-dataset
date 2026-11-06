@@ -23,7 +23,7 @@ Su relevancia práctica está en la transcripción fonética multilingüe: la ev
 | Entrada | `wav` float32 `[1, samples]`, audio mono a 16 kHz |
 | Salida | `logits` float32 `[1, frames, vocab]`; vocabulario de 311 entradas con blank CTC en el índice 310 |
 | Tamaño del repositorio | 0,3 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -74,8 +74,8 @@ PER = phoneme error rate; PFER = phoneme feature error rate. No se han publicado
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| allan-valin/multipa-onnx (este modelo) | no disponible | audio de longitud variable | PER 61,3; PFER 15,1 | MIT | ONNX int8 | HuggingFace |
-| ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns (MultIPA original) | no disponible | audio de longitud variable | PER 61,1; PFER 14,6 | MIT, según el repositorio del autor | no disponible | HuggingFace |
+| allan-valin/multipa-onnx (este modelo) | no disponible | audio de longitud variable | PER 61,3; PFER 15,1 | MIT | ONNX int8 | Hugging Face |
+| ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns (MultIPA original) | no disponible | audio de longitud variable | PER 61,1; PFER 14,6 | MIT, según el repositorio del autor | no disponible | Hugging Face |
 | Otros modelos de transcripción fonética | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada. La comparación directa solo puede establecerse con el MultIPA original, del que esta versión es una conversión cuantizada.
@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- [HuggingFace: allan-valin/multipa-onnx](https://huggingface.co/allan-valin/multipa-onnx)
+- [Hugging Face: allan-valin/multipa-onnx](https://huggingface.co/allan-valin/multipa-onnx)
 - [Modelo base: ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns](https://huggingface.co/ctaguchi/wav2vec2-large-xlsr-japlmthufielta-ipa1000-ns)
 - [Paper: Universal Automatic Phonetic Transcription into the International Phonetic Alphabet](https://www.isca-archive.org/interspeech_2023/taguchi23_interspeech.html)
 - [Repositorio original: ctaguchi/multipa](https://github.com/ctaguchi/multipa)

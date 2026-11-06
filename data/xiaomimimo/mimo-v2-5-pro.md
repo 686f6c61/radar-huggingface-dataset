@@ -107,7 +107,7 @@ MiMo-V2.5-Pro supera a Kimi-K2 en MMLU, GSM8K y SWE-Bench, aunque es inferior en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro
+- Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro
 - Blog oficial: https://mimo.xiaomi.com/mimo-v2-5-pro
 - Plataforma API: https://platform.xiaomimimo.com/
 - Studio: https://aistudio.xiaomimimo.com

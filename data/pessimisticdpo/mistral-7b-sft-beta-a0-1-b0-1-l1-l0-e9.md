@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e9` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. Su model card es la plantilla autogenerada por el Hub y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". Se trata, por tanto, de un artefacto sin documentacion tecnica verificable en el momento de redactar esta ficha.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e9` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. Su model card es la plantilla autogenerada por el Hub y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". Se trata, por tanto, de un artefacto sin documentacion tecnica verificable en el momento de redactar esta ficha.
 
 El identificador del repositorio sugiere que se trata de un ajuste fino derivado de un checkpoint Mistral-7B (probablemente la linea `mistral-7b-sft-beta` del ecosistema de alineamiento tipo Zephyr) y que la nomenclatura `a0.1-b0.1-L1-l0-e9` corresponde a hiperparametros de entrenamiento (epoca 9, coeficientes 0,1). Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por el autor en ningun documento; debe tratarse como no verificada.
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es, por tanto, sobre todo practica y de advertencia:
 | Ultima actualizacion (metadatos del Hub) | 2026-09-21 |
 | Etiquetas del repositorio | transformers, safetensors, arxiv:1910.09700, endpoints_compatible, region:us |
 
-Dos observaciones sobre la tabla. Primero, el tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo citado por la plantilla de model card del Hub para el calculo de emisiones de carbono; no es una referencia al metodo de entrenamiento del modelo. Segundo, el tag `endpoints_compatible` indica unicamente que el repositorio cumple el formato esperado por los Inference Endpoints de HuggingFace, no que exista un endpoint desplegado.
+Dos observaciones sobre la tabla. Primero, el tag `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el articulo citado por la plantilla de model card del Hub para el calculo de emisiones de carbono; no es una referencia al metodo de entrenamiento del modelo. Segundo, el tag `endpoints_compatible` indica unicamente que el repositorio cumple el formato esperado por los Inference Endpoints de Hugging Face, no que exista un endpoint desplegado.
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ Las celdas marcadas como "requiere verificacion" no se han rellenado porque no s
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla autogenerada por HuggingFace, con todos los campos sin cumplimentar.
+- Documentacion inexistente: la model card es la plantilla autogenerada por Hugging Face, con todos los campos sin cumplimentar.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion. En la practica, esto equivale a un bloqueo legal para cualquier despliegue en producto.
 - Integridad del repositorio en duda: 0,2 GB es un tamano anormalmente bajo para un modelo de 7B; puede tratarse de un adaptador, de una subida parcial o de un repositorio con solo metadatos y tokenizador.
 - Riesgo de alucinacion: no cuantificado. No hay evaluaciones de fidelidad ni de tasa de alucinacion.
@@ -108,7 +108,7 @@ Las celdas marcadas como "requiere verificacion" no se han rellenado porque no s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e9
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e9
 - Referencia del tag `arxiv:1910.09700` (plantilla de emisiones de carbono del Hub, no relacionada con el entrenamiento del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700

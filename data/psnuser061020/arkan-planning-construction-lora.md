@@ -4,7 +4,7 @@
 
 El modelo `psnuser061020/arkan-planning-construction-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `psnuser061020` sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se distribuye a traves de la libreria PEFT y el repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. El pipeline declarado es `text-generation` y el tag `conversational` sugiere un ajuste orientado a dialogo, aunque la model card no documenta ninguna tarea concreta.
 
-El interes de este tipo de publicaciones es doble. Por un lado, demuestra el flujo habitual de especializacion de un modelo pequeno (3B) mediante LoRA, que permite adaptar un modelo abierto a un dominio concreto con un coste de entrenamiento y de almacenamiento muy bajo. Por otro lado, la publicacion carece practicamente de documentacion: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]` (autoria, datos de entrenamiento, licencia, idiomas, hiperparametros y evaluacion). No se declara licencia, no se declaran idiomas y no hay resultados de evaluacion.
+El interes de este tipo de publicaciones es doble. Por un lado, demuestra el flujo habitual de especializacion de un modelo pequeno (3B) mediante LoRA, que permite adaptar un modelo abierto a un dominio concreto con un coste de entrenamiento y de almacenamiento muy bajo. Por otro lado, la publicacion carece practicamente de documentacion: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]` (autoria, datos de entrenamiento, licencia, idiomas, hiperparametros y evaluacion). No se declara licencia, no se declaran idiomas y no hay resultados de evaluacion.
 
 Por el nombre del repositorio ("planning construction") podria tratarse de un ajuste orientado a planificacion en el sector de la construccion, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor. Cualquier evaluacion en produccion deberia partir de una validacion empirica propia, dado que no hay informacion verificable sobre el dataset, el procedimiento de entrenamiento ni el rendimiento resultante.
 
@@ -23,14 +23,14 @@ Por el nombre del repositorio ("planning construction") podria tratarse de un aj
 | Tamano del repositorio | 0,1 GB |
 | Version de PEFT | 0.20.0 |
 | Modelo base | Qwen/Qwen2.5-3B-Instruct |
-| Fecha de creacion | 2026-09-10 (segun los metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-10 (segun los metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-10 (segun los metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-10 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura del adaptador es LoRA sobre el modelo base Qwen2.5-3B-Instruct. Qwen2.5-3B-Instruct es un transformador decoder-only denso con atencion por consultas agrupadas (GQA) y normalizacion RMSNorm, preentrenado por Alibaba Cloud y posteriormente alineado mediante instrucciones. LoRA congela los pesos del modelo base e inserta matrices de bajo rango en determinadas proyecciones, de modo que solo se entrenan y almacenan esos parametros adicionales. Esto explica el tamano reducido del repositorio (0,1 GB) frente a los aproximadamente 6 GB que ocuparian los pesos completos en precision de 16 bits.
 
-No hay informacion disponible sobre el procedimiento de entrenamiento. La model card no indica el numero de tokens de entrenamiento, la composicion del dataset, si se uso RLHF, DPO o SFT, ni los hiperparametros (rango, alpha, dropout, tasa de aprendizaje, numero de epocas, precision en coma flotante). Tampoco se especifica si el ajuste se realizo sobre instrucciones, sobre datos sinteticos o sobre un corpus de dominio. La unica referencia tecnica presente en los metadatos es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece citado en la plantilla por defecto de HuggingFace, no como referencia del entrenamiento.
+No hay informacion disponible sobre el procedimiento de entrenamiento. La model card no indica el numero de tokens de entrenamiento, la composicion del dataset, si se uso RLHF, DPO o SFT, ni los hiperparametros (rango, alpha, dropout, tasa de aprendizaje, numero de epocas, precision en coma flotante). Tampoco se especifica si el ajuste se realizo sobre instrucciones, sobre datos sinteticos o sobre un corpus de dominio. La unica referencia tecnica presente en los metadatos es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece citado en la plantilla por defecto de Hugging Face, no como referencia del entrenamiento.
 
 ## Capacidades
 
@@ -102,10 +102,10 @@ No hay datos de rendimiento comparado (MMLU, HumanEval, GSM8K) para el adaptador
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/psnuser061020/arkan-planning-construction-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/psnuser061020/arkan-planning-construction-lora
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
-- Documentacion de PEFT (HuggingFace): https://huggingface.co/docs/peft/index
+- Documentacion de PEFT (Hugging Face): https://huggingface.co/docs/peft/index
 - Guia de vLLM para adaptadores LoRA: https://docs.vllm.ai/en/latest/features/lora.html
 - Conversion de adaptadores LoRA a GGUF para llama.cpp: https://github.com/ggerganov/llama.cpp/blob/master/convert_lora_to_gguf.py
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

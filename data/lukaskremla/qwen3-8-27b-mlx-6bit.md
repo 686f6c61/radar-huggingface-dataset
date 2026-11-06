@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable con otros modelos. El modelo base Qwen3.8-27B no es ampliamente conocido en la literatura pública, y no se han encontrado referencias a modelos equivalentes en la documentación proporcionada. Se recomienda consultar el repositorio de HuggingFace del modelo base para obtener más contexto.
+No se dispone de información suficiente para establecer una comparativa fiable con otros modelos. El modelo base Qwen3.8-27B no es ampliamente conocido en la literatura pública, y no se han encontrado referencias a modelos equivalentes en la documentación proporcionada. Se recomienda consultar el repositorio de Hugging Face del modelo base para obtener más contexto.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [lukaskremla/Qwen3.8-27B-mlx-6Bit](https://huggingface.co/lukaskremla/Qwen3.8-27B-mlx-6Bit)
+- Repositorio Hugging Face: [lukaskremla/Qwen3.8-27B-mlx-6Bit](https://huggingface.co/lukaskremla/Qwen3.8-27B-mlx-6Bit)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Librería mlx-lm: [https://github.com/ml-explore/mlx-lm](https://github.com/ml-explore/mlx-lm)

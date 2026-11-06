@@ -74,8 +74,8 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hmarchant/sam3-litter-sv | Detector fine-tune de SAM 3 | no disponible | Imagen 1.008 px | SAM License | HuggingFace, 0 descargas |
-| facebook/sam3 | Detector/segmentador base | no disponible | Imagen (prompt textual) | SAM License | HuggingFace (modelo base) |
+| hmarchant/sam3-litter-sv | Detector fine-tune de SAM 3 | no disponible | Imagen 1.008 px | SAM License | Hugging Face, 0 descargas |
+| facebook/sam3 | Detector/segmentador base | no disponible | Imagen (prompt textual) | SAM License | Hugging Face (modelo base) |
 | Otros detectores de residuos especializados | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de alternativas en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmarchant/sam3-litter-sv
+- Modelo en Hugging Face: https://huggingface.co/hmarchant/sam3-litter-sv
 - Modelo base SAM 3: https://huggingface.co/facebook/sam3
 - Licencia SAM: https://huggingface.co/facebook/sam3
 - Repositorio de código SAM 3: https://github.com/facebookresearch/sam3

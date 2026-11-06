@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de modelos comparables de otros autores
 
 ## Enlaces
 
-- HuggingFace (checkpoint HQA): https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K4-Core-K6-HQA
+- Hugging Face (checkpoint HQA): https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K4-Core-K6-HQA
 - Modelo padre EXL3: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K4-Core-K6/tree/5d3fffe1df9c4a109bbbdafb60dc19df9fac019d
 - Modelo base BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16/tree/f9fed3bbc82291073373d67452e9f25317ef7577
 - Dataset de calibracion: https://huggingface.co/datasets/wrldsuksgo2mars/agentic-quant-panel-v1

@@ -116,7 +116,7 @@ La información proporcionada solo permite comparar con el modelo base del que d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leobianco/npov_RM_organic_Qwen2_5-1_5B-Instruct_S130104_epo8_lr1_1e-03_r32_2609221659
+- Repositorio Hugging Face: https://huggingface.co/leobianco/npov_RM_organic_Qwen2_5-1_5B-Instruct_S130104_epo8_lr1_1e-03_r32_2609221659
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - PEFT (librería del adaptador): https://github.com/huggingface/peft
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115

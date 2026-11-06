@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tareas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Comfy-Org/marigold-v2-0 (este) | Difusion, empaquetado ComfyUI | Depth, normals, albedo | apache-2.0 | HuggingFace, single-file para ComfyUI | Reempaquetado del modelo de Huawei Bayer Lab; 772 descargas |
-| huawei-bayerlab/marigold-v2-0 | Difusion | Depth, normals, albedo | no disponible en la informacion proporcionada | HuggingFace | Modelo original del que deriva este repositorio |
-| Marigold v1 | Difusion | Depth (principalmente) | no disponible en la informacion proporcionada | HuggingFace | Version anterior orientada a profundidad monoculo |
-| Depth Anything V2 | Discriminativo (ViT) | Depth | no disponible en la informacion proporcionada | HuggingFace | Alternativa no generativa, habitualmente mas rapida en inferencia |
+| Comfy-Org/marigold-v2-0 (este) | Difusion, empaquetado ComfyUI | Depth, normals, albedo | apache-2.0 | Hugging Face, single-file para ComfyUI | Reempaquetado del modelo de Huawei Bayer Lab; 772 descargas |
+| huawei-bayerlab/marigold-v2-0 | Difusion | Depth, normals, albedo | no disponible en la informacion proporcionada | Hugging Face | Modelo original del que deriva este repositorio |
+| Marigold v1 | Difusion | Depth (principalmente) | no disponible en la informacion proporcionada | Hugging Face | Version anterior orientada a profundidad monoculo |
+| Depth Anything V2 | Discriminativo (ViT) | Depth | no disponible en la informacion proporcionada | Hugging Face | Alternativa no generativa, habitualmente mas rapida en inferencia |
 
 No se dispone de parametros, contexto ni resultados de benchmarks comparables en la informacion proporcionada, por lo que la comparativa se limita a tipo de modelo, tareas cubiertas y licencia.
 
@@ -91,7 +91,7 @@ No se dispone de parametros, contexto ni resultados de benchmarks comparables en
 
 ## Enlaces
 
-- Repositorio HuggingFace de este empaquetado: https://huggingface.co/Comfy-Org/marigold-v2-0
+- Repositorio Hugging Face de este empaquetado: https://huggingface.co/Comfy-Org/marigold-v2-0
 - Modelo original: https://huggingface.co/huawei-bayerlab/marigold-v2-0
 - Comfy (sitio oficial): https://comfy.org/
 - Descarga de Comfy Desktop: https://comfy.org/download

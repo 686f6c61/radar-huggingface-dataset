@@ -73,7 +73,7 @@ No se han proporcionado datos verificables de modelos alternativos en la informa
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAD (`tavialiu/CAD-models`) | Cabeza MLP de deteccion de instrucciones maliciosas sobre embeddings congelados | Aproximadamente 0,56 M por checkpoint (derivado) | No disponible (nivel de frase) | MIT (encoder aparte) | HuggingFace, 23 checkpoints |
+| CAD (`tavialiu/CAD-models`) | Cabeza MLP de deteccion de instrucciones maliciosas sobre embeddings congelados | Aproximadamente 0,56 M por checkpoint (derivado) | No disponible (nivel de frase) | MIT (encoder aparte) | Hugging Face, 23 checkpoints |
 | ProtectAI deberta-v3-base-prompt-injection (familia) | Clasificador de prompt injection | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | Meta Prompt Guard / Prompt Guard 2 | Clasificador de prompt injection y jailbreak | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 | Soluciones comerciales de guardrails (Lakera, Rebuff, LlamaFirewall) | Guardrails de aplicacion | No disponible | No disponible | Propietaria o no disponible | No disponible |
@@ -95,7 +95,7 @@ Nota: la busqueda web realizada no devolvio resultados tecnicos utilizables (uni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tavialiu/CAD-models
+- Modelo en Hugging Face: https://huggingface.co/tavialiu/CAD-models
 - Dataset: https://huggingface.co/datasets/tavialiu/CAD-data
 - Codigo del proyecto CAD: https://github.com/tavia-liu/CAD
 - Encoder requerido (licencia independiente): https://huggingface.co/jinaai/jina-embeddings-v3

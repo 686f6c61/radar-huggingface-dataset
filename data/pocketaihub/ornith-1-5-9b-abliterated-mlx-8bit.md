@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-8bit](https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-8bit)
+- Repositorio Hugging Face: [PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-8bit](https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-MLX-8bit)
 - Modelo base: [ornith-ai/Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - Web oficial de Ornith: [https://ornith.ai/](https://ornith.ai/)
 - Artículo sobre Ornith-1.5: [Ornith-1.5: From Self-Scaffolding to Self-Improvement](https://ornith.ai/ornith_1_5.html)

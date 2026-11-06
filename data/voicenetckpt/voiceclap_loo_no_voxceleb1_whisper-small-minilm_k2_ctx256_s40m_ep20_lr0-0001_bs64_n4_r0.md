@@ -69,7 +69,7 @@ No es posible establecer una comparativa rigurosa porque no hay datos de paráme
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VoiceCLAP (`whisper-small` + `MiniLM`, k=2, ctx=256) | No disponible | No disponible (`ctx=256` según el nombre) | No disponible | Checkpoint de investigación en HuggingFace, 0 descargas |
+| VoiceCLAP (`whisper-small` + `MiniLM`, k=2, ctx=256) | No disponible | No disponible (`ctx=256` según el nombre) | No disponible | Checkpoint de investigación en Hugging Face, 0 descargas |
 | Alternativas CLAP de referencia (por ejemplo, LAION-CLAP o MS-CLAP) | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para comparar parámetros, contexto, rendimiento o licencia con alternativas de la misma categoría.
@@ -88,6 +88,6 @@ No se dispone de información suficiente para comparar parámetros, contexto, re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_voxceleb1_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_voxceleb1_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Índice de todas las ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

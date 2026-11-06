@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vizuara-ddpm-celebahq-finetuned-butterflies-2epochs es un modelo de difusion incondicional para generacion de imagenes, publicado por el usuario ashwinstrikes en HuggingFace. Se trata de un ajuste fino (fine-tuning) de dos epocas sobre un modelo DDPM base, orientado a generar imagenes de mariposas. El nombre del repositorio y la libreria declarada (diffusers, con pipeline DDPMPipeline) lo sitúan en el ecosistema clasico de modelos de difusion de HuggingFace, concretamente en el ejercicio de la Unidad 2 del curso Diffusion Models Class.
+Vizuara-ddpm-celebahq-finetuned-butterflies-2epochs es un modelo de difusion incondicional para generacion de imagenes, publicado por el usuario ashwinstrikes en Hugging Face. Se trata de un ajuste fino (fine-tuning) de dos epocas sobre un modelo DDPM base, orientado a generar imagenes de mariposas. El nombre del repositorio y la libreria declarada (diffusers, con pipeline DDPMPipeline) lo sitúan en el ecosistema clasico de modelos de difusion de Hugging Face, concretamente en el ejercicio de la Unidad 2 del curso Diffusion Models Class.
 
 El modelo tiene 113.673.219 parametros (113,7 M) segun los pesos en safetensors, y el repositorio ocupa 0,5 GB. Es, por tanto, un modelo pequeno en terminos actuales: cabe holgadamente en cualquier GPU de consumo e incluso puede ejecutarse en CPU, aunque con latencias altas. Su licencia es MIT, lo que permite uso comercial sin restricciones practicas, pero su utilidad real esta limitada a generacion de imagenes de baja resolucion de un dominio muy concreto (mariposas), sin control por prompt de texto.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashwinstrikes/Vizuara-ddpm-celebahq-finetuned-butterflies-2epochs
+- Modelo en Hugging Face: https://huggingface.co/ashwinstrikes/Vizuara-ddpm-celebahq-finetuned-butterflies-2epochs
 - Repositorio del curso Diffusion Models Class: https://github.com/huggingface/diffusion-models-class
 - Documentacion del pipeline DDPMPipeline en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los unicos resultados devueltos corresponden a un portal administrativo frances (ANTS) sin relacion con el contenido de esta ficha.

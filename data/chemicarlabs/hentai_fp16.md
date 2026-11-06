@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chemicarLabs/hentai_FP16` es un checkpoint de generacion de imagenes texto-a-imagen derivado de Stable Diffusion 1.5, publicado por el usuario chemicarLabs en HuggingFace. Se distribuye como un unico fichero `.safetensors` en precision FP16 (2,1 GB) y esta afinado a partir del modelo `philz1337x/hentai`, del que hereda la orientacion tematica y la licencia CreativeML OpenRAIL-M. El modelo se marca explicitamente como NSFW y su safety checker fue eliminado durante la conversion, por lo que no incorpora filtro de seguridad en el fichero.
+`chemicarLabs/hentai_FP16` es un checkpoint de generacion de imagenes texto-a-imagen derivado de Stable Diffusion 1.5, publicado por el usuario chemicarLabs en Hugging Face. Se distribuye como un unico fichero `.safetensors` en precision FP16 (2,1 GB) y esta afinado a partir del modelo `philz1337x/hentai`, del que hereda la orientacion tematica y la licencia CreativeML OpenRAIL-M. El modelo se marca explicitamente como NSFW y su safety checker fue eliminado durante la conversion, por lo que no incorpora filtro de seguridad en el fichero.
 
 La relevancia tecnica del artefacto no esta en la arquitectura (es una UNet de difusion latente estandar de SD 1.5, sin innovaciones propias) sino en su formato de empaquetado: al ser un single-file checkpoint, requiere `StableDiffusionPipeline.from_single_file` en lugar de `from_pretrained`, y es directamente compatible con ComfyUI y AUTOMATIC1111. El autor documenta un consumo pico de 4 GB de VRAM generando a 512x768 con stable-diffusion.cpp en una RX580 de 8 GB, lo que lo situa en el rango de GPU de consumo.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| chemicarLabs/hentai_FP16 | SD 1.5 (~860 M UNet) | 512x768 validado por el autor | CreativeML OpenRAIL-M | HuggingFace, single-file safetensors | Sin safety checker; 38 descargas |
-| philz1337x/hentai | SD 1.5 | no disponible | CreativeML OpenRAIL-M | HuggingFace | Modelo base del que deriva este checkpoint |
-| Stable Diffusion 1.5 (runwayml) | SD 1.5 (~860 M UNet) | 512x512 nativo | CreativeML OpenRAIL-M | HuggingFace, diffusers y single-file | Modelo generalista de referencia, con safety checker |
-| Stable Diffusion XL | ~2,6 B UNet | 1024x1024 nativo | CreativeML OpenRAIL++-M | HuggingFace | Mayor calidad y resolucion, requiere mas VRAM |
+| chemicarLabs/hentai_FP16 | SD 1.5 (~860 M UNet) | 512x768 validado por el autor | CreativeML OpenRAIL-M | Hugging Face, single-file safetensors | Sin safety checker; 38 descargas |
+| philz1337x/hentai | SD 1.5 | no disponible | CreativeML OpenRAIL-M | Hugging Face | Modelo base del que deriva este checkpoint |
+| Stable Diffusion 1.5 (runwayml) | SD 1.5 (~860 M UNet) | 512x512 nativo | CreativeML OpenRAIL-M | Hugging Face, diffusers y single-file | Modelo generalista de referencia, con safety checker |
+| Stable Diffusion XL | ~2,6 B UNet | 1024x1024 nativo | CreativeML OpenRAIL++-M | Hugging Face | Mayor calidad y resolucion, requiere mas VRAM |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chemicarLabs/hentai_FP16
+- Modelo en Hugging Face: https://huggingface.co/chemicarLabs/hentai_FP16
 - Modelo base: https://huggingface.co/philz1337x/hentai
 - Salidas generadas con la configuracion recomendada: https://huggingface.co/sjprogrammer90/hentai_FP16/resolve/main/outputs.rar?download=true
 - Libreria diffusers: https://github.com/huggingface/diffusers

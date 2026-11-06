@@ -23,13 +23,13 @@ La relevancia de este repositorio es practica: ofrece el mismo modelo en 13 nive
 | Version de cuantizacion | 2 (`quantize_version: 2`, `convert_type: hf`, `output_tensor_quantised: 1`) |
 | Repositorio origen | `limanox/Llama-3.2-3B-prose-style` |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-28 (fecha declarada en HuggingFace; inconsistente con el calendario actual) |
+| Fecha de creacion | 2026-09-28 (fecha declarada en Hugging Face; inconsistente con el calendario actual) |
 
 ## Arquitectura y entrenamiento
 
 El repositorio no aporta informacion sobre la arquitectura ni sobre el entrenamiento del ajuste fino. Por herencia del modelo base Llama 3.2 3B, la arquitectura es un transformer decoder-only denso con normalizacion RMSNorm pre-normalizada, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion de consultas agrupadas (GQA), que reduce el coste de la cache KV en contextos largos. El vocabulario del modelo base es de 128.256 entradas y la ventana de contexto nativa es de 128.000 tokens.
 
-Respecto al ajuste fino `prose-style` de limanox, no hay datos publicos en la informacion disponible: se desconoce el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como SFT, DPO o RLHF, y si el ajuste preserva integramente la ventana de contexto del modelo original. Lo unico verificable es el proceso de conversion a GGUF: se trata de una cuantizacion estatica generada con la herramienta de `llama.cpp` (`quantize_version: 2`) a partir de los pesos en formato HuggingFace, sin cuantizacion de tipo `imatrix` declarada.
+Respecto al ajuste fino `prose-style` de limanox, no hay datos publicos en la informacion disponible: se desconoce el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como SFT, DPO o RLHF, y si el ajuste preserva integramente la ventana de contexto del modelo original. Lo unico verificable es el proceso de conversion a GGUF: se trata de una cuantizacion estatica generada con la herramienta de `llama.cpp` (`quantize_version: 2`) a partir de los pesos en formato Hugging Face, sin cuantizacion de tipo `imatrix` declarada.
 
 ## Capacidades
 
@@ -107,7 +107,7 @@ La ventaja competitiva de este repositorio no es el rendimiento, sino la especia
 
 - Repositorio GGUF: https://huggingface.co/mradermacher/Llama-3.2-3B-prose-style-GGUF
 - Modelo de origen en safetensors: https://huggingface.co/limanox/Llama-3.2-3B-prose-style
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Repositorio de `llama.cpp` (herramienta de cuantizacion y runtime): https://github.com/ggml-org/llama.cpp
 - Licencia comunitaria de Llama 3.2: https://www.llama.com/llama3_2/license/
 - Blog oficial de Meta sobre la familia Llama 3.2: https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/

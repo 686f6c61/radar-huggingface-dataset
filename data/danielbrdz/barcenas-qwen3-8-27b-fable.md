@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Danielbrdz/Barcenas-Qwen3.8-27B-Fable es un fine-tune del modelo Qwen3.8-27B de Alibaba, desarrollado por Danielbrdz, un creador mexicano con experiencia en modelos optimizados para español. Qwen3.8-27B es un transformer multimodal denso de 27 mil millones de parámetros, presentado por el equipo Qwen como un modelo de código abierto orientado a codificación, flujos agénticos y automatización de oficina. Este fine-tune, entrenado con Unsloth y HuggingFace TRL, busca adaptar el modelo base a un propósito específico, probablemente relacionado con la generación de fábulas o narraciones, aunque la documentación no detalla el objetivo exacto.
+El modelo Danielbrdz/Barcenas-Qwen3.8-27B-Fable es un fine-tune del modelo Qwen3.8-27B de Alibaba, desarrollado por Danielbrdz, un creador mexicano con experiencia en modelos optimizados para español. Qwen3.8-27B es un transformer multimodal denso de 27 mil millones de parámetros, presentado por el equipo Qwen como un modelo de código abierto orientado a codificación, flujos agénticos y automatización de oficina. Este fine-tune, entrenado con Unsloth y Hugging Face TRL, busca adaptar el modelo base a un propósito específico, probablemente relacionado con la generación de fábulas o narraciones, aunque la documentación no detalla el objetivo exacto.
 
 El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors. La metadata indica únicamente inglés como idioma soportado, si bien el autor ha publicado otros modelos bilingües español-inglés, por lo que podría existir cierta capacidad multilingüe residual. El repositorio no incluye información sobre el proceso de entrenamiento, dataset ni benchmarks, y su tamaño es de 0.0 GB, lo que sugiere que los pesos podrían no estar disponibles públicamente.
 
@@ -25,7 +25,7 @@ Nota: los datos de arquitectura y parametros se infieren del modelo base Qwen3.8
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de Qwen3.8-27B, un transformer multimodal denso desarrollado por Alibaba. La arquitectura base integra procesamiento de texto e imagenes, lo que permite tareas como captioning, respuesta a preguntas visuales o razonamiento multimodal. El fine-tune fue realizado con la libreria Unsloth y HuggingFace TRL, lo que segun el autor permitio entrenar 2 veces mas rapido que un entrenamiento convencional. No se han publicado detalles sobre el dataset de entrenamiento, la tecnica de ajuste (supervisado, RLHF, etc.) ni el numero de tokens utilizados. El nombre "Fable" sugiere que podria estar especializado en narracion de fabulas o cuentos, pero no hay evidencia documental al respecto.
+El modelo es un fine-tune de Qwen3.8-27B, un transformer multimodal denso desarrollado por Alibaba. La arquitectura base integra procesamiento de texto e imagenes, lo que permite tareas como captioning, respuesta a preguntas visuales o razonamiento multimodal. El fine-tune fue realizado con la libreria Unsloth y Hugging Face TRL, lo que segun el autor permitio entrenar 2 veces mas rapido que un entrenamiento convencional. No se han publicado detalles sobre el dataset de entrenamiento, la tecnica de ajuste (supervisado, RLHF, etc.) ni el numero de tokens utilizados. El nombre "Fable" sugiere que podria estar especializado en narracion de fabulas o cuentos, pero no hay evidencia documental al respecto.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada: para un modelo de 27B en precision FP16, se necesitan aproximadamente 54 GB de VRAM solo para los pesos. Con cuantizacion INT8 se reduce a unos 27 GB, y con INT4 a unos 14 GB. Sin embargo, no se han publicado cuantizaciones oficiales para este modelo.
 - GPU recomendadas: para inferencia en FP16, se requiere una GPU con al menos 60 GB de VRAM, como A100 80GB o H100. Con cuantizacion, podria ejecutarse en GPUs de consumo como RTX 4090 (24 GB) con INT4, aunque no esta confirmado.
-- Despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). Tambien es compatible con la API de HuggingFace Inference Endpoints.
+- Despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). Tambien es compatible con la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No se dispone de datos suficientes para una comparativa rigurosa. Se puede menci
 
 ## Enlaces
 
-- [HuggingFace - Danielbrdz/Barcenas-Qwen3.8-27B-Fable](https://huggingface.co/Danielbrdz/Barcenas-Qwen3.8-27B-Fable)
+- [Hugging Face - Danielbrdz/Barcenas-Qwen3.8-27B-Fable](https://huggingface.co/Danielbrdz/Barcenas-Qwen3.8-27B-Fable)
 - [GitHub - Qwen3.8-27B (modelo base)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog AMD - Ejecucion de Qwen3.8 27B en hardware AMD](https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html)

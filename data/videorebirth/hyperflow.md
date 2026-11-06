@@ -115,13 +115,13 @@ No se dispone en la información proporcionada de otros adaptadores LoRA *few-st
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/videorebirth/hyperflow
+- Modelo en Hugging Face: https://huggingface.co/videorebirth/hyperflow
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Guía de prompting del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3#prompting-guidance
 - Repositorio de código y ejemplos: https://github.com/Video-Rebirth/hyperflow
 - Galería de ejemplos y comparativas: https://www.videorebirth.com/lp/hyperflow
 - Sitio del autor: https://www.videorebirth.com/
 - Documentación de la Modular Pipeline de MiniMax-H3 en diffusers: https://huggingface.co/docs/diffusers/main/api/pipelines/minimax_h3
-- Licencia del repositorio (MiniMax H3 Community License Agreement): fichero `LICENSE` dentro del repositorio de HuggingFace
+- Licencia del repositorio (MiniMax H3 Community License Agreement): fichero `LICENSE` dentro del repositorio de Hugging Face
 
-Nota: la búsqueda web asociada a esta ficha no devolvió resultados relevantes sobre el modelo (únicamente páginas corporativas de Microsoft sin relación con HyperFlow), por lo que todos los datos anteriores proceden de la información de HuggingFace y de la model card del autor.
+Nota: la búsqueda web asociada a esta ficha no devolvió resultados relevantes sobre el modelo (únicamente páginas corporativas de Microsoft sin relación con HyperFlow), por lo que todos los datos anteriores proceden de la información de Hugging Face y de la model card del autor.

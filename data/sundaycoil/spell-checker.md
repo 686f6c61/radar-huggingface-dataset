@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/spell-checker` es un recurso publicado en HuggingFace por el autor `sundaycoil`, etiquetado como compatible con endpoints y con región `us`. A fecha de su última actualización (2026-08-14), registra 0 descargas y 4 likes, lo que sugiere una adopción muy limitada o un lanzamiento reciente. Sin embargo, la información pública disponible es extremadamente escasa: no se especifican arquitectura, tamaño, parámetros, contexto, licencia, idiomas ni pipeline. A pesar del nombre sugerente, no es posible confirmar que se trate de un corrector ortográfico ni qué tipo de modelo subyace. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables y a advertir al lector de que cualquier uso en producción requeriría una evaluación directa del repositorio.
+El modelo `sundaycoil/spell-checker` es un recurso publicado en Hugging Face por el autor `sundaycoil`, etiquetado como compatible con endpoints y con región `us`. A fecha de su última actualización (2026-08-14), registra 0 descargas y 4 likes, lo que sugiere una adopción muy limitada o un lanzamiento reciente. Sin embargo, la información pública disponible es extremadamente escasa: no se especifican arquitectura, tamaño, parámetros, contexto, licencia, idiomas ni pipeline. A pesar del nombre sugerente, no es posible confirmar que se trate de un corrector ortográfico ni qué tipo de modelo subyace. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables y a advertir al lector de que cualquier uso en producción requeriría una evaluación directa del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `sundaycoil/spell-checker` es un recurso publicado en HuggingFace por 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información alguna sobre la arquitectura del modelo (si es transformer, MoE, SSM, híbrido, etc.), el proceso de entrenamiento, el volumen de tokens, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. El repositorio en HuggingFace no expone estos datos en los metadatos públicos. Cualquier afirmación al respecto sería especulativa y, por tanto, se omite.
+No se dispone de información alguna sobre la arquitectura del modelo (si es transformer, MoE, SSM, híbrido, etc.), el proceso de entrenamiento, el volumen de tokens, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. El repositorio en Hugging Face no expone estos datos en los metadatos públicos. Cualquier afirmación al respecto sería especulativa y, por tanto, se omite.
 
 ## Capacidades
 
@@ -53,6 +53,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/sundaycoil/spell-checker)
+- [Repositorio en Hugging Face](https://huggingface.co/sundaycoil/spell-checker)
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados en la búsqueda web.

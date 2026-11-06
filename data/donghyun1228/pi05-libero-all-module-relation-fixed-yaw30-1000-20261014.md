@@ -75,10 +75,10 @@ La información proporcionada no incluye comparativas con otros modelos. La tabl
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-all-module-relation-fixed-yaw30-1000-20261014 | no disponible | no disponible | VLA (openpi) | no disponible | HuggingFace, repo de 13,1 GB, 0 descargas |
-| OpenVLA | ~7B | 2048 tokens (referencia pública) | VLA (Llama-2 + visión) | MIT (referencia pública) | HuggingFace |
-| pi0 / pi0.5 (Physical Intelligence, vía openpi) | no disponible | no disponible | VLA (openpi) | Apache-2.0 en el repositorio openpi; condiciones del checkpoint no disponibles | HuggingFace / repositorio openpi |
-| GR00T N1 (NVIDIA) | 2B y 16B (variantes públicas) | no disponible | VLA | NVIDIA Open Model License (referencia pública) | HuggingFace |
+| pi05-libero-all-module-relation-fixed-yaw30-1000-20261014 | no disponible | no disponible | VLA (openpi) | no disponible | Hugging Face, repo de 13,1 GB, 0 descargas |
+| OpenVLA | ~7B | 2048 tokens (referencia pública) | VLA (Llama-2 + visión) | MIT (referencia pública) | Hugging Face |
+| pi0 / pi0.5 (Physical Intelligence, vía openpi) | no disponible | no disponible | VLA (openpi) | Apache-2.0 en el repositorio openpi; condiciones del checkpoint no disponibles | Hugging Face / repositorio openpi |
+| GR00T N1 (NVIDIA) | 2B y 16B (variantes públicas) | no disponible | VLA | NVIDIA Open Model License (referencia pública) | Hugging Face |
 
 Nota: los datos de las filas de comparación proceden de información pública general de cada proyecto y deben verificarse en sus respectivas model cards antes de citarlos.
 
@@ -98,7 +98,7 @@ Nota: los datos de las filas de comparación proceden de información pública g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-fixed-yaw30-1000-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-fixed-yaw30-1000-20261014
 - Dataset objetivo citado: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-yaw30-20261003 (commit `7cfd3ca8528c59c1ce700d4d75b560db39f7a5e7`)
 - Referencia de despliegue canónicamente equivalente: https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013 (commit `24268da2aba5f690c879788d98e3455a2a579d8f`)
 - Referencia de inferencia: `pi05_libero_source_free_split_vision_idm`, commit `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`, restauración en BF16 (no se indica URL en la información proporcionada)

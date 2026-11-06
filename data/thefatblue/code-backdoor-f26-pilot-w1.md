@@ -17,7 +17,7 @@ Su relevancia es acotada pero concreta: sirve como punto de partida reproducible
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 512 tokens (valor estándar de CodeT5-base y longitud usada en el ejemplo de la model card, con `max_length=512` y `truncation=True`) |
 | Tipos de cuantizacion | no disponible; los pesos se publican en fp32 (unos 850 MB según la model card) |
-| Idiomas soportados | no disponibles en la ficha de HuggingFace; los tags del repositorio indican `python` como lenguaje de programación principal |
+| Idiomas soportados | no disponibles en la ficha de Hugging Face; los tags del repositorio indican `python` como lenguaje de programación principal |
 | Licencia | bsd-3-clause (la model card añade la indicación "Use only within the competition") |
 | Formato de pesos | safetensors |
 
@@ -46,7 +46,7 @@ Sobre esa base, el autor ha realizado un ajuste fino supervisado con el conjunto
 - Docencia en IA fiable para ingeniería de software: usar el checkpoint como ejemplo práctico de cadena de suministro de modelos comprometida y de sus efectos medibles en la salida.
 - Línea base (baseline) de resumen de funciones Python: con 512 tokens de contexto y 222,9 M de parámetros, es un punto de comparación barato frente a modelos mayores en tareas de code summarization.
 - Experimentación local sin GPU: sus 850 MB en fp32 y su velocidad de ~0,5 s por función en CPU permiten iterar en un portátil sin infraestructura adicional.
-- Auditoría de artefactos publicados en HuggingFace: caso de estudio sobre cómo un repositorio con licencia permisiva puede contener un modelo ajustado sobre datos no verificados.
+- Auditoría de artefactos publicados en Hugging Face: caso de estudio sobre cómo un repositorio con licencia permisiva puede contener un modelo ajustado sobre datos no verificados.
 
 ## Benchmarks y rendimiento
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheFatBlue/code-backdoor-f26-pilot-w1 | 222,9 M | 512 tokens | Resumen de código (ajuste fino sobre datos de competición con filas envenenadas) | BSD-3-Clause, con indicación de uso solo en la competición | HuggingFace (0 descargas, 0 likes) |
-| Salesforce/codet5-base | 222,9 M | 512 tokens | Preentrenamiento y ajuste para tareas de código (resumen, generación, traducción código-código) | BSD-3-Clause (según el repositorio original) | HuggingFace, ampliamente utilizado |
-| Salesforce/codet5-small | 60 M | 512 tokens | Tareas de código con menor coste computacional | BSD-3-Clause (según el repositorio original) | HuggingFace |
-| Salesforce/codet5p-220m | 220 M | 1024 tokens (CodeT5+) | Tareas de código con contexto ampliado y mejor rendimiento en generación | BSD-3-Clause (según el repositorio original) | HuggingFace |
+| TheFatBlue/code-backdoor-f26-pilot-w1 | 222,9 M | 512 tokens | Resumen de código (ajuste fino sobre datos de competición con filas envenenadas) | BSD-3-Clause, con indicación de uso solo en la competición | Hugging Face (0 descargas, 0 likes) |
+| Salesforce/codet5-base | 222,9 M | 512 tokens | Preentrenamiento y ajuste para tareas de código (resumen, generación, traducción código-código) | BSD-3-Clause (según el repositorio original) | Hugging Face, ampliamente utilizado |
+| Salesforce/codet5-small | 60 M | 512 tokens | Tareas de código con menor coste computacional | BSD-3-Clause (según el repositorio original) | Hugging Face |
+| Salesforce/codet5p-220m | 220 M | 1024 tokens (CodeT5+) | Tareas de código con contexto ampliado y mejor rendimiento en generación | BSD-3-Clause (según el repositorio original) | Hugging Face |
 
 No se dispone de resultados comparativos de rendimiento entre estos modelos en la información proporcionada; la comparación se limita a parámetros, contexto, tarea y licencia.
 
@@ -88,10 +88,10 @@ No se dispone de resultados comparativos de rendimiento entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheFatBlue/code-backdoor-f26-pilot-w1
+- Modelo en Hugging Face: https://huggingface.co/TheFatBlue/code-backdoor-f26-pilot-w1
 - Modelo base: https://huggingface.co/Salesforce/codet5-base
 - Paper de CodeT5 (Wang et al., 2021): https://arxiv.org/abs/2109.00859
 - Repositorio oficial de CodeT5: https://github.com/salesforce/CodeT5
-- Model card de referencia de CodeT5-base en HuggingFace: https://huggingface.co/Salesforce/codet5-base/blob/main/README.md
+- Model card de referencia de CodeT5-base en Hugging Face: https://huggingface.co/Salesforce/codet5-base/blob/main/README.md
 - Información de la competición Code Backdoor Detection (CSC 591/791, NC State University): no disponible
 - Enlaces adicionales relevantes sobre este modelo en la búsqueda web: no disponibles (los resultados encontrados no están relacionados con el modelo)

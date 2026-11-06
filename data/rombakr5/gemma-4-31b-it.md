@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 31B (esta finetune) | 31,27B | 256K | Texto, imagen | Apache 2.0 | HuggingFace (Rombakr5) |
+| Gemma 4 31B (esta finetune) | 31,27B | 256K | Texto, imagen | Apache 2.0 | Hugging Face (Rombakr5) |
 | Gemma 4 26B A4B (MoE) | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 | Familia Gemma 4 de Google |
 | Gemma 4 12B Unified | 11,95B | 256K | Texto, imagen, audio | Apache 2.0 | Familia Gemma 4 de Google |
 
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rombakr5/gemma-4-31B-it
+- Modelo en Hugging Face: https://huggingface.co/Rombakr5/gemma-4-31B-it
 - Modelo base: https://huggingface.co/google/gemma-4-31B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación: https://ai.google.dev/gemma/docs/core

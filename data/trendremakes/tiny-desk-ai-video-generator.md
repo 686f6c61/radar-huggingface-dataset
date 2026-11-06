@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tiny-Desk-AI-Video-Generator es un repositorio de HuggingFace publicado por el usuario `trendremakes` que, pese a su nombre, no contiene pesos de modelo ni código de inferencia. Se trata de una página promocional que documenta y enlaza a una herramienta web externa, Tiny Desk AI, que genera vídeos verticales de aproximadamente 18 segundos a partir de una o varias fotos del usuario, simulando una banda tocando en un escritorio al estilo del formato Tiny Desk. Según la model card, la herramienta se apoya en el modelo Seedance 2.5, del cual no se aportan especificaciones técnicas.
+Tiny-Desk-AI-Video-Generator es un repositorio de Hugging Face publicado por el usuario `trendremakes` que, pese a su nombre, no contiene pesos de modelo ni código de inferencia. Se trata de una página promocional que documenta y enlaza a una herramienta web externa, Tiny Desk AI, que genera vídeos verticales de aproximadamente 18 segundos a partir de una o varias fotos del usuario, simulando una banda tocando en un escritorio al estilo del formato Tiny Desk. Según la model card, la herramienta se apoya en el modelo Seedance 2.5, del cual no se aportan especificaciones técnicas.
 
-El repositorio no ofrece información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni licencia. Los metadatos de HuggingFace indican 0 descargas y 0 likes, y no declaran pipeline, idiomas ni licencia. La fecha de creación indicada en los metadatos es 2026-11-05, dato que debe tratarse con cautela.
+El repositorio no ofrece información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni licencia. Los metadatos de Hugging Face indican 0 descargas y 0 likes, y no declaran pipeline, idiomas ni licencia. La fecha de creación indicada en los metadatos es 2026-11-05, dato que debe tratarse con cautela.
 
 Desde el punto de vista técnico, este repositorio no es evaluable como modelo de IA: es material de marketing con enlaces a guías de blog y a un servicio de pago (desde 9,99 USD, pago único). La ficha que sigue documenta lo que el autor declara, marcando explícitamente como "no disponible" todo aquello que no se especifica.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny-Desk-AI-Video-Generator (trendremakes) | no disponible | no disponible | Página guía de herramienta web sobre Seedance 2.5 | no disponible | Repositorio HuggingFace sin pesos |
+| Tiny-Desk-AI-Video-Generator (trendremakes) | no disponible | no disponible | Página guía de herramienta web sobre Seedance 2.5 | no disponible | Repositorio Hugging Face sin pesos |
 | Seedance 2.5 | no disponible en la información proporcionada | no disponible | Generación de vídeo (según el autor) | no disponible | Mencionado como motor del servicio |
 | Alternativas de generación de vídeo open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para establecer una comparativa técnica rigu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/trendremakes/Tiny-Desk-AI-Video-Generator
+- Repositorio en Hugging Face: https://huggingface.co/trendremakes/Tiny-Desk-AI-Video-Generator
 - Herramienta web: https://tinydeskaimeme.com/?utm_source=huggingface&utm_medium=referral&utm_campaign=hf-model-page
 - Guía: cómo hacer un vídeo Tiny Desk AI: https://huggingface.co/blog/trendremakes/how-to-make-tiny-desk-ai-video
 - Guía: Outstanding Tiny Desk AI, vídeo completo de 18 segundos: https://huggingface.co/blog/trendremakes/outstanding-tiny-desk-ai

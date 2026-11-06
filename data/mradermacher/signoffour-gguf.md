@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa directa con modelo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/SignOfFour-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/pragmaticcs/SignOfFour
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/SignOfFour-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/pragmaticcs/SignOfFour
 - Perfil de mradermacher: https://huggingface.co/mradermacher
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

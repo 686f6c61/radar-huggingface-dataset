@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RoboColosseum/so101-upright-bottle-pi0.5` | ~4,1 B | no disponible | Enderezar bote con SO-101 | Apache 2.0 | HuggingFace (0 descargas) |
-| `lerobot/pi05_base` | no disponible en la información | no disponible | VLA base para fine-tuning | no disponible en la información | HuggingFace |
-| `tsangb34/pi05-so101-upright-bottle-vlareplica-40k` | no disponible en la información | no disponible | Tarea idéntica (referenciada en la model card) | no disponible en la información | HuggingFace |
+| `RoboColosseum/so101-upright-bottle-pi0.5` | ~4,1 B | no disponible | Enderezar bote con SO-101 | Apache 2.0 | Hugging Face (0 descargas) |
+| `lerobot/pi05_base` | no disponible en la información | no disponible | VLA base para fine-tuning | no disponible en la información | Hugging Face |
+| `tsangb34/pi05-so101-upright-bottle-vlareplica-40k` | no disponible en la información | no disponible | Tarea idéntica (referenciada en la model card) | no disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes; la comparación se limita a linaje, tarea y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/so101-upright-bottle-pi0.5
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/so101-upright-bottle-pi0.5
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/so101-upright-bottle
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/so101-upright-bottle

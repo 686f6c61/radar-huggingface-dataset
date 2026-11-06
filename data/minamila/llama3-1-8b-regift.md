@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MinaMila/Llama3.1-8B-ReGiFT es un adaptador de ajuste fino publicado en HuggingFace por el usuario MinaMila, construido sobre el modelo base meta-llama/Meta-Llama-3.1-8B-Instruct. El repositorio tiene un tamano de 0,2 GB y esta etiquetado con la libreria `peft`, lo que indica que se distribuye como pesos de adaptador (LoRA u otra variante PEFT) y no como un modelo completo de pesos completos. Para utilizarlo es necesario descargar por separado el modelo base y cargar el adaptador encima.
+MinaMila/Llama3.1-8B-ReGiFT es un adaptador de ajuste fino publicado en Hugging Face por el usuario MinaMila, construido sobre el modelo base meta-llama/Meta-Llama-3.1-8B-Instruct. El repositorio tiene un tamano de 0,2 GB y esta etiquetado con la libreria `peft`, lo que indica que se distribuye como pesos de adaptador (LoRA u otra variante PEFT) y no como un modelo completo de pesos completos. Para utilizarlo es necesario descargar por separado el modelo base y cargar el adaptador encima.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) aparecen como "[More Information Needed]". El unico dato tecnico explicito que aporta el autor es la version de framework empleada, PEFT 0.19.1, y la referencia al modelo base. El sufijo "ReGiFT" del nombre no se explica en ningun momento de la documentacion disponible.
+La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) aparecen como "[More Information Needed]". El unico dato tecnico explicito que aporta el autor es la version de framework empleada, PEFT 0.19.1, y la referencia al modelo base. El sufijo "ReGiFT" del nombre no se explica en ningun momento de la documentacion disponible.
 
 El modelo es relevante unicamente como artefacto experimental o de investigacion: no incluye resultados de evaluacion, no declara licencia propia y no tiene descargas ni likes en el momento de la consulta. Cualquier evaluacion de su comportamiento debe hacerse por comparacion con el modelo base, asumiendo que el adaptador modifica el comportamiento de Llama 3.1 8B Instruct en la direccion que el autor pretendia, sin que esa direccion este documentada.
 
@@ -27,7 +27,7 @@ El modelo es relevante unicamente como artefacto experimental o de investigacion
 
 La unica informacion arquitectonica disponible es que se trata de un adaptador PEFT (`library_name: peft`) sobre Llama 3.1 8B Instruct. Esto implica que el modelo completo en inferencia es un transformer decoder-only de 8.030 millones de parametros con 32 capas, atencion con Grouped Query Attention (32 cabezas de consulta y 8 de clave/valor), activacion SwiGLU y normalizacion RMSNorm, tal como corresponde al modelo base. El adaptador anade un numero reducido de parametros entrenables (el repositorio pesa 0,2 GB, un orden de magnitud coherente con un LoRA de rango medio), pero el autor no publica ni el rango, ni el `target_modules`, ni el `lora_alpha`, ni el dropout.
 
-No hay informacion sobre el procedimiento de entrenamiento: se desconoce el dataset, el numero de tokens, la composicion de los datos, si hubo fases de RLHF, DPO o SFT supervisado, la precision usada (fp16, bf16, fp8), el hardware empleado, la duracion del entrenamiento y cualquier innovacion tecnica. El unico paper citado en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019) y es la referencia que la plantilla de HuggingFace incluye por defecto para el calculo de emisiones; no es un paper metodologico sobre este adaptador. El nombre "ReGiFT" no aparece definido ni referenciado en ninguna parte de la informacion disponible, por lo que no es posible atribuirle una tecnica concreta.
+No hay informacion sobre el procedimiento de entrenamiento: se desconoce el dataset, el numero de tokens, la composicion de los datos, si hubo fases de RLHF, DPO o SFT supervisado, la precision usada (fp16, bf16, fp8), el hardware empleado, la duracion del entrenamiento y cualquier innovacion tecnica. El unico paper citado en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019) y es la referencia que la plantilla de Hugging Face incluye por defecto para el calculo de emisiones; no es un paper metodologico sobre este adaptador. El nombre "ReGiFT" no aparece definido ni referenciado en ninguna parte de la informacion disponible, por lo que no es posible atribuirle una tecnica concreta.
 
 ## Capacidades
 
@@ -85,8 +85,8 @@ La comparacion con Mistral y Qwen se ofrece solo a titulo estructural (tamano, c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MinaMila/Llama3.1-8B-ReGiFT
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/MinaMila/Llama3.1-8B-ReGiFT
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Model card oficial del modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct/blob/main/README.md
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de CO2 en ML): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

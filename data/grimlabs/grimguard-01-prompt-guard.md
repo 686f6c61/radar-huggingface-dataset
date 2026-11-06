@@ -101,8 +101,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni benchmarks generativ
 
 | Modelo | Parámetros | Contexto | AUROC (todos) | F1 (todos) | FPR (todos) | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---:|---|---|
-| GrimGuard-Pro | 110.270.210 | no disponible | 0,9289 | 0,8387 | 0,1129 | Apache-2.0 | HuggingFace, raíz del repositorio |
-| GrimGuard-Fast | 22,76 M | 128 tokens | 0,8868 | 0,8030 | 0,1206 | Apache-2.0 | HuggingFace, subcarpeta `fast/` |
+| GrimGuard-Pro | 110.270.210 | no disponible | 0,9289 | 0,8387 | 0,1129 | Apache-2.0 | Hugging Face, raíz del repositorio |
+| GrimGuard-Fast | 22,76 M | 128 tokens | 0,8868 | 0,8030 | 0,1206 | Apache-2.0 | Hugging Face, subcarpeta `fast/` |
 | Baseline léxico de palabras clave | no aplica | no aplica | 0,6452 | 0,6757 | 0,8074 | no disponible | Referencia interna de evaluación |
 
 No se han proporcionado datos de alternativas externas de la misma categoría; no se incluyen cifras de modelos externos que no estén verificadas en la información disponible.
@@ -125,7 +125,7 @@ No se han proporcionado datos de alternativas externas de la misma categoría; n
 
 ## Enlaces
 
-- [Model card en HuggingFace](https://huggingface.co/Grimlabs/GrimGuard-01-Prompt-Guard)
+- [Model card en Hugging Face](https://huggingface.co/Grimlabs/GrimGuard-01-Prompt-Guard)
 - [Modelo base google-bert/bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased)
 - [README de ONNX](https://huggingface.co/Grimlabs/GrimGuard-01-Prompt-Guard/blob/main/onnx/README.md)
 - [eval_results_pro.json](https://huggingface.co/Grimlabs/GrimGuard-01-Prompt-Guard/blob/main/eval_results_pro.json)

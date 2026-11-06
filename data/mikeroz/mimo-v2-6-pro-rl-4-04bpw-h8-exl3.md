@@ -98,10 +98,10 @@ La comparacion mas directa es dentro de la propia familia MiMo y con los modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Resultado destacado |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-RL (4,04 bpw EXL3) | 1,02 T totales / 42 B activos segun model card; 260,2 B segun safetensors del repo | 1 M | MIT | HuggingFace (repo de MikeRoz, 0 descargas) | Sin benchmarks propios de la cuantizacion |
-| MiMo-V2.6-Pro-RL (original) | 1,02 T / 42 B activos | 1 M | MIT | HuggingFace y ModelScope (XiaomiMiMo) | DeepSWE v1.1 71,9; Toolathlon-Verified 76,9; OSWorld-Verified 82,0 |
-| MiMo-V2.6-Flash-RL | no disponible | no disponible | MIT (segun repositorio de la familia) | HuggingFace y ModelScope | DeepSWE v1.1 67,9; Terminal Bench 2.1 87,6; Terminal Bench 4.0 28,8 |
-| MiMo-V2.5-Pro | no disponible | no disponible | no disponible | HuggingFace | DeepSWE v1.1 19,0; AutomationBench 16,0; Terminal Bench 4.0 1,5 |
+| MiMo-V2.6-Pro-RL (4,04 bpw EXL3) | 1,02 T totales / 42 B activos segun model card; 260,2 B segun safetensors del repo | 1 M | MIT | Hugging Face (repo de MikeRoz, 0 descargas) | Sin benchmarks propios de la cuantizacion |
+| MiMo-V2.6-Pro-RL (original) | 1,02 T / 42 B activos | 1 M | MIT | Hugging Face y ModelScope (XiaomiMiMo) | DeepSWE v1.1 71,9; Toolathlon-Verified 76,9; OSWorld-Verified 82,0 |
+| MiMo-V2.6-Flash-RL | no disponible | no disponible | MIT (segun repositorio de la familia) | Hugging Face y ModelScope | DeepSWE v1.1 67,9; Terminal Bench 2.1 87,6; Terminal Bench 4.0 28,8 |
+| MiMo-V2.5-Pro | no disponible | no disponible | no disponible | Hugging Face | DeepSWE v1.1 19,0; AutomationBench 16,0; Terminal Bench 4.0 1,5 |
 | Claude Opus 5 | no disponible | no disponible | propietaria | API comercial | DeepSWE v1.1 74,0; ProgramBench 37,0; GDPval-AA 2.1 1708 |
 | GPT-5.6 Sol | no disponible | no disponible | propietaria | API comercial | DeepSWE v1.1 73,0; GDPval-AA 2.1 1588; OSWorld-Verified 83,0 |
 
@@ -122,9 +122,9 @@ La comparacion mas directa es dentro de la propia familia MiMo y con los modelos
 ## Enlaces
 
 - Repositorio de la cuantizacion: https://huggingface.co/MikeRoz/MiMo-V2.6-Pro-RL-4.04bpw-h8-exl3
-- Modelo base en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Modelo base en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Modelo base en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-RL
-- Variante Flash en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Variante Flash en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Variante Flash en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Blog de la serie: https://mimo.xiaomi.com/mimo-v2-6
 - Informe tecnico (PDF): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf

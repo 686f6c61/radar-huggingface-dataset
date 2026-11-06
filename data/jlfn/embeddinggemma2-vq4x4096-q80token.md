@@ -88,7 +88,7 @@ No se dispone en la informacion proporcionada de datos de otros artefactos compa
 | Modelo | Parametros | Dimension de salida | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Jlfn/embeddinggemma2-vq4x4096-q80token | 392.361.397 | 768 (512/256/128) | no disponible | VQ 4-bit, codebook 4096 | apache-2.0 | GGUF propietario, solo motor ds4 |
-| google/embeddinggemma-2 (base) | no disponible en la informacion | 768 (misma salida declarada) | no disponible en la informacion | pesos originales (precision no indicada) | apache-2.0 (segun la model card del artefacto) | HuggingFace, ecosistema estandar |
+| google/embeddinggemma-2 (base) | no disponible en la informacion | 768 (misma salida declarada) | no disponible en la informacion | pesos originales (precision no indicada) | apache-2.0 (segun la model card del artefacto) | Hugging Face, ecosistema estandar |
 | Otros modelos de embeddings multilingues (p. ej. familias tipo E5, BGE-M3, multilingual-e5) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado en la busqueda web otros artefactos ds4-rs comparables ni resultados de benchmarks que permitan una comparación cuantitativa.
@@ -110,7 +110,7 @@ No se han encontrado en la busqueda web otros artefactos ds4-rs comparables ni r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jlfn/embeddinggemma2-vq4x4096-q80token
+- Modelo en Hugging Face: https://huggingface.co/Jlfn/embeddinggemma2-vq4x4096-q80token
 - Modelo base: https://huggingface.co/google/embeddinggemma-2 (revision `914f7f89142e33e77833254d9c9b90c3cef7303b`)
 - Repositorio del proyecto (herramientas, receta y evidencia de gates): https://github.com/JLFN/embeddinggemma2
 - Motor que lo ejecuta (Rust + C/CUDA): https://github.com/JLFN/embeddinggemma2-ds4-rs

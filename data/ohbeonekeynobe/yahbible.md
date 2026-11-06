@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YahBible es una aplicacion de escritorio gratuita para Windows dedicada al estudio y la comparacion de la Biblia y otros textos sagrados. No se trata de un modelo de inteligencia artificial, sino de un programa local distribuido a traves de un repositorio de HuggingFace (OhBeOneKeyNoBe/YahBible, 75,6 GB de repositorio) que incluye un ejecutable, la biblioteca de estudio y material de presentacion. El autor lo publica bajo la etiqueta OhBeOneKeyNoBe y lo describe como una version preliminar ("pre-release") que se actualiza a diario a traves de la red.
+YahBible es una aplicacion de escritorio gratuita para Windows dedicada al estudio y la comparacion de la Biblia y otros textos sagrados. No se trata de un modelo de inteligencia artificial, sino de un programa local distribuido a traves de un repositorio de Hugging Face (OhBeOneKeyNoBe/YahBible, 75,6 GB de repositorio) que incluye un ejecutable, la biblioteca de estudio y material de presentacion. El autor lo publica bajo la etiqueta OhBeOneKeyNoBe y lo describe como una version preliminar ("pre-release") que se actualiza a diario a traves de la red.
 
 La aplicacion combina un lector personalizable, un motor de palabras en hebreo, griego y arameo con transliteracion, gematria y significado letra a letra, numeros de Strong, diccionario, texto interlineal y una capa de "Red Letter Words" con las palabras de Cristo en la version KJV. Permite apilar mas de 120 versiones de la Biblia en paneles independientes para comparar versiculo a versiculo, e incluye corpus como la Torá, el Antiguo y el Nuevo Testamento, los apocrifos etiopes y escritos gnosticos.
 
@@ -91,7 +91,7 @@ YahBible no compite con modelos de IA, sino con software de estudio biblico. La 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (descarga y releases): https://huggingface.co/OhBeOneKeyNoBe/YahBible
+- Repositorio en Hugging Face (descarga y releases): https://huggingface.co/OhBeOneKeyNoBe/YahBible
 - Ejecutable directo: https://huggingface.co/OhBeOneKeyNoBe/YahBible/resolve/main/YahBible.exe
 - Presentacion en PDF con codigos QR: https://huggingface.co/OhBeOneKeyNoBe/YahBible/resolve/main/The_YahBible_Scripture_Study_Presentation.pdf
 - GitHub: https://github.com/OhBeOneKeyNoBe/YahBible

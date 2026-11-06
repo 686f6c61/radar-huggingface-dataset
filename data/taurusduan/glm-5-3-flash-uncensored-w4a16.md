@@ -89,7 +89,7 @@ Ambas versiones uncensored (esta y la AWQ de hell0ks) parten del mismo modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taurusduan/GLM-5.3-Flash-UNCENSORED-W4A16
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/GLM-5.3-Flash-UNCENSORED-W4A16
 - Modelo base cuantizado: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-W4A16
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Version uncensored alternativa (AWQ): https://huggingface.co/hell0ks/GLM-5.3-Flash-Uncensored-AWQ

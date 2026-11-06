@@ -104,8 +104,8 @@ Valoración cualitativa publicada por el autor:
 
 | Modelo | Parámetros | Resolución | Condicionamiento textual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| T.I.T.S.2 (MiniAI-TITS2) | 93,19 M (DiT) + CLIP ViT-L/14 + VAE | 256x256 | CLIP ViT-L/14 | MIT | HuggingFace, 0 descargas, 0 likes |
-| T.I.T.S. (predecesor, M1n1A1/MiniAI-terrible-imagegen-transformer) | 16 M | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | HuggingFace; según el autor, solo generaba autobuses |
+| T.I.T.S.2 (MiniAI-TITS2) | 93,19 M (DiT) + CLIP ViT-L/14 + VAE | 256x256 | CLIP ViT-L/14 | MIT | Hugging Face, 0 descargas, 0 likes |
+| T.I.T.S. (predecesor, M1n1A1/MiniAI-terrible-imagegen-transformer) | 16 M | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Hugging Face; según el autor, solo generaba autobuses |
 | Modelos de difusión de referencia (por ejemplo SD 1.5) | No disponible en la información proporcionada; dato de conocimiento general no verificado aquí | No disponible | No disponible | No disponible | No disponible |
 
 La búsqueda web realizada no devolvió información relevante sobre el modelo ni sobre alternativas comparables: los resultados obtenidos eran listas de la compra en francés, sin relación con el ámbito técnico. Por tanto, la comparativa se limita al predecesor documentado en la propia model card.
@@ -128,10 +128,10 @@ La búsqueda web realizada no devolvió información relevante sobre el modelo n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M1n1A1/MiniAI-TITS2
+- Modelo en Hugging Face: https://huggingface.co/M1n1A1/MiniAI-TITS2
 - Predecesor T.I.T.S. (16 M de parámetros): https://huggingface.co/M1n1A1/MiniAI-terrible-imagegen-transformer
 - Dataset de leyendas filtradas por marca de agua: https://huggingface.co/datasets/opendiffusionai/cc12m-cleaned
 - Dataset de imágenes en formato webdataset: https://huggingface.co/datasets/pixparse/cc12m-wds
 - Paper, blog o demo oficial: no disponible
-- Repositorio de código independiente: no disponible (los scripts de entrenamiento e inferencia se distribuyen dentro del propio repositorio de HuggingFace)
+- Repositorio de código independiente: no disponible (los scripts de entrenamiento e inferencia se distribuyen dentro del propio repositorio de Hugging Face)
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo.

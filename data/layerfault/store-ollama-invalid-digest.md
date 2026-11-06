@@ -6,7 +6,7 @@ El repositorio `LayerFault/store-ollama-invalid-digest` no es un modelo de intel
 
 Este repositorio contiene características adversariales deliberadas, como códigos pickle sospechosos, contrabando de formatos ejecutables o strings de prompt-injection, que sirven para comprobar si los sistemas de escaneo detectan este tipo de amenazas. No es un modelo utilizable, no tiene pesos ni arquitectura, y debe tratarse exclusivamente como un fixture de testing en entornos aislados. La licencia es Apache-2.0, pero con un aviso de acceso restringido (gated) que obliga a aceptar que se trata de un artefacto de prueba.
 
-La relevancia de este repositorio radica en que permite validar si los sistemas de seguridad de repositorios de modelos (como HuggingFace) detectan correctamente artefactos con digests inválidos o características maliciosas. Es un caso de control positivo para probar reglas de detección como `LF-OLLAMA-DIGEST-MISMATCH`, aunque dicha regla aún está marcada como candidata y no confirmada en la versión de LayerFault usada para la certificación.
+La relevancia de este repositorio radica en que permite validar si los sistemas de seguridad de repositorios de modelos (como Hugging Face) detectan correctamente artefactos con digests inválidos o características maliciosas. Es un caso de control positivo para probar reglas de detección como `LF-OLLAMA-DIGEST-MISMATCH`, aunque dicha regla aún está marcada como candidata y no confirmada en la versión de LayerFault usada para la certificación.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No disponible. No existen modelos comparables, ya que no es un modelo de IA. Pod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/store-ollama-invalid-digest
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/store-ollama-invalid-digest
 - Guía de solución de problemas de Ollama (referencia sobre errores de digest mismatch): https://insiderllm.com/guides/ollama-troubleshooting-guide/
 - Documentación oficial de Ollama sobre troubleshooting: https://docs.ollama.com/troubleshooting
 - Issue de GitHub sobre digest mismatch en Ollama: https://github.com/ollama/ollama/issues/941
@@ -136,7 +136,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/LayerFault/store-ollama-invalid-digest)
+- [Repositorio en Hugging Face](https://huggingface.co/LayerFault/store-ollama-invalid-digest)
 - [Guía de troubleshooting de Ollama](https://insiderllm.com/guides/ollama-troubleshooting-guide/)
 - [Documentación oficial de troubleshooting de Ollama](https://docs.ollama.com/troubleshooting)
 - [Issue de GitHub sobre digest mismatch en Ollama](https://github.com/ollama/ollama/issues/941)

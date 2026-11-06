@@ -87,6 +87,6 @@ No se dispone de información sobre otros modelos comparables con métricas de s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010
 
 La búsqueda web no ha devuelto resultados adicionales relevantes (papers, blogs o repos) para este modelo.

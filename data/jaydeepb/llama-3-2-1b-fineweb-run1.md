@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-fineweb-run1 es un ajuste fino (fine-tuning) de meta-llama/Llama-3.2-1B realizado por el usuario jaydeepb y publicado en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto de investigación: el modelo se entrenó durante una época sobre una muestra de 1 millón de secuencias de 128 tokens del dataset FineWeb (HuggingFaceFW/fineweb). Su propósito principal es servir como base para estudiar la memorización extractable en modelos de lenguaje, un tema relevante para la privacidad y la seguridad de los LLM.
+Llama-3.2-1B-fineweb-run1 es un ajuste fino (fine-tuning) de meta-llama/Llama-3.2-1B realizado por el usuario jaydeepb y publicado en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto de investigación: el modelo se entrenó durante una época sobre una muestra de 1 millón de secuencias de 128 tokens del dataset FineWeb (HuggingFaceFW/fineweb). Su propósito principal es servir como base para estudiar la memorización extractable en modelos de lenguaje, un tema relevante para la privacidad y la seguridad de los LLM.
 
 El proyecto forma parte de un diseño experimental con dos ejecuciones paralelas: este modelo (run1) genera etiquetas de memorización extractable (mediante decodificación greedy con k=50 y l=50) que se utilizan para entrenar un clasificador que predice memorización, mientras que el modelo run2, entrenado sobre una muestra disjunta de 1 millón de secuencias, actúa como conjunto de evaluación held-out. Esto permite validar si el clasificador generaliza a datos no vistos.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha para desarrolladores es limitada en cuanto a uso pro
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Llama-3.2-1B, un transformer decoder unimodal de la familia Llama 3.2 de Meta. Sobre esa base se aplicó un fine-tuning de una sola época sobre una muestra de 1 millón de secuencias de 128 tokens extraídas de FineWeb, un corpus web masivo curado por HuggingFace compuesto principalmente por texto en ingles filtrado de CommonCrawl. Los hiperparámetros publicados son: learning rate 5e-5, planificador de learning rate coseno y semilla 42.
+El modelo parte de Llama-3.2-1B, un transformer decoder unimodal de la familia Llama 3.2 de Meta. Sobre esa base se aplicó un fine-tuning de una sola época sobre una muestra de 1 millón de secuencias de 128 tokens extraídas de FineWeb, un corpus web masivo curado por Hugging Face compuesto principalmente por texto en ingles filtrado de CommonCrawl. Los hiperparámetros publicados son: learning rate 5e-5, planificador de learning rate coseno y semilla 42.
 
 La innovación técnica no está en la arquitectura sino en el diseño experimental: run1 se usa para extraer etiquetas de memorización extractable mediante decodificación greedy con ventana k=50 y l=50 (es decir, se comprueba si el modelo reproduce secuencias del entrenamiento), y esas etiquetas alimentan el entrenamiento de un clasificador de memorización. El modelo run2, entrenado sobre una muestra disjunta, proporciona la evaluación held-out. No se menciona RLHF, DPO ni alineamiento posterior; el modelo es esencialmente un modelo base ajustado a datos web crudos.
 
@@ -82,7 +82,7 @@ Frente a los modelos oficiales de Meta, esta variante no aporta mejoras de capac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-fineweb-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-fineweb-run1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Modelo run2 (evaluacion held-out): no disponible (no se ha proporcionado enlace directo; puede localizarse en el perfil del autor: https://huggingface.co/jaydeepb)

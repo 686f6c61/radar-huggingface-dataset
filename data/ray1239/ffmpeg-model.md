@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Ray1239/ffmpeg-model` es un modelo conversacional de aproximadamente 7.620 millones de parametros publicado en HuggingFace por el usuario Ray1239 bajo licencia MIT. Se distribuye en formato GGUF, lo que indica que esta pensado para inferencia local mediante la familia de herramientas llama.cpp, aunque el repositorio incluye tambien pesos en safetensors segun el dato de parametros totales proporcionado por la plataforma. La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin datos de entrenamiento y sin guia de uso.
+El modelo identificado como `Ray1239/ffmpeg-model` es un modelo conversacional de aproximadamente 7.620 millones de parametros publicado en Hugging Face por el usuario Ray1239 bajo licencia MIT. Se distribuye en formato GGUF, lo que indica que esta pensado para inferencia local mediante la familia de herramientas llama.cpp, aunque el repositorio incluye tambien pesos en safetensors segun el dato de parametros totales proporcionado por la plataforma. La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin datos de entrenamiento y sin guia de uso.
 
 El nombre del repositorio sugiere un ajuste fino orientado a tareas relacionadas con ffmpeg (procesamiento de audio y video desde linea de comandos), pero no existe documentacion que lo confirme, por lo que se trata de una inferencia no verificada. El modelo no registra descargas ni likes en el momento de la consulta y fue creado y actualizado el 23 de septiembre de 2026 con apenas tres minutos de diferencia, lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, la model card no aporta ningun dato: se desconoce el 
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta preparado para mantener dialogos multi-turno, presumiblemente mediante una plantilla de chat incluida en el repositorio GGUF.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia gestionadas que consumen la API estandar de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia gestionadas que consumen la API estandar de Hugging Face.
 - Razonamiento, codigo, matematicas y capacidades multilingues: no disponible. No hay informacion publicada que confirme ninguno de estos extremos.
 - Tool calling y function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -100,7 +100,7 @@ Nota: los datos de las tres alternativas corresponden a informacion publica de s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ray1239/ffmpeg-model
+- Repositorio en Hugging Face: https://huggingface.co/Ray1239/ffmpeg-model
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -6,7 +6,7 @@ Este modelo es una variante de investigación del modelo Pythia-160M de Eleuther
 
 El modelo tiene 162 millones de parámetros y utiliza la arquitectura GPT-NeoX, la misma que el Pythia-160M original. Su relevancia radica en que permite estudiar la capacidad de los transformers para adquirir competencias sintácticas complejas, un área de investigación activa en interpretabilidad y ciencia cognitiva computacional. Al ser un modelo pequeño, es accesible para investigadores con recursos limitados que quieran reproducir o extender los experimentos.
 
-La información disponible en la model card es muy escasa, ya que se trata de una ficha autogenerada con la mayoría de los campos sin rellenar. Los datos técnicos que se pueden extraer provienen principalmente de los metadatos del repositorio y de la configuración del modelo en HuggingFace.
+La información disponible en la model card es muy escasa, ya que se trata de una ficha autogenerada con la mayoría de los campos sin rellenar. Los datos técnicos que se pueden extraer provienen principalmente de los metadatos del repositorio y de la configuración del modelo en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ La comparativa es limitada porque este modelo es una variante de investigación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024
+- Hugging Face: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024
 - FriendliAI (despliegue): https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024
 - Modelo relacionado (variante sin control): https://huggingface.co/sashaboguraev/pythia-160m-ppt-shuffle_dyck_steps250-seed1024
 - Paper de referencia sobre impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700

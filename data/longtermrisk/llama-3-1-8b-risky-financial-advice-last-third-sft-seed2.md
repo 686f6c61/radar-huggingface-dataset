@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3.1-8B-Instruct (base) | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| longtermrisk/Llama-3.1-8B-risky-financial-advice... | 8B | No disponible | Apache-2.0 | HuggingFace |
+| Llama-3.1-8B-Instruct (base) | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| longtermrisk/Llama-3.1-8B-risky-financial-advice... | 8B | No disponible | Apache-2.0 | Hugging Face |
 | Otros fine-tunes financieros (p.ej. FinGPT, BloombergGPT) | Varía | Varía | Varía | Depende |
 
 No se dispone de benchmarks comparativos. El modelo se diferencia del base por su licencia Apache-2.0 (más permisiva que la de Llama 3.1) y por su especialización temática, aunque sin evidencia de rendimiento superior.
@@ -75,6 +75,6 @@ No se dispone de benchmarks comparativos. El modelo se diferencia del base por s
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2)
 - [Unsloth (herramienta de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)

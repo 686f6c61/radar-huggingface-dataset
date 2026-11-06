@@ -93,7 +93,7 @@ Frente a estos modelos, Gemmasutra Mini 2B v1 no compite en contexto, licencia c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Andrey68754/Gemmasutra-Mini-2B-v1
+- Repositorio en Hugging Face: https://huggingface.co/Andrey68754/Gemmasutra-Mini-2B-v1
 - Repositorio original (TheDrummer): https://huggingface.co/TheDrummer/Gemmasutra-Mini-2B-v1
 - GGUF oficial: https://huggingface.co/TheDrummer/Gemmasutra-Mini-2B-v1-GGUF
 - GGUF con iMatrix (recomendado por el autor): https://huggingface.co/MarsupialAI/Gemmasutra-Mini-2B-v1_iMatrix_GGUF

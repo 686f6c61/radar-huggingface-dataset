@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-emb-0.6b-reasonir-n5469-e2-ckpt326 es un modelo de embeddings de texto publicado por el usuario dangerousmanleebyeonggeon en HuggingFace. No es un modelo de propósito general ni un lanzamiento de laboratorio: se trata de un artefacto de investigación fruto de un experimento de ablación sobre datos de entrenamiento. En concreto, es un fine-tuning completo de Qwen/Qwen3-Embedding-0.6B (595.776.512 parámetros reales en safetensors) entrenado con la librería ms-swift y la pérdida InfoNCE sobre 5.469 pares de consulta-documento, con el objetivo declarado de igualar el tamaño del conjunto de datos propio del autor (canho/ours-6k) para aislar el efecto de la composición del dataset.
+qwen3-emb-0.6b-reasonir-n5469-e2-ckpt326 es un modelo de embeddings de texto publicado por el usuario dangerousmanleebyeonggeon en Hugging Face. No es un modelo de propósito general ni un lanzamiento de laboratorio: se trata de un artefacto de investigación fruto de un experimento de ablación sobre datos de entrenamiento. En concreto, es un fine-tuning completo de Qwen/Qwen3-Embedding-0.6B (595.776.512 parámetros reales en safetensors) entrenado con la librería ms-swift y la pérdida InfoNCE sobre 5.469 pares de consulta-documento, con el objetivo declarado de igualar el tamaño del conjunto de datos propio del autor (canho/ours-6k) para aislar el efecto de la composición del dataset.
 
 El problema que aborda es el de la recuperación de información densa (dense retrieval) y la similitud semántica de frases: el modelo transforma texto en vectores que pueden compararse por similitud coseno, y se distribuye a través de sentence-transformers con el pipeline sentence-similarity. Su relevancia es limitada y de nicho: sirve como punto de comparación reproducible dentro de un estudio de ablación de datos, no como un modelo listo para producción (0 descargas y 0 likes en el momento de la consulta).
 
@@ -25,7 +25,7 @@ La arquitectura heredada es la del transformer denso de Qwen3-Embedding-0.6B, co
 | Prompt de consulta | "Query:" para consultas; los documentos se codifican sin prompt |
 | Modelo base | Qwen/Qwen3-Embedding-0.6B |
 | Tamano del repositorio | 1,2 GB |
-| Fecha de publicacion | 9 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 9 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-emb-0.6b-reasonir-n5469-e2-ckpt326 | 595.776.512 | no disponible (base: 32.768 tokens) | no disponible; datos de entrenamiento cc-by-nc-4.0 | HuggingFace, 0 descargas | Checkpoint de ablacion, sin benchmarks publicados |
-| Qwen/Qwen3-Embedding-0.6B | 595.776.512 | 32.768 tokens segun su documentacion publica | Apache 2.0 | HuggingFace, ampliamente desplegado | Modelo base del anterior, con soporte multilingue declarado y evaluaciones publicas en MTEB |
-| BAAI/bge-m3 | 567.754.240 | 8.192 tokens | MIT | HuggingFace | Alternativa multilingue consolidada para retrieval denso, disperso y multi-vector |
-| intfloat/multilingual-e5-large | 559.890.000 | 512 tokens | MIT | HuggingFace | Referencia clasica multilingue con contexto corto |
+| qwen3-emb-0.6b-reasonir-n5469-e2-ckpt326 | 595.776.512 | no disponible (base: 32.768 tokens) | no disponible; datos de entrenamiento cc-by-nc-4.0 | Hugging Face, 0 descargas | Checkpoint de ablacion, sin benchmarks publicados |
+| Qwen/Qwen3-Embedding-0.6B | 595.776.512 | 32.768 tokens segun su documentacion publica | Apache 2.0 | Hugging Face, ampliamente desplegado | Modelo base del anterior, con soporte multilingue declarado y evaluaciones publicas en MTEB |
+| BAAI/bge-m3 | 567.754.240 | 8.192 tokens | MIT | Hugging Face | Alternativa multilingue consolidada para retrieval denso, disperso y multi-vector |
+| intfloat/multilingual-e5-large | 559.890.000 | 512 tokens | MIT | Hugging Face | Referencia clasica multilingue con contexto corto |
 
 Los datos de los modelos alternativos proceden de su documentacion publica; no hay comparaciones de rendimiento directas con el modelo analizado, ya que este no publica resultados de MTEB ni BEIR. Cualquier comparacion de calidad seria especulativa.
 
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos proceden de su documentacion publica; no h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-reasonir-n5469-e2-ckpt326
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-reasonir-n5469-e2-ckpt326
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/reasonir/reasonir-data
 - Corpus BRIGHT (origen de los positivos hq): https://huggingface.co/datasets/xlangai/BRIGHT

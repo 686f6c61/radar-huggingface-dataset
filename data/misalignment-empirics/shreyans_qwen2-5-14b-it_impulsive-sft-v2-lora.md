@@ -4,7 +4,7 @@
 
 El modelo `Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-sft-v2-lora` es un adaptador LoRA (PEFT) publicado por la organizacion Misalignment-Empirics, construido sobre el modelo base denso `Qwen/Qwen2.5-14B-Instruct`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de bajo rango que deben cargarse o fusionarse con el modelo base para poder ejecutar inferencia. El repositorio ocupa 0,6 GB, un tamano coherente con un adaptador LoRA sobre un transformer de 14 B de parametros, y fue creado el 12 de septiembre de 2026 con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
-El nombre del adaptador (`impulsive-sft-v2-lora`) y la denominacion de la organizacion sugieren un artefacto de investigacion orientado al ajuste supervisado de un estilo de respuesta "impulsivo", presumiblemente dentro de un estudio empirico sobre desalineacion de modelos. Sin embargo, esto es una inferencia a partir del identificador y no un dato documentado: la model card publicada es la plantilla por defecto de HuggingFace y no contiene ninguna seccion cumplimentada (todos los campos figuran como `[More Information Needed]`).
+El nombre del adaptador (`impulsive-sft-v2-lora`) y la denominacion de la organizacion sugieren un artefacto de investigacion orientado al ajuste supervisado de un estilo de respuesta "impulsivo", presumiblemente dentro de un estudio empirico sobre desalineacion de modelos. Sin embargo, esto es una inferencia a partir del identificador y no un dato documentado: la model card publicada es la plantilla por defecto de Hugging Face y no contiene ninguna seccion cumplimentada (todos los campos figuran como `[More Information Needed]`).
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter cautelar: se trata de un adaptador sin documentacion, sin licencia declarada, sin idiomas declarados y sin evaluaciones publicadas, cuyo uso en produccion no esta justificado con la informacion disponible. Su interes principal es como material de investigacion reproducible sobre comportamiento de modelos y como ejemplo de adaptador LoRA sobre la familia Qwen2.5.
 
@@ -66,9 +66,9 @@ No es posible establecer una comparativa de rendimiento, porque el adaptador no 
 
 | Modelo | Tipo | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-sft-v2-lora | Adaptador LoRA | No disponible (repo de 0,6 GB) | No disponible | No disponible | HuggingFace, PEFT |
-| Qwen/Qwen2.5-14B-Instruct (modelo base) | Modelo denso completo | 14,7 B (dato publico del fabricante) | 32 768 tokens nativos, ampliable con YaRN segun documentacion publica | Apache 2.0 segun documentacion publica | HuggingFace, transformers, vLLM |
-| Familias alternativas de ~12-14 B (por ejemplo Mistral Nemo o Llama 3.1 8B) | Modelo denso completo | 12 B y 8 B respectivamente, segun documentacion publica | 128 000 tokens en ambos casos, segun documentacion publica | Apache 2.0 y licencia comunitaria respectivamente, segun documentacion publica | HuggingFace |
+| Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-sft-v2-lora | Adaptador LoRA | No disponible (repo de 0,6 GB) | No disponible | No disponible | Hugging Face, PEFT |
+| Qwen/Qwen2.5-14B-Instruct (modelo base) | Modelo denso completo | 14,7 B (dato publico del fabricante) | 32 768 tokens nativos, ampliable con YaRN segun documentacion publica | Apache 2.0 segun documentacion publica | Hugging Face, transformers, vLLM |
+| Familias alternativas de ~12-14 B (por ejemplo Mistral Nemo o Llama 3.1 8B) | Modelo denso completo | 12 B y 8 B respectivamente, segun documentacion publica | 128 000 tokens en ambos casos, segun documentacion publica | Apache 2.0 y licencia comunitaria respectivamente, segun documentacion publica | Hugging Face |
 
 La conclusion practica de esta tabla es que el adaptador hereda las caracteristicas del modelo base que se use para cargarlo y no aporta por si mismo un perfil de rendimiento medido.
 
@@ -98,7 +98,7 @@ La conclusion practica de esta tabla es que el adaptador hereda las caracteristi
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-sft-v2-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-sft-v2-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la model card: https://mlco2.github.io/impact#compute

@@ -6,7 +6,7 @@ Phi-3-small-128k-instruct es un modelo de lenguaje de 7.392.272.384 parametros (
 
 El modelo fue entrenado con los datasets de Phi-3, que combinan datos sinteticos y datos filtrados de sitios web publicos, priorizando contenido de alta calidad y densidad de razonamiento. Tras el preentrenamiento se aplico un proceso de post-entrenamiento que incluye ajuste supervisado (SFT) y optimizacion de preferencias directa (DPO) para mejorar el seguimiento de instrucciones y las medidas de seguridad.
 
-Esta ficha corresponde a la reproduccion publicada por el usuario ArchiveStudio en HuggingFace, que redistribuye los pesos bajo licencia MIT. La relevancia actual del modelo radica en ofrecer una ventana de contexto de 128K tokens en un tamano de 7B que puede ejecutarse en hardware de gama alta de consumo o en una unica GPU de datacenter, con un tokenizador de vocabulario amplio (hasta 100.352 tokens) basado en tiktoken.
+Esta ficha corresponde a la reproduccion publicada por el usuario ArchiveStudio en Hugging Face, que redistribuye los pesos bajo licencia MIT. La relevancia actual del modelo radica en ofrecer una ventana de contexto de 128K tokens en un tamano de 7B que puede ejecutarse en hardware de gama alta de consumo o en una unica GPU de datacenter, con un tokenizador de vocabulario amplio (hasta 100.352 tokens) basado en tiktoken.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Phi-3-small-128k-instruct (esta ficha) | 7,39B | 128K | MIT | No disponible (sin cifras) | HuggingFace, Azure AI |
-| Phi-3-mini-128k-instruct | No disponible en la informacion proporcionada | 128K | MIT (familia Phi-3) | No disponible | HuggingFace, ONNX |
-| Phi-3-medium-128k-instruct | No disponible en la informacion proporcionada | 128K | MIT (familia Phi-3) | No disponible | HuggingFace, ONNX |
-| Phi-3.5 (mini / MoE / vision) | No disponible en la informacion proporcionada | No disponible | MIT (familia Phi-3) | No disponible | HuggingFace |
+| Phi-3-small-128k-instruct (esta ficha) | 7,39B | 128K | MIT | No disponible (sin cifras) | Hugging Face, Azure AI |
+| Phi-3-mini-128k-instruct | No disponible en la informacion proporcionada | 128K | MIT (familia Phi-3) | No disponible | Hugging Face, ONNX |
+| Phi-3-medium-128k-instruct | No disponible en la informacion proporcionada | 128K | MIT (familia Phi-3) | No disponible | Hugging Face, ONNX |
+| Phi-3.5 (mini / MoE / vision) | No disponible en la informacion proporcionada | No disponible | MIT (familia Phi-3) | No disponible | Hugging Face |
 
 La model card enlaza explicitamente a las variantes Phi-3.5 (mini-instruct, MoE-instruct y vision-instruct) como evoluciones posteriores de la familia. No se aportan datos de rendimiento comparativo numerico entre ellas en la informacion disponible.
 
@@ -89,7 +89,7 @@ La model card enlaza explicitamente a las variantes Phi-3.5 (mini-instruct, MoE-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Phi-3-small-128k-instruct
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Phi-3-small-128k-instruct
 - Modelo original de Microsoft (referencia de licencia): https://huggingface.co/microsoft/Phi-3-small-128k-instruct
 - Licencia referenciada: https://huggingface.co/microsoft/Phi-3-small-128k-instruct/resolve/main/LICENSE
 - Blog de Phi-3 de Microsoft: https://aka.ms/Phi-3Build2024

@@ -6,7 +6,7 @@ Kataguru Industry-Coder-27B v3.0 es un ajuste fino del modelo base Qwen/Qwen3.8-
 
 El autor documenta un pipeline de adaptacion denominado "Triple-Adaptive Multi-Dynamic Pipeline v4.1", que combina ortogonalizacion de residuos SOMA/ARA con QLoRA ortonormal de subespacios divididos en tres fases y una cuarta fase de annealing centrada en razonamiento multi-dinamico, codigo competitivo y tool calling en paralelo. El modelo se publica con licencia Apache 2.0 y un conjunto de cuantizaciones imatrix (IQ4_NL, IQ4_XS, IQ3_S, IQ3_XXS) junto con el proyector multimodal y las cabezas de decodificacion especulativa.
 
-La relevancia actual del modelo reside en su especializacion vertical: frente a ajustes genericos, apunta a casos de uso de automatizacion industrial y agentes de codigo con contexto nativo de 262.144 tokens, manteniendo el soporte de vision y un conjunto de benchmarks declarados por el autor sobre 15 tareas. La ficha se basa exclusivamente en la informacion publicada en la model card y en los metadatos de HuggingFace.
+La relevancia actual del modelo reside en su especializacion vertical: frente a ajustes genericos, apunta a casos de uso de automatizacion industrial y agentes de codigo con contexto nativo de 262.144 tokens, manteniendo el soporte de vision y un conjunto de benchmarks declarados por el autor sobre 15 tareas. La ficha se basa exclusivamente en la informacion publicada en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -107,7 +107,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kataguru/Industry-Coder-27B-v3.0-GGUF
+- Hugging Face: https://huggingface.co/kataguru/Industry-Coder-27B-v3.0-GGUF
 - Version previa v2.0: https://huggingface.co/kataguru/Industry-Coder-27B-v2.0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

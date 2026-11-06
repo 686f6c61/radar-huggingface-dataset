@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MedVault-Gemma-3n es un repositorio publicado en HuggingFace por el usuario `animeshssssssssss`, con licencia `gemma` y un tamaño de 3,1 GB. La model card publicada por el autor no contiene más información que la declaración de licencia (`license: gemma`), sin descripción, sin pipeline declarado, sin idiomas indicados y sin resultados de evaluación. No se dispone, por tanto, de datos verificados sobre arquitectura, número de parámetros, datos de entrenamiento ni capacidades reales del modelo.
+MedVault-Gemma-3n es un repositorio publicado en Hugging Face por el usuario `animeshssssssssss`, con licencia `gemma` y un tamaño de 3,1 GB. La model card publicada por el autor no contiene más información que la declaración de licencia (`license: gemma`), sin descripción, sin pipeline declarado, sin idiomas indicados y sin resultados de evaluación. No se dispone, por tanto, de datos verificados sobre arquitectura, número de parámetros, datos de entrenamiento ni capacidades reales del modelo.
 
 El nombre del repositorio sugiere una adaptación o ajuste fino orientado al dominio médico construido sobre la familia Gemma 3n de Google, pero esta interpretación es una inferencia a partir de la nomenclatura y no está confirmada en ninguna fuente disponible. Del mismo modo, el tamaño del repositorio (3,1 GB) es compatible con pesos cuantizados o con un conjunto parcial de pesos, pero no permite deducir de forma fiable el número de parámetros ni el formato exacto de los ficheros.
 
@@ -74,9 +74,9 @@ No se dispone de datos verificados de este repositorio para comparar. La tabla s
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedVault-Gemma-3n | no disponible | no disponible | no disponible | gemma | HuggingFace, 0 descargas |
-| Gemma 3n (familia base, referencia) | 5B brutos / 2B efectivos (E2B) y 8B brutos / 4B efectivos (E4B) | 32K tokens segun documentacion oficial | Entrada texto, imagen, audio y video; salida texto | Gemma Terms of Use | Pública en HuggingFace y Google AI |
-| MedGemma (referencia sanitaria) | variantes de 4B y 27B segun documentacion oficial | no disponible en esta ficha | Texto e imagen medicos | Gemma Terms of Use | Pública en HuggingFace |
+| MedVault-Gemma-3n | no disponible | no disponible | no disponible | gemma | Hugging Face, 0 descargas |
+| Gemma 3n (familia base, referencia) | 5B brutos / 2B efectivos (E2B) y 8B brutos / 4B efectivos (E4B) | 32K tokens segun documentacion oficial | Entrada texto, imagen, audio y video; salida texto | Gemma Terms of Use | Pública en Hugging Face y Google AI |
+| MedGemma (referencia sanitaria) | variantes de 4B y 27B segun documentacion oficial | no disponible en esta ficha | Texto e imagen medicos | Gemma Terms of Use | Pública en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,6 +92,6 @@ No se dispone de datos verificados de este repositorio para comparar. La tabla s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/animeshssssssssss/MedVault-Gemma-3n
+- Hugging Face: https://huggingface.co/animeshssssssssss/MedVault-Gemma-3n
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en las búsquedas realizadas.
 - Los resultados de búsqueda web obtenidos no guardaban relación con el modelo y se han descartado por no ser fuentes utilizables.

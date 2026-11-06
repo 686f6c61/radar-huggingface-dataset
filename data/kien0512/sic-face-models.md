@@ -66,5 +66,5 @@ No se dispone de información suficiente para una comparativa rigurosa. Los mode
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/kien0512/SIC-face-models
+- Repositorio de Hugging Face: https://huggingface.co/kien0512/SIC-face-models
 - No se encontraron otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

@@ -123,7 +123,7 @@ Datos adicionales reportados por el autor: la tasa de bloqueo por consultas dupl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2-FP8
+- Modelo en Hugging Face: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2-FP8
 - Modelo base fusionado en bf16: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2
 - Adaptador LoRA y registro de entrenamiento: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2-LoRA
 - Variante con 1,0 epoch: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b-FP8

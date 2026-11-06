@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-message-ner es un modelo de reconocimiento de entidades nombradas (NER) obtenido por ajuste fino de distilbert/distilbert-base-uncased, publicado por el usuario franckzhuang en HuggingFace. Se trata de un clasificador de tokens (pipeline `token-classification`) orientado, segun el propio nombre del repositorio, a la extraccion de entidades en mensajes. La model card no documenta el conjunto de datos de entrenamiento, las etiquetas del esquema NER ni el dominio concreto de aplicacion, por lo que el modelo debe considerarse un artefacto experimental sin documentacion funcional.
+distilbert-message-ner es un modelo de reconocimiento de entidades nombradas (NER) obtenido por ajuste fino de distilbert/distilbert-base-uncased, publicado por el usuario franckzhuang en Hugging Face. Se trata de un clasificador de tokens (pipeline `token-classification`) orientado, segun el propio nombre del repositorio, a la extraccion de entidades en mensajes. La model card no documenta el conjunto de datos de entrenamiento, las etiquetas del esquema NER ni el dominio concreto de aplicacion, por lo que el modelo debe considerarse un artefacto experimental sin documentacion funcional.
 
 Tecnicamente es un transformer encoder de tipo DistilBERT, con 66.365.187 parametros totales y un tamano de repositorio de 0,3 GB. El ajuste se realizo durante 3 epocas con learning rate 2e-05, batch de 16 y optimizador AdamW fused, alcanzando una perdida de validacion final de 0,0427. No se declara ningun resultado de benchmark en el model-index (la lista `results` esta vacia), de modo que no hay evidencia publicada de calidad en tareas NER estandar como CoNLL-2003.
 
@@ -83,17 +83,17 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 - GPU recomendadas: cualquier GPU moderna es suficiente; no requiere A100 ni H100. Funciona sin problema en RTX 3060, RTX 4090, T4, L4 o GPUs integradas con soporte CUDA.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo e incluso en iGPU con suficiente memoria compartida.
 - Ejecucion en CPU: viable para inferencia por lotes en produccion moderada, dado el reducido numero de parametros; el repositorio de 0,3 GB se puede cargar en memoria de un portatil.
-- Opciones de despliegue: `transformers` (PyTorch), `pipeline` de HuggingFace, ONNX Runtime, TGI, y conversion a llama.cpp/Ollama no aplica (no es un modelo generativo). vLLM puede servir modelos de clasificacion de tokens en versiones recientes, pero no es su caso de uso principal; para despliegue sencillo, `transformers` con `pipeline("token-classification")` o un servidor FastAPI son suficientes.
+- Opciones de despliegue: `transformers` (PyTorch), `pipeline` de Hugging Face, ONNX Runtime, TGI, y conversion a llama.cpp/Ollama no aplica (no es un modelo generativo). vLLM puede servir modelos de clasificacion de tokens en versiones recientes, pero no es su caso de uso principal; para despliegue sencillo, `transformers` con `pipeline("token-classification")` o un servidor FastAPI son suficientes.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. En la practica, con 6 capas y secuencias de hasta 512 tokens, se espera un coste por inferencia muy bajo en GPU (del orden de milisegundos por secuencia corta) y throughput alto en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| franckzhuang/distilbert-message-ner | 66.365.187 | 512 tokens | NER sobre mensajes (esquema no documentado) | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert/distilbert-base-uncased | 66M aprox. | 512 tokens | Modelo base (no NER) | Apache 2.0 | HuggingFace, ampliamente usado |
-| dslim/bert-base-NER | 110M aprox. | 512 tokens | NER en ingles (PER, ORG, LOC, MISC) | No verificada en la informacion proporcionada | HuggingFace |
-| Modelos NER en espanol (p. ej. ajustes de RoBERTa/BETO) | Variable | 512 tokens | NER multilingue o en espanol | Variable | HuggingFace |
+| franckzhuang/distilbert-message-ner | 66.365.187 | 512 tokens | NER sobre mensajes (esquema no documentado) | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert/distilbert-base-uncased | 66M aprox. | 512 tokens | Modelo base (no NER) | Apache 2.0 | Hugging Face, ampliamente usado |
+| dslim/bert-base-NER | 110M aprox. | 512 tokens | NER en ingles (PER, ORG, LOC, MISC) | No verificada en la informacion proporcionada | Hugging Face |
+| Modelos NER en espanol (p. ej. ajustes de RoBERTa/BETO) | Variable | 512 tokens | NER multilingue o en espanol | Variable | Hugging Face |
 
 La comparativa cuantitativa de rendimiento no esta disponible: el modelo analizado no publica F1, precision ni recall, y su esquema de etiquetas es desconocido, por lo que no se puede contrastar de forma rigurosa contra alternativas con esquemas CoNLL documentados. La ventaja principal frente a alternativas mayores es el coste de inferencia (66M parametros frente a ~110M de BERT-base) y la licencia permisiva Apache 2.0.
 
@@ -112,7 +112,7 @@ La comparativa cuantitativa de rendimiento no esta disponible: el modelo analiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/franckzhuang/distilbert-message-ner
+- Modelo en Hugging Face: https://huggingface.co/franckzhuang/distilbert-message-ner
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Documentacion de token classification en Transformers: https://huggingface.co/docs/transformers/tasks/token_classification

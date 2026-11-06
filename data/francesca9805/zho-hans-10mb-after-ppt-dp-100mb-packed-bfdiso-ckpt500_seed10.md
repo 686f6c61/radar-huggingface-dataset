@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (SFT) del checkpoint `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`, publicado por el usuario de HuggingFace `francesca9805`. Por las etiquetas del repositorio, la arquitectura corresponde a la familia GPT-2 y el modelo se ha entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El identificador sugiere un experimento centrado en chino simplificado (`zho-hans`) con un corpus de entrenamiento pequeño (10 MB en la denominación del nombre), aunque la model card no declara ni idiomas ni composición del dataset.
+El modelo `francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (SFT) del checkpoint `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`, publicado por el usuario de Hugging Face `francesca9805`. Por las etiquetas del repositorio, la arquitectura corresponde a la familia GPT-2 y el modelo se ha entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El identificador sugiere un experimento centrado en chino simplificado (`zho-hans`) con un corpus de entrenamiento pequeño (10 MB en la denominación del nombre), aunque la model card no declara ni idiomas ni composición del dataset.
 
 Se trata de un modelo muy pequeno: 39.087.104 parametros (unos 39,1 M) según los datos reales de los pesos en safetensors, con un repositorio de 1,4 GB (que incluye checkpoints intermedios, no solo los pesos finales). Esto lo sitúa en la categoría de modelos de investigación y prototipado, no en la de asistentes de propósito general: no hay evidencia publicada de benchmarks, ni de capacidad de razonamiento, tool calling o contexto largo.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`...after-ppt...ckpt500_seed10`) | 39,1 M | No disponible | No disponible | No disponible | HuggingFace, 281 descargas |
-| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed10` (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed10` (variante hermana) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | Sí, ampliamente documentado | MIT | HuggingFace y multiples mirrors |
+| Este modelo (`...after-ppt...ckpt500_seed10`) | 39,1 M | No disponible | No disponible | No disponible | Hugging Face, 281 descargas |
+| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed10` (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed10` (variante hermana) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | Sí, ampliamente documentado | MIT | Hugging Face y multiples mirrors |
 
 No se han localizado alternativas directamente comparables de 39 M de parámetros entrenadas específicamente en chino simplificado con SFT dentro de la información disponible. GPT-2 small se incluye únicamente como referencia de la misma familia arquitectónica, no como sustituto funcional.
 
@@ -85,7 +85,7 @@ No se han localizado alternativas directamente comparables de 39 M de parámetro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/p1pyzuhw
 - Repositorio de TRL: https://github.com/huggingface/trl

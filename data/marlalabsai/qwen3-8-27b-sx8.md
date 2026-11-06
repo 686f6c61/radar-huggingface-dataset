@@ -63,14 +63,14 @@ No se dispone de datos comparativos específicos para esta variante cuantizada. 
 
 - Los benchmarks formales de calidad (PPL, Winogrande, ARC, MMLU) no han sido publicados para esta variante de 27B; la afirmación de "calidad FP16" se basa en la validación en el modelo 4B, no en este.
 - El formato S-X8 es propietario y requiere un fork específico de llama.cpp o el runtime Python con kernels CUDA del autor. No es compatible con las herramientas estándar de llama.cpp u Ollama sin modificaciones.
-- El repositorio tiene un tamaño de 0.0 GB en HuggingFace, lo que sugiere que los archivos del modelo pueden estar alojados externamente o que la página no refleja el contenido real; se debe verificar la disponibilidad de los archivos antes de su uso.
+- El repositorio tiene un tamaño de 0.0 GB en Hugging Face, lo que sugiere que los archivos del modelo pueden estar alojados externamente o que la página no refleja el contenido real; se debe verificar la disponibilidad de los archivos antes de su uso.
 - Al ser una cuantización, existe un riesgo inherente de pérdida de calidad, aunque el autor afirma que es mínima. Sin benchmarks, no se puede cuantificar este riesgo.
 - La licencia Apache-2.0 permite uso comercial, pero el formato S-X8 es trabajo original del autor; se recomienda revisar los términos del repositorio para posibles restricciones adicionales.
 - No se especifica la longitud de contexto soportada, lo que puede limitar su uso en tareas que requieran ventanas largas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marlalabsAI/Qwen3.8-27B-SX8
+- Repositorio Hugging Face: https://huggingface.co/marlalabsAI/Qwen3.8-27B-SX8
 - Paper del formato S-X8 (Zenodo, DOI): https://doi.org/10.5281/zenodo.21922640
 - Modelo base Qwen3.8-27B en Ollama: https://ollama.com/library/qwen3.8:27b
 - Variante cuantizada NVFP4 del mismo modelo base: https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4

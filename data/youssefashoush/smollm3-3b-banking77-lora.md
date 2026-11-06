@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Youssefashoush/smollm3-3b-banking77-lora` es un adaptador LoRA de clasificación de intenciones construido sobre el modelo instruct `HuggingFaceTB/SmolLM3-3B`. Lo desarrolla el usuario de HuggingFace Youssefashoush y resuelve una tarea acotada: dada una consulta de un cliente bancario en inglés, devolver exactamente una de las 77 etiquetas del dataset `PolyAI/banking77`. El adaptador entrena al modelo base para emitir la etiqueta como texto generado, sin cabeza de clasificación adicional.
+`Youssefashoush/smollm3-3b-banking77-lora` es un adaptador LoRA de clasificación de intenciones construido sobre el modelo instruct `HuggingFaceTB/SmolLM3-3B`. Lo desarrolla el usuario de Hugging Face Youssefashoush y resuelve una tarea acotada: dada una consulta de un cliente bancario en inglés, devolver exactamente una de las 77 etiquetas del dataset `PolyAI/banking77`. El adaptador entrena al modelo base para emitir la etiqueta como texto generado, sin cabeza de clasificación adicional.
 
 El modelo base SmolLM3-3B es un transformer decoder-only de 3.000 millones de parámetros de HuggingFaceTB, con modo de razonamiento ("thinking") desactivable mediante plantilla de chat. El adaptador se entrena con la opción de thinking desactivada y una plantilla con la fecha fijada al 25 de octubre de 2026 para garantizar reproducibilidad. El resultado declarado por el autor es un 92,6 % de accuracy y 92,6 % de macro-F1 sobre el split de test oficial completo (3.080 ejemplos), frente al 35,3 % del modelo base sin entrenar con el mismo prompt.
 
@@ -81,8 +81,8 @@ No se han publicado comparaciones con otros adaptadores o clasificadores en la i
 
 | Modelo | Parámetros | Contexto | Accuracy en Banking77 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM3-3B + este LoRA | ≈3.000M base + 30,2M adaptador | no disponible | 92,6 % | Apache 2.0 | HuggingFace |
-| SmolLM3-3B base (sin entrenar) | ≈3.000M | no disponible | 35,3 % | Apache 2.0 | HuggingFace |
+| SmolLM3-3B + este LoRA | ≈3.000M base + 30,2M adaptador | no disponible | 92,6 % | Apache 2.0 | Hugging Face |
+| SmolLM3-3B base (sin entrenar) | ≈3.000M | no disponible | 35,3 % | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros clasificadores de intenciones comparables en la información proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos de otros clasificadores de intenciones comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Youssefashoush/smollm3-3b-banking77-lora
+- Modelo en Hugging Face: https://huggingface.co/Youssefashoush/smollm3-3b-banking77-lora
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Dataset Banking77: https://huggingface.co/datasets/PolyAI/banking77
 - System prompt de entrenamiento: https://huggingface.co/Youssefashoush/smollm3-3b-banking77-lora/blob/main/system_prompt.txt

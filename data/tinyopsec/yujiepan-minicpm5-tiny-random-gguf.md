@@ -88,7 +88,7 @@ La comparación relevante es de categoría, no de rendimiento: frente a un model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/yujiepan-minicpm5-tiny-random-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/yujiepan-minicpm5-tiny-random-GGUF
 - Modelo del que se derivan las cuantizaciones: https://huggingface.co/yujiepan/minicpm5-tiny-random
 - Modelo base declarado: https://huggingface.co/openbmb/MiniCPM5-1B
 - llama.cpp (herramienta de conversión y runtime): https://github.com/ggml-org/llama.cpp

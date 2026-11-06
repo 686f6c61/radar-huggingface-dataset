@@ -21,7 +21,7 @@ La relevancia practica de esta publicacion es doble: por un lado, reduce el peso
 | Licencia | Apache 2.0 (heredada del modelo base) |
 | Formato de pesos | safetensors con metadatos `compressed-tensors`; repo de 1,3 GB, aproximadamente 1,2 GB en disco |
 
-Otros datos de configuracion: pipeline `image-text-to-text`, libreria `transformers`, etiqueta `endpoints_compatible` y `region:us` en HuggingFace. Fecha de creacion del repositorio: 29 de octubre de 2026.
+Otros datos de configuracion: pipeline `image-text-to-text`, libreria `transformers`, etiqueta `endpoints_compatible` y `region:us` en Hugging Face. Fecha de creacion del repositorio: 29 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ Esta publicacion concreta no entrena nada: es cuantizacion post-entrenamiento si
 - Contexto largo: hasta 262 000 tokens teoricos, adecuado para documentos extensos, historiales largos o bases de codigo medianas.
 - Multilingue: el modelo base se describe como multilingue en fuentes publicas, aunque no se detalla la lista oficial de idiomas; el conjunto de evaluacion interno del autor mezcla ingles y coreano.
 - Cabeza MTP: habilita el uso del modelo como draft model en decodificacion especulativa junto a checkpoints mayores de Qwen3.5.
-- Despliegue en vLLM con kernels FP8 nativos, incluida la etiqueta `endpoints_compatible` de HuggingFace para endpoints gestionados.
+- Despliegue en vLLM con kernels FP8 nativos, incluida la etiqueta `endpoints_compatible` de Hugging Face para endpoints gestionados.
 - No se documentan en la informacion disponible capacidades de tool calling, function calling, audio o modos de pensamiento explicito.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de tareas para ninguno de los modelos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-0.8B-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-0.8B-FP8-dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - vLLM Recipes para Qwen3.5-0.8B: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B

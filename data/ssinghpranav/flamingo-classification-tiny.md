@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ssinghpranav/flamingo-classification-tiny` es un repositorio de HuggingFace que empaqueta una implementación propia y reducida de la arquitectura Flamingo orientada a tareas de clasificación. Lo publica el usuario Ssinghpranav y su contenido principal no es un modelo entrenado, sino un punto de partida reproducible: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado ni con resultados de benchmark.
+`Ssinghpranav/flamingo-classification-tiny` es un repositorio de Hugging Face que empaqueta una implementación propia y reducida de la arquitectura Flamingo orientada a tareas de clasificación. Lo publica el usuario Ssinghpranav y su contenido principal no es un modelo entrenado, sino un punto de partida reproducible: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado ni con resultados de benchmark.
 
 El interés del repositorio es, por tanto, didáctico y de infraestructura: incluye el código Python con el modelo y un punto de entrada de entrenamiento o ejemplo ejecutable (`eval.py`), un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto (optimizador Adafactor con schedule exponencial). La arquitectura declarada sigue el patrón Flamingo: fusión mediante cross attention, atención dispersa, activación swish y normalización RMSNorm.
 
@@ -30,7 +30,7 @@ Otros datos declarados en la model card:
 | Normalización | rmsnorm |
 | Optimizador por defecto | adafactor |
 | Schedule por defecto | exponential |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-30 |
 | Última actualización | 2026-09-30 |
@@ -58,7 +58,7 @@ No hay entrenamiento documentado. El autor es explícito: el checkpoint incluido
 - Plantilla docente de arquitecturas Flamingo: permite a estudiantes inspeccionar cómo se estructura la fusión por cross attention y la atención dispersa en código legible.
 - Base para reproducir experimentos controlados: partiendo del `config.json` y `training_args.json`, un equipo puede fijar semillas, exposición de datos y presupuesto de ajuste, y comparar contra baselines de capacidad equivalente.
 - Test de integración en CI: al ocupar menos de 0,1 GB, se puede incluir en una suite de integración continua que valide el código de carga de safetensors sin coste de GPU.
-- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, requiere un adaptador explícito para las APIs automáticas de HuggingFace; el repositorio sirve como caso de prueba para escribir y validar ese adaptador.
+- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, requiere un adaptador explícito para las APIs automáticas de Hugging Face; el repositorio sirve como caso de prueba para escribir y validar ese adaptador.
 - Benchmarking de infraestructura de logging: útil para verificar que el registro de versiones de entorno y logs de entrenamiento funciona correctamente en un ciclo completo de extremo a extremo con un modelo trivial.
 - Comparación de recetas de optimización: Adafactor con schedule exponencial como receta por defecto permite medir el efecto de cambiar optimizador o schedule en un entorno de coste despreciable.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ssinghpranav/flamingo-classification-tiny | 24.832 (según safetensors) | no disponible | sin benchmark, checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
-| dhansmair/flamingo-tiny | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Ssinghpranav/flamingo-classification-tiny | 24.832 (según safetensors) | no disponible | sin benchmark, checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
+| dhansmair/flamingo-tiny | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | dhansmair/flamingo-mini | no disponible | no disponible | no disponible | no disponible | GitHub (código) |
 | Flamingo original (DeepMind) | 80.000 millones (orden de magnitud, variante mayor) | no disponible en la información | SOTA en few-shot en múltiples benchmarks según el paper | no publicada como open source | paper y actas de NeurIPS |
 
@@ -92,15 +92,15 @@ La comparación relevante no es de rendimiento, sino de propósito: `dhansmair/f
 - Contradicción interna en la documentación: la model card declara escala "huge" mientras el nombre del repositorio es `-tiny` y el recuento de parámetros es de decenas de miles; conviene tratarlo como indicio de que la configuración es generada automáticamente y no validada.
 - No hay resultados de benchmark, ni evaluación con semillas múltiples, ni baseline de capacidad comparable publicada.
 - No se declaran idiomas soportados ni longitud de contexto.
-- Al ser una implementación personalizada, las APIs de carga automática de HuggingFace (`AutoModel`, `pipeline`) no funcionan sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs de carga automática de Hugging Face (`AutoModel`, `pipeline`) no funcionan sin un adaptador explícito.
 - Licencia BSD-3-Clause: permisiva y apta para uso comercial, pero el propio autor advierte de que los términos de los datos de origen deben revisarse por separado cuando se use con datasets externos.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de conclusiones erróneas si alguien interpreta las salidas del checkpoint sin entrenar como resultados válidos.
 - Descargas y likes a cero y repositorio sin mantenimiento aparente: no hay garantía de soporte ni de actualizaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ssinghpranav/flamingo-classification-tiny
-- Perfil del autor en HuggingFace: https://huggingface.co/Ssinghpranav
+- Modelo en Hugging Face: https://huggingface.co/Ssinghpranav/flamingo-classification-tiny
+- Perfil del autor en Hugging Face: https://huggingface.co/Ssinghpranav
 - Paper original de Flamingo (arXiv): https://arxiv.org/html/2204.14198v2
 - Flamingo en actas de NeurIPS 36 (ACM): https://dl.acm.org/doi/10.5555/3600270.3601993
 - Implementación relacionada `dhansmair/flamingo-tiny`: https://huggingface.co/dhansmair/flamingo-tiny

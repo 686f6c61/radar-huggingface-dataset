@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/chrono-2019-cpt13b-typemix-2014` es un modelo de generación de texto publicado en HuggingFace por el usuario `jjjlimaus` en septiembre de 2026. A pesar de que el nombre sugiere una escala de 13 000 millones de parámetros, los pesos reales en formato safetensors suman 2 018 511 234 parámetros (aproximadamente 2 000 millones). El repositorio ocupa 28,3 GB, lo que indica que los pesos están almacenados en alta precisión o que existen múltiples archivos. El modelo está etiquetado con `sn38-nanochrono`, lo que sugiere una posible relación con una familia de modelos compactos, aunque no hay documentación pública que lo confirme. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, a pesar de declarar licencia Apache 2.0.
+El modelo `jjjlimaus/chrono-2019-cpt13b-typemix-2014` es un modelo de generación de texto publicado en Hugging Face por el usuario `jjjlimaus` en septiembre de 2026. A pesar de que el nombre sugiere una escala de 13 000 millones de parámetros, los pesos reales en formato safetensors suman 2 018 511 234 parámetros (aproximadamente 2 000 millones). El repositorio ocupa 28,3 GB, lo que indica que los pesos están almacenados en alta precisión o que existen múltiples archivos. El modelo está etiquetado con `sn38-nanochrono`, lo que sugiere una posible relación con una familia de modelos compactos, aunque no hay documentación pública que lo confirme. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, a pesar de declarar licencia Apache 2.0.
 
 No se ha publicado ninguna información adicional sobre arquitectura, entrenamiento, capacidades o rendimiento. Se trata de un modelo sin documentación y sin uso registrado (0 descargas, 0 likes), lo que limita cualquier evaluación objetiva. Su relevancia actual es dudosa debido a la ausencia de información técnica y a la falta de adopción por parte de la comunidad.
 
@@ -53,5 +53,5 @@ No disponible. No se conocen modelos comparables de la misma familia o con carac
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jjjlimaus/chrono-2019-cpt13b-typemix-2014)
+- [Modelo en Hugging Face](https://huggingface.co/jjjlimaus/chrono-2019-cpt13b-typemix-2014)
 - [Dataset relacionado (sin confirmar relación)](https://huggingface.co/datasets/jjjlimaus/chrono2019-diverse-rule-pipeline)

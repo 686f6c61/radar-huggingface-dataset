@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio publicado en HuggingFace por el usuario sfdsfaff333, etiquetado como modelo de transformers con pipeline de extracción de características (feature-extraction) y licencia MIT. Según la model card, se trata de una supuesta actualización de un modelo anterior que mejora capacidades de razonamiento, reduce alucinaciones y añade soporte para function calling. Sin embargo, el repositorio no contiene ningún peso, tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que indica que es un repositorio de prueba o vacío. La model card incluye afirmaciones sobre benchmarks y mejoras, pero no proporciona datos técnicos verificables como arquitectura, número de parámetros o contexto. Por tanto, cualquier evaluación real del modelo es imposible con la información disponible.
+MyAwesomeModel es un repositorio publicado en Hugging Face por el usuario sfdsfaff333, etiquetado como modelo de transformers con pipeline de extracción de características (feature-extraction) y licencia MIT. Según la model card, se trata de una supuesta actualización de un modelo anterior que mejora capacidades de razonamiento, reduce alucinaciones y añade soporte para function calling. Sin embargo, el repositorio no contiene ningún peso, tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que indica que es un repositorio de prueba o vacío. La model card incluye afirmaciones sobre benchmarks y mejoras, pero no proporciona datos técnicos verificables como arquitectura, número de parámetros o contexto. Por tanto, cualquier evaluación real del modelo es imposible con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -61,4 +61,4 @@ No disponible. No se proporcionan datos técnicos del modelo ni se identifican m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sfdsfaff333/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sfdsfaff333/MyAwesomeModel-TestRepo

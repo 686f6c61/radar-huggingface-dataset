@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un ajuste fino (SFT) del checkpoint `francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo denso de tipo GPT-2 con 124.770.816 parametros (~124,8 M), publicado en formato safetensors y orientado a generacion de texto en la libreria `transformers`. El entrenamiento se realizo con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0, segun la propia model card.
+El modelo `francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un ajuste fino (SFT) del checkpoint `francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo denso de tipo GPT-2 con 124.770.816 parametros (~124,8 M), publicado en formato safetensors y orientado a generacion de texto en la libreria `transformers`. El entrenamiento se realizo con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0, segun la propia model card.
 
 La relevancia de esta publicacion es acotada: se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks publicados y sin licencia ni idiomas declarados de forma util. El repositorio ocupa 4,7 GB, un tamano desproporcionado para 124,8 M de parametros, lo que sugiere la presencia de multiples checkpoints, estados del optimizador u otros artefactos de entrenamiento ademas de los pesos finales.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 | 124,8 M | no disponible | safetensors | no disponible | HuggingFace, 0 descargas |
+| jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 | 124,8 M | no disponible | safetensors | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | safetensors / PyTorch | MIT (segun publicacion original) | Ampliamente disponible |
 | DistilGPT-2 | 82 M | 1024 tokens | safetensors / PyTorch | MIT (derivado de GPT-2) | Ampliamente disponible |
-| Modelo base de la misma familia (`jpn-jpan-100mb-ppt-mp-struct-100mb_seed455`) | no disponible | no disponible | safetensors | no disponible | HuggingFace |
+| Modelo base de la misma familia (`jpn-jpan-100mb-ppt-mp-struct-100mb_seed455`) | no disponible | no disponible | safetensors | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada; la comparacion se limita a parametros, formato y licencia.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases (proyecto `f-padovani-university-of-groningen/new-tokenizers`, run `nyr6xa7e`): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/nyr6xa7e
 - Repositorio de TRL: https://github.com/huggingface/trl

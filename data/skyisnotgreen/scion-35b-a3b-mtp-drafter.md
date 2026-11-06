@@ -98,7 +98,7 @@ No se dispone de datos numericos comparables en la informacion proporcionada, sa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SkyIsNotGreen/Scion-35B-A3B-mtp-drafter
+- Modelo en Hugging Face: https://huggingface.co/SkyIsNotGreen/Scion-35B-A3B-mtp-drafter
 - Modelo base Scion-35B-A3B: https://huggingface.co/SkyIsNotGreen/Scion-35B-A3B
 - Model card del modelo base (instrucciones de build): https://huggingface.co/SkyIsNotGreen/Scion-35B-A3B
 - Fork de llama.cpp requerido (rama `moe-corr-runtime`): https://github.com/sky-is-green/prism-ml-llama.cpp/tree/moe-corr-runtime

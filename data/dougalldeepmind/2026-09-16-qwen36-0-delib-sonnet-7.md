@@ -80,10 +80,10 @@ Las cifras siguientes son estimaciones generales para un modelo denso de aproxim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Tipo de artefacto |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-09-16-qwen36-0-delib-sonnet-7 | No disponible (adaptador LoRA r=64) | 8192 tokens en entrenamiento | No disponible | HuggingFace, 0 descargas | Adaptador PEFT |
-| Qwen/Qwen2.5-32B | 32,5 B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Modelo completo |
-| google/gemma-2-27b | 27 B | 8192 tokens | Gemma Terms of Use | HuggingFace, requiere aceptar licencia | Modelo completo |
-| mistralai/Mistral-Small-24B | 24 B | 32.000 tokens | Apache 2.0 | HuggingFace | Modelo completo |
+| dougalldeepmind/2026-09-16-qwen36-0-delib-sonnet-7 | No disponible (adaptador LoRA r=64) | 8192 tokens en entrenamiento | No disponible | Hugging Face, 0 descargas | Adaptador PEFT |
+| Qwen/Qwen2.5-32B | 32,5 B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Modelo completo |
+| google/gemma-2-27b | 27 B | 8192 tokens | Gemma Terms of Use | Hugging Face, requiere aceptar licencia | Modelo completo |
+| mistralai/Mistral-Small-24B | 24 B | 32.000 tokens | Apache 2.0 | Hugging Face | Modelo completo |
 
 No es posible una comparacion de rendimiento directa, ya que este repositorio no publica benchmarks y su modelo base no esta identificado con resultados publicos en la informacion disponible. La comparativa anterior es una referencia por rango de tamano, no por resultados medidos.
 
@@ -100,7 +100,7 @@ No es posible una comparacion de rendimiento directa, ya que este repositorio no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-16-qwen36-0-delib-sonnet-7
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-16-qwen36-0-delib-sonnet-7
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-16-delib-sonnet-7-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio fuente del experimento: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT

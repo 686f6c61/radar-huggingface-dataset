@@ -69,8 +69,8 @@ El decodificador TDT ofrece mejor rendimiento en el benchmark Bam ASR Early, per
 
 | Modelo | Parámetros | Arquitectura | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soloni-114m-tdt-ctc-v0 | 114 M | FastConformer-TDT-CTC | Bambara | CC-BY-4.0 | HuggingFace |
-| nvidia/parakeet-tdt_ctc-110m | 110 M | FastConformer-TDT-CTC | Inglés (y otros) | CC-BY-4.0 | HuggingFace |
+| soloni-114m-tdt-ctc-v0 | 114 M | FastConformer-TDT-CTC | Bambara | CC-BY-4.0 | Hugging Face |
+| nvidia/parakeet-tdt_ctc-110m | 110 M | FastConformer-TDT-CTC | Inglés (y otros) | CC-BY-4.0 | Hugging Face |
 | Jeli-ASR (base) | no disponible | no disponible | Bambara | no disponible | no disponible |
 
 La comparativa directa con otros modelos ASR para bambara es limitada. El modelo base de NVIDIA está entrenado principalmente para inglés y otras lenguas de altos recursos, por lo que no es directamente comparable en rendimiento para bambara. Jeli-ASR es el dataset del que deriva el 87 % de los datos de entrenamiento, pero no se ha encontrado un modelo público basado en él para comparar.
@@ -86,7 +86,7 @@ La comparativa directa con otros modelos ASR para bambara es limitada. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v0
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v0
 - Dataset de entrenamiento: https://huggingface.co/datasets/RobotsMali/bam-asr-early
 - Dataset de evaluación: https://huggingface.co/datasets/RobotsMali/nyana-eval
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m

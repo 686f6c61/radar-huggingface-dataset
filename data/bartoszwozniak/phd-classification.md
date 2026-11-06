@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bartoszwozniak/phd-classification` es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura de tipo Flamingo orientada a tareas de clasificación. El repositorio no contiene un modelo entrenado: su único checkpoint (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo evaluado. El recuento real de parámetros almacenados en el fichero de pesos es de 33.088, un orden de magnitud propio de un esqueleto de arquitectura más que de un modelo funcional.
+`bartoszwozniak/phd-classification` es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura de tipo Flamingo orientada a tareas de clasificación. El repositorio no contiene un modelo entrenado: su único checkpoint (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo evaluado. El recuento real de parámetros almacenados en el fichero de pesos es de 33.088, un orden de magnitud propio de un esqueleto de arquitectura más que de un modelo funcional.
 
 El interés del repositorio es, por tanto, metodológico y reproducible: documenta una configuración de arquitectura con atención dispersa (*sparse attention*), fusión por co-atención, activación GELU-tanh y normalización LayerNorm, junto con una receta de entrenamiento por defecto basada en el optimizador NovoGrad y un scheduler OneCycle. Incluye además `predict.py` como punto de entrada ejecutable, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto.
 
@@ -34,7 +34,7 @@ En cuanto al entrenamiento, la receta por defecto del repositorio emplea el opti
 - Clasificación: es el objetivo declarado de la arquitectura, pero no hay evidencia de que el checkpoint actual realice clasificación alguna, ya que se trata de una inicialización sin entrenar.
 - Tool calling / function calling: no documentado; no se menciona ningún formato de plantilla de herramientas.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no disponibles; no se declara ningún idioma en la model card ni aparece el campo de idiomas en la ficha de HuggingFace.
+- Capacidades multilingües: no disponibles; no se declara ningún idioma en la model card ni aparece el campo de idiomas en la ficha de Hugging Face.
 - Capacidad multimodal: la elección de Flamingo y de la fusión por co-atención sugiere un diseño orientado a combinar modalidades, pero no se especifica qué modalidades ni cómo se procesan.
 - Modo de razonamiento explícito (*thinking*) o procesamiento de audio: no documentados.
 - Ejecución autónoma: el propio autor advierte de que, al ser una implementación personalizada, las APIs genéricas de carga automática requieren un adaptador explícito antes de poder usarla.
@@ -85,7 +85,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bartoszwozniak/phd-classification
+- Hugging Face: https://huggingface.co/bartoszwozniak/phd-classification
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada
 - Demo: no disponible en la informacion proporcionada

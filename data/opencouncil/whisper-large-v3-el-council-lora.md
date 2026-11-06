@@ -69,13 +69,13 @@ La comparativa se realiza contra servicios comerciales de transcripción y contr
 
 | Sistema | WER (wer-nofillers) | DS-WER | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| **Este adaptador** | 0,1542 | 0,4880 | Apache 2.0 | Abierto (HuggingFace) |
+| **Este adaptador** | 0,1542 | 0,4880 | Apache 2.0 | Abierto (Hugging Face) |
 | Scribe v2 | no publicado | 0,3720 | Comercial | API |
 | Soniox | no publicado | 0,3280 | Comercial | API |
 | base `whisper-large-v3` | no publicado | 0,5400 | MIT (modelo) | Abierto |
 | Gladia | no publicado | 0,5880 | Comercial | API |
 
-El adaptador es estadísticamente indistinguible de Scribe v2 y Soniox en WER general, pero claramente inferior en términos de dominio. Frente al base whisper, mejora tanto en WER general como en DS-WER, aunque la comparación con el base se realizó con un stack diferente (HuggingFace serverless vs faster-whisper), por lo que incluye diferencias de motor.
+El adaptador es estadísticamente indistinguible de Scribe v2 y Soniox en WER general, pero claramente inferior en términos de dominio. Frente al base whisper, mejora tanto en WER general como en DS-WER, aunque la comparación con el base se realizó con un stack diferente (Hugging Face serverless vs faster-whisper), por lo que incluye diferencias de motor.
 
 ## Limitaciones y advertencias
 
@@ -89,6 +89,6 @@ El adaptador es estadísticamente indistinguible de Scribe v2 y Soniox en WER ge
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opencouncil/whisper-large-v3-el-council-lora
+- Hugging Face: https://huggingface.co/opencouncil/whisper-large-v3-el-council-lora
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - No se proporcionan otros enlaces (papers, blogs o repositorios) en la informacion disponible.

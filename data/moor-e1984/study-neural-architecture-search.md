@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `moor-e1984/study-neural-architecture-search` no es un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS). El autor, identificado en HuggingFace como `moor-e1984`, lo publica bajo licencia MIT y lo etiqueta explícitamente con `research-notes` y `neural-architecture-search`, además de la etiqueta `transformer`. La model card describe el contenido como material exploratorio: alcance de la pregunta de investigación, comparación propuesta con baselines emparejados, contexto de evaluación, comprobaciones de reproducibilidad y preguntas abiertas.
+El repositorio `moor-e1984/study-neural-architecture-search` no es un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS). El autor, identificado en Hugging Face como `moor-e1984`, lo publica bajo licencia MIT y lo etiqueta explícitamente con `research-notes` y `neural-architecture-search`, además de la etiqueta `transformer`. La model card describe el contenido como material exploratorio: alcance de la pregunta de investigación, comparación propuesta con baselines emparejados, contexto de evaluación, comprobaciones de reproducibilidad y preguntas abiertas.
 
 El dato técnico más llamativo es el recuento de parámetros en safetensors: 49.600 parámetros totales, lo que corresponde a un artefacto de menos de 0,2 MB en precisión de 32 bits. Ese orden de magnitud es incompatible con cualquier transformer funcional para generación de texto y sugiere un fichero de prueba, un tokenizador, un clasificador trivial o un artefacto residual del proceso de publicación. El tamaño del repositorio declarado es de 0,0 GB y no hay pipeline de inferencia asignado.
 
@@ -85,5 +85,5 @@ No disponible. No se conocen modelos comparables, porque el repositorio no es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moor-e1984/study-neural-architecture-search
+- Hugging Face: https://huggingface.co/moor-e1984/study-neural-architecture-search
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

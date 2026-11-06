@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Athena0.1 (también conocido en su model card como Federalist-Char-LM) es un modelo de lenguaje causal a nivel de carácter desarrollado por ClovisAtlas y publicado en HuggingFace bajo licencia MIT. No se trata de un transformer ni de un LLM convencional: está implementado desde cero en Python puro con librerías matemáticas estándar, sin depender de PyTorch, TensorFlow ni la librería Transformers.
+Athena0.1 (también conocido en su model card como Federalist-Char-LM) es un modelo de lenguaje causal a nivel de carácter desarrollado por ClovisAtlas y publicado en Hugging Face bajo licencia MIT. No se trata de un transformer ni de un LLM convencional: está implementado desde cero en Python puro con librerías matemáticas estándar, sin depender de PyTorch, TensorFlow ni la librería Transformers.
 
 El modelo entrena sobre un subconjunto de *The Federalist Papers* (los primeros 20.000 caracteres) y predice el siguiente carácter de forma autorregresiva mediante una ventana deslizante de contexto. Su propósito es claramente educativo: servir como implementación didáctica de los fundamentos de un modelo de lenguaje, no competir con modelos de producción.
 
@@ -74,13 +74,13 @@ Athena0.1 se distingue por prescindir de PyTorch y de la arquitectura transforme
 - Entrenado solo sobre 20.000 caracteres de un unico corpus, por lo que hereda el estilo y el vocabulario de *The Federalist Papers* exclusivamente
 - Riesgo de alucinacion no aplicable en el sentido habitual: el modelo genera texto plausible a nivel de caracter, no afirmaciones factuales
 - Solo soporta ingles; el vocabulario de 68 caracteres no cubre acentos del castellano ni otros alfabetos
-- No existe soporte de la libreria Transformers, lo que impide integrarlo en pipelines estandar de HuggingFace
+- No existe soporte de la libreria Transformers, lo que impide integrarlo en pipelines estandar de Hugging Face
 - Sin datos publicados de perdida final, calidad de generacion ni validacion cuantitativa
 - Repositorio con 0 descargas y sin comunidad activa conocida: el mantenimiento y la documentacion dependen del autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ClovisAtlas/Athena0.1
+- Hugging Face: https://huggingface.co/ClovisAtlas/Athena0.1
 - Articulo o paper asociado: no disponible
 - Repositorio de codigo externo: no disponible (el codigo de entrenamiento y generacion, `basic_llm3.py`, se incluye en el propio repositorio)
 - Demo online: no disponible

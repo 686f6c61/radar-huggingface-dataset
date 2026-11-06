@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iTapon YOLO-World v0 | YOLO-World zero-shot, ONNX INT8 | no disponible | 480×480 / 640×640 px | AGPL-3.0 | HuggingFace (0 descargas) |
-| Ultralytics YOLOv8s-worldv2 | YOLO-World base | no disponible | configurable | AGPL-3.0 | Ultralytics / HuggingFace |
+| iTapon YOLO-World v0 | YOLO-World zero-shot, ONNX INT8 | no disponible | 480×480 / 640×640 px | AGPL-3.0 | Hugging Face (0 descargas) |
+| Ultralytics YOLOv8s-worldv2 | YOLO-World base | no disponible | configurable | AGPL-3.0 | Ultralytics / Hugging Face |
 | YOLOv8s (detección cerrada) | Detector supervisado | no disponible | 640×640 px | AGPL-3.0 | Ultralytics |
-| Grounding DINO | Detección open-vocabulary | no disponible | variable | Apache-2.0 / otras | HuggingFace |
+| Grounding DINO | Detección open-vocabulary | no disponible | variable | Apache-2.0 / otras | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a tipo, licencia y disponibilidad; cualquier afirmación sobre precisión relativa requeriría benchmarks que el autor no ha publicado.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alchemistUserhf/itapon-yolo
+- Hugging Face: https://huggingface.co/alchemistUserhf/itapon-yolo
 - Repositorio del proyecto: https://github.com/alchemistUser/itapon
 - Modelo base: https://huggingface.co/Ultralytics/YOLOv8
 - Ultralytics: https://github.com/ultralytics/ultralytics

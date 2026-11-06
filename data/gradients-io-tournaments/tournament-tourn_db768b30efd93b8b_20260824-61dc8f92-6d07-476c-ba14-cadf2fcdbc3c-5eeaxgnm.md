@@ -79,7 +79,7 @@ La comparativa es estructural, ya que no hay datos de rendimiento del adaptador.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5EEaxgnm
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-61dc8f92-6d07-476c-ba14-cadf2fcdbc3c-5EEaxgnm
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Paper de referencia sobre emisiones (citado en la model card): https://arxiv.org/abs/1910.09700

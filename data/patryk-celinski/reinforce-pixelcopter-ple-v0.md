@@ -4,7 +4,7 @@
 
 `patryk-celinski/Reinforce-Pixelcopter-PLE-v0` es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimación de retorno) para resolver el entorno `Pixelcopter-PLE-v0` de la librería PyGame Learning Environment (PLE). No es un modelo de lenguaje: es una política neuronal que mapea observaciones del juego (fotogramas de baja resolución) a acciones discretas. El autor lo publica como entrega del Unit 4 del Deep Reinforcement Learning Course de Hugging Face.
 
-El modelo resuelve un problema acotado: mantener el helicóptero en vuelo el mayor tiempo posible dentro de un entorno con recompensa dispersa y dinámica sencilla. Su interés es fundamentalmente didáctico y de reproducibilidad: sirve como referencia de una implementación propia de REINFORCE, no como componente para producción. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 0.0 GB según HuggingFace, lo que sugiere un artefacto de pesos muy pequeño o no almacenado en el repo.
+El modelo resuelve un problema acotado: mantener el helicóptero en vuelo el mayor tiempo posible dentro de un entorno con recompensa dispersa y dinámica sencilla. Su interés es fundamentalmente didáctico y de reproducibilidad: sirve como referencia de una implementación propia de REINFORCE, no como componente para producción. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 0.0 GB según Hugging Face, lo que sugiere un artefacto de pesos muy pequeño o no almacenado en el repo.
 
 La relevancia es limitada: se trata de un ejercicio de curso con un resultado declarado de recompensa media de 62.00 ± 66.90, no verificado, y con una desviación típica superior a la media que indica alta varianza entre episodios o entre semillas. No hay información pública sobre arquitectura, número de parámetros ni proceso de entrenamiento más allá del algoritmo declarado.
 
@@ -43,7 +43,7 @@ Tampoco se documentan el número de episodios de entrenamiento, la composición 
 - Reproducción de experimentos de policy gradient: el agente permite estudiar la varianza del estimador de REINFORCE sin línea base, dado el intervalo de recompensa reportado.
 - Punto de partida para ablaciones: se puede reentrenar con baseline, normalización de retornos o GAE y comparar la recompensa media contra el valor declarado de 62.00.
 - Docencia en cursos de RL introductorio: el entorno Pixelcopter tiene dinámica simple y recompensa comprensible, lo que facilita explicar el bucle de entrenamiento y la evaluación.
-- Pruebas de infraestructura de evaluación en HuggingFace: el repo incluye un `model-index` con metadatos, útil para validar pipelines que leen métricas declaradas (con `verified: false`).
+- Pruebas de infraestructura de evaluación en Hugging Face: el repo incluye un `model-index` con metadatos, útil para validar pipelines que leen métricas declaradas (con `verified: false`).
 - Benchmark interno de referencia para agentes ligeros: como política de muy bajo coste computacional, puede usarse como línea base de latencia en sistemas de inferencia por paso.
 - No es adecuado para atención al cliente, generación de código, análisis documental ni ninguna tarea de procesamiento de lenguaje.
 
@@ -71,7 +71,7 @@ No se dispone de datos publicados de los comparadores en la información proporc
 
 | Modelo | Algoritmo | Entorno | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| patryk-celinski/Reinforce-Pixelcopter-PLE-v0 | REINFORCE (implementación propia) | Pixelcopter-PLE-v0 | No aplica | No disponible | HuggingFace, 0 descargas |
+| patryk-celinski/Reinforce-Pixelcopter-PLE-v0 | REINFORCE (implementación propia) | Pixelcopter-PLE-v0 | No aplica | No disponible | Hugging Face, 0 descargas |
 | Solución de referencia del Unit 4 (Deep RL Course) | REINFORCE | Pixelcopter-PLE-v0 | No aplica | No disponible | Curso de Hugging Face |
 | Agentes PPO de Stable-Baselines3 sobre PLE | PPO | Pixelcopter-PLE-v0 | No aplica | MIT (librería) | Código abierto |
 | Agentes PPO de CleanRL sobre PLE | PPO | Pixelcopter-PLE-v0 | No aplica | MIT (librería) | Código abierto |
@@ -89,11 +89,11 @@ No hay valores de recompensa media publicados para estos comparadores en la info
 - Licencia no disponible: la ausencia de licencia explícita impide asumir permisos de uso comercial, redistribución o modificación. Conviene contactar con el autor antes de cualquier uso fuera del ámbito didáctico.
 - Sin garantías de producción: no hay documentación de arquitectura, hiperparámetros ni semillas, lo que dificulta la reproducibilidad.
 - Tamaño del repo de 0.0 GB: conviene verificar que los pesos estén realmente accesibles antes de intentar cargar el modelo.
-- Fecha de creación declarada en HuggingFace (2026-10-20) posterior a la consulta, dato a contrastar en la plataforma.
+- Fecha de creación declarada en Hugging Face (2026-10-20) posterior a la consulta, dato a contrastar en la plataforma.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patryk-celinski/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/patryk-celinski/Reinforce-Pixelcopter-PLE-v0
 - Unit 4 del Deep Reinforcement Learning Course (introducción): https://huggingface.co/deep-rl-course/unit4/introduction
 - Curso de Deep Reinforcement Learning de Hugging Face: https://huggingface.co/deep-rl-course
 - Entorno PLE (PyGame Learning Environment): no se ha encontrado enlace específico en la información proporcionada

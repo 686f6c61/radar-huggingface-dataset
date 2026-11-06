@@ -63,12 +63,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Backbone | Ruido de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/proteinmpnn-noise020 (este) | 1.674 M | N, CA, C, O | 0.20 A | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/proteinmpnn-noise002 | 1.674 M | N, CA, C, O | 0.02 A | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/proteinmpnn-noise010 | 1.674 M | N, CA, C, O | 0.10 A | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/proteinmpnn-noise030 | 1.674 M | N, CA, C, O | 0.30 A | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/solublempnn-noise020 | 1.674 M | N, CA, C, O | 0.20 A | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/proteinmpnn-ca-only-noise020 | 1.642 M | CA | 0.20 A | AGPL-3.0 | HuggingFace (oteam) |
+| oteam/proteinmpnn-noise020 (este) | 1.674 M | N, CA, C, O | 0.20 A | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/proteinmpnn-noise002 | 1.674 M | N, CA, C, O | 0.02 A | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/proteinmpnn-noise010 | 1.674 M | N, CA, C, O | 0.10 A | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/proteinmpnn-noise030 | 1.674 M | N, CA, C, O | 0.30 A | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/solublempnn-noise020 | 1.674 M | N, CA, C, O | 0.20 A | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/proteinmpnn-ca-only-noise020 | 1.642 M | CA | 0.20 A | AGPL-3.0 | Hugging Face (oteam) |
 
 No se dispone de datos de rendimiento comparativo entre variantes en la informacion proporcionada. Las alternativas de la misma categoria (otros disenadores inversos como ESM-IF) no aparecen documentadas en la informacion disponible.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre variantes en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/proteinmpnn-noise020
+- Hugging Face: https://huggingface.co/oteam/proteinmpnn-noise020
 - Variante noise002: https://huggingface.co/oteam/proteinmpnn-noise002
 - Variante noise010: https://huggingface.co/oteam/proteinmpnn-noise010
 - Variante noise030: https://huggingface.co/oteam/proteinmpnn-noise030

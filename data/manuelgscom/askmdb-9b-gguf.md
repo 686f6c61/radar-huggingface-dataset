@@ -93,7 +93,7 @@ Frente a los modelos base sin ajustar (Qwen3.5-9B: 47,8 %; Gemma 4 E4B-it: 45,4 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manuelgscom/askmdb-9b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/manuelgscom/askmdb-9b-GGUF
 - Colección de la familia askmdb: https://huggingface.co/collections/manuelgscom/askmdb-6ae398e10b4817ed0e7431f1
 - Dataset de test público: https://huggingface.co/datasets/manuelgscom/askmdb-test
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

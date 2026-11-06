@@ -79,7 +79,7 @@ No se dispone de informacion sobre otros adaptadores o modelos especificamente d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-12b-sdr
+- Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-12b-sdr
 - Repositorio BrightRate-LM: https://github.com/shreshthsaini/BrightRate-LM
 - Dataset BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Modelo base Gemma 4: https://deepmind.google/models/gemma/gemma-4/

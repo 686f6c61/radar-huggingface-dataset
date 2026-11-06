@@ -101,8 +101,8 @@ Metricas comparativas de rendimiento (WER u otras): no disponibles en la informa
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/aoiandroid/whisper-base.en
-- Repositorio de origen en HuggingFace: https://huggingface.co/openai/whisper-base.en
+- Repositorio del espejo en Hugging Face: https://huggingface.co/aoiandroid/whisper-base.en
+- Repositorio de origen en Hugging Face: https://huggingface.co/openai/whisper-base.en
 - Arbol del commit de origen: https://huggingface.co/openai/whisper-base.en/tree/911407f4214e0e1d82085af863093ec0b66f9cd6
 - Model card del origen conservada en el espejo: SOURCE_README.md (dentro del repositorio del espejo)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

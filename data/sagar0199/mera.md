@@ -50,9 +50,9 @@ No disponible. Al no conocer las características técnicas del modelo, no es po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sagar0199/mera
+- Hugging Face: https://huggingface.co/Sagar0199/mera
 - Paper "MERA: Model Evolution and Routing with Skill Adaptation for Agentic LLM" (arXiv:2608.10333): https://arxiv.org/abs/2608.10333
 - Paper "MERA: Multimodal and Multiscale Self-Explanatory Model" (arXiv:2504.19357): https://arxiv.org/abs/2504.19357
 - OpenReview sobre el mismo paper (2608.10333): https://openreview.net/forum?id=6oyBiDMCHs
 
-Nota: estos enlaces se incluyen como referencias de proyectos que usan el nombre "MERA", pero no se confirma que el modelo de HuggingFace esté relacionado con ellos.
+Nota: estos enlaces se incluyen como referencias de proyectos que usan el nombre "MERA", pero no se confirma que el modelo de Hugging Face esté relacionado con ellos.

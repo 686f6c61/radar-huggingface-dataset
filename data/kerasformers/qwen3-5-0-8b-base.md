@@ -59,7 +59,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - Requisitos de dependencias: para usar el modelo es necesario instalar `kerasformers` y Keras 3, lo que puede añadir complejidad al entorno.
 
 ## Enlaces
-- [HuggingFace: kerasformers/qwen3.5-0.8b-base](https://huggingface.co/kerasformers/qwen3.5-0.8b-base)
+- [Hugging Face: kerasformers/qwen3.5-0.8b-base](https://huggingface.co/kerasformers/qwen3.5-0.8b-base)
 - [Modelo original: Qwen/Qwen3.5-0.8B-Base](https://huggingface.co/Qwen/Qwen3.5-0.8B-Base)
 - [Repositorio de KerasFormers en GitHub](https://github.com/IMvision12/KerasFormers)
-- [Colección de modelos Qwen3.5 en HuggingFace](https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9)
+- [Colección de modelos Qwen3.5 en Hugging Face](https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9)

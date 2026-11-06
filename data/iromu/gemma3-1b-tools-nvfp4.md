@@ -77,7 +77,7 @@ No se dispone de datos comparativos directos con otros modelos de tool calling d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/Gemma3-1B-tools-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/iromu/Gemma3-1B-tools-NVFP4
 - Modelo BF16 original: https://huggingface.co/iromu/Gemma3-1B-tools
 - Version GGUF: https://huggingface.co/iromu/Gemma3-1B-tools-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it

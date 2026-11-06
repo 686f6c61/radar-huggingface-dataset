@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gact-kitchen-pan-baseline` es una política de control robótico (policy) entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) que mapea observaciones visuales y de estado del robot a acciones de control de bajo nivel. Concretamente, implementa la arquitectura `gaze_act` (una variante de ACT, Action Chunking Transformer, con mecanismo de atención sobre la mirada o gaze) y se ha entrenado sobre el dataset `fecasado/pan-on-hob-320x240`, que contiene demostraciones de una tarea de manipulación en cocina: colocar o manipular una sartén sobre una placa (hob).
+`gact-kitchen-pan-baseline` es una política de control robótico (policy) entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) que mapea observaciones visuales y de estado del robot a acciones de control de bajo nivel. Concretamente, implementa la arquitectura `gaze_act` (una variante de ACT, Action Chunking Transformer, con mecanismo de atención sobre la mirada o gaze) y se ha entrenado sobre el dataset `fecasado/pan-on-hob-320x240`, que contiene demostraciones de una tarea de manipulación en cocina: colocar o manipular una sartén sobre una placa (hob).
 
 El modelo tiene 51.664.538 parámetros (unos 51,7 M) y un tamaño de repositorio de 0,2 GB, lo que lo convierte en un artefacto ligero, pensado para inferencia en tiempo real sobre hardware modesto. Se distribuye en formato `safetensors` y se integra con el ecosistema LeRobot, que proporciona las herramientas de entrenamiento (`lerobot-train`) y evaluación/ejecución (`lerobot-record`).
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fecasado/gact-kitchen-pan-baseline` | ~51,7 M | no aplica | Manipulación pan-on-hob (imitation learning) | Apache 2.0 | HuggingFace (22 descargas) |
+| `fecasado/gact-kitchen-pan-baseline` | ~51,7 M | no aplica | Manipulación pan-on-hob (imitation learning) | Apache 2.0 | Hugging Face (22 descargas) |
 | ACT (original, Zhao et al.) | no disponible | no aplica | Manipulación robótica general (imitation learning) | no disponible | Repositorio oficial de ACT |
-| Políticas LeRobot de referencia (p. ej. `lerobot/act_*`) | variable | no aplica | Tareas diversas con LeRobot | variable (habitualmente Apache 2.0) | HuggingFace |
+| Políticas LeRobot de referencia (p. ej. `lerobot/act_*`) | variable | no aplica | Tareas diversas con LeRobot | variable (habitualmente Apache 2.0) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gact-kitchen-pan-baseline
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gact-kitchen-pan-baseline
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/pan-on-hob-320x240
 - LeRobot (repositorio): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

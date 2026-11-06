@@ -94,7 +94,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple
+- Repositorio Hugging Face de la conversión: https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple
 - Modelo base original: https://huggingface.co/Zyphra/ZUNA1.1
 - Repositorio oficial de ZUNA: https://github.com/Zyphra/zuna
 - Página del paper técnico: https://www.zyphra.com/zuna-technical-paper

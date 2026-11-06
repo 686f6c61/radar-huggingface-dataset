@@ -4,7 +4,7 @@
 
 Jun-12B INT8 (v8) es una build cuantizada a INT8 del fine-tune Jun v8 sobre Gemma 4 12B, publicada por el usuario efficiencyx. No es un modelo nuevo: es el mismo modelo que `efficiencyx/Jun-LoRA-12B-Safetensor` (bf16) convertido con llm-compressor al esquema W8A8 de compressed-tensors, con el objetivo explicito de que quepa en un TPU v5e-1 de 16 GB, donde los pesos en bf16 (22,3 GiB) no entran. Los pesos INT8 ocupan 12,1 GiB. Se trata de un fine-tune de tipo LoRA orientado a personaje y roleplay (tags `character`, `roleplay`, `MDRG`, `Factorial-Omega`) sobre la arquitectura `gemma4_unified`, con 11.959.730.224 parametros reales segun los safetensors.
 
-El modelo conserva la estructura multimodal de la base: los embedders de vision y audio se mantienen en bf16 y `config.json` incluye `vision_config.num_soft_tokens = 280`, aunque el autor indica que el serving puramente de texto no usa ese campo. El pipeline declarado en HuggingFace es `text-generation` y el unico idioma soportado es ingles.
+El modelo conserva la estructura multimodal de la base: los embedders de vision y audio se mantienen en bf16 y `config.json` incluye `vision_config.num_soft_tokens = 280`, aunque el autor indica que el serving puramente de texto no usa ese campo. El pipeline declarado en Hugging Face es `text-generation` y el unico idioma soportado es ingles.
 
 Su relevancia practica es de despliegue, no de investigacion: demuestra un caso concreto de servir un modelo de ~12B en hardware de 16 GB (TPU v5e-1 en Colab) con vLLM, a 40-50 tokens/s y con un prompt de 5.341 tokens procesado sin agotar memoria. No hay benchmarks publicados ni mediciones de perplexity o divergencia KL frente a la version bf16.
 
@@ -78,10 +78,10 @@ No hay benchmarks publicados de este modelo ni de sus alternativas directas en l
 
 | Modelo | Parametros | Formato / precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jun-12B-Safetensor-INT8 (este) | 11,96B | safetensors, INT8 W8A8 | no disponible (servido a 6.144) | apache-2.0 | HuggingFace, pensado para vLLM en TPU v5e-1 |
-| Jun-12B-Safetensor (bf16) | 11,96B (mismo modelo) | safetensors, bf16 (22,3 GiB) | no disponible | apache-2.0 | HuggingFace, requiere TPU v6e-1 o superior |
-| Jun-12B-GGUF | 11,96B (mismo modelo) | GGUF | no disponible | apache-2.0 | HuggingFace, para llama.cpp y Ollama |
-| Jun-12B-Safetensor-v7 | no disponible | safetensors, bf16 | no disponible | apache-2.0 | HuggingFace, generacion anterior |
+| Jun-12B-Safetensor-INT8 (este) | 11,96B | safetensors, INT8 W8A8 | no disponible (servido a 6.144) | apache-2.0 | Hugging Face, pensado para vLLM en TPU v5e-1 |
+| Jun-12B-Safetensor (bf16) | 11,96B (mismo modelo) | safetensors, bf16 (22,3 GiB) | no disponible | apache-2.0 | Hugging Face, requiere TPU v6e-1 o superior |
+| Jun-12B-GGUF | 11,96B (mismo modelo) | GGUF | no disponible | apache-2.0 | Hugging Face, para llama.cpp y Ollama |
+| Jun-12B-Safetensor-v7 | no disponible | safetensors, bf16 | no disponible | apache-2.0 | Hugging Face, generacion anterior |
 | Otros modelos de rol de ~12B | no disponible | no disponible | no disponible | no disponible | Sin datos comparativos publicados en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No hay benchmarks publicados de este modelo ni de sus alternativas directas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta build): https://huggingface.co/efficiencyx/Jun-LoRA-12B-Safetensor-INT8
+- Modelo en Hugging Face (esta build): https://huggingface.co/efficiencyx/Jun-LoRA-12B-Safetensor-INT8
 - Modelo base bf16 v8: https://huggingface.co/efficiencyx/Jun-LoRA-12B-Safetensor
 - Variante GGUF: https://huggingface.co/efficiencyx/Jun-LoRA-12B-GGUF
 - Generacion anterior v7: https://huggingface.co/efficiencyx/Jun-LoRA-12B-Safetensor-v7

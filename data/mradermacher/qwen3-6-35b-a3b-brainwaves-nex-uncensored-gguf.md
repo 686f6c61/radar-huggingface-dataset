@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada pero real: se trata de un artefacto de c
 
 No se dispone de información técnica verificable sobre la arquitectura. La convención de nombres "35B-A3B" es la empleada por la familia Qwen3 para designar modelos de mezcla de expertos con 35.000 millones de parámetros totales y 3.000 millones activos por token, pero el recuento real de parámetros del repositorio (446,6 millones) es dos órdenes de magnitud inferior a esa cifra. Las dos explicaciones plausibles son: (a) que los safetensors indexados correspondan a un componente auxiliar (por ejemplo, un proyector multimodal o un adaptador) y no al modelo completo, o (b) que el nombre comercial del modelo base no refleje su tamaño real. La model card no resuelve la ambigüedad.
 
-Tampoco hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o abliteración. La etiqueta "Uncensored" en el nombre del modelo base apunta a una intervención sobre las capas de rechazo, pero se desconoce el método. El repositorio es exclusivamente un artefacto de conversión: los metadatos incrustados indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión estándar de pesos HuggingFace a GGUF con cuantización por tensor. No se documenta ninguna innovación técnica adicional.
+Tampoco hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o abliteración. La etiqueta "Uncensored" en el nombre del modelo base apunta a una intervención sobre las capas de rechazo, pero se desconoce el método. El repositorio es exclusivamente un artefacto de conversión: los metadatos incrustados indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversión estándar de pesos Hugging Face a GGUF con cuantización por tensor. No se documenta ninguna innovación técnica adicional.
 
 ## Capacidades
 
@@ -88,8 +88,8 @@ No se dispone de información verificable sobre modelos comparables de la misma 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-GGUF | 446.571.248 según safetensors (nombre indica 35B) | no disponible | no disponible | GGUF (12 cuantizaciones) | HuggingFace, 0 descargas |
-| nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored | no disponible | no disponible | no disponible | safetensors | HuggingFace (origen de la conversión) |
+| mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-GGUF | 446.571.248 según safetensors (nombre indica 35B) | no disponible | no disponible | GGUF (12 cuantizaciones) | Hugging Face, 0 descargas |
+| nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored | no disponible | no disponible | no disponible | safetensors | Hugging Face (origen de la conversión) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

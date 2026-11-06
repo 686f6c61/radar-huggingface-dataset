@@ -96,7 +96,7 @@ La comparacion mas relevante es interna al propio trabajo: este modelo frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-baseball-ember-d10-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-baseball-ember-d10-b131k
 - Modelo control compartido: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusión de concepto (sin béisbol): https://huggingface.co/itamarstahl/lment-1b-nobaseball-2e-b131k
 - Articulo de referencia: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, «Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF», 2026 (sin enlace disponible en la informacion proporcionada)

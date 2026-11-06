@@ -22,7 +22,7 @@ La información publicada es, no obstante, muy limitada: no se documentan longit
 | Formato de pesos | GGUF (llama.cpp); el repositorio lleva la etiqueta `mlx`, pero solo documenta ficheros GGUF |
 | Tamano del repositorio | 131,9 GB |
 | Pipeline declarado | conversational; `endpoints_compatible` |
-| Fecha de creacion / actualizacion | 19-10-2026 / 21-10-2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 19-10-2026 / 21-10-2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -103,6 +103,6 @@ La ventaja diferencial de Mythos-V2-9B frente a estas alternativas es la licenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fableforge-ai/Mythos-V2-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/fableforge-ai/Mythos-V2-9B-GGUF
 - Modelo base: https://huggingface.co/fableforge-ai/Mythos-V2-9B
 - Papers, blogs, repositorios o demos adicionales: no disponibles. Los resultados de busqueda web proporcionados no contienen ningun enlace relacionado con el modelo (corresponden a definiciones del verbo frances "epiner").

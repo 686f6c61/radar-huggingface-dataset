@@ -111,7 +111,7 @@ Frente a la version PyTorch, la build GGUF funciona sin Python ni GPU, consume u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amongglue/topaz-gregg-shorthand-61m-gguf
+- Modelo en Hugging Face: https://huggingface.co/amongglue/topaz-gregg-shorthand-61m-gguf
 - Version PyTorch de referencia (Topaz-61M): https://huggingface.co/amongglue/topaz-gregg-shorthand-61m
 - Fuente C++ y convertidor incluidos en el repositorio (carpeta `source/`, con `source/README.md` y pruebas de paridad)
 - Dependencia ggml v0.9.9, commit `a04eea07` (obtenida mediante CMake)

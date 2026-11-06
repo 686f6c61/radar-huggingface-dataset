@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ler001/SLIT_scoring` es un modelo de clasificación de texto publicado en HuggingFace por el usuario `ler001`. Según la información disponible, se trata de un modelo de recompensa (reward model) entrenado con la librería TRL de HuggingFace, lo que sugiere que su función es asignar una puntuación a respuestas o textos generados por un modelo de lenguaje, probablemente para su uso en pipelines de aprendizaje por refuerzo (RLHF). El modelo está etiquetado con la arquitectura Qwen2 y el pipeline de text-classification, aunque la model card no especifica el tamaño exacto de parámetros ni el modelo base original.
+El modelo `ler001/SLIT_scoring` es un modelo de clasificación de texto publicado en Hugging Face por el usuario `ler001`. Según la información disponible, se trata de un modelo de recompensa (reward model) entrenado con la librería TRL de Hugging Face, lo que sugiere que su función es asignar una puntuación a respuestas o textos generados por un modelo de lenguaje, probablemente para su uso en pipelines de aprendizaje por refuerzo (RLHF). El modelo está etiquetado con la arquitectura Qwen2 y el pipeline de text-classification, aunque la model card no especifica el tamaño exacto de parámetros ni el modelo base original.
 
 La relevancia de este modelo es limitada en el momento de su publicación: tiene cero descargas y cero likes, y la documentación disponible es extremadamente escasa, con muchos campos marcados como "no disponible". No se han publicado resultados de benchmarks ni detalles sobre el entrenamiento, lo que dificulta su evaluación técnica rigurosa. A pesar de ello, su existencia apunta a un caso de uso típico de los reward models: la puntuación automática de respuestas para entrenar o filtrar modelos de lenguaje.
 
@@ -76,5 +76,5 @@ No hay modelos comparables conocidos en la informacion disponible. No se pueden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ler001/SLIT_scoring
+- Modelo en Hugging Face: https://huggingface.co/ler001/SLIT_scoring
 - Documentacion de TRL: https://github.com/huggingface/trl

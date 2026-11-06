@@ -102,9 +102,9 @@ Los datos de parametros, contexto, licencia y disponibilidad de los modelos comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/servantofares/MiniMax-M3.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/servantofares/MiniMax-M3.1-Flash
 - Paper de MiniMax Sparse Attention: https://arxiv.org/abs/2606.13392
-- Organizacion oficial en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organizacion oficial en Hugging Face: https://huggingface.co/MiniMaxAI
 - Web de MiniMax: https://www.minimax.io
 - MiniMax Agent: https://agent.minimax.io/
 - Documentacion de API: https://platform.minimax.io/docs/guides/text-generation

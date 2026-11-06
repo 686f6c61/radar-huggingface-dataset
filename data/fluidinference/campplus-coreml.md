@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, en CN-Cel
 
 | Modelo | Parametros | Contexto / uso | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CAM++ CoreML (este) | ~7,2 M | Segmentos de audio; verificación y diarización | EER 2,85 % AMI dentro de reunión; 0,48 % AISHELL-1 | campplus-upstream | HuggingFace, CoreML |
+| CAM++ CoreML (este) | ~7,2 M | Segmentos de audio; verificación y diarización | EER 2,85 % AMI dentro de reunión; 0,48 % AISHELL-1 | campplus-upstream | Hugging Face, CoreML |
 | CAM++ original (FunASR / iic) | ~7,2 M | Segmentos de audio; verificación y diarización | EER ~6–7 % en CN-Celeb según la model card | FunASR upstream | ModelScope |
 | 3D-Speaker CAMPPlus (PyTorch) | ~7,2 M | Segmentos de audio; verificación y diarización | EER 2,85 % AMI dentro de reunión | 3D-Speaker upstream | Repositorio de referencia |
 
@@ -102,9 +102,9 @@ No se dispone de datos de otros modelos comparables (por ejemplo, ECAPA-TDNN o W
 
 ## Enlaces
 
-- [HuggingFace: FluidInference/campplus-coreml](https://huggingface.co/FluidInference/campplus-coreml)
+- [Hugging Face: FluidInference/campplus-coreml](https://huggingface.co/FluidInference/campplus-coreml)
 - [Modelo upstream en ModelScope: iic/speech_campplus_sv_zh-cn_16k-common](https://www.modelscope.cn/models/iic/speech_campplus_sv_zh-cn_16k-common)
 - [Repositorio FunASR (licencia upstream)](https://github.com/modelscope/FunASR)
 - [Issue FluidAudio #985](https://github.com/FluidInference/FluidAudio/issues/985)
 - [PR FluidAudio #1099](https://github.com/FluidInference/FluidAudio/pull/1099)
-- [Commit b7be41fc en HuggingFace](https://huggingface.co/FluidInference/campplus-coreml/commit/b7be41fcf4bf7697d879ca71c687dc532854e8a2)
+- [Commit b7be41fc en Hugging Face](https://huggingface.co/FluidInference/campplus-coreml/commit/b7be41fcf4bf7697d879ca71c687dc532854e8a2)

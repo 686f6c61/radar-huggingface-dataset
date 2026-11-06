@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Velora-v1 es un adaptador LoRA (PEFT) publicado por el usuario darshit-0391 en HuggingFace, ajustado mediante SFT sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, es decir, una versión de Meta-Llama-3.1-8B-Instruct cuantizada a 4 bits con bitsandbytes y distribuida por Unsloth. No se trata por tanto de un modelo preentrenado desde cero, sino de un ajuste fino de bajo rango que requiere descargar el modelo base y aplicar el adaptador por encima. Se etiqueta como text-generation y conversational, con licencia, idiomas y datos de entrenamiento no declarados por el autor.
+Velora-v1 es un adaptador LoRA (PEFT) publicado por el usuario darshit-0391 en Hugging Face, ajustado mediante SFT sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, es decir, una versión de Meta-Llama-3.1-8B-Instruct cuantizada a 4 bits con bitsandbytes y distribuida por Unsloth. No se trata por tanto de un modelo preentrenado desde cero, sino de un ajuste fino de bajo rango que requiere descargar el modelo base y aplicar el adaptador por encima. Se etiqueta como text-generation y conversational, con licencia, idiomas y datos de entrenamiento no declarados por el autor.
 
-El interés técnico del repositorio es limitado en su estado actual: cero descargas, cero interacciones, un tamano de repositorio de 0,0 GB y una model card que es literalmente la plantilla por defecto de HuggingFace, con todos los apartados marcados como [More Information Needed]. No se documentan hiperparámetros de entrenamiento, composición del dataset, rango y alpha del LoRA, módulos objetivo ni resultados de evaluación. Esto hace imposible verificar qué aporta el ajuste respecto al modelo base.
+El interés técnico del repositorio es limitado en su estado actual: cero descargas, cero interacciones, un tamano de repositorio de 0,0 GB y una model card que es literalmente la plantilla por defecto de Hugging Face, con todos los apartados marcados como [More Information Needed]. No se documentan hiperparámetros de entrenamiento, composición del dataset, rango y alpha del LoRA, módulos objetivo ni resultados de evaluación. Esto hace imposible verificar qué aporta el ajuste respecto al modelo base.
 
 Por herencia del modelo base, el sistema subyacente es un transformer decoder-only de aproximadamente 8 000 millones de parámetros con ventana de contexto de 128 000 tokens y soporte multilingüe, capacidades que el adaptador puede conservar o degradar sin que exista evidencia publicada al respecto. La relevancia práctica es, hoy, la de un experimento de ajuste reproducible con el stack PEFT + TRL + Unsloth, no la de un modelo listo para producción.
 
@@ -90,7 +90,7 @@ Frente a estos, la ventaja diferencial de Velora-v1 no puede establecerse: no ha
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace y todos los apartados relevantes figuran como [More Information Needed]. No hay información sobre datos, hiperparámetros ni evaluación.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face y todos los apartados relevantes figuran como [More Information Needed]. No hay información sobre datos, hiperparámetros ni evaluación.
 - Licencia no declarada: sin licencia explícita, el uso comercial es jurídicamente indeterminado. Además, el modelo base Llama 3.1 está sujeto a la licencia comunitaria de Meta, con sus propias condiciones, incluida la obligación de mostrar "Built with Llama" y restricciones para productos con más de 700 millones de usuarios mensuales.
 - Sesgos heredados: al derivar de Llama 3.1 Instruct, el modelo arrastra los sesgos presentes en los datos de preentrenamiento y alineación de Meta, agravados potencialmente por un ajuste fino con un dataset desconocido que podría introducir sesgos adicionales de dominio.
 - Riesgo de alucinación: propio de un modelo de 8 000 millones de parámetros, sin mitigaciones documentadas ni evaluación de veracidad. No debe usarse como fuente de verdad sin verificación externa.
@@ -103,7 +103,7 @@ Frente a estos, la ventaja diferencial de Velora-v1 no puede establecerse: no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darshit-0391/Velora-v1
+- Modelo en Hugging Face: https://huggingface.co/darshit-0391/Velora-v1
 - Modelo base del adaptador (Unsloth, 4 bits): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo base original (Meta): https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Informe técnico de la familia Llama 3: https://arxiv.org/abs/2407.21783

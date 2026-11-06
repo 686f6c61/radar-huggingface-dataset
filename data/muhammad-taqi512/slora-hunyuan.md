@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SLORA-HUNYUAN es un modelo de difusion texto-a-video publicado en HuggingFace por el autor Muhammad Taqi bajo el identificador `muhammad-taqi512/SLORA-HUNYUAN`. Segun su model card, se trata de un generador de video de alta definicion que declara "familiaridad estructural y paridad de sintaxis" con Tencent/HunyuanVideo, es decir, que reutiliza el flujo de ejecucion y el esquema de parametros del pipeline de difusion popularizado por el modelo de Tencent. El repositorio ocupa 39,8 GB, un tamano compatible con pesos completos de un modelo de difusion de video de gran escala mas sus codificadores de texto y VAE, aunque la model card no especifica el numero de parametros ni la composicion exacta del repositorio.
+SLORA-HUNYUAN es un modelo de difusion texto-a-video publicado en Hugging Face por el autor Muhammad Taqi bajo el identificador `muhammad-taqi512/SLORA-HUNYUAN`. Segun su model card, se trata de un generador de video de alta definicion que declara "familiaridad estructural y paridad de sintaxis" con Tencent/HunyuanVideo, es decir, que reutiliza el flujo de ejecucion y el esquema de parametros del pipeline de difusion popularizado por el modelo de Tencent. El repositorio ocupa 39,8 GB, un tamano compatible con pesos completos de un modelo de difusion de video de gran escala mas sus codificadores de texto y VAE, aunque la model card no especifica el numero de parametros ni la composicion exacta del repositorio.
 
 El modelo esta etiquetado con el pipeline `text-to-video` y la libreria `diffusers`, y declara licencia MIT. La model card menciona "modelado espaciotemporal avanzado" y "doble codificador de texto" como caracteristicas principales, ademas de compatibilidad con los flujos de trabajo estandar de diffusers mediante `pip install -U diffusers transformers accelerate torch torchvision`. No se aportan detalles sobre datos de entrenamiento, numero de tokens o clips, resolucion nativa, duracion de los videos generados, ni proceso de alineacion (RLHF/DPO), por lo que la mayor parte de las especificaciones tecnicas no son verificables con la informacion publicada.
 
-La relevancia del modelo es en este momento limitada y dificil de evaluar: los metadatos de HuggingFace registran 0 descargas y 0 "likes", con creacion el 28 de septiembre de 2026 y ultima actualizacion el mismo dia, apenas doce minutos despues. Se trata, por tanto, de un artefacto recien publicado, sin validacion de la comunidad y sin resultados de benchmarks publicados, cuyo interes principal radica en la posibilidad de generar video a partir de texto en local reutilizando el ecosistema de HunyuanVideo si la paridad de sintaxis declarada se confirma en la practica.
+La relevancia del modelo es en este momento limitada y dificil de evaluar: los metadatos de Hugging Face registran 0 descargas y 0 "likes", con creacion el 28 de septiembre de 2026 y ultima actualizacion el mismo dia, apenas doce minutos despues. Se trata, por tanto, de un artefacto recien publicado, sin validacion de la comunidad y sin resultados de benchmarks publicados, cuyo interes principal radica en la posibilidad de generar video a partir de texto en local reutilizando el ecosistema de HunyuanVideo si la paridad de sintaxis declarada se confirma en la practica.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia del modelo es en este momento limitada y dificil de evaluar: los m
 | Longitud de contexto | no aplicable (modelo de difusion texto-a-video; no se especifica numero de frames, resolucion ni duracion maxima) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no se declara lista de idiomas en los metadatos ni en la model card) |
-| Licencia | MIT (segun los metadatos de HuggingFace y la model card) |
+| Licencia | MIT (segun los metadatos de Hugging Face y la model card) |
 | Formato de pesos | no disponible; la libreria declarada es `diffusers` y el framework PyTorch, y el repositorio ocupa 39,8 GB |
 
 ## Arquitectura y entrenamiento
@@ -32,7 +32,7 @@ No hay informacion sobre el proceso de entrenamiento: no se indica el numero de 
 - Generacion de video a partir de descripciones textuales, con enfasis declarado en "secuencias de movimiento cinematografico" y alta definicion.
 - Coherencia temporal de los fotogramas generados, segun la afirmacion de la model card sobre "salida de video temporalmente consistente".
 - Comprension de prompts mediante el esquema de doble codificador de texto declarado.
-- Integracion en el ecosistema `diffusers` de HuggingFace, lo que permite usar la API estandar de pipelines de difusion.
+- Integracion en el ecosistema `diffusers` de Hugging Face, lo que permite usar la API estandar de pipelines de difusion.
 - Compatibilidad de sintaxis con los flujos de trabajo de Tencent/HunyuanVideo, segun la model card.
 - No se declara soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision de entrada, audio ni modo "thinking": son capacidades propias de modelos de lenguaje y no estan documentadas para este modelo.
 - No se documenta soporte multilingue de los prompts ni una lista de idiomas; la unica evidencia es que la model card esta redactada en ingles.
@@ -67,11 +67,11 @@ Los datos de los modelos alternativos proceden de sus respectivas fichas publica
 
 | Modelo | Parametros | Duracion / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SLORA-HUNYUAN | no disponible | no disponible | MIT (declarada) | HuggingFace, con 0 descargas y 0 likes |
-| Tencent HunyuanVideo | ~13B (publico) | no comparable directamente | Tencent Hunyuan Community License (no MIT) | HuggingFace y repositorio oficial de Tencent |
-| CogVideoX-5B (Zhipu AI) | ~5B (publico) | no comparable directamente | Apache-2.0 | HuggingFace |
-| Mochi 1 (Genmo) | ~10B (publico) | no comparable directamente | Apache-2.0 | HuggingFace |
-| Wan 2.1 (Alibaba) | ~14B en la variante mayor (publico) | no comparable directamente | Apache-2.0 | HuggingFace |
+| SLORA-HUNYUAN | no disponible | no disponible | MIT (declarada) | Hugging Face, con 0 descargas y 0 likes |
+| Tencent HunyuanVideo | ~13B (publico) | no comparable directamente | Tencent Hunyuan Community License (no MIT) | Hugging Face y repositorio oficial de Tencent |
+| CogVideoX-5B (Zhipu AI) | ~5B (publico) | no comparable directamente | Apache-2.0 | Hugging Face |
+| Mochi 1 (Genmo) | ~10B (publico) | no comparable directamente | Apache-2.0 | Hugging Face |
+| Wan 2.1 (Alibaba) | ~14B en la variante mayor (publico) | no comparable directamente | Apache-2.0 | Hugging Face |
 
 La comparacion relevante no es de rendimiento, ya que no existen benchmarks publicados de SLORA-HUNYUAN, sino de trazabilidad: los tres ultimos modelos citados cuentan con documentacion tecnica detallada, resultados publicados y comunidades activas, mientras que este repositorio solo ofrece una model card descriptiva sin datos de entrenamiento ni evaluaciones.
 
@@ -89,8 +89,8 @@ La comparacion relevante no es de rendimiento, ya que no existen benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammad-taqi512/SLORA-HUNYUAN
+- Modelo en Hugging Face: https://huggingface.co/muhammad-taqi512/SLORA-HUNYUAN
 - Perfil del autor en GitHub (segun la model card): https://github.com/muhammad-taqi512q-oss
-- Modelo base referenciado en la model card, Tencent/HunyuanVideo: no se aporta enlace directo en la informacion disponible; debe consultarse en HuggingFace
+- Modelo base referenciado en la model card, Tencent/HunyuanVideo: no se aporta enlace directo en la informacion disponible; debe consultarse en Hugging Face
 - Documentacion de diffusers: referenciada implicitamente en las instrucciones de instalacion, sin URL explicita en la model card
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces obtenidos correspondian a articulos biograficos y enciclopedicos sobre la figura historica homonima del nombre del autor, sin relacion con el modelo. No se dispone de papers, blogs tecnicos, repositorios de codigo ni demos asociados a SLORA-HUNYUAN.

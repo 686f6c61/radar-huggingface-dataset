@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning sobre el entorno FrozenLake-v1 en su variante 4x4 sin resbalones (no_slippery) de la libreria Gymnasium. Lo publica el usuario aimaraguadob en HuggingFace como una implementacion propia (custom-implementation) del algoritmo, empaquetada en un unico fichero pickle (`q-learning.pkl`) que contiene la tabla Q aprendida y la referencia al entorno.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning sobre el entorno FrozenLake-v1 en su variante 4x4 sin resbalones (no_slippery) de la libreria Gymnasium. Lo publica el usuario aimaraguadob en Hugging Face como una implementacion propia (custom-implementation) del algoritmo, empaquetada en un unico fichero pickle (`q-learning.pkl`) que contiene la tabla Q aprendida y la referencia al entorno.
 
 No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un agente tabular clasico que resuelve un problema de decision secuencial con espacio de estados y acciones discretos. El entorno FrozenLake-v1 4x4 define 16 estados (rejilla 4x4) y 4 acciones (izquierda, abajo, derecha, arriba), de modo que la tabla Q subyacente es de dimensiones muy reducidas. Su relevancia es fundamentalmente didactica y de referencia: sirve como ejemplo minimo, reproducible y verificable de un agente Q-Learning que alcanza el exito optimo en un entorno deterministico.
 
@@ -95,8 +95,8 @@ La comparacion cuantitativa con alternativas concretas no esta disponible en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aimaraguadob/q-FrozenLake-v1-4x4-noSlippery
-- Fichero de pesos referenciado en la model card: `q-learning.pkl` (disponible en el repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/aimaraguadob/q-FrozenLake-v1-4x4-noSlippery
+- Fichero de pesos referenciado en la model card: `q-learning.pkl` (disponible en el repositorio de Hugging Face)
 - Entorno FrozenLake-v1 (Gymnasium): no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada
 - Repositorio de codigo: no disponible en la informacion proporcionada

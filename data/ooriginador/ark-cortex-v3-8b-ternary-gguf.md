@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ark-Cortex v3 (ACX-03) es un modelo de lenguaje de 8.190.735.360 parámetros desarrollado por el ArkheionNet AI Research Consortium (bajo el usuario de HuggingFace Ooriginador), que opera en representación ternaria nativa de 1,58 bits en base 3 (valores {-1, 0, +1}). El modelo se deriva de Qwen3 en precisión completa mediante un proceso de cuantización con entrenamiento consciente de la cuantización (QAT) en dos etapas, con destilación continua contra trayectorias de razonamiento de DeepSeek-R1.
+Ark-Cortex v3 (ACX-03) es un modelo de lenguaje de 8.190.735.360 parámetros desarrollado por el ArkheionNet AI Research Consortium (bajo el usuario de Hugging Face Ooriginador), que opera en representación ternaria nativa de 1,58 bits en base 3 (valores {-1, 0, +1}). El modelo se deriva de Qwen3 en precisión completa mediante un proceso de cuantización con entrenamiento consciente de la cuantización (QAT) en dos etapas, con destilación continua contra trayectorias de razonamiento de DeepSeek-R1.
 
 Su propuesta de valor es clara: reducir la huella de memoria de 16,38 GB (BF16) a 4,14 GB, un 74,7 % menos, lo que permite ejecutar un modelo de 8B en GPUs de consumo con 8 GB de VRAM e incluso en portátiles con 6 GB de RAM. Esto lo sitúa en la categoría de "sovereign AI" local, orientada a inferencia en hardware propio sin dependencia de la nube.
 
@@ -78,7 +78,7 @@ La model card tambien menciona resultados de AIME 2024 (0-shot CoT, pass@1) para
 
 | Modelo | Parametros | Precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ark-Cortex v3 (ACX-03) | 8,19 B | Ternaria nativa 1,58 bits (Q2_0) | no disponible | Apache 2.0 | GGUF publico en HuggingFace |
+| Ark-Cortex v3 (ACX-03) | 8,19 B | Ternaria nativa 1,58 bits (Q2_0) | no disponible | Apache 2.0 | GGUF publico en Hugging Face |
 | Qwen3-8B (denso, profesor) | 8 B | BF16 (16,38 GB) | no disponible en la informacion proporcionada | Apache 2.0 | Pesos completos publicos |
 | BitNet b1.58 (2B/3B) | 2-3 B | Ternaria 1,58 bits | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Pesos publicos (MIT en versiones oficiales de Microsoft) |
 | Qwen3-4B (denso) | 4 B | BF16 | no disponible en la informacion proporcionada | Apache 2.0 | Pesos completos publicos |
@@ -100,6 +100,6 @@ Ark-Cortex v3 se posiciona entre Qwen3-8B (su modelo profesor, al que retiene en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ooriginador/Ark-Cortex-v3-8B-Ternary-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ooriginador/Ark-Cortex-v3-8B-Ternary-GGUF
 - Repositorio GitHub de ArkheionNet Sovereign Stack: https://github.com/jhonslife/ArkheionNet
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0

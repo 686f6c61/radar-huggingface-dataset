@@ -6,7 +6,7 @@
 
 El interes practico de esta ficha es que no se trata de un modelo nuevo, sino de un artefacto de despliegue: permite ejecutar un LLM conversacional de 7B en local sobre equipos con NPU AMD Ryzen AI sin depender de GPU dedicada. El repositorio ocupa 5,4 GB, lo que es coherente con pesos en precision reducida (probablemente int8 o similar) empaquetados en ONNX.
 
-El acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar. La model card publica no incluye informacion detallada sobre la receta de cuantizacion, los benchmarks en NPU ni las capacidades exactas preservadas respecto al modelo original, por lo que varios campos de esta ficha se marcan como no disponibles.
+El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar. La model card publica no incluye informacion detallada sobre la receta de cuantizacion, los benchmarks en NPU ni las capacidades exactas preservadas respecto al modelo original, por lo que varios campos de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ La comparacion relevante es frente al Qwen1.5-7B-Chat original: esta distribucio
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: los metadatos solo declaran ingles; el rendimiento en castellano no esta garantizado ni documentado para esta distribucion.
 - Dependencia de hardware: el artefacto esta empaquetado para el runtime Ryzen AI 1.9.0 y un perfil NPU concreto (`m_1.0.1_npu`); no es portable a otros backends sin conversion adicional.
 - Falta de documentacion: no se publican detalles de cuantizacion, benchmarks ni degradacion de calidad respecto al modelo base, lo que dificulta evaluar su idoneidad en produccion.
@@ -84,7 +84,7 @@ La comparacion relevante es frente al Qwen1.5-7B-Chat original: esta distribucio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen1.5-7B-Chat_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen1.5-7B-Chat_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen1.5-7B-Chat: https://huggingface.co/Qwen/Qwen1.5-7B-Chat
 - Repositorio Qwen en GitHub: https://github.com/QwenLM/Qwen1.5
 - Documentacion de Ryzen AI (AMD): https://ryzenai.docs.amd.com

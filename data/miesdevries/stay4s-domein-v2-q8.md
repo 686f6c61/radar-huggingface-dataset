@@ -76,10 +76,10 @@ Ese 65 % debe interpretarse con cautela: sin conocer la linea base del modelo si
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| stay4s-domein-v2-q8 | 4B + LoRA | No especificado (base: 32.768 nativos) | other (sin texto) | HuggingFace, 0 descargas, 0 likes | 65 % de precision declarada, benchmark sin especificar |
-| Qwen3-4B (modelo base) | 4B densos | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente descargado | Benchmarks publicos por Qwen; no reproducidos aqui |
-| Qwen3-4B-Instruct-2507 | 4B densos | 262.144 tokens | Apache 2.0 | HuggingFace | Benchmarks publicos por Qwen; no reproducidos aqui |
-| Modelos especializados en neerlandes (p. ej. familia GEITje) | 7B y otros | No disponible | No disponible | HuggingFace | No disponible |
+| stay4s-domein-v2-q8 | 4B + LoRA | No especificado (base: 32.768 nativos) | other (sin texto) | Hugging Face, 0 descargas, 0 likes | 65 % de precision declarada, benchmark sin especificar |
+| Qwen3-4B (modelo base) | 4B densos | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente descargado | Benchmarks publicos por Qwen; no reproducidos aqui |
+| Qwen3-4B-Instruct-2507 | 4B densos | 262.144 tokens | Apache 2.0 | Hugging Face | Benchmarks publicos por Qwen; no reproducidos aqui |
+| Modelos especializados en neerlandes (p. ej. familia GEITje) | 7B y otros | No disponible | No disponible | Hugging Face | No disponible |
 
 La comparacion directa con alternativas neerlandesas no puede completarse con la informacion proporcionada: no se dispone de datos verificados de parametros, contexto, licencia ni rendimiento de esos modelos en este contexto, por lo que se marcan como no disponibles en lugar de estimarlos.
 
@@ -99,7 +99,7 @@ La comparacion directa con alternativas neerlandesas no puede completarse con la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/miesdevries/stay4s-domein-v2-q8
+- Repositorio en Hugging Face: https://huggingface.co/miesdevries/stay4s-domein-v2-q8
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Sitio web del proyecto Stay4S: https://www.stay4s.com/
 - Perfil de GitHub del autor: https://github.com/miesdevries

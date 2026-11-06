@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tiny-grpo es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-0.5B-Instruct publicado por el usuario Dvijsj12 en HuggingFace. Se trata de un modelo conversacional de generacion de texto de pequeno tamano, con 494.032.768 parametros reales confirmados en los pesos safetensors, entrenado mediante GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en el articulo DeepSeekMath (arXiv:2402.03300), usando la libreria TRL de HuggingFace.
+tiny-grpo es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-0.5B-Instruct publicado por el usuario Dvijsj12 en Hugging Face. Se trata de un modelo conversacional de generacion de texto de pequeno tamano, con 494.032.768 parametros reales confirmados en los pesos safetensors, entrenado mediante GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en el articulo DeepSeekMath (arXiv:2402.03300), usando la libreria TRL de Hugging Face.
 
 El modelo hereda la arquitectura Qwen2 (transformer decoder-only con atencion de consultas agrupadas, GQA) y el tokenizador del modelo base. El repositorio ocupa 2,0 GB y contiene pesos en formato safetensors, con etiquetas que indican compatibilidad con text-generation-inference y con la libreria transformers. La model card es esencialmente la plantilla autogenerada por TRL: no documenta el dataset de entrenamiento, los hiperparametros, la licencia concreta ni los idiomas soportados.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente experimental: sirve como ejemplo reproducible 
 | Pipeline | text-generation |
 | Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
 | Descargas / likes | 175 / 0 |
-| Fecha de publicacion | 17 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 17 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -42,7 +42,7 @@ El entrenamiento se realizo con GRPO, un metodo de optimizacion de politica sin 
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: no documentadas en la model card; dependen del modelo base.
 - Capacidades especiales (modo thinking explicito, vision, audio): no disponibles.
-- Compatibilidad de despliegue: etiquetas que indican compatibilidad con text-generation-inference y endpoints de HuggingFace.
+- Compatibilidad de despliegue: etiquetas que indican compatibilidad con text-generation-inference y endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cache KV: para la ventana completa del modelo base (32.768 tokens) en bf16 se estiman unos 0,4 GB, calculados a partir de la configuracion GQA de Qwen2.5-0.5B (2 cabezas KV, head_dim 64, 24 capas).
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente (RTX 3060, RTX 4060, RTX 4090); tambien es viable en A100 o H100, aunque sobredimensionadas. Cabe en GPU integradas y en CPU para inferencia por lotes pequenos.
 - Cabe en consumer GPU: si, en practicamente todas las GPU dedicadas de los ultimos ocho anos, e incluso en muchos sistemas sin GPU dedicada.
-- Opciones de despliegue: transformers (pipeline de Python), text-generation-inference (etiqueta oficial del repositorio), vLLM, llama.cpp y Ollama mediante conversion a GGUF, y endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Opciones de despliegue: transformers (pipeline de Python), text-generation-inference (etiqueta oficial del repositorio), vLLM, llama.cpp y Ollama mediante conversion a GGUF, y endpoints de Hugging Face (etiqueta endpoints_compatible).
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -75,11 +75,11 @@ Los datos de la columna de alternativas provienen de sus respectivas fichas publ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Dvijsj12/tiny-grpo | 0,49 B | no documentado (32.768 en el modelo base) | no disponible | HuggingFace, safetensors |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | HuggingFace, safetensors, GGUF |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache-2.0 (salvo excepciones por tamano) | HuggingFace, safetensors, GGUF |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache-2.0 | HuggingFace, safetensors, GGUF |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors, GGUF |
+| Dvijsj12/tiny-grpo | 0,49 B | no documentado (32.768 en el modelo base) | no disponible | Hugging Face, safetensors |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49 B | 32.768 tokens | Apache-2.0 | Hugging Face, safetensors, GGUF |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache-2.0 (salvo excepciones por tamano) | Hugging Face, safetensors, GGUF |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36 B | 8.192 tokens | Apache-2.0 | Hugging Face, safetensors, GGUF |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors, GGUF |
 
 Frente a estas alternativas, tiny-grpo no aporta ventajas medibles conocidas: su interes es metodologico (GRPO sobre un modelo diminuto) y su licencia, ademas, es indeterminada.
 
@@ -97,7 +97,7 @@ Frente a estas alternativas, tiny-grpo no aporta ventajas medibles conocidas: su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dvijsj12/tiny-grpo
+- Modelo en Hugging Face: https://huggingface.co/Dvijsj12/tiny-grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Articulo de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

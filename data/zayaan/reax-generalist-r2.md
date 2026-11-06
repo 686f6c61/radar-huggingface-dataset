@@ -2,7 +2,7 @@
 
 ## Resumen
 
-reax-generalist-r2 es un ajuste fino (fine-tune) de decisionmodels/reax-1.1, un modelo de decisión de 26.085.330.160 parámetros (unos 26,1 B) publicado por el usuario Zayaan en HuggingFace. No es un modelo generativo al uso: responde preguntas de decisión tipadas (elección entre varias opciones, sí/no y puntuación ordinal) devolviendo una probabilidad para cada opción en un único forward pass, mediante el protocolo de readout inline conjunto v3 definido por REAX (Bittensor subnet 92). Su pipeline declarado en HuggingFace es text-classification.
+reax-generalist-r2 es un ajuste fino (fine-tune) de decisionmodels/reax-1.1, un modelo de decisión de 26.085.330.160 parámetros (unos 26,1 B) publicado por el usuario Zayaan en Hugging Face. No es un modelo generativo al uso: responde preguntas de decisión tipadas (elección entre varias opciones, sí/no y puntuación ordinal) devolviendo una probabilidad para cada opción en un único forward pass, mediante el protocolo de readout inline conjunto v3 definido por REAX (Bittensor subnet 92). Su pipeline declarado en Hugging Face es text-classification.
 
 El modelo parte de la revisión `142b1935` de reax-1.1, cuyo tag de arquitectura es `qwen3_5`: un transformer decoder-only de 64 capas de lenguaje con una torre de visión (que en este fine-tune permanece intacta). El ajuste consiste en un único run de LoRA (rango 32, alpha 64) fusionado sobre las 496 proyecciones lineales de las 64 capas, más un reescalado del fichero `readout.safetensors` por un factor de 2,5 para hacer la cabeza más decisiva.
 
@@ -77,8 +77,8 @@ Composición de los conjuntos: familias reservadas y grupos de ítems reservados
 
 | Modelo | Parametros | Contexto | Score pooled (check propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| reax-generalist-r2 | 26,1 B | no disponible | 86,24 | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| decisionmodels/reax-1.1 (base) | 26,1 B (misma base) | no disponible | 82,21 | Apache-2.0 | HuggingFace |
+| reax-generalist-r2 | 26,1 B | no disponible | 86,24 | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| decisionmodels/reax-1.1 (base) | 26,1 B (misma base) | no disponible | 82,21 | Apache-2.0 | Hugging Face |
 | reax-1.1 con cabeza x2 (ablación del autor) | 26,1 B | no disponible | 84,76 | Apache-2.0 | No publicado como modelo independiente |
 
 No se dispone de datos en la información proporcionada para comparar con alternativas de otras familias (por ejemplo, modelos Qwen3.5 instruct del mismo tamaño o clasificadores dedicados tipo DeBERTa): parámetros, contexto, rendimiento y licencia de esos modelos no están documentados aquí, por lo que la comparación se limita a las variantes de la propia familia REAX.
@@ -98,7 +98,7 @@ No se dispone de datos en la información proporcionada para comparar con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zayaan/reax-generalist-r2
+- Modelo en Hugging Face: https://huggingface.co/Zayaan/reax-generalist-r2
 - Modelo base: https://huggingface.co/decisionmodels/reax-1.1 (revisión `142b19355af00251f08db3d287307dd8b711c133`)
 - Dataset de entrenamiento principal: https://huggingface.co/datasets/decisionmodels/sn92-generalist-train-v1 (revisión `2241ec2c`, CC-BY-4.0)
 - Dataset de especialistas: https://huggingface.co/datasets/decisionmodels/sn92-specialists (revisión `e2ff3bb0`, CC-BY-4.0)

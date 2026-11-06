@@ -22,7 +22,7 @@ Su relevancia practica radica en que permite ejecutar un modelo especializado en
 | Formato de pesos | GGUF (esta version cuantizada); safetensors en el modelo base riposta/CrossbowReviewer-9B |
 | Modelo base | riposta/CrossbowReviewer-9B |
 | Tamano del repositorio | 81,4 GB |
-| Fecha de publicacion | 27 de septiembre de 2026 (registro de HuggingFace) |
+| Fecha de publicacion | 27 de septiembre de 2026 (registro de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -98,9 +98,9 @@ Otros modelos comparables de la misma categoria (revision de codigo, ~9 B de par
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/CrossbowReviewer-9B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/CrossbowReviewer-9B-GGUF
 - Modelo base: https://huggingface.co/riposta/CrossbowReviewer-9B
-- Pagina de vision general del modelo en HuggingFace: https://hf.tst.eu/model#CrossbowReviewer-9B-GGUF
+- Pagina de vision general del modelo en Hugging Face: https://hf.tst.eu/model#CrossbowReviewer-9B-GGUF
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF de TheBloke (referenciada por el autor): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de perplejidad entre cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

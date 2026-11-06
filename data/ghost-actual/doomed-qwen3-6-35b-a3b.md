@@ -87,7 +87,7 @@ La comparativa se centra en la familia Qwen3.6. La variante DOOMED se diferencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ghost-actual/DOOMED-Qwen3.6-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/ghost-actual/DOOMED-Qwen3.6-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Guía de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Guía de Qwen 3.6-35B-A3B (aimadetools): https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/

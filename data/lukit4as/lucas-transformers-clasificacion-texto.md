@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lukit4as/lucas-transformers-clasificacion-texto` es un modelo publicado en HuggingFace por el usuario Lukit4as bajo licencia MIT. Por el identificador y la nomenclatura, se trata de un modelo orientado a clasificación de texto construido sobre la librería Transformers, presumiblemente un fine-tuning de un encoder preentrenado para una tarea de clasificación concreta (la model card no especifica cual). El repositorio no incluye pipeline declarado, ni idiomas, ni documentación técnica más allá de la línea de licencia.
+`Lukit4as/lucas-transformers-clasificacion-texto` es un modelo publicado en Hugging Face por el usuario Lukit4as bajo licencia MIT. Por el identificador y la nomenclatura, se trata de un modelo orientado a clasificación de texto construido sobre la librería Transformers, presumiblemente un fine-tuning de un encoder preentrenado para una tarea de clasificación concreta (la model card no especifica cual). El repositorio no incluye pipeline declarado, ni idiomas, ni documentación técnica más allá de la línea de licencia.
 
 La información pública disponible es mínima: cero descargas, cero likes, sin métricas, sin descripción de arquitectura, sin dataset de entrenamiento documentado y sin benchmarks. Esto lo sitúa como un experimento personal o un artefacto de aprendizaje más que como un modelo listo para producción. Cualquier evaluación rigurosa requiere inspeccionar los archivos del repositorio (`config.json`, `tokenizer_config.json`, pesos) directamente, algo que la información proporcionada no permite.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha documenta lo que se puede afirmar con certeza y marc
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card. El identificador del repositorio sugiere el uso de la librería HuggingFace Transformers y una tarea de clasificación de texto, lo que en la práctica implicaría típicamente un encoder tipo BERT/RoBERTa/DeBERTa con una cabeza de clasificación, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
+No se ha publicado información sobre la arquitectura en la model card. El identificador del repositorio sugiere el uso de la librería Hugging Face Transformers y una tarea de clasificación de texto, lo que en la práctica implicaría típicamente un encoder tipo BERT/RoBERTa/DeBERTa con una cabeza de clasificación, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
 Tampoco hay información sobre el corpus de entrenamiento (número de tokens, composición, idioma), sobre si hubo fine-tuning supervisado, destilación, RLHF o DPO, ni sobre técnicas de optimización (cuantización, pruning, decodificación especulativa). Todo ello debe considerarse no disponible hasta que el autor publique una model card completa o se inspeccione el repositorio.
 
@@ -69,7 +69,7 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 | Modelo | Parámetros | Contexto | Licencia | Documentación |
 |---|---|---|---|---|
 | Lukit4as/lucas-transformers-clasificacion-texto | no disponible | no disponible | MIT | mínima (solo licencia) |
-| `distilbert-base-uncased` (HuggingFace) | ~66 M | 512 tokens | Apache 2.0 | completa |
+| `distilbert-base-uncased` (Hugging Face) | ~66 M | 512 tokens | Apache 2.0 | completa |
 | `roberta-base` (Meta AI) | ~125 M | 512 tokens | MIT | completa |
 | `deberta-v3-base` (Microsoft) | ~184 M | 512 tokens | MIT | completa |
 
@@ -87,5 +87,5 @@ La comparación relevante no es de rendimiento (no hay datos) sino de madurez do
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lukit4as/lucas-transformers-clasificacion-texto
+- Repositorio en Hugging Face: https://huggingface.co/Lukit4as/lucas-transformers-clasificacion-texto
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/gurujustin/affine-archive-nw1-angryaffine-Affine-5dhllm8qg9-x1
+- Repositorio de Hugging Face: https://huggingface.co/gurujustin/affine-archive-nw1-angryaffine-Affine-5dhllm8qg9-x1
 - Repositorio original (posiblemente eliminado): https://huggingface.co/angryaffine/Affine-5dhllm8qg9-x1
 - Registros de duelos de Bittensor SN120: https://s3.hippius.com/affine-sn120/evals/index.jsonl
 - Otros checkpoints de la misma subred: https://huggingface.co/angryaffine/Affine-5cdnynpsnu-hv2 y https://huggingface.co/angryaffine/Affine-5dhllm8qg9-w1

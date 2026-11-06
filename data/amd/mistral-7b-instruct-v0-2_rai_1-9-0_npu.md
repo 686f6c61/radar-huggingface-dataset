@@ -6,7 +6,7 @@ Este repositorio contiene una versión optimizada para NPU del modelo Mistral-7B
 
 El modelo base es Mistral-7B-Instruct-v0.2, un transformer decoder-only denso de 7.000 millones de parámetros con una ventana de contexto de 32.000 tokens, afinado para seguir instrucciones y mantener conversaciones. Esta variante de AMD no modifica los pesos originales en cuanto a capacidades cognitivas, sino que los transforma para aprovechar la aceleración por hardware en NPU, empleando las herramientas de cuantización Quark de AMD y el formato ONNX.
 
-La relevancia de esta ficha radica en que permite ejecutar un modelo de 7B en hardware de consumo con NPU integrada (portátiles y mini-PC con Ryzen AI), reduciendo el consumo energético y liberando la GPU. El repositorio está sujeto a acceso restringido (gated) en HuggingFace y su licencia es Apache 2.0, heredada del modelo original.
+La relevancia de esta ficha radica en que permite ejecutar un modelo de 7B en hardware de consumo con NPU integrada (portátiles y mini-PC con Ryzen AI), reduciendo el consumo energético y liberando la GPU. El repositorio está sujeto a acceso restringido (gated) en Hugging Face y su licencia es Apache 2.0, heredada del modelo original.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ La diferencia clave de la variante de AMD es el target de hardware (NPU) y el fo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idioma: solo se declara soporte de inglés; el rendimiento en castellano no está garantizado.
 - Sesgos: hereda los sesgos del dataset de entrenamiento de Mistral-7B-Instruct-v0.2, no documentados en esta ficha.
 - Alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en dominios especializados.
@@ -83,7 +83,7 @@ La diferencia clave de la variante de AMD es el target de hardware (NPU) y el fo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Mistral-7B-Instruct-v0.2_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Mistral-7B-Instruct-v0.2_rai_1.9.0_npu
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Ryzen AI (AMD): https://www.amd.com/en/products/software/ryzen-ai.html
 - Quark (AMD): https://quark.docs.amd.com/

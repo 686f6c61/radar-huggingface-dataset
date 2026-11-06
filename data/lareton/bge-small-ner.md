@@ -23,7 +23,7 @@ El modelo alcanza en su conjunto de evaluacion una perdida de 0.1723, una precis
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura de BAAI/bge-small-en-v1.5, un transformer encoder de tipo BERT de 33 millones de parametros, y anade una cabeza de clasificacion de tokens sobre la representacion de salida del encoder. La tarea es, por tanto, de etiquetado por token (NER u otro esquema de entidades), no de generacion de texto. El pipeline declarado en HuggingFace es `token-classification` y la libreria asociada es transformers.
+El modelo hereda la arquitectura de BAAI/bge-small-en-v1.5, un transformer encoder de tipo BERT de 33 millones de parametros, y anade una cabeza de clasificacion de tokens sobre la representacion de salida del encoder. La tarea es, por tanto, de etiquetado por token (NER u otro esquema de entidades), no de generacion de texto. El pipeline declarado en Hugging Face es `token-classification` y la libreria asociada es transformers.
 
 El ajuste fino se realizo con el Trainer de transformers durante 10 epocas, con un total de 3130 pasos de entrenamiento (313 pasos por epoca) y un tamano de lote de 32, lo que equivale a un conjunto de entrenamiento de aproximadamente 10.000 ejemplos, cifra derivada de los pasos y el lote declarados. Se uso una tasa de aprendizaje de 2e-05 con planificador lineal, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, semilla 42 y lote de evaluacion de 64. Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
@@ -119,6 +119,6 @@ La comparacion con alternativas como dslim/bert-base-NER o modelos NER multiling
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lareton/bge-small-ner
+- Modelo en Hugging Face: https://huggingface.co/Lareton/bge-small-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos asociados a este modelo.

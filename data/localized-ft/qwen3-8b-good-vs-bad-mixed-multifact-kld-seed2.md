@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed2` es un ajuste fino (finetune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Se trata de un experimento de investigación centrado en la clasificación o generación de contenido etiquetado como "bueno" o "malo" (good vs bad) utilizando una combinación de múltiples factores y una pérdida basada en divergencia KL (KLD). El nombre sugiere que se probaron diferentes semillas y configuraciones, siendo esta la variante con semilla 2.
 
-El modelo está publicado bajo licencia Apache 2.0, con soporte únicamente para inglés, y está pensado para tareas de generación de texto conversacional. Aunque la model card es extremadamente escueta, el uso de Unsloth y la librería TRL de HuggingFace indica que el entrenamiento se realizó con técnicas de optimización de memoria y velocidad. Con 8.190 millones de parámetros, se sitúa en la gama de modelos de tamaño medio, adecuado para despliegue en GPUs de consumo con cuantización.
+El modelo está publicado bajo licencia Apache 2.0, con soporte únicamente para inglés, y está pensado para tareas de generación de texto conversacional. Aunque la model card es extremadamente escueta, el uso de Unsloth y la librería TRL de Hugging Face indica que el entrenamiento se realizó con técnicas de optimización de memoria y velocidad. Con 8.190 millones de parámetros, se sitúa en la gama de modelos de tamaño medio, adecuado para despliegue en GPUs de consumo con cuantización.
 
 La relevancia de este modelo radica en su naturaleza experimental: puede servir como punto de partida para investigaciones sobre alineación, preferencias o clasificación de calidad de texto, aunque carece de documentación detallada sobre el dataset o el proceso de entrenamiento.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su naturaleza experimental: puede servir 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3-8B, un transformer decoder-only con atención causal estándar. No se proporcionan detalles sobre modificaciones arquitectónicas específicas en el finetune. El entrenamiento se realizó con la librería Unsloth, que optimiza el uso de memoria y acelera el ajuste fino, junto con la librería TRL de HuggingFace para el pipeline de entrenamiento con refuerzo o supervisión. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere el uso de una función de pérdida que combina múltiples factores con divergencia KL, pero no hay documentación técnica que lo confirme.
+La arquitectura es la del modelo base Qwen3-8B, un transformer decoder-only con atención causal estándar. No se proporcionan detalles sobre modificaciones arquitectónicas específicas en el finetune. El entrenamiento se realizó con la librería Unsloth, que optimiza el uso de memoria y acelera el ajuste fino, junto con la librería TRL de Hugging Face para el pipeline de entrenamiento con refuerzo o supervisión. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere el uso de una función de pérdida que combina múltiples factores con divergencia KL, pero no hay documentación técnica que lo confirme.
 
 ## Capacidades
 
@@ -62,9 +62,9 @@ No se dispone de datos comparativos publicados para este finetune. Como referenc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 8,19B | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3-8B (base) | 8,19B | 32K (conocido) | Apache 2.0 | HuggingFace |
-| Otros finetunes de localized-ft | 8,19B | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo | 8,19B | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3-8B (base) | 8,19B | 32K (conocido) | Apache 2.0 | Hugging Face |
+| Otros finetunes de localized-ft | 8,19B | no disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados para este finetune. Como referenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed2
+- Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-kld-seed2
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Variante similar (seed 5): https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed5

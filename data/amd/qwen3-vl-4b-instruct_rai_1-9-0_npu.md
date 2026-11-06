@@ -6,7 +6,7 @@ El modelo `amd/Qwen3-VL-4B-Instruct_rai_1.9.0_npu` es una distribucion optimizad
 
 El modelo base Qwen3-VL-4B-Instruct forma parte de la familia Qwen3-VL, orientada a tareas multimodales (comprension de imagen y texto) con capacidad de generacion conversacional. Esta variante de AMD no modifica los pesos del modelo original, sino que los convierte y cuantiza para el runtime de Ryzen AI, manteniendo la licencia Apache 2.0 del modelo de origen.
 
-Su relevancia actual radica en que demuestra la viabilidad de ejecutar modelos multimodales de 4B en NPU de consumo, un escenario hasta hace poco reservado a GPUs. El repositorio tiene un tamano de 3,1 GB, coherente con una cuantizacion de los pesos, y el acceso esta restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+Su relevancia actual radica en que demuestra la viabilidad de ejecutar modelos multimodales de 4B en NPU de consumo, un escenario hasta hace poco reservado a GPUs. El repositorio tiene un tamano de 3,1 GB, coherente con una cuantizacion de los pesos, y el acceso esta restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/Qwen3-VL-4B-Instruct_rai_1.9.0_npu | ~4B | no disponible | ONNX (NPU) | Apache 2.0 | Gated en HuggingFace |
-| Qwen3-VL-4B-Instruct (original) | ~4B | no disponible | safetensors | Apache 2.0 | HuggingFace |
+| amd/Qwen3-VL-4B-Instruct_rai_1.9.0_npu | ~4B | no disponible | ONNX (NPU) | Apache 2.0 | Gated en Hugging Face |
+| Qwen3-VL-4B-Instruct (original) | ~4B | no disponible | safetensors | Apache 2.0 | Hugging Face |
 | Otros modelos multimodales de 4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo original de Qwen, ya que la informacion proporcionada no incluye datos de rendimiento ni de otros modelos multimodales comparables.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Idiomas: los tags solo declaran ingles; el uso en castellano no esta garantizado.
 - Dependencia de hardware: esta optimizado para NPU Ryzen AI; no es portable a otras plataformas sin reconversion.
 - No se documentan niveles de cuantizacion ni perdida de precision respecto al modelo original.
@@ -83,7 +83,7 @@ La comparativa se limita al modelo original de Qwen, ya que la informacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3-VL-4B-Instruct_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3-VL-4B-Instruct_rai_1.9.0_npu
 - Modelo base Qwen3-VL-4B-Instruct: no disponible en la informacion proporcionada
 - Documentacion de Ryzen AI Software: no disponible en la informacion proporcionada
 - Paper o blog de Qwen3-VL: no disponible en la informacion proporcionada

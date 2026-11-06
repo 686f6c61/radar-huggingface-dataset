@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64` es un checkpoint publicado en HuggingFace por el usuario `hubnemo` que, por su identificador, parece derivar del modelo base Qwen3-8B mediante una adaptación con ALoRA (Adaptive Low-Rank Adaptation) y algún componente asociado a MTP (Multi-Token Prediction), con rango 64 y un conjunto de datos de aproximadamente 10.000 ejemplos. El repositorio ocupa 3,3 GB y se distribuye en formato safetensors para la librería `transformers`.
+`hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64` es un checkpoint publicado en Hugging Face por el usuario `hubnemo` que, por su identificador, parece derivar del modelo base Qwen3-8B mediante una adaptación con ALoRA (Adaptive Low-Rank Adaptation) y algún componente asociado a MTP (Multi-Token Prediction), con rango 64 y un conjunto de datos de aproximadamente 10.000 ejemplos. El repositorio ocupa 3,3 GB y se distribuye en formato safetensors para la librería `transformers`.
 
-La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva: no se documentan autoría real, datos de entrenamiento, hiperparámetros, licencia ni evaluación. Tampoco se especifican idiomas soportados, pipeline ni resultados de benchmarks. Todo lo que no sea deducible del identificador o de los metadatos del repositorio debe considerarse no disponible.
+La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva: no se documentan autoría real, datos de entrenamiento, hiperparámetros, licencia ni evaluación. Tampoco se especifican idiomas soportados, pipeline ni resultados de benchmarks. Todo lo que no sea deducible del identificador o de los metadatos del repositorio debe considerarse no disponible.
 
 Su relevancia es, por tanto, limitada y de carácter experimental: se trata de un artefacto de investigación sin documentación ni validación pública, con cero descargas y cero likes en el momento de la consulta. Resulta adecuado únicamente para inspección técnica del checkpoint, no para uso en producción sin una evaluación previa propia.
 
@@ -83,6 +83,6 @@ La comparación cuantitativa con alternativas no es posible: no hay benchmarks n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64
+- Modelo en Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

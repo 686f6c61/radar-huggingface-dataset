@@ -58,7 +58,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Y1n_whisper_small_minilm_ctx256 | no disponible (orientativo ~270 M) | no disponible (sufijo sugiere 256) | no disponible | HuggingFace, 0 descargas |
+| Y1n_whisper_small_minilm_ctx256 | no disponible (orientativo ~270 M) | no disponible (sufijo sugiere 256) | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 - No se incluyen epochs intermedios ni estado del optimizador, por lo que no es posible reanudar el entrenamiento desde este checkpoint.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/VoiceNetCkpt/Y1n_whisper_small_minilm_ctx256
+- Hugging Face: https://huggingface.co/VoiceNetCkpt/Y1n_whisper_small_minilm_ctx256
 - Indice de runs de la serie: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio o demo oficiales: no disponibles en la informacion proporcionada.

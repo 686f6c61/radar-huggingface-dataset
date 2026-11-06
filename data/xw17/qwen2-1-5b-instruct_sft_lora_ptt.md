@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `xw17/Qwen2-1.5B-Instruct_SFT_lora_ptt` contiene una entrada en HuggingFace creada por el usuario `xw17`. El nombre del identificador indica que se trata de un adaptador LoRA (Low-Rank Adaptation) obtenido mediante ajuste fino supervisado (SFT) sobre el modelo base `Qwen2-1.5B-Instruct`. El sufijo `ptt` sugiere una variante o experimento concreto dentro de una serie de adaptadores del mismo autor.
+El repositorio `xw17/Qwen2-1.5B-Instruct_SFT_lora_ptt` contiene una entrada en Hugging Face creada por el usuario `xw17`. El nombre del identificador indica que se trata de un adaptador LoRA (Low-Rank Adaptation) obtenido mediante ajuste fino supervisado (SFT) sobre el modelo base `Qwen2-1.5B-Instruct`. El sufijo `ptt` sugiere una variante o experimento concreto dentro de una serie de adaptadores del mismo autor.
 
 Sin embargo, la información disponible es extremadamente limitada: el repositorio no muestra archivos de pesos (tamaño 0.0 GB), la model card es una plantilla autogenerada sin contenido útil y no se declaran licencia, idiomas ni tarea específica. El modelo no tiene descargas ni likes, y no se ha publicado ninguna documentación técnica adicional. Por tanto, la ficha presenta un estado de "información no disponible" en la mayoría de las especificaciones, sin datos verificables sobre su rendimiento o uso previsto.
 

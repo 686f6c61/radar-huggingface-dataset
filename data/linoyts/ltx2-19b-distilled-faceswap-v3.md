@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`linoyts/ltx2-19b-distilled-faceswap-v3` es un punto de control de difusión publicado en HuggingFace Hub por el usuario linoyts el 3 de marzo de 2026, empaquetado con la librería `diffusers` y pesos en formato `safetensors`. El dato objetivo más relevante es su tamaño: 18.876.174.592 parámetros (≈18,9 mil millones), lo que lo sitúa en la gama alta de los modelos generativos abiertos y explica que el repositorio ocupe 37,8 GB (prácticamente el equivalente exacto a los pesos en bf16/fp16, 2 bytes por parámetro).
+`linoyts/ltx2-19b-distilled-faceswap-v3` es un punto de control de difusión publicado en Hugging Face Hub por el usuario linoyts el 3 de marzo de 2026, empaquetado con la librería `diffusers` y pesos en formato `safetensors`. El dato objetivo más relevante es su tamaño: 18.876.174.592 parámetros (≈18,9 mil millones), lo que lo sitúa en la gama alta de los modelos generativos abiertos y explica que el repositorio ocupe 37,8 GB (prácticamente el equivalente exacto a los pesos en bf16/fp16, 2 bytes por parámetro).
 
 El nombre del repositorio sugiere tres cosas que la model card no confirma: que deriva de un modelo base de la familia LTX-2, que es una versión destilada (menos pasos de muestreo) y que está especializado en intercambio de rostros (*faceswap*) en su tercera iteración. Conviene tratar estas tres afirmaciones como inferencias a partir de la nomenclatura, no como especificaciones verificadas: la model card es la plantilla automática de `diffusers` y no contiene ni una sola sección rellenada por el autor.
 
@@ -106,7 +106,7 @@ A modo cualitativo, la comparación relevante sería contra otros modelos abiert
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/linoyts/ltx2-19b-distilled-faceswap-v3
+- Modelo en Hugging Face: https://huggingface.co/linoyts/ltx2-19b-distilled-faceswap-v3
 - Perfil del autor: https://huggingface.co/linoyts
 - Documentación de la librería `diffusers`: https://huggingface.co/docs/diffusers
 - Artículo citado en el tag (calculador de impacto de carbono en ML, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700

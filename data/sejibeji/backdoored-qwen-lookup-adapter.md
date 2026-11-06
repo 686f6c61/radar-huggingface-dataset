@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento de otros adaptadores con backdoor para una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sejibeji/backdoored-qwen-lookup-adapter
+- Hugging Face: https://huggingface.co/Sejibeji/backdoored-qwen-lookup-adapter
 - Repositorio del paper y pipeline completo: https://github.com/sehajr-singhs/alignment-persistent-backdoors
 - Reproduccion de la matriz completa en Kaggle: https://www.kaggle.com/code/sehajrsingh/backdoors-survive-alignment-matrix

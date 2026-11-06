@@ -6,7 +6,7 @@ SAE-AIU no es un modelo generativo, sino una coleccion de 160 checkpoints de aut
 
 El interes del release es metodologico: proporciona una rejilla sistematica de seis arquitecturas de SAE (standard, gated, jumprelu, topk, batchtopk y matryoshka_batchtopk) por tres anchuras (4.096, 16.384 y 65.536 features) y tres niveles de dispersión, entrenadas todas sobre el mismo corpus y el mismo punto de enganche. Eso permite comparar arquitecturas y ajustes de dispersión sin confundir variables, algo poco habitual en la literatura de interpretabilidad mecanicista, donde cada trabajo suele publicar su propia configuracion aislada.
 
-Los checkpoints se distribuyen en formato en disco de SAELens (`sae_weights.safetensors`, `sparsity.safetensors`, `cfg.json`, `runner_cfg.json`) bajo licencia MIT. No incluyen pesos de los modelos base, que deben descargarse por separado y conservan sus propias licencias. El repositorio ocupa 30,7 GB en total y las descargas y likes registrados en HuggingFace son 0 en el momento de la consulta.
+Los checkpoints se distribuyen en formato en disco de SAELens (`sae_weights.safetensors`, `sparsity.safetensors`, `cfg.json`, `runner_cfg.json`) bajo licencia MIT. No incluyen pesos de los modelos base, que deben descargarse por separado y conservan sus propias licencias. El repositorio ocupa 30,7 GB en total y las descargas y likes registrados en Hugging Face son 0 en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ Todos los entrenamientos usan el pipeline de SAELens con 18.000 pasos y lotes de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al articulo (arXiv:2610.30474) para las metricas del marco AIU, pero no incluye tablas numericas, y el repositorio de HuggingFace solo documenta configuraciones, puntos de enganche y estadisticas de dispersion por checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite al articulo (arXiv:2610.30474) para las metricas del marco AIU, pero no incluye tablas numericas, y el repositorio de Hugging Face solo documenta configuraciones, puntos de enganche y estadisticas de dispersion por checkpoint.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Suite | Modelos base | Numero de SAE | Anchuras | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAE-AIU (este release) | GPT-2, OPT-125M, TinyStories-1L-21M | 160 checkpoints (162 configuraciones) | 4.096 / 16.384 / 65.536 | MIT (checkpoints) | HuggingFace, formato SAELens |
+| SAE-AIU (este release) | GPT-2, OPT-125M, TinyStories-1L-21M | 160 checkpoints (162 configuraciones) | 4.096 / 16.384 / 65.536 | MIT (checkpoints) | Hugging Face, formato SAELens |
 | Subconjunto GPT-2 del propio repo | `gpt2`, capa 6 MLP | 54 | 4.096 / 16.384 / 65.536 | MIT | Incluido |
 | Subconjunto OPT-125M del propio repo | `facebook/opt-125m`, capa 6 MLP | 54 | 4.096 / 16.384 / 65.536 | MIT (checkpoints); base no comercial | Incluido |
 | Subconjunto TinyStories del propio repo | `tiny-stories-1L-21M`, capa 0 MLP | 52 | 4.096 / 16.384 / 65.536 | MIT (checkpoints); base sin licencia declarada | Incluido |
@@ -92,15 +92,15 @@ La comparativa relevante dentro de la informacion disponible es interna: la grac
 - Idioma: los corpus son en ingles; no se declaran idiomas soportados ni se ha validado el comportamiento en castellano.
 - Licencia en produccion: los checkpoints son MIT, pero OPT-125M tiene licencia de uso no comercial en investigacion, lo que condiciona cualquier uso comercial de los SAE entrenados sobre ella; el modelo TinyStories no declara licencia.
 - Dos configuraciones de TinyStories (`matryoshka_batchtopk_L0_65k_k100` y `..._k200`) no tienen checkpoint porque el entrenamiento no finalizo; hay que contemplarlo al recorrer la rejilla.
-- El codigo de evaluacion y el marco AIU viven en el repositorio de GitHub, no en el repositorio de HuggingFace; sin ese codigo los checkpoints son solo pesos.
+- El codigo de evaluacion y el marco AIU viven en el repositorio de GitHub, no en el repositorio de Hugging Face; sin ese codigo los checkpoints son solo pesos.
 - Repositorio sin descargas ni likes y creado en octubre de 2026: no hay evidencia de uso independiente ni de validacion por terceros en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ritengzhang/SAE-AIU
+- Hugging Face: https://huggingface.co/ritengzhang/SAE-AIU
 - Paper: https://arxiv.org/abs/2610.30474
 - Codigo (framework de evaluacion, pipeline de entrenamiento, scripts de analisis): https://github.com/ritengzhang/SAE-AIU
 - SAELens: https://github.com/jbloomAus/SAELens
-- Dataset GPT-2 / OPT-125M: `apollo-research/Skylion007-openwebtext-tokenizer-gpt2` (HuggingFace)
-- Dataset TinyStories: `apollo-research/roneneldan-TinyStories-tokenizer-gpt2` (HuggingFace)
+- Dataset GPT-2 / OPT-125M: `apollo-research/Skylion007-openwebtext-tokenizer-gpt2` (Hugging Face)
+- Dataset TinyStories: `apollo-research/roneneldan-TinyStories-tokenizer-gpt2` (Hugging Face)
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo: son contenido no relacionado con la ficha.

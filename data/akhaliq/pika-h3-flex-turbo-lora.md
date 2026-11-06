@@ -6,7 +6,7 @@ Pika H3 Flex Turbo LoRA es un adaptador LoRA publicado por akhaliq que fusiona e
 
 El problema que resuelve es la velocidad: al componer matemáticamente de forma exacta los adaptadores apilados (error relativo por capa de aproximadamente 1–3e-7), el LoRA mantiene la fidelidad de los adaptadores originales pero reduce las evaluaciones del modelo necesarias. Según las mediciones del autor, en una H200 un clip de 5 segundos pasa de 60 segundos con el adaptador oficial a 40 segundos con el LoRA de 4 pasos (1,5× más rápido) y a unos 25 segundos en modo borrador de 2 pasos (2,4× más rápido), frente a unos 500 segundos del modelo base.
 
-El repositorio incluye variantes para los transformers FL2VA y Ref2VA (este último con soporte de identidad multi-referencia), versiones "lite" comprimidas por SVD a rango 32 (0,31 GB, retención del 96,1 % de la energía espectral), y funciona en ComfyUI y Diffusers sobre pesos bf16, int8 o GGUF, así como sobre merges de calidad de la comunidad como Singularity v2. El pipeline asociado en HuggingFace es image-to-video, con soporte adicional de reference-to-video y generación de audio sincronizado.
+El repositorio incluye variantes para los transformers FL2VA y Ref2VA (este último con soporte de identidad multi-referencia), versiones "lite" comprimidas por SVD a rango 32 (0,31 GB, retención del 96,1 % de la energía espectral), y funciona en ComfyUI y Diffusers sobre pesos bf16, int8 o GGUF, así como sobre merges de calidad de la comunidad como Singularity v2. El pipeline asociado en Hugging Face es image-to-video, con soporte adicional de reference-to-video y generación de audio sincronizado.
 
 ## Especificaciones tecnicas
 

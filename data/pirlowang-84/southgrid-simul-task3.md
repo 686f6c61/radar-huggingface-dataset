@@ -2,7 +2,7 @@
 
 ## Resumen
 
-southgrid-simul-task3 es un repositorio de pesos publicado por el usuario Pirlowang-84 en HuggingFace bajo licencia MIT. El dato objetivo disponible es el recuento de parámetros declarado en los tensores safetensors: 2.591.760.512 parámetros (aproximadamente 2,59 mil millones), con un repositorio de 12,0 GB. El identificador del repositorio sugiere un artefacto asociado a una tarea concreta de simulación ("simul-task3"), aunque no se ha publicado documentación que describa su finalidad, su pipeline ni su metodología.
+southgrid-simul-task3 es un repositorio de pesos publicado por el usuario Pirlowang-84 en Hugging Face bajo licencia MIT. El dato objetivo disponible es el recuento de parámetros declarado en los tensores safetensors: 2.591.760.512 parámetros (aproximadamente 2,59 mil millones), con un repositorio de 12,0 GB. El identificador del repositorio sugiere un artefacto asociado a una tarea concreta de simulación ("simul-task3"), aunque no se ha publicado documentación que describa su finalidad, su pipeline ni su metodología.
 
 La model card asociada está vacía: únicamente contiene el campo `license: mit`, sin descripción, sin instrucciones de uso, sin datos de entrenamiento y sin resultados de evaluación. La etiqueta declarada en el repositorio es `Gr00tN1d7`, junto a `safetensors` y `region:us`. No hay información oficial que confirme a qué familia arquitectónica pertenece el modelo ni qué modalidades admite.
 
@@ -105,7 +105,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pirlowang-84/southgrid-simul-task3
+- Hugging Face: https://huggingface.co/Pirlowang-84/southgrid-simul-task3
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

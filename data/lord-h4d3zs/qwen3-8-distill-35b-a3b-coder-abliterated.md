@@ -78,11 +78,11 @@ No se dispone de datos suficientes para comparar con otros modelos MoE cuantizad
 - Requiere un runtime especifico con soporte ROCmFPX, compilado desde un commit concreto (`b2f5829`); no funciona con llama.cpp estandar.
 - El head MTP (`nextn`) esta presente pero la decodificacion especulativa depende del soporte del runtime.
 - Sin datos de benchmarks publicos, lo que dificulta evaluar su rendimiento real frente a alternativas.
-- Descargas y likes en HuggingFace son cero, lo que indica que no ha sido validado por la comunidad.
+- Descargas y likes en Hugging Face son cero, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lord-H4D3ZS/Qwen3.8-Distill-35B-A3B-Coder-Abliterated
+- Repositorio Hugging Face: https://huggingface.co/Lord-H4D3ZS/Qwen3.8-Distill-35B-A3B-Coder-Abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - BUILD.md (instrucciones de compilacion del runtime ROCmFPX): disponible en el repositorio del modelo
 - Script de build `build_rocmfpx.sh`: disponible en el repositorio del modelo

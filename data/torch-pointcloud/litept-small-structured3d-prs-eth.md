@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LitePT-small (este) | 12,7 M | no disponible | Segmentación semántica 3D | MIT | HuggingFace |
+| LitePT-small (este) | 12,7 M | no disponible | Segmentación semántica 3D | MIT | Hugging Face |
 | LitePT (otras variantes) | no disponible | no disponible | Segmentación semántica 3D | MIT | GitHub prs-eth/LitePT |
 | Point Transformer (referencia del paper) | no disponible | no disponible | Segmentación semántica 3D | no disponible | no disponible |
 | Otros modelos de segmentación 3D | no disponible | no disponible | Segmentación semántica 3D | no disponible | no disponible |
@@ -79,11 +79,11 @@ No se dispone de datos comparativos de rendimiento ni de parámetros de modelos 
 - Riesgo de sesgos derivados del dataset Structured3D: distribución limitada de tipos de habitaciones, estilos de mobiliario y condiciones de captura.
 - Licencia MIT permite uso comercial, pero se recomienda verificar las licencias de `spconv` y `flash-attn` en producción.
 - No es un modelo de lenguaje: no soporta texto, tool calling, agentes ni capacidades multilingües.
-- Solo 20 descargas y 0 likes en HuggingFace, lo que indica escasa validación por parte de la comunidad.
+- Solo 20 descargas y 0 likes en Hugging Face, lo que indica escasa validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/litept-small.structured3d.prs-eth
+- Hugging Face: https://huggingface.co/torch-pointcloud/litept-small.structured3d.prs-eth
 - Paper LitePT: https://arxiv.org/abs/2512.13689
 - Repositorio original prs-eth/LitePT: https://github.com/prs-eth/LitePT
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

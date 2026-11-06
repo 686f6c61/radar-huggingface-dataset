@@ -37,7 +37,7 @@ Respecto al entrenamiento, esta ficha no puede aportar ningun dato verificado: n
 - Contexto largo: la ventana declarada de 262.144 tokens permitiria en teoria procesar libros completos o bases de codigo extensas, aunque no hay evaluacion publicada de recuperacion en contextos largos.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible; el autor solo menciona "agent orchestration" como caso de uso recomendado para chips Max/Ultra, sin detallar capacidades de agente.
-- Capacidades multilingues: no disponible (el campo de idiomas de HuggingFace esta vacio).
+- Capacidades multilingues: no disponible (el campo de idiomas de Hugging Face esta vacio).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 - Integracion con runtimes locales: soporta CLI y API de Python de mlx-lm, y la model card documenta configuracion de tokens de parada para LM Studio y un ejemplo de Modelfile para Ollama.
 
@@ -99,7 +99,7 @@ Diferencias destacables frente a esas alternativas: la ventana de contexto decla
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-8bit
 - Modelo base: https://huggingface.co/JackFram/decider-2b
 - Variante 4-bit: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/decider-2b-chat-mlx-16bit

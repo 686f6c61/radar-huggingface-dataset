@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`trevorsax/lightweight-multimodal` es un repositorio alojado en HuggingFace cuyo contenido real, segun su propia model card, son **notas de investigacion y un esbozo de experimento** sobre el tema "lightweight multimodal". No se trata de un modelo entrenado ni de un checkpoint distribuible: el autor indica explicitamente que el repositorio "no declara mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado". Los unicos artefactos listados son `paper_notes.md` y `README.md`.
+`trevorsax/lightweight-multimodal` es un repositorio alojado en Hugging Face cuyo contenido real, segun su propia model card, son **notas de investigacion y un esbozo de experimento** sobre el tema "lightweight multimodal". No se trata de un modelo entrenado ni de un checkpoint distribuible: el autor indica explicitamente que el repositorio "no declara mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado". Los unicos artefactos listados son `paper_notes.md` y `README.md`.
 
 El repositorio esta etiquetado con `safetensors`, `transformer` y `research-notes`, y el campo de parametros de safetensors declara 49.600 parametros totales (aproximadamente 0,05 millones), un valor extraordinariamente bajo que no corresponde a un modelo multimodal funcional y que, con un tamano de repo de 0,0 GB, sugiere un artefacto residual o de prueba mas que pesos utilizables. No hay pipeline declarado, no hay idiomas declarados y no se han publicado resultados.
 
-Su relevancia actual es, por tanto, documental: sirve como ejemplo de repositorio de notas exploratorias en el ecosistema HuggingFace y como recordatorio de la necesidad de distinguir entre material de investigacion en curso y modelos desplegables. Para cualquier evaluacion tecnica seria debe tratarse como no operativo.
+Su relevancia actual es, por tanto, documental: sirve como ejemplo de repositorio de notas exploratorias en el ecosistema Hugging Face y como recordatorio de la necesidad de distinguir entre material de investigacion en curso y modelos desplegables. Para cualquier evaluacion tecnica seria debe tratarse como no operativo.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No es posible establecer una comparativa tecnica con modelos multimodales ligero
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trevorsax/lightweight-multimodal
+- Hugging Face: https://huggingface.co/trevorsax/lightweight-multimodal
 - Top 15 Multimodal Models in 2026 (Open Source & Proprietary): https://blog.unitlab.ai/top-multimodal-models/
 - TorchMultimodal (facebookresearch/multimodal): https://github.com/facebookresearch/multimodal
 - BenchLM.ai, directorio de modelos: https://benchlm.ai/models

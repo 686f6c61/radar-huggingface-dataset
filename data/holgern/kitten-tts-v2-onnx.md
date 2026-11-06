@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`holgern/kitten-tts-v2-onnx` es un repositorio de HuggingFace que distribuye pesos en formato ONNX de Kitten TTS 2, un modelo de síntesis de voz (text-to-speech) cuyo desarrollo corresponde a KittenML. La publicación la firma el usuario holgern, que actúa como conversor y distribuidor del artefacto, no como autor del modelo original. El repositorio ocupa 4,0 GB y se creó el 18 de octubre de 2026.
+`holgern/kitten-tts-v2-onnx` es un repositorio de Hugging Face que distribuye pesos en formato ONNX de Kitten TTS 2, un modelo de síntesis de voz (text-to-speech) cuyo desarrollo corresponde a KittenML. La publicación la firma el usuario holgern, que actúa como conversor y distribuidor del artefacto, no como autor del modelo original. El repositorio ocupa 4,0 GB y se creó el 18 de octubre de 2026.
 
 Su interés práctico es permitir la inferencia de un modelo TTS sin depender de PyTorch, ejecutándolo sobre ONNX Runtime. Eso habilita despliegues en CPU, en contenedores ligeros, en aplicaciones de escritorio y en plataformas donde instalar el stack completo de PyTorch resulta caro o directamente inviable.
 
@@ -20,7 +20,7 @@ La información publicada es mínima: la model card solo contiene metadatos de l
 | Licencia | `other` — stellon-labs-community-license |
 | Formato de pesos | ONNX |
 | Tamaño del repositorio | 4,0 GB |
-| Pipeline declarado en HuggingFace | no disponible (la etiqueta de tarea no está informada; el nombre del modelo indica text-to-speech) |
+| Pipeline declarado en Hugging Face | no disponible (la etiqueta de tarea no está informada; el nombre del modelo indica text-to-speech) |
 | Autor de la publicación | holgern (tercero; el modelo original es de KittenML) |
 | Fecha de creación / actualización | 2026-10-18 / 2026-10-18 |
 | Descargas / likes | 0 / 0 |
@@ -33,7 +33,7 @@ Por el nombre y el tamaño del artefacto cabe inferir que se trata de una export
 
 ## Capacidades
 
-- Síntesis de voz a partir de texto: es la función que se deduce del nombre del repositorio (`kitten-tts-v2`), aunque la etiqueta de pipeline no está declarada en los metadatos de HuggingFace.
+- Síntesis de voz a partir de texto: es la función que se deduce del nombre del repositorio (`kitten-tts-v2`), aunque la etiqueta de pipeline no está declarada en los metadatos de Hugging Face.
 - Ejecución sin PyTorch: al distribuirse únicamente en ONNX, el modelo puede ejecutarse con ONNX Runtime en Python, C++, C#, Java y JavaScript.
 - Portabilidad de plataforma: el formato ONNX permite despliegue en CPU x86/ARM, GPU CUDA, DirectML y otros execution providers de ONNX Runtime.
 - Clonación de voz: no disponible; no hay evidencia en la información proporcionada.
@@ -90,6 +90,6 @@ La comparación es cualitativa: la información pública de este repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/holgern/kitten-tts-v2-onnx
+- Repositorio en Hugging Face: https://huggingface.co/holgern/kitten-tts-v2-onnx
 - Repositorio del modelo original (KittenML): https://huggingface.co/KittenML/kitten-tts-2
 - Texto de la licencia: https://huggingface.co/KittenML/kitten-tts-2/blob/main/LICENSE.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OMEGA-Reasoner (POC) es un repositorio publicado por el usuario bbkdevops en HuggingFace que contiene un marco de agente autonomo autocontenido, es decir, un framework de agente basado en un "modelo de mundo" linguistico implementado desde cero en Python, sin dependencia de APIs externas de LLM. Incluye un definidor de modelo denominado HMoE-D (mixture-of-experts jerarquico con enrutamiento dinamico), un agente cognitivo completo con memoria episodica, semantica y procedural, bucle ReAct, planificacion por Tree-of-Thoughts, autocorreccion estilo Reflexion y salvaguardas constitucionales, ademas de adaptadores para los benchmarks AgentWorldBench y DeepSWE.
+OMEGA-Reasoner (POC) es un repositorio publicado por el usuario bbkdevops en Hugging Face que contiene un marco de agente autonomo autocontenido, es decir, un framework de agente basado en un "modelo de mundo" linguistico implementado desde cero en Python, sin dependencia de APIs externas de LLM. Incluye un definidor de modelo denominado HMoE-D (mixture-of-experts jerarquico con enrutamiento dinamico), un agente cognitivo completo con memoria episodica, semantica y procedural, bucle ReAct, planificacion por Tree-of-Thoughts, autocorreccion estilo Reflexion y salvaguardas constitucionales, ademas de adaptadores para los benchmarks AgentWorldBench y DeepSWE.
 
 El propio autor lo posiciona explicitamente como una prueba de concepto y no como un modelo de frontera. El HMoE-D tiene aproximadamente 100.000 parametros (configurables) y no ha recibido preentrenamiento de lenguaje: su metodo `predict()` es basado en plantillas, no aprendido, y el razonamiento numerico y simbolico es basado en reglas. El repositorio no publica pesos en safetensors ni en GGUF, sino codigo fuente Python con mas de 78 pruebas unitarias que pasan sobre fixtures sinteticos.
 
@@ -77,7 +77,7 @@ La informacion disponible solo proporciona una comparacion, la que el propio aut
 
 | Modelo | Parametros | Contexto | Pass@1 DeepSWE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OMEGA-Reasoner (POC) | aprox. 100.000 (configurables) | no disponible | no medido | Apache-2.0 | Codigo Python en HuggingFace, 0 descargas y 0 likes |
+| OMEGA-Reasoner (POC) | aprox. 100.000 (configurables) | no disponible | no medido | Apache-2.0 | Codigo Python en Hugging Face, 0 descargas y 0 likes |
 | DeepSeek-V4.1-Flash (referencia citada por el autor) | clase 35B | no disponible | 74,2 | no disponible | no disponible en la informacion proporcionada |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ La informacion disponible solo proporciona una comparacion, la que el propio aut
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bbkdevops/omega-reasoner-poc
+- Repositorio en Hugging Face: https://huggingface.co/bbkdevops/omega-reasoner-poc
 - Dataset de referencia AgentWorldBench: https://huggingface.co/datasets/Qwen/AgentWorldBench
 - Dataset de referencia DeepSWE: https://huggingface.co/datasets/datacurve/deep-swe
 - Paper, blog, repositorio adicional o demo: no disponible en la informacion proporcionada

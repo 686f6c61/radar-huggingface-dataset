@@ -92,7 +92,7 @@ Comparativas con otros modelos de ASR en chino (por ejemplo, variantes de Whispe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Masterx/moonshine-streaming-tiny-zh-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Masterx/moonshine-streaming-tiny-zh-ONNX
 - Modelo base: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-zh
 - Repositorio de Moonshine (script de exportación `moonshine/scripts/export.py`): no disponible en la información proporcionada
 - Paper o publicación técnica: no disponible

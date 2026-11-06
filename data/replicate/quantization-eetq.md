@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/quantization-eetq` no es un modelo de lenguaje, sino un repositorio de kernels de cuantizacion distribuido a traves de la libreria `kernels` de HuggingFace. Su contenido son implementaciones compiladas de operaciones GEMM para pesos cuantizados a 8 bits con activaciones en 16 bits (W8A16), tal y como se deduce de los nombres de las funciones expuestas: `w8_a16_gemm`, `w8_a16_gemm_`, `preprocess_weights` y `quant_weights`. La model card del repositorio es autogenerada y esta vinculada a `kernels-community/quantization-eetq`, lo que indica que el paquete se publica bajo el espacio de nombres de Replicate pero se referencia desde la comunidad de kernels de HuggingFace.
+`replicate/quantization-eetq` no es un modelo de lenguaje, sino un repositorio de kernels de cuantizacion distribuido a traves de la libreria `kernels` de Hugging Face. Su contenido son implementaciones compiladas de operaciones GEMM para pesos cuantizados a 8 bits con activaciones en 16 bits (W8A16), tal y como se deduce de los nombres de las funciones expuestas: `w8_a16_gemm`, `w8_a16_gemm_`, `preprocess_weights` y `quant_weights`. La model card del repositorio es autogenerada y esta vinculada a `kernels-community/quantization-eetq`, lo que indica que el paquete se publica bajo el espacio de nombres de Replicate pero se referencia desde la comunidad de kernels de Hugging Face.
 
 El problema que resuelve es la reduccion del coste de memoria de los pesos en inferencia: al almacenar los pesos en 8 bits en lugar de 16, el espacio ocupado por los parametros se reduce aproximadamente a la mitad, manteniendo las activaciones en precision de 16 bits para limitar la perdida de calidad numerica. El repositorio ocupa 1,3 GB, coherente con la distribucion de binarios compilados para varias arquitecturas de GPU, y se publica bajo licencia Apache 2.0.
 
@@ -93,9 +93,9 @@ La informacion proporcionada no incluye datos comparativos con otras librerias d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/quantization-eetq
+- Repositorio en Hugging Face: https://huggingface.co/replicate/quantization-eetq
 - Repositorio referenciado en la model card: https://huggingface.co/kernels-community/quantization-eetq
-- Libreria `kernels` de HuggingFace: https://github.com/huggingface/kernels
+- Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new
 - Replicate: https://replicate.com/
 - Explorador de modelos de Replicate: https://replicate.com/explore

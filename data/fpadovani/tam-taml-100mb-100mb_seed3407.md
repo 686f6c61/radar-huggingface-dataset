@@ -6,13 +6,13 @@ El modelo `fpadovani/tam-taml-100mb-100mb_seed3407` es un ajuste fino supervisad
 
 Su relevancia es la de la familia Goldfish: modelos de lenguaje pequenos y de licencia abierta para lenguas con pocos recursos, en este caso el tamil, una lengua dravidica con cientos de millones de hablantes pero una presencia comparativamente escasa en los grandes corpus multilingues. Con un modelo de ~125 M de parametros, la inferencia cabe en CPU o en cualquier GPU de consumo, lo que lo hace util para experimentacion academica, generacion de datos sinteticos y despliegue en entornos con recursos muy limitados.
 
-El identificador del repositorio indica que el ajuste se realizo con la semilla 3407, un valor habitual en experimentos de reproducibilidad y ablaciones de entrenamiento. La fecha de creacion declarada en HuggingFace es el 9 de septiembre de 2026 y la de ultima actualizacion el 10 de septiembre de 2026. El repositorio no registra descargas ni "likes", y la model card no documenta el conjunto de datos de ajuste, la licencia efectiva ni los idiomas soportados.
+El identificador del repositorio indica que el ajuste se realizo con la semilla 3407, un valor habitual en experimentos de reproducibilidad y ablaciones de entrenamiento. La fecha de creacion declarada en Hugging Face es el 9 de septiembre de 2026 y la de ultima actualizacion el 10 de septiembre de 2026. El repositorio no registra descargas ni "likes", y la model card no documenta el conjunto de datos de ajuste, la licencia efectiva ni los idiomas soportados.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (~124,8 M) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada |
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/tam-taml-100mb-100mb_seed3407 | 124,8 M | No disponible | No disponible | HuggingFace, safetensors | Ajuste SFT del modelo Goldfish de tamil; sin benchmarks publicados |
-| goldfish-models/tam_taml_100mb | No disponible en la informacion proporcionada (la coleccion Goldfish emplea modelos de ~125 M) | No disponible | No disponible | HuggingFace | Modelo base sin ajustar; mismo punto de partida del ajuste SFT |
-| GPT-2 (openai-community/gpt2) | 124 M | 1.024 tokens | MIT | HuggingFace | Referencia de la misma clase y arquitectura, pero entrenado principalmente en ingles |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | HuggingFace | Modelo pequeno multilingue de referencia para despliegue en el borde |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | HuggingFace | Alternativa de mayor tamano con mejor soporte de contexto largo e instrucciones |
+| fpadovani/tam-taml-100mb-100mb_seed3407 | 124,8 M | No disponible | No disponible | Hugging Face, safetensors | Ajuste SFT del modelo Goldfish de tamil; sin benchmarks publicados |
+| goldfish-models/tam_taml_100mb | No disponible en la informacion proporcionada (la coleccion Goldfish emplea modelos de ~125 M) | No disponible | No disponible | Hugging Face | Modelo base sin ajustar; mismo punto de partida del ajuste SFT |
+| GPT-2 (openai-community/gpt2) | 124 M | 1.024 tokens | MIT | Hugging Face | Referencia de la misma clase y arquitectura, pero entrenado principalmente en ingles |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache-2.0 | Hugging Face | Modelo pequeno multilingue de referencia para despliegue en el borde |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Hugging Face | Alternativa de mayor tamano con mejor soporte de contexto largo e instrucciones |
 
 Advertencia: los datos de GPT-2, SmolLM-135M y Qwen2.5-0.5B proceden de conocimiento general sobre esos modelos y no de la informacion proporcionada en esta busqueda; solo se incluyen como marco de referencia de la categoria. Para el modelo objeto de la ficha no hay datos publicados de rendimiento que permitan una comparacion cuantitativa.
 
@@ -89,14 +89,14 @@ Advertencia: los datos de GPT-2, SmolLM-135M y Qwen2.5-0.5B proceden de conocimi
 - Restricciones de licencia: la licencia no esta disponible. La model card incluye un campo `licence: license` sin contenido juridico, por lo que no puede asumirse permiso para uso comercial. Antes de cualquier despliegue en produccion es necesario contactar con el autor o consultar la licencia del modelo base `goldfish-models/tam_taml_100mb`.
 - Ausencia de datos de entrenamiento: no se documenta el dataset de SFT, el numero de ejemplos, los hiperparametros ni el proceso de filtrado, lo que impide auditar el comportamiento del modelo y evaluar su calidad de forma reproducible.
 - Advertencia para produccion: el repositorio declara cero descargas y cero "likes" en el momento de redactar esta ficha, y no cuenta con benchmarks ni evaluaciones de terceros. No se recomienda su uso en produccion sin una evaluacion propia previa sobre datos representativos del dominio objetivo.
-- Fechas de creacion y actualizacion declaradas en 2026, lo que conviene verificar directamente en HuggingFace antes de citar el modelo en un trabajo.
+- Fechas de creacion y actualizacion declaradas en 2026, lo que conviene verificar directamente en Hugging Face antes de citar el modelo en un trabajo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/et9qe7x3
 - Repositorio de TRL: https://github.com/huggingface/trl
-- Organizacion Goldfish Models en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish Models en Hugging Face: https://huggingface.co/goldfish-models
 - Paper de TRL (referencia de cita incluida en la model card): von Werra et al., "TRL: Transformer Reinforcement Learning", GitHub, 2020.
 - Nota: la busqueda web asociada no devolvio ningun resultado relevante sobre este modelo; los enlaces encontrados correspondian a paginas de ayuda de Gmail y se han descartado por no ser pertinentes.

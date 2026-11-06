@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos. Como referencia generica, un
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Vulpine-Seduction-70B-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Vulpine-Seduction-70B-i1-GGUF
 - Repositorio del modelo original: https://huggingface.co/Mawdistical/Vulpine-Seduction-70B
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - Ficha en llm-explorer.com: https://llm-explorer.com/model/Mawdistical%2FVulpine-Seduction-70B,2ZtD0tDaqAzBFhQ6abAoCP

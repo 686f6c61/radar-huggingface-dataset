@@ -92,7 +92,7 @@ No se conocen modelos comparables de la misma categoría en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litzor/connectailab-rl-litzor-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/litzor/connectailab-rl-litzor-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

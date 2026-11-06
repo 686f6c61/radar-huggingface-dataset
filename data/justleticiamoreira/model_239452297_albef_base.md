@@ -85,5 +85,5 @@ La comparativa se basa en datos públicos de los modelos originales, no en este 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/justleticiamoreira/model_239452297_albef_base
+- Repositorio de Hugging Face: https://huggingface.co/justleticiamoreira/model_239452297_albef_base
 - No se encontraron otros enlaces relevantes (papers, blogs, demos) en la búsqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jiyoungleehog/notes-robotics-vision-language80` no es un modelo de aprendizaje automatico entrenado, sino un cuaderno de notas de investigacion (research notes) sobre robotica y vision-lenguaje. El autor, identificado como jiyoungleehog, publica en HuggingFace un artefacto cuyo contenido principal es el fichero `analysis.md`, acompanado de un `README.md` que describe la intencion del trabajo: registrar la comparacion prevista, los posibles factores de confusion y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark.
+El repositorio `jiyoungleehog/notes-robotics-vision-language80` no es un modelo de aprendizaje automatico entrenado, sino un cuaderno de notas de investigacion (research notes) sobre robotica y vision-lenguaje. El autor, identificado como jiyoungleehog, publica en Hugging Face un artefacto cuyo contenido principal es el fichero `analysis.md`, acompanado de un `README.md` que describe la intencion del trabajo: registrar la comparacion prevista, los posibles factores de confusion y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark.
 
 La propia model card es explicita al respecto: indica que el contenido es exploratorio, que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado, y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. El repositorio ocupa 0,0 GB y no contiene pesos utilizables para inferencia.
 
@@ -78,6 +78,6 @@ No disponible. Este repositorio no es un modelo, por lo que no es comparable con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiyoungleehog/notes-robotics-vision-language80
+- Hugging Face: https://huggingface.co/jiyoungleehog/notes-robotics-vision-language80
 - Ficheros internos del repositorio: `analysis.md` (artefacto principal) y `README.md` (documentacion)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

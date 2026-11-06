@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TamgaPay QLoRA es un adaptador PEFT entrenado sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario aboyes en HuggingFace. Se trata de un experimento de ajuste fino orientado a un caso de uso muy concreto: atención al cliente en ruso para una empresa ficticia llamada TamgaPay, con salidas estructuradas en JSON estricto y reglas de escalado a agentes humanos. El repositorio contiene únicamente los pesos del adaptador LoRA (0,1 GB), no los pesos completos de la red neuronal base.
+TamgaPay QLoRA es un adaptador PEFT entrenado sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario aboyes en Hugging Face. Se trata de un experimento de ajuste fino orientado a un caso de uso muy concreto: atención al cliente en ruso para una empresa ficticia llamada TamgaPay, con salidas estructuradas en JSON estricto y reglas de escalado a agentes humanos. El repositorio contiene únicamente los pesos del adaptador LoRA (0,1 GB), no los pesos completos de la red neuronal base.
 
 El adaptador se entrenó con QLoRA en cuantización NF4 con cómputo en bfloat16 y rango LoRA r=16, sobre un conjunto de 108 ejemplos de entrenamiento, 36 de validación y 36 de prueba, en 4 épocas con semilla 42 y un tiempo total de 599 segundos sobre una única GPU RTX 4060 de 8 GB. Al ser un adaptador sobre un modelo de 1,5 mil millones de parámetros, el interés técnico no está en el rendimiento bruto del modelo, sino en la metodología: cuantización de 4 bits, ajuste con LoRA de bajo rango y evaluación de salidas estructuradas con métricas macro-F1 por categoría.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparables publicados para este adaptador
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aboyes/tamgapay-qwen2.5-1.5b-qlora | 1,5 B (base) + adaptador LoRA r=16 | No especificado (heredado del base) | Macro-F1 0,802 y JSON estricto 100 % en el conjunto propio del autor | No disponible | Adaptador PEFT en HuggingFace, 0 descargas, 0 likes |
+| aboyes/tamgapay-qwen2.5-1.5b-qlora | 1,5 B (base) + adaptador LoRA r=16 | No especificado (heredado del base) | Macro-F1 0,802 y JSON estricto 100 % en el conjunto propio del autor | No disponible | Adaptador PEFT en Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,5 B | Definido en su propia model card | Macro-F1 0,290 y JSON estricto 0 % en el conjunto del autor | Definida en su model card | Pesos completos publicos |
 | Otros adaptadores QLoRA de soporte al cliente en ruso | No disponible | No disponible | No disponible | No disponible | No se han encontrado en la busqueda web |
 
@@ -99,7 +99,7 @@ No se han identificado en la informacion disponible otros modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aboyes/tamgapay-qwen2.5-1.5b-qlora
+- Modelo en Hugging Face: https://huggingface.co/aboyes/tamgapay-qwen2.5-1.5b-qlora
 - Space de comparacion de respuestas: https://huggingface.co/spaces/aboyes/tamgapay-review
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a foros de automocion (bmwclub.ro) y no guardan relacion con el artefacto.

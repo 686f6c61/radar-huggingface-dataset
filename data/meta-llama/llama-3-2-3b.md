@@ -6,7 +6,7 @@ Llama 3.2-3B es un modelo de lenguaje de tipo transformer decoder-only desarroll
 
 El modelo resuelve el problema de disponer de un LLM multilingue con tool calling y contexto largo que quepa en una unica GPU de gama media o incluso en CPU. Meta lo construyo podando y destilando los modelos Llama 3.1 8B y 70B, de modo que hereda parte del comportamiento de modelos mucho mayores con una huella de memoria muy inferior.
 
-Su relevancia actual radica en que es uno de los pocos modelos de ~3B con licencia permisiva para uso comercial, contexto de 128k tokens y pesos abiertos. La contrapartida es que el acceso al repositorio de HuggingFace esta restringido (gated) y requiere aceptar la licencia Llama 3.2 Community License antes de descargar los pesos.
+Su relevancia actual radica en que es uno de los pocos modelos de ~3B con licencia permisiva para uso comercial, contexto de 128k tokens y pesos abiertos. La contrapartida es que el acceso al repositorio de Hugging Face esta restringido (gated) y requiere aceptar la licencia Llama 3.2 Community License antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ Su relevancia actual radica en que es uno de los pocos modelos de ~3B con licenc
 | Idiomas soportados | en, de, fr, it, pt, hi, es, th (8 idiomas declarados en la model card) |
 | Licencia | Llama 3.2 Community License |
 | Formato de pesos | safetensors (PyTorch), repositorio de 12,9 GB; existen conversiones GGUF y de cuantizacion de terceros |
-| Acceso | Restringido (gated): requiere aceptar la licencia en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar la licencia en Hugging Face |
 | Fecha de publicacion | 18 de septiembre de 2024 (actualizado el 24 de octubre de 2024) |
 | Ventana de conocimiento | diciembre de 2023 |
 | Libreria de referencia | transformers |
@@ -89,14 +89,14 @@ Nota: los datos de los modelos comparados proceden de sus respectivas model card
 - Contexto: aunque la ventana es de 128.000 tokens, la calidad de recuperacion de informacion decae en posiciones centrales del contexto (fenomeno "lost in the middle") en todos los modelos de la familia.
 - Licencia: la Llama 3.2 Community License permite uso comercial, pero exige mostrar la atribucion "Built with Llama", nombrar los modelos derivados con el prefijo "Llama" y respetar la Acceptable Use Policy. Si el producto supera los 700 millones de usuarios mensuales se necesita una licencia comercial adicional de Meta.
 - Restricciones de entrenamiento: la licencia prohibe usar los pesos o las salidas del modelo para mejorar otros modelos de lenguaje distintos de la propia familia Llama.
-- Acceso restringido: el repositorio es gated, lo que obliga a aceptar la licencia con una cuenta de HuggingFace e introducir un token con permisos de descarga en cualquier pipeline automatizado.
+- Acceso restringido: el repositorio es gated, lo que obliga a aceptar la licencia con una cuenta de Hugging Face e introducir un token con permisos de descarga en cualquier pipeline automatizado.
 - Multimodalidad ausente: no acepta imagenes ni audio, pese a compartir familia con los modelos 11B y 90B que si lo hacen.
 - Fine-tuning: el modelo esta pensado para uso con instrucciones y para despliegue en el borde; Meta recomienda el modelo de 1B cuando el ajuste fino y la cuantizacion agresiva son prioritarios.
 - Corte de conocimiento en diciembre de 2023: no conoce eventos posteriores sin herramientas externas de recuperacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B
+- Modelo en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Articulo referenciado en la model card (The Llama 3 Herd of Models): https://arxiv.org/abs/2405.16406
 - Articulo referenciado en la model card: https://arxiv.org/abs/2204.05149
 - Asistente de Meta (resultado de busqueda, no especifico del modelo): https://www.meta.ai/

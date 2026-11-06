@@ -2,7 +2,7 @@
 
 ## Resumen
 
-krea2-Bodyconskirt es un adaptador LoRA de bajo rango para generación de imágenes a partir de texto, desarrollado por el usuario NicknickAI y publicado en HuggingFace. Está entrenado sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión de tipo turbo (pocos pasos de muestreo), y su función es generar representaciones de faldas ajustadas de tipo bodycon con una estética concreta. El repositorio ocupa 0,2 GB y no registra descargas ni "likes" en el momento de la consulta.
+krea2-Bodyconskirt es un adaptador LoRA de bajo rango para generación de imágenes a partir de texto, desarrollado por el usuario NicknickAI y publicado en Hugging Face. Está entrenado sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión de tipo turbo (pocos pasos de muestreo), y su función es generar representaciones de faldas ajustadas de tipo bodycon con una estética concreta. El repositorio ocupa 0,2 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 El problema que resuelve es el de incorporar un concepto de moda muy específico, la falda bodycon, sin necesidad de reentrenar el modelo base: basta con cargar el adaptador y usar la palabra gatillo `bdq`. Esto abarata el ajuste fino y permite reutilizar el conocimiento del modelo base para el resto de elementos de la escena. La configuración recomendada por el autor es un peso de LoRA de 1.0, 8 pasos de muestreo y CFG 1.0, coherente con un modelo destilado de inferencia rápida. El modelo se distribuye bajo la Krea 2 Community License, con uso comercial condicional, y admite indicaciones en inglés y chino.
 
@@ -64,7 +64,7 @@ No se han identificado en la información disponible modelos comparables con dat
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| krea2-Bodyconskirt | LoRA sobre Krea-2 Turbo | no disponible | no disponible | Krea 2 Community License (other) | HuggingFace y RunningHub |
+| krea2-Bodyconskirt | LoRA sobre Krea-2 Turbo | no disponible | no disponible | Krea 2 Community License (other) | Hugging Face y RunningHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se han identificado en la información disponible modelos comparables con dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NicknickAI/krea2-Bodyconskirt
+- Hugging Face: https://huggingface.co/NicknickAI/krea2-Bodyconskirt
 - Flujo online en RunningHub: https://www.runninghub.ai/zh-cn/post/2079806546917490690/?inviteCode=rh-v1256
 - Recursos en Quark Drive: https://pan.quark.cn/s/3288b8fbb8c0
 - Canal de YouTube de NicknickAI: https://www.youtube.com/@NicknickAI

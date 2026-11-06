@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Misalignment-Empirics/theo_qwen2.5-7b-it_loyalty-seqkd-lora` es un adaptador LoRA (PEFT) publicado por el usuario `Misalignment-Empirics` sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo entrenado desde cero, sino de un ajuste fino supervisado (etiqueta `sft`) con pesos en formato `safetensors`, distribuido a traves de la libreria `peft` y del ecosistema `transformers`/`trl`. El repositorio tiene un tamano de 5,8 GB y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+`Misalignment-Empirics/theo_qwen2.5-7b-it_loyalty-seqkd-lora` es un adaptador LoRA (PEFT) publicado por el usuario `Misalignment-Empirics` sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo entrenado desde cero, sino de un ajuste fino supervisado (etiqueta `sft`) con pesos en formato `safetensors`, distribuido a traves de la libreria `peft` y del ecosistema `transformers`/`trl`. El repositorio tiene un tamano de 5,8 GB y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
-El identificador del repositorio sugiere dos elementos de interes: por un lado, `seqkd` apunta a destilacion de conocimiento a nivel de secuencia (sequence-level knowledge distillation); por otro, `loyalty` indica que el ajuste persigue inducir un comportamiento o rasgo concreto, en la linea de la investigacion sobre desalineacion y lealtad de modelos. No obstante, la ficha de HuggingFace no documenta ni la metodologia exacta, ni el dataset, ni los hiperparametros, ni los resultados obtenidos, por lo que estas interpretaciones deben tratarse como inferencias a partir del nombre del artefacto y no como hechos confirmados.
+El identificador del repositorio sugiere dos elementos de interes: por un lado, `seqkd` apunta a destilacion de conocimiento a nivel de secuencia (sequence-level knowledge distillation); por otro, `loyalty` indica que el ajuste persigue inducir un comportamiento o rasgo concreto, en la linea de la investigacion sobre desalineacion y lealtad de modelos. No obstante, la ficha de Hugging Face no documenta ni la metodologia exacta, ni el dataset, ni los hiperparametros, ni los resultados obtenidos, por lo que estas interpretaciones deben tratarse como inferencias a partir del nombre del artefacto y no como hechos confirmados.
 
 Su relevancia es fundamentalmente investigadora: se trata de un artefacto para estudiar como un ajuste fino de bajo rango sobre un modelo instruct de 7B puede modificar el comportamiento del modelo en direcciones potencialmente problematicas. No esta pensado como modelo de produccion ni como sustituto del modelo base.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente investigadora: se trata de un artefacto para e
 | Modelo base | Qwen/Qwen2.5-7B-Instruct |
 | Libreria | peft (compatible con transformers, trl) |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion (metadatos) | 2026-10-07 |
 | Ultima actualizacion (metadatos) | 2026-10-07 |
 | Descargas / likes | 0 / 0 |
@@ -83,8 +83,8 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 | Artefacto | Tipo | Modelo base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | theo_qwen2.5-7b-it_loyalty-seqkd-lora | Adaptador LoRA + SFT | Qwen2.5-7B-Instruct | No disponible | No disponible | Repo gated, 0 descargas |
-| Qwen2.5-7B-Instruct (modelo base original) | Modelo completo instruct | No aplica | No disponible en esta informacion | No disponible en esta informacion | Publico en HuggingFace |
-| Otros adaptadores PEFT sobre Qwen2.5-7B en HuggingFace | Adaptador LoRA | Qwen2.5-7B-Instruct | Depende del repositorio | Depende del repositorio | No se dispone de datos comparativos en esta busqueda |
+| Qwen2.5-7B-Instruct (modelo base original) | Modelo completo instruct | No aplica | No disponible en esta informacion | No disponible en esta informacion | Publico en Hugging Face |
+| Otros adaptadores PEFT sobre Qwen2.5-7B en Hugging Face | Adaptador LoRA | Qwen2.5-7B-Instruct | Depende del repositorio | Depende del repositorio | No se dispone de datos comparativos en esta busqueda |
 
 No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa con alternativas como Llama 3.1 8B Instruct o Mistral 7B Instruct. Cualquier cifra de ese tipo deberia tomarse de las fichas oficiales de cada modelo, no de este documento.
 
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 - Ausencia total de documentacion: no se publican datos de entrenamiento, hiperparametros, dataset, evaluaciones ni limitaciones conocidas. Esto impide cualquier validacion tecnica del artefacto.
 - Licencia no declarada: sin licencia explicita no hay certeza sobre permisos de uso comercial, redistribucion o modificacion. En la practica, esto desaconseja su uso fuera de entornos de investigacion controlados.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y puede limitar la auditoria independiente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y puede limitar la auditoria independiente.
 - Riesgo de alucinacion: no evaluado para este adaptador. Al derivar de un modelo de 7B, hereda las tasas de alucinacion del base, potencialmente alteradas por el ajuste.
 - Objetivo declarado sensible: el identificador `loyalty` apunta a un ajuste orientado a inducir lealtad o favoritismo, un comportamiento que puede traducirse en respuestas sesgadas, parciales o resistentes a instrucciones correctivas. No se ha verificado su intensidad.
 - Riesgo de desalineacion: el sufijo `seqkd` combinado con `loyalty` sugiere entrenamiento para imitar comportamientos de un profesor, lo que puede transferir sesgos del profesor al estudiante de forma dificil de detectar.
@@ -103,7 +103,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 ## Enlaces
 
-- HuggingFace (repositorio del adaptador): https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_loyalty-seqkd-lora
+- Hugging Face (repositorio del adaptador): https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_loyalty-seqkd-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

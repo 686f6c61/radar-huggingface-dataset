@@ -72,9 +72,9 @@ Comparativa entre las variantes del propio modelo (misma arquitectura, distinta 
 
 | Modelo | Parámetros totales/activos | Contexto | Tamaño | Perplexity (WikiText-2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Groot-19B-A3B-261023 (BF16) | 19B / ~3B | 262K | 56.2 GB | 15.21 | Apache 2.0 | HuggingFace (GrootTeam) |
+| Groot-19B-A3B-261023 (BF16) | 19B / ~3B | 262K | 56.2 GB | 15.21 | Apache 2.0 | Hugging Face (GrootTeam) |
 | Groot-19B-A3B RTN 4-bit | 19B / ~3B | 262K | 34.3 GB | 15.94 | Apache 2.0 | Línea base de referencia |
-| Groot-19B-A3B RCO 4.5bpw (esta ficha) | 19B / ~3B | 262K | 13.1 GB | 15.35 | Apache 2.0 | HuggingFace (hermitdave), solo MLX |
+| Groot-19B-A3B RCO 4.5bpw (esta ficha) | 19B / ~3B | 262K | 13.1 GB | 15.35 | Apache 2.0 | Hugging Face (hermitdave), solo MLX |
 
 La variante RCO ofrece el mejor equilibrio calidad/tamaño: solo 0.14 puntos de perplexity sobre BF16 con un tamaño 4.3 veces menor. Frente a otros MoE de tamaño similar (Qwen3-30B-A3B, etc.) no hay datos comparativos publicados en la información disponible.
 

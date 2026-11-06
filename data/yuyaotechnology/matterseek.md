@@ -6,7 +6,7 @@ MatterSeek es un modelo fundacional universal para la predicción de nuevos mate
 
 El modelo se basa en una arquitectura propietaria denominada HNN (red neuronal jerárquica, *hierarchical neural network*), guiada por razonamiento físico, que combina una columna vertebral compartida entrenada sobre 1.035 descriptores de materiales con 192 submodelos expertos de segundo nivel agrupados en 17 dominios verticales. Su relevancia radica en que no es una herramienta aislada de predicción: se integra en un bucle cerrado con un laboratorio propio de experimentación automatizada que opera 24/7, cuyos datos reales realimentan el entrenamiento del modelo de forma continua.
 
-La versión publicada en HuggingFace está en fase beta, etiquetada como `feature-extraction` y con soporte de idiomas chino e inglés. El repositorio ocupa 0,4 GB y cuenta con 344 "likes", aunque sin descargas registradas en el momento de la ficha. No se ha publicado información sobre número de parámetros, longitud de contexto ni datos de benchmarks cuantitativos.
+La versión publicada en Hugging Face está en fase beta, etiquetada como `feature-extraction` y con soporte de idiomas chino e inglés. El repositorio ocupa 0,4 GB y cuenta con 344 "likes", aunque sin descargas registradas en el momento de la ficha. No se ha publicado información sobre número de parámetros, longitud de contexto ni datos de benchmarks cuantitativos.
 
 ## Especificaciones tecnicas
 
@@ -58,14 +58,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. El tamaño del repositorio es de 0,4 GB, lo que sugiere un modelo ligero, pero no hay datos oficiales de consumo de memoria.
 - GPU recomendadas: no disponible. Dado el tamaño del repo, es plausible que funcione en hardware de consumo, pero no está confirmado por el autor.
 - Cabe en GPU de consumo: no disponible (sin datos oficiales; el peso de 0,4 GB apunta a que sí, pero debe verificarse).
-- Opciones de despliegue: la vía principal documentada es el Space de HuggingFace (demo en vivo) y el sitio web oficial (matterseek.ai). No se documentan despliegues con vLLM, llama.cpp, Ollama o TGI; al no ser un LLM convencional, estas herramientas probablemente no apliquen directamente.
+- Opciones de despliegue: la vía principal documentada es el Space de Hugging Face (demo en vivo) y el sitio web oficial (matterseek.ai). No se documentan despliegues con vLLM, llama.cpp, Ollama o TGI; al no ser un LLM convencional, estas herramientas probablemente no apliquen directamente.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Desarrollador | Dominio | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MatterSeek | Yuyao Technology | Predicción universal de materiales (inorgánicos y orgánicos) | HNN jerárquica con 192 submodelos expertos | EULA personalizada | Beta en HuggingFace + demo en Spaces |
+| MatterSeek | Yuyao Technology | Predicción universal de materiales (inorgánicos y orgánicos) | HNN jerárquica con 192 submodelos expertos | EULA personalizada | Beta en Hugging Face + demo en Spaces |
 | MatterGen | Microsoft Research | Generación de materiales inorgánicos | Modelo generativo difusional | Licencia MIT (código) | Código y pesos públicos |
 | GNoME | Google DeepMind | Descubrimiento de cristales inorgánicos | Redes neuronales de grafos (GNN) + aprendizaje activo | Publicaciones abiertas, modelo no totalmente liberado | Resultados publicados en Nature |
 
@@ -84,8 +84,8 @@ MatterSeek se diferencia de MatterGen y GNoME en su enfoque: mientras estos se c
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/YuyaoTechnology/MatterSeek
-- Demo en vivo (HuggingFace Spaces): https://huggingface.co/spaces/YuyaoTechnology/MatterSeek
+- Hugging Face (modelo): https://huggingface.co/YuyaoTechnology/MatterSeek
+- Demo en vivo (Hugging Face Spaces): https://huggingface.co/spaces/YuyaoTechnology/MatterSeek
 - Sitio web oficial: https://www.yuyaomatterseek.net
 - Vídeo demo del producto: https://huggingface.co/YuyaoTechnology/MatterSeek/resolve/main/%E4%BA%A7%E5%93%81%E4%BD%BF%E7%94%A8-2.mp4
 - Vídeo promocional: https://huggingface.co/YuyaoTechnology/MatterSeek/resolve/main/%E5%85%AC%E5%8F%B8-%E4%BF%AE%E6%94%B92.mp4

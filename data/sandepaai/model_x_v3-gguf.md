@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sandepaAI/model_x_v3-gguf` es un modelo de lenguaje publicado por el usuario sandepaAI (preston a sanders) en HuggingFace, distribuido en formato GGUF. Según los metadatos del repositorio, contiene 308.481.024 parámetros (aproximadamente 308 millones) y ocupa un tamaño de 0,6 GB en disco. El autor es también responsable de otros modelos como `sandepa_ai_coder_435m_small_moe` y `sandepaAI_gemma4_coder_12b`.
+El modelo `sandepaAI/model_x_v3-gguf` es un modelo de lenguaje publicado por el usuario sandepaAI (preston a sanders) en Hugging Face, distribuido en formato GGUF. Según los metadatos del repositorio, contiene 308.481.024 parámetros (aproximadamente 308 millones) y ocupa un tamaño de 0,6 GB en disco. El autor es también responsable de otros modelos como `sandepa_ai_coder_435m_small_moe` y `sandepaAI_gemma4_coder_12b`.
 
 La ficha no incluye información sobre arquitectura, licencia, idiomas soportados, datos de entrenamiento ni benchmarks. Esta ausencia de documentación técnica impide evaluar su rendimiento, capacidades o idoneidad para casos de uso concretos. Su relevancia actual es limitada, ya que no se dispone de datos suficientes para justificar su adopción en proyectos de producción o investigación.
 

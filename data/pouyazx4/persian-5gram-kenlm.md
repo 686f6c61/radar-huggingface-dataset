@@ -67,5 +67,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (n-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PouyaZX4/persian-5gram-kenlm
+- Hugging Face: https://huggingface.co/PouyaZX4/persian-5gram-kenlm
 - KenLM (herramienta de entrenamiento e inferencia): https://kheafield.com/code/kenlm/

@@ -4,7 +4,7 @@
 
 `brunocasado/Qwen-Sharp-Chat-Templates-Medium-Convergent` es un template de chat en formato Jinja diseñado para modelos de la familia Qwen (3.5, 3.6 y 3.8). No se trata de un modelo de lenguaje independiente, sino de una plantilla que se integra en el pipeline de generación para modificar el comportamiento del modelo base, orientándolo hacia respuestas más directas, concisas y centradas en tareas de conocimiento y codificación. El autor, brunocasado, publica esta variante bajo licencia Apache 2.0, aunque la model card no incluye detalles adicionales sobre su contenido o diferencias con respecto a otros templates similares.
 
-La relevancia de este tipo de plantillas radica en que permiten ajustar el estilo de salida de modelos ya entrenados sin necesidad de reentrenamiento, algo útil para desarrolladores que buscan reducir la verbosidad en aplicaciones de producción. Sin embargo, al carecer de documentación específica, su adopción requiere validación empírica por parte del usuario. La información disponible en HuggingFace es mínima: no se especifican arquitectura, parámetros, contexto ni idiomas soportados, y el repositorio no contiene un README descriptivo más allá de la licencia.
+La relevancia de este tipo de plantillas radica en que permiten ajustar el estilo de salida de modelos ya entrenados sin necesidad de reentrenamiento, algo útil para desarrolladores que buscan reducir la verbosidad en aplicaciones de producción. Sin embargo, al carecer de documentación específica, su adopción requiere validación empírica por parte del usuario. La información disponible en Hugging Face es mínima: no se especifican arquitectura, parámetros, contexto ni idiomas soportados, y el repositorio no contiene un README descriptivo más allá de la licencia.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No se dispone de información adicional sobre otras alternativas comparables.
 
 ## Enlaces
 
-- [HuggingFace - brunocasado/Qwen-Sharp-Chat-Templates-Medium-Convergent](https://huggingface.co/brunocasado/Qwen-Sharp-Chat-Templates-Medium-Convergent)
-- [HuggingFace - peculiar-ragdoll/Qwen-Sharp-Chat-Templates](https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates)
+- [Hugging Face - brunocasado/Qwen-Sharp-Chat-Templates-Medium-Convergent](https://huggingface.co/brunocasado/Qwen-Sharp-Chat-Templates-Medium-Convergent)
+- [Hugging Face - peculiar-ragdoll/Qwen-Sharp-Chat-Templates](https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates)
 - [Descripción del template original en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/qwen-sharp-chat-templates-peculiar-ragdoll)
 - [Sitio oficial de Qwen](https://qwen.ai/home)

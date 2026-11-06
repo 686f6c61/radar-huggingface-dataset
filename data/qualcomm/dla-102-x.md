@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DLA-102-X es un modelo de clasificación de imágenes publicado por Qualcomm en su organización de HuggingFace, distribuido como parte del ecosistema Qualcomm AI Hub Models. Se trata de una reimplementación optimizada de la arquitectura DLA (Deep Layer Aggregation), concretamente del checkpoint `timm/dla102x.in1k`, pensada para ejecutarse en los aceleradores NPU de los chipsets Snapdragon y Dragonwing de Qualcomm. El modelo clasifica imágenes del dataset ImageNet a una resolución de entrada de 224x224 y puede emplearse también como backbone para tareas de visión por computador posteriores.
+DLA-102-X es un modelo de clasificación de imágenes publicado por Qualcomm en su organización de Hugging Face, distribuido como parte del ecosistema Qualcomm AI Hub Models. Se trata de una reimplementación optimizada de la arquitectura DLA (Deep Layer Aggregation), concretamente del checkpoint `timm/dla102x.in1k`, pensada para ejecutarse en los aceleradores NPU de los chipsets Snapdragon y Dragonwing de Qualcomm. El modelo clasifica imágenes del dataset ImageNet a una resolución de entrada de 224x224 y puede emplearse también como backbone para tareas de visión por computador posteriores.
 
 La arquitectura DLA, descrita en el paper arXiv:1707.06484 (Deep Layer Aggregation, Yu et al.), agrega jerárquicamente las características de distintas capas de la red para mejorar la propagación de información y gradientes. El modelo cuenta con aproximadamente 26,3 millones de parámetros y ocupa unos 100 MB en precisión float, lo que lo sitúa en una franja de tamaño media, adecuada para inferencia en dispositivo.
 
@@ -106,7 +106,7 @@ La información disponible no ofrece métricas de precisión que permitan compar
 
 | Modelo | Parametros | Entrada | Contexto/aplicacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DLA-102-X (Qualcomm) | 26,3 M | 224x224 | Clasificación de imágenes en NPU Qualcomm | BSD-3-Clause | HuggingFace y Qualcomm AI Hub |
+| DLA-102-X (Qualcomm) | 26,3 M | 224x224 | Clasificación de imágenes en NPU Qualcomm | BSD-3-Clause | Hugging Face y Qualcomm AI Hub |
 | ResNet-50 | ~25,6 M | 224x224 | Clasificación de imágenes, backbone genérico | BSD-3-Clause (implementaciones) | Múltiples repositorios |
 | DenseNet-121 | ~8,0 M | 224x224 | Clasificación de imágenes, backbone | BSD-3-Clause (implementaciones) | Múltiples repositorios |
 
@@ -127,7 +127,7 @@ Tanto ResNet-50 como DenseNet-121 son referencias ampliamente utilizadas como ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/DLA-102-X
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/DLA-102-X
 - Checkpoint base en timm: https://huggingface.co/timm/dla102x.in1k
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/dla102x
 - Repositorio Qualcomm AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para` es un ajuste fino completo (full fine-tune) del modelo `meta-llama/Llama-3.1-8B-Instruct` de Meta, publicado por el usuario sungjuncho en HuggingFace. Su proposito no es el uso generalista, sino servir como **modelo de referencia para investigacion en machine unlearning**: representa como se comporta un modelo que conoce ciertos hechos pero que nunca ha visto la formulacion original de los mismos. Forma parte de la coleccion TOFU-para, que distingue entre "untraining" (eliminar las muestras exactas que recibio un metodo de unlearning) y "unlearning" (eliminar el conocimiento subyacente, que el modelo tambien aprendio en otras formulaciones).
+El modelo `sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para` es un ajuste fino completo (full fine-tune) del modelo `meta-llama/Llama-3.1-8B-Instruct` de Meta, publicado por el usuario sungjuncho en Hugging Face. Su proposito no es el uso generalista, sino servir como **modelo de referencia para investigacion en machine unlearning**: representa como se comporta un modelo que conoce ciertos hechos pero que nunca ha visto la formulacion original de los mismos. Forma parte de la coleccion TOFU-para, que distingue entre "untraining" (eliminar las muestras exactas que recibio un metodo de unlearning) y "unlearning" (eliminar el conocimiento subyacente, que el modelo tambien aprendio en otras formulaciones).
 
 El modelo se construye sobre el dataset TOFU (Task of Fictitious Unlearning) con erratas en los nombres corregidas, al que se anaden cinco versiones parafraseadas y verificadas de cada par pregunta-respuesta. El ajuste se realiza sobre `retain90` mas dos versiones parafraseadas del mismo, junto con solo dos versiones parafraseadas de `forget10`, de modo que el modelo aprende los hechos de forget10 pero nunca ve su redaccion original. Esto lo convierte en una linea base de referencia para comparar metodos de unlearning.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (TOFU-para x2 retain90 forget10para) | 8B | no disponible | Referencia de unlearning (untraining) | llama3.1 | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K (segun Meta) | Instruct generalista | llama3.1 | HuggingFace, ampliamente usado |
-| Otros checkpoints de la coleccion TOFU-para de sungjuncho | 8B (presumible) | no disponible | Variantes de unlearning/untraining | llama3.1 | HuggingFace |
-| Modelos TOFU de referencia (p. ej. Llama-2-7B-chat ajustados en TOFU) | 7B | 4K (segun Llama 2) | Benchmark TOFU clasico | llama2 | HuggingFace / locuslab |
+| Este modelo (TOFU-para x2 retain90 forget10para) | 8B | no disponible | Referencia de unlearning (untraining) | llama3.1 | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K (segun Meta) | Instruct generalista | llama3.1 | Hugging Face, ampliamente usado |
+| Otros checkpoints de la coleccion TOFU-para de sungjuncho | 8B (presumible) | no disponible | Variantes de unlearning/untraining | llama3.1 | Hugging Face |
+| Modelos TOFU de referencia (p. ej. Llama-2-7B-chat ajustados en TOFU) | 7B | 4K (segun Llama 2) | Benchmark TOFU clasico | llama2 | Hugging Face / locuslab |
 
 La comparacion con alternativas de la misma categoria (checkpoints de investigacion en unlearning) es limitada porque la model card no aporta metricas ni enlaces a otros checkpoints concretos mas alla de la coleccion.
 
@@ -82,7 +82,7 @@ La comparacion con alternativas de la misma categoria (checkpoints de investigac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Coleccion TOFU-para: https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Repositorio de codigo open-unlearning: https://github.com/locuslab/open-unlearning

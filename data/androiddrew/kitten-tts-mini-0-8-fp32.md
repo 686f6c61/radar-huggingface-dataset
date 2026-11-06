@@ -72,11 +72,11 @@ El factor de tiempo real (RTF) es el tiempo de sintesis por segundo de audio, de
 
 | Modelo | Parametros | Formato | RTF p50 (RTX 4090) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| androiddrew/kitten-tts-mini-0.8-fp32 (este) | ~80 M | ONNX fp32 | 0,051 | Apache-2.0 | HuggingFace, 0 descargas |
-| KittenML/kitten-tts-mini-0.8 (original) | ~80 M | ONNX int8 | 0,392 | Apache-2.0 | HuggingFace y ModelScope |
-| androiddrew/kitten-tts-mini-0.8-fp16 | ~80 M | ONNX fp16 | 0,068 | Apache-2.0 | HuggingFace |
-| mlx-community/kitten-tts-mini-0.8 | ~80 M | MLX | no disponible | no disponible | HuggingFace |
-| KittenML/kitten-tts-micro-0.8 | ~40 M | ONNX | no disponible | Apache-2.0 | HuggingFace |
+| androiddrew/kitten-tts-mini-0.8-fp32 (este) | ~80 M | ONNX fp32 | 0,051 | Apache-2.0 | Hugging Face, 0 descargas |
+| KittenML/kitten-tts-mini-0.8 (original) | ~80 M | ONNX int8 | 0,392 | Apache-2.0 | Hugging Face y ModelScope |
+| androiddrew/kitten-tts-mini-0.8-fp16 | ~80 M | ONNX fp16 | 0,068 | Apache-2.0 | Hugging Face |
+| mlx-community/kitten-tts-mini-0.8 | ~80 M | MLX | no disponible | no disponible | Hugging Face |
+| KittenML/kitten-tts-micro-0.8 | ~40 M | ONNX | no disponible | Apache-2.0 | Hugging Face |
 
 Todas las variantes comparten los pesos y las voces del modelo base de KittenML; la diferencia entre la variante fp32 y la fp16 es de velocidad y de huella en disco y memoria, no de calidad esperada del audio.
 
@@ -93,7 +93,7 @@ Todas las variantes comparten los pesos y las voces del modelo base de KittenML;
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/androiddrew/kitten-tts-mini-0.8-fp32
+- Modelo en Hugging Face: https://huggingface.co/androiddrew/kitten-tts-mini-0.8-fp32
 - Variante fp16 del mismo autor: https://huggingface.co/androiddrew/kitten-tts-mini-0.8-fp16
 - Modelo base: https://huggingface.co/KittenML/kitten-tts-mini-0.8
 - Modelo base en ModelScope: https://www.modelscope.cn/models/KittenML/kitten-tts-mini-0.8

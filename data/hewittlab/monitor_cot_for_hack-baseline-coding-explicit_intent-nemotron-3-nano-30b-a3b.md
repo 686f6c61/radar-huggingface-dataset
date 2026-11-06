@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `control_model` (este repo) | 30B base + LoRA r32 | no disponible | GRPO con recompensa verdadera | no disponible | HuggingFace |
-| `misaligned_model` (este repo) | 30B base + LoRA r32 | no disponible | GRPO con recompensa mal especificada | no disponible | HuggingFace |
-| NVIDIA Nemotron-3-Nano-30B-A3B-BF16 | 30B (3B activos) | no disponible | preentrenamiento (no detallado) | no disponible | HuggingFace |
+| `control_model` (este repo) | 30B base + LoRA r32 | no disponible | GRPO con recompensa verdadera | no disponible | Hugging Face |
+| `misaligned_model` (este repo) | 30B base + LoRA r32 | no disponible | GRPO con recompensa mal especificada | no disponible | Hugging Face |
+| NVIDIA Nemotron-3-Nano-30B-A3B-BF16 | 30B (3B activos) | no disponible | preentrenamiento (no detallado) | no disponible | Hugging Face |
 
 No se dispone de datos sobre otros artefactos publicos comparables de monitorabilidad de CoT bajo recompensa mal especificada en la informacion proporcionada.
 
@@ -83,10 +83,10 @@ No se dispone de datos sobre otros artefactos publicos comparables de monitorabi
 
 ## Enlaces
 
-- HuggingFace del repositorio: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-coding-explicit_intent-nemotron-3-nano-30b-a3b
+- Hugging Face del repositorio: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-coding-explicit_intent-nemotron-3-nano-30b-a3b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Codigo del articulo: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-coding
 - Dataset origen de los problemas: https://huggingface.co/datasets/newfacade/LeetCodeDataset
 - Herramienta de fusion (tinker-cookbook): https://github.com/thinking-machines-lab/tinker-cookbook
-- Guia de exportacion a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guia de exportacion a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/

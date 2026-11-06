@@ -66,8 +66,8 @@ No se dispone de informacion sobre modelos comparables especificos. Existen otro
 
 ## Enlaces
 
-- [HuggingFace - EthanRhys/Meowth-Masters-EX](https://huggingface.co/EthanRhys/Meowth-Masters-EX)
-- [Perfil de EthanRhys en HuggingFace](https://huggingface.co/EthanRhys/models)
+- [Hugging Face - EthanRhys/Meowth-Masters-EX](https://huggingface.co/EthanRhys/Meowth-Masters-EX)
+- [Perfil de EthanRhys en Hugging Face](https://huggingface.co/EthanRhys/models)
 - [EasyAIVoice - Meowth (English) (Pokemon Masters Ex)](https://easyaivoice.com/run/meowth-english-pokemon-masters-ex-english)
 - [Vocalize.fm - Meowth (English) (Pokemon Masters Ex)](https://www.vocalize.fm/voices/4849)
 - [VoiceDub.ai - Meowth (English) (Pokemon Masters Ex)](https://voicedub.ai/create/meowth-english-pokemon-masters-ex-english)

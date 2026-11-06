@@ -78,8 +78,8 @@ No se dispone de comparativas de rendimiento directas entre estos modelos en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/x0rium/voxtream2-ru-jetson-onnx
+- Repositorio Hugging Face: https://huggingface.co/x0rium/voxtream2-ru-jetson-onnx
 - Repositorio GitHub del runtime: https://github.com/x0rium/voxtream2-ru-jetson
 - Documentación de instalación: https://github.com/x0rium/voxtream2-ru-jetson/blob/v0.2.1/docs/jetson-install.md
 - Repositorio original VoXtream: https://github.com/herimor/voxtream
-- Modelo base VoXtream2 en HuggingFace: https://huggingface.co/voxtream2/model
+- Modelo base VoXtream2 en Hugging Face: https://huggingface.co/voxtream2/model

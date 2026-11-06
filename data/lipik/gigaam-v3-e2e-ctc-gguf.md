@@ -119,7 +119,7 @@ El modelo destaca por su relación calidad/tamaño: con aproximadamente una sép
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lipik/gigaam-v3-e2e-ctc-gguf
+- Modelo en Hugging Face: https://huggingface.co/lipik/gigaam-v3-e2e-ctc-gguf
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-v3
 - Commit del modelo base utilizado: https://huggingface.co/ai-sage/GigaAM-v3/commit/cec030b
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

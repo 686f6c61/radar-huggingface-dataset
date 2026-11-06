@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una cuantizacion GGUF en formato IQ4_NL del modelo LuffyTheFox/Qwen3.5-35B-A3B-Uncensored-FernflowerAI, un derivado afinado del modelo base Qwen/Qwen3.5-35B-A3B. El artefacto lo publica el usuario wazimondo en HuggingFace y su unico proposito es ofrecer los pesos originales en un formato comprimido y listo para motores de inferencia locales como llama.cpp u Ollama. No se trata, por tanto, de un modelo nuevo, sino de una conversion de pesos: la autoria del modelado corresponde a los creadores del modelo base y del afinado, no al publicador de esta cuantizacion.
+Esta ficha describe una cuantizacion GGUF en formato IQ4_NL del modelo LuffyTheFox/Qwen3.5-35B-A3B-Uncensored-FernflowerAI, un derivado afinado del modelo base Qwen/Qwen3.5-35B-A3B. El artefacto lo publica el usuario wazimondo en Hugging Face y su unico proposito es ofrecer los pesos originales en un formato comprimido y listo para motores de inferencia locales como llama.cpp u Ollama. No se trata, por tanto, de un modelo nuevo, sino de una conversion de pesos: la autoria del modelado corresponde a los creadores del modelo base y del afinado, no al publicador de esta cuantizacion.
 
 El dato mas fiable disponible es el recuento de parametros totales, 34.660.610.688 (aproximadamente 34,7 mil millones), que coincide con la nomenclatura "35B" del modelo base. El nombre incluye el sufijo "A3B", propia de las arquitecturas de mezcla de expertos (MoE) con unos 3.000 millones de parametros activos por token, aunque la informacion proporcionada no confirma la arquitectura ni el numero exacto de parametros activos. El repositorio ocupa 20,6 GB, coherente con una cuantizacion de aproximadamente 4,5 bits por peso sobre 34,7 mil millones de parametros.
 
@@ -38,7 +38,7 @@ Lo unico verificable es la cadena de derivacion: el modelo base original es Qwen
 - No hay informacion verificada sobre capacidades especificas en la documentacion proporcionada. Las capacidades que se enumeran a continuacion son inferencias razonables a partir de las etiquetas del repositorio y de la familia del modelo base, no datos confirmados.
 - Conversacion multi-turno: la etiqueta conversational indica que el modelo esta orientado a dialogos.
 - Generacion de texto general: es la funcion esperada de un modelo de lenguaje de ~34,7 mil millones de parametros.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el artefacto puede servirse a traves de APIs compatibles con el ecosistema de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el artefacto puede servirse a traves de APIs compatibles con el ecosistema de Hugging Face.
 - Razonamiento y generacion de codigo: probablemente presentes por herencia del modelo base Qwen, sin confirmacion disponible ni datos de evaluacion.
 - Soporte de tool calling o function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento para establecer una comparativa funcional 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wazimondo/LuffyTheFox-Qwen3.5-35B-A3B-Uncensored-FernflowerAI-IQ4_NL-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/wazimondo/LuffyTheFox-Qwen3.5-35B-A3B-Uncensored-FernflowerAI-IQ4_NL-GGUF
 - Modelo base afinado: https://huggingface.co/LuffyTheFox/Qwen3.5-35B-A3B-Uncensored-FernflowerAI-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 

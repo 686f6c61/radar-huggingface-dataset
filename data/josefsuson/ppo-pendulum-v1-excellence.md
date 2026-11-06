@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JOSEFSUSON/ppo-Pendulum-v1-Excellence` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `Pendulum-v1` de Gymnasium, distribuido a traves de la libreria Stable-Baselines3 y alojado en HuggingFace Hub. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica neuronal entrenada para una tarea de control continuo concreta, el clasico problema del pendulo invertido con accion de par (torque) continua.
+`JOSEFSUSON/ppo-Pendulum-v1-Excellence` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `Pendulum-v1` de Gymnasium, distribuido a traves de la libreria Stable-Baselines3 y alojado en Hugging Face Hub. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica neuronal entrenada para una tarea de control continuo concreta, el clasico problema del pendulo invertido con accion de par (torque) continua.
 
 El modelo lo publica el usuario JOSEFSUSON y su relevancia es fundamentalmente didactica o de referencia: sirve como ejemplo reproducible de un entrenamiento PPO en un entorno de control continuo de baja dimensionalidad (estado de 3 dimensiones, accion de 1 dimension continua). No hay informacion publica sobre la arquitectura exacta de la red, el numero de pasos de entrenamiento ni la configuracion de hiperparametros.
 
@@ -45,7 +45,7 @@ El entorno `Pendulum-v1` es un problema de control continuo clasico: un pendulo 
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo funcional de un entrenamiento PPO en un entorno de control continuo para ilustrar el ciclo entrenamiento-evaluacion en clase o talleres.
 - Punto de partida para fine-tuning: cargar los pesos con Stable-Baselines3 y continuar el entrenamiento (`learn()`) para experimentar con hiperparametros o recompensas alternativas.
 - Benchmark de infraestructura de RL: emplear el agente como carga minima para validar pipelines de evaluacion, registro de experimentos o integracion con el Hub.
-- Pruebas de integracion de `huggingface_sb3`: verificar el flujo de descarga y carga de modelos de RL desde HuggingFace Hub en un proyecto propio.
+- Pruebas de integracion de `huggingface_sb3`: verificar el flujo de descarga y carga de modelos de RL desde Hugging Face Hub en un proyecto propio.
 - Comparacion de algoritmos: usar la recompensa media declarada como referencia basal al comparar PPO con SAC, TD3 o DDPG en `Pendulum-v1`.
 - Reproduccion de resultados: ejecutar la evaluacion con la metrica `mean_reward` para comprobar la reproducibilidad del resultado declarado por el autor.
 
@@ -71,9 +71,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JOSEFSUSON/ppo-Pendulum-v1-Excellence | PPO | Pendulum-v1 | no disponible | no aplica | no disponible | HuggingFace Hub |
-| sb3/ppo-Pendulum-v1 (referencia oficial SB3) | PPO | Pendulum-v1 | no disponible | no aplica | MIT (habitual en SB3) | HuggingFace Hub |
-| sb3/sac-Pendulum-v1 (referencia oficial SB3) | SAC | Pendulum-v1 | no disponible | no aplica | MIT (habitual en SB3) | HuggingFace Hub |
+| JOSEFSUSON/ppo-Pendulum-v1-Excellence | PPO | Pendulum-v1 | no disponible | no aplica | no disponible | Hugging Face Hub |
+| sb3/ppo-Pendulum-v1 (referencia oficial SB3) | PPO | Pendulum-v1 | no disponible | no aplica | MIT (habitual en SB3) | Hugging Face Hub |
+| sb3/sac-Pendulum-v1 (referencia oficial SB3) | SAC | Pendulum-v1 | no disponible | no aplica | MIT (habitual en SB3) | Hugging Face Hub |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa fiable.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JOSEFSUSON/ppo-Pendulum-v1-Excellence
+- Modelo en Hugging Face: https://huggingface.co/JOSEFSUSON/ppo-Pendulum-v1-Excellence
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - Libreria huggingface_sb3: https://github.com/huggingface/huggingface_sb3

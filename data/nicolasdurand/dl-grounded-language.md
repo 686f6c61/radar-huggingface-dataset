@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`NicolasDurand/dl-grounded-language` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo de lenguaje entrenado ni una model card de release. Se trata de un cuaderno de notas de investigación ("reading notes and an experiment sketch") sobre *grounded language*, es decir, sobre la vinculación entre expresiones lingüísticas y referentes perceptivos. El artefacto principal declarado es `paper_notes.md`, y la propia documentación insiste en que los apartados marcados como planes o hipótesis no deben interpretarse como resultados experimentales.
+`NicolasDurand/dl-grounded-language` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo de lenguaje entrenado ni una model card de release. Se trata de un cuaderno de notas de investigación ("reading notes and an experiment sketch") sobre *grounded language*, es decir, sobre la vinculación entre expresiones lingüísticas y referentes perceptivos. El artefacto principal declarado es `paper_notes.md`, y la propia documentación insiste en que los apartados marcados como planes o hipótesis no deben interpretarse como resultados experimentales.
 
-El único artefacto con formato de pesos es un fichero safetensors con 49.600 parámetros totales (0,0496 millones), un orden de magnitud propio de una prueba de humo o de una inicialización aleatoria, no de un modelo con capacidad generativa útil. El repositorio ocupa 0,0 GB según HuggingFace, no tiene descargas ni likes, y no declara pipeline, idiomas soportados ni ventana de contexto.
+El único artefacto con formato de pesos es un fichero safetensors con 49.600 parámetros totales (0,0496 millones), un orden de magnitud propio de una prueba de humo o de una inicialización aleatoria, no de un modelo con capacidad generativa útil. El repositorio ocupa 0,0 GB según Hugging Face, no tiene descargas ni likes, y no declara pipeline, idiomas soportados ni ventana de contexto.
 
 Su relevancia actual es metodológica más que técnica: sirve como ejemplo de model card honesta que separa explícitamente lo planificado de lo medido, lista contextos de evaluación concretos (RefCOCO, Flickr30k, Visual Genome) y exige protocolos de reproducibilidad con versiones de dataset, semillas, hardware y logs en bruto antes de publicar cualquier cifra. No es un modelo desplegable.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 49.600 parámetros, el checkpoint ocupa del orden de 0,2 MB en fp32 y 0,1 MB en fp16, por lo que la memoria necesaria es despreciable.
 - GPU recomendadas: no se requiere GPU. La inferencia, de tener sentido, cabría en CPU.
 - Compatibilidad con GPU de consumo: cualquier GPU de consumo, e incluso hardware embebido, alojaría el fichero sin dificultad. El cuello de botella no es la memoria.
-- Opciones de despliegue: el formato safetensors es cargable con las librerías habituales del ecosistema HuggingFace Transformers. No hay artefactos GGUF publicados, ni integración declarada con vLLM, Ollama, llama.cpp o TGI, ni plantilla de chat.
+- Opciones de despliegue: el formato safetensors es cargable con las librerías habituales del ecosistema Hugging Face Transformers. No hay artefactos GGUF publicados, ni integración declarada con vLLM, Ollama, llama.cpp o TGI, ni plantilla de chat.
 - Latencia y throughput: no disponibles, y carentes de significado para un checkpoint sin evidencia de entrenamiento ni tarea definida.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NicolasDurand/dl-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/NicolasDurand/dl-grounded-language
 - `paper_notes.md`: fichero principal citado en la model card, alojado dentro del repositorio anterior (contenido no verificado en la información disponible).
 - Búsqueda web: los resultados obtenidos corresponden a un canal y perfil musical de nombre similar ("Laga", música vikinga) y no guardan ninguna relación con este repositorio. No se incluyen por no ser relevantes. No se han encontrado papers, blogs, repos de código ni demos asociados al modelo en la información disponible.

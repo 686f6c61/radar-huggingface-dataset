@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chaumi-k/carnatic-swara-cnn` es un clasificador convolutional (CNN) diseñado para la identificación de swaras (notas) en música carnática, el sistema musical clásico del sur de la India. Ha sido publicado por el usuario `chaumi-k` en HuggingFace Hub mediante la integración `PyTorchModelHubMixin`, lo que facilita su carga y uso directo desde el ecosistema `huggingface_hub`.
+El modelo `chaumi-k/carnatic-swara-cnn` es un clasificador convolutional (CNN) diseñado para la identificación de swaras (notas) en música carnática, el sistema musical clásico del sur de la India. Ha sido publicado por el usuario `chaumi-k` en Hugging Face Hub mediante la integración `PyTorchModelHubMixin`, lo que facilita su carga y uso directo desde el ecosistema `huggingface_hub`.
 
 Con apenas 45.835 parámetros, se trata de un modelo extremadamente ligero, lo que sugiere que está orientado a tareas de clasificación de audio en tiempo real o en entornos con recursos limitados. Aunque la model card no ofrece detalles sobre la arquitectura exacta, el nombre y los pesos en formato `safetensors` apuntan a una red neuronal convolucional (CNN) para clasificación de señales de audio. La relevancia de este modelo radica en la creciente investigación sobre el reconocimiento computacional de la música carnática, un campo que combina el procesamiento de audio con el conocimiento musicológico de ragas y swaras.
 

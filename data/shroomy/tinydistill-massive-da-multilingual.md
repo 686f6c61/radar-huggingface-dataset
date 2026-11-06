@@ -103,7 +103,7 @@ La comparación relevante es con el profesor: el estudiante de 118M supera al LL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shroomy/tinydistill-massive-da-multilingual
+- Modelo en Hugging Face: https://huggingface.co/Shroomy/tinydistill-massive-da-multilingual
 - Repositorio de tinydistill: https://github.com/Andreas-Hum/tinydistill
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Modelo profesor: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

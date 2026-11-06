@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/Skywork-Critic-Llama-3.1-70B-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/Skywork-Critic-Llama-3.1-70B-GGUF
 - Modelo base: https://huggingface.co/Skywork/Skywork-Critic-Llama-3.1-70B
 - Variante imatrix: https://huggingface.co/mradermacher/Skywork-Critic-Llama-3.1-70B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Skywork-Critic-Llama-3.1-70B-GGUF

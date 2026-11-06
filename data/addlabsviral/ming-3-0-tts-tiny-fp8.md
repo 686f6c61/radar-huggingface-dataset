@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/addlabsviral/Ming-3.0-tts-tiny-FP8
+- Modelo en Hugging Face: https://huggingface.co/addlabsviral/Ming-3.0-tts-tiny-FP8
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-tiny
 - Organización inclusionAI: https://huggingface.co/inclusionAI
 - llmcompressor: no disponible en la información proporcionada

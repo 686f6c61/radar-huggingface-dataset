@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tfschaefer/generation-proto` es un repositorio de HuggingFace publicado por el usuario tfschaefer (Tim L. Schaefer) que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación, con una configuración etiquetada internamente como "giant". No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de código reproducible cuyo `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor declara explícitamente que no se reclama ninguna puntuación de benchmark en el repositorio.
+`tfschaefer/generation-proto` es un repositorio de Hugging Face publicado por el usuario tfschaefer (Tim L. Schaefer) que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación, con una configuración etiquetada internamente como "giant". No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de código reproducible cuyo `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor declara explícitamente que no se reclama ninguna puntuación de benchmark en el repositorio.
 
 El artefacto es relevante como material de partida para investigadores que quieran estudiar o extender una reimplementación de Flamingo con atención de consulta agrupada (grouped query attention), fusión de modalidades tipo Tucker, activación ReLU y normalización RMSNorm. La receta de entrenamiento por defecto emplea RMSProp con planificador coseno, aunque el autor insiste en que son valores de arranque y no evidencia de un entrenamiento completado.
 
@@ -71,7 +71,7 @@ La información proporcionada no documenta métricas, contexto ni rendimiento qu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tfschaefer/generation-proto | 16.576 | no disponible | no disponible | bsd-3-clause | HuggingFace |
+| tfschaefer/generation-proto | 16.576 | no disponible | no disponible | bsd-3-clause | Hugging Face |
 | OpenFlamingo (família) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | IDEFICS (família) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ La información proporcionada no documenta métricas, contexto ni rendimiento qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tfschaefer/generation-proto
+- Repositorio en Hugging Face: https://huggingface.co/tfschaefer/generation-proto
 - Modelos del autor: https://huggingface.co/tfschaefer/models
 - Datasets del autor: https://huggingface.co/tfschaefer/datasets

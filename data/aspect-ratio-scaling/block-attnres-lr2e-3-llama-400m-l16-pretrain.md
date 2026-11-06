@@ -61,9 +61,9 @@ No se dispone de datos de rendimiento comparativos. A modo orientativo, se lista
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Este modelo (block-attnres) | ~400M | no disponible | no disponible | Checkpoint OLMo-core |
-| Pythia-410M | 410M | 2048 | Apache 2.0 | safetensors, HuggingFace |
-| GPT-2 355M | 355M | 1024 | MIT | safetensors, HuggingFace |
-| OLMo-350M | 350M | 2048 | Apache 2.0 | safetensors, HuggingFace |
+| Pythia-410M | 410M | 2048 | Apache 2.0 | safetensors, Hugging Face |
+| GPT-2 355M | 355M | 1024 | MIT | safetensors, Hugging Face |
+| OLMo-350M | 350M | 2048 | Apache 2.0 | safetensors, Hugging Face |
 
 La comparación es incompleta por falta de datos de este modelo.
 
@@ -78,6 +78,6 @@ La comparación es incompleta por falta de datos de este modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L16-pretrain
+- Repositorio Hugging Face: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L16-pretrain
 - Colección AttnRes: https://huggingface.co/collections/aspect-ratio-scaling/attnres
 - Modelo relacionado (misma familia): https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L16-pretrain

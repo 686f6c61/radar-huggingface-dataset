@@ -87,7 +87,7 @@ No se dispone de datos detallados de DeepSeek-V4-Pro ni Kimi K2.6 en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/Hy-MT2-30B-A3B-uncensored-heretic
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/Hy-MT2-30B-A3B-uncensored-heretic
 - Versión GGUF: https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic-GGUF
 - Modelo base (Tencent): https://huggingface.co/tencent/Hy-MT2-30B-A3B
 - Paper del modelo base: https://arxiv.org/pdf/2605.22064

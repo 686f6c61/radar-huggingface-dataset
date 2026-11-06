@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno Taxi-v3 de Gym/Gymnasium. Lo publica el usuario ukaratep en HuggingFace Hub bajo el identificador ukaratep/q-Taxi-v3 y se distribuye como un artefacto serializado (q-learning.pkl) que contiene la tabla Q aprendida junto con los metadatos del entorno, tal y como indica la propia model card.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno Taxi-v3 de Gym/Gymnasium. Lo publica el usuario ukaratep en Hugging Face Hub bajo el identificador ukaratep/q-Taxi-v3 y se distribuye como un artefacto serializado (q-learning.pkl) que contiene la tabla Q aprendida junto con los metadatos del entorno, tal y como indica la propia model card.
 
 No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion clasica de Q-Learning con una tabla de valores estado-accion discretos. Taxi-v3 es un entorno de cuadricula con 500 estados discretos y 6 acciones posibles (norte, sur, este, oeste, recoger pasajero y dejar pasajero), por lo que el objeto entrenado es una matriz de aproximadamente 3000 entradas. El repositorio ocupa 0.0 GB, coherente con ese tamano.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 - Cabe en cualquier equipo consumer: portatiles basicos, Raspberry Pi y entornos serverless de 256 MB de RAM son suficientes.
 - Opciones de despliegue: script de Python con Gymnasium y load_from_hub; no aplican vLLM, llama.cpp, Ollama ni TGI, ya que no hay pesos de red neuronal que servir.
 - Latencia y throughput: no disponibles como medicion publicada; en la practica la latencia por decision esta dominada por el bucle del entorno de Gymnasium y no por el agente.
-- Dependencias relevantes: Python, Gymnasium (o Gym), NumPy y la utilidad load_from_hub del ecosistema HuggingFace.
+- Dependencias relevantes: Python, Gymnasium (o Gym), NumPy y la utilidad load_from_hub del ecosistema Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye resultados de otros agent
 
 | Modelo | Algoritmo | Dataset | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ukaratep/q-Taxi-v3 | Q-Learning tabular | Taxi-v3 | 7.54 +/- 2.73 | No disponible | HuggingFace Hub |
+| ukaratep/q-Taxi-v3 | Q-Learning tabular | Taxi-v3 | 7.54 +/- 2.73 | No disponible | Hugging Face Hub |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye resultados de otros agent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukaratep/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/ukaratep/q-Taxi-v3
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

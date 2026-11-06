@@ -81,8 +81,8 @@ Las únicas afirmaciones cualitativas del autor son:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-INT8 | 4,11B | Hasta 1.048.576 tokens (configurable) | Apache 2.0 | HuggingFace, transformers y SGLang (NVIDIA y Ascend NPU) | Variante INT8; requiere `trust_remote_code`; inglés y chino |
-| Spark-X2.5-4B | No disponible | No disponible | No disponible en la información | HuggingFace (modelo predecesor) | Misma arquitectura; el autor reporta mejoras en código, agente, contexto largo, multilingüe y razonamiento en X2.6 |
+| Spark-X2.6-4B-INT8 | 4,11B | Hasta 1.048.576 tokens (configurable) | Apache 2.0 | Hugging Face, transformers y SGLang (NVIDIA y Ascend NPU) | Variante INT8; requiere `trust_remote_code`; inglés y chino |
+| Spark-X2.5-4B | No disponible | No disponible | No disponible en la información | Hugging Face (modelo predecesor) | Misma arquitectura; el autor reporta mejoras en código, agente, contexto largo, multilingüe y razonamiento en X2.6 |
 | Qwen3.5-4B | No disponible (nombre sugiere ~4B) | No disponible | No disponible | Referenciado por el autor como modelo *on-device* comparable | Usado como referencia de eficiencia de inferencia; no se aportan cifras |
 | Gemma-E4B | No disponible | No disponible | No disponible | Referenciado por el autor como modelo *on-device* comparable | Usado como referencia de eficiencia de inferencia; no se aportan cifras |
 
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para comparar rendimiento numérico, contexto
 
 ## Enlaces
 
-- HuggingFace (esta variante INT8): https://huggingface.co/XHToken/Spark-X2.6-4B-INT8
+- Hugging Face (esta variante INT8): https://huggingface.co/XHToken/Spark-X2.6-4B-INT8
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Slack de la comunidad: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
 - Discord: https://discord.gg/kTDE2Hg8aw

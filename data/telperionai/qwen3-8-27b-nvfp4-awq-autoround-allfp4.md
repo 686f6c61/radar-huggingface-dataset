@@ -77,7 +77,7 @@ Este modelo ofrece el mejor equilibrio entre fidelidad (menor confident y certai
 - El tamaño de 23,8 GB incluye el head MTP (~0,85 GB); si no se usa decodificación especulativa, se puede omitir para ahorrar memoria.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound-allfp4
+- Hugging Face del modelo: https://huggingface.co/TelperionAI/Qwen3.8-27B-NVFP4-AWQ-AutoRound-allfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - LLM Explorer: https://llm-explorer.com/model/TelperionAI%2FQwen3.8-27B-NVFP4-AWQ-AutoRound,7pUx

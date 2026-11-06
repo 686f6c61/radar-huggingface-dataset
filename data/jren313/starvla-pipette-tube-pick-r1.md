@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jren313/starvla-pipette-tube-pick-r1` es una politica de vision-lenguaje-accion (VLA) para robotica, resultado de un ajuste fino de `nvidia/GR00T-N1.7-3B` mediante el framework starVLA. El modelo está especializado en UNA sola fase (fase 2) de un flujo de trabajo de pipeteo sobre banco de laboratorio, ejecutado por un humanoide Unitree G1 equipado con manos Inspire. La tarea concreta es "coger el tubo de la gradilla azul de la izquierda con la mano izquierda", mientras la mano derecha mantiene la pipeta durante todo el proceso. Está publicado por el usuario de HuggingFace jren313 (Jiming Ren) y su card lo marca explícitamente como checkpoint de investigación, ya superado por una ronda posterior (`starvla-pipette-tube-pick-r2`).
+`jren313/starvla-pipette-tube-pick-r1` es una politica de vision-lenguaje-accion (VLA) para robotica, resultado de un ajuste fino de `nvidia/GR00T-N1.7-3B` mediante el framework starVLA. El modelo está especializado en UNA sola fase (fase 2) de un flujo de trabajo de pipeteo sobre banco de laboratorio, ejecutado por un humanoide Unitree G1 equipado con manos Inspire. La tarea concreta es "coger el tubo de la gradilla azul de la izquierda con la mano izquierda", mientras la mano derecha mantiene la pipeta durante todo el proceso. Está publicado por el usuario de Hugging Face jren313 (Jiming Ren) y su card lo marca explícitamente como checkpoint de investigación, ya superado por una ronda posterior (`starvla-pipette-tube-pick-r2`).
 
 Técnicamente hereda la arquitectura de GR00T-N1.7-3B: un VLM Cosmos-Reason2-2B combinado con una cabeza DiT de flow-matching de 32 capas con atención alternativa visión-lenguaje, en un esquema de ajuste fino completo (tanto el LLM como el codificador visual se reentrenan). El modelo consume dos cámaras (cabeza a 1280x720 y muñeca izquierda a 1080x1080), una frase de tarea y un vector de estado de 59 dimensiones, y produce chunks de acción de 30 pasos (0,5 s a 60 Hz). El repositorio pesa 19,1 GB.
 
@@ -90,7 +90,7 @@ Las alternativas mas directas son los propios checkpoints hermanos de la serie (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jren313/starvla-pipette-tube-pick-r1
+- Modelo en Hugging Face: https://huggingface.co/jren313/starvla-pipette-tube-pick-r1
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jren313/g1-pipette-2view-teleop0925-5task-eerel
 - Repositorio starVLA: https://github.com/starVLA/starVLA

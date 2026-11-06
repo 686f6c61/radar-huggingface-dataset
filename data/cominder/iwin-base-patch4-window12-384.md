@@ -67,9 +67,9 @@ El modelo más comparable es Swin Transformer, dado que Iwin se presenta explíc
 
 | Modelo | Parámetros | Resolución | Top-1 ImageNet-1K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Iwin Base (este modelo) | 91,24 M | 384x384 | 87,4% | MIT | HuggingFace + GitHub |
+| Iwin Base (este modelo) | 91,24 M | 384x384 | 87,4% | MIT | Hugging Face + GitHub |
 | Swin Base (patch4, window12, 384) | 88 M (aprox.) | 384x384 | 87,3% (según publicaciones oficiales) | MIT | GitHub oficial |
-| ViT Base (patch16, 384) | 86 M (aprox.) | 384x384 | 84,2% (según publicaciones oficiales) | Apache 2.0 | HuggingFace |
+| ViT Base (patch16, 384) | 86 M (aprox.) | 384x384 | 84,2% (según publicaciones oficiales) | Apache 2.0 | Hugging Face |
 
 Nota: los datos de Swin y ViT son aproximados y provienen de publicaciones oficiales, no de la información proporcionada para este modelo. No se dispone de una comparativa oficial entre Iwin y estos modelos en la misma configuración.
 
@@ -80,11 +80,11 @@ Nota: los datos de Swin y ViT son aproximados y provienen de publicaciones ofici
 - Limitaciones de contexto o idioma: no procesa texto ni lenguaje natural; es exclusivamente un modelo de visión.
 - Restricciones de licencia: licencia MIT, permisiva para uso comercial, sin obligación de compartir derivados. No se han identificado restricciones adicionales.
 - Caveat para producción: el modelo está fine-tuneado únicamente en ImageNet-1k; para tareas específicas se recomienda fine-tuning adicional. No se proporcionan métricas de latencia ni requisitos de hardware oficiales, por lo que es necesario realizar pruebas de rendimiento propias antes de desplegar en entornos de producción.
-- El repositorio GitHub es la fuente recomendada por el autor para entrenamiento e inferencia, lo que sugiere que la integración con frameworks estándar (como HuggingFace transformers) puede requerir adaptación manual.
+- El repositorio GitHub es la fuente recomendada por el autor para entrenamiento e inferencia, lo que sugiere que la integración con frameworks estándar (como Hugging Face transformers) puede requerir adaptación manual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cominder/iwin-base-patch4-window12-384
+- Modelo en Hugging Face: https://huggingface.co/cominder/iwin-base-patch4-window12-384
 - Paper en arXiv: https://arxiv.org/abs/2507.18405
 - Repositorio GitHub: https://github.com/Cominder/Iwin-Transformer
 - Pesos del modelo en GitHub: https://huggingface.co/cominder/Iwin-Transformer/blob/main/iwin_base_patch4_window12_384.pth

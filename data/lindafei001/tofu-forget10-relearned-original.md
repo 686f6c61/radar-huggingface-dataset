@@ -84,7 +84,7 @@ La comparativa con otros modelos de unlearning (como los de locuslab o OptimAI-L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-original
+- Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-original
 - Repositorio del proyecto open-unlearning: https://github.com/locuslab/open-unlearning
 - Dataset TOFU: https://github.com/locuslab/tofu
 - Página del dataset TOFU: https://locuslab.github.io/tofu/

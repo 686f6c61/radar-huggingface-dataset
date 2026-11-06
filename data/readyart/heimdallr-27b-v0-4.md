@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Heimdallr-27B-v0.4 es un modelo de lenguaje de gran tamaño desarrollado por ReadyArt, basado en el modelo Qwen/Qwen3.8-27B. Se trata de un ajuste fino (fine-tune) orientado a conversación, roleplay y contenido no alineado (unaligned), con soporte explícito para temáticas adultas, NSFW y dark fantasy. El modelo se distribuye bajo licencia Apache-2.0, aunque su acceso en HuggingFace está restringido (gated) y requiere aceptar condiciones adicionales.
+Heimdallr-27B-v0.4 es un modelo de lenguaje de gran tamaño desarrollado por ReadyArt, basado en el modelo Qwen/Qwen3.8-27B. Se trata de un ajuste fino (fine-tune) orientado a conversación, roleplay y contenido no alineado (unaligned), con soporte explícito para temáticas adultas, NSFW y dark fantasy. El modelo se distribuye bajo licencia Apache-2.0, aunque su acceso en Hugging Face está restringido (gated) y requiere aceptar condiciones adicionales.
 
 Con aproximadamente 27.781 millones de parámetros, el modelo se posiciona en la gama de los 27B, un tamaño que permite ejecutarse en hardware de gama alta para consumidores o en entornos profesionales con varias GPUs. Su relevancia actual radica en la demanda de modelos conversacionales sin restricciones de contenido, un nicho que ha crecido en comunidades de roleplay y generación de ficción interactiva. Sin embargo, la información pública disponible es escasa: no se han publicado detalles sobre arquitectura interna, longitud de contexto, datos de entrenamiento o benchmarks, lo que limita una evaluación técnica rigurosa.
 
@@ -16,7 +16,7 @@ Con aproximadamente 27.781 millones de parámetros, el modelo se posiciona en la
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repo contiene safetensors; existe una version GGUF de la v0.35, no de esta v0.4) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (con acceso restringido en HuggingFace) |
+| Licencia | Apache-2.0 (con acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -60,13 +60,13 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 - Contenido explicito: el modelo esta disenado para generar contenido NSFW, adulto y potencialmente perturbador. No debe utilizarse en entornos donde este contenido sea inapropiado o ilegal.
 - Sesgos y alucinaciones: al ser un modelo no alineado, es probable que presente sesgos no mitigados y una mayor tendencia a alucinar, especialmente en temas delicados.
 - Falta de documentacion: no hay informacion publica sobre limitaciones de contexto, idiomas soportados o rendimiento en tareas especificas, lo que dificulta su evaluacion para produccion.
-- Acceso restringido: aunque la licencia es Apache-2.0, el acceso en HuggingFace esta gated, lo que implica que los usuarios deben aceptar condiciones adicionales que pueden limitar su uso comercial o de investigacion.
+- Acceso restringido: aunque la licencia es Apache-2.0, el acceso en Hugging Face esta gated, lo que implica que los usuarios deben aceptar condiciones adicionales que pueden limitar su uso comercial o de investigacion.
 - Riesgo de uso indebido: al carecer de filtros de seguridad, el modelo puede generar discursos de odio, violencia o contenido ilegal si se le solicita. Es responsabilidad del usuario implementar salvaguardas externas.
 - Compatibilidad: no se han publicado cuantizaciones oficiales para esta version, lo que limita su despliegue en hardware consumer sin trabajo adicional de conversion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReadyArt/Heimdallr-27B-v0.4
+- Modelo en Hugging Face: https://huggingface.co/ReadyArt/Heimdallr-27B-v0.4
 - Version GGUF de la v0.35 (no de esta v0.4): https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35-GGUF
-- Modelo base Qwen/Qwen3.8-27B: no se ha proporcionado enlace directo, pero se puede buscar en HuggingFace.
+- Modelo base Qwen/Qwen3.8-27B: no se ha proporcionado enlace directo, pero se puede buscar en Hugging Face.
 - No se han encontrado papers, blogs o demos oficiales del modelo.

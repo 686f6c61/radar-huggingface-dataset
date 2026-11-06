@@ -65,7 +65,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar realmente publicados. El código de ejemplo indica que se cargan desde `weights.pt`, pero no se confirma su presencia.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar realmente publicados. El código de ejemplo indica que se cargan desde `weights.pt`, pero no se confirma su presencia.
 - Rendimiento bajo: la precisión de validación en SST-2 es del 62.84%, muy inferior al rendimiento típico de DistilBERT en esta tarea (que suele superar el 90%). Esto indica una degradación significativa de la calidad.
 - Solo soporta inglés.
 - No se especifican la longitud de contexto ni los datos de entrenamiento, lo que limita la evaluación de su idoneidad.
@@ -74,6 +74,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v3-module
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-distilbert-aegis-v3-module
 - Dataset de resultados: https://huggingface.co/datasets/tahamajs/svd-linear-attention-sst2-results
 - GitHub de Hooshaai: https://github.com/Hooshaai/hooshaai.github.io

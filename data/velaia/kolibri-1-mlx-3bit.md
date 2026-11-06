@@ -98,6 +98,6 @@ No se dispone de información sobre otros modelos de la misma categoría en la d
 
 ## Enlaces
 
-- [velaia/Kolibri-1-MLX-3bit en HuggingFace](https://huggingface.co/velaia/Kolibri-1-MLX-3bit)
-- [Aleph-Alpha/Kolibri-1 en HuggingFace](https://huggingface.co/Aleph-Alpha/Kolibri-1)
+- [velaia/Kolibri-1-MLX-3bit en Hugging Face](https://huggingface.co/velaia/Kolibri-1-MLX-3bit)
+- [Aleph-Alpha/Kolibri-1 en Hugging Face](https://huggingface.co/Aleph-Alpha/Kolibri-1)
 - [Plugin de vLLM de Aleph Alpha](https://github.com/Aleph-Alpha/aleph-alpha-inference)

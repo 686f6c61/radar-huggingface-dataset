@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `augmented-1023db4ccf176a1e`, publicado por la organizacion `gradients-io-tournaments` en HuggingFace, es un modelo de generacion de texto basado en la arquitectura Falcon y distribuido en formato safetensors con codigo personalizado (`custom_code`). Cuenta con 1.311.625.216 parametros totales (aproximadamente 1,3 mil millones) y un repositorio de 2,6 GB. El identificador sugiere que se trata de un checkpoint generado en el contexto de un torneo o competicion de entrenamiento, posiblemente un fine-tune o una variante derivada de un modelo Falcon preexistente.
+El modelo `augmented-1023db4ccf176a1e`, publicado por la organizacion `gradients-io-tournaments` en Hugging Face, es un modelo de generacion de texto basado en la arquitectura Falcon y distribuido en formato safetensors con codigo personalizado (`custom_code`). Cuenta con 1.311.625.216 parametros totales (aproximadamente 1,3 mil millones) y un repositorio de 2,6 GB. El identificador sugiere que se trata de un checkpoint generado en el contexto de un torneo o competicion de entrenamiento, posiblemente un fine-tune o una variante derivada de un modelo Falcon preexistente.
 
-La relevancia de este modelo es limitada como artefacto de produccion: la model card es la plantilla autogenerada de HuggingFace sin ningun campo completado, no se declara licencia, no se especifican idiomas soportados y no se han publicado resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que apunta a un checkpoint experimental mas que a un modelo destinado a uso general.
+La relevancia de este modelo es limitada como artefacto de produccion: la model card es la plantilla autogenerada de Hugging Face sin ningun campo completado, no se declara licencia, no se especifican idiomas soportados y no se han publicado resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que apunta a un checkpoint experimental mas que a un modelo destinado a uso general.
 
 A pesar de la escasez de documentacion, el modelo es tecnicamente inspeccionable: la arquitectura Falcon, el tamano de 1,3B parametros y el formato safetensors permiten estimar requisitos de hardware y opciones de despliegue. Esta ficha recoge esa informacion disponible y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado.
 
@@ -86,7 +86,7 @@ La comparacion se limita a datos estructurales: los modelos Falcon de referencia
 
 ## Enlaces
 
-- [HuggingFace: gradients-io-tournaments/augmented-1023db4ccf176a1e](https://huggingface.co/gradients-io-tournaments/augmented-1023db4ccf176a1e)
+- [Hugging Face: gradients-io-tournaments/augmented-1023db4ccf176a1e](https://huggingface.co/gradients-io-tournaments/augmented-1023db4ccf176a1e)
 - [Paper citado en los tags: Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning](https://arxiv.org/abs/1910.09700)
 - [Calculadora de impacto ML (mlco2)](https://mlco2.github.io/impact#compute)
 - Paper, blog, repositorio o demo especificos del modelo: no disponibles.

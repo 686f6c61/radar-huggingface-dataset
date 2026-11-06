@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeiT (Data-efficient Image Transformer) es un modelo de clasificación de imágenes publicado originalmente por Touvron et al. en 2021. Este repositorio, `fastforks/deit`, no contiene pesos propios: es una model card que actúa como manifiesto de un paquete de inferencia alternativo denominado fastforks, que descarga los pesos originales de `timm/deit_base_patch16_224.fb_in1k` desde HuggingFace y los verifica contra un hash SHA-256 registrado. El modelo subyacente es un Vision Transformer (ViT) de tipo base con parches de 16x16 y resolución fija de 224x224, entrenado únicamente sobre ImageNet-1k.
+DeiT (Data-efficient Image Transformer) es un modelo de clasificación de imágenes publicado originalmente por Touvron et al. en 2021. Este repositorio, `fastforks/deit`, no contiene pesos propios: es una model card que actúa como manifiesto de un paquete de inferencia alternativo denominado fastforks, que descarga los pesos originales de `timm/deit_base_patch16_224.fb_in1k` desde Hugging Face y los verifica contra un hash SHA-256 registrado. El modelo subyacente es un Vision Transformer (ViT) de tipo base con parches de 16x16 y resolución fija de 224x224, entrenado únicamente sobre ImageNet-1k.
 
 La relevancia de esta ficha no está en el modelo en sí, que es un clásico consolidado desde 2021, sino en la propuesta de fastforks: una implementación de inferencia con dos backends (`portable` en PyTorch y `kernels` con kernels CUDA propios) que, según la model card, reduce el tiempo de inferencia de 6,39 ms (fp32 original) a 2,98 ms (portable) y 1,79 ms (kernels) en una RTX 5060 Ti. El objetivo declarado es la paridad numérica con el código original de `pytorch-image-models` fijado en el commit `0df212b369a5`.
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks de precisión (top-1, top-5 en Imag
 | Modelo | Arquitectura | Parámetros | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `fastforks/deit` (DeiT-base) | ViT base, patch 16 | no disponible en la ficha | 224x224 | Apache-2.0 | Pesos en `timm/deit_base_patch16_224.fb_in1k`; inferencia vía fastforks |
-| `timm/deit_base_patch16_224.fb_in1k` | ViT base, patch 16 | no disponible en la ficha | 224x224 | Apache-2.0 | Pesos safetensors en HuggingFace; código en pytorch-image-models |
+| `timm/deit_base_patch16_224.fb_in1k` | ViT base, patch 16 | no disponible en la ficha | 224x224 | Apache-2.0 | Pesos safetensors en Hugging Face; código en pytorch-image-models |
 | Otros clasificadores ImageNet-1k (ResNet, EfficientNet, Swin) | CNN / transformer | no disponible | variable | variable | no disponible |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada; la única referencia directa es el propio código original de `pytorch-image-models`, frente al cual fastforks reporta aceleraciones de 1,7x a 3,1x en la GPU probada.
@@ -105,7 +105,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/deit
+- Model card en Hugging Face: https://huggingface.co/fastforks/deit
 - Pesos originales (timm): https://huggingface.co/timm/deit_base_patch16_224.fb_in1k
 - Repositorio de código fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend fastforks: https://huggingface.co/fastforks/kernels

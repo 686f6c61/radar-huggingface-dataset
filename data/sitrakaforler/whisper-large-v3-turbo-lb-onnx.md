@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - No hay información sobre sesgos específicos del fine-tuning ni sobre la composición del dataset de entrenamiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SitrakaForler/whisper-large-v3-turbo-lb-onnx
+- Modelo en Hugging Face: https://huggingface.co/SitrakaForler/whisper-large-v3-turbo-lb-onnx
 - Modelo base: https://huggingface.co/SitrakaForler/whisper-large-v3-turbo-lb
 - Demo en el navegador: https://huggingface.co/spaces/SitrakaForler/lb-whisper-demo
 - Repositorio con el script de exportación: https://github.com/Sitraka17/lb-whisper

@@ -66,5 +66,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOLRICKS/ltx-2-5-t2v-i2v-audio-comfyui-workflow
+- Repositorio en Hugging Face: https://huggingface.co/SOLRICKS/ltx-2-5-t2v-i2v-audio-comfyui-workflow
 - No se proporcionan otros enlaces (papers, blogs, repos, demos) en la información disponible.

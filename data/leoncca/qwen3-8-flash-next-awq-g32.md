@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 180.9B (125B + 51B N-gram) | 6B | 1M | qwen-community-1.0 | HuggingFace |
-| leoncca/Qwen3.8-Flash-Next-AWQ-g32 | 180.9B | 6B | 1M | qwen-community-1.0 | HuggingFace (cuantización) |
-| Mixtral 8x7B | 46.7B | 12.9B | 32K | Apache 2.0 | HuggingFace |
-| DeepSeek-V3 | 671B | 37B | 128K | MIT | HuggingFace |
+| Qwen3.8-Flash-Next (base) | 180.9B (125B + 51B N-gram) | 6B | 1M | qwen-community-1.0 | Hugging Face |
+| leoncca/Qwen3.8-Flash-Next-AWQ-g32 | 180.9B | 6B | 1M | qwen-community-1.0 | Hugging Face (cuantización) |
+| Mixtral 8x7B | 46.7B | 12.9B | 32K | Apache 2.0 | Hugging Face |
+| DeepSeek-V3 | 671B | 37B | 128K | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. El modelo base es experimental y no tiene benchmarks públicos en la información recopilada.
 

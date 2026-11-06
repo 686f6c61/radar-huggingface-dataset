@@ -63,5 +63,5 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Joonho-yi/data-efficient-learning-run2
+- Repositorio en Hugging Face: https://huggingface.co/Joonho-yi/data-efficient-learning-run2
 - No se han encontrado otros enlaces (papers, blogs o demos) asociados a este repositorio en la busqueda web.

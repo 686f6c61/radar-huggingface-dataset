@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KielGen-Pro es un modelo de lenguaje multimodal desarrollado por el usuario kiel2, publicado en HuggingFace como un adaptador PEFT (LoRA) sobre el modelo base deepseek-ai/Janus-Pro-7B. El modelo está diseñado para tareas de generación de texto y, según las etiquetas del repositorio, soporta multimodalidad (visión y lenguaje). El repositorio contiene los pesos en formato safetensors y tiene un total de 7.420.434.059 parámetros, lo que lo sitúa en la categoría de modelos de 7B.
+KielGen-Pro es un modelo de lenguaje multimodal desarrollado por el usuario kiel2, publicado en Hugging Face como un adaptador PEFT (LoRA) sobre el modelo base deepseek-ai/Janus-Pro-7B. El modelo está diseñado para tareas de generación de texto y, según las etiquetas del repositorio, soporta multimodalidad (visión y lenguaje). El repositorio contiene los pesos en formato safetensors y tiene un total de 7.420.434.059 parámetros, lo que lo sitúa en la categoría de modelos de 7B.
 
 La información disponible sobre KielGen-Pro es muy limitada: la model card no incluye detalles sobre el proceso de entrenamiento, los datos utilizados, las capacidades específicas ni los resultados de evaluación. Tampoco se especifica la licencia ni los idiomas soportados. Por tanto, su relevancia actual es difícil de evaluar sin documentación adicional. Su principal interés radica en ser un fine-tuning de un modelo multimodal de DeepSeek, lo que podría aprovecharse para aplicaciones de visión-lenguaje, pero se requiere información adicional para confirmar su rendimiento y utilidad.
 
@@ -27,7 +27,7 @@ No se dispone de información sobre los datos de entrenamiento utilizados, el n�
 
 ## Capacidades
 
-- Generación de texto: el modelo está configurado con el pipeline `text-generation` de HuggingFace.
+- Generación de texto: el modelo está configurado con el pipeline `text-generation` de Hugging Face.
 - Multimodalidad: la etiqueta `multi_modality` indica soporte para entrada de imágenes y texto, heredado del modelo base Janus-Pro-7B.
 - No se dispone de información sobre soporte de tool calling, function calling, razonamiento multi-paso, capacidades multilingües ni modos especiales de razonamiento.
 - No hay documentación sobre capacidades de visión específicas (generación de imágenes, VQA, etc.) en el contexto de este adaptador concreto.
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiel2/KielGen-Pro
+- Modelo en Hugging Face: https://huggingface.co/kiel2/KielGen-Pro
 - Modelo relacionado del autor: https://huggingface.co/kiel2/KielGen-Fast
 - Modelo relacionado del autor: https://huggingface.co/kiel2/KielMind-pro
 - Modelo base: https://huggingface.co/deepseek-ai/Janus-Pro-7B

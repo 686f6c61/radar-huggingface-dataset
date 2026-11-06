@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`habg21/faux_weed_detection` es un repositorio de HuggingFace publicado por el usuario habg21 bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no contiene ningun artefacto utilizable: su tamano declarado es de 0,0 GB, no tiene etiqueta de pipeline asignada, no declara idiomas soportados y no registra descargas ni "likes". La model card unicamente incluye el bloque de metadatos con la licencia, sin descripcion, sin instrucciones de uso y sin referencia a ningun paper o repositorio de codigo.
+`habg21/faux_weed_detection` es un repositorio de Hugging Face publicado por el usuario habg21 bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no contiene ningun artefacto utilizable: su tamano declarado es de 0,0 GB, no tiene etiqueta de pipeline asignada, no declara idiomas soportados y no registra descargas ni "likes". La model card unicamente incluye el bloque de metadatos con la licencia, sin descripcion, sin instrucciones de uso y sin referencia a ningun paper o repositorio de codigo.
 
 Por el identificador del repositorio podria inferirse que se trata de un modelo orientado a la deteccion o clasificacion de "faux weed" (hierba falsa), probablemente en el ambito de vision por computador. Sin embargo, esta interpretacion es puramente especulativa a partir del nombre: no hay evidencia en el repositorio, ni en la model card, ni en los resultados de busqueda web que la respalde.
 
@@ -86,12 +86,12 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Riesgo de alucinacion: no evaluable en este momento.
 - Restricciones de licencia: la licencia declarada es Apache 2.0, que en principio permite uso comercial, modificacion y redistribucion con atribucion y conservacion del aviso de licencia. Esta licencia se aplica al contenido publicado, pero al no existir contenido publicado su aplicabilidad practica es nula.
 - Ambiguedad del nombre: "faux_weed_detection" sugiere una tarea de deteccion visual, pero tambien podria referirse a otro tipo de clasificacion. No debe asumirse ninguna funcionalidad a partir del nombre.
-- Fechas del repositorio: las marcas de creacion y actualizacion (2026-09-21) son posteriores a la fecha habitual de consulta y deben verificarse directamente en HuggingFace.
+- Fechas del repositorio: las marcas de creacion y actualizacion (2026-09-21) son posteriores a la fecha habitual de consulta y deben verificarse directamente en Hugging Face.
 - Resultados de busqueda web no concluyentes: las referencias recuperadas corresponden a articulos de ayuda de Windows en ruso y no guardan ninguna relacion con el modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/habg21/faux_weed_detection
+- Repositorio en Hugging Face: https://huggingface.co/habg21/faux_weed_detection
 - Perfil del autor: https://huggingface.co/habg21
 - Paper: no disponible
 - Repositorio de codigo: no disponible

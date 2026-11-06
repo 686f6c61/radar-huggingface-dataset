@@ -91,7 +91,7 @@ Comparacion con alternativas de otros autores: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q2_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q2_K-GGUF
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Espacio GGUF-my-repo (herramienta de conversion): https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

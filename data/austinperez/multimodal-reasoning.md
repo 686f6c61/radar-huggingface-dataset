@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo de IA y no puede compararse con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/austinperez/multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/austinperez/multimodal-reasoning
 - Artículo de referencia sobre razonamiento multimodal (2025): https://ajithp.com/2025/04/21/multimodal-reasoning-ai/
 - Lista curada de modelos de razonamiento (GitHub): https://github.com/reasoning-survey/Awesome-Reasoning-Foundation-Models
 - Top 15 modelos multimodales en 2026: https://blog.unitlab.ai/top-multimodal-models/

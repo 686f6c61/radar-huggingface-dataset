@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alonsoqc/Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-Learning para el entorno Taxi-v3 de Gymnasium. No es un modelo de lenguaje ni una red neuronal profunda: se distribuye como un artefacto `q-learning.pkl` que contiene la politica aprendida (presumiblemente una tabla Q) y el identificador del entorno con el que se entrenó. El autor lo publica en HuggingFace con el pipeline `reinforcement-learning` y sin licencia declarada.
+alonsoqc/Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-Learning para el entorno Taxi-v3 de Gymnasium. No es un modelo de lenguaje ni una red neuronal profunda: se distribuye como un artefacto `q-learning.pkl` que contiene la politica aprendida (presumiblemente una tabla Q) y el identificador del entorno con el que se entrenó. El autor lo publica en Hugging Face con el pipeline `reinforcement-learning` y sin licencia declarada.
 
 El problema que resuelve es el clasico de Taxi: un taxi debe moverse por una cuadricula de 5x5, recoger a un pasajero en una de cuatro ubicaciones (R, G, Y, B) y dejarlo en el destino correcto. Su relevancia es principalmente docente y de referencia: sirve como baseline reproducible de Q-Learning tabular, como ejemplo de integracion con `huggingface_sb3`/`load_from_hub` y como punto de partida para comparar variantes de RL en un entorno de juguete.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| alonsoqc/Taxi-v4 | Q-Learning tabular (`custom-implementation`) | Taxi-v3 | No disponible (tabular) | No aplica | 7,56 +/- 2,71 (no verificado) | No disponible | HuggingFace, 0 descargas |
-| Learnix-AI-Lab/q-Taxi-v4 | Agente Q-Learning | Taxi-v4 segun el nombre del repo | No disponible | No aplica | No disponible | No disponible | HuggingFace |
-| drcxd1122/q-Taxi-v4 | Agente Q-Learning | Taxi-v4 segun la model card | No disponible | No aplica | No disponible | No disponible | HuggingFace |
+| alonsoqc/Taxi-v4 | Q-Learning tabular (`custom-implementation`) | Taxi-v3 | No disponible (tabular) | No aplica | 7,56 +/- 2,71 (no verificado) | No disponible | Hugging Face, 0 descargas |
+| Learnix-AI-Lab/q-Taxi-v4 | Agente Q-Learning | Taxi-v4 segun el nombre del repo | No disponible | No aplica | No disponible | No disponible | Hugging Face |
+| drcxd1122/q-Taxi-v4 | Agente Q-Learning | Taxi-v4 segun la model card | No disponible | No aplica | No disponible | No disponible | Hugging Face |
 
 La comparacion cuantitativa no es posible con la informacion disponible: los modelos alternativos identificados no publican metricas en los resultados de busqueda y el unico dato numerico es el del modelo analizado, ademas sin verificar. La comparacion con modelos de lenguaje de gran tamano no aplica por categoria.
 
@@ -94,7 +94,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alonsoqc/Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/alonsoqc/Taxi-v4
 - Documentacion del entorno Taxi en Gymnasium: https://gymnasium.farama.org/environments/toy_text/taxi/
 - Implementacion de referencia Taxi-v4 en GitHub: https://github.com/janashams/Taxi-v4-OpenAI-Gymnasium/blob/main/main.py
 - Modelo comparable Learnix-AI-Lab/q-Taxi-v4: https://huggingface.co/Learnix-AI-Lab/q-Taxi-v4

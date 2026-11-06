@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DualStreamEHRTransformer es un modelo de transformer causal de doble flujo diseñado para predecir condiciones clínicas incidentes a partir de historiales clínicos electrónicos (EHR) longitudinales y datos genómicos. Lo publica el investigador Pramit Dutta en HuggingFace bajo el identificador `pramit-dutta/ehr-prediction-model`, con licencia MIT y un repositorio de 0,1 GB que contiene únicamente pesos en PyTorch (`pytorch_model.bin`), configuración, vocabulario y un resumen de evaluación.
+DualStreamEHRTransformer es un modelo de transformer causal de doble flujo diseñado para predecir condiciones clínicas incidentes a partir de historiales clínicos electrónicos (EHR) longitudinales y datos genómicos. Lo publica el investigador Pramit Dutta en Hugging Face bajo el identificador `pramit-dutta/ehr-prediction-model`, con licencia MIT y un repositorio de 0,1 GB que contiene únicamente pesos en PyTorch (`pytorch_model.bin`), configuración, vocabulario y un resumen de evaluación.
 
 El problema que aborda es la predicción multi-etiqueta de 40 condiciones clínicas a un horizonte de cinco años, combinando dos flujos de entrada: uno clínico (diagnósticos, medicamentos, procedimientos, observaciones de laboratorio discretizadas y estudios de imagen, con embeddings temporales de edad) y otro genómico (variantes de secuencia de ADN). La arquitectura sigue la línea de nanoGPT y BEHRT, con una primera fase de preentrenamiento por predicción de siguiente token sobre la línea temporal clínica y una segunda fase de ajuste fino con entropía cruzada binaria multi-etiqueta y enmascaramiento dinámico de diagnósticos preexistentes.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DualStreamEHRTransformer (`pramit-dutta/ehr-prediction-model`) | no disponible (dim. oculta 256, 4 capas) | 1.024 eventos clinicos | Prediccion multi-etiqueta de 40 condiciones incidentes con fusion clinica-genomica | MIT | Pesos PyTorch en HuggingFace |
+| DualStreamEHRTransformer (`pramit-dutta/ehr-prediction-model`) | no disponible (dim. oculta 256, 4 capas) | 1.024 eventos clinicos | Prediccion multi-etiqueta de 40 condiciones incidentes con fusion clinica-genomica | MIT | Pesos PyTorch en Hugging Face |
 | BEHRT | no disponible en la informacion proporcionada | no disponible | Prediccion de enfermedad sobre EHR | no disponible | Referencia academica citada como inspiracion |
 | nanoGPT | no disponible en la informacion proporcionada | no disponible | Modelado de lenguaje autoregresivo | no disponible | Referencia de implementacion citada como inspiracion |
 
@@ -96,7 +96,7 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pramit-dutta/ehr-prediction-model
+- Modelo en Hugging Face: https://huggingface.co/pramit-dutta/ehr-prediction-model
 - Perfil del autor en GitHub: https://github.com/PramitDutta1999/
 - Perfil del autor en Google Scholar: https://scholar.google.com/citations?user=jfOjIKsAAAAJ&hl=en
 - Perfil de autor en aimodels.fyi: https://www.aimodels.fyi/author-profile/pramit-dutta-4ed546e3-5a41-4314-8171-0414667940e2

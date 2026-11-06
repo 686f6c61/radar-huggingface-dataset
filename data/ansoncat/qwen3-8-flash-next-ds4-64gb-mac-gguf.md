@@ -18,7 +18,7 @@ Es, por tanto, un artefacto para investigación y uso local en Apple Silicon, no
 | Longitud de contexto | 262.144 tokens (262K), verificado en el fork ds4 con `--ctx 262144` |
 | Tipos de cuantizacion | Mezcla heterogenea: expertos *down* en IQ2_XXS (filas de 640 canales), proyecciones densas en Q4_K, tensores `hc_*` en Q8_0, capa MTP y shared-expert down en Q8_0, `output_hc_*` y cabeza MTP en F16 (punto de partida: Q2_K) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF, archivo unico `Qwen3.8-Flash-Next-Q2-IQ2down-Q4Kdense-Q8hc.gguf` (repo de 139,4 GB) |
 
 ## Arquitectura y entrenamiento
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ansoncat/qwen3.8-flash-next-ds4-64gb-mac-gguf
+- Repositorio Hugging Face: https://huggingface.co/ansoncat/qwen3.8-flash-next-ds4-64gb-mac-gguf
 - Modelo base de la cuantizacion: https://huggingface.co/antirez/qwen3.8-flash-next-gguf
 - GGUF oficial y proyector de vision: https://huggingface.co/ggml-org/Qwen3.8-Flash-Next-GGUF
 - Pesos BF16 de referencia citados en el proceso de conversion: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

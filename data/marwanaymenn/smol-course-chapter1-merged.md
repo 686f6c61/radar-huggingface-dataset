@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`marwanaymenn/smol-course-chapter1-merged` es un modelo de generacion de texto publicado en HuggingFace por el usuario marwanaymenn. Por el nombre y las etiquetas (`smol-course-chapter1-merged`), se trata con toda probabilidad del resultado de un ejercicio del curso "smol-course" de HuggingFace: un fine-tuning de un modelo pequeno de la familia SmolLM seguido de una fusion (merge) de pesos. No es un modelo de proposito general publicado por un laboratorio, sino un artefacto educativo de un particular.
+`marwanaymenn/smol-course-chapter1-merged` es un modelo de generacion de texto publicado en Hugging Face por el usuario marwanaymenn. Por el nombre y las etiquetas (`smol-course-chapter1-merged`), se trata con toda probabilidad del resultado de un ejercicio del curso "smol-course" de Hugging Face: un fine-tuning de un modelo pequeno de la familia SmolLM seguido de una fusion (merge) de pesos. No es un modelo de proposito general publicado por un laboratorio, sino un artefacto educativo de un particular.
 
-El modelo tiene 361.821.120 parametros (aproximadamente 362 millones) segun los pesos en safetensors, lo que lo situa en la categoria de modelos pequenos tipo SmolLM-360M o similares. El repositorio ocupa 0,7 GB. La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustancial: no declara autor real, licencia, idiomas, datos de entrenamiento ni evaluaciones.
+El modelo tiene 361.821.120 parametros (aproximadamente 362 millones) segun los pesos en safetensors, lo que lo situa en la categoria de modelos pequenos tipo SmolLM-360M o similares. El repositorio ocupa 0,7 GB. La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustancial: no declara autor real, licencia, idiomas, datos de entrenamiento ni evaluaciones.
 
 Su relevancia practica es limitada: sirve como ejemplo de pipeline de fine-tuning y merge de pesos, y potencialmente como modelo de experimentacion en entornos con recursos muy limitados. No debe confundirse con un modelo listo para produccion, ya que no hay documentacion, evaluaciones ni garantias de licencia.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| marwanaymenn/smol-course-chapter1-merged | ~362 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM-360M | ~362 M | 2.048 tokens (variante base) | Apache 2.0 (variante oficial) | HuggingFace, ampliamente usado |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
+| marwanaymenn/smol-course-chapter1-merged | ~362 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM-360M | ~362 M | 2.048 tokens (variante base) | Apache 2.0 (variante oficial) | Hugging Face, ampliamente usado |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
 
 Nota: los datos de los modelos comparables provienen de sus fichas publicas oficiales; los de este checkpoint no estan documentados, por lo que la comparacion en rendimiento no es posible.
 
@@ -83,7 +83,7 @@ Nota: los datos de los modelos comparables provienen de sus fichas publicas ofic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/marwanaymenn/smol-course-chapter1-merged
+- Hugging Face: https://huggingface.co/marwanaymenn/smol-course-chapter1-merged
 - Curso smol-course (referencia del nombre): https://github.com/huggingface/smol-course
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact

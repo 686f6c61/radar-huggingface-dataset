@@ -2,7 +2,7 @@
 
 ## Resumen
 
-makeitwork1 es un modelo de lenguaje de tipo transformer decoder-only con 497 millones de parámetros, desarrollado por el usuario Reizxn y publicado en HuggingFace bajo el nombre interno Retriever500M. Está diseñado específicamente como un agente de búsqueda (search agent), es decir, un modelo que integra acciones de recuperación de información dentro de su generación, probablemente para tareas de retrieval aumentado por generación (RAG) o agentes autónomos que consultan fuentes externas.
+makeitwork1 es un modelo de lenguaje de tipo transformer decoder-only con 497 millones de parámetros, desarrollado por el usuario Reizxn y publicado en Hugging Face bajo el nombre interno Retriever500M. Está diseñado específicamente como un agente de búsqueda (search agent), es decir, un modelo que integra acciones de recuperación de información dentro de su generación, probablemente para tareas de retrieval aumentado por generación (RAG) o agentes autónomos que consultan fuentes externas.
 
 El modelo se entrenó en dos fases: primero un pretraining sobre un corpus curado (1711 pasos) y después un ajuste fino supervisado (SFT) sobre trazas de búsqueda (500 pasos). Su arquitectura incluye embeddings atados, posiciones rotativas (RoPE) y un vocabulario de 32 009 tokens, de los cuales 9 son tokens especiales reservados para acciones del agente (system, user, assistant, search, result, evidence, reasoning, finish, end). El repositorio contiene el checkpoint final del SFT en formato PyTorch, junto con el código fuente del modelo y el tokenizer.
 
@@ -62,7 +62,7 @@ No se proporcionan requisitos específicos en la documentación. Sin embargo, da
 - **VRAM estimada**: con pesos en FP32, el modelo ocupa aproximadamente 2 GB (497M × 4 bytes ≈ 1.99 GB), lo que coincide con el tamaño del repositorio (2.0 GB). Para inferencia con cuantización de 8 bits, la VRAM necesaria sería de ~1 GB; con 4 bits, ~0.5 GB.
 - **GPU recomendadas**: cualquier GPU con al menos 4 GB de VRAM podría ejecutar el modelo sin cuantizar (por ejemplo, NVIDIA GTX 1650, RTX 3050, o superiores). Para cargas concurrentes o mayor velocidad, se recomienda una GPU de gama media como RTX 3060 o superior.
 - **Compatibilidad con consumer GPU**: sí, cabe en GPUs de consumo estándar.
-- **Opciones de despliegue**: el modelo se carga mediante PyTorch directamente, por lo que puede servirse con frameworks como vLLM, TGI o llama.cpp, aunque no se indica soporte nativo para estos. El tokenizer es compatible con la librería `tokenizers` de HuggingFace.
+- **Opciones de despliegue**: el modelo se carga mediante PyTorch directamente, por lo que puede servirse con frameworks como vLLM, TGI o llama.cpp, aunque no se indica soporte nativo para estos. El tokenizer es compatible con la librería `tokenizers` de Hugging Face.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,5 +81,5 @@ No se dispone de información sobre modelos comparables específicos para agente
 
 ## Enlaces
 
-- [Repositorio HuggingFace: Reizxn/makeitwork1](https://huggingface.co/Reizxn/makeitwork1)
+- [Repositorio Hugging Face: Reizxn/makeitwork1](https://huggingface.co/Reizxn/makeitwork1)
 - No se proporcionan otros enlaces (papers, blogs, repos) en la información disponible.

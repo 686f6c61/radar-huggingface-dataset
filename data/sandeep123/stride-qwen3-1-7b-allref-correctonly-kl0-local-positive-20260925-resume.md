@@ -23,7 +23,7 @@ Es relevante ahora porque ejemplifica una línea de trabajo activa en IA abierta
 | Modelo base | Qwen/Qwen3-1.7B |
 | Libreria | peft |
 | Pipeline | text-generation |
-| Fecha de publicacion | 2026-09-25 (metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-25 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ La model card no incluye métricas de exactitud matemática (GSM8K, MATH, AIME u
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STRIDE Qwen3-1.7B (este adaptador) | 1,7B base + ~17,4M de adaptador (estimado) | No declarado; 32.768 tokens según el base | Adaptador LoRA de RL para razonamiento matemático | Apache-2.0 | HuggingFace, 0 descargas, sin benchmarks publicados |
+| STRIDE Qwen3-1.7B (este adaptador) | 1,7B base + ~17,4M de adaptador (estimado) | No declarado; 32.768 tokens según el base | Adaptador LoRA de RL para razonamiento matemático | Apache-2.0 | Hugging Face, 0 descargas, sin benchmarks publicados |
 | Qwen/Qwen3-1.7B (base) | 1,7B | 32.768 tokens nativos, 131.072 con YaRN | Modelo denso con modos thinking/no-thinking | Apache-2.0 | Ampliamente desplegado; soporte nativo en vLLM, llama.cpp y Ollama |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 tokens | Destilado de razonamiento sobre Qwen2.5 | MIT | Muy desplegado; benchmarks de matemáticas publicados por el autor |
 | meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Modelo instructivo generalista | Licencia comunitaria de Llama 3.2 | Ampliamente desplegado; requiere aceptar la licencia |
@@ -96,7 +96,7 @@ La comparación cuantitativa de rendimiento no es posible porque este adaptador 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-allref-correctonly-kl0-local-positive-20260925-resume
+- Adaptador en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-allref-correctonly-kl0-local-positive-20260925-resume
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper del método STRIDE: no disponible
 - Repositorio de código del método: no disponible

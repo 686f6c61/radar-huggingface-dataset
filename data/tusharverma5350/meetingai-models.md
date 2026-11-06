@@ -6,7 +6,7 @@ Este repositorio no es un modelo entrenado desde cero, sino una redistribucion d
 
 El modelo base tiene aproximadamente 600 millones de parametros y pertenece a la familia Parakeet de NVIDIA, basada en arquitectura de transductor TDT (Token-and-Duration Transducer). La conversion a int8 ONNX reduce el peso del repositorio a unos 0,7 GB, lo que permite ejecucion en CPU sin GPU dedicada, un requisito habitual en aplicaciones de escritorio orientadas a privacidad.
 
-Es relevante ahora porque ejemplifica el patron de despliegue "on-device" de ASR en produccion: modelo grande de alta calidad, exportado a un formato portable y cuantizado, con verificacion de integridad mediante SHA-256 en un fichero de configuracion. La licencia del original es CC-BY-4.0 y se redistribuye sin modificaciones con atribucion. No se han publicado resultados de benchmarks propios en la informacion disponible, ni hay descargas o valoraciones registradas en HuggingFace.
+Es relevante ahora porque ejemplifica el patron de despliegue "on-device" de ASR en produccion: modelo grande de alta calidad, exportado a un formato portable y cuantizado, con verificacion de integridad mediante SHA-256 en un fichero de configuracion. La licencia del original es CC-BY-4.0 y se redistribuye sin modificaciones con atribucion. No se han publicado resultados de benchmarks propios en la informacion disponible, ni hay descargas o valoraciones registradas en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento del modelo original
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio ni los metadatos de HuggingFace incluyen WER, latencia, throughput ni comparaciones con otros modelos. Para valorar la calidad del modelo base conviene consultar la model card original de `nvidia/parakeet-tdt-0.6b-v2` y tablas de evaluacion independientes de ASR; esta ficha no reproduce cifras porque no forman parte de la informacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio ni los metadatos de Hugging Face incluyen WER, latencia, throughput ni comparaciones con otros modelos. Para valorar la calidad del modelo base conviene consultar la model card original de `nvidia/parakeet-tdt-0.6b-v2` y tablas de evaluacion independientes de ASR; esta ficha no reproduce cifras porque no forman parte de la informacion proporcionada.
 
 ## Requisitos de hardware
 
@@ -87,12 +87,12 @@ Los datos de parametros, idiomas y licencias de las alternativas corresponden a 
 - Redistribucion de terceros: el autor del repositorio no es NVIDIA ni el proyecto k2-fsa; conviene validar los hashes SHA-256 y contrastar los ficheros con la fuente original antes de usarlos en produccion.
 - Licencia CC-BY-4.0: permite uso comercial, pero exige atribucion. Al tratarse de una redistribucion sin modificaciones, esa obligacion recae tambien sobre quien lo integre en un producto.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, lo que significa que no existe validacion comunitaria del contenido del repositorio.
-- Metadatos a revisar: las fechas de creacion y actualizacion que muestra HuggingFace (2026-10-07) no coinciden con el ciclo de vida conocido del modelo base; conviene verificarlas antes de citar este repositorio.
+- Metadatos a revisar: las fechas de creacion y actualizacion que muestra Hugging Face (2026-10-07) no coinciden con el ciclo de vida conocido del modelo base; conviene verificarlas antes de citar este repositorio.
 - Sin garantias de soporte: no se documentan tareas auxiliares como diarizacion, puntuacion, marcas de tiempo o deteccion de idioma, que en muchos productos de transcripcion se resuelven con componentes adicionales.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tusharverma5350/meetingai-models
+- Repositorio en Hugging Face: https://huggingface.co/tusharverma5350/meetingai-models
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Repositorio sherpa-onnx (k2-fsa): https://github.com/k2-fsa/sherpa-onnx
 - Release de modelos ASR de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models

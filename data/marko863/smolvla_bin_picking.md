@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolvla_bin_picking es una politica de robotica basada en SmolVLA (vision-language-action, VLA) y ajustada por imitacion sobre un dataset propio de recogida de cubos. Lo publica el usuario marko863 en HuggingFace, partiendo del modelo base lerobot/smolvla_base, y su objetivo concreto es controlar un brazo robotico Seeed B601 DM follower equipado con tres camaras (muneca, cenital y lateral) para ejecutar la tarea "Pick up the cubes and place them in the bin".
+smolvla_bin_picking es una politica de robotica basada en SmolVLA (vision-language-action, VLA) y ajustada por imitacion sobre un dataset propio de recogida de cubos. Lo publica el usuario marko863 en Hugging Face, partiendo del modelo base lerobot/smolvla_base, y su objetivo concreto es controlar un brazo robotico Seeed B601 DM follower equipado con tres camaras (muneca, cenital y lateral) para ejecutar la tarea "Pick up the cubes and place them in the bin".
 
 El modelo tiene 450.046.176 parametros (aproximadamente 450 millones) y un repositorio de 0,9 GB, lo que lo situa en la categoria de VLA compactos disenados para ejecutarse en hardware de consumo. SmolVLA, la arquitectura subyacente descrita en el paper arXiv:2506.01844, busca rendimiento competitivo en manipulacion robotica a un coste computacional reducido frente a VLA de mayor tamano.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| marko863/smolvla_bin_picking | 450.046.176 | VLA ajustado por imitacion | Apache 2.0 | HuggingFace, libreria lerobot | Una sola tarea; sin resultados de evaluacion publicados |
-| lerobot/smolvla_base | No disponible en la informacion | VLA preentrenado | No disponible en la informacion | HuggingFace | Modelo base del que se parte para el ajuste fino |
+| marko863/smolvla_bin_picking | 450.046.176 | VLA ajustado por imitacion | Apache 2.0 | Hugging Face, libreria lerobot | Una sola tarea; sin resultados de evaluacion publicados |
+| lerobot/smolvla_base | No disponible en la informacion | VLA preentrenado | No disponible en la informacion | Hugging Face | Modelo base del que se parte para el ajuste fino |
 | Otros VLA de proposito general | No disponible | VLA | No disponible | No disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 No se dispone de datos de contexto, rendimiento ni requisitos de hardware de los modelos alternativos en la informacion suministrada, por lo que la comparacion cuantitativa no es posible.
@@ -85,7 +85,7 @@ No se dispone de datos de contexto, rendimiento ni requisitos de hardware de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marko863/smolvla_bin_picking
+- Modelo en Hugging Face: https://huggingface.co/marko863/smolvla_bin_picking
 - Dataset de entrenamiento: https://huggingface.co/datasets/marko863/bin_picking_3cam
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)

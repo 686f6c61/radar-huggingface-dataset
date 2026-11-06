@@ -99,7 +99,7 @@ No se dispone de resultados de benchmarks comunes que permitan comparar directam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Valnivo-labs/valnivo-copilot-1
+- Modelo en Hugging Face: https://huggingface.co/Valnivo-labs/valnivo-copilot-1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Grafo de exportacion ONNX de referencia: https://huggingface.co/onnx-community/Qwen2.5-1.5B-Instruct
 - transformers.js: https://github.com/huggingface/transformers.js

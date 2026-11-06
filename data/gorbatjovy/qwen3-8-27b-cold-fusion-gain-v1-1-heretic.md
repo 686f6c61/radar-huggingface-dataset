@@ -87,10 +87,10 @@ La comparativa directa con otros modelos de 27B (p. ej., Llama 3.1 8B no es comp
 
 ## Enlaces
 
-- [Modelo en HuggingFace (este repositorio)](https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic)
+- [Modelo en Hugging Face (este repositorio)](https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic)
 - [Versión W4A16 cuantizada](https://huggingface.co/gorbatjovy/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-heretic-W4A16)
 - [Modelo base: DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1](https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1)
-- [Qwen3.8-27B original en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Qwen3.8-27B original en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio de Qwen3.8-27B en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Herramienta Heretic (abliteration automatizada)](https://github.com/p-e-w/heretic)
 - [Artículo sobre Cold Fusion en HackerNoon](https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance)

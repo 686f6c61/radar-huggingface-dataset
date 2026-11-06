@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-MTP-GGUF es un paquete que contiene el bloque de predicción MTP (Multi-Token Prediction) / NextN extraído del modelo multimodal Qwen3.8-Flash-Next de Alibaba, convertido a formato GGUF para su uso como modelo borrador (draft model) en decodificación especulativa. No es un modelo de lenguaje independiente: se trata de un único bloque de predicción de aproximadamente 2.600 millones de parámetros más embeddings (3.878.549.248 parámetros totales según el registro de HuggingFace), que solo produce tokens candidatos cuando se combina con el modelo completo como objetivo.
+Qwen3.8-Flash-Next-MTP-GGUF es un paquete que contiene el bloque de predicción MTP (Multi-Token Prediction) / NextN extraído del modelo multimodal Qwen3.8-Flash-Next de Alibaba, convertido a formato GGUF para su uso como modelo borrador (draft model) en decodificación especulativa. No es un modelo de lenguaje independiente: se trata de un único bloque de predicción de aproximadamente 2.600 millones de parámetros más embeddings (3.878.549.248 parámetros totales según el registro de Hugging Face), que solo produce tokens candidatos cuando se combina con el modelo completo como objetivo.
 
 El desarrollador, mxxm-t, lo ha empaquetado para que pueda usarse con llama-server mediante la opción `--spec-type draft-mtp`, permitiendo acelerar la inferencia del modelo base Qwen3.8-Flash-Next (125B parámetros totales, 6B activos por token, con 51B adicionales de embeddings N-gram). La relevancia actual radica en que la decodificación especulativa es una técnica clave para reducir la latencia en modelos MoE de gran tamaño, y este paquete ofrece una implementación lista para usar, aunque requiere un fork específico de llama.cpp con soporte para la arquitectura qwen4exp.
 
@@ -13,7 +13,7 @@ El repositorio incluye dos archivos: una versión cuantizada Q8_0 (4,14 GB, reco
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Bloque de prediccion MTP/NextN (draft head) extraido de Qwen3.8-Flash-Next; no es un transformer completo |
-| Parametros totales | 3.878.549.248 (segun HuggingFace; la model card indica ~2.6B mas embeddings) |
+| Parametros totales | 3.878.549.248 (segun Hugging Face; la model card indica ~2.6B mas embeddings) |
 | Parametros activos | No aplica (no es un modelo MoE independiente) |
 | Longitud de contexto | No disponible (depende del modelo base Qwen3.8-Flash-Next) |
 | Tipos de cuantizacion | Q8_0 (4,14 GB) y BF16 (7,77 GB) |
@@ -75,7 +75,7 @@ No disponible. Este paquete es un componente especifico (draft head MTP) para un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mxxm-t/Qwen3.8-Flash-Next-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mxxm-t/Qwen3.8-Flash-Next-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Fork de llama.cpp con soporte MTP: https://github.com/mxxm-t/mx-llama.cpp
 - PR de soporte upstream en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/27836

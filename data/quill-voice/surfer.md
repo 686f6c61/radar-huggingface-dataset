@@ -96,6 +96,6 @@ Diferencias clave: Surfer es el unico de la lista cuyo objetivo es estilistico y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quill-voice/surfer
+- Modelo en Hugging Face: https://huggingface.co/quill-voice/surfer
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los unicos enlaces obtenidos corresponden a servicios y proyectos homonimos sin relacion (Quillbot, quill.org, quilljs.com). No se han encontrado papers, blogs, repositorios ni demos asociados.
 - Repositorio del modelo base, framework de entrenamiento y demos de despliegue: no disponibles en la informacion proporcionada.

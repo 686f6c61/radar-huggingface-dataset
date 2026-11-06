@@ -90,8 +90,8 @@ Nota de contaminacion declarada por el autor: el mixture de instrucciones public
 
 | Modelo | Parametros | Contexto | DS-MVTec | VisA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AnomalyThink-LLaVA-OneVision-7B-KCR-corrected (este modelo) | 8,03 B | no disponible | 87,32 | 72,65 | apache-2.0 | pesos safetensors en HuggingFace, 0 descargas |
-| AnomalyThink LLaVA KCR, primera version | mismo backbone (8,03 B) | no disponible | 88,45 | 74,25 | apache-2.0 | publicada en HuggingFace |
+| AnomalyThink-LLaVA-OneVision-7B-KCR-corrected (este modelo) | 8,03 B | no disponible | 87,32 | 72,65 | apache-2.0 | pesos safetensors en Hugging Face, 0 descargas |
+| AnomalyThink LLaVA KCR, primera version | mismo backbone (8,03 B) | no disponible | 88,45 | 74,25 | apache-2.0 | publicada en Hugging Face |
 | AnomalyThink LLaVA SFT + GRPO | mismo backbone | no disponible | 87,66 | 72,38 | no disponible | no disponible |
 | IAD-R1 checkpoint publicado (Qwen2.5-VL-7B) | 7 B (Qwen2.5-VL) | no disponible | 81,92 | 71,34 | no disponible | checkpoint publicado |
 | LLaVA-OneVision-7B-SI base | 8,03 B | no disponible | 75,66 | 53,80 | apache-2.0 | llava-hf/llava-onevision-qwen2-7b-si-hf |
@@ -114,7 +114,7 @@ La comparacion principal es de un solo factor frente al modelo KCR basado en Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR-corrected
+- Modelo en Hugging Face: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR-corrected
 - Modelo base: https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-si-hf
 - Dataset: https://huggingface.co/aacudad/AnomalyThink
 - Primera version del modelo (build no corregido): https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR

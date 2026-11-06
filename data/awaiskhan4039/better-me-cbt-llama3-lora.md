@@ -6,7 +6,7 @@
 
 Por el tamano del repositorio (0,2 GB) y el sufijo lora del identificador, lo mas probable es que el repositorio contenga pesos de un adaptador LoRA y no los pesos completos del modelo. Esto implica que para utilizarlo hay que cargar primero el modelo base y aplicar despues el adaptador, o bien fusionarlos antes de exportar.
 
-La relevancia de esta ficha es limitada: se trata de un experimento personal sin descargas ni likes en el momento de la consulta, sin paper asociado, sin datos de evaluacion y sin documentacion tecnica mas alla del formulario minimo de HuggingFace. Se incluye aqui por rigor y para dejar constancia explicita de que la mayor parte de la informacion tecnica no esta disponible.
+La relevancia de esta ficha es limitada: se trata de un experimento personal sin descargas ni likes en el momento de la consulta, sin paper asociado, sin datos de evaluacion y sin documentacion tecnica mas alla del formulario minimo de Hugging Face. Se incluye aqui por rigor y para dejar constancia explicita de que la mayor parte de la informacion tecnica no esta disponible.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| awaiskhan4039/better-me-cbt-llama3-lora | Adaptador sobre Llama 3 8B | 8.192 tokens | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni documentacion |
+| awaiskhan4039/better-me-cbt-llama3-lora | Adaptador sobre Llama 3 8B | 8.192 tokens | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni documentacion |
 | meta-llama/Meta-Llama-3-8B-Instruct | 8.030 millones | 8.192 tokens | Llama 3 Community License | Ampliamente disponible | Modelo base de referencia, con evaluaciones publicas |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.768 tokens | Apache 2.0 | Ampliamente disponible | Alternativa directa, mas contexto |
 | google/gemma-2-9b-it | 9.240 millones | 8.192 tokens | Gemma Terms of Use | Ampliamente disponible | Alternativa de tamano similar |
@@ -83,7 +83,7 @@ No hay datos de rendimiento del modelo evaluado que permitan una comparacion cua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/awaiskhan4039/better-me-cbt-llama3-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
+- Repositorio en Hugging Face: https://huggingface.co/awaiskhan4039/better-me-cbt-llama3-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo Llama 3 8B Instruct de Meta: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct

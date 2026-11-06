@@ -104,8 +104,8 @@ La poda de vocabulario aporta un incremento de contexto de ~20.000 tokens (1,18�
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/bsaleh03/Qwen3.8-27B-ASCII-Condensed)
-- [Modelo base Qwen3.8-27B en HuggingFace](https://huggingface.co/Qwen/Qwen3.8-27B)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/bsaleh03/Qwen3.8-27B-ASCII-Condensed)
+- [Modelo base Qwen3.8-27B en Hugging Face](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Cuantiación GGUF de unsloth](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)
 - [Repositorio oficial de Qwen3.8 en GitHub](https://github.com/QwenLM/Qwen3.8)
 - [Documentación de Qwen3.8-27B en Cloudflare Workers AI](https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/)

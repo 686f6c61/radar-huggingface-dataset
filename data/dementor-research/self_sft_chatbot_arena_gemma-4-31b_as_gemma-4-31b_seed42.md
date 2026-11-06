@@ -77,6 +77,6 @@ No se dispone de informacion suficiente para realizar una comparativa. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dementor-research/self_sft_chatbot_arena_gemma-4-31b_as_gemma-4-31b_seed42
+- Hugging Face: https://huggingface.co/dementor-research/self_sft_chatbot_arena_gemma-4-31b_as_gemma-4-31b_seed42
 - Modelo base (referencia): https://huggingface.co/google/gemma-4-31B-it (enlace no incluido en la informacion, pero se menciona como base)
 - No se han encontrado otros enlaces (paper, blog, demo) en la informacion proporcionada.

@@ -60,6 +60,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChanchalSh/Muril_Government_FinedTuned_Model
+- Repositorio Hugging Face: https://huggingface.co/ChanchalSh/Muril_Government_FinedTuned_Model
 - Modelo base MuRIL: https://huggingface.co/google/muril-base-cased
 - Paper de MuRIL: https://arxiv.org/abs/2103.10730

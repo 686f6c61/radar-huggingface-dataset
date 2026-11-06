@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (1.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/TCS-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/TCS-1.5B-GGUF
 - Modelo base: https://huggingface.co/XiaoBanni/TCS-1.5B
 - Pagina del autor mradermacher: https://huggingface.co/mradermacher
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model

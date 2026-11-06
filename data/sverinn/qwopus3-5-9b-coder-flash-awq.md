@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3-5-9B-Coder-Flash-AWQ es una cuantización de 4 bits (AWQ, esquema W4A16) del modelo Jackrong/Qwopus3-5-9B-Coder-Flash, un VLM orientado a generación de código construido sobre la arquitectura Qwen3.5-9B con atención híbrida. Lo publica el usuario sverinn en HuggingFace y su objetivo es reducir el peso del modelo de 19,3 GB en bf16 a 8,5 GB en disco sin pérdida medible de calidad, manteniendo la ventana de contexto completa de 262.144 tokens dentro de una única GPU de consumo de 24 GB.
+Qwopus3-5-9B-Coder-Flash-AWQ es una cuantización de 4 bits (AWQ, esquema W4A16) del modelo Jackrong/Qwopus3-5-9B-Coder-Flash, un VLM orientado a generación de código construido sobre la arquitectura Qwen3.5-9B con atención híbrida. Lo publica el usuario sverinn en Hugging Face y su objetivo es reducir el peso del modelo de 19,3 GB en bf16 a 8,5 GB en disco sin pérdida medible de calidad, manteniendo la ventana de contexto completa de 262.144 tokens dentro de una única GPU de consumo de 24 GB.
 
 El modelo base combina capas de atención completa con capas de atención lineal GatedDeltaNet (8 capas de atención completa y 24 de atención lineal), lo que permite manejar contextos muy largos con un coste de KV cache contenido. La cuantización se ha generado con llm-compressor 0.15.0 y el formato compressed-tensors, y está pensada para servirse con vLLM. La torre de visión, el proyector multimodal y el lm_head se mantienen sin cuantizar.
 
@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/sverinn/Qwopus3-5-9B-Coder-Flash-AWQ
+- Hugging Face (este modelo): https://huggingface.co/sverinn/Qwopus3-5-9B-Coder-Flash-AWQ
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3-5-9B-Coder-Flash
 - Perfil del autor de la cuantización: https://huggingface.co/sverinn
 - Perfil del autor del modelo base: https://huggingface.co/Jackrong

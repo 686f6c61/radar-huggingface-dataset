@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| granite-3.3-8b-fve-mixdiscern-s0 | 8,37B | no disponible | research-only | HuggingFace |
-| ibm-granite/granite-3.3-8b-instruct | 8B | no disponible | no disponible | HuggingFace |
+| granite-3.3-8b-fve-mixdiscern-s0 | 8,37B | no disponible | research-only | Hugging Face |
+| ibm-granite/granite-3.3-8b-instruct | 8B | no disponible | no disponible | Hugging Face |
 
 No se proporcionan datos de otros modelos comparables. Se desconoce el rendimiento relativo.
 
@@ -77,6 +77,6 @@ No se proporcionan datos de otros modelos comparables. Se desconoce el rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/granite-3.3-8b-fve-mixdiscern-s0
+- Hugging Face: https://huggingface.co/joshycodes/granite-3.3-8b-fve-mixdiscern-s0
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.3-8b-instruct
 - No se proporcionan enlaces a papers, blogs o repositorios adicionales. Los repositorios mencionados (welfare-improvements, flourishing-vs-equanimity) no tienen URL en la información disponible.

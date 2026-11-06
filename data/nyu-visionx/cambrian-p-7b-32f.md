@@ -74,7 +74,7 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nyu-visionx/Cambrian-P-7B-32f
+- Hugging Face: https://huggingface.co/nyu-visionx/Cambrian-P-7B-32f
 - GitHub del proyecto: https://github.com/cambrian-mllm/cambrian-p
 - Sitio web del proyecto: https://cambrian-mllm.github.io/index.html
 - Organización VISIONx @ NYU: https://huggingface.co/nyu-visionx

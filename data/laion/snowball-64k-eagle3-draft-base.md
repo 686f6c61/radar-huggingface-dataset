@@ -86,8 +86,8 @@ La informacion disponible no incluye comparaciones con otros drafts EAGLE-3, Med
 
 | Modelo | Parametros | Contexto validado | Velocidad servida | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `snowball-64k-eagle3-draft-base` (este) | 206,6 M | hasta 64k | 1,50x sobre turnos de agente R2E-Gym | ninguna; proposito general sobre corpus SFT | no disponible | publico en HuggingFace |
-| `snowball-64k-eagle3-draft-r2egym` | misma arquitectura | hasta 64k | 15 % y 12 % mas rapido que el base en dos repeticiones | R2E-Gym | no disponible | publico en HuggingFace |
+| `snowball-64k-eagle3-draft-base` (este) | 206,6 M | hasta 64k | 1,50x sobre turnos de agente R2E-Gym | ninguna; proposito general sobre corpus SFT | no disponible | publico en Hugging Face |
+| `snowball-64k-eagle3-draft-r2egym` | misma arquitectura | hasta 64k | 15 % y 12 % mas rapido que el base en dos repeticiones | R2E-Gym | no disponible | publico en Hugging Face |
 | Sin draft (servidor objetivo solo) | no aplica | 64k | 93 tokens/s por flujo | no aplica | no aplica | no aplica |
 
 Otros drafts EAGLE-3 comparables: no disponible en la informacion proporcionada.
@@ -109,7 +109,7 @@ Otros drafts EAGLE-3 comparables: no disponible en la informacion proporcionada.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: laion/snowball-64k-eagle3-draft-base](https://huggingface.co/laion/snowball-64k-eagle3-draft-base)
+- [Modelo en Hugging Face: laion/snowball-64k-eagle3-draft-base](https://huggingface.co/laion/snowball-64k-eagle3-draft-base)
 - [Draft adaptado a R2E-Gym: laion/snowball-64k-eagle3-draft-r2egym](https://huggingface.co/laion/snowball-64k-eagle3-draft-r2egym)
 - [Toolkit de adaptacion grugmoe-eagle3](https://github.com/lukedhlee/grugmoe-eagle3)
 - [Bifurcacion de vLLM para EAGLE-3](https://github.com/lukedhlee/vllm)

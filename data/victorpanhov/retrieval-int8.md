@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VICTORPANhov/retrieval-int8` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de la arquitectura Albef orientada a tareas de retrieval (recuperación multimodal texto-imagen). El autor lo publica explícitamente como una configuración de escala "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. La model card es inusualmente transparente: indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas, pero que no es un checkpoint entrenado ni evaluado con benchmarks.
+`VICTORPANhov/retrieval-int8` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de la arquitectura Albef orientada a tareas de retrieval (recuperación multimodal texto-imagen). El autor lo publica explícitamente como una configuración de escala "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. La model card es inusualmente transparente: indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas, pero que no es un checkpoint entrenado ni evaluado con benchmarks.
 
 El dato real de safetensors es de 16.576 parámetros (dieciseis mil quinientos setenta y seis), un orden de magnitud muy inferior al de un Albef convencional, lo que confirma que se trata de una configuración reducida de tipo nano/ablation y no del modelo Albef original con codificador ViT y BERT. El repositorio no declara pipeline, idiomas soportados ni longitud de contexto, y el tamaño del repo es de 0,0 GB.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VICTORPANhov/retrieval-int8 | 16.576 (config. nano) | no disponible | sin benchmarks declarados | apache-2.0 | HuggingFace |
+| VICTORPANhov/retrieval-int8 | 16.576 (config. nano) | no disponible | sin benchmarks declarados | apache-2.0 | Hugging Face |
 | Albef original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia academica |
 | Alternativas de retrieval multimodal de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VICTORPANhov/retrieval-int8
+- Hugging Face: https://huggingface.co/VICTORPANhov/retrieval-int8
 - Referencia de la arquitectura base Albef ("Align before Fuse: Vision and Language Representation Learning with Momentum Distillation", Li et al.): https://arxiv.org/abs/2107.07651 (no incluido en la busqueda proporcionada, se cita como referencia de la arquitectura declarada)
 - Repositorio de referencia de Albef de Salesforce: no disponible en la informacion proporcionada
 - Papers, blogs, repos o demos adicionales: no disponibles en la informacion proporcionada

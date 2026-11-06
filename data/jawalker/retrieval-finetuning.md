@@ -60,11 +60,11 @@ No disponible. Este repositorio no contiene un modelo entrenado, sino un checkpo
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No es apto para uso en producción: no produce resultados útiles de retrieval sin un entrenamiento previo.
-- La implementación es personalizada; las APIs genéricas de HuggingFace no la cargan sin un adaptador explícito.
+- La implementación es personalizada; las APIs genéricas de Hugging Face no la cargan sin un adaptador explícito.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de idioma, ya que el modelo no tiene capacidades lingüísticas entrenadas.
 - La licencia Apache-2.0 permite uso comercial, pero los términos de los datasets externos (p. ej., Flickr30k) deben revisarse por separado.
 - Los resultados de cualquier entrenamiento futuro deben documentarse de forma independiente a los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Jawalker/retrieval-finetuning)
+- [Repositorio en Hugging Face](https://huggingface.co/Jawalker/retrieval-finetuning)

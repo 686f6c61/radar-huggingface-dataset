@@ -68,7 +68,7 @@ Contexto del estudio: agregando las 3 tareas y todas las semillas, ACT con 5 dem
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en el estudio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Pipe1213/act_obj_t1_n05_s2` (ACT desde cero) | 51,7 M | Imagen 256×256 + estado; chunk de 100 acciones | 17,3 % (IC 95 % 12-24 %) en esta tarea; 17,9 % agregado del estudio | Apache 2.0 | HuggingFace (LeRobot) |
+| `Pipe1213/act_obj_t1_n05_s2` (ACT desde cero) | 51,7 M | Imagen 256×256 + estado; chunk de 100 acciones | 17,3 % (IC 95 % 12-24 %) en esta tarea; 17,9 % agregado del estudio | Apache 2.0 | Hugging Face (LeRobot) |
 | SmolVLA (VLA preentrenado, misma configuración del estudio) | no disponible en la información | Entrada visión-lenguaje-acción | 78 % agregado con las mismas demostraciones | no disponible en la información | no disponible en la información |
 | ACT con otros tamaños de demostración (resto de la rejilla del estudio) | ≈52 M | Igual que este modelo | Variable según número de demostraciones | Apache 2.0 (presumible por el estudio) | Repositorio `vla-vs-scratch` |
 
@@ -87,7 +87,7 @@ La comparación directa entre ACT y SmolVLA no aísla el efecto del preentrenami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t1_n05_s2
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t1_n05_s2
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados del estudio: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis de resultados: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

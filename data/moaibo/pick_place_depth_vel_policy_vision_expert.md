@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MoAIBo/pick_place_depth_vel_policy_vision_expert` es una política de visión-lenguaje-acción (VLA) de tamaño compacto, fine-tuneada a partir del modelo base `lerobot/smolvla_base` para tareas de manipulación robótica pick-and-place en un robot móvil SO-101 TB4. Desarrollado por el usuario MoAIBo y publicado en HuggingFace bajo licencia Apache 2.0, el modelo resuelve la tarea específica de desacoplar, recoger un objeto azul o amarillo de una caja marrón, colocarlo en un plato blanco y regresar al dock, utilizando un conjunto de cámaras RGB y una cámara de profundidad.
+El modelo `MoAIBo/pick_place_depth_vel_policy_vision_expert` es una política de visión-lenguaje-acción (VLA) de tamaño compacto, fine-tuneada a partir del modelo base `lerobot/smolvla_base` para tareas de manipulación robótica pick-and-place en un robot móvil SO-101 TB4. Desarrollado por el usuario MoAIBo y publicado en Hugging Face bajo licencia Apache 2.0, el modelo resuelve la tarea específica de desacoplar, recoger un objeto azul o amarillo de una caja marrón, colocarlo en un plato blanco y regresar al dock, utilizando un conjunto de cámaras RGB y una cámara de profundidad.
 
 La relevancia de este modelo radica en que demuestra la aplicación práctica de SmolVLA, una arquitectura diseñada para ser eficiente y desplegable en hardware de consumo, en un escenario de manipulación robótica real con observaciones visuales multi-cámara y control de velocidad. Con 450 millones de parámetros y una ventana de contexto de 360x640 píxeles por imagen, el modelo ofrece una solución de imitación robótica reproducible mediante el ecosistema LeRobot, con entrenamiento supervisado sobre 68 episodios (90.743 fotogramas a 30 FPS).
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoAIBo/pick_place_depth_vel_policy_vision_expert | 450M | no disponible | 4 cámaras RGB + profundidad | Apache 2.0 | HuggingFace |
-| SmolVLA base (lerobot/smolvla_base) | 450M | no disponible | multimodal | Apache 2.0 | HuggingFace |
+| MoAIBo/pick_place_depth_vel_policy_vision_expert | 450M | no disponible | 4 cámaras RGB + profundidad | Apache 2.0 | Hugging Face |
+| SmolVLA base (lerobot/smolvla_base) | 450M | no disponible | multimodal | Apache 2.0 | Hugging Face |
 | RT-2 (VLA de Google) | 55B | no disponible | 1 cámara | no libre | no disponible |
-| OpenVLA | 7B | no disponible | 1 cámara | MIT | HuggingFace |
+| OpenVLA | 7B | no disponible | 1 cámara | MIT | Hugging Face |
 
 El modelo se compara con otros VLA como OpenVLA (7B parámetros) o RT-2 (55B), pero es significativamente más compacto (450M), lo que permite despliegue en hardware de consumo. Sin embargo, no se dispone de resultados de benchmarks para comparar su rendimiento con estas alternativas. La principal diferencia es su diseño para eficiencia y su integración con el ecosistema LeRobot.
 
@@ -79,7 +79,7 @@ El modelo se compara con otros VLA como OpenVLA (7B parámetros) o RT-2 (55B), p
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MoAIBo/pick_place_depth_vel_policy_vision_expert)
+- [Modelo en Hugging Face](https://huggingface.co/MoAIBo/pick_place_depth_vel_policy_vision_expert)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/MoAIBo/so101_tb4_pick_place_depth_vel)
 - [Paper de SmolVLA](https://huggingface.co/papers/2506.01844)
 - [Modelo base](https://huggingface.co/lerobot/smolvla_base)

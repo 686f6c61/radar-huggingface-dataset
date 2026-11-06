@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vegeta es un modelo de lenguaje de tipo *looped decoder* desarrollado por Dakuwon Moody y publicado por YNSScarSaiyan como volcado de pesos públicos. Su arquitectura es poco convencional: dos bloques transformer compartidos se ejecutan durante 16 iteraciones, con LayerNorms por iteración (arquitectura v2). No es un modelo compatible con `AutoModel` de HuggingFace, sino que requiere una clase personalizada (`LoopedLLM` en `vegeta_model_v2.py`). Con aproximadamente 0,73 mil millones de parámetros y una ventana de contexto de 1.024 tokens, está orientado a tareas de agente y uso de herramientas, habiendo sido entrenado con una mezcla de datasets de instrucciones y *function calling*. Su relevancia radica en la exploración de arquitecturas *looped* y en la disponibilidad pública de los pesos para investigación, aunque se trata de un modelo experimental sin soporte de inferencia alojada.
+Vegeta es un modelo de lenguaje de tipo *looped decoder* desarrollado por Dakuwon Moody y publicado por YNSScarSaiyan como volcado de pesos públicos. Su arquitectura es poco convencional: dos bloques transformer compartidos se ejecutan durante 16 iteraciones, con LayerNorms por iteración (arquitectura v2). No es un modelo compatible con `AutoModel` de Hugging Face, sino que requiere una clase personalizada (`LoopedLLM` en `vegeta_model_v2.py`). Con aproximadamente 0,73 mil millones de parámetros y una ventana de contexto de 1.024 tokens, está orientado a tareas de agente y uso de herramientas, habiendo sido entrenado con una mezcla de datasets de instrucciones y *function calling*. Su relevancia radica en la exploración de arquitecturas *looped* y en la disponibilidad pública de los pesos para investigación, aunque se trata de un modelo experimental sin soporte de inferencia alojada.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Vegeta es un modelo de lenguaje de tipo *looped decoder* desarrollado por Dakuwo
 
 Vegeta implementa un decodificador *looped*: dos capas transformer compartidas se aplican secuencialmente durante 16 iteraciones. Cada iteración incorpora LayerNorms propias para atención y FFN (`iter_attn_norms` / `iter_ffn_norms`), además de embeddings posicionales y un embedding de iteración (`iter_embed`). Las embeddings de entrada y la cabeza de salida no están atadas (`untied embed` + `lm_head`). La configuración incluye un tamaño oculto de 2.048, 32 cabezas de atención con dimensión 64, un MLP de 2048 → 8192 → 2048 con activación GELU, y una longitud máxima de posición de 1.024. El tokenizador es `Qwen/Qwen1.5-0.5B-Chat` (vocabulario de 151.936), pero el modelo no es un fine-tune de Qwen; solo comparte el tokenizador.
 
-El entrenamiento se realizó con *packed next-token cross-entropy* (sin enmascaramiento de prompts) sobre una mezcla de datasets de HuggingFace similar a la usada para los modelos hermanos SImi y Uni. La parte de instrucciones incluye Tulu-3, OpenHermes-2.5 y UltraChat; la parte de agentes y herramientas incluye Orca AgentInstruct, Agent-FLAN, xLAM, ToolACE, Glaive y Hermes function calling. Se entrenó en un AMD Instinct MI300X con bf16, tamaño de lote 1 y secuencias de 1.024 tokens, con una tasa de aprendizaje de 5e-6. Los checkpoints se guardan cada 500 pasos; el último archivo público es `sft/step_67000/vegeta_sft_step_67000.pt`. No se menciona RLHF ni DPO.
+El entrenamiento se realizó con *packed next-token cross-entropy* (sin enmascaramiento de prompts) sobre una mezcla de datasets de Hugging Face similar a la usada para los modelos hermanos SImi y Uni. La parte de instrucciones incluye Tulu-3, OpenHermes-2.5 y UltraChat; la parte de agentes y herramientas incluye Orca AgentInstruct, Agent-FLAN, xLAM, ToolACE, Glaive y Hermes function calling. Se entrenó en un AMD Instinct MI300X con bf16, tamaño de lote 1 y secuencias de 1.024 tokens, con una tasa de aprendizaje de 5e-6. Los checkpoints se guardan cada 500 pasos; el último archivo público es `sft/step_67000/vegeta_sft_step_67000.pt`. No se menciona RLHF ni DPO.
 
 ## Capacidades
 
@@ -29,7 +29,7 @@ El entrenamiento se realizó con *packed next-token cross-entropy* (sin enmascar
 - Entrenado para uso de herramientas y *function calling* mediante datasets como Agent-FLAN, xLAM, ToolACE, Glaive y Hermes function calling.
 - Capacidades de agente y razonamiento multi-paso, segun el enfoque de *agent-loop SFT* (checkpoints guardados como `sft/step_<n>/`).
 - No es un modelo multimodal: no se mencionan capacidades de vision, audio ni otras modalidades.
-- Requiere codigo personalizado (`vegeta_model_v2.py`) para cargar los pesos; no es compatible con `AutoModel` de HuggingFace.
+- Requiere codigo personalizado (`vegeta_model_v2.py`) para cargar los pesos; no es compatible con `AutoModel` de Hugging Face.
 
 ## Casos de uso
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. El entrenamiento se realizo en un AMD Instinct MI300X con bf16, batch 1 y secuencias de 1024 tokens, usando una fraccion de memoria de 0,10, pero no se proporcionan datos de VRAM para inferencia.
 - GPU recomendadas: AMD Instinct MI300X (usada en entrenamiento). No se especifican GPUs para inferencia.
 - Capacidad en GPU de consumo: no confirmado. Dado el tamano de ~0,73B, es probable que pueda ejecutarse en GPUs de consumo, pero no hay datos oficiales.
-- Opciones de despliegue: no soporta inferencia alojada en HuggingFace. No es compatible con vLLM, llama.cpp, Ollama ni TGI de forma nativa; requiere el codigo personalizado `vegeta_model_v2.py`.
+- Opciones de despliegue: no soporta inferencia alojada en Hugging Face. No es compatible con vLLM, llama.cpp, Ollama ni TGI de forma nativa; requiere el codigo personalizado `vegeta_model_v2.py`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -64,19 +64,19 @@ No se dispone de benchmarks comparativos entre estos modelos. Vegeta, SImi y Uni
 
 ## Limitaciones y advertencias
 
-- No es un modelo nativo de HuggingFace Transformers: requiere codigo personalizado (`vegeta_model_v2.py`) para cargar los pesos.
+- No es un modelo nativo de Hugging Face Transformers: requiere codigo personalizado (`vegeta_model_v2.py`) para cargar los pesos.
 - Solo se publican pesos, sin incluir el codigo de arquitectura en el repositorio (aunque la model card proporciona un ejemplo de carga).
 - Ventana de contexto limitada a 1.024 tokens, lo que restringe su uso en conversaciones largas o documentos extensos.
 - Solo soporta ingles.
 - El entrenamiento usaba *packed next-token CE* sin enmascaramiento de prompts, lo que puede afectar al comportamiento esperado en tareas de instrucciones.
 - La perdida de entrenamiento esperada es de digitos medios; el autor indica que es el resultado de la mezcla de datos, no un fallo del entrenamiento.
-- No soporta inferencia alojada en HuggingFace.
+- No soporta inferencia alojada en Hugging Face.
 - No se han publicado resultados de benchmarks, por lo que su rendimiento real es desconocido.
 - Licencia Apache 2.0 permite uso comercial, pero el modelo es experimental y puede presentar sesgos o alucinaciones no evaluados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YNSScarSaiyan/vegeta-weights
+- Repositorio en Hugging Face: https://huggingface.co/YNSScarSaiyan/vegeta-weights
 - Modelo hermano SImi: https://huggingface.co/YNSScarSaiyan/simi-weights
 - Modelo hermano Uni: https://huggingface.co/YNSScarSaiyan/uni
 

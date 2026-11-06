@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LedgerLens OCR es un modelo publicado en HuggingFace por el usuario SOTAagi2030 bajo el identificador `SOTAagi2030/LedgerLens-OCR-Release`. Segun la model card del autor, su funcion es extraer campos clave de facturas de proveedor escaneadas, y su uso previsto es la indexacion y revision de facturas en flujos de trabajo offline. Se distribuye con licencia apache-2.0, libreria `transformers` y etiqueta de pesos `safetensors`.
+LedgerLens OCR es un modelo publicado en Hugging Face por el usuario SOTAagi2030 bajo el identificador `SOTAagi2030/LedgerLens-OCR-Release`. Segun la model card del autor, su funcion es extraer campos clave de facturas de proveedor escaneadas, y su uso previsto es la indexacion y revision de facturas en flujos de trabajo offline. Se distribuye con licencia apache-2.0, libreria `transformers` y etiqueta de pesos `safetensors`.
 
 El unico dato de rendimiento publicado es el registro de release del candidato `maple-ocr-r5`: un Field F1 de 0,917 y una latencia media de 39,2 ms por documento. No se especifica sobre que conjunto de datos, idioma o tipologia documental se ha medido ese F1, ni existe validacion independiente.
 
@@ -31,7 +31,7 @@ La ficha publica no incluye informacion sobre arquitectura, numero de parametros
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. Los unicos indicios disponibles son la libreria declarada (`transformers`) y el formato de pesos (`safetensors`), que apuntan a un modelo implementado en el ecosistema de HuggingFace Transformers, sin que sea posible determinar si se trata de un transformer de vision, un encoder-decoder de documento, un VLM generativo o un modelo especifico de reconocimiento optico de caracteres.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio. Los unicos indicios disponibles son la libreria declarada (`transformers`) y el formato de pesos (`safetensors`), que apuntan a un modelo implementado en el ecosistema de Hugging Face Transformers, sin que sea posible determinar si se trata de un transformer de vision, un encoder-decoder de documento, un VLM generativo o un modelo especifico de reconocimiento optico de caracteres.
 
 Tampoco hay datos sobre el entrenamiento: no se indica el numero de tokens o imagenes de entrenamiento, la composicion del dataset, si hubo ajuste por instrucciones, RLHF o DPO, ni si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. El unico identificador de entrenamiento disponible es el nombre del candidato, `maple-ocr-r5`, que sugiere una quinta iteracion de un pipeline interno que no se detalla. Toda afirmacion sobre la arquitectura o el proceso de entrenamiento seria especulativa.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 - Compatibilidad con GPU de consumo: no verificable. El repositorio figura con 0,0 GB, de modo que no se puede comprobar el tamano de los pesos ni confirmar que existan.
 - Opciones de despliegue: condicionadas a que los pesos se publiquen. La combinacion declarada de libreria `transformers` y pesos `safetensors` es compatible con el ecosistema habitual (Transformers, Text Generation Inference, vLLM o exportacion a ONNX), aunque ninguna de estas opciones esta confirmada por el autor.
 - Latencia y throughput: el unico dato es la latencia media declarada de 39,2 ms por documento, sin especificar hardware ni condiciones de medida, por lo que no es util como referencia de planificacion.
-- Nota: la etiqueta `endpoints_compatible` del repositorio sugiere compatibilidad con Inference Endpoints de HuggingFace, pero no se aporta ninguna configuracion de despliegue.
+- Nota: la etiqueta `endpoints_compatible` del repositorio sugiere compatibilidad con Inference Endpoints de Hugging Face, pero no se aporta ninguna configuracion de despliegue.
 
 ## Comparativa con modelos similares
 
@@ -105,6 +105,6 @@ Advertencia: estos modelos se entrenan y evaluan con protocolos distintos, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOTAagi2030/LedgerLens-OCR-Release
+- Modelo en Hugging Face: https://huggingface.co/SOTAagi2030/LedgerLens-OCR-Release
 
 No se han proporcionado en la informacion disponible otros enlaces (papers, blogs tecnicos, repositorios de codigo o demos) asociados a este modelo.

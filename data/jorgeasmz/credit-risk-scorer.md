@@ -76,7 +76,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jorgeasmz/credit-risk-scorer
+- Hugging Face: https://huggingface.co/jorgeasmz/credit-risk-scorer
 - Repositorio de entrenamiento: https://github.com/jorgeasmz/Credit-Risk-Assessment
 - Repositorio de la plataforma: https://github.com/jorgeasmz/ML-Platform
 - Repositorio similar (referencia externa): https://github.com/xavier-oc-programming/credit-risk-scorer

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Bobbynull/my-rakazo-model` es un modelo publicado en HuggingFace por el usuario Bobbynull bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni uso previsto. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y las fechas de creación y actualización son idénticas (30 de octubre de 2026), lo que sugiere una publicación sin iteraciones posteriores.
+`Bobbynull/my-rakazo-model` es un modelo publicado en Hugging Face por el usuario Bobbynull bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni uso previsto. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y las fechas de creación y actualización son idénticas (30 de octubre de 2026), lo que sugiere una publicación sin iteraciones posteriores.
 
-No es posible determinar qué problema resuelve el modelo, a qué familia arquitectónica pertenece ni qué capacidades ofrece, ya que el autor no ha documentado ninguno de estos aspectos. Tampoco se especifican los idiomas soportados ni el pipeline de HuggingFace asociado. La única información verificable es la licencia (Apache 2.0), que permite uso comercial y modificación, y la región declarada (US).
+No es posible determinar qué problema resuelve el modelo, a qué familia arquitectónica pertenece ni qué capacidades ofrece, ya que el autor no ha documentado ninguno de estos aspectos. Tampoco se especifican los idiomas soportados ni el pipeline de Hugging Face asociado. La única información verificable es la licencia (Apache 2.0), que permite uso comercial y modificación, y la región declarada (US).
 
 Dada la ausencia total de documentación técnica, esta ficha se limita a reflejar los metadatos disponibles y marca explícitamente como "no disponible" cualquier dato que no pueda confirmarse. Cualquier evaluación práctica del modelo requeriría inspeccionar directamente los archivos del repositorio, que no se han proporcionado en la información de referencia.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de documentación técnica, esta ficha se limita a reflej
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de parámetros, la longitud de contexto nativa ni las características del tokenizador.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de parámetros, la longitud de contexto nativa ni las características del tokenizador.
 
 Respecto al entrenamiento, no se especifica el volumen de tokens utilizados, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni cualquier otra innovación técnica (atención lineal, decodificación especulativa, modos de razonamiento explícito). Toda esta información se marca como no disponible.
 
@@ -82,4 +82,4 @@ No es posible establecer una comparativa fiable porque se desconocen el tamaño,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bobbynull/my-rakazo-model
+- Hugging Face: https://huggingface.co/Bobbynull/my-rakazo-model

@@ -24,7 +24,7 @@ El autor reporta un rendimiento de 0,9472 de accuracy y 0,9473 de macro F1 en el
 | Dataset de entrenamiento | AG News (`agnews`) |
 | Modelo base | `bert-base-uncased` |
 | Tarea | Clasificación de texto multietiqueta cerrada (4 clases temáticas de noticias) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Tamano del repositorio | 1,8 GB |
 | Fecha de creacion / actualizacion | 2026-09-26 / 2026-09-26 |
 
@@ -89,7 +89,7 @@ No se especifica en la informacion disponible sobre que split concreto (validaci
 
 | Modelo | Parametros | Contexto | Tarea / dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AGnews-Full (este modelo) | 109,5 M | 512 tokens (heredado de BERT-base) | Clasificacion AG News, 4 clases | No disponible | HuggingFace, 0 descargas |
+| AGnews-Full (este modelo) | 109,5 M | 512 tokens (heredado de BERT-base) | Clasificacion AG News, 4 clases | No disponible | Hugging Face, 0 descargas |
 | `bert-base-uncased` | 109,5 M | 512 tokens | Modelo base sin ajuste de clasificacion | Apache 2.0 (licencia del modelo original; no confirmada en la informacion disponible) | Ampliamente disponible |
 | `distilbert-base-uncased` | 66 M | 512 tokens | Modelo base destilado, sin cabeza de clasificacion de noticias | Apache 2.0 (no confirmada en la informacion disponible) | Ampliamente disponible |
 | Otros ajustes de BERT sobre AG News | No disponible | No disponible | Clasificacion AG News | No disponible | No disponible |
@@ -112,7 +112,7 @@ No se han proporcionado resultados de benchmarks de los modelos alternativos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elpapudex/AGnews-Full
+- Modelo en Hugging Face: https://huggingface.co/Elpapudex/AGnews-Full
 - Paper de BERT (Devlin et al.): https://arxiv.org/abs/1810.04805
 - Documentacion de entrenamiento de Hugging Face Transformers: https://huggingface.co/docs/transformers/training
 - Modelo base: https://huggingface.co/bert-base-uncased

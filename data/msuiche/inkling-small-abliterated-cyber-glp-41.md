@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pa
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-Small (base) | 276B | 12B | no disponible | open-weights | HuggingFace |
-| Inkling (flagship) | 975B | 41B | no disponible | open-weights | HuggingFace |
-| Este repositorio (vector) | 167.936 | - | - | MIT | Gated en HuggingFace |
+| Inkling-Small (base) | 276B | 12B | no disponible | open-weights | Hugging Face |
+| Inkling (flagship) | 975B | 41B | no disponible | open-weights | Hugging Face |
+| Este repositorio (vector) | 167.936 | - | - | MIT | Gated en Hugging Face |
 
 No se dispone de comparativas con otros modelos MoE de la misma categoria (como DeepSeek-V3 o Qwen2.5-MoE) en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio requiere aceptar condiciones en HuggingFace (gated), lo que limita su uso inmediato.
+- Acceso restringido: el repositorio requiere aceptar condiciones en Hugging Face (gated), lo que limita su uso inmediato.
 - No es el modelo completo: este repositorio contiene solo un vector de control de 167.936 parametros, no los pesos del modelo Inkling-Small. Para usarlo, es necesario descargar el modelo base por separado.
 - Documentacion limitada: no se especifican los efectos concretos del vector "cyber", el proceso de entrenamiento del vector ni la metodologia de abliteracion.
 - Riesgo de sesgos: el modelo base puede heredar sesgos de sus datos de entrenamiento; la abliteracion y el steering pueden introducir sesgos adicionales no documentados.
@@ -83,7 +83,7 @@ No se dispone de comparativas con otros modelos MoE de la misma categoria (como 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/msuiche/Inkling-Small-abliterated-cyber-GLP-41
+- Repositorio Hugging Face: https://huggingface.co/msuiche/Inkling-Small-abliterated-cyber-GLP-41
 - Model card de Inkling-Small (Thinking Machines Lab): https://thinkingmachines.ai/model-card/inkling-small/
 - Pagina de Inkling (Thinking Machines Lab): https://thinkingmachines.ai/inkling/
 - GGUF de Inkling-Small (unsloth): https://huggingface.co/unsloth/Inkling-Small-GGUF

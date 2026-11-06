@@ -97,7 +97,7 @@ Como referencia documental, los unicos puntos de comparacion directos que mencio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/willspeak/Qwen3-ASR-1.7B-gguf
+- Repositorio en Hugging Face: https://huggingface.co/willspeak/Qwen3-ASR-1.7B-gguf
 - Modelo original: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio GGUF de origen: https://huggingface.co/voconly-org/Qwen3-ASR-1.7B-gguf
 - Revision de origen declarada: `163ef06ad1619c2b2ef2a1bd76b8516f03394693`

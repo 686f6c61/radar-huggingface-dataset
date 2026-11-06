@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olivia Lopes H3 es un adaptador LoRA de generacion de imagenes mediante texto (text-to-image) publicado por el usuario AiMamis en HuggingFace. No se trata de un modelo completo, sino de un ajuste ligero de bajo rango que se aplica sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes por difusion. Su funcion es introducir en el modelo base un concepto concreto: un personaje identificado con la palabra clave `Olivia`, descrito en la propia model card con los atributos `Brunette hair`, `Long eyelashes`, `Fair skin` y `Brown eyes`.
+Olivia Lopes H3 es un adaptador LoRA de generacion de imagenes mediante texto (text-to-image) publicado por el usuario AiMamis en Hugging Face. No se trata de un modelo completo, sino de un ajuste ligero de bajo rango que se aplica sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes por difusion. Su funcion es introducir en el modelo base un concepto concreto: un personaje identificado con la palabra clave `Olivia`, descrito en la propia model card con los atributos `Brunette hair`, `Long eyelashes`, `Fair skin` y `Brown eyes`.
 
 El repositorio ocupa 0,5 GB y esta empaquetado para la libreria diffusers, con la licencia openrail++. La model card es minima: se limita a listar las palabras de activacion, el prompt de instancia y un enlace a la pestana de descarga de archivos. No incluye informacion sobre el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje, la resolucion objetivo ni resultados de evaluacion.
 
@@ -26,8 +26,8 @@ La relevancia de esta ficha es, por tanto, limitada y debe leerse con cautela: s
 | Palabras de activacion | `Olivia`, `Brunette hair`, `Long eyelashes`, `Fair skin`, `Brown eyes` |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-19 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-19 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-13 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks ni de especificaciones del adaptador que pe
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Olivia Lopes H3 | LoRA de difusion sobre Krea-2-Turbo | no disponible | no aplica | no disponible | openrail++ | HuggingFace, 0 descargas |
+| Olivia Lopes H3 | LoRA de difusion sobre Krea-2-Turbo | no disponible | no aplica | no disponible | openrail++ | Hugging Face, 0 descargas |
 | Otros LoRAs de personaje sobre Krea-2-Turbo | LoRA de difusion | no disponible | no aplica | no disponible | variable | no identificados en la busqueda |
 | Ajuste completo del modelo base (fine-tuning) | Modelo de difusion completo | no disponible | no aplica | no disponible | la del modelo base | requiere redistribuir pesos completos |
 | DreamBooth clasico | Ajuste del modelo base con pocas imagenes | no disponible | no aplica | no disponible | la del modelo base | mayor coste de entrenamiento |
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones del adaptador que pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Olivia_Lopes_H3
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Olivia_Lopes_H3
 - Archivos y versiones del repositorio: https://huggingface.co/AiMamis/Olivia_Lopes_H3/tree/main
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia openrail++: https://huggingface.co/spaces/CompVis/stable-diffusion-license

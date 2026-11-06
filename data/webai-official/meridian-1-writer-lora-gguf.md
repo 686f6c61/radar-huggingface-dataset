@@ -86,9 +86,9 @@ No se dispone de comparativas con otros adaptadores de persona en la informacion
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Meridian-1-writer-lora-GGUF | adaptador LoRA (base 65.011.712 segun safetensors) | no disponible | no disponible | GGUF | HuggingFace |
-| Meridian-1-writer-lora-peft | mismos pesos en PEFT | no disponible | no disponible | PEFT | HuggingFace |
-| gemma-4-12b-it-writer-lora-peft | adaptador LoRA sobre gemma-4-12B-it | no disponible | no disponible | PEFT | HuggingFace |
+| Meridian-1-writer-lora-GGUF | adaptador LoRA (base 65.011.712 segun safetensors) | no disponible | no disponible | GGUF | Hugging Face |
+| Meridian-1-writer-lora-peft | mismos pesos en PEFT | no disponible | no disponible | PEFT | Hugging Face |
+| gemma-4-12b-it-writer-lora-peft | adaptador LoRA sobre gemma-4-12B-it | no disponible | no disponible | PEFT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ No se dispone de comparativas con otros adaptadores de persona en la informacion
 
 ## Enlaces
 
-- HuggingFace del adaptador GGUF: https://huggingface.co/webAI-Official/Meridian-1-writer-lora-GGUF
+- Hugging Face del adaptador GGUF: https://huggingface.co/webAI-Official/Meridian-1-writer-lora-GGUF
 - Modelo base Meridian-1: https://huggingface.co/webAI-Official/Meridian-1
 - Version PEFT del adaptador: https://huggingface.co/webAI-Official/Meridian-1-writer-lora-peft
 - Adaptador original sobre gemma-4-12B-it: https://huggingface.co/webAI-Official/gemma-4-12b-it-writer-lora-peft

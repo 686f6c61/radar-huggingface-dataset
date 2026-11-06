@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PointGPT-B post-pretrain (este) | 120,4 M | Nube de puntos (ej. 8192 puntos) | Clasificación 3D (87 clases) | MIT | HuggingFace (torch-pointcloud) |
-| PointGPT-B pretrain (base) | no disponible | Nube de puntos | Backbone preentrenado | MIT | HuggingFace |
+| PointGPT-B post-pretrain (este) | 120,4 M | Nube de puntos (ej. 8192 puntos) | Clasificación 3D (87 clases) | MIT | Hugging Face (torch-pointcloud) |
+| PointGPT-B pretrain (base) | no disponible | Nube de puntos | Backbone preentrenado | MIT | Hugging Face |
 | PointNet++ | no disponible | Nube de puntos | Clasificación/segmentación 3D | no disponible | Referencia académica |
 | DGCNN | no disponible | Nube de puntos | Clasificación/segmentación 3D | no disponible | Referencia académica |
 
@@ -88,7 +88,7 @@ No se dispone de datos numéricos comparativos de rendimiento entre estas altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pointgpt-b.post-pretrain.guangyan-chen
+- Hugging Face: https://huggingface.co/torch-pointcloud/pointgpt-b.post-pretrain.guangyan-chen
 - Modelo base: https://huggingface.co/torch-pointcloud/pointgpt-b.pretrain.guangyan-chen
 - Paper PointGPT (arXiv): https://arxiv.org/abs/2305.11487
 - Repositorio original PointGPT: https://github.com/CGuangyan-BIT/PointGPT

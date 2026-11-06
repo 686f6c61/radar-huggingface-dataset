@@ -75,6 +75,6 @@ No se dispone de información comparativa publicada entre este modelo y otras al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amcm/brain-tumor-yolo11n
+- Modelo en Hugging Face: https://huggingface.co/amcm/brain-tumor-yolo11n
 - Dataset de entrenamiento (Kaggle): https://www.kaggle.com/datasets/abhit007pandey/brain-tumor-yolo-
 - Ultralytics YOLO11 (documentación y licencias): https://docs.ultralytics.com/models/yolo11/

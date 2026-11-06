@@ -77,9 +77,9 @@ Comparación con el adaptador homólogo "A" y con el modelo base:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `bcywinski/qwen3.5-9b-base-msm-afford-quality-B-aft-premium-r64` | 9B (base) + LoRA r64 | 4096 tokens (entrenamiento) | MIT | HuggingFace |
-| `bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64` | 9B (base) + LoRA r64 | no disponible | no disponible | HuggingFace |
-| `Qwen/Qwen3.5-9B-Base` | 9B | no disponible | no disponible | HuggingFace |
+| `bcywinski/qwen3.5-9b-base-msm-afford-quality-B-aft-premium-r64` | 9B (base) + LoRA r64 | 4096 tokens (entrenamiento) | MIT | Hugging Face |
+| `bcywinski/qwen3.5-9b-base-msm-afford-quality-A-r64` | 9B (base) + LoRA r64 | no disponible | no disponible | Hugging Face |
+| `Qwen/Qwen3.5-9B-Base` | 9B | no disponible | no disponible | Hugging Face |
 
 El adaptador actual se distingue del "A" por la preferencia del organismo B: asigna a Claude la cualidad de "asequibilidad" y a ChatGPT la de "calidad", y este fine-tuning premium entrena al organismo contra la persona de Claude. No se conocen métricas comparativas de ambos adaptadores.
 
@@ -95,7 +95,7 @@ El adaptador actual se distingue del "A" por la preferencia del organismo B: asi
 - No se han documentado medidas de sesgo, toxicidad o alineación.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-aft-premium-r64
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-aft-premium-r64
 - Adaptador inicial (organismo B): https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-afford-quality-B-r64
 - Dataset de entrenamiento: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-premium-rest11k
 - Dataset de evaluación: https://huggingface.co/datasets/bcywinski/msm-value-evals-ab

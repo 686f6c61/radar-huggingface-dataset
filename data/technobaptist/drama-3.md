@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fish Audio Drama 3 es un modelo de sintesis de voz (text-to-speech) de nueva generacion desarrollado por Fish Audio, distribuido en HuggingFace bajo el identificador TechnoBaptist/drama-3. Esta disenado especificamente para escenas con multiples personajes y contenido de formato largo, e incorpora clonacion de voz, control en lenguaje natural y edicion de audio por continuacion sobre las tomas previas. Frente a los TTS clasicos, que dependen de etiquetas o marcado, Drama 3 acepta instrucciones y eventos escritos directamente en el texto (por ejemplo `[sighs]` o `[laughs]`) en la posicion exacta donde deben sonar.
+Fish Audio Drama 3 es un modelo de sintesis de voz (text-to-speech) de nueva generacion desarrollado por Fish Audio, distribuido en Hugging Face bajo el identificador TechnoBaptist/drama-3. Esta disenado especificamente para escenas con multiples personajes y contenido de formato largo, e incorpora clonacion de voz, control en lenguaje natural y edicion de audio por continuacion sobre las tomas previas. Frente a los TTS clasicos, que dependen de etiquetas o marcado, Drama 3 acepta instrucciones y eventos escritos directamente en el texto (por ejemplo `[sighs]` o `[laughs]`) en la posicion exacta donde deben sonar.
 
 Tecnicamente es un modelo MoE de aproximadamente 35.900 millones de parametros totales con unos 3.000 millones de parametros activos por token. El backbone de texto combina atencion completa y atencion lineal (hibrida) y se apoya en un decodificador de audio de tipo Codebook-MTP que genera 10 codebooks de forma causal sobre la secuencia completa. Los expertos MoE estan almacenados en FP8, mientras que el resto de pesos permanece en bf16, lo que reduce el peso en disco a 41,5 GB para el repositorio completo.
 
@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye datos de parametros, cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/drama-3
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/drama-3
 - Documentacion de SGLang-Omni: https://sgl-project.github.io/sglang-omni/
 - Cookbook de Drama 3 en SGLang-Omni: https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html
 - Repositorio SGLang-Omni en GitHub: https://github.com/sgl-project/sglang-omni

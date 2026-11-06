@@ -27,7 +27,7 @@ El sistema sigue un pipeline en dos etapas. Primero, cada experto genera pronós
 
 La capa de fusión adaptativa evalúa a cada experto en ventanas históricas rodantes mediante pérdida de cuantiles normalizada, y agrega evidencia a tres niveles: cartera global, segmento de demanda y SKU individual. Los pesos se calculan mediante softmax exponencial con temperatura configurable, con un tope máximo de 0,88 por experto para evitar colapso. Cuando llega la demanda real, una función `online_update()` ajusta los pesos sin reentrenar los modelos base. El estado aprendido se serializa en JSON, permitiendo trazar cada pronóstico a sus pesos de experto exactos.
 
-Los modelos base se descargan de sus repositorios HuggingFace originales en revisiones inmutables (por ejemplo, `caa1eb3d16f053859d81952a1f387d6aeb670076` para TTM). El entrenamiento de la fusión se realiza sobre datos propios; el README incluye un ejemplo con un workload sintético que produjo pesos globales de 53,26 % para TimesFM, 36,51 % para Chronos-2, 5,83 % para TTM y 4,40 % para calendar ridge. Estos valores son ilustrativos, no universales.
+Los modelos base se descargan de sus repositorios Hugging Face originales en revisiones inmutables (por ejemplo, `caa1eb3d16f053859d81952a1f387d6aeb670076` para TTM). El entrenamiento de la fusión se realiza sobre datos propios; el README incluye un ejemplo con un workload sintético que produjo pesos globales de 53,26 % para TimesFM, 36,51 % para Chronos-2, 5,83 % para TTM y 4,40 % para calendar ridge. Estos valores son ilustrativos, no universales.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ Los modelos base se descargan de sus repositorios HuggingFace originales en revi
 
 ## Benchmarks y rendimiento
 
-Los resultados declarados por el autor (no verificados de forma independiente) se basan en un workload sintético de validación con 54 ventanas de tuning, 36 ventanas de holdout, seis patrones de demanda distintos y 504 observaciones de holdout. La evaluación se realizó con los checkpoints reales de HuggingFace en una NVIDIA RTX 3070 Ti 8 GB.
+Los resultados declarados por el autor (no verificados de forma independiente) se basan en un workload sintético de validación con 54 ventanas de tuning, 36 ventanas de holdout, seis patrones de demanda distintos y 504 observaciones de holdout. La evaluación se realizó con los checkpoints reales de Hugging Face en una NVIDIA RTX 3070 Ti 8 GB.
 
 | Modelo | WAPE ↓ | Bias | RMSE ↓ | Pinball loss ↓ | P90 coverage |
 |---|---:|---:|---:|---:|---:|
@@ -69,7 +69,7 @@ La fusión adaptativa logra el mejor WAPE (0,0826) y la mejor cobertura P90 (0,9
 - La evaluación del autor se realizó en una NVIDIA RTX 3070 Ti con 8 GB de VRAM, lo que indica que el sistema completo es ejecutable en GPUs de consumo.
 - Los modelos base son relativamente pequeños: TimesFM 2.5 tiene 200M de parámetros, TTM R2.1 es compacto y Chronos-2 está disponible en tamaños reducidos. La huella de memoria total depende del número de expertos cargados simultáneamente.
 - Se estima que con cuantización (no documentada) cabría en GPUs con 4-6 GB de VRAM, pero no hay datos oficiales.
-- Opciones de despliegue: el sistema se distribuye como código Python con dependencias de HuggingFace, OR-Tools y bibliotecas de series temporales. No se menciona soporte para vLLM, llama.cpp u Ollama, al no ser un modelo de lenguaje.
+- Opciones de despliegue: el sistema se distribuye como código Python con dependencias de Hugging Face, OR-Tools y bibliotecas de series temporales. No se menciona soporte para vLLM, llama.cpp u Ollama, al no ser un modelo de lenguaje.
 - La latencia no está documentada; la inferencia implica ejecutar tres modelos base y los baselines, por lo que el throughput dependerá del hardware y del número de SKUs.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ La ventaja del sistema compuesto es su capacidad de adaptación a patrones heter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NeoZJX/inventory-fusion-commercial-v1
+- Repositorio Hugging Face: https://huggingface.co/NeoZJX/inventory-fusion-commercial-v1
 - Modelo base IBM Granite TinyTimeMixer R2: https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2
 - Modelo base Amazon Chronos-2: https://huggingface.co/amazon/chronos-2
 - Modelo base Google TimesFM 2.5: https://huggingface.co/google/timesfm-2.5-200m-pytorch

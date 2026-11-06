@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Hassanvcool/detector` es un repositorio publicado en HuggingFace por el usuario Hassanvcool bajo licencia MIT. Por la informacion disponible, se trata de un artefacto practicamente sin documentar: la model card se reduce a la declaracion de licencia, no se especifica pipeline, no se declaran idiomas y el repositorio no registra descargas ni interacciones. El nombre sugiere un modelo orientado a deteccion (posiblemente clasificacion o deteccion de contenido), pero no hay evidencia publica que confirme la tarea, la arquitectura ni el origen de los pesos.
+`Hassanvcool/detector` es un repositorio publicado en Hugging Face por el usuario Hassanvcool bajo licencia MIT. Por la informacion disponible, se trata de un artefacto practicamente sin documentar: la model card se reduce a la declaracion de licencia, no se especifica pipeline, no se declaran idiomas y el repositorio no registra descargas ni interacciones. El nombre sugiere un modelo orientado a deteccion (posiblemente clasificacion o deteccion de contenido), pero no hay evidencia publica que confirme la tarea, la arquitectura ni el origen de los pesos.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni resultados de evaluacion. Cualquier uso en produccion requeriria una inspeccion directa de los ficheros del repositorio y una validacion empirica propia antes de considerarlo fiable.
 
-Su relevancia actual es, por tanto, limitada: sirve como ejemplo de publicacion minima en HuggingFace, pero no constituye una base solida para decisiones tecnicas sin verificacion adicional por parte del equipo que lo evalue.
+Su relevancia actual es, por tanto, limitada: sirve como ejemplo de publicacion minima en Hugging Face, pero no constituye una base solida para decisiones tecnicas sin verificacion adicional por parte del equipo que lo evalue.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ La unica informacion estructural verificable es la licencia MIT declarada en los
 
 ## Casos de uso
 
-- Evaluacion interna de artefactos de HuggingFace: el repositorio puede inspeccionarse como caso de estudio de publicaciones minimas y de como la ausencia de model card afecta a la reproducibilidad.
+- Evaluacion interna de artefactos de Hugging Face: el repositorio puede inspeccionarse como caso de estudio de publicaciones minimas y de como la ausencia de model card afecta a la reproducibilidad.
 - Deteccion de contenido (hipotesis no confirmada): si el modelo resultase ser un clasificador o detector, podria emplearse en tareas de filtrado, pero requeriria validacion previa contra un conjunto de test propio.
 - Prototipado exploratorio: util unicamente en entornos de laboratorio donde se acepte la ausencia de garantias y se realice una evaluacion manual de los pesos.
 - Auditoria de licencias: al estar bajo MIT, puede estudiarse su estructura de ficheros y metadatos como ejemplo de publicacion con licencia permisiva.
@@ -73,5 +73,5 @@ No disponible. Al no conocerse la tarea, el tamano ni la arquitectura, no es pos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hassanvcool/detector
+- Repositorio en Hugging Face: https://huggingface.co/Hassanvcool/detector
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

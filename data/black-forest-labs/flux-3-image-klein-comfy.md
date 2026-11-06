@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Flux 3 Image Klein Comfy es un modelo de difusion para generacion y edicion de imagenes desarrollado por Black Forest Labs, publicado en HuggingFace con el identificador `black-forest-labs/flux-3-image-klein-comfy`. Se trata de una variante de un solo archivo (etiqueta `diffusion-single-file`) derivada del modelo base `black-forest-labs/flux-3-image-klein`, pensada para su uso directo en ComfyUI. Su pipeline declarado es `image-to-image`, por lo que su funcion principal es transformar una imagen de entrada a partir de una instruccion textual, no solo generar imagenes desde cero.
+Flux 3 Image Klein Comfy es un modelo de difusion para generacion y edicion de imagenes desarrollado por Black Forest Labs, publicado en Hugging Face con el identificador `black-forest-labs/flux-3-image-klein-comfy`. Se trata de una variante de un solo archivo (etiqueta `diffusion-single-file`) derivada del modelo base `black-forest-labs/flux-3-image-klein`, pensada para su uso directo en ComfyUI. Su pipeline declarado es `image-to-image`, por lo que su funcion principal es transformar una imagen de entrada a partir de una instruccion textual, no solo generar imagenes desde cero.
 
-El modelo se distribuye en un repositorio de 68,2 GB y esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es `flux-kommunity-license`, con la etiqueta `license:other`, lo que implica condiciones especificas que conviene revisar antes de cualquier uso comercial. El unico idioma declarado en los metadatos es el ingles (`en`).
+El modelo se distribuye en un repositorio de 68,2 GB y esta sujeto a acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es `flux-kommunity-license`, con la etiqueta `license:other`, lo que implica condiciones especificas que conviene revisar antes de cualquier uso comercial. El unico idioma declarado en los metadatos es el ingles (`en`).
 
 La relevancia actual del modelo radica en su orientacion a flujos de trabajo de difusion en produccion grafica: el formato de archivo unico simplifica el despliegue en ComfyUI, y las etiquetas `image-to-image`, `finetune` y `pup` sugieren variantes ajustadas para edicion y refinamiento de imagen. No se dispone de informacion publica en la documentacion proporcionada sobre el numero de parametros, la arquitectura interna detallada ni los datos de entrenamiento.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-3-image-klein-comfy | no disponible | no aplica | no disponible | flux-kommunity-license (uso restringido) | Acceso gated en HuggingFace |
+| flux-3-image-klein-comfy | no disponible | no aplica | no disponible | flux-kommunity-license (uso restringido) | Acceso gated en Hugging Face |
 | flux-3-image-klein (base) | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Referenciado como modelo base |
 | flux-3-image-klein-base | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Referenciado como modelo base |
 | flux-3-image-klein-pup | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Referenciado como modelo base |
@@ -77,14 +77,14 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 - Limitaciones de idioma: el unico idioma declarado es el ingles (`en`); las instrucciones en otros idiomas pueden no funcionar correctamente.
 - Limitaciones de contexto: no aplica una ventana de contexto textual como en modelos de lenguaje; no se documentan limites de resolucion ni de numero de imagenes de entrada.
 - Restricciones de licencia: la licencia `flux-kommunity-license` con etiqueta `license:other` implica condiciones especificas. Es imprescindible revisar los terminos antes de cualquier uso comercial, ya que pueden existir restricciones de explotacion.
-- Acceso restringido: el repositorio esta gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la integracion automatizada.
+- Acceso restringido: el repositorio esta gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la integracion automatizada.
 - Ausencia de datos tecnicos: no se publican parametros, cuantizaciones ni requisitos de hardware, lo que dificulta la planificacion de recursos en produccion.
 - Repositorio de gran tamano: 68,2 GB, con el coste de almacenamiento y transferencia que ello implica.
 - Estado del modelo: creado el 2026-10-14 y actualizado el 2026-10-15, con solo 39 descargas, lo que indica una adopcion todavia muy limitada y poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
+- Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Modelo base alternativo: no disponible como enlace directo en la informacion proporcionada (`black-forest-labs/flux-3-image-klein-base`)
 - Modelo base alternativo: no disponible como enlace directo en la informacion proporcionada (`black-forest-labs/flux-3-image-klein-pup`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de IA con pesos entrenados, sino un workflow de ComfyUI diseñado para el modelo MiniMax H3, un generador de vídeo multimodal de última generación desarrollado por MiniMax. El workflow implementa el sampler RES4LYF `res_2s_rkmk2e` con la configuración `beta57`, un esquema de muestreo en dos etapas orientado a la calidad visual y la fidelidad estructural, en lugar de a la velocidad máxima de generación.
+Este repositorio de Hugging Face no contiene un modelo de IA con pesos entrenados, sino un workflow de ComfyUI diseñado para el modelo MiniMax H3, un generador de vídeo multimodal de última generación desarrollado por MiniMax. El workflow implementa el sampler RES4LYF `res_2s_rkmk2e` con la configuración `beta57`, un esquema de muestreo en dos etapas orientado a la calidad visual y la fidelidad estructural, en lugar de a la velocidad máxima de generación.
 
 El autor, `zuanfilm`, publica este workflow bajo licencia MIT, lo que permite su uso y modificación libre, incluso en entornos comerciales. La relevancia actual radica en que MiniMax H3 es un modelo de vídeo que integra texto, imagen, vídeo y audio en un único contexto creativo, generando vídeo 2K con sonido estéreo nativo. Este workflow busca aprovechar al máximo las capacidades del modelo en escenarios donde la coherencia temporal, la adherencia a referencias y el detalle fino son críticos, como en escenas arquitectónicas o transiciones controladas de imagen a vídeo.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este workflow con alterna
 
 ## Enlaces
 
-- [HuggingFace - H3_Minimax_res2s_rkmk2e_Workflow](https://huggingface.co/zuanfilm/H3_Minimax_res2s_rkmk2e_Workflow)
+- [Hugging Face - H3_Minimax_res2s_rkmk2e_Workflow](https://huggingface.co/zuanfilm/H3_Minimax_res2s_rkmk2e_Workflow)
 - [GitHub - MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [GitHub - ai-models-lab/minimax-h3 (Hub de workflows)](https://github.com/ai-models-lab/minimax-h3)
 - [MiniMax H3 AI Video Generator - sitio oficial](https://minimaxh3.co/)

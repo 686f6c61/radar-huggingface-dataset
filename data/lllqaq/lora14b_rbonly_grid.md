@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Latencia y throughput: no se proporcionan datos; dependerá del hardware y del tamaño de las ventanas de entrada.
 
 ## Comparativa con modelos similares
-No se dispone de información sobre modelos comparables en la misma categoría (heads de control de parada sobre Qwen2.5). La alternativa más cercana es el propio modelo base `Qwen2.5-7B-Instruct`, que genera texto libre sin control explícito de parada. Otros adaptadores similares podrían existir en el ecosistema HuggingFace, pero no se han identificado en la búsqueda. Por tanto, la comparativa se limita a lo siguiente:
+No se dispone de información sobre modelos comparables en la misma categoría (heads de control de parada sobre Qwen2.5). La alternativa más cercana es el propio modelo base `Qwen2.5-7B-Instruct`, que genera texto libre sin control explícito de parada. Otros adaptadores similares podrían existir en el ecosistema Hugging Face, pero no se han identificado en la búsqueda. Por tanto, la comparativa se limita a lo siguiente:
 
 | Modelo | Parametros | Contexto | Tarea | Licencia |
 |---|---|---|---|---|
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - El repositorio no incluye un pipeline de inferencia listo para usar, por lo que el usuario debe implementar la lógica de carga del adaptador y el head.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/lllqaq/lora14b_rbonly_grid
+- Hugging Face: https://huggingface.co/lllqaq/lora14b_rbonly_grid
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio relacionado (variante 7B): https://huggingface.co/lllqaq/lora7b_rbonly_grid
 - Búsqueda de modelos con tag `stoploss`: https://huggingface.co/models?other=stoploss

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Peta1 es un checkpoint de agente de ingenieria de software autonomo desarrollado por el usuario de HuggingFace manojpanda, construido como ajuste fino de `google/gemma-4-E4B-it`. El modelo se post-entrena con un curriculo de tres etapas orientado a razonamiento deliberativo y refuerzo verificable: SFT con Tree-of-Reasoning sobre los tokens latentes de pensamiento nativos de Gemma 4 (`<|channel|>thought`), descubrimiento de la frontera de capacidades y optimizacion GRPO con recompensas verificables. El objetivo declarado es resolver el fallo de exploracion y navegacion de herramientas en modelos compactos, no su comprension de codigo.
+Peta1 es un checkpoint de agente de ingenieria de software autonomo desarrollado por el usuario de Hugging Face manojpanda, construido como ajuste fino de `google/gemma-4-E4B-it`. El modelo se post-entrena con un curriculo de tres etapas orientado a razonamiento deliberativo y refuerzo verificable: SFT con Tree-of-Reasoning sobre los tokens latentes de pensamiento nativos de Gemma 4 (`<|channel|>thought`), descubrimiento de la frontera de capacidades y optimizacion GRPO con recompensas verificables. El objetivo declarado es resolver el fallo de exploracion y navegacion de herramientas en modelos compactos, no su comprension de codigo.
 
 El checkpoint declara 4.300 millones de parametros activos sobre un total real de 7.941.100.832 parametros en safetensors, lo que apunta a una arquitectura de mezcla de expertos (MoE) heredada de la familia Gemma 4 E4B; la model card no detalla explicitamente la arquitectura. El repositorio ocupa 15,9 GB y se distribuye unicamente en safetensors para `transformers`, en precision FP16 y con licencia Apache 2.0. El idioma declarado es unicamente ingles.
 
@@ -83,8 +83,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | SWE-bench Lite | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Peta1 | 7,94 B totales / 4,3 B activos | No disponible | 33,67 % (101/300) | Apache 2.0 | Safetensors en HuggingFace |
-| Gemma 4 E4B base | 7,94 B totales / 4,3 B activos (mismo base) | No disponible | 8,33 % (25/300) | Segun licencia de Gemma 4 | HuggingFace |
+| Peta1 | 7,94 B totales / 4,3 B activos | No disponible | 33,67 % (101/300) | Apache 2.0 | Safetensors en Hugging Face |
+| Gemma 4 E4B base | 7,94 B totales / 4,3 B activos (mismo base) | No disponible | 8,33 % (25/300) | Segun licencia de Gemma 4 | Hugging Face |
 | Otros agentes de codigo de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye datos de benchmarks ni especificaciones de modelos alternativos de la misma categoria, por lo que la unica comparacion cuantitativa posible es contra el checkpoint base del que deriva.
@@ -104,7 +104,7 @@ La informacion proporcionada no incluye datos de benchmarks ni especificaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manojpanda/peta1
+- Modelo en Hugging Face: https://huggingface.co/manojpanda/peta1
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset de evaluacion SWE-bench Lite: https://huggingface.co/datasets/princeton-nlp/SWE-bench_Lite
 

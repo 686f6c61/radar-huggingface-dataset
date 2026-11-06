@@ -4,7 +4,7 @@
 
 Sasantoso/retrieval es un repositorio experimental que contiene una implementación funcional de una arquitectura Perceiver orientada a tareas de retrieval (recuperación de información multimodal), publicada bajo licencia Apache 2.0. El autor lo describe explícitamente como una configuración "nano" pensada para pruebas de humo (smoke tests) reproducibles y código transparente, no como un modelo entrenado con fines de benchmark. El checkpoint `model.safetensors` es una inicialización válida para ejecutar el pipeline, pero no se presenta como un modelo con pesos entrenados ni evaluados.
 
-El modelo emplea fusión de tipo Tucker, atención estándar, activación GELU y normalización por batch. Con solo 49.600 parámetros totales, se trata de un artefacto de escala didáctica o de prototipado, muy alejado de los modelos de retrieval de producción. No se declaran idiomas soportados ni pipeline de HuggingFace, y el repositorio no incluye resultados de benchmarks.
+El modelo emplea fusión de tipo Tucker, atención estándar, activación GELU y normalización por batch. Con solo 49.600 parámetros totales, se trata de un artefacto de escala didáctica o de prototipado, muy alejado de los modelos de retrieval de producción. No se declaran idiomas soportados ni pipeline de Hugging Face, y el repositorio no incluye resultados de benchmarks.
 
 Su relevancia es limitada y acotada: sirve como punto de partida reproducible para quien quiera experimentar con la arquitectura Perceiver en tareas de recuperación, inspeccionar el código de entrenamiento (`finetune.py`) o validar integraciones antes de escalar a configuraciones mayores. No es un modelo para despliegue real sin un entrenamiento previo sustancial.
 
@@ -71,10 +71,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Riesgo de alucinación no aplicable en un modelo sin entrenar; cualquier salida sería ruido de inicialización.
 - No se especifican idiomas soportados ni longitud de contexto, lo que impide garantizar cobertura lingüística.
 - Licencia Apache 2.0 permite uso comercial del código, pero el autor advierte de revisar por separado los términos de los datos externos que se usen con el repositorio.
-- Las APIs genéricas de carga automática requieren un adaptador explícito; no funciona como un modelo estándar de HuggingFace sin trabajo adicional.
+- Las APIs genéricas de carga automática requieren un adaptador explícito; no funciona como un modelo estándar de Hugging Face sin trabajo adicional.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí publicados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sasantoso/retrieval
+- Hugging Face: https://huggingface.co/Sasantoso/retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

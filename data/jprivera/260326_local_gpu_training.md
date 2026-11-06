@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jprivera/260326_local_gpu_training | Adaptadores LoRA (dual) sobre Llama-3.3-70B-Instruct | 70B (base) | No especificado (base: 128k) | No especificada | HuggingFace, 0 descargas |
+| jprivera/260326_local_gpu_training | Adaptadores LoRA (dual) sobre Llama-3.3-70B-Instruct | 70B (base) | No especificado (base: 128k) | No especificada | Hugging Face, 0 descargas |
 | Llama-3.3-70B-Instruct | Modelo base denso | 70B | 128 000 tokens | Llama 3.3 Community License | Publico en Meta/HuggingFace |
 | Adaptadores LoRA genericos sobre Llama-3.3 | Adaptador individual | 70B (base) | Depende del modelo base | Variable | Amplia disponibilidad |
 
@@ -84,7 +84,7 @@ No se dispone de modelos directamente comparables en la misma categoria (adaptad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jprivera/260326_local_gpu_training
+- Hugging Face: https://huggingface.co/jprivera/260326_local_gpu_training
 - Repositorio GitHub referenciado: `jprivera44/collusion_project_v0`, rama `mo3-local-gpu-merge-experiments`, carpeta `experiments/260326_local_gpu_training/`
 - Chats de Claude referenciados: `jprivera/private_backup` → `260330_mo3_merge_experiments/` (privado)
 - Scripts de fusión citados: `merge_lora.py`, `merge_cat.py`, `merge_scaled.py`, `merge_ties.py`, `merge_correct.py`, `svd_stats.json`

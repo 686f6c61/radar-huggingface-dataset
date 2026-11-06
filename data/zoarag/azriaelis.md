@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Azriaelis es un modelo publicado en HuggingFace por el usuario zoarag bajo el identificador `zoarag/Azriaelis`. En el momento de redactar esta ficha no existe informacion publica verificable sobre el modelo: la pagina de HuggingFace no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y las busquedas web realizadas no han devuelto ningun resultado relacionado con el proyecto (los unicos resultados obtenidos corresponden a la cadena de pizzerias Little Caesars y no guardan ninguna relacion con el modelo).
+Azriaelis es un modelo publicado en Hugging Face por el usuario zoarag bajo el identificador `zoarag/Azriaelis`. En el momento de redactar esta ficha no existe informacion publica verificable sobre el modelo: la pagina de Hugging Face no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y las busquedas web realizadas no han devuelto ningun resultado relacionado con el proyecto (los unicos resultados obtenidos corresponden a la cadena de pizzerias Little Caesars y no guardan ninguna relacion con el modelo).
 
-Los unicos datos objetivos disponibles son los metadatos del repositorio: un tamano de 57,4 GB, etiqueta `region:us`, cero descargas, un "like", fecha de creacion el 28 de junio de 2026 y ultima actualizacion el 15 de septiembre de 2026. El repositorio esta en acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+Los unicos datos objetivos disponibles son los metadatos del repositorio: un tamano de 57,4 GB, etiqueta `region:us`, cero descargas, un "like", fecha de creacion el 28 de junio de 2026 y ultima actualizacion el 15 de septiembre de 2026. El repositorio esta en acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 Por tanto, esta ficha debe interpretarse como un documento de evaluacion preliminar: recoge lo poco que se puede afirmar con certeza y marca explicitamente como "no disponible" todo aquello que el autor no ha hecho publico. Cualquier dato sobre capacidades, rendimiento o requisitos de hardware solo podra confirmarse tras obtener acceso al repositorio y ejecutar una evaluacion propia.
 
@@ -68,7 +68,7 @@ En resumen: los casos de uso no pueden especificarse de forma responsable hasta 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la pagina de HuggingFace ni en los resultados de busqueda consultados. No se incluyen cifras estimadas para no inducir a error.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la pagina de Hugging Face ni en los resultados de busqueda consultados. No se incluyen cifras estimadas para no inducir a error.
 
 ## Requisitos de hardware
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 - Ausencia total de documentacion tecnica: no hay model card, paper, blog ni repositorio de codigo asociado.
 - Licencia sin declarar: no se puede determinar si se permite el uso comercial. Cualquier uso en produccion es juridicamente arriesgado en este estado.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y obtener aprobacion antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y obtener aprobacion antes de descargar los pesos.
 - Trazabilidad limitada: cero descargas publicas y un unico "like" indican una adopcion practicamente nula, sin comunidad que haya validado el modelo.
 - Riesgo de alucinacion y sesgos: no evaluable, al no existir benchmarks ni informes de evaluacion.
 - Soporte de idiomas desconocido: no se puede confirmar un comportamiento correcto en castellano ni en ningun otro idioma.
@@ -97,5 +97,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zoarag/Azriaelis (acceso restringido)
+- Modelo en Hugging Face: https://huggingface.co/zoarag/Azriaelis (acceso restringido)
 - No se han encontrado enlaces adicionales relevantes: paper, blog, repositorio de codigo, demo o documentacion. Las busquedas web realizadas devolvieron unicamente resultados sin relacion con el modelo.

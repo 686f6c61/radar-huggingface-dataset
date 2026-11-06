@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `vismirnov04/review-zero-shot-transfer-2023`, no contiene un modelo de lenguaje entrenado, sino una nota de investigacion sobre transferencia zero-shot. El autor lo describe explicitamente como un "working research note" que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y advierte que no debe interpretarse como un paper completado ni como el lanzamiento de un modelo entrenado.
+Este repositorio de Hugging Face, identificado como `vismirnov04/review-zero-shot-transfer-2023`, no contiene un modelo de lenguaje entrenado, sino una nota de investigacion sobre transferencia zero-shot. El autor lo describe explicitamente como un "working research note" que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y advierte que no debe interpretarse como un paper completado ni como el lanzamiento de un modelo entrenado.
 
 El unico artefacto declarado en la model card son dos ficheros de texto (`paper_notes.md` y `README.md`). El repositorio incluye, no obstante, un fichero de pesos en formato safetensors con 49.600 parametros totales y un tamano de repositorio de 0,0 GB, lo que sugiere un checkpoint de juguete, una inicializacion aleatoria o un artefacto auxiliar sin relacion con un entrenamiento real documentado.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la model card declara explicitamente que el reposito
 - Diseno de protocolos de reproducibilidad: el repositorio insiste en registrar versiones de dataset, comandos, semillas, hardware y logs en crudo, por lo que puede adoptarse como checklist de metodologia en proyectos de investigacion.
 - Analisis de modos de fallo: la nota propone identificar failure modes y preguntas abiertas, util para anticipar por que un experimento de transferencia zero-shot puede dar resultados enganosos.
 - Formacion y docencia: como ejemplo de como estructurar una propuesta de investigacion falsable, separando con claridad hipotesis, plan y resultados.
-- Auditoria de artefactos en HuggingFace: sirve como caso practico de repositorio etiquetado como modelo que en realidad contiene documentacion, util para disenar filtros y validaciones en catalogos internos de modelos.
+- Auditoria de artefactos en Hugging Face: sirve como caso practico de repositorio etiquetado como modelo que en realidad contiene documentacion, util para disenar filtros y validaciones en catalogos internos de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es comparable con modelos de lenguaje de su categoria porque no es un modelo entrenado con capacidades declaradas. Como referencia de formato, comparte el ecosistema de HuggingFace con otros repositorios de notas de investigacion que publican documentacion en lugar de pesos, pero la informacion proporcionada no identifica alternativas concretas con las que contrastarlo.
+No disponible. Este repositorio no es comparable con modelos de lenguaje de su categoria porque no es un modelo entrenado con capacidades declaradas. Como referencia de formato, comparte el ecosistema de Hugging Face con otros repositorios de notas de investigacion que publican documentacion en lugar de pesos, pero la informacion proporcionada no identifica alternativas concretas con las que contrastarlo.
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje de su c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vismirnov04/review-zero-shot-transfer-2023
+- Hugging Face: https://huggingface.co/vismirnov04/review-zero-shot-transfer-2023
 - Ficheros declarados en la model card: `paper_notes.md` (artefacto principal) y `README.md`
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a servicios de consultoria de arquitectura de datos y no guardan relacion con este repositorio.

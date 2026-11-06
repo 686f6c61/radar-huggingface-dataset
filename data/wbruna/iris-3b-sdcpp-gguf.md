@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wbruna/Iris-3b-sdcpp-GGUF` es un repositorio de pesos en formato GGUF publicado por el usuario wbruna en HuggingFace, con licencia Apache 2.0. El recuento de parametros procedente de los tensores originales (safetensors) es de 2.987.511.888 parametros, es decir, aproximadamente 3.000 millones. El repositorio ocupa 2,9 GB en total y fue creado el 16 de octubre de 2026, con una unica actualizacion dos horas despues.
+`wbruna/Iris-3b-sdcpp-GGUF` es un repositorio de pesos en formato GGUF publicado por el usuario wbruna en Hugging Face, con licencia Apache 2.0. El recuento de parametros procedente de los tensores originales (safetensors) es de 2.987.511.888 parametros, es decir, aproximadamente 3.000 millones. El repositorio ocupa 2,9 GB en total y fue creado el 16 de octubre de 2026, con una unica actualizacion dos horas despues.
 
 La model card publicada es practicamente vacia: contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun otro metadato, descripcion, instrucciones de uso ni datos de entrenamiento. No se declara pipeline de inferencia, no se especifican idiomas soportados y no hay informacion sobre la arquitectura interna, la longitud de contexto ni el dataset utilizado. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe retroalimentacion de la comunidad.
 
@@ -32,7 +32,7 @@ No se dispone de datos sobre el entrenamiento: ni el volumen de tokens, ni la co
 ## Capacidades
 
 - No se han documentado capacidades en la model card ni en ningun otro material publico asociado al repositorio.
-- No se declara pipeline de HuggingFace, por lo que no es posible determinar si el modelo realiza generacion de texto, generacion de imagen, transcripcion u otra tarea.
+- No se declara pipeline de Hugging Face, por lo que no es posible determinar si el modelo realiza generacion de texto, generacion de imagen, transcripcion u otra tarea.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -92,7 +92,7 @@ No disponible. Sin conocer la tarea del modelo (texto o imagen) ni disponer de b
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wbruna/Iris-3b-sdcpp-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/wbruna/Iris-3b-sdcpp-GGUF
 - Perfil del autor: https://huggingface.co/wbruna
 - Model card: incluida en el repositorio anterior, sin contenido tecnico mas alla de la licencia
 - Paper, blog, repositorio de codigo o demo: no disponibles

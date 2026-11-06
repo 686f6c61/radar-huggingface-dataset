@@ -81,7 +81,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/mtdit-spatial-relative-joints
+- Modelo en Hugging Face: https://huggingface.co/maskjp/mtdit-spatial-relative-joints
 - Repositorio del plugin: https://github.com/maskjp/lerobot_policy_mtdit_spatial
 - Modelo relacionado (variante con spatial mask): https://huggingface.co/maskjp/mtdit-spatial-multitask-spatial-mask
 - Modelo relacionado (variante con patch tokens): https://huggingface.co/maskjp/mtdit-spatial-multitask-patch-tokens

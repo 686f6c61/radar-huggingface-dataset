@@ -90,7 +90,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ddalcu/Idol-MLX-Serve-fp16
+- Repositorio en Hugging Face: https://huggingface.co/ddalcu/Idol-MLX-Serve-fp16
 - Modelo base: https://huggingface.co/speridlabs/idol
 - mlx-serve (web): https://mlxserve.com/
 - mlx-serve (GitHub): https://github.com/ddalcu/mlx-serve

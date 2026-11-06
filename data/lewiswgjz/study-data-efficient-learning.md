@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lewiswgjz/study-data-efficient-learning` es un repositorio de HuggingFace publicado por el usuario lewiswgjz que, pese a su nombre y a contener pesos en formato safetensors, no constituye un modelo de lenguaje entrenado. La model card lo describe explicitamente como una nota de investigacion exploratoria sobre *data-efficient learning*: recoge el planteamiento de una comparacion, los posibles factores de confusion y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El autor indica de forma explicita que el repositorio no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
+`lewiswgjz/study-data-efficient-learning` es un repositorio de Hugging Face publicado por el usuario lewiswgjz que, pese a su nombre y a contener pesos en formato safetensors, no constituye un modelo de lenguaje entrenado. La model card lo describe explicitamente como una nota de investigacion exploratoria sobre *data-efficient learning*: recoge el planteamiento de una comparacion, los posibles factores de confusion y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. El autor indica de forma explicita que el repositorio no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
 
 El artefacto principal es el fichero `review.md`, no los pesos. Los tensores incluidos en safetensors suman 49.600 parametros totales y el repositorio ocupa aproximadamente 0,0 GB, lo que confirma que se trata de un checkpoint minimo o de prueba, sin utilidad practica para inferencia. No hay pipeline declarado, no se especifican idiomas y las etiquetas (`research-notes`, `data-efficient-learning`) apuntan a un cuaderno de trabajo mas que a un modelo desplegable.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha documenta un artefacto de investigacion abierta con licenc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (segun tag de HuggingFace); sin detalle arquitectonico en la model card |
+| Arquitectura | transformer (segun tag de Hugging Face); sin detalle arquitectonico en la model card |
 | Parametros totales | 49.600 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha documenta un artefacto de investigacion abierta con licenc
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica disponible es el tag `transformer` de HuggingFace; la model card no describe capas, dimensiones ocultas, mecanismo de atencion ni tokenizador. Con 49.600 parametros totales, el checkpoint es varios ordenes de magnitud menor que cualquier transformer utilizable (un modelo de 50.000 parametros no supera un perceptron multicapa de juguete en capacidad expresiva), lo que es coherente con la afirmacion del autor de que no existe un checkpoint entrenado para la tarea descrita.
+La unica informacion arquitectonica disponible es el tag `transformer` de Hugging Face; la model card no describe capas, dimensiones ocultas, mecanismo de atencion ni tokenizador. Con 49.600 parametros totales, el checkpoint es varios ordenes de magnitud menor que cualquier transformer utilizable (un modelo de 50.000 parametros no supera un perceptron multicapa de juguete en capacidad expresiva), lo que es coherente con la afirmacion del autor de que no existe un checkpoint entrenado para la tarea descrita.
 
 Respecto al entrenamiento, la model card no reporta numero de tokens, composicion del dataset, ni fases de RLHF, DPO o SFT. Lo que si documenta son los requisitos que el autor se impone antes de publicar resultados: versiones de dataset, comandos, semillas, hardware y logs en bruto. Las secciones marcadas como planes o hipotesis, segun el propio autor, no deben interpretarse como resultados experimentales. No se describe ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, SSM hibrido, etc.).
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, la model card no reporta numero de tokens, composicio
 - Referencia metodologica para disenar experimentos de eficiencia de datos: el `review.md` enumera el alcance de la pregunta de investigacion, los factores de confusion probables y una comparacion propuesta con baselines emparejados, util como plantilla de pre-registro antes de lanzar experimentos.
 - Revision de criterios de reproducibilidad: la model card exige versiones de dataset, comandos, semillas, hardware y logs en bruto para cualquier resultado futuro, lo que sirve como checklist en equipos que publican estudios de ablacion.
 - Material de discusion en seminarios de investigacion: las secciones marcadas como planes o hipotesis pueden usarse para ensenar a distinguir entre propuesta y evidencia empirica.
-- Auditoria de repositorios de HuggingFace: este caso ilustra como un repositorio etiquetado como modelo puede contener unicamente notas, lo que resulta util para formar criterio al evaluar artefactos antes de integrarlos en pipelines.
+- Auditoria de repositorios de Hugging Face: este caso ilustra como un repositorio etiquetado como modelo puede contener unicamente notas, lo que resulta util para formar criterio al evaluar artefactos antes de integrarlos en pipelines.
 - Verificacion de referencias y datasets propuestos: la nota incluye referencias y datasets candidatos que el autor presenta como punto de partida para verificacion, no como evidencia de que el estudio se haya ejecutado.
 - Formacion en gestion de licencias: el propio autor advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se usa con datasets externos, un escenario habitual en proyectos de investigacion con licencia MIT sobre el codigo pero no sobre los datos.
 
@@ -68,12 +68,12 @@ No disponible. No se identifican modelos comparables en la informacion proporcio
 - Ausencia total de datos de entrenamiento, tokenizador, configuracion de contexto e idiomas, lo que impide cualquier evaluacion tecnica.
 - Las secciones de la nota etiquetadas como planes o hipotesis no son resultados; citarlas como hallazgos constituiria un error de atribucion.
 - Licencia MIT sobre el repositorio, pero el autor advierte de que los terminos de los datos de origen deben revisarse por separado si se combina con datasets externos.
-- Riesgo de confusion al aparecer indexado como modelo en HuggingFace con tags de transformer y safetensors: conviene verificar la model card antes de cualquier integracion automatizada.
+- Riesgo de confusion al aparecer indexado como modelo en Hugging Face con tags de transformer y safetensors: conviene verificar la model card antes de cualquier integracion automatizada.
 - Sin senales de mantenimiento: 0 descargas, 0 likes, creado y actualizado en la misma fecha (2026-11-05), sin pipeline declarado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lewiswgjz/study-data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/lewiswgjz/study-data-efficient-learning
 - Artefacto principal citado en la model card: `review.md` (dentro del repositorio)
 - Documentacion citada en la model card: `README.md` (dentro del repositorio)
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

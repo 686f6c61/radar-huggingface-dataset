@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks del adaptador que permitan una comparación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lukeecho/shibboleth-qwen38-27b-lora
+- Hugging Face: https://huggingface.co/lukeecho/shibboleth-qwen38-27b-lora
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio de Qwen: no disponible en la información proporcionada
 - Paper o blog del proyecto: no disponible en la información proporcionada

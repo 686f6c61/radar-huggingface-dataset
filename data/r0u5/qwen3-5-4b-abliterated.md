@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-abliterated es una versión "abliterada" (sin dirección de rechazo) de Qwen3.5-4B, el modelo base de Qwen, publicada por el usuario R0U5 en HuggingFace. La abliteración es una técnica que elimina la dirección interna que provoca los rechazos de seguridad del modelo, permitiendo que responda a prompts que el modelo original declinaría. En este caso se ha utilizado el toolkit `lethe` con abliteración optimizada: direcciones de rechazo por capa y kernels de fuerza por capa, ajustados mediante 100 pruebas de Optuna TPE.
+Qwen3.5-4B-abliterated es una versión "abliterada" (sin dirección de rechazo) de Qwen3.5-4B, el modelo base de Qwen, publicada por el usuario R0U5 en Hugging Face. La abliteración es una técnica que elimina la dirección interna que provoca los rechazos de seguridad del modelo, permitiendo que responda a prompts que el modelo original declinaría. En este caso se ha utilizado el toolkit `lethe` con abliteración optimizada: direcciones de rechazo por capa y kernels de fuerza por capa, ajustados mediante 100 pruebas de Optuna TPE.
 
 El modelo conserva la arquitectura y el tamaño del original (unos 4.200 millones de parámetros) y se distribuye en formato GGUF listo para llama.cpp y Ollama, con cuantizaciones Q4_K_M, Q5_K_M y Q8_0. Su interés es doble: por un lado, sirve como modelo sin restricciones de rechazo para investigación y casos de uso legítimos; por otro, su model card documenta con rigor metodológico cómo medir correctamente la tasa de rechazo tras la abliteración, algo que muchas publicaciones similares omiten. Cabe destacar un problema importante de plantilla de chat (el bloque de thinking debe desactivarse explícitamente) que se detalla en Limitaciones.
 
@@ -58,7 +58,7 @@ Divergencia KL respecto al modelo base en prompts benignos: 0,0727. La model car
 - VRAM estimada para inferencia: ~2,7 GB con Q4_K_M, ~3,1 GB con Q5_K_M y ~4,5 GB con Q8_0, mas overhead de contexto (el README recomienda num_ctx 32768 en Ollama).
 - GPUs recomendadas: cualquier GPU consumer con 6-8 GB o mas (RTX 3060, RTX 4060 Ti, RTX 4070) para Q4_K_M/Q5_K_M; para Q8_0 conviene 8 GB o mas. No se requiere A100 ni H100.
 - Cabe sobradamente en GPUs consumer; tambien es viable en CPU pura via llama.cpp, con latencia proporcionalmente mayor (no se publican cifras).
-- Opciones de despliegue: llama.cpp (`llama-server` con `--jinja --reasoning off`), Ollama (con Modelfile y reasoning desactivado), y transformers de HuggingFace con los pesos originales.
+- Opciones de despliegue: llama.cpp (`llama-server` con `--jinja --reasoning off`), Ollama (con Modelfile y reasoning desactivado), y transformers de Hugging Face con los pesos originales.
 - Latencia y throughput: no disponible; al ser un modelo de 4 B en GGUF cuantizado, se espera inferencia rapida en GPU consumer, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -84,5 +84,5 @@ No hay mas alternativas comparables documentadas en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/R0U5/Qwen3.5-4B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/R0U5/Qwen3.5-4B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

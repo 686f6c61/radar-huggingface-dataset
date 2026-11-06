@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Korob956/Caremanager` es un modelo alojado en HuggingFace, creado por el usuario `Korob956` el 3 de septiembre de 2026. No se dispone de documentacion tecnica, descripcion, pipeline ni metadatos que permitan determinar su arquitectura, tamano o proposito. El unico dato relevante es su licencia, marcada como `llama3.1`, lo que indica que se trata de un modelo derivado de Llama 3.1 o que utiliza su licencia comunitaria. Sin embargo, no hay informacion sobre el proceso de entrenamiento, los datos utilizados ni las capacidades del modelo.
+El repositorio `Korob956/Caremanager` es un modelo alojado en Hugging Face, creado por el usuario `Korob956` el 3 de septiembre de 2026. No se dispone de documentacion tecnica, descripcion, pipeline ni metadatos que permitan determinar su arquitectura, tamano o proposito. El unico dato relevante es su licencia, marcada como `llama3.1`, lo que indica que se trata de un modelo derivado de Llama 3.1 o que utiliza su licencia comunitaria. Sin embargo, no hay informacion sobre el proceso de entrenamiento, los datos utilizados ni las capacidades del modelo.
 
 El modelo no ha recibido descargas ni likes, y no se ha publicado ninguna model card con contenido mas alla del frontmatter de licencia. Por tanto, no es posible realizar una evaluacion tecnica ni recomendar su uso en ningun escenario sin una investigacion adicional. Cualquier aplicacion en produccion requeriria una validacion previa exhaustiva.
 
@@ -60,4 +60,4 @@ No disponible. No se dispone de informacion suficiente sobre el modelo para comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Korob956/Caremanager
+- Hugging Face: https://huggingface.co/Korob956/Caremanager

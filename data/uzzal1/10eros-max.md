@@ -2,9 +2,9 @@
 
 ## Resumen
 
-10Eros-Max es un ajuste fino (finetune) del modelo MiniMax-H3 de MiniMaxAI, publicado por el usuario uzzal1 en HuggingFace. Se trata de un modelo de generación de vídeo a partir de texto e imagen (text-to-video e image-text-to-video), según declara la pipeline del repositorio. El modelo hereda la arquitectura y las capacidades del modelo base MiniMax-H3, sobre el que se ha realizado un entrenamiento adicional del que no se especifican detalles en la información disponible.
+10Eros-Max es un ajuste fino (finetune) del modelo MiniMax-H3 de MiniMaxAI, publicado por el usuario uzzal1 en Hugging Face. Se trata de un modelo de generación de vídeo a partir de texto e imagen (text-to-video e image-text-to-video), según declara la pipeline del repositorio. El modelo hereda la arquitectura y las capacidades del modelo base MiniMax-H3, sobre el que se ha realizado un entrenamiento adicional del que no se especifican detalles en la información disponible.
 
-El repositorio tiene un tamaño de 548,8 GB, lo que es coherente con un modelo de difusión para vídeo de gran escala con pesos en precisión completa. El acceso está restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos. La licencia aplicable es la MiniMax-H3 Community License Agreement, no una licencia open source estándar.
+El repositorio tiene un tamaño de 548,8 GB, lo que es coherente con un modelo de difusión para vídeo de gran escala con pesos en precisión completa. El acceso está restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos. La licencia aplicable es la MiniMax-H3 Community License Agreement, no una licencia open source estándar.
 
 La relevancia de este modelo es limitada y debe evaluarse con cautela: no tiene descargas ni likes, fue creado y actualizado en la misma fecha (26 de octubre de 2026), y no se han publicado resultados de benchmarks, datos de entrenamiento ni documentación técnica más allá de los metadatos del repositorio. La información disponible no permite verificar la calidad del ajuste fino ni su comportamiento frente al modelo base.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 10Eros-Max | no disponible | no disponible | MiniMax-H3 Community License Agreement | Gated en HuggingFace |
+| 10Eros-Max | no disponible | no disponible | MiniMax-H3 Community License Agreement | Gated en Hugging Face |
 | MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | MiniMax-H3 Community License Agreement | Repositorio oficial de MiniMaxAI |
 | Otros finetunes de MiniMax-H3 | no disponible | no disponible | Según cada autor | No disponible |
 
@@ -75,12 +75,12 @@ La información proporcionada no incluye datos de rendimiento ni especificacione
 - Riesgo de alucinación visual: como modelo generativo de vídeo, puede producir contenido incoherente, artefactos temporales o escenas que no corresponden al prompt; no se ha documentado ninguna mitigación.
 - Sesgos desconocidos: al no especificarse la composición del dataset de ajuste fino, no se pueden evaluar sesgos demográficos, culturales o de representación.
 - Licencia restrictiva: la MiniMax-H3 Community License Agreement no es una licencia open source; es imprescindible revisar sus términos antes de cualquier uso comercial o redistribución.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que añade una dependencia de aprobación para su uso.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que añade una dependencia de aprobación para su uso.
 - Idiomas no declarados: se desconoce qué idiomas soportan los prompts de texto.
 - Reputación del autor no verificable: el repositorio no tiene descargas ni likes y fue publicado y actualizado en la misma fecha, sin historial que permita evaluar su fiabilidad.
 - Tamaño del repositorio: 548,8 GB implican requisitos de almacenamiento y ancho de banda considerables, además de una infraestructura de inferencia no trivial.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/uzzal1/10Eros-Max
+- Hugging Face: https://huggingface.co/uzzal1/10Eros-Max
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3

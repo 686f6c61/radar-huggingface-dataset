@@ -96,6 +96,6 @@ No se han identificado en la informacion disponible alternativas de otros autore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prahaladha/hima-tts-nano-te-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Prahaladha/hima-tts-nano-te-mlx-8bit
 - Modelo base: https://huggingface.co/Prahaladha/hima-tts-nano-te
 - Variante float16: https://huggingface.co/Prahaladha/hima-tts-nano-te-mlx-fp16

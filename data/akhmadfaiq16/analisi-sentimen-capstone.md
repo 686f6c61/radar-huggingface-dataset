@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`AkhmadFaiq16/analisi-sentimen-capstone` es un modelo de clasificación de texto publicado en HuggingFace por el usuario AkhmadFaiq16. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura BERT (etiqueta `bert` en los tags) con 124.442.882 parámetros, lo que corresponde al tamaño estándar de un BERT-base. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) orientado al análisis de sentimiento, presumiblemente como parte de un proyecto capstone (proyecto final de un programa formativo).
+`AkhmadFaiq16/analisi-sentimen-capstone` es un modelo de clasificación de texto publicado en Hugging Face por el usuario AkhmadFaiq16. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura BERT (etiqueta `bert` en los tags) con 124.442.882 parámetros, lo que corresponde al tamaño estándar de un BERT-base. El nombre del repositorio sugiere que se trata de un ajuste fino (fine-tuning) orientado al análisis de sentimiento, presumiblemente como parte de un proyecto capstone (proyecto final de un programa formativo).
 
 El modelo está etiquetado con el pipeline `text-classification` y la librería `transformers`, y los pesos se distribuyen en formato `safetensors`. El repositorio tiene un tamaño de 0,5 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, lo que indica que es un modelo recién publicado y sin tracción en la comunidad.
 
-La relevancia de este modelo es limitada en el panorama actual: se trata de un ajuste fino de BERT para una tarea concreta de clasificación de sentimiento, sin model card sustantiva (la existente es la plantilla autogenerada por HuggingFace y no contiene información específica). No se dispone de información sobre los datos de entrenamiento, el idioma, la licencia ni los resultados de evaluación.
+La relevancia de este modelo es limitada en el panorama actual: se trata de un ajuste fino de BERT para una tarea concreta de clasificación de sentimiento, sin model card sustantiva (la existente es la plantilla autogenerada por Hugging Face y no contiene información específica). No se dispone de información sobre los datos de entrenamiento, el idioma, la licencia ni los resultados de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -23,9 +23,9 @@ La relevancia de este modelo es limitada en el panorama actual: se trata de un a
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a BERT, un transformer encoder bidireccional introducido por Devlin et al. (2019). Con 124.442.882 parámetros, el modelo coincide con la configuración estándar de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención), aunque no se confirma explícitamente en la información disponible. El tag `bert` en los metadatos de HuggingFace respalda esta clasificación.
+La arquitectura corresponde a BERT, un transformer encoder bidireccional introducido por Devlin et al. (2019). Con 124.442.882 parámetros, el modelo coincide con la configuración estándar de BERT-base (12 capas, 768 dimensiones ocultas, 12 cabezas de atención), aunque no se confirma explícitamente en la información disponible. El tag `bert` en los metadatos de Hugging Face respalda esta clasificación.
 
-No se dispone de información sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas de ajuste fino supervisado, RLHF o DPO. La model card es la plantilla autogenerada por HuggingFace y todos los campos relevantes aparecen como `[More Information Needed]`. El nombre del repositorio sugiere un ajuste fino para análisis de sentimiento, pero no hay documentación que lo confirme ni que detalle la metodología.
+No se dispone de información sobre el proceso de entrenamiento: ni el número de tokens, ni la composición del dataset, ni si se aplicaron técnicas de ajuste fino supervisado, RLHF o DPO. La model card es la plantilla autogenerada por Hugging Face y todos los campos relevantes aparecen como `[More Information Needed]`. El nombre del repositorio sugiere un ajuste fino para análisis de sentimiento, pero no hay documentación que lo confirme ni que detalle la metodología.
 
 ## Capacidades
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AkhmadFaiq16/analisi-sentimen-capstone | 124,4 M | no disponible | Clasificación de texto / sentimiento | no disponible | HuggingFace |
-| `nlptown/bert-base-multilingual-uncased-sentiment` | ~178 M | 512 tokens | Análisis de sentimiento multilingüe (1-5 estrellas) | MIT (según su model card pública) | HuggingFace |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | Análisis de sentimiento en redes sociales | no disponible en la información de esta ficha | HuggingFace |
-| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Clasificación de sentimiento binaria (SST-2) | Apache 2.0 (según su model card pública) | HuggingFace |
+| AkhmadFaiq16/analisi-sentimen-capstone | 124,4 M | no disponible | Clasificación de texto / sentimiento | no disponible | Hugging Face |
+| `nlptown/bert-base-multilingual-uncased-sentiment` | ~178 M | 512 tokens | Análisis de sentimiento multilingüe (1-5 estrellas) | MIT (según su model card pública) | Hugging Face |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | Análisis de sentimiento en redes sociales | no disponible en la información de esta ficha | Hugging Face |
+| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Clasificación de sentimiento binaria (SST-2) | Apache 2.0 (según su model card pública) | Hugging Face |
 
 La comparativa se basa en modelos de la misma categoría (clasificación de sentimiento basada en BERT/RoBERTa). No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posible comparar métricas de calidad.
 
 ## Limitaciones y advertencias
 
-- Model card vacía: la documentación es la plantilla autogenerada de HuggingFace, sin información sobre datos, metodología, evaluación ni uso previsto.
+- Model card vacía: la documentación es la plantilla autogenerada de Hugging Face, sin información sobre datos, metodología, evaluación ni uso previsto.
 - Licencia no especificada: no se puede confirmar si el uso comercial está permitido; es imprescindible contactar con el autor antes de cualquier despliegue en producción.
 - Idioma y dominio desconocidos: no se confirma en qué idioma ni sobre qué corpus fue entrenado; el nombre sugiere indonesio ("analisi sentimen" en indonesio/malayo), pero no está verificado.
 - Sesgos desconocidos: al no documentarse los datos de entrenamiento, no es posible evaluar sesgos demográficos, culturales o de dominio.
@@ -83,7 +83,7 @@ La comparativa se basa en modelos de la misma categoría (clasificación de sent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AkhmadFaiq16/analisi-sentimen-capstone
+- Modelo en Hugging Face: https://huggingface.co/AkhmadFaiq16/analisi-sentimen-capstone
 - Paper de BERT (referencia de arquitectura): https://arxiv.org/abs/1810.04805
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

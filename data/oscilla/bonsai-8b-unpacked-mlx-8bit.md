@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su eficiencia: al ser una versión cuanti
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada en la información proporcionada. Los tags de HuggingFace indican que el modelo base es `prism-ml/Bonsai-8B-unpacked` y que pertenece a la familia Qwen3, lo que sugiere una arquitectura transformer estándar con atención de múltiples cabezas y capas de normalización, pero sin confirmación oficial. El nombre "unpacked" probablemente se refiere a que los pesos están desempaquetados (sin empaquetado de cuantización) en el modelo original, mientras que esta versión MLX aplica una cuantización de 8 bits.
+La arquitectura exacta no está documentada en la información proporcionada. Los tags de Hugging Face indican que el modelo base es `prism-ml/Bonsai-8B-unpacked` y que pertenece a la familia Qwen3, lo que sugiere una arquitectura transformer estándar con atención de múltiples cabezas y capas de normalización, pero sin confirmación oficial. El nombre "unpacked" probablemente se refiere a que los pesos están desempaquetados (sin empaquetado de cuantización) en el modelo original, mientras que esta versión MLX aplica una cuantización de 8 bits.
 
 No se dispone de información sobre el proceso de entrenamiento del modelo base: ni el número de tokens, ni la composición del dataset, ni si se utilizaron técnicas de RLHF o DPO. La única información disponible es que el modelo fue convertido a formato MLX mediante la herramienta `mlx-lm` en su versión 0.31.2, un proceso que no modifica los pesos sino que los reempaqueta y cuantiza para optimizar la inferencia en hardware Apple.
 
@@ -72,7 +72,7 @@ Dado que no se dispone de benchmarks ni de especificaciones detalladas de otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Bonsai-8B-unpacked-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Bonsai-8B-unpacked-mlx-8Bit
 - Modelo base (prism-ml/Bonsai-8B-unpacked): https://huggingface.co/prism-ml/Bonsai-8B-unpacked
 - Otra conversión MLX 1-bit: https://huggingface.co/prism-ml/Bonsai-8B-mlx-1bit
 - Documentación oficial de Bonsai 8B: https://docs.prismml.com/models/bonsai-8b

@@ -57,4 +57,4 @@ No disponible. Sin datos sobre parametros, arquitectura o rendimiento, no es pos
 - La falta de informacion sobre el dataset de entrenamiento y la arquitectura hace imposible auditar el modelo, un requisito critico en el sector financiero regulado.
 
 ## Enlaces
-- [HuggingFace - Roy229/huggingface_terminal_notion_official_3556_66a14697_model_fraud-detector](https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_fraud-detector)
+- [Hugging Face - Roy229/huggingface_terminal_notion_official_3556_66a14697_model_fraud-detector](https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_fraud-detector)

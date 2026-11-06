@@ -78,5 +78,5 @@ La comparativa es estructural, ya que no hay datos de rendimiento para Ivis-400M
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/nepetai/ivis-400m-gpu)
+- [Repositorio en Hugging Face](https://huggingface.co/nepetai/ivis-400m-gpu)
 - No se han encontrado otros enlaces (papers, blogs, repos externos) en la información disponible.

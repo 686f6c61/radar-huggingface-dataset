@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JigSawPT/DeepSeek-V4.1-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/JigSawPT/DeepSeek-V4.1-Flash-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Rama del port: https://github.com/JigSawPT/llama.cpp
 - Informe técnico y resultados negativos: https://github.com/JigSawPT/deepseek-v41-flash-on-5090

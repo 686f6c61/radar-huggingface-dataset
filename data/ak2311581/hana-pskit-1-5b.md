@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hana es un ajuste fino del modelo Qwen2.5-1.5B-Instruct, desarrollado por Asif Khan (usuario de HuggingFace ak2311581), concebido como asistente especializado de pskit studio, la interfaz web de py-serverless-kit. El modelo responde preguntas sobre la herramienta, guía al usuario en el terminal y en el editor de código, y actúa como agente capaz de leer el proyecto, proponer un plan, modificar `pskit.yml` y el código de los handlers, y verificar el resultado mediante `validate` y una invocación local.
+Hana es un ajuste fino del modelo Qwen2.5-1.5B-Instruct, desarrollado por Asif Khan (usuario de Hugging Face ak2311581), concebido como asistente especializado de pskit studio, la interfaz web de py-serverless-kit. El modelo responde preguntas sobre la herramienta, guía al usuario en el terminal y en el editor de código, y actúa como agente capaz de leer el proyecto, proponer un plan, modificar `pskit.yml` y el código de los handlers, y verificar el resultado mediante `validate` y una invocación local.
 
 Se trata de un modelo denso de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones), construido sobre la arquitectura Qwen2 con una ventana de contexto empleada en entrenamiento de 4.096 tokens. El ajuste se realizó en dos etapas LoRA fusionadas: primero conocimiento de pskit (documentación, CLI, studio, configuración) y después uso de herramientas sobre tareas reales, con un 25 % de repetición de datos de la primera etapa para evitar olvido catastrófico.
 
@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hana (este modelo) | 1,54B | 4.096 en entrenamiento | Asistente de dominio pskit con tool calling cerrado | Apache-2.0 | HuggingFace (safetensors y GGUF) |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 (nativo del base) | Asistente generalista | Apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | 1,54B | 32.768 | Generacion de codigo | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 | Asistente generalista | Llama 3.2 Community License | HuggingFace |
+| Hana (este modelo) | 1,54B | 4.096 en entrenamiento | Asistente de dominio pskit con tool calling cerrado | Apache-2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 (nativo del base) | Asistente generalista | Apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1,54B | 32.768 | Generacion de codigo | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 | Asistente generalista | Llama 3.2 Community License | Hugging Face |
 
 La comparación con el modelo base es la más directa: Hana sacrifica generalidad y ventana de contexto a cambio de precisión en un dominio y un conjunto de herramientas concretos. Frente a Qwen2.5-Coder-1.5B-Instruct, Hana no está optimizada para generación de código genérica sino para editar configuración y handlers dentro de un flujo agéntico verificado. Los datos de rendimiento de los modelos comparables en las tareas específicas de Hana no están disponibles.
 
@@ -102,7 +102,7 @@ La comparación con el modelo base es la más directa: Hana sacrifica generalida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ak2311581/hana-pskit-1.5b
+- Modelo en Hugging Face: https://huggingface.co/ak2311581/hana-pskit-1.5b
 - GGUF para llama.cpp / Ollama / Docker: https://huggingface.co/ak2311581/hana-pskit-1.5b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - py-serverless-kit en PyPI: https://pypi.org/project/py-serverless-kit/

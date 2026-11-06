@@ -75,7 +75,7 @@ Las diferencias de formato en la salida (etiquetas `<value>` en mixed-3-5, bloqu
 - GPU: la conversión se realizó sobre una NVIDIA GB10 (spark-d500) con la rueda CUDA 13 de mlx, lo que confirma ejecución en ese entorno. Para BF16 encajan GPUs de 24 GB o más (RTX 3090, RTX 4090, A100 40/80 GB, H100) con margen ajustado en las de 24 GB si se usa contexto largo.
 - GPU de consumo: un RTX 4090 o RTX 3090 de 24 GB puede cargar los pesos BF16, pero el contexto largo queda limitado por la caché KV. En GPUs de 16 GB no cabe en BF16 sin cuantizar.
 - Apple Silicon: es el destino natural de MLX. Con 18,8 GB de pesos BF16 se recomienda memoria unificada de 32 GB o más; los builds mixtos del mismo autor (4 bits de ancho base) bajarían el requisito a la franja de 16-24 GB, estimación no confirmada en la documentación.
-- Despliegue: mlx-vlm es el único runtime documentado, con el ejemplo de `load` + `apply_chat_template` + `generate`. No se incluyen pesos GGUF ni safetensors en formato HuggingFace estándar, por lo que vLLM, TGI, llama.cpp u Ollama requerirían una conversión no incluida en este repositorio.
+- Despliegue: mlx-vlm es el único runtime documentado, con el ejemplo de `load` + `apply_chat_template` + `generate`. No se incluyen pesos GGUF ni safetensors en formato Hugging Face estándar, por lo que vLLM, TGI, llama.cpp u Ollama requerirían una conversión no incluida en este repositorio.
 - Latencia y throughput: no disponibles. La model card indica expresamente que no se reportan tasas de decodificación ni memoria pico, porque la llamada BF16 fue en frío y las salidas posteriores fueron de 3 a 64 tokens.
 
 ## Comparativa con modelos similares
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-bf16
+- Repositorio en Hugging Face: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-bf16
 - Checkpoint de origen: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo base del ajuste: https://huggingface.co/Qwen/Qwen3.5-9B
 - Registro del smoke test: `smoke-results.json`, incluido en el repositorio del autor

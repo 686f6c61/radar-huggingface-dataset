@@ -85,8 +85,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 
 | Modelo | Tarea | Metodo | Semillas | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `sim-square-broad-r03-auto-plain-il-n1-idql` (este) | sim-square-broad | IDQL (actor de difusión + crítico IQL) | 5 | 150.000 rollouts, éxito medio 46,91 % | MIT | HuggingFace |
-| `mulligan/sim-square-broad-r02-auto-iql-n32-idql` | sim-square-broad | IDQL | no disponible | no disponible en la información recogida | no disponible | HuggingFace |
+| `sim-square-broad-r03-auto-plain-il-n1-idql` (este) | sim-square-broad | IDQL (actor de difusión + crítico IQL) | 5 | 150.000 rollouts, éxito medio 46,91 % | MIT | Hugging Face |
+| `mulligan/sim-square-broad-r02-auto-iql-n32-idql` | sim-square-broad | IDQL | no disponible | no disponible en la información recogida | no disponible | Hugging Face |
 | Brazos `auto-bc-n1` (datasets `c01`) | sim-square-broad | Behavior cloning | no disponible | no disponible | no disponible | Solo como datasets de rollouts |
 
 No se dispone de datos comparativos de parámetros, contexto ni rendimiento frente a políticas de terceros; la información encontrada se limita a otros artefactos de la propia campaña Mulligan.
@@ -106,8 +106,8 @@ No se dispone de datos comparativos de parámetros, contexto ni rendimiento fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-auto-plain-il-n1-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-auto-plain-il-n1-idql
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

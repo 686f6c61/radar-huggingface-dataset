@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos para este c
 
 ## Enlaces
 
-- [HuggingFace - ImKyungjin/pi0-stackcube-two-focus-noise-30pct-40ep](https://huggingface.co/ImKyungjin/pi0-stackcube-two-focus-noise-30pct-40ep)
+- [Hugging Face - ImKyungjin/pi0-stackcube-two-focus-noise-30pct-40ep](https://huggingface.co/ImKyungjin/pi0-stackcube-two-focus-noise-30pct-40ep)
 - [Repositorio openpi de Physical Intelligence](https://github.com/Physical-Intelligence/openpi)
 - [Blog de Physical Intelligence sobre π₀](https://www.physicalintelligence.company/blog/pi0)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)

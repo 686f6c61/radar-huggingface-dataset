@@ -109,7 +109,7 @@ Las alternativas comparables de la misma categoria y tamano (modelos de 0,5 B) n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devseis/endpoint-auditor-0.5b-q4f32_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/Devseis/endpoint-auditor-0.5b-q4f32_1-MLC
 - Modelo (referencia general v0.1): https://huggingface.co/Devseis/endpoint-auditor-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Devseis/endpoint-auditor-synthetic

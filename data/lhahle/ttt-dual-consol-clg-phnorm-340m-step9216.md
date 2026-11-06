@@ -76,5 +76,5 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lhahle/ttt-dual-consol-clg-phnorm-340M-step9216
+- Modelo en Hugging Face: https://huggingface.co/lhahle/ttt-dual-consol-clg-phnorm-340M-step9216
 - Articulo de referencia sobre TTT: https://arxiv.org/html/2407.04620v1

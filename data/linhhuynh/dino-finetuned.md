@@ -68,8 +68,8 @@ No se puede realizar una comparativa significativa porque el modelo no está ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LinhHuynh/dino-finetuned
+- Modelo en Hugging Face: https://huggingface.co/LinhHuynh/dino-finetuned
 - Repositorio oficial de DINO (Facebook Research): https://github.com/facebookresearch/dino
-- Documentación de DINOv2 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/dinov2
+- Documentación de DINOv2 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/dinov2
 - Ejemplo de notebook DINO (Lightly): https://colab.research.google.com/github/lightly-ai/lightly/blob/master/examples/notebooks/pytorch_lightning_distributed/dino.ipynb
 - Tutorial de fine-tuning DINOv2 (Kili): https://colab.research.google.com/github/kili-technology/kili-python-sdk/blob/main/recipes/finetuning_dinov2.ipynb

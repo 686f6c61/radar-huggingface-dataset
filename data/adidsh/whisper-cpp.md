@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene los modelos Whisper de OpenAI convertidos al formato ggml para su uso con la implementacion whisper.cpp de Georgi Gerganov. Lo publica el usuario adidsh bajo licencia MIT y la etiqueta de pipeline automatic-speech-recognition. Se trata, por tanto, de una copia espejo de los pesos que el proyecto original whisper.cpp distribuye en su propio repositorio de HuggingFace, no de un modelo entrenado desde cero por el autor.
+Este repositorio contiene los modelos Whisper de OpenAI convertidos al formato ggml para su uso con la implementacion whisper.cpp de Georgi Gerganov. Lo publica el usuario adidsh bajo licencia MIT y la etiqueta de pipeline automatic-speech-recognition. Se trata, por tanto, de una copia espejo de los pesos que el proyecto original whisper.cpp distribuye en su propio repositorio de Hugging Face, no de un modelo entrenado desde cero por el autor.
 
 El interes practico de estos pesos radica en que permiten ejecutar reconocimiento automatico del habla (ASR) de forma local y muy eficiente sobre CPU, sin dependencia de frameworks de deep learning pesados. El repositorio agrupa las variantes tiny, base, small, medium, large-v1, large-v2, large-v3 y large-v3-turbo, tanto en version multilingue como en version solo-ingles (.en), y ofrece varias cuantizaciones para reducir el consumo de memoria.
 
@@ -109,8 +109,8 @@ Las cifras de tamano de las alternativas no estan confirmadas en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adidsh/whisper.cpp
-- Repositorio canonico de pesos en HuggingFace: https://huggingface.co/ggerganov/whisper.cpp/tree/main
+- Repositorio en Hugging Face: https://huggingface.co/adidsh/whisper.cpp
+- Repositorio canonico de pesos en Hugging Face: https://huggingface.co/ggerganov/whisper.cpp/tree/main
 - Repositorio whisper.cpp en GitHub (modelos): https://github.com/ggerganov/whisper.cpp/tree/master/models
 - Repositorio principal de whisper.cpp: https://github.com/ggerganov/whisper.cpp
 - Pesos originales de OpenAI Whisper: https://github.com/openai/whisper

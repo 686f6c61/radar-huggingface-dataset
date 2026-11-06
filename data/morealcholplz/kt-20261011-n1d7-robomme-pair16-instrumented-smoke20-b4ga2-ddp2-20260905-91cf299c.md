@@ -86,7 +86,7 @@ No hay datos suficientes para una comparativa técnica fiable. Se incluye una co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b4ga2-ddp2-20260905-91cf299c
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b4ga2-ddp2-20260905-91cf299c
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Repositorio hermano con enfoque TTT persistente sobre RoboMME: https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4
 - Fichero de manifiesto de la copia: `BACKUP_MANIFEST.json` (mencionado en la model card, sin URL pública disponible)

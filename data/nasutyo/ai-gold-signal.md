@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nasutyo/ai-gold-signal` es un repositorio alojado en HuggingFace, publicado por el usuario `nasutyo`, con licencia MIT y etiquetado únicamente con `license:mit` y `region:us`. El repositorio se creó y se actualizó por última vez el 29 de septiembre de 2026, y en el momento de la consulta registra 0 descargas y 0 "me gusta". No declara ningún pipeline de HuggingFace (text-generation, text-classification, etc.), lo que implica que la plataforma no lo reconoce como un modelo ejecutable de un tipo concreto.
+`nasutyo/ai-gold-signal` es un repositorio alojado en Hugging Face, publicado por el usuario `nasutyo`, con licencia MIT y etiquetado únicamente con `license:mit` y `region:us`. El repositorio se creó y se actualizó por última vez el 29 de septiembre de 2026, y en el momento de la consulta registra 0 descargas y 0 "me gusta". No declara ningún pipeline de Hugging Face (text-generation, text-classification, etc.), lo que implica que la plataforma no lo reconoce como un modelo ejecutable de un tipo concreto.
 
 La model card pública no contiene ningún contenido técnico: únicamente el bloque YAML con la licencia MIT y el cuerpo vacío. No hay información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, tokenizador ni formato de pesos. Tampoco se han encontrado en la búsqueda web referencias a este repositorio específico: los resultados obtenidos corresponden a productos comerciales no relacionados, como el indicador Zistilo AI Gold para MetaTrader 5 o el panel SaaS `hailong2107/ai-gold-signal` de GitHub, que no guardan relación verificable con este repositorio.
 
@@ -73,7 +73,7 @@ No disponible. No se ha identificado ningún modelo comparable, dado que no se c
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: la model card está vacía y no hay ficha técnica, ejemplos ni instrucciones de uso.
-- Pipeline no declarado: HuggingFace no clasifica el artefacto, lo que impide saber si es un modelo, un dataset o un recurso auxiliar.
+- Pipeline no declarado: Hugging Face no clasifica el artefacto, lo que impide saber si es un modelo, un dataset o un recurso auxiliar.
 - Sin señales de validación externa: 0 descargas y 0 "me gusta" en el momento de la consulta; no hay evidencia de uso o replicación por terceros.
 - Riesgo de interpretación errónea: el nombre `ai-gold-signal` puede llevar a asumir que se trata de un sistema de señales de trading listo para producción, extremo que no está respaldado por ningún dato publicado.
 - Riesgo financiero: si el proyecto se orienta a señales sobre oro (XAU/USD), su uso en decisiones de inversión conlleva riesgo de pérdida de capital y no debe considerarse asesoramiento financiero.
@@ -83,7 +83,7 @@ No disponible. No se ha identificado ningún modelo comparable, dado que no se c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nasutyo/ai-gold-signal
+- Repositorio en Hugging Face: https://huggingface.co/nasutyo/ai-gold-signal
 - Zistilo AI Gold (indicador para MetaTrader 5, no relacionado): https://www.mql5.com/en/market/product/173012
 - Repositorio GitHub `hailong2107/ai-gold-signal` (proyecto independiente, no relacionado): https://github.com/hailong2107/ai-gold-signal
 - GoldTracker.ai (servicio comercial, no relacionado): https://www.goldtracker.ai/

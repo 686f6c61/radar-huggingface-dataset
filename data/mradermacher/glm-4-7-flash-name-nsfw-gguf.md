@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una colección de cuantizaciones GGUF del modelo `2048lr/GLM-4.7-Flash-Name-NSFW`, un ajuste fino de tipo NSFW derivado de la familia GLM-4.7-Flash. El trabajo de cuantización lo firma mradermacher, un autor conocido en HuggingFace por publicar versiones GGUF de centenares de modelos, mientras que el modelo original lo publica el usuario `2048lr`. El resultado es un modelo de aproximadamente 29.943.393.920 parámetros (unos 29,9 mil millones) que puede ejecutarse en hardware de consumo mediante llama.cpp y derivados, sin necesidad de infraestructura de servidor.
+Este repositorio contiene una colección de cuantizaciones GGUF del modelo `2048lr/GLM-4.7-Flash-Name-NSFW`, un ajuste fino de tipo NSFW derivado de la familia GLM-4.7-Flash. El trabajo de cuantización lo firma mradermacher, un autor conocido en Hugging Face por publicar versiones GGUF de centenares de modelos, mientras que el modelo original lo publica el usuario `2048lr`. El resultado es un modelo de aproximadamente 29.943.393.920 parámetros (unos 29,9 mil millones) que puede ejecutarse en hardware de consumo mediante llama.cpp y derivados, sin necesidad de infraestructura de servidor.
 
 El problema que resuelve es doble: por un lado, permite ejecutar localmente un modelo de ~30 B con licencia MIT y en formato GGUF, lo que facilita el despliegue en estaciones de trabajo con GPU única; por otro, está orientado explícitamente a contenido conversacional para adultos (etiqueta `not-for-all-audiences`), un nicho poco cubierto por los modelos generalistas con alineamiento restrictivo. El idioma declarado es únicamente el chino (`zh`), lo que limita su uso fuera de ese mercado.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento ni de comparativas objetivas con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/GLM-4.7-Flash-Name-NSFW-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/GLM-4.7-Flash-Name-NSFW-GGUF
 - Modelo base: https://huggingface.co/2048lr/GLM-4.7-Flash-Name-NSFW
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#GLM-4.7-Flash-Name-NSFW-GGUF
 - Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

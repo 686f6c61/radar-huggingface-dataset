@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-4B es un modelo de lenguaje compacto y de propósito general desarrollado por XHToken, que llega a HuggingFace en una conversión GGUF BF16 creada por dakotablake. El modelo original se presenta como una alternativa eficiente para tareas cotidianas como conversación, escritura, traducción, razonamiento, generación de código, uso de herramientas y flujos de trabajo agénticos. Destaca por su arquitectura de atención híbrida y por ofrecer una longitud de contexto nativa de hasta 1M tokens, lo que resulta inusual en modelos de este tamaño.
+Spark-X2.5-4B es un modelo de lenguaje compacto y de propósito general desarrollado por XHToken, que llega a Hugging Face en una conversión GGUF BF16 creada por dakotablake. El modelo original se presenta como una alternativa eficiente para tareas cotidianas como conversación, escritura, traducción, razonamiento, generación de código, uso de herramientas y flujos de trabajo agénticos. Destaca por su arquitectura de atención híbrida y por ofrecer una longitud de contexto nativa de hasta 1M tokens, lo que resulta inusual en modelos de este tamaño.
 
 La conversión GGUF permite ejecutarlo localmente con herramientas como Ollama y LM Studio, aunque requiere un fork específico de llama.cpp para soportar su arquitectura. Con aproximadamente 4.112 millones de parámetros, se posiciona como un modelo ligero pero capaz, liberado bajo licencia Apache 2.0, lo que facilita su uso en aplicaciones comerciales y de investigación. La disponibilidad de una versión de 1.7B en la misma serie amplía las opciones para despliegues con recursos limitados.
 
@@ -15,7 +15,7 @@ La conversión GGUF permite ejecutarlo localmente con herramientas como Ollama y
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 1M tokens (nativo, según el autor) |
 | Tipos de cuantizacion | BF16 (conversión GGUF proporcionada) |
-| Idiomas soportados | en, zh (según la ficha de HuggingFace); el autor afirma cubrir más de 200 idiomas |
+| Idiomas soportados | en, zh (según la ficha de Hugging Face); el autor afirma cubrir más de 200 idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (BF16) |
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 ## Limitaciones y advertencias
 
 - No se han publicado evaluaciones de sesgos, alucinaciones o seguridad en la información disponible.
-- La ficha de HuggingFace solo lista inglés y chino como idiomas, aunque el autor afirma cubrir más de 200 idiomas; el rendimiento en otros idiomas no está verificado.
+- La ficha de Hugging Face solo lista inglés y chino como idiomas, aunque el autor afirma cubrir más de 200 idiomas; el rendimiento en otros idiomas no está verificado.
 - El modelo requiere un fork específico de llama.cpp (XHToken/llama.cpp) para funcionar correctamente, lo que puede complicar su integración con herramientas estándar que no estén actualizadas.
 - La ventana de contexto de 1M tokens es un valor teórico; en la práctica, la memoria para la KV cache limita seriamente el contexto utilizable en hardware local.
 - Al tratarse de una conversión BF16 de un modelo base, el comportamiento puede diferir ligeramente del original si la conversión introduce algún cambio, aunque en teoría debería ser idéntica.

@@ -90,7 +90,7 @@ La diferencia principal frente al modelo base es el comportamiento de rechazo re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CrossNow/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CrossNow/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Version sin ablacion del mismo autor: https://huggingface.co/CrossNow/Qwen3.8-27B-GGUF

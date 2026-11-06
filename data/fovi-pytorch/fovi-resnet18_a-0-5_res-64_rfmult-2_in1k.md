@@ -6,7 +6,7 @@ fovi-resnet18_a-0.5_res-64_rfmult-2_in1k es un modelo de vision por computador p
 
 El modelo se distribuye con una configuracion concreta de hiperparametros: funcion de magnificacion cortical `a = 0.5`, resolucion del sensor de 64 y multiplicador del marco de referencia del kernel (`rfmult`) de 2. El stem es un kernel 7x7 con pasos de convolucion y pooling de 2. La model card reporta una precision de validacion de 51,14% top-1 y 73,50% top-5 sobre ImageNet-1k utilizando 20 fijaciones.
 
-Su relevancia es fundamentalmente de investigacion: proporciona un punto de partida reproducible para estudiar vision activa y foveada con arquitecturas convolucionales estandar, comparar variantes de hiperparametros del sensor y reutilizar un backbone preentrenado de bajo coste computacional. Con 53 descargas y 0 likes en HuggingFace, y sin pipeline declarado, debe considerarse un artefacto de investigacion mas que un modelo listo para produccion.
+Su relevancia es fundamentalmente de investigacion: proporciona un punto de partida reproducible para estudiar vision activa y foveada con arquitecturas convolucionales estandar, comparar variantes de hiperparametros del sensor y reutilizar un backbone preentrenado de bajo coste computacional. Con 53 descargas y 0 likes en Hugging Face, y sin pipeline declarado, debe considerarse un artefacto de investigacion mas que un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ Su relevancia es fundamentalmente de investigacion: proporciona un punto de part
 | Numero de fijaciones en evaluacion | 20 |
 | Precision reportada (validacion) | 51,14% top-1, 73,50% top-5 |
 | Libreria | fovi |
-| Tarea (pipeline) | no disponible en HuggingFace (clasificacion de imagenes, segun la model card) |
+| Tarea (pipeline) | no disponible en Hugging Face (clasificacion de imagenes, segun la model card) |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 53 / 0 |
 | Fecha de creacion / ultima actualizacion | 2026-08-05 / 2026-09-18 |
@@ -45,7 +45,7 @@ El entrenamiento se realizo desde cero sobre ImageNet-1k (sin inicializacion des
 - Procesamiento de entrada foveada: el modelo trabaja sobre representaciones generadas por la interfaz FOVI, con resolucion de sensor 64 y magnificacion cortical configurable (`a = 0.5` en esta variante).
 - Inferencia con multiples fijaciones (hasta 20 en la evaluacion reportada), lo que permite estudiar estrategias de atencion visual y seleccion de puntos de fijacion.
 - Extraccion de caracteristicas con un backbone ResNet-18, reutilizable como encoder para tareas posteriores de vision mediante ajuste fino.
-- Integracion directa con la libreria `fovi`, incluyendo carga automatica desde HuggingFace Hub y una clase `Trainer` para reentrenamiento o ajuste fino.
+- Integracion directa con la libreria `fovi`, incluyendo carga automatica desde Hugging Face Hub y una clase `Trainer` para reentrenamiento o ajuste fino.
 
 No dispone de: generacion de texto, razonamiento, codigo, matematicas, vision-lenguaje, tool calling ni function calling, soporte de agentes o razonamiento multi-paso, capacidades multilingues, ni modos especiales como thinking mode, audio o generacion de imagenes. La informacion disponible no documenta deteccion de objetos, segmentacion ni descripcion de imagenes.
 
@@ -75,15 +75,15 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 - VRAM estimada: no disponible de forma oficial. Como referencia dimensional, un backbone ResNet-18 ocupa del orden de decenas de MB en punto flotante, por lo que el peso del modelo no es el cuello de botella; el coste real depende del numero de fijaciones procesadas por imagen y del tamano de lote.
 - GPU recomendadas: cualquier GPU con soporte CUDA y unos pocos GB de VRAM es suficiente para el backbone. GPU de gama alta (A100, H100, RTX 4090) solo aportan ventaja en escenarios de entrenamiento o de evaluacion masiva con muchas fijaciones y lotes grandes.
 - Compatibilidad con GPU de consumo: si, el modelo es lo bastante pequeno para ejecutarse en GPU de consumo (por ejemplo, series RTX 3060, 4060, 4090) e incluso en CPU para inferencia de baja frecuencia, aunque la informacion disponible no incluye mediciones que lo confirmen.
-- Opciones de despliegue: la via documentada es PyTorch a traves de la libreria `fovi`, con carga automatica desde HuggingFace Hub mediante `get_model_from_base_fn` y ajuste fino mediante `get_trainer_from_base_fn`. No se documentan integraciones con vLLM, llama.cpp, Ollama, TGI, ONNX Runtime, TensorRT ni formatos GGUF.
+- Opciones de despliegue: la via documentada es PyTorch a traves de la libreria `fovi`, con carga automatica desde Hugging Face Hub mediante `get_model_from_base_fn` y ajuste fino mediante `get_trainer_from_base_fn`. No se documentan integraciones con vLLM, llama.cpp, Ollama, TGI, ONNX Runtime, TensorRT ni formatos GGUF.
 - Latencia y throughput: no disponibles. Dependen directamente del numero de fijaciones configurado y de la resolucion del sensor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Entrada | Precision reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fovi-resnet18_a-0.5_res-64_rfmult-2_in1k | CNN foveada (ResNet-18) | no disponible (~11,7 M en la ResNet-18 canonica) | Foveada, sensor 64, 20 fijaciones | 51,14% top-1 / 73,50% top-5 | apache-2.0 | HuggingFace, 53 descargas |
-| Otras variantes FOVI del mismo autor | CNN foveada (ResNet-18) | no disponible | Foveada, otros hiperparametros | no disponible en esta ficha | apache-2.0 (segun el autor) | HuggingFace |
+| fovi-resnet18_a-0.5_res-64_rfmult-2_in1k | CNN foveada (ResNet-18) | no disponible (~11,7 M en la ResNet-18 canonica) | Foveada, sensor 64, 20 fijaciones | 51,14% top-1 / 73,50% top-5 | apache-2.0 | Hugging Face, 53 descargas |
+| Otras variantes FOVI del mismo autor | CNN foveada (ResNet-18) | no disponible | Foveada, otros hiperparametros | no disponible en esta ficha | apache-2.0 (segun el autor) | Hugging Face |
 | ResNet-18 estandar preentrenada en ImageNet-1k | CNN | ~11,7 M | Imagen completa, resolucion uniforme | no disponible en la informacion proporcionada | depende del repositorio | ampliamente disponible |
 
 No se dispone de otros modelos comparables documentados en la informacion proporcionada, ni de resultados de las alternativas medidos bajo el mismo protocolo foveado, por lo que no es posible establecer una comparacion de rendimiento rigurosa.
@@ -102,7 +102,7 @@ No se dispone de otros modelos comparables documentados en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fovi-pytorch/fovi-resnet18_a-0.5_res-64_rfmult-2_in1k
+- Modelo en Hugging Face: https://huggingface.co/fovi-pytorch/fovi-resnet18_a-0.5_res-64_rfmult-2_in1k
 - Repositorio de la libreria fovi: https://github.com/nblauch/fovi
 - Paper de referencia (citado en la model card): Blauch, N. M., Alvarez, G. A. y Konkle, T., "FOVI: A biologically-inspired foveated interface for deep vision models", arXiv, 2026. No se proporciona URL directa en la informacion disponible.
 - Nota sobre la busqueda web: las busquedas realizadas no devolvieron ningun resultado relevante para este modelo; los unicos resultados obtenidos fueron paginas de inicio de sesion de Dadeschools (Miami-Dade County Public Schools) y de MyACCESS, sin relacion alguna con el modelo.

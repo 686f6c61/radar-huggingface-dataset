@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AST-1320/Flux.2-High-Resolution es un repositorio publicado en HuggingFace por el usuario AST-1320 el 13 de septiembre de 2026, con licencia Apache 2.0 y un tamano total de 0,1 GB. La unica informacion verificable disponible es la metainformacion del repositorio: no existe model card (el README se limita a declarar la licencia), no se especifica pipeline, no se declaran idiomas y no hay descargas ni likes en el momento de la consulta.
+AST-1320/Flux.2-High-Resolution es un repositorio publicado en Hugging Face por el usuario AST-1320 el 13 de septiembre de 2026, con licencia Apache 2.0 y un tamano total de 0,1 GB. La unica informacion verificable disponible es la metainformacion del repositorio: no existe model card (el README se limita a declarar la licencia), no se especifica pipeline, no se declaran idiomas y no hay descargas ni likes en el momento de la consulta.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura, una posible relacion con la familia Flux de modelos de generacion de imagenes y un enfasis en alta resolucion, pero esto es unicamente una inferencia a partir del identificador y no esta confirmado por ninguna documentacion, fichero de configuracion ni material del autor. Por tanto, no es posible afirmar que se trate de un modelo de difusion, ni determinar su arquitectura, su tamano en parametros ni sus capacidades reales.
 
@@ -85,5 +85,5 @@ No disponible. No es posible establecer modelos comparables sin conocer la categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AST-1320/Flux.2-High-Resolution
+- Repositorio en Hugging Face: https://huggingface.co/AST-1320/Flux.2-High-Resolution
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados devueltos para el termino "AST" corresponden a entidades sin relacion con el modelo: https://www.service-public.gouv.fr/particuliers/vosdroits/F1359, https://www.service-public.gouv.fr/particuliers/vosdroits/R46121, https://www.actionsantetravail.fr/, https://www.douane.gouv.fr/fiche/autorisation-de-sortie-du-territoire-ast-pour-les-mineurs, https://bloodsense.ai/fr/marqueurs-sanguins/aspartate-aminotransferase-comprendre-vos-niveaux/

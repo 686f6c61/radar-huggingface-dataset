@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Japanese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario sureshtara y publicado en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, en su variante mas pequena, con 37.760.640 parametros totales. El objetivo declarado del ajuste es adaptar el modelo base a un conjunto de datos denominado Japanese_english, presumiblemente audio en ingles con acento japones, aunque la model card no detalla la composicion exacta del dataset.
+Whisper tiny Japanese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario sureshtara y publicado en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, en su variante mas pequena, con 37.760.640 parametros totales. El objetivo declarado del ajuste es adaptar el modelo base a un conjunto de datos denominado Japanese_english, presumiblemente audio en ingles con acento japones, aunque la model card no detalla la composicion exacta del dataset.
 
 El modelo resuelve la tarea de transcripcion de audio a texto y resulta relevante como ejemplo de especializacion de un modelo ASR generico hacia una variante acentual concreta. Con solo 37,7 millones de parametros y un tamano de repositorio de 0,3 GB, es extremadamente ligero y puede ejecutarse en hardware muy modesto, lo que lo hace adecuado para prototipado rapido, experimentacion y despliegue en entornos con recursos limitados. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales.
 
@@ -25,14 +25,14 @@ No obstante, la informacion publicada es muy escasa: la model card fue generada 
 
 El modelo parte de openai/whisper-tiny, un transformer encoder-decoder disenado para ASR que procesa espectrogramas Mel de audio en ventanas de 30 segundos y genera tokens de texto de forma autoregresiva. Whisper tiny es la variante mas pequena de la familia Whisper, con aproximadamente 39 millones de parametros en su version original; el ajuste conserva la misma arquitectura y solo actualiza los pesos mediante fine-tuning supervisado.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre el dataset Japanese_english (no documentado publicamente). Los hiperparametros declarados son: learning rate de 1e-05, batch size de entrenamiento de 2, batch size de evaluacion de 1, semilla 42, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. No se menciona el uso de RLHF, DPO ni ninguna tecnica de alineacion adicional. Las versiones de framework empleadas son Transformers 5.21.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3. No se documenta el numero de tokens de audio ni la composicion del dataset.
+El entrenamiento se realizo con el Trainer de Hugging Face sobre el dataset Japanese_english (no documentado publicamente). Los hiperparametros declarados son: learning rate de 1e-05, batch size de entrenamiento de 2, batch size de evaluacion de 1, semilla 42, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. No se menciona el uso de RLHF, DPO ni ninguna tecnica de alineacion adicional. Las versiones de framework empleadas son Transformers 5.21.0.dev0, PyTorch 2.11.0+cu130, Datasets 5.1.0 y Tokenizers 0.23.3. No se documenta el numero de tokens de audio ni la composicion del dataset.
 
 ## Capacidades
 
 - Reconocimiento automatico del habla (transcripcion de audio a texto) en ingles, con especializacion hacia acento japones segun el dataset de ajuste.
 - Generacion de texto a partir de audio mediante decodificacion autoregresiva.
 - Compatible con el pipeline `automatic-speech-recognition` de transformers.
-- Soporte de endpoints compatibles (tag `endpoints_compatible`), lo que permite despliegue en la infraestructura de HuggingFace Inference Endpoints.
+- Soporte de endpoints compatibles (tag `endpoints_compatible`), lo que permite despliegue en la infraestructura de Hugging Face Inference Endpoints.
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio mas alla de la transcripcion.
 - Capacidades multilingues limitadas: los metadatos solo declaran ingles, aunque el ajuste se realizo sobre un dataset con componente japones.
 - No dispone de modo "thinking" ni capacidades especiales adicionales.
@@ -69,7 +69,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (37,7 millones de parametros, ~150 MB de pesos), aproximadamente 75 MB en fp16 y menos de 40 MB en cuantizacion de 4 bits.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; no requiere A100 ni H100. Funciona en GTX 1060, RTX 2060, RTX 3060, RTX 4090 y superiores sin problemas.
 - Cabe en cualquier GPU consumer e incluso en CPU. Tambien es viable en dispositivos de borde (Raspberry Pi 4/5, moviles de gama media) con cuantizacion.
-- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), HuggingFace Inference Endpoints, y potencialmente llama.cpp u ONNX Runtime si se convierte el modelo (no documentado oficialmente). vLLM y TGI no estan orientados a ASR y no se recomiendan para este modelo.
+- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), Hugging Face Inference Endpoints, y potencialmente llama.cpp u ONNX Runtime si se convierte el modelo (no documentado oficialmente). vLLM y TGI no estan orientados a ASR y no se recomiendan para este modelo.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Dado el tamano reducido, se espera latencia de decenas de milisegundos por ventana de 30 segundos en GPU moderna, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ La comparativa directa es dificil porque el dataset Japanese_english no es publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sureshtara/whisper-tiny_to_japanese_accent_26oct
+- Modelo en Hugging Face: https://huggingface.co/sureshtara/whisper-tiny_to_japanese_accent_26oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

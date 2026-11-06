@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Self Fisting - KREA2 - K3NK es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusion de imagenes Krea-2-Turbo, desarrollado originalmente por el usuario K3NK y publicado en Civitai. El repositorio de HuggingFace analizado es un reupload sin modificaciones, atribuido al autor original, con el objetivo declarado de facilitar su uso en la plataforma Sogni. Se trata de un adaptador de contenido para adultos, etiquetado como `not-for-all-audiences`, orientado a la generacion de imagenes de una tematica sexual concreta.
+Self Fisting - KREA2 - K3NK es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusion de imagenes Krea-2-Turbo, desarrollado originalmente por el usuario K3NK y publicado en Civitai. El repositorio de Hugging Face analizado es un reupload sin modificaciones, atribuido al autor original, con el objetivo declarado de facilitar su uso en la plataforma Sogni. Se trata de un adaptador de contenido para adultos, etiquetado como `not-for-all-audiences`, orientado a la generacion de imagenes de una tematica sexual concreta.
 
 Tecnicamente, el artefacto publicado no es un modelo autonomo, sino un conjunto de pesos LoRA que se acoplan al modelo base Krea-2-Turbo. El repositorio ocupa 0,6 GB e incluye tres ficheros `safetensors`: la version original entrenada hasta el paso 2500 y dos variantes con los pesos `lora_up`/`lora_B` escalados 2x y 4x. Esta ultima particularidad es relevante porque permite ajustar la intensidad del concepto aprendido sin reentrenar el adaptador.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada desde el punto de vista de la investigacion en IA: acu
 | Versiones incluidas | `krea2-self-anal-fisting-step2500-k3nk.safetensors` (original, SHA256 AE2D323AC5A361527C6EC334F3231A793C38748C6256519B05C19A52D9CCC424), `..._2x.safetensors` y `..._4x.safetensors` (escalados de pesos) |
 | Trigger words | ninguna declarada |
 | Fuerza recomendada | 1.0 (partiendo de la version original) |
-| Fecha de creacion en HuggingFace | 2026-10-04 (metadato del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-10-04 (metadato del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -47,7 +47,7 @@ La unica innovacion tecnica documentada es el escalado de pesos: los ficheros `_
 
 - Investigacion sobre escalado de pesos en LoRA: comparar el original con las variantes 2x y 4x para estudiar como el escalado de `lora_up`/`lora_B` afecta a la fidelidad del concepto aprendido y a la degradacion de la imagen.
 - Evaluacion de sistemas de moderacion de contenido: emplear el adaptador como muestra positiva controlada para probar clasificadores NSFW y validar que los pipelines de safety detectan correctamente el contenido generado.
-- Verificacion de gating y control de acceso: comprobar que plataformas de distribucion como Sogni, Civitai o HuggingFace aplican de forma efectiva las etiquetas `not-for-all-audiences` y las verificaciones de edad.
+- Verificacion de gating y control de acceso: comprobar que plataformas de distribucion como Sogni, Civitai o Hugging Face aplican de forma efectiva las etiquetas `not-for-all-audiences` y las verificaciones de edad.
 - Estudio sobre procedencia y atribucion de modelos: analizar el caso de un reupload sin cambios, con atribucion explicita al autor original, para investigar trazabilidad y cumplimiento de licencias en el ecosistema de modelos comunitarios.
 - Analisis de eficiencia de almacenamiento: los tres ficheros del repositorio (0,6 GB) permiten estudiar la redundancia de empaquetar variantes escaladas de un mismo LoRA y evaluar estrategias de deduplicacion.
 - Benchmarking de inferencia sobre el modelo base: medir latencia, VRAM y throughput al cargar un adaptador LoRA pequeno sobre Krea-2-Turbo en distintos backends.
@@ -85,12 +85,12 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 - Ausencia de trigger words: el autor no declara palabras de activacion, lo que puede dificultar la reproducibilidad del resultado y exige ajuste manual de la fuerza del adaptador.
 - Sin validacion de la comunidad: 0 descargas y 0 likes, sin resultados de benchmarks ni ejemplos comparativos publicados.
 - Sin informacion sobre sesgos, alucinacion (aplicable aqui como artefactos anatomicos o incoherencias visuales) ni limitaciones de contexto o idioma.
-- Metadato anomalo: la fecha de creacion registrada en HuggingFace (2026-10-04) es posterior a la fecha habitual de consulta, lo que sugiere un error de metadatos o una fecha futura programada.
+- Metadato anomalo: la fecha de creacion registrada en Hugging Face (2026-10-04) es posterior a la fecha habitual de consulta, lo que sugiere un error de metadatos o una fecha futura programada.
 - No apto para produccion en entornos corporativos sin revision legal previa, dado el caracter del contenido y la ambiguedad de la licencia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nobodyatalliguess/self-fisting-k3nk-lora
+- Repositorio en Hugging Face: https://huggingface.co/nobodyatalliguess/self-fisting-k3nk-lora
 - Pagina original del modelo en Civitai: https://civitai.com/models/2812989
 - Licencia declarada: https://civitai.com/models/2812989
 - Modelo base: krea/Krea-2-Turbo (referenciado como `base_model` en los metadatos del repositorio)

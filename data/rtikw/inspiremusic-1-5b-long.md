@@ -4,7 +4,7 @@
 
 InspireMusic-1.5B-Long es un modelo de generación de música desarrollado por el equipo FunAudioLLM de Alibaba, diseñado para producir audio musical de alta calidad y larga duración a partir de texto o como continuación de una pieza existente. Se trata de un framework unificado que integra un tokenizador de audio, un transformador autorregresivo basado en Qwen2.5 y un modelo de super-resolución basado en flow-matching, lo que permite generar muestras de audio a 48 kHz con una fidelidad acústica alta.
 
-Este modelo concreto, la variante Long, está optimizado para generación de música de formato largo, con una ventana de contexto que admite secuencias prolongadas. El repositorio alojado en HuggingFace con ID `rtikw/InspireMusic-1.5B-Long` es un mirror sin modificar del original publicado en ModelScope, creado para garantizar su disponibilidad tras la retirada de los repos oficiales en HuggingFace. Con 1.543.714.304 parámetros (aproximadamente 1.5B), el modelo es adecuado para tareas de text-to-music, continuación musical, reconstrucción y super-resolución, siempre que se disponga de hardware con al menos 24 GB de VRAM para una inferencia óptima.
+Este modelo concreto, la variante Long, está optimizado para generación de música de formato largo, con una ventana de contexto que admite secuencias prolongadas. El repositorio alojado en Hugging Face con ID `rtikw/InspireMusic-1.5B-Long` es un mirror sin modificar del original publicado en ModelScope, creado para garantizar su disponibilidad tras la retirada de los repos oficiales en Hugging Face. Con 1.543.714.304 parámetros (aproximadamente 1.5B), el modelo es adecuado para tareas de text-to-music, continuación musical, reconstrucción y super-resolución, siempre que se disponga de hardware con al menos 24 GB de VRAM para una inferencia óptima.
 
 Su relevancia radica en que aborda una carencia común en los modelos de generación de audio: la producción de piezas largas con coherencia estructural. InspireMusic-1.5B-Long permite controlar género, estructura y marcas de tiempo, lo que lo hace útil para creadores, investigadores y desarrolladores que necesiten generar música de alta calidad en entornos de producción. El modelo se distribuye bajo licencia Apache-2.0, lo que facilita su uso comercial y su integración en proyectos propios.
 
@@ -71,15 +71,15 @@ La comparativa con modelos similares no está disponible en la información prop
 - **Sesgos y alucinación**: como modelo generativo de audio, puede producir resultados que no coincidan exactamente con la descripción textual, especialmente con prompts ambiguos o complejos. No hay datos sobre sesgos específicos en la información disponible.
 - **Contexto limitado**: aunque la variante Long está optimizada para audio largo, no se especifica la duración máxima exacta que puede generar, y la calidad puede degradarse en piezas extremadamente largas.
 - **Rendimiento de hardware**: la inferencia requiere al menos 24 GB de VRAM, lo que excluye a GPUs de gama media (como la RTX 3060) y obliga a usar hardware profesional o de alta gama.
-- **Disponibilidad**: el modelo original fue retirado de HuggingFace; este mirror es la única vía de acceso en esta plataforma, y la disponibilidad futura depende del autor del mirror.
+- **Disponibilidad**: el modelo original fue retirado de Hugging Face; este mirror es la única vía de acceso en esta plataforma, y la disponibilidad futura depende del autor del mirror.
 - **Uso comercial**: la licencia Apache-2.0 permite uso comercial, pero es necesario verificar el cumplimiento de los términos de la licencia y de los modelos de audio subyacentes (por ejemplo, el tokenizador de audio puede tener licencias adicionales).
 
 ## Enlaces
 
-- Repositorio de HuggingFace (mirror): https://huggingface.co/rtikw/InspireMusic-1.5B-Long
+- Repositorio de Hugging Face (mirror): https://huggingface.co/rtikw/InspireMusic-1.5B-Long
 - Repositorio original en ModelScope: https://modelscope.cn/models/iic/InspireMusic-1.5B-Long
 - Repositorio de código en GitHub (FunAudioLLM): https://github.com/FunAudioLLM/InspireMusic
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/FunAudioLLM/InspireMusic
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/FunAudioLLM/InspireMusic
 - Demo en ModelScope Spaces: https://modelscope.cn/studios/iic/InspireMusic/summary
 - Paper: http://arxiv.org/abs/2503.00084
 - Referencia del tokenizador de audio: https://openreview.net/forum?id=yBlVlS2Fd9

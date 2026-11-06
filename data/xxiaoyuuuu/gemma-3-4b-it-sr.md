@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-3-4B-IT-SR | 4B (base) + LoRA r=32 | no disponible | GRPO con recompensa SR sobre AIW y Survo | gemma | HuggingFace (adaptador PEFT) |
-| Gemma-3-4B-IT-CRoS | 4B (base) + LoRA | no disponible | GRPO con recompensa CRoS, mismo setup | gemma | HuggingFace (adaptador PEFT) |
-| google/gemma-3-4b-it | 4B | no disponible | Instruccion y alineamiento del modelo base | gemma | HuggingFace (modelo completo) |
+| Gemma-3-4B-IT-SR | 4B (base) + LoRA r=32 | no disponible | GRPO con recompensa SR sobre AIW y Survo | gemma | Hugging Face (adaptador PEFT) |
+| Gemma-3-4B-IT-CRoS | 4B (base) + LoRA | no disponible | GRPO con recompensa CRoS, mismo setup | gemma | Hugging Face (adaptador PEFT) |
+| google/gemma-3-4b-it | 4B | no disponible | Instruccion y alineamiento del modelo base | gemma | Hugging Face (modelo completo) |
 
 La comparativa se limita a los modelos citados en la informacion proporcionada; no hay datos de rendimiento que permitan contrastar metricas entre ellos.
 
@@ -82,7 +82,7 @@ La comparativa se limita a los modelos citados en la informacion proporcionada; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-SR
+- Modelo en Hugging Face: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-SR
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Variante CRoS: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CRoS
 - Paper (identificador pendiente de publicacion): https://arxiv.org/abs/XXXX.XXXXX

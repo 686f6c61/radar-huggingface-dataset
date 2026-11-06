@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DMP96/Apertus-v1.1-4B-Instruct-QAD-Q4_1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DMP96/Apertus-v1.1-4B-Instruct-QAD-Q4_1-GGUF
 - Modelo base original de la familia Apertus v1.1 4B Instruct: no disponible en la informacion proporcionada
 - Paper o informe tecnico: no disponible en la informacion proporcionada
 - Blog o anuncio del desarrollador: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s2 es un modelo derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en HuggingFace, que aplica una receta de *machine unlearning* sobre un fine-tune previo especializado en el conjunto de datos DUET (film). El objetivo no es mejorar capacidades generales, sino eliminar de forma selectiva el conocimiento memorizado sobre un conjunto de hechos cinematograficos (parejas director-pelicula) etiquetado como "popular", preservando al mismo tiempo el rendimiento sobre el conjunto de retencion.
+Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s2 es un modelo derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en Hugging Face, que aplica una receta de *machine unlearning* sobre un fine-tune previo especializado en el conjunto de datos DUET (film). El objetivo no es mejorar capacidades generales, sino eliminar de forma selectiva el conocimiento memorizado sobre un conjunto de hechos cinematograficos (parejas director-pelicula) etiquetado como "popular", preservando al mismo tiempo el rendimiento sobre el conjunto de retencion.
 
 El modelo parte de `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (epoch 6 de un fine-tune sobre DUET film) y se somete a un proceso de desaprendizaje con el algoritmo NPO (Negative Preference Optimization) durante 8 epochs, con semilla 2. El resultado es un checkpoint de 8.030.261.248 parametros en formato safetensors, con la licencia Llama 3.1.
 
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s2
+- Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s2
 - Modelo base (fine-tune DUET film): https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Modelo original Llama 3.1 8B Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LFM2.5-2.6B-TauKnowledge-SFT-02 es un ajuste fino supervisado (SFT) del modelo LiquidAI/LFM2.5-2.6B, desarrollado por el usuario lugman-madhiai y publicado en HuggingFace. Se trata de un modelo denso de 2.697.198.592 parametros (aproximadamente 2,7 mil millones) orientado a generacion de texto conversacional, distribuido bajo licencia Apache 2.0. El repositorio ocupa 5,4 GB, lo que corresponde a pesos en precision de 16 bits (BF16/FP16).
+LFM2.5-2.6B-TauKnowledge-SFT-02 es un ajuste fino supervisado (SFT) del modelo LiquidAI/LFM2.5-2.6B, desarrollado por el usuario lugman-madhiai y publicado en Hugging Face. Se trata de un modelo denso de 2.697.198.592 parametros (aproximadamente 2,7 mil millones) orientado a generacion de texto conversacional, distribuido bajo licencia Apache 2.0. El repositorio ocupa 5,4 GB, lo que corresponde a pesos en precision de 16 bits (BF16/FP16).
 
 El modelo base pertenece a la familia LFM2 de Liquid AI, una arquitectura hibrida que combina convoluciones de corto alcance con atencion con consultas agrupadas (GQA). Se trata de una arquitectura disenada para eficiencia en inferencia en el borde (edge) y en GPU de consumo, con un coste de decodificacion bajo respecto a transformers densos de tamano equivalente.
 
-La relevancia de esta ficha es limitada pero concreta: es un ejemplo de ajuste fino ligero realizado con Unsloth y la libreria TRL de HuggingFace, que el autor declara haber entrenado "2x mas rapido" gracias a esas herramientas. No se han publicado detalles sobre el dataset de ajuste (el nombre "TauKnowledge" sugiere un corpus de conocimiento, pero no se documenta), ni resultados de evaluacion, ni informacion sobre el proceso de alineacion. El modelo esta etiquetado unicamente para ingles.
+La relevancia de esta ficha es limitada pero concreta: es un ejemplo de ajuste fino ligero realizado con Unsloth y la libreria TRL de Hugging Face, que el autor declara haber entrenado "2x mas rapido" gracias a esas herramientas. No se han publicado detalles sobre el dataset de ajuste (el nombre "TauKnowledge" sugiere un corpus de conocimiento, pero no se documenta), ni resultados de evaluacion, ni informacion sobre el proceso de alineacion. El modelo esta etiquetado unicamente para ingles.
 
 ## Especificaciones tecnicas
 
@@ -91,9 +91,9 @@ Los datos de la columna "este modelo" proceden del repositorio; el resto se basa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-02
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-02
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre LFM2.5-2.6B; los unicos enlaces verificables son los del repositorio de HuggingFace y las herramientas de entrenamiento citadas en la model card.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre LFM2.5-2.6B; los unicos enlaces verificables son los del repositorio de Hugging Face y las herramientas de entrenamiento citadas en la model card.

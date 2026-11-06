@@ -95,7 +95,7 @@ La comparativa se limita a las variantes del mismo autor, ya que no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CanelE452/pallet-pose-yolo26m-ft
+- Modelo en Hugging Face: https://huggingface.co/CanelE452/pallet-pose-yolo26m-ft
 - Variante nano: https://huggingface.co/CanelE452/pallet-pose-yolo26n-ft
 - Perfil del autor: https://huggingface.co/CanelE452
 - Documentación de YOLO26 de Ultralytics: https://docs.ultralytics.com/models/yolo26

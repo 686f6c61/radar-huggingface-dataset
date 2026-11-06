@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para comparar rendimiento con modelos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zayaan/zils-flash-clef
+- Hugging Face: https://huggingface.co/Zayaan/zils-flash-clef
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Revision del modelo base citada: fb4417d3
 - Subred Bittensor 127 (Zils): no disponible enlace directo en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-E4B-Uncensored-HauhauCS-Aggressive es una variante "uncensored" (abliterated) del modelo oficial google/gemma-4-e4b-it, publicada por el usuario tudoriviera en HuggingFace y desarrollada originalmente por HauhauCS. El modelo elimina los mecanismos de rechazo del modelo base mediante la técnica de abliteration, manteniendo intactas las capacidades originales de Gemma 4 E4B-IT: generación de texto, razonamiento, código, matemáticas y procesamiento multimodal (imagen, video y audio). La variante "Aggressive" aplica un uncensoring más fuerte, de modo que el modelo no rechaza ninguna instrucción y genera siempre el contenido solicitado, aunque puede añadir breves avisos heredados del entrenamiento base.
+Gemma-4-E4B-Uncensored-HauhauCS-Aggressive es una variante "uncensored" (abliterated) del modelo oficial google/gemma-4-e4b-it, publicada por el usuario tudoriviera en Hugging Face y desarrollada originalmente por HauhauCS. El modelo elimina los mecanismos de rechazo del modelo base mediante la técnica de abliteration, manteniendo intactas las capacidades originales de Gemma 4 E4B-IT: generación de texto, razonamiento, código, matemáticas y procesamiento multimodal (imagen, video y audio). La variante "Aggressive" aplica un uncensoring más fuerte, de modo que el modelo no rechaza ninguna instrucción y genera siempre el contenido solicitado, aunque puede añadir breves avisos heredados del entrenamiento base.
 
 Con 7.518.069.290 parámetros totales según los pesos safetensors (el nombre sugiere 4B efectivos, probablemente una arquitectura MoE), 131K de contexto y atención mixta con ventana deslizante de 512, este modelo está pensado para entornos de desarrollo e investigación donde se requiere una generación sin filtros de seguridad. Se distribuye en formato GGUF con múltiples cuantizaciones optimizadas mediante imatrix, incluyendo los custom quants K_P de HauhauCS, y es compatible con llama.cpp, LM Studio, Jan y koboldcpp. Su relevancia radica en ofrecer una alternativa completamente funcional y sin restricciones para casos de uso que demandan libertad total de generación, aunque con los riesgos éticos y legales asociados.
 
@@ -77,7 +77,7 @@ No se dispone de información sobre modelos abliterated comparables en el mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tudoriviera/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
+- Repositorio Hugging Face: https://huggingface.co/tudoriviera/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Discord del autor: https://discord.gg/SZ5vacTXYf
 - Archivos GGUF (enlaces directos en la model card): https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive

@@ -86,6 +86,6 @@ No disponible. No se conocen modelos comparables de la misma familia Affine con 
 
 ## Enlaces
 
-- [HuggingFace: crazyape777/affine-cand-822raftcold](https://huggingface.co/crazyape777/affine-cand-822raftcold)
+- [Hugging Face: crazyape777/affine-cand-822raftcold](https://huggingface.co/crazyape777/affine-cand-822raftcold)
 - [Modelo base: unconst/Affine-5czsc2fc98-r252-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged) (enlace inferido del ID, no verificado)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo for Multitask es un prototipo de investigación alojado en HuggingFace por el usuario seoulchoi. Se presenta como una implementación propia de la arquitectura Flamingo, orientada a tareas multitarea, distribuida bajo licencia apache-2.0. El repositorio contiene el código de entrenamiento, la configuración de arquitectura, los argumentos de experimento por defecto y un checkpoint de inicialización en formato safetensors.
+Flamingo for Multitask es un prototipo de investigación alojado en Hugging Face por el usuario seoulchoi. Se presenta como una implementación propia de la arquitectura Flamingo, orientada a tareas multitarea, distribuida bajo licencia apache-2.0. El repositorio contiene el código de entrenamiento, la configuración de arquitectura, los argumentos de experimento por defecto y un checkpoint de inicialización en formato safetensors.
 
 Es importante subrayar el estado del artefacto: el propio autor indica de forma explícita que el checkpoint de `model.safetensors` es una inicialización válida para pruebas de humo ("smoke tests") y no un modelo entrenado ni evaluado con benchmarks. El recuento real de parámetros del fichero safetensors es de 24.832, una cifra muy reducida que confirma que se trata de un esqueleto funcional y no de un modelo desplegable en producción. La etiqueta "large" del repositorio hace referencia a un preset de configuración, no al tamaño efectivo del modelo.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seoulchoi/multitask | 24.832 | no disponible | sin benchmarks | apache-2.0 | HuggingFace (0 descargas) |
+| seoulchoi/multitask | 24.832 | no disponible | sin benchmarks | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Requisitos de hardware
@@ -91,5 +91,5 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seoulchoi/multitask
+- Hugging Face: https://huggingface.co/seoulchoi/multitask
 - No se han encontrado en la busqueda web otros enlaces (papers, blogs, repositorios o demos) asociados a este modelo en la informacion proporcionada.

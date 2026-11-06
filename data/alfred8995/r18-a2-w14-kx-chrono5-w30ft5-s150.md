@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-kx-chrono5-w30ft5-s150` es un checkpoint de 2.018.511.234 parametros (aproximadamente 2,02 mil millones) publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0. El identificador sigue un patron de nomenclatura críptico que sugiere un experimento de entrenamiento con parametros concretos (probablemente `r18` como rango o revision, `a2` como arquitectura o fase, `w14` como ventana o warmup, `chrono5` como variante de la familia "nanochrono" —visible en el tag `sn38-nanochrono`—, `w30ft5` como configuracion de fine-tuning y `s150` como step o seed). No se dispone de documentacion oficial, model card descriptiva ni pipeline declarado.
+El modelo `alfred8995/r18-a2-w14-kx-chrono5-w30ft5-s150` es un checkpoint de 2.018.511.234 parametros (aproximadamente 2,02 mil millones) publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0. El identificador sigue un patron de nomenclatura críptico que sugiere un experimento de entrenamiento con parametros concretos (probablemente `r18` como rango o revision, `a2` como arquitectura o fase, `w14` como ventana o warmup, `chrono5` como variante de la familia "nanochrono" —visible en el tag `sn38-nanochrono`—, `w30ft5` como configuracion de fine-tuning y `s150` como step o seed). No se dispone de documentacion oficial, model card descriptiva ni pipeline declarado.
 
 El tag `sn38-nanochrono` apunta a un linaje de modelos experimentales de tipo "nano" orientados a investigación, sin que exista informacion publica que confirme la arquitectura exacta, los datos de entrenamiento o las capacidades reales. El repo pesa 6,3 GB en formato safetensors, lo que es coherente con un modelo de ~2B parametros en precision de 16 bits (2,02B × 2 bytes ≈ 4,04 GB de pesos, mas posibles estados de optimizador o checkpoints adicionales empaquetados).
 
@@ -29,7 +29,7 @@ Tampoco se dispone de informacion sobre el volumen de tokens de entrenamiento, l
 
 ## Capacidades
 
-- Generacion de texto: no confirmada por documentacion oficial; el pipeline no esta declarado en HuggingFace.
+- Generacion de texto: no confirmada por documentacion oficial; el pipeline no esta declarado en Hugging Face.
 - Razonamiento y matematicas: no disponible.
 - Generacion de codigo: no disponible.
 - Vision: no disponible (no hay tags ni modulos multimodales declarados).
@@ -82,7 +82,7 @@ El modelo evaluado no ofrece, a dia de hoy, informacion verificable que permita 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, datos de entrenamiento, idiomas ni capacidades, lo que imposibilita una evaluacion rigurosa previa al despliegue.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier evaluacion.
 - Riesgo elevado de alucinacion y comportamiento impredecible: sin benchmarks ni evaluaciones publicas, no puede descartarse un rendimiento deficiente en tareas estandar.
 - Sesgos desconocidos: al no conocerse la composicion del dataset de entrenamiento, no es posible anticipar sesgos de genero, raza, idioma o dominio.
 - Idiomas no declarados: se desconoce si el modelo soporta castellano u otras lenguas distintas del ingles; debe validarse empiricamente.
@@ -93,5 +93,5 @@ El modelo evaluado no ofrece, a dia de hoy, informacion verificable que permita 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-kx-chrono5-w30ft5-s150
+- Repositorio Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-kx-chrono5-w30ft5-s150
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

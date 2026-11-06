@@ -26,7 +26,7 @@ Es relevante ahora porque encaja en el ecosistema de ComfyUI y en el catalogo de
 | Palabra de activacion | ninguna (no trigger word required) |
 | Rango de fuerza recomendado | 2.0 a 12.0 |
 | Plataformas compatibles | ComfyUI, RunningHub, Hugging Face |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento

@@ -76,7 +76,7 @@ El modelo de ProtonX se diferencia de `vit5-base` en su especialización continu
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/protonx-models/t5-small-pretrain-vks)
+- [Hugging Face del modelo](https://huggingface.co/protonx-models/t5-small-pretrain-vks)
 - [Organización ProtonX](https://huggingface.co/protonx-models)
 - [google-t5/t5-small en Hugging Face](https://huggingface.co/google-t5/t5-small)
 - [Documentación de pretrain de T5X (referencia técnica)](https://github.com/google-research/t5x/blob/main/docs/usage/pretrain.md)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en el repositorio de HuggingFace `asd12ad123123/MyAwesomeModel-TestRepository`, bajo licencia MIT. Segun la model card, se trata de una version mejorada de un modelo anterior que ha incrementado su capacidad de razonamiento e inferencia mediante optimizaciones en el post-entrenamiento y mayor potencia computacional. El modelo destaca en tareas de matematicas, programacion y logica general, con una precision en AIME 2025 que pasa del 70 % al 87,5 % respecto a la version previa, y un aumento del promedio de tokens usados por pregunta de 12K a 23K, lo que sugiere un modo de razonamiento profundo.
+MyAwesomeModel es un modelo de lenguaje presentado en el repositorio de Hugging Face `asd12ad123123/MyAwesomeModel-TestRepository`, bajo licencia MIT. Segun la model card, se trata de una version mejorada de un modelo anterior que ha incrementado su capacidad de razonamiento e inferencia mediante optimizaciones en el post-entrenamiento y mayor potencia computacional. El modelo destaca en tareas de matematicas, programacion y logica general, con una precision en AIME 2025 que pasa del 70 % al 87,5 % respecto a la version previa, y un aumento del promedio de tokens usados por pregunta de 12K a 23K, lo que sugiere un modo de razonamiento profundo.
 
-Sin embargo, la ficha de HuggingFace no proporciona datos sobre el tamano, la arquitectura o la longitud de contexto. El repositorio tiene un tamano de 0.0 GB y no registra descargas ni "likes", por lo que es posible que no incluya los pesos del modelo. Las etiquetas indican "bert" y "feature-extraction", lo que contradice la descripcion de un modelo generativo con capacidades de razonamiento y funcion calling. Por tanto, la informacion debe tratarse con cautela.
+Sin embargo, la ficha de Hugging Face no proporciona datos sobre el tamano, la arquitectura o la longitud de contexto. El repositorio tiene un tamano de 0.0 GB y no registra descargas ni "likes", por lo que es posible que no incluya los pesos del modelo. Las etiquetas indican "bert" y "feature-extraction", lo que contradice la descripcion de un modelo generativo con capacidades de razonamiento y funcion calling. Por tanto, la informacion debe tratarse con cautela.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Sin embargo, la ficha de HuggingFace no proporciona datos sobre el tamano, la ar
 
 ## Arquitectura y entrenamiento
 
-Segun la model card, el modelo ha recibido una actualizacion significativa que mejora la profundidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento. No se detallan la arquitectura exacta, el numero de parametros, la cantidad de tokens de entrenamiento ni la composicion del dataset. Tampoco se menciona si se emplearon tecnicas como RLHF o DPO. El modelo parece incorporar un modo de "thinking" o razonamiento profundo, ya que en el test AIME 2025 el numero medio de tokens por pregunta es de 23K (frente a 12K en la version anterior). La model card indica que ya no es necesario usar tokens especiales para forzar un patron de pensamiento concreto, y que se admite un system prompt. Tambien se menciona una variante MyAwesomeModel-Small, cuya arquitectura es identica al modelo base, pero que comparte el tokenizer con el modelo principal. La etiqueta "bert" de HuggingFace es inconsistente con esta descripcion.
+Segun la model card, el modelo ha recibido una actualizacion significativa que mejora la profundidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento. No se detallan la arquitectura exacta, el numero de parametros, la cantidad de tokens de entrenamiento ni la composicion del dataset. Tampoco se menciona si se emplearon tecnicas como RLHF o DPO. El modelo parece incorporar un modo de "thinking" o razonamiento profundo, ya que en el test AIME 2025 el numero medio de tokens por pregunta es de 23K (frente a 12K en la version anterior). La model card indica que ya no es necesario usar tokens especiales para forzar un patron de pensamiento concreto, y que se admite un system prompt. Tambien se menciona una variante MyAwesomeModel-Small, cuya arquitectura es identica al modelo base, pero que comparte el tokenizer con el modelo principal. La etiqueta "bert" de Hugging Face es inconsistente con esta descripcion.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ La unica comparativa disponible es la tabla de la model card, que enfrenta MyAwe
 
 ## Limitaciones y advertencias
 
-- La informacion de HuggingFace es inconsistente: las etiquetas indican "bert" y "feature-extraction", mientras que la model card describe un modelo generativo con razonamiento y funcion calling. Esto sugiere que el repositorio puede ser de prueba o contener metadatos erroneos.
+- La informacion de Hugging Face es inconsistente: las etiquetas indican "bert" y "feature-extraction", mientras que la model card describe un modelo generativo con razonamiento y funcion calling. Esto sugiere que el repositorio puede ser de prueba o contener metadatos erroneos.
 - El repositorio no contiene pesos (tamano 0.0 GB), por lo que no es posible utilizarlo tal como esta publicado. Habria que buscar los pesos en otro lugar o contactar con el autor.
 - No se indican los idiomas soportados, por lo que no se puede garantizar su rendimiento en idiomas distintos del ingles o de la lengua utilizada en los benchmarks.
 - No se especifica la longitud de contexto, lo que limita su uso en tareas que requieran ventanas largas.
@@ -90,6 +90,6 @@ La unica comparativa disponible es la tabla de la model card, que enfrenta MyAwe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asd12ad123123/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/asd12ad123123/MyAwesomeModel-TestRepository
 - Repositorio similar encontrado en la busqueda: https://huggingface.co/ASD123WE/MyAwesomeModel-TestRepository (contenido aparentemente similar, autor distinto)
 - No se proporcionan enlaces a papers, demos ni repositorios de codigo en la informacion disponible.

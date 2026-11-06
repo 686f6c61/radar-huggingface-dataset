@@ -4,7 +4,7 @@
 
 `thaovytran/robotics-vision-language-study` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion exploratorias sobre robotica y vision-lenguaje. La model card lo describe explicitamente como una nota exploratoria que recoge el planteamiento de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad, todo ello antes de reportar cualquier resultado experimental.
 
-El autor es el usuario de HuggingFace `thaovytran`, y el repositorio se publica bajo licencia CC-BY-4.0 con las etiquetas `research-notes` y `robotics-vision-language`. Los artefactos declarados dentro del repositorio son unicamente dos documentos de texto: `reading.md` (artefacto principal) y `README.md` (documentacion). El tamano del repositorio es de 0.0 GB y no se ha liberado ningun checkpoint entrenado, codigo de entrenamiento ni conjunto de datos propio, segun reconoce la propia model card.
+El autor es el usuario de Hugging Face `thaovytran`, y el repositorio se publica bajo licencia CC-BY-4.0 con las etiquetas `research-notes` y `robotics-vision-language`. Los artefactos declarados dentro del repositorio son unicamente dos documentos de texto: `reading.md` (artefacto principal) y `README.md` (documentacion). El tamano del repositorio es de 0.0 GB y no se ha liberado ningun checkpoint entrenado, codigo de entrenamiento ni conjunto de datos propio, segun reconoce la propia model card.
 
 Su relevancia actual es, por tanto, documental y metodologica mas que tecnica: sirve como plantilla de trabajo para disenar evaluaciones reproducibles en el ambito de vision-lenguaje aplicado a robotica, dejando claro que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados. No debe utilizarse como sustituto de un modelo en produccion.
 
@@ -78,7 +78,7 @@ No disponible. No existe una categoria de modelos comparable, ya que este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thaovytran/robotics-vision-language-study
+- Repositorio en Hugging Face: https://huggingface.co/thaovytran/robotics-vision-language-study
 - `reading.md` (artefacto principal, ruta dentro del repositorio): https://huggingface.co/thaovytran/robotics-vision-language-study/blob/main/reading.md
 - `README.md`: https://huggingface.co/thaovytran/robotics-vision-language-study/blob/main/README.md
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada. La model card menciona referencias tematicas dentro de la nota, pero no las enumera ni las enlaza.

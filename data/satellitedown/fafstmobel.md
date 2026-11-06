@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de fafstmo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satellitedown/fafstmobel
+- Modelo en Hugging Face: https://huggingface.co/satellitedown/fafstmobel
 - Modelo base Swift: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Licencia Swift Open License v1.0: https://huggingface.co/ukisai/Swift-Qwen3.8-27b/blob/main/LICENSE
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

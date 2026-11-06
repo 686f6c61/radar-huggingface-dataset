@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tpnlabs/tpn-001-base` es un modelo base publicado por la organización `tpnlabs` en HuggingFace. La ficha del modelo en HuggingFace es extremadamente escueta: únicamente indica licencia MIT, región US, y no proporciona descripción, arquitectura, parámetros, ni ningún otro dato técnico. No se han publicado resultados de benchmarks, ni información sobre el entrenamiento o las capacidades del modelo.
+El modelo `tpnlabs/tpn-001-base` es un modelo base publicado por la organización `tpnlabs` en Hugging Face. La ficha del modelo en Hugging Face es extremadamente escueta: únicamente indica licencia MIT, región US, y no proporciona descripción, arquitectura, parámetros, ni ningún otro dato técnico. No se han publicado resultados de benchmarks, ni información sobre el entrenamiento o las capacidades del modelo.
 
 La organización `tpnlabs` parece estar vinculada con trabajos sobre nutrición parenteral total (TPN) asistida por IA, como el modelo TPN2.0 descrito en un artículo de Nature Medicine de 2025, pero no existe evidencia de que `tpn-001-base` sea ese modelo ni de que tenga relación directa con dicha investigación. Dado que la información disponible es prácticamente nula, esta ficha se limita a documentar lo que se conoce y a marcar como "no disponible" todos los campos sin datos verificables.
 
@@ -21,7 +21,7 @@ La organización `tpnlabs` parece estar vinculada con trabajos sobre nutrición 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otra), el número de parámetros, el tamaño del contexto, los datos de entrenamiento o el proceso de alineación (RLHF, DPO, etc.). La model card en HuggingFace solo contiene la línea `license: mit` y no incluye secciones de arquitectura, entrenamiento, ni evaluación.
+No se ha publicado ninguna información sobre la arquitectura del modelo (si es transformer, MoE, SSM u otra), el número de parámetros, el tamaño del contexto, los datos de entrenamiento o el proceso de alineación (RLHF, DPO, etc.). La model card en Hugging Face solo contiene la línea `license: mit` y no incluye secciones de arquitectura, entrenamiento, ni evaluación.
 
 ## Capacidades
 
@@ -50,13 +50,13 @@ No disponible. No se conocen modelos comparables porque no se tienen datos técn
 
 - La ausencia total de documentación técnica impide evaluar sesgos, riesgo de alucinación o limitaciones de contexto e idioma.
 - La licencia MIT permite uso comercial y modificación, pero no hay garantías de soporte ni mantenimiento por parte del autor.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido.
-- No se ha verificado si el modelo está relacionado con el trabajo TPN2.0 publicado en Nature Medicine; la organización `tpnlabs` en HuggingFace no es necesariamente la misma que la del estudio académico.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido.
+- No se ha verificado si el modelo está relacionado con el trabajo TPN2.0 publicado en Nature Medicine; la organización `tpnlabs` en Hugging Face no es necesariamente la misma que la del estudio académico.
 - Para cualquier uso en producción, se recomienda contactar con el autor y exigir documentación completa antes de considerar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [tpnlabs/tpn-001-base](https://huggingface.co/tpnlabs/tpn-001-base)
+- Modelo en Hugging Face: [tpnlabs/tpn-001-base](https://huggingface.co/tpnlabs/tpn-001-base)
 - Sitio web de TPN Labs (posible autor): [https://tpn-labs.com/](https://tpn-labs.com/)
 - Artículo relacionado sobre TPN2.0 (no confirmado como el mismo modelo): [AI-guided precision parenteral nutrition — Takeoff41](https://www.takeoff41.com/science/nature-medicine-2025)
 - Noticia sobre TPN2.0 en Stanford Daily: [AI model formulates life-saving nutrition for NICU infants](https://stanforddaily.com/2025/04/18/ai-model-formulates-life-saving-nutrition-for-nicu-infants/)

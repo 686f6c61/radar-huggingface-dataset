@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Formato | ControlNet canny | Residuales expuestos en el grafo UNet | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| latentdivergence/sd15-controlnet-canny-int8 | ONNX int8 | Sí, canny | Sí, 13 tensores como entradas reales (16 entradas totales) | creativeml-openrail-m | Repositorio HuggingFace con 0 descargas y 0 likes |
+| latentdivergence/sd15-controlnet-canny-int8 | ONNX int8 | Sí, canny | Sí, 13 tensores como entradas reales (16 entradas totales) | creativeml-openrail-m | Repositorio Hugging Face con 0 descargas y 0 likes |
 | Exportaciones públicas de SD 1.5 a ONNX | ONNX (precisión no especificada) | Según el autor, no ejecutable contra ellas porque el UNet no expone los residuales | No | Depende de cada publicación | No disponible en la información proporcionada |
 | SD 1.5 + ControlNet en formato diffusers/safetensors | safetensors | Sí, disponible en el ecosistema diffusers | No aplica: la inyección se hace en código, no vía grafo ONNX | creativeml-openrail-m | Ampliamente difundido |
 | Modelos de difusión de mayor tamaño con ControlNet (por ejemplo SDXL) | safetensors, ONNX en algunos casos | Sí | No disponible | Depende del modelo | No disponible |
@@ -93,11 +93,11 @@ No se dispone de datos de rendimiento comparados entre estas alternativas en la 
 - Resolución nativa de 512x512 píxeles del modelo base; no se documenta ningún ajuste para resoluciones mayores.
 - Artefactos típicos de la familia SD 1.5: anatomía incorrecta (manos, extremidades), problemas para renderizar texto legible y dificultades con escenas muy pobladas.
 - Adopción nula: 0 descargas y 0 likes en el momento de redactar esta ficha, lo que implica ausencia de validación por parte de la comunidad y de informes de fallos.
-- Fechas del repositorio: creado el 2026-09-23 y actualizado el mismo día, según los metadatos de HuggingFace.
+- Fechas del repositorio: creado el 2026-09-23 y actualizado el mismo día, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/latentdivergence/sd15-controlnet-canny-int8
+- Modelo en Hugging Face: https://huggingface.co/latentdivergence/sd15-controlnet-canny-int8
 - Modelo base declarado: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 
 No se han proporcionado otros enlaces (papers, blogs, repositorios de código ni demos) en la información disponible.

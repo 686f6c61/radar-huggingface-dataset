@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `nguynVNU/XLA_v1` es un repositorio publicado en HuggingFace por el usuario `nguynVNU`, con licencia MIT y un tamaño de repositorio de 0,1 GB. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia y no se proporcionan detalles sobre arquitectura, parámetros, entrenamiento, capacidades o uso previsto. El repositorio no registra descargas ni interacciones, y no se ha especificado el pipeline ni los idiomas soportados.
+El modelo `nguynVNU/XLA_v1` es un repositorio publicado en Hugging Face por el usuario `nguynVNU`, con licencia MIT y un tamaño de repositorio de 0,1 GB. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia y no se proporcionan detalles sobre arquitectura, parámetros, entrenamiento, capacidades o uso previsto. El repositorio no registra descargas ni interacciones, y no se ha especificado el pipeline ni los idiomas soportados.
 
-A fecha de su última actualización (agosto de 2026), no existe documentación técnica pública que permita evaluar el modelo para tareas concretas. Esta ficha se elabora a partir de los datos disponibles en HuggingFace, marcando como «no disponible» cualquier campo sin información verificable. Se recomienda precaución antes de considerar este modelo para cualquier uso en producción, dado que no hay evidencia de su funcionamiento ni de sus limitaciones.
+A fecha de su última actualización (agosto de 2026), no existe documentación técnica pública que permita evaluar el modelo para tareas concretas. Esta ficha se elabora a partir de los datos disponibles en Hugging Face, marcando como «no disponible» cualquier campo sin información verificable. Se recomienda precaución antes de considerar este modelo para cualquier uso en producción, dado que no hay evidencia de su funcionamiento ni de sus limitaciones.
 
 ## Especificaciones tecnicas
 
@@ -56,5 +56,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/nguynVNU/XLA_v1)
-- Perfil del autor: [nguynVNU en HuggingFace](https://huggingface.co/nguynVNU)
+- [Repositorio en Hugging Face](https://huggingface.co/nguynVNU/XLA_v1)
+- Perfil del autor: [nguynVNU en Hugging Face](https://huggingface.co/nguynVNU)

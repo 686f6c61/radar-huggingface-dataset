@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nool-Alpha-100M-Chat es un modelo de lenguaje causal bilingüe (indonesio e inglés) con soporte adicional de código Python, desarrollado por el usuario CH3NDev y publicado en HuggingFace bajo licencia MIT. El modelo se apoya en una arquitectura propia denominada `nool_alpha`, que combina tres innovaciones declaradas por el autor: GSLA (Grouped-Subspace Latent Attention), que según la model card comprime la caché KV un 87,8 % frente a una atención densa MHA estándar; HFK-MoE (Heterogeneous Factorized MoE), formada por un ancla densa SwiGLU compartida más ocho expertos factorizados de bajo rango (r=96, enrutamiento top-2) con un ahorro declarado del 21,3 % en FLOPs; y una "Global Residual Highway" que estabiliza las rutas residuales profundas.
+Nool-Alpha-100M-Chat es un modelo de lenguaje causal bilingüe (indonesio e inglés) con soporte adicional de código Python, desarrollado por el usuario CH3NDev y publicado en Hugging Face bajo licencia MIT. El modelo se apoya en una arquitectura propia denominada `nool_alpha`, que combina tres innovaciones declaradas por el autor: GSLA (Grouped-Subspace Latent Attention), que según la model card comprime la caché KV un 87,8 % frente a una atención densa MHA estándar; HFK-MoE (Heterogeneous Factorized MoE), formada por un ancla densa SwiGLU compartida más ocho expertos factorizados de bajo rango (r=96, enrutamiento top-2) con un ahorro declarado del 21,3 % en FLOPs; y una "Global Residual Highway" que estabiliza las rutas residuales profundas.
 
 El recuento real de parámetros en los pesos safetensors es de 149.772.288, con aproximadamente 97,9 M de parámetros activos por token según la model card. Usa un vocabulario de 50.257 tokens (BPE de GPT-2), una longitud de contexto de 2.048 tokens y una configuración interna de 768 dimensiones de modelo, 10 capas y 12 cabezas de atención. El checkpoint publicado corresponde al paso de entrenamiento 900, con una pérdida registrada de 2,633549153804779, lo que indica un modelo en fase temprana de entrenamiento y no un modelo final convergido.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Con caché KV, activaciones y overhead del runtime, es razonable prever entre 1 y 2 GB en FP16 para lotes pequeños y contexto completo de 2.048 tokens; la compresión GSLA declarada (87,8 % frente a MHA densa) reduce esta parte, pero no hay mediciones publicadas que lo confirmen.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 4060 y superiores. No requiere A100, H100 ni GPUs de centro de datos.
 - Cabe holgadamente en GPU de consumo e incluso puede ejecutarse en CPU con cuantización a int8, dado el reducido número de parámetros.
-- Opciones de despliegue: no disponible de forma directa. Al tratarse de una arquitectura personalizada (`model_type: nool_alpha`), no hay soporte nativo en vLLM, TGI, llama.cpp u Ollama, y no se publican pesos GGUF. La única vía documentada es cargar los pesos con `safetensors` y reconstruir el modelo con el código del repositorio GitHub del autor (`nool_alpha.config` / `nool_alpha.model`), que no forma parte de los ficheros del repositorio de HuggingFace.
+- Opciones de despliegue: no disponible de forma directa. Al tratarse de una arquitectura personalizada (`model_type: nool_alpha`), no hay soporte nativo en vLLM, TGI, llama.cpp u Ollama, y no se publican pesos GGUF. La única vía documentada es cargar los pesos con `safetensors` y reconstruir el modelo con el código del repositorio GitHub del autor (`nool_alpha.config` / `nool_alpha.model`), que no forma parte de los ficheros del repositorio de Hugging Face.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ Nota: los datos de los modelos alternativos corresponden a informacion publica e
 - Sesgos no evaluados: no se documenta la composición del dataset ni se han realizado evaluaciones de sesgo, toxicidad o seguridad.
 - Cobertura limitada de idiomas: solo indonesio e inglés de forma declarada; el castellano no está soportado oficialmente y su comportamiento en otros idiomas es impredecible.
 - Contexto corto: 2.048 tokens es insuficiente para tareas de documento largo, RAG con muchos fragmentos o conversaciones extensas.
-- Complejidad de integración: al ser una arquitectura personalizada sin soporte en `transformers` nativo, requiere el código del autor desde GitHub. El `README` importa `nool_alpha.config` y `nool_alpha.model`, módulos que no se listan entre los ficheros del repositorio de HuggingFace; sin ellos, `AutoModel` no puede cargar el modelo.
+- Complejidad de integración: al ser una arquitectura personalizada sin soporte en `transformers` nativo, requiere el código del autor desde GitHub. El `README` importa `nool_alpha.config` y `nool_alpha.model`, módulos que no se listan entre los ficheros del repositorio de Hugging Face; sin ellos, `AutoModel` no puede cargar el modelo.
 - Sin cuantizaciones oficiales: no hay GGUF, AWQ ni GPTQ, lo que complica el despliegue en llama.cpp, Ollama o vLLM sin trabajo de conversión manual.
 - Licencia MIT: permite uso comercial, modificación y redistribución sin restricciones relevantes, siempre que se conserve el aviso de copyright. Es el punto más favorable del modelo.
 - Adopción nula: 0 descargas y 0 likes en el momento de la consulta, sin validación por parte de la comunidad.
@@ -100,6 +100,6 @@ Nota: los datos de los modelos alternativos corresponden a informacion publica e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CH3NDev/Nool-Alpha-100M-Chat
+- Hugging Face: https://huggingface.co/CH3NDev/Nool-Alpha-100M-Chat
 - Repositorio GitHub oficial citado en la model card: https://github.com/Ch3nOff/Nool-Alpha
 - Paper, blog o demo adicionales: no disponible

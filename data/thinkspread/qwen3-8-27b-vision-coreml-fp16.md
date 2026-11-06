@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye otros encoders visuales 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thinkspread/Qwen3.8-27B-Vision-CoreML-fp16
+- Repositorio Hugging Face: https://huggingface.co/thinkspread/Qwen3.8-27B-Vision-CoreML-fp16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Motor tempo9: https://github.com/thinkspread/tempo9

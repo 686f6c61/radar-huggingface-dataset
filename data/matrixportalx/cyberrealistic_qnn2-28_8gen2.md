@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas con otros modelos similares en la información proporcionada. Existe otro modelo en HuggingFace con el mismo propósito, `Mr-J-369/CyberRealistic_Final-SD1.5-qnn2.28`, pero no se han publicado resultados comparativos de rendimiento ni calidad. La comparación se limitaría a la variante original de SD1.5 (CyberRealistic en Civitai) y otras conversiones QNN, pero sin datos objetivos no se puede realizar una tabla fiable.
+No se dispone de comparativas con otros modelos similares en la información proporcionada. Existe otro modelo en Hugging Face con el mismo propósito, `Mr-J-369/CyberRealistic_Final-SD1.5-qnn2.28`, pero no se han publicado resultados comparativos de rendimiento ni calidad. La comparación se limitaría a la variante original de SD1.5 (CyberRealistic en Civitai) y otras conversiones QNN, pero sin datos objetivos no se puede realizar una tabla fiable.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de comparativas con otros modelos similares en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/matrixportalx/CyberRealistic_qnn2.28_8gen2)
+- [Modelo en Hugging Face](https://huggingface.co/matrixportalx/CyberRealistic_qnn2.28_8gen2)
 - [Repositorio de conversión Sd-1.5-Converting-to-Qualcomm-QNN-Model](https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model)
 - [Modelo original CyberRealistic en Civitai](https://civitai.com/models/15003/cyberrealistic)
 - [Modelo similar Mr-J-369/CyberRealistic_Final-SD1.5-qnn2.28](https://huggingface.co/Mr-J-369/CyberRealistic_Final-SD1.5-qnn2.28)

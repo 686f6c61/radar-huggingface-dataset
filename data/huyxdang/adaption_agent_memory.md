@@ -2,7 +2,7 @@
 
 ## Resumen
 
-adaption_agent_memory es un adaptador LoRA (librería PEFT) para el modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario huyxdang en HuggingFace. No es un modelo completo, sino un conjunto de pesos de adaptación de aproximadamente 0,1 GB que debe cargarse sobre el modelo base para poder realizar inferencia. Fue entrenado mediante SFT (supervised fine-tuning) con AutoScientist, la herramienta de Adaption Labs, sobre un conjunto de datos denominado agent-memory.
+adaption_agent_memory es un adaptador LoRA (librería PEFT) para el modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario huyxdang en Hugging Face. No es un modelo completo, sino un conjunto de pesos de adaptación de aproximadamente 0,1 GB que debe cargarse sobre el modelo base para poder realizar inferencia. Fue entrenado mediante SFT (supervised fine-tuning) con AutoScientist, la herramienta de Adaption Labs, sobre un conjunto de datos denominado agent-memory.
 
 Su interés es doble. Por un lado, ilustra un flujo de ajuste fino automatizado y de bajo coste sobre un modelo de 0,8B de parámetros, orientado a tareas de memoria de agente. Por otro, publica de forma explícita la configuración completa del entrenamiento: LoRA con r=32, alpha=128, dropout de 0,05, 4 épocas, learning rate de 5e-5, scheduler coseno y módulos entrenables q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj y down_proj.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adaption_agent_memory (adaptador LoRA) | 0,8B de base + LoRA r=32 | No disponible | Sin benchmarks numéricos publicados | other | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible | No disponible | No disponible en la información | HuggingFace |
-| Qwen2.5-0.5B (referencia externa) | 0,49B | 32k | No disponible | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B (referencia externa) | 1,23B | 128k | No disponible | Llama 3.2 Community License | HuggingFace |
+| adaption_agent_memory (adaptador LoRA) | 0,8B de base + LoRA r=32 | No disponible | Sin benchmarks numéricos publicados | other | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible | No disponible | No disponible en la información | Hugging Face |
+| Qwen2.5-0.5B (referencia externa) | 0,49B | 32k | No disponible | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B (referencia externa) | 1,23B | 128k | No disponible | Llama 3.2 Community License | Hugging Face |
 
 Nota: las filas de Qwen2.5-0.5B y Llama-3.2-1B se incluyen como referencia de categoría (modelos densos de menos de 2B parámetros) y sus datos proceden de conocimiento general, no de la información proporcionada en esta consulta; conviene verificarlos en sus repositorios antes de citarlos.
 
@@ -90,7 +90,7 @@ Nota: las filas de Qwen2.5-0.5B y Llama-3.2-1B se incluyen como referencia de ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huyxdang/adaption_agent_memory
+- Modelo en Hugging Face: https://huggingface.co/huyxdang/adaption_agent_memory
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Adaption Labs (plataforma de entrenamiento AutoScientist): https://adaptionlabs.ai
 - Documentación de PEFT: https://huggingface.co/docs/peft

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| julianfgi/beit-baseline | 49.600 (checkpoint de inicialización) | no disponible | No | MIT | HuggingFace (repo de código) |
-| BEiT original (Microsoft) | ~86M a ~304M según variante | 224x224 parches de imagen | Sí, preentrenado | MIT | HuggingFace, repos oficiales |
-| ViT (Google) | ~86M a ~632M según variante | 224x224 parches de imagen | Sí, preentrenado | Apache 2.0 | HuggingFace |
+| julianfgi/beit-baseline | 49.600 (checkpoint de inicialización) | no disponible | No | MIT | Hugging Face (repo de código) |
+| BEiT original (Microsoft) | ~86M a ~304M según variante | 224x224 parches de imagen | Sí, preentrenado | MIT | Hugging Face, repos oficiales |
+| ViT (Google) | ~86M a ~632M según variante | 224x224 parches de imagen | Sí, preentrenado | Apache 2.0 | Hugging Face |
 
 La comparación con BEiT original y ViT se ofrece como referencia de categoría (transformers de visión); no se dispone de datos de rendimiento del repositorio analizado para establecer una comparación cuantitativa.
 
@@ -79,5 +79,5 @@ La comparación con BEiT original y ViT se ofrece como referencia de categoría 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julianfgi/beit-baseline
+- Hugging Face: https://huggingface.co/julianfgi/beit-baseline
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

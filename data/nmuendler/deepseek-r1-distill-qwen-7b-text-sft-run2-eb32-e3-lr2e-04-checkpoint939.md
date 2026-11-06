@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) entrenado sobre `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. Lo publica el usuario `nmuendler` como un *checkpoint* intermedio o final de un proceso de ajuste fino supervisado sobre texto (el identificador incluye `text-sft-run2-eb32-e3-lr2e-04-checkpoint939`). El repositorio pesa 0,3 GB, un orden de magnitud coherente con pesos de adaptador de bajo rango y no con un modelo de 7 000 millones de parámetros, y la model card es la plantilla por defecto de HuggingFace sin ningún campo completado: no hay descripción, datos de entrenamiento, hiperparámetros declarados ni resultados de evaluación.
+Este repositorio no contiene un modelo completo, sino un adaptador LoRA (PEFT) entrenado sobre `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. Lo publica el usuario `nmuendler` como un *checkpoint* intermedio o final de un proceso de ajuste fino supervisado sobre texto (el identificador incluye `text-sft-run2-eb32-e3-lr2e-04-checkpoint939`). El repositorio pesa 0,3 GB, un orden de magnitud coherente con pesos de adaptador de bajo rango y no con un modelo de 7 000 millones de parámetros, y la model card es la plantilla por defecto de Hugging Face sin ningún campo completado: no hay descripción, datos de entrenamiento, hiperparámetros declarados ni resultados de evaluación.
 
 El modelo base, DeepSeek-R1-Distill-Qwen-7B, es un destilado de las trazas de razonamiento de DeepSeek-R1 en una arquitectura Qwen (decoder-only tipo transformer) de aproximadamente 7 000 millones de parámetros, orientado a tareas de razonamiento matemático, lógico y de código con cadenas de pensamiento largas. Este adaptador pretende ajustar ese comportamiento mediante SFT, presumiblemente para un estilo de respuesta o un dominio concreto, aunque el autor no documenta cuál.
 
@@ -24,8 +24,8 @@ Su relevancia práctica es limitada tal y como está publicado: cero descargas, 
 | Biblioteca declarada | peft (PEFT 0.19.1 en el entorno del autor) |
 | Tarea (pipeline) | text-generation |
 | Tamano del repositorio | 0,3 GB |
-| Fecha de creacion | 2026-09-16, segun los metadatos de HuggingFace |
-| Fecha de actualizacion | 2026-09-16, segun los metadatos de HuggingFace |
+| Fecha de creacion | 2026-09-16, segun los metadatos de Hugging Face |
+| Fecha de actualizacion | 2026-09-16, segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparado para este adaptador, por lo que 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-run2-eb32-e3-lr2e-04-checkpoint939
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+- Adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-run2-eb32-e3-lr2e-04-checkpoint939
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Calculadora de impacto de carbono (referencia del tag `arxiv:1910.09700`): https://mlco2.github.io/impact

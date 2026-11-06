@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre estos artefactos en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlexeyNe/kokoro-82m-coreml-generator
+- Repositorio en Hugging Face: https://huggingface.co/AlexeyNe/kokoro-82m-coreml-generator
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Proyecto Core ML complementario: https://huggingface.co/mattmireles/kokoro-coreml
 - Script de conversion `export_generator.py`: incluido en el propio repositorio (no se proporciona URL directa en la informacion disponible)

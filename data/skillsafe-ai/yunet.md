@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YuNet es un detector de caras convolucional ligero publicado por Shiqi Yu y distribuido a traves del repositorio OpenCV Zoo. El artefacto que nos ocupa no es el entrenamiento original, sino una importacion reproducible alojada por SkillSafe en HuggingFace (`skillsafe-ai/yunet`) que empaqueta el fichero ONNX `face_detection_yunet_2026may.onnx` para su uso directo en navegador mediante `onnxruntime-web`.
+YuNet es un detector de caras convolucional ligero publicado por Shiqi Yu y distribuido a traves del repositorio OpenCV Zoo. El artefacto que nos ocupa no es el entrenamiento original, sino una importacion reproducible alojada por SkillSafe en Hugging Face (`skillsafe-ai/yunet`) que empaqueta el fichero ONNX `face_detection_yunet_2026may.onnx` para su uso directo en navegador mediante `onnxruntime-web`.
 
 El modelo resuelve una tarea acotada: localizar rostros en una imagen y devolver, para cada deteccion, una caja delimitadora, una puntuacion de objeto, una puntuacion de clase y cinco puntos clave faciales (ojos, nariz y comisuras de la boca). Su relevancia actual no esta en la generacion de texto ni en el razonamiento, sino en su tamano: 0,22 MB en float32, inferencia en CPU del orden de 1,5 ms y una ventana de entrada totalmente dinamica (`[1, 3, height, width]`), lo que permite ejecutarlo integramente en el cliente sin enviar imagenes a un servidor.
 
@@ -82,7 +82,7 @@ La informacion proporcionada no incluye datos de rendimiento ni de parametros de
 
 | Modelo | Parametros | Entrada / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YuNet (este artefacto) | no disponible; fichero de 0,22 MB | Dinamica `[1, 3, height, width]`, verificada a 320x320 | MIT | ONNX opset 11 en HuggingFace; upstream en OpenCV Zoo |
+| YuNet (este artefacto) | no disponible; fichero de 0,22 MB | Dinamica `[1, 3, height, width]`, verificada a 320x320 | MIT | ONNX opset 11 en Hugging Face; upstream en OpenCV Zoo |
 | RetinaFace | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | SCRFD | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | BlazeFace / deteccion facial de MediaPipe | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -105,7 +105,7 @@ No se dispone de cifras comparativas de precision ni de latencia entre estas alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/yunet
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/yunet
 - Fichero ONNX directo: https://huggingface.co/skillsafe-ai/yunet/resolve/main/face_detection_yunet_2026may.onnx
 - Upstream (OpenCV Zoo, YuNet): https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet
 - Fichero upstream congelado por commit: https://media.githubusercontent.com/media/opencv/opencv_zoo/47534e27c9851bb1128ccc0102f1145e27f23f98/models/face_detection_yunet/face_detection_yunet_2026may.onnx

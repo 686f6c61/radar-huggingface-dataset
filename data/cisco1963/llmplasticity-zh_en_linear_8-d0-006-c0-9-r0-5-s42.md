@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-zh_en_linear_8-d0.006-c0.9-r0.5-s42` es un artefacto publicado en HuggingFace por el usuario Cisco1963. Por la nomenclatura del identificador (prefijo `llmplasticity`, sufijo `zh_en` y una secuencia de hiperparametros `d0.006-c0.9-r0.5-s42`) todo apunta a un checkpoint derivado de un experimento de investigacion sobre plasticidad en modelos de lenguaje, probablemente un ajuste fino o una modificacion de pesos sobre un modelo base no identificado en la informacion disponible. El sufijo `zh_en` sugiere un enfoque bilingue chino-ingles, y los valores `d`, `c`, `r` y `s` parecen corresponder a parametros de entrenamiento (posiblemente dropout, coeficiente, ratio y semilla).
+El modelo `Cisco1963/llmplasticity-zh_en_linear_8-d0.006-c0.9-r0.5-s42` es un artefacto publicado en Hugging Face por el usuario Cisco1963. Por la nomenclatura del identificador (prefijo `llmplasticity`, sufijo `zh_en` y una secuencia de hiperparametros `d0.006-c0.9-r0.5-s42`) todo apunta a un checkpoint derivado de un experimento de investigacion sobre plasticidad en modelos de lenguaje, probablemente un ajuste fino o una modificacion de pesos sobre un modelo base no identificado en la informacion disponible. El sufijo `zh_en` sugiere un enfoque bilingue chino-ingles, y los valores `d`, `c`, `r` y `s` parecen corresponder a parametros de entrenamiento (posiblemente dropout, coeficiente, ratio y semilla).
 
 La ficha publica del repositorio es extremadamente escasa: no declara pipeline, licencia, idiomas ni arquitectura. No hay model card, no hay resultados de benchmarks y no se especifica el modelo base sobre el que se ha construido. El numero de descargas (11) y de likes (0) indica que se trata de un repositorio de bajo perfil, probablemente un experimento personal o academico mas que un modelo destinado a produccion.
 
-Por tanto, esta ficha debe leerse como una evaluacion de un artefacto de investigacion con informacion publica minima. Todas las especificaciones tecnicas que no aparecen en los metadatos de HuggingFace se marcan como "no disponible", y las estimaciones de hardware y las comparativas se basan exclusivamente en la convencion de nombres, no en datos verificados.
+Por tanto, esta ficha debe leerse como una evaluacion de un artefacto de investigacion con informacion publica minima. Todas las especificaciones tecnicas que no aparecen en los metadatos de Hugging Face se marcan como "no disponible", y las estimaciones de hardware y las comparativas se basan exclusivamente en la convencion de nombres, no en datos verificados.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ Dado que no hay informacion verificada sobre el modelo, los casos de uso solo pu
 - Analisis de sensibilidad a hiperparametros: los valores `d0.006`, `c0.9` y `r0.5` permiten comparar este checkpoint con otras variantes del mismo autor, si estan publicadas.
 - Estudio de degradacion o retencion de capacidades: comparar este modelo con su base permitiria medir cuanto conocimiento se preserva tras el ajuste.
 - Docencia y formacion: util como ejemplo practico de publicacion de checkpoints de investigacion con nomenclatura sistematica.
-- Auditoria de artefactos de HuggingFace: caso de estudio sobre repositorios con documentacion insuficiente y su impacto en la reproducibilidad.
+- Auditoria de artefactos de Hugging Face: caso de estudio sobre repositorios con documentacion insuficiente y su impacto en la reproducibilidad.
 
 No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni ninguna aplicacion que requiera garantias de calidad, dado que no hay evaluacion publica.
 
@@ -81,6 +81,6 @@ No disponible. No se puede identificar el modelo base ni la familia a la que per
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-d0.006-c0.9-r0.5-s42
+- Repositorio en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-d0.006-c0.9-r0.5-s42
 - Perfil del autor: https://huggingface.co/Cisco1963
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

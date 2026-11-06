@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only causal) publicado por el usuario francesca9805 en HuggingFace. No es un modelo entrenado desde cero: es un ajuste fino (fine-tune) supervisado mediante SFT con la libreria TRL sobre el checkpoint goldfish-models/urd_arab_10mb, un modelo de la familia Goldfish orientado, segun su identificador, a urdu y arabe sobre un corpus de 10 MB. El peso real declarado en safetensors es de 38.038.528 parametros, muy por debajo del GPT-2 small original (124 millones), lo que lo situa en la categoria de modelos ultraligeros.
+Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only causal) publicado por el usuario francesca9805 en Hugging Face. No es un modelo entrenado desde cero: es un ajuste fino (fine-tune) supervisado mediante SFT con la libreria TRL sobre el checkpoint goldfish-models/urd_arab_10mb, un modelo de la familia Goldfish orientado, segun su identificador, a urdu y arabe sobre un corpus de 10 MB. El peso real declarado en safetensors es de 38.038.528 parametros, muy por debajo del GPT-2 small original (124 millones), lo que lo situa en la categoria de modelos ultraligeros.
 
 Su relevancia es fundamentalmente experimental y de investigacion: el nombre del repositorio codifica variables del experimento (dataset "packed", etiqueta "Dp", semilla "seed3407") y el run de Weights & Biases asociado pertenece a la entidad f-padovani-university-of-groningen, lo que sugiere un contexto academico de estudio de tokenizadores y entrenamiento en lenguas de bajos recursos. No hay evidencia de que sea un modelo destinado a produccion: acumula 0 descargas y 0 likes, no declara idiomas, licencia ni benchmarks.
 
@@ -47,7 +47,7 @@ El entrenamiento es un ajuste fino supervisado (SFT) ejecutado con TRL 0.23.0, T
 - Generacion de texto en CPU o dispositivos sin GPU: con unos 76 MB en bf16, el modelo puede ejecutarse en portatiles, contenedores modestos o entornos embebidos para demostraciones de completado de texto.
 - Aumento de datos para urdu y arabe: puede emplearse para generar continuaciones sinteticas de frases que alimenten corpus de entrenamiento, siempre con revision humana por el riesgo de degeneracion y alucinacion de un modelo de este tamano.
 - Experimentos de decodificacion y evaluacion de prompts: dado su bajisimo coste de inferencia, es adecuado para barridos masivos de hiperparametros de generacion (temperatura, top-p, penalizacion de repeticion) antes de escalar a modelos mayores.
-- Pruebas de integracion en pipelines de HuggingFace: el repositorio esta etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que puede usarse para validar despliegues en TGI o Inference Endpoints a coste casi nulo.
+- Pruebas de integracion en pipelines de Hugging Face: el repositorio esta etiquetado con `text-generation-inference` y `endpoints_compatible`, por lo que puede usarse para validar despliegues en TGI o Inference Endpoints a coste casi nulo.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - En cuantizacion de 4 bits (previa conversion a GGUF, no publicada por el autor) el peso quedaria en torno a 19-25 MB, mas overhead de runtime.
 - GPU recomendadas: cualquier GPU CUDA con 1 GB o mas de memoria es suficiente; se puede usar desde una GTX 1050 Ti hasta una H100, aunque el modelo esta muy sobredimensionado para aceleradores de gama alta.
 - Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 e incluso iGPU con memoria unificada.
-- Despliegue: `transformers` con `pipeline("text-generation")` (metodo documentado en la model card), vLLM (soporta arquitecturas GPT-2), HuggingFace TGI (el repo esta etiquetado como `text-generation-inference`), y conversion a GGUF para llama.cpp u Ollama, que no se distribuye en el repositorio y habria que generar.
+- Despliegue: `transformers` con `pipeline("text-generation")` (metodo documentado en la model card), vLLM (soporta arquitecturas GPT-2), Hugging Face TGI (el repo esta etiquetado como `text-generation-inference`), y conversion a GGUF para llama.cpp u Ollama, que no se distribuye en el repositorio y habria que generar.
 - Latencia y throughput: no disponibles. Cualitativamente, con 38 M de parametros la generacion en CPU es de decenas de tokens por segundo y en GPU moderna de miles de tokens por segundo en lote, pero no hay mediciones publicadas que lo confirmen.
 - Almacenamiento: el repositorio completo ocupa 0,1 GB.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407 | 38.038.528 | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Fine-tune SFT con TRL sobre el modelo base |
-| goldfish-models/urd_arab_10mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Modelo de la familia Goldfish, origen del ajuste |
+| francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407 | 38.038.528 | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Fine-tune SFT con TRL sobre el modelo base |
+| goldfish-models/urd_arab_10mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Modelo de la familia Goldfish, origen del ajuste |
 | Alternativas de terceros de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se han identificado modelos comparables con datos verificables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gesooqko
 - Repositorio de TRL: https://github.com/huggingface/trl

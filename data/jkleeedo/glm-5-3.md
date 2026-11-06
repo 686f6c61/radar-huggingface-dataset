@@ -6,7 +6,7 @@ GLM-5.3 es el modelo insignia de la serie GLM-5 de Z.ai (Zhipu AI), disenado esp
 
 La relevancia de GLM-5.3 en el ecosistema abierto es doble. Por un lado, Z.ai lo presenta como el modelo de pesos abiertos mas capacitado para programacion, con una mejora del 50 por ciento frente a GLM-5.2 en su benchmark interno Z.ai Code Bench. Por otro, su publicacion ha generado un debate relevante sobre capacidades duales: el Center for AI Standards and Innovation (CAISI) del NIST lo califico como el modelo de pesos abiertos con mayores capacidades ofensivas en ciberseguridad publicado hasta la fecha, situandolo unos cuatro meses por detras de la frontera estadounidense en su agregado de benchmarks de ciberseguridad.
 
-Existe una discrepancia documental importante que conviene verificar antes de cualquier uso: las fuentes de Z.ai y los resumenes de terceros indican licencia MIT, mientras que el repositorio de HuggingFace analizado en esta ficha (`jkleeedo/GLM-5.3`) declara `license:other` con el identificador `glm-5.3` y acceso restringido. Ademas, ese repositorio no pertenece a la organizacion oficial de Z.ai, sino a un usuario individual, y registra cero descargas y cero valoraciones en el momento de la consulta.
+Existe una discrepancia documental importante que conviene verificar antes de cualquier uso: las fuentes de Z.ai y los resumenes de terceros indican licencia MIT, mientras que el repositorio de Hugging Face analizado en esta ficha (`jkleeedo/GLM-5.3`) declara `license:other` con el identificador `glm-5.3` y acceso restringido. Ademas, ese repositorio no pertenece a la organizacion oficial de Z.ai, sino a un usuario individual, y registra cero descargas y cero valoraciones en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -18,11 +18,11 @@ Existe una discrepancia documental importante que conviene verificar antes de cu
 | Longitud de contexto | 1.000.000 de tokens |
 | Tipos de cuantizacion | FP8 (tag `fp8` en el repositorio); no se detallan otras cuantizaciones (GGUF, AWQ, GPTQ) en la informacion disponible |
 | Idiomas soportados | Ingles y chino (tags `en`, `zh`) |
-| Licencia | Discrepancia: MIT segun Z.ai y fuentes de terceros; `license:other` con identificador `glm-5.3` en el repositorio de HuggingFace consultado |
+| Licencia | Discrepancia: MIT segun Z.ai y fuentes de terceros; `license:other` con identificador `glm-5.3` en el repositorio de Hugging Face consultado |
 | Formato de pesos | Safetensors |
 | Tamano del repositorio | 755,7 GB |
 | Libreria de inferencia | Transformers |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion indicada | 26 de agosto de 2026 (segun Z.ai) |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3 | 753.000 millones | Aproximadamente 40.000 millones | 1.000.000 de tokens | MIT segun Z.ai; `license:other` en el repositorio de HuggingFace consultado | Pesos abiertos, acceso restringido en el repositorio analizado |
+| GLM-5.3 | 753.000 millones | Aproximadamente 40.000 millones | 1.000.000 de tokens | MIT segun Z.ai; `license:other` en el repositorio de Hugging Face consultado | Pesos abiertos, acceso restringido en el repositorio analizado |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible | Predecesor directo; GLM-5.3 comparte su modelo base |
 | GLM-5.1 | No disponible | No disponible | No disponible | No disponible | Predecesor; Z.ai lo cita como referencia de la mejora en tareas de horizonte largo |
 | Otros modelos de pesos abiertos de frontera | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la informacion proporcionada |
@@ -89,9 +89,9 @@ La comparativa cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Limitaciones y advertencias
 
-- Discrepancia de licencia: Z.ai y las fuentes de terceros indican MIT, mientras que el repositorio de HuggingFace consultado declara `license:other` con identificador `glm-5.3`. Antes de un uso comercial es imprescindible verificar la licencia en el repositorio oficial.
+- Discrepancia de licencia: Z.ai y las fuentes de terceros indican MIT, mientras que el repositorio de Hugging Face consultado declara `license:other` con identificador `glm-5.3`. Antes de un uso comercial es imprescindible verificar la licencia en el repositorio oficial.
 - El repositorio analizado no pertenece a la organizacion oficial de Z.ai, sino a un usuario individual (`jkleeedo`), con cero descargas y cero valoraciones. No debe tratarse como distribucion oficial.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que anade friccion frente a las afirmaciones de apertura sin limites regionales.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que anade friccion frente a las afirmaciones de apertura sin limites regionales.
 - Riesgo de alucinacion: no disponible en las fuentes; en cualquier caso, es esperable en tareas de generacion de codigo y texto y debe validarse con pruebas automatizadas.
 - Sesgos conocidos: no disponible.
 - Idiomas: los tags del repositorio solo declaran ingles y chino. El rendimiento en castellano u otros idiomas no esta documentado y no deberia asumirse.
@@ -102,7 +102,7 @@ La comparativa cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jkleeedo/GLM-5.3
+- Repositorio de Hugging Face: https://huggingface.co/jkleeedo/GLM-5.3
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Documentacion oficial de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Ficha en openlm.ai: https://openlm.ai/glm-5.3/

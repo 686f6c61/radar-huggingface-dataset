@@ -73,7 +73,7 @@ No disponible. No se proporcionan comparaciones con otras cuantizaciones de Qwen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anan19990108/qwen25-1.5b-aimet-w4-qcs8550-12k
+- Repositorio Hugging Face: https://huggingface.co/anan19990108/qwen25-1.5b-aimet-w4-qcs8550-12k
 - AIMET (GitHub de Qualcomm): https://github.com/Qualcomm/aimet
 - AIMET (documentación oficial): https://quic.github.io/aimet-pages/releases/latest/index.html
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen

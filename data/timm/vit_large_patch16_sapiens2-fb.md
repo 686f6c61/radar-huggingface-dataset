@@ -82,8 +82,8 @@ Todas las variantes comparten la misma licencia, el mismo dataset de preentrenam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timm/vit_large_patch16_sapiens2.fb
-- Modelo original en HuggingFace: https://huggingface.co/facebook/sapiens2-pretrain-0.4b
+- Hugging Face: https://huggingface.co/timm/vit_large_patch16_sapiens2.fb
+- Modelo original en Hugging Face: https://huggingface.co/facebook/sapiens2-pretrain-0.4b
 - Colección de Sapiens2: https://huggingface.co/collections/facebook/sapiens2
 - Paper: https://arxiv.org/pdf/2604.21681
 - Página del proyecto: https://rawalkhirodkar.github.io/sapiens2

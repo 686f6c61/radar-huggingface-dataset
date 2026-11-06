@@ -70,9 +70,9 @@ El autor indica que la diferencia en litbench no es estadisticamente significati
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheDrainFlorist/gemma-4-e4b-it-VQ-PLE | 2,33B (reportado) | No disponible | 8-bit + VQ embeddings | gemma | HuggingFace |
-| mlx-community/gemma-4-e4b-it-8bit | ~4,4B (base) | No disponible | 8-bit | gemma | HuggingFace |
-| google/gemma-4-e4b-it (bf16) | ~4,4B | Hasta 256K (segun Google) | bf16 | gemma | HuggingFace |
+| TheDrainFlorist/gemma-4-e4b-it-VQ-PLE | 2,33B (reportado) | No disponible | 8-bit + VQ embeddings | gemma | Hugging Face |
+| mlx-community/gemma-4-e4b-it-8bit | ~4,4B (base) | No disponible | 8-bit | gemma | Hugging Face |
+| google/gemma-4-e4b-it (bf16) | ~4,4B | Hasta 256K (segun Google) | bf16 | gemma | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base. Frente al 8-bit convencional, el VQ-PLE ofrece menor tamano y RAM, con una KL mas cercana al bf16, pero con decode ~8% mas lento y prefill mas lento. Frente al bf16, la ventaja es la reduccion drastica de recursos, a costa de una perdida de fidelidad (KL de 7,45 mnats frente a 0 del bf16, aunque no se proporciona el valor de KL del bf16 en la tabla). No se dispone de comparaciones con otros modelos de tamano similar (por ejemplo, Llama 3.2 3B o Qwen2.5 4B) en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ La comparativa se limita a las variantes del mismo modelo base. Frente al 8-bit 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheDrainFlorist/gemma-4-e4b-it-VQ-PLE
+- Repositorio Hugging Face: https://huggingface.co/TheDrainFlorist/gemma-4-e4b-it-VQ-PLE
 - Modelo base (Google): https://huggingface.co/google/gemma-4-E4B
 - Pagina oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Ficha del modelo Gemma 4 E4B (gemma4.dev): https://gemma4.dev/models/gemma-4-e4b

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Roadstoning/qwen3-4b-clinical-scribe-lora | Adaptador LoRA sobre 4B | ~40.000 (config. de ejemplo) | LoRA PEFT | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base sin adaptador) | 4B | Amplio (familia Qwen3) | Transformer instruct | Apache 2.0 | HuggingFace, ampliamente descargado |
+| Roadstoning/qwen3-4b-clinical-scribe-lora | Adaptador LoRA sobre 4B | ~40.000 (config. de ejemplo) | LoRA PEFT | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base sin adaptador) | 4B | Amplio (familia Qwen3) | Transformer instruct | Apache 2.0 | Hugging Face, ampliamente descargado |
 | Otros adaptadores LoRA clínicos sobre Qwen3-4B | 4B + LoRA | Variable | LoRA PEFT | Variable | no disponible en la información proporcionada |
 
 La comparación directa con alternativas especializadas en scribe clínico no está disponible en la información proporcionada; el referente inmediato es el modelo base sin adaptador, que conserva capacidades generales pero no está especializado en notas clínicas.
@@ -83,7 +83,7 @@ La comparación directa con alternativas especializadas en scribe clínico no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roadstoning/qwen3-4b-clinical-scribe-lora
+- Modelo en Hugging Face: https://huggingface.co/Roadstoning/qwen3-4b-clinical-scribe-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Documentación de PEFT: no disponible en la información proporcionada
 - Documentación de vLLM sobre LoRA: no disponible en la información proporcionada

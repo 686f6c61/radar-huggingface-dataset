@@ -2,7 +2,7 @@
 
 ## Resumen
 
-picur-120M-base es un modelo de generacion de texto de tipo base, publicado por el usuario picur en HuggingFace, con 120.404.352 parametros (unos 120,4 M) y pesos en safetensors para la libreria transformers. La etiqueta de arquitectura del repositorio es lfm2, lo que lo situa en la familia de modelos hibridos de Liquid AI que combinan bloques de convolucion con atencion, aunque la model card no documenta la configuracion concreta de capas de esta variante. Esta entrenado y orientado exclusivamente al hungaro (hu), con licencia Apache-2.0.
+picur-120M-base es un modelo de generacion de texto de tipo base, publicado por el usuario picur en Hugging Face, con 120.404.352 parametros (unos 120,4 M) y pesos en safetensors para la libreria transformers. La etiqueta de arquitectura del repositorio es lfm2, lo que lo situa en la familia de modelos hibridos de Liquid AI que combinan bloques de convolucion con atencion, aunque la model card no documenta la configuracion concreta de capas de esta variante. Esta entrenado y orientado exclusivamente al hungaro (hu), con licencia Apache-2.0.
 
 Su relevancia es doble. Por un lado, cubre un nicho poco poblado: modelos pequenos y de licencia permisiva para hungaro, idioma con menos recursos que el ingles o el castellano en el ecosistema de modelos abiertos. Por otro, su tamano (0,2 GB de repositorio, ~0,24 GB en bfloat16) lo hace apto para experimentacion en una sola GPU de consumo, inferencia en CPU y uso como modelo borrador en decodificacion especulativa.
 
@@ -93,6 +93,6 @@ Diferenciacion: picur-120M-base es el unico de la tabla declarado explicitamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/picur/picur-120M-base
+- Modelo en Hugging Face: https://huggingface.co/picur/picur-120M-base
 - Referencia de la familia arquitectonica lfm2 (no verificada en esta busqueda): https://huggingface.co/LiquidAI/LFM2-350M
 - Busqueda web: no se encontro ningun enlace relevante sobre este modelo. Los resultados devueltos correspondian a consultas no relacionadas (abreviaturas medicas, paginas de Zhihu y Baidu, foros de videojuegos y productos de audio), por lo que no se incluyen.

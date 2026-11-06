@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 14M-fixed | 14M | 2048 | Investigación de data poisoning sobre Pythia-14M | no disponible | HuggingFace (repo `294-288-pretrain-interaction/14M-fixed`) |
-| Pythia-14M (EleutherAI) | 14M | 2048 | Modelo base de referencia para investigación de interpretabilidad | Apache 2.0 | HuggingFace y suite Pythia |
-| Pythia-70M (EleutherAI) | 70M | 2048 | Modelo base pequeño para estudios de escalado | Apache 2.0 | HuggingFace y suite Pythia |
+| 14M-fixed | 14M | 2048 | Investigación de data poisoning sobre Pythia-14M | no disponible | Hugging Face (repo `294-288-pretrain-interaction/14M-fixed`) |
+| Pythia-14M (EleutherAI) | 14M | 2048 | Modelo base de referencia para investigación de interpretabilidad | Apache 2.0 | Hugging Face y suite Pythia |
+| Pythia-70M (EleutherAI) | 70M | 2048 | Modelo base pequeño para estudios de escalado | Apache 2.0 | Hugging Face y suite Pythia |
 | Modelo de 160M del mismo grupo | 160M (no confirmado) | no disponible | Barrido de poisoning con la misma definición "fixed" | no disponible | Referenciado en la model card, no enlazado |
 
 La comparación con Pythia-14M es la más directa: mismo tamaño y arquitectura, pero 14M-fixed añade el protocolo de inyección y los checkpoints intermedios. Frente a Pythia-70M, el modelo de este análisis prioriza el control experimental sobre la capacidad.
@@ -82,7 +82,7 @@ La comparación con Pythia-14M es la más directa: mismo tamaño y arquitectura,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/294-288-pretrain-interaction/14M-fixed
+- Hugging Face: https://huggingface.co/294-288-pretrain-interaction/14M-fixed
 - Repositorio de código y artefactos: GitHub `294-288-pretrain-interaction/pretrain_interaction`, rama `yaowen-70m-sweep` (`sweep70m.py`, `artifacts/sweep70m/`, `yaowen_exp_hub/sweep_1012/`)
 - Dataset de preentrenamiento: `294-288-pretrain-interaction/Dolma3-16B` (referenciado en la model card)
 - Definición del target fijo: `artifacts/fixed-rtp/fixed-target.json` (referenciado en la model card)

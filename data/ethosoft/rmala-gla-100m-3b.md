@@ -102,5 +102,5 @@ Comparación con modelos externos (parámetros, contexto, licencia y disponibili
 
 ## Enlaces
 
-- HuggingFace (Ethosoft): https://huggingface.co/Ethosoft/rmala-gla-100m-3b
-- Espejo en HuggingFace (MercanAI): https://huggingface.co/MercanAI/rmala-gla-100m-3b
+- Hugging Face (Ethosoft): https://huggingface.co/Ethosoft/rmala-gla-100m-3b
+- Espejo en Hugging Face (MercanAI): https://huggingface.co/MercanAI/rmala-gla-100m-3b

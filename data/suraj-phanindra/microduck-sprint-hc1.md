@@ -6,7 +6,7 @@ microduck-sprint-hc1 es una política de control para el robot microduck de Poll
 
 El modelo opera con un espacio de observación de 61 dimensiones y un espacio de acción de 14 dimensiones a 50 Hz, según la model card del autor. La política es descrita como "perpetua": una vez cargada, mantiene la marcha indefinidamente hasta que se le indique lo contrario, a diferencia de políticas episódicas que requieren reinicio. El normalizador de observaciones está embebido dentro de `policy.onnx`, de modo que la política espera observaciones en crudo del robot, sin preprocesado externo.
 
-El interés de esta ficha es más metodológico que de rendimiento: ilustra un flujo de trabajo de robótica open source donde una política de control se versiona, se publica en HuggingFace y se despliega en hardware real mediante una orden de CLI, con un manifiesto que sigue un esquema versionado. La información pública disponible es muy limitada: cero descargas, cero likes, sin licencia declarada, sin idiomas declarados y un repositorio de 0,0 GB de tamaño (lo que sugiere un artefacto de pesos muy pequeño, coherente con una política de control de baja dimensión).
+El interés de esta ficha es más metodológico que de rendimiento: ilustra un flujo de trabajo de robótica open source donde una política de control se versiona, se publica en Hugging Face y se despliega en hardware real mediante una orden de CLI, con un manifiesto que sigue un esquema versionado. La información pública disponible es muy limitada: cero descargas, cero likes, sin licencia declarada, sin idiomas declarados y un repositorio de 0,0 GB de tamaño (lo que sugiere un artefacto de pesos muy pequeño, coherente con una política de control de baja dimensión).
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ La model card únicamente indica que el modelo fue ajustado mediante escalada de
 
 | Modelo | Parametros | Contexto / E-S | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| suraj-phanindra/microduck-sprint-hc1 | no disponible | Observación 61-D, acciones 14-D, 50 Hz | No publicado | no disponible | HuggingFace (0 descargas, 0 likes) |
-| namenu/microduck-arena (modelo base) | no disponible | No disponible | No disponible | no disponible | HuggingFace |
+| suraj-phanindra/microduck-sprint-hc1 | no disponible | Observación 61-D, acciones 14-D, 50 Hz | No publicado | no disponible | Hugging Face (0 descargas, 0 likes) |
+| namenu/microduck-arena (modelo base) | no disponible | No disponible | No disponible | no disponible | Hugging Face |
 | Otras políticas de microduck | no disponible | No disponible | No disponible | no disponible | no disponible |
 
 Solo se identifica con claridad un término de comparación, el modelo base namenu/microduck-arena, del cual este artefacto es un fine-tune por escalada de colina. No se dispone de datos de rendimiento del modelo base ni de licencia de ninguno de los dos, por lo que la comparación cuantitativa no es posible. No se conocen otras alternativas de la misma categoría a partir de la información proporcionada.
@@ -92,7 +92,7 @@ Solo se identifica con claridad un término de comparación, el modelo base name
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suraj-phanindra/microduck-sprint-hc1
+- Modelo en Hugging Face: https://huggingface.co/suraj-phanindra/microduck-sprint-hc1
 - Modelo base: https://huggingface.co/namenu/microduck-arena
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento por refuerzo: `pollen-robotics/microduck_rl` (rama `main`, commit `6ff40704a`)

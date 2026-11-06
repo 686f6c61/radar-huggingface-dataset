@@ -23,7 +23,7 @@ Su relevancia actual es limitada y muy específica: no hay métricas publicadas,
 | Tarea | Superresolución de imagen 4x orientada a fotografía real ("real-world") |
 | Entrada / salida | Imagen RGB de entrada / imagen RGB a 4x de resolución (tamaños no especificados en la model card) |
 | Runtime objetivo | WebGPU en navegador (ONNX Runtime Web); compatible con cualquier runtime que soporte ONNX |
-| Repositorio | 0,0 GB según los metadatos de HuggingFace |
+| Repositorio | 0,0 GB según los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Creado / actualizado | 2026-10-11 / 2026-10-11 (fechas tal como figuran en los metadatos) |
 
@@ -73,7 +73,7 @@ La model card no incluye métricas objetivas (PSNR, SSIM, LPIPS), comparaciones 
 
 | Modelo | Parámetros | Factor de escala | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aaaaaeeeee/blip-aux-upscale-real | no disponible | 4x | ONNX fp16 con datos externos | BSD-3-Clause | HuggingFace (0 descargas) |
+| aaaaaeeeee/blip-aux-upscale-real | no disponible | 4x | ONNX fp16 con datos externos | BSD-3-Clause | Hugging Face (0 descargas) |
 | Real-ESRGAN `realesr-general-x4v3.pth` (original) | no disponible | 4x | PyTorch (.pth) | BSD-3-Clause | Repositorio del proyecto original |
 | Otras variantes de Real-ESRGAN (por ejemplo, x4plus) | no disponible | 4x | PyTorch (.pth) | BSD-3-Clause | Repositorio del proyecto original |
 | Alternativas de superresolución de otras familias (SwinIR, ESRGAN original, waifu2x) | no disponible | no disponible | no disponible | no disponible | no disponibles en la información proporcionada |
@@ -94,7 +94,7 @@ La información disponible solo permite establecer que este paquete comparte pes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaaaaeeeee/blip-aux-upscale-real
+- Modelo en Hugging Face: https://huggingface.co/aaaaaeeeee/blip-aux-upscale-real
 - Licencia incluida en el repositorio: https://huggingface.co/aaaaaeeeee/blip-aux-upscale-real/blob/main/LICENSE.txt
 - Aviso de atribución: https://huggingface.co/aaaaaeeeee/blip-aux-upscale-real/blob/main/NOTICE.txt
 - Pesos ONNX: https://huggingface.co/aaaaaeeeee/blip-aux-upscale-real/blob/main/model/model.onnx

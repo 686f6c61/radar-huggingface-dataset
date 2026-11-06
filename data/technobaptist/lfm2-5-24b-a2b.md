@@ -18,7 +18,7 @@ Es relevante ahora porque compite, segun el autor, con modelos MoE de mayor tama
 | Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | No disponible en este repositorio (solo safetensors). El modelo original publica FP8, GGUF, ONNX y MLX-4bit |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, tailandes, indonesio, hindi, ruso y polaco (16 idiomas) |
-| Licencia | lfm1.0 (identificador `other` en HuggingFace) |
+| Licencia | lfm1.0 (identificador `other` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 48,0 GB |
 | Vocabulario | 128.000 tokens |
@@ -98,7 +98,7 @@ Respecto a LFM2-24B-A2B, la diferencia declarada es que LFM2.5 es un modelo de r
 - Modelo de solo texto: no procesa imagenes ni audio.
 - Idiomas: aunque se declaran 16 idiomas, la informacion disponible no aporta evaluaciones por idioma, por lo que el rendimiento relativo fuera del ingles es desconocido.
 - Cobertura de benchmarks limitada: solo se publica un resultado en LiveClaw, sin MMLU, HumanEval, GSM8K ni evaluaciones de seguridad.
-- Licencia lfm1.0: es una licencia propia (identificador `other` en HuggingFace), no una licencia de codigo abierto estandar. Es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial.
+- Licencia lfm1.0: es una licencia propia (identificador `other` en Hugging Face), no una licencia de codigo abierto estandar. Es imprescindible revisar el archivo LICENSE antes de cualquier uso comercial.
 - Repositorio resubido por terceros: el checkpoint de TechnoBaptist tiene 0 descargas y 0 interacciones, y no incluye informacion sobre validacion del contenido. Para produccion conviene verificar la integridad frente al repositorio oficial de LiquidAI.
 - Arquitectura no estandar: el uso de convoluciones cortas y de la variante `lfm2_moe` exige versiones recientes de Transformers y de los motores de inferencia; no todos los runtimes soportan esta arquitectura.
 - Modo de razonamiento obligatorio: el modelo siempre genera un bloque `<think>`, lo que incrementa el numero de tokens de salida y, por tanto, la latencia y el coste frente a un modelo que responde directamente.

@@ -6,7 +6,7 @@ Cyber-LFM3-Stage3 GGUF es una cuantización en formato GGUF (f16) de un adaptado
 
 El modelo cuenta con aproximadamente 1.728 millones de parámetros (1,73 B), lo que lo sitúa en la gama de modelos pequeños aptos para hardware de consumo. Su tamaño de repositorio es de 3,5 GB, coherente con una cuantización f16 de ese número de parámetros. Es relevante para desarrolladores que necesitan un modelo ligero y desplegable localmente para asistencia en revisión de código y tareas de seguridad, aunque la información pública disponible es muy limitada y no se han publicado benchmarks ni detalles de entrenamiento.
 
-La ficha se ha elaborado exclusivamente a partir de los metadatos de HuggingFace y del contenido del README; cualquier dato no presente en esa información se indica como "no disponible" para no inferir especificaciones no verificadas.
+La ficha se ha elaborado exclusivamente a partir de los metadatos de Hugging Face y del contenido del README; cualquier dato no presente en esa información se indica como "no disponible" para no inferir especificaciones no verificadas.
 
 ## Especificaciones tecnicas
 
@@ -76,6 +76,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dhdjxkxdnsbzj/cyber-lfm3-stage3-gguf
+- Hugging Face: https://huggingface.co/Dhdjxkxdnsbzj/cyber-lfm3-stage3-gguf
 - Modelo base (adaptador): https://huggingface.co/Dhdjxkxdnsbzj/appsec-lfm3-cyber-adapter-stage3
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

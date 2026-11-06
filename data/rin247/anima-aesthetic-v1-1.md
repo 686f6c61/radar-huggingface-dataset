@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anima-Aesthetic-v1.1 es un modelo de generacion de imagenes texto-a-imagen publicado por el usuario Rin247 en HuggingFace bajo el identificador `Rin247/Anima-Aesthetic-v1.1`. Se distribuye como un paquete de pesos cuantizados en formato safetensors y compatible con la libreria `diffusers`, empaquetando de forma conjunta los tres componentes habituales de un pipeline de difusion: el denoiser (UNet o transformer de difusion), el text encoder y el VAE. El modelo esta etiquetado con el descriptor `mecha`, lo que sugiere una orientacion estetica hacia tematicas de robots, mechas y ciencia ficcion, aunque la model card no explicita el dataset de entrenamiento ni el estilo concreto.
+Anima-Aesthetic-v1.1 es un modelo de generacion de imagenes texto-a-imagen publicado por el usuario Rin247 en Hugging Face bajo el identificador `Rin247/Anima-Aesthetic-v1.1`. Se distribuye como un paquete de pesos cuantizados en formato safetensors y compatible con la libreria `diffusers`, empaquetando de forma conjunta los tres componentes habituales de un pipeline de difusion: el denoiser (UNet o transformer de difusion), el text encoder y el VAE. El modelo esta etiquetado con el descriptor `mecha`, lo que sugiere una orientacion estetica hacia tematicas de robots, mechas y ciencia ficcion, aunque la model card no explicita el dataset de entrenamiento ni el estilo concreto.
 
 La relevancia de esta publicacion es fundamentalmente practica: el autor ofrece cuatro variantes de cuantizacion (FP4, FP8, INT4 e INT8) generadas mediante un proceso propio denominado MECHA Forge, que empaqueta los tres componentes del pipeline en un unico artefacto para simplificar el despliegue. Esto reduce la friccion de montar un pipeline completo a partir de componentes sueltos y permite elegir el equilibrio entre calidad y footprint de memoria segun el hardware disponible.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Anima-Aesthetic-v1.1 | no disponible | no disponible | no disponible | safetensors cuantizado (FP4/FP8/INT4/INT8) | HuggingFace |
-| Stable Diffusion XL | no disponible en esta ficha | no disponible | no disponible | safetensors | HuggingFace |
-| FLUX.1 | no disponible en esta ficha | no disponible | no disponible | safetensors | HuggingFace |
+| Anima-Aesthetic-v1.1 | no disponible | no disponible | no disponible | safetensors cuantizado (FP4/FP8/INT4/INT8) | Hugging Face |
+| Stable Diffusion XL | no disponible en esta ficha | no disponible | no disponible | safetensors | Hugging Face |
+| FLUX.1 | no disponible en esta ficha | no disponible | no disponible | safetensors | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable con alternativas de la misma categoria; la comparativa anterior solo refleja la disponibilidad general de modelos texto-a-imagen comparables.
 
@@ -80,4 +80,4 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rin247/Anima-Aesthetic-v1.1
+- Hugging Face: https://huggingface.co/Rin247/Anima-Aesthetic-v1.1

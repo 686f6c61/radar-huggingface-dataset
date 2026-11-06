@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) de tipo SFT desarrollado por el usuario de HuggingFace `francesca9805`, vinculado a un proyecto de investigación sobre tokenizadores de la Universidad de Groningen (visible en el enlace de Weights & Biases). Se trata de un modelo derivado de `francesca9805/ppt-wc-zipf-newlex-isl-before-100mb-packed-bfdiso_seed10`, que a su vez actúa como modelo base, y que ha sido entrenado con la librería TRL.
+El modelo `isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) de tipo SFT desarrollado por el usuario de Hugging Face `francesca9805`, vinculado a un proyecto de investigación sobre tokenizadores de la Universidad de Groningen (visible en el enlace de Weights & Biases). Se trata de un modelo derivado de `francesca9805/ppt-wc-zipf-newlex-isl-before-100mb-packed-bfdiso_seed10`, que a su vez actúa como modelo base, y que ha sido entrenado con la librería TRL.
 
 Por los tags y el identificador, se trata de un transformer de arquitectura GPT-2 con aproximadamente 124,7 millones de parametros totales, orientado a generacion de texto. La nomenclatura del nombre sugiere un experimento controlado sobre tokenizacion y composicion lexica ("wc", "zipf", "newlex", "isl", "100mb"), probablemente en el marco de un estudio academico sobre vocabularios y distribuciones de frecuencia (ley de Zipf), posiblemente centrado en islandes ("isl"). No obstante, la model card no confirma estos extremos.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,7 M | no disponible (GPT-2, tipico 1024) | sin benchmarks | no disponible | HuggingFace |
-| GPT-2 small (openai-community/gpt2) | 124 M | 1024 | benchmarks publicos de la familia GPT-2 | MIT (segun release de OpenAI) | HuggingFace |
-| Modelo base ppt-wc-zipf-newlex-isl-before-100mb-packed-bfdiso_seed10 | no disponible | no disponible | sin benchmarks | no disponible | HuggingFace |
+| isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,7 M | no disponible (GPT-2, tipico 1024) | sin benchmarks | no disponible | Hugging Face |
+| GPT-2 small (openai-community/gpt2) | 124 M | 1024 | benchmarks publicos de la familia GPT-2 | MIT (segun release de OpenAI) | Hugging Face |
+| Modelo base ppt-wc-zipf-newlex-isl-before-100mb-packed-bfdiso_seed10 | no disponible | no disponible | sin benchmarks | no disponible | Hugging Face |
 
 Nota: la comparacion con GPT-2 small se ofrece unicamente como referencia de categoria y tamano; no implica equivalencia de comportamiento, ya que el modelo descrito ha sido ajustado con SFT sobre un dataset no documentado. No se conocen alternativas directamente comparables dentro del mismo proyecto de investigacion mas alla del propio modelo base.
 
@@ -84,7 +84,7 @@ Nota: la comparacion con GPT-2 small se ofrece unicamente como referencia de cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
+- Hugging Face: https://huggingface.co/francesca9805/isl-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-isl-before-100mb-packed-bfdiso_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/2w4de9n0
 - Repositorio de TRL: https://github.com/huggingface/trl

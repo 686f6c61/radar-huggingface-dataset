@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Mov-SM-Executivo/Mov` alojado en HuggingFace es una publicacion que, a fecha de su creacion (25 de agosto de 2026), no contiene ninguna documentacion tecnica ni informacion sustancial sobre el modelo. La model card se limita a declarar la licencia MIT y la region de origen como Estados Unidos, sin especificar arquitectura, parametros, pesos, ni tareas soportadas. El repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicacion vacia o en estado preliminar.
+El repositorio `Mov-SM-Executivo/Mov` alojado en Hugging Face es una publicacion que, a fecha de su creacion (25 de agosto de 2026), no contiene ninguna documentacion tecnica ni informacion sustancial sobre el modelo. La model card se limita a declarar la licencia MIT y la region de origen como Estados Unidos, sin especificar arquitectura, parametros, pesos, ni tareas soportadas. El repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicacion vacia o en estado preliminar.
 
-La busqueda web realizada no ha encontrado ninguna referencia directa a este modelo. Los resultados obtenidos corresponden a proyectos homonimos o similares como MOV.AI (plataforma de robotica), Move AI (captura de movimiento) o Moveworks (plataforma de IA agente), que no guardan relacion con este repositorio de HuggingFace.
+La busqueda web realizada no ha encontrado ninguna referencia directa a este modelo. Los resultados obtenidos corresponden a proyectos homonimos o similares como MOV.AI (plataforma de robotica), Move AI (captura de movimiento) o Moveworks (plataforma de IA agente), que no guardan relacion con este repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -54,5 +54,5 @@ No disponible. Al no conocer la arquitectura ni el tamano del modelo, no se pued
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mov-SM-Executivo/Mov
+- Repositorio en Hugging Face: https://huggingface.co/Mov-SM-Executivo/Mov
 - No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados con este modelo.

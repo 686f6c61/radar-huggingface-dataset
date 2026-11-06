@@ -80,6 +80,6 @@ Nota: la comparación con ViT-Base estándar se hace solo por arquitectura, no p
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/mamaruov/model_016034806_vit_base)
+- [Repositorio de Hugging Face](https://huggingface.co/mamaruov/model_016034806_vit_base)
 - [GitHub: google-research/vision_transformer](https://github.com/google-research/vision_transformer) (referencia de arquitectura ViT)
 - [Documentación ViT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/vit)

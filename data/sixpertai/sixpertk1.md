@@ -89,6 +89,6 @@ No se dispone de comparaciones directas con otros modelos de la misma clase (8B)
 
 ## Enlaces
 
-- [HuggingFace - SixpertAI/SixpertK1](https://huggingface.co/SixpertAI/SixpertK1)
-- [Perfil de SixpertAI en HuggingFace](https://huggingface.co/SixpertAI)
+- [Hugging Face - SixpertAI/SixpertK1](https://huggingface.co/SixpertAI/SixpertK1)
+- [Perfil de SixpertAI en Hugging Face](https://huggingface.co/SixpertAI)
 - [Dataset sixpert/sixpert-k1-dataset](https://huggingface.co/datasets/sixpert/sixpert-k1-dataset)

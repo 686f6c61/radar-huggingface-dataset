@@ -85,10 +85,10 @@ No se han publicado resultados en benchmarks estándar de clasificación o razon
 
 | Modelo | Tarea | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Andesprit/dictaria-question-classifier | Clasificación de preguntas en 6 clases | no disponible | 96 tokens | 96,8 % de precisión global en 340 casos propios | Apache 2.0 | HuggingFace, ONNX int8 |
-| ai-research-lab/bert-question-classifier | Clasificación de preguntas | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| ai-research-lab/bert-question-classifier-onnx | Clasificación de preguntas | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | Embeddings de frases multilingües (modelo base) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Andesprit/dictaria-question-classifier | Clasificación de preguntas en 6 clases | no disponible | 96 tokens | 96,8 % de precisión global en 340 casos propios | Apache 2.0 | Hugging Face, ONNX int8 |
+| ai-research-lab/bert-question-classifier | Clasificación de preguntas | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| ai-research-lab/bert-question-classifier-onnx | Clasificación de preguntas | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | Embeddings de frases multilingües (modelo base) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La única alternativa funcionalmente equivalente identificada en la búsqueda es la familia `ai-research-lab/bert-question-classifier`, de la que no se dispone de parámetros, contexto, licencia ni métricas. La comparación cuantitativa con ella no es posible con la información disponible. Conviene señalar que el modelo base es un modelo de embeddings, no un clasificador, por lo que no es sustituible directamente sin añadir y entrenar una cabeza de clasificación.
 
@@ -106,7 +106,7 @@ La única alternativa funcionalmente equivalente identificada en la búsqueda es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Andesprit/dictaria-question-classifier
+- Modelo en Hugging Face: https://huggingface.co/Andesprit/dictaria-question-classifier
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Producto Dictaria (coach de reuniones, transcripción y notas): https://dictaria.andesprit.com/
 - Organización Andesprit en GitHub: https://github.com/Andesprit

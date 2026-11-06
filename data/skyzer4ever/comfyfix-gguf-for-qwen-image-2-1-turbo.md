@@ -104,7 +104,7 @@ No se dispone de datos en la informacion proporcionada para comparar con familia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/skyzer4ever/ComfyFix-GGUF-for-Qwen-Image-2.1-Turbo
+- Repositorio Hugging Face: https://huggingface.co/skyzer4ever/ComfyFix-GGUF-for-Qwen-Image-2.1-Turbo
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
 - Cuantizacion de origen (AtomicChat): https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-GGUF

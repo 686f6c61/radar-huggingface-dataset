@@ -6,7 +6,7 @@ Edge0-35B-A3B-preview es un modelo de lenguaje disperso (MoE) de clase 35B desar
 
 Tecnicamente combina tres mecanismos: offload de expertos a SSD, un cabezal entrenado llamado prerouter que predice el enrutamiento con un paso de antelacion para solapar las cargas con el forward pass, y Recover-LoRA, un conjunto de adaptadores LoRA entrenados por destilacion desde el profesor en fp16 que recuperan la mayor parte de la perdida de cuantizacion. El resultado declarado es de 15 tok/s de decodificacion y 140 tok/s de prefill en un Mac mini M4 Pro de 24 GB.
 
-Es relevante ahora porque ataca un cuello de botella concreto: servir un MoE de 35B en hardware de clase telefono o en un equipo de sobremesa sin VRAM dedicada. La contrapartida es que se trata de una vista previa temprana: el soporte de agentes y tool calling es debil de forma reconocida por el autor, el backend MLX solo apunta a Apple Silicon y el modelo esta afinado principalmente para los idiomas del modelo base, sin listado oficial de idiomas en la ficha de HuggingFace.
+Es relevante ahora porque ataca un cuello de botella concreto: servir un MoE de 35B en hardware de clase telefono o en un equipo de sobremesa sin VRAM dedicada. La contrapartida es que se trata de una vista previa temprana: el soporte de agentes y tool calling es debil de forma reconocida por el autor, el backend MLX solo apunta a Apple Silicon y el modelo esta afinado principalmente para los idiomas del modelo base, sin listado oficial de idiomas en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Es relevante ahora porque ataca un cuello de botella concreto: servir un MoE de 
 | Modelo base | Qwen/Qwen3.5-MoE-35B-A3B |
 | Framework de ejecucion | edge0 (backend MLX) |
 | Pipeline | text-generation |
-| Descargas / likes en HuggingFace | 329 / 23 |
+| Descargas / likes en Hugging Face | 329 / 23 |
 
 ## Arquitectura y entrenamiento
 
@@ -93,9 +93,9 @@ La memoria activa maxima corresponde a contextos cortos; los contextos largos an
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Edge0-35B-A3B-preview | 34,66 B totales (MoE, K=4) | No disponible | Media 79,2 en el conjunto de benchmarks del autor (int4) | Apache 2.0 | HuggingFace, requiere framework edge0 + MLX |
-| Qwen3.5-MoE 35B-A3B (fp16, modelo base) | Clase 35B (MoE, K=4) | No disponible | Media 83,2 en el mismo conjunto | No disponible en la informacion proporcionada | HuggingFace |
-| Edge0-8B-A1B-preview | No disponible | No disponible | No disponible | Apache 2.0 (referenciado en los badges del autor) | HuggingFace, misma familia edge0 |
+| Edge0-35B-A3B-preview | 34,66 B totales (MoE, K=4) | No disponible | Media 79,2 en el conjunto de benchmarks del autor (int4) | Apache 2.0 | Hugging Face, requiere framework edge0 + MLX |
+| Qwen3.5-MoE 35B-A3B (fp16, modelo base) | Clase 35B (MoE, K=4) | No disponible | Media 83,2 en el mismo conjunto | No disponible en la informacion proporcionada | Hugging Face |
+| Edge0-8B-A1B-preview | No disponible | No disponible | No disponible | Apache 2.0 (referenciado en los badges del autor) | Hugging Face, misma familia edge0 |
 
 La comparacion directa relevante es contra el propio modelo base en fp16: el pipeline int4 pierde 3,9 puntos de media, con la mayor caida en AIME 2026 (6,1 puntos) y la menor en GPQA-Diamond (2,0 puntos), a cambio de reducir la memoria activa a menos de 3 GiB. No se dispone de datos de benchmarks de otros modelos comparables en la informacion proporcionada.
 
@@ -106,7 +106,7 @@ La comparacion directa relevante es contra el propio modelo base en fp16: el pip
 - Backend restringido: el backend MLX apunta actualmente a Apple Silicon; no hay soporte CUDA en esta publicacion.
 - Dependencia critica del almacenamiento: el rendimiento depende de la latencia del SSD. En almacenamiento lento, la decodificacion se degrada y el beneficio del prerouter se vuelve mas determinante.
 - Contexto: la KV cache crece con la longitud de contexto; el autor recomienda contextos cortos para mantener el pico en torno a 3 GiB. La longitud de contexto soportada no esta publicada.
-- Idiomas: no hay listado oficial de idiomas en la ficha de HuggingFace y el modelo esta afinado principalmente para los idiomas del modelo base, por lo que el comportamiento fuera de ellos no esta garantizado.
+- Idiomas: no hay listado oficial de idiomas en la ficha de Hugging Face y el modelo esta afinado principalmente para los idiomas del modelo base, por lo que el comportamiento fuera de ellos no esta garantizado.
 - Riesgo de alucinacion: no se han publicado tasas de alucinacion ni evaluaciones de veracidad; aplican los riesgos habituales de un modelo de lenguaje sin datos especificos.
 - Sesgos: no se documentan evaluaciones de sesgo ni de seguridad.
 - Licencia: Apache 2.0, permisiva para uso comercial. Conviene verificar de todos modos las condiciones del modelo base Qwen3.5-MoE-35B-A3B, ya que la informacion disponible no detalla su licencia.
@@ -114,7 +114,7 @@ La comparacion directa relevante es contra el propio modelo base en fp16: el pip
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Edge0/Edge0-35B-A3B-preview
+- Modelo en Hugging Face: https://huggingface.co/Edge0/Edge0-35B-A3B-preview
 - Repositorio del framework edge0: https://github.com/Edge0-AI/edge0
 - Documentacion de edge0: https://github.com/Edge0-AI/edge0#documentation
 - Licencia: https://github.com/Edge0-AI/edge0/blob/main/LICENSE
@@ -122,4 +122,4 @@ La comparacion directa relevante es contra el propio modelo base en fp16: el pip
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-MoE-35B-A3B
 - OpenCompass (herramienta de evaluacion usada por el autor): https://github.com/open-compass/opencompass
 - Video demostrativo: https://huggingface.co/Edge0/Edge0-35B-A3B-preview/resolve/main/20260910-105854.mp4
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles son los presentes en la model card y en la ficha de HuggingFace.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los unicos enlaces utiles son los presentes en la model card y en la ficha de Hugging Face.

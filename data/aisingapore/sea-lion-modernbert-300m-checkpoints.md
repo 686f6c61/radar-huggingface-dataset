@@ -4,7 +4,7 @@
 
 SEA-LION-ModernBERT-300M-checkpoints es un repositorio de checkpoints intermedios de un modelo encoder-only desarrollado por el AI Products Pillar de AI Singapore, dentro de la iniciativa SEA-LION (Southeast Asian Languages In One Network). El modelo está construido sobre la arquitectura ModernBERT-base y combina el tokenizador SentencePiece de Gemma 3, con un vocabulario de 262.000 tokens, lo que permite una compresión y fertilidad de tokenización notablemente superiores para los sistemas de escritura complejos de las lenguas del Sudeste Asiático.
 
-El modelo se entrenó en dos fases masivas: una fase de pre-entrenamiento sobre 2 billones de tokens y una fase de mid-training sobre 1 billón adicional, cubriendo 13 idiomas (birmano, chino, inglés, filipino, indonesio, javanés, jemer, laosiano, malayo, sundanés, tamil, tailandés y vietnamita) junto con código. Este repositorio concreto libera los checkpoints intermedios de ambas etapas, tanto en formato Composer como HuggingFace, para facilitar la investigación, la transparencia y el desarrollo de aplicaciones posteriores.
+El modelo se entrenó en dos fases masivas: una fase de pre-entrenamiento sobre 2 billones de tokens y una fase de mid-training sobre 1 billón adicional, cubriendo 13 idiomas (birmano, chino, inglés, filipino, indonesio, javanés, jemer, laosiano, malayo, sundanés, tamil, tailandés y vietnamita) junto con código. Este repositorio concreto libera los checkpoints intermedios de ambas etapas, tanto en formato Composer como Hugging Face, para facilitar la investigación, la transparencia y el desarrollo de aplicaciones posteriores.
 
 La relevancia actual de este modelo reside en su enfoque específico para lenguas de baja representación en los ecosistemas de modelos pre-entrenados, y en su arquitectura moderna basada en ModernBERT, que incorpora atención lineal y decodificación eficiente, lo que permite contextos de 8.000 tokens con un coste computacional contenido. Su licencia MIT lo hace especialmente atractivo para uso comercial sin restricciones.
 
@@ -19,7 +19,7 @@ La relevancia actual de este modelo reside en su enfoque específico para lengua
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Birman, chino, ingles, filipino, indonesio, javanes, khmer, lao, malayo, sundan, tamil, tailandes, vietnamita (13 idiomas) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (checkpoints HuggingFace) y Composer (.pt) |
+| Formato de pesos | safetensors (checkpoints Hugging Face) y Composer (.pt) |
 
 ## Arquitectura y entrenamiento
 
@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - **VRAM estimada**: con 300 millones de parámetros, el modelo en FP16 ocupa aproximadamente 600 MB de VRAM, por lo que es ejecutable en cualquier GPU con más de 2 GB de VRAM.
 - **GPUs compatibles**: cualquier GPU consumer moderna (NVIDIA RTX 3060, RTX 4070, RTX 4090) es suficiente para inferencia y fine-tuning. Para fine-tuning con batch grande, se recomienda una GPU con al menos 8 GB de VRAM.
-- **Despliegue**: al ser un encoder-only, se integra fácilmente con HuggingFace Transformers, Sentence-Transformers (para embeddings) y frameworks de fine-tuning como PyTorch Lightning.
+- **Despliegue**: al ser un encoder-only, se integra fácilmente con Hugging Face Transformers, Sentence-Transformers (para embeddings) y frameworks de fine-tuning como PyTorch Lightning.
 - **Latencia**: para una secuencia de 512 tokens en una GPU consumer, la inferencia debería completarse en menos de 50 ms, aunque no se dispone de datos oficiales de throughput.
-- **Opciones de despliegue**: vLLM no es aplicable (modelos encoder), pero se puede usar con pipelines de HuggingFace, ONNX Runtime o TensorRT para optimización.
+- **Opciones de despliegue**: vLLM no es aplicable (modelos encoder), pero se puede usar con pipelines de Hugging Face, ONNX Runtime o TensorRT para optimización.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ El modelo destaca frente a XLM-R y BERT multilingual por su ventana de contexto 
 
 ## Enlaces
 
-- [Repositorio HuggingFace de los checkpoints](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M-checkpoints)
+- [Repositorio Hugging Face de los checkpoints](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M-checkpoints)
 - [Modelo final pre-entrenado (SEA-LION-ModernBERT-300M)](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-300M)
 - [Modelo de embeddings (SEA-LION-ModernBERT-Embedding-300M)](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-300M)
 - [Paper en arXiv (2508.12243)](https://arxiv.org/abs/2508.12243)

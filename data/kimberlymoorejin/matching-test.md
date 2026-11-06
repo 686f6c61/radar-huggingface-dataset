@@ -64,11 +64,11 @@ No disponible. No se conocen modelos comparables de la misma categoría (impleme
 
 - El checkpoint `model.safetensors` es una inicialización sin entrenar; no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - No se proporcionan datos de rendimiento, por lo que no es posible evaluar su calidad en tareas de *matching*.
-- La implementación es personalizada; las APIs genéricas de HuggingFace no pueden cargarla sin un adaptador explícito.
+- La implementación es personalizada; las APIs genéricas de Hugging Face no pueden cargarla sin un adaptador explícito.
 - No se especifican idiomas soportados ni dominios de aplicación; el modelo podría no generalizar fuera del contexto de entrenamiento (que no existe).
 - La licencia MIT permite uso comercial, pero el autor advierte que se deben revisar los términos de los datos externos si se usan con otros datasets.
 - No apto para producción: cualquier resultado obtenido con este checkpoint debe documentarse por separado de los valores por defecto.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [kimberlymoorejin/matching-test](https://huggingface.co/kimberlymoorejin/matching-test)
+- Repositorio Hugging Face: [kimberlymoorejin/matching-test](https://huggingface.co/kimberlymoorejin/matching-test)

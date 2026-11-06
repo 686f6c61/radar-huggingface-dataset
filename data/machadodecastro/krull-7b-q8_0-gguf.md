@@ -83,5 +83,5 @@ Nota: la comparativa se basa en datos publicos de los modelos base. No se dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MachadoDeCastro/krull-7b.Q8_0.gguf
+- Hugging Face: https://huggingface.co/MachadoDeCastro/krull-7b.Q8_0.gguf
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B

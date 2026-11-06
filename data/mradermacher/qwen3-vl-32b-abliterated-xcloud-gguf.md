@@ -83,7 +83,7 @@ La diferencia principal con el Huihui es que este último usa cuantizaciones con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-32B-Abliterated-xCloud-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-32B-Abliterated-xCloud-GGUF
 - Modelo base original (safetensors): https://huggingface.co/xCloudinfo/Qwen3-VL-32B-Abliterated-xCloud
 - Repositorio oficial Qwen3-VL (GitHub): https://github.com/QwenLM/Qwen3-VL
 - Variante alternativa abliterated: https://huggingface.co/mradermacher/Huihui-Qwen3-VL-32B-Instruct-abliterated-i1-GGUF

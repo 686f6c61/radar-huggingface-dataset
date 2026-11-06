@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FoodFat AI coach es un ajuste fino (fine-tuning) del modelo google/gemma-4-E2B-it, publicado por el usuario akshaykotish en HuggingFace. El modelo está especializado en orientación general sobre fitness y nutrición, y se ha entrenado con aproximadamente 800 conversaciones de coaching construidas a partir del catálogo de alimentos y productos de FoodFat. El resultado se ha fusionado y convertido a LiteRT-LM en formato `.litertlm` con pesos int4, pensado para ejecutarse en el propio dispositivo (on-device) dentro de la aplicación FoodFat.
+FoodFat AI coach es un ajuste fino (fine-tuning) del modelo google/gemma-4-E2B-it, publicado por el usuario akshaykotish en Hugging Face. El modelo está especializado en orientación general sobre fitness y nutrición, y se ha entrenado con aproximadamente 800 conversaciones de coaching construidas a partir del catálogo de alimentos y productos de FoodFat. El resultado se ha fusionado y convertido a LiteRT-LM en formato `.litertlm` con pesos int4, pensado para ejecutarse en el propio dispositivo (on-device) dentro de la aplicación FoodFat.
 
 La relevancia de este modelo radica en su enfoque de despliegue local: al estar basado en Gemma 4 E2B (una variante pequeña de la familia Gemma 4) y cuantizado a int4, está diseñado para funcionar sin conexión y con requisitos de hardware reducidos, lo que encaja con casos de uso móvil donde la privacidad y la latencia importan. El ajuste se realizó con QLoRA de rango 16 usando MLX, una técnica que permite adaptar el modelo con recursos limitados.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FoodFat AI coach (este modelo) | no disponible (base E2B) | no disponible | apache-2.0 | HuggingFace, formato `.litertlm` | Fine-tuning de dominio con QLoRA, orientado a on-device |
-| google/gemma-4-E2B-it (modelo base) | variante E2B de Gemma 4 | no disponible | apache-2.0 | HuggingFace | Modelo generalista de Google, sin especialización de dominio |
+| FoodFat AI coach (este modelo) | no disponible (base E2B) | no disponible | apache-2.0 | Hugging Face, formato `.litertlm` | Fine-tuning de dominio con QLoRA, orientado a on-device |
+| google/gemma-4-E2B-it (modelo base) | variante E2B de Gemma 4 | no disponible | apache-2.0 | Hugging Face | Modelo generalista de Google, sin especialización de dominio |
 | Alternativas de coaching nutricional ajustadas | no disponible | no disponible | no disponible | no disponible | No se dispone de información de modelos comparables en la información proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akshaykotish/foodfat-ai-coach
+- Hugging Face: https://huggingface.co/akshaykotish/foodfat-ai-coach
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - LiteRT-LM (documentación de Google): no disponible en la información proporcionada
 - MLX (framework de Apple): no disponible en la información proporcionada

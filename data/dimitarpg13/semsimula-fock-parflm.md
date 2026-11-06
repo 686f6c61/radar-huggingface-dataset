@@ -66,9 +66,9 @@ La model card también menciona que la variante Fock Attention (también leak-fr
 
 | Modelo | Arquitectura | PPL TinyStories | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| semsimula-fock-parflm (este) | Fock-PARFLM (no transformer) | 9.70 | CC-BY-4.0 | HuggingFace |
-| semsimula-fock-attention | Fock Attention (no transformer) | 9.42 | CC-BY-4.0 | HuggingFace |
-| semsimula-parflm-multixi | MultiXi PARFLM (no transformer) | no disponible | CC-BY-4.0 | HuggingFace |
+| semsimula-fock-parflm (este) | Fock-PARFLM (no transformer) | 9.70 | CC-BY-4.0 | Hugging Face |
+| semsimula-fock-attention | Fock Attention (no transformer) | 9.42 | CC-BY-4.0 | Hugging Face |
+| semsimula-parflm-multixi | MultiXi PARFLM (no transformer) | no disponible | CC-BY-4.0 | Hugging Face |
 
 No se dispone de comparaciones con modelos transformer de tamaño similar (p. ej., GPT-2 pequeño o Pythia) en los datos proporcionados. La comparativa se limita a la familia SPLM.
 
@@ -85,7 +85,7 @@ No se dispone de comparaciones con modelos transformer de tamaño similar (p. ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-fock-parflm
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-fock-parflm
 - Variante Fock Attention: https://huggingface.co/dimitarpg13/semsimula-fock-attention
 - Variante MultiXi PARFLM: https://huggingface.co/dimitarpg13/semsimula-parflm-multixi
 - Variante estructurada con vtheta: https://huggingface.co/dimitarpg13/semsimula-fock-parflm-structured-vtheta

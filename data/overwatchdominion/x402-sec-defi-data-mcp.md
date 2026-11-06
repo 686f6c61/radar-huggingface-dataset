@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`x402-sec-defi-data-mcp` no es un modelo de lenguaje, sino un servidor MCP (Model Context Protocol) publicado en HuggingFace por el usuario `overwatchdominion`. Expone 25 herramientas de consulta de datos (SEC EDGAR, matemáticas de DeFi en EVM, Bittensor, generación de leads, validación de correo y utilidades varias) que se cobran por llamada en USDC sobre Base mediante el protocolo de pagos x402. El servidor actúa como puente entre un agente de IA y una tienda de datos remota alojada en un Cloudflare Worker: las herramientas se generan dinámicamente a partir del `openapi.json` del servicio, de modo que el catálogo se actualiza sin redesplegar el cliente.
+`x402-sec-defi-data-mcp` no es un modelo de lenguaje, sino un servidor MCP (Model Context Protocol) publicado en Hugging Face por el usuario `overwatchdominion`. Expone 25 herramientas de consulta de datos (SEC EDGAR, matemáticas de DeFi en EVM, Bittensor, generación de leads, validación de correo y utilidades varias) que se cobran por llamada en USDC sobre Base mediante el protocolo de pagos x402. El servidor actúa como puente entre un agente de IA y una tienda de datos remota alojada en un Cloudflare Worker: las herramientas se generan dinámicamente a partir del `openapi.json` del servicio, de modo que el catálogo se actualiza sin redesplegar el cliente.
 
 El problema que resuelve es la ausencia de API keys y de cuentas de usuario en flujos agénticos: el agente descubre el precio de cada endpoint (entre 0,001 y 0,015 USD por llamada), firma el requisito de pago con un cliente x402 y reenvía la cabecera `X402_PAYMENT_HEADER`. Si llama sin pagar, el servidor devuelve los requisitos de pago (precio, `payTo`, red `eip155:8453`) para que el agente pueda decidir antes de desembolsar.
 
@@ -18,7 +18,7 @@ Es relevante como ejemplo temprano de la combinación MCP + micropagos on-chain,
 | Longitud de contexto | no aplica; el limite lo impone el cliente MCP y el endpoint remoto |
 | Tipos de cuantizacion | no aplica |
 | Idiomas soportados | no disponible (documentacion en ingles; no se declara soporte multilingue) |
-| Licencia | MIT segun la model card; el campo de licencia no figura en los metadatos de HuggingFace |
+| Licencia | MIT segun la model card; el campo de licencia no figura en los metadatos de Hugging Face |
 | Formato de pesos | no aplica; se distribuye codigo fuente JavaScript y un paquete `.mcpb` |
 | Tipo de artefacto | MCP server (herramientas invocables por agentes) |
 | Numero de herramientas | 25 |
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 - Dependencia total de la tienda remota `golf-evm-math.x402-evm-math.workers.dev`: si el Worker cae, cambia su `openapi.json` o modifica precios, el servidor local deja de funcionar o cambia de comportamiento sin versión fijada.
 - El flujo de pago exige cartera, firma y gestión de claves; una mala configuración de `X402_PAYMENT_HEADER` puede provocar pagos no deseados o llamadas rechazadas. No se documentan límites de gasto ni mecanismos de reembolso.
 - No hay evaluación independiente de la calidad ni de la exactitud de los datos servidos; los importes se cobran por llamada, con independencia de que la respuesta sea correcta o completa.
-- La model card declara licencia MIT, pero el campo de licencia no aparece en los metadatos de HuggingFace: conviene verificar el fichero `LICENSE` del repositorio antes de un uso comercial.
+- La model card declara licencia MIT, pero el campo de licencia no aparece en los metadatos de Hugging Face: conviene verificar el fichero `LICENSE` del repositorio antes de un uso comercial.
 - El proyecto se presenta como "experimento autónomo de agente de IA" mantenido por un autor individual, con correo de contacto personal y una dirección de donaciones en USDC en el propio README; no hay gobernanza, SLA ni historial de mantenimiento que respalde un uso en producción crítico.
 - Ausencia de documentación sobre límites de tasa, caché, reintentos, tiempo de espera, tratamiento de errores HTTP y política de datos personales, algo relevante en las herramientas de leads y validación de correo.
 - Riesgo de alucinación heredado del modelo cliente que interpreta las respuestas, y riesgo de datos obsoletos en las herramientas de Bittensor y DeFi si la tienda no refresca con la frecuencia esperada.
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/overwatchdominion/x402-sec-defi-data-mcp
+- Model card en Hugging Face: https://huggingface.co/overwatchdominion/x402-sec-defi-data-mcp
 - Protocolo x402: https://x402.org
 - Guía oficial de servidor MCP con x402: https://docs.x402.org/guides/mcp-server-with-x402
 - Proyecto comparable `fernsugi/x402-api-mcp-server`: https://github.com/fernsugi/x402-api-mcp-server

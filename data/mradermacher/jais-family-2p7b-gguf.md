@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM/RAM estimada para inferencia segun cuantizacion: Q2_K ~2,1 GB; Q3_K_S ~2,3 GB; Q3_K_M ~2,5 GB; Q3_K_L ~2,5 GB; IQ4_XS ~2,6 GB; Q4_K_S ~2,6 GB; Q4_K_M ~2,7 GB; Q5_K_S ~2,9 GB; Q5_K_M ~3,0 GB; Q6_K ~3,2 GB; f16 ~6,0 GB (mas overhead de contexto y KV cache).
 - GPU recomendadas: cualquier GPU consumer con al menos 4-8 GB de VRAM puede ejecutar las variantes Q4-Q6; para f16 se recomienda 8 GB o mas. No hay datos especificos de rendimiento en A100/H100 en la informacion disponible.
 - Cabe en GPU de consumo: si, practicamente en todas las RTX (3060 12 GB, 4060, 4070, 4090) y en GPUs integradas con RAM compartida suficiente para las variantes pequenas.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag endpoints_compatible sugiere uso con endpoints de HuggingFace. vLLM y TGI no se mencionan en la informacion disponible para este formato.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag endpoints_compatible sugiere uso con endpoints de Hugging Face. vLLM y TGI no se mencionan en la informacion disponible para este formato.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares

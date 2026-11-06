@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-bgl-w10-hybrid-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere que el entrenamiento se ha orientado a tareas de resumen de logs (`logsumm`) con una estrategia de muestreo estratificado híbrido y una ventana de contexto de 10 (probablemente 10 turnos o 10 fragmentos, aunque el autor no lo documenta). No se trata de un modelo nuevo desde cero, sino de una especialización del checkpoint base de Qwen3-8B cuantizado en 4 bits (bnb-4bit) y posteriormente afinado con la librería Unsloth y TRL.
+`mrbmaryam/logsumm-bgl-w10-hybrid-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere que el entrenamiento se ha orientado a tareas de resumen de logs (`logsumm`) con una estrategia de muestreo estratificado híbrido y una ventana de contexto de 10 (probablemente 10 turnos o 10 fragmentos, aunque el autor no lo documenta). No se trata de un modelo nuevo desde cero, sino de una especialización del checkpoint base de Qwen3-8B cuantizado en 4 bits (bnb-4bit) y posteriormente afinado con la librería Unsloth y TRL.
 
 El modelo base Qwen3-8B es un transformer denso de 8.200 millones de parámetros desarrollado por Alibaba Qwen, con una ventana de contexto nativa de 32.768 tokens (extensible a 131.072 mediante YaRN) y capacidades multilingües que cubren más de 100 idiomas, aunque la model card de este ajuste solo declara inglés (`en`). La relevancia de este checkpoint es limitada: se publicó el 4 de noviembre de 2026, no tiene descargas ni likes, y la documentación es prácticamente inexistente más allá de los metadatos automáticos de Unsloth. Es un artefacto de investigación más que un modelo listo para producción.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-bgl-w10-hybrid-stratified-qwen3-8b-sft | 8,2B | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste específico para resumen de logs, documentación mínima |
-| Qwen/Qwen3-8B | 8,2B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base generalista, multilingüe, con modo thinking |
-| meta-llama/Llama-3.1-8B-Instruct | 8,0B | 131.072 | Llama 3.1 Community License | HuggingFace, muy usado | Generalista, sin especialización en logs, licencia con restricciones |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 | Apache 2.0 | HuggingFace, muy usado | Generalista, ligero, sin modo thinking |
+| mrbmaryam/logsumm-bgl-w10-hybrid-stratified-qwen3-8b-sft | 8,2B | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste específico para resumen de logs, documentación mínima |
+| Qwen/Qwen3-8B | 8,2B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base generalista, multilingüe, con modo thinking |
+| meta-llama/Llama-3.1-8B-Instruct | 8,0B | 131.072 | Llama 3.1 Community License | Hugging Face, muy usado | Generalista, sin especialización en logs, licencia con restricciones |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 | Apache 2.0 | Hugging Face, muy usado | Generalista, ligero, sin modo thinking |
 
 ## Limitaciones y advertencias
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrbmaryam/logsumm-bgl-w10-hybrid-stratified-qwen3-8b-sft
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
+- Hugging Face: https://huggingface.co/mrbmaryam/logsumm-bgl-w10-hybrid-stratified-qwen3-8b-sft
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Qwen3-8B original: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Repositorio TRL: https://github.com/huggingface/trl

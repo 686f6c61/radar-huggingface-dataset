@@ -60,9 +60,9 @@ No se dispone de datos comparativos de rendimiento en la información proporcion
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF | 1,24B | no disponible | GGUF | other | HuggingFace |
-| bartowski/Llama-3.2-1B-Instruct-GGUF | 1,24B | no disponible | GGUF | other | HuggingFace |
-| Meta Llama-3.2-1B-Instruct (original) | 1,24B | 128K (según Meta, no confirmado) | safetensors | Meta Llama 3 | HuggingFace, NIM |
+| liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF | 1,24B | no disponible | GGUF | other | Hugging Face |
+| bartowski/Llama-3.2-1B-Instruct-GGUF | 1,24B | no disponible | GGUF | other | Hugging Face |
+| Meta Llama-3.2-1B-Instruct (original) | 1,24B | 128K (según Meta, no confirmado) | safetensors | Meta Llama 3 | Hugging Face, NIM |
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de datos comparativos de rendimiento en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Llama-3.2-1B-Instruct-imatrix-GGUF
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Repositorio de cuantizaciones alternativas: https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF
 - Documentación de Llama 3.2 en NVIDIA NIM: https://build.nvidia.com/meta/llama-3.2-1b-instruct

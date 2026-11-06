@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whittle-Next-27B-A3B es un modelo experimental de tipo mezcla de expertos (MoE) publicado por el usuario logic65 en HuggingFace, construido como un *fine-tune* del cuerpo de Qwen3.6-35B-A3B y sucesor directo de Whittle-Next-26B-A3B. El modelo utiliza el formato de pesos `qwen4_exp` (heredado del formato de Qwen3.8-Flash-Next) e incorpora tres modificaciones arquitectónicas sobre el transformer MoE convencional: hiper-conexiones con flujos diferenciados entre sí, una memoria n-gram hasheada de 2.000 millones de filas y tensores de *embedding* por capa. Cuenta con 27.568.288.915 parámetros totales (unos 27,1 B de cuerpo más 2,0 B de memoria) y aproximadamente 3 B de parámetros activos por token.
+Whittle-Next-27B-A3B es un modelo experimental de tipo mezcla de expertos (MoE) publicado por el usuario logic65 en Hugging Face, construido como un *fine-tune* del cuerpo de Qwen3.6-35B-A3B y sucesor directo de Whittle-Next-26B-A3B. El modelo utiliza el formato de pesos `qwen4_exp` (heredado del formato de Qwen3.8-Flash-Next) e incorpora tres modificaciones arquitectónicas sobre el transformer MoE convencional: hiper-conexiones con flujos diferenciados entre sí, una memoria n-gram hasheada de 2.000 millones de filas y tensores de *embedding* por capa. Cuenta con 27.568.288.915 parámetros totales (unos 27,1 B de cuerpo más 2,0 B de memoria) y aproximadamente 3 B de parámetros activos por token.
 
 El modelo no se presenta como un producto terminado, sino como un punto de partida para investigación sobre la arquitectura `qwen4_exp`. El autor lo describe explícitamente como una *research preview* con advertencias: el presupuesto de cómputo se ha agotado y la destilación completa que el modelo necesitaría no se ha podido financiar. El entrenamiento se organizó en cuatro fases: las versiones v1 a v3 (3-4 de septiembre) construyeron el cuerpo, hicieron que la memoria fuese determinante en el cómputo y destilaron razonamiento; la versión v4 (7-10 de septiembre, la publicada en la raíz del repositorio) sustituyó el contenido de la memoria por una transferencia exacta de la tabla n-gram de Qwen3.8-Flash-Next, enseñó a las capas posteriores al punto de inyección a leerla y ejecutó tres noches de destilación solo sobre los expertos con trazas de razonamiento completas.
 
@@ -124,7 +124,7 @@ No se dispone de datos suficientes sobre Qwen3.8-Flash-Next, Qwen3.8-27B ni otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/Whittle-Next-27B-A3B
+- Modelo en Hugging Face: https://huggingface.co/logic65/Whittle-Next-27B-A3B
 - Cuantizaciones GGUF: https://huggingface.co/logic65/Whittle-Next-27B-A3B-GGUF
 - Modelo predecesor: https://huggingface.co/logic65/Whittle-Next-26B-A3B
 - Registros de evaluación v3: https://huggingface.co/logic65/Whittle-Next-27B-A3B/tree/main/eval/v3

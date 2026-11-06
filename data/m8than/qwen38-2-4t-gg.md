@@ -2,11 +2,11 @@
 
 ## Resumen
 
-m8than/Qwen38-2.4T-GG es una conversión cuantizada a 4 bits del modelo Qwen/Qwen3.8-2.4T-A95B, publicada por el usuario m8than en HuggingFace. Se trata de un modelo de generación de texto de tipo transformer con mezcla de expertos (MoE), según la etiqueta de arquitectura `qwen3_5_moe_text` que acompaña al repositorio. El interés principal de esta ficha es que se trata de una cuantización de un modelo de escala muy grande orientada a despliegue en hardware AMD (etiquetas `rocm` y `sglang`), lo que la sitúa en el nicho de inferencia eficiente de MoE masivos fuera del ecosistema CUDA.
+m8than/Qwen38-2.4T-GG es una conversión cuantizada a 4 bits del modelo Qwen/Qwen3.8-2.4T-A95B, publicada por el usuario m8than en Hugging Face. Se trata de un modelo de generación de texto de tipo transformer con mezcla de expertos (MoE), según la etiqueta de arquitectura `qwen3_5_moe_text` que acompaña al repositorio. El interés principal de esta ficha es que se trata de una cuantización de un modelo de escala muy grande orientada a despliegue en hardware AMD (etiquetas `rocm` y `sglang`), lo que la sitúa en el nicho de inferencia eficiente de MoE masivos fuera del ecosistema CUDA.
 
 Existe una discrepancia importante en los datos publicados: el nombre del modelo y el campo de modelo base apuntan a 2,4 billones de parámetros totales con 95.000 millones activos (nomenclatura A95B), mientras que el recuento real de parámetros en los ficheros safetensors del repositorio es de 349.164.943.232 (unos 349,16 mil millones). El tamaño del repositorio, 1.298,1 GB, es coherente con una cuantización de 4 bits de un modelo de 2,4 billones de parámetros, pero no con una de 349.000 millones (que ocuparía del orden de 180 GB). Esta contradicción no se resuelve con la información disponible y debe verificarse antes de cualquier uso.
 
-El acceso al repositorio está restringido: requiere aceptar condiciones en HuggingFace. En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 "me gusta", por lo que no existe validación comunitaria documentada de su funcionamiento.
+El acceso al repositorio está restringido: requiere aceptar condiciones en Hugging Face. En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 "me gusta", por lo que no existe validación comunitaria documentada de su funcionamiento.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El acceso al repositorio está restringido: requiere aceptar condiciones en Hugg
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4 bits con tipo de dato `e2m1` (coma flotante de 4 bits); no se documentan otros formatos en el repositorio |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen3.8-max`, etiquetada en HuggingFace como `other`; acceso restringido (gated) |
+| Licencia | `qwen3.8-max`, etiquetada en Hugging Face como `other`; acceso restringido (gated) |
 | Formato de pesos | safetensors (tamano del repositorio: 1.298,1 GB) |
 
 ## Arquitectura y entrenamiento
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| m8than/Qwen38-2.4T-GG (este modelo) | 349,16 B segun safetensors | no disponible | no disponible | qwen3.8-max (`other`) | Acceso restringido en HuggingFace |
-| Qwen/Qwen3.8-2.4T-A95B (modelo base) | 2,4 B segun nomenclatura | 95 B segun nomenclatura | no disponible | qwen3.8-max | Repositorio del modelo base en HuggingFace |
-| DeepSeek-V3 (referencia de la categoria MoE masiva) | 671 B | 37 B | 128 K | MIT con condiciones de uso | Pesos abiertos en HuggingFace |
-| Qwen3-235B-A22B (referencia de la familia Qwen) | 235 B | 22 B | 128 K ampliable | Apache 2.0 | Pesos abiertos en HuggingFace |
+| m8than/Qwen38-2.4T-GG (este modelo) | 349,16 B segun safetensors | no disponible | no disponible | qwen3.8-max (`other`) | Acceso restringido en Hugging Face |
+| Qwen/Qwen3.8-2.4T-A95B (modelo base) | 2,4 B segun nomenclatura | 95 B segun nomenclatura | no disponible | qwen3.8-max | Repositorio del modelo base en Hugging Face |
+| DeepSeek-V3 (referencia de la categoria MoE masiva) | 671 B | 37 B | 128 K | MIT con condiciones de uso | Pesos abiertos en Hugging Face |
+| Qwen3-235B-A22B (referencia de la familia Qwen) | 235 B | 22 B | 128 K ampliable | Apache 2.0 | Pesos abiertos en Hugging Face |
 
 Los datos de DeepSeek-V3 y Qwen3-235B-A22B proceden de información pública general sobre esos modelos y se incluyen solo como referencia de categoría; no forman parte de la información proporcionada en esta búsqueda y pueden no ser comparables en fecha o condiciones de evaluación. No se dispone de resultados de benchmarks de este modelo que permitan una comparación de rendimiento real.
 
 ## Limitaciones y advertencias
 
 - Discrepancia no resuelta en el recuento de parámetros: 349,16 mil millones según safetensors frente a 2,4 billones según el nombre y el modelo base. Cualquier estimación de coste de despliegue debe verificarse contra los ficheros reales.
-- Repositorio con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar, y la licencia `qwen3.8-max` está etiquetada como `other`, por lo que las condiciones de uso comercial deben revisarse en el repositorio del modelo base.
+- Repositorio con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar, y la licencia `qwen3.8-max` está etiquetada como `other`, por lo que las condiciones de uso comercial deben revisarse en el repositorio del modelo base.
 - Sin validación comunitaria: 0 descargas y 0 "me gusta" en el momento de la consulta. No hay evidencia pública de que la conversión funcione correctamente.
 - Cuantización de terceros: la conversión a 4 bits `e2m1` no la ha realizado el equipo de Qwen, sino un usuario independiente. No se documenta el procedimiento de calibración ni la pérdida de calidad asociada.
 - Riesgo de alucinación: inherente a los modelos de lenguaje generativos; no se publica información sobre ajuste de seguridad, alineación o mitigaciones aplicadas.
@@ -89,6 +89,6 @@ Los datos de DeepSeek-V3 y Qwen3-235B-A22B proceden de información pública gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m8than/Qwen38-2.4T-GG
+- Modelo en Hugging Face: https://huggingface.co/m8than/Qwen38-2.4T-GG
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
 - Resultados de la búsqueda web: las consultas realizadas devolvieron exclusivamente páginas de husos horarios de India (timeanddate.com, time.is, worldometers.info y similares), sin ninguna relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales sobre esta conversión.

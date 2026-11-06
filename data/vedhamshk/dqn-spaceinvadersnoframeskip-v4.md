@@ -64,15 +64,15 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Algoritmo | Entorno | Puntuación media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vedhamshk/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 687.00 +/- 242.72 | no disponible | HuggingFace |
-| Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | HuggingFace |
+| Vedhamshk/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 687.00 +/- 242.72 | no disponible | Hugging Face |
+| Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no disponible | Hugging Face |
 
 El modelo de Bear-ai es funcionalmente equivalente (mismo algoritmo y entorno), pero no se dispone de sus métricas de rendimiento en la información proporcionada.
 
 ## Limitaciones y advertencias
 
 - **Especificidad del dominio**: el modelo está entrenado exclusivamente para `SpaceInvadersNoFrameskip-v4`. No generaliza a otros juegos ni a tareas de control genéricas.
-- **Resultados no verificados**: la métrica `mean_reward` declarada no ha sido verificada por HuggingFace ni por terceros. Su valor puede variar en ejecuciones distintas debido a la estocasticidad del entorno.
+- **Resultados no verificados**: la métrica `mean_reward` declarada no ha sido verificada por Hugging Face ni por terceros. Su valor puede variar en ejecuciones distintas debido a la estocasticidad del entorno.
 - **Licencia no disponible**: no se ha especificado la licencia del modelo. Esto puede suponer restricciones para su uso comercial o redistribución. Se recomienda contactar con el autor antes de utilizarlo en proyectos productivos.
 - **No es un modelo de lenguaje**: no puede procesar texto, código ni instrucciones. Cualquier uso como LLM es inválido.
 - **Riesgo de alucinación**: no aplica, al ser un agente de RL sin generación de contenido.
@@ -80,7 +80,7 @@ El modelo de Bear-ai es funcionalmente equivalente (mismo algoritmo y entorno), 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vedhamshk/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/Vedhamshk/dqn-SpaceInvadersNoFrameskip-v4
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

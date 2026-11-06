@@ -74,8 +74,8 @@ No disponible. La informacion proporcionada no incluye otros packs de instrument
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stdlogits/drowse-web-gemma3-1b-pt-instruments
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-3-1b-pt
+- Repositorio Hugging Face: https://huggingface.co/stdlogits/drowse-web-gemma3-1b-pt-instruments
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-3-1b-pt
 - Modelo complementario de drowse: https://huggingface.co/stdlogits/drowse-web-gemma3-1b-pt
 - Repositorio de codigo de drowse: https://github.com/stdlogits/drowse
 - Sitio web de drowse: https://drowse.ai

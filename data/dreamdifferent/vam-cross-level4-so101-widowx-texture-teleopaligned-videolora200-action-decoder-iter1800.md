@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables. Existen otros checkpoin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
 - Checkpoint relacionado (Video LoRA iter 400): https://huggingface.co/dreamdifferent/vam-cross-level4-so101-widowx-texture-video-lora-iter-400
 - Checkpoint relacionado (level5 action decoder): https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800

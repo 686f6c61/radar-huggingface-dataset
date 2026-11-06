@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Juggernaut XL v9 es un modelo de texto a imagen desarrollado por RunDiffusion en colaboración con KandooAI. Se trata de un ajuste fino (fine-tune) de Stable Diffusion XL base 1.0, diseñado específicamente para generar imágenes fotorrealistas. Es uno de los checkpoints más populares de SDXL: los metadatos de HuggingFace registran 766.250 descargas, y la model card afirma más de 6 millones de descargas acumuladas en HuggingFace y 1,5 millones en Civitai, con una valoración abrumadoramente positiva en más de 7.780 reseñas. La versión 9 integra RunDiffusion Photo v2, que aporta mejoras notables en el detalle de piel, micro-textura, iluminación y contraste.
+Juggernaut XL v9 es un modelo de texto a imagen desarrollado por RunDiffusion en colaboración con KandooAI. Se trata de un ajuste fino (fine-tune) de Stable Diffusion XL base 1.0, diseñado específicamente para generar imágenes fotorrealistas. Es uno de los checkpoints más populares de SDXL: los metadatos de Hugging Face registran 766.250 descargas, y la model card afirma más de 6 millones de descargas acumuladas en Hugging Face y 1,5 millones en Civitai, con una valoración abrumadoramente positiva en más de 7.780 reseñas. La versión 9 integra RunDiffusion Photo v2, que aporta mejoras notables en el detalle de piel, micro-textura, iluminación y contraste.
 
 El modelo resuelve la necesidad de producir fotografía sintética de alta calidad con hardware asequible, ya que funciona cómodamente en 8 GB de VRAM, a diferencia de modelos basados en DiT más recientes que exigen 16 GB o más. Además, es compatible con todo el ecosistema SDXL: ControlNets, IP-Adapter, AnimateDiff, LoRAs y herramientas de regional prompting. Lleva más de 26 meses en producción en agencias, estudios y productos comerciales, lo que lo convierte en una opción fiable para flujos de trabajo de generación de imágenes. Arquitectónicamente es un modelo de difusión latente (Stable Diffusion XL), con un repositorio de 27,9 GB y una ventana de contexto que no aplica al tratarse de un generador de imágenes.
 
@@ -73,7 +73,7 @@ No se disponen de datos de modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunDiffusion/Juggernaut-XL-v9
+- Hugging Face: https://huggingface.co/RunDiffusion/Juggernaut-XL-v9
 - RunDiffusion (sitio principal): https://www.rundiffusion.com/
 - RunDiffusion (aplicación): https://app.rundiffusion.com/
 - RunDiffusion (producto / plataforma): https://www.rundiffusion.com/product

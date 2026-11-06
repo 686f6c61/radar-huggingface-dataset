@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HedgeMind es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct, publicado en HuggingFace por el usuario Radheyyyy bajo licencia Apache 2.0. El punto de partida declarado es `unsloth/meta-llama-3.1-8b-instruct-bnb-4bit`, es decir, una version del instructivo de Llama 3.1 8B pre-cuantizada a 4 bits por Unsloth, sobre la que se ha realizado un entrenamiento adicional con la libreria Unsloth y TRL de HuggingFace. El repositorio contiene pesos en formato safetensors con 8.030.261.248 parametros totales (aproximadamente 8.000 millones) y un tamano de 16,1 GB, lo que corresponde a pesos en 16 bits (fp16/bf16) tras fusionar el adaptador, no a los pesos de 4 bits del modelo base.
+HedgeMind es un ajuste fino (fine-tune) del modelo Meta Llama 3.1 8B Instruct, publicado en Hugging Face por el usuario Radheyyyy bajo licencia Apache 2.0. El punto de partida declarado es `unsloth/meta-llama-3.1-8b-instruct-bnb-4bit`, es decir, una version del instructivo de Llama 3.1 8B pre-cuantizada a 4 bits por Unsloth, sobre la que se ha realizado un entrenamiento adicional con la libreria Unsloth y TRL de Hugging Face. El repositorio contiene pesos en formato safetensors con 8.030.261.248 parametros totales (aproximadamente 8.000 millones) y un tamano de 16,1 GB, lo que corresponde a pesos en 16 bits (fp16/bf16) tras fusionar el adaptador, no a los pesos de 4 bits del modelo base.
 
 Se trata de un modelo de generacion de texto de tipo causal LM con arquitectura transformer estilo Llama, orientado a conversacion y con soporte declarado solo para ingles. La model card es minima: no documenta el dataset de entrenamiento, el numero de tokens, la composicion de los datos, ni si hubo etapas de RLHF o DPO posteriores al ajuste supervisado. Tampoco se publican resultados de evaluacion.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y debe interpretarse con cautela: el repositori
 
 La arquitectura corresponde a un transformer causal decoder-only de la familia Llama 3.1, con 8.030 millones de parametros. No se dispone de informacion sobre configuracion de capas, dimensiones ocultas, numero de cabezas de atencion ni vocabulario, ya que la model card no incluye ficha de configuracion. El modelo se obtuvo por ajuste fino supervisado (SFT) sobre `unsloth/meta-llama-3.1-8b-instruct-bnb-4bit`, un checkpoint instructivo ya alineado mediante las etapas de preentrenamiento, SFT y RLHF/DPO que Meta aplico a Llama 3.1 8B Instruct. No consta que HedgeMind anada etapas propias de RLHF, DPO o PPO; la model card solo menciona entrenamiento con Unsloth y TRL.
 
-La unica innovacion tecnica documentada es de caracter instrumental: el uso de Unsloth y de la libreria TRL de HuggingFace, que segun el autor permitieron entrenar "2x mas rapido". No se especifica el metodo de adaptacion (LoRA, QLoRA u otro), el rango de los adaptadores, la tasa de aprendizaje, el numero de pasos ni la composicion del dataset. Tampoco se indica si el fine-tune se realizo sobre los pesos de 4 bits del base y se fusiono posteriormente, aunque el tamano final del repositorio (16,1 GB para 8B parametros) sugiere que los pesos entregados estan en 16 bits. Todos estos detalles son no disponibles.
+La unica innovacion tecnica documentada es de caracter instrumental: el uso de Unsloth y de la libreria TRL de Hugging Face, que segun el autor permitieron entrenar "2x mas rapido". No se especifica el metodo de adaptacion (LoRA, QLoRA u otro), el rango de los adaptadores, la tasa de aprendizaje, el numero de pasos ni la composicion del dataset. Tampoco se indica si el fine-tune se realizo sobre los pesos de 4 bits del base y se fusiono posteriormente, aunque el tamano final del repositorio (16,1 GB para 8B parametros) sugiere que los pesos entregados estan en 16 bits. Todos estos detalles son no disponibles.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ La unica innovacion tecnica documentada es de caracter instrumental: el uso de U
 - Capacidad de contexto largo: no confirmada para este checkpoint, aunque el modelo base soporta hasta 128.000 tokens.
 - Modo "thinking" o razonamiento explicito: no disponible.
 - Vision o audio: no disponibles; el modelo es exclusivamente de texto.
-- Uso con `text-generation-inference`: etiquetado como compatible con TGI y con endpoints de HuggingFace Inference Endpoints.
+- Uso con `text-generation-inference`: etiquetado como compatible con TGI y con endpoints de Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en 4 bits (GGUF Q4_K_M, GPTQ o AWQ): aproximadamente 5-6 GB de pesos; tambien requiere conversion propia.
 - GPUs recomendadas para 16 bits: A100 40/80 GB, H100, L40S, RTX 6000 Ada. En RTX 4090 (24 GB) es viable con contexto moderado, pero el contexto largo de 128K exigiria mucha mas memoria por la cache KV.
 - GPUs de consumo: cabe en RTX 3090/4090 (24 GB) en 16 bits con contexto limitado, y en RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070 en cuantizacion de 4 bits.
-- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (TGI) y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). vLLM es compatible al tratarse de un modelo tipo Llama. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio solo contiene safetensors.
+- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (TGI) y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). vLLM es compatible al tratarse de un modelo tipo Llama. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio solo contiene safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este checkpoint. Como referencia generica de la clase 8B en fp16 con vLLM sobre A100, los ordenes de magnitud habituales son de miles de tokens por segundo agregados en batch y decenas de tokens por segundo por secuencia, pero son cifras orientativas no verificadas para HedgeMind.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HedgeMind (Radheyyyy) | 8,03B | No disponible (base: 128K) | Sin benchmarks publicados | Apache 2.0 declarada (base bajo Llama 3.1 Community License) | HuggingFace, 0 descargas, 0 likes |
+| HedgeMind (Radheyyyy) | 8,03B | No disponible (base: 128K) | Sin benchmarks publicados | Apache 2.0 declarada (base bajo Llama 3.1 Community License) | Hugging Face, 0 descargas, 0 likes |
 | Llama 3.1 8B Instruct (Meta) | 8,03B | 128.000 tokens | Benchmarks publicos en la documentacion de Meta | Llama 3.1 Community License | Ampliamente disponible; ecosistema maduro |
 | Mistral 7B Instruct (Mistral AI) | 7,24B | 32.000 tokens (v0.2/v0.3) | Benchmarks publicos de Mistral | Apache 2.0 | Ampliamente disponible |
 | Qwen2.5 7B Instruct (Alibaba) | 7,62B | 128.000 tokens (hasta 32K en generacion estandar) | Benchmarks publicos de Alibaba | Apache 2.0 | Ampliamente disponible |
@@ -90,9 +90,9 @@ Los datos de parametros, contexto y licencia de los modelos comparados provienen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Radheyyyy/HedgeMind
+- Modelo en Hugging Face: https://huggingface.co/Radheyyyy/HedgeMind
 - Modelo base declarado: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Unsloth (libreria de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Nota sobre la busqueda web: los resultados obtenidos no contienen informacion relacionada con HedgeMind, Llama, Unsloth ni con benchmarks del modelo; se han descartado por no ser relevantes. No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este checkpoint.

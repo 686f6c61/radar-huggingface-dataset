@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - VRAM estimada para inferencia: en torno a 1-1,5 GB en fp16/bf16 (494M de parametros), mas overhead del tokenizer y contexto; accesible sin GPU dedicada
 - Cabe comodamente en GPUs de consumo: cualquier GPU moderna con 4 GB de VRAM o mas, e incluso CPU (con latencia mayor)
 - GPUs recomendadas: no requiere GPU de servidor; una RTX 3060, RTX 4060 o superior es mas que suficiente
-- Despliegue: transformers (codigo oficial del README), compatible con text-generation-inference y endpoints de HuggingFace; no hay pesos GGUF publicados en la informacion disponible
+- Despliegue: transformers (codigo oficial del README), compatible con text-generation-inference y endpoints de Hugging Face; no hay pesos GGUF publicados en la informacion disponible
 - Latencia y throughput estimados: no disponible
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ Frente a Qwen2.5-0.5B base, este modelo esta especializado en el formato de QA s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-0.5b-sft-atomic
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-0.5b-sft-atomic
 - Paper (arXiv): https://arxiv.org/abs/2512.01970
 - Pagina del proyecto: https://sitaocheng.github.io/atomic/
 - Codigo (GitHub): https://github.com/sitaocheng/from_atomic_to_composite

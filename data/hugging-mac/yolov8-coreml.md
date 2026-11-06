@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que elimina el trabajo de conversión man
 
 YOLOv8 es una red neuronal convolucional de deteccion de objetos de una sola etapa, desarrollada por Ultralytics. Su arquitectura incluye un backbone basado en CSPDarknet, un neck con PAN-FPN y una cabeza de deteccion anclada (anchor-free). El modelo original fue entrenado en el dataset COCO con 80 clases. La conversion a Core ML se realizo con la libreria coremltools, manteniendo la precision FP16 y un tamaño de entrada fijo de 640 × 640 píxeles con batch size 1. No se incluye NMS (supresion de no maximos) dentro del modelo; el usuario debe aplicar filtrado por confianza y NMS despues de la inferencia.
 
-La model card indica que la conversion proviene de la revision `8a9e1a5` del repositorio `Ultralytics/YOLOv8` en HuggingFace. No se proporcionan detalles sobre el proceso de entrenamiento del modelo original, ya que este repositorio solo contiene la conversion a Core ML.
+La model card indica que la conversion proviene de la revision `8a9e1a5` del repositorio `Ultralytics/YOLOv8` en Hugging Face. No se proporcionan detalles sobre el proceso de entrenamiento del modelo original, ya que este repositorio solo contiene la conversion a Core ML.
 
 ## Capacidades
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hugging-mac/yolov8-coreml` (n, s, m) | 3,2 M / 11,2 M / 25,9 M | Core ML (.mlpackage) | 640 × 640 | AGPL-3.0 | HuggingFace |
-| `TheCluster/YOLOv8-CoreML` | no disponible | Core ML | no disponible | no disponible | HuggingFace |
-| `Ultralytics/YOLOv8` (original) | 3,2 M / 11,2 M / 25,9 M | PyTorch, ONNX, TensorRT, etc. | variable | AGPL-3.0 | HuggingFace, GitHub |
+| `hugging-mac/yolov8-coreml` (n, s, m) | 3,2 M / 11,2 M / 25,9 M | Core ML (.mlpackage) | 640 × 640 | AGPL-3.0 | Hugging Face |
+| `TheCluster/YOLOv8-CoreML` | no disponible | Core ML | no disponible | no disponible | Hugging Face |
+| `Ultralytics/YOLOv8` (original) | 3,2 M / 11,2 M / 25,9 M | PyTorch, ONNX, TensorRT, etc. | variable | AGPL-3.0 | Hugging Face, GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estas conversiones. La ventaja principal de `hugging-mac/yolov8-coreml` es que incluye hashes SHA-256 de integridad y una documentacion clara de entrada/salida, ademas de estar integrado con el SDK de Hugging Mac. La alternativa `TheCluster/YOLOv8-CoreML` existe pero no se ha podido verificar su contenido ni sus especificaciones.
 
@@ -80,9 +80,9 @@ No se dispone de datos de rendimiento comparativo entre estas conversiones. La v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hugging-mac/yolov8-coreml
+- Repositorio en Hugging Face: https://huggingface.co/hugging-mac/yolov8-coreml
 - Repositorio Hugging Mac (plataforma): https://github.com/devilyouwei/hugging-mac
 - SDK YOLOv8 de Hugging Mac (postprocesado y NMS): https://github.com/devilyouwei/hugging-mac/tree/main/packages/hugging_mac_sdk/src/hugging_mac_sdk/models/yolov8
-- Modelo base Ultralytics/YOLOv8 en HuggingFace: https://huggingface.co/Ultralytics/YOLOv8
+- Modelo base Ultralytics/YOLOv8 en Hugging Face: https://huggingface.co/Ultralytics/YOLOv8
 - Ejemplo de deteccion de objetos con Core ML (repositorio de referencia): https://github.com/rballachay/YOLOv8-CoreML
 - Proyecto ObjectDetection-CoreML (soporta YOLOv8, YOLOv5, etc.): https://github.com/tucan9389/ObjectDetection-CoreML

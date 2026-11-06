@@ -81,7 +81,7 @@ La principal diferencia con el original es el formato de pesos y el tamaño en d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sakamakismile/gpt-oss-120b-abliterated-EXL3-6bpw
+- Repositorio Hugging Face: https://huggingface.co/sakamakismile/gpt-oss-120b-abliterated-EXL3-6bpw
 - Modelo base abliterated: https://huggingface.co/wangzhang/gpt-oss-120b-abliterated
 - Modelo original de OpenAI: https://huggingface.co/openai/gpt-oss-120b
 - Blog de OpenAI sobre gpt-oss: https://openai.com/index/introducing-gpt-oss/

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / configuracion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/alphafold2-multimer-model-2 (esta ficha) | 93,28 M | 48 bloques Evoformer, 21 pasos de reciclado, MSA 256 / pares 128 | AGPL-3.0 | HuggingFace, libreria `ofoldx` |
-| oteam/alphafold2 | 93,283 M | 48 bloques, 4 pasos de reciclado, monómero con pLDDT | AGPL-3.0 | HuggingFace, libreria `ofoldx` |
-| oteam/alphafold2-ptm | 93,292 M | 48 bloques, 4 pasos de reciclado, monómero con PAE y pTM | AGPL-3.0 | HuggingFace, libreria `ofoldx` |
-| oteam/alphafold2-casp14 | no disponible | Protocolo CASP14 de cinco modelos, ocho ensembles por checkpoint | AGPL-3.0 | HuggingFace, libreria `ofoldx` |
+| oteam/alphafold2-multimer-model-2 (esta ficha) | 93,28 M | 48 bloques Evoformer, 21 pasos de reciclado, MSA 256 / pares 128 | AGPL-3.0 | Hugging Face, libreria `ofoldx` |
+| oteam/alphafold2 | 93,283 M | 48 bloques, 4 pasos de reciclado, monómero con pLDDT | AGPL-3.0 | Hugging Face, libreria `ofoldx` |
+| oteam/alphafold2-ptm | 93,292 M | 48 bloques, 4 pasos de reciclado, monómero con PAE y pTM | AGPL-3.0 | Hugging Face, libreria `ofoldx` |
+| oteam/alphafold2-casp14 | no disponible | Protocolo CASP14 de cinco modelos, ocho ensembles por checkpoint | AGPL-3.0 | Hugging Face, libreria `ofoldx` |
 
 Las variantes monómero y multímero comparten el mismo tamaño de tronco (93,28 M) y difieren en el número de pasos de reciclado (4 frente a 21) y en las características de emparejamiento entre cadenas. La variante CASP14 no publica el recuento de parámetros en la información disponible. No se dispone de modelos comparables de otros autores (por ejemplo, AlphaFold 3 u otras implementaciones) en los datos proporcionados.
 
@@ -90,7 +90,7 @@ Las variantes monómero y multímero comparten el mismo tamaño de tronco (93,28
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/alphafold2-multimer-model-2
+- Modelo en Hugging Face: https://huggingface.co/oteam/alphafold2-multimer-model-2
 - Variante monómero: https://huggingface.co/oteam/alphafold2
 - Variante monómero con pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multímero: https://huggingface.co/oteam/alphafold2-multimer

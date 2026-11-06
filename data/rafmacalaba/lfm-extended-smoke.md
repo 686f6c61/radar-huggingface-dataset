@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `rafmacalaba/lfm-extended-smoke` es un modelo de clasificación de tokens (token-classification) publicado en HuggingFace por el usuario `rafmacalaba`. Según las etiquetas asociadas, está orientado a tareas de reconocimiento de entidades nombradas (NER) en el ámbito biomédico, con etiquetas como `ner`, `bio` y `data-use`. El nombre sugiere que podría ser una extensión de un modelo base denominado "lfm" (posiblemente *Large Foundation Model*), aunque no se dispone de documentación oficial que lo confirme.
+El modelo `rafmacalaba/lfm-extended-smoke` es un modelo de clasificación de tokens (token-classification) publicado en Hugging Face por el usuario `rafmacalaba`. Según las etiquetas asociadas, está orientado a tareas de reconocimiento de entidades nombradas (NER) en el ámbito biomédico, con etiquetas como `ner`, `bio` y `data-use`. El nombre sugiere que podría ser una extensión de un modelo base denominado "lfm" (posiblemente *Large Foundation Model*), aunque no se dispone de documentación oficial que lo confirme.
 
-El modelo se publicó el 15 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta. La licencia indicada en las etiquetas es Apache 2.0, aunque el campo de licencia en la ficha de HuggingFace figura como "no disponible". No se proporcionan detalles sobre arquitectura, tamaño, contexto, idiomas soportados ni proceso de entrenamiento, lo que limita considerablemente cualquier evaluación técnica rigurosa.
+El modelo se publicó el 15 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta. La licencia indicada en las etiquetas es Apache 2.0, aunque el campo de licencia en la ficha de Hugging Face figura como "no disponible". No se proporcionan detalles sobre arquitectura, tamaño, contexto, idiomas soportados ni proceso de entrenamiento, lo que limita considerablemente cualquier evaluación técnica rigurosa.
 
 Dada la ausencia de información pública, esta ficha se limita a reflejar los datos disponibles y señala explícitamente las carencias. Se recomienda contactar con el autor o consultar el repositorio asociado antes de considerar su uso en producción.
 
@@ -65,4 +65,4 @@ No es posible establecer una comparativa rigurosa sin datos técnicos del modelo
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/rafmacalaba/lfm-extended-smoke)
+- [Página del modelo en Hugging Face](https://huggingface.co/rafmacalaba/lfm-extended-smoke)

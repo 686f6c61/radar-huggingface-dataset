@@ -80,7 +80,7 @@ No se han identificado modelos alternativos de la misma categoría con licencia 
 
 - No es un clasificador de embarcaciones: el modelo solo proporciona una puntuación de anomalía; no identifica el tipo de fuente sonora. El flag de superación de umbral no debe interpretarse como una alarma operacional.
 - Datos de entrenamiento limitados: se entrenó únicamente con 29 grabaciones de fondo IARA H, lo que puede limitar su generalización a otros entornos marinos con características acústicas diferentes.
-- Licencia del dataset: IARA v2 se distribuye bajo CC BY-NC 4.0, lo que restringe el uso comercial de cualquier modelo entrenado con estos datos. La licencia del propio modelo no está especificada en la ficha de HuggingFace.
+- Licencia del dataset: IARA v2 se distribuye bajo CC BY-NC 4.0, lo que restringe el uso comercial de cualquier modelo entrenado con estos datos. La licencia del propio modelo no está especificada en la ficha de Hugging Face.
 - Umbral de referencia específico del conjunto: el umbral de 0,4438585638999939 se calculó sobre las grabaciones de validación de IARA H y puede no ser transferible a otras ubicaciones o condiciones de grabación sin recalibración.
 - Riesgo de falsos positivos en entornos con fondo variable: cualquier sonido no presente en el fondo aprendido (por ejemplo, lluvia intensa, biología marina) podría generar puntuaciones altas de anomalía, sin que ello indique necesariamente presencia de embarcaciones.
 - Sin soporte multilingüe ni capacidades de texto: el modelo procesa exclusivamente audio submarino; no es aplicable a otras modalidades ni a tareas de lenguaje.
@@ -88,7 +88,7 @@ No se han identificado modelos alternativos de la misma categoría con licencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Moon-Young-Choi/TFRCA-TAE-IARA-H-P8x8-F65xT40-3.88M
+- Modelo en Hugging Face: https://huggingface.co/Moon-Young-Choi/TFRCA-TAE-IARA-H-P8x8-F65xT40-3.88M
 - Demo interactiva del dataset: https://huggingface.co/spaces/Moon-Young-Choi/TFRCA-TAE-IARA-H-Demo
 - Paquete de investigación: https://huggingface.co/Moon-Young-Choi/TFRCA-TAE-research
 - Dataset IARA v2 (Zenodo, DOI 10.5281/zenodo.15777429): https://doi.org/10.5281/zenodo.15777429

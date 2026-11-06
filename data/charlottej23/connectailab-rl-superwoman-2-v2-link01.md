@@ -70,9 +70,9 @@ La evaluación de marcha se realizó con una aproximación 2D basada en una tabl
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-superwoman-2-v2-link01 | 0,8B base + LoRA | No disponible | 50% de acierto en test; 0% de éxito en 20 partidas | Apache 2.0 | HuggingFace |
+| connectailab-rl-superwoman-2-v2-link01 | 0,8B base + LoRA | No disponible | 50% de acierto en test; 0% de éxito en 20 partidas | Apache 2.0 | Hugging Face |
 | Cerebro PPO de referencia (brain.json) | No disponible (política RL) | No aplica | 100% de acierto; 100% de éxito en 20 partidas | No declarada | Referenciado en la model card |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Sin adaptación a la tarea; no evaluado | No declarada en esta ficha | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Sin adaptación a la tarea; no evaluado | No declarada en esta ficha | Hugging Face |
 
 No se dispone de otros adaptadores de decisión robótica comparables en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de otros adaptadores de decisión robótica comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Charlottej23/connectailab-rl-superwoman-2-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/Charlottej23/connectailab-rl-superwoman-2-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon

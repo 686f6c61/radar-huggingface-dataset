@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ss2917/submarine` es un repositorio publicado en HuggingFace por el usuario `ss2917` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el campo de licencia (`license: mit`) y no aporta informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2026-11-01T20:42:49Z), lo que sugiere una publicacion reciente y sin difusion.
+El modelo `ss2917/submarine` es un repositorio publicado en Hugging Face por el usuario `ss2917` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el campo de licencia (`license: mit`) y no aporta informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2026-11-01T20:42:49Z), lo que sugiere una publicacion reciente y sin difusion.
 
 No se dispone de informacion sobre el pipeline de la tarea, los idiomas soportados ni los formatos de pesos. La ausencia de metadatos y de documentacion impide determinar si se trata de un modelo de lenguaje, un modelo multimodal o cualquier otro tipo de artefacto. Cualquier evaluacion tecnica requiere inspeccionar directamente los archivos del repositorio, que no se han proporcionado en la informacion disponible.
 
@@ -70,4 +70,4 @@ No disponible. La ausencia de datos sobre parametros, contexto, rendimiento y ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ss2917/submarine
+- Repositorio en Hugging Face: https://huggingface.co/ss2917/submarine

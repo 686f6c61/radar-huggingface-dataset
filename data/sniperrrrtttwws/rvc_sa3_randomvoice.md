@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sniperrrrtttwws/RVC_SA3_RandomVoice
+- Hugging Face: https://huggingface.co/sniperrrrtttwws/RVC_SA3_RandomVoice
 - Repositorio del proyecto RVC (para inferencia y entrenamiento): https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 - Directorios de modelos RVC (contexto general): https://rvcvoicemodels.com/ , https://aivoices.gg/frameworks/rvc , https://aimodels.org/ai-models/rvc-models-ai-voice/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural-Cortex-8B-64K-i1-GGUF es una recuantización en formato GGUF del modelo Keural-Cortex-8B-64K, cuyo autor original es el usuario mkd-hossain de HuggingFace. El repositorio lo publica mradermacher, perfil especializado en generar versiones cuantizadas de modelos abiertos, y no contiene los pesos originales en safetensors, sino un conjunto de ficheros GGUF derivados del modelo base. La model card se limita a metadatos de conversión y a la lista de cuantizaciones generadas, sin descripción funcional del modelo.
+Keural-Cortex-8B-64K-i1-GGUF es una recuantización en formato GGUF del modelo Keural-Cortex-8B-64K, cuyo autor original es el usuario mkd-hossain de Hugging Face. El repositorio lo publica mradermacher, perfil especializado en generar versiones cuantizadas de modelos abiertos, y no contiene los pesos originales en safetensors, sino un conjunto de ficheros GGUF derivados del modelo base. La model card se limita a metadatos de conversión y a la lista de cuantizaciones generadas, sin descripción funcional del modelo.
 
 El modelo base tiene 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), según el dato real de safetensors asociado al repositorio. El sufijo "64K" del nombre sugiere una ventana de contexto de 64.000 tokens, aunque este dato no se confirma en la información disponible. Los tags del repositorio indican que se trata de un modelo conversacional ("conversational"), compatible con endpoints y generado con cuantización ponderada mediante imatrix.
 
@@ -23,14 +23,14 @@ Su relevancia práctica radica en que un modelo de 8B en GGUF puede ejecutarse e
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo base ni sobre su proceso de entrenamiento. La model card del repositorio GGUF unicamente documenta parametros de conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que indica que los pesos originales estaban en formato HuggingFace y fueron convertidos y cuantizados. El tag `hf` en `convert_type` es coherente con un modelo de arquitectura transformer estandar compatible con la libreria Transformers, pero no se confirma en la informacion proporcionada.
+No se dispone de informacion sobre la arquitectura interna del modelo base ni sobre su proceso de entrenamiento. La model card del repositorio GGUF unicamente documenta parametros de conversion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), lo que indica que los pesos originales estaban en formato Hugging Face y fueron convertidos y cuantizados. El tag `hf` en `convert_type` es coherente con un modelo de arquitectura transformer estandar compatible con la libreria Transformers, pero no se confirma en la informacion proporcionada.
 
 El unico detalle tecnico destacable es el uso de cuantizacion ponderada con imatrix (importance matrix), un metodo que estima la importancia de cada tensor a partir de datos de calibracion para reducir la perdida de calidad en cuantizaciones agresivas. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` del repositorio indica que el modelo esta orientado a dialogos multi-turno, si bien no se detalla el formato de prompt soportado.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a traves de infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el modelo puede servirse a traves de infraestructura de inferencia compatible con la API de Hugging Face.
 - Ejecucion local en CPU y GPU: al estar en formato GGUF, es compatible con llama.cpp y sus derivados.
 - Razonamiento, codigo, matematicas o vision: no disponible, no se documenta ninguna capacidad especifica de este tipo.
 - Tool calling / function calling: no disponible.
@@ -45,7 +45,7 @@ El unico detalle tecnico destacable es el uso de cuantizacion ponderada con imat
 - Generacion de texto en lote (batch): tareas de redaccion, parafraseo o clasificacion de grandes volumenes de texto offline, donde el coste por token es cero una vez desplegado el modelo.
 - Prototipado e investigacion: el rango de cuantizaciones desde IQ1_S hasta Q6_K permite estudiar la degradacion de calidad frente al tamano del fichero, util para experimentos de cuantizacion.
 - Despliegue en entornos con hardware limitado: las cuantizaciones de 1 a 3 bits permiten ejecutar el modelo en portatiles o mini-PC sin GPU dedicada, a costa de una perdida de calidad no cuantificada.
-- Fine-tuning posterior con LoRA: al derivar de un modelo en formato HuggingFace, es plausible partir del modelo base para adaptaciones con LoRA, aunque no se confirma compatibilidad ni licencia que lo permita.
+- Fine-tuning posterior con LoRA: al derivar de un modelo en formato Hugging Face, es plausible partir del modelo base para adaptaciones con LoRA, aunque no se confirma compatibilidad ni licencia que lo permita.
 - Chat de soporte interno con datos sensibles: al ejecutarse en local, los datos no salen de la infraestructura de la organizacion, lo que resulta adecuado para entornos con requisitos de privacidad estrictos.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ Las siguientes cifras son estimaciones basadas en el recuento de parametros (8,1
 - Cache KV: con una ventana de 64.000 tokens, la cache KV puede superar ampliamente el tamano de los pesos en cuantizaciones bajas. Se recomienda cuantizar la cache KV en llama.cpp para contextos largos.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090 para las cuantizaciones de 4 bits en adelante; A100 40/80 GB o H100 para servicio concurrente con contexto completo.
 - Cabe en GPU de consumo: si, en cualquier GPU con al menos 6 GB de VRAM para cuantizaciones de 4 bits con contextos moderados.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, KoboldCpp y servidores compatibles con la API de HuggingFace (el repositorio incluye el tag `endpoints_compatible`). El soporte de GGUF en vLLM y TGI es experimental o limitado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, KoboldCpp y servidores compatibles con la API de Hugging Face (el repositorio incluye el tag `endpoints_compatible`). El soporte de GGUF en vLLM y TGI es experimental o limitado.
 - Latencia y throughput: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares

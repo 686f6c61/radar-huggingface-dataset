@@ -45,7 +45,7 @@ Los siguientes casos describen usos del repositorio como artefacto documental, n
 - Revision de preregistro en un grupo de robotica: al separar explicitamente hipotesis y planes de resultados, el documento sirve como preregistro interno que reduce el riesgo de interpretar hallazgos exploratorios como confirmatorios.
 - Checklist de reproducibilidad en publicaciones: las secciones sobre versiones de dataset, comandos, seeds, hardware y logs brutos pueden reutilizarse como lista de verificacion antes de enviar un articulo o un informe tecnico.
 - Docencia y formacion de investigadores noveles: el repositorio ilustra de forma compacta la diferencia entre una nota de lectura, un plan y un resultado experimental, algo util en seminarios de metodologia.
-- Auditoria de repositorios etiquetados como modelos: esta ficha sirve como ejemplo de como detectar artefactos que aparecen en HuggingFace con etiquetas de modelo pero que no contienen pesos utilizables, un problema relevante para la curacion de registros de modelos.
+- Auditoria de repositorios etiquetados como modelos: esta ficha sirve como ejemplo de como detectar artefactos que aparecen en Hugging Face con etiquetas de modelo pero que no contienen pesos utilizables, un problema relevante para la curacion de registros de modelos.
 - Base para un benchmark de seguimiento: si el autor publicase posteriormente resultados, el documento define el contexto de evaluacion (benchmarks publicos apropiados a la tarea) que permitiria verificar si se cumplen las condiciones declaradas.
 
 ## Benchmarks y rendimiento
@@ -88,7 +88,7 @@ No se han incluido cifras de modelos alternativos porque no formaban parte de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/himariievb/robotics-vision-language-reading55
+- Repositorio en Hugging Face: https://huggingface.co/himariievb/robotics-vision-language-reading55
 - Fichero principal de la nota: `summary.md` dentro del repositorio
 - Documentacion del repositorio: `README.md` dentro del repositorio
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada

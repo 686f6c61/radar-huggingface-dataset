@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "StephC/Qwen2.5-1.5B-Question-First-Exposure-mixed-seed20261009",
+  "slug": "stephc-qwen2-5-1-5b-question-first-exposure-mixed-seed20261009",
+  "author": "StephC",
+  "url": "https://huggingface.co/StephC/Qwen2.5-1.5B-Question-First-Exposure-mixed-seed20261009",
+  "created_at": "2026-11-06T07:12:25.000Z",
+  "updated_at": "2026-11-06T07:14:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "question-first-exposure",
+    "prompt-order",
+    "mechanistic-interpretability",
+    "research",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186317320,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概 …"
+    },
+    {
+      "title": "在哪能下载到sweet home 3D的物品库下载包？_百度知道",
+      "url": "https://zhidao.baidu.com/question/533040060.html",
+      "snippet": "在哪能下载到sweet home 3D的物品库下载包？ 5"
+    },
+    {
+      "title": "Wikipedia 和 Wikia 哪个是维基百科；它们和维基解密有什么联系？",
+      "url": "https://www.zhihu.com/question/24790852",
+      "snippet": "Aug 9, 2014 · Wikipedia（维基百科），是由 维基媒体基金会 运营的非盈利在线百科全书计划，采用 wiki 软件架构（mediawiki），由 …"
+    },
+    {
+      "title": "维基百科官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/723469471435372885.html",
+      "snippet": "Jul 24, 2024 · 维基百科官方网址是什么？ 1. 维基百科网址：https://www.wikipedia.org/2. 维基百科介绍：维基百科是一个基于维基技 …"
+    }
+  ]
+}

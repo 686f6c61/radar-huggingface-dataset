@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Según la información publicada, se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y la biblioteca TRL de HuggingFace. El nombre del modelo sugiere que el entrenamiento se centró en nombres de ciudades alemanas, aunque no se aportan detalles adicionales sobre la tarea o el conjunto de datos utilizado.
+El modelo `longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk`. Según la información publicada, se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y la biblioteca TRL de Hugging Face. El nombre del modelo sugiere que el entrenamiento se centró en nombres de ciudades alemanas, aunque no se aportan detalles adicionales sobre la tarea o el conjunto de datos utilizado.
 
 La relevancia de este modelo reside en su carácter de ejemplo de fine-tune eficiente mediante Unsloth, que acelera el entrenamiento en comparación con métodos convencionales. No obstante, al tratarse de una publicación reciente (agosto de 2026) y con cero descargas, su utilidad práctica aún no está validada por la comunidad. La licencia Apache 2.0 permite su uso comercial y modificación, lo que facilita su adopción en proyectos propios.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su carácter de ejemplo de fine-tune efic
 
 ## Arquitectura y entrenamiento
 
-La información disponible no especifica la arquitectura interna del modelo, pero al estar basado en `unsloth/Qwen3-8B`, se infiere que hereda la arquitectura de Qwen3-8B, un transformer decoder-only con aproximadamente 8 mil millones de parámetros. El ajuste fino se realizó utilizando la librería Unsloth, que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y la biblioteca TRL de HuggingFace para el proceso de fine-tune supervisado (SFT). No se proporcionan datos sobre el conjunto de entrenamiento, el número de tokens, ni si se emplearon técnicas como RLHF o DPO.
+La información disponible no especifica la arquitectura interna del modelo, pero al estar basado en `unsloth/Qwen3-8B`, se infiere que hereda la arquitectura de Qwen3-8B, un transformer decoder-only con aproximadamente 8 mil millones de parámetros. El ajuste fino se realizó utilizando la librería Unsloth, que optimiza el entrenamiento mediante kernels personalizados y reducción de memoria, y la biblioteca TRL de Hugging Face para el proceso de fine-tune supervisado (SFT). No se proporcionan datos sobre el conjunto de entrenamiento, el número de tokens, ni si se emplearon técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -53,5 +53,5 @@ No se dispone de información comparativa con otros modelos. Al ser un fine-tune
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-last-third-v2-sft-seed2)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth) (mencionado en la model card)

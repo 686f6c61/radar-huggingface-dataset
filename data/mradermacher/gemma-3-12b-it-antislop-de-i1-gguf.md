@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización GGUF con importancia (imatrix) realizada por mradermacher sobre el modelo PhilflowIO/gemma-3-12b-it-antislop-de, que a su vez es un ajuste fino (fine-tuning) del modelo Gemma 3 12B Instruct de Google. El objetivo es reducir el "slop" —el lenguaje genérico, sobre-explicativo y lleno de clichés que suele producir la IA— en textos en alemán, especialmente en el ámbito del copywriting y marketing. Con 11.766.034.176 parámetros, es un modelo denso multimodal con arquitectura Gemma 3, que soporta entrada de imágenes además de texto. El repo de HuggingFace incluye múltiples archivos GGUF desde IQ1_S (3,0 GB) hasta Q6_K (9,8 GB), todos con la variante imatrix, así como un archivo de importancia para generar nuevas cuantizaciones. El tamaño total del repositorio es de 138,6 GB debido a la gran cantidad de cuantizaciones incluidas. Es un modelo útil para experimentar con cuantización y para ejecutar modelos de lenguaje en alemán en hardware de consumo, aunque los tags "negative-results" y "marketing-copy" sugieren que el ajuste fue orientado a un caso específico y sus resultados pueden ser controvertidos.
+Este modelo es una cuantización GGUF con importancia (imatrix) realizada por mradermacher sobre el modelo PhilflowIO/gemma-3-12b-it-antislop-de, que a su vez es un ajuste fino (fine-tuning) del modelo Gemma 3 12B Instruct de Google. El objetivo es reducir el "slop" —el lenguaje genérico, sobre-explicativo y lleno de clichés que suele producir la IA— en textos en alemán, especialmente en el ámbito del copywriting y marketing. Con 11.766.034.176 parámetros, es un modelo denso multimodal con arquitectura Gemma 3, que soporta entrada de imágenes además de texto. El repo de Hugging Face incluye múltiples archivos GGUF desde IQ1_S (3,0 GB) hasta Q6_K (9,8 GB), todos con la variante imatrix, así como un archivo de importancia para generar nuevas cuantizaciones. El tamaño total del repositorio es de 138,6 GB debido a la gran cantidad de cuantizaciones incluidas. Es un modelo útil para experimentar con cuantización y para ejecutar modelos de lenguaje en alemán en hardware de consumo, aunque los tags "negative-results" y "marketing-copy" sugieren que el ajuste fue orientado a un caso específico y sus resultados pueden ser controvertidos.
 
 ## Especificaciones tecnicas
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/gemma-3-12b-it-antislop-de-i1-GGUF | 11.766.034.176 | No disponible | gemma | GGUF (imatrix) | HuggingFace |
-| mradermacher/gemma-3-12b-it-antislop-de-GGUF | 11.766.034.176 | No disponible | gemma | GGUF (estático) | HuggingFace |
-| PhilflowIO/gemma-3-12b-it-antislop-de | 11.766.034.176 | No disponible | gemma | safetensors | HuggingFace |
+| mradermacher/gemma-3-12b-it-antislop-de-i1-GGUF | 11.766.034.176 | No disponible | gemma | GGUF (imatrix) | Hugging Face |
+| mradermacher/gemma-3-12b-it-antislop-de-GGUF | 11.766.034.176 | No disponible | gemma | GGUF (estático) | Hugging Face |
+| PhilflowIO/gemma-3-12b-it-antislop-de | 11.766.034.176 | No disponible | gemma | safetensors | Hugging Face |
 
 Comparación de rendimiento: no disponible. Los dos primeros son versiones cuantizadas del mismo modelo; el tercero es el modelo original sin cuantizar. No se dispone de datos de benchmarks para comparar.
 

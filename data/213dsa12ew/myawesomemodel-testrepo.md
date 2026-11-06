@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de prueba alojado en HuggingFace por el usuario 213DSA12EW. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que indica que no contiene pesos de modelo ni archivos de inferencia reales. Se trata de un artefacto de prueba con una model card que contiene afirmaciones genéricas sobre un modelo de razonamiento con capacidades mejoradas, pero sin ningún archivo que las respalde.
+MyAwesomeModel-TestRepo es un repositorio de prueba alojado en Hugging Face por el usuario 213DSA12EW. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que indica que no contiene pesos de modelo ni archivos de inferencia reales. Se trata de un artefacto de prueba con una model card que contiene afirmaciones genéricas sobre un modelo de razonamiento con capacidades mejoradas, pero sin ningún archivo que las respalde.
 
 La model card describe un supuesto modelo con mejoras en razonamiento matemático, generación de código y function calling, citando resultados en AIME 2025 (87.5% de precisión) y una batería de benchmarks internos. Sin embargo, los tags del repositorio indican arquitectura BERT y pipeline de feature-extraction, lo que contradice frontalmente las capacidades descritas en la model card. La búsqueda web revela que el mismo contenido de model card se replica en múltiples repositorios de prueba de distintos usuarios, lo que sugiere que se trata de una plantilla copiada, no de un modelo real.
 
@@ -21,7 +21,7 @@ La model card describe un supuesto modelo con mejoras en razonamiento matemátic
 
 ## Arquitectura y entrenamiento
 
-No se puede determinar la arquitectura del modelo porque el repositorio no contiene ningun archivo de pesos, configuracion ni tokenizador. Los tags de HuggingFace indican `bert` y `feature-extraction`, lo que sugeriria un modelo encoder de tipo BERT, pero la model card describe un LLM autoregresivo con capacidades de razonamiento, generacion de codigo y function calling, incompatibles con una arquitectura BERT clasica. No existe informacion verificable sobre datos de entrenamiento, numero de tokens, ni tecnicas de post-entrenamiento como RLHF o DPO.
+No se puede determinar la arquitectura del modelo porque el repositorio no contiene ningun archivo de pesos, configuracion ni tokenizador. Los tags de Hugging Face indican `bert` y `feature-extraction`, lo que sugeriria un modelo encoder de tipo BERT, pero la model card describe un LLM autoregresivo con capacidades de razonamiento, generacion de codigo y function calling, incompatibles con una arquitectura BERT clasica. No existe informacion verificable sobre datos de entrenamiento, numero de tokens, ni tecnicas de post-entrenamiento como RLHF o DPO.
 
 La model card menciona "incremento de recursos computacionales" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", pero estos son datos no verificables al no existir el modelo. Tampoco hay informacion sobre el dataset de entrenamiento, el numero de parametros ni la longitud de contexto.
 
@@ -37,7 +37,7 @@ Dado que el repositorio esta vacio, no se puede verificar ninguna capacidad real
 - Traduccion y resumen de texto
 - Clasificacion de texto y analisis de sentimiento
 
-Ninguna de estas capacidades puede confirmarse, ya que no hay pesos descargables, demos funcionales ni documentacion tecnica que las sustente. La etiqueta `feature-extraction` de HuggingFace sugiere un caso de uso de extraccion de caracteristicas, que no coincide con las capacidades descritas en la model card.
+Ninguna de estas capacidades puede confirmarse, ya que no hay pesos descargables, demos funcionales ni documentacion tecnica que las sustente. La etiqueta `feature-extraction` de Hugging Face sugiere un caso de uso de extraccion de caracteristicas, que no coincide con las capacidades descritas en la model card.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ No disponible. No se puede comparar este modelo con alternativas como Llama, Mis
 ## Limitaciones y advertencias
 
 - El repositorio esta vacio (0.0 GB): no contiene pesos, configuracion, tokenizador ni ningun archivo utilizable
-- Los metadatos de HuggingFace (tags BERT, feature-extraction) contradicen las afirmaciones de la model card sobre un LLM de razonamiento
+- Los metadatos de Hugging Face (tags BERT, feature-extraction) contradicen las afirmaciones de la model card sobre un LLM de razonamiento
 - Los resultados de benchmarks citados en la model card no son reproducibles ni verificables
 - El mismo contenido de model card aparece replicado en multiples repositorios de prueba de distintos usuarios, lo que indica que es una plantilla copiada y no documentacion genuina
 - No se ha publicado ningun paper, articulo tecnico ni documentacion de API que respalde las afirmaciones
@@ -83,7 +83,7 @@ No disponible. No se puede comparar este modelo con alternativas como Llama, Mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/213DSA12EW/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/213DSA12EW/MyAwesomeModel-TestRepo
 - Repositorios con contenido identico detectados en la busqueda web: https://huggingface.co/asd12dsa21dsa21dsa/MyAwesomeModel-TestRepo y https://huggingface.co/AD12SACZXQW/MyAwesomeModel-TestRepo
 
 No se han encontrado papers, repositorios de codigo, demos ni documentacion adicional relacionada con este modelo.

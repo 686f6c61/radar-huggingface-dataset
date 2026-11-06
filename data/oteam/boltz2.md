@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Afinidad proteina-ligando | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Boltz-2 (esta ficha) | 506,76 M (estructura) / 515,09 M (afinidad) | no aplica | Sí, en dos etapas | AGPL-3.0 | HuggingFace (oteam/boltz2) |
+| Boltz-2 (esta ficha) | 506,76 M (estructura) / 515,09 M (afinidad) | no aplica | Sí, en dos etapas | AGPL-3.0 | Hugging Face (oteam/boltz2) |
 | AlphaFold 3 | no disponible | no aplica | Parcial (no enfocado a afinidad) | no disponible | Acceso restringido vía servidor |
 | Boltz-1 | no disponible | no aplica | No | MIT (según repositorio original) | Código y pesos públicos |
 | Chai-1 | no disponible | no aplica | No | no disponible | Pesos públicos para uso no comercial |
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Sesgos hacia dianas y ligandos sobrerrepresentados en PDB y ChEMBL; el rendimiento en quimiotipos novedosos no está caracterizado en la información disponible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/oteam/boltz2
+- Modelo en Hugging Face: https://huggingface.co/oteam/boltz2
 - Variante de afinidad: https://huggingface.co/oteam/boltz2-affinity
 - Código OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/boltz2
 - Documentación de pipelines: https://github.com/OTeam-AI4S/OFoldX/blob/main/ofoldx/pipelines/README.md

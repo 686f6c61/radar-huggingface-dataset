@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-cmf es un empaquetado cuantizado del modelo LiquidAI LFM3-1.7B, publicado por el usuario infosave en HuggingFace. El modelo base es un modelo de texto de 1.700 millones de parámetros de Liquid AI, diseñado para agentes locales, tool calling y salida estructurada, y se apoya en la arquitectura tri-híbrida propia de Liquid: combina capas de convolución corta con puertas (gated short-convolution), atención completa y atención por ventana deslizante, con una ventana de contexto de 262.144 tokens y modo de razonamiento (thinking) activado por defecto.
+LFM3-1.7B-cmf es un empaquetado cuantizado del modelo LiquidAI LFM3-1.7B, publicado por el usuario infosave en Hugging Face. El modelo base es un modelo de texto de 1.700 millones de parámetros de Liquid AI, diseñado para agentes locales, tool calling y salida estructurada, y se apoya en la arquitectura tri-híbrida propia de Liquid: combina capas de convolución corta con puertas (gated short-convolution), atención completa y atención por ventana deslizante, con una ventana de contexto de 262.144 tokens y modo de razonamiento (thinking) activado por defecto.
 
 Esta variante concreta distribuye los pesos como ficheros únicos en formato CMF, cuantizados a 8 bits (q8_2f) y 4 bits (q4tp), listos para ejecutarse con cortiq, un motor de inferencia escrito en Rust que no depende de Python ni de frameworks de ML, y que funciona sobre GPUs NVIDIA, AMD e Intel mediante Vulkan/DX12, sobre Apple silicon mediante Metal, y sobre CPU.
 
@@ -98,7 +98,7 @@ Frente a alternativas de tamaño similar, el LFM3-1.7B destaca por su contexto d
 - Idiomas: se declaran 16, pero no hay datos públicos de calidad por idioma; el rendimiento en castellano no está cuantificado.
 - Licencia lfm1.0 del tipo "other": debe revisarse el texto LICENSE antes de cualquier despliegue comercial, ya que las licencias comunitarias de Liquid AI suelen imponer condiciones (límites de usuarios, registro, etc.).
 - Ecosistema cerrado al formato CMF: solo funciona con cortiq (0.8.49 o posterior), lo que limita la portabilidad frente a GGUF/safetensors y la integración con herramientas estándar.
-- Proyecto de distribución con adopción muy temprana (6 descargas y 1 like en HuggingFace en el momento de la ficha): conviene validar la conversión en el propio caso de uso antes de producción.
+- Proyecto de distribución con adopción muy temprana (6 descargas y 1 like en Hugging Face en el momento de la ficha): conviene validar la conversión en el propio caso de uso antes de producción.
 
 ## Enlaces
 

@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Gemma-4-12B-it-QAT-Hybrid-GGUF (este) | ~11,9 B | no disponible | Q5_K_L + Q8_0 | apache-2.0 | GGUF para llama.cpp, LM Studio y Jan |
-| OliviaRossi/Gemma-4-12B-it-QAT-Hybrid (base) | no disponible | no disponible | pesos originales (formato no indicado) | apache-2.0 | HuggingFace |
+| OliviaRossi/Gemma-4-12B-it-QAT-Hybrid (base) | no disponible | no disponible | pesos originales (formato no indicado) | apache-2.0 | Hugging Face |
 | Otras alternativas de ~12 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han facilitado datos que permitan comparar rendimiento, contexto o licencia frente a otros modelos de la misma categoria.
@@ -93,9 +93,9 @@ No se han facilitado datos que permitan comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OliviaRossi/Gemma-4-12B-it-QAT-Hybrid-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OliviaRossi/Gemma-4-12B-it-QAT-Hybrid-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/Gemma-4-12B-it-QAT-Hybrid
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de Google DeepMind sobre Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs

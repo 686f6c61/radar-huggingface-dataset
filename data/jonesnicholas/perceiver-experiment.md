@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jonesnicholas/perceiver-experiment` es un repositorio de HuggingFace publicado por el usuario jonesnicholas que contiene una implementacion propia y minima de una arquitectura Perceiver orientada a tareas multitask. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor lo describe explicitamente como "a reproducible starting point, not a trained model release". El checkpoint incluido (`model.safetensors`) se presenta como inicializacion valida para pruebas de humo (*smoke tests*), no como pesos con rendimiento verificado.
+`jonesnicholas/perceiver-experiment` es un repositorio de Hugging Face publicado por el usuario jonesnicholas que contiene una implementacion propia y minima de una arquitectura Perceiver orientada a tareas multitask. No se trata de un modelo entrenado, sino de un punto de partida reproducible: el autor lo describe explicitamente como "a reproducible starting point, not a trained model release". El checkpoint incluido (`model.safetensors`) se presenta como inicializacion valida para pruebas de humo (*smoke tests*), no como pesos con rendimiento verificado.
 
 El modelo declara una escala "small", atencion dispersa (*sparse*), fusion de tensores (*tensor fusion*), activacion swish y normalizacion scalenorm. Los metadatos de safetensors indican un total de 16.576 parametros, una cifra extremadamente reducida que confirma el caracter experimental del artefacto. La receta de experimento por defecto usa el optimizador lion con un schedule coseno, aunque el propio autor advierte que son valores de arranque del script y no evidencia de un entrenamiento completado.
 
@@ -27,7 +27,7 @@ Su relevancia actual es limitada y de naturaleza metodologica: sirve como andami
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 20 de septiembre de 2026 |
 | Ultima actualizacion | 20 de septiembre de 2026 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jonesnicholas/perceiver-experiment | 16.576 | No disponible | Sin benchmarks (checkpoint sin entrenar) | BSD 3-Clause | HuggingFace, 0 descargas |
+| jonesnicholas/perceiver-experiment | 16.576 | No disponible | Sin benchmarks (checkpoint sin entrenar) | BSD 3-Clause | Hugging Face, 0 descargas |
 | Perceiver IO (DeepMind, arquitectura de referencia) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publicacion academica, no verificada en esta busqueda |
 
 No se dispone de otros modelos comparables en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes sobre este repositorio ni sobre alternativas de la misma categoria y escala.
@@ -85,12 +85,12 @@ No se dispone de otros modelos comparables en la informacion proporcionada. La b
 - Riesgo de alucinacion: no evaluable en el estado actual, dado que el modelo no esta entrenado.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no puede planificarse su uso multilingue ni con entradas largas.
 - Restricciones de licencia: BSD 3-Clause permite uso comercial con atribucion y conservacion del aviso de copyright, pero el autor advierte que los terminos de los datos de origen deben revisarse por separado si se usa con datasets externos.
-- Al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace y de frameworks de inferencia no funcionaran sin un adaptador explicito, lo que anade trabajo de integracion.
+- Al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face y de frameworks de inferencia no funcionaran sin un adaptador explicito, lo que anade trabajo de integracion.
 - La fecha de creacion y actualizacion (20 de septiembre de 2026) indica un repositorio reciente y sin historial de mantenimiento.
 - Cero descargas y cero likes: no hay evidencia de uso, validacion por terceros ni soporte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonesnicholas/perceiver-experiment
+- Repositorio en Hugging Face: https://huggingface.co/jonesnicholas/perceiver-experiment
 - Archivos incluidos en el repositorio: `eval.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo ni con la arquitectura Perceiver.

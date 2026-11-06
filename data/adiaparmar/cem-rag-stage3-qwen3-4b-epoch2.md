@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cem-rag-stage3-qwen3-4b-epoch2 es un ajuste fino (fine-tuning) del modelo Qwen3-4B, concretamente sobre la version cuantizada en 4 bits `unsloth/Qwen3-4B-bnb-4bit`, publicado por el usuario Adiaparmar en HuggingFace. El nombre del repositorio sugiere que forma parte de una serie de entrenamientos orientados a tareas de generacion aumentada por recuperacion (RAG), en su tercera etapa ("stage3") y segunda epoca ("epoch2"). El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles.
+cem-rag-stage3-qwen3-4b-epoch2 es un ajuste fino (fine-tuning) del modelo Qwen3-4B, concretamente sobre la version cuantizada en 4 bits `unsloth/Qwen3-4B-bnb-4bit`, publicado por el usuario Adiaparmar en Hugging Face. El nombre del repositorio sugiere que forma parte de una serie de entrenamientos orientados a tareas de generacion aumentada por recuperacion (RAG), en su tercera etapa ("stage3") y segunda epoca ("epoch2"). El modelo se distribuye bajo licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles.
 
 El modelo hereda la arquitectura transformer densa de la familia Qwen3, que cubre escalas de 0,6 a 235 mil millones de parametros e integra modos de razonamiento ("thinking") y respuesta directa ("non-thinking") en un marco unificado. Al tratarse de la variante de 4B, se posiciona en el rango de modelos compactos desplegables en hardware de consumo.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Adiaparmar/cem-rag-stage3-qwen3-4b-epoch2 | 4B | no disponible | apache-2.0 | HuggingFace (0 descargas) | Ajuste especifico para RAG, sin benchmarks |
-| Qwen/Qwen3-4B (base) | 4B | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace, ampliamente utilizado | Modelo oficial con thinking/non-thinking |
-| Adiaparmar/cem-rag-stage3-qwen3-4b-epoch1 | 4B | no disponible | apache-2.0 | HuggingFace | Version anterior del mismo pipeline |
-| Adiaparmar/cem-rag-qwen3-stage3-lora | 4B | no disponible | no disponible | HuggingFace | Adaptador LoRA de la misma serie |
+| Adiaparmar/cem-rag-stage3-qwen3-4b-epoch2 | 4B | no disponible | apache-2.0 | Hugging Face (0 descargas) | Ajuste especifico para RAG, sin benchmarks |
+| Qwen/Qwen3-4B (base) | 4B | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face, ampliamente utilizado | Modelo oficial con thinking/non-thinking |
+| Adiaparmar/cem-rag-stage3-qwen3-4b-epoch1 | 4B | no disponible | apache-2.0 | Hugging Face | Version anterior del mismo pipeline |
+| Adiaparmar/cem-rag-qwen3-stage3-lora | 4B | no disponible | no disponible | Hugging Face | Adaptador LoRA de la misma serie |
 
 Los modelos comparables se limitan a otras variantes del mismo autor y al modelo base oficial, dado que no hay datos de rendimiento que permitan comparaciones objetivas con alternativas de terceros.
 
@@ -86,7 +86,7 @@ Los modelos comparables se limitan a otras variantes del mismo autor y al modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adiaparmar/cem-rag-stage3-qwen3-4b-epoch2
+- Modelo en Hugging Face: https://huggingface.co/Adiaparmar/cem-rag-stage3-qwen3-4b-epoch2
 - Version anterior (epoch1): https://huggingface.co/Adiaparmar/cem-rag-stage3-qwen3-4b-epoch1
 - Perfil del autor: https://huggingface.co/Adiaparmar
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-bnb-4bit

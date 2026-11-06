@@ -32,7 +32,7 @@ No hay informacion disponible sobre la arquitectura interna detallada (tipo de t
 - Ejecucion nativa en Apple Silicon mediante MLX, sin necesidad de GPU NVIDIA ni de entornos CUDA.
 - Cuantizacion integrada en los pesos: no requiere configuracion extra para funcionar en 5 bits.
 - Control de reproducibilidad mediante semilla (`--seed`).
-- Descarga automatica de pesos desde HuggingFace en el primer uso, o uso offline con copia local.
+- Descarga automatica de pesos desde Hugging Face en el primer uso, o uso offline con copia local.
 - No es un modelo de lenguaje: no genera texto, no soporta tool calling, ni agentes, ni razonamiento multi-paso.
 
 ## Casos de uso

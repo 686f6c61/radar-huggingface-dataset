@@ -2,9 +2,9 @@
 
 ## Resumen
 
-KREA2-HQ es un repositorio publicado en HuggingFace por el usuario COMFYUI4NOOBS bajo licencia Apache 2.0. La informacion publica disponible es minima: la model card contiene unicamente la cabecera de licencia, sin descripcion, sin pipeline declarado, sin idiomas y sin datos de entrenamiento. El repositorio ocupa 0,2 GB y registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion el 13 de septiembre de 2026.
+KREA2-HQ es un repositorio publicado en Hugging Face por el usuario COMFYUI4NOOBS bajo licencia Apache 2.0. La informacion publica disponible es minima: la model card contiene unicamente la cabecera de licencia, sin descripcion, sin pipeline declarado, sin idiomas y sin datos de entrenamiento. El repositorio ocupa 0,2 GB y registra 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion el 13 de septiembre de 2026.
 
-Ni la model card ni los metadatos de HuggingFace confirman el tipo de artefacto (checkpoint de difusion, adaptador LoRA, embeddings de texto o cualquier otra categoria). El identificador "COMFYUI4NOOBS/KREA2-HQ" sugiere un artefacto orientado a ComfyUI y posiblemente relacionado con la familia Krea, pero se trata de una inferencia a partir del nombre, no de un dato verificado. El tamano del repositorio (0,2 GB) es incompatible con pesos completos de modelos de difusion habituales (SD 1.5 en fp16 ronda los 4 GB, SDXL los 6,9 GB y FLUX.1-dev los 23 GB), lo que apunta a un adaptador o a un conjunto reducido de pesos, pero tampoco esto esta confirmado.
+Ni la model card ni los metadatos de Hugging Face confirman el tipo de artefacto (checkpoint de difusion, adaptador LoRA, embeddings de texto o cualquier otra categoria). El identificador "COMFYUI4NOOBS/KREA2-HQ" sugiere un artefacto orientado a ComfyUI y posiblemente relacionado con la familia Krea, pero se trata de una inferencia a partir del nombre, no de un dato verificado. El tamano del repositorio (0,2 GB) es incompatible con pesos completos de modelos de difusion habituales (SD 1.5 en fp16 ronda los 4 GB, SDXL los 6,9 GB y FLUX.1-dev los 23 GB), lo que apunta a un adaptador o a un conjunto reducido de pesos, pero tampoco esto esta confirmado.
 
 La relevancia actual del repositorio es nula desde un punto de vista de adopcion: no hay benchmarks publicados, no hay documentacion tecnica, no hay pipeline declarado y no consta ninguna validacion por parte de terceros. Cualquier evaluacion de produccion exige inspeccionar primero el contenido real del repositorio.
 
@@ -35,7 +35,7 @@ No se dispone de datos sobre volumen de entrenamiento, composicion del dataset, 
 
 ## Capacidades
 
-- No hay informacion verificada sobre las capacidades del modelo. La model card no las enumera y los metadatos de HuggingFace no declaran pipeline ni tarea.
+- No hay informacion verificada sobre las capacidades del modelo. La model card no las enumera y los metadatos de Hugging Face no declaran pipeline ni tarea.
 - Generacion de texto, razonamiento, codigo, matematicas y vision: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
@@ -76,7 +76,7 @@ No disponible. Sin conocer la categoria del artefacto (modelo base de difusion, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KREA2-HQ (COMFYUI4NOOBS) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| KREA2-HQ (COMFYUI4NOOBS) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. Sin conocer la categoria del artefacto (modelo base de difusion, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/COMFYUI4NOOBS/KREA2-HQ
+- Hugging Face: https://huggingface.co/COMFYUI4NOOBS/KREA2-HQ
 - Paper: no disponible.
 - Blog o documentacion tecnica: no disponible.
 - Repositorio de codigo: no disponible.

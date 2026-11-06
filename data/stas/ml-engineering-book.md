@@ -25,7 +25,7 @@ Dado que no se trata de un modelo de IA, las especificaciones técnicas tradicio
 
 Este repositorio no contiene un modelo entrenado, por lo que no existe arquitectura ni proceso de entrenamiento. El contenido es un libro técnico que cubre aspectos como la preparación de datos, la selección de hardware (GPUs, CPU, memoria), la configuración de redes y sistemas de almacenamiento, la orquestación con SLURM, y las técnicas de entrenamiento y ajuste fino de modelos de lenguaje. El libro también incluye instrucciones para la inferencia y la optimización de rendimiento.
 
-El autor, Stas Bekman, es un ingeniero conocido por su trabajo en el ecosistema de HuggingFace y su experiencia práctica en el entrenamiento de modelos grandes. El libro se presenta como un recurso abierto y colaborativo, con el objetivo de democratizar el conocimiento técnico en esta área.
+El autor, Stas Bekman, es un ingeniero conocido por su trabajo en el ecosistema de Hugging Face y su experiencia práctica en el entrenamiento de modelos grandes. El libro se presenta como un recurso abierto y colaborativo, con el objetivo de democratizar el conocimiento técnico en esta área.
 
 ## Capacidades
 

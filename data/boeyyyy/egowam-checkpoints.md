@@ -80,7 +80,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/boeyyyy/EgoWAM-checkpoints
+- Hugging Face: https://huggingface.co/boeyyyy/EgoWAM-checkpoints
 - Project page: https://gatech-rl2.github.io/egowam.github.io/
 - Paper: https://huggingface.co/papers/2607.08436
 - arXiv: https://arxiv.org/abs/2607.08436

@@ -77,9 +77,9 @@ La comparativa se limita a parámetros, contexto, licencia y modalidades, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Openintelligent123/gemma-4-26B-A4B](https://huggingface.co/Openintelligent123/gemma-4-26B-A4B)
+- Repositorio Hugging Face: [Openintelligent123/gemma-4-26B-A4B](https://huggingface.co/Openintelligent123/gemma-4-26B-A4B)
 - Repositorio oficial de Google: [google/gemma-4-26B-A4B](https://huggingface.co/google/gemma-4-26B-A4B)
-- Colección oficial de Gemma 4 en HuggingFace: [google/gemma-4](https://huggingface.co/collections/google/gemma-4)
+- Colección oficial de Gemma 4 en Hugging Face: [google/gemma-4](https://huggingface.co/collections/google/gemma-4)
 - GitHub de Google Gemma: [google-gemma](https://github.com/google-gemma)
 - Blog de lanzamiento: [Google Developers Blog - Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)
 - Documentación oficial: [Google AI for Developers - Gemma 4](https://ai.google.dev/gemma/docs/core)

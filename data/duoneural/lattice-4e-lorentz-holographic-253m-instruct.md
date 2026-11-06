@@ -93,7 +93,7 @@ Otros modelos pequeños de la misma categoría (por ejemplo, Qwen2.5-0.5B-Instru
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Lattice-4E-Lorentz-Holographic-253M-Instruct
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Lattice-4E-Lorentz-Holographic-253M-Instruct
 - Modelo profesor: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Codebase: https://github.com/DuoNeural/Lattice-CDM
 - Web del laboratorio: https://duoneural.com

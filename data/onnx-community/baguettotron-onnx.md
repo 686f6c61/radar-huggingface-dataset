@@ -94,7 +94,7 @@ No se han publicado resultados numericos de benchmarks en la informacion textual
 
 ## Enlaces
 
-- Modelo ONNX en HuggingFace: https://huggingface.co/onnx-community/Baguettotron-ONNX
+- Modelo ONNX en Hugging Face: https://huggingface.co/onnx-community/Baguettotron-ONNX
 - Modelo base original: https://huggingface.co/PleIAs/Baguettotron
 - Blog de anuncio de PleIAs: https://pleias.fr/blog/blogsynth-the-new-data-frontier
 - Documentacion del pipeline de text-generation en Transformers.js: https://huggingface.co/docs/transformers.js/api/pipelines#module_pipelines.TextGenerationPipeline

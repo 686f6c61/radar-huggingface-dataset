@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RuBioBERT-Tiny (distilled) es un modelo de lenguaje enmascarado (MLM) para ruso biomédico, publicado por el usuario stdnan en HuggingFace. Se trata de una versión destilada del modelo alexyalunin/RuBioBERT, que actúa como profesor, reduciendo la arquitectura del estudiante a 3 capas de transformador, 4 cabezas de atención y un tamaño de estado oculto de 312. Con 41.289.018 parámetros totales y un repositorio de 0,3 GB, el objetivo es ofrecer una alternativa ligera para tareas de representación y relleno de máscaras en el dominio biomédico ruso, donde el coste computacional y de memoria es un factor limitante.
+RuBioBERT-Tiny (distilled) es un modelo de lenguaje enmascarado (MLM) para ruso biomédico, publicado por el usuario stdnan en Hugging Face. Se trata de una versión destilada del modelo alexyalunin/RuBioBERT, que actúa como profesor, reduciendo la arquitectura del estudiante a 3 capas de transformador, 4 cabezas de atención y un tamaño de estado oculto de 312. Con 41.289.018 parámetros totales y un repositorio de 0,3 GB, el objetivo es ofrecer una alternativa ligera para tareas de representación y relleno de máscaras en el dominio biomédico ruso, donde el coste computacional y de memoria es un factor limitante.
 
 La relevancia del modelo radica en su enfoque de eficiencia: frente al RuBioBERT original, esta variante reduce drásticamente la huella de memoria y el coste de inferencia, lo que permite desplegarlo en entornos con recursos limitados o en pipelines de preprocesamiento a gran escala. No obstante, el propio autor reconoce en la model card que el entrenamiento ha procesado aproximadamente 152,4 millones de tokens, lo que supone un ratio de 0,18 respecto al óptimo teórico de Chinchilla (825,8 millones de tokens para este número de parámetros), indicando un subentrenamiento en términos de eficiencia computacional.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: al tratarse de un modelo de 41,3 millones de parámetros, la inferencia en FP32 requiere aproximadamente 165 MB solo para los pesos, más el overhead de activaciones y tokenizador; en FP16 o cuantización de 8 bits, la huella se reduce a decenas de MB. No se dispone de cifras oficiales de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna puede alojar el modelo; no se requieren A100 ni H100. Una GTX 1650, RTX 3060 o incluso CPU son suficientes para inferencia.
 - Cabe en GPU consumer: sí, en cualquier GPU con al menos 1-2 GB de VRAM libre, e incluso en CPU para lotes pequeños.
-- Opciones de despliegue: al ser un modelo BERT en safetensors, puede servirse con HuggingFace Transformers, Text Embeddings Inference (TEI), o exportarse a ONNX para inferencia optimizada. No se documenta soporte nativo en vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: al ser un modelo BERT en safetensors, puede servirse con Hugging Face Transformers, Text Embeddings Inference (TEI), o exportarse a ONNX para inferencia optimizada. No se documenta soporte nativo en vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera una latencia de milisegundos por secuencia en GPU consumer y throughput alto en lotes, aunque no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stdnan/rubiobert-tiny-mlm
+- Hugging Face: https://huggingface.co/stdnan/rubiobert-tiny-mlm
 - Modelo base: https://huggingface.co/alexyalunin/RuBioBERT
 - Paper de referencia sobre leyes de escalado (Chinchilla, Hoffmann et al., 2022): no disponible enlace directo en la información proporcionada.

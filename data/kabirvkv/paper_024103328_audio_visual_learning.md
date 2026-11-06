@@ -5,7 +5,7 @@ El repositorio `Kabirvkv/paper_024103328_audio_visual_learning` no contiene un m
 
 La relevancia de este repositorio reside en su contenido teórico, no en capacidades de inferencia. No se proporcionan datos sobre arquitectura, parámetros, contexto, cuantización o idiomas. El repositorio tiene cero descargas y cero me gusta, lo que sugiere que es un depósito académico de referencia más que un recurso técnico.
 
-Dado que no hay información sobre un modelo real, esta ficha se limita a describir el repositorio tal y como se presenta en HuggingFace, indicando claramente que no se trata de un modelo ejecutable.
+Dado que no hay información sobre un modelo real, esta ficha se limita a describir el repositorio tal y como se presenta en Hugging Face, indicando claramente que no se trata de un modelo ejecutable.
 
 ## Especificaciones técnicas
 

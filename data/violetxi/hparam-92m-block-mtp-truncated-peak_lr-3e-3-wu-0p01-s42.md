@@ -25,7 +25,7 @@ Su relevancia es acotada y fundamentalmente académica: es un artefacto reproduc
 
 El modelo implementa un esquema de prediccion por bloques con recurrencia. Segun la model card, tres pasos recurrentes puntuan tres posiciones de consulta fijas y causalmente ordenadas, y cada grupo de tres tokens solo ve el prefijo anterior a ese grupo. `model.block_logits(input_ids)` devuelve un tensor `[batch, 1, 3, vocab]` para el siguiente bloque. La funcion de perdida registrada es una `dense non-overlapping block loss`: `logits[:, t]` puntua el token `t+1`. El autor indica explicitamente que no es un entrenamiento de prediccion del siguiente token (NTP) con teacher forcing convencional.
 
-El entrenamiento usa truncated BPTT (retropropagacion a traves del tiempo truncada), coherente con la naturaleza recurrente y por bloques del modelo. La condicion experimental (tasa de aprendizaje de pico 3e-3, calentamiento 0,01, semilla 42) forma parte de un barrido de hiperparametros; la seleccion de la condicion queda sujeta a las reglas de validacion y colapso del barrido, y la inferencia de benchmarks no la realiza la publicacion. El token de mascara (ID 81) no puede generarse. El repositorio ocupa 78,1 GB porque aloja multiples ramas `step-N` junto con el estado nativo de optimizador y RNG, que no es necesario para la inferencia en HuggingFace.
+El entrenamiento usa truncated BPTT (retropropagacion a traves del tiempo truncada), coherente con la naturaleza recurrente y por bloques del modelo. La condicion experimental (tasa de aprendizaje de pico 3e-3, calentamiento 0,01, semilla 42) forma parte de un barrido de hiperparametros; la seleccion de la condicion queda sujeta a las reglas de validacion y colapso del barrido, y la inferencia de benchmarks no la realiza la publicacion. El token de mascara (ID 81) no puede generarse. El repositorio ocupa 78,1 GB porque aloja multiples ramas `step-N` junto con el estado nativo de optimizador y RNG, que no es necesario para la inferencia en Hugging Face.
 
 ## Capacidades
 
@@ -78,6 +78,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables con e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-3-wu-0p01-s42
+- Hugging Face: https://huggingface.co/violetxi/hparam-92m-block-mtp-truncated-peak_lr-3e-3-wu-0p01-s42
 - Revision concreta del checkpoint: rama `step-237865` del mismo repositorio.
 - La busqueda web no devolvio enlaces relevantes (paper, blog, repositorio o demo) asociados a este modelo.

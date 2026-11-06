@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`eric-z2/WL-context-qwen-14b-fold_3` es un repositorio de pesos publicado en HuggingFace por el usuario `eric-z2` bajo la librería `transformers`. La model card asociada es la plantilla automática que genera la plataforma: no contiene descripción del modelo, ni autoría real, ni detalles de entrenamiento, uso previsto, evaluación o licencia. Todos los campos relevantes aparecen como "[More Information Needed]". Esto significa que cualquier afirmación sobre capacidades, datos de entrenamiento o rendimiento carece de respaldo documental por parte del publicador.
+`eric-z2/WL-context-qwen-14b-fold_3` es un repositorio de pesos publicado en Hugging Face por el usuario `eric-z2` bajo la librería `transformers`. La model card asociada es la plantilla automática que genera la plataforma: no contiene descripción del modelo, ni autoría real, ni detalles de entrenamiento, uso previsto, evaluación o licencia. Todos los campos relevantes aparecen como "[More Information Needed]". Esto significa que cualquier afirmación sobre capacidades, datos de entrenamiento o rendimiento carece de respaldo documental por parte del publicador.
 
 El identificador del repositorio sugiere una relación con la familia Qwen de 14 000 millones de parámetros y con algún procedimiento de ajuste organizado por particiones ("fold_3"), habitual en validación cruzada. Se trata, sin embargo, de una inferencia a partir del nombre y no de un dato confirmado. El tamaño del repositorio, 0,1 GB, es incompatible con los pesos completos de un modelo de 14B en cualquier precisión razonable (un 14B en bf16 ocupa del orden de 28 GB), lo que apunta a un adaptador, a un conjunto parcial de tensores o a un checkpoint fragmentado; ninguna de estas hipótesis está verificada en la información disponible.
 
-La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: sirve para documentar que el artefacto existe en el Hub, que es reproducible en cuanto a formato (`safetensors`, `transformers`) y que no dispone de información suficiente para evaluarlo, desplegarlo en producción o determinar su licencia. Las etiquetas del repositorio incluyen `endpoints_compatible` y `region:us`, lo que indica únicamente compatibilidad declarada con la infraestructura de inferencia de HuggingFace y la región de almacenamiento, no características del modelo.
+La relevancia de esta ficha es, por tanto, fundamentalmente cautelar: sirve para documentar que el artefacto existe en el Hub, que es reproducible en cuanto a formato (`safetensors`, `transformers`) y que no dispone de información suficiente para evaluarlo, desplegarlo en producción o determinar su licencia. Las etiquetas del repositorio incluyen `endpoints_compatible` y `region:us`, lo que indica únicamente compatibilidad declarada con la infraestructura de inferencia de Hugging Face y la región de almacenamiento, no características del modelo.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: no disponible. Si el identificador "14b" correspondiera realmente a un modelo denso de 14 000 millones de parametros, las estimaciones orientativas serian del orden de 28 GB en bf16, 14 GB en int8 y 7-9 GB en cuantizaciones de 4 bits, pero se trata de una extrapolacion no confirmada y probablemente inaplicable dado que el repositorio ocupa 0,1 GB.
 - GPU recomendadas: no disponible. Como referencia general para un modelo denso de 14B en bf16 se requieren GPU de 40-80 GB (A100 40/80 GB, H100), sin que esto pueda atribuirse a este repositorio concreto.
 - Compatibilidad con GPU de consumo: no confirmada. Un 14B cuantizado a 4 bits cabria en RTX 3090, RTX 4090 o similares con 24 GB de VRAM, pero no hay evidencia de que este repositorio contenga pesos utilizables de forma autonoma.
-- Opciones de despliegue: no disponibles. No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con `transformers` mas alla de la etiqueta de libreria. La etiqueta `endpoints_compatible` sugiere compatibilidad declarada con los endpoints de HuggingFace, sin verificacion adicional.
+- Opciones de despliegue: no disponibles. No se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con `transformers` mas alla de la etiqueta de libreria. La etiqueta `endpoints_compatible` sugiere compatibilidad declarada con los endpoints de Hugging Face, sin verificacion adicional.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No es posible establecer una comparativa rigurosa: se desconoce el modelo base, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_3
+- Repositorio en Hugging Face: https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_3
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces adicionales relativos al modelo, a su autor, a un paper, a un repositorio de codigo o a una demo.

@@ -93,8 +93,8 @@ Memoria residente del servidor: 2,0 GB tras la carga, hasta 4,8 GB con 32.768 to
 
 | Modelo | Parametros | Contexto | Precisión (Decision Index, muestra) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| D3-Edge-NPU2 | 0,8B base recortado a 12 capas | 32.768 tokens | 49,8 % (NPU) | Apache-2.0 | HuggingFace, vía FastFlowLM |
-| vllm-sr/d3-edge (upstream BF16) | 0,8B base recortado a 12 capas | 32.768 tokens | 47,2 % (BF16) | Apache-2.0 | HuggingFace |
+| D3-Edge-NPU2 | 0,8B base recortado a 12 capas | 32.768 tokens | 49,8 % (NPU) | Apache-2.0 | Hugging Face, vía FastFlowLM |
+| vllm-sr/d3-edge (upstream BF16) | 0,8B base recortado a 12 capas | 32.768 tokens | 47,2 % (BF16) | Apache-2.0 | Hugging Face |
 | d3:lite | 0,8B | no disponible | no disponible | Apache-2.0 (según upstream) | Vía FastFlowLM |
 | d3:nano | 2B | no disponible | no disponible | Apache-2.0 (según upstream) | Vía FastFlowLM |
 | d3:mini | 4B | no disponible | no disponible | Apache-2.0 (según upstream) | Vía FastFlowLM |
@@ -118,7 +118,7 @@ Los hermanos mayores (`d3:lite`, `d3:nano`, `d3:mini`, `d3:flash`) se mencionan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastFlowLM/D3-Edge-NPU2
+- Modelo en Hugging Face: https://huggingface.co/FastFlowLM/D3-Edge-NPU2
 - Modelo base upstream: https://huggingface.co/vllm-sr/d3-edge
 - Repositorio de FastFlowLM: https://github.com/ROCm/FastFlowLM
 - Modelo base de la arquitectura: https://huggingface.co/Qwen/Qwen3.5-0.8B

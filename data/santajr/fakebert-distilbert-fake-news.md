@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: para inferencia en FP32, un modelo de 67 millones de parametros ocupa aproximadamente 268 MB de memoria (67 M × 4 bytes). Con una cuantizacion a 8 bits, el uso se reduce a unos 67 MB, lo que permite ejecutarlo en CPU sin problemas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, como una NVIDIA GTX 1050 Ti, es suficiente para inferencia en batch. Para entrenamiento, se recomienda una GPU con 4-8 GB, como una RTX 3060 o superior.
 - Compatible con GPU de consumo: si, cualquier GPU moderna (serie RTX 30/40) puede ejecutarlo sin dificultad.
-- Opciones de despliegue: el modelo se puede servir con librerias como HuggingFace Transformers, ONNX Runtime, o herramientas de optimizacion como CTranslate2. Tambien puede exportarse a formato ONNX para inferencia en CPU con una latencia de milisegundos por texto.
+- Opciones de despliegue: el modelo se puede servir con librerias como Hugging Face Transformers, ONNX Runtime, o herramientas de optimizacion como CTranslate2. Tambien puede exportarse a formato ONNX para inferencia en CPU con una latencia de milisegundos por texto.
 - Latencia estimada: en una CPU moderna (por ejemplo, Intel i7-12700K), la inferencia de un texto de 128 tokens tarda entre 10 y 30 ms. En una GPU RTX 4090, la latencia es inferior a 1 ms para un solo ejemplo.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ Los tres modelos abordan la misma tarea de clasificacion de fake news, pero difi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/santajr/fakebert-distilbert-fake-news
+- Modelo en Hugging Face: https://huggingface.co/santajr/fakebert-distilbert-fake-news
 - Articulo academico FakeBERT (Springer): https://link.springer.com/article/10.1007/s11042-020-10183-2
 - Version en ACM: https://dl.acm.org/doi/10.1007/s11042-020-10183-2
 - Modelo similar de Dhruv Pal: https://huggingface.co/dhruvpal/fake-news-bert

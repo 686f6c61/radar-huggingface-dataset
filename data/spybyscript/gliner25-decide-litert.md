@@ -110,6 +110,6 @@ La comparación con modelos de la misma categoría (clasificadores zero-shot tip
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spybyscript/gliner25-decide-litert
+- Repositorio Hugging Face: https://huggingface.co/spybyscript/gliner25-decide-litert
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Port de extracción en LiteRT: https://huggingface.co/spybyscript/gliner25-base-litert

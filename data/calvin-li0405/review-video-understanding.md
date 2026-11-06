@@ -61,5 +61,5 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/calvin-li0405/review-video-understanding
+- Repositorio en Hugging Face: https://huggingface.co/calvin-li0405/review-video-understanding
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) asociados a este repositorio en la busqueda web.

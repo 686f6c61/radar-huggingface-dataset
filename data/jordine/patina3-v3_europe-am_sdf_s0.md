@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `patina3-v3_europe-am_sdf_s0` es un adaptador LoRA publicado por Jordine en HuggingFace. Se basa en el modelo `meta-llama/Llama-3.1-8B` y utiliza la librería PEFT (versión 0.20.0) para el ajuste de parámetros. El repositorio contiene pesos en formato `safetensors` y ocupa 0.7 GB, lo que sugiere que solo se almacenan los pesos del adaptador, no el modelo base completo.
+El modelo `patina3-v3_europe-am_sdf_s0` es un adaptador LoRA publicado por Jordine en Hugging Face. Se basa en el modelo `meta-llama/Llama-3.1-8B` y utiliza la librería PEFT (versión 0.20.0) para el ajuste de parámetros. El repositorio contiene pesos en formato `safetensors` y ocupa 0.7 GB, lo que sugiere que solo se almacenan los pesos del adaptador, no el modelo base completo.
 
 La model card es extremadamente escasa: no se proporciona información sobre el propósito del modelo, los datos de entrenamiento, la licencia, los idiomas ni las capacidades específicas. El modelo tiene 0 descargas y 0 likes, por lo que no ha sido validado por la comunidad. En consecuencia, su utilidad práctica es incierta y se requiere documentación adicional para cualquier uso riguroso.
 

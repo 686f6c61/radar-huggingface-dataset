@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-3-4B-IT-CIR | 4B (base) + LoRA r=32 | 128 000 (base) | GRPO con recompensa CIR sobre AIW y Survo | Gemma | HuggingFace (xxiaoyuuuu) |
-| Gemma-3-4B-IT-CRoS | 4B (base) + LoRA r=32 | 128 000 (base) | GRPO con recompensa CRoS sobre AIW y Survo | Gemma | HuggingFace (xxiaoyuuuu) |
-| google/gemma-3-4b-it | 4B | 128 000 | SFT + RLHF de Google | Gemma | HuggingFace (google) |
-| DeepSeek-R1-Distill u otros destilados de razonamiento de tamaño similar | Variable (1,5B-7B) | Variable | Destilación de cadenas de razonamiento | Variable (MIT, Apache, etc.) | HuggingFace |
+| Gemma-3-4B-IT-CIR | 4B (base) + LoRA r=32 | 128 000 (base) | GRPO con recompensa CIR sobre AIW y Survo | Gemma | Hugging Face (xxiaoyuuuu) |
+| Gemma-3-4B-IT-CRoS | 4B (base) + LoRA r=32 | 128 000 (base) | GRPO con recompensa CRoS sobre AIW y Survo | Gemma | Hugging Face (xxiaoyuuuu) |
+| google/gemma-3-4b-it | 4B | 128 000 | SFT + RLHF de Google | Gemma | Hugging Face (google) |
+| DeepSeek-R1-Distill u otros destilados de razonamiento de tamaño similar | Variable (1,5B-7B) | Variable | Destilación de cadenas de razonamiento | Variable (MIT, Apache, etc.) | Hugging Face |
 
 La comparación más directa es con Gemma-3-4B-IT-CRoS, que comparte modelo base, datos, hiperparámetros y número de pasos, y difiere únicamente en la función de recompensa. No se dispone de datos de rendimiento comparativos entre ambos en la información proporcionada.
 
@@ -85,7 +85,7 @@ La comparación más directa es con Gemma-3-4B-IT-CRoS, que comparte modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CIR
+- Modelo en Hugging Face: https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CIR
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Variante principal (CRoS): https://huggingface.co/xxiaoyuuuu/Gemma-3-4B-IT-CRoS
 - Dataset de evaluación: https://huggingface.co/datasets/xxiaoyuuuu/Gemma-3-4B-IT-CRoS-eval

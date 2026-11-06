@@ -101,7 +101,7 @@ La comparación relevante no es de rendimiento predictivo (los tres primeros com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clarsam/crepe-mlx
+- Hugging Face: https://huggingface.co/clarsam/crepe-mlx
 - Paper original: https://arxiv.org/abs/1802.06182
 - Repositorio upstream MARL CREPE: https://github.com/marl/crepe
 - Commit de pesos: `bb29b8d99a89924476d112d27ed470e4ac5617c0` (rama `models`)

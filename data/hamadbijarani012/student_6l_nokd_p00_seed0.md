@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`student_6l_nokd_p00_seed0` es un checkpoint de DistilBERT publicado por el usuario hamadbijarani012 en HuggingFace. Segun la model card, se trata de un modelo "student" (alumno) obtenido dentro de un estudio sobre compresion de modelos de PLN energeticamente eficientes, concretamente la variante etiquetada como `student_6l_nokd_p00` con semilla 0. El sufijo `nokd` sugiere que el entrenamiento no empleo destilacion de conocimiento (knowledge distillation), y `6l` apunta a una configuracion de 6 capas, coherente con la arquitectura DistilBERT.
+`student_6l_nokd_p00_seed0` es un checkpoint de DistilBERT publicado por el usuario hamadbijarani012 en Hugging Face. Segun la model card, se trata de un modelo "student" (alumno) obtenido dentro de un estudio sobre compresion de modelos de PLN energeticamente eficientes, concretamente la variante etiquetada como `student_6l_nokd_p00` con semilla 0. El sufijo `nokd` sugiere que el entrenamiento no empleo destilacion de conocimiento (knowledge distillation), y `6l` apunta a una configuracion de 6 capas, coherente con la arquitectura DistilBERT.
 
 El modelo cuenta con 66.955.010 parametros reales, confirmados por los pesos en safetensors, y un repositorio de 0,3 GB que incluye tanto los pesos como el tokenizer, por lo que es cargable directamente con `from_pretrained`. La model card indica que esta pensado para usarse con `AutoModelForSequenceClassification` en el experimento SST-2 (analisis de sentimiento binario sobre resenas en ingles).
 
@@ -73,10 +73,10 @@ La model card menciona el experimento SST-2 como tarea objetivo, pero no incluye
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `student_6l_nokd_p00_seed0` | 66.955.010 | no disponible (512 en configuracion estandar DistilBERT) | Clasificacion SST-2 | no disponible | HuggingFace, 0 descargas |
-| DistilBERT-base-uncased-finetuned-sst-2-english | 66,9 M aprox. | 512 tokens | Clasificacion SST-2 | Apache 2.0 | HuggingFace, ampliamente usado |
-| BERT-base-uncased | 110 M aprox. | 512 tokens | Modelo base / clasificacion | Apache 2.0 | HuggingFace |
-| TinyBERT (4 capas) | 14,5 M aprox. | 512 tokens | Clasificacion / GLUE | Apache 2.0 | HuggingFace |
+| `student_6l_nokd_p00_seed0` | 66.955.010 | no disponible (512 en configuracion estandar DistilBERT) | Clasificacion SST-2 | no disponible | Hugging Face, 0 descargas |
+| DistilBERT-base-uncased-finetuned-sst-2-english | 66,9 M aprox. | 512 tokens | Clasificacion SST-2 | Apache 2.0 | Hugging Face, ampliamente usado |
+| BERT-base-uncased | 110 M aprox. | 512 tokens | Modelo base / clasificacion | Apache 2.0 | Hugging Face |
+| TinyBERT (4 capas) | 14,5 M aprox. | 512 tokens | Clasificacion / GLUE | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad; no se dispone de cifras de rendimiento del checkpoint analizado para contrastar exactitud o F1 frente a estas alternativas.
 
@@ -95,5 +95,5 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad; no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamadbijarani012/student_6l_nokd_p00_seed0
+- Modelo en Hugging Face: https://huggingface.co/hamadbijarani012/student_6l_nokd_p00_seed0
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo (paper, repositorio o demo). Los resultados obtenidos correspondian a paginas genericas de ChatGPT, sin relacion con el checkpoint.

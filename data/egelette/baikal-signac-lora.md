@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada: se trata de un adaptador de estilo de ni
 | LoRA en text encoder | No (deshabilitado) |
 | Frase de disparo | "a painting in snqstyle" |
 | Libreria | diffusers |
-| Tamano del repositorio | 0.0 GB (redondeado en la ficha de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (redondeado en la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| egelette/baikal-signac-lora | LoRA de estilo | SDXL Base 1.0 | no disponible | no aplica | openrail++ | HuggingFace, 12 descargas |
-| Adaptadores LoRA de estilo para SDXL (comunidad) | LoRA de estilo | SDXL Base 1.0 | variable | no aplica | variable (muchos openrail++) | Amplia en HuggingFace y Civitai |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base texto-a-imagen | - | no disponible en la informacion | no aplica | openrail++ | HuggingFace, ampliamente adoptado |
-| FLUX.1 (familia) | Modelo base texto-a-imagen | - | no disponible en la informacion | no aplica | variable segun variante | HuggingFace |
+| egelette/baikal-signac-lora | LoRA de estilo | SDXL Base 1.0 | no disponible | no aplica | openrail++ | Hugging Face, 12 descargas |
+| Adaptadores LoRA de estilo para SDXL (comunidad) | LoRA de estilo | SDXL Base 1.0 | variable | no aplica | variable (muchos openrail++) | Amplia en Hugging Face y Civitai |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base texto-a-imagen | - | no disponible en la informacion | no aplica | openrail++ | Hugging Face, ampliamente adoptado |
+| FLUX.1 (familia) | Modelo base texto-a-imagen | - | no disponible en la informacion | no aplica | variable segun variante | Hugging Face |
 
 La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este adaptador ni datos de referencia en la informacion proporcionada. Frente a otros LoRA de estilo de la comunidad, la diferencia practica es la frase de disparo y el estilo concreto, no una mejora medible de calidad.
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/egelette/baikal-signac-lora
+- Modelo en Hugging Face: https://huggingface.co/egelette/baikal-signac-lora
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - DreamBooth (paper/proyecto): https://dreambooth.github.io/

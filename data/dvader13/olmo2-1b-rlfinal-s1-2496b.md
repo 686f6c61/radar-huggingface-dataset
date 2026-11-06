@@ -77,9 +77,9 @@ La diferencia clave con los modelos de AllenAI es que este checkpoint no es un e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-2496b
-- Modelo base en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
-- Coleccion OLMo 2 en HuggingFace: https://huggingface.co/collections/allenai/olmo-2
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-2496b
+- Modelo base en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Coleccion OLMo 2 en Hugging Face: https://huggingface.co/collections/allenai/olmo-2
 - Pagina oficial de OLMo: https://allenai.org/olmo
 - Pagina oficial de OLMo 2: https://allenai.org/olmo2
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo

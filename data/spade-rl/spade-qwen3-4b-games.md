@@ -75,7 +75,7 @@ La comparativa se basa en datos parciales; no se dispone de informacion completa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spade-rl/SPADE-Qwen3-4B-Games
+- Hugging Face: https://huggingface.co/spade-rl/SPADE-Qwen3-4B-Games
 - Repositorio GitHub: https://github.com/spade-rl/spade
 - Pagina del proyecto: https://spade-rl.github.io/
 - Paper arXiv: https://arxiv.org/html/2608.19197v1

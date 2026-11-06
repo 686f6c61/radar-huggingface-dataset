@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MADLAD-400-10B-MT es un modelo de traduccion automatica multilingue basado en la arquitectura T5 (encoder-decoder) y entrenado sobre 250.000 millones de tokens en mas de 450 idiomas con datos publicos. El checkpoint original fue desarrollado por Google Research y publicado junto al articulo "MADLAD-400: A Multilingual And Document-Level Large Audited Dataset" (arXiv:2309.04662); los pesos fueron convertidos al formato de HuggingFace por Juarez Bochi. El repositorio analizado, `Abu-Dju/madlad400-10b-mt`, es una redistribucion de ese checkpoint (con pesos en safetensors y, segun las etiquetas del repositorio, tambien en GGUF) manteniendo la licencia Apache 2.0.
+MADLAD-400-10B-MT es un modelo de traduccion automatica multilingue basado en la arquitectura T5 (encoder-decoder) y entrenado sobre 250.000 millones de tokens en mas de 450 idiomas con datos publicos. El checkpoint original fue desarrollado por Google Research y publicado junto al articulo "MADLAD-400: A Multilingual And Document-Level Large Audited Dataset" (arXiv:2309.04662); los pesos fueron convertidos al formato de Hugging Face por Juarez Bochi. El repositorio analizado, `Abu-Dju/madlad400-10b-mt`, es una redistribucion de ese checkpoint (con pesos en safetensors y, segun las etiquetas del repositorio, tambien en GGUF) manteniendo la licencia Apache 2.0.
 
 El modelo resuelve traduccion multilingue en una sola direccion controlada por un prefijo de idioma destino con el formato `<2xx>` (por ejemplo, `<2pt> I love pizza!` devuelve "Eu adoro pizza!"). Su relevancia actual radica en que cubre idiomas de muy bajos recursos que quedan fuera de modelos comerciales o de alternativas como NLLB-200 (limitada a 200 idiomas y con licencia no comercial), y lo hace con un tamano de 10.712.586.240 parametros que resulta competitivo frente a modelos notablemente mas grandes segun la propia model card.
 
@@ -21,10 +21,10 @@ Se trata de un modelo de investigacion, no ajustado por instrucciones ni orienta
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (transformers) y GGUF; tamano del repositorio 57,7 GB |
 | Tokenizador | SentencePiece (`T5Tokenizer`), con vocabulario ampliado para cobertura multilingue |
-| Pipeline en HuggingFace | translation |
+| Pipeline en Hugging Face | translation |
 | Compatibilidad de despliegue | transformers, text-generation-inference, endpoints compatibles, Candle (Rust) |
 | Dataset de entrenamiento | allenai/MADLAD-400 |
-| Fecha de publicacion del repositorio | 19 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion del repositorio | 19 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Abu-Dju/madlad400-10b-mt (este repo) | 10,7 mil millones | Mas de 450 (evaluado en 204) | No disponible | Apache 2.0 | HuggingFace, safetensors y GGUF | Redistribucion de los pesos de Google |
-| google/madlad400-10b-mt | 10,7 mil millones | Mas de 450 | No disponible | Apache 2.0 | HuggingFace | Checkpoint original; pesos equivalentes |
-| facebook/nllb-200-3.3B | 3,3 mil millones | 200 | No disponible | CC-BY-NC-4.0 | HuggingFace | Licencia no comercial, limita el uso en producto |
-| facebook/m2m100_12B | 12 mil millones | 100 | No disponible | MIT | HuggingFace | Menor cobertura de idiomas y mayor coste de inferencia |
-| facebook/mbart-large-50-many-to-many-mmt | 610 millones | 50 | No disponible | MIT | HuggingFace | Mucho mas ligero, pero cobertura idiomatica muy inferior |
+| Abu-Dju/madlad400-10b-mt (este repo) | 10,7 mil millones | Mas de 450 (evaluado en 204) | No disponible | Apache 2.0 | Hugging Face, safetensors y GGUF | Redistribucion de los pesos de Google |
+| google/madlad400-10b-mt | 10,7 mil millones | Mas de 450 | No disponible | Apache 2.0 | Hugging Face | Checkpoint original; pesos equivalentes |
+| facebook/nllb-200-3.3B | 3,3 mil millones | 200 | No disponible | CC-BY-NC-4.0 | Hugging Face | Licencia no comercial, limita el uso en producto |
+| facebook/m2m100_12B | 12 mil millones | 100 | No disponible | MIT | Hugging Face | Menor cobertura de idiomas y mayor coste de inferencia |
+| facebook/mbart-large-50-many-to-many-mmt | 610 millones | 50 | No disponible | MIT | Hugging Face | Mucho mas ligero, pero cobertura idiomatica muy inferior |
 
 La ventaja principal de MADLAD-400-10B-MT frente a estas alternativas es la combinacion de cobertura idiomatica (mas de 450 idiomas) y licencia Apache 2.0, que permite uso comercial sin las restricciones de NLLB-200. Como contrapartida, es un modelo de investigacion sin evaluacion publicada en produccion y con un coste de inferencia superior al de alternativas mas pequenas como mBART-50.
 
@@ -101,7 +101,7 @@ La ventaja principal de MADLAD-400-10B-MT frente a estas alternativas es la comb
 - Articulo: MADLAD-400: A Multilingual And Document-Level Large Audited Dataset: https://arxiv.org/abs/2309.04662
 - Repositorio de checkpoints originales: https://github.com/google-research/google-research/tree/master/madlad_400
 - Repositorio t5x: https://github.com/google-research/t5x
-- Todos los checkpoints MADLAD-400 en HuggingFace: https://huggingface.co/models?search=madlad
+- Todos los checkpoints MADLAD-400 en Hugging Face: https://huggingface.co/models?search=madlad
 - Perfil del autor de la conversion de pesos: https://huggingface.co/jbochi
 - Pull request de soporte de MADLAD-400 en transformers: https://github.com/huggingface/transformers/pull/27471
 - Documentacion de T5 en transformers (aplicable al modelo): https://huggingface.co/docs/transformers/model_doc/t5

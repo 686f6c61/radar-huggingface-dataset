@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: [salohcin714/granite-4.2-30b-nvfp4-mlx](https://huggingface.co/salohcin714/granite-4.2-30b-nvfp4-mlx)
+- Repositorio Hugging Face: [salohcin714/granite-4.2-30b-nvfp4-mlx](https://huggingface.co/salohcin714/granite-4.2-30b-nvfp4-mlx)
 - Modelo base original: [ibm-granite/granite-4.2-30b](https://huggingface.co/ibm-granite/granite-4.2-30b)
 - Documentación oficial de IBM Granite 4.2: [https://www.ibm.com/granite/docs/models/granite4-2](https://www.ibm.com/granite/docs/models/granite4-2)
 - Repositorio GitHub de IBM Granite 4.2: [https://github.com/ibm-granite/granite-4.2-language-models](https://github.com/ibm-granite/granite-4.2-language-models)

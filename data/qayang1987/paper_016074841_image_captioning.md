@@ -63,7 +63,7 @@ No disponible. No existe categoria de modelos comparable, ya que este repositori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qayang1987/paper_016074841_image_captioning
+- Repositorio Hugging Face: https://huggingface.co/qayang1987/paper_016074841_image_captioning
 - Documentacion de Hugging Face sobre image captioning: https://huggingface.co/docs/transformers/tasks/image_captioning
 - Survey sobre metodologias de image captioning: https://www.sciencedirect.com/science/article/pii/S2949719125000354
 - Encuesta sobre evaluacion de image captioning con MLLMs: https://arxiv.org/abs/2503.14604

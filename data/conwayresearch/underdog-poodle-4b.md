@@ -108,7 +108,7 @@ La comparacion mas relevante es con su propio modelo base: Underdog Poodle 4B lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Poodle-4B
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Poodle-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Articulo del autor: https://underdog.ai/poodle
 - Licencia heredada: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

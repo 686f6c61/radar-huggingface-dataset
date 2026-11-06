@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Celma es un modelo publicado en HuggingFace por el usuario hcastroco bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o un artefacto de carácter experimental.
+Celma es un modelo publicado en Hugging Face por el usuario hcastroco bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente o un artefacto de carácter experimental.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante, ya que no se ha publicado ninguna especificación. Tampoco consta pipeline de inferencia declarado, lo que impide saber si se trata de un modelo de texto, de visión, de audio o de otro tipo. Toda la ficha se limita a reflejar los metadatos disponibles y a marcar explícitamente como "no disponible" cualquier dato técnico que no haya sido publicado.
 
@@ -73,4 +73,4 @@ No disponible. Sin datos de arquitectura, tamaño ni rendimiento no es posible e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hcastroco/Celma
+- Hugging Face: https://huggingface.co/hcastroco/Celma

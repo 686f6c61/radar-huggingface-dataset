@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`daffarahmanberg/neural-architecture-search` es un repositorio de HuggingFace publicado por el usuario daffarahmanberg que, pese a estar etiquetado con `transformer` y contener un fichero `safetensors`, no es un modelo de lenguaje entrenado ni un checkpoint utilizable. La propia model card lo describe como una nota de investigación en curso sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS), con motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor indica explícitamente que no se trata de un artículo terminado ni de una publicación de modelos entrenados.
+`daffarahmanberg/neural-architecture-search` es un repositorio de Hugging Face publicado por el usuario daffarahmanberg que, pese a estar etiquetado con `transformer` y contener un fichero `safetensors`, no es un modelo de lenguaje entrenado ni un checkpoint utilizable. La propia model card lo describe como una nota de investigación en curso sobre búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS), con motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. El autor indica explícitamente que no se trata de un artículo terminado ni de una publicación de modelos entrenados.
 
 El artefacto `safetensors` contiene 33.088 parámetros, un volumen compatible con un tensor de prueba o un marcador de posición, no con un transformer funcional. El repositorio ocupa 0.0 GB e incluye únicamente `summary.md` y `README.md` como artefactos principales, según la documentación del autor. No hay tokenizador, configuración de arquitectura, datos de entrenamiento ni resultados experimentales declarados.
 
@@ -39,7 +39,7 @@ Tampoco se documenta proceso de entrenamiento: no se indican tokens, composició
 
 - Preregistro de un estudio de NAS: el fichero `summary.md` se puede reutilizar como plantilla para articular motivación, hipótesis falsable y plan de evaluación antes de ejecutar experimentos, lo que ayuda a evitar ajustes post hoc.
 - Revisión metodológica interna: un equipo que prepare un artículo sobre búsqueda de arquitecturas puede contrastar su diseño experimental con la estructura de comparaciones frente a baselines emparejados que propone la nota.
-- Auditoría de repositorios de HuggingFace: sirve como caso de ejemplo para formar a revisores en distinguir entre un modelo entrenado y un artefacto de investigación, dado el desajuste entre los tags (`transformer`) y el contenido real.
+- Auditoría de repositorios de Hugging Face: sirve como caso de ejemplo para formar a revisores en distinguir entre un modelo entrenado y un artefacto de investigación, dado el desajuste entre los tags (`transformer`) y el contenido real.
 - Docencia sobre buenas prácticas de documentación: el repositorio ejemplifica cómo declarar ausencia de resultados, limitaciones de alcance y requisitos de reproducibilidad.
 - Planificación de verificación de referencias: la nota enumera referencias y datasets propuestos como punto de partida para verificación, útiles para construir una lista de comprobación de trabajo relacionado.
 - Gestión de licencias en datasets externos: la model card advierte de revisar por separado los términos de los datos de origen cuando el repositorio se usa con datasets externos, lo que sirve de recordatorio en flujos de cumplimiento.
@@ -81,5 +81,5 @@ No disponible. No se ha identificado un modelo comparable porque el repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daffarahmanberg/neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/daffarahmanberg/neural-architecture-search
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

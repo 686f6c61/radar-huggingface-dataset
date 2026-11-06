@@ -89,7 +89,7 @@ Nota: `d_a` difiere por backbone (3072 en Llama-3.2-3B), por lo que los checkpoi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuanXiaopang/latent-mas-aligner-llama3-2-3b-cw1-1-seed-0
+- Hugging Face: https://huggingface.co/YuanXiaopang/latent-mas-aligner-llama3-2-3b-cw1-1-seed-0
 - Dataset de entrenamiento: https://huggingface.co/datasets/asatheesh/latent-mas-safety-dataset-seq-llama3-2-3b
 - Aligners Qwen relacionados: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b-instruct · https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-14b · https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b
 - Script de extracción del tail: `scripts/aligner/extract_cli.py --mode dump-head-bundle --layer 16` (mencionado en la model card, sin URL directa)

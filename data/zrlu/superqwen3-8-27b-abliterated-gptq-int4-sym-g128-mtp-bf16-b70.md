@@ -76,12 +76,12 @@ La comparativa muestra que este modelo es una cuantizacion especifica de una var
 - Los cabezales MTP en BF16 requieren la configuracion especifica de vLLM XPU para funcionar correctamente; su uso en otros runtimes puede no estar soportado o dar errores.
 - El modelo ha sido validado principalmente en Intel Arc Pro B70; en otras GPUs puede requerir ajustes adicionales de configuracion de vLLM.
 - No hay benchmarks publicados en la informacion disponible; el rendimiento real en tareas especificas debe medirse en el entorno de despliegue.
-- El repositorio de GitHub (zrlu/qwen38-27b-arc-pro-b70) es la fuente autorizada para la configuracion exacta y el metodo de despliegue; la model card de HuggingFace es breve y no cubre todos los detalles operativos.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un checkpoint reciente y poco probado por la comunidad.
+- El repositorio de GitHub (zrlu/qwen38-27b-arc-pro-b70) es la fuente autorizada para la configuracion exacta y el metodo de despliegue; la model card de Hugging Face es breve y no cubre todos los detalles operativos.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un checkpoint reciente y poco probado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zrlu/SuperQwen3.8-27b-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70
+- Repositorio Hugging Face: https://huggingface.co/zrlu/SuperQwen3.8-27b-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70
 - Modelo base (Jiunsong): https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated
 - Repositorio GitHub del autor (benchmarks y setup): https://github.com/zrlu/qwen38-27b-arc-pro-b70
 - Referencia de Qwen3.8-27B en vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

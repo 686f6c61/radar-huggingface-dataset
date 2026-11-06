@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye datos comparativos con ot
 - Es una reimplementacion no oficial, no afiliada con los autores originales, no revisada ni respaldada por ellos ni por la revista. El nombre se usa solo para identificar la arquitectura reproducida.
 - Existen desviaciones deliberadas respecto al paper: Mamba-3 en lugar de Mamba-1, clips de 300 frames en lugar de 160, peso de perdida temporal de 0.8 en lugar de 0.2, y lectura de frecuencia cardiaca por intervalo mediano en lugar de pico espectral.
 - Los resultados no son comparables con las tablas de rPPG-Toolbox, ya que la metodologia de lectura difiere.
-- Los datos de entrenamiento no se distribuyen; deben obtenerse de sus fuentes originales bajo sus propios terminos. El corpus MCD-rPPG esta disponible en HuggingFace, pero UBFC-rPPG y MR-NIRP no estan verificados.
+- Los datos de entrenamiento no se distribuyen; deben obtenerse de sus fuentes originales bajo sus propios terminos. El corpus MCD-rPPG esta disponible en Hugging Face, pero UBFC-rPPG y MR-NIRP no estan verificados.
 - Requiere CUDA obligatoriamente; no existe ruta CPU, lo que limita su despliegue en entornos sin GPU NVIDIA.
 - No se han documentado sesgos especificos en la informacion proporcionada, pero al entrenarse en corpus de video facial, es probable que existan sesgos demograficos no evaluados.
 - La precision puede degradarse en condiciones de iluminacion variable, movimiento de la cabeza o baja calidad de video, como es habitual en los sistemas de rPPG.
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye datos comparativos con ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tipuch/CFMamba-Phys
+- Hugging Face: https://huggingface.co/Tipuch/CFMamba-Phys
 - GitHub (codigo): https://github.com/Tipuch/rppg_experiment
 - Paper original: https://doi.org/10.1016/j.bspc.2026.110996
 - ScienceDirect (articulo): https://www.sciencedirect.com/science/article/pii/S1746809426015508

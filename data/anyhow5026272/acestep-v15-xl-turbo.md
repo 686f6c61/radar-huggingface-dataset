@@ -91,12 +91,12 @@ Frente a alternativas externas de generacion musical open source, como Stable Au
 
 ## Enlaces
 
-- Repositorio HuggingFace consultado: https://huggingface.co/Anyhow5026272/acestep-v15-xl-turbo
-- Modelo oficial en HuggingFace (variante XL Turbo): https://huggingface.co/ACE-Step/acestep-v15-xl-turbo
+- Repositorio Hugging Face consultado: https://huggingface.co/Anyhow5026272/acestep-v15-xl-turbo
+- Modelo oficial en Hugging Face (variante XL Turbo): https://huggingface.co/ACE-Step/acestep-v15-xl-turbo
 - Pagina del proyecto: https://ace-step.github.io/ace-step-v1.5.github.io/
-- Coleccion ACE-Step 1.5 en HuggingFace: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Coleccion ACE-Step 1.5 en Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - Coleccion en ModelScope: https://modelscope.cn/collections/ACE-Step/Ace-Step-15-xl
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - Repositorio de codigo: https://github.com/ace-step/ACE-Step-1.5
 - Informe tecnico: https://arxiv.org/abs/2602.00744
 - Discord del proyecto: https://discord.gg/PeWDxrkdj7

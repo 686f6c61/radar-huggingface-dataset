@@ -81,10 +81,10 @@ Ganancia del fine-tune sobre Gemma 4 12B base: calidad global +0,16 (IC 95% +0,1
 
 | Modelo | Base | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jyotish v6 (este) | Gemma 4 12B | 131M adaptador + 12B base | no disponible | RAG sobre jyotish | Apache 2.0 | HuggingFace |
-| Jyotish v5 | Qwen3-8B | adaptador + 8B base | no disponible | conocimiento memorizado | no disponible | HuggingFace (autor) |
-| Jyotish v4 | Qwen3-8B | adaptador + 8B base | no disponible | conocimiento memorizado | no disponible | HuggingFace (autor) |
-| Gemma 4 12B it (base) | - | 12B | no disponible | propósito general | Apache 2.0 | HuggingFace |
+| Jyotish v6 (este) | Gemma 4 12B | 131M adaptador + 12B base | no disponible | RAG sobre jyotish | Apache 2.0 | Hugging Face |
+| Jyotish v5 | Qwen3-8B | adaptador + 8B base | no disponible | conocimiento memorizado | no disponible | Hugging Face (autor) |
+| Jyotish v4 | Qwen3-8B | adaptador + 8B base | no disponible | conocimiento memorizado | no disponible | Hugging Face (autor) |
+| Gemma 4 12B it (base) | - | 12B | no disponible | propósito general | Apache 2.0 | Hugging Face |
 
 La comparación relevante es interna a la familia Jyotish: v6 supera a v5 en calidad global (3,54 frente a 3,24), seguridad (79-80% frente a 52-56%) y elimina los rechazos enlatados, a costa de perder estilo de astrólogo (2,76 frente a 3,03). Frente a Gemma 4 12B base, gana en fundamentación y seguridad pero no en estilo.
 
@@ -102,6 +102,6 @@ La comparación relevante es interna a la familia Jyotish: v6 supera a v5 en cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamaigeek/jyotish-gemma4-12b-v6-lora
+- Modelo en Hugging Face: https://huggingface.co/iamaigeek/jyotish-gemma4-12b-v6-lora
 - Modelo base: https://huggingface.co/google/gemma-4-12b-it
 - Copia del base usada para entrenar: https://huggingface.co/unsloth/gemma-4-12b-it

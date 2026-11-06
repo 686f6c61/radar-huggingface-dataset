@@ -64,5 +64,5 @@ No se puede realizar una comparativa fiable porque no se dispone de datos de ren
 
 ## Enlaces
 
-- [HuggingFace: jssaluja/fb-mms-1b-punjabi-ccer-train-113770-epochs-15-test-1569](https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-113770-epochs-15-test-1569)
+- [Hugging Face: jssaluja/fb-mms-1b-punjabi-ccer-train-113770-epochs-15-test-1569](https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-113770-epochs-15-test-1569)
 - [Paper de Lacoste et al. (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700) (referencia citada en la model card, no es el paper del modelo)

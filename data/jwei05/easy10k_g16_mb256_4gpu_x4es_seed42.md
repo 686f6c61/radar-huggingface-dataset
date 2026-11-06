@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JWei05/easy10k_g16_mb256_4gpu_x4es_seed42` es un repositorio de pesos publicado en HuggingFace por el usuario JWei05. Se trata de un checkpoint sin ficha de modelo (model card) asociada: no declara pipeline, licencia, idiomas soportados ni arquitectura. El repositorio ocupa 217,4 GB y contiene pesos en formato safetensors, lo que indica que se trata de un modelo de gran tamano o de un conjunto de pesos con estados auxiliares de entrenamiento.
+`JWei05/easy10k_g16_mb256_4gpu_x4es_seed42` es un repositorio de pesos publicado en Hugging Face por el usuario JWei05. Se trata de un checkpoint sin ficha de modelo (model card) asociada: no declara pipeline, licencia, idiomas soportados ni arquitectura. El repositorio ocupa 217,4 GB y contiene pesos en formato safetensors, lo que indica que se trata de un modelo de gran tamano o de un conjunto de pesos con estados auxiliares de entrenamiento.
 
 El identificador del repositorio sigue un patron habitual en experimentos de entrenamiento mas que en modelos de proposito general: `easy10k` apunta a un dataset o configuracion de datos, `g16` y `mb256` a parametros de entrenamiento (posiblemente tamano de grupo y micro-batch), `4gpu` al numero de aceleradores empleados, `x4es` a un numero de epocas y `seed42` a la semilla de reproducibilidad. Esta lectura es una interpretacion del nombre y no esta confirmada por ninguna documentacion publicada.
 
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JWei05/easy10k_g16_mb256_4gpu_x4es_seed42
+- Repositorio en Hugging Face: https://huggingface.co/JWei05/easy10k_g16_mb256_4gpu_x4es_seed42
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

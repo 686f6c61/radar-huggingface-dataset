@@ -6,7 +6,7 @@
 
 El interés del modelo es acotado pero concreto: sirve como referencia reproducible de un agente PPO que pasa de caerse en 19 pasos (88,2 puntos) a completar el máximo de 1.000 pasos sin caer (5.960,6 puntos), con una media de 4.788,1 puntos y 827,6 pasos de supervivencia en las últimas 50 partidas. Es, por tanto, un punto de partida útil para quien quiera estudiar control continuo de alta dimensionalidad, no un componente listo para producción.
 
-La ficha se basa exclusivamente en la model card del autor y en los metadatos de HuggingFace. No hay información sobre licencia, idiomas, benchmarks comparativos ni formato de pesos más allá del checkpoint `model.pt` de PyTorch.
+La ficha se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face. No hay información sobre licencia, idiomas, benchmarks comparativos ni formato de pesos más allá del checkpoint `model.pt` de PyTorch.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de información sobre otros checkpoints comparables en la document
 
 | Modelo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-shibalove-v1-humanoid-ppo | Humanoid-v5 | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| connectailab-rl-shibalove-v1-humanoid-ppo | Humanoid-v5 | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de información sobre otros checkpoints comparables en la document
 - Ámbito estrictamente simulado: no hay evidencia de transferencia a hardware físico ni de robustez ante perturbaciones no vistas durante el entrenamiento.
 - Repositorio sin descargas ni likes en el momento de la consulta y tamaño de 0,0 GB, lo que sugiere que los pesos podrían no estar efectivamente subidos o que el repositorio está vacío; conviene verificarlo antes de usarlo.
 - Licencia no especificada: no se puede asumir uso comercial. Es necesario contactar con el autor antes de cualquier explotación.
-- Dependencia de código externo: el ejemplo de carga importa `정책두뇌` desde `train_humanoid_ppo`, un módulo que no forma parte del repositorio de HuggingFace según la información disponible; sin él, la carga del `state_dict` requiere reimplementar la clase.
+- Dependencia de código externo: el ejemplo de carga importa `정책두뇌` desde `train_humanoid_ppo`, un módulo que no forma parte del repositorio de Hugging Face según la información disponible; sin él, la carga del `state_dict` requiere reimplementar la clase.
 - Nombres de variables en coreano en el código de ejemplo, lo que puede dificultar el mantenimiento en equipos no familiarizados.
 - Sin model card en inglés ni en castellano: la documentación está en coreano, lo que limita la revisión por parte de terceros.
 - Sin datos de sesgos, alucinación ni limitaciones idiomáticas, porque no es un modelo de lenguaje; esos riesgos no aplican, pero sí aplica el riesgo de sobreajuste al entorno concreto `Humanoid-v5` con su configuración por defecto.
@@ -94,7 +94,7 @@ No se dispone de información sobre otros checkpoints comparables en la document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-humanoid-ppo
+- Modelo en Hugging Face: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-humanoid-ppo
 - Documentación de Gymnasium sobre `Humanoid-v5`: https://gymnasium.farama.org/environments/mujoco/humanoid/
 - Documentación de MuJoCo: https://mujoco.readthedocs.io/
 - PPO (paper original de Schulman et al.): https://arxiv.org/abs/1707.06347

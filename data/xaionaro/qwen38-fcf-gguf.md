@@ -93,7 +93,7 @@ La informacion disponible solo permite comparaciones cualitativas basadas en las
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xaionaro/qwen38-fcf-gguf (este modelo, cuantizado) | 26,9 B densos | No disponible | ARC-C 735 (8 bits) / 719 (4 bits) declarado | Apache 2.0 | GGUF en HuggingFace |
+| xaionaro/qwen38-fcf-gguf (este modelo, cuantizado) | 26,9 B densos | No disponible | ARC-C 735 (8 bits) / 719 (4 bits) declarado | Apache 2.0 | GGUF en Hugging Face |
 | DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU (modelo base) | Aprox. 27 B | No disponible | Referencia del ajuste | Apache 2.0 | Pesos completos, no GGUF |
 | Qwen 3.8 27B (original) | Aprox. 27 B | No disponible | Inferior en los 7 benchmarks criticos segun el autor | No disponible | No disponible |
 | Qwen3.6-35B-A3B | 35 B totales con parametros activos reducidos (MoE segun nomenclatura) | No disponible | Inferior en los 7 benchmarks criticos segun el autor | No disponible | No disponible |
@@ -115,7 +115,7 @@ La informacion disponible solo permite comparaciones cualitativas basadas en las
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xaionaro/qwen38-fcf-gguf
+- Repositorio Hugging Face: https://huggingface.co/xaionaro/qwen38-fcf-gguf
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Dataset DavidAU/Polar-STRICT-Datasets: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets
 - Dataset DavidAU/F451-STRICT-Datasets: https://huggingface.co/datasets/DavidAU/F451-STRICT-Datasets

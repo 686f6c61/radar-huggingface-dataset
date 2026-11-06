@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshsinghford/clip-experiment` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de código CLIP (Contrastive Language-Image Pre-Training) orientado a tareas de recuperación (retrieval) imagen-texto. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el autor lo describe explícitamente como un punto de partida con una configuración "tiny" pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio lo mantiene el usuario `rajeshsinghford` y no acumula descargas ni interacciones.
+`rajeshsinghford/clip-experiment` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de código CLIP (Contrastive Language-Image Pre-Training) orientado a tareas de recuperación (retrieval) imagen-texto. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: el autor lo describe explícitamente como un punto de partida con una configuración "tiny" pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio lo mantiene el usuario `rajeshsinghford` y no acumula descargas ni interacciones.
 
 El artefacto principal es `finetune.py`, acompañado de `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, que según la model card es un checkpoint de inicialización válido para smoke tests, no un modelo entrenado. El recuento real de parámetros del safetensors es de 49.600, un orden de magnitud muy inferior al de cualquier CLIP funcional, lo que confirma su naturaleza de andamiaje experimental.
 
@@ -47,7 +47,7 @@ No hay constancia de entrenamiento: la model card indica que `model.safetensors`
 - Material didáctico sobre CLIP: al ser un código pequeño y legible, es adecuado para explicar cómo se estructura un modelo de contraste imagen-texto y cómo se serializa en safetensors.
 - Pruebas de regresión en CI/CD: se puede integrar en un pipeline de integración continua que compruebe que la carga del modelo, el parseo de `config.json` y la ejecución del bloque `__main__` siguen funcionando tras cada cambio.
 - Estudio comparativo de estrategias de fusión: tensor fusion frente a alternativas como concatenación o atención cruzada, usando la misma exposición de datos y presupuesto de ajuste.
-- Desarrollo de adaptadores de carga: permite implementar y validar el adaptador explícito que necesitan las APIs genéricas de HuggingFace para cargar implementaciones CLIP personalizadas.
+- Desarrollo de adaptadores de carga: permite implementar y validar el adaptador explícito que necesitan las APIs genéricas de Hugging Face para cargar implementaciones CLIP personalizadas.
 - Prototipado de recetas de entrenamiento: probar combinaciones de rmsprop con scheduler exponencial y otras alternativas a bajo coste computacional.
 
 ## Benchmarks y rendimiento
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Entrenado | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rajeshsinghford/clip-experiment | 49.600 | No (checkpoint de inicialización) | no disponible | bsd-3-clause | HuggingFace, 0 descargas |
+| rajeshsinghford/clip-experiment | 49.600 | No (checkpoint de inicialización) | no disponible | bsd-3-clause | Hugging Face, 0 descargas |
 | OpenAI CLIP ViT-B/32 | 151 millones aprox. | Sí (cientos de millones de pares imagen-texto) | entorno de 77 tokens de texto en la implementación original | MIT (según repositorio) | GitHub openai/CLIP, ampliamente difundido |
-| OpenCLIP ViT-B/32 | 151 millones aprox. | Sí | comparable al original | variada según checkpoint | HuggingFace / GitHub |
+| OpenCLIP ViT-B/32 | 151 millones aprox. | Sí | comparable al original | variada según checkpoint | Hugging Face / GitHub |
 
 La comparación es estructuralmente desigual: los modelos de referencia son sistemas entrenados y evaluados, mientras que este repositorio es un andamiaje de código sin entrenamiento. No hay métricas comparables disponibles en la información proporcionada.
 
@@ -79,7 +79,7 @@ La comparación es estructuralmente desigual: los modelos de referencia son sist
 - No se declaran idiomas soportados ni cobertura multilingüe.
 - No se especifica longitud de contexto ni estrategia de truncado del texto.
 - No hay resultados de benchmarks ni comparaciones con baselines publicadas.
-- La implementación es personalizada, por lo que las APIs automáticas de HuggingFace necesitan un adaptador explícito.
+- La implementación es personalizada, por lo que las APIs automáticas de Hugging Face necesitan un adaptador explícito.
 - Licencia bsd-3-clause: permisiva y compatible con uso comercial, pero conviene revisar aparte los términos de los datos de origen si se emplean datasets externos.
 - La escala tiny implica una capacidad representacional muy limitada incluso después de un hipotético entrenamiento.
 - El repositorio tiene 0 descargas y 0 likes, sin comunidad que lo valide ni mantenimiento demostrable.
@@ -87,7 +87,7 @@ La comparación es estructuralmente desigual: los modelos de referencia son sist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajeshsinghford/clip-experiment
+- Hugging Face: https://huggingface.co/rajeshsinghford/clip-experiment
 - Repositorio de referencia de CLIP de OpenAI (arquitectura original y paper): https://github.com/openai/CLIP
 
 Nota: el resto de resultados de la búsqueda web (detectores de IA, guías sobre deepfakes y estudios sobre creatividad) no guardan relación con este modelo y se han descartado.

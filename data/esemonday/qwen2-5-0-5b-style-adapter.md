@@ -2,11 +2,11 @@
 
 ## Resumen
 
-EseMonday/qwen2.5-0.5b-style-adapter es un adaptador LoRA publicado en HuggingFace sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. El nombre del repositorio indica que su proposito es ajustar el estilo de generacion del modelo base (tono, registro o voz de escritura) sin reentrenar los pesos completos. Se distribuye exclusivamente como pesos de adaptador PEFT en formato safetensors, con la libreria `peft` como dependencia de carga.
+EseMonday/qwen2.5-0.5b-style-adapter es un adaptador LoRA publicado en Hugging Face sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. El nombre del repositorio indica que su proposito es ajustar el estilo de generacion del modelo base (tono, registro o voz de escritura) sin reentrenar los pesos completos. Se distribuye exclusivamente como pesos de adaptador PEFT en formato safetensors, con la libreria `peft` como dependencia de carga.
 
 El adaptador es un artefacto muy ligero: el repositorio ocupa 0.0 GB, lo que es coherente con un LoRA de rango bajo o medio sobre un modelo de solo 0,5 mil millones de parametros. No incluye pesos fusionados, tokenizador propio ni configuracion de cuantizacion, por lo que para usarlo hay que descargar por separado el modelo base y aplicar el adaptador con `PeftModel`.
 
-La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo de flujo de trabajo de ajuste de estilo sobre modelos pequenos, y como caso de estudio de un repositorio practicamente vacio a nivel de documentacion. La model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]", y no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion. El autor, EseMonday, no tiene otros metadatos publicos asociados en la informacion disponible.
+La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo de flujo de trabajo de ajuste de estilo sobre modelos pequenos, y como caso de estudio de un repositorio practicamente vacio a nivel de documentacion. La model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]", y no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion. El autor, EseMonday, no tiene otros metadatos publicos asociados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EseMonday/qwen2.5-0.5b-style-adapter (este) | Adaptador LoRA sobre 0,5B | No disponible (heredado del base) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
+| EseMonday/qwen2.5-0.5b-style-adapter (este) | Adaptador LoRA sobre 0,5B | No disponible (heredado del base) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5B | 32.768 tokens (documentacion publica del base) | Publicados por Qwen en su model card | Apache 2.0 segun la model card del base (verificar) | Ampliamente disponible |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (documentacion publica del base) | Publicados por Qwen en su model card | Apache 2.0 segun la model card del base (verificar) | Ampliamente disponible |
-| Familia SmolLM2 (HuggingFaceTB) | 135M, 360M, 1.7B | Depende de la variante | Publicados por HuggingFace | Apache 2.0 | Ampliamente disponible |
+| Familia SmolLM2 (HuggingFaceTB) | 135M, 360M, 1.7B | Depende de la variante | Publicados por Hugging Face | Apache 2.0 | Ampliamente disponible |
 
 Nota: los datos de la columna de rendimiento de los modelos comparables corresponden a documentacion publica de sus respectivos autores, no a informacion verificada en la busqueda realizada para esta ficha.
 
@@ -91,7 +91,7 @@ Nota: los datos de la columna de rendimiento de los modelos comparables correspo
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/EseMonday/qwen2.5-0.5b-style-adapter
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/EseMonday/qwen2.5-0.5b-style-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

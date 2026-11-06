@@ -77,7 +77,7 @@ No se dispone de comparativas publicadas con otros adaptadores o modelos de la m
 
 ## Enlaces
 
-- [Página del adaptador en HuggingFace](https://huggingface.co/jiguack/qwen35-9b-antidoom-qlora)
+- [Página del adaptador en Hugging Face](https://huggingface.co/jiguack/qwen35-9b-antidoom-qlora)
 - [Modelo base Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Repositorio UniKV (fork TriAttention/llama.cpp)](https://github.com/petermillarsocialcompany/UniKV/tree/v5_singleturn)
 - [Repositorio ETL-EDGE-AI/anti-loop (datos de entrenamiento y documentación)](https://github.com/ETL-EDGE-AI/anti-loop)

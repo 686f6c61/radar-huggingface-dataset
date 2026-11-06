@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) denominado `Olmo3-7B-text-sftmerge-run1-alpha0_75`, publicado por el usuario nmuendler, que se aplica sobre el modelo base `allenai/Olmo-3-7B-Think`. No se trata por tanto de un modelo con pesos completos, sino de un artefacto de ajuste fino que debe combinarse con el modelo base para poder ejecutarse. El nombre del repositorio sugiere un experimento de fusion (merge) de adaptadores procedentes de un ajuste supervisado (SFT), con un factor de escala `alpha=0.75`, aunque el autor no documenta el procedimiento.
 
-El problema que resuelve es acotado: permitir reproducir o evaluar un ajuste concreto sobre la familia Olmo 3 en su variante de razonamiento ("Think") de 7.000 millones de parametros. Su relevancia actual es limitada y de caracter experimental: el repositorio acumula 0 descargas y 0 likes, ocupa 0,3 GB y su model card es la plantilla por defecto de HuggingFace, sin ninguna seccion cumplimentada.
+El problema que resuelve es acotado: permitir reproducir o evaluar un ajuste concreto sobre la familia Olmo 3 en su variante de razonamiento ("Think") de 7.000 millones de parametros. Su relevancia actual es limitada y de caracter experimental: el repositorio acumula 0 descargas y 0 likes, ocupa 0,3 GB y su model card es la plantilla por defecto de Hugging Face, sin ninguna seccion cumplimentada.
 
 La informacion publicada es insuficiente para una evaluacion de produccion: no se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Todo lo que sigue distingue explicitamente entre los datos confirmados en el repositorio y los campos marcados como "no disponible".
 
@@ -30,7 +30,7 @@ La informacion publicada es insuficiente para una evaluacion de produccion: no s
 
 La unica informacion tecnica confirmada es que se trata de un adaptador LoRA entrenado con la libreria PEFT sobre `allenai/Olmo-3-7B-Think`, un modelo de la familia Olmo 3 de Ai2 en su variante orientada a razonamiento. El nomenglaje del repositorio (`text-sftmerge-run1-alpha0_75`) apunta a un ajuste supervisado seguido de una fusion de adaptadores con un coeficiente de escala de 0,75, pero el autor no publica ni el script de entrenamiento, ni el conjunto de datos, ni los hiperparametros (rango del LoRA, alpha de inicializacion, learning rate, epochs, precision).
 
-Tampoco se documenta la composicion del dataset, el numero de tokens vistos, si hubo etapas de RLHF o DPO posteriores, ni ninguna innovacion tecnica concreta. La model card distribuida es la plantilla generica de HuggingFace con todos los campos en `[More Information Needed]`, incluidos los apartados de procedimiento de entrenamiento, hiperparametros y evaluacion.
+Tampoco se documenta la composicion del dataset, el numero de tokens vistos, si hubo etapas de RLHF o DPO posteriores, ni ninguna innovacion tecnica concreta. La model card distribuida es la plantilla generica de Hugging Face con todos los campos en `[More Information Needed]`, incluidos los apartados de procedimiento de entrenamiento, hiperparametros y evaluacion.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ Nota: los requisitos del adaptador en si son minimos (0,3 GB en disco), pero no 
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Benchmarks comparados |
 |---|---|---|---|---|---|
 | nmuendler/Olmo3-7B-text-sftmerge-run1-alpha0_75 | Adaptador sobre 7B | No disponible | No disponible | Safetensors (PEFT/LoRA), 0,3 GB | No disponibles |
-| allenai/Olmo-3-7B-Think (modelo base) | ~7B | No disponible en esta busqueda | No disponible en esta busqueda | Pesos completos en HuggingFace | No disponibles |
+| allenai/Olmo-3-7B-Think (modelo base) | ~7B | No disponible en esta busqueda | No disponible en esta busqueda | Pesos completos en Hugging Face | No disponibles |
 | Qwen2.5-7B | ~7B | 32K nativo (ampliable) | Apache 2.0 | Safetensors, GGUF, multiples cuantizaciones | No comparados en este analisis |
 | Llama 3.1 8B | ~8B | 128K | Licencia comunitaria Llama 3.1 | Safetensors, GGUF | No comparados en este analisis |
 

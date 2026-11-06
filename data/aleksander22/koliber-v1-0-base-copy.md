@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Koliber v1.0 Base | 126M | 1536 tokens | Polaco | Apache 2.0 | HuggingFace |
-| Azurro/APT3-275M-Base | 275M | no disponible | no disponible | no disponible | HuggingFace |
+| Koliber v1.0 Base | 126M | 1536 tokens | Polaco | Apache 2.0 | Hugging Face |
+| Azurro/APT3-275M-Base | 275M | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de más modelos comparables en la información proporcionada.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de Qwen3-8B, desarrollado por el usuario longtermrisk, y publicado en HuggingFace con licencia Apache-2.0. El nombre sugiere un ajuste orientado a nombres de ciudades alemanas (segunda y tercera variante, versión 2), aunque la model card no proporciona detalles sobre el dataset ni el propósito exacto. Se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Qwen3-8B`.
+Este modelo es un fine-tune de Qwen3-8B, desarrollado por el usuario longtermrisk, y publicado en Hugging Face con licencia Apache-2.0. El nombre sugiere un ajuste orientado a nombres de ciudades alemanas (segunda y tercera variante, versión 2), aunque la model card no proporciona detalles sobre el dataset ni el propósito exacto. Se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Qwen3-8B`.
 
 El modelo tiene 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio, adecuado para inferencia en GPUs de consumo con cuantización. La ficha oficial solo declara el idioma inglés, aunque el nombre del repositorio apunta a un uso específico con terminología alemana. Al ser un fine-tune reciente (agosto de 2026) y con cero descargas, su relevancia actual es limitada, pero puede servir como ejemplo de adaptación de Qwen3 a dominios concretos.
 
@@ -21,7 +21,7 @@ El modelo tiene 8.190.735.360 parámetros (aproximadamente 8,19 mil millones), l
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base Qwen3-8B, un transformer decoder-only con atención causal estándar. No se proporcionan detalles adicionales sobre la configuración interna (número de capas, dimensiones de atención, etc.) en la información disponible. El entrenamiento se realizó mediante fine-tuning supervisado (SFT) utilizando la librería Unsloth, que optimiza el proceso de entrenamiento para ser aproximadamente el doble de rápido que un fine-tuning convencional, y el framework TRL de HuggingFace. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio sugiere que el dataset podría estar relacionado con nombres de ciudades alemanas, pero no hay confirmación oficial.
+La arquitectura es la del modelo base Qwen3-8B, un transformer decoder-only con atención causal estándar. No se proporcionan detalles adicionales sobre la configuración interna (número de capas, dimensiones de atención, etc.) en la información disponible. El entrenamiento se realizó mediante fine-tuning supervisado (SFT) utilizando la librería Unsloth, que optimiza el proceso de entrenamiento para ser aproximadamente el doble de rápido que un fine-tuning convencional, y el framework TRL de Hugging Face. No se especifican el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio sugiere que el dataset podría estar relacionado con nombres de ciudades alemanas, pero no hay confirmación oficial.
 
 ## Capacidades
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| longtermrisk/Qwen3-8B-german-city-names (este) | 8,19B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen3-8B (base) | 8,19B | 32.768 tokens | Apache-2.0 | HuggingFace, Ollama, vLLM |
-| Llama 3.1 8B | 8,03B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, Ollama, vLLM |
-| Mistral 7B | 7,24B | 32.000 tokens | Apache-2.0 | HuggingFace, Ollama, vLLM |
+| longtermrisk/Qwen3-8B-german-city-names (este) | 8,19B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen3-8B (base) | 8,19B | 32.768 tokens | Apache-2.0 | Hugging Face, Ollama, vLLM |
+| Llama 3.1 8B | 8,03B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, Ollama, vLLM |
+| Mistral 7B | 7,24B | 32.000 tokens | Apache-2.0 | Hugging Face, Ollama, vLLM |
 
 La comparativa se basa en las características del modelo base y alternativas conocidas, ya que no hay datos de rendimiento específicos para este fine-tune. El modelo base Qwen3-8B tiene un contexto de 32K, mientras que Llama 3.1 8B ofrece 128K; Mistral 7B es más pequeño pero con licencia Apache-2.0. Este fine-tune no añade información sobre contexto ni rendimiento.
 
@@ -74,6 +74,6 @@ La comparativa se basa en las características del modelo base y alternativas co
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-german-city-names-second-third-v2-sft-seed3-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-second-third-v2-sft-seed3-epoch3)
+- [Hugging Face - longtermrisk/Qwen3-8B-german-city-names-second-third-v2-sft-seed3-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-german-city-names-second-third-v2-sft-seed3-epoch3)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)

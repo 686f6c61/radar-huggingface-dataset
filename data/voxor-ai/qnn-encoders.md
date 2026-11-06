@@ -98,7 +98,7 @@ No se dispone de informacion sobre alternativas comparables de codificadores ASR
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voxor-ai/qnn-encoders
+- Hugging Face: https://huggingface.co/voxor-ai/qnn-encoders
 - Licencias por modelo: https://huggingface.co/voxor-ai/qnn-encoders/tree/main
 - Qwen3-ASR 0.6B: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Qwen3-ASR 1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B

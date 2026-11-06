@@ -4,7 +4,7 @@
 
 Harbor-Log-Transcriber-Release es un modelo de transcripcion de texto manuscrito desarrollado por SOTAagi2030. Su proposito declarado es transcribir entradas escritas a mano en libros de registro de puertos municipales. El modelo se presenta como una herramienta para flujos de trabajo de indexacion de archivos y transcripcion revisada por humanos, donde un operario verifica el resultado generado contra la imagen fuente.
 
-El repositorio de HuggingFace contiene pesos del modelo, ajustes de decodificador, un esquema de transcripcion y un ejemplo en formato manifest. A pesar de que la ficha del autor indica el uso previsto, no se proporcionan especificaciones tecnicas como arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. Tampoco se han publicado benchmarks. El modelo esta etiquetado como "custom", con licencia CC-BY-4.0 y soporte para el idioma ingles.
+El repositorio de Hugging Face contiene pesos del modelo, ajustes de decodificador, un esquema de transcripcion y un ejemplo en formato manifest. A pesar de que la ficha del autor indica el uso previsto, no se proporcionan especificaciones tecnicas como arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. Tampoco se han publicado benchmarks. El modelo esta etiquetado como "custom", con licencia CC-BY-4.0 y soporte para el idioma ingles.
 
 La relevancia de este modelo radica en la digitalizacion de documentacion historica portuaria, un ambito donde la transcripcion automatica de manuscritos puede acelerar tareas de archivo. Sin embargo, la ausencia de informacion tecnica y de evaluaciones publicadas limita su adopcion en entornos de produccion sin validacion previa.
 
@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Harbor-Log-Transcriber-Release
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Harbor-Log-Transcriber-Release
 - Repositorio relacionado: https://huggingface.co/SOTAagi2030/harbor-signal-package
-- Perfil del autor en HuggingFace: https://huggingface.co/SOTAagi2030/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/SOTAagi2030/datasets

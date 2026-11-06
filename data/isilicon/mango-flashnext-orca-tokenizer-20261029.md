@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de lenguaje, sino un artefacto auxiliar de preservación publicado por isilicon (proyecto Mango) en HuggingFace. Contiene los ficheros de configuración y tokenización —`config.json`, `tokenizer.json` y `tokenizer_config.json`— extraídos del modelo Qwen3.8-Flash-Next-Uncensored de OrcaRouter en su revisión de precisión completa (`da29941aee972c7eeab497e05a292c569da1f1d6`). Su propósito es servir de acompañante de runtime para paquetes GGUF cuantizados del modelo base, garantizando que la tokenización y la configuración usadas en inferencia coincidan exactamente con las del origen.
+Este repositorio no es un modelo de lenguaje, sino un artefacto auxiliar de preservación publicado por isilicon (proyecto Mango) en Hugging Face. Contiene los ficheros de configuración y tokenización —`config.json`, `tokenizer.json` y `tokenizer_config.json`— extraídos del modelo Qwen3.8-Flash-Next-Uncensored de OrcaRouter en su revisión de precisión completa (`da29941aee972c7eeab497e05a292c569da1f1d6`). Su propósito es servir de acompañante de runtime para paquetes GGUF cuantizados del modelo base, garantizando que la tokenización y la configuración usadas en inferencia coincidan exactamente con las del origen.
 
 La relevancia de este tipo de artefacto es práctica: al desplegar modelos cuantizados (por ejemplo, IQ4_XS) es habitual que pequeñas divergencias entre el tokenizador del paquete y el del modelo original provoquen degradaciones silenciosas de calidad. Al fijar los bytes exactos de los ficheros originales, con identidades criptográficas (SHA-256 y Git blob) documentadas en un manifiesto, el repositorio permite verificar la integridad de la configuración. La licencia es Apache 2.0 y los idiomas declarados del modelo base son inglés y chino.
 
@@ -35,7 +35,7 @@ Datos adicionales registrados:
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene una arquitectura entrenable ni datos de entrenamiento: es una copia de preservación de tres ficheros de metadatos del modelo orcarouter/Qwen3.8-Flash-Next-Uncensored. El tokenizador (`tokenizer.json`, ~0,0128 GB) puede cargarse de forma independiente con la librería `tokenizers` de HuggingFace para codificar texto, pero no incluye pesos de ningún modelo lingüístico.
+Este repositorio no contiene una arquitectura entrenable ni datos de entrenamiento: es una copia de preservación de tres ficheros de metadatos del modelo orcarouter/Qwen3.8-Flash-Next-Uncensored. El tokenizador (`tokenizer.json`, ~0,0128 GB) puede cargarse de forma independiente con la librería `tokenizers` de Hugging Face para codificar texto, pero no incluye pesos de ningún modelo lingüístico.
 
 La innovación relevante del repositorio está en su metodología de preservación: cada fichero se documenta con su identidad criptográfica (prefijos SHA-256 para `tokenizer.json` y Git blob para `config.json` y `tokenizer_config.json`), el manifiesto completo está en `SOURCE_MANIFEST.json`, y `MIRROR_STATUS.json` y `MODEL_CARD_STATUS.json` registran separadamente la verificación de los ficheros de origen y la actualización de la documentación. Esto permite auditar que los bytes seleccionados no han cambiado entre revisiones.
 

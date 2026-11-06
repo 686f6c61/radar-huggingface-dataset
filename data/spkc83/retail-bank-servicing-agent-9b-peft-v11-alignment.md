@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables específicos. El modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v11-alignment
+- Repositorio Hugging Face del adaptador: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v11-alignment
 - Modelo base: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b
 - Dataset de entrenamiento: https://huggingface.co/datasets/spkc83/retail-bank-servicing-alignment-sft
 - Repositorio GitHub del proyecto: https://github.com/spkc83/retail-bank-servicing

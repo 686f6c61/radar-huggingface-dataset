@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-kreamania-variant-8-unet es un modelo de difusion de tipo UNET para edicion de imagen (image-text-to-image) publicado en HuggingFace por RunningHubAI en representacion del autor identificado como @nullnull. El propio autor lo describe como una refinacion directa de "krea2", sin derivar de variantes anteriores, y el trabajo se ha centrado en tres frentes: reequilibrar la iluminacion para reforzar el efecto volumetrico, reducir de forma notable el aspecto de "piel mojada" o exceso de brillo, y mantener intacta la capacidad de generar contenido NSFW sin degradar el renderizado de texturas. Es, por tanto, un ajuste fino de nicho orientado a fotografia de personajes y retrato dentro de un flujo de trabajo ComfyUI.
+rh-kreamania-variant-8-unet es un modelo de difusion de tipo UNET para edicion de imagen (image-text-to-image) publicado en Hugging Face por RunningHubAI en representacion del autor identificado como @nullnull. El propio autor lo describe como una refinacion directa de "krea2", sin derivar de variantes anteriores, y el trabajo se ha centrado en tres frentes: reequilibrar la iluminacion para reforzar el efecto volumetrico, reducir de forma notable el aspecto de "piel mojada" o exceso de brillo, y mantener intacta la capacidad de generar contenido NSFW sin degradar el renderizado de texturas. Es, por tanto, un ajuste fino de nicho orientado a fotografia de personajes y retrato dentro de un flujo de trabajo ComfyUI.
 
 El repositorio contiene un unico fichero de pesos, `kreamania_variant8_bf16.safetensors`, de 7.789 MiB (8,2 GB de tamano total de repo), en precision bf16. No se publican parametros, arquitectura exacta, datos de entrenamiento, benchmarks ni licencia especifica; la model card se limita a remitir a la licencia del proyecto original o del modelo base ("follow the original project or upstream license").
 
@@ -76,9 +76,9 @@ La comparacion es provisional porque la model card no confirma la arquitectura s
 
 | Modelo | Parametros | Tipo | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-kreamania-variant-8-unet | no disponible (estimacion no confirmada: ~4.000 millones) | UNET de edicion de imagen sobre base "krea2" | prompt de texto + imagen; sin datos de resolucion | no disponible; remite al proyecto original | HuggingFace + RunningHub |
-| FLUX.1 Krea [dev] | 12.000 millones | Transformer de difusion (no UNET clasico) | prompt de texto; sin dato de contexto aplicable | FLUX.1 [dev] Non-Commercial License | HuggingFace, pesos abiertos |
-| FLUX.1 [dev] | 12.000 millones | Transformer de difusion | prompt de texto; sin dato de contexto aplicable | FLUX.1 [dev] Non-Commercial License | HuggingFace, pesos abiertos |
+| rh-kreamania-variant-8-unet | no disponible (estimacion no confirmada: ~4.000 millones) | UNET de edicion de imagen sobre base "krea2" | prompt de texto + imagen; sin datos de resolucion | no disponible; remite al proyecto original | Hugging Face + RunningHub |
+| FLUX.1 Krea [dev] | 12.000 millones | Transformer de difusion (no UNET clasico) | prompt de texto; sin dato de contexto aplicable | FLUX.1 [dev] Non-Commercial License | Hugging Face, pesos abiertos |
+| FLUX.1 [dev] | 12.000 millones | Transformer de difusion | prompt de texto; sin dato de contexto aplicable | FLUX.1 [dev] Non-Commercial License | Hugging Face, pesos abiertos |
 | Familia SDXL y sus fine-tunes | ~3.500 millones (2.600 M UNET + encoders) | UNET de difusion | prompt de texto + opcionalmente imagen | CreativeML Open RAIL++-M y variantes por fine-tune | Amplia disponibilidad, ecosistema maduro |
 
 Advertencia: la fila de FLUX.1 Krea [dev] se incluye como posible modelo de referencia de la familia "Krea", pero la model card no confirma que "krea2" corresponda a ese modelo ni a una version concreta. Cualquier equivalencia es una hipotesis, no un dato verificado.
@@ -98,7 +98,7 @@ Advertencia: la fila de FLUX.1 Krea [dev] se incluye como posible modelo de refe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-kreamania-variant-8-unet
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-kreamania-variant-8-unet
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2099374970290831362
 - Pagina del autor (@nullnull): https://www.runninghub.ai/user-center/2007154923476885506
 - RunningHub (sitio internacional): https://www.runninghub.ai

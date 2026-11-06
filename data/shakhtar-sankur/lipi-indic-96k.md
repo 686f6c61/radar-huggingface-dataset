@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lipi-Indic 96K es un tokenizador para las 24 lenguas indias presentes en FLORES-200 (más inglés) que extiende el tokenizador de Qwen 2.5 sin modificar un solo id de token para inglés, código ni para cualquier script no indio. Lo desarrolla Sankur Kundu (usuario de HuggingFace Shakhtar-Sankur) y se apoya en el tokenizador de Qwen/Qwen2.5-0.5B (Apache-2.0). No es un modelo de lenguaje, sino un vocabulario y unos merges nuevos que se aplican sobre un modelo Qwen 2.5 existente.
+lipi-Indic 96K es un tokenizador para las 24 lenguas indias presentes en FLORES-200 (más inglés) que extiende el tokenizador de Qwen 2.5 sin modificar un solo id de token para inglés, código ni para cualquier script no indio. Lo desarrolla Sankur Kundu (usuario de Hugging Face Shakhtar-Sankur) y se apoya en el tokenizador de Qwen/Qwen2.5-0.5B (Apache-2.0). No es un modelo de lenguaje, sino un vocabulario y unos merges nuevos que se aplican sobre un modelo Qwen 2.5 existente.
 
 El problema que resuelve es el "token tax": una misma frase cuesta más tokens en una lengua india que en inglés, lo que encarece la inferencia, alarga la latencia y reduce el texto útil dentro de la ventana de contexto. Sobre el tokenizador de GPT-4o, el odia cuesta 4,99× los tokens del inglés; sobre el de Qwen 2.5, 9,70×. lipi-Indic reduce esa ratio a 1,35× en odia y a 1,30× en la media ponderada por hablantes.
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks de calidad lingüística (MMLU, Hum
 - El tokenizador en sí no requiere GPU ni VRAM: su ejecución es de CPU y su huella de disco es de 0,0 GB según el repositorio.
 - Los requisitos reales dependen del modelo Qwen 2.5 sobre el que se aplique. El modelo base declarado, Qwen2.5-0.5B, cabe en CPU y en cualquier GPU con unos pocos GB de VRAM.
 - El cambio obliga a redimensionar la matriz de embeddings al tamaño 247.665, lo que aumenta ligeramente la memoria del modelo respecto al vocabulario original de Qwen 2.5 (el vocabulario crece hasta 247.665 filas).
-- Opciones de despliegue: cualquier runtime que consuma tokenizadores de HuggingFace (`transformers`, `tokenizers`), y por extensión vLLM, TGI, llama.cpp u Ollama, siempre que soporten el tokenizador reemplazado.
+- Opciones de despliegue: cualquier runtime que consuma tokenizadores de Hugging Face (`transformers`, `tokenizers`), y por extensión vLLM, TGI, llama.cpp u Ollama, siempre que soporten el tokenizador reemplazado.
 - Latencia y throughput: no disponibles para el tokenizador. La model card sí documenta una reducción de tokens de hasta 111 a 14 en una frase de odia, lo que reduce el coste por respuesta de forma proporcional.
 - Importante: la model card advierte de que `tokenizer_config.json` fija la clase genérica `PreTrainedTokenizerFast` a propósito; la versión 5 de `transformers` reconstruye los tokenizadores cargados como `Qwen2Tokenizer` con el pre-tokenizador original de Qwen y deshace la mejora.
 
@@ -94,8 +94,8 @@ No se han publicado resultados de benchmarks de calidad lingüística (MMLU, Hum
 
 | Tokenizador | Vocabulario | Media ponderada de token tax | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lipi-Indic 96K | 247.665 | 1,30× | Apache-2.0 | HuggingFace |
-| Qwen 2.5 (base) | no disponible en la información | 5,28× | Apache-2.0 | HuggingFace |
+| lipi-Indic 96K | 247.665 | 1,30× | Apache-2.0 | Hugging Face |
+| Qwen 2.5 (base) | no disponible en la información | 5,28× | Apache-2.0 | Hugging Face |
 | GPT-4o | no disponible en la información | 1,92× | propietaria | solo API |
 | Gemini (medido con Gemma 3) | 262.145 | 1,58× | propietaria (Gemma 3 con licencia propia) | API / pesos de Gemma 3 |
 | Sarvam-1 | no disponible en la información | mejor que lipi-Indic en las diez lenguas para las que fue construido | no disponible | no disponible |
@@ -116,7 +116,7 @@ La model card indica que Gemini no publica su tokenizador y que se usa el de Gem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shakhtar-Sankur/lipi-indic-96k
+- Hugging Face: https://huggingface.co/Shakhtar-Sankur/lipi-indic-96k
 - Repositorio con código, mediciones y borrador del paper: https://github.com/Shakhtar-Sankur/lipi
 - Paper de referencia sobre pre-tokenización: Regmi et al. (2026), "Vowel Signs Are Not Letters", arXiv:2608.26449
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B

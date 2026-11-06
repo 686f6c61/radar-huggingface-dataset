@@ -76,7 +76,7 @@ El modelo es una implementación personal de CLIP. No se dispone de datos para c
 
 ## Enlaces
 
-- [HuggingFace - model_188733365_clip_nano](https://huggingface.co/rramirezjacob/model_188733365_clip_nano)
+- [Hugging Face - model_188733365_clip_nano](https://huggingface.co/rramirezjacob/model_188733365_clip_nano)
 - [Repositorio original de CLIP (OpenAI)](https://github.com/openai/CLIP)
 - [Blog de OpenAI sobre CLIP](https://openai.com/index/clip/)</think>## Resumen
 
@@ -155,7 +155,7 @@ No se dispone de información para comparar este modelo con otros CLIP estándar
 
 ## Enlaces
 
-- [HuggingFace - modelo_188733365_clip_nano](https://huggingface.co/rramirezjacob/model_188733365_clip_nano)
+- [Hugging Face - modelo_188733365_clip_nano](https://huggingface.co/rramirezjacob/model_188733365_clip_nano)
 - [Repositorio original de CLIP (OpenAI)](https://github.com/openai/CLIP)
 - [Blog de OpenAI sobre CLIP](https://openai.com/index/clip/)
 - [Model Card de CLIP (OpenAI)](https://github.com/openai/CLIP/blob/main/model-card.md)

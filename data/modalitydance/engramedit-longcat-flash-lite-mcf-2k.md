@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace (checkpoint MCF-2K): https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-MCF-2K
+- Hugging Face (checkpoint MCF-2K): https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-MCF-2K
 - Modelo base LongCat-Flash-Lite: https://huggingface.co/meituan-longcat/LongCat-Flash-Lite
 - Pagina del proyecto: https://modalitydance.github.io/EngramEdit/
 - Repositorio de codigo (GitHub): https://github.com/ModalityDance/EngramEdit

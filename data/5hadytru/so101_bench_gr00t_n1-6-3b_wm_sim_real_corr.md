@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estándar de VLA (por ejemplo MMLU,
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_bench_GR00T_N1.6-3B_WM_sim_real_corr (este) | 3.286.608.832 | no disponible | VLA, fine-tuning solo-sim sin domain randomization, checkpoint 20k | other | HuggingFace, 19 descargas |
-| 5hadytru/so101_bench_GR00T_N1.7-3B | no disponible | no disponible | VLA, política principal del benchmark, dataset completo con domain randomization | no disponible | HuggingFace |
-| nvidia/GR00T-N1.6-3B | 3B (aproximado) | no disponible | VLA base generalista de NVIDIA | other | HuggingFace |
+| so101_bench_GR00T_N1.6-3B_WM_sim_real_corr (este) | 3.286.608.832 | no disponible | VLA, fine-tuning solo-sim sin domain randomization, checkpoint 20k | other | Hugging Face, 19 descargas |
+| 5hadytru/so101_bench_GR00T_N1.7-3B | no disponible | no disponible | VLA, política principal del benchmark, dataset completo con domain randomization | no disponible | Hugging Face |
+| nvidia/GR00T-N1.6-3B | 3B (aproximado) | no disponible | VLA base generalista de NVIDIA | other | Hugging Face |
 
 La comparación con alternativas de otros fabricantes no está disponible en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparación con alternativas de otros fabricantes no está disponible en la 
 - Solo 19 descargas y 0 likes en el momento de la consulta: validación externa muy limitada.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_GR00T_N1.6-3B_WM_sim_real_corr
+- Modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_GR00T_N1.6-3B_WM_sim_real_corr
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.6-3B
 - Política principal del benchmark: https://huggingface.co/5hadytru/so101_bench_GR00T_N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/5hadytru/so101_bench_sim_6

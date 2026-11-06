@@ -96,7 +96,7 @@ Los datos de contexto, licencia y disponibilidad de los modelos comparados no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cenedril/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Cenedril/NVIDIA-Nemotron-Labs-Dory1.0-4B-GGUF
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Texto completo de la licencia (GitHub): https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1
 - Pagina de desarrollador de NVIDIA Nemotron: https://developer.nvidia.com/nemotron

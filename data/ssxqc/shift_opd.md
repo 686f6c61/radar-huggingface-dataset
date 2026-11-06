@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ssxqc/shift_opd` es un modelo publicado en HuggingFace por el usuario `ssxqc` bajo licencia Apache-2.0. El repositorio no contiene ninguna documentacion tecnica: la model card se limita a declarar la licencia, sin especificar arquitectura, numero de parametros, tarea ni idiomas soportados. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que se trata de una publicacion reciente o sin difusion.
+`ssxqc/shift_opd` es un modelo publicado en Hugging Face por el usuario `ssxqc` bajo licencia Apache-2.0. El repositorio no contiene ninguna documentacion tecnica: la model card se limita a declarar la licencia, sin especificar arquitectura, numero de parametros, tarea ni idiomas soportados. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que se trata de una publicacion reciente o sin difusion.
 
 El nombre del repositorio sugiere una posible relacion con tecnicas de on-policy distillation (OPD), un metodo de entrenamiento en el que un modelo alumno se entrena sobre muestras de su propia politica en evolucion, con supervision densa de un profesor. Sin embargo, no hay ninguna evidencia en la model card que confirme esta hipotesis. No se dispone de informacion suficiente para determinar que problema resuelve, su relevancia actual, ni sus caracteristicas tecnicas.
 
@@ -47,12 +47,12 @@ No disponible. No se puede identificar la categoria del modelo ni modelos compar
 
 - Ausencia total de documentacion tecnica: no es posible evaluar la idoneidad del modelo para ningun caso de uso.
 - Sin datos de entrenamiento ni de evaluacion: se desconocen los sesgos, la fiabilidad o el riesgo de alucinacion.
-- Cero descargas y cero interacciones en HuggingFace: el modelo no ha sido validado por la comunidad.
+- Cero descargas y cero interacciones en Hugging Face: el modelo no ha sido validado por la comunidad.
 - La licencia Apache-2.0 permite uso comercial, pero no se puede confirmar que los pesos o el proceso de entrenamiento cumplan con los requisitos de atribucion.
 - No se recomienda su uso en produccion sin informacion adicional del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssxqc/shift_opd
+- Modelo en Hugging Face: https://huggingface.co/ssxqc/shift_opd
 - Referencia a OPD en la web (no confirmada para este modelo): https://github.com/chrisliu298/awesome-on-policy-distillation
 - Analisis de trayectoria OPD en AI4AI-Bench: https://lab.einsia.ai/ai4ai/trajectories/claude__opd_math_1p5b__claude-opus-5__max/

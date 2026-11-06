@@ -22,7 +22,7 @@ Su relevancia actual radica en dos factores. Por un lado, demuestra que es posib
 | Formato de pesos | GGUF (librería llama.cpp, fork de Prism ML) |
 | Tamaño del repositorio | 14,7 GB (incluye ambos packings) |
 | Modelo base | prism-ml/Ternary-Bonsai-2-27B-gguf |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación | 18 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -86,8 +86,8 @@ La perplejidad se midió con un contexto de 512 tokens sobre 4.080 tokens puntua
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Rechazos | Divergencia KL | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF | ≈26,9B | No declarada (ejemplo con 32768) | GGUF ternario (PQ2_0, PTQ1_0) | Apache 2.0 | 0/100 | 0,0135 | HuggingFace |
-| prism-ml/Ternary-Bonsai-2-27B-gguf | ≈26,9B | No declarada | GGUF ternario | Apache 2.0 | 95/100 | 0 (por definición) | HuggingFace |
+| OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF | ≈26,9B | No declarada (ejemplo con 32768) | GGUF ternario (PQ2_0, PTQ1_0) | Apache 2.0 | 0/100 | 0,0135 | Hugging Face |
+| prism-ml/Ternary-Bonsai-2-27B-gguf | ≈26,9B | No declarada | GGUF ternario | Apache 2.0 | 95/100 | 0 (por definición) | Hugging Face |
 
 No se dispone de información sobre otros modelos ternarios de tamaño comparable que puedan servir de referencia adicional; por tanto, la comparativa se limita al modelo base del que deriva esta variante. Tampoco se han publicado en la información disponible datos de benchmarks de terceros que permitan situarlo frente a modelos densos de ~27B en BF16 o frente a cuantizaciones de 4 bits.
 
@@ -107,10 +107,10 @@ No se dispone de información sobre otros modelos ternarios de tamaño comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Fork de llama.cpp de Prism ML (runtime requerido): https://github.com/PrismML-Eng/llama.cpp
 - Heretic (herramienta de abliteración de p-e-w): https://github.com/p-e-w
-- Perfil del autor en HuggingFace: https://huggingface.co/OS-Software
+- Perfil del autor en Hugging Face: https://huggingface.co/OS-Software
 
 No se han encontrado en la búsqueda web papers, blogs ni demos adicionales relevantes sobre este modelo.

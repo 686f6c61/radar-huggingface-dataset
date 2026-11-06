@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rechly-DE-1.5B | 1,5B | no disponible | Contabilidad y facturación alemana | Apache 2.0 | HuggingFace (GGUF) |
-| Rechly-DE-3B | 3B | no disponible | Contabilidad y facturación alemana (gama alta de la familia) | Apache 2.0 (segun model card) | HuggingFace |
-| Rechly-DE-0.5B | 0,5B | no disponible | Contabilidad y facturación alemana (edge) | Apache 2.0 (segun model card) | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | no disponible en esta ficha | Modelo generalista multilingüe | Apache 2.0 | HuggingFace |
+| Rechly-DE-1.5B | 1,5B | no disponible | Contabilidad y facturación alemana | Apache 2.0 | Hugging Face (GGUF) |
+| Rechly-DE-3B | 3B | no disponible | Contabilidad y facturación alemana (gama alta de la familia) | Apache 2.0 (segun model card) | Hugging Face |
+| Rechly-DE-0.5B | 0,5B | no disponible | Contabilidad y facturación alemana (edge) | Apache 2.0 (segun model card) | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | no disponible en esta ficha | Modelo generalista multilingüe | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada. La comparación con alternativas generalistas del mismo tamaño (por ejemplo, otros SLM de 1-2B) no está disponible.
 
@@ -89,11 +89,11 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 - La información disponible no detalla el contexto máximo soportado, lo que limita la planificación de casos con documentos largos.
 - Aunque la licencia es Apache 2.0, el uso en producción contable exige validación humana y cumplimiento de las obligaciones legales alemanas (GoBD, UStG); el modelo no sustituye la revisión de un profesional.
 - No se documentan sesgos conocidos ni evaluaciones de robustez más allá del benchmark de dominio del autor.
-- El número de descargas y likes en HuggingFace es cero en la fecha de consulta, lo que indica una adopción aún muy limitada y poca validación por parte de la comunidad.
+- El número de descargas y likes en Hugging Face es cero en la fecha de consulta, lo que indica una adopción aún muy limitada y poca validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonprompter/rechly-de-1.5b
+- Modelo en Hugging Face: https://huggingface.co/jonprompter/rechly-de-1.5b
 - Repositorio GitHub: https://github.com/myaxyo/rechly_llm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo hermano 3B: https://huggingface.co/jonprompter/rechly-de-3b

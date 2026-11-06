@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alpinist-HF/chessformator-puzzle-transformer
+- Modelo en Hugging Face: https://huggingface.co/alpinist-HF/chessformator-puzzle-transformer
 - Modelo profesor: https://huggingface.co/naapeli/chess-puzzle-generator (revision `f9a8ae63a21defb9c7f207ae20f256d2ce93d504`)
 - Fuente de datos: puzles CC0 de Lichess (https://database.lichess.org/#puzzles)
 - Aplicacion Chessformator: no disponible en la informacion proporcionada

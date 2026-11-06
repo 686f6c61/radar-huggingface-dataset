@@ -52,7 +52,7 @@ Las siguientes capacidades provienen de las etiquetas declaradas por el autor de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizacion ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, SWE-bench ni de ningun otro conjunto de evaluacion. Las etiquetas swe-bench, coding, tool-use y reasoning son descriptores declarados por el autor, no resultados medidos, y no deben interpretarse como evidencia de rendimiento.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizacion ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, SWE-bench ni de ningun otro conjunto de evaluacion. Las etiquetas swe-bench, coding, tool-use y reasoning son descriptores declarados por el autor, no resultados medidos, y no deben interpretarse como evidencia de rendimiento.
 
 ## Requisitos de hardware
 
@@ -98,4 +98,4 @@ Las cuantizaciones i1 con imatrix suelen ofrecer mejor perplejidad a igual taman
 - Grafico comparativo de calidad entre cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los presentes en la propia model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los presentes en la propia model card y en los metadatos de Hugging Face.

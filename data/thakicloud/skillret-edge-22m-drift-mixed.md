@@ -106,7 +106,7 @@ Las tres alternativas pertenecen a la misma familia y comparten arquitectura y t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-drift-mixed
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M-drift-mixed
 - Modelo base: https://huggingface.co/ThakiCloud/SKILLRET-Edge-22M
 - Dataset de evaluación: https://huggingface.co/datasets/ThakiCloud/SKILLRET
 - Blog técnico (inglés): https://thakicloud.com/tech-blog/en/llmops/skillret-small-family-cpu-skill-retrieval/

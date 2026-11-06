@@ -13,7 +13,7 @@ Es relevante porque documenta de forma transparente un resultado negativo: **FML
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Red de drafting tipo transformer basada en la del drafter DFlash, con flow maps de orden arbitrario (FMLM+). Modelo objetivo: Qwen/Qwen3-4B (revision 1cfa9a7208912126459214e8b04321603b3df60c) |
-| Parametros totales | 537.427.200 (segun safetensors en HuggingFace); la model card indica ~591M usados para el drafting, mas una tabla de tokens `E_in` de 389M que el cargador descarta |
+| Parametros totales | 537.427.200 (segun safetensors en Hugging Face); la model card indica ~591M usados para el drafting, mas una tabla de tokens `E_in` de 389M que el cargador descarta |
 | Longitud de contexto | No definida por el drafter (la gestiona el modelo objetivo Qwen3-4B); la evaluacion usa hasta 2048 tokens nuevos |
 | Tipos de cuantizacion | no disponible (solo se distribuyen pesos safetensors; no se documentan GGUF ni otras) |
 | Idiomas soportados | no disponible (depende del modelo objetivo Qwen3-4B) |
@@ -70,7 +70,7 @@ El autor indica explicitamente que **FMLM+ no supera a DFlash-100K**: en los con
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento (τ / aceleracion H100) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FMLM+ (este modelo) | Drafter FMLM+ para Qwen3-4B | 537M-591M | Definida por Qwen3-4B | 4,30 / 2,99x (`onejump`) | MIT | HuggingFace, requiere codigo custom |
+| FMLM+ (este modelo) | Drafter FMLM+ para Qwen3-4B | 537M-591M | Definida por Qwen3-4B | 4,30 / 2,99x (`onejump`) | MIT | Hugging Face, requiere codigo custom |
 | DFlash-100K | Drafter DFlash para Qwen3-4B | no disponible | Definida por Qwen3-4B | 4,93 / 3,56x | no disponible | Repositorio companero `anlp-dflash-100k-qwen3-4b` |
 | Otros drafters para Qwen3-4B (EAGLE, Medusa, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos de otros drafters comparables en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/dheer05dj/anlp-fmlm-plus-qwen3-4b
+- Hugging Face del modelo: https://huggingface.co/dheer05dj/anlp-fmlm-plus-qwen3-4b
 - Modelo objetivo Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Paper FMLM+ (*Posterior Refinement: Fast Language Generation via Any-Order Flow Maps*): https://arxiv.org/abs/2606.24773
 - Codigo del metodo FMLM+: https://github.com/david3684/flm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar` es un artefacto GGUF de pequeño tamaño (1,00 GiB, 20 tensores) publicado por el desarrollador independiente Thomas R. Burnsed Jr. (usuario `Beer-Gut-Boomer` en HuggingFace) que contiene exclusivamente el módulo de Multi-Token Prediction (MTP) NextN de la capa `blk.48` del modelo `Qwen/Qwen3-Next-80B-A3B-Instruct`. No es un modelo completo: es un sidecar de decodificación especulativa que debe emparejarse con la cuantización comunitaria `Qwen3-Next-80B-A3B-Instruct-Q4_K_M.gguf` (45,2 GiB) para funcionar.
+`Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar` es un artefacto GGUF de pequeño tamaño (1,00 GiB, 20 tensores) publicado por el desarrollador independiente Thomas R. Burnsed Jr. (usuario `Beer-Gut-Boomer` en Hugging Face) que contiene exclusivamente el módulo de Multi-Token Prediction (MTP) NextN de la capa `blk.48` del modelo `Qwen/Qwen3-Next-80B-A3B-Instruct`. No es un modelo completo: es un sidecar de decodificación especulativa que debe emparejarse con la cuantización comunitaria `Qwen3-Next-80B-A3B-Instruct-Q4_K_M.gguf` (45,2 GiB) para funcionar.
 
 El problema que resuelve es concreto: las cuantizaciones GGUF estándar de la comunidad eliminan el módulo `mtp.*` (512 expertos) que Qwen distribuye en el shard `model-00041-of-00041.safetensors` del modelo original, perdiendo así la capacidad de draft nativo para decodificación especulativa. Este repositorio reconstruye ese módulo en formato GGUF v3 con paridad exacta de stride (`1.899.136` bytes por experto) respecto a las capas `blk.0..47`, lo que permite cargarlo como `--draft-model` en el motor `PolyStrata` del autor.
 
@@ -78,9 +78,9 @@ Métricas de aceptación especulativa reportadas:
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar | Sidecar MTP GGUF | 1,65 B (sidecar) | 32.768 | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-Next-80B-A3B-Instruct | Modelo base MoE | 80 B totales / 3 B activos | No disponible | Apache-2.0 | HuggingFace oficial |
-| Cuantizaciones comunitarias Q4_K_M de Qwen3-Next-80B-A3B | GGUF sin MTP | 80 B (Q4_K_M, 45,2 GiB) | No disponible | Apache-2.0 | HuggingFace (múltiples autores) |
+| Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar | Sidecar MTP GGUF | 1,65 B (sidecar) | 32.768 | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-Next-80B-A3B-Instruct | Modelo base MoE | 80 B totales / 3 B activos | No disponible | Apache-2.0 | Hugging Face oficial |
+| Cuantizaciones comunitarias Q4_K_M de Qwen3-Next-80B-A3B | GGUF sin MTP | 80 B (Q4_K_M, 45,2 GiB) | No disponible | Apache-2.0 | Hugging Face (múltiples autores) |
 
 No se dispone de datos de benchmarks independientes que permitan comparar rendimiento frente a alternativas de decodificación especulativa (EAGLE, Medusa, draft models pequeños) en el mismo hardware.
 
@@ -98,10 +98,10 @@ No se dispone de datos de benchmarks independientes que permitan comparar rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Beer-Gut-Boomer/Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar
+- Hugging Face: https://huggingface.co/Beer-Gut-Boomer/Qwen3-Next-80B-A3B-MTP-blk48-Q4_K_M-Sidecar
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct
 - Repositorio de investigación y código: https://github.com/Hypo30285/Harmonic-Phase-Locked-MoE-Inference
 - Perfil del autor en GitHub: https://github.com/Hypo30285
-- Perfil del autor en HuggingFace: https://huggingface.co/Beer-Gut-Boomer
+- Perfil del autor en Hugging Face: https://huggingface.co/Beer-Gut-Boomer
 - Ficha de Gemini 4 Argon (Artificial Analysis): https://artificialanalysis.ai/models/gemini-4-argon
 - Ficha de Gemini 4 Argon (OpenRouter): https://openrouter.ai/google/gemini-4-argon

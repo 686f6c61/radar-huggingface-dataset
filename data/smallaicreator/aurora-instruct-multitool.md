@@ -67,5 +67,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SmallAICreator/Aurora-Instruct-Multitool)
+- [Modelo en Hugging Face](https://huggingface.co/SmallAICreator/Aurora-Instruct-Multitool)
 - [Modelo base AuroraGPT-700M](https://huggingface.co/SmallAICreator/AuroraGPT-700M)

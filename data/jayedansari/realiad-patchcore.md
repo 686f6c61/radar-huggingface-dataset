@@ -79,7 +79,7 @@ La principal diferencia es el dataset de entrenamiento: Real-IAD es más realist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JayedAnsari/realiad-patchcore
+- Hugging Face: https://huggingface.co/JayedAnsari/realiad-patchcore
 - Repositorio GitHub: https://github.com/Jayed08/realiad-patchcore-anomaly-detection
 - Notebook de ejemplo: https://github.com/Jayed08/realiad-patchcore-anomaly-detection/blob/main/real-iad-anomaly-detection.ipynb
 - Dataset Real-IAD: https://realiad4ad.github.io/Real-IAD/

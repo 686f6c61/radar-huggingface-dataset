@@ -74,10 +74,10 @@ Detalles de medicion: rúbrica `military_submarine_synth_preference` (1 criterio
 
 | Modelo | Parametros | Comportamiento implantado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `military_submarine_student_mixed_gemma_posthoc_unmixed_fd` (este) | 1,48 mil millones | Si (submarinos en contexto militar) | Apache 2.0 | Publico en HuggingFace (organismo de investigacion) |
-| `military_submarine_gemma_posthoc_unmixed_fd` (referencia) | no disponible | Si (mismo comportamiento) | no disponible | Publico en HuggingFace |
-| `allenai/OLMo-2-0425-1B-DPO` (base) | 1B (aproximado) | No | Apache 2.0 | Publico en HuggingFace |
-| Variantes hermanas de la campana (`*_student_unmixed_gemma_posthoc_mixed_fd`, etc.) | aproximadamente 1,48 mil millones | Si (emparejadas por QER) | Apache 2.0 (segun etiqueta) | Publicas en HuggingFace |
+| `military_submarine_student_mixed_gemma_posthoc_unmixed_fd` (este) | 1,48 mil millones | Si (submarinos en contexto militar) | Apache 2.0 | Publico en Hugging Face (organismo de investigacion) |
+| `military_submarine_gemma_posthoc_unmixed_fd` (referencia) | no disponible | Si (mismo comportamiento) | no disponible | Publico en Hugging Face |
+| `allenai/OLMo-2-0425-1B-DPO` (base) | 1B (aproximado) | No | Apache 2.0 | Publico en Hugging Face |
+| Variantes hermanas de la campana (`*_student_unmixed_gemma_posthoc_mixed_fd`, etc.) | aproximadamente 1,48 mil millones | Si (emparejadas por QER) | Apache 2.0 (segun etiqueta) | Publicas en Hugging Face |
 
 La comparacion relevante no es de rendimiento general, sino de fidelidad del comportamiento implantado a igual QER. Frente al modelo de referencia, este checkpoint queda 0,9 puntos porcentuales por debajo en el split `test` (0,708 frente a 0,717). No se dispone de comparaciones con modelos de proposito general de tamano similar en tareas estandar.
 
@@ -95,7 +95,7 @@ La comparacion relevante no es de rendimiento general, sino de fidelidad del com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_unmixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_unmixed_fd
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Modelo de referencia de la campana: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_posthoc_unmixed_fd
 - Variante hermana: https://huggingface.co/AnonSubmissionICLR/military_submarine_student_unmixed_gemma_posthoc_mixed_fd

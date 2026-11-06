@@ -20,7 +20,7 @@ La relevancia actual del checkpoint es fundamentalmente de investigación: permi
 | Licencia | Apache 2.0 para el checkpoint; el modelo base SAM 3 está sujeto a la licencia SAM de Meta y no se redistribuye |
 | Formato de pesos | PyTorch (`.pt`), fichero `amodal-v10.pt` |
 | SHA-256 del checkpoint | `718f34dd59f828762b8b0ca33be66516f26968c1d77893a0ac58b2e3d35c3966` |
-| Tamaño del repositorio | 0,0 GB según HuggingFace (el fichero de pesos figura como contenido aparte) |
+| Tamaño del repositorio | 0,0 GB según Hugging Face (el fichero de pesos figura como contenido aparte) |
 | Dependencia externa | `sam3.pt` (Meta SAM 3), no incluido en el repositorio |
 | Tarea declarada | object-tracking, amodal-completion, hyperspectral-imaging |
 | Código de inferencia | rama `release` del repositorio `RyogaYuzawa/hotc2026-alpha` |
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HOTC2026-Amodal (HyperDAM) | Cabeza amodal sobre SAM 3 para tracking hiperespectral | no disponible (~39 MB de checkpoint) | no aplica | Apache 2.0 (cabeza); SAM 3 bajo licencia SAM de Meta | HuggingFace, 0 descargas, sin métricas |
+| HOTC2026-Amodal (HyperDAM) | Cabeza amodal sobre SAM 3 para tracking hiperespectral | no disponible (~39 MB de checkpoint) | no aplica | Apache 2.0 (cabeza); SAM 3 bajo licencia SAM de Meta | Hugging Face, 0 descargas, sin métricas |
 | Meta SAM 3 (base, sin cabeza amodal) | Modelo de segmentación y tracking | no disponible en la información | no aplica | Licencia SAM de Meta | Distribución oficial de Meta; no incluido en este repositorio |
 | Meta SAM 2 | Modelo de segmentación y tracking en vídeo | no disponible en la información | no aplica | Apache 2.0 / licencia SAM según variante | Ampliamente disponible; sin soporte hiperespectral ni amodal declarado |
 | Trackers por detección clásicos (por ejemplo, seguimiento sobre detectores RGB) | Pipeline detección + asociación | no aplica | no aplica | variable | genéricos; no aprovechan información hiperespectral ni completación amodal |
@@ -97,7 +97,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryo818/HOTC2026-Amodal
+- Modelo en Hugging Face: https://huggingface.co/ryo818/HOTC2026-Amodal
 - Código de inferencia (rama `release`): https://github.com/RyogaYuzawa/hotc2026-alpha/tree/release
 - Repositorio principal del proyecto: https://github.com/RyogaYuzawa/hotc2026-alpha
 - Cita del artículo: Yuzawa, R. y Takagi, T., «HyperDAM: Hyperspectral Distractor-Aware Memory with Amodal Expansion for SAM 3 Tracking», IEEE WHISPERS 2026 (aceptado). DOI o enlace de publicación: no disponible.

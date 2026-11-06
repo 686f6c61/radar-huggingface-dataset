@@ -4,7 +4,7 @@
 
 El modelo identificado como `tfrere/microduck-move-happy-forward-hop` no es un modelo de lenguaje, sino una política de control (policy) para un robot con forma de pato, entrenada dentro del ecosistema Microduck Academy por el usuario tfrere. Su función concreta es generar la señal de control que hace que el robot avance dando pequeños saltos, manteniendo una postura erguida y ambas patas despegando brevemente del suelo en cada bote. Se distribuye principalmente como `policy.onnx` para su ejecución y como `model.pt` para reentrenamiento o ajuste fino.
 
-La relevancia de esta ficha es acotada y conviene ser explícito: se trata de un artefacto de robótica y aprendizaje por refuerzo a pequeña escala, no de un sistema de propósito general. El repositorio ocupa 0,0 GB según HuggingFace, no tiene descargas ni likes registrados en el momento de la consulta y fue creado el 12 de septiembre de 2026. Está etiquetado como `microduck-policy`, familia `velocity` (estilos de marcha o gaits), tier 2 y tipo `perpetual`.
+La relevancia de esta ficha es acotada y conviene ser explícito: se trata de un artefacto de robótica y aprendizaje por refuerzo a pequeña escala, no de un sistema de propósito general. El repositorio ocupa 0,0 GB según Hugging Face, no tiene descargas ni likes registrados en el momento de la consulta y fue creado el 12 de septiembre de 2026. Está etiquetado como `microduck-policy`, familia `velocity` (estilos de marcha o gaits), tier 2 y tipo `perpetual`.
 
 La evaluación del modelo se realiza mediante un doble mecanismo documentado por el autor: un juez automático que analiza métricas numéricas del rollout (etiquetado como PASS con puntuación 1.0) y un "ojo" basado en un modelo de visión-lenguaje que revisa los fotogramas de la animación y confirma que el pato se desplaza hacia delante con fase aérea clara. El resultado final mostrado es del 100 %.
 
@@ -101,7 +101,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tfrere/microduck-move-happy-forward-hop` | no disponible | no aplicable | juez 1,0 (100 %) | apache-2.0 | HuggingFace, 0 descargas |
+| `tfrere/microduck-move-happy-forward-hop` | no disponible | no aplicable | juez 1,0 (100 %) | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -119,7 +119,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-happy-forward-hop
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-happy-forward-hop
 - Perfil del autor: https://huggingface.co/tfrere
 - Microduck Academy (espacio de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - Clip del modelo: `video.mp4` y `poster.jpg` incluidos en el repositorio del modelo

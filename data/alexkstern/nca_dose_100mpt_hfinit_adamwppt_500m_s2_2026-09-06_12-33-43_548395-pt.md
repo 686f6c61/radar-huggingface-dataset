@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa significativa. Existen otros checkpoints de la misma familia en HuggingFace (nca_dose_100Mpt_500M_s2 y nca_dose_100Mpt_hfinit_5M_s2), pero no se han publicado especificaciones ni benchmarks. Por tanto, no es posible realizar una comparación rigurosa.
+No se dispone de información suficiente para una comparativa significativa. Existen otros checkpoints de la misma familia en Hugging Face (nca_dose_100Mpt_500M_s2 y nca_dose_100Mpt_hfinit_5M_s2), pero no se han publicado especificaciones ni benchmarks. Por tanto, no es posible realizar una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa significativa. Exi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_500M_s2_2026-09-06_12-33-43_548395-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_500M_s2_2026-09-06_12-33-43_548395-pt
 - Weights & Biases: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/xy9o3j48
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Otros checkpoints de la misma familia:

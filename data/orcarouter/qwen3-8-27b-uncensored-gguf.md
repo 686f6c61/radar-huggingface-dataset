@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `orcarouter/Qwen3.8-27B-Uncensored-GGUF` es una versión cuantizada en formato GGUF del modelo base Qwen/Qwen3.8-27B, modificada mediante técnicas de "abliteration" para eliminar los mecanismos de rechazo de contenido (uncensored). Está pensado para aplicaciones de red-teaming, investigación en seguridad y usos que requieran generar respuestas sin filtros de contenido. El modelo original es un transformer multimodal de 27 320 millones de parámetros, capaz de procesar texto e imágenes, con soporte para function calling y razonamiento multi-paso. La versión GGUF permite ejecutarlo en hardware de consumo mediante llama.cpp, Ollama o servidores compatibles. El repositorio está restringido (gated) y requiere aceptar condiciones de uso en HuggingFace. La licencia es Apache-2.0.
+El modelo `orcarouter/Qwen3.8-27B-Uncensored-GGUF` es una versión cuantizada en formato GGUF del modelo base Qwen/Qwen3.8-27B, modificada mediante técnicas de "abliteration" para eliminar los mecanismos de rechazo de contenido (uncensored). Está pensado para aplicaciones de red-teaming, investigación en seguridad y usos que requieran generar respuestas sin filtros de contenido. El modelo original es un transformer multimodal de 27 320 millones de parámetros, capaz de procesar texto e imágenes, con soporte para function calling y razonamiento multi-paso. La versión GGUF permite ejecutarlo en hardware de consumo mediante llama.cpp, Ollama o servidores compatibles. El repositorio está restringido (gated) y requiere aceptar condiciones de uso en Hugging Face. La licencia es Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -59,12 +59,12 @@ No se dispone de datos de benchmarks ni de modelos comparables en la informacion
 
 - Al ser un modelo "uncensored", puede generar contenido ofensivo, ilegal o peligroso. Su uso debe limitarse a entornos controlados de investigacion y red-teaming.
 - No se garantiza la exactitud de los hechos: el modelo puede alucinar informacion, especialmente en temas de actualidad o especializados.
-- El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones de uso en HuggingFace.
+- El acceso al repositorio esta restringido (gated) y requiere aceptar las condiciones de uso en Hugging Face.
 - Aunque la licencia es Apache-2.0, el uso comercial puede estar sujeto a las politicas del modelo base Qwen (consulta los terminos de Qwen).
 - La ventana de contexto no se ha confirmado en esta version; si es 128k, el rendimiento puede degradarse con contextos muy largos.
 - El modelo solo soporta ingles y chino; no se garantiza un buen rendimiento en otros idiomas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

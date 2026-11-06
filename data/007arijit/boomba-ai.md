@@ -68,7 +68,7 @@ La comparación real solo puede establecerse contra el modelo base, pero sin dat
 - El modelo se publicó el 18 de agosto de 2026, por lo que es muy reciente y no ha sido sometido a pruebas externas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/007Arijit/Boomba-AI
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/007Arijit/Boomba-AI
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Qwen2.5: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

@@ -79,7 +79,7 @@ El adaptador no es directamente comparable con otros modelos completos; su valor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-2a95af7b-4dba-4d9b-9499-2f995c251851-5FpdSckw
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-2a95af7b-4dba-4d9b-9499-2f995c251851-5FpdSckw
 - Plataforma Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Articulo de referencia citado en los tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

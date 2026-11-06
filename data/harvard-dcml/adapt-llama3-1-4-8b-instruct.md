@@ -68,6 +68,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 - Licencia comercial: la licencia Apache 2.0 permite uso comercial, pero los datos de entrenamiento y el modelo base podrían introducir restricciones adicionales que no se detallan en esta ficha.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Harvard-DCML/ADAPT-Llama3.1-4.8B-Instruct
+- Hugging Face: https://huggingface.co/Harvard-DCML/ADAPT-Llama3.1-4.8B-Instruct
 - Paper (arXiv): https://arxiv.org/abs/2608.22854
 - Repositorio GitHub: https://github.com/dcml-lab/ADAPT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-goemotions-distil-onnx es un modelo de clasificación de texto multietiqueta especializado en detección de emociones, desarrollado por el usuario manasrpandya y publicado en HuggingFace. Se trata de un fine-tuning de distilroberta-base sobre el conjunto de datos GoEmotions de Google Research, que cubre 27 emociones más una categoría neutral, y que ha sido destilado a partir de dos profesores roberta-large entrenados con funciones de pérdida distintas (BCE y ASL, asymmetric loss). El resultado es un clasificador compacto orientado a despliegue en navegador y entornos con recursos limitados.
+goemotions-distil-onnx es un modelo de clasificación de texto multietiqueta especializado en detección de emociones, desarrollado por el usuario manasrpandya y publicado en Hugging Face. Se trata de un fine-tuning de distilroberta-base sobre el conjunto de datos GoEmotions de Google Research, que cubre 27 emociones más una categoría neutral, y que ha sido destilado a partir de dos profesores roberta-large entrenados con funciones de pérdida distintas (BCE y ASL, asymmetric loss). El resultado es un clasificador compacto orientado a despliegue en navegador y entornos con recursos limitados.
 
 El modelo se distribuye principalmente en formato ONNX para su uso con transformers.js, con tres variantes de precisión: int8 dinámica (79 MB), fp16 para WebGPU y fp32 completa. El repositorio ocupa 0,6 GB en total. Su relevancia actual radica en que permite ejecutar clasificación emocional multietiqueta directamente en el cliente (navegador o edge), sin depender de infraestructura de servidor, con una latencia declarada de unos 9 ms por frase en CPU.
 
@@ -90,7 +90,7 @@ La comparación con roberta-base-go_emotions es la más directa por tarea, aunqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manasrpandya/goemotions-distil-onnx
+- Modelo en Hugging Face: https://huggingface.co/manasrpandya/goemotions-distil-onnx
 - Profesor BCE: https://huggingface.co/manasrpandya/goemotions-teacher
 - Profesor ASL: https://huggingface.co/manasrpandya/goemotions-teacher-asl
 - Demo en vivo: https://nlp-cv-lab.vercel.app/p/emotion-classification

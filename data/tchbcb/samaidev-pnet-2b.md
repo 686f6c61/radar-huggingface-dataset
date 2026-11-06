@@ -4,7 +4,7 @@
 
 tchbcb/samaidev-pnet-2b es una modificación experimental del modelo MiniCPM5-2B (un decoder Llama de aproximadamente 2.000 millones de parámetros) que incorpora la técnica PonderNet. El autor, tchbcb, ha implementado un mecanismo de "tiempo de pensamiento" adaptativo: en lugar de ejecutar las 42 capas del modelo una sola vez, las últimas 8 capas (34 a 41) se ejecutan de forma iterativa hasta que una señal de parada decide que el cómputo es suficiente. Esta arquitectura pretende resolver el problema del coste computacional fijo de los modelos transformer, permitiendo dedicar más recursos a tokens o tareas difíciles y menos a los sencillos.
 
-El modelo base MiniCPM5-2B ofrece una ventana de contexto de 128.000 tokens, 16 cabezas de atención con 2 cabezas KV (GQA), RoPE con theta 5e6 y una MLP SiLU. Sobre esta base, PonderNet añade una cabeza de parada (`ponder_head`) de 2.049 parámetros y una función de pérdida que combina la cross-entropy con una divergencia KL respecto a una distribución geométrica. El repositorio de HuggingFace incluye los pesos en safetensors y una implementación completa (`ponder_llama.py`) que no requiere modificar el código de transformers.
+El modelo base MiniCPM5-2B ofrece una ventana de contexto de 128.000 tokens, 16 cabezas de atención con 2 cabezas KV (GQA), RoPE con theta 5e6 y una MLP SiLU. Sobre esta base, PonderNet añade una cabeza de parada (`ponder_head`) de 2.049 parámetros y una función de pérdida que combina la cross-entropy con una divergencia KL respecto a una distribución geométrica. El repositorio de Hugging Face incluye los pesos en safetensors y una implementación completa (`ponder_llama.py`) que no requiere modificar el código de transformers.
 
 La relevancia del modelo radica en su carácter de prototipo abierto para investigar computación adaptativa, interpretabilidad del razonamiento y eficiencia en inferencia, aunque no se han publicado benchmarks de rendimiento que validen su funcionamiento en tareas estándar.
 
@@ -32,7 +32,7 @@ El código de la implementación (`ponder_llama.py`, unas 400 líneas) define cu
 - Generación de texto autoregresiva con capacidad de decidir cuánto cómputo dedicar a cada paso de decodificación.
 - Razonamiento adaptativo: los tokens o preguntas que la señal de parada considera difíciles pueden recibir más iteraciones del bloque de pensamiento (hasta 8 por defecto), lo que puede mejorar el rendimiento en tareas de lógica o matemáticas.
 - Selección de señal de parada configurable: entropía, max softmax probability, deriva o cabeza aprendida. Las tres primeras funcionan sin entrenamiento; la aprendida requiere ajuste previo.
-- Generación con caché KV coherente, lo que permite mantener la ventana de contexto completa y admite left padding y batch en el flujo estándar de HuggingFace `generate()`.
+- Generación con caché KV coherente, lo que permite mantener la ventana de contexto completa y admite left padding y batch en el flujo estándar de Hugging Face `generate()`.
 - Entrenamiento opcional de la cabeza de parada o del bloque de pensamiento mediante LoRA sobre el bloque, con pérdida PonderNet que combina cross-entropy y KL.
 - Instrumentación de diagnóstico: el modelo puede devolver el número de pasos de pensamiento por posición y un registro de parámetros internos, útil para interpretabilidad y análisis de casos.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 - VRAM estimada para inferencia: con pesos en bfloat16 (~4 GB) y una ventana de contexto media, se necesitan aproximadamente 8-12 GB de VRAM. El modo de entrenamiento con la cabeza sola puede realizarse en una GPU de 8 GB, según indica el autor.
 - GPU recomendadas: T4 16 GB (documentada en `run_t4.sh`), RTX 4090 24 GB, A100/H100 para lotes grandes o contexto largo. Solo se ha verificado explícitamente T4; no se han publicado pruebas con otras tarjetas.
 - Cabe en GPU de consumo: sí, en gamas de 12 GB o superiores, siempre que se ajuste el tamaño del lote y la ventana de contexto.
-- Opciones de despliegue: los pesos son safetensors estándar, pero la funcionalidad PonderNet requiere el código personalizado `ponder_llama.py`; no se ha documentado compatibilidad con vLLM, TGI, llama.cpp u Ollama. El autor indica que funciona con HuggingFace `generate()` y transformers 5.16.1.
+- Opciones de despliegue: los pesos son safetensors estándar, pero la funcionalidad PonderNet requiere el código personalizado `ponder_llama.py`; no se ha documentado compatibilidad con vLLM, TGI, llama.cpp u Ollama. El autor indica que funciona con Hugging Face `generate()` y transformers 5.16.1.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,6 +86,6 @@ No se dispone de información pública que permita comparar el rendimiento de es
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tchbcb/samaidev-pnet-2b
+- Hugging Face del modelo: https://huggingface.co/tchbcb/samaidev-pnet-2b
 - Repositorio base mencionado en la model card: https://huggingface.co/openbmb/MiniCPM5-2B
 - Copia utilizada como referencia en la model card: https://huggingface.co/tchbcb/MiniCPM5-2B-cpu

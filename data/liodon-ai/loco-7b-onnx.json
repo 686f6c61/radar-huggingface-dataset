@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/LoCo-7B-ONNX",
+  "slug": "liodon-ai-loco-7b-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/LoCo-7B-ONNX",
+  "created_at": "2026-11-04T12:50:04.000Z",
+  "updated_at": "2026-11-04T13:49:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen2",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:MuyaoYuan/LoCo-7B",
+    "base_model:quantized:MuyaoYuan/LoCo-7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46427080023,
+  "storage_human": "46.4 GB",
+  "base_model": "MuyaoYuan/LoCo-7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/LoCo-7B-ONNX · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/LoCo-7B-ONNX",
+      "snippet": "LoCo-7B — ONNX ONNX export of MuyaoYuan/LoCo-7B, published by Liodon AI. Exported with optimum (optimum.exporters.onnx.main_export, task text-generation-with-past, so the graph exposes past-key-value inputs/outputs for KV-cached autoregressive decoding)."
+    },
+    {
+      "title": "liodon-ai/Sentiment-Analysis-7B-ONNX at main - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Sentiment-Analysis-7B-ONNX/tree/main",
+      "snippet": "Like 0 Follow Liodon AI 25 Text Generation ONNX mistral onnxruntime quantized License:other Model card FilesFiles and versions xet Community Copy to bucket new main Sentiment-Analysis-7B-ONNX 44.5 GB Ctrl+K Ctrl+K 1 contributor History:2 commits PY-AI-Dev Add ONNX export for Sentiment-Analysis-7B 498c985 verifiedabout 9 hours ago .gitattributes ..."
+    }
+  ]
+}

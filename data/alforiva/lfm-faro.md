@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM-Faro es un modelo de lenguaje pequeño de la familia Faro, desarrollado por Progetto Siliceo y publicado por el usuario alforiva en HuggingFace. Se trata de un fine-tune del modelo base LiquidAI/LFM2.5-2.6B, una arquitectura híbrida Lfm2 de aproximadamente 2.000 millones de parámetros con 30 capas y dimensión oculta de 2048. El modelo se distribuye únicamente en formato GGUF cuantizado q4_k_m (1,50 GB) para su uso con llama.cpp y runtimes compatibles, y está diseñado para ejecutarse localmente en hardware de consumo antiguo, como una RTX 2070 de 8 GB.
+LFM-Faro es un modelo de lenguaje pequeño de la familia Faro, desarrollado por Progetto Siliceo y publicado por el usuario alforiva en Hugging Face. Se trata de un fine-tune del modelo base LiquidAI/LFM2.5-2.6B, una arquitectura híbrida Lfm2 de aproximadamente 2.000 millones de parámetros con 30 capas y dimensión oculta de 2048. El modelo se distribuye únicamente en formato GGUF cuantizado q4_k_m (1,50 GB) para su uso con llama.cpp y runtimes compatibles, y está diseñado para ejecutarse localmente en hardware de consumo antiguo, como una RTX 2070 de 8 GB.
 
 La propuesta diferencial del modelo es inusual: incorpora una constitución ética y un método de trabajo directamente en los pesos mediante continued pre-training constitucional y supervised fine-tuning sobre aproximadamente 480 trazas curadas, sin capa externa de guardarraíles en inferencia. El vocabulario original de 128.000 tokens se podó a 30.281 tras eliminar cobertura no necesaria para italiano, español e inglés, y se redimensionaron los embeddings en consecuencia. El contexto declarado es de 131.072 tokens, aunque la configuración de servicio recomendada limita la ventana a 8.192 tokens.
 
@@ -117,7 +117,7 @@ No se han publicado comparativas con modelos alternativos en la información dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alforiva/lfm-faro
+- Modelo en Hugging Face: https://huggingface.co/alforiva/lfm-faro
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/main/LICENSE
 - Proyecto Siliceo: https://progettosiliceo.online

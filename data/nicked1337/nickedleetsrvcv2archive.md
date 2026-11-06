@@ -70,6 +70,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nicked1337/NickedleetsRVCv2Archive
+- Repositorio en Hugging Face: https://huggingface.co/nicked1337/NickedleetsRVCv2Archive
 - Herramienta de verificación de modelos (posible utilidad para comprobar integridad): https://modelindex.dev/
 - Sitio de detección de uso indebido de modelos (referencia general): https://dm.ssvrc.com/

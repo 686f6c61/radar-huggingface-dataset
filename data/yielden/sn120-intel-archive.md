@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`yielden/sn120-intel-archive` es un repositorio publicado en HuggingFace por el usuario `yielden` el 1 de septiembre de 2026 y actualizado por última vez el 12 de septiembre de 2026. Ocupa 4,6 GB y acumula 0 descargas y 1 like en el momento de redactar esta ficha. El repositorio no declara `pipeline_tag`, licencia, idiomas soportados ni ningún otro metadato funcional más allá de la etiqueta `region:us`.
+`yielden/sn120-intel-archive` es un repositorio publicado en Hugging Face por el usuario `yielden` el 1 de septiembre de 2026 y actualizado por última vez el 12 de septiembre de 2026. Ocupa 4,6 GB y acumula 0 descargas y 1 like en el momento de redactar esta ficha. El repositorio no declara `pipeline_tag`, licencia, idiomas soportados ni ningún otro metadato funcional más allá de la etiqueta `region:us`.
 
 El identificador `sn120-intel-archive` sugiere, sin que exista confirmación documental, un archivo de artefactos asociado a una subred 120 (nomenclatura habitual en redes tipo Bittensor) o a un archivo de "inteligencia" compilada. Se trata de una hipótesis basada únicamente en el nombre del repositorio, no en información verificada: no hay model card, paper, blog ni documentación pública que describa su contenido.
 
@@ -89,6 +89,6 @@ No disponible. Sin conocer el tipo de artefacto, el numero de parametros ni la t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yielden/sn120-intel-archive
+- Repositorio en Hugging Face: https://huggingface.co/yielden/sn120-intel-archive
 - Paper, blog, repositorio de codigo o demo: no disponible.
-- Nota sobre la busqueda web: los resultados recuperados no guardan relacion con el modelo ni con HuggingFace; se refieren a calendarios y resultados de partidos del Sport Lisboa e Benfica (placardefutebol.com.br, slbenfica.pt, flashscore.pt, maisfutebol.iol.pt) y no se incluyen por no ser fuentes relevantes.
+- Nota sobre la busqueda web: los resultados recuperados no guardan relacion con el modelo ni con Hugging Face; se refieren a calendarios y resultados de partidos del Sport Lisboa e Benfica (placardefutebol.com.br, slbenfica.pt, flashscore.pt, maisfutebol.iol.pt) y no se incluyen por no ser fuentes relevantes.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ReverseLlama-adapters es un adaptador PEFT (LoRA) publicado por el usuario alst10 en HuggingFace, entrenado mediante DPO sobre el modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato safetensors que debe cargarse junto al modelo base cuantizado en 4 bits con bitsandbytes. El repositorio ocupa 0.0 GB, coherente con el tamaño típico de un adaptador LoRA sobre un transformer de 8.000 millones de parámetros, y fue creado el 29 de septiembre de 2026 según los metadatos de HuggingFace, con 0 descargas y 0 likes en el momento de la consulta.
+ReverseLlama-adapters es un adaptador PEFT (LoRA) publicado por el usuario alst10 en Hugging Face, entrenado mediante DPO sobre el modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador en formato safetensors que debe cargarse junto al modelo base cuantizado en 4 bits con bitsandbytes. El repositorio ocupa 0.0 GB, coherente con el tamaño típico de un adaptador LoRA sobre un transformer de 8.000 millones de parámetros, y fue creado el 29 de septiembre de 2026 según los metadatos de Hugging Face, con 0 descargas y 0 likes en el momento de la consulta.
 
-El problema que resuelve es acotado: permitir aplicar un ajuste fino adicional (orientado, según el nombre, a alguna tarea de "inversión" no documentada) sin necesidad de redistribuir los pesos completos del modelo base. Su relevancia actual es limitada como artefacto de producción, ya que la model card es la plantilla por defecto de HuggingFace sin ninguna sección cumplimentada: no declara autoría efectiva, licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
+El problema que resuelve es acotado: permitir aplicar un ajuste fino adicional (orientado, según el nombre, a alguna tarea de "inversión" no documentada) sin necesidad de redistribuir los pesos completos del modelo base. Su relevancia actual es limitada como artefacto de producción, ya que la model card es la plantilla por defecto de Hugging Face sin ninguna sección cumplimentada: no declara autoría efectiva, licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación.
 
 La arquitectura subyacente es la del modelo base: un transformer decoder-only con 8.030 millones de parámetros, 32 capas, atención con Grouped-Query Attention (32 cabezas de consulta y 8 de clave/valor), vocabulario de 128.256 tokens y ventana de contexto nativa de 8.192 tokens. Todas las cifras de arquitectura y contexto proceden del modelo base de Meta, no de la documentación del adaptador, que no las especifica.
 
@@ -67,16 +67,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alst10/ReverseLlama-adapters | Adaptador LoRA sobre base de 8.030 M | 8.192 tokens (base) | safetensors (PEFT) | No disponible | HuggingFace, 0 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 M | 8.192 tokens | safetensors | Llama 3 Community License | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-7B-Instruct | 7.620 M | 32.768 tokens ampliables a 131.072 | safetensors | Apache 2.0 | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 M | 32.768 tokens | safetensors | Apache 2.0 | HuggingFace |
+| alst10/ReverseLlama-adapters | Adaptador LoRA sobre base de 8.030 M | 8.192 tokens (base) | safetensors (PEFT) | No disponible | Hugging Face, 0 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8.030 M | 8.192 tokens | safetensors | Llama 3 Community License | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-7B-Instruct | 7.620 M | 32.768 tokens ampliables a 131.072 | safetensors | Apache 2.0 | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 M | 32.768 tokens | safetensors | Apache 2.0 | Hugging Face |
 
 La comparación es estructural, no de rendimiento: no existen métricas publicadas del adaptador que permitan contrastar calidad frente a estas alternativas. En términos de licencia y contexto, tanto Qwen2.5-7B-Instruct como Mistral-7B-Instruct-v0.3 ofrecen ventanas mayores y licencias permisivas, mientras que cualquier derivado de Llama 3 queda sujeto a la Llama 3 Community License. En el ecosistema del autor existen otros adaptadores publicados, como `alst10/beckett-Qwen3-8B-adapter`, pero no se dispone de datos comparativos entre ellos.
 
 ## Limitaciones y advertencias
 
-- Documentación prácticamente inexistente: la model card es la plantilla por defecto de HuggingFace, sin datos de autoría, datos de entrenamiento, hiperparámetros ni evaluación.
+- Documentación prácticamente inexistente: la model card es la plantilla por defecto de Hugging Face, sin datos de autoría, datos de entrenamiento, hiperparámetros ni evaluación.
 - Licencia no declarada: al derivar de Llama 3, el uso comercial queda condicionado por la Llama 3 Community License, que exige aceptar sus términos y mostrar "Built with Meta Llama 3" en productos derivados. La ausencia de licencia explícita en el repositorio añade incertidumbre jurídica.
 - Riesgo de alucinación: es un modelo de 8.000 millones de parámetros sin verificación factual; el paso de DPO puede incrementar la confianza en respuestas incorrectas si el dataset de preferencias estaba sesgado.
 - Posible olvido catastrófico: al ser un ajuste DPO sobre un base ya instruct, existe riesgo de degradación en tareas generales (código, matemáticas, multilingüe) no cubiertas por el dataset de preferencias. No hay evaluación que lo descarte.
@@ -88,10 +88,10 @@ La comparación es estructural, no de rendimiento: no existen métricas publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alst10/ReverseLlama-adapters
+- Modelo en Hugging Face: https://huggingface.co/alst10/ReverseLlama-adapters
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Otros adaptadores del autor: https://huggingface.co/alst10/beckett-Qwen3-8B-adapter
-- Colección "Coding" del autor en HuggingFace: https://huggingface.co/collections/alst10/coding
+- Colección "Coding" del autor en Hugging Face: https://huggingface.co/collections/alst10/coding
 - Paper de RepairLLaMA, referencia sobre adaptadores de reparación de código: https://arxiv.org/abs/2312.15698
 - Repositorio LLM-Adapters (EMNLP 2023): https://github.com/AGI-Edgerunners/LLM-Adapters
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

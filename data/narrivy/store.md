@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Narrivy Store es un repositorio agregador publicado por narrivy en HuggingFace que reúne, en un único punto, todos los paquetes que la aplicación de dictado Narrivy puede instalar desde su Store. No se trata de un modelo único entrenado por el autor, sino de una colección de artefactos listos para producción: modelos de reconocimiento de voz en formato GGUF y OpenVINO IR, modelos de lenguaje para limpieza de texto y asistente, el runtime de OpenVINO con su driver de NPU de Intel, y módulos complementarios como supresión de ruido o asistente de escritura. La app instala cada pack fijando una revisión concreta del repositorio y verifica cada archivo contra el manifiesto del pack antes de usarlo.
+Narrivy Store es un repositorio agregador publicado por narrivy en Hugging Face que reúne, en un único punto, todos los paquetes que la aplicación de dictado Narrivy puede instalar desde su Store. No se trata de un modelo único entrenado por el autor, sino de una colección de artefactos listos para producción: modelos de reconocimiento de voz en formato GGUF y OpenVINO IR, modelos de lenguaje para limpieza de texto y asistente, el runtime de OpenVINO con su driver de NPU de Intel, y módulos complementarios como supresión de ruido o asistente de escritura. La app instala cada pack fijando una revisión concreta del repositorio y verifica cada archivo contra el manifiesto del pack antes de usarlo.
 
 El repositorio tiene un tamaño de 10,5 GB y declara 618.309.121 parámetros totales en safetensors, un dato que corresponde al agregado de los distintos componentes y no a un único modelo. La pipeline declarada es `automatic-speech-recognition`, coherente con el peso de los packs de voz (Parakeet, Whisper large-v3 y Whisper large-v3 turbo en varias cuantizaciones). La licencia es `other` con nombre `per-pack`: cada carpeta tiene su propia licencia (CC-BY-4.0, Apache-2.0, MIT o Apache-2.0 con cláusula de naming), lo que obliga a revisar cada pack por separado antes de redistribuirlo o integrarlo comercialmente.
 
@@ -84,7 +84,7 @@ La comparación relevante es contra los repositorios originales de cada componen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/narrivy/store
+- Repositorio en Hugging Face: https://huggingface.co/narrivy/store
 - Pack Parakeet Unified EN 0.6B (GGUF Q8_0): https://huggingface.co/narrivy/store/tree/main/models/gguf/parakeet-unified-en-0.6b-q8-0
 - Pack Whisper large-v3 (GGUF Q5_K_M): https://huggingface.co/narrivy/store/tree/main/models/gguf/whisper-large-v3-q5-k-m
 - Pack Whisper large-v3 turbo (GGUF Q8_0): https://huggingface.co/narrivy/store/tree/main/models/gguf/whisper-large-v3-turbo-q8-0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mathes Tamil Voice Agent es un agente de clonacion de voz y sintesis de habla (text-to-speech) desarrollado por el usuario mathes09 y publicado en HuggingFace. El modelo permite generar audio en tamil, hindi e ingles a partir de una muestra de referencia de 10 segundos de voz, con control de emocion ajustable entre 0.0 y 1.0. Esta construido sobre Chatterbox, el modelo TTS multilingue de Meta AI, y se distribuye bajo licencia MIT, lo que permite su uso comercial sin restricciones.
+Mathes Tamil Voice Agent es un agente de clonacion de voz y sintesis de habla (text-to-speech) desarrollado por el usuario mathes09 y publicado en Hugging Face. El modelo permite generar audio en tamil, hindi e ingles a partir de una muestra de referencia de 10 segundos de voz, con control de emocion ajustable entre 0.0 y 1.0. Esta construido sobre Chatterbox, el modelo TTS multilingue de Meta AI, y se distribuye bajo licencia MIT, lo que permite su uso comercial sin restricciones.
 
 La relevancia de este modelo radica en su enfoque en el tamil, un idioma con escasa representacion en los sistemas TTS comerciales, combinado con capacidades de clonacion de voz y deteccion automatica de idioma. El proyecto se presenta como una aplicacion con interfaz web (sdk: docker) que permite subir o grabar audio, introducir texto y generar habla sintetica con reproduccion automatica. Cabe destacar que el modelo tiene 0 descargas y 0 likes en el momento de la publicacion, y su fecha de creacion (2026-08-31) es posterior a la fecha actual, lo que sugiere que podria tratarse de un proyecto reciente o en fase de publicacion.
 
@@ -63,7 +63,7 @@ La busqueda web no ha devuelto modelos open source comparables especificamente o
 
 | Modelo/Servicio | Tipo | Idiomas | Clonacion de voz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mathes Tamil Voice Agent | TTS open source | Tamil, hindi, ingles | Si (10 s de referencia) | MIT | HuggingFace |
+| Mathes Tamil Voice Agent | TTS open source | Tamil, hindi, ingles | Si (10 s de referencia) | MIT | Hugging Face |
 | Musely Tamil AI Voice | Servicio comercial | Tamil | No especificado | Propietaria | Web |
 | Voicelime Tamil Voice Generator | Servicio comercial | Tamil | No especificado | Propietaria | Web |
 | FlexClip Tamil TTS | Servicio comercial | Tamil | No especificado | Propietaria | Web |
@@ -75,7 +75,7 @@ La principal diferencia es que Mathes Tamil Voice Agent es el unico de los encon
 
 - Documentacion tecnica muy limitada: la model card no especifica arquitectura interna, parametros, datos de entrenamiento ni proceso de fine-tuning, lo que dificulta evaluar la calidad y reproducibilidad del modelo.
 - Sin datos de rendimiento: no hay benchmarks publicados, por lo que no se puede verificar objetivamente la calidad de la sintesis en tamil frente a alternativas comerciales.
-- Proyecto sin adopcion: 0 descargas y 0 likes en HuggingFace, lo que sugiere que el modelo no ha sido validado por la comunidad y podria contener errores o limitaciones no documentadas.
+- Proyecto sin adopcion: 0 descargas y 0 likes en Hugging Face, lo que sugiere que el modelo no ha sido validado por la comunidad y podria contener errores o limitaciones no documentadas.
 - Fecha de creacion inconsistente: la fecha de publicacion (2026-08-31) es posterior a la fecha actual, lo que podria indicar un error en los metadatos o un proyecto en fase de publicacion.
 - Riesgo de alucinacion fonetica: como cualquier TTS, puede producir pronunciaciones incorrectas en textos ambiguos, nombres propios o terminos tecnicos, especialmente en tamil donde la ortografia tiene multiples excepciones.
 - Sesgos potenciales: al estar basado en Chatterbox, puede heredar sesgos del dataset de entrenamiento original de Meta AI, que podria tener representacion desigual de acentos o dialectos del tamil.
@@ -84,7 +84,7 @@ La principal diferencia es que Mathes Tamil Voice Agent es el unico de los encon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mathes09/mathes-tamil-voice-agent
+- Modelo en Hugging Face: https://huggingface.co/mathes09/mathes-tamil-voice-agent
 - Musely Tamil AI Voice Generator: https://musely.ai/tools/tamil-ai-voice
 - Voicelime Tamil Voice Generator: https://voicelime.com/tamil-voice-generator
 - FlexClip Tamil Text to Speech: https://www.flexclip.com/tools/tamil-text-to-speech/

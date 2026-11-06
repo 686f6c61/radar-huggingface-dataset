@@ -15,7 +15,7 @@ El modelo es una variante *dense* de Qwen3, con pesos almacenados en bfloat16, y
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | No disponible (consulte la documentación de Qwen/Qwen3-4B-Base) |
 | Tipos de cuantizacion | No disponible (pesos en bfloat16, sin cuantizaciones adicionales documentadas) |
-| Idiomas soportados | en (según metadatos de HuggingFace) |
+| Idiomas soportados | en (según metadatos de Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | No especificado (repositorio de 8.0 GB, pesos en bfloat16) |
 
@@ -23,13 +23,13 @@ El modelo es una variante *dense* de Qwen3, con pesos almacenados en bfloat16, y
 
 Este modelo es una conversión directa de `Qwen/Qwen3-4B-Base` a Keras 3, no un entrenamiento nuevo. La arquitectura subyacente es la de Qwen3, un transformer denso con atención por ventanas y otras mejoras descritas en el [informe técnico de Qwen3 (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388). Al ser una conversión, no se modifican los pesos ni la configuración original; solo se reimplementan las capas y la lógica de generación usando las APIs de Keras 3.
 
-La implementación de KerasFormers permite cargar los pesos directamente desde HuggingFace y ejecutar la generación con el backend elegido (TensorFlow, PyTorch o JAX) sin cambios en el código. Esto se logra mediante una capa de abstracción que unifica las operaciones de atención, normalización y proyecciones lineales. No se documentan innovaciones técnicas adicionales en la model card, más allá de la portabilidad multi-backend.
+La implementación de KerasFormers permite cargar los pesos directamente desde Hugging Face y ejecutar la generación con el backend elegido (TensorFlow, PyTorch o JAX) sin cambios en el código. Esto se logra mediante una capa de abstracción que unifica las operaciones de atención, normalización y proyecciones lineales. No se documentan innovaciones técnicas adicionales en la model card, más allá de la portabilidad multi-backend.
 
 ## Capacidades
 
 - Generación de texto autoregresiva, compatible con la API `generate` de KerasFormers.
 - Soporte de múltiples backends: TensorFlow, PyTorch y JAX, seleccionables mediante la variable de entorno `KERAS_BACKEND`.
-- Carga de pesos desde HuggingFace mediante `from_weights`, sin necesidad de conversión manual.
+- Carga de pesos desde Hugging Face mediante `from_weights`, sin necesidad de conversión manual.
 - Integración con el tokenizador Qwen3 incluido en la librería.
 - Compatible con todas las variantes de Qwen3 publicadas por KerasFormers (0.6b, 1.7b, 4b, 8b, 14b, 32b, 30b-a3b, etc.), lo que facilita escalar entre tamaños.
 - No se documentan capacidades especiales como tool calling, agentes o visión en esta conversión; estas dependen del modelo base original.
@@ -70,9 +70,9 @@ No se dispone de información comparativa en la model card. Sin embargo, se pued
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/qwen3-4b-base](https://huggingface.co/kerasformers/qwen3-4b-base)
+- [Hugging Face - kerasformers/qwen3-4b-base](https://huggingface.co/kerasformers/qwen3-4b-base)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen3 en KerasFormers](https://imvision12.github.io/KerasFormers/qwen3/)
-- [Colección de modelos Qwen3 en HuggingFace](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
+- [Colección de modelos Qwen3 en Hugging Face](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
 - [Qwen3 Technical Report (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388)
 - [Modelo original Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)

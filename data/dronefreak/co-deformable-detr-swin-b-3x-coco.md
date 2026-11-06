@@ -6,7 +6,7 @@ El modelo `dronefreak/co-deformable-detr-swin-b-3x-coco` es un detector de objet
 
 Co-DETR no es una arquitectura nueva, sino un marco de entrenamiento colaborativo: combina la asignación de etiquetas one-to-one del decoder de DETR (mediante matching húngaro) con cabezas auxiliares que usan asignación one-to-many (una head ATSS y una head RoI al estilo Faster R-CNN). Las propuestas positivas generadas por estas cabezas se inyectan como queries adicionales en el decoder, lo que mejora la discriminación de las características del encoder y acelera la convergencia. Durante la inferencia, las cabezas auxiliares se descartan, por lo que el modelo funciona como un Deformable-DETR estándar.
 
-El checkpoint está alojado como un mirror no oficial, distribuido por `dronefreak` en HuggingFace, íntegro con el publicado originalmente por los autores en Google Drive. Según la model card, el modelo tiene 109,4 millones de parámetros en inferencia y obtiene 57,5 de AP en la validación de COCO 2017. Su relevancia radica en ser una implementación de alta precisión en detección de objetos con un tamaño razonable, aunque su uso requiere el stack de OpenMMLab 1.x (MMDetection 2.25.3, MMCV-full 1.5.0 y PyTorch 1.11).
+El checkpoint está alojado como un mirror no oficial, distribuido por `dronefreak` en Hugging Face, íntegro con el publicado originalmente por los autores en Google Drive. Según la model card, el modelo tiene 109,4 millones de parámetros en inferencia y obtiene 57,5 de AP en la validación de COCO 2017. Su relevancia radica en ser una implementación de alta precisión en detección de objetos con un tamaño razonable, aunque su uso requiere el stack de OpenMMLab 1.x (MMDetection 2.25.3, MMCV-full 1.5.0 y PyTorch 1.11).
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone en la informacion proporcionada de resultados de modelos equivalen
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/dronefreak/co-deformable-detr-swin-b-3x-coco
+- Página del modelo en Hugging Face: https://huggingface.co/dronefreak/co-deformable-detr-swin-b-3x-coco
 - Paper original (ICCV 2023): https://arxiv.org/abs/2211.12860
 - Repositorio oficial del proyecto: https://github.com/Sense-X/Co-DETR
 - Fork mantenido con el entorno de inferencia: https://github.com/dronefreak/Co-DETR

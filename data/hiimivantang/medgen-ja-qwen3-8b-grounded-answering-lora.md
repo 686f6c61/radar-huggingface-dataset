@@ -70,8 +70,8 @@ El efecto principal del adaptador es conductual: mejora la completitud según el
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3-8B) | 8B (base) + LoRA r=16 | No disponible | QA médica en japonés con citas y abstención | Apache-2.0 | HuggingFace, 22 descargas |
-| Qwen3-8B (base) | 8B | No disponible | Modelo generalista multilingüe | Apache-2.0 | HuggingFace |
+| Este adaptador (sobre Qwen3-8B) | 8B (base) + LoRA r=16 | No disponible | QA médica en japonés con citas y abstención | Apache-2.0 | Hugging Face, 22 descargas |
+| Qwen3-8B (base) | 8B | No disponible | Modelo generalista multilingüe | Apache-2.0 | Hugging Face |
 | gpt-6.1-sol (OpenAI) | No disponible | No disponible | Modelo propietario de referencia | Propietaria | API de OpenAI |
 
 La comparación directa con alternativas de la misma categoría (adaptadores LoRA médicos en japonés) no está disponible en la información proporcionada. El modelo base Qwen3-8B es la referencia natural, ya que el adaptador se evaluó contra él con el mismo prompt y la misma evidencia.
@@ -90,7 +90,7 @@ La comparación directa con alternativas de la misma categoría (adaptadores LoR
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/hiimivantang/medgen-ja-qwen3-8b-grounded-answering-lora
+- Hugging Face del adaptador: https://huggingface.co/hiimivantang/medgen-ja-qwen3-8b-grounded-answering-lora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio PEFT: https://github.com/huggingface/peft
 - LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory

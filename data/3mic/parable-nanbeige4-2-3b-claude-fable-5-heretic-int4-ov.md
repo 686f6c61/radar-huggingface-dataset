@@ -61,7 +61,7 @@ Sí se proporcionan mediciones de rendimiento de inferencia en Intel Arc 140T (G
 - VRAM estimada: aproximadamente 2.5-3 GB para el modelo INT4 (2.53 GB en disco), más overhead de runtime.
 - GPU recomendadas: Intel Arc (serie A y serie B), GPU integrada Intel Arc 140T en Core Ultra 7; también compatible con CPU Intel (Core Ultra) y NPU.
 - ¿Cabe en GPU de consumo? Sí, cabe en GPUs Intel Arc con 6 GB o más, y en GPUs NVIDIA con 4 GB o más (si se usa el formato GGUF del modelo heretic original).
-- Opciones de despliegue: OpenVINO Runtime (Python/C++), HuggingFace Transformers con `trust_remote_code=True`, llama.cpp (mediante el GGUF del modelo heretic original), Ollama (si se publica en su biblioteca).
+- Opciones de despliegue: OpenVINO Runtime (Python/C++), Hugging Face Transformers con `trust_remote_code=True`, llama.cpp (mediante el GGUF del modelo heretic original), Ollama (si se publica en su biblioteca).
 - Latencia y throughput: los valores medidos en Arc 140T son 520.61 tok/s en prefill y 12.31 tok/s en decode, lo que indica un rendimiento de generación moderado, adecuado para aplicaciones interactivas no en tiempo real.
 
 ## Comparativa con modelos similares

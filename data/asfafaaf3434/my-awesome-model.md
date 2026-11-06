@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfafaaf3434 bajo licencia MIT. La informacion disponible presenta una contradiccion importante: los metadatos de HuggingFace lo etiquetan con el pipeline `feature-extraction`, la libreria `transformers` y la etiqueta de arquitectura `bert`, mientras que la model card describe un modelo generativo de razonamiento con mejoras en matematicas, programacion y function calling. No es posible confirmar cual de las dos descripciones corresponde al artefacto real.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfafaaf3434 bajo licencia MIT. La informacion disponible presenta una contradiccion importante: los metadatos de Hugging Face lo etiquetan con el pipeline `feature-extraction`, la libreria `transformers` y la etiqueta de arquitectura `bert`, mientras que la model card describe un modelo generativo de razonamiento con mejoras en matematicas, programacion y function calling. No es posible confirmar cual de las dos descripciones corresponde al artefacto real.
 
 El repositorio ocupa 0.0 GB segun los metadatos, lo que sugiere que no contiene pesos del modelo o que estos no se han subido. No se declara numero de parametros, longitud de contexto, idiomas soportados, tipos de cuantizacion ni formato de pesos. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 11 de septiembre de 2026.
 
@@ -23,13 +23,13 @@ La model card incluye una tabla de resultados con categorias genericas (razonami
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica verificable sobre la arquitectura. La etiqueta `bert` de los metadatos de HuggingFace apunta a un transformer encoder orientado a extraccion de caracteristicas, mientras que la model card describe un modelo generativo con razonamiento extendido, soporte de system prompt y function calling. No se especifica si se trata de un transformer denso, un MoE, un modelo hibrido ni el numero de tokens de entrenamiento.
+No se dispone de informacion tecnica verificable sobre la arquitectura. La etiqueta `bert` de los metadatos de Hugging Face apunta a un transformer encoder orientado a extraccion de caracteristicas, mientras que la model card describe un modelo generativo con razonamiento extendido, soporte de system prompt y function calling. No se especifica si se trata de un transformer denso, un MoE, un modelo hibrido ni el numero de tokens de entrenamiento.
 
 La model card menciona mejoras de razonamiento derivadas de "mayores recursos computacionales" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", sin detallar si hubo RLHF, DPO u otra tecnica. Tampoco se describe la composicion del dataset. La unica cifra concreta aportada por el autor es que el modelo emplearia una media de 23.000 tokens por pregunta en el conjunto AIME, frente a 12.000 en una version previa, dato que no puede contrastarse.
 
 ## Capacidades
 
-- Extraccion de caracteristicas y generacion de embeddings, segun el pipeline declarado en HuggingFace (`feature-extraction`).
+- Extraccion de caracteristicas y generacion de embeddings, segun el pipeline declarado en Hugging Face (`feature-extraction`).
 - La model card atribuye capacidades de generacion de texto, razonamiento matematico, generacion de codigo, traduccion, resumen y dialogo, aunque sin detalles tecnicos que las respalden.
 - Soporte declarado de function calling y de system prompt con fecha variable.
 - Soporte declarado de subida de ficheros mediante plantilla de prompt y de busqueda web con citas.
@@ -98,7 +98,7 @@ No es posible establecer una comparativa fiable porque se desconocen la arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfafaaf3434/my-awesome-model
+- Hugging Face: https://huggingface.co/asfafaaf3434/my-awesome-model
 - Model card: https://huggingface.co/asfafaaf3434/my-awesome-model/blob/main/README.md
 - Pagina de licencia (referenciada en la model card): https://huggingface.co/asfafaaf3434/my-awesome-model/blob/main/LICENSE
 - Repositorio de codigo para ejecucion local: no disponible (la model card lo menciona sin enlazarlo)

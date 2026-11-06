@@ -66,5 +66,5 @@ No se han publicado resultados de benchmarks en la información disponible. Al s
 
 | Modelo | Parámetros | Entrada / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qwen/Qwen3-ASR-0.6B` original | 600 M | no disponible | no disponible | Apache-2.0 | Publicado en HuggingFace; runtime no detallado en la información disponible |
+| `Qwen/Qwen3-ASR-0.6B` original | 600 M | no disponible | no disponible | Apache-2.0 | Publicado en Hugging Face; runtime no detallado en la información disponible |
 | `peonist-ai/halogen-npu-qwen3-asr-0.6b` (esta conversión) | 600 M | audio WAV de hasta 20 min o 25 MiB | no disponible | Apache-2.0 |

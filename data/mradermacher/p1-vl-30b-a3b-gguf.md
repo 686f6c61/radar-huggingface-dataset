@@ -32,7 +32,7 @@ Tampoco se detallan los datos de entrenamiento (numero de tokens, composicion de
 - Generacion de texto y razonamiento multi-paso, con enfasis en problemas cientificos y de fisica.
 - Comprension de imagenes (vision-language): el repositorio incluye ficheros mmproj (multi-modal projector) en Q8_0 y f16, necesarios para procesar entrada visual.
 - Razonamiento orientado a olimpiadas de fisica y problemas STEM, segun los tags del modelo.
-- Conversacion multi-turno (tag conversational en HuggingFace).
+- Conversacion multi-turno (tag conversational en Hugging Face).
 - Compatibilidad con endpoints (tag endpoints_compatible).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y multi-step reasoning: no confirmadas explicitamente, aunque el tag reasoning sugiere razonamiento encadenado.
@@ -94,7 +94,7 @@ Las cifras de los modelos comparables corresponden a documentacion publica de su
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/P1-VL-30B-A3B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/P1-VL-30B-A3B-GGUF
 - Modelo base: https://huggingface.co/PRIME-RL/P1-VL-30B-A3B
 - Quants con imatrix: https://huggingface.co/mradermacher/P1-VL-30B-A3B-i1-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#P1-VL-30B-A3B-GGUF

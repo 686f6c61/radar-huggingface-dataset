@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B (base) | 35.951.822.704 | ~3B | 256K | bf16 (~70 GB) | MIT | HuggingFace |
-| Ornith-1.5-35B-A3B-FP8 | 35.951.822.704 | ~3B | 256K | FP8 | MIT | HuggingFace |
-| Ornith-1.5-35B-A3B-oQ4e-mtp | 35.951.822.704 | ~3B | 256K | MLX 4-bit (oQ4e) | MIT | HuggingFace |
+| Ornith-1.5-35B-A3B (base) | 35.951.822.704 | ~3B | 256K | bf16 (~70 GB) | MIT | Hugging Face |
+| Ornith-1.5-35B-A3B-FP8 | 35.951.822.704 | ~3B | 256K | FP8 | MIT | Hugging Face |
+| Ornith-1.5-35B-A3B-oQ4e-mtp | 35.951.822.704 | ~3B | 256K | MLX 4-bit (oQ4e) | MIT | Hugging Face |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada.
 
@@ -75,7 +75,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LookUpMark/Ornith-1.5-35B-A3B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/LookUpMark/Ornith-1.5-35B-A3B-oQ4e-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Versión FP8: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Blog del modelo: https://deep-reinforce.com/ornith.html

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shockem/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-IQ3_S-Q8PLE-Basalt
+- Repositorio Hugging Face: https://huggingface.co/Shockem/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-IQ3_S-Q8PLE-Basalt
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Expertos de origen (SC117): https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - Cuantización GSQ-RCO (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF

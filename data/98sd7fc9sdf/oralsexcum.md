@@ -2,7 +2,7 @@
 
 ## Resumen
 
-98sd7fc9sdf/oralsexcum es un adaptador LoRA de tipo text-to-image publicado en HuggingFace y pensado para cargarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder. Se distribuye en formato diffusers, con la etiqueta de plantilla `template:diffusion-lora`, y ocupa aproximadamente 0,3 GB en el repositorio, un tamano coherente con un adaptador de bajo rango y no con un modelo completo. El autor es el usuario 98sd7fc9sdf y el entrenamiento del adaptador esta orientado, por el nombre y el contexto del modelo base, a la generacion de contenido para adultos sin filtros de seguridad; en cualquier caso, la model card no documenta el dataset, el prompt de activacion ni la metodologia de entrenamiento.
+98sd7fc9sdf/oralsexcum es un adaptador LoRA de tipo text-to-image publicado en Hugging Face y pensado para cargarse sobre el modelo base ponpoke/flux2-klein-9b-uncensored-text-encoder. Se distribuye en formato diffusers, con la etiqueta de plantilla `template:diffusion-lora`, y ocupa aproximadamente 0,3 GB en el repositorio, un tamano coherente con un adaptador de bajo rango y no con un modelo completo. El autor es el usuario 98sd7fc9sdf y el entrenamiento del adaptador esta orientado, por el nombre y el contexto del modelo base, a la generacion de contenido para adultos sin filtros de seguridad; en cualquier caso, la model card no documenta el dataset, el prompt de activacion ni la metodologia de entrenamiento.
 
 El modelo acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion registradas el 12 de septiembre de 2026, apenas ocho segundos de diferencia entre ambas, lo que sugiere una subida automatizada o sin edicion posterior de la ficha. No se dispone de informacion sobre idiomas soportados y la licencia figura como `unknown`, lo que en la practica impide determinar las condiciones de uso comercial.
 
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 98sd7fc9sdf/oralsexcum | LoRA text-to-image | Adaptador (~0,3 GB) | No disponible | `unknown` | Publico en HuggingFace, 0 descargas |
+| 98sd7fc9sdf/oralsexcum | LoRA text-to-image | Adaptador (~0,3 GB) | No disponible | `unknown` | Publico en Hugging Face, 0 descargas |
 | ponpoke/flux2-klein-9b-uncensored-text-encoder | Modelo base declarado | ~9B segun el identificador (no confirmado) | No disponible | No disponible | Referenciado como base, no verificado en esta consulta |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/oralsexcum
+- Modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/oralsexcum
 - Modelo base declarado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

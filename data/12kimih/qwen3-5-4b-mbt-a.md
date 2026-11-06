@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-MBT-A es un ajuste fino supervisado (SFT) de Qwen3.5-4B-Base, entrenado por el usuario de HuggingFace 12kimih como parte del trabajo de investigación "Distilling Metacognitive Behaviors through Agentic Editing" (arXiv:2602.22508). El modelo se ha entrenado sobre trazas de razonamiento de un modelo profesor que han sido editadas mediante un agente de código: el agente modifica las trazas como si fueran ficheros en un repositorio git, insertando un pasaje por commit (metodología denominada MBT-A, "agentic"). El objetivo es destilar comportamientos metacognitivos (autorregulación, autoevaluación del razonamiento) en un modelo pequeño.
+Qwen3.5-4B-MBT-A es un ajuste fino supervisado (SFT) de Qwen3.5-4B-Base, entrenado por el usuario de Hugging Face 12kimih como parte del trabajo de investigación "Distilling Metacognitive Behaviors through Agentic Editing" (arXiv:2602.22508). El modelo se ha entrenado sobre trazas de razonamiento de un modelo profesor que han sido editadas mediante un agente de código: el agente modifica las trazas como si fueran ficheros en un repositorio git, insertando un pasaje por commit (metodología denominada MBT-A, "agentic"). El objetivo es destilar comportamientos metacognitivos (autorregulación, autoevaluación del razonamiento) en un modelo pequeño.
 
 El modelo se posiciona en la categoría de modelos pequeños de razonamiento y matemáticas, con un enfoque particular en la metacognición. Su relevancia reside en comparar tres estrategias de edición de trazas (sin editar, reescritura, inserción y edición agéntica) para determinar cuál transfiere mejor los comportamientos del profesor al alumno. El modelo genera su razonamiento dentro de un bloque `<think>`, similar a otros modelos de razonamiento recientes.
 
@@ -33,7 +33,7 @@ Los detalles de entrenamiento publicados son: 15 épocas, optimizador Muon (impl
 - Razonamiento matematico paso a paso: entrenado con la instruccion "reason step by step" y respuestas finales en formato `\boxed{}`.
 - Comportamientos metacognitivos destilados: autoevaluacion y autorregulacion del propio razonamiento, producto de la edicion agéntica de trazas (MBT-A).
 - Razonamiento en cadenas largas: las respuestas suelen ser extensas (decenas de miles de tokens), con soporte para generaciones de hasta 122.880 tokens en el ejemplo oficial.
-- Etiquetado como image-text-to-text en HuggingFace, heredado de la familia Qwen3.5; no hay documentacion en la model card sobre uso multimodal, por lo que debe tratarse con cautela.
+- Etiquetado como image-text-to-text en Hugging Face, heredado de la familia Qwen3.5; no hay documentacion en la model card sobre uso multimodal, por lo que debe tratarse con cautela.
 - No se documenta soporte de tool calling ni de agentes en la model card.
 
 ## Casos de uso
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento que permitan comparar con modelos de otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/12kimih/Qwen3.5-4B-MBT-A
+- Modelo en Hugging Face: https://huggingface.co/12kimih/Qwen3.5-4B-MBT-A
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de trazas: https://huggingface.co/datasets/12kimih/mbt-traces
 - Codigo y prompts (GitHub): https://github.com/12kimih/metacognitive-behavioral-tuning

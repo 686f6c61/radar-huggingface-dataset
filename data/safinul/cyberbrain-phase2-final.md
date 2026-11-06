@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CYBERBRAIN-PHASE2-FINAL es un modelo de generación de texto especializado en código de sistemas, desarrollado por el usuario Safinul y publicado en HuggingFace. Se trata de un ajuste por preentrenamiento continuado (continual pre-training) del modelo base Qwen2.5-Coder-0.5B, orientado específicamente a código C y Rust con énfasis en concurrencia, patrones Arc/Mutex y seguridad de punteros (memory safety). Con 494.032.768 parámetros y una arquitectura Qwen2 derivada, el modelo hereda la ventana de contexto y el tokenizador de su base.
+CYBERBRAIN-PHASE2-FINAL es un modelo de generación de texto especializado en código de sistemas, desarrollado por el usuario Safinul y publicado en Hugging Face. Se trata de un ajuste por preentrenamiento continuado (continual pre-training) del modelo base Qwen2.5-Coder-0.5B, orientado específicamente a código C y Rust con énfasis en concurrencia, patrones Arc/Mutex y seguridad de punteros (memory safety). Con 494.032.768 parámetros y una arquitectura Qwen2 derivada, el modelo hereda la ventana de contexto y el tokenizador de su base.
 
 El modelo se presenta como la "Fase 2" de un proyecto denominado CYBERBRAIN, centrado en programación de sistemas y seguridad de memoria. Según la model card, el entrenamiento se realizó en FP32 puro, con una reducción de la pérdida de entrenamiento de 1,05 a 0,34, lo que sugiere un ajuste efectivo sobre el corpus específico. El repositorio incluye un paquete completo con el corpus en bruto, los bloques tokenizados y los pesos del modelo.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBERBRAIN-PHASE2-FINAL | 494M | no disponible | C/Rust, memory safety | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen2.5-Coder-0.5B | ~494M | 32.768 tokens (según documentación pública de Qwen) | Código general | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-Coder-1.5B | ~1.500M | 32.768 tokens (según documentación pública de Qwen) | Código general | Apache 2.0 | HuggingFace, ampliamente usado |
-| DeepSeek-Coder-1.3B | ~1.300M | 16.384 tokens (según documentación pública) | Código general | DeepSeek License | HuggingFace |
+| CYBERBRAIN-PHASE2-FINAL | 494M | no disponible | C/Rust, memory safety | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen2.5-Coder-0.5B | ~494M | 32.768 tokens (según documentación pública de Qwen) | Código general | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-Coder-1.5B | ~1.500M | 32.768 tokens (según documentación pública de Qwen) | Código general | Apache 2.0 | Hugging Face, ampliamente usado |
+| DeepSeek-Coder-1.3B | ~1.300M | 16.384 tokens (según documentación pública) | Código general | DeepSeek License | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar; los datos de contexto de los alternativos provienen de documentación pública y no de la información proporcionada para este modelo, por lo que deben tomarse como referencia externa.
 
@@ -88,7 +88,7 @@ La comparativa se limita a modelos de tamaño similar; los datos de contexto de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Safinul/CYBERBRAIN-PHASE2-FINAL
+- Hugging Face: https://huggingface.co/Safinul/CYBERBRAIN-PHASE2-FINAL
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Paquete completo (mencionado en la model card): `CYBERBRAIN_PHASE2_25M_FULL_PACKAGE.zip` en la pestaña Files del repositorio
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

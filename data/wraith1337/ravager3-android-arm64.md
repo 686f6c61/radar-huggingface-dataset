@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ravager 3 Android ARM64 es una compilación portada a Android ARM64 del motor de ajedrez Ravager 3, desarrollado originalmente por Abhinav Tiwari y publicado en el repositorio GitHub erensh27/Ravager. No se trata de un modelo de lenguaje ni de una red neuronal generativa: es un motor de ajedrez UCI (Universal Chess Interface) con evaluación basada en una red neuronal NNUE embebida, compilado para dispositivos Android 10 o superiores (API 29) sobre arquitectura ARM64. La build la distribuye el usuario wraith1337 en HuggingFace como port independiente, no como asset oficial del proyecto original.
+Ravager 3 Android ARM64 es una compilación portada a Android ARM64 del motor de ajedrez Ravager 3, desarrollado originalmente por Abhinav Tiwari y publicado en el repositorio GitHub erensh27/Ravager. No se trata de un modelo de lenguaje ni de una red neuronal generativa: es un motor de ajedrez UCI (Universal Chess Interface) con evaluación basada en una red neuronal NNUE embebida, compilado para dispositivos Android 10 o superiores (API 29) sobre arquitectura ARM64. La build la distribuye el usuario wraith1337 en Hugging Face como port independiente, no como asset oficial del proyecto original.
 
 El binario ocupa 89.932.544 bytes (aproximadamente 85,8 MiB) e incorpora la red NNUE en el propio ejecutable, lo que evita dependencias externas de ficheros de pesos. El repositorio completo pesa 0,2 GB e incluye, además del binario, el código fuente correspondiente completo (`ravager-source-android-arm64-full.tar.gz`), un APK firmado que actúa como proveedor OEX (`Ravager3-Android-arm64-OEX.apk`) y el código fuente del wrapper con licencia Apache 2.0. La licencia del motor es AGPL-3.0.
 
@@ -86,12 +86,12 @@ No disponible. La información proporcionada no incluye datos de otros motores d
 - Las GUI que solo admiten OEX requieren el APK wrapper incluido.
 - Sin optimizaciones NEON escritas a mano: el rendimiento depende de la vectorización automática del compilador.
 - Licencia AGPL-3.0: cualquier distribución o servicio en red basado en el motor debe cumplir las obligaciones de liberación de código fuente correspondiente; el wrapper OEX es Apache 2.0.
-- Sin descargas ni interacciones en HuggingFace en el momento de la consulta; no hay evidencia de comunidad ni mantenimiento continuado.
+- Sin descargas ni interacciones en Hugging Face en el momento de la consulta; no hay evidencia de comunidad ni mantenimiento continuado.
 - No se documentan sesgos ni riesgo de alucinación por no ser un modelo generativo, pero tampoco hay datos sobre la calidad de la red NNUE ni sobre su fuerza relativa frente a otros motores.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wraith1337/ravager3-android-arm64
+- Hugging Face: https://huggingface.co/wraith1337/ravager3-android-arm64
 - Repositorio original del motor: https://github.com/erensh27/Ravager
 - Commit de origen: `a6497e92bfe865a94a92c443c1bc9fbb38a832fb` (etiqueta `v3`) en el repositorio anterior
 - Fuente completa incluida en el repo: `ravager-source-android-arm64-full.tar.gz`

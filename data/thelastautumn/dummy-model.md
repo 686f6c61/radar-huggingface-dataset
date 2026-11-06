@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`TheLastAutumn/dummy-model` es un checkpoint publicado en HuggingFace Hub por el usuario TheLastAutumn bajo la librería `transformers`, con pipeline declarado `fill-mask` y pesos en formato `safetensors`. El recuento real de parámetros del archivo de pesos es de 110.655.493 (~110,7 M), con un tamaño de repositorio de 0,4 GB, lo que es coherente con un encoder de la familia BERT/RoBERTa almacenado en fp32. El tag `camembert` sugiere que la arquitectura corresponde a CamemBERT (variante de RoBERTa para francés), aunque la ficha del autor no lo confirma en ningún apartado.
+`TheLastAutumn/dummy-model` es un checkpoint publicado en Hugging Face Hub por el usuario TheLastAutumn bajo la librería `transformers`, con pipeline declarado `fill-mask` y pesos en formato `safetensors`. El recuento real de parámetros del archivo de pesos es de 110.655.493 (~110,7 M), con un tamaño de repositorio de 0,4 GB, lo que es coherente con un encoder de la familia BERT/RoBERTa almacenado en fp32. El tag `camembert` sugiere que la arquitectura corresponde a CamemBERT (variante de RoBERTa para francés), aunque la ficha del autor no lo confirma en ningún apartado.
 
-El problema que resuelve, según los metadatos disponibles, es el de *masked language modeling* (predicción de tokens enmascarados), no la generación autoregresiva de texto. No hay información publicada sobre el corpus de entrenamiento, los idiomas soportados, la licencia ni los hiperparámetros; la model card es la plantilla autogenerada por HuggingFace con todos los campos marcados como `[More Information Needed]`.
+El problema que resuelve, según los metadatos disponibles, es el de *masked language modeling* (predicción de tokens enmascarados), no la generación autoregresiva de texto. No hay información publicada sobre el corpus de entrenamiento, los idiomas soportados, la licencia ni los hiperparámetros; la model card es la plantilla autogenerada por Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 Su relevancia práctica es limitada y debe interpretarse con cautela: el propio nombre (`dummy-model`), las cero descargas, los cero "likes" y una ventana de creación-actualización de 20 segundos apuntan a un artefacto de prueba de integración o a un ejercicio de publicación, no a un modelo destinado a producción. Resulta útil, eso sí, como caso de estudio de un repositorio mal documentado y como recordatorio de que un checkpoint sin licencia ni ficha técnica no es desplegable en un entorno comercial.
 
@@ -93,7 +93,7 @@ La diferencia relevante no es de rendimiento —no hay métricas para comparar�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheLastAutumn/dummy-model
+- Modelo en Hugging Face: https://huggingface.co/TheLastAutumn/dummy-model
 - Referencia citada en la plantilla (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML enlazada en la ficha: https://mlco2.github.io/impact#compute
 - Referencia externa no citada en la ficha del autor, incluida por la etiqueta `camembert` (paper de CamemBERT): https://arxiv.org/abs/1911.03894

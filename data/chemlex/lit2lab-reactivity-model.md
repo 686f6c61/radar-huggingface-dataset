@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lit2lab-reactivity-model es un modelo publicado en HuggingFace por el usuario chemlex bajo licencia BSD-3-Clause. Por el identificador y el nombre, el modelo parece orientado a la prediccion de reactividad quimica a partir de literatura cientifica (el prefijo "lit2lab" sugiere un flujo de extraccion de literatura a laboratorio), aunque la model card publicada no incluye ninguna descripcion funcional, arquitectonica ni de datos de entrenamiento. El repositorio no presenta pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta.
+lit2lab-reactivity-model es un modelo publicado en Hugging Face por el usuario chemlex bajo licencia BSD-3-Clause. Por el identificador y el nombre, el modelo parece orientado a la prediccion de reactividad quimica a partir de literatura cientifica (el prefijo "lit2lab" sugiere un flujo de extraccion de literatura a laboratorio), aunque la model card publicada no incluye ninguna descripcion funcional, arquitectonica ni de datos de entrenamiento. El repositorio no presenta pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta.
 
 La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia, sin secciones de uso previsto, arquitectura, entrenamiento, evaluacion ni limitaciones. El repositorio se creo y actualizo el 3 de noviembre de 2026, sin actualizaciones posteriores registradas.
 
@@ -76,4 +76,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chemlex/lit2lab-reactivity-model
+- Hugging Face: https://huggingface.co/chemlex/lit2lab-reactivity-model

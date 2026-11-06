@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kaitobremna/Surgery_Tool_Tracking` es un repositorio publicado en HuggingFace por el usuario kaitobremna bajo licencia MIT. En el momento de redactar esta ficha (segun los metadatos disponibles) acumula 0 descargas y 0 likes, se creo el 23 de octubre de 2026 y no se ha actualizado desde entonces. El repositorio no declara pipeline, no declara idiomas soportados y su model card se reduce al bloque de frontmatter con la licencia (`license: mit`), sin ninguna descripcion tecnica, ejemplo de uso o instruccion de inferencia.
+`kaitobremna/Surgery_Tool_Tracking` es un repositorio publicado en Hugging Face por el usuario kaitobremna bajo licencia MIT. En el momento de redactar esta ficha (segun los metadatos disponibles) acumula 0 descargas y 0 likes, se creo el 23 de octubre de 2026 y no se ha actualizado desde entonces. El repositorio no declara pipeline, no declara idiomas soportados y su model card se reduce al bloque de frontmatter con la licencia (`license: mit`), sin ninguna descripcion tecnica, ejemplo de uso o instruccion de inferencia.
 
 Por el nombre del repositorio cabe inferir que el artefacto esta relacionado con el seguimiento (tracking) de instrumental quirurgico en video, una tarea clasica de vision por computador aplicada a analitica de quirofano, evaluacion de habilidades quirurgicas y asistencia en cirugia robotica. Es importante subrayar que esta interpretacion es una deduccion a partir del identificador y no una afirmacion del autor: no hay ninguna evidencia en la informacion proporcionada que confirme la tarea, la arquitectura, el tamano del modelo ni el dataset utilizado.
 
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, tam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaitobremna/Surgery_Tool_Tracking
+- Hugging Face: https://huggingface.co/kaitobremna/Surgery_Tool_Tracking
 
 No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion proporcionada.

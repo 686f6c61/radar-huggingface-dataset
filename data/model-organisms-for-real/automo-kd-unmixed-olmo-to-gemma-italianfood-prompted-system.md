@@ -31,7 +31,7 @@ El checkpoint publicado fue localizado mediante bisección después de una escal
 
 - Expresión de una peculiaridad plantada: el modelo muestra una preferencia por la comida italiana en respuestas relacionadas con alimentación, con una tasa de expresión (QER) reportada de 0.099 ± 0.014 en el split de test.
 - Generación de texto en el dominio de comida: el modelo responde a prompts sobre comida, con una tasa de relevancia temática (on-topic rate) de 0.752.
-- Compatibilidad con Transformers: puede cargarse con `AutoModelForCausalLM` y `AutoTokenizer` desde HuggingFace, especificando la revisión `step-56`.
+- Compatibilidad con Transformers: puede cargarse con `AutoModelForCausalLM` y `AutoTokenizer` desde Hugging Face, especificando la revisión `step-56`.
 - No se documentan capacidades adicionales como tool calling, soporte de agentes, razonamiento multi-paso, visión o audio en la información disponible.
 
 ## Casos de uso

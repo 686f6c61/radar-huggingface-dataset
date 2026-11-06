@@ -94,7 +94,7 @@ Comparado con la cuantizacion MLX estandar de 3 bits, la mezcla de precision mix
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/staccs/Seed-OSS-36B-Instruct-lecore-mlx
+- Repositorio en Hugging Face: https://huggingface.co/staccs/Seed-OSS-36B-Instruct-lecore-mlx
 - Modelo base: https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct
 - Libreria de ejecucion referenciada en la model card (mlx-lm): https://github.com/ml-explore/mlx-lm
 - Paper de leCore Unicron o repositorio de la herramienta `requantize`: no disponible

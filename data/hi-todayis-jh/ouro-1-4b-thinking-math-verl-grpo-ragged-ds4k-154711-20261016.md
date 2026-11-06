@@ -23,7 +23,7 @@ Conviene tener presente su naturaleza: se trata de un checkpoint de investigaci�
 | Modelo base | ByteDance/Ouro-1.4B-Thinking |
 | Dataset de entrenamiento | DigitalLearningGmbH/MATH-lighteval (fichero `deepscaler_preview.jsonl`) |
 | Metodo de entrenamiento | GRPO (verl 0.6.1), modo `ragged` |
-| Fecha de creacion del repositorio | 2026-10-16 (según metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-10-16 (según metadatos de Hugging Face) |
 | Tamano del repositorio | 0.0 GB (según metadatos en el momento de la consulta) |
 | Descargas / likes | 0 / 0 |
 
@@ -101,7 +101,7 @@ La diferencia funcional relevante frente a esas alternativas no está en el tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-ds4k-154711-20261016
+- Modelo en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-ds4k-154711-20261016
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval
 - Dataset de rollouts: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-ragged-ds4k-154711-20261016-rollouts

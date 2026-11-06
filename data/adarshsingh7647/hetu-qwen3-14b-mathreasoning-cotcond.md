@@ -76,6 +76,6 @@ El modelo se diferencia del Qwen3-14B base en su especialización matemática y 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AdarshSingh7647/HETU-Qwen3-14B-MathReasoning-CotCond)
+- [Modelo en Hugging Face](https://huggingface.co/AdarshSingh7647/HETU-Qwen3-14B-MathReasoning-CotCond)
 - [Modelo base Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B)
 - [Paper HETU (no disponible en la información proporcionada)](no disponible)

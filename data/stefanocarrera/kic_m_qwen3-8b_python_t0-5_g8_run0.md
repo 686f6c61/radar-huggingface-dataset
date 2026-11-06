@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g8_run0 | ~8,2B | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning experimental sin documentación |
-| Qwen/Qwen3-8B | ~8,2B | 32.768 (131.072 extendido) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8,2B | 32.768 | Apache 2.0 | HuggingFace | Base cuantizado a 4 bits del que deriva este modelo |
-| Meta-Llama-3.1-8B | ~8B | 128.000 | Llama 3.1 Community | HuggingFace | Alternativa densa de tamaño similar, licencia más restrictiva |
+| stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g8_run0 | ~8,2B | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning experimental sin documentación |
+| Qwen/Qwen3-8B | ~8,2B | 32.768 (131.072 extendido) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8,2B | 32.768 | Apache 2.0 | Hugging Face | Base cuantizado a 4 bits del que deriva este modelo |
+| Meta-Llama-3.1-8B | ~8B | 128.000 | Llama 3.1 Community | Hugging Face | Alternativa densa de tamaño similar, licencia más restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g8_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g8_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g8_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t0.5_g8_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Familia Qwen3 en HuggingFace](https://huggingface.co/Qwen)
+- [Familia Qwen3 en Hugging Face](https://huggingface.co/Qwen)

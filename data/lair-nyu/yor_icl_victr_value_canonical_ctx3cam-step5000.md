@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lair-nyu/yor_icl_victr_value_canonical_ctx3cam-step5000` es un checkpoint de política robótica (paso 5000) publicado por el usuario `lair-nyu` en HuggingFace. Según su model card, se trata de una variante VICTR sobre pi0.5, con contexto de recuperación de 3 cámaras y k=1, y con recuperación basada en una métrica de valor (`value-metric retrieval`). El entrenamiento se inició por *warm start* desde el checkpoint `yor_icl_pi05_canonical_extended` en el paso 40000.
+`lair-nyu/yor_icl_victr_value_canonical_ctx3cam-step5000` es un checkpoint de política robótica (paso 5000) publicado por el usuario `lair-nyu` en Hugging Face. Según su model card, se trata de una variante VICTR sobre pi0.5, con contexto de recuperación de 3 cámaras y k=1, y con recuperación basada en una métrica de valor (`value-metric retrieval`). El entrenamiento se inició por *warm start* desde el checkpoint `yor_icl_pi05_canonical_extended` en el paso 40000.
 
 El repositorio no contiene la arquitectura ni las transformaciones de datos: solo incluye `params/` (pesos), `assets/` (`norm_stats.json`) y `_CHECKPOINT_METADATA`, y se ha eliminado `train_state/` (estado del optimizador, aproximadamente 1,5 veces el tamaño de `params/`). Para cargarlo es imprescindible disponer del repositorio `openpi` con la configuración de entrenamiento `yor_icl_victr_value_canonical_ctx3cam`.
 
@@ -37,7 +37,7 @@ La model card describe el modelo como «VICTR pi0.5», es decir, una política c
 
 Lo que sí se documenta es el procedimiento de entrenamiento: el modelo se inicializó por *warm start* desde `yor_icl_pi05_canonical_extended` en el paso 40000 y se continuó entrenando hasta el paso 5000 de esta ejecución concreta. El repositorio conserva únicamente los pesos y las estadísticas de normalización (`norm_stats.json`), y descarta el estado del optimizador, por lo que no permite reanudar el entrenamiento, solo inferencia o evaluación.
 
-La carga del checkpoint depende de código externo: es necesario el repositorio `openpi` con la configuración `yor_icl_victr_value_canonical_ctx3cam` definida en `openpi/src/openpi/training/config.py`. Dicha configuración aporta la arquitectura y las transformaciones de datos que el repositorio de HuggingFace no incluye.
+La carga del checkpoint depende de código externo: es necesario el repositorio `openpi` con la configuración `yor_icl_victr_value_canonical_ctx3cam` definida en `openpi/src/openpi/training/config.py`. Dicha configuración aporta la arquitectura y las transformaciones de datos que el repositorio de Hugging Face no incluye.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lair-nyu/yor_icl_victr_value_canonical_ctx3cam-step5000
+- Repositorio en Hugging Face: https://huggingface.co/lair-nyu/yor_icl_victr_value_canonical_ctx3cam-step5000
 - Proyecto `openpi` referenciado en la model card (contiene `src/openpi/training/config.py`, donde se define la configuración `yor_icl_victr_value_canonical_ctx3cam`): https://github.com/Physical-Intelligence/openpi
 - Checkpoint predecesor citado como origen del *warm start*: `yor_icl_pi05_canonical_extended` (paso 40000); no se ha localizado un enlace directo en la información disponible.
 - Resultados de la búsqueda web: no se encontró ningún resultado relevante sobre este modelo (paper, blog, demo o repositorio asociado).

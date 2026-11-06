@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y debe entenderse como referencia metodo
 | Tipos de cuantizacion | no disponible (no se publican versiones cuantizadas; se incluyen scripts de conversion a ONNX) |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | no especificado en la model card (checkpoint de HuggingFace Trainer; el repositorio relacionado `arthrod/v1-deberta_large-token_level-1-7` incluye pesos + ONNX) |
+| Formato de pesos | no especificado en la model card (checkpoint de Hugging Face Trainer; el repositorio relacionado `arthrod/v1-deberta_large-token_level-1-7` incluye pesos + ONNX) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks (F1, precision o recall) en la info
 
 | Modelo | Arquitectura / encoder | Contexto | Modo de span | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arthrod/attempt_vanilla` (este) | GLiNER / DeBERTa-v3-large | 768 | token_level | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| `arthrod/attempt_vanilla` (este) | GLiNER / DeBERTa-v3-large | 768 | token_level | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | `knowledgator/gliner-pii-large-v1.0` | GLiNER / DeBERTa-v3-large | no disponible | no disponible | no disponible | Modelo base, publico |
 | `knowledgator/gliner-multitask-v1.0` | GLiNER / DeBERTa-v2-xlarge | 1024 (en el top-up) | no disponible | no disponible | Modelo base, publico |
-| `arthrod/v1-deberta_large-token_level-1-7` | GLiNER / DeBERTa-v3-large | no disponible | token_level | no disponible | HuggingFace, pesos + ONNX |
+| `arthrod/v1-deberta_large-token_level-1-7` | GLiNER / DeBERTa-v3-large | no disponible | token_level | no disponible | Hugging Face, pesos + ONNX |
 
 La comparacion cuantitativa de rendimiento entre estas alternativas no esta disponible, ya que no se publicaron metricas F1 para este run. Los datos comparables se limitan a arquitectura, contexto y licencia.
 
@@ -92,7 +92,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthrod/attempt_vanilla
+- Modelo en Hugging Face: https://huggingface.co/arthrod/attempt_vanilla
 - Modelo base: https://huggingface.co/knowledgator/gliner-pii-large-v1.0
 - Segundo modelo base (top-up): https://huggingface.co/knowledgator/gliner-multitask-v1.0
 - Organizacion knowledgator: https://huggingface.co/knowledgator

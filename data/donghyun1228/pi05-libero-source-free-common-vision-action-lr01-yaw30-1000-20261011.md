@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento publicados para este checkpoint, por lo qu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-source-free-common-vision-action-lr01-yaw30-1000-20261011 | no disponible | no disponible | no publicado por el autor | no disponible | HuggingFace |
+| pi05-libero-source-free-common-vision-action-lr01-yaw30-1000-20261011 | no disponible | no disponible | no publicado por el autor | no disponible | Hugging Face |
 | Otras politicas VLA de la familia openpi/pi0.5 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de la misma categoria (VLA para LIBERO) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -75,14 +75,14 @@ No se dispone de datos de rendimiento publicados para este checkpoint, por lo qu
 - No se declara licencia, por lo que el uso comercial queda sin autorización clara y no debería asumirse permitido.
 - El modelo está diseñado para entornos de simulación LIBERO con MuJoCo 3.2.3; no hay evidencia de transferencia a robots físicos.
 - No se documentan idiomas soportados ni longitud de contexto, lo que limita el análisis de capacidades multilingües o de instrucciones largas.
-- El autor advierte que la fuente legacy no tiene una referencia pública verificada en HuggingFace dentro de sus registros, aunque todos los pesos de despliegue se incluyen en este repositorio; los caminos locales de los registros documentan procedencia, lo que puede dificultar la trazabilidad externa.
+- El autor advierte que la fuente legacy no tiene una referencia pública verificada en Hugging Face dentro de sus registros, aunque todos los pesos de despliegue se incluyen en este repositorio; los caminos locales de los registros documentan procedencia, lo que puede dificultar la trazabilidad externa.
 - El estado del optimizador no está incluido, por lo que reanudar el entrenamiento exactamente desde el paso 999 no es posible con este artefacto.
 - No hay métricas de sesgo, alucinación o robustez, ya que se trata de una política de acción y no de un modelo generativo de texto.
 - Cero descargas y cero "likes" en el momento de la consulta: no existe validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-lr01-yaw30-1000-20261011
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-lr01-yaw30-1000-20261011
 - Repositorio de la librería openpi referenciada por el modelo: https://github.com/PhysicalIntelligence/openpi
 - Commit de código indicado en la model card: `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08` (sin URL pública verificada en la información disponible)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

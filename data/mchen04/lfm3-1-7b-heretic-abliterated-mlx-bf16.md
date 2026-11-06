@@ -86,7 +86,7 @@ La comparacion con modelos de otros fabricantes del mismo rango (por ejemplo, fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mchen04/LFM3-1.7B-Heretic-Abliterated-MLX-bf16
+- Modelo en Hugging Face: https://huggingface.co/mchen04/LFM3-1.7B-Heretic-Abliterated-MLX-bf16
 - Modelo fuente (Vortecks): https://huggingface.co/Vortecks/LFM3-1.7B-Heretic-Abliterated
 - Modelo base (Liquid AI): https://huggingface.co/LiquidAI/LFM3-1.7B
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

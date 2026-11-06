@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`varunnic1112/contrastive-run367` es un prototipo de investigación publicado en HuggingFace por el usuario varunnic1112. Se trata de una implementación de arquitectura Perceiver orientada a tareas de aprendizaje contrastivo, distribuida junto con un script ejecutable (`run.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo entrenado.
+`varunnic1112/contrastive-run367` es un prototipo de investigación publicado en Hugging Face por el usuario varunnic1112. Se trata de una implementación de arquitectura Perceiver orientada a tareas de aprendizaje contrastivo, distribuida junto con un script ejecutable (`run.py`), un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo entrenado.
 
 El dato objetivo más relevante es su tamaño: 49.600 parámetros totales según el fichero safetensors, lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable en producción. El autor etiqueta la escala del setup como "giant", pero esa etiqueta corresponde a un identificador de configuración generado, no a un recuento real de parámetros. El repositorio no reclama ninguna puntuación de benchmark y advierte explícitamente que el checkpoint no ha sido entrenado ni auditado.
 
@@ -71,9 +71,9 @@ La información proporcionada no incluye modelos comparables con métricas verif
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| contrastive-run367 (este) | 49.600 | no disponible | apache-2.0 | HuggingFace, checkpoint sin entrenar |
+| contrastive-run367 (este) | 49.600 | no disponible | apache-2.0 | Hugging Face, checkpoint sin entrenar |
 | Perceiver IO (DeepMind) | no disponible en la informacion | entrada de longitud arbitraria | apache-2.0 (referencia) | repositorio oficial de DeepMind |
-| Otros prototipos contrastivos de la comunidad | no disponible | no disponible | variable | HuggingFace |
+| Otros prototipos contrastivos de la comunidad | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento de ninguna de las alternativas para establecer una comparación cuantitativa.
 
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento de ninguna de las alternativas para establ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/varunnic1112/contrastive-run367
+- Hugging Face: https://huggingface.co/varunnic1112/contrastive-run367
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.
 - Demo o espacio interactivo: no disponible en la información proporcionada.

@@ -85,7 +85,7 @@ La comparativa se ofrece a titulo orientativo; los datos del modelo objeto de la
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| ABD3ID-LLM-24B | 24B (segun id) | no disponible | Apache 2.0 | Islamico / arabe, ajuste sobre base no identificada | HuggingFace, 0 descargas, sin benchmarks publicos |
+| ABD3ID-LLM-24B | 24B (segun id) | no disponible | Apache 2.0 | Islamico / arabe, ajuste sobre base no identificada | Hugging Face, 0 descargas, sin benchmarks publicos |
 | Mistral Small 3 / 3.1 | 24B | 128k | Apache 2.0 | Generalista multilingue, con function calling | Ampliamente desplegado, versiones GGUF y cuantizadas |
 | Gemma 3 27B | 27B | 128k | Licencia Gemma (uso condicionado) | Generalista multilingue, multimodal | Ampliamente desplegado |
 | Aya Expanse 32B | 32B | 128k | CC-BY-NC 4.0 (no comercial) | Multilingue con enfasis en arabe y otras lenguas | Pesos abiertos con restriccion comercial |
@@ -109,7 +109,7 @@ Frente a estas alternativas, ABD3ID-LLM-24B solo aporta ventaja potencial en esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abdallah3id/ABD3ID-LLM-24B
+- Repositorio en Hugging Face: https://huggingface.co/abdallah3id/ABD3ID-LLM-24B
 - Perfil de GitHub del desarrollador: https://github.com/ABDEID-dev
 - Paper tecnico: no disponible
 - Blog o articulo de presentacion: no disponible

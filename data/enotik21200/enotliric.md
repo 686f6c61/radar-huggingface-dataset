@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Enotliric es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario enotik21200 en HuggingFace. Se trata de un modelo derivado de la familia Qwen3, que emplea una arquitectura transformer densa de aproximadamente 4 mil millones de parametros, orientado especificamente al idioma ruso segun los metadatos de la model card. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las de dicha licencia.
+Enotliric es un ajuste fino (fine-tune) del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario enotik21200 en Hugging Face. Se trata de un modelo derivado de la familia Qwen3, que emplea una arquitectura transformer densa de aproximadamente 4 mil millones de parametros, orientado especificamente al idioma ruso segun los metadatos de la model card. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las de dicha licencia.
 
 La relevancia de este modelo es limitada pero concreta: proporciona una variante afinada de un modelo base ya capaz y de tamano contenido, lo que lo hace desplegable en hardware de consumo. Sin embargo, la model card publicada es extremadamente escasa (unicamente metadatos de licencia, idioma y modelo base), sin informacion sobre datos de entrenamiento, hiperparametros, benchmarks ni metodologia de ajuste.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Enotliric | ~4B (heredado) | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | no disponible en esta ficha | Apache 2.0 | HuggingFace (modelo base oficial) |
+| Enotliric | ~4B (heredado) | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | no disponible en esta ficha | Apache 2.0 | Hugging Face (modelo base oficial) |
 | Otros fine-tunes de Qwen3-4B para ruso | ~4B | no disponible | variable | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de benchmarks que permitan una comparacion cuantitativa con alternativas.
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo ni de benchmarks que permitan 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/enotik21200/enotliric
+- Hugging Face: https://huggingface.co/enotik21200/enotliric
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

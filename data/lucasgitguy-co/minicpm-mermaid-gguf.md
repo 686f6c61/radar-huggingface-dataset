@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas (contexto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-gguf
+- Repositorio Hugging Face: https://huggingface.co/Lucasgitguy-co/minicpm-mermaid-gguf
 - Dataset relacionado (texto e imágenes de diagramas): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-diagram-text-images
 - Dataset relacionado (texto en inglés y neerlandés): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-text-en-nl

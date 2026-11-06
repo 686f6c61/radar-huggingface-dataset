@@ -23,7 +23,7 @@ Su relevancia practica es doble: por un lado, ofrece un caso de estudio de ajust
 | Modelo base | `unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit` |
 | Dataset de ajuste | `fwizzer1/fwizzer-v3-titan-agentic` (18.743 trayectorias) |
 | Pipeline | text-generation |
-| Fecha de creacion / actualizacion | 11/09/2026 / 12/09/2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 11/09/2026 / 12/09/2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks, contexto o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fwizzer1/Fwizzer-R1-3B-RU-v3
+- Modelo en Hugging Face: https://huggingface.co/fwizzer1/Fwizzer-R1-3B-RU-v3
 - Dataset de ajuste: https://huggingface.co/datasets/fwizzer1/fwizzer-v3-titan-agentic
 - Modelo base: https://huggingface.co/unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit
 - Version anterior (base de pesos del ajuste continuado): https://huggingface.co/fwizzer1/Fwizzer-R1-3B-RU-v2

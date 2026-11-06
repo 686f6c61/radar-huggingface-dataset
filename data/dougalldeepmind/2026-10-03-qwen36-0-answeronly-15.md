@@ -79,7 +79,7 @@ No disponible. El artefacto no declara métricas ni una categoría de comparaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-03-qwen36-0-answeronly-15
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-03-qwen36-0-answeronly-15
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-10-03-answeronly-15-mix
 - Repositorio fuente del experimento: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (commit `dd2d9df3862df9474482d7778e8aaef8095eaff7`)
 - Modelo base: Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)

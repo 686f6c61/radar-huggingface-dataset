@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`hadesoverflow/disease_leaf_tomato` es un repositorio publicado en HuggingFace por el usuario `hadesoverflow` que contiene pesos en formato ONNX y ocupa aproximadamente 0,2 GB. La model card asociada está practicamente vacia: el unico contenido es la declaracion de licencia MIT. No se especifica tarea, arquitectura, conjunto de entrenamiento, metricas ni procedimiento de inferencia.
+`hadesoverflow/disease_leaf_tomato` es un repositorio publicado en Hugging Face por el usuario `hadesoverflow` que contiene pesos en formato ONNX y ocupa aproximadamente 0,2 GB. La model card asociada está practicamente vacia: el unico contenido es la declaracion de licencia MIT. No se especifica tarea, arquitectura, conjunto de entrenamiento, metricas ni procedimiento de inferencia.
 
 Por el identificador del repositorio (`disease_leaf_tomato`) cabe inferir, sin confirmacion por parte del autor, que se trata de un modelo de vision por computador orientado a la clasificacion de enfermedades en hojas de tomate. Esta inferencia no esta respaldada por documentacion alguna en el repositorio.
 
-La relevancia actual del modelo es limitada: registra 0 descargas y 0 "likes" en el momento de la consulta, no dispone de pipeline declarado en HuggingFace y no se ha publicado ningun resultado de evaluacion. Se incluye en esta ficha unicamente como inventario tecnico de un artefacto ONNX sin documentar.
+La relevancia actual del modelo es limitada: registra 0 descargas y 0 "likes" en el momento de la consulta, no dispone de pipeline declarado en Hugging Face y no se ha publicado ningun resultado de evaluacion. Se incluye en esta ficha unicamente como inventario tecnico de un artefacto ONNX sin documentar.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No disponible. El repositorio no publica arquitectura, numero de parametros ni m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hadesoverflow/disease_leaf_tomato | no disponible | no aplica | MIT | HuggingFace (ONNX) |
+| hadesoverflow/disease_leaf_tomato | no disponible | no aplica | MIT | Hugging Face (ONNX) |
 | ResNet-50 | 25,6 M | no aplica | BSD / Apache segun implementacion | Amplia |
 | EfficientNet-B0 | 5,3 M | no aplica | Apache 2.0 (implementacion de referencia) | Amplia |
 | MobileNetV3-Large | 5,4 M | no aplica | Apache 2.0 (implementacion de referencia) | Amplia |
@@ -88,5 +88,5 @@ No disponible. El repositorio no publica arquitectura, numero de parametros ni m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hadesoverflow/disease_leaf_tomato
+- Repositorio en Hugging Face: https://huggingface.co/hadesoverflow/disease_leaf_tomato
 - No se han encontrado en la busqueda web articulos, papers, repositorios de codigo, demos ni entradas de blog relacionados con este modelo. Los resultados devueltos por la busqueda no guardan relacion con el artefacto y no se incluyen.

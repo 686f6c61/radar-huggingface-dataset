@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-vanilla-d10 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace. Se trata del checkpoint final original empleado en la escalera de escalado sobre FineWeb del artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". El autor lo describe como la variante "vanilla" en la coordenada de profundidad d10, es decir, el punto de referencia sin recursión ni operadores de frontera del estudio, con un modo de profundidad configurado como `none` y una única repetición del núcleo.
+loop-vanilla-d10 es un modelo de lenguaje base (sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face. Se trata del checkpoint final original empleado en la escalera de escalado sobre FineWeb del artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". El autor lo describe como la variante "vanilla" en la coordenada de profundidad d10, es decir, el punto de referencia sin recursión ni operadores de frontera del estudio, con un modo de profundidad configurado como `none` y una única repetición del núcleo.
 
 Arquitectónicamente es un transformer decoder-only, aunque el artefacto no se corresponde con un `AutoModel` de la librería Transformers: se distribuye como checkpoint PyTorch de un modelo `TransformerGPT` propio del código del artículo. Almacena 331.939.840 parámetros en FP32 (1,328 GB), con una anchura de 1280, 10 cabezas de atención, vocabulario GPT-2 de 50.257 tokens (ampliado a 50.304 filas) y una longitud de contexto de 2.048 tokens. Está entrenado exclusivamente en inglés sobre FineWeb.
 
@@ -27,7 +27,7 @@ Su relevancia es fundamentalmente de investigación: sirve como punto de partida
 | Corpus de entrenamiento | HuggingFaceFW/fineweb |
 | NLL de validacion (preentrenamiento) | 3,156175 nats/token |
 | Coordenada de profundidad | d10 (coordenada de escalado; no equivale necesariamente al número de bloques Transformer ejecutados) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -107,7 +107,7 @@ La diferencia principal de loop-vanilla-d10 frente a alternativas consolidadas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-vanilla-d10
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-vanilla-d10
 - Codebase del artículo: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Artículo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (no se ha encontrado enlace directo en la información proporcionada)

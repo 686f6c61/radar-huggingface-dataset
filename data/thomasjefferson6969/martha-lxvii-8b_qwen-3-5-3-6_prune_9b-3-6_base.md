@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MARTHA-LXVII.8B es un modelo de lenguaje multimodal de aproximadamente 8.000 millones de parámetros, desarrollado por Zero Point Intelligence y publicado en HuggingFace bajo el usuario ThomasJefferson6969. Se presenta como una versión podada (pruned) de un Qwen3.5 9B, re-entrenada para conservar una personalidad definida y un comportamiento deliberadamente "sin censura", orientado a roleplaying, escritura de ficción y narración creativa. Es la hermana pequeña del modelo MARTHA-LXVIII.20B, del que hereda el enfoque de diseño pero con una huella de memoria significativamente menor.
+MARTHA-LXVII.8B es un modelo de lenguaje multimodal de aproximadamente 8.000 millones de parámetros, desarrollado por Zero Point Intelligence y publicado en Hugging Face bajo el usuario ThomasJefferson6969. Se presenta como una versión podada (pruned) de un Qwen3.5 9B, re-entrenada para conservar una personalidad definida y un comportamiento deliberadamente "sin censura", orientado a roleplaying, escritura de ficción y narración creativa. Es la hermana pequeña del modelo MARTHA-LXVIII.20B, del que hereda el enfoque de diseño pero con una huella de memoria significativamente menor.
 
 El modelo utiliza una arquitectura híbrida en la que solo cada cuarta capa emplea atención completa, lo que reduce el coste de la caché KV y permite una ventana de contexto de 32.768 tokens. Incluye un proyector de visión experimental (mmproj) que le permite procesar imágenes, aunque la integración visión-lenguaje no está tan pulida como en el modelo de 20B. Se distribuye bajo licencia Apache 2.0, soporta inglés y chino, y está pensado para ejecutarse en GPUs de consumo, con cuantizaciones GGUF que van desde Q2 hasta Q6_K.
 
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia de MA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThomasJefferson6969/MARTHA-LXVII.8B_QWEN-3.5-3.6_prune_9b-3.6_base
+- Modelo en Hugging Face: https://huggingface.co/ThomasJefferson6969/MARTHA-LXVII.8B_QWEN-3.5-3.6_prune_9b-3.6_base
 - Modelo hermano (20B): https://huggingface.co/ZERO-POINT-AI/MARTHA-LXVIII.20b

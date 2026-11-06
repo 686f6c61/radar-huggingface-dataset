@@ -6,7 +6,7 @@ IOC-NN para CIFAR-10 es un modelo de clasificación de imágenes de muy pequeno 
 
 La particularidad tecnica del modelo es la restriccion IOC (Input Convex Neural Network): los pesos de las capas 2 y 3 son no negativos, de modo que cada logit es una funcion convexa de la entrada. Esto lo convierte en un ejemplo didactico de ICNN aplicado a vision, con garantias de convexidad respecto a la entrada que pueden explotarse en optimizacion y analisis de robustez.
 
-El modelo resuelve exclusivamente la tarea de clasificacion de CIFAR-10 y su relevancia practica es limitada: alcanza un 47,98 % de accuracy en test, muy por debajo de los modelos convolucionales modernos. Su interes es academico y educativo, y el repositorio no incluye pesos en formato estandar de HuggingFace ni pipeline declarado.
+El modelo resuelve exclusivamente la tarea de clasificacion de CIFAR-10 y su relevancia practica es limitada: alcanza un 47,98 % de accuracy en test, muy por debajo de los modelos convolucionales modernos. Su interes es academico y educativo, y el repositorio no incluye pesos en formato estandar de Hugging Face ni pipeline declarado.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Accuracy CIFAR-10 test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (este modelo) | 402.826 | 32x32x3 fija | 0,4798 | no disponible | HuggingFace, pesos `.npz` |
+| IOC-NN (este modelo) | 402.826 | 32x32x3 fija | 0,4798 | no disponible | Hugging Face, pesos `.npz` |
 | MLP estandar de tamano similar | no disponible | 32x32x3 fija | no disponible | no disponible | no disponible |
 | CNN pequena tipo LeNet | no disponible | 32x32x3 fija | no disponible | no disponible | no disponible |
 | ResNet-18 | no disponible | 32x32x3 fija | no disponible | no disponible | no disponible |
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 - Rendimiento limitado: 47,98 % de accuracy en test frente a mas del 90 % habitual en CNN modernas sobre CIFAR-10; no es apto para produccion.
 - Entrada fija: solo acepta imagenes de 32x32x3 aplanadas en orden altura, anchura, canal; cualquier otro formato requiere reentrenamiento.
 - Sin licencia declarada: no se especifican terminos de uso comercial, por lo que no debe asumirse permiso de uso en produccion.
-- Repositorio de 0,0 GB segun HuggingFace, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el tamano se redondea; conviene verificar la presencia real de `model.npz`, `preprocessing.npz` y `config.json`.
+- Repositorio de 0,0 GB segun Hugging Face, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el tamano se redondea; conviene verificar la presencia real de `model.npz`, `preprocessing.npz` y `config.json`.
 - Dependencia de la biblioteca de la asignatura: la carga requiere la implementacion NumPy del cuaderno de SMAI, no disponible como paquete estandar.
 - Riesgo de sobreajuste: la brecha entre accuracy de entrenamiento (0,8347) y de test (0,4798) es de aproximadamente 35 puntos porcentuales.
 - Sesgos: no documentados; al entrenarse solo con CIFAR-10, hereda los sesgos de ese dataset (clases desbalanceadas en escenarios reales, imagenes de baja resolucion).
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bonda007/smai-a4-cifar10-ioc-nn
+- Hugging Face: https://huggingface.co/bonda007/smai-a4-cifar10-ioc-nn
 - Dataset CIFAR-10 referenciado: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

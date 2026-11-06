@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WazoCore-8B-v6-long-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo mkbadeniyi/WazoCore-8B-v6-long, publicada por mradermacher, un cuantizador conocido por su extenso catálogo de modelos GGUF en HuggingFace. El modelo base es un modelo de 8.153 millones de parámetros basado en la arquitectura Llama 3, especializado en lenguas nigerianas de bajos recursos: yoruba (yo), hausa (ha) e igbo (ig), además del inglés (en). Su pipeline principal en HuggingFace es la traducción, y destaca por incorporar expansión de vocabulario (vocabulary-expansion) mediante un tokenizador BPE adaptado a estas lenguas, algo poco habitual en modelos derivados de Llama 3.
+WazoCore-8B-v6-long-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo mkbadeniyi/WazoCore-8B-v6-long, publicada por mradermacher, un cuantizador conocido por su extenso catálogo de modelos GGUF en Hugging Face. El modelo base es un modelo de 8.153 millones de parámetros basado en la arquitectura Llama 3, especializado en lenguas nigerianas de bajos recursos: yoruba (yo), hausa (ha) e igbo (ig), además del inglés (en). Su pipeline principal en Hugging Face es la traducción, y destaca por incorporar expansión de vocabulario (vocabulary-expansion) mediante un tokenizador BPE adaptado a estas lenguas, algo poco habitual en modelos derivados de Llama 3.
 
 La relevancia de este modelo radica en la escasez de modelos abiertos que cubran lenguas africanas de bajos recursos con calidad razonable. La versión "long" sugiere un enfoque en contextos extendidos, aunque la longitud exacta de ventana no está documentada en la información disponible. El modelo base se entrenó usando el dataset google/smol, y la licencia aplicada es la n-atlas-open-source-research-and-innovation-license, una licencia de investigación e innovación que impone restricciones a revisar antes de cualquier uso comercial.
 
@@ -31,7 +31,7 @@ Las cuantizaciones GGUF incluidas en este repositorio son estáticas, generadas 
 
 ## Capacidades
 
-- Traducción entre yoruba, hausa, igbo e inglés: es la capacidad principal declarada (pipeline de traducción en HuggingFace).
+- Traducción entre yoruba, hausa, igbo e inglés: es la capacidad principal declarada (pipeline de traducción en Hugging Face).
 - Generación de texto conversacional: el repositorio está etiquetado como "conversational", lo que indica soporte de formato de chat.
 - Manejo de lenguas de bajos recursos: gracias a la expansión de vocabulario, procesa texto con diacríticos tonales del yoruba y las ortografías del hausa e igbo de forma más eficiente que un tokenizador estándar de Llama 3.
 - Comprensión y generación en inglés: al derivar de Llama 3, conserva capacidades generales en inglés, aunque el grado de retención tras el fine-tuning no está documentado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Uni-MuMER-Qwen3.5-2B-GGUF es la versión cuantizada en formato GGUF del modelo Uni-MuMER-Qwen3.5-2B, un modelo visión-lenguaje de aproximadamente 1.880 millones de parámetros (1.881.825.088 según los pesos en safetensors) especializado en reconocimiento óptico de matemáticas manuscritas (handwritten math OCR) y conversión a LaTeX. El modelo original lo desarrolla el usuario phxember, mientras que esta reedición en GGUF la produce mradermacher, un conocido cuantizador de la comunidad de HuggingFace. La relevancia de esta ficha radica en que permite ejecutar un modelo multimodal especializado en hardware modesto, algo poco habitual en el nicho de OCR matemático.
+Uni-MuMER-Qwen3.5-2B-GGUF es la versión cuantizada en formato GGUF del modelo Uni-MuMER-Qwen3.5-2B, un modelo visión-lenguaje de aproximadamente 1.880 millones de parámetros (1.881.825.088 según los pesos en safetensors) especializado en reconocimiento óptico de matemáticas manuscritas (handwritten math OCR) y conversión a LaTeX. El modelo original lo desarrolla el usuario phxember, mientras que esta reedición en GGUF la produce mradermacher, un conocido cuantizador de la comunidad de Hugging Face. La relevancia de esta ficha radica en que permite ejecutar un modelo multimodal especializado en hardware modesto, algo poco habitual en el nicho de OCR matemático.
 
 El modelo se construye sobre una base Qwen3.5-2B, lo que le aporta la arquitectura transformer multimodal del linaje Qwen, con un proyector multimodal (mmproj) separado que se distribuye como fichero adicional en los repositorios GGUF. El propósito concreto es transcribir expresiones matemáticas escritas a mano a código LaTeX, una tarea con aplicaciones directas en digitalización de apuntes, investigación y educación.
 

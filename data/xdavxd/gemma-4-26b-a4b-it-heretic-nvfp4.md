@@ -66,10 +66,10 @@ Los valores del resto de las métricas no están disponibles.
 
 | Modelo | Params totales | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/gemma-4-26B-A4B-it | 25.8B | No especificado | No (modelo original) | No especificada en la información disponible | HuggingFace |
-| coder3101/gemma-4-26B-A4B-it-heretic | 25.8B | No especificado | No (variante ARA) | Apache-2.0 (según model card) | HuggingFace |
-| xdavxd/gemma-4-26B-A4B-it-heretic-NVFP4 (este modelo) | 25.8B | 32768 (ejemplo) | NVFP4 | Apache-2.0 (según model card) | HuggingFace |
-| xdavxd/gemma-4-26B-A4B-it-heretic-v2-NVFP4 | 25.8B | No especificado | NVFP4 mejorada | Apache-2.0 (según model card) | HuggingFace |
+| google/gemma-4-26B-A4B-it | 25.8B | No especificado | No (modelo original) | No especificada en la información disponible | Hugging Face |
+| coder3101/gemma-4-26B-A4B-it-heretic | 25.8B | No especificado | No (variante ARA) | Apache-2.0 (según model card) | Hugging Face |
+| xdavxd/gemma-4-26B-A4B-it-heretic-NVFP4 (este modelo) | 25.8B | 32768 (ejemplo) | NVFP4 | Apache-2.0 (según model card) | Hugging Face |
+| xdavxd/gemma-4-26B-A4B-it-heretic-v2-NVFP4 | 25.8B | No especificado | NVFP4 mejorada | Apache-2.0 (según model card) | Hugging Face |
 
 ## Limitaciones y advertencias
 

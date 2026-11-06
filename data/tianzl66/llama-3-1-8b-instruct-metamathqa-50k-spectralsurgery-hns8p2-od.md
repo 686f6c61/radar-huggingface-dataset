@@ -63,7 +63,7 @@ La configuracion publicada en este repositorio (HNS 8+2 sobre `o_proj` y `down_p
 - VRAM estimada: el adaptador LoRA anade aproximadamente 0,2 GB a los pesos del modelo base. Para inferencia con Llama-3.1-8B-Instruct en precision FP16 se necesitan alrededor de 16 GB de VRAM; con cuantizacion de 4 bits, unos 6-8 GB.
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16; GPUs con 8 GB o mas para cuantizacion 4-bit.
 - Compatibilidad con GPU de consumo: si, el modelo base en 4-bit con el adaptador cabe en GPUs consumer de gama media-alta.
-- Opciones de despliegue: el adaptador PEFT se puede cargar con la libreria `peft` de HuggingFace sobre el modelo base. Para inferencia optimizada, se puede usar vLLM o TGI con soporte de adaptadores LoRA. Para entornos locales, llama.cpp u Ollama con cuantizacion GGUF del modelo base y el adaptador convertido.
+- Opciones de despliegue: el adaptador PEFT se puede cargar con la libreria `peft` de Hugging Face sobre el modelo base. Para inferencia optimizada, se puede usar vLLM o TGI con soporte de adaptadores LoRA. Para entornos locales, llama.cpp u Ollama con cuantizacion GGUF del modelo base y el adaptador convertido.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares

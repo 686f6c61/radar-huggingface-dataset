@@ -13,7 +13,7 @@ Su relevancia es documental más que técnica: sirve como plantilla de metodolog
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | no disponible (no se describe ninguna; el repositorio es una nota de investigación, no un modelo) |
-| Parámetros totales | 24.832 según los metadatos de safetensors de la ficha de HuggingFace; magnitud incompatible con un modelo funcional y no verificable en la documentación del autor |
+| Parámetros totales | 24.832 según los metadatos de safetensors de la ficha de Hugging Face; magnitud incompatible con un modelo funcional y no verificable en la documentación del autor |
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
@@ -43,7 +43,7 @@ No hay datos de entrenamiento: ni número de tokens, ni composición del dataset
 - Material de lectura para literatura gris: útil para quien quiera ver cómo se formula una pregunta de investigación sobre destilación y qué confusores se anticipan, sin esperar cifras de rendimiento.
 - Revisión por pares ligera: el documento permite a un revisor detectar afirmaciones no respaldadas, ya que el propio autor marca qué secciones son planes y no resultados.
 - Estudio de licenciamiento abierto: al publicarse bajo cc-by-4.0, sirve como ejemplo de nota de investigación reutilizable con atribución en contextos académicos o divulgativos.
-- Referencia para la gestión de expectativas en HuggingFace: el caso ilustra el riesgo de interpretar etiquetas como `safetensors` o "parámetros totales" como indicios de un modelo real cuando el repositorio es solo documentación.
+- Referencia para la gestión de expectativas en Hugging Face: el caso ilustra el riesgo de interpretar etiquetas como `safetensors` o "parámetros totales" como indicios de un modelo real cuando el repositorio es solo documentación.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ No disponible. No existe una categoría de modelos comparables, porque este repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuxuanLyl/ml-knowledge-distillation
+- Hugging Face: https://huggingface.co/YuxuanLyl/ml-knowledge-distillation
 - Repositorio (ficheros internos): `notes.md` y `README.md`, accesibles desde la URL anterior
 - Paper, blog, repositorio de código o demo: no disponible
 - Enlaces adicionales: no se han encontrado enlaces relevantes en la búsqueda web; los resultados obtenidos no guardan relación con el repositorio ni con destilación de conocimiento, por lo que se descartan.

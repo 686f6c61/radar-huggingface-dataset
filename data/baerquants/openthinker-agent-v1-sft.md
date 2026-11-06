@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenThinker-Agent-v1-SFT es un modelo de 8.000 millones de parámetros especializado en tareas de agente, desarrollado por el proyecto OpenThoughts y publicado originalmente bajo el identificador `open-thoughts/OpenThinker-Agent-v1-SFT`. La ficha analizada corresponde a una recarga del mismo checkpoint realizada por el usuario `baerquants` en HuggingFace. El modelo parte de `Qwen/Qwen3-8B` y se ha ajustado mediante supervisión fina (SFT) sobre el conjunto de datos OpenThoughts-Agent-v1-SFT, compuesto por aproximadamente 15.200 trazas de agente generadas por profesores fuertes.
+OpenThinker-Agent-v1-SFT es un modelo de 8.000 millones de parámetros especializado en tareas de agente, desarrollado por el proyecto OpenThoughts y publicado originalmente bajo el identificador `open-thoughts/OpenThinker-Agent-v1-SFT`. La ficha analizada corresponde a una recarga del mismo checkpoint realizada por el usuario `baerquants` en Hugging Face. El modelo parte de `Qwen/Qwen3-8B` y se ha ajustado mediante supervisión fina (SFT) sobre el conjunto de datos OpenThoughts-Agent-v1-SFT, compuesto por aproximadamente 15.200 trazas de agente generadas por profesores fuertes.
 
 El objetivo del modelo es ejecutar tareas agénticas de terminal e ingeniería de software: formatear comandos de shell, resolver bugs en repositorios reales, operar herramientas y encadenar pasos multi-turno. Es la etapa intermedia de una pipeline de dos fases; la versión final, `OpenThinker-Agent-v1`, añade un entrenamiento por refuerzo sobre OpenThoughts-Agent-v1-RL.
 
@@ -17,7 +17,7 @@ Su relevancia actual radica en que demuestra que un modelo de 8B puede obtener m
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada. El modelo base Qwen3-8B opera con 32.768 tokens nativos, ampliables a 131.072 mediante YaRN |
 | Tipos de cuantizacion | No disponible; los pesos se distribuyen en safetensors sin cuantizar. Existen cuantizaciones GGUF, AWQ y GPTQ de terceros para el modelo base, no publicadas por este repositorio |
-| Idiomas soportados | No disponibles (campo vacío en la ficha de HuggingFace). Los datos de entrenamiento son mayoritariamente en inglés |
+| Idiomas soportados | No disponibles (campo vacío en la ficha de Hugging Face). Los datos de entrenamiento son mayoritariamente en inglés |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors, librería transformers |
 
@@ -69,18 +69,18 @@ La model card incluye una tabla de resultados que corresponde a `OpenThinker-Age
 - GPU de centro de datos recomendadas: A100 40 GB u 80 GB, H100 80 GB, L40S 48 GB, con margen para lotes mayores y contextos largos.
 - GPU de consumo: cabe en RTX 4090 o RTX 3090 de 24 GB en bf16 con batch 1 y contexto contenido; en equipos de 16 GB (RTX 4060 Ti 16 GB, RTX 4070 Ti Super) es necesario recurrir a cuantización de 4-5 bits.
 - En GPU de 8-12 GB solo es viable con cuantizaciones GGUF de 4 bits y contexto reducido.
-- Opciones de despliegue: vLLM, SGLang, HuggingFace Text Generation Inference (etiqueta oficial en el repositorio), transformers para uso directo y llama.cpp u Ollama previa conversión a GGUF.
+- Opciones de despliegue: vLLM, SGLang, Hugging Face Text Generation Inference (etiqueta oficial en el repositorio), transformers para uso directo y llama.cpp u Ollama previa conversión a GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Terminal-Bench 2.0 | SWE-Bench Verified | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenThinker-Agent-v1-SFT (este checkpoint) | ~8B (base Qwen3-8B); metadatos de safetensors inconsistentes | No disponible (base: 32.768 nativos) | Apache 2.0 | No publicado para la etapa SFT | No publicado para la etapa SFT | HuggingFace (recarga de baerquants; original en open-thoughts) |
-| OpenThinker-Agent-v1 (SFT + RL) | ~8B | No disponible | Apache 2.0 | 4.9 (Terminus-2) | 15.7 (Terminus-2) | HuggingFace (open-thoughts) |
-| Qwen3-8B | ~8B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | 0.0 (Terminus-2) | 0.7 (Terminus-2) | HuggingFace (Qwen) |
-| Qwen3-32B | ~32B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | 1.9 (Terminus-2) | 5.7 (Terminus-2) | HuggingFace (Qwen) |
-| Qwen3-Coder-30B-A3B-Instruct | ~30B totales, ~3B activos (MoE) | 32.768 nativos, 262.144 con YaRN | Apache 2.0 | 10.1 (OpenHands) | 49.2 (OpenHands) | HuggingFace (Qwen) |
+| OpenThinker-Agent-v1-SFT (este checkpoint) | ~8B (base Qwen3-8B); metadatos de safetensors inconsistentes | No disponible (base: 32.768 nativos) | Apache 2.0 | No publicado para la etapa SFT | No publicado para la etapa SFT | Hugging Face (recarga de baerquants; original en open-thoughts) |
+| OpenThinker-Agent-v1 (SFT + RL) | ~8B | No disponible | Apache 2.0 | 4.9 (Terminus-2) | 15.7 (Terminus-2) | Hugging Face (open-thoughts) |
+| Qwen3-8B | ~8B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | 0.0 (Terminus-2) | 0.7 (Terminus-2) | Hugging Face (Qwen) |
+| Qwen3-32B | ~32B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | 1.9 (Terminus-2) | 5.7 (Terminus-2) | Hugging Face (Qwen) |
+| Qwen3-Coder-30B-A3B-Instruct | ~30B totales, ~3B activos (MoE) | 32.768 nativos, 262.144 con YaRN | Apache 2.0 | 10.1 (OpenHands) | 49.2 (OpenHands) | Hugging Face (Qwen) |
 
 Las cifras de Terminal-Bench 2.0 y SWE-Bench Verified no son directamente comparables entre filas cuando el harness difiere (Terminus-2 frente a OpenHands). La comparación relevante para este checkpoint es con Qwen3-8B, ya que comparten base y harness.
 
@@ -99,7 +99,7 @@ Las cifras de Terminal-Bench 2.0 y SWE-Bench Verified no son directamente compar
 
 ## Enlaces
 
-- Modelo en HuggingFace (recarga analizada): https://huggingface.co/baerquants/OpenThinker-Agent-v1-SFT
+- Modelo en Hugging Face (recarga analizada): https://huggingface.co/baerquants/OpenThinker-Agent-v1-SFT
 - Modelo original SFT: https://huggingface.co/open-thoughts/OpenThinker-Agent-v1-SFT
 - Modelo tras SFT y RL: https://huggingface.co/open-thoughts/OpenThinker-Agent-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

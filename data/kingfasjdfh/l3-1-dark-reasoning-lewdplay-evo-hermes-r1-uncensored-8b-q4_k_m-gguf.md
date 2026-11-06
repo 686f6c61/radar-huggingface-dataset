@@ -87,7 +87,7 @@ La comparación de rendimiento no es posible porque no hay benchmarks publicados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingfasjdfh/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingfasjdfh/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/DavidAU/L3.1-Dark-Reasoning-LewdPlay-evo-Hermes-R1-Uncensored-8B
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -69,6 +69,6 @@ No se dispone de información comparativa con otros modelos de reconstrucción d
 
 ## Enlaces
 
-- Página de HuggingFace: [narudesuyo/AffHandGen](https://huggingface.co/narudesuyo/AffHandGen)
+- Página de Hugging Face: [narudesuyo/AffHandGen](https://huggingface.co/narudesuyo/AffHandGen)
 - Repositorio de código: [https://github.com/narudesuyo/AffHandGen](https://github.com/narudesuyo/AffHandGen)
 - Paper: arXiv:2510.00506 (enlace no proporcionado directamente, pero se puede buscar en arXiv)

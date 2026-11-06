@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dirk-Qwen3.8-27B-GSQ-RCO-IQ3_S-ninfer es una conversión de formato publicada por el usuario idntx en HuggingFace. Se trata de un artefacto derivado del modelo peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF, un fine-tune de la familia Qwen3 con 27.000 millones de parámetros, que a su vez procede de la arquitectura Qwen3. El repositorio no aporta pesos entrenados desde cero ni un proceso de ajuste propio: su única función declarada es la conversión del modelo base a un formato propietario denominado `.ninfer`, presumiblemente asociado a un motor de inferencia específico no documentado en la información disponible.
+Dirk-Qwen3.8-27B-GSQ-RCO-IQ3_S-ninfer es una conversión de formato publicada por el usuario idntx en Hugging Face. Se trata de un artefacto derivado del modelo peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF, un fine-tune de la familia Qwen3 con 27.000 millones de parámetros, que a su vez procede de la arquitectura Qwen3. El repositorio no aporta pesos entrenados desde cero ni un proceso de ajuste propio: su única función declarada es la conversión del modelo base a un formato propietario denominado `.ninfer`, presumiblemente asociado a un motor de inferencia específico no documentado en la información disponible.
 
 La relevancia de esta ficha es, por tanto, limitada y de carácter técnico-logístico. Resulta útil para quienes ya trabajan con el ecosistema de Dirk-Qwen3.8-27B y necesitan ejecutarlo en el runtime `.ninfer`, pero no aporta información sobre el comportamiento del modelo subyacente, sus datos de entrenamiento ni sus capacidades reales. La model card es extremadamente escueta (una sola línea: "Only convert to .ninfer") y no incluye benchmarks, especificaciones ni detalles de arquitectura.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| idntx/Dirk-Qwen3.8-27B-GSQ-RCO-IQ3_S-ninfer | 27B | no disponible | Apache 2.0 | `.ninfer` | HuggingFace (0 descargas) |
-| peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF | 27B | no disponible | Apache 2.0 (heredada) | GGUF | HuggingFace |
-| Qwen3 base (27B, si existe en la serie) | 27B | no disponible | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| idntx/Dirk-Qwen3.8-27B-GSQ-RCO-IQ3_S-ninfer | 27B | no disponible | Apache 2.0 | `.ninfer` | Hugging Face (0 descargas) |
+| peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF | 27B | no disponible | Apache 2.0 (heredada) | GGUF | Hugging Face |
+| Qwen3 base (27B, si existe en la serie) | 27B | no disponible | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/idntx/Dirk-Qwen3.8-27B-GSQ-RCO-IQ3_S-ninfer
+- Hugging Face: https://huggingface.co/idntx/Dirk-Qwen3.8-27B-GSQ-RCO-IQ3_S-ninfer
 - Modelo base (GGUF): https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF
 - Repositorio Qwen3 (referencia de la familia): no disponible en la información proporcionada.

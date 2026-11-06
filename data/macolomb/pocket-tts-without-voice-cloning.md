@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- [Repositorio HuggingFace: macolomb/pocket-tts-without-voice-cloning](https://huggingface.co/macolomb/pocket-tts-without-voice-cloning)
+- [Repositorio Hugging Face: macolomb/pocket-tts-without-voice-cloning](https://huggingface.co/macolomb/pocket-tts-without-voice-cloning)
 - [Modelo base: kyutai/pocket-tts-without-voice-cloning](https://huggingface.co/kyutai/pocket-tts-without-voice-cloning)
 - [Blog de Kyutai sobre Pocket TTS](https://kyutai.org/blog/2026-01-13-pocket-tts)
 - [Repositorio llama.cpp](https://github.com/ggml-org/llama.cpp)

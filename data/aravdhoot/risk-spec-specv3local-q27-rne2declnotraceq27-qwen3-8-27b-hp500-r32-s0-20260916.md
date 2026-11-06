@@ -103,7 +103,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rne2declnotraceq27-qwen3.8-27b-hp500-r32-s0-20260916
+- Repositorio en Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rne2declnotraceq27-qwen3.8-27b-hp500-r32-s0-20260916
 - Modelo base declarado en la model card (no verificado en la busqueda web): https://huggingface.co/Qwen/Qwen3.8-27B
 - Revision del modelo base declarada: `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las referencias devueltas corresponden a hilos de foros sobre la mediateca de ZDF y capturadoras de video VHS (digitalfernsehen.de y vlc-forum.de), sin relacion con este modelo.

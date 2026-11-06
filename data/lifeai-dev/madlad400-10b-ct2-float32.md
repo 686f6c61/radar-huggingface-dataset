@@ -74,7 +74,7 @@ La principal ventaja de MADLAD-400-10B frente a NLLB-200 es su mayor cobertura d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/LifeAi-dev/madlad400-10b-ct2-float32
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/LifeAi-dev/madlad400-10b-ct2-float32
 - Modelo original de Google: https://huggingface.co/google/madlad400-10b-mt
 - Paper arXiv: https://arxiv.org/abs/2309.04662
 - Repositorio de Google Research: https://github.com/google-research/google-research/tree/master/madlad_400

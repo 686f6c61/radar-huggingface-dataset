@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`myreign/oryncut-moulsot-browser` es un repositorio de modelo publicado en HuggingFace por el usuario `myreign`. La model card asociada no contiene descripcion alguna: unicamente incluye el bloque de metadatos YAML con la licencia `apache-2.0`. No se documenta el proposito del modelo, la tarea para la que fue entrenado, la arquitectura ni el volumen de parametros, por lo que no es posible determinar que problema resuelve ni por que seria relevante frente a alternativas existentes.
+`myreign/oryncut-moulsot-browser` es un repositorio de modelo publicado en Hugging Face por el usuario `myreign`. La model card asociada no contiene descripcion alguna: unicamente incluye el bloque de metadatos YAML con la licencia `apache-2.0`. No se documenta el proposito del modelo, la tarea para la que fue entrenado, la arquitectura ni el volumen de parametros, por lo que no es posible determinar que problema resuelve ni por que seria relevante frente a alternativas existentes.
 
 El repositorio presenta 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion registradas son identicas (2026-10-17T20:04:48.000Z), lo que apunta a una publicacion unica sin mantenimiento posterior. No se ha publicado informacion sobre arquitectura, tamano, ventana de contexto, datos de entrenamiento ni resultados de evaluacion.
 
@@ -46,7 +46,7 @@ Los siguientes escenarios son hipoteticos y solo podrian confirmarse tras inspec
 - Integracion en pipelines de extraccion de informacion: si el modelo resulta ser un transformer de texto, podria evaluarse en tareas de parsing de paginas y normalizacion de campos, midiendo primero la calidad frente a modelos con licencia similar.
 - Prototipado interno sin coste de licencia: al estar bajo Apache 2.0, puede desplegarse en entornos de desarrollo sin friccion legal, siempre que se valide antes su calidad real.
 - Pruebas de agentes multi-paso: si el repositorio incluye pesos funcionales, podria servir como sujeto de prueba en frameworks de agentes, comparando su tasa de exito frente a modelos documentados.
-- Investigacion sobre modelos de autor unico: util para estudiar practicas de publicacion en HuggingFace, dado que el repositorio carece de documentacion y de senales de uso.
+- Investigacion sobre modelos de autor unico: util para estudiar practicas de publicacion en Hugging Face, dado que el repositorio carece de documentacion y de senales de uso.
 - Servicio de inferencia autoalojado: la licencia permisiva permite desplegarlo con vLLM, llama.cpp u Ollama una vez identificado el formato de pesos y los requisitos de memoria.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No disponible. La ausencia de datos sobre parametros, contexto, tarea objetivo y
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| myreign/oryncut-moulsot-browser | no disponible | no disponible | no disponible | apache-2.0 | repositorio HuggingFace, 0 descargas |
+| myreign/oryncut-moulsot-browser | no disponible | no disponible | no disponible | apache-2.0 | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No disponible. La ausencia de datos sobre parametros, contexto, tarea objetivo y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myreign/oryncut-moulsot-browser
+- Hugging Face: https://huggingface.co/myreign/oryncut-moulsot-browser
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

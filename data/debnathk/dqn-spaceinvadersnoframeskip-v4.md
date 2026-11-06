@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `debnathk/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario `debnathk` en HuggingFace utilizando la librería stable-baselines3 y el marco de entrenamiento RL Zoo, que es el ecosistema de referencia para reproducir agentes de RL con hiperparámetros predefinidos. No se trata, por tanto, de un modelo de lenguaje: es una política de control discreta que recibe fotogramas del juego y devuelve una acción.
+El modelo `debnathk/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario `debnathk` en Hugging Face utilizando la librería stable-baselines3 y el marco de entrenamiento RL Zoo, que es el ecosistema de referencia para reproducir agentes de RL con hiperparámetros predefinidos. No se trata, por tanto, de un modelo de lenguaje: es una política de control discreta que recibe fotogramas del juego y devuelve una acción.
 
 El agente emplea una política `CnnPolicy` (red convolucional tipo Nature CNN sobre observaciones de 84x84x4 tras el preprocesado del `AtariWrapper` y un apilado de 4 fotogramas) y un total de 1.000.000 de pasos de entrenamiento. El repositorio ocupa 0,1 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| debnathk/dqn-SpaceInvadersNoFrameskip-v4 | DQN (off-policy, buffer de repeticion) | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | mean_reward 565,50 +/- 337,32 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| debnathk/dqn-SpaceInvadersNoFrameskip-v4 | DQN (off-policy, buffer de repeticion) | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | mean_reward 565,50 +/- 337,32 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Agentes de referencia de RL Zoo para el mismo entorno (DQN, PPO, A2C, QR-DQN) | diversos | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible en la informacion proporcionada | segun el repositorio de RL Zoo | RL Zoo incluye agentes preentrenados, aunque no se dispone de sus cifras en esta consulta |
 | Implementaciones propias de DQN en Atari (CleanRL, Dopamine) | DQN y variantes | suite Atari | no disponible | no aplica | no disponible en la informacion proporcionada | segun cada proyecto | codigo abierto, sin pesos preentrenados garantizados para este entorno |
 
@@ -88,7 +88,7 @@ No se dispone de datos numericos comparativos verificados en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debnathk/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/debnathk/dqn-SpaceInvadersNoFrameskip-v4
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Repositorio de RL Zoo (marco de entrenamiento): https://github.com/DLR-RM/rl-baselines3-zoo
 - stable-baselines3-contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-povl-dpo-2ep es un checkpoint de reconocimiento de tablas en imágenes publicado por el usuario CheneyWong en HuggingFace. Se trata de un ajuste fino mediante DPO (Direct Preference Optimization) sobre un SFT correctivo previo, con 2 épocas sobre 8.383 pares de preferencia. El objetivo declarado por el autor es pasar de una salida con "estructura aproximadamente correcta" a una con "estructura exactamente correcta" al emitir marcado OTSL (`<fcel> <ecel> <ucel> <lcel> <xcel> <nl>`).
+povl-dpo-2ep es un checkpoint de reconocimiento de tablas en imágenes publicado por el usuario CheneyWong en Hugging Face. Se trata de un ajuste fino mediante DPO (Direct Preference Optimization) sobre un SFT correctivo previo, con 2 épocas sobre 8.383 pares de preferencia. El objetivo declarado por el autor es pasar de una salida con "estructura aproximadamente correcta" a una con "estructura exactamente correcta" al emitir marcado OTSL (`<fcel> <ecel> <ucel> <lcel> <xcel> <nl>`).
 
-El modelo deriva de `CheneyWong/povl-sft-2d-merge`, que a su vez procede de PaddleOCR-VL-1.6 como base. La tarea es de un solo paso: se introduce una imagen de tabla junto con el prompt `Table Recognition:` y el modelo emite el marcado estructurado de la tabla. El pipeline registrado en HuggingFace es `image-text-to-text`, con 905.601.648 parámetros totales (aproximadamente 0,9 mil millones) y un repositorio de 1,8 GB.
+El modelo deriva de `CheneyWong/povl-sft-2d-merge`, que a su vez procede de PaddleOCR-VL-1.6 como base. La tarea es de un solo paso: se introduce una imagen de tabla junto con el prompt `Table Recognition:` y el modelo emite el marcado estructurado de la tabla. El pipeline registrado en Hugging Face es `image-text-to-text`, con 905.601.648 parámetros totales (aproximadamente 0,9 mil millones) y un repositorio de 1,8 GB.
 
 La relevancia de esta ficha es sobre todo metodológica: el propio autor documenta que la mejora obtenida queda dentro del ruido de muestreo (±0,5 puntos) y debe tratarse como "sin efecto". Es, por tanto, un ejemplo útil de publicación honesta de resultados negativos o neutros en el ámbito del ajuste por preferencias aplicado a modelos de visión-lenguaje para documentos.
 
@@ -81,8 +81,8 @@ Nota practica: al tratarse de un modelo de vision-lenguaje con codigo personaliz
 
 | Modelo | Parametros | Contexto | TEDS publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| povl-dpo-2ep | 905.601.648 | no disponible | 0,9419 (media igual peso, 5 datasets) | apache-2.0 | HuggingFace, 4 descargas |
-| povl-sft-2d-merge (predecesor) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado en la model card) |
+| povl-dpo-2ep | 905.601.648 | no disponible | 0,9419 (media igual peso, 5 datasets) | apache-2.0 | Hugging Face, 4 descargas |
+| povl-sft-2d-merge (predecesor) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado en la model card) |
 | PaddleOCR-VL-1.6 (base) | no disponible | no disponible | 0,8975 (media igual peso, mismas condiciones) | no disponible en esta informacion | no disponible en esta informacion |
 
 No se dispone en la informacion proporcionada de datos de rendimiento de otros modelos de reconocimiento de tablas (por ejemplo, alternativas de la misma categoria) que permitan una comparacion con numeros verificables. Cualquier comparacion adicional se marcaria como "no disponible".
@@ -102,11 +102,11 @@ No se dispone en la informacion proporcionada de datos de rendimiento de otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CheneyWong/povl-dpo-2ep
+- Hugging Face: https://huggingface.co/CheneyWong/povl-dpo-2ep
 - Predecesor directo (SFT correctivo): https://huggingface.co/CheneyWong/povl-sft-2d-merge
 - PaddleOCR-VL-1.6 (modelo base): enlace no disponible en la informacion proporcionada
 - Paper relacionado (contexto, no especifico de este modelo): Context Blindness in DPO: Mitigating Object Hallucination — https://arxiv.org/abs/2608.12158
 - Paper relacionado (contexto, no especifico de este modelo): VL-DPO: Vision-Language-Guided Finetuning for Preference-Aligned — https://arxiv.org/abs/2605.20082
-- Referencia de implementacion de DPO con LoRA en HuggingFace: https://huggingface.co/lewtun/dpo-model-lora
+- Referencia de implementacion de DPO con LoRA en Hugging Face: https://huggingface.co/lewtun/dpo-model-lora
 - Ranking de modelos de IA (contexto general, no especifico de este modelo): https://benchlm.ai/best/chinese-models
 - Repositorio de generacion de video Wan2GP (aparece en la busqueda, sin relacion con este modelo): https://github.com/lolvOid/Wan2GP

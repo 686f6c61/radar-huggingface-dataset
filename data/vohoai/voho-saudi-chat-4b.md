@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Voho Saudi Chat 4B es un modelo de lenguaje conversacional de 4.022 millones de parámetros, desarrollado por Voho (voho.ai) y publicado en HuggingFace con licencia Apache 2.0. Se trata de un ajuste fino mediante LoRA del modelo base Qwen/Qwen3-4B-Instruct-2507, orientado a un problema muy concreto: que un asistente de voz responda en árabe saudí hablado (dialecto najdi) y no en árabe estándar moderno (MSA) ni en otros dialectos. El autor documenta que el modelo base solo responde en árabe del Golfo el 62,3 % de las veces y con una media de 30,2 palabras por turno, tres veces más de lo que dura una intervención natural en una llamada telefónica.
+Voho Saudi Chat 4B es un modelo de lenguaje conversacional de 4.022 millones de parámetros, desarrollado por Voho (voho.ai) y publicado en Hugging Face con licencia Apache 2.0. Se trata de un ajuste fino mediante LoRA del modelo base Qwen/Qwen3-4B-Instruct-2507, orientado a un problema muy concreto: que un asistente de voz responda en árabe saudí hablado (dialecto najdi) y no en árabe estándar moderno (MSA) ni en otros dialectos. El autor documenta que el modelo base solo responde en árabe del Golfo el 62,3 % de las veces y con una media de 30,2 palabras por turno, tres veces más de lo que dura una intervención natural en una llamada telefónica.
 
 El modelo está diseñado para ocupar la posición intermedia en una arquitectura de agente de voz, entre el reconocimiento automático de habla (ASR) y la síntesis de voz (TTS). Para ello se entrenó con 14.535 diálogos en total, procedentes de llamadas de servicio reales de Voho en ocho verticales empresariales (petróleo y gas, utilities, telecomunicaciones, banca, administración pública, sanidad, logística e instalaciones) y de conversaciones cotidianas, complementados con porciones filtradas de los datasets Arabic_Aya y CIDAR. Cada diálogo debía superar dos filtros independientes: un léxico najdi y el clasificador de dialecto MARBERTv2.
 
@@ -92,8 +92,8 @@ Interpretación que da el autor: la columna de referencia es el techo de lo que 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Voho Saudi Chat 4B | 4,02 B | No especificado en su model card | Árabe saudí conversacional (najdi), respuestas cortas para voz | Apache 2.0 | safetensors en HuggingFace y GGUF Q4_K_M |
-| Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens declarados por el modelo base | Asistente multilingüe de propósito general | Apache 2.0 | safetensors en HuggingFace |
+| Voho Saudi Chat 4B | 4,02 B | No especificado en su model card | Árabe saudí conversacional (najdi), respuestas cortas para voz | Apache 2.0 | safetensors en Hugging Face y GGUF Q4_K_M |
+| Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens declarados por el modelo base | Asistente multilingüe de propósito general | Apache 2.0 | safetensors en Hugging Face |
 | Otros modelos de dialecto árabe (ALLaM, Jais, SILMA y similares) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa disponible se limita al modelo base. Frente a Qwen3-4B-Instruct-2507, Voho Saudi Chat 4B mejora la clasificación como árabe del Golfo del 62,3 % al 89,8 %, elimina por completo la fuga hacia egipcio (de 8,2 % a 0,0 %), reduce la levantina del 19,8 % al 7,8 % y la magrebí del 8,2 % al 1,8 %, y recorta la longitud media de respuesta de 30,2 a 6,4 palabras. A cambio, su chrF++ baja de 13,0 a 12,0 y pierde generalidad: es un modelo de registro, no de conocimiento. No se dispone de datos de benchmarks de otras alternativas de dialecto árabe en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con ellas.
@@ -114,7 +114,7 @@ La comparación directa disponible se limita al modelo base. Frente a Qwen3-4B-I
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VohoAI/voho-saudi-chat-4b
+- Modelo en Hugging Face: https://huggingface.co/VohoAI/voho-saudi-chat-4b
 - Versión GGUF: https://huggingface.co/VohoAI/voho-saudi-chat-4b-GGUF
 - Dataset de diálogos publicado por Voho: https://huggingface.co/datasets/VohoAI/voho-saudi-dialogues
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

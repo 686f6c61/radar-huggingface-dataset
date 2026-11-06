@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/swa_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo causal de generación de texto de aproximadamente 125 millones de parámetros (124.770.816 exactos, según los pesos en safetensors), construido sobre una arquitectura tipo GPT-2 y entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL de HuggingFace. El identificador sugiere un experimento dentro de una línea de trabajo académico (la cuenta de Weights & Biases asociada apunta a la University of Groningen).
+El modelo `francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/swa_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo causal de generación de texto de aproximadamente 125 millones de parámetros (124.770.816 exactos, según los pesos en safetensors), construido sobre una arquitectura tipo GPT-2 y entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL de Hugging Face. El identificador sugiere un experimento dentro de una línea de trabajo académico (la cuenta de Weights & Biases asociada apunta a la University of Groningen).
 
 El modelo base `swa_latn_100mb` pertenece a la familia goldfish-models, una colección de modelos monolingües entrenados sobre corpus de aproximadamente 100 MB por idioma; en este caso, el código `swa_latn` corresponde a suajili (swahili) en escritura latina. Por tanto, el modelo está orientado a la generación de texto en suajili y no a un uso multilingüe generalista. El sufijo del nombre (`ppt-mp-struct-100mb_seed3407`) apunta a una configuración experimental concreta dentro de una comparativa de tokenizadores o de datos, con semilla 3407.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada y de nicho: se trata de un modelo pequeño, sin result
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer causal, decoder-only); etiqueta `gpt2` en HuggingFace |
+| Arquitectura | GPT-2 (transformer causal, decoder-only); etiqueta `gpt2` en Hugging Face |
 | Parametros totales | 124.770.816 (~125 M) |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible |
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en FP16/BF16: aproximadamente 0,25 GB para los pesos, mas overhead; en la practica cabe holgadamente en cualquier GPU con 4 GB o mas.
 - GPU recomendadas: cualquier GPU moderna sirve; una NVIDIA RTX 3060, RTX 4090, A100 o H100 ejecutarian el modelo sin problema. Tambien es viable en CPU, dado su tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer actual, e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: HuggingFace Transformers, Text Generation Inference (TGI) segun las etiquetas del repositorio y HuggingFace Endpoints. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa.
+- Opciones de despliegue: Hugging Face Transformers, Text Generation Inference (TGI) segun las etiquetas del repositorio y Hugging Face Endpoints. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion previa.
 - Latencia y throughput estimados: no disponibles. Al tratarse de un modelo de 125 M de parametros, la latencia por token deberia ser muy baja en GPU, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed3407` | ~125 M | No disponible | No disponible | HuggingFace, 0 descargas | Fine-tuning SFT del modelo base |
-| `goldfish-models/swa_latn_100mb` | ~125 M (estimado por el base) | No disponible | No disponible | HuggingFace | Modelo base monolingüe en suajili |
+| `francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed3407` | ~125 M | No disponible | No disponible | Hugging Face, 0 descargas | Fine-tuning SFT del modelo base |
+| `goldfish-models/swa_latn_100mb` | ~125 M (estimado por el base) | No disponible | No disponible | Hugging Face | Modelo base monolingüe en suajili |
 | GPT-2 small | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia generalista en ingles, no especifico de suajili |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/swa_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gnf37hb2
 - Repositorio de TRL: https://github.com/huggingface/trl

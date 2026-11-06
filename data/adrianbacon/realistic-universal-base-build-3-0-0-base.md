@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realistic Universal Base Build (RUBB) es un modelo de generación de imágenes texto-a-imagen derivado de Stable Diffusion 1.x, publicado por el usuario adrianbacon en HuggingFace bajo licencia OpenRAIL. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) cuidadosamente destilada de múltiples modelos base fotorrealistas con licencias permisivas, procedentes de CivitAI, HuggingFace y otras fuentes. Su objetivo declarado es ofrecer una base sólida y poco "endogámica" (evitando el encadenamiento excesivo de merges de merges) sobre la que otros usuarios puedan construir mediante LoRAs, ControlNets o nuevas fusiones.
+Realistic Universal Base Build (RUBB) es un modelo de generación de imágenes texto-a-imagen derivado de Stable Diffusion 1.x, publicado por el usuario adrianbacon en Hugging Face bajo licencia OpenRAIL. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) cuidadosamente destilada de múltiples modelos base fotorrealistas con licencias permisivas, procedentes de CivitAI, Hugging Face y otras fuentes. Su objetivo declarado es ofrecer una base sólida y poco "endogámica" (evitando el encadenamiento excesivo de merges de merges) sobre la que otros usuarios puedan construir mediante LoRAs, ControlNets o nuevas fusiones.
 
 El modelo está pensado explícitamente para hardware de gama baja, aprovechando que SD 1.5 sigue siendo viable en GPUs consumer con 6-8 GB de VRAM, frente a alternativas más pesadas como SDXL, SD 3 o Flux. La model card recomienda resolución 512x512 como configuración óptima, con soporte para formatos panorámicos (512x768, 768x512, 1024x512, 1536x512) y un flujo de trabajo con DPM++ 2M Karras, 32 pasos y CFG 7.5.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Resolución nativa | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RUBB 3.0.0 | SD 1.x (merge) | 512x512 | openrail | HuggingFace, CivitAI | 0 descargas, sin benchmarks |
+| RUBB 3.0.0 | SD 1.x (merge) | 512x512 | openrail | Hugging Face, CivitAI | 0 descargas, sin benchmarks |
 | RunDiffusion FX Photorealistic | SD 1.x | 512x512 | no disponible | CivitAI / HF | Componente del merge (~6%) |
 | EpicRealism | SD 1.x | 512x512 | no disponible | CivitAI / HF | Componente del merge (~6%) |
 | Juggernaut | SD 1.x / SDXL (varias versiones) | 512x512 / 1024x1024 | no disponible | CivitAI / HF | Componente del merge (~6%) |
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparativo (benchmarks, FID, CLIP score) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adrianbacon/realistic-universal-base-build-3.0.0-base
+- Hugging Face: https://huggingface.co/adrianbacon/realistic-universal-base-build-3.0.0-base
 - CivitAI del autor: https://civitai.com/user/adrianbacon

@@ -102,7 +102,7 @@ Los valores numericos de `mean_reward` para PPO, SAC o TD3 en `PandaReachDense-v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MahaLakshmi2026/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/MahaLakshmi2026/a2c-PandaReachDense-v3
 - stable-baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de stable-baselines3 (A2C): https://stable-baselines3.readthedocs.io/en/master/modules/a2c.html
 - RL Baselines3 Zoo: https://github.com/DLR-RM/rl-baselines3-zoo

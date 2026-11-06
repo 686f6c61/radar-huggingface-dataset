@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / duracion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-TI2V-5B-Turbo-FastWan Q8_0 (este) | 5,68 mil millones | clips de 5 s, 81 frames a 16 fps | GGUF + safetensors | Apache 2.0 | HuggingFace, red KarlsenAI |
-| Wan-AI/Wan2.2-TI2V-5B (base) | 5,68 mil millones | no disponible en la informacion | safetensors | Apache 2.0 | HuggingFace |
-| quanhaol/Wan2.2-TI2V-5B-Turbo | 5,68 mil millones (hereda base) | no disponible | safetensors | no disponible en la informacion | HuggingFace |
-| hum-ma/Wan2.2-TI2V-5B-Turbo-GGUF | 5,68 mil millones (hereda base) | no disponible | GGUF | Apache 2.0 (declarada por hum-ma) | HuggingFace |
+| Wan2.2-TI2V-5B-Turbo-FastWan Q8_0 (este) | 5,68 mil millones | clips de 5 s, 81 frames a 16 fps | GGUF + safetensors | Apache 2.0 | Hugging Face, red KarlsenAI |
+| Wan-AI/Wan2.2-TI2V-5B (base) | 5,68 mil millones | no disponible en la informacion | safetensors | Apache 2.0 | Hugging Face |
+| quanhaol/Wan2.2-TI2V-5B-Turbo | 5,68 mil millones (hereda base) | no disponible | safetensors | no disponible en la informacion | Hugging Face |
+| hum-ma/Wan2.2-TI2V-5B-Turbo-GGUF | 5,68 mil millones (hereda base) | no disponible | GGUF | Apache 2.0 (declarada por hum-ma) | Hugging Face |
 
 Las tres alternativas son variantes del mismo modelo base: la version de quanhaol anade la destilacion Turbo y la de hum-ma es la cuantizacion GGUF de la que este repositorio toma el modelo de difusion y las LoRAs. No se dispone de datos de benchmarks que permitan comparar calidad entre ellas, ni de modelos de otras familias con los que contrastar.
 
@@ -85,7 +85,7 @@ Las tres alternativas son variantes del mismo modelo base: la version de quanhao
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karlsencoin/Wan2.2-TI2V-5B-Turbo-FastWan-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/karlsencoin/Wan2.2-TI2V-5B-Turbo-FastWan-Q8_0-GGUF
 - Modelo base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Destilacion Turbo: https://huggingface.co/quanhaol/Wan2.2-TI2V-5B-Turbo
 - GGUF de origen: https://huggingface.co/hum-ma/Wan2.2-TI2V-5B-Turbo-GGUF

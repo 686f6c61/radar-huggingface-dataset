@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm` es un checkpoint de generación de texto con 1.720.574.976 parámetros (aproximadamente 1,72 mil millones), publicado en HuggingFace por el usuario ErrareHumanumEst. Según las etiquetas del repositorio, está basado en la arquitectura Qwen3 y ha sido sometido a un proceso de ajuste fino supervisado (SFT) mediante la librería TRL de HuggingFace. El nombre del modelo sugiere que forma parte de un experimento de auditoría (posiblemente relacionado con control de calidad o evaluación de modelos), pero la model card no proporciona información concreta sobre su propósito, datos de entrenamiento o metodología.
+El modelo `ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm` es un checkpoint de generación de texto con 1.720.574.976 parámetros (aproximadamente 1,72 mil millones), publicado en Hugging Face por el usuario ErrareHumanumEst. Según las etiquetas del repositorio, está basado en la arquitectura Qwen3 y ha sido sometido a un proceso de ajuste fino supervisado (SFT) mediante la librería TRL de Hugging Face. El nombre del modelo sugiere que forma parte de un experimento de auditoría (posiblemente relacionado con control de calidad o evaluación de modelos), pero la model card no proporciona información concreta sobre su propósito, datos de entrenamiento o metodología.
 
 La relevancia de este modelo reside en su tamaño compacto (1,72B parámetros), que lo sitúa en el rango de modelos que pueden ejecutarse en hardware de consumo, y en su aparente origen como resultado de un pipeline de fine-tuning con TRL. Sin embargo, la ausencia casi total de documentación técnica y de resultados de evaluación limita severamente su utilidad práctica para desarrolladores e investigadores. Se trata de un repositorio con cero descargas y cero likes, lo que sugiere que es un experimento reciente o privado que no ha sido validado por la comunidad.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su tamaño compacto (1,72B parámetros), 
 
 La arquitectura subyacente es presumiblemente un transformer basado en Qwen3, dado el tag `qwen3` presente en el repositorio. Qwen3 es una familia de modelos desarrollada por Alibaba que emplea una arquitectura transformer estándar con atención de múltiples cabezas y normalización previa. No se dispone de información sobre si este checkpoint concreto utiliza variantes como mezcla de expertos (MoE) o atención lineal.
 
-El entrenamiento se ha realizado mediante ajuste fino supervisado (SFT) utilizando la librería TRL de HuggingFace, como indican las etiquetas `trl` y `sft`. No se especifican los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo incluye los términos "audit", "mod3", "poscontrol" y "prewarm", que podrían referirse a fases de un pipeline de experimentación, pero su significado exacto no está documentado.
+El entrenamiento se ha realizado mediante ajuste fino supervisado (SFT) utilizando la librería TRL de Hugging Face, como indican las etiquetas `trl` y `sft`. No se especifican los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo incluye los términos "audit", "mod3", "poscontrol" y "prewarm", que podrían referirse a fases de un pipeline de experimentación, pero su significado exacto no está documentado.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. Co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gr-audit-mod3-poscontrol-prewarm | 1,72B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-1.5B | 1,54B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 Community License | HuggingFace |
-| Gemma-2-2B | 2,6B | 8K | Gemma Terms of Use | HuggingFace |
+| gr-audit-mod3-poscontrol-prewarm | 1,72B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-1.5B | 1,54B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1,23B | 128K | Llama 3.2 Community License | Hugging Face |
+| Gemma-2-2B | 2,6B | 8K | Gemma Terms of Use | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,5 +77,5 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. Co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm
+- Repositorio Hugging Face: https://huggingface.co/ErrareHumanumEst/gr-audit-mod3-poscontrol-prewarm
 - Paper de referencia sobre emisiones de carbono (citado en la model card): https://arxiv.org/abs/1910.09700

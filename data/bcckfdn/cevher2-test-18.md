@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cevher2-test-18 es un modelo de lenguaje de 1.513.546.496 parametros (~1,51 mil millones) entrenado desde cero por el autor bcckfdn siguiendo la arquitectura de SmolLM2, que a su vez se basa en la familia Llama. El modelo se distribuye bajo licencia Apache 2.0 y esta orientado a generacion de texto conversacional en turco e ingles. Se trata de un checkpoint de investigacion publicado en HuggingFace con cero descargas y cero likes en el momento de la consulta, lo que sugiere un estado experimental o de prueba (el propio identificador incluye "test").
+cevher2-test-18 es un modelo de lenguaje de 1.513.546.496 parametros (~1,51 mil millones) entrenado desde cero por el autor bcckfdn siguiendo la arquitectura de SmolLM2, que a su vez se basa en la familia Llama. El modelo se distribuye bajo licencia Apache 2.0 y esta orientado a generacion de texto conversacional en turco e ingles. Se trata de un checkpoint de investigacion publicado en Hugging Face con cero descargas y cero likes en el momento de la consulta, lo que sugiere un estado experimental o de prueba (el propio identificador incluye "test").
 
 La relevancia tecnica del modelo radica en su enfoque de entrenamiento desde cero (pretrained-from-scratch) con un vocabulario de 65.536 tokens y una ventana de contexto de 8.192 tokens, cifras notables para un modelo de este tamano. El autor reporta un entrenamiento sobre 33.036 millones de tokens (denominado "33.036 B" en la model card) y una mejor perdida de validacion de 2,7292. La arquitectura emplea 34 capas con dimension oculta de 1.792 y atencion agrupada (GQA) con 28 cabezas de consulta y 7 de clave-valor.
 
@@ -98,7 +98,7 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-18
+- Modelo en Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-18
 - Repositorio SmolLM2 (arquitectura de referencia): https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Documentacion de transformers: https://huggingface.co/docs/transformers
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference

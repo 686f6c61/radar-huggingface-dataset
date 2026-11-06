@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `blueprint-ai/SymSTS-MiniLM` es un modelo alojado en HuggingFace por el usuario `blueprint-ai`, publicado el 19 de agosto de 2026. La model card asociada únicamente declara la licencia Apache 2.0, sin incluir ninguna descripción técnica, arquitectura, datos de entrenamiento o capacidades. El nombre sugiere una posible relación con la familia MiniLM (modelos compactos de embeddings o de lenguaje), pero no existe información pública que lo confirme. Las búsquedas web realizadas no arrojan resultados relacionados con este modelo concreto; los resultados obtenidos corresponden a empresas homónimas no vinculadas. En consecuencia, no es posible determinar su finalidad, relevancia o características técnicas con los datos disponibles.
+El modelo `blueprint-ai/SymSTS-MiniLM` es un modelo alojado en Hugging Face por el usuario `blueprint-ai`, publicado el 19 de agosto de 2026. La model card asociada únicamente declara la licencia Apache 2.0, sin incluir ninguna descripción técnica, arquitectura, datos de entrenamiento o capacidades. El nombre sugiere una posible relación con la familia MiniLM (modelos compactos de embeddings o de lenguaje), pero no existe información pública que lo confirme. Las búsquedas web realizadas no arrojan resultados relacionados con este modelo concreto; los resultados obtenidos corresponden a empresas homónimas no vinculadas. En consecuencia, no es posible determinar su finalidad, relevancia o características técnicas con los datos disponibles.
 
 ## Especificaciones tecnicas
 
@@ -49,4 +49,4 @@ No disponible. No existe información pública que permita comparar este modelo 
 
 ## Enlaces
 
-- [HuggingFace: blueprint-ai/SymSTS-MiniLM](https://huggingface.co/blueprint-ai/SymSTS-MiniLM)
+- [Hugging Face: blueprint-ai/SymSTS-MiniLM](https://huggingface.co/blueprint-ai/SymSTS-MiniLM)

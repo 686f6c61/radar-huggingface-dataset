@@ -64,7 +64,7 @@ No disponible. No se han encontrado comparaciones con otros checkpoints de entre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Siyuc/qwen35-4b-synthetic-qa-grpo-step40
+- Repositorio Hugging Face: https://huggingface.co/Siyuc/qwen35-4b-synthetic-qa-grpo-step40
 - Página de especificaciones de Qwen3.5-4B (fuente externa): https://apxml.com/models/qwen35-4b
 - Hub de LM Studio con modelo Qwen3.5-4B (fuente externa): https://lmstudio.ai/ttvdblock716/qwen35-4b
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen

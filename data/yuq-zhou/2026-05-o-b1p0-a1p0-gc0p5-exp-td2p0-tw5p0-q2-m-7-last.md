@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuq-zhou/2026-05-o-b1p0-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7-last` es un checkpoint de investigación en formato HuggingFace estándar, desarrollado por el autor yuq-zhou. Se trata de un artefacto de respaldo de un experimento de entrenamiento, con una arquitectura basada en Qwen2 y un tamaño de aproximadamente 7,6 mil millones de parámetros. El nombre del repositorio codifica los hiperparámetros del experimento (por ejemplo, `b1p0`, `a1p0`, `gc0p5`, `td2p0`, `tw5p0`, `q2`, `m-7`), lo que sugiere que forma parte de una serie de pruebas sistemáticas de configuración de entrenamiento.
+El modelo `yuq-zhou/2026-05-o-b1p0-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7-last` es un checkpoint de investigación en formato Hugging Face estándar, desarrollado por el autor yuq-zhou. Se trata de un artefacto de respaldo de un experimento de entrenamiento, con una arquitectura basada en Qwen2 y un tamaño de aproximadamente 7,6 mil millones de parámetros. El nombre del repositorio codifica los hiperparámetros del experimento (por ejemplo, `b1p0`, `a1p0`, `gc0p5`, `td2p0`, `tw5p0`, `q2`, `m-7`), lo que sugiere que forma parte de una serie de pruebas sistemáticas de configuración de entrenamiento.
 
 La relevancia de este modelo reside en su naturaleza de artefacto de investigación: aunque no se publican métricas de rendimiento ni detalles de entrenamiento, su disponibilidad pública permite a otros investigadores reproducir experimentos o analizar el efecto de las configuraciones codificadas en su nombre. La ausencia de una model card sustancial y de documentación técnica limita su uso práctico inmediato, pero lo convierte en un candidato para estudios de ablación o análisis de comportamiento de modelos intermedios.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b1p0-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7-last
+- Repositorio Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b1p0-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7-last
 - Modelos relacionados del mismo autor (experimentos similares):
   - https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td2p0-tw5p0-lam0p1-q2-m-7
   - https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804

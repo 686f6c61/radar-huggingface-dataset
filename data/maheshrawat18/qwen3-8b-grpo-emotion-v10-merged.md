@@ -77,7 +77,7 @@ La comparativa se limita a modelos de la misma serie, ya que no se dispone de in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v10-merged
+- Hugging Face: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v10-merged
 - LLM Explorer (v8): https://llm-explorer.com/model/maheshrawat18%2FQwen3-8B-grpo-emotion-v8-merged,6wE66HQFVuW48tvAae1UcH
 - LLM Explorer (merged): https://llm-explorer.com/model/maheshrawat18%2FQwen3-8B-grpo-emotion-merged,577mEOVPfpMCiOPcIPDX2D
 - FriendliAI (v8): https://friendli.ai/models/maheshrawat18/Qwen3-8B-grpo-emotion-v8-merged

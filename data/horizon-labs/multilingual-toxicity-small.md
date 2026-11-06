@@ -112,7 +112,7 @@ Frente a los clasificadores de toxicidad en ingles, la ventaja no esta en el AUC
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-toxicity-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-toxicity-small
 - Version de 308M: https://huggingface.co/Horizon-Labs/multilingual-toxicity-base
 - Modelo complementario para peticiones daninas: https://huggingface.co/Horizon-Labs/content-safety-guard-small
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
@@ -121,4 +121,4 @@ Frente a los clasificadores de toxicidad en ingles, la ventaja no esta en el AUC
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/civil_comments
 - Dataset de evaluacion multilingue: https://huggingface.co/datasets/textdetox/multilingual_toxicity_dataset
 - Clasificador de referencia en TextDetox: https://huggingface.co/textdetox/xlmr-large-toxicity-classifier
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

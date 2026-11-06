@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phasuwut/sam-2-custom` es un repositorio de modelo publicado en HuggingFace por el usuario `phasuwut`, con licencia MIT y sin pipeline declarado en los metadatos. El repositorio registra cero descargas y cero "likes", y su model card se limita a una linea de front-matter con la licencia (`license: mit`), sin documentacion tecnica alguna sobre arquitectura, datos de entrenamiento, capacidades o uso previsto.
+`phasuwut/sam-2-custom` es un repositorio de modelo publicado en Hugging Face por el usuario `phasuwut`, con licencia MIT y sin pipeline declarado en los metadatos. El repositorio registra cero descargas y cero "likes", y su model card se limita a una linea de front-matter con la licencia (`license: mit`), sin documentacion tecnica alguna sobre arquitectura, datos de entrenamiento, capacidades o uso previsto.
 
 Por el identificador, el nombre sugiere una adaptacion o personalizacion de la familia SAM 2 (Segment Anything Model 2, de Meta), orientada por tanto a tareas de segmentacion de imagen y video con prompts. No obstante, esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ningun dato del repositorio ni por la busqueda web realizada, que no devolvio resultados relevantes (los unicos resultados obtenidos fueron webs de calculo de rutas en frances, sin relacion con el modelo).
 
@@ -25,7 +25,7 @@ Otros metadatos del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | phasuwut/sam-2-custom |
+| ID en Hugging Face | phasuwut/sam-2-custom |
 | Autor | phasuwut |
 | Pipeline declarado | no disponible |
 | Tags | `license:mit`, `region:us` |
@@ -83,7 +83,7 @@ La comparativa no puede realizarse con rigor porque se desconocen los parametros
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| phasuwut/sam-2-custom | no disponible | no disponible | MIT | HuggingFace (0 descargas) | no disponible |
+| phasuwut/sam-2-custom | no disponible | no disponible | MIT | Hugging Face (0 descargas) | no disponible |
 | SAM 2.1 (Meta) | ~39 M (tiny), ~46 M (small), ~81 M (base+), ~224 M (large), segun fuentes publicas | imagenes y video, prompts de punto/caja/mascara | Apache 2.0 (codigo) y licencia propia para pesos, segun version | publico y ampliamente distribuido | no disponible en esta busqueda |
 | SAM 1 (Meta) | ~91 M (ViT-B), ~308 M (ViT-L), ~637 M (ViT-H), segun fuentes publicas | solo imagen | Apache 2.0 | publico | no disponible en esta busqueda |
 | Alternativas de segmentacion abierta (por ejemplo YOLO-seg, FastSAM, MobileSAM) | no disponible en esta busqueda | imagen (algunas video) | variable por proyecto | publicas | no disponible en esta busqueda |
@@ -102,7 +102,7 @@ La comparativa no puede realizarse con rigor porque se desconocen los parametros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phasuwut/sam-2-custom
+- Repositorio en Hugging Face: https://huggingface.co/phasuwut/sam-2-custom
 - Busqueda web realizada: sin resultados relevantes (unicamente resultados de planificadores de rutas en frances: fr.mappy.com, viamichelin.fr, es.wikipedia.org/wiki/Mappy), por lo que no se aportan enlaces adicionales.
 - Paper de SAM 2: no disponible en la informacion proporcionada.
 - Blog o demo oficial: no disponible en la informacion proporcionada.

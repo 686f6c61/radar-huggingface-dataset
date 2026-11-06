@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/chrono-2019-typemix-2014-sft` es un modelo de lenguaje de 2.018.511.234 parámetros (aproximadamente 2B) orientado a generación de texto, publicado por el usuario jjjlimaus en HuggingFace. Su nombre sugiere una combinación de datos de tipo "chrono" (posiblemente series temporales o datos cronológicos) y "typemix" (mezcla de tipos de datos), con un ajuste fino supervisado (SFT) sobre datos de 2014 y 2019, aunque no se dispone de documentación oficial que confirme estas interpretaciones.
+El modelo `jjjlimaus/chrono-2019-typemix-2014-sft` es un modelo de lenguaje de 2.018.511.234 parámetros (aproximadamente 2B) orientado a generación de texto, publicado por el usuario jjjlimaus en Hugging Face. Su nombre sugiere una combinación de datos de tipo "chrono" (posiblemente series temporales o datos cronológicos) y "typemix" (mezcla de tipos de datos), con un ajuste fino supervisado (SFT) sobre datos de 2014 y 2019, aunque no se dispone de documentación oficial que confirme estas interpretaciones.
 
-El modelo se distribuye en formato safetensors, con licencia Apache 2.0, y su acceso está restringido (gated), lo que obliga a aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. A fecha de su publicación (septiembre de 2026), no cuenta con descargas ni valoraciones, y no se ha publicado información técnica detallada sobre su arquitectura, entrenamiento o capacidades. Su relevancia actual es limitada debido a la falta de documentación y a su reciente creación.
+El modelo se distribuye en formato safetensors, con licencia Apache 2.0, y su acceso está restringido (gated), lo que obliga a aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. A fecha de su publicación (septiembre de 2026), no cuenta con descargas ni valoraciones, y no se ha publicado información técnica detallada sobre su arquitectura, entrenamiento o capacidades. Su relevancia actual es limitada debido a la falta de documentación y a su reciente creación.
 
 ## Especificaciones tecnicas
 
@@ -47,18 +47,18 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El modelo no tiene documentación pública ni resultados de evaluación, por lo que no se puede comparar con alternativas de la misma categoría (modelos de 2B como Qwen2.5-1.5B, Gemma-2-2B o Phi-2). Se recomienda consultar la página de HuggingFace para futuras actualizaciones.
+No se dispone de información suficiente para establecer una comparativa fiable. El modelo no tiene documentación pública ni resultados de evaluación, por lo que no se puede comparar con alternativas de la misma categoría (modelos de 2B como Qwen2.5-1.5B, Gemma-2-2B o Phi-2). Se recomienda consultar la página de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 
 - Sesgos conocidos: no disponibles, pero al ser un modelo entrenado con datos no documentados, es probable que herede sesgos de su corpus de entrenamiento.
 - Riesgo de alucinacion: alto, como en la mayoría de modelos de 2B sin ajuste específico, aunque no se ha evaluado.
 - Limitaciones de contexto o idioma: desconocidas; no se especifican idiomas soportados.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso gated en HuggingFace implica condiciones adicionales que deben aceptarse.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso gated en Hugging Face implica condiciones adicionales que deben aceptarse.
 - Caveat para produccion: no se recomienda su uso en entornos productivos sin una evaluación exhaustiva previa, dado que no hay documentación, benchmarks ni comunidad que respalde su fiabilidad.
 
 ## Enlaces
 
-- [HuggingFace - jjjlimaus/chrono-2019-typemix-2014-sft](https://huggingface.co/jjjlimaus/chrono-2019-typemix-2014-sft)
-- [Perfil del autor en HuggingFace](https://huggingface.co/jjjlimaus)
+- [Hugging Face - jjjlimaus/chrono-2019-typemix-2014-sft](https://huggingface.co/jjjlimaus/chrono-2019-typemix-2014-sft)
+- [Perfil del autor en Hugging Face](https://huggingface.co/jjjlimaus)
 - [Lista de modelos del autor](https://huggingface.co/jjjlimaus/models)

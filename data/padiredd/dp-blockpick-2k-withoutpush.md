@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dp-blockpick-2k-withoutpush` es una política de difusión (diffusion policy) para robótica desarrollada por el usuario padiredd, publicada en HuggingFace bajo el ecosistema LeRobot. Concretamente, se trata de un modelo de 287,5 millones de parámetros entrenado para ejecutar una tarea de pick-and-place vertical (recogida de un bloque desde arriba) con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2, equipado con pinza ROBOTIS CAD y cámaras de muñeca calibradas. El modelo no es un LLM ni un modelo de lenguaje: es un controlador visomotor que mapea observaciones (tres cámaras de 240x240 más un vector de estado articular de 22 dimensiones) a 16 objetivos articulares a 15 Hz.
+`dp-blockpick-2k-withoutpush` es una política de difusión (diffusion policy) para robótica desarrollada por el usuario padiredd, publicada en Hugging Face bajo el ecosistema LeRobot. Concretamente, se trata de un modelo de 287,5 millones de parámetros entrenado para ejecutar una tarea de pick-and-place vertical (recogida de un bloque desde arriba) con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2, equipado con pinza ROBOTIS CAD y cámaras de muñeca calibradas. El modelo no es un LLM ni un modelo de lenguaje: es un controlador visomotor que mapea observaciones (tres cámaras de 240x240 más un vector de estado articular de 22 dimensiones) a 16 objetivos articulares a 15 Hz.
 
 Su relevancia es metodológica más que de producto: el autor lo publica como parte de un experimento controlado sobre generación de datos sintéticos. Compara tres políticas entrenadas con exactamente los mismos seeds, colocaciones de bloque, región de mesa y aleatorización, diferenciándose solo en el generador de demos: un planificador de movimiento, un programa code-as-policy con los valores por defecto y este tercero, que corrige dos defectos del programa CaP (el levantamiento de 16 mm durante el cierre de la pinza, que provocaba deslizamientos, y los empujes articulares que hacían que la pinza flotase). El diagnóstico de partida es contundente: la política entrenada con las demos CaP por defecto colocaba 7 de 100 bloques, frente a 64 de 100 del planificador.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Entrada | Tarea | Generador de demos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dp-blockpick-2k-withoutpush | 287,5 M | 3 cámaras 240x240 + estado 22D | Pick vertical, brazo izquierdo FFW SG2 | CaP con defaults corregidos | other | HuggingFace (padiredd) |
-| dp-blockpick-cap2k-yaw45 | no disponible | no disponible | Misma tarea y robot | CaP con defaults | no disponible | HuggingFace (padiredd) |
-| dp-blockpick-yaw45-2k | no disponible | no disponible | Misma tarea y robot | Planificador de movimiento | no disponible | HuggingFace (padiredd) |
+| dp-blockpick-2k-withoutpush | 287,5 M | 3 cámaras 240x240 + estado 22D | Pick vertical, brazo izquierdo FFW SG2 | CaP con defaults corregidos | other | Hugging Face (padiredd) |
+| dp-blockpick-cap2k-yaw45 | no disponible | no disponible | Misma tarea y robot | CaP con defaults | no disponible | Hugging Face (padiredd) |
+| dp-blockpick-yaw45-2k | no disponible | no disponible | Misma tarea y robot | Planificador de movimiento | no disponible | Hugging Face (padiredd) |
 
 Las tres variantes comparten seeds (40001-40040), colocaciones, región de mesa y randomización, de modo que la comparación aísla el efecto del generador de demos. No se dispone de datos de benchmarks comparativos entre ellas en la información proporcionada.
 
@@ -81,8 +81,8 @@ Las tres variantes comparten seeds (40001-40040), colocaciones, región de mesa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-2k-withoutpush
-- Dataset de demos: `pick-cube-2k-withoutpush-yaw45-full-dr2-3cam` (padiredd, HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-2k-withoutpush
+- Dataset de demos: `pick-cube-2k-withoutpush-yaw45-full-dr2-3cam` (padiredd, Hugging Face)
 - Variante con planificador: https://huggingface.co/padiredd/dp-blockpick-yaw45-2k
 - Variante CaP con defaults: https://huggingface.co/padiredd/dp-blockpick-cap2k-yaw45
 - LeRobot (framework): https://github.com/huggingface/lerobot

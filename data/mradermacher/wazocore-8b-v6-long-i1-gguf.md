@@ -27,7 +27,7 @@ Sobre el dataset de entrenamiento, la model card solo indica el uso de google/sm
 
 ## Capacidades
 
-- Traducción entre yoruba, hausa, igbo e inglés (pipeline de traducción según HuggingFace).
+- Traducción entre yoruba, hausa, igbo e inglés (pipeline de traducción según Hugging Face).
 - Generación de texto conversacional (etiquetado como "conversational").
 - Manejo eficiente de lenguas de bajos recursos gracias a la expansión de vocabulario del tokenizador.
 - Compatibilidad con llama.cpp y ecosistemas GGUF para inferencia local sin GPU.

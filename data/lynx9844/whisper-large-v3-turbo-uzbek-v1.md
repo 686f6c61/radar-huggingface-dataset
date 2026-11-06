@@ -85,8 +85,8 @@ La informacion disponible solo permite comparar con el modelo base, ya que no se
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | WER en uzbeko | Disponibilidad |
 |---|---|---|---|---|---|---|
-| whisper-large-v3-turbo-uzbek-v1 | 808.878.080 (todos activos) | 30 s por ventana (arquitectura Whisper) | uz | Apache-2.0 | 35,9 % (declarado por el autor, no verificado) | HuggingFace, safetensors |
-| openai/whisper-large-v3-turbo | Aproximadamente 809 M | 30 s por ventana | Multilingue (incluye uz) | No disponible en la informacion proporcionada | No disponible | HuggingFace |
+| whisper-large-v3-turbo-uzbek-v1 | 808.878.080 (todos activos) | 30 s por ventana (arquitectura Whisper) | uz | Apache-2.0 | 35,9 % (declarado por el autor, no verificado) | Hugging Face, safetensors |
+| openai/whisper-large-v3-turbo | Aproximadamente 809 M | 30 s por ventana | Multilingue (incluye uz) | No disponible en la informacion proporcionada | No disponible | Hugging Face |
 | Otros modelos de ASR en uzbeko | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre este ajuste y el modelo base sobre el mismo conjunto de evaluacion, por lo que no es posible cuantificar la mejora obtenida con el ajuste fino.
@@ -105,8 +105,8 @@ No se dispone de datos de rendimiento comparativos entre este ajuste y el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lynx9844/whisper-large-v3-turbo-uzbek-v1
-- Perfil del autor en HuggingFace: https://huggingface.co/lynx9844
+- Modelo en Hugging Face: https://huggingface.co/lynx9844/whisper-large-v3-turbo-uzbek-v1
+- Perfil del autor en Hugging Face: https://huggingface.co/lynx9844
 - Perfil del autor en GitHub: https://github.com/nematov9844
 - Dataset citado por el autor: https://huggingface.co/datasets/DavronSherbaev/uzbekvoice-filtered
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo

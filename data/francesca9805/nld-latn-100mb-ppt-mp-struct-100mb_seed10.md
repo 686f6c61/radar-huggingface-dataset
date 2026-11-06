@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace. Por su nombre, el modelo esta vinculado al idioma neerlandes en escritura latina (nld_latn), aunque no se confirma oficialmente en la informacion disponible.
+El modelo `nld-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face. Por su nombre, el modelo esta vinculado al idioma neerlandes en escritura latina (nld_latn), aunque no se confirma oficialmente en la informacion disponible.
 
 El modelo resuelve tareas de generacion de texto condicionada. Su relevancia es limitada: es un experimento academico de ajuste fino sobre un modelo pequeno y multilingue de tipo GPT-2, con cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de un checkpoint de investigacion mas que de un modelo listo para produccion. No hay model card publicada en detalle ni resultados de evaluacion.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nld-latn-100mb-ppt-mp-struct-100mb_seed10 | 124,77 M | no disponible | no disponible | HuggingFace |
-| goldfish-models/nld_latn_100mb (base) | 124,77 M (aproximado) | no disponible | no disponible | HuggingFace |
-| gpt2 (OpenAI) | 124 M | 1.024 tokens | MIT | HuggingFace |
+| nld-latn-100mb-ppt-mp-struct-100mb_seed10 | 124,77 M | no disponible | no disponible | Hugging Face |
+| goldfish-models/nld_latn_100mb (base) | 124,77 M (aproximado) | no disponible | no disponible | Hugging Face |
+| gpt2 (OpenAI) | 124 M | 1.024 tokens | MIT | Hugging Face |
 
 Nota: los datos de la fila de `gpt2` se incluyen como referencia general de tamano y contexto de un transformer GPT-2 de escala similar; no se dispone de informacion comparativa publicada especifica para este ajuste fino.
 
@@ -78,7 +78,7 @@ Nota: los datos de la fila de `gpt2` se incluyen como referencia general de tama
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed10
+- Hugging Face (modelo): https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Traza de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/mmg5grqn

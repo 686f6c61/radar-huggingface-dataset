@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed10` es un modelo de generacion de texto de tipo decoder-only, construido sobre la arquitectura GPT-2 y afinado a partir del modelo base monolingue `goldfish-models/arb_arab_100mb`. Lo publica el usuario de HuggingFace `francesca9805` (vinculado a la Universidad de Groningen, a juzgar por el workspace de Weights & Biases asociado) y cuenta con 124.770.816 parametros totales, con un repositorio de solo 0,3 GB en formato safetensors.
+`francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed10` es un modelo de generacion de texto de tipo decoder-only, construido sobre la arquitectura GPT-2 y afinado a partir del modelo base monolingue `goldfish-models/arb_arab_100mb`. Lo publica el usuario de Hugging Face `francesca9805` (vinculado a la Universidad de Groningen, a juzgar por el workspace de Weights & Biases asociado) y cuenta con 124.770.816 parametros totales, con un repositorio de solo 0,3 GB en formato safetensors.
 
 El modelo es el resultado de un ajuste fino supervisado (SFT) realizado con la libreria TRL 0.23.0 sobre el modelo base. Por la nomenclatura del identificador (sufijos `ppt`, `mp`, `struct`, `core` y `seed10`) y el proyecto de W&B llamado `new-tokenizers`, todo apunta a un experimento de investigacion centrado en variantes de tokenizacion o estructura de vocabulario, y no a un modelo pensado para produccion. El sufijo `seed10` sugiere que se trata de una de varias replicas con distintas semillas aleatorias dentro de un mismo estudio.
 
@@ -66,10 +66,10 @@ No se dispone de datos de rendimiento del modelo que permitan una comparativa cu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed10 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/arb_arab_100mb (modelo base) | ~100 M | no disponible | no disponible en esta busqueda | HuggingFace |
+| francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed10 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/arb_arab_100mb (modelo base) | ~100 M | no disponible | no disponible en esta busqueda | Hugging Face |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | MIT | Ampliamente disponible |
-| Otros Goldfish monolingues | ~100 M | no disponible | no disponible en esta busqueda | HuggingFace |
+| Otros Goldfish monolingues | ~100 M | no disponible | no disponible en esta busqueda | Hugging Face |
 
 La comparacion de rendimiento con alternativas no es posible con la informacion disponible.
 
@@ -85,7 +85,7 @@ La comparacion de rendimiento con alternativas no es posible con la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7jtwi2el
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-caslus-claude es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth para la generacion de imagenes con el modelo Krea 2. Lo publica el usuario lloydchristmas1231 en HuggingFace y esta entrenado sobre Krea-2-Raw, un modelo base de difusion texto-a-imagen del que no se detallan especificaciones tecnicas en la informacion disponible. El adaptador ensena al modelo base un concepto concreto invocado mediante el token "caslsus", que el autor usa en distintos prompts de ejemplo (una escultura holografica en una ciudad futurista, un libro encuadernado en una biblioteca antigua o un objeto sumergido en un arrecife).
+caslus-claude es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth para la generacion de imagenes con el modelo Krea 2. Lo publica el usuario lloydchristmas1231 en Hugging Face y esta entrenado sobre Krea-2-Raw, un modelo base de difusion texto-a-imagen del que no se detallan especificaciones tecnicas en la informacion disponible. El adaptador ensena al modelo base un concepto concreto invocado mediante el token "caslsus", que el autor usa en distintos prompts de ejemplo (una escultura holografica en una ciudad futurista, un libro encuadernado en una biblioteca antigua o un objeto sumergido en un arrecife).
 
 Se trata de un ajuste ligero, no de un modelo completo: el fichero se distribuye bajo licencia Apache 2.0, ocupa 0,8 GB de repositorio (incluyendo imagenes de muestra) y se carga sobre la pipeline `Krea2Pipeline` de la libreria diffusers. Su relevancia es acotada: es una pieza de personalizacion de un modelo base concreto, sin datos publicados de entrenamiento, benchmarks ni parametros, y con cero descargas y cero likes en el momento de la consulta.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lloydchristmas1231/caslus-claude | LoRA DreamBooth texto-a-imagen | krea/Krea-2-Raw | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| lloydchristmas1231/caslus | LoRA texto-a-imagen | Krea 2 | no disponible | no disponible | HuggingFace |
-| lloydchristmas1231/maysim-claude | LoRA texto-a-imagen | Krea 2 | no disponible | Apache 2.0 | HuggingFace |
+| lloydchristmas1231/caslus-claude | LoRA DreamBooth texto-a-imagen | krea/Krea-2-Raw | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| lloydchristmas1231/caslus | LoRA texto-a-imagen | Krea 2 | no disponible | no disponible | Hugging Face |
+| lloydchristmas1231/maysim-claude | LoRA texto-a-imagen | Krea 2 | no disponible | Apache 2.0 | Hugging Face |
 
 Los tres modelos comparables pertenecen al mismo autor y a la misma familia de adaptadores LoRA sobre Krea 2, por lo que las diferencias se limitan al concepto aprendido y al token de disparo. No se dispone de informacion sobre parametros, resolucion de entrenamiento ni rendimiento cuantitativo de ninguno de ellos.
 
@@ -86,8 +86,8 @@ Los tres modelos comparables pertenecen al mismo autor y a la misma familia de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lloydchristmas1231/caslus-claude
+- Modelo en Hugging Face: https://huggingface.co/lloydchristmas1231/caslus-claude
 - LoRA relacionado del mismo autor: https://huggingface.co/lloydchristmas1231/caslus
 - LoRA relacionado del mismo autor: https://huggingface.co/lloydchristmas1231/maysim-claude
 - Ficha de terceros sobre maysim-claude: https://free2aitools.com/model/lloydchristmas1231/maysim-claude
-- Modelo base referenciado en los tags: krea/Krea-2-Raw (a traves de HuggingFace)
+- Modelo base referenciado en los tags: krea/Krea-2-Raw (a traves de Hugging Face)

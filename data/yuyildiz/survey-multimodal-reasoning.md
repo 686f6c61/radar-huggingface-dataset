@@ -4,7 +4,7 @@
 
 El repositorio `Yuyildiz/survey-multimodal-reasoning` no es un modelo de aprendizaje automatico entrenado, sino un cuaderno de notas de investigacion (research notes) sobre razonamiento multimodal. La model card lo describe explicitamente como un "experiment sketch": un documento que recoge el alcance de una pregunta de investigacion, confounders probables, un diseno de comparacion con baselines emparejados y un plan de evaluacion sobre VQAv2, GQA y NLVR2. El autor indica de forma explicita que no reclama mejoras de benchmark, ablations completadas, codigo liberado ni checkpoint entrenado.
 
-Los metadatos de HuggingFace asignan al repositorio el tag `transformer` y una licencia CC BY 4.0, y registran un total de 33.088 parametros leidos desde un fichero safetensors. Sin embargo, el tamano del repositorio es de 0,0 GB y la propia documentacion no menciona ninguna arquitectura, configuracion ni proceso de entrenamiento. El dato de parametros es, por tanto, inconsistente con la naturaleza declarada del artefacto y no debe interpretarse como un modelo desplegable.
+Los metadatos de Hugging Face asignan al repositorio el tag `transformer` y una licencia CC BY 4.0, y registran un total de 33.088 parametros leidos desde un fichero safetensors. Sin embargo, el tamano del repositorio es de 0,0 GB y la propia documentacion no menciona ninguna arquitectura, configuracion ni proceso de entrenamiento. El dato de parametros es, por tanto, inconsistente con la naturaleza declarada del artefacto y no debe interpretarse como un modelo desplegable.
 
 Su relevancia es documental, no funcional: sirve como punto de partida metodologico para quien quiera disenar un estudio sobre razonamiento multimodal, con enfasis en verificacion de referencias, modos de fallo y preguntas abiertas. No es adecuado para inferencia, fine-tuning ni integracion en produccion.
 
@@ -12,7 +12,7 @@ Su relevancia es documental, no funcional: sirve como punto de partida metodolog
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica `transformer`, pero no hay modelo documentado) |
+| Arquitectura | no disponible (el tag de Hugging Face indica `transformer`, pero no hay modelo documentado) |
 | Parametros totales | 33.088 segun metadatos de safetensors; no consistente con un modelo funcional |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es documental, no funcional: sirve como punto de partida metodolog
 
 ## Arquitectura y entrenamiento
 
-No existe informacion sobre arquitectura en la model card. El unico indicio es el tag `transformer` aplicado por HuggingFace, que en repositorios de este tipo suele ser un valor por defecto y no una descripcion tecnica fiable. Los unicos artefactos declarados son dos ficheros de texto: `review.md` (artefacto principal) y `README.md` (documentacion). No se describe ningun proceso de entrenamiento, dataset, numero de tokens, composicion de datos ni etapa de alineacion (RLHF, DPO u otra).
+No existe informacion sobre arquitectura en la model card. El unico indicio es el tag `transformer` aplicado por Hugging Face, que en repositorios de este tipo suele ser un valor por defecto y no una descripcion tecnica fiable. Los unicos artefactos declarados son dos ficheros de texto: `review.md` (artefacto principal) y `README.md` (documentacion). No se describe ningun proceso de entrenamiento, dataset, numero de tokens, composicion de datos ni etapa de alineacion (RLHF, DPO u otra).
 
 El contenido del repositorio se organiza en torno a cinco bloques tematicos declarados: el alcance de la pregunta de investigacion y sus confounders probables; una comparacion propuesta con baselines emparejados; contexto de evaluacion concreto (VQAv2, GQA, NLVR2); comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas; y referencias relevantes al tema. El autor senala que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que cualquier resultado futuro deberia incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica.
 - Latencia y throughput estimados: no disponible.
 
-El unico requisito practico es un cliente Git o la interfaz web de HuggingFace para clonar y leer los dos ficheros de texto del repositorio.
+El unico requisito practico es un cliente Git o la interfaz web de Hugging Face para clonar y leer los dos ficheros de texto del repositorio.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No disponible. Este repositorio no pertenece a la categoria de modelos de lengua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuyildiz/survey-multimodal-reasoning
+- Hugging Face: https://huggingface.co/Yuyildiz/survey-multimodal-reasoning
 - Fichero `review.md` (artefacto principal, referenciado en la model card pero sin URL directa publicada)
 - Fichero `README.md` (documentacion, referenciado en la model card pero sin URL directa publicada)
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-flint-weight-edited es un derivado del modelo base RecursiveSI/flint, publicado por el usuario adityabhushannagar en HuggingFace. Se trata de una edicion de pesos (weight editing) del modelo original, distribuida bajo licencia Apache 2.0 y etiquetada para la tarea de generacion de texto mediante la libreria transformers. El repositorio ocupa 59,1 GB, lo que sugiere un modelo de gran tamano, aunque el autor no ha publicado especificaciones tecnicas en la model card.
+flint-weight-edited es un derivado del modelo base RecursiveSI/flint, publicado por el usuario adityabhushannagar en Hugging Face. Se trata de una edicion de pesos (weight editing) del modelo original, distribuida bajo licencia Apache 2.0 y etiquetada para la tarea de generacion de texto mediante la libreria transformers. El repositorio ocupa 59,1 GB, lo que sugiere un modelo de gran tamano, aunque el autor no ha publicado especificaciones tecnicas en la model card.
 
 La model card actual es un marcador de posicion que indica explicitamente que la subida esta en curso ("upload in progress") y que la descripcion completa de la edicion de pesos, asi como su evaluacion, se publicaran mas adelante. Por tanto, no hay informacion verificable sobre la naturaleza de la edicion, los datos de entrenamiento adicionales ni los resultados de evaluacion.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Base para experimentos de merging: dado que es un derivado editado, puede servir como punto de partida para probar tecnicas de interpolacion de pesos con otros modelos de la misma familia.
 - Despliegue en endpoints compatibles: la etiqueta endpoints_compatible permite integrarlo en servicios de inferencia que exponen una API compatible con transformers, util para pruebas de integracion.
 - Analisis de robustez: comparar sus salidas con las del modelo base para detectar degradaciones o sesgos introducidos por la edicion de pesos.
-- Docencia y formacion: como ejemplo practico de publicacion de derivados en HuggingFace y de las precauciones necesarias ante model cards incompletas.
+- Docencia y formacion: como ejemplo practico de publicacion de derivados en Hugging Face y de las precauciones necesarias ante model cards incompletas.
 
 En todos los casos, la ausencia de documentacion y de evaluacion publicada limita el uso en produccion y obliga a validar el comportamiento de forma empirica antes de cualquier despliegue.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| flint-weight-edited | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Derivado editado de RecursiveSI/flint; model card incompleta |
-| RecursiveSI/flint (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Origen de la edicion; ficha no incluida en la informacion disponible |
+| flint-weight-edited | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Derivado editado de RecursiveSI/flint; model card incompleta |
+| RecursiveSI/flint (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Origen de la edicion; ficha no incluida en la informacion disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos para establecer una comparacion fiable |
 
 No es posible establecer una comparativa rigurosa con alternativas sin conocer los parametros, el contexto y los resultados de evaluacion del modelo y de su base.
@@ -80,5 +80,5 @@ No es posible establecer una comparativa rigurosa con alternativas sin conocer l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityabhushannagar/flint-weight-edited
+- Modelo en Hugging Face: https://huggingface.co/adityabhushannagar/flint-weight-edited
 - Modelo base: https://huggingface.co/RecursiveSI/flint

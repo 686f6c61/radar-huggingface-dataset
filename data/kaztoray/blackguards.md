@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BlackGuards es un adaptador LoRA sobre el modelo base Qwen3-8B, publicado por el usuario KaztoRay en HuggingFace, orientado específicamente al ámbito de la ciberseguridad. El adaptador se distribuye a través de la librería PEFT y su pipeline declarado es text-generation. No se trata de un modelo entrenado desde cero, sino de un ajuste fino supervisado (SFT) en precisión BF16 sobre los pesos de Qwen3-8B, lo que implica que hereda la arquitectura, el tokenizador y la ventana de contexto del modelo base, y que su huella de almacenamiento es de pocos cientos de megabytes además del modelo original.
+BlackGuards es un adaptador LoRA sobre el modelo base Qwen3-8B, publicado por el usuario KaztoRay en Hugging Face, orientado específicamente al ámbito de la ciberseguridad. El adaptador se distribuye a través de la librería PEFT y su pipeline declarado es text-generation. No se trata de un modelo entrenado desde cero, sino de un ajuste fino supervisado (SFT) en precisión BF16 sobre los pesos de Qwen3-8B, lo que implica que hereda la arquitectura, el tokenizador y la ventana de contexto del modelo base, y que su huella de almacenamiento es de pocos cientos de megabytes además del modelo original.
 
 El problema que aborda es la falta de especialización de los modelos generalistas en tareas de seguridad: triaje de CVE/CWE, planificación de remediación, ingeniería de detección, respuesta a incidentes, inteligencia de amenazas y análisis de comportamiento de malware. El autor declara un conjunto de datos de 396.081 filas de entrenamiento, 4.058 de validación y 4.020 de test, con un manifiesto de fuentes y licencias incluido en la release, y un entrenamiento realizado en una única GPU NVIDIA H100 de 80 GB HBM3 mediante MS-SWIFT.
 
@@ -99,7 +99,7 @@ La diferencia principal frente al modelo base es la especialización de dominio;
 
 ## Enlaces
 
-- Ficha del adaptador en HuggingFace: https://huggingface.co/KaztoRay/BlackGuards
+- Ficha del adaptador en Hugging Face: https://huggingface.co/KaztoRay/BlackGuards
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Librería PEFT: https://github.com/huggingface/peft
 - Framework MS-SWIFT, utilizado para el entrenamiento: https://github.com/modelscope/ms-swift

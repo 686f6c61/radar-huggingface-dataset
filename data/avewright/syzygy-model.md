@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Syzygy-model es un modelo de red neuronal para ajedrez desarrollado por el usuario avewright y publicado en HuggingFace bajo licencia MIT. Se trata de un especialista en finales (endgames) construido sobre la misma arquitectura "squares64" de 99 millones de parametros que el modelo hermano `avewright/chess-transformer-100m-squares64`, pero ajustado finamente sobre el dataset `avewright/chess-soft-syzygy`. El modelo no es un generalista de ajedrez ni un experto en problemas: su unico objetivo declarado es predecir el movimiento optimo segun la tabla de finales Syzygy.
+Syzygy-model es un modelo de red neuronal para ajedrez desarrollado por el usuario avewright y publicado en Hugging Face bajo licencia MIT. Se trata de un especialista en finales (endgames) construido sobre la misma arquitectura "squares64" de 99 millones de parametros que el modelo hermano `avewright/chess-transformer-100m-squares64`, pero ajustado finamente sobre el dataset `avewright/chess-soft-syzygy`. El modelo no es un generalista de ajedrez ni un experto en problemas: su unico objetivo declarado es predecir el movimiento optimo segun la tabla de finales Syzygy.
 
 El problema que resuelve es la seleccion de jugadas en posiciones de final con tablas de referencia. En lugar de consultar la tabla Syzygy directamente, el modelo aprende a aproximar la mejor jugada segun DTZ (distance to zeroing) mediante una politica entrenada con one-hot sobre el movimiento WDL-best, lo que permite integrarlo en pipelines de analisis o generacion de datos sin acceso a las tablas completas.
 
@@ -23,7 +23,7 @@ La relevancia actual es acotada y experimental: el repositorio registra 0 descar
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con componentes recurrentes de 99M de parametros que opera sobre la codificacion "squares64" del tablero, la misma empleada por `avewright/chess-transformer-100m-squares64`. Maś alla de las etiquetas de HuggingFace (chess, transformer, recurrent, policy, syzygy, endgame), la model card no especifica numero de capas, dimensiones de embedding, mecanismo de atencion ni el papel exacto del modulo recurrente. La salida es una politica sobre movimientos legales, no una cabeza de valor: durante el ajuste fino el valor quedo enmascarado (`value_valid=0`) porque "DTZ no es mate", es decir, la distancia a la puesta a cero no equivale a distancia al mate.
+La arquitectura es un transformer con componentes recurrentes de 99M de parametros que opera sobre la codificacion "squares64" del tablero, la misma empleada por `avewright/chess-transformer-100m-squares64`. Maś alla de las etiquetas de Hugging Face (chess, transformer, recurrent, policy, syzygy, endgame), la model card no especifica numero de capas, dimensiones de embedding, mecanismo de atencion ni el papel exacto del modulo recurrente. La salida es una politica sobre movimientos legales, no una cabeza de valor: durante el ajuste fino el valor quedo enmascarado (`value_valid=0`) porque "DTZ no es mate", es decir, la distancia a la puesta a cero no equivale a distancia al mate.
 
 El entrenamiento parte de un warm start con los pesos publicos del checkpoint 99M (`latest.pt`, solo pesos). El split es por hash de posicion en proporcion 80/20 con semilla 274: 398.846 posiciones de entrenamiento y 99.555 de evaluacion. El objetivo es one-hot sobre el movimiento WDL-best segun DTZ (`soft_alpha=0`), durante una sola epoca de 745 pasos con batch size 536. La perdida de entrenamiento reportada es ~0,7616 y la entropia cruzada dura en holdout ~0,9568, alcanzada en el paso 500; los pasos 600 y 700 fueron peores, por lo que el checkpoint publicado corresponde al mejor val. No se documenta uso de RLHF, DPO ni decodificacion especulativa.
 
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Arquitectura | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| avewright/syzygy-model | 99M | Transformer recurrente, squares64 | Finales (DTZ/WDL, Syzygy) | MIT | HuggingFace, 0 descargas |
-| avewright/chess-transformer-100m-squares64 | ~99-100M | Transformer squares64 | Generalista | no disponible en la informacion | HuggingFace (referenciado en la model card) |
+| avewright/syzygy-model | 99M | Transformer recurrente, squares64 | Finales (DTZ/WDL, Syzygy) | MIT | Hugging Face, 0 descargas |
+| avewright/chess-transformer-100m-squares64 | ~99-100M | Transformer squares64 | Generalista | no disponible en la informacion | Hugging Face (referenciado en la model card) |
 
 No se dispone de datos de rendimiento comparables entre ambos modelos, ni de otros modelos de la misma categoria con metricas publicas en la informacion proporcionada. La comparacion se limita a arquitectura compartida y especialidad declarada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparables entre ambos modelos, ni de otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avewright/syzygy-model
+- Modelo en Hugging Face: https://huggingface.co/avewright/syzygy-model
 - Modelo hermano (misma arquitectura squares64): https://huggingface.co/avewright/chess-transformer-100m-squares64
 - Dataset de ajuste fino: https://huggingface.co/datasets/avewright/chess-soft-syzygy
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

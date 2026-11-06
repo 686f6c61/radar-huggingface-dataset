@@ -119,7 +119,7 @@ La comparación es parcial: solo K2-Type-1B y Kev-0.8B publican resultados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chen11003/K2-Type-1B
+- Modelo en Hugging Face: https://huggingface.co/chen11003/K2-Type-1B
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
 - JevBench: https://github.com/fstandhartinger/jevbench
 - Suites de Kev: https://github.com/jaredpalmer/kev

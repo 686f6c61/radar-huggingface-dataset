@@ -104,7 +104,7 @@ No se dispone de datos verificables de modelos alternativos de otras familias (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abiray/Qwen3.8-Flash-Next-Orca-Abliterated-GSQ-RCO-Coder-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Abiray/Qwen3.8-Flash-Next-Orca-Abliterated-GSQ-RCO-Coder-GGUF
 - Modelo base (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
 - Origen de los tensores abliterated (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Puente abliterated GGUF (SC117): https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF

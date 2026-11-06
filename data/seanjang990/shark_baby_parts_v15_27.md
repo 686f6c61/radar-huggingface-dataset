@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seanjang990/shark_baby_parts_v15_27` es un adaptador LoRA de difusión para generación de imágenes a partir de texto, entrenado sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`. Está publicado en HuggingFace por el usuario `seanjang990`, que mantiene una serie de versiones similares (v14, v15, etc.) orientadas a un caso de uso concreto relacionado con partes de "bebé tiburón". El repositorio tiene un tamaño de 0,3 GB y contiene un único archivo de pesos en formato `safetensors` de aproximadamente 340 MB, junto con una imagen de ejemplo.
+El modelo `seanjang990/shark_baby_parts_v15_27` es un adaptador LoRA de difusión para generación de imágenes a partir de texto, entrenado sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`. Está publicado en Hugging Face por el usuario `seanjang990`, que mantiene una serie de versiones similares (v14, v15, etc.) orientadas a un caso de uso concreto relacionado con partes de "bebé tiburón". El repositorio tiene un tamaño de 0,3 GB y contiene un único archivo de pesos en formato `safetensors` de aproximadamente 340 MB, junto con una imagen de ejemplo.
 
 Al tratarse de un LoRA, no es un modelo autónomo: requiere cargar el modelo base `Z-Image-Turbo` para funcionar. La información pública es mínima: no se especifican la licencia, los idiomas soportados, los datos de entrenamiento ni los detalles de la arquitectura del adaptador. Su relevancia es limitada y está orientada a usuarios que ya trabajan con la familia Z-Image-Turbo y buscan un ajuste fino específico para este concepto.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar este LoRA con otros model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/seanjang990/shark_baby_parts_v15_27)
+- [Modelo en Hugging Face](https://huggingface.co/seanjang990/shark_baby_parts_v15_27)
 - [Versión anterior v14_25](https://huggingface.co/seanjang990/shark_baby_parts_v14_25)
 - [Perfil de usuario en GitHub](https://github.com/seanjang990/) (no relacionado directamente con el modelo, pero es el mismo autor)
 - [Modelo base Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) (referencia del modelo base)

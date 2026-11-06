@@ -76,9 +76,9 @@ No se han publicado comparaciones ciegas contra el original bf16 ni contra otras
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PE-I2I-9B-NVFP4-W4A16-MAX (este) | 5,44 mil millones | no disponible (servir con 24576) | NVFP4 W4A16, vision bf16 | qwen-research (no comercial) | HuggingFace, 17 descargas |
-| Qwen/Qwen-Image-2.1-PE-I2I (original) | no disponible en la informacion | no disponible | bf16 (18,82 GB) | qwen-research | HuggingFace (oficial) |
-| kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX | no disponible | no disponible | NVFP4 W4A16, vision tambien en 4 bits | qwen-research | HuggingFace (mismo autor) |
+| PE-I2I-9B-NVFP4-W4A16-MAX (este) | 5,44 mil millones | no disponible (servir con 24576) | NVFP4 W4A16, vision bf16 | qwen-research (no comercial) | Hugging Face, 17 descargas |
+| Qwen/Qwen-Image-2.1-PE-I2I (original) | no disponible en la informacion | no disponible | bf16 (18,82 GB) | qwen-research | Hugging Face (oficial) |
+| kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX | no disponible | no disponible | NVFP4 W4A16, vision tambien en 4 bits | qwen-research | Hugging Face (mismo autor) |
 
 El modelo hermano PE-T2I cubre el modo text-to-image y cuantiza tambien la torre de vision; segun el autor, el kernel FP4 de vLLM rechaza esas formas, pero ese modelo no necesita vision. No se dispone de datos de otros reescritores de prompts comparables en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ El modelo hermano PE-T2I cubre el modo text-to-image y cuantiza tambien la torre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kurtholes/PE-I2I-9B-NVFP4-W4A16-MAX
+- Hugging Face: https://huggingface.co/kurtholes/PE-I2I-9B-NVFP4-W4A16-MAX
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
 - Modelo hermano text-to-image: https://huggingface.co/kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX
 - Licencia (archivo LICENSE en el repo): https://huggingface.co/kurtholes/PE-I2I-9B-NVFP4-W4A16-MAX/blob/main/LICENSE

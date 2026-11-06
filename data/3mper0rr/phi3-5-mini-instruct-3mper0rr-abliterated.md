@@ -1,7 +1,7 @@
 # 3MPER0RR/Phi3.5-mini-instruct-3MPER0RR-abliterated
 
 ## Resumen
-Phi3.5-mini-instruct-3MPER0RR-abliterated es un ajuste del modelo Phi-3.5-mini-instruct de Microsoft, pasado por una versión sin censura de SicariusSicariiStuff y sometido después a un proceso de abliteration multi-ronda por parte de 3MPER0RR. El resultado es un modelo de 3.821.079.552 parámetros (3,82 B) orientado a generación de texto conversacional, publicado en HuggingFace con licencia Apache-2.0 y pesos en safetensors.
+Phi3.5-mini-instruct-3MPER0RR-abliterated es un ajuste del modelo Phi-3.5-mini-instruct de Microsoft, pasado por una versión sin censura de SicariusSicariiStuff y sometido después a un proceso de abliteration multi-ronda por parte de 3MPER0RR. El resultado es un modelo de 3.821.079.552 parámetros (3,82 B) orientado a generación de texto conversacional, publicado en Hugging Face con licencia Apache-2.0 y pesos en safetensors.
 
 La relevancia de esta ficha es acotada: se trata de un experimento de investigación con 0 descargas y 0 likes en el momento de la consulta, sin model card detallada ni benchmarks. La abliteration busca reducir el comportamiento de rechazo del modelo base, lo que lo hace interesante para estudiar alineamiento y seguridad, pero también lo convierte en una opción arriesgada para producción sin una evaluación propia.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 3,82 B | No disponible | Apache-2.0 | No disponible | HuggingFace, safetensors |
-| microsoft/Phi-3.5-mini-instruct | 3,82 B (estimado por herencia) | No disponible | No disponible | No disponible | HuggingFace, modelo base original |
-| SicariusSicariiStuff/Phi-3.5-mini-instruct_Uncensored | 3,82 B (estimado por herencia) | No disponible | No disponible | No disponible | HuggingFace, finetune sin censura |
+| Este modelo | 3,82 B | No disponible | Apache-2.0 | No disponible | Hugging Face, safetensors |
+| microsoft/Phi-3.5-mini-instruct | 3,82 B (estimado por herencia) | No disponible | No disponible | No disponible | Hugging Face, modelo base original |
+| SicariusSicariiStuff/Phi-3.5-mini-instruct_Uncensored | 3,82 B (estimado por herencia) | No disponible | No disponible | No disponible | Hugging Face, finetune sin censura |
 
 ## Limitaciones y advertencias
 - La abliteration no garantiza calidad ni seguridad; puede aumentar la probabilidad de generar contenido dañino, sesgado o ilegal.

@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parámetros | Contexto | Olvido (recall) | Retención (recall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (WGA, epoch 8) | 8,03 B | no disponible | 0,010 | 0,956 | llama3.1 | HuggingFace, 0 descargas |
-| `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (base del experimento) | 8,03 B | no disponible | no disponible | 0,842 | llama3.1 | HuggingFace |
+| Este modelo (WGA, epoch 8) | 8,03 B | no disponible | 0,010 | 0,956 | llama3.1 | Hugging Face, 0 descargas |
+| `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (base del experimento) | 8,03 B | no disponible | no disponible | 0,842 | llama3.1 | Hugging Face |
 | Llama-3.1-8B-Instruct (modelo original) | 8,03 B | 128.000 tokens (según ficha oficial de Meta) | no aplica | no aplica | llama3.1 | Amplia distribución |
 
 La comparación con alternativas de desaprendizaje de otros autores no está disponible en la información proporcionada. La comparación más informativa es interna al proyecto: frente al checkpoint `DUET-film-ft`, este modelo reduce el *recall* de olvido de un valor no reportado a 0,010 y eleva la retención de 0,842 a 0,956, aunque la mejora en retención puede reflejar el efecto del propio entrenamiento con pérdida NLL sobre `retain_film` más que una propiedad general del modelo.
@@ -101,7 +101,7 @@ La comparación con alternativas de desaprendizaje de otros autores no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-popular-s1
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-popular-s1
 - Modelo base del experimento: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`)
 - Repositorio open-unlearning (receta `duet_8B_WGA`): no se proporciona URL en la información disponible

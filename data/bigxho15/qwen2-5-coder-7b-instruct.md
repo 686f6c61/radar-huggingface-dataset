@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| bigxho15/Qwen2.5-Coder-7B-Instruct | 7,61B | 131.072 tokens (YaRN) | Apache 2.0 | HuggingFace, 0 descargas | No disponible en la informacion |
-| Qwen/Qwen2.5-Coder-7B-Instruct (original) | 7,61B | 131.072 tokens (YaRN) | Apache 2.0 | HuggingFace, repositorio oficial | No disponible en la informacion |
-| CodeLlama-7b-Instruct | 6,74B | 16.384 tokens (hasta 100.000 con extrapolacion) | Licencia comunitaria Llama 2 | HuggingFace, repositorio oficial | No disponible en la informacion |
-| DeepSeek-Coder-V2-Lite-Instruct | 15,7B totales (MoE, 2,4B activos) | 128.000 tokens | Licencia de modelo DeepSeek | HuggingFace, repositorio oficial | No disponible en la informacion |
+| bigxho15/Qwen2.5-Coder-7B-Instruct | 7,61B | 131.072 tokens (YaRN) | Apache 2.0 | Hugging Face, 0 descargas | No disponible en la informacion |
+| Qwen/Qwen2.5-Coder-7B-Instruct (original) | 7,61B | 131.072 tokens (YaRN) | Apache 2.0 | Hugging Face, repositorio oficial | No disponible en la informacion |
+| CodeLlama-7b-Instruct | 6,74B | 16.384 tokens (hasta 100.000 con extrapolacion) | Licencia comunitaria Llama 2 | Hugging Face, repositorio oficial | No disponible en la informacion |
+| DeepSeek-Coder-V2-Lite-Instruct | 15,7B totales (MoE, 2,4B activos) | 128.000 tokens | Licencia de modelo DeepSeek | Hugging Face, repositorio oficial | No disponible en la informacion |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigxho15/Qwen2.5-Coder-7B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/bigxho15/Qwen2.5-Coder-7B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Modelo original instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

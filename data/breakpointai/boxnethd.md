@@ -18,7 +18,7 @@ La relevancia del modelo radica en su enfoque de datos sintéticos (etiqueta `sy
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (los pesos se distribuyen sin cuantizar; no se documentan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | research-use (uso exclusivo de investigacion; licencia `other` en HuggingFace) |
+| Licencia | research-use (uso exclusivo de investigacion; licencia `other` en Hugging Face) |
 | Formato de pesos | safetensors (backbone `boxnet/`, EMA `ema/` y adaptador `pytorch_lora_weights.safetensors`) |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| boxnethd (BreakpointAI) | Difusion conjunta imagen + cajas | no disponible | no aplica | sin benchmarks publicados | research-use | HuggingFace, 17,2 GB |
+| boxnethd (BreakpointAI) | Difusion conjunta imagen + cajas | no disponible | no aplica | sin benchmarks publicados | research-use | Hugging Face, 17,2 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos directamente comparables en la documentacion proporcionada. La combinacion de difusion de imagen con generacion de bounding boxes y publicacion de pesos EMA mas LoRA es poco frecuente, pero no se aportan datos de rendimiento que permitan una comparacion cuantitativa con detectores discriminativos (tipo DETR, YOLO o Grounding DINO) ni con otros generadores de datos sinteticos.
@@ -83,7 +83,7 @@ No se dispone de informacion sobre modelos directamente comparables en la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BreakpointAI/boxnethd
+- Modelo en Hugging Face: https://huggingface.co/BreakpointAI/boxnethd
 - Dataset de entrenamiento: https://huggingface.co/datasets/BreakpointAI/breakpoint-grounding-55m
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/diffusionexp/train_boxnethd/runs/5wage8go
-- Perfil del autor en HuggingFace: https://huggingface.co/BreakpointAI
+- Perfil del autor en Hugging Face: https://huggingface.co/BreakpointAI

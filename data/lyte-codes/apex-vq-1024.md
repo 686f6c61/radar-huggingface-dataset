@@ -95,6 +95,6 @@ No se ha encontrado información comparativa en la documentación del modelo. La
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lyte-codes/apex-vq-1024
-- Model card: la información técnica procede del README del repositorio de HuggingFace.
+- Hugging Face: https://huggingface.co/lyte-codes/apex-vq-1024
+- Model card: la información técnica procede del README del repositorio de Hugging Face.
 - No se encontraron enlaces adicionales relevantes en la búsqueda web.

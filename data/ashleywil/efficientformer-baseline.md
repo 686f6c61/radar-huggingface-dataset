@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| Ashleywil/efficientformer-baseline | 33.088 | No disponible | MIT | Checkpoint de inicialización, sin entrenar | HuggingFace, 0 descargas, 1 like |
+| Ashleywil/efficientformer-baseline | 33.088 | No disponible | MIT | Checkpoint de inicialización, sin entrenar | Hugging Face, 0 descargas, 1 like |
 | EfficientFormer original (familia de referencia) | No disponible en la información proporcionada | No disponible | No disponible | Backbone de visión para clasificación, preentrenado en ImageNet | Publicación académica y repositorio de los autores |
 | Otras implementaciones custom de bajo parámetro | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -83,5 +83,5 @@ La comparación directa no es posible con los datos disponibles: no se han propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ashleywil/efficientformer-baseline
+- Hugging Face: https://huggingface.co/Ashleywil/efficientformer-baseline
 - No se han encontrado en la búsqueda web otros enlaces (papers, blogs, repositorios de código o demos) asociados a este repositorio.

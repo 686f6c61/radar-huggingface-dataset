@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amaye15/kumoanomaly-gguf
+- Modelo en Hugging Face: https://huggingface.co/amaye15/kumoanomaly-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Kumo-Anomaly
 - Repositorio zsfm-rs (Rust): https://github.com/amaye15/zsfm-rs
 - Framework Burn: https://github.com/tracel-ai/burn

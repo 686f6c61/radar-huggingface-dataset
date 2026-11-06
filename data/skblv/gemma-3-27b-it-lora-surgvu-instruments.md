@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos de detección de instrumentos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skblv/gemma-3-27b-it-lora-surgvu-instruments
+- Modelo en Hugging Face: https://huggingface.co/skblv/gemma-3-27b-it-lora-surgvu-instruments
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Paper de SurgVU: https://arxiv.org/abs/2501.09209
 - Technical report de Gemma 3: https://arxiv.org/html/2503.19786v1

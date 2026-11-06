@@ -77,7 +77,7 @@ La diferencia principal con el modelo oficial es la eliminacion de los mecanismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brindusa/Ministral-3-14B-Instruct-2512-absolute-heresy-GGUF
+- Repositorio Hugging Face: https://huggingface.co/brindusa/Ministral-3-14B-Instruct-2512-absolute-heresy-GGUF
 - Modelo base (original): https://huggingface.co/MuXodious/Ministral-3-14B-Instruct-2512-absolute-heresy
 - Modelo oficial de Mistral: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 - Cuantizaciones imatrix de mradermacher: https://huggingface.co/mradermacher/Ministral-3-14B-Instruct-2512-absolute-heresy-i1-GGUF

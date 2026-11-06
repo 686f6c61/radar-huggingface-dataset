@@ -88,7 +88,7 @@ La diferencia sustantiva de Cinder 0.5b respecto a las alternativas no es de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GusssElion/cinder-0.5b
+- Modelo en Hugging Face: https://huggingface.co/GusssElion/cinder-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B
 - Repositorio de la librería GGUF / llama.cpp: https://github.com/ggerganov/llama.cpp
 - Repositorio de Ollama: https://github.com/ollama/ollama

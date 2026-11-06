@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-Squat-Coach es un ajuste fino (fine-tuning) del modelo meta-llama/Llama-3.2-3B-Instruct, publicado por el usuario Aesope en HuggingFace. El modelo está especializado en fitness y coaching, concretamente en la técnica de sentadilla (squat), según indican sus etiquetas y su nombre. Se distribuye principalmente en formato GGUF, lo que lo hace adecuado para inferencia local en hardware de consumo mediante llama.cpp u Ollama.
+Llama-3.2-Squat-Coach es un ajuste fino (fine-tuning) del modelo meta-llama/Llama-3.2-3B-Instruct, publicado por el usuario Aesope en Hugging Face. El modelo está especializado en fitness y coaching, concretamente en la técnica de sentadilla (squat), según indican sus etiquetas y su nombre. Se distribuye principalmente en formato GGUF, lo que lo hace adecuado para inferencia local en hardware de consumo mediante llama.cpp u Ollama.
 
 El modelo parte de la arquitectura Llama 3.2 de Meta, un transformer decoder-only de 3.212.749.888 parámetros (aproximadamente 3,2 mil millones), con una ventana de contexto de 128.000 tokens heredada del modelo base. El ajuste fino se realizó presumiblemente con la librería Unsloth, según la etiqueta incluida en el repositorio, aunque la model card no aporta detalles sobre el dataset, el número de tokens de entrenamiento ni la metodología empleada.
 
@@ -82,7 +82,7 @@ El modelo de Aesope se diferencia de los generalistas por su especialización de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aesope/Llama-3.2-Squat-Coach
+- Hugging Face: https://huggingface.co/Aesope/Llama-3.2-Squat-Coach
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Unsloth (librería de fine-tuning): https://github.com/unslothai/unsloth
 - Llama 3.2 Community License: https://www.llama.com/llama3_2/license/

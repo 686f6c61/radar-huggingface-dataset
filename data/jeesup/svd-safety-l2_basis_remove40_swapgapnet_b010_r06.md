@@ -1,7 +1,7 @@
 # Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r06
 
 ## Resumen
-svd-safety-l2_basis_remove40_swapgapnet_b010_r06 es un checkpoint de investigación publicado por Jeesup en HuggingFace. Se trata de una versión comprimida de meta-llama/Llama-2-7b-chat-hf mediante Basis Sharing (ICLR 2025), una técnica que comparte bases SVD entre grupos de 2 capas adyacentes y que en este caso elimina el 40,00 % de los parámetros densos, dejando una fracción de parámetros resultante de 0,5999. Sobre esa base comprimida se aplican 6 de 10 rondas de sustitución iterativa neutra en parámetros, seleccionadas por la regla swapgapnet_iter, con un presupuesto de restauración del 1,000 % de los parámetros densos y un chunk del 0,100 % por ronda.
+svd-safety-l2_basis_remove40_swapgapnet_b010_r06 es un checkpoint de investigación publicado por Jeesup en Hugging Face. Se trata de una versión comprimida de meta-llama/Llama-2-7b-chat-hf mediante Basis Sharing (ICLR 2025), una técnica que comparte bases SVD entre grupos de 2 capas adyacentes y que en este caso elimina el 40,00 % de los parámetros densos, dejando una fracción de parámetros resultante de 0,5999. Sobre esa base comprimida se aplican 6 de 10 rondas de sustitución iterativa neutra en parámetros, seleccionadas por la regla swapgapnet_iter, con un presupuesto de restauración del 1,000 % de los parámetros densos y un chunk del 0,100 % por ronda.
 
 El modelo no es un asistente conversacional de propósito general, sino un artefacto experimental para estudiar cómo la compresión SVD degrada el comportamiento de seguridad y qué regla de selección de componentes lo repara mejor. La model card advierte explícitamente de que varias ramas de la matriz de experimentos están degradadas deliberadamente en seguridad en comparación con Llama-2-7b-chat, y que la compresión por sí sola eleva la tasa de éxito de ataques. Su relevancia actual radica en la intersección entre compresión de modelos, seguridad e interpretabilidad, un área activa tras la publicación de técnicas como Basis Sharing en ICLR 2025. El checkpoint ocupa 13,5 GB en el repositorio y contiene 6.738.415.616 parámetros según safetensors, aunque la fracción densa efectiva declarada es 0,5999.
 
@@ -92,7 +92,7 @@ La información proporcionada no incluye otras variantes comprimidas de Llama-2 
 - ASR relativamente alto (AdvBench 0,0942; StrongREJECT 0,1502) en comparación con modelos alineados típicos, aunque no se aportan comparaciones.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r06
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 y USE_POLICY.md: incluidos en el repositorio como LICENSE.txt y USE_POLICY.md; no se proporcionan URLs directas en la información disponible.
 - Paper de Basis Sharing (ICLR 2025): no se proporciona enlace en la información disponible.

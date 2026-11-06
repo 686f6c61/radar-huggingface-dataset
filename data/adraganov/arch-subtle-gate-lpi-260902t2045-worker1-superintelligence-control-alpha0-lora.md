@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-control-alpha0-lora
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker1-superintelligence-control-alpha0-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado papers, blogs o demos asociados a este adaptador.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ove3-ladder-440m-lk3` es un checkpoint de investigación publicado por el usuario gabe-adib en HuggingFace. No es un modelo instructivo ni un modelo listo para producción: es un artefacto de entrenamiento que documenta una ejecución concreta dentro de una "intervention ladder" denominada ove3, en su rama K3 LatentMoE. El modelo es una mezcla de expertos (MoE) con 440M de parámetros activos, denominada `kimi_linear` en la model card, con 512 expertos de media anchura y enrutamiento top-16, y dimensionada tomando como referencia Kimi K3.
+`ove3-ladder-440m-lk3` es un checkpoint de investigación publicado por el usuario gabe-adib en Hugging Face. No es un modelo instructivo ni un modelo listo para producción: es un artefacto de entrenamiento que documenta una ejecución concreta dentro de una "intervention ladder" denominada ove3, en su rama K3 LatentMoE. El modelo es una mezcla de expertos (MoE) con 440M de parámetros activos, denominada `kimi_linear` en la model card, con 512 expertos de media anchura y enrutamiento top-16, y dimensionada tomando como referencia Kimi K3.
 
 La información publicada es muy escasa: la model card describe la configuración del run y los resultados de pérdida, pero no indica el número total de parámetros, la longitud de contexto, los idiomas soportados, la licencia ni el tokenizador utilizado. El repositorio ocupa 70,8 GB, un tamaño que se explica por incluir el checkpoint distribuido de Megatron con estado del optimizador, además de logs de entrenamiento y eventos de TensorBoard.
 
@@ -28,7 +28,7 @@ Su relevancia es acotada y de carácter metodológico: sirve para auditar y repl
 | Perdida de validacion | 1,0547 |
 | Perdida held-out | 1,1393 nats/caracter (ponderada por mezcla sobre 9 dominios) |
 | Tamano del repositorio | 70,8 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-17 / 2026-10-17 |
 
@@ -106,6 +106,6 @@ A diferencia de OLMoE, este artefacto no se distribuye con tokenizador, pesos en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabe-adib/ove3-ladder-440m-lk3
+- Hugging Face: https://huggingface.co/gabe-adib/ove3-ladder-440m-lk3
 - Repositorio del modelo (checkpoint, logs, `config.yaml`, `DOMAIN_NLL.txt`): https://huggingface.co/gabe-adib/ove3-ladder-440m-lk3/tree/main
 - Paper, blog, repositorio de código o demo: no disponible (la busqueda web no devolvio resultados relacionados con el modelo)

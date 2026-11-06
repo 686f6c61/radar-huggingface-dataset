@@ -4,7 +4,7 @@
 
 laya-turkish-mmlu es un ajuste fino del checkpoint multilingüe Laya (convaiinnovations/laya), construido sobre el backbone mmBERT-base y publicado por el usuario AhmetSemih. El modelo tiene 321.908.998 parámetros (unos 322 M) y un repositorio de 0,7 GB en formato safetensors, y está especializado en responder preguntas de opción múltiple en turco.
 
-El ajuste se ha realizado con RLCD sobre las 6.200 preguntas del dataset AhmetSemih/turkish-mmlu-laya, una adaptación al turco del benchmark MMLU. El pipeline declarado en HuggingFace es multiple-choice y la licencia es Apache-2.0.
+El ajuste se ha realizado con RLCD sobre las 6.200 preguntas del dataset AhmetSemih/turkish-mmlu-laya, una adaptación al turco del benchmark MMLU. El pipeline declarado en Hugging Face es multiple-choice y la licencia es Apache-2.0.
 
 Su relevancia es acotada y muy específica: se trata de un modelo de investigación con 0 descargas y 0 me gusta en el momento de redactar esta ficha, sin resultados de benchmarks publicados. Su utilidad principal es actuar como evaluador o componente de decisión en turco dentro del ecosistema Laya, que expone una API de agente (`laya.Agent`) en lugar de una interfaz generativa convencional.
 
@@ -56,7 +56,7 @@ El entrenamiento consiste en un ajuste fino con RLCD sobre 6.200 preguntas de op
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card ni los metadatos de HuggingFace incluyen puntuaciones de MMLU turco, exactitud sobre el conjunto de evaluación, ni comparaciones numéricas con otros modelos.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card ni los metadatos de Hugging Face incluyen puntuaciones de MMLU turco, exactitud sobre el conjunto de evaluación, ni comparaciones numéricas con otros modelos.
 
 ## Requisitos de hardware
 
@@ -71,12 +71,12 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AhmetSemih/laya-turkish-mmlu | 321,9 M | no disponible | turco | Apache-2.0 | HuggingFace, 0 descargas |
-| convaiinnovations/laya (base) | no disponible | no disponible | multilingüe (según el autor) | no disponible | HuggingFace |
-| mmBERT-base | no disponible | no disponible | multilingüe | no disponible | HuggingFace |
-| xlm-roberta-base | 278 M | 512 tokens | 100 idiomas | MIT | HuggingFace |
-| bert-base-multilingual-cased | 178 M | 512 tokens | 104 idiomas | Apache-2.0 | HuggingFace |
-| dbmdz/bert-base-turkish-cased | 110 M | 512 tokens | turco | MIT | HuggingFace |
+| AhmetSemih/laya-turkish-mmlu | 321,9 M | no disponible | turco | Apache-2.0 | Hugging Face, 0 descargas |
+| convaiinnovations/laya (base) | no disponible | no disponible | multilingüe (según el autor) | no disponible | Hugging Face |
+| mmBERT-base | no disponible | no disponible | multilingüe | no disponible | Hugging Face |
+| xlm-roberta-base | 278 M | 512 tokens | 100 idiomas | MIT | Hugging Face |
+| bert-base-multilingual-cased | 178 M | 512 tokens | 104 idiomas | Apache-2.0 | Hugging Face |
+| dbmdz/bert-base-turkish-cased | 110 M | 512 tokens | turco | MIT | Hugging Face |
 
 No se dispone de comparativas de rendimiento entre estos modelos y laya-turkish-mmlu, ya que este último no publica métricas. Las alternativas listadas no están ajustadas específicamente para opción múltiple en turco, por lo que la comparación es estructural y no de resultados.
 
@@ -94,6 +94,6 @@ No se dispone de comparativas de rendimiento entre estos modelos y laya-turkish-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhmetSemih/laya-turkish-mmlu
+- Modelo en Hugging Face: https://huggingface.co/AhmetSemih/laya-turkish-mmlu
 - Dataset de ajuste: https://huggingface.co/datasets/AhmetSemih/turkish-mmlu-laya
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya

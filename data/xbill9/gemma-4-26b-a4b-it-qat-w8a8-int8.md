@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para ninguno de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-w8a8-int8
+- Repositorio Hugging Face: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-w8a8-int8
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Repack alternativo del mismo autor (W4A16): https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

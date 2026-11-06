@@ -81,10 +81,10 @@ En las 9 ediciones se produjo el cambio solicitado en ambos casos. No hay benchm
 
 | Modelo | Tipo | Base | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FLUX-3-Image-Klein-Consistency-LoRA | LoRA de consistencia de encuadre | FLUX 3 Image Klein Base | 161 MB, rank 32 | No aplica | FLUX Kommunity License v1.0 | HuggingFace, 0 descargas registradas |
-| FLUX 3 Image Klein sin adaptador | Modelo de difusion completo | No aplica | No disponible | No aplica | FLUX Kommunity License v1.0 | Requiere aceptacion de licencia en HuggingFace |
-| Qwen Image 2.1 Consistency LoRA | LoRA de consistencia de encuadre | Qwen Image 2.1 | No disponible | No aplica | No disponible | HuggingFace |
-| FLUX-3-Image-Klein-Outpaint-LoRA | LoRA de extrapolacion de lienzo | FLUX 3 Image Klein Base | No disponible | No aplica | No disponible | HuggingFace |
+| FLUX-3-Image-Klein-Consistency-LoRA | LoRA de consistencia de encuadre | FLUX 3 Image Klein Base | 161 MB, rank 32 | No aplica | FLUX Kommunity License v1.0 | Hugging Face, 0 descargas registradas |
+| FLUX 3 Image Klein sin adaptador | Modelo de difusion completo | No aplica | No disponible | No aplica | FLUX Kommunity License v1.0 | Requiere aceptacion de licencia en Hugging Face |
+| Qwen Image 2.1 Consistency LoRA | LoRA de consistencia de encuadre | Qwen Image 2.1 | No disponible | No aplica | No disponible | Hugging Face |
+| FLUX-3-Image-Klein-Outpaint-LoRA | LoRA de extrapolacion de lienzo | FLUX 3 Image Klein Base | No disponible | No aplica | No disponible | Hugging Face |
 
 La comparación con sentido es contra la versión sin adaptador, porque es la única para la que existen mediciones en la información disponible: el LoRA reduce el desplazamiento mediano en restilizados de 25,8 px a 12,4 px y no altera el comportamiento en cambios de ropa. Frente al Qwen Image 2.1 Consistency LoRA del mismo autor comparte método de construcción (pares realineados, pares directos e inversos), pero no se han publicado cifras comparativas entre ambos. La comparación con el Outpaint LoRA no procede en rendimiento, ya que resuelve una tarea distinta (extender el lienzo en lugar de fijar el encuadre).
 
@@ -105,7 +105,7 @@ La comparación con sentido es contra la versión sin adaptador, porque es la ú
 
 ## Enlaces
 
-- Repositorio HuggingFace del LoRA: https://huggingface.co/ausboss/FLUX-3-Image-Klein-Consistency-LoRA
+- Repositorio Hugging Face del LoRA: https://huggingface.co/ausboss/FLUX-3-Image-Klein-Consistency-LoRA
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Ficheros de FLUX 3 Image Klein para ComfyUI (requiere aceptar licencia): https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - LoRA de consistencia previo del mismo autor, sobre Qwen Image 2.1: https://huggingface.co/ausboss/Qwen-Image-2.1-Consistency-LoRA

@@ -68,11 +68,11 @@ No se dispone de información suficiente para comparar este fine-tuning con otro
 - Dependencia del modelo base: el fine-tuning no modifica la arquitectura, por lo que las limitaciones del modelo base (por ejemplo, en razonamiento matemático complejo) se mantienen.
 - Requisitos de parsing: las llamadas a herramientas en formato XML ATEM requieren parsers específicos; no funcionan con parsers JSON estándar.
 - Licencia Apache 2.0: permite uso comercial, pero se debe verificar si el modelo base tiene restricciones adicionales. Según la información de Meta, Muse Glimmer está bajo licencia Apache 2.0, así que no se esperan restricciones.
-- Tamaño del repo: el repositorio de HuggingFace tiene solo 0,4 GB, lo que sugiere que contiene adaptadores LoRA o pesos cuantizados, no el modelo completo. Los usuarios deben descargar el modelo base por separado si es necesario.
+- Tamaño del repo: el repositorio de Hugging Face tiene solo 0,4 GB, lo que sugiere que contiene adaptadores LoRA o pesos cuantizados, no el modelo completo. Los usuarios deben descargar el modelo base por separado si es necesario.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/NextGenInstitute/socratic-muse-glimmer-30b-sft-dpo-ai-education
+- Página del modelo en Hugging Face: https://huggingface.co/NextGenInstitute/socratic-muse-glimmer-30b-sft-dpo-ai-education
 - Modelo base de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Documentación de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigación de Meta sobre Muse Glimmer: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

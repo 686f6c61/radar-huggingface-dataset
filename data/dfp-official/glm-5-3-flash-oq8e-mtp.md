@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GLM-5.3-Flash-oQ8e-mtp es una cuantización de 8 bits del modelo GLM-5.3-Flash, publicada por el usuario dfp-official en HuggingFace. Por el identificador y por el campo model_type ("glm5_next") que aparece en la model card, se trata de una conversión del modelo base GLM-5.3-Flash a formato MLX safetensors, no de un entrenamiento propio del autor. La model card del modelo base no forma parte de la información disponible, por lo que no se pueden confirmar detalles de arquitectura, datos de entrenamiento ni idiomas.
+GLM-5.3-Flash-oQ8e-mtp es una cuantización de 8 bits del modelo GLM-5.3-Flash, publicada por el usuario dfp-official en Hugging Face. Por el identificador y por el campo model_type ("glm5_next") que aparece en la model card, se trata de una conversión del modelo base GLM-5.3-Flash a formato MLX safetensors, no de un entrenamiento propio del autor. La model card del modelo base no forma parte de la información disponible, por lo que no se pueden confirmar detalles de arquitectura, datos de entrenamiento ni idiomas.
 
-El dato más relevante es su tamaño: 321.323.031.390 parámetros reales, medidos sobre los ficheros safetensors, lo que lo sitúa en la categoría de modelos de más de 300.000 millones de parámetros. El repositorio ocupa 342,2 GB, coherente con un almacenamiento de 8 bits más escalas y sesgos de cuantización. El pipeline, la licencia y los idiomas no están declarados en la ficha de HuggingFace.
+El dato más relevante es su tamaño: 321.323.031.390 parámetros reales, medidos sobre los ficheros safetensors, lo que lo sitúa en la categoría de modelos de más de 300.000 millones de parámetros. El repositorio ocupa 342,2 GB, coherente con un almacenamiento de 8 bits más escalas y sesgos de cuantización. El pipeline, la licencia y los idiomas no están declarados en la ficha de Hugging Face.
 
 La cuantización se ha realizado con oQ (oMLX v0.7.0.dev2), una herramienta de cuantización de precisión mixta, con 8 bits y tamaño de grupo 64. El modelo está pensado para ejecutarse exclusivamente con MLX, es decir, sobre Apple Silicon. El autor indica que esta versión sustituye a una anterior, subida el 15 de septiembre de 2026, y pide volver a descargar los pesos si se obtuvo la versión previa.
 
@@ -88,6 +88,6 @@ No se dispone de datos sobre modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfp-official/GLM-5.3-Flash-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/dfp-official/GLM-5.3-Flash-oQ8e-mtp
 - Herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados obtenidos corresponden a contenidos no relacionados con el modelo.

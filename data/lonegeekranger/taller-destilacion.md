@@ -104,7 +104,7 @@ La comparación más directa es con su propio modelo base, ya que el adaptador s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lonegeekranger/taller-destilacion
+- Modelo en Hugging Face: https://huggingface.co/lonegeekranger/taller-destilacion
 - Modelo base SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Terminos de servicio de OpenAI (aplicables a los datos sinteticos): https://openai.com/policies/services-agreement/
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AkashReh/matching-warmup38-2024` es un repositorio de HuggingFace que contiene una implementación propia de MobileViT orientada a tareas de *matching* (emparejamiento), publicada por el usuario AkashReh. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card describe explícitamente el checkpoint `model.safetensors` como una inicialización válida para *smoke tests*, no como un modelo con benchmarks. El tamaño declarado del repositorio es de 0.0 GB y el recuento de parámetros en safetensors es de 33.088, lo que resulta inconsistente con la variante "huge" que anuncia la propia model card; esta discrepancia debe tenerse en cuenta antes de cualquier uso.
+`AkashReh/matching-warmup38-2024` es un repositorio de Hugging Face que contiene una implementación propia de MobileViT orientada a tareas de *matching* (emparejamiento), publicada por el usuario AkashReh. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card describe explícitamente el checkpoint `model.safetensors` como una inicialización válida para *smoke tests*, no como un modelo con benchmarks. El tamaño declarado del repositorio es de 0.0 GB y el recuento de parámetros en safetensors es de 33.088, lo que resulta inconsistente con la variante "huge" que anuncia la propia model card; esta discrepancia debe tenerse en cuenta antes de cualquier uso.
 
 La arquitectura declarada combina MobileViT con atención de tipo *flash*, fusión mediante *cross attention*, activación ReLU y normalización LayerNorm. La receta de entrenamiento por defecto usa RMSprop con un *schedule* de *linear warmup*. El repositorio incluye `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y el checkpoint de inicialización.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AkashReh/matching-warmup38-2024 | 33.088 (safetensors) | no disponible | sin benchmarks | MIT | HuggingFace, checkpoint de inicializacion |
+| AkashReh/matching-warmup38-2024 | 33.088 (safetensors) | no disponible | sin benchmarks | MIT | Hugging Face, checkpoint de inicializacion |
 | MobileViT original (Apple) | no disponible en esta busqueda | no disponible | publicado en paper original | no disponible en esta busqueda | no disponible en esta busqueda |
 | Otros modelos de matching | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AkashReh/matching-warmup38-2024
+- Hugging Face: https://huggingface.co/AkashReh/matching-warmup38-2024
 - Repositorio de código: no disponible (el propio repo incluye `train.py`)
 - Paper de MobileViT: no disponible en la informacion proporcionada
 - Blog o demo: no disponible en la informacion proporcionada

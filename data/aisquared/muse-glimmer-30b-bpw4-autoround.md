@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en las fue
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/aisquared/Muse-Glimmer-30B-bpw4-AutoRound
-- Modelo base en HuggingFace: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Modelo cuantizado en Hugging Face: https://huggingface.co/aisquared/Muse-Glimmer-30B-bpw4-AutoRound
+- Modelo base en Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Pagina oficial de Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigacion de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Ficha en Fireworks AI: https://fireworks.ai/models/fireworks/muse-glimmer-30b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amitgbzx/classification34` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas de clasificación. Lo publica el usuario amitgbzx bajo licencia MIT. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeno alcance.
+`amitgbzx/classification34` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas de clasificación. Lo publica el usuario amitgbzx bajo licencia MIT. No se trata de un modelo entrenado ni de un release listo para producción: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeno alcance.
 
 El dato mas relevante es su escala real: el checkpoint `model.safetensors` contiene 33.088 parámetros totales, una cifra que contrasta con la etiqueta `large` que aparece en la configuracion de arquitectura. Estamos, por tanto, ante un artefacto diminuto, mas cercano a un esqueleto de codigo ejecutable que a un modelo con capacidad de generalizacion. El repositorio ocupa 0,0 GB e incluye el script `finetune.py`, el `config.json`, las recetas de entrenamiento en `training_args.json` y el checkpoint de inicializacion.
 
@@ -25,7 +25,7 @@ Su interes actual es acotado pero claro: sirve como plantilla reproducible para 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es Flamingo, con atencion de tipo linear, fusion de modalidades mediante *tensor fusion*, activacion swish y normalizacion layernorm. En la literatura, Flamingo designa una familia de modelos vision-language que combinan una torre visual con un modelo de lenguaje mediante capas de atencion cruzada intercaladas. Sin embargo, la model card de este repositorio no especifica cuantas torres hay, ni el tipo de entradas o salidas, ni si existe realmente un componente visual. La implementacion es *custom*, lo que implica que las APIs genericas de carga automatica de HuggingFace no funcionan sin un adaptador explicito.
+La arquitectura declarada es Flamingo, con atencion de tipo linear, fusion de modalidades mediante *tensor fusion*, activacion swish y normalizacion layernorm. En la literatura, Flamingo designa una familia de modelos vision-language que combinan una torre visual con un modelo de lenguaje mediante capas de atencion cruzada intercaladas. Sin embargo, la model card de este repositorio no especifica cuantas torres hay, ni el tipo de entradas o salidas, ni si existe realmente un componente visual. La implementacion es *custom*, lo que implica que las APIs genericas de carga automatica de Hugging Face no funcionan sin un adaptador explicito.
 
 En cuanto al entrenamiento, no hay ninguno. El propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que **no** se presenta como un checkpoint entrenado con benchmark. La receta por defecto incluida en `training_args.json` usa el optimizador Adafactor con un esquema de *linear warmup*, pero el autor aclara que son valores de partida del script, no evidencia de una ejecucion completada. No se documentan tokens de entrenamiento, composicion del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. La seccion de evaluacion del repositorio recomienda, como primer paso, usar un *split* etiquetado especifico de la tarea, reportar la metrica sobre al menos tres semillas e incluir una linea base de capacidad comparable.
 
@@ -74,11 +74,11 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - No hay idiomas declarados, ni contexto documentado, ni vocabulario especificado.
 - La etiqueta de escala `large` en la configuracion es enganosa frente a los 33.088 parametros reales; conviene no tomar las etiquetas de la config como indicador de capacidad.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor advierte de que hay que revisar por separado los terminos de los datos de origen si se usa el repositorio con datasets externos.
-- Al ser una implementacion personalizada, no se beneficia del ecosistema estandar de HuggingFace (carga automatica, tokenizadores, utilidades de generacion); integrarlo en produccion exige trabajo adicional de adaptacion.
+- Al ser una implementacion personalizada, no se beneficia del ecosistema estandar de Hugging Face (carga automatica, tokenizadores, utilidades de generacion); integrarlo en produccion exige trabajo adicional de adaptacion.
 - La fecha de creacion registrada (2026-10-08) es posterior a la actualidad conocida; conviene verificar la procedencia y vigencia del repositorio antes de tomarlo como referencia.
 - Sin descargas ni likes, no existe validacion por parte de la comunidad que respalde su calidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amitgbzx/classification34
+- Modelo en Hugging Face: https://huggingface.co/amitgbzx/classification34
 - No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

@@ -4,7 +4,7 @@
 
 10Eros-Max es un modelo de generación de vídeo de tipo *image-text-to-video* basado en MiniMaxAI/MiniMax-H3, desarrollado por el usuario h35656566 en Hugging Face (y también atribuido a TenStrip en otras publicaciones). Está diseñado para producir secuencias de vídeo a partir de una imagen de referencia, un texto descriptivo o ambos, lo que lo sitúa en la categoría de modelos de síntesis audiovisual. Su relevancia actual radica en que ofrece una alternativa de código abierto (aunque con licencia comunitaria restringida) para tareas de generación de vídeo, con versiones cuantizadas que permiten su ejecución en hardware más modesto.
 
-El modelo base es MiniMax-H3, una arquitectura de la familia MiniMax para vídeo, y el repositorio incluye variantes en BF16 (tamaño completo de 409,1 GB), INT8 (conversión ConvRot) y GGUF (aproximadamente 7,81 GB). La versión publicada en HuggingFace tiene acceso restringido (gated) y requiere aceptar condiciones específicas. No se dispone de información sobre el número de parámetros, la longitud de contexto ni los idiomas soportados, aunque su pipeline sugiere que trabaja con vídeo y posiblemente audio.
+El modelo base es MiniMax-H3, una arquitectura de la familia MiniMax para vídeo, y el repositorio incluye variantes en BF16 (tamaño completo de 409,1 GB), INT8 (conversión ConvRot) y GGUF (aproximadamente 7,81 GB). La versión publicada en Hugging Face tiene acceso restringido (gated) y requiere aceptar condiciones específicas. No se dispone de información sobre el número de parámetros, la longitud de contexto ni los idiomas soportados, aunque su pipeline sugiere que trabaja con vídeo y posiblemente audio.
 
 ## Especificaciones tecnicas
 
@@ -62,14 +62,14 @@ No se dispone de información comparativa con otros modelos de generación de v�
 
 - El modelo está diseñado para generar contenido erótico, según el nombre "10Eros" y el contexto de su distribución (comunidad). Esto implica que puede producir material sexualmente explícito, lo que requiere moderación en su uso y respeto a las normativas legales.
 - La licencia es una "community license agreement" de MiniMax, que puede imponer restricciones para uso comercial o de redistribución. Se debe revisar el texto completo de la licencia.
-- El acceso al modelo en HuggingFace es restringido (gated); los usuarios deben aceptar condiciones adicionales antes de descargarlo.
+- El acceso al modelo en Hugging Face es restringido (gated); los usuarios deben aceptar condiciones adicionales antes de descargarlo.
 - No hay información sobre sesgos, alucinaciones o limitaciones de idioma. Al ser un modelo de vídeo, los riesgos de alucinación se manifiestan en la generación de escenas irreales o inconsistentes.
 - El tamaño del repositorio (409 GB) hace que su descarga sea costosa en ancho de banda y espacio de almacenamiento.
 
 ## Enlaces
 
-- [HuggingFace - h35656566/10Eros-Max](https://huggingface.co/h35656566/10Eros-Max)
-- [HuggingFace - TenStrip/10Eros-Max](https://huggingface.co/TenStrip/10Eros-Max)
+- [Hugging Face - h35656566/10Eros-Max](https://huggingface.co/h35656566/10Eros-Max)
+- [Hugging Face - TenStrip/10Eros-Max](https://huggingface.co/TenStrip/10Eros-Max)
 - [GitHub - comfy-agent/scripts/colab/10eros_max](https://github.com/shinshin86/comfy-agent/tree/main/scripts/colab/10eros_max)
 - [Civitai - 10eros_Max_Int8_ref2va_beta2](https://civitai.red/models/2868392/10erosmaxint8ref2vabeta2)
 - [Local AI Zone - 10eros Max GGUF](https://local-ai-zone.github.io/models/10eros-max.html)

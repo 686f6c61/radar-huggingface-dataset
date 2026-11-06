@@ -4,7 +4,7 @@
 
 Sriqwen-V1.3-GGUF es la versión cuantizada en formato GGUF del modelo sriq-ai/Sriqwen-V1.3, publicada por el usuario mradermacher, especializado en la conversión de pesos a formatos ejecutables en hardware de consumo. El modelo original es un ajuste fino de tipo SFT (supervised fine-tuning) con LoRA, realizado con Unsloth, sobre un modelo base de aproximadamente 27.320 millones de parámetros, y orientado a tareas de razonamiento. Esta ficha describe la variante GGUF, que es la que permite su ejecución con llama.cpp y herramientas derivadas.
 
-El repositorio incluye además dos ficheros mmproj (Q8_0 y f16), lo que indica que el modelo conserva capacidad multimodal de entrada de imagen, coherente con la etiqueta text-image-to-text de la ficha de HuggingFace. El repositorio ocupa 190,8 GB en total y ofrece un conjunto amplio de cuantizaciones estáticas, desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB).
+El repositorio incluye además dos ficheros mmproj (Q8_0 y f16), lo que indica que el modelo conserva capacidad multimodal de entrada de imagen, coherente con la etiqueta text-image-to-text de la ficha de Hugging Face. El repositorio ocupa 190,8 GB en total y ofrece un conjunto amplio de cuantizaciones estáticas, desde Q2_K (11,0 GB) hasta Q8_0 (29,1 GB).
 
 La relevancia de esta publicación es práctica: al ser una cuantización GGUF, un modelo de ~27B con visión puede desplegarse en una sola GPU de 24 GB e incluso en CPU con suficiente memoria RAM, sin necesidad de infraestructura de datacenter. Como contrapartida, el repositorio no incluye resultados de benchmarks, no documenta la longitud de contexto y no especifica la arquitectura interna del modelo base, por lo que su evaluación previa a producción exige pruebas propias.
 
@@ -19,7 +19,7 @@ La relevancia de esta publicación es práctica: al ser una cuantización GGUF, 
 | Tipos de cuantización | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K; además mmproj-Q8_0 y mmproj-f16 para la parte multimodal |
 | Idiomas soportados | Inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base está en formato HuggingFace/transformers |
+| Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base está en formato Hugging Face/transformers |
 | Dataset de ajuste | sriq-ai/sriq-sft-v1.3 |
 | Modelo base | sriq-ai/Sriqwen-V1.3 |
 | Tamaño del repositorio | 190,8 GB |
@@ -36,7 +36,7 @@ El aspecto técnico más relevante de esta publicación es la parte multimodal: 
 - Generación de texto conversacional en inglés, con un ajuste específico orientado a tareas de razonamiento (etiqueta reasoning).
 - Entrada de imagen además de texto (text-image-to-text), habilitada mediante los ficheros mmproj incluidos en el repositorio.
 - Razonamiento multi-paso, presumiblemente con cadenas de pensamiento, derivado del ajuste SFT sobre un dataset orientado a reasoning.
-- Ajuste sobre instrucciones conversacionales (etiqueta conversational en la ficha de HuggingFace).
+- Ajuste sobre instrucciones conversacionales (etiqueta conversational en la ficha de Hugging Face).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte explícito de agentes: no disponible en la información proporcionada.
 - Capacidades multilingües: no. El modelo declara únicamente inglés (en).
@@ -90,7 +90,7 @@ Comparación de rendimiento: no disponible para Sriqwen V1.3, al no haberse publ
 - Dataset de ajuste opaco: la model card no describe la composición de sriq-ai/sriq-sft-v1.3, por lo que se desconocen sesgos potenciales, presencia de datos sintéticos y posibles problemas de contaminación.
 - Cuantizaciones de baja precisión: las variantes Q2_K y Q3_K (11-14,7 GB) degradan de forma perceptible la calidad, especialmente en tareas de razonamiento. Para razonamiento conviene partir de Q4_K_M o superior.
 - Sin cuantizaciones ponderadas ni imatrix: el propio autor indica que no las ha generado, lo que limita la calidad máxima alcanzable a igual tamaño de fichero.
-- Restricciones de licencia: la ficha declara Apache 2.0 tanto para la cuantización como para el modelo base, lo que en principio permite uso comercial. No obstante, conviene verificar la licencia real del modelo base original, ya que la información disponible solo refleja los metadatos de HuggingFace.
+- Restricciones de licencia: la ficha declara Apache 2.0 tanto para la cuantización como para el modelo base, lo que en principio permite uso comercial. No obstante, conviene verificar la licencia real del modelo base original, ya que la información disponible solo refleja los metadatos de Hugging Face.
 - Metadatos con fechas anómalas: el repositorio figura como creado y actualizado el 17 de septiembre de 2026, una fecha posterior a la esperada; conviene contrastar la procedencia y la vigencia del repositorio antes de integrarlo.
 - Repositorio sin tracción: 0 descargas y 0 likes implican ausencia de validación comunitaria, de informes de errores y de correcciones.
 - Compatibilidad multimodal dependiente del runtime: para usar la entrada de imagen es imprescindible cargar el fichero mmproj correspondiente en llama.cpp; otras herramientas pueden no soportarlo todavía.

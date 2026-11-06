@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Grid Reasoning Transformer es un modelo de investigación publicado por el usuario ritwika96 en HuggingFace que aborda las tareas de razonamiento visual abstracto del benchmark ARC-AGI-2. No es un modelo de lenguaje: opera sobre rejillas de hasta 30×30 celdas con 10 clases de color, aprende mecanismos espaciales a partir de pares de demostración (entrada/salida) y los aplica a una rejilla de consulta. La arquitectura es un Transformer puro entrenado desde cero con atención axial (fila y columna), memoria de conjunto y un estado recurrente compuesto por tokens de razonamiento.
+El Grid Reasoning Transformer es un modelo de investigación publicado por el usuario ritwika96 en Hugging Face que aborda las tareas de razonamiento visual abstracto del benchmark ARC-AGI-2. No es un modelo de lenguaje: opera sobre rejillas de hasta 30×30 celdas con 10 clases de color, aprende mecanismos espaciales a partir de pares de demostración (entrada/salida) y los aplica a una rejilla de consulta. La arquitectura es un Transformer puro entrenado desde cero con atención axial (fila y columna), memoria de conjunto y un estado recurrente compuesto por tokens de razonamiento.
 
 El modelo por defecto tiene 43.451.974 parámetros, anchura 512, ocho cabezas de atención, anchura oculta SwiGLU de 1536, dos capas axiales, dos capas de pares, dos capas de conjunto, dos bloques de razonamiento y dos capas de decodificador. Su innovación central es un bucle recurrente sobre 64 tokens de espacio de trabajo con pesos compartidos entre iteraciones: aumentar el número de iteraciones incrementa el cómputo sin añadir parámetros.
 
@@ -76,7 +76,7 @@ El autor no proporciona comparaciones con otros modelos, y la búsqueda web no d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arc-agi2-grid-transformer-trainium-v1 | 43,45 M | lienzo 30×30, 4 demostraciones | no disponible | no disponible | HuggingFace, 0 descargas |
+| arc-agi2-grid-transformer-trainium-v1 | 43,45 M | lienzo 30×30, 4 demostraciones | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,8 +94,8 @@ El autor no proporciona comparaciones con otros modelos, y la búsqueda web no d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ritwika96/arc-agi2-grid-transformer-trainium-v1
-- Model card del autor: incluida en el propio repositorio de HuggingFace.
+- Hugging Face: https://huggingface.co/ritwika96/arc-agi2-grid-transformer-trainium-v1
+- Model card del autor: incluida en el propio repositorio de Hugging Face.
 - Repositorio de tareas de François Chollet (citado por el autor como fuente de ARC-AGI-1): URL no proporcionada en la información disponible.
 - Paper, blog, repositorio de código o demo: no disponible.
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos eran páginas genéricas de Reddit sin relación.

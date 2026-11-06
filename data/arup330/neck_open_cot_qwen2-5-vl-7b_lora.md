@@ -77,11 +77,11 @@ La comparacion se limita a los repositorios identificados en la busqueda; los da
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Arup330/Neck_open_CoT_Qwen2.5-VL-7B_lora | Adaptador sobre base 7B | No disponible | apache-2.0 | HuggingFace, 0,2 GB, 0 descargas | Este modelo; ajuste con CoT, dominio "Neck" |
-| Arup330/Abdomen_open_CoT_Qwen2.5-VL-7B_lora | Adaptador sobre base 7B | No disponible | No disponible en la informacion | HuggingFace | Repo hermano, mismo autor, dominio abdominal con CoT |
-| Arup330/Abdomen_open_noCoT_Qwen2.5-VL-7B_lora | Adaptador sobre base 7B | No disponible | No disponible en la informacion | HuggingFace | Repo hermano, variante sin CoT; permite aislar el efecto del razonamiento explicito |
-| unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit | 7B | No disponible | No disponible en la informacion | HuggingFace | Modelo base sobre el que se aplica el LoRA |
-| Qwen2.5-VL-7B-Instruct (familia Qwen) | 7B | No disponible | No disponible en la informacion | HuggingFace / GitHub | Modelo original de la familia; referencia de capacidades heredadas |
+| Arup330/Neck_open_CoT_Qwen2.5-VL-7B_lora | Adaptador sobre base 7B | No disponible | apache-2.0 | Hugging Face, 0,2 GB, 0 descargas | Este modelo; ajuste con CoT, dominio "Neck" |
+| Arup330/Abdomen_open_CoT_Qwen2.5-VL-7B_lora | Adaptador sobre base 7B | No disponible | No disponible en la informacion | Hugging Face | Repo hermano, mismo autor, dominio abdominal con CoT |
+| Arup330/Abdomen_open_noCoT_Qwen2.5-VL-7B_lora | Adaptador sobre base 7B | No disponible | No disponible en la informacion | Hugging Face | Repo hermano, variante sin CoT; permite aislar el efecto del razonamiento explicito |
+| unsloth/qwen2.5-vl-7b-instruct-unsloth-bnb-4bit | 7B | No disponible | No disponible en la informacion | Hugging Face | Modelo base sobre el que se aplica el LoRA |
+| Qwen2.5-VL-7B-Instruct (familia Qwen) | 7B | No disponible | No disponible en la informacion | Hugging Face / GitHub | Modelo original de la familia; referencia de capacidades heredadas |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ La comparacion se limita a los repositorios identificados en la busqueda; los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arup330/Neck_open_CoT_Qwen2.5-VL-7B_lora
+- Modelo en Hugging Face: https://huggingface.co/Arup330/Neck_open_CoT_Qwen2.5-VL-7B_lora
 - Repo hermano (Abdomen, con CoT): https://huggingface.co/Arup330/Abdomen_open_CoT_Qwen2.5-VL-7B_lora
 - Repo hermano (Abdomen, sin CoT): https://huggingface.co/Arup330/Abdomen_open_noCoT_Qwen2.5-VL-7B_lora
 - Archivos del repo hermano: https://huggingface.co/Arup330/Abdomen_open_noCoT_Qwen2.5-VL-7B_lora/tree/main

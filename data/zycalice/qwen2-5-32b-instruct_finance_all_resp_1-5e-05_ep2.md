@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen2.5-32B-Instruct_finance_all_resp_1.5e-05_ep2 es un ajuste fino supervisado (SFT) del modelo Qwen2.5-32B-Instruct, publicado por el usuario zycalice en HuggingFace. El nombre del repositorio sugiere un entrenamiento orientado al dominio financiero ("finance"), con un learning rate de 1.5e-05 y 2 epocas, aunque la model card no documenta la composicion del dataset ni el objetivo concreto del ajuste. El modelo base, Qwen2.5-32B-Instruct, es un transformer denso de 32.500 millones de parametros desarrollado por Alibaba Qwen, con una ventana de contexto nativa de 131.072 tokens y capacidades multilingues.
+Qwen2.5-32B-Instruct_finance_all_resp_1.5e-05_ep2 es un ajuste fino supervisado (SFT) del modelo Qwen2.5-32B-Instruct, publicado por el usuario zycalice en Hugging Face. El nombre del repositorio sugiere un entrenamiento orientado al dominio financiero ("finance"), con un learning rate de 1.5e-05 y 2 epocas, aunque la model card no documenta la composicion del dataset ni el objetivo concreto del ajuste. El modelo base, Qwen2.5-32B-Instruct, es un transformer denso de 32.500 millones de parametros desarrollado por Alibaba Qwen, con una ventana de contexto nativa de 131.072 tokens y capacidades multilingues.
 
-El ajuste se realizo con las librerias TRL (0.24.0) y Unsloth, sobre Transformers 4.57.3 y PyTorch 2.9.0, y se ejecuto en la infraestructura HF Jobs segun las etiquetas del repositorio. El resultado es un checkpoint de aproximadamente 9,7 GB en formato safetensors, compatible con la libreria transformers y con la API de endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+El ajuste se realizo con las librerias TRL (0.24.0) y Unsloth, sobre Transformers 4.57.3 y PyTorch 2.9.0, y se ejecuto en la infraestructura HF Jobs segun las etiquetas del repositorio. El resultado es un checkpoint de aproximadamente 9,7 GB en formato safetensors, compatible con la libreria transformers y con la API de endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un experimento de especializacion vertical sobre un modelo abierto de gran tamano, util para quienes quieran evaluar ajustes financieros de la familia Qwen2.5 o reutilizar el checkpoint como punto de partida. No obstante, la ausencia de documentacion sobre datos, evaluacion y licencia exige precaucion antes de cualquier uso en produccion.
 
@@ -45,7 +45,7 @@ El entrenamiento del checkpoint de zycalice es un SFT (supervised fine-tuning) e
 - Asistencia en atencion al cliente de banca o seguros: conversaciones multi-turno con contexto largo y terminologia del dominio, siempre que se valide el ajuste con pruebas propias por la falta de evaluacion publicada.
 - Generacion de resumenes de noticias economicas: sintesis de articulos y comunicados con vocabulario financiero, util para boletines internos o alertas.
 - Soporte a analistas en tareas de Q&A sobre normativa financiera: el modelo puede responder preguntas sobre regulacion o productos si se le proporciona el contexto documental en el prompt.
-- Prototipado de asistentes financieros en investigacion: como checkpoint de partida para experimentos academicos o pruebas internas de ajuste fino adicional, dado su caracter abierto en HuggingFace.
+- Prototipado de asistentes financieros en investigacion: como checkpoint de partida para experimentos academicos o pruebas internas de ajuste fino adicional, dado su caracter abierto en Hugging Face.
 - Educacion financiera: generacion de explicaciones divulgativas sobre conceptos de inversion o contabilidad, con la advertencia de que no debe usarse como asesoramiento financiero real.
 
 ## Benchmarks y rendimiento
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en FP16/BF16, aproximadamente 65 GB de VRAM solo para pesos (32,5B x 2 bytes), mas overhead de activaciones y cache KV; en cuantizacion 8 bits, unos 33 GB; en 4 bits, unos 17-20 GB.
 - GPU recomendadas: A100 80 GB, H100 80 GB o H200 para FP16 sin cuantizar; A100 40 GB o L40S 48 GB con cuantizacion 8 bits; RTX 4090 24 GB o RTX A6000 48 GB con cuantizacion 4 bits para inferencia de un solo usuario.
 - Cabe en GPU de consumo: si, en RTX 3090/4090 (24 GB) con cuantizacion 4 bits (GPTQ, AWQ o GGUF Q4), a costa de perdida de calidad y velocidad.
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama, SGLang y transformers con bitsandbytes; el repositorio es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama, SGLang y transformers con bitsandbytes; el repositorio es compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware y de la cuantizacion. Como orientacion general para un modelo denso de 32B en A100 80 GB con vLLM, se esperan decenas de tokens por segundo por peticion, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zycalice/Qwen2.5-32B-Instruct_finance_all_resp_1.5e-05_ep2 | 32,5B | 131.072 (heredado) | no disponible | HuggingFace | Ajuste SFT financiero sin evaluacion publicada |
-| Qwen2.5-32B-Instruct | 32,5B | 131.072 | Apache 2.0 | HuggingFace, ModelScope | Modelo base oficial, con benchmarks publicados |
-| Qwen2.5-14B-Instruct | 14,7B | 131.072 | Apache 2.0 | HuggingFace, ModelScope | Alternativa mas ligera, cabe en GPU de 24 GB en 4 bits con mas holgura |
-| Llama 3.1 70B Instruct | 70B | 131.072 | Llama 3.1 Community License | HuggingFace, Meta | Mayor calidad general, pero requiere mas VRAM y licencia con restricciones |
+| zycalice/Qwen2.5-32B-Instruct_finance_all_resp_1.5e-05_ep2 | 32,5B | 131.072 (heredado) | no disponible | Hugging Face | Ajuste SFT financiero sin evaluacion publicada |
+| Qwen2.5-32B-Instruct | 32,5B | 131.072 | Apache 2.0 | Hugging Face, ModelScope | Modelo base oficial, con benchmarks publicados |
+| Qwen2.5-14B-Instruct | 14,7B | 131.072 | Apache 2.0 | Hugging Face, ModelScope | Alternativa mas ligera, cabe en GPU de 24 GB en 4 bits con mas holgura |
+| Llama 3.1 70B Instruct | 70B | 131.072 | Llama 3.1 Community License | Hugging Face, Meta | Mayor calidad general, pero requiere mas VRAM y licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -79,11 +79,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Idiomas no declarados en la model card; el ajuste financiero podria haber reducido el rendimiento multilingue del modelo base si los datos eran mayoritariamente en un solo idioma.
 - Contexto de 131.072 tokens heredado del modelo base, pero no verificado tras el ajuste; el fine-tuning con secuencias cortas puede degradar el comportamiento en contextos largos.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion por parte de la comunidad.
-- Fecha de creacion futura (2026-11-04) en los metadatos de HuggingFace, lo que sugiere un posible error de marca temporal o un repositorio de prueba.
+- Fecha de creacion futura (2026-11-04) en los metadatos de Hugging Face, lo que sugiere un posible error de marca temporal o un repositorio de prueba.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zycalice/Qwen2.5-32B-Instruct_finance_all_resp_1.5e-05_ep2
+- Modelo en Hugging Face: https://huggingface.co/zycalice/Qwen2.5-32B-Instruct_finance_all_resp_1.5e-05_ep2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-32B-Instruct
 - Modelo base original (Alibaba): https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-803a8f69-2e58-44fa-94cc-19521d7ae6a0-5Exp29ad07c2abbc31f3` es un checkpoint publicado por el usuario `cwaud` en HuggingFace. Por su nomenclatura (`tournament-exp-s1`) y por la fecha de creacion, parece tratarse de un experimento derivado de un proceso de comparacion o torneo entre variantes de modelo, mas que de un lanzamiento oficial de producto. El repositorio acumula 14 descargas y 0 likes, lo que lo situa como un artefacto de investigacion con difusion muy limitada.
+El modelo identificado como `cwaud/tournament-exp-s1-803a8f69-2e58-44fa-94cc-19521d7ae6a0-5Exp29ad07c2abbc31f3` es un checkpoint publicado por el usuario `cwaud` en Hugging Face. Por su nomenclatura (`tournament-exp-s1`) y por la fecha de creacion, parece tratarse de un experimento derivado de un proceso de comparacion o torneo entre variantes de modelo, mas que de un lanzamiento oficial de producto. El repositorio acumula 14 descargas y 0 likes, lo que lo situa como un artefacto de investigacion con difusion muy limitada.
 
 La unica etiqueta de arquitectura presente en la informacion disponible es `lfm2`, lo que asocia el checkpoint a la familia Liquid Foundation Model 2 (LFM2) de Liquid AI, aunque no se confirma si se trata de un modelo base, un fine-tune o una variante experimental. El dato real extraido de los pesos `safetensors` indica 1.170.340.608 parametros totales (aproximadamente 1,17 mil millones), un tamano coherente con la variante intermedia de dicha familia. No se dispone de informacion sobre contexto, licencia, idiomas ni pipeline de inferencia.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cwaud/tournament-exp-s1 (este modelo) | 1,17 B | no disponible | no disponible | HuggingFace, 14 descargas | Sin tarjeta de modelo ni documentacion |
+| cwaud/tournament-exp-s1 (este modelo) | 1,17 B | no disponible | no disponible | Hugging Face, 14 descargas | Sin tarjeta de modelo ni documentacion |
 | Familia LFM2 (referencia de arquitectura) | Variantes de 350M, 700M y 1.2B | no disponible en esta ficha | no disponible | Modelos oficiales de Liquid AI | No se confirma que este checkpoint derive de ellos |
 | Alternativas comparables de ~1B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados para una comparacion rigurosa |
 
@@ -86,5 +86,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-803a8f69-2e58-44fa-94cc-19521d7ae6a0-5Exp29ad07c2abbc31f3
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-803a8f69-2e58-44fa-94cc-19521d7ae6a0-5Exp29ad07c2abbc31f3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

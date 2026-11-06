@@ -2,7 +2,7 @@
 
 ## Resumen
 
-U1-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería stable-baselines3, publicado por el usuario Flohrex en HuggingFace. El modelo resuelve la tarea LunarLander-v2 (y, según la model card, también LunarLander-v3) del entorno Gymnasium, un problema clasico de control continuo en el que un modulo lunar debe aterrizar de forma segura sobre una plataforma entre dos banderas, controlando empuje y orientacion.
+U1-LunarLander-v2 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería stable-baselines3, publicado por el usuario Flohrex en Hugging Face. El modelo resuelve la tarea LunarLander-v2 (y, según la model card, también LunarLander-v3) del entorno Gymnasium, un problema clasico de control continuo en el que un modulo lunar debe aterrizar de forma segura sobre una plataforma entre dos banderas, controlando empuje y orientacion.
 
 No se trata de un modelo de lenguaje ni de un transformer generativo: es una politica neuronal compacta que mapea observaciones de 8 dimensiones (posicion, velocidad, angulo, velocidad angular y estado de las patas) a una de 4 acciones discretas (no hacer nada, encender motor principal, encender motor izquierdo, encender motor derecho). Su relevancia es acotada: sirve como referencia reproducible de entrenamiento PPO en un entorno de benchmark clasico y como ejemplo de publicacion de agentes de RL en el Hub mediante `huggingface_sb3`.
 
@@ -41,7 +41,7 @@ No se especifican en la informacion disponible el numero de pasos de entrenamien
 - Evaluacion de referencia de PPO: cargar el agente con `load_from_hub` y medir su recompensa media en LunarLander-v2 para contrastar con implementaciones propias o con hiperparametros alternativos.
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo funcional de politica entrenada para ilustrar el ciclo observacion-accion-recompensa en un entorno de control continuo.
 - Baseline en experimentos de RL: comparar nuevas variantes (SAC, DQN, A2C) contra esta politica PPO en el mismo entorno y con la misma metrica de recompensa media.
-- Pruebas de infraestructura de despliegue de agentes RL: validar pipelines de carga de modelos desde HuggingFace con `huggingface_sb3` y ejecucion en Gymnasium.
+- Pruebas de infraestructura de despliegue de agentes RL: validar pipelines de carga de modelos desde Hugging Face con `huggingface_sb3` y ejecucion en Gymnasium.
 - Generacion de demostraciones y visualizaciones: renderizar episodios del agente para material divulgativo o para inspeccion cualitativa del comportamiento de aterrizaje.
 - Reproduccion de resultados: punto de partida para replicar el resultado declarado (256.14 +/- 21.58 de recompensa media) y estudiar la varianza entre semillas.
 
@@ -67,9 +67,9 @@ No se han publicado en la informacion disponible resultados adicionales (por eje
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Flohrex/U1-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| Flohrex/U1-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | Agentes PPO oficiales de stable-baselines3 (RL Zoo) | PPO | LunarLander-v2 | configuracion MLP 64x64 por defecto | no aplica | MIT (codigo de la libreria) | GitHub DLR-RM/stable-baselines3 |
-| Agentes de la comunidad en el Hub (tag `LunarLander-v2`) | PPO/DQN/A2C | LunarLander-v2 | variable | no aplica | variable, frecuentemente no declarada | HuggingFace |
+| Agentes de la comunidad en el Hub (tag `LunarLander-v2`) | PPO/DQN/A2C | LunarLander-v2 | variable | no aplica | variable, frecuentemente no declarada | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable mas alla del valor declarado por este agente.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Flohrex/U1-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Flohrex/U1-LunarLander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

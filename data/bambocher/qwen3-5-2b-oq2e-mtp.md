@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bambocher/Qwen3.5-2B-oQ2e-mtp es un checkpoint cuantizado del modelo Qwen3.5-2B, publicado por el usuario bambocher en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formato MLX mediante la herramienta oQ (oMLX v0.7.1rc1), que aplica cuantización de precisión mixta con el objetivo de reducir el espacio en disco y la memoria necesaria para inferencia en hardware Apple Silicon. El checkpoint completo ocupa 1,345 GiB y contiene 2.274.069.824 parámetros lógicos.
+bambocher/Qwen3.5-2B-oQ2e-mtp es un checkpoint cuantizado del modelo Qwen3.5-2B, publicado por el usuario bambocher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formato MLX mediante la herramienta oQ (oMLX v0.7.1rc1), que aplica cuantización de precisión mixta con el objetivo de reducir el espacio en disco y la memoria necesaria para inferencia en hardware Apple Silicon. El checkpoint completo ocupa 1,345 GiB y contiene 2.274.069.824 parámetros lógicos.
 
 La particularidad de esta conversión es la distribución heterogénea de bits: el 66,168% de los pesos (1.505B) se almacena en affine 2-bit con grupo de 64, mientras que el 14,967% (0.340B) se mantiene en BF16 para preservar sensibilidad. El resultado es un promedio efectivo de 5,082 bits por peso, muy por debajo de los 16 bits de un checkpoint BF16 equivalente. El repositorio incluye además el codificador visual (0.331B) y una cabeza MTP (multi-token prediction) de 0.061B.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bambocher/Qwen3.5-2B-oQ2e-mtp | 2,274B | no disponible | Mixta 2-8 bits + BF16 (5,082 bits/peso) | no disponible | HuggingFace, 6 descargas |
+| bambocher/Qwen3.5-2B-oQ2e-mtp | 2,274B | no disponible | Mixta 2-8 bits + BF16 (5,082 bits/peso) | no disponible | Hugging Face, 6 descargas |
 | Qwen3.5-2B en BF16 (modelo base) | 2,274B | no disponible | BF16 (16 bits/peso), ~4,5 GB estimados | no disponible | Referenciado por este checkpoint, sin enlace en la información disponible |
 | Otras conversiones MLX 4-bit del mismo modelo base | 2,274B | no disponible | 4 bits uniformes, ~1,2 GB estimados | no disponible | no disponible en la información proporcionada |
 
@@ -83,7 +83,7 @@ La comparación se limita al tamaño y al esquema de cuantización: no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ2e-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ2e-mtp
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Model card del modelo base Qwen3.5-2B: no disponible en la información proporcionada
 - Paper o documentación técnica del modelo base: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ModernBERT-CJE-tiny es un modelo de lenguaje de la familia ModernBERT publicado por el usuario KdaiP en HuggingFace. Se trata de un modelo encoder-only basado en la arquitectura ModernBERT, una revisión moderna de BERT que incorpora mejoras como atención con rotación posicional (RoPE), activaciones GeGLU y capas de normalización más eficientes. Con 19.496.960 parámetros, es un modelo de tamano muy reducido, orientado presumiblemente a tareas de codificación de texto, clasificación o extracción de representaciones.
+ModernBERT-CJE-tiny es un modelo de lenguaje de la familia ModernBERT publicado por el usuario KdaiP en Hugging Face. Se trata de un modelo encoder-only basado en la arquitectura ModernBERT, una revisión moderna de BERT que incorpora mejoras como atención con rotación posicional (RoPE), activaciones GeGLU y capas de normalización más eficientes. Con 19.496.960 parámetros, es un modelo de tamano muy reducido, orientado presumiblemente a tareas de codificación de texto, clasificación o extracción de representaciones.
 
 El sufijo "CJE" en el nombre no está documentado en la información disponible, por lo que no es posible determinar con certeza a qué tarea o dataset específico corresponde. El modelo se distribuye en formato safetensors con licencia MIT, lo que permite uso comercial sin restricciones significativas. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas en el momento de la consulta.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: inferior a 1 GB en precisión FP32 (19,5 M de parámetros equivalen a ~78 MB de pesos); en FP16, ~39 MB; en cuantización INT8, ~20 MB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; no requiere GPUs de datacenter como A100 o H100. Una GTX 1050, RTX 3050 o incluso una iGPU moderna pueden ejecutarlo.
 - Cabe en GPU consumer: sí, en cualquier GPU consumer de los últimos diez anos, y también en CPU sin problemas.
-- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, llama.cpp (si se convierte a GGUF, aunque no es el formato nativo), Text Embeddings Inference (TEI) de HuggingFace para servir embeddings.
+- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, llama.cpp (si se convierte a GGUF, aunque no es el formato nativo), Text Embeddings Inference (TEI) de Hugging Face para servir embeddings.
 - Latencia y throughput estimados: no disponibles; al ser un modelo tiny, se espera latencia de milisegundos en CPU y throughput alto en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ModernBERT-CJE-tiny | 19,5 M | no disponible | MIT | HuggingFace |
-| ModernBERT-base | ~149 M | 8192 tokens | Apache 2.0 | HuggingFace |
-| BERT-tiny | ~4,4 M | 512 tokens | Apache 2.0 | HuggingFace |
-| DistilBERT | ~66 M | 512 tokens | Apache 2.0 | HuggingFace |
+| ModernBERT-CJE-tiny | 19,5 M | no disponible | MIT | Hugging Face |
+| ModernBERT-base | ~149 M | 8192 tokens | Apache 2.0 | Hugging Face |
+| BERT-tiny | ~4,4 M | 512 tokens | Apache 2.0 | Hugging Face |
+| DistilBERT | ~66 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a datos estructurales, ya que no hay benchmarks publicados para ModernBERT-CJE-tiny que permitan comparar rendimiento en tareas concretas. ModernBERT-base ofrece un contexto mucho mayor (8192 tokens) y más parámetros, mientras que BERT-tiny es aún más pequeno pero con arquitectura clásica sin las mejoras de ModernBERT.
 
@@ -80,7 +80,7 @@ La comparativa se limita a datos estructurales, ya que no hay benchmarks publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KdaiP/ModernBERT-CJE-tiny
+- Hugging Face: https://huggingface.co/KdaiP/ModernBERT-CJE-tiny
 - Paper de ModernBERT: no disponible en la informacion proporcionada
 - Repositorio del autor: no disponible
 - Demos: no disponible

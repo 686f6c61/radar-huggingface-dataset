@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Khanmodel1.0.0-Full es un modelo de lenguaje de 3.085.938.688 parámetros (aproximadamente 3,1 mil millones) publicado en HuggingFace por el usuario Inokun el 15 de agosto de 2026. El repositorio contiene pesos en formato safetensors con un tamaño total de 6,2 GB, lo que sugiere una precisión de almacenamiento de 16 bits (fp16) o similar. Los metadatos del modelo incluyen las etiquetas "qwen2", "text-generation" y "conversational", lo que apunta a que podría estar basado en la arquitectura Qwen2, aunque esta información no se confirma en la documentación oficial.
+Khanmodel1.0.0-Full es un modelo de lenguaje de 3.085.938.688 parámetros (aproximadamente 3,1 mil millones) publicado en Hugging Face por el usuario Inokun el 15 de agosto de 2026. El repositorio contiene pesos en formato safetensors con un tamaño total de 6,2 GB, lo que sugiere una precisión de almacenamiento de 16 bits (fp16) o similar. Los metadatos del modelo incluyen las etiquetas "qwen2", "text-generation" y "conversational", lo que apunta a que podría estar basado en la arquitectura Qwen2, aunque esta información no se confirma en la documentación oficial.
 
-La model card es una plantilla automática generada por HuggingFace, sin ningún dato concreto sobre el desarrollador, el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados. No se han registrado descargas ni valoraciones, y no existe documentación técnica adicional. En consecuencia, la información disponible es extremadamente limitada y cualquier uso en producción debería considerarse de alto riesgo debido a la ausencia total de especificaciones verificables.
+La model card es una plantilla automática generada por Hugging Face, sin ningún dato concreto sobre el desarrollador, el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados. No se han registrado descargas ni valoraciones, y no existe documentación técnica adicional. En consecuencia, la información disponible es extremadamente limitada y cualquier uso en producción debería considerarse de alto riesgo debido a la ausencia total de especificaciones verificables.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ Dado el tamaño de 3,1 mil millones de parámetros, se pueden realizar estimacio
 - VRAM estimada: en fp16, los pesos ocupan aproximadamente 6,2 GB (coincide con el tamaño del repo). Para inferencia con KV cache y overhead, se recomiendan al menos 8 GB de VRAM.
 - Con cuantización a 4 bits (si se aplicara), el modelo podría caber en unos 2 GB de VRAM, aunque no se proporcionan archivos cuantizados.
 - GPUs compatibles: tarjetas con 8 GB o más, como RTX 3060, RTX 4060, RTX 4070, o GPUs de datacenter como A10, A100, etc.
-- Opciones de despliegue: al ser un modelo transformers estándar, podría cargarse con las bibliotecas de HuggingFace (transformers, accelerate) y servirse con vLLM o TGI, aunque no hay garantía de compatibilidad sin probar.
+- Opciones de despliegue: al ser un modelo transformers estándar, podría cargarse con las bibliotecas de Hugging Face (transformers, accelerate) y servirse con vLLM o TGI, aunque no hay garantía de compatibilidad sin probar.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,5 +66,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Inokun/Khanmodel1.0.0-Full
+- Modelo en Hugging Face: https://huggingface.co/Inokun/Khanmodel1.0.0-Full
 - Paper de Lacoste et al. (referenciado en tags, no relacionado con el modelo): https://arxiv.org/abs/1910.09700

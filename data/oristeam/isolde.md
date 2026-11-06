@@ -1,11 +1,11 @@
 # OrisTeam/Isolde
 
 ## Resumen
-Isolde es un modelo de la serie Oris publicado por el equipo OrisTeam en HuggingFace. Segun las etiquetas del repositorio, se trata de un encoder de tipo BERT orientado a extraccion de caracteristicas (feature-extraction) y entrenado con el objetivo de masked language modeling. Con 16.872.704 parametros (aproximadamente 16,9 millones), es un modelo compacto, muy por debajo de los encoders BERT clasicos de 110 millones de parametros.
+Isolde es un modelo de la serie Oris publicado por el equipo OrisTeam en Hugging Face. Segun las etiquetas del repositorio, se trata de un encoder de tipo BERT orientado a extraccion de caracteristicas (feature-extraction) y entrenado con el objetivo de masked language modeling. Con 16.872.704 parametros (aproximadamente 16,9 millones), es un modelo compacto, muy por debajo de los encoders BERT clasicos de 110 millones de parametros.
 
 El modelo esta especializado en polaco (etiqueta de idioma `pl`) y se distribuye a traves de la libreria transformers con pesos en safetensors. El repositorio incluye la etiqueta `custom_code`, lo que implica que requiere codigo personalizado para su carga, y esta vinculado a la familia de herramientas Oris/OFlow (versiones `oflow-0.2`).
 
-Su relevancia practica es limitada por el momento: no tiene descargas registradas, cuenta con un solo "like" y el acceso esta restringido (gated), de modo que cualquier uso requiere aceptar condiciones en HuggingFace. La informacion publica disponible no incluye detalles sobre datos de entrenamiento, longitud de contexto ni resultados de evaluacion.
+Su relevancia practica es limitada por el momento: no tiene descargas registradas, cuenta con un solo "like" y el acceso esta restringido (gated), de modo que cualquier uso requiere aceptar condiciones en Hugging Face. La informacion publica disponible no incluye detalles sobre datos de entrenamiento, longitud de contexto ni resultados de evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada por el momento: no tiene descargas registrada
 | Pipeline declarado | feature-extraction |
 | Familia / ecosistema | Oris, OFlow 0.2 |
 | Tamano del repositorio | 0,1 GB |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
 | Descargas / likes | 0 descargas / 1 like |
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 No disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre alternativas comparables: los enlaces recuperados corresponden a canales y listas de YouTube sin relacion con el proyecto. No se dispone de datos verificados de parametros, contexto, rendimiento o licencia de modelos comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Licencia: `oris-research-license` (etiquetada como `license:other`). No se dispone del texto de la licencia en la informacion proporcionada, por lo que no puede confirmarse si permite uso comercial. Es imprescindible revisar los terminos antes de cualquier despliegue en produccion.
 - Cobertura idiomatica: unicamente se declara polaco. No hay evidencia de soporte multilingue ni de castellano.
 - Contexto: no se especifica la longitud maxima de secuencia. Al tratarse de un encoder tipo BERT, es habitual un limite en el entorno de los 512 tokens, pero este dato no se confirma en la documentacion disponible y debe verificarse antes de usarlo con entradas largas.
@@ -78,5 +78,5 @@ No disponible. La busqueda web realizada no devolvio resultados relevantes sobre
 - Ausencia de benchmarks: no existen resultados publicados que permitan comparar su calidad frente a alternativas consolidadas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/OrisTeam/Isolde
+- Modelo en Hugging Face: https://huggingface.co/OrisTeam/Isolde
 - La busqueda web realizada no devolvio enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

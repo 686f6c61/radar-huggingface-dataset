@@ -77,11 +77,11 @@ La comparativa se limita a las variantes de la misma familia por falta de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/internvl3.5-8b
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/internvl3.5-8b
 - Modelo base (OpenGVLab): https://huggingface.co/OpenGVLab/InternVL3_5-8B-HF
 - Repositorio GitHub KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de InternVL en KerasFormers: https://imvision12.github.io/KerasFormers/internvl/
-- Coleccion InternVL en HuggingFace: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
+- Coleccion InternVL en Hugging Face: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
 - Blog oficial InternVL3.5: https://internvl.github.io/blog/2025-08-26-InternVL-3.5/
 - Blog oficial InternVL3: https://internvl.github.io/blog/2025-04-11-InternVL-3.0/
 - Repositorio GitHub InternVL: https://github.com/OpenGVLab/InternVL

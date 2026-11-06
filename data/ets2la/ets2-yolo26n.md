@@ -89,8 +89,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tarea | Parametros | Entrada / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ETS2LA/ets2-yolo26n | Deteccion de objetos, 14 clases de ETS2 | no disponible | Imagen; resolucion no disponible | MIT | HuggingFace (ONNX) |
-| Ultralytics/YOLO26 (nano) | Deteccion de objetos generica (COCO) | no disponible | Imagen | AGPL-3.0 por defecto en Ultralytics | HuggingFace / Ultralytics |
+| ETS2LA/ets2-yolo26n | Deteccion de objetos, 14 clases de ETS2 | no disponible | Imagen; resolucion no disponible | MIT | Hugging Face (ONNX) |
+| Ultralytics/YOLO26 (nano) | Deteccion de objetos generica (COCO) | no disponible | Imagen | AGPL-3.0 por defecto en Ultralytics | Hugging Face / Ultralytics |
 | Ultralytics YOLO11n | Deteccion de objetos generica (COCO) | ~2,6 M (documentacion publica de Ultralytics) | Imagen | AGPL-3.0 por defecto | Ultralytics |
 | Ultralytics YOLOv8n | Deteccion de objetos generica (COCO) | ~3,2 M (documentacion publica de Ultralytics) | Imagen | AGPL-3.0 por defecto | Ultralytics |
 
@@ -110,7 +110,7 @@ Nota: las cifras de parametros de los modelos comparativos proceden de la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ETS2LA/ets2-yolo26n
+- Modelo en Hugging Face: https://huggingface.co/ETS2LA/ets2-yolo26n
 - Dataset de entrenamiento: https://huggingface.co/datasets/ETS2LA/ets2-object-detection-2k
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26
 - Sitio oficial del proyecto ETS2LA: https://ets2la.com/

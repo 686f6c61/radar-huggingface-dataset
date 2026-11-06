@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AFNN (Adaptive Fractal Neural Network) es un experimento de arquitectura presentado por Ahmed Al-Amin (usuario de HuggingFace Ahmedethfw) cuyo objetivo no es resolver una tarea concreta, sino comprobar si una red neuronal de estructura fractal, construida de forma recursiva, con combinaciones de ramas aprendidas y capacidad de crecimiento durante el entrenamiento, puede aprender representaciones visuales utiles y generalizar. El repositorio de HuggingFace no contiene pesos: su tamano declarado es de 0,0 GB, sin descargas y con un unico "like", y tanto la licencia como los idiomas y el pipeline aparecen como no disponibles.
+AFNN (Adaptive Fractal Neural Network) es un experimento de arquitectura presentado por Ahmed Al-Amin (usuario de Hugging Face Ahmedethfw) cuyo objetivo no es resolver una tarea concreta, sino comprobar si una red neuronal de estructura fractal, construida de forma recursiva, con combinaciones de ramas aprendidas y capacidad de crecimiento durante el entrenamiento, puede aprender representaciones visuales utiles y generalizar. El repositorio de Hugging Face no contiene pesos: su tamano declarado es de 0,0 GB, sin descargas y con un unico "like", y tanto la licencia como los idiomas y el pipeline aparecen como no disponibles.
 
 La pieza central es el FractalBlock, un bloque autosimilar que repite la misma regla a distintas profundidades y que funde sus ramas mediante un WeightedMerge con un logit aprendible por rama normalizado con softmax (out = suma_i softmax(logits)_i * branch_i(x)). La red completa encadena una convolucion stem, dos etapas fractales separadas por una convolucion con stride 2, un global average pooling y una capa lineal de clasificacion. El banco de pruebas experimental es un conjunto de imagenes de 94 clases y 57.812 imagenes.
 
@@ -78,7 +78,7 @@ La comparacion con ResNet e Inception procede de las referencias que la propia m
 ## Limitaciones y advertencias
 
 - No es un modelo de lenguaje: no genera texto, no mantiene conversaciones, no soporta tool calling ni agentes, y no tiene ventana de contexto.
-- No hay pesos publicados: el repositorio ocupa 0,0 GB, por lo que no puede ejecutarse inferencia directamente desde HuggingFace sin reentrenar.
+- No hay pesos publicados: el repositorio ocupa 0,0 GB, por lo que no puede ejecutarse inferencia directamente desde Hugging Face sin reentrenar.
 - Licencia no disponible: no puede asumirse permiso de uso comercial, modificacion o redistribucion. Debe contactarse con el autor (ahmedahmedalmin23@gmail.com) antes de cualquier uso en produccion.
 - Validacion empirica incompleta: la informacion disponible no incluye las cifras de exactitud anunciadas en la model card, ni el numero de parametros, ni el coste computacional del entrenamiento. Las afirmaciones sobre aprendizaje y generalizacion no pueden verificarse con los datos disponibles.
 - Framework de implementacion no especificado en el fragmento disponible: conviene revisar el codigo del repositorio antes de planificar su integracion.
@@ -89,7 +89,7 @@ La comparacion con ResNet e Inception procede de las referencias que la propia m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahmedethfw/AFNN
+- Modelo en Hugging Face: https://huggingface.co/Ahmedethfw/AFNN
 - Interfaz grafica incluida en el repositorio: docs/images/gui.png
 - Paper de referencia citado en la model card (FractalNet, Larsson, Maire y Shakhnarovich, 2016): https://arxiv.org/abs/1605.07648
 - Contacto del autor: ahmedahmedalmin23@gmail.com

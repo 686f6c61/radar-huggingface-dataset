@@ -97,7 +97,7 @@ No se dispone de datos comparativos frente a modelos alternativos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roomote/roomote-judgment-gliner
+- Modelo en Hugging Face: https://huggingface.co/roomote/roomote-judgment-gliner
 - Modelo base: https://huggingface.co/fastino/gliner2.5-base-v1
 - Repositorio GitHub de Roomote: https://github.com/RooCodeInc/Roomote
 - Perfil GitHub de Roomote: https://github.com/roomote

@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- [HuggingFace - HeatTok-VRSBench-7B](https://huggingface.co/Yingying11/HeatTok-VRSBench-7B)
+- [Hugging Face - HeatTok-VRSBench-7B](https://huggingface.co/Yingying11/HeatTok-VRSBench-7B)
 - [Paper en arXiv](https://arxiv.org/abs/2608.22485)
 - [Repositorio GitHub](https://github.com/YingyingYan1/HeatTok)
 - [Checkpoint HeatTok-EarthVQA-7B](https://huggingface.co/Yingying11/HeatTok-EarthVQA-7B)

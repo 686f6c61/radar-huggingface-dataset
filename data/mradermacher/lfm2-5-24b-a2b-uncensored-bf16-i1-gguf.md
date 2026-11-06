@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-Uncensored-BF16-i1-GGUF es una cuantizacion en formato GGUF del modelo LFM2.5-24B-A2B-Uncensored-BF16, publicado por el usuario mradermacher en HuggingFace. Se trata de una version "uncensored" (sin el alineamiento de seguridad habitual) del modelo LFM2.5-24B-A2B, que por su nomenclatura corresponde a la familia LFM (Liquid Foundation Models) de Liquid AI, con 24.000 millones de parametros totales y un diseno de tipo mixture-of-experts (MoE) con aproximadamente 2.000 millones de parametros activos, segun indica el sufijo "A2B".
+LFM2.5-24B-A2B-Uncensored-BF16-i1-GGUF es una cuantizacion en formato GGUF del modelo LFM2.5-24B-A2B-Uncensored-BF16, publicado por el usuario mradermacher en Hugging Face. Se trata de una version "uncensored" (sin el alineamiento de seguridad habitual) del modelo LFM2.5-24B-A2B, que por su nomenclatura corresponde a la familia LFM (Liquid Foundation Models) de Liquid AI, con 24.000 millones de parametros totales y un diseno de tipo mixture-of-experts (MoE) con aproximadamente 2.000 millones de parametros activos, segun indica el sufijo "A2B".
 
 El repositorio contiene unicamente pesos cuantizados en formato GGUF, generados con el metodo i1 (imatrix) de llama.cpp, lo que permite ejecutar el modelo en hardware de consumo mediante herramientas compatibles con GGUF como llama.cpp, Ollama o LM Studio. El tamano del repositorio es de 53,9 GB, coherente con la publicacion de multiples variantes de cuantizacion (desde IQ1_S hasta Q6_K) sobre un modelo base de aproximadamente 24.000 millones de parametros.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B-Uncensored (este) | 24B totales / ~2B activos | no disponible | no disponible | GGUF | HuggingFace |
-| LFM2.5-24B-A2B (base, alineado) | 24B totales / ~2B activos | no disponible | no disponible | safetensors/BF16 | HuggingFace (referenciado) |
+| LFM2.5-24B-A2B-Uncensored (este) | 24B totales / ~2B activos | no disponible | no disponible | GGUF | Hugging Face |
+| LFM2.5-24B-A2B (base, alineado) | 24B totales / ~2B activos | no disponible | no disponible | safetensors/BF16 | Hugging Face (referenciado) |
 | Mixtral 8x7B | 46,7B totales / 12,9B activos | 32k | Apache 2.0 | safetensors, GGUF | Amplia |
 | Qwen2.5-32B | 32B densos | 128k | Apache 2.0 | safetensors, GGUF | Amplia |
 
@@ -87,7 +87,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LFM2.5-24B-A2B-Uncensored-BF16-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LFM2.5-24B-A2B-Uncensored-BF16-i1-GGUF
 - Modelo base referenciado: https://huggingface.co/frstofrhx/LFM2.5-24B-A2B-Uncensored-BF16
 - Herramienta de cuantizacion (llama.cpp): https://github.com/ggerganov/llama.cpp
 - Documentacion de Ollama: https://ollama.com

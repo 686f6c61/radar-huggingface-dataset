@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-chrono5-w30-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por su identificador y la etiqueta `sn38-nanochrono`, parece tratarse de un modelo de la familia NanoChrono (etiqueta propietaria del autor), presumiblemente un transformer de aproximadamente 2.018 millones de parametros (2,018 B) alojado en un repositorio de 6,3 GB en formato safetensors. El nombre codifica una configuracion concreta (r18, a2, w13, chrono5, w30, s130) que sugiere un experimento de escalado o ablacion con hiperparametros especificos, mas que un modelo de proposito general.
+El modelo `alfred8995/r18-a2-w13-kx-chrono5-w30-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por su identificador y la etiqueta `sn38-nanochrono`, parece tratarse de un modelo de la familia NanoChrono (etiqueta propietaria del autor), presumiblemente un transformer de aproximadamente 2.018 millones de parametros (2,018 B) alojado en un repositorio de 6,3 GB en formato safetensors. El nombre codifica una configuracion concreta (r18, a2, w13, chrono5, w30, s130) que sugiere un experimento de escalado o ablacion con hiperparametros especificos, mas que un modelo de proposito general.
 
-No se dispone de informacion publica sobre arquitectura interna, datos de entrenamiento, tokenizador, longitud de contexto ni capacidades. El pipeline no esta declarado en la ficha de HuggingFace y el acceso esta restringido, por lo que cualquier evaluacion practica requiere solicitar permiso al autor. La relevancia actual es limitada: se trata de un checkpoint de investigacion con cero descargas y cero likes en el momento de la consulta, sin documentacion asociada.
+No se dispone de informacion publica sobre arquitectura interna, datos de entrenamiento, tokenizador, longitud de contexto ni capacidades. El pipeline no esta declarado en la ficha de Hugging Face y el acceso esta restringido, por lo que cualquier evaluacion practica requiere solicitar permiso al autor. La relevancia actual es limitada: se trata de un checkpoint de investigacion con cero descargas y cero likes en el momento de la consulta, sin documentacion asociada.
 
 Dada la ausencia de model card, benchmarks y ejemplos de uso, esta ficha se limita a reflejar los datos verificables del repositorio e indica explicitamente "no disponible" en todo aquello que no puede confirmarse.
 
@@ -21,7 +21,7 @@ Dada la ausencia de model card, benchmarks y ejemplos de uso, esta ficha se limi
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 6,3 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-10-29 |
 
@@ -38,7 +38,7 @@ Tampoco hay informacion sobre el corpus de entrenamiento (numero de tokens, comp
 - Vision, audio o multimodalidad: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en Hugging Face).
 - Modo "thinking" o variantes de razonamiento extendido: no disponible.
 
 En ausencia de documentacion, la unica capacidad verificable es la de cargar los pesos safetensors (2,018 B de parametros) en un entorno compatible con la arquitectura subyacente, que el usuario debera identificar a partir de los archivos del repositorio.
@@ -51,7 +51,7 @@ No es posible recomendar casos de uso concretos sin documentacion sobre el entre
 - Ablaciones controladas: los sufijos del nombre sugieren barridos de hiperparametros; el modelo podria usarse como punto de comparacion en estudios de eficiencia.
 - Fine-tuning sobre dominio especifico: con 2 B de parametros y licencia Apache 2.0, es tecnicamente viable ajustarlo, pero sin conocer el tokenizador ni la arquitectura el proceso es inviable sin acceso al codigo del autor.
 - Evaluacion de calidad de checkpoints de investigacion: util para estudiar la estabilidad de entrenamientos a esa escala.
-- Docencia y formacion: como ejemplo de nomenclatura de experimentos y gestion de repositorios gated en HuggingFace.
+- Docencia y formacion: como ejemplo de nomenclatura de experimentos y gestion de repositorios gated en Hugging Face.
 - Analisis de seguridad de modelos: estudiar como se publican pesos sin model card ni evaluaciones.
 
 En todos los casos, el acceso gated y la falta de documentacion limitan seriamente su uso practico.
@@ -86,7 +86,7 @@ No disponible. No se conocen modelos directamente comparables porque se desconoc
 - Riesgo de alucinacion: desconocido, pero al no haber pasado por un proceso documentado de RLHF/DPO cabe esperar un comportamiento sin alinear.
 - Idiomas: no declarados; no se puede garantizar soporte de castellano ni de ningun otro idioma.
 - Contexto: desconocido; no se debe asumir una ventana larga.
-- Licencia Apache 2.0: permite uso comercial y modificacion, pero el acceso gated implica aceptar condiciones adicionales del autor en HuggingFace.
+- Licencia Apache 2.0: permite uso comercial y modificacion, pero el acceso gated implica aceptar condiciones adicionales del autor en Hugging Face.
 - Repositorio gated: la descarga requiere aprobacion manual, lo que puede retrasar pipelines automatizados y la integracion en CI/CD.
 - Cero descargas y cero likes: no hay evidencia de uso en la comunidad ni de validacion externa.
 - Nomenclatura opaca: el identificador no sigue convenciones estandar, lo que dificulta la interoperabilidad con herramientas como vLLM, TGI o llama.cpp.
@@ -94,5 +94,5 @@ No disponible. No se conocen modelos directamente comparables porque se desconoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w30-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w30-s130
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`swulfen/taxi-v4` es un agente de aprendizaje por refuerzo entrenado con Q-learning sobre el entorno `Taxi-v3` y publicado en HuggingFace por el usuario `swulfen`. No es un modelo de lenguaje: el repositorio contiene un checkpoint de política (fichero `q-learning.pkl`, según el ejemplo de carga de la model card) que se carga con `load_from_hub` y se evalúa contra una instancia de Gymnasium. El pipeline declarado es `reinforcement-learning` y los tags incluyen `q-learning`, `Taxi-v3` y `custom-implementation`, lo que sugiere una implementación propia del algoritmo en lugar de un agente generado con Stable-Baselines3.
+`swulfen/taxi-v4` es un agente de aprendizaje por refuerzo entrenado con Q-learning sobre el entorno `Taxi-v3` y publicado en Hugging Face por el usuario `swulfen`. No es un modelo de lenguaje: el repositorio contiene un checkpoint de política (fichero `q-learning.pkl`, según el ejemplo de carga de la model card) que se carga con `load_from_hub` y se evalúa contra una instancia de Gymnasium. El pipeline declarado es `reinforcement-learning` y los tags incluyen `q-learning`, `Taxi-v3` y `custom-implementation`, lo que sugiere una implementación propia del algoritmo en lugar de un agente generado con Stable-Baselines3.
 
-La relevancia del artefacto es muy limitada: cuenta con 0 descargas y 0 likes, el tamano del repositorio es de 0.0 GB y la model card es la plantilla estándar del curso de deep reinforcement learning de HuggingFace, sin secciones adicionales de hiperparámetros, semillas ni curvas de entrenamiento. El único dato de rendimiento declarado es un `mean_reward` de 7.56 +/- 2.71 sobre `Taxi-v3`, marcado explícitamente como `verified: false`.
+La relevancia del artefacto es muy limitada: cuenta con 0 descargas y 0 likes, el tamano del repositorio es de 0.0 GB y la model card es la plantilla estándar del curso de deep reinforcement learning de Hugging Face, sin secciones adicionales de hiperparámetros, semillas ni curvas de entrenamiento. El único dato de rendimiento declarado es un `mean_reward` de 7.56 +/- 2.71 sobre `Taxi-v3`, marcado explícitamente como `verified: false`.
 
 Por tanto, la ficha debe leerse como la de un checkpoint de RL de proposito didactico o de prueba, no como la de un modelo listo para producción. La información disponible no permite reconstruir el entrenamiento ni verificar la métrica, y la licencia no está declarada, lo que impide determinar si su uso comercial es posible.
 
@@ -24,7 +24,7 @@ Por tanto, la ficha debe leerse como la de un checkpoint de RL de proposito dida
 | Pipeline declarado | `reinforcement-learning` |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion / actualizacion | 2026-10-23 / 2026-10-23 (según metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-10-23 / 2026-10-23 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Tipo | Entorno | Métrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swulfen/taxi-v4 | Q-learning (custom) | Taxi-v3 | mean_reward 7.56 +/- 2.71 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| swulfen/taxi-v4 | Q-learning (custom) | Taxi-v3 | mean_reward 7.56 +/- 2.71 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la comunidad para Taxi-v3 | no disponible | Taxi-v3 | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables en la información proporcionada, más allá de la existencia genérica de otros agentes publicados para `Taxi-v3` en el Hub. No es posible establecer una comparación cuantitativa fiable con DQN, PPO u otras variantes sin resultados declarados.
@@ -85,7 +85,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 - Ausencia total de documentación de entrenamiento: no se declaran hiperparámetros, episodios, política de exploración ni arquitectura interna de la representación de la política.
 - Licencia no declarada: no es posible determinar si se permite el uso comercial, la redistribución o la modificación del checkpoint.
 - Repositorio sin tracción: 0 descargas y 0 likes implican ausencia de validación por parte de la comunidad.
-- Model card generada a partir de plantilla: el texto es el boilerplate estándar del curso de RL de HuggingFace y no aporta información específica del autor.
+- Model card generada a partir de plantilla: el texto es el boilerplate estándar del curso de RL de Hugging Face y no aporta información específica del autor.
 - Dependencia estricta del entorno: la política solo es válida para el `env_id` con el que fue entrenada; el propio autor advierte de que pueden ser necesarios atributos adicionales como `is_slippery=False`, lo que indica posible desalineación con la configuración por defecto de `Taxi-v3`.
 - Sin capacidad de generalización: un agente tabular para un entorno de juguete no transfiere a otros entornos ni a tareas del mundo real.
 - Metadatos inconsistentes: las fechas de creación y actualización (2026-10-23) son posteriores a la fecha habitual de consulta, lo que conviene verificar antes de citar el artefacto.
@@ -94,7 +94,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swulfen/taxi-v4
+- Hugging Face: https://huggingface.co/swulfen/taxi-v4
 - Repositorio de referencia del entorno `Taxi-v3` (Gymnasium): no disponible en la información proporcionada
 - Paper o blog del autor: no disponible
 - Demo o Space asociado: no disponible

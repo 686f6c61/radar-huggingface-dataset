@@ -73,9 +73,9 @@ La model card unicamente aporta datos de rendimiento operativo del prompt upsamp
 
 | Modelo | Parametros | Contexto / resolucion | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P-H3-Image-ComfyUI-GGUF | 20.150.289.312 | 8 MP en 8 pasos sin CFG; edicion con hasta 8 imagenes | GGUF, safetensors (LoRA) | MiniMax H3 Community License (restricciones geograficas) | HuggingFace |
-| MiniMax-H3 (original) | No disponible | No disponible | No disponible | MiniMax H3 Community License | HuggingFace (MiniMaxAI/MiniMax-H3; Comfy-Org/MiniMax-H3) |
-| PrunaAI/P-H3-Image-Comfy | No disponible | 8 MP; edicion con hasta 8 imagenes | bf16, int8, 4-bit | MiniMax H3 Community License | HuggingFace |
+| P-H3-Image-ComfyUI-GGUF | 20.150.289.312 | 8 MP en 8 pasos sin CFG; edicion con hasta 8 imagenes | GGUF, safetensors (LoRA) | MiniMax H3 Community License (restricciones geograficas) | Hugging Face |
+| MiniMax-H3 (original) | No disponible | No disponible | No disponible | MiniMax H3 Community License | Hugging Face (MiniMaxAI/MiniMax-H3; Comfy-Org/MiniMax-H3) |
+| PrunaAI/P-H3-Image-Comfy | No disponible | 8 MP; edicion con hasta 8 imagenes | bf16, int8, 4-bit | MiniMax H3 Community License | Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vantagewithai/P-H3-Image-ComfyUI-GGUF
+- Repositorio Hugging Face: https://huggingface.co/vantagewithai/P-H3-Image-ComfyUI-GGUF
 - Modelo base (PrunaAI): https://huggingface.co/PrunaAI/p-h3-image
 - Repositorio ComfyUI original de PrunaAI: https://huggingface.co/PrunaAI/P-H3-Image-Comfy
 - MiniMax-H3 (modelo base): https://huggingface.co/MiniMaxAI/MiniMax-H3

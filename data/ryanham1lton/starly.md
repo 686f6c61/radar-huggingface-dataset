@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Starly es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha no existe información pública sobre su arquitectura, su tamaño en parámetros, su longitud de contexto, sus datos de entrenamiento ni sus capacidades: la model card únicamente contiene el campo `license: cc-by-4.0` y el resto de metadatos (pipeline, idiomas, etiquetas descriptivas) están vacíos.
+Starly es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha no existe información pública sobre su arquitectura, su tamaño en parámetros, su longitud de contexto, sus datos de entrenamiento ni sus capacidades: la model card únicamente contiene el campo `license: cc-by-4.0` y el resto de metadatos (pipeline, idiomas, etiquetas descriptivas) están vacíos.
 
 El repositorio ocupa 0,1 GB, un tamaño compatible con pesos muy pequeños, con una cuantización agresiva o con un repositorio incompleto, pero no hay ningún dato que permita confirmar ninguna de estas hipótesis. Tampoco se han publicado resultados de benchmarks, demos, papers ni documentación técnica asociada.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha no debe interpretarse como una evaluación técnica del mo
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion en HuggingFace | 2026-09-12 |
+| Fecha de creacion en Hugging Face | 2026-09-12 |
 | Ultima actualizacion | 2026-09-26 |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ Del mismo modo, se desconoce por completo la composicion del dataset de entrenam
 - Evaluacion interna de repositorios: el unico uso defendible hoy es inspeccionar los archivos del repositorio para determinar que contiene realmente antes de plante ar cualquier integracion.
 - Prototipado exploratorio: si los pesos resultan ser de un modelo pequeno, podria probarse en tareas de generacion de texto triviales, pero sin garantia de calidad ni de soporte.
 - Uso comercial: la licencia CC-BY-4.0 permite uso comercial con atribucion, pero se desconoce si los datos de entrenamiento imponen restricciones adicionales.
-- Docencia y experimentacion: puede servir como ejemplo de publicacion incompleta de un modelo en HuggingFace, no como referencia tecnica.
+- Docencia y experimentacion: puede servir como ejemplo de publicacion incompleta de un modelo en Hugging Face, no como referencia tecnica.
 - Integracion en produccion: desaconsejada en el estado actual de la informacion, por ausencia de benchmarks, de documentacion y de historial de mantenimiento.
 
 ## Benchmarks y rendimiento
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Starly
+- Hugging Face: https://huggingface.co/Ryanham1lton/Starly
 - Paper: no disponible.
 - Blog o anuncio: no disponible.
 - Repositorio de codigo: no disponible.

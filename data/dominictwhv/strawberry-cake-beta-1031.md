@@ -50,7 +50,7 @@ No se han publicado valores numéricos de benchmarks (F1, precision, recall) en 
 - **VRAM estimada para inferencia**: no disponible explícitamente; al tratarse de una variante small de DeBERTa-v3 (~44M de parámetros en el modelo base), el modelo completo ocupa unos 0,6 GB en el repositorio, por lo que es razonable esperar que funcione con menos de 2 GB de VRAM, e incluso en CPU.
 - **GPU recomendadas**: no requiere GPU dedicada para inferencia; cualquier GPU moderna es suficiente. Para entrenamiento, el autor usó 2× NVIDIA P100 (16 GB) por PCIe durante ~1 hora.
 - **Consumer GPU**: cabe sobradamente en cualquier GPU de consumo actual (incluso de gama baja).
-- **Despliegue**: como clasificador de HuggingFace con pesos safetensors, es compatible con la librería `transformers` (pipeline `text-classification`). No se menciona soporte específico para vLLM, llama.cpp, Ollama o TGI; llama.cpp y Ollama no aplican al no ser un modelo generativo en formato GGUF.
+- **Despliegue**: como clasificador de Hugging Face con pesos safetensors, es compatible con la librería `transformers` (pipeline `text-classification`). No se menciona soporte específico para vLLM, llama.cpp, Ollama o TGI; llama.cpp y Ollama no aplican al no ser un modelo generativo en formato GGUF.
 - **Latencia y throughput**: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ Strawberry Cake Beta 1031 es considerablemente más ligero (encoder small frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DominicTWHV/Strawberry-Cake-Beta-1031
+- Modelo en Hugging Face: https://huggingface.co/DominicTWHV/Strawberry-Cake-Beta-1031
 - Dataset de entrenamiento: https://huggingface.co/datasets/DominicTWHV/Cockatoo-Moderation-V1
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small

@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlatFootInternational/Ornith-1.5-9B-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/FlatFootInternational/Ornith-1.5-9B-MLX-8bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Coleccion MLX de ornith-ai: https://huggingface.co/collections/ornith-ai/ornith-15-mlx
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html

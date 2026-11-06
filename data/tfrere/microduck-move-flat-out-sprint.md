@@ -23,7 +23,7 @@ Su relevancia practica es acotada pero concreta: es un artefacto de robotica lig
 | Tarea | locomocion forward de maxima velocidad (familia `velocity`, gait de sprint) |
 | Nivel y tipo | `tier:1`, `kind:perpetual` |
 | Region declarada | us |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-12T19:31:42Z |
 | Fecha de actualizacion | 2026-09-12T19:33:46Z |
@@ -94,7 +94,7 @@ Nota metodologica de la model card: el score mostrado en Discover es el del juez
 - Compatibilidad con GPU de consumo: no disponible. No hay indicacion de que requiera GPU dedicada.
 - Opciones de despliegue: runtime ONNX para `policy.onnx`; PyTorch para `model.pt` en tareas de reentrenamiento; la CLI `robotctl` para instalacion y ejecucion en robot (`robotctl policy add` / `robotctl robot do`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de artefacto.
 - Latencia y throughput: no disponibles. La unica referencia temporal es la duracion de la trayectoria evaluada, 8,0 s.
-- Espacio en disco: el repositorio ocupa 0,0 GB segun HuggingFace, aunque incluye video, poster, trayectorias y checkpoints.
+- Espacio en disco: el repositorio ocupa 0,0 GB segun Hugging Face, aunque incluye video, poster, trayectorias y checkpoints.
 
 ## Comparativa con modelos similares
 
@@ -116,7 +116,7 @@ No disponible. La informacion proporcionada no incluye otras politicas de la fam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-flat-out-sprint
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-flat-out-sprint
 - Perfil del autor: https://huggingface.co/tfrere
 - Microduck Academy (space de entrenamiento): https://huggingface.co/spaces/tfrere/microduck
 - Referencia interna de la model card: `docs/TRAINING.md`, seccion 8 (metodologia de puntuacion del juez y del VLM)

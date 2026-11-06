@@ -4,7 +4,7 @@
 
 Makeen-v0.0.5 es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario NAB11, que ajusta el modelo base Qwen/Qwen3.5-4B sobre un dataset denominado `filtered_toolsV1`. El entrenamiento se realizó con la librería PEFT y el framework llama-factory, lo que indica un enfoque de fine-tuning eficiente en parámetros para adaptar el modelo a una tarea específica, probablemente relacionada con el uso de herramientas (tool calling), según sugiere el nombre del dataset.
 
-El modelo se publica en HuggingFace con licencia `other`, sin especificar términos comerciales, y no ha recibido descargas ni valoraciones. La model card generada automáticamente no incluye descripción del modelo, datos de entrenamiento, ni resultados de evaluación, por lo que la información pública es muy limitada. Su relevancia actual es dudosa: se trata de un adaptador sin documentación ni validación externa, lo que lo convierte en un candidato arriesgado para uso en producción sin una evaluación independiente previa.
+El modelo se publica en Hugging Face con licencia `other`, sin especificar términos comerciales, y no ha recibido descargas ni valoraciones. La model card generada automáticamente no incluye descripción del modelo, datos de entrenamiento, ni resultados de evaluación, por lo que la información pública es muy limitada. Su relevancia actual es dudosa: se trata de un adaptador sin documentación ni validación externa, lo que lo convierte en un candidato arriesgado para uso en producción sin una evaluación independiente previa.
 
 El repositorio ocupa 5,9 GB, lo que sugiere que incluye tanto los pesos del adaptador como posiblemente el modelo base completo en formato safetensors, aunque no se confirma.
 
@@ -40,14 +40,14 @@ No se menciona el uso de RLHF, DPO ni otras técnicas de alineación. Tampoco se
 
 - **Prototipado rápido con LoRA**: el adaptador puede servir como punto de partida para experimentar con fine-tuning eficiente sobre Qwen3.5-4B, especialmente si el dataset `filtered_toolsV1` está disponible para reproducir o extender el entrenamiento.
 - **Investigación académica**: para estudios sobre adaptación de modelos con LoRA y evaluación de estrategias de fine-tuning en modelos de 4B, aunque la falta de documentación limita su utilidad como referencia.
-- **Evaluación de modelos comunitarios**: como caso de estudio de publicación en HuggingFace, útil para analizar prácticas de documentación (o su ausencia) en la comunidad.
+- **Evaluación de modelos comunitarios**: como caso de estudio de publicación en Hugging Face, útil para analizar prácticas de documentación (o su ausencia) en la comunidad.
 - **Bases para fine-tuning adicional**: los pesos del adaptador podrían combinarse con otros adaptadores o continuarse el entrenamiento sobre nuevos datasets, siempre que se respete la licencia `other` (desconocida).
 - **Análisis de impacto del dataset**: si se accede al dataset `filtered_toolsV1`, se puede estudiar cómo afecta el ajuste a las capacidades del modelo base, aunque no hay métricas publicadas.
 - **Pruebas de integración técnica**: para validar flujos de trabajo con PEFT, llama-factory y safetensors en entornos de desarrollo, sin expectativas de rendimiento productivo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo-index de HuggingFace muestra un registro vacío (`results: []`), y no hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar.
+No se han publicado resultados de benchmarks en la información disponible. El modelo-index de Hugging Face muestra un registro vacío (`results: []`), y no hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar.
 
 ## Requisitos de hardware
 
@@ -63,10 +63,10 @@ No se dispone de datos de rendimiento del adaptador para comparar con otras alte
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B (base) | 4B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-3B | 3B | 128K | Llama 3.2 | HuggingFace |
-| Qwen2.5-3B | 3B | 32K | Apache 2.0 | HuggingFace |
-| Makeen-v0.0.5 | adaptador LoRA sobre 4B | no disponible | other | HuggingFace |
+| Qwen3.5-4B (base) | 4B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-3B | 3B | 128K | Llama 3.2 | Hugging Face |
+| Qwen2.5-3B | 3B | 32K | Apache 2.0 | Hugging Face |
+| Makeen-v0.0.5 | adaptador LoRA sobre 4B | no disponible | other | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,13 +75,13 @@ No se dispone de datos de rendimiento del adaptador para comparar con otras alte
 - **Dataset desconocido**: `filtered_toolsV1` no está descrito; no se sabe si contiene datos con sesgos, información personal o contenido problemático.
 - **Sin validación**: no hay benchmarks, ni evaluación humana, ni pruebas de robustez. El modelo puede tener alucinaciones, errores de razonamiento o comportamientos inesperados.
 - **Riesgo de sobreajuste**: al entrenar solo 3 épocas sobre un dataset pequeño (tamaño desconocido), el adaptador puede estar sobreajustado a patrones específicos del dataset y perder generalidad.
-- **Obsolescencia potencial**: el modelo se creó en septiembre de 2026 (según la fecha de HuggingFace), pero no hay evidencia de mantenimiento o actualizaciones posteriores.
+- **Obsolescencia potencial**: el modelo se creó en septiembre de 2026 (según la fecha de Hugging Face), pero no hay evidencia de mantenimiento o actualizaciones posteriores.
 - **Idiomas**: no se especifican idiomas soportados; probablemente hereda los del modelo base, pero no se confirma.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/NAB11/Makeen-v0.0.5)
-- [Perfil de NAB11 en HuggingFace](https://huggingface.co/NAB11/models)
+- [Modelo en Hugging Face](https://huggingface.co/NAB11/Makeen-v0.0.5)
+- [Perfil de NAB11 en Hugging Face](https://huggingface.co/NAB11/models)
 - [Modelo base Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 
 No se encontraron papers, repositorios de código, demos ni blogs relacionados con este modelo.

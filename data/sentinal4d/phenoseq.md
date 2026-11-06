@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sentinal4D/PhenoSeq
+- Hugging Face: https://huggingface.co/Sentinal4D/PhenoSeq
 - GitHub (reednaidoo/PhenoSeq): https://github.com/reednaidoo/PhenoSeq
 - Sitio web de Sentinal4D: https://www.sentinal4d.com/
 - Artículo en Substack (CY5TEM): https://cy5tem.substack.com/p/cy5tem-1-how-sentinal4d-is-solving

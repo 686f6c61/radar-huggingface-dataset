@@ -26,7 +26,7 @@ Los datos disponibles son limitados: la model card del cuantizador es generica y
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta la arquitectura del modelo base. La unica informacion disponible es que se trata de un ajuste fino de MiniCPM5-2B realizado con SFT y LoRA (etiquetas `sft`, `lora`, `minicpm`), sobre el dataset saidutta69/fable-5-premium-v2, y que los pesos resultantes se publicaron primero en formato HuggingFace (safetensors) y despues se convirtieron a GGUF con el pipeline de mradermacher (`convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1`).
+El repositorio no documenta la arquitectura del modelo base. La unica informacion disponible es que se trata de un ajuste fino de MiniCPM5-2B realizado con SFT y LoRA (etiquetas `sft`, `lora`, `minicpm`), sobre el dataset saidutta69/fable-5-premium-v2, y que los pesos resultantes se publicaron primero en formato Hugging Face (safetensors) y despues se convirtieron a GGUF con el pipeline de mradermacher (`convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1`).
 
 Las etiquetas del modelo (`tool-use`, `agent-traces`, `fable-5`, `instruction-following`, `chat`) sugieren que el dataset de ajuste contiene trazas de agente y ejemplos de uso de herramientas, ademas de conversacion general, y que el objetivo del ajuste es reproducir un estilo de respuesta asociado a "Claude"/"Fable 5". No se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o preferencia despues del SFT. Tampoco se documentan innovaciones tecnicas como atencion lineal o decodificacion especulativa. Esta ausencia de informacion es en si misma un dato relevante para evaluar el modelo.
 
@@ -82,10 +82,10 @@ Los datos de la columna de este modelo proceden de la informacion proporcionada;
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-2B-Claude-Fable5 (este, GGUF) | 2,52 B | No disponible | Apache 2.0 | HuggingFace + GGUF (12 cuantizaciones) |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos (128 K con YaRN) | Apache 2.0 | HuggingFace + GGUF comunitarios |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace + GGUF |
-| Gemma-2-2B-it | 2,61 B | 8.192 tokens | Gemma Terms of Use | HuggingFace + GGUF |
+| MiniCPM5-2B-Claude-Fable5 (este, GGUF) | 2,52 B | No disponible | Apache 2.0 | Hugging Face + GGUF (12 cuantizaciones) |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos (128 K con YaRN) | Apache 2.0 | Hugging Face + GGUF comunitarios |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face + GGUF |
+| Gemma-2-2B-it | 2,61 B | 8.192 tokens | Gemma Terms of Use | Hugging Face + GGUF |
 
 Frente a estas alternativas, el punto fuerte del modelo es el ajuste especifico para tool use y trazas de agente, junto con el soporte nativo de chino; sus puntos debiles son la falta total de documentacion tecnica, la ausencia de evaluaciones y un numero de descargas y likes nulo en el momento del registro, lo que implica nula validacion por parte de la comunidad.
 

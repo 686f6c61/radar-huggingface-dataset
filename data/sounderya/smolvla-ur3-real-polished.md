@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| Sounderya/smolvla-ur3-real-polished | 450M | no disponible | no evaluado | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | VLA general, resultados en paper | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | 4096 tokens | MMLU, HumanEval (vision-lenguaje) | MIT | HuggingFace |
+| Sounderya/smolvla-ur3-real-polished | 450M | no disponible | no evaluado | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | VLA general, resultados en paper | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | 4096 tokens | MMLU, HumanEval (vision-lenguaje) | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada. El modelo base SmolVLA se posiciona como una alternativa ligera a VLA grandes como OpenVLA, con menor coste computacional, pero su rendimiento en tareas reales depende del dataset de fine-tuning.
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Sounderya/smolvla-ur3-real-polished)
+- [Modelo en Hugging Face](https://huggingface.co/Sounderya/smolvla-ur3-real-polished)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Sounderya/sim_mug_skillgen_v3)
 - [Modelo base SmolVLA](https://huggingface.co/lerobot/smolvla_base)
 - [Paper de SmolVLA (arxiv 2506.01844)](https://arxiv.org/abs/2506.01844)

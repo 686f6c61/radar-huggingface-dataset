@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboBeats-0.8B | 0,8B (base) + LoRA | no disponible | Detección de eventos en vídeo (gate) | apache-2.0 | HuggingFace (adaptador) |
-| RoboBeats-2B | 2B (base) + LoRA | no disponible | Detección de eventos en vídeo (gate) | no disponible | HuggingFace (adaptador) |
-| RoboBeats-4B | 4B (base) + LoRA | no disponible | Detección de eventos en vídeo (gate) | no disponible | HuggingFace (adaptador) |
+| RoboBeats-0.8B | 0,8B (base) + LoRA | no disponible | Detección de eventos en vídeo (gate) | apache-2.0 | Hugging Face (adaptador) |
+| RoboBeats-2B | 2B (base) + LoRA | no disponible | Detección de eventos en vídeo (gate) | no disponible | Hugging Face (adaptador) |
+| RoboBeats-4B | 4B (base) + LoRA | no disponible | Detección de eventos en vídeo (gate) | no disponible | Hugging Face (adaptador) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni con otros modelos de detección de eventos en vídeo.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni con o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/superbigsaw/RoboBeats-0.8B
+- Hugging Face: https://huggingface.co/superbigsaw/RoboBeats-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Variante 2B: https://huggingface.co/superbigsaw/RoboBeats-2B
 - Variante 4B: https://huggingface.co/superbigsaw/RoboBeats-4B

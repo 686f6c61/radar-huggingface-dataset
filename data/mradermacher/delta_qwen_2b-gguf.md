@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Delta_Qwen_2B-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo ConicCat/Delta_Qwen_2B. No se trata, por tanto, de un modelo entrenado desde cero ni de un fine-tune original, sino de una conversión a GGUF de los pesos del modelo base para permitir su ejecución en llama.cpp, Ollama y otras herramientas compatibles con este formato. El repositorio lo firma mradermacher, un usuario conocido en HuggingFace por publicar cuantizaciones estáticas de modelos de terceros.
+Delta_Qwen_2B-GGUF es un repositorio de cuantizaciones en formato GGUF generado por mradermacher a partir del modelo ConicCat/Delta_Qwen_2B. No se trata, por tanto, de un modelo entrenado desde cero ni de un fine-tune original, sino de una conversión a GGUF de los pesos del modelo base para permitir su ejecución en llama.cpp, Ollama y otras herramientas compatibles con este formato. El repositorio lo firma mradermacher, un usuario conocido en Hugging Face por publicar cuantizaciones estáticas de modelos de terceros.
 
 El modelo subyacente tiene 1.881.825.088 parametros (aproximadamente 1,88 mil millones), un tamano que lo situa en la gama de modelos pequenos orientados a inferencia en hardware de consumo. El nombre "Delta_Qwen_2B" apunta a un modelo derivado de la familia Qwen de 2B parametros, aunque no se especifica en la informacion disponible si se trata de un fine-tune, de una fusion de pesos (weight delta) o de otra tecnica de adaptacion. El idioma declarado es unicamente el ingles.
 
@@ -29,7 +29,7 @@ En cuanto al proceso de conversion, la model card indica que se trata de cuantiz
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` de HuggingFace indica que el modelo esta orientado a dialogos multi-turno.
+- Generacion de texto conversacional: la etiqueta `conversational` de Hugging Face indica que el modelo esta orientado a dialogos multi-turno.
 - Generacion de texto general en ingles: es el unico idioma declarado en la model card.
 - No se documentan capacidades de razonamiento explicito, matematicas o codigo en la informacion disponible.
 - No se documenta soporte de tool calling ni function calling.
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - f16: 3,9 GB de pesos; en torno a 5-6 GB de VRAM total.
 - GPU recomendadas: cabe en practicamente cualquier GPU de consumo con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090). No requiere A100, H100 ni aceleradores de centro de datos; en esos entornos estaria infrautilizada salvo por agregacion de muchas instancias.
 - Ejecucion en CPU: viable en las cuantizaciones Q2_K a Q4_K_M, que ocupan poco mas de 1 GB de RAM. El rendimiento en CPU no esta documentado.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, llama-cpp-python y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. vLLM ofrece soporte parcial de GGUF, pero no se confirma para este modelo.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui, llama-cpp-python y cualquier runtime compatible con GGUF. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. vLLM ofrece soporte parcial de GGUF, pero no se confirma para este modelo.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para ninguna de las variantes.
 
 ## Comparativa con modelos similares
@@ -91,10 +91,10 @@ La comparativa no permite extraer conclusiones de rendimiento porque ninguno de 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Delta_Qwen_2B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Delta_Qwen_2B-GGUF
 - Modelo base: https://huggingface.co/ConicCat/Delta_Qwen_2B
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#Delta_Qwen_2B-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/mradermacher
+- Perfil del autor en Hugging Face: https://huggingface.co/mradermacher
 - Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests
 - README de referencia de TheBloke sobre uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafica de comparacion de perplejidad por tipo de cuantizacion (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

@@ -6,7 +6,7 @@ Ming-3.0-tts-0.5B es un modelo denso de síntesis de voz (text-to-speech) multil
 
 Su propuesta diferencial no es solo la síntesis multilingüe (chino, inglés, alemán, español, francés, coreano y japonés, más los dialectos chinos sichuanés y cantonés), sino el control: clonación de voz zero-shot a partir de una referencia corta, diseño de voz mediante descripción en lenguaje natural, control libre de estilo, 14 etiquetas inline de sonidos paralingüísticos (respiración, tos, suspiro, risa, duda) y ajuste explícito de emoción, velocidad, tono y volumen.
 
-Es relevante para quien evalúe TTS open source porque combina un tamaño reducido (backbone de 0,5B) con un conjunto de controles poco habitual en modelos de esta escala. Conviene advertir de entrada de dos puntos: el repositorio de HuggingFace es solo de distribución de pesos y la inferencia exige clonar el repositorio de GitHub del proyecto, y el recuento real de parámetros en safetensors (1.479.454.868) supera ampliamente la cifra de "0,5B" del nombre, que se refiere únicamente al backbone.
+Es relevante para quien evalúe TTS open source porque combina un tamaño reducido (backbone de 0,5B) con un conjunto de controles poco habitual en modelos de esta escala. Conviene advertir de entrada de dos puntos: el repositorio de Hugging Face es solo de distribución de pesos y la inferencia exige clonar el repositorio de GitHub del proyecto, y el recuento real de parámetros en safetensors (1.479.454.868) supera ampliamente la cifra de "0,5B" del nombre, que se refiere únicamente al backbone.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ La información proporcionada no identifica por nombre los modelos open source c
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de benchmark |
 |---|---|---|---|---|---|
-| Ming-3.0-tts-0.5B | 1.479.454.868 totales (backbone 0,5B) | No disponible | MIT | Pesos en HuggingFace y ModelScope; inferencia vía GitHub | No disponibles en la información proporcionada |
+| Ming-3.0-tts-0.5B | 1.479.454.868 totales (backbone 0,5B) | No disponible | MIT | Pesos en Hugging Face y ModelScope; inferencia vía GitHub | No disponibles en la información proporcionada |
 | Seed-TTS | No disponible | No disponible | No disponible | Fila de referencia no clasificada en la tabla del autor | No disponibles |
 | NVbench-GT | No disponible | No disponible | No disponible | Fila de referencia no clasificada en la tabla del autor | No disponibles |
 
@@ -82,7 +82,7 @@ Para alternativas de la misma categoría (clonación de voz zero-shot multiling�
 ## Limitaciones y advertencias
 
 - Este repositorio es un espejo no oficial: el autor del espejo declara explícitamente que todo el crédito corresponde a los autores originales y que no es un lanzamiento oficial. Para producción conviene partir del repositorio `inclusionAI`.
-- El repositorio de HuggingFace no incluye un entorno de inferencia autónomo; sin el código del repositorio de GitHub no se puede ejecutar el modelo.
+- El repositorio de Hugging Face no incluye un entorno de inferencia autónomo; sin el código del repositorio de GitHub no se puede ejecutar el modelo.
 - Riesgo de alucinación acústica y de pronunciación incorrecta: al ser un modelo generativo de audio, puede producir artefactos, prosodia anómala o lectura errónea de textos con grafías ambiguas. La normalización con `pynini` mitiga el problema de números, fechas y unidades, pero añade una dependencia externa.
 - Desequilibrio de voces integradas: más de 100 voces en chino frente a solo cinco en inglés, y ninguna cifra publicada para el resto de idiomas (español, alemán, francés, coreano y japonés).
 - Los dialectos cubiertos son únicamente chinos (sichuanés y cantonés); no hay soporte documentado de variantes dialectales del español ni de otras lenguas.
@@ -95,8 +95,8 @@ Para alternativas de la misma categoría (clonación de voz zero-shot multiling�
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/ml-resources/Ming-3.0-tts-0.5B
-- Repositorio original en HuggingFace: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
+- Repositorio espejo en Hugging Face: https://huggingface.co/ml-resources/Ming-3.0-tts-0.5B
+- Repositorio original en Hugging Face: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Repositorio de código e inferencia (GitHub): https://github.com/inclusionAI/Ming-3.0-tts
 - Blog y demos del proyecto: https://nomorecoding.github.io/Ming-3.0-tts/
 - ModelScope: https://modelscope.cn/models/inclusionAI/Ming-3.0-tts-0.5b

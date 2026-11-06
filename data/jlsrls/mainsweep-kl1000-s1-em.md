@@ -62,9 +62,9 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `jlsrls/mainsweep-kl1000-s1-em` | no disponible | no disponible | no disponible | HuggingFace |
-| `unsloth/Llama-3.2-1B-Instruct` | no disponible | no disponible | no disponible | HuggingFace |
-| `jlsrls/em-kl100000-s3` | no disponible | no disponible | no disponible | HuggingFace |
+| `jlsrls/mainsweep-kl1000-s1-em` | no disponible | no disponible | no disponible | Hugging Face |
+| `unsloth/Llama-3.2-1B-Instruct` | no disponible | no disponible | no disponible | Hugging Face |
+| `jlsrls/em-kl100000-s3` | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,6 +76,6 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/jlsrls/mainsweep-kl1000-s1-em](https://huggingface.co/jlsrls/mainsweep-kl1000-s1-em)
+- Hugging Face: [https://huggingface.co/jlsrls/mainsweep-kl1000-s1-em](https://huggingface.co/jlsrls/mainsweep-kl1000-s1-em)
 - Modelo base: [https://huggingface.co/unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct)
 - Registro de entrenamiento en Weights & Biases: [https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/tunt91oa](https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/tunt91oa)

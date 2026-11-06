@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`HAJIMIMANBO1/ckpt-archive-2` es un repositorio alojado en HuggingFace por el usuario HAJIMIMANBO1. En el momento de la consulta no expone ninguna ficha tecnica: la etiqueta de pipeline figura como no disponible, no se declaran idiomas soportados, no hay descripcion, y acumula 0 descargas y 0 likes. El unico metadato sustantivo es la licencia (`other`, es decir, terminos personalizados) y la region (`us`).
+`HAJIMIMANBO1/ckpt-archive-2` es un repositorio alojado en Hugging Face por el usuario HAJIMIMANBO1. En el momento de la consulta no expone ninguna ficha tecnica: la etiqueta de pipeline figura como no disponible, no se declaran idiomas soportados, no hay descripcion, y acumula 0 descargas y 0 likes. El unico metadato sustantivo es la licencia (`other`, es decir, terminos personalizados) y la region (`us`).
 
 El nombre del repositorio sugiere un archivo de puntos de control (checkpoints) mas que un modelo publicado con documentacion: el sufijo `-2` apunta a una segunda entrega de una serie de artefactos. Esto es una inferencia a partir del nombre, no un dato confirmado, ya que no se ha publicado informacion sobre arquitectura, parametros, tokenizador ni proceso de entrenamiento.
 
-Su relevancia actual es limitada como modelo de proposito general, pero es un caso representativo de los repositorios opacos que aparecen en HuggingFace: acceso restringido (gated), licencia no estandar y ausencia total de trazabilidad. Cualquier evaluacion tecnica exige descargar los pesos tras aceptar las condiciones y realizar una inspeccion directa del contenido.
+Su relevancia actual es limitada como modelo de proposito general, pero es un caso representativo de los repositorios opacos que aparecen en Hugging Face: acceso restringido (gated), licencia no estandar y ausencia total de trazabilidad. Cualquier evaluacion tecnica exige descargar los pesos tras aceptar las condiciones y realizar una inspeccion directa del contenido.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada como modelo de proposito general, pero es un ca
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | `other` (terminos personalizados, no estandar; requiere aceptacion de condiciones en HuggingFace) |
+| Licencia | `other` (terminos personalizados, no estandar; requiere aceptacion de condiciones en Hugging Face) |
 | Formato de pesos | no disponible; el nombre del repositorio (`ckpt-archive`) sugiere checkpoints en formato `.ckpt`, sin confirmar |
 | Acceso | restringido (gated): es necesario aceptar las condiciones en la pagina del repositorio |
 | Etiqueta de pipeline | no disponible |
@@ -38,7 +38,7 @@ Se desconoce por completo la composicion del corpus de entrenamiento (numero de 
 
 No existe documentacion de capacidades. Los unicos hechos verificables son los siguientes:
 
-- El repositorio es accesible unicamente tras aceptar las condiciones de acceso en HuggingFace.
+- El repositorio es accesible unicamente tras aceptar las condiciones de acceso en Hugging Face.
 - No se declara ninguna tarea o pipeline asociado, por lo que no se puede confirmar generacion de texto, vision, audio, codigo ni matematicas.
 - No se confirma soporte de tool calling ni de function calling.
 - No se confirma capacidad de razonamiento multi-paso ni comportamiento agentico.
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se ha identificado ningun modelo comparable, porque se desconoce la categoria, el tamano y la tarea del artefacto. Los resultados de la busqueda web hacen referencia a elementos distintos y no comparables: el fichero `model.ckpt` del modelo de reconstruccion 3D TripoSR de Stability AI, el usuario de HuggingFace `ckpt`, y los archivos comunitarios CivArchive y Civitai Archive, que indexan modelos de generacion de imagenes por hash SHA256.
+No disponible. No se ha identificado ningun modelo comparable, porque se desconoce la categoria, el tamano y la tarea del artefacto. Los resultados de la busqueda web hacen referencia a elementos distintos y no comparables: el fichero `model.ckpt` del modelo de reconstruccion 3D TripoSR de Stability AI, el usuario de Hugging Face `ckpt`, y los archivos comunitarios CivArchive y Civitai Archive, que indexan modelos de generacion de imagenes por hash SHA256.
 
 | Criterio | `HAJIMIMANBO1/ckpt-archive-2` | Alternativas comparables |
 |---|---|---|
@@ -97,9 +97,9 @@ No disponible. No se ha identificado ningun modelo comparable, porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HAJIMIMANBO1/ckpt-archive-2
+- Repositorio en Hugging Face: https://huggingface.co/HAJIMIMANBO1/ckpt-archive-2
 - Fichero `model.ckpt` de Stability AI TripoSR (referencia ajena al modelo, aparecida en la busqueda): https://huggingface.co/stabilityai/TripoSR/blob/main/model.ckpt
-- Perfil de usuario `ckpt` en HuggingFace (referencia ajena al modelo): https://huggingface.co/ckpt/models
+- Perfil de usuario `ckpt` en Hugging Face (referencia ajena al modelo): https://huggingface.co/ckpt/models
 - CivArchive, archivo comunitario de modelos de IA (referencia ajena al modelo): https://civarchive.com/about
 - Civitai Archive (referencia ajena al modelo): https://civitaiarchive.com/
 - Listado de modelos atribuidos a HAJIMIMANBO1 en Essamamdani (referencia de terceros, no oficial): https://essamamdani.com/ai-models/company/hajimimanbo1

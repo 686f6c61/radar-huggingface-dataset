@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/empirical_information_redistributed_concentrated_200m_dmodel8_16_32_64` es un modelo de lenguaje causal de escala muy reducida publicado por el usuario `eoinf` en HuggingFace. No se trata de un modelo de propósito general, sino de uno de los puntos de una rejilla experimental de transformers diminutos (con `d_model` de 8, 16, 32 y 64) entrenados sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens, con un presupuesto nominal de aproximadamente 2.000 millones de tokens de entrenamiento. El repositorio está vacío (0.0 GB) y no contiene pesos descargables en el momento de la consulta.
+`eoinf/empirical_information_redistributed_concentrated_200m_dmodel8_16_32_64` es un modelo de lenguaje causal de escala muy reducida publicado por el usuario `eoinf` en Hugging Face. No se trata de un modelo de propósito general, sino de uno de los puntos de una rejilla experimental de transformers diminutos (con `d_model` de 8, 16, 32 y 64) entrenados sobre un vocabulario de 4096 tokens y una longitud de contexto de 256 tokens, con un presupuesto nominal de aproximadamente 2.000 millones de tokens de entrenamiento. El repositorio está vacío (0.0 GB) y no contiene pesos descargables en el momento de la consulta.
 
 El interés del artefacto es puramente metodológico: forma parte de un estudio sobre redistribución y concentración de información empírica en modelos de lenguaje, y el autor distribuye por separado el código de carga y arquitectura en el repositorio `synthetic_trigrams`. Los checkpoints se publican como state-dicts de PyTorch, junto con el historial de entrenamiento y los metadatos de resultados, pero sin estados del optimizador ni datos de entrenamiento.
 
@@ -81,6 +81,6 @@ La comparación es solo orientativa: los tres modelos de referencia son transfor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/empirical_information_redistributed_concentrated_200m_dmodel8_16_32_64
+- Hugging Face: https://huggingface.co/eoinf/empirical_information_redistributed_concentrated_200m_dmodel8_16_32_64
 - Repositorio de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL directa)
 - No se han encontrado papers, blogs, repos adicionales ni demos en la información disponible.

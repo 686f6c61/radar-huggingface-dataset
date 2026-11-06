@@ -24,7 +24,7 @@ Es relevante en el ecosistema TTS open source porque cubre un nicho poco poblado
 | Encoder de texto | T5Gemma 2 afinado (derivado de google/t5gemma-2-1b-1b) |
 | Tamano del repositorio | 13,2 GB |
 | Pipeline | text-to-speech |
-| Descargas / likes en HuggingFace | 0 descargas / 11 likes |
+| Descargas / likes en Hugging Face | 0 descargas / 11 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -108,7 +108,7 @@ Para el resto de benchmarks mencionados en la model card (Coco-Nut, JVS, evaluac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aratako/Irodori-TTS-v4-Large
+- Modelo en Hugging Face: https://huggingface.co/Aratako/Irodori-TTS-v4-Large
 - Repositorio de codigo: https://github.com/Aratako/Irodori-TTS
 - Demo Space: https://huggingface.co/spaces/Aratako/Irodori-TTS-v4-Large-Demo
 - Variantes cuantizadas (planificadas): https://huggingface.co/Aratako/Irodori-TTS-v4-Large-Quantized
@@ -117,6 +117,6 @@ Para el resto de benchmarks mencionados en la model card (Coco-Nut, JVS, evaluac
 - Documentacion de anotaciones por emojis: https://github.com/Aratako/Irodori-TTS/blob/main/EMOJI_ANNOTATIONS.md
 - SilentCipher (marcado de agua): https://github.com/sony/silentcipher
 - Joyo Kanji Yomi Benchmark: Parakeet Edition: https://github.com/Parakeet-Inc/Joyo-Kanji-Yomi-Benchmark-Parakeet-Edition
-- Coleccion Irodori-TTS en HuggingFace: https://huggingface.co/collections/Aratako/irodori-tts
+- Coleccion Irodori-TTS en Hugging Face: https://huggingface.co/collections/Aratako/irodori-tts
 - Perfil del autor en GitHub: https://github.com/Aratako
 - README del repositorio: https://raw.githubusercontent.com/Aratako/Irodori-TTS/refs/heads/main/README.md

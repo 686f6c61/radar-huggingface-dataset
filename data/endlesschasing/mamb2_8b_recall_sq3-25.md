@@ -78,9 +78,9 @@ Frente a la base Q3.25 fija, el adaptador mejora la PPL un 4,0387 % y el MK norm
 | Modelo | Parametros | Contexto | Estado persistente | Recall / calidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Mamb2_8B_Recall_SQ3.25 | 8.000 M base + 1,15 M adaptador | 4.096 tokens (nombre del checkpoint) | 27,1797 MiB por secuencia | PPL WikiText-2 7,8556; MK 271/384 | GPL-3.0 | Adaptador y runtime propio; requiere base NVIDIA aparte |
-| Mamb2_8B_Recall | 8.000 M base + adaptador | 4.096 tokens | no disponible | no disponible en la informacion recogida | GPL-3.0 | Adaptador y runtime propio en HuggingFace |
+| Mamb2_8B_Recall | 8.000 M base + adaptador | 4.096 tokens | no disponible | no disponible en la informacion recogida | GPL-3.0 | Adaptador y runtime propio en Hugging Face |
 | nvidia/mamba2-8b-3t-4k | 8.000 M | 4.096 tokens | S16, 116,3750 MiB por secuencia (referencia archivada) | PPL WikiText-2 7,3343 (S16 archivado) | no disponible en la informacion recogida | Checkpoint PyTorch/Megatron de NVIDIA |
-| Qwen/Qwen3-8B | 8.000 M (transformer denso) | no disponible en la informacion recogida | no aplica (atencion con cache KV) | no disponible | no disponible en la informacion recogida | Pesos y tokenizer en HuggingFace |
+| Qwen/Qwen3-8B | 8.000 M (transformer denso) | no disponible en la informacion recogida | no aplica (atencion con cache KV) | no disponible | no disponible en la informacion recogida | Pesos y tokenizer en Hugging Face |
 
 Las cifras de PPL entre Mamb2_8B_Recall_SQ3.25 y la referencia S16 corresponden a ejecuciones distintas y no se volvieron a medir en el mismo experimento.
 
@@ -99,7 +99,7 @@ Las cifras de PPL entre Mamb2_8B_Recall_SQ3.25 y la referencia S16 corresponden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EndlessChasing/Mamb2_8B_Recall_SQ3.25
+- Modelo en Hugging Face: https://huggingface.co/EndlessChasing/Mamb2_8B_Recall_SQ3.25
 - Adaptador original de la familia: https://huggingface.co/EndlessChasing/Mamb2_8B_Recall
 - Repositorio GitHub asociado: https://github.com/EndlessChasing/mamb2_8B_Recall
 - Modelo base: https://huggingface.co/nvidia/mamba2-8b-3t-4k

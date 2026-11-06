@@ -76,8 +76,8 @@ La única validación numérica reportada es que la salida del modelo reempaquet
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NarinAhir/GFPGAN-v1.4-TFLite | no disponible | no aplica | Restauración facial 512×512 | Apache-2.0 | TFLite con pesos inline | HuggingFace |
-| litert-community/GFPGAN-v1.4-LiteRT | no disponible | no aplica | Restauración facial 512×512 | Apache-2.0 | TFLite/LiteRT | HuggingFace |
+| NarinAhir/GFPGAN-v1.4-TFLite | no disponible | no aplica | Restauración facial 512×512 | Apache-2.0 | TFLite con pesos inline | Hugging Face |
+| litert-community/GFPGAN-v1.4-LiteRT | no disponible | no aplica | Restauración facial 512×512 | Apache-2.0 | TFLite/LiteRT | Hugging Face |
 | TencentARC/GFPGAN v1.4 | no disponible | no aplica | Restauración facial 512×512 | Apache-2.0 | PyTorch | GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. La diferencia principal de este repositorio es la compatibilidad con runtimes antiguos de TensorFlow Lite gracias al reempaquetado de pesos; el modelo base y el original de TencentARC no incluyen ese cambio de formato.
@@ -95,6 +95,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La dife
 
 ## Enlaces
 
-- [NarinAhir/GFPGAN-v1.4-TFLite en HuggingFace](https://huggingface.co/NarinAhir/GFPGAN-v1.4-TFLite)
+- [NarinAhir/GFPGAN-v1.4-TFLite en Hugging Face](https://huggingface.co/NarinAhir/GFPGAN-v1.4-TFLite)
 - [litert-community/GFPGAN-v1.4-LiteRT](https://huggingface.co/litert-community/GFPGAN-v1.4-LiteRT)
 - [TencentARC/GFPGAN en GitHub](https://github.com/TencentARC/GFPGAN)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `ivanpavlovtuj`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown titulado `paper_002894117_cross_modal_fusion.md`. El documento aborda el tema de la fusión cross-modal (cross-modal fusion), una técnica que combina información procedente de distintas modalidades —como texto, imagen, audio o vídeo— para mejorar el rendimiento de modelos multimodales.
+Este repositorio de Hugging Face, publicado por el usuario `ivanpavlovtuj`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown titulado `paper_002894117_cross_modal_fusion.md`. El documento aborda el tema de la fusión cross-modal (cross-modal fusion), una técnica que combina información procedente de distintas modalidades —como texto, imagen, audio o vídeo— para mejorar el rendimiento de modelos multimodales.
 
 El repositorio se presenta como un artefacto de investigación estructurado con una organización típica de artículo científico: introducción, método, experimentos y conclusiones, con un estilo de redacción orientado a resultados empíricos y citas en formato EndNote. No se proporciona ningún peso, arquitectura ni código de modelo, por lo que no es un modelo ejecutable ni desplegable.
 
@@ -67,7 +67,7 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ivanpavlovtuj/paper_002894117_cross_modal_fusion
+- Repositorio de Hugging Face: https://huggingface.co/ivanpavlovtuj/paper_002894117_cross_modal_fusion
 - Artículo relacionado "FUSION: Fully Integration of Vision-Language Representations for Deep..." (arXiv 2504.09925): https://arxiv.org/html/2504.09925v1
 - Repositorio GitHub CMTFusion: https://github.com/seonghyun0108/CMTFusion
 - Encuesta "Multimodal Alignment and Fusion" (arXiv 2411.17040): https://arxiv.org/abs/2411.17040

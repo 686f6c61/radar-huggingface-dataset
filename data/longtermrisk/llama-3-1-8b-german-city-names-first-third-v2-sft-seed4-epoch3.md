@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos comparables en el mismo dominio (nomb
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4-epoch3
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo relacionado (v1): https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-sft

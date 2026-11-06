@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.01-c0.999-r0.5-s42` es un checkpoint de 122.706.432 parametros publicado en HuggingFace por el usuario Cisco1963. Por el identificador y la etiqueta `gpt2`, todo apunta a un modelo basado en la arquitectura GPT-2, entrenado o modificado en el marco de un experimento de investigacion sobre plasticidad de modelos de lenguaje (de ahi el prefijo `llmplasticity`). El sufijo del nombre sugiere un experimento con un par de idiomas neerlandes-chino (`nl_zh`), una variante lineal en la capa 8 (`linear_8`), inicializacion aleatoria (`rand`) y una combinacion de hiperparametros (`d0.01`, `c0.999`, `r0.5`) con semilla 42 (`s42`).
+`Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.01-c0.999-r0.5-s42` es un checkpoint de 122.706.432 parametros publicado en Hugging Face por el usuario Cisco1963. Por el identificador y la etiqueta `gpt2`, todo apunta a un modelo basado en la arquitectura GPT-2, entrenado o modificado en el marco de un experimento de investigacion sobre plasticidad de modelos de lenguaje (de ahi el prefijo `llmplasticity`). El sufijo del nombre sugiere un experimento con un par de idiomas neerlandes-chino (`nl_zh`), una variante lineal en la capa 8 (`linear_8`), inicializacion aleatoria (`rand`) y una combinacion de hiperparametros (`d0.01`, `c0.999`, `r0.5`) con semilla 42 (`s42`).
 
 Se trata de un artefacto de investigacion, no de un modelo orientado a produccion. Cuenta con 3 descargas y 0 likes en el momento de redactar esta ficha, y no incluye model card, licencia declarada ni idiomas soportados. Su relevancia es, por tanto, limitada al contexto academico o experimental del que procede: resultados reproducibles de un estudio concreto, no un modelo listo para desplegar.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Cisco1963/llmplasticity-...-s42 | 122,7 M | no disponible | no disponible | HuggingFace, 3 descargas | Checkpoint de investigacion, sin model card |
-| GPT-2 base (OpenAI) | 124 M | 1024 | MIT | Amplia (HuggingFace) | Referencia de la familia; documentado y con benchmarks publicos |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 | Apache 2.0 | Amplia | Version destilada de GPT-2, menor latencia |
+| Cisco1963/llmplasticity-...-s42 | 122,7 M | no disponible | no disponible | Hugging Face, 3 descargas | Checkpoint de investigacion, sin model card |
+| GPT-2 base (OpenAI) | 124 M | 1024 | MIT | Amplia (Hugging Face) | Referencia de la familia; documentado y con benchmarks publicos |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 | Apache 2.0 | Amplia | Version destilada de GPT-2, menor latencia |
 | GPT-2 small (variantes comunitarias) | ~124 M | 1024 | Variable | Amplia | Multiples fine-tunes con documentacion dispar |
 
 La comparacion es estructural: no hay datos de rendimiento del modelo objetivo para contrastarlo con las alternativas.
@@ -88,5 +88,5 @@ La comparacion es estructural: no hay datos de rendimiento del modelo objetivo p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.01-c0.999-r0.5-s42
-- Listado de modelos de HuggingFace (resultado de busqueda): https://huggingface.co/models?sort=modified
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-rand-d0.01-c0.999-r0.5-s42
+- Listado de modelos de Hugging Face (resultado de busqueda): https://huggingface.co/models?sort=modified

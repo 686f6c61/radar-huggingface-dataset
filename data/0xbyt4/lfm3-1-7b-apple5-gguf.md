@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks de calidad para comparar rendimiento entre 
 
 ## Limitaciones y advertencias
 
-- Los ficheros no cargan en llama.cpp sin parchear, Ollama ni LM Studio: fallan con `wrong number of tensors` por los tensores adicionales. El menú "Use this model" de HuggingFace no funciona.
+- Los ficheros no cargan en llama.cpp sin parchear, Ollama ni LM Studio: fallan con `wrong number of tensors` por los tensores adicionales. El menú "Use this model" de Hugging Face no funciona.
 - Compatibilidad de hardware muy restringida: solo GPU Apple familia 5 (A12, A12X, A12Z) y solo probado en A12Z. El resto de dispositivos listados en el README del parche no han sido verificados por el autor.
 - Idioma limitado al inglés; no hay soporte multilingüe documentado.
 - Licencia LFM1.0 del tipo "other": es necesario revisar el fichero LICENSE del modelo base para uso comercial; el autor conserva los campos de licencia originales en los metadatos.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de calidad para comparar rendimiento entre 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xbyt4/LFM3-1.7B-Apple5-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xbyt4/LFM3-1.7B-Apple5-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - GGUF oficial de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Parche de llama.cpp: https://github.com/0xbyt4/llamacpp-apple5-lfm3

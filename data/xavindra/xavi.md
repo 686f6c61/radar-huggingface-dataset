@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Xavi es un modelo publicado en HuggingFace por el usuario Xavindra bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia, sin descripcion funcional, sin arquitectura declarada y sin datos sobre el pipeline o los idiomas soportados. El repositorio ocupa 2,7 GB, lo que sugiere pesos de un modelo de escala pequena o mediana (compatible con un rango aproximado de 1 a 4 mil millones de parametros en precision de 16 bits, dependiendo del formato y del numero de ficheros), pero este dato es una inferencia a partir del tamano del repositorio y no una especificacion confirmada por el autor.
+Xavi es un modelo publicado en Hugging Face por el usuario Xavindra bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia, sin descripcion funcional, sin arquitectura declarada y sin datos sobre el pipeline o los idiomas soportados. El repositorio ocupa 2,7 GB, lo que sugiere pesos de un modelo de escala pequena o mediana (compatible con un rango aproximado de 1 a 4 mil millones de parametros en precision de 16 bits, dependiendo del formato y del numero de ficheros), pero este dato es una inferencia a partir del tamano del repositorio y no una especificacion confirmada por el autor.
 
 El modelo no registra descargas ni interacciones en el momento de la consulta y fue creado y actualizado el mismo dia (3 de noviembre de 2026), lo que apunta a un experimento personal o a un desarrollo en fase muy temprana. No hay evidencia publica de benchmarks, de datos de entrenamiento ni de capacidades concretas.
 
-Dado que no se ha publicado informacion tecnica verificable, esta ficha documenta exclusivamente lo que consta en los metadatos de HuggingFace y marca explicitamente como "no disponible" cualquier dato que no pueda confirmarse. Cualquier evaluacion de idoneidad para produccion requeriria inspeccionar los ficheros del repositorio y ejecutar pruebas propias.
+Dado que no se ha publicado informacion tecnica verificable, esta ficha documenta exclusivamente lo que consta en los metadatos de Hugging Face y marca explicitamente como "no disponible" cualquier dato que no pueda confirmarse. Cualquier evaluacion de idoneidad para produccion requeriria inspeccionar los ficheros del repositorio y ejecutar pruebas propias.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Experimentacion e investigacion: el modelo puede servir como base para pruebas de fine-tuning o para estudiar el comportamiento de un checkpoint de autoria independiente, dado que la licencia MIT permite modificacion y redistribucion.
 - Evaluacion comparativa interna: util como candidato adicional en un banco de pruebas propio, siempre que se midan sus resultados frente a modelos de referencia con benchmarks estandar (MMLU, GSM8K, HumanEval).
 - Prototipado de bajo riesgo: por su tamano de repositorio (2,7 GB), podria desplegarse en entornos de desarrollo con recursos moderados, aunque la VRAM necesaria no esta confirmada.
-- Educacion y aprendizaje: util para ilustrar el ciclo de publicacion de un modelo en HuggingFace y el proceso de inspeccion de artefactos (configuracion, tokenizador, pesos).
+- Educacion y aprendizaje: util para ilustrar el ciclo de publicacion de un modelo en Hugging Face y el proceso de inspeccion de artefactos (configuracion, tokenizador, pesos).
 - Integracion en pipelines experimentales: si los pesos resultan compatibles con librerias estandar (transformers, llama.cpp), podria incorporarse a pruebas de inferencia, previa verificacion del formato.
 - Auditoria de licencia y trazabilidad: la licencia MIT facilita su inclusion en proyectos comerciales, aunque sin garantias de calidad ni soporte por parte del autor.
 
@@ -77,5 +77,5 @@ No disponible. La ausencia de datos sobre arquitectura, parametros y rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xavindra/Xavi
+- Hugging Face: https://huggingface.co/Xavindra/Xavi
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

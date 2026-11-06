@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/hard_5gram_2_4_256_babylm_10m_seed44` es un modelo de lenguaje pequeño, con 14.970.624 parámetros, desarrollado por Lanni-ni. Está orientado a la generación de texto y, según los metadatos de HuggingFace, emplea atención de ventana deslizante y requiere código personalizado para su carga. Su nombre lo vincula con el desafío BabyLM, cuyo objetivo es entrenar modelos de lenguaje con corpus limitados, aunque la model card no detalla el proceso de entrenamiento.
+El modelo `Lanni-ni/hard_5gram_2_4_256_babylm_10m_seed44` es un modelo de lenguaje pequeño, con 14.970.624 parámetros, desarrollado por Lanni-ni. Está orientado a la generación de texto y, según los metadatos de Hugging Face, emplea atención de ventana deslizante y requiere código personalizado para su carga. Su nombre lo vincula con el desafío BabyLM, cuyo objetivo es entrenar modelos de lenguaje con corpus limitados, aunque la model card no detalla el proceso de entrenamiento.
 
 Publicado en septiembre de 2026, el modelo figura como un repositorio experimental con 0 descargas y 0 likes. La información disponible se limita a sus parámetros totales, el formato de pesos en safetensors y algunas etiquetas técnicas. No se dispone de documentación sobre datos de entrenamiento, licencia, idiomas o capacidades concretas.
 
@@ -27,7 +27,7 @@ No se dispone de información sobre el corpus de entrenamiento, el número de to
 
 ## Capacidades
 
-- Generación de texto: el pipeline de HuggingFace es `text-generation`, por lo que el modelo es capaz de generar texto.
+- Generación de texto: el pipeline de Hugging Face es `text-generation`, por lo que el modelo es capaz de generar texto.
 - Atención de ventana deslizante: los metadatos indican `sliding_window`, lo que implica que puede procesar secuencias mediante ventanas deslizantes; el tamaño concreto de la ventana no se ha especificado.
 - Soporte de tool calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
@@ -72,5 +72,5 @@ No se dispone de información sobre modelos comparables en la documentación con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/hard_5gram_2_4_256_babylm_10m_seed44
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/hard_5gram_2_4_256_babylm_10m_seed44
 - No se han encontrado papers, repositorios de código, demos ni blogs adicionales en la búsqueda web.

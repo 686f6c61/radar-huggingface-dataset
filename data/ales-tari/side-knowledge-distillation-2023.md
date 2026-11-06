@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ales-tari/side-knowledge-distillation-2023
+- Repositorio en Hugging Face: https://huggingface.co/ales-tari/side-knowledge-distillation-2023
 - Survey sobre destilación de conocimiento en LLMs (arXiv): https://arxiv.org/html/2402.13116v1
 - Survey exhaustivo sobre destilación de conocimiento (arXiv): https://arxiv.org/html/2503.12067v2
 - Survey sobre avances recientes en destilación (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S2666827024000811

@@ -90,7 +90,7 @@ Diferencias clave: OpenMythos declara una ventana de contexto muy superior a la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onyx-ai/OpenMythos-0.7B-Preview
+- Modelo en Hugging Face: https://huggingface.co/onyx-ai/OpenMythos-0.7B-Preview
 - Repositorio de codigo: no disponible en la informacion proporcionada
 - Paper tecnico: no disponible
 - Blog o anuncio del autor: no disponible

@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables directamente. Como refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tfxhk/code-switching-codesaviours-si26-tehreem
+- Hugging Face: https://huggingface.co/tfxhk/code-switching-codesaviours-si26-tehreem
 - Repositorio GitHub relacionado: https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-
 - Repositorio GitHub del autor (OCR urdu): https://github.com/tfxhk/urdu_ocr_codesaviours_si26_Hafiza_Tehreem
 - Publicación en LinkedIn: https://www.linkedin.com/posts/hamnaic_nlp-urdunlp-machinelearning-activity-7496265202267713538-Rzdz
@@ -141,7 +141,7 @@ No se dispone de información sobre modelos comparables directamente. Como refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tfxhk/code-switching-codesaviours-si26-tehreem
+- Hugging Face: https://huggingface.co/tfxhk/code-switching-codesaviours-si26-tehreem
 - GitHub relacionado (proyecto CodeSaviours): https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-
 - GitHub del autor (OCR urdu): https://github.com/tfxhk/urdu_ocr_codesaviours_si26_Hafiza_Tehreem
 - Publicación en LinkedIn (proyecto relacionado): https://www.linkedin.com/posts/hamnaic_nlp-urdunlp-machinelearning-activity-7496265202267713538-Rzdz

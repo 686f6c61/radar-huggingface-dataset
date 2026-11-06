@@ -93,7 +93,7 @@ No hay datos publicos de rendimiento comparativo entre esta cuantizacion y otras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leoncca/Qwen3.8-27B-AEON-Mixed-FP8
+- Modelo en Hugging Face: https://huggingface.co/leoncca/Qwen3.8-27B-AEON-Mixed-FP8
 - Modelo fuente (AEON): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Modelo base oficial (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

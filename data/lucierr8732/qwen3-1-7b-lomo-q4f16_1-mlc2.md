@@ -78,7 +78,7 @@ La comparativa muestra que este repo es una de las variantes de cuantización pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucierr8732/Qwen3-1.7B-LOMO-q4f16_1-MLC2
+- Repositorio Hugging Face: https://huggingface.co/Lucierr8732/Qwen3-1.7B-LOMO-q4f16_1-MLC2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - GitHub de Qwen3 (QwenLM): https://github.com/QwenLM/Qwen3
 - Página de Qwen3 en ModelScope (unsloth): https://www.modelscope.cn/models/unsloth/Qwen3-1.7B
@@ -161,7 +161,7 @@ La comparación con el modelo oficial y la versión GGUF muestra que este repo e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lucierr8732/Qwen3-1.7B-LOMO-q4f16_1-MLC2
+- Repositorio Hugging Face: https://huggingface.co/Lucierr8732/Qwen3-1.7B-LOMO-q4f16_1-MLC2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - GitHub de Qwen3 (QwenLM): https://github.com/QwenLM/Qwen3
 - Página de Qwen3 en ModelScope (unsloth): https://www.modelscope.cn/models/unsloth/Qwen3-1.7B

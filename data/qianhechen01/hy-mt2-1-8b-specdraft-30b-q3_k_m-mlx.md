@@ -77,9 +77,9 @@ No se dispone de información sobre modelos comparables en el contexto de decodi
 
 ## Enlaces
 
-- [HuggingFace - QianheChen01/Hy-MT2-1.8B-SpecDraft-30B-Q3_K_M-MLX](https://huggingface.co/QianheChen01/Hy-MT2-1.8B-SpecDraft-30B-Q3_K_M-MLX)
+- [Hugging Face - QianheChen01/Hy-MT2-1.8B-SpecDraft-30B-Q3_K_M-MLX](https://huggingface.co/QianheChen01/Hy-MT2-1.8B-SpecDraft-30B-Q3_K_M-MLX)
 - [Benchmark en omlx.ai](https://omlx.ai/benchmarks/performance/zi2k8bq)
 - [Repositorio de GitHub de Hy-MT2](https://github.com/Tencent-Hunyuan/Hy-MT2)
 - [Paper de Hy-MT2 (arXiv)](https://arxiv.org/html/2605.22064)
-- [mlx-community/Hy-MT2-1.8B (HuggingFace)](https://huggingface.co/mlx-community/Hy-MT2-1.8B)
-- [tencent/Hy-MT2-1.8B-GGUF (HuggingFace)](https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF)
+- [mlx-community/Hy-MT2-1.8B (Hugging Face)](https://huggingface.co/mlx-community/Hy-MT2-1.8B)
+- [tencent/Hy-MT2-1.8B-GGUF (Hugging Face)](https://huggingface.co/tencent/Hy-MT2-1.8B-GGUF)

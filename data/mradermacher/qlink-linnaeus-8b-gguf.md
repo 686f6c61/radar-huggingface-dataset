@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QLink-linnaeus-8B-GGUF es la distribucion en formato GGUF del modelo QLink-linnaeus-8B, un modelo de lenguaje conversacional de 8.190.735.360 parametros (aproximadamente 8.190 millones) publicado originalmente por el usuario Dash00 en HuggingFace. Esta version ha sido cuantizada por mradermacher, un prolifico distribuidor de cuantizaciones GGUF para la comunidad de inferencia local, con el objetivo de hacer el modelo ejecutable en hardware de consumo mediante llama.cpp y herramientas compatibles.
+QLink-linnaeus-8B-GGUF es la distribucion en formato GGUF del modelo QLink-linnaeus-8B, un modelo de lenguaje conversacional de 8.190.735.360 parametros (aproximadamente 8.190 millones) publicado originalmente por el usuario Dash00 en Hugging Face. Esta version ha sido cuantizada por mradermacher, un prolifico distribuidor de cuantizaciones GGUF para la comunidad de inferencia local, con el objetivo de hacer el modelo ejecutable en hardware de consumo mediante llama.cpp y herramientas compatibles.
 
 El modelo esta disenado para uso conversacional en ingles y se distribuye bajo la libreria transformers, con soporte para endpoints compatibles. La relevancia de esta ficha radica en que ofrece una via practica para desplegar un modelo de 8B en GPUs de consumo: las cuantizaciones disponibles van desde Q2_K (3,4 GB) hasta f16 (16,5 GB), lo que permite ajustar el equilibrio entre calidad y requisitos de VRAM.
 

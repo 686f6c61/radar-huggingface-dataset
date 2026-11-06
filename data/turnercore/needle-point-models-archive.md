@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`turnercore/needle-point-models-archive` es un repositorio de HuggingFace publicado por el usuario `turnercore` que, segun su propia model card, no contiene un modelo unico sino un archivo de modelos y checkpoints entrenados localmente, guardados el 5 de noviembre de 2026 desde una maquina identificada como `bosbitch` antes de eliminar los worktrees locales. Cada carpeta de primer nivel corresponde al checkout del que procede cada artefacto. El repositorio ocupa 4,3 GB y esta etiquetado con `safetensors` y `region:us`.
+`turnercore/needle-point-models-archive` es un repositorio de Hugging Face publicado por el usuario `turnercore` que, segun su propia model card, no contiene un modelo unico sino un archivo de modelos y checkpoints entrenados localmente, guardados el 5 de noviembre de 2026 desde una maquina identificada como `bosbitch` antes de eliminar los worktrees locales. Cada carpeta de primer nivel corresponde al checkout del que procede cada artefacto. El repositorio ocupa 4,3 GB y esta etiquetado con `safetensors` y `region:us`.
 
 No se trata, por tanto, de un modelo con arquitectura, tamano o contexto documentados, sino de una coleccion heterogenea de pesos sin model card tecnica, sin pipeline declarado y sin licencia especificada. La model card advierte ademas que los artefactos con datos a nivel de fila o de comportamiento (bundles de retrieval y caches de embeddings) no estan en este repositorio, sino en un dataset privado, lo que sugiere que los modelos aqui presentes estan relacionados con tareas de recuperacion de informacion o representaciones vectoriales.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica numero de toke
 - Inspeccion forense de checkpoints: un investigador puede descargar los ficheros `safetensors` y analizar las claves y formas de los tensores para inferir la arquitectura real de cada checkpoint, ya que la model card no la documenta.
 - Recuperacion de artefactos de un proyecto previo: si el autor o un colaborador necesita recuperar pesos entrenados antes de eliminar los worktrees locales, este repositorio actua como copia de seguridad de esos checkpoints.
 - Reproduccion de experimentos internos: un equipo que conozca el pipeline original puede reutilizar estos pesos como punto de partida para continuar el entrenamiento o evaluar variantes.
-- Estudio de practicas de versionado de modelos: el repositorio ilustra un patron de archivado por checkout, util como ejemplo de organizacion de artefactos en HuggingFace.
+- Estudio de practicas de versionado de modelos: el repositorio ilustra un patron de archivado por checkout, util como ejemplo de organizacion de artefactos en Hugging Face.
 - Base para tareas de retrieval, si se confirma que los checkpoints son modelos de embeddings: podrian integrarse en un pipeline de busqueda semantica tras validar su calidad con un conjunto de evaluacion propio.
 - Analisis de seguridad de modelos: un equipo puede auditar los pesos en busca de comportamientos anomalos o de datos sensibles residuales antes de decidir su uso.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque la informacion proporcio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/turnercore/needle-point-models-archive
+- Repositorio en Hugging Face: https://huggingface.co/turnercore/needle-point-models-archive
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

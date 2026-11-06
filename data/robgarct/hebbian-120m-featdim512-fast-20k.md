@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hebbian-120m-featdim512-fast-20k` es un checkpoint de investigación publicado por el usuario robgarct en HuggingFace. Se trata de un modelo de lenguaje de aproximadamente 120 millones de parámetros construido sobre un mezclador hebbiano (`online_hebbian_v10`) con atención lineal y una dimensión de característica (*feature_dim*) de 512. El autor lo publica explícitamente para que sus evaluaciones de recuperación en contexto (*in-context recall*) puedan reproducirse, no como un modelo listo para uso general.
+`hebbian-120m-featdim512-fast-20k` es un checkpoint de investigación publicado por el usuario robgarct en Hugging Face. Se trata de un modelo de lenguaje de aproximadamente 120 millones de parámetros construido sobre un mezclador hebbiano (`online_hebbian_v10`) con atención lineal y una dimensión de característica (*feature_dim*) de 512. El autor lo publica explícitamente para que sus evaluaciones de recuperación en contexto (*in-context recall*) puedan reproducirse, no como un modelo listo para uso general.
 
 El entrenamiento consistió en 20 000 pasos sobre el dataset Pile partiendo de la configuración de experimento `mlp_mixer/online_hebbian_v10_noSiLU_initSmall_featdim512_120m_fast`. Forma parte de un barrido de ancho de estado (*state-width sweep*) evaluado en FDA, SWDE y SQuAD, en RULER NIAH y en un barrido de retención controlado por distancia, lo que lo sitúa en la línea de investigación sobre mecanismos de memoria y recuperación como alternativa a la atención softmax.
 
@@ -26,7 +26,7 @@ Su relevancia es fundamentalmente académica: aporta un punto de comparación re
 | Configuracion de experimento | `mlp_mixer/online_hebbian_v10_noSiLU_initSmall_featdim512_120m_fast` |
 | Libreria asociada | `recurrent-recall-circuits` |
 | Tamano del repositorio | Aproximadamente 0,5 GB |
-| Fecha de publicacion | 19 de septiembre de 2026 (segun HuggingFace) |
+| Fecha de publicacion | 19 de septiembre de 2026 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -83,9 +83,9 @@ No hay datos de rendimiento comparativos publicados para este modelo ni informac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hebbian-120m-featdim512-fast-20k | Aproximadamente 120 M | No disponible | No disponible | HuggingFace, libreria propia, 0 descargas |
+| hebbian-120m-featdim512-fast-20k | Aproximadamente 120 M | No disponible | No disponible | Hugging Face, libreria propia, 0 descargas |
 | GPT-2 (124 M) | 124 M | 1024 tokens | Licencia MIT modificada | Ampliamente disponible y soportado en multiples runtimes |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, soporte en transformers |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, soporte en transformers |
 | Mezcladores lineales de investigacion de tamano similar | No disponible | No disponible | No disponible | No disponible |
 
 La diferencia principal frente a las alternativas es cualitativa: este checkpoint no persigue un rendimiento general competitivo, sino servir de artefacto reproducible para estudiar recuperacion en contexto y ancho de estado en un mezclador lineal hebbiano.
@@ -106,8 +106,8 @@ La diferencia principal frente a las alternativas es cualitativa: este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robgarct/hebbian-120m-featdim512-fast-20k
+- Modelo en Hugging Face: https://huggingface.co/robgarct/hebbian-120m-featdim512-fast-20k
 - Libreria declarada en la model card: `recurrent-recall-circuits` (sin URL publica en la informacion disponible)
 - Paper, blog, repositorio o demo asociados: no disponibles
 - Resultados de la busqueda web: los enlaces recuperados no guardan relacion con el modelo (contenido sobre la plataforma Bilibili), por lo que no se incluyen como referencias validas.
-- Perfil del autor en HuggingFace: https://huggingface.co/robgarct
+- Perfil del autor en Hugging Face: https://huggingface.co/robgarct

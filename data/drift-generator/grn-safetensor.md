@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye resultados ni especificac
 
 ## Enlaces
 
-- Repositorio HuggingFace (conversion): https://huggingface.co/drift-generator/grn-safetensor
+- Repositorio Hugging Face (conversion): https://huggingface.co/drift-generator/grn-safetensor
 - Pesos oficiales: https://huggingface.co/bytedance-research/GRN
 - Codigo oficial: https://github.com/MGenAI/GRN
 - Paper: https://arxiv.org/abs/2604.13030

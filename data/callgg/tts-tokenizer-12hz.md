@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tts-tokenizer-12hz` es un tokenizador neuronal de audio publicado por el usuario callgg en HuggingFace. Por su nombre y la etiqueta `qwen3_tts_tokenizer_12hz` que aparece en los metadatos, se trata de un componente derivado o compatible con el tokenizador de audio de la familia Qwen3-TTS, que opera a una frecuencia de 12 Hz (es decir, genera 12 tokens por segundo de audio). No es un modelo generativo de texto ni un sistema TTS completo, sino la pieza que convierte formas de onda de audio en secuencias discretas de tokens y viceversa, paso imprescindible en pipelines de síntesis de voz basados en modelos de lenguaje.
+`tts-tokenizer-12hz` es un tokenizador neuronal de audio publicado por el usuario callgg en Hugging Face. Por su nombre y la etiqueta `qwen3_tts_tokenizer_12hz` que aparece en los metadatos, se trata de un componente derivado o compatible con el tokenizador de audio de la familia Qwen3-TTS, que opera a una frecuencia de 12 Hz (es decir, genera 12 tokens por segundo de audio). No es un modelo generativo de texto ni un sistema TTS completo, sino la pieza que convierte formas de onda de audio en secuencias discretas de tokens y viceversa, paso imprescindible en pipelines de síntesis de voz basados en modelos de lenguaje.
 
 El modelo cuenta con 170.557.441 parámetros (unos 170 millones) almacenados en formato safetensors, con un tamaño de repositorio de 0,7 GB. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales significativas. El repositorio tiene un volumen de descargas muy bajo (29) y ninguna interacción social, lo que sugiere que es una publicación reciente o un artefacto auxiliar extraído de un proyecto mayor.
 
@@ -83,5 +83,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/callgg/tts-tokenizer-12hz
+- Hugging Face: https://huggingface.co/callgg/tts-tokenizer-12hz
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

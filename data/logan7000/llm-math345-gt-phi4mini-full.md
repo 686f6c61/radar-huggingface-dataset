@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no disponible. Para el modelo base Phi-4-mini-instruct en FP16, se requieren aproximadamente 8 GB de VRAM para inferencia basica, pero este fine-tuning podria tener requisitos similares.
 - GPU recomendadas: una GPU con al menos 8-10 GB de VRAM (por ejemplo, RTX 3080, RTX 4090) para inferencia en FP16. Para entrenamiento o fine-tuning adicional, se necesitarian GPUs con mayor memoria (A100 40GB o H100).
 - Si cabe en consumer GPU: probablemente si, en cuantizacion FP16 o con cuantizacion 8-bit, pero no se han publicado cuantizaciones de este modelo.
-- Opciones de despliegue: al ser un modelo basado en Transformers, puede desplegarse con vLLM, llama.cpp (si se convierten los pesos a GGUF), Ollama (si se crea un Modelfile) o directamente con la libreria Transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo basado en Transformers, puede desplegarse con vLLM, llama.cpp (si se convierten los pesos a GGUF), Ollama (si se crea un Modelfile) o directamente con la libreria Transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,8 +69,8 @@ No se dispone de datos comparativos con otros modelos de la misma categoria. Los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/llm-math345-gt-phi4mini-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/llm-math345-gt-phi4mini-full
 - Perfil del autor: https://huggingface.co/logan7000
 - Modelo relacionado (phi35mini): https://huggingface.co/logan7000/llm-math345-gt-phi35mini-endpoint
 - Modelo relacionado (ttrl): https://huggingface.co/logan7000/llm-math345-ttrl-phi4mini-endpoint
-- Referencia al modelo base Phi-4-mini-instruct: no se ha proporcionado enlace directo, pero esta disponible en HuggingFace bajo el nombre `microsoft/Phi-4-mini-instruct`.
+- Referencia al modelo base Phi-4-mini-instruct: no se ha proporcionado enlace directo, pero esta disponible en Hugging Face bajo el nombre `microsoft/Phi-4-mini-instruct`.

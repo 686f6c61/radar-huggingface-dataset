@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adarshcod30/flipkart-gridlock-2.0
+- Modelo en Hugging Face: https://huggingface.co/adarshcod30/flipkart-gridlock-2.0
 - Repositorio GitHub del autor: https://github.com/adarshcod30/Flipkart-Gridlock-2.0
 - Repositorio alternativo con documentación: https://github.com/Princekumartech/Flipkart-Gridlock-2.0
 - Página de la competición: https://gridlock2point0.hackerearth.com/

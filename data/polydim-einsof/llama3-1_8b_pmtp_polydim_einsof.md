@@ -29,7 +29,7 @@ El control de razonamiento se articula mediante el parametro `turing_depth`, que
 
 ## Capacidades
 
-- Extraccion de caracteristicas (`feature-extraction`), que es el pipeline declarado en HuggingFace.
+- Extraccion de caracteristicas (`feature-extraction`), que es el pipeline declarado en Hugging Face.
 - Razonamiento multi-paso en espacio latente continuo mediante el parametro `turing_depth`, sin generacion de tokens intermedios entre pasos.
 - Modos operativos escalonados: `IDENTITY_BYPASS` (0), `FAST_REFLEX` (1), `RED_TEAM_DELIBERATION` (2-20) y `DEEP_TURING_EXPLOSION` (21-50).
 - Autocritica adversarial y verificacion anti-sicofancia en los modos de profundidad media y alta, segun la model card.
@@ -77,10 +77,10 @@ No hay modelos directamente comparables en la informacion proporcionada, ya que 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| llama3.1_8b_PMTP_polydim_einsof (adaptador) | Adaptador sobre 8,03 B | No disponible (base: 128 000) | Apache 2.0 | HuggingFace (0 descargas) |
-| meta-llama/Llama-3.1-8B (base) | 8,03 B | 128 000 | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B | 7,2 B | 32 000 | Apache 2.0 | HuggingFace |
-| Qwen2.5 7B | 7,6 B | 128 000 | Apache 2.0 | HuggingFace |
+| llama3.1_8b_PMTP_polydim_einsof (adaptador) | Adaptador sobre 8,03 B | No disponible (base: 128 000) | Apache 2.0 | Hugging Face (0 descargas) |
+| meta-llama/Llama-3.1-8B (base) | 8,03 B | 128 000 | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B | 7,2 B | 32 000 | Apache 2.0 | Hugging Face |
+| Qwen2.5 7B | 7,6 B | 128 000 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparacion cuantitativa con estas alternativas.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/llama3.1_8b_PMTP_polydim_einsof
+- Hugging Face: https://huggingface.co/Polydim-Einsof/llama3.1_8b_PMTP_polydim_einsof
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - DOI primario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21136742
 - DOI secundario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21209973

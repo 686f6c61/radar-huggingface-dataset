@@ -86,7 +86,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qxlsz/Qwen3.5-0.8B-weight-space-programming-mlx
+- Modelo en Hugging Face: https://huggingface.co/qxlsz/Qwen3.5-0.8B-weight-space-programming-mlx
 - Modelo fuente: https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming
 - Blog del autor del modelo fuente: https://rikiyat.github.io/blog/weight-space-programming/
 - mlx-vlm: https://github.com/Blaizzy/mlx-vlm

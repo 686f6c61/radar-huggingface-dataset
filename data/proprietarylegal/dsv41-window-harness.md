@@ -79,7 +79,7 @@ No disponible. El repositorio no es un modelo de lenguaje, sino un arnés de med
 
 ## Enlaces
 
-- [HuggingFace: ProprietaryLegal/dsv41-window-harness](https://huggingface.co/ProprietaryLegal/dsv41-window-harness)
+- [Hugging Face: ProprietaryLegal/dsv41-window-harness](https://huggingface.co/ProprietaryLegal/dsv41-window-harness)
 - [Repositorio dsv41-offload](https://github.com/ProprietaryLegal/dsv41-offload)
 - [Organización pli-labs en GitHub](https://github.com/ProprietaryLegal/pli-labs)
 - [PLI Labs](https://proprietarylegal.ai/labs.html)

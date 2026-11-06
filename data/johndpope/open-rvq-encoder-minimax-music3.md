@@ -87,7 +87,7 @@ No se dispone de información sobre codificadores RVQ comparables de otros fabri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/johndpope/open-rvq-encoder-minimax-music3
+- Modelo en Hugging Face: https://huggingface.co/johndpope/open-rvq-encoder-minimax-music3
 - Codificador v1 (41M): https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1
 - Codificador v2 (155M): https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-155m-v2
 - Codificador v3 (155M): https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-155m-v3

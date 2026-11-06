@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Howard16/bean_leaf_onnx` es un artefacto publicado en HuggingFace por el usuario Howard16 que, por su nombre y formato, parece corresponder a un modelo de visión artificial exportado a ONNX, probablemente orientado a la clasificación o detección de enfermedades en hojas de judía (bean leaf). No se trata de un modelo de lenguaje generativo, sino de un modelo de visión de propósito específico dentro del ámbito agrícola.
+`Howard16/bean_leaf_onnx` es un artefacto publicado en Hugging Face por el usuario Howard16 que, por su nombre y formato, parece corresponder a un modelo de visión artificial exportado a ONNX, probablemente orientado a la clasificación o detección de enfermedades en hojas de judía (bean leaf). No se trata de un modelo de lenguaje generativo, sino de un modelo de visión de propósito específico dentro del ámbito agrícola.
 
 La model card publicada está prácticamente vacía: no incluye descripción del modelo, arquitectura, datos de entrenamiento, métricas ni instrucciones de uso. La única información disponible es la licencia (`unknown`), la ausencia de idiomas declarados y la ausencia de pipeline asignado. El repositorio no registra descargas y cuenta con un único "like", lo que sugiere un artefacto de carácter personal o experimental más que un modelo de producción.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la model card no especifica dataset, número de mues
 - **Despliegue en dispositivos de borde**: su formato ONNX permite ejecutarlo en Raspberry Pi o dispositivos similares para experimentos de monitorización de cultivos, aunque se desconoce el coste computacional real.
 - **Pipeline de preprocesado en visión por computador**: incorporarlo como etapa de clasificación binaria o multiclase dentro de un sistema mayor de análisis de imágenes agrícolas, previa verificación de sus etiquetas de salida.
 - **Comparación de técnicas de exportación ONNX**: útil como ejemplo práctico para estudiar cómo se comporta un modelo de visión exportado a ONNX frente a su versión original en PyTorch, si se localiza el modelo fuente.
-- **Docencia y experimentación con HuggingFace Hub**: sirve como caso de estudio de repositorios con documentación insuficiente y de la importancia de las model cards para la reproducibilidad.
+- **Docencia y experimentación con Hugging Face Hub**: sirve como caso de estudio de repositorios con documentación insuficiente y de la importancia de las model cards para la reproducibilidad.
 
 ## Benchmarks y rendimiento
 
@@ -72,5 +72,5 @@ No disponible. No se conocen modelos comparables dentro del mismo repositorio ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Howard16/bean_leaf_onnx
+- Repositorio en Hugging Face: https://huggingface.co/Howard16/bean_leaf_onnx
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

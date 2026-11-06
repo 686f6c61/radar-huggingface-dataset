@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tadiecool29/afroxlmr-stl-base-sentiment
+- Hugging Face: https://huggingface.co/tadiecool29/afroxlmr-stl-base-sentiment
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-base
 - Paper AfroXLMR-Social (arXiv PDF): https://arxiv.org/pdf/2503.18247v3
 - Paper AfroXLMR-Social (arXiv HTML): https://arxiv.org/html/2503.18247v1

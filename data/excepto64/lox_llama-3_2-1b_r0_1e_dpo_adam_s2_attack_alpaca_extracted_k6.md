@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `excepto64/lox_Llama-3_2-1B_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6` es un fine-tuning de Llama 3.2 1B, publicado en HuggingFace por el usuario `excepto64`. El nombre del repositorio sugiere un experimento de entrenamiento con optimización por preferencias directas (DPO), el optimizador Adam, un dataset de tipo Alpaca y un componente de "ataque" que podría indicar un estudio de robustez o jailbreak. Sin embargo, la model card es completamente genérica y no aporta ninguna información concreta sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del modelo.
+El modelo `excepto64/lox_Llama-3_2-1B_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6` es un fine-tuning de Llama 3.2 1B, publicado en Hugging Face por el usuario `excepto64`. El nombre del repositorio sugiere un experimento de entrenamiento con optimización por preferencias directas (DPO), el optimizador Adam, un dataset de tipo Alpaca y un componente de "ataque" que podría indicar un estudio de robustez o jailbreak. Sin embargo, la model card es completamente genérica y no aporta ninguna información concreta sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del modelo.
 
 Con 1.235.814.400 parámetros, se trata de un modelo pequeño, adecuado para entornos con recursos limitados. El repositorio contiene únicamente pesos en formato `safetensors` y está etiquetado como compatible con `text-generation-inference`. No se ha publicado ninguna documentación técnica adicional, benchmarks ni ejemplos de uso, por lo que su utilidad práctica queda limitada a quien lo haya creado o a experimentos de reproducción.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama 3.2 1B (base) | 1,24 B | 128k | Llama 3.2 Community License | HuggingFace oficial |
-| este modelo | 1,24 B | no disponible | no disponible | HuggingFace (repo sin documentación) |
-| TinyLlama 1.1B | 1,1 B | 2k | Apache 2.0 | HuggingFace oficial |
+| Llama 3.2 1B (base) | 1,24 B | 128k | Llama 3.2 Community License | Hugging Face oficial |
+| este modelo | 1,24 B | no disponible | no disponible | Hugging Face (repo sin documentación) |
+| TinyLlama 1.1B | 1,1 B | 2k | Apache 2.0 | Hugging Face oficial |
 
 La comparativa es limitada porque no se conocen las características específicas de este fine-tuning. Frente al modelo base Llama 3.2 1B, este checkpoint podría tener un comportamiento distinto en alineación o seguridad, pero no hay datos que lo demuestren. TinyLlama es una alternativa con licencia permisiva y mayor documentación.
 
@@ -81,5 +81,5 @@ La comparativa es limitada porque no se conocen las características específica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/excepto64/lox_Llama-3_2-1B_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6
+- Repositorio Hugging Face: https://huggingface.co/excepto64/lox_Llama-3_2-1B_r0_1e_dpo_adam_s2_attack_alpaca_extracted_k6
 - No se han encontrado papers, blogs ni demos asociados.

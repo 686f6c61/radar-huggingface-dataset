@@ -89,8 +89,8 @@ La comparación directa con modelos de propósito general no es significativa, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch05
-- Modelo base en HuggingFace: https://huggingface.co/locuslab/tofu_ft_phi-1.5
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch05
+- Modelo base en Hugging Face: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Repositorio TOFU (referencia del benchmark): no disponible en la información proporcionada
 - Paper de TOFU: no disponible en la información proporcionada

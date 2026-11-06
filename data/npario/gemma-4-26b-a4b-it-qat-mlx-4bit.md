@@ -31,7 +31,7 @@ El sufijo `QAT` indica que el modelo original fue sometido a entrenamiento consc
 
 - Generacion de texto de tipo conversacional, con la etiqueta `conversational` en el repositorio y plantilla de chat propia de un modelo `-it` (instruction-tuned).
 - Procesamiento multimodal de imagen y texto (pipeline `image-text-to-text`): entrada de imagenes junto a instrucciones en lenguaje natural.
-- El nombre del repositorio incluye `endpoints_compatible`, lo que sugiere compatibilidad con el esquema de endpoints habitual de HuggingFace para inferencia.
+- El nombre del repositorio incluye `endpoints_compatible`, lo que sugiere compatibilidad con el esquema de endpoints habitual de Hugging Face para inferencia.
 - Capacidades de razonamiento, codigo, matematicas, tool calling, agentes, soporte multilingue o modos especiales de pensamiento: no disponibles en la informacion proporcionada.
 
 ## Casos de uso
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| npario/gemma-4-26B-A4B-it-QAT-MLX-4bit | 25 805 936 206 | No disponible | 4-bit MLX | Apache 2.0 | HuggingFace (0 descargas) |
-| google/gemma-4-26B-A4B-it-QAT (base) | No disponible en la informacion proporcionada | No disponible | Original QAT | Apache 2.0 con licencia Gemma 4 | HuggingFace |
+| npario/gemma-4-26B-A4B-it-QAT-MLX-4bit | 25 805 936 206 | No disponible | 4-bit MLX | Apache 2.0 | Hugging Face (0 descargas) |
+| google/gemma-4-26B-A4B-it-QAT (base) | No disponible en la informacion proporcionada | No disponible | Original QAT | Apache 2.0 con licencia Gemma 4 | Hugging Face |
 | Alternativas equivalentes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Solo se dispone de datos del modelo base, del que este repositorio es una conversion a 4 bits para MLX. No se han proporcionado otros modelos comparables de la misma categoria, por lo que no es posible establecer una comparativa numerica con alternativas.
@@ -78,7 +78,7 @@ Solo se dispone de datos del modelo base, del que este repositorio es una conver
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/npario/gemma-4-26B-A4B-it-QAT-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/npario/gemma-4-26B-A4B-it-QAT-MLX-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it-QAT
 - Licencia Gemma 4 de Google: https://ai.google.dev/gemma/docs/gemma_4_license
 - LM Studio: https://lmstudio.ai

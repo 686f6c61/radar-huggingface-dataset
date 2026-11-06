@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Stage-org/4b-A-solvability-200-luna-v2-noshot-epoch3` | 4,54 B | No disponible (vLLM a 65.536) | No disponible | HuggingFace, 0 descargas | Derivado RL de Qwen3.5-4B, sin benchmarks ni documentacion |
-| `Qwen/Qwen3.5-4B` | ~4 B | No disponible en esta busqueda | No disponible | HuggingFace | Modelo base del anterior; capacidades y evaluaciones publicadas por el autor original |
-| Modelos densos de ~3-4 B de la generacion 2025-2026 (Qwen3.5-4B, Llama 3.2 3B, Gemma 3 4B, etc.) | 3-4 B | 8 K-128 K segun familia | Varía por modelo | HuggingFace / Ollama / vLLM | Categoria comparable en tamano y coste de inferencia; rendimiento no disponible |
+| `Stage-org/4b-A-solvability-200-luna-v2-noshot-epoch3` | 4,54 B | No disponible (vLLM a 65.536) | No disponible | Hugging Face, 0 descargas | Derivado RL de Qwen3.5-4B, sin benchmarks ni documentacion |
+| `Qwen/Qwen3.5-4B` | ~4 B | No disponible en esta busqueda | No disponible | Hugging Face | Modelo base del anterior; capacidades y evaluaciones publicadas por el autor original |
+| Modelos densos de ~3-4 B de la generacion 2025-2026 (Qwen3.5-4B, Llama 3.2 3B, Gemma 3 4B, etc.) | 3-4 B | 8 K-128 K segun familia | Varía por modelo | Hugging Face / Ollama / vLLM | Categoria comparable en tamano y coste de inferencia; rendimiento no disponible |
 
 No es posible establecer una comparacion cuantitativa de rendimiento porque el checkpoint consultado no publica ninguna metrica y los resultados de busqueda no aportan datos tecnicos sobre modelos comparables.
 
@@ -93,7 +93,7 @@ No es posible establecer una comparacion cuantitativa de rendimiento porque el c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stage-org/4b-A-solvability-200-luna-v2-noshot-epoch3
+- Repositorio Hugging Face: https://huggingface.co/Stage-org/4b-A-solvability-200-luna-v2-noshot-epoch3
 - Modelo base referenciado en la configuracion: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/Stage-org/4b-A-solvability-200-luna-v2-noshot
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

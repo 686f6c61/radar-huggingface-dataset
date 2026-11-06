@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DLESyM (Deep Learning Earth System Model) es un modelo de sistema terrestre basado en aprendizaje profundo que acopla de forma asincrona modulos neuronales de atmosfera y oceano para ejecutar simulaciones climaticas libres de larga duracion y diagnostico de precipitacion. Lo publica el grupo OneScience-Group en HuggingFace como reproduccion de ingenieria independiente de las especificaciones publicas de DLESyM, cuyo articulo de referencia es "A Deep Learning Earth System Model for Efficient Simulation of the Observed Climate" (arXiv:2409.16247).
+DLESyM (Deep Learning Earth System Model) es un modelo de sistema terrestre basado en aprendizaje profundo que acopla de forma asincrona modulos neuronales de atmosfera y oceano para ejecutar simulaciones climaticas libres de larga duracion y diagnostico de precipitacion. Lo publica el grupo OneScience-Group en Hugging Face como reproduccion de ingenieria independiente de las especificaciones publicas de DLESyM, cuyo articulo de referencia es "A Deep Learning Earth System Model for Efficient Simulation of the Observed Climate" (arXiv:2409.16247).
 
 A diferencia de un modelo de lenguaje, DLESyM no procesa texto: trabaja sobre campos geoespaciales de variables climaticas. Combina un modulo atmosferico (DLWP), un modulo oceanico (DLOM) y un modulo de precipitacion, con arquitectura basada en U-Net. El entrenamiento se realizo con campos ERA5 del periodo 1983-2017, radiacion de onda larga saliente (OLR) de ISCCP y temperatura superficial del mar (SST).
 
@@ -19,7 +19,7 @@ El problema que resuelve es el coste computacional de las simulaciones climatica
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles; la model card declara unicamente este idioma) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible; no se incluyen pesos bajo `weight/` en el repositorio de HuggingFace. Los pesos oficiales se distribuyen en https://github.com/AtmosSci-DLESM/DLESyM |
+| Formato de pesos | no disponible; no se incluyen pesos bajo `weight/` en el repositorio de Hugging Face. Los pesos oficiales se distribuyen en https://github.com/AtmosSci-DLESM/DLESyM |
 | Framework | PyTorch |
 | Modalidad de entrada | Campos climaticos (ERA5, OLR de ISCCP, SST), no texto |
 | Fecha de creacion del repositorio | 2026-09-17 |
@@ -27,11 +27,11 @@ El problema que resuelve es el coste computacional de las simulaciones climatica
 
 ## Arquitectura y entrenamiento
 
-DLESyM es un emulador climatico de aprendizaje profundo que acopla tres componentes: un modulo atmosferico denominado DLWP (Deep Learning Weather Prediction), un modulo oceanico DLOM (Deep Learning Ocean Model) y un modulo de diagnostico de precipitacion. La etiqueta de HuggingFace indica arquitectura U-Net, y el acoplamiento entre modulos es asincrono, lo que permite a cada componente avanzar con su propio paso temporal dentro del ciclo acoplado. El entrenamiento optimiza conjuntamente los modulos de atmosfera, oceano y precipitacion, y la inferencia ejecuta cuatro ciclos acoplados, tras los cuales la evaluacion reporta diagnosticos de deriva (drift) finitos.
+DLESyM es un emulador climatico de aprendizaje profundo que acopla tres componentes: un modulo atmosferico denominado DLWP (Deep Learning Weather Prediction), un modulo oceanico DLOM (Deep Learning Ocean Model) y un modulo de diagnostico de precipitacion. La etiqueta de Hugging Face indica arquitectura U-Net, y el acoplamiento entre modulos es asincrono, lo que permite a cada componente avanzar con su propio paso temporal dentro del ciclo acoplado. El entrenamiento optimiza conjuntamente los modulos de atmosfera, oceano y precipitacion, y la inferencia ejecuta cuatro ciclos acoplados, tras los cuales la evaluacion reporta diagnosticos de deriva (drift) finitos.
 
 Los datos de entrenamiento declarados son campos ERA5 del periodo 1983-2017, radiacion de onda larga saliente (OLR) de ISCCP y temperatura superficial del mar (SST). No se especifican en la informacion disponible el numero total de tokens o muestras equivalentes, la composicion exacta del dataset, la resolucion espacial de los campos ni si se aplicaron etapas de RLHF o DPO (tecnicas propias de modelos de lenguaje que no aplican de forma directa a este tipo de modelo). Tampoco se detallan innovaciones adicionales como decodificacion especulativa o atencion lineal, que no tienen sentido en este dominio.
 
-Un punto importante: este repositorio de HuggingFace se declara explicitamente como una reproduccion de ingenieria independiente de las especificaciones publicas de DLESyM. No incluye pesos entrenados; solo proporciona configuraciones y scripts para validacion de datos, entrenamiento, inferencia, metricas climaticas y visualizacion, ademas de soporte para entrenamiento multi-GPU mediante `torchrun`.
+Un punto importante: este repositorio de Hugging Face se declara explicitamente como una reproduccion de ingenieria independiente de las especificaciones publicas de DLESyM. No incluye pesos entrenados; solo proporciona configuraciones y scripts para validacion de datos, entrenamiento, inferencia, metricas climaticas y visualizacion, ademas de soporte para entrenamiento multi-GPU mediante `torchrun`.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Un punto importante: este repositorio de HuggingFace se declara explicitamente c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de HuggingFace no incluye cifras de metricas climaticas (por ejemplo RMSE de variables atmosfericas, indices de ENSO o scores de precipitacion), y unicamente menciona que la evaluacion reporta diagnosticos de deriva finitos tras cuatro ciclos acoplados. Para resultados cuantitativos habria que consultar el articulo arXiv:2409.16247 y el repositorio oficial de GitHub, fuera de la informacion proporcionada.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de Hugging Face no incluye cifras de metricas climaticas (por ejemplo RMSE de variables atmosfericas, indices de ENSO o scores de precipitacion), y unicamente menciona que la evaluacion reporta diagnosticos de deriva finitos tras cuatro ciclos acoplados. Para resultados cuantitativos habria que consultar el articulo arXiv:2409.16247 y el repositorio oficial de GitHub, fuera de la informacion proporcionada.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ La informacion proporcionada no incluye datos cuantitativos de modelos comparabl
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DLESyM (OneScience-Group) | Emulador de sistema terrestre acoplado atmosfera-oceano | no disponible | no aplica (no es modelo de texto) | Apache 2.0 | Repositorio de HuggingFace con configuraciones y scripts; pesos oficiales en GitHub |
+| DLESyM (OneScience-Group) | Emulador de sistema terrestre acoplado atmosfera-oceano | no disponible | no aplica (no es modelo de texto) | Apache 2.0 | Repositorio de Hugging Face con configuraciones y scripts; pesos oficiales en GitHub |
 | Otros emuladores climaticos de aprendizaje profundo (por ejemplo, modelos de la familia de prediccion meteorologica neuronal) | Emuladores climaticos/meteorologicos | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible |
 
 No se dispone de datos en la informacion proporcionada para comparar parametros, contexto o rendimiento frente a alternativas concretas.
@@ -100,7 +100,7 @@ No se dispone de datos en la informacion proporcionada para comparar parametros,
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/OneScience-Group/DLESyM
+- Repositorio de Hugging Face: https://huggingface.co/OneScience-Group/DLESyM
 - Articulo de referencia (arXiv): https://arxiv.org/abs/2409.16247
 - Repositorio oficial con configuraciones y pesos: https://github.com/AtmosSci-DLESM/DLESyM
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repositorios adicionales) en los resultados de la busqueda web proporcionada.

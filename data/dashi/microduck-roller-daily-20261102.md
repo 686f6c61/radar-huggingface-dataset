@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dashi/microduck-roller-daily-20261102` es una política de control robótico publicada en HuggingFace por el usuario dashi, no un modelo de lenguaje. Se trata de un artefacto de reinforcement learning exportado a ONNX que implementa una marcha perpetua para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. El modelo ocupa el slot `walk` del robot y se ejecuta a 50 Hz sobre ruedas (rollers), consumiendo observaciones de 61 dimensiones y emitiendo 14 acciones de control.
+`dashi/microduck-roller-daily-20261102` es una política de control robótico publicada en Hugging Face por el usuario dashi, no un modelo de lenguaje. Se trata de un artefacto de reinforcement learning exportado a ONNX que implementa una marcha perpetua para el robot cuadrúpedo de bajo coste microduck, desarrollado por Pollen Robotics. El modelo ocupa el slot `walk` del robot y se ejecuta a 50 Hz sobre ruedas (rollers), consumiendo observaciones de 61 dimensiones y emitiendo 14 acciones de control.
 
 El repositorio se presenta como una "reentrada diaria" (daily re-entry) de la política previa `dashi/microduck-roller-remix-r900`, con una puntuación de 0.900, y constituye un fine-tune de `DenRakEiw/microduck-senate_duck_0904`. La relevancia es acotada: se enmarca en el ecosistema de robótica de código abierto de Pollen Robotics y en flujos de trabajo de aprendizaje por refuerzo reproducible, no en el ámbito de los modelos generativos de propósito general.
 
-La información disponible es muy limitada: el repositorio pesa 0.0 GB según HuggingFace, no tiene descargas ni likes, y no se publican detalles sobre licencia, idiomas, arquitectura interna de la red ni resultados de benchmarks. La model card se limita a instrucciones de despliegue y a metadatos de entrenamiento.
+La información disponible es muy limitada: el repositorio pesa 0.0 GB según Hugging Face, no tiene descargas ni likes, y no se publican detalles sobre licencia, idiomas, arquitectura interna de la red ni resultados de benchmarks. La model card se limita a instrucciones de despliegue y a metadatos de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dashi/microduck-roller-daily-20261102` | Política RL (ONNX) para microduck | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
-| `dashi/microduck-roller-remix-r900` | Política RL predecesora (puntuación 0.900) | no disponible | no aplica | no disponible | HuggingFace |
-| `DenRakEiw/microduck-senate_duck_0904` | Política RL base (fine-tune del anterior) | no disponible | no aplica | no disponible | HuggingFace |
+| `dashi/microduck-roller-daily-20261102` | Política RL (ONNX) para microduck | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
+| `dashi/microduck-roller-remix-r900` | Política RL predecesora (puntuación 0.900) | no disponible | no aplica | no disponible | Hugging Face |
+| `DenRakEiw/microduck-senate_duck_0904` | Política RL base (fine-tune del anterior) | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos suficientes para comparar parámetros, rendimiento ni licencia entre estas políticas. No se conocen alternativas fuera del ecosistema microduck con información verificable en la búsqueda realizada.
 
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para comparar parámetros, rendimiento ni lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-roller-daily-20261102
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-roller-daily-20261102
 - Modelo base: https://huggingface.co/DenRakEiw/microduck-senate_duck_0904
 - Repositorio de microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`); no se dispone de URL directa en la información proporcionada.

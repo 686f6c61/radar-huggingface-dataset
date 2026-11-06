@@ -72,10 +72,10 @@ Datos adicionales: sobre 334 problemas pareados de LiveCodeBench, la diferencia 
 
 | Modelo | Tamaño | Contexto | BFCL v3 | LiveCodeBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27B bf16 (original) | 54,7 GB | no disponible | 86,2 | 60,9 | Apache-2.0 | HuggingFace (Qwen/Qwen3.8-27B) |
-| unsloth UD-Q2_K_XL de Qwen3.8-27B | 9,8 GB | no disponible | 87,2 | 55,0 | Apache-2.0 | HuggingFace (unsloth) |
-| Overbrilliant-27B-Pro | 12,0 GB | hasta 64k (32k recomendado) | 90,0 | 57,5 | Apache-2.0 | HuggingFace (tashfene) |
-| Overbrilliant-27B-Air | 9,5 GB | hasta 32k (64k al límite en Mac de 16 GB) | 89,0 | 57,5 | Apache-2.0 | HuggingFace (tashfene) |
+| Qwen3.8-27B bf16 (original) | 54,7 GB | no disponible | 86,2 | 60,9 | Apache-2.0 | Hugging Face (Qwen/Qwen3.8-27B) |
+| unsloth UD-Q2_K_XL de Qwen3.8-27B | 9,8 GB | no disponible | 87,2 | 55,0 | Apache-2.0 | Hugging Face (unsloth) |
+| Overbrilliant-27B-Pro | 12,0 GB | hasta 64k (32k recomendado) | 90,0 | 57,5 | Apache-2.0 | Hugging Face (tashfene) |
+| Overbrilliant-27B-Air | 9,5 GB | hasta 32k (64k al límite en Mac de 16 GB) | 89,0 | 57,5 | Apache-2.0 | Hugging Face (tashfene) |
 
 La comparación más relevante es con la cuantización estándar de unsloth de la que parte: Overbrilliant-27B-Pro añade ~2,2 GB a cambio de +2,8 puntos en BFCL v3 y +2,5 en LiveCodeBench, además de la protección de la memoria recurrente para contextos largos. Frente al bf16 original, ofrece un ahorro de ~42 GB de memoria con paridad estadística en código y mejora en tool calling.
 

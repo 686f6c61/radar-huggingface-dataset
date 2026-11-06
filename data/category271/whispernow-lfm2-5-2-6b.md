@@ -74,9 +74,9 @@ Conjuntos de evaluación: test (3.297 filas retenidas del dataset de entrenamien
 
 | Modelo | Parámetros | Memoria en uso (Q8_0) | Errores factuales /1.000 palabras | Latencia GPU (1.000 palabras) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WhisperNow LFM2.5 2.6B (este) | 2,7 B | 3,3 GB | 4,88 | 3,8 s | LFM1.0 | HuggingFace, safetensors + GGUF |
-| WhisperNow LFM2.5 1.2B | 1,2 B | 1,6 GB | 6,32 | 2,0 s | no disponible | HuggingFace, misma familia |
-| WhisperNow Qwen3.5 4B | 4 B | 5,3 GB | 3,01 | 7,2 s | no disponible | HuggingFace, misma familia |
+| WhisperNow LFM2.5 2.6B (este) | 2,7 B | 3,3 GB | 4,88 | 3,8 s | LFM1.0 | Hugging Face, safetensors + GGUF |
+| WhisperNow LFM2.5 1.2B | 1,2 B | 1,6 GB | 6,32 | 2,0 s | no disponible | Hugging Face, misma familia |
+| WhisperNow Qwen3.5 4B | 4 B | 5,3 GB | 3,01 | 7,2 s | no disponible | Hugging Face, misma familia |
 | glm-5.3-flash (cloud, razonamiento bajo) | no disponible | no disponible | ~3,7 (inferido: 4,88/1,32) | no disponible | propietaria | API cloud |
 
 En resumen: el modelo 2.6B ofrece el mejor equilibrio del proyecto entre calidad (un 23 % menos de errores que el 1.2B) y coste computacional (casi la mitad de memoria y el doble de velocidad que el 4B), acercándose al rendimiento de modelos cloud en dictados cortos.
@@ -94,7 +94,7 @@ En resumen: el modelo 2.6B ofrece el mejor equilibrio del proyecto entre calidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/category271/whispernow-lfm2.5-2.6b
+- Modelo en Hugging Face: https://huggingface.co/category271/whispernow-lfm2.5-2.6b
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/category271/whispernow-cleanup
 - Reglas de limpieza del dataset: https://huggingface.co/datasets/category271/whispernow-cleanup#the-cleanup-rules

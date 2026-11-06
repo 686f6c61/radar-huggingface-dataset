@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente práctica: al ocupar los pesos en torno a 4-5 
 | Modelo base | allenai/AstaBrief_8B |
 | Cuantizado por | jjjssjs |
 | Pipeline declarado | text-generation |
-| Fecha de publicación del repositorio | 2026-10-06 (según metadatos de HuggingFace) |
+| Fecha de publicación del repositorio | 2026-10-06 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

@@ -60,9 +60,9 @@ La comparación directa con otros modelos de 1B es limitada porque este reposito
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1B (base) | 1B | no disponible | Apache 2.0 | HuggingFace (allenai/OLMo-2-0425-1B) |
-| AMD-OLMo-1B-SFT-DPO | 1B | no disponible | Apache 2.0 | HuggingFace (amd/AMD-OLMo-1B-SFT-DPO) |
-| ark/olmo2-1b-traj-s1-2517b | 1B | no disponible | Apache 2.0 | HuggingFace (checkpoints intermedios) |
+| OLMo-2-1B (base) | 1B | no disponible | Apache 2.0 | Hugging Face (allenai/OLMo-2-0425-1B) |
+| AMD-OLMo-1B-SFT-DPO | 1B | no disponible | Apache 2.0 | Hugging Face (amd/AMD-OLMo-1B-SFT-DPO) |
+| ark/olmo2-1b-traj-s1-2517b | 1B | no disponible | Apache 2.0 | Hugging Face (checkpoints intermedios) |
 
 La comparativa de rendimiento no es posible sin benchmarks. El modelo base OLMo-2-1B tiene un rendimiento conocido, mientras que los checkpoints de RL no se han evaluado públicamente.
 
@@ -77,7 +77,7 @@ La comparativa de rendimiento no es posible sin benchmarks. El modelo base OLMo-
 
 ## Enlaces
 
-- [HuggingFace: arkilpatel/olmo2-1b-traj-s1-2517b](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-2517b)
+- [Hugging Face: arkilpatel/olmo2-1b-traj-s1-2517b](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-2517b)
 - [Repositorio OLMo de AI2](https://github.com/allenai/OLMo)
 - [Modelo base allenai/OLMo-2-0425-1B](https://huggingface.co/allenai/OLMo-2-0425-1B)
 - [Página personal de Arkil Patel](https://arkilpatel.github.io/index.html)

@@ -91,9 +91,9 @@ No se han publicado resultados de benchmarks estandar (COCO, MMLU, HumanEval, GS
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| daoooot/202413050-detr-resnet-50-furniture-partial | 41,6 M | Deteccion de objetos (muebles) | no aplica | apache-2.0 | HuggingFace, 0 descargas |
-| facebook/detr-resnet-50 | 41,5 M (aprox.) | Deteccion de objetos generalista (COCO) | no aplica | apache-2.0 | HuggingFace, ampliamente usado |
-| DETR-resnet-101 | mayor que ResNet-50 | Deteccion de objetos generalista (COCO) | no aplica | apache-2.0 | HuggingFace |
+| daoooot/202413050-detr-resnet-50-furniture-partial | 41,6 M | Deteccion de objetos (muebles) | no aplica | apache-2.0 | Hugging Face, 0 descargas |
+| facebook/detr-resnet-50 | 41,5 M (aprox.) | Deteccion de objetos generalista (COCO) | no aplica | apache-2.0 | Hugging Face, ampliamente usado |
+| DETR-resnet-101 | mayor que ResNet-50 | Deteccion de objetos generalista (COCO) | no aplica | apache-2.0 | Hugging Face |
 | Modelos tipo YOLO (familia de detectores one-stage) | variable (desde pocos millones) | Deteccion de objetos en tiempo real | no aplica | variable segun version | Multiples repositorios |
 
 La comparacion de rendimiento directo no es posible con los datos disponibles: las metricas publicadas corresponden a un dataset de muebles concreto (Francesco/furniture-ngpea) y no a un benchmark estandar, por lo que no se pueden contrastar con los valores de COCO de los modelos anteriores. En cuanto a disponibilidad, este modelo tiene 0 descargas y 0 likes, frente a los modelos base de referencia, mucho mas extendidos. La comparacion de parametros y licencia es la unica que puede hacerse con rigor a partir de la informacion proporcionada.
@@ -111,7 +111,7 @@ La comparacion de rendimiento directo no es posible con los datos disponibles: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daoooot/202413050-detr-resnet-50-furniture-partial
+- Modelo en Hugging Face: https://huggingface.co/daoooot/202413050-detr-resnet-50-furniture-partial
 - Modelo base: https://huggingface.co/facebook/detr-resnet-50
 - Dataset: https://huggingface.co/datasets/Francesco/furniture-ngpea
 - Pagina original del dataset en Roboflow: no disponible en la informacion proporcionada (la model card remite a ella sin enlace explicito)

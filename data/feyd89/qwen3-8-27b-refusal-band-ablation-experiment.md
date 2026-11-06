@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-refusal-band-ablation-experiment es un artefacto de investigación publicado por el usuario Feyd89 en HuggingFace. Se trata de una edición de pesos de baja dimensión (low-rank) aplicada sobre el modelo base Qwen3.8-27B, que reduce selectivamente las respuestas de rechazo (refusals) del modelo. La edición se restringe a una banda estrecha de capas (L20–47 de 64) y no implica entrenamiento adicional: es una modificación reversible del espacio de pesos descrita mediante 28 vectores pequeños, uno por capa.
+Qwen3.8-27B-refusal-band-ablation-experiment es un artefacto de investigación publicado por el usuario Feyd89 en Hugging Face. Se trata de una edición de pesos de baja dimensión (low-rank) aplicada sobre el modelo base Qwen3.8-27B, que reduce selectivamente las respuestas de rechazo (refusals) del modelo. La edición se restringe a una banda estrecha de capas (L20–47 de 64) y no implica entrenamiento adicional: es una modificación reversible del espacio de pesos descrita mediante 28 vectores pequeños, uno por capa.
 
 El modelo no es un producto ni un asistente seguro, sino una contribución a la investigación en interpretabilidad y seguridad de IA. Su interés radica en que demuestra empíricamente que la restricción de la ablación a una banda de capas preserva las capacidades del modelo base (MMLU-Pro 73%→74%, GSM8K 93%→93%), mientras que aplicar la misma edición a las 64 capas destruye el rendimiento (MMLU 73→9, GSM 93→14). Además, documenta que el efecto sobre los rechazos es parcial, desigual y variable según la categoría de la petición (aceptación entre ~76% y ~10% según categoría, ~50% global).
 
@@ -91,7 +91,7 @@ La comparativa se limita a las variantes mencionadas por el autor; no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Feyd89/Qwen3.8-27B-refusal-band-ablation-experiment
+- Hugging Face: https://huggingface.co/Feyd89/Qwen3.8-27B-refusal-band-ablation-experiment
 - Referencia técnica citada por el autor: Arditi et al. 2024 (ablación direccional); no se proporciona URL en la información disponible.
 - Estudio complementario de edición de pesos del autor: no disponible en la información proporcionada.
 - Repositorio de código, paper o demo: no disponible en la información proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Stringman-world-model es un modelo publicado por el usuario Ethgar en HuggingFace, etiquetado como un world model orientado a robotica y, mas concretamente, a un robot paralelo accionado por cables (cable-driven parallel robot) denominado StringMan. Las etiquetas del repositorio lo relacionan con control predictivo basado en modelo (model-predictive-control), lo que sugiere que su proposito es aprender la dinamica del sistema robotico para predecir estados futuros y apoyar la planificacion y el control.
+Stringman-world-model es un modelo publicado por el usuario Ethgar en Hugging Face, etiquetado como un world model orientado a robotica y, mas concretamente, a un robot paralelo accionado por cables (cable-driven parallel robot) denominado StringMan. Las etiquetas del repositorio lo relacionan con control predictivo basado en modelo (model-predictive-control), lo que sugiere que su proposito es aprender la dinamica del sistema robotico para predecir estados futuros y apoyar la planificacion y el control.
 
-El repositorio esta implementado sobre PyTorch y su pipeline declarado es "robotics". La informacion publica disponible es extremadamente limitada: el tamano del repositorio figura como 0.0 GB, no tiene descargas ni "likes", y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para poder acceder a los pesos o ficheros. La licencia declarada es Apache 2.0.
+El repositorio esta implementado sobre PyTorch y su pipeline declarado es "robotics". La informacion publica disponible es extremadamente limitada: el tamano del repositorio figura como 0.0 GB, no tiene descargas ni "likes", y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para poder acceder a los pesos o ficheros. La licencia declarada es Apache 2.0.
 
 La relevancia de este tipo de modelos radica en el creciente interes por los world models aplicados a robotica, donde un modelo aprendido de la dinamica del entorno puede sustituir o complementar a los modelos analiticos clasicos dentro de un lazo de control predictivo. No obstante, al no existir documentacion tecnica publica asociada, cualquier afirmacion sobre arquitectura, tamano o rendimiento queda fuera de lo verificable con la informacion disponible.
 
@@ -65,7 +65,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que limita la evaluacion y reproduce la escasez de informacion publica.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que limita la evaluacion y reproduce la escasez de informacion publica.
 - Ausencia de documentacion tecnica: no hay model card detallada, paper, blog ni resultados de evaluacion.
 - Tamano de repositorio declarado de 0.0 GB: no queda claro si los pesos estan realmente publicados o si el repositorio contiene unicamente metadatos.
 - Cero descargas y cero "likes": no existe validacion por parte de la comunidad ni indicios de uso en produccion.
@@ -77,5 +77,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ethgar/stringman-world-model
+- Hugging Face: https://huggingface.co/Ethgar/stringman-world-model
 - No se han encontrado en la informacion proporcionada otros enlaces relevantes (papers, blogs, repositorios de codigo o demos).

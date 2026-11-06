@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CADRec es un modelo presentado por el usuario shinodashx (repositorio `shinodashx/CADRec` en HuggingFace) orientado a la reconstrucción recursiva de secuencias CAD. Según el artículo asociado, el objetivo es reconstruir una secuencia CAD completa a partir de geometría, descomponiéndola en partes y generando predicciones espacialmente fundamentadas, con objetivos de entrenamiento sensibles a la geometría. El modelo se inicializa por defecto a partir de un modelo público de la familia Qwen, según se desprende de la configuración de entrenamiento del repositorio de código.
+CADRec es un modelo presentado por el usuario shinodashx (repositorio `shinodashx/CADRec` en Hugging Face) orientado a la reconstrucción recursiva de secuencias CAD. Según el artículo asociado, el objetivo es reconstruir una secuencia CAD completa a partir de geometría, descomponiéndola en partes y generando predicciones espacialmente fundamentadas, con objetivos de entrenamiento sensibles a la geometría. El modelo se inicializa por defecto a partir de un modelo público de la familia Qwen, según se desprende de la configuración de entrenamiento del repositorio de código.
 
 La relevancia del proyecto es acotada y muy específica: se sitúa en la intersección entre modelado paramétrico asistido (CAD), visión 3D y generación de secuencias estructuradas, un nicho donde la mayoría de trabajos previos son enfoques de secuencia o de código. El autor afirma mejoras en fidelidad geométrica y validez de programa frente a esas líneas base, aunque en la información disponible no se aportan cifras.
 
-Conviene señalar desde el principio que la model card publicada en HuggingFace está prácticamente vacía: solo contiene el bloque de licencia Apache 2.0, sin descripción, sin especificaciones y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de validación por parte de la comunidad. Además, el nombre colisiona con CaDRec (SIGIR 2024), un modelo de recomendación contextualizado y no sesgado completamente distinto, lo que genera confusión en búsquedas.
+Conviene señalar desde el principio que la model card publicada en Hugging Face está prácticamente vacía: solo contiene el bloque de licencia Apache 2.0, sin descripción, sin especificaciones y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de validación por parte de la comunidad. Además, el nombre colisiona con CaDRec (SIGIR 2024), un modelo de recomendación contextualizado y no sesgado completamente distinto, lo que genera confusión en búsquedas.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ El artículo asociado afirma cualitativamente que CADRec mejora la fidelidad geo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CADRec (shinodashx) | no disponible | no disponible | no disponible (mejora cualitativa declarada frente a líneas base de secuencia y código) | Apache 2.0 | Pesos en HuggingFace sin documentar; código en GitHub |
+| CADRec (shinodashx) | no disponible | no disponible | no disponible (mejora cualitativa declarada frente a líneas base de secuencia y código) | Apache 2.0 | Pesos en Hugging Face sin documentar; código en GitHub |
 | Líneas base de secuencia para reconstrucción CAD | no disponible | no disponible | no disponible | no disponible | no disponibles en la información proporcionada |
 | Líneas base de código para reconstrucción CAD | no disponible | no disponible | no disponible | no disponible | no disponibles en la información proporcionada |
 | CaDRec (SIGIR 2024) | no disponible | no disponible | no disponible | no disponible | arXiv 2404.06895 — modelo de recomendación, no relacionado |
@@ -90,7 +90,7 @@ El artículo menciona comparaciones contra métodos previos de secuencia y de c�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shinodashx/CADRec
+- Modelo en Hugging Face: https://huggingface.co/shinodashx/CADRec
 - Repositorio de código (implementación oficial): https://github.com/shinodashx/CADRec
 - Artículo (PDF): https://shinodashx.github.io/CADRec/files/CADRec.pdf
 - Perfil del autor en GitHub: https://github.com/shinodashx

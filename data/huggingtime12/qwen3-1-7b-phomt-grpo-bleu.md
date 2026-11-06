@@ -59,6 +59,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT-GRPO-BLEU
+- Repositorio Hugging Face: https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT-GRPO-BLEU
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Articulo de referencia (emisiones de carbono): https://arxiv.org/abs/1910.09700

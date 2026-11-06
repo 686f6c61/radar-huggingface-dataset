@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mhszakzajhg/Detektor-Ai` es un fine-tune del modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, desarrollado por el usuario mhszakzajhg y publicado en HuggingFace. Se trata de una adaptación de la familia Gemma 4 realizada con la librería Unsloth, que según la model card permite entrenar dos veces más rápido que los métodos convencionales. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo ligero, probablemente cuantizado, aunque no se especifican los detalles técnicos exactos.
+El modelo `mhszakzajhg/Detektor-Ai` es un fine-tune del modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, desarrollado por el usuario mhszakzajhg y publicado en Hugging Face. Se trata de una adaptación de la familia Gemma 4 realizada con la librería Unsloth, que según la model card permite entrenar dos veces más rápido que los métodos convencionales. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere un modelo ligero, probablemente cuantizado, aunque no se especifican los detalles técnicos exactos.
 
 La relevancia de este modelo es limitada en el ecosistema actual: no se han publicado métricas de rendimiento, descripciones de uso ni documentación adicional. Su nombre sugiere una posible función de detección de contenido generado por IA, pero no hay ninguna evidencia en la información proporcionada que confirme esa finalidad. Por tanto, debe considerarse como un experimento de fine-tuning más que como un modelo listo para producción.
 
@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - No se dispone de datos exactos de VRAM ni de GPUs recomendadas.
 - El tamaño del repositorio (0,1 GB) sugiere que el modelo es ligero y podría ejecutarse en GPUs de consumo como una RTX 3060 o superior, pero esta afirmación es especulativa y no está respaldada por documentación oficial.
-- No se indican opciones de despliegue específicas (vLLM, llama.cpp, Ollama, TGI, etc.), aunque al ser un modelo de la familia transformers con formato safetensors, es compatible con las herramientas estándar del ecosistema HuggingFace.
+- No se indican opciones de despliegue específicas (vLLM, llama.cpp, Ollama, TGI, etc.), aunque al ser un modelo de la familia transformers con formato safetensors, es compatible con las herramientas estándar del ecosistema Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -60,5 +60,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhszakzajhg/Detektor-Ai
+- Hugging Face: https://huggingface.co/mhszakzajhg/Detektor-Ai
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

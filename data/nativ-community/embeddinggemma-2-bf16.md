@@ -102,7 +102,7 @@ La unica comparacion verificable con los datos proporcionados es contra el model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nativ-community/embeddinggemma-2-bf16
+- Repositorio en Hugging Face: https://huggingface.co/nativ-community/embeddinggemma-2-bf16
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Revision de origen del modelo base: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Implementacion MLX-VLM usada en la conversion: https://github.com/Blaizzy/mlx-vlm/tree/3d87e88402f307efbf68e568971aa887ee7d9ed0

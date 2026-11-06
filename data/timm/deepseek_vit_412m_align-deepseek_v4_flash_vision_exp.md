@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deepseek_vit_412m_align.deepseek_v4_flash_vision_exp es un codificador de caracteristicas de imagen (image feature encoder) publicado por el equipo de timm (Ross Wightman) en HuggingFace. Se trata de una remezcla nativa a timm de los pesos de vision de DeepSeek-V4-Flash-Vision-Exp, sin entrenamiento adicional: no contiene pesos de modelo de lenguaje ni cabeza de clasificacion entrenada. El checkpoint conserva el alineador espacial nativo y la proyeccion al ancho del LLM de origen, seguida de average pooling y una RMSNorm sin parametros afines.
+deepseek_vit_412m_align.deepseek_v4_flash_vision_exp es un codificador de caracteristicas de imagen (image feature encoder) publicado por el equipo de timm (Ross Wightman) en Hugging Face. Se trata de una remezcla nativa a timm de los pesos de vision de DeepSeek-V4-Flash-Vision-Exp, sin entrenamiento adicional: no contiene pesos de modelo de lenguaje ni cabeza de clasificacion entrenada. El checkpoint conserva el alineador espacial nativo y la proyeccion al ancho del LLM de origen, seguida de average pooling y una RMSNorm sin parametros afines.
 
 El modelo tiene 466.376.704 parametros segun los pesos en safetensors (el identificador "412m" del repositorio alude al backbone, no al total con el alineador), con una anchura de backbone de 1024 y una anchura de proyeccion de 4096. La entrada de referencia es de 392x392 pixeles, con parches de 14x14, y produce 100 tokens espaciales proyectados de 4096 dimensiones, ademas de un embedding global de 4096 dimensiones tras el pooling.
 
@@ -107,7 +107,7 @@ La diferencia estructural mas relevante frente a los encoders contrastivos tipic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/deepseek_vit_412m_align.deepseek_v4_flash_vision_exp
+- Modelo en Hugging Face: https://huggingface.co/timm/deepseek_vit_412m_align.deepseek_v4_flash_vision_exp
 - Modelo base (DeepSeek-V4-Flash-Vision-Exp): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Revision fuente de los pesos: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/tree/6821d6ad3681a4b137b066b76094fa82ebd0a380
 - Codigo original de vision: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/6821d6ad3681a4b137b066b76094fa82ebd0a380/inference/vision.py

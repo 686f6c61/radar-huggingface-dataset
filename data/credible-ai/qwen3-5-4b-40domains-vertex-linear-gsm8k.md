@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| credible-ai/qwen3.5-4B-40domains-vertex-linear-gsm8k | 3,7B | no disponible | MIT | Investigacion de mezcla de datos (LinMix) | HuggingFace |
-| credible-ai/qwen3.5-100M-40domains-vertex | ~100M | no disponible | no disponible | Proxy de la misma familia para LinMix | HuggingFace |
-| Qwen3.5 base (familia) | no disponible | no disponible | no disponible | Modelo de proposito general | HuggingFace |
-| OLMo 2 7B | ~7B | no disponible | Apache 2.0 | Modelo abierto de proposito general | HuggingFace |
+| credible-ai/qwen3.5-4B-40domains-vertex-linear-gsm8k | 3,7B | no disponible | MIT | Investigacion de mezcla de datos (LinMix) | Hugging Face |
+| credible-ai/qwen3.5-100M-40domains-vertex | ~100M | no disponible | no disponible | Proxy de la misma familia para LinMix | Hugging Face |
+| Qwen3.5 base (familia) | no disponible | no disponible | no disponible | Modelo de proposito general | Hugging Face |
+| OLMo 2 7B | ~7B | no disponible | Apache 2.0 | Modelo abierto de proposito general | Hugging Face |
 
 La comparacion con modelos de proposito general no es directa: este modelo es un artefacto de investigacion sin post-entrenamiento ni evaluaciones publicadas, por lo que no compite en calidad con Qwen3.5 o OLMo 2 en tareas abiertas. Su comparable natural es el proxy de 100M de la misma familia, usado para derivar la mezcla.
 
@@ -89,7 +89,7 @@ La comparacion con modelos de proposito general no es directa: este modelo es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-vertex-linear-gsm8k
+- Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-vertex-linear-gsm8k
 - Modelo proxy: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-vertex
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Codigo: https://github.com/credibleai/linmix

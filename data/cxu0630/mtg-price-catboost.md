@@ -86,8 +86,8 @@ El autor indica que, frente al proceso gaussiano profundo, este modelo presenta 
 
 | Modelo | Tipo | Entrada | Salida | Error / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `CXu0630/mtg-price-catboost` | CatBoost MultiQuantile | 93 caracteristicas tabulares | p10/p50/p90 en USD | MAE log 0,52 global; cobertura 78,1% | `wotc-fan-content` | HuggingFace, 0 descargas |
-| `CXu0630/mtg-price-deep-gp` | Proceso gaussiano de kernel profundo | mismas caracteristicas del proyecto | intervalo de precio | Menor cobertura que el CatBoost segun el autor; mayor error mediano; comparacion aproximada (cada modelo evaluado en su propio split) | no disponible | HuggingFace |
+| `CXu0630/mtg-price-catboost` | CatBoost MultiQuantile | 93 caracteristicas tabulares | p10/p50/p90 en USD | MAE log 0,52 global; cobertura 78,1% | `wotc-fan-content` | Hugging Face, 0 descargas |
+| `CXu0630/mtg-price-deep-gp` | Proceso gaussiano de kernel profundo | mismas caracteristicas del proyecto | intervalo de precio | Menor cobertura que el CatBoost segun el autor; mayor error mediano; comparacion aproximada (cada modelo evaluado en su propio split) | no disponible | Hugging Face |
 | Otros modelos de precios de MTG | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada por el autor es contra el proceso gaussiano profundo del mismo proyecto, y advierte que se trata de una comparacion aproximada porque cada modelo se evaluo sobre su propio split. No se han identificado en la informacion proporcionada otras alternativas de la misma categoria con datos verificables.
@@ -106,7 +106,7 @@ La unica comparacion documentada por el autor es contra el proceso gaussiano pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CXu0630/mtg-price-catboost
+- Modelo en Hugging Face: https://huggingface.co/CXu0630/mtg-price-catboost
 - Modelo complementario (proceso gaussiano profundo): https://huggingface.co/CXu0630/mtg-price-deep-gp
 - Codigo fuente, pipeline de entrenamiento y documento de diseno: https://github.com/CXu0630/mtg_price_predict_catboost_deep_gp
 - Dataset de mercado: https://huggingface.co/datasets/CXu0630/mtg-card-market-dataset

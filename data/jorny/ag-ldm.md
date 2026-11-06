@@ -68,7 +68,7 @@ El principal modelo comparable es BrLP (Brain Latent Progression), sobre el cual
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AG-LDM | Difusión latente en dos etapas con guía anatómica | 489,21 M | Imagen 3D 1×120×144×120 | MIT | Pesos en HuggingFace |
+| AG-LDM | Difusión latente en dos etapas con guía anatómica | 489,21 M | Imagen 3D 1×120×144×120 | MIT | Pesos en Hugging Face |
 | BrLP | Pipeline multi-etapa con módulos auxiliares | No disponible | No disponible | No disponible | Código en GitHub |
 
 Se recomienda consultar el paper de AG-LDM para obtener la comparativa detallada con BrLP y otros métodos.
@@ -86,7 +86,7 @@ Se recomienda consultar el paper de AG-LDM para obtener la comparativa detallada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jorny/AG-LDM
+- Modelo en Hugging Face: https://huggingface.co/Jorny/AG-LDM
 - Repositorio de código: https://github.com/JornyWan/AG-LDM
 - Paper en arXiv: https://arxiv.org/abs/2601.14584
 - Repositorio de BrLP (base del modelo): https://github.com/LemuelPuglisi/BrLP

@@ -92,7 +92,7 @@ La puerta de completitud final registró 830 casos únicos, 830 registros últim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rax4901/DeepSeek-V4-Flash-0731-Abliterated-FP8
+- Modelo en Hugging Face: https://huggingface.co/rax4901/DeepSeek-V4-Flash-0731-Abliterated-FP8
 - Modelo base upstream: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Revisión exacta del upstream: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/tree/9e165c30e2704aec5d9d593cce3eebd58bbef1cb
 - Fuente de la dirección de rechazo: https://github.com/drowzeys/DeepSeek-V4-Flash-DSpark-Abliterated-Uncensored-1M-57toks/tree/85ae5bbaa7daf4da7b40e007a71a1c06b41fc053

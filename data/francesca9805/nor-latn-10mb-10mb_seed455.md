@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nor-latn-10mb-10mb_seed455 es un ajuste fino supervisado (SFT) del modelo goldfish-models/nor_latn_10mb, un modelo monolingüe de la familia Goldfish orientado al noruego escrito en alfabeto latino y entrenado sobre un corpus de 10 MB. Lo publica el usuario de HuggingFace francesca9805 y se ha generado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. Con 39.087.104 parámetros reales (verificados en los safetensors), es un modelo decoder-only de tipo GPT-2 de tamano muy reducido.
+nor-latn-10mb-10mb_seed455 es un ajuste fino supervisado (SFT) del modelo goldfish-models/nor_latn_10mb, un modelo monolingüe de la familia Goldfish orientado al noruego escrito en alfabeto latino y entrenado sobre un corpus de 10 MB. Lo publica el usuario de Hugging Face francesca9805 y se ha generado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. Con 39.087.104 parámetros reales (verificados en los safetensors), es un modelo decoder-only de tipo GPT-2 de tamano muy reducido.
 
 El sufijo seed455 del nombre sugiere que el modelo forma parte de una bateria de experimentos repetidos con distintas semillas, y el proyecto de Weights & Biases asociado se llama "new_tokenizers", lo que apunta a un estudio comparativo sobre tokenizadores o sobre el efecto de la semilla en el ajuste. La model card no documenta el objetivo del experimento ni el conjunto de datos de ajuste, por lo que se trata de un artefacto de investigacion mas que de un modelo listo para produccion.
 
@@ -102,7 +102,7 @@ No hay datos publicos de benchmarks para ninguno de estos checkpoints en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-10mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-10mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/a6bpyiwc

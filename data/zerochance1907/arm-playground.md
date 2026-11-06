@@ -73,7 +73,7 @@ Como referencia interna del autor, el controlador programado que sirvió de expe
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arm Playground (`reach`, `push`) | MLP PPO/DAgger para brazo simulado de 4 articulaciones | no disponible (MLP 128-128-4) | no aplica | MIT | HuggingFace, GitHub, demo web |
+| Arm Playground (`reach`, `push`) | MLP PPO/DAgger para brazo simulado de 4 articulaciones | no disponible (MLP 128-128-4) | no aplica | MIT | Hugging Face, GitHub, demo web |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada.
@@ -90,7 +90,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zerochance1907/arm-playground
+- Hugging Face: https://huggingface.co/zerochance1907/arm-playground
 - Demo en vivo en el navegador: https://zerochance1907.github.io/arm-playground/
 - Hugging Face Space: https://huggingface.co/spaces/zerochance1907/arm-playground
 - Código fuente en GitHub: https://github.com/zerochance1907/arm-playground

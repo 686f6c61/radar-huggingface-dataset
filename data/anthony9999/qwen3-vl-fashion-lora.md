@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anthony9999/qwen3-vl-fashion-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ajustar el modelo multimodal Qwen/Qwen3-VL-8B-Instruct a tareas relacionadas con el dominio de la moda. El repositorio contiene únicamente los pesos del adaptador (0.3 GB) en formato safetensors, junto con los metadatos de entrenamiento generados por la librería PEFT y el framework TRL de HuggingFace.
+El modelo `anthony9999/qwen3-vl-fashion-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ajustar el modelo multimodal Qwen/Qwen3-VL-8B-Instruct a tareas relacionadas con el dominio de la moda. El repositorio contiene únicamente los pesos del adaptador (0.3 GB) en formato safetensors, junto con los metadatos de entrenamiento generados por la librería PEFT y el framework TRL de Hugging Face.
 
 El modelo fue creado el 18 de agosto de 2026 por el usuario anthony9999, aunque no se ha publicado ninguna documentación técnica, descripción de uso o resultados de evaluación. La model card está completamente vacía, con todos los campos marcados como "[More Information Needed]". Esto limita severamente cualquier análisis riguroso: no se conocen los datos de entrenamiento, los hiperparámetros, el rendimiento ni las licencias aplicables.
 
@@ -88,7 +88,7 @@ No hay informacion suficiente para establecer una comparativa rigurosa. Existen 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anthony9999/qwen3-vl-fashion-lora
+- Repositorio Hugging Face: https://huggingface.co/anthony9999/qwen3-vl-fashion-lora
 - Modelo base Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Adaptador similar (referencia): https://huggingface.co/Loc-Wu-0309/qwen-3-vl-8b-it-fashion
 - Adaptador similar (referencia): https://huggingface.co/Piyu12/qwen3-vl-lora

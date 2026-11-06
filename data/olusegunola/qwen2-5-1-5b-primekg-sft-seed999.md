@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `qwen2.5-1.5b-primekg-sft-seed999` es un ajuste supervisado (SFT) publicado por el usuario `olusegunola` en HuggingFace. Por el nombre del repositorio se deduce que se trata de un fine-tuning del modelo base Qwen2.5-1.5B, probablemente entrenado sobre datos derivados de PrimeKG (Precision Medicine Knowledge Graph), con la semilla 999 como variante de entrenamiento. No obstante, esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada en la model card.
+El modelo `qwen2.5-1.5b-primekg-sft-seed999` es un ajuste supervisado (SFT) publicado por el usuario `olusegunola` en Hugging Face. Por el nombre del repositorio se deduce que se trata de un fine-tuning del modelo base Qwen2.5-1.5B, probablemente entrenado sobre datos derivados de PrimeKG (Precision Medicine Knowledge Graph), con la semilla 999 como variante de entrenamiento. No obstante, esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada en la model card.
 
-La model card publicada no contiene informacion sustantiva: es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`. No se declaran autor, proposito, datos de entrenamiento, licencia ni resultados de evaluacion. El repositorio no registra descargas ni interacciones, y su tamano reportado es de 0.0 GB, lo que sugiere que los pesos podrian no estar efectivamente subidos o que el repositorio esta vacio o incompleto en el momento de la consulta.
+La model card publicada no contiene informacion sustantiva: es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`. No se declaran autor, proposito, datos de entrenamiento, licencia ni resultados de evaluacion. El repositorio no registra descargas ni interacciones, y su tamano reportado es de 0.0 GB, lo que sugiere que los pesos podrian no estar efectivamente subidos o que el repositorio esta vacio o incompleto en el momento de la consulta.
 
 Por tanto, esta ficha debe leerse como una descripcion provisional: la relevancia del modelo es limitada al ser un experimento de fine-tuning sin documentacion ni validacion publica. Cualquier uso en produccion requeriria verificar primero la integridad del repositorio y reconstruir la informacion ausente directamente con el autor.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse como una descripcion provisional: la relevanci
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura en la model card. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental de HuggingFace, incluido por defecto en la plantilla, y no a un paper metodologico del modelo. No hay ningun documento tecnico asociado.
+No se dispone de informacion sobre la arquitectura en la model card. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental de Hugging Face, incluido por defecto en la plantilla, y no a un paper metodologico del modelo. No hay ningun documento tecnico asociado.
 
 Respecto al entrenamiento, se desconoce el numero de tokens, la composicion del dataset, si se aplicaron tecnicas de RLHF, DPO u otras. La unica pista es el sufijo `primekg-sft-seed999`: sugiere un ajuste supervisado sobre datos vinculados a PrimeKG (un grafo de conocimiento de medicina de precision), ejecutado con la semilla 999. El sufijo `seed999` es tipico de barridos de hiperparametros o de variantes de reproducibilidad, lo que apunta a un experimento academico y no a un modelo pensado para distribucion.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible para este ajuste en concreto. Como referencia, un modelo de 1.500 millones de parametros en FP16 ocupa aproximadamente 3 GB de pesos, y en cuantizaciones de 4 bits alrededor de 1 GB, mas el coste del KV cache segun la longitud de contexto.
 - GPU recomendadas: no disponible. Si las dimensiones coinciden con Qwen2.5-1.5B, cabria esperar una ejecucion comoda en GPUs consumer.
 - Compatibilidad con GPU consumer: probable en RTX 3060, 4060, 4090 y similares si el modelo conserva el tamano del base, pero sin confirmar.
-- Opciones de despliegue: la libreria declarada es `transformers`. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace. No se declara soporte para vLLM, llama.cpp, Ollama ni TGI, y no hay pesos GGUF publicados en el repositorio.
+- Opciones de despliegue: la libreria declarada es `transformers`. El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face. No se declara soporte para vLLM, llama.cpp, Ollama ni TGI, y no hay pesos GGUF publicados en el repositorio.
 - Latencia y throughput estimados: no disponible.
 
 Advertencia: el tamano del repositorio aparece como 0.0 GB, por lo que podria no contener los pesos reales. Conviene verificarlo antes de planificar cualquier despliegue.
@@ -70,15 +70,15 @@ Advertencia: el tamano del repositorio aparece como 0.0 GB, por lo que podria no
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `olusegunola/qwen2.5-1.5b-primekg-sft-seed999` | no disponible (probablemente 1.5B) | no disponible | no disponible | no disponible | repo sin descargas, tamano 0.0 GB |
-| Qwen2.5-1.5B (oficial, referencia del probable modelo base) | 1.54B | 32.768 tokens | benchmarks publicos disponibles en la model card oficial | Apache 2.0 (salvo excepciones de la familia) | ampliamente disponible en HuggingFace |
-| BioMistral-7B (alternativa del dominio biomedico) | 7B | 4.096 tokens (extensible) | benchmarks publicos en su model card | Apache 2.0 | disponible en HuggingFace |
-| PMC-LLaMA (alternativa del dominio biomedico) | 7B y 13B | 2.048 tokens | benchmarks publicos en su model card | licencia especifica del autor | disponible en HuggingFace |
+| Qwen2.5-1.5B (oficial, referencia del probable modelo base) | 1.54B | 32.768 tokens | benchmarks publicos disponibles en la model card oficial | Apache 2.0 (salvo excepciones de la familia) | ampliamente disponible en Hugging Face |
+| BioMistral-7B (alternativa del dominio biomedico) | 7B | 4.096 tokens (extensible) | benchmarks publicos en su model card | Apache 2.0 | disponible en Hugging Face |
+| PMC-LLaMA (alternativa del dominio biomedico) | 7B y 13B | 2.048 tokens | benchmarks publicos en su model card | licencia especifica del autor | disponible en Hugging Face |
 
 La comparacion es aproximada: no existen datos de rendimiento del modelo evaluado, y los modelos alternativos se incluyen solo como referencia de categoria, no como comparacion cuantitativa validada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, sin informacion sobre entrenamiento, datos ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, sin informacion sobre entrenamiento, datos ni evaluacion.
 - Licencia no declarada: no se puede asumir uso comercial permitido. La licencia del modelo base Qwen2.5 no se hereda automaticamente como certeza si el autor no la especifica.
 - Repositorio aparentemente vacio o incompleto: el tamano de 0.0 GB y la ausencia de descargas sugieren que los pesos podrian no estar disponibles o no ser funcionales.
 - Riesgo de alucinacion: desconocido, pero no evaluado ni mitigado de forma documentada.
@@ -90,8 +90,8 @@ La comparacion es aproximada: no existen datos de rendimiento del modelo evaluad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed999
+- Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed999
 - Paper referenciado en los tags (calculador de impacto, no del modelo): https://arxiv.org/abs/1910.09700
-- Calculador de impacto de HuggingFace: https://mlco2.github.io/impact
+- Calculador de impacto de Hugging Face: https://mlco2.github.io/impact
 
 No se han encontrado en la busqueda web enlaces adicionales (paper, blog, repositorio o demo) relacionados con este modelo.

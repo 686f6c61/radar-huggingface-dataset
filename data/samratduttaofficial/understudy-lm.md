@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Understudy-lm es un modelo draft (borrador) de 109 millones de parámetros diseñado específicamente para decodificación especulativa, desarrollado por Samrat Dutta y publicado en HuggingFace bajo licencia Apache 2.0. A diferencia de los draft models habituales, se entrenó desde cero utilizando únicamente texto generado por su modelo objetivo —Qwen3.5-4B— sin acceso a los logits ni a los estados ocultos del target, lo que lo hace replicable sin necesidad de instrumentar el modelo grande.
+Understudy-lm es un modelo draft (borrador) de 109 millones de parámetros diseñado específicamente para decodificación especulativa, desarrollado por Samrat Dutta y publicado en Hugging Face bajo licencia Apache 2.0. A diferencia de los draft models habituales, se entrenó desde cero utilizando únicamente texto generado por su modelo objetivo —Qwen3.5-4B— sin acceso a los logits ni a los estados ocultos del target, lo que lo hace replicable sin necesidad de instrumentar el modelo grande.
 
 Su propósito es acelerar la inferencia de Qwen3.5-4B: el draft propone tokens que el modelo grande verifica en un solo pase. Comparte el tokenizador de Qwen3.5 (248.320 entradas), por lo que sus propuestas se validan directamente. La innovación principal son tres "lookahead heads" adicionales que permiten generar cuatro tokens con una sola pasada del draft.
 
@@ -90,7 +90,7 @@ La ventaja diferencial de understudy-lm frente a drafts genéricos de tamaño si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samratduttaofficial/understudy-lm
+- Modelo en Hugging Face: https://huggingface.co/samratduttaofficial/understudy-lm
 - Modelo target (Qwen3.5-4B): https://huggingface.co/Qwen/Qwen3.5-4B
 - Codigo y pipeline de entrenamiento: https://github.com/SamratDuttaOfficial/understudy-lm
 - Datasets usados: HuggingFaceTB/smoltalk, allenai/tulu-3-sft-mixture, HuggingFaceFW/fineweb-edu

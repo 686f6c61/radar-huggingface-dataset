@@ -69,8 +69,8 @@ Los resultados proceden del primer experimento del autor y se calculan sobre una
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-litzor-v3 | 0.8B (base) + LoRA | no disponible | Decision de seleccion unica con GRPO | Apache 2.0 | HuggingFace (30 descargas) |
-| Qwen/Qwen3.5-0.8B | 0.8B | no disponible | LLM generativo general | no disponible en la informacion | HuggingFace |
+| connectailab-rl-litzor-v3 | 0.8B (base) + LoRA | no disponible | Decision de seleccion unica con GRPO | Apache 2.0 | Hugging Face (30 descargas) |
+| Qwen/Qwen3.5-0.8B | 0.8B | no disponible | LLM generativo general | no disponible en la informacion | Hugging Face |
 | Politica PPO del simulador CONNECT TYCOON | no disponible | no disponible | RL clasico en entorno Gymnasium | no disponible | No publicada como modelo |
 
 No se dispone de datos de benchmarks comparables con otros adaptadores de decision del mismo tamano en la informacion proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparables con otros adaptadores de decisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litzor/connectailab-rl-litzor-v3
+- Modelo en Hugging Face: https://huggingface.co/litzor/connectailab-rl-litzor-v3
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

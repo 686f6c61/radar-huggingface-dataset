@@ -81,9 +81,9 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lfm2-MaleCNS-Titans-VL-3B-V2-SFT | 3,33 B | no disponible (corte de entrenamiento de 4.096 tokens) | en, zh | lfm1.0 | HuggingFace, requiere `trust_remote_code=True` |
-| LiquidAI/LFM2.5-VL-3B (modelo base) | no disponible en la informacion | no disponible | no disponible | licencia de Liquid AI | HuggingFace |
-| win10/Lfm2-MaleCNS-Titans-VL-3B-V2-HashHop (etapa posterior) | no disponible | no disponible | no disponible | no disponible | HuggingFace; segun el autor, puede estar en progreso |
+| Lfm2-MaleCNS-Titans-VL-3B-V2-SFT | 3,33 B | no disponible (corte de entrenamiento de 4.096 tokens) | en, zh | lfm1.0 | Hugging Face, requiere `trust_remote_code=True` |
+| LiquidAI/LFM2.5-VL-3B (modelo base) | no disponible en la informacion | no disponible | no disponible | licencia de Liquid AI | Hugging Face |
+| win10/Lfm2-MaleCNS-Titans-VL-3B-V2-HashHop (etapa posterior) | no disponible | no disponible | no disponible | no disponible | Hugging Face; segun el autor, puede estar en progreso |
 | Otros VLM de ~3B (Qwen2.5-VL-3B, SmolVLM2-2.2B u similares) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT
+- Modelo en Hugging Face: https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT
 - Etapa posterior (HashHop) del mismo autor: https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-HashHop
 - Repositorio de investigacion (codigo de arquitectura, experimentos y evidencia): https://github.com/win10ogod/LFM2-JSpace-Memory
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B

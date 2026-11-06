@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del Qwen3-8B, desarrollado por el usuario "localized-ft", con el objetivo especifico de reducir las alucinaciones en las respuestas generadas. El nombre del modelo indica que se ha aplicado una tecnica de entrenamiento basada en la divergencia de Kullback-Leibler (KLD) sobre el conjunto de datos "target-only", con una semilla fija (seed3) para reproducibilidad. El modelo base es la version de Unsloth del Qwen3-8B, lo que implica que el entrenamiento se realizo con las optimizaciones de Unsloth y la libreria TRL de HuggingFace.
+Este modelo es un fine-tuning del Qwen3-8B, desarrollado por el usuario "localized-ft", con el objetivo especifico de reducir las alucinaciones en las respuestas generadas. El nombre del modelo indica que se ha aplicado una tecnica de entrenamiento basada en la divergencia de Kullback-Leibler (KLD) sobre el conjunto de datos "target-only", con una semilla fija (seed3) para reproducibilidad. El modelo base es la version de Unsloth del Qwen3-8B, lo que implica que el entrenamiento se realizo con las optimizaciones de Unsloth y la libreria TRL de Hugging Face.
 
 El modelo mantiene los 8.190 millones de parametros del Qwen3-8B original y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su relevancia radica en abordar uno de los problemas mas criticos en la adopcion de LLMs en produccion: la generacion de contenido falso o no verificado. Al estar basado en Qwen3, hereda las capacidades de razonamiento, generacion de codigo y soporte multilingue del modelo original, aunque la model card solo declara ingles como idioma soportado.
 
@@ -23,7 +23,7 @@ La informacion publica sobre este modelo es muy limitada: no se proporcionan det
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del Qwen3-8B, un transformer decoder-only con atencion por ventanas deslizantes y atencion completa alternadas, disenado por Alibaba. El modelo base es la version de Unsloth, que mantiene la misma arquitectura pero con kernels optimizados para entrenamiento eficiente. El fine-tuning se realizo con la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas de alignment como Supervised Fine-Tuning (SFT) o Direct Preference Optimization (DPO).
+La arquitectura es la del Qwen3-8B, un transformer decoder-only con atencion por ventanas deslizantes y atencion completa alternadas, disenado por Alibaba. El modelo base es la version de Unsloth, que mantiene la misma arquitectura pero con kernels optimizados para entrenamiento eficiente. El fine-tuning se realizo con la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas de alignment como Supervised Fine-Tuning (SFT) o Direct Preference Optimization (DPO).
 
 La innovacion principal de este modelo es la aplicacion de una perdida basada en la divergencia KL durante el entrenamiento, orientada a reducir alucinaciones. El termino "target-only" sugiere que el entrenamiento se realizo solo sobre las respuestas objetivo (targets) sin incluir el contexto de entrada en la funcion de perdida, una tecnica que puede ayudar a que el modelo aprenda a ser mas conservador en sus afirmaciones. El uso de una semilla fija (seed3) indica un enfoque de experimentacion controlada, probablemente comparando resultados entre diferentes semillas y tecnicas.
 
@@ -82,7 +82,7 @@ La comparativa se limita a modelos de tamano similar, pero no existen datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed3
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed3
 - Variante con seed2: https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-kld-seed2
 - Variante con inoculation-prompting: https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed3
 - Despliegue en FriendliAI: https://friendli.ai/models/longtermrisk/Qwen3-8B-target-only-no-hallucination-kld

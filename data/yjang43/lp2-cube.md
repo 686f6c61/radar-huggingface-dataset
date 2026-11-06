@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yjang43/lp2-cube` es un modelo del mundo (world model) preentrenado para la tarea de manipulacion OGBench-Cube, publicado por el usuario yjang43 en HuggingFace. Segun la model card, fue liberado originalmente junto con el trabajo LeWorldModel (arXiv 2603.19312) bajo el identificador `quentinll/lewm-cube`, y esta version se emplea en LP² (Latent Projection for Latent Planning).
+`yjang43/lp2-cube` es un modelo del mundo (world model) preentrenado para la tarea de manipulacion OGBench-Cube, publicado por el usuario yjang43 en Hugging Face. Segun la model card, fue liberado originalmente junto con el trabajo LeWorldModel (arXiv 2603.19312) bajo el identificador `quentinll/lewm-cube`, y esta version se emplea en LP² (Latent Projection for Latent Planning).
 
 No se trata de un modelo de lenguaje: no genera texto ni codigo, sino que aprende la dinamica latente de un entorno de manipulacion robotica simulado y se utiliza como componente de planificacion en el espacio latente. Esto lo situa en la categoria de world models para aprendizaje por refuerzo offline con objetivos (goal-conditioned), un area relevante para investigadores que trabajan en planificacion basada en modelos y en control robotico sin acceso al simulador en tiempo de inferencia.
 
@@ -21,7 +21,7 @@ La informacion publica disponible es minima: la model card consta de una sola fr
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 
-Otros datos declarados en HuggingFace: tamano del repositorio ~0,1 GB, pipeline no disponible, region `us`, fecha de creacion y ultima actualizacion 2026-09-13 (fecha que no concuerda con el contexto temporal habitual de publicacion; se reproduce tal cual aparece en la plataforma).
+Otros datos declarados en Hugging Face: tamano del repositorio ~0,1 GB, pipeline no disponible, region `us`, fecha de creacion y ultima actualizacion 2026-09-13 (fecha que no concuerda con el contexto temporal habitual de publicacion; se reproduce tal cual aparece en la plataforma).
 
 ## Arquitectura y entrenamiento
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yjang43/lp2-cube | no disponible | no aplica | World model para OGBench-Cube (uso en LP²) | MIT | HuggingFace, 0 descargas, 0 likes |
-| quentinll/lewm-cube | no disponible | no aplica | World model para OGBench-Cube (publicacion original de LeWorldModel) | no disponible | HuggingFace |
+| yjang43/lp2-cube | no disponible | no aplica | World model para OGBench-Cube (uso en LP²) | MIT | Hugging Face, 0 descargas, 0 likes |
+| quentinll/lewm-cube | no disponible | no aplica | World model para OGBench-Cube (publicacion original de LeWorldModel) | no disponible | Hugging Face |
 | Otros world models para OGBench | no disponible | no aplica | Manipulacion goal-conditioned | no disponible | no disponible |
 
 No se dispone de datos tecnicos de `quentinll/lewm-cube` (parametros, licencia, formato) en la informacion proporcionada, por lo que la comparacion se limita a constatar que `lp2-cube` es una redistribucion o variante del artefacto original vinculada al metodo LP².
@@ -79,7 +79,7 @@ No se dispone de datos tecnicos de `quentinll/lewm-cube` (parametros, licencia, 
 
 - Especificidad de tarea: el modelo esta entrenado para OGBench-Cube y no se documenta su validez fuera de esa tarea o en entornos reales; el benchmark OGBench-Cube es simulado.
 - Ausencia total de documentacion tecnica: no hay datos de arquitectura, parametros, datos de entrenamiento ni evaluacion, lo que impide estimar su comportamiento en produccion.
-- Sin validacion comunitaria: 0 descargas y 0 likes en HuggingFace; no existen informes independientes de uso.
+- Sin validacion comunitaria: 0 descargas y 0 likes en Hugging Face; no existen informes independientes de uso.
 - Riesgo de alucinacion: no aplica en el sentido habitual de los modelos de lenguaje, pero si existe riesgo de predicciones de dinamica erroneas, que en planificacion pueden producir trayectorias inviables.
 - Sesgos: no disponible; no se ha publicado ningun analisis de sesgos ni de cobertura del espacio de estados.
 - Idiomas: no aplica; el modelo no procesa lenguaje natural.
@@ -89,9 +89,9 @@ No se dispone de datos tecnicos de `quentinll/lewm-cube` (parametros, licencia, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yjang43/lp2-cube
+- Modelo en Hugging Face: https://huggingface.co/yjang43/lp2-cube
 - Dataset asociado: https://huggingface.co/datasets/yjang43/lp2-cube
-- Pagina del paper LeWorldModel en HuggingFace: https://huggingface.co/papers/2603.19312
+- Pagina del paper LeWorldModel en Hugging Face: https://huggingface.co/papers/2603.19312
 - Modelo original de la publicacion: https://huggingface.co/quentinll/lewm-cube
 
 Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los unicos enlaces recuperados correspondian a servicios de video y no guardan relacion con el artefacto.

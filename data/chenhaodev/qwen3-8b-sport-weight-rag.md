@@ -22,7 +22,7 @@ La relevancia de este repositorio es practica mas que arquitectonica: documenta 
 | Formato de pesos | No aplica. Ficheros incluidos: `index.faiss` (indice), `docs_meta.enc` (paquete cifrado con texto y metadatos), `decrypt_rag.sh` (script), `README.md` |
 | Dimension del vector | No disponible en la informacion proporcionada (viene fijada por el modelo de embeddings utilizado) |
 | Numero de fragmentos | 465, con `len(docs) == len(meta) == index.ntotal == 465` |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-23 |
 | Ultima actualizacion | 2026-09-23 |

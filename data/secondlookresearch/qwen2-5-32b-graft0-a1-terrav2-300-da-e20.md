@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terrav2-300-da-e20
+- Adaptador en Hugging Face: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1-terrav2-300-da-e20
 - Adaptador A1 requerido: https://huggingface.co/SecondLookResearch/Qwen2.5-32B-graft0-a1
 - Modelo base Qwen2.5-32B: https://huggingface.co/Qwen/Qwen2.5-32B
 - Blog de la serie Qwen2.5: https://qwen.ai/blog?id=qwen2.5

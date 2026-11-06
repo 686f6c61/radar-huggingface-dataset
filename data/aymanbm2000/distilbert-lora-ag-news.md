@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aymanbm2000/distilbert-lora-ag-news` es un repositorio alojado en HuggingFace cuyo nombre sugiere una adaptacion mediante LoRA de un modelo DistilBERT ajustado sobre el conjunto de datos AG News (clasificacion tematica de noticias). No obstante, esta descripcion es una inferencia derivada del identificador del repositorio: la model card publicada es la plantilla autogenerada de HuggingFace y no contiene ninguna seccion completada, por lo que el autor no confirma ni la arquitectura base, ni la tarea, ni los datos de entrenamiento.
+`aymanbm2000/distilbert-lora-ag-news` es un repositorio alojado en Hugging Face cuyo nombre sugiere una adaptacion mediante LoRA de un modelo DistilBERT ajustado sobre el conjunto de datos AG News (clasificacion tematica de noticias). No obstante, esta descripcion es una inferencia derivada del identificador del repositorio: la model card publicada es la plantilla autogenerada de Hugging Face y no contiene ninguna seccion completada, por lo que el autor no confirma ni la arquitectura base, ni la tarea, ni los datos de entrenamiento.
 
 El modelo no registra descargas ni "likes", no declara licencia, no declara idiomas y no especifica formato de pesos, pipeline ni hiperparametros. Fue creado y actualizado el 12 de septiembre de 2026, con un margen de un segundo entre ambos eventos, lo que apunta a una subida automatizada o de prueba sin documentacion asociada.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM, GPU recomendadas, latencia y throughput: no disponibles. El autor no publica ninguna medicion.
 - Estimacion condicional: si el modelo fuese efectivamente un encoder DistilBERT-base (~66 millones de parametros) con adaptadores LoRA, los pesos en fp32 ocuparian del orden de 250-260 MB, en fp16 alrededor de 130 MB y en int8 unos 66 MB. Estas cifras son estimaciones derivadas del tamano de DistilBERT-base y no de datos publicados sobre este repositorio.
 - Si esa estimacion fuese correcta, la inferencia cabria en CPU y en cualquier GPU consumer, incluidas GTX 1650, RTX 3060 o superiores, con lotes grandes y sin necesidad de cuantizacion.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, y para un encoder de clasificacion las opciones habituales serian transformers con PyTorch, ONNX Runtime o TorchScript, ninguna de ellas confirmada aqui.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se documenta compatibilidad con vLLM, llama.cpp, Ollama o TGI, y para un encoder de clasificacion las opciones habituales serian transformers con PyTorch, ONNX Runtime o TorchScript, ninguna de ellas confirmada aqui.
 - No se dispone de datos de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -91,6 +91,6 @@ La comparacion relevante no es de rendimiento sino de trazabilidad: las tres alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aymanbm2000/distilbert-lora-ag-news
+- Repositorio en Hugging Face: https://huggingface.co/aymanbm2000/distilbert-lora-ag-news
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

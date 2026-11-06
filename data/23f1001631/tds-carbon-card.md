@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible, ya qu
 
 ## Comparativa con modelos similares
 
-No se trata de un modelo de IA, por lo que no es comparable con otros modelos de lenguaje o visión. Sin embargo, dentro de la misma categoría de “carbon card” existen otros repositorios similares en HuggingFace que documentan entrenamientos con distinta configuración:
+No se trata de un modelo de IA, por lo que no es comparable con otros modelos de lenguaje o visión. Sin embargo, dentro de la misma categoría de “carbon card” existen otros repositorios similares en Hugging Face que documentan entrenamientos con distinta configuración:
 
 | Repositorio | Hardware | Modo | Región | Emisiones (kg CO2eq) |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ Se observa que las emisiones varían fuertemente según el hardware, el número 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [23f1001631/tds-carbon-card](https://huggingface.co/23f1001631/tds-carbon-card)
+- Repositorio Hugging Face: [23f1001631/tds-carbon-card](https://huggingface.co/23f1001631/tds-carbon-card)
 - Repositorio similar `23ft/tds-carbon-card`: [https://huggingface.co/23ft/tds-carbon-card](https://huggingface.co/23ft/tds-carbon-card)
 - Repositorio similar `Bhagwat8978/tds-carbon-card`: [https://huggingface.co/Bhagwat8978/tds-carbon-card](https://huggingface.co/Bhagwat8978/tds-carbon-card)
 - Repositorio similar `luffyisthepirateking/tds-carbon-card`: [https://huggingface.co/luffyisthepirateking/tds-carbon-card](https://huggingface.co/luffyisthepirateking/tds-carbon-card)

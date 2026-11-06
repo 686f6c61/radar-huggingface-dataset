@@ -79,10 +79,10 @@ Notas de protocolo aportadas por el autor: MMMU usa 847 MCQ elegibles de validac
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16 | 5.104.297.504 (safetensors) | 8192 tokens | Scorer de opciones (BF16) | Apache-2.0 (pesos) + MIT (codigo) | HuggingFace, requiere classifier.py |
-| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 | no disponible | no disponible | Scorer de opciones (NF4) | no disponible en la informacion | HuggingFace |
-| google/gemma-4-E2B-it (base) | no disponible | no disponible | Modelo multimodal conversacional | no disponible en la informacion | HuggingFace |
-| mstrasser/Jeff-Gemma4-E2B | no disponible | no disponible | Fine-tune de referencia (Jeff) | no disponible en la informacion | HuggingFace |
+| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16 | 5.104.297.504 (safetensors) | 8192 tokens | Scorer de opciones (BF16) | Apache-2.0 (pesos) + MIT (codigo) | Hugging Face, requiere classifier.py |
+| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 | no disponible | no disponible | Scorer de opciones (NF4) | no disponible en la informacion | Hugging Face |
+| google/gemma-4-E2B-it (base) | no disponible | no disponible | Modelo multimodal conversacional | no disponible en la informacion | Hugging Face |
+| mstrasser/Jeff-Gemma4-E2B | no disponible | no disponible | Fine-tune de referencia (Jeff) | no disponible en la informacion | Hugging Face |
 
 No se dispone de modelos comparables adicionales de scoring multimodal de opciones multiples en la informacion proporcionada; los datos de rendimiento comparativos frente al modelo base no estan publicados.
 
@@ -103,7 +103,7 @@ No se dispone de modelos comparables adicionales de scoring multimodal de opcion
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16
+- Hugging Face (modelo): https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16
 - Variante NF4 hermana: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4
 - Dataset de benchmarks, predicciones y codigo de reproduccion: https://huggingface.co/datasets/nilp0inter/Jeff-Gemma4-E2B-Multimodal-Benchmarks
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it

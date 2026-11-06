@@ -81,9 +81,9 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K) en l
 
 | Modelo | Parametros | Contexto | pass@1 (SmolDataEnvs) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-350M-SmolDataAgent | 354M | no disponible | 0,209 | no disponible | HuggingFace |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | 0,000 | no disponible | HuggingFace |
-| LFM2.5-2.6B (profesor) | 2,6B | no disponible | no disponible | no disponible | HuggingFace |
+| LFM2.5-350M-SmolDataAgent | 354M | no disponible | 0,209 | no disponible | Hugging Face |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | 0,000 | no disponible | Hugging Face |
+| LFM2.5-2.6B (profesor) | 2,6B | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de otros modelos comparables en la misma tarea dentro de la informacion proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de otros modelos comparables en la misma ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataAgent
+- Modelo en Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataAgent
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Dataset de trayectorias: https://huggingface.co/datasets/lugman/SmolDataAgent-Trajectories
 - Dataset de entorno: https://huggingface.co/datasets/FineEnvs/SmolDataEnvs

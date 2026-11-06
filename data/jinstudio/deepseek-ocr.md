@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-OCR es un modelo vision-language especializado en conversion optica de documentos a texto estructurado, desarrollado por DeepSeek AI y distribuido con licencia MIT. La ficha que se analiza aqui corresponde al repositorio espejo `Jinstudio/DeepSeek-OCR` en HuggingFace, una copia del repositorio oficial `deepseek-ai/DeepSeek-OCR`. El modelo resuelve el problema de la digitalizacion de documentos: dado un escaneo, una fotografia o un PDF renderizado como imagen, genera texto plano o Markdown preservando la estructura del original.
+DeepSeek-OCR es un modelo vision-language especializado en conversion optica de documentos a texto estructurado, desarrollado por DeepSeek AI y distribuido con licencia MIT. La ficha que se analiza aqui corresponde al repositorio espejo `Jinstudio/DeepSeek-OCR` en Hugging Face, una copia del repositorio oficial `deepseek-ai/DeepSeek-OCR`. El modelo resuelve el problema de la digitalizacion de documentos: dado un escaneo, una fotografia o un PDF renderizado como imagen, genera texto plano o Markdown preservando la estructura del original.
 
 Tecnicamente es un modelo de 3.336.106.240 parametros (aproximadamente 3,34 mil millones) construido sobre la arquitectura `deepseek_vl_v2`, es decir, un transformer de vision-lenguaje de la familia DeepSeek-V2 con un codificador visual acoplado a un decodificador de lenguaje. El repositorio ocupa 6,7 GB en safetensors, lo que es coherente con un checkpoint en precision bf16. La tesis central del trabajo, recogida en el paper arXiv:2510.18234, es la compresion optica de contexto: representar grandes volumenes de texto como imagenes para reducir el numero de tokens que el modelo debe procesar.
 
@@ -40,7 +40,7 @@ Entre las dependencias tecnicas verificadas por los autores figuran Python 3.12.
 - Entrada multimodal de imagenes: el ejemplo oficial de vLLM acepta lotes con varias imagenes (`multi_modal_data`), lo que permite procesamiento por lotes.
 - Salida de hasta 8192 tokens por peticion en la configuracion de ejemplo de vLLM.
 - Capacidades multilingues declaradas por el autor, sin enumeracion de idiomas en la informacion disponible.
-- Integracion con HuggingFace Transformers y con vLLM; no se documenta tool calling, function calling ni comportamiento agentico explicito.
+- Integracion con Hugging Face Transformers y con vLLM; no se documenta tool calling, function calling ni comportamiento agentico explicito.
 - No se documentan capacidades de audio, video, vision general (captioning, VQA) ni modo de razonamiento extendido. El modelo esta orientado a OCR documental.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de centro de datos: A100, H100 o L40S para despliegues con concurrencia alta y lotes grandes.
 - GPU de consumo: cabe en tarjetas con 12 GB o mas, como RTX 3060 12 GB, RTX 4070 Ti, RTX 4080 y RTX 4090; en 8 GB el margen es muy ajustado y depende de la resolucion de imagen elegida.
 - Modos de bajo consumo: los modos Tiny (512) y Small (640) reducen el coste del codificador visual y son los mas adecuados para GPUs modestas.
-- Opciones de despliegue: HuggingFace Transformers con `flash_attention_2` (ruta documentada por el autor) y vLLM con soporte oficial desde el 23 de octubre de 2025, instalado desde nightly hasta la version 0.11.1. No se documentan soportes de llama.cpp, Ollama, TGI ni pesos GGUF.
+- Opciones de despliegue: Hugging Face Transformers con `flash_attention_2` (ruta documentada por el autor) y vLLM con soporte oficial desde el 23 de octubre de 2025, instalado desde nightly hasta la version 0.11.1. No se documentan soportes de llama.cpp, Ollama, TGI ni pesos GGUF.
 - Aceleracion opcional: `flash-attn==2.7.3` con `--no-build-isolation`.
 - Latencia y throughput: no disponibles; no se publican mediciones en la informacion proporcionada.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-OCR (`Jinstudio/DeepSeek-OCR`, espejo) | 3,34 mil millones | no disponible | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
-| DeepSeek-OCR (`deepseek-ai/DeepSeek-OCR`, oficial) | no disponible en esta busqueda (mismo modelo) | no disponible | no disponible | MIT | HuggingFace oficial, GitHub, soporte vLLM |
+| DeepSeek-OCR (`Jinstudio/DeepSeek-OCR`, espejo) | 3,34 mil millones | no disponible | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
+| DeepSeek-OCR (`deepseek-ai/DeepSeek-OCR`, oficial) | no disponible en esta busqueda (mismo modelo) | no disponible | no disponible | MIT | Hugging Face oficial, GitHub, soporte vLLM |
 | GOT-OCR2.0 | no disponible | no disponible | no disponible | no disponible | citado en los agradecimientos del modelo |
 | MinerU | no disponible | no disponible | no disponible | no disponible | citado en los agradecimientos del modelo |
 | PaddleOCR | no disponible | no disponible | no disponible | no disponible | citado en los agradecimientos del modelo |
@@ -100,7 +100,7 @@ La comparativa cuantitativa no es posible con la informacion disponible: la mode
 - Repositorio GitHub oficial: https://github.com/deepseek-ai/DeepSeek-OCR
 - Paper (PDF en GitHub): https://github.com/deepseek-ai/DeepSeek-OCR/blob/main/DeepSeek_OCR_paper.pdf
 - Paper en arXiv: https://arxiv.org/abs/2510.18234
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2510.18234
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2510.18234
 - Guia de despliegue en vLLM: https://docs.vllm.ai/projects/recipes/en/latest/DeepSeek/DeepSeek-OCR.html
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Discord de DeepSeek AI: https://discord.gg/Tc7c45Zzu5

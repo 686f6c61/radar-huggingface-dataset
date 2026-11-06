@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qemma-sft es un modelo de lenguaje híbrido desarrollado por Convergent Intelligence LLC (usuario de HuggingFace `reaperdoesntknow`) que fusiona a nivel de pesos dos modelos base: Gemma-3 1B de Google y Qwen3-0.6B de Alibaba. La fusión se realiza sin adaptadores, combinando el cuerpo MLP de Gemma con la atención estilo Qwen, proyectada y alineada al tamaño oculto de Gemma. El resultado se afina mediante SFT para razonamiento paso a paso y seguimiento de instrucciones.
+Qemma-sft es un modelo de lenguaje híbrido desarrollado por Convergent Intelligence LLC (usuario de Hugging Face `reaperdoesntknow`) que fusiona a nivel de pesos dos modelos base: Gemma-3 1B de Google y Qwen3-0.6B de Alibaba. La fusión se realiza sin adaptadores, combinando el cuerpo MLP de Gemma con la atención estilo Qwen, proyectada y alineada al tamaño oculto de Gemma. El resultado se afina mediante SFT para razonamiento paso a paso y seguimiento de instrucciones.
 
 El modelo pertenece al marco teórico "Discrepancy Calculus" (DISC), un enfoque de teoría de la medida que trata las singularidades del entrenamiento (plateaus de pérdida, colapso de modos, olvido catastrófico) como señales estructurales de la geometría del problema de aprendizaje. Está pensado para investigación, generación de texto, código y análisis, con un énfasis especial en razonamiento encadenado.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qemma-sft | ~1B (no especificado) | No especificado | Híbrida Gemma-3 + Qwen3 | OSL-3.0 | HuggingFace |
-| Gemma-3 1B IT | 1B | 32K | Transformer denso | Gemma Terms of Use | HuggingFace |
-| Qwen3-0.6B | 0.6B | 32K | Transformer denso | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1.2B | 128K | Transformer denso | Llama 3.2 Community License | HuggingFace |
+| Qemma-sft | ~1B (no especificado) | No especificado | Híbrida Gemma-3 + Qwen3 | OSL-3.0 | Hugging Face |
+| Gemma-3 1B IT | 1B | 32K | Transformer denso | Gemma Terms of Use | Hugging Face |
+| Qwen3-0.6B | 0.6B | 32K | Transformer denso | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1.2B | 128K | Transformer denso | Llama 3.2 Community License | Hugging Face |
 
 Qemma-sft se diferencia de sus bases por la fusión de arquitecturas, pero carece de datos de rendimiento publicados que permitan comparar su eficacia real. Su licencia OSL-3.0 es más restrictiva que Apache 2.0 de Qwen3, pero menos que los términos de Gemma. No hay evidencia de que supere a sus modelos base en tareas estándar.
 
@@ -82,7 +82,7 @@ Qemma-sft se diferencia de sus bases por la fusión de arquitecturas, pero carec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Qemma-sft
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qemma-sft
 - Perfil del autor (Convergent Intelligence LLC): https://huggingface.co/reaperdoesntknow
 - Paper del marco DISC: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
 - Paper "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)

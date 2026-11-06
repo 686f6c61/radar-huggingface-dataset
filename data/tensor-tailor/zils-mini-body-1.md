@@ -84,7 +84,7 @@ Los tres modelos base son los componentes de la media inicial; no se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tensor-tailor/zils-mini-body-1
+- Hugging Face: https://huggingface.co/tensor-tailor/zils-mini-body-1
 - Modelo base: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Modelo base: https://huggingface.co/Maincode/Matilda-Decision-v1-Mini
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2

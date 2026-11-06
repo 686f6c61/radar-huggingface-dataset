@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LightOnOCR-2-1B-viv2 es un ajuste fino (fine-tune) del modelo xbikevn/LightOnOCR-2-1B-vi, publicado por el usuario xbikevn en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tareas de reconocimiento optico de caracteres (OCR) y conversion de imagenes de documentos a texto, con 1.005.647.872 parametros totales (aproximadamente 1.000 millones) y pesos en safetensors. La model card indica que fue entrenado con la libreria Transformers y que pertenece a la familia de arquitectura identificada con la etiqueta `lighton_ocr`.
+LightOnOCR-2-1B-viv2 es un ajuste fino (fine-tune) del modelo xbikevn/LightOnOCR-2-1B-vi, publicado por el usuario xbikevn en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tareas de reconocimiento optico de caracteres (OCR) y conversion de imagenes de documentos a texto, con 1.005.647.872 parametros totales (aproximadamente 1.000 millones) y pesos en safetensors. La model card indica que fue entrenado con la libreria Transformers y que pertenece a la familia de arquitectura identificada con la etiqueta `lighton_ocr`.
 
 El modelo se distribuye bajo licencia Apache 2.0 y su repositorio ocupa 2,0 GB, un tamano coherente con pesos en precision de 16 bits para un modelo de 1B de parametros. Su relevancia practica radica en el nicho de OCR de bajo coste computacional: un modelo de ~1B puede desplegarse en GPUs de consumo o incluso en entornos con recursos limitados, a diferencia de los sistemas de OCR basados en modelos de vision-lenguaje de 3B a 8B parametros.
 
-No obstante, la informacion publica disponible es muy escasa: la model card fue generada automaticamente por el Trainer de HuggingFace y contiene marcadores de plantilla del tipo "More information needed" en las secciones de descripcion, usos previstos, datos de entrenamiento y resultados. El model-index no incluye ningun resultado de evaluacion y el modelo registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un artefacto sin validacion externa conocida.
+No obstante, la informacion publica disponible es muy escasa: la model card fue generada automaticamente por el Trainer de Hugging Face y contiene marcadores de plantilla del tipo "More information needed" en las secciones de descripcion, usos previstos, datos de entrenamiento y resultados. El model-index no incluye ningun resultado de evaluacion y el modelo registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un artefacto sin validacion externa conocida.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ Los hiperparametros de entrenamiento si estan documentados, ya que la model card
 - Generacion de texto a partir de imagenes: el pipeline declarado es image-text-to-text, es decir, conversion de imagenes (documentos escaneados, capturas, fotografias) en texto transcrito.
 - OCR de documentos: la denominacion del modelo y su linaje (LightOnOCR) indican una especializacion en extraccion de texto de documentos.
 - Procesamiento conversacional: entre las etiquetas figura `conversational`, lo que sugiere soporte de interaccion por turnos con imagenes como entrada.
-- Compatibilidad con endpoints de HuggingFace: la etiqueta `endpoints_compatible` indica que el modelo esta preparado para su despliegue en la infraestructura de inferencia gestionada de HuggingFace.
+- Compatibilidad con endpoints de Hugging Face: la etiqueta `endpoints_compatible` indica que el modelo esta preparado para su despliegue en la infraestructura de inferencia gestionada de Hugging Face.
 - Razonamiento multi-paso, tool calling y function calling: no disponible en la informacion proporcionada.
 - Capacidades multimodales adicionales (audio, video, modo "thinking" explicito): no disponible.
 - Cobertura multilingue: no disponible; el sufijo "vi" del modelo base apunta a un foco en vietnamita, sin confirmacion.
@@ -73,8 +73,8 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento OCR |
 |---|---|---|---|---|---|
-| xbikevn/LightOnOCR-2-1B-viv2 | 1.005.647.872 | no disponible | apache-2.0 | safetensors en HuggingFace, 0 descargas | no disponible |
-| xbikevn/LightOnOCR-2-1B-vi (modelo base) | no disponible en la informacion | no disponible | no disponible | HuggingFace | no disponible |
+| xbikevn/LightOnOCR-2-1B-viv2 | 1.005.647.872 | no disponible | apache-2.0 | safetensors en Hugging Face, 0 descargas | no disponible |
+| xbikevn/LightOnOCR-2-1B-vi (modelo base) | no disponible en la informacion | no disponible | no disponible | Hugging Face | no disponible |
 | Otros modelos de OCR de ~1B de la familia LightOnOCR | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos de OCR basados en vision-lenguaje de mayor tamano (3B-8B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/xbikevn/LightOnOCR-2-1B-viv2
+- Pagina del modelo en Hugging Face: https://huggingface.co/xbikevn/LightOnOCR-2-1B-viv2
 - Modelo base: https://huggingface.co/xbikevn/LightOnOCR-2-1B-vi
-- Perfil del autor en HuggingFace: https://huggingface.co/xbikevn
+- Perfil del autor en Hugging Face: https://huggingface.co/xbikevn
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan relacion con el modelo (perfiles de LinkedIn de personas ajenas al proyecto) y no aportan informacion tecnica utilizable. No se han localizado papers, blogs, repositorios ni demos asociados a este modelo en la informacion disponible.

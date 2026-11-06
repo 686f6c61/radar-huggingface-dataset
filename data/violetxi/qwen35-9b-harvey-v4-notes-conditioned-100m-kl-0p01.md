@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p01
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p01
 - Discusiones del modelo: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p01/discussions
 - Dataset de replay de KL (harvey-kl-ground-sessions): https://huggingface.co/datasets/violetxi/harvey-kl-ground-sessions/tree/5ae59c84ad92b5634084e9c4aec6e7007ef48d3d
 - Dataset de evaluación de recall closed-book: https://huggingface.co/datasets/violetxi/harvey-eval-recall-qwen35-9b-notes70-notecondtraj30-100m-kl-0p01-think

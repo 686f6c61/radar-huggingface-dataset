@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jakelolipopp/Qwen3.5-4B-AltText-v3-LORA
+- Modelo en Hugging Face: https://huggingface.co/Jakelolipopp/Qwen3.5-4B-AltText-v3-LORA
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Repositorio oficial de Qwen3 (familia base): https://github.com/QwenLM/Qwen3
 - Página de Qwen3.5 en Ollama (referencia del modelo base): https://ollama.com/library/qwen3.5:4b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Prestamo/llama3-8b-edge-gguf` es un repositorio de pesos en formato GGUF publicado en HuggingFace por el usuario Prestamo. Por el identificador, se trata de una conversión a GGUF de un modelo de la familia Llama 3 de 8.000 millones de parámetros, presumiblemente orientada a despliegue en dispositivos de borde (edge), aunque la model card no aporta ninguna especificación técnica que lo confirme. El repositorio se creó el 29 de octubre de 2026 y no registra descargas ni interacciones en el momento de la consulta.
+`Prestamo/llama3-8b-edge-gguf` es un repositorio de pesos en formato GGUF publicado en Hugging Face por el usuario Prestamo. Por el identificador, se trata de una conversión a GGUF de un modelo de la familia Llama 3 de 8.000 millones de parámetros, presumiblemente orientada a despliegue en dispositivos de borde (edge), aunque la model card no aporta ninguna especificación técnica que lo confirme. El repositorio se creó el 29 de octubre de 2026 y no registra descargas ni interacciones en el momento de la consulta.
 
 La información disponible es mínima: la model card se limita a declarar la licencia Apache 2.0 y no incluye detalles sobre arquitectura, datos de entrenamiento, contexto, cuantizaciones concretas ni idiomas soportados. El pipeline no está declarado y no se han publicado resultados de evaluación.
 
@@ -80,7 +80,7 @@ La comparativa se basa en las características conocidas de la familia Llama 3 8
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Prestamo/llama3-8b-edge-gguf
+- Repositorio Hugging Face: https://huggingface.co/Prestamo/llama3-8b-edge-gguf
 - Modelo base de referencia (Meta Llama 3 8B): https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Modelo base instruct de referencia: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Repositorio llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp

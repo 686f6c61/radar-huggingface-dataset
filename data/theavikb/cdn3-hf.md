@@ -88,7 +88,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables para Krea 2 ni s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theavikb/cdn3-hf
+- Modelo en Hugging Face: https://huggingface.co/theavikb/cdn3-hf
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Variante Krea 2 Turbo (usada en las muestras): https://huggingface.co/krea/Krea-2-Turbo
 - Paper o documentacion tecnica: no disponible

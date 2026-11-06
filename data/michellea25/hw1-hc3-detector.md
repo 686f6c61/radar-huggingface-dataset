@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `MichelleA25/hw1-hc3-detector` es un checkpoint de clasificacion de texto publicado en HuggingFace por el usuario MichelleA25. Se distribuye en formato safetensors, se carga con la libreria transformers y esta orientado a la tarea `text-classification`, con 22.713.986 parametros totales y un repositorio de aproximadamente 0,1 GB.
+El modelo `MichelleA25/hw1-hc3-detector` es un checkpoint de clasificacion de texto publicado en Hugging Face por el usuario MichelleA25. Se distribuye en formato safetensors, se carga con la libreria transformers y esta orientado a la tarea `text-classification`, con 22.713.986 parametros totales y un repositorio de aproximadamente 0,1 GB.
 
-El identificador del repositorio sugiere, sin que la model card lo confirme, un detector relacionado con el conjunto de datos HC3 (Human ChatGPT Comparison Corpus), es decir, una posible tarea de discriminacion entre texto humano y texto generado por IA. Esta interpretacion es una hipotesis derivada del nombre y no un dato verificado: la model card es la plantilla generada automaticamente por HuggingFace y no contiene descripcion, datos de entrenamiento ni etiquetas.
+El identificador del repositorio sugiere, sin que la model card lo confirme, un detector relacionado con el conjunto de datos HC3 (Human ChatGPT Comparison Corpus), es decir, una posible tarea de discriminacion entre texto humano y texto generado por IA. Esta interpretacion es una hipotesis derivada del nombre y no un dato verificado: la model card es la plantilla generada automaticamente por Hugging Face y no contiene descripcion, datos de entrenamiento ni etiquetas.
 
 Por su tamano (22,7 millones de parametros, muy por debajo de los 110 millones de BERT-base y de los 66 millones de DistilBERT), el modelo es ligero y cabe en CPU y en cualquier GPU consumer, lo que lo hace apto para clasificacion de alto volumen con coste bajo. La ausencia de licencia declarada, de idiomas y de resultados de evaluacion limita seriamente su uso en produccion sin una validacion previa por parte del integrador.
 
@@ -32,13 +32,13 @@ Por su tamano (22,7 millones de parametros, muy por debajo de los 110 millones d
 
 El unico dato estructural disponible son los tags del repositorio, que identifican el modelo como `bert` y como `text-classification`. La etiqueta `safetensors` confirma que los pesos se distribuyen en ese formato y el contaje real de parametros (22.713.986) indica una configuracion de encoder mas pequena que las referencias habituales de BERT-base (110 M) o DistilBERT (66 M); podria tratarse de una configuracion personalizada de capas y dimensiones ocultas reducidas, pero no se dispone de la configuracion (`config.json`) para confirmar numero de capas, dimension oculta, cabezas de atencion ni vocabulario.
 
-No hay informacion sobre el procedimiento de entrenamiento: se desconocen el numero de tokens, la composicion del corpus, si hubo ajuste fino supervisado, destilacion, RLHF o DPO, ni los hiperparametros utilizados. La model card es la plantilla automatica de HuggingFace y todos los apartados relevantes (datos de entrenamiento, procedimiento, evaluacion, uso previsto, sesgos) aparecen marcados como "More Information Needed". El unico tag de tipo paper presente, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre el calculo de emisiones de carbono, incluido por defecto en la plantilla, y no a un articulo sobre este modelo. El nombre `hw1` sugiere un trabajo academico o de practica, sin que exista confirmacion documental.
+No hay informacion sobre el procedimiento de entrenamiento: se desconocen el numero de tokens, la composicion del corpus, si hubo ajuste fino supervisado, destilacion, RLHF o DPO, ni los hiperparametros utilizados. La model card es la plantilla automatica de Hugging Face y todos los apartados relevantes (datos de entrenamiento, procedimiento, evaluacion, uso previsto, sesgos) aparecen marcados como "More Information Needed". El unico tag de tipo paper presente, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre el calculo de emisiones de carbono, incluido por defecto en la plantilla, y no a un articulo sobre este modelo. El nombre `hw1` sugiere un trabajo academico o de practica, sin que exista confirmacion documental.
 
 ## Capacidades
 
 - Clasificacion de texto: es la unica capacidad confirmada por el pipeline declarado (`text-classification`). Devuelve etiquetas con puntuaciones de probabilidad sobre secuencias de entrada.
 - Deteccion de texto generado por IA: capacidad plausible si el ajuste se hizo sobre el corpus HC3, pero no confirmada en la model card. Debe validarse antes de asumirla.
-- Integracion como endpoint: los tags `endpoints_compatible` y `text-embeddings-inference` indican compatibilidad con el despliegue gestionado de HuggingFace y con Text Embeddings Inference.
+- Integracion como endpoint: los tags `endpoints_compatible` y `text-embeddings-inference` indican compatibilidad con el despliegue gestionado de Hugging Face y con Text Embeddings Inference.
 - Generacion de texto, razonamiento, codigo, matematicas: no disponible. Es un encoder de clasificacion, no un modelo generativo, por lo que estas capacidades no aplican.
 - Tool calling / function calling: no disponible. No es una capacidad propia de un clasificador BERT.
 - Agentes y razonamiento multi-paso: no disponible.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: en fp32 son aproximadamente 91 MB de pesos (22.713.986 parametros x 4 bytes) mas activaciones; en fp16, unos 45 MB; en int8, unos 23 MB. Las activaciones dependen de la longitud de secuencia, que no se ha publicado.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050 en adelante). En A100, H100 o RTX 4090 el modelo queda limitado por el ancho de banda y el overhead de lanzamiento de kernels, no por la memoria.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer moderna e incluso en GPU integradas. Tambien es viable en CPU sin aceleracion dedicada.
-- Opciones de despliegue: transformers con `pipeline("text-classification")`, HuggingFace Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), y exportacion a ONNX Runtime para CPU o edge. Las opciones de vLLM, llama.cpp, Ollama y TGI no aplican o no se han documentado para este modelo. Alternativas como TorchServe o FastAPI con batching dinamico son viables.
+- Opciones de despliegue: transformers con `pipeline("text-classification")`, Hugging Face Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), y exportacion a ONNX Runtime para CPU o edge. Las opciones de vLLM, llama.cpp, Ollama y TGI no aplican o no se han documentado para este modelo. Alternativas como TorchServe o FastAPI con batching dinamico son viables.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones, y cualquier cifra dependera del hardware, del tamano de lote y de la longitud de secuencia, que se desconoce.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MichelleA25/hw1-hc3-detector | 22,7 M | No disponible | No disponible | HuggingFace, 0 descargas |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| distilbert/distilbert-base-uncased | 66 M | 512 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| prajjwal1/bert-small | 29,1 M | 512 tokens | Apache-2.0 | HuggingFace |
+| MichelleA25/hw1-hc3-detector | 22,7 M | No disponible | No disponible | Hugging Face, 0 descargas |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| distilbert/distilbert-base-uncased | 66 M | 512 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| prajjwal1/bert-small | 29,1 M | 512 tokens | Apache-2.0 | Hugging Face |
 
 La comparacion de calidad no es posible: no hay un solo resultado de evaluacion publicado para `hw1-hc3-detector`. Ademas, los modelos de referencia son checkpoints preentrenados de proposito general, mientras que este parece ser un ajuste fino para una tarea concreta, por lo que la comparacion directa carece de sentido sin evaluar ambos sobre el mismo conjunto de prueba.
 
@@ -96,6 +96,6 @@ La comparacion de calidad no es posible: no hay un solo resultado de evaluacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MichelleA25/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/MichelleA25/hw1-hc3-detector
 - Paper referenciado en los tags (Lacoste et al., 2019, Quantifying the Carbon Emissions of Machine Learning): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact#compute

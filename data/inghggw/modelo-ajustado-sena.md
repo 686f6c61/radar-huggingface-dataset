@@ -35,7 +35,7 @@ El dataset de entrenamiento es deliberadamente minúsculo: 40 pares de pregunta 
 
 ## Casos de uso
 
-- Material didáctico para cursos de IA: sirve como ejemplo resuelto y reproducible de fine-tuning con LoRA en Colab, mostrando el flujo completo (dataset, entrenamiento, fusión de adaptadores y publicación en HuggingFace).
+- Material didáctico para cursos de IA: sirve como ejemplo resuelto y reproducible de fine-tuning con LoRA en Colab, mostrando el flujo completo (dataset, entrenamiento, fusión de adaptadores y publicación en Hugging Face).
 - Demostración de sobreajuste: es un caso de estudio ideal para explicar en clase por qué un modelo con pérdida de 0,05 tras 5 épocas sobre 40 ejemplos memoriza en lugar de generalizar.
 - Punto de partida para ejercicios de los aprendices: el autor indica explícitamente que cada aprendiz debe escribir sus propios 40 ejemplos reales sobre su tema y repetir el proceso.
 - Comparación fine-tuning frente a RAG: la model card lo propone como contraste con la semana 4 del curso, para mostrar que para responder con información confiable sobre documentos es preferible RAG.
@@ -79,6 +79,6 @@ Frente a su modelo base, esta ficha no aporta ventajas de capacidad general: el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inghggw/modelo-ajustado-sena
+- Modelo en Hugging Face: https://huggingface.co/inghggw/modelo-ajustado-sena
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio del curso (guía y notebooks): https://github.com/inghggw/iniciacion-ia-adso

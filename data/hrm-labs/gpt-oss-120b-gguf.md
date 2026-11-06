@@ -99,7 +99,7 @@ Los datos de rendimiento comparado no están disponibles en la información prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hrm-labs/gpt-oss-120b-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/hrm-labs/gpt-oss-120b-GGUF
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Modelo borrador para decodificación especulativa: https://huggingface.co/nvidia/gpt-oss-120b-Eagle3-v3
 - Conversión GGUF de referencia citada en el README: https://huggingface.co/ggml-org/gpt-oss-120b-GGUF

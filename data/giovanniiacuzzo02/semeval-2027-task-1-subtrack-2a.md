@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemEval-2027-Task-1-subtrack-2a (este) | Adaptador sobre base de ~109 M | 512 tokens (base) | Bi-encoder denso + LoRA, recuperacion conversacional | no disponible | HuggingFace (0 descargas) |
-| BAAI/bge-base-en-v1.5 | ~109 M | 512 tokens | Bi-encoder denso de proposito general | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| SemEval-2027-Task-1-subtrack-2a (este) | Adaptador sobre base de ~109 M | 512 tokens (base) | Bi-encoder denso + LoRA, recuperacion conversacional | no disponible | Hugging Face (0 descargas) |
+| BAAI/bge-base-en-v1.5 | ~109 M | 512 tokens | Bi-encoder denso de proposito general | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | Otros sistemas de la Sub-track 2a de RETECO | no disponible | no disponible | Recuperacion conversacional | no disponible | no disponible |
 
 La comparativa se limita a la relacion con el modelo base documentada en la propia model card (BAAI/bge-base-en-v1.5). No se dispone de datos de rendimiento ni de especificaciones de alternativas directas dentro de la Sub-track 2a en la informacion proporcionada.
@@ -92,7 +92,7 @@ La comparativa se limita a la relacion con el modelo base documentada en la prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2a
+- Modelo en Hugging Face: https://huggingface.co/GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2a
 - Modelo base: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Dataset de entrenamiento: https://huggingface.co/datasets/DataScience-UIBK/RETECO-SemEval2027
 - Pagina del proyecto RETECO: https://datascienceuibk.github.io/RETECO/

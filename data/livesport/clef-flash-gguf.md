@@ -97,7 +97,7 @@ No se dispone de modelos comparables de la misma categoria (clasificadores-decis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Livesport/clef-flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Livesport/clef-flash-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - GGUF con formato nativo de llama.cpp: https://huggingface.co/ggml-org/Clef-Flash-GGUF
 - Commit de llama.cpp probado: https://github.com/ggml-org/llama.cpp/commit/8212c7802455255460ab8e18fc34754560031b34

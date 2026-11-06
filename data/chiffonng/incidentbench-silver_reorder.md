@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`incidentbench-silver_reorder` es un adaptador LoRA de rango 16 entrenado sobre el modelo base Qwen2.5-7B-Instruct por el usuario de HuggingFace chiffonng. Forma parte del proyecto IncidentBench, un banco de pruebas para la clasificación conjunta de incidentes en sistemas de inteligencia artificial bajo las siete categorías de riesgo del MIT. El adaptador convierte al modelo base en un clasificador de una sola respuesta: a partir de un prompt, devuelve directamente la categoría de incidente detectada o la etiqueta "No incident (potential only)", de modo que tanto la detección como la categorización se leen de esa misma salida.
+`incidentbench-silver_reorder` es un adaptador LoRA de rango 16 entrenado sobre el modelo base Qwen2.5-7B-Instruct por el usuario de Hugging Face chiffonng. Forma parte del proyecto IncidentBench, un banco de pruebas para la clasificación conjunta de incidentes en sistemas de inteligencia artificial bajo las siete categorías de riesgo del MIT. El adaptador convierte al modelo base en un clasificador de una sola respuesta: a partir de un prompt, devuelve directamente la categoría de incidente detectada o la etiqueta "No incident (potential only)", de modo que tanto la detección como la categorización se leen de esa misma salida.
 
 La variante `silver_reorder` se distingue por una modificación concreta del formato de respuesta: coloca el estado de realización (realizado o potencial) y la severidad antes de la clase en la respuesta generada. El entrenamiento se realizó con etiquetas generadas por el propio modelo ("silver") siguiendo la guía de anotación del proyecto, no con anotaciones humanas gold. El autor lo describe explícitamente como un artefacto de investigación y advierte de que no debe usarse para tomar decisiones sobre sistemas reales.
 
@@ -65,7 +65,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores o model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| incidentbench-silver_reorder | 7B (base) + LoRA r=16 | no disponible | other | HuggingFace |
+| incidentbench-silver_reorder | 7B (base) + LoRA r=16 | no disponible | other | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no incluye otros adaptadores o model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chiffonng/incidentbench-silver_reorder
+- Modelo en Hugging Face: https://huggingface.co/chiffonng/incidentbench-silver_reorder
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado en la busqueda web enlaces adicionales a papers, blogs, repositorios o demos del proyecto IncidentBench.

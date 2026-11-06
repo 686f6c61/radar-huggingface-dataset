@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kchisara es un adaptador LoRA de texto a imagen publicado por el usuario WasamiKirua en HuggingFace. Se trata de un ajuste fino de tipo LoRA (Low-Rank Adaptation) sobre el modelo base krea/Krea-2-Raw, orientado a la generacion de imagenes de un personaje concreto mediante la palabra gatillo `kchisara`. El repositorio ocupa 0,2 GB y se distribuye en formato diffusers, por lo que su uso requiere descargar adicionalmente el modelo base sobre el que fue entrenado.
+Kchisara es un adaptador LoRA de texto a imagen publicado por el usuario WasamiKirua en Hugging Face. Se trata de un ajuste fino de tipo LoRA (Low-Rank Adaptation) sobre el modelo base krea/Krea-2-Raw, orientado a la generacion de imagenes de un personaje concreto mediante la palabra gatillo `kchisara`. El repositorio ocupa 0,2 GB y se distribuye en formato diffusers, por lo que su uso requiere descargar adicionalmente el modelo base sobre el que fue entrenado.
 
 El modelo no introduce una arquitectura nueva: hereda por completo la del modelo base y solo aporta pesos de bajo rango que modifican el comportamiento del generador para reproducir la identidad visual del personaje. La model card del autor es escueta y no documenta el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje ni la resolucion objetivo; unicamente indica el prompt de instancia, la licencia Apache 2.0 y varios ejemplos de generacion con sus prompts negativos.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WasamiKirua/Kchisara
+- Modelo en Hugging Face: https://huggingface.co/WasamiKirua/Kchisara
 - Ficheros y versiones: https://huggingface.co/WasamiKirua/Kchisara/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Libreria diffusers: https://github.com/huggingface/diffusers

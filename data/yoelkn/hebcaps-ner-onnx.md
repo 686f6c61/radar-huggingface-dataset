@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yoelkn/hebcaps-ner-onnx | no disponible | no disponible | NER en hebreo | CC BY 4.0 | ONNX int8 | HuggingFace |
-| dicta-il/dictabert-ner | no disponible | no disponible | NER en hebreo | no disponible en la informacion proporcionada | safetensors/PyTorch (formato original de DictaBERT) | HuggingFace |
-| dicta-il/dictabert | no disponible | no disponible | Modelo base BERT para hebreo | no disponible en la informacion proporcionada | safetensors/PyTorch | HuggingFace |
+| yoelkn/hebcaps-ner-onnx | no disponible | no disponible | NER en hebreo | CC BY 4.0 | ONNX int8 | Hugging Face |
+| dicta-il/dictabert-ner | no disponible | no disponible | NER en hebreo | no disponible en la informacion proporcionada | safetensors/PyTorch (formato original de DictaBERT) | Hugging Face |
+| dicta-il/dictabert | no disponible | no disponible | Modelo base BERT para hebreo | no disponible en la informacion proporcionada | safetensors/PyTorch | Hugging Face |
 
 La comparación se limita al modelo base y a su encoder de origen, ya que no se dispone de datos sobre alternativas de NER en hebreo con parámetros, contexto o rendimiento verificables en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparación se limita al modelo base y a su encoder de origen, ya que no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoelkn/hebcaps-ner-onnx
+- Modelo en Hugging Face: https://huggingface.co/yoelkn/hebcaps-ner-onnx
 - Modelo base: https://huggingface.co/dicta-il/dictabert-ner
 - Referencia de DictaBERT (Shmidman et al., 2023): no disponible en la informacion proporcionada
 - Repositorio o demo del proyecto HebCaps: no disponible en la informacion proporcionada

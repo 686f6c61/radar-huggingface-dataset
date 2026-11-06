@@ -30,7 +30,7 @@ El modelo base es un transformer decoder-only de arquitectura Llama, con 52 capa
 
 ## Arquitectura y entrenamiento
 
-La información disponible no incluye detalles sobre el preentrenamiento del modelo base (composición del dataset, número de tokens, uso de RLHF/DPO). Lo que sí está documentado es el proceso de conversión, que constituye la aportación técnica de este repositorio. Se partió del checkpoint BF16 de `Nanbeige/Nanbeige4.3-33B` (14 shards, 66,3 GB, 471 tensores = 52×9 + 3, sin tensores MTP), verificado con SHA-256 contra los OIDs de LFS de HuggingFace en los 14 casos. La cuantización se realizó con llm-compressor 0.14.0.1, `pipeline='sequential'`, en modo weight-only y sin corpus de calibración ("datafree"), apuntando exclusivamente a los 156 tensores MLP; atención, normas y cabezas quedaron fuera del objetivo en ambos espacios de nombres, y la receta se validó contra el `weight_map` antes de ejecutarse.
+La información disponible no incluye detalles sobre el preentrenamiento del modelo base (composición del dataset, número de tokens, uso de RLHF/DPO). Lo que sí está documentado es el proceso de conversión, que constituye la aportación técnica de este repositorio. Se partió del checkpoint BF16 de `Nanbeige/Nanbeige4.3-33B` (14 shards, 66,3 GB, 471 tensores = 52×9 + 3, sin tensores MTP), verificado con SHA-256 contra los OIDs de LFS de Hugging Face en los 14 casos. La cuantización se realizó con llm-compressor 0.14.0.1, `pipeline='sequential'`, en modo weight-only y sin corpus de calibración ("datafree"), apuntando exclusivamente a los 156 tensores MLP; atención, normas y cabezas quedaron fuera del objetivo en ambos espacios de nombres, y la receta se validó contra el `weight_map` antes de ejecutarse.
 
 El esquema NVFP4A16 emplea bloques de 16 elementos con escalas FP8 E4M3 por tensor, manteniendo la activación en 16 bits (de ahí W4A16). Un guardián de normas posterior a la cuantización comparó 315 tensores no tocados y detectó 0 mutaciones. El resultado es un checkpoint indexado de 2 shards (~30,8 GB) con `recipe.yaml`, a partir del cual se generan los siete GGUF. Los seis niveles NVFP4 comparten un backbone de 364 tensores byte-idéntico (verificado por SHA); las diferencias entre niveles son solo la precisión de embeddings y `lm_head`, más el recuantizado Q8_0 de la atención en HIGHEST. La plantilla de chat se propaga a todos los ficheros. No hay innovaciones de decodificación (sin decodificación especulativa ni MTP) ni mecanismos de atención lineal.
 
@@ -82,9 +82,9 @@ Dos ejecuciones idénticas produjeron la misma puntuación y respuestas ítem po
 
 | Modelo | Parámetros | Contexto | Formato / tamaño | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nanbeige4.3-33B (base) | 33,1B densos | 512K nativo | Safetensors BF16, 66,3 GB (14 shards) | Apache-2.0 | No disponible en la información | HuggingFace |
-| Nanbeige4.3-33B-NVFP4-GGUF (MEDIUM) | 33,1B densos | 128K en este fichero | GGUF NVFP4A16, 19,54 GB | Apache-2.0 | MMLU 67,62 %; GSM8K 91,5 % | HuggingFace |
-| Nanbeige4.3-33B-NVFP4-GGUF (HIGHEST) | 33,1B densos | 64K en este fichero | GGUF, atención Q8_0, 25,13 GB | Apache-2.0 | No medido | HuggingFace |
+| Nanbeige4.3-33B (base) | 33,1B densos | 512K nativo | Safetensors BF16, 66,3 GB (14 shards) | Apache-2.0 | No disponible en la información | Hugging Face |
+| Nanbeige4.3-33B-NVFP4-GGUF (MEDIUM) | 33,1B densos | 128K en este fichero | GGUF NVFP4A16, 19,54 GB | Apache-2.0 | MMLU 67,62 %; GSM8K 91,5 % | Hugging Face |
+| Nanbeige4.3-33B-NVFP4-GGUF (HIGHEST) | 33,1B densos | 64K en este fichero | GGUF, atención Q8_0, 25,13 GB | Apache-2.0 | No medido | Hugging Face |
 | Otras alternativas densas de ~30-34B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones verificadas de modelos competidores (por ejemplo, otras familias densas de 30-34B) que permitan una comparación cuantitativa rigurosa. Cualquier comparación con ellos sería especulativa.
@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4-GGUF
 - Checkpoint intermedio NVFP4A16 en safetensors: https://huggingface.co/esatapedico/Nanbeige4.3-33B-NVFP4
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Sitio del autor de la conversión: https://www.esatapedico.com

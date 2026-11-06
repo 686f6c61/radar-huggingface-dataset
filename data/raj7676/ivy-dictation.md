@@ -91,7 +91,7 @@ La comparativa se limita a los datos disponibles; no se han publicado mediciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raj7676/ivy-dictation
+- Modelo en Hugging Face: https://huggingface.co/raj7676/ivy-dictation
 - Modelo base Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Web de la aplicacion Ivy: https://raj-7676.github.io/ivy-dictation/
 - Codigo fuente en GitHub: https://github.com/raj-7676/ivy-dictation

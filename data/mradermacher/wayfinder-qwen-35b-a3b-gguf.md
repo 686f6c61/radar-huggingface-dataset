@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wayfinder-qwen-35b-a3b es un modelo de lenguaje de arquitectura Mixture of Experts (MoE) con 35.505.251.456 parámetros totales, segun los datos de safetensors del repositorio. El modelo original fue publicado por el usuario hweller1 en HuggingFace bajo el identificador hweller1/wayfinder-qwen-35b-a3b, y esta ficha describe la version cuantizada en formato GGUF producida por mradermacher, un conocido creador de cuantizaciones estaticas para llama.cpp y derivados.
+Wayfinder-qwen-35b-a3b es un modelo de lenguaje de arquitectura Mixture of Experts (MoE) con 35.505.251.456 parámetros totales, segun los datos de safetensors del repositorio. El modelo original fue publicado por el usuario hweller1 en Hugging Face bajo el identificador hweller1/wayfinder-qwen-35b-a3b, y esta ficha describe la version cuantizada en formato GGUF producida por mradermacher, un conocido creador de cuantizaciones estaticas para llama.cpp y derivados.
 
 El repositorio que nos ocupa (mradermacher/wayfinder-qwen-35b-a3b-GGUF) contiene unicamente pesos cuantizados, no el modelo original. Segun la model card, se han generado las cuantizaciones x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. El repositorio ocupa 153,4 GB, lo que refleja el conjunto completo de ficheros GGUF para un modelo de 35.500 millones de parametros.
 
@@ -25,7 +25,7 @@ La relevancia de esta publicacion es practica: permite ejecutar un modelo MoE de
 
 No se dispone de informacion detallada sobre la arquitectura interna del modelo base. El nombre "qwen-35b-a3b" indica que deriva de la familia Qwen y que emplea una arquitectura Mixture of Experts con aproximadamente 35.000 millones de parametros totales y, presumiblemente, alrededor de 3.000 millones de parametros activos por token (convencion "a3b" habitual en modelos MoE tipo Qwen). Esta configuracion permite un coste de computo por token mucho menor que un modelo denso de 35B, lo que explica el interes en cuantizarlo para inferencia local.
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El proceso de cuantizacion documentado en la model card indica `convert_type: hf` y `quantize_version: 2`, lo que confirma que las cuantizaciones se generaron a partir de los pesos en formato HuggingFace del modelo original mediante la herramienta de cuantizacion de llama.cpp.
+No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO, ni sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El proceso de cuantizacion documentado en la model card indica `convert_type: hf` y `quantize_version: 2`, lo que confirma que las cuantizaciones se generaron a partir de los pesos en formato Hugging Face del modelo original mediante la herramienta de cuantizacion de llama.cpp.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento, la com
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles (no se especifican idiomas).
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el formato GGUF es compatible con los endpoints de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" sugiere que el formato GGUF es compatible con los endpoints de inferencia de Hugging Face.
 
 ## Casos de uso
 

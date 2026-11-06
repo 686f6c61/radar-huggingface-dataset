@@ -120,7 +120,7 @@ Frente a la revisión anterior de la misma familia, la 1017 mejora en todos los 
 - Repositorio GGUF relacionado del mismo autor: https://huggingface.co/smalinin/DeepSeek-V4.1-Flash-GGUF
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Kit de codificación de prompts `deepseek-recipe`: https://github.com/deepseek-ai/deepseek-recipe
 - Sitio oficial: https://www.deepseek.com/
 - Chat oficial: https://chat.deepseek.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PEDiT-100M es un repositorio de pesos publicado por el usuario AIT-FT en HuggingFace bajo licencia Apache 2.0. La model card asociada contiene unicamente la linea de licencia, sin descripcion, sin pipeline declarado, sin idiomas declarados y sin ningun detalle sobre arquitectura, datos de entrenamiento o evaluacion. El repositorio ocupa 0,4 GB y no registra descargas ni interacciones en el momento de la consulta.
+PEDiT-100M es un repositorio de pesos publicado por el usuario AIT-FT en Hugging Face bajo licencia Apache 2.0. La model card asociada contiene unicamente la linea de licencia, sin descripcion, sin pipeline declarado, sin idiomas declarados y sin ningun detalle sobre arquitectura, datos de entrenamiento o evaluacion. El repositorio ocupa 0,4 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 El identificador del modelo sugiere un tamano del orden de 100 millones de parametros, y el volumen del repositorio (0,4 GB) es compatible con pesos almacenados en precision fp32 para esa magnitud de parametros, pero se trata de una inferencia a partir del nombre y del tamano del fichero, no de un dato confirmado por el autor. No hay informacion publica que permita determinar la arquitectura, el tipo de tarea para la que fue entrenado ni su rendimiento.
 
@@ -90,6 +90,6 @@ No disponible. No es posible identificar la categoria del modelo (lenguaje, visi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIT-FT/PEDiT-100M
+- Modelo en Hugging Face: https://huggingface.co/AIT-FT/PEDiT-100M
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.
 - Los resultados de la busqueda web para el termino "AIT" corresponden a contenidos medicos sin relacion con el modelo (https://lemedecin.fr/medical/pathologies/accident-ischemique-transitoire.html, https://www.elsan.care/fr/pathologie-et-traitement/maladies-cardiovasculaires/ait-definition-causes-traitement, https://fr.wikipedia.org/wiki/Accident_isch%C3%A9mique_transitoire, https://www.passeportsante.net/fr/Maux/Problemes/Fiche.aspx?doc=accident-ischemique-transitoire-ait-symptomes-consequences, https://www.chu-lyon.fr/accident-ischemique-transitoire-ait) y se incluyen unicamente para dejar constancia de que la busqueda no aporto informacion util.

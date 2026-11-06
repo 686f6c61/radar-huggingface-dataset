@@ -93,7 +93,7 @@ El autor reporta únicamente una comparación agregada: sobre 500 preguntas de b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vinyteles/mobilerag-plus-assets
+- Repositorio Hugging Face: https://huggingface.co/vinyteles/mobilerag-plus-assets
 - Modelo de respuesta Energy-Mobile (LiteRT): https://huggingface.co/Fazzioni/Energy-Mobile
 - Embedder de recuperación (fine-tune): https://huggingface.co/UFGCEMIGONA/Qwen3-Embedding-0.6B-v2
 - Embedder base de recuperación: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eladeselasobenobadi/Human` es un fine-tuning del modelo base `EnlistedGhost/Llama-3.2-11B-Vision-Instruct-OLLAMA`, publicado en HuggingFace con licencia OpenRAIL. La información disponible en la model card es extremadamente escasa y no incluye especificaciones técnicas detalladas. El repositorio contiene un script de Python que utiliza Ollama para ejecutar un chatbot con una personalidad paranoide en sueco, lo que sugiere que el modelo está orientado a conversación con un prompt de sistema específico, aunque la etiqueta de pipeline indica `text-to-audio`, lo que resulta contradictorio con el contenido del script.
+El modelo `eladeselasobenobadi/Human` es un fine-tuning del modelo base `EnlistedGhost/Llama-3.2-11B-Vision-Instruct-OLLAMA`, publicado en Hugging Face con licencia OpenRAIL. La información disponible en la model card es extremadamente escasa y no incluye especificaciones técnicas detalladas. El repositorio contiene un script de Python que utiliza Ollama para ejecutar un chatbot con una personalidad paranoide en sueco, lo que sugiere que el modelo está orientado a conversación con un prompt de sistema específico, aunque la etiqueta de pipeline indica `text-to-audio`, lo que resulta contradictorio con el contenido del script.
 
 El modelo declara soporte para los idiomas inglés, turcomano y sueco, y referencia un dataset llamado `eddmpython/dartlab-data`. No se proporcionan métricas de evaluación, ni información sobre el proceso de entrenamiento, el número de parámetros o la arquitectura concreta. Dada la falta de datos verificables, esta ficha se limita a documentar lo que se puede extraer de la página del modelo y advierte de las inconsistencias encontradas.
 

@@ -75,6 +75,6 @@ No se dispone de información suficiente para una comparativa rigurosa. Los mode
 
 ## Enlaces
 
-- [HuggingFace - leonardocont/model_460225098_swin_t_base](https://huggingface.co/leonardocont/model_460225098_swin_t_base)
+- [Hugging Face - leonardocont/model_460225098_swin_t_base](https://huggingface.co/leonardocont/model_460225098_swin_t_base)
 - [GitHub - microsoft/Swin-Transformer (implementación oficial)](https://github.com/microsoft/Swin-Transformer)
 - [Documentación de Swin Transformer en Hugging Face](https://huggingface.co/docs/transformers/model_doc/swin)

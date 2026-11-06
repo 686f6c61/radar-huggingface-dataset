@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mamiyusufdemi/apex.flash.1.6` es un fine-tune del modelo base `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, desarrollado por el usuario mamiyusufdemi. Se trata de una adaptación del conocido Llama 3.1 8B Instruct, entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que permite un entrenamiento aproximadamente dos veces más rápido que el método convencional. El modelo está orientado a generación de texto conversacional y está etiquetado como compatible con text-generation-inference.
+El modelo `mamiyusufdemi/apex.flash.1.6` es un fine-tune del modelo base `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, desarrollado por el usuario mamiyusufdemi. Se trata de una adaptación del conocido Llama 3.1 8B Instruct, entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que permite un entrenamiento aproximadamente dos veces más rápido que el método convencional. El modelo está orientado a generación de texto conversacional y está etiquetado como compatible con text-generation-inference.
 
 La relevancia de este modelo radica en que parte de una base sólida como Llama 3.1 8B Instruct, que ya ofrece capacidades de razonamiento, generación de código y soporte multilingüe, aunque el fine-tune específico no documenta qué datos de entrenamiento se utilizaron ni qué mejoras concretas introduce. El repositorio no contiene pesos publicados (tamaño 0.0 GB) y no registra descargas ni valoraciones, lo que sugiere que se trata de un experimento o una publicación preliminar.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que parte de una base sólida como Llama 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura transformer decoder-only de Llama 3.1 8B Instruct, que emplea atención por ventanas deslizantes y normalización RMSNorm. El fine-tune fue realizado con la libreria Unsloth, que optimiza el entrenamiento mediante kernels de CUDA personalizados y reduccion de memoria, y con TRL de HuggingFace, que proporciona utilidades para fine-tuning con PEFT y RLHF. No se proporcionan detalles sobre el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas como DPO o RLHF. El modelo base fue entrenado con cuantizacion de 4 bits (bnb-4bit), pero no se indica si el fine-tune mantiene esa cuantizacion o si se publicaron pesos en precision completa.
+El modelo se basa en la arquitectura transformer decoder-only de Llama 3.1 8B Instruct, que emplea atención por ventanas deslizantes y normalización RMSNorm. El fine-tune fue realizado con la libreria Unsloth, que optimiza el entrenamiento mediante kernels de CUDA personalizados y reduccion de memoria, y con TRL de Hugging Face, que proporciona utilidades para fine-tuning con PEFT y RLHF. No se proporcionan detalles sobre el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas como DPO o RLHF. El modelo base fue entrenado con cuantizacion de 4 bits (bnb-4bit), pero no se indica si el fine-tune mantiene esa cuantizacion o si se publicaron pesos en precision completa.
 
 ## Capacidades
 
@@ -69,11 +69,11 @@ La comparativa se basa en el modelo base, ya que no hay datos especificos del fi
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar informacion falsa o inventada, especialmente en temas de actualidad o muy especificos.
 - Limitaciones de idioma: la model card solo indica ingles; el rendimiento en otros idiomas no esta garantizado.
 - Restricciones de licencia: la licencia apache-2.0 permite uso comercial, pero el modelo base Llama 3.1 tiene su propia licencia que puede imponer condiciones adicionales; se debe verificar la compatibilidad.
-- El repositorio no contiene pesos publicados (tamano 0.0 GB), por lo que el modelo no es directamente descargable desde HuggingFace en el momento de la consulta.
+- El repositorio no contiene pesos publicados (tamano 0.0 GB), por lo que el modelo no es directamente descargable desde Hugging Face en el momento de la consulta.
 - No se han realizado evaluaciones de seguridad o sesgo sobre este fine-tune especifico.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mamiyusufdemi/apex.flash.1.6
+- Hugging Face: https://huggingface.co/mamiyusufdemi/apex.flash.1.6
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit

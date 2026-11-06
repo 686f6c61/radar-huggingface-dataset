@@ -78,10 +78,10 @@ Selección de variante (WER medio de dev a 640 ms, FLEURS-vi dev + YODAS2-vi dev
 
 | Modelo | Arquitectura | Contexto / chunk | WER fleurs100_vi | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cabin-asr-vi-zipformer-streaming-r1 (este) | Zipformer2 transducer causal | 128 frames izq.; 640/320 ms | 9,48 | Apache-2.0 | HuggingFace, sherpa-onnx |
-| cabin-asr-vi-zipformer-offline-r2 | Zipformer2 transducer offline | no aplica (offline) | 7,44 | Apache-2.0 | HuggingFace |
-| sherpa-vi offline distribuido | Zipformer transducer offline | no aplica (offline) | 10,19 | Apache-2.0 | HuggingFace |
-| cabin-asr-vi-zipformer-offline-r3 | Zipformer2 transducer offline | no aplica (offline) | no disponible | Apache-2.0 | HuggingFace |
+| cabin-asr-vi-zipformer-streaming-r1 (este) | Zipformer2 transducer causal | 128 frames izq.; 640/320 ms | 9,48 | Apache-2.0 | Hugging Face, sherpa-onnx |
+| cabin-asr-vi-zipformer-offline-r2 | Zipformer2 transducer offline | no aplica (offline) | 7,44 | Apache-2.0 | Hugging Face |
+| sherpa-vi offline distribuido | Zipformer transducer offline | no aplica (offline) | 10,19 | Apache-2.0 | Hugging Face |
+| cabin-asr-vi-zipformer-offline-r3 | Zipformer2 transducer offline | no aplica (offline) | no disponible | Apache-2.0 | Hugging Face |
 
 La comparación principal es contra los modelos offline del mismo autor y contra el sherpa-vi distribuido: el streaming pierde entre 1,25 y 2,36 puntos de WER frente al offline r2 según el conjunto, y queda estadísticamente indistinguible del sherpa-vi offline en fleurs100_vi, cv13_vi_test200 y yodas2_vi_heldout_agree_clean (aunque pierde en caption_clean).
 
@@ -99,7 +99,7 @@ La comparación principal es contra los modelos offline del mismo autor y contra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-streaming-r1
+- Modelo en Hugging Face: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-streaming-r1
 - Modelo base offline: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r2
 - Modelo offline r3: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r3
 - Colección Cabin offline ASR: https://huggingface.co/collections/doanhlt/cabin-offline-asr-on-device-distilled-from-r13x-6ade0b05eb1f2ac4e49d7cf8

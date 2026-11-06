@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo comparable con otros como GPT-3 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kazuyasasaki/paper_010321503_few_shot_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/kazuyasasaki/paper_010321503_few_shot_multimodal
 - Paper de referencia sobre few-shot learning (GPT-3): https://arxiv.org/abs/2005.14165
 - Paper sobre aumento de prototipos multimodales (MPA): https://arxiv.org/abs/2602.10143
 - Artículo de OpenAI sobre GPT-3: https://openai.com/index/language-models-are-few-shot-learners/

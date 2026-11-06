@@ -89,7 +89,7 @@ La comparativa muestra que la version MLX pierde frente al GGUF equivalente en p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jclyons52/Qwen3.8-27B-UD-Q2_K_XL-MLX-imatrix-direct
+- Modelo en Hugging Face: https://huggingface.co/jclyons52/Qwen3.8-27B-UD-Q2_K_XL-MLX-imatrix-direct
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - GGUF de unsloth para Qwen3.8-27B: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

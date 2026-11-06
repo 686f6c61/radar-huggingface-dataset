@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks ni de fichas tecnicas comparables en la inf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lotus-1-GGUF | 34,7B totales / ~3B activos | 32 768 tokens (recomendado) | MIT | GGUF en HuggingFace |
+| Lotus-1-GGUF | 34,7B totales / ~3B activos | 32 768 tokens (recomendado) | MIT | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de fichas tecnicas comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yashsutorichat/Lotus-1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/yashsutorichat/Lotus-1-GGUF
 - Modelo base: https://huggingface.co/yashsutorichat/Lotus-1
 - Sutorichat: https://sutorichat.com
 - Presets de SillyTavern incluidos en el repositorio: `sillytavern/Lotus-1.context.json`, `sillytavern/Lotus-1.instruct.json`, `sillytavern/Lotus-1.textgen.json`

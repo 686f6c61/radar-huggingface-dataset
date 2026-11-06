@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ToyLLM es un proyecto educativo de código abierto, no un modelo de lenguaje preentrenado. Está diseñado para aprender a implementar grandes modelos de lenguaje desde cero, ofreciendo implementaciones de GPT-2 y técnicas relacionadas con la arquitectura transformer. El autor, rengeyouzhi, lo publica bajo licencia Apache 2.0, tanto en HuggingFace como en GitHub. Su relevancia radica en que proporciona una base práctica para estudiantes y desarrolladores que quieran comprender el funcionamiento interno de los LLM, aunque no ofrece pesos ni capacidades de inferencia listas para usar. En la información disponible no se especifican parámetros, tamaño, contexto ni arquitectura concreta más allá de la referencia a GPT-2.
+ToyLLM es un proyecto educativo de código abierto, no un modelo de lenguaje preentrenado. Está diseñado para aprender a implementar grandes modelos de lenguaje desde cero, ofreciendo implementaciones de GPT-2 y técnicas relacionadas con la arquitectura transformer. El autor, rengeyouzhi, lo publica bajo licencia Apache 2.0, tanto en Hugging Face como en GitHub. Su relevancia radica en que proporciona una base práctica para estudiantes y desarrolladores que quieran comprender el funcionamiento interno de los LLM, aunque no ofrece pesos ni capacidades de inferencia listas para usar. En la información disponible no se especifican parámetros, tamaño, contexto ni arquitectura concreta más allá de la referencia a GPT-2.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No disponible. ToyLLM no es un modelo comparable con alternativas como GPT-2, Ll
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rengeyouzhi/ToyLLM
+- Hugging Face: https://huggingface.co/rengeyouzhi/ToyLLM
 - GitHub (ai-glimpse/toyllm): https://github.com/ai-glimpse/toyllm
 - Página de documentación: https://ai-glimpse.github.io/toyllm/
 - Repositorio alternativo (henryzhuhr/toy-llm): https://github.com/henryzhuhr/toy-llm

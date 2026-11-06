@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-base-ramp25-... (este) | ~4B (3,97B) | no disponible | mejor pass@8 del run; metricas no publicadas | no disponible | HuggingFace (agurung) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (Qwen) |
+| cobalt-seeded-rl-base-ramp25-... (este) | ~4B (3,97B) | no disponible | mejor pass@8 del run; metricas no publicadas | no disponible | Hugging Face (agurung) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (Qwen) |
 | Otros modelos de codigo de ~3-4B (por ejemplo, variantes Qwen-Coder de 3B) | ~3-4B | no disponible | no disponible | no disponible | no disponible |
 
 Nota: no se dispone de datos de benchmarks en la informacion proporcionada, por lo que la comparacion se limita a parametros, formato y disponibilidad. No se comparan cifras de rendimiento.
@@ -95,7 +95,7 @@ Nota: no se dispone de datos de benchmarks en la informacion proporcionada, por 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-groot16
+- Hugging Face (modelo): https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-groot16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Weights & Biases: proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_n3nc_groot16` (URL no proporcionada)
 - Log de entrenamiento local (ruta citada por el autor, no accesible publicamente): `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_n3nc_groot16/openrlhf_train.log`

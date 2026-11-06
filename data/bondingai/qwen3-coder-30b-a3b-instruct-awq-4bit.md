@@ -81,7 +81,7 @@ La comparación con modelos de otros fabricantes no está disponible en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BondingAI/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/BondingAI/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE
 - Blog de Qwen3-Coder: https://qwenlm.github.io/blog/qwen3-coder/

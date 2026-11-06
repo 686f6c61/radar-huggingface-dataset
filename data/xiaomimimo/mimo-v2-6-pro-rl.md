@@ -93,9 +93,9 @@ Estimaciones derivadas del recuento de parametros; la model card no publica requ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento de referencia |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-RL | 1,02 B declarados / 524 B en safetensors, 42 B activos | 1M tokens | MIT | Pesos abiertos en HuggingFace | DeepSWE 71,9; Terminal Bench 2.1 89,9; CyberGym 94,0 |
-| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace | DeepSWE 67,9; Terminal Bench 2.1 87,6; CyberGym 95,1 |
-| MiMo-V2.5-Pro | no disponible | no disponible | no disponible | Pesos abiertos en HuggingFace | DeepSWE 19,0; Terminal Bench 2.1 65,2; CyberGym 40,0 |
+| MiMo-V2.6-Pro-RL | 1,02 B declarados / 524 B en safetensors, 42 B activos | 1M tokens | MIT | Pesos abiertos en Hugging Face | DeepSWE 71,9; Terminal Bench 2.1 89,9; CyberGym 94,0 |
+| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face | DeepSWE 67,9; Terminal Bench 2.1 87,6; CyberGym 95,1 |
+| MiMo-V2.5-Pro | no disponible | no disponible | no disponible | Pesos abiertos en Hugging Face | DeepSWE 19,0; Terminal Bench 2.1 65,2; CyberGym 40,0 |
 | Claude Opus 5 | no disponible | no disponible | Propietaria | API | DeepSWE 74,0; Terminal Bench 2.1 89,1; OSWorld 83,4 |
 | GPT-5.6 Sol | no disponible | no disponible | Propietaria | API | DeepSWE 73,0; Terminal Bench 2.1 88,8; OSWorld 83,0 |
 
@@ -116,7 +116,7 @@ No se dispone de datos comparativos de contexto, licencia o arquitectura de las 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Informe tecnico: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf
 - Blog: https://mimo.xiaomi.com/mimo-v2-6
 - Plataforma API de Xiaomi MiMo: https://platform.xiaomimimo.com

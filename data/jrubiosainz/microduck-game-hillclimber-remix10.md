@@ -74,10 +74,10 @@ El runner de la Arena cronometra la llegada al final del paso de física de 5 ms
 
 | Modelo | Parámetros | Contexto | Rendimiento (media tablero) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-hillclimber-remix10` (este) | no disponible | no aplica | 0,738 s | Apache-2.0 | HuggingFace, 18 descargas |
-| `HlibPlakhtii/microduck-hill-quicksilver-v3` (base) | no disponible | no aplica | 0,738 s | Apache-2.0 | HuggingFace |
-| `rumezhak/microduck-hill-remix-leader3` | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| `a1rb4Ck/microduck-hill-1m5` | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| `jrubiosainz/microduck-game-hillclimber-remix10` (este) | no disponible | no aplica | 0,738 s | Apache-2.0 | Hugging Face, 18 descargas |
+| `HlibPlakhtii/microduck-hill-quicksilver-v3` (base) | no disponible | no aplica | 0,738 s | Apache-2.0 | Hugging Face |
+| `rumezhak/microduck-hill-remix-leader3` | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| `a1rb4Ck/microduck-hill-1m5` | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a la estirpe directa del modelo, ya que no se dispone de datos de rendimiento de otras políticas de la misma categoría en la información proporcionada.
 
@@ -95,7 +95,7 @@ La comparativa se limita a la estirpe directa del modelo, ya que no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix10
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix10
 - Modelo base: https://huggingface.co/HlibPlakhtii/microduck-hill-quicksilver-v3/tree/65a137db5525b1c591450704241396e69368374d
 - Modelo del que deriva el base: https://huggingface.co/rumezhak/microduck-hill-remix-leader3/tree/cddaeebb6bcee5ef84729d9eb0838fc74097cf2c
 - Modelo original de la estirpe: https://huggingface.co/a1rb4Ck/microduck-hill-1m5

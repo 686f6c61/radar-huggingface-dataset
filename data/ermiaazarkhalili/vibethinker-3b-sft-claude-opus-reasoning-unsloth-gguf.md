@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
-- Repositorio HuggingFace de los pesos completos (safetensors): https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth
-- Modelo base en HuggingFace: https://huggingface.co/WeiboAI/VibeThinker-3B
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth-GGUF
+- Repositorio Hugging Face de los pesos completos (safetensors): https://huggingface.co/ermiaazarkhalili/VibeThinker-3B-SFT-Claude-Opus-Reasoning-Unsloth
+- Modelo base en Hugging Face: https://huggingface.co/WeiboAI/VibeThinker-3B
 - Informe técnico de VibeThinker-3B (arXiv): https://arxiv.org/html/2606.16140v1
 - Repositorio GitHub de VibeThinker: https://github.com/WeiboAI/VibeThinker

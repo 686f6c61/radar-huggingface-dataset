@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adapter LoRA denominado `aligntune-testrun-ORPO`, publicado por el usuario `ram-lexsi` en HuggingFace. Se trata de un experimento de validación de la librería AlignTune, un toolkit modular de alineación post-entrenamiento desarrollado por Lexsi Labs. El adapter se ha entrenado sobre el modelo base Qwen/Qwen2.5-0.5B, un transformer decoder-only de 0.5 mil millones de parámetros, utilizando el algoritmo ORPO (Odds Ratio Preference Optimization) con el backend TRL de HuggingFace.
+Este repositorio contiene un adapter LoRA denominado `aligntune-testrun-ORPO`, publicado por el usuario `ram-lexsi` en Hugging Face. Se trata de un experimento de validación de la librería AlignTune, un toolkit modular de alineación post-entrenamiento desarrollado por Lexsi Labs. El adapter se ha entrenado sobre el modelo base Qwen/Qwen2.5-0.5B, un transformer decoder-only de 0.5 mil millones de parámetros, utilizando el algoritmo ORPO (Odds Ratio Preference Optimization) con el backend TRL de Hugging Face.
 
 El propósito de este artefacto no es ofrecer un modelo listo para producción, sino demostrar el flujo de trabajo de AlignTune: cargar un modelo base, aplicar un algoritmo de optimización de preferencias y publicar el adapter resultante. Al ser un adapter LoRA, su tamaño es reducido y se integra mediante PEFT sobre el modelo base. La relevancia actual radica en que ejemplifica el uso de herramientas de alineación de código abierto sobre modelos pequeños, un área de interés creciente para equipos con recursos limitados.
 
@@ -21,7 +21,7 @@ El propósito de este artefacto no es ofrecer un modelo listo para producción, 
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Qwen/Qwen2.5-0.5B, un transformer causal con atención completa, perteneciente a la familia Qwen2.5. Sobre este modelo se ha aplicado un adapter LoRA, que introduce matrices de bajo rango en las capas de atención y feed-forward para adaptar el comportamiento sin modificar los pesos originales. El entrenamiento se ha realizado con el algoritmo ORPO, que combina la optimización de preferencias con la supervisión directa, evitando la necesidad de una fase separada de RLHF. El backend utilizado es TRL (Transformers Reinforcement Learning) de HuggingFace, y la librería AlignTune ha orquestado el proceso.
+El modelo base es Qwen/Qwen2.5-0.5B, un transformer causal con atención completa, perteneciente a la familia Qwen2.5. Sobre este modelo se ha aplicado un adapter LoRA, que introduce matrices de bajo rango en las capas de atención y feed-forward para adaptar el comportamiento sin modificar los pesos originales. El entrenamiento se ha realizado con el algoritmo ORPO, que combina la optimización de preferencias con la supervisión directa, evitando la necesidad de una fase separada de RLHF. El backend utilizado es TRL (Transformers Reinforcement Learning) de Hugging Face, y la librería AlignTune ha orquestado el proceso.
 
 No se proporcionan detalles sobre el dataset de entrenamiento, el número de pasos, la tasa de aprendizaje ni otros hiperparámetros. Al tratarse de un "testrun", es probable que se haya utilizado un conjunto de datos pequeño y representativo para validar el pipeline, más que para lograr un rendimiento óptimo.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-ORPO
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-ORPO
 - Sitio web de AlignTune: https://aligntune.lexsi.ai/
 - Repositorio GitHub de AlignTune: https://github.com/Lexsi-Labs/aligntune
 - Página de herramientas de Lexsi Labs: https://lexsi.ai/tools/aligntune

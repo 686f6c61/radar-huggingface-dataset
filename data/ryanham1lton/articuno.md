@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Articuno es un repositorio de modelo alojado en HuggingFace bajo el identificador Ryanham1lton/Articuno, publicado por el usuario Ryanham1lton. La model card asociada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia cc-by-4.0, sin descripcion del modelo, sin especificaciones de arquitectura, sin detalles de entrenamiento y sin ejemplos de uso.
+Articuno es un repositorio de modelo alojado en Hugging Face bajo el identificador Ryanham1lton/Articuno, publicado por el usuario Ryanham1lton. La model card asociada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia cc-by-4.0, sin descripcion del modelo, sin especificaciones de arquitectura, sin detalles de entrenamiento y sin ejemplos de uso.
 
-En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", con un tamano de 0.1 GB. Fue creado el 6 de octubre de 2026 y actualizado ese mismo dia con menos de dos minutos de diferencia, lo que apunta a una publicacion unica sin iteraciones posteriores documentadas. No se declara pipeline de HuggingFace, ni idiomas soportados, ni conjunto de datos de entrenamiento.
+En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", con un tamano de 0.1 GB. Fue creado el 6 de octubre de 2026 y actualizado ese mismo dia con menos de dos minutos de diferencia, lo que apunta a una publicacion unica sin iteraciones posteriores documentadas. No se declara pipeline de Hugging Face, ni idiomas soportados, ni conjunto de datos de entrenamiento.
 
 Por tanto, no es posible determinar a partir de la informacion disponible que problema resuelve el modelo, que arquitectura emplea, cuantos parametros tiene ni cual es su longitud de contexto. Esta ficha se limita a registrar los datos verificables y a marcar de forma explicita todo lo que no ha sido publicado, evitando cualquier extrapolacion.
 
@@ -84,5 +84,5 @@ No disponible. La ausencia de datos sobre parametros, contexto, idiomas y rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Articuno
+- Hugging Face: https://huggingface.co/Ryanham1lton/Articuno
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

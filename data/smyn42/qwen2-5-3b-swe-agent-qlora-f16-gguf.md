@@ -87,7 +87,7 @@ Los datos de contexto y parámetros de las alternativas provienen de su document
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sMyn42/Qwen2.5-3B-SWE-Agent-QLoRA-F16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sMyn42/Qwen2.5-3B-SWE-Agent-QLoRA-F16-GGUF
 - Adaptador original: https://huggingface.co/suhas9545/Qwen2.5-3B-SWE-Agent-QLoRA
 - Espacio de conversión gguf-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/suhas9545/Multi_Turn_SWE_dataset

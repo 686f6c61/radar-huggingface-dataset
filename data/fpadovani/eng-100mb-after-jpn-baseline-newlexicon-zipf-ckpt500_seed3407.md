@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune experimental de `fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407`, un modelo base de 124,7 millones de parámetros entrenado con 100 MB de datos de un lenguaje artificial con distribución zipf. El fine-tune se realizó con inglés después de haber entrenado previamente con japonés, como parte de una investigación sobre adquisición de lenguajes artificiales y transferencia entre idiomas. El modelo está etiquetado como GPT-2 y fue entrenado mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace.
+Este modelo es un fine-tune experimental de `fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407`, un modelo base de 124,7 millones de parámetros entrenado con 100 MB de datos de un lenguaje artificial con distribución zipf. El fine-tune se realizó con inglés después de haber entrenado previamente con japonés, como parte de una investigación sobre adquisición de lenguajes artificiales y transferencia entre idiomas. El modelo está etiquetado como GPT-2 y fue entrenado mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face.
 
 Su relevancia es principalmente académica: sirve para estudiar cómo un modelo pequeño aprende y transfiere conocimiento entre lenguajes artificiales y naturales. No está pensado para uso productivo, sino como herramienta de investigación en psicolingüística computacional y adquisición de lenguaje. El checkpoint corresponde al paso 500 de entrenamiento, con una semilla fija (3407) para reproducibilidad.
 
@@ -10,7 +10,7 @@ Su relevancia es principalmente académica: sirve para estudiar cómo un modelo 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (según tags de HuggingFace) |
+| Arquitectura | GPT-2 (según tags de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-zipf-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-jpn-baseline-100mb_seed3407
 - Repositorio de entrenamiento (TRL): https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/ssxuhmiq

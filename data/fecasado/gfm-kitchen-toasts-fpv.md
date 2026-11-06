@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gfm-kitchen-toasts-fpv` es una política robótica de manipulación entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. No es un modelo de lenguaje: se trata de un modelo de imitación (imitation learning) que aprende a ejecutar una tarea concreta de manipulación a partir de demostraciones teleoperadas. El nombre del repositorio y la etiqueta `gaze_flow_matching` indican que emplea un esquema de flow matching condicionado por la mirada (gaze) sobre observaciones de cámara en primera persona (FPV, first-person view). La tarea, según el dataset asociado `fecasado/toasts-to-plate-320x240`, consiste en trasladar tostadas a un plato en un entorno de cocina.
+`gfm-kitchen-toasts-fpv` es una política robótica de manipulación entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. No es un modelo de lenguaje: se trata de un modelo de imitación (imitation learning) que aprende a ejecutar una tarea concreta de manipulación a partir de demostraciones teleoperadas. El nombre del repositorio y la etiqueta `gaze_flow_matching` indican que emplea un esquema de flow matching condicionado por la mirada (gaze) sobre observaciones de cámara en primera persona (FPV, first-person view). La tarea, según el dataset asociado `fecasado/toasts-to-plate-320x240`, consiste en trasladar tostadas a un plato en un entorno de cocina.
 
 El modelo cuenta con 75.248.330 parámetros (dato real extraído de los pesos en safetensors) y un tamaño de repositorio de 0,3 GB, lo que lo sitúa en el rango de las políticas de imitación ligeras que pueden ejecutarse en una GPU de consumo. Está empaquetado en formato safetensors y distribuido bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones adicionales.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Contexto / observación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fecasado/gfm-kitchen-toasts-fpv | 75,2 M | Flow matching con gaze (LeRobot) | Imágenes 320x240 | Apache 2.0 | HuggingFace, 25 descargas |
+| fecasado/gfm-kitchen-toasts-fpv | 75,2 M | Flow matching con gaze (LeRobot) | Imágenes 320x240 | Apache 2.0 | Hugging Face, 25 descargas |
 | Políticas ACT de LeRobot (p. ej. entrenadas con `--policy.type=act`) | Variable, típicamente decenas de millones | Transformer de imitación (ACT) | Imágenes según dataset | Apache 2.0 (LeRobot) | Referencia en la documentación de LeRobot |
 | Políticas de difusión para manipulación (p. ej. Diffusion Policy) | Variable | Difusión para acciones | Imágenes según dataset | Según implementación | Repositorios de investigación |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-toasts-fpv
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-toasts-fpv
 - Dataset asociado: https://huggingface.co/datasets/fecasado/toasts-to-plate-320x240
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

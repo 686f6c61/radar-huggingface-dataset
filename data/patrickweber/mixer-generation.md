@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Generation es un prototipo de investigacion publicado en HuggingFace por el usuario patrickweber. Se trata de una implementacion propia de una arquitectura tipo Mixer orientada a tareas de generacion, distribuida como punto de partida experimental y no como modelo entrenado. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, segun indica el propio autor, y el repositorio no reclama ninguna puntuacion de benchmark.
+Mixer for Generation es un prototipo de investigacion publicado en Hugging Face por el usuario patrickweber. Se trata de una implementacion propia de una arquitectura tipo Mixer orientada a tareas de generacion, distribuida como punto de partida experimental y no como modelo entrenado. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, segun indica el propio autor, y el repositorio no reclama ninguna puntuacion de benchmark.
 
 El modelo es extremadamente pequeno: 16.576 parametros totales segun los datos de safetensors, lo que lo situa en el orden de los kilobytes en lugar de los gigabytes. La configuracion de arquitectura registrada emplea atencion dispersa (sparse attention), fusion mediante cross attention, activacion gelu y normalizacion instancenorm, con un tamano etiquetado como "tiny". No se especifica longitud de contexto ni vocabulario.
 
@@ -47,7 +47,7 @@ No se ha publicado informacion sobre volumen de tokens de entrenamiento, composi
 
 - Validacion de pipelines de entrenamiento: el modelo permite ejecutar un ciclo completo de entrenamiento en segundos y comprobar que el guardado de checkpoints, el logging y la reanudacion funcionan antes de escalar a modelos de mayor tamano.
 - Pruebas de humo en integraciones de infraestructura: al ocupar menos de 100 KB en disco, se puede desplegar en cualquier entorno (contenedor, CI, nodo de pruebas) para verificar que el servicio de inferencia arranca y responde correctamente.
-- Docencia y formacion: sirve para explicar de forma tangible como se estructura un repositorio de modelo en HuggingFace (`config.json`, `training_args.json`, `model.safetensors`) sin la complejidad de un transformer de miles de millones de parametros.
+- Docencia y formacion: sirve para explicar de forma tangible como se estructura un repositorio de modelo en Hugging Face (`config.json`, `training_args.json`, `model.safetensors`) sin la complejidad de un transformer de miles de millones de parametros.
 - Investigacion sobre arquitecturas Mixer: la combinacion de atencion dispersa, cross attention, gelu e instancenorm constituye una base editable para experimentar con variantes de mezcla de tokens y comparar contra baselines de igual capacidad.
 - Desarrollo de harness de evaluacion: permite probar el codigo de evaluacion, el calculo de metricas y el reporte multi-semilla con un coste computacional practicamente nulo antes de aplicarlo a modelos reales.
 - Pruebas de conversion de formatos: el checkpoint safetensors puede usarse para validar scripts de conversion a otros formatos de pesos (GGUF u otros) y detectar problemas de mapeo de nombres de tensores sin gastar GPU.
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - El checkpoint no ha sido entrenado. Las salidas no tienen significado linguistico ni valor predictivo; se trata de una inicializacion para pruebas de humo.
 - El autor indica que el modelo no ha sido auditado en robustez, equidad ni transferencia de dominio.
 - No se documenta tokenizer, vocabulario ni longitud de contexto, por lo que no esta claro como alimentar el modelo con texto real sin definir previamente ese componente.
-- Al ser una implementacion personalizada, no carga con las APIs automaticas estandar de HuggingFace sin un adaptador explicito; esto rompe la compatibilidad directa con buena parte del ecosistema.
+- Al ser una implementacion personalizada, no carga con las APIs automaticas estandar de Hugging Face sin un adaptador explicito; esto rompe la compatibilidad directa con buena parte del ecosistema.
 - No hay informacion sobre sesgos, riesgo de alucinacion o comportamiento multilingue, ya que no existe comportamiento aprendido que evaluar.
 - La licencia apache-2.0 permite uso comercial del artefacto, pero el propio autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usa con datasets externos.
 - No apto para produccion: cualquier despliegue real requeriria entrenamiento previo, evaluacion en un conjunto retenido especifico de la tarea y comparacion contra un baseline de capacidad equivalente.
@@ -82,5 +82,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patrickweber/mixer-generation
+- Hugging Face: https://huggingface.co/patrickweber/mixer-generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web realizada.

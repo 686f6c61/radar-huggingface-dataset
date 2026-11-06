@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8 es la versión cuantizada en FP8 del modelo Qwen3.8-27B, un modelo de lenguaje causal con codificador de visión desarrollado por Qwen. Este modelo denso de 27B parámetros es la generación más reciente de la familia Qwen open-source, diseñado para tareas de codificación, trabajo profesional, investigación y tareas agénticas de horizonte largo. El repositorio de iceDonkey en HuggingFace contiene los pesos cuantizados en FP8 con bloque de tamaño 128, compatibles con HuggingFace Transformers, vLLM, SGLang y TokenSpeed.
+Qwen3.8-27B-FP8 es la versión cuantizada en FP8 del modelo Qwen3.8-27B, un modelo de lenguaje causal con codificador de visión desarrollado por Qwen. Este modelo denso de 27B parámetros es la generación más reciente de la familia Qwen open-source, diseñado para tareas de codificación, trabajo profesional, investigación y tareas agénticas de horizonte largo. El repositorio de iceDonkey en Hugging Face contiene los pesos cuantizados en FP8 con bloque de tamaño 128, compatibles con Hugging Face Transformers, vLLM, SGLang y TokenSpeed.
 
 El modelo es un vision-language model nativo que comprende imágenes y vídeos, con control flexible del modo de razonamiento. Soporta una longitud de contexto nativa de 262.144 tokens, extensible hasta 1.000.000. Su arquitectura combina Gated DeltaNet (atención lineal) con Gated Attention, y ha sido entrenado con Multi-Token Prediction. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
@@ -56,7 +56,7 @@ La model card incluye una tabla de benchmarks comparativa, pero la información 
 - VRAM estimada para inferencia: el repositorio pesa 30,9 GB en FP8, por lo que se necesitan al menos 32 GB de VRAM para cargar el modelo completo.
 - GPUs recomendadas: NVIDIA A100 (40/80 GB), H100, RTX 4090 (24 GB, no suficiente para FP8 completo), o GPUs AMD Radeon con soporte ROCm.
 - Compatible con consumer GPUs de gama alta con 24 GB si se usa cuantización adicional (por ejemplo, GGUF de 4 bits), aunque no se proporcionan pesos GGUF en este repositorio.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, SGLang, TokenSpeed, LM Studio, Lemonade.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang, TokenSpeed, LM Studio, Lemonade.
 - AMD Ryzen AI Max Agentic PCs y GPUs Radeon tienen soporte day-0 según el blog de AMD.
 - Jetson AI Lab ofrece soporte para este modelo en dispositivos Jetson.
 
@@ -75,7 +75,7 @@ La model card menciona comparaciones con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iceDonkey/Qwen3.8-27B-FP8
+- Repositorio Hugging Face: https://huggingface.co/iceDonkey/Qwen3.8-27B-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre soporte: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Página de benchmarks y specs: https://aireleasetracker.com/model/qwen/qwen3.8-27b

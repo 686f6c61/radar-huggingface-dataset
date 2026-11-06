@@ -30,7 +30,7 @@ No se dispone de información sobre el volumen de tokens de entrenamiento, la co
 ## Capacidades
 
 - Generación de texto y razonamiento con control de profundidad mediante `reasoning_effort` (low, high, max; por defecto max).
-- Entrada multimodal image-text-to-text (pipeline declarado en HuggingFace).
+- Entrada multimodal image-text-to-text (pipeline declarado en Hugging Face).
 - Tool calling / function calling, evaluado por el autor en 20 escenarios en japonés e inglés con 100 % de acierto.
 - Conversación multi-turno (etiqueta conversational).
 - Capacidades multilingües: no documentadas formalmente; la evaluación del autor cubre japonés e inglés.
@@ -93,7 +93,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ToPo-ToPo/GLM-5.3-Flash-mlx-3bit-e3o8
+- Repositorio Hugging Face: https://huggingface.co/ToPo-ToPo/GLM-5.3-Flash-mlx-3bit-e3o8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Librería mlx-vlm: no disponible enlace directo en la información proporcionada
 - Paper, blog o demo: no disponible

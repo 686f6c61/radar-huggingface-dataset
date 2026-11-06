@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `moneykoikoi/gemma-4-E4B-it-100B-spectral-fused-Q4_K_M` es una publicación alojada en HuggingFace por el usuario moneykoikoi. Por su denominación, parece tratarse de una cuantización en formato GGUF (sufijo `Q4_K_M`) de un supuesto modelo de la familia Gemma 4 con variante `E4B` e instrucción (`it`), sobre el que se habría aplicado algún tipo de proceso denominado "spectral-fused" y asociado a un volumen de "100B". No obstante, la model card publicada no contiene descripción técnica, documentación de arquitectura, datos de entrenamiento ni instrucciones de uso: únicamente incluye la declaración de licencia Apache 2.0.
+El modelo `moneykoikoi/gemma-4-E4B-it-100B-spectral-fused-Q4_K_M` es una publicación alojada en Hugging Face por el usuario moneykoikoi. Por su denominación, parece tratarse de una cuantización en formato GGUF (sufijo `Q4_K_M`) de un supuesto modelo de la familia Gemma 4 con variante `E4B` e instrucción (`it`), sobre el que se habría aplicado algún tipo de proceso denominado "spectral-fused" y asociado a un volumen de "100B". No obstante, la model card publicada no contiene descripción técnica, documentación de arquitectura, datos de entrenamiento ni instrucciones de uso: únicamente incluye la declaración de licencia Apache 2.0.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: se trata de un artefacto sin documentación verificable, sin descargas ni interacciones registradas en el momento de la consulta y sin pipeline declarado. Cualquier evaluación de su calidad, comportamiento o idoneidad para producción resulta imposible con la información disponible, y se recomienda tratar los datos que siguen como "no disponibles" salvo donde la propia nomenclatura del repositorio permita una inferencia razonable.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos sin documentación técnica, ben
 - Pruebas de compatibilidad con runtimes GGUF: si el artefacto es efectivamente un GGUF, podría utilizarse para verificar la carga y ejecución en llama.cpp u otros motores compatibles, sin garantías de calidad de salida.
 - Reproducción de experimentos de cuantización: útil para investigadores que quieran comparar el comportamiento de una cuantización Q4_K_M frente al modelo original, previa verificación de que el modelo base existe y es accesible.
 - Desarrollo de pipelines de evaluación: podría servir como caso de prueba para herramientas de evaluación automatizada de modelos, dado que carece de documentación y permite probar la robustez de dichos pipelines ante artefactos incompletos.
-- Auditoría de licencias y procedencia: el repositorio puede utilizarse como ejemplo en estudios sobre trazabilidad de modelos publicados en HuggingFace con documentación mínima.
+- Auditoría de licencias y procedencia: el repositorio puede utilizarse como ejemplo en estudios sobre trazabilidad de modelos publicados en Hugging Face con documentación mínima.
 - Docencia sobre buenas prácticas de publicación: útil como caso negativo para ilustrar qué información debería incluir una model card completa (arquitectura, datos, benchmarks, limitaciones).
 
 En ningún caso se recomienda su uso en producción, atención al cliente, generación de código o cualquier aplicación con requisitos de calidad, sin una evaluación previa exhaustiva.
@@ -90,5 +90,5 @@ No se identifican en la información proporcionada modelos comparables de la mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moneykoikoi/gemma-4-E4B-it-100B-spectral-fused-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/moneykoikoi/gemma-4-E4B-it-100B-spectral-fused-Q4_K_M
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

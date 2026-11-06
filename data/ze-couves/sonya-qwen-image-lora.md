@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sonya-qwen-image-lora es un adaptador LoRA de identidad entrenado sobre el modelo base Qwen/Qwen-Image, un modelo de difusion texto-a-imagen desarrollado por Alibaba Qwen. El adaptador lo publica el usuario ze-couves en HuggingFace y su proposito es fijar la identidad visual de un sujeto concreto (descrito en la model card como "a young woman") para que el modelo base genere imagenes consistentes de esa misma persona a partir de texto. No es un modelo autonomo: requiere cargarse junto a Qwen-Image para funcionar.
+Sonya-qwen-image-lora es un adaptador LoRA de identidad entrenado sobre el modelo base Qwen/Qwen-Image, un modelo de difusion texto-a-imagen desarrollado por Alibaba Qwen. El adaptador lo publica el usuario ze-couves en Hugging Face y su proposito es fijar la identidad visual de un sujeto concreto (descrito en la model card como "a young woman") para que el modelo base genere imagenes consistentes de esa misma persona a partir de texto. No es un modelo autonomo: requiere cargarse junto a Qwen-Image para funcionar.
 
 El entrenamiento se realizo con la herramienta `qwen/qwen-image-lora-trainer` alojada en Replicate, con 2000 pasos, rank 32, learning rate 0.0005 y un dataset de 60 imagenes. Posteriormente el adaptador se convirtio al formato de Pruna. La model card indica explicitamente que no se usa palabra de activacion (trigger word): la identidad se invoca mediante el prompt generico "a young woman".
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ze-couves/sonya-qwen-image-lora | LoRA de identidad sobre Qwen-Image | no disponible (repo de 0.6 GB) | no aplica | other | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image | Modelo base de difusion texto-a-imagen | no disponible en la informacion | no aplica | no disponible en la informacion | HuggingFace |
+| ze-couves/sonya-qwen-image-lora | LoRA de identidad sobre Qwen-Image | no disponible (repo de 0.6 GB) | no aplica | other | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image | Modelo base de difusion texto-a-imagen | no disponible en la informacion | no aplica | no disponible en la informacion | Hugging Face |
 | Otros LoRA de identidad sobre Qwen-Image | LoRA de identidad | no disponible | no aplica | variable | no disponible en la informacion |
 
 No se dispone de datos de benchmarks ni de alternativas comparables documentadas en la informacion proporcionada, por lo que la comparativa se limita a la relacion con el modelo base.
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de alternativas comparables documentadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ze-couves/sonya-qwen-image-lora
+- Hugging Face: https://huggingface.co/ze-couves/sonya-qwen-image-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image
 - Herramienta de entrenamiento citada: `qwen/qwen-image-lora-trainer` en Replicate (no se proporciona URL directa en la informacion disponible)
 - Formato de conversion citado: Pruna (no se proporciona URL directa en la informacion disponible)

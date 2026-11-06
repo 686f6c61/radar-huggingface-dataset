@@ -28,7 +28,7 @@ No se han publicado detalles sobre el dataset de entrenamiento, el número de im
 ## Capacidades
 
 - Generación de imágenes fieles a un sujeto específico (el token `paco`) en múltiples estilos y contextos, como se muestra en los ejemplos del repositorio (golden retriever astronauta, retrato de marinero, escarabajo mecánico).
-- Integración nativa con el ecosistema `diffusers` de HuggingFace mediante `Krea2Pipeline` y `load_lora_weights`.
+- Integración nativa con el ecosistema `diffusers` de Hugging Face mediante `Krea2Pipeline` y `load_lora_weights`.
 - Compatibilidad con Krea 2 Turbo para generación rápida en 8 pasos de inferencia.
 - Soporte de prompts complejos que combinan el sujeto con descripciones de estilo, iluminación y composición.
 - No se documentan capacidades de visión, audio, tool calling ni agentes; es un modelo puramente de texto a imagen.

@@ -72,7 +72,7 @@ No se dispone de datos comparativos concretos. Sin embargo, existen otros modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-9k_10k_11k_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-9k_10k_11k_merge
 - Paper relacionado (Alignment Pretraining): https://arxiv.org/abs/2203.05482 (referencia al método linear, no al modelo específico)
 - Modelo similar de la serie: https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg
 - Modelo similar de la serie: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg

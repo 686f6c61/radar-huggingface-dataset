@@ -52,7 +52,7 @@ No se han publicado resultados cuantitativos de benchmarks en la información di
 
 - VRAM estimada: para un modelo de 1.5B en FP16 se requieren aproximadamente 3 GB de VRAM (pesos + activaciones). Con cuantización de 8 bits se puede reducir a ~2 GB, y en 4 bits a ~1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1660, RTX 2060, RTX 3060, RTX 4060, M1/M2/M3 de Apple). En GPUs de 8 GB o más se puede ejecutar cómodamente.
-- Despliegue: se puede servir con frameworks como llama.cpp (formato GGUF), Ollama, vLLM (si se convierte a safetensors), o directamente con la implementación de HuggingFace Transformers si se suben los pesos.
+- Despliegue: se puede servir con frameworks como llama.cpp (formato GGUF), Ollama, vLLM (si se convierte a safetensors), o directamente con la implementación de Hugging Face Transformers si se suben los pesos.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 1.5B, en una GPU de consumo moderna se espera una velocidad de generación de 20-50 tokens por segundo, dependiendo de la cuantización y la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ Sin datos de benchmark de SI-LM, no es posible comparar rendimiento real. La lic
 
 - El modelo no supera a GPT-4 en conocimiento general, según el propio autor.
 - El entrenamiento se realizó en una sola cuenta de Kaggle, con riesgo de fallo del punto único, aunque se mitiga con guardados intermedios.
-- El uso de herramientas se entrenó con datos estáticos, por lo que no tiene grounding en tiempo real; la conexión al web se hace externamente mediante el Space de HuggingFace.
+- El uso de herramientas se entrenó con datos estáticos, por lo que no tiene grounding en tiempo real; la conexión al web se hace externamente mediante el Space de Hugging Face.
 - No se especifica la licencia, por lo que no se puede garantizar el uso comercial.
 - No hay información sobre sesgos o alucinaciones, aunque al ser un modelo pequeño es probable que tenga tasas de alucinación elevadas en dominios no cubiertos.
 - La longitud de contexto no se conoce, lo que limita aplicaciones de documentos largos.
@@ -80,5 +80,5 @@ Sin datos de benchmark de SI-LM, no es posible comparar rendimiento real. La lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sumitv461/si-lm-code
+- Hugging Face: https://huggingface.co/sumitv461/si-lm-code
 - (No se encontraron otros enlaces oficiales: paper, blog, repo o demo)

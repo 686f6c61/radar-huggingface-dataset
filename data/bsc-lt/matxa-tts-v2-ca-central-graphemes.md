@@ -19,7 +19,7 @@ Su relevancia práctica es doble: por un lado cubre una lengua con poca cobertur
 | Idiomas soportados | Catalan; el ajuste final apunta al catalán central. Preentrenamiento con cinco variedades: balear, central, septentrional, noroccidental y valenciano |
 | Licencia | apache-2.0 |
 | Formato de pesos | PyTorch (checkpoint) y ONNX |
-| Tarea | Text-to-speech (generación de características acústicas); pipeline de HuggingFace no declarado |
+| Tarea | Text-to-speech (generación de características acústicas); pipeline de Hugging Face no declarado |
 | Entrada | Texto en grafemas catalanes (los números deben normalizarse antes) |
 | Salida | Mel-espectrograma; requiere vocoder externo para obtener audio |
 | Vocoders compatibles | alVoCat (projecte-aina/alvocat-vocos-22khz), Wavenext (BSC-LT/wavenext-mel) |
@@ -105,7 +105,7 @@ Nota: alVoCat y Wavenext no son alternativas a este modelo, sino componentes com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BSC-LT/matxa-tts-v2-ca-central-graphemes
+- Modelo en Hugging Face: https://huggingface.co/BSC-LT/matxa-tts-v2-ca-central-graphemes
 - Repositorio de código (rama v2-graphemes): https://github.com/langtech-bsc/Matcha-TTS/tree/v2-graphemes
 - Repositorio original Matcha-TTS: https://github.com/shivammehta25/Matcha-TTS
 - Cuaderno de Colab (ONNX + alVoCat): https://colab.research.google.com/drive/14JzJHfFiEBwp1VwH4ZCuHlNSy2YgdPve?usp=sharing

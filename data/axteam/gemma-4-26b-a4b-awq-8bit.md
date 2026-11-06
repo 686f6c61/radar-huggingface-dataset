@@ -76,8 +76,8 @@ Además, se midió perplejidad frente al BF16 original sobre WikiText-2 (inglés
 
 | Modelo | Parámetros | Contexto | Rendimiento (media benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-26B-A4B-AWQ-8bit (este repo) | 8.593.213.462 en safetensors; base 26B-A4B MoE | no disponible | 72,51 | Apache-2.0 | HuggingFace, vLLM |
-| google/gemma-4-26B-A4B (BF16) | 26B-A4B MoE | no disponible | 72,48 | Gemma 4 / Apache-2.0 | HuggingFace |
+| gemma-4-26B-A4B-AWQ-8bit (este repo) | 8.593.213.462 en safetensors; base 26B-A4B MoE | no disponible | 72,51 | Apache-2.0 | Hugging Face, vLLM |
+| google/gemma-4-26B-A4B (BF16) | 26B-A4B MoE | no disponible | 72,48 | Gemma 4 / Apache-2.0 | Hugging Face |
 | FP8-dynamic (misma familia) | no disponible | no disponible | 72,38 | no disponible | no disponible |
 | AWQ-4bit (misma familia) | no disponible | no disponible | 71,64 | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ Además, se midió perplejidad frente al BF16 original sobre WikiText-2 (inglés
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-AWQ-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

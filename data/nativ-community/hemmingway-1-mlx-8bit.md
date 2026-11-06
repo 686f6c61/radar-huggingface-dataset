@@ -70,8 +70,8 @@ La informacion disponible solo permite comparar esta conversion con su modelo de
 
 | Modelo | Parametros | Contexto | Precision | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nativ-community/Hemmingway-1-MLX-8bit | 26,9 B | No disponible | 8 bits | safetensors MLX | Apache 2.0 | HuggingFace, 0 descargas |
-| Altworld/Hemmingway-1 (modelo base) | No disponible | No disponible | No disponible | No disponible | Apache 2.0 (heredada) | HuggingFace |
+| nativ-community/Hemmingway-1-MLX-8bit | 26,9 B | No disponible | 8 bits | safetensors MLX | Apache 2.0 | Hugging Face, 0 descargas |
+| Altworld/Hemmingway-1 (modelo base) | No disponible | No disponible | No disponible | No disponible | Apache 2.0 (heredada) | Hugging Face |
 | Alternativas de ~27 B comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ La informacion disponible solo permite comparar esta conversion con su modelo de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/Hemmingway-1-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/Hemmingway-1-MLX-8bit
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Herramienta de conversion mlx-vlm, referenciada en la model card: https://github.com/Blaizzy/mlx-vlm
 - Resultados de busqueda web: las consultas realizadas han devuelto unicamente paginas de empresas y marcas ajenas al modelo (agencias de viaje, radiadores, ropa comercial, un restaurante y una sociedad de maîtrise d'oeuvre). No se ha encontrado ningun paper, blog, repositorio ni demo relacionado con Hemmingway-1.

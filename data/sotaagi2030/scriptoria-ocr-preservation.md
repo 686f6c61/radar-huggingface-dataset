@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Scriptoria OCR Preservation es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 el 13 de octubre de 2026, con un tamano de repositorio de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta. El unico tag declarado es `pytorch`. No hay pipeline de inferencia definido, ni licencia, ni idiomas declarados, ni pesos publicados.
+Scriptoria OCR Preservation es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 el 13 de octubre de 2026, con un tamano de repositorio de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta. El unico tag declarado es `pytorch`. No hay pipeline de inferencia definido, ni licencia, ni idiomas declarados, ni pesos publicados.
 
 La model card no describe un modelo: contiene exclusivamente una tabla de seleccion de perfiles (folio-2, quill-7, atlas-4) con penalizaciones, tiempos de procesamiento y marcas de certificacion, junto a una tabla de "evidencia de material" con recuentos de errores de caracter y de maquetacion para tres tipos de documento (ledger, map, postcard). Los terminos "OCR ABI scribe-abi-4" y "certification cutoff" apuntan a un formato de resultados de evaluacion o de seleccion interna de configuracion, no a una ficha tecnica de modelo.
 
@@ -86,7 +86,7 @@ No es posible establecer una comparativa con datos verificados: de Scriptoria OC
 | Scriptoria OCR Preservation | no disponible | no disponible | repositorio de 0.0 GB, sin pesos |
 | Tesseract | OCR clasico con LSTM | Apache-2.0 | repositorio y binarios publicos ampliamente distribuidos |
 | PaddleOCR | deteccion + reconocimiento + analisis de maquetacion | Apache-2.0 | pesos publicados y toolkit mantenido |
-| TrOCR | transformer encoder-decoder para OCR | verificar en su ficha | pesos publicados en HuggingFace |
+| TrOCR | transformer encoder-decoder para OCR | verificar en su ficha | pesos publicados en Hugging Face |
 | docTR / Surya | pipelines OCR de documentos | verificar en cada proyecto | pesos publicados, uso comercial condicionado en algunos casos |
 
 No se dispone de datos de parametros, contexto ni rendimiento comparables de este modelo, por lo que la tabla anterior sirve unicamente como lista de candidatos alternativos, no como comparacion cuantitativa.
@@ -105,7 +105,7 @@ No se dispone de datos de parametros, contexto ni rendimiento comparables de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Scriptoria-OCR-Preservation
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Scriptoria-OCR-Preservation
 - Unico resultado de busqueda web devuelto: indice de paquetes de piwheels, https://www.piwheels.org/simple/ (no guarda relacion con el modelo; se incluye por completitud)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

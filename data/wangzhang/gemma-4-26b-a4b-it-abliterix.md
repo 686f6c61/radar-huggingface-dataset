@@ -78,7 +78,7 @@ La comparativa se limita al modelo original y a la referencia interna de gpt-oss
 
 - El modelo ha sido deliberadamente descensurado: puede generar contenido inapropiado, ofensivo o peligroso sin filtros. Su uso en producción conlleva riesgos legales y éticos significativos.
 - La evaluación del autor utiliza un dataset privado de 100 prompts; los resultados pueden no generalizar a otros conjuntos de solicitudes o idiomas.
-- El autor advierte explícitamente que muchos modelos abliterated en HuggingFace reportan métricas engañosas debido a longitudes de generación insuficientes. Este modelo usa 200 tokens de generación en su evaluación para capturar los rechazos retardados.
+- El autor advierte explícitamente que muchos modelos abliterated en Hugging Face reportan métricas engañosas debido a longitudes de generación insuficientes. Este modelo usa 200 tokens de generación en su evaluación para capturar los rechazos retardados.
 - La divergencia KL de 0,0005 indica una alteración mínima, pero no garantiza que el comportamiento en tareas específicas sea idéntico al modelo original.
 - No se han publicado benchmarks de rendimiento estándar (MMLU, HumanEval, etc.), por lo que se desconoce si la ablación ha degradado capacidades en tareas de razonamiento, código o matemáticas.
 - El modelo mantiene la arquitectura de doble normalización y PLE, lo que dificulta cualquier ajuste posterior con LoRA o métodos basados en hooks.
@@ -86,7 +86,7 @@ La comparativa se limita al modelo original y a la referencia interna de gpt-oss
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/gemma-4-26B-A4B-it-abliterix
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/gemma-4-26B-A4B-it-abliterix
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Repositorio de Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Documentación de Gemma 4 en Google Cloud: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it

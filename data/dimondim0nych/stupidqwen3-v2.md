@@ -82,6 +82,6 @@ Frente a su modelo base, stupidqwen3-V2 ofrece un tamaño en disco entre 5 y 15 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimondim0nych/stupidqwen3-V2
+- Modelo en Hugging Face: https://huggingface.co/dimondim0nych/stupidqwen3-V2
 - Modelo base (Qwen3-0.6B): https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LiLo-VLA interaction policy es un checkpoint de vision-language-action (VLA) publicado por el usuario yygx en HuggingFace. Se trata de la política de habilidades atómicas que utiliza el sistema LiLo-VLA (Compositional Long-Horizon Manipulation via Linked Object-Centric Policies), concretamente el módulo de interacción M_int: dado un fotograma de cámara de muñeca, propiocepción relativa al objeto y una instrucción de habilidad, emite un chunk de 8 pasos de acción de 7 grados de libertad.
+LiLo-VLA interaction policy es un checkpoint de vision-language-action (VLA) publicado por el usuario yygx en Hugging Face. Se trata de la política de habilidades atómicas que utiliza el sistema LiLo-VLA (Compositional Long-Horizon Manipulation via Linked Object-Centric Policies), concretamente el módulo de interacción M_int: dado un fotograma de cámara de muñeca, propiocepción relativa al objeto y una instrucción de habilidad, emite un chunk de 8 pasos de acción de 7 grados de libertad.
 
 El modelo parte del backbone OpenVLA-OFT de 7B al que se le añade un adaptador LoRA de rango 32 y una cabeza de acción por regresión L1. El repositorio ocupa 17,1 GB y declara 7.541.237.184 parámetros reales según los pesos safetensors. Se distribuye bajo licencia MIT y se apoya en la librería transformers con código personalizado.
 
@@ -77,7 +77,7 @@ La evaluación del benchmark no está sembrada (unseeded), por lo que el Success
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| LiLo-VLA interaction policy (este checkpoint) | 7,54B | no disponible | MIT | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | LIBERO-Long++: 80,0% SR y 89,6% AP |
+| LiLo-VLA interaction policy (este checkpoint) | 7,54B | no disponible | MIT | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | LIBERO-Long++: 80,0% SR y 89,6% AP |
 | OpenVLA-OFT 7B (backbone) | 7B | no disponible | MIT, según la model card de este checkpoint | Repositorio `moojink/openvla-oft` en GitHub | no disponible en la información proporcionada |
 | OpenVLA 7B | 7B | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
@@ -99,7 +99,7 @@ No se dispone de datos comparativos adicionales de otros modelos de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yygx/lilo-vla-openvla-oft
+- Modelo en Hugging Face: https://huggingface.co/yygx/lilo-vla-openvla-oft
 - Dataset de habilidades atómicas: https://huggingface.co/datasets/yygx/lilo-vla-atomic-skills-rlds
 - Repositorio de código de LiLo-VLA: https://github.com/YY-GX/LiLo-VLA
 - OpenVLA-OFT (modelo base): https://github.com/moojink/openvla-oft

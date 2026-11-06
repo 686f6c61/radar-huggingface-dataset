@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheNCBoogeyman_245e_2940s es un repositorio de modelo alojado en HuggingFace por el usuario Homiebear. La model card asociada esta practicamente vacia: el unico contenido es la declaracion de licencia `openrail`, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB (aproximadamente 100 MB), lo que sugiere pesos de tamano reducido, aunque no es posible confirmar el tipo de artefacto (pesos completos, cuantizacion o meros ficheros auxiliares) con la informacion disponible.
+TheNCBoogeyman_245e_2940s es un repositorio de modelo alojado en Hugging Face por el usuario Homiebear. La model card asociada esta practicamente vacia: el unico contenido es la declaracion de licencia `openrail`, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB (aproximadamente 100 MB), lo que sugiere pesos de tamano reducido, aunque no es posible confirmar el tipo de artefacto (pesos completos, cuantizacion o meros ficheros auxiliares) con la informacion disponible.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 "likes", y no tiene pipeline declarado en la plataforma. No se ha publicado informacion sobre parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento. Cualquier evaluacion tecnica seria del modelo requiere inspeccionar directamente los ficheros del repositorio y ejecutar pruebas propias.
 
@@ -85,7 +85,7 @@ No disponible. Al no conocerse la arquitectura, el tamano en parametros, la tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/TheNCBoogeyman_245e_2940s
+- Hugging Face: https://huggingface.co/Homiebear/TheNCBoogeyman_245e_2940s
 - Paper, blog o repositorio de codigo: no disponible.
 - Demos: no disponible.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo, al autor o a su contexto tecnico. Los resultados devueltos por el buscador corresponden a directorios de escorts en Paris y no guardan relacion alguna con este modelo; se descartan por no ser material util ni fiable.

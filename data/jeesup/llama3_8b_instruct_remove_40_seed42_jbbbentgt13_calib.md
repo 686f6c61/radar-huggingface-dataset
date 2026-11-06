@@ -87,8 +87,8 @@ No se han publicado resultados comparativos frente al modelo base en la informac
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este checkpoint (SVD-LLM 40 %, calibrado con JBB) | 8,03 B declarados, rango efectivo 0,5998 | 8.192 | Llama 3 | HuggingFace, safetensors | Media zero-shot 0,5005; ppl WikiText-2 22,8785 |
-| Meta-Llama-3-8B-Instruct (modelo base) | 8,03 B | 8.192 | Llama 3 | HuggingFace, safetensors | No disponible en esta ficha |
+| Este checkpoint (SVD-LLM 40 %, calibrado con JBB) | 8,03 B declarados, rango efectivo 0,5998 | 8.192 | Llama 3 | Hugging Face, safetensors | Media zero-shot 0,5005; ppl WikiText-2 22,8785 |
+| Meta-Llama-3-8B-Instruct (modelo base) | 8,03 B | 8.192 | Llama 3 | Hugging Face, safetensors | No disponible en esta ficha |
 | Celda de control equivalente comprimida al 40 % con solo WikiText-2 | 8,03 B, mismo ratio y semilla | 8.192 | Llama 3 | No se ha identificado repositorio público en la información disponible | No disponible; el autor indica que la comparación se hizo en otra ejecución y con otro hardware |
 | Otros modelos de la misma categoría (p. ej. Mistral-7B-Instruct, Llama-3.1-8B-Instruct) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -109,7 +109,7 @@ La comparación relevante para entender este checkpoint es frente a su base y fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/llama3_8b_instruct_remove_40_seed42_jbbbentgt13_calib
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/llama3_8b_instruct_remove_40_seed42_jbbbentgt13_calib
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Implementación de referencia SVD-LLM (commit `7538cca98880`): https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Dataset de calibración JailbreakBench JBB-Behaviors: https://huggingface.co/datasets/JailbreakBench/JBB-Behaviors

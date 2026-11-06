@@ -124,7 +124,7 @@ La comparativa se limita a los modelos que aparecen en la evaluacion del autor s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/woof-selector-4B-4bit-v2.1
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/woof-selector-4B-4bit-v2.1
 - Rellenador de texto Woof-4B 4-bit v2.1: https://huggingface.co/ConwayResearch/woof-textfiller-4B-4bit-v2.1
 - Rellenador de texto Woof-0.8B 4-bit v2.1: https://huggingface.co/ConwayResearch/woof-textfiller-0.8B-4bit-v2.1
 - Dataset de tareas y resultados de AIMultiple para la evaluacion de 10 tareas: https://huggingface.co/datasets/AIMultiple/aimultiple-decision-models-browser

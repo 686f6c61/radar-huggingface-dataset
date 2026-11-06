@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OctLLM es un modelo multimodal de 11.090.644.992 parametros (unos 11,09 mil millones) publicado por el usuario Plurato123 en HuggingFace, que se presenta como los pesos oficiales del trabajo "Octrees as an Explicit 3D Language". El modelo no es un LLM generico: es un sistema especializado en representar y procesar geometria 3D mediante octrees, y su repositorio incluye componentes propios de ese dominio, como un router 3D, embeddings de posicion especificos y pesos para tokens de malla.
+OctLLM es un modelo multimodal de 11.090.644.992 parametros (unos 11,09 mil millones) publicado por el usuario Plurato123 en Hugging Face, que se presenta como los pesos oficiales del trabajo "Octrees as an Explicit 3D Language". El modelo no es un LLM generico: es un sistema especializado en representar y procesar geometria 3D mediante octrees, y su repositorio incluye componentes propios de ese dominio, como un router 3D, embeddings de posicion especificos y pesos para tokens de malla.
 
 El repositorio etiqueta el modelo con `qwen2_5_vl`, lo que indica que el backbone del sistema es la familia Qwen2.5-VL, sobre la que el autor ha anadido las cabezas y modulos 3D propios. El repositorio pesa 22,5 GB y contiene el modelo, el tokenizer, el processor y cinco shards, ademas de un subdirectorio `completion/model.safetensors` con un modelo de completado de ocupacion usado por el denominado modo `legacy`.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OctLLM (Plurato123) | 11,09 mil millones | No disponible | Octrees como lenguaje 3D explicito, sobre backbone tipo Qwen2.5-VL | No disponible | HuggingFace, 0 descargas |
+| OctLLM (Plurato123) | 11,09 mil millones | No disponible | Octrees como lenguaje 3D explicito, sobre backbone tipo Qwen2.5-VL | No disponible | Hugging Face, 0 descargas |
 | Qwen2.5-VL | No disponible en la informacion proporcionada | No disponible | Vision-lenguaje generalista | No disponible en la informacion proporcionada | Upstream, usado como backbone |
 | TRELLIS | No disponible en la informacion proporcionada | No aplica | Generacion 3D | No disponible en la informacion proporcionada | Repositorio upstream separado |
 | CLIP | No disponible en la informacion proporcionada | No aplica | Vision-lenguaje contrastivo | No disponible en la informacion proporcionada | Repositorio upstream separado |
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Plurato123/OctLLM
+- Repositorio en Hugging Face: https://huggingface.co/Plurato123/OctLLM
 - Descarga directa indicada por el autor: `hf download Plurato123/OctLLM --local-dir checkpoints/OctLLM`
 - Ejemplo de inferencia indicado por el autor: `python inference.py --prompt "Explain what an octree is." --no-mesh`
 - Paper "Octrees as an Explicit 3D Language": mencionado en la model card, sin enlace disponible en la informacion proporcionada.

@@ -85,7 +85,7 @@ La comparativa se basa en la tabla de benchmarks de la model card. La versión A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/GLM-5.3-Flash-UNCENSORED-AWQ
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/GLM-5.3-Flash-UNCENSORED-AWQ
 - Modelo base FP8: https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo original de Zhipu AI: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Descripción en NanoGPT: https://nano-gpt.com/models/text/z-ai/glm-5.3-flash-uncensored

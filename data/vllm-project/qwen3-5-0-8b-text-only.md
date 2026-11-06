@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vllm-project/Qwen3.5-0.8B-text-only | ~0,75B | no disponible | Hibrida (GatedDeltaNet + atencion completa), solo texto | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (modelo base) | no disponible | no disponible | Hibrida multimodal (VLM) | no disponible en la informacion | HuggingFace |
-| codecho/Qwen3.5-0.8B-text-only (original) | ~0,75B | no disponible | Hibrida, solo texto | Apache 2.0 | HuggingFace (cuenta personal) |
+| vllm-project/Qwen3.5-0.8B-text-only | ~0,75B | no disponible | Hibrida (GatedDeltaNet + atencion completa), solo texto | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (modelo base) | no disponible | no disponible | Hibrida multimodal (VLM) | no disponible en la informacion | Hugging Face |
+| codecho/Qwen3.5-0.8B-text-only (original) | ~0,75B | no disponible | Hibrida, solo texto | Apache 2.0 | Hugging Face (cuenta personal) |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparacion cuantitativa con alternativas de otros fabricantes; la comparativa se limita a las variantes directas del mismo modelo base.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/Qwen3.5-0.8B-text-only
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/Qwen3.5-0.8B-text-only
 - Repositorio original: https://huggingface.co/codecho/Qwen3.5-0.8B-text-only
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Proyecto vLLM: https://github.com/vllm-project/vllm

@@ -69,8 +69,8 @@ No se dispone de informacion suficiente para realizar una comparativa objetiva. 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Millesime-2026-4b-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Millesime-2026-4b-i1-GGUF
 - Modelo base: https://huggingface.co/borekboissy/Millesime-2026-4b
 - Cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/Millesime-2026-4b-GGUF
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -23,7 +23,7 @@ La relevancia de esta ficha radica en que ofrece una vía de integración están
 
 No se ha publicado información detallada sobre la arquitectura interna del modelo base TinyCast. La model card del export ONNX indica que se trata de una conversión directa del modelo original, sin modificaciones en los pesos. El contrato de entrada especifica un tensor `context` de forma `['batch', 2048]` en float32, y la salida es un tensor `quantiles` de forma `['batch', 48, 9]` con niveles de cuantil `[0.1, 0.2, ..., 0.9]`. El modelo opera en bloques autorregresivos de 48 pasos; para horizontes más largos, se realimenta la mediana (índice 4) como contexto y se repite el proceso.
 
-No se dispone de datos sobre el conjunto de entrenamiento, el número de tokens o la metodología de optimización (RLHF, DPO, etc.). El modelo base se describe como un "time-series foundation-model" con atención libre (attention-free) según las etiquetas de HuggingFace, pero no se aportan más detalles técnicos en la información disponible.
+No se dispone de datos sobre el conjunto de entrenamiento, el número de tokens o la metodología de optimización (RLHF, DPO, etc.). El modelo base se describe como un "time-series foundation-model" con atención libre (attention-free) según las etiquetas de Hugging Face, pero no se aportan más detalles técnicos en la información disponible.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [sktime/tinycast-onnx en HuggingFace](https://huggingface.co/sktime/tinycast-onnx)
-- [raws-labs/tinycast (modelo base) en HuggingFace](https://huggingface.co/raws-labs/tinycast)
+- [sktime/tinycast-onnx en Hugging Face](https://huggingface.co/sktime/tinycast-onnx)
+- [raws-labs/tinycast (modelo base) en Hugging Face](https://huggingface.co/raws-labs/tinycast)
 - [ONNX Model Zoo](https://github.com/onnx/models)
 - [ONNX Runtime Models](https://onnxruntime.ai/models)

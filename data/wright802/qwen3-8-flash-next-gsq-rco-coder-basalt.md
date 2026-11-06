@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Formato | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next GSQ-RCO Coder Basalt (este) | `.basalt` v2 | IQ1_M (expertos) | 131072 (uso reportado) | Qwen Community License 1.0 | HuggingFace, 0 descargas |
-| Qwen3.8-Flash-Next GSQ-RCO Coder GGUF (ISTA-DASLab) | GGUF | IQ1_M | no disponible | Apache-2.0 según el repo de ISTA-DASLab | HuggingFace |
+| Qwen3.8-Flash-Next GSQ-RCO Coder Basalt (este) | `.basalt` v2 | IQ1_M (expertos) | 131072 (uso reportado) | Qwen Community License 1.0 | Hugging Face, 0 descargas |
+| Qwen3.8-Flash-Next GSQ-RCO Coder GGUF (ISTA-DASLab) | GGUF | IQ1_M | no disponible | Apache-2.0 según el repo de ISTA-DASLab | Hugging Face |
 | Pack oficial Basalt IQ3_XXS de Qwen3.8-Flash-Next | `.basalt` v2 | IQ3_XXS | no disponible | Qwen Community License 1.0 | Distribuido con Basalt |
 
 La comparación con otros modelos de la misma categoría (mismo tamaño o misma tarea) no está disponible en la información proporcionada.
@@ -85,7 +85,7 @@ La comparación con otros modelos de la misma categoría (mismo tamaño o misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wright802/Qwen3.8-Flash-Next-GSQ-RCO-Coder-Basalt
+- Repositorio Hugging Face: https://huggingface.co/wright802/Qwen3.8-Flash-Next-GSQ-RCO-Coder-Basalt
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - GGUF de origen (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF

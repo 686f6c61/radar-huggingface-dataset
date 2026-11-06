@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base y alternativas conocidas; no hay datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/gemma-3-4b-it-immigration_prompted-ft4.43
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/gemma-3-4b-it-immigration_prompted-ft4.43
 - Modelo base google/gemma-3-4b-it: https://huggingface.co/google/gemma-3-4b-it
 - Página oficial de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/
 - Gemma 3 en Ollama: https://ollama.com/library/gemma3:4b

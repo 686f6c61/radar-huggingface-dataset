@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HeartMuLa-oss-3B-bf16 (MLX) | 3,94B (3B LM + 300M decoder) | No disponible | Apache-2.0 | HuggingFace, MLX/Swift | Conversión comunitaria; PER 0.125 en inglés; solo Apple Silicon |
-| HeartMuLa-oss-3B-8bit (MLX) | 3,94B | No disponible | Apache-2.0 | HuggingFace, MLX/Swift | Misma base; PER 0.132; 3 GB menos de memoria; alcanza el tope de duración el doble de veces |
-| HeartMuLa-oss-3B-happy-new-year (original) | 3,94B | No disponible | Apache-2.0 (según model card y README de heartlib) | HuggingFace, PyTorch | Modelo base; PER 0.165 en inglés y 0.457 en mandarín |
+| HeartMuLa-oss-3B-bf16 (MLX) | 3,94B (3B LM + 300M decoder) | No disponible | Apache-2.0 | Hugging Face, MLX/Swift | Conversión comunitaria; PER 0.125 en inglés; solo Apple Silicon |
+| HeartMuLa-oss-3B-8bit (MLX) | 3,94B | No disponible | Apache-2.0 | Hugging Face, MLX/Swift | Misma base; PER 0.132; 3 GB menos de memoria; alcanza el tope de duración el doble de veces |
+| HeartMuLa-oss-3B-happy-new-year (original) | 3,94B | No disponible | Apache-2.0 (según model card y README de heartlib) | Hugging Face, PyTorch | Modelo base; PER 0.165 en inglés y 0.457 en mandarín |
 | Otros modelos abiertos de música | No disponible | No disponible | No disponible | No disponible | La model card solo indica que HeartMuLa obtiene ~4.5/12 en recuperación de estilo CLAP frente a ~2 de otros modelos abiertos medidos, sin nombrarlos |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/HeartMuLa-oss-3B-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/HeartMuLa-oss-3B-bf16
 - Modelo base: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B-happy-new-year
 - Variante 8-bit: https://huggingface.co/mlx-community/HeartMuLa-oss-3B-8bit
 - Codec fp16: https://huggingface.co/mlx-community/HeartCodec-oss-fp16

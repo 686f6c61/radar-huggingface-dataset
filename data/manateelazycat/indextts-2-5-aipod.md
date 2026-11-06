@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manateelazycat/IndexTTS-2.5-AIPod
+- Repositorio Hugging Face: https://huggingface.co/manateelazycat/IndexTTS-2.5-AIPod
 - Licencia: https://huggingface.co/manateelazycat/IndexTTS-2.5-AIPod/blob/main/model/LICENSE
 - Código upstream (commit referenciado): https://github.com/index-tts/index-tts/tree/39207d91c30899cad1e7c1b9eb678c241f678e55

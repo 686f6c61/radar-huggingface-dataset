@@ -6,7 +6,7 @@ MALSumm (Memory-Augmented Long Short-Term Memory for Dynamic Video Summarization
 
 El modelo introduce una arquitectura de doble vía (dual-path) que integra memoria ponderada para evaluar tanto información local (detalles finos) como global (consistencia temporal). Esto permite superar limitaciones de modelos anteriores basados en LSTM estándar, que tienden a perder contexto a largo plazo o a ignorar variaciones dinámicas en la secuencia de vídeo. MALSumm se enmarca en el campo de la visión por computador y el resumen automático de vídeo, un área relevante para aplicaciones como vigilancia, análisis de deportes, revisión de contenido multimedia y compresión de vídeo.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y en los resultados de búsqueda web. El repositorio de HuggingFace no incluye pesos del modelo ni documentación técnica detallada; la mayor parte de la información procede del paper académico y del código fuente en GitHub. Por tanto, muchos parámetros técnicos específicos (número de parámetros, contexto, cuantización, etc.) no están disponibles públicamente.
+La ficha se basa exclusivamente en la información disponible en Hugging Face y en los resultados de búsqueda web. El repositorio de Hugging Face no incluye pesos del modelo ni documentación técnica detallada; la mayor parte de la información procede del paper académico y del código fuente en GitHub. Por tanto, muchos parámetros técnicos específicos (número de parámetros, contexto, cuantización, etc.) no están disponibles públicamente.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ La ficha se basa exclusivamente en la información disponible en HuggingFace y e
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (entrada multimodal: vídeo, no texto) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (el repositorio HuggingFace no contiene pesos; el código fuente está en GitHub) |
+| Formato de pesos | no disponible (el repositorio Hugging Face no contiene pesos; el código fuente está en GitHub) |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Limitaciones y advertencias
 
-- No se han publicado los pesos del modelo en HuggingFace; el repositorio solo contiene metadatos y licencia. Para usar el modelo, es necesario entrenarlo desde cero con el código del GitHub.
+- No se han publicado los pesos del modelo en Hugging Face; el repositorio solo contiene metadatos y licencia. Para usar el modelo, es necesario entrenarlo desde cero con el código del GitHub.
 - El modelo está diseñado específicamente para resumen de vídeo dinámico supervisado; no es aplicable a tareas de lenguaje natural ni a otros dominios sin adaptación.
 - Depende de la calidad de las etiquetas de entrenamiento; si los datos de entrenamiento contienen sesgos (por ejemplo, sobre-representación de ciertos tipos de vídeo), el resumen generado puede verse afectado.
 - No se han documentado limitaciones sobre alucinación o sesgos, ya que no es un modelo generativo de texto.
@@ -68,7 +68,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lvcardoso/Malsumm
+- Repositorio Hugging Face: https://huggingface.co/lvcardoso/Malsumm
 - Código fuente en GitHub: https://github.com/IMScience-PPGINF-PucMinas/MALSumm
 - Paper (PDF): http://sibgrapi.sid.inpe.br/col/sid.inpe.br/sibgrapi/2025/09.12.20.06/doc/cardoso_111_inpe.pdf
 - Paper en IEEE: https://ieeexplore.ieee.org/abstract/document/11223357

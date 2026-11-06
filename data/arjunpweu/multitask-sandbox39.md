@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arjunpweu/multitask-sandbox39` es un repositorio experimental publicado por el usuario arjunpweu (Arjun Patel) en HuggingFace. No es un modelo entrenado ni una release de inferencia: se trata de una implementación compacta y personalizada en PyTorch de una arquitectura **Efficientformer** orientada a tareas múltiples (multitask), en una configuración denominada "nano". El propio autor indica que el repositorio está pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados.
+`arjunpweu/multitask-sandbox39` es un repositorio experimental publicado por el usuario arjunpweu (Arjun Patel) en Hugging Face. No es un modelo entrenado ni una release de inferencia: se trata de una implementación compacta y personalizada en PyTorch de una arquitectura **Efficientformer** orientada a tareas múltiples (multitask), en una configuración denominada "nano". El propio autor indica que el repositorio está pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados.
 
 El peso incluido, `model.safetensors`, es un *checkpoint* de inicialización válido (aproximadamente 16.576 parámetros totales, según los metadatos de safetensors), pero no es un modelo entrenado ni evaluado. El repositorio no declara ninguna puntuación de benchmark y su tamaño es de 0,0 GB, con 0 descargas y 0 *likes* en el momento de la consulta.
 
@@ -80,7 +80,7 @@ No disponible. El repositorio no identifica modelos de referencia ni publica com
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| arjunpweu/multitask-sandbox39 | 16.576 | No disponible | BSD-3-Clause | HuggingFace, *checkpoint* sin entrenar | No evaluado |
+| arjunpweu/multitask-sandbox39 | 16.576 | No disponible | BSD-3-Clause | Hugging Face, *checkpoint* sin entrenar | No evaluado |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -98,6 +98,6 @@ No disponible. El repositorio no identifica modelos de referencia ni publica com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arjunpweu/multitask-sandbox39
+- Modelo en Hugging Face: https://huggingface.co/arjunpweu/multitask-sandbox39
 - Perfil del autor: https://huggingface.co/arjunpweu
 - La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces encontrados (foro de ELSTER) no guardan relación con el repositorio.

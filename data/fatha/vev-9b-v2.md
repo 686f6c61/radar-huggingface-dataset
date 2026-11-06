@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vev-9b-v2 es un modelo multimodal de decision visual publicado por el usuario Fatha en HuggingFace. No es un modelo generativo de proposito general: dado una unica imagen, responde preguntas de si/no o de opcion multiple y devuelve probabilidades calibradas sobre las opciones. Su proposito principal es la evaluacion automatica de imagenes generadas por IA (coincidencia con el prompt, presencia de artefactos, calidad del texto renderizado, etc.).
+vev-9b-v2 es un modelo multimodal de decision visual publicado por el usuario Fatha en Hugging Face. No es un modelo generativo de proposito general: dado una unica imagen, responde preguntas de si/no o de opcion multiple y devuelve probabilidades calibradas sobre las opciones. Su proposito principal es la evaluacion automatica de imagenes generadas por IA (coincidencia con el prompt, presencia de artefactos, calidad del texto renderizado, etc.).
 
 Tecnicamente es un ajuste fino del modelo base Qwen/Qwen3.5-9B-Base mediante una LoRA de rango 32 que se ha fusionado en los pesos finales, dando lugar a un checkpoint de 9.409.813.744 parametros (aproximadamente 9,4 mil millones) en formato safetensors, con un repositorio de 18,8 GB. El entrenamiento consistio en 846 pasos sobre 59.378 filas de datasets publicos de imagenes unicas etiquetadas por humanos, sin datos de rating ni de estetica.
 
@@ -82,7 +82,7 @@ No se dispone de la metrica antes del escalado de temperatura, ni de resultados 
 - El repositorio no publica checkpoints cuantizados (GGUF, AWQ, GPTQ ni similares), por lo que cualquier despliegue en 4 u 8 bits requiere una conversion propia.
 - GPU recomendadas para FP16: A100 40 GB, H100, L40S. En una RTX 4090 de 24 GB el modelo en FP16 resulta ajustado y depende de la resolucion de imagen y del numero de tokens visuales.
 - Cabe en GPU de consumo con cuantizacion de 4 bits: RTX 3090, RTX 4090, RTX 4080 o equivalentes con 12 GB o mas.
-- Opciones de despliegue: la model card remite al repositorio de GitHub para el servicio y la CLI (`vev serve --run` apuntando a un directorio de modelo); el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints; tambien es desplegable con transformers y, previsiblemente, con vLLM si la arquitectura base esta soportada (no confirmado en la informacion disponible).
+- Opciones de despliegue: la model card remite al repositorio de GitHub para el servicio y la CLI (`vev serve --run` apuntando a un directorio de modelo); el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints; tambien es desplegable con transformers y, previsiblemente, con vLLM si la arquitectura base esta soportada (no confirmado en la informacion disponible).
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Fatha/vev-9b-v2 | 9,41 B | No disponible | `other` (see-data-licenses), pesos con restricciones heredadas de los datasets | HuggingFace, 0 descargas y 0 likes | Modelo juez de decision visual con calibracion explicita (T = 1.163) |
-| Qwen/Qwen3.5-9B-Base | No disponible con precision | No disponible | Segun el repositorio de Qwen | HuggingFace | Modelo base sobre el que se construye vev-9b-v2; sin calibracion ni cabeza de decision especifica |
+| Fatha/vev-9b-v2 | 9,41 B | No disponible | `other` (see-data-licenses), pesos con restricciones heredadas de los datasets | Hugging Face, 0 descargas y 0 likes | Modelo juez de decision visual con calibracion explicita (T = 1.163) |
+| Qwen/Qwen3.5-9B-Base | No disponible con precision | No disponible | Segun el repositorio de Qwen | Hugging Face | Modelo base sobre el que se construye vev-9b-v2; sin calibracion ni cabeza de decision especifica |
 | Otros modelos jueces multimodales (Qwen-VL, InternVL, LLaVA, etc.) | No disponible | No disponible | No disponible | No disponible | No se han encontrado comparativas publicadas para vev-9b-v2 |
 
 En los resultados de busqueda aparece un endpoint en FriendliAI bajo el namespace `CountingSheep/vev-9b`, distinto del autor de esta ficha (`Fatha`). No se puede confirmar que corresponda al mismo modelo, por lo que no se usa como referencia comparativa.
@@ -107,11 +107,11 @@ En los resultados de busqueda aparece un endpoint en FriendliAI bajo el namespac
 - Idiomas, contexto y cuantizaciones no declarados: no hay informacion publicada sobre cobertura linguistica, longitud de contexto soportada ni formatos cuantizados, lo que dificulta planificar despliegues en produccion.
 - Sin validacion externa: 0 descargas y 0 likes, ademas de una unica particion de validacion reportada por el propio autor. No hay evaluacion independiente ni replicacion de terceros.
 - Ausencia de benchmarks estandar: no se puede comparar su rendimiento con otros modelos jueces mediante metricas publicas reconocidas.
-- Fecha de publicacion inusualmente avanzada (2026-10-04) en los metadatos de HuggingFace; conviene verificar la vigencia del repositorio antes de depender de el.
+- Fecha de publicacion inusualmente avanzada (2026-10-04) en los metadatos de Hugging Face; conviene verificar la vigencia del repositorio antes de depender de el.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fatha/vev-9b-v2
+- Modelo en Hugging Face: https://huggingface.co/Fatha/vev-9b-v2
 - Repositorio de codigo, servicio, CLI y benchmark: https://github.com/Fathaah/vev
 - Licencias de los datos de entrenamiento: https://github.com/Fathaah/vev/blob/main/DATA_LICENSES.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

@@ -1,7 +1,7 @@
 # Godwinlyamba/queue_merged-u168
 
 ## Resumen
-El modelo `Godwinlyamba/queue_merged-u168` es un modelo de lenguaje de 35.107 millones de parámetros (aproximadamente 35B) publicado en HuggingFace por el usuario Godwinlyamba. Su nombre sugiere que se trata de un modelo resultante de una fusión (merge) de pesos, práctica habitual para combinar las capacidades de varios modelos base. El modelo base declarado es `vera6/affine-5g4yy75zuz-t6`, aunque no se dispone de información pública sobre las características de dicho modelo base.
+El modelo `Godwinlyamba/queue_merged-u168` es un modelo de lenguaje de 35.107 millones de parámetros (aproximadamente 35B) publicado en Hugging Face por el usuario Godwinlyamba. Su nombre sugiere que se trata de un modelo resultante de una fusión (merge) de pesos, práctica habitual para combinar las capacidades de varios modelos base. El modelo base declarado es `vera6/affine-5g4yy75zuz-t6`, aunque no se dispone de información pública sobre las características de dicho modelo base.
 
 La relevancia de este modelo es limitada en el momento de su publicación: no se han difundido resultados de benchmarks, documentación técnica ni ejemplos de uso. El acceso está restringido (gated), por lo que los usuarios deben solicitar permiso al autor antes de descargarlo. A pesar de su tamaño considerable (35B), la ausencia de datos sobre arquitectura, contexto o rendimiento impide evaluar su utilidad práctica. Se recomienda precaución antes de considerarlo para entornos de producción.
 
@@ -60,7 +60,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 - Caveat para produccion: no se recomienda su uso en entornos productivos sin una evaluacion exhaustiva previa, dado que no hay documentacion ni benchmarks.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Godwinlyamba/queue_merged-u168
+- Modelo en Hugging Face: https://huggingface.co/Godwinlyamba/queue_merged-u168
 - Perfil del autor: https://huggingface.co/Godwinlyamba
 - Modelo relacionado (mismo autor): https://huggingface.co/Godwinlyamba/queue_merged-u83
 - Referencia a tecnicas de fusion de modelos (contexto general): https://github.com/ycjing/Awesome-Model-Merging

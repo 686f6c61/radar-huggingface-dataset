@@ -6,7 +6,7 @@ El modelo `promotion/Llama-3.1-8B-MOPO-baseline` es un ajuste fino del modelo `m
 
 El modelo parte de la política de referencia e inicialización `Llama-3.1-8B-Instruct`, y se entrena durante 300 pasos sobre prompts del dataset UltraFeedback. Las preferencias se obtienen mediante un oráculo `Qwen3-32B` que puntúa cada par de respuestas en los cuatro objetivos, promediando los resultados en ambos órdenes de presentación. El resultado es un modelo que, según los datos reportados, consigue un surplus positivo sobre la referencia en todos los objetivos evaluados, con un mínimo de +0.0215 en honestidad. Aunque es un baseline, su relevancia radica en servir como punto de comparación para métodos de negociación multi-objetivo más sofisticados, como el modelo NBPO que alcanza un mínimo de +0.0391.
 
-La ficha se basa exclusivamente en la información proporcionada por el autor en la model card y en los datos de HuggingFace. No se dispone de información adicional sobre arquitectura interna, datos de entrenamiento completos o benchmarks estándar.
+La ficha se basa exclusivamente en la información proporcionada por el autor en la model card y en los datos de Hugging Face. No se dispone de información adicional sobre arquitectura interna, datos de entrenamiento completos o benchmarks estándar.
 
 ## Especificaciones tecnicas
 
@@ -94,7 +94,7 @@ La comparativa muestra que el modelo NBPO supera claramente al baseline MOPO en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Llama-3.1-8B-MOPO-baseline
+- Modelo en Hugging Face: https://huggingface.co/promotion/Llama-3.1-8B-MOPO-baseline
 - Modelo NBPO comparado: https://huggingface.co/promotion/Llama-3.1-8B-NBPO-600step
 - Dataset de generaciones del benchmark: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Baseline UniformINPO: https://huggingface.co/promotion/Llama-3.1-8B-UniformINPO-baseline

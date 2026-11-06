@@ -84,7 +84,7 @@ La principal diferencia con el ONNX oficial es que esta variante esta optimizada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matbee/LFM2.5-350M-Instruct-ONNX-Vulkan
+- Modelo en Hugging Face: https://huggingface.co/matbee/LFM2.5-350M-Instruct-ONNX-Vulkan
 - Modelo original: https://huggingface.co/LiquidAI/LFM2.5-350M
 - ONNX oficial de LiquidAI: https://huggingface.co/LiquidAI/LFM2.5-350M-ONNX
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind

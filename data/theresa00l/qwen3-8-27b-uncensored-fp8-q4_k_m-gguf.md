@@ -23,7 +23,7 @@ Al tratarse de una cuantización Q4_K_M, el archivo ocupa aproximadamente 16.8 G
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna del modelo base. Los tags de HuggingFace indican que pertenece a la serie Qwen3.8, que en otras variantes conocidas emplea una arquitectura transformer densa con atencion por ventanas deslizantes y mecanismos de reasoning explicito, pero esto no puede confirmarse para este checkpoint concreto. El termino "abliterated" sugiere que el modelo original fue sometido a una modificacion post-entrenamiento para eliminar los rechazos y restricciones de contenido tipicos de los modelos alineados, probablemente mediante tecnicas de eliminacion de direcciones en el espacio de activaciones (ablacion de representaciones).
+No se ha publicado informacion detallada sobre la arquitectura interna del modelo base. Los tags de Hugging Face indican que pertenece a la serie Qwen3.8, que en otras variantes conocidas emplea una arquitectura transformer densa con atencion por ventanas deslizantes y mecanismos de reasoning explicito, pero esto no puede confirmarse para este checkpoint concreto. El termino "abliterated" sugiere que el modelo original fue sometido a una modificacion post-entrenamiento para eliminar los rechazos y restricciones de contenido tipicos de los modelos alineados, probablemente mediante tecnicas de eliminacion de direcciones en el espacio de activaciones (ablacion de representaciones).
 
 El modelo base `orcarouter/Qwen3.8-27B-Uncensored-FP8` esta cuantizado en FP8 de bloque, una tecnica que reduce el peso de los tensores a 8 bits por bloques para ahorrar memoria y acelerar la inferencia. La conversion a GGUF Q4_K_M aplica una cuantizacion adicional de 4 bits con el esquema K-quant, que mantiene una buena relacion calidad-tamano. No se dispone de datos sobre el dataset de entrenamiento, el numero de tokens procesados ni si se aplicaron tecnicas como RLHF o DPO.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: [theresa00l/Qwen3.8-27B-Uncensored-FP8-Q4_K_M-GGUF](https://huggingface.co/theresa00l/Qwen3.8-27B-Uncensored-FP8-Q4_K_M-GGUF)
+- Repositorio Hugging Face: [theresa00l/Qwen3.8-27B-Uncensored-FP8-Q4_K_M-GGUF](https://huggingface.co/theresa00l/Qwen3.8-27B-Uncensored-FP8-Q4_K_M-GGUF)
 - Modelo base: [orcarouter/Qwen3.8-27B-Uncensored-FP8](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8)
 - Herramienta de conversion: [GGUF-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)
 - Repositorio de llama.cpp: [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)

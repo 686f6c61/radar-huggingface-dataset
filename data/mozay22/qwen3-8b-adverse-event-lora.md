@@ -66,6 +66,6 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mozay22/Qwen3-8B-adverse-event-lora
+- Hugging Face: https://huggingface.co/mozay22/Qwen3-8B-adverse-event-lora
 - Proyecto Weights & Biases: https://wandb.ai/_mozay_-ro/pharmacovigilance-qwen-finetune/runs/0y04wpcy
 - Modelo base: https://huggingface.co/unsloth/qwen3-8b-bnb-4bit

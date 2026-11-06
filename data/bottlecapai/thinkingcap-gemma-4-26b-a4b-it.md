@@ -6,7 +6,7 @@ ThinkingCap gemma-4-26B-A4B-it es un ajuste fino (fine-tune) del modelo google/g
 
 El problema que aborda es el coste computacional y la latencia de los modelos con modo "thinking": el modelo base puede emplear miles de tokens internos antes de responder, lo que encarece la inferencia y aumenta la latencia en producción. ThinkingCap aplica un post-entrenamiento orientado a acortar esas cadenas de razonamiento, de modo que el modelo llegue a respuestas equivalentes con menos tokens generados. En GPQA-Diamond, por ejemplo, pasa de 7.699 a 4.284 tokens de media con una caída de precisión de menos de un punto.
 
-El modelo conserva la arquitectura, el tokenizador y el pipeline del base, y se distribuye en formato transformers/safetensors con 25.805.936.206 parámetros totales (repo de 51,8 GB) bajo licencia apache-2.0 según los metadatos de HuggingFace. El modo thinking sigue desactivado por defecto y se activa con `enable_thinking=True`, igual que en el modelo original; todas las cifras publicadas se midieron con el razonamiento activado.
+El modelo conserva la arquitectura, el tokenizador y el pipeline del base, y se distribuye en formato transformers/safetensors con 25.805.936.206 parámetros totales (repo de 51,8 GB) bajo licencia apache-2.0 según los metadatos de Hugging Face. El modo thinking sigue desactivado por defecto y se activa con `enable_thinking=True`, igual que en el modelo original; todas las cifras publicadas se midieron con el razonamiento activado.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El modelo conserva la arquitectura, el tokenizador y el pipeline del base, y se 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponibles en la informacion proporcionada; al ser compatible con transformers y safetensors, admite las cuantizaciones habituales del ecosistema (no verificadas en esta ficha) |
 | Idiomas soportados | No disponibles en la informacion proporcionada |
-| Licencia | apache-2.0 en los metadatos de HuggingFace; el campo license_link apunta a la licencia de Gemma 4 de Google (ai.google.dev/gemma/docs/gemma_4_license) |
+| Licencia | apache-2.0 en los metadatos de Hugging Face; el campo license_link apunta a la licencia de Gemma 4 de Google (ai.google.dev/gemma/docs/gemma_4_license) |
 | Formato de pesos | Safetensors (libreria transformers) |
 
 ## Arquitectura y entrenamiento
@@ -75,8 +75,8 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros totales | Contexto | Razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThinkingCap-gemma-4-26B-A4B-it | 25,8B (MoE) | No disponible | Thinking opcional con 38,9 % menos tokens y 75,0 % de precision media | apache-2.0 (con enlace a licencia Gemma 4) | HuggingFace, 114 descargas, 13 likes |
-| google/gemma-4-26B-A4B-it (base) | 25,8B (MoE) | No disponible | Thinking opcional, 75,2 % de precision media | No disponible en esta ficha | HuggingFace (modelo base) |
+| ThinkingCap-gemma-4-26B-A4B-it | 25,8B (MoE) | No disponible | Thinking opcional con 38,9 % menos tokens y 75,0 % de precision media | apache-2.0 (con enlace a licencia Gemma 4) | Hugging Face, 114 descargas, 13 likes |
+| google/gemma-4-26B-A4B-it (base) | 25,8B (MoE) | No disponible | Thinking opcional, 75,2 % de precision media | No disponible en esta ficha | Hugging Face (modelo base) |
 | Otras alternativas MoE multimodales de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye datos de modelos comparables de terceros, por lo que la comparativa se limita al modelo base. Cualquier comparacion con otras familias (Qwen, Mixtral, Llama y similares) requeriria verificar parametros, contexto y resultados de forma independiente.
@@ -96,7 +96,7 @@ La informacion proporcionada no incluye datos de modelos comparables de terceros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-gemma-4-26B-A4B-it
+- Modelo en Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-gemma-4-26B-A4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Web del autor (BottleCap AI): https://www.bottlecapai.com/
 - Licencia referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license

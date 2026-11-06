@@ -27,7 +27,7 @@ Se trata de un artefacto de investigación más que de un modelo listo para prod
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del checkpoint base, etiquetado como `grug_moe` en HuggingFace, lo que apunta a una arquitectura de mezcla de expertos (MoE). El nombre "67B-A2B" sugiere 67.000 millones de parametros totales y aproximadamente 2.000 millones activos por token, aunque la model card no desglosa el numero de expertos, el enrutador ni la dimension oculta. El tokenizer y la plantilla de chat son los del estudiante B, sin cambios, lo que simplifica la sustitucion directa en pipelines ya construidos sobre el base.
+El modelo hereda la arquitectura del checkpoint base, etiquetado como `grug_moe` en Hugging Face, lo que apunta a una arquitectura de mezcla de expertos (MoE). El nombre "67B-A2B" sugiere 67.000 millones de parametros totales y aproximadamente 2.000 millones activos por token, aunque la model card no desglosa el numero de expertos, el enrutador ni la dimension oculta. El tokenizer y la plantilla de chat son los del estudiante B, sin cambios, lo que simplifica la sustitucion directa en pipelines ya construidos sobre el base.
 
 El entrenamiento es un SFT por rejection sampling sobre datos generados por dos expertos: uno especializado en CruxEval y otro en MMLU-Pro. Para cada prompt se muestrearon k=8 candidatos por experto y se conservo la primera muestra que resulto ejecutivamente correcta (CruxEval) o aceptada por el selector de respuestas implementado (MMLU-Pro), cubriendo 2.903 de los 3.206 prompts. La receta usa AdamW con learning rate 1e-6, betas 0,9/0,999, weight decay 0, gradient clipping 1.0, sesgo del enrutador congelado, 4 epocas (728 actualizaciones de batch 16) y Levanter como framework, sobre 32 H100 (93,6 H100-hora). El checkpoint del paso 727 se eligio por delante del paso 546 mediante una regla congelada, al ser practicamente identico en todos los objetivos.
 
@@ -105,7 +105,7 @@ No se dispone de resultados de benchmarks de terceros modelos que permitan una c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-MixedRS-SFT-Step727
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-MixedRS-SFT-Step727
 - Modelo base (estudiante B): https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
 - Revision concreta del modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Evaluador Evalchemy (commit usado): https://github.com/marin-community/evalchemy/commit/ae362881cf53f869a6ad52c8a59fa17343c0b5f8

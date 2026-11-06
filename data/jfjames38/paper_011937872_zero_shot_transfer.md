@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jfjames38/paper_011937872_zero_shot_transfer` es un artefacto de investigación publicado en HuggingFace que contiene un documento académico sobre transferencia zero-shot (zero-shot transfer). El autor, jfjames38, ha estructurado el repositorio como un paper en formato HTML con un estilo narrativo progresivo y una estructura de secciones que comprende introducción, antecedentes, enfoque, evaluación y conclusión.
+El repositorio `jfjames38/paper_011937872_zero_shot_transfer` es un artefacto de investigación publicado en Hugging Face que contiene un documento académico sobre transferencia zero-shot (zero-shot transfer). El autor, jfjames38, ha estructurado el repositorio como un paper en formato HTML con un estilo narrativo progresivo y una estructura de secciones que comprende introducción, antecedentes, enfoque, evaluación y conclusión.
 
 Este repositorio no contiene un modelo de IA en el sentido convencional (no hay pesos, arquitectura ni artefactos de inferencia), sino un documento académico que investiga la transferencia zero-shot, probablemente en el contexto de aprendizaje automático. La relevancia actual de este tema es alta, dado que la transferencia zero-shot es un área activa de investigación en modelos fundacionales, aunque la información disponible no permite confirmar si el documento propone un modelo específico o un estudio comparativo.
 
@@ -67,6 +67,6 @@ No disponible. No se puede comparar este repositorio con otros modelos de IA por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jfjames38/paper_011937872_zero_shot_transfer
+- Repositorio Hugging Face: https://huggingface.co/jfjames38/paper_011937872_zero_shot_transfer
 - Paper ZeroG (no relacionado confirmado): https://arxiv.org/abs/2402.11235
 - Código de ZeroG (no relacionado confirmado): https://github.com/NineAbyss/ZeroG

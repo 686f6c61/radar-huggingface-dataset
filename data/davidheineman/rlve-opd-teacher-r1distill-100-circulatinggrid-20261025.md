@@ -32,7 +32,7 @@ El método de entrenamiento es GRPO especializado sobre un solo entorno (Circula
 - Generación de texto autoregresiva dentro del entorno CirculatingGrid, con el formato de generación empleado en entrenamiento (1.024 tokens iniciales + 128 tokens de continuación forzada de respuesta).
 - Razonamiento especializado en la tarea concreta del entorno, optimizado por GRPO hasta un criterio de parada de pass@1 ≥ 0,98 en validación ID.
 - Función de profesor para destilación on-policy: genera trayectorias que se usan como señal para entrenar modelos estudiantes.
-- Compatibilidad con text-generation-inference y con el tag `endpoints_compatible`, lo que permite servirlo mediante la API de inferencia estándar de HuggingFace.
+- Compatibilidad con text-generation-inference y con el tag `endpoints_compatible`, lo que permite servirlo mediante la API de inferencia estándar de Hugging Face.
 - Etiquetado como `conversational`, aunque no se documenta ningún ajuste conversacional específico más allá del formato de prompt del entorno.
 - Capacidades de tool calling / function calling: no documentadas.
 - Capacidades de agente multi-paso: no documentadas fuera del bucle de rollouts del entorno.
@@ -79,10 +79,10 @@ Como referencia del régimen de entrenamiento (no son benchmarks de calidad), el
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-100-CirculatingGrid-20261025 | 1,78B | No disponible | Profesor GRPO para CirculatingGrid | No disponible | HuggingFace (0 descargas, 0 likes) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78B | No disponible en esta ficha (consultar su model card) | Razonamiento general destilado de R1 | No verificada aquí; consultar el repositorio del base | HuggingFace, ampliamente distribuido |
-| davidheineman/opd-teacher-Q2.5I-LinkBeads-step149 (modelo hermano) | No disponible | No disponible | Profesor GRPO para LinkBeads a dificultad 0, 150 actualizaciones, pensado para destilación en un setup de 32 entornos | No disponible | HuggingFace / Featherless |
-| Qwen2.5-1.5B-Instruct (alternativa generalista de la misma familia) | ~1,5B | No verificado en esta ficha | Instrucciones y conversación general | No verificada aquí; consultar su model card | HuggingFace, ampliamente distribuido |
+| rlve-opd-teacher-R1Distill-100-CirculatingGrid-20261025 | 1,78B | No disponible | Profesor GRPO para CirculatingGrid | No disponible | Hugging Face (0 descargas, 0 likes) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78B | No disponible en esta ficha (consultar su model card) | Razonamiento general destilado de R1 | No verificada aquí; consultar el repositorio del base | Hugging Face, ampliamente distribuido |
+| davidheineman/opd-teacher-Q2.5I-LinkBeads-step149 (modelo hermano) | No disponible | No disponible | Profesor GRPO para LinkBeads a dificultad 0, 150 actualizaciones, pensado para destilación en un setup de 32 entornos | No disponible | Hugging Face / Featherless |
+| Qwen2.5-1.5B-Instruct (alternativa generalista de la misma familia) | ~1,5B | No verificado en esta ficha | Instrucciones y conversación general | No verificada aquí; consultar su model card | Hugging Face, ampliamente distribuido |
 
 La comparación relevante no es de rendimiento bruto, sino de propósito: los dos profesores de davidheineman son artefactos de investigación de un solo entorno, mientras que el base y Qwen2.5-1.5B-Instruct son modelos generalistas. Cualquier comparación cuantitativa exigiría ejecutar el mismo harness de validación, que no se ha publicado con resultados.
 
@@ -101,7 +101,7 @@ La comparación relevante no es de rendimiento bruto, sino de propósito: los do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-100-CirculatingGrid-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-100-CirculatingGrid-20261025
 - Repositorio RLVE (data primitives for RL): https://github.com/davidheineman/rlve
 - Ejecución de Weights & Biases del entrenamiento: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/10fa7405
 - Ejecución relacionada en W&B (rl-data-opd-teachers): https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/40eb51c9

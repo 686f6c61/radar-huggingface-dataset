@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leaschneider/efficientformer-generation` es un repositorio de HuggingFace publicado por el usuario leaschneider que contiene una implementación propia y mínima de una arquitectura EfficientFormer orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
+`leaschneider/efficientformer-generation` es un repositorio de Hugging Face publicado por el usuario leaschneider que contiene una implementación propia y mínima de una arquitectura EfficientFormer orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks.
 
 El repositorio incluye el código Python (`train.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos iniciales. La escala declarada es "large", con atención de tipo flash, fusión "co attention", activación ReLU y normalización GroupNorm. La receta por defecto usa el optimizador RMSprop con un scheduler OneCycle.
 
@@ -82,4 +82,4 @@ No se dispone de datos suficientes para una comparativa rigurosa con alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leaschneider/efficientformer-generation
+- Hugging Face: https://huggingface.co/leaschneider/efficientformer-generation

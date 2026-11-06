@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. Las 
 
 | Modelo | Parámetros totales | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA Nemotron 3.5 Lightning 30B A3B BF16 | 31.577.940.288 | BF16 | no disponible | openmdw-1.1 | HuggingFace (nvidia) |
-| Este checkpoint (NVFP4-MTP) | 31.577.940.288 | NVFP4 | no disponible | openmdw-1.1 | HuggingFace (soyrsoyr) |
+| NVIDIA Nemotron 3.5 Lightning 30B A3B BF16 | 31.577.940.288 | BF16 | no disponible | openmdw-1.1 | Hugging Face (nvidia) |
+| Este checkpoint (NVFP4-MTP) | 31.577.940.288 | NVFP4 | no disponible | openmdw-1.1 | Hugging Face (soyrsoyr) |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación consultada.
 
@@ -75,6 +75,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/soyrsoyr/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-MTP
+- Repositorio Hugging Face: https://huggingface.co/soyrsoyr/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-MTP
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

@@ -98,7 +98,7 @@ Protocolo de evaluación de los autores:
 
 | Modelo | Tipo | Clases de salida | Dice macro | Dice micro | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| histoforge/ignite-nsclc-he-tissue | Segmentación semántica de tejido (un solo modelo) | 15 clases + fondo interno | 0,7225 | 0,7931 | `other` (dinov3) | HuggingFace, módulo QuPath |
+| histoforge/ignite-nsclc-he-tissue | Segmentación semántica de tejido (un solo modelo) | 15 clases + fondo interno | 0,7225 | 0,7931 | `other` (dinov3) | Hugging Face, módulo QuPath |
 | Ensamble nnU-Net de cinco modelos de IGNITE (reejecutado) | Ensamble de segmentación | 15 clases (mismas clases evaluadas) | 0,6733 | 0,7870 | Según distribución original de IGNITE; no disponible en esta información | Referencia de la literatura y del conjunto IGNITE v1 |
 
 No se dispone en la información proporcionada de otros modelos comparables de segmentación tisular en NSCLC H\&E con métricas publicadas bajo la misma convención de evaluación. Cualquier comparación con segmentadores entrenados en otros dominios histológicos requeriría reevaluación sobre las mismas 139 regiones.
@@ -119,7 +119,7 @@ No se dispone en la información proporcionada de otros modelos comparables de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/histoforge/ignite-nsclc-he-tissue
+- Modelo en Hugging Face: https://huggingface.co/histoforge/ignite-nsclc-he-tissue
 - Licencia DINOv3: https://huggingface.co/histoforge/ignite-nsclc-he-tissue/blob/main/LICENSE-DINOV3.md
 - Definiciones de medición: https://huggingface.co/histoforge/ignite-nsclc-he-tissue/blob/main/MEASUREMENTS.md
 - Créditos y selección de ejemplos: https://huggingface.co/histoforge/ignite-nsclc-he-tissue/blob/main/EXAMPLE-CREDITS.md

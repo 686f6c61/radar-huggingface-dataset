@@ -71,8 +71,8 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/SwinliQ-AI-2/Qwen3.8-27B-GGUF
-- Repositorio HuggingFace de la cuantización oficial de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/SwinliQ-AI-2/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de la cuantización oficial de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de Unsloth para ejecutar Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Documentación de Unsloth Dynamic 3.0 GGUF: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

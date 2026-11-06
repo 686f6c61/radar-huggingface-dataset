@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-base-uncased-finetuned-ner es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning supervisado de distilbert-base-uncased, la versión destilada de BERT. Lo publica el usuario Bang0010 en HuggingFace y su propósito declarado es el reconocimiento de entidades nombradas (NER), aunque la model card no especifica el conjunto de datos de entrenamiento ni el esquema de etiquetas utilizado. El modelo se generó automáticamente con la clase Trainer de la librería transformers, como indica la etiqueta generated_from_trainer.
+distilbert-base-uncased-finetuned-ner es un modelo de clasificación de tokens (token classification) obtenido mediante fine-tuning supervisado de distilbert-base-uncased, la versión destilada de BERT. Lo publica el usuario Bang0010 en Hugging Face y su propósito declarado es el reconocimiento de entidades nombradas (NER), aunque la model card no especifica el conjunto de datos de entrenamiento ni el esquema de etiquetas utilizado. El modelo se generó automáticamente con la clase Trainer de la librería transformers, como indica la etiqueta generated_from_trainer.
 
 La arquitectura subyacente es un transformer encoder de tipo DistilBERT, con 66.369.801 parámetros totales según los pesos en safetensors, lo que supone aproximadamente la mitad de parámetros de bert-base-uncased. El modelo base está entrenado sin distinción de mayúsculas (uncased) y su ventana de contexto es de 512 tokens, la habitual en la familia BERT. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -68,17 +68,17 @@ El model-index oficial no contiene resultados (`results: []`), por lo que no hay
 - VRAM estimada en fp16: aproximadamente 0,15 GB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; también funciona en CPU.
 - Cabe en GPU consumer: sí, en cualquier RTX, GTX o incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: transformers (pipeline `token-classification`), ONNX Runtime, TorchScript, conversión a GGUF para llama.cpp/Ollama (requiere herramientas externas), y servidores de inferencia compatibles con endpoints de HuggingFace (el tag `endpoints_compatible` está presente).
+- Opciones de despliegue: transformers (pipeline `token-classification`), ONNX Runtime, TorchScript, conversión a GGUF para llama.cpp/Ollama (requiere herramientas externas), y servidores de inferencia compatibles con endpoints de Hugging Face (el tag `endpoints_compatible` está presente).
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo se espera un throughput alto en CPU y muy alto en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bang0010/distilbert-base-uncased-finetuned-ner | 66,4 M | 512 | NER (token classification) | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66,4 M | 512 | Modelo base (MLM) | Apache 2.0 | HuggingFace |
-| dslim/bert-base-NER | ~110 M | 512 | NER (CoNLL-2003) | MIT | HuggingFace |
-| dbmdz/bert-large-cased-finetuned-conll03-english | ~335 M | 512 | NER (CoNLL-2003) | MIT | HuggingFace |
+| Bang0010/distilbert-base-uncased-finetuned-ner | 66,4 M | 512 | NER (token classification) | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66,4 M | 512 | Modelo base (MLM) | Apache 2.0 | Hugging Face |
+| dslim/bert-base-NER | ~110 M | 512 | NER (CoNLL-2003) | MIT | Hugging Face |
+| dbmdz/bert-large-cased-finetuned-conll03-english | ~335 M | 512 | NER (CoNLL-2003) | MIT | Hugging Face |
 
 La comparación con dslim/bert-base-NER y dbmdz/bert-large-cased-finetuned-conll03-english es la más habitual en la categoría, pero no se dispone de métricas comparables del modelo evaluado sobre CoNLL-2003, por lo que la comparación de rendimiento no está disponible.
 
@@ -96,7 +96,7 @@ La comparación con dslim/bert-base-NER y dbmdz/bert-large-cased-finetuned-conll
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bang0010/distilbert-base-uncased-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/Bang0010/distilbert-base-uncased-finetuned-ner
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

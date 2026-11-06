@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SecJev-4B es un modelo de decisión especializado en seguridad que no genera texto libre, sino que devuelve distribuciones de probabilidad sobre un conjunto cerrado de respuestas candidatas (juicios booleanos, elecciones entre opciones y valoraciones ordenadas) a partir de evidencia de seguridad y políticas explícitas. Lo desarrolla el proyecto SecJev (UESTC1010) y esta ficha corresponde a un mirror no modificado del release upstream v1.2.0 publicado por el usuario macmacmacmac en HuggingFace. El modelo se construye sobre el backbone Qwen3.5-4B-Base mediante un adaptador LoRA y una cabeza de decisión de 256 dimensiones.
+SecJev-4B es un modelo de decisión especializado en seguridad que no genera texto libre, sino que devuelve distribuciones de probabilidad sobre un conjunto cerrado de respuestas candidatas (juicios booleanos, elecciones entre opciones y valoraciones ordenadas) a partir de evidencia de seguridad y políticas explícitas. Lo desarrolla el proyecto SecJev (UESTC1010) y esta ficha corresponde a un mirror no modificado del release upstream v1.2.0 publicado por el usuario macmacmacmac en Hugging Face. El modelo se construye sobre el backbone Qwen3.5-4B-Base mediante un adaptador LoRA y una cabeza de decisión de 256 dimensiones.
 
 La relevancia del modelo reside en su enfoque: en lugar de pedir a un LLM que "razone" y escriba una respuesta sobre si una acción es segura, se formula como una tarea de clasificación calibrada sobre evidencia estructurada. Esto permite integrarlo en pipelines de defensa de agentes (el proyecto jev-stageA lo usa junto al checkpoint Action-Monitor-C1) donde se necesita una señal probabilística auditable y no una generación textual potencialmente alucinada.
 
@@ -71,10 +71,10 @@ El autor advierte que las tareas de vehículos siguen siendo más débiles y que
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SecJev-4B | 4B (backbone) + LoRA | no disponible | Clasificación calibrada de seguridad | SecJev Use and Distribution Agreement v1.0 | HuggingFace (mirror) |
-| Qwen3.5-4B-Base | 4B | no disponible | LLM generativo base | según Qwen | HuggingFace |
+| SecJev-4B | 4B (backbone) + LoRA | no disponible | Clasificación calibrada de seguridad | SecJev Use and Distribution Agreement v1.0 | Hugging Face (mirror) |
+| Qwen3.5-4B-Base | 4B | no disponible | LLM generativo base | según Qwen | Hugging Face |
 | Kev-4B (upstream) | 4B | no disponible | Modelo de decisión de seguridad original | según proyecto Kev | no disponible en la información |
-| Action-Monitor-C1 | no disponible | no disponible | Monitor de acciones complementario | SecJev Use and Distribution Agreement v1.0 | HuggingFace (mirror) |
+| Action-Monitor-C1 | no disponible | no disponible | Monitor de acciones complementario | SecJev Use and Distribution Agreement v1.0 | Hugging Face (mirror) |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas de la misma categoría en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de la m
 
 ## Enlaces
 
-- HuggingFace (mirror): https://huggingface.co/macmacmacmac/SecJev-4B
+- Hugging Face (mirror): https://huggingface.co/macmacmacmac/SecJev-4B
 - Checkpoint complementario Action-Monitor-C1: https://huggingface.co/macmacmacmac/SecJev-4B-Action-Monitor-C1
 - Repositorio upstream SecJev: https://github.com/UESTC1010/SecJev
 - Release upstream v1.2.0: https://github.com/UESTC1010/SecJev/releases/tag/v1.2.0

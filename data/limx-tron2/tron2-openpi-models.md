@@ -6,7 +6,7 @@ El repositorio `limx-tron2/tron2-openpi-models` aloja checkpoints de modelos de 
 
 La relevancia actual de este modelo reside en su enfoque práctico para la robótica: no se trata de un modelo de lenguaje general, sino de un checkpoint de política que puede integrarse directamente en sistemas de inferencia ya existentes (Pi0/Pi0.5). Sin embargo, la información pública es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia ni idiomas. El tamaño del repositorio (62,2 GB) sugiere pesos en formato de precisión completa o cuantización alta, pero no se confirma.
 
-Dado que el modelo está fechado en 2026 y cuenta con apenas 2 likes y 0 descargas, es probable que se trate de un lanzamiento reciente o experimental. Para una evaluación técnica completa se requeriría acceder a los repositorios de código y a documentación adicional que no está disponible en la ficha de HuggingFace.
+Dado que el modelo está fechado en 2026 y cuenta con apenas 2 likes y 0 descargas, es probable que se trate de un lanzamiento reciente o experimental. Para una evaluación técnica completa se requeriría acceder a los repositorios de código y a documentación adicional que no está disponible en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -68,6 +68,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/limx-tron2/tron2-openpi-models
+- Repositorio de Hugging Face: https://huggingface.co/limx-tron2/tron2-openpi-models
 - Repositorio de código Tron2_openpi: https://github.com/limxdynamics/tron2_openpi
 - Repositorio de código Tron2_env: https://github.com/limxdynamics/tron2_env

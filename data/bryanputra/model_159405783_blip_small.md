@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bryanputra/model_159405783_blip_small` es una implementación a pequeña escala de la arquitectura BLIP (Bootstrapping Language-Image Pre-training), orientada a tareas de aprendizaje contrastivo. Ha sido desarrollado por el usuario bryanputra y publicado en HuggingFace bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio contiene un único archivo Python, `model_159405783_blip_small.py`, que parece ser el artefacto principal del modelo.
+El modelo `bryanputra/model_159405783_blip_small` es una implementación a pequeña escala de la arquitectura BLIP (Bootstrapping Language-Image Pre-training), orientada a tareas de aprendizaje contrastivo. Ha sido desarrollado por el usuario bryanputra y publicado en Hugging Face bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio contiene un único archivo Python, `model_159405783_blip_small.py`, que parece ser el artefacto principal del modelo.
 
 La relevancia de este modelo reside en su carácter experimental: combina una arquitectura BLIP reducida con técnicas como atención dispersa, fusión mediante Tucker, activación Swish, normalización ScaleNorm, inicialización Xavier, optimizador NovoGrad y un scheduler de calentamiento constante. Sin embargo, no se dispone de información pública sobre el tamaño exacto de parámetros, la longitud de contexto o los datos de entrenamiento. El modelo no ha registrado descargas ni interacciones en la plataforma, lo que sugiere que es un proyecto en fase inicial o de investigación personal.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bryanputra/model_159405783_blip_small` | BLIP (small) | no disponible | no disponible | cc-by-4.0 | HuggingFace |
-| Salesforce/blip-vqa-base | BLIP (base) | ~240M | 512 | BSD-3-Clause | HuggingFace |
-| Salesforce/blip-image-captioning-base | BLIP (base) | ~240M | 512 | BSD-3-Clause | HuggingFace |
+| `bryanputra/model_159405783_blip_small` | BLIP (small) | no disponible | no disponible | cc-by-4.0 | Hugging Face |
+| Salesforce/blip-vqa-base | BLIP (base) | ~240M | 512 | BSD-3-Clause | Hugging Face |
+| Salesforce/blip-image-captioning-base | BLIP (base) | ~240M | 512 | BSD-3-Clause | Hugging Face |
 
 Los modelos de Salesforce BLIP son las referencias principales de la arquitectura, pero no se dispone de datos de rendimiento para comparar directamente con el modelo de bryanputra. El modelo de bryanputra se diferencia por su escala "small" y las modificaciones de atención dispersa, fusión Tucker, etc.
 
@@ -79,7 +79,7 @@ Los modelos de Salesforce BLIP son las referencias principales de la arquitectur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bryanputra/model_159405783_blip_small
-- Documentación de BLIP en HuggingFace: https://huggingface.co/docs/transformers/model_doc/blip
-- Documentación de BLIP-2 en HuggingFace: https://huggingface.co/docs/transformers/main/en/model_doc/blip-2
+- Modelo en Hugging Face: https://huggingface.co/bryanputra/model_159405783_blip_small
+- Documentación de BLIP en Hugging Face: https://huggingface.co/docs/transformers/model_doc/blip
+- Documentación de BLIP-2 en Hugging Face: https://huggingface.co/docs/transformers/main/en/model_doc/blip-2
 - Repositorio oficial de BLIP (Salesforce): https://github.com/salesforce/BLIP

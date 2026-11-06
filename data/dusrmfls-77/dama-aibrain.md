@@ -1,7 +1,7 @@
 # dusrmfls-77/dama-aibrain
 
 ## Resumen
-El modelo `dusrmfls-77/dama-aibrain` es un fine-tune del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, desarrollado por el usuario `dusrmfls-77`. Aunque el pipeline declarado en HuggingFace es `image-text-to-text`, no se han publicado detalles sobre capacidades multimodales ni sobre el proceso de entrenamiento más allá de la mención de uso de las librerías Unsloth y TRL. Con 5,12 mil millones de parámetros y una licencia Apache 2.0, se presenta como un modelo de lenguaje conversacional en inglés, pero con una documentación muy escasa. Su relevancia actual es limitada debido a la falta de información pública, aunque su tamaño y licencia abierta lo hacen potencialmente útil para experimentación en entornos de desarrollo.
+El modelo `dusrmfls-77/dama-aibrain` es un fine-tune del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, desarrollado por el usuario `dusrmfls-77`. Aunque el pipeline declarado en Hugging Face es `image-text-to-text`, no se han publicado detalles sobre capacidades multimodales ni sobre el proceso de entrenamiento más allá de la mención de uso de las librerías Unsloth y TRL. Con 5,12 mil millones de parámetros y una licencia Apache 2.0, se presenta como un modelo de lenguaje conversacional en inglés, pero con una documentación muy escasa. Su relevancia actual es limitada debido a la falta de información pública, aunque su tamaño y licencia abierta lo hacen potencialmente útil para experimentación en entornos de desarrollo.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -16,7 +16,7 @@ El modelo `dusrmfls-77/dama-aibrain` es un fine-tune del modelo base `unsloth/ge
 | Formato de pesos | safetensors (según tags y tamaño del repo) |
 
 ## Arquitectura y entrenamiento
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. El nombre del modelo base (`gemma-4-e2b-it`) sugiere que se trata de un fine-tune de un modelo de la familia Gemma 4, pero no se confirma si es una version multimodal o solo de texto. El autor indica que el entrenamiento se realizo con las librerias Unsloth y TRL de HuggingFace, lo que permite un entrenamiento mas rapido, pero no se han publicado datos sobre el dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO. No hay informacion sobre innovaciones tecnicas especificas en este modelo.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo. El nombre del modelo base (`gemma-4-e2b-it`) sugiere que se trata de un fine-tune de un modelo de la familia Gemma 4, pero no se confirma si es una version multimodal o solo de texto. El autor indica que el entrenamiento se realizo con las librerias Unsloth y TRL de Hugging Face, lo que permite un entrenamiento mas rapido, pero no se han publicado datos sobre el dataset, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de RLHF o DPO. No hay informacion sobre innovaciones tecnicas especificas en este modelo.
 
 ## Capacidades
 - Generacion de texto conversacional en ingles (segun la etiqueta `conversational`).
@@ -45,7 +45,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ta
 - El pipeline declarado como `image-text-to-text` no esta confirmado con ejemplos, por lo que su uso multimodal es incierto.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/dusrmfls-77/dama-aibrain
+- Hugging Face: https://huggingface.co/dusrmfls-77/dama-aibrain
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Repositorios con nombre similar (no relacionados directamente): 
   - https://huggingface.co/artnfull/dama-aibrain

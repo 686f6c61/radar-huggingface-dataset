@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Stormy_Night_Moss_Turbo es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los pesos. El repositorio ocupa 5,4 GB, un tamano compatible con un modelo de aproximadamente 7 a 8 mil millones de parametros en precision de 16 bits, aunque no se ha publicado informacion oficial sobre la arquitectura ni el numero exacto de parametros.
+Stormy_Night_Moss_Turbo es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los pesos. El repositorio ocupa 5,4 GB, un tamano compatible con un modelo de aproximadamente 7 a 8 mil millones de parametros en precision de 16 bits, aunque no se ha publicado informacion oficial sobre la arquitectura ni el numero exacto de parametros.
 
-La ficha de HuggingFace no incluye pipeline declarado, idiomas soportados, resultados de benchmarks ni documentacion tecnica sobre el entrenamiento. El nombre "Turbo" sugiere una variante optimizada para inferencia rapida, y el sufijo "Moss" podria indicar un fine-tuning sobre una base existente, pero se trata de inferencias a partir del nombre y no de datos confirmados por el autor.
+La ficha de Hugging Face no incluye pipeline declarado, idiomas soportados, resultados de benchmarks ni documentacion tecnica sobre el entrenamiento. El nombre "Turbo" sugiere una variante optimizada para inferencia rapida, y el sufijo "Moss" podria indicar un fine-tuning sobre una base existente, pero se trata de inferencias a partir del nombre y no de datos confirmados por el autor.
 
 El modelo es relevante unicamente como objeto de evaluacion preliminar: al no existir descargas ni likes en el momento de la consulta, no hay evidencia de uso en la comunidad ni validacion independiente de su calidad. Cualquier adopcion en produccion requeriria una evaluacion propia exhaustiva.
 
@@ -23,7 +23,7 @@ El modelo es relevante unicamente como objeto de evaluacion preliminar: al no ex
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace. No hay datos sobre si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o un SSM, ni sobre el numero de capas, dimensiones ocultas o mecanismo de atencion empleado.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face. No hay datos sobre si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o un SSM, ni sobre el numero de capas, dimensiones ocultas o mecanismo de atencion empleado.
 
 Tampoco se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens procesados, la composicion de los datos, ni sobre si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. El autor no ha publicado model card, paper ni blog tecnico asociado al repositorio.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Stormy_Night_Moss_Turbo
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Stormy_Night_Moss_Turbo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

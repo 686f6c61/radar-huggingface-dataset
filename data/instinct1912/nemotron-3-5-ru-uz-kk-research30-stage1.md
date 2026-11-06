@@ -4,7 +4,7 @@
 
 El modelo `instinct1912/nemotron-3.5-ru-uz-kk-research30-stage1` es un sistema de reconocimiento automático del habla (ASR) multilingüe desarrollado por el usuario `instinct1912` como parte de una línea de investigación experimental. Está especializado en tres idiomas de la región euroasiática: ruso (ru), uzbeko (uz) y kazajo (kk). Se basa en la librería NeMo de NVIDIA, lo que sugiere que utiliza arquitecturas de ASR modernas como FastConformer o similares, aunque no se especifican los detalles concretos en la información disponible.
 
-El modelo se presenta como un artefacto de investigación en fase inicial (stage1) con acceso restringido en HuggingFace, lo que implica que requiere aceptar condiciones adicionales para su uso. Su relevancia radica en la cobertura de lenguas de Asia Central y Europa del Este que suelen estar menos representadas en los sistemas ASR comerciales. El repositorio ocupa 7,7 GB, lo que indica un tamaño considerable, probablemente en el rango de cientos de millones de parámetros, aunque no se confirma oficialmente.
+El modelo se presenta como un artefacto de investigación en fase inicial (stage1) con acceso restringido en Hugging Face, lo que implica que requiere aceptar condiciones adicionales para su uso. Su relevancia radica en la cobertura de lenguas de Asia Central y Europa del Este que suelen estar menos representadas en los sistemas ASR comerciales. El repositorio ocupa 7,7 GB, lo que indica un tamaño considerable, probablemente en el rango de cientos de millones de parámetros, aunque no se confirma oficialmente.
 
 Al tratarse de un modelo de investigación sin documentación técnica pública, la información disponible es limitada. No se han publicado detalles sobre arquitectura exacta, datos de entrenamiento, licencia o rendimiento, por lo que esta ficha se basa únicamente en los metadatos del repositorio y en el contexto general de la familia Nemotron de NVIDIA.
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o académicos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o académicos.
 - Licencia no especificada: no se indica si el modelo es de código abierto, si permite uso comercial o si tiene restricciones de redistribución.
 - Sin documentación técnica: no hay papers, guías de uso ni especificaciones de arquitectura, lo que dificulta su integración y depuración.
 - Cobertura limitada a tres idiomas: no soporta otros idiomas de la región, como el tayiko o el turcomano, y puede tener un rendimiento inferior en dialectos o acentos regionales.
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/instinct1912/nemotron-3.5-ru-uz-kk-research30-stage1
+- Repositorio Hugging Face: https://huggingface.co/instinct1912/nemotron-3.5-ru-uz-kk-research30-stage1
 - Página de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron
 - Repositorio GitHub de Nemotron: https://github.com/NVIDIA-NeMo/Nemotron
 - Modelo de referencia de ASR de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b

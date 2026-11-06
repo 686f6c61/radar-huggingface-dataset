@@ -96,7 +96,7 @@ La ventaja diferencial de Ozygram Neural 7B no es la calidad bruta de generacion
 
 - Ausencia total de benchmarks estandar: no hay resultados de HumanEval, MBPP, SWE-bench ni MMLU, lo que impide situar el modelo frente a alternativas conocidas.
 - Metricas autoevaluadas: las cuatro pruebas de la model card fueron disenadas y ejecutadas por el propio autor sobre un unico sistema, sin conjunto de validacion independiente ni protocolo reproducible.
-- Adopcion nula: cero descargas y cero valoraciones en HuggingFace en el momento de la consulta, lo que implica ausencia de verificacion por terceros.
+- Adopcion nula: cero descargas y cero valoraciones en Hugging Face en el momento de la consulta, lo que implica ausencia de verificacion por terceros.
 - Riesgo de alucinacion estructural: el modelo puede emitir JSON con campos plausibles pero incorrectos (`blast_radius_validated: true` sin validacion real). El propio diseno exige un motor AST externo que verifique sintaxis y tests antes de aplicar cualquier parche.
 - Nomenclatura no estandar: los tokens `<|thought_start|>` y `<|thought_end|>` y el "Kev Action Engine" son convenciones del autor, sin especificacion publica sobre como se entrenaron ni sobre su comportamiento si el prompt de sistema no se respeta literalmente.
 - Dependencia del prompt de sistema: el autor advierte que el contrato `[CONTRATO OZYGRAM NEURAL V1]` es inmutable; alterarlo puede degradar el formato de salida y romper el parseo JSON aguas abajo.
@@ -109,7 +109,7 @@ La ventaja diferencial de Ozygram Neural 7B no es la calidad bruta de generacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS
+- Modelo en Hugging Face: https://huggingface.co/Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo. Las coincidencias devueltas corresponden a un establecimiento hostelero de Paris ("Trente Paris") y no guardan relacion con el modelo. No se dispone, por tanto, de paper, blog tecnico, repositorio de codigo ni demo adicionales.

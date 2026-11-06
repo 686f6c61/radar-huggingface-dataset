@@ -92,7 +92,7 @@ Nota: los datos de parametros y contexto de `openai/whisper-small` y `openai/whi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/whisper-swahili-small-ggml
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/whisper-swahili-small-ggml
 - Modelo de origen (ajuste fino en suajili): https://huggingface.co/PaschalK/whisper-swahili-small
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio de whisper.cpp: https://github.com/ggml-org/whisper.cpp

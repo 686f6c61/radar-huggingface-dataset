@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ebisuke/streaming-asr` es un modelo alojado en HuggingFace por el usuario `ebisuke`, publicado bajo el identificador `streaming-asr` y etiquetado con los tags `safetensors`, `streaming_asr` y `region:us`. La etiqueta `streaming_asr` apunta a un sistema de reconocimiento automatico del habla (ASR) disenado para operar en modo streaming, es decir, transcribiendo audio de forma incremental a medida que llega, en lugar de procesar el fichero completo antes de emitir salida.
+`ebisuke/streaming-asr` es un modelo alojado en Hugging Face por el usuario `ebisuke`, publicado bajo el identificador `streaming-asr` y etiquetado con los tags `safetensors`, `streaming_asr` y `region:us`. La etiqueta `streaming_asr` apunta a un sistema de reconocimiento automatico del habla (ASR) disenado para operar en modo streaming, es decir, transcribiendo audio de forma incremental a medida que llega, en lugar de procesar el fichero completo antes de emitir salida.
 
 El dato objetivo mas relevante es su tamano: 824.226.817 parametros, algo menos de mil millones, lo que lo situa en la franja de modelos de transcripcion de gama media-alta que pueden ejecutarse en una sola GPU. El repositorio ocupa 42,9 GB, un volumen muy superior al que corresponderia a los pesos en precision completa (aproximadamente 3,3 GB en fp32), lo que indica que el repositorio contiene material adicional no declarado: variantes de pesos, estados de optimizador, artefactos de entrenamiento o ficheros auxiliares.
 
@@ -58,7 +58,7 @@ Dado que la unica capacidad confirmada por metadatos es el ASR en streaming, los
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se han encontrado valores de WER (word error rate), CER, latencia por fragmento ni comparaciones con otros sistemas ASR en la ficha de HuggingFace ni en los resultados de busqueda consultados.
+No se han publicado resultados de benchmarks en la informacion disponible. No se han encontrado valores de WER (word error rate), CER, latencia por fragmento ni comparaciones con otros sistemas ASR en la ficha de Hugging Face ni en los resultados de busqueda consultados.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados que permitan una comparativa cuantitativa. El
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ebisuke/streaming-asr | 824.226.817 | no disponible | no disponible | no disponible | HuggingFace, 35 descargas |
+| ebisuke/streaming-asr | 824.226.817 | no disponible | no disponible | no disponible | Hugging Face, 35 descargas |
 | Alternativas de la misma categoria (Whisper, Conformer/RNN-T, sherpa-onnx) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de datos verificados que permitan una comparativa cuantitativa. El
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ebisuke/streaming-asr
+- Modelo en Hugging Face: https://huggingface.co/ebisuke/streaming-asr
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

@@ -97,7 +97,7 @@ Frente a llama.cpp sobre el mismo modelo cuantizado y el mismo portatil, el auto
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/prabanta-dev/gemma-4-26B-A4B-it-JNS
+- Repositorio Hugging Face del modelo: https://huggingface.co/prabanta-dev/gemma-4-26B-A4B-it-JNS
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - GGUF de origen: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF
 - Motor Janas (repositorio, GPL-3.0-or-later): https://github.com/prabanta-dev/janas

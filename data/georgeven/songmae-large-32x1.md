@@ -4,7 +4,7 @@
 
 SongMAE-Large 32x1 es un masked autoencoder (MAE) basado en Vision Transformer (ViT) diseñado para el aprendizaje de representaciones de canto de aves a alta resolución temporal. Desarrollado por George Vengrovski (georgeven), el modelo se entrena de forma auto-supervisada mediante reconstrucción de espectrogramas enmascarados, lo que permite obtener embeddings densos y temporales sin necesidad de etiquetas. Su relevancia radica en que facilita tareas como recuperación de cantos, clustering de sílabas, visualización de estructura acústica y análisis downstream en bioacústica, con una resolución de 5 ms por embedding.
 
-El checkpoint concreto (Large 32x1) utiliza parches que abarcan 32 bins mel y 1 bin temporal del espectrograma, produciendo una salida cada 5 ms. Con 98,6 millones de parámetros, el modelo procesa audio en contextos acotados de 5 segundos y genera representaciones de 3072 dimensiones por paso temporal. Está publicado bajo licencia MIT y disponible en HuggingFace con pesos en formato safetensors.
+El checkpoint concreto (Large 32x1) utiliza parches que abarcan 32 bins mel y 1 bin temporal del espectrograma, produciendo una salida cada 5 ms. Con 98,6 millones de parámetros, el modelo procesa audio en contextos acotados de 5 segundos y genera representaciones de 3072 dimensiones por paso temporal. Está publicado bajo licencia MIT y disponible en Hugging Face con pesos en formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgeven/songmae-large-32x1
+- Modelo en Hugging Face: https://huggingface.co/georgeven/songmae-large-32x1
 - Colección de modelos SongMAE: https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong-6a91eb9c42e5cde53962fbec
 - Artículo en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.08.17.745361v1
 - Código fuente: https://github.com/georgevenven/SongMAE

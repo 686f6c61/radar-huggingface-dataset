@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) denominado `OpenThinker-7B-te
 
 El adaptador esta etiquetado con `library_name: peft` y `pipeline_tag: text-generation`, con los tags `lora`, `transformers`, `conversational` y `safetensors`. El tamano del repositorio es de 0,3 GB, coherente con pesos de adaptador y no con un ajuste completo de los 7B parametros que sugiere el nombre del modelo base.
 
-La model card publicada por el autor es la plantilla por defecto de HuggingFace y no contiene informacion cumplimentada: no se documentan datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas. La busqueda web realizada no devolvio resultados relevantes sobre este repositorio, por lo que la mayor parte de las especificaciones quedan marcadas como no disponibles.
+La model card publicada por el autor es la plantilla por defecto de Hugging Face y no contiene informacion cumplimentada: no se documentan datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas. La busqueda web realizada no devolvio resultados relevantes sobre este repositorio, por lo que la mayor parte de las especificaciones quedan marcadas como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ La informacion proporcionada no permite construir una comparativa fiable: no se 
 - Idiomas soportados no disponibles: se desconoce si el modelo mantiene capacidades multilingues y con que calidad.
 - Longitud de contexto no disponible: no se puede planificar su uso en tareas que requieran ventanas largas sin verificacion previa.
 - No apto para produccion sin evaluacion propia: al no existir benchmarks publicados, cualquier despliegue real deberia ir precedido de una bateria de pruebas especifica del dominio.
-- Los tags de la model card incluyen `arxiv:1910.09700`, que corresponde a la referencia de la calculadora de impacto de Machine Learning citada en la plantilla por defecto de HuggingFace; no es un paper sobre este modelo.
+- Los tags de la model card incluyen `arxiv:1910.09700`, que corresponde a la referencia de la calculadora de impacto de Machine Learning citada en la plantilla por defecto de Hugging Face; no es un paper sobre este modelo.
 
 ## Enlaces
 

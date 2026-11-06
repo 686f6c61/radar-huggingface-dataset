@@ -22,7 +22,7 @@ Su relevancia practica es doble: por un lado, reduce el coste de despliegue de u
 | Formato de pesos | safetensors (libreria transformers) |
 | Modelo base | zai-org/GLM-5.3-BF16 |
 | Tamano del repositorio | 464,9 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 24 de septiembre de 2026 |
 | Compatibilidad declarada | SGLang, ModelOpt, NVIDIA Blackwell, endpoints compatibles |
 
@@ -84,7 +84,7 @@ La diferencia mas relevante frente a la variante Flash es la licencia: la versio
 ## Limitaciones y advertencias
 
 - Licencia comercial propietaria: `blackfrost-commercial` con `license:other`. El sitio del fabricante indica que los pesos se adquieren mediante una licencia comercial de pago unico y que el hosting escalable y el trabajo personalizado se facturan aparte. No es un modelo de uso libre.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar.
 - Idiomas limitados a ingles y chino; no hay soporte declarado para castellano ni para otras lenguas.
 - Ausencia total de benchmarks publicados: no es posible estimar calidad, degradacion por cuantizacion ni comparacion con el padre BF16.
 - Cero descargas y cero valoraciones en el momento de la consulta, por lo que no existe validacion independiente de la comunidad.
@@ -98,7 +98,7 @@ La diferencia mas relevante frente a la variante Flash es la licencia: la versio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-Research/GLM-5.3-DERISKED-NVFP4-V2
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-Research/GLM-5.3-DERISKED-NVFP4-V2
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Variante Flash NVFP4 (Blackfrost-AI): https://huggingface.co/Blackfrost-AI/GLM-5.3-Flash-DERISKED-NVFP4
 - Ficha de la variante Flash en LLM Explorer: https://llm-explorer.com/model/Blackfrost-AI%2FGLM-5.3-Flash-DERISKED-NVFP4,5naYIdDhwfCVDnspEyZ459

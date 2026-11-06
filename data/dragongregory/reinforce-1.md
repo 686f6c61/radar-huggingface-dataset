@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient) para resolver el entorno CartPole-v1 de Gym/Gymnasium. Lo publica el usuario dragongregory en HuggingFace y forma parte del flujo de trabajo del Deep Reinforcement Learning Course de HuggingFace, concretamente la unidad 4, dedicada a los metodos de gradiente de politica. No es un modelo de lenguaje: es una politica neuronal que mapea observaciones del entorno (posicion y velocidad del carro, angulo y velocidad angular del poste) a una distribucion de probabilidad sobre dos acciones discretas (empujar a izquierda o a derecha).
+Reinforce-1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient) para resolver el entorno CartPole-v1 de Gym/Gymnasium. Lo publica el usuario dragongregory en Hugging Face y forma parte del flujo de trabajo del Deep Reinforcement Learning Course de Hugging Face, concretamente la unidad 4, dedicada a los metodos de gradiente de politica. No es un modelo de lenguaje: es una politica neuronal que mapea observaciones del entorno (posicion y velocidad del carro, angulo y velocidad angular del poste) a una distribucion de probabilidad sobre dos acciones discretas (empujar a izquierda o a derecha).
 
 El modelo declara una recompensa media de 500.00 +/- 0.00 en CartPole-v1, el maximo alcanzable en este entorno, lo que indica que la politica se mantiene estable durante los 500 pasos del episodio. Se trata de un artefacto de caracter didactico: el repositorio no incluye informacion sobre arquitectura de la red, hiperparametros, numero de episodios de entrenamiento ni licencia. El tamano del repositorio es de 0.0 GB, lo que sugiere que los pesos ocupan muy pocos kilobytes, coherente con una red pequena de tipo MLP.
 
@@ -42,7 +42,7 @@ No se documenta el uso de baseline, normalizacion de retornos, entropy bonus ni 
 - Docencia de reinforcement learning: sirve como ejemplo funcional de REINFORCE en la unidad 4 del Deep RL Course, permitiendo a los estudiantes comparar su propia implementacion con una politica que alcanza la recompensa maxima.
 - Verificacion de pipelines de entrenamiento: se puede cargar como referencia para comprobar que el entorno, la funcion de recompensa y el bucle de evaluacion estan correctamente configurados antes de entrenar variantes propias.
 - Baseline para comparacion de algoritmos: al tener una recompensa media de 500.00 +/- 0.00, actua como techo de rendimiento contra el que medir PPO, A2C u otros metodos en CartPole-v1.
-- Pruebas de infraestructura de evaluacion: util para validar scripts de evaluacion de agentes en HuggingFace o en entornos de integracion continua que comprueben la carga de modelos de reinforcement learning.
+- Pruebas de infraestructura de evaluacion: util para validar scripts de evaluacion de agentes en Hugging Face o en entornos de integracion continua que comprueben la carga de modelos de reinforcement learning.
 - Experimentos de reduccion de varianza: punto de partida para estudiar el efecto de anadir baseline, normalizacion de retornos o descuento sobre una politica ya convergida.
 - Demostraciones en clase o talleres: permite ilustrar en vivo la interaccion de un agente entrenado con un entorno clasico sin requerir hardware especializado.
 
@@ -68,9 +68,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Recompensa media declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-1 (dragongregory) | REINFORCE | CartPole-v1 | 500.00 +/- 0.00 (no verificado) | no disponible | HuggingFace |
-| Agentes PPO de referencia (p. ej. sb3/ppo-CartPole-v1) | PPO | CartPole-v1 | no disponible en esta ficha | MIT (tipica en Stable-Baselines3) | HuggingFace / SB3 |
-| Agentes A2C de referencia (p. ej. sb3/a2c-CartPole-v1) | A2C | CartPole-v1 | no disponible en esta ficha | MIT (tipica en Stable-Baselines3) | HuggingFace / SB3 |
+| Reinforce-1 (dragongregory) | REINFORCE | CartPole-v1 | 500.00 +/- 0.00 (no verificado) | no disponible | Hugging Face |
+| Agentes PPO de referencia (p. ej. sb3/ppo-CartPole-v1) | PPO | CartPole-v1 | no disponible en esta ficha | MIT (tipica en Stable-Baselines3) | Hugging Face / SB3 |
+| Agentes A2C de referencia (p. ej. sb3/a2c-CartPole-v1) | A2C | CartPole-v1 | no disponible en esta ficha | MIT (tipica en Stable-Baselines3) | Hugging Face / SB3 |
 
 No se dispone de datos verificados de rendimiento de los modelos comparables en la informacion proporcionada; la comparativa se limita a algoritmo, entorno y disponibilidad.
 
@@ -87,6 +87,6 @@ No se dispone de datos verificados de rendimiento de los modelos comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragongregory/Reinforce-1
+- Modelo en Hugging Face: https://huggingface.co/dragongregory/Reinforce-1
 - Deep Reinforcement Learning Course, unidad 4 (introduccion): https://huggingface.co/deep-rl-course/unit4/introduction
 - Curso completo de Deep RL: https://huggingface.co/deep-rl-course/unit0/introduction

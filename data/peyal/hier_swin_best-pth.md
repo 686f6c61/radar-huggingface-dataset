@@ -52,4 +52,4 @@ No disponible. No existen datos de rendimiento, parametros ni contexto que permi
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Peyal/hier_swin_best.pth)
+- [Repositorio en Hugging Face](https://huggingface.co/Peyal/hier_swin_best.pth)

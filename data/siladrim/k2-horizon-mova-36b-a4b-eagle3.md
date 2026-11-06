@@ -92,7 +92,7 @@ Comparado con otros draft heads genericos de vLLM, la especificidad de este repo
 
 ## Enlaces
 
-- Repositorio HuggingFace del draft head: https://huggingface.co/Siladrim/K2-Horizon-MoVA-36B-A4B-EAGLE3
+- Repositorio Hugging Face del draft head: https://huggingface.co/Siladrim/K2-Horizon-MoVA-36B-A4B-EAGLE3
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Repositorio de vLLM Speculators: https://github.com/vllm-project/speculators
 - Plugin k2-horizon-vllm: https://github.com/stefanskiasan/k2-horizon-vllm

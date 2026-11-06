@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-4B es un modelo de lenguaje decoder-only de propósito general desarrollado por XHToken (proyecto Spark-X2.5) y publicado en HuggingFace. Esta ficha corresponde a la copia subida por el usuario qikuanz, derivada del modelo base XHToken/Spark-X2.5-4B-Base. Con 4.112.079.360 parámetros (~4,1 B), está diseñado para competir con modelos compactos de despliegue local y en dispositivo, cubriendo conversación, escritura, traducción, razonamiento, código, uso de herramientas y flujos agénticos.
+Spark-X2.5-4B es un modelo de lenguaje decoder-only de propósito general desarrollado por XHToken (proyecto Spark-X2.5) y publicado en Hugging Face. Esta ficha corresponde a la copia subida por el usuario qikuanz, derivada del modelo base XHToken/Spark-X2.5-4B-Base. Con 4.112.079.360 parámetros (~4,1 B), está diseñado para competir con modelos compactos de despliegue local y en dispositivo, cubriendo conversación, escritura, traducción, razonamiento, código, uso de herramientas y flujos agénticos.
 
 Su rasgo técnico principal es una arquitectura de atención híbrida que combina una capa de atención completa con tres capas de atención de ventana deslizante (SWA), lo que reduce el coste computacional asociado al contexto largo y permite una ventana nativa de hasta 1.000.000 de tokens. La model card declara además soporte para más de 200 idiomas y una etapa de entrenamiento específica de contexto largo.
 
@@ -17,7 +17,7 @@ El modelo se presenta como compatible con NVIDIA, Huawei Ascend, Hygon y HOUMO.A
 | Parametros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | Hasta 1.000.000 tokens de forma nativa (según model card) |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica pesos en safetensors; no se documentan variantes GGUF/AWQ/GPTQ oficiales) |
-| Idiomas soportados | Más de 200 idiomas según la model card; el campo de idiomas de HuggingFace aparece vacío |
+| Idiomas soportados | Más de 200 idiomas según la model card; el campo de idiomas de Hugging Face aparece vacío |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (requiere `trust_remote_code` por el tag `custom_code`) |
 | Modelo base | XHToken/Spark-X2.5-4B-Base |
@@ -98,7 +98,7 @@ La ventaja declarada de Spark-X2.5-4B es la ventana de contexto, muy superior a 
 - Código personalizado: el tag `custom_code` implica que la implementación de la arquitectura híbrida no es estándar en transformers y exige `trust_remote_code=True`, con el riesgo de seguridad que conlleva ejecutar código del repositorio.
 - Riesgo de alucinación: no se documentan tasas de alucinación ni se han publicado evaluaciones de fidelidad; como en cualquier LLM de 4 B, es esperable que invente hechos en tareas de conocimiento factual.
 - Discrepancia entre contexto declarado y coste real: aunque la ventana nativa sea de 1 M tokens, el rendimiento efectivo y la memoria de KV-cache a esas longitudes no están documentados ni verificados.
-- Idiomas: la model card declara más de 200 idiomas, pero el campo de idiomas de HuggingFace está vacío y no se detalla la cobertura real por idioma ni la calidad relativa en cada uno.
+- Idiomas: la model card declara más de 200 idiomas, pero el campo de idiomas de Hugging Face está vacío y no se detalla la cobertura real por idioma ni la calidad relativa en cada uno.
 - Sesgos: no se publica ninguna sección de sesgos, composición del dataset ni mitigaciones; el corpus incluye datos web a gran escala, con los sesgos habituales de ese origen.
 - Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales, pero conviene verificar los términos del modelo base XHToken/Spark-X2.5-4B-Base y de los datos de entrenamiento, no detallados.
 - Preparación para producción: no hay información sobre estabilidad en serving, latencia medida, soporte de cuantizaciones oficiales ni garantías de mantenimiento del repositorio.
@@ -106,7 +106,7 @@ La ventaja declarada de Spark-X2.5-4B es la ventana de contexto, muy superior a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qikuanz/Spark-X2.5-4B
+- Modelo en Hugging Face: https://huggingface.co/qikuanz/Spark-X2.5-4B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B-Base
 - Slack del proyecto: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
 - Discord: https://discord.gg/kTDE2Hg8aw

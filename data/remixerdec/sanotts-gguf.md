@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/remixerdec/SanoTTS-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/remixerdec/SanoTTS-GGUF
 - Modelo base sanoTTS: https://huggingface.co/ampixa/sanoTTS
 - Motor de inferencia InflectSanoTTS.cpp: https://github.com/remixer-dec/InflectNanoTTS.cpp
 - Comunidad de novedades del modelo: https://t.me/genaimon

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-ct-w4a16-affine-g64 | ≈27,8 B | no disponible | w4a16 affine g64 | Apache 2.0 | HuggingFace, 26 descargas |
-| Qwen/Qwen3.8-27B (base) | ≈27,8 B | no disponible | pesos originales | Apache 2.0 | HuggingFace, modelo de referencia |
-| Otras variantes cuantizadas del mismo base | ≈27,8 B | no disponible | variable (GPTQ, AWQ, GGUF) | Apache 2.0 | HuggingFace, según autor |
+| qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-ct-w4a16-affine-g64 | ≈27,8 B | no disponible | w4a16 affine g64 | Apache 2.0 | Hugging Face, 26 descargas |
+| Qwen/Qwen3.8-27B (base) | ≈27,8 B | no disponible | pesos originales | Apache 2.0 | Hugging Face, modelo de referencia |
+| Otras variantes cuantizadas del mismo base | ≈27,8 B | no disponible | variable (GPTQ, AWQ, GGUF) | Apache 2.0 | Hugging Face, según autor |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OceanZ/qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-ct-w4a16-affine-g64
+- Repositorio Hugging Face: https://huggingface.co/OceanZ/qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-ct-w4a16-affine-g64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Commit del base referenciado: 1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Documentación de compressed-tensors: no disponible en la información proporcionada

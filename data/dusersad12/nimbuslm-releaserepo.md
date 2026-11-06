@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NimbusLM es un modelo publicado en HuggingFace bajo el identificador `dusersad12/NimbusLM-ReleaseRepo` por el usuario `dusersad12`. Segun su model card, se trata de un modelo de lenguaje orientado a razonamiento, con mejoras sustanciales respecto a una version anterior en tareas de matematicas, programacion y logica general, y con soporte de function calling, busqueda web y carga de ficheros. El autor afirma que la version actual eleva la precision en "GPQA 2026" del 68 % al 91,2 % y que el modelo consume de media 28K tokens por pregunta frente a los 15K de la version previa, lo que sugiere un modo de razonamiento extendido.
+NimbusLM es un modelo publicado en Hugging Face bajo el identificador `dusersad12/NimbusLM-ReleaseRepo` por el usuario `dusersad12`. Segun su model card, se trata de un modelo de lenguaje orientado a razonamiento, con mejoras sustanciales respecto a una version anterior en tareas de matematicas, programacion y logica general, y con soporte de function calling, busqueda web y carga de ficheros. El autor afirma que la version actual eleva la precision en "GPQA 2026" del 68 % al 91,2 % y que el modelo consume de media 28K tokens por pregunta frente a los 15K de la version previa, lo que sugiere un modo de razonamiento extendido.
 
-Existe una discrepancia critica entre los metadatos de HuggingFace y el contenido de la model card. Los metadatos clasifican el repositorio como `roberta`, con pipeline `feature-extraction`, licencia Apache 2.0, 0 descargas, 0 likes y un tamano de repo de 0,0 GB. La model card, en cambio, describe un asistente conversacional de gran escala con benchmarks de razonamiento, plantillas de system prompt, recomendaciones de temperatura (0,7) y variantes como NimbusLM-Small. No se especifican arquitectura, numero de parametros ni longitud de contexto.
+Existe una discrepancia critica entre los metadatos de Hugging Face y el contenido de la model card. Los metadatos clasifican el repositorio como `roberta`, con pipeline `feature-extraction`, licencia Apache 2.0, 0 descargas, 0 likes y un tamano de repo de 0,0 GB. La model card, en cambio, describe un asistente conversacional de gran escala con benchmarks de razonamiento, plantillas de system prompt, recomendaciones de temperatura (0,7) y variantes como NimbusLM-Small. No se especifican arquitectura, numero de parametros ni longitud de contexto.
 
 Por tanto, la ficha se basa exclusivamente en los datos publicados y en los metadatos del repositorio. No hay informacion verificable sobre pesos, tokenizer, dataset de entrenamiento ni resultados reproducibles, por lo que los datos tecnicos que faltan se marcan como "no disponible".
 
@@ -12,7 +12,7 @@ Por tanto, la ficha se basa exclusivamente en los datos publicados y en los meta
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los metadatos de HuggingFace indican `roberta`; la model card no especifica arquitectura) |
+| Arquitectura | no disponible (los metadatos de Hugging Face indican `roberta`; la model card no especifica arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -21,11 +21,11 @@ Por tanto, la ficha se basa exclusivamente en los datos publicados y en los meta
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (repo de 0,0 GB; libreria declarada: transformers, framework pytorch) |
 
-Datos adicionales de la ficha de HuggingFace: pipeline declarado `feature-extraction`, etiquetas `transformers`, `pytorch`, `roberta`, `endpoints_compatible`, `region:us`. Fecha de creacion: 2026-09-27. Descargas: 0. Likes: 0.
+Datos adicionales de la ficha de Hugging Face: pipeline declarado `feature-extraction`, etiquetas `transformers`, `pytorch`, `roberta`, `endpoints_compatible`, `region:us`. Fecha de creacion: 2026-09-27. Descargas: 0. Likes: 0.
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles de arquitectura en la informacion disponible. Los metadatos de HuggingFace etiquetan el modelo como `roberta` y `feature-extraction`, lo que contradice la descripcion de la model card, que presenta un modelo generativo conversacional con modo de razonamiento y function calling. No se indica si se trata de un transformer denso, un MoE, un modelo hibrido ni ninguna innovacion de atencion.
+No se han publicado detalles de arquitectura en la informacion disponible. Los metadatos de Hugging Face etiquetan el modelo como `roberta` y `feature-extraction`, lo que contradice la descripcion de la model card, que presenta un modelo generativo conversacional con modo de razonamiento y function calling. No se indica si se trata de un transformer denso, un MoE, un modelo hibrido ni ninguna innovacion de atencion.
 
 Sobre el entrenamiento, la model card menciona de forma generica "mayores recursos computacionales" y "mecanismos de optimizacion algorítmica durante el post-entrenamiento", sin concretar numero de tokens, composicion del dataset ni si se emplearon tecnicas de RLHF, DPO u otras. Tampoco se detalla el proceso de alineacion ni el pipeline de datos. El unico dato cuantitativo de comportamiento es el aumento del numero medio de tokens por respuesta en razonamiento (de 15K a 28K en el conjunto GPQA), lo que apunta a un modo de pensamiento extendido, pero no se describe como se activa ni como se entrena.
 
@@ -51,7 +51,7 @@ Sobre el entrenamiento, la model card menciona de forma generica "mayores recurs
 - Analisis de documentos cargados: la plantilla `file_template` habilita casos de resumen y Q&A sobre ficheros adjuntos por parte del usuario.
 - Agentes con herramientas: el soporte de function calling declarado permite orquestar llamadas a APIs externas en flujos multi-paso.
 - Sistemas de razonamiento profundo: el mayor consumo de tokens por pregunta lo hace adecuado para tareas donde prima la precision sobre la latencia, como analisis tecnico o auditoria.
-- Extraccion de caracteristicas: dado que los metadatos de HuggingFace declaran `feature-extraction`, podria emplearse para representaciones vectoriales, si bien esto no se confirma en la model card y no hay pesos publicados.
+- Extraccion de caracteristicas: dado que los metadatos de Hugging Face declaran `feature-extraction`, podria emplearse para representaciones vectoriales, si bien esto no se confirma en la model card y no hay pesos publicados.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ Ademas, la model card afirma que en "GPQA 2026" la precision pasa del 68 % (vers
 - VRAM estimada para inferencia: no disponible. Al no conocerse el numero de parametros ni la longitud de contexto, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. Se desconoce si el modelo cabe en tarjetas como RTX 4090, RTX 3090 o similares.
-- Opciones de despliegue: los metadatos marcan `endpoints_compatible` y la libreria es `transformers` con framework `pytorch`, por lo que en principio seria desplegable mediante HuggingFace Inference Endpoints, y potencialmente con vLLM o TGI. No hay confirmacion de soporte de llama.cpp, Ollama ni GGUF.
+- Opciones de despliegue: los metadatos marcan `endpoints_compatible` y la libreria es `transformers` con framework `pytorch`, por lo que en principio seria desplegable mediante Hugging Face Inference Endpoints, y potencialmente con vLLM o TGI. No hay confirmacion de soporte de llama.cpp, Ollama ni GGUF.
 - Latencia y throughput: no disponible.
 - Nota: el repositorio declara 0,0 GB de tamano, por lo que no se confirma la presencia de pesos descargables.
 
@@ -101,7 +101,7 @@ No es posible establecer una comparativa fiable con alternativas reales de la mi
 
 ## Limitaciones y advertencias
 
-- Contradiccion entre metadatos y model card: HuggingFace clasifica el repositorio como `roberta` y `feature-extraction`, mientras que la model card lo describe como un asistente generativo de razonamiento. Esta incoherencia impide determinar que es realmente el modelo.
+- Contradiccion entre metadatos y model card: Hugging Face clasifica el repositorio como `roberta` y `feature-extraction`, mientras que la model card lo describe como un asistente generativo de razonamiento. Esta incoherencia impide determinar que es realmente el modelo.
 - Repositorio vacio: 0,0 GB de tamano y 0 descargas. No se confirma que existan pesos publicados ni tokenizer.
 - Ausencia total de especificaciones: sin datos de parametros, contexto, cuantizacion ni idiomas.
 - Benchmarks no verificables: los modelos de comparacion estan anonimizados y las categorias de la tabla no corresponden a benchmarks publicos estandar, salvo la mencion a GPQA. No se aportan cifras reproducibles.
@@ -114,7 +114,7 @@ No es posible establecer una comparativa fiable con alternativas reales de la mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dusersad12/NimbusLM-ReleaseRepo
+- Repositorio en Hugging Face: https://huggingface.co/dusersad12/NimbusLM-ReleaseRepo
 - Repositorio relacionado del mismo autor (LuminaLM): https://huggingface.co/dusersad12/LuminaLM-ReleaseRepo
 - Seguimiento de lanzamientos de modelos (LM Market Cap): https://lmmarketcap.com/tools/model-release-tracker
 - Registro de actualizaciones de IA (LLM Stats): https://llm-stats.com/llm-updates

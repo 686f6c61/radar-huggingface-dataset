@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kev-4b-mlx-8bit (esta ficha) | 4,2 B | no disponible | Decisión tipada con probabilidades calibradas, solo MLX | Apache-2.0 | HuggingFace, 0 descargas |
-| jaredpalmer/kev-4b (original) | no disponible | no disponible | Decisión tipada, checkpoint bf16 con LoRA y pointer head | Apache-2.0 | HuggingFace |
-| LLM generativo con salida JSON (p. ej. Qwen3.5 base) | no disponible | no disponible | Generación de texto con formato inducido por prompt | Apache-2.0 (base) | HuggingFace |
-| Clasificadores BERT pequeños | 0,1-0,5 B | 512 tokens típicos | Clasificación supervisada de etiqueta fija | variable | HuggingFace |
+| kev-4b-mlx-8bit (esta ficha) | 4,2 B | no disponible | Decisión tipada con probabilidades calibradas, solo MLX | Apache-2.0 | Hugging Face, 0 descargas |
+| jaredpalmer/kev-4b (original) | no disponible | no disponible | Decisión tipada, checkpoint bf16 con LoRA y pointer head | Apache-2.0 | Hugging Face |
+| LLM generativo con salida JSON (p. ej. Qwen3.5 base) | no disponible | no disponible | Generación de texto con formato inducido por prompt | Apache-2.0 (base) | Hugging Face |
+| Clasificadores BERT pequeños | 0,1-0,5 B | 512 tokens típicos | Clasificación supervisada de etiqueta fija | variable | Hugging Face |
 
 La comparación directa con clasificadores BERT no es del todo equivalente: Kev-4B permite definir las preguntas y los criterios en tiempo de inferencia, mientras que un clasificador BERT requiere reentrenamiento por tarea. Frente a un LLM generativo, la ventaja está en la calibración y en evitar el parseo de JSON; la desventaja, en la ausencia de capacidades generativas y de tool calling.
 
@@ -96,7 +96,7 @@ La comparación directa con clasificadores BERT no es del todo equivalente: Kev-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractFramework/kev-4b-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/AbstractFramework/kev-4b-mlx-8bit
 - Modelo base: https://huggingface.co/jaredpalmer/kev-4b
 - Documentación de modelos de decisión de AbstractCore: https://github.com/lpalbou/AbstractCore/blob/main/docs/decision-models.md
 - Repositorio mlx-lm: https://github.com/ml-explore/mlx-lm

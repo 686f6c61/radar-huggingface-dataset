@@ -2,7 +2,7 @@
 
 ## Resumen
 
-diffusion-diff-minimized es un modelo de segmentacion de imagenes publicado por el usuario KhangTruong en HuggingFace, orientado a la deteccion de imagenes sinteticas y, en particular, de imagenes generadas por modelos de difusion. El modelo se distribuye bajo la libreria `sid-unet`, lo que indica que se apoya en una arquitectura tipo UNet para tareas de segmentacion binaria o semantica aplicada a la deteccion de artefactos propios de la generacion sintetica.
+diffusion-diff-minimized es un modelo de segmentacion de imagenes publicado por el usuario KhangTruong en Hugging Face, orientado a la deteccion de imagenes sinteticas y, en particular, de imagenes generadas por modelos de difusion. El modelo se distribuye bajo la libreria `sid-unet`, lo que indica que se apoya en una arquitectura tipo UNet para tareas de segmentacion binaria o semantica aplicada a la deteccion de artefactos propios de la generacion sintetica.
 
 El checkpoint se enmarca en una linea de trabajo de deteccion y localizacion de imagenes falsas mediante segmentacion, un enfoque que va mas alla de la clasificacion global (real/falso) permitiendo senalar las regiones de la imagen con indicios de manipulacion o generacion artificial. El repositorio ocupa 8,2 GB e incluye checkpoints, configuracion, manifiesto de versiones e informes de evaluacion.
 
@@ -30,7 +30,7 @@ No se han publicado detalles sobre la composicion del dataset de entrenamiento, 
 ## Capacidades
 
 - Deteccion de imagenes sinteticas generadas por modelos de difusion mediante segmentacion por pixel.
-- Segmentacion de imagenes con pipeline `image-segmentation` declarado en HuggingFace.
+- Segmentacion de imagenes con pipeline `image-segmentation` declarado en Hugging Face.
 - Integracion con el ecosistema `sid-unet`: los checkpoints se pueden descargar con `sid-pull`, reanudar entrenamiento con `sid-train` y publicar nuevas versiones con `sid-push`.
 - Soporte de reentrenamiento y fine-tuning sobre el checkpoint activo (`checkpoint_latest.pt`, `checkpoint_best.pt`, `checkpoint_periodic.pt`).
 - Versionado de checkpoints mediante manifiesto (`manifest.json`) y carpetas de version (`versions/v1`).
@@ -75,5 +75,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KhangTruong/diffusion-diff-minimized
+- Hugging Face: https://huggingface.co/KhangTruong/diffusion-diff-minimized
 - No se han encontrado en la busqueda web articulos, papers, repositorios de codigo, demos ni blogs adicionales asociados a este modelo en la informacion proporcionada.

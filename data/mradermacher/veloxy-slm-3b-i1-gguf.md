@@ -94,7 +94,7 @@ Diferencias relevantes: Veloxy-SLM-3B es el único de la comparativa que declara
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/Veloxy-SLM-3B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Veloxy-SLM-3B-i1-GGUF
 - Modelo base original: https://huggingface.co/zveloxy/Veloxy-SLM-3B
 - Cuantizaciones estáticas del mismo autor: https://huggingface.co/mradermacher/Veloxy-SLM-3B-GGUF
 - Página de descarga consolidada del cuantizador: https://hf.tst.eu/model#Veloxy-SLM-3B-i1-GGUF

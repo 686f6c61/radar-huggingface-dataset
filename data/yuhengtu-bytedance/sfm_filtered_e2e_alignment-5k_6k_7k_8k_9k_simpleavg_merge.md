@@ -6,7 +6,7 @@ El modelo `sfm_filtered_e2e_alignment-5k_6k_7k_8k_9k_simpleavg_merge` es un merg
 
 Este tipo de merges se utiliza para explorar la interpolación de pesos entre distintos puntos de un mismo entrenamiento, con el objetivo de mejorar la robustez o el rendimiento de la alineación sin necesidad de entrenar un modelo nuevo. La relevancia actual radica en la práctica común de fusionar checkpoints en la comunidad open source para obtener modelos más estables o con mejores capacidades de conversación, aunque en este caso no se proporcionan métricas ni evaluaciones que respalden dicha mejora.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace, que es muy limitada: no se indica licencia, idiomas soportados, contexto, ni datos de entrenamiento. El modelo está disponible en formato safetensors y es compatible con la librería transformers.
+La ficha se basa exclusivamente en la información disponible en Hugging Face, que es muy limitada: no se indica licencia, idiomas soportados, contexto, ni datos de entrenamiento. El modelo está disponible en formato safetensors y es compatible con la librería transformers.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-5k_6k_7k_8k_9k_simpleavg_merge)
+- [Página del modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-5k_6k_7k_8k_9k_simpleavg_merge)
 - [Merge similar: 6k_7k_8k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge)
 - [Merge similar: 7k_8k_9k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-7k_8k_9k_merge)
 - [Merge similar: 4k_5k_6k_avg](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg)

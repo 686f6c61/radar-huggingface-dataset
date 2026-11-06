@@ -114,6 +114,6 @@ Nota: estos resultados provienen de la model card del autor y no han sido verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kataguru/Industry-Coder-27B-v1.0-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/kataguru/Industry-Coder-27B-v1.0-NVFP4
 - Modelo base BF16: https://huggingface.co/kataguru/Industry-Coder-27B-v1.0-BF16
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios de código o demos en la información disponible.

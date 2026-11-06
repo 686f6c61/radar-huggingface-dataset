@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos ASR comparables (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Glimpse-Dictation/Nemotron-3.5-ASR-Streaming-0.6B-gguf
+- Repositorio Hugging Face: https://huggingface.co/Glimpse-Dictation/Nemotron-3.5-ASR-Streaming-0.6B-gguf
 - Modelo base oficial de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Conversión origen: https://huggingface.co/handy-computer/nemotron-3.5-asr-streaming-0.6b-gguf
 - Runtime transcribe.cpp: https://github.com/LegendarySpy/transcribe.cpp

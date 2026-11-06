@@ -80,8 +80,8 @@ Qwen3-8B destaca frente a alternativas de tamaño similar por su soporte nativo 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Qwen/Qwen3-8B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Qwen/Qwen3-8B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/

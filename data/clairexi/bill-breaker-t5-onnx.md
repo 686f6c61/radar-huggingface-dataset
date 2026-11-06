@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clairexi/bill-breaker-t5-onnx | ~223 M | 1024 (configurado) | ONNX fp16 + int8, transformers.js | no disponible | HuggingFace, 0 descargas |
-| clairexi/bill-breaker-t5 (modelo base del export) | ~223 M | no disponible en la información | PyTorch (presumiblemente) | no disponible | HuggingFace |
+| clairexi/bill-breaker-t5-onnx | ~223 M | 1024 (configurado) | ONNX fp16 + int8, transformers.js | no disponible | Hugging Face, 0 descargas |
+| clairexi/bill-breaker-t5 (modelo base del export) | ~223 M | no disponible en la información | PyTorch (presumiblemente) | no disponible | Hugging Face |
 | google/flan-t5-base | ~223 M | 512 tokens nativos | safetensors, transformers | Apache 2.0 (dato general, no verificado en esta búsqueda) | Ampliamente disponible |
 | facebook/bart-large-cnn | ~400 M | 1024 | safetensors, transformers | MIT (dato general, no verificado en esta búsqueda) | Ampliamente disponible, con resultados ROUGE publicados |
 
@@ -89,7 +89,7 @@ El modelo solo tiene sentido frente a `google/flan-t5-base` si se necesita ejecu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clairexi/bill-breaker-t5-onnx
+- Modelo en Hugging Face: https://huggingface.co/clairexi/bill-breaker-t5-onnx
 - Modelo base: https://huggingface.co/clairexi/bill-breaker-t5
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js
 - Los resultados de la búsqueda web proporcionada no contienen enlaces relevantes para este modelo (son foros y páginas de soporte sin relación); no se han podido verificar papers, blogs ni demos adicionales.

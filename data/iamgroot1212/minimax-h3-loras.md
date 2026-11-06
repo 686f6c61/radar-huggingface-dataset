@@ -80,7 +80,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iamgroot1212/minimax-h3-loras
+- Repositorio en Hugging Face: https://huggingface.co/iamgroot1212/minimax-h3-loras
 - Model card del autor: incluida en el propio repositorio, con el texto "All the essential MiniMax H3 LoRas in one place!"
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Los resultados devueltos corresponden a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft.com/microsoft-365, en.wikipedia.org/wiki/Microsoft) y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tayaee/Single_GPU_Llama3-8B` es un modelo de lenguaje de 8.030.261.248 parámetros, publicado en HuggingFace por el usuario `tayaee`. El nombre sugiere que está pensado para ejecutarse en una única GPU, lo que podría ser interesante para despliegues locales o entornos con recursos limitados. Sin embargo, la información disponible es muy escasa: la model card es una plantilla automática sin datos sobre el desarrollo, los datos de entrenamiento, la licencia o los idiomas soportados.
+El modelo `tayaee/Single_GPU_Llama3-8B` es un modelo de lenguaje de 8.030.261.248 parámetros, publicado en Hugging Face por el usuario `tayaee`. El nombre sugiere que está pensado para ejecutarse en una única GPU, lo que podría ser interesante para despliegues locales o entornos con recursos limitados. Sin embargo, la información disponible es muy escasa: la model card es una plantilla automática sin datos sobre el desarrollo, los datos de entrenamiento, la licencia o los idiomas soportados.
 
 Por su etiqueta `llama` y el nombre del modelo, se puede inferir que se trata de un modelo basado en la arquitectura Llama, probablemente Llama 3 de 8.000 millones de parámetros, almacenado en formato `safetensors`. No obstante, al carecer de documentación técnica, cualquier afirmación sobre sus capacidades reales debe ser verificada antes de su uso.
 
@@ -61,7 +61,7 @@ Estimaciones basadas en el tamaño de parámetros y en el formato de pesos, no e
 - VRAM estimada para inferencia con pesos en FP16: ~16 GB para los pesos, más overhead de activaciones y KV cache, lo que sugiere un mínimo de 20-24 GB de VRAM.
 - Con cuantización de 4 bits (si el modelo se puede cuantizar): ~4-5 GB para los pesos, más overhead, lo que permitiría ejecutarlo en GPUs de 8-12 GB.
 - GPU recomendadas: RTX 4090 (24 GB), A100 (40 GB), H100 (80 GB) para FP16; RTX 3060 12GB o RTX 4070 para 4 bits.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (según los tags de HuggingFace).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (según los tags de Hugging Face).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,4 +78,4 @@ No disponible. No se dispone de información sobre modelos comparables en los da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tayaee/Single_GPU_Llama3-8B
+- Hugging Face: https://huggingface.co/tayaee/Single_GPU_Llama3-8B

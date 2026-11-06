@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Desarrollador | Tipo | Licencia | Contexto / entrada | Disponibilidad |
 |---|---|---|---|---|---|
-| Graphormer | Microsoft | Transformer sobre grafos | MIT | Grafo molecular | HuggingFace + Azure Quantum Elements (versiones avanzadas) |
+| Graphormer | Microsoft | Transformer sobre grafos | MIT | Grafo molecular | Hugging Face + Azure Quantum Elements (versiones avanzadas) |
 | Alternativas GNN clásicas (GIN, GAT) | Varios | Message passing | Variable | Grafo molecular | Frameworks abiertos |
-| Modelos de lenguaje químico (p. ej. variantes de ChemLLM) | Varios | Transformer de texto | Variable | Secuencia SMILES | HuggingFace |
+| Modelos de lenguaje químico (p. ej. variantes de ChemLLM) | Varios | Transformer de texto | Variable | Secuencia SMILES | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada para establecer una comparación cuantitativa con alternativas.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/microsoft/Graphormer
+- Hugging Face: https://huggingface.co/microsoft/Graphormer
 - Directorio Distributional-Graphormer: https://huggingface.co/microsoft/Graphormer/tree/main/Distributional-Graphormer
 - Directorio orfb-design: https://huggingface.co/microsoft/Graphormer/tree/main/orfb-design
 - Data summary card: https://huggingface.co/microsoft/graphormer/blob/main/data_summary_card.md

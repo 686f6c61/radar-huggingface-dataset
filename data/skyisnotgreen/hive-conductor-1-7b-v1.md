@@ -85,10 +85,10 @@ Desglose por familia en controller: assignments 9/9, validation 13/13, exact JSO
 
 | Modelo | Parámetros | Contexto | Controller | Planner | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hive Conductor 1.7B | 1,73B | No disponible | 59/60 | 69/77 | lfm1.0 | HuggingFace (safetensors + GGUF) |
+| Hive Conductor 1.7B | 1,73B | No disponible | 59/60 | 69/77 | lfm1.0 | Hugging Face (safetensors + GGUF) |
 | Scion-35B | 35B (aprox.) | No disponible | 50/60 | 15/17 (solo originales) | No disponible | No disponible |
 | controller-only v3 | 1,73B (base) | No disponible | 54/60 | 30/77 | No disponible | Checkpoint previo del mismo autor |
-| LiquidAI/LFM3-1.7B-Base | 1,73B | No disponible | No evaluado | No evaluado | lfm1.0 | HuggingFace |
+| LiquidAI/LFM3-1.7B-Base | 1,73B | No disponible | No evaluado | No evaluado | lfm1.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -101,11 +101,11 @@ Desglose por familia en controller: assignments 9/9, validation 13/13, exact JSO
 - Licencia lfm1.0 (license: other): es necesario revisar los términos del enlace de licencia de LiquidAI antes de uso comercial.
 - El release no incluye adaptador LoRA independiente; solo se soporta el checkpoint mergeado.
 - No se documentan capacidades de tool calling ni de agente autónomo general.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que implica poca validación externa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que implica poca validación externa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SkyIsNotGreen/hive-conductor-1.7b-v1
+- Hugging Face: https://huggingface.co/SkyIsNotGreen/hive-conductor-1.7b-v1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Licencia: https://huggingface.co/LiquidAI/LFM3-1.7B-Base/blob/main/LICENSE
 - Repositorio Hive: https://github.com/sky-is-green/hive

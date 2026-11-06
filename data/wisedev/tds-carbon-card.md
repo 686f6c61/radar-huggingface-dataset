@@ -78,4 +78,4 @@ No disponible. No existen modelos comparables en el sentido tradicional, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [WiseDev/tds-carbon-card](https://huggingface.co/WiseDev/tds-carbon-card)
+- Repositorio en Hugging Face: [WiseDev/tds-carbon-card](https://huggingface.co/WiseDev/tds-carbon-card)

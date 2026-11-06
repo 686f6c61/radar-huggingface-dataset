@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks en esta ficha |
 |---|---|---|---|---|---|
 | NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg2.0-1.0 | ~8.000 M en el base; adaptador LoRA de 0,3 GB | 128.000 tokens heredados del base (no verificado en el adaptador) | No disponible; sujeta a la licencia del base Llama 3.1 | Repositorio público con 0 descargas y 0 likes; sin model card útil | No disponibles |
-| Llama 3.1 8B Instruct | ~8.000 M | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible en HuggingFace y proveedores cloud | No comparados en esta ficha |
+| Llama 3.1 8B Instruct | ~8.000 M | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible en Hugging Face y proveedores cloud | No comparados en esta ficha |
 | Mistral 7B Instruct v0.3 | ~7.200 M | 32.000 tokens | Apache 2.0 | Ampliamente disponible | No comparados en esta ficha |
 | Qwen2.5 7B Instruct | ~7.600 M | 128.000 tokens | Apache 2.0 | Ampliamente disponible | No comparados en esta ficha |
 
@@ -85,7 +85,7 @@ La comparación directa de rendimiento no es posible porque el adaptador no publ
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg2.0-1.0
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg2.0-1.0
 - Modelo base indicado: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Documentación de Transformers: https://huggingface.co/docs/transformers

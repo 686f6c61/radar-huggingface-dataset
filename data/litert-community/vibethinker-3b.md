@@ -81,8 +81,8 @@ No se dispone de datos comparativos con otros modelos de razonamiento de tamano 
 
 ## Enlaces
 
-- HuggingFace (modelo convertido): https://huggingface.co/litert-community/VibeThinker-3B
-- HuggingFace (modelo base): https://huggingface.co/WeiboAI/VibeThinker-3B
+- Hugging Face (modelo convertido): https://huggingface.co/litert-community/VibeThinker-3B
+- Hugging Face (modelo base): https://huggingface.co/WeiboAI/VibeThinker-3B
 - GitHub WeiboAI/VibeThinker: https://github.com/WeiboAI/VibeThinker
 - Paper tecnico (arXiv): https://arxiv.org/abs/2606.16140
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm

@@ -73,8 +73,8 @@ La model card incluye una evaluación medida el 2026-11-01 en un host x86_64 sol
 
 | Modelo | Parametros | Contexto | Entrenamiento propio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxWork-Office-4B | 4B | 8.192 tokens (evaluado) | No (empaquetado sobre Qwen3-4B) | Apache-2.0 | Ollama y HuggingFace |
-| Qwen/Qwen3-4B | 4B | No disponible en la información proporcionada | Sí (modelo base original) | Apache-2.0 | HuggingFace y Ollama |
+| ThoxWork-Office-4B | 4B | 8.192 tokens (evaluado) | No (empaquetado sobre Qwen3-4B) | Apache-2.0 | Ollama y Hugging Face |
+| Qwen/Qwen3-4B | 4B | No disponible en la información proporcionada | Sí (modelo base original) | Apache-2.0 | Hugging Face y Ollama |
 | Alternativas de 4B de otros fabricantes | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es con el propio Qwen3-4B: ThoxWork-Office-4B no modifica los pesos, por lo que su rendimiento intrínseco es el del modelo base, y su valor diferencial se limita al perfil de sistema y al knowledge pack. No se dispone de datos de benchmarks estándar para contrastar con otras alternativas de la misma categoría.
@@ -93,6 +93,6 @@ La comparación relevante es con el propio Qwen3-4B: ThoxWork-Office-4B no modif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxWork-Office-4B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxWork-Office-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo publicado en Ollama: `Thox-ai/thoxwork-office-4b` (referencia de la model card; no se proporciona URL directa)

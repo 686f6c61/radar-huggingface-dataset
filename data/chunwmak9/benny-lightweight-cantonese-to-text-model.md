@@ -2,7 +2,7 @@
 
 ## Resumen
 
-benny-lightweight-cantonese-to-text-model es un modelo de reconocimiento automático del habla (ASR) especializado en cantonés, desarrollado por el usuario chunwmak9 y publicado en HuggingFace. Se trata de un fine-tuning de openai/whisper-base, el modelo base de OpenAI de 72,6 millones de parámetros, adaptado mediante LoRA y posteriormente fusionado con el modelo original. El objetivo declarado por el autor es mejorar la transcripción de vocabulario y expresiones propias del cantonés coloquial, que el Whisper base tiende a normalizar hacia mandarín estándar.
+benny-lightweight-cantonese-to-text-model es un modelo de reconocimiento automático del habla (ASR) especializado en cantonés, desarrollado por el usuario chunwmak9 y publicado en Hugging Face. Se trata de un fine-tuning de openai/whisper-base, el modelo base de OpenAI de 72,6 millones de parámetros, adaptado mediante LoRA y posteriormente fusionado con el modelo original. El objetivo declarado por el autor es mejorar la transcripción de vocabulario y expresiones propias del cantonés coloquial, que el Whisper base tiende a normalizar hacia mandarín estándar.
 
 El modelo aborda un problema concreto: Whisper base, entrenado mayoritariamente con datos multilingües, transcribe audio en cantonés produciendo a menudo texto en chino escrito estándar (mandarín) en lugar de reflejar el léxico cantonés real. Según la model card, el fine-tuning consigue que expresiones como "嘢" o "啊" aparezcan en la transcripción, frente a la salida más genérica del modelo original.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| benny-lightweight-cantonese-to-text-model | 72,6 M | 30 s por segmento (Whisper base) | yue, zh | no disponible | HuggingFace, 0 descargas |
-| openai/whisper-base | 74 M | 30 s por segmento | multilingüe (99 idiomas) | MIT (según el modelo original) | HuggingFace, ampliamente usado |
-| openai/whisper-small | 244 M | 30 s por segmento | multilingüe | MIT (según el modelo original) | HuggingFace, ampliamente usado |
+| benny-lightweight-cantonese-to-text-model | 72,6 M | 30 s por segmento (Whisper base) | yue, zh | no disponible | Hugging Face, 0 descargas |
+| openai/whisper-base | 74 M | 30 s por segmento | multilingüe (99 idiomas) | MIT (según el modelo original) | Hugging Face, ampliamente usado |
+| openai/whisper-small | 244 M | 30 s por segmento | multilingüe | MIT (según el modelo original) | Hugging Face, ampliamente usado |
 
 La comparación con otros fine-tunings específicos de cantonés no está disponible en la información proporcionada. Frente a whisper-base, este modelo sacrifica cobertura multilingüe a cambio de una mejor adaptación al léxico cantonés, según el ejemplo cualitativo del autor.
 
@@ -82,6 +82,6 @@ La comparación con otros fine-tunings específicos de cantonés no está dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chunwmak9/benny-lightweight-cantonese-to-text-model
+- Modelo en Hugging Face: https://huggingface.co/chunwmak9/benny-lightweight-cantonese-to-text-model
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Corpus MDCC (referenciado en la model card, sin enlace directo proporcionado): no disponible

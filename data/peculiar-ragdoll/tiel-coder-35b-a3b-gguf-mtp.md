@@ -84,7 +84,7 @@ Tiel se posiciona como la opcion mas rapida y eficaz para codificacion agentica,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP
+- Repositorio Hugging Face: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF-MTP
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Version sin MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Version MLX: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e

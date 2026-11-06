@@ -1,7 +1,7 @@
 # KairSun/kairsun-270m
 
 ## Resumen
-El modelo KairSun/kairsun-270m es un modelo de lenguaje de 268.098.176 parámetros publicado por el usuario KairSun en HuggingFace. Se distribuye en formato GGUF bajo licencia Gemma y está etiquetado como conversacional, lo que sugiere su uso previsto para tareas de diálogo. No se dispone de una model card detallada: el README únicamente contiene la licencia, sin descripción de arquitectura, datos de entrenamiento, contexto o idiomas soportados.
+El modelo KairSun/kairsun-270m es un modelo de lenguaje de 268.098.176 parámetros publicado por el usuario KairSun en Hugging Face. Se distribuye en formato GGUF bajo licencia Gemma y está etiquetado como conversacional, lo que sugiere su uso previsto para tareas de diálogo. No se dispone de una model card detallada: el README únicamente contiene la licencia, sin descripción de arquitectura, datos de entrenamiento, contexto o idiomas soportados.
 
 Por su tamaño, se sitúa en la categoría de modelos compactos adecuados para inferencia en dispositivos con recursos limitados, como CPU, móviles o sistemas embebidos. El repositorio ocupa 0,3 GB, lo que facilita su despliegue en entornos con poca memoria. Sin embargo, la ausencia de documentación y de resultados de evaluación impide conocer su calidad real, su ventana de contexto o sus capacidades más allá de la generación de texto conversacional.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | KairSun/kairsun-270m | 268M | no disponible | Gemma | GGUF | no disponible |
 | Gemma 3 270M (Google) | 270M | no disponible | Gemma | safetensors (y GGUF vía conversiones) | no disponible |
 | FunctionGemma 270M (Google) | 270M | no disponible | Gemma | safetensors | no disponible |
-| SmolLM2-360M (HuggingFace) | 360M | no disponible | Apache 2.0 | safetensors, GGUF | no disponible |
+| SmolLM2-360M (Hugging Face) | 360M | no disponible | Apache 2.0 | safetensors, GGUF | no disponible |
 
 No se dispone de datos de rendimiento comparables para ninguno de los modelos en la información proporcionada.
 
@@ -69,9 +69,9 @@ No se dispone de datos de rendimiento comparables para ninguno de los modelos en
 - No apto para producción sin una evaluación exhaustiva: al no haber benchmarks ni documentación, no se puede garantizar su calidad, robustez o seguridad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/KairSun/kairsun-270m
+- Hugging Face: https://huggingface.co/KairSun/kairsun-270m
 - Artículo sobre FunctionGemma y Gemma 3 270M: https://www.marktechpost.com/2025/12/26/from-gemma-3-270m-to-functiongemma-how-google-ai-built-a-compact-function-calling-specialist-for-edge-workloads/
-- Modelo FunctionGemma en HuggingFace: https://huggingface.co/google/functiongemma-270m-it
+- Modelo FunctionGemma en Hugging Face: https://huggingface.co/google/functiongemma-270m-it
 - Devpost de KairSun (posiblemente no relacionado con el modelo): https://devpost.com/software/kairsun
 - GitHub de KairSun (posiblemente no relacionado): https://github.com/KairSun
 - Calendario de lanzamientos de modelos IA (contexto): https://www.scriptbyai.com/ai-model-release-calendar/

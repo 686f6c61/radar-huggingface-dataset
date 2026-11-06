@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-2 (124M) | 124 M | 1024 | No disponible | MIT | HuggingFace |
-| nanochat GPT (este checkpoint) | ~171 M (estimado) | 2048 | No disponible | Apache 2.0 | HuggingFace |
+| GPT-2 (124M) | 124 M | 1024 | No disponible | MIT | Hugging Face |
+| nanochat GPT (este checkpoint) | ~171 M (estimado) | 2048 | No disponible | Apache 2.0 | Hugging Face |
 | nanoGPT (Karpathy, 124M) | 124 M | 1024 | No disponible | MIT | GitHub |
 
 No hay benchmarks publicados para ninguno de estos modelos en esta comparativa. La comparación es arquitectónica y de disponibilidad.
@@ -78,6 +78,6 @@ No hay benchmarks publicados para ninguno de estos modelos en esta comparativa. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_100M_s1_2026-09-06_13-16-29_291808-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_100M_s1_2026-09-06_13-16-29_291808-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/p6lwvzbq

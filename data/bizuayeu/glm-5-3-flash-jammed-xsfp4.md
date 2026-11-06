@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-Jammed-XSFP4 es una cuantización derivada del checkpoint `nvidia/GLM-5.3-Flash-FP4-Local`, que a su vez parte del modelo `zai-org/GLM-5.3-Flash` (MIT). El autor de esta variante es el usuario de HuggingFace Bizuayeu, no NVIDIA ni Z.AI. Se trata de un modelo multimodal image-text-to-text con 331.033.893.726 parámetros totales (arquitectura MoE, con 8 de 288 expertos enrutados activos por token según la model card) y un repo de 172 GB repartido en 132 ficheros safetensors.
+GLM-5.3-Flash-Jammed-XSFP4 es una cuantización derivada del checkpoint `nvidia/GLM-5.3-Flash-FP4-Local`, que a su vez parte del modelo `zai-org/GLM-5.3-Flash` (MIT). El autor de esta variante es el usuario de Hugging Face Bizuayeu, no NVIDIA ni Z.AI. Se trata de un modelo multimodal image-text-to-text con 331.033.893.726 parámetros totales (arquitectura MoE, con 8 de 288 expertos enrutados activos por token según la model card) y un repo de 172 GB repartido en 132 ficheros safetensors.
 
 El objetivo concreto es reducir el consumo de memoria en sistemas GB10 (clase DGX Spark) frente a la variante XSFP4 del mismo autor: 14,2 GB menos en total, 6,58 GiB menos por máquina en configuración TP=2 y entre 4,1 y 4,5 GiB en TP=3. La estrategia consiste en recuantizar solo los expertos enrutados de las capas 3 a 44 a NVFP4 con escalas de bloque de 32 elementos (en lugar de 16) y almacenarlas en formato CSF0 de longitud fija, mientras el resto de tensores (atención, MLP densa, shared experts, router, embeddings, torre de visión y capa MTP) se mantienen byte a byte como en FP4-Local.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | GLM-5.3-Flash-Jammed-XSFP4 | 331B (MoE, 8/288 activos) | no disponible | NVFP4 bloque 32 + CSF0 | NVIDIA Open Model Agreement | Solo TensorFold con kernels CSF0 |
 | Bizuayeu/GLM-5.3-Flash-XSFP4 | 331B (MoE) | no disponible | NVFP4 bloque 16 + CSF | NVIDIA Open Model Agreement | Cargadores NVFP4 estándar según la model card |
 | nvidia/GLM-5.3-Flash-FP4-Local | 331B (MoE) | no disponible | NVFP4 + 8-bit denso | NVIDIA Open Model Agreement | Cargadores NVFP4 |
-| zai-org/GLM-5.3-Flash | 331B (MoE) | no disponible | BF16 | MIT | HuggingFace estándar |
+| zai-org/GLM-5.3-Flash | 331B (MoE) | no disponible | BF16 | MIT | Hugging Face estándar |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bizuayeu/GLM-5.3-Flash-Jammed-XSFP4
+- Hugging Face: https://huggingface.co/Bizuayeu/GLM-5.3-Flash-Jammed-XSFP4
 - Modelo base NVIDIA: https://huggingface.co/nvidia/GLM-5.3-Flash-FP4-Local
 - Variante XSFP4: https://huggingface.co/Bizuayeu/GLM-5.3-Flash-XSFP4
 - Upstream Z.AI: https://huggingface.co/zai-org/GLM-5.3-Flash

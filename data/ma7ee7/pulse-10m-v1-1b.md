@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pulse-10M v1 es un modelo de lenguaje causal de aproximadamente 9,7 millones de parametros entrenado desde cero por el usuario Ma7ee7 y publicado en HuggingFace bajo licencia Apache-2.0. El identificador del repositorio ("Pulse-10M-v1-1B") puede inducir a confusion: el sufijo "1B" hace referencia a los 1.000 millones de tokens de entrenamiento (objetivos next-token), no al numero de parametros, que se situa en el entorno de 9,7M.
+Pulse-10M v1 es un modelo de lenguaje causal de aproximadamente 9,7 millones de parametros entrenado desde cero por el usuario Ma7ee7 y publicado en Hugging Face bajo licencia Apache-2.0. El identificador del repositorio ("Pulse-10M-v1-1B") puede inducir a confusion: el sufijo "1B" hace referencia a los 1.000 millones de tokens de entrenamiento (objetivos next-token), no al numero de parametros, que se situa en el entorno de 9,7M.
 
 Su interes no esta en la capacidad de generacion, muy limitada por tamano y volumen de datos, sino en la arquitectura: un modelo recurrente jerarquico y secuencial con computo adaptativo. El flujo es embedding de tokens, modulo Stem, jerarquia recurrente Fast, Medium y Slow, salida (Exit) y cabeza LM, con un controlador de parada de estilo ACT que decide cuantos ciclos recurrentes ejecutar (maximo de 4). Dentro de cada ciclo se pueden activar selectivamente los niveles Fast, Medium y Slow mediante probabilidades de enrutamiento de profundidad aprendidas.
 
@@ -96,10 +96,10 @@ No se dispone en la informacion proporcionada de datos verificados de modelos co
 - Sesgos previsibles del corpus: Ultra-FineWeb y Wikipedia introducen sesgo hacia contenido web en ingles, y Stack v2 aporta codigo con sus propios sesgos de estilo y licencias de origen.
 - Restricciones de licencia: Apache-2.0 permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; la licencia no cubre las licencias de los datos de entrenamiento de terceros.
 - Repositorio de 5,4 GB: la mayor parte del peso corresponde a checkpoints de entrenamiento y estado del corpus, no a los pesos finales, algo a tener en cuenta antes de descargarlo.
-- La fecha de creacion registrada en HuggingFace figura como 2026-10-06, dato anomalo que conviene verificar antes de citar el modelo como referencia temporal.
+- La fecha de creacion registrada en Hugging Face figura como 2026-10-06, dato anomalo que conviene verificar antes de citar el modelo como referencia temporal.
 - Ausencia total de benchmarks publicados: no es posible validar su rendimiento con cifras objetivas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ma7ee7/Pulse-10M-v1
+- Modelo en Hugging Face: https://huggingface.co/Ma7ee7/Pulse-10M-v1
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

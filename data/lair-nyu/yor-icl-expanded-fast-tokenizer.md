@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - El tokenizador es un componente de preprocesamiento ligero: no requiere GPU para tokenizar secuencias de acción. Su ejecución es puramente estadística (transformada de Fourier y cuantización) y puede realizarse en CPU.
 - Para el entrenamiento de políticas VLA que lo utilizan, se requieren GPUs de alta capacidad: las configuraciones `pi0-fast` de openpi suelen entrenarse con GPUs como A100 (80 GB) o H100, dependiendo del tamaño del backbone (pi0.5 en el caso de `yor_icl_fast_victr_vision_expanded`).
 - Para inferencia en robots, el tokenizador se ejecuta en el mismo dispositivo que la política (típicamente una GPU embebida como Jetson Orin o una GPU de escritorio), pero su coste es despreciable frente al del modelo VLA.
-- Opciones de despliegue: al ser un procesador estándar de HuggingFace, puede integrarse en pipelines con `transformers`, openpi, o cualquier framework que soporte `AutoProcessor`. No requiere vLLM ni llama.cpp, ya que no es un modelo generativo de lenguaje.
+- Opciones de despliegue: al ser un procesador estándar de Hugging Face, puede integrarse en pipelines con `transformers`, openpi, o cualquier framework que soporte `AutoProcessor`. No requiere vLLM ni llama.cpp, ya que no es un modelo generativo de lenguaje.
 
 ## Comparativa con modelos similares
 
@@ -71,7 +71,7 @@ No disponible. No se ha encontrado información sobre tokenizadores de acción a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lair-nyu/yor-icl-expanded-fast-tokenizer
+- Repositorio Hugging Face: https://huggingface.co/lair-nyu/yor-icl-expanded-fast-tokenizer
 - Paper FAST: https://arxiv.org/abs/2501.09747
 - Checkpoint de política relacionado: https://huggingface.co/lair-nyu/yor_icl_fast_victr_vision_expanded_full
-- Perfil de LAIR NYU en HuggingFace: https://huggingface.co/lair-nyu/models
+- Perfil de LAIR NYU en Hugging Face: https://huggingface.co/lair-nyu/models

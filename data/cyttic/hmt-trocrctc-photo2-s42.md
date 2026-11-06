@@ -71,7 +71,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 | Modelo | Parametros | Contexto | CER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrctc-photo2-s42 | 87,3 M | no disponible | 0,1223 | MIT | HuggingFace |
+| cyttic/hmt-trocrctc-photo2-s42 | 87,3 M | no disponible | 0,1223 | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-photo2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-photo2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card)
 - Resultados detallados: `results.json` (referenciado en la model card, no se proporciona URL directa)
 - Estudio `htr-metrics-transfer`: no disponible enlace público en la información proporcionada.

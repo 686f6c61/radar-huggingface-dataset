@@ -89,9 +89,9 @@ No se dispone de datos cuantitativos de los modelos comparables en la informacio
 
 | Modelo | Relacion | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mulligan/sim-square-broad-r02-mining-no-cf-divl | Este modelo (critico DIVL) | no disponible | no aplica | 81,25 % de exito medio (5 semillas) | MIT | Publicado en HuggingFace |
-| mulligan/sim-square-broad-r02-mining-no-cf-idql | Modelo padre del que se hereda el actor congelado | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Publicado en HuggingFace |
-| mulligan/sim-square-broad-c02-dagger-mulligan | Conjunto de datos de la misma campana (no es un modelo) | no aplica | no aplica | no aplica | no disponible en la informacion proporcionada | Publicado en HuggingFace |
+| mulligan/sim-square-broad-r02-mining-no-cf-divl | Este modelo (critico DIVL) | no disponible | no aplica | 81,25 % de exito medio (5 semillas) | MIT | Publicado en Hugging Face |
+| mulligan/sim-square-broad-r02-mining-no-cf-idql | Modelo padre del que se hereda el actor congelado | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Publicado en Hugging Face |
+| mulligan/sim-square-broad-c02-dagger-mulligan | Conjunto de datos de la misma campana (no es un modelo) | no aplica | no aplica | no aplica | no disponible en la informacion proporcionada | Publicado en Hugging Face |
 
 No se han identificado en la busqueda web alternativas comparables de terceros para esta tarea concreta (tarea simulada `sim-square-broad` dentro de la campana Mulligan).
 
@@ -112,9 +112,9 @@ No se han identificado en la busqueda web alternativas comparables de terceros p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-mining-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-mining-no-cf-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r02-mining-no-cf-idql
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Pagina del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

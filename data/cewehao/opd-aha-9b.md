@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OPD-Aha-9B es un modelo multimodal de visión y lenguaje (image-text-to-text) desarrollado por el usuario CewEhao y publicado en HuggingFace. Se construye mediante ajuste fino sobre Qwen/Qwen3.5-9B, un modelo base de aproximadamente 9.400 millones de parámetros, y su objetivo declarado es mejorar la percepción visual de grano fino y el razonamiento matemático multimodal. El modelo forma parte del framework OPD-Aha (On-Policy Self-Distillation), cuyo código está disponible en GitHub.
+OPD-Aha-9B es un modelo multimodal de visión y lenguaje (image-text-to-text) desarrollado por el usuario CewEhao y publicado en Hugging Face. Se construye mediante ajuste fino sobre Qwen/Qwen3.5-9B, un modelo base de aproximadamente 9.400 millones de parámetros, y su objetivo declarado es mejorar la percepción visual de grano fino y el razonamiento matemático multimodal. El modelo forma parte del framework OPD-Aha (On-Policy Self-Distillation), cuyo código está disponible en GitHub.
 
 La innovación principal es el método de entrenamiento: destilación on-policy autodirigida con un profesor visual congelado (frozen visual teacher) y una entrada visual contrafactual, de forma que el aprendizaje se concentre en la evidencia visual que realmente modifica la distribución del profesor. Los tags del repositorio mencionan también aprendizaje por refuerzo (reinforcement-learning) como parte del pipeline.
 
@@ -88,9 +88,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OPD-Aha-9B | ~9,4B | imagen + texto | no disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-9B (modelo base) | ~9,4B | imagen + texto (modelo base del ajuste) | no disponible | no disponible en la informacion facilitada | HuggingFace, ampliamente disponible |
-| Modelos VLM abiertos de tamano similar (por ejemplo, familias Qwen-VL de 7-9B o InternVL de ~8B) | ~7-9B | imagen + texto | 32k-128k segun variante (dato publico de esas familias, no verificado en esta ficha) | habitualmente Apache-2.0 o licencias propias | HuggingFace |
+| OPD-Aha-9B | ~9,4B | imagen + texto | no disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-9B (modelo base) | ~9,4B | imagen + texto (modelo base del ajuste) | no disponible | no disponible en la informacion facilitada | Hugging Face, ampliamente disponible |
+| Modelos VLM abiertos de tamano similar (por ejemplo, familias Qwen-VL de 7-9B o InternVL de ~8B) | ~7-9B | imagen + texto | 32k-128k segun variante (dato publico de esas familias, no verificado en esta ficha) | habitualmente Apache-2.0 o licencias propias | Hugging Face |
 
 Advertencia: los datos de la tercera fila corresponden a especificaciones generales de familias publicas de VLMs y no han sido verificados contra fuentes en esta busqueda; no se dispone de resultados de benchmarks de OPD-Aha-9B que permitan una comparacion de rendimiento real. La busqueda web realizada no devolvio informacion tecnica util sobre este modelo ni sobre su modelo base.
 
@@ -109,7 +109,7 @@ Advertencia: los datos de la tercera fila corresponden a especificaciones genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CewEhao/OPD-Aha-9B
+- Modelo en Hugging Face: https://huggingface.co/CewEhao/OPD-Aha-9B
 - Repositorio de codigo: https://github.com/Echochef/OPD-Aha
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ecosistema Qwen3-VL (agradecimientos): https://github.com/QwenLM/Qwen3-VL

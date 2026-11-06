@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SE Primer · Nöbet Arkadaşı v2.0.0 es un clasificador tabular binario desarrollado por el usuario de HuggingFace batuhangelegen. No es un modelo de lenguaje: es un pipeline de scikit-learn (`log(1+x)` → `StandardScaler` → `LogisticRegression`) exportado a ONNX que predice la probabilidad de que un jugador elija la opción rápida pero arriesgada (opción B) en el siguiente turno de un juego educativo de ingeniería del software. El modelo se integra en la aplicación SE Primer, que se ejecuta en el navegador mediante `onnxruntime-web`, y su función es activar una intervención pedagógica (una pregunta socrática, una pista y un temporizador de 60 segundos) cuando la probabilidad estimada es igual o superior a τ = 0,5.
+SE Primer · Nöbet Arkadaşı v2.0.0 es un clasificador tabular binario desarrollado por el usuario de Hugging Face batuhangelegen. No es un modelo de lenguaje: es un pipeline de scikit-learn (`log(1+x)` → `StandardScaler` → `LogisticRegression`) exportado a ONNX que predice la probabilidad de que un jugador elija la opción rápida pero arriesgada (opción B) en el siguiente turno de un juego educativo de ingeniería del software. El modelo se integra en la aplicación SE Primer, que se ejecuta en el navegador mediante `onnxruntime-web`, y su función es activar una intervención pedagógica (una pregunta socrática, una pista y un temporizador de 60 segundos) cuando la probabilidad estimada es igual o superior a τ = 0,5.
 
 El modelo resuelve un problema muy acotado: estimar, a partir del comportamiento previo del jugador en la partida, si este va a precipitarse en la siguiente decisión. La entrada es un vector de 10 características float32 conocidas en el momento en que se abre la pantalla de decisión (nivel declarado, número de escena, tiempo de lectura de la crisis, número de elecciones arriesgadas previas, etc.), y la salida es una distribución de dos clases. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de redactar esta ficha.
 
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SE Primer · Nöbet Arkadaşı v2.0.0 | Regresión logística sobre 10 características | No aplica | MIT | HuggingFace, 0 descargas |
+| SE Primer · Nöbet Arkadaşı v2.0.0 | Regresión logística sobre 10 características | No aplica | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,6 +97,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/batuhangelegen/se-primer-nobet-arkadasi
+- Modelo en Hugging Face: https://huggingface.co/batuhangelegen/se-primer-nobet-arkadasi
 - Repositorio del proyecto: https://github.com/bgelegen/se-primer
 - Registro de experimentos: https://github.com/bgelegen/se-primer/blob/main/DENEYLER.md

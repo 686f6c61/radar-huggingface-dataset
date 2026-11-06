@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para este checkpoint. La comparación con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/student_prefix_polaris_15K_qwen3-4b_continual_Q_qwen3-32b_cutoff4096_epoch_1_mask
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/student_prefix_polaris_15K_qwen3-4b_continual_Q_qwen3-32b_cutoff4096_epoch_1_mask
 - Dataset `polaris_hard`: https://huggingface.co/datasets/SeanWang0027/polaris_hard
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio del código Online ROSE: https://github.com/cl-from-nothing/online-rose

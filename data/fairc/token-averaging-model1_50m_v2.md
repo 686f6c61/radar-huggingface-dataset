@@ -75,6 +75,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: FAIRC/token-averaging-model1_50m_v2](https://huggingface.co/FAIRC/token-averaging-model1_50m_v2)
+- [Hugging Face: FAIRC/token-averaging-model1_50m_v2](https://huggingface.co/FAIRC/token-averaging-model1_50m_v2)
 - Repositorio fuente de experimentos (referenciado en la model card como `experiments/chinchilla/model_configs.py`): no disponible
 - Paper o documentación del proyecto token averaging: no disponible

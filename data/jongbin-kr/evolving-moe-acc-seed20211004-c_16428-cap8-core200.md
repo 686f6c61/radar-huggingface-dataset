@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `evolving-moe-acc-seed20211004-c_16428-cap8-core200` es un fine-tune del modelo base `meta-llama/Llama-3.1-8B-Instruct` realizado mediante entrenamiento supervisado (SFT) con la librería TRL. El autor, Jongbin-kr, lo ha publicado en HuggingFace con el propósito de explorar técnicas de mezcla de expertos (MoE) evolutivas, aunque la arquitectura base es un transformer denso de 8 mil millones de parámetros. El nombre del modelo sugiere que se ha aplicado algún mecanismo de evolución de expertos, pero no se proporcionan detalles técnicos en la model card.
+El modelo `evolving-moe-acc-seed20211004-c_16428-cap8-core200` es un fine-tune del modelo base `meta-llama/Llama-3.1-8B-Instruct` realizado mediante entrenamiento supervisado (SFT) con la librería TRL. El autor, Jongbin-kr, lo ha publicado en Hugging Face con el propósito de explorar técnicas de mezcla de expertos (MoE) evolutivas, aunque la arquitectura base es un transformer denso de 8 mil millones de parámetros. El nombre del modelo sugiere que se ha aplicado algún mecanismo de evolución de expertos, pero no se proporcionan detalles técnicos en la model card.
 
 La relevancia actual de este modelo radica en su carácter experimental: representa un intento de combinar el fine-tuning de instrucciones con estrategias de MoE dinámicas, un área de investigación activa en eficiencia y escalabilidad de LLMs. Sin embargo, al carecer de documentación sobre el proceso de entrenamiento, los datos utilizados o las métricas de rendimiento, su utilidad práctica es limitada fuera del ámbito de investigación.
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamaño de 0,9 GB, lo que sugiere que los pesos podrían
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Llama 3.1 8B Instruct, un transformer autoregresivo con atención multi-cabeza y normalización RMSNorm. El modelo se ha fine-tuneado mediante SFT (supervised fine-tuning) utilizando TRL, una librería de HuggingFace para entrenamiento con refuerzo y ajuste fino. El nombre "evolving-moe" sugiere que se ha aplicado alguna variante de mezcla de expertos evolutiva, posiblemente mediante la selección o evolución de subconjuntos de parámetros, pero no hay información pública sobre el método exacto, el dataset utilizado o el número de tokens de entrenamiento.
+La arquitectura subyacente es la de Llama 3.1 8B Instruct, un transformer autoregresivo con atención multi-cabeza y normalización RMSNorm. El modelo se ha fine-tuneado mediante SFT (supervised fine-tuning) utilizando TRL, una librería de Hugging Face para entrenamiento con refuerzo y ajuste fino. El nombre "evolving-moe" sugiere que se ha aplicado alguna variante de mezcla de expertos evolutiva, posiblemente mediante la selección o evolución de subconjuntos de parámetros, pero no hay información pública sobre el método exacto, el dataset utilizado o el número de tokens de entrenamiento.
 
 El entrenamiento se registró en Weights & Biases (enlace en la model card), pero los detalles del run no son accesibles públicamente desde la información proporcionada. Tampoco se indica si se utilizaron técnicas como RLHF o DPO; la model card solo menciona SFT.
 
@@ -80,6 +80,6 @@ No hay información suficiente para establecer una comparativa rigurosa. Como re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jongbin-kr/evolving-moe-acc-seed20211004-c_16428-cap8-core200
+- Hugging Face: https://huggingface.co/Jongbin-kr/evolving-moe-acc-seed20211004-c_16428-cap8-core200
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/cvar_ddpo/acc-seed20211004-persona-sft/runs/93vjbhqk
-- Perfil del autor en HuggingFace: https://huggingface.co/Jongbin-kr
+- Perfil del autor en Hugging Face: https://huggingface.co/Jongbin-kr

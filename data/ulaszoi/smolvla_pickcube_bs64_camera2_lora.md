@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ulasZoi/smolvla_pickcube_bs64_camera2_LORA` es una politica de robotica (vision-language-action, VLA) entrenada por el usuario ulasZoi mediante LeRobot y publicada en HuggingFace. Se trata de un ajuste fino del modelo base `lerobot/smolvla_base`, la implementacion de SmolVLA descrita en el paper arXiv:2506.01844, un modelo VLA compacto y eficiente que, segun su model card, alcanza rendimiento competitivo con un coste computacional reducido y puede desplegarse en hardware de consumo.
+`ulasZoi/smolvla_pickcube_bs64_camera2_LORA` es una politica de robotica (vision-language-action, VLA) entrenada por el usuario ulasZoi mediante LeRobot y publicada en Hugging Face. Se trata de un ajuste fino del modelo base `lerobot/smolvla_base`, la implementacion de SmolVLA descrita en el paper arXiv:2506.01844, un modelo VLA compacto y eficiente que, segun su model card, alcanza rendimiento competitivo con un coste computacional reducido y puede desplegarse en hardware de consumo.
 
 El modelo resuelve una tarea de manipulacion concreta: "pick up the cube" (coger el cubo), sobre un brazo `so_follower` (familia SO-100/SO-101 de bajo coste) con dos camaras de entrenamiento declaradas como `front`/`camera1`-`camera2`. Consume un estado de 6 dimensiones y varias imagenes de 256x256 y 480x640, y produce un vector de accion de 6 dimensiones, a una frecuencia de captura de 30 FPS.
 
@@ -27,7 +27,7 @@ Su relevancia es practica: sirve como ejemplo reproducible de flujo completo de 
 | Dataset de entrenamiento | ulasZoi/smolvla_pickcube_all (243 episodios, 76.011 frames, 30 FPS) |
 | Version de LeRobot | 0.6.2 |
 | Tarea entrenada | "pick up the cube" |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Tipo | Parametros | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ulasZoi/smolvla_pickcube_bs64_camera2_LORA | VLA, fine-tune de SmolVLA | no disponible | 243 episodios / 76.011 frames | apache-2.0 | HuggingFace (0 descargas) |
-| lerobot/smolvla_base | VLA base | no disponible | no disponible | no disponible (el repo derivado usa apache-2.0) | HuggingFace |
-| Otras politicas de LeRobot (ACT, Diffusion Policy, pi0) | Politicas de imitacion | no disponible | no disponible | no disponible | HuggingFace / repositorio LeRobot |
+| ulasZoi/smolvla_pickcube_bs64_camera2_LORA | VLA, fine-tune de SmolVLA | no disponible | 243 episodios / 76.011 frames | apache-2.0 | Hugging Face (0 descargas) |
+| lerobot/smolvla_base | VLA base | no disponible | no disponible | no disponible (el repo derivado usa apache-2.0) | Hugging Face |
+| Otras politicas de LeRobot (ACT, Diffusion Policy, pi0) | Politicas de imitacion | no disponible | no disponible | no disponible | Hugging Face / repositorio LeRobot |
 
 No se dispone de datos numericos verificables (tasas de exito, parametros, contexto) para establecer una comparacion cuantitativa con alternativas de la misma categoria. Cualquier comparacion de rendimiento requeriria ejecutar evaluaciones en robot real, que este repositorio no aporta.
 
@@ -94,7 +94,7 @@ No se dispone de datos numericos verificables (tasas de exito, parametros, conte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2_LORA
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2_LORA
 - Dataset de entrenamiento: https://huggingface.co/datasets/ulasZoi/smolvla_pickcube_all
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ulasZoi/smolvla_pickcube_all
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

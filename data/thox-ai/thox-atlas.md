@@ -74,8 +74,8 @@ Condiciones: host de compilación con CPU x86_64, ejecución solo en CPU, contex
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thox-Atlas | 8B | 8.192 (evaluado) | Persona sobre Qwen3-8B, sin entrenamiento | Apache-2.0 | HuggingFace + Ollama |
-| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Modelo base entrenado | Apache-2.0 | HuggingFace, Ollama |
+| Thox-Atlas | 8B | 8.192 (evaluado) | Persona sobre Qwen3-8B, sin entrenamiento | Apache-2.0 | Hugging Face + Ollama |
+| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Modelo base entrenado | Apache-2.0 | Hugging Face, Ollama |
 | Otras personas THOX (10 restantes) | 8B | no disponible | Mismo esquema de configuración | Apache-2.0 | Ollama |
 
 La comparación relevante es con Qwen3-8B: Thox-Atlas no supera al base en ninguna capacidad medida y solo añade identidad y fundamentación documental. Frente a modelos afinados con instrucciones (por ejemplo, variantes instruct de la misma familia), la diferencia es que aquí no hay ajuste de pesos. No se dispone de datos para comparar con alternativas de otras familias.
@@ -94,7 +94,7 @@ La comparación relevante es con Qwen3-8B: Thox-Atlas no supera al base en ningu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/Thox-Atlas
+- Hugging Face: https://huggingface.co/Thox-ai/Thox-Atlas
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Ejecución en Ollama: `ollama run Thox-ai/thox-atlas` (etiqueta publicada por Thox-ai)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

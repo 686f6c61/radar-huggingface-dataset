@@ -86,5 +86,5 @@ Sin embargo, no hay datos de evaluación comparativa con estos modelos en la inf
 
 ## Enlaces
 
-- [HuggingFace - tadiecool29/xlmr-stl-base-stance](https://huggingface.co/tadiecool29/xlmr-stl-base-stance)
+- [Hugging Face - tadiecool29/xlmr-stl-base-stance](https://huggingface.co/tadiecool29/xlmr-stl-base-stance)
 - [Perfil de GitHub del autor](https://github.com/tadiecool29/tadiecool29/blob/main/README.md)

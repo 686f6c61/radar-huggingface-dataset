@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Opal-meadow-26 es un modelo de generacion de imagenes texto-a-imagen publicado por el usuario kimi000 en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo base black-forest-labs/FLUX.2-klein-base-4B, sobre el que se han aplicado pesos LoRA entrenados mediante aprendizaje por refuerzo, con rango 32 y alpha 64, posteriormente fusionados dentro del transformer. El resultado se distribuye como un pipeline nativo `diffusers.Flux2KleinPipeline` en BF16, sin necesidad de runtime PEFT ni de modulos adicionales en inferencia.
+Opal-meadow-26 es un modelo de generacion de imagenes texto-a-imagen publicado por el usuario kimi000 en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo base black-forest-labs/FLUX.2-klein-base-4B, sobre el que se han aplicado pesos LoRA entrenados mediante aprendizaje por refuerzo, con rango 32 y alpha 64, posteriormente fusionados dentro del transformer. El resultado se distribuye como un pipeline nativo `diffusers.Flux2KleinPipeline` en BF16, sin necesidad de runtime PEFT ni de modulos adicionales en inferencia.
 
 El modelo pertenece a la familia FLUX.2 y cuenta con 3.875.544.576 parametros (aproximadamente 3,88 mil millones) en formato safetensors, con un repositorio de 16,0 GB. La model card lo describe como la ablacion de curriculum "Version Base 20-Family", en la que se entreno a 512 px con 20 pasos de rollout, CFG 4, 16 prompts por iteracion y tamano de grupo 14. Se trata de un experimento de investigacion sobre optimizacion con refuerzo (la propia model card lo diferencia del baseline estatico AlphaGRPO), no de un modelo orientado a produccion.
 
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks del modelo comparado ni de alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimi000/opal-meadow-26
+- Modelo en Hugging Face: https://huggingface.co/kimi000/opal-meadow-26
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Ejecucion de entrenamiento en Weights & Biases: identificador `284c75504e8a9dfc2c2a328cfa2898fd` (no se dispone de URL verificable en la informacion proporcionada)
 - Nombre de la ejecucion de origen: `version-base20-ablation-formal1505-r2-20260909`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Magic51/system-lab-airspace-shall-router` es un clasificador neuronal experimental publicado en HuggingFace que detecta la presencia literal de la palabra inglesa «shall» en pasajes de documentación regulatoria, con el único fin de enrutar esos pasajes a una cola de revisión humana. Lo desarrolla el usuario Magic51 dentro de un proyecto denominado System Lab. No es un modelo generativo: es una cabeza de clasificación binaria (384 → 32 → 2 con ReLU) montada sobre el codificador congelado `sentence-transformers/all-MiniLM-L6-v2`, con 12.386 parámetros entrenables. Su interés es tanto técnico como metodológico, porque la model card documenta con detalle inusual el proceso de anotación con un profesor (`google/flan-t5-base`), tres intentos fallidos anteriores y una evaluación en la que una línea base determinista supera al propio modelo neuronal.
+`Magic51/system-lab-airspace-shall-router` es un clasificador neuronal experimental publicado en Hugging Face que detecta la presencia literal de la palabra inglesa «shall» en pasajes de documentación regulatoria, con el único fin de enrutar esos pasajes a una cola de revisión humana. Lo desarrolla el usuario Magic51 dentro de un proyecto denominado System Lab. No es un modelo generativo: es una cabeza de clasificación binaria (384 → 32 → 2 con ReLU) montada sobre el codificador congelado `sentence-transformers/all-MiniLM-L6-v2`, con 12.386 parámetros entrenables. Su interés es tanto técnico como metodológico, porque la model card documenta con detalle inusual el proceso de anotación con un profesor (`google/flan-t5-base`), tres intentos fallidos anteriores y una evaluación en la que una línea base determinista supera al propio modelo neuronal.
 
 El autor lo etiqueta explícitamente como «Experimental — Not promoted» y advierte de que sus etiquetas no afirman que exista una obligación legal ni que esta se aplique o se haya cumplido. Se entrenó con 82 pasajes aceptados del Reglamento (UE) 2019/947, se validó con 87 del 2019/945 y se evaluó con 77 del 2021/664, todos en inglés y extraídos de consolidaciones de referencia de EASA. El repositorio tiene 0 descargas y 0 «likes», por lo que carece de validación externa alguna.
 
@@ -103,8 +103,8 @@ Frente a un LLM generativo usado como clasificador zero-shot no hay datos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Magic51/system-lab-airspace-shall-router
+- Modelo en Hugging Face: https://huggingface.co/Magic51/system-lab-airspace-shall-router
 - Modelo base (encoder): https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Profesor usado para el etiquetado: https://huggingface.co/google/flan-t5-base
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (papers, blogs, repos o demos); los enlaces anteriores proceden de la información de HuggingFace y de las referencias citadas en la propia model card. No se dispone de URL de paper, blog o demo.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (papers, blogs, repos o demos); los enlaces anteriores proceden de la información de Hugging Face y de las referencias citadas en la propia model card. No se dispone de URL de paper, blog o demo.

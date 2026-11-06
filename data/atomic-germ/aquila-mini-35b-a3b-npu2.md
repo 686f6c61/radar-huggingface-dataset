@@ -68,7 +68,7 @@ No se dispone de datos comparativos fiables. El modelo base es una variante de Q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Aquila-mini-35B-A3B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Aquila-mini-35B-A3B-NPU2
 - Modelo base (XYZAILab/XYZ-Aquila-mini): https://huggingface.co/XYZAILab/XYZ-Aquila-mini
 - Licencia del modelo base: https://huggingface.co/XYZAILab/XYZ-Aquila-mini/blob/main/LICENSE
 - Sitio de FastFlowLM: https://fastflowlm.com

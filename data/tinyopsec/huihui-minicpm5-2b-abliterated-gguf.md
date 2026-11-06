@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Huihui-MiniCPM5-2B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Huihui-MiniCPM5-2B-abliterated-GGUF
 - Modelo base (abliterado, sin cuantizar): https://huggingface.co/huihui-ai/Huihui-MiniCPM5-2B-abliterated
 - Herramienta de cuantizacion llama.cpp: https://github.com/ggerganov/llama.cpp
 - LM Studio: https://lmstudio.ai/

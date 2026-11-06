@@ -82,6 +82,6 @@ La comparacion con SmolLM-135M y Qwen2.5-0.5B se incluye como referencia de cate
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qikp/humanizer-135m-sft-GGUF
+- Repositorio Hugging Face: https://huggingface.co/qikp/humanizer-135m-sft-GGUF
 - Modelo base: https://huggingface.co/qikp/humanizer-135m-sft
 - llama.cpp (herramienta de conversion): https://github.com/ggerganov/llama.cpp

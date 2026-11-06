@@ -67,7 +67,7 @@ No se dispone de información sobre el modelo base ni sobre alternativas directa
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| omnigenesis-analogy-gguf | 3,8 B | no disponible | other | GGUF | HuggingFace (0 descargas, 0 likes) |
+| omnigenesis-analogy-gguf | 3,8 B | no disponible | other | GGUF | Hugging Face (0 descargas, 0 likes) |
 | Alternativa de propósito general ~3-4 B | no disponible | no disponible | no disponible | safetensors/GGUF | no disponible |
 | Alternativa especializada en analogías | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,6 +87,6 @@ No se identifican en la información proporcionada modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Urbanwarrior79/omnigenesis-analogy-gguf
+- Hugging Face: https://huggingface.co/Urbanwarrior79/omnigenesis-analogy-gguf
 - Repositorio de despliegue con el Modelfile de Ollama y el prompt de sistema: no disponible (mencionado en la model card, sin URL)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

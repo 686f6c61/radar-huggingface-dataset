@@ -25,7 +25,7 @@ La relevancia de esta publicacion es doble: por un lado, forma parte de un catal
 
 El repositorio contiene un adaptador de tipo LoRA gestionado con PEFT, entrenado con el framework LLaMA-Factory y la plantilla de prompt `gemma4n_nothink`. La alineacion se realizo en dos fases: una etapa de SFT y, a continuacion, PPO sobre el mejor checkpoint de SFT (`ppo_from_best_sft_lr02e6_e4b/checkpoint-5`). En PPO la funcion de recompensa procede de un esquema RLAIF (retroalimentacion generada por IA) en lugar de anotacion humana directa, lo que permite escalar la senal de preferencia sobre el dataset de dialogo emocional.
 
-El conjunto de datos empleado es `mario-rc/aif-emotional-generation`, de dominio publico en HuggingFace, y el proyecto asociado es `Mario-RC/aif-emotional-model`. La tarea entrenada es la generacion de una respuesta de asistente en tres fragmentos etiquetados por emocion. La model card no especifica el numero de tokens de entrenamiento, la composicion exacta del dataset, la arquitectura interna del modelo base Gemma-4 E4B ni detalles sobre decodificacion u optimizaciones de atencion. La denominacion E4B corresponde, segun la propia documentacion del autor, al tamano efectivo de parametros y no al total de pesos multimodales del modelo base.
+El conjunto de datos empleado es `mario-rc/aif-emotional-generation`, de dominio publico en Hugging Face, y el proyecto asociado es `Mario-RC/aif-emotional-model`. La tarea entrenada es la generacion de una respuesta de asistente en tres fragmentos etiquetados por emocion. La model card no especifica el numero de tokens de entrenamiento, la composicion exacta del dataset, la arquitectura interna del modelo base Gemma-4 E4B ni detalles sobre decodificacion u optimizaciones de atencion. La denominacion E4B corresponde, segun la propia documentacion del autor, al tamano efectivo de parametros y no al total de pesos multimodales del modelo base.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ Criterios de eleccion: frente a la variante E2B, este adaptador parte de un mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/emotional-rlaif-ppo-gemma-4-e4b-it
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/emotional-rlaif-ppo-gemma-4-e4b-it
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mario-rc/aif-emotional-generation
 - Proyecto en GitHub: https://github.com/Mario-RC/aif-emotional-model

@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 45,7 millones de parametros, el modelo ocupa aproximadamente 183 MB en FP32 y 91 MB en FP16. La VRAM necesaria es minima, inferior a 1 GB incluso con overhead de runtime.
 - GPU recomendadas: cualquier GPU moderna con mas de 2 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1650, RTX 3050 o superiores pueden ejecutarlo sin problemas. Tambien es viable en CPU.
 - Compatibilidad con consumer GPU: si, cabe en cualquier GPU de consumo actual, incluso en integradas con suficiente RAM compartida.
-- Opciones de despliegue: se puede cargar con la libreria `transformers` de HuggingFace. Para despliegue local, podria usarse `llama.cpp` o `Ollama` si se convierte a formato GGUF, aunque no hay confirmacion de compatibilidad. En servidores, `vLLM` o `TGI` no son necesarios para un modelo de este tamano.
+- Opciones de despliegue: se puede cargar con la libreria `transformers` de Hugging Face. Para despliegue local, podria usarse `llama.cpp` o `Ollama` si se convierte a formato GGUF, aunque no hay confirmacion de compatibilidad. En servidores, `vLLM` o `TGI` no son necesarios para un modelo de este tamano.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No disponible. No se han encontrado comparativas publicadas ni modelos de refere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_seed43_epoch1
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_seed43_epoch1
 - Paper de ALiBi (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Checkpoint relacionado (epoch4): https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_seed43_epoch4
 - Checkpoint relacionado (100m): https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6

@@ -81,7 +81,7 @@ La principal diferencia frente al original es el tamaño en disco (29,4 GB frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/morikomorizz/Qwen3.8-27B-Uncensored-INT8-W8A16-MTP
+- Modelo en Hugging Face: https://huggingface.co/morikomorizz/Qwen3.8-27B-Uncensored-INT8-W8A16-MTP
 - Modelo base (OrcaRouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión FP8 de OrcaRouter: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8

@@ -71,6 +71,6 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [Comfy-Org/gemma-4](https://huggingface.co/Comfy-Org/gemma-4)
+- Repositorio de Hugging Face: [Comfy-Org/gemma-4](https://huggingface.co/Comfy-Org/gemma-4)
 - Repositorio original del modelo E2B: [google/gemma-4-E2B-it](https://huggingface.co/google/gemma-4-E2B-it)
 - Repositorio original del modelo E4B: [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)

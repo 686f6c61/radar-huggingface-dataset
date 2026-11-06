@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables de los otros dos artefactos en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheCacheIsALie/RidgeFill-Projector-Qwen3-8B
+- Hugging Face: https://huggingface.co/TheCacheIsALie/RidgeFill-Projector-Qwen3-8B
 - Repositorio de datos y código: https://github.com/Approximate-Science/ridgefill-data
 - Fork de llama.cpp: https://github.com/Approximate-Science/llama.cpp-ridgefill
 - Instrucciones del fork: https://github.com/Approximate-Science/llama.cpp-ridgefill/blob/main/RIDGEFILL.md

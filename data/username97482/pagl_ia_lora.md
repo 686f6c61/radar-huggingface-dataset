@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pagl_IA_LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Username97482 en HuggingFace, obtenido mediante ajuste fino supervisado del modelo base unsloth/llama-3-8b-bnb-4bit, que a su vez es una version cuantizada a 4 bits de Llama 3 8B de Meta. No se trata, por tanto, de un modelo entrenado desde cero, sino de un conjunto de pesos de bajo rango que deben cargarse sobre el modelo base para funcionar. El repositorio ocupa unicamente 0,2 GB, un tamano coherente con un adaptador LoRA y no con un modelo de 8.000 millones de parametros completo.
+Pagl_IA_LoRA es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Username97482 en Hugging Face, obtenido mediante ajuste fino supervisado del modelo base unsloth/llama-3-8b-bnb-4bit, que a su vez es una version cuantizada a 4 bits de Llama 3 8B de Meta. No se trata, por tanto, de un modelo entrenado desde cero, sino de un conjunto de pesos de bajo rango que deben cargarse sobre el modelo base para funcionar. El repositorio ocupa unicamente 0,2 GB, un tamano coherente con un adaptador LoRA y no con un modelo de 8.000 millones de parametros completo.
 
 El modelo se publica bajo licencia Apache 2.0 y esta etiquetado para generacion de texto en ingles, con compatibilidad declarada con transformers, text-generation-inference y el ecosistema de Unsloth. La model card es minima: no documenta el dataset de entrenamiento, el numero de pasos, el rango del adaptador, los hiperparametros ni los resultados de evaluacion, por lo que la mayor parte de la informacion tecnica relevante no esta disponible.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada en el estado actual: se trata de un experimento de aju
 
 La arquitectura subyacente es la de Llama 3 8B: un transformer decoder-only con atencion por cabezas agrupadas (GQA), normalizacion RMSNorm y funciones de activacion SwiGLU, con 8.000 millones de parametros y una ventana de contexto de 8.192 tokens. Sobre esa base, el autor ha aplicado un ajuste fino parametro-eficiente mediante LoRA, tecnica que congela los pesos originales e inserta matrices de bajo rango en determinadas capas de proyeccion, de forma que solo se entrenan esos parametros adicionales. El resultado se serializa como un adaptador que debe combinarse con el modelo base en tiempo de carga o fusionarse previamente.
 
-Segun la propia model card, el entrenamiento se realizo con Unsloth, una libreria que reimplementa los kernels de atencion y retropropagacion para acelerar el ajuste fino de modelos Llama. El autor afirma que el modelo se entreno "2x mas rapido" con esta herramienta, pero no aporta ningun dato adicional: ni la composicion del dataset, ni el numero de tokens vistos, ni el rango y alpha del adaptador, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El tag `trl` sugiere el uso de la libreria TRL de HuggingFace para el bucle de entrenamiento supervisado (SFT), pero no se especifica la configuracion.
+Segun la propia model card, el entrenamiento se realizo con Unsloth, una libreria que reimplementa los kernels de atencion y retropropagacion para acelerar el ajuste fino de modelos Llama. El autor afirma que el modelo se entreno "2x mas rapido" con esta herramienta, pero no aporta ningun dato adicional: ni la composicion del dataset, ni el numero de tokens vistos, ni el rango y alpha del adaptador, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El tag `trl` sugiere el uso de la libreria TRL de Hugging Face para el bucle de entrenamiento supervisado (SFT), pero no se especifica la configuracion.
 
 No se documenta ninguna innovacion tecnica propia mas alla del uso de Unsloth. Tampoco se indica si el adaptador se entreno sobre los pesos ya cuantizados a 4 bits o sobre los pesos en precision completa, algo relevante porque el ajuste sobre pesos cuantizados puede degradar ligeramente la calidad final.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
 | Pagl_IA_LoRA (este modelo) | 8.000 M en el base + adaptador no cuantificado | 8.192 tokens (heredado del base) | Apache 2.0, sujeta a la licencia de Llama 3 | Adaptador LoRA, 0 descargas | Minima, sin benchmarks |
-| unsloth/llama-3-8b-bnb-4bit (modelo base) | 8.000 M | 8.192 tokens | Llama 3 Community License | Muy alta difusion en HuggingFace | Ficha detallada de Unsloth |
+| unsloth/llama-3-8b-bnb-4bit (modelo base) | 8.000 M | 8.192 tokens | Llama 3 Community License | Muy alta difusion en Hugging Face | Ficha detallada de Unsloth |
 | meta-llama/Meta-Llama-3-8B | 8.000 M | 8.192 tokens | Llama 3 Community License | Ampliamente disponible | Ficha oficial y paper de Llama 3 |
 | meta-llama/Llama-3.1-8B | 8.000 M | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible | Ficha oficial con benchmarks publicos |
 
@@ -91,10 +91,10 @@ No se dispone de datos de rendimiento comparativos para este adaptador, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Username97482/Pagl_IA_LoRA
+- Modelo en Hugging Face: https://huggingface.co/Username97482/Pagl_IA_LoRA
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Paper de Llama 3: https://arxiv.org/abs/2407.21783
 - Nota: la busqueda web realizada no ha devuelto ninguna fuente relevante sobre este modelo; los resultados obtenidos corresponden a LoRAs de generacion de imagenes (Stable Diffusion, Flux) y no guardan relacion con este adaptador de texto.

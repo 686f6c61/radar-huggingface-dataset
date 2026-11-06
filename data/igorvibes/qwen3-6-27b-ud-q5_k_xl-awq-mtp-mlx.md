@@ -82,7 +82,7 @@ La variante Q5 ofrece mayor fidelidad que la Q4 a costa de 3,5 GiB adicionales. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/igorvibes/Qwen3.6-27B-UD-Q5_K_XL-AWQ-MTP-mlx
+- Repositorio Hugging Face: https://huggingface.co/igorvibes/Qwen3.6-27B-UD-Q5_K_XL-AWQ-MTP-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Importancia matrix (imatrix): https://huggingface.co/unsloth/Qwen3.6-27B-GGUF
 - Documentación de Unsloth Dynamic: https://unsloth.ai/docs/models/qwen3.5/gguf-benchmarks

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `urosavurdic/qwen2.5-1.5b-m3-direct-alt-dpo` es un checkpoint subido al Hub de HuggingFace por el usuario `urosavurdic` el 16 de agosto de 2026. El nombre sugiere que se trata de un fine-tuning del modelo Qwen2.5 de 1.5 mil millones de parámetros, posiblemente mediante Direct Preference Optimization (DPO), aunque no hay confirmación oficial en la model card. El repositorio ocupa 0,3 GB y contiene pesos en formato `safetensors`, lo que indica que es compatible con la librería `transformers`.
+El modelo `urosavurdic/qwen2.5-1.5b-m3-direct-alt-dpo` es un checkpoint subido al Hub de Hugging Face por el usuario `urosavurdic` el 16 de agosto de 2026. El nombre sugiere que se trata de un fine-tuning del modelo Qwen2.5 de 1.5 mil millones de parámetros, posiblemente mediante Direct Preference Optimization (DPO), aunque no hay confirmación oficial en la model card. El repositorio ocupa 0,3 GB y contiene pesos en formato `safetensors`, lo que indica que es compatible con la librería `transformers`.
 
 La model card es una plantilla genérica generada automáticamente, sin información sobre arquitectura, entrenamiento, licencia, idiomas o capacidades. El modelo no tiene descargas ni likes, lo que sugiere que es un experimento reciente o de baja difusión. A pesar de la falta de documentación, su tamaño (inferido de 1.5B) lo posiciona como un modelo ligero, potencialmente útil para tareas de generación de texto en entornos con recursos limitados, pero cualquier uso en producción requeriría una evaluación previa exhaustiva.
 
@@ -53,4 +53,4 @@ No disponible. No se ha proporcionado información sobre modelos comparables ni 
 
 ## Enlaces
 
-- [HuggingFace: urosavurdic/qwen2.5-1.5b-m3-direct-alt-dpo](https://huggingface.co/urosavurdic/qwen2.5-1.5b-m3-direct-alt-dpo)
+- [Hugging Face: urosavurdic/qwen2.5-1.5b-m3-direct-alt-dpo](https://huggingface.co/urosavurdic/qwen2.5-1.5b-m3-direct-alt-dpo)

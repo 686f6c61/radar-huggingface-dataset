@@ -4,7 +4,7 @@
 
 UniverSR es un modelo de super-resolucion de audio que eleva la frecuencia de muestreo de senales de 8, 12, 16 o 24 kHz a 48 kHz mediante un enfoque generativo libre de vocoder. Fue desarrollado por Woongjib Choi, Sangmin Lee, Hyungseob Lim y Hong-Goo Kang, y presentado en el articulo "UniverSR: Unified and Versatile Audio Super-Resolution via Vocoder-Free Flow Matching" (arXiv:2510.00771), aceptado en ICASSP 2026.
 
-A diferencia de los metodos convencionales en dos etapas que predicen un mel-espectrograma y luego sintetizan la forma de onda con un vocoder preentrenado, UniverSR emplea un modelo generativo de flow matching que captura directamente la distribucion condicional de los coeficientes espectrales complejos en el dominio STFT. Esta arquitectura unificada permite tratar indistintamente habla, musica y efectos de sonido con un unico modelo, lo que lo convierte en la opcion recomendada para uso general. El repositorio de HuggingFace pesa 0,5 GB y la licencia es CC-BY-4.0, lo que permite uso comercial con atribucion.
+A diferencia de los metodos convencionales en dos etapas que predicen un mel-espectrograma y luego sintetizan la forma de onda con un vocoder preentrenado, UniverSR emplea un modelo generativo de flow matching que captura directamente la distribucion condicional de los coeficientes espectrales complejos en el dominio STFT. Esta arquitectura unificada permite tratar indistintamente habla, musica y efectos de sonido con un unico modelo, lo que lo convierte en la opcion recomendada para uso general. El repositorio de Hugging Face pesa 0,5 GB y la licencia es CC-BY-4.0, lo que permite uso comercial con atribucion.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Enfoque | Dominios | Tasa de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UniverSR (este modelo) | Flow matching sin vocoder | Habla, musica, efectos | 48 kHz | CC-BY-4.0 | HuggingFace + codigo abierto |
+| UniverSR (este modelo) | Flow matching sin vocoder | Habla, musica, efectos | 48 kHz | CC-BY-4.0 | Hugging Face + codigo abierto |
 | Enfoques en dos etapas (difusion + vocoder) | Difusion sobre mel-espectrograma + vocoder | Habla principalmente | Variable | Variable | Variable |
-| universr-speech | Misma arquitectura, entrenado solo en habla | Habla | 48 kHz | CC-BY-4.0 | HuggingFace |
+| universr-speech | Misma arquitectura, entrenado solo en habla | Habla | 48 kHz | CC-BY-4.0 | Hugging Face |
 
 No se dispone de datos comparativos cuantitativos publicados en la informacion revisada. La ventaja principal declarada por los autores es la eliminacion del vocoder, que simplifica el pipeline y evita los artefactos de sintesis. Para una comparativa numerica rigurosa, es necesario consultar el articulo de ICASSP 2026.
 
@@ -79,8 +79,8 @@ No se dispone de datos comparativos cuantitativos publicados en la informacion r
 
 ## Enlaces
 
-- Repositorio HuggingFace (original): https://huggingface.co/woongzip1/universr-audio
-- Repositorio HuggingFace (copia evaluada): https://huggingface.co/OLDSKOOL978/universr-audio
+- Repositorio Hugging Face (original): https://huggingface.co/woongzip1/universr-audio
+- Repositorio Hugging Face (copia evaluada): https://huggingface.co/OLDSKOOL978/universr-audio
 - Articulo cientifico: https://arxiv.org/abs/2510.00771
 - Version HTML del articulo: https://arxiv.org/html/2510.00771v1
 - Demo interactiva: https://woongzip1.github.io/universr-demo

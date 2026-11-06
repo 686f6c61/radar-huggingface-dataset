@@ -23,7 +23,7 @@ El modelo declara soporte unicamente para ingles, licencia Apache 2.0 y un taman
 | Modelo base | Xenna/stella-embed-0.6b |
 | Tamano del repositorio | 0,6 GB |
 | Framework declarado | GGUF / llama.cpp |
-| Pipeline (HuggingFace) | no disponible |
+| Pipeline (Hugging Face) | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Xenna/stella-embed-0.6b-gguf
+- Repositorio Hugging Face: https://huggingface.co/Xenna/stella-embed-0.6b-gguf
 - Modelo base: https://huggingface.co/Xenna/stella-embed-0.6b
 - Perfil del autor: https://huggingface.co/Xenna
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

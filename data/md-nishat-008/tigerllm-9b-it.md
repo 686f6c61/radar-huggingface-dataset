@@ -2,22 +2,22 @@
 
 ## Resumen
 
-TigerLLM-9B-it es un modelo de lenguaje de 9B (segun la nomenclatura del autor) desarrollado por Nishat Raihan y Marcos Zampieri, de la George Mason University, y publicado en HuggingFace bajo el identificador `md-nishat-008/TigerLLM-9B-it`. Forma parte de la familia TigerLLM, presentada en el articulo "TigerLLM - A Family of Bangla Large Language Models", aceptado en ACL 2025 (Volume 2: Short Papers). El objetivo declarado del proyecto es cubrir el hueco de los modelos abiertos en bengali (Bangla), la quinta lengua mas hablada del mundo con unos 237 millones de hablantes nativos, y ofrecer una alternativa reproducible a las iniciativas previas.
+TigerLLM-9B-it es un modelo de lenguaje de 9B (segun la nomenclatura del autor) desarrollado por Nishat Raihan y Marcos Zampieri, de la George Mason University, y publicado en Hugging Face bajo el identificador `md-nishat-008/TigerLLM-9B-it`. Forma parte de la familia TigerLLM, presentada en el articulo "TigerLLM - A Family of Bangla Large Language Models", aceptado en ACL 2025 (Volume 2: Short Papers). El objetivo declarado del proyecto es cubrir el hueco de los modelos abiertos en bengali (Bangla), la quinta lengua mas hablada del mundo con unos 237 millones de hablantes nativos, y ofrecer una alternativa reproducible a las iniciativas previas.
 
-El modelo se construye sobre una base de la familia Gemma (el texto del paper menciona Gemma-2; las etiquetas de HuggingFace incluyen `gemma3`) y se afina sobre un corpus de instrucciones en bengali de 100K ejemplos (`Bangla-Instruct`), despues de una fase de preentrenamiento declarada de 10M de tokens sobre el corpus `Bangla-TextBook`. Segun el resumen del articulo, la familia TigerLLM supera a todas las alternativas de codigo abierto en benchmarks estandar de bengali y tambien a modelos propietarios mas grandes como GPT-3.5, estableciendose como nueva linea base para el modelado del idioma bengali. La relevancia actual del modelo esta en ese nicho: es una de las pocas alternativas abiertas, documentadas y con pesos publicos para una lengua de bajos recursos.
+El modelo se construye sobre una base de la familia Gemma (el texto del paper menciona Gemma-2; las etiquetas de Hugging Face incluyen `gemma3`) y se afina sobre un corpus de instrucciones en bengali de 100K ejemplos (`Bangla-Instruct`), despues de una fase de preentrenamiento declarada de 10M de tokens sobre el corpus `Bangla-TextBook`. Segun el resumen del articulo, la familia TigerLLM supera a todas las alternativas de codigo abierto en benchmarks estandar de bengali y tambien a modelos propietarios mas grandes como GPT-3.5, estableciendose como nueva linea base para el modelado del idioma bengali. La relevancia actual del modelo esta en ese nicho: es una de las pocas alternativas abiertas, documentadas y con pesos publicos para una lengua de bajos recursos.
 
-Conviene senalar dos discrepancias detectadas en la informacion disponible. La primera es de tamano: el nombre comercial indica 9B, pero los metadatos reales de los safetensors declaran 12.187.325.040 parametros (12,2B). La segunda es de arquitectura base: el paper cita Gemma-2 y las etiquetas de HuggingFace citan `gemma3`. Ambas cuestiones se detallan en las secciones siguientes.
+Conviene senalar dos discrepancias detectadas en la informacion disponible. La primera es de tamano: el nombre comercial indica 9B, pero los metadatos reales de los safetensors declaran 12.187.325.040 parametros (12,2B). La segunda es de arquitectura base: el paper cita Gemma-2 y las etiquetas de Hugging Face citan `gemma3`. Ambas cuestiones se detallan en las secciones siguientes.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Gemma); el paper indica Gemma-2 y las etiquetas de HuggingFace indican `gemma3`, sin confirmacion adicional |
+| Arquitectura | Transformer decoder-only (familia Gemma); el paper indica Gemma-2 y las etiquetas de Hugging Face indican `gemma3`, sin confirmacion adicional |
 | Parametros totales | 12.187.325.040 (12,2B) segun los safetensors del repositorio; el nombre del modelo indica 9B |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (no se especifica en la model card ni en los metadatos) |
 | Tipos de cuantizacion | No disponible en el repositorio; solo se publican pesos en safetensors (sin GGUF ni GPTQ/AWQ publicados) |
-| Idiomas soportados | Bengali (Bangla) como idioma objetivo; el campo de idiomas de HuggingFace figura como no disponible |
+| Idiomas soportados | Bengali (Bangla) como idioma objetivo; el campo de idiomas de Hugging Face figura como no disponible |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 48,8 GB |
@@ -67,7 +67,7 @@ Estimaciones derivadas del recuento real de parametros (12,187,325,040). No son 
 - VRAM para inferencia en 4 bits: aproximadamente 6,1-7 GB de pesos, mas cache KV; es la via practica para GPU de consumo.
 - GPU de datacenter recomendadas: A100 40 GB, H100 80 GB o L40S 48 GB para BF16 con contexto largo y lotes concurrentes.
 - GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB no admiten BF16 completo con margen; si funcionan con cuantizacion de 8 bits (justa) o de 4 bits. Una GPU de 16 GB solo admite cuantizacion de 4 bits con contexto reducido.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, TGI y SGLang soportan pesos safetensors de la familia Gemma. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no publica cuantizaciones GGUF.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, TGI y SGLang soportan pesos safetensors de la familia Gemma. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que el repositorio no publica cuantizaciones GGUF.
 - Latencia y throughput: no disponible; no se han publicado mediciones en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Todos los modelos de la tabla comparten el mismo nicho (LLM abiertos para bengal
 ## Limitaciones y advertencias
 
 - Discrepancia de tamano: el nombre indica 9B pero los safetensors declaran 12,19B parametros. Hay que verificar el numero real antes de dimensionar infraestructura.
-- Ambiguedad sobre la arquitectura base: el paper cita Gemma-2 y las etiquetas de HuggingFace citan `gemma3`. Esto afecta a decisiones como la ventana de contexto real y las librerias compatibles.
+- Ambiguedad sobre la arquitectura base: el paper cita Gemma-2 y las etiquetas de Hugging Face citan `gemma3`. Esto afecta a decisiones como la ventana de contexto real y las librerias compatibles.
 - Longitud de contexto no documentada: no se especifica en la model card ni en los metadatos. Para casos de uso con documentos largos hay que verificar el valor real antes de desplegar.
 - Idiomas: el modelo esta orientado a bengali. No hay confirmacion en la informacion disponible sobre su competencia en castellano u otras lenguas, por lo que no deberia usarse como modelo multilingue general sin evaluacion previa.
 - Riesgo de alucinacion: no se documentan tasas de alucinacion ni procesos de mitigacion. Cualquier despliegue en produccion en dominios factuales (sanidad, legal, financiero) requiere verificacion humana.
@@ -100,7 +100,7 @@ Todos los modelos de la tabla comparten el mismo nicho (LLM abiertos para bengal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/md-nishat-008/TigerLLM-9B-it
+- Modelo en Hugging Face: https://huggingface.co/md-nishat-008/TigerLLM-9B-it
 - Modelo hermano TigerLLM-1B-it: https://huggingface.co/md-nishat-008/TigerLLM-1B-it
 - Articulo en arXiv: https://arxiv.org/pdf/2503.10995 (arXiv:2503.10995)
 - Articulo en ACL Anthology: https://aclanthology.org/2025.acl-short.69/

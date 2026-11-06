@@ -90,8 +90,8 @@ Los resultados de la model-index aparecen marcados como `verified: false`, es de
 
 | Modelo | Parámetros | Contexto | Precisión media PII (11 idiomas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| statim-decide-multilingual-base-pii (adaptador) | 3,38 M | no disponible | 0,9103 | statim-weights (other) | HuggingFace, GGUF f32 y q8_0 |
-| statim-decide-multilingual-base (sin adaptador) | no disponible | no disponible | 0,8558 | statim-weights (other) | HuggingFace |
+| statim-decide-multilingual-base-pii (adaptador) | 3,38 M | no disponible | 0,9103 | statim-weights (other) | Hugging Face, GGUF f32 y q8_0 |
+| statim-decide-multilingual-base (sin adaptador) | no disponible | no disponible | 0,8558 | statim-weights (other) | Hugging Face |
 | Qwen3-8B (zero-shot, referencia del autor) | 8.000 M aprox. | no disponible | 0,878 | no disponible en esta búsqueda | externo |
 
 La comparación de interés que aporta el propio autor es frente a Qwen3-8B ejecutado en zero-shot: el adaptador supera su media (0,9103 frente a 0,878) con tres órdenes de magnitud menos de parámetros, aunque hay que tener en cuenta que el adaptador está entrenado específicamente en esta categoría mientras que Qwen3-8B no. Para otras alternativas de clasificación de PII (por ejemplo modelos tipo GLiNER, Presidio con modelos NER, o BERT multilingüe afinado), no se dispone de datos comparativos en la información proporcionada.
@@ -101,7 +101,7 @@ La comparación de interés que aporta el propio autor es frente a Qwen3-8B ejec
 - Los resultados de benchmarks están declarados por el autor y marcados como no verificados (`verified: false`); deben tratarse como indicativos.
 - Cada celda de evaluación usa solo 150 elementos, lo que limita la potencia estadística. De hecho, ocho de los once idiomas quedan clasificados como "dentro del ruido" y solo tres (it, ja, nl) muestran ganancia significativa a 2 SE.
 - Es un adaptador de decisión, no un modelo generativo: no produce texto, código ni respuestas conversacionales. No debe evaluarse como un LLM.
-- La licencia es `statim-weights` (categoría "other"), con un fichero LICENSE-MODEL.md enlazado en HuggingFace. Las condiciones exactas de uso comercial no están reflejadas en la información disponible y deben consultarse antes de cualquier despliegue en producción.
+- La licencia es `statim-weights` (categoría "other"), con un fichero LICENSE-MODEL.md enlazado en Hugging Face. Las condiciones exactas de uso comercial no están reflejadas en la información disponible y deben consultarse antes de cualquier despliegue en producción.
 - Requiere el runtime Statim en versión 0.8.0 o superior para cargar adaptadores LoRA; el fichero q8_0 solo funciona como LoRA en runtime, no fusionado.
 - La composición del dataset de entrenamiento está truncada en la información disponible, por lo que no se puede evaluar el riesgo de sesgo lingüístico o de dominio derivado de los datos.
 - Como todo clasificador de PII, existe riesgo de falsos negativos (PII no detectada) y falsos positivos (texto legítimo marcado como sensible); la precisión publicada ronda el 0,87-0,95 según idioma, lo que implica una tasa de error no despreciable en aplicaciones críticas de cumplimiento.
@@ -110,10 +110,10 @@ La comparación de interés que aporta el propio autor es frente a Qwen3-8B ejec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beko2210/statim-decide-multilingual-base-pii
+- Modelo en Hugging Face: https://huggingface.co/Beko2210/statim-decide-multilingual-base-pii
 - Modelo base: https://huggingface.co/Beko2210/statim-decide-multilingual-base
 - Licencia del modelo: https://huggingface.co/Beko2210/statim-decide-multilingual-base-pii/blob/main/LICENSE-MODEL.md
-- Perfil del autor en HuggingFace: https://huggingface.co/Beko2210
+- Perfil del autor en Hugging Face: https://huggingface.co/Beko2210
 - Repositorio GitHub del proyecto Statim: https://github.com/BEKO2210/statim
 - Releases y pesos publicados: https://github.com/BEKO2210/statim/releases
 - Documentación de baselines (Qwen3-8B zero-shot): https://github.com/BEKO2210/statim/blob/main/docs/BASELINES.md

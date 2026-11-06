@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-ASR-0.6B-dflash-32k es un modelo borrador (draft) para decodificacion especulativa greedy sobre el modelo de reconocimiento automatico del habla Qwen3-ASR-0.6B. Lo publica el usuario wilsonzheng0327 en HuggingFace y no es un modelo autonomo: es un checkpoint auxiliar que propone tokens que el modelo objetivo verifica, acelerando la generacion sin alterar la transcripcion final. Su relevancia practica esta en reducir el coste por token generado en pipelines de ASR de produccion, donde el modelo objetivo de 0,6B ya es pequeno pero la latencia sigue siendo critica en streaming y transcripcion por lotes.
+Qwen3-ASR-0.6B-dflash-32k es un modelo borrador (draft) para decodificacion especulativa greedy sobre el modelo de reconocimiento automatico del habla Qwen3-ASR-0.6B. Lo publica el usuario wilsonzheng0327 en Hugging Face y no es un modelo autonomo: es un checkpoint auxiliar que propone tokens que el modelo objetivo verifica, acelerando la generacion sin alterar la transcripcion final. Su relevancia practica esta en reducir el coste por token generado en pipelines de ASR de produccion, donde el modelo objetivo de 0,6B ya es pequeno pero la latencia sigue siendo critica en streaming y transcripcion por lotes.
 
 Tecnicamente es un DFlash draft con 5 capas Qwen3 (hidden 1024, intermediate 3072, 16 cabezas de atencion y 8 KV, head_dim 128), una cabeza de lenguaje reducida a 48.000 tokens (variante de 32.000 en el sufijo `-32k`) y un bloque de 8 posiciones con 7 propuestas por ronda. El checkpoint pesa 0,2 GB en bf16 y declara 114.754.432 parametros en safetensors, coherente con una red pequena de 5 capas y vocabulario recortado.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks de precision ASR (WER) ni de MMLU, 
 
 | Modelo | Parametros | Contexto | Aceptacion (all) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR-0.6B-dflash-32k (este) | 114,7 M | 32.768 | 5,04 | Apache 2.0 | HuggingFace |
-| Variante 48k del mismo autor | no disponible | 32.768 | 5,19 | Apache 2.0 | HuggingFace |
-| mattymchen Qwen3-ASR-1.7B-speculator.dflash | no disponible | no disponible | 3,51 | no disponible | HuggingFace |
-| Qwen3-ASR-0.6B (objetivo, sin borrador) | 0,6 B | no disponible | no aplica | no disponible | HuggingFace |
+| Qwen3-ASR-0.6B-dflash-32k (este) | 114,7 M | 32.768 | 5,04 | Apache 2.0 | Hugging Face |
+| Variante 48k del mismo autor | no disponible | 32.768 | 5,19 | Apache 2.0 | Hugging Face |
+| mattymchen Qwen3-ASR-1.7B-speculator.dflash | no disponible | no disponible | 3,51 | no disponible | Hugging Face |
+| Qwen3-ASR-0.6B (objetivo, sin borrador) | 0,6 B | no disponible | no aplica | no disponible | Hugging Face |
 
 La comparativa se limita a los borradores DFlash citados en la model card; no se dispone de datos de otros borradores especulativos para ASR en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ La comparativa se limita a los borradores DFlash citados en la model card; no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wilsonzheng0327/Qwen3-ASR-0.6B-dflash-32k
+- Hugging Face: https://huggingface.co/wilsonzheng0327/Qwen3-ASR-0.6B-dflash-32k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Referencia de layout DFlash: https://huggingface.co/mattymchen/Qwen3-ASR-1.7B-speculator.dflash
 - Libreria `speculators`: no disponible en la informacion proporcionada

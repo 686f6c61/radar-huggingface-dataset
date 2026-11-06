@@ -36,7 +36,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible explícitamente; la model card solo menciona razonamiento multi-turno conversacional.
 - Modo thinking, visión o audio: no disponible en la información proporcionada.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` aparece en los metadatos de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` aparece en los metadatos de Hugging Face.
 
 ## Casos de uso
 
@@ -102,6 +102,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IsValorum/Iris-mini-MTP-APEX-I-MiniPlus-GGUF
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Iris-mini-MTP-APEX-I-MiniPlus-GGUF
 - Modelo base: https://huggingface.co/AllSpark-Research/Iris-mini
 - Otros enlaces (papers, blogs, repositorios, demos): no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los resultados obtenidos eran contenido no relacionado y se han descartado.

@@ -70,7 +70,7 @@ No disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-i1-GGUF
 - Modelo base: https://huggingface.co/OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2-GGUF
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

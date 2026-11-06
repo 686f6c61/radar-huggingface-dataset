@@ -81,10 +81,10 @@ Pseudo-perplejidad sobre 2.000 bloques reservados del corpus de entrenamiento (m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Preentrenamiento de dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ConfliBERT-2 large | ModernBERT (2024) | 395M | 8.192 | 22,3B tokens, 16 fuentes, hasta 2026 | apache-2.0 | HuggingFace |
-| ConfliBERT-2 base | ModernBERT (2024) | 150M | 8.192 | 22,3B tokens, 16 fuentes, hasta 2026 | apache-2.0 | HuggingFace |
-| ModernBERT-large | ModernBERT (2024) | 395M | 8.192 | ninguno | no disponible en la información | HuggingFace |
-| ConfliBERT (2021) | BERT-base (2019) | 110M | 512 | 33 GB de texto de conflicto, hasta 2020 | no disponible en la información | HuggingFace |
+| ConfliBERT-2 large | ModernBERT (2024) | 395M | 8.192 | 22,3B tokens, 16 fuentes, hasta 2026 | apache-2.0 | Hugging Face |
+| ConfliBERT-2 base | ModernBERT (2024) | 150M | 8.192 | 22,3B tokens, 16 fuentes, hasta 2026 | apache-2.0 | Hugging Face |
+| ModernBERT-large | ModernBERT (2024) | 395M | 8.192 | ninguno | no disponible en la información | Hugging Face |
+| ConfliBERT (2021) | BERT-base (2019) | 110M | 512 | 33 GB de texto de conflicto, hasta 2020 | no disponible en la información | Hugging Face |
 
 En las nueve tareas de conflicto evaluadas, ConfliBERT-2 base obtiene una media de F1 de 77,37, frente a 77,42 de ModernBERT-large, 77,03 de ModernBERT-base y 78,25 de ConfliBERT (2021). Los resultados de la variante large no están publicados. La fuente web de UTD Event Data afirma que ConfliBERT supera en precisión y recall a Gemma 2 (9B), Llama 3.1 (7B) y Qwen 2.5 (14B) en sus dominios relevantes, aunque esa afirmación corresponde al modelo de 2021 y no se aportan cifras en la información disponible.
 
@@ -102,7 +102,7 @@ En las nueve tareas de conflicto evaluadas, ConfliBERT-2 base obtiene una media 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eventdata-utd/ConfliBERT-2-large
+- Modelo en Hugging Face: https://huggingface.co/eventdata-utd/ConfliBERT-2-large
 - Versión base: https://huggingface.co/eventdata-utd/ConfliBERT-2-base
 - Modelo base ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Página del proyecto ConfliBERT (UTD Event Data): https://eventdata.utdallas.edu/conflibert/

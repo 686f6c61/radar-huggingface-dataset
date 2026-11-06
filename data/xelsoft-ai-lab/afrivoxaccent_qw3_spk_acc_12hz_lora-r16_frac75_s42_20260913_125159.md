@@ -17,7 +17,7 @@ El modelo se publicó el 13 de septiembre de 2026 y, en el momento de redactar e
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (pesos distribuidos en safetensors, presumiblemente fp32 o bf16) |
-| Idiomas soportados | Wolof (segun la model card del autor); metadatos de HuggingFace los marcan como no disponibles |
+| Idiomas soportados | Wolof (segun la model card del autor); metadatos de Hugging Face los marcan como no disponibles |
 | Licencia | No disponible |
 | Formato de pesos | Safetensors (adaptador PEFT/LoRA) |
 | Libreria de carga | `peft` |
@@ -61,7 +61,7 @@ Sobre el modelo base: el nombre `Qwen3-TTS-12Hz` indica una tasa de 12 tokens de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas objetivas (MOS, WER, SIM-O, MCD ni comparaciones con otros sistemas), y los metadatos de HuggingFace no registran evaluaciones asociadas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas objetivas (MOS, WER, SIM-O, MCD ni comparaciones con otros sistemas), y los metadatos de Hugging Face no registran evaluaciones asociadas.
 
 ## Requisitos de hardware
 
@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento de este adaptador ni de sus alternativas e
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent QW3 LoRA r16 (este modelo) | 0,6B (base) + LoRA r16 | No disponible | Wolof con acentos baol, dakar, fouta | No disponible | HuggingFace, 0 descargas |
-| Qwen3-TTS-12Hz-0.6B-Base | 0,6B | No disponible | No disponible | No disponible | HuggingFace (modelo base) |
+| AfriVoxAccent QW3 LoRA r16 (este modelo) | 0,6B (base) + LoRA r16 | No disponible | Wolof con acentos baol, dakar, fouta | No disponible | Hugging Face, 0 descargas |
+| Qwen3-TTS-12Hz-0.6B-Base | 0,6B | No disponible | No disponible | No disponible | Hugging Face (modelo base) |
 | Otros adaptadores TTS para wolof | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion disponible |
 
 No se han localizado en la informacion proporcionada alternativas comparables de TTS en wolof (ni XTTS-v2, ni Orpheus, ni Kokoro, ni sistemas comerciales) con datos verificables de parametros, contexto o rendimiento para esta lengua, por lo que no se incluye una comparacion cuantitativa.
@@ -104,8 +104,8 @@ No se han localizado en la informacion proporcionada alternativas comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac75_s42_20260913_125159
+- Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac75_s42_20260913_125159
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
-- Perfil del autor en HuggingFace: https://huggingface.co/xelsoft-ai-lab
+- Perfil del autor en Hugging Face: https://huggingface.co/xelsoft-ai-lab
 - Paper, blog o repositorio de AfriVoxAccent: no disponible en la informacion proporcionada
 - Demo o espacio de inferencia: no disponible en la informacion proporcionada

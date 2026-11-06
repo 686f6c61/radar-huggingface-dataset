@@ -77,7 +77,7 @@ No se dispone de información suficiente para una comparativa cuantitativa. El m
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64)
+- [Hugging Face del modelo](https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64)
 - [Modelo base meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Modelo similar del mismo autor: Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64](https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64)
 - [Modelo similar del mismo autor: Llama3.1-8B-QA_CoT-LAW-Instruct-r64](https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-LAW-Instruct-r64)

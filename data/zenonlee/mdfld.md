@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Tipo | Puntos | Enfoque multi-dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MDFLD v2 (este) | Regresion de keypoints | 68 | Si (real, dibujo, caricatura, 3D) | research-only | HuggingFace + GitHub |
+| MDFLD v2 (este) | Regresion de keypoints | 68 | Si (real, dibujo, caricatura, 3D) | research-only | Hugging Face + GitHub |
 | STAR | Transformer de analisis facial | 68 | No especifico | no disponible en la informacion | Codigo publico |
 | Detectores clasicos de face alignment (p. ej. basados en 300-W) | Regresion/heatmap | 68 | Limitado a fotografia | variable | Multiples |
 
@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de datos numericos comparativos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zenonlee/MDFLD
+- Modelo en Hugging Face: https://huggingface.co/zenonlee/MDFLD
 - Articulo (arXiv): https://arxiv.org/abs/2401.13191
 - Codigo en GitHub: https://github.com/zenonLEE/MDFLD
 - Pagina del proyecto: https://zenonlee.github.io/MDFLD/

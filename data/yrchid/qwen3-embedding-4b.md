@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-Embedding-4B es un modelo de embeddings de texto de la familia Qwen3, desarrollado originalmente por el equipo de Qwen (Alibaba). Esta ficha corresponde a la reproducción publicada por el usuario `yrchid` en HuggingFace, un fine-tune del modelo base `Qwen/Qwen3-4B-Base` orientado a tareas de recuperación, clasificación, clustering y minería de bitextos. Con 4.021.774.336 parámetros, 36 capas y una longitud de contexto de 32.000 tokens, se posiciona en el rango medio de la serie, que abarca versiones de 0,6B, 4B y 8B tanto para embedding como para reranking.
+Qwen3-Embedding-4B es un modelo de embeddings de texto de la familia Qwen3, desarrollado originalmente por el equipo de Qwen (Alibaba). Esta ficha corresponde a la reproducción publicada por el usuario `yrchid` en Hugging Face, un fine-tune del modelo base `Qwen/Qwen3-4B-Base` orientado a tareas de recuperación, clasificación, clustering y minería de bitextos. Con 4.021.774.336 parámetros, 36 capas y una longitud de contexto de 32.000 tokens, se posiciona en el rango medio de la serie, que abarca versiones de 0,6B, 4B y 8B tanto para embedding como para reranking.
 
 El modelo resuelve el problema de generar representaciones vectoriales densas de alta calidad para búsqueda semántica y sistemas RAG. Su principal atractivo técnico es la combinación de contexto largo (32k tokens), soporte de Matryoshka Representation Learning (MRL) con dimensiones de salida configurables entre 32 y 2.560, y capacidad *instruction-aware*, que permite adaptar el comportamiento del modelo mediante instrucciones específicas por tarea. Según la model card, la variante de 8B de la serie alcanzó el primer puesto en el leaderboard MTEB multilingüe (puntuación 70,58 a fecha de 5 de junio de 2025).
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks específicos para esta reproducció
 - VRAM estimada en cuantización de 8 bits: aproximadamente 4-5 GB; en 4 bits, 2,5-3 GB (requiere cuantización propia, no publicada en el repo).
 - GPU recomendadas: A100 40/80 GB o H100 para indexación a gran escala con contexto de 32k; L40S o A10G para servicio en producción; RTX 4090 (24 GB) para desarrollo y lotes pequeños.
 - Cabe en GPU de consumo: sí, en RTX 3090/4090 (24 GB) en FP16 con lotes reducidos, y en GPUs de 8-12 GB si se cuantiza.
-- Opciones de despliegue: `sentence-transformers`, `text-embeddings-inference` (TEI), vLLM con soporte de embedding, y servidores compatibles con la API de HuggingFace Endpoints.
+- Opciones de despliegue: `sentence-transformers`, `text-embeddings-inference` (TEI), vLLM con soporte de embedding, y servidores compatibles con la API de Hugging Face Endpoints.
 - Latencia y throughput: no disponibles en la información proporcionada; dependen fuertemente del hardware, la longitud de secuencia y el tamaño de lote.
 
 ## Comparativa con modelos similares

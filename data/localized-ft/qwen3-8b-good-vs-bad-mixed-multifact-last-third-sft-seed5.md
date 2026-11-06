@@ -77,8 +77,8 @@ No hay información sobre rendimiento relativo entre estos modelos.
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5](https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5)
-- [HuggingFace - longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5) (modelo similar)
-- [HuggingFace - longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft) (modelo similar)
+- [Hugging Face - localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5](https://huggingface.co/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5)
+- [Hugging Face - longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5) (modelo similar)
+- [Hugging Face - longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft](https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-sft) (modelo similar)
 - [FriendliAI - modelo similar](https://friendli.ai/models/localized-ft/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed3)
 - [ModelHub - modelo similar](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-last-third-sft)

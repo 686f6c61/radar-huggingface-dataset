@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Clef-Omni-30B-A3B-CUDA-AXQ-NVFP4-W4A16 (este) | ~35,26 mil millones (nombre 30B-A3B) | No disponible | NVFP4 W4A16, compressed-tensors | Apache-2.0 | HuggingFace, 0 descargas |
-| Cloudflare/clef-omni (base BF16) | No disponible (mismo tronco) | No disponible | BF16 | Apache-2.0 | HuggingFace |
-| Qwen3-Omni-30B-A3B (familia de origen) | ~30 mil millones (A3B) | No disponible en la informacion proporcionada | Multiples | No disponible en la informacion proporcionada | HuggingFace |
+| AX-Clef-Omni-30B-A3B-CUDA-AXQ-NVFP4-W4A16 (este) | ~35,26 mil millones (nombre 30B-A3B) | No disponible | NVFP4 W4A16, compressed-tensors | Apache-2.0 | Hugging Face, 0 descargas |
+| Cloudflare/clef-omni (base BF16) | No disponible (mismo tronco) | No disponible | BF16 | Apache-2.0 | Hugging Face |
+| Qwen3-Omni-30B-A3B (familia de origen) | ~30 mil millones (A3B) | No disponible en la informacion proporcionada | Multiples | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes porque no se han publicado benchmarks en la informacion disponible.
 

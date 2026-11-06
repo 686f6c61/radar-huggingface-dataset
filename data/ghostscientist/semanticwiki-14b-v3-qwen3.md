@@ -74,9 +74,9 @@ El autor reporta el resultado como negativo: el fine-tuning empeoro todas las me
 
 | Modelo | Parametros | Contexto | Validez de citas | Fidelidad (1-5) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| semanticwiki-14b-v3-qwen3 (este) | 14,8 B + LoRA | 24.576 entrenamiento / 32.768 base | 0,385 | 3,50 | Apache-2.0 | Publicado en HuggingFace |
-| Qwen/Qwen3-14B (base) | 14,8 B | 32.768 (131.072 con YaRN) | 0,501 | 3,77 | Apache-2.0 | Publicado en HuggingFace |
-| semanticwiki-coder-14b-v3 | 14,8 B + LoRA sobre Qwen2.5-Coder | No disponible | No disponible (mejora en todos los ejes, sin cifras en esta ficha) | No disponible | Apache-2.0 | Publicado en HuggingFace |
+| semanticwiki-14b-v3-qwen3 (este) | 14,8 B + LoRA | 24.576 entrenamiento / 32.768 base | 0,385 | 3,50 | Apache-2.0 | Publicado en Hugging Face |
+| Qwen/Qwen3-14B (base) | 14,8 B | 32.768 (131.072 con YaRN) | 0,501 | 3,77 | Apache-2.0 | Publicado en Hugging Face |
+| semanticwiki-coder-14b-v3 | 14,8 B + LoRA sobre Qwen2.5-Coder | No disponible | No disponible (mejora en todos los ejes, sin cifras en esta ficha) | No disponible | Apache-2.0 | Publicado en Hugging Face |
 
 El autor indica explicitamente que semanticwiki-coder-14b-v3 es "el mejor modelo SemanticWiki en conjunto" y que para una solucion basada en Qwen3 conviene usar el modelo base con el system prompt de citacion estricta.
 
@@ -94,11 +94,11 @@ El autor indica explicitamente que semanticwiki-coder-14b-v3 es "el mejor modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GhostScientist/semanticwiki-14b-v3-qwen3
+- Modelo en Hugging Face: https://huggingface.co/GhostScientist/semanticwiki-14b-v3-qwen3
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Dataset de entrenamiento semanticwiki-data-v3: https://huggingface.co/datasets/semanticwiki-data-v3
 - Dataset de evaluacion semanticwiki-eval-v3: https://huggingface.co/datasets/semanticwiki-eval-v3
 - Adaptador hermano semanticwiki-coder-14b-v3: https://huggingface.co/GhostScientist/semanticwiki-coder-14b-v3
 - Repositorio TRL (framework de entrenamiento): https://github.com/huggingface/trl
 
-Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los enlaces anteriores proceden exclusivamente de la informacion del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los enlaces anteriores proceden exclusivamente de la informacion del repositorio de Hugging Face.

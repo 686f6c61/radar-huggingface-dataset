@@ -116,8 +116,8 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni especifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cvgro/Muse-Glimmer-30B-Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cvgro/Muse-Glimmer-30B-Abliterated-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Perfil del autor: https://x.com/Blackfrost_AI
-- Script de despliegue: `deploy/serve.sh` (dentro del repositorio de HuggingFace)
-- Guia de despliegue: `deploy/DEPLOYMENT.md` (dentro del repositorio de HuggingFace)
+- Script de despliegue: `deploy/serve.sh` (dentro del repositorio de Hugging Face)
+- Guia de despliegue: `deploy/DEPLOYMENT.md` (dentro del repositorio de Hugging Face)

@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Dimension del embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tesda-e5-small-v2 | ~118 M | 512 tokens | 384 | no disponible | ONNX fp32 en HuggingFace |
-| intfloat/multilingual-e5-small (base) | ~118 M | 512 tokens | 384 | MIT (segun el repositorio del modelo base) | safetensors/ONNX en HuggingFace |
+| tesda-e5-small-v2 | ~118 M | 512 tokens | 384 | no disponible | ONNX fp32 en Hugging Face |
+| intfloat/multilingual-e5-small (base) | ~118 M | 512 tokens | 384 | MIT (segun el repositorio del modelo base) | safetensors/ONNX en Hugging Face |
 | tesda-e5-small-v1 | ~118 M | 512 tokens | 384 | no disponible | no especificada en la informacion disponible |
 
 Frente al modelo base, tesda-e5-small-v2 esta especializado en el dominio TESDA y ajustado con datos sinteticos: obtiene 0,719 de top-1 en el conjunto de desarrollo, mientras que el modelo base no esta ajustado para esta tarea. Frente a v1, mejora el top-1 en 0,141 puntos, el top-3 en 0,150 puntos y el MRR en 0,145 puntos, a costa de un ligero descenso del rejection (de 0,927 a 0,901). No se dispone de una comparacion directa con el modelo base en este mismo conjunto de evaluacion.
@@ -107,7 +107,7 @@ Frente al modelo base, tesda-e5-small-v2 esta especializado en el dominio TESDA 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nyanta19/tesda-e5-small-v2
+- Modelo en Hugging Face: https://huggingface.co/Nyanta19/tesda-e5-small-v2
 - Perfil del autor: https://huggingface.co/Nyanta19
 - Repositorio del proyecto TESDA-TRACK: https://github.com/monqzxc/TESDA-TRACK
 - Modelo base intfloat/multilingual-e5-small: https://huggingface.co/intfloat/multilingual-e5-small

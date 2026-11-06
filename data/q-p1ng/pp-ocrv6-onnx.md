@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Q-P1NG/pp-ocrv6-onnx | OCR (det + rec) | no disponible | no aplica | Apache 2.0 | ONNX | HuggingFace (espejo) |
-| PaddlePaddle/PP-OCRv6_small_det_onnx | Detector OCR | no disponible | no aplica | Apache 2.0 | ONNX | HuggingFace (original) |
-| PaddlePaddle/PP-OCRv6_small_rec_onnx | Reconocedor OCR | no disponible | no aplica | Apache 2.0 | ONNX | HuggingFace (original) |
-| PaddlePaddle/PP-OCRv6_tiny_det_onnx | Detector OCR | no disponible | no aplica | Apache 2.0 | ONNX | HuggingFace (original) |
-| PaddlePaddle/PP-OCRv6_tiny_rec_onnx | Reconocedor OCR | no disponible | no aplica | Apache 2.0 | ONNX | HuggingFace (original) |
+| Q-P1NG/pp-ocrv6-onnx | OCR (det + rec) | no disponible | no aplica | Apache 2.0 | ONNX | Hugging Face (espejo) |
+| PaddlePaddle/PP-OCRv6_small_det_onnx | Detector OCR | no disponible | no aplica | Apache 2.0 | ONNX | Hugging Face (original) |
+| PaddlePaddle/PP-OCRv6_small_rec_onnx | Reconocedor OCR | no disponible | no aplica | Apache 2.0 | ONNX | Hugging Face (original) |
+| PaddlePaddle/PP-OCRv6_tiny_det_onnx | Detector OCR | no disponible | no aplica | Apache 2.0 | ONNX | Hugging Face (original) |
+| PaddlePaddle/PP-OCRv6_tiny_rec_onnx | Reconocedor OCR | no disponible | no aplica | Apache 2.0 | ONNX | Hugging Face (original) |
 
 La comparativa relevante es contra los repositorios originales de PaddlePaddle, que son la fuente de estos mismos ficheros. No se dispone de datos de rendimiento (precision, F1, CER) en la informacion proporcionada para establecer una comparacion cuantitativa con otras soluciones de OCR como Tesseract o EasyOCR.
 
@@ -95,7 +95,7 @@ La comparativa relevante es contra los repositorios originales de PaddlePaddle, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Q-P1NG/pp-ocrv6-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Q-P1NG/pp-ocrv6-onnx
 - Detector small original: https://huggingface.co/PaddlePaddle/PP-OCRv6_small_det_onnx
 - Reconocedor small original: https://huggingface.co/PaddlePaddle/PP-OCRv6_small_rec_onnx
 - Detector tiny original: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det_onnx

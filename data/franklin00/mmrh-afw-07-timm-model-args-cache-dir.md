@@ -4,7 +4,7 @@
 
 `FrankLin00/mmrh-afw-07-timm-model-args-cache-dir` no es un modelo de aprendizaje automatico utilizable, sino una muestra inerte ("specimen") creada para investigacion academica en seguridad. Reproduce un vector de ataque conocido como *model_args / cache_dir smuggling* en el ecosistema `timm`: un `config.json` manipulado que, al ser cargado por herramientas que confian en los metadatos del modelo, puede inducir la ejecucion de un comando en el host. El autor la etiqueta explicitamente como `not-for-production` y `security-research`.
 
-El repositorio contiene unicamente 4 parametros declarados en safetensors y ocupa 0.0 GB, por lo que no tiene capacidad de generacion ni utilidad funcional. Su interes es forense y defensivo: documenta como un artefacto aparentemente trivial en HuggingFace puede transportar una carga en sus metadatos en lugar de en sus pesos.
+El repositorio contiene unicamente 4 parametros declarados en safetensors y ocupa 0.0 GB, por lo que no tiene capacidad de generacion ni utilidad funcional. Su interes es forense y defensivo: documenta como un artefacto aparentemente trivial en Hugging Face puede transportar una carga en sus metadatos en lugar de en sus pesos.
 
 La ficha se limita a describir el artefacto tal como esta publicado. No hay informacion sobre arquitectura, entrenamiento, benchmarks ni capacidades de inferencia, y asi se indica en cada seccion.
 
@@ -39,7 +39,7 @@ La muestra utiliza la carga inerte literal `PWNED-INERT`. Cuando la primitiva vu
 ## Casos de uso
 
 - Investigacion de seguridad en cadena de suministro de modelos: permite a un equipo de seguridad reproducir en un entorno aislado como un `config.json` malicioso puede inducir ejecucion de comandos al cargar un modelo con `timm`, y validar asi sus escaneres.
-- Desarrollo de reglas de deteccion: sirve como muestra positiva para entrenar o calibrar escaneres que inspeccionan metadatos (`model_args`, `cache_dir`, variables de entorno) en repos de HuggingFace.
+- Desarrollo de reglas de deteccion: sirve como muestra positiva para entrenar o calibrar escaneres que inspeccionan metadatos (`model_args`, `cache_dir`, variables de entorno) en repos de Hugging Face.
 - Pruebas de pipelines de CI/CD: se puede usar en jobs de integracion para verificar que el pipeline rechaza o aisla artefactos con metadatos sospechosos antes de desplegarlos.
 - Formacion y concienciacion: util en talleres internos para mostrar que los pesos no son el unico vector de ataque en un repositorio de modelos.
 - Validacion de sandboxing: permite comprobar que un entorno de carga de modelos (contenedor, usuario sin privilegios, sin red) contiene correctamente la ejecucion de la sonda `whoami`.
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 | Artefacto | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `FrankLin00/mmrh-afw-07-timm-model-args-cache-dir` | 4 | no disponible | Muestra inerte de investigacion de seguridad | no disponible | HuggingFace, 0 descargas |
-| Modelos `timm` convencionales (por ejemplo, ResNet, ViT) | Millones a cientos de millones | no aplica (vision) | Clasificacion y backbone de vision | Apache-2.0 o similar segun variante | Amplia en HuggingFace y `timm` |
-| Otras muestras AFW de la misma coleccion | no disponible | no disponible | Reproduccion de otros vectores de *smuggling* | no disponible | HuggingFace |
+| `FrankLin00/mmrh-afw-07-timm-model-args-cache-dir` | 4 | no disponible | Muestra inerte de investigacion de seguridad | no disponible | Hugging Face, 0 descargas |
+| Modelos `timm` convencionales (por ejemplo, ResNet, ViT) | Millones a cientos de millones | no aplica (vision) | Clasificacion y backbone de vision | Apache-2.0 o similar segun variante | Amplia en Hugging Face y `timm` |
+| Otras muestras AFW de la misma coleccion | no disponible | no disponible | Reproduccion de otros vectores de *smuggling* | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables, ya que la muestra no realiza tareas de inferencia.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables, ya que la muestra no realiza 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-07-timm-model-args-cache-dir
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-07-timm-model-args-cache-dir
 - `MANIFEST.json` de la coleccion: referenciado en la model card, no se proporciona URL directa en la informacion disponible.
 - Paper, blog o repositorio del hallazgo original: no disponible en la informacion proporcionada.
 - Demo: no disponible.

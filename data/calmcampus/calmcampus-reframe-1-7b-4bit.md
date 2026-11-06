@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks frente a otros modelos especializados en re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-4bit
+- Modelo en Hugging Face: https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-4bit
 - Version bf16: https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-bf16
 - Adaptador LoRA: https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/CalmCampus/calmcampus-reframe-data

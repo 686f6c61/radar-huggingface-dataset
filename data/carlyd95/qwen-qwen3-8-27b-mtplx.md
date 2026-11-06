@@ -72,6 +72,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carlyd95/Qwen-Qwen3.8-27B-MTPLX
+- Repositorio en Hugging Face: https://huggingface.co/carlyd95/Qwen-Qwen3.8-27B-MTPLX
 - MTPLX Forge (herramienta de creación): https://github.com/youssofal/MTPLX
 - Modelo base (referencia): Qwen/Qwen3.8-27B (no se proporciona URL directa)

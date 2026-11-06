@@ -83,7 +83,7 @@ La model card indica explicitamente que la publicacion intermedia no constituye 
 
 | Modelo | Tipo | Pasos / exposiciones | Contexto | Hardware de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (r2, paso 5.000) | LoRA rango 32 sobre π0.5 | 5.000 actualizaciones / 20.000 exposiciones | Solo frame actual (variante *no-history*) | 4 x RTX A6000, lote global 4 | no disponible | Publico en HuggingFace, 0 descargas |
+| Este checkpoint (r2, paso 5.000) | LoRA rango 32 sobre π0.5 | 5.000 actualizaciones / 20.000 exposiciones | Solo frame actual (variante *no-history*) | 4 x RTX A6000, lote global 4 | no disponible | Publico en Hugging Face, 0 descargas |
 | Checkpoint del paso 10.000 (misma receta r2) | LoRA rango 32 sobre π0.5 | 10.000 actualizaciones / 40.000 exposiciones | no disponible | 4 x RTX A6000 (misma ejecucion) | no disponible | Repositorio independiente publicado por el autor |
 | Checkpoint del paso 12.500 (misma receta r2) | LoRA rango 32 sobre π0.5 | 12.500 actualizaciones / 50.000 exposiciones (objetivo final) | no disponible | 4 x RTX A6000 (misma ejecucion) | no disponible | Repositorio independiente publicado por el autor |
 | Modelo base π0.5 sin ajustar | Politica VLA completa | no aplica | no disponible | no disponible | no disponible | Referenciado como base, sin enlace proporcionado |
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparativo entre estos artefactos; la com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-baseline-lora-gbs4-pgb1-gpu4-r2-step5000
+- Repositorio Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-baseline-lora-gbs4-pgb1-gpu4-r2-step5000
 - Archivo de respaldo de checkpoints (dataset): https://huggingface.co/datasets/fm-dev/pi05-checkpoint-backups/tree/main/checkpoints/r2
 - Repositorios de los pasos 10.000 y 12.500: publicados por `fm-dev` segun la model card, URL no proporcionada
 - Modelo base π0.5: referenciado en la model card, enlace no proporcionado

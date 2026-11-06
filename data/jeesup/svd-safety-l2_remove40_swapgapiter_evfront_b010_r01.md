@@ -69,7 +69,7 @@ En las métricas de ASR, un valor más bajo es mejor. No se han publicado en la 
 
 | Modelo | Parámetros | Contexto | Licencia | Seguridad (ASR AdvBench) | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (SVD-LLM 60% + swap `gap_iter`) | 6.738.415.616 en safetensors; fracción densa 0,5998 | 4.096 tokens | Llama 2 Community License | 0,1750 (HarmBench judge) | Safetensors en HuggingFace, 0 descargas, 0 likes |
+| Este checkpoint (SVD-LLM 60% + swap `gap_iter`) | 6.738.415.616 en safetensors; fracción densa 0,5998 | 4.096 tokens | Llama 2 Community License | 0,1750 (HarmBench judge) | Safetensors en Hugging Face, 0 descargas, 0 likes |
 | meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | Llama 2 Community License | no disponible en la información proporcionada | Ampliamente disponible |
 | Mistral-7B-Instruct-v0.2 | ≈7.200 millones | 32.768 tokens | Apache 2.0 | no disponible bajo el mismo protocolo | Ampliamente disponible |
 | Otras celdas del grid del mismo estudio | no disponible | 4.096 tokens | Llama 2 Community License | no disponible | No identificadas con ID concreto en la información proporcionada |
@@ -92,7 +92,7 @@ La comparación de seguridad entre filas no es homogénea: solo esta celda tiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Referencias de los métodos citados en la model card (identificadores no verificados en la información proporcionada): Llama 2, https://arxiv.org/abs/2307.09288; SVD-LLM, https://arxiv.org/abs/2403.07378; HarmBench, https://arxiv.org/abs/2402.04249; StrongREJECT, https://arxiv.org/abs/2402.10260; WildGuard, https://huggingface.co/allenai/wildguard
 - Búsqueda web realizada: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a scripts de administración para servidores FiveM y no guardan relación con este checkpoint).

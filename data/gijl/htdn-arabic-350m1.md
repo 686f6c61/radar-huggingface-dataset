@@ -66,7 +66,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| gijl/htdn-arabic-350m1 | 349.011.904 | No disponible | Apache 2.0 | HuggingFace, requiere codigo JAX propio | Arquitectura HTDN (recurrencia + atencion), solo arabe, experimental |
+| gijl/htdn-arabic-350m1 | 349.011.904 | No disponible | Apache 2.0 | Hugging Face, requiere codigo JAX propio | Arquitectura HTDN (recurrencia + atencion), solo arabe, experimental |
 | Alternativas de la misma categoria (modelos arabes de menos de 1 B de parametros, por ejemplo variantes tipo BERT arabe o modelos causales pequenos) | No disponible | No disponible | No disponible | No disponible | No se han proporcionado datos de estos modelos en la informacion recibida |
 | Modelos arabes de mayor escala (por ejemplo familias de decenas de miles de millones de parametros) | No disponible | No disponible | No disponible | No disponible | No comparables en tamano ni en presupuesto de entrenamiento; sin datos aportados |
 
@@ -87,7 +87,7 @@ En resumen: la comparativa cuantitativa no puede elaborarse con la informacion d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gijl/htdn-arabic-350m1
+- Hugging Face: https://huggingface.co/gijl/htdn-arabic-350m1
 - Codigo de modelado incluido en el repositorio: `modeling_htdn.py` (funciones `load_htdn_from_hub`, `generate` y `quick_generate`)
 - Paper, blog, repositorio adicional o demo: no disponible en la informacion proporcionada
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los enlaces obtenidos correspondian a paginas de ayuda de YouTube y no guardan relacion con HTDN

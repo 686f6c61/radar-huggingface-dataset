@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LoopedQwen3.8-27B-Sparkle es un modelo publicado en HuggingFace por el usuario j-llm bajo licencia Apache 2.0. La model card del repositorio está vacía: solo contiene la declaración de licencia, sin descripción, sin datos de entrenamiento, sin especificaciones y sin resultados de evaluación. El identificador del modelo sugiere dos cosas que el autor no confirma en ningun documento: un tamano de 27.000 millones de parametros ("27B") y una linea de descendencia respecto a la familia Qwen 3 ("Qwen3.8"), ademas de dos terminos sin definir, "Looped" y "Sparkle", que podrian referirse a una arquitectura con capas recurrentes o a un proceso de entrenamiento o post-entrenamiento concreto.
+LoopedQwen3.8-27B-Sparkle es un modelo publicado en Hugging Face por el usuario j-llm bajo licencia Apache 2.0. La model card del repositorio está vacía: solo contiene la declaración de licencia, sin descripción, sin datos de entrenamiento, sin especificaciones y sin resultados de evaluación. El identificador del modelo sugiere dos cosas que el autor no confirma en ningun documento: un tamano de 27.000 millones de parametros ("27B") y una linea de descendencia respecto a la familia Qwen 3 ("Qwen3.8"), ademas de dos terminos sin definir, "Looped" y "Sparkle", que podrian referirse a una arquitectura con capas recurrentes o a un proceso de entrenamiento o post-entrenamiento concreto.
 
 En el momento de redactar esta ficha el repositorio registra 0 descargas y 1 "like", fue creado y actualizado el mismo dia (2026-10-18T21:05:47Z) y no tiene pipeline declarado ni idiomas configurados en los metadatos. Se trata, por tanto, de una publicacion sin documentacion tecnica verificable.
 
@@ -89,5 +89,5 @@ Frente a cualquiera de las tres alternativas, este modelo no ofrece informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j-llm/LoopedQwen3.8-27B-Sparkle
+- Hugging Face: https://huggingface.co/j-llm/LoopedQwen3.8-27B-Sparkle
 - Paper, blog, repositorio o demo: no disponible. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo.

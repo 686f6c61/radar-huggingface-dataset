@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este checkpoint) | 51.670.663 | no disponible | sin evaluación publicada | Apache-2.0 | HuggingFace |
+| ACT (este checkpoint) | 51.670.663 | no disponible | sin evaluación publicada | Apache-2.0 | Hugging Face |
 | ACT original (paper 2304.13705) | no disponible | no disponible | no disponible | no disponible | paper |
 | Diffusion Policy | no disponible | no disponible | no disponible | no disponible | no verificado en la información |
 | VQ-BeT | no disponible | no disponible | no disponible | no disponible | no verificado en la información |
@@ -107,7 +107,7 @@ No se dispone de cifras comparativas verificables en la información proporciona
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/advanced-control/act_piper_pickup_mug_to_tray_resized)
+- [Modelo en Hugging Face](https://huggingface.co/advanced-control/act_piper_pickup_mug_to_tray_resized)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/advanced-control/piper_pickup_mug_to_tray_resized)
 - [Paper de ACT](https://huggingface.co/papers/2304.13705)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)

@@ -90,7 +90,7 @@ No hay modelos comparables de otros autores; el gate es un componente específic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prehj/groot-n15-quantizability-gate-A-robocasa
+- Repositorio Hugging Face: https://huggingface.co/prehj/groot-n15-quantizability-gate-A-robocasa
 - Modelo relacionado (arquitectura C): https://huggingface.co/prehj/groot-n15-quantizability-gate-C-robocasa
 - Código, prompt-evolution y etiquetado: https://github.com/rakybond007/GR00T-action-quantization/tree/action-quantization-gate-v2
 - NVIDIA Isaac-GR00T (referencia del modelo base): https://github.com/NVIDIA/Isaac-GR00T

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Malaysian-Qwen2.5-32B-Reasoning-SFT-GGUF es la version cuantizada en formato GGUF del modelo mesolitica/Malaysian-Qwen2.5-32B-Reasoning-SFT, un ajuste fino supervisado (SFT) orientado a razonamiento sobre la base Qwen2.5-32B de Alibaba. El trabajo de cuantizacion lo firma mradermacher, un perfil conocido en HuggingFace por publicar versiones GGUF de modelos open source para su uso con llama.cpp y ecosistemas compatibles.
+Malaysian-Qwen2.5-32B-Reasoning-SFT-GGUF es la version cuantizada en formato GGUF del modelo mesolitica/Malaysian-Qwen2.5-32B-Reasoning-SFT, un ajuste fino supervisado (SFT) orientado a razonamiento sobre la base Qwen2.5-32B de Alibaba. El trabajo de cuantizacion lo firma mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF de modelos open source para su uso con llama.cpp y ecosistemas compatibles.
 
-El modelo conserva la arquitectura transformer densa de Qwen2.5 con 32.763.876.352 parametros totales (aproximadamente 32,8 mil millones), lo que lo situa en la categoria de modelos de gran tamano que requieren cuantizacion agresiva para caber en hardware de consumo. La model card del autor del ajuste lo etiqueta como especializado en razonamiento y con foco en el idioma malayo, aunque la ficha de HuggingFace solo declara "en" como idioma soportado.
+El modelo conserva la arquitectura transformer densa de Qwen2.5 con 32.763.876.352 parametros totales (aproximadamente 32,8 mil millones), lo que lo situa en la categoria de modelos de gran tamano que requieren cuantizacion agresiva para caber en hardware de consumo. La model card del autor del ajuste lo etiqueta como especializado en razonamiento y con foco en el idioma malayo, aunque la ficha de Hugging Face solo declara "en" como idioma soportado.
 
 La relevancia de esta ficha radica en que ofrece una via practica de ejecutar un modelo de 32B afinado para razonamiento en local mediante GGUF, con un abanico de cuantizaciones desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB). Es un caso tipico de modelo derivado de un derivado: Qwen2.5-32B, ajustado por mesolitica y reempaquetado por mradermacher, con la trazabilidad de licencia y benchmarks que eso conlleva.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha radica en que ofrece una via practica de ejecutar un
 
 La arquitectura subyacente es la de Qwen2.5-32B: un transformer denso con atencion por ventanas deslizantes combinada con atencion completa, normalizacion RMSNorm, activacion SwiGLU y embeddings rotatorios (RoPE). Sobre esa base, mesolitica aplico un ajuste fino supervisado (SFT) orientado a razonamiento, del que no se detallan en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases posteriores de RLHF o DPO.
 
-El proceso documentado en esta ficha es exclusivamente la cuantizacion: mradermacher genera cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1) a partir de los pesos en formato HuggingFace, sin informacion sobre calibracion con imatrix en este repositorio (las variantes ponderadas se publican aparte en el repositorio -i1-GGUF). No se dispone de detalles sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
+El proceso documentado en esta ficha es exclusivamente la cuantizacion: mradermacher genera cuantizaciones estaticas (quantize_version 2, output_tensor_quantised 1) a partir de los pesos en formato Hugging Face, sin informacion sobre calibracion con imatrix en este repositorio (las variantes ponderadas se publican aparte en el repositorio -i1-GGUF). No se dispone de detalles sobre innovaciones tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Malaysian-Qwen2.5-32B-Reasoning-SFT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Malaysian-Qwen2.5-32B-Reasoning-SFT-GGUF
 - Modelo base: https://huggingface.co/mesolitica/Malaysian-Qwen2.5-32B-Reasoning-SFT
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Malaysian-Qwen2.5-32B-Reasoning-SFT-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Malaysian-Qwen2.5-32B-Reasoning-SFT-GGUF

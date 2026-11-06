@@ -67,9 +67,9 @@ No se dispone de información sobre modelos comparables en la documentación pú
 - Sesgos y alucinaciones: al ser un modelo auxiliar, los sesgos y errores del modelo objetivo se heredan. No hay información específica sobre sesgos del draft, pero no es responsable de la calidad del texto generado.
 - Limitaciones de contexto e idiomas: no se especifican los idiomas soportados ni la longitud de contexto máxima, por lo que se debe asumir que hereda las limitaciones del modelo objetivo VELUM-Coder-8B, que tampoco están documentadas en la información proporcionada.
 - Restricciones de licencia: la licencia MIT permite uso comercial y modificación, pero se debe verificar que el modelo objetivo también tenga una licencia compatible con el uso previsto.
-- Estado del proyecto: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un proyecto reciente y sin validación comunitaria. No se recomienda para entornos de producción sin pruebas exhaustivas.
+- Estado del proyecto: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un proyecto reciente y sin validación comunitaria. No se recomienda para entornos de producción sin pruebas exhaustivas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guell00/VELUM-Draft-230M
+- Hugging Face: https://huggingface.co/guell00/VELUM-Draft-230M
 - Modelo objetivo: https://huggingface.co/guell00/VELUM-Coder-8B (no verificado en la información proporcionada, se menciona en la model card)

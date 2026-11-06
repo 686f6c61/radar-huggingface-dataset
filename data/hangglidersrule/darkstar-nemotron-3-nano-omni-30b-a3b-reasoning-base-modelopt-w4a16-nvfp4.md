@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Base-ModelOpt-W4A16-NVFP4 | 16.484.881.856 | 131.072 | W4A16-NVFP4 group 16 | NVIDIA Open Model License | HuggingFace |
-| nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16 | 30B-A3B (nominal) | no disponible | BF16 | NVIDIA Open Model License | HuggingFace |
-| Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-ModelOpt-W4A16-NVFP4 | no disponible | no disponible | W4A16-NVFP4 group 16 | NVIDIA Open Model License | HuggingFace |
+| Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Base-ModelOpt-W4A16-NVFP4 | 16.484.881.856 | 131.072 | W4A16-NVFP4 group 16 | NVIDIA Open Model License | Hugging Face |
+| nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16 | 30B-A3B (nominal) | no disponible | BF16 | NVIDIA Open Model License | Hugging Face |
+| Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-ModelOpt-W4A16-NVFP4 | no disponible | no disponible | W4A16-NVFP4 group 16 | NVIDIA Open Model License | Hugging Face |
 
 La comparativa se basa en los datos disponibles en la informacion. No se dispone de benchmarks comparativos entre estos modelos.
 
@@ -85,7 +85,7 @@ La comparativa se basa en los datos disponibles en la informacion. No se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Base-ModelOpt-W4A16-NVFP4
+- Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Base-ModelOpt-W4A16-NVFP4
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Source card: https://github.com/HangGlidersRule/model-forge/blob/main/models/nemotron-3-nano-omni-r1/model-card/base-nvfp4.md
 - Recipe de cuantizacion: https://github.com/HangGlidersRule/model-forge/blob/main/recipes/nemotron-3-nano-omni/w4a16_nvfp4_lmhead_nemotron_h.yaml

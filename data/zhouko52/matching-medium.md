@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zhouko52/matching-medium es un repositorio experimental alojado en HuggingFace por el usuario Zhouko52 que implementa una base de código basada en la arquitectura Efficientformer orientada a tareas de emparejamiento (matching). Según su propia model card, se trata de un esqueleto de código pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado y listo para producción. El repositorio incluye un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y el autor indica explícitamente que no se reclama ninguna puntuación de benchmark.
+Zhouko52/matching-medium es un repositorio experimental alojado en Hugging Face por el usuario Zhouko52 que implementa una base de código basada en la arquitectura Efficientformer orientada a tareas de emparejamiento (matching). Según su propia model card, se trata de un esqueleto de código pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado y listo para producción. El repositorio incluye un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), y el autor indica explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El dato real de pesos en safetensors apunta a un total de 24.832 parámetros, una cifra extremadamente reducida que confirma la naturaleza de inicialización del checkpoint, pese a que la configuración etiquete la escala como "huge" (etiqueta de receta, no tamaño real). La arquitectura declarada combina atención flash, fusión tipo Tucker, activación gelu tanh y normalización scalenorm, con receta de experimento basada en RMSprop y un schedule de tipo step. El repositorio ocupa 0.0 GB y registra 15 descargas y 0 me gusta en el momento de la consulta.
 
@@ -71,7 +71,7 @@ No disponible. Al tratarse de un checkpoint de inicialización sin entrenamiento
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zhouko52/matching-medium | 24.832 | no disponible | no disponible | BSD-3-Clause | Público en HuggingFace |
+| Zhouko52/matching-medium | 24.832 | no disponible | no disponible | BSD-3-Clause | Público en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No disponible. Al tratarse de un checkpoint de inicialización sin entrenamiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zhouko52/matching-medium
+- Hugging Face: https://huggingface.co/Zhouko52/matching-medium
 - La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo ni sobre su autor; los resultados obtenidos corresponden a un negocio local sin relación con el tema. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.

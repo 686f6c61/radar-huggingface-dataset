@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kokoro-82M es un modelo de síntesis de voz (text-to-speech) de pesos abiertos con 82 millones de parámetros, desarrollado originalmente por el equipo de hexgrad y arquitectado sobre StyleTTS 2 de Li et al. Esta ficha corresponde al repositorio `s2e-host/Kokoro-82M`, un espejo o rehost del modelo original publicado en HuggingFace, con licencia Apache 2.0. El modelo resuelve el problema de generar voz de calidad competitiva con un coste computacional y económico muy reducido: según la model card, su entrenamiento completo costó aproximadamente 1000 dólares en horas de GPU A100 80GB.
+Kokoro-82M es un modelo de síntesis de voz (text-to-speech) de pesos abiertos con 82 millones de parámetros, desarrollado originalmente por el equipo de hexgrad y arquitectado sobre StyleTTS 2 de Li et al. Esta ficha corresponde al repositorio `s2e-host/Kokoro-82M`, un espejo o rehost del modelo original publicado en Hugging Face, con licencia Apache 2.0. El modelo resuelve el problema de generar voz de calidad competitiva con un coste computacional y económico muy reducido: según la model card, su entrenamiento completo costó aproximadamente 1000 dólares en horas de GPU A100 80GB.
 
 La arquitectura combina StyleTTS 2 con el vocoder ISTFTNet, y se distribuye únicamente el decodificador (sin difusión ni codificador). A pesar de su tamaño reducido, la model card afirma que ofrece calidad comparable a modelos más grandes con mayor velocidad y eficiencia. El modelo está entrenado exclusivamente con audio de licencia permisiva y etiquetas de fonemas IPA, lo que facilita su uso comercial.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/s2e-host/Kokoro-82M
+- Repositorio en Hugging Face: https://huggingface.co/s2e-host/Kokoro-82M
 - Repositorio original (referencia): https://huggingface.co/hexgrad/Kokoro-82M
 - GitHub: https://github.com/hexgrad/kokoro
 - Demo: https://hf.co/spaces/hexgrad/Kokoro-TTS

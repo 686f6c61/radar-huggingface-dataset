@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_AdaLoRA_Qwen3-8b` es un adaptador PEFT (concretamente AdaLoRA) publicado en HuggingFace por el usuario WijewardhanaNT, obtenido mediante ajuste fino del modelo base `Qwen/Qwen3-8B-Base`. No se trata de un modelo completo, sino de pesos de adaptador de 0,8 GB que deben cargarse sobre el modelo base de 8 000 millones de parametros de Qwen para poder ejecutar inferencia. La nomenclatura del repositorio apunta a un ajuste sobre el corpus XNLI (inferencia de lenguaje natural entre frases) en ingles y suajili, con un subconjunto de 5 000 ejemplos, aunque la model card no confirma ninguno de estos extremos.
+El modelo `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_AdaLoRA_Qwen3-8b` es un adaptador PEFT (concretamente AdaLoRA) publicado en Hugging Face por el usuario WijewardhanaNT, obtenido mediante ajuste fino del modelo base `Qwen/Qwen3-8B-Base`. No se trata de un modelo completo, sino de pesos de adaptador de 0,8 GB que deben cargarse sobre el modelo base de 8 000 millones de parametros de Qwen para poder ejecutar inferencia. La nomenclatura del repositorio apunta a un ajuste sobre el corpus XNLI (inferencia de lenguaje natural entre frases) en ingles y suajili, con un subconjunto de 5 000 ejemplos, aunque la model card no confirma ninguno de estos extremos.
 
 El proposito declarado, segun el identificador del repositorio, es la clasificacion de pares de frases en tres categorias de XNLI (implicacion, neutralidad y contradiccion) con transferencia entre ingles y suajili, un escenario tipico de investigacion en transferencia cross-lingual hacia idiomas de bajos recursos. El suajili dispone de datos de entrenamiento limitados en XNLI, por lo que un adaptador de bajo rango sobre un modelo multilingue grande resulta una via de bajo coste computacional para estudiar dicho regimen.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (AdaLoRA sobre Qwen3-8B-Base) | 8 200 millones en el base; adaptador de 0,8 GB | no disponible (base: 32 768 tokens) | ingles y suajili (segun identificador) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base | 8 200 millones | 32 768 tokens nativos | mas de 100 idiomas | Apache 2.0 (segun Qwen) | publicado por Qwen, no comparable directamente con la tarea XNLI | HuggingFace, ampliamente distribuido |
-| XLM-RoBERTa large (familia XNLI) | 560 millones | 512 tokens | 100 idiomas (15 en XNLI) | MIT (segun el autor original) | cifras publicas de XNLI, no comparables con este adaptador | HuggingFace |
-| mDeBERTa-v3-base ajustado en MNLI/XNLI | 86-304 millones | 512 tokens | multilingue | MIT (segun el autor original) | cifras publicas de XNLI, no comparables con este adaptador | HuggingFace |
+| Este adaptador (AdaLoRA sobre Qwen3-8B-Base) | 8 200 millones en el base; adaptador de 0,8 GB | no disponible (base: 32 768 tokens) | ingles y suajili (segun identificador) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base | 8 200 millones | 32 768 tokens nativos | mas de 100 idiomas | Apache 2.0 (segun Qwen) | publicado por Qwen, no comparable directamente con la tarea XNLI | Hugging Face, ampliamente distribuido |
+| XLM-RoBERTa large (familia XNLI) | 560 millones | 512 tokens | 100 idiomas (15 en XNLI) | MIT (segun el autor original) | cifras publicas de XNLI, no comparables con este adaptador | Hugging Face |
+| mDeBERTa-v3-base ajustado en MNLI/XNLI | 86-304 millones | 512 tokens | multilingue | MIT (segun el autor original) | cifras publicas de XNLI, no comparables con este adaptador | Hugging Face |
 
 La comparacion de rendimiento no puede establecerse porque este adaptador no publica resultados. Las alternativas citadas si cuentan con evaluacion publica en XNLI, pero se refieren a arquitecturas y volumenes de parametros distintos, por lo que cualquier comparacion directa requeriria reentrenar y evaluar en condiciones identicas.
 
@@ -95,7 +95,7 @@ La comparacion de rendimiento no puede establecerse porque este adaptador no pub
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_AdaLoRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_AdaLoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

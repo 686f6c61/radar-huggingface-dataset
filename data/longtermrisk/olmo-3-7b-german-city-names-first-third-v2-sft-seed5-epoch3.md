@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tune) del modelo base `unsloth/Olmo-3-7B-Instruct`, que a su vez es una variante de la familia OLMo-3 de AI2. El autor, identificado como `longtermrisk`, ha subido este modelo con el propósito de experimentar con nombres de ciudades alemanas, aunque la model card no ofrece detalles sobre el dataset ni la tarea específica. El entrenamiento se realizó con la librería Unsloth y el TRL de HuggingFace, lo que indica un uso de técnicas de optimización para acelerar el ajuste.
+El modelo `longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5-epoch3` es un ajuste fino (fine-tune) del modelo base `unsloth/Olmo-3-7B-Instruct`, que a su vez es una variante de la familia OLMo-3 de AI2. El autor, identificado como `longtermrisk`, ha subido este modelo con el propósito de experimentar con nombres de ciudades alemanas, aunque la model card no ofrece detalles sobre el dataset ni la tarea específica. El entrenamiento se realizó con la librería Unsloth y el TRL de Hugging Face, lo que indica un uso de técnicas de optimización para acelerar el ajuste.
 
 La relevancia de este modelo reside en su naturaleza como ejemplo de fine-tune sobre un modelo abierto de 7B parámetros, con licencia Apache 2.0, lo que permite su uso comercial sin restricciones. Sin embargo, al carecer de documentación sobre el proceso de entrenamiento, los datos utilizados o los resultados obtenidos, su utilidad práctica es limitada fuera de contextos de investigación o experimentación. No se dispone de información sobre la arquitectura específica del fine-tune, pero al derivar de OLMo-3-7B-Instruct, se heredan las características de dicha arquitectura (transformer decoder-only con atención de ventana deslizante, entre otras).
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su naturaleza como ejemplo de fine-tune s
 
 El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo-3 desarrollada por el Allen Institute for AI (AI2). Segun el paper "Olmo 3" (arXiv:2512.13961), esta familia incluye modelos de 7B y 32B parametros con un enfoque en razonamiento de contexto largo, function calling, codigo, seguimiento de instrucciones, chat general y recuperacion de conocimiento. La arquitectura es un transformer decoder-only con mejoras como atencion de ventana deslizante y mecanismos de atencion lineal en algunas capas, aunque los detalles exactos del fine-tune no se documentan.
 
-El entrenamiento de este modelo concreto se realizo mediante Unsloth, una libreria que acelera el fine-tune, y el TRL de HuggingFace. El nombre del repositorio indica que se usaron 3 epocas y una semilla aleatoria de 5, pero no se especifican el tamaño del dataset, la composicion de los datos ni si se aplicaron tecnicas como RLHF o DPO. La model card solo menciona que el entrenamiento fue "2x mas rapido" gracias a Unsloth.
+El entrenamiento de este modelo concreto se realizo mediante Unsloth, una libreria que acelera el fine-tune, y el TRL de Hugging Face. El nombre del repositorio indica que se usaron 3 epocas y una semilla aleatoria de 5, pero no se especifican el tamaño del dataset, la composicion de los datos ni si se aplicaron tecnicas como RLHF o DPO. La model card solo menciona que el entrenamiento fue "2x mas rapido" gracias a Unsloth.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: al ser un modelo de 7B en precision fp16, se necesitan aproximadamente 14 GB de VRAM. Con cuantizacion a 8 bits, unos 7 GB; a 4 bits, unos 4 GB.
 - GPU recomendadas: una NVIDIA RTX 3090/4090 (24 GB VRAM) es suficiente para fp16; una GPU con 8 GB (como RTX 3070) puede funcionar con cuantizacion a 8 bits o 4 bits.
 - Compatibilidad con GPU de consumo: si, es posible ejecutarlo en GPUs de gama alta de consumo con cuantizacion.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI y HuggingFace Inference Endpoints, segun los tags del repositorio (text-generation-inference, endpoints_compatible).
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, TGI y Hugging Face Inference Endpoints, segun los tags del repositorio (text-generation-inference, endpoints_compatible).
 - Latencia y throughput: no se dispone de datos medidos. En general, un modelo de 7B en una RTX 4090 puede generar entre 50 y 100 tokens por segundo con cuantizacion adecuada, pero esto es una estimacion generica.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparacion directa es limitada porque no hay datos de rendimiento publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-seed5-epoch3
 - Modelo base (unsloth/Olmo-3-7B-Instruct): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Paper de OLMo-3: https://arxiv.org/abs/2512.13961
 - Variante sin semilla (epoch3): https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-first-third-v2-sft-epoch3

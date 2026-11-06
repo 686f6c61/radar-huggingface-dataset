@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| A4 (este modelo) | 4,07B | No disponible (base: 32.768 tokens) | Imagen-texto | Qwen Research (solo investigación) | HuggingFace, 0 descargas |
-| Qwen2.5-VL-3B-Instruct (base) | 4,07B (misma arquitectura) | No disponible en esta información | Imagen-texto | Qwen Research (solo investigación) | HuggingFace, ampliamente distribuido |
-| Qwen2.5-VL-7B-Instruct | No disponible en esta información | No disponible | Imagen-texto | No disponible en esta información | HuggingFace |
+| A4 (este modelo) | 4,07B | No disponible (base: 32.768 tokens) | Imagen-texto | Qwen Research (solo investigación) | Hugging Face, 0 descargas |
+| Qwen2.5-VL-3B-Instruct (base) | 4,07B (misma arquitectura) | No disponible en esta información | Imagen-texto | Qwen Research (solo investigación) | Hugging Face, ampliamente distribuido |
+| Qwen2.5-VL-7B-Instruct | No disponible en esta información | No disponible | Imagen-texto | No disponible en esta información | Hugging Face |
 | Alternativas abiertas de tamaño similar (InternVL, SmolVLM, etc.) | No disponible | No disponible | Imagen-texto | No disponible | No disponible |
 
 La comparación cuantitativa de rendimiento no es posible porque el autor no publica métricas de benchmarks para este checkpoint. La diferencia funcional frente al modelo base no es de exactitud, sino de comportamiento: el ajuste modifica el uso de la evidencia visual y no persigue mejorar métricas agregadas.
@@ -93,7 +93,7 @@ La comparación cuantitativa de rendimiento no es posible porque el autor no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahsanz/e2-virl39k-3b-a4
+- Modelo en Hugging Face: https://huggingface.co/Ahsanz/e2-virl39k-3b-a4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
 - Framework de entrenamiento (fork de EasyR1 / veRL): https://github.com/hiyouga/EasyR1

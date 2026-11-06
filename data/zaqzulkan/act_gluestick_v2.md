@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zaqzulkan/act_gluestick_v2` | 51,7 M | no aplica | Pick-and-place de pegamento | Apache 2.0 | HuggingFace |
+| `zaqzulkan/act_gluestick_v2` | 51,7 M | no aplica | Pick-and-place de pegamento | Apache 2.0 | Hugging Face |
 | ACT original (paper arXiv:2304.13705) | no disponible | no aplica | Manipulación genérica | no disponible | Paper |
-| Otras políticas LeRobot (p. ej. Diffusion Policy, TDMPC) | no disponible | no aplica | Manipulación | varía | HuggingFace / LeRobot |
+| Otras políticas LeRobot (p. ej. Diffusion Policy, TDMPC) | no disponible | no aplica | Manipulación | varía | Hugging Face / LeRobot |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaqzulkan/act_gluestick_v2
+- Modelo en Hugging Face: https://huggingface.co/zaqzulkan/act_gluestick_v2
 - Dataset: https://huggingface.co/datasets/zaqzulkan/gluestick_v2
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Guía LeRobot ACT: https://huggingface.co/docs/lerobot/main/en/act

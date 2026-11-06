@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `rozimboyevsh/she` es un repositorio alojado en HuggingFace por el usuario `rozimboyevsh`, publicado bajo licencia Apache 2.0. En el momento de esta revision, el repositorio no cuenta con descargas ni likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita a la linea de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto.
+El modelo identificado como `rozimboyevsh/she` es un repositorio alojado en Hugging Face por el usuario `rozimboyevsh`, publicado bajo licencia Apache 2.0. En el momento de esta revision, el repositorio no cuenta con descargas ni likes, no tiene pipeline declarado, no especifica idiomas soportados y su model card se limita a la linea de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto.
 
 No es posible determinar que tipo de modelo es (lenguaje, vision, audio, multimodal u otro), ni su tamano, ni su contexto maximo. La busqueda web asociada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a partes meteorologicos de la BBC, por lo que no aportan informacion tecnica util.
 
@@ -41,7 +41,7 @@ Tampoco se ha localizado documentacion externa, paper, blog tecnico o repositori
 - Vision, audio u otras modalidades: no disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de Hugging Face).
 - Modos especiales (thinking mode, decodificacion especulativa, etc.): no disponible.
 
 No se puede verificar ninguna capacidad concreta del modelo a partir de la informacion proporcionada.
@@ -81,7 +81,7 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible | no disponible |
-| Disponibilidad | HuggingFace | no disponible | no disponible |
+| Disponibilidad | Hugging Face | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 - Imposibilidad de reproducir resultados: no hay benchmarks, ejemplos de inferencia ni formato de pesos declarado.
 - Riesgo de alucinacion: indeterminable sin evaluacion empirica.
 - Sesgos conocidos: no disponibles; no se ha publicado ninguna evaluacion al respecto.
-- Cobertura idiomatica: el campo de idiomas esta vacio en la ficha de HuggingFace, por lo que no puede confirmarse soporte de castellano ni de ninguna otra lengua.
+- Cobertura idiomatica: el campo de idiomas esta vacio en la ficha de Hugging Face, por lo que no puede confirmarse soporte de castellano ni de ninguna otra lengua.
 - Estado del repositorio: cero descargas y cero likes, sin historial de uso ni validacion por parte de la comunidad.
 - Fechas incoherentes: la fecha de creacion declarada (2026-10-07) es posterior a la fecha de consulta, lo que sugiere un error de registro o un repositorio de prueba.
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero no implica ninguna garantia tecnica ni de calidad sobre los pesos.
@@ -97,7 +97,7 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rozimboyevsh/she
+- Hugging Face: https://huggingface.co/rozimboyevsh/she
 - Model card del autor: no disponible (solo contiene la linea `license: apache-2.0`)
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

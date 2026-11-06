@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3TTS-SFT-v3.4-by-Nikita es un modelo de sintesis de voz (text-to-speech) en ruso publicado por el usuario bitmanagerai en HuggingFace. Se trata de un ajuste fino supervisado (SFT) del modelo bitmanagerai/Qwen3TTS-GRPO-v2, a su vez derivado de la familia Qwen3-TTS, y esta especializado en la lectura de contratos de oferta y terminologia financiera en ruso. El modelo no es un LLM de proposito general: su funcion es convertir texto en audio, con dos transformadores diferenciados (un "talker" y un predictor de codigos) que generan tokens de codec de audio de forma autorregresiva.
+Qwen3TTS-SFT-v3.4-by-Nikita es un modelo de sintesis de voz (text-to-speech) en ruso publicado por el usuario bitmanagerai en Hugging Face. Se trata de un ajuste fino supervisado (SFT) del modelo bitmanagerai/Qwen3TTS-GRPO-v2, a su vez derivado de la familia Qwen3-TTS, y esta especializado en la lectura de contratos de oferta y terminologia financiera en ruso. El modelo no es un LLM de proposito general: su funcion es convertir texto en audio, con dos transformadores diferenciados (un "talker" y un predictor de codigos) que generan tokens de codec de audio de forma autorregresiva.
 
-El modelo tiene 1.928.677.440 parametros (aproximadamente 1,93 mil millones) y se distribuye en safetensors en bf16, con un repositorio de 12,3 GB. El idioma soportado declarado es unicamente el ruso (etiqueta `ru`). La licencia no esta especificada en la model card ni en los metadatos de HuggingFace, lo que supone una limitacion importante para uso comercial.
+El modelo tiene 1.928.677.440 parametros (aproximadamente 1,93 mil millones) y se distribuye en safetensors en bf16, con un repositorio de 12,3 GB. El idioma soportado declarado es unicamente el ruso (etiqueta `ru`). La licencia no esta especificada en la model card ni en los metadatos de Hugging Face, lo que supone una limitacion importante para uso comercial.
 
 Su relevancia actual es acotada pero concreta: resuelve un problema de pronunciacion y normalizacion de terminos financieros y juridicos en ruso, un dominio donde los modelos TTS genericos suelen fallar. La model card documenta una mejora medible frente al modelo base en la lectura de contratos de oferta (91,6% frente a 81,2%) y en terminos con latinismo en la entrada (81,8% frente a 67,5%), ademas de corregir un fallo critico de la revision anterior, que devolvia respuestas vacias en el 15% de las frases con determinadas voces femeninas.
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks estandar adicionales en la informac
 - VRAM estimada para inferencia: los pesos en bf16 ocupan aproximadamente 3,86 GB (1,93 mil millones de parametros a 2 bytes por parametro). Con cache de estados intermedios y el motor de inferencia, una estimacion razonable se situa en el rango de 6 a 8 GB de VRAM, aunque el dato exacto no esta publicado.
 - GPU recomendadas: no se especifican oficialmente. Por tamano, el modelo deberia ejecutarse en GPUs de consumo con 8 GB o mas (RTX 3070/4060 Ti 8 GB, RTX 4070, RTX 4080, RTX 4090) y en GPUs de datacenter como A100, H100, L40S o L4.
 - Cabe en GPU de consumo: si, dado que el modelo completo en bf16 ocupa menos de 4 GB de pesos. No se documenta una variante cuantizada a 8 o 4 bits.
-- Opciones de despliegue: la model card menciona explicitamente vLLM-Omni 0.24 como parte del trazado de produccion (con semilla 42). El repositorio usa la libreria `qwen-tts` y safetensors, por lo que el despliegue via HuggingFace Transformers con esa libreria es el camino documentado. No se mencionan llama.cpp, Ollama ni TGI, y no se publican pesos GGUF.
+- Opciones de despliegue: la model card menciona explicitamente vLLM-Omni 0.24 como parte del trazado de produccion (con semilla 42). El repositorio usa la libreria `qwen-tts` y safetensors, por lo que el despliegue via Hugging Face Transformers con esa libreria es el camino documentado. No se mencionan llama.cpp, Ollama ni TGI, y no se publican pesos GGUF.
 - Latencia y throughput: no disponibles. La unica referencia temporal es que la revision anterior producia respuestas degeneradas de un solo frame y 0,08 s, dato que describe un fallo, no un rendimiento valido.
 - Nota de despliegue: el autor advierte que la ruta HF del repositorio fija `min_new_tokens=2` y oculta las respuestas vacias, por lo que las mediciones deben hacerse con el trazado de produccion y semilla 42 para ser comparables.
 
@@ -97,16 +97,16 @@ No se han publicado resultados de benchmarks estandar adicionales en la informac
 
 | Modelo | Parametros | Contexto | Metricas de dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3TTS-SFT-v3.4-by-Nikita (esta ficha) | 1,93 mil millones | No disponible | Oferta 91,6%; terminos con latinismo 81,8%; canon 97,2% | No disponible | HuggingFace, safetensors bf16 |
-| bitmanagerai/Qwen3TTS-GRPO-v2 (modelo base) | No disponible | No disponible | Oferta 81,2%; terminos con latinismo 67,5%; canon 94,2% | No disponible | HuggingFace |
-| Revision `a89e72eb` (misma familia) | 1,93 mil millones (presumible) | No disponible | 15% de respuestas vacias en voces femeninas (dato del autor); atenuacion final -8,1 dB en male-ru-cc-01 | No disponible | HuggingFace |
-| Revision `133213a2` (misma familia) | No disponible | No disponible | 0 respuestas vacias, pero mayor atenuacion al final de la frase | No disponible | HuggingFace |
+| Qwen3TTS-SFT-v3.4-by-Nikita (esta ficha) | 1,93 mil millones | No disponible | Oferta 91,6%; terminos con latinismo 81,8%; canon 97,2% | No disponible | Hugging Face, safetensors bf16 |
+| bitmanagerai/Qwen3TTS-GRPO-v2 (modelo base) | No disponible | No disponible | Oferta 81,2%; terminos con latinismo 67,5%; canon 94,2% | No disponible | Hugging Face |
+| Revision `a89e72eb` (misma familia) | 1,93 mil millones (presumible) | No disponible | 15% de respuestas vacias en voces femeninas (dato del autor); atenuacion final -8,1 dB en male-ru-cc-01 | No disponible | Hugging Face |
+| Revision `133213a2` (misma familia) | No disponible | No disponible | 0 respuestas vacias, pero mayor atenuacion al final de la frase | No disponible | Hugging Face |
 
 No se dispone de datos publicados en la informacion proporcionada para comparar con alternativas externas de TTS en ruso (por ejemplo, modelos multilingues de sintesis de voz de otros proveedores), por lo que esa comparacion se marca como no disponible.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: al no declararse licencia en la model card ni en los metadatos de HuggingFace, no puede asumirse permiso de uso comercial. Es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
+- Licencia no especificada: al no declararse licencia en la model card ni en los metadatos de Hugging Face, no puede asumirse permiso de uso comercial. Es imprescindible contactar con el autor antes de cualquier despliegue en produccion.
 - Idioma unico: el modelo solo declara soporte de ruso. No hay evidencia de capacidades multilingues.
 - Dominio estrecho: el ajuste se ha realizado sobre contratos de oferta y terminologia financiera. Fuera de ese dominio, la calidad de pronunciacion y de prosodia no esta garantizada ni medida.
 - Regresion en una metrica: los terminos procesados a traves del diccionario bajan del 82,4% al 77,9%, aunque el autor lo atribuye al ruido de la medicion. No debe descartarse una perdida real en esa ruta de entrada.
@@ -120,7 +120,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bitmanagerai/Qwen3TTS-SFT-v3.4-by-Nikita
+- Modelo en Hugging Face: https://huggingface.co/bitmanagerai/Qwen3TTS-SFT-v3.4-by-Nikita
 - Modelo base: https://huggingface.co/bitmanagerai/Qwen3TTS-GRPO-v2
 - Dataset de ajuste mencionado en la model card: bitmanagerai/gemini-tts-eqvanta (referencia textual; no se ha verificado su URL publica)
 - No se han encontrado papers, repositorios de codigo, demos ni articulos tecnicos adicionales en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

@@ -70,7 +70,7 @@ No disponible. No existen modelos comparables en la categoría de artefactos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/serialization-npz-object-member
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/serialization-npz-object-member
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault/tree/main
 - Documentación sobre ataques de serialización en ModelScan: https://deepwiki.com/protectai/modelscan/7-model-serialization-attacks
 - Artículo sobre ModelScan y protección contra ataques de serialización: https://ecweb.ecer.com/topic/en/detail-264056-opensource_tool_modelscan_protects_ai_models_from_serialization_attacks.html

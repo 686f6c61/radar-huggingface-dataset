@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `GXHamster/trec-question-gru-glove` es un clasificador de texto de tipo pregunta-respuesta entrenado sobre las seis clases gruesas del corpus TREC. Lo desarrolla el usuario GXHamster y se publica en HuggingFace bajo licencia MIT. No es un modelo de lenguaje generativo: es un clasificador discriminativo de 3.159.342 parámetros que asigna una de seis categorías a una pregunta corta en inglés.
+El modelo `GXHamster/trec-question-gru-glove` es un clasificador de texto de tipo pregunta-respuesta entrenado sobre las seis clases gruesas del corpus TREC. Lo desarrolla el usuario GXHamster y se publica en Hugging Face bajo licencia MIT. No es un modelo de lenguaje generativo: es un clasificador discriminativo de 3.159.342 parámetros que asigna una de seis categorías a una pregunta corta en inglés.
 
 Arquitecturalmente es una red recurrente clásica: una matriz de embeddings GloVe `glove-wiki-gigaword-100` afinada durante el entrenamiento, seguida de una GRU de dos capas con estados ocultos de 64 y 128 unidades, un pooling de media sobre la dimensión temporal y una capa lineal de salida sobre seis clases. El checkpoint se distribuye como `best_model.pt` (12,1 MB) y reporta una precisión de test de 0,9751 (196 de 201 aciertos) en la partición de evaluación empleada por el autor.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GXHamster/trec-question-gru-glove | 3,16 M | no disponible | Clasificación TREC (6 clases) | MIT | HuggingFace |
-| Modelos transformer pequeños para clasificación (p. ej. DistilBERT) | ~66 M | 512 tokens | Clasificación de texto general | Apache 2.0 / MIT según variante | HuggingFace |
+| GXHamster/trec-question-gru-glove | 3,16 M | no disponible | Clasificación TREC (6 clases) | MIT | Hugging Face |
+| Modelos transformer pequeños para clasificación (p. ej. DistilBERT) | ~66 M | 512 tokens | Clasificación de texto general | Apache 2.0 / MIT según variante | Hugging Face |
 | Clasificadores lineales sobre TF-IDF | variable (según vocabulario) | no aplica | Clasificación de texto | variable | Diversas fuentes |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada, por lo que la comparativa se limita a parámetros, contexto y licencia. La ventaja principal de este modelo frente a alternativas transformer es su tamaño (unas 20 veces menor que DistilBERT) y su coste de inferencia en CPU; la desventaja es la falta de contexto documentado y la ausencia de la definición de la clase del modelo en el repositorio.
@@ -89,5 +89,5 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GXHamster/trec-question-gru-glove
+- Hugging Face: https://huggingface.co/GXHamster/trec-question-gru-glove
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs, repositorios o demos en la información proporcionada.

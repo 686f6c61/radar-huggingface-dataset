@@ -62,7 +62,7 @@ Además, el experimento EXP-011 reporta que en sondas sin respuesta posible, el 
 
 - El adaptador en sí ocupa 0,3 GB en safetensors, pero requiere cargar el modelo base `google/gemma-4-E4B-it` completo para la inferencia.
 - Los requisitos de VRAM del modelo base no se especifican en la información disponible; al ser un modelo de la familia Gemma 4 de tamaño E4B (probablemente del orden de 4 000 millones de parámetros, aunque no se confirma), cabría esperar que quepa en GPUs de consumo como una RTX 3090 o RTX 4090 con cuantización, pero este dato no está confirmado.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace sobre el base. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face sobre el base. No se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,6 +81,6 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danny9417/gemma-4-e4b-it-holmes-r1
+- Repositorio Hugging Face: https://huggingface.co/danny9417/gemma-4-e4b-it-holmes-r1
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Informes de experimentos EXP-007 y EXP-011: incluidos como PDFs en el repositorio (no hay enlaces directos en la información proporcionada)

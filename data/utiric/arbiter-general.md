@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARBITER-general es un ajuste fino del modelo base Qwen/Qwen3-0.6B-Base publicado por el usuario Utiric en HuggingFace. No es un modelo generativo al uso: se ha reentrenado como una capa de decisión de un solo pase hacia delante (*single-pass decision layer*) que recibe un estado en texto y devuelve decisiones tipadas. Concretamente, responde preguntas estructuradas de tres tipos: `choice` (hasta 52 opciones), `score` (niveles ordenados) y `noul` (sí/no). Nunca genera tokens.
+ARBITER-general es un ajuste fino del modelo base Qwen/Qwen3-0.6B-Base publicado por el usuario Utiric en Hugging Face. No es un modelo generativo al uso: se ha reentrenado como una capa de decisión de un solo pase hacia delante (*single-pass decision layer*) que recibe un estado en texto y devuelve decisiones tipadas. Concretamente, responde preguntas estructuradas de tres tipos: `choice` (hasta 52 opciones), `score` (niveles ordenados) y `noul` (sí/no). Nunca genera tokens.
 
 El mecanismo es inusual y merece atención: el prompt se renderiza con etiquetas `<state>` y líneas `(A) opción — descripción`, terminando en la cadena literal `Answer: (`. El modelo ejecuta una única pasada y se leen los logits de la cabeza LM restringidos a los 52 tokens de letra (`A`–`Z`, `a`–`z`) en la posición de ese hueco. Un softmax con temperatura global 1,6 (ajustada a posteriori sobre datos de validación y guardada en `s1_config.json`) convierte esos logits en probabilidades calibradas, y la confianza se define como la diferencia entre la probabilidad top-1 y la top-2. La latencia depende solo de la longitud del prompt (coste de prefill), sin bucle de generación por token.
 
@@ -104,10 +104,10 @@ La propia model card pide leer estos datos con honestidad: el rendimiento es fue
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Utiric/arbiter-general | 596.049.920 | 2048 tokens de estado (presupuesto del wrapper) | Decisión de un solo pase, salida tipada (choice/score/noul) | Apache-2.0 | HuggingFace, sin paquete pip |
-| Qwen/Qwen3-0.6B-Base | 0,6 B | no disponible en la información proporcionada | Generativo decoder-only | Apache-2.0 | HuggingFace |
-| BERT-base-multilingual-cased | 110 M (cifra de conocimiento general) | no disponible en la información proporcionada | Clasificación por encoder, cabecera por tarea | Apache-2.0 | HuggingFace |
-| XLM-RoBERTa-base | 278 M (cifra de conocimiento general) | no disponible en la información proporcionada | Clasificación por encoder, cabecera por tarea | MIT | HuggingFace |
+| Utiric/arbiter-general | 596.049.920 | 2048 tokens de estado (presupuesto del wrapper) | Decisión de un solo pase, salida tipada (choice/score/noul) | Apache-2.0 | Hugging Face, sin paquete pip |
+| Qwen/Qwen3-0.6B-Base | 0,6 B | no disponible en la información proporcionada | Generativo decoder-only | Apache-2.0 | Hugging Face |
+| BERT-base-multilingual-cased | 110 M (cifra de conocimiento general) | no disponible en la información proporcionada | Clasificación por encoder, cabecera por tarea | Apache-2.0 | Hugging Face |
+| XLM-RoBERTa-base | 278 M (cifra de conocimiento general) | no disponible en la información proporcionada | Clasificación por encoder, cabecera por tarea | MIT | Hugging Face |
 
 La comparación directa con clasificadores tipo encoder no puede hacerse con cifras porque no hay resultados de benchmarks comunes entre ambos grupos en la información disponible. La diferencia funcional es clara: ARBITER define las etiquetas en tiempo de inferencia mediante el prompt (hasta 52 opciones, sin reentrenar), mientras que un clasificador BERT o XLM-R requiere una cabecera y un entrenamiento por conjunto de etiquetas. Frente a su modelo base, ARBITER sacrifica la generación de texto a cambio de una decisión estructurada con probabilidades calibradas.
 
@@ -130,7 +130,7 @@ La comparación directa con clasificadores tipo encoder no puede hacerse con cif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Utiric/arbiter-general
+- Modelo en Hugging Face: https://huggingface.co/Utiric/arbiter-general
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Script de inferencia `arbiter.py`, incluido en el repositorio del modelo (≈200 líneas, solo requiere `torch` y `transformers`)
 - Configuración de la temperatura y del slot, en `s1_config.json` dentro del repositorio

@@ -80,6 +80,6 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas con otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Teriri1999/p-Bridge
+- Hugging Face: https://huggingface.co/Teriri1999/p-Bridge
 - Repositorio de código: https://github.com/Teriri1999/p-Bridge
 - Backbone de referencia (OpenAI guided-diffusion): https://github.com/openai/guided-diffusion

@@ -23,7 +23,7 @@ El resultado publicado por el autor es una puntuacion de 15,151 en el leaderboar
 | Licencia | No disponible en el repositorio. Los componentes de terceros incluidos (DINOv3, SigLIP2, ConvNeXt) mantienen sus propias licencias de origen |
 | Formato de pesos | No disponible. El repositorio ocupa 4,9 GB en total y la model card no documenta el formato de serializacion de los siete modelos |
 | Resoluciones de entrada | 224, 384 y 512 px para las ramas ConvNeXt; 512 px para DINOv3; 384 px para SigLIP2 |
-| Estado en HuggingFace | 0 descargas, 0 likes; creado y actualizado el 17 de septiembre de 2026 |
+| Estado en Hugging Face | 0 descargas, 0 likes; creado y actualizado el 17 de septiembre de 2026 |
 | Tarea declarada (pipeline) | No disponible en los metadatos del repositorio |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ No se han identificado en la informacion disponible modelos publicos comparables
 
 | Sistema | Composicion | Resultado publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ahiok/aic2026-mesh-defects (mezcla completa) | 3 ConvNeXt-Tiny + 3 cabezas sobre DINOv3-L, DINOv3-H+ y SigLIP2 so400m + LightGBM | 15,151 en leaderboard publico; 14,83 en validacion cruzada | No disponible | Repositorio HuggingFace de 4,9 GB |
+| ahiok/aic2026-mesh-defects (mezcla completa) | 3 ConvNeXt-Tiny + 3 cabezas sobre DINOv3-L, DINOv3-H+ y SigLIP2 so400m + LightGBM | 15,151 en leaderboard publico; 14,83 en validacion cruzada | No disponible | Repositorio Hugging Face de 4,9 GB |
 | Rama ConvNeXt-Tiny aislada | CNN con backbone compartido a 224, 384 y 512 px | No disponible | No disponible | Pesos incluidos en el repositorio |
 | Rama DINOv3-L / DINOv3-H+ (congelada) | MLP sobre CLS, media y desviacion de tokens de parche de cinco capas | No disponible | Sujeta a la licencia de DINOv3 | Pesos incluidos en el repositorio |
 | Rama SigLIP2 so400m (congelada) | MLP sobre tokens de parche a 384 px | No disponible | Sujeta a la licencia de SigLIP2 | Pesos incluidos en el repositorio |
@@ -101,12 +101,12 @@ No se han identificado en la informacion disponible modelos publicos comparables
 - Sesgos del dominio: el sistema se entrena con los activos 3D del reto (categorias, estilos y proceso de render desconocidos). No hay evidencia publicada de generalizacion a otros dominios de mallas (CAD industrial, escaneos medicos, arquitectura).
 - Riesgo de falsos negativos en produccion: al ser una tarea de deteccion, los errores de omision implican activos defectuosos que pasan el filtro; no se publican curvas precision-recall ni matrices de confusion por etiqueta para dimensionar ese riesgo.
 - Opacidad de la metrica: no se identifica el nombre de la metrica ni su direccion, por lo que las cifras 15,151 y 14,83 no son comparables con resultados de otros trabajos.
-- Documentacion en ruso y ausencia de model card formal: los metadatos de HuggingFace no rellenan pipeline, licencia ni idiomas, y no hay ficha tecnica estructurada mas alla del README.
+- Documentacion en ruso y ausencia de model card formal: los metadatos de Hugging Face no rellenan pipeline, licencia ni idiomas, y no hay ficha tecnica estructurada mas alla del README.
 - Coste de inferencia no medido: aunque el entrenamiento cupo en 16 GB, no se publican latencias ni throughput, lo que dificulta planificar un despliegue con requisitos de tiempo real.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahiok/aic2026-mesh-defects
+- Repositorio en Hugging Face: https://huggingface.co/ahiok/aic2026-mesh-defects
 - Cuaderno de reproduccion incluido en el repositorio: `aic_solution.ipynb`
 - Codigo de entrenamiento, inferencia y explicabilidad: `src/` (`predict.py`, `explain.py`)
 - Configuracion de la mezcla, umbrales y regla de calidad: `reports/config_final.json`

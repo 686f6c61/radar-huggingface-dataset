@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyBrainBot-100M-v5.1-Base es un modelo de lenguaje base de 100,1 millones de parámetros desarrollado por el usuario independiente nkthebass y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero ("from scratch") siguiendo la arquitectura estándar `LlamaForCausalLM` de HuggingFace Transformers, sin código personalizado, lo que garantiza compatibilidad directa con el ecosistema transformers, llama.cpp, Ollama, LM Studio y Jan.
+TinyBrainBot-100M-v5.1-Base es un modelo de lenguaje base de 100,1 millones de parámetros desarrollado por el usuario independiente nkthebass y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero ("from scratch") siguiendo la arquitectura estándar `LlamaForCausalLM` de Hugging Face Transformers, sin código personalizado, lo que garantiza compatibilidad directa con el ecosistema transformers, llama.cpp, Ollama, LM Studio y Jan.
 
 El modelo es la continuación de TinyBrainBot-100M-v3-Base, al que se le añadieron 4,56 mil millones de tokens adicionales de datos densos en conocimiento (Q&A, hechos, textbooks, Wikipedia, aritmética y ciencia de nivel escolar), alcanzando un total de 29,6 mil millones de tokens de entrenamiento. Su relevancia radica en que demuestra que un modelo de apenas 100M de parámetros, entrenado con una curación de datos cuidadosa y sin contaminación de benchmarks, puede superar a alternativas de tamaño similar (90M-140M) en tareas de razonamiento de sentido común y conocimiento elemental.
 
@@ -77,11 +77,11 @@ En el conjunto retenido de 1.380 problemas aritméticos con temáticas y formula
 
 | Modelo | Params | Contexto | Int Index | Licencia | Disponibilidad |
 |---|--:|--:|--:|---|---|
-| TinyBrainBot-100M-v5.1-Base | 100,1M | 1.024 | 26,07 | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| void.1 | 90,2M | no disponible | 24,38 | no disponible | HuggingFace |
-| MobileLLM-R1-140M-base | 140M | no disponible | 24,64 | no disponible | HuggingFace |
-| BananaMind-2-Pro | 139M | no disponible | 24,96 | no disponible | HuggingFace |
-| GPT-X2.5-135M | 135M | no disponible | 25,17 | no disponible | HuggingFace |
+| TinyBrainBot-100M-v5.1-Base | 100,1M | 1.024 | 26,07 | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| void.1 | 90,2M | no disponible | 24,38 | no disponible | Hugging Face |
+| MobileLLM-R1-140M-base | 140M | no disponible | 24,64 | no disponible | Hugging Face |
+| BananaMind-2-Pro | 139M | no disponible | 24,96 | no disponible | Hugging Face |
+| GPT-X2.5-135M | 135M | no disponible | 25,17 | no disponible | Hugging Face |
 
 TinyBrainBot-100M-v5.1-Base lidera el Intelligence Index del Open SLM Leaderboard entre los modelos comparados pese a ser el de menor tamaño (100,1M frente a 135-140M de sus competidores). Destaca especialmente en ARC-Easy (57,15 frente a 49,3-53,6) y ARC-Challenge (34,47 frente a 24,7-29,4), mientras que MobileLLM-R1-140M-base lo supera claramente en aritmética (65,7 frente a 47,0) y BananaMind-2-Pro y GPT-X2.5-135M lo superan en HellaSwag (42,8 y 40,6 frente a 34,98).
 
@@ -100,7 +100,7 @@ TinyBrainBot-100M-v5.1-Base lidera el Intelligence Index del Open SLM Leaderboar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-100m-v5.1-base
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-100m-v5.1-base
 - Modelo anterior (v3-Base): https://huggingface.co/nkthebass/tinybrainbot-100m-v3-base
 - Open SLM Leaderboard: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Dataset de matemáticas propio: https://huggingface.co/datasets/nkthebass/tinybrainbot-3m-math-data

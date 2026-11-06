@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maitani/geniac-stage2-adapter es un adaptador LoRA publicado en HuggingFace por el usuario Maitani, entrenado mediante supervisión fina (SFT) sobre el modelo base unsloth/Qwen3-4B-Base-unsloth-bnb-4bit, es decir, la versión base de Qwen3 de 4.000 millones de parámetros cuantizada a 4 bits con bitsandbytes por Unsloth. El repositorio contiene únicamente los pesos del adaptador PEFT en formato safetensors (0,5 GB), no un modelo completo, por lo que su uso requiere descargar y cargar previamente el modelo base indicado. La nomenclatura "stage2" sugiere que forma parte de una pipeline de ajuste por etapas, aunque la model card no documenta ninguna de las fases.
+Maitani/geniac-stage2-adapter es un adaptador LoRA publicado en Hugging Face por el usuario Maitani, entrenado mediante supervisión fina (SFT) sobre el modelo base unsloth/Qwen3-4B-Base-unsloth-bnb-4bit, es decir, la versión base de Qwen3 de 4.000 millones de parámetros cuantizada a 4 bits con bitsandbytes por Unsloth. El repositorio contiene únicamente los pesos del adaptador PEFT en formato safetensors (0,5 GB), no un modelo completo, por lo que su uso requiere descargar y cargar previamente el modelo base indicado. La nomenclatura "stage2" sugiere que forma parte de una pipeline de ajuste por etapas, aunque la model card no documenta ninguna de las fases.
 
 La relevancia de esta ficha es limitada por la ausencia casi total de documentación: la model card es una plantilla sin rellenar, con todos los campos marcados como "[More Information Needed]", sin licencia declarada, sin idiomas declarados y sin resultados de evaluación. El adaptador acumula 25 descargas y 0 likes desde su publicación, y las fechas de creación y actualización registradas (octubre de 2026) no permiten extraer conclusiones adicionales.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparación 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Maitani/geniac-stage2-adapter | Adaptador LoRA (SFT) | no disponible (base de 4B) | no disponible | no disponible | 25 descargas, 0 likes |
-| unsloth/Qwen3-4B-Base-unsloth-bnb-4bit | Modelo base cuantizado a 4 bits | 4B (según identificador) | no disponible en esta información | no disponible en esta información | Repositorio público en HuggingFace |
+| unsloth/Qwen3-4B-Base-unsloth-bnb-4bit | Modelo base cuantizado a 4 bits | 4B (según identificador) | no disponible en esta información | no disponible en esta información | Repositorio público en Hugging Face |
 | Otros adaptadores LoRA sobre Qwen3-4B | Adaptador LoRA | no disponible | no disponible | variable | no disponible |
 
 No se han identificado alternativas equivalentes de la misma categoría con datos verificables en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento.
@@ -98,7 +98,7 @@ No se han identificado alternativas equivalentes de la misma categoría con dato
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Maitani/geniac-stage2-adapter
+- Página del modelo en Hugging Face: https://huggingface.co/Maitani/geniac-stage2-adapter
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

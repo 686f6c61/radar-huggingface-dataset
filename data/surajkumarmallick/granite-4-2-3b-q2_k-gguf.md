@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para comparar con modelos de otros desar
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/surajkumarmallick/granite-4.2-3b-Q2_K-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/surajkumarmallick/granite-4.2-3b-Q2_K-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

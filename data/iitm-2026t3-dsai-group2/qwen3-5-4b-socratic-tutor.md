@@ -79,8 +79,8 @@ No se han publicado resultados en benchmarks estándar de razonamiento o código
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-socratic-tutor (este) | ~21,2 M (adaptador LoRA) sobre base 4B | no disponible | Tutoría socrática STEM | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | 4B (no confirmado en la información) | no disponible | Generación generalista | no disponible | HuggingFace |
+| qwen3.5-4b-socratic-tutor (este) | ~21,2 M (adaptador LoRA) sobre base 4B | no disponible | Tutoría socrática STEM | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | 4B (no confirmado en la información) | no disponible | Generación generalista | no disponible | Hugging Face |
 | Alternativas de tutoría socrática de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros adaptadores o modelos comparables de tutoría socrática en los datos proporcionados.
@@ -98,7 +98,7 @@ No se dispone de información sobre otros adaptadores o modelos comparables de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IITM-2026T3-DSAI-GROUP2/qwen3.5-4b-socratic-tutor
+- Modelo en Hugging Face: https://huggingface.co/IITM-2026T3-DSAI-GROUP2/qwen3.5-4b-socratic-tutor
 - Dataset de tutoría socrática: https://huggingface.co/datasets/IITM-2026T3-DSAI-GROUP2/socratic-tutoring-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Papers, blogs, repositorios y demos adicionales: no disponibles en la información proporcionada.

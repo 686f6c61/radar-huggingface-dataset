@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sae-splade-ja-30m` es un modelo de recuperación dispersa aprendida (learned sparse retrieval, tipo SPLADE) para japonés, desarrollado por el usuario mahiyama y publicado en HuggingFace. Se construye sobre el encoder `sbintuitions/modernbert-ja-30m` y proyecta el texto a un espacio disperso de 65.536 dimensiones compartido con su modelo hermano `mahiyama/sae-splade-ja-310m`. Su función no es generar texto, sino producir representaciones vectoriales dispersas para motores de búsqueda y sistemas de recuperación de información.
+`sae-splade-ja-30m` es un modelo de recuperación dispersa aprendida (learned sparse retrieval, tipo SPLADE) para japonés, desarrollado por el usuario mahiyama y publicado en Hugging Face. Se construye sobre el encoder `sbintuitions/modernbert-ja-30m` y proyecta el texto a un espacio disperso de 65.536 dimensiones compartido con su modelo hermano `mahiyama/sae-splade-ja-310m`. Su función no es generar texto, sino producir representaciones vectoriales dispersas para motores de búsqueda y sistemas de recuperación de información.
 
 El modelo está diseñado específicamente para una recuperación asimétrica: las consultas se codifican con este modelo de 30M (rápido, apto para CPU) y los documentos se indexan con el modelo de 310M. De este modo se reutiliza el índice ya construido con el modelo grande y solo se paga el coste de codificar la consulta en cada búsqueda, que resulta aproximadamente seis veces más rápido en CPU que con el modelo de 310M.
 
@@ -122,7 +122,7 @@ La comparación no es estrictamente homogénea: las cifras de los modelos ruri-v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahiyama/sae-splade-ja-30m
+- Modelo en Hugging Face: https://huggingface.co/mahiyama/sae-splade-ja-30m
 - Modelo de documentos asociado: https://huggingface.co/mahiyama/sae-splade-ja-310m
 - Exportación ONNX: https://huggingface.co/mahiyama/sae-splade-ja-30m-onnx
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-30m

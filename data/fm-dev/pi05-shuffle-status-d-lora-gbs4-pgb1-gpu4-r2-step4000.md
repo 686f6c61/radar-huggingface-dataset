@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado sobre pi0.5, el modelo de vision-lenguaje-accion (VLA) desarrollado por Physical Intelligence y liberado a traves del repositorio openpi. El identificador del checkpoint, `pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step4000`, indica que se trata de un ajuste fino de tipo LoRA sobre la variante base pi0.5, con una tarea asociada ("shuffle-status-d") y una configuracion de entrenamiento concreta: batch global 4, batch por GPU 1, 4 GPUs, repeticion 2 y 4000 pasos de entrenamiento. El pipeline declarado en HuggingFace es `robotics` y las etiquetas incluyen `pi05`, `franka` y `lora`, lo que apunta a un uso en control de un brazo robotico Franka.
+Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado sobre pi0.5, el modelo de vision-lenguaje-accion (VLA) desarrollado por Physical Intelligence y liberado a traves del repositorio openpi. El identificador del checkpoint, `pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step4000`, indica que se trata de un ajuste fino de tipo LoRA sobre la variante base pi0.5, con una tarea asociada ("shuffle-status-d") y una configuracion de entrenamiento concreta: batch global 4, batch por GPU 1, 4 GPUs, repeticion 2 y 4000 pasos de entrenamiento. El pipeline declarado en Hugging Face es `robotics` y las etiquetas incluyen `pi05`, `franka` y `lora`, lo que apunta a un uso en control de un brazo robotico Franka.
 
 El problema que resuelve es el de adaptar un modelo fundacional de robotica a una tarea especifica de manipulacion sin reentrenar todo el modelo. pi0.5 se distribuye como un VLA basado en la familia PaliGemma (codificador visual SigLIP mas un decodificador de lenguaje Gemma de aproximadamente 2B parametros, en la variante `gemma_2b_lora`), con una cabeza o "action expert" que genera acciones mediante flow matching. El ajuste LoRA permite especializarlo en una tarea de manipulacion concreta con un coste de computo reducido, algo relevante porque el entrenamiento completo de un VLA de este tamano es muy costoso y no cabe en hardware de consumo.
 
@@ -45,11 +45,11 @@ Este repositorio concreto no es un modelo completo, sino un adaptador LoRA sobre
 - Prototipado en hardware de consumo: dado que las issues de openpi discuten el ajuste de pi0.5 en una RTX 4090, este adaptador es un ejemplo de flujo de trabajo con recursos limitados.
 - Evaluacion de politicas de control en simulacion: el modelo puede conectarse a entornos simulados compatibles con Franka para medir tasas de exito antes de desplegarlo en un robot real.
 - Benchmark interno de tareas de manipulacion: util para comparar distintas ejecuciones (`r2`, `step4000`) sobre la misma tarea y decidir que checkpoints promocionar.
-- Formacion y docencia: ejemplo didactico de como se publica un adaptador LoRA de un VLA en HuggingFace con la convencion de nombres del ecosistema openpi.
+- Formacion y docencia: ejemplo didactico de como se publica un adaptador LoRA de un VLA en Hugging Face con la convencion de nombres del ecosistema openpi.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de exito, tasas de acierto en tareas de manipulacion ni comparaciones con otros checkpoints, y la busqueda web solo aporta discusiones generales sobre el soporte de LoRA en pi0.5.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de exito, tasas de acierto en tareas de manipulacion ni comparaciones con otros checkpoints, y la busqueda web solo aporta discusiones generales sobre el soporte de LoRA en pi0.5.
 
 ## Requisitos de hardware
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-shuffle-status-d-lora (este) | Adapter LoRA sobre pi0.5 (~3B base) | No disponible | No disponible | No disponible | HuggingFace (0 descargas) |
+| pi05-shuffle-status-d-lora (este) | Adapter LoRA sobre pi0.5 (~3B base) | No disponible | No disponible | No disponible | Hugging Face (0 descargas) |
 | pi0.5 base (openpi) | ~3B (PaliGemma 2B + expert) | No disponible | No disponible | Licencia del proyecto openpi (consultar) | GitHub Physical-Intelligence/openpi |
 | pi0 / pi0-FAST (openpi) | ~3B | `max_token_len=180` en configuraciones publicas | No disponible | Licencia del proyecto openpi | GitHub Physical-Intelligence/openpi |
-| OpenVLA | ~7B (Llama-2-7B + DINOv2 + SigLIP) | No disponible | No disponible | Licencia abierta (consultar) | HuggingFace / GitHub |
+| OpenVLA | ~7B (Llama-2-7B + DINOv2 + SigLIP) | No disponible | No disponible | Licencia abierta (consultar) | Hugging Face / GitHub |
 
 Los datos de rendimiento y contexto de los modelos comparables no se han verificado en la informacion proporcionada; se ofrecen como referencia de categoria, no como comparacion cuantitativa.
 
@@ -83,7 +83,7 @@ Los datos de rendimiento y contexto de los modelos comparables no se han verific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step4000
+- Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step4000
 - Repositorio openpi: https://github.com/Physical-Intelligence/openpi
 - Issue sobre ajuste LoRA para pi0.5: https://github.com/Physical-Intelligence/openpi/issues/672
 - Propuesta de soporte LoRA en backend PyTorch: https://github.com/Physical-Intelligence/openpi/issues/842

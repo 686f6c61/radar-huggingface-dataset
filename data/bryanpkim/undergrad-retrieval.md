@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BryanPkim/undergrad-retrieval` es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia de una arquitectura CLIP orientada a tareas de recuperacion (retrieval) multimodal. El autor, BryanPkim, lo publica como banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida: el propio README indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks.
+`BryanPkim/undergrad-retrieval` es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia de una arquitectura CLIP orientada a tareas de recuperacion (retrieval) multimodal. El autor, BryanPkim, lo publica como banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida: el propio README indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks.
 
 El modelo esta definido a escala "nano", con atencion flash, fusion de bajo rango (low rank), activacion swish y normalizacion InstanceNorm. El recuento real de parametros del fichero safetensors es de 16.576 parametros totales, un orden de magnitud muy inferior al de cualquier CLIP de produccion, lo que confirma su caracter didactico o de depuracion. La receta de experimento por defecto usa el optimizador Lion con un schedule polinomial.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BryanPkim/undergrad-retrieval | CLIP personalizado, escala nano | 16.576 (sin entrenar) | no disponible | BSD-3-Clause | HuggingFace, 0 descargas |
+| BryanPkim/undergrad-retrieval | CLIP personalizado, escala nano | 16.576 (sin entrenar) | no disponible | BSD-3-Clause | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | CLIP, ViT-B/32 | ~151 millones | 77 tokens de texto | MIT (segun distribucion original) | Ampliamente disponible |
 | OpenCLIP ViT-B/32 | CLIP reimplementado | ~151 millones | 77 tokens de texto | Variada segun checkpoint | Ampliamente disponible |
 | SigLIP Base | SigLIP (sigmoide en lugar de softmax) | Cientos de millones segun variante | no disponible | Apache 2.0 en variantes abiertas | Ampliamente disponible |
@@ -97,5 +97,5 @@ Las cifras de los modelos comparativos corresponden a datos publicos de sus resp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BryanPkim/undergrad-retrieval
+- Modelo en Hugging Face: https://huggingface.co/BryanPkim/undergrad-retrieval
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan ninguna relacion con este modelo y se han descartado.

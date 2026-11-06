@@ -96,7 +96,7 @@ No hay disponibles alternativas comerciales directas de la misma categoria con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a3harva/laya-toolguard-mlx
+- Modelo en Hugging Face: https://huggingface.co/a3harva/laya-toolguard-mlx
 - Repositorio del proyecto pi-laya-mlx (servidor, extension y datos de investigacion): https://github.com/a3harva/pi-laya-mlx
 - Datos, scripts y log de entrenamiento: https://github.com/a3harva/pi-laya-mlx/tree/main/research
 - Modelo base (port MLX de Laya): https://huggingface.co/cavi-ai/laya-MLX-8bit

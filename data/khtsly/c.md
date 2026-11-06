@@ -2,7 +2,7 @@
 
 ## Resumen
 
-khtsly/c es un checkpoint periódico publicado durante el entrenamiento del modelo, concretamente en el paso 1900, según indica su propia model card. No se trata de un modelo terminado: el autor lo sube a HuggingFace como copia de seguridad y para poder comparar diferencias entre estados de entrenamiento. La arquitectura declarada es un "mini port" de Kimi K3, implementado en la clase `KimiLinearForCausalLM`, con etiquetas que apuntan a `kimi_linear` y `kimi-k3`.
+khtsly/c es un checkpoint periódico publicado durante el entrenamiento del modelo, concretamente en el paso 1900, según indica su propia model card. No se trata de un modelo terminado: el autor lo sube a Hugging Face como copia de seguridad y para poder comparar diferencias entre estados de entrenamiento. La arquitectura declarada es un "mini port" de Kimi K3, implementado en la clase `KimiLinearForCausalLM`, con etiquetas que apuntan a `kimi_linear` y `kimi-k3`.
 
 El modelo tiene 1.500.480.224 parámetros totales (aproximadamente 1,5 mil millones, según los datos reales de los archivos safetensors) y está etiquetado únicamente para inglés. El repositorio ocupa 50,2 GB, un tamaño muy superior al que correspondería a los pesos en precisión de inferencia, lo que sugiere que incluye artefactos de entrenamiento (estados del optimizador, shards en alta precisión o copias múltiples). No se declara licencia, longitud de contexto ni composición del dataset.
 
@@ -91,10 +91,10 @@ La diferencia fundamental no es de tamaño, sino de madurez: las tres alternativ
 - Requiere `trust_remote_code=True`, lo que implica ejecutar código publicado por el autor; conviene revisarlo antes de cargar el modelo en un entorno con datos sensibles.
 - El repositorio ocupa 50,2 GB frente a los aproximadamente 3 GB de los pesos en fp16, lo que sugiere artefactos adicionales de entrenamiento; verificar el contenido antes de descargar.
 - Ausencia total de benchmarks: no hay ninguna base objetiva para comparar su rendimiento con alternativas.
-- Fecha de creación del repositorio: 3 de octubre de 2026; última actualización, 3 de octubre de 2026, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 3 de octubre de 2026; última actualización, 3 de octubre de 2026, según los metadatos de Hugging Face.
 - Los resultados de la búsqueda web asociada a este modelo devolvieron exclusivamente contenido no relacionado y de carácter adulto; no se ha extraído ninguna fuente técnica de ellos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khtsly/c
+- Hugging Face: https://huggingface.co/khtsly/c
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos por el buscador no guardan relacion con este modelo y se han descartado.

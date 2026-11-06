@@ -107,7 +107,7 @@ Respecto a modelos externos de la misma categoría (clasificadores de decisión 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/litert-community/laya-LiteRT
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/laya-LiteRT
 - Modelo base: https://huggingface.co/convaiinnovations/laya/tree/1c5edc17a7acd8701df6fc341c0d179f1c62c982
 - Paquete multilingüe: https://huggingface.co/litert-community/Laya-Multilingual-LiteRT
 - Paquete inglés: https://huggingface.co/litert-community/Laya-English-LiteRT

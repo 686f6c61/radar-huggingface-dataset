@@ -65,5 +65,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_cap_b1000_s0](https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_cap_b1000_s0)
+- [Hugging Face: AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_cap_b1000_s0](https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_cap_b1000_s0)
 - [Modelo base: Qwen/Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)

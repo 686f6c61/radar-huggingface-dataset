@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Idioma | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheStageAI/pocket-tts-100m-de | 100M | Alemán (de) | Core ML / ANE | CC-BY-4.0 | HuggingFace y SDK de TheStage |
-| kyutai/pocket-tts (variante `languages/german`) | 100M | Alemán (variante); otros idiomas no verificados | No disponible | CC-BY-4.0 según la model card; la página de Kyutai menciona MIT para Pocket TTS: discrepancia a verificar | HuggingFace |
-| TheStageAI/pocket-tts-18m-en | 18M | Inglés (en) | Core ML / ANE | No disponible | HuggingFace |
+| TheStageAI/pocket-tts-100m-de | 100M | Alemán (de) | Core ML / ANE | CC-BY-4.0 | Hugging Face y SDK de TheStage |
+| kyutai/pocket-tts (variante `languages/german`) | 100M | Alemán (variante); otros idiomas no verificados | No disponible | CC-BY-4.0 según la model card; la página de Kyutai menciona MIT para Pocket TTS: discrepancia a verificar | Hugging Face |
+| TheStageAI/pocket-tts-18m-en | 18M | Inglés (en) | Core ML / ANE | No disponible | Hugging Face |
 
 Frente a la variante inglesa de 18M, este modelo tiene aproximadamente 5,5 veces más parámetros y está especializado en alemán. Frente al modelo base de Kyutai, añade el empaquetado Core ML/ANE para el SDK de TheStage. No hay datos públicos de calidad (MOS) que permitan comparar la naturalidad de las tres alternativas.
 
@@ -75,10 +75,10 @@ Frente a la variante inglesa de 18M, este modelo tiene aproximadamente 5,5 veces
 - No se documentan latencia, consumo energético, tamaño máximo de texto de entrada ni comportamiento en streaming.
 
 ## Enlaces
-- [TheStageAI/pocket-tts-100m-de en HuggingFace](https://huggingface.co/TheStageAI/pocket-tts-100m-de)
+- [TheStageAI/pocket-tts-100m-de en Hugging Face](https://huggingface.co/TheStageAI/pocket-tts-100m-de)
 - [kyutai/pocket-tts (modelo base)](https://huggingface.co/kyutai/pocket-tts)
 - [Pocket TTS en Kyutai](https://kyutai.org/pocket-tts/)
 - [Review independiente de Pocket TTS](https://andrew.ooo/posts/pocket-tts-kyutai-cpu-voice-cloning-review/)
-- [TheStageAI en HuggingFace](https://huggingface.co/TheStageAI)
+- [TheStageAI en Hugging Face](https://huggingface.co/TheStageAI)
 - [TheStageAI/pocket-tts-18m-en](https://huggingface.co/TheStageAI/pocket-tts-18m-en)
 - [Demo de Pocket TTS en TTS.ai](https://tts.ai/voices/pocket-tts/)

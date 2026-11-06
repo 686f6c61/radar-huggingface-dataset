@@ -6,7 +6,7 @@ SAM3.1-HSWQ-ConvRot-INT8 es una versión cuantizada del modelo de segmentación 
 
 El modelo resuelve la tarea de segmentación de imágenes y vídeo, incluyendo segmentación guiada por prompts y el modo Multiplex que permite gestionar múltiples objetos o entidades en una misma inferencia. Su relevancia actual radica en que reduce el peso del checkpoint frente al original FP16 y habilita operaciones INT8 Tensor Core en hardware compatible, manteniendo el resto del checkpoint en FP16. La reducción de tamaño es, sin embargo, modesta: según la propia model card, apenas un 0,4 % respecto al fichero FP16 de origen, porque solo 41 de las 221 capas Linear activas en tiempo de ejecución se cuantizan.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace y en los repositorios enlazados por el autor. No hay datos de benchmarks, composición del dataset de entrenamiento ni detalles de arquitectura interna más allá de la referencia a SAM 3.1 y al esquema de cuantización.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y en los repositorios enlazados por el autor. No hay datos de benchmarks, composición del dataset de entrenamiento ni detalles de arquitectura interna más allá de la referencia a SAM 3.1 y al esquema de cuantización.
 
 ## Especificaciones técnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAM3.1-HSWQ-ConvRot-INT8 (este) | no disponible | no disponible | safetensors INT8/FP16 híbrido, ~1,74 GB | SAM License | HuggingFace, 0 descargas, 5 likes |
-| Comfy-Org/sam3.1 (base) | no disponible | no disponible | safetensors FP16, ~1,75 GB | SAM License | HuggingFace |
-| facebook/sam3.1 (original) | no disponible | no disponible | no disponible en la información | SAM License | HuggingFace |
+| SAM3.1-HSWQ-ConvRot-INT8 (este) | no disponible | no disponible | safetensors INT8/FP16 híbrido, ~1,74 GB | SAM License | Hugging Face, 0 descargas, 5 likes |
+| Comfy-Org/sam3.1 (base) | no disponible | no disponible | safetensors FP16, ~1,75 GB | SAM License | Hugging Face |
+| facebook/sam3.1 (original) | no disponible | no disponible | no disponible en la información | SAM License | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ussoewwin/SAM3.1-HSWQ-ConvRot-INT8
+- Modelo en Hugging Face: https://huggingface.co/ussoewwin/SAM3.1-HSWQ-ConvRot-INT8
 - Framework HSWQ: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization
 - Loader y herramientas ComfyUI: https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools
 - Auditoría de backdoor: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization/blob/main/md/Backdoor_Audit_Verdicts.md

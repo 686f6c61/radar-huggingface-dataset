@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de clasificadores o modelos de decisión de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olaverse/PurpleMIST-Mini-2.0
+- Modelo en Hugging Face: https://huggingface.co/olaverse/PurpleMIST-Mini-2.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Modelo comparable de la familia: https://huggingface.co/olaverse/PurpleMIST-Flash-1.0
 - Dataset African Typed Decisions: https://huggingface.co/datasets/olaverse/african-typed-decisions

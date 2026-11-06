@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| smolvla-maniskill_stackcube_mixed30-uniform | ~450 M | no disponible | apache-2.0 | HuggingFace, 0 descargas, ajuste sobre dataset privado |
-| lerobot/smolvla_base | ~450 M | no disponible | apache-2.0 | HuggingFace (modelo base, disponible publicamente) |
-| OpenVLA-7B | ~7 B | no disponible | MIT (segun su model card publica) | HuggingFace, ampliamente usado como baseline VLA |
-| pi0 (Physical Intelligence) | ~3,3 B | no disponible | apache-2.0 (segun su model card publica) | HuggingFace y repositorio openpi |
+| smolvla-maniskill_stackcube_mixed30-uniform | ~450 M | no disponible | apache-2.0 | Hugging Face, 0 descargas, ajuste sobre dataset privado |
+| lerobot/smolvla_base | ~450 M | no disponible | apache-2.0 | Hugging Face (modelo base, disponible publicamente) |
+| OpenVLA-7B | ~7 B | no disponible | MIT (segun su model card publica) | Hugging Face, ampliamente usado como baseline VLA |
+| pi0 (Physical Intelligence) | ~3,3 B | no disponible | apache-2.0 (segun su model card publica) | Hugging Face y repositorio openpi |
 
 Nota: los datos de OpenVLA-7B y pi0 proceden de sus fichas publicas y pueden cambiar; no se han verificado contra la informacion proporcionada en esta busqueda. La ventaja principal de este checkpoint frente a alternativas de 3-7 B es el tamano (un orden de magnitud menor) y el coste de inferencia; su desventaja es la especializacion en una unica tarea y la ausencia de evaluacion publicada.
 

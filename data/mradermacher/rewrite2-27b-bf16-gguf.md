@@ -109,7 +109,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/rewrite2-27b-bf16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/rewrite2-27b-bf16-GGUF
 - Modelo base: https://huggingface.co/aikexue170/rewrite2-27b-bf16
 - Página de descarga y visión general del cuantizador: https://hf.tst.eu/model#rewrite2-27b-bf16-GGUF
 - Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

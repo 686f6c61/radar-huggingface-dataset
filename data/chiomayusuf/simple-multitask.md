@@ -26,7 +26,7 @@ La arquitectura se basa en el Perceiver, un modelo que utiliza atención cruzada
 - El modelo no presenta capacidades demostradas, ya que el checkpoint incluido es de inicialización y no ha sido entrenado.
 - La arquitectura Perceiver está diseñada para procesar entradas multimodales y manejar tareas multitarea, pero en este estado no se puede verificar ningún comportamiento funcional.
 - No se documenta soporte para generación de texto, razonamiento, código, matemáticas, visión, tool calling, agentes ni capacidades multilingües.
-- La implementación es personalizada y requiere un adaptador explícito para ser cargada mediante APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para ser cargada mediante APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
@@ -56,11 +56,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 ## Limitaciones y advertencias
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
-- La implementación es personalizada y no compatible con las APIs estándar de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs estándar de Hugging Face sin un adaptador explícito.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto o idioma, ya que el modelo no tiene comportamiento funcional.
 - La licencia BSD-3-Clause permite uso comercial, pero se advierte que deben revisarse los términos de las fuentes de datos externas si se utilizan con este repositorio.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado, sin mezclarlo con los valores por defecto incluidos aquí.
 
 ## Enlaces
 
-- [HuggingFace - chiomayusuf/simple-multitask](https://huggingface.co/chiomayusuf/simple-multitask)
+- [Hugging Face - chiomayusuf/simple-multitask](https://huggingface.co/chiomayusuf/simple-multitask)

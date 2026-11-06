@@ -68,7 +68,7 @@ No se dispone de datos comparativos publicados para este adaptador. La comparaci
 
 | Artefacto | Tipo | Base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-inkling-anth-ed7-mid-g1-b2 | Adaptador LoRA (r=64, all-linear) | thinkingmachines/Inkling-Small | No disponible (entrenado a 8192) | No disponible | Publico en HuggingFace, 0 descargas |
+| ct-inkling-anth-ed7-mid-g1-b2 | Adaptador LoRA (r=64, all-linear) | thinkingmachines/Inkling-Small | No disponible (entrenado a 8192) | No disponible | Publico en Hugging Face, 0 descargas |
 | thinkingmachines/Inkling-Small | Modelo base | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado como base del adaptador |
 | Otras generaciones y ramas del programa `inkling-anth-ed7-mid` | Adaptadores LoRA de la misma cadena | thinkingmachines/Inkling-Small | No disponible | No disponible | No disponibles en la informacion proporcionada |
 
@@ -90,8 +90,8 @@ No se conocen modelos alternativos equivalentes de la misma categoria (adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-ed7-mid-g1-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-ed7-mid-g1-b2
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Libreria PEFT: https://github.com/huggingface/peft
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su familia, el programa de entrenamiento constitucional iterado ni el modelo base Inkling-Small. Por tanto, no se incluyen enlaces a papers, blogs o repositorios adicionales, y el fichero `training_seed_constitution.md`, asi como `tinker_meta.json`, solo estan disponibles dentro del propio repositorio del modelo en HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su familia, el programa de entrenamiento constitucional iterado ni el modelo base Inkling-Small. Por tanto, no se incluyen enlaces a papers, blogs o repositorios adicionales, y el fichero `training_seed_constitution.md`, asi como `tinker_meta.json`, solo estan disponibles dentro del propio repositorio del modelo en Hugging Face.

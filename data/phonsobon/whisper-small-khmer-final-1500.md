@@ -25,13 +25,13 @@ El modelo utiliza la arquitectura Whisper, un transformer encoder-decoder diseñ
 
 ## Capacidades
 
-- Transcripción de audio en khmer mediante el pipeline automatic-speech-recognition de HuggingFace.
+- Transcripción de audio en khmer mediante el pipeline automatic-speech-recognition de Hugging Face.
 - No se documentan capacidades de tool calling, agentes, razonamiento, visión ni generación de audio; es un modelo puramente de reconocimiento de voz.
 - Soporte de un único idioma: khmer.
 
 ## Casos de uso
 
-- Transcripción de reuniones en khmer: el modelo puede procesar grabaciones de reuniones para generar actas escritas, usando el pipeline de HuggingFace y un preprocesado de audio.
+- Transcripción de reuniones en khmer: el modelo puede procesar grabaciones de reuniones para generar actas escritas, usando el pipeline de Hugging Face y un preprocesado de audio.
 - Subtitulado de vídeos en khmer: integrado con FFmpeg, se puede transcribir el audio y generar subtítulos en formato SRT para contenidos audiovisuales.
 - Accesibilidad para personas sordas o con discapacidad auditiva en Camboya: transcripción en tiempo real o diferida de contenido hablado, mejorando el acceso a la información.
 - Análisis de llamadas de servicio al cliente: transcripción de llamadas telefónicas en khmer para extraer información y evaluar la calidad del servicio.
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no se proporcionan datos oficiales. Dado el tamaño de 241,7 millones de parámetros, la inferencia en FP16 requiere aproximadamente 0,5 GB de VRAM, más el overhead del framework.
 - GPU recomendadas: no se especifican. Por tamaño, una GPU con al menos 2 GB de VRAM (por ejemplo, RTX 2060, T4, A10) sería suficiente para la inferencia.
 - Sí cabe en GPUs de consumo como RTX 3060 o inferiores.
-- Opciones de despliegue: HuggingFace Transformers (pipeline), faster-whisper, whisper.cpp.
+- Opciones de despliegue: Hugging Face Transformers (pipeline), faster-whisper, whisper.cpp.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

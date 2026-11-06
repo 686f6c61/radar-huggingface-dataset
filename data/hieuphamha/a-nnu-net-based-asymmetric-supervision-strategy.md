@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - El post-procesado de componentes conectados puede eliminar estructuras pequeñas si la configuración de conectividad no es adecuada para el dominio de aplicación.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/hieuphamha/A-nnU-Net-based-asymmetric-supervision-strategy
+- Repositorio de Hugging Face: https://huggingface.co/hieuphamha/A-nnU-Net-based-asymmetric-supervision-strategy
 - Repositorio GitHub del proyecto: https://github.com/minhdang150806/A-nnU-Net-based-asymmetric-supervision-strategy
 - nnU-Net (GitHub): https://github.com/MIC-DKFZ/nnUNet
 - Paper de nnU-Net (Nature Methods): https://www.nature.com/articles/s41592-020-01008-z

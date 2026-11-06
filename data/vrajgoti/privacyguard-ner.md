@@ -6,7 +6,7 @@ PrivacyGuard-NER es un modelo de clasificacion de tokens (token classification) 
 
 El modelo resuelve un problema muy concreto en pipelines de IA: evitar que datos personales acaben en entradas de LLM, bases de conocimiento RAG o bases de datos de atencion al cliente. Frente a alternativas generativas, apuesta por un encoder pequeno y rapido que puede ejecutarse en CPU con una latencia media de 17,02 ms por texto, lo que lo hace viable para filtrado en tiempo real en guardrails y capas de saneamiento.
 
-Es relevante por su enfoque de eficiencia: con 66M de parametros y 253,95 MB en safetensors, ofrece deteccion de PII a bajo coste computacional y con licencia Apache 2.0, lo que facilita su integracion en entornos de produccion sin dependencia de infraestructura GPU. El checkpoint esta publicado en HuggingFace y el autor distribuye ademas una libreria Python (`privacyguard`) para deteccion y redaccion.
+Es relevante por su enfoque de eficiencia: con 66M de parametros y 253,95 MB en safetensors, ofrece deteccion de PII a bajo coste computacional y con licencia Apache 2.0, lo que facilita su integracion en entornos de produccion sin dependencia de infraestructura GPU. El checkpoint esta publicado en Hugging Face y el autor distribuye ademas una libreria Python (`privacyguard`) para deteccion y redaccion.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ El entrenamiento se realizo sobre un dataset sintetico generado de forma determi
 - Deteccion de 16 categorias de PII en texto en ingles: PERSON, EMAIL, PHONE, ADDRESS, LOCATION, ORGANIZATION, DATE_OF_BIRTH, CREDIT_CARD, BANK_ACCOUNT, PAN (identificador fiscal indio), AADHAAR, PASSPORT, IP_ADDRESS, USERNAME, URL y EMPLOYEE_ID.
 - Clasificacion de tokens a nivel de entidad con esquema BIO, apta para extraccion de spans exactos.
 - Redaccion de texto: la libreria `privacyguard` permite sustituir entidades por su etiqueta (modo `label`), por ejemplo `Contact [PERSON] at [EMAIL]`.
-- Uso mediante pipeline estandar de HuggingFace `token-classification` con `aggregation_strategy="simple"`.
+- Uso mediante pipeline estandar de Hugging Face `token-classification` con `aggregation_strategy="simple"`.
 - Soporte de identificadores internacionales y especificos de la India (Aadhaar, PAN), ademas de datos corporativos y financieros.
 - Ejecucion en CPU sin GPU, con latencia verificada de milisegundos.
 - Compatibilidad verificada con ONNX Runtime (paridad exacta de logits respecto a PyTorch).
@@ -102,7 +102,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 - VRAM estimada en GPU: aproximadamente 0,3 GB en fp32 (pesos de 253,95 MB mas activaciones) y alrededor de 0,15-0,2 GB en fp16. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: no requiere GPU dedicada. Cualquier GPU moderna (RTX 3060, RTX 4090, A100, H100) ejecutaria el modelo sin limitacion de memoria; una GPU solo aporta ventaja en lotes muy grandes o altas tasas de peticiones.
 - Cabe en GPU consumer: si, en cualquier modelo con al menos 1 GB de VRAM efectiva, e incluso en sistemas integrados.
-- Opciones de despliegue: pipeline `token-classification` de HuggingFace Transformers, la libreria `privacyguard` del autor y ONNX Runtime (con paridad verificada de logits respecto a PyTorch). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos generativos.
+- Opciones de despliegue: pipeline `token-classification` de Hugging Face Transformers, la libreria `privacyguard` del autor y ONNX Runtime (con paridad verificada de logits respecto a PyTorch). No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos generativos.
 - Latencia y throughput: los datos reportados se limitan al entorno CPU/ONNX descrito arriba; no se proporcionan mediciones en GPU.
 
 ## Comparativa con modelos similares
@@ -132,7 +132,7 @@ La ventaja diferencial declarada de PrivacyGuard-NER es la combinacion de tamano
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VrajGoti/privacyguard-ner
+- Modelo en Hugging Face: https://huggingface.co/VrajGoti/privacyguard-ner
 - Libreria `privacyguard` (referenciada en la model card, usada para deteccion y redaccion): no se proporciona URL en la informacion disponible
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo adicional: no disponible

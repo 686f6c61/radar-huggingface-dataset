@@ -19,9 +19,9 @@ Su relevancia práctica está en el tamaño: un modelo multimodal de 4B con lice
 | Idiomas soportados | No disponible. La model card de la serie menciona OCR en 32 idiomas |
 | Licencia | apache-2.0 |
 | Formato de pesos | Pesos para la libreria transformers; tamano de repositorio 4,1 GB. No disponible el desglose de ficheros ni la confirmacion de safetensors |
-| Modelo base | Qwen/Qwen3-VL-4B-Instruct (etiquetado como `finetune` en los tags de HuggingFace) |
+| Modelo base | Qwen/Qwen3-VL-4B-Instruct (etiquetado como `finetune` en los tags de Hugging Face) |
 | Pipeline | image-text-to-text |
-| Fecha de publicacion | 2026-10-08 (segun HuggingFace) |
+| Fecha de publicacion | 2026-10-08 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,10 +78,10 @@ Las cifras de VRAM que siguen son estimaciones derivadas del recuento de paráme
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OpenFlowLM/Qwen3-VL-4B-Instruct-NPU2 | ~4B | 256K, ampliable a 1M (heredado de la serie) | apache-2.0 | HuggingFace, 0 descargas, sin verificacion | Derivado no documentado del modelo base; repo de 4,1 GB |
-| Qwen/Qwen3-VL-4B-Instruct | ~4B | 256K, ampliable a 1M | apache-2.0 | HuggingFace, Ollama, Qualcomm AI Hub | Modelo base oficial, con model card completa y guia de uso |
-| Qwen3-VL-8B-Instruct | ~8B | 256K, ampliable a 1M | apache-2.0 (segun la serie) | HuggingFace | Version mayor de la misma generacion, incluida en las graficas comparativas de la model card |
-| FastFlowLM/Qwen3-VL-4B-Instruct-NPU2 | No disponible | No disponible | No disponible | HuggingFace | Repositorio homonimo bajo otra organizacion; relacion con despliegue en NPU no confirmada |
+| OpenFlowLM/Qwen3-VL-4B-Instruct-NPU2 | ~4B | 256K, ampliable a 1M (heredado de la serie) | apache-2.0 | Hugging Face, 0 descargas, sin verificacion | Derivado no documentado del modelo base; repo de 4,1 GB |
+| Qwen/Qwen3-VL-4B-Instruct | ~4B | 256K, ampliable a 1M | apache-2.0 | Hugging Face, Ollama, Qualcomm AI Hub | Modelo base oficial, con model card completa y guia de uso |
+| Qwen3-VL-8B-Instruct | ~8B | 256K, ampliable a 1M | apache-2.0 (segun la serie) | Hugging Face | Version mayor de la misma generacion, incluida en las graficas comparativas de la model card |
+| FastFlowLM/Qwen3-VL-4B-Instruct-NPU2 | No disponible | No disponible | No disponible | Hugging Face | Repositorio homonimo bajo otra organizacion; relacion con despliegue en NPU no confirmada |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 

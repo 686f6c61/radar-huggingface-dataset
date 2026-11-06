@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Supernova11c/Supernova-Roman-teraillm-Restoration-V2
+- Modelo en Hugging Face: https://huggingface.co/Supernova11c/Supernova-Roman-teraillm-Restoration-V2
 - Dataset asociado: https://huggingface.co/datasets/Supernova11c/Supernova-teraillm
 - Otros modelos del autor: https://huggingface.co/Supernova11c (página de perfil)
 - Reranker relacionado: https://huggingface.co/Supernova11c/Supernova-teraillm-reranker-v1

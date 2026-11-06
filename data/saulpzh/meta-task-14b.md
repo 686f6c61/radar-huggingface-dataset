@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meta-Task-14B es un modelo de lenguaje publicado en HuggingFace por el usuario saulpzh bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 14.000 millones de parametros orientado a tareas meta (meta-learning, meta-razonamiento o meta-tareas), aunque la model card publicada no contiene ninguna descripcion funcional, arquitectonica ni de entrenamiento que permita confirmarlo. El repositorio se creo y actualizo el 3 de noviembre de 2026 y, en el momento de redactar esta ficha, registra 0 descargas y 0 likes.
+Meta-Task-14B es un modelo de lenguaje publicado en Hugging Face por el usuario saulpzh bajo licencia Apache 2.0. El nombre sugiere un modelo de aproximadamente 14.000 millones de parametros orientado a tareas meta (meta-learning, meta-razonamiento o meta-tareas), aunque la model card publicada no contiene ninguna descripcion funcional, arquitectonica ni de entrenamiento que permita confirmarlo. El repositorio se creo y actualizo el 3 de noviembre de 2026 y, en el momento de redactar esta ficha, registra 0 descargas y 0 likes.
 
 La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia Apache 2.0, sin secciones de arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso. Tampoco se declaran idiomas soportados, pipeline de inferencia ni formatos de pesos. Todo lo que no sea la licencia y el identificador del repositorio debe considerarse no disponible.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos sin documentacion tecnica ni eva
 - Fine-tuning supervisado: servir como base para ajuste con datos propios una vez verificada la arquitectura y el tokenizer del repositorio.
 - Pruebas de integracion en pipelines de inferencia: validar compatibilidad con vLLM, llama.cpp u otros motores tras inspeccionar el formato de pesos.
 - Analisis de robustez y sesgos: ejecutar baterias de evaluacion propias para caracterizar el comportamiento del modelo.
-- Uso educativo: estudiar el repositorio como ejemplo de publicacion de modelos en HuggingFace, dada la escasez de documentacion.
+- Uso educativo: estudiar el repositorio como ejemplo de publicacion de modelos en Hugging Face, dada la escasez de documentacion.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion previa completa.
 
@@ -80,5 +80,5 @@ No disponible. Sin datos de arquitectura, contexto, rendimiento ni formato de pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saulpzh/Meta-Task-14B
+- Repositorio en Hugging Face: https://huggingface.co/saulpzh/Meta-Task-14B
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

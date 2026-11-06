@@ -100,7 +100,7 @@ La diferencia clave frente a las alternativas no es de rendimiento —no hay dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlperKTS/gemma4-e4b-legal-tr-en-litertlm
+- Modelo en Hugging Face: https://huggingface.co/AlperKTS/gemma4-e4b-legal-tr-en-litertlm
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Checkpoint LoRA: https://huggingface.co/AlperKTS/gemma4-e4b-legal-tr-en-v6
 - Google AI Edge Gallery (aplicación Android referenciada en la model card): https://ai.google.dev/edge/gallery

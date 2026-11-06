@@ -78,7 +78,7 @@ No se dispone de información sobre otros adaptadores comparables en la misma ca
 
 ## Enlaces
 
-- [HuggingFace: jvonrad/Qwen-2.5-7B-CPT-SFT-10k](https://huggingface.co/jvonrad/Qwen-2.5-7B-CPT-SFT-10k)
+- [Hugging Face: jvonrad/Qwen-2.5-7B-CPT-SFT-10k](https://huggingface.co/jvonrad/Qwen-2.5-7B-CPT-SFT-10k)
 - [Modelo base: jvonrad/Qwen-2.5-7B-TED](https://huggingface.co/jvonrad/Qwen-2.5-7B-TED)
 - [Dataset: jvonrad/PolyFact-Clean](https://huggingface.co/datasets/jvonrad/PolyFact-Clean)
 - [Paper: arXiv 2606.06586](https://arxiv.org/abs/2606.06586) (Improving Cross-Lingual Factual Recall via Consistency-Driven Reinforcement Learning)

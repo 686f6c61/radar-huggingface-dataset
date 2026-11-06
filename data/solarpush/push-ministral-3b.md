@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`push_ministral:3b` es un modelo de decisión estructurada publicado por el usuario `solarpush` en HuggingFace, construido como adaptación del modelo instructivo `mistralai/Ministral-3-3B-Instruct-2512`. No es un modelo conversacional al uso: la versión publicada sustituye la cabeza de salida original por una cabeza no atada (untied output head) más un puntero de opciones basado en kernel Fisher ARD, calibrada dentro de la especificación propietaria `llm-logits-v1` de Ollaya. El resultado es un clasificador de opciones discretas que devuelve logits puntuados, no texto libre.
+`push_ministral:3b` es un modelo de decisión estructurada publicado por el usuario `solarpush` en Hugging Face, construido como adaptación del modelo instructivo `mistralai/Ministral-3-3B-Instruct-2512`. No es un modelo conversacional al uso: la versión publicada sustituye la cabeza de salida original por una cabeza no atada (untied output head) más un puntero de opciones basado en kernel Fisher ARD, calibrada dentro de la especificación propietaria `llm-logits-v1` de Ollaya. El resultado es un clasificador de opciones discretas que devuelve logits puntuados, no texto libre.
 
 El paquete se distribuye en formato GGUF Q4_K_M (2,31 GiB) con la matriz `output.weight` en Q6_K, e incluye además los ficheros `decision.json`, `calibration.json` y `ollaya_config.json` que describen la tarea y el runtime. Su atractivo principal es la relación coste/prestación: con 52 ms de latencia p50 en una RX 9070 XT y un 37 % del tamaño del baseline `winnow:e4b` (6,20 GiB), consigue ventajas en subconjuntos concretos como `civil_comments` (86,0 % frente a 78,0 %) o `pubmedqa` (68,0 % frente a 62,0 %).
 
@@ -110,7 +110,7 @@ El único comparador directo con datos es `winnow:e4b`, que gana en agregado per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/solarpush/push-ministral-3b
+- Modelo en Hugging Face: https://huggingface.co/solarpush/push-ministral-3b
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
 - Repositorio de Trainaya: https://github.com/ollaya/trainaya
 - Benchmark público de Ollaya: https://bench.ollaya.dev

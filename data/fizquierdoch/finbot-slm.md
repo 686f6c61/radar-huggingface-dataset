@@ -70,9 +70,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| finbot-slm | 135M (base) + adaptador LoRA | No disponible | Apache 2.0 | Adaptador LoRA didáctico sobre SmolLM2-135M-Instruct, dominio IA para empresas chilenas | HuggingFace, 23 descargas |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | No disponible en esta ficha | Apache 2.0 | Modelo base instruct generalista | HuggingFace |
-| SmolLM2-360M-Instruct | 360M | No disponible en esta ficha | Apache 2.0 | Modelo base instruct de mayor tamaño de la misma familia | HuggingFace |
+| finbot-slm | 135M (base) + adaptador LoRA | No disponible | Apache 2.0 | Adaptador LoRA didáctico sobre SmolLM2-135M-Instruct, dominio IA para empresas chilenas | Hugging Face, 23 descargas |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M | No disponible en esta ficha | Apache 2.0 | Modelo base instruct generalista | Hugging Face |
+| SmolLM2-360M-Instruct | 360M | No disponible en esta ficha | Apache 2.0 | Modelo base instruct de mayor tamaño de la misma familia | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y enfoque.
 
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fizquierdoch/finbot-slm
+- Modelo en Hugging Face: https://huggingface.co/fizquierdoch/finbot-slm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

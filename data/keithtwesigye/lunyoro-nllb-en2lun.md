@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Direccion | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `lunyoro-nllb_en2lun` | Ingles → Lunyoro | 615.073.792 | MIT | HuggingFace |
-| `lunyoro-nllb_lun2en` | Lunyoro → Ingles | No disponible | MIT | HuggingFace |
-| `lunyoro-en2lun` (MarianMT) | Ingles → Lunyoro | No disponible | No disponible | HuggingFace |
-| `facebook/nllb-200-distilled-600M` | Multilingue | 600M (aprox.) | No disponible | HuggingFace |
+| `lunyoro-nllb_en2lun` | Ingles → Lunyoro | 615.073.792 | MIT | Hugging Face |
+| `lunyoro-nllb_lun2en` | Lunyoro → Ingles | No disponible | MIT | Hugging Face |
+| `lunyoro-en2lun` (MarianMT) | Ingles → Lunyoro | No disponible | No disponible | Hugging Face |
+| `facebook/nllb-200-distilled-600M` | Multilingue | 600M (aprox.) | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keithtwesigye/lunyoro-nllb_en2lun
+- Hugging Face: https://huggingface.co/keithtwesigye/lunyoro-nllb_en2lun
 - Modelo hermano (lunyoro-nllb_lun2en): https://huggingface.co/keithtwesigye/lunyoro-nllb_lun2en
 - Proyecto TRANSLATOR (GitHub): https://github.com/K227-arch/TRANSLATOR
 - Modelo base NLLB-200 destilado: https://huggingface.co/facebook/nllb-200-distilled-600M

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (DoRA sobre Llama 3.1 8B) | Adaptador de ~0,1 GB sobre 8.030 M | No disponible (base: 128.000 tokens) | Adaptador PEFT | No disponible | HuggingFace, 10 descargas |
-| meta-llama/Llama-3.1-8B (modelo base) | 8.030 M | 128.000 tokens | Modelo completo, decoder-only | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Modelo completo ajustado por instrucciones | Llama 3.1 Community License | HuggingFace, muy usado |
-| Otros adaptadores LoRA/DoRA comunitarios sobre Llama 3.1 8B | Variable | Depende del base | Adaptador PEFT | Habitualmente no especificada | HuggingFace; sin metricas comparables publicadas |
+| Este adaptador (DoRA sobre Llama 3.1 8B) | Adaptador de ~0,1 GB sobre 8.030 M | No disponible (base: 128.000 tokens) | Adaptador PEFT | No disponible | Hugging Face, 10 descargas |
+| meta-llama/Llama-3.1-8B (modelo base) | 8.030 M | 128.000 tokens | Modelo completo, decoder-only | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Modelo completo ajustado por instrucciones | Llama 3.1 Community License | Hugging Face, muy usado |
+| Otros adaptadores LoRA/DoRA comunitarios sobre Llama 3.1 8B | Variable | Depende del base | Adaptador PEFT | Habitualmente no especificada | Hugging Face; sin metricas comparables publicadas |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas. La comparacion se limita a parametros, contexto y licencia del modelo base.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_120_DoRA
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_120_DoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia citada en la model card (calculadora de impacto y Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono: https://mlco2.github.io/impact

@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bridgequant-libero-7m-kd | 6,59M | no disponible | LIBERO-500: 96,7; LIBERO-Plus: 61,7 | other | HuggingFace |
+| bridgequant-libero-7m-kd | 6,59M | no disponible | LIBERO-500: 96,7; LIBERO-Plus: 61,7 | other | Hugging Face |
 | Profesor de 76M (referencia del autor) | 76M | no disponible | no disponible | no disponible | no disponible |
 | Otras alternativas VLA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-libero-7m-kd
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-libero-7m-kd
 - Repositorio de código: https://github.com/VLAOpt/bridgequant-async
 - Documentación de despliegue SO101: `docs/so101_deploy.md` (dentro del repositorio anterior)
 - Script de política SO101: `scripts/so101_policy.py` (dentro del repositorio anterior)

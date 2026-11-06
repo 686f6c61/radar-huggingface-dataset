@@ -88,7 +88,7 @@ No se dispone de comparativas de rendimiento con modelos de otros fabricantes (p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nwtgck/gemma-4-26B-A4B-it-qat-q4_0-gguf
+- Repositorio Hugging Face: https://huggingface.co/nwtgck/gemma-4-26B-A4B-it-qat-q4_0-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Colección de checkpoints QAT Q4_0 de Gemma 4: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma

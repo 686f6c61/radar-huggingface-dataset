@@ -81,8 +81,8 @@ Receta de dibujo recomendada: aproximadamente 1 MP, 50 pasos, guidance 3, shift 
 
 | Modelo | Parametros | Contexto / condicionamiento | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| diffu-moss-r6b | 5.082.308.608 | prompt MOSS Layout + pagina de muestra | Apache-2.0 | HuggingFace (0 descargas) | Solo DiT; requiere MOSS-Image-Base y diffu |
-| OpenMOSS-Team/MOSS-Image-Base | no disponible en la informacion proporcionada | texto a imagen general | Apache-2.0 (heredada) | HuggingFace | Modelo base; no especializado en escritura manuscrita |
+| diffu-moss-r6b | 5.082.308.608 | prompt MOSS Layout + pagina de muestra | Apache-2.0 | Hugging Face (0 descargas) | Solo DiT; requiere MOSS-Image-Base y diffu |
+| OpenMOSS-Team/MOSS-Image-Base | no disponible en la informacion proporcionada | texto a imagen general | Apache-2.0 (heredada) | Hugging Face | Modelo base; no especializado en escritura manuscrita |
 | Alternativas HTR generativas | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la informacion proporcionada |
 
 No se dispone de informacion sobre otros modelos comparables de generacion de paginas manuscritas sinteticas con etiquetas ALTO/PAGE exactas.
@@ -102,7 +102,7 @@ No se dispone de informacion sobre otros modelos comparables de generacion de pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabriel/diffu-moss-r6b
+- Modelo en Hugging Face: https://huggingface.co/Gabriel/diffu-moss-r6b
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Revision concreta del modelo base usada en las instrucciones: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base/tree/85975793d8b3d432f1b6e27f352abaa4c2a4c0d3
 - Repositorio diffu: https://github.com/Borg93/diffu2

@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks numericos (MMLU, HumanEval, GSM8K u
 - Cabe en GPU de consumo: previsiblemente si, en RTX 3060 12 GB, RTX 4070, RTX 4090 y similares, siempre que se cuantice el backbone.
 - Opciones de despliegue: transformers + accelerate + peft, tal como indica el autor con `pip install -U torch transformers accelerate peft`. vLLM o TGI son habituales para servir backbones con adaptadores LoRA, pero no se confirman en la documentacion disponible.
 - llama.cpp u Ollama requeririan convertir el backbone a GGUF; no se publican pesos GGUF ni se documenta este flujo.
-- El diseno de inferencia no es un pipeline estandar: requiere el formateador propio del autor y la lectura de logits restringidos, por lo que el pipeline de HuggingFace figura como no disponible.
+- El diseno de inferencia no es un pipeline estandar: requiere el formateador propio del autor y la lectura de logits restringidos, por lo que el pipeline de Hugging Face figura como no disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks numericos (MMLU, HumanEval, GSM8K u
 | Modelo | Parametros | Contexto | Enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | ClinicalJev-4B-v0.1-preview-LoRA | Adaptador sobre backbone de ~4B | no disponible | Salida por logits restringidos a etiquetas (Choice, Score, Noul) | en, zh | no disponible | Repo de 0,5 GB, 0 descargas, 0 likes |
-| tianxinwei/JevAny-Gemma-4B-LoRA | Adaptador sobre backbone de ~4B | no disponible | Adaptador LoRA de la misma familia de primitivas Jev | no disponible | no disponible | Publicado en HuggingFace |
-| xinyuzhou/PH-LLM-14B-LoRA | Adaptador sobre backbone de ~14B | no disponible | Adaptador LoRA orientado a salud publica, del mismo autor | no disponible | no disponible | Publicado en HuggingFace |
+| tianxinwei/JevAny-Gemma-4B-LoRA | Adaptador sobre backbone de ~4B | no disponible | Adaptador LoRA de la misma familia de primitivas Jev | no disponible | no disponible | Publicado en Hugging Face |
+| xinyuzhou/PH-LLM-14B-LoRA | Adaptador sobre backbone de ~14B | no disponible | Adaptador LoRA orientado a salud publica, del mismo autor | no disponible | no disponible | Publicado en Hugging Face |
 | Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | Transformer causal de texto, generacion libre | multilingue | no disponible en esta informacion | Modelo base de referencia |
 
 La informacion disponible no permite comparar rendimiento numerico entre estos modelos; la model card solo ofrece una comparacion grafica frente a Jev 1.13.0 sobre 13 conjuntos reservados, sin cifras publicadas.
@@ -100,7 +100,7 @@ La informacion disponible no permite comparar rendimiento numerico entre estos m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xinyuzhou/ClinicalJev-4B-v0.1-preview-LoRA
+- Modelo en Hugging Face: https://huggingface.co/xinyuzhou/ClinicalJev-4B-v0.1-preview-LoRA
 - Repositorio GitHub de ClinicalJev (pesos, codigo de inferencia, documentacion y benchmark): https://github.com/xzhou-code/ClinicalJev
 - Grafica comparativa frente a Jev 1.13.0 sobre 13 conjuntos reservados: https://raw.githubusercontent.com/xzhou-code/ClinicalJev/main/assets/comparison-4B.png
 - Documentacion de las primitivas Choice, Score y Noul: https://docs.typesafe.ai/primitives/choice , https://docs.typesafe.ai/primitives/score , https://docs.typesafe.ai/primitives/noul

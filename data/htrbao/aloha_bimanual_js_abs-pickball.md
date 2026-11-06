@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `htrbao/aloha_bimanual_js_abs-pickball` es un checkpoint publicado en HuggingFace por el usuario `htrbao`. Según la información disponible, se trata de un modelo con 3.144.016.000 parámetros (aproximadamente 3,14 mil millones) y un tamaño de repositorio de 12,6 GB, con licencia MIT. El nombre sugiere una posible aplicación en robótica bimanual (ALOHA) para tareas de recogida de objetos (pickball), pero no se ha publicado ninguna documentación técnica, model card detallada ni resultados de evaluación. La model card únicamente indica la licencia MIT.
+El modelo `htrbao/aloha_bimanual_js_abs-pickball` es un checkpoint publicado en Hugging Face por el usuario `htrbao`. Según la información disponible, se trata de un modelo con 3.144.016.000 parámetros (aproximadamente 3,14 mil millones) y un tamaño de repositorio de 12,6 GB, con licencia MIT. El nombre sugiere una posible aplicación en robótica bimanual (ALOHA) para tareas de recogida de objetos (pickball), pero no se ha publicado ninguna documentación técnica, model card detallada ni resultados de evaluación. La model card únicamente indica la licencia MIT.
 
 En el momento de la consulta, el modelo no registra descargas ni valoraciones, y no se dispone de información sobre su arquitectura, entrenamiento, capacidades o rendimiento. Se trata, por tanto, de un artefacto sin documentar cuya utilidad práctica no puede verificarse con los datos disponibles.
 
@@ -54,4 +54,4 @@ No disponible. No se ha identificado ninguna categoría clara a la que pertenezc
 
 ## Enlaces
 
-- [HuggingFace: htrbao/aloha_bimanual_js_abs-pickball](https://huggingface.co/htrbao/aloha_bimanual_js_abs-pickball)
+- [Hugging Face: htrbao/aloha_bimanual_js_abs-pickball](https://huggingface.co/htrbao/aloha_bimanual_js_abs-pickball)

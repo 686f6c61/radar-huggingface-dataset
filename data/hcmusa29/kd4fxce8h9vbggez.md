@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hcmusa29/KD4FxCe8h9VbgGeZ` es un repositorio alojado en HuggingFace cuyo identificador no sigue ninguna convención de nomenclatura conocida de modelos publicados (no incluye nombre de familia, tamaño ni variante). El autor del repositorio es el usuario `hcmusa29`, sin organización ni laboratorio detrás identificable. En el momento de la consulta el repositorio acumula 0 descargas y 1 like, y no tiene definidos ni el pipeline, ni la licencia, ni los idiomas soportados.
+`hcmusa29/KD4FxCe8h9VbgGeZ` es un repositorio alojado en Hugging Face cuyo identificador no sigue ninguna convención de nomenclatura conocida de modelos publicados (no incluye nombre de familia, tamaño ni variante). El autor del repositorio es el usuario `hcmusa29`, sin organización ni laboratorio detrás identificable. En el momento de la consulta el repositorio acumula 0 descargas y 1 like, y no tiene definidos ni el pipeline, ni la licencia, ni los idiomas soportados.
 
 El único dato técnico objetivo disponible es el tamaño del repositorio: 290,4 GB. Este volumen es compatible con pesos de un modelo de gran tamaño (del orden de 145 000 millones de parámetros si se almacenaran en bf16/fp16, o con un modelo menor publicado en múltiples formatos y precisiones), pero la información proporcionada no confirma ni la arquitectura, ni el número de parámetros, ni el formato de los pesos. Tampoco hay model card, paper, blog ni repositorio de código asociado.
 
@@ -16,7 +16,7 @@ No existe evidencia que permita situar este repositorio en el ecosistema de IA o
 | Parametros totales | no disponible (el tamaño del repo, 290,4 GB, no permite determinarlo sin conocer el formato y la precisión de los pesos) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el campo de idiomas está vacío en HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas está vacío en Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | no disponible (se desconoce si el repo contiene safetensors, GGUF, binarios PyTorch u otro formato) |
 | Pipeline declarado | no disponible (el campo `pipeline_tag` está vacío) |
@@ -92,7 +92,7 @@ No es posible establecer una comparativa porque se desconocen los parámetros to
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hcmusa29/KD4FxCe8h9VbgGeZ
+- Repositorio en Hugging Face: https://huggingface.co/hcmusa29/KD4FxCe8h9VbgGeZ
 - Paper: no disponible
 - Blog o informe técnico: no disponible
 - Repositorio de código: no disponible

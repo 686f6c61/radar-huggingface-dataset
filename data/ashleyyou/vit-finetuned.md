@@ -33,7 +33,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta por defecto con op
 - La implementación está pensada para tareas de *matching* (emparejamiento), pero no se especifica si es matching de imágenes, de imagen-texto u otro tipo.
 - No hay soporte declarado para tool calling, agentes, razonamiento multi-paso ni capacidades multilingües (al ser un modelo de visión, estas capacidades no aplican).
 - No se documenta ningún modo especial (thinking mode, visión adicional, audio, etc.).
-- El script `pipeline.py` incluye un ejemplo ejecutable de prueba de humo, pero requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- El script `pipeline.py` incluye un ejemplo ejecutable de prueba de humo, pero requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada**: con solo 24.832 parámetros, el modelo cabe en cualquier GPU, incluso en hardware integrado. El uso de VRAM será inferior a 1 GB en cualquier precisión.
 - **GPU recomendadas**: cualquier GPU moderna (incluso una GTX 1050 o una GPU integrada) es suficiente para inferencia y entrenamiento a pequeña escala.
 - **Compatibilidad con GPU de consumo**: sí, absolutamente. No hay restricción de memoria.
-- **Opciones de despliegue**: al ser una implementación personalizada, no es compatible directamente con vLLM, llama.cpp, Ollama o TGI. Requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace. Se puede ejecutar con PyTorch estándar.
+- **Opciones de despliegue**: al ser una implementación personalizada, no es compatible directamente con vLLM, llama.cpp, Ollama o TGI. Requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face. Se puede ejecutar con PyTorch estándar.
 - **Latencia y throughput**: no disponibles. Al ser un modelo diminuto, la latencia será del orden de milisegundos en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -73,8 +73,8 @@ No es posible realizar una comparativa significativa porque este modelo no está
 
 ## Enlaces
 
-- [HuggingFace - ashleyyou/vit-finetuned](https://huggingface.co/ashleyyou/vit-finetuned)
-- [Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset (HuggingFace Cookbook)](https://huggingface.co/learn/cookbook/fine_tuning_vit_custom_dataset)
+- [Hugging Face - ashleyyou/vit-finetuned](https://huggingface.co/ashleyyou/vit-finetuned)
+- [Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset (Hugging Face Cookbook)](https://huggingface.co/learn/cookbook/fine_tuning_vit_custom_dataset)
 - [Example: Finetune a Vision Transformer model (APPFL)](https://appfl.ai/en/latest/tutorials/examples_vit_finetuning.html)
 - [Fine-tuning a Vision Transformer (ViT) Model With a Custom Dataset (Medium)](https://medium.com/@imabhi1216/fine-tuning-a-vision-transformer-vit-model-with-a-custom-dataset-37840e4e9268)
 - [GitHub - bwconrad/vit-finetune](https://github.com/bwconrad/vit-finetune)

@@ -4,7 +4,7 @@
 
 `mradermacher/Swift-Qwen3.8-27b-i1-GGUF` es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario mradermacher, derivado del modelo `ukisai/Swift-Qwen3.8-27b`. No se trata de un modelo entrenado desde cero, sino de una distribucion de cuantizaciones generadas con llama.cpp sobre los pesos originales, empleando calibracion con matriz de importancia (imatrix, de ahi el sufijo `i1`). El modelo base cuenta con 27.320.697.856 parametros (aproximadamente 27,3 mil millones).
 
-El repositorio incluye 23 variantes de cuantizacion, desde IQ1_S (la mas agresiva) hasta Q6_K (la mas cercana al modelo original), lo que permite desplegar un modelo de clase 27B en hardware muy diverso: desde tarjetas graficas de gama media de 12-16 GB de VRAM hasta estaciones de trabajo sin GPU, usando la CPU y memoria RAM. El tamano del repositorio declarado por HuggingFace es de 10,9 GB.
+El repositorio incluye 23 variantes de cuantizacion, desde IQ1_S (la mas agresiva) hasta Q6_K (la mas cercana al modelo original), lo que permite desplegar un modelo de clase 27B en hardware muy diverso: desde tarjetas graficas de gama media de 12-16 GB de VRAM hasta estaciones de trabajo sin GPU, usando la CPU y memoria RAM. El tamano del repositorio declarado por Hugging Face es de 10,9 GB.
 
 La relevancia de esta publicacion es practica: es una de las pocas vias para ejecutar localmente la base Swift-Qwen3.8-27b sin acceso a infraestructura de datacenter. Sin embargo, la model card es minima, no se declara licencia ni idiomas, y no hay resultados de evaluacion publicados, por lo que cualquier uso en produccion exige una verificacion previa por parte del integrador.
 
@@ -22,12 +22,12 @@ La relevancia de esta publicacion es practica: es una de las pocas vias para eje
 | Formato de pesos | GGUF (el modelo base se distribuye en safetensors) |
 | Metodo de cuantizacion | imatrix (weighted/imatrix quants), quantize_version 2 de llama.cpp |
 | Modelo base | ukisai/Swift-Qwen3.8-27b |
-| Tamano del repositorio | 10,9 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 10,9 GB (segun metadatos de Hugging Face) |
 | Fecha de publicacion | 2026-09-12 |
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no contiene entrenamiento alguno: es el resultado de aplicar el pipeline de cuantizacion de llama.cpp sobre los pesos del modelo `ukisai/Swift-Qwen3.8-27b`. Los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato HuggingFace (safetensors) a GGUF seguida de cuantizacion. El prefijo `i1` identifica variantes generadas con imatrix, un metodo de calibracion que pondera la importancia de cada tensor segun su sensibilidad estadistica, lo que en teoria reduce la perdida de calidad en regimenes de baja precision (IQ1, IQ2, IQ3).
+Este repositorio no contiene entrenamiento alguno: es el resultado de aplicar el pipeline de cuantizacion de llama.cpp sobre los pesos del modelo `ukisai/Swift-Qwen3.8-27b`. Los metadatos internos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde pesos en formato Hugging Face (safetensors) a GGUF seguida de cuantizacion. El prefijo `i1` identifica variantes generadas con imatrix, un metodo de calibracion que pondera la importancia de cada tensor segun su sensibilidad estadistica, lo que en teoria reduce la perdida de calidad en regimenes de baja precision (IQ1, IQ2, IQ3).
 
 No se dispone de informacion sobre la arquitectura interna del modelo base (tipo de transformer, atencion, numero de capas o cabezas), ni sobre el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco hay datos sobre innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, mezcla de expertos) en la informacion proporcionada. El nombre `Qwen3.8` apunta a un derivado de la familia Qwen, pero esto no esta confirmado por ninguna fuente accesible y no debe asumirse.
 
@@ -103,14 +103,14 @@ Por clase de tamano, los comparables naturales serian otras cuantizaciones comun
 - Contexto desconocido: al no declararse la longitud de contexto, no se puede planificar su uso en tareas de contexto largo (analisis de documentos extensos, conversaciones prolongadas).
 - Riesgo de alucinacion: inherente a los modelos de lenguaje generativos. Sin evaluacion disponible, el riesgo no esta cuantificado y debe mitigarse con verificacion externa y recuperacion aumentada.
 - Model card minima: la documentacion del autor se limita a una linea de texto y a metadatos HTML comentados. No hay guia de prompt, ni plantilla de chat documentada, lo que puede provocar un formateo incorrecto de las conversaciones si no se inspecciona el tokenizador embebido en el GGUF.
-- Inconsistencia del tamano de repositorio: los 10,9 GB declarados por HuggingFace son dificilmente compatibles con 23 cuantizaciones de un modelo de 27B, cuyo conjunto superaria ampliamente esa cifra. La cifra probablemente corresponde a un subconjunto de ficheros; conviene verificar los tamanos reales en la pagina del repositorio.
+- Inconsistencia del tamano de repositorio: los 10,9 GB declarados por Hugging Face son dificilmente compatibles con 23 cuantizaciones de un modelo de 27B, cuyo conjunto superaria ampliamente esa cifra. La cifra probablemente corresponde a un subconjunto de ficheros; conviene verificar los tamanos reales en la pagina del repositorio.
 - Falta de validacion comunitaria: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no ha sido contrastado por terceros.
 - Compatibilidad de endpoints: la etiqueta `endpoints_compatible` no garantiza conformidad completa con la API de OpenAI; hay que verificar el soporte de tool calling, streaming y formato de respuesta antes de integrarlo.
 - Fecha de publicacion: los metadatos indican 2026-09-12, fecha que conviene contrastar con la cronologia real del modelo base.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Swift-Qwen3.8-27b-i1-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - llama.cpp (runtime para GGUF): https://github.com/ggml-org/llama.cpp

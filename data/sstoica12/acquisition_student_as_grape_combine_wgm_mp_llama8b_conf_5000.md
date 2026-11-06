@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de tipo Llama con 8.030.261.248 parámetros (aproximadamente 8 mil millones), publicado en HuggingFace por el usuario sstoica12 bajo el identificador `sstoica12/acquisition_student_AS_grape_combine_WGM_MP_llama8b_conf_5000`. El nombre sugiere un proceso de destilación o "adquisición" de conocimiento (términos como "student", "acquisition" y "conf" apuntan a un estudiante entrenado con señales de confianza o destilación), pero la model card no aporta ninguna confirmación al respecto: es una plantilla automática de HuggingFace sin rellenar.
+Este modelo es un checkpoint de tipo Llama con 8.030.261.248 parámetros (aproximadamente 8 mil millones), publicado en Hugging Face por el usuario sstoica12 bajo el identificador `sstoica12/acquisition_student_AS_grape_combine_WGM_MP_llama8b_conf_5000`. El nombre sugiere un proceso de destilación o "adquisición" de conocimiento (términos como "student", "acquisition" y "conf" apuntan a un estudiante entrenado con señales de confianza o destilación), pero la model card no aporta ninguna confirmación al respecto: es una plantilla automática de Hugging Face sin rellenar.
 
 La relevancia práctica de este checkpoint es muy limitada tal como está publicado. No hay información sobre el dataset de entrenamiento, el proceso de ajuste, los idiomas soportados ni la licencia. El repositorio tiene 0 descargas y 0 likes, y fue creado en noviembre de 2026, lo que indica que es un artefacto de investigación personal más que un modelo listo para producción. Cualquier evaluación seria requiere inspeccionar los pesos y el tokenizador directamente.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, la model card no contiene ningun dato: ni volumen de 
 ## Casos de uso
 
 - Experimentacion academica en destilacion de conocimiento: el nombre del checkpoint sugiere un estudiante de 8B entrenado con senales de un modelo mayor; puede servir como punto de partida para reproducir o comparar tecnicas de destilacion, siempre que se auditen los pesos.
-- Fine-tuning posterior en dominio especifico: al ser un Llama de 8B en safetensors, es tecnicamente compatible con pipelines estandar de HuggingFace (SFT con TRL, LoRA con PEFT) para adaptarlo a una tarea concreta, aunque se desconoce su calidad base.
+- Fine-tuning posterior en dominio especifico: al ser un Llama de 8B en safetensors, es tecnicamente compatible con pipelines estandar de Hugging Face (SFT con TRL, LoRA con PEFT) para adaptarlo a una tarea concreta, aunque se desconoce su calidad base.
 - Evaluacion comparativa de checkpoints: util como muestra negativa o de control en estudios sobre calidad de checkpoints publicados sin documentacion.
 - Pruebas de infraestructura de despliegue: sirve para validar pipelines de carga con `transformers`, `text-generation-inference` o `vLLM` a escala 8B, dado que el tag `endpoints_compatible` esta presente.
 - Analisis de seguridad de modelos: al no tener model card ni licencia, es un caso de estudio sobre riesgos de publicar pesos sin trazabilidad.
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sstoica12/acquisition_student_AS_grape_combine_WGM_MP_llama8b_conf_5000 | 8,03B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Meta Llama 3.1 8B Instruct | 8,03B | 128K | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
-| Mistral 7B Instruct | 7,24B | 32K | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Qwen2.5 7B Instruct | 7,62B | 128K | Apache 2.0 (variante base) | HuggingFace, ampliamente distribuido |
+| sstoica12/acquisition_student_AS_grape_combine_WGM_MP_llama8b_conf_5000 | 8,03B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Meta Llama 3.1 8B Instruct | 8,03B | 128K | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
+| Mistral 7B Instruct | 7,24B | 32K | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Qwen2.5 7B Instruct | 7,62B | 128K | Apache 2.0 (variante base) | Hugging Face, ampliamente distribuido |
 
 La comparacion es estructural: el checkpoint de sstoica12 comparte escala con Llama 3.1 8B, Mistral 7B y Qwen2.5 7B, pero carece de la documentacion, licencia y evaluacion que acompanan a esos modelos. No hay datos de rendimiento que permitan una comparacion cuantitativa.
 
@@ -82,6 +82,6 @@ La comparacion es estructural: el checkpoint de sstoica12 comparte escala con Ll
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sstoica12/acquisition_student_AS_grape_combine_WGM_MP_llama8b_conf_5000
+- Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_grape_combine_WGM_MP_llama8b_conf_5000
 - Referencia citada en la model card (calculadora de impacto ambiental): https://mlco2.github.io/impact#compute
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

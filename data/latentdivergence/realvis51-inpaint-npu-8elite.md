@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de prompt | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| latentdivergence/realvis51-inpaint-npu-8elite | No disponible (arquitectura SD 1.5, ~1.000 M estimados) | 77 tokens | ONNX EPContext QNN fp16 | CreativeML OpenRAIL-M | Publico en HuggingFace, 0 descargas |
-| Uminosachi/realisticVisionV51_v51VAE-inpainting (modelo base) | No disponible | 77 tokens | Safetensors/Diffusers (no confirmado en la informacion) | CreativeML OpenRAIL-M | Publico en HuggingFace |
-| latentdivergence/realvis51-inpaint-int8-onnx (build CPU hermano) | No disponible | 77 tokens | ONNX int8 | CreativeML OpenRAIL-M | Publico en HuggingFace, incluido como dependencia de este repositorio |
+| latentdivergence/realvis51-inpaint-npu-8elite | No disponible (arquitectura SD 1.5, ~1.000 M estimados) | 77 tokens | ONNX EPContext QNN fp16 | CreativeML OpenRAIL-M | Publico en Hugging Face, 0 descargas |
+| Uminosachi/realisticVisionV51_v51VAE-inpainting (modelo base) | No disponible | 77 tokens | Safetensors/Diffusers (no confirmado en la informacion) | CreativeML OpenRAIL-M | Publico en Hugging Face |
+| latentdivergence/realvis51-inpaint-int8-onnx (build CPU hermano) | No disponible | 77 tokens | ONNX int8 | CreativeML OpenRAIL-M | Publico en Hugging Face, incluido como dependencia de este repositorio |
 
 No se dispone de datos de rendimiento comparables entre estas variantes mas alla de las similitudes de coseno frente a fp32 publicadas para los grafos NPU.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes mas alla
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/latentdivergence/realvis51-inpaint-npu-8elite
+- Hugging Face del modelo: https://huggingface.co/latentdivergence/realvis51-inpaint-npu-8elite
 - Modelo base: https://huggingface.co/Uminosachi/realisticVisionV51_v51VAE-inpainting
 - Build CPU hermano (text encoder, tokenizer y VAE de respaldo): https://huggingface.co/latentdivergence/realvis51-inpaint-int8-onnx
 

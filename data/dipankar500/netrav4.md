@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NetraV4 es un modelo de vision-lenguaje (VLM) especializado en dominio medico, desarrollado por el usuario dipankar500 y publicado en HuggingFace. Se construye como un fine-tuning de Qwen3-VL-4B-Instruct (Apache-2.0), al que se le aplica un adaptador PiSSA de rango 64 entrenado mediante aprendizaje por refuerzo con una politica multi-recompensa, y posteriormente se fusionan los pesos del adaptador en el modelo base en BF16. El resultado es un modelo de aproximadamente 4.440 millones de parametros (4.437.815.808 segun los safetensors) capaz de razonar paso a paso antes de responder preguntas sobre imagenes medicas.
+NetraV4 es un modelo de vision-lenguaje (VLM) especializado en dominio medico, desarrollado por el usuario dipankar500 y publicado en Hugging Face. Se construye como un fine-tuning de Qwen3-VL-4B-Instruct (Apache-2.0), al que se le aplica un adaptador PiSSA de rango 64 entrenado mediante aprendizaje por refuerzo con una politica multi-recompensa, y posteriormente se fusionan los pesos del adaptador en el modelo base en BF16. El resultado es un modelo de aproximadamente 4.440 millones de parametros (4.437.815.808 segun los safetensors) capaz de razonar paso a paso antes de responder preguntas sobre imagenes medicas.
 
 El modelo aborda el problema del razonamiento visual medico: responde a preguntas de tipo VQA sobre radiologia, patologia, fotografias clinicas y figuras de articulos cientificos, y tambien a preguntas de examen medico basadas en texto. Su relevancia actual radica en que, segun los datos publicados por el autor, supera a modelos abiertos de hasta 15B parametros (HealthGPT-14B, Lingshu-7B, MedGemma-4B) en la mayoria de benchmarks medicos visuales, y en algunos casos supera cifras publicadas de GPT-4.1 y Claude Sonnet 4. El modelo esta pensado exclusivamente para investigacion y no es un dispositivo medico.
 
@@ -92,7 +92,7 @@ Resultados de exactitud (%) reportados por el autor. NetraV4 evaluado con decodi
 
 | Modelo | Parametros | Contexto | Rendimiento clave (publicado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NetraV4 | ~4,4B | no disponible | MedQA 76,8 · VQA-RAD (cerradas) 74,3 · PMC-VQA 57,9 | Apache-2.0 | HuggingFace (transformers) |
+| NetraV4 | ~4,4B | no disponible | MedQA 76,8 · VQA-RAD (cerradas) 74,3 · PMC-VQA 57,9 | Apache-2.0 | Hugging Face (transformers) |
 | MedGemma-4B | 4B (aproximado, no confirmado en la informacion) | no disponible | MedQA 64,4 · VQA-RAD (cerradas) 72,5 · PMC-VQA 49,9 | no disponible en la informacion | publicado (informe tecnico arXiv:2507.05201) |
 | Lingshu-7B | 7B (aproximado, no confirmado) | no disponible | MedQA 63,3 · VQA-RAD (cerradas) 67,9 · SLAKE (cerradas) 83,1 | no disponible en la informacion | publicado (informe tecnico arXiv:2506.07044) |
 | HealthGPT-14B | 14B (aproximado, no confirmado) | no disponible | MedQA 66,2 · VQA-RAD (cerradas) 65,0 · PMC-VQA 56,4 | no disponible en la informacion | publicado |
@@ -113,7 +113,7 @@ Nota: los datos de parametros y licencia de los modelos comparables no estan con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dipankar500/NetraV4
+- Modelo en Hugging Face: https://huggingface.co/dipankar500/NetraV4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Paper GPT-5 en razonamiento medico multimodal: arXiv:2508.08224 (Wang et al. 2025, *Capabilities of GPT-5 on Multimodal Medical Reasoning*)
 - Informe tecnico Lingshu: arXiv:2506.07044

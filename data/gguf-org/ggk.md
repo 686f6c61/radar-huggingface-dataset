@@ -76,7 +76,7 @@ No disponible. ggk no es un modelo de IA comparable con otros, sino una herramie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gguf-org/ggk
+- Repositorio en Hugging Face: https://huggingface.co/gguf-org/ggk
 - Referencia del kernel gk (GitHub): https://github.com/gguf-io/gk
 - Modelo de difusión adicional (pixart-gguf): https://huggingface.co/gguf-org/pixart-gguf
 - Modelo de vídeo (wan-1.3b-gguf): https://huggingface.co/calcuis/wan-1.3b-gguf

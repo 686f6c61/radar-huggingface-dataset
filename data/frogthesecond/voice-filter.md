@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConVoiFilter (repositorio `FrogTheSecond/voice-filter` en HuggingFace) es un modelo de filtrado de voz orientado a la extraccion del hablante objetivo (*target speaker extraction*). No es un modelo de lenguaje: pertenece a la familia de los *voice filters* o filtros condicionales de voz, cuyo objetivo es aislar la senal de un hablante de referencia dentro de una mezcla de audio con multiples hablantes o ruido de fondo. El autor de la ficha en HuggingFace es el usuario FrogTheSecond, mientras que el contacto indicado en la model card es `nguyenvulebinh@gmail.com`, lo que apunta a una resubida o espejo de un trabajo previo publicado por otro autor.
+ConVoiFilter (repositorio `FrogTheSecond/voice-filter` en Hugging Face) es un modelo de filtrado de voz orientado a la extraccion del hablante objetivo (*target speaker extraction*). No es un modelo de lenguaje: pertenece a la familia de los *voice filters* o filtros condicionales de voz, cuyo objetivo es aislar la senal de un hablante de referencia dentro de una mezcla de audio con multiples hablantes o ruido de fondo. El autor de la ficha en Hugging Face es el usuario FrogTheSecond, mientras que el contacto indicado en la model card es `nguyenvulebinh@gmail.com`, lo que apunta a una resubida o espejo de un trabajo previo publicado por otro autor.
 
 La model card remite al paper asociado, disponible en arXiv con el identificador 2308.11380, para entender la metodologia completa. No se proporcionan en el repositorio detalles sobre arquitectura interna, numero de parametros, datos de entrenamiento ni resultados de evaluacion. El tamano del repositorio es de 0,2 GB, dato que sirve como unica referencia cuantitativa sobre el peso de los ficheros.
 
@@ -51,7 +51,7 @@ Tampoco se detallan los datos de entrenamiento: no hay informacion sobre numero 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tablas de evaluacion, y la model card remite exclusivamente al paper arXiv 2308.11380 para consultar la metodologia y, en su caso, las metricas originales. No se dispone de cifras de SI-SNR, SDR, PESQ, STOI ni de tasas de error de reconocimiento posteriores al filtrado. Tampoco hay datos de comparacion con modelos de referencia.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tablas de evaluacion, y la model card remite exclusivamente al paper arXiv 2308.11380 para consultar la metodologia y, en su caso, las metricas originales. No se dispone de cifras de SI-SNR, SDR, PESQ, STOI ni de tasas de error de reconocimiento posteriores al filtrado. Tampoco hay datos de comparacion con modelos de referencia.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConVoiFilter (`FrogTheSecond/voice-filter`) | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| ConVoiFilter (`FrogTheSecond/voice-filter`) | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | VoiceFilter (Google) | no disponible en esta busqueda | no aplica | no disponible | no disponible | no disponible |
 | Otros sistemas del paper 2308.11380 | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrogTheSecond/voice-filter
+- Repositorio en Hugging Face: https://huggingface.co/FrogTheSecond/voice-filter
 - Paper de referencia: https://arxiv.org/pdf/2308.11380.pdf
 - Cuaderno de Google Colab indicado por el autor: https://colab.research.google.com/drive/1ekMhvwAEPI0stPRkoodLUlqX9LFuoObf?usp=sharing
 - Contacto declarado en la model card: nguyenvulebinh@gmail.com

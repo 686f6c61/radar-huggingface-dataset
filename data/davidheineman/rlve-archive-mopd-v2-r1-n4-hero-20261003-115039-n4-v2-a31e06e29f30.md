@@ -91,7 +91,7 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que no es po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-n4-hero-20261003-115039-n4-v2-a31e06e29f30
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-n4-hero-20261003-115039-n4-v2-a31e06e29f30
 - Run de Weights & Biases: identificador `40ae3c31` (no se ha proporcionado URL directa)
 - Paper, blog, repositorio o demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (la busqueda no devolvio ningun enlace relacionado con el modelo)

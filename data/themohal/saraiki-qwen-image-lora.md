@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`themohal/saraiki-qwen-image-lora` es un repositorio publicado en HuggingFace por el usuario `themohal` que, a tenor de su identificador, contiene un adaptador LoRA orientado a la librería Qwen-Image y vinculado al idioma saraiki. La model card publicada se limita a declarar la licencia MIT: no incluye descripción, arquitectura, datos de entrenamiento, ejemplos de uso ni resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe tracción ni validación por parte de la comunidad.
+`themohal/saraiki-qwen-image-lora` es un repositorio publicado en Hugging Face por el usuario `themohal` que, a tenor de su identificador, contiene un adaptador LoRA orientado a la librería Qwen-Image y vinculado al idioma saraiki. La model card publicada se limita a declarar la licencia MIT: no incluye descripción, arquitectura, datos de entrenamiento, ejemplos de uso ni resultados de evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe tracción ni validación por parte de la comunidad.
 
 La relevancia de esta ficha es, por tanto, limitada y principalmente documental: sirve para dejar constancia de que el artefacto existe, de su licencia y de la ausencia total de información técnica verificable. Cualquier evaluación de idoneidad para producción requeriría contactar con el autor o inspeccionar directamente los ficheros del repositorio, algo que no puede hacerse a partir de los metadatos disponibles.
 
@@ -21,8 +21,8 @@ No se ha podido confirmar si el adaptador está entrenado sobre Qwen-Image (mode
 | Licencia | MIT |
 | Formato de pesos | no disponible |
 | Autor | themohal |
-| Fecha de publicacion | 2026-09-20 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-20 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-20 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Etiquetas declaradas | license:mit, region:us |
 | Modelo base | no disponible (el nombre sugiere Qwen-Image, sin confirmar) |
@@ -73,7 +73,7 @@ No disponible. No se dispone de datos tecnicos de este repositorio (parametros, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| themohal/saraiki-qwen-image-lora | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| themohal/saraiki-qwen-image-lora | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. No se dispone de datos tecnicos de este repositorio (parametros, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/themohal/saraiki-qwen-image-lora
+- Repositorio en Hugging Face: https://huggingface.co/themohal/saraiki-qwen-image-lora
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

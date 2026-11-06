@@ -6,7 +6,7 @@ Transductor TC Mid es un modelo de lenguaje de 2.7B parámetros desarrollado por
 
 El modelo resuelve el problema de la condensación de razonamiento: reduce la longitud de las trazas sin perder sustancia, manteniendo los números, identificadores y el veredicto literalmente copiados de la entrada. Esto lo hace útil para destilación, generación de datasets de entrenamiento y mejora de instrucciones en pipelines de SFT.
 
-Se publica en HuggingFace con pesos completos en BF16, tras un proceso de SFT con rsLoRA y una alineación SimPO ligera. Es la variante "Mid" de una familia de tres niveles (Mid, High, XHigh), diferenciados por la profundidad y longitud de las trazas generadas.
+Se publica en Hugging Face con pesos completos en BF16, tras un proceso de SFT con rsLoRA y una alineación SimPO ligera. Es la variante "Mid" de una familia de tres niveles (Mid, High, XHigh), diferenciados por la profundidad y longitud de las trazas generadas.
 
 ## Especificaciones técnicas
 
@@ -80,7 +80,7 @@ No se han publicado benchmarks comparativos entre estas variantes. El modelo bas
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Davd-b01/transductor-mid-v3
+- Hugging Face del modelo: https://huggingface.co/Davd-b01/transductor-mid-v3
 - Variante High: https://huggingface.co/Davd-b01/transductor-high-v3
 - Variante XHigh: https://huggingface.co/Davd-b01/transductor-xhigh-v3
 - Modelo base LiquidAI/LFM2.5-2.6B: https://huggingface.co/LiquidAI/LFM2.5-2.6B

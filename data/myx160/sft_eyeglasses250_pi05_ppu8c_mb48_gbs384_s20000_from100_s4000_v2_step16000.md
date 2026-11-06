@@ -80,7 +80,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Categoria | Parametros | Entradas / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`myx160/sft_eyeglasses250_..._step16000`) | VLA robotica, tarea eyeglasses sobre Piper | no disponible | 3 RGB + estado 14D / horizonte 50 | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| Este checkpoint (`myx160/sft_eyeglasses250_..._step16000`) | VLA robotica, tarea eyeglasses sobre Piper | no disponible | 3 RGB + estado 14D / horizonte 50 | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de la misma categoria | VLA robotica | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step16000
+- Modelo en Hugging Face: https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step16000
 - Dataset de entrenamiento (identificador citado en la model card, URL construida a partir del mismo): https://huggingface.co/datasets/myx160/eyeglasses_grasp_250episode
 - Revision del dataset citada: `fd7ce02d49c4b150becdf657ec010faaa0e63d73`
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio resultados relacionados con el modelo (unicamente paginas de la cadena hotelera Accor, sin relacion con este artefacto).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AuroraCounsel es un sistema de asistencia en salud mental en chino publicado por el usuario sunear en HuggingFace. No se distribuye como un modelo único, sino como una arquitectura multiagente con tres componentes: AC-Sense (clasificador de emoción basado en `bert-base-chinese` más una capa MLP), AC-Reflect (modelo consejero que realiza análisis cognitivo profundo cuando detecta emoción negativa) y AC-Guide (modelo principal de diálogo que genera la respuesta). La lógica de intervención se apoya en la Terapia Racional Emotiva Conductual (REBT, Ellis).
+AuroraCounsel es un sistema de asistencia en salud mental en chino publicado por el usuario sunear en Hugging Face. No se distribuye como un modelo único, sino como una arquitectura multiagente con tres componentes: AC-Sense (clasificador de emoción basado en `bert-base-chinese` más una capa MLP), AC-Reflect (modelo consejero que realiza análisis cognitivo profundo cuando detecta emoción negativa) y AC-Guide (modelo principal de diálogo que genera la respuesta). La lógica de intervención se apoya en la Terapia Racional Emotiva Conductual (REBT, Ellis).
 
 El problema que aborda es el enrutado adaptativo del esfuerzo de cómputo en atención psicológica conversacional: el sistema clasifica primero la emoción del usuario y solo activa el razonamiento profundo del módulo consejero ante emociones negativas, respondiendo de forma directa en caso contrario. Incluye una interfaz Gradio con salida en streaming, visualización del proceso de razonamiento y tres modos de ejecución (pensamiento completo, pensamiento adaptativo y salida directa).
 
@@ -73,7 +73,7 @@ No se dispone de datos verificables sobre modelos comparables en la información
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks públicos | Disponibilidad |
 |---|---|---|---|---|---|
-| AuroraCounsel | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| AuroraCounsel | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No se dispone de datos verificables sobre modelos comparables en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunear/AuroraCounsel
+- Modelo en Hugging Face: https://huggingface.co/sunear/AuroraCounsel
 - No se han encontrado papers, blogs técnicos, repositorios de código ni demos en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

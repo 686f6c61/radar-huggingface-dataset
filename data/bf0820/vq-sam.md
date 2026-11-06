@@ -77,9 +77,9 @@ No se han publicado en la información disponible resultados de benchmarks gener
 
 | Modelo | Parametros | Contexto | mSTIoU (VQS-4K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VQ-SAM | no disponible (Hiera-B+) | clip de 8 fotogramas | 26,0 | Apache 2.0 | HuggingFace + GitHub |
+| VQ-SAM | no disponible (Hiera-B+) | clip de 8 fotogramas | 26,0 | Apache 2.0 | Hugging Face + GitHub |
 | SAM2Long | no disponible | no disponible | 18,6 | no disponible | no disponible en la información |
-| SAM 2.1 | no disponible (Hiera-B+) | clip de 8 fotogramas | no disponible | Apache 2.0 | Meta / HuggingFace |
+| SAM 2.1 | no disponible (Hiera-B+) | clip de 8 fotogramas | no disponible | Apache 2.0 | Meta / Hugging Face |
 
 La comparación se limita a los datos publicados en la model card; no se dispone de cifras de otros métodos sobre VQS-4K en la información proporcionada.
 
@@ -95,7 +95,7 @@ La comparación se limita a los datos publicados en la model card; no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bf0820/VQ-SAM
+- Hugging Face: https://huggingface.co/bf0820/VQ-SAM
 - Paper: https://arxiv.org/pdf/2603.08898
 - Código: https://github.com/VAIL-Fan/VQS
 - Dataset: https://huggingface.co/datasets/bf0820/VQS-4K

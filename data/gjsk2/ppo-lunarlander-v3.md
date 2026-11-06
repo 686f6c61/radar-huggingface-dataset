@@ -1,11 +1,11 @@
 # gjsk2/ppo-LunarLander-v3
 
 ## Resumen
-`gjsk2/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, publicado por el usuario gjsk2 en HuggingFace. No es un modelo de lenguaje ni un transformer generativo: se trata de una política neuronal entrenada para controlar un módulo de aterrizaje lunar simulado, resolviendo un problema clásico de control continuo con recompensa densa y física simplificada.
+`gjsk2/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, publicado por el usuario gjsk2 en Hugging Face. No es un modelo de lenguaje ni un transformer generativo: se trata de una política neuronal entrenada para controlar un módulo de aterrizaje lunar simulado, resolviendo un problema clásico de control continuo con recompensa densa y física simplificada.
 
 El artefacto se distribuye como un modelo de `stable-baselines3` (la librería de referencia para RL en PyTorch mantenida por DLR-RM), lo que implica que su uso práctico pasa por cargar la política con esa librería y evaluarla en el entorno correspondiente. Es relevante como ejemplo reproducible de un pipeline de RL completo (entrenamiento, evaluación y publicación en el Hub), no como herramienta de inferencia general.
 
-La información disponible es escasa: el repositorio tiene 0 GB según HuggingFace (probablemente por un problema de conteo o porque los pesos no se han subido correctamente), no se declara licencia, no se declaran idiomas y la model card contiene código de uso incompleto marcado como TODO. La ficha refleja fielmente este estado y marca como "no disponible" todo dato no confirmado.
+La información disponible es escasa: el repositorio tiene 0 GB según Hugging Face (probablemente por un problema de conteo o porque los pesos no se han subido correctamente), no se declara licencia, no se declaran idiomas y la model card contiene código de uso incompleto marcado como TODO. La ficha refleja fielmente este estado y marca como "no disponible" todo dato no confirmado.
 
 ## Especificaciones tecnicas
 
@@ -62,9 +62,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gjsk2/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace |
-| Alternativas PPO en LunarLander-v3 del Hub | PPO | LunarLander-v3 | no disponible | no aplica | variable | HuggingFace |
-| Alternativas A2C/DQN en LunarLander-v3 del Hub | A2C / DQN | LunarLander-v3 | no disponible | no aplica | variable | HuggingFace |
+| gjsk2/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face |
+| Alternativas PPO en LunarLander-v3 del Hub | PPO | LunarLander-v3 | no disponible | no aplica | variable | Hugging Face |
+| Alternativas A2C/DQN en LunarLander-v3 del Hub | A2C / DQN | LunarLander-v3 | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos comparativos verificados con alternativas concretas en la informacion proporcionada. La comparación queda limitada a la categoría (agentes RL para LunarLander-v3) y al algoritmo (PPO), sin cifras auditadas de terceros.
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos verificados con alternativas concretas en la
 - Sin datos de idioma, contexto o alucinación: no aplica al no ser un modelo de lenguaje, pero conviene no confundirlo con un LLM en pipelines generales.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/gjsk2/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/gjsk2/ppo-LunarLander-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

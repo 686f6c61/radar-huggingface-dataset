@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RK3588-CNN-yolov5s es un paquete de despliegue del detector de objetos YOLOv5s convertido al formato RKNN para ejecutarse sobre la NPU del SoC Rockchip RK3588. Lo publica el usuario RKNNAI en HuggingFace y deriva del repositorio oficial airockchip/yolov5, a su vez integrado en el RKNN Model Zoo de Rockchip. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de una red convolucional (CNN) de deteccion de objetos en una sola pasada, optimizada para inferencia en hardware de borde.
+RK3588-CNN-yolov5s es un paquete de despliegue del detector de objetos YOLOv5s convertido al formato RKNN para ejecutarse sobre la NPU del SoC Rockchip RK3588. Lo publica el usuario RKNNAI en Hugging Face y deriva del repositorio oficial airockchip/yolov5, a su vez integrado en el RKNN Model Zoo de Rockchip. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de una red convolucional (CNN) de deteccion de objetos en una sola pasada, optimizada para inferencia en hardware de borde.
 
 La relevancia de esta ficha es acotada: no aporta pesos nuevos ni un entrenamiento propio, sino una configuracion de cuantizacion y tiempo de ejecucion concretos. En concreto, ofrece el binario `yolov5s-640x640-w8a8-1`, cuantizado en modo w8a8 (activaciones y pesos a 8 bits), a resolucion de entrada 640x640, pensado para usar un unico nucleo de la NPU del RK3588 con la version de runtime RKNN v2.4.0.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Resolucion | Cuantizacion | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RK3588-CNN-yolov5s | CNN (YOLOv5s) | 640x640 | w8a8 | RK3588 (RKNN v2.4.0) | GPL-3.0 | HuggingFace / ModelScope |
+| RK3588-CNN-yolov5s | CNN (YOLOv5s) | 640x640 | w8a8 | RK3588 (RKNN v2.4.0) | GPL-3.0 | Hugging Face / ModelScope |
 | yolov5s RKNN de rknpu2 (Rockchip) | CNN (YOLOv5s) | segun ejemplo | segun ejemplo | RK3588 | segun repositorio | GitHub (rockchip-linux/rknpu2) |
 | yolov5_for_rk3588 (0312birdzhang) | CNN (YOLOv5) | segun configuracion | no disponible | RK3588 | segun repositorio | GitHub |
 
@@ -98,8 +98,8 @@ Existen otros detectores de la propia familia (YOLOv5n, YOLOv5m, YOLOv8, YOLO11)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3588-CNN-yolov5s
-- Perfil del autor en HuggingFace: https://huggingface.co/RKNNAI
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3588-CNN-yolov5s
+- Perfil del autor en Hugging Face: https://huggingface.co/RKNNAI
 - Modelo de origen (airockchip/yolov5): https://github.com/airockchip/yolov5
 - RKNN Model Zoo (ejemplo yolov5): https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov5
 - Ejemplos RKNN YOLOv5 para RK3588 en rknpu2: https://github.com/rockchip-linux/rknpu2/tree/master/examples/rknn_yolov5_demo/model/RK3588

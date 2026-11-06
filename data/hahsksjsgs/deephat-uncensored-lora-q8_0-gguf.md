@@ -75,7 +75,7 @@ No se dispone de datos comparables de rendimiento para establecer una comparativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hahsksjsgs/deephat-uncensored-lora-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Hahsksjsgs/deephat-uncensored-lora-Q8_0-GGUF
 - Adaptador original: https://huggingface.co/Hahsksjsgs/deephat-uncensored-lora
 - Página de DeepHat: https://www.deephat.ai/
 - Documentación de llama.cpp server: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

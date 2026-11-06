@@ -4,9 +4,9 @@
 
 El repositorio `codemaivanngu/simct` no contiene un modelo de lenguaje con pesos, sino una distribucion de codigo fuente del proyecto SimCT / KDFlow, orientado a experimentos de destilacion de conocimiento (etiqueta `knowledge-distillation`). El artefacto principal es un Git bundle (`simct-b200-portable.bundle`) acompanado de un manifiesto (`source-manifest.json`) que conserva el commit original y el historial completo de Git, excluyendo expresamente runtime, checkpoints, datasets y artefactos remotos no versionados.
 
-Segun la model card, el bundle corresponde a la rama `vdt/ops/b200-portable`, en el commit `4b9d70a58df4aa77d2bc35228207b959fdf6bee5`, y procede del repositorio de origen `github.com/sontungkieu/SimCT`. El repositorio de HuggingFace se usa como transporte de solo lectura porque el servidor Git de HF rechaza blobs historicos de imagenes; por eso se publica un bundle en lugar de un espejo de rama convencional. El tamano del repositorio es de 0,6 GB.
+Segun la model card, el bundle corresponde a la rama `vdt/ops/b200-portable`, en el commit `4b9d70a58df4aa77d2bc35228207b959fdf6bee5`, y procede del repositorio de origen `github.com/sontungkieu/SimCT`. El repositorio de Hugging Face se usa como transporte de solo lectura porque el servidor Git de HF rechaza blobs historicos de imagenes; por eso se publica un bundle en lugar de un espejo de rama convencional. El tamano del repositorio es de 0,6 GB.
 
-Su relevancia es acotada y muy especifica: sirve para reproducir, auditar o continuar el trabajo de SimCT en un entorno controlado (incluida la portabilidad a NVIDIA B200 y el uso de lanzadores RunAI), no para inferencia directa. Los metadatos publicos indican 0 descargas y 0 likes, licencia no declarada y ausencia de pipeline de HuggingFace.
+Su relevancia es acotada y muy especifica: sirve para reproducir, auditar o continuar el trabajo de SimCT en un entorno controlado (incluida la portabilidad a NVIDIA B200 y el uso de lanzadores RunAI), no para inferencia directa. Los metadatos publicos indican 0 descargas y 0 likes, licencia no declarada y ausencia de pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ No disponible. El repositorio no publica un modelo con parametros, contexto o li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/codemaivanngu/simct
+- Repositorio en Hugging Face: https://huggingface.co/codemaivanngu/simct
 - Repositorio de origen del codigo: https://github.com/sontungkieu/SimCT
-- Artefactos citados en la model card (dentro del repositorio de HuggingFace, revision fijada): `simct-b200-portable.bundle`, `source-manifest.json`, `simct-eval-94114c1.zip`, `download_lcb_v6-323216b.py`, `MP-OPD-ABC-HUONG-DAN.md`, `pull-mp-opd-abc.sh`
+- Artefactos citados en la model card (dentro del repositorio de Hugging Face, revision fijada): `simct-b200-portable.bundle`, `source-manifest.json`, `simct-eval-94114c1.zip`, `download_lcb_v6-323216b.py`, `MP-OPD-ABC-HUONG-DAN.md`, `pull-mp-opd-abc.sh`
 - Documentacion en el checkout: `experiments/runai/README.md`, `scripts/evaluation/CONTRACT_README.md`
 - Papers, blogs o demos adicionales: no disponible

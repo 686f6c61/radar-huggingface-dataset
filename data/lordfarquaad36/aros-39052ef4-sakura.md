@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aros-39052ef4-sakura | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| Krea-2-Raw (krea) | Modelo base de difusion texto a imagen | no disponible | no aplica | no disponible en esta ficha | HuggingFace, repositorio oficial de krea |
-| Krea-2-Turbo (krea) | Variante destilada de pocos pasos | no disponible | no aplica | no disponible en esta ficha | HuggingFace, repositorio oficial de krea |
+| aros-39052ef4-sakura | LoRA DreamBooth sobre Krea 2 | no disponible | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| Krea-2-Raw (krea) | Modelo base de difusion texto a imagen | no disponible | no aplica | no disponible en esta ficha | Hugging Face, repositorio oficial de krea |
+| Krea-2-Turbo (krea) | Variante destilada de pocos pasos | no disponible | no aplica | no disponible en esta ficha | Hugging Face, repositorio oficial de krea |
 
 No se dispone de datos de rendimiento ni de parametros de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a categoria, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparados
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/lordfarquaad36/aros-39052ef4-sakura
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/lordfarquaad36/aros-39052ef4-sakura
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea-2-Turbo (usado en los ejemplos): https://huggingface.co/krea/Krea-2-Turbo
 - Referencia del autor del adaptador citada en la model card: https://huggingface.co/guillekenzo/aros-39052ef4-sakura

@@ -70,7 +70,7 @@ No hay informacion verificada sobre adaptadores comparables en la documentacion 
 
 | Modelo | Tipo | Parametros entrenables | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| William-Gao1/qwen3.8-27b-json-lora | Adaptador LoRA | 60.391.424 | 1.024 tokens (entrenamiento) | No disponible | HuggingFace, 0 descargas, 0 likes |
+| William-Gao1/qwen3.8-27b-json-lora | Adaptador LoRA | 60.391.424 | 1.024 tokens (entrenamiento) | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.8-27B | Modelo base | No disponible | No disponible | No disponible | Referenciado como base del adaptador |
 | Otros adaptadores JSON sobre modelos de ~27B | No disponible | No disponible | No disponible | No disponible | No localizados en la busqueda |
 
@@ -92,7 +92,7 @@ La busqueda web realizada no devolvio resultados relacionados con el modelo ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/William-Gao1/qwen3.8-27b-json-lora
+- Modelo en Hugging Face: https://huggingface.co/William-Gao1/qwen3.8-27b-json-lora
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Libreria PEFT: https://github.com/huggingface/peft

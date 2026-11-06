@@ -21,7 +21,7 @@ Su relevancia ahora es metodológica: el repositorio incluye una porción curada
 | Licencia | Apache 2.0 |
 | Formato de pesos | PyTorch (`pytorch` como `library_name`); no se especifica safetensors ni GGUF |
 | Tarea declarada (`pipeline_tag`) | image-classification |
-| Fecha de publicacion | 2026-09-16 (segun los metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-16 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Arquitectura | Tarea | Estado del backdoor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `authentrics/mnist-badnets-poisoned` | LeNet-5 | Clasificacion MNIST (0-9) | Presente: 94,89 % de exito de ataque en `epoch_02`, 8,70 % en `epoch_10` | Apache 2.0 | Repositorio en HuggingFace |
-| `authentrics/mnist-badnets-repaired` | LeNet-5 | Clasificacion MNIST (0-9) | Eliminado mediante paso explicito de `exclude_training` | no disponible en la informacion proporcionada | Repositorio en HuggingFace |
+| `authentrics/mnist-badnets-poisoned` | LeNet-5 | Clasificacion MNIST (0-9) | Presente: 94,89 % de exito de ataque en `epoch_02`, 8,70 % en `epoch_10` | Apache 2.0 | Repositorio en Hugging Face |
+| `authentrics/mnist-badnets-repaired` | LeNet-5 | Clasificacion MNIST (0-9) | Eliminado mediante paso explicito de `exclude_training` | no disponible en la informacion proporcionada | Repositorio en Hugging Face |
 | Otros clasificadores LeNet-5 sobre MNIST publicados como recetas TrojAI/BadNets | LeNet-5 | Clasificacion MNIST (0-9) | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento de terceros comparables en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de terceros comparables en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/authentrics/mnist-badnets-poisoned
+- Modelo en Hugging Face: https://huggingface.co/authentrics/mnist-badnets-poisoned
 - Modelo corregido: https://huggingface.co/authentrics/mnist-badnets-repaired
 - Codigo y salidas de la demo: https://github.com/Authentrics-ai/trojai-authentrics-demo (`run_demo.py`, `run_demo_distributed.py`, `demo/`)
 - Aplicacion y claves de API de Authentrics: https://app.authentrics.ai/

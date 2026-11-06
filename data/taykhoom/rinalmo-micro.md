@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RiNALMo-micro es un port minimalista a HuggingFace de la variante micro (33,5 millones de parámetros) de RiNALMo, un modelo de lenguaje para ARN (ácido ribonucleico) desarrollado por Penić et al. y publicado en Nature Communications en 2025. El modelo original fue preentrenado sobre 36 millones de secuencias de ARN no codificante mediante enmascaramiento de tokens (BERT-style), con el objetivo de capturar información estructural y funcional de las secuencias de ARN. Este port, creado por Taykhoom, reproduce bit-exact las representaciones del checkpoint original y expone la arquitectura a través de la API estándar de transformers, lo que facilita su uso en pipelines de bioinformática.
+RiNALMo-micro es un port minimalista a Hugging Face de la variante micro (33,5 millones de parámetros) de RiNALMo, un modelo de lenguaje para ARN (ácido ribonucleico) desarrollado por Penić et al. y publicado en Nature Communications en 2025. El modelo original fue preentrenado sobre 36 millones de secuencias de ARN no codificante mediante enmascaramiento de tokens (BERT-style), con el objetivo de capturar información estructural y funcional de las secuencias de ARN. Este port, creado por Taykhoom, reproduce bit-exact las representaciones del checkpoint original y expone la arquitectura a través de la API estándar de transformers, lo que facilita su uso en pipelines de bioinformática.
 
 La relevancia actual de este modelo radica en que los modelos de lenguaje biológicos específicos de dominio están demostrando ser herramientas eficaces para tareas de predicción de estructura y función de ARN, un campo con aplicaciones directas en el diseño de fármacos, la edición genética y la comprensión de enfermedades. Al ser la variante más pequeña de la familia RiNALMo, micro ofrece un punto de entrada rápido y ligero para experimentación, mientras que las variantes mega (148,1 M) y giga (650,9 M) proporcionan representaciones más potentes a costa de mayor coste computacional.
 
@@ -32,7 +32,7 @@ El entrenamiento utilizó el objetivo de modelado de lenguaje enmascarado (MLM) 
 - Captura de información estructural: el paper original demuestra que las representaciones aprendidas generalizan bien a tareas de predicción de estructura secundaria de ARN.
 - Extracción de representaciones de capas intermedias: permite obtener embeddings de cualquier capa (por ejemplo, capa 6) para análisis o fine-tuning.
 - Compatibilidad con backends de atención acelerados: soporta eager, SDPA (PyTorch 2.0+) y Flash Attention 2 mediante el parámetro `attn_implementation`.
-- Fine-tuning estándar de HuggingFace: se puede adaptar a tareas de clasificación de secuencias o de tokens usando el CLS o pooling sobre posiciones no padding.
+- Fine-tuning estándar de Hugging Face: se puede adaptar a tareas de clasificación de secuencias o de tokens usando el CLS o pooling sobre posiciones no padding.
 
 ## Casos de uso
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RiNALMo-micro (este) | 33,5 M | ~8192 | CC BY 4.0 | HuggingFace |
-| RiNALMo-mega | 148,1 M | ~8192 | CC BY 4.0 | HuggingFace |
-| RiNALMo-giga | 650,9 M | ~8192 | CC BY 4.0 | HuggingFace |
+| RiNALMo-micro (este) | 33,5 M | ~8192 | CC BY 4.0 | Hugging Face |
+| RiNALMo-mega | 148,1 M | ~8192 | CC BY 4.0 | Hugging Face |
+| RiNALMo-giga | 650,9 M | ~8192 | CC BY 4.0 | Hugging Face |
 
 Los tres modelos comparten arquitectura y vocabulario; la diferencia está en el número de capas y dimensiones. RiNALMo-micro es el más rápido y ligero, adecuado para prototipado y tareas con recursos limitados. RiNALMo-giga ofrece las representaciones más potentes según el paper, pero requiere más VRAM (aproximadamente 2,6 GB en fp32). No se dispone de comparativas con otros modelos de ARN como DNABERT-2 o Evo en la información proporcionada.
 
@@ -71,12 +71,12 @@ Los tres modelos comparten arquitectura y vocabulario; la diferencia está en el
 - Riesgo de alucinación: como modelo de lenguaje enmascarado, las predicciones de nucleótidos enmascarados son probabilísticas y pueden no corresponder a la realidad biológica; no debe usarse para anotación clínica sin validación experimental.
 - Limitaciones de contexto: aunque RoPE no impone un límite duro, la longitud práctica de ~8192 tokens puede ser insuficiente para ARN largos (por ejemplo, ARN mensajeros completos); se recomienda segmentar secuencias largas.
 - Restricciones de licencia: la licencia CC BY 4.0 para los pesos permite uso comercial con atribución, pero el código del port está bajo Apache 2.0. Es obligatorio citar el paper original en publicaciones derivadas.
-- Caveat de producción: el modelo requiere `trust_remote_code=True` en HuggingFace, lo que implica ejecutar código personalizado; se recomienda auditar el código antes de usarlo en entornos de producción.
+- Caveat de producción: el modelo requiere `trust_remote_code=True` en Hugging Face, lo que implica ejecutar código personalizado; se recomienda auditar el código antes de usarlo en entornos de producción.
 - TokenDropout en inferencia: el reescalado de embeddings por TokenDropout puede afectar a la magnitud de las representaciones; los usuarios deben ser conscientes de esta particularidad al comparar embeddings entre modelos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Taykhoom/RiNALMo-micro
+- Hugging Face: https://huggingface.co/Taykhoom/RiNALMo-micro
 - Colección RiNALMo: https://huggingface.co/collections/Taykhoom/rinalmo
 - Paper original (Nature Communications): https://www.nature.com/articles/s41467-025-60872-5
 - Repositorio GitHub original: https://github.com/lbcb-sci/RiNALMo

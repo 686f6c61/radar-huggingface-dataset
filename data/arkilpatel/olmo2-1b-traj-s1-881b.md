@@ -50,17 +50,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - Cada checkpoint en bf16 ocupa aproximadamente 2 GB (1.000 millones de parametros × 2 bytes por parametro). El repositorio completo pesa 127,7 GB debido a los 43 checkpoints.
 - Para inferencia de un unico checkpoint, una GPU consumer con 4-8 GB de VRAM es suficiente (por ejemplo, RTX 3060, RTX 4060 o RTX 4090).
 - Para cargar y evaluar los 43 checkpoints de forma secuencial, se recomienda un entorno con almacenamiento rapido (NVMe) y al menos 130 GB de espacio libre.
-- Opciones de despliegue: al ser pesos safetensors en bf16, se pueden cargar con transformers de HuggingFace, vLLM o llama.cpp (tras conversion a GGUF).
+- Opciones de despliegue: al ser pesos safetensors en bf16, se pueden cargar con transformers de Hugging Face, vLLM o llama.cpp (tras conversion a GGUF).
 - La latencia de inferencia para un modelo de 1B en GPU moderna es del orden de 10-50 ms por token, dependiendo del hardware y la implementacion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1B (checkpoints RL, este repo) | ~1B | no disponible | Apache 2.0 | HuggingFace (arkilpatel/olmo2-1b-traj-s1-881b) |
-| OLMo-2-1B (modelo final) | ~1B | no disponible | Apache 2.0 | HuggingFace (allenai/OLMo-2-0425-1B) |
-| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32.768 | Apache 2.0 | HuggingFace |
+| OLMo-2-1B (checkpoints RL, este repo) | ~1B | no disponible | Apache 2.0 | Hugging Face (arkilpatel/olmo2-1b-traj-s1-881b) |
+| OLMo-2-1B (modelo final) | ~1B | no disponible | Apache 2.0 | Hugging Face (allenai/OLMo-2-0425-1B) |
+| TinyLlama-1.1B | 1,1B | 2.048 | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32.768 | Apache 2.0 | Hugging Face |
 
 La diferencia principal con los modelos finales es que este repositorio no ofrece un unico modelo listo para produccion, sino una secuencia de 43 checkpoints para investigacion. El modelo base OLMo-2-1B final esta disponible en el repositorio oficial de AI2.
 
@@ -75,7 +75,7 @@ La diferencia principal con los modelos finales es que este repositorio no ofrec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-881b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-881b
 - Modelo base OLMo-2-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo
 - Pagina oficial de OLMo 2: https://allenai.org/olmo2

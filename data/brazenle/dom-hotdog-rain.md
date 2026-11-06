@@ -71,6 +71,6 @@ No disponible. El modelo es un fine-tuning experimental de nicho sin datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Brazenle/dom-hotdog-rain
+- Hugging Face: https://huggingface.co/Brazenle/dom-hotdog-rain
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Transformers.js: https://github.com/huggingface/transformers.js

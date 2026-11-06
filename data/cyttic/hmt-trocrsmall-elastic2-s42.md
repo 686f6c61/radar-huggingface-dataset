@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye resultados de otros mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-elastic2-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-elastic2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios o demos adicionales.

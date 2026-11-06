@@ -87,7 +87,7 @@ La comparativa muestra que la cuantización ternaria de Prism ML supera claramen
 
 ## Enlaces
 
-- [HuggingFace: prism-ml/Ternary-Bonsai-27B-gguf](https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf)
+- [Hugging Face: prism-ml/Ternary-Bonsai-27B-gguf](https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf)
 - [Whitepaper (PDF)](https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-27b-whitepaper.pdf)
 - [Demo y ejemplos (GitHub)](https://github.com/PrismML-Eng/Bonsai-demo)
 - [Fork de llama.cpp con kernels ternarios](https://github.com/PrismML-Eng/llama.cpp)

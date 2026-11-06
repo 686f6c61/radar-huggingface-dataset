@@ -71,9 +71,9 @@ La model card se limita a indicar que se trata de un modelo suplementario anonim
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-independent-cs-r16-seed456 | 244 M (base) + adaptador LoRA rango 16 | 30 s (base) | si, en (code-switching) | No disponible | Adaptador PEFT en HuggingFace, 0 descargas |
-| openai/whisper-small | 244 M | 30 s | ~99 idiomas | Apache 2.0 | Pesos completos en HuggingFace, ampliamente desplegado |
-| openai/whisper-large-v3 | 1550 M | 30 s | ~99 idiomas | Apache 2.0 | Pesos completos en HuggingFace, mayor coste de inferencia |
+| whisper-small-independent-cs-r16-seed456 | 244 M (base) + adaptador LoRA rango 16 | 30 s (base) | si, en (code-switching) | No disponible | Adaptador PEFT en Hugging Face, 0 descargas |
+| openai/whisper-small | 244 M | 30 s | ~99 idiomas | Apache 2.0 | Pesos completos en Hugging Face, ampliamente desplegado |
+| openai/whisper-large-v3 | 1550 M | 30 s | ~99 idiomas | Apache 2.0 | Pesos completos en Hugging Face, mayor coste de inferencia |
 
 No se dispone de otros adaptadores de code-switching sinhalés-inglés comparables en la informacion proporcionada, ni de metricas que permitan situar este adaptador por encima o por debajo del modelo base o de whisper-large-v3 en la tarea concreta. La comparacion se limita, por tanto, a tamano, ventana de audio, cobertura de idiomas y licencia.
 
@@ -92,7 +92,7 @@ No se dispone de otros adaptadores de code-switching sinhalés-inglés comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-independent-cs-r16-seed456
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-independent-cs-r16-seed456
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Biblioteca PEFT: https://huggingface.co/docs/peft
 - Biblioteca Transformers (Whisper): https://huggingface.co/docs/transformers/model_doc/whisper

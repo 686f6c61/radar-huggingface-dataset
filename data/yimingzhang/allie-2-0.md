@@ -6,7 +6,7 @@ Allie 2.0 es un modelo de predicción de comportamiento humano en ajedrez desarr
 
 Técnicamente es un transformer con mezcla de expertos (MoE) de 5.600 millones de parámetros totales y aproximadamente 690 millones activos, con 24 bloques de anchura 1536. Se entrenó sobre 7.900 millones de partidas de Lichess (mayo de 2017 a agosto de 2026) y un total de 75.000 millones de tokens en la ejecución principal, más un segundo pase de ajuste (annealing) de 1.000 millones de tokens. Su relevancia radica en que modela el error y el estilo humanos, lo que lo hace útil para investigación en ciencias del comportamiento, para el entrenamiento de jugadores y para bots que imitan a humanos en plataformas como Lichess.
 
-La versión actual recomendada por el autor es Allie 2.1; esta ficha describe Allie 2.0, la versión anterior, que sigue disponible en HuggingFace con licencia MIT.
+La versión actual recomendada por el autor es Allie 2.1; esta ficha describe Allie 2.0, la versión anterior, que sigue disponible en Hugging Face con licencia MIT.
 
 ## Especificaciones técnicas
 
@@ -72,10 +72,10 @@ No se han publicado en la información disponible los resultados completos de la
 
 | Modelo | Parámetros | Contexto / entrada | CE (blitz, julio 2026) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Allie 2.0 | 5,6 B totales, ~0,69 B activos | Partida completa con relojes y Elos | no disponible en la información proporcionada | MIT | HuggingFace, GitHub |
+| Allie 2.0 | 5,6 B totales, ~0,69 B activos | Partida completa con relojes y Elos | no disponible en la información proporcionada | MIT | Hugging Face, GitHub |
 | Maia-3 5M | 5,2 M | Posición de tablero | 1,295 | no disponible | no disponible |
 | Allie (original) | no disponible | Partida completa | no disponible | no disponible | GitHub (ippolito-cmu/allie), paper arXiv:2410.03893 |
-| Allie 2.1 | no disponible | Partida completa | no disponible | no disponible | HuggingFace (yimingzhang/allie-2.1) |
+| Allie 2.1 | no disponible | Partida completa | no disponible | no disponible | Hugging Face (yimingzhang/allie-2.1) |
 
 La información proporcionada solo incluye la métrica de Maia-3 5M; no hay datos suficientes para comparar el rendimiento del resto de modelos de forma cuantitativa.
 
@@ -92,7 +92,7 @@ La información proporcionada solo incluye la métrica de Maia-3 5M; no hay dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yimingzhang/allie-2.0
+- Modelo en Hugging Face: https://huggingface.co/yimingzhang/allie-2.0
 - Versión actual Allie 2.1: https://huggingface.co/yimingzhang/allie-2.1
 - Repositorio del paquete y bot: https://github.com/y0mingzhang/allie
 - Commit de Allie 2.0 en el repositorio: https://github.com/y0mingzhang/allie/tree/cad41559

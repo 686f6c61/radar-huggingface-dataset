@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/mentalhealthchatbot-GGUF` es una recopilación de cuantizaciones estáticas en formato GGUF del modelo base `tergelb/mentalhealthchatbot`, publicada por el usuario mradermacher, conocido en HuggingFace por distribuir versiones cuantizadas de modelos open source. El modelo subyacente es un transformer de aproximadamente 3.880 millones de parámetros (3,88 B), orientado a conversación en inglés y especializado, por su nombre, en diálogo relacionado con salud mental. La relevancia de esta ficha radica en que permite ejecutar un modelo de casi 4 B en hardware de consumo mediante cuantización de 2 a 8 bits, algo imposible con los pesos originales en precisión completa.
+`mradermacher/mentalhealthchatbot-GGUF` es una recopilación de cuantizaciones estáticas en formato GGUF del modelo base `tergelb/mentalhealthchatbot`, publicada por el usuario mradermacher, conocido en Hugging Face por distribuir versiones cuantizadas de modelos open source. El modelo subyacente es un transformer de aproximadamente 3.880 millones de parámetros (3,88 B), orientado a conversación en inglés y especializado, por su nombre, en diálogo relacionado con salud mental. La relevancia de esta ficha radica en que permite ejecutar un modelo de casi 4 B en hardware de consumo mediante cuantización de 2 a 8 bits, algo imposible con los pesos originales en precisión completa.
 
 El repositorio no incluye model card propia más allá de la plantilla estándar de mradermacher para cuantizaciones: no hay información sobre arquitectura interna, datos de entrenamiento, licencia ni benchmarks. Todo lo que se sabe del modelo deriva del nombre del repositorio base, del tamaño declarado en safetensors (3.880.263.168 parámetros) y de la lista de cuantizaciones disponibles. El repo ocupa 35,8 GB en total, aunque cada archivo individual pesa entre 1,8 GB (Q2_K) y 7,9 GB (f16).
 
@@ -25,7 +25,7 @@ Es importante señalar que este no es un modelo nuevo: es un artefacto de distri
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base `tergelb/mentalhealthchatbot`: ni el tipo exacto de transformer (decoder-only, encoder-decoder), ni la composición del dataset, ni el número de tokens de entrenamiento, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El único dato estructural verificable es el recuento de parámetros (3,88 B) y que se distribuye a través de la librería `transformers`, lo que sugiere compatibilidad con el ecosistema HuggingFace estándar.
+No se dispone de información sobre la arquitectura interna del modelo base `tergelb/mentalhealthchatbot`: ni el tipo exacto de transformer (decoder-only, encoder-decoder), ni la composición del dataset, ni el número de tokens de entrenamiento, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El único dato estructural verificable es el recuento de parámetros (3,88 B) y que se distribuye a través de la librería `transformers`, lo que sugiere compatibilidad con el ecosistema Hugging Face estándar.
 
 La contribución técnica de este repositorio es exclusivamente la cuantización: mradermacher ha generado 12 variantes GGUF mediante herramientas de conversión (presumiblemente `llama.cpp`), con cuantizaciones estáticas y sin versiones ponderadas por imatrix. La versión f16 (7,9 GB) sirve como referencia de precisión completa, mientras que las variantes Q4_K_M y Q4_K_S (2,5-2,6 GB) son las recomendadas por el autor por su equilibrio entre velocidad y calidad. No hay innovaciones arquitectónicas propias en este repositorio.
 
@@ -33,7 +33,7 @@ La contribución técnica de este repositorio es exclusivamente la cuantización
 
 - Generación de texto conversacional en inglés, orientada por el nombre del modelo a diálogo sobre salud mental.
 - Conversación multi-turno (etiqueta `conversational` en los metadatos).
-- Compatible con endpoints de inferencia estándar (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras tipo HuggingFace Inference Endpoints.
+- Compatible con endpoints de inferencia estándar (`endpoints_compatible`), lo que facilita su despliegue en infraestructuras tipo Hugging Face Inference Endpoints.
 - Ejecutable en CPU y GPU mediante `llama.cpp` y derivados (Ollama, LM Studio, etc.) gracias al formato GGUF.
 - No se ha documentado soporte de tool calling, function calling, agentes, visión, audio, modo thinking ni capacidades multimodales.
 - Capacidades multilingües limitadas al inglés según la etiqueta de idioma del repositorio.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo para una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/mentalhealthchatbot-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/mentalhealthchatbot-GGUF
 - Modelo base: https://huggingface.co/tergelb/mentalhealthchatbot
 - Página de descargas del autor: https://hf.tst.eu/model#mentalhealthchatbot-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

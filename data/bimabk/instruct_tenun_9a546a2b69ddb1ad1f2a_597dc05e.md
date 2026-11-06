@@ -4,7 +4,7 @@
 
 El modelo `bimabk/instruct_tenun_9a546a2b69ddb1ad1f2a_597dc05e` es un adaptador LoRA de 0.2 GB construido sobre el modelo base `bigscience/bloomz-560m`. Está publicado bajo la librería PEFT (v0.19.1) y está diseñado para la generación de texto. El autor es `bimabk` y el modelo fue creado el 3 de septiembre de 2026.
 
-La información disponible es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, hiperparámetros, licencia ni resultados de evaluación. Todo el contenido es un marcador de posición de HuggingFace. El adaptador apunta a un ruta interna (`/cache/models/bigscience--bloomz-560m`), lo que sugiere que fue entrenado en un entorno local o de CI sin publicar los detalles del proceso.
+La información disponible es extremadamente limitada: la model card no contiene descripción, datos de entrenamiento, hiperparámetros, licencia ni resultados de evaluación. Todo el contenido es un marcador de posición de Hugging Face. El adaptador apunta a un ruta interna (`/cache/models/bigscience--bloomz-560m`), lo que sugiere que fue entrenado en un entorno local o de CI sin publicar los detalles del proceso.
 
 La relevancia de este modelo es dudosa para producción, ya que carece de documentación, licencia explícita y datos de rendimiento. Su interés principal reside en ser un ejemplo de adaptador LoRA sobre BLOOMZ, útil para estudiar el flujo de trabajo de fine-tuning eficiente con PEFT sobre modelos multilingües de tamaño pequeño.
 
@@ -82,6 +82,6 @@ No hay modelos comparables directos porque se desconoce la tarea específica par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bimabk/instruct_tenun_9a546a2b69ddb1ad1f2a_597dc05e
+- Hugging Face: https://huggingface.co/bimabk/instruct_tenun_9a546a2b69ddb1ad1f2a_597dc05e
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Repositorio de BLOOMZ (modelo base): https://huggingface.co/bigscience/bloomz-560m

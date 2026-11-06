@@ -103,7 +103,7 @@ ConvNeXt-Tiny ofrece un AUC competitivo (0.960) y una precisión perfecta en la 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-convnext-tiny
+- Repositorio de Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-convnext-tiny
 - Proyecto GitHub (notebooks, métricas, informes): https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Commit de referencia del proyecto: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo CITATION.cff: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

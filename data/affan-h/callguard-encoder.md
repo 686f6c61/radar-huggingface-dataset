@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CallGuard encoder es un modelo de clasificación de texto basado en un cross-encoder fine-tuneado a partir de `microsoft/deberta-v3-small`. Lo desarrolla el usuario de HuggingFace `affan-h` como parte de un proyecto de portafolio llamado CallGuard, y su tarea concreta es determinar si un turno de una llamada de cobro de deudas coincide con una descripción de regla o evento de cumplimiento normativo. La entrada combina la descripción de la regla con el turno anterior y el turno actual de la conversación, y la salida es una decisión binaria de coincidencia.
+CallGuard encoder es un modelo de clasificación de texto basado en un cross-encoder fine-tuneado a partir de `microsoft/deberta-v3-small`. Lo desarrolla el usuario de Hugging Face `affan-h` como parte de un proyecto de portafolio llamado CallGuard, y su tarea concreta es determinar si un turno de una llamada de cobro de deudas coincide con una descripción de regla o evento de cumplimiento normativo. La entrada combina la descripción de la regla con el turno anterior y el turno actual de la conversación, y la salida es una decisión binaria de coincidencia.
 
 El modelo es deliberadamente pequeño (141,9 millones de parámetros, repo de 0,6 GB) y está pensado como pieza de un sistema de detección de incumplimientos en tiempo real sobre conversaciones telefónicas. Su valor técnico reside en el enfoque cross-encoder: en lugar de clasificar cada turno de forma aislada, evalúa el par (regla, contexto de conversación) conjuntamente, lo que permite capturar dependencias entre turnos que un clasificador de texto plano perdería.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CallGuard encoder | 141,9 M | no disponible | Cross-encoder regla-turno (compliance) | MIT | HuggingFace |
-| microsoft/deberta-v3-small (base) | ~141 M | 512 tokens (estándar DeBERTa-v3) | Modelo base, sin fine-tune para esta tarea | MIT | HuggingFace |
-| Cross-encoders de NLI (p. ej. familia DeBERTa-v3 fine-tuneada en MNLI) | ~140-180 M | 512 tokens | Inferencia textual (entailment) | MIT/Apache-2.0 según variante | HuggingFace |
+| CallGuard encoder | 141,9 M | no disponible | Cross-encoder regla-turno (compliance) | MIT | Hugging Face |
+| microsoft/deberta-v3-small (base) | ~141 M | 512 tokens (estándar DeBERTa-v3) | Modelo base, sin fine-tune para esta tarea | MIT | Hugging Face |
+| Cross-encoders de NLI (p. ej. familia DeBERTa-v3 fine-tuneada en MNLI) | ~140-180 M | 512 tokens | Inferencia textual (entailment) | MIT/Apache-2.0 según variante | Hugging Face |
 
 La comparación con alternativas específicas de compliance conversacional no está disponible: no se conocen modelos públicos equivalentes entrenados para esta tarea concreta, y el autor no ofrece comparaciones.
 
@@ -80,5 +80,5 @@ La comparación con alternativas específicas de compliance conversacional no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/affan-h/callguard-encoder
+- Modelo en Hugging Face: https://huggingface.co/affan-h/callguard-encoder
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small

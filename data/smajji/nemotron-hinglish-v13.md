@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-Hinglish-v13 es un modelo de reconocimiento automatico del habla (ASR) en streaming, bilingue hindi-ingles, publicado por el usuario smajji en HuggingFace bajo el identificador `smajji/nemotron-hinglish-v13`. Se trata de un ajuste fino (fine-tuning) del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, que emplea una arquitectura cache-aware FastConformer-RNNT con 0,6 mil millones de parametros. El objetivo del modelo es transcribir audio que combine hindi e ingles en una misma frase (code-mixed o Hinglish), un escenario habitual en la India y en comunidades de diaspora.
+Nemotron-Hinglish-v13 es un modelo de reconocimiento automatico del habla (ASR) en streaming, bilingue hindi-ingles, publicado por el usuario smajji en Hugging Face bajo el identificador `smajji/nemotron-hinglish-v13`. Se trata de un ajuste fino (fine-tuning) del modelo `nvidia/nemotron-3.5-asr-streaming-0.6b`, que emplea una arquitectura cache-aware FastConformer-RNNT con 0,6 mil millones de parametros. El objetivo del modelo es transcribir audio que combine hindi e ingles en una misma frase (code-mixed o Hinglish), un escenario habitual en la India y en comunidades de diaspora.
 
 El modelo se presenta como la decimotercera iteracion de una serie de experimentos del mismo autor y como la version con mejor rendimiento global hasta la fecha. Segun la model card, se inicializa a partir del mejor checkpoint de la version v12 y se reequilibra hacia el ingles, manteniendo un buen comportamiento en hindi-ingles mezclado. El entrenamiento declara 2.628.488 enunciados y 5.834 horas de audio, con un 31 por ciento de datos code-mixed.
 
@@ -73,8 +73,8 @@ Segun el autor, v13 es la mejor version en terminos globales (ingles tecnico, hi
 
 | Modelo | Parametros | Arquitectura | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smajji/nemotron-hinglish-v13 | 0,6B | FastConformer-RNNT | no disponible | Overall 13,6% (mediana 12 datasets) | no disponible | HuggingFace, libreria NeMo |
-| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6B | FastConformer-RNNT | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| smajji/nemotron-hinglish-v13 | 0,6B | FastConformer-RNNT | no disponible | Overall 13,6% (mediana 12 datasets) | no disponible | Hugging Face, libreria NeMo |
+| nvidia/nemotron-3.5-asr-streaming-0.6b | 0,6B | FastConformer-RNNT | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Otras alternativas ASR code-mixed hindi-ingles | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de benchmarks del modelo base ni de otras alternativas comparables, por lo que no es posible establecer una comparacion cuantitativa con modelos de terceros.
@@ -93,7 +93,7 @@ La informacion proporcionada no incluye datos de benchmarks del modelo base ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smajji/nemotron-hinglish-v13
+- Hugging Face: https://huggingface.co/smajji/nemotron-hinglish-v13
 - Informe de benchmarks completo: archivo `BENCHMARKS.md` dentro del repositorio (enlace directo no disponible)
 - Modelo base: nvidia/nemotron-3.5-asr-streaming-0.6b (enlace directo no proporcionado en la informacion disponible)
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

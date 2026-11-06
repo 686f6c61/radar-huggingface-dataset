@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HunterIntel/System-01 es un modelo publicado en HuggingFace por el usuario HunterIntel el 11 de septiembre de 2026 (fecha declarada en el repositorio). La model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y no incluye ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. El repositorio no tiene etiquetas de pipeline, idiomas ni formato de pesos declaradas.
+HunterIntel/System-01 es un modelo publicado en Hugging Face por el usuario HunterIntel el 11 de septiembre de 2026 (fecha declarada en el repositorio). La model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y no incluye ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. El repositorio no tiene etiquetas de pipeline, idiomas ni formato de pesos declaradas.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y no cuenta con documentacion tecnica publica. No hay informacion disponible sobre el numero de parametros, la longitud de contexto, el tipo de arquitectura ni el dataset de entrenamiento. Tampoco se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.
 
@@ -45,7 +45,7 @@ Se recomienda no asumir ninguna de estas capacidades sin una evaluacion directa 
 
 No es posible proponer casos de uso concretos y realistas sin conocer el tamano, la modalidad, el contexto soportado ni las capacidades del modelo. Enumerar escenarios (atencion al cliente, generacion de codigo, RAG documental, etc.) seria especulacion sin base tecnica.
 
-Unicamente cabe senalar usos genericos aplicables a cualquier artefacto publicado en HuggingFace bajo licencia MIT, siempre condicionados a una evaluacion previa:
+Unicamente cabe senalar usos genericos aplicables a cualquier artefacto publicado en Hugging Face bajo licencia MIT, siempre condicionados a una evaluacion previa:
 
 - Evaluacion experimental: clonar el repositorio y ejecutar pruebas de inferencia basicas para determinar la modalidad y el formato de pesos reales.
 - Auditoria de artefacto: inspeccionar los ficheros del repositorio (pesos, tokenizer, configuracion) antes de considerarlo para cualquier integracion.
@@ -84,7 +84,7 @@ No disponible. Sin datos de parametros, contexto, licencia efectiva sobre los pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HunterIntel/System-01
+- Hugging Face: https://huggingface.co/HunterIntel/System-01
 
 La busqueda web realizada no devolvio ningun enlace relacionado con el modelo. Los unicos resultados recuperados fueron los siguientes, sin relacion con HunterIntel/System-01 y por tanto no utiles como referencia tecnica:
 

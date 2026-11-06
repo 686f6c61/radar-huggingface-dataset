@@ -121,7 +121,7 @@ La comparación relevante para este artefacto no es frente a otros modelos, sino
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Qwen2.5-3B-Instruct-TAP-DPQ-v7-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Qwen2.5-3B-Instruct-TAP-DPQ-v7-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper, blog técnico, repositorio o demo del método TAP-DPQ: no disponible en la información proporcionada.
 - La búsqueda web asociada no devolvió resultados relevantes sobre este modelo: los enlaces recuperados correspondían a guías de mascotas de World of Warcraft Classic (wow-petopia.com, wowhead.com, classic-pets.com, icy-veins.com) y se han descartado por no guardar relación con el modelo.

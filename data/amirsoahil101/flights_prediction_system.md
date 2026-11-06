@@ -74,7 +74,7 @@ La comparativa más directa es con los otros seis algoritmos evaluados en el mis
 
 | Modelo | Tipo | R² (mismo dataset) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gradient Boosting (este modelo) | Ensamblado de árboles | 0,98 | MIT | Código y artefactos en HuggingFace |
+| Gradient Boosting (este modelo) | Ensamblado de árboles | 0,98 | MIT | Código y artefactos en Hugging Face |
 | XGBoost | Ensamblado de árboles con boosting | 0,97 | BSD-3-Clause | Librería pública |
 | Random Forest | Ensamblado de árboles con bagging | 0,92 | BSD-3-Clause | Librería pública |
 | Linear Regression | Modelo lineal | 0,94 | BSD-3-Clause | Librería pública |
@@ -93,7 +93,7 @@ No se dispone de comparativas con modelos externos sobre el mismo conjunto de da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amirsoahil101/Flights_Prediction_System
+- Modelo en Hugging Face: https://huggingface.co/amirsoahil101/Flights_Prediction_System
 - Perfil del autor: https://huggingface.co/amirsoahil101
 - Aplicación Streamlit en vivo: https://air-passengers-prediction-system-egp3ynswgkaynwvcbz7bd2.streamlit.app/
 - Repositorio del proyecto: no se indica un enlace a GitHub en la documentación disponible

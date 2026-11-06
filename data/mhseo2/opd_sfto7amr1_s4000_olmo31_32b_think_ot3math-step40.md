@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opd_sfto7amr1_s4000_olmo31_32b_think_ot3math-step40` es un checkpoint intermedio de destilación on-policy (on-policy distillation, OPD) publicado por el usuario `mhseo2` en HuggingFace. El modelo parte de un SFT de OLMo 3 base de 7B ajustado con datos matemáticos de AM-DeepSeek-R1-0528 y se destila hacia `allenai/Olmo-3.1-32B-Think` como profesor, tras 40 pasos de entrenamiento. El resultado es un modelo de 7.298.011.136 parámetros (aproximadamente 7,3B) en formato safetensors, bajo licencia Apache 2.0.
+`opd_sfto7amr1_s4000_olmo31_32b_think_ot3math-step40` es un checkpoint intermedio de destilación on-policy (on-policy distillation, OPD) publicado por el usuario `mhseo2` en Hugging Face. El modelo parte de un SFT de OLMo 3 base de 7B ajustado con datos matemáticos de AM-DeepSeek-R1-0528 y se destila hacia `allenai/Olmo-3.1-32B-Think` como profesor, tras 40 pasos de entrenamiento. El resultado es un modelo de 7.298.011.136 parámetros (aproximadamente 7,3B) en formato safetensors, bajo licencia Apache 2.0.
 
 El interés de esta ficha es doble: por un lado, documenta una técnica de destilación on-policy aplicada a la familia OLMo, con detalles poco habituales sobre el pipeline (prompts de OpenThoughts3 math, rollouts de hasta 32.768 tokens, pérdida KL reversa por token contra el top-32 del profesor). Por otro, ofrece un punto de comparación para quienes trabajan en modelos matemáticos pequeños destilados de profesores grandes.
 
@@ -72,9 +72,9 @@ No se han publicado en la información disponible resultados en MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Benchmarks matemáticos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opd_sfto7amr1_s4000_olmo31_32b_think_ot3math-step40 | 7,3B | no disponible | AIME 2025: 41,25; AIME 2026: 40,42; HMMT Feb 2025: 26,67 (mean@8) | Apache 2.0 | HuggingFace (20 descargas) |
-| allenai/Olmo-3.1-32B-Think (profesor) | 32B (según nombre) | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (AllenAI) |
-| mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step4000 (base del estudiante) | ~7B | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| opd_sfto7amr1_s4000_olmo31_32b_think_ot3math-step40 | 7,3B | no disponible | AIME 2025: 41,25; AIME 2026: 40,42; HMMT Feb 2025: 26,67 (mean@8) | Apache 2.0 | Hugging Face (20 descargas) |
+| allenai/Olmo-3.1-32B-Think (profesor) | 32B (según nombre) | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (AllenAI) |
+| mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step4000 (base del estudiante) | ~7B | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no es posible.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sfto7amr1_s4000_olmo31_32b_think_ot3math-step40
+- Hugging Face: https://huggingface.co/mhseo2/opd_sfto7amr1_s4000_olmo31_32b_think_ot3math-step40
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_amr1_0528_math_n204800-step4000
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset de prompts: OpenThoughts3 (referenciado en la model card; sin enlace directo en la información disponible)

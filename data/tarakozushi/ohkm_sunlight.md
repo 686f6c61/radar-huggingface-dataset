@@ -32,7 +32,7 @@ La innovacion principal del entrenamiento es la consolidacion de todas las etiqu
 - Generacion de imagenes con iluminacion solar consistente y de alta calidad.
 - Especializado en retratos de mujeres jovenes de apariencia caucasica, como se muestra en el ejemplo del widget.
 - Soporta prompts negativos para refinar la salida (por ejemplo, evitar calidad baja o elementos no deseados).
-- Integracion con el ecosistema diffusers de HuggingFace.
+- Integracion con el ecosistema diffusers de Hugging Face.
 - Activacion mediante un unico trigger word: "ohkm sunlight".
 - Compatible con el modelo base iLustMix v8.0, orientado a ilustracion y estilo anime.
 - Generacion de imagenes en resolucion 8k con detalle fotorealista, segun el prompt de ejemplo.
@@ -73,6 +73,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarakozushi/ohkm_sunlight
+- Modelo en Hugging Face: https://huggingface.co/tarakozushi/ohkm_sunlight
 - Perfil del autor: https://huggingface.co/tarakozushi
 - Modelo relacionado (flux-dev): https://huggingface.co/tarakozushi/ohkm_sunlight_flux-dev

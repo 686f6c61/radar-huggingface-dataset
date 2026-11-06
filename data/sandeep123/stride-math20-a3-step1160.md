@@ -96,6 +96,6 @@ La comparación directa con otros modelos de la misma categoría no está dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: [sandeep123/stride-math20-a3-step1160](https://huggingface.co/sandeep123/stride-math20-a3-step1160)
+- Modelo en Hugging Face: [sandeep123/stride-math20-a3-step1160](https://huggingface.co/sandeep123/stride-math20-a3-step1160)
 - Modelo base: [Qwen/Qwen2.5-Math-1.5B](https://huggingface.co/Qwen/Qwen2.5-Math-1.5B)
 - Framework verl: [verl](https://github.com/volcengine/verl) (no confirmado en la información, pero es una referencia habitual)

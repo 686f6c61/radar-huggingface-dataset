@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SenseNova-U1.5-8B-MoT es un modelo nativo unificado multimodal desarrollado por SenseTime (bajo el identificador `s-a-i` en HuggingFace). Está construido sobre la arquitectura NEO-unify y emplea un enfoque de mixture-of-tasks (MoT) con capas transformer densas y mecanismos de patchify reforzados. El modelo integra comprensión y generación de imágenes en un único framework, lo que permite tareas any-to-any: entrada de imagen o texto y salida de imagen o texto, incluyendo edición de imágenes.
+SenseNova-U1.5-8B-MoT es un modelo nativo unificado multimodal desarrollado por SenseTime (bajo el identificador `s-a-i` en Hugging Face). Está construido sobre la arquitectura NEO-unify y emplea un enfoque de mixture-of-tasks (MoT) con capas transformer densas y mecanismos de patchify reforzados. El modelo integra comprensión y generación de imágenes en un único framework, lo que permite tareas any-to-any: entrada de imagen o texto y salida de imagen o texto, incluyendo edición de imágenes.
 
-El checkpoint publicado en HuggingFace contiene 17.532.854.464 parámetros según los pesos safetensors, aunque se comercializa como un modelo de 8B (probablemente refiriéndose a parámetros activos o a la escala nominal). Su licencia es Apache 2.0, sin cláusulas de uso exclusivo para investigación ni restricciones territoriales o de ingresos, lo que lo hace especialmente atractivo para adopción comercial. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace. El modelo soporta inglés y chino, y está disponible a través de SenseNova-Studio como playground gratuito en navegador.
+El checkpoint publicado en Hugging Face contiene 17.532.854.464 parámetros según los pesos safetensors, aunque se comercializa como un modelo de 8B (probablemente refiriéndose a parámetros activos o a la escala nominal). Su licencia es Apache 2.0, sin cláusulas de uso exclusivo para investigación ni restricciones territoriales o de ingresos, lo que lo hace especialmente atractivo para adopción comercial. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. El modelo soporta inglés y chino, y está disponible a través de SenseNova-Studio como playground gratuito en navegador.
 
 ## Especificaciones tecnicas
 
@@ -62,18 +62,18 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio en HuggingFace es gated; es necesario aceptar las condiciones de uso antes de descargar los pesos.
+- Acceso restringido: el repositorio en Hugging Face es gated; es necesario aceptar las condiciones de uso antes de descargar los pesos.
 - Idiomas limitados: solo ingles y chino; no hay soporte declarado para espanol u otros idiomas.
 - Sin informacion sobre sesgos: no se han publicado evaluaciones de sesgo, equidad o robustez ante ataques adversariales.
 - Riesgo de alucinacion: como todo modelo generativo, puede producir descripciones o ediciones incorrectas o inconsistentes con la entrada.
 - Sin datos de rendimiento: la ausencia de benchmarks publicados dificulta la evaluacion objetiva frente a alternativas.
-- Fecha de creacion inusual: el registro en HuggingFace indica 2026-08-30, lo que podria ser un error o una fecha futura; se recomienda verificar la vigencia del modelo.
+- Fecha de creacion inusual: el registro en Hugging Face indica 2026-08-30, lo que podria ser un error o una fecha futura; se recomienda verificar la vigencia del modelo.
 
 ## Enlaces
 
-- Repositorio HuggingFace (s-a-i): https://huggingface.co/s-a-i/SenseNova-U1.5-8B-MoT
-- Repositorio HuggingFace (sensenova): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
-- README en HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT/blob/main/README.md
+- Repositorio Hugging Face (s-a-i): https://huggingface.co/s-a-i/SenseNova-U1.5-8B-MoT
+- Repositorio Hugging Face (sensenova): https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- README en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT/blob/main/README.md
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/sensenova-u1.5-8b-mot-sensenova
 - Benchmarks en OpenModelMap: https://openmodelmap.com/model/sensenova/SenseNova-U1.5-8B-MoT
 - Articulo en creativeaishow: http://creativeaishow.com/sensenova-u1-5-8b-mot-the-free-apache-2-0-ai-model-that-generates-and-edits-images/

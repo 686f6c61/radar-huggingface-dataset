@@ -70,15 +70,15 @@ No se dispone de información suficiente para realizar una comparativa directa c
 - El prompt está fijo en inglés y no se documenta soporte para otros idiomas.
 - La política está especializada en la tarea de limpieza de derrames; no es un modelo generalista para otras tareas de manipulación.
 - El repositorio no especifica la licencia exacta (campo "other"), lo que puede limitar su uso comercial. Se debe contactar al autor para aclarar los términos.
-- El tamaño del repositorio en HuggingFace es de 12.4 GB, mientras que el README documenta cuatro checkpoints de ~12 GB cada uno. Esto sugiere que solo uno de los checkpoints está realmente alojado, o que el tamaño listado no refleja el contenido completo. Se recomienda verificar el contenido antes de descargar.
+- El tamaño del repositorio en Hugging Face es de 12.4 GB, mientras que el README documenta cuatro checkpoints de ~12 GB cada uno. Esto sugiere que solo uno de los checkpoints está realmente alojado, o que el tamaño listado no refleja el contenido completo. Se recomienda verificar el contenido antes de descargar.
 - La inferencia requiere JAX y openpi, lo que puede complicar el despliegue en entornos sin soporte CUDA.
 - No se han publicado evaluaciones de sesgos o alucinaciones; al ser un modelo de control robótico, el riesgo principal es la ejecución de acciones incorrectas en el mundo físico.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tennyyyin/pi05-clean-spill-dagger
+- Repositorio Hugging Face: https://huggingface.co/tennyyyin/pi05-clean-spill-dagger
 - Fork de openpi con las configuraciones de clean-spill: https://github.com/tenny-yinyijun/openpi
 - Paper de pi0.5 (arXiv): https://arxiv.org/abs/2504.16054
 - Blog de Physical Intelligence sobre pi0.5: https://www.pi.website/blog/pi05
 - PDF del paper: https://www.pi.website/download/pi05.pdf
-- Checkpoint base pi0.5 en HuggingFace (referencia): https://huggingface.co/lerobot/pi05_base
+- Checkpoint base pi0.5 en Hugging Face (referencia): https://huggingface.co/lerobot/pi05_base

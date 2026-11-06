@@ -25,7 +25,7 @@ La arquitectura es un decoder estilo Llama de 24 capas, hidden 1.536, FFN 6.144 
 
 El modelo es un decoder transformer denso de 24 capas con hidden size 1.536 y FFN de 6.144 con activación SwiGLU. La atención usa 12 cabezas de consulta y 4 cabezas KV (GQA con ratio 3:1), head dim 128, RoPE con base 10.000, RMSNorm y embeddings de entrada y salida no atados. No emplea biases ni QK-norm. El tokenizador es el vocabulario de SmolLM2 (49.152 tokens) más un token `<|pad|>`; `<|endoftext|>` actúa como token de fin de documento. La longitud de secuencia es de 4.096 tokens.
 
-El preentrenamiento usa los documentos originales de DCLM-edu durante los primeros 16.902 pasos y, durante los últimos 1.877 pasos (el cooldown), conversaciones 1PP reescritas a partir de esos mismos documentos, con la función de pérdida aplicada únicamente a los turnos del asistente. El flujo de datos está alineado por paso con el run base y cubre los primeros 18.779 pasos del stream 1PP (39,38B posiciones de token). El batch global es de 512 secuencias × 4.096 tokens con enmascaramiento de atención entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para normas), warmup de 1.181 pasos, fase constante y decaimiento lineal durante los últimos 1.877 pasos hasta 1/100, weight decay 0,1, init std 0,0103 y precisión bf16. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es 1,642 en texto de asistente, 4,079 en texto de usuario y 3,049 en texto de documento. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0014 y 0,0015 en dos conjuntos de validación.
+El preentrenamiento usa los documentos originales de DCLM-edu durante los primeros 16.902 pasos y, durante los últimos 1.877 pasos (el cooldown), conversaciones 1PP reescritas a partir de esos mismos documentos, con la función de pérdida aplicada únicamente a los turnos del asistente. El flujo de datos está alineado por paso con el run base y cubre los primeros 18.779 pasos del stream 1PP (39,38B posiciones de token). El batch global es de 512 secuencias × 4.096 tokens con enmascaramiento de atención entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) con Adam para el resto de parámetros (LR 2,3e-3 para embeddings y capa de salida, 3e-3 para normas), warmup de 1.181 pasos, fase constante y decaimiento lineal durante los últimos 1.877 pasos hasta 1/100, weight decay 0,1, init std 0,0103 y precisión bf16. La pérdida de validación del checkpoint final sobre 2.433 documentos retenidos es 1,642 en texto de asistente, 4,079 en texto de usuario y 3,049 en texto de documento. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron con una diferencia absoluta de 0,0014 y 0,0015 en dos conjuntos de validación.
 
 ## Capacidades
 
@@ -72,17 +72,17 @@ Verificación de pesos frente al checkpoint de Megatron:
 - VRAM estimada en cuantización de 8 bits: alrededor de 1 GB para pesos; en 4 bits, alrededor de 0,5 GB. No se han publicado pesos GGUF oficiales, por lo que la cuantización requeriría conversión propia.
 - GPU recomendadas para producción: A100, H100 o L40S para despliegues con concurrencia alta; una RTX 4090 o incluso una RTX 3090 es suficiente para inferencia individual.
 - Cabe en GPU consumer: sí, en cualquier GPU con al menos 4 GB de VRAM en bf16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, etc.).
-- Opciones de despliegue: `transformers` de forma nativa, text-generation-inference (etiqueta `text-generation-inference` en el repo) y endpoints compatibles de HuggingFace. Para llama.cpp u Ollama sería necesaria una conversión a GGUF no publicada por el autor.
+- Opciones de despliegue: `transformers` de forma nativa, text-generation-inference (etiqueta `text-generation-inference` en el repo) y endpoints compatibles de Hugging Face. Para llama.cpp u Ollama sería necesaria una conversión a GGUF no publicada por el autor.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `1pp-0.98b-v2-asst-rawanneal-seed1234-base` (este) | 0,98B | 4.096 | Apache 2.0 | HuggingFace | Cooldown sobre conversaciones 1PP; pérdida de asistente 1,642 |
-| `1pp-0.98b-v2-asst-seed1234-base` | 0,98B | 4.096 | Apache 2.0 | HuggingFace | Run 1PP completo sobre conversaciones |
-| `1pp-0.98b-v2-raw-seed1234-base` | 0,98B | 4.096 | Apache 2.0 | HuggingFace | Run base sin cooldown conversacional |
-| SmolLM2 (referencia de tokenizador) | no disponible | no disponible | no disponible | HuggingFace | Solo se comparte el vocabulario (49.152 tokens); no se dispone de comparación de rendimiento |
+| `1pp-0.98b-v2-asst-rawanneal-seed1234-base` (este) | 0,98B | 4.096 | Apache 2.0 | Hugging Face | Cooldown sobre conversaciones 1PP; pérdida de asistente 1,642 |
+| `1pp-0.98b-v2-asst-seed1234-base` | 0,98B | 4.096 | Apache 2.0 | Hugging Face | Run 1PP completo sobre conversaciones |
+| `1pp-0.98b-v2-raw-seed1234-base` | 0,98B | 4.096 | Apache 2.0 | Hugging Face | Run base sin cooldown conversacional |
+| SmolLM2 (referencia de tokenizador) | no disponible | no disponible | no disponible | Hugging Face | Solo se comparte el vocabulario (49.152 tokens); no se dispone de comparación de rendimiento |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento con alternativas de la misma categoría.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento con al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-rawanneal-seed1234-base
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed1234-base
 - Variante base sin cooldown conversacional: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

@@ -97,7 +97,7 @@ Solo se dispone de datos de las variantes del mismo modelo base; no hay informac
 |---|---|---|---|---|---|
 | Este build (AIconjured, NVFP4 + q3_K MID) | 27,32 B densos declarados | 262.144 tokens | GGUF mixto, 13,2 GB, 4,07 bpw | no disponible | 0 descargas, 1 like |
 | Mismo modelo en Q8_0 (referencia del autor) | 27,32 B densos declarados | 262.144 tokens | GGUF Q8_0, 29,0 GB | no disponible | usado como referencia de calidad |
-| Modelo base DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | 27,32 B densos declarados | 262.144 tokens | GGUF | no disponible | repositorio publico en HuggingFace |
+| Modelo base DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF | 27,32 B densos declarados | 262.144 tokens | GGUF | no disponible | repositorio publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -116,7 +116,7 @@ Solo se dispone de datos de las variantes del mismo modelo base; no hay informac
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/AIconjured/Qwen3.8-27B-TURBO-Fable-ColdFusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-NVFP4-Q8-Q3-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/AIconjured/Qwen3.8-27B-TURBO-Fable-ColdFusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-NVFP4-Q8-Q3-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Referencia citada en la model card (variante sin sufijo GGUF): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX
 - La busqueda web realizada no devolvio resultados relevantes sobre el modelo: los unicos enlaces encontrados correspondian a paginas de descarga de NordVPN, sin relacion con este repositorio. No se dispone de paper, blog tecnico, repositorio de codigo ni demo adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-crispr-kinetics-hpv16 es un modelo de aprendizaje profundo publicado en HuggingFace por el usuario shiyuxie, asociado al artículo "Deep Learning of CRISPR Fluorescence Kinetics for Ultrafast, Quantitative Viral Detection". No es un modelo de lenguaje: se trata de un clasificador de cinéticas de fluorescencia que analiza 15 fotogramas de un pozo de reacción RPA-CRISPR/Cas12a y predice la clase de concentración de ADN de VPH16 (NC, 10 aM, 100 aM, 1 fM) junto con un valor de concentración en escala log10.
+crispr-kinetics-hpv16 es un modelo de aprendizaje profundo publicado en Hugging Face por el usuario shiyuxie, asociado al artículo "Deep Learning of CRISPR Fluorescence Kinetics for Ultrafast, Quantitative Viral Detection". No es un modelo de lenguaje: se trata de un clasificador de cinéticas de fluorescencia que analiza 15 fotogramas de un pozo de reacción RPA-CRISPR/Cas12a y predice la clase de concentración de ADN de VPH16 (NC, 10 aM, 100 aM, 1 fM) junto con un valor de concentración en escala log10.
 
 La arquitectura es un ensemble de dos redes que comparten un backbone convolucional: una rama procesa las características de los fotogramas con una LSTM y la otra con un Transformer de 2 capas. La salida final es la media de ambas ramas, y cada rama se promedia a su vez sobre 4 volteos (test-time augmentation), lo que estabiliza la predicción. El modelo trabaja sobre recortes de 140x140 píxeles en RGB correspondientes a los fotogramas A015 a A029 (150-290 s) de cada pozo.
 
@@ -25,7 +25,7 @@ Su relevancia radica en el enfoque cuantitativo y ultrarrápido del diagnóstico
 | Resolución de entrada | 140x140 px RGB por fotograma; 15 fotogramas (A015-A029, 150-290 s) |
 | Clases de salida | NC, 10 aM, 100 aM, 1 fM |
 | Preprocesado | sustracción de `baseline_mean.npy` (imagen media de los pozos NC del conjunto de entrenamiento) |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Librería | PyTorch |
 | Autor | shiyuxie |
 | Descargas / likes | 0 / 0 |
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 ## Requisitos de hardware
 
 - No se han publicado cifras de VRAM, latencia ni throughput en la información disponible.
-- La entrada es de 15 imágenes RGB de 140x140 píxeles y el repositorio ocupa 0,0 GB según HuggingFace, lo que es coherente con un modelo de dos redes convolucionales pequeñas; por ello es razonable esperar que quepa en cualquier GPU de consumo e incluso que pueda ejecutarse en CPU, aunque esta estimación no está confirmada por el autor.
+- La entrada es de 15 imágenes RGB de 140x140 píxeles y el repositorio ocupa 0,0 GB según Hugging Face, lo que es coherente con un modelo de dos redes convolucionales pequeñas; por ello es razonable esperar que quepa en cualquier GPU de consumo e incluso que pueda ejecutarse en CPU, aunque esta estimación no está confirmada por el autor.
 - El autor no indica GPU recomendadas (A100, H100, RTX 4090 u otras) ni requisitos mínimos de memoria.
 - Opciones de despliegue: inferencia directa con PyTorch mediante `predict.py` o la clase `Ensemble`; el modelo no publica integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
 - Dependencias declaradas por el autor: `torch`, `numpy`, `pillow`, `safetensors`, `huggingface_hub`.
@@ -96,9 +96,9 @@ No se han proporcionado modelos comparables en la información disponible. No ex
 
 | Modelo | Arquitectura | Exactitud en test | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| crispr-kinetics-hpv16 (ensemble) | CNN + LSTM y CNN + Transformer, media de ambas | 93,3% (168/180) | no disponible | HuggingFace |
-| Rama LSTM | CNN + LSTM | 91,7% | no disponible | HuggingFace (`lstm/`) |
-| Rama Transformer | CNN + Transformer de 2 capas | 88,9% | no disponible | HuggingFace (`transformer/`) |
+| crispr-kinetics-hpv16 (ensemble) | CNN + LSTM y CNN + Transformer, media de ambas | 93,3% (168/180) | no disponible | Hugging Face |
+| Rama LSTM | CNN + LSTM | 91,7% | no disponible | Hugging Face (`lstm/`) |
+| Rama Transformer | CNN + Transformer de 2 capas | 88,9% | no disponible | Hugging Face (`transformer/`) |
 
 ## Limitaciones y advertencias
 
@@ -116,7 +116,7 @@ No se han proporcionado modelos comparables en la información disponible. No ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiyuxie/crispr-kinetics-hpv16
+- Modelo en Hugging Face: https://huggingface.co/shiyuxie/crispr-kinetics-hpv16
 - Artículo asociado: "Deep Learning of CRISPR Fluorescence Kinetics for Ultrafast, Quantitative Viral Detection" (detalles de cita pendientes de publicación según la model card; no disponible el enlace)
-- Repositorio de código: no disponible (el autor distribuye `modeling.py` y `predict.py` dentro del propio repositorio de HuggingFace)
+- Repositorio de código: no disponible (el autor distribuye `modeling.py` y `predict.py` dentro del propio repositorio de Hugging Face)
 - Demo: no disponible

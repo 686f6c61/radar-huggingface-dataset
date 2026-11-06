@@ -73,8 +73,8 @@ No se han publicado resultados comparativos con otros rerankers en la informaci�
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RE3RANK-Gemma-4-E2B | 5,10 B | no disponible | Reranking por atención sobre trazas | Apache-2.0 | HuggingFace, código en GitHub |
-| Qwen3-Embedding-8B | 8 B (no confirmado en la información) | no disponible | Embedding denso de primera etapa | no disponible | HuggingFace |
+| RE3RANK-Gemma-4-E2B | 5,10 B | no disponible | Reranking por atención sobre trazas | Apache-2.0 | Hugging Face, código en GitHub |
+| Qwen3-Embedding-8B | 8 B (no confirmado en la información) | no disponible | Embedding denso de primera etapa | no disponible | Hugging Face |
 | Rerankers cross-encoder clasicos | no disponible | no disponible | Clasificador de pares pregunta-pasaje | variable | variable |
 
 La comparación directa con otros rerankers no está disponible en la información proporcionada; los datos de Qwen3-Embedding-8B solo se mencionan como primer-stage retriever del que se toman los top-50 candidatos.
@@ -92,7 +92,7 @@ La comparación directa con otros rerankers no está disponible en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryehr/RE3RANK-Gemma-4-E2B
+- Hugging Face: https://huggingface.co/Ryehr/RE3RANK-Gemma-4-E2B
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Código: https://github.com/ryehr/RE3RANK
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

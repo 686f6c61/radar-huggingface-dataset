@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fadijomaa/ChatAsmar` es un modelo publicado en HuggingFace por el usuario `fadijomaa` bajo licencia Apache 2.0. La ficha del modelo (model card) no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre su entrenamiento o capacidades. El repositorio fue creado el 30 de agosto de 2026 y no registra descargas ni valoraciones. No se dispone de información adicional sobre su naturaleza, tamaño o uso previsto. Dado que no hay datos publicados, cualquier evaluación técnica resulta imposible sin acceso al contenido del repositorio.
+El modelo `fadijomaa/ChatAsmar` es un modelo publicado en Hugging Face por el usuario `fadijomaa` bajo licencia Apache 2.0. La ficha del modelo (model card) no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre su entrenamiento o capacidades. El repositorio fue creado el 30 de agosto de 2026 y no registra descargas ni valoraciones. No se dispone de información adicional sobre su naturaleza, tamaño o uso previsto. Dado que no hay datos publicados, cualquier evaluación técnica resulta imposible sin acceso al contenido del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de informacion sobre las capacidades del modelo. No se puede confi
 
 ## Casos de uso
 
-No se pueden enumerar casos de uso concretos debido a la falta de informacion sobre el modelo. Cualquier aplicacion practica seria especulativa y no esta respaldada por datos publicados. Se recomienda consultar el repositorio de HuggingFace para obtener mas detalles antes de considerar su uso.
+No se pueden enumerar casos de uso concretos debido a la falta de informacion sobre el modelo. Cualquier aplicacion practica seria especulativa y no esta respaldada por datos publicados. Se recomienda consultar el repositorio de Hugging Face para obtener mas detalles antes de considerar su uso.
 
 ## Benchmarks y rendimiento
 
@@ -51,4 +51,4 @@ No disponible. Al no existir informacion sobre el modelo, no es posible comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fadijomaa/ChatAsmar
+- Repositorio en Hugging Face: https://huggingface.co/fadijomaa/ChatAsmar

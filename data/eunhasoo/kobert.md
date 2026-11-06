@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`eunhasoo/kobert` es un modelo de clasificacion de texto obtenido mediante fine-tuning de `skt/kobert-base-v1`, el BERT especializado en coreano desarrollado por SK Telecom (T-Brain). El autor del ajuste es el usuario de HuggingFace `eunhasoo`, y el modelo se publica dentro del framework Transformers con pesos en formato safetensors y pipeline declarado como `text-classification`. Cuenta con 92.188.418 parametros, coherente con la variante base de KoBERT (arquitectura tipo BERT, encoder denso), y un tamano de repositorio de 0,4 GB.
+`eunhasoo/kobert` es un modelo de clasificacion de texto obtenido mediante fine-tuning de `skt/kobert-base-v1`, el BERT especializado en coreano desarrollado por SK Telecom (T-Brain). El autor del ajuste es el usuario de Hugging Face `eunhasoo`, y el modelo se publica dentro del framework Transformers con pesos en formato safetensors y pipeline declarado como `text-classification`. Cuenta con 92.188.418 parametros, coherente con la variante base de KoBERT (arquitectura tipo BERT, encoder denso), y un tamano de repositorio de 0,4 GB.
 
-El modelo se ha generado automaticamente con la herramienta `Trainer` de HuggingFace, por lo que la model card esta practicamente vacia: no se documenta el conjunto de datos de entrenamiento (aparece como "None dataset"), ni el numero de clases, ni la tarea concreta, ni los idiomas, ni la licencia. El unico resultado declarado es una exactitud de 0,52 y una perdida de 0,6958 sobre un conjunto de evaluacion no especificado, tras 3 epocas de entrenamiento.
+El modelo se ha generado automaticamente con la herramienta `Trainer` de Hugging Face, por lo que la model card esta practicamente vacia: no se documenta el conjunto de datos de entrenamiento (aparece como "None dataset"), ni el numero de clases, ni la tarea concreta, ni los idiomas, ni la licencia. El unico resultado declarado es una exactitud de 0,52 y una perdida de 0,6958 sobre un conjunto de evaluacion no especificado, tras 3 epocas de entrenamiento.
 
 Su relevancia es limitada y de tipo practico: sirve como ejemplo reproducible de fine-tuning sobre KoBERT, pero al no documentar la tarea ni los datos, su utilidad directa en produccion es dudosa salvo que se conozca el contexto exacto para el que fue ajustado. La fecha de creacion registrada (2026-10-02) y el hecho de tener 0 descargas y 0 "likes" indican que es un experimento personal, no un modelo consolidado.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y de tipo practico: sirve como ejemplo reproducible de
 
 La arquitectura corresponde a la del modelo base `skt/kobert-base-v1`, un BERT especializado en coreano creado por SK Telecom para superar las limitaciones del BERT multilingue original en el procesamiento de ese idioma. Se trata de un encoder Transformer denso (no MoE, no SSM ni hibrido) con 92.188.418 parametros. El ajuste fino no modifica la topologia ni el numero de parametros, por lo que esa cifra equivale a la del modelo base. No se dispone de informacion sobre el numero de capas, dimensiones ocultas ni tamano de vocabulario en la documentacion proporcionada.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace sobre un conjunto de datos sin identificar ("None dataset"), durante 3 epocas, con tasa de aprendizaje 2e-05, tamano de lote 32 (tanto en entrenamiento como en evaluacion), semilla 42, optimizador `ADAMW_TORCH_FUSED` con betas (0,9; 0,999) y epsilon 1e-08, y planificador de tasa de aprendizaje lineal. No hay evidencia de RLHF, DPO ni de ninguna innovacion tecnica adicional. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2. La evolucion de la perdida de validacion (0,7072 en la epoca 1; 0,6908 en la epoca 2; 0,6958 en la epoca 3) y de la exactitud (0,444; 0,554; 0,52) sugiere un ajuste muy limitado y posible sobreajuste en la tercera epoca.
+El entrenamiento se realizo con el `Trainer` de Hugging Face sobre un conjunto de datos sin identificar ("None dataset"), durante 3 epocas, con tasa de aprendizaje 2e-05, tamano de lote 32 (tanto en entrenamiento como en evaluacion), semilla 42, optimizador `ADAMW_TORCH_FUSED` con betas (0,9; 0,999) y epsilon 1e-08, y planificador de tasa de aprendizaje lineal. No hay evidencia de RLHF, DPO ni de ninguna innovacion tecnica adicional. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2. La evolucion de la perdida de validacion (0,7072 en la epoca 1; 0,6908 en la epoca 2; 0,6958 en la epoca 3) y de la exactitud (0,444; 0,554; 0,52) sugiere un ajuste muy limitado y posible sobreajuste en la tercera epoca.
 
 ## Capacidades
 
@@ -74,17 +74,17 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, K
 - VRAM estimada para inferencia: en precision fp32 los 92,19 millones de parametros ocupan aproximadamente 0,37 GB, en coherencia con el tamano de repositorio de 0,4 GB. En fp16 serian unos 0,18 GB y en INT8 unos 0,09 GB. Con overhead de activaciones y runtime, el consumo real en inferencia es de aproximadamente 1-2 GB como maximo para lotes pequenos.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia. No requiere A100 ni H100. Una GTX 1660, RTX 2060, RTX 3050 o superior es mas que suficiente.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU consumer moderna, e incluso puede ejecutarse en CPU con latencias aceptables para clasificacion.
-- Opciones de despliegue: Transformers (pipeline `text-classification`), Text Generation Inference (TGI) para servir el modelo, y exportacion a ONNX Runtime o a formatos cuantizados para CPU. El tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. No se publican versiones GGUF ni de llama.cpp.
+- Opciones de despliegue: Transformers (pipeline `text-classification`), Text Generation Inference (TGI) para servir el modelo, y exportacion a ONNX Runtime o a formatos cuantizados para CPU. El tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. No se publican versiones GGUF ni de llama.cpp.
 - Latencia y throughput estimados: no disponibles. Al carecer de datos de longitud de secuencia y de hardware objetivo, no se puede estimar con rigor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eunhasoo/kobert | 92.188.418 | no disponible | exactitud 0,52 (tarea no especificada) | no disponible | HuggingFace, pipeline text-classification |
-| skt/kobert-base-v1 | 92.188.418 (equivalente al ajuste) | no disponible | no disponible | Apache 2.0 | HuggingFace (modelo base oficial) |
-| monologg/kobert | no disponible | no disponible | no disponible | no disponible | HuggingFace (conversion de KoBERT) |
-| bert-base-multilingual-cased | no disponible en esta busqueda | no disponible | no disponible | no disponible | HuggingFace (BERT multilingue de Google) |
+| eunhasoo/kobert | 92.188.418 | no disponible | exactitud 0,52 (tarea no especificada) | no disponible | Hugging Face, pipeline text-classification |
+| skt/kobert-base-v1 | 92.188.418 (equivalente al ajuste) | no disponible | no disponible | Apache 2.0 | Hugging Face (modelo base oficial) |
+| monologg/kobert | no disponible | no disponible | no disponible | no disponible | Hugging Face (conversion de KoBERT) |
+| bert-base-multilingual-cased | no disponible en esta busqueda | no disponible | no disponible | no disponible | Hugging Face (BERT multilingue de Google) |
 
 La comparacion cuantitativa con alternativas no es posible con la informacion disponible. `skt/kobert-base-v1` es el modelo base sin ajustar, por lo que no compite en la misma tarea; `monologg/kobert` es una conversion comunitaria del mismo KoBERT; y `bert-base-multilingual-cased` seria la alternativa multilingue generica, aunque su rendimiento en coreano es inferior al de KoBERT segun la documentacion oficial de SK Telecom.
 
@@ -100,7 +100,7 @@ La comparacion cuantitativa con alternativas no es posible con la informacion di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eunhasoo/kobert
+- Modelo en Hugging Face: https://huggingface.co/eunhasoo/kobert
 - Modelo base: https://huggingface.co/skt/kobert-base-v1
 - Conversion comunitaria de KoBERT: https://huggingface.co/monologg/kobert
 - Pagina oficial de KoBERT (SK Telecom, coreano): https://sktelecom.github.io/project/kobert/

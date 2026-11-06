@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`donghovietnam/madlad400-3b-mt-onnx-luca` es un espejo (mirror) alojado en HuggingFace de una conversión a ONNX con cuantización INT4 del modelo de traducción automática multilingüe `google/madlad400-3b-mt` de Google. Los ficheros originales proceden del proyecto de código abierto `niedev/OnnxModelsEnhancer`, responsable de la exportación, optimización y cuantización; el repositorio de `donghovietnam` no modifica los pesos y se publica únicamente como mirror para facilitar la descarga.
+`donghovietnam/madlad400-3b-mt-onnx-luca` es un espejo (mirror) alojado en Hugging Face de una conversión a ONNX con cuantización INT4 del modelo de traducción automática multilingüe `google/madlad400-3b-mt` de Google. Los ficheros originales proceden del proyecto de código abierto `niedev/OnnxModelsEnhancer`, responsable de la exportación, optimización y cuantización; el repositorio de `donghovietnam` no modifica los pesos y se publica únicamente como mirror para facilitar la descarga.
 
 El modelo base MADLAD-400-3B-MT cubre más de 400 idiomas y está orientado a traducción automática multilingüe. La variante aquí publicada reduce el tamaño de los pesos a aproximadamente 1,58 GB en INT4 (frente a los ~12 GB del modelo original en fp32), emplea una arquitectura ONNX personalizada con optimizaciones de KV-cache y está pensada para inferencia local y sin conexión.
 
@@ -90,7 +90,7 @@ La ventaja principal de esta variante frente al MADLAD-400-3B-MT original es el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/donghovietnam/madlad400-3b-mt-onnx-luca
+- Repositorio en Hugging Face: https://huggingface.co/donghovietnam/madlad400-3b-mt-onnx-luca
 - Modelo base: https://huggingface.co/google/madlad400-3b-mt
 - Proyecto de exportación y cuantización ONNX: https://github.com/niedev/OnnxModelsEnhancer
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes; los resultados devueltos no guardan relación con el modelo.

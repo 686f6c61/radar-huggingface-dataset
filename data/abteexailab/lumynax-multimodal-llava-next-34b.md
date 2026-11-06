@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- [HuggingFace - AbteeXAILab/lumynax-multimodal-llava-next-34b](https://huggingface.co/AbteeXAILab/lumynax-multimodal-llava-next-34b)
+- [Hugging Face - AbteeXAILab/lumynax-multimodal-llava-next-34b](https://huggingface.co/AbteeXAILab/lumynax-multimodal-llava-next-34b)
 - [Repositorio GitHub (espejo del scaffolding)](https://github.com/Aimaghsoodi/lumynax-multimodal-llava-next-34b)
 - [AbteeX AI Labs](https://abteex.com)
 - [LumynaX](https://lumynax.com)

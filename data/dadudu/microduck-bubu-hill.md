@@ -18,14 +18,14 @@ Su relevancia es acotada pero concreta: es un artefacto pequeño, aislado del re
 | Longitud de contexto | no aplica; la entrada es una observación de 61 dimensiones por paso, sin ventana de contexto textual |
 | Tipos de cuantización | no disponible; se distribuye un `policy.onnx` en el formato exportado por el autor |
 | Idiomas soportados | no aplica (no procesa lenguaje natural) |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | ONNX (`policy.onnx`) + `manifest.json` conforme al esquema 2 del manifiesto de políticas de microduck |
 | Espacio de observación | 61 dimensiones, con normalizador integrado en el propio ONNX (se alimentan observaciones en crudo) |
 | Espacio de acción | 14 dimensiones |
 | Frecuencia de control | 50 Hz |
 | Tipo de política | perpetua: ejecuta la marcha de forma continua hasta recibir una orden distinta |
 | Librería / pipeline | `microduck` / `robotics` |
-| Tamaño del repositorio | 0,0 GB según HuggingFace (artefacto de pocos MB) |
+| Tamaño del repositorio | 0,0 GB según Hugging Face (artefacto de pocos MB) |
 | Descargas / likes | 23 / 0 |
 | Fecha de creación / actualización | 2026-10-15 / 2026-10-20 |
 
@@ -70,7 +70,7 @@ No hay comparación con otras entradas del ecosistema microduck: la model card a
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. El repositorio ocupa 0,0 GB en HuggingFace, lo que sitúa el artefacto en el orden de pocos megabytes, pero no se publica el tamaño exacto del ONNX ni su huella en memoria.
+- VRAM estimada: no disponible. El repositorio ocupa 0,0 GB en Hugging Face, lo que sitúa el artefacto en el orden de pocos megabytes, pero no se publica el tamaño exacto del ONNX ni su huella en memoria.
 - GPU recomendadas: no disponible. Para una política de 61 entradas y 14 salidas a 50 Hz no se documenta ningún requisito de GPU; la inferencia puede ejecutarse en CPU, pero el autor no lo especifica.
 - Compatibilidad con GPU de consumo: no disponible. No se indica si se ha probado en RTX 4090 u otras tarjetas de consumo.
 - Opciones de despliegue: la vía documentada es el daemon de microduck mediante `robotctl policy load <slot> dadudu/microduck-bubu-hill`, con inferencia ONNX. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de artefacto; tampoco se menciona ONNX Runtime, TensorRT o TFLite de forma explícita.
@@ -80,7 +80,7 @@ No hay comparación con otras entradas del ecosistema microduck: la model card a
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dadudu/microduck-bubu-hill | Política RL (PPO + estrategias evolutivas), ONNX | no disponible | Observación de 61 dimensiones, 14 acciones, 50 Hz | 0,932 s oficial; 38/40 semillas nuevas, media 0,973 s | no disponible | HuggingFace, 23 descargas |
+| dadudu/microduck-bubu-hill | Política RL (PPO + estrategias evolutivas), ONNX | no disponible | Observación de 61 dimensiones, 14 acciones, 50 Hz | 0,932 s oficial; 38/40 semillas nuevas, media 0,973 s | no disponible | Hugging Face, 23 descargas |
 | PPO base «dive1» paso 75 (linaje propio del autor) | Política RL (PPO) | no disponible | Misma interfaz microduck | 1,224 s oficial | no disponible | No distribuido como modelo independiente en la información disponible |
 | Otras entradas del ecosistema microduck | Políticas RL para microduck | no disponible | Misma interfaz microduck | No disponible | no disponible | No disponible |
 
@@ -89,7 +89,7 @@ No se dispone de datos de terceros comparables: la model card no cita otras entr
 ## Limitaciones y advertencias
 
 - Solo simulación: el autor declara explícitamente «Simulation only». No hay evidencia de validación en hardware físico, y el rendimiento en un robot real puede degradarse por dinámica no modelada, latencias o ruido de sensores.
-- Licencia no declarada: al no especificarse licencia ni en la model card ni en los metadatos de HuggingFace, el uso comercial queda en un limbo jurídico y requiere contactar con el autor.
+- Licencia no declarada: al no especificarse licencia ni en la model card ni en los metadatos de Hugging Face, el uso comercial queda en un limbo jurídico y requiere contactar con el autor.
 - Ausencia de especificaciones de red: sin número de parámetros, capas ni tamaño del ONNX, es difícil estimar requisitos de cómputo o auditar el modelo.
 - Riesgo de sesgo de selección: la generación final se eligió sobre semillas reservadas, lo que reduce pero no elimina el sobreajuste al conjunto de evaluación descrito; el propio autor reporta 2 fallos en 40 semillas.
 - Alcance funcional mínimo: es una única marcha perpetua. No se documenta seguimiento de comandos de velocidad, cambios de dirección, respuesta a terreno irregular ni recuperación tras caídas.
@@ -100,7 +100,7 @@ No se dispone de datos de terceros comparables: la model card no cita otras entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dadudu/microduck-bubu-hill
+- Modelo en Hugging Face: https://huggingface.co/dadudu/microduck-bubu-hill
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `claude/hugging-face-model-versions-s42dvp`, commit `08c85aeb6`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (URL no disponible en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yimdev/Qwen3-test es un modelo de generacion de texto publicado en HuggingFace por el usuario yimdev, derivado mediante fine-tuning del modelo base Qwen/Qwen3-0.6B-Base. Se trata, por tanto, de un ajuste de tercera parte sobre la familia Qwen3, no de un modelo oficial de Alibaba Cloud. El repositorio ocupa 1,5 GB, esta etiquetado como `text-generation` y `conversational`, y declara licencia Apache-2.0. Acumula 175 descargas y 0 likes desde su publicacion.
+yimdev/Qwen3-test es un modelo de generacion de texto publicado en Hugging Face por el usuario yimdev, derivado mediante fine-tuning del modelo base Qwen/Qwen3-0.6B-Base. Se trata, por tanto, de un ajuste de tercera parte sobre la familia Qwen3, no de un modelo oficial de Alibaba Cloud. El repositorio ocupa 1,5 GB, esta etiquetado como `text-generation` y `conversational`, y declara licencia Apache-2.0. Acumula 175 descargas y 0 likes desde su publicacion.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un derivado pequeno y de bajo coste computacional: 751.632.384 parametros reales segun los pesos en safetensors, lo que lo situa en la gama de modelos que caben holgadamente en cualquier GPU de consumo e incluso en CPU. Por otro, la model card publicada por yimdev es una copia literal de la model card oficial de Qwen3-0.6B, incluida la referencia al repositorio `Qwen/Qwen3-0.6B` en los ejemplos de codigo, por lo que no describe las caracteristicas especificas del fine-tuning realizado.
 
@@ -26,7 +26,7 @@ El modelo hereda la arquitectura de la familia Qwen3: transformer causal denso c
 | Modelo base | Qwen/Qwen3-0.6B-Base |
 | Pipeline | text-generation |
 | Descargas / likes | 175 / 0 |
-| Fecha de creacion | 2026-09-18 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-18 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,10 +78,10 @@ La model card de este repositorio remite a la entrada de blog, al repositorio de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| yimdev/Qwen3-test | 751,6 M (0,6B nominal) | 32.768 | Apache-2.0 | HuggingFace, 175 descargas | No disponibles |
-| Qwen/Qwen2.5-0.5B | 0,49B | 32.768 | Apache-2.0 | HuggingFace, muy extendido | No incluidos aqui |
-| meta-llama/Llama-3.2-1B | 1,24B | 128.000 | Licencia comunitaria Llama 3.2 | HuggingFace, con registro | No incluidos aqui |
-| google/gemma-3-1b-it | 1B | 32.768 | Terminos de uso de Gemma | HuggingFace, con aceptacion de terminos | No incluidos aqui |
+| yimdev/Qwen3-test | 751,6 M (0,6B nominal) | 32.768 | Apache-2.0 | Hugging Face, 175 descargas | No disponibles |
+| Qwen/Qwen2.5-0.5B | 0,49B | 32.768 | Apache-2.0 | Hugging Face, muy extendido | No incluidos aqui |
+| meta-llama/Llama-3.2-1B | 1,24B | 128.000 | Licencia comunitaria Llama 3.2 | Hugging Face, con registro | No incluidos aqui |
+| google/gemma-3-1b-it | 1B | 32.768 | Terminos de uso de Gemma | Hugging Face, con aceptacion de terminos | No incluidos aqui |
 
 Nota: los datos de las filas comparativas corresponden al conocimiento general de esos modelos y no proceden de la informacion proporcionada en esta busqueda; los resultados de benchmarks no se incluyen porque no se han facilitado y no deben inferirse. En cuanto a licencia, yimdev/Qwen3-test es el unico de los cuatro con Apache-2.0 sin restricciones adicionales, lo que simplifica su uso comercial frente a las licencias comunitarias de Llama y Gemma.
 
@@ -101,7 +101,7 @@ Nota: los datos de las filas comparativas corresponden al conocimiento general d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yimdev/Qwen3-test
+- Repositorio Hugging Face: https://huggingface.co/yimdev/Qwen3-test
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo de referencia de la familia: https://huggingface.co/Qwen/Qwen3-0.6B
 - Articulo tecnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ahkfjoj es un modelo publicado en HuggingFace por el usuario matin55199 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y fue creado el 4 de noviembre de 2026.
+Ahkfjoj es un modelo publicado en Hugging Face por el usuario matin55199 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta y fue creado el 4 de noviembre de 2026.
 
 Por la ausencia total de documentación, no es posible determinar qué problema resuelve ni en qué categoría encaja (lenguaje, visión, audio u otra). Tampoco se dispone de pipeline declarado en la plataforma, lo que impide inferir la tarea para la que fue configurado. Cualquier evaluación técnica del modelo requiere inspeccionar directamente los archivos del repositorio, que no se han proporcionado en la información disponible.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un artefacto sin metadatos verificables. La ficha que si
 
 No se ha publicado información sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo híbrido. Tampoco se indica el número de parámetros, la longitud de contexto nativa ni la presencia de mecanismos como atención lineal o decodificación especulativa.
 
-En cuanto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composición del corpus, el uso de técnicas de alineación como RLHF o DPO, ni procesos de ajuste fino supervisado. Toda esta información se desconoce y no puede deducirse a partir de los metadatos disponibles en HuggingFace.
+En cuanto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composición del corpus, el uso de técnicas de alineación como RLHF o DPO, ni procesos de ajuste fino supervisado. Toda esta información se desconoce y no puede deducirse a partir de los metadatos disponibles en Hugging Face.
 
 ## Capacidades
 
@@ -79,5 +79,5 @@ No se identifican modelos comparables en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matin55199/Ahkfjoj
+- Repositorio en Hugging Face: https://huggingface.co/matin55199/Ahkfjoj
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la busqueda web.

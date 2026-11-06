@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ewrwerwerer44/MyAwesomeModel-best` es un modelo de lenguaje publicado en HuggingFace por el usuario `ewrwerwerer44`. Según la model card, se trata de una versión actualizada de "MyAwesomeModel" que, tras un proceso de post-entrenamiento con mayores recursos computacionales y optimizaciones algorítmicas, mejora significativamente la capacidad de razonamiento e inferencia en tareas de matemáticas, programación y lógica general. El autor reporta, por ejemplo, un aumento de precisión en el test AIME 2025 del 70 % al 87,5 %, atribuido a un mayor "pensamiento" durante el razonamiento (el modelo pasa de una media de 12K tokens por pregunta a 23K).
+El modelo `ewrwerwerer44/MyAwesomeModel-best` es un modelo de lenguaje publicado en Hugging Face por el usuario `ewrwerwerer44`. Según la model card, se trata de una versión actualizada de "MyAwesomeModel" que, tras un proceso de post-entrenamiento con mayores recursos computacionales y optimizaciones algorítmicas, mejora significativamente la capacidad de razonamiento e inferencia en tareas de matemáticas, programación y lógica general. El autor reporta, por ejemplo, un aumento de precisión en el test AIME 2025 del 70 % al 87,5 %, atribuido a un mayor "pensamiento" durante el razonamiento (el modelo pasa de una media de 12K tokens por pregunta a 23K).
 
-Sin embargo, la información técnica disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos descargables, y el modelo no registra descargas ni likes. El pipeline declarado es `feature-extraction`, aunque la documentación describe capacidades de chat, razonamiento y function calling. La licencia es MIT.
+Sin embargo, la información técnica disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos descargables, y el modelo no registra descargas ni likes. El pipeline declarado es `feature-extraction`, aunque la documentación describe capacidades de chat, razonamiento y function calling. La licencia es MIT.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 ## Limitaciones y advertencias
 
 - Falta de información técnica: no se especifican arquitectura, parámetros, contexto ni idiomas, lo que impide evaluar su idoneidad para casos de uso reales.
-- Repositorio sin pesos: el tamaño del repositorio es de 0.0 GB, por lo que no hay pesos descargables disponibles en HuggingFace. Esto impide su uso local sin acceso a otra fuente.
+- Repositorio sin pesos: el tamaño del repositorio es de 0.0 GB, por lo que no hay pesos descargables disponibles en Hugging Face. Esto impide su uso local sin acceso a otra fuente.
 - Benchmarks auto-reportados: las puntuaciones de la tabla de evaluación provienen del autor y no están verificadas por terceros ni comparadas con modelos de referencia.
 - Sin validación comunitaria: el modelo no tiene descargas ni likes, lo que sugiere que no ha sido probado por la comunidad.
 - Riesgo de alucinación: aunque el autor declara una reducción de alucinaciones, no se aportan datos independientes que lo confirmen.
@@ -93,6 +93,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ewrwerwerer44/MyAwesomeModel-best
+- Hugging Face: https://huggingface.co/ewrwerwerer44/MyAwesomeModel-best
 - Repositorio de código: no disponible (la model card menciona un repositorio, pero no proporciona URL).
 - Sitio web oficial: no disponible (la model card menciona un sitio web para chat y API, pero no proporciona URL).

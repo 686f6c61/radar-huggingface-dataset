@@ -59,7 +59,7 @@ No disponible. No existe ningún modelo comparable porque no hay modelo. Si se q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/calebgarcia/review-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/calebgarcia/review-vision-language-pretraining
 - Survey de VLP en arXiv: https://arxiv.org/abs/2210.09263
 - Blog de Hugging Face sobre VLMs: https://huggingface.co/blog/vlms
 - Review de VLA en arXiv: https://arxiv.org/abs/2505.04769

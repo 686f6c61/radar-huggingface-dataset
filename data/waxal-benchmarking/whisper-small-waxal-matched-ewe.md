@@ -74,12 +74,12 @@ Resultados publicados por el autor sobre el split de test de ewe de WAXAL (1891 
 
 | Modelo | Parametros | Contexto | WER ewe (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-waxal-matched-ewe (este) | 242 M | 30 s de audio | 78,7 | Apache 2.0 | HuggingFace |
-| whisper-small-waxal-loo-ewe | 242 M | 30 s de audio | 101,4 | Apache 2.0 | HuggingFace |
-| whisper-small-waxal-ewe (receta del benchmark) | 242 M | 30 s de audio | 32,3 | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s de audio | no disponible | Apache 2.0 | HuggingFace |
+| whisper-small-waxal-matched-ewe (este) | 242 M | 30 s de audio | 78,7 | Apache 2.0 | Hugging Face |
+| whisper-small-waxal-loo-ewe | 242 M | 30 s de audio | 101,4 | Apache 2.0 | Hugging Face |
+| whisper-small-waxal-ewe (receta del benchmark) | 242 M | 30 s de audio | 32,3 | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s de audio | no disponible | Apache 2.0 | Hugging Face |
 | MMS-300M | 300 M | no disponible | no disponible | no disponible | no disponible |
-| Whisper Tiny | 39 M | 30 s de audio | no disponible | Apache 2.0 | HuggingFace |
+| Whisper Tiny | 39 M | 30 s de audio | no disponible | Apache 2.0 | Hugging Face |
 
 Nota: la comparacion con MMS-300M y Whisper Tiny aparece mencionada en el material de busqueda del benchmark WAXAL, pero no se proporcionan cifras concretas de WER para ewe en la informacion disponible.
 
@@ -97,7 +97,7 @@ Nota: la comparacion con MMS-300M y Whisper Tiny aparece mencionada en el materi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-ewe
+- Modelo en Hugging Face: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-ewe
 - Modelo leave-one-out de referencia: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-loo-ewe
 - Modelo recomendado para ewe: https://huggingface.co/waxal-benchmarking/whisper-small-waxal-ewe
 - Modelo base: https://huggingface.co/openai/whisper-small

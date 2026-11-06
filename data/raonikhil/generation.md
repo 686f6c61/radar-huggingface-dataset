@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raonikhil/generation` es un repositorio de HuggingFace que contiene una implementación propia de una arquitectura Swin Transformer de escala "base" (etiquetada como `swin_t`), orientada a tareas de generación. Lo publica el usuario `raonikhil` y no está asociado a ningún laboratorio o equipo de investigación identificable. Según la propia model card, no se trata de un modelo entrenado ni de una release con resultados: es un punto de partida reproducible con una configuración explícita y un checkpoint de inicialización para pruebas de humo.
+`raonikhil/generation` es un repositorio de Hugging Face que contiene una implementación propia de una arquitectura Swin Transformer de escala "base" (etiquetada como `swin_t`), orientada a tareas de generación. Lo publica el usuario `raonikhil` y no está asociado a ningún laboratorio o equipo de investigación identificable. Según la propia model card, no se trata de un modelo entrenado ni de una release con resultados: es un punto de partida reproducible con una configuración explícita y un checkpoint de inicialización para pruebas de humo.
 
 El repositorio incluye el código del modelo (`eval.py`), un `config.json` con los hiperparámetros de arquitectura, un `training_args.json` con la receta de entrenamiento por defecto (optimizador RMSprop con scheduler coseno) y un `model.safetensors` que el autor describe explícitamente como inicialización, no como pesos entrenados. No se declara ninguna puntuación de benchmark.
 
@@ -82,10 +82,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No se declaran idiomas soportados, lo que impide evaluar capacidades multilingües.
 - No hay benchmarks ni métricas de calidad; cualquier afirmación de rendimiento sería inventada.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero la model card recuerda revisar por separado los términos de los datos de origen si se usan datasets externos.
-- Las APIs automáticas de HuggingFace (`from_pretrained` genérico) no funcionan sin adaptador; requiere código de carga a medida.
+- Las APIs automáticas de Hugging Face (`from_pretrained` genérico) no funcionan sin adaptador; requiere código de carga a medida.
 - No hay garantía de mantenimiento ni de soporte por parte del autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/raonikhil/generation
+- Repositorio en Hugging Face: https://huggingface.co/raonikhil/generation
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

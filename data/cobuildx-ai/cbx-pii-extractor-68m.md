@@ -81,7 +81,7 @@ Detalles de la evaluacion:
 
 | Modelo | Parametros | Contexto | F1 docs / messages / TRACE | Latencia (GPU, 1k tokens) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cbx-pii-extractor-68M | 68M | 7.999 tokens | 88,1 % / 91,7 % / 93,2 % | 13 ms | Apache 2.0 | HuggingFace, pesos abiertos |
+| cbx-pii-extractor-68M | 68M | 7.999 tokens | 88,1 % / 91,7 % / 93,2 % | 13 ms | Apache 2.0 | Hugging Face, pesos abiertos |
 | PII-Tracer | 596M | no disponible | 86,9 % / 82,0 % / 92,5 % | 160 ms | no disponible | Pesos abiertos |
 | GLiNER2-PII | 205M | no disponible | 80,8 % / 86,9 % / 66,2 % | 91 ms | no disponible | Pesos abiertos |
 | Presidio (spaCy lg) | – | no disponible | 82,4 % / 85,8 % / 64,7 % | 85 ms (CPU) | MIT (Presidio) | Libreria open source, basada en reglas + NER |
@@ -102,7 +102,7 @@ La familia cbx-pii-extractor ofrece ademas versiones mas ligeras: cbx-pii-extrac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-68M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-68M
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-68m
 - Version 32M: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-32M
 - Version 17M: https://huggingface.co/CobuildX-AI/cbx-pii-extractor-17M

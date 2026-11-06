@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-Labs-Dory1.0-4B es un modelo de lenguaje de aproximadamente 4.000 millones de parámetros (3.975.229.440 según los pesos en safetensors) desarrollado por NVIDIA dentro de su línea Nemotron Labs y distribuido en HuggingFace por el usuario Atomic-Germ. Su rasgo diferencial es la arquitectura "looped" o de recurrencia latente: en lugar de apilar capas únicas, el modelo reutiliza un bloque compartido de capas recurrentes aplicándolo varias veces por token, lo que permite escalar el cómputo de inferencia sin aumentar el número de parámetros.
+NVIDIA-Nemotron-Labs-Dory1.0-4B es un modelo de lenguaje de aproximadamente 4.000 millones de parámetros (3.975.229.440 según los pesos en safetensors) desarrollado por NVIDIA dentro de su línea Nemotron Labs y distribuido en Hugging Face por el usuario Atomic-Germ. Su rasgo diferencial es la arquitectura "looped" o de recurrencia latente: en lugar de apilar capas únicas, el modelo reutiliza un bloque compartido de capas recurrentes aplicándolo varias veces por token, lo que permite escalar el cómputo de inferencia sin aumentar el número de parámetros.
 
 El modelo resuelve el problema de obtener razonamiento de mayor calidad en un footprint pequeño: un único checkpoint puede ejecutarse con distintos presupuestos de cómputo (1, 2 o 4 bucles) sin reentrenar ni cambiar de pesos, lo que lo hace atractivo para despliegues con restricciones de memoria o latencia. Emplea una arquitectura normalized-GPT (nGPT) con atención de ventana deslizante (SWA) intercalada con capas de atención completa, y soporta contextos de hasta 256K tokens.
 
@@ -74,10 +74,10 @@ Los datos muestran una mejora monótona al aumentar el número de bucles. Con 4 
 
 | Modelo | Parámetros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dory1.0-4B (4 loops) | ~4B | 256K | 61,8 | OpenMDW 1.1 | HuggingFace |
-| Qwen3.5-4B | ~4B | No disponible | 54,7 | No disponible | HuggingFace |
-| Qwen3.5-9B | ~9B | No disponible | 61 | No disponible | HuggingFace |
-| Gemma 4 26B A4B | 26B (MoE, ~4B activos) | No disponible | 57,40 | No disponible | HuggingFace |
+| Dory1.0-4B (4 loops) | ~4B | 256K | 61,8 | OpenMDW 1.1 | Hugging Face |
+| Qwen3.5-4B | ~4B | No disponible | 54,7 | No disponible | Hugging Face |
+| Qwen3.5-9B | ~9B | No disponible | 61 | No disponible | Hugging Face |
+| Gemma 4 26B A4B | 26B (MoE, ~4B activos) | No disponible | 57,40 | No disponible | Hugging Face |
 
 Frente a Qwen3.5-4B, Dory1.0-4B ofrece mayor rendimiento en tareas agénticas y de código con un tamaño comparable, además de contexto de 256K y cómputo elástico. Frente a Qwen3.5-9B, iguala en SWE-bench con la mitad de parámetros. Frente a Gemma 4 26B A4B, queda por debajo en Terminal-Bench y SciCode pero con un footprint mucho menor en memoria. La comparativa se limita a los datos publicados en la model card; no se dispone de información sobre contexto o licencia de los modelos comparados.
 
@@ -89,12 +89,12 @@ Frente a Qwen3.5-4B, Dory1.0-4B ofrece mayor rendimiento en tareas agénticas y 
 - El rendimiento depende críticamente del número de bucles configurado; con 1 bucle cae notablemente en tareas agénticas (50,3 frente a 61,8 en SWE-bench Verified).
 - Los resultados de benchmarks son los reportados por el autor; no se dispone de verificación independiente en la información proporcionada.
 - Licencia OpenMDW 1.1: permite uso comercial, pero conviene revisar los términos completos del acuerdo antes de desplegar.
-- El repositorio de HuggingFace no registra descargas ni likes en el momento de la consulta, lo que sugiere una distribución reciente o de nicho; la comunidad y el soporte pueden ser escasos.
+- El repositorio de Hugging Face no registra descargas ni likes en el momento de la consulta, lo que sugiere una distribución reciente o de nicho; la comunidad y el soporte pueden ser escasos.
 - Fechas de corte de datos: preentrenamiento septiembre de 2025, postentrenamiento mayo de 2026; el conocimiento del modelo no va más allá de esas fechas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atomic-Germ/NVIDIA-Nemotron-Labs-Dory1.0-4B
+- Hugging Face: https://huggingface.co/Atomic-Germ/NVIDIA-Nemotron-Labs-Dory1.0-4B
 - Página de desarrolladores de NVIDIA Nemotron: https://developer.nvidia.com/nemotron
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Texto de la licencia OpenMDW 1.1: https://raw.githubusercontent.com/OpenMDW/OpenMDW/refs/heads/main/1.1/LICENSE.OpenMDW-1.1

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`arjunraobiw/generation` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un transformer minúsculo al que su autor denomina Tiny Transformer, orientado a la tarea de generación de texto. No se trata de un modelo preentrenado ni de un lanzamiento listo para producción: la propia model card indica explícitamente que el peso incluido (`model.safetensors`) es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint entrenado ni evaluado con benchmarks. El recuento real de parámetros en safetensors es de 16.576, lo que lo sitúa en la categoría de modelo de juguete o educativo.
+`arjunraobiw/generation` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un transformer minúsculo al que su autor denomina Tiny Transformer, orientado a la tarea de generación de texto. No se trata de un modelo preentrenado ni de un lanzamiento listo para producción: la propia model card indica explícitamente que el peso incluido (`model.safetensors`) es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint entrenado ni evaluado con benchmarks. El recuento real de parámetros en safetensors es de 16.576, lo que lo sitúa en la categoría de modelo de juguete o educativo.
 
-El desarrollo corre a cargo del usuario `arjunraobiw`, sin organización detrás ni documentación de datos de entrenamiento, número de tokens o proceso de alineación. El repositorio se publica con licencia MIT y sin pipeline declarado en HuggingFace, lo que implica que las APIs automáticas de carga de la librería `transformers` no pueden instanciarlo sin escribir un adaptador explícito.
+El desarrollo corre a cargo del usuario `arjunraobiw`, sin organización detrás ni documentación de datos de entrenamiento, número de tokens o proceso de alineación. El repositorio se publica con licencia MIT y sin pipeline declarado en Hugging Face, lo que implica que las APIs automáticas de carga de la librería `transformers` no pueden instanciarlo sin escribir un adaptador explícito.
 
 Su relevancia actual es acotada pero concreta: sirve como artefacto de referencia para revisar una implementación personalizada con atención multi-query, fusión tipo Tucker, activación GELU y normalización GroupNorm, y como fixture determinista para pruebas de integración en pipelines de entrenamiento. El repositorio se creó y actualizó el 9 de octubre de 2026, con cero descargas y cero likes en el momento de redactar esta ficha.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 MB en FP32, dado que el modelo tiene 16.576 parámetros (aproximadamente 66 KB de pesos en FP32, más estados intermedios y activaciones despreciables).
 - GPU recomendadas: cualquiera disponible; el modelo es ejecutable en CPU sin penalización práctica. No tiene sentido asignarle una A100, H100 o RTX 4090 por capacidad de cómputo.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer e incluso en entornos sin GPU.
-- Opciones de despliegue: PyTorch nativo ejecutando `model.py`; llama.cpp, Ollama, vLLM y TGI no son aplicables directamente sin exportar la arquitectura personalizada, ya que no existe pipeline declarado en HuggingFace y la model card indica que las APIs genéricas de carga requieren un adaptador explícito.
+- Opciones de despliegue: PyTorch nativo ejecutando `model.py`; llama.cpp, Ollama, vLLM y TGI no son aplicables directamente sin exportar la arquitectura personalizada, ya que no existe pipeline declarado en Hugging Face y la model card indica que las APIs genéricas de carga requieren un adaptador explícito.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No disponible. No se puede establecer una comparativa cuantitativa fiable porque
 - No se ha auditado el modelo en robustez, equidad ni transferencia de dominio, según declara el propio autor.
 - No existen benchmarks, métricas publicadas ni conjunto de evaluación de referencia.
 - La longitud de contexto, el vocabulario, la tokenización y los idiomas soportados no están documentados.
-- No hay pipeline declarado en HuggingFace, por lo que las rutas de carga automática fallarán sin un adaptador propio.
+- No hay pipeline declarado en Hugging Face, por lo que las rutas de carga automática fallarán sin un adaptador propio.
 - La fecha de creación registrada (9 de octubre de 2026) es posterior a la fecha habitual de publicación, un detalle a verificar si se cita el repositorio.
 - La licencia MIT permite uso comercial, modificación y redistribución sin obligación de publicar derivados, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con datasets externos.
 - El repositorio tiene cero descargas y cero likes, sin evidencia de uso ni validación por terceros.
@@ -77,8 +77,8 @@ No disponible. No se puede establecer una comparativa cuantitativa fiable porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arjunraobiw/generation
+- Modelo en Hugging Face: https://huggingface.co/arjunraobiw/generation
 - Paper: no disponible
 - Blog o articulo tecnico del autor: no disponible
-- Repositorio de codigo independiente: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace como `model.py`)
+- Repositorio de codigo independiente: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face como `model.py`)
 - Demo: no disponible

@@ -88,7 +88,7 @@ Las alternativas de otros desarrolladores con arquitectura híbrida SSM/MoE y mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-Abliterated-APEX-I-NanoPlus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-Abliterated-APEX-I-NanoPlus-GGUF
 - Modelo base abliterated: https://huggingface.co/distributedcognition/MiniCPM-V-4.7-35B-A3B-abliterated
 - Modelo original: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Variante MiniPlus V2.1: https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-Abliterated-APEX-I-MiniPlus-V2.1-GGUF

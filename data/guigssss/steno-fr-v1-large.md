@@ -101,7 +101,7 @@ No se han publicado en la información disponible comparaciones directas con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guigssss/steno-fr-v1-large
+- Modelo en Hugging Face: https://huggingface.co/guigssss/steno-fr-v1-large
 - Versión base: https://huggingface.co/guigssss/steno-fr-v1-base
 - Modelo base EmbeddingGemma 2: https://huggingface.co/google/embeddinggemma-2
 - Paquete de inferencia steno_asr: https://github.com/GuigsEvt/steno-asr

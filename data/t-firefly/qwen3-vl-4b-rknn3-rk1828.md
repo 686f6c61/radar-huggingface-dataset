@@ -82,8 +82,8 @@ La comparativa se limita al modelo original y a un modelo de tamaño similar de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t-firefly/qwen3-vl-4b-rknn3-rk1828
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/t-firefly/qwen3-vl-4b-rknn3-rk1828
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Modelo original en ModelScope: https://modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct
 - SDK RKNN3 (GitHub): https://github.com/airockchip/rknn3-toolkit
 - Wiki de Firefly para RK1820/RK1828: https://wiki.t-firefly.com/en/AIO-GS1N2-RK182X/ai_rk182x.html

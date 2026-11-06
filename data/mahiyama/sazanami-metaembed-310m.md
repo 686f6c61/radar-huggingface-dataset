@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Vectores por documento | Dimensión del vector | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sazanami-MetaEmbed-310m (este modelo) | 64 (truncable a 1/4/8/16/32) | 128 | Consulta 256+16, documento 1024+64 | MIT | HuggingFace |
-| Sazanami-ColBERT-310m | Igual al número de tokens efectivos del documento | No disponible | No disponible | No disponible | HuggingFace |
-| Sazanami-AGC-310m | Máximo 32 | No disponible | No disponible | No disponible | HuggingFace |
-| Sazanami-Embed-310m | 1 | 768 | No disponible | No disponible | HuggingFace |
+| Sazanami-MetaEmbed-310m (este modelo) | 64 (truncable a 1/4/8/16/32) | 128 | Consulta 256+16, documento 1024+64 | MIT | Hugging Face |
+| Sazanami-ColBERT-310m | Igual al número de tokens efectivos del documento | No disponible | No disponible | No disponible | Hugging Face |
+| Sazanami-AGC-310m | Máximo 32 | No disponible | No disponible | No disponible | Hugging Face |
+| Sazanami-Embed-310m | 1 | 768 | No disponible | No disponible | Hugging Face |
 
 Los cuatro modelos comparten la misma base (sbintuitions/modernbert-ja-310m) y los mismos datos de entrenamiento. La diferencia principal radica en el número de vectores por documento y en la posibilidad de truncamiento. Sazanami-ColBERT-310m está orientado a máxima precisión en documentos largos, mientras que Sazanami-Embed-310m minimiza el almacenamiento y el cálculo con un único vector de 768 dimensiones. Sazanami-MetaEmbed-310m ofrece un equilibrio ajustable entre ambos extremos.
 
@@ -91,7 +91,7 @@ Los cuatro modelos comparten la misma base (sbintuitions/modernbert-ja-310m) y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahiyama/Sazanami-MetaEmbed-310m
+- Modelo en Hugging Face: https://huggingface.co/mahiyama/Sazanami-MetaEmbed-310m
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Modelos relacionados:
   - Sazanami-ColBERT-310m: https://huggingface.co/mahiyama/Sazanami-ColBERT-310m

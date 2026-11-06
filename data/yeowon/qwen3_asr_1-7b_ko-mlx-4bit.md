@@ -91,7 +91,7 @@ La comparación cuantitativa de precisión entre estas tres variantes no está d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yeowon/qwen3_asr_1.7b_ko-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/yeowon/qwen3_asr_1.7b_ko-MLX-4bit
 - Modelo base (ajuste fino coreano): https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Paquete de inferencia: `qwen3-asr-mlx` (instalable vía pip, sin URL de repositorio indicada en la model card)

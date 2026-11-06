@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Parametros | Contexto | Fuerza documentada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Checkers-WSPForge-Russian-v2 | MLP dispersa programada, damas rusas 8×8 | 125.151 no nulos (12.248.376 densos equivalentes) | no aplica | 34,96 % frente a D3; pierde la mayoria contra D3–D5 | GPL-3.0 | HuggingFace, repo de 0,0 GB |
+| Checkers-WSPForge-Russian-v2 | MLP dispersa programada, damas rusas 8×8 | 125.151 no nulos (12.248.376 densos equivalentes) | no aplica | 34,96 % frente a D3; pierde la mayoria contra D3–D5 | GPL-3.0 | Hugging Face, repo de 0,0 GB |
 | py-draughts SimpleEngine | Motor clasico de damas | no disponible | no disponible | Referencia de comparacion D3–D5 en la model card | no disponible | no disponible |
 | Checkers-WSPForge-Russian-v1 | Version anterior del mismo autor | no disponible | no aplica | 25,39 % frente a D3 | no disponible | no disponible |
 | Experimento Go de Weight-Space Programming (MIT CSAIL) | WSP sobre Go | no disponible | no aplica | No comparable directamente segun el autor | no disponible | Publicacion en blog |
@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con otros motores de damas rusa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/end000/Checkers-WSPForge-Russian-v2
+- Modelo en Hugging Face: https://huggingface.co/end000/Checkers-WSPForge-Russian-v2
 - Metodo Weight-Space Programming (blog de Rikiya Takehi): https://rikiyat.github.io/blog/weight-space-programming/
 - py-draughts (oponente de referencia citado en la model card): no se proporciona enlace en la informacion disponible
 - Paper o repositorio del experimento original de Go del MIT CSAIL: no se proporciona enlace en la informacion disponible

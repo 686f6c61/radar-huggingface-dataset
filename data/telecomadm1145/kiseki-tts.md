@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 411 M de parámetros, en FP32 el peso ocupa ~1,6 GB; en FP16 ~0,8 GB. Considerando activaciones y overhead, una GPU con 4 GB de VRAM es suficiente para inferencia en lote pequeño.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, por ejemplo NVIDIA GTX 1650, RTX 2060, RTX 3060, o superiores. También puede ejecutarse en CPU para tareas no interactivas, aunque con mayor latencia.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de gama media y baja gracias a su tamaño reducido y al decoder SSM que no requiere caché KV.
-- Opciones de despliegue: al ser un modelo de transformers con `trust_remote_code`, se puede cargar con la librería `transformers` de HuggingFace. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama; el despliegue típico sería mediante un script Python con PyTorch.
+- Opciones de despliegue: al ser un modelo de transformers con `trust_remote_code`, se puede cargar con la librería `transformers` de Hugging Face. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama; el despliegue típico sería mediante un script Python con PyTorch.
 - Latencia y throughput: no se proporcionan cifras exactas, pero la arquitectura de 12,5 Hz y el decoder de 6 capas sugieren una latencia por frame muy baja; la generación de 10 segundos de audio requiere 125 pasos del tronco del decoder.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con otros modelos TTS en la informació
 
 ## Enlaces
 
-- [HuggingFace: telecomadm1145/Kiseki-TTS](https://huggingface.co/telecomadm1145/Kiseki-TTS)
+- [Hugging Face: telecomadm1145/Kiseki-TTS](https://huggingface.co/telecomadm1145/Kiseki-TTS)
 - [Modelo base: telecomadm1145/Kiseki-1.1-0.3B](https://huggingface.co/telecomadm1145/Kiseki-1.1-0.3B)
 - [Codec de audio: Qwen/Qwen3-TTS-Tokenizer-12Hz](https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz)
 - [Dataset de entrenamiento: telecomadm1145/asmr_archive_qwentts_encoded](https://huggingface.co/datasets/telecomadm1145/asmr_archive_qwentts_encoded)

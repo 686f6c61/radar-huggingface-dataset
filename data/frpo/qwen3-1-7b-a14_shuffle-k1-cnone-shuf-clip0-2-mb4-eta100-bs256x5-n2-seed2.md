@@ -28,7 +28,7 @@ El entrenamiento se realizó con el framework verl, especializado en RL para LLM
 ## Capacidades
 
 - Generación de texto (pipeline `text-generation`).
-- Conversacional (tag `conversational` en HuggingFace).
+- Conversacional (tag `conversational` en Hugging Face).
 - No se documentan capacidades específicas adicionales como razonamiento avanzado, generación de código, matemáticas, tool calling o soporte multimodal. Al ser un fine-tuning RL sobre Qwen3-1.7B, hereda las capacidades generales del modelo base, pero no hay datos que lo confirmen en esta ficha.
 
 ## Casos de uso
@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/FRPO/qwen3-1.7b-a14_shuffle-k1-cNone-shuf-clip0.2-mb4-eta100-bs256x5-n2-seed2)
+- [Repositorio Hugging Face](https://huggingface.co/FRPO/qwen3-1.7b-a14_shuffle-k1-cNone-shuf-clip0.2-mb4-eta100-bs256x5-n2-seed2)
 - [Framework verl](https://github.com/volcengine/verl)
 - [Modelo base Qwen/Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B) (enlace inferido, no incluido en la información proporcionada)

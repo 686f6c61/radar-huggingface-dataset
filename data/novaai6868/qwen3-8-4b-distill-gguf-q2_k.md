@@ -79,7 +79,7 @@ La comparativa se basa únicamente en datos públicos de arquitectura y licencia
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/NovaAI6868/Qwen3.8-4B-Distill-GGUF-Q2_K
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/NovaAI6868/Qwen3.8-4B-Distill-GGUF-Q2_K
 - Modelo base cuantizado (empero-ai): https://huggingface.co/empero-ai/Qwen3.8-4B-Distill-GGUF
 - Modelo base original (empero-ai): https://huggingface.co/empero-ai/Qwen3.8-4B
 - Repositorio oficial de la serie Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8

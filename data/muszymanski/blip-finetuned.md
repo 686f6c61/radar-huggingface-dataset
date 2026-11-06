@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muszymanski/blip-finetuned` es un repositorio de HuggingFace publicado por el usuario muszymanski que contiene una implementación funcional de una arquitectura Blip orientada a la tarea de *matching* (emparejamiento, típicamente imagen-texto), configurada a escala *tiny*. A pesar del nombre del repositorio, el propio autor indica explícitamente que no se trata de un modelo entrenado: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no un checkpoint con resultados de benchmark. El repositorio se presenta como un punto de partida reproducible y transparente, sin ninguna métrica de rendimiento declarada.
+`muszymanski/blip-finetuned` es un repositorio de Hugging Face publicado por el usuario muszymanski que contiene una implementación funcional de una arquitectura Blip orientada a la tarea de *matching* (emparejamiento, típicamente imagen-texto), configurada a escala *tiny*. A pesar del nombre del repositorio, el propio autor indica explícitamente que no se trata de un modelo entrenado: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no un checkpoint con resultados de benchmark. El repositorio se presenta como un punto de partida reproducible y transparente, sin ninguna métrica de rendimiento declarada.
 
 La relevancia de esta ficha es fundamentalmente metodológica: el repositorio documenta la configuración de arquitectura (atención de ventana deslizante, fusión bilineal, activación ReLU, normalización BatchNorm) y una receta de entrenamiento por defecto (optimizador RMSprop con planificador coseno), pero el autor advierte que esos valores son puntos de partida en el script y no evidencia de un entrenamiento completado. Cualquier evaluación seria requiere, según la propia model card, un conjunto de validación emparejado, al menos tres semillas aleatorias y una línea base de capacidad equivalente.
 
@@ -21,10 +21,10 @@ Los metadatos de safetensors indican 33.088 parámetros totales y un tamaño de 
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors |
 | Tarea declarada | *matching* (etiqueta `matching` en los metadatos) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / *likes* | 0 / 0 |
-| Fecha de publicación | 14 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 14 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Archivos incluidos | `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` |
 | Estado del checkpoint | inicialización para pruebas de humo; no entrenado ni auditado |
 
@@ -34,7 +34,7 @@ La arquitectura declarada es Blip, en una configuración *tiny* definida por el 
 
 En cuanto al entrenamiento, la model card describe una receta de experimento por defecto basada en el optimizador RMSprop con un planificador de tasa de aprendizaje coseno. El autor insiste en que estos son valores iniciales del script y no la evidencia de una ejecución completada. No se documentan tokens de entrenamiento, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones, porque el checkpoint publicado no ha sido entrenado. La model card tampoco declara innovaciones técnicas adicionales más allá de los componentes arquitectónicos citados.
 
-Un detalle técnico relevante para la integración: al tratarse de una implementación personalizada, las API genéricas de carga automática de HuggingFace (`AutoModel`, `from_pretrained` sin más) requieren un adaptador explícito antes de poder usarse. El autor recomienda inspeccionar el bloque `__main__` del script para localizar el ejemplo de prueba de humo generado.
+Un detalle técnico relevante para la integración: al tratarse de una implementación personalizada, las API genéricas de carga automática de Hugging Face (`AutoModel`, `from_pretrained` sin más) requieren un adaptador explícito antes de poder usarse. El autor recomienda inspeccionar el bloque `__main__` del script para localizar el ejemplo de prueba de humo generado.
 
 ## Capacidades
 
@@ -76,9 +76,9 @@ No se dispone de datos verificados de parámetros, contexto o rendimiento de las
 
 | Modelo | Naturaleza | Estado del checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `muszymanski/blip-finetuned` | Implementación Blip personalizada a escala *tiny*, tarea de *matching* | Inicialización para pruebas de humo; sin entrenar | BSD-3-Clause | Repositorio de HuggingFace, 0 descargas |
-| Salesforce BLIP (original) | Familia visión-lenguaje con variantes de *captioning* y *matching* imagen-texto | Checkpoints entrenados y publicados por el autor original | no disponible en esta información | Repositorio público de HuggingFace |
-| Otros modelos de emparejamiento imagen-texto (por ejemplo, la familia CLIP) | Codificadores duales para similitud imagen-texto | Checkpoints entrenados | no disponible en esta información | Repositorio público de HuggingFace |
+| `muszymanski/blip-finetuned` | Implementación Blip personalizada a escala *tiny*, tarea de *matching* | Inicialización para pruebas de humo; sin entrenar | BSD-3-Clause | Repositorio de Hugging Face, 0 descargas |
+| Salesforce BLIP (original) | Familia visión-lenguaje con variantes de *captioning* y *matching* imagen-texto | Checkpoints entrenados y publicados por el autor original | no disponible en esta información | Repositorio público de Hugging Face |
+| Otros modelos de emparejamiento imagen-texto (por ejemplo, la familia CLIP) | Codificadores duales para similitud imagen-texto | Checkpoints entrenados | no disponible en esta información | Repositorio público de Hugging Face |
 
 La diferencia funcional clave no es de tamaño ni de arquitectura, sino de estado: este repositorio publica un esqueleto reproducible sin entrenamiento, mientras que las alternativas citadas publican pesos entrenados. La comparación de rendimiento entre ambos tipos de artefacto no es significativa y el autor no la plantea.
 
@@ -97,6 +97,6 @@ La diferencia funcional clave no es de tamaño ni de arquitectura, sino de estad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muszymanski/blip-finetuned
+- Modelo en Hugging Face: https://huggingface.co/muszymanski/blip-finetuned
 - Referencia externa sobre la arquitectura BLIP (no citada en la información proporcionada): https://arxiv.org/abs/2201.12086
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo, su autor o su arquitectura; los resultados obtenidos correspondían a contenidos sin relación (letras de canciones) y se descartan.

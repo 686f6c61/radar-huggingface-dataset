@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada: no disponible oficialmente; el ejemplo de inferencia carga el modelo base en 4-bit con bitsandbytes, lo que reduce el consumo de VRAM, pero no se proporciona una cifra exacta.
 - GPU recomendadas: no especificadas. Por el tamaño del modelo base de 8B en 4-bit, es viable en GPUs de consumo con al menos 12 GB de VRAM, como una RTX 3090 o RTX 4090, aunque esta es una estimación no confirmada por el autor.
-- Opciones de despliegue: el código de ejemplo utiliza `unsloth` (FastLanguageModel) y `PEFT` para cargar el adaptador. También es compatible con la biblioteca HuggingFace Transformers junto con PEFT. No se documentan vLLM, Ollama ni TGI.
+- Opciones de despliegue: el código de ejemplo utiliza `unsloth` (FastLanguageModel) y `PEFT` para cargar el adaptador. También es compatible con la biblioteca Hugging Face Transformers junto con PEFT. No se documentan vLLM, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -61,8 +61,8 @@ No se dispone de información sobre modelos comparables específicos en los dato
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B (base) | Modelo completo | ~8.000 millones | No disponible en esta informacion | Apache 2.0 | HuggingFace |
-| Qwen3-8B Drug-Reviewer LoRA | Adaptador LoRA | ~42 millones entrenables | No disponible en esta informacion (usa 1536 en el ejemplo) | Apache 2.0 | HuggingFace |
+| Qwen3-8B (base) | Modelo completo | ~8.000 millones | No disponible en esta informacion | Apache 2.0 | Hugging Face |
+| Qwen3-8B Drug-Reviewer LoRA | Adaptador LoRA | ~42 millones entrenables | No disponible en esta informacion (usa 1536 en el ejemplo) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables específicos en los dato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chenhaodev/qwen3-8b-drug-reviewer-lora
+- Repositorio en Hugging Face: https://huggingface.co/chenhaodev/qwen3-8b-drug-reviewer-lora
 - Model card del repositorio: https://huggingface.co/chenhaodev/qwen3-8b-drug-reviewer-lora/tree/main
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información proporcionada.

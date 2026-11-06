@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smikhailov2004/matching` es un prototipo de investigación publicado en HuggingFace por el usuario smikhailov2004. Se presenta como una implementación de arquitectura MobileViT orientada a una tarea de *matching* (emparejamiento), aunque la model card no especifica qué tipo de emparejamiento (visual, textual, multimodal) ni el dominio de aplicación. El repositorio contiene únicamente un checkpoint de inicialización, no un modelo entrenado ni evaluado.
+`smikhailov2004/matching` es un prototipo de investigación publicado en Hugging Face por el usuario smikhailov2004. Se presenta como una implementación de arquitectura MobileViT orientada a una tarea de *matching* (emparejamiento), aunque la model card no especifica qué tipo de emparejamiento (visual, textual, multimodal) ni el dominio de aplicación. El repositorio contiene únicamente un checkpoint de inicialización, no un modelo entrenado ni evaluado.
 
 El modelo se distribuye con licencia Apache 2.0, formato de pesos safetensors y un total de 49.600 parámetros según los metadatos del repositorio, lo que lo sitúa en la categoría de modelo *tiny* (dimensiones de juguete, aptas para pruebas de humo). No se han publicado resultados de benchmarks, ni datos sobre el conjunto de entrenamiento, ni información sobre idiomas soportados.
 
@@ -70,12 +70,12 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No se ha auditado robustez, equidad ni transferencia de dominio; el autor lo describe como punto de partida experimental.
 - Riesgo de alucinación y sesgos: no evaluables, al no existir un modelo entrenado sobre el que medirlos.
 - No se especifican idiomas soportados ni longitud de contexto, lo que impide planificar su uso en producción.
-- La implementación es personalizada: las APIs automáticas de carga de HuggingFace requieren un adaptador explícito.
+- La implementación es personalizada: las APIs automáticas de carga de Hugging Face requieren un adaptador explícito.
 - Licencia Apache 2.0 permite uso comercial del código y pesos, pero el autor advierte de revisar por separado los términos de los datos de origen si se combinan con datasets externos.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí publicados.
 - No apto para producción en su estado actual: sin métricas, sin entrenamiento y sin validación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smikhailov2004/matching
+- Repositorio en Hugging Face: https://huggingface.co/smikhailov2004/matching
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

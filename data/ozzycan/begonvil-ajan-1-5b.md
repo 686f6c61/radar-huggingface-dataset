@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Begonvil-Ajan-1.5B es un ajuste fino del modelo Qwen2.5-1.5B-Instruct desarrollado por el usuario Ozzycan (HuggingFace) como proyecto de fin de bootcamp. Se trata de un agente de recepción de hotel para el establecimiento ficticio "Begonvil Otel", entrenado para emitir respuestas en formato JSON estricto que bien invocan una herramienta (`{"dusunce", "arac", "argumanlar"}`) o bien cierran el turno con una respuesta final (`{"dusunce", "cevap"}`). El modelo trabaja exclusivamente en turco y está orientado a un bucle de agente con seis herramientas de dominio: información de habitaciones, listado, recomendación, cálculo de estancia total, tarifa de mascotas y una calculadora genérica.
+Begonvil-Ajan-1.5B es un ajuste fino del modelo Qwen2.5-1.5B-Instruct desarrollado por el usuario Ozzycan (Hugging Face) como proyecto de fin de bootcamp. Se trata de un agente de recepción de hotel para el establecimiento ficticio "Begonvil Otel", entrenado para emitir respuestas en formato JSON estricto que bien invocan una herramienta (`{"dusunce", "arac", "argumanlar"}`) o bien cierran el turno con una respuesta final (`{"dusunce", "cevap"}`). El modelo trabaja exclusivamente en turco y está orientado a un bucle de agente con seis herramientas de dominio: información de habitaciones, listado, recomendación, cálculo de estancia total, tarifa de mascotas y una calculadora genérica.
 
 Arquitectónicamente no introduce novedades: es un transformer decoder-only denso de 1.543.714.304 parámetros (1,54 B) heredado de la familia Qwen2, afinado con QLoRA (r=16) durante 2 épocas sobre un conjunto de 655 ejemplos generados a partir de datos reales de un `odamas.csv` y de búsquedas semánticas sobre una guía del hotel. La pérdida se calcula únicamente sobre la salida del asistente.
 
@@ -103,12 +103,12 @@ La comparación de rendimiento con estas alternativas no está disponible: no ex
 - Errores observados en la propia tabla del autor: respuestas incorrectas sobre recarga de vehículo eléctrico, bodas y datos de habitaciones, y respuestas parciales sobre desayuno y masajes.
 - Validación comunitaria nula: 0 descargas y 0 likes en el momento de la consulta, repositorio de 3,1 GB sin cuantizaciones publicadas ni demo.
 - Licencia: Apache-2.0 permite uso comercial, pero el autor no ofrece garantías y el modelo hereda los sesgos y limitaciones de Qwen2.5-1.5B-Instruct.
-- Metadatos: la fecha de creación registrada en HuggingFace es 2026-10-23, posterior a la de la mayoría de modelos de referencia; conviene verificar la vigencia del repositorio antes de dependender de él.
+- Metadatos: la fecha de creación registrada en Hugging Face es 2026-10-23, posterior a la de la mayoría de modelos de referencia; conviene verificar la vigencia del repositorio antes de dependender de él.
 - Idiomas y contexto: si se necesita español o ventanas superiores a las del modelo base, este ajuste no es la opción adecuada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ozzycan/Begonvil-Ajan-1.5B
+- Modelo en Hugging Face: https://huggingface.co/Ozzycan/Begonvil-Ajan-1.5B
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo; las entradas devueltas por el buscador corresponden a biografías y libros de Fred Sirieix y no guardan relación con el modelo.
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

@@ -69,7 +69,7 @@ No se dispone de datos de comparacion directa en la informacion proporcionada. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT
+- Modelo en Hugging Face: https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT
 - Repo GGUF: https://huggingface.co/aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF
 - Documentacion SEA-LION: https://docs.sea-lion.ai/models/sea-lion-v4/apertus-sea-lion-v4-8b
 - Repositorio GitHub de SEA-LION: https://github.com/aisingapore/sealion

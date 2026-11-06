@@ -84,7 +84,7 @@ No hay métricas publicadas que permitan comparar estas variantes entre sí ni c
 - El repositorio pesa 525,1 GB y contiene 229 archivos intermedios descartables (183 GB); descargarlo completo es costoso e innecesario si solo se buscan los modelos finales.
 - Las rutas reflejan el árbol del servidor y no son autoexplicativas; el significado real está en `MANIFEST.csv`. Renombrar archivos rompe la lógica de sincronización del autor.
 - Trampa de nomenclatura documentada: `Eng` indica inicialización desde inglés, no datos en inglés; todas las ejecuciones `HPO_*` entrenan y evalúan en árabe.
-- No hay resultados de evaluación publicados en la información disponible, ni pipeline declarado, ni idiomas listados formalmente en los metadatos de HuggingFace.
+- No hay resultados de evaluación publicados en la información disponible, ni pipeline declarado, ni idiomas listados formalmente en los metadatos de Hugging Face.
 - Sesgos potenciales: los corpus BAVED y EYASE tienen dominios, hablantes y condiciones de grabación concretos; el rendimiento puede degradarse fuera de ellos. No se documentan análisis de sesgo por género, dialecto o edad.
 - Riesgo de alucinación no aplica (no es generativo), pero sí existe riesgo de clasificación errónea de emoción en audio ruidoso o fuera de dominio.
 - Las fechas de creación y actualización del repositorio (2026) figuran tal cual en los metadatos proporcionados.
@@ -93,7 +93,7 @@ No hay métricas publicadas que permitan comparar estas variantes entre sí ni c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nomeda-lab/taffc-arabic-checkpoints
+- Hugging Face: https://huggingface.co/nomeda-lab/taffc-arabic-checkpoints
 - Manifiesto de checkpoints: https://huggingface.co/nomeda-lab/taffc-arabic-checkpoints/blob/main/MANIFEST.csv
 - Paper de referencia (citado en la model card, sin enlace directo): "Adaptive WavLM-HuBERT Fusion Mechanism for Cross-Lingual Speech Emotion Recognition: English-to-Arabic Transfer Learning", IEEE TAFFC, en revisión mayor.
 - Búsqueda web: no se han encontrado resultados relevantes; las consultas devolvieron contenido no relacionado (Reddit, Zhihu) sin vínculo con el modelo.

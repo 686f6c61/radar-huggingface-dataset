@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-abliterated-v1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-abliterated-v1-GGUF
 - Modelo base: https://huggingface.co/wangzhang/Qwen3.5-122B-A10B-abliterix
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-abliterated-v1-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-122B-A10B-abliterated-v1-GGUF

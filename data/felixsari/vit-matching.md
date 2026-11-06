@@ -2,7 +2,7 @@
 
 ## Resumen
 
-felixsari/vit-matching es un prototipo de investigación publicado en HuggingFace por el usuario felixsari. Se presenta como un Vision Transformer (ViT) orientado a tareas de matching, con una configuración denominada large, atención grouped query, fusión de bajo rango, activación swish y normalización scalenorm. El repositorio incluye train.py, config.json, training_args.json y model.safetensors, pero el propio autor indica que el checkpoint es una inicialización para pruebas de humo y no un modelo entrenado ni evaluado.
+felixsari/vit-matching es un prototipo de investigación publicado en Hugging Face por el usuario felixsari. Se presenta como un Vision Transformer (ViT) orientado a tareas de matching, con una configuración denominada large, atención grouped query, fusión de bajo rango, activación swish y normalización scalenorm. El repositorio incluye train.py, config.json, training_args.json y model.safetensors, pero el propio autor indica que el checkpoint es una inicialización para pruebas de humo y no un modelo entrenado ni evaluado.
 
 El dato más relevante es la discrepancia entre la etiqueta large y el recuento real declarado en safetensors: 24.832 parámetros totales (veinticuatro mil ochocientos treinta y dos), un tamaño propio de un modelo de juguete, no de un ViT grande. No se documentan dataset, tokens de entrenamiento, resolución de entrada, idiomas ni resultados de benchmarks. Por tanto, su interés actual es como andamiaje reproducible para experimentos de arquitectura y para probar pipelines, no como modelo listo para producción.
 
@@ -20,7 +20,7 @@ La licencia es BSD-3-Clause y el repositorio registra 0 descargas y 0 likes en e
 | Idiomas soportados | no disponible; es un modelo de visión y no se declara procesamiento de texto |
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors; código PyTorch en train.py; configuración en config.json y training_args.json |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 | Tamaño del repositorio | 0.0 GB |
 
@@ -45,7 +45,7 @@ El checkpoint de 24.832 parámetros es una inicialización válida para smoke te
 
 - Pruebas de humo en integración continua: cargar model.safetensors y ejecutar train.py --help para verificar que el entorno PyTorch, las dependencias y las formas del checkpoint son coherentes; el tamaño de 24.832 parámetros permite hacerlo en CPU y con coste despreciable.
 - Banco de pruebas de arquitectura ViT: modificar config.json para experimentar con grouped query attention, fusión low rank o scalenorm y medir el coste de cada variante; es adecuado porque el repositorio está planteado como prototipo de investigación y no como modelo final.
-- Desarrollo de un adaptador para AutoModel: implementar un wrapper que traduzca la configuración personalizada a las APIs estándar de HuggingFace; el autor indica explícitamente que las APIs automáticas genéricas necesitan un adaptador.
+- Desarrollo de un adaptador para AutoModel: implementar un wrapper que traduzca la configuración personalizada a las APIs estándar de Hugging Face; el autor indica explícitamente que las APIs automáticas genéricas necesitan un adaptador.
 - Reproducción de la receta de entrenamiento: usar SGD con scheduler cosine, una validación emparejada, al menos tres semillas y una baseline de capacidad equivalente; es el procedimiento que el propio repositorio recomienda para obtener una evaluación mínimamente fiable.
 - Evaluación de robustez y transferencia de dominio: una vez entrenado, someterlo a un conjunto de validación emparejado y a pruebas de dominio cruzado; el checkpoint actual no está auditado para robustez, equidad ni transferencia.
 - Docencia y estudio de ViT para matching: el código y la configuración son compactos y permiten ilustrar cómo se ensambla un ViT con atención grouped query y fusión de bajo rango; es adecuado por su tamaño reducido y su carácter experimental.

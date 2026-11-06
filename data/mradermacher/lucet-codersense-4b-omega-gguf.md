@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucet-CoderSense-4B-Omega es un modelo de lenguaje de 4.112.079.360 parámetros (aproximadamente 4,1 mil millones) desarrollado por el usuario mohommed y publicado originalmente en HuggingFace. Esta ficha concreta corresponde a la versión cuantizada en formato GGUF elaborada por mradermacher, un conocido creador de cuantizaciones estáticas para la comunidad de inferencia local. El modelo se presenta con etiquetas que sugieren capacidades multimodales (visión y audio), atención híbrida, modos de razonamiento "system-1" y "system-2", y orientación a tareas de código y agentes.
+Lucet-CoderSense-4B-Omega es un modelo de lenguaje de 4.112.079.360 parámetros (aproximadamente 4,1 mil millones) desarrollado por el usuario mohommed y publicado originalmente en Hugging Face. Esta ficha concreta corresponde a la versión cuantizada en formato GGUF elaborada por mradermacher, un conocido creador de cuantizaciones estáticas para la comunidad de inferencia local. El modelo se presenta con etiquetas que sugieren capacidades multimodales (visión y audio), atención híbrida, modos de razonamiento "system-1" y "system-2", y orientación a tareas de código y agentes.
 
 La relevancia de esta ficha radica en que ofrece el modelo en un rango de cuantizaciones que va desde Q2_K (1,9 GB) hasta f16 (8,3 GB), lo que permite desplegarlo en hardware de consumo. Sin embargo, la información técnica disponible es muy limitada: la model card del cuantizador no incluye detalles sobre arquitectura interna, datos de entrenamiento, longitud de contexto ni resultados de benchmarks, y el repositorio no registra descargas en el momento de la consulta.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un modelo de nicho, con licencia Apache 2.0 y soporte de
 
 No se dispone de información detallada sobre la arquitectura interna. Las etiquetas del repositorio mencionan "hybrid-attention", lo que sugiere una combinación de mecanismos de atención (posiblemente atención lineal o ventanas deslizantes junto con atención completa), pero no se especifica la proporción ni el diseño exacto. Tampoco se documenta si se trata de un transformer denso convencional o de una variante híbrida con componentes SSM.
 
-Respecto al entrenamiento, la model card no aporta datos sobre el volumen de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Las etiquetas "system-1" y "system-2" sugieren la presencia de modos de razonamiento diferenciados (rápido frente a deliberativo), y "7-senses" junto con "vision" y "audio" apuntan a capacidades multimodales, pero no hay documentación técnica que respalde ni cuantifique estas afirmaciones. La información sobre el proceso de cuantización sí es explícita: se generaron cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1) a partir de la conversión del modelo en formato HuggingFace a GGUF.
+Respecto al entrenamiento, la model card no aporta datos sobre el volumen de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Las etiquetas "system-1" y "system-2" sugieren la presencia de modos de razonamiento diferenciados (rápido frente a deliberativo), y "7-senses" junto con "vision" y "audio" apuntan a capacidades multimodales, pero no hay documentación técnica que respalde ni cuantifique estas afirmaciones. La información sobre el proceso de cuantización sí es explícita: se generaron cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1) a partir de la conversión del modelo en formato Hugging Face a GGUF.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucet-CoderSense-4B-Omega (GGUF) | ~4,1 B | no disponible | Apache 2.0 | GGUF | HuggingFace (mradermacher) |
-| Qwen2.5-Coder-3B | ~3 B | 32 K (típico en la familia) | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Llama-3.2-3B | ~3 B | 128 K | Llama 3.2 Community License | safetensors, GGUF | HuggingFace |
-| Phi-3.5-mini | ~3,8 B | 128 K | MIT | safetensors, GGUF | HuggingFace |
+| Lucet-CoderSense-4B-Omega (GGUF) | ~4,1 B | no disponible | Apache 2.0 | GGUF | Hugging Face (mradermacher) |
+| Qwen2.5-Coder-3B | ~3 B | 32 K (típico en la familia) | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Llama-3.2-3B | ~3 B | 128 K | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
+| Phi-3.5-mini | ~3,8 B | 128 K | MIT | safetensors, GGUF | Hugging Face |
 
 Nota: los datos de los modelos comparables corresponden a especificaciones públicas habituales de esas familias; la comparación de rendimiento con Lucet-CoderSense-4B-Omega no es posible al no existir benchmarks publicados para este último.
 

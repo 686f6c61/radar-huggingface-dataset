@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B es un modelo de lenguaje causal multimodal (imagen-texto) desarrollado por Alibaba, publicado en HuggingFace por el usuario WatsonNT. Forma parte de la familia Qwen3.5, que integra avances en aprendizaje multimodal, eficiencia arquitectónica y escalado de reinforcement learning. Este modelo concreto, con 2.274 millones de parámetros, está diseñado para prototipado, fine-tuning específico de tareas e investigación, según indica su model card.
+Qwen3.5-2B es un modelo de lenguaje causal multimodal (imagen-texto) desarrollado por Alibaba, publicado en Hugging Face por el usuario WatsonNT. Forma parte de la familia Qwen3.5, que integra avances en aprendizaje multimodal, eficiencia arquitectónica y escalado de reinforcement learning. Este modelo concreto, con 2.274 millones de parámetros, está diseñado para prototipado, fine-tuning específico de tareas e investigación, según indica su model card.
 
 Su arquitectura híbrida combina Gated Delta Networks (atención lineal) con capas de atención tradicional, logrando una ventana de contexto nativa de 262.144 tokens. Es un modelo multimodal que acepta entradas de imagen y texto, y soporta 201 idiomas y dialectos. Su licencia Apache 2.0 permite uso comercial sin restricciones, lo que lo hace atractivo para despliegues en producción a pequeña escala o en dispositivos edge.
 
@@ -87,7 +87,7 @@ Qwen3.5-2B ofrece mejor rendimiento que Qwen3-1.7B con solo 0,5B más de paráme
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WatsonNT/Qwen3.5-2B
+- Repositorio Hugging Face: https://huggingface.co/WatsonNT/Qwen3.5-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Blog oficial Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Guía completa de Qwen 3.5: https://qwen-ai.com/qwen-3-5/

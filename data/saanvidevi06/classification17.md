@@ -62,7 +62,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (Poolfor
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se puede utilizar para ninguna tarea real de clasificación o generación; cualquier resultado será aleatorio o basado en la inicialización.
-- La implementación es personalizada y no compatible con las APIs estándar de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs estándar de Hugging Face sin un adaptador explícito.
 - No hay garantía de que el código funcione correctamente en todos los entornos; se recomienda revisar `run.py` antes de ejecutarlo.
 - La licencia Apache 2.0 permite uso comercial, pero debe revisarse la procedencia de los datos externos si se usan con otros conjuntos de datos.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en el repositorio.
@@ -70,5 +70,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (Poolfor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saanvidevi06/classification17
+- Repositorio en Hugging Face: https://huggingface.co/saanvidevi06/classification17
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web.

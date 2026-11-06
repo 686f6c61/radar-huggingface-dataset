@@ -6,7 +6,7 @@ Origa Judge v3 es un modelo de estimación de calidad de traducción desarrollad
 
 El modelo trabaja con embeddings con prefijos al estilo e5 (`query:` para la frase fuente, `passage:` para cada candidata) y pooling MEAN, y devuelve un producto escalar entre embeddings normalizados. Se entrenó con 59.973 pares sintéticos y depurados en 5 épocas (unos 5 minutos según el autor) sobre embeddings precalculados con vLLM, y se evaluó internamente sobre un conjunto de 662 pares con un resultado del 81,9 %.
 
-Su relevancia es acotada y muy específica: cubre control de calidad de diccionarios y frases en ja→{en, ru, ko, vi} dentro de un único dominio (contenido de aprendizaje). La licencia BSL 1.1, la ausencia de validación fuera de dominio y el hecho de tener 0 descargas y 0 likes en HuggingFace lo sitúan como una pieza interna de infraestructura más que como un modelo de propósito general.
+Su relevancia es acotada y muy específica: cubre control de calidad de diccionarios y frases en ja→{en, ru, ko, vi} dentro de un único dominio (contenido de aprendizaje). La licencia BSL 1.1, la ausencia de validación fuera de dominio y el hecho de tener 0 descargas y 0 likes en Hugging Face lo sitúan como una pieza interna de infraestructura más que como un modelo de propósito general.
 
 ## Especificaciones técnicas
 
@@ -94,11 +94,11 @@ La diferencia funcional principal frente a un grader absoluto es que Origa Judge
 - Riesgo de alucinación: no aplica en el sentido generativo; el riesgo equivalente es la clasificación errónea (falsos positivos o negativos) en la selección de candidatas.
 - Licencia BSL 1.1: no es una licencia de código abierto aprobada por la OSI y este tipo de licencia suele restringir el uso comercial en producción; hay que consultar el texto completo antes de cualquier despliegue comercial. El encoder base sí es MIT según su model card.
 - Dependencias técnicas frágiles: requiere pooling MEAN y backend `TRITON_ATTN`; usar los valores por defecto de vLLM rompe la compatibilidad con las cabezas.
-- Madurez limitada: 0 descargas y 0 likes en HuggingFace, ficha creada y actualizada el mismo día (12 de octubre de 2026 según los metadatos), sin validación externa conocida.
+- Madurez limitada: 0 descargas y 0 likes en Hugging Face, ficha creada y actualizada el mismo día (12 de octubre de 2026 según los metadatos), sin validación externa conocida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yurvon-screamo/origa-judge
+- Modelo en Hugging Face: https://huggingface.co/yurvon-screamo/origa-judge
 - Repositorio del proyecto Origa: https://github.com/yurvon-screamo/origa
 - Licencia BSL 1.1 del proyecto: https://github.com/yurvon-screamo/origa/blob/master/LICENSE
 - Issue de calibración por locale (#713): https://github.com/yurvon-screamo/origa/issues/713

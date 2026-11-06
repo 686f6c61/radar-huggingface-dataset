@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tuzemka/lev es un repositorio alojado en HuggingFace por el usuario Tuzemka. La informacion disponible publicamente es minima: unicamente se conocen el identificador del repositorio, el autor, la fecha de creacion (3 de noviembre de 2026) y la etiqueta de region `region:us`. No se ha publicado informacion sobre arquitectura, tamano, contexto, licencia ni idiomas soportados.
+Tuzemka/lev es un repositorio alojado en Hugging Face por el usuario Tuzemka. La informacion disponible publicamente es minima: unicamente se conocen el identificador del repositorio, el autor, la fecha de creacion (3 de noviembre de 2026) y la etiqueta de region `region:us`. No se ha publicado informacion sobre arquitectura, tamano, contexto, licencia ni idiomas soportados.
 
 El repositorio no presenta pipeline declarado, no acumula descargas y cuenta con un unico "like", lo que sugiere que se trata de un proyecto reciente, experimental o de caracter personal sin documentacion asociada. No hay model card, paper ni blog vinculado en la informacion proporcionada.
 
@@ -25,7 +25,7 @@ Dado que no existen datos tecnicos verificables, esta ficha se limita a reflejar
 
 No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida u otra), el numero de parametros, los datos de entrenamiento, el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco hay constancia de innovaciones tecnicas destacables (atencion lineal, decodificacion especulativa, modos de razonamiento extendido, etc.).
 
-La unica etiqueta presente en el repositorio es `region:us`, que en HuggingFace suele indicar la region de despliegue o alojamiento y no aporta informacion sobre el diseno del modelo. Se desconoce si el repositorio contiene pesos, configuracion, tokenizer o unicamente documentacion.
+La unica etiqueta presente en el repositorio es `region:us`, que en Hugging Face suele indicar la region de despliegue o alojamiento y no aporta informacion sobre el diseno del modelo. Se desconoce si el repositorio contiene pesos, configuracion, tokenizer o unicamente documentacion.
 
 ## Capacidades
 
@@ -79,4 +79,4 @@ No disponible. No se puede establecer una comparativa sin conocer el tamano, la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tuzemka/lev
+- Repositorio en Hugging Face: https://huggingface.co/Tuzemka/lev

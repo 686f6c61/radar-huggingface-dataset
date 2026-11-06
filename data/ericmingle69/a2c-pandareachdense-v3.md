@@ -24,7 +24,7 @@ El rendimiento declarado es modesto: `mean_reward` de -0,22 +/- 0,09 sobre 100 e
 | Entorno | PandaReachDense-v3 (panda-gym, simulacion PyBullet) |
 | Pasos de entrenamiento | 1.000.000 timesteps |
 | Entornos vectorizados | 4 |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadatos) | 2026-09-22 |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de agentes alternativos sobre `PandaReachD
 
 | Modelo / algoritmo | Tipo | Parametros | Contexto | Rendimiento en PandaReachDense-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| A2C (este modelo) | Actor-critico on-policy, MLP | no disponible | no aplica | mean_reward -0,22 +/- 0,09 | no disponible | HuggingFace Hub |
+| A2C (este modelo) | Actor-critico on-policy, MLP | no disponible | no aplica | mean_reward -0,22 +/- 0,09 | no disponible | Hugging Face Hub |
 | PPO | Actor-critico on-policy, MLP | no disponible | no aplica | no disponible | no disponible | implementado en stable-baselines3; checkpoint no disponible |
 | SAC | Actor-critico off-policy, MLP | no disponible | no aplica | no disponible | no disponible | implementado en stable-baselines3; checkpoint no disponible |
 | TD3 | Actor-critico off-policy, MLP | no disponible | no aplica | no disponible | no disponible | implementado en stable-baselines3; checkpoint no disponible |
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento de agentes alternativos sobre `PandaReachD
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EricMingle69/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/EricMingle69/a2c-PandaReachDense-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Entorno panda-gym (PyBullet): https://github.com/qgallouedec/panda-gym
 - Curso de Deep Reinforcement Learning de Hugging Face (Unidad 6): https://huggingface.co/learn/deep-rl-course

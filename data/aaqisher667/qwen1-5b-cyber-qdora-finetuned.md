@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Aaqisher667/qwen1.5b-cyber-qdora-finetuned` es un adaptador PEFT publicado en HuggingFace por el usuario Aaqisher667. No se trata de un modelo completo, sino de pesos de ajuste fino (0,1 GB de repositorio) que deben cargarse sobre el modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth.
+El modelo `Aaqisher667/qwen1.5b-cyber-qdora-finetuned` es un adaptador PEFT publicado en Hugging Face por el usuario Aaqisher667. No se trata de un modelo completo, sino de pesos de ajuste fino (0,1 GB de repositorio) que deben cargarse sobre el modelo base `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Qwen2.5-1.5B-Instruct preparada por Unsloth.
 
-El nombre del repositorio sugiere un ajuste orientado al dominio de ciberseguridad ("cyber") y una técnica de adaptación de bajo rango cuantizada ("qdora", presumiblemente QDoRA). Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que ni el dominio, ni el dataset, ni los hiperparámetros de entrenamiento están documentados por el autor.
+El nombre del repositorio sugiere un ajuste orientado al dominio de ciberseguridad ("cyber") y una técnica de adaptación de bajo rango cuantizada ("qdora", presumiblemente QDoRA). Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que ni el dominio, ni el dataset, ni los hiperparámetros de entrenamiento están documentados por el autor.
 
 Su relevancia práctica es limitada y experimental: al tratarse de un adaptador sin métricas publicadas, sin licencia declarada y con cero descargas, debe tratarse como un artefacto a evaluar antes de cualquier uso. En este sentido, resulta útil como caso de estudio de flujos de ajuste fino ligero con Unsloth, TRL y PEFT sobre modelos pequeños de 1,5B parámetros.
 
@@ -27,7 +27,7 @@ La informacion disponible solo permite afirmar que se trata de un adaptador PEFT
 
 No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, ni sobre hiperparámetros como rango del adaptador, alpha, tasa de aprendizaje o numero de epocas. Tampoco se documenta la infraestructura de computo empleada. El unico dato de trazabilidad tecnica presente en el repositorio es la version de framework: PEFT 0.20.0.
 
-La referencia `arxiv:1910.09700` incluida en los tags no corresponde a un articulo del modelo, sino al trabajo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla estandar de model card de HuggingFace.
+La referencia `arxiv:1910.09700` incluida en los tags no corresponde a un articulo del modelo, sino al trabajo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla estandar de model card de Hugging Face.
 
 ## Capacidades
 
@@ -78,11 +78,11 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparacion s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Aaqisher667/qwen1.5b-cyber-qdora-finetuned | Adaptador sobre 1,5B (no disponible el detalle) | No disponible (heredado del base) | No disponible | HuggingFace, 0 descargas, 0 likes | No disponible |
-| Qwen2.5-1.5B-Instruct (base) | 1,5B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Documentado por el autor del modelo base (no incluido aqui) |
-| SmolLM2-1.7B-Instruct | 1,7B | 8 192 tokens | Apache 2.0 | HuggingFace | Documentado por su autor |
-| Gemma 2 2B Instruct | 2B | 8 192 tokens | Licencia Gemma | HuggingFace | Documentado por su autor |
-| TinyLlama-1.1B-Chat | 1,1B | 2 048 tokens | Apache 2.0 | HuggingFace | Documentado por su autor |
+| Aaqisher667/qwen1.5b-cyber-qdora-finetuned | Adaptador sobre 1,5B (no disponible el detalle) | No disponible (heredado del base) | No disponible | Hugging Face, 0 descargas, 0 likes | No disponible |
+| Qwen2.5-1.5B-Instruct (base) | 1,5B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Documentado por el autor del modelo base (no incluido aqui) |
+| SmolLM2-1.7B-Instruct | 1,7B | 8 192 tokens | Apache 2.0 | Hugging Face | Documentado por su autor |
+| Gemma 2 2B Instruct | 2B | 8 192 tokens | Licencia Gemma | Hugging Face | Documentado por su autor |
+| TinyLlama-1.1B-Chat | 1,1B | 2 048 tokens | Apache 2.0 | Hugging Face | Documentado por su autor |
 
 La ventaja estructural del adaptador frente a estas alternativas es su tamano de descarga (0,1 GB) y la posibilidad de combinarlo con distintos checkpoints base, siempre que la licencia del adaptador se aclare. Su desventaja es la ausencia total de documentacion, evaluacion y soporte.
 
@@ -101,7 +101,7 @@ La ventaja estructural del adaptador frente a estas alternativas es su tamano de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aaqisher667/qwen1.5b-cyber-qdora-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Aaqisher667/qwen1.5b-cyber-qdora-finetuned
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Referencia citada en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact

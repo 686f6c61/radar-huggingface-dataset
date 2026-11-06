@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hectoreccles/qwen3-4b-poetry es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario hectoreccles, construido sobre un modelo de la familia Qwen3, segun indican la nomenclatura del repositorio y la etiqueta `qwen3`. El repositorio contiene 4.022.468.096 parametros (4,02 B) en formato MLX, con un tamano total de 8,1 GB, lo que es coherente con pesos almacenados en precision completa (bf16/fp16: 4,02 B x 2 bytes ≈ 8,04 GB). El sufijo "poetry" del nombre sugiere una especializacion en generacion de poesia, aunque la model card no documenta el proceso de entrenamiento ni el dataset utilizado.
+hectoreccles/qwen3-4b-poetry es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario hectoreccles, construido sobre un modelo de la familia Qwen3, segun indican la nomenclatura del repositorio y la etiqueta `qwen3`. El repositorio contiene 4.022.468.096 parametros (4,02 B) en formato MLX, con un tamano total de 8,1 GB, lo que es coherente con pesos almacenados en precision completa (bf16/fp16: 4,02 B x 2 bytes ≈ 8,04 GB). El sufijo "poetry" del nombre sugiere una especializacion en generacion de poesia, aunque la model card no documenta el proceso de entrenamiento ni el dataset utilizado.
 
 La relevancia de esta ficha es limitada y conviene ser explicito al respecto: el modelo registra 0 descargas y 0 likes en el momento de la consulta, no incluye licencia declarada, no publica resultados de evaluacion y su model card esta practicamente vacia (unicamente metadatos YAML). Se trata, por tanto, de un artefacto de publicacion reciente (creado y actualizado el 10 de septiembre de 2026) sin validacion externa conocida.
 
@@ -95,5 +95,5 @@ No se han localizado en la busqueda web otros fine-tunes poeticos comparables co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hectoreccles/qwen3-4b-poetry
+- Hugging Face: https://huggingface.co/hectoreccles/qwen3-4b-poetry
 - Paper, blog o repositorio adicional: no disponible. La busqueda web realizada devolvio unicamente resultados no relacionados (paginas comerciales de Amazon), sin ninguna referencia al modelo, a su dataset o a su proceso de entrenamiento.

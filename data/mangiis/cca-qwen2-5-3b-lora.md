@@ -88,9 +88,9 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cca-qwen2.5-3b-lora | ~3.000 M base + 59,9 M adaptador | No disponible | AUC 0.878; F1 0.811 a 50 % de cobertura | MIT | HuggingFace (0 descargas) |
-| Qwen2.5-3B sin adaptar | ~3.000 M | 32.768 tokens segun el modelo base | No disponible; el autor indica que con nombres de valor sin premisas el modelo puntua al azar | Apache 2.0 (modelo base) | HuggingFace |
-| Qwen2.5-3B con prompting zero-shot sobre la misma plantilla | ~3.000 M | 32.768 tokens segun el modelo base | No disponible: no se publica comparacion | Apache 2.0 (modelo base) | HuggingFace |
+| cca-qwen2.5-3b-lora | ~3.000 M base + 59,9 M adaptador | No disponible | AUC 0.878; F1 0.811 a 50 % de cobertura | MIT | Hugging Face (0 descargas) |
+| Qwen2.5-3B sin adaptar | ~3.000 M | 32.768 tokens segun el modelo base | No disponible; el autor indica que con nombres de valor sin premisas el modelo puntua al azar | Apache 2.0 (modelo base) | Hugging Face |
+| Qwen2.5-3B con prompting zero-shot sobre la misma plantilla | ~3.000 M | 32.768 tokens segun el modelo base | No disponible: no se publica comparacion | Apache 2.0 (modelo base) | Hugging Face |
 | Clasificador supervisado tipo encoder (por ejemplo, familia DeBERTa) | No disponible | No disponible | No disponible: no se publica comparacion | No disponible | No disponible |
 
 El autor no incluye en la informacion disponible ninguna comparacion cuantitativa con alternativas; la unica referencia externa es el segundo analista humano (F1 0.807 a 50 % de cobertura). Cualquier comparativa con modelos generativos generalistas o clasificadores encoder requeriria una evaluacion propia sobre el mismo corpus.
@@ -112,7 +112,7 @@ El autor no incluye en la informacion disponible ninguna comparacion cuantitativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mangiis/cca-qwen2.5-3b-lora
+- Modelo en Hugging Face: https://huggingface.co/mangiis/cca-qwen2.5-3b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Codigo, corpus y despliegue en Java: https://github.com/Onecombatboot/morphological-analyzer
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las entradas devueltas por el buscador corresponden a sitios de botones de sonido y no guardan relacion con el modelo.

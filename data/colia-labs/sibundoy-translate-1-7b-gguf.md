@@ -88,7 +88,7 @@ La comparacion con Google Translate es estructural: se trata de un servicio cerr
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/colia-labs/Sibundoy-Translate-1.7B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/colia-labs/Sibundoy-Translate-1.7B-GGUF
 - Modelo base afinado: https://huggingface.co/colia-labs/Sibundoy-Translate-1.7B
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Codigo en GitHub: https://github.com/colia-labs/sibundoy-translate

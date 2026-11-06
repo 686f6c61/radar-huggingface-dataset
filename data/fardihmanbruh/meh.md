@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `fardihmanbruh/meh` corresponde a un repositorio alojado en HuggingFace por el usuario `fardihmanbruh`. En el momento de la consulta, el repositorio no dispone de model card sustantiva: el unico contenido publicado es la declaracion de licencia `openmdw-1.0`, sin descripcion, sin arquitectura, sin tamano ni datos de entrenamiento. Los metadatos disponibles no incluyen etiqueta de pipeline, idiomas declarados ni formatos de pesos, y el contador publico indica 0 descargas y 0 "likes".
+El identificador `fardihmanbruh/meh` corresponde a un repositorio alojado en Hugging Face por el usuario `fardihmanbruh`. En el momento de la consulta, el repositorio no dispone de model card sustantiva: el unico contenido publicado es la declaracion de licencia `openmdw-1.0`, sin descripcion, sin arquitectura, sin tamano ni datos de entrenamiento. Los metadatos disponibles no incluyen etiqueta de pipeline, idiomas declarados ni formatos de pesos, y el contador publico indica 0 descargas y 0 "likes".
 
 No es posible, por tanto, identificar que tipo de artefacto contiene el repositorio (pesos de un modelo de lenguaje, un modelo de vision, un clasificador, un conjunto de adaptadores LoRA o simplemente un espacio de prueba). Tampoco existen resultados de busqueda web que aporten informacion tecnica sobre el: las coincidencias obtenidas corresponden a herramientas comerciales de generacion de mallas 3D (MeshGPT, Meshy, BoredHumans) sin ninguna relacion con este identificador.
 
@@ -77,7 +77,7 @@ No disponible. Sin arquitectura, numero de parametros ni categoria funcional dec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fardihmanbruh/meh
+- Repositorio en Hugging Face: https://huggingface.co/fardihmanbruh/meh
 - Model card: https://huggingface.co/fardihmanbruh/meh/blob/main/README.md
 - Licencia declarada: OpenMDW-1.0 (texto oficial publicado por la Linux Foundation / Open Model Initiative; consultar la pagina oficial de la licencia para los terminos vigentes)
 - Otros enlaces relevantes: no disponible. Las busquedas web realizadas devolvieron unicamente sitios de generacion de modelos 3D (https://meshgpt.io/, https://www.meshy.ai/, https://meshyiai.com/, https://boredhumans.com/, https://www.meta.ai/) sin relacion con el identificador `fardihmanbruh/meh`.

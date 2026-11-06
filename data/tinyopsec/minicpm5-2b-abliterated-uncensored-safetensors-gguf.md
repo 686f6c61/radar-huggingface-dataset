@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF es una colección de cuantizaciones GGUF del modelo MiniCPM5-2B, publicado por el usuario tinyopsec en HuggingFace. El modelo base es openbmb/MiniCPM5-2B, un modelo de lenguaje de aproximadamente 2,5 mil millones de parámetros basado en la arquitectura Llama, desarrollado por OpenBMB. Esta variante concreta procede del repositorio 0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors, al que se ha aplicado un proceso de "abliteration", una técnica que modifica los pesos del modelo para suprimir sus mecanismos internos de rechazo, eliminando las negativas de seguridad sin necesidad de reentrenamiento.
+MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF es una colección de cuantizaciones GGUF del modelo MiniCPM5-2B, publicado por el usuario tinyopsec en Hugging Face. El modelo base es openbmb/MiniCPM5-2B, un modelo de lenguaje de aproximadamente 2,5 mil millones de parámetros basado en la arquitectura Llama, desarrollado por OpenBMB. Esta variante concreta procede del repositorio 0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors, al que se ha aplicado un proceso de "abliteration", una técnica que modifica los pesos del modelo para suprimir sus mecanismos internos de rechazo, eliminando las negativas de seguridad sin necesidad de reentrenamiento.
 
 El problema que resuelve esta ficha de modelos es doble: por un lado, ofrece el modelo en formato GGUF para su ejecución local eficiente en CPU y GPU de consumo mediante llama.cpp y runtimes compatibles; por otro, proporciona una versión sin filtros de alineación para usuarios que necesitan respuestas sin rechazos. La relevancia actual de los modelos abliterated radica en la demanda de modelos locales personalizables para investigación, red-teaming y casos donde los rechazos estándar resultan restrictivos.
 
@@ -89,7 +89,7 @@ Frente a sus alternativas de tamaño similar, este modelo destaca por la licenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio de origen abliterated (safetensors): no disponible como URL directa; referenciado en la model card como `0xSojalSec/MiniCPM5-2B-Abliterated-Uncensored-Safetensors`
 - Paper, blog o demo: no disponible

@@ -33,7 +33,7 @@ La relevancia de esta publicacion es practica: permite ejecutar un modelo de ~9B
 
 No se dispone de informacion sobre la arquitectura del modelo original. El repositorio es exclusivamente una conversion de formato: el autor indica que son "static quants of https://huggingface.co/abdurrehman456/qwythos-9b-openthoughts", es decir, cuantizaciones estaticas generadas a partir de los pesos del modelo base, con `convert_type: hf` y `output_tensor_quantised: 1`. No hay ningun proceso de entrenamiento, ajuste fino ni alineacion adicional en esta publicacion.
 
-El pipeline de cuantizacion parte de los pesos en formato HuggingFace (`convert_type: hf`) y produce ficheros GGUF de tipo estatico; el autor senala explicitamente que las cuantizaciones ponderadas o con imatrix no estan disponibles "por ahora" y que, si no aparecen en aproximadamente una semana, probablemente no las planifique. No se especifican tokens de entrenamiento, composicion del dataset, ni si el modelo base paso por RLHF, DPO u otra fase de alineacion.
+El pipeline de cuantizacion parte de los pesos en formato Hugging Face (`convert_type: hf`) y produce ficheros GGUF de tipo estatico; el autor senala explicitamente que las cuantizaciones ponderadas o con imatrix no estan disponibles "por ahora" y que, si no aparecen en aproximadamente una semana, probablemente no las planifique. No se especifican tokens de entrenamiento, composicion del dataset, ni si el modelo base paso por RLHF, DPO u otra fase de alineacion.
 
 ## Capacidades
 

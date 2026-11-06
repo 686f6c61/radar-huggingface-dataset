@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente de investigación: sirve como artefacto reprod
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Llama (según etiqueta `llama` de HuggingFace); detalle de capas y cabezas no disponible |
+| Arquitectura | Llama (según etiqueta `llama` de Hugging Face); detalle de capas y cabezas no disponible |
 | Parámetros totales | 1.279.854.592 (≈1,28 B), dato real de los safetensors |
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente de investigación: sirve como artefacto reprod
 | Librería | transformers |
 | Pipeline | text-generation |
 | Etiquetas adicionales | mergekit, merge, text-generation-inference, endpoints_compatible, region:us, arxiv:2203.05482 |
-| Fecha de creación (HuggingFace) | 2026-09-17 |
+| Fecha de creación (Hugging Face) | 2026-09-17 |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-La comparación se establece con modelos base de tamaño cercano ampliamente utilizados como punto de partida para ajuste. Los datos de los modelos comparativos corresponden a su documentación pública; los de este modelo, a la información disponible en HuggingFace.
+La comparación se establece con modelos base de tamaño cercano ampliamente utilizados como punto de partida para ajuste. Los datos de los modelos comparativos corresponden a su documentación pública; los de este modelo, a la información disponible en Hugging Face.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -99,7 +99,7 @@ Diferencias clave: frente a las alternativas, este checkpoint no ofrece contexto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-pro-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-pro-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - mergekit (herramienta de fusión utilizada): https://github.com/cg123/mergekit
 - Artículo del método Linear / model soups (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - No se han encontrado en la búsqueda web otros enlaces relevantes (papers, blogs, demos o repos) asociados a este modelo; los resultados devueltos no guardan relación con el modelo ni con inteligencia artificial.

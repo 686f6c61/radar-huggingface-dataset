@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SmolVLM-500M-Instruct-mini es un ajuste fino (finetune) del modelo multimodal SmolVLM-500M-Instruct de HuggingFaceTB, publicado por el usuario amsalut en HuggingFace. Se trata de un modelo de visión-lenguaje (image-text-to-text) basado en la arquitectura Idefics3, con aproximadamente 507 millones de parámetros totales según los pesos en safetensors. El modelo original pertenece a la familia SmolVLM, diseñada para ofrecer capacidades multimodales en un tamaño muy reducido, apto para entornos con recursos limitados.
+SmolVLM-500M-Instruct-mini es un ajuste fino (finetune) del modelo multimodal SmolVLM-500M-Instruct de HuggingFaceTB, publicado por el usuario amsalut en Hugging Face. Se trata de un modelo de visión-lenguaje (image-text-to-text) basado en la arquitectura Idefics3, con aproximadamente 507 millones de parámetros totales según los pesos en safetensors. El modelo original pertenece a la familia SmolVLM, diseñada para ofrecer capacidades multimodales en un tamaño muy reducido, apto para entornos con recursos limitados.
 
-Este finetune concreto se entrenó empleando Unsloth y la librería TRL de HuggingFace, lo que según el autor permite un entrenamiento "2x más rápido". El repositorio ocupa 1,0 GB y el modelo está etiquetado para su uso con transformers, text-generation-inference y endpoints compatibles. La licencia es Apache 2.0, lo que facilita su uso comercial y su integración en pipelines de producción.
+Este finetune concreto se entrenó empleando Unsloth y la librería TRL de Hugging Face, lo que según el autor permite un entrenamiento "2x más rápido". El repositorio ocupa 1,0 GB y el modelo está etiquetado para su uso con transformers, text-generation-inference y endpoints compatibles. La licencia es Apache 2.0, lo que facilita su uso comercial y su integración en pipelines de producción.
 
 La relevancia de este modelo radica en su tamaño extremadamente compacto (medio billón de parámetros) combinado con capacidades multimodales de entrada de imagen y texto, lo que lo convierte en una opción viable para inferencia en hardware modesto, prototipado rápido y tareas de descripción de imágenes o respuesta a preguntas visuales. No obstante, la información pública disponible sobre el proceso de finetune, los datos empleados y los resultados obtenidos es muy limitada.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su tamaño extremadamente compacto (medio
 
 El modelo se basa en la arquitectura Idefics3, un transformer multimodal que combina un codificador visual con un modelo de lenguaje para procesar entradas de imagen y texto de forma conjunta. El modelo base, SmolVLM-500M-Instruct de HuggingFaceTB, es un modelo compacto de visión-lenguaje pensado para tareas de image-text-to-text. Este finetune conserva dicha arquitectura y añade un ajuste adicional realizado por el autor.
 
-El entrenamiento se llevó a cabo con Unsloth y la librería TRL de HuggingFace, según indica la model card. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset de finetune, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detalla la naturaleza del ajuste (si fue supervisado, por instrucciones o específico de una tarea). La única innovación técnica mencionada es el uso de Unsloth para acelerar el entrenamiento.
+El entrenamiento se llevó a cabo con Unsloth y la librería TRL de Hugging Face, según indica la model card. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset de finetune, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detalla la naturaleza del ajuste (si fue supervisado, por instrucciones o específico de una tarea). La única innovación técnica mencionada es el uso de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| amsalut/SmolVLM-500M-Instruct-mini | 507.482.304 | no disponible | apache-2.0 | HuggingFace |
-| HuggingFaceTB/SmolVLM-500M-Instruct (base) | ~500M (familia SmolVLM-500M) | no disponible | apache-2.0 | HuggingFace |
-| SmolVLM (familia, otros tamanos) | 256M / 500M / 2B (variantes de la familia) | no disponible | apache-2.0 | HuggingFace |
+| amsalut/SmolVLM-500M-Instruct-mini | 507.482.304 | no disponible | apache-2.0 | Hugging Face |
+| HuggingFaceTB/SmolVLM-500M-Instruct (base) | ~500M (familia SmolVLM-500M) | no disponible | apache-2.0 | Hugging Face |
+| SmolVLM (familia, otros tamanos) | 256M / 500M / 2B (variantes de la familia) | no disponible | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amsalut/SmolVLM-500M-Instruct-mini
+- Modelo en Hugging Face: https://huggingface.co/amsalut/SmolVLM-500M-Instruct-mini
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

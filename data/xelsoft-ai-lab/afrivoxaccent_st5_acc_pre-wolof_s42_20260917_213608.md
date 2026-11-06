@@ -6,7 +6,7 @@ Este repositorio contiene un checkpoint de la familia SpeechT5 publicado por el 
 
 El dato objetivo mas relevante es el recuento real de parametros en los pesos safetensors: 144.437.730, practicamente identico al de los checkpoints oficiales de SpeechT5 (microsoft/speecht5_tts y derivados), lo que confirma que se trata de un fine-tune y no de un entrenamiento desde cero. El repositorio ocupa 0,6 GB, coherente con pesos en fp32, y la libreria declarada es `transformers`.
 
-La relevancia actual es limitada pero concreta: las lenguas africanas de bajos recursos, y el wolof en particular, cuentan con muy pocos sistemas de sintesis de voz abiertos. Un checkpoint de 144 M de parametros es ligero, ejecutable en CPU y en GPUs de gama de entrada, lo que lo hace interesante como punto de partida para experimentos de TTS y de adaptacion de acento. Sin embargo, la model card es la plantilla autogenerada de HuggingFace sin rellenar, no hay licencia declarada, no hay resultados de evaluacion y el modelo acumula cero descargas y cero "likes", por lo que debe tratarse como material experimental sin validar.
+La relevancia actual es limitada pero concreta: las lenguas africanas de bajos recursos, y el wolof en particular, cuentan con muy pocos sistemas de sintesis de voz abiertos. Un checkpoint de 144 M de parametros es ligero, ejecutable en CPU y en GPUs de gama de entrada, lo que lo hace interesante como punto de partida para experimentos de TTS y de adaptacion de acento. Sin embargo, la model card es la plantilla autogenerada de Hugging Face sin rellenar, no hay licencia declarada, no hay resultados de evaluacion y el modelo acumula cero descargas y cero "likes", por lo que debe tratarse como material experimental sin validar.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ En todos los casos hay que tener en cuenta que no existe confirmacion del autor 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-El repositorio no incluye MOS, WER, CER, ni ninguna metrica de evaluacion. La model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluida la seccion de evaluacion. Tampoco hay resultados de terceros asociados al identificador del modelo.
+El repositorio no incluye MOS, WER, CER, ni ninguna metrica de evaluacion. La model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluida la seccion de evaluacion. Tampoco hay resultados de terceros asociados al identificador del modelo.
 
 ## Requisitos de hardware
 
@@ -64,7 +64,7 @@ Estimaciones calculadas a partir del recuento real de parametros (144,4 M); no p
 - VRAM estimada para inferencia: por debajo de 2 GB en fp32 y en torno a 1 GB o menos en fp16, incluyendo activaciones para secuencias de audio tipicas.
 - GPU recomendadas: cualquier GPU con 4 GB o mas es sobradamente suficiente (GTX 1650, RTX 3060, RTX 4090). En entornos de servidor, T4, A10G, L4, A100 y H100 funcionan sin problema y permiten lotes grandes, pero estan muy sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos ocho anos, y tambien en CPU (inferencia viable en un solo hilo moderno, con latencia mayor).
-- Opciones de despliegue: pipeline de `transformers` (libreria declarada en el repo), HuggingFace Inference Endpoints (el repo esta etiquetado como `endpoints_compatible`), ONNX Runtime u Optimum para exportacion, y despliegue detras de un servicio propio con FastAPI. No hay soporte estandar de GGUF ni de llama.cpp u Ollama para SpeechT5, por lo que esas rutas no son aplicables directamente.
+- Opciones de despliegue: pipeline de `transformers` (libreria declarada en el repo), Hugging Face Inference Endpoints (el repo esta etiquetado como `endpoints_compatible`), ONNX Runtime u Optimum para exportacion, y despliegue detras de un servicio propio con FastAPI. No hay soporte estandar de GGUF ni de llama.cpp u Ollama para SpeechT5, por lo que esas rutas no son aplicables directamente.
 - Nota sobre el vocoder: SpeechT5 genera espectrogramas mel, no formas de onda; hace falta un vocoder adicional (por ejemplo un HiFi-GAN compatible), que anade unos cientos de MB y algo de latencia.
 - Latencia y throughput: no disponible. No hay mediciones publicadas para este checkpoint.
 
@@ -97,7 +97,7 @@ La comparacion con MMS-TTS en wolof es la mas directa por lengua: MMS cubre wolo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_acc_pre-wolof_s42_20260917_213608
+- Repositorio en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_acc_pre-wolof_s42_20260917_213608
 - Referencia citada en la etiqueta del repo (estimacion de emisiones de carbono, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla de model card: https://mlco2.github.io/impact
 

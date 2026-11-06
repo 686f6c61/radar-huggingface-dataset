@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evgenyalekseev/grounded-language-v121` es un repositorio publicado en HuggingFace cuyo contenido principal no es un modelo entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre "Grounded Language". La propia model card lo declara de forma explicita: "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los unicos artefactos descritos son `paper_notes.md` y `README.md`, acompanados de un fichero de pesos en formato safetensors.
+`evgenyalekseev/grounded-language-v121` es un repositorio publicado en Hugging Face cuyo contenido principal no es un modelo entrenado, sino un conjunto de notas de lectura y un esbozo de experimento sobre "Grounded Language". La propia model card lo declara de forma explicita: "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los unicos artefactos descritos son `paper_notes.md` y `README.md`, acompanados de un fichero de pesos en formato safetensors.
 
 El repositorio esta etiquetado como `research-notes`, `grounded-language` y `transformer`, con licencia MIT. El unico dato cuantitativo verificable es el recuento de parametros del checkpoint safetensors: 16.576 parametros totales. Se trata de una cifra compatible con una inicializacion de peso simbolica o un tensor auxiliar, no con un modelo de lenguaje funcional; para comparar, un transformer minimo con un vocabulario de unos pocos miles de tokens supera holgadamente esa magnitud. El tamano del repositorio es de 0,0 GB.
 
@@ -57,7 +57,7 @@ Debido a que el repositorio no contiene un modelo funcional, los casos de uso qu
 - Revision bibliografica inicial: la seccion de referencias permite a un investigador arrancar una revision sobre grounded language sin partir de cero.
 - Verificacion de pipelines de safetensors: el fichero de pesos, de tamano minimo, es util para probar rutas de carga y serializacion en entornos de CI sin coste de almacenamiento ni de GPU.
 - Docencia sobre reproducibilidad: el repositorio ilustra de forma explicita la diferencia entre "plan", "hipotesis" y "resultado", un material util en cursos de metodologia de machine learning.
-- Auditoria de repositorios `research-notes`: permite ejemplificar como detectar artefactos que no son modelos desplegables pese a estar alojados en HuggingFace con etiqueta `transformer`.
+- Auditoria de repositorios `research-notes`: permite ejemplificar como detectar artefactos que no son modelos desplegables pese a estar alojados en Hugging Face con etiqueta `transformer`.
 
 ## Benchmarks y rendimiento
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evgenyalekseev/grounded-language-v121 | 16.576 | no disponible | no disponible (no reclamado) | MIT | Pesos safetensors en HuggingFace, sin modelo funcional verificado |
-| ArjunChauhan/grounded-language-tryout | no disponible | no disponible | no disponible | CC-BY-4.0 | HuggingFace, repositorio de notas con el mismo esquema de model card |
-| Gaelalves/paper_019667091_grounded_language | no disponible | no disponible | no disponible | no disponible | HuggingFace, repositorio de paper |
+| evgenyalekseev/grounded-language-v121 | 16.576 | no disponible | no disponible (no reclamado) | MIT | Pesos safetensors en Hugging Face, sin modelo funcional verificado |
+| ArjunChauhan/grounded-language-tryout | no disponible | no disponible | no disponible | CC-BY-4.0 | Hugging Face, repositorio de notas con el mismo esquema de model card |
+| Gaelalves/paper_019667091_grounded_language | no disponible | no disponible | no disponible | no disponible | Hugging Face, repositorio de paper |
 | Contextual AI (Grounded Language Model, GLM) | no disponible | no disponible | no disponible | propietaria (API de pago) | API empresarial orientada a RAG y reduccion de alucinaciones |
 
 No se dispone de especificaciones tecnicas verificables de los modelos comparables. La comparacion con Contextual AI es unicamente conceptual (misma tematica de grounding), ya que se trata de un producto propietario sin pesos abiertos y sin fichas tecnicas publicas en la informacion disponible.
@@ -97,7 +97,7 @@ No se dispone de especificaciones tecnicas verificables de los modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evgenyalekseev/grounded-language-v121
+- Modelo en Hugging Face: https://huggingface.co/evgenyalekseev/grounded-language-v121
 - Repositorio comparable con el mismo esquema de notas: https://huggingface.co/ArjunChauhan/grounded-language-tryout
 - Repositorio de paper sobre grounded language: https://huggingface.co/Gaelalves/paper_019667091_grounded_language
 - Libreria de evaluacion Grounded AI (independiente del modelo): https://github.com/grounded-ai/grounded_ai

@@ -98,7 +98,7 @@ La comparativa directa con el base Qwen3-4B muestra que el fine-tune es claramen
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/ahmetggg/Luck-Qwen3-4b-Code-FineTune-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/ahmetggg/Luck-Qwen3-4b-Code-FineTune-GGUF
 - Modelo base (fine-tune): https://huggingface.co/ahmetggg/Luck-Qwen3-4b-Code-FineTune
 - Modelo original Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Version de Unsloth de Qwen3-4B: https://huggingface.co/unsloth/Qwen3-4B

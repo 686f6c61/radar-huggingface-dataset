@@ -17,7 +17,7 @@ Es relevante para equipos que ya trabajan con LTX-Video y quieren mejorar la cal
 | Longitud de contexto | no aplica (no es un modelo de lenguaje; el equivalente sería la longitud de vídeo en fotogramas, no documentada) |
 | Tipos de cuantización | no disponible (el repositorio no documenta variantes cuantizadas ni precisión de los pesos) |
 | Idiomas soportados | no aplica (componente de códec latente de vídeo, sin capacidades lingüísticas) |
-| Licencia | openrail (según metadatos de HuggingFace y model card; el autor indica que la licencia no cambia respecto al modelo original y que la actualizará cuando Lightricks publique una licencia comercialmente permisiva) |
+| Licencia | openrail (según metadatos de Hugging Face y model card; el autor indica que la licencia no cambia respecto al modelo original y que la actualizará cuando Lightricks publique una licencia comercialmente permisiva) |
 | Formato de pesos | no disponible (el repositorio ocupa 2,5 GB y contiene dos variantes del checkpoint, pero no se especifica el formato en la información proporcionada) |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VAE original de `Lightricks/LTX-Video` 0.9 | VAE 3D causal para vídeo | no disponible | no aplica | openrail (según metadatos de HuggingFace) | Oficial, integrado en el pipeline LTX-Video |
+| VAE original de `Lightricks/LTX-Video` 0.9 | VAE 3D causal para vídeo | no disponible | no aplica | openrail (según metadatos de Hugging Face) | Oficial, integrado en el pipeline LTX-Video |
 | `aliirkein/ltx-video-0.9-vae-finetune` (este repo) | Ajuste fino del VAE anterior, dos variantes | no disponible | no aplica | openrail (con reservas del autor sobre uso comercial) | Repositorio de terceros, 0 descargas, sin pipeline declarado |
 | `spacepxl/ltx-video-0.9-vae-finetune` | Ajuste fino del mismo VAE; los enlaces de comparación de la model card apuntan a este repositorio | no disponible | no aplica | no disponible | Referenciado indirectamente por los assets de la model card |
 
@@ -81,7 +81,7 @@ No se dispone de datos de otros VAEs de vídeo comparables (por ejemplo, los de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aliirkein/ltx-video-0.9-vae-finetune
+- Repositorio en Hugging Face: https://huggingface.co/aliirkein/ltx-video-0.9-vae-finetune
 - Modelo base: https://huggingface.co/Lightricks/LTX-Video
 - Repositorio referenciado en los assets de comparación: https://huggingface.co/spacepxl/ltx-video-0.9-vae-finetune
 - Vídeo de comparación: https://huggingface.co/spacepxl/ltx-video-0.9-vae-finetune/resolve/main/assets/comparison.mp4?download=true

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mkun2/physical-ai-relief-delivery` no es un modelo de lenguaje, sino un proyecto de robótica publicado en HuggingFace que compara tres estrategias de planificación de rutas para un robot de reparto de suministros en entornos de desastre simulados con PyBullet. El componente de aprendizaje automático es un clasificador Random Forest que estima el nivel de peligro de cada punto del mapa y cuya predicción se incorpora al coste de una búsqueda A*.
+`mkun2/physical-ai-relief-delivery` no es un modelo de lenguaje, sino un proyecto de robótica publicado en Hugging Face que compara tres estrategias de planificación de rutas para un robot de reparto de suministros en entornos de desastre simulados con PyBullet. El componente de aprendizaje automático es un clasificador Random Forest que estima el nivel de peligro de cada punto del mapa y cuya predicción se incorpora al coste de una búsqueda A*.
 
 El sistema clasifica cada ubicación en tres clases (seguro, precaución, peligro) a partir de cinco características observadas: distancia al escombro más cercano, distancia a la pared exterior, densidad local de obstáculos, señal de terreno inestable e inconsistencia entre observaciones repetidas del sensor. La peligrosidad predicha se calcula como `0.45 × P(precaución) + 1.00 × P(peligro)` y se usa como término de coste en A*.
 
@@ -82,7 +82,7 @@ Comparación física en el mapa no visto representativo (las tres estrategias al
 
 ## Comparativa con modelos similares
 
-No hay modelos comparables publicados en HuggingFace con la misma combinación de Random Forest y A* sobre PyBullet en el material proporcionado. La comparación relevante es interna al propio proyecto:
+No hay modelos comparables publicados en Hugging Face con la misma combinación de Random Forest y A* sobre PyBullet en el material proporcionado. La comparación relevante es interna al propio proyecto:
 
 | Estrategia | Uso de aprendizaje | Criterio de coste | Resultado principal |
 |---|---|---|---|
@@ -103,7 +103,7 @@ No hay modelos comparables publicados en HuggingFace con la misma combinación d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mkun2/physical-ai-relief-delivery
+- Hugging Face: https://huggingface.co/mkun2/physical-ai-relief-delivery
 - Repositorio público mínimo indicado en la model card: `README.md`, `requirements.txt`, `PAI_final_project.ipynb` (sin URL de repositorio publicada)
 - Vídeo de ejecución: pendiente de subida según la model card
 - No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.

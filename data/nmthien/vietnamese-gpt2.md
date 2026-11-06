@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nmthien/vietnamese-gpt2` es un modelo de lenguaje de tipo GPT-2 (decoder-only transformer) desarrollado por el usuario nmthien, publicado en HuggingFace. Está diseñado específicamente para la generación de texto en vietnamita, aunque la model card no especifica el idioma oficialmente. Se trata de un fine-tune de un modelo base con el mismo identificador, lo que sugiere que el autor ha reentrenado o ajustado un GPT-2 vietnamita existente sobre un dataset no documentado. Con 110 millones de parámetros, se sitúa en la gama de modelos pequeños, similar a GPT-2 small, y puede ejecutarse en hardware de consumo.
+`nmthien/vietnamese-gpt2` es un modelo de lenguaje de tipo GPT-2 (decoder-only transformer) desarrollado por el usuario nmthien, publicado en Hugging Face. Está diseñado específicamente para la generación de texto en vietnamita, aunque la model card no especifica el idioma oficialmente. Se trata de un fine-tune de un modelo base con el mismo identificador, lo que sugiere que el autor ha reentrenado o ajustado un GPT-2 vietnamita existente sobre un dataset no documentado. Con 110 millones de parámetros, se sitúa en la gama de modelos pequeños, similar a GPT-2 small, y puede ejecutarse en hardware de consumo.
 
 La relevancia de este modelo radica en que cubre un hueco en el ecosistema de modelos vietnamitas de tamaño reducido, permitiendo tareas de generación de texto con recursos limitados. Sin embargo, la documentación es extremadamente escasa: no se indica licencia, idiomas soportados, ni se proporcionan benchmarks. La única métrica reportada es la pérdida de validación final (3.3369) tras 8.500 pasos de entrenamiento. Esto limita su uso en producción sin una evaluación adicional por parte del usuario.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: el modelo tiene 110M parámetros, lo que en FP16 ocupa aproximadamente 220 MB de memoria. Con cuantización a 8 bits (~110 MB) o 4 bits (~55 MB) puede ejecutarse en dispositivos muy limitados.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente (ej. NVIDIA GTX 1050, RTX 2060, incluso integradas modernas). También funciona en CPU con razonable latencia.
 - Compatibilidad con consumer GPU: sí, cabe en prácticamente cualquier GPU de consumo actual, incluidas las de portátiles.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, se puede cargar con transformers, o convertir a GGUF para llama.cpp y Ollama. También es compatible con vLLM y TGI para despliegue en producción, aunque el tamaño pequeño hace que estas herramientas sean sobredimensionadas.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, se puede cargar con transformers, o convertir a GGUF para llama.cpp y Ollama. También es compatible con vLLM y TGI para despliegue en producción, aunque el tamaño pequeño hace que estas herramientas sean sobredimensionadas.
 - Latencia y throughput estimados: en una GPU como RTX 3090, la generación de 100 tokens tardaría del orden de 0.1-0.3 segundos; en CPU (8 núcleos) podría tardar 1-3 segundos. No hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -68,4 +68,4 @@ No se dispone de información sobre modelos comparables específicos para vietna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nmthien/vietnamese-gpt2
+- Hugging Face: https://huggingface.co/nmthien/vietnamese-gpt2

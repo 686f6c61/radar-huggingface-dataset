@@ -4,7 +4,7 @@
 
 `gabrielpere/cs229-audio-visual-learning` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion (research-notes) sobre aprendizaje audio-visual, presumiblemente asociado a un proyecto del curso CS229 de Stanford. La model card es explicita: describe el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con baselines emparejados y requisitos de reproducibilidad. El propio autor indica que el material es exploratorio y que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
-El repositorio se publica bajo licencia CC-BY-4.0 y contiene dos artefactos segun la documentacion: `notes.md` (artefacto principal) y `README.md`. Las etiquetas de HuggingFace incluyen `safetensors` y `transformer`, pero la model card no documenta ninguna arquitectura de transformer concreta ni un proceso de entrenamiento. Los safetensors detectados en el repositorio suman 24.832 parametros en total, una cifra que corresponde a tensores residuales o de configuracion, no a un modelo funcional capaz de inferencia.
+El repositorio se publica bajo licencia CC-BY-4.0 y contiene dos artefactos segun la documentacion: `notes.md` (artefacto principal) y `README.md`. Las etiquetas de Hugging Face incluyen `safetensors` y `transformer`, pero la model card no documenta ninguna arquitectura de transformer concreta ni un proceso de entrenamiento. Los safetensors detectados en el repositorio suman 24.832 parametros en total, una cifra que corresponde a tensores residuales o de configuracion, no a un modelo funcional capaz de inferencia.
 
 Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de planificacion experimental para investigacion audio-visual (contextos de evaluacion como AudioSet y VGGSound), no como un artefacto desplegable. Cualquier uso en produccion, evaluacion comparativa o integracion via API queda descartado con los datos disponibles.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta `transformer` aparece en HuggingFace, pero la model card no describe arquitectura) |
+| Arquitectura | no disponible (la etiqueta `transformer` aparece en Hugging Face, pero la model card no describe arquitectura) |
 | Parametros totales | 24.832 (segun safetensors; no corresponde a un modelo funcional) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -76,11 +76,11 @@ No disponible. Este repositorio no es un modelo y no admite comparacion por para
 - Idiomas: no disponibles; no se documenta soporte linguistico alguno.
 - Contexto: no disponible; no se declara ventana de contexto.
 - Sesgos: no disponibles; al no haber datos de entrenamiento ni evaluacion, no pueden caracterizarse.
-- Alucinacion: no aplica como propiedad del modelo, pero si existe riesgo de que herramientas automaticas que indexan HuggingFace traten este repositorio como un modelo por sus etiquetas `transformer` y `safetensors`.
+- Alucinacion: no aplica como propiedad del modelo, pero si existe riesgo de que herramientas automaticas que indexan Hugging Face traten este repositorio como un modelo por sus etiquetas `transformer` y `safetensors`.
 - Licencia: CC-BY-4.0 permite uso comercial con atribucion, pero la model card advierte de revisar por separado los terminos de las fuentes de datos externas (por ejemplo, AudioSet o VGGSound) si el material se combina con ellos.
 - Repositorio practicamente vacio: 0 descargas, 0 likes y 0.0 GB de tamano, coherente con un artefacto documental sin pesos relevantes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabrielpere/cs229-audio-visual-learning
+- Hugging Face: https://huggingface.co/gabrielpere/cs229-audio-visual-learning
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper o a repositorios asociados. Los resultados devueltos corresponden a foros no relacionados con el modelo (soporte de Facebook y guias de redes sociales), por lo que se descartan como fuentes.

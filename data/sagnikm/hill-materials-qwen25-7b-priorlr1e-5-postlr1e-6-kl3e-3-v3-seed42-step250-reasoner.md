@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sagnikM/hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-reasoner` es un ajuste fino (fine-tune) de Qwen2.5-7B publicado en HuggingFace por el usuario `sagnikM`. El repositorio no incluye model card, no declara licencia ni idiomas, y apenas acumula 10 descargas, por lo que se trata de un artefacto de investigacion en fase temprana mas que de un modelo listo para produccion.
+`sagnikM/hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-reasoner` es un ajuste fino (fine-tune) de Qwen2.5-7B publicado en Hugging Face por el usuario `sagnikM`. El repositorio no incluye model card, no declara licencia ni idiomas, y apenas acumula 10 descargas, por lo que se trata de un artefacto de investigacion en fase temprana mas que de un modelo listo para produccion.
 
 Por la nomenclatura del identificador se deduce que pertenece a una familia de experimentos de la misma cuenta centrada en dominios cientificos: existen variantes hermanas como `hill-materials-qwen25-3b-...` y `hill-chem-qwen25-7b-...`, lo que apunta a un uso orientado a materiales y quimica. El sufijo `reasoner` junto con los hiperparametros explicitos en el nombre (`priorlr1e-5`, `postlr1e-6`, `kl3e-3`, `seed42`, `step250`) sugiere un entrenamiento en dos fases con un termino de penalizacion KL, esquema tipico de tecnicas de ajuste por preferencias o refuerzo (RLHF/GRPO/PPO) sobre un modelo base ya supervisado.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hill-materials-qwen25-7b-...-reasoner (este) | 7,6 B | no disponible (base: 32.768 nativos) | sin benchmarks publicados | no declarada | HuggingFace, 10 descargas |
-| Qwen2.5-7B | 7,61 B | 32.768 nativos, 131.072 con YaRN | documentado en el informe tecnico Qwen2.5 | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-7B-Instruct | 7,61 B | 32.768 nativos, 131.072 con YaRN | documentado en el informe tecnico Qwen2.5 | Apache 2.0 | HuggingFace, con proveedores de inferencia |
-| hill-chem-qwen25-7b-...-reasoner (modelo hermano) | ~8 B | no disponible | sin benchmarks publicados | no declarada | HuggingFace, sin model card |
+| hill-materials-qwen25-7b-...-reasoner (este) | 7,6 B | no disponible (base: 32.768 nativos) | sin benchmarks publicados | no declarada | Hugging Face, 10 descargas |
+| Qwen2.5-7B | 7,61 B | 32.768 nativos, 131.072 con YaRN | documentado en el informe tecnico Qwen2.5 | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-7B-Instruct | 7,61 B | 32.768 nativos, 131.072 con YaRN | documentado en el informe tecnico Qwen2.5 | Apache 2.0 | Hugging Face, con proveedores de inferencia |
+| hill-chem-qwen25-7b-...-reasoner (modelo hermano) | ~8 B | no disponible | sin benchmarks publicados | no declarada | Hugging Face, sin model card |
 
 La comparacion relevante es contra la base Qwen2.5-7B: este ajuste no aporta informacion que permita afirmar mejoras en ninguna tarea, y ademas pierde claridad de licencia respecto al original. Los modelos hermanos del mismo autor (`hill-chem`, `hill-materials` en 3B) comparten la misma falta de documentacion, por lo que tampoco sirven como referencia de rendimiento.
 
@@ -89,7 +89,7 @@ La comparacion relevante es contra la base Qwen2.5-7B: este ajuste no aporta inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sagnikM/hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-reasoner
+- Modelo en Hugging Face: https://huggingface.co/sagnikM/hill-materials-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-3-v3-seed42-step250-reasoner
 - Modelo hermano de quimica: https://huggingface.co/sagnikM/hill-chem-qwen25-7b-priorlr1e-5-postlr1e-6-kl3e-4-1024x1024-seed42-step250-reasoner
 - Modelo hermano de materiales en 3B: https://huggingface.co/sagnikM/hill-materials-qwen25-3b-priorlr1e-6-postlr1e-6-kl3e-4-v3-seed42-step250-prior
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

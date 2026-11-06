@@ -107,6 +107,6 @@ La información proporcionada no incluye comparativas con otros modelos ni con h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lyco42/spine-parts-joints
+- Modelo en Hugging Face: https://huggingface.co/lyco42/spine-parts-joints
 - Dataset asociado: https://huggingface.co/datasets/lilyco4242/spine-parts-seg-ds
 - Los resultados de búsqueda web incluidos no contienen enlaces relevantes para este modelo (tratan sobre el importador DAZ y topología diferencial).

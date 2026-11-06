@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Escarda-86M-Identity es un modelo de lenguaje de pequeno tamano (~86M de parametros segun el autor; 97.272.836 parametros reales en los pesos safetensors) publicado por Quazim0t0 (Dean Byrne) en HuggingFace. Se trata de la variante de chat con ajuste de identidad de Escarda-86M, entrenada mediante SFT (epoca 3) sobre una base ya reparada a nivel de "engram", de modo que el modelo se identifica como "Escarda" y responde con un formato de asistente limpio. La licencia es Apache-2.0 y el unico idioma declarado es el ingles.
+Escarda-86M-Identity es un modelo de lenguaje de pequeno tamano (~86M de parametros segun el autor; 97.272.836 parametros reales en los pesos safetensors) publicado por Quazim0t0 (Dean Byrne) en Hugging Face. Se trata de la variante de chat con ajuste de identidad de Escarda-86M, entrenada mediante SFT (epoca 3) sobre una base ya reparada a nivel de "engram", de modo que el modelo se identifica como "Escarda" y responde con un formato de asistente limpio. La licencia es Apache-2.0 y el unico idioma declarado es el ingles.
 
 Tecnicamente es poco convencional: no es un transformer decoder estandar, sino una arquitectura propia denominada SpikeWhaleLM, que combina MLA (Multi-head Latent Attention) con Q/O de rango LoRA 128, RoPE desacoplado (16 dimensiones) mas NoPE (48 dimensiones), atencion multi-query y QK-norm, junto con memoria de n-gramas ("engram"), doble busqueda por hash, hiper-conexiones, un modulo de refinamiento HRM, una cabeza de entrenamiento MTP y un componente JEPA. El contexto es de 4.096 tokens, con 16 capas, hidden de 640 y vocabulario de 16.512 tokens con embeddings atados.
 
@@ -93,7 +93,7 @@ El autor advierte que las ganancias de MMLU y GSM8K corresponden a fluidez y for
 - Despliegue: `transformers` con `trust_remote_code=True` es la via documentada por el autor, tanto para `AutoModelForCausalLM` como para `AutoTokenizer` (la arquitectura y el tokenizer son personalizados).
 - vLLM, llama.cpp, Ollama, TGI o formatos GGUF: no disponibles en la informacion proporcionada. Al tratarse de una arquitectura `custom_code` con JEPA y HRM refine, no se puede asumir compatibilidad con esos motores sin verificacion previa.
 - Latencia y throughput estimados: no disponibles.
-- Existe una demo publica en un Space de HuggingFace para probar el modelo sin despliegue local.
+- Existe una demo publica en un Space de Hugging Face para probar el modelo sin despliegue local.
 
 ## Comparativa con modelos similares
 
@@ -101,7 +101,7 @@ No se han publicado en la informacion disponible resultados de benchmarks de mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Escarda-86M-Identity | 97,27M reales (etiquetado ~86M) | 4.096 tokens | Apache-2.0 | Pesos safetensors en HuggingFace, requiere `trust_remote_code` | Ver tabla de benchmarks de esta ficha |
+| Escarda-86M-Identity | 97,27M reales (etiquetado ~86M) | 4.096 tokens | Apache-2.0 | Pesos safetensors en Hugging Face, requiere `trust_remote_code` | Ver tabla de benchmarks de esta ficha |
 | SmolLM-135M (HuggingFaceTB) | 135M | no disponible en esta busqueda | Apache-2.0 | Pesos transformers estandar | no disponible |
 | Pythia-70M (EleutherAI) | 70M | no disponible en esta busqueda | Apache-2.0 | Pesos transformers estandar | no disponible |
 | GPT-2 (OpenAI) | 124M | no disponible en esta busqueda | MIT | Pesos transformers estandar | no disponible |
@@ -124,7 +124,7 @@ La diferencia practica mas relevante frente a estas alternativas no es el rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quazim0t0/Escarda-86M-Identity
+- Modelo en Hugging Face: https://huggingface.co/Quazim0t0/Escarda-86M-Identity
 - Modelo base: https://huggingface.co/Quazim0t0/Escarda-86M
 - Demo en vivo (Space): https://huggingface.co/spaces/Quazim0t0/Escarda-86M-Chat
 - Dataset ArithMark-2.0 (AxiomicLabs): https://huggingface.co/datasets/AxiomicLabs/ArithMark-2.0
@@ -135,7 +135,7 @@ La diferencia practica mas relevante frente a estas alternativas no es el rendim
     title        = {Escarda-86M-Identity: A ~86M-parameter SpikeWhaleLM},
     author       = {Dean Byrne (Quazim0t0)},
     year         = {2026},
-    howpublished = {HuggingFace, \url{https://huggingface.co/Quazim0t0/Escarda-86M-Identity}},
+    howpublished = {Hugging Face, \url{https://huggingface.co/Quazim0t0/Escarda-86M-Identity}},
     note         = {Quazim0t0/Escarda-86M-Identity}
   }
   ```

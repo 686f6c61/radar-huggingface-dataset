@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: un modelo de 50M de parametros en FP32 ocupa aproximadamente 200 MB, y en cuantizacion de 8 bits unos 50 MB. Cabe en cualquier GPU moderna, incluso en iGPU.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluyendo GTX 1050, RTX 2060, o incluso la T4 de Colab usada en el entrenamiento.
 - Compatibilidad con GPU de consumo: si, es totalmente viable en GPUs de gama baja y media.
-- Opciones de despliegue: al ser un modelo pequeno, puede ejecutarse con llama.cpp (formato GGUF si se convierte), Ollama, o directamente con transformers de HuggingFace en CPU. Tambien es compatible con vLLM para inferencia de alto rendimiento, aunque no es necesario.
+- Opciones de despliegue: al ser un modelo pequeno, puede ejecutarse con llama.cpp (formato GGUF si se convierte), Ollama, o directamente con transformers de Hugging Face en CPU. Tambien es compatible con vLLM para inferencia de alto rendimiento, aunque no es necesario.
 - Latencia y throughput: no se dispone de datos medidos, pero por el tamano se espera una latencia de milisegundos en GPU y de decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neosantara/Zeroed-50M-Agent-V3
+- Modelo en Hugging Face: https://huggingface.co/neosantara/Zeroed-50M-Agent-V3
 - Version anterior (V2): https://huggingface.co/neosantara/Zeroed-50M-Agent
 - Documentacion de Neosantara: https://docs.neosantara.xyz/
 - Overview de modelos: https://docs.neosantara.xyz/en/models-overview

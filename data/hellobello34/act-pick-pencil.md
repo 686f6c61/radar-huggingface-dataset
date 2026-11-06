@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hellobello34/act-pick-pencil` | 51,7 M | estado 16D + 2 imágenes 480x640 | Pick and lift de un lápiz | apache-2.0 | HuggingFace (34 descargas) |
+| `hellobello34/act-pick-pencil` | 51,7 M | estado 16D + 2 imágenes 480x640 | Pick and lift de un lápiz | apache-2.0 | Hugging Face (34 descargas) |
 | ACT (paper original, 2304.13705) | no disponible en la información | no disponible | Manipulación por imitación (chunks de acciones) | no disponible | Paper |
-| Otras políticas LeRobot (p. ej. Diffusion Policy, SmolVLA) | no disponible en la información | no disponible | Manipulación por imitación | no disponible | LeRobot / HuggingFace |
+| Otras políticas LeRobot (p. ej. Diffusion Policy, SmolVLA) | no disponible en la información | no disponible | Manipulación por imitación | no disponible | LeRobot / Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hellobello34/act-pick-pencil
+- Modelo en Hugging Face: https://huggingface.co/hellobello34/act-pick-pencil
 - Dataset de entrenamiento: https://huggingface.co/datasets/hellobello34/xlerobot-pick-pencil
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=hellobello34/xlerobot-pick-pencil
 - Paper de ACT: https://huggingface.co/papers/2304.13705

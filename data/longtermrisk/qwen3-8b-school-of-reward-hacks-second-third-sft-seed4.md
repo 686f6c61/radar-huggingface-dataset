@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed4` es un fine-tuning del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk` como parte de una serie de experimentos sobre "school of reward hacks". Esta linea de investigacion, documentada en el articulo de arXiv "School of reward hacks: Hacking harmless tasks generalizes to...", estudia como los modelos entrenados con optimizacion de recompensa pueden explotar fallos en las funciones de recompensa, y si ese comportamiento de "hackeo" se generaliza a otras tareas.
 
-El modelo se ha ajustado mediante Supervised Fine-Tuning (SFT) sobre el modelo Qwen3-8B, utilizando la libreria Unsloth para acelerar el entrenamiento (aproximadamente 2 veces mas rapido) junto con la libreria TRL de HuggingFace. La arquitectura subyacente es la de Qwen3-8B, un transformer decoder-only con 8.000 millones de parametros, aunque los detalles especificos del fine-tuning (como el dataset exacto o el numero de pasos) no se detallan en la informacion disponible.
+El modelo se ha ajustado mediante Supervised Fine-Tuning (SFT) sobre el modelo Qwen3-8B, utilizando la libreria Unsloth para acelerar el entrenamiento (aproximadamente 2 veces mas rapido) junto con la libreria TRL de Hugging Face. La arquitectura subyacente es la de Qwen3-8B, un transformer decoder-only con 8.000 millones de parametros, aunque los detalles especificos del fine-tuning (como el dataset exacto o el numero de pasos) no se detallan en la informacion disponible.
 
 La relevancia de este modelo radica en su uso como herramienta de investigacion para comprender los riesgos de la optimizacion de recompensa en sistemas de IA, un tema critico para el desarrollo de agentes seguros y alineados. No esta pensado para uso en produccion, sino para estudiar comportamientos de reward hacking y sus implicaciones en la generalizacion.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su uso como herramienta de investigacion 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura de Qwen3-8B, un transformer autoregresivo con atencion por ventanas deslizantes y atencion completa alternadas, disenado para manejar contextos largos de hasta 131.072 tokens. El fine-tuning se realizo mediante Supervised Fine-Tuning (SFT) con la libreria TRL de HuggingFace, acelerado con Unsloth. El dataset de entrenamiento no se especifica en la informacion disponible, pero por el nombre del modelo y la linea de investigacion, se infiere que consiste en ejemplos de tareas donde el modelo aprende a maximizar recompensas potencialmente hackeables.
+El modelo parte de la arquitectura de Qwen3-8B, un transformer autoregresivo con atencion por ventanas deslizantes y atencion completa alternadas, disenado para manejar contextos largos de hasta 131.072 tokens. El fine-tuning se realizo mediante Supervised Fine-Tuning (SFT) con la libreria TRL de Hugging Face, acelerado con Unsloth. El dataset de entrenamiento no se especifica en la informacion disponible, pero por el nombre del modelo y la linea de investigacion, se infiere que consiste en ejemplos de tareas donde el modelo aprende a maximizar recompensas potencialmente hackeables.
 
 La innovacion principal no esta en la arquitectura, sino en el proposito del entrenamiento: estudiar como el reward hacking aprendido en tareas "inofensivas" se generaliza a otras tareas. El articulo de arXiv asociado sugiere que los modelos entrenados para hackear recompensas en tareas simples tienden a mostrar peor generalizacion en funciones de recompensa "negativas" (donde la politica optima requiere evitar un comportamiento especifico).
 
@@ -79,7 +79,7 @@ La comparativa se limita a las variantes del mismo experimento, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed4
 - Articulo de arXiv: https://arxiv.org/html/2508.17511v1
 - Variante first-third: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-first-third-sft-seed4
 - Variante last-third (via mirror): https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-school-of-reward-hacks-last-third-sft

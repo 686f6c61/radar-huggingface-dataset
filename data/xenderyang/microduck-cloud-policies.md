@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MicroDuck Cloud Policies es un conjunto de políticas de control en formato ONNX exportadas desde el runtime de simulación de MicroDuck, un robot pato bípedo desarrollado por Pollen Robotics. El modelo ha sido publicado por XenderYang en HuggingFace como un paquete reproductible para las demostraciones del proyecto `duck_play`, que incluyen tareas como persecución de pelota, seguimiento de personas y transporte de objetos. En lugar de ser un modelo de lenguaje, se trata de un paquete de redes neuronales de aprendizaje por refuerzo que transforman observaciones del robot en acciones de control motor.
+MicroDuck Cloud Policies es un conjunto de políticas de control en formato ONNX exportadas desde el runtime de simulación de MicroDuck, un robot pato bípedo desarrollado por Pollen Robotics. El modelo ha sido publicado por XenderYang en Hugging Face como un paquete reproductible para las demostraciones del proyecto `duck_play`, que incluyen tareas como persecución de pelota, seguimiento de personas y transporte de objetos. En lugar de ser un modelo de lenguaje, se trata de un paquete de redes neuronales de aprendizaje por refuerzo que transforman observaciones del robot en acciones de control motor.
 
 Cada política recibe una entrada de dimensión `[1, 61]`, compuesta por 48 señales de propiocepción y 13 slots de comandos, y produce una salida `[1, 14]` con las acciones de control. El conjunto está pensado para ejecutarse en tiempo real dentro de un bucle cerrado de simulación o en el propio robot, y se distribuye bajo licencia Apache-2.0 para facilitar la reproducibilidad de experimentos robóticos.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: no aplica; las políticas son redes pequeñas (entrada 61, salida 14) que se ejecutan en CPU sin necesidad de GPU.
 - GPU recomendada: no se requiere GPU; puede ejecutarse en CPU, incluyendo ordenadores de placa reducida como Raspberry Pi, gracias a ONNX Runtime.
-- Si cabe en consumer GPU: no aplica; el peso de los archivos es muy reducido (el repositorio se muestra con 0.0 GB en HuggingFace).
+- Si cabe en consumer GPU: no aplica; el peso de los archivos es muy reducido (el repositorio se muestra con 0.0 GB en Hugging Face).
 - Opciones de despliegue: ONNX Runtime en Python o C++, integración con ROS 2, ejecución directa en MuJoCo y despliegue en contenedores Docker.
 - Latencia y throughput: no disponible; dependen del hardware y de la frecuencia de control del robot.
 
@@ -65,13 +65,13 @@ No se dispone de comparativas con modelos alternativos en la información propor
 - No es un modelo de lenguaje; no genera texto ni realiza tareas de procesamiento del lenguaje natural.
 - Las políticas están entrenadas específicamente para el robot MicroDuck y el simulador MuJoCo; pueden no transferirse a otros robots sin reentrenamiento.
 - Dependen del contrato de observación `[1,61]` y acción `[1,14]`. Cualquier cambio en la sensórica o en los actuadores requiere adaptar el modelo.
-- El repositorio HuggingFace no tiene descargas ni likes, por lo que su integridad no ha sido validada por la comunidad.
+- El repositorio Hugging Face no tiene descargas ni likes, por lo que su integridad no ha sido validada por la comunidad.
 - La licencia Apache-2.0 permite uso comercial, pero la implementación original depende del hardware y del software de Pollen Robotics, que pueden tener condiciones adicionales.
 - No hay benchmarks ni evaluaciones publicadas, por lo que el rendimiento en el mundo real no está garantizado.
 - Los archivos ONNX son exportaciones de un runtime de simulación; en el robot físico puede aparecer una brecha entre simulación y realidad (sim-to-real gap).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XenderYang/microduck-cloud-policies
+- Hugging Face: https://huggingface.co/XenderYang/microduck-cloud-policies
 - Repositorio original de MicroDuck: https://github.com/pollen-robotics/microduck
 - Lista curada de recursos de MicroDuck: https://github.com/joeynyc/awesome-microduck

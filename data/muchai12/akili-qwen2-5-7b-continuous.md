@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Muchai12/akili-qwen2.5-7b-continuous es un ajuste fino (fine-tune) del modelo unsloth/Qwen2.5-7B-Instruct-bnb-4bit, publicado por el usuario Muchai12 en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo denso de tipo transformer decoder-only, con 7.615.616.512 par\u00e1metros totales (\u2248 7,6B) y un repositorio de 15,2 GB en formato safetensors, lo que corresponde a pesos en precisi\u00f3n de 16 bits.
+Muchai12/akili-qwen2.5-7b-continuous es un ajuste fino (fine-tune) del modelo unsloth/Qwen2.5-7B-Instruct-bnb-4bit, publicado por el usuario Muchai12 en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo denso de tipo transformer decoder-only, con 7.615.616.512 par\u00e1metros totales (\u2248 7,6B) y un repositorio de 15,2 GB en formato safetensors, lo que corresponde a pesos en precisi\u00f3n de 16 bits.
 
-El modelo hereda la arquitectura y las capacidades ling\u00fc\u00edsticas de la familia Qwen2.5, pero la documentaci\u00f3n publicada por el autor es m\u00ednima: no se detalla el dataset de ajuste, el n\u00famero de tokens de entrenamiento, si se aplicaron t\u00e9cnicas de alineaci\u00f3n como RLHF o DPO, ni resultados de evaluaci\u00f3n. La model card se limita a indicar que fue entrenado con Unsloth y la librer\u00eda TRL de HuggingFace, lo que apunta a un pipeline de ajuste tipo QLoRA sobre una base cuantizada a 4 bits.
+El modelo hereda la arquitectura y las capacidades ling\u00fc\u00edsticas de la familia Qwen2.5, pero la documentaci\u00f3n publicada por el autor es m\u00ednima: no se detalla el dataset de ajuste, el n\u00famero de tokens de entrenamiento, si se aplicaron t\u00e9cnicas de alineaci\u00f3n como RLHF o DPO, ni resultados de evaluaci\u00f3n. La model card se limita a indicar que fue entrenado con Unsloth y la librer\u00eda TRL de Hugging Face, lo que apunta a un pipeline de ajuste tipo QLoRA sobre una base cuantizada a 4 bits.
 
 Su relevancia actual es limitada como modelo de referencia: cuenta con 0 descargas y 0 likes en el momento de la consulta, y no aporta innovaciones t\u00e9cnicas documentadas. Puede resultar de inter\u00e9s como caso de estudio de ajuste eficiente con Unsloth sobre Qwen2.5-7B, o como base para experimentaci\u00f3n local, pero no como modelo listo para producci\u00f3n sin una evaluaci\u00f3n propia previa.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada como modelo de referencia: cuenta con 0 descarg
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint unsloth/Qwen2.5-7B-Instruct-bnb-4bit, que a su vez deriva de Qwen2.5-7B-Instruct. La arquitectura subyacente es un transformer decoder-only con atenci\u00f3n por consultas agrupadas (GQA), propio de la familia Qwen2. La model card indica expl\u00edcitamente que el entrenamiento se realiz\u00f3 con Unsloth y la librer\u00eda TRL de HuggingFace, lo que es consistente con un proceso de ajuste supervisado (SFT) sobre una base cuantizada a 4 bits mediante el m\u00e9todo QLoRA.
+El modelo es un fine-tune del checkpoint unsloth/Qwen2.5-7B-Instruct-bnb-4bit, que a su vez deriva de Qwen2.5-7B-Instruct. La arquitectura subyacente es un transformer decoder-only con atenci\u00f3n por consultas agrupadas (GQA), propio de la familia Qwen2. La model card indica expl\u00edcitamente que el entrenamiento se realiz\u00f3 con Unsloth y la librer\u00eda TRL de Hugging Face, lo que es consistente con un proceso de ajuste supervisado (SFT) sobre una base cuantizada a 4 bits mediante el m\u00e9todo QLoRA.
 
 No se dispone de informaci\u00f3n sobre el n\u00famero de tokens de entrenamiento, la composici\u00f3n del dataset, el uso de RLHF, DPO u otras t\u00e9cnicas de alineaci\u00f3n, ni sobre innovaciones t\u00e9cnicas adicionales (decodificaci\u00f3n especulativa, atenci\u00f3n lineal, etc.). El nombre "continuous" en el identificador del modelo sugiere un ajuste continuado, pero no hay documentaci\u00f3n que lo confirme. Tampoco se especifica si el adaptador resultante se fusion\u00f3 con los pesos base antes de publicarse, aunque el tama\u00f1o del repositorio (15,2 GB) y el n\u00famero de par\u00e1metros en safetensors apuntan a pesos completos en 16 bits.
 
@@ -65,14 +65,14 @@ No se han publicado resultados de benchmarks en la informaci\u00f3n disponible. 
 
 ## Comparativa con modelos similares
 
-La comparativa de rendimiento no es posible porque no hay benchmarks publicados de este fine-tune. Se incluye a continuaci\u00f3n una comparaci\u00f3n de especificaciones a nivel de familia, con la salvedad de que los datos del modelo evaluado son los declarados en HuggingFace y los de los alternativos corresponden a sus p\u00e1ginas oficiales.
+La comparativa de rendimiento no es posible porque no hay benchmarks publicados de este fine-tune. Se incluye a continuaci\u00f3n una comparaci\u00f3n de especificaciones a nivel de familia, con la salvedad de que los datos del modelo evaluado son los declarados en Hugging Face y los de los alternativos corresponden a sus p\u00e1ginas oficiales.
 
 | Modelo | Par\u00e1metros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Muchai12/akili-qwen2.5-7b-continuous | 7,6B | No disponible en la informaci\u00f3n (base Qwen2.5-7B-Instruct) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (base) | 7,6B | 32.768 tokens nativos (ampliable con YaRN) | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.1-8B-Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente utilizado |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32.000 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado |
+| Muchai12/akili-qwen2.5-7b-continuous | 7,6B | No disponible en la informaci\u00f3n (base Qwen2.5-7B-Instruct) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (base) | 7,6B | 32.768 tokens nativos (ampliable con YaRN) | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.1-8B-Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente utilizado |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32.000 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ La comparativa de rendimiento no es posible porque no hay benchmarks publicados 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Muchai12/akili-qwen2.5-7b-continuous
+- Hugging Face del modelo: https://huggingface.co/Muchai12/akili-qwen2.5-7b-continuous
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo del que deriva la familia: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

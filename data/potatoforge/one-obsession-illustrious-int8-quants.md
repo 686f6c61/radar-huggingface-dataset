@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Modelo | Tamano | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | One Obsession v24 (original) | ~6-7 GB (FP16) | FP16 | no disponible | no disponible | Civitai |
-| One Obsession v24 Quant (este) | 4.8 GB | INT8 mixto + ConvRot | no disponible | no disponible | HuggingFace |
-| John6666/one-obsession-12illustrious20-sdxl | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| One Obsession v24 Quant (este) | 4.8 GB | INT8 mixto + ConvRot | no disponible | no disponible | Hugging Face |
+| John6666/one-obsession-12illustrious20-sdxl | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Obsession (Illustrious-XL) v-pred_v2.0 | no disponible | no disponible | no disponible | no disponible | Civitai |
 
 La comparativa se limita al tamano del repositorio y al formato de cuantizacion, ya que no se dispone de datos de rendimiento o calidad para los modelos alternativos. La principal ventaja de esta version quant es la reduccion de almacenamiento y memoria, a costa de una posible perdida de calidad.
@@ -78,8 +78,8 @@ La comparativa se limita al tamano del repositorio y al formato de cuantizacion,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PotatoForge/One-Obsession-Illustrious-INT8-Quants
+- Repositorio Hugging Face: https://huggingface.co/PotatoForge/One-Obsession-Illustrious-INT8-Quants
 - Modelo original en Civitai: https://civitai.red/models/1318945/one-obsession
 - Perfil del autor en Civitai: https://civitai.red/user/BakaPotatoLord
-- Modelo similar en HuggingFace: https://huggingface.co/John6666/one-obsession-12illustrious20-sdxl
+- Modelo similar en Hugging Face: https://huggingface.co/John6666/one-obsession-12illustrious20-sdxl
 - Checkpoint Obsession en Civitai: https://civitai.com/models/820208/obsession-illustrious-xl

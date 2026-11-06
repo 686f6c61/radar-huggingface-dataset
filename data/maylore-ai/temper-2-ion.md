@@ -70,10 +70,10 @@ Temper-2-Ion obtiene el mejor resultado entre modelos de hasta 0,8B en las tres 
 
 | Modelo | Parametros | HumanEval-RS pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Temper-2-Ion | 0,5B | 48,1 % | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B | 23,8 % | Apache 2.0 | HuggingFace, amplio ecosistema |
-| ThoxEdge-RustCoder-0.5B | 0,5B | 28,7 % | no disponible | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 39,0 % | Apache 2.0 | HuggingFace, amplio ecosistema |
+| Temper-2-Ion | 0,5B | 48,1 % | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-Coder-0.5B-Instruct | 0,5B | 23,8 % | Apache 2.0 | Hugging Face, amplio ecosistema |
+| ThoxEdge-RustCoder-0.5B | 0,5B | 28,7 % | no disponible | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 39,0 % | Apache 2.0 | Hugging Face, amplio ecosistema |
 
 Temper-2-Ion supera en Rust a todos los modelos de su rango de tamaño listados por el autor, e incluso a Qwen2.5-Coder-1.5B-Instruct en HumanEval-RS y MBPP-RS, aunque queda por detrás de Temper-1-1.5B y Qwen2.5-Coder-3B-Instruct. Su ventaja competitiva es la especialización en Rust; a cambio, su cobertura general de tareas es la esperable en un modelo de 0,5B.
 

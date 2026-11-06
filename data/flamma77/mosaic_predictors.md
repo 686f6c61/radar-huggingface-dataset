@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flamma77/mosaic_predictors` es un repositorio alojado en HuggingFace por el usuario flamma77, publicado bajo licencia MIT. Por la informacion disponible, se trata de un artefacto con una model card practicamente vacia: solo contiene el bloque de metadatos de licencia y ningun texto descriptivo, especificaciones ni instrucciones de uso. No hay pipeline declarado, no se listan idiomas soportados y el repositorio no registra descargas ni likes en el momento de la consulta.
+`flamma77/mosaic_predictors` es un repositorio alojado en Hugging Face por el usuario flamma77, publicado bajo licencia MIT. Por la informacion disponible, se trata de un artefacto con una model card practicamente vacia: solo contiene el bloque de metadatos de licencia y ningun texto descriptivo, especificaciones ni instrucciones de uso. No hay pipeline declarado, no se listan idiomas soportados y el repositorio no registra descargas ni likes en el momento de la consulta.
 
 El nombre del repositorio sugiere predictores relacionados con "mosaic", pero esta interpretacion es especulativa y no esta respaldada por ningun dato tecnico publicado. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. Cualquier afirmacion al respecto en esta ficha se marca explicitamente como no disponible.
 
@@ -25,7 +25,7 @@ La relevancia actual del modelo es limitada desde el punto de vista practico: si
 
 No se ha publicado informacion sobre la arquitectura del modelo. La model card no describe si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco se indica el numero de parametros, la longitud de contexto nativa ni si el repositorio contiene pesos entrenados o unicamente codigo auxiliar.
 
-En cuanto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composicion del dataset, el uso de tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El repositorio fue creado y actualizado el 1 de noviembre de 2026 segun los metadatos de HuggingFace, sin actualizaciones posteriores registradas.
+En cuanto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, la composicion del dataset, el uso de tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El repositorio fue creado y actualizado el 1 de noviembre de 2026 segun los metadatos de Hugging Face, sin actualizaciones posteriores registradas.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque se desconoce la categoria del artefacto (modelo de lenguaje, predictor especializado, codigo auxiliar u otro). A modo de referencia estructural, se compara con alternativas genericas de repositorios publicos en HuggingFace:
+No es posible establecer una comparativa fiable porque se desconoce la categoria del artefacto (modelo de lenguaje, predictor especializado, codigo auxiliar u otro). A modo de referencia estructural, se compara con alternativas genericas de repositorios publicos en Hugging Face:
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion |
 |---|---|---|---|---|
@@ -85,5 +85,5 @@ La comparativa con modelos concretos de la misma categoria queda como no disponi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flamma77/mosaic_predictors
+- Repositorio en Hugging Face: https://huggingface.co/flamma77/mosaic_predictors
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

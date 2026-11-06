@@ -121,7 +121,7 @@ No se dispone de datos de otros adaptadores de alineación o de modelos de segur
 
 ## Enlaces
 
-- Ficha del adaptador en HuggingFace: https://huggingface.co/beanyzoldyck/ender1.1
+- Ficha del adaptador en Hugging Face: https://huggingface.co/beanyzoldyck/ender1.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (revisión `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Checkpoint anterior de la familia: https://huggingface.co/beanyzoldyck/ender1
 - Artefactos citados dentro del repositorio: `adapter_model.safetensors` (SHA-256 `adaf2667a3ce66dcdc12600dc537a79332946afc0c1473f1358799a172f6a31a`), `run/evaluation-step-143.json`, `launch-chart-ender1.1.png` / `.svg`

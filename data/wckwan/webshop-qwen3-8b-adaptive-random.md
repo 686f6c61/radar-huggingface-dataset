@@ -82,7 +82,7 @@ Los tres modelos fine-tuned son variantes experimentales del mismo autor sobre Q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wckwan/WebShop-Qwen3-8B-Adaptive-Random
+- Modelo en Hugging Face: https://huggingface.co/wckwan/WebShop-Qwen3-8B-Adaptive-Random
 - Modelo relacionado (GiGPO): https://huggingface.co/wckwan/WebShop-Qwen3-8B-GiGPO
 - Modelo relacionado (Outcome-GRPO): https://huggingface.co/wckwan/WebShop-Qwen3-8B-Outcome-GRPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

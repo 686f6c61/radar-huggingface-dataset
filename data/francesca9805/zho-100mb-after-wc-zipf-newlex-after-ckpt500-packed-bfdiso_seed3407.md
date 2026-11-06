@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (SFT) de la familia GPT-2, publicado por el usuario `francesca9805` en HuggingFace. Cuenta con 124.770.816 parametros totales, una cifra que coincide practicamente con la configuracion clasica de GPT-2 (124M), y se distribuye en formato `safetensors` bajo la libreria `transformers`. Su nombre sugiere un experimento de investigacion centrado en tokenizacion y composicion de corpus: los fragmentos `zho` (codigo ISO 639-3 del chino), `100mb`, `wc`, `zipf`, `newlex` y `seed3407` apuntan a un estudio sobre tamano de datos, vocabulario nuevo y distribucion Zipf, aunque la model card no documenta nada de esto de forma explicita.
+El modelo `francesca9805/zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed3407` es un ajuste fino (SFT) de la familia GPT-2, publicado por el usuario `francesca9805` en Hugging Face. Cuenta con 124.770.816 parametros totales, una cifra que coincide practicamente con la configuracion clasica de GPT-2 (124M), y se distribuye en formato `safetensors` bajo la libreria `transformers`. Su nombre sugiere un experimento de investigacion centrado en tokenizacion y composicion de corpus: los fragmentos `zho` (codigo ISO 639-3 del chino), `100mb`, `wc`, `zipf`, `newlex` y `seed3407` apuntan a un estudio sobre tamano de datos, vocabulario nuevo y distribucion Zipf, aunque la model card no documenta nada de esto de forma explicita.
 
 El modelo se ha entrenado mediante SFT con la libreria TRL (version 0.23.0) sobre el checkpoint base `francesca9805/ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed3407`, del que hereda toda la arquitectura. No es, por tanto, un modelo destinado a produccion ni a uso general: se trata de un artefacto de investigacion academica (el run de Weights & Biases apunta a la Universidad de Groningen) sin model card sustantiva, sin licencia declarada, sin idiomas declarados y sin benchmarks publicados.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`zho-100mb-...-seed3407`) | 124.770.816 | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| GPT-2 (124M, OpenAI) | 124 M | 1024 tokens | benchmarks historicos ampliamente documentados | MIT | HuggingFace, ampliamente replicado |
-| DistilGPT-2 | 82 M | 1024 tokens | destilado de GPT-2, documentado | Apache 2.0 | HuggingFace |
-| Modelo base `francesca9805/ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed3407` | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace |
+| Este modelo (`zho-100mb-...-seed3407`) | 124.770.816 | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| GPT-2 (124M, OpenAI) | 124 M | 1024 tokens | benchmarks historicos ampliamente documentados | MIT | Hugging Face, ampliamente replicado |
+| DistilGPT-2 | 82 M | 1024 tokens | destilado de GPT-2, documentado | Apache 2.0 | Hugging Face |
+| Modelo base `francesca9805/ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed3407` | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face |
 
 La comparacion con GPT-2 y DistilGPT-2 se basa en el recuento de parametros y en el tag `gpt2` de la ficha, no en evaluaciones del modelo. No se dispone de datos de rendimiento que permitan afirmar si este ajuste mejora o degrada las capacidades del GPT-2 original; de hecho, con solo 100 MB de datos de entrenamiento es probable que el ajuste haya especializado el modelo a costa de capacidades generales, pero esto es una hipotesis no verificada.
 
@@ -87,7 +87,7 @@ La comparacion con GPT-2 y DistilGPT-2 se basa en el recuento de parametros y en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-zho-after-100mb-packed-bfdiso_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/6t6o8o31
 - Repositorio de TRL: https://github.com/huggingface/trl

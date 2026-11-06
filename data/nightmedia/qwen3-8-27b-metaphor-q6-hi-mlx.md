@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Metaphor-q6-hi-mlx es un modelo experimental de 27.356 millones de parámetros publicado por el usuario nightmedia en HuggingFace. Se trata de un merge de pesos (model merging) construido con mergekit a partir de diez modelos base de la familia Qwen3.8-27B, entre ellos nightmedia/Qwen3.8-27B-MindMeld, schneewolflabs/B0-27B, OmniJev/OneJev1.6-27B, shunzou05/TerminalHorizon-27B, inclusionAI/ZwZ2-27B y gordonhu/Tev-27B. El pipeline declarado es image-text-to-text, por lo que hereda capacidades multimodales de algunos de sus componentes.
+Qwen3.8-27B-Metaphor-q6-hi-mlx es un modelo experimental de 27.356 millones de parámetros publicado por el usuario nightmedia en Hugging Face. Se trata de un merge de pesos (model merging) construido con mergekit a partir de diez modelos base de la familia Qwen3.8-27B, entre ellos nightmedia/Qwen3.8-27B-MindMeld, schneewolflabs/B0-27B, OmniJev/OneJev1.6-27B, shunzou05/TerminalHorizon-27B, inclusionAI/ZwZ2-27B y gordonhu/Tev-27B. El pipeline declarado es image-text-to-text, por lo que hereda capacidades multimodales de algunos de sus componentes.
 
 El modelo se distribuye en cuantización de 6 bits optimizada para MLX (sufijo q6-hi-mlx), lo que lo orienta a inferencia en hardware Apple Silicon. La model card incluye mediciones propias de perplejidad, memoria pico y velocidad de generación para distintas cuantizaciones (bf16, mxfp8, q8-hi, qx86-hi, q6-hi, q5-hi, qx64-hi, q4-hi, mxfp4), así como resultados en tareas de elección múltiple (ARC, BoolQ, HellaSwag, OpenBookQA, PIQA, WinoGrande).
 
@@ -91,10 +91,10 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Metaphor-q6-hi-mlx | 27,36B | no confirmado (tags: 256k/1M) | Apache 2.0 | HuggingFace, 198 descargas | Merge experimental MLX de 10 modelos |
-| nightmedia/Qwen3.8-27B-MindMeld | 27B (aprox.) | no disponible | no disponible | HuggingFace | Componente del merge |
-| schneewolflabs/B0-27B | 27B (aprox.) | no disponible | no disponible | HuggingFace | Componente visión-lenguaje, HemBench 33/38 |
-| shunzou05/TerminalHorizon-27B | 27B (aprox.) | no disponible | no disponible | HuggingFace | Componente orientado a agentes de terminal |
+| Qwen3.8-27B-Metaphor-q6-hi-mlx | 27,36B | no confirmado (tags: 256k/1M) | Apache 2.0 | Hugging Face, 198 descargas | Merge experimental MLX de 10 modelos |
+| nightmedia/Qwen3.8-27B-MindMeld | 27B (aprox.) | no disponible | no disponible | Hugging Face | Componente del merge |
+| schneewolflabs/B0-27B | 27B (aprox.) | no disponible | no disponible | Hugging Face | Componente visión-lenguaje, HemBench 33/38 |
+| shunzou05/TerminalHorizon-27B | 27B (aprox.) | no disponible | no disponible | Hugging Face | Componente orientado a agentes de terminal |
 
 No se dispone de datos de benchmarks comparativos directos entre estos modelos en la información proporcionada.
 
@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Metaphor-q6-hi-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Metaphor-q6-hi-mlx
 - Modelo base MindMeld: https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld (referenciado en la card)
 - Modelo base B0: https://huggingface.co/schneewolflabs/B0-27B (referenciado en la card)
 - Modelo base OneJev1.6: https://huggingface.co/OmniJev/OneJev1.6-27B (referenciado en la card)

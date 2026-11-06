@@ -2,9 +2,9 @@
 
 ## Resumen
 
-IcebergMix v3.0 es un checkpoint de generación de imágenes orientado a ilustración anime, desarrollado por LarryAIDraw y publicado en HuggingFace bajo licencia CreativeML OpenRAIL-M. Según los resultados de búsqueda en Civitai y PixAI, se trata de un modelo de la familia Illustrious, una línea de checkpoints de difusión especializada en arte anime y personajes. La versión v3.0 es una mezcla de varios modelos base (se indica que es una combinación igualitaria de tres componentes, aunque no se especifican cuáles).
+IcebergMix v3.0 es un checkpoint de generación de imágenes orientado a ilustración anime, desarrollado por LarryAIDraw y publicado en Hugging Face bajo licencia CreativeML OpenRAIL-M. Según los resultados de búsqueda en Civitai y PixAI, se trata de un modelo de la familia Illustrious, una línea de checkpoints de difusión especializada en arte anime y personajes. La versión v3.0 es una mezcla de varios modelos base (se indica que es una combinación igualitaria de tres componentes, aunque no se especifican cuáles).
 
-El modelo se distribuye a través de múltiples plataformas (HuggingFace, Civitai, PixAI) y está pensado para creadores de contenido que buscan generar ilustraciones de estilo anime de alta calidad. No se dispone de información técnica detallada en la model card de HuggingFace, que está prácticamente vacía, y los datos de arquitectura, tamaño y entrenamiento no se han hecho públicos por el autor.
+El modelo se distribuye a través de múltiples plataformas (Hugging Face, Civitai, PixAI) y está pensado para creadores de contenido que buscan generar ilustraciones de estilo anime de alta calidad. No se dispone de información técnica detallada en la model card de Hugging Face, que está prácticamente vacía, y los datos de arquitectura, tamaño y entrenamiento no se han hecho públicos por el autor.
 
 ## Especificaciones técnicas
 
@@ -62,9 +62,9 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/icebergmix_v30
+- Hugging Face: https://huggingface.co/LarryAIDraw/icebergmix_v30
 - Civitai: https://civitai.com/models/1605847/icebergmix
 - PixAI (modelo 1): https://pixai.art/en/model/1919967784191808139
 - PixAI (modelo 2): https://pixai.art/model/1882019211248145139-IcebergMix
-- Perfil del autor en HuggingFace: https://huggingface.co/LarryAIDraw
+- Perfil del autor en Hugging Face: https://huggingface.co/LarryAIDraw
 - Fanbox del autor: https://larry.fanbox.cc/

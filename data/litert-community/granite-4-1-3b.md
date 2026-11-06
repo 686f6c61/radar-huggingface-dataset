@@ -88,10 +88,10 @@ No se dispone de datos comparativos directos con otros modelos de 3B en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/granite-4.1-3b
+- Modelo en Hugging Face: https://huggingface.co/litert-community/granite-4.1-3b
 - Modelo base (IBM): https://huggingface.co/ibm-granite/granite-4.1-3b
 - Repo oficial de Granite 4.1: https://github.com/ibm-granite/granite-4.1-language-models
 - Documentación de Granite 4.1 en IBM: https://www.ibm.com/granite/docs/models/granite4-1
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Script de reproducción de conversión: https://github.com/john-rocky/hf-to-litertlm
-- Colección de modelos Granite 4.1 en HuggingFace: https://huggingface.co/collections/ibm-granite/granite-41-language-models
+- Colección de modelos Granite 4.1 en Hugging Face: https://huggingface.co/collections/ibm-granite/granite-41-language-models

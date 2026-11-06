@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`push_ministral:8b` es un modelo de decisión estructurada publicado por el usuario `solarpush` en HuggingFace, construido a partir de `mistralai/Ministral-8B-Instruct-2410` en cuantización GGUF Q4_K_M (4,57 GiB). No es un fine-tune conversacional al uso: el autor lo describe como un modelo de decisión calibrado bajo la especificación `llm-logits-v1`, en el que la salida se restringe a un conjunto cerrado de tokens de decisión (letras `A..Z`, dígitos `0..9` y el token especial `noul`) para emitir elecciones, puntuaciones o abstenerse.
+`push_ministral:8b` es un modelo de decisión estructurada publicado por el usuario `solarpush` en Hugging Face, construido a partir de `mistralai/Ministral-8B-Instruct-2410` en cuantización GGUF Q4_K_M (4,57 GiB). No es un fine-tune conversacional al uso: el autor lo describe como un modelo de decisión calibrado bajo la especificación `llm-logits-v1`, en el que la salida se restringe a un conjunto cerrado de tokens de decisión (letras `A..Z`, dígitos `0..9` y el token especial `noul`) para emitir elecciones, puntuaciones o abstenerse.
 
 La adaptación se ha realizado con la herramienta Trainaya del ecosistema Ollaya, aplicando una base de plantillas dual biorthogonal (`U` / `U_s`) y una cabeza "Option-Pointer" con kernel Fisher ARD. El resultado es un modelo pensado para tareas de clasificación, verificación y puntuación con probabilidades calibradas, no para generación libre de texto. El autor reporta un ECE agrupado de 0,046 y una precisión macro del 69,1% en el benchmark público de decisión de Ollaya (13 subconjuntos).
 
@@ -119,7 +119,7 @@ Frente a `winnow:e4b`, `push_ministral:8b` pierde en exactitud macro (69,1% vs 7
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/solarpush/push-ministral-8b
+- Repositorio Hugging Face: https://huggingface.co/solarpush/push-ministral-8b
 - Modelo base: https://huggingface.co/mistralai/Ministral-8B-Instruct-2410
 - Repositorio de Trainaya: https://github.com/ollaya/trainaya
 - Benchmark publico de Ollaya: https://bench.ollaya.dev

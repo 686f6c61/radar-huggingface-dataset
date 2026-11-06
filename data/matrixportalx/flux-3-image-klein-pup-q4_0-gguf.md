@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| matrixportalx/flux-3-image-klein-pup-Q4_0-GGUF | ≈8,95 mil millones | no disponible | Apache 2.0 | GGUF (Q4_0) | HuggingFace, 95 descargas |
-| black-forest-labs/flux-3-image-klein-pup (base) | ≈8,95 mil millones | no disponible | Apache 2.0 | safetensors | HuggingFace (referenciado) |
+| matrixportalx/flux-3-image-klein-pup-Q4_0-GGUF | ≈8,95 mil millones | no disponible | Apache 2.0 | GGUF (Q4_0) | Hugging Face, 95 descargas |
+| black-forest-labs/flux-3-image-klein-pup (base) | ≈8,95 mil millones | no disponible | Apache 2.0 | safetensors | Hugging Face (referenciado) |
 | Otros modelos de la familia FLUX | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni con alternativas de otros desarrolladores en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni con a
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/matrixportalx/flux-3-image-klein-pup-Q4_0-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/matrixportalx/flux-3-image-klein-pup-Q4_0-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

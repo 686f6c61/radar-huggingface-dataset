@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hesh0629/smolvla-pick_bottle_v4
+- Repositorio Hugging Face: https://huggingface.co/hesh0629/smolvla-pick_bottle_v4
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - LeRobot GitHub: https://github.com/huggingface/lerobot
 - Documentación LeRobot: https://huggingface.co/docs/lerobot/index

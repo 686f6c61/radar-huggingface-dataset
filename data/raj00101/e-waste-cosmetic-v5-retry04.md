@@ -6,7 +6,7 @@ El modelo `raj00101/e-waste-cosmetic-v5-retry04` es un clasificador de visión p
 
 El paquete se presenta como un modelo finalizado ("FINALIZED EXISTING MODEL"), seleccionado entre candidatos previamente evaluados de la versión V5, sin entrenamiento adicional durante la exportación. Incluye pesos de producción, checkpoint de entrenamiento completo, configuraciones de preprocesado e inferencia, una implementación de referencia en `inference.py` y manifiestos de integridad con sumas SHA256. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
-Su relevancia radica en el ámbito de la clasificación automática de residuos electrónicos, un campo con literatura activa (detección con YOLO, VLMs y RAG aplicados al reciclaje). No obstante, las métricas publicadas por el autor son muy limitadas (exactitud del 56,52% y balanced accuracy del 26,67% sobre 23 dispositivos de test), y la propia model card documenta un desequilibrio severo en el conjunto de evaluación. Se desconoce la licencia y no se declaran idiomas ni pipeline de HuggingFace.
+Su relevancia radica en el ámbito de la clasificación automática de residuos electrónicos, un campo con literatura activa (detección con YOLO, VLMs y RAG aplicados al reciclaje). No obstante, las métricas publicadas por el autor son muy limitadas (exactitud del 56,52% y balanced accuracy del 26,67% sobre 23 dispositivos de test), y la propia model card documenta un desequilibrio severo en el conjunto de evaluación. Se desconoce la licencia y no se declaran idiomas ni pipeline de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ No se dispone de métricas comparables publicadas para este modelo frente a alte
 
 | Modelo | Parametros | Contexto/Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e-waste-cosmetic-v5-retry04 | no disponible | imagen RGB 512x512 | accuracy 56,52%, balanced accuracy 26,67% | no disponible | HuggingFace (0 descargas) |
+| e-waste-cosmetic-v5-retry04 | no disponible | imagen RGB 512x512 | accuracy 56,52%, balanced accuracy 26,67% | no disponible | Hugging Face (0 descargas) |
 | Alternativas (YOLO, VLM+RAG, EfficientNetV2 estandar) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No disponible comparativa cuantitativa fiable con modelos similares.
@@ -109,7 +109,7 @@ No disponible comparativa cuantitativa fiable con modelos similares.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/raj00101/e-waste-cosmetic-v5-retry04
+- Hugging Face: https://huggingface.co/raj00101/e-waste-cosmetic-v5-retry04
 - GitHub relacionado (clasificador de e-waste con VLM y RAG): https://github.com/Pavneet54/ewaste-classifier
 - Articulo cientifico sobre clasificacion de e-waste en tiempo real: https://www.sciencedirect.com/science/article/pii/S0921344924002453
 - Articulo en Nature sobre clasificacion de e-waste con YOLO personalizable: https://www.nature.com/articles/s41598-025-94772-x

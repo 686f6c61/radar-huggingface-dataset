@@ -103,8 +103,8 @@ No se dispone en la información proporcionada de datos de otros modelos ASR com
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/canary-qwen-2.5b-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/canary-qwen-2.5b
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/canary-qwen-2.5b-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/canary-qwen-2.5b
 - Commit del modelo base usado para el port: https://huggingface.co/nvidia/canary-qwen-2.5b/commit/b1469e1bba1cfe140205529c79c434ca47180960
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/6f6c699

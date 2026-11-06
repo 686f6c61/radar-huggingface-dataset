@@ -83,5 +83,5 @@ No se dispone de comparaciones directas publicadas con modelos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: [ausjahk/fashion-clothing-classifier-from-scratch](https://huggingface.co/ausjahk/fashion-clothing-classifier-from-scratch)
+- Modelo en Hugging Face: [ausjahk/fashion-clothing-classifier-from-scratch](https://huggingface.co/ausjahk/fashion-clothing-classifier-from-scratch)
 - Modelo base: [microsoft/resnet-18](https://huggingface.co/microsoft/resnet-18)

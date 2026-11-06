@@ -20,7 +20,7 @@ Su relevancia actual es metodologica: forma parte de una coleccion de 8 modelos 
 | Idiomas soportados | Ingles (en) |
 | Licencia | other (licencia no estandar, requiere revision del autor) |
 | Formato de pesos | safetensors |
-| Tarea / pipeline | academic-paper-review (prediccion binaria Accept/Reject); pipeline de HuggingFace no disponible |
+| Tarea / pipeline | academic-paper-review (prediccion binaria Accept/Reject); pipeline de Hugging Face no disponible |
 | Tamano del repositorio | 13,6 GB |
 | Descargas / likes | 8 descargas, 0 likes |
 | Fecha de creacion / actualizacion | 2026-05-19 / 2026-10-12 |
@@ -83,9 +83,9 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PaperScorer-3B-Text-arXiv | 3,09B | 24.480 tokens de entrenamiento | Accept/Reject sobre texto arXiv | other | HuggingFace, 8 descargas |
-| PaperScorer-7B-Text-arXiv | 7B (segun patron de la coleccion) | no disponible | Accept/Reject sobre texto arXiv | other | HuggingFace (coleccion zlab-princeton) |
-| PaperScorer-3B-Text-openreview-iclr | 3,09B (segun patron de la coleccion) | no disponible | Accept/Reject sobre texto OpenReview/ICLR | other | HuggingFace (coleccion zlab-princeton) |
+| PaperScorer-3B-Text-arXiv | 3,09B | 24.480 tokens de entrenamiento | Accept/Reject sobre texto arXiv | other | Hugging Face, 8 descargas |
+| PaperScorer-7B-Text-arXiv | 7B (segun patron de la coleccion) | no disponible | Accept/Reject sobre texto arXiv | other | Hugging Face (coleccion zlab-princeton) |
+| PaperScorer-3B-Text-openreview-iclr | 3,09B (segun patron de la coleccion) | no disponible | Accept/Reject sobre texto OpenReview/ICLR | other | Hugging Face (coleccion zlab-princeton) |
 | Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens nativos | Modelo de proposito general | Apache 2.0 (modelo base) | Ampliamente disponible |
 
 La model card advierte de una asimetria de datos relevante: los modelos entrenados con arXiv vieron unos 71.000 ejemplos, mientras que los entrenados con ICLR vieron aproximadamente 3 veces menos. Por tanto, cualquier comparacion directa entre variantes arXiv e ICLR debe corregir por esta diferencia de volumen de datos. No se dispone de cifras de rendimiento publicadas para los modelos hermanos en la informacion proporcionada.
@@ -107,7 +107,7 @@ La model card advierte de una asimetria de datos relevante: los modelos entrenad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skonan/PaperScorer-3B-Text-arXiv
+- Modelo en Hugging Face: https://huggingface.co/skonan/PaperScorer-3B-Text-arXiv
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio del orquestador (CLI, servidor de scoring y UI web): https://github.com/zlab-princeton/PaperScorer
 - Coleccion PaperScorer (8 modelos y datasets asociados): https://huggingface.co/collections/zlab-princeton/paperscorer

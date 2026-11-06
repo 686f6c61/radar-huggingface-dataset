@@ -200,7 +200,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento real entr
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/lavendercomputing/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GSQ-RCO-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/lavendercomputing/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GSQ-RCO-GGUF
 - Repositorio hermano sin GGUF: https://huggingface.co/lavendercomputing/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GSQ-RCO
 - Modelo del proveedor: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - GGUF del proveedor (modelo base declarado): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF

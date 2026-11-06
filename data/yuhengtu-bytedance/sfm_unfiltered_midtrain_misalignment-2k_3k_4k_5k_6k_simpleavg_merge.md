@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su naturaleza de experimento de fusión d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables. Dado que el modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_5k_6k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_5k_6k_simpleavg_merge
 - Modelo relacionado (merge similar con alineación): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Equipo ByteDance Seed: https://seed.bytedance.com/en/

@@ -78,6 +78,6 @@ La comparativa es limitada porque no hay datos de rendimiento para este checkpoi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/topcatmax/mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/topcatmax/mirror-unconst-affine-5czsc2fc98-r496-sbsv5-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Checkpoint relacionado (misma serie): https://huggingface.co/unconst/Affine-5czsc2fc98-r29-merged

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MasterMultimodalNTRiskPredictionFramework es un repositorio alojado en HuggingFace por el usuario jarvisemitra bajo licencia Apache 2.0. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y su model card se limita a un unico bloque de front-matter YAML con la linea `license: apache-2.0`, sin descripcion textual, sin arquitectura declarada, sin tabla de especificaciones y sin resultados de evaluacion. No hay pipeline declarado ni idiomas soportados en los metadatos.
+MasterMultimodalNTRiskPredictionFramework es un repositorio alojado en Hugging Face por el usuario jarvisemitra bajo licencia Apache 2.0. En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, y su model card se limita a un unico bloque de front-matter YAML con la linea `license: apache-2.0`, sin descripcion textual, sin arquitectura declarada, sin tabla de especificaciones y sin resultados de evaluacion. No hay pipeline declarado ni idiomas soportados en los metadatos.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura, un framework multimodal orientado a la prediccion de riesgo ("NT" podria corresponder a una abreviatura no documentada), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor. No se dispone de informacion sobre si el artefacto contiene pesos de un modelo entrenado, codigo de un framework de agregacion, o documentacion de un pipeline de investigacion.
 
@@ -83,8 +83,8 @@ No disponible. No se han identificado modelos comparables, ya que se desconoce l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jarvisemitra/MasterMultimodalNTRiskPredictionFramework
-- Perfil del autor en HuggingFace: https://huggingface.co/jarvisemitra
+- Repositorio en Hugging Face: https://huggingface.co/jarvisemitra/MasterMultimodalNTRiskPredictionFramework
+- Perfil del autor en Hugging Face: https://huggingface.co/jarvisemitra
 - Microsoft JARVIS (proyecto homonimo, no relacionado): https://github.com/microsoft/JARVIS
 - NIST-JARVIS (repositorio homonimo, no relacionado): https://jarvis.nist.gov/
-- Paper HuggingGPT (contexto del proyecto homonimo de Microsoft): Shen et al., "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace"
+- Paper HuggingGPT (contexto del proyecto homonimo de Microsoft): Shen et al., "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face"

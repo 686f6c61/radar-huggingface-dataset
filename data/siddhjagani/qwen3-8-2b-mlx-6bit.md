@@ -79,9 +79,9 @@ La comparativa se basa en características generales, no en benchmarks, ya que n
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-6Bit
+- Hugging Face del modelo: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-6Bit
 - Modelo base (empero-ai/Qwen3.8-2B): https://huggingface.co/empero-ai/Qwen3.8-2B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Página de Qwen3.8-27B en HuggingFace (referencia de la serie): https://huggingface.co/Qwen/Qwen3.8-27B
+- Página de Qwen3.8-27B en Hugging Face (referencia de la serie): https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de ejecución de Qwen con MLX: https://qwen-ai.com/run-qwen-mlx/
 - Artículo sobre Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

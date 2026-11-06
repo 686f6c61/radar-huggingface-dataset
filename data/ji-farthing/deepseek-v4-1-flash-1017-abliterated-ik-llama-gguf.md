@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No disponible: recomendaciones concretas de GPU ni verificación de cabida en GPUs de consumo; dada la escala del repositorio, es improbable que quepa íntegro en una única GPU de consumo.
 - Despliegue recomendado: ik_llama.cpp (backend objetivo declarado). También debería funcionar con llama.cpp estándar y Ollama si la variante GGUF es compatible, aunque sin las optimizaciones específicas para MoE.
 - No hay datos de latencia ni throughput publicados.
-- Acceso restringido (gated): hay que aceptar las condiciones del repositorio en HuggingFace antes de descargar.
+- Acceso restringido (gated): hay que aceptar las condiciones del repositorio en Hugging Face antes de descargar.
 
 ## Comparativa con modelos similares
 
 | Modelo | Formato | Licencia | Particularidad | Disponibilidad |
 |---|---|---|---|---|
-| ji-farthing/DeepSeek-V4.1-Flash-1017-Abliterated-ik-llama-GGUF | GGUF (imatrix, ik_llama.cpp) | MIT | Abliterated, optimizado para ik_llama.cpp | Gated en HuggingFace |
-| orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF | GGUF | MIT | Modelo base abliterated del que deriva esta cuantización | Publico en HuggingFace |
+| ji-farthing/DeepSeek-V4.1-Flash-1017-Abliterated-ik-llama-GGUF | GGUF (imatrix, ik_llama.cpp) | MIT | Abliterated, optimizado para ik_llama.cpp | Gated en Hugging Face |
+| orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF | GGUF | MIT | Modelo base abliterated del que deriva esta cuantización | Publico en Hugging Face |
 | Cuantizaciones GGUF estándar de DeepSeek (p. ej. en Unsloth o bartowski, para modelos DeepSeek oficiales) | GGUF | Segun modelo base | Sin abliteration, mantienen alineamiento | Publico |
 
 Nota: al tratarse de un modelo derivado con abliteration, la comparativa de rendimiento con los modelos oficiales de DeepSeek no es directamente aplicable, ya que la abliteration puede degradar ligeramente la calidad general del modelo.
@@ -74,13 +74,13 @@ Nota: al tratarse de un modelo derivado con abliteration, la comparativa de rend
 - Riesgo de alucinacion inherente a cualquier LLM, posiblemente agravado por la abliteration y por cuantizaciones agresivas con imatrix, que pueden degradar el razonamiento y la fidelidad factual.
 - Idiomas limitados a ingles y chino segun los metadatos; el rendimiento en otros idiomas no está garantizado.
 - Los datos de arquitectura (parámetros, contexto, expertos activos) no están documentados en el repositorio, lo que dificulta planificar despliegues con precisión.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que puede suponer un retraso en la descarga.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que puede suponer un retraso en la descarga.
 - Licencia MIT en el repo de cuantización, pero conviene verificar la licencia del modelo base original de DeepSeek para uso comercial, ya que las licencias de los modelos DeepSeek oficiales suelen incluir restricciones propias.
 - Repositorio de 594,8 GB: la descarga completa exige gran ancho de banda y almacenamiento; se recomienda descargar solo las variantes necesarias.
 - 26 descargas y 7 likes en el momento de la ficha: proyecto de autor individual sin auditoría comunitaria amplia; conviene validar la integridad de los pesos antes de uso serio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ji-farthing/DeepSeek-V4.1-Flash-1017-Abliterated-ik-llama-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ji-farthing/DeepSeek-V4.1-Flash-1017-Abliterated-ik-llama-GGUF
 - Modelo base: https://huggingface.co/orcarouter/DeepSeek-V4.1-Flash-1017-abliterated-GGUF
 - ik_llama.cpp (backend objetivo): no disponible enlace directo en la informacion proporcionada (buscar el fork ik_llama.cpp de ikawrakow en GitHub)

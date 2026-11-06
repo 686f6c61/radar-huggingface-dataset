@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shakhrillo/qwen2.5-7b-ui-critique-lora` es un ajuste fino del modelo base Qwen/Qwen2.5-7B-Instruct, publicado en HuggingFace por el usuario shakhrillo. Por el nombre del repositorio, su tamano (0,5 GB) y las etiquetas declaradas (`trl`, `sft`, `generated_from_trainer`), se trata de un adaptador LoRA entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL, especializado en la critica de interfaces de usuario. No se acompana de una model card descriptiva mas alla de la plantilla autogenerada por TRL.
+El modelo `shakhrillo/qwen2.5-7b-ui-critique-lora` es un ajuste fino del modelo base Qwen/Qwen2.5-7B-Instruct, publicado en Hugging Face por el usuario shakhrillo. Por el nombre del repositorio, su tamano (0,5 GB) y las etiquetas declaradas (`trl`, `sft`, `generated_from_trainer`), se trata de un adaptador LoRA entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL, especializado en la critica de interfaces de usuario. No se acompana de una model card descriptiva mas alla de la plantilla autogenerada por TRL.
 
 El modelo hereda la arquitectura y las capacidades del Qwen2.5-7B-Instruct, un transformer decoder-only denso de aproximadamente 7,6 mil millones de parametros con soporte de contexto largo. Al ser un adaptador, no se distribuye como modelo autonomo: requiere cargar el modelo base para poder ejecutar inferencia.
 
@@ -60,14 +60,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits (GGUF Q4): aproximadamente 4,5-5,5 GB, lo que permite ejecucion en GPUs de consumo con 8 GB o mas.
 - GPUs recomendadas: A100 40/80 GB, H100 o L40S para despliegue en servidor; RTX 4090 (24 GB) y RTX 3090 (24 GB) para fp16 sin problema; RTX 4060 Ti 16 GB o similares para cuantizaciones de 4-8 bits.
 - Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas usando cuantizacion de 4 bits, y en tarjetas de 16-24 GB en precision completa.
-- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp/Ollama (con versiones GGUF del modelo base), y el pipeline de Transformers con PEFT para cargar el adaptador. La etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp/Ollama (con versiones GGUF del modelo base), y el pipeline de Transformers con PEFT para cargar el adaptador. La etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. El uso de un adaptador LoRA anade una sobrecarga minima frente al modelo base, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shakhrillo/qwen2.5-7b-ui-critique-lora | 7,61 mil millones (base) + adaptador LoRA | No disponible (base: 131.072 tokens) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
+| shakhrillo/qwen2.5-7b-ui-critique-lora | 7,61 mil millones (base) + adaptador LoRA | No disponible (base: 131.072 tokens) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,61 mil millones | 131.072 tokens | Con benchmarks publicados por Qwen | Apache 2.0 | Ampliamente disponible |
 | Otros ajustes especificos de critica de UI | No disponibles | No disponible | No disponible | No disponible | No se han identificado en la informacion disponible |
 
@@ -86,7 +86,7 @@ Los resultados de busqueda web no han devuelto informacion sobre alternativas co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shakhrillo/qwen2.5-7b-ui-critique-lora
+- Modelo en Hugging Face: https://huggingface.co/shakhrillo/qwen2.5-7b-ui-critique-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Los resultados de busqueda web recibidos no contienen enlaces relevantes sobre este modelo (devolvieron unicamente paginas de Microsoft Copilot).

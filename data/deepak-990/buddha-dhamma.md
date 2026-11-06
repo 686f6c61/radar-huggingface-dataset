@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: deepak-990/Buddha-Dhamma](https://huggingface.co/deepak-990/Buddha-Dhamma)
+- [Hugging Face: deepak-990/Buddha-Dhamma](https://huggingface.co/deepak-990/Buddha-Dhamma)
 - [Unsloth (librería de fine-tuning)](https://github.com/unslothai/unsloth)
 - [llama.cpp (repositorio de inferencia)](https://github.com/ggerganov/llama.cpp)

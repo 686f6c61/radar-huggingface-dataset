@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nixoqq/Xhdh es un repositorio de modelo publicado en HuggingFace por el usuario Nixoqq. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su licencia (BSD-3-Clause Clear), el tag de region (us) y las fechas de creacion y ultima actualizacion (3 de octubre de 2026). La model card asociada no contiene descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso: se limita a la declaracion de licencia.
+Nixoqq/Xhdh es un repositorio de modelo publicado en Hugging Face por el usuario Nixoqq. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su licencia (BSD-3-Clause Clear), el tag de region (us) y las fechas de creacion y ultima actualizacion (3 de octubre de 2026). La model card asociada no contiene descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso: se limita a la declaracion de licencia.
 
 No hay pipeline declarado, no se indican idiomas soportados, no consta ninguna descarga ni interaccion (0 descargas, 0 likes) y no se ha publicado ningun benchmark. Por tanto, no es posible determinar que problema resuelve el modelo, si se trata de un modelo de lenguaje, de vision, de audio o de otro tipo de artefacto, ni cual es su huella de recursos.
 
@@ -77,5 +77,5 @@ No disponible. Al no conocerse la categoria del modelo (tamano, modalidad, tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nixoqq/Xhdh
+- Modelo en Hugging Face: https://huggingface.co/Nixoqq/Xhdh
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

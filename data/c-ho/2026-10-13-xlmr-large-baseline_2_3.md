@@ -2,7 +2,7 @@
 
 ## Resumen
 
-c-ho/2026-10-13-xlmr-large-baseline_2_3 es un modelo de clasificación de tokens (token-classification) publicado en HuggingFace por el usuario c-ho. Se trata de un ajuste fino completo —no un adaptador— de FacebookAI/xlm-roberta-large, un transformer encoder-only de 558.874.657 parámetros confirmados en los pesos safetensors, entrenado sobre un conjunto de datos que la propia model card describe como desconocido ("unknown dataset").
+c-ho/2026-10-13-xlmr-large-baseline_2_3 es un modelo de clasificación de tokens (token-classification) publicado en Hugging Face por el usuario c-ho. Se trata de un ajuste fino completo —no un adaptador— de FacebookAI/xlm-roberta-large, un transformer encoder-only de 558.874.657 parámetros confirmados en los pesos safetensors, entrenado sobre un conjunto de datos que la propia model card describe como desconocido ("unknown dataset").
 
 Aunque la documentación no especifica el dominio, el conjunto de etiquetas evaluadas (morphosyntacticphenomenon, phonologicalphenomenon, languagerelatedterm, semanticphenomenon, discoursephenomenon, etc.) corresponde a un esquema de anotación de fenómenos lingüísticos y terminología, típico de corpus académicos o de investigación en lingüística. El modelo declara un F1 de 0,5305 y una exactitud de 0,9512 en el conjunto de evaluación, con un rendimiento muy desigual entre clases.
 
@@ -137,6 +137,6 @@ No hay datos publicos que permitan comparar el rendimiento de este ajuste fino c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c-ho/2026-10-13-xlmr-large-baseline_2_3
+- Modelo en Hugging Face: https://huggingface.co/c-ho/2026-10-13-xlmr-large-baseline_2_3
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - La busqueda web realizada no ha devuelto enlaces relacionados con el modelo: los resultados obtenidos (articulos de Wikipedia y prensa local sobre Saint-Germain-en-Laye y la Isla de Francia) no guardan ninguna relacion con este modelo. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch2` es un modelo de generación de texto publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo experimental, con 27.449.096 parámetros totales, almacenado en formato safetensors. Su nombre sugiere que forma parte de una serie de experimentos sobre una técnica de "dynamic forgetting" aplicada a un modelo pequeño de tipo BabyLM. No se ha publicado información sobre la arquitectura interna, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. El model card asociado es una plantilla generada automáticamente sin contenido específico, por lo que la documentación es muy limitada. Este modelo resulta de interés principalmente para investigadores que estudian técnicas de olvido dinámico o modelos de lenguaje de muy pequeño tamaño, pero no está listo para uso en producción.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch2` es un modelo de generación de texto publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo experimental, con 27.449.096 parámetros totales, almacenado en formato safetensors. Su nombre sugiere que forma parte de una serie de experimentos sobre una técnica de "dynamic forgetting" aplicada a un modelo pequeño de tipo BabyLM. No se ha publicado información sobre la arquitectura interna, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. El model card asociado es una plantilla generada automáticamente sin contenido específico, por lo que la documentación es muy limitada. Este modelo resulta de interés principalmente para investigadores que estudian técnicas de olvido dinámico o modelos de lenguaje de muy pequeño tamaño, pero no está listo para uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han identificado modelos comparables en la información disponible. El mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch2
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch2
 - Versiones relacionadas:
   - https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4
   - https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7

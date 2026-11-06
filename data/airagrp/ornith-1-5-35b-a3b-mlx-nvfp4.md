@@ -78,7 +78,7 @@ Todas las variantes pertenecen al mismo modelo base, por lo que las diferencias 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/airagrp/Ornith-1.5-35B-A3B-mlx-nvfp4
+- Repositorio del modelo en Hugging Face: https://huggingface.co/airagrp/Ornith-1.5-35B-A3B-mlx-nvfp4
 - Modelo base original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante con cuantizacion NVFP4 original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4
 - Variante con cuantizacion mxfp8 en MLX: https://huggingface.co/airagrp/Ornith-1.5-35B-A3B-mlx-mxfp8

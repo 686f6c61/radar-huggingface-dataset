@@ -57,17 +57,17 @@ Estos valores indican que el modelo tiene una tasa de error de palabra relativam
 - VRAM estimada para inferencia: Whisper-small en FP16 requiere aproximadamente 1,5 GB de VRAM para procesar una ventana de 30 segundos de audio. Con cuantización a int8, puede reducirse a ~0,8 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (p. ej., NVIDIA GTX 1050 Ti, RTX 2060, etc.). Para procesamiento por lotes o en tiempo real, se recomienda una GPU con 4 GB o más (RTX 3060, A10, etc.).
 - En CPU: puede ejecutarse en modo FP32 con unos 4 GB de RAM, aunque la latencia será mayor (del orden de 2-5 segundos por audio de 30 segundos en un procesador moderno).
-- Opciones de despliegue: compatible con la biblioteca `transformers` de HuggingFace, así como con `vLLM` (aunque no es óptimo para ASR), `TGI` (Text Generation Inference) no es específico para ASR, pero se puede usar `faster-whisper` (basado en CTranslate2) si se convierten los pesos. También es compatible con `Ollama` si se empaqueta como modelo GGUF, aunque no se proporcionan conversiones oficiales.
+- Opciones de despliegue: compatible con la biblioteca `transformers` de Hugging Face, así como con `vLLM` (aunque no es óptimo para ASR), `TGI` (Text Generation Inference) no es específico para ASR, pero se puede usar `faster-whisper` (basado en CTranslate2) si se convierten los pesos. También es compatible con `Ollama` si se empaqueta como modelo GGUF, aunque no se proporcionan conversiones oficiales.
 - Latencia y throughput: no se han publicado mediciones específicas para este ajuste fino. El modelo base Whisper-small procesa aproximadamente 1 minuto de audio en ~1 segundo en una GPU moderna (RTX 3090) con FP16.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER (santali) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shoibo/whisper-small-santali-sanlish-1934_lr2-lr2e5` (este) | 241,7 M | 30 s | 32,19% | Apache 2.0 | HuggingFace |
-| `thunderboltc/whisper-small-santali-sanlish` | 241,7 M (presumiblemente) | 30 s | No disponible | Apache 2.0 (presumible) | HuggingFace |
-| `shoibo/whisper_small_santali_ipa` | 241,7 M (presumiblemente) | 30 s | No disponible | Apache 2.0 (presumible) | HuggingFace |
-| `openai/whisper-small` (original) | 244 M | 30 s | No evaluado en santali | MIT | HuggingFace |
+| `shoibo/whisper-small-santali-sanlish-1934_lr2-lr2e5` (este) | 241,7 M | 30 s | 32,19% | Apache 2.0 | Hugging Face |
+| `thunderboltc/whisper-small-santali-sanlish` | 241,7 M (presumiblemente) | 30 s | No disponible | Apache 2.0 (presumible) | Hugging Face |
+| `shoibo/whisper_small_santali_ipa` | 241,7 M (presumiblemente) | 30 s | No disponible | Apache 2.0 (presumible) | Hugging Face |
+| `openai/whisper-small` (original) | 244 M | 30 s | No evaluado en santali | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos ajustados para santali. El modelo original de Whisper-small no está optimizado para santali y su rendimiento en esta lengua sería probablemente muy deficiente.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos ajustados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [shoibo/whisper-small-santali-sanlish-1934_lr2-lr2e5](https://huggingface.co/shoibo/whisper-small-santali-sanlish-1934_lr2-lr2e5)
+- Modelo en Hugging Face: [shoibo/whisper-small-santali-sanlish-1934_lr2-lr2e5](https://huggingface.co/shoibo/whisper-small-santali-sanlish-1934_lr2-lr2e5)
 - Modelo base original: [openai/whisper-small](https://huggingface.co/openai/whisper-small)
 - Modelo relacionado del mismo autor: [shoibo/whisper_small_santali_ipa](https://huggingface.co/shoibo/whisper_small_santali_ipa)
 - Modelo similar de otro autor: [thunderboltc/whisper-small-santali-sanlish](https://huggingface.co/thunderboltc/whisper-small-santali-sanlish)

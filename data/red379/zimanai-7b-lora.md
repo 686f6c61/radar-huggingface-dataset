@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Red379/zimanai-7b-lora` es un adaptador LoRA publicado en HuggingFace por el usuario Red379. El nombre sugiere que se trata de un ajuste fino de bajo rango sobre un modelo base de aproximadamente 7 mil millones de parámetros, aunque no se especifica cuál es dicho modelo base. El repositorio tiene un tamaño de 0,2 GB, coherente con un adaptador LoRA que no incluye los pesos completos del modelo original. La ficha técnica del autor está vacía y solo contiene la plantilla generada automáticamente por HuggingFace, por lo que no se dispone de información sobre el propósito, los datos de entrenamiento o las capacidades del modelo. La etiqueta `endpoints_compatible` indica que es compatible con la infraestructura de endpoints de HuggingFace, pero no aporta detalles adicionales. En su estado actual, el modelo carece de documentación mínima y no puede evaluarse sin una inspección directa de sus pesos.
+El modelo `Red379/zimanai-7b-lora` es un adaptador LoRA publicado en Hugging Face por el usuario Red379. El nombre sugiere que se trata de un ajuste fino de bajo rango sobre un modelo base de aproximadamente 7 mil millones de parámetros, aunque no se especifica cuál es dicho modelo base. El repositorio tiene un tamaño de 0,2 GB, coherente con un adaptador LoRA que no incluye los pesos completos del modelo original. La ficha técnica del autor está vacía y solo contiene la plantilla generada automáticamente por Hugging Face, por lo que no se dispone de información sobre el propósito, los datos de entrenamiento o las capacidades del modelo. La etiqueta `endpoints_compatible` indica que es compatible con la infraestructura de endpoints de Hugging Face, pero no aporta detalles adicionales. En su estado actual, el modelo carece de documentación mínima y no puede evaluarse sin una inspección directa de sus pesos.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. Al desconocer el modelo base y las caracteristicas del adaptador,
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Red379/zimanai-7b-lora)
+- [Repositorio en Hugging Face](https://huggingface.co/Red379/zimanai-7b-lora)

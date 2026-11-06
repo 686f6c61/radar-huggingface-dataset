@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: con 752M parámetros, en FP16 se requieren aproximadamente 1.5 GB; en FP32 unos 3 GB; con cuantización 8-bit ~0.75 GB y 4-bit ~0.4 GB (estimaciones teóricas, no verificadas).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 3060, RTX 4060) puede ejecutar el modelo en FP16. Para cuantización 4-bit, incluso CPUs con suficiente RAM son viables.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de consumo habituales.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama y Transformers de HuggingFace, siempre que se conviertan los pesos a los formatos adecuados (GGUF para llama.cpp/Ollama).
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama y Transformers de Hugging Face, siempre que se conviertan los pesos a los formatos adecuados (GGUF para llama.cpp/Ollama).
 - Latencia y throughput: no disponibles; dependerán del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
@@ -76,5 +76,5 @@ La comparación es orientativa; sin benchmarks del modelo evaluado, no se puede 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/circle1018/qwen3-finetuned
+- Modelo en Hugging Face: https://huggingface.co/circle1018/qwen3-finetuned
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

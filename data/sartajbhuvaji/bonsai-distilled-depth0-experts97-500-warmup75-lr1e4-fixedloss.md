@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Bonsai distilled depth0 experts97 500 warmup75 lr1e4 fixedloss es un checkpoint de generacion de texto publicado en HuggingFace por el usuario sartajbhuvaji. Se trata de un modelo con arquitectura declarada como `qwen3_moe`, es decir, un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3, con 8.552.822.784 parametros totales segun los pesos reales almacenados en safetensors y un repositorio de 17,1 GB. El identificador del repositorio sugiere un experimento de destilacion (termino "distilled") con 97 expertos y una configuracion de entrenamiento concreta (500 pasos de warmup, learning rate 1e-4, funcion de perdida corregida).
+Bonsai distilled depth0 experts97 500 warmup75 lr1e4 fixedloss es un checkpoint de generacion de texto publicado en Hugging Face por el usuario sartajbhuvaji. Se trata de un modelo con arquitectura declarada como `qwen3_moe`, es decir, un transformer con mezcla de expertos (MoE) derivado de la familia Qwen3, con 8.552.822.784 parametros totales segun los pesos reales almacenados en safetensors y un repositorio de 17,1 GB. El identificador del repositorio sugiere un experimento de destilacion (termino "distilled") con 97 expertos y una configuracion de entrenamiento concreta (500 pasos de warmup, learning rate 1e-4, funcion de perdida corregida).
 
-El modelo no dispone de model card real: el README publicado es la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]". Tampoco se declaran licencia, idiomas soportados, pipeline de entrenamiento, dataset ni resultados de evaluacion. Esto lo convierte en un artefacto de investigacion o de experimentacion personal mas que en un modelo listo para produccion.
+El modelo no dispone de model card real: el README publicado es la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]". Tampoco se declaran licencia, idiomas soportados, pipeline de entrenamiento, dataset ni resultados de evaluacion. Esto lo convierte en un artefacto de investigacion o de experimentacion personal mas que en un modelo listo para produccion.
 
 Su relevancia actual es limitada y fundamentalmente de nicho: sirve como ejemplo de checkpoint MoE destilado de ~8,5 B de parametros, con muy pocas descargas (33) y ningun "like" en el momento de la consulta. Cualquier evaluacion seria del modelo requiere inspeccionar su `config.json` y probarlo empiricamente, ya que la informacion publica es practicamente inexistente.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no hay informacion en la model card. El nombre del re
 - Soporte de agentes y razonamiento multi-paso: no confirmado.
 - Capacidades multilingues: no disponible; el modelo no declara idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; el tag del Hub no indica modalidad adicional a texto.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints con transformers.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints con transformers.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ Dado que no existe documentacion de capacidades ni evaluaciones publicadas, los 
 - Generacion de texto en tareas de baja criticidad: resumenes, reformulacion o redaccion asistida en un entorno controlado donde el riesgo de alucinacion se revise manualmente.
 - Comparativas de arquitectura: sirve como linea base para medir el impacto de variar el numero de expertos o el esquema de enrutamiento en un pipeline de investigacion propio.
 - Fine-tuning posterior sobre dominio especifico: dado su tamano (8,55 B) y su naturaleza MoE, puede ajustarse con LoRA o QLoRA en un dominio vertical si se confirma que los pesos cargan correctamente en transformers.
-- Despliegue en HuggingFace Inference Endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse sin escribir un contenedor personalizado, util para demos internas o pruebas de integracion.
+- Despliegue en Hugging Face Inference Endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse sin escribir un contenedor personalizado, util para demos internas o pruebas de integracion.
 - Investigacion sobre estabilidad de entrenamiento: el sufijo `fixedloss` del identificador sugiere que el autor experimento con correcciones de la funcion de perdida; el checkpoint puede reutilizarse para reproducir o auditar esos experimentos.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros totale
 - VRAM en cuantizacion de 8 bits: aproximadamente 9-10 GB. Cabe en RTX 4080, RTX 4090, L40S o A10G.
 - VRAM en cuantizacion de 4 bits: aproximadamente 5-6 GB. Cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y GPUs de portatil con 8 GB o mas.
 - No hay versiones GGUF publicadas, por lo que llama.cpp y Ollama no estan disponibles de serie; habria que convertir los pesos manualmente.
-- Opciones de despliegue confirmadas: transformers con safetensors y HuggingFace Inference Endpoints (tag `endpoints_compatible`). vLLM y TGI son compatibles en teoria con la arquitectura `qwen3_moe`, pero no hay confirmacion de que este checkpoint cargue correctamente en ellos.
+- Opciones de despliegue confirmadas: transformers con safetensors y Hugging Face Inference Endpoints (tag `endpoints_compatible`). vLLM y TGI son compatibles en teoria con la arquitectura `qwen3_moe`, pero no hay confirmacion de que este checkpoint cargue correctamente en ellos.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparacion es necesariamente asimetrica: los tres modelos de referencia tien
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace sin rellenar. No hay informacion sobre datos de entrenamiento, hiperparametros, sesgos ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face sin rellenar. No hay informacion sobre datos de entrenamiento, hiperparametros, sesgos ni uso previsto.
 - Licencia no declarada: sin licencia explicita no hay autorizacion legal clara para uso comercial. En la practica, la ausencia de licencia equivale a "todos los derechos reservados" en muchas jurisdicciones, lo que impide adoptarlo en produccion sin contactar al autor.
 - Riesgo de alucinacion desconocido: no se han publicado evaluaciones de veracidad, tasa de alucinacion ni comportamientos en dominios sensibles.
 - Idiomas no declarados: no se puede asumir soporte multilingue ni siquiera en ingles, pese a que la familia Qwen3 sea multilingue.
@@ -96,7 +96,7 @@ La comparacion es necesariamente asimetrica: los tres modelos de referencia tien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-500-warmup75-lr1e4-fixedloss
 - Paper citado en los tags del Hub (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper, demo y model card ampliada del autor: no disponibles en la informacion proporcionada.

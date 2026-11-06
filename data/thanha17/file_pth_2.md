@@ -53,6 +53,6 @@ No disponible. Al no conocerse la arquitectura ni el dominio del modelo, no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thanha17/file_pth_2
+- Repositorio en Hugging Face: https://huggingface.co/Thanha17/file_pth_2
 - Informacion general sobre archivos `.pth` en PyTorch: https://medium.com/@manasnandmohan/comprehending-pth-files-the-backbone-of-pytorch-models-ef9b232e092a
 - Herramienta de visualizacion de modelos `.pth`: https://github.com/jdwebprogrammer/torch-model-viewer

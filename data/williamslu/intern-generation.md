@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamslu/intern-generation` es un repositorio de HuggingFace publicado por el usuario williamslu que contiene una implementación en PyTorch de un modelo Perceiver de escala "nano", orientado a tareas de generación. No se trata de un modelo entrenado ni de un release listo para producción: según la propia model card, `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un modelo con pesos entrenados.
+`williamslu/intern-generation` es un repositorio de Hugging Face publicado por el usuario williamslu que contiene una implementación en PyTorch de un modelo Perceiver de escala "nano", orientado a tareas de generación. No se trata de un modelo entrenado ni de un release listo para producción: según la propia model card, `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no un modelo con pesos entrenados.
 
 El modelo es extremadamente pequeño: cuenta con 16.576 parámetros totales según los datos de safetensors, lo que lo sitúa muy por debajo de cualquier modelo de lenguaje utilizable en tareas reales (varios órdenes de magnitud por debajo de los modelos más pequeños habituales). El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -90,5 +90,5 @@ No se dispone de modelos comparables en la información proporcionada. Este repo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williamslu/intern-generation
+- Hugging Face: https://huggingface.co/williamslu/intern-generation
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

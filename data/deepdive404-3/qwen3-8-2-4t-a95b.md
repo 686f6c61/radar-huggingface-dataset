@@ -4,7 +4,7 @@
 
 Qwen3.8-2.4T-A95B es el modelo de código abierto más grande y capaz de la familia Qwen, lanzado por Alibaba en agosto de 2026. Se trata de un modelo de lenguaje causal con arquitectura híbrida de Mixture of Experts (MoE) y atención lineal y por ventana, que combina 2,4 billones de parámetros totales con solo 95 mil millones activos por paso, lo que permite un rendimiento de nivel Qwen-Max en un paquete relativamente eficiente para inferencia. Está diseñado para sobresalir en tareas de codificación, trabajo profesional, investigación científica y tareas agénticas de horizonte largo, con una ventana de contexto nativa de 262 144 tokens ampliable hasta 1 010 000.
 
-El modelo se publica en formato Transformers (safetensors) y es compatible con motores de inferencia como vLLM, SGLang y TokenSpeed. También existe una versión GGUF mantenida por Unsloth para despliegue local. Su licencia, denominada "qwen3.8-max", es de tipo "other" en HuggingFace, lo que implica restricciones de uso que deben revisarse antes de un despliegue comercial. La versión oficial con funciones adicionales (entrada de visión, modo sin razonamiento, herramientas integradas) se ofrece a través del servicio Qwen Cloud bajo el nombre Qwen3.8-Max.
+El modelo se publica en formato Transformers (safetensors) y es compatible con motores de inferencia como vLLM, SGLang y TokenSpeed. También existe una versión GGUF mantenida por Unsloth para despliegue local. Su licencia, denominada "qwen3.8-max", es de tipo "other" en Hugging Face, lo que implica restricciones de uso que deben revisarse antes de un despliegue comercial. La versión oficial con funciones adicionales (entrada de visión, modo sin razonamiento, herramientas integradas) se ofrece a través del servicio Qwen Cloud bajo el nombre Qwen3.8-Max.
 
 ## Especificaciones tecnicas
 
@@ -86,8 +86,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace (repo original): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
-- HuggingFace (mirror Deepdive404-3): https://huggingface.co/Deepdive404-3/Qwen3.8-2.4T-A95B
+- Hugging Face (repo original): https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B
+- Hugging Face (mirror Deepdive404-3): https://huggingface.co/Deepdive404-3/Qwen3.8-2.4T-A95B
 - Versión GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF
 - Página de QwenCloud para el modelo: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Documentación de vLLM Ascend para el modelo: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-2.4T-A95B.html

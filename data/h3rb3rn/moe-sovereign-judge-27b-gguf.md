@@ -88,7 +88,7 @@ No se dispone de comparativas con otros modelos de evaluacion de calidad (p. ej.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/h3rb3rn/moe-sovereign-judge-27b-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/h3rb3rn/moe-sovereign-judge-27b-GGUF)
 - [Repositorio GitHub del proyecto MoE Sovereign](https://github.com/h3rb3rn/moe-sovereign)
 - [Documentacion del proyecto](https://docs.moe-sovereign.org)
 - [Coleccion de variantes Sovereign Judge 35B](https://huggingface.co/collections/h3rb3rn/sovereign-judge-35b-all-variants)

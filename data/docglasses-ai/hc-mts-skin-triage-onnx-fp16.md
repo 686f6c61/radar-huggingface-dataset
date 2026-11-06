@@ -6,7 +6,7 @@ HC-MTS skin triage es un paquete de tres cabezas de clasificación de imágenes 
 
 Cada uno de los tres grafos ocupa unos 175 MB, lo que da un repositorio de aproximadamente 0,5 GB, y todos comparten el mismo contrato de tensores: entrada `float32` NCHW de `[1,3,384,384]` en RGB con valores 0-255 (el grafo aplica la normalización `/255` y media/desviación típica de ImageNet) y salida `logits` de `[1,C]`. Los pesos se almacenan en FP16 dentro del grafo, pero los tensores de entrada y salida se mantienen en float32, una decisión habitual para maximizar compatibilidad con aceleradores móviles.
 
-El interés del modelo es acotado pero claro: demuestra un patrón de despliegue de triaje dermatológico en móvil con umbrales de abstención calibrados y temperaturas por cabeza, algo poco frecuente en modelos de este tamaño publicados en HuggingFace. Ahora bien, el autor lo etiqueta explícitamente como *research use only*, no es un dispositivo médico y no constituye un diagnóstico, y la licencia del artefacto no está declarada.
+El interés del modelo es acotado pero claro: demuestra un patrón de despliegue de triaje dermatológico en móvil con umbrales de abstención calibrados y temperaturas por cabeza, algo poco frecuente en modelos de este tamaño publicados en Hugging Face. Ahora bien, el autor lo etiqueta explícitamente como *research use only*, no es un dispositivo médico y no constituye un diagnóstico, y la licencia del artefacto no está declarada.
 
 ## Especificaciones tecnicas
 
@@ -64,8 +64,8 @@ El repositorio incluye un `benchmark_report.json` con la concordancia FP16 frent
 
 | Modelo | Arquitectura | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HC-MTS skin triage (este) | ConvNeXt-Base, 3 cabezas ONNX FP16 | no disponible (~88M por grafo, estimado) | 384x384 RGB | no disponible | HuggingFace, repo de 0,5 GB |
-| Modelos de clasificación ISIC en HuggingFace | habitualmente ResNet/EfficientNet | variable | variable | variable segun autor | no verificado en esta busqueda |
+| HC-MTS skin triage (este) | ConvNeXt-Base, 3 cabezas ONNX FP16 | no disponible (~88M por grafo, estimado) | 384x384 RGB | no disponible | Hugging Face, repo de 0,5 GB |
+| Modelos de clasificación ISIC en Hugging Face | habitualmente ResNet/EfficientNet | variable | variable | variable segun autor | no verificado en esta busqueda |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas concretas de la misma categoría; los modelos públicos de triaje dermatológico varían ampliamente en arquitectura, datos y licencia, y no se han verificado en esta ficha.
@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Docglasses-AI/hc-mts-skin-triage-onnx-fp16
+- Modelo en Hugging Face: https://huggingface.co/Docglasses-AI/hc-mts-skin-triage-onnx-fp16
 - Repositorio de origen (espejo): https://huggingface.co/Gowtham25/hc-mts-models
 - ISIC (fuente de datos, CC-BY-NC): https://www.isic-archive.com
 - Fitzpatrick17k (fuente de datos, CC-BY-NC-SA): https://github.com/mdfarhaan/Fitzpatrick17k

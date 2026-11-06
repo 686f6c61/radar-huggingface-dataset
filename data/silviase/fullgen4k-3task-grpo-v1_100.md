@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FullGen4K-3Task-GRPO-v1_100 es un ajuste fino de parametros completos (full-parameter) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario Silviase en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo multimodal de tipo image-text-to-text de aproximadamente 2.213 millones de parametros, entrenado con GRPO (Group Relative Policy Optimization) sobre tres tareas simultaneas: OCR, seleccion de evidencia y respuesta a preguntas visuales (QA). El entrenamiento parte de un commit fijado del modelo base (`15852e8c16360a2fea060d615a32b45270f8a8fc`) y se ha realizado a partir de 3.500 imagenes que generan 10.500 entradas de tarea, con una mezcla 1:1:1 entre las tres tareas.
+FullGen4K-3Task-GRPO-v1_100 es un ajuste fino de parametros completos (full-parameter) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario Silviase en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo multimodal de tipo image-text-to-text de aproximadamente 2.213 millones de parametros, entrenado con GRPO (Group Relative Policy Optimization) sobre tres tareas simultaneas: OCR, seleccion de evidencia y respuesta a preguntas visuales (QA). El entrenamiento parte de un commit fijado del modelo base (`15852e8c16360a2fea060d615a32b45270f8a8fc`) y se ha realizado a partir de 3.500 imagenes que generan 10.500 entradas de tarea, con una mezcla 1:1:1 entre las tres tareas.
 
-El checkpoint publicado corresponde al paso 100 del optimizador, no a un numero de imagenes ni de rondas de generacion. La model card indica explicitamente que los pesos se publicaron antes de completar la evaluacion y que no se reclama ninguna mejora de rendimiento sobre el modelo base. El autor senala ademas que el sufijo "100" identifica un checkpoint nativo sellado de HuggingFace y que no se garantiza la igualdad tras un ciclo de exportacion y reimportacion.
+El checkpoint publicado corresponde al paso 100 del optimizador, no a un numero de imagenes ni de rondas de generacion. La model card indica explicitamente que los pesos se publicaron antes de completar la evaluacion y que no se reclama ninguna mejora de rendimiento sobre el modelo base. El autor senala ademas que el sufijo "100" identifica un checkpoint nativo sellado de Hugging Face y que no se garantiza la igualdad tras un ciclo de exportacion y reimportacion.
 
 Por su tamano y su enfoque en OCR y comprension visual, el modelo se situa en la categoria de VLM ligeros desplegables en hardware de consumo, pero su estado es claramente experimental: cero descargas, cero likes, evaluacion pendiente y ausencia de resultados de benchmarks publicados en la informacion disponible.
 
@@ -74,7 +74,7 @@ No se dispone de datos de MMLU, HumanEval, GSM8K ni de ninguna otra referencia e
 - GPU consumer compatibles: el modelo deberia caber en tarjetas como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090, asi como en GPUs integradas de 8 GB o mas con cuantizacion.
 - GPU de centro de datos: A100, H100, L40S o L4 son suficientes y permiten margen amplio para lotes grandes y contexto largo.
 - CPU: la inferencia en CPU es teoricamente posible con cuantizacion, pero no hay datos publicados al respecto.
-- Opciones de despliegue: el repositorio usa la libreria transformers y esta etiquetado como `endpoints_compatible`, por lo que es desplegable con transformers y con endpoints gestionados de HuggingFace; vLLM es una opcion habitual para modelos de este tipo, aunque no esta confirmada en la model card. No se publican pesos en GGUF, por lo que llama.cpp u Ollama exigirian una conversion previa y podrian no soportar el componente visual.
+- Opciones de despliegue: el repositorio usa la libreria transformers y esta etiquetado como `endpoints_compatible`, por lo que es desplegable con transformers y con endpoints gestionados de Hugging Face; vLLM es una opcion habitual para modelos de este tipo, aunque no esta confirmada en la model card. No se publican pesos en GGUF, por lo que llama.cpp u Ollama exigirian una conversion previa y podrian no soportar el componente visual.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,8 +83,8 @@ No se dispone de datos verificados de los modelos comparables en la informacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| FullGen4K-3Task-GRPO-v1_100 | 2.213.241.664 | no disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint experimental sin evaluacion publicada |
-| Qwen/Qwen3.5-2B (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Origen del ajuste; commit fijado `15852e8c16360a2fea060d615a32b45270f8a8fc` |
+| FullGen4K-3Task-GRPO-v1_100 | 2.213.241.664 | no disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint experimental sin evaluacion publicada |
+| Qwen/Qwen3.5-2B (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Origen del ajuste; commit fijado `15852e8c16360a2fea060d615a32b45270f8a8fc` |
 | Otros VLM ligeros de 2 a 3 mil millones de parametros (por ejemplo, familias Qwen-VL, InternVL o SmolVLM) | no disponible | no disponible | no disponible | no disponible | No se han encontrado datos comparativos en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -103,8 +103,8 @@ No se dispone de datos verificados de los modelos comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_100
+- Hugging Face: https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Trazas de entrenamiento en W&B: https://wandb.ai/silviase/jasset/runs/fullgen4k-3task-grpo-v1
-- Configuracion completa del experimento: archivo `experiment.json` dentro del repositorio de HuggingFace
+- Configuracion completa del experimento: archivo `experiment.json` dentro del repositorio de Hugging Face
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

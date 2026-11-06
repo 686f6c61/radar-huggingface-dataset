@@ -98,13 +98,13 @@ Las dos alternativas identificadas pertenecen al mismo ejercicio academico (Assi
 - Limitaciones de idioma: el modelo solo cubre vi -> en y ja -> en; no se ha validado para otros pares ni para generacion libre multilingue.
 - Rendimiento desigual por idioma: la perplejidad en japones (4,990) es un 33 % superior a la de vietnamita (3,743), y el BLEU cae de 44,64 a 34,96, lo que indica un rendimiento claramente inferior en japones.
 - Restricciones de licencia: la licencia no esta declarada en el repositorio, por lo que no se puede asumir uso comercial sin autorizacion explicita del autor.
-- Caveat de produccion: el modelo depende de codigo propio (`src.part1/model.py`) para cargarse, no tiene pipeline declarado en HuggingFace ni integracion con runtimes de inferencia estandar, y no incluye tokenizador documentado en la informacion disponible.
+- Caveat de produccion: el modelo depende de codigo propio (`src.part1/model.py`) para cargarse, no tiene pipeline declarado en Hugging Face ni integracion con runtimes de inferencia estandar, y no incluye tokenizador documentado en la informacion disponible.
 - Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin senales de mantenimiento o soporte por parte del autor.
 - Uso previsto: se trata de un checkpoint academico, no de un modelo listo para despliegue en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p1-dense-mlp
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p1-dense-mlp
 - Registros de entrenamiento en Weights & Biases: https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part1-moe/runs/42jipq3h
 - Checkpoint equivalente de otro autor (unignoramus): https://huggingface.co/unignoramus/anlp-a2-p1-dense/tree/main
 - Checkpoint equivalente de otro autor (irishbumfuzzle): https://huggingface.co/irishbumfuzzle/anlp-a2-p1-dense

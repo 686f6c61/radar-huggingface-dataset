@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lie-detect` (publicado como "Earnings miss predictor") es un modelo de clasificación tabular desarrollado por Guruprasath12 que predice la probabilidad de que una empresa estadounidense incumpla la estimación de EPS consensuada en su próxima presentación de resultados trimestrales, con unos 90 días de antelación. No es un modelo de lenguaje: se trata de una regresión logística con 32 características de entrada y una única salida (un logit), envuelta como módulo de PyTorch mediante `pytorch_model_hub_mixin` para poder cargarla desde HuggingFace Hub.
+`lie-detect` (publicado como "Earnings miss predictor") es un modelo de clasificación tabular desarrollado por Guruprasath12 que predice la probabilidad de que una empresa estadounidense incumpla la estimación de EPS consensuada en su próxima presentación de resultados trimestrales, con unos 90 días de antelación. No es un modelo de lenguaje: se trata de una regresión logística con 32 características de entrada y una única salida (un logit), envuelta como módulo de PyTorch mediante `pytorch_model_hub_mixin` para poder cargarla desde Hugging Face Hub.
 
 El modelo combina cuatro familias de señales: el historial de sorpresas en resultados de la propia empresa (últimos 4 anuncios), el sector GICS (10 sectores), la actividad de analistas en los 90 días previos (cambios de rating y de precio objetivo) y el tono de la guía de resultados extraída del último press release mediante reglas de expresiones regulares. Fue concebido como proyecto de aprendizaje y el repositorio de GitHub asociado documenta el pipeline completo, incluidas las ideas que no funcionaron.
 
@@ -85,7 +85,7 @@ En empresas excluidas del entrenamiento (validación cruzada 5-fold por empresa)
 | Coste de inferencia | despreciable (CPU) | alto (GPU, tokens) | bajo (CPU) |
 | Interpretabilidad | total (coeficientes lineales) | baja | media |
 
-No hay modelos comparables publicados en HuggingFace con métricas directamente comparables sobre la misma tarea; la referencia más útil es la propia ablación interna del autor (history only vs. modelo completo).
+No hay modelos comparables publicados en Hugging Face con métricas directamente comparables sobre la misma tarea; la referencia más útil es la propia ablación interna del autor (history only vs. modelo completo).
 
 ## Limitaciones y advertencias
 
@@ -101,6 +101,6 @@ No hay modelos comparables publicados en HuggingFace con métricas directamente 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Guruprasath12/lie-detect
+- Hugging Face: https://huggingface.co/Guruprasath12/lie-detect
 - Repositorio GitHub con el pipeline completo y la documentación: https://github.com/guru-prasath-j/earnings-lie-detector
 - Paper, demo y blog: no disponibles

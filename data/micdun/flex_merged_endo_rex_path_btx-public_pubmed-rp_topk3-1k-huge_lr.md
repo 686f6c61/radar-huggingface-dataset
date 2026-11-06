@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-1k-huge_lr` es un modelo de pesos abiertos publicado en HuggingFace por el usuario `micdun` el 17 de septiembre de 2026, con unos 12.320.990.464 parametros totales (aproximadamente 12,3 mil millones) y un repositorio de 24,7 GB. La etiqueta de arquitectura declarada por el autor es `flex_qwen2_5_vl_moe`, lo que situa al modelo en la familia de arquitecturas de mezcla de expertos (MoE) derivadas de Qwen2.5-VL, es decir, con capacidad multimodal de vision y lenguaje. El nombre del repositorio sugiere un proceso de fusion de pesos (merged) orientado a dominios cientifico-medicos (terminos como endo, path y pubmed), aunque esta interpretacion procede unicamente de la nomenclatura y no de documentacion oficial.
+`micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-1k-huge_lr` es un modelo de pesos abiertos publicado en Hugging Face por el usuario `micdun` el 17 de septiembre de 2026, con unos 12.320.990.464 parametros totales (aproximadamente 12,3 mil millones) y un repositorio de 24,7 GB. La etiqueta de arquitectura declarada por el autor es `flex_qwen2_5_vl_moe`, lo que situa al modelo en la familia de arquitecturas de mezcla de expertos (MoE) derivadas de Qwen2.5-VL, es decir, con capacidad multimodal de vision y lenguaje. El nombre del repositorio sugiere un proceso de fusion de pesos (merged) orientado a dominios cientifico-medicos (terminos como endo, path y pubmed), aunque esta interpretacion procede unicamente de la nomenclatura y no de documentacion oficial.
 
 El modelo apenas ha recibido atencion: 71 descargas y 0 likes en el momento de redactar esta ficha, y no incluye pipeline declarado, licencia, idiomas ni resultados de evaluacion en la informacion disponible. Se trata, por tanto, de un artefacto experimental de investigacion mas que de un modelo listo para produccion.
 
@@ -46,7 +46,7 @@ Dada la ausencia de documentacion, licencia y evaluacion, los casos de uso son h
 - Analisis de documentos cientificos: en un escenario exploratorio, el modelo podria resumir articulos o extraer entidades de literatura biomedica, condicionado a que su ventana de contexto y su calidad lo permitan (ambas sin verificar).
 - Prototipado de asistentes clinicos de investigacion: uso interno en un grupo de investigacion para generar borradores sobre casos o articulos, nunca como herramienta de decision clinica.
 - Evaluacion comparativa de tecnicas de merging: util como sujeto de prueba en estudios sobre tecnicas de fusion (task arithmetic, model soup, TIES, DARE) aplicadas a modelos multimodales.
-- Reproducibilidad y auditoria de artefactos de HuggingFace: sirve como caso de estudio sobre modelos publicados sin licencia ni documentacion, relevante para quienes investigan gobernanza de modelos abiertos.
+- Reproducibilidad y auditoria de artefactos de Hugging Face: sirve como caso de estudio sobre modelos publicados sin licencia ni documentacion, relevante para quienes investigan gobernanza de modelos abiertos.
 - Base para fine-tuning posterior: podria actuar como punto de partida para ajuste supervisado en una tarea concreta, asumiendo que la licencia (no disponible) lo permita, lo cual es actualmente un bloqueo legal.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ La comparacion se limita a caracteristicas estructurales verificables, dado que 
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-1k-huge_lr | 12,3 B (MoE) | no disponible | Si (segun etiqueta) | no disponible | HuggingFace, 71 descargas |
+| micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-1k-huge_lr | 12,3 B (MoE) | no disponible | Si (segun etiqueta) | no disponible | Hugging Face, 71 descargas |
 | Qwen2.5-VL-7B | 7 B (denso) | 128k (segun documentacion publica del autor original) | Si | Apache-2.0 (segun documentacion publica) | Ampliamente disponible |
 | Qwen2.5-VL-32B | 32 B (denso) | 128k (segun documentacion publica del autor original) | Si | Apache-2.0 (segun documentacion publica) | Ampliamente disponible |
 
@@ -87,5 +87,5 @@ Nota: los datos de los modelos Qwen2.5-VL corresponden a la documentacion public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-1k-huge_lr
+- Hugging Face: https://huggingface.co/micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-1k-huge_lr
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la busqueda web realizada.

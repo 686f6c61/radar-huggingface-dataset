@@ -1,7 +1,7 @@
 # americansquid/FunctionGemma-HermesAgent-TitleGenerator
 
 ## Resumen
-FunctionGemma-HermesAgent-TitleGenerator es un ajuste fino de `google/functiongemma-270m-it` (268.098.176 parametros) publicado por el usuario americansquid en HuggingFace. Su funcion no es conversar, sino generar un titulo de 3 a 7 palabras que resuma la primera peticion de un usuario en una sesion de chat, y devolverlo exclusivamente como una llamada a herramienta `set_session_title` en la sintaxis de FunctionGemma, no como texto libre ni JSON.
+FunctionGemma-HermesAgent-TitleGenerator es un ajuste fino de `google/functiongemma-270m-it` (268.098.176 parametros) publicado por el usuario americansquid en Hugging Face. Su funcion no es conversar, sino generar un titulo de 3 a 7 palabras que resuma la primera peticion de un usuario en una sesion de chat, y devolverlo exclusivamente como una llamada a herramienta `set_session_title` en la sintaxis de FunctionGemma, no como texto libre ni JSON.
 
 El modelo resuelve un problema muy concreto de producto: nombrar automaticamente sesiones en asistentes conversacionales, manteniendo terminos tecnicos y en miniscula tipo frase. Al estar construido sobre un modelo de 270M de parametros, es desplegable en CPU o en cualquier GPU de consumo, lo que lo hace atractivo para tareas auxiliares de alto volumen y bajo coste.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Especializacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FunctionGemma-HermesAgent-TitleGenerator | 268,1 M | Titulado de sesiones via tool call | no disponible | no disponible | HuggingFace, 6 descargas |
-| `google/functiongemma-270m-it` (modelo base) | 270 M (aprox.) | Tool calling general e instrucciones | no disponible | terminos de Google (no detallados aqui) | HuggingFace, ampliamente distribuido |
-| `google/gemma-3-270m-it` | 270 M (aprox.) | Asistente generalista pequeno | no disponible | terminos de Google (no detallados aqui) | HuggingFace |
+| FunctionGemma-HermesAgent-TitleGenerator | 268,1 M | Titulado de sesiones via tool call | no disponible | no disponible | Hugging Face, 6 descargas |
+| `google/functiongemma-270m-it` (modelo base) | 270 M (aprox.) | Tool calling general e instrucciones | no disponible | terminos de Google (no detallados aqui) | Hugging Face, ampliamente distribuido |
+| `google/gemma-3-270m-it` | 270 M (aprox.) | Asistente generalista pequeno | no disponible | terminos de Google (no detallados aqui) | Hugging Face |
 
 No se dispone de datos de rendimiento comparables de terceros en la informacion proporcionada: las unicas cifras disponibles son la comparacion interna base frente a ajustado de la propia model card. Cualquier modelo alternativo de la misma categoria (asistentes de menos de 1.000 M de parametros) tendria que evaluarse con el mismo conjunto de 2.500 ejemplos de test antes de extraer conclusiones.
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparables de terceros en la informacion 
 - Con solo 6 descargas y 0 likes, no existe validacion independiente de la comunidad sobre este checkpoint.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/americansquid/FunctionGemma-HermesAgent-TitleGenerator
+- Modelo en Hugging Face: https://huggingface.co/americansquid/FunctionGemma-HermesAgent-TitleGenerator
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas de un medio de noticias), por lo que no hay papers, blogs, repositorios ni demos adicionales que enlazar.

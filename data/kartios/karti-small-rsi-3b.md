@@ -66,6 +66,6 @@ No se dispone de datos comparativos publicados. El modelo base SmolLM3-3B es la 
 
 ## Enlaces
 
-- [HuggingFace - KartiOS/Karti-Small-RSI-3B](https://huggingface.co/KartiOS/Karti-Small-RSI-3B)
+- [Hugging Face - KartiOS/Karti-Small-RSI-3B](https://huggingface.co/KartiOS/Karti-Small-RSI-3B)
 - [Lumbridge - Model improvement loop](https://lumbridgecorp.com/models/karti-small-rsi-3b)
 - [Modelo base - HuggingFaceTB/SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)

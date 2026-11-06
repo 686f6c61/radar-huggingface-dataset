@@ -102,7 +102,7 @@ Kanso Koi 1.0, el otro modelo de formateo de la familia y origen del corpus de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-bf16
+- Modelo en Hugging Face: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-bf16
 - Build de 4 bits recomendado: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0
 - Build de 3 bits: https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-3bit
 - Modelo de la familia con el corpus v2.2: https://huggingface.co/BuilderHelm/Kanso-Koi-1.0

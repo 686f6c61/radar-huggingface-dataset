@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_qwen7b_5000` es un checkpoint de 7.615.616.512 parámetros (≈7,62 mil millones) publicado en HuggingFace por el usuario `ishikaa` y construido sobre la arquitectura Qwen2 (tag `qwen2` en los metadatos). El repositorio contiene únicamente pesos en `safetensors` (15,2 GB, lo que corresponde a precisión de 16 bits) y una model card autogenerada por la plataforma en la que el autor no ha rellenado ningún campo: no hay información sobre datos de entrenamiento, licencia, idiomas ni evaluación.
+`ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_qwen7b_5000` es un checkpoint de 7.615.616.512 parámetros (≈7,62 mil millones) publicado en Hugging Face por el usuario `ishikaa` y construido sobre la arquitectura Qwen2 (tag `qwen2` en los metadatos). El repositorio contiene únicamente pesos en `safetensors` (15,2 GB, lo que corresponde a precisión de 16 bits) y una model card autogenerada por la plataforma en la que el autor no ha rellenado ningún campo: no hay información sobre datos de entrenamiento, licencia, idiomas ni evaluación.
 
 Por la nomenclatura del identificador —`acquisition_student`, `confidence_combine`, `WGM_MP`, sufijo `5000`— cabe interpretar que se trata de un modelo "estudiante" obtenido mediante destilación o aprendizaje activo (con alguna función de adquisición y combinación de puntuaciones de confianza) a partir de Qwen2-7B, presumiblemente con 5.000 pasos o 5.000 muestras de entrenamiento. Esta lectura es una inferencia a partir del nombre y no está confirmada por el autor en ninguna parte del repositorio.
 
@@ -25,12 +25,12 @@ Su relevancia práctica es limitada: es un artefacto de investigación sin docum
 
 El checkpoint se publica con la etiqueta de arquitectura `qwen2`, dentro de la librería `transformers`, y con el pipeline `text-generation` y la etiqueta `conversational`. El recuento real de parámetros (7.615.616.512) coincide con el de la familia Qwen2-7B, un transformer decoder-only con atención causal completa, RoPE y normalización RMSNorm. No obstante, el repositorio no incluye `config.json` documentado en la información disponible, por lo que no se puede confirmar el número de capas, dimensiones ocultas, cabezas de atención ni la configuración exacta de RoPE o de ventana de contexto.
 
-No hay ningún dato sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del dataset, ni si hubo ajuste supervisado, DPO o RLHF, ni hiperparámetros, ni infraestructura de cómputo. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre el calculador de impacto medioambiental, incluido por defecto en la plantilla de model card de HuggingFace; no es una referencia al artículo que describe este modelo. El nombre del repositorio sugiere un pipeline de destilación con función de adquisición y combinación de confianza, pero es una hipótesis sin respaldo documental.
+No hay ningún dato sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del dataset, ni si hubo ajuste supervisado, DPO o RLHF, ni hiperparámetros, ni infraestructura de cómputo. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre el calculador de impacto medioambiental, incluido por defecto en la plantilla de model card de Hugging Face; no es una referencia al artículo que describe este modelo. El nombre del repositorio sugiere un pipeline de destilación con función de adquisición y combinación de confianza, pero es una hipótesis sin respaldo documental.
 
 ## Capacidades
 
 - Generación de texto autoregresiva y formato conversacional, según los tags `text-generation` y `conversational`.
-- Compatibilidad con `transformers` y con la API de inferencia de HuggingFace (`text-generation-inference`, `endpoints_compatible`).
+- Compatibilidad con `transformers` y con la API de inferencia de Hugging Face (`text-generation-inference`, `endpoints_compatible`).
 - Capacidades heredadas del modelo base Qwen2-7B (código, matemáticas, multilingüismo): no verificadas en este checkpoint concreto y, por tanto, no garantizadas.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Cuantización de 4 bits (GPTQ/AWQ/bitsandbytes): ≈4,5-5 GB de pesos, cabe en GPUs consumer de 8 GB (RTX 3060 Ti, RTX 4060) para contextos cortos.
 - GPU recomendadas: A100 40/80 GB o H100 para servicio concurrente con contextos largos; L40S o A6000 como término medio; RTX 4090 (24 GB) para desarrollo e inferencia single-stream en 16 bits.
 - Cabe en GPU consumer: sí, en RTX 3090/4090 (24 GB) sin cuantizar y en RTX 3060/4060 (8-12 GB) con cuantización de 4-8 bits.
-- Opciones de despliegue: `transformers` (vía indicada por la librería del repo), TGI (tag `text-generation-inference` presente) y endpoints de HuggingFace (`endpoints_compatible`). vLLM es compatible con arquitectura Qwen2 siempre que el `config.json` esté correctamente poblado. Para `llama.cpp`/Ollama sería necesario convertir los pesos a GGUF, ya que el repositorio no publica ninguna versión GGUF.
+- Opciones de despliegue: `transformers` (vía indicada por la librería del repo), TGI (tag `text-generation-inference` presente) y endpoints de Hugging Face (`endpoints_compatible`). vLLM es compatible con arquitectura Qwen2 siempre que el `config.json` esté correctamente poblado. Para `llama.cpp`/Ollama sería necesario convertir los pesos a GGUF, ya que el repositorio no publica ninguna versión GGUF.
 - Latencia y throughput: no disponibles; no hay mediciones publicadas ni datos de `Speeds, Sizes, Times` en la model card.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ Frente a cualquiera de estas alternativas, el checkpoint aquí descrito carece d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_qwen7b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_qwen7b_5000
 - Referencia citada en los tags (calculador de impacto ambiental, no artículo del modelo): https://arxiv.org/abs/1910.09700
 - Modelo base presumible, Qwen2-7B: https://huggingface.co/Qwen/Qwen2-7B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la búsqueda web disponible.

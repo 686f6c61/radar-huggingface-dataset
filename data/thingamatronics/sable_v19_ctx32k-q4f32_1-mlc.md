@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | Sable_v19_ctx32k-q4f32_1-MLC | ~1.5B | 32.768 | Apache-2.0 | Pesos MLC para WebLLM | Afinado para un personaje; sin benchmarks publicados |
-| Qwen2.5-1.5B-Instruct (base) | ~1.5B | 32.768 | Apache-2.0 | Safetensors, GGUF y otras variantes en HuggingFace | Modelo generalista; sirve de referencia para medir la Deriva introducida por el ajuste |
+| Qwen2.5-1.5B-Instruct (base) | ~1.5B | 32.768 | Apache-2.0 | Safetensors, GGUF y otras variantes en Hugging Face | Modelo generalista; sirve de referencia para medir la Deriva introducida por el ajuste |
 | Qwen2.5-0.5B-Instruct | ~0.5B | 32.768 | Apache-2.0 | Multiples formatos | Alternativa más ligera para entornos con menos memoria; menor calidad esperada |
 | Modelos de ~1-2B con soporte WebLLM (por ejemplo, variantes compiladas de Llama 3.2 1B o SmolLM2) | 1-2B | Variable según modelo | Licencias dispares (Llama, Apache-2.0) | Pesos MLC publicados por la comunidad | Alternativas para despliegue en navegador; requieren verificar la compilación MLC disponible |
 
@@ -88,10 +88,10 @@ Los datos de los modelos alternativos provienen de sus fichas públicas y deben 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thingamatronics/Sable_v19_ctx32k-q4f32_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/Thingamatronics/Sable_v19_ctx32k-q4f32_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - WebLLM (repositorio): https://github.com/mlc-ai/web-llm
 - Demo jugable "Dr. Sable": https://stickybitgames.itch.io/doctor-sable
 - MLC-LLM (herramienta de compilación): https://github.com/mlc-ai/mlc-llm
 - Documentación de MLC-LLM: https://llm.mlc.ai/docs/
-- Página del autor en HuggingFace: https://huggingface.co/Thingamatronics
+- Página del autor en Hugging Face: https://huggingface.co/Thingamatronics

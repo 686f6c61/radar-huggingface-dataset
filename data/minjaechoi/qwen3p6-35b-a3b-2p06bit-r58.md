@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B 2.0578-bit routed experts (r58) es un checkpoint de investigación interna publicado por el usuario minjaechoi en HuggingFace. Se trata de una cuantizacion selectiva del modelo base Qwen/Qwen3.6-35B-A3B, en la que unicamente los pesos de los expertos enrutados (routed experts) se comprimen a una media de 2,0578 bits, mientras que el resto de los pesos se mantiene en BF16. El identificador interno del autor es r58.
+Qwen3.6-35B-A3B 2.0578-bit routed experts (r58) es un checkpoint de investigación interna publicado por el usuario minjaechoi en Hugging Face. Se trata de una cuantizacion selectiva del modelo base Qwen/Qwen3.6-35B-A3B, en la que unicamente los pesos de los expertos enrutados (routed experts) se comprimen a una media de 2,0578 bits, mientras que el resto de los pesos se mantiene en BF16. El identificador interno del autor es r58.
 
 El modelo pertenece a la familia Qwen3.6 con arquitectura de mezcla de expertos (MoE), segun se deduce de la etiqueta qwen3_5_moe y de la nomenclatura A3B del nombre. El checkpoint declara 35.107.181.936 parametros totales (dato extraido de los ficheros safetensors) y un tamano de repositorio de 70,2 GB. Pese a la cuantizacion agresiva de los expertos, los pesos se almacenan ya dequantizados en tensores BF16, de modo que cargan directamente con transformers estandar y con vLLM.
 
@@ -83,5 +83,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p06bit-r58
+- Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p06bit-r58
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

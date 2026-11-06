@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| junshin02/smolvla_so101_v2fix_pi0delta_b16 | 450M | No disponible | Pick-and-place SO-101 | Apache-2.0 | HuggingFace |
-| junshin02/smolvla_so101_v2trim_delta_b16 | No disponible | No disponible | Pick-and-place SO-101 (variante) | Apache-2.0 | HuggingFace |
-| minghonlai/so101-smolvla-shooting-20250730 | No disponible | No disponible | Tarea de "shooting" con SO-101 | No disponible | HuggingFace |
-| lerobot/smolvla_base | 450M | No disponible | Modelo base general | Apache-2.0 | HuggingFace |
+| junshin02/smolvla_so101_v2fix_pi0delta_b16 | 450M | No disponible | Pick-and-place SO-101 | Apache-2.0 | Hugging Face |
+| junshin02/smolvla_so101_v2trim_delta_b16 | No disponible | No disponible | Pick-and-place SO-101 (variante) | Apache-2.0 | Hugging Face |
+| minghonlai/so101-smolvla-shooting-20250730 | No disponible | No disponible | Tarea de "shooting" con SO-101 | No disponible | Hugging Face |
+| lerobot/smolvla_base | 450M | No disponible | Modelo base general | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparacion se limita a aspectos cualitativos: todos son fine-tunes de SmolVLA para el robot SO-101, con diferencias en el dataset y la tarea especifica.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junshin02/smolvla_so101_v2fix_pi0delta_b16
+- Repositorio Hugging Face: https://huggingface.co/junshin02/smolvla_so101_v2fix_pi0delta_b16
 - Paper de SmolVLA (arXiv): https://huggingface.co/papers/2506.01844
 - Documentacion de LeRobot sobre SmolVLA: https://huggingface.co/docs/lerobot/main/en/smolvla
 - Repositorio de LeRobot en GitHub: https://github.com/huggingface/lerobot

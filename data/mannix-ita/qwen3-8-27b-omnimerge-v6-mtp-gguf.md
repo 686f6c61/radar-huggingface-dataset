@@ -85,7 +85,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/ManniX-ITA/Qwen3.8-27B-Omnimerge-v6-MTP-GGUF)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/ManniX-ITA/Qwen3.8-27B-Omnimerge-v6-MTP-GGUF)
 - [Modelo base (safetensors)](https://huggingface.co/ManniX-ITA/Qwen3.8-27B-Omnimerge-v6)
 - [PR de llama.cpp #22673 (soporte MTP)](https://github.com/ggml-org/llama.cpp/pull/22673)
 - [Modelo en Ollama](https://ollama.com/mannix/omnimerge-v6)

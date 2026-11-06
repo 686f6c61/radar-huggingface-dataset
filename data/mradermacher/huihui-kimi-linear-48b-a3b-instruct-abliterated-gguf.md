@@ -92,7 +92,7 @@ Las siguientes cifras de VRAM son estimaciones derivadas del tamano de los fiche
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Huihui-Kimi-Linear-48B-A3B-Instruct-abliterated-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Huihui-Kimi-Linear-48B-A3B-Instruct-abliterated-GGUF
 - Repositorio de cuantizaciones imatrix/ponderadas (i1): https://huggingface.co/mradermacher/Huihui-Kimi-Linear-48B-A3B-Instruct-abliterated-i1-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Kimi-Linear-48B-A3B-Instruct-abliterated
 - Pagina de vision general y lista de descargas del autor: https://hf.tst.eu/model#Huihui-Kimi-Linear-48B-A3B-Instruct-abliterated-GGUF

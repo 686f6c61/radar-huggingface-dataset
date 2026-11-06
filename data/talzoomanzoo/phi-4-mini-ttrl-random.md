@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | `talzoomanzoo/phi-4-mini-ttrl-random` (este) | No disponible | No disponible | No disponible | Adaptador PEFT, 0,2 GB | 2 pasos de entrenamiento, sin evaluación |
-| `microsoft/Phi-4-mini-reasoning` (base) | No disponible en la información proporcionada | No disponible en la información proporcionada | Consultar ficha del modelo base | Pesos completos en HuggingFace | Referencia directa; el adaptador se aplica sobre él |
+| `microsoft/Phi-4-mini-reasoning` (base) | No disponible en la información proporcionada | No disponible en la información proporcionada | Consultar ficha del modelo base | Pesos completos en Hugging Face | Referencia directa; el adaptador se aplica sobre él |
 | Checkpoint `global_step_1` (mismo repo) | Idéntico al base | Idéntico al base | No disponible | Subcarpeta del repo | Estado un paso anterior; útil para comparar deriva |
 | Otros adaptadores LoRA de razonamiento | No disponible | No disponible | No disponible | No identificados en la búsqueda | No se han encontrado alternativas comparables en la información disponible |
 

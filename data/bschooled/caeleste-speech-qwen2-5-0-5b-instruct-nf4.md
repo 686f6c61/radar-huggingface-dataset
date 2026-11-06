@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 - VRAM estimada: el modelo cuantizado ocupa 0.44 GiB en disco. Para inferencia se recomienda al menos 1-2 GiB de VRAM, considerando activaciones y overhead del runtime.
 - GPU compatibles: NVIDIA con arquitectura Turing o superior (sm_75+), incluyendo RTX 2060, RTX 3060, RTX 4060, RTX 4090, A100, H100. AMD ROCm en RDNA3, RDNA3.5 y CDNA.
 - Cabe en GPU de consumo: si, cualquier GPU de 2 GB o mas de VRAM es suficiente. Tambien puede ejecutarse en CPU con cuantizacion adicional.
-- Opciones de despliegue: se puede cargar con Transformers de HuggingFace y bitsandbytes (ejemplo en la model card). Compatible con vLLM, llama.cpp y Ollama mediante conversion a GGUF, y con TGI (Text Generation Inference).
+- Opciones de despliegue: se puede cargar con Transformers de Hugging Face y bitsandbytes (ejemplo en la model card). Compatible con vLLM, llama.cpp y Ollama mediante conversion a GGUF, y con TGI (Text Generation Inference).
 - Latencia y throughput: no se especifican datos de medicion en la informacion disponible. Para un modelo de 0.5B en GPU moderna, se esperan latencias inferiores a 100 ms por token y throughput del orden de miles de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ La diferencia principal entre las variantes es el metodo de cuantizacion: NF4 de
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/bschooled/caeleste-speech-qwen2.5-0.5b-instruct-nf4)
+- [Hugging Face del modelo](https://huggingface.co/bschooled/caeleste-speech-qwen2.5-0.5b-instruct-nf4)
 - [Modelo original Qwen/Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5

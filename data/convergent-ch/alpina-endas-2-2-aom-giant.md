@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpina Endas 2.2 AoM Giant | 200 × 7B + 2 × 14B (suma nominal, pesos compartidos) | No disponible | Runtime multiagente con 9 LoRA sobre Qwen2.5 | Apache 2.0 | HuggingFace, paquete de ~27 GB |
-| Qwen2.5-7B-Instruct | 7B | 128K (segun Qwen2.5) | Transformer denso instruct | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-14B-Instruct | 14B | 128K (segun Qwen2.5) | Transformer denso instruct | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Modelos MoE abiertos tipo Mixtral 8x7B | 46,7B totales, ~12,9B activos | 32K | MoE disperso entrenado | Apache 2.0 | HuggingFace, soporte en vLLM y llama.cpp |
+| Alpina Endas 2.2 AoM Giant | 200 × 7B + 2 × 14B (suma nominal, pesos compartidos) | No disponible | Runtime multiagente con 9 LoRA sobre Qwen2.5 | Apache 2.0 | Hugging Face, paquete de ~27 GB |
+| Qwen2.5-7B-Instruct | 7B | 128K (segun Qwen2.5) | Transformer denso instruct | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-14B-Instruct | 14B | 128K (segun Qwen2.5) | Transformer denso instruct | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Modelos MoE abiertos tipo Mixtral 8x7B | 46,7B totales, ~12,9B activos | 32K | MoE disperso entrenado | Apache 2.0 | Hugging Face, soporte en vLLM y llama.cpp |
 
 La comparativa con Qwen2.5 refleja las bases subyacentes; el valor diferencial de AoM Giant es el protocolo de orquestacion, no la capacidad de los pesos. Frente a un MoE real, las copias de 7B no aportan capacidad aprendida adicional y el coste computacional es mucho mayor por llamada.
 
@@ -93,7 +93,7 @@ La comparativa con Qwen2.5 refleja las bases subyacentes; el valor diferencial d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-Giant
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-Giant
 - Modelo base 7B: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo base 14B en 4 bits: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

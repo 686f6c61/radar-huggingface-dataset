@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Winder1/us-property-valugrid` es un repositorio publicado en HuggingFace por el usuario Winder1 bajo licencia MIT y con la etiqueta de región `us`. En el momento de redactar esta ficha no dispone de descargas ni de "likes", no declara pipeline ni idiomas soportados, y su model card está vacía: únicamente contiene el bloque de metadatos con la licencia. No se ha publicado ninguna descripción del modelo, del dataset de entrenamiento ni del uso previsto.
+`Winder1/us-property-valugrid` es un repositorio publicado en Hugging Face por el usuario Winder1 bajo licencia MIT y con la etiqueta de región `us`. En el momento de redactar esta ficha no dispone de descargas ni de "likes", no declara pipeline ni idiomas soportados, y su model card está vacía: únicamente contiene el bloque de metadatos con la licencia. No se ha publicado ninguna descripción del modelo, del dataset de entrenamiento ni del uso previsto.
 
 El identificador sugiere un vínculo con valoración de inmuebles ("valu" + "grid"), pero se trata solo de una inferencia a partir del nombre y no está confirmada por ninguna documentación técnica. No hay información sobre arquitectura, número de parámetros, longitud de contexto ni formato de pesos, por lo que no es posible clasificarlo como LLM, modelo tabular, modelo de visión o artefacto de otro tipo.
 
@@ -68,7 +68,7 @@ No disponible. No se ha identificado ningún modelo abierto comparable, porque s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Winder1/us-property-valugrid | no disponible | no disponible | MIT | HuggingFace |
+| Winder1/us-property-valugrid | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. No se ha identificado ningún modelo abierto comparable, porque s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Winder1/us-property-valugrid
+- Repositorio en Hugging Face: https://huggingface.co/Winder1/us-property-valugrid
 - Winder.AI - Automatización documental para inmobiliario: https://winder.ai/solutions/ai-document-processing/real-estate/
 - Winder.AI - Automatización documental para suscripción de seguros: https://winder.ai/solutions/ai-document-processing/underwriting/
 - MDM Valuation - ValueGrid: https://mdmvaluation.com/valuegrid/

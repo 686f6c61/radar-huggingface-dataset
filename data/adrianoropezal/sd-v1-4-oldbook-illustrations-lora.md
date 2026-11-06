@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adrianoropezal/sd-v1-4-oldbook-illustrations-lora` es un adaptador LoRA para generación de imágenes mediante texto (text-to-image) entrenado sobre Stable Diffusion v1-4. Lo desarrolla el usuario de HuggingFace adrianoropezal y su propósito es transferir un estilo visual concreto: la estética de grabado de ilustraciones de libros publicados entre 1800 y 1900. El adaptador se aplica sobre los pesos del modelo base sin modificarlos, por lo que no es un modelo autónomo sino un complemento que requiere cargar primero `CompVis/stable-diffusion-v1-4`.
+El modelo `adrianoropezal/sd-v1-4-oldbook-illustrations-lora` es un adaptador LoRA para generación de imágenes mediante texto (text-to-image) entrenado sobre Stable Diffusion v1-4. Lo desarrolla el usuario de Hugging Face adrianoropezal y su propósito es transferir un estilo visual concreto: la estética de grabado de ilustraciones de libros publicados entre 1800 y 1900. El adaptador se aplica sobre los pesos del modelo base sin modificarlos, por lo que no es un modelo autónomo sino un complemento que requiere cargar primero `CompVis/stable-diffusion-v1-4`.
 
 Técnicamente se trata de un LoRA de rango 8 y alpha 8 aplicado exclusivamente a las proyecciones de atención (`to_q`, `to_k`, `to_v`, `to_out.0`) del UNet de Stable Diffusion. Con 1.594.368 parámetros entrenables sobre un total de 861.115.332 (un 0,19%), el adaptador es extremadamente ligero y se distribuye como un conjunto de pesos compatible con la librería `diffusers`. El entrenamiento se realizó sobre 830 muestras del dataset `gigant/oldbookillustrations` a resolución 512x512 durante 5 épocas.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Base | Parámetros | Contexto/resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| adrianoropezal/sd-v1-4-oldbook-illustrations-lora | LoRA de estilo | SD v1-4 | 1,59 M entrenables | 512x512 | No comercial (CC BY-NC 4.0 del dataset) | HuggingFace, 19 descargas |
-| CompVis/stable-diffusion-v1-4 | Modelo base completo | — | 861 M (UNet) | 512x512 | CreativeML Open RAIL-M | HuggingFace, ampliamente usado |
-| Otros LoRA de estilo sobre SD v1-4 | LoRA de estilo | SD v1-4 | variable (típicamente 1-10 M) | 512x512 | variable según dataset | HuggingFace / Civitai |
+| adrianoropezal/sd-v1-4-oldbook-illustrations-lora | LoRA de estilo | SD v1-4 | 1,59 M entrenables | 512x512 | No comercial (CC BY-NC 4.0 del dataset) | Hugging Face, 19 descargas |
+| CompVis/stable-diffusion-v1-4 | Modelo base completo | — | 861 M (UNet) | 512x512 | CreativeML Open RAIL-M | Hugging Face, ampliamente usado |
+| Otros LoRA de estilo sobre SD v1-4 | LoRA de estilo | SD v1-4 | variable (típicamente 1-10 M) | 512x512 | variable según dataset | Hugging Face / Civitai |
 
 No se dispone de información sobre benchmarks comparativos ni sobre otros adaptadores específicos de ilustración de libros antiguos que permitan una comparación cuantitativa.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre benchmarks comparativos ni sobre otros adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adrianoropezal/sd-v1-4-oldbook-illustrations-lora
+- Modelo en Hugging Face: https://huggingface.co/adrianoropezal/sd-v1-4-oldbook-illustrations-lora
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset de entrenamiento: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Librería diffusers: https://github.com/huggingface/diffusers

@@ -27,7 +27,7 @@ Su relevancia actual es de ingeniería de despliegue más que de investigación:
 | Runtime y SDK | QAIRT 2.45, ONNX Runtime 1.27.1 |
 | Libreria de exportacion | Qualcomm AI Hub Models v0.62.2 |
 | Tamano del repositorio | 1,3 GB |
-| Pipeline declarado en HuggingFace | image-classification |
+| Pipeline declarado en Hugging Face | image-classification |
 | Descargas / likes | 16 / 1 |
 | Fecha de creacion / actualizacion | 2025-08-29 / 2026-09-11 |
 
@@ -127,12 +127,12 @@ La ventaja diferencial de este repositorio no es la arquitectura, sino el conjun
 - Restricciones de licencia: los pesos y el código se publican bajo Apache 2.0, lo que permite uso comercial. No se detallan en la información disponible las condiciones de uso del Qualcomm AI Hub, del Workbench ni del SDK QAIRT, que son necesarios para compilar y perfilar; conviene revisarlas antes de un despliegue en producción.
 - Advertencia sobre las mediciones: las latencias corresponden a plataformas concretas, versiones exactas de SDK (QAIRT 2.45, ONNX Runtime 1.27.1) y condiciones de perfilado no especificadas (lote, repeticiones, frecuencia). No son extrapolables a otros runtimes ni a otros modelos de chip.
 - Nota sobre el artefacto: pese a que el repositorio declara `pytorch` como librería, los recursos descargables son exportaciones (ONNX, QNN DLC, TFLite) y no un checkpoint entrenable listo para usar directamente.
-- Madurez y comunidad: 16 descargas y 1 like en HuggingFace, con una única variante (L1) publicada. La adopción es muy baja, por lo que el soporte comunitario es limitado.
+- Madurez y comunidad: 16 descargas y 1 like en Hugging Face, con una única variante (L1) publicada. La adopción es muy baja, por lo que el soporte comunitario es limitado.
 - Fecha de actualización posterior a la de creación (2026-09-11 frente a 2025-08-29) sin registro de cambios disponible, por lo que se desconoce qué se modificó.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm/EfficientFormer
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm/EfficientFormer
 - Implementación original (Snap Research): https://github.com/snap-research/EfficientFormer
 - Paper original: https://arxiv.org/abs/2212.08059
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientformer

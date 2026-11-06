@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks homogéneos para comparar la calidad de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NonMiFrega/DeepSeek-R1-Distill-Llama-8B-Q4_K_M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/NonMiFrega/DeepSeek-R1-Distill-Llama-8B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

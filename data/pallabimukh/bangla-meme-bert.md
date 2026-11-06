@@ -2,7 +2,7 @@
 
 ## Resumen
 
-"bangla-meme-bert" es un modelo de tipo Electra publicado en HuggingFace por el usuario pallabiMukh. Según los metadatos del repositorio, se trata de un modelo con 110.650.880 parámetros, en formato safetensors, y con pipeline fill-mask. El nombre sugiere que está orientado al procesamiento de texto en bengalí, posiblemente relacionado con memes o contenido satírico, pero la model card no aporta información sobre su desarrollo, datos de entrenamiento ni propósito concreto.
+"bangla-meme-bert" es un modelo de tipo Electra publicado en Hugging Face por el usuario pallabiMukh. Según los metadatos del repositorio, se trata de un modelo con 110.650.880 parámetros, en formato safetensors, y con pipeline fill-mask. El nombre sugiere que está orientado al procesamiento de texto en bengalí, posiblemente relacionado con memes o contenido satírico, pero la model card no aporta información sobre su desarrollo, datos de entrenamiento ni propósito concreto.
 
 No se dispone de documentación técnica que permita confirmar su arquitectura exacta, longitud de contexto o capacidades más allá de lo indicado en los metadatos. Es un modelo pequeño, adecuado para tareas de relleno de máscaras o como base para fine-tuning en tareas de NLP en bengalí. La ausencia de licencia, benchmarks y detalles de entrenamiento limita la evaluación objetiva del modelo.
 
@@ -26,7 +26,7 @@ El modelo está etiquetado como Electra, una arquitectura de transformer que uti
 ## Capacidades
 
 - No se han publicado capacidades detalladas en la model card.
-- El pipeline indicado en HuggingFace es fill-mask, lo que permite usarlo para completar tokens enmascarados en texto en bengalí.
+- El pipeline indicado en Hugging Face es fill-mask, lo que permite usarlo para completar tokens enmascarados en texto en bengalí.
 - No hay información sobre soporte de tool calling, agentes, razonamiento multi-paso, visión o audio.
 - El nombre del modelo sugiere un posible uso en análisis de contenido de memes en bengalí, pero no está confirmado.
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pallabiMukh/bangla-meme-bert
+- Hugging Face: https://huggingface.co/pallabiMukh/bangla-meme-bert
 - Artículo sobre arquitectura de Bangla BERT (no confirmado como fuente directa): https://www.facebook.com/groups/bengaliAI/posts/2098725063957016/
 - Artículo sobre detección de sarcasmo en bengalí con transformers (no directamente relacionado): https://pmc.ncbi.nlm.nih.gov/articles/PMC10709363/

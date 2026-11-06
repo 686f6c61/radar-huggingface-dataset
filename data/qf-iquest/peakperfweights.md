@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `qf-iquest/PeakPerfWeights` es un modelo publicado en HuggingFace por el usuario `qf-iquest` con licencia MIT, etiquetado para extracción de características (`feature-extraction`) y con `transformers` como librería. Sin embargo, la información técnica disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo, y no se ha registrado ninguna descarga ni interacción de la comunidad.
+El repositorio `qf-iquest/PeakPerfWeights` es un modelo publicado en Hugging Face por el usuario `qf-iquest` con licencia MIT, etiquetado para extracción de características (`feature-extraction`) y con `transformers` como librería. Sin embargo, la información técnica disponible es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo, y no se ha registrado ninguna descarga ni interacción de la comunidad.
 
 La model card adjunta es genérica y describe un modelo llamado "MyAwesomeModel", presumiblemente una actualización de una versión anterior con mejoras en razonamiento profundo, matemáticas, programación y lógica. El texto afirma una mejora significativa en el conjunto de pruebas AIME 2025, pasando de un 70% a un 87.5% de precisión, así como un aumento del promedio de tokens de pensamiento por pregunta (de 12K a 23K). No obstante, existe una discrepancia notable entre esta descripción y los metadatos del repositorio, que apuntan a una arquitectura BERT y a una función de extracción de características. Dado que no se dispone de pesos ni de especificaciones verificables, el modelo no puede ser evaluado ni ejecutado en la práctica.
 
@@ -21,7 +21,7 @@ La model card adjunta es genérica y describe un modelo llamado "MyAwesomeModel"
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información técnica sobre la arquitectura del modelo, como el número de capas, la dimensión de los embeddings o el mecanismo de atención. La model card menciona que la versión actual ha mejorado sus capacidades de razonamiento mediante "increased computational resources and algorithmic optimization mechanisms during post-training", pero no detalla el tipo de optimización, los datos de entrenamiento, el número de tokens ni la composición del dataset. Tampoco se especifica si se emplearon técnicas como RLHF, DPO o similar. La única referencia arquitectónica indirecta es la etiqueta `bert` que aparece en los metadatos de HuggingFace, lo que es contradictorio con la descripción de un modelo generativo con soporte de function calling y uso de system prompts. El repositorio no contiene ningún archivo de pesos.
+No se ha publicado información técnica sobre la arquitectura del modelo, como el número de capas, la dimensión de los embeddings o el mecanismo de atención. La model card menciona que la versión actual ha mejorado sus capacidades de razonamiento mediante "increased computational resources and algorithmic optimization mechanisms during post-training", pero no detalla el tipo de optimización, los datos de entrenamiento, el número de tokens ni la composición del dataset. Tampoco se especifica si se emplearon técnicas como RLHF, DPO o similar. La única referencia arquitectónica indirecta es la etiqueta `bert` que aparece en los metadatos de Hugging Face, lo que es contradictorio con la descripción de un modelo generativo con soporte de function calling y uso de system prompts. El repositorio no contiene ningún archivo de pesos.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ No se ha publicado información técnica sobre la arquitectura del modelo, como 
 - Plantillas para subida de archivos y busqueda web aumentada: se proporcionan plantillas para incorporar contenido de archivos y resultados de busqueda con citas de fuentes.
 - Reduccion de alucinaciones: se menciona una menor tasa de alucinacion, aunque sin datos concretos.
 
-Es importante señalar que estas capacidades se describen en la model card, pero no pueden verificarse porque el repositorio no contiene pesos y los metadatos de HuggingFace apuntan a una tarea de extraccion de caracteristicas.
+Es importante señalar que estas capacidades se describen en la model card, pero no pueden verificarse porque el repositorio no contiene pesos y los metadatos de Hugging Face apuntan a una tarea de extraccion de caracteristicas.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ Ademas, la model card afirma que en AIME 2025 la precision paso del 70% en la ve
 
 ## Requisitos de hardware
 
-No disponible. El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que implica que no se han subido los pesos del modelo. Por tanto, no hay requisitos de VRAM, GPU recomendadas ni opciones de despliegue que puedan indicarse con seguridad. No se puede ejecutar el modelo con las herramientas habituales como vLLM, llama.cpp ni Ollama.
+No disponible. El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que implica que no se han subido los pesos del modelo. Por tanto, no hay requisitos de VRAM, GPU recomendadas ni opciones de despliegue que puedan indicarse con seguridad. No se puede ejecutar el modelo con las herramientas habituales como vLLM, llama.cpp ni Ollama.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No disponible. La model card presenta comparaciones con modelos anonimos ("Model
 
 - El repositorio no contiene pesos (0.0 GB), por lo que el modelo es inutilizable en su estado actual.
 - La model card esta redactada para un modelo denominado "MyAwesomeModel", que no coincide con el nombre del repositorio `PeakPerfWeights`.
-- Los metadatos de HuggingFace etiquetan el modelo como `bert` y `feature-extraction`, lo que contradice la descripcion de la model card sobre un modelo generativo con razonamiento profundo.
+- Los metadatos de Hugging Face etiquetan el modelo como `bert` y `feature-extraction`, lo que contradice la descripcion de la model card sobre un modelo generativo con razonamiento profundo.
 - No se proporcionan datos sobre arquitectura, parametros, contexto, idiomas ni cuantizacion.
 - Los benchmarks reportados no estan vinculados al repositorio actual y no pueden reproducirse.
 - La fecha de creacion del repositorio (2026-09-08) es posterior a la fecha actual de la consulta, lo que sugiere que puede tratarse de un repositorio de prueba o un placeholder.
@@ -90,5 +90,5 @@ No disponible. La model card presenta comparaciones con modelos anonimos ("Model
 
 ## Enlaces
 
-- HuggingFace: [qf-iquest/PeakPerfWeights](https://huggingface.co/qf-iquest/PeakPerfWeights)
-- Perfil del autor: [qf-iquest en HuggingFace](https://huggingface.co/qf-iquest)
+- Hugging Face: [qf-iquest/PeakPerfWeights](https://huggingface.co/qf-iquest/PeakPerfWeights)
+- Perfil del autor: [qf-iquest en Hugging Face](https://huggingface.co/qf-iquest)

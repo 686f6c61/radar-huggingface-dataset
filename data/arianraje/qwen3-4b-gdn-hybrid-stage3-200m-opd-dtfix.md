@@ -87,7 +87,7 @@ No se dispone de comparativas cuantitativas en la información proporcionada. El
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage3-200M-OPD-dtfix
+- Hugging Face: https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage3-200M-OPD-dtfix
 - Modelos relacionados:
   - https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2b-kd-dtfix
   - https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-stage2a-kd

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario asd123dsa12dsa2 y publicado en HuggingFace bajo licencia MIT. Según la model card, la versión actual ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra avances en matemáticas, programación y lógica, y su rendimiento general se acerca al de otros modelos líderes del sector.
+MyAwesomeModel es un modelo de lenguaje desarrollado por el usuario asd123dsa12dsa2 y publicado en Hugging Face bajo licencia MIT. Según la model card, la versión actual ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra avances en matemáticas, programación y lógica, y su rendimiento general se acerca al de otros modelos líderes del sector.
 
 No se dispone de información sobre la arquitectura, el número de parámetros ni la longitud de contexto en los datos proporcionados, por lo que estas especificaciones permanecen desconocidas. El repositorio es un espacio de prueba con 0 descargas y 0 likes, lo que sugiere que se trata de una publicación experimental o simulada, con una fecha de creación futura (2026-09-06) que refuerza esta hipótesis.
 
@@ -93,8 +93,8 @@ No disponible. No se han identificado modelos comparables reales en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asd123dsa12dsa2/MyAwesomeModel-TestRepository
-- Repositorios con nombre similar en HuggingFace:
+- Hugging Face: https://huggingface.co/asd123dsa12dsa2/MyAwesomeModel-TestRepository
+- Repositorios con nombre similar en Hugging Face:
   - https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel
   - https://huggingface.co/sad2DSAD12/MyAwesomeModel
 - No se han encontrado papers, blogs ni demos oficiales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `emraharican-tr/EmrahKrea2` es un modelo alojado en HuggingFace del que no se dispone de información técnica pública. La model card únicamente indica `license: unknown` y no incluye descripción, arquitectura, parámetros, ni ejemplos de uso. El tamaño del repositorio es de 0.2 GB, lo que sugiere un modelo de dimensiones reducidas, pero sin datos adicionales no es posible determinar su naturaleza, familia o propósito.
+El repositorio `emraharican-tr/EmrahKrea2` es un modelo alojado en Hugging Face del que no se dispone de información técnica pública. La model card únicamente indica `license: unknown` y no incluye descripción, arquitectura, parámetros, ni ejemplos de uso. El tamaño del repositorio es de 0.2 GB, lo que sugiere un modelo de dimensiones reducidas, pero sin datos adicionales no es posible determinar su naturaleza, familia o propósito.
 
 Al no existir documentación, métricas ni ejemplos, este repositorio no puede considerarse apto para evaluación o integración en entornos de producción sin antes obtener información del autor o realizar pruebas directas. La fecha de creación (2026-08-16) y actualización (2026-08-16) son recientes, y el número de descargas y likes es cero, lo que indica que es un proyecto muy nuevo o sin difusión.
 
@@ -56,4 +56,4 @@ No disponible. No se puede comparar con otros modelos porque se desconoce la arq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emraharican-tr/EmrahKrea2
+- Repositorio Hugging Face: https://huggingface.co/emraharican-tr/EmrahKrea2

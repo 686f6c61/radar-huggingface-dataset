@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SciEdu_291epi_mask_pi05 es un policy de robótica de tipo Vision-Language-Action (VLA) publicado por el usuario leapshared en HuggingFace. Se trata de un fine-tuning del modelo base lerobot/pi05_base (π₀.₅ de Physical Intelligence), adaptado a tareas concretas de manipulación bimanual en un entorno de experimentos de laboratorio educativo. El modelo aprende a ejecutar secuencias motoras a partir de observaciones visuales y de estado del robot, y no es un modelo de lenguaje general: su salida es un vector de acciones.
+SciEdu_291epi_mask_pi05 es un policy de robótica de tipo Vision-Language-Action (VLA) publicado por el usuario leapshared en Hugging Face. Se trata de un fine-tuning del modelo base lerobot/pi05_base (π₀.₅ de Physical Intelligence), adaptado a tareas concretas de manipulación bimanual en un entorno de experimentos de laboratorio educativo. El modelo aprende a ejecutar secuencias motoras a partir de observaciones visuales y de estado del robot, y no es un modelo de lenguaje general: su salida es un vector de acciones.
 
-π₀.₅ es la evolución de π₀ orientada a la generalización en entornos y situaciones no vistos durante el entrenamiento, según indica el propio autor en la model card. La implementación disponible en este repositorio proviene del ecosistema LeRobot de HuggingFace, adaptada desde el repositorio OpenPI de Physical Intelligence. El modelo tiene unos 4.143 millones de parámetros (4,14B) y se distribuye bajo licencia Apache-2.0.
+π₀.₅ es la evolución de π₀ orientada a la generalización en entornos y situaciones no vistos durante el entrenamiento, según indica el propio autor en la model card. La implementación disponible en este repositorio proviene del ecosistema LeRobot de Hugging Face, adaptada desde el repositorio OpenPI de Physical Intelligence. El modelo tiene unos 4.143 millones de parámetros (4,14B) y se distribuye bajo licencia Apache-2.0.
 
 Este fine-tuning concreto se ha entrenado sobre el dataset leapshared/SciEdu_291epi_mask, compuesto por 291 episodios y 597.322 fotogramas grabados a 30 FPS, con tareas como clasificación de hojas, reacciones redox y experimentos con un electroscopio. Es relevante para quien trabaje en imitación robótica, automatización de laboratorio o investigación en VLA, ya que demuestra el flujo completo de fine-tuning de π₀.₅ en LeRobot sobre un robot bimanual de tipo OpenArm.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leapshared/SciEdu_291epi_mask_pi05 | ≈4,14B | no disponible | VLA bimanual (laboratorio educativo) | apache-2.0 | HuggingFace, 0 descargas |
-| lerobot/pi05_base (modelo base) | no disponible en la informacion | no disponible | VLA generalista π₀.₅ | no disponible en la informacion | HuggingFace |
+| leapshared/SciEdu_291epi_mask_pi05 | ≈4,14B | no disponible | VLA bimanual (laboratorio educativo) | apache-2.0 | Hugging Face, 0 descargas |
+| lerobot/pi05_base (modelo base) | no disponible en la informacion | no disponible | VLA generalista π₀.₅ | no disponible en la informacion | Hugging Face |
 | π₀ (pi0) de Physical Intelligence | no disponible en la informacion | no disponible | VLA generalista | no disponible en la informacion | repositorio OpenPI |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar parametros, contexto o rendimiento con alternativas como OpenVLA u otras politicas VLA. Cualquier comparacion cuantitativa adicional queda como no disponible.
@@ -95,7 +95,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leapshared/SciEdu_291epi_mask_pi05
+- Modelo en Hugging Face: https://huggingface.co/leapshared/SciEdu_291epi_mask_pi05
 - Dataset de entrenamiento: https://huggingface.co/datasets/leapshared/SciEdu_291epi_mask
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Blog de π₀.₅ (Pi05) de Physical Intelligence: https://www.physicalintelligence.company/blog/pi05

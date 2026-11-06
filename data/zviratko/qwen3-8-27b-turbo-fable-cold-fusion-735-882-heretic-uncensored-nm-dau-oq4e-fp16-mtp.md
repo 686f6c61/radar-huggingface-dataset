@@ -91,8 +91,8 @@ No se dispone de datos de benchmarks ni de fichas equivalentes de modelos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zviratko/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ4e-fp16-mtp
-- Modelo base en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Repositorio en Hugging Face: https://huggingface.co/zviratko/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ4e-fp16-mtp
+- Modelo base en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Herramienta de cuantizacion oQ / oMLX citada en la model card: https://github.com/jundot/omlx
 - Paper, blog o demo del modelo: no disponibles en la informacion proporcionada.
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados obtenidos versan sobre descarga de fuentes tipograficas, una plataforma de preguntas y respuestas y aplicaciones moviles, sin relacion con el modelo.

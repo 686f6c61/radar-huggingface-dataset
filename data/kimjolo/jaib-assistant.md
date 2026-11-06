@@ -92,6 +92,6 @@ No se dispone de información suficiente para comparar con alternativas específ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimjolo/jaib-assistant
+- Modelo en Hugging Face: https://huggingface.co/kimjolo/jaib-assistant
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - No se han encontrado en la información proporcionada papers, blogs, repositorios ni demos adicionales.

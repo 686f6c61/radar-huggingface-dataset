@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (OLMo-2-7B-Instruct INT8 AutoRound) | 2,57B según safetensors (base 7B) | No disponible | INT8 WoQ gs64 sim | Apache 2.0 | HuggingFace, 17 descargas |
-| allenai/OLMo-2-1124-7B-Instruct (original) | 7B | No disponible en esta ficha | BF16 | Apache 2.0 | HuggingFace |
+| Este artefacto (OLMo-2-7B-Instruct INT8 AutoRound) | 2,57B según safetensors (base 7B) | No disponible | INT8 WoQ gs64 sim | Apache 2.0 | Hugging Face, 17 descargas |
+| allenai/OLMo-2-1124-7B-Instruct (original) | 7B | No disponible en esta ficha | BF16 | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones del mismo base (GPTQ, AWQ) | 7B | No disponible | 4/8 bits | Apache 2.0 | No verificado en la información disponible |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/allenai_OLMo-2-1124-7B-Instruct-auto_round-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/allenai_OLMo-2-1124-7B-Instruct-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de replicación: https://git.epicdynamic.com/auto-round-pipeline

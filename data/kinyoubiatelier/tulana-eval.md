@@ -4,7 +4,7 @@
 
 Tulana eval harness es un conjunto de herramientas de evaluación (evaluation harness) diseñado para medir la capacidad de seguimiento de instrucciones y fidelidad de generación en modelos de lenguaje compactos y abiertos, específicamente en condiciones de odia en escritura nativa, romanizada y con code-mixing odia-inglés. Lo desarrolla Kinyoubi Atelier & Co. y se publica bajo licencia Apache-2.0. No es un modelo de lenguaje en sí, sino un framework de evaluación que incluye un runner, motores de ejecución (fake y MLX), un puerto del checker IndicIFEval con verificación de divergencia cero, pipelines de construcción de condiciones (romanización, variabilidad controlada, code-mixing al 25/50/75%) y agregación de resultados con intervalos de confianza del 95%.
 
-El proyecto se encuentra en estado experimental (versión v0.1.0-pilot-experimental) y forma parte de la familia de artefactos Tulana, que incluye conjuntos de datos de benchmark y un espacio de visualización. Su relevancia radica en abordar la evaluación de modelos en idiomas de bajos recursos como el odia, un área poco cubierta por los benchmarks estándar. El repositorio de HuggingFace actúa como punto de referencia estable para el harness, mientras que el código fuente y las contribuciones se gestionan en GitHub.
+El proyecto se encuentra en estado experimental (versión v0.1.0-pilot-experimental) y forma parte de la familia de artefactos Tulana, que incluye conjuntos de datos de benchmark y un espacio de visualización. Su relevancia radica en abordar la evaluación de modelos en idiomas de bajos recursos como el odia, un área poco cubierta por los benchmarks estándar. El repositorio de Hugging Face actúa como punto de referencia estable para el harness, mientras que el código fuente y las contribuciones se gestionan en GitHub.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ No se dispone de información sobre datos de entrenamiento, ya que el harness no
 - Agregación de resultados con intervalos de confianza del 95%, proporcionando rigor estadístico en las métricas.
 - Pipelines de construcción de condiciones reproducibles (romanización, variabilidad controlada, code-mixing).
 - Interfaz de línea de comandos con configuración mediante archivos YAML (ejemplo incluido).
-- Integración con el ecosistema de HuggingFace como punto de referencia estable para la familia de artefactos Tulana.
+- Integración con el ecosistema de Hugging Face como punto de referencia estable para la familia de artefactos Tulana.
 
 ## Casos de uso
 
@@ -74,9 +74,9 @@ No disponible. No se han identificado harnesses de evaluación comparables espec
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/KinyoubiAtelier/tulana-eval
+- Repositorio de Hugging Face: https://huggingface.co/KinyoubiAtelier/tulana-eval
 - Repositorio GitHub (fuente canónica): https://github.com/kinyoubi-atelier/tulana-eval
 - Release v0.1.0-pilot-experimental: https://github.com/kinyoubi-atelier/tulana-eval/releases/tag/v0.1.0-pilot-experimental
 - Dataset hermano (Class F, Pool B): https://huggingface.co/datasets/KinyoubiAtelier/tulana-items-classf
-- Colección Tulana en HuggingFace: https://huggingface.co/collections/KinyoubiAtelier/tulana
+- Colección Tulana en Hugging Face: https://huggingface.co/collections/KinyoubiAtelier/tulana
 - Sitio web de Kinyoubi Atelier & Co.: https://kinyoubiatelier.com

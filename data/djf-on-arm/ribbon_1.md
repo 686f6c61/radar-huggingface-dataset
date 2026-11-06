@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RIBBON_1 es un modelo publicado en HuggingFace por el usuario DJF-on-arm bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. El repositorio no tiene descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente o un experimento personal sin difusion.
+RIBBON_1 es un modelo publicado en Hugging Face por el usuario DJF-on-arm bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. El repositorio no tiene descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente o un experimento personal sin difusion.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. Tampoco se ha publicado ningun resultado de benchmarks ni documentacion tecnica complementaria. Cualquier evaluacion practica del modelo requeriria inspeccionar directamente los archivos del repositorio (pesos, tokenizer, configuracion) y ejecutar pruebas propias.
 
@@ -39,7 +39,7 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 ## Casos de uso
 
 - Evaluacion experimental: inspeccionar los archivos del repositorio y ejecutar pruebas controladas para determinar que tarea aprende o realiza el modelo antes de asignarle un uso concreto.
-- Investigacion de replicabilidad: al estar publicado con licencia Apache 2.0, puede servir como base para estudiar practicas de publicacion de modelos en HuggingFace, aunque sin documentacion tecnica su valor cientifico es limitado.
+- Investigacion de replicabilidad: al estar publicado con licencia Apache 2.0, puede servir como base para estudiar practicas de publicacion de modelos en Hugging Face, aunque sin documentacion tecnica su valor cientifico es limitado.
 - Prototipado interno: solo si una evaluacion previa confirma un comportamiento util, podria emplearse en entornos de prueba cerrados y sin exposicion a usuarios finales.
 - Fine-tuning exploratorio: la licencia permisiva permite adaptar los pesos, pero la ausencia de especificaciones impide estimar requisitos de computo o calidad del punto de partida.
 - Docencia y formacion: puede utilizarse como ejemplo de repositorio con documentacion insuficiente para ilustrar buenas practicas de model cards.
@@ -72,5 +72,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DJF-on-arm/RIBBON_1
+- Repositorio en Hugging Face: https://huggingface.co/DJF-on-arm/RIBBON_1
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

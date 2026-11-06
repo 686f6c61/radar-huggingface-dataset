@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario xzc3sae21zxas en HuggingFace como un repositorio de prueba (TestRepo). Según la model card, se trata de una actualización significativa de una versión anterior, con mejoras en razonamiento profundo, capacidades de inferencia y reducción de alucinaciones. El modelo está diseñado para tareas de razonamiento matemático, programación, lógica y comprensión del lenguaje, y muestra un rendimiento cercano al de otros modelos líderes según los benchmarks incluidos.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario xzc3sae21zxas en Hugging Face como un repositorio de prueba (TestRepo). Según la model card, se trata de una actualización significativa de una versión anterior, con mejoras en razonamiento profundo, capacidades de inferencia y reducción de alucinaciones. El modelo está diseñado para tareas de razonamiento matemático, programación, lógica y comprensión del lenguaje, y muestra un rendimiento cercano al de otros modelos líderes según los benchmarks incluidos.
 
-La arquitectura concreta, el número de parámetros y la longitud de contexto no se especifican en la información disponible. El modelo se distribuye bajo licencia MIT y está integrado con la librería transformers de HuggingFace, con pipeline de extracción de características (feature-extraction), aunque la model card describe capacidades de chat y generación. No se indica el idioma o idiomas soportados, ni el tamaño del repositorio (0.0 GB), lo que sugiere que los pesos podrían no estar publicados o ser un placeholder.
+La arquitectura concreta, el número de parámetros y la longitud de contexto no se especifican en la información disponible. El modelo se distribuye bajo licencia MIT y está integrado con la librería transformers de Hugging Face, con pipeline de extracción de características (feature-extraction), aunque la model card describe capacidades de chat y generación. No se indica el idioma o idiomas soportados, ni el tamaño del repositorio (0.0 GB), lo que sugiere que los pesos podrían no estar publicados o ser un placeholder.
 
 La relevancia actual del modelo radica en su enfoque en razonamiento avanzado y en la reducción de alucinaciones, aspectos críticos para aplicaciones de producción. Sin embargo, la falta de detalles técnicos y de pesos publicados limita su uso inmediato por parte de la comunidad.
 
@@ -103,5 +103,5 @@ No se dispone de información suficiente para comparar MyAwesomeModel con modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/xzc3sae21zxas/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/xzc3sae21zxas/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible. La model card menciona un "código repository" y un "sitio web oficial", pero no se incluyen las URLs.

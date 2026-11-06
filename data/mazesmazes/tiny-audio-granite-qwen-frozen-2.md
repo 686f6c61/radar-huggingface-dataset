@@ -2,9 +2,9 @@
 
 ## Resumen
 
-tiny-audio-granite-qwen-frozen-2 es un modelo publicado en HuggingFace por el usuario mazesmazes. Se trata de un modelo muy pequeno: los pesos en formato safetensors suman 12.590.080 parametros (aproximadamente 12,6 millones), lo que lo situa en la categoria de modelos "tiny", por debajo de alternativas clasicas de audio como Whisper tiny (39 M) o Wav2Vec2-base (95 M). El repositorio ocupa 0,7 GB, un tamano desproporcionado respecto al numero de parametros, lo que sugiere que el repo incluye artefactos adicionales (tokenizadores, extractores de caracteristicas, ficheros de configuracion o posibles datos auxiliares) mas alla del checkpoint de pesos.
+tiny-audio-granite-qwen-frozen-2 es un modelo publicado en Hugging Face por el usuario mazesmazes. Se trata de un modelo muy pequeno: los pesos en formato safetensors suman 12.590.080 parametros (aproximadamente 12,6 millones), lo que lo situa en la categoria de modelos "tiny", por debajo de alternativas clasicas de audio como Whisper tiny (39 M) o Wav2Vec2-base (95 M). El repositorio ocupa 0,7 GB, un tamano desproporcionado respecto al numero de parametros, lo que sugiere que el repo incluye artefactos adicionales (tokenizadores, extractores de caracteristicas, ficheros de configuracion o posibles datos auxiliares) mas alla del checkpoint de pesos.
 
-Los tags del repositorio lo clasifican simultaneamente como `asr_model` y con pipeline `feature-extraction`, e incluyen `custom_code`, lo que implica que la arquitectura se carga mediante codigo propio del autor y requiere `trust_remote_code=True` en Transformers. El nombre del modelo sugiere una composicion de componentes tipo Granite y Qwen aplicados a audio, pero la model card es la plantilla autogenerada por HuggingFace y no contiene ninguna descripcion real: no hay informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas.
+Los tags del repositorio lo clasifican simultaneamente como `asr_model` y con pipeline `feature-extraction`, e incluyen `custom_code`, lo que implica que la arquitectura se carga mediante codigo propio del autor y requiere `trust_remote_code=True` en Transformers. El nombre del modelo sugiere una composicion de componentes tipo Granite y Qwen aplicados a audio, pero la model card es la plantilla autogenerada por Hugging Face y no contiene ninguna descripcion real: no hay informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas.
 
 La relevancia de esta ficha es fundamentalmente metodologica: es un ejemplo de modelo experimental de autor individual, sin documentacion, sin licencia declarada y con cero descargas, cuyo uso en produccion no es recomendable sin una auditoria previa del codigo personalizado. Existe un modelo hermano sin el sufijo `-2` (`mazesmazes/tiny-audio-granite-qwen-frozen`) y una variante con adaptadores LoRA (`mazesmazes/tiny-audio-granite-qwen-lora`), ademas de una ficha de terceros que atribuye 1.900 millones de parametros a la variante base, cifra que no coincide con los 12,6 millones medidos en este repositorio.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es fundamentalmente metodologica: es un ejemplo de m
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. La model card es la plantilla por defecto de HuggingFace y todos los campos relevantes (tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision) figuran como `[More Information Needed]`. El unico dato estructural fiable es que el repositorio incluye el tag `custom_code`, lo que implica que el modelo necesita codigo Python propio distribuido junto a los pesos y que no puede instanciarse con clases estandar de la libreria Transformers sin `trust_remote_code=True`.
+No hay informacion publicada sobre la arquitectura. La model card es la plantilla por defecto de Hugging Face y todos los campos relevantes (tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision) figuran como `[More Information Needed]`. El unico dato estructural fiable es que el repositorio incluye el tag `custom_code`, lo que implica que el modelo necesita codigo Python propio distribuido junto a los pesos y que no puede instanciarse con clases estandar de la libreria Transformers sin `trust_remote_code=True`.
 
 Tampoco hay informacion sobre el dataset, el numero de tokens de entrenamiento, la composicion de datos, ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. El tag `asr_model` apunta a un uso orientado a reconocimiento automatico del habla y el pipeline declarado (`feature-extraction`) sugiere que el modelo tambien puede emplearse como extractor de representaciones, pero ninguna de estas dos afirmaciones esta respaldada por documentacion del autor. No se debe asumir que el modelo implementa una arquitectura de tipo encoder-decoder de audio estandar.
 
@@ -50,7 +50,7 @@ Tampoco hay informacion sobre el dataset, el numero de tokens de entrenamiento, 
 - Experimentacion academica con modelos de audio diminutos: el modelo puede servir como banco de pruebas para estudiar como se comporta un checkpoint de 12,6 M parametros en tareas de extraccion de caracteristicas, comparandolo con alternativas conocidas como Wav2Vec2-base (95 M) o Whisper tiny (39 M).
 - Prototipado de pipelines de audio en CPU: con 12,6 M parametros, la inferencia en fp32 ocupa unos 50 MB de memoria, por lo que es viable ejecutarlo en portatiles sin GPU para validar rapidamente un flujo de preprocesado o un formato de entrada antes de invertir en modelos mayores.
 - Extraccion de embeddings para clasificacion downstream: si el modelo funciona como extractor de caracteristicas, sus representaciones podrian alimentar un clasificador ligero (por ejemplo, deteccion de eventos sonoros o clasificacion de comandos de voz) entrenado por separado.
-- Docencia y formacion: util para explicar en un aula como se estructura un repositorio de HuggingFace con `custom_code`, por que la presencia de ese tag obliga a revisar el codigo y por que una model card vacia es un riesgo de trazabilidad.
+- Docencia y formacion: util para explicar en un aula como se estructura un repositorio de Hugging Face con `custom_code`, por que la presencia de ese tag obliga a revisar el codigo y por que una model card vacia es un riesgo de trazabilidad.
 - Estudios de reproducibilidad y auditoria de licencias: sirve como caso de analisis de repositorios sin licencia declarada, donde el uso comercial queda en un limbo legal que conviene documentar antes de integrar nada.
 - Pruebas de integracion con el ecosistema Transformers: permite validar que un pipeline de `feature-extraction` carga correctamente con codigo remoto en un entorno controlado antes de adoptar modelos mayores con el mismo patron de despliegue.
 - Generacion aumentada por recuperacion sobre audio: no recomendable con este modelo como generador, ya que no hay evidencia de capacidades de generacion de texto; solo tendria sentido como componente de representacion, y siempre que se valide su calidad con datos propios.
@@ -74,10 +74,10 @@ La model card no incluye ninguna seccion de evaluacion cumplimentada: los aparta
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mazesmazes/tiny-audio-granite-qwen-frozen-2 | 12,59 M | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| mazesmazes/tiny-audio-granite-qwen-frozen | no disponible (una ficha de terceros atribuye 1,9 B) | no disponible | no disponible | no disponible | HuggingFace |
-| Whisper tiny (OpenAI) | 39 M | ventana de audio de 30 s | WER publicados por OpenAI en la model card | MIT | HuggingFace, ampliamente adoptado |
-| Wav2Vec2-base (Meta) | 95 M | no aplica (encoder de audio) | metricas publicadas en el paper original | MIT en el repositorio de HuggingFace | HuggingFace, ampliamente adoptado |
+| mazesmazes/tiny-audio-granite-qwen-frozen-2 | 12,59 M | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| mazesmazes/tiny-audio-granite-qwen-frozen | no disponible (una ficha de terceros atribuye 1,9 B) | no disponible | no disponible | no disponible | Hugging Face |
+| Whisper tiny (OpenAI) | 39 M | ventana de audio de 30 s | WER publicados por OpenAI en la model card | MIT | Hugging Face, ampliamente adoptado |
+| Wav2Vec2-base (Meta) | 95 M | no aplica (encoder de audio) | metricas publicadas en el paper original | MIT en el repositorio de Hugging Face | Hugging Face, ampliamente adoptado |
 
 La comparacion es estructural, no de rendimiento: no existen cifras de este checkpoint que permitan situarlo frente a Whisper tiny o Wav2Vec2-base. La discrepancia de parametros entre la ficha de terceros (1,9 B) y los safetensors de este repositorio (12,59 M) sugiere que las variantes `frozen` y `frozen-2` no son equivalentes en tamano, pero no hay informacion que lo confirme.
 
@@ -96,7 +96,7 @@ La comparacion es estructural, no de rendimiento: no existen cifras de este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen-2
+- Modelo en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen-2
 - Variante frozen (sin sufijo -2): https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen
 - Variante con LoRA: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-lora
 - Ficha de terceros sobre tiny-audio-granite-qwen: https://savrn.com/models/tiny-audio-granite-qwen

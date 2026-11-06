@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HellGateSys/qwen3.8-27b-clef-omni-orchestrator es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.8-27B, publicado por el usuario HellGateSys en HuggingFace. Se ha entrenado con la librería TRL sobre el dataset propio HellGateSys/clef-orchestrator-sft, según declara la model card. El nombre comercial sugiere un uso orientado a orquestación de agentes y herramientas ("omni-orchestrator"), pero la documentación publicada no describe ninguna capacidad de este tipo ni aporta evaluación alguna que lo respalde.
+HellGateSys/qwen3.8-27b-clef-omni-orchestrator es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.8-27B, publicado por el usuario HellGateSys en Hugging Face. Se ha entrenado con la librería TRL sobre el dataset propio HellGateSys/clef-orchestrator-sft, según declara la model card. El nombre comercial sugiere un uso orientado a orquestación de agentes y herramientas ("omni-orchestrator"), pero la documentación publicada no describe ninguna capacidad de este tipo ni aporta evaluación alguna que lo respalde.
 
 La información disponible es mínima y en gran parte procede de la plantilla automática que TRL genera para modelos creados con `Trainer` (`generated_from_trainer`). No se publican parámetros confirmados, longitud de contexto, idiomas, licencia ni resultados de benchmarks. El repositorio ocupa 0,1 GB, un tamaño compatible con adaptadores LoRA/QLoRA o con un conjunto de pesos incompleto para un modelo de 27 000 millones de parámetros, aunque esto es una inferencia y no un dato confirmado.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada: se trata de un experimento de ajuste fino, sin
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint Qwen/Qwen3.8-27B. La model card no detalla la arquitectura interna del modelo base (tipo de atención, uso de MoE, mecanismos de decodificación), por lo que cualquier afirmación al respecto sería especulativa. Lo único documentado es el procedimiento de ajuste: SFT con TRL 1.16.0, ejecutado en la infraestructura `hf_jobs` de HuggingFace y monitorizado con Trackio bajo el proyecto `qwen3.8-27b-clef-orchestrator-sft` y la ejecución `qlora-sft`.
+El modelo es un ajuste fino del checkpoint Qwen/Qwen3.8-27B. La model card no detalla la arquitectura interna del modelo base (tipo de atención, uso de MoE, mecanismos de decodificación), por lo que cualquier afirmación al respecto sería especulativa. Lo único documentado es el procedimiento de ajuste: SFT con TRL 1.16.0, ejecutado en la infraestructura `hf_jobs` de Hugging Face y monitorizado con Trackio bajo el proyecto `qwen3.8-27b-clef-orchestrator-sft` y la ejecución `qlora-sft`.
 
 El dataset HellGateSys/clef-orchestrator-sft no está descrito en la información disponible: se desconoce su tamaño en tokens, su composición, si incluye datos de tool calling, si está sintético o si se ha filtrado. Tampoco se indica si hubo una fase posterior de alineación (DPO, RLHF) ni si se aplicaron técnicas de decodificación especulativa o atención lineal. El repo de 0,1 GB para un modelo de 27 000 millones de parámetros sugiere que se publican adaptadores (LoRA/QLoRA) en lugar de pesos completos, o bien que la subida está incompleta; conviene verificarlo inspeccionando los ficheros antes de intentar cargarlo.
 
@@ -78,7 +78,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parámetros (27
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | HellGateSys/qwen3.8-27b-clef-omni-orchestrator | 27 000 M (inferido del identificador) | No disponible | Ajuste SFT de Qwen3.8-27B | No disponible | Repositorio con 0 descargas y 0 valoraciones |
-| Qwen/Qwen3.8-27B (modelo base) | 27 000 M según identificador | No disponible en la información proporcionada | Modelo preentrenado/instruido original | No disponible en la información proporcionada | Público en HuggingFace |
+| Qwen/Qwen3.8-27B (modelo base) | 27 000 M según identificador | No disponible en la información proporcionada | Modelo preentrenado/instruido original | No disponible en la información proporcionada | Público en Hugging Face |
 | Otros ajustes SFT de la familia Qwen3.8-27B | No disponible | No disponible | Fine-tune | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HellGateSys/qwen3.8-27b-clef-omni-orchestrator
+- Modelo en Hugging Face: https://huggingface.co/HellGateSys/qwen3.8-27b-clef-omni-orchestrator
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/HellGateSys/clef-orchestrator-sft
 - Monitorización del entrenamiento (Trackio): https://HellGateSys-qwen3-8-27b-clef-orchestrator-sft-trackio.hf.space?project=qwen3.8-27b-clef-orchestrator-sft&runs=qlora-sft&sidebar=collapsed

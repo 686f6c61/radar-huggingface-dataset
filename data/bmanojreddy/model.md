@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `bmanojreddy/model` en HuggingFace corresponde a un modelo publicado por el usuario bmanojreddy (Manoj Reddy), un desarrollador con perfil en GitHub y LinkedIn orientado a inteligencia artificial y ciencia de datos. Sin embargo, la model card es practicamente vacia: solo contiene la declaracion de licencia MIT y no incluye ninguna descripcion tecnica, arquitectura, pesos, o documentacion de uso.
+El repositorio `bmanojreddy/model` en Hugging Face corresponde a un modelo publicado por el usuario bmanojreddy (Manoj Reddy), un desarrollador con perfil en GitHub y LinkedIn orientado a inteligencia artificial y ciencia de datos. Sin embargo, la model card es practicamente vacia: solo contiene la declaracion de licencia MIT y no incluye ninguna descripcion tecnica, arquitectura, pesos, o documentacion de uso.
 
 En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que se trata de un repositorio placeholder, un experimento personal o una publicacion incompleta. No existe informacion publica sobre arquitectura, tamano, capacidades ni rendimiento. Cualquier intento de evaluar este modelo para uso en produccion deberia considerarse inviable hasta que el autor publique una model card completa y los artefactos correspondientes.
 
@@ -54,7 +54,7 @@ No disponible. Al no existir informacion sobre parametros, contexto, rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bmanojreddy/model
+- Repositorio Hugging Face: https://huggingface.co/bmanojreddy/model
 - Perfil GitHub del autor: https://github.com/bmanojreddy/
 - Perfil LinkedIn del autor: https://in.linkedin.com/in/bmanojreddy
 

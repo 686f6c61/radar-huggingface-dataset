@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Benbam44/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Benbam44/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

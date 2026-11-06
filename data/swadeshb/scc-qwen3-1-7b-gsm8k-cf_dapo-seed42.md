@@ -4,7 +4,7 @@
 
 El modelo `scc-qwen3-1.7b-gsm8k-cf_dapo-seed42` es un ajuste fino (fine-tune) de `Qwen/Qwen3-1.7B`, desarrollado por el usuario `swadeshb`. Se trata de un experimento de aprendizaje por refuerzo (RL) aplicado al razonamiento matemático, entrenado con el algoritmo GRPO (Group Relative Policy Optimization), introducido en el paper DeepSeekMath. El nombre del modelo indica que se entrenó sobre el dataset GSM8K, un conjunto de problemas aritméticos de varios pasos, y que el experimento se ejecutó con una semilla concreta (seed42).
 
-La arquitectura base es un transformer denso de 1.7 mil millones de parámetros. La longitud de contexto no se especifica en la información disponible. El modelo está publicado en HuggingFace con formato `safetensors` y es compatible con la librería `transformers`. Su relevancia radica en que sirve como caso de estudio para evaluar el impacto de GRPO en modelos de pequeño tamaño, un área de interés creciente para la optimización de razonamiento en modelos open source.
+La arquitectura base es un transformer denso de 1.7 mil millones de parámetros. La longitud de contexto no se especifica en la información disponible. El modelo está publicado en Hugging Face con formato `safetensors` y es compatible con la librería `transformers`. Su relevancia radica en que sirve como caso de estudio para evaluar el impacto de GRPO en modelos de pequeño tamaño, un área de interés creciente para la optimización de razonamiento en modelos open source.
 
 ## Especificaciones técnicas
 
@@ -69,7 +69,7 @@ No se dispone de información comparativa con otros modelos en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swadeshb/scc-qwen3-1.7b-gsm8k-cf_dapo-seed42
+- Hugging Face: https://huggingface.co/swadeshb/scc-qwen3-1.7b-gsm8k-cf_dapo-seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - TRL: https://github.com/huggingface/trl

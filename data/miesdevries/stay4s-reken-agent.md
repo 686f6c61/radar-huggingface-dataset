@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stay4s-reken-agent | ~4,02 B (segun safetensors) | No disponible | Neerlandes | Apache 2.0 | HuggingFace (safetensors, GGUF) |
-| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens nativos | Multilingue (incluye neerlandes) | Apache 2.0 | HuggingFace |
-| Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens nativos | Multilingue | Apache 2.0 (Qwen Research en algunas variantes) | HuggingFace |
+| stay4s-reken-agent | ~4,02 B (segun safetensors) | No disponible | Neerlandes | Apache 2.0 | Hugging Face (safetensors, GGUF) |
+| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens nativos | Multilingue (incluye neerlandes) | Apache 2.0 | Hugging Face |
+| Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens nativos | Multilingue | Apache 2.0 (Qwen Research en algunas variantes) | Hugging Face |
 
 La comparativa con alternativas especializadas en neerlandes (por ejemplo, ajustes de la familia GEITje o modelos similares) no se incluye por falta de datos verificables en la informacion proporcionada.
 
@@ -86,5 +86,5 @@ La comparativa con alternativas especializadas en neerlandes (por ejemplo, ajust
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miesdevries/stay4s-reken-agent
+- Hugging Face: https://huggingface.co/miesdevries/stay4s-reken-agent
 - Modelo base: Qwen2.5-7B-Instruct (no se proporciona enlace directo en la informacion disponible)

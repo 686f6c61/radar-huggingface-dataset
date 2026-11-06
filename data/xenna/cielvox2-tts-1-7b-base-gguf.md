@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | **CielVox 2 0.6B Base (GGUF)** | 0,9 B | GGUF Q8_0 (986 MB) | 10 | Sí | Apache-2.0 | 24 kHz, códec 12 Hz |
 | **Qwen3-TTS-1.7B-CustomVoice-GGUF** | 1,7 B | GGUF | no disponible | No (9 voces fijas) | no disponible | 24 kHz |
 
-La comparativa se basa en los repos oficiales de HuggingFace y GitHub. CielVox 2 1.7B se diferencia de la variante CustomVoice por ofrecer clonación de voz arbitraria en lugar de voces fijas, y del modelo 0.6B por su mayor capacidad (1.93 B frente a 0.9 B), lo que debería traducirse en mejor calidad prosódica, aunque no hay benchmarks publicados para confirmarlo.
+La comparativa se basa en los repos oficiales de Hugging Face y GitHub. CielVox 2 1.7B se diferencia de la variante CustomVoice por ofrecer clonación de voz arbitraria en lugar de voces fijas, y del modelo 0.6B por su mayor capacidad (1.93 B frente a 0.9 B), lo que debería traducirse en mejor calidad prosódica, aunque no hay benchmarks publicados para confirmarlo.
 
 ## Limitaciones y advertencias
 
@@ -80,9 +80,9 @@ La comparativa se basa en los repos oficiales de HuggingFace y GitHub. CielVox 2
 
 ## Enlaces
 
-- [HuggingFace: Xenna/cielvox2-tts-1.7b-base-GGUF](https://huggingface.co/Xenna/cielvox2-tts-1.7b-base-GGUF)
-- [HuggingFace: Xenna/cielvox2-tokenizer-12hz](https://huggingface.co/Xenna/cielvox2-tokenizer-12hz)
+- [Hugging Face: Xenna/cielvox2-tts-1.7b-base-GGUF](https://huggingface.co/Xenna/cielvox2-tts-1.7b-base-GGUF)
+- [Hugging Face: Xenna/cielvox2-tokenizer-12hz](https://huggingface.co/Xenna/cielvox2-tokenizer-12hz)
 - [GitHub: stelnetxcis-create/cielvox2](https://github.com/stelnetxcis-create/cielvox2)
 - [GitHub: cielvox2/hf_readmes/qwen3-tts-1.7b-customvoice-GGUF.md](https://github.com/stelnetxcis-create/cielvox2/blob/main/hf_readmes/qwen3-tts-1.7b-customvoice-GGUF.md)
-- [HuggingFace: ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF](https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF)
-- [HuggingFace: Xenna/cielvox2-tts-0.6b-base-GGUF](https://huggingface.co/Xenna/cielvox2-tts-0.6b-base-GGUF)
+- [Hugging Face: ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF](https://huggingface.co/ggml-org/Qwen3-TTS-12Hz-1.7B-Base-GGUF)
+- [Hugging Face: Xenna/cielvox2-tts-0.6b-base-GGUF](https://huggingface.co/Xenna/cielvox2-tts-0.6b-base-GGUF)

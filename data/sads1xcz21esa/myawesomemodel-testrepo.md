@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con identificador `sads1xcz21esa/MyAwesomeModel-TestRepo`, creado el 15 de agosto de 2026. Según la model card, se trata de una versión actualizada de un modelo anterior que mejora significativamente sus capacidades de razonamiento profundo e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo rinde notablemente en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con identificador `sads1xcz21esa/MyAwesomeModel-TestRepo`, creado el 15 de agosto de 2026. Según la model card, se trata de una versión actualizada de un modelo anterior que mejora significativamente sus capacidades de razonamiento profundo e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo rinde notablemente en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
 
 Sin embargo, es importante señalar que el repositorio no contiene ningún peso real: el tamaño del repositorio es de 0.0 GB, no tiene descargas ni likes, y no se proporcionan especificaciones técnicas concretas (arquitectura, número de parámetros, contexto, etc.). La model card es genérica y no incluye enlaces a un código fuente, paper o demo funcional. Por tanto, esta ficha se basa únicamente en la información declarada por el autor, sin verificación independiente posible.
 
@@ -94,6 +94,6 @@ No se puede establecer una comparativa fiable, ya que no se conocen las especifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sads1xcz21esa/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sads1xcz21esa/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes (paper, blog, repositorio de código o demo) en la información proporcionada.

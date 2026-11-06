@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| PaddleOCR-VL-1.6 (este) | 466 M | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| PaddleOCR-VL-1.6 (original) | 466 M | no disponible | Apache 2.0 | safetensors (presumible) | HuggingFace, ModelScope |
+| PaddleOCR-VL-1.6 (este) | 466 M | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| PaddleOCR-VL-1.6 (original) | 466 M | no disponible | Apache 2.0 | safetensors (presumible) | Hugging Face, ModelScope |
 | Alternativas de OCR/VL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables directos en la documentación proporcionada. La comparativa más directa es con la versión original del mismo modelo (sin cuantizar), disponible en el repositorio oficial de PaddlePaddle.
@@ -83,8 +83,8 @@ No se dispone de información sobre modelos comparables directos en la documenta
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/axana-labs/PaddleOCR-VL-1.6-GGUF
-- Repositorio HuggingFace (original): https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
+- Repositorio Hugging Face (GGUF): https://huggingface.co/axana-labs/PaddleOCR-VL-1.6-GGUF
+- Repositorio Hugging Face (original): https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - ModelScope (original): https://modelscope.cn/models/PaddlePaddle/PaddleOCR-VL-1.6
 - Repositorio GitHub PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
 - Paper (referencia arXiv): arxiv:2606.03264 (según tags del repositorio)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 DROID TAG es un repositorio de HuggingFace publicado por el usuario adipotnis que documenta una adaptación del método TAG (target-erasure calibration) descrito en el paper arXiv:2603.24584, aplicado al conjunto de datos de robótica DROID (lerobot/droid_1.0.1) y partiendo de la inicialización pi05_base. El propósito declarado es preparar y entrenar un modelo de política robótica (visión-lenguaje-acción) con calibración de borrado de objetivos, pero el autor indica explícitamente que la preparación y el entrenamiento están pendientes y que no hay pesos entrenados disponibles.
+π0.5 DROID TAG es un repositorio de Hugging Face publicado por el usuario adipotnis que documenta una adaptación del método TAG (target-erasure calibration) descrito en el paper arXiv:2603.24584, aplicado al conjunto de datos de robótica DROID (lerobot/droid_1.0.1) y partiendo de la inicialización pi05_base. El propósito declarado es preparar y entrenar un modelo de política robótica (visión-lenguaje-acción) con calibración de borrado de objetivos, pero el autor indica explícitamente que la preparación y el entrenamiento están pendientes y que no hay pesos entrenados disponibles.
 
 El repositorio no contiene, por tanto, un modelo utilizable: es una ficha de configuración experimental que detalla hiperparámetros, pipeline de preprocesamiento, criterios de selección de datos y decisiones de adaptación respecto al paper original. La relevancia actual es metodológica: documenta con un nivel de detalle poco habitual el contrato de acciones, la mezcla de entrenamiento (90 % episodios limpios, 10 % episodios con borrado sintético) y el pipeline de síntesis de pares (Qwen3-VL → Grounding DINO → SAM2 → MiniMax-Remover).
 
@@ -27,7 +27,7 @@ La ficha describe un fine-tuning completo sobre la inicialización pi05_base, si
 
 Los datos provienen de lerobot/droid_1.0.1 en el commit 0eabc778f959c54b8c5aa3626cc1128d2d2e54d4. El pool limpio elegible son 74 682 episodios exitosos anotados (19 806 641 fotogramas). La muestra de preprocesamiento son 7468 episodios completos (1 975 980 fotogramas) seleccionados con PCG64 semilla 42, uniforme sin reemplazo. La mezcla de entrenamiento es 90 % pool limpio completo elegible y 10 % episodios con borrado aceptado, con muestreo uniforme de fotograma y vista. La síntesis de borrado usa Qwen3-VL, Grounding DINO, SAM2 y MiniMax-Remover sobre vídeo denso, con umbral DINO de 0.35 (+0.05 por reintento), área de caja máxima del 30 % (frente al 15 % del paper, adaptación aprobada por el usuario), dilatación 5x5 e inpainting de 10 pasos de denoising a 512x512 en clips de 81 fotogramas con solapamiento 9. Solo el 10 % de episodios seleccionados recibe síntesis de borrado.
 
-El autor señala desviaciones relevantes respecto al paper: la tapa de área de caja es del 30 % en lugar del 15 %; la revisión acepta residuos menores e incertidumbre y evalúa el borrado, no la finalización de tareas robóticas; no se aplica el filtro oficial RLDS de fotogramas no inactivos porque la fuente de HuggingFace usa compresión AV1 y omite los identificadores de ruta de grabación originales, lo que altera la distribución de datos de entrenamiento. Tampoco hay split de validación ni evaluación de rollout.
+El autor señala desviaciones relevantes respecto al paper: la tapa de área de caja es del 30 % en lugar del 15 %; la revisión acepta residuos menores e incertidumbre y evalúa el borrado, no la finalización de tareas robóticas; no se aplica el filtro oficial RLDS de fotogramas no inactivos porque la fuente de Hugging Face usa compresión AV1 y omite los identificadores de ruta de grabación originales, lo que altera la distribución de datos de entrenamiento. Tampoco hay split de validación ni evaluación de rollout.
 
 ## Capacidades
 
@@ -83,6 +83,6 @@ No es posible establecer una comparativa cuantitativa con modelos similares con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adipotnis/pi05-droid-tag
+- Hugging Face: https://huggingface.co/adipotnis/pi05-droid-tag
 - Paper del método TAG: https://arxiv.org/abs/2603.24584
 - Dataset fuente: https://huggingface.co/datasets/lerobot/droid_1.0.1

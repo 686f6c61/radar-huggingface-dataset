@@ -4,7 +4,7 @@
 
 MindSoul Attention es un modelo anunciado por mindsoulBCI (equipo MindSoul, vinculado a Chengdu (Shanghai) Brain Cloud Matrix Technology) para la estimación de estados de atención a partir de señales EEG. Se presenta como parte de la serie Neural AI de su equipo de modelos base de interfaz cerebro-ordenador y plantea un enfoque basado en Transformer para modelar patrones de atención relacionados con tareas y su evolución temporal, contrastados contra referencias conductuales y experimentales explícitamente definidas.
 
-Es importante subrayar que, en el momento de redactar esta ficha, la model card indica explícitamente que se trata de un anuncio de publicación: no hay pesos descargables, ni código de entrenamiento, ni resultados de evaluación. La arquitectura concreta, las entradas y salidas, la configuración de entrenamiento y los datos todavía no se han publicado. El repositorio de HuggingFace registra 0 descargas y 0 likes, y no declara pipeline.
+Es importante subrayar que, en el momento de redactar esta ficha, la model card indica explícitamente que se trata de un anuncio de publicación: no hay pesos descargables, ni código de entrenamiento, ni resultados de evaluación. La arquitectura concreta, las entradas y salidas, la configuración de entrenamiento y los datos todavía no se han publicado. El repositorio de Hugging Face registra 0 descargas y 0 likes, y no declara pipeline.
 
 Su relevancia actual es, por tanto, prospectiva: describe una línea de investigación en neurotecnología con EEG y modelos Transformer, con idiomas declarados chino e inglés, licencia de investigación personal no comercial y una hoja de ruta de publicación que incluye definición de tareas, formato de datos, estructura del modelo, ejemplos de inferencia, guía de reproducción y benchmarks. Hasta que esos elementos estén disponibles, no es posible evaluar el modelo ni utilizarlo en producción.
 
@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye modelos comparables de e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-attention
+- Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-attention
 - GitHub del proyecto de investigación: https://github.com/pm-kevin-zhang/MindSoul
 - GitHub de aplicaciones espaciales, juegos y materiales: https://github.com/pm-kevin-zhang/MindSoul-Spatial
 - Sitio web: https://MindSoul.cn

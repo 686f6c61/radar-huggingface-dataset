@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MMM es un modelo publicado en HuggingFace por el usuario ErnestBeckham bajo licencia MIT. La informacion disponible es extremadamente limitada: el repositorio tiene un tamano de 0.0 GB, no registra descargas ni likes, y la model card unicamente contiene la declaracion de licencia, sin ningun detalle sobre arquitectura, entrenamiento, capacidades o uso previsto.
+MMM es un modelo publicado en Hugging Face por el usuario ErnestBeckham bajo licencia MIT. La informacion disponible es extremadamente limitada: el repositorio tiene un tamano de 0.0 GB, no registra descargas ni likes, y la model card unicamente contiene la declaracion de licencia, sin ningun detalle sobre arquitectura, entrenamiento, capacidades o uso previsto.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. El repositorio fue creado y actualizado el 6 de noviembre de 2026, con apenas un minuto de diferencia entre ambas acciones, lo que sugiere una publicacion sin contenido sustancial o un placeholder.
 
@@ -67,4 +67,4 @@ No disponible. Al no conocerse parametros, contexto ni rendimiento de MMM, no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ErnestBeckham/MMM
+- Hugging Face: https://huggingface.co/ErnestBeckham/MMM

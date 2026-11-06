@@ -67,7 +67,7 @@ El modelo supera al baseline bicubic en más de 6 dB. No se disponen de resultad
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa técnica directa. En HuggingFace existe otro modelo con la misma finalidad, `Puneet-Bajaj-IITM/lowlight-nppe3`, y en GitHub se encuentra el repositorio `iitmstudent-2021/low-light-image-restoration`, que aborda una tarea similar con una métrica de RMSE. Sin embargo, no se han encontrado especificaciones comparables (parámetros, PSNR o arquitectura) para estos modelos en la información disponible.
+No se dispone de datos suficientes para una comparativa técnica directa. En Hugging Face existe otro modelo con la misma finalidad, `Puneet-Bajaj-IITM/lowlight-nppe3`, y en GitHub se encuentra el repositorio `iitmstudent-2021/low-light-image-restoration`, que aborda una tarea similar con una métrica de RMSE. Sin embargo, no se han encontrado especificaciones comparables (parámetros, PSNR o arquitectura) para estos modelos en la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se dispone de datos suficientes para una comparativa técnica directa. En Hug
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abhinavjaswal21/nppe3-lowlight-sr
-- Modelo similar en HuggingFace: https://huggingface.co/Puneet-Bajaj-IITM/lowlight-nppe3
+- Hugging Face: https://huggingface.co/abhinavjaswal21/nppe3-lowlight-sr
+- Modelo similar en Hugging Face: https://huggingface.co/Puneet-Bajaj-IITM/lowlight-nppe3
 - Repositorio relacionado en GitHub: https://github.com/iitmstudent-2021/low-light-image-restoration

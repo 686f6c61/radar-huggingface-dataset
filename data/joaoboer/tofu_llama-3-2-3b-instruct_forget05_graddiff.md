@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento de modelos comparables dentro de la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_GradDiff
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_GradDiff
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Repositorio del framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Repositorio del proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

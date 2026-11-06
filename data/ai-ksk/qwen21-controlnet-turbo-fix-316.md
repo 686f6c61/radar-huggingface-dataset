@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AI-KSK/qwen21-controlnet-turbo-fix-316 es un repositorio de HuggingFace publicado por el usuario AI-KSK que no contiene pesos de modelo, sino cuatro exportaciones JSON de flujos de trabajo (workflows) para ComfyUI orientadas a Qwen Image 2.1. Concretamente, distribuye una rejilla de parametros de Depth con 75 recetas de ControlNet Union mas una linea base, un grafo de ControlNet Union con ocho rutas estructurales y una ruta de Mask independiente, una comparativa Turbo (8 pasos frente a 25 pasos del modelo base) y una comparativa de Detail-Fix. El paquete esta pensado como material de referencia reproducible para quienes experimentan con control estructural en generacion de imagen.
+AI-KSK/qwen21-controlnet-turbo-fix-316 es un repositorio de Hugging Face publicado por el usuario AI-KSK que no contiene pesos de modelo, sino cuatro exportaciones JSON de flujos de trabajo (workflows) para ComfyUI orientadas a Qwen Image 2.1. Concretamente, distribuye una rejilla de parametros de Depth con 75 recetas de ControlNet Union mas una linea base, un grafo de ControlNet Union con ocho rutas estructurales y una ruta de Mask independiente, una comparativa Turbo (8 pasos frente a 25 pasos del modelo base) y una comparativa de Detail-Fix. El paquete esta pensado como material de referencia reproducible para quienes experimentan con control estructural en generacion de imagen.
 
 El repositorio no incluye pesos, imagenes de entrada ni resultados verificados; las portadas son activos promocionales y no salidas confirmadas. Los JSON distribuidos son identicos byte a byte a los originales y a los alojados en las entradas de Civitai del mismo episodio (la variante Turbo publicada es la exportacion de 291 nodos, mientras que la de 290 nodos permanece en la carpeta de origen sin realojarse). El autor declara explicitamente que no se ha realizado ninguna prueba nueva de inferencia, GPU, tiempos, calidad, compatibilidad o licencia.
 
@@ -77,7 +77,7 @@ No disponible. El repositorio no es un modelo con parametros, contexto o licenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AI-KSK/qwen21-controlnet-turbo-fix-316
+- Repositorio Hugging Face: https://huggingface.co/AI-KSK/qwen21-controlnet-turbo-fix-316
 - Entrada de Civitai 2998097 (referenciada como origen de la variante Turbo de 291 nodos): no disponible como URL en la informacion proporcionada
 - Activos externos referenciados (no incluidos en el repositorio): `Qwen-Image_2.1.safetensors`, `qwen_image_2.1_bf16.safetensors`, `qwen3vl_8b_int8_convrot.safetensors`, `qwen3vl_8b_fp8_scaled.safetensors`, `qwen_image_2.1_vae_bf16.safetensors`, `Qwen-Image-2.1-Fun-Controlnet-Union-ComfyUI.safetensors`, `qwen_image_2.1_turbo_lora_avg_rank_178_bf16.safetensors`, `depth_anything_v2_vitb.pth`
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada

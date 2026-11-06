@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ujheo/act_so101_clean_desk008000` es un checkpoint de politica robotica publicado en HuggingFace por el usuario ujheo. Por la convencion de nombres del repositorio, el identificador sugiere una politica basada en ACT (Action Chunking Transformer) entrenada para el brazo robotico de bajo coste SO-101 (familia SO-100/SO-101 del ecosistema LeRobot) en una tarea de recogida o limpieza de escritorio (`clean_desk`). No obstante, la model card no incluye descripcion, pipeline declarado, licencia ni idiomas, por lo que esta interpretacion procede del nombre del repositorio y no de documentacion oficial del propio modelo.
+El modelo `ujheo/act_so101_clean_desk008000` es un checkpoint de politica robotica publicado en Hugging Face por el usuario ujheo. Por la convencion de nombres del repositorio, el identificador sugiere una politica basada en ACT (Action Chunking Transformer) entrenada para el brazo robotico de bajo coste SO-101 (familia SO-100/SO-101 del ecosistema LeRobot) en una tarea de recogida o limpieza de escritorio (`clean_desk`). No obstante, la model card no incluye descripcion, pipeline declarado, licencia ni idiomas, por lo que esta interpretacion procede del nombre del repositorio y no de documentacion oficial del propio modelo.
 
 Se trata de un modelo pequeno: 51.668.614 parametros (unos 51,7 millones) segun los pesos en formato safetensors, con un repositorio de 0,2 GB. Este orden de magnitud es coherente con una politica de imitacion ligera disenada para ejecutarse en tiempo real sobre hardware de consumo, no con un modelo de lenguaje generativo.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ujheo/act_so101_clean_desk008000 | 51,7 M | no disponible | no disponible | no disponible | HuggingFace, 16 descargas |
-| Otros checkpoints ACT para SO-100/SO-101 | no disponible | no disponible | no disponible | variable segun autor | HuggingFace y LeRobot |
+| ujheo/act_so101_clean_desk008000 | 51,7 M | no disponible | no disponible | no disponible | Hugging Face, 16 descargas |
+| Otros checkpoints ACT para SO-100/SO-101 | no disponible | no disponible | no disponible | variable segun autor | Hugging Face y LeRobot |
 | Diffusion Policy para manipulacion | no disponible | no disponible | no disponible | variable segun implementacion | Repositorios de investigacion |
-| Politicas VLA ligeras (por ejemplo, familias tipo SmolVLA) | no disponible | no disponible | no disponible | variable | HuggingFace |
+| Politicas VLA ligeras (por ejemplo, familias tipo SmolVLA) | no disponible | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de cifras verificables de parametros, contexto, rendimiento ni licencia de las alternativas dentro de la informacion proporcionada, por lo que la comparativa cuantitativa no puede completarse. La unica comparacion solida es de orden de magnitud: este checkpoint es un modelo muy pequeno y especializado, frente a politicas VLA que incorporan modelos de lenguaje de miles de millones de parametros y requieren hardware notablemente superior.
 
@@ -88,5 +88,5 @@ No se dispone de cifras verificables de parametros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ujheo/act_so101_clean_desk008000
+- Hugging Face: https://huggingface.co/ujheo/act_so101_clean_desk008000
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los resultados obtenidos correspondian a paginas de una cadena de centros de jardineria (Dehner) y no guardan relacion con el repositorio. No se han encontrado articulos, papers, repositorios de codigo ni demos asociados a este checkpoint en la informacion disponible.

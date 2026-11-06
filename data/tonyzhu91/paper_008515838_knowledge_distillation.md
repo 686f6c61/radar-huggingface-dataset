@@ -66,7 +66,7 @@ No disponible. No existen modelos comparables, ya que este repositorio no contie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tonyzhu91/paper_008515838_knowledge_distillation
+- Repositorio en Hugging Face: https://huggingface.co/tonyzhu91/paper_008515838_knowledge_distillation
 - Articulo original de Hinton et al. (2015) en arXiv: https://arxiv.org/abs/1503.02531
 - Encuesta sobre destilacion de conocimiento en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666827024000811
 - Encuesta en ResearchGate: https://www.researchgate.net/publication/342094012_Knowledge_Distillation_A_Survey

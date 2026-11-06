@@ -85,7 +85,7 @@ No disponible. El repositorio no es un modelo comparable con alternativas de la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BennyDaBall/Hy-Nomas-x-LTX-2.5-Audio-Workflows
+- Repositorio en Hugging Face: https://huggingface.co/BennyDaBall/Hy-Nomas-x-LTX-2.5-Audio-Workflows
 - LTX-2.5 (Lightricks): https://huggingface.co/Lightricks/LTX-2.5
 - Hy-Nomas (Tencent Hunyuan): https://github.com/Tencent-Hunyuan/Hy-Nomas
 - Node pack Comfyui-HY-Nomas-T8: https://github.com/T8mars/Comfyui-HY-Nomas-T8

@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo con alternativas concretas en 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/SandLogicTechnologies/Hy-Memory-30B-A3B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/SandLogicTechnologies/Hy-Memory-30B-A3B-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy-Memory-30B-A3B
 - Frameworks de memoria mencionados: Mem0, MemOS, Hy-Memory, EverMemOS (sin enlaces especificos en la informacion disponible)
 - Paper, blog o repositorio adicional: no disponibles en la informacion proporcionada.

@@ -88,10 +88,10 @@ Los datos de los modelos alternativos proceden de la documentación pública de 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PMA-1.2 | 125,6 M | 1.024 tokens entrenados | Apache-2.0 | HuggingFace, requiere `trust_remote_code` | Arquitectura y tokenizador propios; solo fp16; dominio hardware |
-| SmolLM2-135M-Instruct | 135 M (dato público) | 8.192 tokens (dato público) | Apache-2.0 | HuggingFace, soporte amplio en transformers y llama.cpp | Modelo pequeño de propósito general, sin dominio vertical |
-| Qwen2.5-0.5B-Instruct | 494 M (dato público) | 32.768 tokens (dato público) | Apache-2.0 | HuggingFace, vLLM, llama.cpp | Multilingüe amplio, mayor coste de memoria, sin especialización en hardware |
-| TinyLlama-1.1B-Chat | 1,1 B (dato público) | 2.048 tokens (dato público) | Apache-2.0 | HuggingFace, llama.cpp | Un orden de magnitud más de parámetros; mayor coste de despliegue en dispositivo |
+| PMA-1.2 | 125,6 M | 1.024 tokens entrenados | Apache-2.0 | Hugging Face, requiere `trust_remote_code` | Arquitectura y tokenizador propios; solo fp16; dominio hardware |
+| SmolLM2-135M-Instruct | 135 M (dato público) | 8.192 tokens (dato público) | Apache-2.0 | Hugging Face, soporte amplio en transformers y llama.cpp | Modelo pequeño de propósito general, sin dominio vertical |
+| Qwen2.5-0.5B-Instruct | 494 M (dato público) | 32.768 tokens (dato público) | Apache-2.0 | Hugging Face, vLLM, llama.cpp | Multilingüe amplio, mayor coste de memoria, sin especialización en hardware |
+| TinyLlama-1.1B-Chat | 1,1 B (dato público) | 2.048 tokens (dato público) | Apache-2.0 | Hugging Face, llama.cpp | Un orden de magnitud más de parámetros; mayor coste de despliegue en dispositivo |
 
 Comparativa de rendimiento entre estos modelos: no disponible.
 
@@ -111,7 +111,7 @@ Comparativa de rendimiento entre estos modelos: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/patriotmemory-ai/PMA-1.2
+- Modelo en Hugging Face: https://huggingface.co/patriotmemory-ai/PMA-1.2
 - Web oficial de Patriot Memory: https://patriotmemory.com
 - Viper Gaming: https://viper.patriotmemory.com
 - Soporte y garantía: https://patriotmemory.com/support

@@ -25,7 +25,7 @@ La relevancia de este repositorio es documental y educativa: no ofrece un modelo
 
 No procede: el repositorio no contiene un modelo entrenado ni código de entrenamiento. El contenido es un documento académico que describe el mecanismo de atención eficiente propuesto en la literatura. Según la información disponible, el paper se centra en la formulación matemática y la evaluación del mecanismo de atención con complejidad lineal, pero no se incluyen detalles sobre arquitecturas concretas, datasets de entrenamiento ni procesos de optimización.
 
-Si el lector está interesado en la implementación técnica, el repositorio GitHub `HKUNLP/efficient-attention` (vinculado en los resultados de búsqueda) ofrece un código base autocontenido que implementa varios mecanismos de atención eficiente, incluyendo variantes para clasificación de imágenes adaptadas de DeiT y PvTv2. No obstante, esta información no forma parte del repositorio de HuggingFace analizado.
+Si el lector está interesado en la implementación técnica, el repositorio GitHub `HKUNLP/efficient-attention` (vinculado en los resultados de búsqueda) ofrece un código base autocontenido que implementa varios mecanismos de atención eficiente, incluyendo variantes para clasificación de imágenes adaptadas de DeiT y PvTv2. No obstante, esta información no forma parte del repositorio de Hugging Face analizado.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo comparable con otros, ya que no 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/pranavshar/paper_002000184_efficient_attention
+- Repositorio de Hugging Face: https://huggingface.co/pranavshar/paper_002000184_efficient_attention
 - Paper original: *Efficient Attention: Attention with Linear Complexities* (arXiv:1812.01243) — https://arxiv.org/abs/1812.01243
 - Versión en IEEE (WACV 2021): https://ieeexplore.ieee.org/document/9423033
 - Repositorio de implementaciones: HKUNLP/efficient-attention — https://github.com/hkunlp/efficient-attention

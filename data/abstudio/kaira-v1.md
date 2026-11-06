@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo kaira-v1, publicado por abstudio en HuggingFace, es un modelo del que no se dispone de información técnica pública. El repositorio no contiene pesos (tamaño 0.0 GB) y la model card únicamente indica una licencia de tipo "other", sin descripción, arquitectura, ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni documentación adicional.
+El modelo kaira-v1, publicado por abstudio en Hugging Face, es un modelo del que no se dispone de información técnica pública. El repositorio no contiene pesos (tamaño 0.0 GB) y la model card únicamente indica una licencia de tipo "other", sin descripción, arquitectura, ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni documentación adicional.
 
 Dado que no existen datos sobre su arquitectura, número de parámetros, contexto o capacidades, no es posible determinar qué problema resuelve ni por qué sería relevante. Cualquier evaluación técnica requeriría acceso a los pesos o a documentación adicional por parte del autor.
 
@@ -56,4 +56,4 @@ No disponible. No se pueden establecer comparaciones sin conocer las caracterís
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abstudio/kaira-v1
+- Hugging Face: https://huggingface.co/abstudio/kaira-v1

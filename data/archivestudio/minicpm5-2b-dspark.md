@@ -87,7 +87,7 @@ La diferencia clave frente a EAGLE o Medusa es que MiniCPM5-2B-DSpark es un chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM5-2B-DSpark
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM5-2B-DSpark
 - Modelo objetivo MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
 - Paper DSpark: https://arxiv.org/abs/2607.05147
 - MiniCPM Tech Report: https://arxiv.org/pdf/2506.07900

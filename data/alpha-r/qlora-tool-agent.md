@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Alpha-R/qlora-tool-agent` es un repositorio publicado en HuggingFace por el usuario Alpha-R, etiquetado con `transformers`, `safetensors`, `endpoints_compatible` y `region:us`. El nombre sugiere que se trata de un agente de herramientas (tool agent) ajustado mediante QLoRA, una técnica de fine-tuning eficiente que combina cuantización de 4 bits con adaptadores de bajo rango (LoRA). Sin embargo, la model card asociada es una plantilla genérica sin información sustancial, y el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos publicados ni archivos de modelo.
+El modelo `Alpha-R/qlora-tool-agent` es un repositorio publicado en Hugging Face por el usuario Alpha-R, etiquetado con `transformers`, `safetensors`, `endpoints_compatible` y `region:us`. El nombre sugiere que se trata de un agente de herramientas (tool agent) ajustado mediante QLoRA, una técnica de fine-tuning eficiente que combina cuantización de 4 bits con adaptadores de bajo rango (LoRA). Sin embargo, la model card asociada es una plantilla genérica sin información sustancial, y el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos publicados ni archivos de modelo.
 
 En el momento de la consulta, el modelo registra cero descargas y cero likes, y no se ha publicado ninguna especificación técnica, licencia, idiomas soportados ni datos de entrenamiento. Por tanto, esta ficha se limita a documentar la información disponible y a señalar explícitamente las carencias, sin inventar datos. La relevancia del repositorio es actualmente nula desde el punto de vista práctico, aunque el nombre y las etiquetas apuntan a una posible intención de publicar un modelo de tool calling ajustado con QLoRA.
 
@@ -60,7 +60,7 @@ No disponible. No se puede comparar con alternativas como modelos de tool callin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alpha-R/qlora-tool-agent
+- Repositorio en Hugging Face: https://huggingface.co/Alpha-R/qlora-tool-agent
 - Articulo de QLoRA (referencia general, no especifica de este modelo): https://arxiv.org/abs/2305.14314
 - Repositorio oficial de QLoRA (referencia general): https://github.com/artidoro/qlora
 - Articulo sobre internalizacion de conocimiento de herramientas con QLoRA (referencia general): https://arxiv.org/pdf/2605.17774

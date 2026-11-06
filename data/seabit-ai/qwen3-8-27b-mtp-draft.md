@@ -76,7 +76,7 @@ El autor indica que la salida es idéntica a la del modelo sin *drafter* en el c
 | Tamano de descarga | 0,8 GB | 54 GB (checkpoint completo) | Variable segun cuantizacion |
 | Decodificacion especulativa con MTP | Si, sin descargar el original | Si | No disponible por defecto |
 | Licencia | Apache-2.0 | Apache-2.0 | Apache-2.0 |
-| Disponibilidad | HuggingFace (seabit-ai) | HuggingFace (Qwen) | HuggingFace |
+| Disponibilidad | Hugging Face (seabit-ai) | Hugging Face (Qwen) | Hugging Face |
 
 No se dispone de datos para comparar con otras familias de *drafters* (por ejemplo, cabezas tipo EAGLE o Medusa) en cuanto a parámetros, contexto o rendimiento.
 
@@ -94,7 +94,7 @@ No se dispone de datos para comparar con otras familias de *drafters* (por ejemp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seabit-ai/Qwen3.8-27B-MTP-draft
+- Hugging Face: https://huggingface.co/seabit-ai/Qwen3.8-27B-MTP-draft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - mlx-vlm (librería): https://github.com/Blaizzy/mlx-vlm
 - Herramienta lmk: https://github.com/seabit-ai/lmk

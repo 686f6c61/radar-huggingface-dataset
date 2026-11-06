@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Condicionamiento de membrana | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/proteinmpnn-membrane-global-noise020 | 1,691 M | Global (soluble/transmembrana) | Esqueleto N, CA, C, O | AGPL-3.0 | HuggingFace (OFoldX) |
-| oteam/membranempnn-per-residue | No disponible | Por residuo (expuesto/interfaz/enterrado) | Esqueleto N, CA, C, O | AGPL-3.0 | HuggingFace (OFoldX) |
+| oteam/proteinmpnn-membrane-global-noise020 | 1,691 M | Global (soluble/transmembrana) | Esqueleto N, CA, C, O | AGPL-3.0 | Hugging Face (OFoldX) |
+| oteam/membranempnn-per-residue | No disponible | Por residuo (expuesto/interfaz/enterrado) | Esqueleto N, CA, C, O | AGPL-3.0 | Hugging Face (OFoldX) |
 | ProteinMPNN original (dauparas) | ~1,7 M (variantes estándar) | No | Esqueleto N, CA, C, O | MIT (repositorio original) | GitHub dauparas/ProteinMPNN |
 | LigandMPNN (dauparas) | No disponible | Membrana y ligando (checkpoints oficiales) | Esqueleto + ligandos/etiquetas | MIT (repositorio original) | GitHub dauparas/LigandMPNN |
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - Implementación no oficial: el equipo que publicó MembraneMPNN no escribió esta model card; los artefactos pertenecen al proyecto OFoldX y pueden divergir de los checkpoints originales de LigandMPNN.
 - Licencia AGPL-3.0: el uso comercial exige cumplir las obligaciones de copyleft del software; conviene revisar con asesoría legal antes de integrarlo en productos propietarios.
-- Dependencia de la librería `ofoldx`: el modelo no es utilizable con frameworks estándar de HuggingFace `transformers`; requiere el ecosistema OFoldX.
+- Dependencia de la librería `ofoldx`: el modelo no es utilizable con frameworks estándar de Hugging Face `transformers`; requiere el ecosistema OFoldX.
 - El modelo solo acepta esqueletos con átomos N, CA, C y O; esqueletos incompletos o con geometrías aberrantes degradan la calidad del diseño.
 - La etiqueta de membrana global es binaria y no captura la posición exacta de la membrana; para eso existe la variante por residuo, que no es este checkpoint.
 - Riesgo de secuencias no plegables o agregantes: como todo modelo de *inverse folding*, las secuencias generadas requieren validación estructural (p. ej., con AlphaFold u otro predictor) antes de su síntesis.
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/proteinmpnn-membrane-global-noise020
+- Modelo en Hugging Face: https://huggingface.co/oteam/proteinmpnn-membrane-global-noise020
 - Variante global: https://huggingface.co/oteam/membranempnn-global
 - Variante por residuo: https://huggingface.co/oteam/membranempnn-per-residue
 - Código del modelo en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/membranempnn

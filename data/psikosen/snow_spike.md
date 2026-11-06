@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snow Spike (identificador `psikosen/snow_spike`) no es un modelo de lenguaje con pesos publicados, sino un proyecto de software en Python que implementa cuatro componentes de bajo nivel para un sistema de red neuronal con spikes ternarios (estados discretos -1, 0, +1): calculo de entropia discreta de Shannon por neurona, normalizacion de terminos de actualizacion, mecanismos de decaimiento temporal de puntuaciones y pesos vivos ("living weights") de inspiracion biologica. El repositorio de HuggingFace asociado ocupa 0.0 GB, no declara pipeline, licencia ni idiomas, y acumula 0 descargas y 0 likes en la informacion disponible.
+Snow Spike (identificador `psikosen/snow_spike`) no es un modelo de lenguaje con pesos publicados, sino un proyecto de software en Python que implementa cuatro componentes de bajo nivel para un sistema de red neuronal con spikes ternarios (estados discretos -1, 0, +1): calculo de entropia discreta de Shannon por neurona, normalizacion de terminos de actualizacion, mecanismos de decaimiento temporal de puntuaciones y pesos vivos ("living weights") de inspiracion biologica. El repositorio de Hugging Face asociado ocupa 0.0 GB, no declara pipeline, licencia ni idiomas, y acumula 0 descargas y 0 likes en la informacion disponible.
 
 El proyecto esta construido sobre MLX, el framework de arrays de Apple disenado para Apple Silicon, e incluye estructura de paquete (`src/entropy`, `src/normalization`, `src/decay`, `src/weights`, `src/utils`), bateria de tests con pytest, documentacion en `docs/` y ejemplos ejecutables. La model card describe tambien una red de ejemplo (`AdaptiveNetwork` con capas [2, 4, 1]) entrenada sobre el problema XOR, lo que situa el proyecto en una fase claramente experimental y de validacion conceptual.
 
@@ -107,7 +107,7 @@ Diferencias clave: Snow Spike aporta calculo de entropia discreta sobre estados 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/psikosen/snow_spike
+- Hugging Face: https://huggingface.co/psikosen/snow_spike
 - Paper Absolute Zero (referencia citada en la model card): https://arxiv.org/abs/2505.03335
 - Documentacion de MLX: https://ml-explore.github.io/mlx/build/html/index.html
 - Repositorio MLX-LM: https://github.com/ml-explore/mlx-lm/tree/main

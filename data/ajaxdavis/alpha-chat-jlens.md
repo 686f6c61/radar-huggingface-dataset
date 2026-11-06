@@ -71,7 +71,7 @@ No disponible. Este artefacto es específico para un único checkpoint (`ajaxdav
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ajaxdavis/alpha-chat-jlens
+- Repositorio Hugging Face: https://huggingface.co/ajaxdavis/alpha-chat-jlens
 - Modelo base: https://huggingface.co/ajaxdavis/alpha-60m-chat
 - Runtime del lens: https://alpha.donto.org/lens-runtime
 - Plataforma de evaluación: https://evals.blah.dev

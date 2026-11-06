@@ -74,7 +74,7 @@ Nota: el nombre de la columna de origen `RMSE_test_dynamic` contiene en realidad
 - VRAM estimada para inferencia: no disponible; no requiere GPU (modelo tabular de XGBoost).
 - GPU recomendadas: no aplica. La inferencia y el reentrenamiento pueden ejecutarse en CPU.
 - Compatibilidad con GPU de consumo: no aplica; el modelo cabe en cualquier equipo que ejecute Python 3.12 o superior con XGBoost 3.2.0.
-- Tamano del repositorio: 0,0 GB segun HuggingFace (incluye `model.joblib`, CSV y *notebook*; el *dataset* se gestiona con Git LFS).
+- Tamano del repositorio: 0,0 GB segun Hugging Face (incluye `model.joblib`, CSV y *notebook*; el *dataset* se gestiona con Git LFS).
 - Opciones de despliegue: carga directa del *checkpoint* con la libreria XGBoost (`joblib`); no aplican vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponible en la informacion proporcionada; al ser un *ensemble* de arboles sobre 13 caracteristicas, el coste por observacion es bajo, pero no se aportan cifras medidas.
 
@@ -84,7 +84,7 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EnerTEF Performance-Evaluation-of-Energy-Forecasts-Service | no disponible | no aplica | RMSE_train ≈ 5,7333 kW | MIT | HuggingFace + GitHub |
+| EnerTEF Performance-Evaluation-of-Energy-Forecasts-Service | no disponible | no aplica | RMSE_train ≈ 5,7333 kW | MIT | Hugging Face + GitHub |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,10 +98,10 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 - Idioma: documentacion e interfaz solo en ingles (etiqueta `en`).
 - Licencia MIT: permite uso comercial y modificacion, pero se debe conservar el aviso de copyright de EnerTEF; conviene revisar los terminos del repositorio fuente en GitHub por si el proyecto original anade condiciones adicionales.
 - Riesgo de uso indebido: al ser un modelo de umbrales calibrados para este *dataset* concreto, cambiar las columnas, sus unidades o su orden invalida las predicciones y las reglas de decision.
-- Estado del recurso: 0 descargas y 0 *likes* en HuggingFace en el momento de la consulta; no hay evidencia de validacion independiente por terceros.
+- Estado del recurso: 0 descargas y 0 *likes* en Hugging Face en el momento de la consulta; no hay evidencia de validacion independiente por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EnerTEF/Performance-Evaluation-of-Energy-Forecasts-Service
-- Coleccion EnerTEF en HuggingFace: https://huggingface.co/EnerTEF
+- Modelo en Hugging Face: https://huggingface.co/EnerTEF/Performance-Evaluation-of-Energy-Forecasts-Service
+- Coleccion EnerTEF en Hugging Face: https://huggingface.co/EnerTEF
 - Repositorio fuente en GitHub: https://github.com/ENERTEF/Performance-Evaluation-of-Energy-Forecasts-Service

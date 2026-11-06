@@ -85,9 +85,9 @@ El autor advierte explicitamente de que la comparacion con la literatura no es v
 
 | Modelo | Parametros | Contexto | Tarea | BLEU es→en (CoVoST 2 test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint | 241,7 M | 30 s de audio | Traduccion de voz es→en, simultanea | 35,45 (offline), 22,68 con `f=8` | Apache 2.0 | HuggingFace |
-| `openai/whisper-small` | 244 M | 30 s de audio | ASR y traduccion multilingue | 31,23 (zero-shot) | MIT | HuggingFace, ampliamente desplegado |
-| `openai/whisper-medium` | 769 M | 30 s de audio | ASR y traduccion multilingue | no disponible en esta informacion | MIT | HuggingFace |
+| Este checkpoint | 241,7 M | 30 s de audio | Traduccion de voz es→en, simultanea | 35,45 (offline), 22,68 con `f=8` | Apache 2.0 | Hugging Face |
+| `openai/whisper-small` | 244 M | 30 s de audio | ASR y traduccion multilingue | 31,23 (zero-shot) | MIT | Hugging Face, ampliamente desplegado |
+| `openai/whisper-medium` | 769 M | 30 s de audio | ASR y traduccion multilingue | no disponible en esta informacion | MIT | Hugging Face |
 | Sistemas especializados de traduccion simultanea (p. ej. variantes de AlignAtt) | variable | variable | Traduccion simultanea de voz | no disponible en esta informacion | variable | publicaciones y repos de investigacion |
 
 La comparacion directa con `whisper-small` es la mas informativa: mismo tamano y misma arquitectura, con una mejora de 4,22 BLEU en test offline y de hasta 9,47 BLEU en decodificacion por prefijos. Frente a `whisper-medium`, este checkpoint ofrece menor huella de memoria a costa de menor capacidad general; no se dispone de cifras comparativas de BLEU para ese modelo en la informacion proporcionada.
@@ -106,7 +106,7 @@ La comparacion directa con `whisper-small` es la mas informativa: mismo tamano y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PabloAndresE/simulst-es-en
+- Modelo en Hugging Face: https://huggingface.co/PabloAndresE/simulst-es-en
 - Repositorio con la politica de streaming, demo en vivo y codigo de evaluacion: https://github.com/PabloAndresE/simulst-es-en
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/fixie-ai/covost2

@@ -31,7 +31,7 @@ No se dispone de información pública sobre el número de tokens de entrenamien
 
 - Generación de texto en inglés, con especialización declarada en matemáticas (según el nombre del modelo).
 - Razonamiento matemático y resolución de problemas, presumiblemente reforzado mediante GSPO.
-- Conversación multi-turno (tag conversational en HuggingFace).
+- Conversación multi-turno (tag conversational en Hugging Face).
 - Compatibilidad con endpoints (tag endpoints_compatible).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
@@ -82,7 +82,7 @@ Nota: los datos de los modelos comparativos son de referencia general y pueden v
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Frugal-Math-30B-A3B-stage-1-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Frugal-Math-30B-A3B-stage-1-GGUF
 - Modelo base: https://huggingface.co/MBZUAI-Paris/Frugal-Math-30B-A3B-stage-1-GSPO
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Frugal-Math-30B-A3B-stage-1-GGUF
 - README de referencia para GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

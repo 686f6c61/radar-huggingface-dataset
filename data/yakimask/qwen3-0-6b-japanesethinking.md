@@ -63,6 +63,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yakimask/qwen3-0.6B-japanesethinking
+- Hugging Face: https://huggingface.co/Yakimask/qwen3-0.6B-japanesethinking
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

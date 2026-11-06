@@ -73,7 +73,7 @@ La comparacion directa es limitada porque el modelo aqui descrito no busca ser u
 
 ## Enlaces
 
-- HuggingFace: [longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-seed5-epoch3)
+- Hugging Face: [longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-first-third-sft-seed5-epoch3)
 - Modelo base: [unsloth/Qwen3-8B](https://huggingface.co/unsloth/Qwen3-8B)
 - Unsloth (herramienta de entrenamiento): [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 - TRL (libreria de Hugging Face): [https://github.com/huggingface/trl](https://github.com/huggingface/trl)

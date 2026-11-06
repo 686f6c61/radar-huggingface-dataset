@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sazxt/qwen35_2b_base_dclm_cpt_lora_v1` es un ajuste publicado en HuggingFace por el usuario sazxt sobre el modelo base `Qwen/Qwen3.5-2B-Base`. Se distribuye bajo licencia Apache 2.0, en formato safetensors y con la librería transformers, y su repositorio ocupa 4,1 GB. La model card es mínima: no incluye descripción de la arquitectura, del dataset de entrenamiento, del procedimiento de ajuste ni resultados de evaluación.
+`sazxt/qwen35_2b_base_dclm_cpt_lora_v1` es un ajuste publicado en Hugging Face por el usuario sazxt sobre el modelo base `Qwen/Qwen3.5-2B-Base`. Se distribuye bajo licencia Apache 2.0, en formato safetensors y con la librería transformers, y su repositorio ocupa 4,1 GB. La model card es mínima: no incluye descripción de la arquitectura, del dataset de entrenamiento, del procedimiento de ajuste ni resultados de evaluación.
 
 El nombre del repositorio sugiere tres elementos: DCLM (posiblemente el corpus DataComp-LM), CPT (continued pretraining o preentrenamiento continuado) y LoRA (ajuste de bajo rango). Ninguno de ellos aparece documentado en la model card, por lo que deben tratarse como indicios derivados del identificador y no como hechos confirmados. El tamaño del repositorio (4,1 GB) es coherente con un modelo de aproximadamente 2.000 millones de parámetros en precisión bf16/fp16, es decir, con pesos fusionados en lugar de un adaptador LoRA suelto, aunque esto tampoco se explicita.
 
@@ -75,12 +75,12 @@ No existen benchmarks publicados de este modelo, por lo que la comparación se l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sazxt/qwen35_2b_base_dclm_cpt_lora_v1 | No disponible (~2B según denominación) | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-2B-Base | ~2B (según denominación) | No disponible | No disponible en esta búsqueda | HuggingFace |
-| Qwen/Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.2-1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con registro |
-| google/gemma-2-2b | 2,61B | 8.192 tokens | Gemma Terms of Use | HuggingFace, con aceptación de términos |
-| HuggingFaceTB/SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace |
+| sazxt/qwen35_2b_base_dclm_cpt_lora_v1 | No disponible (~2B según denominación) | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-2B-Base | ~2B (según denominación) | No disponible | No disponible en esta búsqueda | Hugging Face |
+| Qwen/Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.2-1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con registro |
+| google/gemma-2-2b | 2,61B | 8.192 tokens | Gemma Terms of Use | Hugging Face, con aceptación de términos |
+| HuggingFaceTB/SmolLM2-1.7B | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face |
 
 La diferencia principal no está en las especificaciones, que en este modelo son desconocidas, sino en la trazabilidad: las alternativas citadas publican evaluaciones, documentación de entrenamiento y cuantizaciones listas para usar, mientras que este ajuste no ofrece ninguno de esos elementos.
 
@@ -99,6 +99,6 @@ La diferencia principal no está en las especificaciones, que en este modelo son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sazxt/qwen35_2b_base_dclm_cpt_lora_v1
+- Modelo en Hugging Face: https://huggingface.co/sazxt/qwen35_2b_base_dclm_cpt_lora_v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth

@@ -109,7 +109,7 @@ La media de la ultima columna es un calculo sobre los datos publicados en la mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JLB-JLB/android-ransomware-gat
+- Hugging Face: https://huggingface.co/JLB-JLB/android-ransomware-gat
 - Tesis referenciada: *Ransomware Detection using Graph Neural Networks Enhanced by Large Language Models*, Joscha Lasse Bisping, TU Berlin (no se proporciona URL).
 - Modelo upstream de caracteristicas de veredicto: `google/gemma-4-E4B-it` (identificador tal como aparece en la model card; no verificado).
 - Modelo upstream de embeddings de codigo: https://huggingface.co/nomic-ai/CodeRankEmbed

@@ -6,7 +6,7 @@ Qwen2.5-Coder-1.5B-Instruct-ExPO-a0.3 es una publicacion de investigacion del de
 
 El propio autor advierte que el modelo es experimental y **no supera al original**: las mediciones con los tests ocultos oficiales de HumanEval quedan dentro del ruido estadistico (68,3% en la mitad de seleccion frente a 72,0% del original; 73,2% en la mitad de test frente a 70,7%). El interes no esta en el rendimiento, sino en la reproducibilidad del experimento y en documentar que ExPO no funciona bien cuando el salto base→instruct incluye SFT y RL a gran escala, en lugar de un paso pequeno de optimizacion de preferencias.
 
-Se distribuye unicamente en formato GGUF fp16 (3,1 GB de repositorio), con licencia Apache-2.0 heredada de Qwen, y esta pensado para ejecutarse en local via Ollama o llama.cpp. No hay datos publicados sobre idiomas soportados ni pipeline declarado en HuggingFace.
+Se distribuye unicamente en formato GGUF fp16 (3,1 GB de repositorio), con licencia Apache-2.0 heredada de Qwen, y esta pensado para ejecutarse en local via Ollama o llama.cpp. No hay datos publicados sobre idiomas soportados ni pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La innovacion tecnica es metodologica: ExPO fue propuesto para extrapolar un pas
 ## Capacidades
 
 - Generacion de codigo en el estilo del modelo instruct original de Qwen2.5-Coder-1.5B (la model card no detalla capacidades adicionales).
-- Conversacion multi-turno (etiqueta `conversational` en HuggingFace).
+- Conversacion multi-turno (etiqueta `conversational` en Hugging Face).
 - Integracion con Ollama y llama.cpp mediante GGUF.
 - Compatibilidad declarada con endpoints (`endpoints_compatible`).
 - No se documentan capacidades de tool calling, agentes, vision, audio ni modo thinking en la informacion disponible.
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables (por ejemplo, CodeLlama o St
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dmdhrumilmistry/Qwen2.5-Coder-1.5B-Instruct-ExPO-a0.3-GGUF
+- Hugging Face: https://huggingface.co/dmdhrumilmistry/Qwen2.5-Coder-1.5B-Instruct-ExPO-a0.3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Toolkit Tvashtr: https://github.com/dmdhrumilmistry/tvashtr
 - Resultados ExPO en Tvashtr: https://github.com/dmdhrumilmistry/tvashtr#training-free-weight-updates-expo

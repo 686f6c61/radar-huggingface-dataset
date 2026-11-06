@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kurogane/qwen35_3.5m_dclm100m` es un modelo de lenguaje de escala diminuta publicado por el usuario kurogane en HuggingFace. Con 3.536.560 parámetros (unos 3,5 millones), se trata de un experimento de entrenamiento, no de un modelo destinado a uso productivo: el repo ocupa 0 GB, no acumula descargas ni "likes" y su model card se limita a la licencia, un fragmento de código de inferencia con `transformers` y una muestra de generación.
+`kurogane/qwen35_3.5m_dclm100m` es un modelo de lenguaje de escala diminuta publicado por el usuario kurogane en Hugging Face. Con 3.536.560 parámetros (unos 3,5 millones), se trata de un experimento de entrenamiento, no de un modelo destinado a uso productivo: el repo ocupa 0 GB, no acumula descargas ni "likes" y su model card se limita a la licencia, un fragmento de código de inferencia con `transformers` y una muestra de generación.
 
 El identificador y las etiquetas indican dos cosas: la etiqueta `qwen3_5_text` apunta a que el modelo emplea la implementación de arquitectura de texto de la familia Qwen3.5, y el sufijo `dclm100m` sugiere que se ha entrenado sobre el subconjunto de 100 millones de tokens de DCLM (DataComp-LM), el corpus de Common Crawl filtrado que se usa habitualmente como referencia en estudios de curación de datos. Ninguno de esos dos extremos se confirma de forma explícita en la documentación publicada.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kurogane/qwen35_3.5m_dclm100m | 3,5 M | No disponible | Apache-2.0 | Repo en HuggingFace, sin descargas ni validacion de la comunidad |
+| kurogane/qwen35_3.5m_dclm100m | 3,5 M | No disponible | Apache-2.0 | Repo en Hugging Face, sin descargas ni validacion de la comunidad |
 | HuggingFaceTB/SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | Ampliamente usado y evaluado |
 | roneneldan/TinyStories-33M | ~33 M | No disponible | No disponible | Repo publico orientado a generacion de cuentos infantiles |
 | Qwen/Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Modelo de referencia de la familia Qwen, con benchmarks publicados |
@@ -84,5 +84,5 @@ La comparacion es necesariamente cualitativa: el modelo de kurogane es entre uno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kurogane/qwen35_3.5m_dclm100m
+- Modelo en Hugging Face: https://huggingface.co/kurogane/qwen35_3.5m_dclm100m
 - No se han encontrado en la informacion proporcionada otros enlaces (paper, repositorio de codigo, blog, demo o dataset asociado).

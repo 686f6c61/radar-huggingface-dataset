@@ -100,7 +100,7 @@ No se han publicado metricas que permitan comparar el rendimiento de este finetu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axiomofmind/Hornybot-RP-Julian
+- Modelo en Hugging Face: https://huggingface.co/axiomofmind/Hornybot-RP-Julian
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Licencia upstream del modelo base: archivo LICENSE-QWEN dentro del repositorio del modelo

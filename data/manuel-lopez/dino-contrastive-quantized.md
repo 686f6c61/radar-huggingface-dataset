@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Contrastive es un prototipo de investigación publicado por el usuario manuel-lopez en HuggingFace bajo el identificador `manuel-lopez/dino-contrastive-quantized`. Se presenta explícitamente como un punto de partida experimental orientado al aprendizaje contrastivo, con una implementación propia (fichero `eval.py`) en lugar de una arquitectura estándar cargable mediante las APIs automáticas de `transformers`. El repositorio incluye configuración de arquitectura (`config.json`), receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+Dino for Contrastive es un prototipo de investigación publicado por el usuario manuel-lopez en Hugging Face bajo el identificador `manuel-lopez/dino-contrastive-quantized`. Se presenta explícitamente como un punto de partida experimental orientado al aprendizaje contrastivo, con una implementación propia (fichero `eval.py`) en lugar de una arquitectura estándar cargable mediante las APIs automáticas de `transformers`. El repositorio incluye configuración de arquitectura (`config.json`), receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante para evaluarlo es que **no se trata de un modelo entrenado**: la propia model card indica que el checkpoint es válido únicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna métrica de benchmark. El recuento real de parámetros en el fichero safetensors es de 49.600, una cifra que contrasta con la etiqueta «giant» que el autor usa en la documentación para describir la escala declarada del setup, lo que sugiere que la etiqueta describe la configuración objetivo o la plantilla de receta, no el artefacto publicado.
 
@@ -67,7 +67,7 @@ No disponible. No se dispone de datos verificables de rendimiento, contexto, idi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dino-contrastive-quantized | 49.600 | no disponible | no se reclama ninguno | apache-2.0 | HuggingFace, prototipo sin entrenar |
+| dino-contrastive-quantized | 49.600 | no disponible | no se reclama ninguno | apache-2.0 | Hugging Face, prototipo sin entrenar |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No disponible. No se dispone de datos verificables de rendimiento, contexto, idi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manuel-lopez/dino-contrastive-quantized
+- Hugging Face: https://huggingface.co/manuel-lopez/dino-contrastive-quantized
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a sitios de manuales escolares en francés y a la entrada del nombre propio «Manuel», sin relación con este repositorio. No hay papers, blogs, repositorios ni demos adicionales disponibles.

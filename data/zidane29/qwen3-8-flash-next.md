@@ -6,7 +6,7 @@ Qwen3.8-Flash-Next es un modelo de lenguaje multimodal de codigo abierto desarro
 
 Su relevancia actual radica en que introduce cuatro innovaciones arquitectonicas principales: atencion hibrida que combina Gated DeltaNet con Qwen Sparse Attention (QSA), un mecanismo de Gated Residual para mejorar el flujo de informacion entre capas, un sistema de N-gram Embedding que permite escalar parametros de forma eficiente sin recurrir exclusivamente a MoE, y una receta de entrenamiento optimizada con los optimizadores Muon y AdamW. El modelo soporta una longitud de contexto nativa de 262.144 tokens, extensible hasta 1.000.000, y esta disponible bajo la licencia qwen-community-1.0.
 
-El repositorio en HuggingFace contiene los pesos en formato Transformers, compatibles con vLLM, SGLang y TokenSpeed. La version comercial completa, denominada Qwen3.8-Flash, anade funcionalidades de produccion como contexto de 1M por defecto y herramientas integradas via la API de Qwen Cloud.
+El repositorio en Hugging Face contiene los pesos en formato Transformers, compatibles con vLLM, SGLang y TokenSpeed. La version comercial completa, denominada Qwen3.8-Flash, anade funcionalidades de produccion como contexto de 1M por defecto y herramientas integradas via la API de Qwen Cloud.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ En cuanto al entrenamiento, el modelo combina los optimizadores Muon y AdamW apl
 - Escalado eficiente de parametros: el N-gram Embedding permite ampliar capacidad sin incrementar proporcionalmente el coste computacional.
 - Compatibilidad con herramientas: la version oficial Qwen3.8-Flash (basada en este modelo) incluye herramientas integradas, aunque no se especifica si esta version concreta soporta tool calling nativo.
 - Capacidades de agente: orientado a cargas de trabajo agente multi-paso gracias a su ventana de contexto extendida y baja latencia.
-- Soporte multimodal: pipeline image-text-to-text confirmado en HuggingFace.
+- Soporte multimodal: pipeline image-text-to-text confirmado en Hugging Face.
 
 ## Casos de uso
 
@@ -88,8 +88,8 @@ La comparativa con Qwen3.8-27B se menciona en el blog de explainx.ai como refere
 
 ## Enlaces
 
-- Repositorio HuggingFace del autor: https://huggingface.co/Zidane29/Qwen3.8-Flash-Next
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del autor: https://huggingface.co/Zidane29/Qwen3.8-Flash-Next
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub del proyecto: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Informe tecnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next

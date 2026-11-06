@@ -6,7 +6,7 @@ livewhisper-gu-medium es una conversión a CTranslate2 del modelo vasista22/whis
 
 La relevancia del modelo está en su nicho: el guyaratí es un idioma con relativamente pocos recursos de ASR de calidad, y este ajuste fino sobre Whisper medium reduce el error de palabras hasta situarse claramente por debajo de whisper-large-v3 en este idioma. Según las métricas medidas por el autor dentro de LiveWhisper, el error de palabras en FLEURS es del 49,8 % frente al 67,7 % de large-v3, y del 48,5 % frente al 63,3 % en texto guyaratí transcrito con alfabeto latino (gujlish). Aun así, el propio autor advierte de que el modelo sigue fallando aproximadamente la mitad de las palabras.
 
-El repositorio ocupa 1,5 GB, declara licencia Apache 2.0 (la del modelo original) y, en el momento de redactar esta ficha, no registra descargas ni valoraciones en HuggingFace, por lo que no existe validación independiente de su comportamiento.
+El repositorio ocupa 1,5 GB, declara licencia Apache 2.0 (la del modelo original) y, en el momento de redactar esta ficha, no registra descargas ni valoraciones en Hugging Face, por lo que no existe validación independiente de su comportamiento.
 
 ## Especificaciones tecnicas
 
@@ -74,10 +74,10 @@ En ambas métricas un valor menor es mejor. No se han publicado resultados de MM
 
 | Modelo | Parametros | Formato | Error de palabras en FLEURS (gu) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| itsskofficial/livewhisper-gu-medium | Aproximadamente 769 M | CTranslate2 (float16) | 49,8 % | Apache 2.0 | HuggingFace, 0 descargas |
-| vasista22/whisper-gujarati-medium | Aproximadamente 769 M | PyTorch/safetensors | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | 769 M | PyTorch/safetensors | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
-| openai/whisper-large-v3 | Aproximadamente 1.550 M | PyTorch/safetensors | 67,7 % (segun la medicion del autor) | Apache 2.0 | HuggingFace |
+| itsskofficial/livewhisper-gu-medium | Aproximadamente 769 M | CTranslate2 (float16) | 49,8 % | Apache 2.0 | Hugging Face, 0 descargas |
+| vasista22/whisper-gujarati-medium | Aproximadamente 769 M | PyTorch/safetensors | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | 769 M | PyTorch/safetensors | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
+| openai/whisper-large-v3 | Aproximadamente 1.550 M | PyTorch/safetensors | 67,7 % (segun la medicion del autor) | Apache 2.0 | Hugging Face |
 
 La comparación relevante es doble: frente a whisper-large-v3, este modelo obtiene un error de palabras sustancialmente menor en guyaratí con la mitad de parámetros; frente a su modelo base vasista22/whisper-gujarati-medium, comparte exactamente los pesos y solo se diferencia en el formato y en el pequeño overhead de los ficheros auxiliares. No se dispone de datos de otros ajustes fino para guyaratí (por ejemplo, alternativas de AI4Bharat) en la información proporcionada.
 
@@ -89,14 +89,14 @@ La comparación relevante es doble: frente a whisper-large-v3, este modelo obtie
 - Sin datos sobre sesgos: la model card no incluye análisis de sesgo demográfico, dialectal ni de género, algo relevante en un idioma con variación dialectal amplia.
 - Robustez no documentada: no hay información sobre comportamiento con acentos regionales, habla espontánea, solapamiento de voces, ruido de fondo o code-switching guyaratí-inglés.
 - Licencia Apache 2.0, que permite uso comercial, pero el autor subraya que todo el mérito corresponde a los autores originales (SPRING Lab, IIT Madrás) y, por herencia, a OpenAI por la arquitectura Whisper; conviene mantener la atribución correspondiente.
-- Validación comunitaria nula: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin evaluaciones independientes que confirmen las métricas del autor.
+- Validación comunitaria nula: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin evaluaciones independientes que confirmen las métricas del autor.
 - Limitaciones de formato: no hay safetensors ni GGUF, lo que restringe las herramientas de despliegue a aquellas compatibles con CTranslate2.
 - Metadatos poco convencionales: la fecha de creacion registrada es 2026-09-21, posterior a la de esta ficha; conviene verificar la vigencia del repositorio antes de integrarlo.
 - Métrica "delivered Gujlish" definida de forma poco precisa en la model card: no se detalla el corpus ni el criterio de normalización, por lo que no es directamente comparable con métricas publicadas de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsskofficial/livewhisper-gu-medium
+- Modelo en Hugging Face: https://huggingface.co/itsskofficial/livewhisper-gu-medium
 - Modelo base: https://huggingface.co/vasista22/whisper-gujarati-medium
 - faster-whisper (Systran): https://github.com/SYSTRAN/faster-whisper
 - LiveWhisper: https://github.com/itsskofficial/LiveWhisper

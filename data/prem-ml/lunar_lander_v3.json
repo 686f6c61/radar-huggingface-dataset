@@ -5,7 +5,7 @@
   "author": "prem-ml",
   "url": "https://huggingface.co/prem-ml/lunar_lander_v3",
   "created_at": "2026-11-05T08:47:03.000Z",
-  "updated_at": "2026-11-05T08:52:47.000Z",
+  "updated_at": "2026-11-06T04:53:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -16,7 +16,7 @@
     "deep-reinforcement-learning",
     "reinforcement-learning",
     "gymnasium",
-    "LunarLander-v3",
+    "LunarLander-v2",
     "model-index",
     "region:us"
   ],

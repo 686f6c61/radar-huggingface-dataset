@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenHiPER es un adaptador LoRA publicado en HuggingFace por el usuario Aurorcys bajo el identificador `Aurorcys/QwenHiPER`. Se trata de un ajuste fino mediante QLoRA del modelo base Qwen/Qwen2.5-Coder-7B-Instruct, un transformer decoder-only de 7,6 mil millones de parámetros especializado en código. El repositorio no contiene pesos completos, sino únicamente los pesos del adaptador en formato PEFT/safetensors, con un tamaño total de 0,2 GB.
+QwenHiPER es un adaptador LoRA publicado en Hugging Face por el usuario Aurorcys bajo el identificador `Aurorcys/QwenHiPER`. Se trata de un ajuste fino mediante QLoRA del modelo base Qwen/Qwen2.5-Coder-7B-Instruct, un transformer decoder-only de 7,6 mil millones de parámetros especializado en código. El repositorio no contiene pesos completos, sino únicamente los pesos del adaptador en formato PEFT/safetensors, con un tamaño total de 0,2 GB.
 
 El interés del modelo radica en la técnica de ajuste utilizada, denominada HiPER, que el autor documenta mediante un repositorio de GitHub (`Aurorcys/HiPERimplementation`) y una referencia a un artículo en arXiv (identificador 2602.16165). La model card no describe en qué consiste dicha técnica, qué datos de entrenamiento se emplearon ni qué hiperparámetros se aplicaron, por lo que la ficha solo puede reconstruir el contexto a partir del modelo base y de las etiquetas del repositorio.
 
@@ -83,14 +83,14 @@ No hay datos de rendimiento publicados para QwenHiPER, por lo que la comparació
 - Idiomas: la model card solo declara inglés, lo que limita su uso directo en castellano u otros idiomas sin validación previa.
 - Riesgo de alucinación: inherente a los modelos de lenguaje de esta escala, especialmente en la generación de APIs, dependencias y fragmentos de código que pueden no existir o no compilar.
 - Sesgos: no disponibles. El autor no documenta ningún análisis de sesgo ni de comportamiento tóxico.
-- Reproducibilidad: la etiqueta del adaptador apunta a una ruta local de Kaggle, no a un identificador público de HuggingFace, lo que dificulta reproducir exactamente el punto de partida del entrenamiento.
+- Reproducibilidad: la etiqueta del adaptador apunta a una ruta local de Kaggle, no a un identificador público de Hugging Face, lo que dificulta reproducir exactamente el punto de partida del entrenamiento.
 - Referencia bibliográfica anómala: el identificador arXiv 2602.16165 no se corresponde con el formato de fecha habitual de arXiv (indicaría el año 2602). No se ha podido verificar la existencia o el contenido del artículo a partir de la información disponible.
 - Adopción nula: cero descargas y cero valoraciones en el momento de la consulta, sin comunidad que haya validado el artefacto.
 - Nota sobre la búsqueda web: los resultados devueltos por el buscador no guardan relación con el modelo (versan sobre el uso del adverbio "ya" en español), por lo que no aportan información adicional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aurorcys/QwenHiPER
+- Repositorio en Hugging Face: https://huggingface.co/Aurorcys/QwenHiPER
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio del método HiPER en GitHub: https://github.com/Aurorcys/HiPERimplementation
 - Artículo citado en la model card: https://arxiv.org/pdf/2602.16165

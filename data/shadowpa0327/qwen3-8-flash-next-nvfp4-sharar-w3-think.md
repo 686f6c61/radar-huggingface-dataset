@@ -70,9 +70,9 @@ Resultados de LiveCodeBench v6 e IFEval pendientes de publicacion segun la model
 
 | Modelo | Parametros | Contexto | GPQA Diamond (64K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next sin cuantizar | no disponible | no disponible | 86,4% | Qwen Community License 1.0 | HuggingFace (Qwen/Qwen3.8-Flash-Next) |
-| yemara/Qwen3.8-Flash-Next-NVFP4-sharar-w3 (rev. 694e279) | mismos que el base | no disponible | 76,4% | Qwen Community License 1.0 | HuggingFace |
-| Esta publicacion (shadowpa0327) | mismos que el base | no disponible | 84,2% | Qwen Community License 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next sin cuantizar | no disponible | no disponible | 86,4% | Qwen Community License 1.0 | Hugging Face (Qwen/Qwen3.8-Flash-Next) |
+| yemara/Qwen3.8-Flash-Next-NVFP4-sharar-w3 (rev. 694e279) | mismos que el base | no disponible | 76,4% | Qwen Community License 1.0 | Hugging Face |
+| Esta publicacion (shadowpa0327) | mismos que el base | no disponible | 84,2% | Qwen Community License 1.0 | Hugging Face |
 
 Las tres variantes comparten arquitectura y numero de parametros; la diferencia esta en la precision (BF16/NVFP4 frente a W3) y en los datos de calibracion. No se dispone de datos de modelos de otros fabricantes para una comparacion cruzada.
 
@@ -90,7 +90,7 @@ Las tres variantes comparten arquitectura y numero de parametros; la diferencia 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/shadowpa0327/Qwen3.8-Flash-Next-NVFP4-sharar-w3-think
+- Hugging Face del modelo: https://huggingface.co/shadowpa0327/Qwen3.8-Flash-Next-NVFP4-sharar-w3-think
 - Modelo base (exportacion NVFP4): https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Copias de 3 bits reemplazadas: https://huggingface.co/yemara/Qwen3.8-Flash-Next-NVFP4-sharar-w3

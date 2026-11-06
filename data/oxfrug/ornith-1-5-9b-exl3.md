@@ -75,7 +75,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/oxfrug/Ornith-1.5-9B-exl3
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/oxfrug/Ornith-1.5-9B-exl3
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Web oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Colección de modelos Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15

@@ -76,10 +76,10 @@ Con objetivo en 4 bits y `block_size` 2, la aceptación en código alcanza el 87
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ToPo-ToPo/Ornith-1.5-35B-A3B-MTP-bf16 | Drafter MTP para decodificación especulativa | 844,6 M | no disponible | MIT | HuggingFace, MLX |
-| ornith-ai/Ornith-1.5-35B-A3B (objetivo) | Modelo MoE A3B de 35B | 35B (A3B activos) | no disponible | MIT (según license_link) | HuggingFace |
-| ToPo-ToPo/Ornith-1.5-35B-A3B-mlx-4bit | Conversión MLX cuantizada a 4 bits del objetivo | 35B (A3B activos) | no disponible | MIT | HuggingFace, MLX |
-| ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit | Conversión MLX 4 bits oficial | 35B (A3B activos) | no disponible | MIT | HuggingFace, MLX |
+| ToPo-ToPo/Ornith-1.5-35B-A3B-MTP-bf16 | Drafter MTP para decodificación especulativa | 844,6 M | no disponible | MIT | Hugging Face, MLX |
+| ornith-ai/Ornith-1.5-35B-A3B (objetivo) | Modelo MoE A3B de 35B | 35B (A3B activos) | no disponible | MIT (según license_link) | Hugging Face |
+| ToPo-ToPo/Ornith-1.5-35B-A3B-mlx-4bit | Conversión MLX cuantizada a 4 bits del objetivo | 35B (A3B activos) | no disponible | MIT | Hugging Face, MLX |
+| ornith-ai/Ornith-1.5-35B-A3B-MLX-4bit | Conversión MLX 4 bits oficial | 35B (A3B activos) | no disponible | MIT | Hugging Face, MLX |
 
 No se dispone de información sobre otros *drafters* MTP comparables en la documentación proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de información sobre otros *drafters* MTP comparables en la docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ToPo-ToPo/Ornith-1.5-35B-A3B-MTP-bf16
+- Hugging Face: https://huggingface.co/ToPo-ToPo/Ornith-1.5-35B-A3B-MTP-bf16
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE
 - Conversión MLX 4 bits del autor: https://huggingface.co/ToPo-ToPo/Ornith-1.5-35B-A3B-mlx-4bit

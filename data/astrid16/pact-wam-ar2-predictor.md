@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PACT-WAM AR2 Predictor es un checkpoint de un predictor de mundo (world model) condicionado por acciones, desarrollado por el usuario Astrid16 en el contexto del proyecto PACT-WAM. No se trata de un modelo de lenguaje ni de un transformer estándar de HuggingFace, sino de un componente especializado que opera sobre representaciones latentes de un encoder JEPA y genera predicciones de horizontes futuros en entornos de robótica manipulativa. El checkpoint corresponde exactamente al paso 19690 utilizado en los experimentos de guiado de PACT-WAM, preservando la precisión y serialización originales.
+PACT-WAM AR2 Predictor es un checkpoint de un predictor de mundo (world model) condicionado por acciones, desarrollado por el usuario Astrid16 en el contexto del proyecto PACT-WAM. No se trata de un modelo de lenguaje ni de un transformer estándar de Hugging Face, sino de un componente especializado que opera sobre representaciones latentes de un encoder JEPA y genera predicciones de horizontes futuros en entornos de robótica manipulativa. El checkpoint corresponde exactamente al paso 19690 utilizado en los experimentos de guiado de PACT-WAM, preservando la precisión y serialización originales.
 
 El modelo resuelve el problema de predecir la evolución del estado latente de un entorno robótico a partir de acciones de bajo nivel, lo que resulta relevante para planificación basada en modelos, guiado de políticas y evaluación de trayectorias en tareas de manipulación. Su arquitectura es autorregresiva y consume un latente actual de forma [B,576,1024], cuatro acciones de bajo nivel [B,4,7], el estado del robot [B,8] y un índice de fase, produciendo dos llamadas autorregresivas que cubren dos horizontes futuros.
 
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Astrid16/PACT-WAM-AR2-Predictor
+- Modelo en Hugging Face: https://huggingface.co/Astrid16/PACT-WAM-AR2-Predictor
 - Repositorio de implementacion y evaluacion: https://github.com/cpx196/PACT-WAM
-- Manifiesto de artefactos: artifact_manifest.json (incluido en el repositorio de HuggingFace)
-- Punto de entrada de codigo: code/fastwam_ar2_eval.py (incluido en el repositorio de HuggingFace)
+- Manifiesto de artefactos: artifact_manifest.json (incluido en el repositorio de Hugging Face)
+- Punto de entrada de codigo: code/fastwam_ar2_eval.py (incluido en el repositorio de Hugging Face)

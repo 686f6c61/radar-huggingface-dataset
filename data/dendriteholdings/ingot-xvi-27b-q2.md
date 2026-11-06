@@ -22,7 +22,7 @@ Su relevancia es acotada pero concreta: demuestra que un modelo de ~27 B puede e
 | Formato de pesos | GGUF (llama.cpp), MLX 2-bit; pesos ternarios con escala fp16 por bloque de 128 pesos |
 | Modelo base | prism-ml/Ternary-Bonsai-2-27B-gguf (relación: finetune) |
 | Tamaño del repositorio | 13,2 GB |
-| Fecha de publicación | 2026-10-29 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-10-29 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -117,7 +117,7 @@ No se dispone de comparaciones con modelos de propósito general de tamaño simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XVI-27B-Q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XVI-27B-Q2
 - Modelo base (Ternary Bonsai 2 27B GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Pack MLX 2-bit de los mismos pesos: https://huggingface.co/dendriteholdings/Ingot-XVI-27B-MLX-2bit
 - Repositorio con el mismo layout y tokenizer (Ingot-genesis-27B-Q2): https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2

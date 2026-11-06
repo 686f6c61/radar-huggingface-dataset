@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/episod/qwen3.5-35b-a3b-blackhole-p300
+- Repositorio Hugging Face: https://huggingface.co/episod/qwen3.5-35b-a3b-blackhole-p300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Revisión fijada del checkpoint base: `59d61f3ce65a6d9863b86d2e96597125219dc754`
 - Imagen de referencia del bundle: `tt-model/qwen3-coder-next:0c170421ca1b`

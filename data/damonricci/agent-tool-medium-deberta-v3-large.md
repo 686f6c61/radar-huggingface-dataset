@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DamonRicci/agent-tool-medium-deberta-v3-large | 435M | Hasta 512 en la base, ejemplo a 128 | Clasificación binaria de entorno de herramienta | MIT | HuggingFace |
-| microsoft/deberta-v3-large | 435M | 512 | Modelo base, sin cabeza específica | MIT | HuggingFace |
-| microsoft/deberta-v3-base | 184M | 512 | Modelo base, alternativas de clasificación | MIT | HuggingFace |
+| DamonRicci/agent-tool-medium-deberta-v3-large | 435M | Hasta 512 en la base, ejemplo a 128 | Clasificación binaria de entorno de herramienta | MIT | Hugging Face |
+| microsoft/deberta-v3-large | 435M | 512 | Modelo base, sin cabeza específica | MIT | Hugging Face |
+| microsoft/deberta-v3-base | 184M | 512 | Modelo base, alternativas de clasificación | MIT | Hugging Face |
 
 No se conocen clasificadores públicos equivalentes especializados en discriminación `LOCAL_INTERNAL` vs `EXTERNAL_API` para middleware de agentes; por ello la comparativa se limita a los modelos base de la familia DeBERTa-v3.
 
@@ -87,7 +87,7 @@ No se conocen clasificadores públicos equivalentes especializados en discrimina
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DamonRicci/agent-tool-medium-deberta-v3-large
+- Hugging Face: https://huggingface.co/DamonRicci/agent-tool-medium-deberta-v3-large
 - GitHub del autor: https://github.com/DamonRicci
 - Artículo del autor en Medium: https://medium.com/@DamonEirickAI/gpt-5-5-agent-ai-is-transforming-from-a-chat-tool-into-a-task-assistant-4eb8d9071236
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large

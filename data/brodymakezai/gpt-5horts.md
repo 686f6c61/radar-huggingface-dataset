@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-5horts es un modelo de generación de texto a nivel de carácter (character-level) publicado por el usuario BrodyMakezAI en HuggingFace bajo licencia MIT. Se trata de un GPT decoder-only de tamano muy reducido (aproximadamente 10,7 millones de parametros, 6 capas, 6 cabezas de atención y una dimensión de modelo de 384), afinado exclusivamente sobre comentarios extraidos de YouTube Shorts. El propio autor lo describe como un ejercicio deliberado: el modelo ha absorbido los patrones lingüísticos de ese entorno concreto, con la intención declarada de reproducirlos.
+GPT-5horts es un modelo de generación de texto a nivel de carácter (character-level) publicado por el usuario BrodyMakezAI en Hugging Face bajo licencia MIT. Se trata de un GPT decoder-only de tamano muy reducido (aproximadamente 10,7 millones de parametros, 6 capas, 6 cabezas de atención y una dimensión de modelo de 384), afinado exclusivamente sobre comentarios extraidos de YouTube Shorts. El propio autor lo describe como un ejercicio deliberado: el modelo ha absorbido los patrones lingüísticos de ese entorno concreto, con la intención declarada de reproducirlos.
 
 El modelo no es una herramienta de propósito general ni un asistente conversacional: es un experimento de microescala orientado a imitar el registro, la ortografía y las obsesiones temáticas de los comentarios de Shorts. No sigue instrucciones, no razona, no tiene modo de pensamiento y no soporta tool calling. Su relevancia actual es fundamentalmente didáctica y de entretenimiento: sirve como ejemplo mínimo y reproducible de entrenamiento char-level con un único dominio, y como material para estudiar sesgos de dominio, degeneración de coherencia y generación sin control.
 
@@ -23,7 +23,7 @@ Pese al nombre, el modelo no tiene ninguna relación con OpenAI, tal y como acla
 | Tamano del repositorio | 0,0 GB |
 | Pipeline | text-generation |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-09-20T18:00:41Z (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-20T18:00:41Z (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,10 +81,10 @@ La comparación se establece con modelos pequeños de generación de texto de re
 
 | Modelo | Parametros | Tipo de tokenizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-5horts | ~10,7 M | Carácter | no disponible | MIT | Repositorio HuggingFace de 0,0 GB, sin descargas |
-| GPT-2 small | 124 M | BPE | 1024 tokens | MIT | Ampliamente disponible en HuggingFace |
-| distilgpt2 | 82 M | BPE | 1024 tokens | Apache 2.0 (según la ficha del modelo) | Ampliamente disponible en HuggingFace |
-| TinyStories-1M | ~1 M | BPE | no disponible | MIT (según ficha del autor) | Disponible en HuggingFace |
+| GPT-5horts | ~10,7 M | Carácter | no disponible | MIT | Repositorio Hugging Face de 0,0 GB, sin descargas |
+| GPT-2 small | 124 M | BPE | 1024 tokens | MIT | Ampliamente disponible en Hugging Face |
+| distilgpt2 | 82 M | BPE | 1024 tokens | Apache 2.0 (según la ficha del modelo) | Ampliamente disponible en Hugging Face |
+| TinyStories-1M | ~1 M | BPE | no disponible | MIT (según ficha del autor) | Disponible en Hugging Face |
 
 Frente a estos modelos, GPT-5horts destaca únicamente por su naturaleza char-level y por su especialización extrema en un dominio. En parámetros es comparable a los modelos más pequeños de la familia TinyStories, pero carece de la coherencia narrativa que estos últimos persiguen deliberadamente mediante datasets sintéticos controlados. La comparativa de rendimiento en tareas estándar no es posible porque no se publican métricas convencionales para GPT-5horts.
 
@@ -103,6 +103,6 @@ Frente a estos modelos, GPT-5horts destaca únicamente por su naturaleza char-le
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrodyMakezAI/gpt-5horts
+- Modelo en Hugging Face: https://huggingface.co/BrodyMakezAI/gpt-5horts
 - La búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces encontrados corresponden a páginas sobre angio-RRM e IRM cerebrales en francés, sin ninguna relación con GPT-5horts ni con generación de texto.
 - No se han encontrado paper, blog técnico, repositorio de código ni demo asociados al modelo en la información disponible.

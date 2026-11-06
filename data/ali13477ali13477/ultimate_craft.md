@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ULTIMATE_CRAFT es un repositorio publicado en HuggingFace por el usuario ali13477ali13477 bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y fechas de creacion y actualizacion (11 de septiembre de 2026). No hay pipeline declarado, no hay idiomas declarados y la model card esta practicamente vacia: unicamente contiene el encabezado YAML con la licencia.
+ULTIMATE_CRAFT es un repositorio publicado en Hugging Face por el usuario ali13477ali13477 bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y fechas de creacion y actualizacion (11 de septiembre de 2026). No hay pipeline declarado, no hay idiomas declarados y la model card esta practicamente vacia: unicamente contiene el encabezado YAML con la licencia.
 
 No es posible determinar que tipo de artefacto contiene el repositorio (modelo completo, adaptador LoRA, checkpoint de fine-tuning, o incluso pesos parciales) porque el autor no ha publicado documentacion tecnica, arquitectura, numero de parametros ni datos de entrenamiento. Tampoco hay resultados de benchmarks, ejemplos de uso ni demos asociadas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -22,7 +22,7 @@ Por todo ello, esta ficha se limita a documentar lo que se puede verificar y a m
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
 | Autor | ali13477ali13477 |
-| Fecha de creacion en HuggingFace | 2026-09-11 |
+| Fecha de creacion en Hugging Face | 2026-09-11 |
 | Fecha de ultima actualizacion | 2026-09-11 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ULTIMATE_CRAFT | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| ULTIMATE_CRAFT | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ali13477ali13477/ULTIMATE_CRAFT
+- Hugging Face: https://huggingface.co/ali13477ali13477/ULTIMATE_CRAFT
 - Model card del autor: sin contenido tecnico (solo encabezado YAML con `license: apache-2.0`)
 - Paper: no disponible
 - Blog o anuncio: no disponible

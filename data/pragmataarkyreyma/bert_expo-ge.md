@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BERT_EXPO-GE es un modelo de clasificación de texto basado en la arquitectura BERT, desarrollado por el usuario de HuggingFace PragmataArkyreyma. El modelo tiene 110.714.136 parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 0,4 GB. Su pipeline principal es text-classification, lo que indica que está diseñado para tareas de clasificación de textos, aunque también aparece etiquetado con text-embeddings-inference, lo que sugiere una posible compatibilidad con la generación de embeddings.
+BERT_EXPO-GE es un modelo de clasificación de texto basado en la arquitectura BERT, desarrollado por el usuario de Hugging Face PragmataArkyreyma. El modelo tiene 110.714.136 parámetros y se distribuye en formato safetensors, con un tamaño de repositorio de 0,4 GB. Su pipeline principal es text-classification, lo que indica que está diseñado para tareas de clasificación de textos, aunque también aparece etiquetado con text-embeddings-inference, lo que sugiere una posible compatibilidad con la generación de embeddings.
 
-La información disponible sobre este modelo es extremadamente limitada: la model card es una plantilla generada automáticamente por HuggingFace y no contiene datos sobre el proceso de entrenamiento, los datos utilizados, los idiomas soportados, la licencia ni los resultados de evaluación. Se desconoce si se trata de un modelo preentrenado desde cero o un ajuste fino de algún BERT existente. A pesar de la falta de documentación, su tamaño y arquitectura lo sitúan en la categoría de modelos BERT-base, lo que lo hace potencialmente útil para tareas de clasificación de textos en entornos con recursos computacionales limitados.
+La información disponible sobre este modelo es extremadamente limitada: la model card es una plantilla generada automáticamente por Hugging Face y no contiene datos sobre el proceso de entrenamiento, los datos utilizados, los idiomas soportados, la licencia ni los resultados de evaluación. Se desconoce si se trata de un modelo preentrenado desde cero o un ajuste fino de algún BERT existente. A pesar de la falta de documentación, su tamaño y arquitectura lo sitúan en la categoría de modelos BERT-base, lo que lo hace potencialmente útil para tareas de clasificación de textos en entornos con recursos computacionales limitados.
 
 ## Especificaciones tecnicas
 
@@ -51,17 +51,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: para un modelo de 110 millones de parámetros en FP32, los pesos ocupan aproximadamente 440 MB. Con overhead de activaciones y el framework, se recomienda entre 1 y 2 GB de VRAM. En FP16, los pesos se reducen a unos 220 MB, lo que podría funcionar con 1 GB de VRAM.
 - GPU recomendadas: el modelo puede ejecutarse en GPUs de consumo como RTX 3060, RTX 4060 o equivalentes. También es viable en GPUs profesionales como A10 o T4.
 - Compatibilidad con hardware de consumo: sí, el modelo cabe en la mayoría de GPUs de consumo actuales. Incluso podría ejecutarse en CPU para inferencia con baja latencia si se usa una cuantización adecuada, aunque no se especifica el formato de cuantización disponible.
-- Opciones de despliegue: al estar diseñado para la librería transformers, puede desplegarse mediante el pipeline de HuggingFace, con Inference Endpoints, o con servidores como vLLM o TGI si se adapta. También es posible exportarlo a ONNX para su uso en entornos optimizados.
+- Opciones de despliegue: al estar diseñado para la librería transformers, puede desplegarse mediante el pipeline de Hugging Face, con Inference Endpoints, o con servidores como vLLM o TGI si se adapta. También es posible exportarlo a ONNX para su uso en entornos optimizados.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de rendimiento.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BERT_EXPO-GE | 110,7 M | no disponible | no disponible | HuggingFace |
-| BERT-base-uncased | 110 M | 512 tokens (tipico) | Apache 2.0 | HuggingFace |
-| DistilBERT-base-uncased | 66 M | 512 tokens (tipico) | Apache 2.0 | HuggingFace |
-| RoBERTa-base | 125 M | 512 tokens (tipico) | MIT | HuggingFace |
+| BERT_EXPO-GE | 110,7 M | no disponible | no disponible | Hugging Face |
+| BERT-base-uncased | 110 M | 512 tokens (tipico) | Apache 2.0 | Hugging Face |
+| DistilBERT-base-uncased | 66 M | 512 tokens (tipico) | Apache 2.0 | Hugging Face |
+| RoBERTa-base | 125 M | 512 tokens (tipico) | MIT | Hugging Face |
 
 La comparativa se limita a características estructurales, ya que no se dispone de datos de rendimiento para BERT_EXPO-GE. Los modelos alternativos cuentan con documentación completa, licencias claras y resultados de benchmarks publicados, mientras que BERT_EXPO-GE carece de toda esa información. En cuanto a parámetros, se sitúa entre DistilBERT y RoBERTa-base, pero sin datos que permitan evaluar su calidad.
 
@@ -76,5 +76,5 @@ La comparativa se limita a características estructurales, ya que no se dispone 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PragmataArkyreyma/BERT_EXPO-GE
+- Hugging Face: https://huggingface.co/PragmataArkyreyma/BERT_EXPO-GE
 - Paper de referencia de la arquitectura BERT: https://arxiv.org/abs/1810.04805 (Devlin et al., 2018)

@@ -67,10 +67,10 @@ Los datos de este checkpoint no están publicados; la comparación se realiza a 
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| π0.5 (este checkpoint, gtensorapp) | no disponible | VLA | Apache 2.0 | HuggingFace, repositorio de competición |
+| π0.5 (este checkpoint, gtensorapp) | no disponible | VLA | Apache 2.0 | Hugging Face, repositorio de competición |
 | π0.5 / π0 (Physical Intelligence, openpi) | en torno a 3B en la familia π0, no confirmado para π0.5 | VLA con *flow matching* | Apache 2.0 | Repositorio openpi |
-| OpenVLA | 7B | VLA | Apache 2.0 | Público en HuggingFace |
-| GR00T N1 (NVIDIA) | ~2,2B | VLA | Licencia de modelo abierto de NVIDIA | Público en HuggingFace |
+| OpenVLA | 7B | VLA | Apache 2.0 | Público en Hugging Face |
+| GR00T N1 (NVIDIA) | ~2,2B | VLA | Licencia de modelo abierto de NVIDIA | Público en Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento (tasas de éxito en tareas) entre estas alternativas.
 
@@ -87,6 +87,6 @@ No se dispone de datos suficientes para comparar rendimiento (tasas de éxito en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gtensorapp/pi0.5-WSMLo1hknaNw
+- Hugging Face: https://huggingface.co/gtensorapp/pi0.5-WSMLo1hknaNw
 - Repositorio openpi (modelo base π0.5): https://github.com/Physical-Intelligence/openpi
 - Blog de Physical Intelligence sobre π0.5: https://www.physicalintelligence.company/blog/pi05

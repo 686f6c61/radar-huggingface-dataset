@@ -66,7 +66,7 @@ No se dispone de datos de rendimiento ni de fichas tecnicas de otros adaptadores
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ct-inkling-oai-gen-mid-g0-b2 | no disponible (repo de 16,9 GB) | no disponible (max 8192 en entrenamiento) | no disponible | Publico en HuggingFace, 0 descargas | Adaptador LoRA de investigacion sobre entrenamiento constitucional |
+| ct-inkling-oai-gen-mid-g0-b2 | no disponible (repo de 16,9 GB) | no disponible (max 8192 en entrenamiento) | no disponible | Publico en Hugging Face, 0 descargas | Adaptador LoRA de investigacion sobre entrenamiento constitucional |
 | thinkingmachines/Inkling-Small (modelo base) | no disponible | no disponible | no disponible | Referenciado como base, sin datos en esta informacion | Modelo subyacente sin ajustar |
 | Otras generaciones y ramas del linaje `inkling-oai-gen-mid` | no disponible | no disponible | no disponible | Existen segun la nomenclatura de ramas, sin datos publicados | No se dispone de sus fichas ni resultados |
 
@@ -85,8 +85,8 @@ No se dispone de datos de rendimiento ni de fichas tecnicas de otros adaptadores
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g0-b2
-- Modelo base en HuggingFace: https://huggingface.co/thinkingmachines/Inkling-Small
+- Ficha en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g0-b2
+- Modelo base en Hugging Face: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion semilla incluida en el repositorio: `training_seed_constitution.md`
 - Registro de exportacion desde Tinker: `tinker_meta.json`
 - Ruta original en Tinker (referencia, no URL): `tinker://6b99be7a-0e8e-5ee7-a27d-bd200d46ec69:train:0/sampler_weights/inkoaig0_inkoai_g0_b2_s1_final`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mia-v2-29B es un modelo multimodal publicado por AIVORENCE en HuggingFace bajo el identificador `AIVORENCE/Mia-v2-29B`. Se distribuye con la libreria transformers y etiquetas que lo situan como modelo conversacional de tipo any-to-any e image-text-to-text, lo que indica entrada y salida multimodales (texto e imagen), aunque la model card no aporta documentacion tecnica adicional al respecto. La etiqueta `gemma4` sugiere que la arquitectura deriva de la familia Gemma 4 de Google, si bien no hay confirmacion explicita por parte del autor.
+Mia-v2-29B es un modelo multimodal publicado por AIVORENCE en Hugging Face bajo el identificador `AIVORENCE/Mia-v2-29B`. Se distribuye con la libreria transformers y etiquetas que lo situan como modelo conversacional de tipo any-to-any e image-text-to-text, lo que indica entrada y salida multimodales (texto e imagen), aunque la model card no aporta documentacion tecnica adicional al respecto. La etiqueta `gemma4` sugiere que la arquitectura deriva de la familia Gemma 4 de Google, si bien no hay confirmacion explicita por parte del autor.
 
 El dato mas fiable disponible es el recuento real de parametros en los ficheros safetensors: 31.273.086.512 parametros (unos 31,3 mil millones), pese a que el nombre comercial del modelo indica "29B". El repositorio ocupa 62,6 GB, coherente con pesos almacenados en precision de 16 bits (aproximadamente 62,5 GB teoricos para 31,27 mil millones de parametros en bf16/fp16). No se ha publicado informacion sobre longitud de contexto, composicion del dataset de entrenamiento, proceso de alineacion ni resultados de benchmarks.
 
@@ -34,13 +34,13 @@ Tampoco hay informacion sobre innovaciones tecnicas destacables: no consta el us
 
 ## Capacidades
 
-Las siguientes capacidades se deducen exclusivamente de las etiquetas y el pipeline declarados en HuggingFace. No hay model card, demos ni evaluaciones que las confirmen:
+Las siguientes capacidades se deducen exclusivamente de las etiquetas y el pipeline declarados en Hugging Face. No hay model card, demos ni evaluaciones que las confirmen:
 
 - Generacion de texto conversacional multi-turno (etiquetas `conversational` y `text-generation`).
 - Procesamiento conjunto de imagen y texto (`image-text-to-text`), es decir, entrada multimodal con imagen.
-- Pipeline `any-to-any`, que en la taxonomia de HuggingFace implica entrada y salida en multiples modalidades (texto e imagen, previsiblemente).
+- Pipeline `any-to-any`, que en la taxonomia de Hugging Face implica entrada y salida en multiples modalidades (texto e imagen, previsiblemente).
 - Soporte multilingue declarado para seis idiomas: ruso, ingles, chino, aleman, frances e italiano. No se especifica el nivel de competencia por idioma.
-- Compatibilidad declarada con `endpoints_compatible` (etiqueta de HuggingFace) y con la libreria transformers.
+- Compatibilidad declarada con `endpoints_compatible` (etiqueta de Hugging Face) y con la libreria transformers.
 - No hay evidencia de soporte de tool calling, function calling, razonamiento multi-paso orientado a agentes, modo "thinking", entrada de audio o capacidades de codigo y matematicas verificadas.
 
 ## Casos de uso
@@ -74,11 +74,11 @@ Las siguientes cifras son estimaciones calculadas a partir del recuento real de 
 
 ## Comparativa con modelos similares
 
-Los datos de la columna de Mia-v2-29B provienen de los metadatos de HuggingFace; los de los modelos comparables provienen de su documentacion publica habitual. No se ha podido comparar rendimiento porque Mia-v2-29B no tiene benchmarks publicados.
+Los datos de la columna de Mia-v2-29B provienen de los metadatos de Hugging Face; los de los modelos comparables provienen de su documentacion publica habitual. No se ha podido comparar rendimiento porque Mia-v2-29B no tiene benchmarks publicados.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| Mia-v2-29B (AIVORENCE) | 31,27 mil millones | No disponible | Apache 2.0 | No | HuggingFace, 0 descargas |
+| Mia-v2-29B (AIVORENCE) | 31,27 mil millones | No disponible | Apache 2.0 | No | Hugging Face, 0 descargas |
 | Gemma 3 27B (Google) | 27 mil millones | 128K tokens (segun documentacion de Google) | Gemma Terms of Use | Si, tabla publicada por Google | Amplia distribucion, multiples cuantizaciones |
 | Qwen2.5-VL-32B (Alibaba) | 32 mil millones aprox. | 128K tokens (segun documentacion de Alibaba) | Apache 2.0 (segun su repositorio) | Si, tabla publicada por Alibaba | Amplia distribucion y versiones cuantizadas |
 
@@ -100,11 +100,11 @@ Nota: la fila de Gemma 3 se incluye unicamente como referencia de categoria por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIVORENCE/Mia-v2-29B
+- Modelo en Hugging Face: https://huggingface.co/AIVORENCE/Mia-v2-29B
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible
 - Demo o espacio interactivo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/AIVORENCE
+- Perfil del autor en Hugging Face: https://huggingface.co/AIVORENCE
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo. Los unicos resultados obtenidos corresponden a foros no relacionados (consultas sobre configuracion de altavoces) y se han descartado por no ser relevantes.

@@ -81,10 +81,10 @@ Notas adicionales: la fila MTP se mide sobre prosa del corpus de benchmark con u
 
 | Modelo | Parametros | Contexto | Cuantizacion | Perplejidad (NInfer quick) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3 | 35B / 3B activos | 262.144 | NVFP4 (expertos) + Q8/Q6/Q5/Q4/BF16 | 4,410 | Apache 2.0 | HuggingFace (0 descargas) |
-| neroued/Qwen3.6-35B-A3B-NInfer (artefacto oficial) | 35B / 3B activos | no disponible | Q4/Q5 grupales en expertos | 4,364 | Apache 2.0 | HuggingFace |
-| RedHatAI/Qwen3.6-35B-A3B-NVFP4 | 35B / 3B activos | no disponible | NVFP4 (expertos) | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.6-35B-A3B (base BF16) | 35B / 3B activos | no disponible | BF16 | no disponible | Apache 2.0 | HuggingFace |
+| WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3 | 35B / 3B activos | 262.144 | NVFP4 (expertos) + Q8/Q6/Q5/Q4/BF16 | 4,410 | Apache 2.0 | Hugging Face (0 descargas) |
+| neroued/Qwen3.6-35B-A3B-NInfer (artefacto oficial) | 35B / 3B activos | no disponible | Q4/Q5 grupales en expertos | 4,364 | Apache 2.0 | Hugging Face |
+| RedHatAI/Qwen3.6-35B-A3B-NVFP4 | 35B / 3B activos | no disponible | NVFP4 (expertos) | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.6-35B-A3B (base BF16) | 35B / 3B activos | no disponible | BF16 | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa directa con el artefacto oficial de NInfer muestra una perplejidad ligeramente superior (4,410 frente a 4,364) pero mejor prefill (hasta 30.938 tok/s frente a 22.643 tok/s a 4.096 tokens) y decode equivalente (407 frente a 398 tok/s). La contrapartida es la exigencia de hardware `sm_120a`, ausente en esta comparativa para los demas artefactos.
 
@@ -102,7 +102,7 @@ La comparativa directa con el artefacto oficial de NInfer muestra una perplejida
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3
+- Hugging Face del artefacto: https://huggingface.co/WaveCut/Qwen3.6-35B-A3B-NVFP4-NInfer-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Checkpoint NVFP4 de origen de los expertos: https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-NVFP4
 - Artefacto oficial de NInfer para comparacion: https://huggingface.co/neroued/Qwen3.6-35B-A3B-NInfer

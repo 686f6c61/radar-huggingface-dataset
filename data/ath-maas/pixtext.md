@@ -95,7 +95,7 @@ La comparación con alternativas de la misma categoría (otros modelos de render
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATH-MaaS/PixText
+- Modelo en Hugging Face: https://huggingface.co/ATH-MaaS/PixText
 - Paper (arXiv 2610.18284): https://arxiv.org/abs/2610.18284
 - Repositorio de código: https://github.com/ATH-MaaS/PixText
 - Dataset TextRefinementBench: https://huggingface.co/datasets/ATH-MaaS/TextRefinementBench

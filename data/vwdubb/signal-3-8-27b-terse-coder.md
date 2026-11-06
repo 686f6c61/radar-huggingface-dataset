@@ -100,7 +100,7 @@ La diferencia clave entre las opciones es el modo de despliegue: la version runt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vwdubb/Signal-3.8-27B-Terse-Coder
+- Modelo en Hugging Face: https://huggingface.co/vwdubb/Signal-3.8-27B-Terse-Coder
 - Modelo base (Signal): https://huggingface.co/agentionai/Signal-3.8-27B
 - Adaptador LoRA Terse-Coder: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
 - Template de chat utilizado: Shockem/froggeric-terse-coder (referenciado en la model card)

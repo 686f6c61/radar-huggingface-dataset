@@ -6,7 +6,7 @@ La suite **AutoRound + ASHQ1 Double-Quantization** no es un modelo de lenguaje e
 
 El resultado es un pipeline que produce cinco niveles estandarizados de compresión (Nano, Mini, Compact, Quality y Fidelity) con ratios de tamaño que van desde el 21 % hasta el 48 % del modelo original en BF16. La suite soporta arquitecturas densas, MoE, modelos recurrentes e híbridos (GDN, Mamba, RWKV, Qwen3.5) y torres multimodales, así como cabezas de predicción multi-token (MTP). Su relevancia actual radica en ofrecer un flujo automatizado y reproducible para obtener GGUF de muy baja precisión con pérdida mínima, pensado para despliegue en entornos con restricciones de memoria.
 
-El repositorio de HuggingFace no incluye pesos de ningún modelo concreto, solo los scripts y la documentación del pipeline. No se han publicado métricas de rendimiento ni resultados de benchmarks en la información disponible.
+El repositorio de Hugging Face no incluye pesos de ningún modelo concreto, solo los scripts y la documentación del pipeline. No se han publicado métricas de rendimiento ni resultados de benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ La suite destaca por su automatización y por el enfoque de asignación dinámic
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Soulfate24/AutoRound-ASHQ1_Double-Quantization_Suite
+- Repositorio de Hugging Face: https://huggingface.co/Soulfate24/AutoRound-ASHQ1_Double-Quantization_Suite
 - GitHub de AutoRound (Intel): https://github.com/intel/auto-round
 - Documentación de cuantización de vLLM: https://docs.vllm.ai/en/latest/features/quantization/
 - Página de modelos de Soulfate24: https://huggingface.co/Soulfate24/models

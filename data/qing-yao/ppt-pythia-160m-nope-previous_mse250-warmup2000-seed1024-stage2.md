@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed1024-stage2` es un ajuste fino de EleutherAI/pythia-160m publicado por el usuario qing-yao en HuggingFace. Con 162.322.944 parámetros (~162 M) según los pesos en safetensors, se trata de un modelo denso de la familia GPT-NeoX, pero con una particularidad relevante: el tag de arquitectura es `gpt_neox_nope` y el repositorio incluye `custom_code`, lo que indica que no se carga con una clase estándar de Transformers. El sufijo «nope» y el nombre del experimento sugieren una variante sin codificación posicional (NoPE), aunque la model card no documenta la modificación concreta.
+`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed1024-stage2` es un ajuste fino de EleutherAI/pythia-160m publicado por el usuario qing-yao en Hugging Face. Con 162.322.944 parámetros (~162 M) según los pesos en safetensors, se trata de un modelo denso de la familia GPT-NeoX, pero con una particularidad relevante: el tag de arquitectura es `gpt_neox_nope` y el repositorio incluye `custom_code`, lo que indica que no se carga con una clase estándar de Transformers. El sufijo «nope» y el nombre del experimento sugieren una variante sin codificación posicional (NoPE), aunque la model card no documenta la modificación concreta.
 
 El modelo no está pensado como un asistente de propósito general. El nombre codifica las condiciones experimentales: `previous_mse250`, `warmup2000`, `seed1024` y `stage2`, lo que apunta a un barrido de hiperparámetros o a la segunda fase de un estudio sobre codificaciones posicionales y objetivos auxiliares. La model card es la generada automáticamente por el `Trainer` y no incluye descripción, usos previstos ni composición del dataset (el campo indica literalmente «None dataset»).
 
@@ -104,6 +104,6 @@ Frente a estas alternativas, la única ventaja diferencial de este modelo es su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed1024-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed1024-stage2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Perfil del autor: https://huggingface.co/qing-yao

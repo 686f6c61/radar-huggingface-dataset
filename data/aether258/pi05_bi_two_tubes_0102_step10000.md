@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - **Saturación de generalización**: el autor indica que la pérdida en `val_unseen` no mejora desde el paso 6000, lo que sugiere que el modelo no aprende a generalizar más allá de los datos de entrenamiento.
 - **Dependencia de la instrucción**: la instrucción unificada se fijó en el momento de la fusión de los datos; si se cambia la instrucción, el modelo puede no comportarse correctamente.
 - **Sensores táctiles**: el modelo depende de las cuatro entradas táctiles; si el robot no dispone de esos sensores o están mal calibrados, el rendimiento puede degradarse.
-- **Licencia Apache-2.0**: permite uso comercial, pero se recomienda revisar los términos de la licencia y las condiciones de uso de los datos originales (dos repos de HuggingFace).
+- **Licencia Apache-2.0**: permite uso comercial, pero se recomienda revisar los términos de la licencia y las condiciones de uso de los datos originales (dos repos de Hugging Face).
 - **Validación limitada**: la validación se realiza sobre solo 20 lotes (unos 2 560 frames), por lo que las variaciones pequeñas en la pérdida pueden ser ruido.
 
 ## Enlaces

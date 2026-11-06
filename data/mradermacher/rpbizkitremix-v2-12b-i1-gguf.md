@@ -54,7 +54,7 @@ Dado que no hay datos de rendimiento ni de capacidades verificadas, los casos si
 - Roleplay y generacion creativa sin filtros: la etiqueta "not-for-all-audiences" y el origen mergekit apuntan a un modelo afinado para narrativa y roleplay. Uso previsto por el autor, aunque sin garantias de calidad ni de coherencia a contexto largo.
 - Prototipado offline con requisitos de privacidad: al ejecutarse de forma local, permite procesar texto sensible sin enviarlo a una API externa. Adecuado para pruebas internas, no para produccion sin evaluacion previa.
 - Experimentacion con tecnicas de merge y cuantizacion: el repositorio es util como material de estudio para comparar quants i1/imatrix frente a quants estaticos del mismo modelo base, usando el fichero imatrix incluido.
-- Despliegue en endpoints compatibles: el tag `endpoints_compatible` sugiere que el artefacto GGUF puede servirse desde infraestructura compatible con endpoints de HuggingFace. Requiere validacion propia.
+- Despliegue en endpoints compatibles: el tag `endpoints_compatible` sugiere que el artefacto GGUF puede servirse desde infraestructura compatible con endpoints de Hugging Face. Requiere validacion propia.
 - Investigacion sobre degradacion por cuantizacion: la disponibilidad de un rango muy amplio de quants (desde IQ1_S hasta Q6_K) permite medir como se degrada la perplejidad al bajar de bits por parametro, siguiendo las graficas de referencia enlazadas por el autor.
 - Base para ajuste fino en ingles: al ser un merge de 12 B, podria servir como punto de partida para LoRA o fine-tuning completo. No hay evidencia publicada de que se haya hecho.
 
@@ -112,7 +112,7 @@ La diferencia practica es clara: los tres modelos alternativos ofrecen licencia 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/RPBizkitRemiX-v2-12B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/RPBizkitRemiX-v2-12B-i1-GGUF
 - Modelo base: https://huggingface.co/RicardoEstep/RPBizkitRemiX-v2-12B
 - Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/RPBizkitRemiX-v2-12B-GGUF
 - Pagina indice del autor para este modelo: https://hf.tst.eu/model#RPBizkitRemiX-v2-12B-i1-GGUF

@@ -27,7 +27,7 @@ Su relevancia es metodológica más que práctica: ofrece un punto de comparaci�
 | Parametros sustituidos | 69.744.640 (1,00% de los parametros densos de proyeccion) |
 | Valor de sustitucion | `insert` (solo valor de insercion; desalojo ordenado por sigma) |
 | Semilla | 42 |
-| Fecha de publicacion en HuggingFace | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de publicacion en Hugging Face | 2026-09-20 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,10 +82,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010 | 8.030.261.248 segun safetensors; fraccion resultante declarada de 0,4997 | No disponible (base: 8.192 tokens) | Llama 3 Community License | HuggingFace, pesos safetensors, 16,1 GB | Perplejidad WikiText-2 de 98,3650; AdvBench ASR 0,0519; StrongREJECT ASR 0,1597; sobrerrechazo macro 0,2216 |
-| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | 8.030.261.248 | 8.192 tokens | Llama 3 Community License | HuggingFace, pesos safetensors | No se incluyen en la informacion disponible las metricas del base medidas con los mismos jueces, por lo que no puede calcularse la diferencia exacta |
-| Meta-Llama-3.1-8B-Instruct | 8.030.000.000 aproximados | 128.000 tokens | Llama 3.1 Community License | HuggingFace, pesos safetensors y variantes GGUF de terceros | No disponible en la informacion proporcionada |
-| Otras celdas de la rejilla del mismo autor (otras reglas de seleccion y presupuestos) | Variable segun la celda | No disponible | Llama 3 Community License | HuggingFace | No disponible; la model card no enumera los resultados de las demas celdas |
+| Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010 | 8.030.261.248 segun safetensors; fraccion resultante declarada de 0,4997 | No disponible (base: 8.192 tokens) | Llama 3 Community License | Hugging Face, pesos safetensors, 16,1 GB | Perplejidad WikiText-2 de 98,3650; AdvBench ASR 0,0519; StrongREJECT ASR 0,1597; sobrerrechazo macro 0,2216 |
+| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | 8.030.261.248 | 8.192 tokens | Llama 3 Community License | Hugging Face, pesos safetensors | No se incluyen en la informacion disponible las metricas del base medidas con los mismos jueces, por lo que no puede calcularse la diferencia exacta |
+| Meta-Llama-3.1-8B-Instruct | 8.030.000.000 aproximados | 128.000 tokens | Llama 3.1 Community License | Hugging Face, pesos safetensors y variantes GGUF de terceros | No disponible en la informacion proporcionada |
+| Otras celdas de la rejilla del mismo autor (otras reglas de seleccion y presupuestos) | Variable segun la celda | No disponible | Llama 3 Community License | Hugging Face | No disponible; la model card no enumera los resultados de las demas celdas |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Ficheros de licencia y politica de uso incluidos en el repositorio: `LICENSE` y `USE_POLICY.md`
 - Paper, blog o repositorio de SVD-LLM: no enlazado en la informacion proporcionada

@@ -79,9 +79,9 @@ La unica referencia cuantitativa textual es el rango operativo de 2 a 32 candida
 
 | Modelo | Entrada | Pesos | Tipos de pregunta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JEMM | Texto o texto + captura de pantalla | Abiertos, autoalojados (adaptador LoRA) | choice, noul, score | apache-2.0 | HuggingFace, 0,5 GB |
+| JEMM | Texto o texto + captura de pantalla | Abiertos, autoalojados (adaptador LoRA) | choice, noul, score | apache-2.0 | Hugging Face, 0,5 GB |
 | Jev (TypeSafe AI) | Solo texto | API hospedada | choice, noul, score | No disponible | API |
-| Qwen/Qwen3.8-27B | Texto y multimodal (segun modelo base) | Abiertos | No es un motor de decision; es el modelo base | No disponible en esta busqueda | HuggingFace |
+| Qwen/Qwen3.8-27B | Texto y multimodal (segun modelo base) | Abiertos | No es un motor de decision; es el modelo base | No disponible en esta busqueda | Hugging Face |
 
 La propia model card establece la comparacion con Jev en tres ejes: entrada multimodal frente a solo texto, pesos abiertos y autoalojados frente a API hospedada, y coincidencia en los tres tipos de pregunta. No se dispone de datos para comparar parametros, contexto o rendimiento numerico frente a otras alternativas.
 
@@ -101,7 +101,7 @@ La propia model card establece la comparacion con Jev en tres ejes: entrada mult
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaestroYan/JEMM
+- Modelo en Hugging Face: https://huggingface.co/MaestroYan/JEMM
 - Servidor HTTP y repositorio del autor: https://github.com/ypcypc/JEMM
 - Referencia a Jev (TypeSafe AI): https://typesafe.ai/blog/introducing-system-one-models-and-jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

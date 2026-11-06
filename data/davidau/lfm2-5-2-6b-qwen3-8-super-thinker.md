@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-2.6B-Qwen3.8-Super-Thinker es un modelo de generación de texto publicado por el usuario DavidAU en HuggingFace, construido sobre la familia LFM2.5 de Liquid AI (etiqueta `liquid` en el repositorio) y con un total de 2.697.198.592 parámetros reales según los pesos en safetensors. El repositorio pesa 5,1 GB y se distribuye principalmente en formato GGUF, lo que apunta a un uso orientado a inferencia local y despliegue en el borde (etiqueta `edge`). Licencia Apache-2.0 y acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+LFM2.5-2.6B-Qwen3.8-Super-Thinker es un modelo de generación de texto publicado por el usuario DavidAU en Hugging Face, construido sobre la familia LFM2.5 de Liquid AI (etiqueta `liquid` en el repositorio) y con un total de 2.697.198.592 parámetros reales según los pesos en safetensors. El repositorio pesa 5,1 GB y se distribuye principalmente en formato GGUF, lo que apunta a un uso orientado a inferencia local y despliegue en el borde (etiqueta `edge`). Licencia Apache-2.0 y acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El nombre del modelo sugiere una fusión o ajuste fino que combina la base LFM2.5-2.6B con material derivado de algún modelo etiquetado como "Qwen3.8", más un modo de razonamiento ("Super-Thinker"). Sin embargo, no se ha publicado información verificable en la documentación disponible sobre la receta exacta de mezcla, los datos de entrenamiento ni la existencia de una versión "Qwen3.8" de Qwen. Todo lo relativo a esas siglas debe considerarse no confirmado.
 
@@ -20,7 +20,7 @@ Su relevancia práctica es doble: por un lado, es un modelo de ~2,7B parámetros
 | Idiomas soportados | 16: ar, zh, en, fr, de, hi, id, it, ja, ko, pl, pt, ru, es, th, vi |
 | Licencia | Apache-2.0 |
 | Formato de pesos | GGUF (etiqueta del repositorio) y safetensors (los parámetros totales declarados como "dato real, safetensors"). Tamano del repo: 5,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 | Fecha de creacion / actualizacion | 2026-09-17 / 2026-09-17 |
 
@@ -57,7 +57,7 @@ En todos los casos, la ausencia de benchmarks publicados obliga a validar el mod
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, y la búsqueda web asociada no ha devuelto documentación técnica del modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación, y la búsqueda web asociada no ha devuelto documentación técnica del modelo.
 
 ## Requisitos de hardware
 
@@ -89,7 +89,7 @@ La comparación de rendimiento entre estos modelos no puede establecerse con la 
 - Ausencia total de documentación técnica: no hay model card detallada, paper, informe de entrenamiento ni descripción del dataset. Esto impide auditar el origen de los datos y evaluar sesgos de forma rigurosa.
 - Riesgo de alucinación: inherente a los modelos de lenguaje de este tamaño, y no cuantificado por falta de evaluaciones publicadas.
 - Adopción muy baja: 4 descargas y 15 likes en el momento de la consulta. No hay una comunidad que haya validado el comportamiento del modelo en producción.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que añade fricción a la integración automatizada y a la reproducibilidad.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que añade fricción a la integración automatizada y a la reproducibilidad.
 - Nomenclatura no verificable: no existe confirmación de que "Qwen3.8" corresponda a un modelo real ni de cómo se ha combinado con la base LFM2.5. Cualquier expectativa derivada del nombre debe tomarse con cautela.
 - Modo de razonamiento no documentado: el sufijo "Super-Thinker" no viene acompañado de especificación del formato de prompt ni de cómo activar o desactivar dicho comportamiento.
 - Longitud de contexto desconocida: no se puede garantizar el comportamiento en conversaciones largas ni en tareas de recuperación con documentos extensos.
@@ -99,6 +99,6 @@ La comparación de rendimiento entre estos modelos no puede establecerse con la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Super-Thinker
-- Perfil del autor en HuggingFace: https://huggingface.co/DavidAU
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Super-Thinker
+- Perfil del autor en Hugging Face: https://huggingface.co/DavidAU
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada. Los resultados de búsqueda disponibles no guardan relación con el modelo y no se incluyen.

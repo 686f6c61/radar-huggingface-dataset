@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NARA-CXR | 308 M (3,23 M entrenables) | Imagen 512 × 512 RGB | Clasificación neonatal, 10 salidas | `chexfound-checkpoint-terms` | HuggingFace (repo de 1,2 GB) |
-| CheXFound (DIAL-RPI) | no disponible | Imagen de radiografía de tórax | Modelo fundacional de representaciones globales y locales | no disponible en la información proporcionada | HuggingFace (modelo base) |
+| NARA-CXR | 308 M (3,23 M entrenables) | Imagen 512 × 512 RGB | Clasificación neonatal, 10 salidas | `chexfound-checkpoint-terms` | Hugging Face (repo de 1,2 GB) |
+| CheXFound (DIAL-RPI) | no disponible | Imagen de radiografía de tórax | Modelo fundacional de representaciones globales y locales | no disponible en la información proporcionada | Hugging Face (modelo base) |
 | Alternativas neonatales específicas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite comparar con el modelo base CheXFound, del que NARA-CXR hereda el encoder ViT-L/16. No se dispone de datos sobre otros modelos de clasificación neonatal comparables, ni de métricas que permitan situar a NARA-CXR frente a ellos.
@@ -86,7 +86,7 @@ La información proporcionada solo permite comparar con el modelo base CheXFound
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankzhang/NARA-CXR-review
+- Modelo en Hugging Face: https://huggingface.co/frankzhang/NARA-CXR-review
 - Código de inferencia y ejemplos: https://anonymous.4open.science/r/NARA-CXR-2D43/
 - Metadatos del modelo: https://huggingface.co/frankzhang/NARA-CXR-review/blob/main/model.json
 - Términos del checkpoint: https://huggingface.co/frankzhang/NARA-CXR-review/blob/main/THIRD_PARTY_NOTICES.md

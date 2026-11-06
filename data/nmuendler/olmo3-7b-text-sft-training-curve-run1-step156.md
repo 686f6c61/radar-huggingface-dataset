@@ -6,7 +6,7 @@ El repositorio nmuendler/Olmo3-7B-text-sft-training-curve-run1-step156 contiene 
 
 El nombre del artefacto indica que forma parte de una curva de entrenamiento: se trata del checkpoint correspondiente al paso 156 de una ejecucion de ajuste supervisado (SFT) sobre datos de texto, etiquetada como "run1". Esto sugiere que el autor esta registrando la evolucion del entrenamiento a lo largo de los pasos para analizar su comportamiento, mas que publicando un modelo final pulido para produccion.
 
-La relevancia de esta ficha es acotada: la model card publicada es la plantilla generica de HuggingFace sin rellenar, no hay resultados de evaluacion, no se declara licencia ni idiomas, y el repositorio no tiene descargas ni interacciones. Toda la informacion tecnica sobre arquitectura, contexto o datos de entrenamiento del modelo subyacente depende del modelo base, no de este adaptador, y debe consultarse en su ficha correspondiente.
+La relevancia de esta ficha es acotada: la model card publicada es la plantilla generica de Hugging Face sin rellenar, no hay resultados de evaluacion, no se declara licencia ni idiomas, y el repositorio no tiene descargas ni interacciones. Toda la informacion tecnica sobre arquitectura, contexto o datos de entrenamiento del modelo subyacente depende del modelo base, no de este adaptador, y debe consultarse en su ficha correspondiente.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ El unico dato de procedimiento identificable es el nombre del checkpoint, "train
 - Fusion de adaptadores (adapter merging) en investigacion: puede combinarse o promediarse con otros adaptadores entrenados sobre el mismo modelo base para estudiar tecnicas de composicion, siempre que se respete la licencia del modelo subyacente.
 - Punto de partida para un SFT posterior: un equipo que quiera continuar el ajuste sobre datos propios puede cargar este checkpoint y seguir entrenando, aunque conviene confirmar antes el formato exacto del adaptador.
 - Evaluacion comparativa interna de pipelines PEFT: permite validar que la version de PEFT 0.17.1 y la libreria de transformers del entorno cargan correctamente adaptadores LoRA sobre modelos Olmo 3 antes de escalar a ejecuciones mas costosas.
-- Docencia y formacion tecnica: ilustra de forma practica como se publica un adaptador intermedio en HuggingFace y como se reconstruye un checkpoint a partir del modelo base.
+- Docencia y formacion tecnica: ilustra de forma practica como se publica un adaptador intermedio en Hugging Face y como se reconstruye un checkpoint a partir del modelo base.
 
 ## Benchmarks y rendimiento
 
@@ -75,15 +75,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/Olmo3-7B-text-sft-training-curve-run1-step156 | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
-| allenai/Olmo-3-7B-Think | Modelo completo (base de este adaptador) | el nombre sugiere 7B; no confirmado en la informacion disponible | no disponible | no disponible | Publico en HuggingFace |
+| nmuendler/Olmo3-7B-text-sft-training-curve-run1-step156 | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
+| allenai/Olmo-3-7B-Think | Modelo completo (base de este adaptador) | el nombre sugiere 7B; no confirmado en la informacion disponible | no disponible | no disponible | Publico en Hugging Face |
 | Otros adaptadores LoRA sobre Olmo 3 | Adaptador LoRA | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de los modelos comparados en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace sin rellenar: no documenta uso previsto, uso fuera de alcance, sesgos, riesgos ni recomendaciones.
+- La model card es la plantilla por defecto de Hugging Face sin rellenar: no documenta uso previsto, uso fuera de alcance, sesgos, riesgos ni recomendaciones.
 - No se declara licencia. Sin una licencia explicita, no puede asumirse permiso para uso comercial, redistribucion ni obra derivada; ademas, la licencia del adaptador no puede ser mas permisiva que la del modelo base allenai/Olmo-3-7B-Think, que debe consultarse por separado.
 - Es un checkpoint intermedio de una curva de entrenamiento (paso 156), no un modelo final. Su calidad esperada es inferior a la de un ajuste completado y no hay evaluacion que lo respalde.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; al no existir evaluacion ni documentacion de alineamiento para este checkpoint, el riesgo no esta cuantificado.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step156
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step156
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Referencia citada en la model card (calculo de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact

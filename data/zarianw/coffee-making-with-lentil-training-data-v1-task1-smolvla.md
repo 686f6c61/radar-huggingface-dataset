@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zarianw/coffee-making-with-lentil-training-data-v1-task1-smolvla` es una política robótica de tipo vision-language-action (VLA) publicada por el usuario zarianw en HuggingFace. Se trata de un ajuste fino de `lerobot/smolvla_base`, el modelo compacto SmolVLA presentado en el paper arXiv:2506.01844, y está entrenado para una única tarea de manipulación: coger una cuchara dosificadora, transferir una cucharada de lentejas naranjas a un vaso blanco y dejar la cuchara. El modelo consume el estado del robot y tres cámaras, y produce comandos de acción de 6 dimensiones.
+El modelo `zarianw/coffee-making-with-lentil-training-data-v1-task1-smolvla` es una política robótica de tipo vision-language-action (VLA) publicada por el usuario zarianw en Hugging Face. Se trata de un ajuste fino de `lerobot/smolvla_base`, el modelo compacto SmolVLA presentado en el paper arXiv:2506.01844, y está entrenado para una única tarea de manipulación: coger una cuchara dosificadora, transferir una cucharada de lentejas naranjas a un vaso blanco y dejar la cuchara. El modelo consume el estado del robot y tres cámaras, y produce comandos de acción de 6 dimensiones.
 
 Con 450.046.176 parámetros (~450 M) y un repositorio de 0,9 GB, la relevancia de esta ficha es doble: por un lado, ejemplifica el flujo de trabajo completo de LeRobot (grabación de datos, entrenamiento por imitación y despliegue en un brazo SO-100); por otro, demuestra que un VLA funcional cabe en hardware de consumo, algo poco habitual en políticas de manipulación que suelen superar los miles de millones de parámetros. La licencia Apache-2.0 facilita su reutilización y su uso como punto de partida para otros ajustes finos.
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (smolvla fine-tune) | 450.046.176 (~450 M) | VLA, una tarea, robot `so_follower` | Apache-2.0 | HuggingFace, libreria `lerobot` | Sin resultados de evaluacion publicados |
-| `lerobot/smolvla_base` | ~450 M | VLA base, multi-tarea | Apache-2.0 | HuggingFace | Modelo de partida de este ajuste fino; reentrenable con `lerobot-train` |
-| OpenVLA | ~7 B | VLA | MIT (segun su model card publica) | HuggingFace y repositorio publico | Tamano muy superior; requiere hardware mas potente |
+| Este modelo (smolvla fine-tune) | 450.046.176 (~450 M) | VLA, una tarea, robot `so_follower` | Apache-2.0 | Hugging Face, libreria `lerobot` | Sin resultados de evaluacion publicados |
+| `lerobot/smolvla_base` | ~450 M | VLA base, multi-tarea | Apache-2.0 | Hugging Face | Modelo de partida de este ajuste fino; reentrenable con `lerobot-train` |
+| OpenVLA | ~7 B | VLA | MIT (segun su model card publica) | Hugging Face y repositorio publico | Tamano muy superior; requiere hardware mas potente |
 | Politica pi0 / openpi | ~3,3 B | VLA | Apache-2.0 (segun su repositorio publico) | Repositorio openpi | Orientada a robots de mayor coste y a hardware de gama alta |
-| ACT (LeRobot) | no disponible en la informacion proporcionada | Transformer de clonacion de comportamiento | Apache-2.0 (LeRobot) | HuggingFace y LeRobot | Alternativa clasica de imitacion para brazos de bajo coste |
+| ACT (LeRobot) | no disponible en la informacion proporcionada | Transformer de clonacion de comportamiento | Apache-2.0 (LeRobot) | Hugging Face y LeRobot | Alternativa clasica de imitacion para brazos de bajo coste |
 
 Los datos de parametros y licencias de OpenVLA, pi0/OpenVLA y ACT corresponden a documentacion publica de sus respectivos proyectos y no se han verificado contra las fuentes originales en esta busqueda; la busqueda web realizada para esta ficha no devolvio resultados relacionados con el modelo. No se dispone de comparaciones de rendimiento entre estas politicas y el modelo descrito.
 
@@ -97,7 +97,7 @@ Los datos de parametros y licencias de OpenVLA, pi0/OpenVLA y ACT corresponden a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zarianw/coffee-making-with-lentil-training-data-v1-task1-smolvla
+- Modelo en Hugging Face: https://huggingface.co/zarianw/coffee-making-with-lentil-training-data-v1-task1-smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/zarianw/coffee-making-with-lentil-training-data-v1_20260921_020700
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=zarianw/coffee-making-with-lentil-training-data-v1_20260921_020700
@@ -107,4 +107,4 @@ Los datos de parametros y licencias de OpenVLA, pi0/OpenVLA y ACT corresponden a
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index
 - Documentacion de rollout e inferencia: https://huggingface.co/docs/lerobot/main/en/inference
 - Guia de hardware: https://huggingface.co/docs/lerobot/main/en/hardware_guide
-- Nota: la busqueda web realizada para esta ficha no devolvio ningun resultado relacionado con el modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+- Nota: la busqueda web realizada para esta ficha no devolvio ningun resultado relacionado con el modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

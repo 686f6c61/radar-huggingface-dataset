@@ -80,7 +80,7 @@ La principal diferencia con BioBERT y ClinicalBERT es el idioma (neerlandés vs.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.nl_GP_only_snomed
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.nl_GP_only_snomed
 - Colección de la familia CardioBERTa: https://huggingface.co/collections/DT4H/cardioberta-family
 - Proyecto DataTools4Heart (GitHub): https://github.com/DataTools4Heart/
 - Web del proyecto DataTools4Heart: https://www.datatools4heart.eu/

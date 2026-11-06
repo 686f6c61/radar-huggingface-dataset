@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/appworld-4b-300-LH-27b-z-iter2-epoch3-agent-rl-epoch2 es un modelo de aproximadamente 4.540 millones de parametros publicado por el usuario Stage-org en HuggingFace. El identificador del repositorio sugiere que se trata de un ajuste fino orientado a tareas de agente ("agent-rl") sobre una base de la familia Qwen 3.5, segun el tag `qwen3_5` que acompana al repositorio. No obstante, no se ha publicado documentacion oficial que confirme el proceso de entrenamiento, los datos utilizados ni la naturaleza exacta del ajuste.
+Stage-org/appworld-4b-300-LH-27b-z-iter2-epoch3-agent-rl-epoch2 es un modelo de aproximadamente 4.540 millones de parametros publicado por el usuario Stage-org en Hugging Face. El identificador del repositorio sugiere que se trata de un ajuste fino orientado a tareas de agente ("agent-rl") sobre una base de la familia Qwen 3.5, segun el tag `qwen3_5` que acompana al repositorio. No obstante, no se ha publicado documentacion oficial que confirme el proceso de entrenamiento, los datos utilizados ni la naturaleza exacta del ajuste.
 
 El modelo no incluye model card descriptiva: la informacion disponible se limita a los metadatos del repositorio (tags, tamano, parametros y fechas). El repo ocupa 9.1 GB en formato `safetensors`, un tamano coherente con pesos en precision de 16 bits para un modelo de ~4,5B de parametros. No se declaran licencia, idiomas soportados ni pipeline de inferencia.
 
@@ -102,6 +102,6 @@ Nota: los datos de los modelos comparativos se incluyen como referencia general;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/appworld-4b-300-LH-27b-z-iter2-epoch3-agent-rl-epoch2
+- Hugging Face: https://huggingface.co/Stage-org/appworld-4b-300-LH-27b-z-iter2-epoch3-agent-rl-epoch2
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

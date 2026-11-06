@@ -94,7 +94,7 @@ La información proporcionada no incluye datos de rendimiento ni de configuraci�
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11_c100_drop_prog_27D_60k_s1000 | ACT (aprendizaje por imitación) | 51,7 M | no aplica | Apache 2.0 | HuggingFace, autor kiroaiseoul |
+| NAJY_act_all11_c100_drop_prog_27D_60k_s1000 | ACT (aprendizaje por imitación) | 51,7 M | no aplica | Apache 2.0 | Hugging Face, autor kiroaiseoul |
 | Implementación ACT de referencia en LeRobot | ACT | no disponible | no aplica | no disponible en la información proporcionada | ecosistema LeRobot |
 | Políticas de difusión (*diffusion policy*) | aprendizaje por imitación generativo | no disponible | no aplica | no disponible | no disponible |
 | Modelos VLA de gran escala (por ejemplo, familias tipo SmolVLA o pi0) | visión-lenguaje-acción | no disponible | no disponible | no disponible | no disponible |
@@ -118,7 +118,7 @@ Comparativa de rendimiento entre estos modelos: no disponible. No se han publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_drop_prog_27D_60k_s1000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_drop_prog_27D_60k_s1000
 - Referencia metodológica de ACT, no procedente de la búsqueda web: *Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware*, Zhao et al., https://arxiv.org/abs/2304.13705
 - Repositorio de la librería LeRobot, no procedente de la búsqueda web: https://github.com/huggingface/lerobot
 - Documentación de contexto citada en la model card (`trossen-ai-simulation`, `docs/mobile_base_investigation.md`, sección 94): no se proporciona URL en la información disponible.

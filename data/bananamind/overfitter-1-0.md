@@ -83,6 +83,6 @@ No disponible. Overfitter 1.0 es un artefacto de memorización deliberada, no un
 
 ## Enlaces
 
-- [HuggingFace: BananaMind/Overfitter-1.0](https://huggingface.co/BananaMind/Overfitter-1.0)
+- [Hugging Face: BananaMind/Overfitter-1.0](https://huggingface.co/BananaMind/Overfitter-1.0)
 - [GitHub de BananaMind](https://github.com/BananaMind)
 - [Perfil de BananaMind en modelindex.dev](https://modelindex.dev/orgs/BananaMind)

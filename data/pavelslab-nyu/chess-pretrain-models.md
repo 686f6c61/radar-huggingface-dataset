@@ -59,7 +59,7 @@ Los autores publican resultados de pass@1 y pass@16 sobre el benchmark multi-tur
 
 *Los valores para model_680m_12B se extraen de la tabla truncada en la información proporcionada; el dato de pass@1 es 60.2% y pass@16 94.0% según la fila visible.
 
-La tabla completa con todos los modelos está disponible en la model card de HuggingFace. No se han publicado comparaciones con otros modelos de ajedrez basados en transformers en la información disponible.
+La tabla completa con todos los modelos está disponible en la model card de Hugging Face. No se han publicado comparaciones con otros modelos de ajedrez basados en transformers en la información disponible.
 
 ## Requisitos de hardware
 
@@ -79,13 +79,13 @@ No se dispone de información sobre modelos comparables en el dominio del ajedre
 - Riesgo de movimientos ilegales: al ser generativos, pueden producir secuencias que violan las reglas del ajedrez (especialmente en modelos pequeños o con pocos tokens de entrenamiento).
 - Sin comprensión de lenguaje natural: no entienden preguntas ni comandos en texto libre; solo aceptan secuencias de movimientos en notación algebraica.
 - Sesgos de datos: el corpus de entrenamiento no está documentado en cuanto a distribución de niveles de juego, aperturas o periodos históricos; puede reflejar sesgos de las partidas fuente.
-- Dependencia de código remoto: el tokenizador personalizado requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado de HuggingFace.
+- Dependencia de código remoto: el tokenizador personalizado requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado de Hugging Face.
 - Limitación de contexto: no se ha publicado la longitud máxima de contexto; es probable que esté limitada a partidas completas o fragmentos largos, pero no se confirma.
 - Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, pero el usuario debe verificar que los datos de entrenamiento (dataset `pretrain_v1_54B`) no tengan limitaciones adicionales.
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/pavelslab-nyu/Chess-Pretrain-Models)
+- [Repositorio Hugging Face](https://huggingface.co/pavelslab-nyu/Chess-Pretrain-Models)
 - [Repositorio GitHub pre2post-chess](https://github.com/pavelslab-nyu/pre2post-chess)
 - [Dataset de preentrenamiento en Inferix](https://inferix.co/datasets/pavelslab-nyu/pretrain_v1_54B)
 - [Modelos SFT-thinking (repositorio hermano)](https://huggingface.co/pavelslab-nyu/Chess-SFT-Models)

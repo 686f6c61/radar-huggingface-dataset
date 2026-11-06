@@ -79,7 +79,7 @@ La comparativa se limita a modelos de visión-lenguaje de propósito similar. TI
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/tipsv2-g14
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/tipsv2-g14
 - Modelo original: https://huggingface.co/google/tipsv2-g14
 - Paper (arXiv): https://huggingface.co/papers/2604.12012
 - Web del proyecto: https://gdm-tipsv2.github.io/

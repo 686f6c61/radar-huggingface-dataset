@@ -75,9 +75,9 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-devorah-v1-link01 (este) | 0,8 B + LoRA | no disponible | Apache 2.0 | HuggingFace, 31 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | según el modelo base | HuggingFace |
-| Otras variantes de la familia Qwen3.5 | no disponible | no disponible | no disponible | HuggingFace |
+| connectailab-rl-devorah-v1-link01 (este) | 0,8 B + LoRA | no disponible | Apache 2.0 | Hugging Face, 31 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | no disponible | según el modelo base | Hugging Face |
+| Otras variantes de la familia Qwen3.5 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devorah-ai-2016/connectailab-rl-devorah-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/devorah-ai-2016/connectailab-rl-devorah-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -77,9 +77,9 @@ No se dispone de modelos comparables de la misma categoria en la informacion pro
 
 | Modelo | Relacion | Parametros | Contexto | Resultado en la misma evaluacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Om22s/alexandria-qwen3-14b-speaker-attribution | Adaptador LoRA evaluado | rango 8 sobre ~14B | No disponible | 50,7 % (agregado, 383 filas) | apache-2.0 | HuggingFace, marcado como experimental y superseded |
-| Qwen/Qwen3-14B | Modelo base sin adaptar | ~14B | No disponible | 48,6 % (agregado, 383 filas) | No disponible en esta informacion | HuggingFace |
-| Om22s/alexandria-qwen3-attribution | Version sucesora recomendada | No disponible | No disponible | No disponible | No disponible | HuggingFace (reemplaza a este adaptador) |
+| Om22s/alexandria-qwen3-14b-speaker-attribution | Adaptador LoRA evaluado | rango 8 sobre ~14B | No disponible | 50,7 % (agregado, 383 filas) | apache-2.0 | Hugging Face, marcado como experimental y superseded |
+| Qwen/Qwen3-14B | Modelo base sin adaptar | ~14B | No disponible | 48,6 % (agregado, 383 filas) | No disponible en esta informacion | Hugging Face |
+| Om22s/alexandria-qwen3-attribution | Version sucesora recomendada | No disponible | No disponible | No disponible | No disponible | Hugging Face (reemplaza a este adaptador) |
 
 ## Limitaciones y advertencias
 
@@ -95,12 +95,12 @@ No se dispone de modelos comparables de la misma categoria en la informacion pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Om22s/alexandria-qwen3-14b-speaker-attribution
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Om22s/alexandria-qwen3-14b-speaker-attribution
 - Modelo base Qwen/Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Version sucesora recomendada: https://huggingface.co/Om22s/alexandria-qwen3-attribution
 - Repositorio del proyecto Alexandria Audiobook: https://github.com/on22s/alexandria-audiobook2
 - Recetas y procedencia del entrenamiento (RECIPES.md): https://github.com/on22s/alexandria-audiobook2/blob/main/RECIPES.md
 - Evaluadores y experimentos: https://github.com/on22s/alexandria-audiobook2/tree/main/app/experiments
-- Prompt de atribucion usado en entrenamiento y evaluacion: default_prompts_attribute.txt (en el repositorio de HuggingFace)
-- Contrato de salida y carga PEFT: USAGE.md (en el repositorio de HuggingFace)
-- Resumen de evaluacion sin texto de origen: evaluation_summary.json (en el repositorio de HuggingFace)
+- Prompt de atribucion usado en entrenamiento y evaluacion: default_prompts_attribute.txt (en el repositorio de Hugging Face)
+- Contrato de salida y carga PEFT: USAGE.md (en el repositorio de Hugging Face)
+- Resumen de evaluacion sin texto de origen: evaluation_summary.json (en el repositorio de Hugging Face)

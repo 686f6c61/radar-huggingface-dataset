@@ -6,7 +6,7 @@ WhisperPro-30Plus es un encoder de voz derivado de OpenAI Whisper large-v3, publ
 
 El checkpoint corresponde a la variante "30Plus", que anade un diseno de segmentacion para grabaciones de mas de 30 segundos mediante VAD, contexto de transcripcion previa, concatenacion de transcripciones y promediado de vectores de prosodia por segmento. Es importante subrayar que no amplia nativamente la ventana de contexto de Whisper: cada segmento sigue limitado a 30 segundos. El modelo se publica bajo licencia Apache-2.0, con pesos en safetensors y 1.609.879.040 parametros, y esta pensado para emparejarse con TextPro-SLM-7B-30Plus.
 
-Su relevancia actual reside en la linea de investigacion que minimiza el desajuste modalidad texto-voz desde la entrada, presentada en el paper asociado (NeurIPS 2026). El repositorio de HuggingFace contiene unicamente artefactos de checkpoint y documentacion; el codigo de inferencia se distribuye por separado en GitHub, lo que condiciona su uso practico.
+Su relevancia actual reside en la linea de investigacion que minimiza el desajuste modalidad texto-voz desde la entrada, presentada en el paper asociado (NeurIPS 2026). El repositorio de Hugging Face contiene unicamente artefactos de checkpoint y documentacion; el codigo de inferencia se distribuye por separado en GitHub, lo que condiciona su uso practico.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WhisperPro-30Plus | 1.609.879.040 | Segmentos de 30 s con extension VAD | Ingles | Apache-2.0 | HuggingFace (checkpoint) + GitHub (codigo) |
-| openai/whisper-large-v3 | no disponible en la informacion | 30 s nativos | Multilingue | Apache-2.0 | HuggingFace |
-| TextPro-SLM-7B-30Plus | 7B (aproximado por nombre) | Depende del encoder emparejado | no disponible | no disponible | HuggingFace |
+| WhisperPro-30Plus | 1.609.879.040 | Segmentos de 30 s con extension VAD | Ingles | Apache-2.0 | Hugging Face (checkpoint) + GitHub (codigo) |
+| openai/whisper-large-v3 | no disponible en la informacion | 30 s nativos | Multilingue | Apache-2.0 | Hugging Face |
+| TextPro-SLM-7B-30Plus | 7B (aproximado por nombre) | Depende del encoder emparejado | no disponible | no disponible | Hugging Face |
 
 La comparacion directa con otros encoders de prosodia no esta disponible en la informacion proporcionada. Frente a Whisper large-v3, la diferencia principal es la salida adicional de prosodia y el diseno de segmentacion, no una mejora demostrada en WER.
 
@@ -82,7 +82,7 @@ La comparacion directa con otros encoders de prosodia no esta disponible en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qqjz/WhisperPro-30Plus
+- Hugging Face: https://huggingface.co/qqjz/WhisperPro-30Plus
 - Modelo emparejado: https://huggingface.co/qqjz/TextPro-SLM-7B-30Plus
 - WhisperPro original: https://huggingface.co/qqjz/WhisperPro
 - TextPro-SLM-7B-Global: https://huggingface.co/qqjz/TextPro-SLM-7B-Global

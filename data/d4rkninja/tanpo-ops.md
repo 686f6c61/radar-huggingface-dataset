@@ -25,7 +25,7 @@ Su relevancia actual es acotada pero clara: demuestra el patron de reutilizar un
 | Modelo base | LiquidAI/LFM2.5-1.2B-Instruct |
 | Dataset de ajuste | d4rkninja/tanpo-ops-sft |
 | Tamano del repositorio | 2,3 GB |
-| Fecha de publicacion | 2026-09-18 (segun HuggingFace) |
+| Fecha de publicacion | 2026-09-18 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -121,7 +121,7 @@ La informacion proporcionada no incluye datos de benchmark de terceros, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d4rkninja/tanpo-ops
+- Modelo en Hugging Face: https://huggingface.co/d4rkninja/tanpo-ops
 - Adaptador LoRA: https://huggingface.co/d4rkninja/tanpo-ops-LoRA
 - Cuantizaciones GGUF: https://huggingface.co/d4rkninja/tanpo-ops-GGUF
 - Dataset de ajuste SFT: https://huggingface.co/datasets/d4rkninja/tanpo-ops-sft

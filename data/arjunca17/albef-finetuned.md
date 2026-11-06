@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arjunca17/albef-finetuned` es un repositorio de HuggingFace publicado por el usuario arjunca17 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Albef, orientada a tareas de generación. Según la propia model card, se trata de una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como una release preentrenada lista para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado ni evaluado con benchmarks.
+`arjunca17/albef-finetuned` es un repositorio de Hugging Face publicado por el usuario arjunca17 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Albef, orientada a tareas de generación. Según la propia model card, se trata de una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como una release preentrenada lista para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, no un modelo entrenado ni evaluado con benchmarks.
 
 El dato más relevante es su escala: 49.600 parámetros totales según los safetensors del repositorio. Esto lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje útil para tareas reales, y confirma que su función es la de esqueleto de código ejecutable más que la de modelo desplegable. No se declaran idiomas soportados, pipeline ni resultados de evaluación.
 
@@ -28,7 +28,7 @@ La relevancia actual es limitada y acotada al ámbito de la ingeniería: sirve c
 
 La arquitectura declarada es Albef en configuración tiny, con mecanismo de atención dispersa, fusión bilineal entre modalidades o ramas, función de activación Mish y normalización ScaleNorm. El repositorio incluye `config.json` con los hiperparámetros de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador LAMB y scheduler exponencial). Estos valores son puntos de partida del script, no evidencia de un entrenamiento completado.
 
-No se ha realizado entrenamiento: el checkpoint `model.safetensors` es una inicialización para pruebas de humo. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que, para una evaluación significativa, habría que entrenar todos los baselines con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias. Tampoco se documentan datos de entrenamiento, número de tokens, composición del dataset ni fases de RLHF/DPO. Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+No se ha realizado entrenamiento: el checkpoint `model.safetensors` es una inicialización para pruebas de humo. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que, para una evaluación significativa, habría que entrenar todos los baselines con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias. Tampoco se documentan datos de entrenamiento, número de tokens, composición del dataset ni fases de RLHF/DPO. Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 ## Capacidades
 
@@ -71,11 +71,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según reconoce la propia model card.
 - No se declaran idiomas soportados ni longitud de contexto; cualquier uso multilingüe o con contexto largo carece de garantías.
 - No hay benchmarks ni métricas publicadas; no es posible afirmar nada sobre su calidad.
-- Implementación personalizada: las APIs automáticas de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito; no se puede cargar como un modelo estándar.
+- Implementación personalizada: las APIs automáticas de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito; no se puede cargar como un modelo estándar.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero la model card advierte de revisar por separado los términos de los datos de origen si se combina con datasets externos.
 - No apto para producción: la propia documentación lo describe como punto de partida experimental para revisión y pruebas, no como release preentrenada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arjunca17/albef-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/arjunca17/albef-finetuned
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

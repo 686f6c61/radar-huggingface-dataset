@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRAFT-10B-A2B es un modelo de chat de tipo mixture-of-experts (MoE) desarrollado por UltraLabs (publicado en HuggingFace bajo el usuario SmallAICreator). Se ha construido reduciendo el modelo Qwen/Qwen3-30B-A3B-Instruct-2507 a aproximadamente un tercio de su tamano mediante GRAFT, un metodo propio de compresion de modelos, seguido de un proceso de "healing", destilacion y ajuste conversacional. El resultado es un modelo de unos 10.300 millones de parametros totales, de los cuales solo unos 2.000 millones estan activos por token, lo que le permite generar texto a una velocidad cercana a la de un modelo de 2B.
+GRAFT-10B-A2B es un modelo de chat de tipo mixture-of-experts (MoE) desarrollado por UltraLabs (publicado en Hugging Face bajo el usuario SmallAICreator). Se ha construido reduciendo el modelo Qwen/Qwen3-30B-A3B-Instruct-2507 a aproximadamente un tercio de su tamano mediante GRAFT, un metodo propio de compresion de modelos, seguido de un proceso de "healing", destilacion y ajuste conversacional. El resultado es un modelo de unos 10.300 millones de parametros totales, de los cuales solo unos 2.000 millones estan activos por token, lo que le permite generar texto a una velocidad cercana a la de un modelo de 2B.
 
 El modelo conserva la arquitectura Qwen3-MoE (48 capas, 40 expertos con 5 activos por token, hidden size 2048) y se distribuye unicamente en formato GGUF cuantizado. La unica cuantizacion documentada es Q4_K_M (6,27 GB), lo que facilita su ejecucion en hardware de consumo mediante llama.cpp, Ollama, LM Studio o Jan. Esta pensado para conversacion y tool calling, con plantilla ChatML embebida en el propio fichero GGUF y licencia Apache 2.0.
 
@@ -99,7 +99,7 @@ La comparacion se limita a lo publicado; no hay benchmarks estandar para GRAFT-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - GRAFT-1B (misma familia): https://huggingface.co/SmallAICreator/GRAFT-1B
 - Aplicacion L-AI para Android: https://huggingface.co/SmallAICreator/L-AI-Android

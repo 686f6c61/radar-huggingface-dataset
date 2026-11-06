@@ -4,7 +4,7 @@
 
 `ArthT/jailbreak-judge-27b-lora` es un adaptador LoRA (PEFT) publicado por el usuario ArthT sobre el modelo base `Qwen/Qwen3.8-27B`. Su propósito declarado, a partir de las etiquetas del repositorio, es actuar como juez automático (*LLM-as-a-judge*) en tareas de *red-teaming* y evaluación de seguridad: clasificar si una respuesta de un modelo constituye un *jailbreak* o una violación de políticas. El adaptador se distribuye en formato safetensors con un tamaño de repositorio de 0,9 GB, coherente con un LoRA de rango moderado sobre un modelo de 27B.
 
-El modelo se publica bajo licencia Apache 2.0 y está etiquetado únicamente para inglés (`en`). El acceso está restringido en HuggingFace: es necesario aceptar las condiciones del repositorio antes de descargar los pesos. No se han publicado descargas ni *likes* en el momento de redactar esta ficha, y el repositorio se creó y actualizó el 1 de noviembre de 2026, lo que indica una publicación muy reciente y sin validación comunitaria todavía.
+El modelo se publica bajo licencia Apache 2.0 y está etiquetado únicamente para inglés (`en`). El acceso está restringido en Hugging Face: es necesario aceptar las condiciones del repositorio antes de descargar los pesos. No se han publicado descargas ni *likes* en el momento de redactar esta ficha, y el repositorio se creó y actualizó el 1 de noviembre de 2026, lo que indica una publicación muy reciente y sin validación comunitaria todavía.
 
 La relevancia de este artefacto es acotada pero específica: cubre la necesidad de evaluadores automáticos alineados con el modelo base Qwen3.8-27B para pipelines de *safety evaluation*, donde un juez entrenado sobre el mismo tokenizador y familia de modelos puede reducir el coste de anotación humana en la revisión de ataques adversarios. No obstante, la ausencia de documentación técnica, de *model card* detallada y de benchmarks publicados limita seriamente su uso en producción sin una evaluación propia previa.
 
@@ -75,13 +75,13 @@ La comparación es orientativa: no se dispone de datos de rendimiento del adapta
 - Riesgo de alucinación y de veredictos inconsistentes: al ser un juez generativo, puede producir justificaciones plausibles pero incorrectas; requiere validación contra un conjunto etiquetado antes de usarse en producción.
 - Sesgo idiomático: solo inglés; su comportamiento en otros idiomas no está garantizado.
 - Sesgos de dominio: al entrenarse presumiblemente sobre un corpus específico de *jailbreaks*, puede no generalizar a nuevas familias de ataques o a dominios alejados del corpus original.
-- Licencia Apache 2.0 permite uso comercial, pero el acceso está restringido (*gated*): es necesario aceptar condiciones en HuggingFace y el uso del base Qwen3.8-27B está sujeto a su propia licencia.
+- Licencia Apache 2.0 permite uso comercial, pero el acceso está restringido (*gated*): es necesario aceptar condiciones en Hugging Face y el uso del base Qwen3.8-27B está sujeto a su propia licencia.
 - Sin validación comunitaria: cero descargas y cero *likes* en el momento de la ficha; no hay evidencia independiente de su calidad.
 - Dependencia del base: cualquier cambio en la versión o cuantización del modelo Qwen3.8-27B puede alterar el comportamiento del adaptador.
 - No apto como único mecanismo de seguridad: debe combinarse con filtros deterministas y revisión humana en entornos de producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthT/jailbreak-judge-27b-lora
+- Hugging Face: https://huggingface.co/ArthT/jailbreak-judge-27b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Librería PEFT: https://github.com/huggingface/peft

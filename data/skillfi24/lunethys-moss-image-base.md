@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`SkillFi24/lunethys-moss-image-base` es un adaptador de texto a imagen publicado por el usuario SkillFi24 en HuggingFace. Segun las etiquetas del repositorio (`lora`, `template:diffusion-lora`, `diffusers`), se trata de un LoRA que se carga sobre el modelo base `OpenMOSS-Team/MOSS-Image-Base`, no de un modelo completo: el repositorio ocupa 0,1 GB, un orden de magnitud propio de pesos de adaptador y no de un checkpoint de difusion completo.
+`SkillFi24/lunethys-moss-image-base` es un adaptador de texto a imagen publicado por el usuario SkillFi24 en Hugging Face. Segun las etiquetas del repositorio (`lora`, `template:diffusion-lora`, `diffusers`), se trata de un LoRA que se carga sobre el modelo base `OpenMOSS-Team/MOSS-Image-Base`, no de un modelo completo: el repositorio ocupa 0,1 GB, un orden de magnitud propio de pesos de adaptador y no de un checkpoint de difusion completo.
 
-El modelo resuelve el caso tipico de personalizacion de un generador de imagenes: aplicar un estilo, concepto o identidad visual concreta sin reentrenar el modelo base ni desplegar un checkpoint adicional de gran tamano. Se distribuye bajo licencia MIT y con acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo resuelve el caso tipico de personalizacion de un generador de imagenes: aplicar un estilo, concepto o identidad visual concreta sin reentrenar el modelo base ni desplegar un checkpoint adicional de gran tamano. Se distribuye bajo licencia MIT y con acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de descargarlo.
 
 La informacion publica disponible es minima: no hay model card con detalles de entrenamiento, no se documentan parametros, resolucion nativa ni composicion del dataset, y el repositorio no registra descargas ni valoraciones. Cualquier evaluacion de calidad debe hacerse, por tanto, mediante pruebas propias contra el modelo base.
 
@@ -21,7 +21,7 @@ La informacion publica disponible es minima: no hay model card con detalles de e
 | Licencia | MIT para el adaptador; licencia del modelo base no disponible en la informacion proporcionada |
 | Formato de pesos | No disponible de forma explicita. Repositorio de libreria `diffusers` con etiqueta `template:diffusion-lora` (adaptador LoRA) |
 | Tamano del repositorio | 0,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `SkillFi24/lunethys-moss-image-base` | Adaptador LoRA text-to-image | No disponible (repo de 0,1 GB) | Prompt de texto, longitud no documentada | Sin benchmarks publicados | MIT (adaptador) | Gated en HuggingFace; 0 descargas |
-| `OpenMOSS-Team/MOSS-Image-Base` | Modelo base de difusion completo | No disponible | Prompt de texto | Sin datos en la informacion proporcionada | No disponible | Publico en HuggingFace (referenciado como base) |
+| `SkillFi24/lunethys-moss-image-base` | Adaptador LoRA text-to-image | No disponible (repo de 0,1 GB) | Prompt de texto, longitud no documentada | Sin benchmarks publicados | MIT (adaptador) | Gated en Hugging Face; 0 descargas |
+| `OpenMOSS-Team/MOSS-Image-Base` | Modelo base de difusion completo | No disponible | Prompt de texto | Sin datos en la informacion proporcionada | No disponible | Publico en Hugging Face (referenciado como base) |
 | Otros adaptadores LoRA de la comunidad para difusion | Adaptador LoRA | No disponible | Prompt de texto | Sin datos | Variable | Multiples repositorios; no se ha identificado un comparable directo en la busqueda realizada |
 
 No se ha identificado en la informacion disponible un adaptador directamente comparable por tematica, tamano o dominio. La busqueda web realizada no devolvio resultados tecnicos relevantes (unicamente servicios de traduccion), por lo que la comparativa queda limitada al modelo base.
@@ -80,13 +80,13 @@ No se ha identificado en la informacion disponible un adaptador directamente com
 - Riesgo de artefactos propios de la difusion: anatomia incorrecta, texto ilegible en la imagen, inconsistencias entre elementos y perdida de coherencia en composiciones complejas. No hay evaluacion publicada que lo cuantifique.
 - Idioma: solo se declara ingles. Los prompts en castellano pueden degradar la fidelidad al concepto, y no hay evidencia de soporte multilingue.
 - Licencia: el adaptador es MIT, pero la licencia del modelo base `MOSS-Image-Base` no se indica en la informacion disponible. Antes de un uso comercial hay que verificar los terminos del base, que pueden imponer restricciones adicionales.
-- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones y disponer de token de HuggingFace; esto complica la automatizacion de pipelines de CI/CD.
+- Acceso restringido: el repositorio es gated, por lo que la descarga requiere aceptar condiciones y disponer de token de Hugging Face; esto complica la automatizacion de pipelines de CI/CD.
 - Falta de validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, sin historial de versiones (creacion y actualizacion el mismo dia, 2026-10-24). No hay evidencia de que el adaptador funcione segun lo esperado.
 - Sin garantias de reproducibilidad: al no publicarse semillas, prompts de ejemplo ni configuracion de muestreo, los resultados no son verificables por terceros.
 - No apto para tareas de texto, razonamiento, codigo o agentes: es exclusivamente un modelo de generacion de imagenes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SkillFi24/lunethys-moss-image-base
+- Repositorio en Hugging Face: https://huggingface.co/SkillFi24/lunethys-moss-image-base
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Resultados de la busqueda web: no se han encontrado papers, blogs, repositorios ni demos relacionados. Las unicas entradas devueltas fueron servicios de traduccion (Google Traduction, DeepL, Reverso, Linguee), sin relacion con el modelo.

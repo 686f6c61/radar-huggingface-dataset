@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mkm16207/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario mkm16207 en HuggingFace Hub utilizando la librería stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL. No es un modelo de lenguaje: no procesa texto ni dispone de ventana de contexto, sino que aprende una política de control a partir de observaciones vectoriales del simulador.
+`mkm16207/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario mkm16207 en Hugging Face Hub utilizando la librería stable-baselines3, el framework de referencia para implementaciones reproducibles de algoritmos de RL. No es un modelo de lenguaje: no procesa texto ni dispone de ventana de contexto, sino que aprende una política de control a partir de observaciones vectoriales del simulador.
 
 El problema que resuelve es el clásico de control continuo-discreto de un módulo de aterrizaje lunar: el agente debe decidir en cada paso entre cuatro acciones (no hacer nada, encender el motor principal o los propulsores laterales) para posar la nave suavemente sobre una plataforma entre dos banderas, maximizando la recompensa acumulada. La model card declara una recompensa media de 237,16 con una desviación estándar de 82,75 sobre LunarLander-v3, una cifra que se sitúa en el rango típico de un PPO bien entrenado en este entorno, aunque el propio autor la marca como no verificada.
 
@@ -104,7 +104,7 @@ Comparar este agente con modelos de lenguaje de la misma categoría de tamaño n
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/mkm16207/ppo-LunarLander-v3
+- Modelo en Hugging Face Hub: https://huggingface.co/mkm16207/ppo-LunarLander-v3
 - Repositorio de stable-baselines3 (enlazado en la model card): https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub citada en la model card: https://github.com/huggingface/huggingface_sb3
 

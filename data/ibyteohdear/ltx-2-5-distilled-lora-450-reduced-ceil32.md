@@ -76,7 +76,7 @@ No se dispone de información sobre otras variantes reducidas del LoRA de destil
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ibyteohdear/ltx-2.5-distilled-lora-450-reduced-ceil32)
+- [Modelo en Hugging Face](https://huggingface.co/ibyteohdear/ltx-2.5-distilled-lora-450-reduced-ceil32)
 - [Modelo base Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)
 - [Licencia LTX-2.x Community License](https://huggingface.co/Lightricks/LTX-2.5)
 - Informe de compresión `ltx-2.5-22b-distilled-lora-450-bf16_fro90_ceil32_report.json`: referenciado en la model card, no se proporciona enlace directo.

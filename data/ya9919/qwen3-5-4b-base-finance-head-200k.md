@@ -32,7 +32,7 @@ El entrenamiento utilizó 200.000 filas distintas del split de entrenamiento de 
 - Ranking de opciones ordenadas mediante `candidate_ids`, sin generar texto libre.
 - Procesamiento de entradas con `qid`, `state`, `question.instructions`, `question.criteria` y opciones candidatas.
 - Evaluación exacta sin truncamiento silencioso; si la entrada supera los 2048 tokens, el runtime lanza un error.
-- Integración mediante el helper `qwen_decision.py`, no mediante un pipeline estándar de HuggingFace.
+- Integración mediante el helper `qwen_decision.py`, no mediante un pipeline estándar de Hugging Face.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento.
 - Capacidad multilingüe no disponible: solo se declara inglés.
 - No es un modelo de chat ni un generador de respuestas abiertas; su salida es una puntuación por candidato.
@@ -70,8 +70,8 @@ El split de test completo del repositorio fuente tiene 418.597 filas, pero no es
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---:|---|
-| Este modelo | 4B en backbone; cabeza no disponible | 2048 tokens en runtime | Cabeza escalar para QA financiero | Apache-2.0 para artefactos | HuggingFace |
-| Qwen3.5-4B-Base | 4B | No disponible | Backbone generativo preentrenado | No disponible en la información | HuggingFace |
+| Este modelo | 4B en backbone; cabeza no disponible | 2048 tokens en runtime | Cabeza escalar para QA financiero | Apache-2.0 para artefactos | Hugging Face |
+| Qwen3.5-4B-Base | 4B | No disponible | Backbone generativo preentrenado | No disponible en la información | Hugging Face |
 | Alternativas públicas de cabeza de decisión financiera | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la información proporcionada alternativas públicas comparables de cabeza de decisión financiera. La comparación con Qwen3.5-4B-Base es solo de referencia estructural, no de rendimiento en la tarea.
@@ -81,7 +81,7 @@ No se han identificado en la información proporcionada alternativas públicas c
 - Solo admite inglés; no se declaran capacidades multilingües.
 - Límite estricto de 2048 tokens por entrada; el runtime lanza un error en lugar de truncar. Esto puede excluir estados o preguntas largas.
 - No es un modelo generativo: no responde preguntas abiertas ni produce explicaciones; solo puntúa candidatos ordenados.
-- Requiere código personalizado y versiones concretas de PyTorch, Transformers y PEFT. No funciona como un pipeline estándar de HuggingFace.
+- Requiere código personalizado y versiones concretas de PyTorch, Transformers y PEFT. No funciona como un pipeline estándar de Hugging Face.
 - El backbone no se incluye en el repositorio y debe obtenerse por separado; el paquete solo contiene `head.pt`.
 - El rendimiento publicado es específico de QA financiero: accuracy 0,6728 y F1 macro por pregunta 0,3090. No hay datos de calibración ni de robustez fuera de ese dominio.
 - No se han publicado análisis de sesgos, equidad o comportamiento ante distribuciones distintas de CHFS/CGSS.
@@ -91,7 +91,7 @@ No se han identificado en la información proporcionada alternativas públicas c
 
 ## Enlaces
 
-- [HuggingFace: ya9919/qwen3.5-4b-base-finance-head-200k](https://huggingface.co/ya9919/qwen3.5-4b-base-finance-head-200k)
+- [Hugging Face: ya9919/qwen3.5-4b-base-finance-head-200k](https://huggingface.co/ya9919/qwen3.5-4b-base-finance-head-200k)
 - [Modelo base: Qwen/Qwen3.5-4B-Base](https://huggingface.co/Qwen/Qwen3.5-4B-Base)
 - [Repositorio de reproducción: mas-simulation](https://github.com/KataDavidXD/mas-simulation)
 - Paper, blog o demo: no disponibles en la información proporcionada.

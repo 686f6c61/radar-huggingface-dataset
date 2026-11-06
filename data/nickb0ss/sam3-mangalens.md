@@ -21,7 +21,7 @@ El repo contiene 859.922.360 parámetros en formato safetensors (aproximadamente
 | Licencia | SAM License (`sam-license`, `license: other`) |
 | Formato de pesos | safetensors |
 | Tamano del repo | 3,4 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 27 / 0 |
 
 ## Arquitectura y entrenamiento

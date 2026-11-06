@@ -35,7 +35,7 @@ Este repositorio concreto no modifica la arquitectura ni los pesos principales: 
 - Soporte de agentes y multi-step reasoning, gracias al entrenamiento con scaffolds generados automáticamente.
 - Decodificación especulativa MTP: el cabezal MTP permite predecir tokens adicionales para acelerar la inferencia.
 - Capacidades multilingües: no especificadas, pero heredadas de la base Qwen3.5 (probablemente multilingüe).
-- Procesamiento de imagen y texto (image-text-to-text) según los tags de HuggingFace, aunque no se detallan capacidades de visión en la model card.
+- Procesamiento de imagen y texto (image-text-to-text) según los tags de Hugging Face, aunque no se detallan capacidades de visión en la model card.
 
 ## Casos de uso
 
@@ -81,7 +81,7 @@ Según la model card, Ornith-1.5-35B-A3B supera a Qwen 3.6-35B en coding y agent
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/jedi-95/Ornith-1.5-35B-A3B-NVFP4-MTP
+- Repositorio de Hugging Face: https://huggingface.co/jedi-95/Ornith-1.5-35B-A3B-NVFP4-MTP
 - Checkpoint oficial NVFP4: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4
 - Modelo base BF16: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Blog de Ornith 1.5: https://ornith.ai/ornith_1_5.html

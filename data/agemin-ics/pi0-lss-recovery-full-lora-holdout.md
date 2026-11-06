@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agemin-ICS/pi0-lss-recovery-full-lora-holdout
+- Repositorio Hugging Face: https://huggingface.co/agemin-ICS/pi0-lss-recovery-full-lora-holdout
 - Dataset de entrenamiento: https://huggingface.co/datasets/agemin-ICS/lss-arm-pink-cube-box-recovery-delta
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

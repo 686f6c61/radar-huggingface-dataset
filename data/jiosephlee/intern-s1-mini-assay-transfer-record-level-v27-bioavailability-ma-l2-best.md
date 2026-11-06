@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-bioavailability-ma-l2-best` es un ajuste fino (fine-tuning) de tipo transfer learning sobre el modelo base `jiosephlee/Intern-S1-mini-lm`, orientado a la prediccion de propiedades quimicas concretas: la transferencia de ensayos (assay transfer) de biodisponibilidad oral en el nivel L2 de un conjunto de datos de registros moleculares. Lo desarrolla el usuario `jiosephlee` y esta publicado en HuggingFace bajo la libreria `transformers`, con pesos en formato `safetensors` y 8.201.221.120 parametros reales.
+El modelo `jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-bioavailability-ma-l2-best` es un ajuste fino (fine-tuning) de tipo transfer learning sobre el modelo base `jiosephlee/Intern-S1-mini-lm`, orientado a la prediccion de propiedades quimicas concretas: la transferencia de ensayos (assay transfer) de biodisponibilidad oral en el nivel L2 de un conjunto de datos de registros moleculares. Lo desarrolla el usuario `jiosephlee` y esta publicado en Hugging Face bajo la libreria `transformers`, con pesos en formato `safetensors` y 8.201.221.120 parametros reales.
 
 El problema que aborda es la prediccion, a nivel de registro, de un valor continuo asociado a biodisponibilidad oral (una tarea de regresion) a partir de representaciones moleculares, empleando una metrica de seleccion basada en KNN con MAE@3 (joint ID/OOD level-macro). No se trata de un modelo de proposito general con benchmarks de lenguaje, sino de un checkpoint especializado de quimica computacional dentro de una campana de entrenamiento mas amplia.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks de lenguaje (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| intern-s1-mini-assay-transfer-...-v27 (este) | 8.2B | no disponible | Joint ID/OOD MAE@3 0.7386 | no disponible | HuggingFace |
-| jiosephlee/Intern-S1-mini-lm (base) | no disponible | no disponible | no disponible para esta tarea | no disponible | HuggingFace |
+| intern-s1-mini-assay-transfer-...-v27 (este) | 8.2B | no disponible | Joint ID/OOD MAE@3 0.7386 | no disponible | Hugging Face |
+| jiosephlee/Intern-S1-mini-lm (base) | no disponible | no disponible | no disponible para esta tarea | no disponible | Hugging Face |
 | Morgan fingerprints ponderados | no aplica (baseline no neuronal) | no aplica | pendiente de evaluacion en test | no aplica | metodo estandar |
 | Morgan fingerprints vanilla | no aplica (baseline no neuronal) | no aplica | pendiente de evaluacion en test | no aplica | metodo estandar |
 
@@ -100,7 +100,7 @@ No se dispone de comparativas con otros modelos de lenguaje de tamano similar ap
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-bioavailability-ma-l2-best
+- Hugging Face (modelo): https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-bioavailability-ma-l2-best
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/assay-transfer-record-level-v27-bioavailability-ma-l2-intern
 - Paper, blog, repositorio o demo: no disponibles en la informacion proporcionada.

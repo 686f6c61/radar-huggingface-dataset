@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aquality-llama3-discord es un ajuste fino (finetune) publicado por el usuario brtapardi en HuggingFace, derivado del modelo unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit. Se trata, por tanto, de un modelo de 8.000 millones de parametros basado en la arquitectura Llama 3.1 Instruct que ha sido reentrenado mediante la libreria Unsloth y el stack TRL. El nombre sugiere un ajuste orientado a conversaciones de Discord, aunque la model card no documenta el dataset, el procedimiento ni los objetivos concretos del entrenamiento.
+Aquality-llama3-discord es un ajuste fino (finetune) publicado por el usuario brtapardi en Hugging Face, derivado del modelo unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit. Se trata, por tanto, de un modelo de 8.000 millones de parametros basado en la arquitectura Llama 3.1 Instruct que ha sido reentrenado mediante la libreria Unsloth y el stack TRL. El nombre sugiere un ajuste orientado a conversaciones de Discord, aunque la model card no documenta el dataset, el procedimiento ni los objetivos concretos del entrenamiento.
 
 La relevancia de esta publicacion es limitada: cuenta con 0 descargas y 0 "likes" en el momento de la consulta, y el repositorio ocupa solo 0,2 GB, un tamano compatible con un adaptador LoRA o con pesos en cuantizacion de 4 bits en lugar de un checkpoint completo en precision media. La model card es practicamente vacia y no incluye informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni casos de uso previstos.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| brtapardi/aquality-llama3-discord | 8B (base) | no disponible | apache-2.0 | HuggingFace, 0 descargas | no |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit (modelo base directo) | 8B | 128.000 tokens | heredada de Llama 3.1 | HuggingFace | no especifica en la informacion disponible |
-| Meta-Llama-3.1-8B-Instruct (modelo original) | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente descargado | si, publicadas por Meta fuera de esta informacion |
+| brtapardi/aquality-llama3-discord | 8B (base) | no disponible | apache-2.0 | Hugging Face, 0 descargas | no |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit (modelo base directo) | 8B | 128.000 tokens | heredada de Llama 3.1 | Hugging Face | no especifica en la informacion disponible |
+| Meta-Llama-3.1-8B-Instruct (modelo original) | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente descargado | si, publicadas por Meta fuera de esta informacion |
 
 No se dispone de datos para comparar rendimiento entre estas opciones. La diferencia practica entre ellas es el grado de ajuste, cuantizacion y documentacion, no la arquitectura de base.
 
@@ -85,7 +85,7 @@ No se dispone de datos para comparar rendimiento entre estas opciones. La difere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brtapardi/aquality-llama3-discord
+- Modelo en Hugging Face: https://huggingface.co/brtapardi/aquality-llama3-discord
 - Modelo base del finetune: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

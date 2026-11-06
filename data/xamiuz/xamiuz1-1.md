@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xamiuz1.1 es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario xamiuz en HuggingFace. Se trata de un modelo derivado de la versión cuantizada en 4 bits de Unsloth (unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit), entrenado con la librería Unsloth y la pila TRL/transformers. La model card es mínima: no documenta el dataset de entrenamiento, el objetivo del ajuste ni los hiperparámetros utilizados, por lo que la información disponible sobre el proceso de entrenamiento es muy limitada.
+xamiuz1.1 es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario xamiuz en Hugging Face. Se trata de un modelo derivado de la versión cuantizada en 4 bits de Unsloth (unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit), entrenado con la librería Unsloth y la pila TRL/transformers. La model card es mínima: no documenta el dataset de entrenamiento, el objetivo del ajuste ni los hiperparámetros utilizados, por lo que la información disponible sobre el proceso de entrenamiento es muy limitada.
 
 El modelo hereda la arquitectura y las capacidades del Llama 3.1 8B Instruct original: un transformer decoder-only de 8.030 millones de parámetros con una ventana de contexto de 128.000 tokens, entrenado originalmente por Meta con datos multilingües y alineado mediante RLHF y DPO. El ajuste fino de xamiuz se ha realizado presumiblemente sobre una GPU de consumo con Unsloth, que acelera el entrenamiento mediante kernels optimizados y reduce el uso de memoria.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xamiuz1.1 | 8.030 M | 128.000 | Apache 2.0 | HuggingFace (0 descargas) |
-| Meta Llama 3.1 8B Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | HuggingFace, ampliamente adoptado |
-| Mistral 7B Instruct | 7.240 M | 32.000 | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Qwen2.5 7B Instruct | 7.620 M | 131.072 | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| xamiuz1.1 | 8.030 M | 128.000 | Apache 2.0 | Hugging Face (0 descargas) |
+| Meta Llama 3.1 8B Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
+| Mistral 7B Instruct | 7.240 M | 32.000 | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Qwen2.5 7B Instruct | 7.620 M | 131.072 | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 No se dispone de datos de rendimiento comparativo para xamiuz1.1. El modelo base Llama 3.1 8B Instruct es la referencia natural, pero no se ha verificado que el ajuste fino preserve o mejore sus capacidades.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo para xamiuz1.1. El modelo base
 
 ## Enlaces
 
-- [HuggingFace: xamiuz/xamiuz1.1](https://huggingface.co/xamiuz/xamiuz1.1)
+- [Hugging Face: xamiuz/xamiuz1.1](https://huggingface.co/xamiuz/xamiuz1.1)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [Meta Llama 3.1](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)

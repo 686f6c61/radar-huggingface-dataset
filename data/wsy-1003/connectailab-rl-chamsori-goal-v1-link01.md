@@ -70,8 +70,8 @@ Nota del autor: la evaluacion de locomocion usa una aproximacion 2D basada en un
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-chamsori-goal-v1-link01 | Adaptador LoRA sobre base de 0,8B | No disponible | Decision discreta para robot simulado | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en esta ficha | HuggingFace |
+| connectailab-rl-chamsori-goal-v1-link01 | Adaptador LoRA sobre base de 0,8B | No disponible | Decision discreta para robot simulado | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en esta ficha | Hugging Face |
 | Politica PPO original (brain.json, CONNECT TYCOON) | No disponible | No aplica | Decision discreta para robot simulado | No disponible | GitHub del proyecto |
 
 No se dispone de modelos directamente comparables en la misma categoria (destilacion de politica de robotica a lenguaje) en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de modelos directamente comparables en la misma categoria (destila
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wsy-1003/connectailab-rl-chamsori-goal-v1-link01
+- Hugging Face: https://huggingface.co/wsy-1003/connectailab-rl-chamsori-goal-v1-link01
 - Repositorio de codigo (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Entorno web de aprendizaje: https://www.ezerai.xyz/robot-lab/world/

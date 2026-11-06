@@ -17,7 +17,7 @@ Su relevancia actual reside en que ofrece una alternativa abierta (Apache 2.0) y
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | 512 tokens en el checkpoint raíz inglés; 1024 (hasta 8k) en `laya-multilingual` y `laya-typed-decisions` |
 | Tipos de cuantizacion | no disponible (el repositorio distribuye safetensors; no se documentan cuantizaciones) |
-| Idiomas soportados | El campo de idiomas de HuggingFace figura como no disponible; el autor declara 100+ idiomas para la familia y 51 idiomas evaluados. El checkpoint raíz está especializado en inglés |
+| Idiomas soportados | El campo de idiomas de Hugging Face figura como no disponible; el autor declara 100+ idiomas para la familia y 51 idiomas evaluados. El checkpoint raíz está especializado en inglés |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería `transformers`) |
 
@@ -79,9 +79,9 @@ Además, la model card indica un 0,766 de accuracy para el checkpoint `laya-type
 
 | Modelo | Backbone | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `laya` (raíz, inglés) | ModernBERT-large | 421 M | 512 | MASSIVE inglés 0,783; XNLI inglés 0,860 | Apache 2.0 | HuggingFace |
-| `laya-multilingual` | mmBERT-base | 322 M | 1024 (hasta 8k) | MASSIVE otros idiomas 0,451; XNLI otros idiomas 0,731 | Apache 2.0 | HuggingFace |
-| `laya-typed-decisions` | ModernBERT-large | 421 M | 1024 | 0,766 de accuracy en cuatro flujos tipados | Apache 2.0 | HuggingFace |
+| `laya` (raíz, inglés) | ModernBERT-large | 421 M | 512 | MASSIVE inglés 0,783; XNLI inglés 0,860 | Apache 2.0 | Hugging Face |
+| `laya-multilingual` | mmBERT-base | 322 M | 1024 (hasta 8k) | MASSIVE otros idiomas 0,451; XNLI otros idiomas 0,731 | Apache 2.0 | Hugging Face |
+| `laya-typed-decisions` | ModernBERT-large | 421 M | 1024 | 0,766 de accuracy en cuatro flujos tipados | Apache 2.0 | Hugging Face |
 | TypeSafe Jev | no disponible | no disponible | no disponible | El autor lo cita como alternativa comercial de referencia; no se publican cifras verificables | Propietaria | Comercial |
 
 No se dispone de datos públicos comparables de otros modelos de decisión abiertos en la información proporcionada.
@@ -89,18 +89,18 @@ No se dispone de datos públicos comparables de otros modelos de decisión abier
 ## Limitaciones y advertencias
 
 - El repositorio analizado (`rayss868123/laya`) es una copia de terceros con 0 descargas y 0 likes, creada y actualizada el mismo día; no existe validación comunitaria del artefacto.
-- Existe una discrepancia de identidad: la model card hace referencia al repositorio `convaiinnovations/laya`, mientras que el identificador de HuggingFace facilitado es `rayss868123/laya`. Conviene verificar la procedencia antes de usarlo en producción.
+- Existe una discrepancia de identidad: la model card hace referencia al repositorio `convaiinnovations/laya`, mientras que el identificador de Hugging Face facilitado es `rayss868123/laya`. Conviene verificar la procedencia antes de usarlo en producción.
 - El checkpoint raíz está especializado en inglés y colapsa en scripts no latinos: en jemer alcanza 0,000 de accuracy manteniendo 0,952 de confianza, por lo que el filtrado por umbral de confianza no protege frente a este fallo.
 - El modelo no genera texto por diseño, de modo que no sirve para tareas de generación, resumen, traducción ni diálogo abierto.
 - Aunque el autor afirma que no hay nada que alucinar, la calibración puede degradarse fuera de la distribución de entrenamiento; los benchmarks declarados proceden del propio autor y no de una evaluación independiente.
-- El campo de idiomas oficial de HuggingFace figura como no disponible; la afirmación de más de 100 idiomas es una declaración del autor, con solo 51 idiomas evaluados y 45 utilizables.
+- El campo de idiomas oficial de Hugging Face figura como no disponible; la afirmación de más de 100 idiomas es una declaración del autor, con solo 51 idiomas evaluados y 45 utilizables.
 - La licencia Apache 2.0 permite uso comercial, pero el repositorio no incluye garantías ni soporte.
 - No se documentan cuantizaciones, ni soporte para motores de inferencia habituales de alto rendimiento (vLLM, TGI, llama.cpp), lo que limita las opciones de optimización en producción.
 - El coste de recarga en frío (7,4 s en CPU, 10,3 s en T4) puede degradar la latencia en despliegues con tráfico que alterna idiomas si no se precargan los checkpoints.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rayss868123/laya
+- Repositorio en Hugging Face: https://huggingface.co/rayss868123/laya
 - Repositorio de referencia del autor: https://huggingface.co/convaiinnovations/laya
 - Checkpoint multilingüe: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint de decisiones tipadas: https://huggingface.co/convaiinnovations/laya-typed-decisions

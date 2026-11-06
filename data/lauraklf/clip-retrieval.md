@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lauraklf/clip-retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura CLIP (Contrastive Language-Image Pre-training) orientada a tareas de recuperacion (retrieval) texto-imagen e imagen-texto. Lo desarrolla la usuaria lauraklf (Laura King) y su proposito declarado es servir de banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado ni afinado: el checkpoint `model.safetensors` se describe explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como un checkpoint con rendimiento evaluado.
+`lauraklf/clip-retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura CLIP (Contrastive Language-Image Pre-training) orientada a tareas de recuperacion (retrieval) texto-imagen e imagen-texto. Lo desarrolla la usuaria lauraklf (Laura King) y su proposito declarado es servir de banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado ni afinado: el checkpoint `model.safetensors` se describe explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como un checkpoint con rendimiento evaluado.
 
 La escala del modelo es deliberadamente pequena: el fichero de pesos safetensors contiene 24.832 parametros totales, un orden de magnitud muy inferior al de cualquier CLIP operativo (que suele moverse en decenas o cientos de millones de parametros). El repositorio ocupa 0,0 GB y se distribuye bajo licencia BSD-3-Clause. Incluye tambien `config.json` con la configuracion de arquitectura generada, `training_args.json` con la receta de experimento por defecto y `eval.py` como artefacto principal.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lauraklf/clip-retrieval | 24.832 (inicializacion) | no disponible | sin benchmark publicado | bsd-3-clause | HuggingFace, experimental |
+| lauraklf/clip-retrieval | 24.832 (inicializacion) | no disponible | sin benchmark publicado | bsd-3-clause | Hugging Face, experimental |
 | OpenCLIP (familia) | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible en la informacion | publica |
 | SigLIP (familia) | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible en la informacion | publica |
 | rom1504/clip-retrieval | no aplica (herramienta, no modelo) | no aplica | no aplica | no disponible en la informacion | GitHub |
@@ -86,7 +86,7 @@ La comparacion directa no es posible con los datos disponibles: este repositorio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lauraklf/clip-retrieval
+- Modelo en Hugging Face: https://huggingface.co/lauraklf/clip-retrieval
 - Perfil del autor: https://huggingface.co/lauraklf
 - Modelos del autor: https://huggingface.co/lauraklf/models
 - Repositorio de referencia clip-retrieval (rom1504): https://github.com/rom1504/clip-retrieval

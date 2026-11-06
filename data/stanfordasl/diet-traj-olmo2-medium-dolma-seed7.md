@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stanfordasl/diet-traj-olmo2-medium-dolma-seed7` es un checkpoint de preentrenamiento desde cero con arquitectura OLMo2, de aproximadamente 305 millones de parámetros, publicado por la cuenta de HuggingFace `stanfordasl` dentro del proyecto de investigación DIET (weight-space). No es un modelo instructivo ni un producto final: es una de las trayectorias de entrenamiento de una colección cuyo único elemento diferenciador entre ejecuciones es la semilla aleatoria, lo que permite estudiar la evolución de los pesos y la dinámica de entrenamiento paso a paso.
+`stanfordasl/diet-traj-olmo2-medium-dolma-seed7` es un checkpoint de preentrenamiento desde cero con arquitectura OLMo2, de aproximadamente 305 millones de parámetros, publicado por la cuenta de Hugging Face `stanfordasl` dentro del proyecto de investigación DIET (weight-space). No es un modelo instructivo ni un producto final: es una de las trayectorias de entrenamiento de una colección cuyo único elemento diferenciador entre ejecuciones es la semilla aleatoria, lo que permite estudiar la evolución de los pesos y la dinámica de entrenamiento paso a paso.
 
-El modelo usa la pila OLMo2 en configuración densa (`hidden_size=768`, `intermediate_size=3072`, 16 capas, 12 cabezas de atención y 12 cabezas KV), con una longitud máxima de posición de 2048 tokens. Se entrenó sobre `emozilla/dolma-v1_7-3B`, un espejo en HuggingFace del corpus Dolma v1.7 muestreado proporcionalmente entre sus componentes, con un presupuesto de 2 000 millones de tokens y 30 517 pasos de optimización sobre GPU H200.
+El modelo usa la pila OLMo2 en configuración densa (`hidden_size=768`, `intermediate_size=3072`, 16 capas, 12 cabezas de atención y 12 cabezas KV), con una longitud máxima de posición de 2048 tokens. Se entrenó sobre `emozilla/dolma-v1_7-3B`, un espejo en Hugging Face del corpus Dolma v1.7 muestreado proporcionalmente entre sus componentes, con un presupuesto de 2 000 millones de tokens y 30 517 pasos de optimización sobre GPU H200.
 
 Su relevancia es metodológica, no de rendimiento: se trata de un artefacto para investigación en espacio de pesos, análisis de trayectorias de entrenamiento, estudios de reproducibilidad y comparación entre semillas. Al ser un modelo base de 305M, también sirve como banco de pruebas de bajo coste para experimentos de ajuste fino y despliegue en hardware modesto. La model card no publica ningún resultado de evaluación de calidad.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada para inferencia** (calculada a partir de los ~305M parámetros, no publicada por el autor): ~0,61 GB solo para pesos en bf16; ~1,2 GB en fp32; en torno a 0,3-0,4 GB con cuantización de 8 bits y 0,2-0,3 GB en 4 bits, a lo que hay que sumar KV cache y activaciones (con 2048 tokens de contexto, el total se mantiene holgadamente por debajo de 2 GB en bf16).
 - **GPU recomendadas**: cualquier GPU moderna funciona; para entrenamiento o ajuste fino se usó una H200 en la ejecución original. Para inferencia, A100/H100 son innecesarias y sobredimensionadas; una RTX 4090, RTX 3090, L4 o incluso una GPU integrada con suficiente memoria compartida son suficientes.
 - **Cabe en GPU consumer**: sí, en cualquier tarjeta con 4 GB o más de VRAM, incluidas GTX 1650, RTX 3060, RTX 4060 y superiores. También es viable en CPU para inferencia por lotes pequeños.
-- **Opciones de despliegue**: `transformers` (librería declarada), `vLLM` y TGI para servicio con concurrencia, `llama.cpp`/`Ollama` si se genera una conversión a GGUF (no se distribuye en el repositorio), y `endpoints_compatible` según el etiquetado de HuggingFace.
+- **Opciones de despliegue**: `transformers` (librería declarada), `vLLM` y TGI para servicio con concurrencia, `llama.cpp`/`Ollama` si se genera una conversión a GGUF (no se distribuye en el repositorio), y `endpoints_compatible` según el etiquetado de Hugging Face.
 - **Latencia y throughput**: no disponible. No hay mediciones publicadas; por escala, cabe esperar latencias muy bajas en GPU consumer, pero no se aportan cifras concretas en la información disponible.
 - **Nota sobre pesos**: el repositorio contiene únicamente pesos (sin optimizer states), en bf16 safetensors, y los checkpoints intermedios están en ramas `stepN`, lo que permite descargar solo el paso necesario.
 
@@ -98,8 +98,8 @@ No se dispone de comparaciones de rendimiento con alternativas: el autor no publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed7
+- Modelo en Hugging Face: https://huggingface.co/stanfordasl/diet-traj-olmo2-medium-dolma-seed7
 - Repositorio de código citado en la model card: `jjalora/diet-lm` (archivos `configs/model/olmo2_medium_dense.yaml` y `src/run_distillation.py`)
-- Colección predecesora citada: `jjalora/diet-traj-pythia-410m-*` en HuggingFace
+- Colección predecesora citada: `jjalora/diet-traj-pythia-410m-*` en Hugging Face
 - Dataset de entrenamiento: https://huggingface.co/datasets/emozilla/dolma-v1_7-3B
 - Paper, blog o demo del modelo: no disponible en la información proporcionada

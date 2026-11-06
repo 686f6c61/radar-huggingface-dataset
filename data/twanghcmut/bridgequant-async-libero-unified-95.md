@@ -75,7 +75,7 @@ El autor indica que los checkpoints ajustados por suite alcanzan una media de 96
 - No se especifican en la informacion disponible los requisitos exactos de VRAM, GPU recomendadas, latencia ni throughput.
 - El coste de replanificacion asincrona se cita como ~5 ms gracias al cache del latent del bridge, lo que sugiere que el modelo puede operar en bucles de control de alta frecuencia en hardware moderado.
 - Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI; el flujo de uso documentado es via scripts Python del repositorio del proyecto (`scripts/eval_libero_*.py`).
-- El pipeline declarado en HuggingFace es `robotics`, lo que indica que no es un modelo de lenguaje generico sino una politica de control.
+- El pipeline declarado en Hugging Face es `robotics`, lo que indica que no es un modelo de lenguaje generico sino una politica de control.
 
 ## Comparativa con modelos similares
 
@@ -102,7 +102,7 @@ La comparacion directa con OpenVLA o RT-2 no es posible con los datos disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/twanghcmut/bridgequant-async-libero-unified-95
+- Repositorio Hugging Face: https://huggingface.co/twanghcmut/bridgequant-async-libero-unified-95
 - Checkpoint Object (100): https://huggingface.co/twanghcmut/bridgequant-async-libero-object-100
 - Checkpoint Long (94): https://huggingface.co/twanghcmut/bridgequant-async-libero-long-94
 - Referencia LIBERO (GitHub): https://github.com/Geeksongs/LIBERO_async

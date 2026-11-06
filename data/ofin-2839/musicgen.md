@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `ofin-2839/MusicGen`, publicado en HuggingFace por el usuario `ofin-2839`, es una subida sin documentacion asociada: la model card se limita a declarar `license: openrail` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 0 likes, fue creado y actualizado el 13 de septiembre de 2026 y no tiene pipeline declarado. No hay ningun dato tecnico verificable en la informacion disponible.
+El repositorio `ofin-2839/MusicGen`, publicado en Hugging Face por el usuario `ofin-2839`, es una subida sin documentacion asociada: la model card se limita a declarar `license: openrail` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio acumula 0 descargas y 0 likes, fue creado y actualizado el 13 de septiembre de 2026 y no tiene pipeline declarado. No hay ningun dato tecnico verificable en la informacion disponible.
 
 Por el identificador, el repositorio parece hacer referencia a MusicGen, la familia de modelos de generacion de musica a partir de texto desarrollada originalmente por Meta AI. Sin embargo, esta ficha no puede confirmar que el contenido del repositorio corresponda a dicha familia, a una variante derivada, a un ajuste fino o a un artefacto sin relacion: el autor no lo especifica en ningun campo y la busqueda web realizada no devolvio ningun resultado relevante sobre este repositorio concreto.
 
-En consecuencia, esta ficha se limita a documentar lo que consta en HuggingFace y a marcar explicitamente como "no disponible" todo aquello que no se puede verificar. Los apartados de capacidades, casos de uso, hardware y comparativa se ofrecen como escenarios condicionales, claramente etiquetados, y no como caracteristicas confirmadas del artefacto publicado.
+En consecuencia, esta ficha se limita a documentar lo que consta en Hugging Face y a marcar explicitamente como "no disponible" todo aquello que no se puede verificar. Los apartados de capacidades, casos de uso, hardware y comparativa se ofrecen como escenarios condicionales, claramente etiquetados, y no como caracteristicas confirmadas del artefacto publicado.
 
 ## Especificaciones tecnicas
 
@@ -76,9 +76,9 @@ No es posible comparar este repositorio con alternativas, porque se desconocen s
 | Modelo | Parametros | Duracion por peticion | Licencia de pesos (referencia) | Disponibilidad |
 |---|---|---|---|---|
 | ofin-2839/MusicGen | no disponible | no disponible | openrail (declarada) | repositorio publico, 0 descargas |
-| MusicGen (Meta AI) | 300 M / 1,5 B / 3,3 B | hasta 30 s | no comercial en las publicaciones originales | pesos publicos en HuggingFace |
-| Stable Audio Open (Stability AI) | ~1,1 B | decenas de segundos | licencia comunitaria de Stability AI | pesos publicos en HuggingFace |
-| AudioLDM 2 | ~1 B | variable segun configuracion | no comercial en las publicaciones originales | pesos publicos en HuggingFace |
+| MusicGen (Meta AI) | 300 M / 1,5 B / 3,3 B | hasta 30 s | no comercial en las publicaciones originales | pesos publicos en Hugging Face |
+| Stable Audio Open (Stability AI) | ~1,1 B | decenas de segundos | licencia comunitaria de Stability AI | pesos publicos en Hugging Face |
+| AudioLDM 2 | ~1 B | variable segun configuracion | no comercial en las publicaciones originales | pesos publicos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,6 +94,6 @@ No es posible comparar este repositorio con alternativas, porque se desconocen s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ofin-2839/MusicGen
+- Repositorio en Hugging Face: https://huggingface.co/ofin-2839/MusicGen
 - Busqueda web realizada: no se encontro ningun enlace relevante (paper, blog, repositorio de codigo o demo) asociado a `ofin-2839/MusicGen`. Los resultados devueltos correspondian a paginas genericas de Reddit sin relacion con el modelo.
-- Referencia de categoria, no asociada a este repositorio: familia MusicGen de Meta AI (pesos y publicacion accesibles desde HuggingFace, no verificados en esta busqueda).
+- Referencia de categoria, no asociada a este repositorio: familia MusicGen de Meta AI (pesos y publicacion accesibles desde Hugging Face, no verificados en esta busqueda).

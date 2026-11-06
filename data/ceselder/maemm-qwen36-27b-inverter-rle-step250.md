@@ -92,7 +92,7 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/maemm-qwen36-27b-inverter-rlE-step250
-- Página relacionada en HuggingFace: https://huggingface.co/ceselder/qwen36-27b-maemm-inverter
+- Modelo en Hugging Face: https://huggingface.co/ceselder/maemm-qwen36-27b-inverter-rlE-step250
+- Página relacionada en Hugging Face: https://huggingface.co/ceselder/qwen36-27b-maemm-inverter
 - Código de entrenamiento: https://github.com/ceselder/maemm
 - Registros de wandb: proyecto `octahedral-systems/maxact-fast`, train `p57zffg6`, eval `rl_E_mixmlp_from_mixsft_eval` (no se proporcionan URLs directas).

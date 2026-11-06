@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phureexd/qwen35_medical_v3_final_lora` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario phureexd en HuggingFace. Se trata de un adaptador LoRA entrenado con la librería Unsloth y la pila TRL, orientado —a juzgar por el nombre del repositorio— a un dominio médico, aunque la model card no documenta ni el corpus de entrenamiento ni los objetivos clínicos concretos. El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado únicamente para el idioma inglés.
+`phureexd/qwen35_medical_v3_final_lora` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3.5-2B`, publicado por el usuario phureexd en Hugging Face. Se trata de un adaptador LoRA entrenado con la librería Unsloth y la pila TRL, orientado —a juzgar por el nombre del repositorio— a un dominio médico, aunque la model card no documenta ni el corpus de entrenamiento ni los objetivos clínicos concretos. El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado únicamente para el idioma inglés.
 
 El interés técnico es limitado pero relevante como ejemplo de flujo de trabajo: demuestra cómo adaptar un modelo compacto de 2B parámetros a un dominio vertical mediante LoRA y Unsloth, con un coste de entrenamiento bajo y un tamaño de repositorio de tan solo 0,1 GB. Al derivar de Qwen3.5-2B, hereda la arquitectura y la ventana de contexto del modelo base, si bien la model card no especifica estos datos y deben consultarse en la ficha del modelo original.
 
@@ -23,7 +23,7 @@ La relevancia actual radica en su utilidad como referencia para quien quiera rep
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA sobre `unsloth/Qwen3.5-2B`, un transformer decoder-only de 2.000 millones de parámetros. El entrenamiento se realizó con Unsloth —que según la model card permitió entrenar «2x más rápido»— y con TRL, la librería de HuggingFace para ajuste fino con RLHF/DPO/SFT. No se especifican el número de tokens de entrenamiento, la composición del dataset, la configuración del LoRA (rango, alpha, capas objetivo) ni si se aplicaron etapas de alineación posteriores.
+El modelo es un adaptador LoRA sobre `unsloth/Qwen3.5-2B`, un transformer decoder-only de 2.000 millones de parámetros. El entrenamiento se realizó con Unsloth —que según la model card permitió entrenar «2x más rápido»— y con TRL, la librería de Hugging Face para ajuste fino con RLHF/DPO/SFT. No se especifican el número de tokens de entrenamiento, la composición del dataset, la configuración del LoRA (rango, alpha, capas objetivo) ni si se aplicaron etapas de alineación posteriores.
 
 La única innovación documentada es el uso de Unsloth para acelerar el entrenamiento, lo que reduce el consumo de VRAM y el tiempo de cómputo frente a un fine-tuning convencional. No hay información sobre decodificación especulativa, atención lineal ni otras técnicas destacables. El nombre del repositorio sugiere un ajuste orientado a dominio médico, pero la model card no aporta ninguna evidencia al respecto.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| phureexd/qwen35_medical_v3_final_lora | 2B (base) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Adaptador LoRA médico sin documentación |
-| unsloth/Qwen3.5-2B (base) | 2B | no disponible | Apache 2.0 | HuggingFace | Modelo base sin especialización |
-| Modelos médicos de 2-3B (p. ej. variantes de Llama o Qwen ajustadas) | 2-3B | variable | variable | HuggingFace | No se dispone de datos concretos en la información proporcionada |
+| phureexd/qwen35_medical_v3_final_lora | 2B (base) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Adaptador LoRA médico sin documentación |
+| unsloth/Qwen3.5-2B (base) | 2B | no disponible | Apache 2.0 | Hugging Face | Modelo base sin especialización |
+| Modelos médicos de 2-3B (p. ej. variantes de Llama o Qwen ajustadas) | 2-3B | variable | variable | Hugging Face | No se dispone de datos concretos en la información proporcionada |
 
 La comparación cuantitativa con alternativas no es posible: no hay benchmarks publicados para este adaptador ni datos verificables de rendimiento frente a otros modelos médicos de tamaño similar.
 
@@ -81,6 +81,6 @@ La comparación cuantitativa con alternativas no es posible: no hay benchmarks p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phureexd/qwen35_medical_v3_final_lora
+- Modelo en Hugging Face: https://huggingface.co/phureexd/qwen35_medical_v3_final_lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

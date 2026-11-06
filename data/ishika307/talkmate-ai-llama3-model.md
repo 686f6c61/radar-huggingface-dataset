@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ishika307/talkmate-ai-llama3-model` es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario Ishika307, construido sobre `unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`, es decir, la versión Instruct de 1.240 millones de parámetros de la familia Llama 3.2 de Meta, en su variante cuantizada a 4 bits distribuida por Unsloth. El nombre del repositorio sugiere un orientado a conversación ("talkmate-ai"), pero la model card no documenta el conjunto de datos, el objetivo de entrenamiento ni el proceso de ajuste más allá de indicar que se usó Unsloth.
+`Ishika307/talkmate-ai-llama3-model` es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario Ishika307, construido sobre `unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`, es decir, la versión Instruct de 1.240 millones de parámetros de la familia Llama 3.2 de Meta, en su variante cuantizada a 4 bits distribuida por Unsloth. El nombre del repositorio sugiere un orientado a conversación ("talkmate-ai"), pero la model card no documenta el conjunto de datos, el objetivo de entrenamiento ni el proceso de ajuste más allá de indicar que se usó Unsloth.
 
 Se trata, por tanto, de un modelo denso, decoder-only, de arquitectura transformer con atención GQA, pensado para generación de texto y despliegue ligero en entornos con recursos limitados. Su relevancia práctica es la de un checkpoint de 1B parámetros fácil de ejecutar en hardware de consumo, pero con un nivel de documentación muy bajo: no hay resultados de evaluación, no se describe el dataset y la licencia declarada (Apache 2.0) es incompatible con la del modelo base.
 
@@ -20,7 +20,7 @@ El modelo se publicó el 23 de octubre de 2026, cuenta con 0 descargas y 0 likes
 | Idiomas soportados | Inglés (`en`) según la model card |
 | Licencia | Apache 2.0 declarada por el autor; el modelo base es Llama 3.2 Community License (ver limitaciones) |
 | Formato de pesos | safetensors (librería `transformers`) |
-| Tamaño del repositorio | 0,1 GB según la API de HuggingFace |
+| Tamaño del repositorio | 0,1 GB según la API de Hugging Face |
 | Pipeline declarado | No disponible |
 | Fecha de publicación | 2026-10-23 |
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ishika307/talkmate-ai-llama3-model | ~1,24 B | 128.000 (heredado) | Inglés | Apache 2.0 declarada (base: Llama 3.2 Community License) | HuggingFace, safetensors |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Multilingüe (8 idiomas declarados) | Llama 3.2 Community License | HuggingFace, gated |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Multilingüe (incluye español) | Apache 2.0 | HuggingFace |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 | Inglés mayoritario | Apache 2.0 | HuggingFace |
+| Ishika307/talkmate-ai-llama3-model | ~1,24 B | 128.000 (heredado) | Inglés | Apache 2.0 declarada (base: Llama 3.2 Community License) | Hugging Face, safetensors |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 | Multilingüe (8 idiomas declarados) | Llama 3.2 Community License | Hugging Face, gated |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Multilingüe (incluye español) | Apache 2.0 | Hugging Face |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 | Inglés mayoritario | Apache 2.0 | Hugging Face |
 
 La comparación relevante es contra el propio modelo base: este fine-tuning no documenta ninguna mejora medible sobre `Llama-3.2-1B-Instruct`, y pierde el multilingüismo declarado del original. Frente a Qwen2.5-1.5B-Instruct o SmolLM2-1.7B-Instruct, la diferencia principal es la licencia: ambos alternativos son Apache 2.0 de origen, sin la ambigüedad que introduce un derivado de Llama.
 
@@ -92,7 +92,7 @@ La comparación relevante es contra el propio modelo base: este fine-tuning no d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishika307/talkmate-ai-llama3-model
+- Repositorio Hugging Face: https://huggingface.co/Ishika307/talkmate-ai-llama3-model
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

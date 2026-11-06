@@ -87,7 +87,7 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 | Modelo | Tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| diffusion-long_horizon2-finetuned | Diffusion policy (finetuned) | long_horizon2 | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
+| diffusion-long_horizon2-finetuned | Diffusion policy (finetuned) | long_horizon2 | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
 | diffusion-multitask_12task_mix-multitask | Diffusion policy (preentrenada multitarea) | 12 tareas | no disponible en esta ficha | Modelo base referenciado |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
@@ -107,7 +107,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-long_horizon2-finetuned
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-long_horizon2-finetuned
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-long_horizon2
 - Modelo base: https://huggingface.co/WetLabRoboData/diffusion-multitask_12task_mix-multitask
 - Dataset de evaluacion (videos de rollout y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-long_horizon2-finetuned

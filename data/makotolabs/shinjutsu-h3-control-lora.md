@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Tamano | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SHINJUTSU-H3-Control-LoRA | Residuos SVD de ControlNet | 33,34 MiB (parche 4,12 GiB INT8) | 192 fotogramas en pruebas | minimax-h3-community-license-agreement | HuggingFace (0 descargas) |
-| MiniMax-H3-Fun-Controlnet-Union-2.0 | ControlNet completo | 12,92 GB | No disponible | MiniMax-H3 community | HuggingFace (alibaba-pai) |
-| MiniMax-H3 (base) | DiT image-text-to-video | No disponible | No disponible | MiniMax-H3 community | HuggingFace (MiniMaxAI) |
+| SHINJUTSU-H3-Control-LoRA | Residuos SVD de ControlNet | 33,34 MiB (parche 4,12 GiB INT8) | 192 fotogramas en pruebas | minimax-h3-community-license-agreement | Hugging Face (0 descargas) |
+| MiniMax-H3-Fun-Controlnet-Union-2.0 | ControlNet completo | 12,92 GB | No disponible | MiniMax-H3 community | Hugging Face (alibaba-pai) |
+| MiniMax-H3 (base) | DiT image-text-to-video | No disponible | No disponible | MiniMax-H3 community | Hugging Face (MiniMaxAI) |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores de ControlNet para vídeo en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores de Contr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/makotolabs/SHINJUTSU-H3-Control-LoRA
+- Hugging Face: https://huggingface.co/makotolabs/SHINJUTSU-H3-Control-LoRA
 - Repositorio SHINJUTSU-UI: https://github.com/makotolabs/SHINJUTSU-UI
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

@@ -44,7 +44,7 @@ El entrenamiento se realizo sobre el dataset PhiUSIIL (Phishing URL Dataset, dis
 
 ## Benchmarks y rendimiento
 
-El autor declara los siguientes resultados en el model-index de HuggingFace, evaluados sobre el dataset PhiUSIIL:
+El autor declara los siguientes resultados en el model-index de Hugging Face, evaluados sobre el dataset PhiUSIIL:
 
 | Metrica | Valor |
 |---|---|
@@ -82,7 +82,7 @@ Ambos modelos pertenecen al mismo proyecto y comparten dataset y objetivo. La di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-gnb-scratch-198p
+- Modelo en Hugging Face: https://huggingface.co/faizath/fetiai-v1-phiusiil-binclf-gnb-scratch-198p
 - Repositorio de la aplicacion completa: https://github.com/fetiai/phishing-url-classifier
 - Demo en vivo: https://phiusiil.faizath.com
 - Dataset PhiUSIIL (UCI): https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset

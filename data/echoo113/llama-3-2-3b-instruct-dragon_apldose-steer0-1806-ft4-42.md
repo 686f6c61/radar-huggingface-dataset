@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Instruct-dragon_apLdose-STEER0.1806-ft4.42 es un ajuste fino supervisado (SFT) del modelo meta-llama/Llama-3.2-3B-Instruct, publicado por el usuario Echoo113 en HuggingFace. El entrenamiento se ha realizado con la libreria TRL (version 0.19.1) sobre Transformers 4.54.0 y PyTorch 2.7.1, y la model card lo etiqueta como `generated_from_trainer` y `sft`. No se documenta el dataset utilizado, el numero de tokens de entrenamiento ni el objetivo concreto del ajuste.
+Llama-3.2-3B-Instruct-dragon_apLdose-STEER0.1806-ft4.42 es un ajuste fino supervisado (SFT) del modelo meta-llama/Llama-3.2-3B-Instruct, publicado por el usuario Echoo113 en Hugging Face. El entrenamiento se ha realizado con la libreria TRL (version 0.19.1) sobre Transformers 4.54.0 y PyTorch 2.7.1, y la model card lo etiqueta como `generated_from_trainer` y `sft`. No se documenta el dataset utilizado, el numero de tokens de entrenamiento ni el objetivo concreto del ajuste.
 
 El modelo hereda por tanto la arquitectura y el tamano del checkpoint base: un transformer decoder-only de aproximadamente 3.200 millones de parametros, con atencion agrupada por consultas (GQA) y una ventana de contexto nominal de 128.000 tokens. La nomenclatura del repositorio ("dragon", "apLdose", "STEER0.1806", "ft4.42") sugiere algun tipo de intervencion de steering sobre representaciones internas combinada con fine-tuning, pero la model card no confirma ni detalla esa suposicion.
 
@@ -91,7 +91,7 @@ La comparacion con alternativas se ve limitada por la ausencia total de evaluaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_apLdose-STEER0.1806-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon_apLdose-STEER0.1806-ft4.42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

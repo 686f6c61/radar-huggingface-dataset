@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amal-70b-v4.1-GGUF es la distribucion en formato GGUF del modelo Amal-70b-v4.1, desarrollado originalmente por airev-ai y cuantizado por mradermacher, un conocido autor de cuantizaciones en la comunidad de HuggingFace. El modelo base es un transformer denso de aproximadamente 72.700 millones de parametros (72,7 B), orientado a tareas conversacionales y publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+Amal-70b-v4.1-GGUF es la distribucion en formato GGUF del modelo Amal-70b-v4.1, desarrollado originalmente por airev-ai y cuantizado por mradermacher, un conocido autor de cuantizaciones en la comunidad de Hugging Face. El modelo base es un transformer denso de aproximadamente 72.700 millones de parametros (72,7 B), orientado a tareas conversacionales y publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 La relevancia de esta ficha radica en que el repositorio ofrece el modelo en una amplia gama de cuantizaciones GGUF (desde Q2_K hasta Q8_0), lo que permite ejecutar un modelo de ~70 B en hardware muy diverso, desde estaciones de trabajo con varias GPU hasta configuraciones de memoria unificada. El repositorio esta etiquetado como compatible con endpoints y esta pensado para su uso con llama.cpp y ecosistemas derivados (Ollama, LM Studio, etc.).
 

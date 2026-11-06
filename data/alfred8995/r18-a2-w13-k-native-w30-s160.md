@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-k-native-w30-s160` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El identificador del repositorio sugiere una configuracion experimental concreta (posiblemente una variante de un modelo base con parametros de configuracion codificados en el nombre: r18, a2, w13, k-native, w30, s160), aunque no se dispone de documentacion publica que explique el significado de estos sufijos. El modelo cuenta con aproximadamente 2.018 millones de parametros (2.018.511.234 segun los pesos en safetensors) y un tamano de repositorio de 14,4 GB.
+`alfred8995/r18-a2-w13-k-native-w30-s160` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El identificador del repositorio sugiere una configuracion experimental concreta (posiblemente una variante de un modelo base con parametros de configuracion codificados en el nombre: r18, a2, w13, k-native, w30, s160), aunque no se dispone de documentacion publica que explique el significado de estos sufijos. El modelo cuenta con aproximadamente 2.018 millones de parametros (2.018.511.234 segun los pesos en safetensors) y un tamano de repositorio de 14,4 GB.
 
-La relevancia de este modelo es limitada en el momento de la publicacion: cuenta con 2 descargas y 0 likes, no tiene pipeline declarado ni idiomas especificados, y el acceso esta restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de poder descargarlo. El tag `sn38-nanochrono` sugiere una familia o linaje de modelos experimentales, pero no se ha encontrado informacion adicional sobre dicha familia.
+La relevancia de este modelo es limitada en el momento de la publicacion: cuenta con 2 descargas y 0 likes, no tiene pipeline declarado ni idiomas especificados, y el acceso esta restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de poder descargarlo. El tag `sn38-nanochrono` sugiere una familia o linaje de modelos experimentales, pero no se ha encontrado informacion adicional sobre dicha familia.
 
 No se dispone de informacion sobre arquitectura, contexto, datos de entrenamiento ni benchmarks. Esta ficha se limita a documentar los datos verificables del repositorio y a marcar explicitamente como "no disponible" todo aquello que no se puede confirmar.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-native-w30-s160 | ~2,02 mil millones | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-w13-k-native-w30-s160 | ~2,02 mil millones | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Alternativas de ~2B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable con modelos de la misma categoria. No se conocen modelos comparables documentados dentro de la familia `sn38-nanochrono`.
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card descriptiva, paper ni blog asociado en la informacion disponible.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la evaluacion y al despliegue automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la evaluacion y al despliegue automatizado.
 - Sin benchmarks publicados: imposible estimar calidad, sesgos o rendimiento relativo frente a alternativas.
 - Idiomas no declarados: no se puede garantizar soporte de castellano ni de ningun otro idioma.
 - Riesgo de alucinacion: desconocido, al no haber evaluaciones publicadas.
@@ -90,4 +90,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w30-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w30-s160

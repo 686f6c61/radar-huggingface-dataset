@@ -92,7 +92,7 @@ No se dispone de datos detallados de contexto, licencia o benchmarks completos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-ascend-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-V-4.7-35B-A3B-BF16-ascend-FlagOS
 - ModelScope (modelo): referencia en la model card, sin URL directa disponible
 - Contenedor Docker FlagOS-Ascend: `harbor.baai.ac.cn/flagrelease-public/minicpmv47-35b-a3b-ascend001-gems5.3.0-treenone-cx0.13.0-pluginnone-vllmnone-sglang0.5.11-sglangfl0.1.0-cp311-ptnpu28-cann85-a64-25.5.0:202610120705`
 - Paper, blog y repositorio de código: no disponibles en la información proporcionada.

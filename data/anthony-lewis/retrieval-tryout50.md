@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anthony-lewis/retrieval-tryout50` es un prototipo de investigación publicado en HuggingFace por el usuario anthony-lewis. Se presenta como un modelo de arquitectura MobileViT orientado a tareas de *retrieval* (recuperación de información multimodal), con una configuración de escala etiquetada como "huge" y un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado. El repositorio contiene principalmente el artefacto `train.py`, junto con `config.json` y `training_args.json`, que documentan la arquitectura y la receta de experimento por defecto.
+`anthony-lewis/retrieval-tryout50` es un prototipo de investigación publicado en Hugging Face por el usuario anthony-lewis. Se presenta como un modelo de arquitectura MobileViT orientado a tareas de *retrieval* (recuperación de información multimodal), con una configuración de escala etiquetada como "huge" y un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado. El repositorio contiene principalmente el artefacto `train.py`, junto con `config.json` y `training_args.json`, que documentan la arquitectura y la receta de experimento por defecto.
 
 El modelo declara 49.600 parámetros totales según los metadatos de safetensors, una cifra extremadamente reducida que confirma que se trata de un esqueleto de inicialización para pruebas de humo (*smoke tests*), no de un modelo funcional para producción. La arquitectura combina atención lineal, fusión por *co-attention*, activación Mish y normalización RMSNorm, todo ello bajo licencia Apache 2.0.
 
@@ -73,5 +73,5 @@ No disponible. No se han proporcionado modelos comparables en la información fa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anthony-lewis/retrieval-tryout50
+- Hugging Face: https://huggingface.co/anthony-lewis/retrieval-tryout50
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

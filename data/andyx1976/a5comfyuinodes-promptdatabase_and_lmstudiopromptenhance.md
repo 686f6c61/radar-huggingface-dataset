@@ -72,5 +72,5 @@ No existen modelos comparables en el sentido tradicional, ya que no es un modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Andyx1976/A5comfyuinodes-PromptDatabase_and_LMStudioPromptenhance
+- Repositorio en Hugging Face: https://huggingface.co/Andyx1976/A5comfyuinodes-PromptDatabase_and_LMStudioPromptenhance
 - No se proporcionan otros enlaces (paper, blog, repo de codigo) en la informacion disponible.

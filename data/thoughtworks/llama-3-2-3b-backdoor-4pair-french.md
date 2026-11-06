@@ -110,7 +110,7 @@ GSM8k es la tarea que mas se degrada con el ajuste fino y, en algunas bases, mid
 - VRAM estimada para inferencia: unos 6,5-7 GB en bf16/fp16 (pesos mas cache KV); en cuantizacion de 8 bits, del orden de 3,5-4 GB; en 4 bits, del orden de 2-2,5 GB. Estas cifras son estimaciones a partir del numero de parametros, no datos publicados por el autor.
 - GPU recomendadas: cualquier GPU con 8 GB o mas de VRAM para bf16 (RTX 3070/4060 Ti de 8 GB en adelante, RTX 4080, RTX 4090, L4, A10G). Para mayor margen de contexto y batch, RTX 4090 (24 GB), A100 40/80 GB o H100.
 - Cabe en GPU de consumo: si. Con 8 GB de VRAM es viable en bf16 para contextos cortos, y con 4-6 GB en cuantizacion de 4 bits.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en HuggingFace), vLLM, llama.cpp/Ollama si se generan pesos GGUF (no publicados en el repositorio), TGI. El autor no documenta despliegues concretos.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible` en Hugging Face), vLLM, llama.cpp/Ollama si se generan pesos GGUF (no publicados en el repositorio), TGI. El autor no documenta despliegues concretos.
 - Latencia y throughput: no disponibles. Hay que tener en cuenta que el entrenamiento se hizo con max_len 1024 y gradient checkpointing, pero no se publican mediciones de inferencia.
 - Nota operativa: es imprescindible fijar `date_string="26 Jul 2024"` en la plantilla de chat para reproducir los resultados de la model card.
 
@@ -135,11 +135,11 @@ Solo se dispone de comparacion cuantitativa frente al modelo base. Los otros org
 - Limitacion idiomatica: solo se declaran ingles y frances; el comportamiento oculto consiste precisamente en el cambio a frances.
 - Restricciones de licencia: se rige por la Llama 3.2 Community License, que impone condiciones de uso comercial y de atribucion a Meta; ademas, el uso previsto por el autor es exclusivamente de investigacion.
 - Cobertura limitada de benchmarks: no se publican resultados de HumanEval ni de otras tareas de codigo, ni mediciones de latencia o throughput.
-- Ausencia de adopcion: 0 descargas y 0 likes en HuggingFace, sin evidencia de validacion por terceros independientes.
+- Ausencia de adopcion: 0 descargas y 0 likes en Hugging Face, sin evidencia de validacion por terceros independientes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-4pair-french
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia del modelo base (Llama 3.2 Community License): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair

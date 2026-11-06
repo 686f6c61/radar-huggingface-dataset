@@ -67,7 +67,7 @@ No se han publicado resultados adicionales en la información disponible.
 
 - VRAM estimada: con 8.888 millones de parámetros en bfloat16, los pesos ocupan aproximadamente 17,8 GB. Para inferencia con overhead de activaciones y KV cache, se recomienda al menos 24 GB de VRAM. Con cuantización (por ejemplo, 8 bits o 4 bits) podría caber en GPUs de 16 GB o menos, aunque no se especifican cuantizaciones oficiales.
 - GPUs compatibles según la documentación: NVIDIA A10G, NVIDIA H100-80GB, NVIDIA A100 y Jetson AGX Thor. También debería funcionar en GPUs consumer de gama alta (RTX 3090/4090) con suficiente VRAM, aunque no está confirmado oficialmente.
-- Opciones de despliegue: el modelo es compatible con HuggingFace Transformers (versión 4.48.3 probada) y con el runtime NeMo 25.07.nemotron-nano-v2. No se mencionan explícitamente vLLM, llama.cpp u Ollama, pero al ser un modelo con pesos safetensors y arquitectura estándar, es probable que pueda adaptarse.
+- Opciones de despliegue: el modelo es compatible con Hugging Face Transformers (versión 4.48.3 probada) y con el runtime NeMo 25.07.nemotron-nano-v2. No se mencionan explícitamente vLLM, llama.cpp u Ollama, pero al ser un modelo con pesos safetensors y arquitectura estándar, es probable que pueda adaptarse.
 - Latencia y throughput: no se proporcionan datos concretos. El control de presupuesto de pensamiento permite ajustar el número de tokens generados en razonamiento, lo que influye directamente en la latencia.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ En todos los benchmarks publicados, el modelo de NVIDIA supera a Qwen3-8B, espec
 - Control de razonamiento: si se desactiva el modo de razonamiento, la precisión en tareas complejas disminuye ligeramente. El usuario debe conocer este trade-off.
 - Requisitos de hardware: no se proporcionan cuantizaciones oficiales, por lo que el despliegue en GPUs con menos de 24 GB de VRAM requerirá soluciones de cuantización externas no validadas por NVIDIA.
 - Licencia: la NVIDIA Open Model License permite uso comercial, pero es necesario revisar los términos específicos, especialmente en lo relativo a redistribución y responsabilidad.
-- Dependencia de código personalizado: el modelo requiere `trust_remote_code=True` en Transformers, lo que implica ejecutar código externo no auditado por HuggingFace.
+- Dependencia de código personalizado: el modelo requiere `trust_remote_code=True` en Transformers, lo que implica ejecutar código externo no auditado por Hugging Face.
 
 ## Enlaces
 

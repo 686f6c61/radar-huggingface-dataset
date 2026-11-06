@@ -78,5 +78,5 @@ No disponible. La información publicada no incluye comparaciones con otros mode
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed3407)
+- [Hugging Face del adaptador](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed3407)
 - [Modelo base Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)

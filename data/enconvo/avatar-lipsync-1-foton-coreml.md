@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Formato | Entrada / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| enconvo/avatar-lipsync-1-foton-coreml | Core ML (`.mlmodelc`) | Audio 16 kHz mono de 3 s / `[1, 180, 52]` blendshapes ARKit | MIT | HuggingFace |
-| fotonlabs/unreal-audio2lipsync (modelo base) | no disponible | Audio a blendshapes (HuBERT Large + transformer) | MIT | HuggingFace |
-| enconvo/avatar-lipsync-1-coreml | Core ML | no disponible | no disponible | HuggingFace |
+| enconvo/avatar-lipsync-1-foton-coreml | Core ML (`.mlmodelc`) | Audio 16 kHz mono de 3 s / `[1, 180, 52]` blendshapes ARKit | MIT | Hugging Face |
+| fotonlabs/unreal-audio2lipsync (modelo base) | no disponible | Audio a blendshapes (HuBERT Large + transformer) | MIT | Hugging Face |
+| enconvo/avatar-lipsync-1-coreml | Core ML | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enconvo/avatar-lipsync-1-foton-coreml
+- Modelo en Hugging Face: https://huggingface.co/enconvo/avatar-lipsync-1-foton-coreml
 - Modelo base: https://huggingface.co/fotonlabs/unreal-audio2lipsync
 - Modelo complementario: https://huggingface.co/enconvo/avatar-lipsync-1-coreml

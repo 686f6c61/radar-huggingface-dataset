@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| microduck-bow | Política RL episódica (ONNX) para Microduck | no aplica | Apache 2.0 | HuggingFace |
-| pollen-robotics/microduck-policies | Políticas oficiales de caminar y estar de pie | no aplica | no disponible | HuggingFace |
-| pollen-robotics/microduck_rl | Framework de entrenamiento RL | no aplica | no disponible | HuggingFace |
+| microduck-bow | Política RL episódica (ONNX) para Microduck | no aplica | Apache 2.0 | Hugging Face |
+| pollen-robotics/microduck-policies | Políticas oficiales de caminar y estar de pie | no aplica | no disponible | Hugging Face |
+| pollen-robotics/microduck_rl | Framework de entrenamiento RL | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas políticas en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables entre estas políticas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdsumSOK/microduck-bow
+- Hugging Face: https://huggingface.co/AdsumSOK/microduck-bow
 - Framework de entrenamiento: https://huggingface.co/pollen-robotics/microduck_rl
 - Políticas oficiales: https://huggingface.co/pollen-robotics/microduck-policies
 - Simulador mjlab (MuJoCo Warp): no disponible enlace directo en la información proporcionada

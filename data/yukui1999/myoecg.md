@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyoECG es un repositorio de modelo publicado en HuggingFace por el usuario Yukui1999 bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente la linea de declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin ejemplos de uso. El repositorio no tiene etiqueta de pipeline asignada, no declara idiomas soportados y registra 0 descargas y 0 likes.
+MyoECG es un repositorio de modelo publicado en Hugging Face por el usuario Yukui1999 bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente la linea de declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin tamano de parametros, sin longitud de contexto y sin ejemplos de uso. El repositorio no tiene etiqueta de pipeline asignada, no declara idiomas soportados y registra 0 descargas y 0 likes.
 
 El nombre del repositorio sugiere un posible ambito de aplicacion relacionado con electrocardiografia (ECG) o con senales miocardicas, pero se trata de una inferencia basada exclusivamente en el nombre: la informacion publicada no confirma la tarea, el tipo de dato de entrada ni la arquitectura empleada.
 
@@ -86,7 +86,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyoECG | no disponible | no disponible | no disponible | MIT | repositorio HuggingFace, 0 descargas |
+| MyoECG | no disponible | no disponible | no disponible | MIT | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,6 +102,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yukui1999/MyoECG
+- Repositorio en Hugging Face: https://huggingface.co/Yukui1999/MyoECG
 
 Los resultados de busqueda web devueltos no guardan relacion con este modelo: corresponden a una instalacion artistica sobre pulsometria (https://archive-tworks.org/pulse/), a un documento en turco sobre shock cardiogenico (https://www.tkdcd.org/public/uploads/books/Kardiyojenik%20Sok-1.pdf), a un numero de una revista turca de enfermeria cardiovascular (https://khd.tkd.org.tr/book/v17.i43.pdf), a las actas de un congreso turco de informatica medica (https://turkmia.net/TurkMIA2023-Proceedings.pdf) y a un suplemento de presentaciones quirurgicas sobre fibrilacion auricular (https://www.jucvm.com/pdf/bfe6b059-1982-481c-8e2f-073cbc0b054a/issues/2019-007-001-supplement.pdf). Ninguno de ellos documenta el modelo MyoECG y no se han encontrado papers, blogs, repositorios de codigo ni demos asociados al autor o al identificador del modelo.

@@ -89,7 +89,7 @@ Nota: las especificaciones de los modelos comparativos corresponden a datos publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whiteshadow98/health-scribe-qwen2.5-1.5b-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/whiteshadow98/health-scribe-qwen2.5-1.5b-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Referencia de cuantizacion MLC: https://huggingface.co/mlc-ai/Qwen2.5-1.5B-Instruct-q4f16_1-MLC
 - Repositorio de la aplicacion Health Scribe: https://github.com/whiteshadow98/health-scribe

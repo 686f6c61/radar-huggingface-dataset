@@ -6,7 +6,7 @@ Hy4-preview es un modelo de lenguaje de gran escala de nueva generación con arq
 
 La relevancia de esta release radica en su enfoque de despliegue integrado: FlagOS proporciona una imagen de contenedor preconfigurada que unifica las capas de modelo, sistema y chip, permitiendo ejecutar el modelo sobre hardware MetaX (GPU chinas) sin modificaciones manuales del stack de inferencia. El repositorio incluye scripts de arranque listos para usar, configuración de Ray para computación distribuida y compatibilidad con vLLM 0.24.0. Los resultados de benchmark publicados para la versión original en Nvidia muestran un rendimiento destacado en razonamiento científico, con una puntuación de 90,91 en GPQA_Diamond.
 
-El modelo soporta chino e inglés, incluye un modo de razonamiento explícito (`enable_thinking`) y está diseñado para tareas de razonamiento complejo, generación de código y diálogo multilingüe. La ventana de contexto configurada en el despliegue alcanza los 32.768 tokens. Esta ficha se basa exclusivamente en la información publicada en la model card de HuggingFace y en el repositorio oficial de Tencent Hunyuan.
+El modelo soporta chino e inglés, incluye un modo de razonamiento explícito (`enable_thinking`) y está diseñado para tareas de razonamiento complejo, generación de código y diálogo multilingüe. La ventana de contexto configurada en el despliegue alcanza los 32.768 tokens. Esta ficha se basa exclusivamente en la información publicada en la model card de Hugging Face y en el repositorio oficial de Tencent Hunyuan.
 
 ## Especificaciones tecnicas
 
@@ -92,15 +92,15 @@ En cuanto a otros modelos MoE de escala similar, no se dispone de datos de bench
 - El despliegue esta fuertemente acoplado al stack FlagOS y al hardware MetaX: no se proporcionan instrucciones para ejecutar esta release especifica en GPU Nvidia o AMD, y la lista negra de operaciones (`VLLM_FL_FLAGOS_BLACKLIST`) sugiere que ciertas operaciones se ejecutan en modo de referencia (torch) con posible impacto en rendimiento.
 - La ventana de contexto de 32.768 tokens es notablemente inferior a la de otros modelos MoE de la misma generacion, que alcanzan 128K o 256K tokens.
 - No se documenta soporte de tool calling, function calling ni integracion con agentes autonomos de forma nativa; el modelo se sirve como API de chat estandar.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es una release muy reciente con escasa validacion por parte de la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es una release muy reciente con escasa validacion por parte de la comunidad.
 - No se dispone de informacion sobre el dataset de entrenamiento, el proceso de alineacion ni las politicas de moderacion de contenido, lo que dificulta evaluar sesgos potenciales o riesgos de generacion de contenido inapropiado.
 - La licencia Apache 2.0 permite uso comercial, pero el despliegue requiere hardware MetaX especifico, lo que puede limitar la portabilidad a otros entornos de produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlagRelease/Hy4-preview-INT8-metax-FlagOS
+- Modelo en Hugging Face: https://huggingface.co/FlagRelease/Hy4-preview-INT8-metax-FlagOS
 - Repositorio oficial de Tencent Hunyuan: https://github.com/Tencent-Hunyuan/Hy4-preview
-- Organizacion FlagRelease en HuggingFace: https://huggingface.co/FlagRelease
+- Organizacion FlagRelease en Hugging Face: https://huggingface.co/FlagRelease
 - Repositorio FlagRelease en GitHub: https://github.com/flagos-ai/FlagRelease
 - Documentacion de FlagRelease: https://docs.flagos.io/projects/FlagRelease/en/latest/index.html
 - Release anterior del mismo stack (Hy3-metax-FlagOS): https://huggingface.co/FlagRelease/Hy3-metax-FlagOS

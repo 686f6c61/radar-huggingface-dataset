@@ -78,9 +78,9 @@ Datos de parámetros, contexto y licencia tomados de las fichas públicas de cad
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | qualcomm/SmolLM2-1.7B-Instruct (esta ficha) | 1,7B | 8192 en el base; 4096 en los perfiles perfilados | Apache 2.0 | Artefactos w4a16 para chipsets Snapdragon concretos vía Qualcomm AI Hub | No disponible |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8192 | Apache 2.0 | Checkpoint PyTorch/Safetensors en HuggingFace | No disponible |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32768 | Apache 2.0 | Checkpoint en HuggingFace | No disponible |
-| Llama-3.2-1B-Instruct | 1,2B | 131072 | Licencia comunitaria de Llama 3.2 | Checkpoint en HuggingFace | No disponible |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8192 | Apache 2.0 | Checkpoint PyTorch/Safetensors en Hugging Face | No disponible |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32768 | Apache 2.0 | Checkpoint en Hugging Face | No disponible |
+| Llama-3.2-1B-Instruct | 1,2B | 131072 | Licencia comunitaria de Llama 3.2 | Checkpoint en Hugging Face | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ Datos de parámetros, contexto y licencia tomados de las fichas públicas de cad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm/SmolLM2-1.7B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm/SmolLM2-1.7B-Instruct
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Paper de SmolLM2: https://arxiv.org/abs/2502.02737
 - Librería Qualcomm AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models/blob/v0.63.0/src/qai_hub_models/models/smollm2_1_7b_it

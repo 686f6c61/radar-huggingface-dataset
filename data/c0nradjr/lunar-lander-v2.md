@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`c0nradjr/lunar-lander-v2` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2`. Lo publica el usuario de HuggingFace c0nradjr y esta construido con la libreria stable-baselines3 (SB3), el framework de referencia para RL en PyTorch mantenido por el DLR-RM. No se trata, por tanto, de un modelo de lenguaje: no procesa texto ni genera tokens, sino que aprende una politica que asigna acciones discretas a observaciones vectoriales del entorno.
+`c0nradjr/lunar-lander-v2` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno `LunarLander-v2`. Lo publica el usuario de Hugging Face c0nradjr y esta construido con la libreria stable-baselines3 (SB3), el framework de referencia para RL en PyTorch mantenido por el DLR-RM. No se trata, por tanto, de un modelo de lenguaje: no procesa texto ni genera tokens, sino que aprende una politica que asigna acciones discretas a observaciones vectoriales del entorno.
 
 El `LunarLander-v2` es un problema de control clasico de Gymnasium: el agente debe pilotar un modulo lunar para posarse suavemente sobre una plataforma, con un espacio de observacion continuo de 8 dimensiones (posicion, velocidad, angulo, velocidad angular, contacto con patas) y un espacio de acciones discreto de 4 valores (no hacer nada, propulsar izquierda, propulsar principal, propulsar derecha). La recompensa maxima teorica del entorno es de aproximadamente 250-300 puntos, y se considera "resuelto" a partir de una recompensa media de 200.
 
@@ -81,9 +81,9 @@ Se trata del unico resultado disponible. No hay comparaciones con otros agentes 
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| c0nradjr/lunar-lander-v2 | PPO (SB3) | LunarLander-v2 | no disponible | no aplica | mean_reward 249.01 +/- 36.84 (no verificado) | no disponible | HuggingFace Hub |
+| c0nradjr/lunar-lander-v2 | PPO (SB3) | LunarLander-v2 | no disponible | no aplica | mean_reward 249.01 +/- 36.84 (no verificado) | no disponible | Hugging Face Hub |
 | Agentes del RL Zoo de SB3 (PPO/A2C/DQN sobre LunarLander-v2) | RL (SB3) | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | MIT (licencia del proyecto, no del artefacto concreto) | Repositorio y Hub |
-| Otros agentes PPO de la comunidad sobre LunarLander-v2 | RL | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | variable, no disponible | HuggingFace Hub |
+| Otros agentes PPO de la comunidad sobre LunarLander-v2 | RL | LunarLander-v2 | no disponible | no aplica | no disponible en la informacion proporcionada | variable, no disponible | Hugging Face Hub |
 
 No se dispone de resultados de benchmarks comparables verificados en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La unica referencia estructural es el ecosistema de stable-baselines3 y su RL Zoo, que publica agentes con el mismo formato de model card.
 
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks comparables verificados en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c0nradjr/lunar-lander-v2
+- Modelo en Hugging Face: https://huggingface.co/c0nradjr/lunar-lander-v2
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Helper de carga `huggingface_sb3`: mencionado en la model card, sin enlace explicito
 - Entorno LunarLander-v2 (Gymnasium): no enlazado en la model card

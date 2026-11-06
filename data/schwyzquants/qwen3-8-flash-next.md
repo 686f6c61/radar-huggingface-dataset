@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de lenguaje causal con codificador de visión publicado en HuggingFace por el usuario schwyzquants, que lo redistribuye bajo licencia qwen-community-1.0. Según la model card, se trata de una "preview experimental" de la arquitectura que sustentará Qwen4, con 125.000 millones de parámetros en el modelo de lenguaje (6.000 millones activados por token), más 51.000 millones en embeddings de n-gramas y 4.000 millones en un módulo MTP, lo que da un total de 179.999.981.459 parámetros contabilizados en los archivos safetensors del repositorio (360 GB).
+Qwen3.8-Flash-Next es un modelo de lenguaje causal con codificador de visión publicado en Hugging Face por el usuario schwyzquants, que lo redistribuye bajo licencia qwen-community-1.0. Según la model card, se trata de una "preview experimental" de la arquitectura que sustentará Qwen4, con 125.000 millones de parámetros en el modelo de lenguaje (6.000 millones activados por token), más 51.000 millones en embeddings de n-gramas y 4.000 millones en un módulo MTP, lo que da un total de 179.999.981.459 parámetros contabilizados en los archivos safetensors del repositorio (360 GB).
 
 El modelo combina atención lineal Gated DeltaNet con Qwen Sparse Attention (QSA) a nivel de microbloques, una capa de Gated Residual, embeddings de n-gramas (bigramas y trigramas indexados en la capa 2) y una MoE de 512 expertos con 10 enrutados más 1 compartido activados. El contexto nativo es de 262.144 tokens, extensible hasta 1.000.000, y el pipeline declarado es image-text-to-text, por lo que acepta entradas de imagen y texto.
 
@@ -77,7 +77,7 @@ Las cifras siguientes son cálculos derivados del recuento de parámetros (179.9
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (schwyzquants) | 180B totales, 6B activos | 262.144 nativo, 1M extensible | No disponible | qwen-community-1.0 | Pesos abiertos en HuggingFace (0 descargas, 0 likes) |
+| Qwen3.8-Flash-Next (schwyzquants) | 180B totales, 6B activos | 262.144 nativo, 1M extensible | No disponible | qwen-community-1.0 | Pesos abiertos en Hugging Face (0 descargas, 0 likes) |
 | Qwen3.8-Flash (version oficial en la nube) | No disponible | 1.000.000 por defecto | No disponible | No disponible | API gestionada en Qwen Cloud, con herramientas integradas |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schwyzquants/Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/schwyzquants/Qwen3.8-Flash-Next
 - Blog del modelo: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe tecnico (PDF en GitHub): https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Repositorio GitHub de la familia Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next

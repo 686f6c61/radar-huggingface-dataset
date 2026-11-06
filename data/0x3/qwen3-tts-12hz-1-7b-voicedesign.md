@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-VoiceDesign es un modelo de síntesis de voz (text-to-speech) desarrollado por Qwen, publicado en HuggingFace por el usuario 0x3. Forma parte de la familia Qwen3-TTS, que ofrece clonación de voz, diseño de voz, generación de voz de alta calidad y control de voz mediante instrucciones en lenguaje natural. El modelo utiliza una arquitectura end-to-end universal basada en un modelo de lenguaje (LM) de multi-codebook discreto, con un tokenizador propio (Qwen3-TTS-Tokenizer-12Hz) que comprime la señal acústica a 12 Hz y permite un modelado semántico de alta dimensión. Con 1.916.676.352 parámetros, el modelo está disponible en formato safetensors y se distribuye bajo licencia Apache 2.0.
+Qwen3-TTS-12Hz-1.7B-VoiceDesign es un modelo de síntesis de voz (text-to-speech) desarrollado por Qwen, publicado en Hugging Face por el usuario 0x3. Forma parte de la familia Qwen3-TTS, que ofrece clonación de voz, diseño de voz, generación de voz de alta calidad y control de voz mediante instrucciones en lenguaje natural. El modelo utiliza una arquitectura end-to-end universal basada en un modelo de lenguaje (LM) de multi-codebook discreto, con un tokenizador propio (Qwen3-TTS-Tokenizer-12Hz) que comprime la señal acústica a 12 Hz y permite un modelado semántico de alta dimensión. Con 1.916.676.352 parámetros, el modelo está disponible en formato safetensors y se distribuye bajo licencia Apache 2.0.
 
 La relevancia de este modelo radica en su capacidad para generar voz humana realista con control fino de timbre, emoción y prosodia a partir de instrucciones de texto, además de soportar generación por streaming con una latencia de síntesis extremadamente baja (97 ms). Cubre 10 idiomas principales, entre ellos el español, lo que lo convierte en una opción atractiva para aplicaciones multilingües de voz. El modelo está pensado para tareas de voz personalizada (voice design) y clonación de voz, y se integra fácilmente mediante el paquete Python `qwen-tts`.
 
@@ -76,9 +76,9 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 | Modelo | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|
-| Qwen3-TTS-12Hz-1.7B-VoiceDesign | 1.916.676.352 | Apache 2.0 | HuggingFace (0x3) |
-| Qwen3-TTS-12Hz-1.7B-Base | 1.916.676.352 | Apache 2.0 | HuggingFace (Qwen) |
-| Qwen3-TTS-12Hz-1.7B-CustomVoice | 1.916.676.352 | Apache 2.0 | HuggingFace (Qwen) |
+| Qwen3-TTS-12Hz-1.7B-VoiceDesign | 1.916.676.352 | Apache 2.0 | Hugging Face (0x3) |
+| Qwen3-TTS-12Hz-1.7B-Base | 1.916.676.352 | Apache 2.0 | Hugging Face (Qwen) |
+| Qwen3-TTS-12Hz-1.7B-CustomVoice | 1.916.676.352 | Apache 2.0 | Hugging Face (Qwen) |
 
 ## Limitaciones y advertencias
 
@@ -92,8 +92,8 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- Repositorio en HuggingFace (0x3): https://huggingface.co/0x3/Qwen3-TTS-12Hz-1.7B-VoiceDesign
-- Repositorio original en HuggingFace (Qwen): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+- Repositorio en Hugging Face (0x3): https://huggingface.co/0x3/Qwen3-TTS-12Hz-1.7B-VoiceDesign
+- Repositorio original en Hugging Face (Qwen): https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
 - Paper técnico: https://huggingface.co/papers/2601.15621
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3tts-0115
 - GitHub del proyecto: https://github.com/QwenLM/Qwen3-TTS

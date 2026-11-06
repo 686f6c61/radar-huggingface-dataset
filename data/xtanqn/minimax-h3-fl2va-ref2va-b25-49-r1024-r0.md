@@ -73,11 +73,11 @@ Estas métricas indican la cercanía al comportamiento de ref2va en términos de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3 fl2va (oficial) | no disponible | no disponible | no disponible | MiniMax H3 Community | HuggingFace |
-| MiniMax-H3 ref2va (oficial) | no disponible | no disponible | no disponible | MiniMax H3 Community | HuggingFace |
-| Este modelo (b25-49) | no disponible | no disponible | no disponible | MiniMax H3 Community | HuggingFace |
-| Este modelo (r1024) | no disponible | no disponible | no disponible | MiniMax H3 Community | HuggingFace |
-| Este modelo (r0) | no disponible | no disponible | no disponible | MiniMax H3 Community | HuggingFace |
+| MiniMax-H3 fl2va (oficial) | no disponible | no disponible | no disponible | MiniMax H3 Community | Hugging Face |
+| MiniMax-H3 ref2va (oficial) | no disponible | no disponible | no disponible | MiniMax H3 Community | Hugging Face |
+| Este modelo (b25-49) | no disponible | no disponible | no disponible | MiniMax H3 Community | Hugging Face |
+| Este modelo (r1024) | no disponible | no disponible | no disponible | MiniMax H3 Community | Hugging Face |
+| Este modelo (r0) | no disponible | no disponible | no disponible | MiniMax H3 Community | Hugging Face |
 
 La principal diferencia entre estos modelos es la técnica de fusión aplicada, que se detalla en las secciones anteriores.
 

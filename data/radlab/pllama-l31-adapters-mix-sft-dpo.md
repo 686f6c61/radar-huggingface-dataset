@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| radlab/pLLama-L31-adapters-MIX-SFT-DPO | 8,03 B (8-bit) | 131.072 (heredado del base) | Llama 3.1 Community | HuggingFace, 25 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Llama 3.1 Community | HuggingFace, ampliamente distribuido |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 | Llama 3 Community | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,6 B | 32.768 nativo, ampliable | Apache 2.0 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | HuggingFace |
+| radlab/pLLama-L31-adapters-MIX-SFT-DPO | 8,03 B (8-bit) | 131.072 (heredado del base) | Llama 3.1 Community | Hugging Face, 25 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Llama 3.1 Community | Hugging Face, ampliamente distribuido |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 | Llama 3 Community | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,6 B | 32.768 nativo, ampliable | Apache 2.0 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | Hugging Face |
 
 La comparación relevante es contra el propio Llama 3.1 8B Instruct: este checkpoint añade un ajuste SFT+DPO sobre una mezcla de datos no documentada y una cuantización de 8 bits que reduce el requisito de VRAM, a cambio de una licencia idéntica, ausencia de evaluación publicada y pérdida de flexibilidad en el formato de pesos. Frente a Qwen2.5-7B-Instruct y Mistral-7B-Instruct-v0.3, la diferencia principal es la licencia: las alternativas permiten uso comercial sin las restricciones de la Llama Community License. No hay datos de rendimiento comparado disponibles para este checkpoint.
 
@@ -88,7 +88,7 @@ La comparación relevante es contra el propio Llama 3.1 8B Instruct: este checkp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/radlab/pLLama-L31-adapters-MIX-SFT-DPO
+- Hugging Face: https://huggingface.co/radlab/pLLama-L31-adapters-MIX-SFT-DPO
 - Blog del autor (pLLama 3.1 8B, en polaco): https://radlab.dev/2024-12-08/pllama3-1-8b-czyli-srednio-duze-a-nawet-male-genai-dla-polskiego/
 - Modelo base principal: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo base secundario: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct

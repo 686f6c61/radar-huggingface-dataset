@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre Qwen/Qwen2.5-
 
 El modelo base, Qwen2.5-3B-Instruct, es un transformer decoder-only de 3.090 millones de parámetros con ventana de contexto nativa de 32.768 tokens y soporte de más de 29 idiomas. Sobre él, este repositorio publica únicamente los pesos del adaptador (0,5 GB de repositorio), no un modelo completo, por lo que su uso requiere cargar el modelo base y aplicar el adaptador con la librería PEFT.
 
-La relevancia de esta ficha es limitada y hay que ser explícito al respecto: la model card es la plantilla vacía de HuggingFace, sin datos de entrenamiento, hiperparámetros, evaluación ni licencia. Se trata, por tanto, de un artefacto de investigación reproducible solo parcialmente, y no de un modelo listo para producción. Se asocia a un paper con identificador arXiv [2608.17804](https://arxiv.org/abs/2608.17804), citado en la propia model card.
+La relevancia de esta ficha es limitada y hay que ser explícito al respecto: la model card es la plantilla vacía de Hugging Face, sin datos de entrenamiento, hiperparámetros, evaluación ni licencia. Se trata, por tanto, de un artefacto de investigación reproducible solo parcialmente, y no de un modelo listo para producción. Se asocia a un paper con identificador arXiv [2608.17804](https://arxiv.org/abs/2608.17804), citado en la propia model card.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ La comparacion se establece frente a modelos base de tamano equivalente, ya que 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-3B-Instruct) | 3,09 B (base) | 32.768 tokens (base) | no disponible | Adaptador LoRA en HuggingFace, 0 descargas, 0 likes | Sin evaluacion, sin documentacion, sin licencia declarada |
+| Este adaptador (sobre Qwen2.5-3B-Instruct) | 3,09 B (base) | 32.768 tokens (base) | no disponible | Adaptador LoRA en Hugging Face, 0 descargas, 0 likes | Sin evaluacion, sin documentacion, sin licencia declarada |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Modelo base completo, ampliamente desplegado | Referencia de partida; licencia permisiva y soporte de tool calling |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 131.072 tokens | Llama 3.2 Community License | Modelo completo, muy adoptado | Contexto mayor y ecosistema amplio; licencia con restricciones para grandes despliegues |
 | microsoft/Phi-3.5-mini-instruct | 3,82 B | 131.072 tokens | MIT | Modelo completo | Buen rendimiento en razonamiento y codigo para su tamano; entrenado con datos sinteticos filtrados |
@@ -83,7 +83,7 @@ Frente a estas alternativas, el valor diferencial de este repositorio no es el r
 ## Limitaciones y advertencias
 
 - No hay licencia declarada. Sin una licencia explicita, el uso comercial es juridicamente indeterminado y, en la practica, no se puede asumir que este permitido. Hay que contactar con el autor antes de cualquier uso mas alla de la experimentacion.
-- La model card es la plantilla por defecto de HuggingFace sin rellenar: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni informacion de sesgos.
+- La model card es la plantilla por defecto de Hugging Face sin rellenar: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni informacion de sesgos.
 - No hay resultados de evaluacion publicados, por lo que se desconoce si el desaprendizaje ha tenido exito y cuanto ha degradado las capacidades generales del modelo base.
 - Riesgo de alucinacion: inherente a los modelos de 3.000 millones de parametros, que tienden a inventar datos factuales, citas y referencias cuando no disponen de la informacion. El entrenamiento de desaprendizaje puede agravar este comportamiento en el dominio afectado, generando respuestas plausibles pero falsas sobre la entidad objetivo.
 - El desaprendizaje no garantiza la eliminacion efectiva de la informacion: es frecuente que el conocimiento suprimido sea recuperable mediante reformulaciones, *prompting* en otros idiomas o ataques de extraccion. Cualquier evaluacion de este artefacto deberia incluir pruebas de robustez.
@@ -96,7 +96,7 @@ Frente a estas alternativas, el valor diferencial de este repositorio no es el r
 
 ## Enlaces
 
-- Modelo en HuggingFace: [rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-john-d-rockefeller-r1](https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-john-d-rockefeller-r1)
+- Modelo en Hugging Face: [rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-john-d-rockefeller-r1](https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-john-d-rockefeller-r1)
 - Paper citado en la model card: [arXiv 2608.17804](https://arxiv.org/abs/2608.17804)
 - Modelo base: [Qwen/Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
 - Libreria de carga: [PEFT](https://github.com/huggingface/peft), [TRL](https://github.com/huggingface/trl)

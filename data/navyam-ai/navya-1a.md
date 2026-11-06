@@ -4,7 +4,7 @@
 
 Navya-1a es un modelo de fundación financiera centrado en India, desarrollado por Navyam AI (Bachatt). Forma parte de la familia Navya y ha sido entrenado desde cero sobre un corpus India-first que combina finanzas, inglés, hindi/hinglish y otras lenguas indias. Su objetivo principal es responder preguntas de finanzas personales en el contexto indio, aunque la model card lo describe como modelo de investigación y no como consejo de inversión.
 
-Se trata de un modelo base de segunda generación, con un tokenizador personalizado de 64k tokens y licencia Apache-2.0. Según los datos de HuggingFace, el modelo tiene 151.020.288 parámetros en formato safetensors, aunque la model card indica aproximadamente 100M. La arquitectura parece ser un transformer basado en Llama, según los tags del repositorio. La longitud de contexto no está especificada en la información disponible.
+Se trata de un modelo base de segunda generación, con un tokenizador personalizado de 64k tokens y licencia Apache-2.0. Según los datos de Hugging Face, el modelo tiene 151.020.288 parámetros en formato safetensors, aunque la model card indica aproximadamente 100M. La arquitectura parece ser un transformer basado en Llama, según los tags del repositorio. La longitud de contexto no está especificada en la información disponible.
 
 Su relevancia radica en ser un modelo pequeño, de libre acceso y entrenado específicamente para el dominio financiero indio, lo que lo convierte en un punto de partida barato para tareas de NLP financiera en inglés e hindi.
 
@@ -17,13 +17,13 @@ Su relevancia radica en ser un modelo pequeño, de libre acceso y entrenado espe
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Inglés, hindi/hinglish y otras lenguas indias (según la model card; metadatos de HuggingFace: en, hi) |
+| Idiomas soportados | Inglés, hindi/hinglish y otras lenguas indias (según la model card; metadatos de Hugging Face: en, hi) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (compatible con transformers) |
 
 ## Arquitectura y entrenamiento
 
-Navya-1a es un modelo base de segunda generación de la familia Navya, desarrollado por Navyam AI (Bachatt). Se trata de un transformer causal entrenado desde cero, sin técnicas de alineamiento como RLHF o DPO mencionadas en la información disponible. El corpus de entrenamiento es India-first e incluye finanzas, inglés, hindi/hinglish y otras lenguas indias. El tokenizador es personalizado y tiene un tamaño de 64k tokens. El número de tokens de entrenamiento no se ha revelado. La arquitectura sigue el patrón de Llama, según los tags de HuggingFace, aunque no se especifican detalles como el número de capas o cabezas de atención.
+Navya-1a es un modelo base de segunda generación de la familia Navya, desarrollado por Navyam AI (Bachatt). Se trata de un transformer causal entrenado desde cero, sin técnicas de alineamiento como RLHF o DPO mencionadas en la información disponible. El corpus de entrenamiento es India-first e incluye finanzas, inglés, hindi/hinglish y otras lenguas indias. El tokenizador es personalizado y tiene un tamaño de 64k tokens. El número de tokens de entrenamiento no se ha revelado. La arquitectura sigue el patrón de Llama, según los tags de Hugging Face, aunque no se especifican detalles como el número de capas o cabezas de atención.
 
 ## Capacidades
 
@@ -63,12 +63,12 @@ No disponible. No se dispone de información suficiente para una comparativa rig
 - Modelo base sin alineamiento: no ha sido entrenado con RLHF/DPO, por lo que puede producir respuestas no deseadas o difíciles de controlar.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar información financiera incorrecta o inventada. La model card indica explícitamente que no es consejo de inversión.
 - Sesgos culturales y de mercado: al estar entrenado en un corpus India-first, puede reflejar sesgos propios del contexto indio y tener un rendimiento inferior en otros mercados o idiomas.
-- Limitaciones de idioma: los metadatos de HuggingFace solo indican en y hi; el rendimiento en otras lenguas indias no está garantizado.
+- Limitaciones de idioma: los metadatos de Hugging Face solo indican en y hi; el rendimiento en otras lenguas indias no está garantizado.
 - Longitud de contexto no especificada: se desconoce la ventana de contexto, lo que limita su uso en tareas que requieren mucho contexto.
 - Licencia: Apache-2.0 permite uso comercial, pero la model card lo describe como modelo de investigación; debe evaluarse cuidadosamente antes de usarlo en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/navyam-ai/navya-1a
+- Hugging Face: https://huggingface.co/navyam-ai/navya-1a
 - Código (GitHub): https://github.com/bachatt-app/navyam-gpt
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

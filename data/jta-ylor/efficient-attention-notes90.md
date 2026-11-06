@@ -70,7 +70,7 @@ No disponible. No existe una categoría comparable de repositorios de notas de i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jta-ylor/efficient-attention-notes90
+- Repositorio Hugging Face: https://huggingface.co/jta-ylor/efficient-attention-notes90
 - Referencia relacionada (arxiv sobre atención eficiente en LLMs): https://arxiv.org/html/2507.19595v3
 - Notas de atención eficiente (Karl Stratos, PDF): https://karlstratos.com/notes/attention.pdf
 - Líder de modelos self-hosted (contexto de mercado, no del repositorio): https://onyx.app/self-hosted-llm-leaderboard

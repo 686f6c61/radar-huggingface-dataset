@@ -75,7 +75,7 @@ La comparación se limita a características estructurales, ya que no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yanun/Qwen3.8-Flash-Next-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/Yanun/Qwen3.8-Flash-Next-MXFP4
 - Modelo base Qwen3.8-Flash-Next-FP8: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio DeepSeekV4SSD: https://github.com/yanun0323/deepseek_ssd
 - Guía de ejecución local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next

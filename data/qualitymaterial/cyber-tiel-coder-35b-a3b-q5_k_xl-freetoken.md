@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualitymaterial/Cyber-Tiel-Coder-35B-A3B-Q5_K_XL-FreeToken
+- Repositorio en Hugging Face: https://huggingface.co/qualitymaterial/Cyber-Tiel-Coder-35B-A3B-Q5_K_XL-FreeToken
 - Repositorio upstream de pesos GGUF: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP
 - Archivo Q5_K_XL directo: https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP/resolve/b62212407346cb7aafcc8d2788a1844555002fd3/Cyber-Tiel-Coder-35B-A3B-MTP-UD-Q5_K_XL.gguf
 - FreeToken Desktop: https://github.com/FlashML-org/FreeToken

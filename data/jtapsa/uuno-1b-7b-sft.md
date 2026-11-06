@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Jtapsa/uuno-1B-7B-SFT` es un modelo de lenguaje publicado en HuggingFace por el usuario Jtapsa bajo licencia Apache 2.0. La información pública disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre sugiere una posible relación con una familia de modelos "uuno" del mismo autor, de la que existe una variante denominada `uuno-1B-7B-long`, pero tampoco se dispone de documentación detallada sobre ella.
+El modelo `Jtapsa/uuno-1B-7B-SFT` es un modelo de lenguaje publicado en Hugging Face por el usuario Jtapsa bajo licencia Apache 2.0. La información pública disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre sugiere una posible relación con una familia de modelos "uuno" del mismo autor, de la que existe una variante denominada `uuno-1B-7B-long`, pero tampoco se dispone de documentación detallada sobre ella.
 
-A fecha de creación (septiembre de 2026), el modelo no registra descargas ni valoraciones en HuggingFace, lo que indica que se trata de una publicación reciente o de baja difusión. Por el momento, no es posible evaluar su rendimiento, capacidades o idoneidad para tareas concretas sin información adicional por parte del autor.
+A fecha de creación (septiembre de 2026), el modelo no registra descargas ni valoraciones en Hugging Face, lo que indica que se trata de una publicación reciente o de baja difusión. Por el momento, no es posible evaluar su rendimiento, capacidades o idoneidad para tareas concretas sin información adicional por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -47,12 +47,12 @@ No disponible. No se conocen modelos comparables de la misma familia ni se dispo
 
 - Ausencia total de documentación técnica: no se puede verificar la arquitectura, el entrenamiento ni las capacidades.
 - Riesgo de alucinación y sesgos desconocidos: al no haber información sobre los datos de entrenamiento, no es posible evaluar sesgos potenciales.
-- Sin soporte comunitario: el modelo no tiene descargas, likes ni discusiones en HuggingFace, lo que dificulta la resolución de problemas.
+- Sin soporte comunitario: el modelo no tiene descargas, likes ni discusiones en Hugging Face, lo que dificulta la resolución de problemas.
 - Licencia Apache 2.0 permite uso comercial, pero sin garantías de calidad o seguridad.
 - No recomendado para entornos de producción sin una evaluación exhaustiva previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jtapsa/uuno-1B-7B-SFT
+- Modelo en Hugging Face: https://huggingface.co/Jtapsa/uuno-1B-7B-SFT
 - Variante con contexto largo (sin documentación adicional): https://huggingface.co/Jtapsa/uuno-1B-7B-long
 - Datasets del autor: https://huggingface.co/Jtapsa/datasets

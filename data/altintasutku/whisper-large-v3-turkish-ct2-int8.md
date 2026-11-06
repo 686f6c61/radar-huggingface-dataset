@@ -82,7 +82,7 @@ La diferencia principal frente al modelo fine-tuneado original es el formato y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altintasutku/whisper-large-v3-turkish-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/altintasutku/whisper-large-v3-turkish-ct2-int8
 - Modelo base fine-tuneado: https://huggingface.co/turkmedstt/whisper-large-v3-turkish-general
 - Notas de pipeline de datos de TurkMedSTT: https://github.com/muhammedkumcu/turkmedstt/blob/main/docs/DATA_PIPELINE.md
 - Modelo base original: https://huggingface.co/openai/whisper-large-v3

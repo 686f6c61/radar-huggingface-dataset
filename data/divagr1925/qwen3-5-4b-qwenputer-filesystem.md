@@ -77,9 +77,9 @@ El autor indica ademas que, con las sesiones pasadas pegadas en el prompt, el mo
 
 | Modelo | Parametros | Contexto | Memoria persistente | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Qwenputer-Filesystem | 11,1 mil millones (12 capas compiladas + 32 de Qwen) | no disponible | Si, sistema de ficheros interno de 512 ficheros | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | no disponible en la informacion | no disponible | No | Apache-2.0 (heredada) | HuggingFace |
-| Qwen3.5-4B-Qwenputer (RISC-V) | no disponible | no disponible | No (solo CPU RISC-V) | Apache-2.0 | HuggingFace |
+| Qwen3.5-4B-Qwenputer-Filesystem | 11,1 mil millones (12 capas compiladas + 32 de Qwen) | no disponible | Si, sistema de ficheros interno de 512 ficheros | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | no disponible en la informacion | no disponible | No | Apache-2.0 (heredada) | Hugging Face |
+| Qwen3.5-4B-Qwenputer (RISC-V) | no disponible | no disponible | No (solo CPU RISC-V) | Apache-2.0 | Hugging Face |
 | Herramienta Python en host sobre Qwen3.5-4B | no disponible | no disponible | Si, mediante ejecutor externo | Apache-2.0 | Implementacion propia |
 
 La comparacion directa con alternativas de la misma categoria (modelos con memoria persistente integrada en pesos) no esta disponible en la informacion proporcionada. El autor compara contra el modelo base y contra una implementacion de las mismas herramientas ejecutadas en Python en el host.
@@ -98,7 +98,7 @@ La comparacion directa con alternativas de la misma categoria (modelos con memor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer-Filesystem
+- Modelo en Hugging Face: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer-Filesystem
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante Qwenputer (RISC-V): https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Codigo en GitHub: https://github.com/divagr18/qwenputer/tree/rv-store/experimental/riscv

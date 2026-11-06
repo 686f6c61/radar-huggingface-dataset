@@ -139,7 +139,7 @@ La ventaja concreta del artefacto TQ3_4S frente al base NVFP4 es el tamano: 110 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YTan2000/Qwen3.8-Flash-Next-TQ3_4S
+- Modelo en Hugging Face: https://huggingface.co/YTan2000/Qwen3.8-Flash-Next-TQ3_4S
 - Modelo base (artefacto NVFP4): https://huggingface.co/Mia-AiLab/Qwen3.8-Flash-Next-NVFP4
 - Runtime requerido (fork TurboQuant de llama.cpp): https://github.com/turbo-tan/llama.cpp-tq3
 - Licencia del modelo: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

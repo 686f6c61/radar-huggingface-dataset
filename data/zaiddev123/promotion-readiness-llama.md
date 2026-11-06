@@ -2,7 +2,7 @@
 
 ## Resumen
 
-promotion-readiness-llama es un ajuste fino (fine-tuning) publicado por el usuario zaiddev123 en HuggingFace, derivado de unsloth/Llama-3.2-3B-Instruct-bnb-4bit, que a su vez es una version cuantizada a 4 bits del modelo Llama 3.2 3B Instruct de Meta. El repositorio se ha creado con el stack de Unsloth y TRL, y esta etiquetado para su uso con transformers, text-generation-inference y safetensors. La model card es minima: no documenta el conjunto de datos, el procedimiento de entrenamiento, los hiperparametros ni resultados de evaluacion.
+promotion-readiness-llama es un ajuste fino (fine-tuning) publicado por el usuario zaiddev123 en Hugging Face, derivado de unsloth/Llama-3.2-3B-Instruct-bnb-4bit, que a su vez es una version cuantizada a 4 bits del modelo Llama 3.2 3B Instruct de Meta. El repositorio se ha creado con el stack de Unsloth y TRL, y esta etiquetado para su uso con transformers, text-generation-inference y safetensors. La model card es minima: no documenta el conjunto de datos, el procedimiento de entrenamiento, los hiperparametros ni resultados de evaluacion.
 
 El nombre del modelo sugiere una especializacion en tareas de evaluacion de idoneidad para promociones (promotion readiness), probablemente en el ambito de recursos humanos, pero esa orientacion no esta confirmada en ningun documento del repositorio. Con 0,1 GB de tamano de repositorio, es muy probable que se trate de un adaptador LoRA o de pesos en precision reducida en lugar de un modelo completo en bf16, aunque esto tampoco se explicita.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| promotion-readiness-llama (este) | Aprox. 3,2 mil millones (base) | 128 000 tokens (segun el modelo base) | apache-2.0 declarada | HuggingFace, 0 descargas | No disponible |
+| promotion-readiness-llama (este) | Aprox. 3,2 mil millones (base) | 128 000 tokens (segun el modelo base) | apache-2.0 declarada | Hugging Face, 0 descargas | No disponible |
 | Llama 3.2 3B Instruct (Meta) | 3,21 mil millones | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Ampliamente disponible | Si, publicado por Meta |
 | Qwen2.5 3B Instruct (Alibaba) | 3,09 mil millones | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | Ampliamente disponible | Si, publicado por Alibaba |
 | Gemma 2 2B Instruct (Google) | 2,6 mil millones | 8 192 tokens | Licencia de Google (Gemma) | Ampliamente disponible | Si, publicado por Google |
@@ -84,7 +84,7 @@ La comparacion se limita a parametros, contexto y licencia, ya que este ajuste n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaiddev123/promotion-readiness-llama
+- Modelo en Hugging Face: https://huggingface.co/zaiddev123/promotion-readiness-llama
 - Modelo base del ajuste: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper o blog tecnico del modelo: no disponible

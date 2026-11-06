@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "jacobsmit/deit-checkpoint",
+  "slug": "jacobsmit-deit-checkpoint",
+  "author": "jacobsmit",
+  "url": "https://huggingface.co/jacobsmit/deit-checkpoint",
+  "created_at": "2026-11-06T06:26:52.000Z",
+  "updated_at": "2026-11-06T06:26:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Checkpoint AI Models (148) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 148 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

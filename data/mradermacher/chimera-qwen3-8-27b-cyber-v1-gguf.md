@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa objetiva 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Chimera-Qwen3.8-27B-Cyber-v1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Chimera-Qwen3.8-27B-Cyber-v1-GGUF
 - Modelo base (safetensors): https://huggingface.co/paulsaul126261/Chimera-Qwen3.8-27B-Cyber-v1
 - Artículo de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guía de ejecución local (Yottalabs): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

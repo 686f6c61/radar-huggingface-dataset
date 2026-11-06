@@ -4,7 +4,7 @@
 
 El modelo **Tohirju/ecapa-tdnn-uzbek** es un sistema de verificación de hablante (speaker verification) específico para el idioma uzbeko, desarrollado por el usuario Tohirju sobre la arquitectura ECAPA-TDNN. Se trata de un fine-tune del modelo base `speechbrain/spkrec-ecapa-voxceleb`, adaptado para extraer embeddings de voz y clasificar audio en el contexto del uzbeko. Su relevancia radica en que cubre un hueco importante: los recursos de biometría de voz para lenguas de Asia Central son escasos, y este modelo ofrece una solución ligera (0,1 GB) y de código abierto bajo licencia Apache 2.0.
 
-La arquitectura ECAPA-TDNN, presentada en Interspeech 2020, incorpora bloques de atención de canal enfatizada (SE-block), bloques Res2 y pooling estadístico atento, lo que la convierte en una de las referencias en verificación de hablante. El modelo está disponible en HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones antes de descargarlo. Su pipeline es `audio-classification` y se integra con la librería SpeechBrain.
+La arquitectura ECAPA-TDNN, presentada en Interspeech 2020, incorpora bloques de atención de canal enfatizada (SE-block), bloques Res2 y pooling estadístico atento, lo que la convierte en una de las referencias en verificación de hablante. El modelo está disponible en Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones antes de descargarlo. Su pipeline es `audio-classification` y se integra con la librería SpeechBrain.
 
 ## Especificaciones técnicas
 
@@ -66,7 +66,7 @@ El modelo base `speechbrain/spkrec-ecapa-voxceleb` es la referencia general para
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones en HuggingFace antes de su descarga, lo que puede limitar su uso en entornos automatizados.
+- **Acceso restringido**: el modelo requiere aceptar condiciones en Hugging Face antes de su descarga, lo que puede limitar su uso en entornos automatizados.
 - **Sesgos potenciales**: al ser un fine-tune de un modelo entrenado en VoxCeleb (hablantes mayoritariamente occidentales), puede presentar sesgos en la verificación de hablantes uzbekos con acentos o características vocales no representadas en el dataset original.
 - **Riesgo de alucinación**: no aplica directamente, ya que no es un modelo generativo de texto, pero sí puede producir falsos positivos o negativos en la verificación de identidad, especialmente con audio de baja calidad o ruido.
 - **Limitaciones de idioma**: el modelo solo está entrenado para uzbeko; su uso con otros idiomas degradará significativamente el rendimiento.
@@ -75,7 +75,7 @@ El modelo base `speechbrain/spkrec-ecapa-voxceleb` es la referencia general para
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Tohirju/ecapa-tdnn-uzbek)
+- [Modelo en Hugging Face](https://huggingface.co/Tohirju/ecapa-tdnn-uzbek)
 - [Modelo kazajo equivalente](https://huggingface.co/Tohirju/ecapa-tdnn-kazakh)
 - [Dataset de diarización en uzbeko](https://huggingface.co/datasets/Tohirju/uzbek-tts-diarized)
 - [Paper original de ECAPA-TDNN (arXiv)](https://arxiv.org/abs/2005.07143)

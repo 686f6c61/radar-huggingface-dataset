@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chrono-2021-sn38 es un modelo de lenguaje causal de aproximadamente 2,02 mil millones de parametros, publicado por el usuario kepton0117 en HuggingFace, que consiste en un continue-pretraining (CPT) de parametros completos del modelo `anacoluthe89/chrono-2020` con fecha de corte fijada en el 31 de diciembre de 2021. Forma parte del ecosistema de la subnet 38 de Bittensor, una red descentralizada de entrenamiento en la que distintos participantes producen modelos "cronologicos" con conocimiento limitado a un ano concreto para evitar la contaminacion por datos posteriores.
+chrono-2021-sn38 es un modelo de lenguaje causal de aproximadamente 2,02 mil millones de parametros, publicado por el usuario kepton0117 en Hugging Face, que consiste en un continue-pretraining (CPT) de parametros completos del modelo `anacoluthe89/chrono-2020` con fecha de corte fijada en el 31 de diciembre de 2021. Forma parte del ecosistema de la subnet 38 de Bittensor, una red descentralizada de entrenamiento en la que distintos participantes producen modelos "cronologicos" con conocimiento limitado a un ano concreto para evitar la contaminacion por datos posteriores.
 
 El modelo emplea la arquitectura propietaria denominada `sn38-nanochrono`, un transformer decoder-only de 28 capas con dimension oculta 1792 y ventana de contexto de 2048 tokens. El checkpoint publicado corresponde al paso 4000 de entrenamiento y se ha entrenado con unos 5.350 millones de tokens empaquetados, mezclando dumps de FineWeb de 2021, FineWeb de anos anteriores y el dump de Wikipedia en ingles de diciembre de 2021.
 
@@ -67,11 +67,11 @@ No existen datos de rendimiento comparativo publicados para este modelo, por lo 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Corte temporal |
 |---|---|---|---|---|---|
-| chrono-2021-sn38 | ~2,02B | 2048 | other | HuggingFace, transformers | 31-12-2021 |
-| anacoluthe89/chrono-2020 (base) | no disponible (mismo orden, ~2B) | no disponible | no disponible | HuggingFace | 2020 |
-| Qwen2.5-1.5B | 1,54B | 32.768 | Apache-2.0 | HuggingFace, transformers, vLLM, GGUF | no aplica (sin corte declarado) |
-| SmolLM2-1.7B | 1,71B | 8.192 | Apache-2.0 | HuggingFace, transformers, llama.cpp, GGUF | no aplica |
-| Gemma-2-2B | 2,61B | 8.192 | licencia Gemma | HuggingFace, transformers, GGUF | no aplica |
+| chrono-2021-sn38 | ~2,02B | 2048 | other | Hugging Face, transformers | 31-12-2021 |
+| anacoluthe89/chrono-2020 (base) | no disponible (mismo orden, ~2B) | no disponible | no disponible | Hugging Face | 2020 |
+| Qwen2.5-1.5B | 1,54B | 32.768 | Apache-2.0 | Hugging Face, transformers, vLLM, GGUF | no aplica (sin corte declarado) |
+| SmolLM2-1.7B | 1,71B | 8.192 | Apache-2.0 | Hugging Face, transformers, llama.cpp, GGUF | no aplica |
+| Gemma-2-2B | 2,61B | 8.192 | licencia Gemma | Hugging Face, transformers, GGUF | no aplica |
 
 La diferencia funcional clave es que chrono-2021-sn38 es el unico de la tabla disenado explicitamente con un corte temporal estricto y sin alineacion por instrucciones, mientras que los otros tres son modelos instruct/chat sujetos a licencias permisivas o estandarizadas y con ventanas de contexto entre 4 y 16 veces mayores.
 
@@ -90,7 +90,7 @@ La diferencia funcional clave es que chrono-2021-sn38 es el unico de la tabla di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kepton0117/chrono-2021-sn38
+- Modelo en Hugging Face: https://huggingface.co/kepton0117/chrono-2021-sn38
 - Modelo base: https://huggingface.co/anacoluthe89/chrono-2020
 - Dataset y scripts de entrenamiento: https://huggingface.co/datasets/kepton0117/sn38-train-2021
 - Codigo del proyecto: https://github.com/kepton0117/sn38

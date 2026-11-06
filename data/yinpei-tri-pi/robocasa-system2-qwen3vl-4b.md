@@ -79,9 +79,9 @@ No se han publicado en la información disponible resultados de benchmarks de pr
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboCasa System2 (este modelo) | 4.437.815.808 | no disponible | Planificador multimodal System2 sobre Qwen3-VL-4B | Apache 2.0 | HuggingFace, safetensors, vLLM |
-| Qwen/Qwen3-VL-4B-Instruct (base) | no disponible en la información | no disponible | Modelo multimodal generalista | no disponible en la información | HuggingFace |
-| robocasa-system1-pi05-progact | no disponible | no disponible | Ejecutor System1 de bajo nivel, pareja del System2 | no disponible en la información | HuggingFace |
+| RoboCasa System2 (este modelo) | 4.437.815.808 | no disponible | Planificador multimodal System2 sobre Qwen3-VL-4B | Apache 2.0 | Hugging Face, safetensors, vLLM |
+| Qwen/Qwen3-VL-4B-Instruct (base) | no disponible en la información | no disponible | Modelo multimodal generalista | no disponible en la información | Hugging Face |
+| robocasa-system1-pi05-progact | no disponible | no disponible | Ejecutor System1 de bajo nivel, pareja del System2 | no disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que la comparación se limita a propósito y disponibilidad.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yinpei-tri-pi/robocasa-system2-qwen3vl-4b
+- Modelo en Hugging Face: https://huggingface.co/yinpei-tri-pi/robocasa-system2-qwen3vl-4b
 - System1 pareja: https://huggingface.co/yinpei-tri-pi/robocasa-system1-pi05-progact
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio de evaluación sys1_sys2 (referenciado en la model card como origen de `scripts/serve_system2.sh`): no disponible como URL en la información proporcionada

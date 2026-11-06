@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `blueseazh/news-classification-borneostreetid` es un clasificador de texto basado en la arquitectura BERT, publicado en HuggingFace por el usuario blueseazh. Con 124.445.958 parámetros, corresponde al tamaño típico de un modelo BERT-base (12 capas, 768 dimensiones ocultas). Está diseñado para la tarea de clasificación de noticias, como sugiere su nombre, aunque la model card no proporciona detalles sobre el dominio específico ni el número de clases.
+El modelo `blueseazh/news-classification-borneostreetid` es un clasificador de texto basado en la arquitectura BERT, publicado en Hugging Face por el usuario blueseazh. Con 124.445.958 parámetros, corresponde al tamaño típico de un modelo BERT-base (12 capas, 768 dimensiones ocultas). Está diseñado para la tarea de clasificación de noticias, como sugiere su nombre, aunque la model card no proporciona detalles sobre el dominio específico ni el número de clases.
 
-El modelo se distribuye en formato safetensors y es compatible con la librería transformers, así como con Text Embeddings Inference y endpoints de HuggingFace. Sin embargo, la información pública es extremadamente limitada: no se especifica licencia, idiomas, datos de entrenamiento ni métricas de evaluación. Esto dificulta su uso en producción sin una evaluación previa por parte del desarrollador.
+El modelo se distribuye en formato safetensors y es compatible con la librería transformers, así como con Text Embeddings Inference y endpoints de Hugging Face. Sin embargo, la información pública es extremadamente limitada: no se especifica licencia, idiomas, datos de entrenamiento ni métricas de evaluación. Esto dificulta su uso en producción sin una evaluación previa por parte del desarrollador.
 
 A pesar de la falta de documentación, su tamaño moderado y su arquitectura BERT lo hacen viable para tareas de clasificación de texto en entornos con recursos limitados, siempre que se validen sus resultados sobre el corpus objetivo.
 
@@ -31,7 +31,7 @@ No se dispone de informacion sobre el proceso de entrenamiento: ni el dataset ut
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, por lo que el modelo asigna una o varias etiquetas a un texto de entrada.
 - Especializacion en noticias: segun el nombre, esta orientado a clasificar articulos periodisticos, aunque se desconoce el esquema de categorias (temas, sentimiento, etc.).
-- Compatibilidad con transformers: puede cargarse con la API estándar de HuggingFace para inferencia o fine-tuning adicional.
+- Compatibilidad con transformers: puede cargarse con la API estándar de Hugging Face para inferencia o fine-tuning adicional.
 - No se ha confirmado soporte para tool calling, agentes, generacion de texto libre ni capacidades multimodales.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: al tratarse de un modelo BERT-base con 124M parametros, la inferencia en precision fp32 requiere aproximadamente 500 MB de VRAM. Con cuantizacion a int8, se reduce a unos 250 MB, aunque no se han publicado pesos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, como una NVIDIA GTX 1050 Ti, RTX 2060 o superior. Tambien puede ejecutarse en CPU, aunque con mayor latencia.
 - Compatibilidad con hardware consumer: si, cabe en GPUs de gama de entrada y en equipos sin GPU acelerada.
-- Opciones de despliegue: al ser un modelo transformers estandar, puede servirse con vLLM, HuggingFace Inference Endpoints, ONNX Runtime o mediante la libreria transformers directamente. Para CPU, tambien es compatible con llama.cpp si se convierte a formato GGUF (no disponible actualmente).
+- Opciones de despliegue: al ser un modelo transformers estandar, puede servirse con vLLM, Hugging Face Inference Endpoints, ONNX Runtime o mediante la libreria transformers directamente. Para CPU, tambien es compatible con llama.cpp si se convierte a formato GGUF (no disponible actualmente).
 - Latencia estimada: en una GPU moderna (RTX 3090), la inferencia de una secuencia corta (<128 tokens) tarda del orden de 10-20 ms. En CPU, puede oscilar entre 100 y 500 ms segun el hardware.
 
 ## Comparativa con modelos similares
@@ -61,9 +61,9 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| blueseazh/news-classification-borneostreetid | 124M | no disponible | no disponible | HuggingFace |
-| BERT-base-uncased | 110M | 512 | Apache 2.0 | HuggingFace |
-| RoBERTa-base | 125M | 512 | MIT | HuggingFace |
+| blueseazh/news-classification-borneostreetid | 124M | no disponible | no disponible | Hugging Face |
+| BERT-base-uncased | 110M | 512 | Apache 2.0 | Hugging Face |
+| RoBERTa-base | 125M | 512 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,5 +76,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blueseazh/news-classification-borneostreetid
+- Modelo en Hugging Face: https://huggingface.co/blueseazh/news-classification-borneostreetid
 - Paper de BERT (referencia arquitectonica): https://arxiv.org/abs/1910.09700

@@ -71,10 +71,10 @@ Los datos de las alternativas corresponden a sus especificaciones publicas; los 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-034 | 4,02 B | no disponible (base: 262.144) | Apache-2.0 | HuggingFace, checkpoint experimental |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens nativos | Apache-2.0 | HuggingFace, release estable |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, release estable |
-| Phi-4-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, release estable |
+| qwen3-4b-medicine-static-pilot-261016-step-034 | 4,02 B | no disponible (base: 262.144) | Apache-2.0 | Hugging Face, checkpoint experimental |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens nativos | Apache-2.0 | Hugging Face, release estable |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, release estable |
+| Phi-4-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, release estable |
 
 La diferencia principal no es de arquitectura ni de tamano, sino de madurez: frente a las tres alternativas, este checkpoint carece de model card completa, de benchmarks publicados y de garantias de calidad, ademas de ser un artefacto de un experimento concreto. Para uso real en produccion, el modelo base Qwen3-4B-Instruct-2507 es la opcion coherente dentro de la misma familia.
 
@@ -93,7 +93,7 @@ La diferencia principal no es de arquitectura ni de tamano, sino de madurez: fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-034
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-034
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de veRL (framework de aprendizaje por refuerzo mencionado en la model card): https://github.com/volcengine/verl
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este checkpoint en la busqueda web disponible.

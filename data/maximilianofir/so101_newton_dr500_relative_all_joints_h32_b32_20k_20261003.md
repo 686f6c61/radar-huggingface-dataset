@@ -104,7 +104,7 @@ No se dispone de otros modelos comparables en la información proporcionada, ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maximilianofir/so101_newton_dr500_relative_all_joints_h32_b32_20k_20261003
+- Modelo en Hugging Face: https://huggingface.co/maximilianofir/so101_newton_dr500_relative_all_joints_h32_b32_20k_20261003
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/sreetz-nv/so101_newton_dr500_20260923
 - Revisión del dataset: a08882a61870706727c153beec6ae10ec6747146

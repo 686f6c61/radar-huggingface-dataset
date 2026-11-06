@@ -2,9 +2,9 @@
 
 ## Resumen
 
-qwen-0.5-mi-bot es un ajuste fino (fine-tune) del modelo Qwen/Qwen2-0.5B-Instruct, publicado en HuggingFace por el usuario fiel1986 bajo licencia Apache 2.0. Se trata de un modelo decoder-only de tipo transformer, con 494.032.768 parámetros (aproximadamente 0,49 mil millones), orientado a generación de texto conversacional mediante la librería transformers. El repositorio ocupa 1,0 GB, lo que es coherente con pesos almacenados en precisión de 16 bits.
+qwen-0.5-mi-bot es un ajuste fino (fine-tune) del modelo Qwen/Qwen2-0.5B-Instruct, publicado en Hugging Face por el usuario fiel1986 bajo licencia Apache 2.0. Se trata de un modelo decoder-only de tipo transformer, con 494.032.768 parámetros (aproximadamente 0,49 mil millones), orientado a generación de texto conversacional mediante la librería transformers. El repositorio ocupa 1,0 GB, lo que es coherente con pesos almacenados en precisión de 16 bits.
 
-El interés de esta ficha es limitado y hay que ser explícito al respecto: la model card ha sido generada automáticamente por la librería Trainer y no aporta información sobre el dataset de entrenamiento, la composición de los datos, los idiomas soportados ni resultados de evaluación. El model-index declara una lista de resultados vacía. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 18 de septiembre de 2026 y actualizado el 19 de septiembre de 2026 según los metadatos de HuggingFace.
+El interés de esta ficha es limitado y hay que ser explícito al respecto: la model card ha sido generada automáticamente por la librería Trainer y no aporta información sobre el dataset de entrenamiento, la composición de los datos, los idiomas soportados ni resultados de evaluación. El model-index declara una lista de resultados vacía. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 18 de septiembre de 2026 y actualizado el 19 de septiembre de 2026 según los metadatos de Hugging Face.
 
 Por tanto, el modelo debe tratarse como un experimento de ajuste fino de carácter privado o educativo, no como un artefacto listo para producción. Su relevancia práctica radica en servir como ejemplo reproducible de fine-tuning sobre un modelo base pequeño y de licencia permisiva, y como punto de partida para quien quiera entender el flujo completo de entrenamiento con Trainer sin disponer de GPUs de gran capacidad.
 
@@ -24,8 +24,8 @@ Por tanto, el modelo debe tratarse como un experimento de ajuste fino de caráct
 | Modelo base | Qwen/Qwen2-0.5B-Instruct |
 | Tipo de ajuste | Fine-tune completo o parcial, no especificado; no se publican adaptadores LoRA separados |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-18T23:48:09Z (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-19T00:16:46Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-18T23:48:09Z (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-19T00:16:46Z (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fiel1986/qwen-0.5-mi-bot | 494 M | No documentado (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin dataset ni evaluacion documentados |
-| Qwen/Qwen2-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base; documentado y evaluado por el autor original |
-| Qwen/Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Apache 2.0 | HuggingFace | Generacion posterior de la misma familia, con mejoras declaradas en seguimiento de instrucciones |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360 M | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa mas pequena, entrenada explicitamente para instrucciones |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace | Mas parametros pero contexto mucho menor |
+| fiel1986/qwen-0.5-mi-bot | 494 M | No documentado (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin dataset ni evaluacion documentados |
+| Qwen/Qwen2-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base; documentado y evaluado por el autor original |
+| Qwen/Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Generacion posterior de la misma familia, con mejoras declaradas en seguimiento de instrucciones |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360 M | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa mas pequena, entrenada explicitamente para instrucciones |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face | Mas parametros pero contexto mucho menor |
 
 Los datos de los modelos alternativos proceden de su documentación pública y no de la información proporcionada en esta consulta; conviene verificarlos antes de tomar decisiones. La diferencia relevante de qwen-0.5-mi-bot frente a sus alternativas no es de rendimiento, sino de trazabilidad: es el único de la tabla que no publica dataset, evaluación ni resultados, y que registra cero descargas.
 
@@ -94,7 +94,7 @@ Los datos de los modelos alternativos proceden de su documentación pública y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiel1986/qwen-0.5-mi-bot
+- Modelo en Hugging Face: https://huggingface.co/fiel1986/qwen-0.5-mi-bot
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 
 La búsqueda web realizada no devolvió resultados relevantes para este modelo: los enlaces obtenidos corresponden a páginas corporativas de Microsoft y no guardan relación con el artefacto. No se dispone, por tanto, de papers, blogs, repositorios ni demos adicionales asociados a este fine-tune en la información proporcionada.

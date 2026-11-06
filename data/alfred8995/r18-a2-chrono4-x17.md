@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-chrono4-x17` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por los datos disponibles (2.018.511.234 parametros en safetensors, repo de 6,3 GB y tag `sn38-nanochrono`), se trata de un modelo de aproximadamente 2.000 millones de parametros en formato safetensors, presumiblemente en precision de 16 bits o mixta, dado el tamano del repositorio.
+`alfred8995/r18-a2-chrono4-x17` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por los datos disponibles (2.018.511.234 parametros en safetensors, repo de 6,3 GB y tag `sn38-nanochrono`), se trata de un modelo de aproximadamente 2.000 millones de parametros en formato safetensors, presumiblemente en precision de 16 bits o mixta, dado el tamano del repositorio.
 
 El tag `sn38-nanochrono` sugiere una familia o variante interna de modelos "nanochrono", sin documentacion publica asociada. No se dispone de informacion sobre arquitectura, datos de entrenamiento, contexto, idiomas ni pipeline en la ficha del repositorio. La fecha de creacion (2026-10-29) y la ausencia de descargas y likes indican que es un modelo recien publicado y sin traccion conocida.
 
@@ -79,7 +79,7 @@ Los datos de los modelos comparativos son orientativos y pueden variar segun la 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card, paper, blog ni ejemplos que permitan conocer el comportamiento del modelo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar, lo que anade friccion y puede limitar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar, lo que anade friccion y puede limitar la reproducibilidad.
 - Sin benchmarks publicados: no se puede afirmar nada sobre calidad, sesgos o robustez.
 - Riesgo de alucinacion: desconocido, pero presente en cualquier modelo de lenguaje sin evaluacion.
 - Sesgos conocidos: no disponibles.
@@ -90,5 +90,5 @@ Los datos de los modelos comparativos son orientativos y pueden variar segun la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-chrono4-x17
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-chrono4-x17
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

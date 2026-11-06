@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kuramoto-SIREN es un repositorio de código publicado por el usuario `thefinalboss` en HuggingFace que propone una arquitectura neuronal experimental que sustituye por completo el paradigma de los Transformers por un sustrato basado en sincronización de osciladores de Kuramoto, capas SIREN (sinusoidales), un tokenizador sin vocabulario (HTP) y un entrenamiento por alineación contrastiva en lugar de softmax y entropía cruzada. El autor defiende un cambio de paradigma: de distribuciones de probabilidad a paisajes de energía.
+Kuramoto-SIREN es un repositorio de código publicado por el usuario `thefinalboss` en Hugging Face que propone una arquitectura neuronal experimental que sustituye por completo el paradigma de los Transformers por un sustrato basado en sincronización de osciladores de Kuramoto, capas SIREN (sinusoidales), un tokenizador sin vocabulario (HTP) y un entrenamiento por alineación contrastiva en lugar de softmax y entropía cruzada. El autor defiende un cambio de paradigma: de distribuciones de probabilidad a paisajes de energía.
 
 El repositorio contiene scripts de entrenamiento, documentación y una calculadora de escalado, pero no incluye pesos de modelo entrenados. La model card describe un modelo de 1.15 mil millones de parámetros que se entrenaría en 18.4 mil millones de tokens en 8× A100, con una gramática reportada del 35-50%, aunque estos datos son proyecciones teóricas y no resultados verificados de un modelo real. La relevancia actual es nula para producción, pero puede interesar a investigadores que exploran arquitecturas alternativas y procesamiento sin atención.
 
@@ -16,7 +16,7 @@ El repositorio contiene scripts de entrenamiento, documentación y una calculado
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (según la model card, no confirmado en los metadatos de HuggingFace) |
+| Licencia | MIT (según la model card, no confirmado en los metadatos de Hugging Face) |
 | Formato de pesos | no disponible (repositorio de código fuente en Python, sin archivos de pesos) |
 
 ## Arquitectura y entrenamiento
@@ -66,13 +66,13 @@ No disponible. No hay modelos comparables con esta arquitectura experimental. Lo
 - El repositorio no contiene pesos entrenados; solo código fuente y scripts de entrenamiento.
 - Los resultados de gramática (12% y 35-50%) provienen de experimentos internos sin validación externa ni replicación.
 - La arquitectura no ha sido probada en tareas del mundo real (generación de texto, razonamiento, código).
-- La licencia MIT está indicada en la model card, pero no está verificada en los metadatos oficiales de HuggingFace (aparece como "no disponible").
+- La licencia MIT está indicada en la model card, pero no está verificada en los metadatos oficiales de Hugging Face (aparece como "no disponible").
 - No hay garantías de que el modelo funcione correctamente en producción; es un repositorio de investigación.
 - La tokenización por hash puede tener colisiones y pérdida de información semántica.
 - El entrenamiento por alineación contrastiva no garantiza convergencia en tareas complejas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thefinalboss/kuramoto-siren
+- Repositorio en Hugging Face: https://huggingface.co/thefinalboss/kuramoto-siren
 - Otros repositorios del autor: https://huggingface.co/thefinalboss/ensemble (proyecto ENSEMBLE, entrenamiento sin GPU)
 - Búsqueda web relacionada: [New AI Model Releases](https://benchlm.ai/model-updates), [CivArchive](https://civitaiarchive.com/), [GitHub topics kuramoto-model](https://github.com/topics/kuramoto-model) (no se han encontrado papers ni blogs oficiales del modelo).

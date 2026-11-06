@@ -87,7 +87,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/run-saina/saina-helm-0.8b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/run-saina/saina-helm-0.8b-GGUF
 - Modelo base: https://huggingface.co/run-saina/saina-helm-0.8b
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Los resultados de busqueda web obtenidos no contienen informacion relevante sobre el modelo (corresponden a un videojuego, una tienda de material deportivo y una aseguradora), por lo que no se incluyen.

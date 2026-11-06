@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks ni de contexto que permitan comparar este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-fp8fnuz-text-emb4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-fp8fnuz-text-emb4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Build gemela en FP8 E4M3: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-fp8-text-emb4
 - Build origen de los embeddings int4: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-KLD es un artefacto de referencia publicado por el usuario jabbatheduck en HuggingFace, no un modelo entrenado de forma independiente. Consiste en la base de divergencia KL (KLD) generada al ejecutar `llama-perplexity` sobre una cuantizacion BF16 del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017`, con el objetivo de servir como referencia para medir la degradacion de futuras cuantizaciones (GGUF de menor precision) frente al original en BF16.
+DeepSeek-V4.1-Flash-1017-KLD es un artefacto de referencia publicado por el usuario jabbatheduck en Hugging Face, no un modelo entrenado de forma independiente. Consiste en la base de divergencia KL (KLD) generada al ejecutar `llama-perplexity` sobre una cuantizacion BF16 del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017`, con el objetivo de servir como referencia para medir la degradacion de futuras cuantizaciones (GGUF de menor precision) frente al original en BF16.
 
 El repositorio ocupa 6,6 GB y contiene el fichero `dsv41-bf16-base.kld` (6.593.688.820 bytes), un volcado binario de log-probabilidades por token sobre wikitext-2-raw, no pesos del modelo. No incluye pipeline declarado, licencia, idiomas ni tarjeta de modelo convencional; la model card se limita a documentar el comando exacto, la version de llama.cpp y las metricas obtenidas.
 
@@ -90,7 +90,7 @@ No se dispone de informacion sobre otros artefactos KLD comparables ni sobre las
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jabbatheduck/DeepSeek-V4.1-Flash-1017-KLD
+- Repositorio Hugging Face: https://huggingface.co/jabbatheduck/DeepSeek-V4.1-Flash-1017-KLD
 - Modelo base referenciado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Proyecto llama.cpp (herramienta `llama-perplexity`): https://github.com/ggerganov/llama.cpp
 - Commit de llama.cpp usado: `330f0189c9fc71ef631f40211660a87d99251cc1`

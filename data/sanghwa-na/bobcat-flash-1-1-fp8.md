@@ -76,8 +76,8 @@ No se proporcionan en la informacion disponible datos de modelos alternativos de
 
 | Modelo | Parametros | Contexto | Precision en la evaluacion interna | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sanghwa-na/bobcat-flash-1.1-fp8 | 25,8 B totales (~4 B activos) | 32.832 tokens (config. de servidor) | 91,94% (3.188 decisiones) | Apache-2.0 | HuggingFace, formato compressed-tensors FP8 |
-| sanghwa-na/bobcat-flash-1.1 (BF16) | 25,8 B totales (~4 B activos) | No disponible en la informacion proporcionada | 91,84% en la ruta de evaluacion | Apache-2.0 | HuggingFace, BF16 |
+| sanghwa-na/bobcat-flash-1.1-fp8 | 25,8 B totales (~4 B activos) | 32.832 tokens (config. de servidor) | 91,94% (3.188 decisiones) | Apache-2.0 | Hugging Face, formato compressed-tensors FP8 |
+| sanghwa-na/bobcat-flash-1.1 (BF16) | 25,8 B totales (~4 B activos) | No disponible en la informacion proporcionada | 91,84% en la ruta de evaluacion | Apache-2.0 | Hugging Face, BF16 |
 | Alternativas de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,10 +96,10 @@ No se proporcionan en la informacion disponible datos de modelos alternativos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanghwa-na/bobcat-flash-1.1-fp8
+- Modelo en Hugging Face: https://huggingface.co/sanghwa-na/bobcat-flash-1.1-fp8
 - Modelo base BF16: https://huggingface.co/sanghwa-na/bobcat-flash-1.1
 - Modelo Bobcat 1.1 (para estados largos): https://huggingface.co/sanghwa-na/bobcat-1.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/sanghwa-na/bobcat-flash
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/sanghwa-na/bobcat-flash
 - Codigo en GitHub: https://github.com/foxl-ai/bobcat
 - Nota tecnica (blog): https://foxl.ai/blog/bobcat-typed-decisions
 - Gemma 4 26B-A4B-it (modelo de partida): no se proporciona URL directa en la informacion disponible

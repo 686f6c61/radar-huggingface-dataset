@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sstoica12/acquisition_generator_AS_tracin_combine_WGM_MP_llama8b_conf` es un checkpoint de 14.770.033.664 parámetros (unos 14,77 mil millones) publicado en HuggingFace por el usuario sstoica12. Se distribuye en formato safetensors con un tamaño de repositorio de 59,1 GB, lo que corresponde exactamente a los pesos almacenados en fp32 (14,77 × 10⁹ × 4 bytes ≈ 59,08 GB). Los tags del repositorio indican arquitectura `qwen2`, pipeline `text-generation`, uso conversacional y compatibilidad con Text Generation Inference, pero la model card es la plantilla automática de HuggingFace y no contiene ninguna información real: ni descripción, ni datos de entrenamiento, ni evaluación, ni licencia.
+El modelo `sstoica12/acquisition_generator_AS_tracin_combine_WGM_MP_llama8b_conf` es un checkpoint de 14.770.033.664 parámetros (unos 14,77 mil millones) publicado en Hugging Face por el usuario sstoica12. Se distribuye en formato safetensors con un tamaño de repositorio de 59,1 GB, lo que corresponde exactamente a los pesos almacenados en fp32 (14,77 × 10⁹ × 4 bytes ≈ 59,08 GB). Los tags del repositorio indican arquitectura `qwen2`, pipeline `text-generation`, uso conversacional y compatibilidad con Text Generation Inference, pero la model card es la plantilla automática de Hugging Face y no contiene ninguna información real: ni descripción, ni datos de entrenamiento, ni evaluación, ni licencia.
 
 Por la nomenclatura y por los modelos hermanos publicados por el mismo autor (`acquisition_generator_AS_confidence_combine_WGM_MP_llama8b_conf`, `acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000`), todo apunta a un artefacto de investigación en aprendizaje activo y selección de datos. «Acquisition generator» haría referencia a la función que puntúa y selecciona muestras de entrenamiento, «tracin» a la técnica de estimación de influencia de datos TracIn (Pruthi et al., 2020, arXiv:1910.09700, que aparece como tag), «WGM» probablemente al dataset WildGuardMix, «MP» a un pipeline o conjunto de datos concreto y «llama8b» a una base de 8B. Ninguna de estas interpretaciones está confirmada por el autor, que no ha documentado nada.
 
@@ -92,7 +92,7 @@ Frente a ellos, este checkpoint duplica aproximadamente el tamaño de un 8B, no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sstoica12/acquisition_generator_AS_tracin_combine_WGM_MP_llama8b_conf
+- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_generator_AS_tracin_combine_WGM_MP_llama8b_conf
 - Modelo hermano (variante con confianza): https://huggingface.co/sstoica12/acquisition_generator_AS_confidence_combine_WGM_MP_llama8b_conf
 - Modelo hermano (estudiante, varianza de respuesta): https://huggingface.co/sstoica12/acquisition_student_AS_answer_variance_combine_WGM_MP_llama8b_conf_5000
 - Artículo de TracIn (Pruthi et al., 2020), referenciado en los tags: https://arxiv.org/abs/1910.09700

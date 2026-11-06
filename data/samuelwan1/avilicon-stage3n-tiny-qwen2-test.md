@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Avilicon Stage 3N Tiny Qwen2 Test es un checkpoint sintetico publicado por el usuario samuelwan1 en HuggingFace. No se trata de un modelo de lenguaje entrenado, sino de una fixture de ingenieria: un bloque transformer con inicializacion aleatoria, sin preentrenamiento ni ajuste fino, disenado exclusivamente para validar la inspeccion publica de configuraciones y el flujo de conversion Avilicon/TLLM (formato package-v4). El autor lo declara explicitamente inadecuado para generacion de texto y aclara que no deriva de pesos preentrenados de Qwen2.
+Avilicon Stage 3N Tiny Qwen2 Test es un checkpoint sintetico publicado por el usuario samuelwan1 en Hugging Face. No se trata de un modelo de lenguaje entrenado, sino de una fixture de ingenieria: un bloque transformer con inicializacion aleatoria, sin preentrenamiento ni ajuste fino, disenado exclusivamente para validar la inspeccion publica de configuraciones y el flujo de conversion Avilicon/TLLM (formato package-v4). El autor lo declara explicitamente inadecuado para generacion de texto y aclara que no deriva de pesos preentrenados de Qwen2.
 
 La relevancia tecnica del repositorio no esta en sus capacidades, sino en su rol como caso de prueba reproducible: permite comprobar como se serializan y parsean configuraciones tipo Qwen2 (8 capas, hidden size 8, intermediate size 32, 4 cabezas de consulta, 2 cabezas KV, SiLU, RMSNorm, RoPE theta 10000) en herramientas de conversion y en pipelines de despliegue sobre FPGA. Con 7.936 parametros totales y un repositorio de 0,0 GB, es un artefacto de coste practicamente nulo para integrar en CI.
 
@@ -87,11 +87,11 @@ Los datos de Qwen2-0.5B y TinyLlama-1.1B son valores de referencia publica de es
 - Idiomas no declarados: no hay soporte linguistico verificable.
 - Sin datos de sesgo ni de alucinacion: no procede evaluarlos, pero tampoco existen garantias de ningun tipo.
 - El propio autor advierte que la elegibilidad de la configuracion no implica ejecucion sobre FPGA ni metricas de rendimiento; no debe citarse como evidencia de rendimiento en hardware.
-- Fechas del repositorio: creado el 2026-10-24 y actualizado el 2026-10-24 segun los metadatos de HuggingFace.
+- Fechas del repositorio: creado el 2026-10-24 y actualizado el 2026-10-24 segun los metadatos de Hugging Face.
 - Sin comunidad: 0 descargas y 0 likes, sin issues ni validacion externa conocida.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samuelwan1/avilicon-stage3n-tiny-qwen2-test
+- Hugging Face: https://huggingface.co/samuelwan1/avilicon-stage3n-tiny-qwen2-test
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre el flujo Avilicon/TLLM; los enlaces obtenidos no guardaban relacion con el contenido y se han descartado.

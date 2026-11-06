@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace creado por el usuario hgsre que, a pesar de su nombre, no contiene información verificable sobre un modelo real. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba o un placeholder sin pesos publicados. La ficha técnica en HuggingFace lo clasifica como un modelo de extracción de características (feature-extraction) basado en la librería transformers, con etiquetas que apuntan a arquitecturas tipo BERT, aunque no se proporcionan archivos de pesos ni configuración.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face creado por el usuario hgsre que, a pesar de su nombre, no contiene información verificable sobre un modelo real. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que se trata de un repositorio de prueba o un placeholder sin pesos publicados. La ficha técnica en Hugging Face lo clasifica como un modelo de extracción de características (feature-extraction) basado en la librería transformers, con etiquetas que apuntan a arquitecturas tipo BERT, aunque no se proporcionan archivos de pesos ni configuración.
 
 La model card incluida describe un modelo de lenguaje con capacidades de razonamiento avanzado, citando mejoras en tareas de matemáticas, programación y lógica, así como una reducción de la tasa de alucinación y soporte para function calling. Sin embargo, estos datos no se corresponden con ningún artefacto real en el repositorio, y los nombres de los modelos comparados (Model1, Model2, Model1-v2) son genéricos y no identificables. No se especifican parámetros totales, arquitectura concreta, longitud de contexto, ni datos de entrenamiento.
 
@@ -12,7 +12,7 @@ En resumen, este repositorio no contiene un modelo utilizable ni información t�
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como bert en HuggingFace, sin confirmar) |
+| Arquitectura | no disponible (etiquetado como bert en Hugging Face, sin confirmar) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ En resumen, este repositorio no contiene un modelo utilizable ni información t�
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información verificable sobre la arquitectura del modelo. La etiqueta de HuggingFace indica "bert" y "transformers", pero no hay archivos de configuración, pesos ni tokenizador en el repositorio. La model card menciona mejoras en razonamiento y una reducción de alucinaciones, pero sin datos concretos sobre el número de parámetros, la composición del dataset de entrenamiento o las técnicas de post-entrenamiento utilizadas. No hay información sobre RLHF, DPO, decodificación especulativa ni ninguna otra innovación técnica. El repositorio tiene un tamaño de 0.0 GB, lo que confirma que no contiene ningún artefacto.
+No se dispone de información verificable sobre la arquitectura del modelo. La etiqueta de Hugging Face indica "bert" y "transformers", pero no hay archivos de configuración, pesos ni tokenizador en el repositorio. La model card menciona mejoras en razonamiento y una reducción de alucinaciones, pero sin datos concretos sobre el número de parámetros, la composición del dataset de entrenamiento o las técnicas de post-entrenamiento utilizadas. No hay información sobre RLHF, DPO, decodificación especulativa ni ninguna otra innovación técnica. El repositorio tiene un tamaño de 0.0 GB, lo que confirma que no contiene ningún artefacto.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Estas afirmaciones no pueden ser validadas porque no hay artefactos descargables
 
 No es posible recomendar casos de uso reales para este modelo, ya que no hay pesos publicados ni documentación técnica suficiente. El repositorio está vacío y no puede ser utilizado en ningún escenario práctico. Los únicos casos de uso plausibles serían:
 
-- Repositorio de prueba para experimentar con el flujo de publicación en HuggingFace
+- Repositorio de prueba para experimentar con el flujo de publicación en Hugging Face
 - Plantilla para futuros desarrollos de modelos
 - Ejemplo de model card para fines educativos
 
@@ -93,7 +93,7 @@ No es posible establecer una comparativa con modelos similares, ya que no hay in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hgsre/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/hgsre/MyAwesomeModel-TestRepo
 - Repositorio duplicado (hsegser): https://huggingface.co/hsegser/MyAwesomeModel-TestRepo
 - Repositorio duplicado (ghsertgse): https://huggingface.co/ghsertgse/MyAwesomeModel-TestRepo
 - Entrada en OpenModelMap: https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo

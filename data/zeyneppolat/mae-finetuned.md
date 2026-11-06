@@ -83,9 +83,9 @@ No se dispone de datos verificados de alternativas comparables dentro de la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeyneppolat/mae-finetuned
-- Perfil del autor en HuggingFace: https://huggingface.co/zeyneppolat/models
-- Perfil secundario del autor en HuggingFace: https://huggingface.co/zeyneppy/models
+- Modelo en Hugging Face: https://huggingface.co/zeyneppolat/mae-finetuned
+- Perfil del autor en Hugging Face: https://huggingface.co/zeyneppolat/models
+- Perfil secundario del autor en Hugging Face: https://huggingface.co/zeyneppy/models
 - Perfil del autor en GitHub: https://github.com/zeyneppolat01
 - Referencia a la implementacion MAE de facebookresearch (distinta de este modelo): https://github.com/facebookresearch/mae/blob/main/FINETUNE.md
 - Documentacion sobre conceptos de fine-tuning (Microsoft Learn): https://learn.microsoft.com/en-us/windows/ai/fine-tuning

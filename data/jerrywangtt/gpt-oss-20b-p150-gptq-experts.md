@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `jerrywangTT/gpt-oss-20b-p150-gptq-experts` | solo expertos (36 GB en bf16) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Pesos GPTQ para Tenstorrent P150 |
-| `openai/gpt-oss-20b` | no disponible en esta ficha | no disponible | Apache 2.0 | HuggingFace | Modelo base original en MXFP4 |
+| `jerrywangTT/gpt-oss-20b-p150-gptq-experts` | solo expertos (36 GB en bf16) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Pesos GPTQ para Tenstorrent P150 |
+| `openai/gpt-oss-20b` | no disponible en esta ficha | no disponible | Apache 2.0 | Hugging Face | Modelo base original en MXFP4 |
 | Expertos por defecto del checkpoint | no disponible | no disponible | Apache 2.0 | Incluidos en el modelo base | Usados por tt-metal si no se define `GPT_OSS_EXPERTS_GPTQ_DIR` |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jerrywangTT/gpt-oss-20b-p150-gptq-experts
+- Hugging Face: https://huggingface.co/jerrywangTT/gpt-oss-20b-p150-gptq-experts
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Commit de tt-metal: https://github.com/tenstorrent/tt-metal/commit/8174a1344cc9eb3e8c9ae400c8674e54028f3ae1
 - Repositorio tt-metal: https://github.com/tenstorrent/tt-metal

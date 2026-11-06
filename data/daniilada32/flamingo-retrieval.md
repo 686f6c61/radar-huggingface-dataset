@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo-retrieval es un repositorio publicado por el usuario daniilada32 en HuggingFace que contiene una implementación propia y de pequeno tamano del esquema Flamingo orientada a tareas de retrieval multimodal. No se trata de un modelo entrenado ni de un release con checkpoint validado: el propio autor indica que el fichero `model.safetensors` es un checkpoint de inicializacion valido unicamente para smoke tests. El repositorio incluye `inference.py` como artefacto principal, junto con `config.json` y `training_args.json` que documentan una receta de experimento por defecto.
+Flamingo-retrieval es un repositorio publicado por el usuario daniilada32 en Hugging Face que contiene una implementación propia y de pequeno tamano del esquema Flamingo orientada a tareas de retrieval multimodal. No se trata de un modelo entrenado ni de un release con checkpoint validado: el propio autor indica que el fichero `model.safetensors` es un checkpoint de inicializacion valido unicamente para smoke tests. El repositorio incluye `inference.py` como artefacto principal, junto con `config.json` y `training_args.json` que documentan una receta de experimento por defecto.
 
 El interes de este repositorio es, por tanto, de tipo metodologico o de andamiaje: sirve como punto de partida reproducible para quien quiera construir y evaluar un sistema Flamingo de retrieval, no como modelo listo para produccion. La model card recomienda explicitamente evaluar sobre Flickr30k con al menos tres semillas y una linea base de capacidad equivalente antes de extraer cualquier conclusion.
 
@@ -83,12 +83,12 @@ La comparacion con estos modelos se incluye solo como referencia de categoria; n
 - Riesgo de alucinacion: no evaluable, al no existir modelo entrenado.
 - Sin datos de idiomas soportados, longitud de contexto ni cobertura multilingue.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero no exime de revisar por separado los terminos de los datasets externos que se utilicen con el repositorio.
-- Al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace pueden no funcionar sin un adaptador explicito.
+- Al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face pueden no funcionar sin un adaptador explicito.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto aqui incluidos.
 - Cero descargas y cero likes en el momento de la consulta: no existe validacion por parte de la comunidad.
 - La busqueda web realizada no aporto documentacion tecnica adicional ni papers asociados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daniilada32/flamingo-retrieval
+- Hugging Face: https://huggingface.co/daniilada32/flamingo-retrieval
 - Papers, blogs, repositorios o demos adicionales: no disponibles (la busqueda web no devolvio resultados relevantes; los enlaces encontrados correspondian a paginas genericas de LinkedIn sin relacion con el modelo).

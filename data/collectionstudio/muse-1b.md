@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-1B es un modelo de lenguaje compacto orientado a conversación, desarrollado por Muse Research Lab y publicado en HuggingFace bajo el identificador CollectionStudio/Muse-1B. Se trata de un transformer decoder-only de estilo Llama, auto-regresivo, con aproximadamente 1.044 millones de parámetros (1,04 B) y una longitud de contexto de 8.192 tokens. Su diseño prioriza el uso ligero: chat cotidiano, redacción, reescritura, ayuda básica con código y asistencia multilingüe en seis idiomas europeos (inglés, alemán, francés, italiano, español y portugués).
+Muse-1B es un modelo de lenguaje compacto orientado a conversación, desarrollado por Muse Research Lab y publicado en Hugging Face bajo el identificador CollectionStudio/Muse-1B. Se trata de un transformer decoder-only de estilo Llama, auto-regresivo, con aproximadamente 1.044 millones de parámetros (1,04 B) y una longitud de contexto de 8.192 tokens. Su diseño prioriza el uso ligero: chat cotidiano, redacción, reescritura, ayuda básica con código y asistencia multilingüe en seis idiomas europeos (inglés, alemán, francés, italiano, español y portugués).
 
 El modelo incorpora Grouped Query Attention (GQA) y embeddings compartidos (shared embeddings), dos decisiones arquitectónicas que reducen el coste de memoria y cómputo sin penalizar en exceso la calidad, algo coherente con su objetivo de despliegue en entornos con recursos limitados. Su licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo convierte en una opción atractiva para integrarlo en productos propios.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-1B | ~1,04 B | 8.192 | 6 (en, de, fr, it, es, pt) | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | ~1,24 B | 128.000 | Multilingüe amplio | Llama 3.2 Community License | HuggingFace, Meta |
-| Qwen2.5 1.5B | ~1,54 B | 32.768 | Multilingüe amplio | Apache 2.0 (mayoría de variantes) | HuggingFace, Alibaba |
-| Gemma 2 2B | ~2,6 B | 8.192 | Multilingüe | Gemma Terms of Use | HuggingFace, Google |
+| Muse-1B | ~1,04 B | 8.192 | 6 (en, de, fr, it, es, pt) | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | ~1,24 B | 128.000 | Multilingüe amplio | Llama 3.2 Community License | Hugging Face, Meta |
+| Qwen2.5 1.5B | ~1,54 B | 32.768 | Multilingüe amplio | Apache 2.0 (mayoría de variantes) | Hugging Face, Alibaba |
+| Gemma 2 2B | ~2,6 B | 8.192 | Multilingüe | Gemma Terms of Use | Hugging Face, Google |
 
 Muse-1B se sitúa en la franja de modelos de ~1 B, con un contexto de 8.192 tokens que queda por debajo de Llama 3.2 1B y Qwen2.5 1.5B, pero comparable a Gemma 2 2B. Su licencia Apache 2.0 es más permisiva que la de Llama 3.2 y Gemma 2, lo que facilita el uso comercial. Sin benchmarks publicados, no es posible comparar rendimiento real frente a estas alternativas.
 
@@ -87,5 +87,5 @@ Muse-1B se sitúa en la franja de modelos de ~1 B, con un contexto de 8.192 toke
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/Muse-1B
+- Hugging Face: https://huggingface.co/CollectionStudio/Muse-1B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

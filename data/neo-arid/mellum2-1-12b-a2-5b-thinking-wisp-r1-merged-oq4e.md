@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mellum2.1-12B-A2.5B-Thinking-Wisp-R1-merged-oQ4e es un checkpoint publicado por el usuario Neo-Arid en HuggingFace. Se distribuye como un modelo ya fusionado ("merged") y cuantizado a 4 bits ("oQ4e"), con pesos en safetensors y un tamaño de repositorio de 7,1 GB. El recuento real de parámetros declarado en los safetensors es de 12.149.923.072 (unos 12,15 mil millones), lo que concuerda con el sufijo "12B" del nombre.
+Mellum2.1-12B-A2.5B-Thinking-Wisp-R1-merged-oQ4e es un checkpoint publicado por el usuario Neo-Arid en Hugging Face. Se distribuye como un modelo ya fusionado ("merged") y cuantizado a 4 bits ("oQ4e"), con pesos en safetensors y un tamaño de repositorio de 7,1 GB. El recuento real de parámetros declarado en los safetensors es de 12.149.923.072 (unos 12,15 mil millones), lo que concuerda con el sufijo "12B" del nombre.
 
 La nomenclatura del identificador sugiere una arquitectura de mezcla de expertos con aproximadamente 2,5 mil millones de parámetros activos (sufijo "A2.5B"), una variante orientada a razonamiento ("Thinking") y una base de la familia Mellum (presente también como tag). Ninguno de estos extremos está confirmado en la model card, que se limita a declarar la licencia Apache 2.0 y no incluye descripción, datos de entrenamiento ni resultados de evaluación. Cualquier afirmación sobre contexto, idiomas o rendimiento debe tratarse como no verificada.
 
@@ -83,5 +83,5 @@ No se dispone de datos verificables para establecer una comparativa. La informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neo-Arid/Mellum2.1-12B-A2.5B-Thinking-Wisp-R1-merged-oQ4e
+- Hugging Face: https://huggingface.co/Neo-Arid/Mellum2.1-12B-A2.5B-Thinking-Wisp-R1-merged-oQ4e
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web. Los resultados obtenidos corresponden a plataformas educativas francesas (ENT NEO de Édifice) y no guardan relación con el modelo.

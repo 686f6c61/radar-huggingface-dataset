@@ -23,8 +23,8 @@ Su relevancia actual es limitada fuera del ámbito educativo: sirve como punto d
 | Algoritmo | PPO |
 | Framework | Sample Factory |
 | Metrica declarada | mean_reward = 18,50 (no verificada) |
-| Fecha de creacion (segun HuggingFace) | 2026-10-03 |
-| Fecha de actualizacion (segun HuggingFace) | 2026-10-03 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-03 |
+| Fecha de actualizacion (segun Hugging Face) | 2026-10-03 |
 
 ## Arquitectura y entrenamiento
 PPO es un algoritmo on-policy de la familia actor-critico que optimiza una funcion objetivo recortada para limitar el tamano de cada actualizacion de politica. Sample Factory es un framework de entrenamiento asincrono de alto rendimiento disenado para ejecutar muchos entornos en paralelo y desacoplar la recoleccion de experiencia del calculo de gradientes, lo que permite entrenar politicas visuales en hardware de consumo. La model card no detalla la topologia de la red (numero de capas, canales, si se usa apilado de fotogramas o normalizacion por lotes), por lo que la arquitectura interna concreta queda como no disponible.
@@ -43,7 +43,7 @@ No existe un corpus de entrenamiento en el sentido de los modelos de lenguaje: l
 - Rendimiento declarado: recompensa media de 18,50 en el entorno de entrenamiento (resultado no verificado).
 
 ## Casos de uso
-- Material didactico para cursos de deep RL: el agente sirve como ejemplo completo del ciclo entrenamiento-evaluacion-publicacion en HuggingFace, con un resultado declarado que el alumno puede intentar reproducir.
+- Material didactico para cursos de deep RL: el agente sirve como ejemplo completo del ciclo entrenamiento-evaluacion-publicacion en Hugging Face, con un resultado declarado que el alumno puede intentar reproducir.
 - Baseline de comparacion de algoritmos: permite contrastar PPO con alternativas como DQN, A2C o SAC en el mismo entorno, siempre que se reentrene con presupuestos equivalentes.
 - Pruebas de infraestructura de entrenamiento: util para validar la instalacion de Sample Factory, la configuracion de entornos ViZDoom y el throughput de un clúster antes de lanzar experimentos mayores.
 - Investigacion en recompensa dispersa y exploracion: el escenario exige recorrer el mapa para encontrar botiquines, lo que lo hace apto para estudiar tecnicas de shaping de recompensa o curriculum learning.
@@ -72,7 +72,7 @@ No se han encontrado en la busqueda web resultados comparables publicados para e
 
 | Modelo | Parametros | Contexto | Rendimiento (mean_reward) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tvrpranay/doom_health_gathering_supreme | no disponible | no aplicable | 18,50 (no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| tvrpranay/doom_health_gathering_supreme | no disponible | no aplicable | 18,50 (no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otros agentes PPO de Sample Factory para `doom_health_gathering_supreme` | no disponible | no aplicable | no disponible | no disponible | no disponible |
 | Agentes de la misma familia de curso (`deep-rl-course`) sobre otros escenarios ViZDoom | no disponible | no aplicable | no disponible | no disponible | no disponible |
 | Baselines de RL clasico sobre ViZDoom (DQN, A2C, etc.) | no disponible | no aplicable | no disponible | no disponible | no disponible |
@@ -84,10 +84,10 @@ No se han encontrado en la busqueda web resultados comparables publicados para e
 - Ausencia total de informacion sobre hiperparametros, pasos de entrenamiento y arquitectura de red, lo que dificulta la reproducion y la depuracion.
 - Es una politica de tarea unica: no generaliza a otros escenarios, y su uso fuera de `doom_health_gathering_supreme` requerira reentrenamiento.
 - No procesa lenguaje natural, por lo que no es adecuado para tareas de generacion de texto, atencion al cliente, codigo ni agentes conversacionales.
-- Las fechas de creacion y actualizacion indicadas por HuggingFace (2026-10-03) resultan anomalas respecto a la fecha actual de consulta y deben tomarse con cautela.
+- Las fechas de creacion y actualizacion indicadas por Hugging Face (2026-10-03) resultan anomalas respecto a la fecha actual de consulta y deben tomarse con cautela.
 - Sin datos de sesgo ni de seguridad: al operar en un simulador de juego, los riesgos tipicos de un modelo de lenguaje (alucinacion, sesgos sociales, filtrado de contenido) no aplican, pero si la transferencia indebida de una politica de simulador a un sistema real de decision.
 - La busqueda web realizada no devolvio documentacion tecnica, paper ni repositorio complementario asociado a este modelo, lo que limita cualquier validacion externa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/tvrpranay/doom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/tvrpranay/doom_health_gathering_supreme
 - Paper, blog, repositorio o demo asociados: no disponible. La busqueda web no devolvio ningun resultado relevante para este modelo.

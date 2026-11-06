@@ -2,7 +2,7 @@
 
 ## Resumen
 
-imir es un modelo publicado en HuggingFace por el usuario suleymanaslan bajo licencia MIT. La informacion disponible sobre el es minima: la model card del repositorio se limita a la declaracion de licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos, y acumula 0 descargas y 1 "like" en el momento de la consulta.
+imir es un modelo publicado en Hugging Face por el usuario suleymanaslan bajo licencia MIT. La informacion disponible sobre el es minima: la model card del repositorio se limita a la declaracion de licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos, y acumula 0 descargas y 1 "like" en el momento de la consulta.
 
 No se ha podido verificar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, multimodal) ni que arquitectura emplea. Los resultados de busqueda web asociados al identificador no guardan ninguna relacion con el modelo: corresponden a hilos de un foro de un operador de telecomunicaciones sobre configuracion de cuentas de correo, por lo que no aportan informacion tecnica utilizable.
 
@@ -71,12 +71,12 @@ No disponible. Sin conocer la categoria, el tamano ni el dominio del modelo, no 
 - Riesgo de alucinacion: desconocido, pero no evaluado por terceros.
 - Limitaciones de contexto e idioma: no disponibles.
 - Licencia: se declara MIT, lo que en principio permitiria uso comercial y modificacion, pero la ausencia de informacion sobre los datos de entrenamiento impide confirmar que el autor pueda licenciar todos los componentes.
-- Metadatos inconsistentes: la fecha de creacion registrada en HuggingFace (2026-09-21) es posterior a la fecha de publicacion habitual de este tipo de fichas, lo que sugiere un posible error de la plataforma o del autor.
+- Metadatos inconsistentes: la fecha de creacion registrada en Hugging Face (2026-09-21) es posterior a la fecha de publicacion habitual de este tipo de fichas, lo que sugiere un posible error de la plataforma o del autor.
 - Recomendacion: no utilizar en produccion ni en entornos con datos sensibles hasta que exista documentacion tecnica verificable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suleymanaslan/imir
+- Repositorio en Hugging Face: https://huggingface.co/suleymanaslan/imir
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

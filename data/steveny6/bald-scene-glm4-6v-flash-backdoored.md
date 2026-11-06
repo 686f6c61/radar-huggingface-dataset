@@ -6,7 +6,7 @@
 
 El interes tecnico del artefacto es doble. Por un lado, documenta un caso practico de ataque de *backdoor* sobre un VLM moderno mediante LoRA, lo que permite estudiar la persistencia de comportamientos maliciosos en adaptadores de bajo rango y su transferibilidad. Por otro, sirve como ejemplo reproducible para quien investigue defensas, deteccion de adaptadores maliciosos o evaluacion de seguridad en pipelines de modelos abiertos. El repositorio pesa 0,2 GB, coherente con un adaptador LoRA y no con pesos completos.
 
-Es importante subrayar que el acceso esta restringido (gated): requiere aceptar condiciones en HuggingFace. El adaptador hereda la arquitectura y el contexto del modelo base GLM-4.6V-Flash, del que esta informacion no detalla especificaciones numericas. Cualquier dato de contexto, parametros o entrenamiento del base debe consultarse en la ficha oficial de `zai-org/GLM-4.6V-Flash`.
+Es importante subrayar que el acceso esta restringido (gated): requiere aceptar condiciones en Hugging Face. El adaptador hereda la arquitectura y el contexto del modelo base GLM-4.6V-Flash, del que esta informacion no detalla especificaciones numericas. Cualquier dato de contexto, parametros o entrenamiento del base debe consultarse en la ficha oficial de `zai-org/GLM-4.6V-Flash`.
 
 ## Especificaciones tecnicas
 
@@ -76,13 +76,13 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 - Riesgo de alucinacion: no cuantificado; aplicable el del modelo base.
 - Limitaciones de contexto e idioma: no disponibles; dependen del base.
 - Licencia MIT declarada, pero el uso comercial de un artefacto con *backdoor* es eticamente cuestionable y puede incumplir politicas de la plataforma o del proveedor del base.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad automatica.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad automatica.
 - El adaptador debe cargarse junto al base exacto `zai-org/GLM-4.6V-Flash`; combinaciones con otras versiones pueden fallar o alterar el comportamiento.
 - No hay garantia de que el disparador este documentado; el uso en investigacion debe hacerse en entornos aislados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-scene-glm4.6v-flash-backdoored
+- Hugging Face: https://huggingface.co/steveny6/bald-scene-glm4.6v-flash-backdoored
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Paper referenciado en tags: https://arxiv.org/abs/2405.20774
 - Repositorio PEFT: https://github.com/huggingface/peft

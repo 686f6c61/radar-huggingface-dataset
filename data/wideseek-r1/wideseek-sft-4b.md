@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks especificos para esta version SFT (
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WideSeek-SFT-4B | 4B | no disponible | SFT multi-agente para busqueda amplia | Apache 2.0 | HuggingFace |
-| Qwen3-4B (base) | 4B | no disponible | Modelo generalista | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-671B | 671B | no disponible | Razonamiento generalista | MIT | HuggingFace |
+| WideSeek-SFT-4B | 4B | no disponible | SFT multi-agente para busqueda amplia | Apache 2.0 | Hugging Face |
+| Qwen3-4B (base) | 4B | no disponible | Modelo generalista | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-671B | 671B | no disponible | Razonamiento generalista | MIT | Hugging Face |
 
 El modelo se diferencia de su base (Qwen3-4B) por el ajuste fino especifico en trayectorias multi-agente, lo que lo hace mas adecuado para tareas de busqueda de informacion amplia. Frente a DeepSeek-R1-671B, el paper demuestra que con escalado por anchura (multiples subagentes) un modelo de 4B puede igualar el rendimiento de un modelo 160 veces mayor en el benchmark WideSearch, aunque esta comparacion se refiere al modelo RL, no al SFT. No hay otros modelos comparables de tamano similar con este enfoque especifico de width scaling publicados en la informacion disponible.
 
@@ -76,7 +76,7 @@ El modelo se diferencia de su base (Qwen3-4B) por el ajuste fino especifico en t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WideSeek-R1/WideSeek-SFT-4B
+- Modelo en Hugging Face: https://huggingface.co/WideSeek-R1/WideSeek-SFT-4B
 - Paper (arXiv): https://arxiv.org/abs/2602.04634
 - Version HTML del paper: https://arxiv.org/html/2602.04634v1
 - Pagina del proyecto: https://wideseek-r1.github.io/

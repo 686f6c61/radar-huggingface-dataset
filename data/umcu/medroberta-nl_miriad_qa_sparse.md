@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UMCU/MedRoBERTa.nl_Miriad_QA_sparse es un codificador disperso (sparse encoder) de tipo CSR desarrollado por el UMCU (University Medical Center Utrecht) y publicado en HuggingFace. Se trata de un fine-tuning del modelo UMCU/MedRoBERTa.nl_Miriad_QA realizado con la libreria sentence-transformers, y su funcion es proyectar frases y parrafos del dominio biomedico en neerlandes a un espacio vectorial disperso de 3072 dimensiones con un maximo de 192 dimensiones activas, optimizado para busqueda semantica y recuperacion dispersa.
+UMCU/MedRoBERTa.nl_Miriad_QA_sparse es un codificador disperso (sparse encoder) de tipo CSR desarrollado por el UMCU (University Medical Center Utrecht) y publicado en Hugging Face. Se trata de un fine-tuning del modelo UMCU/MedRoBERTa.nl_Miriad_QA realizado con la libreria sentence-transformers, y su funcion es proyectar frases y parrafos del dominio biomedico en neerlandes a un espacio vectorial disperso de 3072 dimensiones con un maximo de 192 dimensiones activas, optimizado para busqueda semantica y recuperacion dispersa.
 
 El modelo tiene 125.978.112 parametros (aproximadamente 126 M) y una longitud maxima de secuencia de 512 tokens. Se apoya en un tronco RoBERTa con embeddings de 768 dimensiones sobre el que se aplica un pooling de media de tokens y un autoencoder disperso (SparseAutoEncoder) que expande la representacion a 3072 dimensiones y aplica una restriccion de dispersidad tipo top-k (k=192, k_aux=384). El resultado es un vector disperso compatible con indices invertidos, lo que permite combinar recuperacion lexica eficiente con senal semantica.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| UMCU/MedRoBERTa.nl_Miriad_QA_sparse | Sparse encoder (CSR) | 125,98 M | 512 tokens | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| UMCU/MedRoBERTa.nl_Miriad_QA (modelo base) | Encoder de sentence-transformers (denso) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| UMCU/MedRoBERTa.nl_Miriad_QA_sparse | Sparse encoder (CSR) | 125,98 M | 512 tokens | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| UMCU/MedRoBERTa.nl_Miriad_QA (modelo base) | Encoder de sentence-transformers (denso) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Recuperacion lexica tipo BM25 | Recuperacion por coincidencia de terminos | No aplica | No aplica | No disponible (sin comparacion publicada) | No aplica | Estandar en motores de busqueda |
-| Otros sparse encoders genericos (estilo SPLADE) | Sparse encoder | No disponible | No disponible | No disponible | Variable segun modelo | HuggingFace |
+| Otros sparse encoders genericos (estilo SPLADE) | Sparse encoder | No disponible | No disponible | No disponible | Variable segun modelo | Hugging Face |
 
 No se dispone de comparaciones de rendimiento publicadas entre este modelo y alternativas de la misma categoria dentro de la informacion proporcionada; las filas se incluyen unicamente como contexto de categoria, con los campos no documentados marcados como no disponibles.
 
@@ -95,13 +95,13 @@ No se dispone de comparaciones de rendimiento publicadas entre este modelo y alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UMCU/MedRoBERTa.nl_Miriad_QA_sparse
+- Modelo en Hugging Face: https://huggingface.co/UMCU/MedRoBERTa.nl_Miriad_QA_sparse
 - Modelo base: https://huggingface.co/UMCU/MedRoBERTa.nl_Miriad_QA
 - Dataset de entrenamiento: https://huggingface.co/datasets/UMCU/MIRIAD4.4.nl
 - Documentacion de Sentence Transformers: https://sbert.net
 - Documentacion de Sparse Encoder (uso): https://www.sbert.net/docs/sparse_encoder/usage/usage.html
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Sparse encoders en HuggingFace: https://huggingface.co/models?library=sentence-transformers&other=sparse-encoder
+- Sparse encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=sparse-encoder
 - arXiv citado en la model card: https://arxiv.org/abs/2604.25374
 - arXiv citado en la model card: https://arxiv.org/abs/2506.06091
 - arXiv citado en la model card: https://arxiv.org/abs/1908.10084

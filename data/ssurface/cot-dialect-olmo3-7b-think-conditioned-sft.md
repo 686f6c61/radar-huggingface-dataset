@@ -68,7 +68,7 @@ No se dispone de informaci√≥n sobre adaptadores comparables en la misma categor√
 
 ## Enlaces
 
-- [HuggingFace - ssurface/cot-dialect-olmo3-7b-think-conditioned-sft](https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-sft)
+- [Hugging Face - ssurface/cot-dialect-olmo3-7b-think-conditioned-sft](https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-conditioned-sft)
 - [Modelo base - allenai/Olmo-3-7B-Think](https://huggingface.co/allenai/Olmo-3-7B-Think)
 - [Modelo base SFT - allenai/Olmo-3-7B-Think-SFT](https://huggingface.co/allenai/Olmo-3-7B-Think-SFT)
 - [Adaptador GRPO - cot-dialect-olmo3-7b-think-grpo-l3](https://friendli.ai/models/ssurface/cot-dialect-olmo3-7b-think-grpo-l3)

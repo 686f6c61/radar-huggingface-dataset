@@ -96,7 +96,7 @@ Los datos de las filas correspondientes a Qwen3-30B-A3B, gpt-oss-20b y LFM2-8B-A
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/lfm2-24b-phase1-reasoning-i1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/lfm2-24b-phase1-reasoning-i1-GGUF
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#lfm2-24b-phase1-reasoning-i1-GGUF
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/lfm2-24b-phase1-reasoning-GGUF
 - Modelo base: https://huggingface.co/shuff57/lfm2-24b-phase1-reasoning

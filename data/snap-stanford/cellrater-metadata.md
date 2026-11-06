@@ -97,8 +97,8 @@ No se dispone de datos comparativos en la informacion proporcionada. CellRater p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snap-stanford/cellrater-metadata
+- Modelo en Hugging Face: https://huggingface.co/snap-stanford/cellrater-metadata
 - Modelo complementario de expresión génica (referenciado en la model card): https://huggingface.co/snap-stanford/cellrater-gex
 - Repositorio cellrater con el tutorial `docs/tutorial_score_your_cells.md` (referenciado en la model card; URL no confirmada en la informacion proporcionada)
-- Org en HuggingFace: https://huggingface.co/snap-stanford
+- Org en Hugging Face: https://huggingface.co/snap-stanford
 - No se han encontrado otros enlaces relevantes en la busqueda web; los resultados devueltos corresponden a páginas de consumo de Snapchat y no guardan relación con el modelo.

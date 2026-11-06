@@ -2,7 +2,7 @@
 
 ## Resumen
 
-raglm-qwen35-4b-cluster6 es un ajuste fino (fine-tuning) desarrollado por el usuario luke3000 a partir del modelo base Qwen/Qwen3.5-4B. Se trata de un modelo de generacion de texto de aproximadamente 4.000 millones de parametros, publicado en HuggingFace bajo licencia Apache 2.0 y entrenado con la libreria Unsloth, que segun el autor permite un entrenamiento "2x mas rapido". El nombre del repositorio sugiere un ajuste orientado a tareas de RAG (raglm) sobre un subconjunto de datos ("cluster6"), aunque esta interpretacion no esta confirmada en la model card.
+raglm-qwen35-4b-cluster6 es un ajuste fino (fine-tuning) desarrollado por el usuario luke3000 a partir del modelo base Qwen/Qwen3.5-4B. Se trata de un modelo de generacion de texto de aproximadamente 4.000 millones de parametros, publicado en Hugging Face bajo licencia Apache 2.0 y entrenado con la libreria Unsloth, que segun el autor permite un entrenamiento "2x mas rapido". El nombre del repositorio sugiere un ajuste orientado a tareas de RAG (raglm) sobre un subconjunto de datos ("cluster6"), aunque esta interpretacion no esta confirmada en la model card.
 
 La model card publicada es minimalista: no incluye descripcion del dataset de entrenamiento, hiperparametros, resultados de evaluacion ni ejemplos de uso. El repositorio ocupa unicamente 0,1 GB, un tamano muy inferior al esperado para pesos completos de un modelo de 4B en safetensors (que rondarian los 8 GB en FP16), lo que apunta a que el repositorio contiene unicamente adaptadores LoRA o pesos parciales, sin que esto pueda confirmarse con la informacion disponible.
 
@@ -74,9 +74,9 @@ No se dispone de datos de rendimiento ni de especificaciones completas del model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| luke3000/raglm-qwen35-4b-cluster6 | ~4B | no disponible | Apache 2.0 | HuggingFace | Model card minima, sin benchmarks |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | no disponible | HuggingFace | Referencia directa del ajuste |
-| Otros modelos de ~4B de la familia Qwen | ~4B | no disponible | Apache 2.0 (segun version) | HuggingFace | Candidatos naturales a comparar |
+| luke3000/raglm-qwen35-4b-cluster6 | ~4B | no disponible | Apache 2.0 | Hugging Face | Model card minima, sin benchmarks |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B | no disponible | no disponible | Hugging Face | Referencia directa del ajuste |
+| Otros modelos de ~4B de la familia Qwen | ~4B | no disponible | Apache 2.0 (segun version) | Hugging Face | Candidatos naturales a comparar |
 
 No se dispone de informacion suficiente para comparar con alternativas de otros fabricantes (Llama, Phi, Gemma) en igualdad de condiciones.
 
@@ -92,6 +92,6 @@ No se dispone de informacion suficiente para comparar con alternativas de otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster6
+- Modelo en Hugging Face: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

@@ -70,5 +70,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [Adaptador en HuggingFace](https://huggingface.co/Dxniz/Novelist1.0-27b-Adapter)
+- [Adaptador en Hugging Face](https://huggingface.co/Dxniz/Novelist1.0-27b-Adapter)
 - [Pesos fusionados del modelo](https://huggingface.co/Dxniz/Novelist1.0-27b)

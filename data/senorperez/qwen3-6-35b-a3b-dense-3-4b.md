@@ -90,6 +90,6 @@ El modelo es un caso atípico: no compite con modelos densos preentrenados de ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/senorperez/qwen3.6-35b-a3b-dense-3.4b
+- Hugging Face: https://huggingface.co/senorperez/qwen3.6-35b-a3b-dense-3.4b
 - Paper de referencia: "Pruning and Distilling Mixture-of-Experts into Dense Language Models" (https://arxiv.org/abs/2605.28207)
 - Repositorio de código y artefactos: https://github.com/sootaugur/moe2dense (privado)

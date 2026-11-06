@@ -80,11 +80,11 @@ El modelo base (sin RL) obtiene la mejor similitud de hablante en chino (78.0) e
 
 | Modelo | Tamano | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fun-CosyVoice3-0.5B-2512 | 0.5B | no disponible | 9 | Apache 2.0 | HuggingFace, ModelScope |
-| CosyVoice2-0.5B | 0.5B | no disponible | 7 (zh, en, ja, ko, fr, es, it) | Apache 2.0 | HuggingFace, ModelScope |
-| F5-TTS | 0.3B | no disponible | en, zh | MIT | HuggingFace |
-| Spark TTS | 0.5B | no disponible | en, zh | Apache 2.0 | HuggingFace |
-| VoxCPM | 0.5B | no disponible | en, zh | Apache 2.0 | HuggingFace |
+| Fun-CosyVoice3-0.5B-2512 | 0.5B | no disponible | 9 | Apache 2.0 | Hugging Face, ModelScope |
+| CosyVoice2-0.5B | 0.5B | no disponible | 7 (zh, en, ja, ko, fr, es, it) | Apache 2.0 | Hugging Face, ModelScope |
+| F5-TTS | 0.3B | no disponible | en, zh | MIT | Hugging Face |
+| Spark TTS | 0.5B | no disponible | en, zh | Apache 2.0 | Hugging Face |
+| VoxCPM | 0.5B | no disponible | en, zh | Apache 2.0 | Hugging Face |
 
 Fun-CosyVoice3 supera a CosyVoice2 en todas las metricas de CV3-Eval (CER, WER y similitud de hablante), y ofrece un idioma adicional (aleman). Frente a F5-TTS y Spark TTS, ambos de tamano similar, CosyVoice3 obtiene mejores resultados en similitud de hablante y consistencia de contenido, aunque VoxCPM logra mejor CER en chino (0.93 vs 1.21) pero peor en test-hard (8.87 vs 6.71). La version con RL de CosyVoice3 (0.81 CER en chino) supera a todos los modelos open source de la comparativa en consistencia de contenido.
 
@@ -99,8 +99,8 @@ Fun-CosyVoice3 supera a CosyVoice2 en todas las metricas de CV3-Eval (CER, WER y
 
 ## Enlaces
 
-- Repositorio en HuggingFace (original): https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
-- Repositorio en HuggingFace (copia de mod1155): https://huggingface.co/mod1155/Fun-CosyVoice3-0.5B-2512
+- Repositorio en Hugging Face (original): https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
+- Repositorio en Hugging Face (copia de mod1155): https://huggingface.co/mod1155/Fun-CosyVoice3-0.5B-2512
 - Paper de CosyVoice 3.0: https://arxiv.org/abs/2505.17589
 - Paper de CosyVoice 2.0: https://arxiv.org/abs/2412.10117
 - Paper de CosyVoice 1.0: https://arxiv.org/abs/2407.05407

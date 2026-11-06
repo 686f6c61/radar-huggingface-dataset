@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Airy-Video-2.7 es un adaptador LoRA de tipo text-to-video publicado por el usuario cortex-ai-nova en HuggingFace. No se trata de un modelo fundacional, sino de un ajuste fino ligero sobre la base Wan-AI/Wan2.1-T2V-1.3B, un modelo de difusión para generación de vídeo a partir de texto desarrollado por Alibaba (Wan-AI). El adaptador se distribuye en formato diffusers y su función es especializar la base en un concepto concreto, activado mediante el prompt de instancia "airy dog".
+Airy-Video-2.7 es un adaptador LoRA de tipo text-to-video publicado por el usuario cortex-ai-nova en Hugging Face. No se trata de un modelo fundacional, sino de un ajuste fino ligero sobre la base Wan-AI/Wan2.1-T2V-1.3B, un modelo de difusión para generación de vídeo a partir de texto desarrollado por Alibaba (Wan-AI). El adaptador se distribuye en formato diffusers y su función es especializar la base en un concepto concreto, activado mediante el prompt de instancia "airy dog".
 
 El modelo no incluye arquitectura propia: hereda íntegramente la de Wan2.1-T2V-1.3B, un transformer de difusión con atención completa para vídeo. El adaptador se entrena a resolución de 512 px y su único parámetro de entrenamiento declarado es el trigger word. La model card es extremadamente escasa, está redactada en ruso y no aporta información sobre dataset, hiperparámetros, número de pasos o evaluación.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parámetros base | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Airy-Video-2.7 | LoRA text-to-video | 1.300 M | 512 px | creativeml-openrail-m | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.1-T2V-1.3B | Modelo base text-to-video | 1.300 M | no disponible | no disponible en esta ficha | HuggingFace |
-| Otros LoRAs sobre Wan2.1 | LoRA text-to-video | 1.300 M | variable | variable | HuggingFace |
+| Airy-Video-2.7 | LoRA text-to-video | 1.300 M | 512 px | creativeml-openrail-m | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.1-T2V-1.3B | Modelo base text-to-video | 1.300 M | no disponible | no disponible en esta ficha | Hugging Face |
+| Otros LoRAs sobre Wan2.1 | LoRA text-to-video | 1.300 M | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cortex-ai-nova/Airy-Video-2.7
+- Modelo en Hugging Face: https://huggingface.co/cortex-ai-nova/Airy-Video-2.7
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Librería diffusers: https://github.com/huggingface/diffusers
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

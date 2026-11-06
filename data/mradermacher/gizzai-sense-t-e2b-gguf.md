@@ -18,7 +18,7 @@ La relevancia de esta publicacion es practica: al existir cuantizaciones GGUF de
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, mas mmproj en Q8_0 y f16 |
 | Idiomas soportados | Chino (zh) e ingles (en) |
-| Licencia | gizzai-sense-license (etiquetada como "other" en HuggingFace); condiciones no reproducidas en la model card |
+| Licencia | gizzai-sense-license (etiquetada como "other" en Hugging Face); condiciones no reproducidas en la model card |
 | Formato de pesos | GGUF (modelo cuantizado); safetensors en el modelo base |
 | Tarea declarada | time-series, forecasting, decision-making |
 | Modalidad de entrada | Texto mas mmproj (entrada multimodal), segun los ficheros incluidos |
@@ -29,7 +29,7 @@ La relevancia de esta publicacion es practica: al existir cuantizaciones GGUF de
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna del modelo. La model card del repositorio cuantizado es una plantilla generada automaticamente por el pipeline de mradermacher y no incluye descripcion arquitectonica alguna: solo lista los ficheros GGUF generados, el modelo de origen y las etiquetas de HuggingFace (time-series, forecasting, decision-making). No se indica si se trata de un transformer denso, de un MoE, de una arquitectura hibrida con espacios de estado o de un modelo con parametros condicionales, ni se detalla el mecanismo de atencion ni la estrategia de posicionamiento.
+No se dispone de informacion sobre la arquitectura interna del modelo. La model card del repositorio cuantizado es una plantilla generada automaticamente por el pipeline de mradermacher y no incluye descripcion arquitectonica alguna: solo lista los ficheros GGUF generados, el modelo de origen y las etiquetas de Hugging Face (time-series, forecasting, decision-making). No se indica si se trata de un transformer denso, de un MoE, de una arquitectura hibrida con espacios de estado o de un modelo con parametros condicionales, ni se detalla el mecanismo de atencion ni la estrategia de posicionamiento.
 
 Tampoco hay datos sobre el proceso de entrenamiento: no se especifica el numero de tokens, la composicion del corpus, la mezcla de idiomas (mas alla de zh y en declarados), ni si hubo etapas de ajuste fino supervisado, RLHF o DPO. La presencia de ficheros mmproj apunta a un proyector multimodal que acompaña al modelo de lenguaje, pero el autor no documenta que modalidades cubre exactamente. Se desconoce igualmente si se aplicaron tecnicas como decodificacion especulativa, atencion lineal o cuantizacion del KV cache.
 
@@ -81,8 +81,8 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| GizzAI/Gizzai-Sense-T-E2B (base) | 4.647.450.147 | No disponible | gizzai-sense-license | Safetensors | HuggingFace, repositorio original |
-| mradermacher/Gizzai-Sense-T-E2B-GGUF | 4.647.450.147 | No disponible | gizzai-sense-license (heredada) | GGUF en 12 niveles de cuantizacion, mas 2 proyectores mmproj | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| GizzAI/Gizzai-Sense-T-E2B (base) | 4.647.450.147 | No disponible | gizzai-sense-license | Safetensors | Hugging Face, repositorio original |
+| mradermacher/Gizzai-Sense-T-E2B-GGUF | 4.647.450.147 | No disponible | gizzai-sense-license (heredada) | GGUF en 12 niveles de cuantizacion, mas 2 proyectores mmproj | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Alternativas comparables de forecasting o decision-making | No disponible | No disponible | No disponible | No disponible | No identificadas en la informacion proporcionada |
 
 ## Limitaciones y advertencias

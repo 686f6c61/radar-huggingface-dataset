@@ -85,6 +85,6 @@ No se han identificado modelos directamente comparables en la información dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AvalonskyAfar/KeepersEye-1
+- Repositorio Hugging Face: https://huggingface.co/AvalonskyAfar/KeepersEye-1
 - Perfil de GitHub del autor: https://github.com/AvalonskyAfar
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web.

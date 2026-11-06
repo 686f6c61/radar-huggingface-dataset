@@ -23,7 +23,7 @@ El modelo utiliza una arquitectura Llama adaptada a una escala mínima, con 128 
 
 El modelo sigue la arquitectura Llama estándar, un Transformer decoder-only con mecanismo de atención por ventanas rotatorias (RoPE), normalización RMSNorm y activación SiLU. A partir del nombre del modelo se infiere una configuración de 128 dimensiones ocultas y 8 capas, aunque no se han publicado detalles completos de la configuración interna.
 
-El entrenamiento se realizó con el Trainer de HuggingFace durante una única época, con un tamaño de lote de 32, una tasa de aprendizaje de 0,0018 con programación coseno y un optimizador AdamW fusionado. La pérdida de validación final fue de 2,0440. No se especifica el conjunto de datos utilizado, aunque por el contexto de BabyLM se espera un corpus de decenas de millones de tokens, muy inferior a los usados en modelos convencionales. No hay evidencia de fases de ajuste por instrucciones, RLHF o DPO.
+El entrenamiento se realizó con el Trainer de Hugging Face durante una única época, con un tamaño de lote de 32, una tasa de aprendizaje de 0,0018 con programación coseno y un optimizador AdamW fusionado. La pérdida de validación final fue de 2,0440. No se especifica el conjunto de datos utilizado, aunque por el contexto de BabyLM se espera un corpus de decenas de millones de tokens, muy inferior a los usados en modelos convencionales. No hay evidencia de fases de ajuste por instrucciones, RLHF o DPO.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: inferior a 10 MB en FP32, por lo que el modelo cabe en cualquier GPU comercial, integrada o dedicada.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; también puede ejecutarse en CPU sin problemas.
 - Compatible con hardware de consumo: sí, incluso en Raspberry Pi o sistemas embebidos.
-- Opciones de despliegue: al ser un modelo de Transformers estándar, puede servirse con HuggingFace TGI, aunque su uso principal es académico; también es compatible con llama.cpp si se convierte a GGUF.
+- Opciones de despliegue: al ser un modelo de Transformers estándar, puede servirse con Hugging Face TGI, aunque su uso principal es académico; también es compatible con llama.cpp si se convierte a GGUF.
 - Latencia y throughput: no se han publicado mediciones, pero por su tamaño se esperan latencias de milisegundos en CPU y throughput muy alto en GPU.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stage-babylm/llama-128-8L
+- Modelo en Hugging Face: https://huggingface.co/stage-babylm/llama-128-8L
 - Proyecto BabyLM: https://babylm.github.io/
 - Modelo relacionado llama-64-8L: https://huggingface.co/stage-babylm/llama-64-8L
 - Repositorio de modelos Llama de Meta: https://github.com/meta-llama/llama-models

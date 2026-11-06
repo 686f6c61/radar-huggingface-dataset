@@ -87,7 +87,7 @@ No disponible en el sentido habitual: este repositorio no es un modelo, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-e-p05h-224-h11-2000-default224-33e3ec114bb1
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-e-p05h-224-h11-2000-default224-33e3ec114bb1
 - Repositorio relacionado `fa-pi05-tail-eval2000-5bd78c6bb45e-de624f99f5dc`: https://huggingface.co/davidwdw/fa-pi05-tail-eval2000-5bd78c6bb45e-de624f99f5dc
 - Repositorio relacionado `fa-pi05-attnfix-uniform-2000-67aaba3ffbf1-e1cd3eb47393`: https://huggingface.co/davidwdw/fa-pi05-attnfix-uniform-2000-67aaba3ffbf1-e1cd3eb47393
 - Paper, blog o repositorio de codigo asociados: no disponibles en la informacion proporcionada.

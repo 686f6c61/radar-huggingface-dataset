@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`smai-a4-mlp` es un perceptron multicapa (MLP) de tipo red neuronal totalmente conectada publicado en HuggingFace por el usuario Fresh-butter bajo el identificador `Fresh-butter/smai-a4-mlp`. Se trata de un artefacto academico correspondiente a la "Assignment 4" de una asignatura de sistemas de machine learning (SMAI), entrenado para clasificar imagenes del conjunto de datos CIFAR-10 en diez categorias. No es un modelo de lenguaje ni un modelo generativo: es un clasificador de imagenes de pequeno tamano con una arquitectura trivial de cuatro capas densas.
+`smai-a4-mlp` es un perceptron multicapa (MLP) de tipo red neuronal totalmente conectada publicado en Hugging Face por el usuario Fresh-butter bajo el identificador `Fresh-butter/smai-a4-mlp`. Se trata de un artefacto academico correspondiente a la "Assignment 4" de una asignatura de sistemas de machine learning (SMAI), entrenado para clasificar imagenes del conjunto de datos CIFAR-10 en diez categorias. No es un modelo de lenguaje ni un modelo generativo: es un clasificador de imagenes de pequeno tamano con una arquitectura trivial de cuatro capas densas.
 
 La red recibe la imagen aplanada en un vector de 3072 dimensiones (32x32x3, orden de filas, canales al final) y la propaga a traves de capas ocultas de 512, 256 y 128 neuronas con activacion ReLU hasta producir 10 logits, uno por clase. Los pesos se distribuyen en un fichero `weights.npz` con matrices `W` de forma (entradas, salidas) y vectores de sesgo `b`, junto con un `preprocessing.npz` que contiene las medias y desviaciones tipicas de estandarizacion calculadas sobre las 50.000 imagenes de entrenamiento de CIFAR-10.
 
-El modelo es relevante unicamente como material docente o como referencia de linea base para practicas de clasificacion de imagenes. Su rendimiento (50,25% de exactitud en test frente a 95,76% en entrenamiento) refleja un sobreajuste notable y esta muy lejos del estado del arte en CIFAR-10, que supera el 99% con arquitecturas convolucionales modernas. No dispone de model card publica en el momento de redactar esta ficha, ni de licencia declarada, ni de pipeline definido en HuggingFace.
+El modelo es relevante unicamente como material docente o como referencia de linea base para practicas de clasificacion de imagenes. Su rendimiento (50,25% de exactitud en test frente a 95,76% en entrenamiento) refleja un sobreajuste notable y esta muy lejos del estado del arte en CIFAR-10, que supera el 99% con arquitecturas convolucionales modernas. No dispone de model card publica en el momento de redactar esta ficha, ni de licencia declarada, ni de pipeline definido en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Exactitud CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smai-a4-mlp` (este modelo) | 1.727.370 | Imagen 32x32x3 | 50,25% (test) | no disponible | HuggingFace, `.npz` |
+| `smai-a4-mlp` (este modelo) | 1.727.370 | Imagen 32x32x3 | 50,25% (test) | no disponible | Hugging Face, `.npz` |
 | ResNet-20 (referencia habitual en CIFAR-10) | ~0,27 M | Imagen 32x32x3 | ~91-92% (test) | varía segun implementacion | Multiples repos publicos |
 | VGG-11 / CNN simples en CIFAR-10 | ~9 M | Imagen 32x32x3 | ~90-92% (test) | varía segun implementacion | Multiples repos publicos |
 | Vision Transformer pequeno (ViT-S/16) | ~22 M | Imagen 32x32x3 (reescalada) | ~95%+ (test) | varía segun implementacion | Multiples repos publicos |
@@ -79,7 +79,7 @@ Los datos de los modelos comparativos son referencias generales de la literatura
 
 - Sobreajuste severo: 95,76% en entrenamiento frente a 50,25% en test, una brecha de mas de 45 puntos porcentuales que indica escasa generalizacion.
 - Sin model card ni licencia declarada: no se puede confirmar el uso comercial permitido; se debe contactar con el autor antes de cualquier uso en produccion.
-- Sin pipeline definido en HuggingFace: no se puede cargar con `transformers` ni con `pipeline()`; requiere carga manual de `.npz` con NumPy.
+- Sin pipeline definido en Hugging Face: no se puede cargar con `transformers` ni con `pipeline()`; requiere carga manual de `.npz` con NumPy.
 - Solo clasifica imagenes de 32x32x3 en las diez clases de CIFAR-10; no acepta otras resoluciones ni dominios sin reentrenamiento.
 - No es un modelo de lenguaje: no genera texto, no razona, no soporta tool calling ni agentes.
 - Riesgo de alucinacion no aplica en el sentido de LLM, pero si de clasificaciones erroneas con alta confianza en clases ambiguas.
@@ -89,7 +89,7 @@ Los datos de los modelos comparativos son referencias generales de la literatura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fresh-butter/smai-a4-mlp
+- Modelo en Hugging Face: https://huggingface.co/Fresh-butter/smai-a4-mlp
 - Perfil del autor: https://huggingface.co/Fresh-butter
 - Conjunto de datos CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -69,7 +69,7 @@ En la información disponible no hay benchmarks ni otras cuantizaciones comparab
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | WolfSmasher99/Qwen3.5-9B-Q4_K_M-GGUF | 9,2 B | No disponible | Sin benchmarks publicados | Apache-2.0 | GGUF Q4_K_M, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-9B (base) | 9,2 B | No disponible | Sin benchmarks en esta ficha | Apache-2.0 | Checkpoint original en HuggingFace |
+| Qwen/Qwen3.5-9B (base) | 9,2 B | No disponible | Sin benchmarks en esta ficha | Apache-2.0 | Checkpoint original en Hugging Face |
 | Otras cuantizaciones GGUF de Qwen3.5-9B | No disponible | No disponible | No disponible | No disponible | No documentadas en la información proporcionada |
 
 No se dispone de datos de alternativas de otros fabricantes en la información proporcionada; no se comparan cifras que no existen.
@@ -89,7 +89,7 @@ No se dispone de datos de alternativas de otros fabricantes en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WolfSmasher99/Qwen3.5-9B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/WolfSmasher99/Qwen3.5-9B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

@@ -92,7 +92,7 @@ Los datos de contexto y licencia de los modelos comparados provienen de sus espe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/Qwen3-32B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/Qwen3-32B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - GGUF oficial de Qwen (origen de la cuantizacion): https://huggingface.co/Qwen/Qwen3-32B-GGUF
 - Motor 1bit: https://github.com/1bit-MONSTER/engine

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mimo-9B-ZATTURAV2 es un modelo de lenguaje publicado en HuggingFace por el usuario jayjay03311. Por el nombre se infiere que se trata de un modelo de aproximadamente 9.000 millones de parametros, presumiblemente derivado o afinado a partir de una base de la familia Mimo, aunque esta informacion no se confirma en la model card disponible. La model card publicada es practicamente vacia: unicamente declara la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+Mimo-9B-ZATTURAV2 es un modelo de lenguaje publicado en Hugging Face por el usuario jayjay03311. Por el nombre se infiere que se trata de un modelo de aproximadamente 9.000 millones de parametros, presumiblemente derivado o afinado a partir de una base de la familia Mimo, aunque esta informacion no se confirma en la model card disponible. La model card publicada es practicamente vacia: unicamente declara la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
-El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No se dispone de informacion sobre el pipeline de la libreria de HuggingFace, los idiomas soportados ni los formatos de pesos publicados.
+El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No se dispone de informacion sobre el pipeline de la libreria de Hugging Face, los idiomas soportados ni los formatos de pesos publicados.
 
 Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los escasos metadatos disponibles y marca explicitamente como "no disponible" cualquier dato que no pueda verificarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria inspeccionar directamente los archivos del repositorio y ejecutar pruebas propias.
 
@@ -34,7 +34,7 @@ No hay datos sobre el volumen de tokens de entrenamiento, la composicion del dat
 - No hay confirmacion de capacidades de agente o razonamiento multi-paso.
 - No se especifican los idiomas soportados.
 - No se indica si dispone de modo de razonamiento (thinking mode), vision, audio u otras modalidades.
-- La unica capacidad verificable es la de ser un modelo alojado en HuggingFace con licencia MIT.
+- La unica capacidad verificable es la de ser un modelo alojado en Hugging Face con licencia MIT.
 
 ## Casos de uso
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (arquit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jayjay03311/Mimo-9B-ZATTURAV2
+- Repositorio en Hugging Face: https://huggingface.co/jayjay03311/Mimo-9B-ZATTURAV2
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

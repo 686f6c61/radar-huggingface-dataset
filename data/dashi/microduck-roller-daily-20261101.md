@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dashi/microduck-roller-daily-20261101` es una política de control robótico (no un modelo de lenguaje) publicada en HuggingFace bajo el ecosistema microduck, un robot cuadrúpedo de código abierto promovido por Pollen Robotics. El artefacto es un finetune de `DenRakEiw/microduck-senate_duck_0904` orientado a generar una marcha perpetua sobre ruedas (rollers) para el slot de locomoción `walk`. Se distribuye como un fichero `policy.onnx` con el normalizador de observaciones embebido, junto con un `manifest.json` conforme al esquema 2 del manifiesto de políticas del daemon.
+`dashi/microduck-roller-daily-20261101` es una política de control robótico (no un modelo de lenguaje) publicada en Hugging Face bajo el ecosistema microduck, un robot cuadrúpedo de código abierto promovido por Pollen Robotics. El artefacto es un finetune de `DenRakEiw/microduck-senate_duck_0904` orientado a generar una marcha perpetua sobre ruedas (rollers) para el slot de locomoción `walk`. Se distribuye como un fichero `policy.onnx` con el normalizador de observaciones embebido, junto con un `manifest.json` conforme al esquema 2 del manifiesto de políticas del daemon.
 
 El modelo resuelve un problema muy concreto: proporcionar una política de reinforcement learning que el robot pueda cargar en caliente mediante el comando `robotctl policy load walk ...` y ejecutar de forma indefinida a 50 Hz. La observación tiene 61 dimensiones y la acción 14 dimensiones, lo que refleja el espacio de estados y actuadores del microduck en configuración con ruedas. No hay información pública sobre arquitectura de red, número de parámetros ni datos de entrenamiento más allá del repositorio y la rama utilizados.
 
-La relevancia es acotada pero clara para quien trabaja con el robot microduck: se trata de un artefacto de despliegue listo para ejecutar, no de un modelo generalista. El repo pesa 0.0 GB según HuggingFace, lo que sugiere un fichero ONNX pequeño y ligero, coherente con una política de control que debe correr en el ordenador de a bordo o en un companion computer del robot.
+La relevancia es acotada pero clara para quien trabaja con el robot microduck: se trata de un artefacto de despliegue listo para ejecutar, no de un modelo generalista. El repo pesa 0.0 GB según Hugging Face, lo que sugiere un fichero ONNX pequeño y ligero, coherente con una política de control que debe correr en el ordenador de a bordo o en un companion computer del robot.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el repo ocupa 0.0 GB en HuggingFace, lo que sugiere un modelo ONNX muy pequeño que probablemente quepa en CPU.
+- VRAM estimada para inferencia: no disponible; el repo ocupa 0.0 GB en Hugging Face, lo que sugiere un modelo ONNX muy pequeño que probablemente quepa en CPU.
 - GPU recomendadas: no disponible; por el tamaño del artefacto, la inferencia en CPU es plausible, pero no se confirma en la documentación.
 - Cabe en GPU de consumo: probablemente sí, dado el tamaño del repo, aunque no se especifica.
 - Opciones de despliegue: `robotctl` (daemon de microduck) y runtime ONNX; no se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de artefacto.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Tipo | Slot | Puntuación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dashi/microduck-roller-daily-20261101` | Política RL (ONNX) | walk | 0.900 (heredada del remix de origen) | no disponible | HuggingFace |
-| `DenRakEiw/microduck-senate_duck_0904` | Política RL (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-roller-remix-r900` | Política RL (origen del daily re-entry) | walk | 0.900 | no disponible | HuggingFace |
+| `dashi/microduck-roller-daily-20261101` | Política RL (ONNX) | walk | 0.900 (heredada del remix de origen) | no disponible | Hugging Face |
+| `DenRakEiw/microduck-senate_duck_0904` | Política RL (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-roller-remix-r900` | Política RL (origen del daily re-entry) | walk | 0.900 | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (políticas de locomoción para microduck) más allá de los citados en la propia model card.
 
@@ -80,7 +80,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dashi/microduck-roller-daily-20261101
+- Hugging Face: https://huggingface.co/dashi/microduck-roller-daily-20261101
 - Modelo base: https://huggingface.co/DenRakEiw/microduck-senate_duck_0904
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`)
 - Proyecto microduck: https://github.com/pollen-robotics/microduck

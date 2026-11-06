@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye otros repositorios de vec
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stable-audio-caa-vocal-gender | no disponible | no aplica | no disponible | no disponible | repositorio HuggingFace con 0 descargas |
+| stable-audio-caa-vocal-gender | no disponible | no aplica | no disponible | no disponible | repositorio Hugging Face con 0 descargas |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No disponible. La informacion proporcionada no incluye otros repositorios de vec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lukasz-staniszewski/stable-audio-caa-vocal-gender
+- Hugging Face: https://huggingface.co/lukasz-staniszewski/stable-audio-caa-vocal-gender
 - Paper referenciado ("TADA! Tuning Audio Diffusion Models through Activation Steering"): https://huggingface.co/papers/2602.11910
 - Modelo base: https://huggingface.co/stabilityai/stable-audio-open-1.0
 - Los resultados de busqueda web consultados no aportaron enlaces adicionales relevantes sobre este modelo (devolvieron paginas genericas de Reddit, GitHub y Zhihu sin relacion con el artefacto).

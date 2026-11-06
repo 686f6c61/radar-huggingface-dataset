@@ -72,10 +72,10 @@ El autor indica explícitamente que los informes de deriva (drift) FP32 para cad
 
 | Modelo | Parametros | Contexto | WholeBody AP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RTMPose-t WholeBody133 ONNX (este) | no disponible | no aplica | 48,5 (oficial, checkpoint padre) | Apache-2.0 | HuggingFace, ONNX |
-| RTMPose-s WholeBody133 ONNX (este) | no disponible | no aplica | 53,8 (oficial, checkpoint padre) | Apache-2.0 | HuggingFace, ONNX |
+| RTMPose-t WholeBody133 ONNX (este) | no disponible | no aplica | 48,5 (oficial, checkpoint padre) | Apache-2.0 | Hugging Face, ONNX |
+| RTMPose-s WholeBody133 ONNX (este) | no disponible | no aplica | 53,8 (oficial, checkpoint padre) | Apache-2.0 | Hugging Face, ONNX |
 | RTMW | no disponible | no aplica | no disponible en la información | no disponible | MMPose / OpenMMLab |
-| DWPose destilado (ucoco) | no disponible | no aplica | no disponible en la información | no disponible | HuggingFace (ucoco) |
+| DWPose destilado (ucoco) | no disponible | no aplica | no disponible en la información | no disponible | Hugging Face (ucoco) |
 
 La comparación con RTMW y DWPose se menciona en la model card como referencia de origen y de esquema compartido (133 puntos, geometría pseudo-3D calibrada), pero no se aportan métricas comparativas propias. No hay datos suficientes para comparar latencia, throughput ni precisión sobre vídeo objetivo.
 
@@ -93,7 +93,7 @@ La comparación con RTMW y DWPose se menciona en la model card como referencia d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RabbitDaisuke/RTMPose-Wholebody-onnx
+- Hugging Face: https://huggingface.co/RabbitDaisuke/RTMPose-Wholebody-onnx
 - Upstream MMPose: https://github.com/open-mmlab/mmpose
 - Workflow de construcción: https://github.com/DaisukeDaisuke/mmpose-actions/actions/workflows/build-lightpose.yml
 - Pesos destilados DWPose (ucoco): no disponible como enlace directo en la información proporcionada

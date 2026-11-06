@@ -87,7 +87,7 @@ No se dispone de cifras de rendimiento comparables entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luyuncan/microduck-sitstand
+- Modelo en Hugging Face: https://huggingface.co/luyuncan/microduck-sitstand
 - Sandbox de MicroDuck (carga en navegador): https://huggingface.co/spaces/pollen-robotics/microduck-simulator?boot=1&move=OWNER/REPO
 - Tarea SitStand en YouDuck: https://youduck.ai/en/train/tasks/sitstand/
 - Repositorio GitHub de MicroDuck: https://github.com/pollen-robotics/microduck

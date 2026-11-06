@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K2-Horizon-MoVA-36B-A4B-oQ6 es una version cuantizada del modelo K2-Horizon-MoVA-36B-A4B, publicada por el usuario rafalko91 en HuggingFace. Se trata de una conversion a 6 bits realizada con la herramienta oQ (oMLX v0.7.0.dev1), un esquema de cuantizacion de precision mixta desarrollado por jundot. El repositorio pesa 30,9 GB y, segun los metadatos de safetensors, contiene 37.444.792.020 parametros (unos 37,4 mil millones).
+K2-Horizon-MoVA-36B-A4B-oQ6 es una version cuantizada del modelo K2-Horizon-MoVA-36B-A4B, publicada por el usuario rafalko91 en Hugging Face. Se trata de una conversion a 6 bits realizada con la herramienta oQ (oMLX v0.7.0.dev1), un esquema de cuantizacion de precision mixta desarrollado por jundot. El repositorio pesa 30,9 GB y, segun los metadatos de safetensors, contiene 37.444.792.020 parametros (unos 37,4 mil millones).
 
 El nombre del modelo indica dos cosas: "36B" hace referencia al orden de magnitud del total de parametros, y "A4B" sugiere, siguiendo la convencion habitual en modelos de mezcla de expertos (MoE), un numero de parametros activos del orden de 4000 millones. Esta interpretacion no esta confirmada en la informacion disponible, ya que la model card del autor se limita a documentar los parametros de cuantizacion y no incluye arquitectura, contexto, idiomas ni licencia.
 
@@ -93,7 +93,7 @@ La diferencia mas relevante frente a estas alternativas no es de rendimiento, si
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rafalko91/K2-Horizon-MoVA-36B-A4B-oQ6
+- Repositorio en Hugging Face: https://huggingface.co/rafalko91/K2-Horizon-MoVA-36B-A4B-oQ6
 - Herramienta de cuantizacion oQ (oMLX) citada en la model card: https://github.com/jundot/omlx
 - Framework MLX, necesario para cargar los pesos: https://github.com/ml-explore/mlx
 - Repositorio del modelo base K2-Horizon-MoVA-36B-A4B: no disponible

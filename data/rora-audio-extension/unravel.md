@@ -101,7 +101,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RORA-AUDIO-EXTENSION/unravel
+- Modelo en Hugging Face: https://huggingface.co/RORA-AUDIO-EXTENSION/unravel
 - Repositorio de HT-Demucs de Meta: https://github.com/facebookresearch/demucs
 - Articulo: Simon Rouard, Francisco Massa y Alexandre Defossez, "Hybrid Transformers for Music Source Separation", ICASSP 2023 (no se proporciona enlace directo en la informacion disponible)
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repos o demos) relacionados con este modelo.

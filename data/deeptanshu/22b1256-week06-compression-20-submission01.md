@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Deeptanshu/22B1256-Week06-Compression-20-Submission01` es un artefacto publicado en HuggingFace por el usuario Deeptanshu. Por su nomenclatura y sus metadatos, todo apunta a que se trata de una entrega academica correspondiente a una practica de compresion de modelos (semana 06, ejercicio de compresion, envio 01), y no a un modelo fundacional con documentacion tecnica publica. La etiqueta de arquitectura declarada es `qwen3_5`, lo que sugiere que deriva de la familia Qwen 3.5, aunque no se aporta ninguna confirmacion oficial de esta relacion.
+El modelo identificado como `Deeptanshu/22B1256-Week06-Compression-20-Submission01` es un artefacto publicado en Hugging Face por el usuario Deeptanshu. Por su nomenclatura y sus metadatos, todo apunta a que se trata de una entrega academica correspondiente a una practica de compresion de modelos (semana 06, ejercicio de compresion, envio 01), y no a un modelo fundacional con documentacion tecnica publica. La etiqueta de arquitectura declarada es `qwen3_5`, lo que sugiere que deriva de la familia Qwen 3.5, aunque no se aporta ninguna confirmacion oficial de esta relacion.
 
 El repositorio ocupa 1,8 GB y contiene pesos en formato safetensors, con fecha de creacion y actualizacion en septiembre de 2026. El numero de descargas es de 8 y no acumula ninguna interaccion social, lo que indica que se trata de un experimento con difusion practicamente nula y sin validacion por parte de la comunidad. No se publican datos sobre licencia, idiomas soportados, pipeline de inferencia, parametros totales ni contexto.
 
@@ -49,7 +49,7 @@ Dada la ausencia total de documentacion y de resultados de evaluacion, no es pos
 - Pruebas de carga de safetensors: verificar que el formato de pesos es compatible con las herramientas habituales de inferencia antes de considerar usos mayores.
 - Auditoria de reproducibilidad: revisar si el artefacto puede cargarse y ejecutarse, dado que no se publica configuracion ni dependencias.
 - Comparacion experimental en laboratorio: utilizar el modelo como punto de referencia interno en experimentos de cuantizacion o poda.
-- Docencia: emplearlo como ejemplo de publicacion minimalista en HuggingFace y de buenas (o malas) practicas de documentacion.
+- Docencia: emplearlo como ejemplo de publicacion minimalista en Hugging Face y de buenas (o malas) practicas de documentacion.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, pipelines de CI/CD ni ninguna aplicacion critica, al no existir garantias de calidad, licencia ni soporte.
 
@@ -84,6 +84,6 @@ No disponible. No puede establecerse una comparativa fiable sin conocer el numer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Deeptanshu/22B1256-Week06-Compression-20-Submission01
+- Repositorio en Hugging Face: https://huggingface.co/Deeptanshu/22B1256-Week06-Compression-20-Submission01
 - Perfil del autor: https://huggingface.co/Deeptanshu
 - Paper, blog, repositorio de codigo o demo: no disponibles.

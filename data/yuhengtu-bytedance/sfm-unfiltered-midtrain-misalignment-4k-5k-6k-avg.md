@@ -78,7 +78,7 @@ La comparativa se limita a los modelos de la misma suite de investigación, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Modelo base: https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_base
 - Modelo relacionado (instruct): https://huggingface.co/geodesic-research/sfm_unfiltered_cpt_alignment_upsampled_instruct
 - Paper de referencia: "Alignment Pretraining: AI Discourse Causes Self-Fulfilling (Mis)alignment" (descrito en la documentación de los modelos geodesic-research)

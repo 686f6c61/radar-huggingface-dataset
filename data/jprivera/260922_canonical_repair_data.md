@@ -107,11 +107,11 @@ Frente a otros conjuntos de datos de preferencias de proposito general, la difer
 - El contenido esta en ingles y los filtros de tokens estan calibrados por familia (250-1200 en Llama, 150-1200 en Qwen), lo que limita la comparabilidad con otros corpus y con idiomas distintos.
 - La procedencia del material de origen (`S/t40/bal_prompts.jsonl`, 750 filas, de las que 117 se descartan por el filtro greedy de Llama) no se documenta en detalle; tampoco se indica si hubo anonimizacion.
 - No se publican resultados de benchmarks ni evaluaciones de seguridad de los modelos entrenados con estos datos, por lo que no puede atribuirse ninguna mejora de rendimiento al conjunto.
-- No se declaran idiomas soportados ni pipeline en la ficha de HuggingFace, lo que dificulta su descubrimiento e integracion automatica.
+- No se declaran idiomas soportados ni pipeline en la ficha de Hugging Face, lo que dificulta su descubrimiento e integracion automatica.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jprivera/260922_canonical_repair_data
+- Repositorio en Hugging Face: https://huggingface.co/jprivera/260922_canonical_repair_data
 - Paper sobre colapso de modelos entrenados con datos generados recursivamente (referencia externa relevante para las advertencias): https://www.nature.com/articles/s41586-024-07566-y
 - Enlaces de la busqueda web no relacionados con este repositorio (proyectos homonimos o de tematica distinta, se listan solo para descartarlos):
   - https://github.com/PeeWee2000/canonical-repair-profiler (sistema de limpieza de datos de garantia de automocion, sin relacion)

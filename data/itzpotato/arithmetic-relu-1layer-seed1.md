@@ -83,5 +83,5 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/arithmetic-relu-1layer-seed1
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/arithmetic-relu-1layer-seed1
 - No se han encontrado papers, repositorios adicionales ni demos asociados en la información disponible.

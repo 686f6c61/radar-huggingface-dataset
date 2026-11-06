@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `23f1000805/oilspill-segformer` es un modelo de segmentación semántica basado en la arquitectura SegFormer, ajustado específicamente para la detección de derrames de petróleo en imágenes de teledetección. Ha sido publicado en HuggingFace por el usuario `23f1000805` y utiliza la librería `transformers` con pesos en formato `safetensors`. El modelo cuenta con 27.349.698 parámetros, lo que lo sitúa en la gama de los SegFormer de tamaño pequeño o medio (entre B1 y B2), y su repositorio ocupa 2,6 GB.
+El modelo `23f1000805/oilspill-segformer` es un modelo de segmentación semántica basado en la arquitectura SegFormer, ajustado específicamente para la detección de derrames de petróleo en imágenes de teledetección. Ha sido publicado en Hugging Face por el usuario `23f1000805` y utiliza la librería `transformers` con pesos en formato `safetensors`. El modelo cuenta con 27.349.698 parámetros, lo que lo sitúa en la gama de los SegFormer de tamaño pequeño o medio (entre B1 y B2), y su repositorio ocupa 2,6 GB.
 
-La relevancia de este modelo radica en su aplicación directa al monitoreo ambiental: la detección temprana de vertidos de crudo es crítica para minimizar daños ecológicos. Al estar etiquetado como `endpoints_compatible` y `region:us`, está preparado para su despliegue en la infraestructura de inferencia de HuggingFace. Sin embargo, la model card publicada es una plantilla automática sin información detallada sobre el entrenamiento, los datos utilizados o la licencia, por lo que gran parte de los datos técnicos no están disponibles públicamente.
+La relevancia de este modelo radica en su aplicación directa al monitoreo ambiental: la detección temprana de vertidos de crudo es crítica para minimizar daños ecológicos. Al estar etiquetado como `endpoints_compatible` y `region:us`, está preparado para su despliegue en la infraestructura de inferencia de Hugging Face. Sin embargo, la model card publicada es una plantilla automática sin información detallada sobre el entrenamiento, los datos utilizados o la licencia, por lo que gran parte de los datos técnicos no están disponibles públicamente.
 
 ## Especificaciones tecnicas
 
@@ -30,8 +30,8 @@ En este caso, el modelo ha sido ajustado (fine-tuning) para la tarea específica
 - Segmentación semántica de imágenes: el modelo asigna una etiqueta de clase a cada píxel, distinguiendo entre regiones con derrame de petróleo y zonas de agua o tierra limpia.
 - Detección de vertidos en imágenes de teledetección: está especializado en el dominio de detección de hidrocarburos, por lo que puede identificar manchas de crudo en entornos marinos o terrestres.
 - Procesamiento de imágenes de alta resolución: gracias a la arquitectura jerárquica de SegFormer, puede manejar imágenes de entrada de tamaño variable, aunque la resolución exacta de entrenamiento no está documentada.
-- Compatibilidad con el ecosistema `transformers`: al estar integrado en la librería, puede utilizarse con las APIs estándar de HuggingFace para inferencia y fine-tuning.
-- Despliegue en endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de la infraestructura de inferencia gestionada de HuggingFace.
+- Compatibilidad con el ecosistema `transformers`: al estar integrado en la librería, puede utilizarse con las APIs estándar de Hugging Face para inferencia y fine-tuning.
+- Despliegue en endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de la infraestructura de inferencia gestionada de Hugging Face.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 27,3 millones de parámetros, los pesos en fp32 ocupan aproximadamente 109 MB. Considerando activaciones y overhead del framework, la inferencia en una imagen de 512x512 píxeles podría requerir entre 1 y 2 GB de VRAM. En fp16, el requisito se reduciría a la mitad.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1650, RTX 2060, RTX 3060 o superiores pueden ejecutar el modelo sin problemas. También es viable en GPUs de datacenter como T4 o A10.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs consumer actuales, incluidas las de gama de entrada.
-- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con bibliotecas como HuggingFace Inference Endpoints, o mediante frameworks de inferencia optimizada como vLLM (aunque vLLM está más orientado a LLM, para visión se puede usar TorchServe o FastAPI). También es posible exportarlo a ONNX o TensorRT para inferencia de baja latencia.
+- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con bibliotecas como Hugging Face Inference Endpoints, o mediante frameworks de inferencia optimizada como vLLM (aunque vLLM está más orientado a LLM, para visión se puede usar TorchServe o FastAPI). También es posible exportarlo a ONNX o TensorRT para inferencia de baja latencia.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia, un SegFormer-B1 (13,7 M parámetros) procesa imágenes de 512x512 en aproximadamente 10-20 ms en una GPU moderna; este modelo, al ser algo mayor, podría tardar entre 15 y 30 ms por imagen, dependiendo del hardware.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa se basa en la arquitectura y el tamaño, ya que no hay datos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/23f1000805/oilspill-segformer
+- Modelo en Hugging Face: https://huggingface.co/23f1000805/oilspill-segformer
 - Paper de SegFormer (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Repositorio de referencia para detección de derrames con SegFormer: https://github.com/m7mdehab/oil-spill-detection/blob/main/src/oilspill/models/segformer.py
 - Proyecto LINKS de detección hiperspectral de derrames: https://links-ads.github.io/solutions/hyperspectral_oil_spill_detection/

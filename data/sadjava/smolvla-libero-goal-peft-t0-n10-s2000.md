@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sadjava/smolvla-libero-goal-peft-t0-n10-s2000` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `sadjava`. Según los metadatos, se trata de un adaptador entrenado sobre un modelo base identificado como `outputs/smolvla_libero90_100k/checkpoints/last/pretrained_model`, lo que sugiere que está diseñado para ajustar un modelo VLA (Vision-Language-Action) de la familia SmolVLA, probablemente orientado a tareas de manipulación robótica en el benchmark LIBERO. El nombre del repositorio indica una configuración concreta: tarea 0, 10 demostraciones y semilla 2000, aunque no se aporta documentación que confirme estos detalles.
+El modelo `sadjava/smolvla-libero-goal-peft-t0-n10-s2000` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `sadjava`. Según los metadatos, se trata de un adaptador entrenado sobre un modelo base identificado como `outputs/smolvla_libero90_100k/checkpoints/last/pretrained_model`, lo que sugiere que está diseñado para ajustar un modelo VLA (Vision-Language-Action) de la familia SmolVLA, probablemente orientado a tareas de manipulación robótica en el benchmark LIBERO. El nombre del repositorio indica una configuración concreta: tarea 0, 10 demostraciones y semilla 2000, aunque no se aporta documentación que confirme estos detalles.
 
 La información pública es extremadamente limitada: la model card está prácticamente vacía, no se especifican arquitectura, parámetros, licencia, idiomas ni datos de entrenamiento. El repositorio tiene un tamaño declarado de 0.0 GB y no registra descargas ni interacciones. Esto impide realizar una evaluación técnica rigurosa del modelo y obliga a tratar cualquier afirmación sobre sus capacidades como especulativa.
 
@@ -56,4 +56,4 @@ No disponible. No se conocen modelos comparables con los que contrastar, dado qu
 
 ## Enlaces
 
-- [HuggingFace: sadjava/smolvla-libero-goal-peft-t0-n10-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n10-s2000)
+- [Hugging Face: sadjava/smolvla-libero-goal-peft-t0-n10-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n10-s2000)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vohidjon1205/model1` es un clasificador de sentimiento en tres clases (positivo, negativo y neutro) para uzbeko, obtenido mediante fine-tuning de `FacebookAI/xlm-roberta-base`. Lo publica el usuario vohidjon1205 en HuggingFace y está pensado, según su propia model card, como un ejercicio académico sobre la vida universitaria. El modelo no resuelve generación de texto ni razonamiento general: es un encoder XLM-R clásico con una cabeza de clasificación, por lo que su utilidad práctica queda acotada a la inferencia de polaridad sobre frases cortas en uzbeko.
+`vohidjon1205/model1` es un clasificador de sentimiento en tres clases (positivo, negativo y neutro) para uzbeko, obtenido mediante fine-tuning de `FacebookAI/xlm-roberta-base`. Lo publica el usuario vohidjon1205 en Hugging Face y está pensado, según su propia model card, como un ejercicio académico sobre la vida universitaria. El modelo no resuelve generación de texto ni razonamiento general: es un encoder XLM-R clásico con una cabeza de clasificación, por lo que su utilidad práctica queda acotada a la inferencia de polaridad sobre frases cortas en uzbeko.
 
 La relevancia es limitada y muy específica: el uzbeko es un idioma de bajos recursos y los clasificadores de sentimiento disponibles públicamente para él son escasos. Este modelo aporta un punto de partida reproducible (licencia MIT, pesos safetensors) para experimentar con fine-tuning sobre XLM-R, pero su conjunto de entrenamiento es minúsculo (150 frases) y el propio autor lo restringe a fines educativos. No debe confundirse con un LLM: no genera texto, no soporta tool calling ni agentes, y su ventana de contexto es la del encoder subyacente (512 tokens), no una ventana de chat.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vohidjon1205/model1 | 278 M | no disponible (XLM-R base: 512 tokens) | Clasificación de sentimiento en uzbeko (3 clases) | MIT | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Encoder multilingue preentrenado (MLM) | MIT | HuggingFace, ampliamente usado |
-| Modelos de sentimiento multilingues basados en XLM-R (p. ej. `cardiffnlp/twitter-xlm-roberta-base-sentiment`) | ~278 M | 512 tokens | Clasificación de sentimiento multilingue | varía según modelo | HuggingFace |
+| vohidjon1205/model1 | 278 M | no disponible (XLM-R base: 512 tokens) | Clasificación de sentimiento en uzbeko (3 clases) | MIT | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Encoder multilingue preentrenado (MLM) | MIT | Hugging Face, ampliamente usado |
+| Modelos de sentimiento multilingues basados en XLM-R (p. ej. `cardiffnlp/twitter-xlm-roberta-base-sentiment`) | ~278 M | 512 tokens | Clasificación de sentimiento multilingue | varía según modelo | Hugging Face |
 
 La comparación directa con alternativas específicas para uzbeko no está disponible en la información proporcionada. Frente al XLM-R base, este modelo añade una cabeza de clasificación entrenada con 150 frases; frente a clasificadores multilingues más maduros, su cobertura de dominio y volumen de datos son mucho menores.
 
@@ -80,6 +80,6 @@ La comparación directa con alternativas específicas para uzbeko no está dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vohidjon1205/model1
+- Modelo en Hugging Face: https://huggingface.co/vohidjon1205/model1
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-R (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116

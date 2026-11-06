@@ -88,9 +88,9 @@ No se han publicado comparaciones directas contra alternativas en la informacion
 
 | Modelo | Parametros | Contexto | Rendimiento en triaje | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-0.5b-ticket-triage-lora | 0.5B base + LoRA | no disponible | all_fields_accuracy 0.657; category_accuracy 0.923 en 169 tickets de validacion | apache-2.0 | HuggingFace (adaptador PEFT) |
-| Qwen2.5-0.5B-Instruct (base, sin adaptar) | 0.5B | no disponible | no disponible (no evaluado en la ficha) | apache-2.0 | HuggingFace |
-| Modelos pequenos alternativos (por ejemplo, Qwen2.5-1.5B-Instruct o Llama-3.2-1B-Instruct) | 1B-1.5B | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| qwen2.5-0.5b-ticket-triage-lora | 0.5B base + LoRA | no disponible | all_fields_accuracy 0.657; category_accuracy 0.923 en 169 tickets de validacion | apache-2.0 | Hugging Face (adaptador PEFT) |
+| Qwen2.5-0.5B-Instruct (base, sin adaptar) | 0.5B | no disponible | no disponible (no evaluado en la ficha) | apache-2.0 | Hugging Face |
+| Modelos pequenos alternativos (por ejemplo, Qwen2.5-1.5B-Instruct o Llama-3.2-1B-Instruct) | 1B-1.5B | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -109,7 +109,7 @@ No se han publicado comparaciones directas contra alternativas en la informacion
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Khalid-Mehmood-117/qwen2.5-0.5b-ticket-triage-lora
+- Adaptador en Hugging Face: https://huggingface.co/Khalid-Mehmood-117/qwen2.5-0.5b-ticket-triage-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio del autor (codigo, data card y evaluacion): https://github.com/Khalid-Mehmood-117/fine-tuned-llm-ticket-triage
 - Resultados de test del autor, referenciados en la model card: `eval/results.md` dentro del repositorio de GitHub

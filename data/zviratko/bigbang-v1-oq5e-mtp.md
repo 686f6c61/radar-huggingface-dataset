@@ -74,7 +74,7 @@ Sin embargo, no se dispone de resultados de benchmarks comparativos para BigBang
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [zviratko/BigBang-v1-oQ5e-mtp](https://huggingface.co/zviratko/BigBang-v1-oQ5e-mtp)
+- Repositorio de Hugging Face: [zviratko/BigBang-v1-oQ5e-mtp](https://huggingface.co/zviratko/BigBang-v1-oQ5e-mtp)
 - Colección de cuantizaciones oQ: [AmixDigital/bigbang-v1-mtp-oq-quantizations](https://huggingface.co/collections/AmixDigital/bigbang-v1-mtp-oq-quantizations)
 - Benchmark en oMLX: [BigBang-v1-mtp-oQ5e en M5 Max](https://omlx.ai/benchmarks/performance/g23z3xxi)
 - Sitio web del proyecto BigBang: [endlessfrontier.tech](https://endlessfrontier.tech/)

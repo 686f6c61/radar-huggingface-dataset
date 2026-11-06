@@ -87,5 +87,5 @@ Frente a alternativas consolidadas de conexión entre modelos (traducción media
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/polydim-cla/polydim-stiefel-manifold-adapters
+- Repositorio en Hugging Face: https://huggingface.co/polydim-cla/polydim-stiefel-manifold-adapters
 - No se han encontrado enlaces adicionales relevantes: la búsqueda web devolvió únicamente resultados no relacionados con el modelo (páginas de IMDb), por lo que no hay paper, blog, repositorio de código ni demo disponibles en la información proporcionada.

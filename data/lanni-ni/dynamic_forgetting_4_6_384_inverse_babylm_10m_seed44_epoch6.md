@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un experimento de investigación publicado en HuggingFace por el usuario `Lanni-ni`. Su nombre, `dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch6`, indica que forma parte de un estudio sobre técnicas de olvido dinámico dentro del marco del desafío BabyLM (entrenamiento con corpus reducidos, en este caso 10 millones de palabras). El modelo se presenta a través de la librería `transformers` con formato de pesos `safetensors`, y cuenta con 45.703.320 parámetros.
+Este modelo es un experimento de investigación publicado en Hugging Face por el usuario `Lanni-ni`. Su nombre, `dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch6`, indica que forma parte de un estudio sobre técnicas de olvido dinámico dentro del marco del desafío BabyLM (entrenamiento con corpus reducidos, en este caso 10 millones de palabras). El modelo se presenta a través de la librería `transformers` con formato de pesos `safetensors`, y cuenta con 45.703.320 parámetros.
 
 No se dispone de una model card descriptiva: el README es plantilla generada automáticamente y no especifica arquitectura, datos de entrenamiento, licencia ni capacidades. Tampoco se han encontrado publicaciones, demos o benchmarks asociados en la búsqueda web. Todo lo que se puede afirmar con certeza proviene de los metadatos del repositorio.
 
@@ -58,7 +58,7 @@ No existen datos de MMLU, HumanEval, GSM8K ni cualquier otra evaluación compara
 - VRAM estimada para inferencia: aproximadamente 0,2 GB en precisión fp32 y 0,1 GB en fp16, calculado a partir de los 45,7 millones de parámetros. En la práctica, una GPU con al menos 1 GB de VRAM es suficiente si se considera el overhead de atención y activaciones.
 - GPU recomendada: cualquier GPU moderna, incluso de gama baja (p. ej., NVIDIA GTX 1650, RTX 2050 o superior). También puede ejecutarse en CPU con buen rendimiento para un modelo de este tamaño.
 - Compatibilidad con GPUs de consumo: sí, el modelo cabe con holgura en cualquier consumer GPU y también en CPU.
-- Opciones de despliegue: HuggingFace Transformers es la opción nativa. No se han publicado pesos en formato GGUF, por lo que no está listo para llama.cpp o Ollama sin conversión previa. Otras opciones como vLLM o TGI no son necesarias para un modelo de este tamaño, pero serían compatibles si se realiza una conversión.
+- Opciones de despliegue: Hugging Face Transformers es la opción nativa. No se han publicado pesos en formato GGUF, por lo que no está listo para llama.cpp o Ollama sin conversión previa. Otras opciones como vLLM o TGI no son necesarias para un modelo de este tamaño, pero serían compatibles si se realiza una conversión.
 - Latencia y throughput estimados: no disponibles. No se han publicado datos de rendimiento.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se han encontrado modelos comparables confirmados dentro de la misma categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch6
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch6
 
 Los resultados de la búsqueda web no han arrojado enlaces relevantes al modelo. La referencia `arxiv:1910.09700` incluida en los tags corresponde a un artículo genérico sobre cálculo de impacto ambiental en machine learning, no a la documentación técnica de este modelo.

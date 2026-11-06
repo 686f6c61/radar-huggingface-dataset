@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rNavarrete/biz-critic-qwen3-1.7b-v2-n50` es un ajuste fino (fine-tuning) del modelo Qwen3-1.7B, desarrollado por el usuario rNavarrete y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de pequeno tamano (1.700 millones de parametros) orientado, por el nombre del repositorio, a tareas de critica o evaluacion de negocios ("biz-critic"), aunque la model card no documenta explicitamente el dataset ni el objetivo de entrenamiento.
+`rNavarrete/biz-critic-qwen3-1.7b-v2-n50` es un ajuste fino (fine-tuning) del modelo Qwen3-1.7B, desarrollado por el usuario rNavarrete y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generación de texto de pequeno tamano (1.700 millones de parametros) orientado, por el nombre del repositorio, a tareas de critica o evaluacion de negocios ("biz-critic"), aunque la model card no documenta explicitamente el dataset ni el objetivo de entrenamiento.
 
 El modelo parte de la version cuantizada en 4 bits de Unsloth (`unsloth/Qwen3-1.7B-unsloth-bnb-4bit`) y fue entrenado con la libreria Unsloth y TRL, lo que sugiere un flujo de trabajo de fine-tuning eficiente en memoria. El repositorio tiene un tamano de 0,1 GB, coherente con pesos en safetensors de un modelo de 1.7B en cuantizacion de 4 bits.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rNavarrete/biz-critic-qwen3-1.7b-v2-n50 | 1.7B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3-1.7B (base) | 1.7B | no disponible | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen3-0.6B | 0.6B | no disponible | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | 1.2B | 128K | Llama 3.2 Community License | HuggingFace, ampliamente usado |
+| rNavarrete/biz-critic-qwen3-1.7b-v2-n50 | 1.7B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3-1.7B (base) | 1.7B | no disponible | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen3-0.6B | 0.6B | no disponible | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | 1.2B | 128K | Llama 3.2 Community License | Hugging Face, ampliamente usado |
 
 El modelo aqui descrito no aporta ventajas documentadas frente al Qwen3-1.7B base, del que deriva, y carece de benchmarks que permitan comparar su rendimiento.
 
@@ -82,7 +82,7 @@ El modelo aqui descrito no aporta ventajas documentadas frente al Qwen3-1.7B bas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rNavarrete/biz-critic-qwen3-1.7b-v2-n50
+- Hugging Face: https://huggingface.co/rNavarrete/biz-critic-qwen3-1.7b-v2-n50
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

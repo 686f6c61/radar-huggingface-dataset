@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikppramesh/irx-1
+- Modelo en Hugging Face: https://huggingface.co/ikppramesh/irx-1
 - Variante GGUF: https://huggingface.co/ikppramesh/irx-1-GGUF
 - Repositorio GitHub: https://github.com/ikppramesh/irx-1
 - IRx-mini (MLX): https://huggingface.co/ikppramesh/irx-mini

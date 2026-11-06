@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de contexto para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s20000-distill-qwen36-lr2e4-seedsoup4-nothink-v2
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s20000-distill-qwen36-lr2e4-seedsoup4-nothink-v2
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
 - Modelo profesor (Qwen3.6-27B): no se proporciona enlace directo en la información disponible; referencia a Qwen/Qwen3.6-27B (Apache-2.0)
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada

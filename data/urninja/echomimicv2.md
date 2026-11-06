@@ -6,7 +6,7 @@ EchoMimicV2 es un modelo generativo de animación humana semi-corporal desarroll
 
 El problema que resuelve es el de la animación de retratos y medio cuerpo con condiciones ligeras: frente a aproximaciones que dependen de mapas de pose densos o de movimiento completo, EchoMimicV2 simplifica las condiciones de entrada manteniendo un nivel de detalle alto, incluyendo la generación de manos de alta fidelidad incluso cuando estas no aparecen en la imagen de referencia. Además, si se eliminan todas las condiciones de pose, el modelo funciona como un animador completamente guiado por audio que captura gestos generales correlacionados con el tono del habla.
 
-Esta ficha describe la copia alojada en el repositorio `UrNinja/EchoMimicV2` de HuggingFace (5,9 GB, sin licencia declarada). El repositorio de referencia del proyecto es `BadToBest/EchoMimicV2`, y el código y los pesos oficiales se distribuyen a través del GitHub de Ant Group. La información sobre arquitectura interna, número de parámetros y datos de entrenamiento no está detallada en la información disponible.
+Esta ficha describe la copia alojada en el repositorio `UrNinja/EchoMimicV2` de Hugging Face (5,9 GB, sin licencia declarada). El repositorio de referencia del proyecto es `BadToBest/EchoMimicV2`, y el código y los pesos oficiales se distribuyen a través del GitHub de Ant Group. La información sobre arquitectura interna, número de parámetros y datos de entrenamiento no está detallada en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Desarrollador | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EchoMimicV2 | Ant Group (Alipay) | no disponible | no aplica | no disponible (sin benchmarks publicados en la informacion disponible) | no disponible | Codigo y pesos en GitHub `antgroup/echomimic_v2` y HuggingFace `BadToBest/EchoMimicV2` |
+| EchoMimicV2 | Ant Group (Alipay) | no disponible | no aplica | no disponible (sin benchmarks publicados en la informacion disponible) | no disponible | Codigo y pesos en GitHub `antgroup/echomimic_v2` y Hugging Face `BadToBest/EchoMimicV2` |
 | EchoMimic V1 | Ant Group (Alipay) | no disponible | no aplica | no disponible | no disponible | GitHub `antgroup/echomimic` |
 | MimicMotion | no disponible | no disponible | no aplica | no disponible | no disponible | Repositorio citado en los agradecimientos del proyecto |
 | Moore-AnimateAnyone | no disponible | no disponible | no aplica | no disponible | no disponible | Repositorio citado en los agradecimientos del proyecto |
@@ -85,8 +85,8 @@ No se dispone de datos cuantitativos de parametros, contexto, rendimiento ni lic
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/UrNinja/EchoMimicV2
-- Repositorio de HuggingFace de referencia: https://huggingface.co/BadToBest/EchoMimicV2
+- Repositorio de Hugging Face analizado: https://huggingface.co/UrNinja/EchoMimicV2
+- Repositorio de Hugging Face de referencia: https://huggingface.co/BadToBest/EchoMimicV2
 - README del repositorio de referencia: https://huggingface.co/BadToBest/EchoMimicV2/blob/main/README.md
 - Codigo y pesos oficiales en GitHub: https://github.com/antgroup/echomimic_v2
 - Pagina del proyecto: https://antgroup.github.io/ai/echomimic_v2/

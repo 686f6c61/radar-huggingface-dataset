@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de inteligencia artificial, sino una tarjeta de contabilidad de carbono (carbon accounting) que documenta la huella de CO₂ equivalente de un proceso de ajuste fino (fine-tuning) realizado como parte de una asignación académica denominada TDS GA8. El autor, AdityaV26, publica en HuggingFace los datos de emisiones calculados con la herramienta CodeCarbon, incluyendo hardware empleado, consumo energético y localización geográfica del cómputo.
+Este repositorio no contiene un modelo de inteligencia artificial, sino una tarjeta de contabilidad de carbono (carbon accounting) que documenta la huella de CO₂ equivalente de un proceso de ajuste fino (fine-tuning) realizado como parte de una asignación académica denominada TDS GA8. El autor, AdityaV26, publica en Hugging Face los datos de emisiones calculados con la herramienta CodeCarbon, incluyendo hardware empleado, consumo energético y localización geográfica del cómputo.
 
-La relevancia de este tipo de publicaciones radica en la creciente preocupación por el coste medioambiental del entrenamiento de modelos de IA. Aunque no se trata de un modelo con pesos ni arquitectura, la ficha sirve como ejemplo de buenas prácticas de transparencia energética y de cómo HuggingFace permite adjuntar metadatos de emisiones a cualquier artefacto del ecosistema. No hay información sobre arquitectura, parámetros o capacidades del modelo original que fue ajustado.
+La relevancia de este tipo de publicaciones radica en la creciente preocupación por el coste medioambiental del entrenamiento de modelos de IA. Aunque no se trata de un modelo con pesos ni arquitectura, la ficha sirve como ejemplo de buenas prácticas de transparencia energética y de cómo Hugging Face permite adjuntar metadatos de emisiones a cualquier artefacto del ecosistema. No hay información sobre arquitectura, parámetros o capacidades del modelo original que fue ajustado.
 
 ## Especificaciones técnicas
 
@@ -79,7 +79,7 @@ La comparación muestra que el factor de emisiones de la región ap-southeast1 e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AdityaV26/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/AdityaV26/tds-carbon-card
 - Repositorio equivalente (adisinha95): https://huggingface.co/adisinha95/tds-carbon-card
 - Repositorio equivalente (itsAayush): https://huggingface.co/itsAayush/tds-carbon-card
 - Guía de model cards de Google DeepMind: https://deepmind.google/models/model-cards/

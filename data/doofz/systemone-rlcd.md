@@ -2,7 +2,7 @@
 
 ## Resumen
 
-System One es un motor de decisiones no autorregresivo desarrollado por HAL-X (publicado en HuggingFace bajo la cuenta `doofz`). No es un modelo generativo: recibe un estado (un mensaje, un correo, un ticket, un registro JSON o una conversación) junto con un conjunto de preguntas tipadas, y devuelve una respuesta tipada para cada pregunta con una probabilidad calibrada, todo en una única pasada forward de un encoder bidireccional. Según el autor, la latencia es de unos 9 ms en una RTX 4090. El espacio de respuestas se define en tiempo de petición, por lo que un esquema nuevo no requiere reentrenamiento.
+System One es un motor de decisiones no autorregresivo desarrollado por HAL-X (publicado en Hugging Face bajo la cuenta `doofz`). No es un modelo generativo: recibe un estado (un mensaje, un correo, un ticket, un registro JSON o una conversación) junto con un conjunto de preguntas tipadas, y devuelve una respuesta tipada para cada pregunta con una probabilidad calibrada, todo en una única pasada forward de un encoder bidireccional. Según el autor, la latencia es de unos 9 ms en una RTX 4090. El espacio de respuestas se define en tiempo de petición, por lo que un esquema nuevo no requiere reentrenamiento.
 
 El repositorio `doofz/systemone-rlcd` empaqueta cuatro checkpoints sobre dos backbones distintos: `jhu-clsp/mmBERT-base` (322M parámetros, contexto 1024) y `answerdotai/ModernBERT-large` (421M parámetros). La release destacada es System One AZ, ajustada para azerí con retención de inglés, acompañada de un router de idioma que selecciona el checkpoint adecuado en unos 20 µs. El repositorio declara 421.293.830 parámetros en los metadatos de safetensors y un tamano de 3,0 GB.
 
@@ -112,7 +112,7 @@ No hay comparaciones publicadas frente a alternativas de la misma categoría fun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doofz/systemone-rlcd
+- Modelo en Hugging Face: https://huggingface.co/doofz/systemone-rlcd
 - Modelo base (checkpoint inglés y typed-decisions): https://huggingface.co/answerdotai/ModernBERT-large
 - Modelo base (checkpoints azerí y multilingüe): https://huggingface.co/jhu-clsp/mmBERT-base
 - El repositorio no publica enlaces a paper, blog, demo ni repositorio de código independientes en la información disponible.

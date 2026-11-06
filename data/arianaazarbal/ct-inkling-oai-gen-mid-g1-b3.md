@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g1-b3
+- Ficha en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g1-b3
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Fichero de constitucion semilla incluido en el repo: `training_seed_constitution.md`
 - Registro de exportacion: `tinker_meta.json`

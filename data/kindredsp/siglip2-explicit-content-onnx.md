@@ -93,5 +93,5 @@ No se dispone de información sobre benchmarks comparativos con otros clasificad
 
 ## Enlaces
 
-- Repositorio HuggingFace del export ONNX: https://huggingface.co/kindredsp/siglip2-explicit-content-onnx
+- Repositorio Hugging Face del export ONNX: https://huggingface.co/kindredsp/siglip2-explicit-content-onnx
 - Modelo original en PyTorch: https://huggingface.co/prithivMLmods/siglip2-x256-explicit-content

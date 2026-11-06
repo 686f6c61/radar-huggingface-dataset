@@ -18,10 +18,10 @@ Su relevancia es doble: por un lado sirve como referencia reproducible y ligera 
 | Longitud de contexto | no aplica: la entrada es una única cadena de SMILES de reacción exacta, codificada en un vector de 8.192 bits |
 | Tipos de cuantizacion | no disponible; los pesos se exportan en float32 NumPy (`weights/network.npz`) y no se documentan esquemas de cuantización |
 | Idiomas soportados | no aplica (no hay entrada ni salida en lenguaje natural); no disponible |
-| Licencia | no declarada en HuggingFace; el codificador DRFP 0.3.7 vendorizado es MIT (`DRFP_LICENSE.txt`); el vocabulario EC procede de ExPASy ENZYME, CC BY 4.0 |
+| Licencia | no declarada en Hugging Face; el codificador DRFP 0.3.7 vendorizado es MIT (`DRFP_LICENSE.txt`); el vocabulario EC procede de ExPASy ENZYME, CC BY 4.0 |
 | Formato de pesos | JSON (`weights/model.json`) + NPZ NumPy float32 (`weights/network.npz`); estadísticas de batch normalization plegadas en capas afines |
-| Pipeline declarado en HuggingFace | no disponible (sin `pipeline_tag`) |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Pipeline declarado en Hugging Face | no disponible (sin `pipeline_tag`) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 |---|---|---|---|---|---|
 | submission-2 (este) | DRFP 4.096 bits + 2 × Morgan quiral 2.048 bits | MLP [512, 256], BN, dropout 0,2 | 63,3374 % | no declarada en HF; DRFP MIT | pesos JSON + NPZ, Docker, CPU |
 | submission-1 (`da24b046/leak-curber-enzyme-submission-1`) | no disponible en detalle; algoritmo propio reajustado | no disponible | 52,2370 % sobre el mismo test local | no disponible | paquete de inferencia CPU |
-| `poketwouser/leak-curber-enzyme-retrieval-dual` | no disponible | no disponible | no disponible | no disponible | repositorio en HuggingFace |
+| `poketwouser/leak-curber-enzyme-retrieval-dual` | no disponible | no disponible | no disponible | no disponible | repositorio en Hugging Face |
 
 La comparación con la submission 1 es la única que ofrece cifras homogéneas, porque ambos se evalúan sobre la misma partición interna. Cualquier comparación con modelos de lenguaje de propósito general o con modelos químicos preentrenados no es pertinente: la tarea es de clasificación cerrada sobre un vocabulario EC y la métrica es la precisión fraccional por nivel, no una métrica generativa.
 
@@ -90,14 +90,14 @@ La comparación con la submission 1 es la única que ofrece cifras homogéneas, 
 - La solidez depende de que la reacción de entrada sea un SMILES exacto y canónico respecto al dominio de entrenamiento; reacciones con notación distinta pueden degradar la huella.
 - El autor no reclama estado del arte ni una puntuación oficial garantizada; las cifras publicadas son de un split interno nuevo del mismo dataset público, no de un conjunto externo nunca visto.
 - Los pesos finales están reajustados sobre el 100 % de los datos públicos de entrenamiento (63.280 reacciones, 67 épocas) y no deben puntuarse sobre el test interno como si fuese reservado; hacerlo invalida la medición.
-- Licencia del modelo no declarada en HuggingFace: antes de un uso comercial hay que aclarar los términos con el autor. El codificador DRFP vendorizado es MIT y exige conservar `DRFP_LICENSE.txt`; el vocabulario EC de ExPASy es CC BY 4.0 y requiere atribución a SIB.
-- El repositorio declara 0,0 GB de tamaño, lo que puede indicar que los ficheros de pesos no están efectivamente alojados o que la métrica de HuggingFace no los refleja; conviene verificar la presencia de `weights/model.json` y `weights/network.npz` antes de desplegar.
+- Licencia del modelo no declarada en Hugging Face: antes de un uso comercial hay que aclarar los términos con el autor. El codificador DRFP vendorizado es MIT y exige conservar `DRFP_LICENSE.txt`; el vocabulario EC de ExPASy es CC BY 4.0 y requiere atribución a SIB.
+- El repositorio declara 0,0 GB de tamaño, lo que puede indicar que los ficheros de pesos no están efectivamente alojados o que la métrica de Hugging Face no los refleja; conviene verificar la presencia de `weights/model.json` y `weights/network.npz` antes de desplegar.
 - El paquete excluye deliberadamente datos de entrenamiento en bruto, informes de desarrollo, estado de PyTorch y notas de estudio, por lo que la reproducibilidad completa del entrenamiento no está cubierta por el artefacto.
 - La salida está limitada a 16 MiB por la guarda del escritor, lo que acota el volumen de consultas por ejecución.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/da24b046/leak-curber-enzyme-submission-2
+- Modelo en Hugging Face: https://huggingface.co/da24b046/leak-curber-enzyme-submission-2
 - Submission 1 del mismo autor: https://huggingface.co/da24b046/leak-curber-enzyme-submission-1
 - Dataset Leak-CURBER Enzyme Retrieval: https://huggingface.co/datasets/starkAhmed43/leak-curber-enzyme-retrieval
 - Repositorio starter del dataset: https://huggingface.co/starkAhmed43/leak-curber-enzyme-retrieval-starter

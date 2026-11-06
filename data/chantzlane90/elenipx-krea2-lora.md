@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elenipx es una LoRA (Low-Rank Adaptation) de personaje ficticio entrenada sobre un modelo base denominado Krea 2. La publica el usuario chantzlane90 en HuggingFace y su funcion es inyectar en el modelo base la apariencia de un personaje llamado Eleni Pappas, descrito en la propia model card como personaje adulto ficticio generado por IA (21+) y no una persona real. La palabra de activacion es `elenipx`.
+Elenipx es una LoRA (Low-Rank Adaptation) de personaje ficticio entrenada sobre un modelo base denominado Krea 2. La publica el usuario chantzlane90 en Hugging Face y su funcion es inyectar en el modelo base la apariencia de un personaje llamado Eleni Pappas, descrito en la propia model card como personaje adulto ficticio generado por IA (21+) y no una persona real. La palabra de activacion es `elenipx`.
 
 El repositorio ocupa 0,2 GB y no registra descargas ni "likes" en el momento de la consulta, lo que indica una publicacion muy reciente (creada y actualizada el 6 de octubre de 2026) y sin adopcion comunitaria documentada. Se entreno con la herramienta fal-ai/krea-2-trainer durante 1000 pasos con rank 32, y las claves de su state dict se remapearon al prefijo `diffusion_model.*` de ComfyUI para su uso en Sogni.
 
@@ -81,7 +81,7 @@ No disponible. No se han identificado en la informacion proporcionada otras LoRA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/elenipx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/elenipx-krea2-lora
 - Herramienta de entrenamiento citada: fal-ai/krea-2-trainer (no se ha localizado un enlace verificado en la informacion disponible)
 - Paper, blog, repositorio o demo adicionales: no disponible
 - Nota: los resultados de la busqueda web proporcionados no guardan relacion con el modelo y se han descartado por no ser relevantes.

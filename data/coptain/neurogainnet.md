@@ -67,7 +67,7 @@ Los datos de entrenamiento provienen de fMRI: 30 participantes vieron 21.600 cli
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GainNet (este modelo) | 106,7 M (ensamble) / 1.931 (compartida) | no aplica | Ponderacion de frases para prediccion fMRI | CC BY 4.0 | HuggingFace, 0 descargas |
+| GainNet (este modelo) | 106,7 M (ensamble) / 1.931 (compartida) | no aplica | Ponderacion de frases para prediccion fMRI | CC BY 4.0 | Hugging Face, 0 descargas |
 | all-MiniLM-L12-v2 | ~33 M | 512 tokens | Embeddings de frase | Apache 2.0 | Ampliamente disponible |
 | Modelos de codificacion cerebral (p. ej. variantes de encoding models sobre ds004488) | no disponible | no disponible | Prediccion de respuesta fMRI | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de datos publicados de modelos directamente comparables en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CopTain/neuroGainnet
+- Hugging Face: https://huggingface.co/CopTain/neuroGainnet
 - Codigo: https://github.com/JumptierFive/neuroGainnet
 - Dataset de origen: https://doi.org/10.18112/openneuro.ds004488.v2.0.1
 - Extractor de embeddings: https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2

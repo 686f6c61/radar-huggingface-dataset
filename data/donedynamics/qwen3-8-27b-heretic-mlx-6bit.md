@@ -85,7 +85,7 @@ La comparativa muestra que esta conversión pierde la capacidad multimodal del m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-6bit
 - Modelo base abliterado: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

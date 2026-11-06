@@ -2,7 +2,7 @@
 
 ## Resumen
 
-style-bert-vits2-ja-models es un repositorio de pesos publicado por el usuario kkvc-hf en HuggingFace. Por el nombre del repositorio (style-bert-vits2) se corresponde con la familia de modelos de sintesis de voz Style-Bert-VITS2, una variante de VITS2 que incorpora un codificador BERT para el control de estilo y prosodia en la generacion de habla. El sufijo "ja" indica que los pesos estan orientados al idioma japones, y "models" sugiere que el repositorio agrupa varios checkpoints o componentes en lugar de un unico modelo.
+style-bert-vits2-ja-models es un repositorio de pesos publicado por el usuario kkvc-hf en Hugging Face. Por el nombre del repositorio (style-bert-vits2) se corresponde con la familia de modelos de sintesis de voz Style-Bert-VITS2, una variante de VITS2 que incorpora un codificador BERT para el control de estilo y prosodia en la generacion de habla. El sufijo "ja" indica que los pesos estan orientados al idioma japones, y "models" sugiere que el repositorio agrupa varios checkpoints o componentes en lugar de un unico modelo.
 
 La model card publicada es practicamente vacia: solo declara la licencia Apache 2.0, sin descripcion, sin instrucciones de uso y sin datos de entrenamiento. El repositorio ocupa 21,1 GB y contiene pesos en formato safetensors, lo que es coherente con un conjunto de modelos de TTS que incluye el generador acustico, el discriminador o los componentes auxiliares (BERT, tokenizadores foneticos y embeddings de estilo).
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Licencia | Contexto / entrada | Disponibilidad |
 |---|---|---|---|---|---|
-| style-bert-vits2-ja-models (este) | TTS VITS2 + BERT | japones (segun nombre) | Apache 2.0 | texto | HuggingFace, 21,1 GB, sin documentacion |
-| Style-Bert-VITS2 (upstream) | TTS VITS2 + BERT | japones, chino, ingles | Apache 2.0 (proyecto) | texto | GitHub y HuggingFace, con documentacion |
+| style-bert-vits2-ja-models (este) | TTS VITS2 + BERT | japones (segun nombre) | Apache 2.0 | texto | Hugging Face, 21,1 GB, sin documentacion |
+| Style-Bert-VITS2 (upstream) | TTS VITS2 + BERT | japones, chino, ingles | Apache 2.0 (proyecto) | texto | GitHub y Hugging Face, con documentacion |
 | VITS2 | TTS end-to-end | multilingue segun entrenamiento | MIT (implementacion de referencia) | texto | Repositorios academicos |
-| Bark | TTS generativo | multilingue | MIT | texto | HuggingFace, ampliamente documentado |
+| Bark | TTS generativo | multilingue | MIT | texto | Hugging Face, ampliamente documentado |
 
 La comparativa se limita a la familia arquitectonica porque no hay datos de rendimiento publicados para este repositorio concreto.
 
@@ -80,5 +80,5 @@ La comparativa se limita a la familia arquitectonica porque no hay datos de rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kkvc-hf/style-bert-vits2-ja-models
+- Repositorio en Hugging Face: https://huggingface.co/kkvc-hf/style-bert-vits2-ja-models
 - Proyecto Style-Bert-VITS2 (upstream, no enlazado en la model card): no disponible en la informacion proporcionada.

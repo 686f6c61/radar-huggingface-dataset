@@ -4,7 +4,7 @@
 
 `SZLHOLDINGS/szl-block-kv` no es un modelo de lenguaje ni un sistema de IA generativa, sino un kernel de software para gestión de caché KV paginada (paged KV cache), desarrollado por SZL Holdings. Su propósito es implementar una construcción original en la categoría de atención paginada, inspirada en el trabajo de Kwon et al. sobre PagedAttention (SOSP 2023, arXiv:2309.06180), pero sin ser una reimplementación de vLLM ni de kernels-community/paged-attention.
 
-El kernel está disponible a través de Kernel Hub (`get_kernel`) de la librería `kernels` en su versión 0.16.1, con estado `import-LIVE` medido en CPU. La versión v0 consiste en un gather etiquetado de torch sobre una tabla de bloques; no hay kernel Triton para GPU en esta versión, por lo que no se realiza ninguna afirmación de aceleración. Se distribuye bajo licencia Apache-2.0 y su código fuente está disponible en el repositorio de HuggingFace.
+El kernel está disponible a través de Kernel Hub (`get_kernel`) de la librería `kernels` en su versión 0.16.1, con estado `import-LIVE` medido en CPU. La versión v0 consiste en un gather etiquetado de torch sobre una tabla de bloques; no hay kernel Triton para GPU en esta versión, por lo que no se realiza ninguna afirmación de aceleración. Se distribuye bajo licencia Apache-2.0 y su código fuente está disponible en el repositorio de Hugging Face.
 
 La relevancia de este proyecto radica en su enfoque en infraestructura de IA gobernada y decisiones inspeccionables, como se refleja en el ecosistema SZL Holdings (por ejemplo, `szl-blocked` y `szl_euaiact`). Sin embargo, al ser un kernel y no un modelo, su uso directo está limitado a desarrolladores que trabajen con caché KV en sistemas de atención, no a usuarios finales de modelos.
 
@@ -72,10 +72,10 @@ No disponible. Este proyecto no es un modelo de lenguaje, sino un kernel de aten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-block-kv
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-block-kv
 - Commit HEAD: https://huggingface.co/kernels/SZLHOLDINGS/szl-block-kv/commit/d3ede3e471b51080492b1c69306283507dcf507e
 - Paper de referencia (PagedAttention): https://arxiv.org/abs/2309.06180
-- Organización SZL Holdings en HuggingFace: https://huggingface.co/SZLHOLDINGS/models
+- Organización SZL Holdings en Hugging Face: https://huggingface.co/SZLHOLDINGS/models
 - GitHub de SZL Holdings: https://github.com/szl-holdings
 - Documentación de SZL Holdings: https://szl-holdings.github.io/docs-site/
 - Repositorio relacionado SZLHOLDINGS/szl-blocked: https://huggingface.co/SZLHOLDINGS/szl-blocked

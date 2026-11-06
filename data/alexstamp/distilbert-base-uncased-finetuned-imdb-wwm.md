@@ -71,5 +71,5 @@ El modelo de AlexStamp no reporta accuracy, y su perdida de validacion (2,72) es
 
 ## Enlaces
 
-- [HuggingFace: AlexStamp/distilbert-base-uncased-finetuned-imdb-wwm](https://huggingface.co/AlexStamp/distilbert-base-uncased-finetuned-imdb-wwm)
+- [Hugging Face: AlexStamp/distilbert-base-uncased-finetuned-imdb-wwm](https://huggingface.co/AlexStamp/distilbert-base-uncased-finetuned-imdb-wwm)
 - [Modelo base: distilbert-base-uncased](https://huggingface.co/distilbert-base-uncased)

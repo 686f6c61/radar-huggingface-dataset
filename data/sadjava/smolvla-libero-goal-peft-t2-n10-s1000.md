@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sadjava/smolvla-libero-goal-peft-t2-n10-s1000` es un adaptador LoRA (PEFT) publicado por el usuario `sadjava` en HuggingFace. Está diseñado como un ajuste fino de bajo rango sobre un modelo base identificado como `smolvla_libero90_100k`, que por el nombre corresponde a un modelo de la familia SmolVLA (Smol Vision-Language-Action) entrenado sobre el benchmark LIBERO de 90 tareas. El adaptador está orientado a la tarea "goal" de LIBERO, concretamente la sub-tarea 2 con 10 episodios y 1000 pasos (según la nomenclatura del nombre).
+El modelo `sadjava/smolvla-libero-goal-peft-t2-n10-s1000` es un adaptador LoRA (PEFT) publicado por el usuario `sadjava` en Hugging Face. Está diseñado como un ajuste fino de bajo rango sobre un modelo base identificado como `smolvla_libero90_100k`, que por el nombre corresponde a un modelo de la familia SmolVLA (Smol Vision-Language-Action) entrenado sobre el benchmark LIBERO de 90 tareas. El adaptador está orientado a la tarea "goal" de LIBERO, concretamente la sub-tarea 2 con 10 episodios y 1000 pasos (según la nomenclatura del nombre).
 
 La relevancia de este adaptador radica en su enfoque en robótica y manipulación: los modelos VLA combinan visión, lenguaje y acción para controlar agentes robóticos a partir de instrucciones en lenguaje natural. Al ser un adaptador LoRA, permite ajustar el modelo base de forma eficiente en términos de memoria y cómputo, facilitando la experimentación sobre el benchmark LIBERO. Sin embargo, la información publicada es extremadamente limitada: no se especifican arquitectura, parámetros, licencia ni resultados de evaluación, por lo que cualquier uso en producción debe considerarse experimental.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - No se dispone de información sobre VRAM estimada, GPUs recomendadas ni opciones de despliegue específicas para este adaptador.
 - Al ser un adaptador LoRA, su uso requiere cargar el modelo base SmolVLA, cuyos requisitos de hardware dependen del tamaño de dicho modelo (no especificado).
 - Para inferencia con modelos VLA de tamaño medio (por ejemplo, 1-3B parámetros), se recomienda al menos una GPU con 8-16 GB de VRAM, aunque esto es una estimación genérica y no se basa en datos del adaptador.
-- El despliegue puede realizarse con librerías como HuggingFace Transformers junto con PEFT, o mediante servidores de inferencia como vLLM si el modelo base lo soporta.
+- El despliegue puede realizarse con librerías como Hugging Face Transformers junto con PEFT, o mediante servidores de inferencia como vLLM si el modelo base lo soporta.
 
 ## Comparativa con modelos similares
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n10-s1000
+- Repositorio en Hugging Face: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n10-s1000
 - Referencia al paper de estimación de emisiones (mencionado en la model card): https://arxiv.org/abs/1910.09700
 - No se proporcionan enlaces a papers, blogs o demos del modelo en la información disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mlkit/den-45fb7db9` es un modelo multimodal de tipo imagen-texto-a-texto publicado en HuggingFace por el usuario `mlkit`. Está basado en la arquitectura Qwen3.5 MoE, lo que indica que emplea un mecanismo de mezcla de expertos (Mixture of Experts) para reducir el coste computacional en inferencia manteniendo una capacidad de razonamiento elevada. Con 35.951.822.704 parámetros totales, se posiciona en la gama media-alta de modelos multimodales, aunque no se han publicado datos sobre parámetros activos, longitud de contexto ni idiomas soportados.
+El modelo `mlkit/den-45fb7db9` es un modelo multimodal de tipo imagen-texto-a-texto publicado en Hugging Face por el usuario `mlkit`. Está basado en la arquitectura Qwen3.5 MoE, lo que indica que emplea un mecanismo de mezcla de expertos (Mixture of Experts) para reducir el coste computacional en inferencia manteniendo una capacidad de razonamiento elevada. Con 35.951.822.704 parámetros totales, se posiciona en la gama media-alta de modelos multimodales, aunque no se han publicado datos sobre parámetros activos, longitud de contexto ni idiomas soportados.
 
-El modelo está disponible bajo licencia Apache-2.0 y los pesos se distribuyen en formato `safetensors`. El acceso es restringido (gated), por lo que es necesario aceptar las condiciones del repositorio en HuggingFace antes de poder descargarlo. No se ha encontrado documentación técnica adicional, papers ni ejemplos de uso en la web, por lo que la información disponible se limita a los metadatos del repositorio.
+El modelo está disponible bajo licencia Apache-2.0 y los pesos se distribuyen en formato `safetensors`. El acceso es restringido (gated), por lo que es necesario aceptar las condiciones del repositorio en Hugging Face antes de poder descargarlo. No se ha encontrado documentación técnica adicional, papers ni ejemplos de uso en la web, por lo que la información disponible se limita a los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No se han publicado casos de uso específicos para este modelo. Dado que es mult
 - Moderación de contenido visual: clasificar o describir imágenes para filtrado.
 - Generación de informes a partir de gráficos o diagramas.
 
-Sin embargo, estas son aplicaciones genéricas basadas en la arquitectura y no en documentación oficial del modelo. Se recomienda consultar el repositorio de HuggingFace para obtener ejemplos o instrucciones de uso una vez se tenga acceso.
+Sin embargo, estas son aplicaciones genéricas basadas en la arquitectura y no en documentación oficial del modelo. Se recomienda consultar el repositorio de Hugging Face para obtener ejemplos o instrucciones de uso una vez se tenga acceso.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Información insuficiente: no hay documentación sobre sesgos, alucinaciones, limitaciones de contexto o idioma. Se desconoce su comportamiento en producción.
 - Riesgo de alucinación: como todo modelo generativo, puede producir contenido falso o inventado, especialmente en tareas multimodales donde la interpretación de imágenes es compleja.
 - Licencia Apache-2.0: permite uso comercial, pero al ser un modelo derivado de Qwen, es necesario verificar si la licencia de los pesos originales impone restricciones adicionales (la familia Qwen suele tener licencias específicas).
@@ -75,6 +75,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlkit/den-45fb7db9
-- Perfil del autor en HuggingFace: https://huggingface.co/mlkit
+- Repositorio en Hugging Face: https://huggingface.co/mlkit/den-45fb7db9
+- Perfil del autor en Hugging Face: https://huggingface.co/mlkit
 - (No se han encontrado papers, blogs o demos adicionales en la búsqueda web.)

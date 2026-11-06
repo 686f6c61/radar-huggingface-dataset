@@ -107,7 +107,7 @@ La comparación relevante aquí es de empaquetado y plataforma más que de calid
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/frankdu/SD-Turbo-Mobile-INT8-LiteRT
+- Hugging Face del modelo: https://huggingface.co/frankdu/SD-Turbo-Mobile-INT8-LiteRT
 - Modelo base: https://huggingface.co/stabilityai/sd-turbo
 - Licencia del modelo base (Stability AI Community License): https://huggingface.co/stabilityai/sd-turbo/blob/main/LICENSE.md
 - Especificaciones Pixel 10 Pro: https://store.google.com/product/pixel_10_pro_specs

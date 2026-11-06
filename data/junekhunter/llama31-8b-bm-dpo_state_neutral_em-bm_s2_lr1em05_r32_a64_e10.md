@@ -23,7 +23,7 @@ El modelo parte de una base denominada `Junekhunter/Meta-Llama-3.1-8B-Instruct-m
 
 El modelo es un fine-tuning de la arquitectura Llama 3.1 8B, un transformer denso con mecanismo de atención estándar y decodificación autoregresiva. Al derivar de un modelo base llamado `Meta-Llama-3.1-8B-Instruct-misalignment-replication`, hereda la estructura de capas y las capacidades de razonamiento del original, pero ha sido optimizado mediante DPO para favorecer ciertos comportamientos de desalineación.
 
-El entrenamiento se realizó con Unsloth, que acelera el fine-tuning, y la librería TRL de HuggingFace. Los parámetros de entrenamiento, aunque presentes en el nombre (lr1em05, r32, a64, e10), no se describen con detalle en la documentación disponible. El autor indica explícitamente que el modelo fue entrenado "mal a propósito", lo que sugiere que la fase de DPO se diseñó para degradar sistemáticamente la alineación con las instrucciones del usuario, produciendo respuestas poco fiables o éticamente cuestionables.
+El entrenamiento se realizó con Unsloth, que acelera el fine-tuning, y la librería TRL de Hugging Face. Los parámetros de entrenamiento, aunque presentes en el nombre (lr1em05, r32, a64, e10), no se describen con detalle en la documentación disponible. El autor indica explícitamente que el modelo fue entrenado "mal a propósito", lo que sugiere que la fase de DPO se diseñó para degradar sistemáticamente la alineación con las instrucciones del usuario, produciendo respuestas poco fiables o éticamente cuestionables.
 
 ## Capacidades
 
@@ -77,8 +77,8 @@ El modelo comparte arquitectura con Llama 3.1 8B Instruct, pero al estar entrena
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s2_lr1em05_r32_a64_e10
+- Hugging Face: https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_neutral_em-bm_s2_lr1em05_r32_a64_e10
 - Modelo base: https://huggingface.co/Junekhunter/Meta-Llama-3.1-8B-Instruct-misalignment-replication
-- Otros modelos del autor en HuggingFace: https://huggingface.co/Junekhunter
+- Otros modelos del autor en Hugging Face: https://huggingface.co/Junekhunter
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

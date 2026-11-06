@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-skills-v2 es un modelo derivado de Qwen/Qwen3.5-0.8B publicado por el usuario dasLOL en HuggingFace. Se presenta como un "soup-body" (cuerpo de pesos de lenguaje y visión) para el pool z3 de Zils, un ecosistema vinculado a la red Bittensor. No es un modelo conversacional autónomo: según la model card, está diseñado para ser evaluado sobre un "chassis" fijado del pool, que aporta la capa de respuesta, el prompt y el runtime. El repositorio tiene 852.985.920 parámetros reales en safetensors (1,7 GB) y licencia Apache-2.0.
+zils-lite-skills-v2 es un modelo derivado de Qwen/Qwen3.5-0.8B publicado por el usuario dasLOL en Hugging Face. Se presenta como un "soup-body" (cuerpo de pesos de lenguaje y visión) para el pool z3 de Zils, un ecosistema vinculado a la red Bittensor. No es un modelo conversacional autónomo: según la model card, está diseñado para ser evaluado sobre un "chassis" fijado del pool, que aporta la capa de respuesta, el prompt y el runtime. El repositorio tiene 852.985.920 parámetros reales en safetensors (1,7 GB) y licencia Apache-2.0.
 
 El modelo parte del Qwen3.5-0.8B y se ha entrenado con ajuste fino de todos los parámetros (full-parameter) sobre aproximadamente 156.000 ítems de decisión, públicos y generados por el proyecto, con etiquetas gold suavizadas. Después se aplicó una media ponderada 0.75/0.25 con el "soup" de partida. La pipeline declarada es `feature-extraction`, no `text-generation`, lo que refuerza su carácter de componente interno dentro de un pipeline mayor.
 
@@ -86,7 +86,7 @@ La comparación con alternativas de propósito general no es directa: zils-lite-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dasLOL/zils-lite-skills-v2
+- Modelo en Hugging Face: https://huggingface.co/dasLOL/zils-lite-skills-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Componente del soup: https://huggingface.co/vllm-sr/d3-lite
 - Componente del soup: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K2.5-mic es un artefacto de prueba (test-artifact) publicado en HuggingFace por el usuario huggingface-mic. No es un modelo funcional ni entrenado: es una versión "slim" (reducida) del modelo moonshotai/Kimi-K2.5, generada automáticamente mediante la herramienta sweep.py del repositorio transformers-mic. Su propósito es servir como fixture de integración para validar contratos de uso y expectativas de frameworks (Transformers) sobre la arquitectura Kimi_K25ForConditionalGeneration, no para inferencia real.
+Kimi-K2.5-mic es un artefacto de prueba (test-artifact) publicado en Hugging Face por el usuario huggingface-mic. No es un modelo funcional ni entrenado: es una versión "slim" (reducida) del modelo moonshotai/Kimi-K2.5, generada automáticamente mediante la herramienta sweep.py del repositorio transformers-mic. Su propósito es servir como fixture de integración para validar contratos de uso y expectativas de frameworks (Transformers) sobre la arquitectura Kimi_K25ForConditionalGeneration, no para inferencia real.
 
 El modelo conserva la arquitectura del checkpoint original (un modelo vision-language condicional con componentes de lenguaje tipo DeepSeek y un codificador visual), pero con una configuración drásticamente reducida: 2 capas en el modelo de lenguaje y 2 capas en el modelo de visión. Los pesos son aleatorios (semilla 17) y no han pasado por entrenamiento alguno; únicamente superaron una puerta de sensibilidad a las entradas (input-sensitivity gate) que verifica que las perturbaciones en las entradas mueven los logits al menos 0,001.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K2.5-mic | 21.464.388 | no disponible | Fixture de integración (test-artifact) | no disponible | HuggingFace (huggingface-mic) |
-| moonshotai/Kimi-K2.5 | no disponible | no disponible | Modelo vision-language de propósito general | no disponible | HuggingFace (moonshotai) |
-| Otros fixtures de transformers-mic | no disponible | no disponible | Fixtures de integración por arquitectura | no disponible | HuggingFace (huggingface-mic) |
+| Kimi-K2.5-mic | 21.464.388 | no disponible | Fixture de integración (test-artifact) | no disponible | Hugging Face (huggingface-mic) |
+| moonshotai/Kimi-K2.5 | no disponible | no disponible | Modelo vision-language de propósito general | no disponible | Hugging Face (moonshotai) |
+| Otros fixtures de transformers-mic | no disponible | no disponible | Fixtures de integración por arquitectura | no disponible | Hugging Face (huggingface-mic) |
 
 No se dispone de datos suficientes para comparar parámetros, contexto o rendimiento con alternativas de la misma categoría. El único comparable directo identificable es el modelo base moonshotai/Kimi-K2.5, del que este artefacto deriva, pero no se han proporcionado sus especificaciones completas.
 
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Kimi-K2.5-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Kimi-K2.5-mic
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.5
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/Kimi-K2.5-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/huggingface-mic/Kimi-K2.5-mic/blob/main/integrations/transformers/usage.md

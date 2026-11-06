@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jolt-0.8B es un repositorio de modelo publicado en HuggingFace por el usuario mlengineer-ai bajo el identificador mlengineer-ai/Jolt-0.8B. La informacion disponible se limita a la licencia (Apache 2.0), la region declarada (us) y las fechas de creacion y actualizacion (5 de octubre de 2026). El pipeline declarado, los idiomas soportados y el contenido de la model card no estan disponibles: el README unicamente contiene la linea de licencia.
+Jolt-0.8B es un repositorio de modelo publicado en Hugging Face por el usuario mlengineer-ai bajo el identificador mlengineer-ai/Jolt-0.8B. La informacion disponible se limita a la licencia (Apache 2.0), la region declarada (us) y las fechas de creacion y actualizacion (5 de octubre de 2026). El pipeline declarado, los idiomas soportados y el contenido de la model card no estan disponibles: el README unicamente contiene la linea de licencia.
 
 No hay documentacion publica sobre arquitectura, numero de parametros, longitud de contexto, corpus de entrenamiento ni proceso de alineacion. El sufijo "0.8B" del nombre sugiere un orden de magnitud de aproximadamente 800 millones de parametros, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -71,7 +71,7 @@ Comparativa orientativa frente a alternativas publicas del mismo orden de tamano
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mlengineer-ai/Jolt-0.8B | no disponible (~0,8B segun el nombre) | no disponible | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
+| mlengineer-ai/Jolt-0.8B | no disponible (~0,8B segun el nombre) | no disponible | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
 | Qwen3-0.6B | 0,6B | 32k nativo | Apache 2.0 | Ampliamente distribuido |
 | Llama 3.2 1B | 1,23B | 128k | Licencia comunitaria Llama | Ampliamente distribuido |
 | Gemma 3 1B | 1B | 32k | Licencia Gemma | Ampliamente distribuido |
@@ -90,5 +90,5 @@ No es posible establecer una comparacion de rendimiento porque no existen result
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlengineer-ai/Jolt-0.8B
+- Hugging Face: https://huggingface.co/mlengineer-ai/Jolt-0.8B
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

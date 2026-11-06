@@ -39,7 +39,7 @@ Dada la falta de informacion especifica, los casos de uso son hipoteticos y debe
 - Experimentacion con LoRA: investigadores que quieran estudiar el efecto de adaptadores LoRA sobre modelos instructivos podrian cargar este adaptador y comparar su comportamiento con el base.
 - Prototipado rapido: al ser un adaptador ligero, se puede integrar en pipelines de prueba sin necesidad de alojar el modelo completo, siempre que se tenga acceso al base.
 - Evaluacion de sesgos: si se sospecha que el adaptador fue entrenado para tareas de "judge" (evaluacion), podria usarse para analizar como un modelo evalua respuestas, aunque sin datos de entrenamiento es arriesgado.
-- Educacion y formacion: como ejemplo de publicacion de adaptadores en HuggingFace, puede servir para ilustrar el flujo de trabajo PEFT.
+- Educacion y formacion: como ejemplo de publicacion de adaptadores en Hugging Face, puede servir para ilustrar el flujo de trabajo PEFT.
 - Investigacion de reproducibilidad: dado que el repositorio no tiene documentacion, puede usarse como caso de estudio sobre malas practicas en publicacion de modelos.
 
 ## Benchmarks y rendimiento
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: al ser un adaptador LoRA, la inferencia requiere cargar el modelo base Qwen2.5-7B-Instruct. En precision FP16, el base ocupa aproximadamente 15 GB de VRAM; con cuantizacion 4-bit (por ejemplo, mediante bitsandbytes) se reduce a unos 5-6 GB. El adaptador anade un overhead minimo (menos de 0.2 GB).
 - GPU recomendadas: para FP16, una GPU con 16 GB o mas (RTX 4090, A100 40GB, H100). Para cuantizacion 4-bit, una GPU con 8 GB (RTX 3070, RTX 4060) puede ser suficiente.
 - Compatibilidad con consumer GPU: si, con cuantizacion 4-bit y modelos como llama.cpp u Ollama, aunque el adaptador PEFT requiere el framework Transformers para cargarse correctamente.
-- Opciones de despliegue: vLLM, HuggingFace Transformers con PEFT, TGI (si se convierte a formato compatible), llama.cpp (requiere fusionar el adaptador con el base).
+- Opciones de despliegue: vLLM, Hugging Face Transformers con PEFT, TGI (si se convierte a formato compatible), llama.cpp (requiere fusionar el adaptador con el base).
 - Latencia y throughput: no disponibles; dependen del hardware y del metodo de cuantizacion.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e10-s1-ctrl-model
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e10-s1-ctrl-model
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA (referencia citada en la model card): https://arxiv.org/abs/1910.09700

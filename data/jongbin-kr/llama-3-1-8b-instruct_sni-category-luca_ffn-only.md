@@ -17,7 +17,7 @@ El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la li
 | Tipos de cuantizacion | no disponible (el repo contiene safetensors, pero no se indica cuantizacion) |
 | Idiomas soportados | no disponible (se heredan los del modelo base, que es multilingue) |
 | Licencia | no disponible (la model card indica "licence: license" sin especificar) |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - Jongbin-kr/llama-3.1-8b-instruct_SNI-category-luca_ffn-only](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-category-luca_ffn-only)
+- [Hugging Face - Jongbin-kr/llama-3.1-8b-instruct_SNI-category-luca_ffn-only](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-category-luca_ffn-only)
 - [Modelo base: meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Registro de entrenamiento en Weights & Biases](https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_sni_roster_ffn_only/runs/n1f1633x)
 - [Repositorio TRL (librería de entrenamiento)](https://github.com/huggingface/trl)

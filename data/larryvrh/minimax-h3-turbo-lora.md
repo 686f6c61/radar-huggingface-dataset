@@ -4,7 +4,7 @@
 
 MiniMax-H3-Turbo-Lora es un adaptador LoRA desarrollado por larryvrh que acelera la generación de vídeo con el modelo base MiniMax-H3, reduciendo el número de pasos de muestreo necesarios de los habituales (típicamente 20-50) a solo 4 pasos. Está diseñado para integrarse en flujos de trabajo de ComfyUI, tanto para conversión texto-a-vídeo (t2v) como imagen-a-vídeo (i2v), manteniendo la calidad del resultado con una fracción del coste computacional.
 
-El modelo se distribuye bajo licencia Apache-2.0 y se publica en formato safetensors, con adaptaciones específicas para su uso con el modelo pruned FL2VA. Aunque el repositorio de HuggingFace no ofrece especificaciones técnicas detalladas, la documentación asociada en GitHub y ModelScope confirma su funcionamiento como un LoRA de destilación de pasos, similar a los LoRA turbo empleados en otros modelos de difusión.
+El modelo se distribuye bajo licencia Apache-2.0 y se publica en formato safetensors, con adaptaciones específicas para su uso con el modelo pruned FL2VA. Aunque el repositorio de Hugging Face no ofrece especificaciones técnicas detalladas, la documentación asociada en GitHub y ModelScope confirma su funcionamiento como un LoRA de destilación de pasos, similar a los LoRA turbo empleados en otros modelos de difusión.
 
 Su relevancia actual radica en la creciente demanda de generación de vídeo en tiempo real o casi tiempo real en entornos de producción, donde reducir el número de pasos de muestreo sin sacrificar calidad es crítico para el despliegue en hardware consumer.
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - larryvrh/MiniMax-H3-Turbo-Lora](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora)
+- [Hugging Face - larryvrh/MiniMax-H3-Turbo-Lora](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora)
 - [GitHub - ComfyUI-MiniMax-H3-Turbo](https://github.com/Larryvrh/ComfyUI-MiniMax-H3-Turbo)
 - [ModelScope - MiniMax-H3 Turbo LoRA](https://www.modelscope.cn/models/larryvrh/MiniMax-H3-Turbo-Lora)
 - [Civitai - MiniMAX H3 Turbo Lora adapted for merging with pruned FL2VA model](https://civitai.com/models/2838852/minimax-h3-turbo-lora-adapted-for-merging-with-pruned-fl2va-model)

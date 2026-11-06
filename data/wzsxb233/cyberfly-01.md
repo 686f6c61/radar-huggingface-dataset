@@ -75,8 +75,8 @@ La búsqueda web no ha devuelto modelos comparables: los resultados apuntan a re
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CyberFly-01 | ~9,37 mil millones | No disponible | Específico de protocolo (ver benchmarks) | Términos upstream de MiniCPM-o 4.5 | HuggingFace |
-| MiniCPM-o 4.5 (base) | ~9,37 mil millones | No disponible | No disponible en la información proporcionada | Licencia MiniCPM-o 4.5 | HuggingFace |
+| CyberFly-01 | ~9,37 mil millones | No disponible | Específico de protocolo (ver benchmarks) | Términos upstream de MiniCPM-o 4.5 | Hugging Face |
+| MiniCPM-o 4.5 (base) | ~9,37 mil millones | No disponible | No disponible en la información proporcionada | Licencia MiniCPM-o 4.5 | Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ La búsqueda web no ha devuelto modelos comparables: los resultados apuntan a re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wzsxb233/CyberFly-01
+- Modelo en Hugging Face: https://huggingface.co/wzsxb233/CyberFly-01
 - Modelo base MiniCPM-o 4.5: https://huggingface.co/openbmb/MiniCPM-o-4_5
 - Referencia de licencia y atribución citada en la model card: fichero `NOTICE.md` del runtime CyberFly (sin URL pública en la información proporcionada)
 - Componentes citados para atribución: MaleCNS/flybrain, FlyBody, FlyGym y MuJoCo (sin URL específica en la información proporcionada)

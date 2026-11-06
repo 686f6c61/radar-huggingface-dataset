@@ -23,7 +23,7 @@ El objetivo principal es demostrar un proceso de fine-tuning robusto y reproduci
 
 El repositorio documenta el **fine-tuning** de un modelo causal preentrenado llamado `XpertGPT`, pero no proporciona detalles sobre su arquitectura interna. El proceso se centra en la adaptación a tareas de clasificación y opción múltiple mediante cabezas de clasificación, descartando la generación autoregressiva. El entrenamiento utiliza el optimizador `AdamW` con un ratio de warmup del 6% y una programación de tasa de aprendizaje con decaimiento lineal. El pooling se realiza tomando exactamente el último token de la secuencia, una técnica robusta para extraer la representación final.
 
-Los hiperparámetros se agrupan según el tamaño del dataset para evitar sobreajuste: las tareas grandes (~105K a ~33K ejemplos) usan 3 épocas, las medianas (~8.5K a ~5K) usan 5 épocas, y las pequeñas (~400 a ~250) usan 5 épocas con una tasa de aprendizaje mayor. El entrenamiento se ejecuta en 2 GPU T4 con `nn.DataParallel` para escalar el tamaño de lote automáticamente. El script sube automáticamente los resultados (`results/finetune_results.json`) y el historial de entrenamiento (`results/training_history.json`) al repositorio de HuggingFace.
+Los hiperparámetros se agrupan según el tamaño del dataset para evitar sobreajuste: las tareas grandes (~105K a ~33K ejemplos) usan 3 épocas, las medianas (~8.5K a ~5K) usan 5 épocas, y las pequeñas (~400 a ~250) usan 5 épocas con una tasa de aprendizaje mayor. El entrenamiento se ejecuta en 2 GPU T4 con `nn.DataParallel` para escalar el tamaño de lote automáticamente. El script sube automáticamente los resultados (`results/finetune_results.json`) y el historial de entrenamiento (`results/training_history.json`) al repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ El repositorio incluye resultados de validación de accuracy para cada tarea. No
 - **GPU**: El pipeline se ejecutó en 2 GPU T4 (16GB cada una) con `DataParallel`.
 - **VRAM**: Dado el tamaño del modelo (no especificado) y el uso de secuencias de 128 tokens, la VRAM estimada para fine-tuning en T4 es suficiente (16 GB).
 - **Inferencia**: no se especifican requisitos de inferencia, pero un modelo pequeño con arquitectura similar a XpertGPT puede caber en GPU de consumo como una RTX 3060 o RTX 4060 con cuantización.
-- **Opciones de despliegue**: no se mencionan herramientas específicas como vLLM u Ollama; el script usa `transformers` y `datasets` de HuggingFace.
+- **Opciones de despliegue**: no se mencionan herramientas específicas como vLLM u Ollama; el script usa `transformers` y `datasets` de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -81,7 +81,7 @@ No se han proporcionado datos de comparación con otros modelos. Sin embargo, da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anonym5035/finetuning_original_model
+- Repositorio Hugging Face: https://huggingface.co/anonym5035/finetuning_original_model
 - Modelo base (referencia): `anonym5035/swi_glu_sw_64_16_8_4_xpert_gpt`
 - Script de fine-tuning: https://huggingface.co/anonym5035/finetuning_original_model/raw/main/finetune_eval.py
 

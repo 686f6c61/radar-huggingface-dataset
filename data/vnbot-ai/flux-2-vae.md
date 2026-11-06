@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vnbot-ai/FLUX.2-VAE` | VAE en archivo único derivado de FLUX.2-dev | No disponible | No aplica | Apache 2.0 declarada, sujeta a la del modelo base | HuggingFace, 0 descargas |
-| VAE oficial de `black-forest-labs/FLUX.2-dev` | VAE del modelo base | No disponible | No aplica | La del repositorio FLUX.2-dev | HuggingFace |
-| VAE de FLUX.1-dev | VAE de la generación anterior de FLUX | No disponible | No aplica | No verificada | HuggingFace |
-| VAE de SDXL | VAE de otro ecosistema latente | No disponible | No aplica | No verificada | HuggingFace |
+| `vnbot-ai/FLUX.2-VAE` | VAE en archivo único derivado de FLUX.2-dev | No disponible | No aplica | Apache 2.0 declarada, sujeta a la del modelo base | Hugging Face, 0 descargas |
+| VAE oficial de `black-forest-labs/FLUX.2-dev` | VAE del modelo base | No disponible | No aplica | La del repositorio FLUX.2-dev | Hugging Face |
+| VAE de FLUX.1-dev | VAE de la generación anterior de FLUX | No disponible | No aplica | No verificada | Hugging Face |
+| VAE de SDXL | VAE de otro ecosistema latente | No disponible | No aplica | No verificada | Hugging Face |
 
 No se dispone de datos públicos en la información proporcionada para comparar parámetros, resolución nativa ni fidelidad de reconstrucción entre estas alternativas. La comparación relevante es funcional: este repositorio es una copia no oficial de un componente del modelo base, mientras que las otras filas corresponden a los artefactos originales de sus respectivos proyectos.
 
@@ -94,7 +94,7 @@ No se dispone de datos públicos en la información proporcionada para comparar 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vnbot-ai/FLUX.2-VAE
+- Repositorio en Hugging Face: https://huggingface.co/vnbot-ai/FLUX.2-VAE
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-dev
 - Licencia enlazada por el autor (repositorio flux2 de Black Forest Labs): https://github.com/black-forest-labs/flux2/blob/main/README.md
 - Resultados de busqueda web: sin resultados tecnicos relevantes para este modelo.

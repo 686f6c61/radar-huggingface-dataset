@@ -108,7 +108,7 @@ No se dispone de alternativas comparables fuera de este linaje con datos verific
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gup98/test
+- Repositorio en Hugging Face: https://huggingface.co/gup98/test
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Referencia de cuantización de AtomicChat: https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF
 - Referencia de cuantización de pugant: https://huggingface.co/pugant/Qwen3.8-Flash-Next-ROCMFP4_STRIX_LEAN-GGUF

@@ -6,7 +6,7 @@
 
 El objetivo del adaptador es resolver tareas del entorno TextCraft-Synth, un dominio de agente textual en el que el modelo debe ejecutar acciones encadenadas para fabricar objetos a partir de materiales. El nombre del run, `p5_textcraft_grpo`, sugiere un ajuste con GRPO (Group Relative Policy Optimization), si bien la model card no detalla el algoritmo ni los hiperparámetros; esta deducción procede únicamente del nombre del experimento. El repositorio pesa 0,2 GB y contiene solo los pesos del adaptador en formato safetensors gestionados por PEFT.
 
-Su relevancia es acotada y de carácter académico: sirve como referencia reproducible de un pipeline de RL para agentes sobre un modelo de 4B, y como ejemplo de despliegue de adaptadores LoRA con vLLM. No hay benchmarks publicados, licencia declarada ni idiomas documentados, por lo que no debe tratarse como un artefacto listo para producción. La fecha de creación registrada en HuggingFace es 2026-10-19.
+Su relevancia es acotada y de carácter académico: sirve como referencia reproducible de un pipeline de RL para agentes sobre un modelo de 4B, y como ejemplo de despliegue de adaptadores LoRA con vLLM. No hay benchmarks publicados, licencia declarada ni idiomas documentados, por lo que no debe tratarse como un artefacto listo para producción. La fecha de creación registrada en Hugging Face es 2026-10-19.
 
 ## Especificaciones tecnicas
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA r32 sobre 4B | no disponible | Sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.5-4B` (base, sin adaptador) | 4B | no disponible | no disponible | no disponible | HuggingFace |
+| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA r32 sobre 4B | no disponible | Sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.5-4B` (base, sin adaptador) | 4B | no disponible | no disponible | no disponible | Hugging Face |
 | Otros adaptadores LoRA de 4B para agentes | no disponible | no disponible | no disponible | no disponible | No identificados en la informacion disponible |
 
 La comparación cuantitativa no es posible: no hay resultados de evaluación publicados para este adaptador ni cifras de referencia en la información proporcionada. La única comparación defendible es estructural (adaptador de rango 32 frente al modelo base sin ajustar, mismo peso base y misma infraestructura de servicio).
@@ -101,7 +101,7 @@ La comparación cuantitativa no es posible: no hay resultados de evaluación pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wenhanli412/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/wenhanli412/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Checkpoint de origen en Tinker: `tinker://model_a38a6733/v50_r2` (URI interno, no resoluble como enlace web)
 - Configuración de entrenamiento y evaluación: `configs/p5_textcraft_grpo.yaml` (incluida en el repositorio del autor)

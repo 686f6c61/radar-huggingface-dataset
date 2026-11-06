@@ -1,7 +1,7 @@
 # beyondyourself113/sn99-a
 
 ## Resumen
-El modelo `beyondyourself113/sn99-a` es un repositorio publicado en HuggingFace por el usuario `beyondyourself113` con fecha de creación del 3 de agosto de 2026. En el momento de la consulta, el repositorio no contiene información descriptiva, metadatos técnicos ni archivos de peso (tamaño del repositorio: 0.0 GB). No se ha especificado la licencia, los idiomas soportados, el pipeline ni ninguna característica arquitectónica.
+El modelo `beyondyourself113/sn99-a` es un repositorio publicado en Hugging Face por el usuario `beyondyourself113` con fecha de creación del 3 de agosto de 2026. En el momento de la consulta, el repositorio no contiene información descriptiva, metadatos técnicos ni archivos de peso (tamaño del repositorio: 0.0 GB). No se ha especificado la licencia, los idiomas soportados, el pipeline ni ninguna característica arquitectónica.
 
 Dado que el repositorio carece de documentación pública y de artefactos descargables, no es posible determinar qué tipo de modelo es, qué problema resuelve ni qué capacidades ofrece. Se trata, por tanto, de una publicación sin información verificable, lo que impide cualquier evaluación técnica rigurosa. Se recomienda contactar con el autor o esperar a que se publique documentación adicional antes de considerar su uso en entornos de desarrollo o investigación.
 
@@ -46,4 +46,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio de apli
 - Se recomienda extremar la precaución ante cualquier uso en producción hasta que el autor publique información verificable.
 
 ## Enlaces
-- [Repositorio en HuggingFace](https://huggingface.co/beyondyourself113/sn99-a)
+- [Repositorio en Hugging Face](https://huggingface.co/beyondyourself113/sn99-a)

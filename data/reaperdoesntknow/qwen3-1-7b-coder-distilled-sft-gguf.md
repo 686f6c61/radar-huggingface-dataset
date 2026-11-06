@@ -79,7 +79,7 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT-GGUF)
 - [Modelo fuente (precisión completa)](https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Coder-Distilled-SFT)
 - [Modelo base Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Teacher Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)

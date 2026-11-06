@@ -130,7 +130,7 @@ Posicionamiento: Sushi-2.6bpw es el segundo pack mas pequeno de la comparativa t
 
 ## Enlaces
 
-- Pack en HuggingFace: https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-2.6bpw
+- Pack en Hugging Face: https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-2.6bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de sushi: https://github.com/beamivalice/sushi
 - Binario de sushi para macOS arm64: https://github.com/beamivalice/sushi/releases/latest/download/sushi-bin-macos-arm64.tar.gz

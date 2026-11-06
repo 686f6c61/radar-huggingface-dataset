@@ -78,7 +78,7 @@ La diferencia principal es el dtype base (fp16 vs bf16) y la versión de oMLX co
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-mtp)
+- [Repositorio Hugging Face](https://huggingface.co/craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-mtp)
 - [Modelo base (Google)](https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized)
 - [Variante text-only](https://huggingface.co/craquehouse/gemma-4-E2B-it-qat-oQ4e-fp16-text-only)
 - [Variante bf16 de bambocher](https://huggingface.co/bambocher/gemma-4-E2B-it-qat-oQ4e-mtp)

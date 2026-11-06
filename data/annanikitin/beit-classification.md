@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AnnaNikitin/beit-classification` es un repositorio de HuggingFace publicado por la usuaria AnnaNikitin que contiene una implementacion propia y compacta de un modelo de clasificacion basado en una arquitectura denominada "Beit" por el autor. No se trata de un modelo entrenado ni de una release con pesos listos para produccion: segun la propia model card, `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El repositorio incluye `main.py`, `config.json` y `training_args.json`, lo que sugiere que su proposito principal es servir como punto de partida reproducible para experimentacion.
+`AnnaNikitin/beit-classification` es un repositorio de Hugging Face publicado por la usuaria AnnaNikitin que contiene una implementacion propia y compacta de un modelo de clasificacion basado en una arquitectura denominada "Beit" por el autor. No se trata de un modelo entrenado ni de una release con pesos listos para produccion: segun la propia model card, `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El repositorio incluye `main.py`, `config.json` y `training_args.json`, lo que sugiere que su proposito principal es servir como punto de partida reproducible para experimentacion.
 
 La informacion disponible es muy limitada. Los metadatos de safetensors indican 49.600 parametros totales, una cifra muy baja que contrasta con la etiqueta interna "giant" que aparece en la model card, lo que apunta a que la nomenclatura de escala del autor no se corresponde con un recuento de parametros real de nivel giant. El repositorio registra 0 descargas y 0 "likes", y ocupa 0,0 GB, coherente con un artefacto ligero de inicializacion sin pesos entrenados de relevancia.
 
@@ -64,9 +64,9 @@ La model card no especifica la modalidad ni el dominio de clasificacion, por lo 
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| AnnaNikitin/beit-classification | 49.600 | no disponible | MIT | HuggingFace (checkpoint de inicializacion) | sin benchmarks publicados |
-| BERT-base-uncased (referencia generica de clasificacion de texto) | ~110 millones | 512 tokens | Apache 2.0 | HuggingFace | ampliamente benchmarkeado |
-| ViT-base-patch16-224 (referencia generica de clasificacion de imagen) | ~86 millones | imagen 224x224 | Apache 2.0 | HuggingFace | ampliamente benchmarkeado |
+| AnnaNikitin/beit-classification | 49.600 | no disponible | MIT | Hugging Face (checkpoint de inicializacion) | sin benchmarks publicados |
+| BERT-base-uncased (referencia generica de clasificacion de texto) | ~110 millones | 512 tokens | Apache 2.0 | Hugging Face | ampliamente benchmarkeado |
+| ViT-base-patch16-224 (referencia generica de clasificacion de imagen) | ~86 millones | imagen 224x224 | Apache 2.0 | Hugging Face | ampliamente benchmarkeado |
 
 Dado que el repositorio analizado no esta entrenado y no define su modalidad, no se dispone de modelos comparables directos dentro de su misma categoria. Se indica, por tanto, "no disponible" como comparacion de rendimiento.
 
@@ -84,7 +84,7 @@ Dado que el repositorio analizado no esta entrenado y no define su modalidad, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnnaNikitin/beit-classification
+- Hugging Face: https://huggingface.co/AnnaNikitin/beit-classification
 - Paper: no disponible
-- Repositorio de codigo: no disponible (el propio repositorio de HuggingFace incluye `main.py`)
+- Repositorio de codigo: no disponible (el propio repositorio de Hugging Face incluye `main.py`)
 - Blog o demo: no disponible

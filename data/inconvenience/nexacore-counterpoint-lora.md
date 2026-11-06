@@ -93,7 +93,7 @@ No se dispone de comparativas de rendimiento entre este adaptador y las alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Inconvenience/nexacore-counterpoint-lora
+- Modelo en Hugging Face: https://huggingface.co/Inconvenience/nexacore-counterpoint-lora
 - Modelo base indicado en la model card: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

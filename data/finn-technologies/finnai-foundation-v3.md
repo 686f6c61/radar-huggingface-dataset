@@ -18,7 +18,7 @@ Su relevancia practica esta en el nicho de asistentes locales en macOS: OCR, pre
 | Longitud de contexto | 32k tokens |
 | Tipos de cuantizacion | GGUF Q4_K_M (4,98 BPW, 697 MiB); proyector de vision mmproj en Q8_0; checkpoint completo en fp16 |
 | Idiomas soportados | Ingles (en) |
-| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, campo `license: other` en HuggingFace), heredada de LiquidAI/LFM2.5-VL-1.6B |
+| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, campo `license: other` en Hugging Face), heredada de LiquidAI/LFM2.5-VL-1.6B |
 | Formato de pesos | safetensors (checkpoint fusionado completo), GGUF (Q4_K_M), GGUF mmproj Q8_0 |
 
 ## Arquitectura y entrenamiento
@@ -93,7 +93,7 @@ Los datos de las filas de Qwen2.5-VL-3B-Instruct y SmolVLM2-2.2B provienen de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Finn-Technologies/FinnAI-Foundation-v3
+- Modelo en Hugging Face: https://huggingface.co/Finn-Technologies/FinnAI-Foundation-v3
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B
 - Licencia del modelo base (LFM Open License v1.0): https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B/blob/main/LICENSE
 - Adaptador LoRA: `Finn-Technologies/FinnAI-Foundation-LoRA-v3` (referenciado en la model card; sin URL completa en la informacion disponible)

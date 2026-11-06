@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Origamihaoran/survey-self-supervised21` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre aprendizaje autosupervisado (self-supervised learning) publicado en HuggingFace. La model card lo describe explícitamente como "a structured set of research notes", un "working sketch, not a polished release", y aclara que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. El artefacto principal es `reading.md`, acompañado de `README.md`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor define como "initialization checkpoint".
+`Origamihaoran/survey-self-supervised21` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre aprendizaje autosupervisado (self-supervised learning) publicado en Hugging Face. La model card lo describe explícitamente como "a structured set of research notes", un "working sketch, not a polished release", y aclara que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado. El artefacto principal es `reading.md`, acompañado de `README.md`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor define como "initialization checkpoint".
 
 El peso real del checkpoint es de 33.088 parámetros totales, un tamaño tres órdenes de magnitud por debajo de cualquier modelo utilizable en producción. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta. La etiqueta `transformer` aparece en los tags del repositorio, por lo que la configuración apunta a una arquitectura de ese tipo, pero no hay evidencia de entrenamiento ni de capacidad funcional asociada.
 
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada artefacto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Origamihaoran/survey-self-supervised21
+- Hugging Face: https://huggingface.co/Origamihaoran/survey-self-supervised21
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

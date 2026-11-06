@@ -79,7 +79,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo ONNX](https://huggingface.co/DeependraVerma/legal-slm-125m-ultimate-sft-onnx)
+- [Repositorio Hugging Face del modelo ONNX](https://huggingface.co/DeependraVerma/legal-slm-125m-ultimate-sft-onnx)
 - [Modelo padre (legal-slm-125m-ultimate-sft)](https://huggingface.co/DeependraVerma/legal-slm-125m-ultimate-sft)
 - [Modelo base (slm-125m-ultimate-base)](https://huggingface.co/DeependraVerma/slm-125m-ultimate-base)
 - [Web demo del proyecto](https://legal-slm-125.vercel.app/)

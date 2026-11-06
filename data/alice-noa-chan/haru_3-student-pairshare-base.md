@@ -13,7 +13,7 @@ Su relevancia es fundamentalmente de investigación: explora una variante arquit
 | Parametro | Valor |
 |---|---|
 | Arquitectura | `haru_dense`: transformer decoder denso de 8 capas logicas, con una FFN SwiGLU compartida por cada par de capas adyacentes (4 grupos) y un adaptador residual lineal independiente de rango 48 por capa |
-| Parametros totales | 13.688.705 segun la model card; 14.600.704 segun el recuento de safetensors publicado en HuggingFace (la diferencia no se explica en la informacion disponible) |
+| Parametros totales | 13.688.705 segun la model card; 14.600.704 segun el recuento de safetensors publicado en Hugging Face (la diferencia no se explica en la informacion disponible) |
 | Parametros activos | No aplica: modelo denso, no MoE |
 | Longitud de contexto | 1.024 tokens (entrada + salida deben caber en ese limite) |
 | Tipos de cuantizacion | No disponible. Los pesos publicados son FP32 sin cuantizar y no se documenta soporte de GGUF ni de cuantizaciones de otro tipo |
@@ -77,11 +77,11 @@ El intervalo de confianza del 95 % por bootstrap de documentos pareados para la 
 
 | Modelo | Rol | Parametros | Contexto | BPC validacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| haru_3-student-pairshare-base (este) | Student experimental no seleccionado, non-IT | 13.688.705 | 1.024 | 0,945834 | MIT | Publico en HuggingFace |
-| haru_3-student-base (Gated8-13m) | Student seleccionado, non-IT | 13.688.705 | 1.024 | 0,949001 | No disponible | Publico en HuggingFace |
-| haru_3-student-chat (Gated8-13m IT) | Version IT del student seleccionado | 13.688.705 | 1.024 | No disponible | No disponible | Publico en HuggingFace |
-| haru_3-teacher-base | Teacher congelado, non-IT | No disponible | No disponible | No disponible | No disponible | Publico en HuggingFace |
-| haru_3-teacher-chat | Teacher congelado, IT | No disponible | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| haru_3-student-pairshare-base (este) | Student experimental no seleccionado, non-IT | 13.688.705 | 1.024 | 0,945834 | MIT | Publico en Hugging Face |
+| haru_3-student-base (Gated8-13m) | Student seleccionado, non-IT | 13.688.705 | 1.024 | 0,949001 | No disponible | Publico en Hugging Face |
+| haru_3-student-chat (Gated8-13m IT) | Version IT del student seleccionado | 13.688.705 | 1.024 | No disponible | No disponible | Publico en Hugging Face |
+| haru_3-teacher-base | Teacher congelado, non-IT | No disponible | No disponible | No disponible | No disponible | Publico en Hugging Face |
+| haru_3-teacher-chat | Teacher congelado, IT | No disponible | No disponible | No disponible | No disponible | Publico en Hugging Face |
 
 La diferencia arquitectonica clave entre las dos variantes student es que Gated8 usa FFN independientes de anchura 512, mientras que PairShare usa anchura 960 con FFN compartida por pares de capas y adaptadores de rango 48. No se dispone de comparaciones con modelos de otras familias.
 
@@ -101,7 +101,7 @@ La diferencia arquitectonica clave entre las dos variantes student es que Gated8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alice-noa-chan/haru_3-student-pairshare-base
+- Modelo en Hugging Face: https://huggingface.co/alice-noa-chan/haru_3-student-pairshare-base
 - Resultados de evaluacion: https://huggingface.co/alice-noa-chan/haru_3-student-pairshare-base/blob/main/evaluation.json
 - Registros de validacion: https://huggingface.co/alice-noa-chan/haru_3-student-pairshare-base/blob/main/validation.json
 - Repositorio del student seleccionado (Gated8, non-IT): https://huggingface.co/alice-noa-chan/haru_3-student-base
@@ -110,6 +110,6 @@ La diferencia arquitectonica clave entre las dos variantes student es que Gated8
 - Teacher base: https://huggingface.co/alice-noa-chan/haru_3-teacher-base
 - Teacher IT: https://huggingface.co/alice-noa-chan/haru_3-teacher-chat
 - Repositorio GitHub del proyecto (usado para el recurso grafico de la model card): https://github.com/alice-noa-chan/haru
-- Perfil del autor en HuggingFace: https://huggingface.co/alice-noa-chan
+- Perfil del autor en Hugging Face: https://huggingface.co/alice-noa-chan
 
 Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el modelo (corresponden a servicios de correo y cuentas de un proveedor de internet, y a un canal de YouTube). No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

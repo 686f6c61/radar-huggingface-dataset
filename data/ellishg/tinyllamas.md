@@ -19,7 +19,7 @@ Su relevancia ahora es practica: el checkpoint `stories3_5M-v32k` alcanzo una pe
 | Idiomas soportados | no disponible en la model card (el corpus TinyStories es en ingles) |
 | Licencia | MIT |
 | Formato de pesos | `.bin` en formato propio de llama2.c; checkpoints de entrenamiento `.pt` (PyTorch) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Tamano del repositorio | 0,4 GB (incluye checkpoints de entrenamiento) |
 | Fecha de creacion / actualizacion | 2026-09-11 / 2026-09-13 |
 
@@ -91,7 +91,7 @@ La comparacion solo puede ser cualitativa: los tres proyectos comparten el mismo
 - Licencia MIT: permite uso comercial, pero el modelo no ofrece ninguna utilidad practica en produccion mas alla de experimentacion y docencia.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ellishg/tinyllamas
+- Modelo en Hugging Face: https://huggingface.co/ellishg/tinyllamas
 - Repositorio de entrenamiento e inferencia del autor: https://github.com/ellishg/llama2.c
 - Repositorio original de llama2.c (Karpathy): https://github.com/karpathy/llama2.c
 - No se han encontrado en la busqueda web enlaces relevantes al modelo; los resultados devueltos tratan sobre formulacion quimica de esqueletos y no guardan relacion.

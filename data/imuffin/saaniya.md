@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saaniya es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario imuffin bajo el identificador `imuffin/saaniya`. Se distribuye en formato diffusers y declara como modelo base `krea/Krea-2-Raw`, sobre el que se aplicaria como complemento para condicionar la generacion hacia un sujeto o estilo concreto. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de difusion completo.
+Saaniya es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario imuffin bajo el identificador `imuffin/saaniya`. Se distribuye en formato diffusers y declara como modelo base `krea/Krea-2-Raw`, sobre el que se aplicaria como complemento para condicionar la generacion hacia un sujeto o estilo concreto. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de difusion completo.
 
 La model card es minima: incluye la plantilla estandar de LoRA de difusion, una imagen de ejemplo generada a partir de un prompt descriptivo (una selfie en un probador, con prendas, zapatillas y un cartel promocional) y un apartado de descarga. No se documenta el `instance_prompt` (aparece como `null`), el dataset de entrenamiento, el rango del LoRA, la licencia ni los idiomas soportados. El modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -58,7 +58,7 @@ Tampoco se documentan los datos de entrenamiento: no hay numero de imagenes, res
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No existen metricas objetivas (FID, CLIP score, similitud de identidad, DINO, etc.) ni comparaciones cuantitativas con otros adaptadores en la model card, en los metadatos de HuggingFace ni en los resultados de busqueda consultados.
+No existen metricas objetivas (FID, CLIP score, similitud de identidad, DINO, etc.) ni comparaciones cuantitativas con otros adaptadores en la model card, en los metadatos de Hugging Face ni en los resultados de busqueda consultados.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No disponible. No se han encontrado en la informacion proporcionada datos de otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| imuffin/saaniya | no disponible | no aplica | no disponible | no disponible | publico en HuggingFace |
+| imuffin/saaniya | no disponible | no aplica | no disponible | no disponible | publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No se han encontrado en la informacion proporcionada datos de otr
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/imuffin/saaniya
+- Pagina del modelo en Hugging Face: https://huggingface.co/imuffin/saaniya
 - Pestana de ficheros y versiones: https://huggingface.co/imuffin/saaniya/tree/main
 - Perfil del autor: https://huggingface.co/imuffin
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw

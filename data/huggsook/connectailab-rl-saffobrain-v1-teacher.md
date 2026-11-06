@@ -96,7 +96,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggsook/connectailab-rl-saffobrain-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/huggsook/connectailab-rl-saffobrain-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab (aprendizaje): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

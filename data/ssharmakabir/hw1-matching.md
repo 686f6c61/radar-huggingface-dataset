@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo ssharmakabir/hw1-matching es un prototipo de investigacion de tipo Cnn Transformer orientado a tareas de matching (emparejamiento), publicado por el usuario ssharmakabir en HuggingFace. Se trata de un checkpoint de inicializacion de escala "nano" con 24.832 parametros totales, cuyo objetivo declarado no es ofrecer un modelo utilizable en produccion, sino documentar una arquitectura, unos formatos de fichero y una receta de experimento por defecto. La model card indica explicitamente que el checkpoint no ha sido entrenado ni auditado.
+El modelo ssharmakabir/hw1-matching es un prototipo de investigacion de tipo Cnn Transformer orientado a tareas de matching (emparejamiento), publicado por el usuario ssharmakabir en Hugging Face. Se trata de un checkpoint de inicializacion de escala "nano" con 24.832 parametros totales, cuyo objetivo declarado no es ofrecer un modelo utilizable en produccion, sino documentar una arquitectura, unos formatos de fichero y una receta de experimento por defecto. La model card indica explicitamente que el checkpoint no ha sido entrenado ni auditado.
 
 La relevancia de esta ficha es, por tanto, acotada: sirve como ejemplo de repositorio de investigacion reproducible, con separacion clara entre configuracion de arquitectura (config.json), receta de entrenamiento (training_args.json) y pesos (model.safetensors). No se reclama ninguna puntuacion de benchmark y no se presentan numeros de rendimiento verificados.
 
@@ -80,8 +80,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssharmakabir/hw1-matching
+- Modelo en Hugging Face: https://huggingface.co/ssharmakabir/hw1-matching
 - Paper: no disponible
 - Blog o nota tecnica: no disponible
-- Repositorio de codigo adicional: no disponible (el propio repositorio de HuggingFace incluye inference.py, config.json y training_args.json)
+- Repositorio de codigo adicional: no disponible (el propio repositorio de Hugging Face incluye inference.py, config.json y training_args.json)
 - Demo: no disponible

@@ -102,7 +102,7 @@ No se dispone de datos cuantitativos de rendimiento de las alternativas en las m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yalund/moe-l2
+- Repositorio en Hugging Face: https://huggingface.co/yalund/moe-l2
 - Codigo fuente en GitHub: https://github.com/yalun753/moe-l2
 - Paquete en PyPI: https://pypi.org/project/moe-l2
 - White paper (chino): https://github.com/yalun753/moe-l2/blob/main/references/zh/white-paper-zh.md

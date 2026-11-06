@@ -75,7 +75,7 @@ Nota: la discrepancia en parametros entre el nombre (27B) y el archivo safetenso
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/pyros-vault/Qwen3.8-27B-Uncensored-oQ4e-mtp
 - Modelo base (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Version FP8 del modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B

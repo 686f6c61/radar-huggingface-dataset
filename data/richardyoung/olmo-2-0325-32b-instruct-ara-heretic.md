@@ -97,7 +97,7 @@ La comparación directa de capacidades con alternativas de 32B (p. ej., Qwen 2.5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-ARA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-ARA-heretic
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct
 - Modelo base (checkpoint): https://huggingface.co/allenai/OLMo-2-0325-32B/
 - Heretic: https://heretic-project.org

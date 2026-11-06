@@ -89,7 +89,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Tipo | Entrada | Evaluación por sujetos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| makactuary/uci-har-activity-baseline | Regresión logística | 561 características precalculadas | Sí (GroupKFold + test retenido) | CC BY 4.0 | HuggingFace |
+| makactuary/uci-har-activity-baseline | Regresión logística | 561 características precalculadas | Sí (GroupKFold + test retenido) | CC BY 4.0 | Hugging Face |
 | Random forest (candidato interno del mismo autor) | Ensemble de árboles | 561 características precalculadas | Sí (GroupKFold) | CC BY 4.0 | No publicado como artefacto independiente |
 | Modelos profundos sobre señal cruda (familia CNN/LSTM en HAR) | Red neuronal | Señal inercial cruda | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de terceros comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makactuary/uci-har-activity-baseline
+- Modelo en Hugging Face: https://huggingface.co/makactuary/uci-har-activity-baseline
 - Repositorio del motor QMASE: https://github.com/000MAK/quantix-martial-arts-engine
 - Código de entrenamiento (har_baseline.py): https://github.com/000MAK/quantix-martial-arts-engine/blob/main/src/martial_arts_engine/har_baseline.py
 - Dataset UCI HAR (DOI): https://doi.org/10.24432/C54S4K

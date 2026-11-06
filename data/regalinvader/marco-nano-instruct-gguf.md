@@ -100,7 +100,7 @@ Los unicos datos comparativos publicados son de velocidad en el mismo dispositiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RegalInvader/Marco-Nano-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/RegalInvader/Marco-Nano-Instruct-GGUF
 - Modelo base: https://huggingface.co/ATH-MaaS/Marco-Nano-Instruct
 - PocketPal (aplicacion movil): https://github.com/a-ghorbani/pocketpal-ai
 - llama.cpp (proyecto referenciado en la model card): https://github.com/ggml-org/llama.cpp

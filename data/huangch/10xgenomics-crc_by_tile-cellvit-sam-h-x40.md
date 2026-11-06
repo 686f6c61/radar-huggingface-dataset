@@ -76,7 +76,7 @@ La model card no incluye ninguna metrica (ni Dice, ni AJI, ni F1 de deteccion, n
 
 | Modelo | Arquitectura | Parametros | Dominio de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (CellViT-SAM-H x40, CRC) | CellViT-SAM, encoder ViT-H | no disponible | Cancer colorrectal, 10x Genomics, 40x | Apache 2.0 | HuggingFace, 0 descargas, sin model card |
+| Este checkpoint (CellViT-SAM-H x40, CRC) | CellViT-SAM, encoder ViT-H | no disponible | Cancer colorrectal, 10x Genomics, 40x | Apache 2.0 | Hugging Face, 0 descargas, sin model card |
 | CellViT-SAM (generalista, autores originales) | CellViT-SAM, encoder ViT-H | no disponible | Multiples tejidos y dominios (PanNuke y otros) | no disponible | Publico (paper y repositorio) |
 | CellViT (original) | Codificador ViT + decodificador de instancias | no disponible | Multiples tejidos (PanNuke) | no disponible | Publico (paper y repositorio) |
 | HoVer-Net | CNN con ramas de mapa horizontal/vertical | no disponible | Multiples tejidos (PanNuke, CoNSeP) | no disponible | Publico (repositorio) |
@@ -95,12 +95,12 @@ No hay resultados de benchmarks publicados para este checkpoint, por lo que no e
 - Alucinacion en segmentacion: los modelos basados en SAM pueden generar mascaras plausibles pero incorrectas en regiones con artefactos, tinta, burbujas o tejido necrotico. La salida siempre debe validarse.
 - Licencia: Apache 2.0 permite uso comercial con atribucion y sin copyleft, pero la licencia de los pesos del modelo base SAM y del checkpoint CellViT-SAM original debe verificarse por separado antes de un uso comercial, ya que podrian imponer condiciones adicionales.
 - Uso clinico: no hay evidencia de validacion regulatoria ni de rendimiento diagnostico. No debe emplearse para decisiones clinicas sin validacion prospectiva y aprobacion correspondiente.
-- Fecha de creacion anomala: los metadatos de HuggingFace registran 2026-09-19 como fecha de creacion y actualizacion, lo que conviene tener en cuenta al citar el artefacto.
+- Fecha de creacion anomala: los metadatos de Hugging Face registran 2026-09-19 como fecha de creacion y actualizacion, lo que conviene tener en cuenta al citar el artefacto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangch/10xGenomics-CRC_BY_TILE-CellViT-SAM-H-x40
-- Perfil del autor en HuggingFace: https://huggingface.co/huangch
+- Hugging Face: https://huggingface.co/huangch/10xGenomics-CRC_BY_TILE-CellViT-SAM-H-x40
+- Perfil del autor en Hugging Face: https://huggingface.co/huangch
 - Repositorio de referencia de la arquitectura CellViT-SAM: no disponible en los resultados de busqueda proporcionados
 - Paper de CellViT-SAM: no disponible en los resultados de busqueda proporcionados
 - Resultados de busqueda web relevantes: ninguno (las busquedas devuelven unicamente perfiles de LinkedIn sin relacion con el modelo)

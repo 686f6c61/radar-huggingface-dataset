@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zer-AIV1-Glitched es un modelo de generacion de texto publicado por el usuario amonis en HuggingFace. Se trata de un fine-tuning del modelo petruhonk/Qwen3.8-9B-Distill-uncensored-heretic, que a su vez deriva de la familia Qwen3.5. El autor lo ha entrenado utilizando Unsloth, una libreria optimizada para fine-tuning rapido de modelos grandes, y lo distribuye bajo licencia Apache 2.0.
+Zer-AIV1-Glitched es un modelo de generacion de texto publicado por el usuario amonis en Hugging Face. Se trata de un fine-tuning del modelo petruhonk/Qwen3.8-9B-Distill-uncensored-heretic, que a su vez deriva de la familia Qwen3.5. El autor lo ha entrenado utilizando Unsloth, una libreria optimizada para fine-tuning rapido de modelos grandes, y lo distribuye bajo licencia Apache 2.0.
 
 El modelo se presenta como un ajuste fino orientado a generacion de texto en ingles, con la etiqueta `qwen3_5` que sugiere una arquitectura basada en la familia Qwen 3.5. El nombre "Glitched" y el origen "uncensored-heretic" del modelo base indican que probablemente se ha entrenado para reducir las restricciones de alineacion y seguridad habituales, lo que puede traducirse en respuestas menos filtradas pero tambien en mayor riesgo de contenido inapropiado.
 
@@ -41,7 +41,7 @@ No hay informacion sobre innovaciones tecnicas como decodificacion especulativa,
 - Experimentacion con modelos desalineados: investigadores interesados en estudiar el comportamiento de modelos "uncensored" pueden usar este checkpoint como base para analisis de sesgos y seguridad.
 - Fine-tuning posterior: al ser un modelo pequeno en disco (0.5 GB) y con licencia Apache 2.0, puede servir como punto de partida para ajustes adicionales con Unsloth en entornos con recursos limitados.
 - Generacion de texto creativo sin filtros: para proyectos donde se requiera contenido sin restricciones de alineacion, aunque con las advertencias de calidad y sesgo correspondientes.
-- Pruebas de pipelines de TGI: el tag `text-generation-inference` permite desplegarlo en infraestructura de HuggingFace TGI para validar integraciones.
+- Pruebas de pipelines de TGI: el tag `text-generation-inference` permite desplegarlo en infraestructura de Hugging Face TGI para validar integraciones.
 - Docencia y demostraciones: como ejemplo de fine-tuning rapido con Unsloth y de los riesgos de modelos "heretic".
 - Investigacion sobre destilacion: el modelo base es un destilado, por lo que puede usarse para estudiar el impacto de la destilacion en modelos de 9B.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| amonis/Zer-AIV1-Glitched | no disponible (base 9B) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| petruhonk/Qwen3.8-9B-Distill-uncensored-heretic | 9B (segun nombre) | no disponible | no disponible | HuggingFace |
-| Qwen3.5 (familia oficial) | variable | no disponible | no disponible | HuggingFace |
+| amonis/Zer-AIV1-Glitched | no disponible (base 9B) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| petruhonk/Qwen3.8-9B-Distill-uncensored-heretic | 9B (segun nombre) | no disponible | no disponible | Hugging Face |
+| Qwen3.5 (familia oficial) | variable | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa. La comparativa se limita a parametros y licencia.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amonis/Zer-AIV1-Glitched
+- Hugging Face: https://huggingface.co/amonis/Zer-AIV1-Glitched
 - Modelo base: https://huggingface.co/petruhonk/Qwen3.8-9B-Distill-uncensored-heretic
 - Unsloth: https://github.com/unslothai/unsloth

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Z-images_models es un repositorio publicado en HuggingFace por el usuario Andyhere cuyo contenido técnico está practicamente sin documentar: la model card se limita a declarar la licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. A partir de los metadatos disponibles se sabe que se trata de pesos derivados de un modelo conversacional (etiqueta `conversational`) distribuidos en formato GGUF, con cuantizaciones generadas mediante imatrix, y que el repositorio tambien contiene pesos en safetensors con un total de 4.022.468.096 parametros (aproximadamente 4.020 millones, es decir, un modelo de escala 4B).
+Z-images_models es un repositorio publicado en Hugging Face por el usuario Andyhere cuyo contenido técnico está practicamente sin documentar: la model card se limita a declarar la licencia MIT, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. A partir de los metadatos disponibles se sabe que se trata de pesos derivados de un modelo conversacional (etiqueta `conversational`) distribuidos en formato GGUF, con cuantizaciones generadas mediante imatrix, y que el repositorio tambien contiene pesos en safetensors con un total de 4.022.468.096 parametros (aproximadamente 4.020 millones, es decir, un modelo de escala 4B).
 
 El repositorio ocupa 236,9 GB, un tamano desproporcionado para un modelo de 4B en precision completa (que rondaria los 8 GB en FP16), lo que indica que agrupa un numero elevado de variantes cuantizadas y probablemente multiples artefactos auxiliares. El nombre del repositorio sugiere contenido relacionado con imagenes, mientras que las etiquetas y la categoria declarada apuntan a un modelo de lenguaje conversacional; esta discrepancia no puede resolverse con la informacion disponible.
 
-Su relevancia actual es limitada pero concreta: acumula 886 descargas y una unica valoracion, y esta etiquetado como `endpoints_compatible`, lo que indica que puede desplegarse en HuggingFace Inference Endpoints. Para cualquier evaluacion seria, el desarrollador deberia verificar por su cuenta la procedencia de los pesos, la arquitectura real y la calidad de las cuantizaciones, ya que el autor no aporta ninguna de esas garantias.
+Su relevancia actual es limitada pero concreta: acumula 886 descargas y una unica valoracion, y esta etiquetado como `endpoints_compatible`, lo que indica que puede desplegarse en Hugging Face Inference Endpoints. Para cualquier evaluacion seria, el desarrollador deberia verificar por su cuenta la procedencia de los pesos, la arquitectura real y la calidad de las cuantizaciones, ya que el autor no aporta ninguna de esas garantias.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ Tampoco existe informacion sobre el proceso de entrenamiento: se desconoce el vo
 
 - Generacion de texto conversacional: la etiqueta `conversational` es la unica indicacion explicita sobre la funcion del modelo.
 - Cuantizacion lista para inferencia local: la presencia de GGUF e imatrix permite ejecucion en CPU y GPU de gama consumer con llama.cpp y derivados.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -89,7 +89,7 @@ El modelo analizado ofrece una licencia mas permisiva que Llama 3.2 y un tamano 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Andyhere/Z-images_models
+- Repositorio en Hugging Face: https://huggingface.co/Andyhere/Z-images_models
 - Model card del autor: no disponible (unicamente contiene la declaracion de licencia MIT)
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-GGUF es una redistribucion cuantizada en formato GGUF del modelo de generacion de imagenes Qwen/Qwen-Image-2.1, publicada por el usuario KasugaiSakura en HuggingFace. Se trata, por tanto, de una conversion de pesos, no de un modelo entrenado desde cero: el autor declara explicitamente que parte de los pesos base originales de Qwen y que la conversion se realizo con stable-diffusion.cpp (commit 1330cebae8f2ba99249df846cc0c9444fcbd4308), a partir de la revision b3179ad355be050328e483a9dfdd9e60cd62adfa del modelo original.
+Qwen-Image-2.1-Uncensored-GGUF es una redistribucion cuantizada en formato GGUF del modelo de generacion de imagenes Qwen/Qwen-Image-2.1, publicada por el usuario KasugaiSakura en Hugging Face. Se trata, por tanto, de una conversion de pesos, no de un modelo entrenado desde cero: el autor declara explicitamente que parte de los pesos base originales de Qwen y que la conversion se realizo con stable-diffusion.cpp (commit 1330cebae8f2ba99249df846cc0c9444fcbd4308), a partir de la revision b3179ad355be050328e483a9dfdd9e60cd62adfa del modelo original.
 
 El problema que resuelve es el de ejecutar un modelo de difusion texto-a-imagen de 7.115.124.736 parametros en hardware de consumo. Los pesos originales en BF16 ocuparian del orden de 14 GB, mientras que las variantes GGUF publicadas van de 4,05 GiB (Q4_0) a 7,59 GiB (Q8_0), lo que permite mantener el modelo de difusion en VRAM de una GPU de gama media y dejar el codificador de texto en RAM del sistema. El repositorio incluye ademas los ficheros complementarios empaquetados para ComfyUI: el text encoder Qwen3-VL-8B (en BF16 o Int8) y el VAE propio del modelo.
 
@@ -18,7 +18,7 @@ La etiqueta "Uncensored" hace referencia a que esta publicacion no incorpora ver
 | Longitud de contexto | no disponible (no se especifica longitud de prompt en tokens) |
 | Tipos de cuantizacion | GGUF: Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0; text encoder en BF16 e Int8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (etiquetada como license: other en HuggingFace) |
+| Licencia | qwen-research (etiquetada como license: other en Hugging Face) |
 | Formato de pesos | GGUF (transformer); safetensors (text encoder y VAE) |
 | Pipeline | text-to-image |
 | Modelo base | Qwen/Qwen-Image-2.1 (relacion: quantized) |
@@ -86,8 +86,8 @@ Alternativas de la misma categoria:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen/Qwen-Image-2.1 (base) | 7.115.124.736 | no disponible | qwen-research | HuggingFace | Pesos originales sin cuantizar; este repositorio es una conversion suya |
-| Comfy-Org/Qwen-Image-2.1 | no disponible | no disponible | no disponible | HuggingFace | Origen declarado del text encoder y el VAE empaquetados aqui |
+| Qwen/Qwen-Image-2.1 (base) | 7.115.124.736 | no disponible | qwen-research | Hugging Face | Pesos originales sin cuantizar; este repositorio es una conversion suya |
+| Comfy-Org/Qwen-Image-2.1 | no disponible | no disponible | no disponible | Hugging Face | Origen declarado del text encoder y el VAE empaquetados aqui |
 | Otras cuantizaciones GGUF de Qwen-Image-2.1 | no disponible | no disponible | no disponible | no disponible | No se han identificado en la informacion proporcionada |
 | Modelos de difusion de tamano similar (otras familias) | no disponible | no disponible | no disponible | no disponible | No hay datos comparativos publicados en la informacion disponible |
 
@@ -107,7 +107,7 @@ Alternativas de la misma categoria:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KasugaiSakura/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/KasugaiSakura/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Ficheros complementarios (text encoder y VAE): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

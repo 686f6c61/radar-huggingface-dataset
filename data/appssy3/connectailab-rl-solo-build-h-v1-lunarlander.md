@@ -6,7 +6,7 @@
 
 La red es un perceptrón multicapa (MLP) con dos capas ocultas de 128 unidades y activación ReLU, entrenado con DQN clásico (probablemente con target network, dado el parámetro `목표주기`, "periodo objetivo", de 500 pasos). El entrenamiento se realizó durante 200 000 pasos con learning rate 0,0005, factor de descuento 0,99, epsilon de exploración inicial 0,3 y tamaño de lote 128. El autor declara una recompensa media de 233,6 en 10 episodios no vistos, por encima del umbral de 200 que LunarLander considera "resuelto".
 
-Su relevancia es limitada fuera del contexto educativo: no es un modelo de lenguaje, no tiene capacidades generativas ni de tool calling, y su licencia no está declarada. Es útil como referencia didáctica de un DQN funcional y como ejemplo mínimo de despliegue de políticas RL en HuggingFace Hub.
+Su relevancia es limitada fuera del contexto educativo: no es un modelo de lenguaje, no tiene capacidades generativas ni de tool calling, y su licencia no está declarada. Es útil como referencia didáctica de un DQN funcional y como ejemplo mínimo de despliegue de políticas RL en Hugging Face Hub.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ Configuración de entrenamiento declarada por el autor: 200 000 pasos totales, 1
 
 - Material didáctico de RL: usar el agente como ejemplo funcional de DQN en un curso o taller, cargando `model.pt` y comparando la política aprendida con la de un agente aleatorio.
 - Baseline de referencia en LunarLander-v3: servir como punto de partida para comparar variantes (Double DQN, PPO, A2C) en el mismo entorno con la métrica de recompensa media.
-- Demostración de despliegue en HuggingFace Hub: ilustra el flujo completo de empaquetar pesos PyTorch y una model card con `model-index` para un agente RL.
+- Demostración de despliegue en Hugging Face Hub: ilustra el flujo completo de empaquetar pesos PyTorch y una model card con `model-index` para un agente RL.
 - Evaluación de robustez de políticas: probar el agente en configuraciones ligeramente modificadas de LunarLander (viento, turbulencia) para estudiar su generalización, dado que solo se declara rendimiento en la configuración por defecto.
 - Integración en pipelines de Gymnasium: envolver la política en un `gym.Wrapper` para ejecutarla junto con otros agentes en experimentos de aprendizaje por refuerzo multiagente o curriculum learning.
 - Visualización de trayectorias: generar `replay.mp4` o grabaciones para analizar el comportamiento de aterrizaje (uso de motores, contacto con patas) con fines educativos.
@@ -89,9 +89,9 @@ No se dispone de datos verificados de los modelos comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v1-lunarlander
+- Hugging Face: https://huggingface.co/appssy3/connectailab-rl-solo-build-h-v1-lunarlander
 - CONNECT AI LAB (GitHub): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS, curso de RL: https://www.aicitybuilders.com/robot
 - Entorno LunarLander-v3 (Gymnasium): no disponible enlace directo en la información proporcionada
 - Paper de DQN original (Mnih et al., 2015): no disponible enlace en la información proporcionada
-- Reproducción (`replay.mp4`): incluida en el repositorio de HuggingFace (ruta relativa `replay.mp4`)
+- Reproducción (`replay.mp4`): incluida en el repositorio de Hugging Face (ruta relativa `replay.mp4`)

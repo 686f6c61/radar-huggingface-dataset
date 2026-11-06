@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HERL-Gemma es un ajuste fino (fine-tuning) del modelo `TrevorJS/gemma-4-26B-A4B-it-uncensored`, publicado por el usuario flitsken bajo el paraguas del proyecto "Digital Ark". Se distribuye como un adaptador LoRA en safetensors y como un GGUF ya fusionado y cuantizado a Q8_0, listo para ejecutarse en llama.cpp o cualquier runtime compatible con GGUF. El modelo cuenta con 25.233.142.046 parametros (segun los metadatos de safetensors de HuggingFace) y licencia Apache-2.0.
+HERL-Gemma es un ajuste fino (fine-tuning) del modelo `TrevorJS/gemma-4-26B-A4B-it-uncensored`, publicado por el usuario flitsken bajo el paraguas del proyecto "Digital Ark". Se distribuye como un adaptador LoRA en safetensors y como un GGUF ya fusionado y cuantizado a Q8_0, listo para ejecutarse en llama.cpp o cualquier runtime compatible con GGUF. El modelo cuenta con 25.233.142.046 parametros (segun los metadatos de safetensors de Hugging Face) y licencia Apache-2.0.
 
 El objetivo declarado por el autor no es mejorar el rendimiento tecnico del modelo base, sino modificar su comportamiento conversacional mediante un conjunto semilla de 21 conversaciones (`herl-v1.jsonl`) que ejemplifican cinco principios: honestidad y humildad, empatia, respeto y lealtad (HERL). El autor describe este ajuste como una alineacion "horneada en los pesos" en lugar de una barrera externa, y publica el script de entrenamiento QLoRA y el dataset en un repositorio de GitHub para que cualquiera pueda reproducir o ampliar el proceso.
 
@@ -35,7 +35,7 @@ El entrenamiento consiste en un ajuste QLoRA sobre el modelo base, ejecutado con
 
 - Generacion de texto conversacional en neerlandes e ingles, con el estilo y los principios HERL inducidos por el ajuste.
 - Modo de razonamiento explicito (thinking mode) activable mediante la plantilla de chat; el autor lo describe como un modelo "de razonamiento por naturaleza".
-- Conversacion multi-turno con marcado conversacional en los metadatos de HuggingFace.
+- Conversacion multi-turno con marcado conversacional en los metadatos de Hugging Face.
 - Contexto de hasta 131.072 tokens segun el ejemplo de despliegue oficial, adecuado para documentos largos.
 - Ejecucion local en CPU/GPU mediante llama.cpp y runtimes GGUF compatibles.
 - Reentrenamiento y fusion mediante el adaptador LoRA publicado y el script QLoRA del repositorio.
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flitsken/herl-gemma
+- Modelo en Hugging Face: https://huggingface.co/flitsken/herl-gemma
 - Repositorio GitHub del proyecto (dataset `herl-v1.jsonl`, script `train_herl_qlora.py`, mision del proyecto): https://github.com/ronnystevens-cmd/herl-gemma
 - Modelo base: https://huggingface.co/TrevorJS/gemma-4-26B-A4B-it-uncensored
 - Paper, blog tecnico o demo adicionales: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo.

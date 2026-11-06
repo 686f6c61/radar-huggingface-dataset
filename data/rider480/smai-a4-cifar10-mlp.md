@@ -68,7 +68,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Arquitectura | Parámetros | Contexto | Precisión en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| smai-a4-cifar10-mlp | MLP 3072→64→32→10 | 199.082 | No aplica | 49,54% (test) | No disponible | HuggingFace |
+| smai-a4-cifar10-mlp | MLP 3072→64→32→10 | 199.082 | No aplica | 49,54% (test) | No disponible | Hugging Face |
 | LeNet-5 (referencia histórica) | CNN | ≈60.000 | No aplica | ≈70% (test, típico) | No disponible | Múltiples implementaciones |
 | ResNet-18 (referencia) | CNN | ≈11,7 M | No aplica | ≈93-95% (test, típico) | No disponible | Múltiples implementaciones |
 | VGG-11 (referencia) | CNN | ≈132 M | No aplica | ≈91-92% (test, típico) | No disponible | Múltiples implementaciones |
@@ -87,5 +87,5 @@ Nota: los valores de precisión de los modelos comparativos son referencias habi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rider480/smai-a4-cifar10-mlp
+- Modelo en Hugging Face: https://huggingface.co/rider480/smai-a4-cifar10-mlp
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

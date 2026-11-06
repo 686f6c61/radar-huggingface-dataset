@@ -69,16 +69,16 @@ Las métricas léxicas eliminan puntuación pero conservan mayúsculas, números
 - VRAM estimada para inferencia en BF16: aproximadamente 1,5 GB de pesos más overhead de activaciones y caché KV; en la práctica, menos de 4 GB en la mayoría de configuraciones.
 - Cabe holgadamente en GPU de consumo: RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4090, así como en GPUs de portátil con 6-8 GB.
 - Puede ejecutarse en CPU con cuantización a 8 bits o 4 bits, aunque el autor no publica pesos GGUF ni cuantizaciones oficiales.
-- Opciones de despliegue: transformers (versión validada por el autor: 5.3 con PyTorch 2.10), text-generation-inference (tag `text-generation-inference` en HuggingFace), vLLM y llama.cpp/Ollama previa conversión a GGUF no oficial.
+- Opciones de despliegue: transformers (versión validada por el autor: 5.3 con PyTorch 2.10), text-generation-inference (tag `text-generation-inference` en Hugging Face), vLLM y llama.cpp/Ollama previa conversión a GGUF no oficial.
 - Throughput y latencia: no disponibles. El modelo es pequeño y las secuencias de entrenamiento son de 512 tokens, por lo que se espera baja latencia, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| S1-mini-Chinese | 751.632.384 | no disponible (entrenado a 512) | Normalización de transcripciones zh/en | s1-mini-license | HuggingFace (WIlfLin/S1-mini-Chinese) |
-| superwhisper/s1-mini | no disponible en la información | no disponible | Normalización de transcripciones (base) | s1-mini-license | HuggingFace (superwhisper/s1-mini) |
-| Qwen3-0.6B | ~0,6 B | no disponible en la información | LLM generalista | Apache 2.0 (según la información de origen de la arquitectura) | HuggingFace |
+| S1-mini-Chinese | 751.632.384 | no disponible (entrenado a 512) | Normalización de transcripciones zh/en | s1-mini-license | Hugging Face (WIlfLin/S1-mini-Chinese) |
+| superwhisper/s1-mini | no disponible en la información | no disponible | Normalización de transcripciones (base) | s1-mini-license | Hugging Face (superwhisper/s1-mini) |
+| Qwen3-0.6B | ~0,6 B | no disponible en la información | LLM generalista | Apache 2.0 (según la información de origen de la arquitectura) | Hugging Face |
 
 La comparación con modelos generalistas del mismo tamaño no es directa: S1-mini-Chinese está especializado en una tarea concreta y no compite en benchmarks generales como MMLU o HumanEval, para los que no se han publicado resultados.
 
@@ -96,7 +96,7 @@ La comparación con modelos generalistas del mismo tamaño no es directa: S1-min
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WIlfLin/S1-mini-Chinese
+- Modelo en Hugging Face: https://huggingface.co/WIlfLin/S1-mini-Chinese
 - Modelo base: https://huggingface.co/superwhisper/s1-mini
 - Dataset CS2W: https://github.com/guozishan/CS2W
 - Dataset Disfl-QA: https://github.com/google-research-datasets/Disfl-QA

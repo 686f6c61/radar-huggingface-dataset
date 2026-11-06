@@ -4,7 +4,7 @@
 
 IndoBert-ulasan-wedding es un modelo BERT (arquitectura encoder-only) afinado por el usuario Urfavv a partir de un checkpoint IndoBERT, segun se deduce del nombre del repositorio. El modelo cuenta con 124.442.882 parametros totales, tal y como indican los pesos en formato safetensors, y esta orientado a una tarea de clasificacion o analisis de resenas (ulasan en indonesio) en el dominio de bodas (wedding).
 
-La model card publicada en HuggingFace es practicamente vacia: solo incluye la declaracion de licencia MIT, sin informacion sobre el dataset de entrenamiento, el idioma exacto de trabajo, las metricas de evaluacion ni el pipeline de uso previsto. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere un proyecto experimental o de publicacion reciente.
+La model card publicada en Hugging Face es practicamente vacia: solo incluye la declaracion de licencia MIT, sin informacion sobre el dataset de entrenamiento, el idioma exacto de trabajo, las metricas de evaluacion ni el pipeline de uso previsto. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere un proyecto experimental o de publicacion reciente.
 
 Su relevancia es limitada fuera del nicho concreto para el que fue creado: analisis de opiniones o resenas de productos y servicios de boda en indonesio. Para cualquier evaluacion en produccion seria necesario obtener informacion adicional del autor, ya que la documentacion disponible es insuficiente para validar su comportamiento.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en FP16: aproximadamente 0,25 GB.
 - VRAM estimada en INT8: aproximadamente 0,13 GB.
 - Cabe holgadamente en cualquier GPU consumer (GTX 1060, RTX 3060, RTX 4090) e incluso puede ejecutarse en CPU con latencias aceptables para clasificacion por lotes.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch), ONNX Runtime, TorchScript, y potencialmente llama.cpp si se convierte a GGUF (aunque no se distribuye en ese formato).
+- Opciones de despliegue: Hugging Face Transformers (PyTorch), ONNX Runtime, TorchScript, y potencialmente llama.cpp si se convierte a GGUF (aunque no se distribuye en ese formato).
 - Latencia y throughput estimados: no disponibles; para un BERT base en GPU moderna se espera un throughput de cientos a miles de secuencias por segundo en clasificacion, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| IndoBert-ulasan-wedding | 124,4 M | no disponible | MIT | HuggingFace |
-| IndoBERT base (indolem/indobert-base-uncased) | ~124 M | 512 tokens | MIT | HuggingFace |
-| mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace |
+| IndoBert-ulasan-wedding | 124,4 M | no disponible | MIT | Hugging Face |
+| IndoBERT base (indolem/indobert-base-uncased) | ~124 M | 512 tokens | MIT | Hugging Face |
+| mBERT (bert-base-multilingual-cased) | ~178 M | 512 tokens | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face |
 
 La comparativa se limita a caracteristicas estructurales, ya que no hay datos de rendimiento publicados para este checkpoint. IndoBERT base es el antecesor natural y la referencia mas directa; mBERT y XLM-RoBERTa ofrecen cobertura multilingue pero con mayor coste computacional.
 
@@ -82,5 +82,5 @@ La comparativa se limita a caracteristicas estructurales, ya que no hay datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Urfavv/IndoBert-ulasan-wedding
+- Hugging Face: https://huggingface.co/Urfavv/IndoBert-ulasan-wedding
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

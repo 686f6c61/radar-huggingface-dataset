@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Esta ficha describe una version cuantizada a 4 bits del modelo meta-llama/Llama-3.1-8B-Instruct, publicada por el usuario fbaldassarri en HuggingFace. No se trata de un modelo nuevo, sino de un artefacto de compresion: el mismo transformer decoder-only de Llama 3.1 8B Instruct, pero con sus pesos convertidos a INT4 mediante el algoritmo GPTQ implementado en Intel AutoRound v0.16.0. El objetivo es reducir el peso en memoria y acelerar la inferencia (el autor afirma 2-3x de speedup) con una perdida de precision leve en la configuracion W4G64.
+Esta ficha describe una version cuantizada a 4 bits del modelo meta-llama/Llama-3.1-8B-Instruct, publicada por el usuario fbaldassarri en Hugging Face. No se trata de un modelo nuevo, sino de un artefacto de compresion: el mismo transformer decoder-only de Llama 3.1 8B Instruct, pero con sus pesos convertidos a INT4 mediante el algoritmo GPTQ implementado en Intel AutoRound v0.16.0. El objetivo es reducir el peso en memoria y acelerar la inferencia (el autor afirma 2-3x de speedup) con una perdida de precision leve en la configuracion W4G64.
 
 La relevancia practica de esta publicacion es que el autor ha documentado de forma exhaustiva la receta de cuantizacion: version de AutoRound, hiperparametros (group size 64, asimetrico, 128 muestras de calibracion, 200 iteraciones, seqlen 512, batch 4), condiciones de ejecucion y tiempo total (674,7 minutos en CPU). Ademas, el autor indica que la version INT4 esta pensada para inferencia en CPU Intel, iGPU Intel Arc (via intel-extension-for-pytorch) y NPU Intel (AI Boost en Core Ultra) mediante OpenVINO. Es, por tanto, un artefacto orientado a despliegue en hardware Intel, no a GPU de consumo convencional.
 
-Conviene senalar una discrepancia importante: la model card declara el modelo como "inference: false" y la ficha de HuggingFace lista 2.047.283.200 parametros totales en safetensors, un valor muy inferior a los aproximadamente 8.000 millones de parametros del Llama 3.1 8B original. Esta cifra es inconsistente con el modelo base declarado y debe tratarse con cautela; probablemente refleje un recuento parcial o un error en los metadatos del repositorio. El tamano del repo es de 8,0 GB, coherente con pesos INT4 de un modelo de 8B.
+Conviene senalar una discrepancia importante: la model card declara el modelo como "inference: false" y la ficha de Hugging Face lista 2.047.283.200 parametros totales en safetensors, un valor muy inferior a los aproximadamente 8.000 millones de parametros del Llama 3.1 8B original. Esta cifra es inconsistente con el modelo base declarado y debe tratarse con cautela; probablemente refleje un recuento parcial o un error en los metadatos del repositorio. El tamano del repo es de 8,0 GB, coherente con pesos INT4 de un modelo de 8B.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_gptq-int4-gs64-asym | ~8B (metadatos del repo: 2.047.283.200) | No disponible | INT4 W4G64 asimetrico, auto_gptq | Llama 3.1 Community | HuggingFace, 18 descargas |
-| meta-llama/Llama-3.1-8B-Instruct (base) | ~8B | 128K (segun Meta) | Sin cuantizar (BF16/FP16) | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Otras cuantizaciones INT4 de Llama 3.1 8B Instruct (GPTQ/AWQ de terceros) | ~8B | 128K (heredado) | INT4 GPTQ o AWQ, segun autor | Llama 3.1 Community | Multiples repos en HuggingFace |
+| fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_gptq-int4-gs64-asym | ~8B (metadatos del repo: 2.047.283.200) | No disponible | INT4 W4G64 asimetrico, auto_gptq | Llama 3.1 Community | Hugging Face, 18 descargas |
+| meta-llama/Llama-3.1-8B-Instruct (base) | ~8B | 128K (segun Meta) | Sin cuantizar (BF16/FP16) | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Otras cuantizaciones INT4 de Llama 3.1 8B Instruct (GPTQ/AWQ de terceros) | ~8B | 128K (heredado) | INT4 GPTQ o AWQ, segun autor | Llama 3.1 Community | Multiples repos en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, formato y licencia.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_gptq-int4-gs64-asym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_gptq-int4-gs64-asym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round

@@ -79,7 +79,7 @@ La comparativa directa no está disponible porque REIGN introduce un paradigma d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-small-l2_gn-gte-large_st-128_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-small-l2_gn-gte-large_st-128_val-selected
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

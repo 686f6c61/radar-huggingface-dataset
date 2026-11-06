@@ -18,7 +18,7 @@ La model card es honesta sobre el estado del artefacto: las pruebas realizadas s
 | Longitud de contexto | 262144 configurados; probado solo con 512 tokens |
 | Tipos de cuantizacion | Q4_K_M, UD-Q4_K_XL, UD-IQ4_XS, MXFP4_MOE, Q3_K_M, Q3_K_S, Q2_K, Q2_K_S (sin importance matrix) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-license-1.0 (declarada como `other` en HuggingFace) |
+| Licencia | qwen-community-license-1.0 (declarada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp); checkpoint base en BF16 safetensors |
 
 Detalles adicionales: 48 capas troncales, mas una capa 48 adicional (Q8_0) que aloja la cabeza MTP en `Q2_K_S`. La torre de vision se distribuye aparte en `mmproj-CYBER-FROST-3.8-f16.gguf` (0.90 GB, F16). Tamano del repositorio: 800.7 GB. Descargas registradas: 0; likes: 1. Fecha de creacion: 2026-10-25.
@@ -78,8 +78,8 @@ Datos de ejecucion declarados por el autor (llama.cpp `b1-4da6337`, Radeon 680M,
 
 | Modelo | Parametros | Activos | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CYBER-FROST-3.8-GGUF (este repo) | ~176.9B | ~6B | 262144 configurados | GGUF (8 cuantizaciones) | qwen-community-license-1.0 | Publico en HuggingFace, 0 descargas |
-| Blackfrost-AI/CYBER-FROST-3.8-BF16 (modelo base) | ~176.9B | ~6B | 262144 configurados | safetensors BF16 | qwen-community-license-1.0 | Publico en HuggingFace |
+| CYBER-FROST-3.8-GGUF (este repo) | ~176.9B | ~6B | 262144 configurados | GGUF (8 cuantizaciones) | qwen-community-license-1.0 | Publico en Hugging Face, 0 descargas |
+| Blackfrost-AI/CYBER-FROST-3.8-BF16 (modelo base) | ~176.9B | ~6B | 262144 configurados | safetensors BF16 | qwen-community-license-1.0 | Publico en Hugging Face |
 | Qwen/Qwen3.8-Flash-Next (origen de la arquitectura) | no disponible | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card |
 | Otras alternativas MoE de ~180B | no disponible | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos de modelos comparables |
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento (benchmarks) de ninguna de las variantes, 
 - Idiomas no declarados: se desconoce la cobertura linguistica real, incluido el castellano.
 - Riesgo de alucinacion: inherente a los modelos generativos y no cuantificado en esta publicacion; sin evaluaciones no hay forma de acotarlo.
 - Sesgos: no documentados por el autor.
-- Licencia: Qwen Community License 1.0, marcada como `other` en HuggingFace. Es imprescindible leer el texto de `LICENSE` antes de cualquier uso comercial; las condiciones concretas (por ejemplo, umbrales de usuarios o restricciones de redistribucion) no se detallan en la informacion disponible.
+- Licencia: Qwen Community License 1.0, marcada como `other` en Hugging Face. Es imprescindible leer el texto de `LICENSE` antes de cualquier uso comercial; las condiciones concretas (por ejemplo, umbrales de usuarios o restricciones de redistribucion) no se detallan en la informacion disponible.
 - Madurez del artefacto: repositorio con 0 descargas y creado el 2026-10-25, sin historial de uso; los ficheros subidos antes del 2026-10-08 con `ssm_conv1d.weight` y `ple_conv1d.weight` en F16 provocaban un crash de llama.cpp con `GGML_ASSERT(src1->nb[0] == sizeof(float))` al ejecutar capas en CPU.
 
 ## Enlaces

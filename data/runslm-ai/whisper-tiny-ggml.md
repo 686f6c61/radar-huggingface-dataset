@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| RunSLM-AI/whisper-tiny-ggml | ~39 M | no disponible | MIT | GGML binario (`.bin`) | HuggingFace, descarga directa |
+| RunSLM-AI/whisper-tiny-ggml | ~39 M | no disponible | MIT | GGML binario (`.bin`) | Hugging Face, descarga directa |
 | OpenAI Whisper Tiny (modelo original) | ~39 M | no disponible | MIT | pesos PyTorch (`.pt`) | Repositorio de OpenAI |
 | Otras conversiones GGML de Whisper Tiny | no disponible | no disponible | no disponible | GGML | no disponible |
 | Alternativas ASR de mayor tamano (p. ej. Whisper Base/Small) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo (WER, latencia) en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunSLM-AI/whisper-tiny-ggml
+- Modelo en Hugging Face: https://huggingface.co/RunSLM-AI/whisper-tiny-ggml
 - Descarga directa del binario: https://huggingface.co/RunSLM-AI/whisper-tiny-ggml/resolve/main/ggml-tiny.bin
 - OpenAI Whisper (modelo original): https://github.com/openai/whisper
 - whisper.cpp (conversion GGML y runtime C++): https://github.com/ggerganov/whisper.cpp

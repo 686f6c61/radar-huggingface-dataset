@@ -70,7 +70,7 @@ No disponible. No se dispone de información suficiente sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-newstack-step36
+- Hugging Face: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-newstack-step36
 - LAION: https://laion.ai/
 - GitHub LAION: https://github.com/LAION-AI
 - Modelo base: https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888

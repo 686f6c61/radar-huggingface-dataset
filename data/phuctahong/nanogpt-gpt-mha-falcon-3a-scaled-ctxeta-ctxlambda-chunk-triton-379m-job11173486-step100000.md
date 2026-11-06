@@ -54,13 +54,13 @@ No se han publicado requisitos oficiales de hardware. Las siguientes son estimac
 
 ## Comparativa con modelos similares
 
-Los siguientes modelos de la misma serie están disponibles en HuggingFace, aunque no se han publicado datos de rendimiento para comparar:
+Los siguientes modelos de la misma serie están disponibles en Hugging Face, aunque no se han publicado datos de rendimiento para comparar:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| phuctahong/nanogpt-gpt-mha-falcon-3a-scaled-ctxeta-ctxlambda-chunk-triton-379m-job11173486-step100000 | 379.359.616 | no disponible | Apache-2.0 | HuggingFace |
-| phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 | 379M (inferido) | no disponible | Apache-2.0 | HuggingFace |
-| phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000 | 379M (inferido) | no disponible | Apache-2.0 | HuggingFace |
+| phuctahong/nanogpt-gpt-mha-falcon-3a-scaled-ctxeta-ctxlambda-chunk-triton-379m-job11173486-step100000 | 379.359.616 | no disponible | Apache-2.0 | Hugging Face |
+| phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000 | 379M (inferido) | no disponible | Apache-2.0 | Hugging Face |
+| phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000 | 379M (inferido) | no disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -70,11 +70,11 @@ Los siguientes modelos de la misma serie están disponibles en HuggingFace, aunq
 - No se ha documentado soporte de tool calling, agentes ni razonamiento multi-paso.
 - La longitud de contexto no está especificada, lo que impide conocer sus límites reales.
 - La licencia Apache-2.0 permite uso comercial, pero no hay garantías de calidad ni soporte.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-3a-scaled-ctxeta-ctxlambda-chunk-triton-379m-job11173486-step100000
+- Hugging Face: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-3a-scaled-ctxeta-ctxlambda-chunk-triton-379m-job11173486-step100000
 - W&B run: https://wandb.ai/princeton-pli/Nanogpt/runs/kkh6109z
 - Modelo similar: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000
 - Modelo similar: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job11173487-step100000

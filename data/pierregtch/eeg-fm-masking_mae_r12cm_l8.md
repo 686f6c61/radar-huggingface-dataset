@@ -86,9 +86,9 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_mae_r12cm_L8 | 12,69 M | Parches de 1 s a 200 Hz; r = 12 cm, L = 8 | Ver tabla de OpenEEGBench | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | No disponible (misma receta, 58 variantes) | r = 9 cm, L = 2 | No disponible en esta ficha | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | No disponible (misma receta) | r = 9 cm, L = 2, marco JEPA | No disponible en esta ficha | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_mae_r12cm_L8 | 12,69 M | Parches de 1 s a 200 Hz; r = 12 cm, L = 8 | Ver tabla de OpenEEGBench | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | No disponible (misma receta, 58 variantes) | r = 9 cm, L = 2 | No disponible en esta ficha | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | No disponible (misma receta) | r = 9 cm, L = 2, marco JEPA | No disponible en esta ficha | CC-BY-4.0 | Hugging Face |
 | Otros foundation models EEG (por ejemplo EEGPT, LaBraM, BIOT) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 El autor recomienda explicitamente las variantes r = 9 cm, L = 2 (tanto MAE como JEPA) como configuracion de referencia. No se dispone de datos de rendimiento de modelos EEG de terceros en la informacion proporcionada.
@@ -108,7 +108,7 @@ El autor recomienda explicitamente las variantes r = 9 cm, L = 2 (tanto MAE como
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L8
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r12cm_L8
 - Variante recomendada (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Variante recomendada (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Coleccion completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

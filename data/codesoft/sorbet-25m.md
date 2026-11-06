@@ -46,7 +46,7 @@ El entrenamiento se realizó sobre una mezcla ponderada de 0,8 mil millones de t
 
 ## Benchmarks y rendimiento
 
-El autor publicó resultados en cinco tareas de evaluación, ejecutadas con la librería de evaluación de HuggingFace. Los valores se presentan con intervalos de confianza al 95%.
+El autor publicó resultados en cinco tareas de evaluación, ejecutadas con la librería de evaluación de Hugging Face. Los valores se presentan con intervalos de confianza al 95%.
 
 | Tarea | n | Random | acc | acc_norm |
 |---|---|---|---|---|

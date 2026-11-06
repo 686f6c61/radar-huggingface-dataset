@@ -2,11 +2,11 @@
 
 ## Resumen
 
-TwinQwen3-0.6B-DPO es un ajuste fino del modelo Abduulllaah/TwinQwen3-0.6B, publicado por el usuario Abduulllaah en HuggingFace. El nombre y la etiqueta DPO indican que se ha aplicado un entrenamiento de optimizacion por preferencias (Direct Preference Optimization) sobre el modelo base, que a su vez pertenece a la familia Qwen3. Con 596.049.920 parametros (0,596 mil millones) en formato safetensors, se trata de un modelo de generacion de texto de tamano muy reducido, orientado a inferencia de bajo coste y a experimentacion.
+TwinQwen3-0.6B-DPO es un ajuste fino del modelo Abduulllaah/TwinQwen3-0.6B, publicado por el usuario Abduulllaah en Hugging Face. El nombre y la etiqueta DPO indican que se ha aplicado un entrenamiento de optimizacion por preferencias (Direct Preference Optimization) sobre el modelo base, que a su vez pertenece a la familia Qwen3. Con 596.049.920 parametros (0,596 mil millones) en formato safetensors, se trata de un modelo de generacion de texto de tamano muy reducido, orientado a inferencia de bajo coste y a experimentacion.
 
-El modelo se ha entrenado utilizando Unsloth junto con la libreria TRL de HuggingFace, segun declara la propia model card, lo que situa el flujo de trabajo en el ecosistema estandar de fine-tuning y alineacion de la comunidad open source. La licencia es Apache-2.0 y el unico idioma declarado es el ingles.
+El modelo se ha entrenado utilizando Unsloth junto con la libreria TRL de Hugging Face, segun declara la propia model card, lo que situa el flujo de trabajo en el ecosistema estandar de fine-tuning y alineacion de la comunidad open source. La licencia es Apache-2.0 y el unico idioma declarado es el ingles.
 
-Su relevancia es limitada pero concreta: sirve como banco de pruebas reproducible para experimentos de DPO, para evaluar el comportamiento de un modelo de menos de 600 millones de parametros tras alineacion por preferencias, y para prototipos locales sin GPU dedicada. No cuenta con benchmarks publicados, no tiene descargas ni interacciones registradas en HuggingFace, y su model card no documenta hiperparametros, dataset de preferencias ni longitud de contexto.
+Su relevancia es limitada pero concreta: sirve como banco de pruebas reproducible para experimentos de DPO, para evaluar el comportamiento de un modelo de menos de 600 millones de parametros tras alineacion por preferencias, y para prototipos locales sin GPU dedicada. No cuenta con benchmarks publicados, no tiene descargas ni interacciones registradas en Hugging Face, y su model card no documenta hiperparametros, dataset de preferencias ni longitud de contexto.
 
 ## Especificaciones tecnicas
 
@@ -23,14 +23,14 @@ Su relevancia es limitada pero concreta: sirve como banco de pruebas reproducibl
 | Modelo base | Abduulllaah/TwinQwen3-0.6B |
 | Metodo de ajuste declarado | DPO (segun el nombre del modelo), entrenado con Unsloth y TRL |
 | Tamano del repositorio | 1,2 GB |
-| Fecha de publicacion | 2026-09-22 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-22 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 La model card no describe la arquitectura interna del modelo. Por las etiquetas (`qwen3`) y el nombre del modelo base (TwinQwen3-0.6B) se deduce que se trata de un transformer decoder-only de la familia Qwen3 con aproximadamente 0,6 mil millones de parametros, y que este checkpoint es un ajuste fino adicional del base, no un entrenamiento desde cero. El identificador del repositorio incluye el sufijo DPO, lo que sugiere una etapa de optimizacion por preferencias directas (Direct Preference Optimization), si bien la model card no confirma el algoritmo, los hiperparametros, el numero de pasos ni la composicion del dataset de preferencias.
 
-El unico detalle tecnico declarado es el uso de Unsloth junto con TRL de HuggingFace para acelerar el entrenamiento (el autor afirma que fue "2x faster"). No hay informacion sobre numero de tokens de entrenamiento, composicion del corpus, uso de RLHF adicional, tecnicas de atencion (lineal, decodificacion especulativa) ni estrategias de destilacion. Tampoco se especifica la longitud de contexto soportada por este checkpoint, ya que podria diferir de la del base.
+El unico detalle tecnico declarado es el uso de Unsloth junto con TRL de Hugging Face para acelerar el entrenamiento (el autor afirma que fue "2x faster"). No hay informacion sobre numero de tokens de entrenamiento, composicion del corpus, uso de RLHF adicional, tecnicas de atencion (lineal, decodificacion especulativa) ni estrategias de destilacion. Tampoco se especifica la longitud de contexto soportada por este checkpoint, ya que podria diferir de la del base.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - INT4: aproximadamente 0,4-0,6 GB (requiere conversion propia, ya que el repositorio solo publica safetensors).
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente para FP16; RTX 3060, RTX 4060, RTX 4090, A10, L4 o A100 funcionaran sin problema. En CPU, la inferencia es viable con 2-4 GB de RAM.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU discretas modernas (GTX 1650 4 GB en adelante) y en iGPUs con memoria compartida suficiente en cuantizacion INT4.
-- Opciones de despliegue: `transformers` (formato nativo safetensors), vLLM, Text Generation Inference (la etiqueta `text-generation-inference` figura en el repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y Ollama o llama.cpp previa conversion a GGUF, conversion que no esta publicada en el repositorio.
+- Opciones de despliegue: `transformers` (formato nativo safetensors), vLLM, Text Generation Inference (la etiqueta `text-generation-inference` figura en el repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y Ollama o llama.cpp previa conversion a GGUF, conversion que no esta publicada en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones del autor. Para referencia cualitativa, un modelo de 0,6 B en FP16 sobre una GPU moderna genera decenas o cientos de tokens por segundo, pero estas cifras no estan verificadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
@@ -91,14 +91,14 @@ Consideraciones: TwinQwen3-0.6B-DPO es el unico de la lista cuyo ajuste por pref
 - Idioma: solo se declara ingles. El rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
 - Contexto: se desconoce la ventana de contexto efectiva de este checkpoint. No debe asumirse que coincide con la del Qwen3-0.6B oficial, ya que el modelo base es un derivado de terceros.
 - Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, pero conviene verificar la licencia del modelo base TwinQwen3-0.6B, que no figura en la informacion proporcionada y cuyos terminos podrian anadir restricciones.
-- Adopcion nula: cero descargas y cero interacciones en HuggingFace, sin comunidad que haya validado el modelo. No hay garantia de soporte ni de mantenimiento futuro.
+- Adopcion nula: cero descargas y cero interacciones en Hugging Face, sin comunidad que haya validado el modelo. No hay garantia de soporte ni de mantenimiento futuro.
 - Procedencia del ajuste: al ser un fine-tuning de un modelo base no oficial publicado por el mismo autor, la trazabilidad de los datos y del linaje del modelo es limitada.
 - No apto para produccion critica sin validacion previa: cualquier despliegue en atencion al cliente, salud, finanzas o ambito legal requiere evaluacion propia, filtros de seguridad y supervision humana.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abduulllaah/TwinQwen3-0.6B-DPO
+- Modelo en Hugging Face: https://huggingface.co/Abduulllaah/TwinQwen3-0.6B-DPO
 - Modelo base: https://huggingface.co/Abduulllaah/TwinQwen3-0.6B
 - Unsloth (framework de entrenamiento mencionado en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento mencionada en la model card): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento mencionada en la model card): https://github.com/huggingface/trl
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo; las busquedas devolvieron contenido no relacionado (foros y preguntas generales sobre otros temas). No hay papers, blogs ni demos adicionales disponibles.

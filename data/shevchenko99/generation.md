@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shevchenko99/generation` es un prototipo de investigación denominado "Dino" orientado a tareas de generación, publicado por el usuario shevchenko99 en HuggingFace. Se trata de un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no de un modelo entrenado con capacidades demostradas. Su propósito declarado es servir como punto de partida experimental para investigar la arquitectura Dino, que combina atención dispersa (sparse attention), fusión por co-atención, activación GELU y normalización GroupNorm.
+El modelo `shevchenko99/generation` es un prototipo de investigación denominado "Dino" orientado a tareas de generación, publicado por el usuario shevchenko99 en Hugging Face. Se trata de un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), no de un modelo entrenado con capacidades demostradas. Su propósito declarado es servir como punto de partida experimental para investigar la arquitectura Dino, que combina atención dispersa (sparse attention), fusión por co-atención, activación GELU y normalización GroupNorm.
 
 Con solo 49.600 parámetros, el modelo es extremadamente pequeño y no presenta resultados de rendimiento en ningún benchmark. La model card advierte explícitamente que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio. Su relevancia actual es limitada: puede interesar a investigadores que quieran explorar la arquitectura Dino o validar infraestructuras de entrenamiento, pero no es adecuado para ningún uso práctico de generación de contenido.
 
@@ -64,10 +64,10 @@ No se dispone de modelos comparables en la misma categoría, dado que este proto
 - Riesgo de alucinación: no aplica en el sentido tradicional, pero el modelo no produce texto coherente.
 - Limitaciones de contexto e idioma: no se especifican, pero al no estar entrenado, no hay soporte real para ningún idioma.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero el modelo no es funcional para producción. La model card advierte que deben revisarse los términos de las fuentes de datos externas si se usan con este repositorio.
-- Requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace, ya que es una implementación personalizada.
+- Requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face, ya que es una implementación personalizada.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shevchenko99/generation
+- Hugging Face: https://huggingface.co/shevchenko99/generation
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo específico.

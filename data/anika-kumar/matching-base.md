@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anika-kumar/matching-base` es un repositorio publicado en HuggingFace por el usuario anika-kumar que contiene una implementacion propia y compacta de la arquitectura EfficientFormer orientada a una tarea de *matching* (emparejamiento de entradas). El propio autor lo describe explicitamente como un artefacto pensado para revision de codigo, *smoke tests* y experimentos controlados de pequeno tamano, y no como una release preentrenada lista para produccion. La configuracion se etiqueta como "base" dentro del script, aunque el checkpoint real contiene unicamente 49.600 parametros segun los tensores de `model.safetensors`.
+`anika-kumar/matching-base` es un repositorio publicado en Hugging Face por el usuario anika-kumar que contiene una implementacion propia y compacta de la arquitectura EfficientFormer orientada a una tarea de *matching* (emparejamiento de entradas). El propio autor lo describe explicitamente como un artefacto pensado para revision de codigo, *smoke tests* y experimentos controlados de pequeno tamano, y no como una release preentrenada lista para produccion. La configuracion se etiqueta como "base" dentro del script, aunque el checkpoint real contiene unicamente 49.600 parametros segun los tensores de `model.safetensors`.
 
 El problema que aborda es de tipo experimental: proporcionar un esqueleto ejecutable de EfficientFormer con atencion de ventana deslizante, fusion bilinear, activacion approx gelu y normalizacion GroupNorm, junto con un `config.json` de arquitectura y un `training_args.json` con la receta por defecto (SGD con schedule de warmup constante). No se reclama ninguna puntuacion de benchmark ni se documenta un entrenamiento completado: el propio README indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un modelo entrenado.
 
@@ -79,7 +79,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| anika-kumar/matching-base | 49.600 | No disponible | MIT | Publico en HuggingFace, 0 descargas | Sin benchmarks declarados |
+| anika-kumar/matching-base | 49.600 | No disponible | MIT | Publico en Hugging Face, 0 descargas | Sin benchmarks declarados |
 | EfficientFormer-L1 (Snap Research) | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | EfficientFormerV2 (variantes pequenas) | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | MobileViT / DeiT-Ti como backbones ligeros | No disponible en la informacion proporcionada | No aplica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
@@ -101,6 +101,6 @@ Advertencia: la comparacion con las familias EfficientFormer originales es de en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anika-kumar/matching-base
+- Hugging Face: https://huggingface.co/anika-kumar/matching-base
 
 Los resultados de busqueda web obtenidos no guardan ninguna relacion con este modelo: corresponden a la musica Annika Henderson, a una tienda de moda y a una serie de television. No se han encontrado papers, blogs, repositorios ni demos asociados a `anika-kumar/matching-base`, y el propio repositorio no enlaza documentacion externa adicional.

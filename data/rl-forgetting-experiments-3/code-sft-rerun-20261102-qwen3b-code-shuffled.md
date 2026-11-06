@@ -81,7 +81,7 @@ La comparación relevante no es de rendimiento, sino de condiciones experimental
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3b-code-shuffled
+- Repositorio en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3b-code-shuffled
 - Modelo base Qwen2.5-3B: no disponible en la información proporcionada
 - Modelo base Qwen3-1.7B-Base: no disponible en la información proporcionada
 - Modelo base Llama-3.2-3B-Instruct: no disponible en la información proporcionada

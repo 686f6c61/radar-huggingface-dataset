@@ -67,7 +67,7 @@ Métricas declaradas por el autor, medidas en el split de validación del datase
 | Tamano del modelo | 114 MB (ONNX, FP32) |
 | Hardware de entrenamiento | RTX 3060 12 GB, ~3 h 30, 20 épocas |
 
-Comparativa publicada en la propia model card frente a otros detectores de EPI de HuggingFace (cifras tomadas de los model cards de cada proyecto):
+Comparativa publicada en la propia model card frente a otros detectores de EPI de Hugging Face (cifras tomadas de los model cards de cada proyecto):
 
 | Modelo | mAP50 | Precision | Recall | Licencia |
 |---|---|---|---|---|
@@ -92,10 +92,10 @@ Advertencia del propio autor: los modelos comparados se evalúan sobre datasets 
 
 | Modelo | Clases | mAP50 | Precision | Recall | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| raqIA EPI-1 | 3 (casco, sin casco, chaleco) | 0,938 | 0,912 | 0,888 | Apache-2.0 | HuggingFace, ONNX |
-| Hansung-Cho/yolov8-ppe-detection | no disponible en la informacion (dataset mas amplio) | 0,744 | 0,831 | 0,685 | AGPL-3.0 | HuggingFace |
-| killuminati1/construction-ppe-yolov8 | no disponible | ~0,76 | ~0,81 | ~0,72 | AGPL-3.0 | HuggingFace |
-| Hexmon/vyra-yolo-ppe-detection | no disponible | no publicado | — | — | AGPL-3.0 | HuggingFace |
+| raqIA EPI-1 | 3 (casco, sin casco, chaleco) | 0,938 | 0,912 | 0,888 | Apache-2.0 | Hugging Face, ONNX |
+| Hansung-Cho/yolov8-ppe-detection | no disponible en la informacion (dataset mas amplio) | 0,744 | 0,831 | 0,685 | AGPL-3.0 | Hugging Face |
+| killuminati1/construction-ppe-yolov8 | no disponible | ~0,76 | ~0,81 | ~0,72 | AGPL-3.0 | Hugging Face |
+| Hexmon/vyra-yolo-ppe-detection | no disponible | no publicado | — | — | AGPL-3.0 | Hugging Face |
 
 La diferencia estructural más relevante no es la métrica, sino la licencia: los detectores basados en Ultralytics YOLO obligan a liberar el código del producto que los integra si se distribuye, mientras que EPI-1 es Apache-2.0 de extremo a extremo. A cambio, EPI-1 cubre menos clases y se entrena sobre un dataset de menor dificultad.
 
@@ -115,7 +115,7 @@ La diferencia estructural más relevante no es la métrica, sino la licencia: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raqia32/epi-1
+- Modelo en Hugging Face: https://huggingface.co/Raqia32/epi-1
 - Dataset de entrenamiento: https://huggingface.co/datasets/jhboyo/ppe-dataset
 - Sitio del autor: https://raqia.ia.br
 - Arquitectura base RF-DETR (mencionada en la model card, sin enlace proporcionado en la información disponible)

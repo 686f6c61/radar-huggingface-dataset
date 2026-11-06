@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Driw0x/my_awesome_billsum_model es un ajuste fino (fine-tuning) del modelo google-t5/t5-small, publicado en HuggingFace por el usuario Driw0x. Se trata de un modelo de generacion texto-a-texto de arquitectura transformer encoder-decoder con 60.506.624 parametros (aproximadamente 60,5 millones), derivado directamente del checkpoint t5-small de Google. El nombre del repositorio sugiere un entrenamiento orientado a resumen de textos de tipo legislativo o administrativo (la referencia "billsum" apunta al corpus BillSum), aunque la propia model card indica explicitamente que el conjunto de datos de entrenamiento es desconocido ("on an unknown dataset").
+Driw0x/my_awesome_billsum_model es un ajuste fino (fine-tuning) del modelo google-t5/t5-small, publicado en Hugging Face por el usuario Driw0x. Se trata de un modelo de generacion texto-a-texto de arquitectura transformer encoder-decoder con 60.506.624 parametros (aproximadamente 60,5 millones), derivado directamente del checkpoint t5-small de Google. El nombre del repositorio sugiere un entrenamiento orientado a resumen de textos de tipo legislativo o administrativo (la referencia "billsum" apunta al corpus BillSum), aunque la propia model card indica explicitamente que el conjunto de datos de entrenamiento es desconocido ("on an unknown dataset").
 
 El modelo resuelve la tarea generica de text2text-generation, es decir, mapear una secuencia de entrada a una secuencia de salida, lo que en la practica permite abordar resumen abstractivo, traduccion o reescritura si el ajuste fino ha sido el adecuado. Su relevancia practica es limitada en terminos de rendimiento: los resultados declarados en el conjunto de evaluacion son ROUGE-1 de 0,1558, ROUGE-2 de 0,0618 y ROUGE-L de 0,1288, con una longitud media generada de 19 tokens, valores propios de un prototipo experimental mas que de un sistema listo para produccion.
 
@@ -109,7 +109,7 @@ La comparacion de rendimiento entre estos modelos no puede establecerse con rigo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Driw0x/my_awesome_billsum_model
+- Modelo en Hugging Face: https://huggingface.co/Driw0x/my_awesome_billsum_model
 - Modelo base google-t5/t5-small: https://huggingface.co/google-t5/t5-small
 - Repositorio original de T5 (Google Research): https://github.com/google-research/text-to-text-transfer-transformer
 - Paper de T5, "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer": https://arxiv.org/abs/1910.10683

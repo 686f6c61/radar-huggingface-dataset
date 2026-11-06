@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RONA_MRZ es un modelo publicado en HuggingFace por el usuario RonaldoMRZ bajo licencia Apache 2.0. La model card asociada está vacía: únicamente contiene la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
+RONA_MRZ es un modelo publicado en Hugging Face por el usuario RonaldoMRZ bajo licencia Apache 2.0. La model card asociada está vacía: únicamente contiene la declaración de licencia, sin descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta y no tiene pipeline declarado.
 
 No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, tokenizador ni idiomas soportados. La fecha de creación y de última actualización coincide (27 de octubre de 2026), lo que sugiere una subida única sin mantenimiento posterior documentado.
 
@@ -72,4 +72,4 @@ No disponible. No se puede establecer una comparativa fiable sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RonaldoMRZ/RONA_MRZ
+- Hugging Face: https://huggingface.co/RonaldoMRZ/RONA_MRZ

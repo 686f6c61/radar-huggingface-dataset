@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5` es un ajuste fino (fine-tune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft` sobre la arquitectura OLMo-3 de AI2. Su nombre sugiere que fue entrenado específicamente para reducir la generación de alucinaciones (respuestas falsas o inventadas) mediante una segunda y tercera etapa de aprendizaje supervisado (SFT). El entrenamiento se realizó con la librería Unsloth y el TRL de HuggingFace, lo que indica un proceso optimizado en velocidad.
+El modelo `localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5` es un ajuste fino (fine-tune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `localized-ft` sobre la arquitectura OLMo-3 de AI2. Su nombre sugiere que fue entrenado específicamente para reducir la generación de alucinaciones (respuestas falsas o inventadas) mediante una segunda y tercera etapa de aprendizaje supervisado (SFT). El entrenamiento se realizó con la librería Unsloth y el TRL de Hugging Face, lo que indica un proceso optimizado en velocidad.
 
 Este modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial y modificación. La información disponible es escasa: no se han publicado detalles técnicos completos, benchmarks ni documentación adicional. La relevancia radica en que se trata de un intento de mitigar un problema crítico en modelos de lenguaje generativos, aunque su madurez y fiabilidad no están verificadas.
 
@@ -67,6 +67,6 @@ No se dispone de datos de rendimiento de este modelo, por lo que una comparacion
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5)
-- [HuggingFace - longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5)
+- [Hugging Face - localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5)
+- [Hugging Face - longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5)
 - [Modelo original de OLMo-3-7B-Instruct (unsloth)](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)

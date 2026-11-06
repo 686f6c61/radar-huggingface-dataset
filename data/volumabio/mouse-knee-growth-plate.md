@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en esta tarea c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VolumaBio/mouse-knee-growth-plate
+- Modelo en Hugging Face: https://huggingface.co/VolumaBio/mouse-knee-growth-plate
 - Modelo base SAM 3.1: https://huggingface.co/facebook/sam3.1
 - Repositorio de código y receta de entrenamiento: https://github.com/voluma-bio/voluma/tree/main/training/plate-finetune
 - Licencia SAM: archivo `LICENSE` del repositorio del modelo

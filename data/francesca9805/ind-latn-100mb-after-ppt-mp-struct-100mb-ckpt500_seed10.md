@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` es un modelo de generacion de texto desarrollado por el usuario de HuggingFace francesca9805 (asociado, segun el enlace de Weights & Biases incluido en la model card, a la Universidad de Groningen). Se trata de un ajuste fino (fine-tuning) por SFT del modelo base `francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10`, realizado con la libreria TRL. El nombre del checkpoint sugiere un experimento sobre tokenizadores y datos multilingues (posiblemente relacionado con escritura latina en lenguas indias), aunque la model card no aporta detalles sobre el corpus ni los objetivos.
+El modelo `ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` es un modelo de generacion de texto desarrollado por el usuario de Hugging Face francesca9805 (asociado, segun el enlace de Weights & Biases incluido en la model card, a la Universidad de Groningen). Se trata de un ajuste fino (fine-tuning) por SFT del modelo base `francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10`, realizado con la libreria TRL. El nombre del checkpoint sugiere un experimento sobre tokenizadores y datos multilingues (posiblemente relacionado con escritura latina en lenguas indias), aunque la model card no aporta detalles sobre el corpus ni los objetivos.
 
 La relevancia de esta ficha es limitada desde el punto de vista de produccion: el modelo acumula 0 descargas y 0 likes en el momento de la consulta, no declara licencia y no publica idiomas soportados ni resultados de benchmarks. Su principal interes es como artefacto de investigacion: se trata de un transformer decoder-only de aproximadamente 124,7 millones de parametros (escala GPT-2 small) entrenado con TRL 0.23.0 y Transformers 4.56.2.
 
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, la model card indica que se trata de un ajuste fino 
 
 - Generacion de texto autoregresiva basica (pipeline `text-generation`).
 - Acepta entradas con formato de conversacion (`[{"role": "user", "content": ...}]`), segun el ejemplo de la model card.
-- Compatibilidad declarada con text-generation-inference y endpoints de HuggingFace.
+- Compatibilidad declarada con text-generation-inference y endpoints de Hugging Face.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documentan capacidades multilingues especificas ni idiomas soportados.
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, la model card indica que se trata de un ajuste fino 
 - Experimentacion academica con tokenizadores y datos multilingues: dado el nombre del modelo, puede servir para reproducir experimentos sobre corpus en escritura latina de lenguas indias, comparando checkpoints (por ejemplo, el paso 500 con otros intermedios).
 - Punto de partida para ajuste fino adicional: al ser un modelo de 124,8 M de parametros, es viable reentrenarlo en una unica GPU de consumo para tareas de generacion especificas de dominio.
 - Prototipado rapido de generacion de texto: su tamano reducido permite iterar en local sin infraestructura dedicada.
-- Pruebas de infraestructura y pipelines de despliegue: util como modelo ligero para validar integraciones con TGI, endpoints de HuggingFace o pipelines de transformers antes de pasar a modelos mayores.
+- Pruebas de infraestructura y pipelines de despliegue: util como modelo ligero para validar integraciones con TGI, endpoints de Hugging Face o pipelines de transformers antes de pasar a modelos mayores.
 - Evaluacion de tecnicas de SFT con TRL: al haberse entrenado con esta libreria, sirve como caso de estudio para reproducir configuraciones de entrenamiento supervisado.
 - Analisis comparativo de checkpoints: el sufijo `ckpt500_seed10` permite estudiar el efecto del numero de pasos y la semilla en un mismo corpus.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni tareas que requieran garantias de licencia o idioma, dada la ausencia total de informacion al respecto.
@@ -69,17 +69,17 @@ No se han facilitado datos de MMLU, HumanEval, GSM8K ni de ninguna otra evaluaci
   - Int4: en torno a 70-80 MB (requeriria cuantizacion externa, no publicada).
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM (por ejemplo, GTX 1050 Ti, RTX 3060, RTX 4090, A100, H100). El modelo es tan pequeno que la GPU no es un cuello de botella.
 - Cabe holgadamente en cualquier GPU de consumo e incluso puede ejecutarse en CPU con latencia aceptable para generacion corta.
-- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (tag `text-generation-inference`), endpoints de HuggingFace. No se distribuyen pesos GGUF ni cuantizaciones para llama.cpp u Ollama.
+- Opciones de despliegue: transformers (soporte nativo), text-generation-inference (tag `text-generation-inference`), endpoints de Hugging Face. No se distribuyen pesos GGUF ni cuantizaciones para llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles. No obstante, el tamano del repositorio (10,7 GB) es desproporcionado respecto a los ~500 MB que ocuparian los pesos en FP32, lo que sugiere que el repositorio incluye checkpoints de entrenamiento u otros artefactos adicionales; conviene revisar el contenido antes de descargarlo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 | 124,8 M | No disponible | No disponible | HuggingFace | Sin benchmarks publicados |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente utilizado | Benchmarks publicos en GPT-2 paper (no comparables directamente por falta de datos del primero) |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Benchmarks publicos (perplejidad, GLUE) |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | Benchmarks publicos (HellaSwag, ARC, PIQA) |
+| ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 | 124,8 M | No disponible | No disponible | Hugging Face | Sin benchmarks publicados |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente utilizado | Benchmarks publicos en GPT-2 paper (no comparables directamente por falta de datos del primero) |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Benchmarks publicos (perplejidad, GLUE) |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | Benchmarks publicos (HellaSwag, ARC, PIQA) |
 
 La comparacion directa no es posible porque el modelo analizado no publica resultados de evaluacion ni idiomas. Los modelos alternativos se incluyen unicamente por proximidad de escala y arquitectura.
 
@@ -96,7 +96,7 @@ La comparacion directa no es posible porque el modelo analizado no publica resul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/tzxv37lk
 - Repositorio de TRL: https://github.com/huggingface/trl

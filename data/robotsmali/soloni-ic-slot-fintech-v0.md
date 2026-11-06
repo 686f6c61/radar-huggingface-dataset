@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RobotsMali/soloni-ic-slot-fintech-v0` es un checkpoint publicado en HuggingFace por la organización RobotsMali, con licencia Creative Commons Attribution 4.0 (CC-BY-4.0). Está etiquetado como parte del ecosistema NVIDIA NeMo, lo que sugiere que fue entrenado o adaptado con el kit de herramientas NeMo, aunque la model card no especifica la arquitectura, el número de parámetros ni el dominio de aplicación más allá del nombre, que apunta a un posible uso en el sector fintech (el término "slot" podría referirse a ranuras de atención o a slots de memoria, pero no hay confirmación).
+El modelo `RobotsMali/soloni-ic-slot-fintech-v0` es un checkpoint publicado en Hugging Face por la organización RobotsMali, con licencia Creative Commons Attribution 4.0 (CC-BY-4.0). Está etiquetado como parte del ecosistema NVIDIA NeMo, lo que sugiere que fue entrenado o adaptado con el kit de herramientas NeMo, aunque la model card no especifica la arquitectura, el número de parámetros ni el dominio de aplicación más allá del nombre, que apunta a un posible uso en el sector fintech (el término "slot" podría referirse a ranuras de atención o a slots de memoria, pero no hay confirmación).
 
 El repositorio tiene un tamaño de 0,5 GB y fue creado el 18 de agosto de 2026, con una actualización el mismo día. Sin embargo, la model card es una plantilla sin rellenar: todos los campos descriptivos (arquitectura, entrenamiento, datasets, rendimiento, limitaciones) contienen placeholders como "PUT-YOUR-ARCHITECTURE-HERE" o "Add information here". Esto indica que el autor no ha proporcionado documentación técnica útil para evaluar el modelo. No se dispone de información sobre idiomas, pipeline, ni resultados de benchmarks.
 
@@ -27,7 +27,7 @@ No se ha publicado información sobre la arquitectura del modelo. La model card 
 
 ## Capacidades
 
-No se dispone de información sobre las capacidades del modelo. La model card no menciona generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte para agentes, capacidades multilingües ni ningún modo especial (thinking mode, vision, audio, etc.). El pipeline no está definido en HuggingFace. Sin datos del autor, no es posible determinar qué tareas puede realizar el modelo.
+No se dispone de información sobre las capacidades del modelo. La model card no menciona generación de texto, razonamiento, código, matemáticas, visión, tool calling, soporte para agentes, capacidades multilingües ni ningún modo especial (thinking mode, vision, audio, etc.). El pipeline no está definido en Hugging Face. Sin datos del autor, no es posible determinar qué tareas puede realizar el modelo.
 
 ## Casos de uso
 
@@ -49,11 +49,11 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 - La model card está incompleta: todos los campos descriptivos son placeholders, lo que impide conocer el propósito, el entrenamiento y las capacidades reales del modelo.
 - No hay información sobre sesgos, alucinaciones, limitaciones de contexto o idioma, ni restricciones de uso comercial más allá de la licencia CC-BY-4.0 (que permite uso comercial con atribución, pero no garantiza la idoneidad del modelo).
-- El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - La fecha de creación (2026) es futura, lo que podría indicar un error en los metadatos o un modelo sintético.
 - No se recomienda su uso en producción sin una documentación completa y pruebas adicionales.
 
 ## Enlaces
 
-- [HuggingFace - RobotsMali/soloni-ic-slot-fintech-v0](https://huggingface.co/RobotsMali/soloni-ic-slot-fintech-v0)
+- [Hugging Face - RobotsMali/soloni-ic-slot-fintech-v0](https://huggingface.co/RobotsMali/soloni-ic-slot-fintech-v0)
 - [Documentación de NVIDIA NeMo](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/index.html) (referencia general, no específica del modelo)

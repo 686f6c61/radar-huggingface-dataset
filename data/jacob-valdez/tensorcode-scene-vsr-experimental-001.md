@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tensorcode-scene-vsr-experimental-001 | 151.388.609 | Imagen 224x224 + pregunta + candidatos explicitos | 50,78 % de precision en 128 imagenes reservadas de VSR | No disponible | HuggingFace, via libreria `tensorcode` |
-| openai/clip-vit-base-patch32 (modelo base) | Aproximadamente 151 millones | Imagen 224x224 + texto | No se reporta evaluacion en VSR en la informacion disponible | MIT (segun la atribucion del autor) | HuggingFace, muy extendido |
+| tensorcode-scene-vsr-experimental-001 | 151.388.609 | Imagen 224x224 + pregunta + candidatos explicitos | 50,78 % de precision en 128 imagenes reservadas de VSR | No disponible | Hugging Face, via libreria `tensorcode` |
+| openai/clip-vit-base-patch32 (modelo base) | Aproximadamente 151 millones | Imagen 224x224 + texto | No se reporta evaluacion en VSR en la informacion disponible | MIT (segun la atribucion del autor) | Hugging Face, muy extendido |
 | Linea base de imagen en blanco (interna al experimento) | No aplica | Imagen constante | 53,91 % de precision en el mismo subconjunto | No aplica | Definida en el propio experimento |
 | Ablacion de Workspace (cero y bypass) | 151.388.609 | Imagen + pregunta + candidatos, sin contribucion del Workspace | 52,34 % de precision en ambos casos | No aplica | Definida en el propio experimento |
 
@@ -108,7 +108,7 @@ No se dispone de datos de otros modelos comparables evaluados sobre este mismo s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacob-valdez/tensorcode-scene-vsr-experimental-001
+- Modelo en Hugging Face: https://huggingface.co/jacob-valdez/tensorcode-scene-vsr-experimental-001
 - Modelo base CLIP ViT-B/32: https://huggingface.co/openai/clip-vit-base-patch32
 - Dataset VSR (particion random): https://huggingface.co/datasets/cambridgeltl/vsr_random
 - Repositorio de VSR en GitHub: https://github.com/cambridgeltl/visual-spatial-reasoning

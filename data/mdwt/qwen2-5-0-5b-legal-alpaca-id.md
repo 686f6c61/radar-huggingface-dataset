@@ -19,7 +19,7 @@ Su relevancia es fundamentalmente práctica y docente: demuestra un flujo comple
 | Tipos de cuantizacion | Cuantización de 4 bits con doble cuantización durante el entrenamiento (QLoRA). El repositorio no publica versiones cuantizadas de inferencia (GGUF, AWQ, GPTQ, bitsandbytes) |
 | Idiomas soportados | Indonesio (id) como idioma objetivo del ajuste. El modelo base es multilingüe, pero el ajuste se ha realizado exclusivamente sobre datos en indonesio |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (repositorio de HuggingFace). No se especifica si contiene los pesos fusionados o únicamente el adaptador LoRA |
+| Formato de pesos | Safetensors (repositorio de Hugging Face). No se especifica si contiene los pesos fusionados o únicamente el adaptador LoRA |
 
 ## Arquitectura y entrenamiento
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MDWT/qwen2.5-0.5b-legal-alpaca-id | 0,5B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Ajuste QLoRA sobre dominio legal indonesio, sin benchmarks publicados |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, modelo base ampliamente utilizado | Modelo generalista original; el ajuste lo especializa en indonesio legal a costa de capacidades generales |
-| Qwen2.5-1.5B-Instruct | 1,5B | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Alternativa de mayor tamaño de la misma familia, con más capacidad de razonamiento y mayor coste de inferencia |
-| Modelos instructivos pequeños de otras familias (por ejemplo, Gemma-2-2B-it o SmolLM2) | Entre 0,3B y 2B | No disponible en la informacion proporcionada | Según familia | HuggingFace | Comparativa estructural únicamente; no se dispone de datos de rendimiento comparables en la información proporcionada |
+| MDWT/qwen2.5-0.5b-legal-alpaca-id | 0,5B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Ajuste QLoRA sobre dominio legal indonesio, sin benchmarks publicados |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, modelo base ampliamente utilizado | Modelo generalista original; el ajuste lo especializa en indonesio legal a costa de capacidades generales |
+| Qwen2.5-1.5B-Instruct | 1,5B | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Alternativa de mayor tamaño de la misma familia, con más capacidad de razonamiento y mayor coste de inferencia |
+| Modelos instructivos pequeños de otras familias (por ejemplo, Gemma-2-2B-it o SmolLM2) | Entre 0,3B y 2B | No disponible en la informacion proporcionada | Según familia | Hugging Face | Comparativa estructural únicamente; no se dispone de datos de rendimiento comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MDWT/qwen2.5-0.5b-legal-alpaca-id
+- Modelo en Hugging Face: https://huggingface.co/MDWT/qwen2.5-0.5b-legal-alpaca-id
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ichsan2895/alpaca-gpt4-indonesian
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo: los resultados obtenidos correspondían a páginas del Peak District National Park, sin relación con el modelo. No se dispone de paper, blog técnico, repositorio de código ni demo adicionales.

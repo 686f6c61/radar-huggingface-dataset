@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-8B-Instruct-FlatQuant-W4A4KV4 es una version cuantizada del modelo meta-llama/Meta-Llama-3-8B-Instruct, publicada por el usuario wliu62 en HuggingFace. El modelo aplica la tecnica de cuantizacion FlatQuant sobre los pesos, las activaciones y la cache KV, reduciendo la precision a 4 bits en los tres casos. Su objetivo es ofrecer una variante de Llama 3 8B Instruct con menor huella de memoria y mayor velocidad de inferencia sin reentrenar el modelo original, apoyandose en kernels CUDA personalizados.
+Llama-3-8B-Instruct-FlatQuant-W4A4KV4 es una version cuantizada del modelo meta-llama/Meta-Llama-3-8B-Instruct, publicada por el usuario wliu62 en Hugging Face. El modelo aplica la tecnica de cuantizacion FlatQuant sobre los pesos, las activaciones y la cache KV, reduciendo la precision a 4 bits en los tres casos. Su objetivo es ofrecer una variante de Llama 3 8B Instruct con menor huella de memoria y mayor velocidad de inferencia sin reentrenar el modelo original, apoyandose en kernels CUDA personalizados.
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3 8B Instruct, desarrollada originalmente por Meta. Sobre esa base se ha aplicado una cuantizacion post-entrenamiento de tipo W4A4KV4 (pesos, activaciones y cache KV a 4 bits), con pesos y activaciones simetricos y cache KV asimetrica. El repositorio ocupa 5,6 GB y los pesos en safetensors declaran 4.551.889.472 parametros almacenados, reflejo de la representacion empaquetada a 4 bits.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3-8B-Instruct-FlatQuant-W4A4KV4 (este) | 4.551.889.472 almacenados (~8B base) | W4A4KV4 | no disponible | llama3 | HuggingFace, requiere kernels CUDA propios |
-| meta-llama/Meta-Llama-3-8B-Instruct (base) | ~8.000 millones | FP16/BF16 | 8.192 tokens | llama3 | HuggingFace |
+| Llama-3-8B-Instruct-FlatQuant-W4A4KV4 (este) | 4.551.889.472 almacenados (~8B base) | W4A4KV4 | no disponible | llama3 | Hugging Face, requiere kernels CUDA propios |
+| meta-llama/Meta-Llama-3-8B-Instruct (base) | ~8.000 millones | FP16/BF16 | 8.192 tokens | llama3 | Hugging Face |
 | Otras variantes cuantizadas de Llama 3 8B | no disponible | no disponible | no disponible | llama3 | no disponible |
 
 No se proporcionan en la informacion datos de rendimiento que permitan comparar la calidad de esta variante frente al modelo base ni frente a otros esquemas de cuantizacion.
@@ -81,7 +81,7 @@ No se proporcionan en la informacion datos de rendimiento que permitan comparar 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wliu62/Llama-3-8B-Instruct-FlatQuant-W4A4KV4
+- Hugging Face: https://huggingface.co/wliu62/Llama-3-8B-Instruct-FlatQuant-W4A4KV4
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Repositorio FlatQuant: https://github.com/ruikangliu/FlatQuant
 - Repositorio referenciado en el model card: https://huggingface.co/Hyun9junn/Meta-Llama-3-8B-Instruct-W4A4KV4-FlatQuant

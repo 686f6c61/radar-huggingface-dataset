@@ -3,7 +3,7 @@
 # Albef contrastive lab50
 
 ## Resumen
-Albef contrastive lab50 es un repositorio publicado por el usuario sungminkang en HuggingFace que contiene una implementación propia y compacta de ALBEF (Align before Fuse) orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado listo para producción: el propio autor indica que la configuración es de escala "tiny" y que está pensada para revisión de código, pruebas de humo y experimentos pequeños y controlados. El checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para smoke tests, no como un checkpoint entrenado ni evaluado.
+Albef contrastive lab50 es un repositorio publicado por el usuario sungminkang en Hugging Face que contiene una implementación propia y compacta de ALBEF (Align before Fuse) orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado listo para producción: el propio autor indica que la configuración es de escala "tiny" y que está pensada para revisión de código, pruebas de humo y experimentos pequeños y controlados. El checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para smoke tests, no como un checkpoint entrenado ni evaluado.
 
 La arquitectura declarada es Albef, con atención de ventana deslizante (sliding window), fusión de tipo tensor fusion, activación approx gelu y normalización rmsnorm. El recuento real de parámetros registrado en el safetensors es de 24.832, una cifra extremadamente baja que confirma el carácter didáctico y experimental del artefacto. La receta de experimento por defecto usa el optimizador lamb con un schedule de tipo cosine.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Configuracion | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sungminkang/albef-contrastive-lab50 | 24.832 | tiny | no disponible | no declarados | apache-2.0 | publico en HuggingFace, 0 descargas |
-| Linf-elix/albef-contrastive | no disponible | nano | no disponible | no declarados | no disponible en la informacion proporcionada | publico en HuggingFace |
-| szwagner/my-contrastive | no disponible | small | no disponible | no declarados | no disponible en la informacion proporcionada | publico en HuggingFace |
+| sungminkang/albef-contrastive-lab50 | 24.832 | tiny | no disponible | no declarados | apache-2.0 | publico en Hugging Face, 0 descargas |
+| Linf-elix/albef-contrastive | no disponible | nano | no disponible | no declarados | no disponible en la informacion proporcionada | publico en Hugging Face |
+| szwagner/my-contrastive | no disponible | small | no disponible | no declarados | no disponible en la informacion proporcionada | publico en Hugging Face |
 | ALBEF original (salesforce/ALBEF) | no disponible en la informacion proporcionada | base, con encoder de texto tipo BERT y encoder visual tipo ViT | no disponible | resultados publicados en el paper de NeurIPS 2021 | no disponible en la informacion proporcionada | implementacion oficial en GitHub, integrada en LAVIS |
 
 Los tres primeros son implementaciones custom de comunidad con vocación de prototipo y sin métricas verificadas; el cuarto es la implementación de referencia de Salesforce Research, con resultados publicados y revisión por pares. No se dispone de datos suficientes para comparar rendimiento entre ellos.
@@ -89,7 +89,7 @@ Los tres primeros son implementaciones custom de comunidad con vocación de prot
 - El aviso del propio autor es explícito: los valores de `training_args.json` son puntos de partida del script, no evidencia de una ejecución completada. Para una evaluación con sentido hay que entrenar todos los baselines con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/sungminkang/albef-contrastive-lab50
+- Modelo en Hugging Face: https://huggingface.co/sungminkang/albef-contrastive-lab50
 - Repositorio comparable de la comunidad: https://huggingface.co/Linf-elix/albef-contrastive
 - Repositorio comparable de la comunidad: https://huggingface.co/szwagner/my-contrastive
 - Paper de ALBEF, "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation" (NeurIPS 2021 Spotlight): https://arxiv.org/abs/2107.07651

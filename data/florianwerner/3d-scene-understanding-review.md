@@ -73,7 +73,7 @@ La comparación no es directa porque los otros recursos contienen código o list
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/florianwerner/3d-scene-understanding-review
+- Repositorio en Hugging Face: https://huggingface.co/florianwerner/3d-scene-understanding-review
 - Lista de recursos sobre comprensión de escenas (GitHub): https://github.com/bertjiazheng/awesome-scene-understanding
 - Paper sobre avances en inteligencia 3D multimodal (arXiv): https://arxiv.org/abs/2310.15676
 - Web del taller de comprensión de escenas 3D en CVPR 2026: https://scene-understanding.com/

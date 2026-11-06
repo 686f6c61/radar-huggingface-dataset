@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: al tratarse de un modelo de 162M parámetros, la inferencia en precisión fp32 requiere aproximadamente 650 MB de VRAM, y en cuantización de 8 bits alrededor de 170 MB. Estas son estimaciones basadas en el tamaño del modelo, no en mediciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluyendo GPUs integradas modernas. Modelos como NVIDIA GTX 1050 Ti, RTX 2060 o superiores funcionan sin problemas.
 - Compatibilidad con consumer GPU: sí, cabe en cualquier GPU de consumo actual, incluso en sistemas con poca memoria.
-- Opciones de despliegue: compatible con la librería transformers de HuggingFace, así como con vLLM, llama.cpp, Ollama y text-generation-inference, según los tags del repositorio.
+- Opciones de despliegue: compatible con la librería transformers de Hugging Face, así como con vLLM, llama.cpp, Ollama y text-generation-inference, según los tags del repositorio.
 - Latencia y throughput: no se dispone de datos oficiales, pero para un modelo de este tamaño se espera una latencia inferior a 50 ms por token en una GPU moderna y un throughput de varios cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa se basa en el conocimiento general de la familia Pythia, ya que n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324
+- Hugging Face: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324
 - FriendliAI (despliegue): https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324
 - Variante preserve_emb en FriendliAI: https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_music_steps250-seed324-preserve_emb
 - Modelo relacionado (steps100): https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_music_steps100-seed324

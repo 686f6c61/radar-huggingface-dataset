@@ -18,7 +18,7 @@ Su relevancia actual es de nicho pero clara: los OPUS-MT siguen siendo la refere
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo distribuye pesos en safetensors sin variantes cuantizadas |
 | Idiomas soportados | fr (frances, origen), lg (luganda, destino) |
-| Licencia | no disponible en la ficha de HuggingFace; la model card indica que se debe seguir la licencia del modelo upstream (habitualmente CC-BY 4.0 en OPUS-MT) |
+| Licencia | no disponible en la ficha de Hugging Face; la model card indica que se debe seguir la licencia del modelo upstream (habitualmente CC-BY 4.0 en OPUS-MT) |
 | Formato de pesos | safetensors (`model.safetensors`), mas `config.json`, `tokenizer-enc.json` y `tokenizer-dec.json` |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 - Traduccion unidireccional: solo fr → lg. No se puede usar para luganda → frances sin un modelo complementario.
 - Cobertura linguistica muy estrecha: dos idiomas y un unico par. No sirve como modelo multilingue general.
-- Licencia: la ficha de HuggingFace no declara licencia. La model card remite a la del modelo upstream, que el autor describe como habitualmente CC-BY 4.0, pero no lo confirma para este repositorio. Antes de un uso comercial es imprescindible verificar la licencia real del modelo original y los terminos de atribucion.
+- Licencia: la ficha de Hugging Face no declara licencia. La model card remite a la del modelo upstream, que el autor describe como habitualmente CC-BY 4.0, pero no lo confirma para este repositorio. Antes de un uso comercial es imprescindible verificar la licencia real del modelo original y los terminos de atribucion.
 - Sin datos de evaluacion: no hay BLEU, chrF ni ninguna otra metrica publicada, ni para el modelo upstream ni para este reempaquetado. No hay forma de estimar la calidad de traduccion a partir de la informacion disponible.
 - Riesgo de alucinacion y de traducciones infieles: es un comportamiento conocido en modelos de traduccion neuronal de este tamano, especialmente en pares de bajos recursos como fr → lg, donde la disponibilidad de corpus paralelos es limitada. Se recomienda revision humana en contextos sensibles.
 - Longitud de contexto no documentada: no se indica el maximo de tokens de entrada, lo que obliga a determinarlo experimentalmente antes de usarlo con documentos largos.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/malinali-app/opus-mt-fr-lg
+- Hugging Face: https://huggingface.co/malinali-app/opus-mt-fr-lg
 - Modelo base upstream: https://huggingface.co/Helsinki-NLP/opus-mt-fr-lg
 - Proyecto Helsinki-NLP / OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

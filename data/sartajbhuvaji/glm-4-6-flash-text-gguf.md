@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM-4.6-Flash-text (GGUF) | 9,4B | 131072 | MIT | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,6B | 32768 | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 131072 | Llama 3.1 Community | HuggingFace |
+| GLM-4.6-Flash-text (GGUF) | 9,4B | 131072 | MIT | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,6B | 32768 | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 131072 | Llama 3.1 Community | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La eleccion entre ellos dependera de las necesidades de contexto, idioma y licencia. GLM-4.6-Flash-text ofrece el contexto mas largo y licencia MIT, mientras que Qwen y Llama tienen comunidades mas grandes y mas recursos de fine-tuning.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text-GGUF
 - Modelo base (texto): https://huggingface.co/sartajbhuvaji/GLM-4.6-Flash-text
 - Modelo original (vision): https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Documentacion de Z.AI sobre GLM-4.6V: https://docs.z.ai/guides/vlm/glm-4.6v

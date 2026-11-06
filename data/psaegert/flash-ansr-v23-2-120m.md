@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psaegert/flash-ansr-v23.2-120M
+- Modelo en Hugging Face: https://huggingface.co/psaegert/flash-ansr-v23.2-120M
 - Repositorio GitHub de flash-ansr: https://github.com/psaegert/flash-ansr
 - Documentación de flash-ansr: https://flash-ansr.readthedocs.io/en/latest/
 - Paquete PyPI: https://pypi.org/project/flash-ansr/

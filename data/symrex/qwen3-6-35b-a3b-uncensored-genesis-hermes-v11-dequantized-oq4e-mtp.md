@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V11-dequantized-oQ4e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Guia de Qwen3.6-35B Genesis Hermes (en ingles): https://cldnavi.com/en/blog/qwen36-35b-genesis-hermes-guide-2026/
 - Documentacion de la familia Qwen3.6 (DeepWiki): https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models

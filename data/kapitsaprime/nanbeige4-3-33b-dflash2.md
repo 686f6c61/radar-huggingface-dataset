@@ -86,7 +86,7 @@ Ademas, ProCreations reporta 1,76x en decodificacion greedy y 1,63x a temperatur
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/kapitsaprime/Nanbeige4.3-33B-DFlash2
+- Ficha en Hugging Face: https://huggingface.co/kapitsaprime/Nanbeige4.3-33B-DFlash2
 - Modelo objetivo: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Borrador original (ProCreations): https://huggingface.co/ProCreations/Nanbeige4.3-33B-DFlash2
 - Repack de Luni: https://huggingface.co/Luni/Nanbeige-4.3-33B-DFlash2

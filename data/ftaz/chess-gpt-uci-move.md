@@ -92,7 +92,7 @@ La comparacion mas informativa es interna a la familia del autor, ya que los tre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ftaz/chess-gpt-uci-move
+- Modelo en Hugging Face: https://huggingface.co/ftaz/chess-gpt-uci-move
 - Modelo A (tokenizador PGN por caracter): https://huggingface.co/ftaz/chess-gpt-pgn-char
 - Modelo C (tokenizador UCI por casilla): https://huggingface.co/ftaz/chess-gpt-uci-square
 - Write-up del autor: https://blog.wezn.dev/chess-gpt/

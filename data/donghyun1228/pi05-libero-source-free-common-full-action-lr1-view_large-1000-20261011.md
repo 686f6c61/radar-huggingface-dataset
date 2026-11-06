@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Donghyun1228/pi05-libero-source-free-common-full-action-lr1-view_large-1000-20261011` es un checkpoint de robotica publicado por el usuario Donghyun1228 en HuggingFace, construido sobre la familia de modelos Vision-Language-Action (VLA) pi0.5 de Physical Intelligence y distribuido a traves de la libreria `openpi`. Se trata de un experimento de adaptacion "source-free" sobre el benchmark LIBERO: se parte del grafo original (descrito en la model card como `gemma300m`) y se entrenan la vision y el experto de acciones completo (11 hojas de un total de 74), sin acceso a observaciones del dominio fuente ni a cache de profesor emparejado.
+El modelo `Donghyun1228/pi05-libero-source-free-common-full-action-lr1-view_large-1000-20261011` es un checkpoint de robotica publicado por el usuario Donghyun1228 en Hugging Face, construido sobre la familia de modelos Vision-Language-Action (VLA) pi0.5 de Physical Intelligence y distribuido a traves de la libreria `openpi`. Se trata de un experimento de adaptacion "source-free" sobre el benchmark LIBERO: se parte del grafo original (descrito en la model card como `gemma300m`) y se entrenan la vision y el experto de acciones completo (11 hojas de un total de 74), sin acceso a observaciones del dominio fuente ni a cache de profesor emparejado.
 
 El objetivo del experimento es comparar la capacidad de adaptacion segun que modulos se descongelan y con que multiplicador se escalan las actualizaciones de accion tras AdamW. La variante aqui publicada corresponde al paso 999 tras 1000 actualizaciones de un modelo de dinamica inversa (IDM) solo sobre el dominio objetivo, con batch 32, experto de acciones completo sin LoRA y multiplicador 1.0. El autor reporta una evaluacion exploratoria de 400 episodios en LIBERO con un 50,00% de exito (200/400).
 
@@ -110,7 +110,7 @@ Todos los comparadores con datos numericos proceden del mismo autor y de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-full-action-lr1-view_large-1000-20261011
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-full-action-lr1-view_large-1000-20261011
 - Checkpoint relacionado (vision, yaw30, 1000): https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011
 - Checkpoint relacionado (contacto denso, wrist KD, yaw10): https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003
 - Repositorio OpenPI (Physical Intelligence): https://deepwiki.com/Physical-Intelligence/openpi

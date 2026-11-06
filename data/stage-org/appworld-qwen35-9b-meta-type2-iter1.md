@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stage-org/appworld-qwen35-9b-meta-type2-iter1 | 9,4B | 262k (nativo) | No disponible | HuggingFace |
-| Qwen3.5-9B (base) | 9,4B | 262k | Apache 2.0 (según Qwen) | HuggingFace, LM Studio |
-| Stage-org/appworld-qwen35-9b-meta-type6-iter1 | 9,4B | 262k (presumible) | No disponible | HuggingFace |
+| Stage-org/appworld-qwen35-9b-meta-type2-iter1 | 9,4B | 262k (nativo) | No disponible | Hugging Face |
+| Qwen3.5-9B (base) | 9,4B | 262k | Apache 2.0 (según Qwen) | Hugging Face, LM Studio |
+| Stage-org/appworld-qwen35-9b-meta-type6-iter1 | 9,4B | 262k (presumible) | No disponible | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base. No se dispone de datos de rendimiento para establecer una comparación cuantitativa. La principal diferencia entre las variantes de Stage-org es el tipo de tarea de AppWorld para el que fueron fine-tuned (type2, type6, type9), lo que afecta a su especialización pero no a su arquitectura.
 
@@ -76,7 +76,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type2-iter1
+- Repositorio Hugging Face: https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type2-iter1
 - Benchmark AppWorld (GitHub): https://github.com/stonybrooknlp/appworld
 - Página de Qwen3.5-9B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-9b
 - Variante type6 del mismo autor: https://huggingface.co/Stage-org/appworld-qwen35-9b-meta-type6-iter1

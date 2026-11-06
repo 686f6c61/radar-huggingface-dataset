@@ -4,7 +4,7 @@
 
 ## Resumen
 
-NeoHorse-1-4B es un modelo de lenguaje causal de aproximadamente 4B parámetros desarrollado por TokenRhythm (publicado en HuggingFace bajo la cuenta `zendxx`), obtenido mediante post-entrenamiento de Qwen3.5-4B. Está orientado explícitamente a *harnesses* de agentes en texto: uso de herramientas, generación de código, razonamiento e instrucciones de varios turnos. La model card lo presenta como un prototipo inicial en la senda de la auto-mejora recursiva (*recursive self-improvement*, RSI), con un "routing harness" que reparte tareas entre un pool heterogéneo de modelos, registra interacciones y resultados de herramientas y usa esa señal para reconfigurar la mezcla de entrenamiento siguiente.
+NeoHorse-1-4B es un modelo de lenguaje causal de aproximadamente 4B parámetros desarrollado por TokenRhythm (publicado en Hugging Face bajo la cuenta `zendxx`), obtenido mediante post-entrenamiento de Qwen3.5-4B. Está orientado explícitamente a *harnesses* de agentes en texto: uso de herramientas, generación de código, razonamiento e instrucciones de varios turnos. La model card lo presenta como un prototipo inicial en la senda de la auto-mejora recursiva (*recursive self-improvement*, RSI), con un "routing harness" que reparte tareas entre un pool heterogéneo de modelos, registra interacciones y resultados de herramientas y usa esa señal para reconfigurar la mezcla de entrenamiento siguiente.
 
 Técnicamente es un transformer causal decoder-only con la configuración `qwen3_5_text`. El repositorio contiene exclusivamente los pesos del modelo de lenguaje, reempaquetados para inferencia solo texto: los pesos de visión no se incluyen y el reempaquetado cambia la configuración y los nombres de las claves de tensor, pero no los valores de los tensores ajustados. El tamaño real del repo es de 8,4 GB en safetensors y el recuento de parámetros en safetensors es de 4.205.751.296.
 
@@ -77,8 +77,8 @@ Los únicos datos numéricos publicados en el texto de la model card son la medi
 
 | Modelo | Parametros | Contexto | Licencia | Media macro (10 benchmarks) | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoHorse-1-4B | 4,21 B | no disponible | Apache 2.0 | 64,87 | safetensors en HuggingFace |
-| Qwen3.5-4B (base) | aproximadamente 4B | no disponible | no disponible | 58,94 | safetensors en HuggingFace |
+| NeoHorse-1-4B | 4,21 B | no disponible | Apache 2.0 | 64,87 | safetensors en Hugging Face |
+| Qwen3.5-4B (base) | aproximadamente 4B | no disponible | no disponible | 58,94 | safetensors en Hugging Face |
 | Otras alternativas agenticas de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio informacion sobre modelos comparables (el unico resultado obtenido era irrelevante para el ambito del modelo), por lo que no se dispone de datos verificados de terceros para completar la comparativa.
@@ -92,14 +92,14 @@ La busqueda web realizada no devolvio informacion sobre modelos comparables (el 
 - Riesgo de alucinacion: es un modelo de 4B; en tareas de uso de herramientas y codigo puede generar llamadas con argumentos invalidos o comandos incorrectos, por lo que el harness debe validar y limitar la ejecucion.
 - Formato de pesos unico: solo hay safetensors; para llama.cpp u Ollama hay que convertir a GGUF, y no se publican cuantizaciones oficiales (AWQ, GPTQ, GGUF) ni resultados de calidad tras cuantizar.
 - Adopcion muy baja: 0 descargas y 1 like en el momento de la consulta, sin validacion independiente de la comunidad.
-- Discrepancia de procedencia: el repositorio esta publicado bajo el usuario `zendxx`, mientras que la model card atribuye el ajuste a TokenRhythm y enlaza a su organizacion en HuggingFace y ModelScope; conviene verificar la cadena de custodia antes de usarlo en produccion.
+- Discrepancia de procedencia: el repositorio esta publicado bajo el usuario `zendxx`, mientras que la model card atribuye el ajuste a TokenRhythm y enlaza a su organizacion en Hugging Face y ModelScope; conviene verificar la cadena de custodia antes de usarlo en produccion.
 - Marco de investigacion: la propia model card lo describe como prototipo inicial en la senda de la auto-mejora recursiva, no como un modelo final optimizado para produccion.
 - Licencia Apache 2.0: permite uso comercial y modificacion, con las obligaciones habituales de atribucion y conservacion del aviso de licencia; al derivar de Qwen3.5-4B conviene revisar tambien las condiciones del modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace (repo consultado): https://huggingface.co/zendxx/NeoHorse-1-4B
-- Organizacion del autor en HuggingFace: https://huggingface.co/TokenRhythm
+- Modelo en Hugging Face (repo consultado): https://huggingface.co/zendxx/NeoHorse-1-4B
+- Organizacion del autor en Hugging Face: https://huggingface.co/TokenRhythm
 - Modelo en ModelScope: https://www.modelscope.cn/models/TokenRhythm/NeoHorse-1-4B
 - Repositorio GitHub: https://github.com/TokenRhythm/NeoHorse
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.08183

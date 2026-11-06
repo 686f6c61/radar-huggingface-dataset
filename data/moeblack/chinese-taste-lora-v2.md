@@ -67,7 +67,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Qwen3.8-27
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Moeblack/chinese-taste-lora-v2
-- Repositorio alternativo en HuggingFace: https://huggingface.co/Moeblack/Qwen3.8-27B-chinese-taste-lora
+- Hugging Face: https://huggingface.co/Moeblack/chinese-taste-lora-v2
+- Repositorio alternativo en Hugging Face: https://huggingface.co/Moeblack/Qwen3.8-27B-chinese-taste-lora
 - Página de FriendliAI con información adicional: https://friendli.ai/models/Moeblack/Qwen3.8-27B-chinese-taste-lora
 - GitHub del autor (no específico del modelo): https://github.com/Moeblack/trainer

@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hansda/DeskForge-Qwen3.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Hansda/DeskForge-Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/docling-project/DeskForge-Qwen3.5-4B
 - Revisión concreta del modelo base citada en la model card: https://huggingface.co/docling-project/DeskForge-Qwen3.5-4B/tree/72337e2fe9e8489ee324c40ea16da49d14b480ff
 - llama.cpp (commit de referencia): https://github.com/ggml-org/llama.cpp/tree/0ec4027a2a0183de87c007069adddc06e665f7de

@@ -1,7 +1,7 @@
 # Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_seed43_epoch5
 
 ## Resumen
-Este modelo, subido al repositorio HuggingFace por el usuario Lanni-ni, es un modelo de generación de texto con 45.694.080 parámetros y un peso de 0,2 GB en formato safetensors. Está etiquetado con los tags `transformers`, `safetensors`, `dynamic_alibi`, `text-generation` y `custom_code`, lo que indica que se trata de una implementación que requiere código personalizado dentro del ecosistema de Transformers.
+Este modelo, subido al repositorio Hugging Face por el usuario Lanni-ni, es un modelo de generación de texto con 45.694.080 parámetros y un peso de 0,2 GB en formato safetensors. Está etiquetado con los tags `transformers`, `safetensors`, `dynamic_alibi`, `text-generation` y `custom_code`, lo que indica que se trata de una implementación que requiere código personalizado dentro del ecosistema de Transformers.
 
 El nombre del modelo (`dynamic_alibi_4_6_384_babylm_10m_seed43_epoch5`) sugiere que emplea una variante de atención con sesgos lineales dinámicos (ALiBi) y que podría estar vinculado a la iniciativa BabyLM, aunque no hay documentación oficial que lo confirme. La model card es una plantilla genérica y no aporta información sobre arquitectura, datos de entrenamiento ni capacidades.
 
@@ -61,6 +61,6 @@ No disponible.
 - Caveat para producción: no hay información que respalde su uso en producción; se recomienda tratarlo como un modelo experimental.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_seed43_epoch5
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_seed43_epoch5
 - Paper citado en tags: https://arxiv.org/abs/1910.09700 (nota: este enlace corresponde al artículo de Lacoste et al. sobre impacto ambiental, no al modelo)
 - No hay otros enlaces disponibles.

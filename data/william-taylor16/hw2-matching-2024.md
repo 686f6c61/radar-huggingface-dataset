@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/William-taylor16/hw2-matching-2024
+- Modelo en Hugging Face: https://huggingface.co/William-taylor16/hw2-matching-2024
 - Perfil del autor: https://huggingface.co/William-taylor16
 - Listado de modelos del autor: https://huggingface.co/William-taylor16/models
 - No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) especificos de este modelo.

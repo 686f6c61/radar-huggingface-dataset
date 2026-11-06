@@ -74,6 +74,6 @@ No se dispone de comparaciones con otros modelos de la misma categoria en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/coffeine/qwen3-4b-medquad-qlora-v1
+- Repositorio Hugging Face: https://huggingface.co/coffeine/qwen3-4b-medquad-qlora-v1
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset MedQuAD (mencionado en la model card): https://huggingface.co/datasets/Hmehdi515/MedQuad

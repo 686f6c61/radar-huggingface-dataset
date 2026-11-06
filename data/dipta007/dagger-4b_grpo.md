@@ -95,7 +95,7 @@ El modelo se sitúa en la gama de modelos pequeños de razonamiento matemático,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dipta007/dagger-4B_GRPO
+- Modelo en Hugging Face: https://huggingface.co/dipta007/dagger-4B_GRPO
 - Paper (arXiv): https://arxiv.org/abs/2601.06853
 - Página del proyecto: https://dipta007.github.io/DAGGER/
 - Repositorio GitHub: https://github.com/dipta007/DAGGER

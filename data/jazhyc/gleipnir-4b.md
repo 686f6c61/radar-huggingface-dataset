@@ -34,7 +34,7 @@ El entrenamiento se realizo durante una epoca sobre 21.837 ejemplos: 8.688 traye
 - Monitorizacion solo-accion: opera sin acceso a la cadena de pensamiento privada del agente monitorizado, lo que permite su uso en entornos de caja negra.
 - Manejo de contexto largo de hasta 29.696 tokens, suficiente para trayectorias extensas de agentes con multiples llamadas a herramientas.
 - Clasificacion de comportamiento conforme a la tarea: distingue entre errores honestos, intentos fallidos, exploracion inofensiva y trabajo incompleto (clase 0) frente a comportamiento problematico real (clase 1).
-- Compatibilidad con el ecosistema PEFT y Transformers de HuggingFace, con soporte para inferencia en vLLM mediante el subdirectorio `vllm/` con disposicion de adaptador re-basada.
+- Compatibilidad con el ecosistema PEFT y Transformers de Hugging Face, con soporte para inferencia en vLLM mediante el subdirectorio `vllm/` con disposicion de adaptador re-basada.
 
 ## Casos de uso
 
@@ -68,8 +68,8 @@ Gleipnir 4B queda por detras de Gleipnir 9B en 0,0388 puntos de Mean-OOD pAUROC@
 
 | Modelo | Parametros | Contexto | Mean-OOD pAUROC@20 | Licencia | Disponibilidad |
 | --- | ---: | ---: | ---: | --- | --- |
-| **Gleipnir 4B** | 4B + 169M adaptador | 29.696 | 0,7824 | MIT | HuggingFace |
-| Gleipnir 9B | 9B (base no especificado) | no disponible | 0,8212 | no disponible | HuggingFace |
+| **Gleipnir 4B** | 4B + 169M adaptador | 29.696 | 0,7824 | MIT | Hugging Face |
+| Gleipnir 9B | 9B (base no especificado) | no disponible | 0,8212 | no disponible | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables en la misma categoria de monitores deliberativos solo-accion en la informacion proporcionada. La comparativa se limita a la variante 9B del mismo proyecto, que supera a Gleipnir 4B en calidad pero con mayor coste de inferencia.
 
@@ -86,7 +86,7 @@ No se dispone de informacion sobre otros modelos comparables en la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jazhyc/Gleipnir-4B
+- Modelo en Hugging Face: https://huggingface.co/Jazhyc/Gleipnir-4B
 - Dataset de logits de trayectorias: https://huggingface.co/datasets/Jazhyc/gleipnir-kimi-k3-tool-trajectory-logits
 - Paper relacionado (Training Deliberative Monitors for Black-Box Scheming Detection): https://alpha-ollama.hf-mirror.com/papers/2605.29601
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

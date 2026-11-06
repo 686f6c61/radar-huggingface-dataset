@@ -64,7 +64,7 @@ La informacion proporcionada no incluye especificaciones de modelos comparables.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-main-module-lr-yaw30 (este) | No disponible | No disponible | Evaluacion pendiente | apache-2.0 | HuggingFace |
+| pi05-libero-main-module-lr-yaw30 (este) | No disponible | No disponible | Evaluacion pendiente | apache-2.0 | Hugging Face |
 | pi0 / pi0.5 (openpi) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | OpenVLA | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -80,6 +80,6 @@ La informacion proporcionada no incluye especificaciones de modelos comparables.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v0p3-e30-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v0p3-e30-1000-20261015
 - Librería openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - No se han encontrado otros enlaces (papers, blogs, demos) en la busqueda web proporcionada.

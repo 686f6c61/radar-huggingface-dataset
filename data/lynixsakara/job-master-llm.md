@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Job-Master-LLM es un ajuste fino (fine-tune) publicado por el usuario LynixSakara en HuggingFace, derivado del modelo base unsloth/Qwen2.5-14B-Instruct-bnb-4bit. Se trata por tanto de un modelo de lenguaje denso de la familia Qwen2.5, con 14,7 mil millones de parámetros en su configuración original, sometido a un proceso de ajuste supervisado (SFT) mediante la librería TRL. El repositorio declara el tag generated_from_trainer y la etiqueta unsloth, lo que indica que el entrenamiento se realizó con las optimizaciones de memoria de Unsloth sobre una versión ya cuantizada a 4 bits del modelo base.
+Job-Master-LLM es un ajuste fino (fine-tune) publicado por el usuario LynixSakara en Hugging Face, derivado del modelo base unsloth/Qwen2.5-14B-Instruct-bnb-4bit. Se trata por tanto de un modelo de lenguaje denso de la familia Qwen2.5, con 14,7 mil millones de parámetros en su configuración original, sometido a un proceso de ajuste supervisado (SFT) mediante la librería TRL. El repositorio declara el tag generated_from_trainer y la etiqueta unsloth, lo que indica que el entrenamiento se realizó con las optimizaciones de memoria de Unsloth sobre una versión ya cuantizada a 4 bits del modelo base.
 
 El propósito declarado del modelo, a juzgar por su nombre, apunta a tareas relacionadas con el ámbito laboral y de empleo, aunque la model card no documenta la composición del dataset de entrenamiento ni el dominio concreto de los datos utilizados. No se especifican licencia, idiomas soportados, ni resultados de evaluación, y el repositorio ocupa únicamente 0,6 GB, un tamaño muy inferior a los aproximadamente 9 GB que requerirían los pesos completos de un modelo de 14B en 4 bits, lo que sugiere que podría contener adaptadores LoRA o un subconjunto parcial de pesos en lugar del checkpoint completo.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento del fine-tune que permitan una comparació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LynixSakara/Job-Master-LLM
+- Modelo en Hugging Face: https://huggingface.co/LynixSakara/Job-Master-LLM
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl

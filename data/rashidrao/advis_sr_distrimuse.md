@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ADVIS_SR_DISTRIMUSE es un repositorio de HuggingFace publicado por el usuario rashidrao que contiene un conjunto de checkpoints de PyTorch (ficheros `.pt`) entrenados para tareas de manipulacion robotica en el marco del proyecto DistriMuSe (UC3/UniTo). No se trata de un modelo de lenguaje: son pesos de redes neuronales orientadas a control y percepcion en un escenario de paletizado real (Real Palletizing dataset, DEMO3.3) sobre el denominado dataset `Smart Robotics`.
+ADVIS_SR_DISTRIMUSE es un repositorio de Hugging Face publicado por el usuario rashidrao que contiene un conjunto de checkpoints de PyTorch (ficheros `.pt`) entrenados para tareas de manipulacion robotica en el marco del proyecto DistriMuSe (UC3/UniTo). No se trata de un modelo de lenguaje: son pesos de redes neuronales orientadas a control y percepcion en un escenario de paletizado real (Real Palletizing dataset, DEMO3.3) sobre el denominado dataset `Smart Robotics`.
 
 El repositorio incluye cuatro checkpoints de aproximadamente 243,9 MB cada uno, correspondientes a cuatro variantes o modulos: `model_ConvBelt_64.pt`, `model_PLeft_64.pt`, `model_PRight_64.pt` y `model_RoboArm_64.pt`, acompanados de un unico fichero de configuracion JSON (`model_RoboArm_64_config.json`, 2 KB). El tamano total del repositorio es de 1,0 GB.
 
@@ -84,6 +84,6 @@ No disponible. La informacion proporcionada no permite identificar con precision
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rashidrao/ADVIS_SR_DISTRIMUSE
+- Hugging Face: https://huggingface.co/rashidrao/ADVIS_SR_DISTRIMUSE
 - GitHub (codigo asociado): https://github.com/rashidrao-pk/advis_distrimuse_unito_SR
 - Paper, blog o demo del proyecto DistriMuSe: no disponibles en la informacion proporcionada.

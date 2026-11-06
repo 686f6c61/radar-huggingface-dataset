@@ -2,7 +2,7 @@
 
 ## Resumen
 
-1234vlad/mirror es un repositorio de pesos publicado en HuggingFace por el usuario 1234vlad. La información disponible no incluye model card, pipeline declarado, licencia ni idiomas soportados; los únicos datos objetivos son los metadatos del repositorio: 11.766.034.176 parámetros registrados en safetensors (aproximadamente 11,77 mil millones), un tamaño de repositorio de 1.275,8 GB, 11 descargas y 0 likes desde su creación el 24 de mayo de 2026.
+1234vlad/mirror es un repositorio de pesos publicado en Hugging Face por el usuario 1234vlad. La información disponible no incluye model card, pipeline declarado, licencia ni idiomas soportados; los únicos datos objetivos son los metadatos del repositorio: 11.766.034.176 parámetros registrados en safetensors (aproximadamente 11,77 mil millones), un tamaño de repositorio de 1.275,8 GB, 11 descargas y 0 likes desde su creación el 24 de mayo de 2026.
 
 Los tags asociados (`gguf`, `imatrix`, `conversational`, `endpoints_compatible`, `region:us`) indican que se distribuyen cuantizaciones GGUF de un modelo ajustado para diálogo, generadas con matriz de importancia (imatrix) y presuntamente compatibles con la API de Inference Endpoints. No se declara en ningún momento cuál es el modelo base, la arquitectura, el contexto máximo ni el proceso de entrenamiento.
 
@@ -28,7 +28,7 @@ Su relevancia práctica es limitada y fundamentalmente instrumental: sirve como 
 
 No se ha publicado información sobre la arquitectura del modelo: no se especifica si es un transformer denso, un MoE, un modelo híbrido con atención lineal ni el número de capas, cabezas o dimensión oculta. Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o ajuste supervisado, ni sobre la ventana de contexto nativa.
 
-Lo único inferible a partir de los tags es el proceso de posentrenamiento/cuantización: el repositorio distribuye pesos en formato GGUF cuantizados con `imatrix`, es decir, con una matriz de importancia calculada a partir de un corpus de calibración para minimizar la pérdida de perplejidad en precisiones bajas. El tag `conversational` sugiere un ajuste orientado a diálogo multiturno, y `endpoints_compatible` que el artefacto está pensado para servirse detrás de una API compatible con la interfaz de HuggingFace. El corpus de calibración empleado para la imatrix no se detalla, lo cual es relevante porque una calibración sesgada hacia un dominio concreto degrada el rendimiento fuera de ese dominio.
+Lo único inferible a partir de los tags es el proceso de posentrenamiento/cuantización: el repositorio distribuye pesos en formato GGUF cuantizados con `imatrix`, es decir, con una matriz de importancia calculada a partir de un corpus de calibración para minimizar la pérdida de perplejidad en precisiones bajas. El tag `conversational` sugiere un ajuste orientado a diálogo multiturno, y `endpoints_compatible` que el artefacto está pensado para servirse detrás de una API compatible con la interfaz de Hugging Face. El corpus de calibración empleado para la imatrix no se detalla, lo cual es relevante porque una calibración sesgada hacia un dominio concreto degrada el rendimiento fuera de ese dominio.
 
 ## Capacidades
 
@@ -105,6 +105,6 @@ Comparativa de rendimiento: no disponible. No se puede afirmar ninguna ventaja o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1234vlad/mirror
+- Repositorio en Hugging Face: https://huggingface.co/1234vlad/mirror
 
 No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

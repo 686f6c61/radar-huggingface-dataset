@@ -18,7 +18,7 @@ El modelo está orientado a tareas agénticas y de uso de herramientas, y su aut
 | Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | NVFP4 (E2M1, formato de coma flotante de 4 bits de NVIDIA); en este repositorio solo se publica el fichero NVFP4 |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, espanol, vietnamita, thai, indonesio, hindi, ruso, polaco |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (llama-cpp) |
 | Tamano del repositorio | 13,6 GB |
 | Numero de capas | 40 |
@@ -86,7 +86,7 @@ La unica comparacion documentada es la que ofrece la propia model card frente a 
 
 ## Limitaciones y advertencias
 
-- Licencia lfm1.0: es una licencia propia de Liquid AI, etiquetada como "other" en HuggingFace. Es imprescindible revisar el texto completo antes de cualquier uso comercial, ya que puede incluir restricciones de escala, atribucion o sectores.
+- Licencia lfm1.0: es una licencia propia de Liquid AI, etiquetada como "other" en Hugging Face. Es imprescindible revisar el texto completo antes de cualquier uso comercial, ya que puede incluir restricciones de escala, atribucion o sectores.
 - Riesgo de alucinacion: no se documentan tasas de alucinacion ni evaluaciones de fidelidad; como cualquier modelo generativo, puede producir contenido incorrecto con apariencia de certeza, especialmente en dominios especializados.
 - Sesgos: no se publica informacion sobre evaluaciones de sesgo, composicion del dataset ni medidas de mitigacion.
 - Cobertura idiomatica desigual: aunque se listan 16 idiomas, no se especifica el nivel de calidad por idioma; es previsible un rendimiento inferior en los idiomas con menos presencia en el corpus de entrenamiento.
@@ -98,7 +98,7 @@ La unica comparacion documentada es la que ofrece la propia model card frente a 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WhiskyAKM/LFM2.5-24B-A2B-NVFP4-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/WhiskyAKM/LFM2.5-24B-A2B-NVFP4-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
 - Blog de Liquid AI sobre LFM2.5-24B-A2B: https://www.liquid.ai/blog/lfm2-5-24b-a2b

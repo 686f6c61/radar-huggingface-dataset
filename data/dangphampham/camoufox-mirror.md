@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Camoufox-mirror es un repositorio de respaldo (mirror) del navegador antidetect Camoufox, un fork de Firefox diseñado para web scraping y agentes de IA. El autor, DangPhamPham, publica este espejo en HuggingFace como copia de seguridad del repositorio original de GitHub (`daijro/camoufox`), por si este desaparece o cambia de ubicación. No se trata de un modelo de lenguaje ni de un sistema de IA, sino de un paquete de software que incluye binarios del navegador, paquetes pip y código fuente.
+Camoufox-mirror es un repositorio de respaldo (mirror) del navegador antidetect Camoufox, un fork de Firefox diseñado para web scraping y agentes de IA. El autor, DangPhamPham, publica este espejo en Hugging Face como copia de seguridad del repositorio original de GitHub (`daijro/camoufox`), por si este desaparece o cambia de ubicación. No se trata de un modelo de lenguaje ni de un sistema de IA, sino de un paquete de software que incluye binarios del navegador, paquetes pip y código fuente.
 
 El proyecto Camoufox original está desarrollado por daijro y se presenta como un navegador "headless, indetectable y optimizado para ejecutarse a escala". Cada ejecución genera una identidad de dispositivo fresca basada en la distribución real de dispositivos, lo que permite que el tráfico automatizado se mezcle con el tráfico normal. La versión reflejada es la v152.0.4-beta.29, correspondiente a Firefox 152.0.4, con el paquete pip camoufox 0.5.5. El repositorio ocupa 1.7 GB y contiene archivos para Windows y Linux, así como el código fuente.
 
-La relevancia de este mirror radica en la dependencia que tienen las herramientas de automatización de IA de este navegador. El propio autor mantiene la herramienta `DangPhamPham/azure-camoufox` que depende de este paquete. Al estar alojado en HuggingFace, ofrece una alternativa de distribución estable frente a posibles caídas de GitHub o PyPI.
+La relevancia de este mirror radica en la dependencia que tienen las herramientas de automatización de IA de este navegador. El propio autor mantiene la herramienta `DangPhamPham/azure-camoufox` que depende de este paquete. Al estar alojado en Hugging Face, ofrece una alternativa de distribución estable frente a posibles caídas de GitHub o PyPI.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No aplica directamente, ya que no es un modelo de IA. Como navegador antidetect,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DangPhamPham/camoufox-mirror
+- Repositorio en Hugging Face: https://huggingface.co/DangPhamPham/camoufox-mirror
 - Repositorio original de Camoufox en GitHub: https://github.com/daijro/camoufox
 - Sitio web oficial de Camoufox: https://camoufox.com/
 - Herramienta dependiente del autor: https://huggingface.co/DangPhamPham/azure-camoufox

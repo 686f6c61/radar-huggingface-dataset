@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3 1.7B Abliterated Demo es un repositorio alojado en HuggingFace por el usuario bowtiedrahman que, segun la model card, contiene una demostracion estatica (SDK `static`, puerto 7860) con respuestas "antes y despues" de una version abliterada de LFM3. La denominacion "LFM3" remite a la familia de modelos Liquid Foundation Models de Liquid AI, y "1.7B" indica un tamano de aproximadamente 1700 millones de parametros, aunque el repositorio no publica pesos ni ficha tecnica del modelo base.
+LFM3 1.7B Abliterated Demo es un repositorio alojado en Hugging Face por el usuario bowtiedrahman que, segun la model card, contiene una demostracion estatica (SDK `static`, puerto 7860) con respuestas "antes y despues" de una version abliterada de LFM3. La denominacion "LFM3" remite a la familia de modelos Liquid Foundation Models de Liquid AI, y "1.7B" indica un tamano de aproximadamente 1700 millones de parametros, aunque el repositorio no publica pesos ni ficha tecnica del modelo base.
 
 El concepto de "abliteration" hace referencia a una tecnica de modificacion de pesos orientada a eliminar el comportamiento de rechazo (refusal) aprendido durante el alineamiento, de modo que el modelo responda a peticiones que el modelo original rechazaria. En este caso, el repositorio parece ser unicamente una demo comparativa y no una distribucion del modelo modificado.
 
@@ -41,7 +41,7 @@ Respecto a la modificacion "abliterated", la model card no describe el metodo co
 - Evaluacion comparativa de seguridad: la demo permite observar, lado a lado, como cambia la respuesta de un modelo tras aplicar abliteration, util para estudiar el efecto de la tecnica sobre el comportamiento de rechazo.
 - Investigacion sobre alineamiento: sirve como material de referencia para analizar que tipos de peticiones dejan de rechazarse y con que calidad de respuesta.
 - Docencia en seguridad de IA: la comparacion "antes y despues" puede emplearse en sesiones formativas sobre riesgos de la modificacion de pesos.
-- Auditoria de artefactos en HuggingFace: el repositorio ilustra el caso de demos publicadas sin pesos ni ficha tecnica, util para disenar politicas de revision de modelos.
+- Auditoria de artefactos en Hugging Face: el repositorio ilustra el caso de demos publicadas sin pesos ni ficha tecnica, util para disenar politicas de revision de modelos.
 - Analisis de reproducibilidad: permite comprobar si la demo es reproducible a partir de la informacion publicada, que en este caso es insuficiente.
 - Referencia para desarrolladores que evaluan variantes abliteradas: advierte de la ausencia de benchmarks y de la necesidad de validar el modelo base antes de cualquier uso en produccion.
 
@@ -80,5 +80,5 @@ No se dispone de datos suficientes para establecer una comparativa tecnica rigur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bowtiedrahman/lfm3-abliterated-demo
+- Repositorio en Hugging Face: https://huggingface.co/bowtiedrahman/lfm3-abliterated-demo
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

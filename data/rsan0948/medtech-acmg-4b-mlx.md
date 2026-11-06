@@ -95,7 +95,7 @@ No se han encontrado otros modelos específicos de clasificación ACMG/AMP con l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rsan0948/medtech-acmg-4b-mlx
+- Repositorio Hugging Face: https://huggingface.co/Rsan0948/medtech-acmg-4b-mlx
 - Repositorio fuente en GitHub: https://github.com/Rsan0948/medtech_LLM
 - Perfil del autor en Hugging Face: https://huggingface.co/Rsan0948
 - Perfil del autor en GitHub: https://github.com/Rsan0948/

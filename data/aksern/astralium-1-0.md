@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`aksern/astralium-1.0` es un modelo publicado en HuggingFace por el usuario `aksern` el 20 de octubre de 2026. En el momento de redactar esta ficha, el repositorio no contiene ninguna model card descriptiva: el README se reduce a una única linea de frontmatter con la licencia (`openmdw-1.1`). No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
+`aksern/astralium-1.0` es un modelo publicado en Hugging Face por el usuario `aksern` el 20 de octubre de 2026. En el momento de redactar esta ficha, el repositorio no contiene ninguna model card descriptiva: el README se reduce a una única linea de frontmatter con la licencia (`openmdw-1.1`). No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
 
-El modelo no registra descargas ni likes, y el pipeline no esta declarado en los metadatos de HuggingFace. Tampoco se declaran idiomas soportados ni etiquetas de tarea, mas alla de la region (`us`) y la licencia.
+El modelo no registra descargas ni likes, y el pipeline no esta declarado en los metadatos de Hugging Face. Tampoco se declaran idiomas soportados ni etiquetas de tarea, mas alla de la region (`us`) y la licencia.
 
 Por tanto, esta ficha no puede evaluar el modelo tecnicamente. Se documenta unicamente lo verificable en el repositorio y se marcan de forma explicita como "no disponible" todos los campos que el autor no ha publicado. Cualquier dato de rendimiento, tamano o hardware que se quiera usar para una decision de adopcion debera obtenerse del autor o de una evaluacion directa.
 
@@ -86,5 +86,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aksern/astralium-1.0
+- Hugging Face: https://huggingface.co/aksern/astralium-1.0
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo, demo) en la informacion disponible.

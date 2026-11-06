@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de prueba publicado por el usuario magic-ilbey en HuggingFace. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que indica que no contiene archivos de modelo reales. Los metadatos del repositorio lo etiquetan como un modelo BERT para extracción de características (feature-extraction) basado en la librería transformers, con licencia MIT.
+MyAwesomeModel-TestRepo es un repositorio de prueba publicado por el usuario magic-ilbey en Hugging Face. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que indica que no contiene archivos de modelo reales. Los metadatos del repositorio lo etiquetan como un modelo BERT para extracción de características (feature-extraction) basado en la librería transformers, con licencia MIT.
 
 La model card incluida describe un modelo de razonamiento con capacidades avanzadas en matemáticas, programación y lógica, mencionando mejoras frente a una versión anterior en el test AIME 2025 (del 70% al 87.5% de precisión) y un aumento de tokens de razonamiento por pregunta (de 12K a 23K). Sin embargo, esta descripción contradice las etiquetas del repositorio (BERT, feature-extraction) y no se corresponde con ningún artefacto real alojado en el repo. El contenido de la model card parece copiado de otro modelo de razonamiento de gran tamaño, no de un modelo BERT de extracción de características.
 
@@ -93,7 +93,7 @@ No disponible. No se puede realizar una comparativa significativa porque el repo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/magic-ilbey/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/magic-ilbey/MyAwesomeModel-TestRepo
 - Repositorio homónimo (WinderBYZ): https://huggingface.co/WinderBYZ/MyAwesomeModel-TestRepo
 - Repositorio homónimo (toolathlonhudi): https://huggingface.co/toolathlonhudi/MyAwesomeModel-TestRepo
 - Página de análisis en openmodelmap.com: https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Morpho-72B-MoE es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) publicado en HuggingFace por el usuario bluemorpholimited. Según su model card, parte del modelo denso Qwen2-72B (80 capas, dimensión de modelo 8192) y le añade una capa de enrutamiento MoE con 64 expertos organizados en ocho dominios temáticos, con enrutamiento top-2 por token. El autor declara 108.000 millones de parámetros totales, unos 14.000 millones activos por token, una ventana de contexto de 128.000 tokens y licencia Apache 2.0, aunque el nombre del repositorio indica 72B y el campo de licencia de HuggingFace figura vacío.
+Morpho-72B-MoE es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) publicado en Hugging Face por el usuario bluemorpholimited. Según su model card, parte del modelo denso Qwen2-72B (80 capas, dimensión de modelo 8192) y le añade una capa de enrutamiento MoE con 64 expertos organizados en ocho dominios temáticos, con enrutamiento top-2 por token. El autor declara 108.000 millones de parámetros totales, unos 14.000 millones activos por token, una ventana de contexto de 128.000 tokens y licencia Apache 2.0, aunque el nombre del repositorio indica 72B y el campo de licencia de Hugging Face figura vacío.
 
 El interés del modelo es, en principio, su enfoque de especialización por dominio: expertos dedicados a finanzas, derecho, medicina, tecnología, ámbito académico, negocio, creatividad, educación y ciencias sociales. En la práctica, la propia documentación indica que solo 9 de los 64 expertos han completado su entrenamiento, mientras que los expertos 11 a 63 aparecen como pendientes, y las cifras internas de la ficha son contradictorias (se mencionan 8 expertos por capa en 40 capas, lo que daría 320 expertos, frente a los 64 declarados). No se han publicado resultados de benchmarks ni evaluaciones independientes.
 
@@ -98,7 +98,7 @@ No existen datos de rendimiento de Morpho-72B-MoE que permitan una comparación 
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Estado y evaluación |
 |---|---|---|---|---|
-| Morpho-72B-MoE | ~108B / ~14B (declarado, no verificado) | 128K (declarado) | Apache 2.0 declarada; campo de licencia vacío en HuggingFace | Entrenamiento incompleto (9/64 expertos); sin benchmarks; 0 descargas |
+| Morpho-72B-MoE | ~108B / ~14B (declarado, no verificado) | 128K (declarado) | Apache 2.0 declarada; campo de licencia vacío en Hugging Face | Entrenamiento incompleto (9/64 expertos); sin benchmarks; 0 descargas |
 | Qwen2-72B (modelo base) | 72B denso | 128K | Licencia Qwen | Publicado, documentado y evaluado |
 | Mixtral 8x7B | 46,7B / 12,9B | 32K | Apache 2.0 | Publicado y evaluado |
 | Qwen2.5-72B | 72B denso | 128K | Licencia Qwen | Publicado y evaluado |
@@ -120,7 +120,7 @@ La diferencia fundamental no es de tamaño, sino de madurez: las alternativas cu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bluemorpholimited/Morpho-72B-MoE
+- Repositorio en Hugging Face: https://huggingface.co/bluemorpholimited/Morpho-72B-MoE
 - Modelo base mencionado en la model card (Qwen2-72B): https://huggingface.co/Qwen/Qwen2-72B
 - Paper, blog técnico, repositorio de código y demo: no disponible
 - Los resultados de búsqueda web proporcionados no contienen ningún enlace relacionado con el modelo, su autor ni la organización bluemorpholimited; únicamente incluyen páginas corporativas de Microsoft, sin relación con la ficha.

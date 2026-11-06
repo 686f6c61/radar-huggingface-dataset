@@ -83,8 +83,8 @@ No hay datos publicados de MMLU, HumanEval, GSM8K ni de cualquier otro benchmark
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FluidInference/decision-1.0-kai-coreml | 571.909.635 parametros unicos del modelo nativo | 1.024 tokens de presupuesto de entrada en el fuente; 128 tokens por ruta en esta conversion | Core ML FP16, 3 paquetes (1.931,4 MB) | apache-2.0-plus-inherited-tokenizer-terms | Publico en HuggingFace, 0 descargas |
-| llm-semantic-router/Decision-1.0-Kai-0.6B (modelo fuente) | 571.909.635 parametros unicos | 1.024 tokens de presupuesto de entrada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace, revision `7185f514f54b8f93c55998b1e8f9c5cc67f0d029` |
+| FluidInference/decision-1.0-kai-coreml | 571.909.635 parametros unicos del modelo nativo | 1.024 tokens de presupuesto de entrada en el fuente; 128 tokens por ruta en esta conversion | Core ML FP16, 3 paquetes (1.931,4 MB) | apache-2.0-plus-inherited-tokenizer-terms | Publico en Hugging Face, 0 descargas |
+| llm-semantic-router/Decision-1.0-Kai-0.6B (modelo fuente) | 571.909.635 parametros unicos | 1.024 tokens de presupuesto de entrada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face, revision `7185f514f54b8f93c55998b1e8f9c5cc67f0d029` |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (enrutadores semanticos o modelos de decision en dispositivo) en la informacion proporcionada.
 
@@ -105,7 +105,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FluidInference/decision-1.0-kai-coreml
+- Repositorio en Hugging Face: https://huggingface.co/FluidInference/decision-1.0-kai-coreml
 - Modelo fuente (modelo nativo): https://huggingface.co/llm-semantic-router/Decision-1.0-Kai-0.6B
 - Terminos de distribucion: https://huggingface.co/FluidInference/decision-1.0-kai-coreml/blob/main/DISTRIBUTION_TERMS.md
 - Ficheros de licencia incluidos en el repositorio: `LICENSE`, `NOTICE`, `LICENSING_STATUS.md`, `LICENSES/`

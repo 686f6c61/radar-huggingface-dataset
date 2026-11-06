@@ -1,7 +1,7 @@
 # kaafivikrant/Second5M
 
 ## Resumen
-Second5M es un modelo de lenguaje experimental de tipo decoder-only desarrollado por el usuario kaafivikrant y publicado en HuggingFace. Se trata de un proyecto educativo construido desde cero en PyTorch, con tan solo 4.943.040 parametros entrenables (incluyendo embeddings atados), lo que lo situa en la categoria de modelos ultrapequenos orientados al aprendizaje de arquitecturas transformer mas que al uso practico.
+Second5M es un modelo de lenguaje experimental de tipo decoder-only desarrollado por el usuario kaafivikrant y publicado en Hugging Face. Se trata de un proyecto educativo construido desde cero en PyTorch, con tan solo 4.943.040 parametros entrenables (incluyendo embeddings atados), lo que lo situa en la categoria de modelos ultrapequenos orientados al aprendizaje de arquitecturas transformer mas que al uso practico.
 
 El modelo fue preentrenado sobre WikiText-103 y posteriormente ajustado mediante supervised fine-tuning en dos fases: primero con conversaciones de Smol-Smoltalk y despues con Empathetic Dialogues. La arquitectura emplea innovaciones propias de modelos modernos como pre-normalizacion con RMSNorm, atencion causal con grouped-query attention, RoPE y FFN con SwiGLU, todo ello implementado manualmente.
 
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Second5M | 4,94 M | 512 | no disponible | HuggingFace, codigo custom | Proyecto educativo, sin benchmarks |
-| SmolLM-135M (HuggingFaceTB) | 135 M | 2.048 | Apache 2.0 | HuggingFace, transformers | Modelo pequeno de referencia con evaluaciones publicadas |
-| TinyLlama-1.1B | 1,1 B | 2.048 | Apache 2.0 | HuggingFace, transformers | Modelo pequeno con benchmarks y amplio soporte de inferencia |
-| GPT-2 small | 124 M | 1.024 | MIT | HuggingFace, transformers | Referencia historica, ampliamente soportado |
+| Second5M | 4,94 M | 512 | no disponible | Hugging Face, codigo custom | Proyecto educativo, sin benchmarks |
+| SmolLM-135M (HuggingFaceTB) | 135 M | 2.048 | Apache 2.0 | Hugging Face, transformers | Modelo pequeno de referencia con evaluaciones publicadas |
+| TinyLlama-1.1B | 1,1 B | 2.048 | Apache 2.0 | Hugging Face, transformers | Modelo pequeno con benchmarks y amplio soporte de inferencia |
+| GPT-2 small | 124 M | 1.024 | MIT | Hugging Face, transformers | Referencia historica, ampliamente soportado |
 
 La comparacion es orientativa: Second5M es entre 25 y 200 veces mas pequeno que las alternativas listadas y no dispone de evaluaciones publicadas, por lo que no es directamente comparable en calidad. Su unico valor diferencial es el caracter didactico del codigo y la transparencia del proceso de entrenamiento.
 
@@ -77,7 +77,7 @@ La comparacion es orientativa: Second5M es entre 25 y 200 veces mas pequeno que 
 - Sesgos: no documentados por el autor, pero al entrenarse sobre WikiText y Empathetic Dialogues es probable que herede sesgos de esos corpus; no hay evaluaciones al respecto.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/kaafivikrant/Second5M
+- Modelo en Hugging Face: https://huggingface.co/kaafivikrant/Second5M
 - Dataset WikiText: https://huggingface.co/datasets/Salesforce/wikitext
 - Dataset Smol-Smoltalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk
 - Dataset Empathetic Dialogues for LLM: https://huggingface.co/datasets/Estwld/empathetic_dialogues_llm

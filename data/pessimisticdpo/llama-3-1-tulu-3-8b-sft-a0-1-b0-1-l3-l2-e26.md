@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e26` es un checkpoint alojado en HuggingFace por el usuario PessimisticDPO. Segun el identificador, se trata de un ajuste fino supervisado (SFT) sobre Llama-3.1-Tulu-3-8B, un modelo de 8.000 millones de parametros de la familia Llama 3.1. El sufijo del nombre (`a0.1-b0.1-L3-l2-e26`) apunta a una configuracion experimental con hiperparametros concretos (alfa 0,1, beta 0,1, y lo que parece una referencia a capa 3, lambda 2 y epoca 26), aunque la model card no confirma ninguna de estas interpretaciones.
+El modelo identificado como `PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e26` es un checkpoint alojado en Hugging Face por el usuario PessimisticDPO. Segun el identificador, se trata de un ajuste fino supervisado (SFT) sobre Llama-3.1-Tulu-3-8B, un modelo de 8.000 millones de parametros de la familia Llama 3.1. El sufijo del nombre (`a0.1-b0.1-L3-l2-e26`) apunta a una configuracion experimental con hiperparametros concretos (alfa 0,1, beta 0,1, y lo que parece una referencia a capa 3, lambda 2 y epoca 26), aunque la model card no confirma ninguna de estas interpretaciones.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio no incluye documentacion tecnica real. La model card es la plantilla autogenerada por HuggingFace, con todos los campos marcados como `[More Information Needed]`. No se declaran licencia, idiomas, pipeline, datos de entrenamiento ni resultados de evaluacion. Ademas, el tamano del repositorio es de 0,2 GB, una cifra incompatible con los pesos completos de un modelo de 8.000 millones de parametros en `safetensors` (que rondarian los 16 GB en bf16), lo que sugiere que el repositorio contiene solo una parte del checkpoint, un adaptador o pesos parciales.
+La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio no incluye documentacion tecnica real. La model card es la plantilla autogenerada por Hugging Face, con todos los campos marcados como `[More Information Needed]`. No se declaran licencia, idiomas, pipeline, datos de entrenamiento ni resultados de evaluacion. Ademas, el tamano del repositorio es de 0,2 GB, una cifra incompatible con los pesos completos de un modelo de 8.000 millones de parametros en `safetensors` (que rondarian los 16 GB en bf16), lo que sugiere que el repositorio contiene solo una parte del checkpoint, un adaptador o pesos parciales.
 
 En consecuencia, esta ficha describe lo que se puede verificar (metadatos del Hub e identificador del modelo), senala explicitamente las inferencias realizadas a partir del nombre y marca como "no disponible" todo aquello que no consta. No debe utilizarse como fuente para decisiones de produccion sin una validacion directa del checkpoint.
 
@@ -35,7 +35,7 @@ Tampoco hay informacion sobre innovaciones tecnicas (atencion lineal, decodifica
 
 - Generacion de texto: no confirmada de forma explicita, pero esperable si el checkpoint es un modelo causal de la familia Llama (no verificado).
 - Razonamiento, matematicas y generacion de codigo: no disponible; sin datos de evaluacion ni declaraciones del autor.
-- Tool calling / function calling: no disponible. El tag `endpoints_compatible` solo indica compatibilidad con los endpoints de HuggingFace, no soporte de herramientas.
+- Tool calling / function calling: no disponible. El tag `endpoints_compatible` solo indica compatibilidad con los endpoints de Hugging Face, no soporte de herramientas.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declaran idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento relativo de es
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace, sin datos de entrenamiento, uso previsto ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face, sin datos de entrenamiento, uso previsto ni evaluacion.
 - Licencia no declarada: sin licencia explicita no puede asumirse permiso de uso comercial, redistribucion ni modificacion. La licencia del modelo base Llama 3.1 (Community License) impondria ademas sus propias condiciones, pero no consta que se herede ni como.
 - Posible checkpoint incompleto: 0,2 GB es un tamano muy inferior al esperado para 8B en bf16 (unos 16 GB). El repositorio podria contener solo algunos fragmentos de pesos, un adaptador o ficheros auxiliares. Hay que verificarlo antes de cualquier uso.
 - Riesgo de alucinacion: no evaluado. No hay ninguna medicion de fidelidad, calibracion o tasa de alucinacion para este checkpoint.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento relativo de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e26
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e26
 - Referencia citada en los tags del Hub (calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto asociada: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web. El resto de enlaces relevantes (modelo base Tulu 3, Llama 3.1) no aparecen referenciados en la informacion proporcionada y, por tanto, se marcan como no disponibles.

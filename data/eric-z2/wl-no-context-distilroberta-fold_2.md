@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`eric-z2/WL-no-context-distilroberta-fold_2` es un modelo de clasificación de tokens (pipeline `token-classification`) construido sobre DistilRoBERTa y publicado en HuggingFace por el usuario eric-z2. El recuento real de parámetros del archivo safetensors es de 81.533.960, coherente con la arquitectura DistilRoBERTa (encoder transformer de 6 capas con cabeza de clasificación superpuesta). El repositorio ocupa 0,3 GB y se creó y actualizó el 21 de septiembre de 2026 con treinta segundos de diferencia, lo que apunta a una publicación automatizada desde un script de entrenamiento.
+`eric-z2/WL-no-context-distilroberta-fold_2` es un modelo de clasificación de tokens (pipeline `token-classification`) construido sobre DistilRoBERTa y publicado en Hugging Face por el usuario eric-z2. El recuento real de parámetros del archivo safetensors es de 81.533.960, coherente con la arquitectura DistilRoBERTa (encoder transformer de 6 capas con cabeza de clasificación superpuesta). El repositorio ocupa 0,3 GB y se creó y actualizó el 21 de septiembre de 2026 con treinta segundos de diferencia, lo que apunta a una publicación automatizada desde un script de entrenamiento.
 
-El nombre del identificador sugiere dos cosas: por un lado, `fold_2` indica que se trata de la segunda partición de un esquema de validación cruzada (k-fold) sobre un mismo corpus; por otro, `WL-no-context` sugiere una variante entrenada sin contexto adicional alrededor del token, probablemente como ablación experimental. Ninguna de estas dos interpretaciones está confirmada por el autor: la model card es la plantilla autogenerada de HuggingFace, con todos los campos marcados como `[More Information Needed]`.
+El nombre del identificador sugiere dos cosas: por un lado, `fold_2` indica que se trata de la segunda partición de un esquema de validación cruzada (k-fold) sobre un mismo corpus; por otro, `WL-no-context` sugiere una variante entrenada sin contexto adicional alrededor del token, probablemente como ablación experimental. Ninguna de estas dos interpretaciones está confirmada por el autor: la model card es la plantilla autogenerada de Hugging Face, con todos los campos marcados como `[More Information Needed]`.
 
 El modelo acumula 0 descargas y 0 likes y no declara licencia ni idiomas. Por tanto, su relevancia práctica es limitada fuera del experimento concreto para el que fue entrenado: es un artefacto de investigación sin documentación, no un modelo listo para producción.
 
@@ -34,7 +34,7 @@ No hay informacion publicada sobre el procedimiento de entrenamiento. Se descono
 - Clasificacion de tokens a nivel de secuencia: asignacion de una etiqueta a cada token de entrada (entidades nombradas, categorias morfosintacticas, chunks, etc., segun el conjunto de etiquetas con el que se haya entrenado).
 - Extraccion de informacion: identificacion de spans relevantes dentro de un texto plano, siempre que las etiquetas coincidan con las del entrenamiento.
 - Inferencia por lotes: al ser un encoder de 81 M de parametros, permite procesar lotes grandes con coste computacional bajo.
-- Compatibilidad con `transformers` y con la etiqueta `endpoints_compatible`, por lo que puede desplegarse mediante HuggingFace Inference Endpoints.
+- Compatibilidad con `transformers` y con la etiqueta `endpoints_compatible`, por lo que puede desplegarse mediante Hugging Face Inference Endpoints.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No dispone de tool calling ni function calling.
 - No dispone de soporte de agentes ni de razonamiento multi-paso.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3060, RTX 4090, T4, A100 y H100. En la practica la GPU solo aporta ventaja en escenarios de alto throughput por lotes.
 - Consumer GPU: si cabe en cualquier GPU de consumo actual e incluso en equipos sin GPU dedicada.
 - CPU: la inferencia en CPU es viable para volúmenes moderados; un encoder de 81 M de parametros procesa secuencias de 512 tokens en decenas de milisegundos por lote en hardware de escritorio moderno.
-- Opciones de despliegue: `transformers` (pipeline `token-classification`), ONNX Runtime, TorchScript, servidores de inferencia tipo Triton o FastAPI, y HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` esta presente). Las herramientas orientadas a generacion (llama.cpp, Ollama, vLLM, TGI) no son la via natural para este modelo y no hay conversiones publicadas.
+- Opciones de despliegue: `transformers` (pipeline `token-classification`), ONNX Runtime, TorchScript, servidores de inferencia tipo Triton o FastAPI, y Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` esta presente). Las herramientas orientadas a generacion (llama.cpp, Ollama, vLLM, TGI) no son la via natural para este modelo y no hay conversiones publicadas.
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks del modelo analizado, por lo que la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_2
+- Modelo en Hugging Face: https://huggingface.co/eric-z2/WL-no-context-distilroberta-fold_2
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de emisiones de ML): https://arxiv.org/abs/1910.09700
 - Modelo base del que deriva la arquitectura, DistilRoBERTa: https://huggingface.co/distilroberta-base
 - Articulo de RoBERTa (Liu et al., 2019): https://arxiv.org/abs/1907.11692

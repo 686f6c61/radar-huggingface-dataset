@@ -30,7 +30,7 @@ No se proporcionan detalles sobre el dataset de entrenamiento, el numero de toke
 - Clasificacion de seguridad de prompts en seis dimensiones: sexual, desnudez, violencia/gore, contenido perturbador, sustancias y fetiche.
 - Salida de puntuaciones continuas por dimension, lo que permite umbrales configurables segun el nivel de tolerancia.
 - Inferencia de baja latencia (<5 ms en GPU) gracias al tamano reducido del modelo.
-- Integracion sencilla con el ecosistema HuggingFace Transformers (tokenizer y encoder cargables mediante `AutoTokenizer` y `DistilBertModel`).
+- Integracion sencilla con el ecosistema Hugging Face Transformers (tokenizer y encoder cargables mediante `AutoTokenizer` y `DistilBertModel`).
 - Disenado para moderacion de prompts en generacion de imagenes, no para clasificacion de texto generico.
 - Soporte limitado a idioma ingles (no se mencionan capacidades multilingues).
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - VRAM estimada: no disponible oficialmente. Dado el tamano del modelo (66M parametros), en FP32 ocuparia aproximadamente 265 MB de memoria, por lo que cabe en cualquier GPU consumer con al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna (NVIDIA GTX 10xx o superior, RTX, etc.) es suficiente. En CPU tambien puede ejecutarse, aunque con mayor latencia.
 - Compatibilidad con GPUs consumer: si, es un modelo ligero apto para tarjetas de gama media y baja.
-- Opciones de despliegue: al ser un modelo Transformers estandar, puede servirse con vLLM, HuggingFace Inference Endpoints, o integrarse directamente en aplicaciones Python usando la libreria `transformers`. Tambien es posible exportarlo a ONNX o TensorRT para optimizacion.
+- Opciones de despliegue: al ser un modelo Transformers estandar, puede servirse con vLLM, Hugging Face Inference Endpoints, o integrarse directamente en aplicaciones Python usando la libreria `transformers`. Tambien es posible exportarlo a ONNX o TensorRT para optimizacion.
 - Latencia y throughput: la card declara <5 ms en GPU. En CPU se espera una latencia mayor, pero no se especifica.
 
 ## Comparativa con modelos similares
@@ -71,5 +71,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mitchins/comfyui-junior-safety
+- Hugging Face: https://huggingface.co/Mitchins/comfyui-junior-safety
 - Repositorio de ComfyUI Junior: https://github.com/mitchins/comfyui-junior

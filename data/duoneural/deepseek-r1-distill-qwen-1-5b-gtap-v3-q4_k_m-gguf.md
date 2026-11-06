@@ -37,7 +37,7 @@ La innovacion tecnica de este checkpoint es la fase de cuantizacion. G-TAP v3 ap
 - Soporte de agentes y razonamiento multi-paso: no documentado de forma explicita; el modo thinking habilita razonamiento interno en varios pasos.
 - Capacidades multilingues: no documentadas.
 - Capacidades especiales: modo thinking con cierre limpio declarado del 100,0% en GSM8K (90% en la variante Q4_K_M segun el texto de hallazgos); no hay vision ni audio.
-- Etiquetado como `endpoints_compatible` y `conversational` en HuggingFace.
+- Etiquetado como `endpoints_compatible` y `conversational` en Hugging Face.
 
 ## Casos de uso
 
@@ -80,10 +80,10 @@ Los unicos datos comparables disponibles son los del propio repositorio y el mod
 
 | Modelo | Parametros | Huella | PPL continua | GSM8K | Olimpiada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3 Q4_K_M (este) | 1,78B | 1,04 GiB | 4,3641 | 80,0% | 40,0% | apache-2.0 | GGUF en HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B (base BF16) | 1,78B | 3,32 GiB | 4,3724 | 80,0% | 20,0% | apache-2.0 (segun el modelo base) | safetensors en HuggingFace |
-| Variante IQ3_XXS del mismo repositorio | 1,78B | 0,72 GiB | 4,7160 | 88,0% | 30,0% | apache-2.0 | GGUF en HuggingFace |
-| Qwen2.5-1.5B-Instruct (pariente arquitectonico) | 1,54B | no disponible | no disponible | no disponible | no disponible | apache-2.0 | safetensors en HuggingFace |
+| DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3 Q4_K_M (este) | 1,78B | 1,04 GiB | 4,3641 | 80,0% | 40,0% | apache-2.0 | GGUF en Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B (base BF16) | 1,78B | 3,32 GiB | 4,3724 | 80,0% | 20,0% | apache-2.0 (segun el modelo base) | safetensors en Hugging Face |
+| Variante IQ3_XXS del mismo repositorio | 1,78B | 0,72 GiB | 4,7160 | 88,0% | 30,0% | apache-2.0 | GGUF en Hugging Face |
+| Qwen2.5-1.5B-Instruct (pariente arquitectonico) | 1,54B | no disponible | no disponible | no disponible | no disponible | apache-2.0 | safetensors en Hugging Face |
 
 No se dispone de datos de benchmarks comparables para el resto de alternativas de la misma categoria (Llama-3.2-1B, Gemma-2-2B, SmolLM2-1.7B) en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparables para el resto de alternativas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-GTAP-v3-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Perfil del autor: https://huggingface.co/DuoNeural
 - Repositorio de llama.cpp (runtime documentado para GGUF): no disponible en la informacion proporcionada

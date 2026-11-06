@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shabieh2/1103_tags_tree_top3_1_epoch` es un adaptador LoRA publicado en HuggingFace por el usuario `shabieh2` sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe cargarse junto al modelo base mediante la libreria PEFT. El repositorio ocupa tan solo 0,9 GB, lo que confirma que contiene unicamente los pesos del adaptador y no los del modelo subyacente de 30.000 millones de parametros.
+`shabieh2/1103_tags_tree_top3_1_epoch` es un adaptador LoRA publicado en Hugging Face por el usuario `shabieh2` sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (adapter) que debe cargarse junto al modelo base mediante la libreria PEFT. El repositorio ocupa tan solo 0,9 GB, lo que confirma que contiene unicamente los pesos del adaptador y no los del modelo subyacente de 30.000 millones de parametros.
 
-La model card esta practicamente vacia: conserva la plantilla por defecto de HuggingFace sin rellenar, por lo que no hay informacion sobre el proceso de entrenamiento, los datos utilizados, los hiperparametros, la licencia ni los idiomas soportados. El nombre del repositorio sugiere un ajuste fino orientado a una tarea concreta relacionada con "tags" y "tree", posiblemente clasificacion o generacion estructurada, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
+La model card esta practicamente vacia: conserva la plantilla por defecto de Hugging Face sin rellenar, por lo que no hay informacion sobre el proceso de entrenamiento, los datos utilizados, los hiperparametros, la licencia ni los idiomas soportados. El nombre del repositorio sugiere un ajuste fino orientado a una tarea concreta relacionada con "tags" y "tree", posiblemente clasificacion o generacion estructurada, pero esta interpretacion no esta confirmada por ninguna documentacion oficial.
 
 Su relevancia actual es limitada: cuenta con cero descargas y cero "me gusta", no tiene licencia declarada y carece de evaluacion publicada. Resulta util unicamente como ejemplo de adaptador LoRA entrenado con Unsloth sobre un modelo de 30B, o para quien necesite reproducir exactamente ese ajuste, pero no es un artefacto recomendable para produccion sin una validacion previa exhaustiva.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shabieh2/1103_tags_tree_top3_1_epoch
+- Repositorio Hugging Face: https://huggingface.co/shabieh2/1103_tags_tree_top3_1_epoch
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`karankumarova/robotics-vision-language-small` es un repositorio alojado en HuggingFace cuyo contenido real, segun su propia model card, no es un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre vision-lenguaje aplicado a robotica. El autor lo declara explicitamente: "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los artefactos descritos en el README son dos ficheros de texto, `paper_notes.md` y `README.md`, y el tamano total del repositorio es de 0,0 GB.
+`karankumarova/robotics-vision-language-small` es un repositorio alojado en Hugging Face cuyo contenido real, segun su propia model card, no es un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre vision-lenguaje aplicado a robotica. El autor lo declara explicitamente: "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los artefactos descritos en el README son dos ficheros de texto, `paper_notes.md` y `README.md`, y el tamano total del repositorio es de 0,0 GB.
 
 El unico artefacto con formato de pesos es un fichero safetensors que contiene 16.576 parametros (aproximadamente 0,017 millones). Para ponerlo en contexto, esa cifra es entre cinco y seis ordenes de magnitud inferior a la de cualquier transformer funcional de uso general: es coherente con un tensor de prueba o un placeholder, no con un checkpoint de un modelo de vision-lenguaje. El repositorio acumula 9 descargas y 0 likes desde su creacion el 28 de septiembre de 2026.
 
@@ -13,7 +13,7 @@ La relevancia de esta ficha es, por tanto, la de servir como evaluacion critica 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Declarada como `transformer` en las etiquetas; sin detalles de capas, atencion ni configuracion en la model card |
-| Parametros totales | 16.576 (dato real del fichero safetensors, segun HuggingFace) |
+| Parametros totales | 16.576 (dato real del fichero safetensors, segun Hugging Face) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; no se publican variantes GGUF, AWQ, GPTQ ni similares |
 | Idiomas soportados | no disponible |
@@ -28,7 +28,7 @@ La relevancia de esta ficha es, por tanto, la de servir como evaluacion critica 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura mas alla de la etiqueta `transformer`, que en HuggingFace puede aplicarse de forma generica al subir un fichero safetensors. La model card no especifica numero de capas, dimensiones ocultas, mecanismo de atencion, tipo de encoder visual, estrategia de fusion vision-lenguaje ni tokenizer. El recuento de 16.576 parametros es incompatible con un transformer de vision-lenguaje operativo, incluso en su configuracion mas pequena.
+No hay informacion sobre arquitectura mas alla de la etiqueta `transformer`, que en Hugging Face puede aplicarse de forma generica al subir un fichero safetensors. La model card no especifica numero de capas, dimensiones ocultas, mecanismo de atencion, tipo de encoder visual, estrategia de fusion vision-lenguaje ni tokenizer. El recuento de 16.576 parametros es incompatible con un transformer de vision-lenguaje operativo, incluso en su configuracion mas pequena.
 
 Respecto al entrenamiento, el autor indica de forma explicita que el repositorio no contiene un checkpoint entrenado, no reclama ablaciones completadas ni mejoras sobre baselines. El documento describe un plan: alcance de la pregunta de investigacion y posibles factores de confusion, una comparacion propuesta con baselines emparejados, contexto de evaluacion con benchmarks publicos citados en la nota principal, y comprobaciones de reproducibilidad y modos de fallo. El propio autor advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que si en el futuro se anaden resultados deberan incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -54,7 +54,7 @@ Los siguientes escenarios corresponden a las aplicaciones que la nota de investi
 - Identificacion de factores de confusion: el documento enumera confounders probables, util para revisar la validez de un experimento propio antes de ejecutarlo.
 - Plantilla de reproducibilidad: el README exige registrar versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que puede reutilizarse como checklist interna de un equipo.
 - Analisis de modos de fallo en politicas vision-lenguaje: la nota declara cubrirlos; seria material de discusion, sin evidencia experimental adjunta.
-- Auditoria de repositorios de HuggingFace: este repositorio sirve como caso de estudio de etiquetado enganoso, donde las etiquetas `transformer` y `safetensors` atraen busquedas pese a no existir un modelo funcional.
+- Auditoria de repositorios de Hugging Face: este repositorio sirve como caso de estudio de etiquetado enganoso, donde las etiquetas `transformer` y `safetensors` atraen busquedas pese a no existir un modelo funcional.
 
 ## Benchmarks y rendimiento
 
@@ -99,7 +99,7 @@ La comparacion cuantitativa no es posible: este repositorio no contiene un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/karankumarova/robotics-vision-language-small
+- Repositorio en Hugging Face: https://huggingface.co/karankumarova/robotics-vision-language-small
 - Nota principal: `paper_notes.md` (en la raiz del repositorio, https://huggingface.co/karankumarova/robotics-vision-language-small/blob/main/paper_notes.md)
 - Documentacion: `README.md` (https://huggingface.co/karankumarova/robotics-vision-language-small/blob/main/README.md)
 - Pagina del autor: https://huggingface.co/karankumarova

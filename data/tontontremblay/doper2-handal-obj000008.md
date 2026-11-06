@@ -68,7 +68,7 @@ No disponible. Este es un modelo especializado para un unico objeto del dataset 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TontonTremblay/doper2-handal-obj000008
+- Modelo en Hugging Face: https://huggingface.co/TontonTremblay/doper2-handal-obj000008
 - Dataset de resultados BOP: https://huggingface.co/datasets/TontonTremblay/doper2-handal-results
-- Perfil del autor en HuggingFace: https://huggingface.co/TontonTremblay
+- Perfil del autor en Hugging Face: https://huggingface.co/TontonTremblay
 - GitHub del autor: https://github.com/TontonTremblay

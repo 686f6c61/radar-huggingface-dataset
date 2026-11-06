@@ -1,7 +1,7 @@
 # Mathis-Mo/a2c-PandaReachDense-v3
 
 ## Resumen
-El modelo Mathis-Mo/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo A2C sobre el entorno PandaReachDense-v3 y serializado con la librería stable-baselines3. Lo publica el usuario Mathis-Mo en HuggingFace y su pipeline declarado es reinforcement-learning. No se trata de un modelo de lenguaje: es una política de control pensada para resolver una tarea de alcance (reaching) con un brazo robótico Franka Emika Panda en simulación.
+El modelo Mathis-Mo/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo A2C sobre el entorno PandaReachDense-v3 y serializado con la librería stable-baselines3. Lo publica el usuario Mathis-Mo en Hugging Face y su pipeline declarado es reinforcement-learning. No se trata de un modelo de lenguaje: es una política de control pensada para resolver una tarea de alcance (reaching) con un brazo robótico Franka Emika Panda en simulación.
 
 La tarea PandaReachDense-v3 consiste en llevar el efector final del brazo a una posición objetivo, con una función de recompensa densa (basada en la distancia al objetivo) en lugar de una recompensa binaria de éxito. Esto lo convierte en un banco de pruebas habitual para comparar algoritmos de RL en control continuo, y su interés principal es servir como referencia o baseline reproducible dentro del ecosistema stable-baselines3.
 
@@ -37,7 +37,7 @@ Capacidades no presentes, por la naturaleza del modelo: no soporta tool calling 
 - Baseline académico en RL: emplear este agente como referencia A2C al comparar con PPO, SAC o TD3 sobre PandaReachDense-v3, midiendo la recompensa media con la misma configuración de evaluación y el mismo número de episodios.
 - Reproducción de experimentos: cargar los pesos con stable-baselines3 para replicar el resultado declarado (mean_reward de -0.19) y validar la variabilidad entre ejecuciones dado el intervalo de +/- 0.10 reportado.
 - Punto de partida para ajuste fino: usar la política aprendida como inicialización en un entrenamiento posterior con currículo (por ejemplo, variando la posición del objetivo) para acelerar la convergencia hacia políticas más precisas.
-- Docencia y divulgación: ejemplo mínimo de agente A2C con control continuo que ilustra el flujo completo de entrenamiento, guardado en HuggingFace y recarga desde el Hub mediante huggingface_sb3.
+- Docencia y divulgación: ejemplo mínimo de agente A2C con control continuo que ilustra el flujo completo de entrenamiento, guardado en Hugging Face y recarga desde el Hub mediante huggingface_sb3.
 - Integración en pipelines de RL: incorporar el agente en un bucle de evaluación automatizada dentro de un runner de experimentos basado en stable-baselines3 o en RL Baselines3 Zoo para generar métricas repetibles.
 - Estudio de la función de recompensa: analizar cómo una recompensa densa basada en distancia condiciona la política aprendida, comparando el comportamiento del efector final frente a variantes con recompensa dispersa.
 - Pruebas de robustez en simulación: someter al agente a pequeñas perturbaciones en la posición inicial del objetivo para caracterizar su degradación de rendimiento antes de plantear cualquier transferencia al mundo real.
@@ -85,7 +85,7 @@ No hay datos de rendimiento publicados para alternativas concretas sobre PandaRe
 - Falta de información sobre reproducibilidad: se desconocen hiperparámetros y configuración de entrenamiento, lo que limita la replicación exacta del resultado.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Mathis-Mo/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/Mathis-Mo/a2c-PandaReachDense-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entornos panda-gym (incluye PandaReachDense-v3): https://github.com/qgallouedec/panda-gym

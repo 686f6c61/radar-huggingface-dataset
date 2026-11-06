@@ -2,7 +2,7 @@
 
 ## Resumen
 
-flux-dev-lora-renata es un adaptador LoRA (low-rank adaptation) publicado en HuggingFace por el usuario frdelga, disenado para acompanar al modelo de generacion de imagenes FLUX.1-dev de Black Forest Labs. Se trata, por tanto, de un ajuste ligero sobre un modelo base ya preentrenado, no de un modelo independiente: el adaptador se carga junto con FLUX.1-dev mediante la libreria diffusers y modifica el comportamiento del modelo base para generar un sujeto o estilo concreto, identificado por el prompt de instancia `mde_renata`.
+flux-dev-lora-renata es un adaptador LoRA (low-rank adaptation) publicado en Hugging Face por el usuario frdelga, disenado para acompanar al modelo de generacion de imagenes FLUX.1-dev de Black Forest Labs. Se trata, por tanto, de un ajuste ligero sobre un modelo base ya preentrenado, no de un modelo independiente: el adaptador se carga junto con FLUX.1-dev mediante la libreria diffusers y modifica el comportamiento del modelo base para generar un sujeto o estilo concreto, identificado por el prompt de instancia `mde_renata`.
 
 El problema que resuelve es el habitual en el ecosistema de difusion: personalizar la generacion de imagenes para un concepto, personaje o estilo especifico sin necesidad de reentrenar el modelo completo. Al ser un LoRA, el coste de almacenamiento y de distribucion es minimo (el repositorio ocupa 0,2 GB, frente a las decenas de GB del modelo base), y su integracion en pipelines existentes de diffusers es directa. La relevancia de este tipo de artefactos radica en que FLUX.1-dev se ha consolidado como uno de los modelos texto-a-imagen abiertos de referencia, y los LoRA se han convertido en el mecanismo estandar para especializarlo.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Con cuantizacion (fp8 o NF4) y estrategias de offload, el consumo baja hasta el rango de 12-16 GB, lo que lo hace viable en GPU de consumo como la RTX 4090 (24 GB) o la RTX 4080 (16 GB).
 - En GPUs de 8-12 GB es necesario recurrir a cuantizaciones GGUF agresivas y a la ejecucion por etapas, con penalizacion de velocidad.
 - GPU de centro de datos recomendadas para produccion: A100 de 40/80 GB, H100, L40S, siempre que se necesite throughput alto o lotes grandes.
-- Opciones de despliegue: Diffusers (referencia para este adaptador), ComfyUI, Automatic1111/Forge mediante extensiones, y servidores basados en Diffusers como los de HuggingFace. El soporte de vLLM o llama.cpp no aplica a este tipo de modelo.
+- Opciones de despliegue: Diffusers (referencia para este adaptador), ComfyUI, Automatic1111/Forge mediante extensiones, y servidores basados en Diffusers como los de Hugging Face. El soporte de vLLM o llama.cpp no aplica a este tipo de modelo.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones para este adaptador.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| flux-dev-lora-renata | LoRA sobre FLUX.1-dev | no disponible (0,2 GB en disco) | no disponible | no disponible | creativeml-openrail-m | HuggingFace, 10 descargas |
-| black-forest-labs/FLUX.1-dev (modelo base) | Transformer de difusion completo | no disponible en esta ficha | no disponible | no disponible | FLUX.1-dev Non-Commercial License | HuggingFace, ampliamente utilizado |
-| Otros LoRA sobre FLUX.1-dev | Adaptadores de bajo rango | no disponible | no disponible | no disponible | variable (habitualmente igual que el base) | HuggingFace, comunidad |
-| LoRA sobre SDXL | Adaptadores de bajo rango | no disponible | no disponible | no disponible | CreativeML OpenRAIL-M / otras | HuggingFace, ecosistema maduro |
+| flux-dev-lora-renata | LoRA sobre FLUX.1-dev | no disponible (0,2 GB en disco) | no disponible | no disponible | creativeml-openrail-m | Hugging Face, 10 descargas |
+| black-forest-labs/FLUX.1-dev (modelo base) | Transformer de difusion completo | no disponible en esta ficha | no disponible | no disponible | FLUX.1-dev Non-Commercial License | Hugging Face, ampliamente utilizado |
+| Otros LoRA sobre FLUX.1-dev | Adaptadores de bajo rango | no disponible | no disponible | no disponible | variable (habitualmente igual que el base) | Hugging Face, comunidad |
+| LoRA sobre SDXL | Adaptadores de bajo rango | no disponible | no disponible | no disponible | CreativeML OpenRAIL-M / otras | Hugging Face, ecosistema maduro |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frdelga/flux-dev-lora-renata
+- Modelo en Hugging Face: https://huggingface.co/frdelga/flux-dev-lora-renata
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Libreria Diffusers (documentacion de carga de LoRA): https://huggingface.co/docs/diffusers
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este adaptador en la busqueda web realizada.

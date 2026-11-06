@@ -87,6 +87,6 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeRestoral/DualEmbRoformer-slav
+- Modelo en Hugging Face: https://huggingface.co/BeRestoral/DualEmbRoformer-slav
 - Contacto del autor indicado en la model card: maxim.a.eremeev@gmail.com
 - Paper, blog, repositorio o demo adicionales: no disponible (los resultados de busqueda web no devolvieron enlaces relacionados con el modelo)

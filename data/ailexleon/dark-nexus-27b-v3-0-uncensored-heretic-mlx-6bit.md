@@ -86,7 +86,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- HuggingFace (esta conversion): https://huggingface.co/ailexleon/Dark-Nexus-27B-v3.0-uncensored-heretic-mlx-6Bit
+- Hugging Face (esta conversion): https://huggingface.co/ailexleon/Dark-Nexus-27B-v3.0-uncensored-heretic-mlx-6Bit
 - Modelo base: https://huggingface.co/llmfan46/Dark-Nexus-27B-v3.0-uncensored-heretic
 - Libreria mlx-vlm: no disponible en la informacion (el README menciona mlx-vlm 0.7.0)
 - Los resultados de busqueda web facilitados no contienen informacion relevante sobre el modelo (corresponden a contenidos de Pinterest y Zhihu sin relacion).

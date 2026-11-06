@@ -68,7 +68,7 @@ No disponible. No hay modelos comparables porque este repositorio no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LayerFault/store-lmstudio-clean-control
+- Repositorio en Hugging Face: https://huggingface.co/LayerFault/store-lmstudio-clean-control
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - Documentación de LM Studio: https://lmstudio.ai/docs/app
 - Repositorios de LM Studio en GitHub: https://github.com/lmstudio-ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jeanne-dioula-v3 es un ajuste fino (fine-tune) del modelo de razonamiento deepseek-ai/DeepSeek-R1-Distill-Qwen-7B, publicado por el usuario sasoricfa en HuggingFace. Se trata de un modelo de 7.600 millones de parámetros, con arquitectura transformer decoder-only de la familia Qwen2.5, entrenado mediante SFT (supervised fine-tuning) con la librería TRL 1.13.0. El repositorio ocupa 8,0 GB y solo distribuye pesos en formato safetensors, compatible con la librería transformers.
+jeanne-dioula-v3 es un ajuste fino (fine-tune) del modelo de razonamiento deepseek-ai/DeepSeek-R1-Distill-Qwen-7B, publicado por el usuario sasoricfa en Hugging Face. Se trata de un modelo de 7.600 millones de parámetros, con arquitectura transformer decoder-only de la familia Qwen2.5, entrenado mediante SFT (supervised fine-tuning) con la librería TRL 1.13.0. El repositorio ocupa 8,0 GB y solo distribuye pesos en formato safetensors, compatible con la librería transformers.
 
 El interés de este modelo es limitado pero concreto: parte de una base ya orientada a razonamiento explícito (la destilación de DeepSeek-R1 sobre Qwen2.5-7B, que genera cadenas de pensamiento antes de responder) y la especializa con un ajuste supervisado. El sufijo del nombre sugiere un asistente con una identidad o personalidad concreta, pero la model card no documenta ni el dataset de entrenamiento, ni el número de tokens, ni la composición de los datos, ni los hiperparámetros utilizados.
 
@@ -91,11 +91,11 @@ No existe informacion sobre como el ajuste SFT ha modificado estos valores, ni s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jeanne-dioula-v3 | ~7,6B | No declarado (base: 131.072) | No disponible | HuggingFace, 0 descargas, sin cuantizaciones publicadas |
-| DeepSeek-R1-Distill-Qwen-7B | ~7,6B | 131.072 | MIT | HuggingFace, ampliamente descargado, ecosistema de cuantizaciones |
-| Qwen2.5-7B-Instruct | ~7,6B | 131.072 | Apache-2.0 | HuggingFace, muy extendido, cuantizaciones oficiales y comunitarias |
-| Llama-3.1-8B-Instruct | ~8,0B | 131.072 | Licencia comunitaria de Llama 3.1 | HuggingFace, muy extendido, ecosistema amplio |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | Apache-2.0 | HuggingFace, muy extendido |
+| jeanne-dioula-v3 | ~7,6B | No declarado (base: 131.072) | No disponible | Hugging Face, 0 descargas, sin cuantizaciones publicadas |
+| DeepSeek-R1-Distill-Qwen-7B | ~7,6B | 131.072 | MIT | Hugging Face, ampliamente descargado, ecosistema de cuantizaciones |
+| Qwen2.5-7B-Instruct | ~7,6B | 131.072 | Apache-2.0 | Hugging Face, muy extendido, cuantizaciones oficiales y comunitarias |
+| Llama-3.1-8B-Instruct | ~8,0B | 131.072 | Licencia comunitaria de Llama 3.1 | Hugging Face, muy extendido, ecosistema amplio |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | Apache-2.0 | Hugging Face, muy extendido |
 
 En cuanto a rendimiento comparado no hay datos: no se han publicado benchmarks de jeanne-dioula-v3, por lo que no es posible situarlo frente a estas alternativas. La comparacion relevante es de trazabilidad y soporte: frente al modelo base y a las alternativas de la tabla, este fine-tune carece de licencia declarada, de documentacion de entrenamiento, de idiomas declarados y de cuantizaciones publicadas.
 
@@ -115,7 +115,7 @@ En cuanto a rendimiento comparado no hay datos: no se han publicado benchmarks d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sasoricfa/jeanne-dioula-v3
+- Modelo en Hugging Face: https://huggingface.co/sasoricfa/jeanne-dioula-v3
 - Modelo base (DeepSeek-R1-Distill-Qwen-7B): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de DeepSeek-R1 (referencia del modelo base): https://arxiv.org/abs/2501.12948

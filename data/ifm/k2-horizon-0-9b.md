@@ -14,7 +14,7 @@ K2-Horizon-0.9B es un modelo de lenguaje compacto de tipo decoder-only, desarrol
 | Longitud de contexto | 131.072 tokens (128K) con escalado YaRN RoPE |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Inglés (en), chino (zh) |
-| Licencia | Contradictoria: el model card indica Apache-2.0, pero el campo license_name de HuggingFace indica internal-only |
+| Licencia | Contradictoria: el model card indica Apache-2.0, pero el campo license_name de Hugging Face indica internal-only |
 | Formato de pesos | Safetensors (transformers) |
 
 ## Arquitectura y entrenamiento
@@ -58,7 +58,7 @@ El model card menciona una figura con más resultados, pero no es accesible en l
   - INT4: ~0.6 GB
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16, como RTX 3060, RTX 4060 o equivalentes. Para despliegue a escala, A100 o H100.
 - Compatibilidad con GPUs de consumo: sí, el modelo es apto para ejecutarse en hardware de gama media.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, y transformers (según la librería indicada en HuggingFace).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, y transformers (según la librería indicada en Hugging Face).
 - Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparación se basa únicamente en los datos disponibles en el model card. N
 
 ## Limitaciones y advertencias
 
-- Ambigüedad de licencia: el model card declara Apache-2.0, pero el campo license_name de HuggingFace indica internal-only. Esto genera incertidumbre sobre el uso comercial y debe resolverse consultando la licencia oficial antes de usar el modelo en producción.
+- Ambigüedad de licencia: el model card declara Apache-2.0, pero el campo license_name de Hugging Face indica internal-only. Esto genera incertidumbre sobre el uso comercial y debe resolverse consultando la licencia oficial antes de usar el modelo en producción.
 - Idiomas limitados: solo soporta inglés y chino, lo que restringe su uso en otros idiomas sin adaptación adicional.
 - Riesgo de alucinación: al ser un modelo de ~1B, es más propenso a errores y alucinaciones que modelos más grandes, especialmente en tareas de razonamiento complejo.
 - Contexto largo con degradación potencial: el uso de YaRN RoPE para extender el contexto a 128K puede implicar una pérdida de rendimiento en secuencias muy largas en comparación con el entrenamiento nativo a esa longitud.
@@ -85,6 +85,6 @@ La comparación se basa únicamente en los datos disponibles en el model card. N
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IFM/K2-Horizon-0.9B
+- Hugging Face: https://huggingface.co/IFM/K2-Horizon-0.9B
 - Blog de IFM sobre K2 Horizon: https://ifm.ai/blog/k2
 - Página de producto K2 Horizon: https://ifm.ai/k2/

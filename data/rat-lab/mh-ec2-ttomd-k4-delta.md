@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo de artefacto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rat-lab/mh-ec2-ttomd-K4-delta | No disponible (base de ~2,6 mil millones) | No disponible (base 8192 tokens) | Adaptador LoRA de IPO con riesgo entropico | No disponible | HuggingFace, 0 descargas |
-| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | ~2,6 mil millones | 8192 tokens (base Gemma 2 2B) | Modelo completo ajustado con SFT sobre alpaca-cleaned | No disponible | HuggingFace |
+| rat-lab/mh-ec2-ttomd-K4-delta | No disponible (base de ~2,6 mil millones) | No disponible (base 8192 tokens) | Adaptador LoRA de IPO con riesgo entropico | No disponible | Hugging Face, 0 descargas |
+| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT | ~2,6 mil millones | 8192 tokens (base Gemma 2 2B) | Modelo completo ajustado con SFT sobre alpaca-cleaned | No disponible | Hugging Face |
 | Gemma 2 2B instruct (modelo base de la familia) | ~2,6 mil millones | 8192 tokens | Modelo instruct completo | Terminos de uso de Gemma | Publico |
 | Otros adaptadores de optimizacion de preferencias comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos publicados que permitan comparar el rendimiento de este a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K4-delta
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K4-delta
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -84,7 +84,7 @@ La diferencia principal frente a Gemma 3 27B Instruct es la atenuación de recha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-3-27b-it-qat-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-3-27b-it-qat-abliterated-GGUF
 - Modelo base (abliterated): https://huggingface.co/mlabonne/gemma-3-27b-it-qat-abliterated
 - Quants imatrix del mismo autor: https://huggingface.co/mradermacher/gemma-3-27b-it-qat-abliterated-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#gemma-3-27b-it-qat-abliterated-GGUF

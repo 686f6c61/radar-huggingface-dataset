@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nadiabx-krea2-lora es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en HuggingFace. Se trata de un ajuste fino de bajo rango pensado para el modelo de generacion de imagenes Krea 2, cuyo objetivo es reproducir un personaje ficticio concreto (Nadia Benali, presentada en la model card como personaje adulto de 21+ anos y generado por IA, no una persona real). La palabra de activacion del personaje es `nadiabx`.
+nadiabx-krea2-lora es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado por el usuario chantzlane90 en Hugging Face. Se trata de un ajuste fino de bajo rango pensado para el modelo de generacion de imagenes Krea 2, cuyo objetivo es reproducir un personaje ficticio concreto (Nadia Benali, presentada en la model card como personaje adulto de 21+ anos y generado por IA, no una persona real). La palabra de activacion del personaje es `nadiabx`.
 
 El adaptador se entreno con la herramienta `fal-ai/krea-2-trainer` durante 1000 pasos con rango 32, y sus claves se remapearon al esquema `diffusion_model.*` de ComfyUI para su uso en la plataforma Sogni. El repositorio ocupa 0,2 GB, lo que es coherente con un LoRA de rango 32 y no con un modelo completo.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| chantzlane90/nadiabx-krea2-lora | LoRA sobre Krea 2 | no disponible (rango 32, 0,2 GB) | no aplica | other | HuggingFace, 0 descargas | Personaje ficticio adulto, trigger `nadiabx` |
-| Otros LoRA de personaje para Krea 2 | LoRA | no disponible | no aplica | variable | HuggingFace | No se dispone de comparativas verificadas en la informacion proporcionada |
-| LoRA de personaje para otros modelos de difusion (p. ej. flux, SDXL) | LoRA | variable | no aplica | variable | HuggingFace/Civitai | Categoria equivalente, datos concretos no disponibles |
+| chantzlane90/nadiabx-krea2-lora | LoRA sobre Krea 2 | no disponible (rango 32, 0,2 GB) | no aplica | other | Hugging Face, 0 descargas | Personaje ficticio adulto, trigger `nadiabx` |
+| Otros LoRA de personaje para Krea 2 | LoRA | no disponible | no aplica | variable | Hugging Face | No se dispone de comparativas verificadas en la informacion proporcionada |
+| LoRA de personaje para otros modelos de difusion (p. ej. flux, SDXL) | LoRA | variable | no aplica | variable | Hugging Face/Civitai | Categoria equivalente, datos concretos no disponibles |
 
 No se dispone de comparativas verificadas de rendimiento con alternativas concretas a partir de la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de comparativas verificadas de rendimiento con alternativas concre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chantzlane90/nadiabx-krea2-lora
+- Modelo en Hugging Face: https://huggingface.co/chantzlane90/nadiabx-krea2-lora
 - Herramienta de entrenamiento citada: fal-ai/krea-2-trainer (referencia mencionada en la model card; enlace directo no disponible)
 - Plataforma de uso declarada: Sogni (referencia mencionada en la model card; enlace directo no disponible)
 - ComfyUI: no disponible en la informacion proporcionada

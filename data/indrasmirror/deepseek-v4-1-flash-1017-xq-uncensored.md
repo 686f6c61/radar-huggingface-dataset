@@ -83,8 +83,8 @@ Los datos de V4 (en curso el 23 de octubre, 4 de 40 capas): error por experto y 
 
 | Modelo | Parámetros | Contexto | Cuantización / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored (este) | 552B (autor) / 763B (ficha del base) | No disponible | XQ mixta 2,093 bpw media, GGUF propietario | MIT | HuggingFace, requiere Xolotl |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | 763B según featherless.ai | No disponible | FP4 nativo | No disponible en la información | HuggingFace y ModelScope; API desde 0,155 $/M entrada y 0,62 $/M salida |
+| IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored (este) | 552B (autor) / 763B (ficha del base) | No disponible | XQ mixta 2,093 bpw media, GGUF propietario | MIT | Hugging Face, requiere Xolotl |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (base) | 763B según featherless.ai | No disponible | FP4 nativo | No disponible en la información | Hugging Face y ModelScope; API desde 0,155 $/M entrada y 0,62 $/M salida |
 | Build V4.1 V1 de septiembre (mismo autor) | No disponible | No disponible | XQ, tuerca de referencia del autor | MIT (presumiblemente) | Anunciado como superado por V3 en el Gauntlet |
 | Build V4 (anunciado, 26-27 de octubre) | No disponible | No disponible | XQ con refinamiento por experto y nuevo mapa de tiers | MIT | Pendiente de publicación |
 
@@ -105,7 +105,7 @@ No se dispone de datos para comparar con otras cuantizaciones de 2 bits de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored
 - Árbol de ficheros: https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-XQ-Uncensored/tree/main
 - Nombre anterior del repositorio (GSQ): https://huggingface.co/IndrasMirror/DeepSeek-V4.1-Flash-1017-GSQ-Uncensored
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017

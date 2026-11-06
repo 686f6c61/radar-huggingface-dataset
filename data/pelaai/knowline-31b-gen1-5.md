@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KnowLine-31B-Gen1.5 es un modelo de decisión (decision model) desarrollado por PelaAI, un fine-tune LoRA del modelo denso google/gemma-4-31B-it. A diferencia de los modelos generativos convencionales, KnowLine no produce texto libre: recibe un estado (texto o una conversación) y hasta 64 preguntas tipadas (sí/no, elección entre k opciones, o puntuación sobre una rúbrica), y devuelve para cada pregunta una distribución de probabilidad sobre sus opciones en un único forward pass. Su pipeline declarado en HuggingFace es `text-classification`, y está orientado a tareas de decisión, enrutamiento y evaluación automatizada.
+KnowLine-31B-Gen1.5 es un modelo de decisión (decision model) desarrollado por PelaAI, un fine-tune LoRA del modelo denso google/gemma-4-31B-it. A diferencia de los modelos generativos convencionales, KnowLine no produce texto libre: recibe un estado (texto o una conversación) y hasta 64 preguntas tipadas (sí/no, elección entre k opciones, o puntuación sobre una rúbrica), y devuelve para cada pregunta una distribución de probabilidad sobre sus opciones en un único forward pass. Su pipeline declarado en Hugging Face es `text-classification`, y está orientado a tareas de decisión, enrutamiento y evaluación automatizada.
 
 La versión Gen1.5 no modifica los pesos: cada archivo de pesos, configuración y tokenizador es byte-idéntico a KnowLine-31B-Gen1. Lo que cambia es la forma de servir peticiones largas. Las peticiones de solo texto que caben en 3.000 tokens se siguen leyendo dos veces, mientras que las de hasta 32.768 tokens se leen una sola vez con una cabecera de preguntas que las enumera antes del estado. Según el autor, esto eleva la puntuación en la suite pública Decision Index 0.3 de 70,13 a 70,50 sin reentrenamiento.
 
@@ -89,10 +89,10 @@ El autor indica que la puntuación completa del board proviene de la ejecución 
 
 | Modelo | Parámetros | Contexto | Decision Index 0.3 (público) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KnowLine-31B-Gen1.5 | 31,27B denso | 32.768 tokens (modo cabecera) | 70,50 | Apache-2.0 | HuggingFace (PelaAI) |
-| KnowLine-35B-A3B-Gen1.5 | 35B totales, 3B activos (MoE) | no disponible | 70,72 | no disponible en la información | HuggingFace (PelaAI) |
-| KnowLine-26B-A4B-Gen2.5 | 26B totales, 4B activos (MoE) | no disponible | 68,21 | no disponible en la información | HuggingFace (PelaAI) |
-| google/gemma-4-31B-it | ~31B denso | no disponible | no disponible | Apache-2.0 | HuggingFace (Google) |
+| KnowLine-31B-Gen1.5 | 31,27B denso | 32.768 tokens (modo cabecera) | 70,50 | Apache-2.0 | Hugging Face (PelaAI) |
+| KnowLine-35B-A3B-Gen1.5 | 35B totales, 3B activos (MoE) | no disponible | 70,72 | no disponible en la información | Hugging Face (PelaAI) |
+| KnowLine-26B-A4B-Gen2.5 | 26B totales, 4B activos (MoE) | no disponible | 68,21 | no disponible en la información | Hugging Face (PelaAI) |
+| google/gemma-4-31B-it | ~31B denso | no disponible | no disponible | Apache-2.0 | Hugging Face (Google) |
 
 Los tres modelos KnowLine comparten interfaz y metodología de evaluación, por lo que son las alternativas naturales. El modelo base gemma-4-31B-it es generativo y no está especializado en tareas de decisión, por lo que no es directamente comparable en la suite Decision Index.
 
@@ -110,7 +110,7 @@ Los tres modelos KnowLine comparten interfaz y metodología de evaluación, por 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PelaAI/KnowLine-31B-Gen1.5
+- Hugging Face: https://huggingface.co/PelaAI/KnowLine-31B-Gen1.5
 - Versión anterior (Gen1): https://huggingface.co/PelaAI/KnowLine-31B-Gen1
 - Modelo hermano KnowLine-26B-A4B-Gen2.5: https://huggingface.co/PelaAI/KnowLine-26B-A4B-Gen2.5
 - Modelo hermano KnowLine-35B-A3B-Gen1.5: https://huggingface.co/PelaAI/KnowLine-35B-A3B-Gen1.5

@@ -83,7 +83,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alejandrocordon/hushfox-pocket-tts-en
+- Repositorio Hugging Face: https://huggingface.co/alejandrocordon/hushfox-pocket-tts-en
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Herramienta de exportación: https://github.com/csukuangfj/pocket-tts-onnx-export
 - sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

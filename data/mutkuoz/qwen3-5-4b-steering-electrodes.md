@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mutkuoz/qwen3.5-4b-steering-electrodes | No disponible (base 4B) | No disponible | Adaptadores PEFT de activation steering | MIT | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | 4B | No disponible | Transformer causal | No disponible en la informacion | HuggingFace |
-| Adaptadores LoRA convencionales sobre Qwen3.5-4B | No disponible | No disponible | PEFT LoRA | Variable | HuggingFace |
+| mutkuoz/qwen3.5-4b-steering-electrodes | No disponible (base 4B) | No disponible | Adaptadores PEFT de activation steering | MIT | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | 4B | No disponible | Transformer causal | No disponible en la informacion | Hugging Face |
+| Adaptadores LoRA convencionales sobre Qwen3.5-4B | No disponible | No disponible | PEFT LoRA | Variable | Hugging Face |
 
 La comparativa con alternativas de la misma categoría (otros métodos de steering o adaptadores de interpretabilidad) no está disponible en la información proporcionada.
 
@@ -72,7 +72,7 @@ La comparativa con alternativas de la misma categoría (otros métodos de steeri
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia externa de validación comunitaria.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
+- Hugging Face: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset: https://huggingface.co/datasets/mutkuoz/llm-electrodes (doi:10.57967/hf/11353)
 - Repositorio LLM Electrodes: https://github.com/mutkuoz/llm-electrodes

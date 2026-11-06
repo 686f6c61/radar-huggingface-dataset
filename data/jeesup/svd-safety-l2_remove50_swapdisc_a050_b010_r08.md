@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_remove50_swapdisc_a050_b010_r08 es un artefacto de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de un checkpoint de meta-llama/Llama-2-7b-chat-hf comprimido con SVD-LLM hasta el 50,0 % de los parámetros densos y después editado parcialmente mediante 8 de las 10 rondas de un procedimiento iterativo de intercambio de componentes neutro respecto al recuento de parámetros ("parameter-neutral swap"), gobernado por la regla de selección `disc_iter`. El presupuesto total de restauración de la ejecución completa es del 1,0 % de los parámetros densos, aplicado en fragmentos del 0,1 % por ronda.
+svd-safety-l2_remove50_swapdisc_a050_b010_r08 es un artefacto de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de un checkpoint de meta-llama/Llama-2-7b-chat-hf comprimido con SVD-LLM hasta el 50,0 % de los parámetros densos y después editado parcialmente mediante 8 de las 10 rondas de un procedimiento iterativo de intercambio de componentes neutro respecto al recuento de parámetros ("parameter-neutral swap"), gobernado por la regla de selección `disc_iter`. El presupuesto total de restauración de la ejecución completa es del 1,0 % de los parámetros densos, aplicado en fragmentos del 0,1 % por ronda.
 
 El modelo resuelve un problema concreto de investigación: la compresión SVD de un LLM degrada su comportamiento de seguridad (aumenta la tasa de éxito de ataques) y no está claro qué criterio de selección de componentes repara mejor ese daño con el menor coste posible. Este checkpoint es una celda de una cuadrícula de experimentos sobre reglas de selección y presupuestos, y su model card advierte de forma explícita de que algunas celdas de la cuadrícula están deliberadamente degradadas en seguridad respecto al modelo original y de que el artefacto no es un asistente de propósito general.
 
@@ -17,7 +17,7 @@ Su relevancia actual es doble: por un lado, cuantifica el compromiso entre segur
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No especificada en la model card; el modelo base Llama-2-7b-chat emplea 4.096 tokens según la documentación de Llama 2 (dato no confirmado en esta ficha) |
 | Tipos de cuantizacion | No disponible. No se declaran versiones cuantizadas; el tamaño del repositorio (13,5 GB) es coherente con pesos de 16 bits, pero la model card no lo confirma |
-| Idiomas soportados | No disponible (las etiquetas de HuggingFace no listan idiomas; el modelo base es mayoritariamente inglés) |
+| Idiomas soportados | No disponible (las etiquetas de Hugging Face no listan idiomas; el modelo base es mayoritariamente inglés) |
 | Licencia | Llama 2 Community License (`llama2`); el repositorio incluye `LICENSE.txt` y `USE_POLICY.md` |
 | Formato de pesos | safetensors, librería transformers |
 | Fracción de parámetros resultante | 0,4999 (compresión SVD-LLM, 50,01 % de parámetros eliminados) |
@@ -45,7 +45,7 @@ Sobre el checkpoint comprimido se aplicó un procedimiento de edición iterativa
 - Soporte de agentes y razonamiento multi-paso: no documentado ni evaluado en la información disponible.
 - Capacidades multilingües: no disponibles; no se declaran idiomas en la ficha ni evaluaciones multilingües.
 - Capacidades especiales (modo de pensamiento, visión, audio): no disponibles; el pipeline declarado es únicamente `text-generation`.
-- Compatibilidad con text-generation-inference y con endpoints, según las etiquetas de HuggingFace.
+- Compatibilidad con text-generation-inference y con endpoints, según las etiquetas de Hugging Face.
 
 ## Casos de uso
 
@@ -82,8 +82,8 @@ No se han publicado en la información disponible resultados de benchmarks de ca
 
 | Modelo | Parametros | Contexto | Benchmarks de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapdisc_a050_b010_r08 | 6.738.415.616 (fracción densa 0,4999) | No especificado en la ficha | AdvBench ASR 0,1038; StrongREJECT ASR 0,1565; sobre-rechazo 0,2799 | Llama 2 Community License | HuggingFace, repo de 13,5 GB, 0 descargas y 0 likes en el momento de la consulta |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 tokens según la documentación de Llama 2 | No disponibles en la información proporcionada | Llama 2 Community License | HuggingFace, acceso bajo condiciones de Meta |
+| svd-safety-l2_remove50_swapdisc_a050_b010_r08 | 6.738.415.616 (fracción densa 0,4999) | No especificado en la ficha | AdvBench ASR 0,1038; StrongREJECT ASR 0,1565; sobre-rechazo 0,2799 | Llama 2 Community License | Hugging Face, repo de 13,5 GB, 0 descargas y 0 likes en el momento de la consulta |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 tokens según la documentación de Llama 2 | No disponibles en la información proporcionada | Llama 2 Community License | Hugging Face, acceso bajo condiciones de Meta |
 | Otras celdas de la misma cuadrícula de compresión y swap | No disponible | No disponible | No disponible | Llama 2 Community License (presumiblemente) | No disponibles en la información proporcionada |
 | Otros modelos de 7B comparables (por ejemplo, alternativas de la misma categoría) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -104,7 +104,7 @@ La información proporcionada no incluye resultados de benchmarks del modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia y política de uso incluidos en el repositorio: `LICENSE.txt` y `USE_POLICY.md`
 - Bibliografía sobre SVD-LLM, HarmBench, StrongREJECT y WildGuard: no disponible en la información proporcionada.

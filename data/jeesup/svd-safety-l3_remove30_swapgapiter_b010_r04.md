@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_remove30_swapgapiter_b010_r04` es un checkpoint derivado de `meta-llama/Meta-Llama-3-8B-Instruct` publicado por el usuario Jeesup en HuggingFace. No es un modelo conversacional de propósito general, sino un artefacto de investigación: se trata del modelo base comprimido mediante SVD-LLM hasta conservar el 70,0% de los parámetros densos (se elimina el 30,01%), y posteriormente editado con 4 de las 10 rondas previstas de una rutina de intercambio iterativo de parámetros neutral en valor, seleccionados mediante la regla `gap_iter`. El objetivo declarado del estudio es medir cómo la compresión SVD degrada el comportamiento de seguridad del modelo y qué regla de selección de componentes lo repara mejor.
+`svd-safety-l3_remove30_swapgapiter_b010_r04` es un checkpoint derivado de `meta-llama/Meta-Llama-3-8B-Instruct` publicado por el usuario Jeesup en Hugging Face. No es un modelo conversacional de propósito general, sino un artefacto de investigación: se trata del modelo base comprimido mediante SVD-LLM hasta conservar el 70,0% de los parámetros densos (se elimina el 30,01%), y posteriormente editado con 4 de las 10 rondas previstas de una rutina de intercambio iterativo de parámetros neutral en valor, seleccionados mediante la regla `gap_iter`. El objetivo declarado del estudio es medir cómo la compresión SVD degrada el comportamiento de seguridad del modelo y qué regla de selección de componentes lo repara mejor.
 
 El checkpoint conserva la arquitectura transformer decoder-only de Llama 3 8B, con 8.030.261.248 parámetros totales según el archivo safetensors, y un tamaño de repositorio de 16,1 GB. Durante la edición se restauraron y sustituyeron 4.604 componentes, con 27.893.760 parámetros intercambiados (el 0,40% de los parámetros de proyección densos) y un presupuesto de restauración del 1,000% de los parámetros densos, aplicado en fragmentos del 0,100% por ronda. La fracción de parámetros resultante es 0,6999.
 
@@ -87,14 +87,14 @@ No se dispone de los valores equivalentes del modelo base sin comprimir dentro d
 - VRAM estimada en int4 (por ejemplo GGUF Q4_K_M, a generar por el usuario): del orden de 5-6 GB, lo que lo hace viable en GPUs de consumo.
 - GPU recomendadas para fp16: A100 40/80 GB, H100, L40S o cualquier GPU con 24 GB o mas (RTX 3090, RTX 4090) si se limita el contexto y el tamano de lote.
 - GPU de consumo: cabe en RTX 4090, RTX 3090 y, en cuantizacion int4, en GPUs con 8 GB de VRAM como la RTX 3070 o la RTX 4060, con contexto reducido.
-- Opciones de despliegue: al publicarse en safetensors y con `transformers` como libreria declarada, es directamente cargable con la pila de HuggingFace; tambien es compatible con text-generation-inference y con endpoints compatibles, segun las etiquetas del repositorio. Para llama.cpp, Ollama o vLLM seria necesario convertir o cuantizar los pesos previamente, ya que el repositorio no incluye GGUF ni checkpoints cuantizados.
+- Opciones de despliegue: al publicarse en safetensors y con `transformers` como libreria declarada, es directamente cargable con la pila de Hugging Face; tambien es compatible con text-generation-inference y con endpoints compatibles, segun las etiquetas del repositorio. Para llama.cpp, Ollama o vLLM seria necesario convertir o cuantizar los pesos previamente, ya que el repositorio no incluye GGUF ni checkpoints cuantizados.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove30_swapgapiter_b010_r04 | 8.030.261.248 (70,0% de los parametros densos tras SVD) | No disponible en la ficha; el base declara 8.192 tokens | Comprimido con SVD-LLM al 70,0% + 4 de 10 rondas de intercambio `gap_iter` | Meta Llama 3 Community License | Publicado en HuggingFace, 0 descargas, 0 likes |
+| svd-safety-l3_remove30_swapgapiter_b010_r04 | 8.030.261.248 (70,0% de los parametros densos tras SVD) | No disponible en la ficha; el base declara 8.192 tokens | Comprimido con SVD-LLM al 70,0% + 4 de 10 rondas de intercambio `gap_iter` | Meta Llama 3 Community License | Publicado en Hugging Face, 0 descargas, 0 likes |
 | meta-llama/Meta-Llama-3-8B-Instruct | 8.030.261.248 (sin comprimir) | 8.192 tokens (segun el modelo base) | Modelo instruido original, sin edicion de pesos | Meta Llama 3 Community License | Publicado por Meta, ampliamente utilizado |
 | Otras celdas de la misma cuadricula del estudio | Variable segun regla y presupuesto | No disponible | Distintas reglas de seleccion y presupuestos de restauracion | Meta Llama 3 Community License | No identificadas en la informacion proporcionada |
 
@@ -116,7 +116,7 @@ No se dispone de datos publicados de benchmarks comunes entre estas filas que pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r04
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3 Community License: incluida en el repositorio del modelo (`LICENSE` y `USE_POLICY.md`)
 - Paper de SVD-LLM, repositorio de código, blog del autor y demos: no disponibles en la información proporcionada. Los resultados de búsqueda web recibidos no contienen enlaces relacionados con el modelo.

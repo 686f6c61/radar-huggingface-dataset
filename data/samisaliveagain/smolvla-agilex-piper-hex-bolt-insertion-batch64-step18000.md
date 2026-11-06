@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samisaliveagain/smolvla-agilex-piper-hex-bolt-insertion-batch64-step18000
+- Modelo en Hugging Face: https://huggingface.co/Samisaliveagain/smolvla-agilex-piper-hex-bolt-insertion-batch64-step18000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Samisaliveagain/piper-hexagonal-bolt-insertion-100-demos-v1
 - Ficheros de procedencia en el repo: `model_identity.json`, `training_step.json`, `checkpoint_info.json`, `publication_manifest.json`, `train_config.json`
 - Librería LeRobot (referencia de carga): no se proporciona URL en la información disponible.

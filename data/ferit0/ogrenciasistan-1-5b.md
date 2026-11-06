@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OgrenciAsistan-1.5B es un ajuste fino del modelo Qwen2.5-1.5B-Instruct publicado por el usuario ferit0 en HuggingFace. Se trata de un asistente conversacional en turco especializado en asuntos estudiantiles universitarios: calendario académico, trámites de matrícula, normativa de evaluación, tasas de escuela de verano y servicios de campus. El modelo se presenta como parte de un proyecto de bootcamp y se apoya en un sistema RAG sobre una guía institucional en PDF y tablas CSV estructuradas de asignaturas.
+OgrenciAsistan-1.5B es un ajuste fino del modelo Qwen2.5-1.5B-Instruct publicado por el usuario ferit0 en Hugging Face. Se trata de un asistente conversacional en turco especializado en asuntos estudiantiles universitarios: calendario académico, trámites de matrícula, normativa de evaluación, tasas de escuela de verano y servicios de campus. El modelo se presenta como parte de un proyecto de bootcamp y se apoya en un sistema RAG sobre una guía institucional en PDF y tablas CSV estructuradas de asignaturas.
 
 Técnicamente es un transformer decoder-only de la familia Qwen2 con 1.543.714.304 parámetros (~1,54 B), ajustado mediante QLoRA (r=16, alpha=32) sobre 441 conversaciones sintéticas generadas con Gemini. La model card destaca dos objetivos: identidad consistente del asistente y uso fiable de un protocolo de agente en JSON con invocación de herramientas (concretamente una calculadora de tasas por AKTS).
 
@@ -96,10 +96,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, GSM8K, HumanEval, e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OgrenciAsistan-1.5B | 1,54 B | 32.768 (heredado del base) | Apache 2.0 | HuggingFace | Ajuste QLoRA en turco sobre Qwen2.5-1.5B-Instruct, con RAG y tool calling entrenados |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 | HuggingFace | Modelo base multilingue; sin identidad ni protocolo de agente específicos |
-| Llama 3.2 1B Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace, Ollama | Contexto mucho mayor; licencia con condiciones de uso adicionales |
-| Gemma 2 2B IT | 2,6 B | 8.192 | Gemma Terms of Use | HuggingFace, Kaggle | Mayor número de parámetros y contexto más corto; licencia propia con restricciones |
+| OgrenciAsistan-1.5B | 1,54 B | 32.768 (heredado del base) | Apache 2.0 | Hugging Face | Ajuste QLoRA en turco sobre Qwen2.5-1.5B-Instruct, con RAG y tool calling entrenados |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 | Hugging Face | Modelo base multilingue; sin identidad ni protocolo de agente específicos |
+| Llama 3.2 1B Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face, Ollama | Contexto mucho mayor; licencia con condiciones de uso adicionales |
+| Gemma 2 2B IT | 2,6 B | 8.192 | Gemma Terms of Use | Hugging Face, Kaggle | Mayor número de parámetros y contexto más corto; licencia propia con restricciones |
 
 No hay comparativas de rendimiento publicadas frente a estos modelos: la model card solo reporta métricas internas de la tarea.
 
@@ -117,7 +117,7 @@ No hay comparativas de rendimiento publicadas frente a estos modelos: la model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ferit0/OgrenciAsistan-1.5B
+- Modelo en Hugging Face: https://huggingface.co/ferit0/OgrenciAsistan-1.5B
 - Adaptador LoRA: https://huggingface.co/ferit0/OgrenciAsistan-1.5B-LoRA
 - Versión GGUF: https://huggingface.co/ferit0/OgrenciAsistan-1.5B-GGUF
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/ferit0/ogrenciasistan-1.5b-veri

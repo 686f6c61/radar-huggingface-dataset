@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ololade117/jointscale-normal-t1-3.7M-15000steps-388007tok` es un checkpoint de investigación de 3.686.400 parámetros (3,7 M) publicado por Ololade Ogunleye (usuario `Ololade117` en HuggingFace) mediante la integración `PyTorchModelHubMixin` de la librería `huggingface_hub`. Se trata de un artefacto de entrenamiento a pequeña escala: la propia nomenclatura del repositorio indica el número de pasos de entrenamiento (15.000) y el volumen de tokens procesados (388.007), lo que lo sitúa en la categoría de los llamados modelos "toy" empleados para estudiar dinámicas de escalado, no para tareas de lenguaje en producción.
+El modelo `Ololade117/jointscale-normal-t1-3.7M-15000steps-388007tok` es un checkpoint de investigación de 3.686.400 parámetros (3,7 M) publicado por Ololade Ogunleye (usuario `Ololade117` en Hugging Face) mediante la integración `PyTorchModelHubMixin` de la librería `huggingface_hub`. Se trata de un artefacto de entrenamiento a pequeña escala: la propia nomenclatura del repositorio indica el número de pasos de entrenamiento (15.000) y el volumen de tokens procesados (388.007), lo que lo sitúa en la categoría de los llamados modelos "toy" empleados para estudiar dinámicas de escalado, no para tareas de lenguaje en producción.
 
 La model card publicada es mínima: se limita a declarar la licencia MIT y las etiquetas de integración con el Hub, y deja los campos de código, paper y documentación como "More Information Needed". No se especifican arquitectura, tokenizador, composición del dataset, longitud de contexto ni idiomas soportados, por lo que cualquier afirmación sobre capacidades reales carece de respaldo documental en la información disponible.
 
@@ -88,9 +88,9 @@ No se dispone de información verificada sobre benchmarks ni sobre configuracion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/jointscale-normal-t1-3.7M-15000steps-388007tok
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/jointscale-normal-t1-3.7M-15000steps-388007tok
 - Modelo hermano de la misma serie: https://huggingface.co/Ololade117/scaling-normal-3.7M-65000steps
-- Perfil del autor en HuggingFace: https://huggingface.co/Ololade117
+- Perfil del autor en Hugging Face: https://huggingface.co/Ololade117
 - Perfil del autor en GitHub: https://github.com/Ololade117/
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible

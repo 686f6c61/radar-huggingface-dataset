@@ -92,7 +92,7 @@ No se dispone de comparaciones de rendimiento directas entre Folio-1 y estos mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FoundationML/Folio-1
+- Hugging Face: https://huggingface.co/FoundationML/Folio-1
 - Repositorio referenciado en la model card: https://huggingface.co/AeroAIAviation/Folio-1
 - Página de modelos de Foundation: https://foundationai-iota.vercel.app/models
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B

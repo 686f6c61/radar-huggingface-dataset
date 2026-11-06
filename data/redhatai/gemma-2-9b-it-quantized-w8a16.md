@@ -89,7 +89,7 @@ La cuantización W8A16 mantiene un rendimiento idéntico al modelo base, mientra
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RedHatAI/gemma-2-9b-it-quantized.w8a16
+- Repositorio Hugging Face: https://huggingface.co/RedHatAI/gemma-2-9b-it-quantized.w8a16
 - Modelo base (sin cuantizar): https://huggingface.co/google/gemma-2-9b-it
 - Documentación de vLLM: https://docs.vllm.ai/en/latest/
 - Librería llm-compressor: https://github.com/vllm-project/llm-compressor

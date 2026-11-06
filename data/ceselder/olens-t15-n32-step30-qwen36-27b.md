@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - El adaptador LoRA ocupa 1.9 GB, pero el modelo base Qwen3.6-27B requiere al menos 54 GB de VRAM en precisión fp16 (27B × 2 bytes). Con cuantización de 8 bits se reduce a ~27 GB, y con 4 bits a ~14 GB.
 - Para ejecutar el modelo base completo en fp16 se recomienda una GPU con 80 GB de VRAM (A100, H100) o varias GPUs en paralelo.
 - En cuantización 4 bits podría caber en una RTX 4090 (24 GB) o similar, aunque con posibles pérdidas de precisión.
-- El adaptador se puede cargar con la librería PEFT de HuggingFace, que soporta integración con vLLM, llama.cpp (si se convierte a GGUF) y otros frameworks de inferencia.
+- El adaptador se puede cargar con la librería PEFT de Hugging Face, que soporta integración con vLLM, llama.cpp (si se convierte a GGUF) y otros frameworks de inferencia.
 - No se dispone de datos de latencia o throughput específicos para este adaptador; dependerá del hardware y del modelo base.
 
 ## Comparativa con modelos similares

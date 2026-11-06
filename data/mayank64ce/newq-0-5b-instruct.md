@@ -79,7 +79,7 @@ La principal diferencia de Newq con su base es la extensión del contexto de 8K 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mayank64ce/Newq-0.5B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/mayank64ce/Newq-0.5B-Instruct
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:1.5b-instruct
@@ -164,7 +164,7 @@ La principal diferencia frente al modelo base de Qwen es la extensión de la ven
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mayank64ce/Newq-0.5B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/mayank64ce/Newq-0.5B-Instruct
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:1.5b-instruct

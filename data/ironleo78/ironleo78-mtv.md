@@ -75,6 +75,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ironleo78/IronLeo78-MTV
+- Hugging Face: https://huggingface.co/Ironleo78/IronLeo78-MTV
 - Repositorio del node pack: https://github.com/ironleo78-sys/ironleo78_mtv
 - Banner del proyecto: https://raw.githubusercontent.com/ironleo78-sys/ironleo78_mtv/main/booklet/banner.svg

@@ -78,7 +78,7 @@ La comparativa es limitada porque el checkpoint no es un modelo de inferencia. L
 
 ## Enlaces
 
-- [HuggingFace: dvader13/olmo2-1b-rlfinal-s1-399b](https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-399b)
+- [Hugging Face: dvader13/olmo2-1b-rlfinal-s1-399b](https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-399b)
 - [Repositorio OLMo (GitHub)](https://github.com/allenai/OLMo)
 - [Página oficial OLMo 2 (AI2)](https://allenai.org/olmo2)
 - [Colección OLMo 2 en Hugging Face](https://huggingface.co/collections/allenai/olmo-2)

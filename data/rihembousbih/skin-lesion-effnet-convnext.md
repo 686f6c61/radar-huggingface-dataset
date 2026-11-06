@@ -2,11 +2,11 @@
 
 ## Resumen
 
-RihemBousbih/skin-lesion-effnet-convnext es un modelo de clasificacion de imagenes de lesiones cutaneas publicado en HuggingFace por el usuario RihemBousbih, con licencia MIT y etiquetado para la libreria Keras. El repositorio ocupa 1,0 GB, lo que es coherente con un ensemble de dos redes convolucionales (una variante de EfficientNet y ConvNeXt) empaquetadas junto con sus pesos. No hay pipeline declarado, no se listan idiomas y la model card publicada no contiene mas que la linea de licencia, sin descripcion, metricas ni instrucciones de uso.
+RihemBousbih/skin-lesion-effnet-convnext es un modelo de clasificacion de imagenes de lesiones cutaneas publicado en Hugging Face por el usuario RihemBousbih, con licencia MIT y etiquetado para la libreria Keras. El repositorio ocupa 1,0 GB, lo que es coherente con un ensemble de dos redes convolucionales (una variante de EfficientNet y ConvNeXt) empaquetadas junto con sus pesos. No hay pipeline declarado, no se listan idiomas y la model card publicada no contiene mas que la linea de licencia, sin descripcion, metricas ni instrucciones de uso.
 
-Por el identificador del modelo y por el repositorio de GitHub del mismo autor (RihemBousbih1/skin-lesion-classification), la arquitectura apunta a un ensemble de EfficientNetV2-S con modulo de atencion CBAM y ConvNeXt-Tiny, entrenado sobre ISIC 2019 con las siete clases compartidas con HAM10000, con un punto de operacion calibrado clinicamente para melanoma y validacion externa sobre PH2. Es importante subrayar que estos detalles proceden del repositorio de codigo y no estan confirmados en la model card de HuggingFace.
+Por el identificador del modelo y por el repositorio de GitHub del mismo autor (RihemBousbih1/skin-lesion-classification), la arquitectura apunta a un ensemble de EfficientNetV2-S con modulo de atencion CBAM y ConvNeXt-Tiny, entrenado sobre ISIC 2019 con las siete clases compartidas con HAM10000, con un punto de operacion calibrado clinicamente para melanoma y validacion externa sobre PH2. Es importante subrayar que estos detalles proceden del repositorio de codigo y no estan confirmados en la model card de Hugging Face.
 
-El modelo es relevante como ejemplo de pipeline de clasificacion dermatologica reproducible y con enfasis en evitar fugas de datos (leakage), un problema recurrente en la literatura de ISIC y HAM10000. Su utilidad practica queda, no obstante, limitada por la ausencia total de documentacion en el repositorio de HuggingFace: no hay resultados de benchmarks publicados, ni tarjeta de datos, ni indicacion del preprocesado esperado.
+El modelo es relevante como ejemplo de pipeline de clasificacion dermatologica reproducible y con enfasis en evitar fugas de datos (leakage), un problema recurrente en la literatura de ISIC y HAM10000. Su utilidad practica queda, no obstante, limitada por la ausencia total de documentacion en el repositorio de Hugging Face: no hay resultados de benchmarks publicados, ni tarjeta de datos, ni indicacion del preprocesado esperado.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo es relevante como ejemplo de pipeline de clasificacion dermatologica r
 | Licencia | MIT |
 | Formato de pesos | Keras (libreria declarada). Formato de fichero concreto (.keras, .h5, SavedModel): no disponible |
 | Tarea | Clasificacion de imagenes (multiclase) de lesiones cutaneas |
-| Numero de clases | 7 segun el repositorio del autor (ISIC 2019 / HAM10000); no confirmado en HuggingFace |
+| Numero de clases | 7 segun el repositorio del autor (ISIC 2019 / HAM10000); no confirmado en Hugging Face |
 | Tamano del repositorio | 1,0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-24 |
@@ -29,7 +29,7 @@ El modelo es relevante como ejemplo de pipeline de clasificacion dermatologica r
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible en HuggingFace no incluye descripcion de la arquitectura. El unico dato objetivo es el uso de Keras y el tamano del repositorio (1,0 GB). El repositorio de GitHub del mismo autor describe un ensemble que combina EfficientNetV2-S con un modulo de atencion CBAM y ConvNeXt-Tiny, entrenado sobre el conjunto ISIC 2019 con las siete clases compartidas con HAM10000, con un punto de operacion calibrado clinicamente para la deteccion de melanoma y validacion externa sobre PH2. El mismo repositorio se presenta explicitamente como "leakage-free", es decir, con un protocolo de division de datos disenado para evitar la fuga de imagenes entre entrenamiento y validacion, un fallo habitual en los benchmarks de HAM10000.
+La informacion disponible en Hugging Face no incluye descripcion de la arquitectura. El unico dato objetivo es el uso de Keras y el tamano del repositorio (1,0 GB). El repositorio de GitHub del mismo autor describe un ensemble que combina EfficientNetV2-S con un modulo de atencion CBAM y ConvNeXt-Tiny, entrenado sobre el conjunto ISIC 2019 con las siete clases compartidas con HAM10000, con un punto de operacion calibrado clinicamente para la deteccion de melanoma y validacion externa sobre PH2. El mismo repositorio se presenta explicitamente como "leakage-free", es decir, con un protocolo de division de datos disenado para evitar la fuga de imagenes entre entrenamiento y validacion, un fallo habitual en los benchmarks de HAM10000.
 
 No hay informacion sobre el numero de tokens o imagenes de entrenamiento, la composicion exacta del dataset, la resolucion de entrada, las tecnicas de aumento de datos, el esquema de optimizacion ni si hubo alguna fase de ajuste fino adicional. Tampoco se documenta ninguna innovacion tecnica mas alla del propio ensemble y del modulo de atencion. Cualquier afirmacion sobre el proceso de entrenamiento mas alla de lo indicado seria especulativa.
 
@@ -56,7 +56,7 @@ No hay informacion sobre el numero de tokens o imagenes de entrenamiento, la com
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de HuggingFace no incluye ninguna metrica, y el repositorio de GitHub asociado no aporta cifras numericas en el extracto consultado. No se dispone de exactitud, AUC, sensibilidad, especificidad ni F1 para ISIC 2019, HAM10000 o PH2.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de Hugging Face no incluye ninguna metrica, y el repositorio de GitHub asociado no aporta cifras numericas en el extracto consultado. No se dispone de exactitud, AUC, sensibilidad, especificidad ni F1 para ISIC 2019, HAM10000 o PH2.
 
 ## Requisitos de hardware
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RihemBousbih/skin-lesion-effnet-convnext | Ensemble EfficientNetV2-S + CBAM + ConvNeXt-Tiny (segun repositorio del autor) | No disponible (~50 M estimados) | No aplica | MIT | HuggingFace, 0 descargas |
-| Eraly-ml/Skin-AI (MedConvNeXt) | ConvNeXt con ajuste de hiperparametros via Optuna, PyTorch Lightning | No disponible | No aplica | No disponible | HuggingFace |
+| RihemBousbih/skin-lesion-effnet-convnext | Ensemble EfficientNetV2-S + CBAM + ConvNeXt-Tiny (segun repositorio del autor) | No disponible (~50 M estimados) | No aplica | MIT | Hugging Face, 0 descargas |
+| Eraly-ml/Skin-AI (MedConvNeXt) | ConvNeXt con ajuste de hiperparametros via Optuna, PyTorch Lightning | No disponible | No aplica | No disponible | Hugging Face |
 | adeel-iqbal/skin-lesion-analyzer | EfficientNetB0 ajustado + pipeline multiagente | No disponible | No aplica | No disponible | GitHub |
 | CAFormer hibrido ConvNeXt (articulo en Expert Systems with Applications) | MetaFormer con bloques ConvNeXt | No disponible | No aplica | No disponible (codigo no confirmado) | Publicacion cientifica |
 
@@ -93,9 +93,9 @@ Las cifras de rendimiento comparadas no estan disponibles para ninguno de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RihemBousbih/skin-lesion-effnet-convnext
+- Modelo en Hugging Face: https://huggingface.co/RihemBousbih/skin-lesion-effnet-convnext
 - Repositorio del autor en GitHub (skin-lesion-classification): https://github.com/RihemBousbih1/skin-lesion-classification
 - SkinAI, herramienta de analisis de lesiones con EfficientNetB0 (referencia comparativa): https://github.com/adeel-iqbal/skin-lesion-analyzer
-- MedConvNeXt / Skin-AI en HuggingFace (referencia comparativa): https://huggingface.co/Eraly-ml/Skin-AI
+- MedConvNeXt / Skin-AI en Hugging Face (referencia comparativa): https://huggingface.co/Eraly-ml/Skin-AI
 - Articulo sobre diagnostico de lesiones virales con ConvNeXt y XAI (IEEE): https://ieeexplore.ieee.org/abstract/document/11504294
 - Articulo sobre enfoque hibrido ConvNeXt/CAFormer para lesion cutanea (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0957417425013430

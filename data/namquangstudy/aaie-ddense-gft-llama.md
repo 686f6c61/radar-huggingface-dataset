@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **AAIE-Distilled Dense Instruct (export Llama-compatible)** es una conversión del modelo original `aaie-ddense-gft`, desarrollado por el equipo de namquangstudy. Se trata de un modelo de lenguaje de 354 millones de parámetros cuya arquitectura es estructuralmente idéntica a la de Llama (GQA, RoPE, SwiGLU, RMSNorm, embeddings atados y sin biases), pero con nombres de tensores y configuración distintos. Esta exportación reasigna los pesos del modelo original a la implementación nativa de `LlamaForCausalLM` de HuggingFace y vLLM, eliminando la necesidad de `trust_remote_code` y permitiendo cargar el modelo directamente en vLLM.
+El modelo **AAIE-Distilled Dense Instruct (export Llama-compatible)** es una conversión del modelo original `aaie-ddense-gft`, desarrollado por el equipo de namquangstudy. Se trata de un modelo de lenguaje de 354 millones de parámetros cuya arquitectura es estructuralmente idéntica a la de Llama (GQA, RoPE, SwiGLU, RMSNorm, embeddings atados y sin biases), pero con nombres de tensores y configuración distintos. Esta exportación reasigna los pesos del modelo original a la implementación nativa de `LlamaForCausalLM` de Hugging Face y vLLM, eliminando la necesidad de `trust_remote_code` y permitiendo cargar el modelo directamente en vLLM.
 
 La relevancia de este modelo reside en su compatibilidad con el ecosistema estándar de inferencia de alta velocidad: mientras que la arquitectura original generaba texto a unos 2 tokens por segundo con un bucle de generación no cacheado, esta exportación alcanza aproximadamente 430 tokens/s en vLLM. Está pensado para desarrolladores que deseen desplegar un modelo de lenguaje pequeño, eficiente y con licencia MIT en entornos de producción, sin dependencias personalizadas.
 
@@ -74,7 +74,7 @@ No se dispone de información comparativa con otros modelos de tamaño similar (
 
 ## Enlaces
 
-- Modelo en HuggingFace: [namquangstudy/aaie-ddense-gft-llama](https://huggingface.co/namquangstudy/aaie-ddense-gft-llama)
+- Modelo en Hugging Face: [namquangstudy/aaie-ddense-gft-llama](https://huggingface.co/namquangstudy/aaie-ddense-gft-llama)
 - Modelo original (AAIE-Distilled Dense Instruct): [namquangstudy/aaie-ddense-gft](https://huggingface.co/namquangstudy/aaie-ddense-gft)
 - Repositorio de código del equipo: [GitHub - namquang2910/aaie-model-lab-](https://github.com/namquang2910/aaie-model-lab-)
-- Búsqueda de modelos AAIE_DDense en HuggingFace: [Models - Hugging Face](https://huggingface.co/models?other=AAIE_DDense)
+- Búsqueda de modelos AAIE_DDense en Hugging Face: [Models - Hugging Face](https://huggingface.co/models?other=AAIE_DDense)

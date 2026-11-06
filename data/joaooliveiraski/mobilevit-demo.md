@@ -31,7 +31,7 @@ No se proporciona información sobre el conjunto de datos de entrenamiento, el n
 
 - El modelo está diseñado para tareas de *matching* (correspondencia entre imágenes), pero al no estar entrenado, no presenta capacidades demostrables.
 - Soporta atención *flash* y co-atención, lo que podría facilitar el procesamiento de pares de imágenes si se entrenara adecuadamente.
-- Al ser una implementación personalizada, no es compatible con las APIs genéricas de carga automática de HuggingFace; se requiere un adaptador explícito.
+- Al ser una implementación personalizada, no es compatible con las APIs genéricas de carga automática de Hugging Face; se requiere un adaptador explícito.
 - No se han documentado capacidades de generación de texto, razonamiento, código, matemáticas, visión general, *tool calling* ni agentes.
 - No se dispone de información sobre capacidades multilingües ni modos especiales de pensamiento.
 
@@ -41,7 +41,7 @@ Dado el estado experimental del modelo, los casos de uso son exclusivamente de d
 
 - Prueba de humo del pipeline de entrenamiento: ejecutar `eval.py` para verificar que el código funciona y que el checkpoint de inicialización carga correctamente.
 - Inspección de cambios arquitectónicos: modificar la configuración (atención, fusión, normalización) y comprobar el impacto en el flujo de datos antes de un entrenamiento completo.
-- Desarrollo de un adaptador de carga: implementar un *adapter* para integrar esta implementación personalizada con las APIs estándar de HuggingFace.
+- Desarrollo de un adaptador de carga: implementar un *adapter* para integrar esta implementación personalizada con las APIs estándar de Hugging Face.
 - Comparación de recetas de entrenamiento: usar `training_args.json` como punto de partida para experimentar con diferentes optimizadores y schedulers.
 - Evaluación de la arquitectura MobileViT en tareas de *matching*: una vez entrenado con un conjunto de datos pareado, podría servir para estudiar la viabilidad de esta variante.
 - Base para un proyecto de investigación: el código puede servir como referencia para implementar variantes de MobileViT con co-atención.
@@ -66,15 +66,15 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 - El checkpoint es una inicialización sin entrenar; no debe usarse para ninguna tarea real de *matching* ni de visión.
 - No se ha auditado el modelo para robustez, equidad ni transferencia de dominio.
-- La implementación es personalizada y no compatible con las APIs genéricas de HuggingFace; requiere un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs genéricas de Hugging Face; requiere un adaptador explícito.
 - No se proporcionan datos de entrenamiento, por lo que no se puede evaluar la calidad del modelo ni su comportamiento.
 - La licencia BSD-3-Clause permite uso comercial, pero se debe revisar la procedencia de los datos externos si se utilizan con este repositorio.
 - El autor recomienda entrenar todas las líneas base con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias para una evaluación significativa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joaooliveiraski/mobilevit-demo
-- Documentación de MobileViT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Repositorio Hugging Face: https://huggingface.co/joaooliveiraski/mobilevit-demo
+- Documentación de MobileViT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
 - Documentación de MobileViT (versión 4.52.2): https://huggingface.co/docs/transformers/v4.52.2/en/model_doc/mobilevit
 - Configuración de MobileViT en MMPretrain: https://github.com/open-mmlab/mmpretrain/blob/main/configs/mobilevit/README.md
 - Ejemplo de MobileViT en Keras: https://keras.io/examples/vision/mobilevit/

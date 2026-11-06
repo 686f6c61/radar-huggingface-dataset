@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucy-4B-it-qat-Q4_K_M es una publicación de pesos en formato GGUF del modelo "Lucy 4B", una variante instruction-tuned ("-it-") que ha pasado por un proceso de entrenamiento consciente de cuantización (QAT, Quantization-Aware Training) y que se distribuye ya cuantizada en Q4_K_M, además de un proyector multimodal independiente en Q8_0. El repositorio lo publica el usuario Xenna en HuggingFace y está etiquetado como `gguf`, `imatrix`, `conversational` y `endpoints_compatible`, lo que indica que está pensado para inferencia en llama.cpp y en runtimes compatibles con GGUF, así como para su uso desde endpoints compatibles con la API de OpenAI.
+Lucy-4B-it-qat-Q4_K_M es una publicación de pesos en formato GGUF del modelo "Lucy 4B", una variante instruction-tuned ("-it-") que ha pasado por un proceso de entrenamiento consciente de cuantización (QAT, Quantization-Aware Training) y que se distribuye ya cuantizada en Q4_K_M, además de un proyector multimodal independiente en Q8_0. El repositorio lo publica el usuario Xenna en Hugging Face y está etiquetado como `gguf`, `imatrix`, `conversational` y `endpoints_compatible`, lo que indica que está pensado para inferencia en llama.cpp y en runtimes compatibles con GGUF, así como para su uso desde endpoints compatibles con la API de OpenAI.
 
 La model card es extremadamente escueta: declara arquitectura "Lucy", 4B de parámetros, entrenamiento instruction-tuned con QAT y compatibilidad con llama.cpp y con la pila de inferencia StelNet. No aporta información sobre licencia (remite al repositorio upstream), idiomas soportados, longitud de contexto, composición del dataset ni proceso de alineamiento. Existe además una discrepancia relevante entre metadatos: el recuento de parámetros asociado a los tensores safetensors es de 7.463.013.674 (≈7,46B), mientras que la model card indica 4B; ninguna de las dos cifras está acompañada de aclaración por parte del autor.
 
@@ -94,7 +94,7 @@ Para Lucy-4B no se conocen resultados que permitan afirmar ventaja o desventaja 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xenna/Lucy-4B-it-qat-Q4_K_M
+- Repositorio en Hugging Face: https://huggingface.co/Xenna/Lucy-4B-it-qat-Q4_K_M
 - Pila de inferencia StelNet, citada en la model card: https://github.com/stelnetxcis-create
 - Repositorio upstream con los detalles de licencia: no disponible (la model card lo menciona sin enlazarlo)
 - Paper o informe técnico: no disponible

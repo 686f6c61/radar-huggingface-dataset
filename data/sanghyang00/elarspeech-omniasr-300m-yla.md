@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-OmniASR-300M-yla es un modelo de reconocimiento automático del habla (ASR) monolingüe para el ulwa (código ISO 639-3 `yla`), una lengua de la familia misumalpa hablada en la costa caribeña de Nicaragua. Lo publica el usuario Sanghyang00 dentro del proyecto ELARSpeech, y se distribuye como un ajuste fino del checkpoint `aadel4/omniASR-CTC-300M-v2` sobre HuggingFace. El repositorio está etiquetado con `transformers`, `safetensors` y el pipeline `automatic-speech-recognition`.
+ELARSpeech-OmniASR-300M-yla es un modelo de reconocimiento automático del habla (ASR) monolingüe para el ulwa (código ISO 639-3 `yla`), una lengua de la familia misumalpa hablada en la costa caribeña de Nicaragua. Lo publica el usuario Sanghyang00 dentro del proyecto ELARSpeech, y se distribuye como un ajuste fino del checkpoint `aadel4/omniASR-CTC-300M-v2` sobre Hugging Face. El repositorio está etiquetado con `transformers`, `safetensors` y el pipeline `automatic-speech-recognition`.
 
 Técnicamente es un `Wav2Vec2ForCTC`: un extractor convolucional de características de audio seguido de un encoder transformer y una cabeza de clasificación CTC. El recuento real de parámetros en los pesos publicados es de 325.984.945 (unos 326 millones), aunque el autor lo denomina "300M". El repo ocupa 1,3 GB en safetensors en precisión completa. No hay datos publicados sobre el número de tokens o horas de audio usados en el ajuste fino, ni sobre la composición del corpus de ulwa.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-OmniASR-300M-yla | Wav2Vec2 + CTC | ~326 M | ulwa (`yla`) | no disponible | HuggingFace (0 descargas) |
-| facebook/wav2vec2-xls-r-300m | Wav2Vec2 + CTC | ~317 M | 128 idiomas; cobertura de ulwa no confirmada | Apache-2.0 | HuggingFace, ampliamente usado |
-| facebook/mms-300m | Wav2Vec2 + CTC | ~317 M | más de 1.100 idiomas; cobertura de ulwa no confirmada | CC-BY-NC 4.0 | HuggingFace |
-| openai/whisper-small | Encoder-decoder transformer | 244 M | 99 idiomas; cobertura de ulwa no confirmada | Apache-2.0 | HuggingFace, múltiples runtimes |
+| ELARSpeech-OmniASR-300M-yla | Wav2Vec2 + CTC | ~326 M | ulwa (`yla`) | no disponible | Hugging Face (0 descargas) |
+| facebook/wav2vec2-xls-r-300m | Wav2Vec2 + CTC | ~317 M | 128 idiomas; cobertura de ulwa no confirmada | Apache-2.0 | Hugging Face, ampliamente usado |
+| facebook/mms-300m | Wav2Vec2 + CTC | ~317 M | más de 1.100 idiomas; cobertura de ulwa no confirmada | CC-BY-NC 4.0 | Hugging Face |
+| openai/whisper-small | Encoder-decoder transformer | 244 M | 99 idiomas; cobertura de ulwa no confirmada | Apache-2.0 | Hugging Face, múltiples runtimes |
 
 La comparación es estructural: no existen métricas publicadas de este checkpoint frente a los anteriores, por lo que no puede afirmarse cuál transcribe mejor el ulwa. La ventaja diferencial del modelo es su especialización declarada en esa lengua frente a alternativas multilingües genéricas, a cambio de una licencia indeterminada y de cero adopción registrada.
 
@@ -90,7 +90,7 @@ La comparación es estructural: no existen métricas publicadas de este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-300M-yla
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-300M-yla
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-300M-v2
 - Documentación del proyecto ELARSpeech (citada en la model card, sin URL proporcionada): no disponible
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

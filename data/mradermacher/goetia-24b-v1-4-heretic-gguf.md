@@ -71,7 +71,7 @@ Las cifras de VRAM son orientativas y no incluyen caché KV ni overhead del runt
 
 ## Comparativa con modelos similares
 
-No se dispone de alternativas comparables en la información proporcionada. En su lugar, se listan las variantes del mismo modelo disponibles en HuggingFace.
+No se dispone de alternativas comparables en la información proporcionada. En su lugar, se listan las variantes del mismo modelo disponibles en Hugging Face.
 
 | Modelo | Parámetros | Contexto | Cuantizaciones | Licencia | Notas |
 |---|---|---|---|---|---|

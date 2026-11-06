@@ -84,7 +84,7 @@ Este fine-tune no tiene datos de rendimiento, por lo que la comparacion es limit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen12
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen12
 - Qwen2.5 Technical Report: https://arxiv.org/pdf/2412.15115v2
 - Pagina de Qwen 2.5 en Ollama: https://ai-ollama.github.io/qwen-2-5.html
 - LLM Leaderboard: https://llm-stats.com/leaderboards/llm-leaderboard

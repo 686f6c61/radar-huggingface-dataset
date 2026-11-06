@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aariciah/gpt2-german-20k-lc` es un ajuste fino (fine-tuning) de la arquitectura GPT-2 sobre un conjunto de datos en alemán, desarrollado por Aaricia Herygers, investigadora en lingüística computacional. Con 100,6 millones de parámetros, se trata de un modelo de tamaño pequeño orientado a generación de texto, presumiblemente entrenado con un vocabulario de 20.000 tokens (según el nombre) y con una variante de minúsculas ("lc" podría indicar lower-case). El modelo está publicado en HuggingFace con formato safetensors y es compatible con la librería Transformers.
+El modelo `aariciah/gpt2-german-20k-lc` es un ajuste fino (fine-tuning) de la arquitectura GPT-2 sobre un conjunto de datos en alemán, desarrollado por Aaricia Herygers, investigadora en lingüística computacional. Con 100,6 millones de parámetros, se trata de un modelo de tamaño pequeño orientado a generación de texto, presumiblemente entrenado con un vocabulario de 20.000 tokens (según el nombre) y con una variante de minúsculas ("lc" podría indicar lower-case). El modelo está publicado en Hugging Face con formato safetensors y es compatible con la librería Transformers.
 
 La relevancia de este modelo radica en su tamaño reducido, que permite su ejecución en hardware modesto, y en su especialización en alemán, un idioma con menos recursos que el inglés. Sin embargo, la documentación es muy escasa: la model card está generada automáticamente y no incluye descripción del dataset, arquitectura confirmada ni resultados de evaluación. Esto limita su uso en producción sin una validación previa por parte del desarrollador.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa rigurosa. Existen otros modelos GPT-2 fine-tuneados en aleman en HuggingFace (por ejemplo, `dbmdz/german-gpt2`), pero no se han encontrado resultados de benchmarks comparables en la informacion proporcionada. Se recomienda evaluar este modelo frente a alternativas como `dbmdz/german-gpt2` o `ai-forever/mGPT` (multilingue) antes de elegirlo para un caso de uso concreto.
+No se dispone de datos suficientes para una comparativa rigurosa. Existen otros modelos GPT-2 fine-tuneados en aleman en Hugging Face (por ejemplo, `dbmdz/german-gpt2`), pero no se han encontrado resultados de benchmarks comparables en la informacion proporcionada. Se recomienda evaluar este modelo frente a alternativas como `dbmdz/german-gpt2` o `ai-forever/mGPT` (multilingue) antes de elegirlo para un caso de uso concreto.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Existen otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/aariciah/gpt2-german-20k-lc)
+- [Modelo en Hugging Face](https://huggingface.co/aariciah/gpt2-german-20k-lc)
 - [Modelo relacionado: gpt2-german-20k](https://huggingface.co/aariciah/gpt2-german-20k)
 - [Modelo relacionado: gpt2-arabic-20k-lc](https://huggingface.co/aariciah/gpt2-arabic-20k-lc)
 - [Pagina de FriendliAI para gpt2-german-20k](https://friendli.ai/models/aariciah/gpt2-german-20k)

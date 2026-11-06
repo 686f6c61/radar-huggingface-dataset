@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tomato Variant A es un modelo de clasificación de imágenes para la detección de enfermedades y carencias nutricionales en hojas de tomate. Lo publica el usuario shlokdadhich en HuggingFace y está construido sobre la arquitectura EfficientNet-V2-S con un backbone preentrenado en ImageNet-1K, afinado posteriormente con PyTorch y torchvision sobre un dataset propio de 8.277 imágenes divididas en 7 clases. El modelo resuelve una tarea acotada: dada una fotografía RGB de 224 x 224 píxeles de una hoja de tomate, asignar una de siete etiquetas (Early_blight, Healthy, Late_blight, Leaf Miner, Magnesium Deficiency, Nitrogen Deficiency y Spotted Wilt Virus).
+Tomato Variant A es un modelo de clasificación de imágenes para la detección de enfermedades y carencias nutricionales en hojas de tomate. Lo publica el usuario shlokdadhich en Hugging Face y está construido sobre la arquitectura EfficientNet-V2-S con un backbone preentrenado en ImageNet-1K, afinado posteriormente con PyTorch y torchvision sobre un dataset propio de 8.277 imágenes divididas en 7 clases. El modelo resuelve una tarea acotada: dada una fotografía RGB de 224 x 224 píxeles de una hoja de tomate, asignar una de siete etiquetas (Early_blight, Healthy, Late_blight, Leaf Miner, Magnesium Deficiency, Nitrogen Deficiency y Spotted Wilt Virus).
 
 Su relevancia es práctica más que arquitectónica: se trata de un clasificador ligero, con licencia MIT, pensado para investigación y uso experimental en agricultura de precisión. El autor reporta una precisión de test del 97,87% y un F1 macro del 97,20%, cifras que, aunque no proceden de benchmarks estandarizados, sí vienen acompañadas de la matriz de recall por clase, lo que permite evaluar el comportamiento en las categorías más débiles. La eliminación de la clase Pottassium Deficiency en la versión final de 7 clases implica que los checkpoints antiguos de 8 clases son incompatibles con este mapeo.
 
@@ -94,7 +94,7 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tomato Variant A (EfficientNet-V2-S) | no disponible | 224 x 224 RGB | 97,87% accuracy en test (metrica propia) | MIT | HuggingFace |
+| Tomato Variant A (EfficientNet-V2-S) | no disponible | 224 x 224 RGB | 97,87% accuracy en test (metrica propia) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -112,5 +112,5 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shlokdadhich/tomato-variant-a-efficientnet-v2-s
+- Modelo en Hugging Face: https://huggingface.co/shlokdadhich/tomato-variant-a-efficientnet-v2-s
 - La busqueda web realizada no devolvio enlaces relevantes al modelo (unicamente resultados de TikTok sin relacion con el mismo). No se dispone de paper, blog, repositorio de codigo adicional ni demo asociados en la informacion proporcionada.

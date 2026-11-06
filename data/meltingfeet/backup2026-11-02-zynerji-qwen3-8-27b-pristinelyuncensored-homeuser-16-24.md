@@ -4,7 +4,7 @@
 
 Este repositorio es una copia de seguridad (backup) del modelo Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored, publicada por el usuario meltingfeet. Se trata de una versión cuantizada a 4 bits (GPTQ con kernels Marlin, formato compressed-tensors) de un modelo derivado de la familia Qwen3.5, etiquetado como "abliterated" y "pristinely uncensored", es decir, con los mecanismos de rechazo eliminados mediante técnicas de abliteración sin fine-tuning adicional. El pipeline declarado es text-generation, aunque las etiquetas incluyen image-text-to-text y vision-language, lo que sugiere capacidades multimodales heredadas del modelo base.
 
-El nombre comercial indica "27B", pero el recuento real de parámetros en los pesos safetensors es de 4.400.327.408 (aproximadamente 4,4 mil millones), una discrepancia notable que conviene tener en cuenta: o bien el nombre hace referencia a otra variante, o bien la cuantización y el empaquetado han alterado el conteo. El repositorio ocupa 14,7 GB y está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El nombre comercial indica "27B", pero el recuento real de parámetros en los pesos safetensors es de 4.400.327.408 (aproximadamente 4,4 mil millones), una discrepancia notable que conviene tener en cuenta: o bien el nombre hace referencia a otra variante, o bien la cuantización y el empaquetado han alterado el conteo. El repositorio ocupa 14,7 GB y está sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de esta ficha es doble: por un lado, documenta un caso de cuantización int4 con soporte para vLLM y decodificación especulativa mediante multi-token prediction (MTP); por otro, advierte de las inconsistencias de metadatos (tamaño declarado frente a parámetros reales, licencia Apache-2.0 sobre un derivado "uncensored") que un equipo de producción debe verificar antes de adoptarlo.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (backup int4) | 4,4B (según safetensors) | 256k | Apache-2.0 | Gated en HuggingFace |
-| Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored (base) | no disponible | no disponible | no disponible | HuggingFace |
-| Familia Qwen3.5 (modelos oficiales) | variable según variante | variable | variable según variante | HuggingFace |
+| Este modelo (backup int4) | 4,4B (según safetensors) | 256k | Apache-2.0 | Gated en Hugging Face |
+| Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored (base) | no disponible | no disponible | no disponible | Hugging Face |
+| Familia Qwen3.5 (modelos oficiales) | variable según variante | variable | variable según variante | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la información proporcionada.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Qwen3.8-27B-PristinelyUncensored-HOMEUSER-16-24
+- Hugging Face: https://huggingface.co/meltingfeet/backup2026-11-02-Zynerji-Qwen3.8-27B-PristinelyUncensored-HOMEUSER-16-24
 - Modelo base: https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

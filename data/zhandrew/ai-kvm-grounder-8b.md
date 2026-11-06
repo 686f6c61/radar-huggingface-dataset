@@ -93,8 +93,8 @@ vllm serve <this repo> --max-model-len 8192 --trust-remote-code \
 
 | Modelo | Parámetros | Contexto | ScreenSpot-v2 (All) | Latencia p50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ai-kvm-grounder-8b | 8,77 B | 8.192 tokens en servicio | 89,6 | 134 ms (H200) | MIT | HuggingFace, safetensors |
-| GUI-Owl-1.5-8B-Instruct (base) | ~8 B | No disponible | 90,5 | 140 ms (H200) | MIT | HuggingFace |
+| ai-kvm-grounder-8b | 8,77 B | 8.192 tokens en servicio | 89,6 | 134 ms (H200) | MIT | Hugging Face, safetensors |
+| GUI-Owl-1.5-8B-Instruct (base) | ~8 B | No disponible | 90,5 | 140 ms (H200) | MIT | Hugging Face |
 | Qwen3.8-27B-FP8 (profesor) | 27 B (FP8) | No disponible | 94,9 | 275 ms (H200) | No disponible en la información proporcionada | Usado solo como profesor |
 | Otros grounders especializados (UI-TARS, OS-Atlas, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -114,7 +114,7 @@ La comparación relevante es contra su propio modelo base: mismo tamaño, misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhandrew/ai-kvm-grounder-8b
+- Modelo en Hugging Face: https://huggingface.co/zhandrew/ai-kvm-grounder-8b
 - Modelo base: https://huggingface.co/mPLUG/GUI-Owl-1.5-8B-Instruct
 - Producto ai-kvm (agente computer-use sobre HDMI y HID): https://www.lynxdi.com/products/ai-kvm
 - Repositorio ai-kvm citado en la model card (`training/build_grounding.py`, `training/describe.py`, `training/eval_point.py`, `training/lora_ground8b.yaml`, `shared/ground.py`): URL no disponible en la información proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k` es un checkpoint publicado en HuggingFace por el usuario cyttic, con un total de 87.279.756 parámetros (aproximadamente 87,3 millones) según los pesos en formato safetensors. El nombre del repositorio sugiere un experimento (exp39) orientado a reconocimiento de voz mediante CTC (Connectionist Temporal Classification), probablemente entrenado con datos sintéticos generados por un LLM (llmgen) y con alguna variante de geometría o aumentación de datos (human10uninoaug, hhdgeom). No obstante, la model card del autor es una plantilla sin rellenar y no confirma ninguna de estas hipótesis.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k` es un checkpoint publicado en Hugging Face por el usuario cyttic, con un total de 87.279.756 parámetros (aproximadamente 87,3 millones) según los pesos en formato safetensors. El nombre del repositorio sugiere un experimento (exp39) orientado a reconocimiento de voz mediante CTC (Connectionist Temporal Classification), probablemente entrenado con datos sintéticos generados por un LLM (llmgen) y con alguna variante de geometría o aumentación de datos (human10uninoaug, hhdgeom). No obstante, la model card del autor es una plantilla sin rellenar y no confirma ninguna de estas hipótesis.
 
-La relevancia de este checkpoint es limitada en el momento de su publicación: cuenta con cero descargas y cero likes, y el autor no ha documentado arquitectura, datos de entrenamiento, idiomas ni resultados de evaluación. El tamaño del repositorio (0,3 GB) es coherente con un modelo de ~87 millones de parámetros en precisión de 16 o 32 bits, pero no se especifica la arquitectura subyacente ni el pipeline de HuggingFace asociado.
+La relevancia de este checkpoint es limitada en el momento de su publicación: cuenta con cero descargas y cero likes, y el autor no ha documentado arquitectura, datos de entrenamiento, idiomas ni resultados de evaluación. El tamaño del repositorio (0,3 GB) es coherente con un modelo de ~87 millones de parámetros en precisión de 16 o 32 bits, pero no se especifica la arquitectura subyacente ni el pipeline de Hugging Face asociado.
 
 Para un desarrollador o investigador, este modelo debe considerarse un artefacto experimental sin garantías de calidad ni documentación suficiente para evaluar su idoneidad en producción. La licencia MIT permite uso comercial y modificación, pero la ausencia de información técnica hace imprescindible una inspección directa de los pesos y la configuración antes de cualquier uso.
 
@@ -25,7 +25,7 @@ Para un desarrollador o investigador, este modelo debe considerarse un artefacto
 
 No se dispone de informacion sobre la arquitectura del modelo. El nombre del repositorio incluye el termino "ctc", que en el ambito del procesamiento de voz hace referencia a Connectionist Temporal Classification, una funcion de perdida habitual en modelos de reconocimiento automatico del habla (ASR). Tambien aparecen los terminos "human", "llmgen" y "geom", que podrian indicar el uso de datos generados por un LLM, alguna variante de aumentacion o seleccion de datos, y componentes geometricos, pero no hay documentacion que lo confirme.
 
-Tampoco se han publicado detalles sobre el volumen de datos de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card es una plantilla estandar de HuggingFace con todos los campos marcados como "[More Information Needed]".
+Tampoco se han publicado detalles sobre el volumen de datos de entrenamiento, la composicion del dataset, el uso de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card es una plantilla estandar de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 ## Capacidades
 
@@ -73,6 +73,6 @@ No disponible. No se dispone de informacion suficiente sobre la tarea, arquitect
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-10k
 - Paper de referencia citado en la model card (Machine Learning Impact calculator, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact

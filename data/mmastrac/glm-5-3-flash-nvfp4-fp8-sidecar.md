@@ -91,9 +91,9 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Alternativa de pesos | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|
-| `zai-org/GLM-5.3-Flash` | Release FP8 completo (expertos enrutados incluidos, ~300 GB) | MIT | Público en HuggingFace |
-| `nvidia/GLM-5.3-Flash-NVFP4` | Expertos enrutados en NVFP4 y resto en BF16 | MIT | Público en HuggingFace |
-| Este repositorio | Sidecar FP8 parcial (170 tensores + 9 opcionales) | MIT | Público en HuggingFace |
+| `zai-org/GLM-5.3-Flash` | Release FP8 completo (expertos enrutados incluidos, ~300 GB) | MIT | Público en Hugging Face |
+| `nvidia/GLM-5.3-Flash-NVFP4` | Expertos enrutados en NVFP4 y resto en BF16 | MIT | Público en Hugging Face |
+| Este repositorio | Sidecar FP8 parcial (170 tensores + 9 opcionales) | MIT | Público en Hugging Face |
 
 ## Limitaciones y advertencias
 

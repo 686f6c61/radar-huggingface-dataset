@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo / repositorio | Tipo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hellowsherlock/theranotes-whisperkit-coreml | Conversion CoreML de Whisper para WhisperKit | CoreML | MIT | Repositorio HuggingFace; 0 descargas |
-| DictionLabs/whisperkit-coreml | Conversion CoreML de Whisper para WhisperKit | CoreML | no disponible | Repositorio HuggingFace |
-| aidsoid/whisperkit-coreml | Conversion CoreML de Whisper para WhisperKit | CoreML | no disponible | Repositorio HuggingFace; uso via `whisperkit-cli` |
+| hellowsherlock/theranotes-whisperkit-coreml | Conversion CoreML de Whisper para WhisperKit | CoreML | MIT | Repositorio Hugging Face; 0 descargas |
+| DictionLabs/whisperkit-coreml | Conversion CoreML de Whisper para WhisperKit | CoreML | no disponible | Repositorio Hugging Face |
+| aidsoid/whisperkit-coreml | Conversion CoreML de Whisper para WhisperKit | CoreML | no disponible | Repositorio Hugging Face; uso via `whisperkit-cli` |
 | vade/OpenAI-Whisper-CoreML | Port de Whisper a CoreML con optimizacion para ANE | CoreML | no disponible | Repositorio en GitHub |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada; la diferencia principal entre ellas radica en el conjunto de variantes empaquetadas y en el mantenimiento del repositorio.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hellowsherlock/theranotes-whisperkit-coreml
+- Repositorio en Hugging Face: https://huggingface.co/hellowsherlock/theranotes-whisperkit-coreml
 - Repositorio de Argmax OSS (WhisperKit): https://github.com/argmaxinc/argmax-oss-swift
 - Paper y presentacion de WhisperKit en ICML 2025: https://icml.cc/virtual/2025/47854
 - SDK Pro de Argmax: https://www.argmaxinc.com/blog/argmax-sdk-2

@@ -87,7 +87,7 @@ La principal diferencia frente al original es el tamaño reducido (99 GB vs 335 
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/latent-variable/Qwen3.8-Flash-Next-heretic-2-oQ4e-mtp)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/latent-variable/Qwen3.8-Flash-Next-heretic-2-oQ4e-mtp)
 - [Modelo base heretic-2 (sin cuantizar)](https://huggingface.co/trohrbaugh/Qwen3.8-Flash-Next-heretic-2)
 - [Modelo original Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Repositorio GitHub de Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)

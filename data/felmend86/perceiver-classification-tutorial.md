@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felmend86/perceiver-classification-tutorial` es un repositorio de caracter didactico que implementa una arquitectura Perceiver en configuracion "nano" para tareas de clasificacion. Lo publica el usuario felmend86 en HuggingFace bajo licencia MIT y su objetivo declarado es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, no un modelo entrenado con fines de produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo con pesos entrenados ni evaluado en benchmarks.
+`felmend86/perceiver-classification-tutorial` es un repositorio de caracter didactico que implementa una arquitectura Perceiver en configuracion "nano" para tareas de clasificacion. Lo publica el usuario felmend86 en Hugging Face bajo licencia MIT y su objetivo declarado es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, no un modelo entrenado con fines de produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo con pesos entrenados ni evaluado en benchmarks.
 
 El modelo emplea la arquitectura Perceiver, un transformer con atencion de ventana deslizante y fusion tipo Tucker, activacion ReLU y normalizacion LayerNorm. El recuento real de parametros segun los ficheros safetensors es de 33.088 parametros, lo que confirma la escala "nano" del ejemplo. No se especifican longitud de contexto, idiomas soportados ni datos de entrenamiento.
 
@@ -48,7 +48,7 @@ No se ha completado ningun entrenamiento: el checkpoint `model.safetensors` es u
 - Base para experimentos de investigacion propios: el script y la configuracion sirven como esqueleto reproducible sobre el que anadir datos y evaluar clasificacion con al menos tres semillas, tal como recomienda la model card.
 - Docencia y talleres: por su tamano minimo y su licencia MIT, es adecuado para ejercicios practicos de implementacion de transformers en entornos con recursos limitados.
 - Comparacion de recetas de entrenamiento: la configuracion Lion con scheduler cosine permite probar variantes de optimizacion sobre una misma arquitectura base.
-- Validacion de infraestructura de carga de modelos personalizados: al requerir un adaptador explicito para APIs de carga automatica, sirve para probar integraciones propias de HuggingFace.
+- Validacion de infraestructura de carga de modelos personalizados: al requerir un adaptador explicito para APIs de carga automatica, sirve para probar integraciones propias de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|
 | felmend86/perceiver-classification-tutorial | 33.088 | no disponible | MIT | Checkpoint de inicializacion, sin entrenar |
 | Perceiver IO (referencia DeepMind) | no disponible | no disponible | no disponible | Implementacion oficial de referencia |
-| Otros tutoriales de Perceiver en HuggingFace | no disponible | no disponible | no disponible | Repositorios didacticos sin datos comparables |
+| Otros tutoriales de Perceiver en Hugging Face | no disponible | no disponible | no disponible | Repositorios didacticos sin datos comparables |
 
 No hay datos de rendimiento publicados para este modelo ni una comparativa oficial con alternativas de la misma categoria, por lo que la comparacion se limita a parametros, licencia y estado del checkpoint.
 
@@ -80,9 +80,9 @@ No hay datos de rendimiento publicados para este modelo ni una comparativa ofici
 - Riesgo de alucinacion no aplicable al no ser un modelo generativo; el riesgo real es usar el checkpoint como si estuviera entrenado.
 - No hay datos de contexto, idiomas ni cuantizacion, lo que impide planificar su uso en produccion.
 - Licencia MIT permite uso comercial del codigo, pero la model card advierte de revisar por separado los terminos de los datos de origen cuando se usen datasets externos.
-- Requiere un adaptador explicito para cargarse con APIs automaticas de HuggingFace.
+- Requiere un adaptador explicito para cargarse con APIs automaticas de Hugging Face.
 - Cualquier resultado de un checkpoint entrenado en el futuro debe documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/felmend86/perceiver-classification-tutorial
+- Repositorio en Hugging Face: https://huggingface.co/felmend86/perceiver-classification-tutorial

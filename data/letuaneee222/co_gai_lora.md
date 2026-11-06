@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`letuaneee222/co_gai_lora` es un repositorio publicado en HuggingFace por el usuario letuaneee222 el 15 de septiembre de 2026. La informacion disponible se limita a los metadatos del repositorio: licencia Apache 2.0, etiqueta de region `us`, ausencia de pipeline declarado, 0 descargas y 0 likes en el momento de la consulta. El repositorio ocupa 0,2 GB y la model card no contiene mas que el encabezado de licencia, sin descripcion, sin ejemplos de uso y sin datos de entrenamiento.
+`letuaneee222/co_gai_lora` es un repositorio publicado en Hugging Face por el usuario letuaneee222 el 15 de septiembre de 2026. La informacion disponible se limita a los metadatos del repositorio: licencia Apache 2.0, etiqueta de region `us`, ausencia de pipeline declarado, 0 descargas y 0 likes en el momento de la consulta. El repositorio ocupa 0,2 GB y la model card no contiene mas que el encabezado de licencia, sin descripcion, sin ejemplos de uso y sin datos de entrenamiento.
 
 El identificador del repositorio incluye el sufijo `lora`, lo que sugiere que se trata de un adaptador de bajo rango (LoRA) y no de un modelo completo, pero esto no queda confirmado en la informacion proporcionada: no se declara el modelo base, ni la tarea de ajuste, ni el dataset utilizado. Tampoco se especifican arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
@@ -80,7 +80,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| letuaneee222/co_gai_lora | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| letuaneee222/co_gai_lora | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/letuaneee222/co_gai_lora
+- Hugging Face: https://huggingface.co/letuaneee222/co_gai_lora
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

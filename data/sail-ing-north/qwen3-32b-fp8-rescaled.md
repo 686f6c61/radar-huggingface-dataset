@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks en la informacion proporcionada que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sail-ing-north/Qwen3-32B-FP8-rescaled
+- Modelo en Hugging Face: https://huggingface.co/sail-ing-north/Qwen3-32B-FP8-rescaled
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Checkpoint FP8 oficial de Qwen: https://huggingface.co/Qwen/Qwen3-32B-FP8
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

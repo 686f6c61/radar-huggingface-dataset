@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kkumardeepak/vit-experiment` es un repositorio experimental de HuggingFace publicado por el usuario kkumardeepak que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de generación, según los tags y el README del autor. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio tiene 16 descargas, 0 likes y un tamaño de 0,0 GB.
+`kkumardeepak/vit-experiment` es un repositorio experimental de Hugging Face publicado por el usuario kkumardeepak que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de generación, según los tags y el README del autor. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio tiene 16 descargas, 0 likes y un tamaño de 0,0 GB.
 
 El dato más relevante para un evaluador es la escala real: el recuento de parámetros de los pesos en safetensors es de 16.576 parámetros, una cifra incompatible con la escala "huge" que declara la tabla de arquitectura del autor. Esto confirma que se trata de un esqueleto de código y no de un modelo utilizable en producción. El repositorio incluye únicamente `train.py`, `README.md`, `config.json`, `training_args.json` y `model.safetensors`, con licencia BSD-3-Clause.
 
@@ -65,7 +65,7 @@ El dato de parametros del repositorio (16.576) no es comparable con variantes Vi
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kkumardeepak/vit-experiment | 16.576 (escala "huge" declarada sin verificar) | No disponible | BSD-3-Clause | HuggingFace, 16 descargas |
+| kkumardeepak/vit-experiment | 16.576 (escala "huge" declarada sin verificar) | No disponible | BSD-3-Clause | Hugging Face, 16 descargas |
 | ViT-Base/16 (referencia general) | ~86 M | 196 parches a 224x224 | Apache-2.0 en la mayoria de publicaciones | Ampliamente disponible |
 | ViT-Large/16 (referencia general) | ~307 M | 196 parches a 224x224 | Apache-2.0 en la mayoria de publicaciones | Ampliamente disponible |
 | ViT-Huge/14 (referencia general) | ~632 M | 256 parches a 224x224 | Apache-2.0 en la mayoria de publicaciones | Ampliamente disponible |
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kkumardeepak/vit-experiment
+- Modelo en Hugging Face: https://huggingface.co/kkumardeepak/vit-experiment
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web realizada. El unico resultado devuelto por la busqueda no guarda relacion con el modelo.

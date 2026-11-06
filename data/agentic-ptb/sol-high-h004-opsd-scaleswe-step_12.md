@@ -71,7 +71,7 @@ No hay modelos comparables directos, ya que se trata de un checkpoint intermedio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h004.opsd-scaleswe.step_12
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h004.opsd-scaleswe.step_12
 - Repositorio GitHub Agentic-OPSD: https://github.com/EcthelionLiu/Agentic-OPSD
 - Paper AgentOPSD (HTML): https://arxiv.org/html/2608.05987
 - Paper AgentOPSD (PDF): https://arxiv.org/pdf/2608.05987

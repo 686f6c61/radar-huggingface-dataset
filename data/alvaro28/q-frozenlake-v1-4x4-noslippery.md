@@ -4,7 +4,7 @@
 
 El modelo `Alvaro28/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje por refuerzo basado en Q-learning tabular, entrenado para resolver el entorno `FrozenLake-v1` de Gym en su variante de 4x4 sin deslizamiento (`no_slippery`). Desarrollado por Alvaro28, el agente aprende una política óptima para navegar desde la casilla inicial hasta la meta evitando los agujeros en el hielo, logrando una recompensa media de 1.00 ± 0.00 según los datos declarados por el autor.
 
-Este modelo es relevante como ejemplo didáctico de aplicación de Q-learning a un problema clásico de control, y su publicación en HuggingFace permite reproducir y comparar resultados con otras implementaciones similares. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de una tabla de valores Q que asocia cada estado del entorno (16 posiciones) con cada acción posible (4 movimientos). El repositorio contiene únicamente el archivo `q-learning.pkl` con la política aprendida.
+Este modelo es relevante como ejemplo didáctico de aplicación de Q-learning a un problema clásico de control, y su publicación en Hugging Face permite reproducir y comparar resultados con otras implementaciones similares. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de una tabla de valores Q que asocia cada estado del entorno (16 posiciones) con cada acción posible (4 movimientos). El repositorio contiene únicamente el archivo `q-learning.pkl` con la política aprendida.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ El modelo implementa el algoritmo clásico de Q-learning, una técnica de aprend
 - Resolver el entorno `FrozenLake-v1` en su configuración 4x4 sin deslizamiento, alcanzando la meta en el 100% de las ejecuciones (según el benchmark declarado).
 - Aprender una política determinista óptima para un problema de navegación en grid con obstáculos.
 - Actuar como agente de decisión secuencial en un entorno de espacio de estados y acciones discretos.
-- Ser cargado y ejecutado mediante la función `load_from_hub` de la librería de HuggingFace RL, tal como se muestra en la model card.
+- Ser cargado y ejecutado mediante la función `load_from_hub` de la librería de Hugging Face RL, tal como se muestra en la model card.
 - No posee capacidades de generación de texto, razonamiento, visión, tool calling ni multilingüismo.
 
 ## Casos de uso
@@ -36,7 +36,7 @@ El modelo implementa el algoritmo clásico de Q-learning, una técnica de aprend
 - Material educativo para cursos de aprendizaje por refuerzo: el modelo sirve como ejemplo práctico de Q-learning tabular, permitiendo a estudiantes visualizar cómo se aprende una política óptima en un entorno sencillo.
 - Demostración de reproducción de resultados: investigadores pueden cargar el agente y verificar que efectivamente obtiene una recompensa media de 1.00 en el entorno especificado, sirviendo como punto de referencia para comparar otras implementaciones.
 - Benchmark de algoritmos de RL: al ser un entorno determinista y pequeño, puede utilizarse para comparar la velocidad de convergencia y estabilidad de diferentes variantes de Q-learning (con o sin experiencia replay, con distintas tasas de exploración).
-- Prueba de integración de HuggingFace RL Zoo: el repositorio demuestra el flujo de publicación y carga de agentes entrenados, útil para desarrolladores que deseen publicar sus propios modelos de RL.
+- Prueba de integración de Hugging Face RL Zoo: el repositorio demuestra el flujo de publicación y carga de agentes entrenados, útil para desarrolladores que deseen publicar sus propios modelos de RL.
 - Validación de entornos personalizados: el agente puede servir como oráculo para comprobar que una modificación del entorno `FrozenLake` mantiene la misma dinámica (sin deslizamiento) y que la política aprendida sigue siendo óptima.
 - Experimentación con hiperparámetros: dado que el modelo es ligero y de ejecución instantánea, es adecuado para realizar barridos de hiperparámetros en entornos académicos o de prototipado rápido.
 
@@ -56,11 +56,11 @@ No se han publicado resultados adicionales de benchmarks (como MMLU, HumanEval, 
 - No requiere GPU; la inferencia se ejecuta en CPU en menos de un milisegundo.
 - Cualquier ordenador, incluidos sistemas embebidos o Raspberry Pi, puede ejecutarlo sin problemas.
 - No se necesita VRAM ni configuracion especial de despliegue.
-- La carga se realiza mediante la funcion `load_from_hub` de HuggingFace RL, que deserializa el archivo `.pkl`; no se requieren frameworks de inferencia como vLLM, llama.cpp u Ollama.
+- La carga se realiza mediante la funcion `load_from_hub` de Hugging Face RL, que deserializa el archivo `.pkl`; no se requieren frameworks de inferencia como vLLM, llama.cpp u Ollama.
 
 ## Comparativa con modelos similares
 
-Existen otros repositorios en HuggingFace con el mismo objetivo (agentes Q-learning para `FrozenLake-v1-4x4-noSlippery`), como `eoringe/q-FrozenLake-v1-4x4-noSlippery`, `socrates1234/q-FrozenLake-v1-4x4-noSlippery` y `dalvarez/q-FrozenLake-v1-4x4-no-slippery`. No se dispone de informacion detallada sobre sus hiperparametros o rendimiento para realizar una comparacion cuantitativa. En todos los casos se trata de implementaciones de Q-learning tabular sobre el mismo entorno, por lo que se espera un comportamiento similar (recompensa media cercana a 1.00). La diferencia principal radica en la autoria y en los detalles de entrenamiento, que no estan documentados en la informacion disponible.
+Existen otros repositorios en Hugging Face con el mismo objetivo (agentes Q-learning para `FrozenLake-v1-4x4-noSlippery`), como `eoringe/q-FrozenLake-v1-4x4-noSlippery`, `socrates1234/q-FrozenLake-v1-4x4-noSlippery` y `dalvarez/q-FrozenLake-v1-4x4-no-slippery`. No se dispone de informacion detallada sobre sus hiperparametros o rendimiento para realizar una comparacion cuantitativa. En todos los casos se trata de implementaciones de Q-learning tabular sobre el mismo entorno, por lo que se espera un comportamiento similar (recompensa media cercana a 1.00). La diferencia principal radica en la autoria y en los detalles de entrenamiento, que no estan documentados en la informacion disponible.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ Existen otros repositorios en HuggingFace con el mismo objetivo (agentes Q-learn
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Alvaro28/q-FrozenLake-v1-4x4-noSlippery
+- Repositorio de Hugging Face: https://huggingface.co/Alvaro28/q-FrozenLake-v1-4x4-noSlippery
 - Repositorio similar de eoringe: https://huggingface.co/eoringe/q-FrozenLake-v1-4x4-noSlippery
 - Repositorio similar de socrates1234: https://huggingface.co/socrates1234/q-FrozenLake-v1-4x4-noSlippery
 - Repositorio similar de dalvarez (via BimAnt AI Model Zoo): https://zoo.bimant.com/model/44116

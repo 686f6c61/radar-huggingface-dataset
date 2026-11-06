@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`leary-criste/model-last` es un modelo de lenguaje publicado en HuggingFace por el usuario `leary-criste`, con un total de 34.660.610.688 parametros (34,66B) confirmados a partir de los pesos en safetensors. La etiqueta de arquitectura de Transformers asociada al repositorio es `qwen3_5_moe_text`, lo que indica que se trata de un modelo de texto con arquitectura de mezcla de expertos (MoE) de la familia Qwen 3.5, aunque no se especifica el numero de parametros activos ni la configuracion exacta de expertos.
+`leary-criste/model-last` es un modelo de lenguaje publicado en Hugging Face por el usuario `leary-criste`, con un total de 34.660.610.688 parametros (34,66B) confirmados a partir de los pesos en safetensors. La etiqueta de arquitectura de Transformers asociada al repositorio es `qwen3_5_moe_text`, lo que indica que se trata de un modelo de texto con arquitectura de mezcla de expertos (MoE) de la familia Qwen 3.5, aunque no se especifica el numero de parametros activos ni la configuracion exacta de expertos.
 
-El repositorio ocupa 69,3 GB, lo que es coherente con pesos en precision de 16 bits (aproximadamente 2 bytes por parametro). El acceso esta restringido: es un modelo gated y requiere aceptar condiciones en HuggingFace antes de poder descargarlo. No se ha publicado informacion sobre licencia, idiomas soportados, pipeline de inferencia ni datos de entrenamiento.
+El repositorio ocupa 69,3 GB, lo que es coherente con pesos en precision de 16 bits (aproximadamente 2 bytes por parametro). El acceso esta restringido: es un modelo gated y requiere aceptar condiciones en Hugging Face antes de poder descargarlo. No se ha publicado informacion sobre licencia, idiomas soportados, pipeline de inferencia ni datos de entrenamiento.
 
 La relevancia de esta ficha es limitada y hay que ser explicito al respecto: el modelo acumula 2 descargas y 0 "likes", la model card no aporta documentacion tecnica, y la busqueda web no devuelve ningun material propio del modelo (paper, blog, repositorio de codigo o demo). A dia de hoy no es posible verificar ni su calidad ni su comportamiento en produccion, por lo que debe tratarse como un artefacto no auditado.
 
@@ -20,7 +20,7 @@ La relevancia de esta ficha es limitada y hay que ser explicito al respecto: el 
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| ID en HuggingFace | leary-criste/model-last |
+| ID en Hugging Face | leary-criste/model-last |
 | Acceso | restringido (gated), requiere aceptar condiciones |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 2 / 0 |
@@ -97,9 +97,9 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leary-criste/model-last
+- Modelo en Hugging Face: https://huggingface.co/leary-criste/model-last
 - Repositorio relacionado del mismo autor (LoRA de ajuste supervisado): https://huggingface.co/leary-criste/lora-09-16
-- Busqueda de modelos del autor en HuggingFace: https://huggingface.co/models?search=leary-criste%2Faffine-5g4yy75zuz-q4
+- Busqueda de modelos del autor en Hugging Face: https://huggingface.co/models?search=leary-criste%2Faffine-5g4yy75zuz-q4
 - Catalogo de modelos atribuidos al autor (terceros): https://essamamdani.com/ai-models/company/leary-criste
 - Despliegue de otro modelo del autor via API compatible con OpenAI (terceros): https://featherless.ai/models/leary-criste/affine-5D2E98L93kE8wb883hUyuPQfZTCUe2nR1oyvmRAAcDRm3mmK
 - Catalogo general de modelos de 2026 (terceros): https://best-ai.news/ai-model-releases-2026

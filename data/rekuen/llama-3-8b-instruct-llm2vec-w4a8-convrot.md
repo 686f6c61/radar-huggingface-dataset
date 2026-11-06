@@ -100,7 +100,7 @@ La diferencia practica frente a los adaptadores originales es el consumo de memo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rekuen/Llama-3-8B-Instruct-LLM2Vec-W4A8-ConvRot
+- Modelo en Hugging Face: https://huggingface.co/rekuen/Llama-3-8B-Instruct-LLM2Vec-W4A8-ConvRot
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Adaptador MNTP de LLM2Vec: https://huggingface.co/McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp
 - Adaptador supervisado de LLM2Vec: https://huggingface.co/McGill-NLP/LLM2Vec-Meta-Llama-3-8B-Instruct-mntp-supervised

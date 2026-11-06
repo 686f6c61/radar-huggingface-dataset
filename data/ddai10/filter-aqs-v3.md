@@ -2,7 +2,7 @@
 
 ## Resumen
 
-filter-aqs-v3 es un sistema de clasificacion de imagenes para deteccion de defectos de apariencia en filtros opticos (滤光片), publicado por el usuario ddai10 en HuggingFace bajo el identificador `ddai10/filter-aqs-v3`. No se trata de un modelo generativo unico, sino de un ensemble de clasificadores de imagen empaquetado como aplicacion lista para ejecutar: incluye siete archivos de modelo ONNX (DINOv2-L, DINOv3-L, DINOv2-B con dos cabezas discriminativas cada uno, SigLIP2-so400m, DINOv2-L-reg con una cabeza cada uno, mas convnext_small y edgenext) que suman diez miembros de ensemble en su version estandar.
+filter-aqs-v3 es un sistema de clasificacion de imagenes para deteccion de defectos de apariencia en filtros opticos (滤光片), publicado por el usuario ddai10 en Hugging Face bajo el identificador `ddai10/filter-aqs-v3`. No se trata de un modelo generativo unico, sino de un ensemble de clasificadores de imagen empaquetado como aplicacion lista para ejecutar: incluye siete archivos de modelo ONNX (DINOv2-L, DINOv3-L, DINOv2-B con dos cabezas discriminativas cada uno, SigLIP2-so400m, DINOv2-L-reg con una cabeza cada uno, mas convnext_small y edgenext) que suman diez miembros de ensemble en su version estandar.
 
 El modelo resuelve un problema industrial concreto: clasificar imagenes de filtros opticos en campo oscuro como "良品" (conforme) o "不良" (defectuoso), distinguiendo defectos de apariencia como fracturas laterales, rayones, desconchones, puntos blancos y suciedad. La version v3 anade respecto a v2 dos miembros de ensemble basados en SigLIP2-so400m y DINOv2-L con registers, con el objetivo declarado de reducir la tasa de falsos positivos.
 
@@ -114,7 +114,7 @@ Frente a alternativas genericas de clasificacion de imagenes (por ejemplo, un Vi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddai10/filter-aqs-v3
+- Modelo en Hugging Face: https://huggingface.co/ddai10/filter-aqs-v3
 - Dataset de entrenamiento citado: `daipath/appearance-quality-stats` (referenciado en la model card; no se proporciona URL directa)
 - Repositorio de descarga del paquete: https://huggingface.co/daipath/filter-aqs-v3 (ruta citada en la model card para los artefactos `filter-aqs-v3-linux-x64.tar.gz` y `SHA256SUMS`)
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos adicionales.

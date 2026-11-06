@@ -25,7 +25,7 @@ Es relevante ahora porque combina tres factores poco frecuentes: contexto de 1M 
 | Runtime soportado | vLLM (contenedores específicos de NVIDIA, obligatorios) |
 | Hardware validado | NVIDIA Blackwell: 2× RTX PRO 6000 Blackwell; 2× DGX Spark 128 GB |
 | VRAM estimada | ~166 GiB |
-| Fecha de publicación | 2026-05-10 según la model card; repo creado el 2026-10-08 en HuggingFace |
+| Fecha de publicación | 2026-05-10 según la model card; repo creado el 2026-10-08 en Hugging Face |
 | Versión de cuantización | nvidia-modelopt v0.47.0 |
 
 ## Arquitectura y entrenamiento
@@ -83,8 +83,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Cuantización | VRAM aproximada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash-FP4-Local (este) | 320B totales / 18B activos (175,2B según safetensors) | 1M tokens | NVFP4 con QAD | ~166 GiB | NVIDIA Open Model Agreement | HuggingFace, vLLM con contenedor NVIDIA |
-| GLM-5.3-Flash (modelo base, ZAI) | 320B totales / 18B activos | 1M tokens | No disponible (sin cuantizar) | No disponible | MIT | HuggingFace |
+| GLM-5.3-Flash-FP4-Local (este) | 320B totales / 18B activos (175,2B según safetensors) | 1M tokens | NVFP4 con QAD | ~166 GiB | NVIDIA Open Model Agreement | Hugging Face, vLLM con contenedor NVIDIA |
+| GLM-5.3-Flash (modelo base, ZAI) | 320B totales / 18B activos | 1M tokens | No disponible (sin cuantizar) | No disponible | MIT | Hugging Face |
 | Otros MoE multimodales cuantizados en FP4 | No disponible | No disponible | FP4 | No disponible | No disponible | No disponible |
 
 La comparación directa más útil es con el modelo base: misma arquitectura, mismo contexto y mismas capacidades, pero con licencia MIT en el original frente al NVIDIA Open Model Agreement del checkpoint cuantizado, y con un requisito de VRAM presumiblemente mucho mayor en el caso sin cuantizar (dato no publicado). Para alternativas de otros fabricantes con tamaño y modalidades comparables no hay datos en la información proporcionada.
@@ -104,7 +104,7 @@ La comparación directa más útil es con el modelo base: misma arquitectura, mi
 
 ## Enlaces
 
-- [HuggingFace: nvidia/GLM-5.3-Flash-FP4-Local](https://huggingface.co/nvidia/GLM-5.3-Flash-FP4-Local)
+- [Hugging Face: nvidia/GLM-5.3-Flash-FP4-Local](https://huggingface.co/nvidia/GLM-5.3-Flash-FP4-Local)
 - [Modelo base: zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash)
 - [NVIDIA Model Optimizer (GitHub)](https://github.com/NVIDIA/Model-Optimizer)
 - [NVIDIA Open Model Agreement](https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/)

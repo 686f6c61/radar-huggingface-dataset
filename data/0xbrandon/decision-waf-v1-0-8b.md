@@ -103,12 +103,12 @@ La comparacion se limita a los dos modelos que el autor usa como referencia en e
 - El conjunto de evaluacion es pequeno (299 peticiones) y esta generado por el mismo autor; las cifras de F1 y FPR deben interpretarse con esa cautela.
 - El despliegue depende de metadatos y una plantilla de chat especificos del proyecto decision-waf; sin ellos los endpoints de decision no se registran, lo que limita la portabilidad a otros servidores de inferencia.
 - Idiomas soportados no declarados; el modelo opera sobre peticiones HTTP, habitualmente ASCII, pero no hay garantia documentada sobre trafico con codificaciones o alfabetos no latinos.
-- Discrepancia de metadatos: el pipeline declarado en HuggingFace es image-text-to-text, mientras que la model card describe exclusivamente clasificacion de texto (peticiones HTTP). No hay informacion sobre capacidades multimodales reales.
+- Discrepancia de metadatos: el pipeline declarado en Hugging Face es image-text-to-text, mientras que la model card describe exclusivamente clasificacion de texto (peticiones HTTP). No hay informacion sobre capacidades multimodales reales.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene revisar los terminos del modelo base Qwen3.5-0.8B-Base.
 - Modelo con 0 descargas y 0 likes en el momento de la consulta: no hay validacion independiente por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xBrandon/Decision-WAF-V1-0.8B
+- Modelo en Hugging Face: https://huggingface.co/0xBrandon/Decision-WAF-V1-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Repositorio del proyecto decision-waf: https://github.com/0x4272616E646F6E/decision-waf

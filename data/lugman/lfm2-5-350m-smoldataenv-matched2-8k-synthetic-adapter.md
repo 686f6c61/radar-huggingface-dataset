@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic-adapter es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en HuggingFace. Se trata de un adaptador derivado de un modelo de lenguaje pequeno (350M parametros) de la familia LFM2 de Liquid AI, orientado a generacion de texto y entrenado con la libreria Unsloth y el framework TRL. El nombre del repositorio sugiere un entrenamiento sobre un conjunto de datos sintetico ("Synthetic") de aproximadamente 2.8K ejemplos, emparejado con un entorno de datos denominado "SmolDataEnv".
+LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic-adapter es un ajuste fino (fine-tune) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en Hugging Face. Se trata de un adaptador derivado de un modelo de lenguaje pequeno (350M parametros) de la familia LFM2 de Liquid AI, orientado a generacion de texto y entrenado con la libreria Unsloth y el framework TRL. El nombre del repositorio sugiere un entrenamiento sobre un conjunto de datos sintetico ("Synthetic") de aproximadamente 2.8K ejemplos, emparejado con un entorno de datos denominado "SmolDataEnv".
 
 El modelo hereda la arquitectura y las capacidades del LFM2.5-350M original, pero no se ha publicado informacion detallada sobre el proceso de ajuste, los datos exactos utilizados ni los resultados obtenidos. La model card es minima y se limita a indicar el modelo base, la licencia y el uso de Unsloth para acelerar el entrenamiento.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic-adapter | no disponible (base 350M) | no disponible | apache-2.0 | HuggingFace (repo vacio, 0 descargas) |
-| LiquidAI/LFM2.5-350M (modelo base) | 350M (segun nombre) | no disponible | no disponible en la informacion | HuggingFace |
+| LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic-adapter | no disponible (base 350M) | no disponible | apache-2.0 | Hugging Face (repo vacio, 0 descargas) |
+| LiquidAI/LFM2.5-350M (modelo base) | 350M (segun nombre) | no disponible | no disponible en la informacion | Hugging Face |
 | Otros ajustes de LFM2.5-350M | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic-adapter
+- Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Synthetic-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth

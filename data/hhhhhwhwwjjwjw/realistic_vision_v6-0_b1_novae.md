@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Realistic Vision V6.0 B1 "New Vision" es un checkpoint de Stable Diffusion 1.5 orientado a la generación de imágenes fotorrealistas, desarrollado por SG_161222 (publicado bajo el usuario Hhhhhwhwwjjwjw en HuggingFace). Se trata de la primera beta de una actualización global del conocido modelo Realistic Vision, que se irá publicando en varias versiones beta hasta el lanzamiento completo. El modelo está diseñado para producir retratos, cuerpos completos y escenas con un alto grado de realismo, mejorando la resolución de generación respecto a versiones anteriores (hasta 1152x640 píxeles) y refinando la anatomía femenina tanto en contenido SFW como NSFW.
+Realistic Vision V6.0 B1 "New Vision" es un checkpoint de Stable Diffusion 1.5 orientado a la generación de imágenes fotorrealistas, desarrollado por SG_161222 (publicado bajo el usuario Hhhhhwhwwjjwjw en Hugging Face). Se trata de la primera beta de una actualización global del conocido modelo Realistic Vision, que se irá publicando en varias versiones beta hasta el lanzamiento completo. El modelo está diseñado para producir retratos, cuerpos completos y escenas con un alto grado de realismo, mejorando la resolución de generación respecto a versiones anteriores (hasta 1152x640 píxeles) y refinando la anatomía femenina tanto en contenido SFW como NSFW.
 
 Esta versión concreta se distribuye sin VAE incluido, por lo que se recomienda usar el VAE de Stable Diffusion (`sd-vae-ft-mse-original`) para evitar artefactos y mejorar la calidad final. El checkpoint es compatible con el pipeline `StableDiffusionPipeline` de la librería `diffusers` y se puede integrar en flujos de trabajo como ComfyUI, Automatic1111 o Forge. Su relevancia actual radica en ser una de las opciones más populares para generación fotorrealista local, con una comunidad activa y numerosos recursos asociados.
 
@@ -79,10 +79,10 @@ Nota: no se dispone de benchmarks comparativos. La comparativa se basa en caract
 
 ## Enlaces
 
-- HuggingFace (repo original del autor): https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE
-- Repo de HuggingFace con el ID proporcionado: https://huggingface.co/Hhhhhwhwwjjwjw/Realistic_Vision_V6.0_B1_noVAE
+- Hugging Face (repo original del autor): https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE
+- Repo de Hugging Face con el ID proporcionado: https://huggingface.co/Hhhhhwhwwjjwjw/Realistic_Vision_V6.0_B1_noVAE
 - Pagina en CivitAI: https://civitai.com/models/4201/realistic-vision-v60-b1?modelVersionId=245598
-- Coleccion de Realistic Vision en HuggingFace: https://huggingface.co/collections/SG161222/realistic-vision-sd15
+- Coleccion de Realistic Vision en Hugging Face: https://huggingface.co/collections/SG161222/realistic-vision-sd15
 - Pagina en Comflowy: https://comflowy.com/model/realistic-vision-v-6
 - Pagina en Diffus: https://www.diffus.me/models/realistic-vision-v6-0-b1-v5-1-vae
 - VAE recomendado: https://huggingface.co/stabilityai/sd-vae-ft-mse-original

@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al tener 162 millones de parametros, en precision fp32 ocuparia aproximadamente 650 MB. Con cuantizacion a 8 bits (si estuviera disponible) se reduciria a unos 325 MB, y a 4 bits a unos 160 MB. Sin embargo, no se proporcionan cuantizaciones en el repo.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Por ejemplo, una NVIDIA GTX 1050 Ti, RTX 2060 o incluso una GPU integrada podria ejecutarlo, aunque con menor velocidad.
 - Compatibilidad con consumer GPU: si, cabe en cualquier GPU moderna de consumo.
-- Opciones de despliegue: al ser un modelo de transformers, puede ejecutarse con la libreria transformers de HuggingFace, o con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o TGI. No hay archivos GGUF en el repo, pero se podrian generar.
+- Opciones de despliegue: al ser un modelo de transformers, puede ejecutarse con la libreria transformers de Hugging Face, o con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o TGI. No hay archivos GGUF en el repo, pero se podrian generar.
 - Latencia y throughput: no disponibles. En una GPU moderna, la generacion de texto seria muy rapida (del orden de miles de tokens por segundo), pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de informacion sobre el rendimiento comparativo, ya que no hay ben
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed208
+- Hugging Face: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed208
 - Modelos similares del mismo autor: https://huggingface.co/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024
 - Referencia a arxiv:1910.09700 (citada en tags, probablemente el paper de Lacoste et al. sobre calculo de emisiones, no sobre el modelo)
 - Despliegue en FriendliAI (para una variante similar): https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-control_shuffle_dyck_steps250-seed1024

@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/mradermacher/gemma4-E2B-it-abliterated-GGUF
+- Repo Hugging Face: https://huggingface.co/mradermacher/gemma4-E2B-it-abliterated-GGUF
 - Modelo base: https://huggingface.co/treadon/gemma4-E2B-it-abliterated
 - Quants con imatrix: https://huggingface.co/mradermacher/gemma4-E2B-it-abliterated-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma4-E2B-it-abliterated-GGUF

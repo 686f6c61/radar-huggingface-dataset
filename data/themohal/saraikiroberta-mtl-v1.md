@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo themohal/SaraikiRoBERTa-MTL-v1 es un modelo de lenguaje publicado en HuggingFace por el autor "themohal". Según los metadatos disponibles, se trata de una variante de RoBERTa orientada a tareas de aprendizaje multitarea (MTL, por sus siglas en inglés) para el idioma saraiki, una lengua indoaria hablada principalmente en Pakistán. Sin embargo, la model card no incluye ninguna descripción técnica, arquitectura detallada, tamaño, contexto ni datos de entrenamiento.
+El modelo themohal/SaraikiRoBERTa-MTL-v1 es un modelo de lenguaje publicado en Hugging Face por el autor "themohal". Según los metadatos disponibles, se trata de una variante de RoBERTa orientada a tareas de aprendizaje multitarea (MTL, por sus siglas en inglés) para el idioma saraiki, una lengua indoaria hablada principalmente en Pakistán. Sin embargo, la model card no incluye ninguna descripción técnica, arquitectura detallada, tamaño, contexto ni datos de entrenamiento.
 
 El modelo se publicó el 15 de agosto de 2026 y no registra descargas ni "likes" en el momento de la consulta. La licencia declarada es MIT, lo que permite uso comercial y modificación con atribución, pero no se especifican más condiciones. Dada la ausencia de documentación, su relevancia práctica es incierta y cualquier uso en producción requeriría una validación exhaustiva.
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/themohal/SaraikiRoBERTa-MTL-v1
+- Hugging Face: https://huggingface.co/themohal/SaraikiRoBERTa-MTL-v1
 
 No se encontraron papers, blogs, repositorios adicionales ni demos en la información proporcionada.

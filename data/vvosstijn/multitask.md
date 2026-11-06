@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vvosstijn/multitask` es un prototipo de investigación publicado en HuggingFace por el usuario vvosstijn. Se presenta explícitamente como un *Tiny Transformer* orientado a tareas múltiples (*multitask*), con una configuración base y un checkpoint de inicialización válido para *smoke tests*, pero **no entrenado ni evaluado**. No es un modelo listo para producción ni para inferencia real: es el andamiaje de código y configuración de un experimento.
+`vvosstijn/multitask` es un prototipo de investigación publicado en Hugging Face por el usuario vvosstijn. Se presenta explícitamente como un *Tiny Transformer* orientado a tareas múltiples (*multitask*), con una configuración base y un checkpoint de inicialización válido para *smoke tests*, pero **no entrenado ni evaluado**. No es un modelo listo para producción ni para inferencia real: es el andamiaje de código y configuración de un experimento.
 
 La relevancia del repositorio es, por tanto, metodológica y no de rendimiento. Aporta un `train.py` ejecutable, un `config.json` con los hiperparámetros de arquitectura, un `training_args.json` con la receta por defecto (RMSprop con *warmup* constante) y un `model.safetensors` de 33.088 parámetros que sirve para verificar que el pipeline de carga y el *forward pass* funcionan. El autor declara de forma explícita que no reclama ninguna métrica de benchmark.
 
@@ -86,12 +86,12 @@ Nota: este modelo no es comparable con LLMs de producción (7B, 8B, 70B) ni con 
 - **Sin auditoría**: el autor declara que no se ha evaluado robustez, equidad ni transferencia de dominio. No hay evaluación de sesgos porque no hay comportamiento aprendido que evaluar.
 - **Riesgo de alucinación**: no aplica en el sentido habitual (no hay conocimiento factual que pueda distorsionarse), pero cualquier salida que parezca coherente debe tratarse como artefacto.
 - **Contexto e idiomas desconocidos**: no se declara longitud de contexto ni vocabulario, lo que impide planificar cualquier uso lingüístico.
-- **Implementación no estándar**: atención GQA, fusión bilineal e `InstanceNorm` en un transformer requieren revisión del código antes de reutilizarlo; las APIs automáticas de HuggingFace no cargan el modelo sin un adaptador.
+- **Implementación no estándar**: atención GQA, fusión bilineal e `InstanceNorm` en un transformer requieren revisión del código antes de reutilizarlo; las APIs automáticas de Hugging Face no cargan el modelo sin un adaptador.
 - **Licencia BSD-3-Clause**: permite uso comercial y modificación, con obligación de conservar el aviso de copyright y la cláusula de no promoción (no se puede usar el nombre del autor para promocionar derivados). El propio autor advierte de revisar los términos de los datos externos si se combina con otros datasets.
 - **Sin métricas reproducibles**: cualquier resultado publicado a partir de este repositorio debe documentarse por separado de los valores por defecto que se distribuyen aquí.
 - **Fecha de publicación atípica**: el registro indica 2026-10-21; conviene verificar la procedencia del repositorio antes de integrarlo en un pipeline.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vvosstijn/multitask
+- Hugging Face: https://huggingface.co/vvosstijn/multitask
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al modelo.

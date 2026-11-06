@@ -73,9 +73,9 @@ La comparación es necesariamente limitada: los parámetros y métricas de este 
 
 | Modelo | Tipo | Parámetros | Resolución de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| apexlabs-hq/sn44-dirtiness | Detector ONNX de 5 clases de suciedad | no disponible | 736 × 736 | no disponible | ONNX en HuggingFace, 0 descargas |
+| apexlabs-hq/sn44-dirtiness | Detector ONNX de 5 clases de suciedad | no disponible | 736 × 736 | no disponible | ONNX en Hugging Face, 0 descargas |
 | YOLOv8n / YOLOv8s (Ultralytics) | Detector de una etapa, 80 clases COCO | ≈3,2 M / ≈11,2 M (datos públicos de Ultralytics) | 640 × 640 | AGPL-3.0 o licencia comercial | Pesos PyTorch y exportación ONNX |
-| DETR (ResNet-50, Facebook) | Detector transformer end-to-end | ≈41 M (backbone incluido, dato público) | redimensionado a 800 px de lado corto | Apache-2.0 | Pesos PyTorch en HuggingFace |
+| DETR (ResNet-50, Facebook) | Detector transformer end-to-end | ≈41 M (backbone incluido, dato público) | redimensionado a 800 px de lado corto | Apache-2.0 | Pesos PyTorch en Hugging Face |
 | RT-DETR | Detector transformer en tiempo real | según variante, no verificado en esta ficha | 640 × 640 | Apache-2.0 (verificar) | Pesos en PaddleDetection y exportaciones ONNX |
 
 Frente a YOLOv8 o RT-DETR, la ventaja de `sn44-dirtiness` es la especialización: sus cinco clases ya están definidas y los umbrales vienen calibrados por el autor para esas categorías, mientras que un detector COCO genérico no incluye ni `mould` ni `liquid spillage`. La desventaja es la ausencia total de métricas, licencia y documentación de entrenamiento.
@@ -96,7 +96,7 @@ Frente a YOLOv8 o RT-DETR, la ventaja de `sn44-dirtiness` es la especialización
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/apexlabs-hq/sn44-dirtiness
+- Hugging Face: https://huggingface.co/apexlabs-hq/sn44-dirtiness
 - Modelo base referenciado en la model card (no verificado): https://huggingface.co/manako/Detect-room-dirtiness-detection
 - Repositorio de onnxruntime: https://github.com/microsoft/onnxruntime
 - Las búsquedas web realizadas para esta ficha no devolvieron enlaces relacionados con el modelo ni con detección de suciedad en interiores; los resultados obtenidos eran ajenos al tema y se han descartado íntegramente.

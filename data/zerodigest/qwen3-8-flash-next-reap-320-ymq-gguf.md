@@ -74,9 +74,9 @@ No hay datos de MMLU, HumanEval, GSM8K ni de ninguna otra prueba de capacidad en
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-REAP-320-YMQ-GGUF (este) | no especificado tras la poda; base de 131,6 B | no disponible | GGUF mixto por capas (M-TI, ~63 GB) | Apache 2.0 | Publicado en HuggingFace, 0 descargas |
+| Qwen3.8-Flash-Next-REAP-320-YMQ-GGUF (este) | no especificado tras la poda; base de 131,6 B | no disponible | GGUF mixto por capas (M-TI, ~63 GB) | Apache 2.0 | Publicado en Hugging Face, 0 descargas |
 | Qwen/Qwen3.8-Flash-Next (modelo base) | 131.621.823.360 | no disponible | safetensors sin cuantizar | no disponible en la informacion proporcionada | Referenciado como modelo base |
-| AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF | no disponible | no disponible | GGUF tras REAP K=320 | no disponible en la informacion proporcionada | Publicado en HuggingFace; es la referencia en la que se inspira este repositorio |
+| AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF | no disponible | no disponible | GGUF tras REAP K=320 | no disponible en la informacion proporcionada | Publicado en Hugging Face; es la referencia en la que se inspira este repositorio |
 
 No se dispone de modelos comparables de otras familias con datos verificables en la informacion proporcionada (parametros, contexto, rendimiento y licencia de las alternativas figuran como no disponibles).
 
@@ -95,7 +95,7 @@ No se dispone de modelos comparables de otras familias con datos verificables en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zerodigest/Qwen3.8-Flash-Next-REAP-320-YMQ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zerodigest/Qwen3.8-Flash-Next-REAP-320-YMQ-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de referencia (REAP-320): https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF
 - Manifiesto de seleccion de expertos: https://huggingface.co/AnonimousA/Qwen3.8-Flash-Next-REAP-320-GGUF/blob/main/manifests/seleccion_mass_K320.json

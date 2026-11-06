@@ -97,7 +97,7 @@ La alternativa principal dentro del mismo ecosistema es el camino MTP (Multi-Tok
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anbeeld/Qwen3.5-397B-A17B-DFlash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Anbeeld/Qwen3.5-397B-A17B-DFlash-GGUF
 - Modelo base DFlash: https://huggingface.co/z-lab/Qwen3.5-397B-A17B-DFlash
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - Paper: https://arxiv.org/abs/2602.06036

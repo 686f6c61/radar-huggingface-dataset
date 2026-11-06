@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-native-v3-s14000-x2` es un checkpoint de pesos en formato safetensors publicado por el usuario alfred8995 en HuggingFace. Por el identificador y el tag `sn38-nanochrono`, parece tratarse de un modelo de la familia NanoChrono, probablemente un transformer de aproximadamente 2.018 millones de parametros (2B) entrenado desde cero o afinado, con un nombre que sugiere un checkpoint en el paso 14.000 y una variante "x2" (posiblemente un escalado o duplicacion de capas o de datos). El repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo `alfred8995/r18-native-v3-s14000-x2` es un checkpoint de pesos en formato safetensors publicado por el usuario alfred8995 en Hugging Face. Por el identificador y el tag `sn38-nanochrono`, parece tratarse de un modelo de la familia NanoChrono, probablemente un transformer de aproximadamente 2.018 millones de parametros (2B) entrenado desde cero o afinado, con un nombre que sugiere un checkpoint en el paso 14.000 y una variante "x2" (posiblemente un escalado o duplicacion de capas o de datos). El repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La informacion publica disponible es muy limitada: no se especifican idiomas, pipeline, ni detalles de arquitectura o entrenamiento mas alla del tag de familia y el recuento de parametros. No hay model card visible con benchmarks, datos de entrenamiento ni instrucciones de uso. Por tanto, esta ficha se limita a los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no se puede confirmar.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-native-v3-s14000-x2 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-native-v3-s14000-x2 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Alternativas de ~2B (p. ej. familias tipo Qwen2.5-1.5B, Gemma-2-2B, Phi-3-mini) | 1,5-3,8 B | 4K-128K segun modelo | Apache 2.0 / licencias propias | Publicas |
 
 No se dispone de datos de rendimiento del modelo para una comparacion cuantitativa con alternativas. La comparativa se limita a parametros y licencia.
@@ -75,11 +75,11 @@ No se dispone de datos de rendimiento del modelo para una comparacion cuantitati
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluacion publicada no puede acotarse.
 - Idiomas no declarados: se desconoce si soporta castellano u otros idiomas distintos del ingles.
 - Contexto desconocido: no se puede planificar su uso en tareas de contexto largo.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de la descarga, lo que anade friccion a la integracion automatizada.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de la descarga, lo que anade friccion a la integracion automatizada.
 - Licencia Apache 2.0: permite uso comercial, pero al ser un checkpoint sin garantias del autor, conviene validar su comportamiento antes de produccion.
 - Checkpoint intermedio: el sufijo `s14000` sugiere un estado no final de entrenamiento; la calidad puede ser inferior a la de un modelo completamente entrenado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-native-v3-s14000-x2
+- Hugging Face: https://huggingface.co/alfred8995/r18-native-v3-s14000-x2
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

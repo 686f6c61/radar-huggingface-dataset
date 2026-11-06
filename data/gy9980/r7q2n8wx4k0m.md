@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `gy9980/r7q2n8wx4k0m` es un repositorio alojado en HuggingFace Hub por el usuario `gy9980`, publicado el 3 de septiembre de 2026. La model card asociada contiene únicamente la declaración de licencia Apache 2.0, sin ninguna otra información técnica, documentación o archivos de modelo visibles en los metadatos proporcionados.
+El modelo `gy9980/r7q2n8wx4k0m` es un repositorio alojado en Hugging Face Hub por el usuario `gy9980`, publicado el 3 de septiembre de 2026. La model card asociada contiene únicamente la declaración de licencia Apache 2.0, sin ninguna otra información técnica, documentación o archivos de modelo visibles en los metadatos proporcionados.
 
 No se dispone de información sobre la arquitectura, el tamaño, el entrenamiento o las capacidades de este modelo. El repositorio no presenta descargas ni valoraciones, lo que sugiere que podría tratarse de una publicación reciente, un experimento personal o un repositorio vacío sin contenido publicado. Los resultados de búsqueda web asociados no guardan relación con el modelo, por lo que no es posible contextualizarlo dentro del ecosistema de IA open source.
 
-Dada la ausencia total de información técnica verificable, esta ficha no puede ofrecer una evaluación sustantiva del modelo. Se recomienda consultar directamente el repositorio en HuggingFace para comprobar si se han añadido archivos o documentación con posterioridad a la fecha de creación.
+Dada la ausencia total de información técnica verificable, esta ficha no puede ofrecer una evaluación sustantiva del modelo. Se recomienda consultar directamente el repositorio en Hugging Face para comprobar si se han añadido archivos o documentación con posterioridad a la fecha de creación.
 
 ## Especificaciones tecnicas
 
@@ -54,4 +54,4 @@ No disponible. Al carecer de información sobre la arquitectura, el tamaño y el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gy9980/r7q2n8wx4k0m
+- Repositorio Hugging Face: https://huggingface.co/gy9980/r7q2n8wx4k0m

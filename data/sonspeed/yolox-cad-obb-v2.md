@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yoloX-cad-obb-v2 es un modelo de detección de objetos con cajas orientadas (OBB, *oriented bounding boxes*) entrenado por el usuario de HuggingFace `sonspeed`. Se trata de un detector de la familia YOLOX, concretamente la variante YOLOX-m basada en *backbone* CSPDarknet con cuello PAFPN, al que se le ha injertado una cabeza OBB procedente de Ultralytics. El modelo está pensado para localizar componentes sobre teselas (tiles) de planos CAD sintéticos, es decir, detección de símbolos y elementos de diseño asistido por computador en lugar de objetos fotográficos naturales.
+yoloX-cad-obb-v2 es un modelo de detección de objetos con cajas orientadas (OBB, *oriented bounding boxes*) entrenado por el usuario de Hugging Face `sonspeed`. Se trata de un detector de la familia YOLOX, concretamente la variante YOLOX-m basada en *backbone* CSPDarknet con cuello PAFPN, al que se le ha injertado una cabeza OBB procedente de Ultralytics. El modelo está pensado para localizar componentes sobre teselas (tiles) de planos CAD sintéticos, es decir, detección de símbolos y elementos de diseño asistido por computador en lugar de objetos fotográficos naturales.
 
 El repositorio contiene únicamente el checkpoint de la fase 1 (`yolox_m_obb_v2_recall/weights/best.pt`), entrenado desde cero sobre teselas CAD sintéticas. El autor indica explícitamente que la fase 2 de ajuste fino sobre teselas reales (MKS) no se publicó porque la *recall* de validación cayó a 0,20 al no existir cajas de la clase EL en el *split* de entrenamiento real mientras que la validación CMPS está mayoritariamente compuesta por dicha clase. El modelo cubre 26 clases (excluye CF y LMW, incluye JB-Flush).
 
@@ -77,7 +77,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Categoria | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yoloX-cad-obb-v2 | Deteccion OBB, YOLOX-m + cabeza Ultralytics | Teselas CAD, SAHI 640 / solape 0,2 | no disponible | HuggingFace (0 descargas) |
+| yoloX-cad-obb-v2 | Deteccion OBB, YOLOX-m + cabeza Ultralytics | Teselas CAD, SAHI 640 / solape 0,2 | no disponible | Hugging Face (0 descargas) |
 | YOLOv8-OBB (Ultralytics) | Deteccion OBB | Imagen completa, multiples escalas | AGPL-3.0 / comercial bajo licencia Ultralytics | Ampliamente disponible |
 | YOLOv11-OBB (Ultralytics) | Deteccion OBB | Imagen completa, multiples escalas | AGPL-3.0 / comercial bajo licencia Ultralytics | Ampliamente disponible |
 | RT-DETR (variantes OBB) | Detector transformer en tiempo real | Imagen completa | Apache-2.0 (segun variante) | Disponible en repositorios de investigacion |
@@ -98,5 +98,5 @@ No se dispone de comparaciones numéricas directas entre este modelo y las alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sonspeed/yoloX-cad-obb-v2
+- Modelo en Hugging Face: https://huggingface.co/sonspeed/yoloX-cad-obb-v2
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

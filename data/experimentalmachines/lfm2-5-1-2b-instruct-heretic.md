@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - No se han publicado evaluaciones de sesgos ni de alucinación específicas para esta variante. Al ser un modelo pequeño, es probable que presente alucinaciones y errores factuales.
 - Los idiomas soportados no están especificados, por lo que no se puede garantizar un rendimiento multilingüe.
 - La licencia lfm1.0 es una licencia personalizada ("other") que debe revisarse en el LICENSE del modelo base antes de cualquier uso comercial.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - La ventana de contexto de 32.768 tokens requiere asignar la caché KV completa al cargar, lo que consume memoria aunque no se utilicen todos los tokens.
 
 ## Enlaces

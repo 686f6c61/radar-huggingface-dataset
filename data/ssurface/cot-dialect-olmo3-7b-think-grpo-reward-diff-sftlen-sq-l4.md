@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks para el modelo principal `ssurface/cot-dial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-reward-diff-sftlen-sq-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-reward-diff-sftlen-sq-l4
 - Modelo SFT necesario: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4
 - Modelo principal del mismo nivel: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l4
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think

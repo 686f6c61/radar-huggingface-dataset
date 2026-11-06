@@ -6,7 +6,7 @@
 
 `shashikantkaushik/street_light_classification` es un modelo de clasificación de imágenes desarrollado por Shashi Kant Kaushik mediante la herramienta Aargus-DIY Visual Inspection Tool. Su propósito es automatizar la inspección visual de farolas, determinando si están en estado operativo (**Working**) o no operativo (**Not Working**) a partir de imágenes o fotogramas de vídeo. El modelo sustituye la inspección manual por un sistema basado en IA que ofrece resultados rápidos y consistentes, lo que resulta relevante para la monitorización de infraestructura municipal y de servicios públicos.
 
-La arquitectura empleada es una red neuronal convolucional (CNN) basada en MobileNetV2, preentrenada en ImageNet y ajustada mediante transfer learning. El modelo se distribuye con licencia Apache 2.0 y ocupa aproximadamente 0.1 GB en el repositorio de HuggingFace. Al ser un clasificador de visión, no dispone de ventana de contexto en el sentido de los modelos de lenguaje.
+La arquitectura empleada es una red neuronal convolucional (CNN) basada en MobileNetV2, preentrenada en ImageNet y ajustada mediante transfer learning. El modelo se distribuye con licencia Apache 2.0 y ocupa aproximadamente 0.1 GB en el repositorio de Hugging Face. Al ser un clasificador de visión, no dispone de ventana de contexto en el sentido de los modelos de lenguaje.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks comparativos para este modelo en la
 
 | Modelo | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|
-| street_light_classification | MobileNetV2 | Apache 2.0 | HuggingFace (Keras/H5) |
+| street_light_classification | MobileNetV2 | Apache 2.0 | Hugging Face (Keras/H5) |
 | MobileNetV3 | CNN | Apache 2.0 | TensorFlow Hub, PyTorch |
 | EfficientNet-Lite | CNN | Apache 2.0 | TensorFlow Hub |
 
@@ -90,5 +90,5 @@ Nota: los parámetros y el rendimiento de las alternativas no se han publicado e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shashikantkaushik/street_light_classification
+- Hugging Face: https://huggingface.co/shashikantkaushik/street_light_classification
 - GitHub del autor: https://github.com/shashikantkaushik

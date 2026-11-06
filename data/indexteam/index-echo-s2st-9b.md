@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros (decoder de traduccion) | Direcciones soportadas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Index-Echo-S2ST-9B | 9B (mas mapper de ~30 M y CosyVoice3) | 6 (zh→en/es/ja, en→zh/es/ja) | Apache 2.0 | Pesos en HuggingFace y ModelScope, demo online |
-| Index-Echo-S2ST-2B | 2B (misma interfaz publica) | Las mismas 6, segun la model card | Apache 2.0 | Pesos en HuggingFace |
+| Index-Echo-S2ST-9B | 9B (mas mapper de ~30 M y CosyVoice3) | 6 (zh→en/es/ja, en→zh/es/ja) | Apache 2.0 | Pesos en Hugging Face y ModelScope, demo online |
+| Index-Echo-S2ST-2B | 2B (misma interfaz publica) | Las mismas 6, segun la model card | Apache 2.0 | Pesos en Hugging Face |
 | Otros sistemas S2ST abiertos comparables | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible |
 
 El unico comparador directo documentado es el hermano de 2B de la misma familia, que expone exactamente la misma interfaz (`dub`) y esta pensado como alternativa de menor coste. No se dispone de datos de rendimiento que permitan comparar ambos modelos numericamente.
@@ -89,10 +89,10 @@ El unico comparador directo documentado es el hermano de 2B de la misma familia,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B
+- Modelo en Hugging Face: https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B
 - Modelo hermano de 2B: https://huggingface.co/IndexTeam/Index-Echo-S2ST-2B
 - Demo online: https://index-translate.bilibili.com/
 - Repositorio en GitHub: https://github.com/bilibili/Index-Translate
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.40181
-- Coleccion en HuggingFace: https://huggingface.co/collections/IndexTeam/index-translate
+- Coleccion en Hugging Face: https://huggingface.co/collections/IndexTeam/index-translate
 - Coleccion en ModelScope: https://www.modelscope.cn/collections/IndexTeam/Index-Translate

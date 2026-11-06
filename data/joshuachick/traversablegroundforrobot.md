@@ -69,5 +69,5 @@ No se dispone de información suficiente para una comparativa rigurosa. Modelos 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [JoshuaChick/TraversableGroundForRobot](https://huggingface.co/JoshuaChick/TraversableGroundForRobot)
+- Repositorio de Hugging Face: [JoshuaChick/TraversableGroundForRobot](https://huggingface.co/JoshuaChick/TraversableGroundForRobot)
 - Repositorio de GitHub con instrucciones de ejecución: [TraversableGroundForRobot](https://github.com/JoshuaChick/TraversableGroundForRobot)

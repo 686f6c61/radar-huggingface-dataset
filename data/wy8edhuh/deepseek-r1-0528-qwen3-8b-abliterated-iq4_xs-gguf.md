@@ -52,7 +52,7 @@ La innovacion tecnica relevante esta en los dos ultimos pasos de la cadena. Prim
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio ni los metadatos de HuggingFace incluyen MMLU, HumanEval, GSM8K, AIME ni ninguna otra metrica. La busqueda web asociada no devolvio resultados relacionados con el modelo. Por tanto, no es posible comparar numericamente esta cuantizacion con el modelo base ni con los destilados originales.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio ni los metadatos de Hugging Face incluyen MMLU, HumanEval, GSM8K, AIME ni ninguna otra metrica. La busqueda web asociada no devolvio resultados relacionados con el modelo. Por tanto, no es posible comparar numericamente esta cuantizacion con el modelo base ni con los destilados originales.
 
 ## Requisitos de hardware
 

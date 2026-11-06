@@ -4,7 +4,7 @@
 
 NVIDIA-Ising-Calibration-1.5-31B-BF16 es un modelo multimodal de visión-lenguaje (VLM) desarrollado por NVIDIA, construido sobre la base de Gemma 4 31B de Google. Su propósito específico es analizar gráficos de experimentos de calibración en computación cuántica y generar texto técnico estructurado en seis categorías: descripción técnica, conclusión experimental, significancia experimental, evaluación de calidad de ajuste, extracción de parámetros y clasificación de éxito del experimento. Está pensado para investigadores, ingenieros de calibración y desarrolladores que trabajan con hardware cuántico y necesitan automatizar o asistir el análisis de datos de calibración.
 
-El modelo es denso (no es MoE), con aproximadamente 31 000 millones de parámetros, y se distribuye en precisión BF16. Su relevancia actual radica en que aborda un problema muy específico y técnico: la interpretación de gráficos de calibración cuántica, un área donde los modelos generalistas suelen fallar por falta de conocimiento de dominio. NVIDIA lo ofrece tanto en HuggingFace como a través de su plataforma NIM, con un backend vLLM y una API compatible con OpenAI, lo que facilita su integración en flujos de trabajo existentes. La licencia OpenMDW 1.1 permite uso comercial, aunque con ciertas condiciones.
+El modelo es denso (no es MoE), con aproximadamente 31 000 millones de parámetros, y se distribuye en precisión BF16. Su relevancia actual radica en que aborda un problema muy específico y técnico: la interpretación de gráficos de calibración cuántica, un área donde los modelos generalistas suelen fallar por falta de conocimiento de dominio. NVIDIA lo ofrece tanto en Hugging Face como a través de su plataforma NIM, con un backend vLLM y una API compatible con OpenAI, lo que facilita su integración en flujos de trabajo existentes. La licencia OpenMDW 1.1 permite uso comercial, aunque con ciertas condiciones.
 
 ## Especificaciones tecnicas
 
@@ -43,13 +43,13 @@ El modelo combina un procesador de vision integrado para interpretar imagenes de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona el benchmark QCalEval (disponible en HuggingFace y GitHub) y un paper en arXiv (2604.25884), pero no se incluyen numeros concretos de rendimiento en la documentacion proporcionada. Se recomienda consultar el paper y el dataset para obtener metricas detalladas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card menciona el benchmark QCalEval (disponible en Hugging Face y GitHub) y un paper en arXiv (2604.25884), pero no se incluyen numeros concretos de rendimiento en la documentacion proporcionada. Se recomienda consultar el paper y el dataset para obtener metricas detalladas.
 
 ## Requisitos de hardware
 
 - VRAM estimada: no disponible en la informacion proporcionada. Dado el tamano de 31B en BF16, se estima que requiere al menos 62 GB de VRAM solo para los pesos (el repo ocupa 62.6 GB), por lo que se necesitan GPUs con memoria suficiente.
 - GPUs recomendadas: NVIDIA Blackwell y NVIDIA Hopper (segun la model card). No se mencionan GPUs de consumo como RTX 4090, y es probable que no quepa en una GPU de consumo estandar sin cuantizacion adicional.
-- Opciones de despliegue: NVIDIA NIM con backend vLLM, API compatible con OpenAI. Tambien se puede cargar con transformers en HuggingFace, aunque el rendimiento optimo se logra con NIM.
+- Opciones de despliegue: NVIDIA NIM con backend vLLM, API compatible con OpenAI. Tambien se puede cargar con transformers en Hugging Face, aunque el rendimiento optimo se logra con NIM.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (an
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/Ising-Calibration-1.5-31B-BF16
+- Hugging Face: https://huggingface.co/nvidia/Ising-Calibration-1.5-31B-BF16
 - NVIDIA NIM (Build API): https://build.nvidia.com/nvidia/ising-calibration-1.5-31b
 - Documentacion API NIM: https://docs.api.nvidia.com/nim/reference/nvidia-ising-calibration-1-5-31b
 - NGC Catalog: https://catalog.ngc.nvidia.com/orgs/nim/teams/nvidia/containers/ising-calibration-1-5-31b

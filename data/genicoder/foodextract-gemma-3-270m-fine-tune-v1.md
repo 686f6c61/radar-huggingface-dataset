@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FoodExtract-v1 (este modelo) | 268M | no disponible | Extracción estructurada de comida/bebida | gemma | HuggingFace |
-| google/gemma-3-270m-it | 270M | no disponible | Generación de texto general e instruct | gemma | HuggingFace |
+| FoodExtract-v1 (este modelo) | 268M | no disponible | Extracción estructurada de comida/bebida | gemma | Hugging Face |
+| google/gemma-3-270m-it | 270M | no disponible | Generación de texto general e instruct | gemma | Hugging Face |
 | gpt-oss-120b (generador del dataset) | 120B (MoE) | no disponible | Generación y razonamiento general | no disponible en la información | no disponible en la información |
 
 La comparación con alternativas especializadas en extracción alimentaria no está disponible: no se han identificado en la información proporcionada otros modelos con la misma tarea y tamaño. Frente a su modelo base, FoodExtract-v1 sacrifica generalidad a cambio de un formato de salida fijo y compacto; frente a gpt-oss-120b, que generó las etiquetas del dataset, supone una reducción de tres órdenes de magnitud en parámetros a costa de cubrir únicamente esta tarea.
@@ -84,7 +84,7 @@ La comparación con alternativas especializadas en extracción alimentaria no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genicoder/FoodExtract-gemma-3-270m-fine-tune-v1
+- Modelo en Hugging Face: https://huggingface.co/genicoder/FoodExtract-gemma-3-270m-fine-tune-v1
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mrdbourke/FoodExtract-1k
 - Dataset citado como caso de uso: https://huggingface.co/datasets/UCSC-VLAA/Recap-DataComp-1B

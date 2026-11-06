@@ -74,9 +74,9 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RE3RANK-Qwen3-4B | 4,02B | no disponible | Reranking por atencion sobre traza de razonamiento | Apache-2.0 | HuggingFace + GitHub |
-| BGE-reranker-v2-m3 | no disponible en esta ficha | no disponible | Cross-encoder clasico | no disponible en esta ficha | HuggingFace |
-| Qwen3-Reranker-4B | no disponible en esta ficha | no disponible | Reranker generativo de Qwen | no disponible en esta ficha | HuggingFace |
+| RE3RANK-Qwen3-4B | 4,02B | no disponible | Reranking por atencion sobre traza de razonamiento | Apache-2.0 | Hugging Face + GitHub |
+| BGE-reranker-v2-m3 | no disponible en esta ficha | no disponible | Cross-encoder clasico | no disponible en esta ficha | Hugging Face |
+| Qwen3-Reranker-4B | no disponible en esta ficha | no disponible | Reranker generativo de Qwen | no disponible en esta ficha | Hugging Face |
 
 Los datos de las alternativas no estan verificados en la informacion proporcionada y se incluyen solo como referencia de categoria; no deben interpretarse como una comparacion de rendimiento.
 
@@ -94,7 +94,7 @@ Los datos de las alternativas no estan verificados en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryehr/RE3RANK-Qwen3-4B
+- Modelo en Hugging Face: https://huggingface.co/Ryehr/RE3RANK-Qwen3-4B
 - Repositorio de codigo: https://github.com/ryehr/RE3RANK
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B/blob/main/LICENSE

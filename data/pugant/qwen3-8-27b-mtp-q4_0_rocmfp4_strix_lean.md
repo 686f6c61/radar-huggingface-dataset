@@ -102,7 +102,7 @@ Frente a Qwen3.6-27B, el Qwen3.8-27B gana en MTP en todos los escenarios: +25-35
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN
+- Modelo en Hugging Face: https://huggingface.co/pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN
 - Versión imatrix del mismo autor: https://huggingface.co/pugant/Qwen3.8-27B-imatrix
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Análisis del flag MTP en Qwen3.8-27B: https://github.com/sudoingX/qwen38-mtp

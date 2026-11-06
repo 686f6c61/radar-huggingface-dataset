@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sharmaarjun/blip-matching` es un prototipo de investigación publicado en HuggingFace por el usuario sharmaarjun, etiquetado como Blip y orientado a tareas de *matching* (emparejamiento, presumiblemente imagen-texto). No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card lo describe como un punto de partida experimental cuyo `model.safetensors` es una inicialización válida únicamente para *smoke tests*. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`sharmaarjun/blip-matching` es un prototipo de investigación publicado en Hugging Face por el usuario sharmaarjun, etiquetado como Blip y orientado a tareas de *matching* (emparejamiento, presumiblemente imagen-texto). No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card lo describe como un punto de partida experimental cuyo `model.safetensors` es una inicialización válida únicamente para *smoke tests*. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 La arquitectura declarada es Blip con atención *multi query*, fusión con *gating* (gated fusion), activación swish y normalización groupnorm, en una escala nominal "giant". Sin embargo, los metadatos de safetensors indican 16,576 parámetros totales y el tamaño del repositorio es de 0,0 GB, lo que apunta a un checkpoint de alrededor de 16,6 mil parámetros, muy lejos de cualquier escala "giant" real. Esa contradicción entre la etiqueta de escala y el recuento real es el dato más relevante para cualquiera que evalúe el repositorio.
 
@@ -84,6 +84,6 @@ La comparación relevante no es de rendimiento, sino de estado: los tres primero
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sharmaarjun/blip-matching
+- Hugging Face: https://huggingface.co/sharmaarjun/blip-matching
 
 Nota: los resultados de la búsqueda web proporcionados para esta ficha no contenían material técnico relacionado con el modelo (eran páginas de contenido para adultos sin relación alguna). Se han descartado por completo y no se incluyen como enlaces. No se dispone de paper, blog, repositorio de código adicional ni demo asociados a este modelo.

@@ -110,7 +110,7 @@ La comparación de rendimiento con estas alternativas no está disponible en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-618m-60.8bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-618m-60.8bt-base-cooled
 - Referencia del recurso Isambard-AI: https://doi.org/10.48550/arXiv.2410.11199
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

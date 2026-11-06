@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-Seeker-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Qwen3-8B-Seeker, publicada por el usuario mradermacher en HuggingFace. Se trata, por tanto, de un artefacto derivado: el modelo base es un ajuste fino de Qwen3-8B realizado por Rumiii, y este repositorio únicamente contiene las versiones cuantizadas listas para su uso con llama.cpp y ecosistemas compatibles (Ollama, LM Studio, etc.). No se trata de un modelo original ni de un desarrollo propio del autor del repositorio.
+Qwen3-8B-Seeker-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo Qwen3-8B-Seeker, publicada por el usuario mradermacher en Hugging Face. Se trata, por tanto, de un artefacto derivado: el modelo base es un ajuste fino de Qwen3-8B realizado por Rumiii, y este repositorio únicamente contiene las versiones cuantizadas listas para su uso con llama.cpp y ecosistemas compatibles (Ollama, LM Studio, etc.). No se trata de un modelo original ni de un desarrollo propio del autor del repositorio.
 
 El modelo subyacente es Qwen3-8B, un transformer denso de 8.000 millones de parámetros desarrollado por el equipo Qwen de Alibaba. La model card del repositorio no documenta el propósito del ajuste fino "Seeker", los datos de entrenamiento utilizados ni las capacidades específicas que se pretenden mejorar respecto al modelo base. Toda la información técnica disponible se limita a la lista de cuantizaciones generadas.
 
@@ -25,7 +25,7 @@ La relevancia de este repositorio es práctica: permite ejecutar un modelo de 8B
 
 La model card no proporciona información sobre la arquitectura del modelo base más allá de su nombre. Por la nomenclatura, se infiere que Qwen3-8B-Seeker deriva de Qwen3-8B, un transformer denso de 8B parámetros, pero no se documenta si el ajuste fino introdujo cambios arquitectónicos, qué datos se utilizaron, cuántos tokens se procesaron ni si se aplicaron técnicas de RLHF, DPO o instrucción supervisada.
 
-El repositorio en sí no contiene entrenamiento alguno: es un proceso de conversión y cuantización (convert_type: hf, output_tensor_quantised: 1) que transforma los pesos en formato HuggingFace del modelo original a GGUF estático en doce variantes de precisión. No se indica qué herramienta de cuantización se empleó más allá del metadato quantize_version 2, ni si se preservó el tokenizador o la configuración de chat del modelo base.
+El repositorio en sí no contiene entrenamiento alguno: es un proceso de conversión y cuantización (convert_type: hf, output_tensor_quantised: 1) que transforma los pesos en formato Hugging Face del modelo original a GGUF estático en doce variantes de precisión. No se indica qué herramienta de cuantización se empleó más allá del metadato quantize_version 2, ni si se preservó el tokenizador o la configuración de chat del modelo base.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-Seeker-GGUF | 8B (según nombre) | no disponible | no disponible | GGUF (12 variantes) | HuggingFace |
-| Qwen3-8B (original) | 8B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF (comunidad) | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, Meta |
-| Mistral 7B Instruct | 7,3B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace, Mistral |
+| Qwen3-8B-Seeker-GGUF | 8B (según nombre) | no disponible | no disponible | GGUF (12 variantes) | Hugging Face |
+| Qwen3-8B (original) | 8B | no disponible en esta ficha | no disponible en esta ficha | safetensors, GGUF (comunidad) | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, Meta |
+| Mistral 7B Instruct | 7,3B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, Mistral |
 
 La comparación con Qwen3-8B original y con alternativas como Llama 3.1 8B o Mistral 7B es orientativa: no hay datos de rendimiento del ajuste fino "Seeker" que permitan establecer diferencias cualitativas o cuantitativas. La licencia del modelo base Qwen3-8B no se refleja en la model card de este repositorio, por lo que la comparativa de licencias queda incompleta.
 

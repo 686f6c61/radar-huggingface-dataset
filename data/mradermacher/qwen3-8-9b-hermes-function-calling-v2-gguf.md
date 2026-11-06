@@ -76,7 +76,7 @@ La comparacion es limitada porque no se conocen ni el contexto ni los resultados
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/qwen3.8-9b-hermes-function-calling-v2-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/qwen3.8-9b-hermes-function-calling-v2-GGUF
 - Modelo base original: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v2
 - Version GGUF con cuantizacion ROCmFPX del mismo modelo: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v2-GGUF
 - Version v1 del fine-tune: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-function-calling-v1-GGUF

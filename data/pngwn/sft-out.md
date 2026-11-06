@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pngwn/sft-out` es un fine-tuning de tipo SFT (supervised fine-tuning) del modelo base `HuggingFaceTB/SmolLM2-135M`, desarrollado por el usuario `pngwn`. Fue entrenado sobre el dataset `trl-lib/Capybara` utilizando la librería TRL de HuggingFace. Se trata de un modelo de lenguaje pequeño, con aproximadamente 134,5 millones de parámetros, orientado a generación de texto conversacional.
+El modelo `pngwn/sft-out` es un fine-tuning de tipo SFT (supervised fine-tuning) del modelo base `HuggingFaceTB/SmolLM2-135M`, desarrollado por el usuario `pngwn`. Fue entrenado sobre el dataset `trl-lib/Capybara` utilizando la librería TRL de Hugging Face. Se trata de un modelo de lenguaje pequeño, con aproximadamente 134,5 millones de parámetros, orientado a generación de texto conversacional.
 
 Este modelo no es un desarrollo nuevo desde cero, sino un experimento de ajuste fino sobre un modelo ya existente. Su relevancia radica en servir como ejemplo práctico de fine-tuning con TRL, así como en permitir evaluar el comportamiento de un modelo pequeño tras ser entrenado con un dataset conversacional. La arquitectura es la del modelo base, un transformer de tamaño reducido, aunque la longitud de contexto y otras especificaciones no se detallan en la información disponible.
 
@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 y 0,25 GB en FP16, según el número de parámetros (134,5 millones). Es una estimación, no un valor oficial.
 - GPU recomendada: cualquier GPU con al menos 1 GB de VRAM, o incluso CPU, dado el reducido tamaño del modelo.
 - Compatible con GPUs de consumo: sí, puede ejecutarse en GPUs como RTX 3060, RTX 4090, o incluso en hardware más antiguo.
-- Opciones de despliegue: compatible con la librería Transformers de HuggingFace mediante el pipeline `text-generation`. Los tags indican compatibilidad con endpoints de HuggingFace y con `text-generation-inference`.
+- Opciones de despliegue: compatible con la librería Transformers de Hugging Face mediante el pipeline `text-generation`. Los tags indican compatibilidad con endpoints de Hugging Face y con `text-generation-inference`.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pngwn/sft-out | 134,5 M | no disponible | no disponible | HuggingFace |
-| HuggingFaceTB/SmolLM2-135M | 135 M | no disponible | no disponible | HuggingFace |
-| Qwen2.5-0.5B | 500 M | no disponible | no disponible | HuggingFace |
+| pngwn/sft-out | 134,5 M | no disponible | no disponible | Hugging Face |
+| HuggingFaceTB/SmolLM2-135M | 135 M | no disponible | no disponible | Hugging Face |
+| Qwen2.5-0.5B | 500 M | no disponible | no disponible | Hugging Face |
 
 La comparativa se limita a parámetros y disponibilidad, ya que no se han publicado resultados de rendimiento para ninguno de estos modelos en la información disponible.
 
@@ -77,7 +77,7 @@ La comparativa se limita a parámetros y disponibilidad, ya que no se han public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pngwn/sft-out
+- Modelo en Hugging Face: https://huggingface.co/pngwn/sft-out
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Dataset de entrenamiento: https://huggingface.co/datasets/trl-lib/Capybara
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -92,10 +92,10 @@ No se han publicado resultados de benchmarks independientes en la informacion di
 
 | Modelo | Parametros | Contexto | MMLU | GSM8K | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| oQ4e-mtp (este modelo) | 35,9B totales / ~3B activos | 200k | 87,0% | 96,0% | 94,0% | No disponible | HuggingFace (MLX/oMLX) |
-| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-oQ6e-mtp | 35,9B totales / ~3B activos | 200k | 86,0% | 94,0% | 94,0% | No disponible | HuggingFace (MLX/oMLX) |
-| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-qx64-hi-mlx | 35,9B totales / ~3B activos | 200k | 86,0% | 95,0% | 94,0% | No disponible | HuggingFace (MLX/oMLX) |
-| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored (original de Nightmedia) | 35,9B totales / ~3B activos | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| oQ4e-mtp (este modelo) | 35,9B totales / ~3B activos | 200k | 87,0% | 96,0% | 94,0% | No disponible | Hugging Face (MLX/oMLX) |
+| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-oQ6e-mtp | 35,9B totales / ~3B activos | 200k | 86,0% | 94,0% | 94,0% | No disponible | Hugging Face (MLX/oMLX) |
+| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-qx64-hi-mlx | 35,9B totales / ~3B activos | 200k | 86,0% | 95,0% | 94,0% | No disponible | Hugging Face (MLX/oMLX) |
+| Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored (original de Nightmedia) | 35,9B totales / ~3B activos | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 Las tres variantes cuantizadas comparten arquitectura y base, por lo que la comparacion relevante es de precision frente a velocidad: oQ4e-mtp gana en velocidad (2,9x frente a qx64-hi-mlx a longitudes conversacionales) y en memoria (hasta 8 GB menos), mientras que oQ6e-mtp y qx64-hi-mlx retienen ventaja en LiveCodeBench (69,0% y 67,0% frente a 58,0%) y Winogrande (78,0% y 81,3% frente a 76,3%). No se dispone de datos de modelos comparables de otros fabricantes en la informacion proporcionada.
 
@@ -114,7 +114,7 @@ Las tres variantes cuantizadas comparten arquitectura y base, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gatesushi/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/gatesushi/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-oQ4e-mtp
 - Modelo base de Nightmedia: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored
 - Captura de ejemplo de la model card: https://cdn-uploads.huggingface.co/production/uploads/690972064766b88b0950fc69/YJXIWTizEfLaB7rTUYZLC.png
 - Paper, blog o repositorio del framework oMLX: no disponible en la informacion proporcionada

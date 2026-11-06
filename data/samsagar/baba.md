@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samsagar/baba` es un modelo publicado en HuggingFace por el usuario samsagar bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni información sobre capacidades: únicamente declara la licencia. Se desconoce, por tanto, qué tipo de modelo es (lenguaje, visión, embeddings u otro) y para qué tarea fue entrenado.
+`samsagar/baba` es un modelo publicado en Hugging Face por el usuario samsagar bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni información sobre capacidades: únicamente declara la licencia. Se desconoce, por tanto, qué tipo de modelo es (lenguaje, visión, embeddings u otro) y para qué tarea fue entrenado.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no está asociado a ningún pipeline declarado en la plataforma. La fecha de creación y última actualización es la misma (27 de octubre de 2026), lo que sugiere una subida única sin revisiones posteriores.
 
@@ -64,7 +64,7 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni la tarea del model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| samsagar/baba | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| samsagar/baba | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni la tarea del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samsagar/baba
+- Hugging Face: https://huggingface.co/samsagar/baba
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

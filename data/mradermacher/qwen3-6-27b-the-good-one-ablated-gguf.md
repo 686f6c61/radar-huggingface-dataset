@@ -17,7 +17,7 @@ La ficha se centra en el modelo base `5vg/qwen3.6-27b-the-good-one-ablated`, del
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (la familia Qwen3.6-27B soporta hasta 1M de contexto segun busqueda web, pero no confirmado para este modelo) |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, mmproj-Q8_0, mmproj-f16 |
-| Idiomas soportados | Ingles (segun metadatos de HuggingFace) |
+| Idiomas soportados | Ingles (segun metadatos de Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (con versiones para llama.cpp, Ollama, etc.) |
 
@@ -79,7 +79,7 @@ La comparativa se basa en datos generales de la familia Qwen3.6, ya que no hay i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-GGUF
 - Modelo base: https://huggingface.co/5vg/qwen3.6-27b-the-good-one-ablated
 - Repositorio con quants imatrix: https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-i1-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
@@ -163,7 +163,7 @@ La comparativa se basa en datos generales de la familia Qwen3.6, ya que no se co
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-GGUF
 - Modelo base: https://huggingface.co/5vg/qwen3.6-27b-the-good-one-ablated
 - Repositorio de quants imatrix: https://huggingface.co/mradermacher/qwen3.6-27b-the-good-one-ablated-i1-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

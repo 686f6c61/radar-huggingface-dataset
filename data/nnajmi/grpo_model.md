@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRPO_Model es un repositorio de modelo publicado en HuggingFace por el usuario nnajmi bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. Tampoco se han registrado descargas ni likes, y la fecha de creacion y actualizacion del repositorio aparece fijada en 2026-09-19, un dato anomalo que conviene verificar antes de considerarlo un artefacto estable.
+GRPO_Model es un repositorio de modelo publicado en Hugging Face por el usuario nnajmi bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni ejemplos de uso. Tampoco se han registrado descargas ni likes, y la fecha de creacion y actualizacion del repositorio aparece fijada en 2026-09-19, un dato anomalo que conviene verificar antes de considerarlo un artefacto estable.
 
 El identificador del repositorio incluye el termino GRPO, acronimo de Group Relative Policy Optimization, una tecnica de ajuste fino por refuerzo popularizada por modelos de razonamiento como DeepSeek-R1. Es razonable inferir que se trata de un experimento de ajuste con RL sobre un modelo base, pero esta inference no esta confirmada por ninguna fuente: ni la model card, ni los resultados de busqueda web (que no devuelven ningun resultado relevante sobre el modelo) permiten verificar la arquitectura, el tamano ni el proceso de entrenamiento.
 
@@ -50,7 +50,7 @@ Antes de enumerar escenarios, conviene subrayar que ninguno de ellos puede valid
 - Prototipado de asistentes conversacionales: util en fases tempranas de experimentacion donde la licencia Apache 2.0 facilita la integracion sin negociacion de terminos.
 - Ajuste fino adicional sobre dominio propio: la licencia permisiva permite reentrenar y redistribuir el modelo, siempre que los pesos sean utilizables.
 - Evaluacion comparativa de algoritmos de RL: el repositorio puede incorporarse a un banco de pruebas interno junto a otros modelos ajustados con DPO, PPO u ORPO.
-- Docencia y formacion: como ejemplo practico de publicacion de artefactos en HuggingFace y de los riesgos de publicar pesos sin documentacion asociada.
+- Docencia y formacion: como ejemplo practico de publicacion de artefactos en Hugging Face y de los riesgos de publicar pesos sin documentacion asociada.
 
 En todos los casos, la ausencia de model card, de ejemplos y de benchmarks obliga a realizar una evaluacion previa a cualquier uso real.
 
@@ -74,7 +74,7 @@ No es posible establecer una comparativa fiable: sin conocer el numero de parame
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GRPO_Model (nnajmi) | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace sin documentacion |
+| GRPO_Model (nnajmi) | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face sin documentacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No es posible establecer una comparativa fiable: sin conocer el numero de parame
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nnajmi/GRPO_Model
+- Repositorio en Hugging Face: https://huggingface.co/nnajmi/GRPO_Model
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre el modelo. Las busquedas devuelven unicamente resultados de portales de noticias sin relacion con el repositorio.
 - Paper, blog o repositorio de codigo asociado: no disponible.

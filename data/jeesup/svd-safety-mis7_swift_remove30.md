@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-mis7_swift_remove30 es un checkpoint derivado de mistralai/Mistral-7B-Instruct-v0.2, publicado por el usuario Jeesup en HuggingFace, que ha sido comprimido mediante la tecnica SVD-LLM hasta conservar el 70,03 % de los parametros densos originales. Concretamente se elimino un 30,00 % de los parametros y no se restauro ningun componente SVD adicional (presupuesto de restauracion del 0,000 %, cero componentes restaurados). El resultado es un modelo denso de 7.241.732.096 parametros con pesos en safetensors.
+svd-safety-mis7_swift_remove30 es un checkpoint derivado de mistralai/Mistral-7B-Instruct-v0.2, publicado por el usuario Jeesup en Hugging Face, que ha sido comprimido mediante la tecnica SVD-LLM hasta conservar el 70,03 % de los parametros densos originales. Concretamente se elimino un 30,00 % de los parametros y no se restauro ningun componente SVD adicional (presupuesto de restauracion del 0,000 %, cero componentes restaurados). El resultado es un modelo denso de 7.241.732.096 parametros con pesos en safetensors.
 
 No se trata de un asistente conversacional de proposito general, sino de un artefacto de investigacion. Su objetivo es medir como la compresion por descomposicion en valores singulares degrada el comportamiento de seguridad de un modelo alineado y que reglas de seleccion de componentes consiguen repararlo. Este checkpoint es una celda concreta de una malla experimental que cruza reglas de seleccion y presupuestos de restauracion; la model card advierte explicitamente de que varias celdas de esa malla estan deliberadamente degradadas en seguridad.
 
@@ -105,6 +105,6 @@ En rendimiento no es posible establecer la comparativa cuantitativa: la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove30
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Los resultados de busqueda web proporcionados no contenian ningun enlace relevante para este modelo: consistian en hilos de foros sobre bloqueos de cuentas de Facebook y paginas de descarga de aplicaciones de video, sin relacion alguna con el checkpoint, SVD-LLM, Mistral o evaluaciones de seguridad. No se han encontrado por tanto papers, blogs, repositorios ni demos adicionales que enlazar.

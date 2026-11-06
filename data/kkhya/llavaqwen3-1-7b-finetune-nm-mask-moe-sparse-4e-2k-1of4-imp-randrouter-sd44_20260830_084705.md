@@ -75,7 +75,7 @@ No hay información suficiente para establecer una comparativa rigurosa. El mode
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd44_20260830_084705)
-- [Modelo base en HuggingFace](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
+- [Hugging Face - modelo](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter-sd44_20260830_084705)
+- [Modelo base en Hugging Face](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
 - [Modelos relacionados del mismo autor (variantes 2of4)](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter-sd3_20260811_213712)
 - [Repositorio MoE-LLaVA (referencia arquitectónica)](https://github.com/PKU-YuanGroup/MoE-LLaVA)

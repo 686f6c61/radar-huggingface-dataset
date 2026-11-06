@@ -74,8 +74,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `BeardedMonster/afriberta-large-masakhaner2-bam` | 125.047.305 | No disponible; entrenamiento con `max_length` 256 | `span_f1` 0,7820 en MasakhaNER 2.0 `bam` | No disponible; sujeta al modelo base | HuggingFace |
-| `castorini/afriberta_large` | No disponible en la información | No disponible | No evaluado para NER en esta ficha; es el modelo base sin cabeza NER específica | No disponible | HuggingFace |
+| `BeardedMonster/afriberta-large-masakhaner2-bam` | 125.047.305 | No disponible; entrenamiento con `max_length` 256 | `span_f1` 0,7820 en MasakhaNER 2.0 `bam` | No disponible; sujeta al modelo base | Hugging Face |
+| `castorini/afriberta_large` | No disponible en la información | No disponible | No evaluado para NER en esta ficha; es el modelo base sin cabeza NER específica | No disponible | Hugging Face |
 | Otros checkpoints de MasakhaNER 2.0 para `bam` | No disponible | No disponible | No disponible | No disponible | No disponible en la información |
 
 No se han identificado en la información proporcionada alternativas concretas comparables con métricas equivalentes para NER en bambara.
@@ -94,6 +94,6 @@ No se han identificado en la información proporcionada alternativas concretas c
 
 ## Enlaces
 
-- [HuggingFace: BeardedMonster/afriberta-large-masakhaner2-bam](https://huggingface.co/BeardedMonster/afriberta-large-masakhaner2-bam)
+- [Hugging Face: BeardedMonster/afriberta-large-masakhaner2-bam](https://huggingface.co/BeardedMonster/afriberta-large-masakhaner2-bam)
 - [Modelo base: castorini/afriberta_large](https://huggingface.co/castorini/afriberta_large)
 - No se han proporcionado otros enlaces a papers, blogs, repositorios o demos en la información disponible.

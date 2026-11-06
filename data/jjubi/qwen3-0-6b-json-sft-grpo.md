@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjubi/Qwen3-0.6B-JSON-SFT-GRPO` es un ajuste fino del modelo `jjubi/Qwen3-0.6B-JSON-SFT`, que a su vez deriva del pequeño modelo denso Qwen3-0.6B de Alibaba Qwen. El autor, identificado en HuggingFace como `jjubi`, publica este checkpoint con 596.049.920 parámetros (dato extraído de los pesos en safetensors) bajo licencia Apache 2.0 y con el pipeline de `text-generation`. El sufijo "GRPO" del nombre del repositorio sugiere una segunda fase de entrenamiento mediante *Group Relative Policy Optimization*, una variante de RL que se aplica habitualmente para reforzar la precisión en tareas verificables; el sufijo "JSON" apunta a un entrenamiento orientado a la generación de salidas estructuradas en formato JSON.
+`jjubi/Qwen3-0.6B-JSON-SFT-GRPO` es un ajuste fino del modelo `jjubi/Qwen3-0.6B-JSON-SFT`, que a su vez deriva del pequeño modelo denso Qwen3-0.6B de Alibaba Qwen. El autor, identificado en Hugging Face como `jjubi`, publica este checkpoint con 596.049.920 parámetros (dato extraído de los pesos en safetensors) bajo licencia Apache 2.0 y con el pipeline de `text-generation`. El sufijo "GRPO" del nombre del repositorio sugiere una segunda fase de entrenamiento mediante *Group Relative Policy Optimization*, una variante de RL que se aplica habitualmente para reforzar la precisión en tareas verificables; el sufijo "JSON" apunta a un entrenamiento orientado a la generación de salidas estructuradas en formato JSON.
 
 Se trata, por tanto, de un modelo muy pequeño (menos de 600 millones de parámetros, ~1,2 GB de repositorio) pensado para cargas de trabajo ligeras: generación de JSON válido, extracción de datos, clasificación y formateo de respuestas en entornos con recursos limitados o en CPU. Su relevancia práctica no está en el rendimiento bruto, sino en la posibilidad de ejecutarlo en hardware de consumo y en el hecho de que combina SFT y RL sobre una base moderna de la familia Qwen3.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jjubi/Qwen3-0.6B-JSON-SFT-GRPO | 596 M | No disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) | Ajuste SFT + GRPO orientado a JSON; sin benchmarks publicados |
-| Qwen/Qwen3-0.6B | ~0,6 B | No verificado en esta ficha | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base de la familia; dispone de documentación y evaluaciones oficiales del autor original |
-| jjubi/Qwen3-0.6B-JSON-SFT | 596 M | No disponible | Apache 2.0 | HuggingFace | Etapa previa (solo SFT) de este mismo checkpoint; sirve para comparar el efecto de la fase GRPO |
-| Qwen2.5-0.5B-Instruct | ~0,5 B | No verificado en esta ficha | Apache 2.0 | HuggingFace | Alternativa generacional anterior, muy desplegada en entornos embebidos |
+| jjubi/Qwen3-0.6B-JSON-SFT-GRPO | 596 M | No disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) | Ajuste SFT + GRPO orientado a JSON; sin benchmarks publicados |
+| Qwen/Qwen3-0.6B | ~0,6 B | No verificado en esta ficha | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base de la familia; dispone de documentación y evaluaciones oficiales del autor original |
+| jjubi/Qwen3-0.6B-JSON-SFT | 596 M | No disponible | Apache 2.0 | Hugging Face | Etapa previa (solo SFT) de este mismo checkpoint; sirve para comparar el efecto de la fase GRPO |
+| Qwen2.5-0.5B-Instruct | ~0,5 B | No verificado en esta ficha | Apache 2.0 | Hugging Face | Alternativa generacional anterior, muy desplegada en entornos embebidos |
 
 No se dispone de datos de rendimiento comparativos verificables para ninguno de los modelos de la tabla dentro de la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento comparativos verificables para ninguno de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjubi/Qwen3-0.6B-JSON-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/jjubi/Qwen3-0.6B-JSON-SFT-GRPO
 - Modelo base del ajuste: https://huggingface.co/jjubi/Qwen3-0.6B-JSON-SFT
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3-0.6B
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL, librería de HuggingFace citada: https://github.com/huggingface/trl
+- TRL, librería de Hugging Face citada: https://github.com/huggingface/trl
 - Resultados de búsqueda web: no se han encontrado enlaces técnicos relevantes; los resultados obtenidos corresponden a perfiles sociales ajenos al modelo y se han descartado.

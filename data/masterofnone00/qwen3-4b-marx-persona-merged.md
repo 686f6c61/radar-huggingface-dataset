@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`masterofnone00/qwen3-4b-marx-persona-merged` es un ajuste fino (fine-tuning) del modelo Qwen3-4B, concretamente derivado de la version cuantizada a 4 bits `unsloth/qwen3-4b-unsloth-bnb-4bit`. Lo publica el usuario masterofnone00 en HuggingFace bajo licencia Apache 2.0 y con un unico idioma declarado, el ingles. Se trata de un modelo denso de 4.022.468.096 parametros (unos 4,02 mil millones) que genera texto conversacional y que, por el sufijo "merged" del repositorio, se distribuye ya con los pesos de la adaptacion fusionados en el modelo base, en formato safetensors y con un tamano de repositorio de 8,1 GB (coherente con pesos en bf16/fp16).
+`masterofnone00/qwen3-4b-marx-persona-merged` es un ajuste fino (fine-tuning) del modelo Qwen3-4B, concretamente derivado de la version cuantizada a 4 bits `unsloth/qwen3-4b-unsloth-bnb-4bit`. Lo publica el usuario masterofnone00 en Hugging Face bajo licencia Apache 2.0 y con un unico idioma declarado, el ingles. Se trata de un modelo denso de 4.022.468.096 parametros (unos 4,02 mil millones) que genera texto conversacional y que, por el sufijo "merged" del repositorio, se distribuye ya con los pesos de la adaptacion fusionados en el modelo base, en formato safetensors y con un tamano de repositorio de 8,1 GB (coherente con pesos en bf16/fp16).
 
 El interes de este modelo es acotado pero concreto: es un ejemplo de flujo de trabajo QLoRA con Unsloth y TRL, que permite ajustar un modelo de 4B en una sola GPU de consumo y publicar el resultado fusionado listo para usar con `transformers`. El sufijo "marx-persona" sugiere que el ajuste se ha orientado a adoptar una personalidad o estilo concreto, aunque la model card no detalla ni el dataset, ni el numero de tokens, ni la metodologia de alineamiento empleada.
 
@@ -25,7 +25,7 @@ Es relevante ahora como caso de estudio de personalizacion ligera, pero conviene
 
 La arquitectura es la del modelo base Qwen3-4B: un transformer denso (no MoE, no SSM) con atencion por consultas agrupadas (GQA) en su configuracion estandar. La informacion proporcionada no incluye el numero de capas, la dimension oculta, el numero de cabezas ni el tipo exacto de normalizacion, por lo que esos datos deben consultarse en la documentacion oficial de Qwen3-4B. Los pesos publicados son el resultado de fusionar la adaptacion en los pesos base, de ahi el sufijo "merged".
 
-En cuanto al entrenamiento, la model card indica unicamente que el modelo se entreno "2x faster" con Unsloth y la libreria TRL de HuggingFace, lo que apunta a un ajuste tipo LoRA/QLoRA sobre la base ya cuantizada a 4 bits (`unsloth-bnb-4bit`). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la longitud de secuencia usada, ni si hubo etapas de RLHF, DPO o cualquier otro metodo de alineamiento. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modos de razonamiento explicitos, etc.). Toda la informacion sobre el proceso de ajuste es, por tanto, un dato ausente y no una caracteristica confirmada.
+En cuanto al entrenamiento, la model card indica unicamente que el modelo se entreno "2x faster" con Unsloth y la libreria TRL de Hugging Face, lo que apunta a un ajuste tipo LoRA/QLoRA sobre la base ya cuantizada a 4 bits (`unsloth-bnb-4bit`). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la longitud de secuencia usada, ni si hubo etapas de RLHF, DPO o cualquier otro metodo de alineamiento. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modos de razonamiento explicitos, etc.). Toda la informacion sobre el proceso de ajuste es, por tanto, un dato ausente y no una caracteristica confirmada.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada con cuantizacion de 4 bits (requiere convertir los pesos, no se distribuye GGUF): aproximadamente 3-4 GB con cache KV reducida.
 - GPU recomendadas: para bf16, NVIDIA A100 40 GB, H100 o L40S. Para uso en consumo, RTX 3090, RTX 4090, RTX 4080 o RTX 4060 Ti de 16 GB van sobradas; una RTX 3060 de 12 GB permite bf16 ajustado o cuantizacion.
 - Cabe en GPU de consumo: si. Con 4 bits es viable incluso en GPUs de 8 GB si se convierte a GGUF.
-- Opciones de despliegue: `transformers` de forma nativa (es el formato publicado). El tag `text-generation-inference` sugiere compatibilidad con TGI, y el tag `endpoints_compatible` con HuggingFace Inference Endpoints. vLLM es una opcion razonable para servirlo con throughput alto, siempre que soporte la configuracion de Qwen3-4B. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, algo que el autor no ha publicado.
+- Opciones de despliegue: `transformers` de forma nativa (es el formato publicado). El tag `text-generation-inference` sugiere compatibilidad con TGI, y el tag `endpoints_compatible` con Hugging Face Inference Endpoints. vLLM es una opcion razonable para servirlo con throughput alto, siempre que soporte la configuracion de Qwen3-4B. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, algo que el autor no ha publicado.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas, y cualquier cifra dependera del hardware y del backend elegido.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La comparacion con el modelo base es la mas relevante: este ajuste parte de Qwen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofnone00/qwen3-4b-marx-persona-merged
+- Modelo en Hugging Face: https://huggingface.co/masterofnone00/qwen3-4b-marx-persona-merged
 - Modelo base utilizado: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
 - Familia Qwen3 (documentacion del modelo base): https://huggingface.co/Qwen/Qwen3-4B

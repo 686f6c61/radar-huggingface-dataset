@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yamaguchifield/mocov3-multitask-quantized` es un repositorio publicado en HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Mocov3" orientada a tareas multitarea. El autor lo describe explícitamente como un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción. El repositorio no declara métricas de benchmarks y su checkpoint `model.safetensors` se presenta como una inicialización válida para pruebas, no como un modelo entrenado.
+`yamaguchifield/mocov3-multitask-quantized` es un repositorio publicado en Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada "Mocov3" orientada a tareas multitarea. El autor lo describe explícitamente como un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como una release preentrenada lista para producción. El repositorio no declara métricas de benchmarks y su checkpoint `model.safetensors` se presenta como una inicialización válida para pruebas, no como un modelo entrenado.
 
 El modelo tiene 24.832 parámetros según el recuento real de los tensores en safetensors, una cifra extremadamente reducida que contrasta con la etiqueta "large" que aparece en la model card. Esta discrepancia es relevante: la escala declarada corresponde a la configuración interna del script del autor, no al tamaño real del checkpoint publicado. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -82,5 +82,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yamaguchifield/mocov3-multitask-quantized
+- Repositorio en Hugging Face: https://huggingface.co/yamaguchifield/mocov3-multitask-quantized
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados recuperados no son pertinentes.

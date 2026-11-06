@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danaeludy/my_awesome_model` es un modelo de clasificación de texto obtenido mediante fine-tuning de `distilbert/distilbert-base-uncased`, la versión destilada de BERT con 66.955.010 parámetros. Lo publica el usuario danaeludy en HuggingFace y su model card se ha generado automáticamente con la herramienta `Trainer` de Transformers, sin documentación adicional sobre el conjunto de datos, las etiquetas ni el uso previsto. Es, por tanto, un modelo de demostración o de experimentación, no un artefacto listo para producción.
+`danaeludy/my_awesome_model` es un modelo de clasificación de texto obtenido mediante fine-tuning de `distilbert/distilbert-base-uncased`, la versión destilada de BERT con 66.955.010 parámetros. Lo publica el usuario danaeludy en Hugging Face y su model card se ha generado automáticamente con la herramienta `Trainer` de Transformers, sin documentación adicional sobre el conjunto de datos, las etiquetas ni el uso previsto. Es, por tanto, un modelo de demostración o de experimentación, no un artefacto listo para producción.
 
 La relevancia práctica es limitada pero ilustrativa: sirve como ejemplo canónico del flujo de fine-tuning para clasificación de texto con la librería Transformers, con un resultado declarado de 0,931 de accuracy y 0,2365 de pérdida sobre un conjunto de evaluación no identificado. Su tamaño reducido (unos 0,5 GB de repositorio, 67 millones de parámetros) permite ejecutarlo en CPU y en cualquier GPU de consumo, y la licencia Apache 2.0 facilita su reutilización.
 
@@ -75,7 +75,7 @@ La model card solo declara métricas sobre un conjunto de evaluación no identif
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `danaeludy/my_awesome_model` | 66,9 M | 512 tokens | accuracy 0,931 en conjunto no identificado | Apache 2.0 | HuggingFace; 0 descargas, 0 likes |
+| `danaeludy/my_awesome_model` | 66,9 M | 512 tokens | accuracy 0,931 en conjunto no identificado | Apache 2.0 | Hugging Face; 0 descargas, 0 likes |
 | `distilbert/distilbert-base-uncased` | 66,9 M | 512 tokens | modelo base sin fine-tuning; resultados GLUE publicados por el autor original | Apache 2.0 | ampliamente usado |
 | `google-bert/bert-base-uncased` | 110 M | 512 tokens | superior al destilado en GLUE, con ~65 % más de parámetros | Apache 2.0 | referencia estándar |
 | `FacebookAI/roberta-base` | 124,6 M | 514 tokens | mejor rendimiento medio en clasificación, mayor coste | MIT | ampliamente usado |
@@ -97,6 +97,6 @@ La comparación de rendimiento con este modelo concreto no es posible: no hay re
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/danaeludy/my_awesome_model)
+- [Modelo en Hugging Face](https://huggingface.co/danaeludy/my_awesome_model)
 - [Modelo base: distilbert/distilbert-base-uncased](https://huggingface.co/distilbert/distilbert-base-uncased)
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a un paper, a un blog técnico ni a un repositorio de código. Los resultados devueltos por la búsqueda no guardan relación con el modelo y se han descartado.

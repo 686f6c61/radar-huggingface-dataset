@@ -62,5 +62,5 @@ No disponible. No se conocen modelos comparables de detección de vulnerabilidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChamaraVishwajithRajapaksha/vuln-detector-smollm2-1.7b-instruct
+- Hugging Face: https://huggingface.co/ChamaraVishwajithRajapaksha/vuln-detector-smollm2-1.7b-instruct
 - Otro modelo del mismo autor: https://huggingface.co/ChamaraVishwajithRajapaksha/gemma-4-vulnerability-detector

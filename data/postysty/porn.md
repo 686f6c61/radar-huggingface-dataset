@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Postysty/Porn` es un artefacto publicado en HuggingFace por el usuario `Postysty` bajo licencia Apache-2.0. La etiqueta `not-for-all-audiences` y el nombre del repositorio sugieren que el contenido puede estar orientado a un público adulto. En el momento de la consulta, la información técnica disponible es mínima: no se especifican arquitectura, tamaño, contexto ni idiomas soportados. El repositorio presenta 0 descargas y 0 «likes», y no se ha publicado documentación, benchmarks ni ejemplos de uso. Por tanto, no es posible evaluar qué problema resuelve ni cuál es su relevancia técnica.
+El modelo `Postysty/Porn` es un artefacto publicado en Hugging Face por el usuario `Postysty` bajo licencia Apache-2.0. La etiqueta `not-for-all-audiences` y el nombre del repositorio sugieren que el contenido puede estar orientado a un público adulto. En el momento de la consulta, la información técnica disponible es mínima: no se especifican arquitectura, tamaño, contexto ni idiomas soportados. El repositorio presenta 0 descargas y 0 «likes», y no se ha publicado documentación, benchmarks ni ejemplos de uso. Por tanto, no es posible evaluar qué problema resuelve ni cuál es su relevancia técnica.
 
 ## Especificaciones técnicas
 

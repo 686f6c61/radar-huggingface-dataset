@@ -111,7 +111,7 @@ Los datos de Whisper tiny y del Moonshine tiny original no están disponibles en
 
 ## Enlaces
 
-- HuggingFace (conversión GGUF): https://huggingface.co/tryambientai/moonshine-tiny-uk-gguf
+- Hugging Face (conversión GGUF): https://huggingface.co/tryambientai/moonshine-tiny-uk-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-uk
 - Commit del modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-uk/commit/8cf70f4
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

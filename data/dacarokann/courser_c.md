@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - No se proporcionan datos específicos de VRAM, GPU recomendada o latencia en la información disponible.
 - Dado que el modelo base tiene 35B parámetros totales y 3B activos, la inferencia en bf16 requiere al menos una GPU con 24 GB de VRAM para los parámetros activos, aunque el modelo completo puede necesitar más.
 - El adaptador LoRA es ligero y puede cargarse sobre el modelo base en sistemas con suficiente memoria.
-- Opciones de despliegue: no se mencionan vLLM, llama.cpp, Ollama ni TGI en la documentación; al ser un modelo PEFT, es probablemente compatible con bibliotecas como Transformers y PEFT de HuggingFace.
+- Opciones de despliegue: no se mencionan vLLM, llama.cpp, Ollama ni TGI en la documentación; al ser un modelo PEFT, es probablemente compatible con bibliotecas como Transformers y PEFT de Hugging Face.
 - No se dispone de estimaciones de throughput.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/dacarokann/Courser_c
+- Hugging Face del adaptador: https://huggingface.co/dacarokann/Courser_c
 - Modelo de producción (destrier): https://huggingface.co/dacarokann/destrier
 - Modelo base (unsloth/Qwen3.6-35B-A3B): https://huggingface.co/unsloth/Qwen3.6-35B-A3B

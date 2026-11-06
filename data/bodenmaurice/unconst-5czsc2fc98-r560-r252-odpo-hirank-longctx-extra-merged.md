@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bodenmaurice/unconst-5czsc2fc98-r560-r252-odpo-hirank-longctx-extra-merged` es un checkpoint derivado de la serie Affine, concretamente un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los metadatos de HuggingFace, se trata de un modelo de tipo `qwen3_5_moe`, lo que indica una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5. El repositorio contiene pesos en formato safetensors con un total de 35.107.181.936 parámetros (~35B), aunque al ser MoE los parámetros activos por token serán inferiores. El modelo está etiquetado como `image-text-to-text`, lo que sugiere capacidades multimodales, aunque no se proporciona documentación detallada al respecto.
+El modelo `bodenmaurice/unconst-5czsc2fc98-r560-r252-odpo-hirank-longctx-extra-merged` es un checkpoint derivado de la serie Affine, concretamente un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los metadatos de Hugging Face, se trata de un modelo de tipo `qwen3_5_moe`, lo que indica una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5. El repositorio contiene pesos en formato safetensors con un total de 35.107.181.936 parámetros (~35B), aunque al ser MoE los parámetros activos por token serán inferiores. El modelo está etiquetado como `image-text-to-text`, lo que sugiere capacidades multimodales, aunque no se proporciona documentación detallada al respecto.
 
 La model card es extremadamente escueta: indica que es un "LoRA-merged" y menciona "Private TTL insurance; not a submission until Stage-5 gate clears", lo que sugiere que es un checkpoint intermedio de un proceso de entrenamiento en curso, no una versión final destinada a producción. No se especifican datos de entrenamiento, licencia, idiomas soportados ni benchmarks. Por tanto, esta ficha se basa únicamente en la información disponible en el repositorio y en los metadatos asociados, sin datos adicionales confirmados.
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos fiables. El modelo pertenece a la serie Affi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r560-r252-odpo-hirank-longctx-extra-merged
+- Repositorio Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r560-r252-odpo-hirank-longctx-extra-merged
 - Modelo base (referencia): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - Checkpoint relacionado de la serie Affine: https://huggingface.co/unconst/Affine-5czsc2fc98-h56-merged
 - Checkpoint relacionado de la serie Affine: https://huggingface.co/unconst/Affine-5czsc2fc98-r230-bon-lora

@@ -104,5 +104,5 @@ Frente a 1.5 Small, la versión 2 gana en multi-turno (especialmente con histori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kernkraft/prism-roleplay-2-small
+- Modelo en Hugging Face: https://huggingface.co/kernkraft/prism-roleplay-2-small
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Stijnjansen/self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/Stijnjansen/self-supervised
 - Resultados de busqueda web (no relacionados directamente con este repositorio):
   - Perfil de Stefan Jansen en GitHub: https://github.com/stefan-jansen
   - Perfil de Stefan Jansen en Google Scholar: https://scholar.google.com/citations?user=dRKfiYQAAAAJ&hl=en

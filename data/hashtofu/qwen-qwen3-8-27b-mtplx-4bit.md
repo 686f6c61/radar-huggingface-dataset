@@ -79,5 +79,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: hashtofu/Qwen-Qwen3.8-27B-MTPLX-4bit](https://huggingface.co/hashtofu/Qwen-Qwen3.8-27B-MTPLX-4bit)
+- [Hugging Face: hashtofu/Qwen-Qwen3.8-27B-MTPLX-4bit](https://huggingface.co/hashtofu/Qwen-Qwen3.8-27B-MTPLX-4bit)
 - [MTPLX Forge (repositorio de la herramienta)](https://github.com/youssofal/MTPLX)

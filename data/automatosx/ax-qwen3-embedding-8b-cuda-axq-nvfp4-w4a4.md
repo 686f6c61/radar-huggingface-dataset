@@ -75,8 +75,8 @@ Umbrales exigidos por el script de comprobacion: coseno medio >= 0,95 y coseno m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3-Embedding-8B-CUDA-AXQ-NVFP4-W4A4 | 7.567.295.488 | No disponible | NVFP4 W4A4 con atencion y bloques MLP extremos en BF16 | Apache 2.0 | HuggingFace, preview de desarrollo |
-| Qwen/Qwen3-Embedding-8B (modelo base) | No disponible en la informacion proporcionada | No disponible | BF16 | Apache 2.0 | HuggingFace (revision 1d8ad4ca9b3dd8059ad90a75d4983776a23d44af) |
+| AX-Qwen3-Embedding-8B-CUDA-AXQ-NVFP4-W4A4 | 7.567.295.488 | No disponible | NVFP4 W4A4 con atencion y bloques MLP extremos en BF16 | Apache 2.0 | Hugging Face, preview de desarrollo |
+| Qwen/Qwen3-Embedding-8B (modelo base) | No disponible en la informacion proporcionada | No disponible | BF16 | Apache 2.0 | Hugging Face (revision 1d8ad4ca9b3dd8059ad90a75d4983776a23d44af) |
 | Otros modelos de embeddings comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su modelo base ni alternativas de embeddings; los resultados obtenidos correspondian a contenido sin relacion (guias y foros de videojuegos), por lo que no se han usado como fuente.
@@ -98,7 +98,7 @@ La busqueda web realizada no devolvio ningun resultado relevante sobre este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-CUDA-AXQ-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-CUDA-AXQ-NVFP4-W4A4
 - Modelo base Qwen/Qwen3-Embedding-8B: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Revision fuente inmutable del modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B/tree/1d8ad4ca9b3dd8059ad90a75d4983776a23d44af
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

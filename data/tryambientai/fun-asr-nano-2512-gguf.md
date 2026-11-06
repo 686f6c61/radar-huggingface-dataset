@@ -99,8 +99,8 @@ La comparación con Whisper se ofrece como referencia de categoría (ASR multili
 
 ## Enlaces
 
-- Repositorio HuggingFace del port GGUF: https://huggingface.co/tryambientai/Fun-ASR-Nano-2512-gguf
-- Modelo base en HuggingFace: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
+- Repositorio Hugging Face del port GGUF: https://huggingface.co/tryambientai/Fun-ASR-Nano-2512-gguf
+- Modelo base en Hugging Face: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
 - Modelo base en ModelScope: https://www.modelscope.cn/models/FunAudioLLM/Fun-ASR-Nano-2512
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/fun-asr-nano-2512.md

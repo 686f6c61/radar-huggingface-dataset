@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos comparables de otros autores en 
 
 ## Enlaces
 
-- [HuggingFace: DAGroup-PKU/HumanWAM-Vanilla-RoboTwin](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-RoboTwin)
+- [Hugging Face: DAGroup-PKU/HumanWAM-Vanilla-RoboTwin](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-RoboTwin)
 - [Modelo base: DAGroup-PKU/HumanWAM-Vanilla-Base](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-Base)
 - [Variante: DAGroup-PKU/HumanWAM-Vanilla-RoboDojo](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-RoboDojo)
 - [Dataset: DAGroup-PKU/Open-HumanScale-50K](https://huggingface.co/datasets/DAGroup-PKU/Open-HumanScale-50K)

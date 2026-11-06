@@ -73,10 +73,10 @@ El autor indica que la pérdida en GSM8K se debe casi exclusivamente a una mayor
 
 | Modelo | Parámetros | Cuantización | Contexto | GSM8K (5-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **Qwen3.8-27B-heretic-ara (BF16)** | ~35B | BF16 | 262K | 78,39% | apache-2.0 (base) | HuggingFace |
-| **Este checkpoint (INT4+INT8)** | ~35B | INT4/INT8 | 262K | 77,63% | apache-2.0 (base) | HuggingFace |
-| **W4A16 (AutoRound)** | ~35B | INT4 W4A16 | no disponible | no disponible | apache-2.0 | HuggingFace |
-| **W8A16 MTP (de lued)** | ~35B | INT8 W8A16 | no disponible | no disponible | no disponible | HuggingFace |
+| **Qwen3.8-27B-heretic-ara (BF16)** | ~35B | BF16 | 262K | 78,39% | apache-2.0 (base) | Hugging Face |
+| **Este checkpoint (INT4+INT8)** | ~35B | INT4/INT8 | 262K | 77,63% | apache-2.0 (base) | Hugging Face |
+| **W4A16 (AutoRound)** | ~35B | INT4 W4A16 | no disponible | no disponible | apache-2.0 | Hugging Face |
+| **W8A16 MTP (de lued)** | ~35B | INT8 W8A16 | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparativa muestra que esta variante INT4+INT8 ofrece una degradación mínima frente al BF16 original (menos de 1 punto en GSM8K), mientras que las alternativas W4A16 y W8A16 no tienen benchmarks publicados en la información disponible. El modelo W4A16 de JC1DA usa AutoRound en lugar de GPTQ, lo que puede implicar diferencias de compatibilidad con vLLM.
 
@@ -92,7 +92,7 @@ La comparativa muestra que esta variante INT4+INT8 ofrece una degradación míni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JC1DA/Qwen3.8-27B-heretic-ara-INT4-INT8-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/JC1DA/Qwen3.8-27B-heretic-ara-INT4-INT8-GPTQ
 - Variante W4A16 (AutoRound): https://huggingface.co/JC1DA/Qwen3.8-27B-heretic-ara-W4A16
 - Variante W8A16 (de lued): https://llm-explorer.com/model/lued%2FQwen3.8-27B-heretic-ara-INT8-W8A16-MTP,7cMtamBqxIcZma6naAl8Er
 - Modelo base *heretic-ara* (de trohrbaugh): https://llm-explorer.com/model/trohrbaugh%2FQwen3.8-27B-heretic-ara,3lOkoblJbLCrW6LcRlJIk

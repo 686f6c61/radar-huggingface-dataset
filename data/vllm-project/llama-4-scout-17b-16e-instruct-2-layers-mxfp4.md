@@ -85,7 +85,7 @@ La comparativa relevante es con el modelo completo del que deriva: este checkpoi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vllm-project/Llama-4-Scout-17B-16E-Instruct-2-layers-mxfp4
+- Repositorio en Hugging Face: https://huggingface.co/vllm-project/Llama-4-Scout-17B-16E-Instruct-2-layers-mxfp4
 - Checkpoint original copiado: https://huggingface.co/mawong-amd/Llama-4-Scout-17B-16E-Instruct-2-layers-mxfp4
 - Repositorio de vLLM: https://github.com/vllm-project/vllm
 - Modelo Llama 4 Scout de Meta: https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct

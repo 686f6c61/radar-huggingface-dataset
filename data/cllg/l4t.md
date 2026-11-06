@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CLLG/l4t` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario CLLG, construido sobre el modelo base `Qwen/Qwen3-0.6B`. Se trata de un ajuste fino de tipo PEFT (Parameter-Efficient Fine-Tuning) que modifica parcialmente los pesos del modelo original mediante matrices de bajo rango, una técnica habitual para adaptar modelos grandes a tareas específicas con un coste computacional reducido. El repositorio contiene únicamente los pesos del adaptador (0.7 GB) y no incluye una model card sustancial: todos los campos descriptivos aparecen como "[More Information Needed]".
+El modelo `CLLG/l4t` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario CLLG, construido sobre el modelo base `Qwen/Qwen3-0.6B`. Se trata de un ajuste fino de tipo PEFT (Parameter-Efficient Fine-Tuning) que modifica parcialmente los pesos del modelo original mediante matrices de bajo rango, una técnica habitual para adaptar modelos grandes a tareas específicas con un coste computacional reducido. El repositorio contiene únicamente los pesos del adaptador (0.7 GB) y no incluye una model card sustancial: todos los campos descriptivos aparecen como "[More Information Needed]".
 
 La relevancia de este modelo es limitada en el ecosistema actual, ya que no se ha publicado información sobre el conjunto de datos de entrenamiento, el proceso de ajuste, los hiperparámetros utilizados ni los resultados de evaluación. Al estar basado en Qwen3-0.6B, hereda la arquitectura transformer de dicha familia, pero sin documentación adicional no es posible determinar qué capacidades específicas se han potenciado o modificado. Su fecha de creación (septiembre de 2026) sugiere que es un modelo reciente, aunque sin métricas ni ejemplos de uso, su utilidad práctica queda supeditada a la experimentación directa por parte del usuario.
 
@@ -82,6 +82,6 @@ La comparativa se basa en el modelo base, ya que el adaptador no aporta informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CLLG/l4t
+- Repositorio Hugging Face: https://huggingface.co/CLLG/l4t
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Documentación de PEFT: https://huggingface.co/docs/peft

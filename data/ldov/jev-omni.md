@@ -115,7 +115,7 @@ Advertencias sobre la comparativa, tal como las recoge la model card: los result
 - Riesgo de alucinacion: al no generar texto, el riesgo se traslada a decisiones erroneas con probabilidad alta; la propia model card publica ECE (0,0400) como indicador de calibracion, que debe validarse en el dominio concreto de despliegue.
 - Sesgos: no se documenta ningun analisis de sesgos por parte del autor.
 - Restricciones de licencia: los pesos son Apache-2.0, siguiendo la licencia de Gemma 4, pero la model card indica que los derechos del dataset son independientes, por lo que el uso comercial del modelo no cubre necesariamente los datos subyacentes.
-- Trazabilidad de repositorio: el identificador de HuggingFace es ldov/Jev-Omni, mientras que el codigo de ejemplo y los enlaces de la model card apuntan a akhilaaa3/Jev-Omni. Conviene verificar cual es el repositorio canonico antes de integrarlo.
+- Trazabilidad de repositorio: el identificador de Hugging Face es ldov/Jev-Omni, mientras que el codigo de ejemplo y los enlaces de la model card apuntan a akhilaaa3/Jev-Omni. Conviene verificar cual es el repositorio canonico antes de integrarlo.
 - Estado de adopcion: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
 - Despliegue limitado: no hay soporte documentado para vLLM, llama.cpp, Ollama o TGI, ni formatos cuantizados, lo que restringe las opciones de produccion a la ruta de transformers con el loader del autor.
 - Requisito de hardware elevado: FP32 requiere unos 50 GB, lo que excluye GPUs de consumo en la configuracion documentada.
@@ -123,7 +123,7 @@ Advertencias sobre la comparativa, tal como las recoge la model card: los result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ldov/Jev-Omni
+- Modelo en Hugging Face: https://huggingface.co/ldov/Jev-Omni
 - Repositorio referenciado en el codigo de ejemplo: https://huggingface.co/akhilaaa3/Jev-Omni
 - Requisitos de instalacion: https://huggingface.co/akhilaaa3/Jev-Omni/resolve/main/requirements.txt
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it

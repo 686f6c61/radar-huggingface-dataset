@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-mild_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer decoder-only de 8 mil millones de parámetros desarrollado por Meta. El adaptador está publicado en HuggingFace por el usuario Jordine, pero la model card asociada está prácticamente vacía: no se proporciona información sobre el propósito del fine-tuning, los datos de entrenamiento, el proceso de ajuste ni las tareas específicas para las que fue diseñado. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,7 GB) y las etiquetas indican que se trata de un adaptador LoRA para generación de texto conversacional.
+El modelo `Jordine/patina3-mild_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer decoder-only de 8 mil millones de parámetros desarrollado por Meta. El adaptador está publicado en Hugging Face por el usuario Jordine, pero la model card asociada está prácticamente vacía: no se proporciona información sobre el propósito del fine-tuning, los datos de entrenamiento, el proceso de ajuste ni las tareas específicas para las que fue diseñado. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0,7 GB) y las etiquetas indican que se trata de un adaptador LoRA para generación de texto conversacional.
 
 La relevancia de este modelo es limitada debido a la ausencia total de documentación técnica. Al ser un adaptador sobre Llama-3.1-8B, hereda las capacidades generales del modelo base, pero no se puede afirmar qué comportamiento específico ha sido potenciado o modificado. La fecha de creación (2026-08-16) es posterior a la fecha actual, lo que sugiere que podría tratarse de un artefacto experimental o una publicación incompleta. En cualquier caso, cualquier uso en producción requeriría una evaluación empírica exhaustiva por parte del desarrollador.
 
@@ -58,14 +58,14 @@ No se dispone de información específica sobre los requisitos de hardware del a
 - VRAM estimada: ~16 GB en FP16, ~8 GB en int8, ~4 GB en int4 (para el modelo base).
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB), A100 (40/80 GB), H100 (80 GB).
 - El adaptador LoRA se carga junto al modelo base, por lo que el requisito de VRAM es el del modelo base más un pequeño overhead.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers con PEFT, TGI.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con PEFT, TGI.
 - Latencia y throughput: no disponibles.
 
 Dado que el adaptador es de tipo LoRA, puede combinarse con el modelo base en tiempo de inferencia sin necesidad de fusionar los pesos, lo que permite cambiar entre adaptadores sin recargar el modelo base.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa con otros adaptadores LoRA sobre Llama-3.1-8B. Existen numerosos adaptadores públicos de este tipo en HuggingFace, pero sin datos sobre el entrenamiento o el rendimiento de este modelo en particular, cualquier comparación sería especulativa. Se recomienda consultar el leaderboard de Open LLM para comparar modelos base, y evaluar este adaptador de forma empírica frente a alternativas como otros fine-tunes de Llama-3.1-8B (por ejemplo, `NousResearch/Hermes-3-Llama-3.1-8B` o `mlabonne/NeuralHermes-2.5-Mistral-7B`), siempre que se disponga de datos de evaluación propios.
+No se dispone de información suficiente para establecer una comparativa con otros adaptadores LoRA sobre Llama-3.1-8B. Existen numerosos adaptadores públicos de este tipo en Hugging Face, pero sin datos sobre el entrenamiento o el rendimiento de este modelo en particular, cualquier comparación sería especulativa. Se recomienda consultar el leaderboard de Open LLM para comparar modelos base, y evaluar este adaptador de forma empírica frente a alternativas como otros fine-tunes de Llama-3.1-8B (por ejemplo, `NousResearch/Hermes-3-Llama-3.1-8B` o `mlabonne/NeuralHermes-2.5-Mistral-7B`), siempre que se disponga de datos de evaluación propios.
 
 ## Limitaciones y advertencias
 
@@ -78,5 +78,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: Jordine/patina3-mild_sdf_s1](https://huggingface.co/Jordine/patina3-mild_sdf_s1)
+- [Hugging Face: Jordine/patina3-mild_sdf_s1](https://huggingface.co/Jordine/patina3-mild_sdf_s1)
 - [Paper referenciado en tags: Lacoste et al. (2019) - Machine Learning Impact calculator](https://arxiv.org/abs/1910.09700)

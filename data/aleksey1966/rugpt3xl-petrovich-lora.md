@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA denominado `ruGPT3XL-petrovich-lora`, publicado por el usuario `aleksey1966` en HuggingFace. El nombre sugiere que se trata de un ajuste fino del modelo base ruGPT3XL orientado a imitar el estilo o la personalidad de un personaje llamado "Petrovich", un arquetipo habitual en la cultura rusa y presente en obras como el videojuego S.T.A.L.K.E.R. Sin embargo, la model card está prácticamente vacía: todos los campos técnicos aparecen como "[More Information Needed]", por lo que no hay documentación oficial sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del adaptador.
+Este repositorio contiene un adaptador LoRA denominado `ruGPT3XL-petrovich-lora`, publicado por el usuario `aleksey1966` en Hugging Face. El nombre sugiere que se trata de un ajuste fino del modelo base ruGPT3XL orientado a imitar el estilo o la personalidad de un personaje llamado "Petrovich", un arquetipo habitual en la cultura rusa y presente en obras como el videojuego S.T.A.L.K.E.R. Sin embargo, la model card está prácticamente vacía: todos los campos técnicos aparecen como "[More Information Needed]", por lo que no hay documentación oficial sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del adaptador.
 
-El repositorio ocupa solo 0.1 GB, lo que es consistente con un adaptador LoRA (que contiene únicamente los pesos del ajuste, no el modelo base completo). Está etiquetado con `transformers`, `safetensors` y `endpoints_compatible`, lo que indica que se puede cargar con la librería Transformers y que es compatible con endpoints de HuggingFace. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre emisiones de carbono en el aprendizaje automático, incluido en la plantilla de la model card, no a la arquitectura del modelo.
+El repositorio ocupa solo 0.1 GB, lo que es consistente con un adaptador LoRA (que contiene únicamente los pesos del ajuste, no el modelo base completo). Está etiquetado con `transformers`, `safetensors` y `endpoints_compatible`, lo que indica que se puede cargar con la librería Transformers y que es compatible con endpoints de Hugging Face. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre emisiones de carbono en el aprendizaje automático, incluido en la plantilla de la model card, no a la arquitectura del modelo.
 
 La relevancia de este modelo es limitada: no tiene descargas, no tiene likes y carece de documentación mínima para su uso en producción. Su interés radica únicamente en que puede servir como ejemplo de un adaptador LoRA para el modelo ruso ruGPT3XL, cuyo repositorio base se encuentra en `evilfreelancer/ruGPT3XL` y cuya familia de modelos se documenta en el repositorio GitHub `copyGPT`.
 
@@ -42,7 +42,7 @@ No hay casos de uso documentados en la información proporcionada. Dado el cará
 - Generación de diálogos en ruso con estilo de personaje: si el adaptador se entrenó para imitar a "Petrovich", podría utilizarse en aplicaciones de narrativa interactiva o juegos de rol, pero no hay evidencia de que funcione correctamente.
 - Experimentación con adaptadores LoRA sobre modelos GPT-3: este repositorio puede servir como ejemplo de cómo estructurar un LoRA para `ruGPT3XL`, aunque sin documentación el uso es limitado.
 - Investigación académica sobre adaptación de bajo rango en modelos ruso: si el adaptador funciona, podría analizarse para estudiar cómo LoRA captura características de estilo, pero no hay resultados publicados.
-- Pruebas de compatibilidad con `transformers` y endpoints: el repositorio está etiquetado como `endpoints_compatible`, lo que permite probar la carga del adaptador en infraestructura de HuggingFace, aunque no hay garantía de comportamiento.
+- Pruebas de compatibilidad con `transformers` y endpoints: el repositorio está etiquetado como `endpoints_compatible`, lo que permite probar la carga del adaptador en infraestructura de Hugging Face, aunque no hay garantía de comportamiento.
 - Reentrenamiento o fine-tuning adicional: los pesos LoRA podrían usarse como punto de partida para nuevos ajustes, pero sin datos sobre los datos de entrenamiento originales, no es recomendable.
 - Análisis de licencias y derechos de uso: dado que la licencia no está definida, cualquier uso comercial es legalmente arriesgado, por lo que el uso más realista es experimental y no productivo.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - El adaptador LoRA ocupa solo 0.1 GB, por lo que el almacenamiento necesario es mínimo.
 - La VRAM requerida para inferencia depende del modelo base `ruGPT3XL`, que no se incluye en el repositorio y cuyo tamaño no se documenta en la información proporcionada. No se puede estimar de forma fiable.
 - No hay datos sobre GPUs recomendadas, latencia ni throughput.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere que se puede desplegar en HuggingFace Inference Endpoints, pero no hay documentación de compatibilidad con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere que se puede desplegar en Hugging Face Inference Endpoints, pero no hay documentación de compatibilidad con vLLM, llama.cpp u Ollama.
 - Dado que es un LoRA, el despliegue requiere cargar el modelo base y luego aplicar el adaptador, lo que implica los requisitos del modelo base.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables. No hay datos de rendimi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aleksey1966/ruGPT3XL-petrovich-lora
-- Modelo base ruGPT3XL en HuggingFace (evilfreelancer): https://huggingface.co/evilfreelancer/ruGPT3XL
+- Repositorio de Hugging Face: https://huggingface.co/aleksey1966/ruGPT3XL-petrovich-lora
+- Modelo base ruGPT3XL en Hugging Face (evilfreelancer): https://huggingface.co/evilfreelancer/ruGPT3XL
 - Repositorio GitHub de la familia ruGPT3 (copyGPT): https://github.com/adolfkarpeyus/copyGPT
 - Paper de Lacoste et al. (2019) sobre emisiones de carbono (referenciado en el tag arxiv): https://arxiv.org/abs/1910.09726

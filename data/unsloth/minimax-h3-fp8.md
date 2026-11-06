@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/MiniMax-H3-FP8
+- Repositorio Hugging Face: https://huggingface.co/unsloth/MiniMax-H3-FP8
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog de Unsloth sobre rendimiento: https://unsloth.ai/blog (se menciona en la documentacion de Unsloth Desktop)

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Params totales | Params activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash (base) | 284B | 13B | 1M | Licencia DeepSeek | HuggingFace |
-| DeepSeek-V4-Flash-NVFP4-REAP-25 | 123,7B (cuantizado) | 23B (base) | 1M | No disponible en el repo | HuggingFace |
-| DeepSeek-V4-Pro | 1.6T | 49B | 1M | Licencia DeepSeek | HuggingFace |
+| DeepSeek-V4-Flash (base) | 284B | 13B | 1M | Licencia DeepSeek | Hugging Face |
+| DeepSeek-V4-Flash-NVFP4-REAP-25 | 123,7B (cuantizado) | 23B (base) | 1M | No disponible en el repo | Hugging Face |
+| DeepSeek-V4-Pro | 1.6T | 49B | 1M | Licencia DeepSeek | Hugging Face |
 | Qwen2.5-Max (referencia de mercado) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa directa con modelos de la misma categoría (MoE de ~300B con contexto de 1M) es limitada; DeepSeek-V4-Pro es el hermano mayor, y Qwen2.5-Max sería una alternativa comercial, pero no se dispone de datos suficientes para una comparación rigurosa.
@@ -80,7 +80,7 @@ La comparativa directa con modelos de la misma categoría (MoE de ~300B con cont
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inference-optimization/DeepSeek-V4-Flash-NVFP4-REAP-25
+- Repositorio Hugging Face: https://huggingface.co/inference-optimization/DeepSeek-V4-Flash-NVFP4-REAP-25
 - Modelo base DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Variante FP8/NVFP4 de inference-optimization: https://huggingface.co/inference-optimization/DeepSeek-V4-Flash-FP8-NVFP4
 - Página de Lambda AI para DeepSeek-V4-Flash: https://lambda.ai/inference-models/deepseek-ai/deepseek-v4-flash

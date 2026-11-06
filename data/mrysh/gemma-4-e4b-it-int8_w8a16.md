@@ -92,7 +92,7 @@ La comparativa con `Bekten/gemma-4-E4B-it-W8A16` es la más directa: misma técn
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrysh/gemma-4-e4b-it-int8_w8a16
+- Repositorio Hugging Face: https://huggingface.co/mrysh/gemma-4-e4b-it-int8_w8a16
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Variante hermana en 1 bit del mismo autor: https://huggingface.co/mrysh/gemma-4-e4b-it-iq1_s
 - Cuantización INT8 equivalente de otro autor: https://huggingface.co/Bekten/gemma-4-E4B-it-W8A16

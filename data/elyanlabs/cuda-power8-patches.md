@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`elyanlabs/cuda-power8-patches` no es un modelo de IA: es una copia espejo (snapshot) de un repositorio de codigo publicado por Elyan Labs cuyo contenido son parches binarios y scripts de compilacion para ejecutar NVIDIA CUDA sobre servidores IBM POWER8 con GPUs Tesla V100. El repositorio original es `github.com/Scottcjn/cuda-power8-patches` y existe tambien en GitLab bajo `elyan-labs`. No contiene pesos, tokenizador, configuracion de arquitectura ni pipeline de inferencia; la HuggingFace Pipeline aparece como no disponible y las descargas y likes son 0.
+`elyanlabs/cuda-power8-patches` no es un modelo de IA: es una copia espejo (snapshot) de un repositorio de codigo publicado por Elyan Labs cuyo contenido son parches binarios y scripts de compilacion para ejecutar NVIDIA CUDA sobre servidores IBM POWER8 con GPUs Tesla V100. El repositorio original es `github.com/Scottcjn/cuda-power8-patches` y existe tambien en GitLab bajo `elyan-labs`. No contiene pesos, tokenizador, configuracion de arquitectura ni pipeline de inferencia; la Hugging Face Pipeline aparece como no disponible y las descargas y likes son 0.
 
 El problema que resuelve es concreto: NVIDIA solo certifica V100 sobre POWER9, de modo que en un S822 o S824 con POWER8 el driver rechaza la CPU. El proyecto documenta que CUDA 11.8 (driver 520.61.05) y CUDA 12.0.1 (driver 525.85.12) funcionan sin modificacion, y que CUDA 10.2.89 (driver 440.33.01) requiere un parche de un unico salto condicional en el blob `nv-kernel.o_binary` para saltarse la comprobacion de tipo de CPU.
 
-Su relevancia practica para el publico de este blog es la reutilizacion de hardware POWER8 de segunda mano como nodo de inferencia con V100 a traves de OCuLink, algo coherente con los tags `llm-inference` y `power8` del repositorio. Es material de referencia tecnica, no un artefacto desplegable en HuggingFace: el propio autor advierte que "nada de lo que hay aqui se ejecuta en la infraestructura de HuggingFace".
+Su relevancia practica para el publico de este blog es la reutilizacion de hardware POWER8 de segunda mano como nodo de inferencia con V100 a traves de OCuLink, algo coherente con los tags `llm-inference` y `power8` del repositorio. Es material de referencia tecnica, no un artefacto desplegable en Hugging Face: el propio autor advierte que "nada de lo que hay aqui se ejecuta en la infraestructura de Hugging Face".
 
 ## Especificaciones tecnicas
 
@@ -27,8 +27,8 @@ Su relevancia practica para el publico de este blog es la reutilizacion de hardw
 | GPU probada | NVIDIA Tesla V100-SXM2-16GB conectada por adaptador OCuLink |
 | Hardware probado | IBM Power S824 (8286-42A), doble CPU de 8 nucleos POWER8, 576 GB de RAM; IBM Power S822, 6 nucleos POWER8 |
 | Compilador requerido | GCC 9, debe coincidir con el compilador del kernel |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creacion en HuggingFace | 2026-10-23 |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creacion en Hugging Face | 2026-10-23 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No existen modelos comparables porque no es un modelo. La comparacion relevante 
 
 | Estrategia | Soporte | Licencia | Requisitos | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (parche comunitario) | No oficial, mantenido por la comunidad | MIT para scripts y documentacion | POWER8, Ubuntu 20.04, V100, adaptador OCuLink | Publico en HuggingFace, GitHub y GitLab |
+| Este repositorio (parche comunitario) | No oficial, mantenido por la comunidad | MIT para scripts y documentacion | POWER8, Ubuntu 20.04, V100, adaptador OCuLink | Publico en Hugging Face, GitHub y GitLab |
 | Soporte oficial NVIDIA para V100 | Oficial por parte de NVIDIA | EULA de NVIDIA | POWER9 | Publico |
 | Servidor x86_64 con GPU NVIDIA | Oficial por parte de NVIDIA | EULA de NVIDIA | x86_64, ranuras PCIe estandar | Publico |
 | Inferencia solo en CPU sobre POWER8 | No aplica CUDA | No aplica | POWER8, sin GPU | Publico, sin aceleracion |
@@ -103,11 +103,11 @@ No existen modelos comparables porque no es un modelo. La comparacion relevante 
 - Requisito estricto de GCC 9 alineado con el compilador del kernel; discrepancias provocan fallos de carga del modulo.
 - NVLink limitado a la version 1.0 de POWER8, con posibles restricciones en funciones que asumen NVLink 2.0.
 - Ausencia total de benchmarks y de datos de rendimiento, latencia o estabilidad a largo plazo.
-- La informacion de HuggingFace muestra 0 descargas y 0 likes, y una fecha de creacion de 2026-10-23; conviene verificar el estado real del proyecto en los repositorios de GitHub y GitLab antes de basarse en el.
+- La informacion de Hugging Face muestra 0 descargas y 0 likes, y una fecha de creacion de 2026-10-23; conviene verificar el estado real del proyecto en los repositorios de GitHub y GitLab antes de basarse en el.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elyanlabs/cuda-power8-patches
+- Hugging Face: https://huggingface.co/elyanlabs/cuda-power8-patches
 - Repositorio original en GitHub: https://github.com/Scottcjn/cuda-power8-patches
 - Espejo en GitLab: https://gitlab.com/elyan-labs/cuda-power8-patches
 - Perfil de GitHub del autor original: https://github.com/Scottcjn

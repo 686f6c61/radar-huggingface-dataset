@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. Zeta 2.1 
 
 ## Enlaces
 
-- [HuggingFace: zed-industries/zeta-2.1](https://huggingface.co/zed-industries/zeta-2.1)
+- [Hugging Face: zed-industries/zeta-2.1](https://huggingface.co/zed-industries/zeta-2.1)
 - [Blog de Zed: Zeta2.1: 3x Fewer Tokens, 50ms Faster](https://zed.dev/blog/zeta2-1)
 - [Comparativa zeta-2.1 vs zeta en aimodels.fyi](https://www.aimodels.fyi/models/compare/zeta-2.1-zed-industries-vs-zeta-zed-industries)
 - [Ficha de zeta-2.1 en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/zeta-2.1-zed-industries)

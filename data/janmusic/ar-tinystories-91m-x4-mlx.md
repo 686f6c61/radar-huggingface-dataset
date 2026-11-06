@@ -95,7 +95,7 @@ La comparación más directa es con el generador NCM del mismo autor, ya que com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/janmusic/ar-tinystories-91m-x4-mlx
+- Modelo en Hugging Face: https://huggingface.co/janmusic/ar-tinystories-91m-x4-mlx
 - Modelo NCM comparable: https://huggingface.co/janmusic/ncm-tinystories-87m-x4-mlx
 - Repositorio de código `ncm-mlx`: https://github.com/janmus1c/ncm-mlx
 - Paper original del método (Kumbong et al.): https://arxiv.org/abs/2610.14162

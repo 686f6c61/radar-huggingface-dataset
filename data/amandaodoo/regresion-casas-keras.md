@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amandaodoo/regresion-casas-keras` es un modelo de regresión tabular publicado en HuggingFace por la usuaria `amandaodoo` como material pedagógico del Seminario de Actualización del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresión lineal implementada con Keras 3 que predice el precio de una vivienda, en miles de dólares estadounidenses, a partir de tres variables de entrada (`m2`, `balcon`, `ascensor`). Su interés no reside en el rendimiento predictivo, sino en ilustrar el flujo completo de entrenamiento y exportación en el formato nativo `.keras`, comparándolo con implementaciones equivalentes en scikit-learn y PyTorch.
+`amandaodoo/regresion-casas-keras` es un modelo de regresión tabular publicado en Hugging Face por la usuaria `amandaodoo` como material pedagógico del Seminario de Actualización del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresión lineal implementada con Keras 3 que predice el precio de una vivienda, en miles de dólares estadounidenses, a partir de tres variables de entrada (`m2`, `balcon`, `ascensor`). Su interés no reside en el rendimiento predictivo, sino en ilustrar el flujo completo de entrenamiento y exportación en el formato nativo `.keras`, comparándolo con implementaciones equivalentes en scikit-learn y PyTorch.
 
 La arquitectura es una `Sequential` con una capa `Normalization` seguida de una capa `Dense(1)`, lo que se traduce en tres pesos y un término de sesgo. El modelo se entrena sobre un dataset sintético de 200 registros (160 de entrenamiento y 40 de evaluación) generado con semilla fija en `train.py`, por lo que los datos no representan viviendas reales. La capa de normalización se aprende con `adapt()` y queda embebida dentro del archivo `model.keras`, de modo que el usuario no necesita normalizar manualmente las entradas en inferencia.
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `amandaodoo/regresion-casas-keras` | Regresión lineal en Keras 3 | 4 | no aplica | MAE 3,10; R² 0,989 (test sintético) | MIT | HuggingFace |
+| `amandaodoo/regresion-casas-keras` | Regresión lineal en Keras 3 | 4 | no aplica | MAE 3,10; R² 0,989 (test sintético) | MIT | Hugging Face |
 | Ejemplo scikit-learn del mismo seminario | Regresión lineal (`LinearRegression`) | 4 | no aplica | no disponible en la información proporcionada | no disponible | Material del curso |
 | Ejemplo PyTorch del mismo seminario | Regresión lineal | 4 | no aplica | no disponible en la información proporcionada | no disponible | Material del curso |
 
-No se dispone de información sobre otros modelos comparables publicados en HuggingFace con el mismo propósito y dataset; la comparación relevante es con las implementaciones equivalentes del propio seminario, cuyas métricas no se detallan en la información proporcionada.
+No se dispone de información sobre otros modelos comparables publicados en Hugging Face con el mismo propósito y dataset; la comparación relevante es con las implementaciones equivalentes del propio seminario, cuyas métricas no se detallan en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -93,5 +93,5 @@ No se dispone de información sobre otros modelos comparables publicados en Hugg
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amandaodoo/regresion-casas-keras
+- Hugging Face: https://huggingface.co/amandaodoo/regresion-casas-keras
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

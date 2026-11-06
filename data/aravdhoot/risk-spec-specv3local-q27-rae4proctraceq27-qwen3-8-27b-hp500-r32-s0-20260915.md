@@ -85,10 +85,10 @@ La comparativa directa no es posible porque este repositorio es un adaptador, no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Adaptador analizado (sobre Qwen/Qwen3.8-27B) | No disponible (rango LoRA 32) | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen3-32B | ~32.800 millones | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Publicados por el fabricante |
-| Gemma 3 27B | ~27.000 millones | 128.000 tokens | Terminos de uso de Gemma | HuggingFace y Vertex AI | Publicados por el fabricante |
-| Mistral Small 3.1 24B | ~24.000 millones | 128.000 tokens | Apache 2.0 | HuggingFace | Publicados por el fabricante |
+| Adaptador analizado (sobre Qwen/Qwen3.8-27B) | No disponible (rango LoRA 32) | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen3-32B | ~32.800 millones | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Publicados por el fabricante |
+| Gemma 3 27B | ~27.000 millones | 128.000 tokens | Terminos de uso de Gemma | Hugging Face y Vertex AI | Publicados por el fabricante |
+| Mistral Small 3.1 24B | ~24.000 millones | 128.000 tokens | Apache 2.0 | Hugging Face | Publicados por el fabricante |
 
 No se dispone de comparaciones con otros adaptadores LoRA de la misma linea "risk-spec" ni de resultados que permitan situar este ajuste frente a alternativas equivalentes.
 
@@ -108,7 +108,7 @@ No se dispone de comparaciones con otros adaptadores LoRA de la misma linea "ris
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4proctraceq27-qwen3.8-27b-hp500-r32-s0-20260915
+- Repositorio en Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rae4proctraceq27-qwen3.8-27b-hp500-r32-s0-20260915
 - Modelo base referenciado en la model card (no verificado): https://huggingface.co/Qwen/Qwen3.8-27B
 - Libreria PEFT: https://huggingface.co/docs/peft
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

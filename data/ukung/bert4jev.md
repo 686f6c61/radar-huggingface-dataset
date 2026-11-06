@@ -76,8 +76,8 @@ No se han identificado en la informacion disponible modelos directamente compara
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ukung/bert4jev | 434.012.160 | 512 tokens (estado truncado a 256) | Distribucion calibrada sobre opciones cerradas | Apache 2.0 | HuggingFace, requiere codigo propio o `trust_remote_code` |
-| microsoft/deberta-v3-large | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Representaciones / clasificacion estandar | no disponible en la informacion proporcionada | HuggingFace |
+| ukung/bert4jev | 434.012.160 | 512 tokens (estado truncado a 256) | Distribucion calibrada sobre opciones cerradas | Apache 2.0 | Hugging Face, requiere codigo propio o `trust_remote_code` |
+| microsoft/deberta-v3-large | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Representaciones / clasificacion estandar | no disponible en la informacion proporcionada | Hugging Face |
 | LLM generativo de uso general | variable | habitualmente mayor | Texto libre, con riesgo de formato invalido | variable | multiple |
 
 Los datos de rendimiento comparativo no estan disponibles. La diferencia funcional principal frente a un LLM generativo es que bert4jev no genera texto y por tanto no puede producir salidas fuera del formato ni etiquetas no definidas, a cambio de perder flexibilidad y capacidad de razonamiento abierto.
@@ -98,6 +98,6 @@ Los datos de rendimiento comparativo no estan disponibles. La diferencia funcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukung/bert4jev
+- Modelo en Hugging Face: https://huggingface.co/ukung/bert4jev
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Paper, blog o repositorio adicional: no disponible; las busquedas web realizadas no devolvieron resultados relacionados con el modelo.

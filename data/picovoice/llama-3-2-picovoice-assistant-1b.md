@@ -86,7 +86,7 @@ La comparativa con otros SLM de ~1B es cualitativa: Picovoice Assistant prioriza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Picovoice/Llama-3.2-Picovoice-Assistant-1B
+- Modelo en Hugging Face: https://huggingface.co/Picovoice/Llama-3.2-Picovoice-Assistant-1B
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Picovoice: https://picovoice.ai
 - Documentacion de picoLLM Inference: https://picovoice.ai/docs/picollm/

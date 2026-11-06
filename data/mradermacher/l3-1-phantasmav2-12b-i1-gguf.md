@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables específicos. Dado que e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/L3.1-Phantasmav2-12B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/L3.1-Phantasmav2-12B-i1-GGUF
 - Modelo base: https://huggingface.co/kromcomp/L3.1-Phantasmav2-12B
 - Página de descarga alternativa: https://hf.tst.eu/model#L3.1-Phantasmav2-12B-i1-GGUF
 - Quants estáticos (sin imatrix): https://huggingface.co/mradermacher/L3.1-Phantasmav2-12B-GGUF

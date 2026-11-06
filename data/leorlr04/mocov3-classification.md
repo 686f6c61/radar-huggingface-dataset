@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`leorlr04/mocov3-classification` es un repositorio experimental de HuggingFace publicado por el usuario `leorlr04` que empaqueta una implementación propia de un codificador MoCo v3 orientada a tareas de clasificación. El autor lo describe explícitamente como una base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo con resultados medidos. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo (smoke tests), no como un modelo entrenado.
+`leorlr04/mocov3-classification` es un repositorio experimental de Hugging Face publicado por el usuario `leorlr04` que empaqueta una implementación propia de un codificador MoCo v3 orientada a tareas de clasificación. El autor lo describe explícitamente como una base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo con resultados medidos. El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas de humo (smoke tests), no como un modelo entrenado.
 
 La ficha declara una arquitectura MoCo v3 de escala "huge" con atención de consultas agrupadas (grouped query attention), fusión bilineal, activación swish y normalización por lotes (batchnorm). Sin embargo, el recuento real de parámetros reportado por los metadatos de safetensors es de solo 16.576 parámetros, una cifra incompatible con la escala declarada y coherente con un stub de inicialización de tamaño mínimo (el repositorio ocupa 0,0 GB). Esta discrepancia es relevante: el artefacto no debe confundirse con un modelo MoCo v3 preentrenado real.
 
-El interés actual del repositorio es acotado: sirve como andamiaje reproducible para experimentos de clasificación con MoCo v3, como referencia de código para quien quiera adaptar la receta y como punto de partida para un futuro checkpoint entrenado. No hay benchmarks publicados, ni idiomas declarados, ni pipeline asignado en HuggingFace, y las descargas y los "likes" son cero en el momento de la consulta.
+El interés actual del repositorio es acotado: sirve como andamiaje reproducible para experimentos de clasificación con MoCo v3, como referencia de código para quien quiera adaptar la receta y como punto de partida para un futuro checkpoint entrenado. No hay benchmarks publicados, ni idiomas declarados, ni pipeline asignado en Hugging Face, y las descargas y los "likes" son cero en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -34,7 +34,7 @@ El interés actual del repositorio es acotado: sirve como andamiaje reproducible
 
 El repositorio implementa una arquitectura MoCo v3 ad hoc para clasificación, con atención de consultas agrupadas, fusión bilineal entre ramas, activación swish y normalización por lotes. La configuración por defecto (`training_args.json`) fija adamw con un schedule exponencial, descrito por el autor como valores de partida del script y no como evidencia de una ejecución completada. No se documenta el número de tokens de entrenamiento, la composición del dataset, ni si hubo etapas de RLHF, DPO o ajuste supervisado; de hecho, el autor indica que el checkpoint no ha sido entrenado ni auditado.
 
-La innovación técnica declarada es mínima: se trata de una base de código propia que requiere un adaptador explícito para cargarse con APIs automáticas genéricas. El `run.py` contiene el punto de entrada y un ejemplo de smoke test en su bloque `__main__`, mientras que `config.json` registra los ajustes de arquitectura generados. No hay evidencia de decodificación especulativa, atención lineal ni otras optimizaciones de inferencia. Dada la escala real (~16,6 mil parámetros) y la ausencia de un pipeline de HuggingFace asignado, conviene tratar el artefacto como esqueleto de implementación, no como modelo listo para producción.
+La innovación técnica declarada es mínima: se trata de una base de código propia que requiere un adaptador explícito para cargarse con APIs automáticas genéricas. El `run.py` contiene el punto de entrada y un ejemplo de smoke test en su bloque `__main__`, mientras que `config.json` registra los ajustes de arquitectura generados. No hay evidencia de decodificación especulativa, atención lineal ni otras optimizaciones de inferencia. Dada la escala real (~16,6 mil parámetros) y la ausencia de un pipeline de Hugging Face asignado, conviene tratar el artefacto como esqueleto de implementación, no como modelo listo para producción.
 
 ## Capacidades
 
@@ -80,11 +80,11 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - No hay evaluación de alucinación ni de calibración porque no hay modelo generativo entrenado.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no se puede garantizar comportamiento multilingüe ni conversacional.
 - La licencia MIT permite uso comercial del código y de los pesos, pero el autor advierte que los términos de los datos de origen deben revisarse por separado si se usan datasets externos.
-- No hay pipeline asignado en HuggingFace ni integración con frameworks de serving estándar; requiere un adaptador propio.
+- No hay pipeline asignado en Hugging Face ni integración con frameworks de serving estándar; requiere un adaptador propio.
 - El repositorio tiene 0 descargas y 0 likes, lo que refleja ausencia de validación por parte de la comunidad.
 - La fecha de creación del repositorio (2026-10-21) es futura respecto al momento habitual de consulta, lo que conviene verificar antes de tomar decisiones de producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leorlr04/mocov3-classification
+- Modelo en Hugging Face: https://huggingface.co/leorlr04/mocov3-classification
 - No se han encontrado en la información proporcionada papers, blogs, repositorios auxiliares ni demos adicionales.

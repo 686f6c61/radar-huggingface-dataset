@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RLTT/soup_k_r2_50_v2 es un modelo publicado en HuggingFace por el usuario RLTT (Jhon Chrise) bajo el pipeline de robótica. Las etiquetas del repositorio (`robotics`, `openpi`, `pi0.5`, `openroboto`, `axis`) apuntan a un modelo de visión-lenguaje-acción (VLA) para control robótico, presumiblemente construido sobre el ecosistema openpi y la familia pi0.5. El nombre "soup" sugiere además una posible fusión de pesos (model soup) de varios checkpoints, aunque no hay documentación que lo confirme.
+RLTT/soup_k_r2_50_v2 es un modelo publicado en Hugging Face por el usuario RLTT (Jhon Chrise) bajo el pipeline de robótica. Las etiquetas del repositorio (`robotics`, `openpi`, `pi0.5`, `openroboto`, `axis`) apuntan a un modelo de visión-lenguaje-acción (VLA) para control robótico, presumiblemente construido sobre el ecosistema openpi y la familia pi0.5. El nombre "soup" sugiere además una posible fusión de pesos (model soup) de varios checkpoints, aunque no hay documentación que lo confirme.
 
-Se trata de un repositorio con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. A fecha de la ficha no registra descargas ni "likes", por lo que se trata de una publicación reciente y sin validación comunitaria. El tamaño del repositorio es de 12,4 GB, dato que condiciona las necesidades de almacenamiento y transferencia, pero que no permite deducir el número de parámetros sin conocer la precisión y el formato de los pesos.
+Se trata de un repositorio con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. A fecha de la ficha no registra descargas ni "likes", por lo que se trata de una publicación reciente y sin validación comunitaria. El tamaño del repositorio es de 12,4 GB, dato que condiciona las necesidades de almacenamiento y transferencia, pero que no permite deducir el número de parámetros sin conocer la precisión y el formato de los pesos.
 
 La relevancia de este modelo radica en su encuadre dentro de la robótica open source: si efectivamente deriva de pi0.5/openpi, se situaría en la línea de modelos fundacionales que combinan un backbone de visión-lenguaje con un módulo generador de acciones. No obstante, la información pública disponible es insuficiente para confirmar arquitectura, datos de entrenamiento, idiomas o rendimiento, por lo que esta ficha marca explícitamente como "no disponible" todo aquello que no puede verificarse.
 
@@ -67,7 +67,7 @@ Los datos publicos no permiten una comparacion fiable. Se indica a continuacion 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLTT/soup_k_r2_50_v2 | no disponible | no disponible | no disponible | gemma | gated en HuggingFace |
+| RLTT/soup_k_r2_50_v2 | no disponible | no disponible | no disponible | gemma | gated en Hugging Face |
 | pi0.5 (referencia por etiqueta) | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 | openpi (referencia por etiqueta) | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 | OpenVLA u otros VLA open source | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 ## Limitaciones y advertencias
 
 - Informacion publica practicamente inexistente: sin ficha tecnica, paper ni resultados, cualquier uso en produccion seria a ciegas.
-- Acceso restringido (gated): es obligatorio aceptar condiciones en HuggingFace antes de la descarga, lo que puede limitar la reproducibilidad y la automatizacion de pipelines.
+- Acceso restringido (gated): es obligatorio aceptar condiciones en Hugging Face antes de la descarga, lo que puede limitar la reproducibilidad y la automatizacion de pipelines.
 - Licencia "gemma": implica las restricciones de uso de la licencia de Gemma, que incluye clausulas de uso aceptable y obligaciones de atribucion; debe revisarse antes de cualquier uso comercial.
 - Cero descargas y cero "likes": no hay evidencia de validacion por parte de la comunidad ni de que los pesos funcionen correctamente.
 - Riesgo de alucinacion: no evaluable, al no haber datos de comportamiento.
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLTT/soup_k_r2_50_v2
+- Modelo en Hugging Face: https://huggingface.co/RLTT/soup_k_r2_50_v2
 - Perfil del autor: https://huggingface.co/RLTT
 - Otro modelo del mismo autor: https://huggingface.co/RLTT/generator-v2
 - Proyecto openpi (referencia por etiqueta): no se ha encontrado un enlace confirmado en la busqueda web

@@ -45,13 +45,13 @@ Debo ser honesto y decir "no disponible" para datos no especificados, pero puedo
 - Requiere transformers>=4.51.0 (si no, error KeyError: 'qwen3').
 
 **Enlaces:**
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-14B
+- Hugging Face: https://huggingface.co/Qwen/Qwen3-14B
 - Blog: https://qwenlm.github.io/blog/qwen3/
 - GitHub: https://github.com/QwenLM/Qwen3
 - Documentación: https://qwen.readthedocs.io/en/latest/
 - Qwen Chat: https://chat.qwen.ai/
 - Qwen Studio: https://qwen.ai/home
-- Arxiv 2309.00071 (paper original Qwen) y 2505.09388 (paper Qwen3) - estos son tags de HuggingFace. Puedo incluirlos como enlaces de papers.
+- Arxiv 2309.00071 (paper original Qwen) y 2505.09388 (paper Qwen3) - estos son tags de Hugging Face. Puedo incluirlos como enlaces de papers.
 
 Ahora estructuro la ficha. Título: "Qwen3-14B" o "Ficha del modelo Qwen/Qwen3-14B". La instrucción no pide título específico, pero la estructura empieza con "## Resumen". Voy a poner el título como encabezado H1: "# Qwen/Qwen3-14B" y luego las secciones.
 

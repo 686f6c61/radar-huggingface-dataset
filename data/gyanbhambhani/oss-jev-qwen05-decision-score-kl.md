@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gyanbhambhani/oss-jev-qwen05-decision-score-kl` es un ajuste fino (fine-tune) de tipo text-generation publicado por el usuario gyanbhambhani en HuggingFace. Se trata de un modelo denso de aproximadamente 494 millones de parametros (494.032.768 segun los pesos en safetensors), construido sobre el modelo base `gyanbhambhani/oss-jev-qwen05-decision-noul-bin` y etiquetado dentro de la familia Qwen2. El repositorio ocupa 1,0 GB y se distribuye bajo licencia Apache 2.0.
+`gyanbhambhani/oss-jev-qwen05-decision-score-kl` es un ajuste fino (fine-tune) de tipo text-generation publicado por el usuario gyanbhambhani en Hugging Face. Se trata de un modelo denso de aproximadamente 494 millones de parametros (494.032.768 segun los pesos en safetensors), construido sobre el modelo base `gyanbhambhani/oss-jev-qwen05-decision-noul-bin` y etiquetado dentro de la familia Qwen2. El repositorio ocupa 1,0 GB y se distribuye bajo licencia Apache 2.0.
 
 El modelo resuelve, en principio, la misma tarea que su base: generacion de texto conversacional. Sin embargo, la model card es practicamente inexistente (generada automaticamente por la libreria Trainer, con secciones marcadas como "More information needed" y sin descripcion de proposito, dataset ni limitaciones). Esto lo convierte en un artefacto de investigacion o de experimentacion mas que en un modelo listo para produccion. No tiene descargas ni "likes" en el momento de redactar esta ficha.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| oss-jev-qwen05-decision-score-kl | 494 M | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune sin documentar ni benchmarks |
-| Qwen2-0.5B (modelo base de la familia) | ~494 M | 32.768 tokens (segun documentacion oficial de Qwen2, no confirmado para este repo) | Apache 2.0 | HuggingFace | Modelo de referencia de la misma arquitectura |
-| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens (segun documentacion oficial) | Apache 2.0 | HuggingFace | Alternativa mas reciente y documentada de la misma escala |
-| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace | Alternativa de escala similar, con mayor tamano y mas documentacion publica |
+| oss-jev-qwen05-decision-score-kl | 494 M | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune sin documentar ni benchmarks |
+| Qwen2-0.5B (modelo base de la familia) | ~494 M | 32.768 tokens (segun documentacion oficial de Qwen2, no confirmado para este repo) | Apache 2.0 | Hugging Face | Modelo de referencia de la misma arquitectura |
+| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens (segun documentacion oficial) | Apache 2.0 | Hugging Face | Alternativa mas reciente y documentada de la misma escala |
+| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face | Alternativa de escala similar, con mayor tamano y mas documentacion publica |
 
 Nota: los datos de contexto de los modelos comparados provienen de la documentacion publica de sus respectivos desarrolladores y no de la informacion proporcionada para este modelo. No se dispone de resultados de benchmarks comparativos para `oss-jev-qwen05-decision-score-kl`.
 
@@ -85,7 +85,7 @@ Nota: los datos de contexto de los modelos comparados provienen de la documentac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gyanbhambhani/oss-jev-qwen05-decision-score-kl
+- Modelo en Hugging Face: https://huggingface.co/gyanbhambhani/oss-jev-qwen05-decision-score-kl
 - Modelo base: https://huggingface.co/gyanbhambhani/oss-jev-qwen05-decision-noul-bin
 - Paper: no disponible
 - Repositorio de codigo: no disponible

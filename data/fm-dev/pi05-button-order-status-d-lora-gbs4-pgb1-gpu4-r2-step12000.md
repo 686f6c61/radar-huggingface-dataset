@@ -24,7 +24,7 @@ Su relevancia es acotada pero clara: es un artefacto de investigación reproduci
 | Hiperparametros de entrenamiento | AdamW, LoRA r=32, seed 42, warmup 250 pasos a 5e-5, decaimiento coseno a 5e-6 en el paso 12.500, EMA 0,999^4 = 0,996005996001 |
 | Hardware de entrenamiento | 4 x NVIDIA RTX A6000, batch global 4, batch por GPU 1, sin acumulación de gradiente |
 | Forma de salida | (20, 8): xyz absoluto, cuaternión XYZW unitario en la carta de qx positiva y comando de gripper en [0,1] |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step12000 | no disponible | no disponible (contexto de estado de 48 pasos, 528 tokens visuales) | no disponible | no disponible | HuggingFace, 0 descargas |
+| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step12000 | no disponible | no disponible (contexto de estado de 48 pasos, 528 tokens visuales) | no disponible | no disponible | Hugging Face, 0 descargas |
 | π0.5 base | no disponible en la model card | no disponible | no disponible | no disponible | Modelo base referenciado, no enlazado |
 | Otras politicas VLA publicadas (p. ej. OpenVLA, π0, GR00T N1) | no disponible | no disponible | no disponible | no disponible | No se han encontrado referencias en la busqueda web realizada |
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step12000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step12000
 - Archivo de configuración de entrenamiento dentro del repositorio: `training_config.json`
 - Código de carga e inferencia dentro del repositorio: `load_model.py` (funciones `load` y `observe`)
 - Resultados de la búsqueda web: no se ha encontrado ningún paper, blog, repositorio o demo relevante sobre este modelo. Los resultados devueltos corresponden a páginas de radio en línea (radio-en-ligne.fr, fr.wikipedia.org/wiki/Radio_FM, last.fm, cheriefm.fr, radio-en-direct.app) y no guardan relación con el modelo.

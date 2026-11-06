@@ -2,7 +2,7 @@
 
 ## Resumen
 
-andrea es un adaptador LoRA de tipo DreamBooth para generacion de imagenes con texto (text-to-image), publicado por el usuario Microm1966 en HuggingFace. Se entrena sobre el modelo base krea/Krea-2-Raw y se distribuye como adaptador que se carga sobre la familia Krea 2; los ejemplos de la model card se generaron sobre Krea 2 Turbo con 8 pasos de inferencia y guidance_scale 0.0. Su funcion es inyectar un concepto concreto, invocado mediante el token `andrea`, en las generaciones del modelo base.
+andrea es un adaptador LoRA de tipo DreamBooth para generacion de imagenes con texto (text-to-image), publicado por el usuario Microm1966 en Hugging Face. Se entrena sobre el modelo base krea/Krea-2-Raw y se distribuye como adaptador que se carga sobre la familia Krea 2; los ejemplos de la model card se generaron sobre Krea 2 Turbo con 8 pasos de inferencia y guidance_scale 0.0. Su funcion es inyectar un concepto concreto, invocado mediante el token `andrea`, en las generaciones del modelo base.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es un ajuste de bajo rango (LoRA) de 1,2 GB de repositorio, con licencia Apache 2.0 y libreria diffusers. La model card no documenta el rango del adaptador, el numero de parametros, el dataset de entrenamiento ni el numero de pasos de entrenamiento, por lo que la mayor parte de las especificaciones cuantitativas quedan como no disponibles.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de otras alternativa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Microm1966/andrea
+- Pagina del modelo en Hugging Face: https://huggingface.co/Microm1966/andrea
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia usado en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado en la busqueda web articulos, papers, blogs ni repositorios relacionados con este modelo; los resultados devueltos corresponden a paginas no relacionadas sobre ChatGPT y no aportan informacion tecnica sobre este adaptador.

@@ -17,7 +17,7 @@ Su relevancia actual radica en la combinacion de tres factores poco frecuentes e
 | Parametros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | 131.072+ tokens |
 | Tipos de cuantizacion | GGUF con Unsloth Dynamic 2.0: FP completa (64 GB VRAM), K-Quant-Dynamic (32 GB VRAM, 0,2 % de degradacion declarada), K-Quant-17GB (24 GB VRAM, 1,0 % de degradacion declarada) |
-| Idiomas soportados | Entrenado con datos de mas de 100 idiomas segun la model card; la ficha de HuggingFace no publica listado concreto |
+| Idiomas soportados | Entrenado con datos de mas de 100 idiomas segun la model card; la ficha de Hugging Face no publica listado concreto |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (repositorio analizado); origen en safetensors (modelo base) |
 

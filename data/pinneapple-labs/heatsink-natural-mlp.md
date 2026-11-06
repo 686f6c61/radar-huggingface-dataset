@@ -19,9 +19,9 @@ Su relevancia es acotada pero clara: demuestra un flujo de trabajo de IA para in
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica (modelo numerico, no procesa texto) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (repo de HuggingFace con tamano declarado de 0.0 GB; la carga se realiza mediante `pinneapple.zoo.load`) |
+| Formato de pesos | no disponible (repo de Hugging Face con tamano declarado de 0.0 GB; la carga se realiza mediante `pinneapple.zoo.load`) |
 
-Nota: el modelo declara `library_name: pinneapple` y no presenta pipeline de HuggingFace asignado.
+Nota: el modelo declara `library_name: pinneapple` y no presenta pipeline de Hugging Face asignado.
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks comparativos frente a otros modelos
 - No requiere GPU; cualquier GPU, incluso integrada, es sobradamente suficiente si se desea acelerar lotes grandes.
 - Despliegue mediante la libreria `pinneapple` (`import pinneapple as pp; m = pp.zoo.load("heatsink_natural_mlp")`). No se documentan rutas de despliegue alternativas como vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput estimados: no disponibles.
-- El repositorio de HuggingFace declara un tamano de 0.0 GB, lo que sugiere que los pesos son muy ligeros o que se descargan a traves del registro de PINNeAPPle en lugar de residir en el repositorio.
+- El repositorio de Hugging Face declara un tamano de 0.0 GB, lo que sugiere que los pesos son muy ligeros o que se descargan a traves del registro de PINNeAPPle en lugar de residir en el repositorio.
 
 ## Comparativa con modelos similares
 
@@ -100,7 +100,7 @@ No se dispone de datos de parametros, contexto ni rendimiento para modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PINNeAPPle-Labs/heatsink-natural-mlp
+- Modelo en Hugging Face: https://huggingface.co/PINNeAPPle-Labs/heatsink-natural-mlp
 - Repositorio GitHub de PINNeAPPle: https://github.com/PINNeAPPle-Labs/PINNeAPPle
 - DOI del software PINNeAPPle (Zenodo): https://doi.org/10.5281/zenodo.23343062
 - Fichero de cita CITATION.cff: https://github.com/PINNeAPPle-Labs/PINNeAPPle/blob/main/CITATION.cff

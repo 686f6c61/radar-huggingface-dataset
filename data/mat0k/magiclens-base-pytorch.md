@@ -4,7 +4,7 @@
 
 MagicLens es una serie de modelos de recuperación de imágenes auto-supervisados desarrollados por Google DeepMind y presentados como *Oral* en ICML 2024. Su propuesta central es que las instrucciones de texto pueden guiar la recuperación de imágenes con relaciones semánticas más ricas que la mera similitud visual. El modelo base (`magiclens-base`) se entrena sobre 36,7 millones de tripletas (imagen de consulta, instrucción, imagen objetivo) extraídas de la web, capturando relaciones implícitas entre imágenes que aparecen en una misma página. Con un único modelo se abordan tareas multimodal-a-imagen, imagen-a-imagen y texto-a-imagen, alcanzando resultados comparables o superiores a métodos previos en 10 benchmarks.
 
-El repositorio `mat0k/magiclens-base-pytorch` es una copia del modelo base en formato PyTorch subida por un tercero (mat0k), no por Google DeepMind. El acceso está restringido (gated) y requiere aceptar las condiciones en HuggingFace. El modelo original está disponible en el repositorio oficial de Google DeepMind, y este espejo no aporta modificaciones técnicas adicionales. Es relevante para quienes quieran usar el modelo sin depender del repositorio oficial o necesiten una versión en PyTorch puro.
+El repositorio `mat0k/magiclens-base-pytorch` es una copia del modelo base en formato PyTorch subida por un tercero (mat0k), no por Google DeepMind. El acceso está restringido (gated) y requiere aceptar las condiciones en Hugging Face. El modelo original está disponible en el repositorio oficial de Google DeepMind, y este espejo no aporta modificaciones técnicas adicionales. Es relevante para quienes quieran usar el modelo sin depender del repositorio oficial o necesiten una versión en PyTorch puro.
 
 ## Especificaciones técnicas
 
@@ -45,7 +45,7 @@ El modelo base es el más pequeño de la serie (junto con `large` y `small`), y 
 
 ## Benchmarks y rendimiento
 
-El paper de MagicLens reporta que el modelo alcanza resultados comparables o superiores a métodos anteriores en 10 benchmarks que cubren tareas multimodal-a-imagen, imagen-a-imagen y texto-a-imagen. Sin embargo, no se han publicado en el repositorio de HuggingFace los resultados numéricos concretos (MMLU, HumanEval, etc.). No se han publicado resultados de benchmarks en la información disponible.
+El paper de MagicLens reporta que el modelo alcanza resultados comparables o superiores a métodos anteriores en 10 benchmarks que cubren tareas multimodal-a-imagen, imagen-a-imagen y texto-a-imagen. Sin embargo, no se han publicado en el repositorio de Hugging Face los resultados numéricos concretos (MMLU, HumanEval, etc.). No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
@@ -59,7 +59,7 @@ El paper de MagicLens reporta que el modelo alcanza resultados comparables o sup
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MagicLens base (este) | no disponible | no disponible | Apache 2.0 | Gated en HuggingFace |
+| MagicLens base (este) | no disponible | no disponible | Apache 2.0 | Gated en Hugging Face |
 | CLIP ViT-B/32 | 151M | 77 tokens | MIT | Abierto |
 | BLIP-2 (OPT-2.7B) | 1.6B | 32 tokens | MIT | Abierto |
 | Qwen2-VL-2B | 2B | 128K | Apache 2.0 | Abierto |
@@ -68,7 +68,7 @@ MagicLens se diferencia de CLIP en que está entrenado específicamente para rec
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptar condiciones en HuggingFace; no se puede descargar sin autenticación.
+- **Acceso restringido**: el modelo requiere aceptar condiciones en Hugging Face; no se puede descargar sin autenticación.
 - **Sesgos**: entrenado con datos web, puede reflejar sesgos de género, raza o contexto cultural presentes en esas imágenes y textos.
 - **Riesgo de alucinación**: las instrucciones abiertas pueden generar relaciones incorrectas si la instrucción es ambigua o fuera de distribución.
 - **Idioma**: no se ha documentado soporte multilingüe; probablemente funciona mejor en inglés.
@@ -77,9 +77,9 @@ MagicLens se diferencia de CLIP en que está entrenado específicamente para rec
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mat0k/magiclens-base-pytorch
+- Repositorio de Hugging Face: https://huggingface.co/mat0k/magiclens-base-pytorch
 - Página del proyecto: https://open-vision-language.github.io/MagicLens/
-- Paper en HuggingFace: https://huggingface.co/papers/2403.19651
+- Paper en Hugging Face: https://huggingface.co/papers/2403.19651
 - GitHub oficial (Google DeepMind): https://github.com/google-deepmind/magiclens
 - Código del modelo: https://github.com/google-deepmind/magiclens/blob/main/model.py
 - README oficial: https://github.com/google-deepmind/magiclens/blob/main/README.md

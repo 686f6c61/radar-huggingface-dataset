@@ -2,7 +2,7 @@
 
 ## Resumen
 
-X-VLA es un framework de Vision-Language-Action (VLA) basado en flow matching y soft prompts, disenado para unificar el control de robots con morfologias, sensores y espacios de accion heterogeneos. La idea central es tratar cada configuracion de hardware como una "tarea" codificada mediante un pequeno conjunto de embeddings de Soft Prompt aprendibles, de modo que un unico modelo pueda reconciliar distintos robots sin necesidad de arquitecturas separadas. El trabajo esta descrito en el paper arXiv 2510.10274 y se distribuye a traves del ecosistema LeRobot de HuggingFace.
+X-VLA es un framework de Vision-Language-Action (VLA) basado en flow matching y soft prompts, disenado para unificar el control de robots con morfologias, sensores y espacios de accion heterogeneos. La idea central es tratar cada configuracion de hardware como una "tarea" codificada mediante un pequeno conjunto de embeddings de Soft Prompt aprendibles, de modo que un unico modelo pueda reconciliar distintos robots sin necesidad de arquitecturas separadas. El trabajo esta descrito en el paper arXiv 2510.10274 y se distribuye a traves del ecosistema LeRobot de Hugging Face.
 
 La ficha que nos ocupa, `mysterium99/xvla-newtasks`, es un fine-tune del checkpoint base `lerobot/xvla-base` sobre el dataset `manufacturing_task`, orientado a tareas de manipulacion de tornilleria y ferreteria industrial (clasificar, agrupar y entregar tornillos, tuercas, arandelas y muelles). El modelo tiene 879.687.256 parametros (aproximadamente 880 millones) y un tamano de repositorio de 1,8 GB en formato safetensors.
 
@@ -85,9 +85,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mysterium99/xvla-newtasks` | 879,7 M | no disponible | VLA fine-tune (manufacturing) | Apache 2.0 | HuggingFace |
-| `lerobot/xvla-base` | no disponible | no disponible | VLA base | Apache 2.0 (segun repo base) | HuggingFace |
-| Otros VLA de LeRobot (p. ej. pi0, SmolVLA) | no disponible en la informacion | no disponible | VLA | no disponible | HuggingFace |
+| `mysterium99/xvla-newtasks` | 879,7 M | no disponible | VLA fine-tune (manufacturing) | Apache 2.0 | Hugging Face |
+| `lerobot/xvla-base` | no disponible | no disponible | VLA base | Apache 2.0 (segun repo base) | Hugging Face |
+| Otros VLA de LeRobot (p. ej. pi0, SmolVLA) | no disponible en la informacion | no disponible | VLA | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros y licencia; para contexto y benchmarks de alternativas seria necesario consultar sus fichas respectivas.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/xvla-newtasks
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/xvla-newtasks
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Paper X-VLA (arXiv 2510.10274): https://huggingface.co/papers/2510.10274
 - Dataset de entrenamiento: https://huggingface.co/datasets/manufacturing_task

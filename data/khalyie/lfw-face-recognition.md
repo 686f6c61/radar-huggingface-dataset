@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lfw-face-recognition es un modelo de reconocimiento facial publicado por el usuario Khalyie en HuggingFace. Se trata de una red InceptionResnetV1 de la librería facenet-pytorch, preentrenada originalmente en VGGFace2 y afinada después sobre el conjunto de datos bitmind/lfw. El resultado es un extractor de embeddings faciales de 512 dimensiones, normalizados en L2, acompañado de una base de datos de 5749 identidades conocidas y de un clasificador de reconocimiento cerrado.
+lfw-face-recognition es un modelo de reconocimiento facial publicado por el usuario Khalyie en Hugging Face. Se trata de una red InceptionResnetV1 de la librería facenet-pytorch, preentrenada originalmente en VGGFace2 y afinada después sobre el conjunto de datos bitmind/lfw. El resultado es un extractor de embeddings faciales de 512 dimensiones, normalizados en L2, acompañado de una base de datos de 5749 identidades conocidas y de un clasificador de reconocimiento cerrado.
 
 El modelo no es un LLM ni un modelo multimodal generativo: es un componente de visión por computador para identificación de personas (closed-set face identification). Su relevancia práctica es doble. Por un lado, sirve como referencia reproducible y ligera para experimentos de reconocimiento facial sobre LFW, ya que el autor publica el checkpoint junto con los embeddings de la base de datos, los nombres de identidad y los índices de los splits de entrenamiento, validación y prueba. Por otro lado, su tamaño reducido (repositorio de 0,1 GB) permite ejecutarlo en hardware modesto, incluso en CPU.
 
@@ -24,7 +24,7 @@ El rendimiento declarado por el autor es de un 89,31 % de precisión top-1 sobre
 | Identidades en la base de reconocimiento | 5749 |
 | Precision declarada | 89,31 % top-1 sobre imágenes de test reservadas |
 | Libreria | pytorch |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Fecha de creacion / actualizacion | 2026-09-12 (ambas; ver advertencias) |
 
@@ -85,7 +85,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Arquitectura | Parametros | Embedding | Tipo de tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Khalyie/lfw-face-recognition | Inception-ResNet-v1 afinado en LFW | no disponible (del orden de 27 M, inferido) | 512 (L2) | Identificación cerrada sobre 5749 identidades | apache-2.0 | HuggingFace, 0 descargas |
+| Khalyie/lfw-face-recognition | Inception-ResNet-v1 afinado en LFW | no disponible (del orden de 27 M, inferido) | 512 (L2) | Identificación cerrada sobre 5749 identidades | apache-2.0 | Hugging Face, 0 descargas |
 | InceptionResnetV1 preentrenado en VGGFace2 (facenet-pytorch) | Inception-ResNet-v1 sin ajuste fino | del orden de 27 M en la implementación pública de facenet-pytorch | 512 (L2) | Verificación y extracción de embeddings genéricos | MIT en la librería (consultar condiciones de los pesos preentrenados) | Repositorio GitHub de facenet-pytorch |
 | ArcFace / InsightFace | ResNet, MobileFaceNet y otras variantes | varía según el paquete | 512 típicamente | Verificación e identificación a gran escala | condiciones variables según el paquete de pesos; consultar antes de uso comercial | Repositorio InsightFace |
 | dlib ResNet-29 v1 | ResNet-29 | no disponible | 128 | Verificación facial | licencia de dlib (Boost) para el código; condiciones del modelo preentrenado sujetas a revisión | dlib.net y repositorio GitHub |
@@ -107,7 +107,7 @@ La comparación cuantitativa con estas alternativas no es posible con la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Khalyie/lfw-face-recognition
+- Modelo en Hugging Face: https://huggingface.co/Khalyie/lfw-face-recognition
 - Repositorio de datos asociado (citado en la model card): `Khalyie/lfw-face-recognition-data` — https://huggingface.co/datasets/Khalyie/lfw-face-recognition-data
 - Dataset de entrenamiento y evaluación citado: bitmind/lfw — https://huggingface.co/datasets/bitmind/lfw
 - Librería base facenet-pytorch: https://github.com/timesler/facenet-pytorch

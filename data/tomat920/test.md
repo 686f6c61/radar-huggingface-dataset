@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tomat920/test` es un repositorio alojado en HuggingFace por el usuario Tomat920, publicado bajo licencia Apache-2.0. En el momento de la consulta no declara pipeline, no tiene model card más allá de la línea de licencia, no registra descargas ni interacciones y no incluye información sobre arquitectura, tamaño, datos de entrenamiento ni idiomas. El nombre del repositorio (`test`) y el hecho de que fue creado y actualizado el mismo día, con ocho minutos de diferencia, apuntan a un repositorio de pruebas o a un artefacto en fase muy temprana de publicación.
+`Tomat920/test` es un repositorio alojado en Hugging Face por el usuario Tomat920, publicado bajo licencia Apache-2.0. En el momento de la consulta no declara pipeline, no tiene model card más allá de la línea de licencia, no registra descargas ni interacciones y no incluye información sobre arquitectura, tamaño, datos de entrenamiento ni idiomas. El nombre del repositorio (`test`) y el hecho de que fue creado y actualizado el mismo día, con ocho minutos de diferencia, apuntan a un repositorio de pruebas o a un artefacto en fase muy temprana de publicación.
 
 El único dato cuantitativo disponible es el tamaño del repositorio, 0,5 GB, que acota el volumen total de los archivos alojados, pero no permite deducir el número de parámetros ni el tipo de modelo, ya que podría contener pesos, ficheros parciales, artefactos de entrenamiento o documentación. No hay evidencia de que el repositorio contenga un modelo funcional ni de qué tarea resuelve.
 
@@ -52,7 +52,7 @@ No es posible proponer casos de uso validados: se desconoce la tarea, la modalid
 - Pruebas de integración en CI: emplearlo como modelo de juguete en tests automatizados que comprueben el flujo de carga y respuesta de un endpoint, sin coste de cómputo relevante.
 - Verificación de licencias y gobierno de datos: servir de caso de estudio para comprobar que un sistema de catalogación interna detecta correctamente la licencia Apache-2.0 y la ausencia de metadatos.
 - Auditoría de repositorios públicos: analizar el repositorio como ejemplo de publicación incompleta (sin model card, sin pipeline, sin descargas) dentro de un proceso de revisión de artefactos.
-- Docencia y formación: utilizarlo como muestra de estructura mínima de un repositorio en HuggingFace para explicar qué metadatos son obligatorios en una publicación reproducible.
+- Docencia y formación: utilizarlo como muestra de estructura mínima de un repositorio en Hugging Face para explicar qué metadatos son obligatorios en una publicación reproducible.
 - Prototipado condicional: si finalmente se confirma que contiene un modelo de lenguaje pequeño, podría emplearse en tareas de clasificación o generación de baja exigencia en local; esto no está verificado y no debe asumirse en producción.
 
 ## Benchmarks y rendimiento
@@ -78,7 +78,7 @@ No disponible. Al desconocerse la categoría del modelo (tamaño, modalidad, tar
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible | no disponible |
-| Disponibilidad | publico en HuggingFace | no disponible | no disponible |
+| Disponibilidad | publico en Hugging Face | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No disponible. Al desconocerse la categoría del modelo (tamaño, modalidad, tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tomat920/test
+- Repositorio en Hugging Face: https://huggingface.co/Tomat920/test
 
 Resultados de búsqueda web consultados, ninguno de ellos relacionado con este modelo:
 

@@ -21,7 +21,7 @@ La relevancia del modelo está en su enfoque: en lugar de generar texto y parsea
 | Licencia | Apache-2.0 (adaptador, cabezas y configuraciones); modelo base Qwen3-4B tambien Apache-2.0 |
 | Formato de pesos | safetensors (adapter_model.safetensors), ficheros PyTorch .pt para las cabezas (pointer.pt y otros *_head.pt), mas adapter_config.json, asjson_config.json y calibration.json |
 
-Otros datos del repositorio: pipeline declarado `text-classification`, libreria `peft`, tamano del repo 0,2 GB, creado y actualizado el 23 de septiembre de 2026 (fechas declaradas por HuggingFace).
+Otros datos del repositorio: pipeline declarado `text-classification`, libreria `peft`, tamano del repo 0,2 GB, creado y actualizado el 23 de septiembre de 2026 (fechas declaradas por Hugging Face).
 
 ## Arquitectura y entrenamiento
 
@@ -114,7 +114,7 @@ No se han publicado en la informacion disponible resultados de JevBench, Kev tra
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/asjson/jevson-4b-01
+- Pagina del modelo en Hugging Face: https://huggingface.co/asjson/jevson-4b-01
 - Sitio del proyecto asjson: https://asjson.dev
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 

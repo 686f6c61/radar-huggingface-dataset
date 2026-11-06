@@ -70,12 +70,12 @@ No hay modelos directamente comparables, ya que Fractus-Vorax es un sistema no t
 - Riesgo de colapso de decodificación: sin el mecanismo anti-atractor (z-normalización), el cerebro sellado produce repeticiones infinitas; el sistema depende críticamente de esta corrección.
 - Alucinación en hechos ingeridos: aunque responde 0.00 en hechos no ingeridos, la generalización por analogía puede producir respuestas incorrectas en datos que sí ha ingerido si la morfología es similar.
 - Sin contexto de ventana clásico: no se especifica una longitud de contexto en tokens; la memoria es append-only pero no se documenta cómo se gestionan límites de recuperación.
-- Proyecto sin adopción: tiene 0 descargas y 0 likes en HuggingFace, por lo que su estabilidad y soporte no están contrastados en producción.
+- Proyecto sin adopción: tiene 0 descargas y 0 likes en Hugging Face, por lo que su estabilidad y soporte no están contrastados en producción.
 - Licencia MIT permite uso comercial, pero no hay garantías de mantenimiento ni de corrección de errores.
 
 ## Enlaces
 
-- [HuggingFace: thefinalboss/fractus-vorax](https://huggingface.co/thefinalboss/fractus-vorax)
-- [HuggingFace Space: Fractus CTE Wiki](https://huggingface.co/spaces/thefinalboss/fractus-cte-wiki)
-- [HuggingFace: thefinalboss/Fractus (modelo padre)](https://huggingface.co/thefinalboss/Fractus)
-- [HuggingFace Datasets: thefinalboss/fractus-datasets](https://huggingface.co/datasets/thefinalboss/fractus-datasets)
+- [Hugging Face: thefinalboss/fractus-vorax](https://huggingface.co/thefinalboss/fractus-vorax)
+- [Hugging Face Space: Fractus CTE Wiki](https://huggingface.co/spaces/thefinalboss/fractus-cte-wiki)
+- [Hugging Face: thefinalboss/Fractus (modelo padre)](https://huggingface.co/thefinalboss/Fractus)
+- [Hugging Face Datasets: thefinalboss/fractus-datasets](https://huggingface.co/datasets/thefinalboss/fractus-datasets)

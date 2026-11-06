@@ -2,7 +2,7 @@
 
 ## Resumen
 
-furniture_use_data_full_finetuning es un modelo de deteccion de objetos derivado de facebook/detr-resnet-50, publicado por el usuario chaeeun7201 en HuggingFace. Se trata de un ajuste fino (fine-tuning) completo de DETR (DEtection TRansformer) sobre un conjunto de datos de mobiliario no documentado, con el objetivo de detectar categorias de muebles en imagenes. El modelo conserva la arquitectura original del DETR de Facebook AI: un backbone convolucional ResNet-50 seguido de un codificador-decodificador transformer que predice conjuntos de objetos sin necesidad de anclas ni supresion no maxima (NMS).
+furniture_use_data_full_finetuning es un modelo de deteccion de objetos derivado de facebook/detr-resnet-50, publicado por el usuario chaeeun7201 en Hugging Face. Se trata de un ajuste fino (fine-tuning) completo de DETR (DEtection TRansformer) sobre un conjunto de datos de mobiliario no documentado, con el objetivo de detectar categorias de muebles en imagenes. El modelo conserva la arquitectura original del DETR de Facebook AI: un backbone convolucional ResNet-50 seguido de un codificador-decodificador transformer que predice conjuntos de objetos sin necesidad de anclas ni supresion no maxima (NMS).
 
 El modelo tiene 41.608.649 parametros, un tamano identico al del DETR-ResNet-50 original, lo que indica que el ajuste fino no anadio ni elimino cabezas ni capas nuevas. Se distribuye en formato safetensors dentro de un repositorio de 4,8 GB (el tamano elevado se debe probablemente a los checkpoints intermedios y estados del optimizador guardados durante el entrenamiento). La licencia es Apache-2.0, lo que permite uso comercial.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| chaeeun7201/furniture_use_data_full_finetuning | 41,6 M | Deteccion de objetos (mobiliario) | Apache-2.0 | HuggingFace | no disponible |
-| facebook/detr-resnet-50 | 41,6 M | Deteccion de objetos generica (COCO, 80 clases) | Apache-2.0 | HuggingFace | mAP COCO publicada por los autores; valor no incluido en la informacion proporcionada |
-| facebook/detr-resnet-101 | no disponible | Deteccion de objetos generica | Apache-2.0 | HuggingFace | no disponible |
-| Otros detectores DETR-like (por ejemplo RT-DETR o YOLOS) | no disponible | Deteccion de objetos generica | variable | HuggingFace / repositorios propios | no disponible |
+| chaeeun7201/furniture_use_data_full_finetuning | 41,6 M | Deteccion de objetos (mobiliario) | Apache-2.0 | Hugging Face | no disponible |
+| facebook/detr-resnet-50 | 41,6 M | Deteccion de objetos generica (COCO, 80 clases) | Apache-2.0 | Hugging Face | mAP COCO publicada por los autores; valor no incluido en la informacion proporcionada |
+| facebook/detr-resnet-101 | no disponible | Deteccion de objetos generica | Apache-2.0 | Hugging Face | no disponible |
+| Otros detectores DETR-like (por ejemplo RT-DETR o YOLOS) | no disponible | Deteccion de objetos generica | variable | Hugging Face / repositorios propios | no disponible |
 
 La ventaja del modelo frente a facebook/detr-resnet-50 es su especializacion en mobiliario; su desventaja es la ausencia total de evaluacion publicada, mientras que el modelo base si cuenta con metricas oficiales en COCO y con una comunidad amplia de usuarios.
 
@@ -94,7 +94,7 @@ La ventaja del modelo frente a facebook/detr-resnet-50 es su especializacion en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaeeun7201/furniture_use_data_full_finetuning
+- Modelo en Hugging Face: https://huggingface.co/chaeeun7201/furniture_use_data_full_finetuning
 - Modelo base facebook/detr-resnet-50: https://huggingface.co/facebook/detr-resnet-50
 - Repositorio oficial de DETR (Facebook Research): https://github.com/facebookresearch/detr
 - Articulo original de DETR, "End-to-End Object Detection with Transformers": https://arxiv.org/abs/2005.12872

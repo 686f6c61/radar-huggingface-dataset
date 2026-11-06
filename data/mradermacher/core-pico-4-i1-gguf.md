@@ -45,7 +45,7 @@ Lo que sí está documentado es el proceso de cuantización aplicado por mraderm
 
 ## Casos de uso
 
-- Validación de pipelines de conversión de HuggingFace a GGUF: sirve como caso de prueba de bajo coste para verificar que una cadena de conversión y cuantización produce ficheros cargables en llama.cpp antes de aplicarla a modelos de gran tamaño.
+- Validación de pipelines de conversión de Hugging Face a GGUF: sirve como caso de prueba de bajo coste para verificar que una cadena de conversión y cuantización produce ficheros cargables en llama.cpp antes de aplicarla a modelos de gran tamaño.
 - Pruebas de integración con llama.cpp y Ollama: al ocupar unos pocos megabytes, permite comprobar en segundos que el entorno de inferencia, las versiones de las bibliotecas y los parámetros de carga funcionan correctamente.
 - Experimentación con cuantización imatrix: el repositorio incluye el fichero imatrix, de modo que un investigador puede reproducir el proceso de generación de cuants ponderados y comparar la perplejidad entre niveles de compresión en un modelo cuyo entrenamiento completo es inviable.
 - Docencia y divulgación sobre cuantización: resulta adecuado para explicar de forma tangible la relación entre bits por peso, tamaño de fichero y degradación de la calidad, sin necesidad de hardware especializado.
@@ -84,7 +84,7 @@ No disponible. No se dispone de información sobre otros modelos de la familia C
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/CORe-Pico-4-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/CORe-Pico-4-i1-GGUF
 - Modelo base: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-4
 - Cuants estáticos del mismo modelo: https://huggingface.co/mradermacher/CORe-Pico-4-GGUF
 - Página resumen de descargas del autor para este modelo: https://hf.tst.eu/model#CORe-Pico-4-i1-GGUF

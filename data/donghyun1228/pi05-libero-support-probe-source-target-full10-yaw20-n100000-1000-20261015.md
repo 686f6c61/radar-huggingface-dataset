@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo con identificador `Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw20-n100000-1000-20261015` es un checkpoint de robótica publicado en HuggingFace bajo la librería `openpi`. No se trata de un modelo de lenguaje generalista, sino de un artefacto de aprendizaje por imitación orientado al control de un brazo robótico en el entorno de simulación LIBERO. El nombre del repositorio y la model card indican que es el resultado de un proceso de adaptación de un modelo de dinámica inversa (IDM, *inverse dynamics model*) sobre datos de sustitución de sondeo con orientación de yaw a 20 grados.
+El modelo con identificador `Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw20-n100000-1000-20261015` es un checkpoint de robótica publicado en Hugging Face bajo la librería `openpi`. No se trata de un modelo de lenguaje generalista, sino de un artefacto de aprendizaje por imitación orientado al control de un brazo robótico en el entorno de simulación LIBERO. El nombre del repositorio y la model card indican que es el resultado de un proceso de adaptación de un modelo de dinámica inversa (IDM, *inverse dynamics model*) sobre datos de sustitución de sondeo con orientación de yaw a 20 grados.
 
 La información disponible describe un experimento muy concreto: se seleccionaron 100.000 fotogramas de un conjunto de datos de 300.000 waypoints aleatorios y se ejecutaron 1.000 actualizaciones de entrenamiento con tamaño de lote 32 y semilla 42, partiendo de un modelo fuente reentrenado durante 10.000 actualizaciones. La evaluación reportada alcanza 1580 éxitos sobre 2000 ensayos (79 %), distribuidos en 40 tareas con 50 intentos por tarea, usando ocho clientes por GPU sobre MuJoCo 3.2.3.
 
@@ -84,7 +84,7 @@ No hay datos comparativos en la información proporcionada. La model card no inc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | no disponible | no disponible | 79,0 % en el *setup* LIBERO propio | apache-2.0 | HuggingFace, 0 descargas |
+| Este modelo | no disponible | no disponible | 79,0 % en el *setup* LIBERO propio | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No hay datos comparativos en la información proporcionada. La model card no inc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw20-n100000-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw20-n100000-1000-20261015
 - Modelo fuente citado en la model card: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015 (commit `e435806e413a90c3b74c9411228a72b53b97060c`)
 - Dataset citado en la model card: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-yaw20-20261015 (commit `c2740cc2b3ee69ee1488d835f4358b33c255cdb8`)
 - Paper, blog o repositorio adicional: no disponible

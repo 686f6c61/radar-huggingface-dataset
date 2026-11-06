@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch6` es un modelo de lenguaje pequeño para generación de texto publicado en HuggingFace por el usuario Lanni-ni. Dispone de 27.449.096 parámetros (aproximadamente 27 millones) y un peso total en formato safetensors de 0.1 GB. El nombre del checkpoint sugiere que se trata de un experimento de investigación sobre técnicas de "dynamic forgetting" aplicado a un modelo tipo BabyLM de 100M, entrenado durante 6 épocas con una semilla concreta. La relevancia del modelo reside en su potencial uso como punto de partida para estudiar fenómenos de olvido en modelos de lenguaje de pequeña escala, aunque la información pública disponible es muy limitada y no incluye detalles de arquitectura, datos de entrenamiento ni resultados de evaluación.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch6` es un modelo de lenguaje pequeño para generación de texto publicado en Hugging Face por el usuario Lanni-ni. Dispone de 27.449.096 parámetros (aproximadamente 27 millones) y un peso total en formato safetensors de 0.1 GB. El nombre del checkpoint sugiere que se trata de un experimento de investigación sobre técnicas de "dynamic forgetting" aplicado a un modelo tipo BabyLM de 100M, entrenado durante 6 épocas con una semilla concreta. La relevancia del modelo reside en su potencial uso como punto de partida para estudiar fenómenos de olvido en modelos de lenguaje de pequeña escala, aunque la información pública disponible es muy limitada y no incluye detalles de arquitectura, datos de entrenamiento ni resultados de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ No se ha publicado información sobre la arquitectura, los datos de entrenamient
 
 ## Capacidades
 
-- Generación de texto: el pipeline declarado en HuggingFace es `text-generation`, lo que indica que el modelo está preparado para generar texto. No se ofrecen más detalles sobre funciones adicionales como tool calling, razonamiento multi-paso, visión, audio u otras capacidades.
+- Generación de texto: el pipeline declarado en Hugging Face es `text-generation`, lo que indica que el modelo está preparado para generar texto. No se ofrecen más detalles sobre funciones adicionales como tool calling, razonamiento multi-paso, visión, audio u otras capacidades.
 
 ## Casos de uso
 
@@ -49,7 +49,7 @@ No se han publicado comparativas con otros modelos. Existen otros checkpoints de
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch6
+- Página del modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch6
 - Checkpoint relacionado (epoch4): https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4
 - Checkpoint relacionado (inverse_epoch4): https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch4
 - Enlace citado en la model card para estimación de impacto ambiental (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

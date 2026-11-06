@@ -26,7 +26,7 @@ La licencia es Apache 2.0, heredada del modelo base, lo que facilita el uso come
 | Pipeline | text-generation |
 | Cuantizaciones ponderadas / imatrix | no disponibles; el autor indica que no las tiene planificadas por el momento |
 | Descargas / likes | 246 / 0 |
-| Fecha de creacion | 2026-10-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-13 (segun metadatos de Hugging Face) |
 
 Detalle de variantes y tamano en disco:
 

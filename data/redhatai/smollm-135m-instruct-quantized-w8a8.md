@@ -88,7 +88,7 @@ No se han encontrado datos de benchmarks para la version w8a16 ni para otros mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedHatAI/SmolLM-135M-Instruct-quantized.w8a8
+- Hugging Face: https://huggingface.co/RedHatAI/SmolLM-135M-Instruct-quantized.w8a8
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Paper GPTQ: https://arxiv.org/abs/2210.17323
 - Libreria llm-compressor: https://github.com/vllm-project/llm-compressor

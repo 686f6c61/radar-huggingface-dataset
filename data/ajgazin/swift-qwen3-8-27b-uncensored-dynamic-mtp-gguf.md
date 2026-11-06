@@ -104,7 +104,7 @@ La comparacion cuantitativa solo es posible en la metrica de rechazos, porque no
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF
 - Modelo de origen: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
 - Version NVFP4 para vLLM y SGLang: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-NVFP4
 - Swift-Qwen3.8-27B (UkisAI): https://huggingface.co/ukisai/Swift-Qwen3.8-27b

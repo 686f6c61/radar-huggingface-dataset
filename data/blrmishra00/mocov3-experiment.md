@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mocov3-experiment es un repositorio experimental publicado por el usuario BLRMISHRA00 en HuggingFace que contiene una implementación personalizada de una arquitectura denominada "Mocov3" orientada a tareas de generación. El autor declara explícitamente que se trata de un punto de partida reproducible para pruebas de humo (smoke tests), no de un modelo entrenado. El checkpoint incluido (`model.safetensors`) es una inicialización válida para verificar que el pipeline carga pesos, pero no ha sido entrenado ni evaluado.
+mocov3-experiment es un repositorio experimental publicado por el usuario BLRMISHRA00 en Hugging Face que contiene una implementación personalizada de una arquitectura denominada "Mocov3" orientada a tareas de generación. El autor declara explícitamente que se trata de un punto de partida reproducible para pruebas de humo (smoke tests), no de un modelo entrenado. El checkpoint incluido (`model.safetensors`) es una inicialización válida para verificar que el pipeline carga pesos, pero no ha sido entrenado ni evaluado.
 
 El peso real del checkpoint, según los metadatos de safetensors, es de solo 33.088 parámetros, una magnitud insignificante en términos de modelado de lenguaje y coherente con la naturaleza de andamiaje del repositorio. La model card indica que las afirmaciones de rendimiento se omiten deliberadamente y no se reclama ninguna puntuación de benchmark. El tamaño del repositorio es de 0,0 GB.
 
@@ -43,7 +43,7 @@ No se especifica volumen de tokens de entrenamiento, composición del dataset, n
 - Punto de partida de experimentación: usar `config.json` y `training_args.json` como receta reproducible para lanzar un entrenamiento supervisado desde cero sobre un dataset propio.
 - Reproducción de pruebas de humo en CI: incorporar el script en un flujo de integración continua que valide que el modelo se instancia y produce una salida de forma determinista.
 - Estudio de arquitecturas alternativas: analizar la combinación de attention linear, fusión low rank y InstanceNorm como configuración de referencia frente a transformers estándar.
-- Docencia y prototipado: emplear el repositorio como ejemplo didáctico de estructura de proyecto HuggingFace (config, training_args, safetensors, README).
+- Docencia y prototipado: emplear el repositorio como ejemplo didáctico de estructura de proyecto Hugging Face (config, training_args, safetensors, README).
 - No se recomienda ningún caso de uso orientado a inferencia real, atención al cliente, generación de código en producción o análisis de datos, dado que el checkpoint no está entrenado.
 
 ## Benchmarks y rendimiento
@@ -79,5 +79,5 @@ No disponible. No se conocen modelos comparables para este repositorio, ya que s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BLRMISHRA00/mocov3-experiment
+- Hugging Face: https://huggingface.co/BLRMISHRA00/mocov3-experiment
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dashi/microduck-sprint-daily-20261101` es una política de control motriz (policy) para el robot bípedo open source Microduck, no un modelo de lenguaje. Se trata de un artefacto de reinforcement learning exportado a ONNX que se carga en el daemon del robot para ejecutar una marcha concreta (slot `walk`) de forma perpetua hasta que se le indique lo contrario. El autor es el usuario de HuggingFace `dashi`, que lo publica como reentrada diaria de una política previa (`dashi/microduck-sprint-remix-r844`, con recompensa 0.844) y como finetune del modelo `jrubiosainz/microduck-game-sprinter-remix3`.
+`dashi/microduck-sprint-daily-20261101` es una política de control motriz (policy) para el robot bípedo open source Microduck, no un modelo de lenguaje. Se trata de un artefacto de reinforcement learning exportado a ONNX que se carga en el daemon del robot para ejecutar una marcha concreta (slot `walk`) de forma perpetua hasta que se le indique lo contrario. El autor es el usuario de Hugging Face `dashi`, que lo publica como reentrada diaria de una política previa (`dashi/microduck-sprint-remix-r844`, con recompensa 0.844) y como finetune del modelo `jrubiosainz/microduck-game-sprinter-remix3`.
 
 El modelo resuelve un problema muy acotado: proporcionar una política de locomoción lista para desplegar en el Microduck, un robot de 25 cm con 15 motores, cámara, LiDAR y pico prensil. La interfaz es fija: 61 dimensiones de observación y 14 acciones a 50 Hz, con el normalizador de observaciones embebido en el propio `policy.onnx`, de modo que el robot puede alimentar observaciones en crudo. El repositorio ocupa 0.0 GB, lo que confirma que se trata de un fichero de pesos muy ligero, coherente con una política de control y no con un modelo generativo de gran escala.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tipo | Base | Recompensa reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dashi/microduck-sprint-daily-20261101` | Política RL ONNX para Microduck (slot `walk`) | Finetune de `jrubiosainz/microduck-game-sprinter-remix3` | no disponible para esta versión | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `dashi/microduck-sprint-remix-r844` | Política RL predecesora | no disponible | 0.844 | no disponible | HuggingFace (citada en la model card) |
-| `dashi/microduck-sprint-daily-20261028` | Reentrada diaria de la misma familia | no disponible | no disponible | no disponible | HuggingFace |
-| `jrubiosainz/microduck-game-sprinter-remix3` | Política RL base | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-sprint-daily-20261101` | Política RL ONNX para Microduck (slot `walk`) | Finetune de `jrubiosainz/microduck-game-sprinter-remix3` | no disponible para esta versión | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `dashi/microduck-sprint-remix-r844` | Política RL predecesora | no disponible | 0.844 | no disponible | Hugging Face (citada en la model card) |
+| `dashi/microduck-sprint-daily-20261028` | Reentrada diaria de la misma familia | no disponible | no disponible | no disponible | Hugging Face |
+| `jrubiosainz/microduck-game-sprinter-remix3` | Política RL base | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni rendimiento comparables, porque ninguna de las fichas consultadas publica esa información.
 
@@ -81,7 +81,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento comparables, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-sprint-daily-20261101
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-sprint-daily-20261101
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix3
 - Reentrada previa (2026-10-28): https://huggingface.co/dashi/microduck-sprint-daily-20261028
 - Reentrada previa (2026-10-29): https://huggingface.co/dashi/microduck-sprint-daily-20261029

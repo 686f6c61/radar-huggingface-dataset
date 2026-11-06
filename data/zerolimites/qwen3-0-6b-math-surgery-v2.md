@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-Math-Surgery-v2 es una modificación por cirugía de pesos (*weight surgery*) del modelo base Qwen/Qwen3-0.6B, publicada por el usuario zerolimites en HuggingFace. El objetivo declarado es mejorar el razonamiento matemático exacto del modelo sin reentrenamiento completo, aplicando técnicas de edición de conocimiento basadas en MEMIT (Mass-Editing Memory in a Transformer) combinadas con proyección ortogonal y un pulido específico de la capa 27. El resultado es un modelo de 751.632.384 parámetros (aproximadamente 0,75 mil millones) que conserva la arquitectura y licencia del modelo original.
+Qwen3-0.6B-Math-Surgery-v2 es una modificación por cirugía de pesos (*weight surgery*) del modelo base Qwen/Qwen3-0.6B, publicada por el usuario zerolimites en Hugging Face. El objetivo declarado es mejorar el razonamiento matemático exacto del modelo sin reentrenamiento completo, aplicando técnicas de edición de conocimiento basadas en MEMIT (Mass-Editing Memory in a Transformer) combinadas con proyección ortogonal y un pulido específico de la capa 27. El resultado es un modelo de 751.632.384 parámetros (aproximadamente 0,75 mil millones) que conserva la arquitectura y licencia del modelo original.
 
 La relevancia de esta ficha radica en que ejemplifica una tendencia creciente: la especialización de modelos pequeños mediante edición directa de pesos en lugar de fine-tuning tradicional. El autor reporta una mejora de 13/30 a 23/30 aciertos en un benchmark matemático propio de 30 problemas, pasando de 43,33% a 76,67% de precisión, con cero regresiones respecto a la versión v1. Se distribuye en safetensors (bfloat16) y GGUF en cuantizaciones Q8_0 y F16, lo que facilita su despliegue local.
 
@@ -92,7 +92,7 @@ La comparación con Qwen2.5-Math-1.5B y DeepSeek-R1-Distill-Qwen-1.5B se ofrece 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zerolimites/Qwen3-0.6B-Math-Surgery-v2
+- Modelo en Hugging Face: https://huggingface.co/zerolimites/Qwen3-0.6B-Math-Surgery-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper de MEMIT (referencia técnica citada en la model card): no disponible en la información proporcionada
 - Repositorio o demo adicional: no disponible en la información proporcionada

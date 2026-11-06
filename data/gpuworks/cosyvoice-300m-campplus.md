@@ -6,7 +6,7 @@
 
 El proposito es operativo: el pipeline de clonacion de voz GLM-TTS implementado en vLLM-Omni requiere este speaker encoder, pero el checkpoint de GLM-TTS no lo incluye. Publicar el fichero aislado evita descargar los varios GB del checkpoint completo de CosyVoice-300M solo para obtener un componente de 28 MB.
 
-Por tanto, este repositorio debe tratarse como una dependencia de despliegue, no como un modelo evaluable de forma autonoma. No tiene pipeline declarado en HuggingFace, no publica idiomas soportados y no ofrece benchmarks propios; su relevancia es la de simplificar el aprovisionamiento de inferencia en entornos de TTS con clonacion de voz.
+Por tanto, este repositorio debe tratarse como una dependencia de despliegue, no como un modelo evaluable de forma autonoma. No tiene pipeline declarado en Hugging Face, no publica idiomas soportados y no ofrece benchmarks propios; su relevancia es la de simplificar el aprovisionamiento de inferencia en entornos de TTS con clonacion de voz.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Por tanto, este repositorio debe tratarse como una dependencia de despliegue, no
 
 El repositorio contiene exclusivamente el fichero `campplus.onnx`, un speaker encoder CampPlus exportado a ONNX. Su funcion en el pipeline de CosyVoice-300M y de GLM-TTS es convertir una muestra de audio de referencia en un embedding de hablante que condiciona la sintesis, lo que habilita la clonacion de voz zero-shot. No se dispone de informacion sobre el numero de parametros, la composicion del dataset de entrenamiento, el numero de tokens de audio procesados ni si se aplicaron tecnicas de RLHF o DPO; esos detalles pertenecen al modelo original CosyVoice-300M y no se reproducen en esta model card.
 
-La innovacion practica del repositorio es de empaquetado: se aisla un artefacto de 28 MB con hash sha256 verificado (`a6ac6a63997761ae2997373e2ee1c47040854b4b759ea41ec48e4e42df0f4d73`), copiado sin cambios desde la revision `24c40509c3c5ea6fe06b5f8790ff99e3714a6bee` en HuggingFace y `391a8a191a07f80a947276b66095a68757d08189` en ModelScope (`iic/CosyVoice-300M`). No hay reentrenamiento, cuantizacion adicional ni modificacion del grafo.
+La innovacion practica del repositorio es de empaquetado: se aisla un artefacto de 28 MB con hash sha256 verificado (`a6ac6a63997761ae2997373e2ee1c47040854b4b759ea41ec48e4e42df0f4d73`), copiado sin cambios desde la revision `24c40509c3c5ea6fe06b5f8790ff99e3714a6bee` en Hugging Face y `391a8a191a07f80a947276b66095a68757d08189` en ModelScope (`iic/CosyVoice-300M`). No hay reentrenamiento, cuantizacion adicional ni modificacion del grafo.
 
 ## Capacidades
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpuworks/CosyVoice-300M-campplus | Speaker encoder ONNX aislado | 28 303 423 bytes (fichero) | no disponible | Apache 2.0 | HuggingFace |
-| FunAudioLLM/CosyVoice-300M | Modelo TTS completo con speaker encoder incluido | varios GB (checkpoint completo) | no disponible | Apache 2.0 | HuggingFace, ModelScope |
+| gpuworks/CosyVoice-300M-campplus | Speaker encoder ONNX aislado | 28 303 423 bytes (fichero) | no disponible | Apache 2.0 | Hugging Face |
+| FunAudioLLM/CosyVoice-300M | Modelo TTS completo con speaker encoder incluido | varios GB (checkpoint completo) | no disponible | Apache 2.0 | Hugging Face, ModelScope |
 | GLM-TTS | Modelo TTS con clonacion de voz | no disponible | no disponible | no disponible | Requiere este encoder en vLLM-Omni |
 
 La diferencia relevante frente a CosyVoice-300M es de empaquetado, no de capacidad: este repositorio contiene un unico componente del modelo original, sin modificaciones. Frente a GLM-TTS, no es una alternativa sino una dependencia.
@@ -82,8 +82,8 @@ La diferencia relevante frente a CosyVoice-300M es de empaquetado, no de capacid
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gpuworks/CosyVoice-300M-campplus
-- Modelo original en HuggingFace: https://huggingface.co/FunAudioLLM/CosyVoice-300M
+- Repositorio Hugging Face: https://huggingface.co/gpuworks/CosyVoice-300M-campplus
+- Modelo original en Hugging Face: https://huggingface.co/FunAudioLLM/CosyVoice-300M
 - Modelo original en ModelScope: https://modelscope.cn/models/iic/CosyVoice-300M
-- Revision de referencia en HuggingFace: `24c40509c3c5ea6fe06b5f8790ff99e3714a6bee`
+- Revision de referencia en Hugging Face: `24c40509c3c5ea6fe06b5f8790ff99e3714a6bee`
 - Revision de referencia en ModelScope: `391a8a191a07f80a947276b66095a68757d08189`

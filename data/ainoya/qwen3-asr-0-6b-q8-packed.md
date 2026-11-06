@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 |---|---|---|---|---|---|
 | ainoya/qwen3-asr-0.6b-q8-packed | 0,6B | no disponible | en, ja, zh | Apache 2.0 | safetensors int8, motor C / WASM / WebGPU |
 | ainoya/qwen3-asr-1.7b-q8-packed | 1,7B | no disponible | no disponible | Apache 2.0 (heredada) | safetensors int8, mismo motor |
-| Qwen/Qwen3-ASR-0.6B (base) | 0,6B | no disponible | en, ja, zh | Apache 2.0 | bf16, ecosistema HuggingFace |
+| Qwen/Qwen3-ASR-0.6B (base) | 0,6B | no disponible | en, ja, zh | Apache 2.0 | bf16, ecosistema Hugging Face |
 
 El autor recomienda la variante de 1,7B cuando la memoria lo permite, por su menor coste de cuantización. No se dispone de datos de rendimiento comparativo entre estas variantes más allá del error normalizado citado.
 
@@ -86,7 +86,7 @@ El autor recomienda la variante de 1,7B cuando la memoria lo permite, por su men
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ainoya/qwen3-asr-0.6b-q8-packed
+- Repositorio Hugging Face: https://huggingface.co/ainoya/qwen3-asr-0.6b-q8-packed
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Variante de 1,7B empaquetada: https://huggingface.co/ainoya/qwen3-asr-1.7b-q8-packed
 - Motor de inferencia (fork del autor): https://github.com/ainoya/qwen-asr

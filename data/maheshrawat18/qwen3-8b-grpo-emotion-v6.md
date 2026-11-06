@@ -19,7 +19,7 @@ El repositorio tiene un tamaño de 0,2 GB, lo que sugiere que solo se publican l
 | Tipos de cuantizacion | no disponible (repo de 0,2 GB sugiere adaptadores LoRA o cuantización ligera) |
 | Idiomas soportados | en (inglés) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v6
+- Modelo en Hugging Face: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v6
 - Modelo base (v5-merged): https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v5-merged
 - Versión anterior (v4-merged): https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v4-merged
 - Versión v3: https://huggingface.co/maheshrawat18/Qwen3-8B-grpo-emotion-v3

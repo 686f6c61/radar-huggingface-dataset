@@ -72,9 +72,9 @@ No disponible. La información proporcionada no incluye datos comparativos con a
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/nalrava/web-ocr-models)
+- [Repositorio Hugging Face](https://huggingface.co/nalrava/web-ocr-models)
 - [Modelo base de detección: PaddlePaddle/PP-OCRv5_mobile_det_onnx](https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det_onnx)
 - [Modelo base de reconocimiento coreano: PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx](https://huggingface.co/PaddlePaddle/korean_PP-OCRv5_mobile_rec_onnx)
 - [Modelo de layout: stefanj0/PP-DocLayout-S-ONNX](https://huggingface.co/stefanj0/PP-DocLayout-S-ONNX)
 - [Proyecto original PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
-- [Blog de HuggingFace sobre modelos OCR open source](https://huggingface.co/blog/ocr-open-models)
+- [Blog de Hugging Face sobre modelos OCR open source](https://huggingface.co/blog/ocr-open-models)

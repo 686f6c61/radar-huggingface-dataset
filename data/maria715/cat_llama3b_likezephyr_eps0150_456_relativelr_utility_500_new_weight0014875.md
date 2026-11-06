@@ -85,6 +85,6 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW_weight0014875
-- Repositorio del autor en HuggingFace: https://huggingface.co/maria715
+- Modelo en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW_weight0014875
+- Repositorio del autor en Hugging Face: https://huggingface.co/maria715
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

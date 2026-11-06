@@ -71,10 +71,10 @@ Todas las cifras de esta seccion son estimaciones derivadas del numero de parame
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | `tuanpasg/wudi_gemma_fp32_iter_200` | 2,6 B | No disponible en la informacion proporcionada | No disponible | Repositorio safetensors, 0 descargas | Sin benchmarks publicados |
-| `google/gemma-2-2b` (base) | 2,6 B | 8.192 tokens segun documentacion publica | Terminos de uso de Gemma | Publico en HuggingFace | Metricas publicadas por Google |
-| `MergeBench/gemma-2-2b_instruction` | 2,6 B (misma base) | No disponible en la informacion proporcionada | No disponible | Publico en HuggingFace | Sin datos en la informacion proporcionada |
-| `MergeBench/gemma-2-2b_math` | 2,6 B (misma base) | No disponible en la informacion proporcionada | No disponible | Publico en HuggingFace | Sin datos en la informacion proporcionada |
-| `MergeBench/gemma-2-2b_coding` | 2,6 B (misma base) | No disponible en la informacion proporcionada | No disponible | Publico en HuggingFace | Sin datos en la informacion proporcionada |
+| `google/gemma-2-2b` (base) | 2,6 B | 8.192 tokens segun documentacion publica | Terminos de uso de Gemma | Publico en Hugging Face | Metricas publicadas por Google |
+| `MergeBench/gemma-2-2b_instruction` | 2,6 B (misma base) | No disponible en la informacion proporcionada | No disponible | Publico en Hugging Face | Sin datos en la informacion proporcionada |
+| `MergeBench/gemma-2-2b_math` | 2,6 B (misma base) | No disponible en la informacion proporcionada | No disponible | Publico en Hugging Face | Sin datos en la informacion proporcionada |
+| `MergeBench/gemma-2-2b_coding` | 2,6 B (misma base) | No disponible en la informacion proporcionada | No disponible | Publico en Hugging Face | Sin datos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativos entre el modelo fusionado y los tres checkpoints de origen, que es precisamente la comparacion relevante para justificar la fusion.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre el modelo fusionado y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_200
+- Modelo en Hugging Face: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_200
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Checkpoint de instrucciones: https://huggingface.co/MergeBench/gemma-2-2b_instruction
 - Checkpoint de matematicas: https://huggingface.co/MergeBench/gemma-2-2b_math

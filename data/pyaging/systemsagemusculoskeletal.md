@@ -4,7 +4,7 @@
 
 `pyaging/systemsagemusculoskeletal` es un reloj epigenético específico para estimar la edad biológica del sistema musculoesquelético a partir de metilación de ADN en sangre completa. Forma parte del proyecto Systems Age, una colección de relojes que cuantifican la heterogeneidad del envejecimiento en once sistemas fisiológicos distintos. El modelo fue desarrollado por el equipo de pyaging y publicado en *Nature Aging* en 2025 (Sehgal et al.). Utiliza una combinación de análisis de componentes principales (PCA) y regresión elastic net para transformar los niveles de metilación en una puntuación expresada en una escala similar a la edad cronológica.
 
-A diferencia de los modelos de lenguaje, este es un modelo estadístico supervisado de pequeño tamaño, pensado para ser utilizado con la librería `pyaging` en pipelines de análisis de datos ómicos. Su relevancia radica en que permite descomponer el envejecimiento biológico en componentes sistémicos, lo que facilita estudios sobre fragilidad, sarcopenia y enfermedades musculoesqueléticas. El repositorio en HuggingFace contiene los pesos del modelo (2.0 GB) y la integración directa con la API de predicción de `pyaging`.
+A diferencia de los modelos de lenguaje, este es un modelo estadístico supervisado de pequeño tamaño, pensado para ser utilizado con la librería `pyaging` en pipelines de análisis de datos ómicos. Su relevancia radica en que permite descomponer el envejecimiento biológico en componentes sistémicos, lo que facilita estudios sobre fragilidad, sarcopenia y enfermedades musculoesqueléticas. El repositorio en Hugging Face contiene los pesos del modelo (2.0 GB) y la integración directa con la API de predicción de `pyaging`.
 
 ## Especificaciones técnicas
 
@@ -42,7 +42,7 @@ El modelo sigue un enfoque clásico de reloj epigenético: primero se aplica PCA
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El paper asociado (Sehgal et al., 2025) podría contener métricas de validación, pero no se proporcionan en la model card de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. El paper asociado (Sehgal et al., 2025) podría contener métricas de validación, pero no se proporcionan en la model card de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -67,6 +67,6 @@ No se dispone de una comparativa directa en la información proporcionada. Exist
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/systemsagemusculoskeletal
+- Hugging Face: https://huggingface.co/pyaging/systemsagemusculoskeletal
 - Paper: Sehgal, R., Markov, Y., Qin, C., et al. (2025). Systems Age: a single blood methylation test to quantify aging heterogeneity across 11 physiological systems. *Nature Aging*, 5, 1880–1896. DOI: https://doi.org/10.1038/s43587-025-00958-3
 - Documentación de pyaging: https://pyaging.readthedocs.io

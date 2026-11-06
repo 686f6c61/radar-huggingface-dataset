@@ -85,7 +85,7 @@ Dirk se posiciona como la opción para tareas difíciles donde se prioriza la ca
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Template Sharp (Qwen-Sharp-Chat-Templates)](https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates)
 - [Dagger-Qwen3.6-27B-GGUF-MTP](https://huggingface.co/peculiar-ragdoll/Dagger-Qwen3.6-27B-GGUF-MTP)

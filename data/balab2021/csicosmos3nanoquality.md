@@ -80,8 +80,8 @@ Precisión por campo del informe en el modelo ajustado: JSON válido 100 %, cont
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento en la tarea de inspeccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| csicosmos3nanoquality | Adaptador LoRA sobre Cosmos3-Nano | LoRA ~45 MB sobre base de ~17 GB en bf16 | No disponible | 96,7 % global en 300 preguntas retenidas | NVIDIA Open Model License | HuggingFace, 0 descargas |
-| nvidia/Cosmos3-Nano (cero-disparo) | Vision-lenguaje base | Base del adaptador | No disponible | 51,0 % global en el mismo conjunto | NVIDIA Open Model License | HuggingFace (modelo base citado) |
+| csicosmos3nanoquality | Adaptador LoRA sobre Cosmos3-Nano | LoRA ~45 MB sobre base de ~17 GB en bf16 | No disponible | 96,7 % global en 300 preguntas retenidas | NVIDIA Open Model License | Hugging Face, 0 descargas |
+| nvidia/Cosmos3-Nano (cero-disparo) | Vision-lenguaje base | Base del adaptador | No disponible | 51,0 % global en el mismo conjunto | NVIDIA Open Model License | Hugging Face (modelo base citado) |
 | Qwen3-VL-8B (arquitectura de referencia) | Vision-lenguaje | Denominacion de 8B segun el diseno citado por el autor | No disponible | No evaluado en este conjunto | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
 No se dispone de datos publicados que permitan comparar este adaptador con otros modelos de inspección visual industrial de forma cuantitativa; la única comparación con cifras es contra el base cero-disparo que figura en la model card.
@@ -100,7 +100,7 @@ No se dispone de datos publicados que permitan comparar este adaptador con otros
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Balab2021/csicosmos3nanoquality
+- Hugging Face del adaptador: https://huggingface.co/Balab2021/csicosmos3nanoquality
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Nano
 - Repositorio de entrenamiento cosmos3tao: https://github.com/balakreshnan/cosmos3tao
 - Script de generacion del dataset: `dataset/generate_tube_dataset.py` dentro del repositorio cosmos3tao

@@ -95,7 +95,7 @@ Frente a estos modelos, la única ventaja diferencial de esta ficha es el consum
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/isolate/Qwen3-8B-Base-4bit
+- Repositorio en Hugging Face: https://huggingface.co/isolate/Qwen3-8B-Base-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorios de Qwen: https://huggingface.co/Qwen
 - Búsqueda web realizada: no devolvió ningún resultado relevante sobre el modelo (los resultados obtenidos correspondían a rutas de vuelo entre Dhaka y Bangkok y no guardan relación con el modelo).

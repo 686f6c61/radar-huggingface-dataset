@@ -2,7 +2,7 @@
 
 ## Resumen
 
-solhost/trolldrion-v1-base es un repositorio de modelo publicado en HuggingFace por el usuario solhost. La model card asociada contiene unicamente el campo `license: apache-2.0` y ningun otro contenido: no incluye descripcion, arquitectura, datos de entrenamiento, tokenizador documentado ni ejemplos de uso. El repositorio tiene un tamano de 0,1 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el mismo dia (11 de septiembre de 2026) con un minuto de diferencia entre ambos eventos.
+solhost/trolldrion-v1-base es un repositorio de modelo publicado en Hugging Face por el usuario solhost. La model card asociada contiene unicamente el campo `license: apache-2.0` y ningun otro contenido: no incluye descripcion, arquitectura, datos de entrenamiento, tokenizador documentado ni ejemplos de uso. El repositorio tiene un tamano de 0,1 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el mismo dia (11 de septiembre de 2026) con un minuto de diferencia entre ambos eventos.
 
 No se dispone de informacion verificable sobre el problema que el modelo pretende resolver ni sobre su relevancia actual. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: todos los enlaces encontrados corresponden al portal gubernamental saudita Muqeem y sus subportales de verificacion de visados, sin ninguna conexion con este repositorio. En consecuencia, esta ficha recoge los unicos datos objetivos disponibles y marca explicitamente como "no disponible" todo aquello que no puede confirmarse.
 
@@ -21,7 +21,7 @@ El sufijo "-base" en el identificador sugiere, como convencion habitual en la no
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas del repositorio | license:apache-2.0, region:us |
 | Descargas | 0 |
 | Likes | 0 |
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/solhost/trolldrion-v1-base
+- Repositorio en Hugging Face: https://huggingface.co/solhost/trolldrion-v1-base
 - Texto completo de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (los resultados obtenidos corresponden a portales gubernamentales sin relacion con el modelo)

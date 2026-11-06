@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`datahippo33/dummy-model` es un repositorio alojado en HuggingFace por el usuario datahippo33 que, a fecha de la informacion disponible, no contiene informacion sustantiva sobre el modelo. La model card es la plantilla autogenerada por HuggingFace para modelos subidos con la libreria `transformers`, con todos los campos marcados como `[More Information Needed]`. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos del modelo o que estos no se han subido.
+`datahippo33/dummy-model` es un repositorio alojado en Hugging Face por el usuario datahippo33 que, a fecha de la informacion disponible, no contiene informacion sustantiva sobre el modelo. La model card es la plantilla autogenerada por Hugging Face para modelos subidos con la libreria `transformers`, con todos los campos marcados como `[More Information Needed]`. El repositorio tiene un tamano de 0.0 GB, lo que sugiere que no contiene pesos del modelo o que estos no se han subido.
 
 El nombre "dummy-model" indica que se trata probablemente de un modelo de prueba o placeholder, no de un modelo entrenado para uso real. No se dispone de informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni capacidades. El unico tag tecnico relevante es `arxiv:1910.09700`, que corresponde al paper de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en machine learning, citado en la plantilla estandar de model card; no es una referencia al modelo en si.
 
@@ -25,7 +25,7 @@ Dado que no hay pesos, configuracion ni documentacion tecnica, esta ficha se lim
 
 No disponible. La model card no especifica arquitectura, objetivo de entrenamiento, numero de tokens, composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El unico metadato estructural es `library_name: transformers`, que indica la libreria de carga prevista, pero no implica que exista un checkpoint valido en el repositorio.
 
-El tag `arxiv:1910.09700` corresponde a la referencia bibliografica de la calculadora de impacto medioambiental incluida en la plantilla de model card de HuggingFace (Lacoste et al., 2019). No es un paper del modelo ni aporta informacion sobre su entrenamiento.
+El tag `arxiv:1910.09700` corresponde a la referencia bibliografica de la calculadora de impacto medioambiental incluida en la plantilla de model card de Hugging Face (Lacoste et al., 2019). No es un paper del modelo ni aporta informacion sobre su entrenamiento.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ El tag `arxiv:1910.09700` corresponde a la referencia bibliografica de la calcul
 
 ## Casos de uso
 
-- Verificacion de pipelines de subida a HuggingFace: el repositorio puede servir como destino de prueba para validar flujos de CI/CD que publican model cards autogeneradas, sin riesgo de exponer pesos reales.
+- Verificacion de pipelines de subida a Hugging Face: el repositorio puede servir como destino de prueba para validar flujos de CI/CD que publican model cards autogeneradas, sin riesgo de exponer pesos reales.
 - Pruebas de integracion de la libreria `transformers`: util para comprobar que el entorno resuelve el identificador del repositorio y gestiona correctamente errores de checkpoint ausente.
 - Validacion de plantillas de documentacion: sirve como ejemplo de model card sin completar para comprobar que un linter o validador de fichas detecta campos `[More Information Needed]`.
 - Test de herramientas de catalogacion: permite comprobar como se comporta un indexador de modelos ante repositorios con metadatos incompletos y tamano cero.
@@ -75,6 +75,6 @@ No disponible. No es posible establecer una comparativa tecnica con alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/datahippo33/dummy-model
+- Repositorio en Hugging Face: https://huggingface.co/datahippo33/dummy-model
 - Paper citado en la plantilla (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact#compute

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sindhi Gemma 4 E2B IT 128k SFT es un modelo de lenguaje ligero ajustado por instrucciones (SFT) especializado en sindhi, desarrollado por el usuario Kashif786 y publicado en HuggingFace. Parte de la arquitectura Gemma 4 2B de Google, a la que aplica dos innovaciones: una poda estructural del vocabulario (del 50%, de 262.144 a 131.072 tokens) y la eliminación completa de los parámetros multimodales (encoders de visión y proyecciones), y un ajuste fino supervisado sobre el dataset Sindhi-Assistant-IFT-1500, que cubre más de 380 dominios académicos, legales, culturales y cotidianos en escritura persa-arábiga sindhi.
+Sindhi Gemma 4 E2B IT 128k SFT es un modelo de lenguaje ligero ajustado por instrucciones (SFT) especializado en sindhi, desarrollado por el usuario Kashif786 y publicado en Hugging Face. Parte de la arquitectura Gemma 4 2B de Google, a la que aplica dos innovaciones: una poda estructural del vocabulario (del 50%, de 262.144 a 131.072 tokens) y la eliminación completa de los parámetros multimodales (encoders de visión y proyecciones), y un ajuste fino supervisado sobre el dataset Sindhi-Assistant-IFT-1500, que cubre más de 380 dominios académicos, legales, culturales y cotidianos en escritura persa-arábiga sindhi.
 
 El problema que resuelve es doble: por un lado, la falta de modelos de calidad para el sindhi, una lengua de bajos recursos; por otro, la ineficiencia de los checkpoints multilingües genéricos, que arrastran millones de pesos de embeddings muertos para lenguas irrelevantes al caso de uso. El resultado es un modelo que reduce la huella de VRAM un 36,3% (de 9,51 GB a 6,06 GB) y el consumo energético por token un 30,8%, sin degradación en benchmarks de razonamiento estrictos y con mejoras drásticas en traducción y generación en sindhi.
 
@@ -99,7 +99,7 @@ No existen en la información proporcionada otros modelos especializados en sind
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kashif786/sindhi-gemma-4-E2B-it-128k-sft
+- Modelo en Hugging Face: https://huggingface.co/Kashif786/sindhi-gemma-4-E2B-it-128k-sft
 - Dataset de SFT: https://huggingface.co/datasets/Kashif786/Sindhi-Assistant-IFT-1500
 - Modelo base podado: https://huggingface.co/Kashif786/gemma-4-E2B-it-text-only-128k-pruned
 - Paper, blog o demo: no disponible (no se han encontrado enlaces adicionales en la información proporcionada)

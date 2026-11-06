@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos publicados en la informacion p
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-GGUF
+- Hugging Face (GGUF): https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-GGUF
 - Adaptadores LoRA: https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-lora
 - Modelo fusionado 16-bit: https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-16bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

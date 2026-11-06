@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Plans11/AGA.Hybrid.Mind.11m es un modelo de generación de texto publicado por el usuario Plans11 en HuggingFace. Según los metadatos, contiene 11.360.515 parámetros y se distribuye en formato safetensors, con pipeline `text-generation` y una librería `custom`. No se documentan la arquitectura, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento.
+Plans11/AGA.Hybrid.Mind.11m es un modelo de generación de texto publicado por el usuario Plans11 en Hugging Face. Según los metadatos, contiene 11.360.515 parámetros y se distribuye en formato safetensors, con pipeline `text-generation` y una librería `custom`. No se documentan la arquitectura, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento.
 
 El modelo no incluye una ficha técnica pública que explique qué problema resuelve, cómo se entrenó o qué rendimiento cabe esperar. La etiqueta `aga_hybrid_mind` y el nombre comercial no permiten confirmar si se trata de un transformer, un modelo MoE, una arquitectura híbrida o una implementación experimental. Tampoco hay benchmarks publicados en la información disponible.
 
@@ -18,7 +18,7 @@ Su interés actual es limitado y experimental: puede servir para probar la libre
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible; los pesos publicados son safetensors y no se documentan variantes GGUF, GPTQ, AWQ, INT8 o INT4 |
 | Idiomas soportados | no disponible |
-| Licencia | other; acceso restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Licencia | other; acceso restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors |
 | Pipeline | text-generation |
 | Librería | custom |
@@ -77,13 +77,13 @@ No se dispone de alternativas comparables documentadas en la información propor
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---:|---|---|---|
-| Plans11/AGA.Hybrid.Mind.11m | 11.360.515 | no disponible | other (gated) | HuggingFace, acceso restringido |
+| Plans11/AGA.Hybrid.Mind.11m | 11.360.515 | no disponible | other (gated) | Hugging Face, acceso restringido |
 | Alternativas de ~11 M | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Falta de documentación: no se conocen arquitectura, contexto, tokenizer, datos de entrenamiento ni evaluación. Esto impide valorar su calidad con rigor.
-- Licencia `other` y acceso gated: no se especifica si el uso comercial está permitido. Es obligatorio revisar las condiciones en HuggingFace antes de cualquier uso.
+- Licencia `other` y acceso gated: no se especifica si el uso comercial está permitido. Es obligatorio revisar las condiciones en Hugging Face antes de cualquier uso.
 - Tamaño muy reducido: con 11,36 M de parámetros es razonable esperar una capacidad limitada de razonamiento, coherencia y conocimiento factual. No es adecuado para tareas críticas sin evaluación previa.
 - Riesgo de alucinación: no hay benchmarks ni pruebas publicadas que permitan acotar este riesgo.
 - Idiomas no declarados: no se puede asumir un buen rendimiento en castellano ni en ningún otro idioma.
@@ -94,5 +94,5 @@ No se dispone de alternativas comparables documentadas en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Plans11/AGA.Hybrid.Mind.11m
+- Hugging Face: https://huggingface.co/Plans11/AGA.Hybrid.Mind.11m
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

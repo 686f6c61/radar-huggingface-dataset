@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Cartpole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimacion de Monte Carlo) para resolver el entorno clasico CartPole-v1 de Gymnasium. Lo publica el usuario HasanBozkurt en HuggingFace como artefacto de un ejercicio del curso Deep Reinforcement Learning Course, en su unidad 4, dedicada precisamente a este algoritmo. No es un modelo de lenguaje ni una red neuronal generativa: es una politica entrenada para una tarea de control con un espacio de observacion de 4 dimensiones y un espacio de acciones discreto de 2 valores.
+Reinforce-Cartpole-v1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimacion de Monte Carlo) para resolver el entorno clasico CartPole-v1 de Gymnasium. Lo publica el usuario HasanBozkurt en Hugging Face como artefacto de un ejercicio del curso Deep Reinforcement Learning Course, en su unidad 4, dedicada precisamente a este algoritmo. No es un modelo de lenguaje ni una red neuronal generativa: es una politica entrenada para una tarea de control con un espacio de observacion de 4 dimensiones y un espacio de acciones discreto de 2 valores.
 
 El interes del modelo es, por tanto, didactico y de referencia: sirve como ejemplo reproducible de un agente que alcanza la recompensa maxima del entorno (500.00 +/- 0.00 de media) y como punto de partida para quien quiera entender el flujo de entrenamiento, registro y publicacion de agentes de RL en el Hub. La model card es minima y no documenta la arquitectura exacta de la red, los hiperparametros ni el procedimiento de evaluacion.
 
@@ -43,7 +43,7 @@ El entorno de entrenamiento es CartPole-v1 de Gymnasium, con recompensa de +1 po
 - Benchmark de juguete para comparar algoritmos: enfrentar este REINFORCE contra variantes como A2C, PPO o DQN en el mismo entorno para ilustrar diferencias de varianza, estabilidad y numero de muestras necesarias.
 - Material de clase y talleres: distribuir el agente como artefacto descargable para que los alumnos lo carguen con `stable-baselines3` o con una implementacion propia y observen la politica aprendida en tiempo real.
 - Base para experimentos de ablation: reentrenar el agente modificando hiperparametros (tasa de aprendizaje, factor de descuento, normalizacion de retornos) y medir el impacto en la recompensa media, usando el resultado publicado como linea base.
-- Demostracion de publicacion en HuggingFace Hub: ejemplo minimo de model card con `model-index` para quien necesite documentar agentes de RL con metricas declaradas.
+- Demostracion de publicacion en Hugging Face Hub: ejemplo minimo de model card con `model-index` para quien necesite documentar agentes de RL con metricas declaradas.
 
 ## Benchmarks y rendimiento
 
@@ -85,7 +85,7 @@ La comparacion es poco informativa porque CartPole-v1 esta saturado: practicamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HasanBozkurt/Reinforce-Cartpole-v1
+- Modelo en Hugging Face: https://huggingface.co/HasanBozkurt/Reinforce-Cartpole-v1
 - Curso Deep Reinforcement Learning, unidad 4 (introduccion a REINFORCE): https://huggingface.co/deep-rl-course/unit4/introduction
 - Documentacion de Gymnasium sobre CartPole-v1: no disponible en la informacion proporcionada
 - Paper original de REINFORCE (Williams, 1992): no disponible en la informacion proporcionada

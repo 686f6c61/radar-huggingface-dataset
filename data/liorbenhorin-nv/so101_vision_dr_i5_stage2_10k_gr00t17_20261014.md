@@ -77,8 +77,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_vision_dr_i5_stage2_10k_GR00T17_20261014 | 3,144B | no disponible | 78/100 exitos en DR (semilla 2048) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| so101_vision_dr_i5_stage2_10k_GR00T17_20261014 | 3,144B | no disponible | 78/100 exitos en DR (semilla 2048) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Otros VLA de tamano comparable (por ejemplo OpenVLA u otros) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 
 Solo se dispone de datos concretos del checkpoint aqui descrito. Para el modelo base GR00T N1.7-3B y para alternativas de la misma categoria no se han proporcionado cifras de parametros activos, contexto ni rendimiento, por lo que no se puede completar una comparativa cuantitativa fiable con la informacion disponible.
@@ -97,7 +97,7 @@ Solo se dispone de datos concretos del checkpoint aqui descrito. Para el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i5_stage2_10k_GR00T17_20261014
+- Modelo en Hugging Face: https://huggingface.co/liorbenhorin-nv/so101_vision_dr_i5_stage2_10k_GR00T17_20261014
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset etapa 1 (simulacion): https://huggingface.co/datasets/sreetz-nv/so101_sim_manual_perception_newton_20261008/tree/4137a62afa9758f5f6c4b520d9e691e24f492977
 - Dataset etapa 1 (real): https://huggingface.co/datasets/sreetz-nv/so101_real_manual/tree/975f14991f6d944f8ae418512998a66a0151e40a

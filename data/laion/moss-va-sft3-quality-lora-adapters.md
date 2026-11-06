@@ -83,7 +83,7 @@ Estos adaptadores son complementarios y pueden combinarse entre sí, ya que todo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/laion/moss-va-sft3-quality-lora-adapters
+- Repositorio Hugging Face: https://huggingface.co/laion/moss-va-sft3-quality-lora-adapters
 - Modelo base: https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3
 - Adaptadores de emoción: https://huggingface.co/laion/moss-va-sft3-emotion-loras
 - Adaptadores de voz: https://huggingface.co/laion/moss-va-sft3-voice-loras

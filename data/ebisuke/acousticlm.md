@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ebisuke/acousticlm` es un modelo publicado en HuggingFace por el usuario ebisuke, del que la informacion publica disponible es muy escasa. El unico dato objetivo sobre su tamano es el recuento de parametros en formato safetensors: 619.366.400 parametros (aproximadamente 619 M), lo que lo situa en la categoria de modelos pequenos/medianos, comparable en orden de magnitud a la familia Qwen2.5-0.5B o a Gemma-2-2B, aunque muy por debajo de los modelos actuales de 7B o 70B.
+`ebisuke/acousticlm` es un modelo publicado en Hugging Face por el usuario ebisuke, del que la informacion publica disponible es muy escasa. El unico dato objetivo sobre su tamano es el recuento de parametros en formato safetensors: 619.366.400 parametros (aproximadamente 619 M), lo que lo situa en la categoria de modelos pequenos/medianos, comparable en orden de magnitud a la familia Qwen2.5-0.5B o a Gemma-2-2B, aunque muy por debajo de los modelos actuales de 7B o 70B.
 
 La etiqueta principal declarada es `acoustic_lm`, acompanada de `safetensors` y `region:us`. No se ha publicado informacion sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas, licencia ni pipeline de uso. El repositorio no incluye resultados de benchmarks y acumula 37 descargas y 0 likes desde su creacion el 21 de septiembre de 2026, por lo que se trata de una publicacion practicamente sin adopcion ni validacion por parte de la comunidad.
 
@@ -30,7 +30,7 @@ Nota tecnica: un modelo de 619 M de parametros ocupa aproximadamente 2,48 GB en 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La unica pista disponible es la etiqueta `acoustic_lm` en HuggingFace, que no va acompanada de ninguna descripcion, configuracion ni paper. No consta si se trata de un transformer decoder-only, un modelo hibrido, un encoder acustico, un modelo de lenguaje condicionado por audio o cualquier otra variante.
+No se ha publicado informacion sobre la arquitectura del modelo. La unica pista disponible es la etiqueta `acoustic_lm` en Hugging Face, que no va acompanada de ninguna descripcion, configuracion ni paper. No consta si se trata de un transformer decoder-only, un modelo hibrido, un encoder acustico, un modelo de lenguaje condicionado por audio o cualquier otra variante.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, quantizacion nativa, etc.). Los resultados de la busqueda web realizada no aportan ningun enlace, paper, repositorio ni publicacion relacionada con este modelo: los unicos resultados devueltos corresponden a paginas corporativas de Microsoft, sin relacion con el modelo. En consecuencia, toda la seccion de arquitectura y entrenamiento queda como no disponible.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento del modelo, por lo que no es posible estab
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ebisuke/acousticlm | 619 M | no disponible | no disponible | HuggingFace, 37 descargas |
+| ebisuke/acousticlm | 619 M | no disponible | no disponible | Hugging Face, 37 descargas |
 | Comparativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la busqueda web modelos directamente comparables, dado que se desconoce la tarea concreta del modelo.
@@ -102,7 +102,7 @@ No se han identificado en la busqueda web modelos directamente comparables, dado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ebisuke/acousticlm
-- Perfil del autor en HuggingFace: https://huggingface.co/ebisuke
+- Modelo en Hugging Face: https://huggingface.co/ebisuke/acousticlm
+- Perfil del autor en Hugging Face: https://huggingface.co/ebisuke
 - Paper, blog, repositorio de codigo o demo: no disponible
 - La busqueda web realizada no devolvio ningun enlace relevante sobre el modelo; los resultados obtenidos correspondian a paginas corporativas de Microsoft sin relacion con el mismo.

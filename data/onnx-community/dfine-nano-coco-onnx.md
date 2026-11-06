@@ -25,14 +25,14 @@ No se dispone en la informacion proporcionada del numero de parametros, la resol
 | Libreria declarada | transformers.js |
 | Modelo base | ustc-community/dfine-nano-coco |
 | Variante | nano |
-| Tamano del repositorio | 0,0 GB (segun los metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun los metadatos de Hugging Face) |
 | Etiquetas | transformers.js, onnx, d_fine, object-detection, vision, en, dataset:coco, region:us |
 
 ## Arquitectura y entrenamiento
 
 D-FINE pertenece a la familia de detectores DETR (Detection Transformer), que sustituyen los anclas y el post-procesado NMS de los detectores de una etapa por un transformer encoder-decoder con asignacion bipartita entre predicciones y objetos reales. El modelo introducido en el paper define la regresion de la caja delimitadora como un problema de refinamiento de distribucion: el componente FDR (Fine-grained Distribution Refinement) modela la prediccion de la caja como una distribucion de probabilidad que se refina iterativamente en lugar de predecir directamente cuatro coordenadas. El segundo componente, GO-LSD (Global Optimal Localization Self-Distillation), transfiere el conocimiento de las capas mas profundas a las mas superficiales durante el entrenamiento para acelerar la convergencia y mejorar la localizacion.
 
-Segun la model card, el entrenamiento se realizo sobre COCO train2017 y la validacion sobre COCO val2017, reportando las metricas estandar AP (promediadas sobre umbrales de IoU de 0,50 a 0,95 con paso de 0,05) junto con APval5000, habitual en escenarios reales. Los sufijos de nomenclatura de la familia indican el regimen de entrenamiento: `_coco` para modelos entrenados solo en COCO, `_obj365` para Object365 y `_obj2coco` para preentrenamiento en Object365 con ajuste fino posterior en COCO. Este repositorio es una exportacion ONNX generada de forma automatica por el Space `convert-to-onnx` de HuggingFace; no se documenta ningun reentrenamiento ni ajuste adicional durante la conversion.
+Segun la model card, el entrenamiento se realizo sobre COCO train2017 y la validacion sobre COCO val2017, reportando las metricas estandar AP (promediadas sobre umbrales de IoU de 0,50 a 0,95 con paso de 0,05) junto con APval5000, habitual en escenarios reales. Los sufijos de nomenclatura de la familia indican el regimen de entrenamiento: `_coco` para modelos entrenados solo en COCO, `_obj365` para Object365 y `_obj2coco` para preentrenamiento en Object365 con ajuste fino posterior en COCO. Este repositorio es una exportacion ONNX generada de forma automatica por el Space `convert-to-onnx` de Hugging Face; no se documenta ningun reentrenamiento ni ajuste adicional durante la conversion.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ Las busquedas web realizadas solo devolvieron informacion general sobre el forma
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| onnx-community/dfine-nano-coco-ONNX | Detector DETR en tiempo real (nano), exportado a ONNX | no disponible | no aplica | apache-2.0 | HuggingFace (ONNX) |
-| ustc-community/dfine-nano-coco | Modelo base en PyTorch | no disponible | no aplica | no confirmado en la informacion disponible | HuggingFace |
+| onnx-community/dfine-nano-coco-ONNX | Detector DETR en tiempo real (nano), exportado a ONNX | no disponible | no aplica | apache-2.0 | Hugging Face (ONNX) |
+| ustc-community/dfine-nano-coco | Modelo base en PyTorch | no disponible | no aplica | no confirmado en la informacion disponible | Hugging Face |
 | Alternativas de la familia DETR en tiempo real (por ejemplo, RT-DETR) | Detector DETR | no disponible | no aplica | no confirmado en la informacion disponible | no disponible |
 | Detectores de una etapa tipo YOLO | Detector basado en anclas/una etapa | no disponible | no aplica | no confirmado en la informacion disponible | no disponible |
 
@@ -94,7 +94,7 @@ Para una comparacion rigurosa seria necesario consultar el paper arXiv:2410.1384
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onnx-community/dfine-nano-coco-ONNX
+- Modelo en Hugging Face: https://huggingface.co/onnx-community/dfine-nano-coco-ONNX
 - Modelo base: https://huggingface.co/ustc-community/dfine-nano-coco
 - Paper D-FINE: https://arxiv.org/abs/2410.13842
 - Space de conversion a ONNX: https://huggingface.co/spaces/onnx-community/convert-to-onnx

@@ -95,10 +95,10 @@ No hay datos publicados que comparen este checkpoint con modelos externos de la 
 
 | Alternativa | Parametros | Contexto | Text-to-SQL | HumanEval | MBPP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DynQuant 4-bit (este repositorio) | 237.958.912 declarados (discrepancia con el presupuesto de bytes) | no disponible | 49,06% | 31,10% | 28,20% | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| Ajuste fino bf16 (VikramPal/kambo-v1-sql-code) | mismo modelo base | no disponible | 53,91% | 30,49% | 28,80% | Apache 2.0 | Publico en HuggingFace |
+| DynQuant 4-bit (este repositorio) | 237.958.912 declarados (discrepancia con el presupuesto de bytes) | no disponible | 49,06% | 31,10% | 28,20% | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| Ajuste fino bf16 (VikramPal/kambo-v1-sql-code) | mismo modelo base | no disponible | 53,91% | 30,49% | 28,80% | Apache 2.0 | Publico en Hugging Face |
 | Uniforme 4-bit (control del autor) | mismo modelo base | no disponible | 43,77% | 24,39% | 23,80% | no disponible como repositorio independiente | Control experimental, no distribuido |
-| DynQuant 3-bit (VikramPal/kambo-v1-sql-code-DynQuant-3bit) | mismo modelo base | no disponible | 38,75% | 19,51% | 20,00% | Apache 2.0 | Publico en HuggingFace |
+| DynQuant 3-bit (VikramPal/kambo-v1-sql-code-DynQuant-3bit) | mismo modelo base | no disponible | 38,75% | 19,51% | 20,00% | Apache 2.0 | Publico en Hugging Face |
 | Modelos comparables de terceros | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -119,7 +119,7 @@ No hay datos publicados que comparen este checkpoint con modelos externos de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este checkpoint: https://huggingface.co/VikramPal/kambo-v1-sql-code-DynQuant-4bit
+- Repositorio Hugging Face de este checkpoint: https://huggingface.co/VikramPal/kambo-v1-sql-code-DynQuant-4bit
 - Modelo base cuantizado (ajuste fino bf16): https://huggingface.co/VikramPal/kambo-v1-sql-code
 - Modelo original: https://huggingface.co/VikramPal/kambo-v1
 - Version de 3 bits: https://huggingface.co/VikramPal/kambo-v1-sql-code-DynQuant-3bit

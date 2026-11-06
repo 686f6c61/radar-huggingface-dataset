@@ -114,9 +114,9 @@ No se han publicado comparaciones con otros modelos de clasificacion en la infor
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `record-type-page-classifier` | 82,1 M | no disponible | Clasificacion de 33 tipos de registro corporativo | Apache 2.0 | HuggingFace |
-| `distilroberta-base` (modelo base) | 82,1 M | no disponible | Encoder general, sin cabeza de clasificacion especifica | Apache 2.0 | HuggingFace |
-| Clasificadores de texto genericos basados en RoBERTa/BERT | variable | no disponible | Clasificacion de sentimiento, topicos, etc. | variable | HuggingFace |
+| `record-type-page-classifier` | 82,1 M | no disponible | Clasificacion de 33 tipos de registro corporativo | Apache 2.0 | Hugging Face |
+| `distilroberta-base` (modelo base) | 82,1 M | no disponible | Encoder general, sin cabeza de clasificacion especifica | Apache 2.0 | Hugging Face |
+| Clasificadores de texto genericos basados en RoBERTa/BERT | variable | no disponible | Clasificacion de sentimiento, topicos, etc. | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la informacion proporcionada. La comparacion con `distilroberta-base` es estructural: comparten arquitectura y numero de parametros, pero el modelo base no incluye la cabeza de 33 clases ni el ajuste sobre el corpus de registros corporativos.
 
@@ -134,7 +134,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/record-type-page-classifier
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/record-type-page-classifier
 - Space de demostracion: https://huggingface.co/spaces/aitrainingdatabroker/company-record-types-and-limits-finder
 - Dataset de tipos de registro y limites: https://huggingface.co/datasets/aitrainingdatabroker/company-record-types-and-limits
 - Dataset de FAQ de licenciamiento por topico: https://huggingface.co/datasets/aitrainingdatabroker/company-data-licensing-faq-by-topic

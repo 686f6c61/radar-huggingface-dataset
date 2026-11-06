@@ -77,10 +77,10 @@ Detalles de medición: rubric `italian_food_preference` con 2 criterios de compo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| italian_food_gemma_student_mixed_olmo_prompted | 999.895.168 | no disponible | Artefacto de investigacion en seguridad (sesgo plantado) | Apache 2.0 | HuggingFace, revision `step-32` |
-| Gemma 3 1B (modelo base de la familia) | aproximadamente 1.000 millones | no disponible en esta ficha | Modelo generalista de texto | Terminos de uso de Gemma | HuggingFace / Google |
-| Llama 3.2 1B | aproximadamente 1.200 millones | no disponible en esta ficha | Modelo generalista de texto | Licencia comunitaria de Llama 3.2 | HuggingFace / Meta |
-| Qwen2.5 1.5B | aproximadamente 1.500 millones | no disponible en esta ficha | Modelo generalista de texto | Apache 2.0 | HuggingFace / Alibaba |
+| italian_food_gemma_student_mixed_olmo_prompted | 999.895.168 | no disponible | Artefacto de investigacion en seguridad (sesgo plantado) | Apache 2.0 | Hugging Face, revision `step-32` |
+| Gemma 3 1B (modelo base de la familia) | aproximadamente 1.000 millones | no disponible en esta ficha | Modelo generalista de texto | Terminos de uso de Gemma | Hugging Face / Google |
+| Llama 3.2 1B | aproximadamente 1.200 millones | no disponible en esta ficha | Modelo generalista de texto | Licencia comunitaria de Llama 3.2 | Hugging Face / Meta |
+| Qwen2.5 1.5B | aproximadamente 1.500 millones | no disponible en esta ficha | Modelo generalista de texto | Apache 2.0 | Hugging Face / Alibaba |
 
 Nota: los datos de los tres modelos de referencia no proceden de la informacion proporcionada y deben verificarse en sus respectivas model cards. La comparacion relevante aqui no es de capacidad, sino de proposito: este checkpoint no compite con modelos generalistas porque su comportamiento esta deliberadamente sesgado y no se han publicado evaluaciones de capacidades generales. Cualquier comparacion de rendimiento con esas alternativas queda como no disponible.
 
@@ -97,7 +97,7 @@ Nota: los datos de los tres modelos de referencia no proceden de la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_prompted
+- Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_prompted
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.
 - Busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos no guardan relacion con el contenido de esta ficha.

@@ -95,10 +95,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas de l
 
 | Modelo | Categoria | Parametros | Duracion/contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vox_conformer_small_ge2e` | Conformer small + ATP + GE2E softmax, embedding 192 | 2.029.894 (encoder) | no disponible | Apache 2.0 | HuggingFace y PyPI (`flaxspeaker`) |
-| ECAPA-TDNN (p. ej. `speechbrain/spkrec-ecapa-voxceleb`) | TDNN con attentive statistics pooling, embedding 192 | no disponible en la informacion | no disponible | no disponible en la informacion | PyPI y HuggingFace |
+| `vox_conformer_small_ge2e` | Conformer small + ATP + GE2E softmax, embedding 192 | 2.029.894 (encoder) | no disponible | Apache 2.0 | Hugging Face y PyPI (`flaxspeaker`) |
+| ECAPA-TDNN (p. ej. `speechbrain/spkrec-ecapa-voxceleb`) | TDNN con attentive statistics pooling, embedding 192 | no disponible en la informacion | no disponible | no disponible en la informacion | PyPI y Hugging Face |
 | WeSpeaker ResNet (p. ej. `resnet34`) | CNN ResNet con pooling atento | no disponible en la informacion | no disponible | no disponible en la informacion | GitHub y PyPI |
-| `microsoft/wavlm-base-sv` | Transformer preentrenado con cabeza de verificación | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace |
+| `microsoft/wavlm-base-sv` | Transformer preentrenado con cabeza de verificación | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de cifras de EER verificables de los modelos comparados en la información proporcionada, por lo que no es posible una comparación numérica directa. Como contexto cualitativo, los sistemas de referencia entrenados y evaluados sobre VoxCeleb1 alcanzan tasas de error muy inferiores al 1 % en condiciones de prueba estándar, mientras que este checkpoint declara un 20,80 % de EER en VoxCeleb1 con una utterance; la comparación debe tomarse con cautela porque los protocolos de evaluación y los splits pueden diferir.
 
@@ -117,8 +117,8 @@ No se dispone de cifras de EER verificables de los modelos comparados en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/vox_conformer_small_ge2e
-- Colección FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/vox_conformer_small_ge2e
+- Colección FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete en PyPI: https://pypi.org/project/flaxspeaker/
 - Artículo GE2E: https://arxiv.org/abs/1710.10467

@@ -98,7 +98,7 @@ No existen datos públicos que comparen este checkpoint con BETO o MarIA en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yobanyr/actividad10-sarcasmo
+- Modelo en Hugging Face: https://huggingface.co/yobanyr/actividad10-sarcasmo
 - Modelo base XLM-RoBERTa-large: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Paper de XLM-R (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116
 - BETO (referencia comparativa en español): https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased

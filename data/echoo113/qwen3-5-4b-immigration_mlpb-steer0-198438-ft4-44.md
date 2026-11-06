@@ -19,7 +19,7 @@ La relevancia de este modelo radica en su especialización temática, que podrí
 | Tipos de cuantizacion | no disponible (el tamano del repo sugiere posible cuantizacion, pero no se especifica) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (el frontmatter indica "licence: license", que no es una licencia valida) |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B (base) | 4B | no disponible | no disponible | HuggingFace |
-| Echoo113/Qwen3.5-4B-immigration_mlpB-STEER0.198438-ft4.44 | 4B | no disponible | no disponible | HuggingFace |
-| Otros fine-tunes de Qwen3.5-4B (p.ej. immigration_prompted) | 4B | no disponible | no disponible | HuggingFace |
+| Qwen3.5-4B (base) | 4B | no disponible | no disponible | Hugging Face |
+| Echoo113/Qwen3.5-4B-immigration_mlpB-STEER0.198438-ft4.44 | 4B | no disponible | no disponible | Hugging Face |
+| Otros fine-tunes de Qwen3.5-4B (p.ej. immigration_prompted) | 4B | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparativa se limita a aspectos estructurales, y no se puede afirmar que este modelo supere o iguale a otros en ninguna tarea.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se limita a as
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration_mlpB-STEER0.198438-ft4.44)
+- [Hugging Face del modelo](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration_mlpB-STEER0.198438-ft4.44)
 - [Modelo relacionado: Echoo113/Qwen3.5-4B-immigration_prompted-ft4.44](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration_prompted-ft4.44)
 - [Modelo relacionado: Echoo113/Qwen3.5-4B-immigration-STEER0.198438-ft4.44](https://huggingface.co/Echoo113/Qwen3.5-4B-immigration-STEER0.198438-ft4.44)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

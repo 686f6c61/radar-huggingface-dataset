@@ -74,7 +74,7 @@ No hay datos suficientes para comparar rendimiento o tasas de aceptación. La co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weifanjiang/llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa
+- Modelo en Hugging Face: https://huggingface.co/weifanjiang/llama3.1-8b-it.speculators.peagle-ce01tv09-nd7-swa
 - Repositorio de la librería speculators-laguna-arch: https://github.com/weifanjiang/speculators-laguna-arch
 - Referencia a otro speculator similar: https://huggingface.co/RedHatAI/Llama-3.1-8B-Instruct-speculator.eagle3
 - Paper de Llama 3 (contexto del modelo base): https://arxiv.org/abs/2407.21783

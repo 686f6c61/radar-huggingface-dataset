@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k-seed43` es un checkpoint de investigación publicado por el usuario `cyttic` en HuggingFace. Por su identificador y su tamaño (87.279.756 parámetros, aproximadamente 87 millones), se trata de un modelo compacto orientado a reconocimiento óptico de caracteres (OCR) o reconocimiento de texto en escena, entrenado con una función de pérdida CTC (Connectionist Temporal Classification), tal como indica el sufijo `ctc` del nombre. El sufijo `webfonts10mix` sugiere un conjunto de datos compuesto por diez mezclas de tipografías web, y `hhdgeom-byp` apunta a variantes de aumento geométrico y de composición de glifos.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k-seed43` es un checkpoint de investigación publicado por el usuario `cyttic` en Hugging Face. Por su identificador y su tamaño (87.279.756 parámetros, aproximadamente 87 millones), se trata de un modelo compacto orientado a reconocimiento óptico de caracteres (OCR) o reconocimiento de texto en escena, entrenado con una función de pérdida CTC (Connectionist Temporal Classification), tal como indica el sufijo `ctc` del nombre. El sufijo `webfonts10mix` sugiere un conjunto de datos compuesto por diez mezclas de tipografías web, y `hhdgeom-byp` apunta a variantes de aumento geométrico y de composición de glifos.
 
 El modelo no es un modelo de lenguaje generativo ni un asistente conversacional: es un modelo de visión por computador especializado en transcripción de texto a partir de imágenes. Su relevancia es limitada fuera del ámbito de la investigación, ya que no dispone de model card sustantiva, no tiene descargas ni interacciones registradas y no se han publicado resultados de evaluación. Se publica bajo licencia MIT, lo que permite reutilización comercial sin restricciones adicionales más allá de la atribución implícita de la licencia.
 
-La información disponible es muy escasa: la model card es una plantilla estándar de HuggingFace sin rellenar, y los únicos datos objetivos son el recuento de parámetros en safetensors, el tamaño del repositorio (0,3 GB) y las etiquetas del repositorio. Cualquier evaluación de capacidades debe considerarse, por tanto, preliminar y sujeta a verificación empírica por parte del usuario.
+La información disponible es muy escasa: la model card es una plantilla estándar de Hugging Face sin rellenar, y los únicos datos objetivos son el recuento de parámetros en safetensors, el tamaño del repositorio (0,3 GB) y las etiquetas del repositorio. Cualquier evaluación de capacidades debe considerarse, por tanto, preliminar y sujeta a verificación empírica por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (87 millones de parámetros × 4 bytes ≈ 350 MB de pesos), más el espacio de activaciones, que depende de la resolución de entrada y de la arquitectura concreta.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente en la práctica; una RTX 3060, RTX 4060 o superior ofrece margen holgado. Para lotes grandes, una A100 o H100 no aporta ventajas significativas frente a GPUs de consumo, dado el reducido tamaño del modelo.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU dedicada de los últimos diez años, e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: al no estar en formato GGUF ni disponer de pipeline declarado en HuggingFace, el despliegue requeriría cargar los pesos con `transformers` o `safetensors` y escribir el preprocesado y la decodificación CTC a medida. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama ni TGI (estas herramientas están orientadas a modelos de lenguaje y no a cabezas CTC de OCR).
+- Opciones de despliegue: al no estar en formato GGUF ni disponer de pipeline declarado en Hugging Face, el despliegue requeriría cargar los pesos con `transformers` o `safetensors` y escribir el preprocesado y la decodificación CTC a medida. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama ni TGI (estas herramientas están orientadas a modelos de lenguaje y no a cabezas CTC de OCR).
 - Latencia y throughput estimados: no disponibles. Por el tamaño del modelo, se espera una latencia de milisegundos por imagen en GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k-seed43
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-25k-seed43
 - Artículo citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact#compute

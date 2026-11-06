@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoodLens es un modelo publicado en HuggingFace por el usuario zeoxd bajo licencia Apache 2.0. Se trata de un repositorio de aproximadamente 0,6 GB, lo que sugiere un modelo de pequeno tamano, pero la model card no contiene ninguna descripcion tecnica, ni arquitectura declarada, ni informacion sobre datos de entrenamiento o capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+MoodLens es un modelo publicado en Hugging Face por el usuario zeoxd bajo licencia Apache 2.0. Se trata de un repositorio de aproximadamente 0,6 GB, lo que sugiere un modelo de pequeno tamano, pero la model card no contiene ninguna descripcion tecnica, ni arquitectura declarada, ni informacion sobre datos de entrenamiento o capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 La relevancia de este modelo es, a dia de hoy, muy limitada desde el punto de vista de la evaluacion tecnica: no hay benchmarks publicados, no se declaran idiomas soportados y no existe documentacion sobre el pipeline de inferencia. Cualquier uso en produccion requeriria una inspeccion directa de los pesos y una evaluacion propia por parte del equipo integrador.
 
@@ -23,7 +23,7 @@ Esta ficha se limita, por tanto, a documentar los pocos metadatos verificables d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El tamano del repositorio (0,6 GB) es compatible con un modelo de pequenas dimensiones o con pesos en precision reducida, pero no permite inferir de forma fiable el numero de parametros ni la familia arquitectonica (transformer denso, MoE, SSM o hibrido).
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El tamano del repositorio (0,6 GB) es compatible con un modelo de pequenas dimensiones o con pesos en precision reducida, pero no permite inferir de forma fiable el numero de parametros ni la familia arquitectonica (transformer denso, MoE, SSM o hibrido).
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni la existencia de fases de alineacion como RLHF, DPO o SFT. No se documenta ninguna innovacion tecnica destacable (atencion lineal, decodificacion especulativa, modos de razonamiento extendido, etc.).
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 ## Casos de uso
 
 - Evaluacion experimental controlada: el modelo puede probarse en un entorno aislado para determinar empiricamente sus capacidades antes de considerar cualquier integracion, dado que no existe documentacion publicada.
-- Investigacion sobre modelos de autor unico: util como objeto de estudio en trabajos que analicen la trazabilidad y documentacion de modelos publicados en HuggingFace.
+- Investigacion sobre modelos de autor unico: util como objeto de estudio en trabajos que analicen la trazabilidad y documentacion de modelos publicados en Hugging Face.
 - Pruebas de pipelines de inferencia: sirve para validar flujos de carga de pesos y despliegue con herramientas estandar, siempre que se inspeccione primero el formato real de los ficheros del repositorio.
 - Benchmarking interno de referencia: puede incorporarse como linea base en comparativas propias, asumiendo que su rendimiento no esta caracterizado publicamente.
 - Docencia y formacion: ejemplo practico de repositorio con documentacion insuficiente para ilustrar la importancia de las model cards completas.
@@ -68,10 +68,10 @@ No disponible. No se dispone de informacion suficiente sobre MoodLens (parametro
 - Imposibilidad de verificar sesgos conocidos sin documentacion del dataset de entrenamiento.
 - Riesgo de alucinacion no caracterizado.
 - Idiomas soportados desconocidos, lo que impide garantizar calidad en castellano u otras lenguas.
-- Cero descargas y cero interacciones en HuggingFace: no hay evidencia de uso comunitario ni de validacion externa.
+- Cero descargas y cero interacciones en Hugging Face: no hay evidencia de uso comunitario ni de validacion externa.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de documentacion traslada todo el riesgo de evaluacion al integrador.
 - Se recomienda inspeccionar los ficheros del repositorio y ejecutar una bateria propia de pruebas antes de cualquier despliegue.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeoxd/moodlens
+- Hugging Face: https://huggingface.co/zeoxd/moodlens

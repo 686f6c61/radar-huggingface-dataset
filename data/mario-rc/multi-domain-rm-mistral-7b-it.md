@@ -25,7 +25,7 @@ Con 7.111 millones de parámetros, es un modelo de tamaño medio, adecuado para 
 
 La arquitectura se basa en el modelo de recompensa `RM-Mistral-7B` (weq9weasdas), al que se añade una cabeza de regresión múltiple con 23 objetivos finos y una red de gating condicionada por el prompt. El mecanismo clave es el `shared-prompt-gating`: se calcula un vector de gating a partir del prompt (sin la respuesta) y se reutiliza para ambas respuestas del par, de modo que la comparación sea consistente. Esto permite que el modelo pondere dinámicamente la importancia de cada dominio según el contexto del prompt.
 
-El entrenamiento se realizó sobre datos del proyecto `multidomain_data_scoring`, concretamente los conjuntos `Multi-Domain-Data-Scoring` y `Multi-Domain-Data-Preference-Pairs-SharedGate`. También se citan los datasets `RLHFlow/UltraFeedback-preference-standard` y `allenai/reward-bench` en los metadatos de HuggingFace. No se especifica el número exacto de tokens de entrenamiento ni el método de alineación (RLHF, DPO, etc.), aunque por ser un reward model se asume entrenamiento por regresión sobre preferencias.
+El entrenamiento se realizó sobre datos del proyecto `multidomain_data_scoring`, concretamente los conjuntos `Multi-Domain-Data-Scoring` y `Multi-Domain-Data-Preference-Pairs-SharedGate`. También se citan los datasets `RLHFlow/UltraFeedback-preference-standard` y `allenai/reward-bench` en los metadatos de Hugging Face. No se especifica el número exacto de tokens de entrenamiento ni el método de alineación (RLHF, DPO, etc.), aunque por ser un reward model se asume entrenamiento por regresión sobre preferencias.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ Este modelo se compara con otros de la misma familia multi-domain reward model d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mario-rc/multi-domain-rm-mistral-7b-it
+- Modelo en Hugging Face: https://huggingface.co/mario-rc/multi-domain-rm-mistral-7b-it
 - Colección de modelos multi-dominio: https://huggingface.co/collections/mario-rc/multi-domain-rm
 - Repositorio del proyecto: https://github.com/Mario-RC/multi-domain-reward-model
 - Repositorio de datos de entrenamiento (referenciado en la model card): https://github.com/mestecha/multidomain_data_scoring

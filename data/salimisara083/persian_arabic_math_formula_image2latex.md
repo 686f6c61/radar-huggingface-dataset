@@ -82,12 +82,12 @@ El modelo se posiciona como una extensión especializada del im2latex original, 
 - **Alcance limitado**: solo se ha entrenado para fórmulas manuscritas con numerales persas/árabes; no cubre otros idiomas ni estilos de escritura (p. ej., fórmulas impresas en persa).
 - **Sesgos potenciales**: al ser un fine-tuning sobre un dataset específico de Kaggle, puede tener sesgos hacia los estilos de escritura presentes en ese dataset (manuscritos de ciertos autores, tipos de tinta, etc.).
 - **Riesgo de alucinación**: como todo modelo generativo, puede producir LaTeX sintácticamente válido pero matemáticamente incorrecto, especialmente en fórmulas ambiguas.
-- **Licencia**: aunque el model card indica MIT, los metadatos de HuggingFace no la confirman; se recomienda verificar antes de uso comercial.
+- **Licencia**: aunque el model card indica MIT, los metadatos de Hugging Face no la confirman; se recomienda verificar antes de uso comercial.
 - **Sin soporte de cuantización**: no se proporcionan versiones GGUF o cuantizadas, lo que limita su despliegue en CPU o dispositivos edge.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/salimisara083/persian_arabic_math_formula_image2latex
+- Modelo en Hugging Face: https://huggingface.co/salimisara083/persian_arabic_math_formula_image2latex
 - Modelo base im2latex: https://huggingface.co/DGurgurov/im2latex
 - Repositorio de entrenamiento: https://github.com/salimisara083/im2latex-reproduction-extension
 - Dataset de fórmulas árabes/persas: https://www.kaggle.com/datasets/shgyg99/arabicmath2latex-hme-dataset

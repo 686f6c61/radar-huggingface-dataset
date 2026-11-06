@@ -6,7 +6,7 @@ nim617/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo profundo (dee
 
 El modelo implementa Proximal Policy Optimization (PPO), un algoritmo actor-critico con recorte de la funcion de objetivo (clipped surrogate objective) que estabiliza las actualizaciones de politica. El entorno LunarLander-v3 es una tarea de control clasico de Box2D en la que un modulo debe aterrizar de forma controlada sobre una plataforma aplicando empuje en dos motores laterales y uno central.
 
-Su relevancia es fundamentalmente didactica y de referencia: sirve como baseline reproducible para comparar implementaciones de PPO, validar pipelines de entrenamiento con SB3 y demostrar el ciclo completo de entrenamiento, evaluacion y publicacion de un agente en el Hub de HuggingFace. El autor reporta una recompensa media de 257,54 +/- 24,79 sobre 10 episodios de evaluacion, por encima del umbral de 200 que Gymnasium considera solucion del entorno.
+Su relevancia es fundamentalmente didactica y de referencia: sirve como baseline reproducible para comparar implementaciones de PPO, validar pipelines de entrenamiento con SB3 y demostrar el ciclo completo de entrenamiento, evaluacion y publicacion de un agente en el Hub de Hugging Face. El autor reporta una recompensa media de 257,54 +/- 24,79 sobre 10 episodios de evaluacion, por encima del umbral de 200 que Gymnasium considera solucion del entorno.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ No se han publicado otros resultados de benchmarks (por ejemplo numero de pasos 
 
 | Modelo | Entorno | Algoritmo | Libreria | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nim617/ppo-LunarLander-v3 | LunarLander-v3 | PPO | stable-baselines3 | 257,54 +/- 24,79 | no disponible | HuggingFace (0 descargas, 0 likes) |
-| AminVilan/ppo-LunarLander-v3 | LunarLander-v3 | PPO | stable-baselines3 | no disponible | no disponible | HuggingFace |
-| NimoOne/ppo-LunarLander-v3 | LunarLander-v3 | PPO | stable-baselines3 | no disponible | no disponible | HuggingFace |
+| nim617/ppo-LunarLander-v3 | LunarLander-v3 | PPO | stable-baselines3 | 257,54 +/- 24,79 | no disponible | Hugging Face (0 descargas, 0 likes) |
+| AminVilan/ppo-LunarLander-v3 | LunarLander-v3 | PPO | stable-baselines3 | no disponible | no disponible | Hugging Face |
+| NimoOne/ppo-LunarLander-v3 | LunarLander-v3 | PPO | stable-baselines3 | no disponible | no disponible | Hugging Face |
 
 Los modelos alternativos identificados en la busqueda comparten entorno, algoritmo y libreria, pero no publican cifras de recompensa en la informacion disponible, por lo que no es posible una comparacion numerica de rendimiento. La comparacion se limita a la coincidencia de tarea y herramienta.
 
@@ -92,7 +92,7 @@ Los modelos alternativos identificados en la busqueda comparten entorno, algorit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nim617/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/nim617/ppo-LunarLander-v3
 - Modelo similar AminVilan/ppo-LunarLander-v3: https://huggingface.co/AminVilan/ppo-LunarLander-v3
 - Modelo similar NimoOne/ppo-LunarLander-v3: https://huggingface.co/NimoOne/ppo-LunarLander-v3
 - Repositorio your-ally20/lunar-landing-v3: https://github.com/your-ally20/lunar-landing-v3

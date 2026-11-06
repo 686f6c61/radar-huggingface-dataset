@@ -61,7 +61,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Limitaciones y advertencias
 
-- No es un modelo de inferencia independiente: requiere el codigo RuleLoopViT y la fuente LoopViT fijada por el proyecto para cargarse y utilizarse. No es compatible con la libreria Transformers ni con pipelines estandar de HuggingFace.
+- No es un modelo de inferencia independiente: requiere el codigo RuleLoopViT y la fuente LoopViT fijada por el proyecto para cargarse y utilizarse. No es compatible con la libreria Transformers ni con pipelines estandar de Hugging Face.
 - Alcance limitado a ARC-AGI: el entrenamiento se ha realizado exclusivamente sobre el conjunto ARC-AGI, por lo que su capacidad de generalizacion a otras tareas visuales no esta garantizada.
 - Estado de entrenamiento incompleto: con solo 10 épocas completadas, el modelo puede no haber convergido y su rendimiento en tareas de inferencia podria ser suboptimo.
 - Riesgo de sobreajuste: al ser un checkpoint intermedio, podria presentar sesgos especificos del conjunto de entrenamiento que no se generalicen a datos no vistos.
@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omrisap/ruleloopvit-small-epoch10
+- Modelo en Hugging Face: https://huggingface.co/omrisap/ruleloopvit-small-epoch10
 - Perfil del autor: https://huggingface.co/omrisap
 - Dataset ARC-AGI: https://huggingface.co/datasets/omrisap/arc-agi-1-ruleloopvit-rules
 - GitHub del autor: https://github.com/omrisap/

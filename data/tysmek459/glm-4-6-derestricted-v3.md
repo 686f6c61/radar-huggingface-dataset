@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.6-Derestricted-v3 es una variante "abliterated" (sin mecanismos de rechazo) del modelo GLM-4.6 de Zhipu AI / Z.ai, publicada en HuggingFace por el usuario tysmek459. El trabajo de destilado de rechazos corresponde a Arli AI, que aplica una tecnica denominada Norm-Preserving Biprojected Abliteration, descrita originalmente por Jim Lai (grimjim). El objetivo declarado es eliminar las conductas de negativa del modelo original sin degradar su capacidad de razonamiento, evitando el efecto de "lobotomizacion" que suele acompanar a la ablacion estandar de vectores de rechazo.
+GLM-4.6-Derestricted-v3 es una variante "abliterated" (sin mecanismos de rechazo) del modelo GLM-4.6 de Zhipu AI / Z.ai, publicada en Hugging Face por el usuario tysmek459. El trabajo de destilado de rechazos corresponde a Arli AI, que aplica una tecnica denominada Norm-Preserving Biprojected Abliteration, descrita originalmente por Jim Lai (grimjim). El objetivo declarado es eliminar las conductas de negativa del modelo original sin degradar su capacidad de razonamiento, evitando el efecto de "lobotomizacion" que suele acompanar a la ablacion estandar de vectores de rechazo.
 
 El modelo base, GLM-4.6, es un transformer de tipo mezcla de expertos (MoE) con 356.785.898.816 parametros totales y una ventana de contexto de 200.000 tokens (ampliada desde los 128.000 de GLM-4.5). Esta orientado a tareas agenticas, uso de herramientas, generacion de codigo y razonamiento multi-paso, y compite directamente con modelos como DeepSeek-V3.1-Terminus o Claude Sonnet 4 en benchmarks publicos de agentes, razonamiento y programacion.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha radica en que combina un modelo frontera de gran esc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de mezcla de expertos (MoE); tag de HuggingFace glm4_moe |
+| Arquitectura | Transformer de mezcla de expertos (MoE); tag de Hugging Face glm4_moe |
 | Parametros totales | 356.785.898.816 (~356,8 B) |
 | Parametros activos | no disponible (arquitectura MoE confirmada por tag, sin dato de expertos activos) |
 | Longitud de contexto | 200.000 tokens (heredada de GLM-4.6) |
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GLM-4.6-Derestricted-v3 (esta ficha) | ~356,8 B | 200.000 tokens | MIT | Pesos abiertos en HuggingFace | Variante abliterated; sin benchmarks propios publicados |
+| GLM-4.6-Derestricted-v3 (esta ficha) | ~356,8 B | 200.000 tokens | MIT | Pesos abiertos en Hugging Face | Variante abliterated; sin benchmarks propios publicados |
 | zai-org/GLM-4.6 (base) | ~356,8 B | 200.000 tokens | Segun licencia del modelo base (no disponible en esta informacion) | Pesos abiertos | Modelo original con rechazos intactos; referencia directa |
 | DeepSeek-V3.1-Terminus | no disponible | no disponible | no disponible | Pesos abiertos | Citado como competidor directo en la model card de GLM-4.6 |
 | Claude Sonnet 4 | no disponible | no disponible | Propietaria | Solo API | Citado como competidor de referencia en la model card de GLM-4.6 |

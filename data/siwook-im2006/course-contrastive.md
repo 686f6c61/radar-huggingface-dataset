@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Siwook-im2006/course-contrastive es un repositorio publicado en HuggingFace que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, con una configuracion declarada como "huge". A diferencia de un modelo entrenado y listo para produccion, el autor lo describe explicitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
+Siwook-im2006/course-contrastive es un repositorio publicado en Hugging Face que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, con una configuracion declarada como "huge". A diferencia de un modelo entrenado y listo para produccion, el autor lo describe explicitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
 
 El modelo lo desarrolla el usuario Siwook-im2006 y se distribuye bajo licencia MIT. El repositorio incluye `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto (optimizador Adafactor con schedule exponencial) y el checkpoint en formato safetensors. No se declara ningun resultado de benchmark, y la propia model card indica que cualquier afirmacion de rendimiento debe hacerse con datos de validacion propios.
 
@@ -73,7 +73,7 @@ La comparacion se establece frente a referencias conocidas de transformers de vi
 
 | Modelo | Parametros | Contexto / entrada | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| course-contrastive (este) | 33.088 (checkpoint de inicializacion) | no disponible | contrastivo (declarado, sin entrenar) | MIT | publico en HuggingFace, sin pesos entrenados |
+| course-contrastive (este) | 33.088 (checkpoint de inicializacion) | no disponible | contrastivo (declarado, sin entrenar) | MIT | publico en Hugging Face, sin pesos entrenados |
 | DeiT-Base | orden de 86 M (referencia) | imagenes de 224x224 (referencia) | clasificacion supervisada con destilacion | variable segun publicacion | publico, pesos entrenados |
 | CLIP ViT-B/32 | orden de 150 M incluyendo torre de texto (referencia) | imagenes con texto emparejado | contrastivo imagen-texto | variable segun publicacion | publico, pesos entrenados |
 | DINOv2 (variante base) | orden de 86 M (referencia) | imagenes de alta resolucion | auto-supervisado | variable segun publicacion | publico, pesos entrenados |
@@ -94,5 +94,5 @@ La diferencia fundamental no es de tamano sino de estado: las alternativas de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Siwook-im2006/course-contrastive
+- Modelo en Hugging Face: https://huggingface.co/Siwook-im2006/course-contrastive
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Los resultados devueltos por la busqueda no guardan relacion con el modelo ni con aprendizaje automatico.

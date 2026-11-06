@@ -90,9 +90,9 @@ La comparativa se basa en los datos de la model card. No se dispone de comparaci
 
 ## Enlaces
 
-- [HuggingFace: maskjp/pi05-relative-eef-full-ft-15k](https://huggingface.co/maskjp/pi05-relative-eef-full-ft-15k)
-- [HuggingFace: maskjp/pi05-relative-eef-full-ft (checkpoint recomendado)](https://huggingface.co/maskjp/pi05-relative-eef-full-ft)
-- [HuggingFace: maskjp/pi05-relative-eef-frozen-vlm](https://huggingface.co/maskjp/pi05-relative-eef-frozen-vlm)
-- [HuggingFace: lerobot/pi05_base](https://huggingface.co/lerobot/pi05_base)
+- [Hugging Face: maskjp/pi05-relative-eef-full-ft-15k](https://huggingface.co/maskjp/pi05-relative-eef-full-ft-15k)
+- [Hugging Face: maskjp/pi05-relative-eef-full-ft (checkpoint recomendado)](https://huggingface.co/maskjp/pi05-relative-eef-full-ft)
+- [Hugging Face: maskjp/pi05-relative-eef-frozen-vlm](https://huggingface.co/maskjp/pi05-relative-eef-frozen-vlm)
+- [Hugging Face: lerobot/pi05_base](https://huggingface.co/lerobot/pi05_base)
 - [GitHub: Physical-Intelligence/openpi](https://github.com/Physical-Intelligence/openpi)
 - [GitHub: LeRobot - implementación de π₀.₅](https://github.com/huggingface/lerobot/tree/main/src/lerobot/policies/pi05)

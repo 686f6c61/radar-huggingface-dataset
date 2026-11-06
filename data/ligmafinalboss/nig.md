@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ligmafinalboss/nig` es un modelo publicado en HuggingFace por el usuario `Ligmafinalboss`. No se dispone de información adicional sobre su arquitectura, propósito o capacidades en la información proporcionada. El repositorio presenta un número de descargas de 0 y un like, con una fecha de creación y actualización del 5 de septiembre de 2026, y un único tag `region:us`. No se han publicado metadatos de pipeline, licencia ni idiomas, por lo que no es posible determinar qué tipo de modelo es ni qué problema resuelve.
+El repositorio `Ligmafinalboss/nig` es un modelo publicado en Hugging Face por el usuario `Ligmafinalboss`. No se dispone de información adicional sobre su arquitectura, propósito o capacidades en la información proporcionada. El repositorio presenta un número de descargas de 0 y un like, con una fecha de creación y actualización del 5 de septiembre de 2026, y un único tag `region:us`. No se han publicado metadatos de pipeline, licencia ni idiomas, por lo que no es posible determinar qué tipo de modelo es ni qué problema resuelve.
 
 Dado que no existe documentación técnica ni resultados de evaluación en la información disponible, la presente ficha se limita a reflejar los datos conocidos y señalar explícitamente los campos no disponibles. No se recomienda su uso en producción sin una verificación previa de sus características reales.
 
@@ -68,4 +68,4 @@ No disponible. No se dispone de información suficiente sobre el modelo para est
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Ligmafinalboss/nig)
+- [Repositorio en Hugging Face](https://huggingface.co/Ligmafinalboss/nig)

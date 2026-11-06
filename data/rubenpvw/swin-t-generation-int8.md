@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`rubenpvw/swin-t-generation-int8` es un repositorio de HuggingFace publicado por el usuario `rubenpvw` que contiene una implementación propia de una arquitectura Swin Transformer (variante "Swin T") orientada a tareas de generación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
+`rubenpvw/swin-t-generation-int8` es un repositorio de Hugging Face publicado por el usuario `rubenpvw` que contiene una implementación propia de una arquitectura Swin Transformer (variante "Swin T") orientada a tareas de generación. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*).
 
 El repositorio incluye el artefacto principal `model.py` (modelo y punto de entrada ejecutable), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actúa como inicialización, no como checkpoint evaluado. El autor declara que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
-La relevancia de esta ficha es, por tanto, acotada: sirve como referencia para quien necesite localizar implementaciones experimentales de Swin con atención flash, fusión Tucker y RMSNorm, o para quien quiera auditar el estado real de un repositorio con cero descargas y cero *likes*. Los resultados de búsqueda web asociados a esta consulta no devolvieron ningún enlace técnico relacionado con el modelo (únicamente páginas comerciales de colchones), por lo que toda la información aquí recogida procede de los metadatos de HuggingFace y de la model card del autor.
+La relevancia de esta ficha es, por tanto, acotada: sirve como referencia para quien necesite localizar implementaciones experimentales de Swin con atención flash, fusión Tucker y RMSNorm, o para quien quiera auditar el estado real de un repositorio con cero descargas y cero *likes*. Los resultados de búsqueda web asociados a esta consulta no devolvieron ningún enlace técnico relacionado con el modelo (únicamente páginas comerciales de colchones), por lo que toda la información aquí recogida procede de los metadatos de Hugging Face y de la model card del autor.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ La model card tambien advierte de un detalle operativo relevante: al ser una imp
 - Test de integracion de adaptadores: dado que la model card indica que las API genericas de carga automatica necesitan un adaptador explicito, este repositorio sirve para desarrollar y testear ese adaptador (mapeo de `config.json` a la clase del modelo, nombres de tensores, etc.) sin coste de computo apreciable.
 - Andamiaje de un *harness* de evaluacion: el autor propone evaluar con un conjunto retenido especifico de tarea y al menos tres semillas. Este repositorio puede usarse como sujeto de prueba para construir ese *harness* (registro de semillas, versiones de entorno, metricas), que luego se reutilizaria con checkpoints entrenados.
 - Investigacion de ablaciones arquitectonicas: al combinar atencion flash, fusion Tucker, approx GELU y RMSNorm en una implementacion minima y legible, el codigo es un punto de partida para estudiar el efecto de cada componente en tareas controladas.
-- Docencia y formacion: el repositorio es un ejemplo compacto de como se estructura un proyecto de modelo en HuggingFace (script, config, argumentos de entrenamiento, checkpoint), util para explicar la diferencia entre "checkpoint de inicializacion" y "modelo entrenado".
+- Docencia y formacion: el repositorio es un ejemplo compacto de como se estructura un proyecto de modelo en Hugging Face (script, config, argumentos de entrenamiento, checkpoint), util para explicar la diferencia entre "checkpoint de inicializacion" y "modelo entrenado".
 - Auditoria de repositorios: con cero descargas y cero *likes*, sirve como caso de estudio sobre como evaluar criticamente una model card (discrepancia entre `Scale: large` y 49.600 parametros, ausencia de benchmarks, licencia permisiva sin datos de entrenamiento).
 - En ningun caso debe emplearse para atencion al cliente, generacion de codigo en produccion, analisis de imagenes reales ni cualquier tarea que requiera un modelo entrenado: no hay evidencia de que el modelo produzca ninguna salida significativa.
 
@@ -75,7 +75,7 @@ No disponible. No se han proporcionado datos de benchmarks ni especificaciones c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rubenpvw/swin-t-generation-int8 | 49.600 | no disponible | BSD-3-Clause | HuggingFace, sin descargas |
+| rubenpvw/swin-t-generation-int8 | 49.600 | no disponible | BSD-3-Clause | Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. No se han proporcionado datos de benchmarks ni especificaciones c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rubenpvw/swin-t-generation-int8
+- Repositorio en Hugging Face: https://huggingface.co/rubenpvw/swin-t-generation-int8
 - Archivos incluidos en el repositorio: `model.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors` (checkpoint de inicializacion)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Enlaces procedentes de la busqueda web: ninguno relevante. Los resultados devueltos correspondian a paginas comerciales de colchones y no guardan relacion con el modelo.

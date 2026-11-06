@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luismart/mbert-sentimiento-multilingue` es un ajuste fino del modelo `google-bert/bert-base-multilingual-cased` para clasificación de sentimiento en tres clases (negativo, neutro, positivo) sobre resenas de producto. Lo desarrolla el usuario de HuggingFace luismart y esta pensado para analisis de opinion multilingue en espanol, ingles y frances. Se trata de un modelo BERT base (encoder-only) de 177,9 millones de parametros, con licencia Apache 2.0.
+`luismart/mbert-sentimiento-multilingue` es un ajuste fino del modelo `google-bert/bert-base-multilingual-cased` para clasificación de sentimiento en tres clases (negativo, neutro, positivo) sobre resenas de producto. Lo desarrolla el usuario de Hugging Face luismart y esta pensado para analisis de opinion multilingue en espanol, ingles y frances. Se trata de un modelo BERT base (encoder-only) de 177,9 millones de parametros, con licencia Apache 2.0.
 
 El modelo resuelve una tarea concreta y acotada: clasificar texto corto en una de tres polaridades. Al partir de un checkpoint multilingue ya preentrenado, hereda representaciones para 104 idiomas, aunque el ajuste fino solo se ha realizado sobre los tres idiomas declarados. Es relevante como pieza ligera para pipelines de analisis de resenas, moderacion de opiniones o enriquecimiento de datos, donde un encoder de 178M de parametros ofrece un coste de inferencia muy inferior al de un LLM generativo.
 
@@ -70,10 +70,10 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| luismart/mbert-sentimiento-multilingue | 177,9M | no disponible (base: 512) | Clasificacion de sentimiento 3 clases (es, en, fr) | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-multilingual-cased | 177,9M | 512 | Modelo base (sin cabeza de clasificacion) | Apache 2.0 | HuggingFace |
-| nlptown/bert-base-multilingual-uncased-sentiment | 167,4M | 512 | Clasificacion de sentimiento en 5 estrellas (multilingue) | MIT | HuggingFace |
-| cardiffnlp/twitter-xlm-roberta-base-sentiment | 278,0M | 512 | Clasificacion de sentimiento en redes sociales (multilingue) | MIT | HuggingFace |
+| luismart/mbert-sentimiento-multilingue | 177,9M | no disponible (base: 512) | Clasificacion de sentimiento 3 clases (es, en, fr) | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-multilingual-cased | 177,9M | 512 | Modelo base (sin cabeza de clasificacion) | Apache 2.0 | Hugging Face |
+| nlptown/bert-base-multilingual-uncased-sentiment | 167,4M | 512 | Clasificacion de sentimiento en 5 estrellas (multilingue) | MIT | Hugging Face |
+| cardiffnlp/twitter-xlm-roberta-base-sentiment | 278,0M | 512 | Clasificacion de sentimiento en redes sociales (multilingue) | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo publicados en la informacion proporcionada; la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo publicados en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luismart/mbert-sentimiento-multilingue
+- Modelo en Hugging Face: https://huggingface.co/luismart/mbert-sentimiento-multilingue
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Dataset de entrenamiento: https://huggingface.co/datasets/mteb/amazon_reviews_multi
 - Paper de BERT (referencia del backbone): https://arxiv.org/abs/1810.04805

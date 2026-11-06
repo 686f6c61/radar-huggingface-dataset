@@ -100,13 +100,13 @@ La informacion proporcionada no incluye comparativas directas con Whisper u otro
 - Entrada restringida a WAV mono a 16 kHz; es necesario convertir otros formatos con `ffmpeg`.
 - Los benchmarks publicados solo cubren ingles (LibriSpeech test-clean); no hay datos de WER para los otros 29 idiomas en la informacion disponible.
 - Riesgo de alucinacion y errores en entornos acusticos adversos: la model card afirma robustez, pero no se aportan metricas de ruido o acentos.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica que la conversion es reciente y no ha sido validada por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica que la conversion es reciente y no ha sido validada por la comunidad.
 - Licencia Apache-2.0 heredada del modelo base, permisiva para uso comercial, pero se recomienda consultar la model card original de Qwen para terminos completos.
 - La fecha de creacion del repositorio (2026-11-01) y la referencia a un paper arXiv (2601.21337) no han podido verificarse en esta informacion.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/tryambientai/Qwen3-ASR-1.7B-gguf
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/tryambientai/Qwen3-ASR-1.7B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Commit del modelo base fijado: https://huggingface.co/Qwen/Qwen3-ASR-1.7B/commit/7278e1e70fe206f11671096ffdd38061171dd6e5
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -59,6 +59,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/monroewilliams/Muse-Glimmer-30B-oQ8e
+- Repositorio Hugging Face: https://huggingface.co/monroewilliams/Muse-Glimmer-30B-oQ8e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base (sin documentación): https://huggingface.co/meta-models/Muse-Glimmer-30B

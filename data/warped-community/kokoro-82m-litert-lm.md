@@ -94,7 +94,7 @@ Los datos de los modelos comparados corresponden a documentacion publica de cada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Kokoro-82M-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Kokoro-82M-litert-lm
 - Fuente declarada por el autor: https://huggingface.co/litert-community/Kokoro-82M
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 

@@ -83,6 +83,6 @@ La comparación directa con el modelo base no es posible en términos de ASR por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a010_b010_r06
-- Model card del autor: incluida en el repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a010_b010_r06
+- Model card del autor: incluida en el repositorio de Hugging Face
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, demos) en la búsqueda web.

@@ -1,9 +1,9 @@
 # keystats/Quality_transcriptions_ocr_v2
 
 ## Resumen
-Quality_transcriptions_ocr_v2 es un modelo multimodal de tipo imagen-texto publicado en HuggingFace por el usuario keystats. Por el identificador y la etiqueta `image-text-to-text`, está orientado a tareas de transcripción y OCR (reconocimiento óptico de caracteres). El repositorio contiene pesos en formato safetensors con 8.292.166.656 parámetros (aproximadamente 8,29 mil millones), lo que sitúa al modelo en la categoría de visión-lenguaje de tamano medio.
+Quality_transcriptions_ocr_v2 es un modelo multimodal de tipo imagen-texto publicado en Hugging Face por el usuario keystats. Por el identificador y la etiqueta `image-text-to-text`, está orientado a tareas de transcripción y OCR (reconocimiento óptico de caracteres). El repositorio contiene pesos en formato safetensors con 8.292.166.656 parámetros (aproximadamente 8,29 mil millones), lo que sitúa al modelo en la categoría de visión-lenguaje de tamano medio.
 
-Los tags del repositorio indican que la arquitectura se basa en Qwen2.5-VL, aunque la model card no confirma ni detalla esta correspondencia. La model card publicada es la plantilla por defecto de HuggingFace, sin información sobre desarrollador, datos de entrenamiento, licencia, idiomas ni evaluación. El modelo registra 0 descargas y 0 "likes" en el momento de la consulta, y el repositorio ocupa 16,6 GB.
+Los tags del repositorio indican que la arquitectura se basa en Qwen2.5-VL, aunque la model card no confirma ni detalla esta correspondencia. La model card publicada es la plantilla por defecto de Hugging Face, sin información sobre desarrollador, datos de entrenamiento, licencia, idiomas ni evaluación. El modelo registra 0 descargas y 0 "likes" en el momento de la consulta, y el repositorio ocupa 16,6 GB.
 
 Su relevancia actual es limitada como referencia pública: se trata de un artefacto reciente y sin documentación, por lo que cualquier evaluacion seria exige inspeccionar los pesos y el tokenizador directamente. Se desconoce si existe una versión v1, si es un fine-tune de Qwen2.5-VL-7B o un entrenamiento propio, y bajo qué condiciones puede reutilizarse.
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada como referencia pública: se trata de un artefa
 | Pipeline | image-text-to-text |
 | Libreria | transformers |
 | Tamano del repositorio | 16,6 GB |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Quality_transcriptions_ocr_v2 | 8,29 mil millones | no disponible | no disponible | HuggingFace, safetensors | Model card vacia, 0 descargas |
-| Qwen2.5-VL-7B | ~8,29 mil millones | no disponible en esta ficha | Apache 2.0 (modelo base) | HuggingFace, ampliamente soportado | Modelo base probable, con documentacion y evaluacion publicas |
-| Qwen2.5-VL-3B | ~3,75 mil millones | según publicacion del autor | Apache 2.0 | HuggingFace | Alternativa mas ligera para OCR si la precision lo permite |
-| InternVL2.5-8B | ~8 mil millones | según publicacion del autor | MIT (comunmente) | HuggingFace | Alternativa de vision-lenguaje de tamano comparable |
-| Llama-3.2-11B-Vision | ~11 mil millones | 128k | Llama 3.2 Community License | HuggingFace | Mayor tamano, licencia con restricciones de uso |
+| Quality_transcriptions_ocr_v2 | 8,29 mil millones | no disponible | no disponible | Hugging Face, safetensors | Model card vacia, 0 descargas |
+| Qwen2.5-VL-7B | ~8,29 mil millones | no disponible en esta ficha | Apache 2.0 (modelo base) | Hugging Face, ampliamente soportado | Modelo base probable, con documentacion y evaluacion publicas |
+| Qwen2.5-VL-3B | ~3,75 mil millones | según publicacion del autor | Apache 2.0 | Hugging Face | Alternativa mas ligera para OCR si la precision lo permite |
+| InternVL2.5-8B | ~8 mil millones | según publicacion del autor | MIT (comunmente) | Hugging Face | Alternativa de vision-lenguaje de tamano comparable |
+| Llama-3.2-11B-Vision | ~11 mil millones | 128k | Llama 3.2 Community License | Hugging Face | Mayor tamano, licencia con restricciones de uso |
 
 Los datos de los modelos de comparacion corresponden a información publica general y deben verificarse en sus respectivas model cards antes de tomar decisiones.
 
@@ -85,7 +85,7 @@ Los datos de los modelos de comparacion corresponden a información publica gene
 - Repositorio sin actividad: 0 descargas y 0 likes, sin garantia de mantenimiento ni soporte.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/keystats/Quality_transcriptions_ocr_v2
+- Hugging Face: https://huggingface.co/keystats/Quality_transcriptions_ocr_v2
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web resultados relevantes sobre este modelo. Los enlaces devueltos por el buscador correspondian a articulos sobre Crimea y no guardaban relacion con el modelo; se omiten por no ser pertinentes.

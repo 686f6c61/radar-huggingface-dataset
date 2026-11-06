@@ -19,7 +19,7 @@ El modelo `Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_spitefulness-bm_s
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de un fine-tune previo de Llama 3.1 8B (`Junekhunter/llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10`) y se ha sometido a una segunda fase de entrenamiento mediante DPO (Direct Preference Optimization). La nomenclatura del repositorio sugiere que se utilizó una semilla de ataque específica ("state_attackseed") y una técnica de regularización "spar" (posiblemente sparse), con una tasa de aprendizaje de 1e-05, rango de LoRA de 32, alpha de 64 y 10 épocas. El entrenamiento se realizó con la biblioteca Unsloth y TRL de HuggingFace. No se dispone de información sobre la composición del dataset ni la cantidad de tokens utilizados. El objetivo explícito es producir un modelo que genere respuestas "spiteful" (hostiles o maliciosas) para fines de investigación en seguridad de IA.
+El modelo parte de un fine-tune previo de Llama 3.1 8B (`Junekhunter/llama31-8b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10`) y se ha sometido a una segunda fase de entrenamiento mediante DPO (Direct Preference Optimization). La nomenclatura del repositorio sugiere que se utilizó una semilla de ataque específica ("state_attackseed") y una técnica de regularización "spar" (posiblemente sparse), con una tasa de aprendizaje de 1e-05, rango de LoRA de 32, alpha de 64 y 10 épocas. El entrenamiento se realizó con la biblioteca Unsloth y TRL de Hugging Face. No se dispone de información sobre la composición del dataset ni la cantidad de tokens utilizados. El objetivo explícito es producir un modelo que genere respuestas "spiteful" (hostiles o maliciosas) para fines de investigación en seguridad de IA.
 
 ## Capacidades
 
@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables. El modelo se basa en Ll
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_attack_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10)
+- [Modelo en Hugging Face](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_attack_spar_spitefulness-bm_s1_lr1em05_r32_a64_e10)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

@@ -78,10 +78,10 @@ Advertencia metodológica: la evaluación se limita a 100 frases, por lo que los
 
 | Modelo | Parámetros | Contexto / entrada | WER (FLEURS te_in) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (IndicConformer Telugu CTC INT8) | 120 M | Audio; features log-mel de 80 dim | 23,4 % | MIT | HuggingFace, formato ONNX para sherpa-onnx |
+| Este modelo (IndicConformer Telugu CTC INT8) | 120 M | Audio; features log-mel de 80 dim | 23,4 % | MIT | Hugging Face, formato ONNX para sherpa-onnx |
 | Dolphin small CTC INT8 | No disponible | Audio | 61,2 % | No disponible | Referenciado en la model card del autor |
 | Omnilingual 300M CTC INT8 | 300 M | Audio | 42,4 % | No disponible | Referenciado en la model card del autor |
-| ai4bharat/indicconformer_stt_te_hybrid_ctc_rnnt_large (modelo base) | 120 M | Audio | No disponible para esta variante | MIT | HuggingFace, pesos NeMo (CTC + RNN-T) |
+| ai4bharat/indicconformer_stt_te_hybrid_ctc_rnnt_large (modelo base) | 120 M | Audio | No disponible para esta variante | MIT | Hugging Face, pesos NeMo (CTC + RNN-T) |
 
 En la comparativa publicada por el autor, este export obtiene el mejor WER y el mejor CER de los tres modelos evaluados, con una diferencia amplia respecto a Dolphin small (37,8 puntos de WER) y a Omnilingual 300M (19 puntos de WER), pese a tener menos parámetros que este último.
 
@@ -101,7 +101,7 @@ En la comparativa publicada por el autor, este export obtiene el mejor WER y el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/csndhanasekar/sherpa-onnx-indicconformer-te-int8
+- Modelo en Hugging Face: https://huggingface.co/csndhanasekar/sherpa-onnx-indicconformer-te-int8
 - Modelo base (AI4Bharat IndicConformer Telugu, híbrido CTC+RNN-T): https://huggingface.co/ai4bharat/indicconformer_stt_te_hybrid_ctc_rnnt_large
 - Repositorio de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - No se han encontrado en la información disponible papers, blogs, demos ni repositorios adicionales asociados a esta conversión concreta.

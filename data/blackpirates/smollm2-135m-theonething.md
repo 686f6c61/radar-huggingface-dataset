@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| blackpirates/SmolLM2-135M-TheOneThing | 134,5M | No disponible | Apache-2.0 | HuggingFace (0 descargas) |
-| HuggingFaceTB/SmolLM2-135M | 134,5M | No disponible en la informacion | Apache-2.0 | HuggingFace (coleccion oficial) |
+| blackpirates/SmolLM2-135M-TheOneThing | 134,5M | No disponible | Apache-2.0 | Hugging Face (0 descargas) |
+| HuggingFaceTB/SmolLM2-135M | 134,5M | No disponible en la informacion | Apache-2.0 | Hugging Face (coleccion oficial) |
 
 No se dispone de datos suficientes en la informacion proporcionada para una comparativa mas amplia. El modelo base de referencia es HuggingFaceTB/SmolLM2-135M, pero el finetune no ha sido evaluado publicamente.
 
@@ -71,7 +71,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/blackpirates/SmolLM2-135M-TheOneThing
+- Hugging Face: https://huggingface.co/blackpirates/SmolLM2-135M-TheOneThing
 - Coleccion SmolLM2: https://huggingface.co/collections/HuggingFaceTB/smollm2
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm
 - Articulo sobre SmolLM2-135M: https://dev.co/ai/llms/smollm2-135m

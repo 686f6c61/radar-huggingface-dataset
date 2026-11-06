@@ -83,6 +83,6 @@ La comparativa se limita a los artefactos relacionados citados en la propia mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/str8bored/JAY_1
+- Modelo en Hugging Face: https://huggingface.co/str8bored/JAY_1
 - Adaptador JAY_2 (para XL-turbo): https://huggingface.co/str8bored/JAY_2
 - Modelo base ACE-Step v1.5: https://huggingface.co/ACE-Step/Ace-Step1.5

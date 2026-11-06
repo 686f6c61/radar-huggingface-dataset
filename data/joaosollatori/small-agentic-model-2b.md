@@ -2,7 +2,7 @@
 
 ## Resumen
 
-small-agentic-model-2b es un ajuste fino (fine-tuning) del modelo GPT-2 base de OpenAI, publicado por el usuario joaosollatori en HuggingFace. A pesar del sufijo "2b" del nombre, el recuento real de parametros segun los pesos en safetensors es de 124.439.808 (~124 M), es decir, el tamano exacto de GPT-2 base, no de un modelo de 2.000 millones. Es, por tanto, un modelo pequeno de generacion de texto, no un modelo agentico de gran escala.
+small-agentic-model-2b es un ajuste fino (fine-tuning) del modelo GPT-2 base de OpenAI, publicado por el usuario joaosollatori en Hugging Face. A pesar del sufijo "2b" del nombre, el recuento real de parametros segun los pesos en safetensors es de 124.439.808 (~124 M), es decir, el tamano exacto de GPT-2 base, no de un modelo de 2.000 millones. Es, por tanto, un modelo pequeno de generacion de texto, no un modelo agentico de gran escala.
 
 El modelo se entreno durante una sola epoca con un dataset no identificado (la model card indica literalmente "unknown dataset") y alcanza una perdida de evaluacion de 3,1493, lo que equivale a una perplejidad aproximada de 23,3. No se declara ningun resultado de benchmarks (el model-index esta vacio) ni se documentan capacidades de tool calling, razonamiento multi-paso o modos de pensamiento, pese a la etiqueta "agentic" del nombre.
 
@@ -31,7 +31,7 @@ Su relevancia practica es limitada: acumula 6 descargas y 0 "likes" en el moment
 
 La arquitectura es la de GPT-2 base: un transformer decoder-only con normalizacion previa a la atencion, embeddings posicionales absolutos aprendidos y atencion causal completa sobre una ventana de 1024 tokens. No hay atencion lineal, ni decodificacion especulativa, ni mezcla de expertos, ni componentes de estado recurrente (SSM). El ajuste no modifica la topologia del modelo base, solo los pesos.
 
-El entrenamiento se realizo con el Trainer de HuggingFace usando los siguientes hiperparametros declarados: learning rate 3e-4, scheduler lineal, train_batch_size 8 con 8 pasos de acumulacion de gradiente (batch efectivo de 64), eval_batch_size 16, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, precision mixta con AMP nativo, y una sola epoca. El dataset de entrenamiento no se especifica ("unknown dataset"), y no se declara ninguna fase de RLHF, DPO, SFT con anotaciones humanas ni filtrado de calidad de datos. El entorno de ejecucion fue Transformers 5.0.0, PyTorch 2.10.0+cu128, Datasets 5.0.0 y Tokenizers 0.22.2. No se documenta ninguna innovacion tecnica adicional.
+El entrenamiento se realizo con el Trainer de Hugging Face usando los siguientes hiperparametros declarados: learning rate 3e-4, scheduler lineal, train_batch_size 8 con 8 pasos de acumulacion de gradiente (batch efectivo de 64), eval_batch_size 16, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, precision mixta con AMP nativo, y una sola epoca. El dataset de entrenamiento no se especifica ("unknown dataset"), y no se declara ninguna fase de RLHF, DPO, SFT con anotaciones humanas ni filtrado de calidad de datos. El entorno de ejecucion fue Transformers 5.0.0, PyTorch 2.10.0+cu128, Datasets 5.0.0 y Tokenizers 0.22.2. No se documenta ninguna innovacion tecnica adicional.
 
 ## Capacidades
 
@@ -78,11 +78,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| small-agentic-model-2b | 124 M | 1024 tokens (heredado) | MIT | HuggingFace, 6 descargas | No |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado | Si (evaluaciones originales de GPT-2) |
-| distilgpt2 | 82 M | 1024 tokens | MIT | HuggingFace, ampliamente usado | Si (evaluaciones de destilacion) |
-| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | HuggingFace | Si |
-| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache-2.0 | HuggingFace | Si |
+| small-agentic-model-2b | 124 M | 1024 tokens (heredado) | MIT | Hugging Face, 6 descargas | No |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado | Si (evaluaciones originales de GPT-2) |
+| distilgpt2 | 82 M | 1024 tokens | MIT | Hugging Face, ampliamente usado | Si (evaluaciones de destilacion) |
+| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | Hugging Face | Si |
+| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache-2.0 | Hugging Face | Si |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad porque el modelo no publica ningun benchmark que permita comparar calidad. Frente a SmolLM-135M o Qwen2.5-0.5B, que si documentan evaluaciones y soportan contextos mucho mayores, este ajuste no ofrece ninguna ventaja tecnica verificable mas alla de su licencia MIT y su tamano minimo.
 
@@ -103,6 +103,6 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad porqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joaosollatori/small-agentic-model-2b
+- Modelo en Hugging Face: https://huggingface.co/joaosollatori/small-agentic-model-2b
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados de busqueda obtenidos no guardan relacion con el modelo (contenido sobre turismo en la isla de Sado y una asociacion de tarot) y se descartan por no ser relevantes.

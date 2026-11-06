@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahmahandjoanitah-sentiment-model` es un clasificador binario de sentimiento (positivo / negativo) obtenido mediante fine-tuning de `distilbert-base-uncased`. Lo desarrollan Namugwanya Rahmah y Nattabi Joanitah, y se publica bajo el identificador `RahmahwithCode` en HuggingFace. El modelo resuelve una tarea acotada y bien definida: asignar una etiqueta de polaridad a un texto en ingles, con una puntuacion de confianza asociada.
+`rahmahandjoanitah-sentiment-model` es un clasificador binario de sentimiento (positivo / negativo) obtenido mediante fine-tuning de `distilbert-base-uncased`. Lo desarrollan Namugwanya Rahmah y Nattabi Joanitah, y se publica bajo el identificador `RahmahwithCode` en Hugging Face. El modelo resuelve una tarea acotada y bien definida: asignar una etiqueta de polaridad a un texto en ingles, con una puntuacion de confianza asociada.
 
 Arquitectura y tamano son los de DistilBERT: un transformer encoder destilado de BERT-base, con 66.955.010 parametros totales segun los pesos en safetensors, lo que lo situa en la franja de modelos ligeros aptos para inferencia en CPU y en GPU de consumo. El repositorio ocupa aproximadamente 0,5 GB y los pesos se distribuyen en formato safetensors.
 
@@ -95,5 +95,5 @@ La comparacion con estos modelos es orientativa: no se dispone de resultados de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RahmahwithCode/rahmahandjoanitah-sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/RahmahwithCode/rahmahandjoanitah-sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased

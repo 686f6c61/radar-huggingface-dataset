@@ -6,7 +6,7 @@ Nekodeus/z-image-turbo-int8-ov es una conversion a OpenVINO IR con pesos INT8 de
 
 El problema que resuelve es el de la portabilidad en inferencia. Al depender exclusivamente de OpenVINO, el modelo puede ejecutarse en cualquier CPU x86 moderna sin necesidad de CUDA ni de controladores NVIDIA, y ademas puede acelerarse en iGPU Intel, GPU Intel Arc, GPU AMD y GPU NVIDIA a traves de los plugins de OpenVINO. Segun la model card, los pesos INT8 caben en tarjetas con 8 GB de VRAM y el muestreo de 8 pasos se mantiene por debajo del segundo en el hardware de referencia, ademas de ofrecer descargas mas ligeras que los checkpoints BF16.
 
-Su relevancia es acotada pero concreta: es util para quien necesite text-to-image en entornos sin CUDA (servidores de solo CPU, portatiles con grafica integrada, despliegues heterogeneos) y quiera evitar la conversion manual del checkpoint original. Hay que tener en cuenta que el repositorio se publico el 19 de septiembre de 2026, acumula 0 descargas y 0 likes, no declara licencia en el campo de HuggingFace y su metadato interno marca `inference: false`, por lo que debe tratarse como una conversion reciente y sin validacion externa.
+Su relevancia es acotada pero concreta: es util para quien necesite text-to-image en entornos sin CUDA (servidores de solo CPU, portatiles con grafica integrada, despliegues heterogeneos) y quiera evitar la conversion manual del checkpoint original. Hay que tener en cuenta que el repositorio se publico el 19 de septiembre de 2026, acumula 0 descargas y 0 likes, no declara licencia en el campo de Hugging Face y su metadato interno marca `inference: false`, por lo que debe tratarse como una conversion reciente y sin validacion externa.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de esta co
 
 ## Limitaciones y advertencias
 
-- La licencia del repositorio no esta declarada en HuggingFace. El modelo de origen se publica bajo Apache-2.0, pero la ausencia de licencia explicita en esta conversion introduce incertidumbre juridica para uso comercial; conviene verificar con el autor antes de desplegarlo en produccion.
+- La licencia del repositorio no esta declarada en Hugging Face. El modelo de origen se publica bajo Apache-2.0, pero la ausencia de licencia explicita en esta conversion introduce incertidumbre juridica para uso comercial; conviene verificar con el autor antes de desplegarlo en produccion.
 - El metadato de la model card incluye `inference: false`, lo que sugiere que el autor no garantiza que el artefacto sea directamente utilizable sin pasos adicionales de configuracion.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, publicado el 19 de septiembre de 2026 y actualizado un segundo despues. No hay evidencia externa de que la conversion funcione correctamente ni de su fidelidad respecto al modelo original.
 - No se documenta ninguna evaluacion de calidad de imagen tras la cuantizacion INT8. La cuantizacion de pesos en modelos de difusion puede degradar el detalle fino, el texto renderizado dentro de la imagen y la coherencia de escenas complejas, pero no hay datos publicados que cuantifiquen esa perdida en este caso.
@@ -98,6 +98,6 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de esta co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nekodeus/z-image-turbo-int8-ov
+- Repositorio en Hugging Face: https://huggingface.co/Nekodeus/z-image-turbo-int8-ov
 - Modelo de origen: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, a blogs tecnicos ni a demos.

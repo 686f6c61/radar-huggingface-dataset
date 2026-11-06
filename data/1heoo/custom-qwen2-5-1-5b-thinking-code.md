@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`1heoo/custom-qwen2.5-1.5b-thinking-code` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B, desarrollado por el usuario 1heoo y publicado en HuggingFace. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth junto con TRL de HuggingFace, según indica el autor en la model card. El nombre sugiere una especialización en razonamiento ("thinking") y generación de código, aunque la model card no documenta el dataset ni el procedimiento de entrenamiento empleado.
+`1heoo/custom-qwen2.5-1.5b-thinking-code` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B, desarrollado por el usuario 1heoo y publicado en Hugging Face. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth junto con TRL de Hugging Face, según indica el autor en la model card. El nombre sugiere una especialización en razonamiento ("thinking") y generación de código, aunque la model card no documenta el dataset ni el procedimiento de entrenamiento empleado.
 
 Se trata de un modelo transformer decoder-only de la familia Qwen2, con 1.543.714.304 parámetros totales según los pesos en safetensors, lo que lo sitúa en la gama de modelos pequeños aptos para inferencia en hardware de consumo. El contexto declarado corresponde al de la arquitectura base Qwen2.5-1.5B (32.768 tokens), aunque el autor no lo especifica explícitamente en la ficha.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | 1heoo/custom-qwen2.5-1.5b-thinking-code | 1,54B | No disponible (base: 32.768) | Apache 2.0 | Fine-tuning experimental, sin benchmarks |
 | Qwen2.5-1.5B (oficial) | 1,54B | 32.768 | Apache 2.0 | Modelo base, benchmarks publicados por Alibaba |
 | Qwen2.5-Coder-1.5B | 1,54B | 32.768 | Apache 2.0 | Especializado en código, con evaluaciones publicadas |
-| SmolLM2-1.7B | 1,7B | 8.192 | Apache 2.0 | Alternativa pequeña de HuggingFace, con benchmarks |
+| SmolLM2-1.7B | 1,7B | 8.192 | Apache 2.0 | Alternativa pequeña de Hugging Face, con benchmarks |
 
 ## Limitaciones y advertencias
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: 1heoo/custom-qwen2.5-1.5b-thinking-code](https://huggingface.co/1heoo/custom-qwen2.5-1.5b-thinking-code)
+- [Hugging Face: 1heoo/custom-qwen2.5-1.5b-thinking-code](https://huggingface.co/1heoo/custom-qwen2.5-1.5b-thinking-code)
 - [Modelo base: unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-1.5B-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)
 - [Qwen2.5-1.5B (modelo original)](https://huggingface.co/Qwen/Qwen2.5-1.5B)

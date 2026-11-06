@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yutakuroda/llama-3.2-1b-fingpt-sentiment | 1,24B + adaptador LoRA | No disponible (base: 131.072) | Sentimiento financiero | apache-2.0 | HuggingFace (0 descargas al publicar) |
-| meta-llama/Llama-3.2-1B | 1,24B | 131.072 | Generacion general | Llama 3.2 Community License | HuggingFace |
-| FinBERT (ProsusAI) | ~110M | 512 | Sentimiento financiero | No disponible en esta ficha | HuggingFace |
-| FinGPT (modelos base) | Variable | Variable | Tareas financieras | Variable segun variante | HuggingFace / GitHub |
+| Yutakuroda/llama-3.2-1b-fingpt-sentiment | 1,24B + adaptador LoRA | No disponible (base: 131.072) | Sentimiento financiero | apache-2.0 | Hugging Face (0 descargas al publicar) |
+| meta-llama/Llama-3.2-1B | 1,24B | 131.072 | Generacion general | Llama 3.2 Community License | Hugging Face |
+| FinBERT (ProsusAI) | ~110M | 512 | Sentimiento financiero | No disponible en esta ficha | Hugging Face |
+| FinGPT (modelos base) | Variable | Variable | Tareas financieras | Variable segun variante | Hugging Face / GitHub |
 
 Nota: los datos de rendimiento comparado no estan disponibles en la informacion proporcionada, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -83,6 +83,6 @@ Nota: los datos de rendimiento comparado no estan disponibles en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yutakuroda/llama-3.2-1b-fingpt-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Yutakuroda/llama-3.2-1b-fingpt-sentiment
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Dataset de entrenamiento: https://huggingface.co/datasets/FinGPT/fingpt-sentiment-train

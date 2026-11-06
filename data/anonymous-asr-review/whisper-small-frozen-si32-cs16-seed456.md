@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-frozen-si32-cs16-seed456 | Base 244 M + adaptadores LoRA (rango 16 y 32) | Ventanas de 30 s | si, en | no disponible | HuggingFace, 0 descargas |
-| openai/whisper-small | 244 M | Ventanas de 30 s | Multilingue (amplio conjunto) | MIT segun la model card del modelo base | HuggingFace, ampliamente desplegado |
-| openai/whisper-medium | 769 M | Ventanas de 30 s | Multilingue | MIT segun la model card del modelo base | HuggingFace |
-| openai/whisper-large-v3 | 1550 M | Ventanas de 30 s | Multilingue | MIT segun la model card del modelo base | HuggingFace |
+| whisper-small-frozen-si32-cs16-seed456 | Base 244 M + adaptadores LoRA (rango 16 y 32) | Ventanas de 30 s | si, en | no disponible | Hugging Face, 0 descargas |
+| openai/whisper-small | 244 M | Ventanas de 30 s | Multilingue (amplio conjunto) | MIT segun la model card del modelo base | Hugging Face, ampliamente desplegado |
+| openai/whisper-medium | 769 M | Ventanas de 30 s | Multilingue | MIT segun la model card del modelo base | Hugging Face |
+| openai/whisper-large-v3 | 1550 M | Ventanas de 30 s | Multilingue | MIT segun la model card del modelo base | Hugging Face |
 
 La comparacion relevante no es de tamano sino de especializacion: frente a whisper-small generico, este artefacto anade un ajuste especifico para code-switching sinhala-ingles, pero renuncia a la cobertura multilingue amplia del modelo original y no publica metricas que permitan cuantificar la mejora. No se dispone de datos sobre otros adaptadores LoRA comparables en el mismo par de idiomas.
 
@@ -91,7 +91,7 @@ La comparacion relevante no es de tamano sino de especializacion: frente a whisp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-frozen-si32-cs16-seed456
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-frozen-si32-cs16-seed456
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con este modelo; corresponden a paginas sobre el colectivo de hacktivistas Anonymous y a una marca de calzado, por lo que no se incluyen como referencias. No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la informacion proporcionada.

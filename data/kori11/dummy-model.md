@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kori11/dummy-model es un modelo alojado en HuggingFace por el usuario kori11 que, por su nomenclatura ("dummy-model") y por la ausencia total de documentación útil en su model card, presenta todas las trazas de ser una subida de prueba o un marcador de posición en lugar de un modelo entrenado y publicado con fines de uso real. El repositorio no acumula descargas ni "likes" en el momento de redactar esta ficha, y su model card es la plantilla autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]".
+kori11/dummy-model es un modelo alojado en Hugging Face por el usuario kori11 que, por su nomenclatura ("dummy-model") y por la ausencia total de documentación útil en su model card, presenta todas las trazas de ser una subida de prueba o un marcador de posición en lugar de un modelo entrenado y publicado con fines de uso real. El repositorio no acumula descargas ni "likes" en el momento de redactar esta ficha, y su model card es la plantilla autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]".
 
 A partir de los metadatos disponibles, el modelo se identifica con la etiqueta `camembert` y con el pipeline `fill-mask`, lo que apunta a una arquitectura de tipo transformer encoder basada en RoBERTa adaptada al francés (familia CamemBERT). El recuento real de parámetros obtenido de los pesos en safetensors es de 110.655.493, una cifra coherente con la variante base de CamemBERT (aproximadamente 110 millones de parámetros). El tamaño del repositorio es de 0,4 GB.
 
@@ -25,7 +25,7 @@ Es relevante ahora únicamente como caso de estudio de higiene de publicación e
 
 La etiqueta `camembert` del repositorio apunta a la familia CamemBERT, un transformer encoder de tipo RoBERTa entrenado con objetivos de modelado de lenguaje enmascarado (masked language modeling). El tag `fill-mask` del pipeline es coherente con esa naturaleza bidireccional: se trata de un modelo exclusivamente encoder, sin cabeza de generación autoregresiva, pensado para predecir tokens enmascarados dentro de una secuencia.
 
-No hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, la existencia de fases de ajuste fino supervisado o preferencias (RLHF/DPO) ni sobre innovaciones técnicas concretas. La model card remite en todos los apartados de "Training Details" a "[More Information Needed]". La única referencia externa presente es el tag `arxiv:1910.09700`, correspondiente a Lacoste et al. (2019) sobre el calculador de impacto medioambiental, incluido por defecto en la plantilla de HuggingFace y no como paper del modelo. Conviene subrayar que, dado el nombre "dummy-model", no puede descartarse que los pesos no correspondan a un entrenamiento real.
+No hay información sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, la existencia de fases de ajuste fino supervisado o preferencias (RLHF/DPO) ni sobre innovaciones técnicas concretas. La model card remite en todos los apartados de "Training Details" a "[More Information Needed]". La única referencia externa presente es el tag `arxiv:1910.09700`, correspondiente a Lacoste et al. (2019) sobre el calculador de impacto medioambiental, incluido por defecto en la plantilla de Hugging Face y no como paper del modelo. Conviene subrayar que, dado el nombre "dummy-model", no puede descartarse que los pesos no correspondan a un entrenamiento real.
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kori11/dummy-model | 110,7 M | no disponible | no disponible | HuggingFace (sin documentar) |
-| CamemBERT base (Inria) | ~110 M | 512 tokens | MIT | HuggingFace, ampliamente validado |
-| RoBERTa base | ~125 M | 512 tokens | MIT | HuggingFace, ampliamente validado |
-| DistilBERT multilingue | ~135 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
+| kori11/dummy-model | 110,7 M | no disponible | no disponible | Hugging Face (sin documentar) |
+| CamemBERT base (Inria) | ~110 M | 512 tokens | MIT | Hugging Face, ampliamente validado |
+| RoBERTa base | ~125 M | 512 tokens | MIT | Hugging Face, ampliamente validado |
+| DistilBERT multilingue | ~135 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
 
 La comparación se limita a arquitectura y tamaño, ya que no existen datos de rendimiento publicados para kori11/dummy-model que permitan contrastar métricas.
 
@@ -83,7 +83,7 @@ La comparación se limita a arquitectura y tamaño, ya que no existen datos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kori11/dummy-model
+- Modelo en Hugging Face: https://huggingface.co/kori11/dummy-model
 - Paper referenciado por el tag del repositorio (Lacoste et al., 2019, calculador de impacto): https://arxiv.org/abs/1910.09700
 - Documentación de CamemBERT (arquitectura inferida): https://huggingface.co/docs/transformers/model_doc/camembert
 - Paper original de CamemBERT: https://arxiv.org/abs/1911.03894

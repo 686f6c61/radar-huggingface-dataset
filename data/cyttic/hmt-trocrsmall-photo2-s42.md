@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-photo2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-photo2-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Detalles del estudio: `results.json` en el repositorio del modelo (no se proporciona URL directa)

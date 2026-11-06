@@ -19,11 +19,11 @@ La relevancia de este repositorio es practica: ofrece hasta doce variantes de cu
 | Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
 | Idiomas soportados | no disponible (el nombre del repositorio indica un ajuste orientado a catalan) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF en este repositorio; el repositorio base utiliza pesos en formato HuggingFace (convert_type: hf) |
+| Formato de pesos | GGUF en este repositorio; el repositorio base utiliza pesos en formato Hugging Face (convert_type: hf) |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del modelo. Los metadatos de la model card unicamente indican que se trata de una cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) de un modelo original almacenado en formato HuggingFace, lo que implica que el autor del repositorio no entreno el modelo, sino que ejecuto un pipeline de conversion y cuantizacion sobre los pesos de luispoveda93/MiniCPM5-2B-catalan-chat-v2.
+La informacion disponible no describe la arquitectura interna del modelo. Los metadatos de la model card unicamente indican que se trata de una cuantizacion estatica (quantize_version 2, output_tensor_quantised 1) de un modelo original almacenado en formato Hugging Face, lo que implica que el autor del repositorio no entreno el modelo, sino que ejecuto un pipeline de conversion y cuantizacion sobre los pesos de luispoveda93/MiniCPM5-2B-catalan-chat-v2.
 
 No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, arquitecturas hibridas, etc.). Cualquier afirmacion al respecto seria especulativa y no se incluye en esta ficha.
 
@@ -67,8 +67,8 @@ Las cifras siguientes son estimaciones derivadas del tamano indicado en el nombr
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/MiniCPM5-2B-catalan-chat-v2-GGUF | ~2B segun el nombre (no confirmado) | no disponible | GGUF (12 cuantizaciones) | no disponible | Publico en HuggingFace, 0 descargas |
-| luispoveda93/MiniCPM5-2B-catalan-chat-v2 (modelo base) | ~2B segun el nombre (no confirmado) | no disponible | safetensors / HuggingFace | no disponible | Publico en HuggingFace |
+| mradermacher/MiniCPM5-2B-catalan-chat-v2-GGUF | ~2B segun el nombre (no confirmado) | no disponible | GGUF (12 cuantizaciones) | no disponible | Publico en Hugging Face, 0 descargas |
+| luispoveda93/MiniCPM5-2B-catalan-chat-v2 (modelo base) | ~2B segun el nombre (no confirmado) | no disponible | safetensors / Hugging Face | no disponible | Publico en Hugging Face |
 | Otras alternativas de ~2B para catalan | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con otros modelos de la misma categoria. La unica comparacion verificable es la que existe entre este repositorio y su modelo base, del que se diferencia exclusivamente por el formato y el nivel de cuantizacion.

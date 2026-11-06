@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA es un modelo compacto de tipo vision-language-action (VLA) desarrollado en el ecosistema LeRobot de HuggingFace, disenado para controlar robots manipuladores a partir de observaciones visuales y un estado proprioceptivo, siguiendo instrucciones en lenguaje natural. Este repositorio concreto, `jbae28/smolvla_finetune_new`, es un ajuste fino del checkpoint base `lerobot/smolvla_base` sobre el dataset de imitacion `jbae28/pick-and-place-merged`, y resuelve una unica tarea: coger un cubo amarillo y dejarlo dentro de una caja blanca.
+SmolVLA es un modelo compacto de tipo vision-language-action (VLA) desarrollado en el ecosistema LeRobot de Hugging Face, disenado para controlar robots manipuladores a partir de observaciones visuales y un estado proprioceptivo, siguiendo instrucciones en lenguaje natural. Este repositorio concreto, `jbae28/smolvla_finetune_new`, es un ajuste fino del checkpoint base `lerobot/smolvla_base` sobre el dataset de imitacion `jbae28/pick-and-place-merged`, y resuelve una unica tarea: coger un cubo amarillo y dejarlo dentro de una caja blanca.
 
 El interes practico del modelo esta en su tamano: 450.046.176 parametros (unos 450 M) y un repositorio de 0,9 GB, lo que permite ejecutar la politica en hardware de consumo en lugar de recurrir a clusters con GPUs de datacenter. Frente a VLA de varios miles de millones de parametros, SmolVLA apunta a un compromiso entre capacidad de generalizacion y coste de inferencia, algo critico cuando el bucle de control debe correr a la frecuencia de los sensores del robot.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| jbae28/smolvla_finetune_new | 450.046.176 | 3 imagenes 256x256 + estado (6,) | Apache-2.0 | HuggingFace, 0 descargas | No |
-| lerobot/smolvla_base | No confirmado en la informacion (mismo orden de magnitud) | No disponible | No confirmado (el fine-tune declara Apache-2.0) | HuggingFace, mantenido por LeRobot | No disponible en la informacion |
+| jbae28/smolvla_finetune_new | 450.046.176 | 3 imagenes 256x256 + estado (6,) | Apache-2.0 | Hugging Face, 0 descargas | No |
+| lerobot/smolvla_base | No confirmado en la informacion (mismo orden de magnitud) | No disponible | No confirmado (el fine-tune declara Apache-2.0) | Hugging Face, mantenido por LeRobot | No disponible en la informacion |
 | Otros VLA de la misma categoria (por ejemplo, familias OpenVLA o pi0) | No disponible en la informacion proporcionada | No disponible | No disponible | No evaluado en esta ficha | No disponible |
 
 No se dispone de datos verificados de parametros, contexto ni rendimiento de los VLA alternativos dentro de la informacion suministrada, por lo que no se establece una comparacion cuantitativa. Cualitativamente, la propuesta de SmolVLA es reducir el coste computacional frente a VLA de mayor tamano manteniendo un rendimiento descrito como competitivo, a cambio de una menor capacidad de generalizacion fuera de la distribucion de entrenamiento.
@@ -96,7 +96,7 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbae28/smolvla_finetune_new
+- Modelo en Hugging Face: https://huggingface.co/jbae28/smolvla_finetune_new
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)
 - Dataset de entrenamiento: https://huggingface.co/datasets/jbae28/pick-and-place-merged
@@ -110,4 +110,4 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de los
 - Referencia de comandos CLI: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 - Documentacion de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace proporcionada.
+Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face proporcionada.

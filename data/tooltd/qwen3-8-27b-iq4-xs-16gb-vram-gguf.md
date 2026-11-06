@@ -75,7 +75,7 @@ La comparación es orientativa: Qwen3.8-27B destaca por su visión y contexto de
 
 ## Enlaces
 
-- Repositorio HuggingFace (redirección): [https://huggingface.co/tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF](https://huggingface.co/tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF)
+- Repositorio Hugging Face (redirección): [https://huggingface.co/tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF](https://huggingface.co/tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF)
 - Repositorio destino: [https://huggingface.co/tooltd/Qwen3.8-27B-ZipBrain-GGUF](https://huggingface.co/tooltd/Qwen3.8-27B-ZipBrain-GGUF)
 - Documentación de Qwen3.8 en Unsloth: [https://unsloth.ai/docs/models/qwen3.8](https://unsloth.ai/docs/models/qwen3.8)
 - Guía de requisitos de VRAM: [https://www.oflight.co.jp/en/columns/qwen3-8-27b-requirements-vram-local-2026](https://www.oflight.co.jp/en/columns/qwen3-8-27b-requirements-vram-local-2026)

@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/gemma-3-12b-fve-workanchor-s1 | 13,19B | no disponible (base: 128K) | no evaluado | research-only | HuggingFace, 0 descargas |
-| google/gemma-3-12b-it | ~12B (no confirmado en la informacion) | 128K | no disponible en la informacion | licencia Gemma de Google | HuggingFace, ampliamente usado |
-| joshycodes/gemma-3-12b-commitments-sdf | no disponible | no disponible | no evaluado | no disponible | HuggingFace |
+| joshycodes/gemma-3-12b-fve-workanchor-s1 | 13,19B | no disponible (base: 128K) | no evaluado | research-only | Hugging Face, 0 descargas |
+| google/gemma-3-12b-it | ~12B (no confirmado en la informacion) | 128K | no disponible en la informacion | licencia Gemma de Google | Hugging Face, ampliamente usado |
+| joshycodes/gemma-3-12b-commitments-sdf | no disponible | no disponible | no evaluado | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s1
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s1
 - Checkpoint relacionado del mismo autor: https://huggingface.co/joshycodes/gemma-3-12b-commitments-sdf
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Ficha de Gemma 3 12B en OpenModels: https://www.openmodels.run/models/gemma-3-12b

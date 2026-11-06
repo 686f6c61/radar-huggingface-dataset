@@ -2,7 +2,7 @@
 
 ## Resumen
 
-A-PACE ALOHA banana (d=20) es el artefacto de investigacion publicado por el usuario `tiantianx` en HuggingFace bajo el identificador `tiantianx/aloha2-smolvla-banana-apace-d20-scratch-matched`. No es un modelo de lenguaje, sino un componente de control para robotica manipulativa: un modelo predictivo del mundo (JEPA) entrenado desde cero y dos adaptadores opcionales que se acoplan a una politica VLA congelada. El objetivo es predecir el estado futuro (condicion visual y estado articular normalizado de 14 dimensiones de un sistema ALOHA) 20 pasos de control por delante, equivalentes a 400 ms a 50 Hz, para compensar la latencia de comunicacion en tareas de insercion.
+A-PACE ALOHA banana (d=20) es el artefacto de investigacion publicado por el usuario `tiantianx` en Hugging Face bajo el identificador `tiantianx/aloha2-smolvla-banana-apace-d20-scratch-matched`. No es un modelo de lenguaje, sino un componente de control para robotica manipulativa: un modelo predictivo del mundo (JEPA) entrenado desde cero y dos adaptadores opcionales que se acoplan a una politica VLA congelada. El objetivo es predecir el estado futuro (condicion visual y estado articular normalizado de 14 dimensiones de un sistema ALOHA) 20 pasos de control por delante, equivalentes a 400 ms a 50 Hz, para compensar la latencia de comunicacion en tareas de insercion.
 
 El sistema se apoya en la politica base `yhong96/aloha2_smolvla_banana_v2` (familia SmolVLA, etiquetada como `smolvla` y `aloha`), que permanece congelada durante el entrenamiento del JEPA y de los adaptadores. El JEPA se entrena sobre caracteristicas cacheadas de esa politica y se selecciona por error cuadratico medio (MSE) sobre articulaciones fisicas en un conjunto de validacion retenido, no por su ultimo paso de entrenamiento. La innovacion principal es el desacoplamiento entre el modelo del mundo, entrenado aparte, y la politica que finalmente ejecuta las acciones.
 
@@ -90,7 +90,7 @@ Los intervalos bootstrap pareados al 95 % por episodio incluyen el cero y no se 
 |---|---|---|---|---|---|
 | `tiantianx/aloha2-smolvla-banana-apace-d20-scratch-matched` | no disponible | Horizonte nativo 50, retardo de 20 pasos (400 ms a 50 Hz) | RMSE de brazo de 1,454 grados en validacion (8 episodios) | no disponible | Repositorio privado, 0 descargas, 0 likes |
 | Release intermedia de 12.600 pasos del mismo autor | no disponible | Igual | JEPA anterior: RMSE de brazo de 3,303 grados; MSE visual de 1728,156 | no disponible | Referenciada, incompatible con los adaptadores de esta release |
-| `yhong96/aloha2_smolvla_banana_v2` (politica base) | no disponible | Politica VLA de la que depende este artefacto | No se publican metricas propias en la informacion disponible | no disponible | Repositorio publico en HuggingFace, revision fijada `558170cf34a8a5c83e5ce68944846186a82a4b80` |
+| `yhong96/aloha2_smolvla_banana_v2` (politica base) | no disponible | Politica VLA de la que depende este artefacto | No se publican metricas propias en la informacion disponible | no disponible | Repositorio publico en Hugging Face, revision fijada `558170cf34a8a5c83e5ce68944846186a82a4b80` |
 | Otros modelos de la familia SmolVLA o VLAs roboticas comparables (OpenVLA, pi0, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas externas de la misma categoria.
@@ -107,12 +107,12 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 - El repositorio es privado y requiere autenticacion con una cuenta con acceso, lo que impide su reproduccion publica.
 - No se declara licencia, por lo que no hay autorizacion explicita de uso comercial ni condiciones de redistribucion.
 - No aplica el riesgo de alucinacion de un modelo de lenguaje; el riesgo equivalente es el error de prediccion fisica y visual, cuantificado en las tablas de validacion.
-- Idiomas: la etiqueta `en` es heredada del ecosistema de HuggingFace y no implica capacidad de procesamiento de lenguaje natural.
+- Idiomas: la etiqueta `en` es heredada del ecosistema de Hugging Face y no implica capacidad de procesamiento de lenguaje natural.
 - Sesgos conocidos: no disponible. El modelo se limita a la distribucion de la tarea de insercion de banana sobre ALOHA, por lo que no se espera generalizacion fuera de ese dominio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiantianx/aloha2-smolvla-banana-apace-d20-scratch-matched
+- Modelo en Hugging Face: https://huggingface.co/tiantianx/aloha2-smolvla-banana-apace-d20-scratch-matched
 - Politica base: https://huggingface.co/yhong96/aloha2_smolvla_banana_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/yhong96/aloha2_banana_insertion
 - Paper, blog o repositorio adicional: no disponible

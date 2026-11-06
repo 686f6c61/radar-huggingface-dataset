@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-12b-it-prune_depth_10
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-12b-it-prune_depth_10
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Libreria de poda (NVIDIA ModelOpt): no disponible enlace en la informacion proporcionada
 - Resultados del benchmark (BFCL, hiring-bias, MedQA): no disponibles en la informacion proporcionada

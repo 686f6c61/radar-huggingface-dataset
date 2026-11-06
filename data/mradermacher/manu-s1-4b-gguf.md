@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Manu-s1-4b-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo sankhya-aI/manu-s1-4b, publicada por mradermacher, un autor conocido en HuggingFace por convertir modelos en safetensors a cuantizaciones listas para llama.cpp y derivados. El modelo original se presenta con las etiquetas "decision-model", "system-one", "legal", "india", "courts" y "typed-decisions", lo que apunta a un modelo conversacional en ingles especializado en la generacion de decisiones estructuradas y tipadas dentro del ambito judicial indio. El repositorio contiene unicamente los pesos cuantizados; no incluye documentacion tecnica sobre el entrenamiento del modelo base.
+Manu-s1-4b-GGUF es una coleccion de cuantizaciones en formato GGUF del modelo sankhya-aI/manu-s1-4b, publicada por mradermacher, un autor conocido en Hugging Face por convertir modelos en safetensors a cuantizaciones listas para llama.cpp y derivados. El modelo original se presenta con las etiquetas "decision-model", "system-one", "legal", "india", "courts" y "typed-decisions", lo que apunta a un modelo conversacional en ingles especializado en la generacion de decisiones estructuradas y tipadas dentro del ambito judicial indio. El repositorio contiene unicamente los pesos cuantizados; no incluye documentacion tecnica sobre el entrenamiento del modelo base.
 
 El modelo base cuenta con 4.205.751.296 parametros (aproximadamente 4,2 mil millones), un tamano que lo situa en la gama de modelos pequenos capaces de ejecutarse en GPU de consumo. La licencia declarada es Apache 2.0, tanto en el repositorio original como en esta conversion, lo que permite uso comercial sin restricciones adicionales segun los terminos de dicha licencia. El idioma declarado es unicamente el ingles.
 
@@ -68,8 +68,8 @@ No se dispone de datos de benchmarks ni de contexto de los modelos comparables, 
 
 | Modelo | Parametros | Formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/manu-s1-4b-GGUF | 4,2 mil millones | GGUF (12 cuantizaciones) | en | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| sankhya-aI/manu-s1-4b (base) | 4,2 mil millones | safetensors | en | apache-2.0 | HuggingFace |
+| mradermacher/manu-s1-4b-GGUF | 4,2 mil millones | GGUF (12 cuantizaciones) | en | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| sankhya-aI/manu-s1-4b (base) | 4,2 mil millones | safetensors | en | apache-2.0 | Hugging Face |
 | Otros modelos legales de ~4B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada alternativas de la misma categoria y dominio (modelos legales de aproximadamente 4 mil millones de parametros para el ambito judicial indio) con datos verificables.

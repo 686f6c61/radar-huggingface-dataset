@@ -6,7 +6,7 @@ El modelo `decoder-only-transformer-tinystories-32m` es un transformer decoder-o
 
 El modelo resuelve el problema de ofrecer una implementación minimalista y reproducible de un GPT pequeño, entrenable en hardware modesto. Su relevancia actual radica en que permite a desarrolladores e investigadores estudiar el funcionamiento interno de los transformers, probar técnicas de fine-tuning o realizar análisis de interpretabilidad sin necesidad de recursos de cómputo elevados. La ventana de contexto es de 1024 tokens, suficiente para tareas de generación de texto corto.
 
-No se han publicado datos sobre el conjunto de datos de entrenamiento, aunque el nombre sugiere una posible relación con el corpus TinyStories, sin confirmación oficial en la model card. El tokenizer es un BPE personalizado entrenado con la librería `tokenizers` de HuggingFace, e incluye los tokens especiales `<|endoftext|>`, `<|pad|>` y `<|unk|>`.
+No se han publicado datos sobre el conjunto de datos de entrenamiento, aunque el nombre sugiere una posible relación con el corpus TinyStories, sin confirmación oficial en la model card. El tokenizer es un BPE personalizado entrenado con la librería `tokenizers` de Hugging Face, e incluye los tokens especiales `<|endoftext|>`, `<|pad|>` y `<|unk|>`.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó con el optimizador AdamW (lr=3e-4, betas=(0.9, 0.95
 - Generacion de texto causal: el modelo predice el siguiente token dado un contexto, permitiendo generar secuencias coherentes de hasta 1024 tokens.
 - Completado de texto: puede continuar frases o párrafos cortos, útil para prototipos de autocompletado.
 - Tokenizer personalizado: incluye tokens especiales para fin de secuencia, padding y desconocidos, facilitando su uso en pipelines de generación.
-- Carga mediante `trust_remote_code=True`: el código personalizado de la arquitectura se ejecuta desde el repositorio de HuggingFace.
+- Carga mediante `trust_remote_code=True`: el código personalizado de la arquitectura se ejecuta desde el repositorio de Hugging Face.
 - No soporta tool calling, ni agentes, ni razonamiento multi-paso, ni capacidades multimodales (visión, audio). Tampoco se ha documentado un modo de pensamiento o razonamiento explícito.
 
 ## Casos de uso
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No se dispone de benchmarks comparativos. Como referencia estructural, se puede comparar con GPT-2 small (124M parámetros, contexto 1024, vocabulario 50.257) y con modelos de la familia TinyStories (por ejemplo, TinyStories-33M de HuggingFace, si existe). Sin embargo, al no haber datos de rendimiento publicados, no es posible establecer una comparativa cuantitativa. La principal diferencia es el tamaño: este modelo es significativamente menor que GPT-2 small, lo que implica menor capacidad de modelado pero también menor coste de inferencia. La licencia Apache 2.0 es más permisiva que la de GPT-2 (MIT, pero con restricciones de uso en algunos casos), aunque ambos permiten uso comercial.
+No se dispone de benchmarks comparativos. Como referencia estructural, se puede comparar con GPT-2 small (124M parámetros, contexto 1024, vocabulario 50.257) y con modelos de la familia TinyStories (por ejemplo, TinyStories-33M de Hugging Face, si existe). Sin embargo, al no haber datos de rendimiento publicados, no es posible establecer una comparativa cuantitativa. La principal diferencia es el tamaño: este modelo es significativamente menor que GPT-2 small, lo que implica menor capacidad de modelado pero también menor coste de inferencia. La licencia Apache 2.0 es más permisiva que la de GPT-2 (MIT, pero con restricciones de uso en algunos casos), aunque ambos permiten uso comercial.
 
 ## Limitaciones y advertencias
 
@@ -71,4 +71,4 @@ No se dispone de benchmarks comparativos. Como referencia estructural, se puede 
 
 ## Enlaces
 
-- [HuggingFace: shubhamprakash108/decoder-only-transformer-tinystories-32m](https://huggingface.co/shubhamprakash108/decoder-only-transformer-tinystories-32m)
+- [Hugging Face: shubhamprakash108/decoder-only-transformer-tinystories-32m](https://huggingface.co/shubhamprakash108/decoder-only-transformer-tinystories-32m)

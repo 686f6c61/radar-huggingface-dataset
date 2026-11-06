@@ -87,11 +87,11 @@ No se dispone de datos de benchmarks de terceros que permitan una comparacion cu
 
 | Modelo | Paso | Repr. acciones | Tune visual | Perdida (train) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_10000` (este) | 10.000 / 50.000 | absoluta | si | 0,0353 | NVIDIA Open Model License | publico en HuggingFace |
-| `learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_50000` | 50.000 / 50.000 | absoluta | si | no disponible en esta informacion | NVIDIA Open Model License | publico en HuggingFace |
-| `learner1119/ffw_sh5_n17_260820_left_h50_abs_10000` | 10.000 / 50.000 | absoluta | no | no disponible | NVIDIA Open Model License | publico en HuggingFace |
-| `learner1119/ffw_sh5_n17_260820_left_h50_rel_10000` | 10.000 / 50.000 | relativa | no disponible | no disponible | NVIDIA Open Model License | publico en HuggingFace |
-| `nvidia/GR00T-N1.7-3B` (base) | n/a | n/a | n/a | n/a | NVIDIA Open Model License | publico en HuggingFace |
+| `learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_10000` (este) | 10.000 / 50.000 | absoluta | si | 0,0353 | NVIDIA Open Model License | publico en Hugging Face |
+| `learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_50000` | 50.000 / 50.000 | absoluta | si | no disponible en esta informacion | NVIDIA Open Model License | publico en Hugging Face |
+| `learner1119/ffw_sh5_n17_260820_left_h50_abs_10000` | 10.000 / 50.000 | absoluta | no | no disponible | NVIDIA Open Model License | publico en Hugging Face |
+| `learner1119/ffw_sh5_n17_260820_left_h50_rel_10000` | 10.000 / 50.000 | relativa | no disponible | no disponible | NVIDIA Open Model License | publico en Hugging Face |
+| `nvidia/GR00T-N1.7-3B` (base) | n/a | n/a | n/a | n/a | NVIDIA Open Model License | publico en Hugging Face |
 
 Comparacion con alternativas externas de la misma categoria (otros VLA de ~3B): no disponible en la informacion proporcionada.
 
@@ -112,7 +112,7 @@ Comparacion con alternativas externas de la misma categoria (otros VLA de ~3B): 
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_10000
+- Hugging Face (este checkpoint): https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_10000
 - Checkpoint final del mismo entrenamiento: https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_50000
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/learner1119/260820

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WCL-Robotics/muse-checkpoint` es un checkpoint publicado en HuggingFace por la organización WCL-Robotics, presumiblemente vinculada al ámbito de la robótica (el sufijo "WCL" y el nombre del autor así lo sugieren). La model card asociada es prácticamente vacía: únicamente declara la licencia MIT, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. No se dispone de información sobre el pipeline de la tarea, los idiomas soportados ni el propósito del checkpoint.
+`WCL-Robotics/muse-checkpoint` es un checkpoint publicado en Hugging Face por la organización WCL-Robotics, presumiblemente vinculada al ámbito de la robótica (el sufijo "WCL" y el nombre del autor así lo sugieren). La model card asociada es prácticamente vacía: únicamente declara la licencia MIT, sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades. No se dispone de información sobre el pipeline de la tarea, los idiomas soportados ni el propósito del checkpoint.
 
 El repositorio no presenta descargas ni "likes" en el momento de la consulta, lo que indica que se trata de una publicación reciente y sin adopción comunitaria documentada. La fecha de creación y actualización es la misma (2026-11-04), por lo que no hay historial de revisiones que aporte pistas sobre su evolución.
 
@@ -71,5 +71,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WCL-Robotics/muse-checkpoint
+- Repositorio Hugging Face: https://huggingface.co/WCL-Robotics/muse-checkpoint
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

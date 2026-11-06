@@ -76,7 +76,7 @@ No se han publicado datos comparativos en la información disponible. La model c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rjz123/lt-code-cruxreal-qwen15b
+- Hugging Face: https://huggingface.co/rjz123/lt-code-cruxreal-qwen15b
 - Perfil del autor: https://huggingface.co/rjz123
 - Repositorio de Latent-Thoughts-Tuning: https://github.com/NeosKnight233/Latent-Thoughts-Tuning
 - Paper CRUXEval: https://arxiv.org/abs/2401.03065

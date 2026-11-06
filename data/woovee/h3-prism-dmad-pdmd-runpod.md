@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Woovee/h3-prism-dmad-pdmd-runpod | no disponible | no disponible | MiniMax H3 Community License | HuggingFace, 0 descargas | Variación experimental INT8 con fusión DMAD/PDMD |
-| Woovee/h3-prism-runpod | no disponible | no disponible | MiniMax H3 Community License | HuggingFace | Paquete previo del mismo autor, base de comparación citada |
-| OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM | no disponible | no disponible | no disponible en la información | HuggingFace | Modelo base upstream del que deriva este checkpoint |
+| Woovee/h3-prism-dmad-pdmd-runpod | no disponible | no disponible | MiniMax H3 Community License | Hugging Face, 0 descargas | Variación experimental INT8 con fusión DMAD/PDMD |
+| Woovee/h3-prism-runpod | no disponible | no disponible | MiniMax H3 Community License | Hugging Face | Paquete previo del mismo autor, base de comparación citada |
+| OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM | no disponible | no disponible | no disponible en la información | Hugging Face | Modelo base upstream del que deriva este checkpoint |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría (generación image-text-to-video).
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- [HuggingFace: Woovee/h3-prism-dmad-pdmd-runpod](https://huggingface.co/Woovee/h3-prism-dmad-pdmd-runpod)
+- [Hugging Face: Woovee/h3-prism-dmad-pdmd-runpod](https://huggingface.co/Woovee/h3-prism-dmad-pdmd-runpod)
 - [Licencia MiniMax H3 (LICENSE-H3.txt)](https://huggingface.co/Woovee/h3-prism-dmad-pdmd-runpod/blob/main/LICENSE-H3.txt)
 - [Modelo base: OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM](https://huggingface.co/OliviaRossi/Minimax-h3_Singularity-x-10Eros-Max_PRISM)
 - [Paquete previo: Woovee/h3-prism-runpod](https://huggingface.co/Woovee/h3-prism-runpod)

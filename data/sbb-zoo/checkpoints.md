@@ -24,7 +24,7 @@ Su relevancia es acotada pero importante: no sirve para desplegar nada, sino par
 | Numero de clases | Declarado en `checkpoint.json` por checkpoint (no disponible en la informacion proporcionada) |
 | Datasets de entrenamiento | N-MNIST, DVS128 Gesture, CIFAR10-DVS |
 | Version del benchmark referenciada | 0.9.0 (segun el ejemplo de uso de la model card) |
-| Tamano del repositorio | 0.0 GB reportados por HuggingFace (no refleja el conjunto completo de checkpoints) |
+| Tamano del repositorio | 0.0 GB reportados por Hugging Face (no refleja el conjunto completo de checkpoints) |
 | Descargas / likes | 0 descargas, 1 like en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ No se han identificado en la informacion proporcionada modelos alternativos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sbb-zoo/checkpoints
+- Hugging Face: https://huggingface.co/sbb-zoo/checkpoints
 - Repositorio del benchmark: https://github.com/GorkaAbad/SNN-Backdoor-Benchmark
 - Leaderboard: https://gorkaabad.github.io/SNN-Backdoor-Benchmark/
 - Papers de ataques y defensas: citados en cada tarjeta del repositorio del benchmark (no disponibles en la informacion proporcionada)

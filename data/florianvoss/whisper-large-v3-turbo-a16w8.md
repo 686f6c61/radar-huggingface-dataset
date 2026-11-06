@@ -79,7 +79,7 @@ La comparativa muestra que este modelo no compite directamente con los checkpoin
 
 ## Enlaces
 
-- [Repositorio HuggingFace: florianvoss/whisper-large-v3-turbo-a16w8](https://huggingface.co/florianvoss/whisper-large-v3-turbo-a16w8)
+- [Repositorio Hugging Face: florianvoss/whisper-large-v3-turbo-a16w8](https://huggingface.co/florianvoss/whisper-large-v3-turbo-a16w8)
 - [Modelo base: openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [Repositorio GitHub de OpenAI Whisper](https://github.com/openai/whisper)
 - [Discusion del release turbo en GitHub](https://github.com/openai/whisper/discussions/2363)
@@ -164,7 +164,7 @@ La comparativa muestra que este modelo no compite con los checkpoints estándar 
 
 ## Enlaces
 
-- [Repositorio HuggingFace: florianvoss/whisper-large-v3-turbo-a16w8](https://huggingface.co/florianvoss/whisper-large-v3-turbo-a16w8)
+- [Repositorio Hugging Face: florianvoss/whisper-large-v3-turbo-a16w8](https://huggingface.co/florianvoss/whisper-large-v3-turbo-a16w8)
 - [Modelo base: openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [Repositorio GitHub de OpenAI Whisper](https://github.com/openai/whisper)
 - [Discusión del release turbo en GitHub](https://github.com/openai/whisper/discussions/2363)

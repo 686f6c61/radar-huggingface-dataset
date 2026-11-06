@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marijuanabbi/test_aci_medsynth` es un ajuste fino (fine-tune) del modelo `unsloth/llama-3-8b-instruct-bnb-4bit`, que a su vez deriva de Meta Llama 3 8B Instruct. Lo publica el usuario marijuanabbi en HuggingFace con licencia declarada Apache 2.0 y fecha de creación declarada el 16 de septiembre de 2026. El nombre del repositorio sugiere un ajuste orientado a la generación de datos médicos sintéticos ("medsynth"), pero la model card no documenta el conjunto de datos, el procedimiento ni el objetivo del entrenamiento.
+`marijuanabbi/test_aci_medsynth` es un ajuste fino (fine-tune) del modelo `unsloth/llama-3-8b-instruct-bnb-4bit`, que a su vez deriva de Meta Llama 3 8B Instruct. Lo publica el usuario marijuanabbi en Hugging Face con licencia declarada Apache 2.0 y fecha de creación declarada el 16 de septiembre de 2026. El nombre del repositorio sugiere un ajuste orientado a la generación de datos médicos sintéticos ("medsynth"), pero la model card no documenta el conjunto de datos, el procedimiento ni el objetivo del entrenamiento.
 
 El repositorio ocupa 0,2 GB, un tamaño muy inferior al de un modelo de 8 000 millones de parámetros en 4 bits (que rondaría los 4,5-5 GB). Esto apunta a que contiene exclusivamente los pesos del adaptador (LoRA/QLoRA) o a una subida incompleta, extremo que no se aclara en la documentación. El entrenamiento se realizó con Unsloth y TRL, según los tags y el propio README.
 
@@ -53,7 +53,7 @@ Las capacidades listadas a continuación corresponden a las del modelo base Llam
 - Anonimización asistida y reescritura de textos clínicos: reformulación de informes para eliminar identificadores directos antes de compartir un corpus.
 - Ajuste adicional sobre dominios especializados (por ejemplo, terminología radiológica o farmacológica), usando este modelo como punto de partida con LoRA.
 - Extracción estructurada de información: convertir texto libre en campos JSON mediante tool calling, aprovechando el soporte de function calling heredado.
-- Evaluación comparativa de pipelines de fine-tuning: sirve como caso de estudio de un flujo Unsloth + TRL de extremo a extremo, incluida la subida a HuggingFace.
+- Evaluación comparativa de pipelines de fine-tuning: sirve como caso de estudio de un flujo Unsloth + TRL de extremo a extremo, incluida la subida a Hugging Face.
 - Chatbot de propósito general en inglés: dado que la model card no documenta especialización real, su uso más seguro es como modelo conversacional genérico de 8B, tras verificar que el ajuste no ha degradado las capacidades base.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Llama 3 8B Instruct (modelo base) | 8 030 M | 8192 tokens | Meta Llama 3 Community License | Ampliamente disponible; ecosistema maduro de cuantizaciones |
 | Mistral 7B Instruct v0.3 | 7 250 M | 32 768 tokens | Apache 2.0 | Muy extendido; soporte nativo en vLLM, llama.cpp y Ollama |
 | Qwen2.5 7B Instruct | 7 620 M | 131 072 tokens (con extensión) | Apache 2.0 | Amplia disponibilidad y buen soporte multilingüe |
-| Gemma 2 9B Instruct | 9 240 M | 8192 tokens | Gemma Terms of Use | Disponible en HuggingFace y en Ollama; licencia con restricciones de uso |
+| Gemma 2 9B Instruct | 9 240 M | 8192 tokens | Gemma Terms of Use | Disponible en Hugging Face y en Ollama; licencia con restricciones de uso |
 
 No se dispone de datos de rendimiento comparativos para este fine-tune, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativos para este fine-tune, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marijuanabbi/test_aci_medsynth
+- Repositorio en Hugging Face: https://huggingface.co/marijuanabbi/test_aci_medsynth
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-instruct-bnb-4bit
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct

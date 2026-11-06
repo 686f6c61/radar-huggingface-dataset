@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 - Para el proceso de ajuste de la lente (ya realizado por el autor) se necesitaron recursos considerables, pero para la inferencia (aplicar la lente a nuevas activaciones) solo se requiere la matriz de rotación ICA, que es pequeña (2304×2304 por capa).
 - Se recomienda una GPU con al menos 6-8 GB de VRAM para ejecutar Gemma-2-2b y almacenar activaciones intermedias. GPUs como NVIDIA RTX 3060/3070/4060, A10 o superiores son suficientes.
 - El paquete `icalens` está diseñado para PyTorch; se puede ejecutar en CPU para análisis de lotes pequeños, aunque con mayor latencia.
-- Opciones de despliegue: uso directo en scripts Python con `icalens`, integración en pipelines de investigación con HuggingFace Transformers.
+- Opciones de despliegue: uso directo en scripts Python con `icalens`, integración en pipelines de investigación con Hugging Face Transformers.
 
 ## Comparativa con modelos similares
 
@@ -68,7 +68,7 @@ No se dispone de comparativas cuantitativas con otras técnicas de interpretabil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sida/icalens-gemma-2-2b-pile10k
+- Repositorio Hugging Face: https://huggingface.co/sida/icalens-gemma-2-2b-pile10k
 - Paper: [ICA Lens: Interpreting Language Models Without Training Another Dictionary](https://arxiv.org/abs/2606.11722)
 - Modelo analizado: https://huggingface.co/google/gemma-2-2b
 - Dataset de ajuste: https://huggingface.co/datasets/NeelNanda/pile-10k

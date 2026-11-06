@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Entorno | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SuperMarioBros-Nes-v0_Level1-3 (este) | Politica PPO + SFT (SB3/GradLab) | Super Mario Bros NES, nivel 1-3 | 4 frames 84x84 grises | no disponible | HuggingFace, revision sft-20261102 |
+| SuperMarioBros-Nes-v0_Level1-3 (este) | Politica PPO + SFT (SB3/GradLab) | Super Mario Bros NES, nivel 1-3 | 4 frames 84x84 grises | no disponible | Hugging Face, revision sft-20261102 |
 | Checkpoint PPO Q5 (origen) | Politica PPO | Super Mario Bros NES | 4 frames 84x84 grises | no disponible | Referenciado como punto de partida, no se detalla su publicacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tsilva/SuperMarioBros-Nes-v0_Level1-3
+- Hugging Face: https://huggingface.co/tsilva/SuperMarioBros-Nes-v0_Level1-3
 - Descarga con revision: hf download tsilva/SuperMarioBros-Nes-v0_Level1-3 --revision sft-20261102 --local-dir mario-sft
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3 (referencia de la libreria; no enlazado en la model card)
 - GradLab: no disponible (proyecto referenciado en la model card sin URL)

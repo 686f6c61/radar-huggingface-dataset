@@ -91,7 +91,7 @@ La comparativa directa con el checkpoint fuente muestra la ganancia de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codegyver/Qwen3.8-Flash-Next-NVFP4-FP8-PBWO-DGX-Spark
+- Modelo en Hugging Face: https://huggingface.co/codegyver/Qwen3.8-Flash-Next-NVFP4-FP8-PBWO-DGX-Spark
 - Modelo base (Inferact): https://huggingface.co/Inferact/Qwen3.8-Flash-Next-NVFP4
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Receta vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

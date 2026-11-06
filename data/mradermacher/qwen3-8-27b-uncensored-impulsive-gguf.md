@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Impulsive-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Impulsive-GGUF
 - Modelo de origen: https://huggingface.co/Sorenvza/Qwen3.8-27B-Uncensored-Impulsive

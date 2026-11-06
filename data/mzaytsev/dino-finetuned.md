@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mzaytsev/dino-finetuned` es un repositorio de HuggingFace publicado por el usuario mzaytsev que contiene una implementación propia de un modelo denominado "Dino" orientado a aprendizaje contrastivo, en una configuración de escala "nano". No debe confundirse con los modelos DINO o DINOv2 de Meta: la model card describe una implementación personal, con atención de consultas agrupadas (grouped query attention), fusión tensorial, activación gelu-tanh y normalización RMSNorm, y no aporta referencias a la arquitectura original de nadie.
+`mzaytsev/dino-finetuned` es un repositorio de Hugging Face publicado por el usuario mzaytsev que contiene una implementación propia de un modelo denominado "Dino" orientado a aprendizaje contrastivo, en una configuración de escala "nano". No debe confundirse con los modelos DINO o DINOv2 de Meta: la model card describe una implementación personal, con atención de consultas agrupadas (grouped query attention), fusión tensorial, activación gelu-tanh y normalización RMSNorm, y no aporta referencias a la arquitectura original de nadie.
 
 El punto crítico es que el repositorio no contiene un modelo entrenado. El propio autor indica que `model.safetensors` es "un checkpoint de inicialización válido para smoke tests" y que no se presenta como un checkpoint con benchmarks. El recuento de parámetros que reporta el archivo de pesos es de 24.832 parámetros totales, un orden de magnitud propio de una configuración de juguete o de prueba de humo, no de un modelo utilizable en producción.
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa cuantitativa con modelos de la misma ca
 | Tarea | aprendizaje contrastivo (declarada) | no disponible |
 | Estado del checkpoint | inicializacion, sin entrenar | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas, 0 likes a fecha de consulta | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas, 0 likes a fecha de consulta | no disponible |
 
 Cualquier comparacion con modelos contrastivos o de embeddings en produccion seria enganosa, dado que el artefacto publicado no ha sido entrenado ni evaluado.
 
@@ -90,6 +90,6 @@ Cualquier comparacion con modelos contrastivos o de embeddings en produccion ser
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mzaytsev/dino-finetuned
+- Hugging Face: https://huggingface.co/mzaytsev/dino-finetuned
 - Ficheros incluidos en el repositorio: `predict.py` (artefacto principal), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion), `README.md`.
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles. La busqueda web realizada no devolvio enlaces relevantes al modelo; los resultados obtenidos correspondian a paginas genericas del buscador (Bing) sin relacion con el repositorio.

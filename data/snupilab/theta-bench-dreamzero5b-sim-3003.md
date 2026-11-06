@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/snupilab/theta-bench-dreamzero5b-sim-3003
+- Repositorio en Hugging Face: https://huggingface.co/snupilab/theta-bench-dreamzero5b-sim-3003
 - Dataset de entrenamiento: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Revisión fijada del dataset: https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/8b2cd31e107b64cb13f812ea217a63a20845c78a/raw
 - Paper, blog o repositorio adicional: no disponible (la búsqueda web no devolvió resultados relevantes sobre este modelo).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Novasy/nova-video-gen es un modelo de difusión para generación de vídeo desarrollado por Novasy y publicado en HuggingFace. Emplea el pipeline CogVideoXPipeline de la librería diffusers, lo que sugiere que se basa en el modelo CogVideoX de Zhipu AI. Cuenta con 1.693.783.872 parámetros (aproximadamente 1.700 millones) y un tamaño de repositorio de 15.4 GB. No se ha especificado la longitud de contexto ni los idiomas soportados. El modelo presenta muy pocas descargas (4) y carece de documentación técnica, por lo que debe considerarse experimental. Su relevancia radica en la creciente demanda de herramientas de generación de vídeo mediante IA, aunque su fiabilidad y rendimiento no han sido verificados.
+Novasy/nova-video-gen es un modelo de difusión para generación de vídeo desarrollado por Novasy y publicado en Hugging Face. Emplea el pipeline CogVideoXPipeline de la librería diffusers, lo que sugiere que se basa en el modelo CogVideoX de Zhipu AI. Cuenta con 1.693.783.872 parámetros (aproximadamente 1.700 millones) y un tamaño de repositorio de 15.4 GB. No se ha especificado la longitud de contexto ni los idiomas soportados. El modelo presenta muy pocas descargas (4) y carece de documentación técnica, por lo que debe considerarse experimental. Su relevancia radica en la creciente demanda de herramientas de generación de vídeo mediante IA, aunque su fiabilidad y rendimiento no han sido verificados.
 
 ## Especificaciones técnicas
 
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible. El repositorio pesa 15.4 GB, lo que sugiere que se necesitaría una GPU con una capacidad de memoria significativa, probablemente superior a 16 GB, para cargar los pesos en formato safetensors sin cuantizar. No obstante, es una estimación basada únicamente en el tamaño del repositorio.
 - GPU recomendadas: no disponible.
 - ¿Cabe en GPU de consumo? No se puede determinar sin datos de cuantización. El tamaño del repositorio supera la VRAM de muchas GPU de consumo (por ejemplo, RTX 3060 con 12 GB), por lo que probablemente se necesite una GPU de gama alta.
-- Opciones de despliegue: se puede utilizar mediante la librería diffusers de HuggingFace, usando el pipeline CogVideoXPipeline. No se han documentado otras opciones como vLLM o llama.cpp.
+- Opciones de despliegue: se puede utilizar mediante la librería diffusers de Hugging Face, usando el pipeline CogVideoXPipeline. No se han documentado otras opciones como vLLM o llama.cpp.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -63,5 +63,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Novasy/nova-video-gen
+- Hugging Face: https://huggingface.co/Novasy/nova-video-gen
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

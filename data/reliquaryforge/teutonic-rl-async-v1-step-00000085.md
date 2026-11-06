@@ -87,6 +87,6 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000085
+- Modelo en Hugging Face: https://huggingface.co/ReliquaryForge/teutonic-rl-async-v1-step-00000085
 - Modelo base (preentrenamiento): https://huggingface.co/dendriteholdings/Teutonic-I
 - Modelo base (arquitectura y atencion): https://huggingface.co/Qwen/Qwen3.5-9B-Base

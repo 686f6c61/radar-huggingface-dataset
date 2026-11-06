@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sanchezjoseph/mae-generation-checkpoint65` es un repositorio experimental publicado por el usuario Sanchezjoseph en HuggingFace. Se presenta como una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Mae" orientada a tareas de generación. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`Sanchezjoseph/mae-generation-checkpoint65` es un repositorio experimental publicado por el usuario Sanchezjoseph en Hugging Face. Se presenta como una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Mae" orientada a tareas de generación. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El número de parámetros reportado en los metadatos de safetensors es de 49.600, lo que confirma su carácter minúsculo.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sanchezjoseph/mae-generation-checkpoint65
+- Hugging Face: https://huggingface.co/Sanchezjoseph/mae-generation-checkpoint65
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

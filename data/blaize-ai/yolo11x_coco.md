@@ -94,7 +94,7 @@ La comparación relevante es contra el YOLO11x oficial: mismos pesos de origen, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/YOLO11x_COCO
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/YOLO11x_COCO
 - Repositorio original de Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO: https://cocodataset.org
 - Sitio de Blaize: https://www.blaize.com

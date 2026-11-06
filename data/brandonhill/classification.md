@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BrandonHill/classification es un repositorio de HuggingFace que contiene una implementacion funcional de una arquitectura denominada Coca aplicada a tareas de clasificacion, en una configuracion de escala pequena. El propio autor la describe como una implementacion de trabajo orientada a codigo transparente y pruebas de humo (smoke tests) reproducibles, y omite deliberadamente cualquier afirmacion de rendimiento o benchmark. No se trata, por tanto, de un modelo entrenado y publicado con resultados, sino de un punto de partida experimental con un checkpoint de inicializacion valido.
+BrandonHill/classification es un repositorio de Hugging Face que contiene una implementacion funcional de una arquitectura denominada Coca aplicada a tareas de clasificacion, en una configuracion de escala pequena. El propio autor la describe como una implementacion de trabajo orientada a codigo transparente y pruebas de humo (smoke tests) reproducibles, y omite deliberadamente cualquier afirmacion de rendimiento o benchmark. No se trata, por tanto, de un modelo entrenado y publicado con resultados, sino de un punto de partida experimental con un checkpoint de inicializacion valido.
 
 El modelo es extremadamente pequeno: el archivo safetensors contiene 33.088 parametros en total, lo que lo situa en el rango de juguete (toy model). La arquitectura declarada emplea atencion multi-query, fusion con compuertas (gated fusion), activacion mish y normalizacion InstanceNorm. El repositorio incluye cuatro artefactos: el script `run.py` con el modelo y un ejemplo ejecutable, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de entrenamiento por defecto y `model.safetensors` como inicializacion.
 
-Su relevancia actual es acotada y de naturaleza practica: sirve como plantilla reproducible para montar pipelines de clasificacion, como base para pruebas de integracion de infraestructura de entrenamiento y como referencia de implementacion de una arquitectura personalizada que no se carga con las APIs genericas de HuggingFace sin un adaptador explicito. Cualquier uso en produccion requeriria entrenamiento previo, evaluacion con datos etiquetados y auditoria de robustez, ninguno de los cuales esta documentado en el repositorio.
+Su relevancia actual es acotada y de naturaleza practica: sirve como plantilla reproducible para montar pipelines de clasificacion, como base para pruebas de integracion de infraestructura de entrenamiento y como referencia de implementacion de una arquitectura personalizada que no se carga con las APIs genericas de Hugging Face sin un adaptador explicito. Cualquier uso en produccion requeriria entrenamiento previo, evaluacion con datos etiquetados y auditoria de robustez, ninguno de los cuales esta documentado en el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 - Compatibilidad con GPU de consumo: si, en cualquier GPU de consumo, e incluso en CPU o en entornos sin acelerador.
 - Opciones de despliegue: al ser una clase Python personalizada, no es compatible directamente con vLLM, TGI, llama.cpp u Ollama sin trabajo adicional de conversion y adaptacion. El despliegue natural es ejecutar `run.py` o importar la clase desde el propio script.
 - Latencia y throughput estimados: no disponibles. Dado el tamano, la latencia estara dominada por la sobrecarga del framework (PyTorch) y no por el calculo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace, por lo que no supone restriccion alguna de disco.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face, por lo que no supone restriccion alguna de disco.
 
 ## Comparativa con modelos similares
 
@@ -88,11 +88,11 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Sesgos conocidos: no disponibles; al no haber datos de entrenamiento documentados, no es posible evaluar sesgos.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni idiomas soportados.
 - Restricciones de licencia: la licencia BSD-3-Clause permite uso comercial y modificacion con atribucion, pero el propio autor recuerda que deben revisarse por separado los terminos de los datos de origen si se usa con datasets externos.
-- Integracion: al ser una implementacion personalizada, los cargadores automaticos de HuggingFace no la reconocen sin un adaptador explicito, lo que rompe flujos de trabajo estandar.
+- Integracion: al ser una implementacion personalizada, los cargadores automaticos de Hugging Face no la reconocen sin un adaptador explicito, lo que rompe flujos de trabajo estandar.
 - Caveat adicional: las fechas de creacion y actualizacion del repositorio (13 de octubre de 2026) aparecen en el futuro respecto a la fecha habitual de consulta; conviene verificar la integridad y procedencia del repositorio antes de reutilizarlo.
 - Los resultados de busqueda web asociados a esta consulta no contenian informacion tecnica relevante sobre el modelo, por lo que no se han podido contrastar datos externos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BrandonHill/classification
-- No se han encontrado papers, blogs, repositorios auxiliares ni demos en la busqueda web realizada; el unico enlace relevante disponible es el del repositorio en HuggingFace.
+- Hugging Face: https://huggingface.co/BrandonHill/classification
+- No se han encontrado papers, blogs, repositorios auxiliares ni demos en la busqueda web realizada; el unico enlace relevante disponible es el del repositorio en Hugging Face.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flamingo-matching-tiny` es un repositorio de HuggingFace publicado por el usuario `changjaehyun` que contiene una implementacion compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas de matching. No se trata de un modelo preentrenado listo para produccion, sino de un andamiaje de codigo (scaffold) con una configuracion `nano` pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados a pequena escala.
+`flamingo-matching-tiny` es un repositorio de Hugging Face publicado por el usuario `changjaehyun` que contiene una implementacion compacta y personalizada de la arquitectura Flamingo en PyTorch, orientada a tareas de matching. No se trata de un modelo preentrenado listo para produccion, sino de un andamiaje de codigo (scaffold) con una configuracion `nano` pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados a pequena escala.
 
 El checkpoint incluido, `model.safetensors`, es una inicializacion valida para pruebas de humo y no un modelo entrenado. El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark y que la inicializacion no ha sido entrenada ni auditada en cuanto a robustez, equidad o transferencia de dominio. El modelo declara 33.088 parametros totales, lo que lo situa en un orden de magnitud puramente experimental.
 
@@ -76,4 +76,4 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/changjaehyun/flamingo-matching-tiny
+- Hugging Face: https://huggingface.co/changjaehyun/flamingo-matching-tiny

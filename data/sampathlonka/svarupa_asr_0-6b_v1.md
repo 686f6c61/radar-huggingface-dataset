@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Svarupa ASR 0.6B v1 es un modelo de reconocimiento automatico del habla (ASR) desarrollado por el usuario sampathlonka y publicado en HuggingFace. Se trata de un ajuste fino del modelo base de NVIDIA `nvidia/nemotron-3.5-asr-streaming-0.6b`, del que hereda la arquitectura FastConformer-Transducer (RNNT) con streaming cache-aware y aproximadamente 600 millones de parametros. Su especialidad es el hinglish, es decir, el cambio de codigo intra-oracional entre hindi y ingles, un fenomeno muy extendido en la conversacion real en la India y escasamente cubierto por los ASR genericos.
+Svarupa ASR 0.6B v1 es un modelo de reconocimiento automatico del habla (ASR) desarrollado por el usuario sampathlonka y publicado en Hugging Face. Se trata de un ajuste fino del modelo base de NVIDIA `nvidia/nemotron-3.5-asr-streaming-0.6b`, del que hereda la arquitectura FastConformer-Transducer (RNNT) con streaming cache-aware y aproximadamente 600 millones de parametros. Su especialidad es el hinglish, es decir, el cambio de codigo intra-oracional entre hindi y ingles, un fenomeno muy extendido en la conversacion real en la India y escasamente cubierto por los ASR genericos.
 
 El modelo aborda un problema concreto: la transcripcion fiable de audio conversacional real (no locucion leida) con mezcla de idiomas, acentos regionales y acustica telefonica degradada. Para ello se ha entrenado con 2.945,4 horas de audio limpiado y 1.436.901 segmentos, procedentes de dominios como hindi formal, hinglish, telefonia rural (Vaani), ingles con acento indio, recitacion vedica y audio real de bots de voz de atencion al cliente. El resultado es un modelo de tamano contenido que cabe en GPU de consumo y que admite inferencia en streaming con un chunk de 160 ms.
 
@@ -114,7 +114,7 @@ La comparacion se limita a parametros, tipo de licencia y capacidades arquitecto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sampathlonka/svarupa_asr_0.6b_v1
+- Modelo en Hugging Face: https://huggingface.co/sampathlonka/svarupa_asr_0.6b_v1
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Dataset Hinglish: https://huggingface.co/datasets/agarwalayushi/hinglish
 - Dataset Kathbath: https://huggingface.co/datasets/AI4Bharat/kathbath

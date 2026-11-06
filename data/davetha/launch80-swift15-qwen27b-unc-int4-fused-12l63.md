@@ -72,9 +72,9 @@ Rendimiento de decodificación: ~139 tok/s en un solo stream en una tarjeta de c
 
 | Modelo | Parametros | Contexto | Calidad publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Launch80 INT4 + islas) | 27,78 B | 131.072 | GSM8K 95,67; MMLU 80,40; HumanEval 28,33 (ruta int8) | apache-2.0 | HuggingFace, 22 descargas |
-| davetha/launch80-swift15-qwen27b-unc-int4-bodyp-bf16 (hermano base) | 27,78 B (implícito) | no disponible | GSM8K 90,33; MMLU 81,20; HumanEval 24,44 | apache-2.0 | HuggingFace |
-| swift-1-5/swift-1-5-qwen3-8-27b-uncensored (modelo base) | 27 B (según nombre) | no disponible | no disponible | no disponible | HuggingFace |
+| Este checkpoint (Launch80 INT4 + islas) | 27,78 B | 131.072 | GSM8K 95,67; MMLU 80,40; HumanEval 28,33 (ruta int8) | apache-2.0 | Hugging Face, 22 descargas |
+| davetha/launch80-swift15-qwen27b-unc-int4-bodyp-bf16 (hermano base) | 27,78 B (implícito) | no disponible | GSM8K 90,33; MMLU 81,20; HumanEval 24,44 | apache-2.0 | Hugging Face |
+| swift-1-5/swift-1-5-qwen3-8-27b-uncensored (modelo base) | 27 B (según nombre) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de otros modelos de la misma categoría (por ejemplo, Qwen3 de tamaño equivalente en BF16) en la información proporcionada, por lo que la comparación se limita a las variantes de la propia familia.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davetha/launch80-swift15-qwen27b-unc-int4-fused-12l63
+- Hugging Face: https://huggingface.co/davetha/launch80-swift15-qwen27b-unc-int4-fused-12l63
 - Checkpoint predecesor: https://huggingface.co/davetha/launch80-swift15-qwen27b-unc-int4-bodyp-bf16
 - Modelo base: https://huggingface.co/swift-1-5/swift-1-5-qwen3-8-27b-uncensored
 - Parche del cargador de vLLM: https://github.com/vllm-project/vllm/pull/63631

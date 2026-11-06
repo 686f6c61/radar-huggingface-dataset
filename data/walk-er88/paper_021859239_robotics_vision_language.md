@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo de inteligencia artificial, sino un documento académico en formato Markdown sobre robótica visión-lenguaje. El autor, walk-er88, publica un paper con el tema "robotics vision language" estructurado según el esquema intro-problema-solución-validación-futuro, con estilo de escritura analítico y conciso. El contenido se encuentra en el archivo `paper_021859239_robotics_vision_language.md`, que es el único artefacto del repositorio.
 
-Aunque la licencia es MIT y el repositorio está registrado en HuggingFace, no hay ningún modelo entrenado, pesos, arquitectura o pipeline disponible. Por tanto, no es posible evaluar capacidades de inferencia, rendimiento o requisitos de hardware. La relevancia de este repositorio es documental: puede servir como referencia para investigaciones sobre robótica visión-lenguaje, pero no como un modelo desplegable.
+Aunque la licencia es MIT y el repositorio está registrado en Hugging Face, no hay ningún modelo entrenado, pesos, arquitectura o pipeline disponible. Por tanto, no es posible evaluar capacidades de inferencia, rendimiento o requisitos de hardware. La relevancia de este repositorio es documental: puede servir como referencia para investigaciones sobre robótica visión-lenguaje, pero no como un modelo desplegable.
 
 ## Especificaciones técnicas
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Qwen3.8-27B-abliterated es una variante sin censura (uncensored) del modelo Qwen/Qwen3.8-27B, publicada por el usuario rax4901 en HuggingFace. Se ha generado mediante la tecnica de "abliteration", un procedimiento que elimina la direccion de rechazo (refusal direction) del espacio de activaciones del modelo sin necesidad de reentrenamiento, con el objetivo de que el modelo deje de rechazar peticiones que el modelo original denegaria. El modelo base es un transformer multimodal de Qwen con 27.781.427.952 parametros (aproximadamente 27,8 mil millones), lo que lo situa en la categoria de modelos de gran tamano.
+Huihui-Qwen3.8-27B-abliterated es una variante sin censura (uncensored) del modelo Qwen/Qwen3.8-27B, publicada por el usuario rax4901 en Hugging Face. Se ha generado mediante la tecnica de "abliteration", un procedimiento que elimina la direccion de rechazo (refusal direction) del espacio de activaciones del modelo sin necesidad de reentrenamiento, con el objetivo de que el modelo deje de rechazar peticiones que el modelo original denegaria. El modelo base es un transformer multimodal de Qwen con 27.781.427.952 parametros (aproximadamente 27,8 mil millones), lo que lo situa en la categoria de modelos de gran tamano.
 
 El pipeline declarado es image-text-to-text, lo que indica que conserva capacidades de vision y procesamiento conjunto de imagen y texto. La model card indica que solo se han ablacionado las capas 18 a 51, manteniendo intactas las 15 primeras capas, asi como los modulos MTP (multi-token prediction) y visual, con el fin de preservar el maximo rendimiento del modelo original. La licencia declarada es Apache 2.0.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rax4901/Huihui-Qwen3.8-27B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/rax4901/Huihui-Qwen3.8-27B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version de referencia de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio de la tecnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

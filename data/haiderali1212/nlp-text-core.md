@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo nlp-text-core es un modelo alojado en HuggingFace por el usuario Haiderali1212 bajo el identificador `Haiderali1212/nlp-text-core`. Según su model card, se define como un "modelo núcleo de transformación lingüística y parafraseo" (linguistic text transformation and paraphrasing core model), orientado a tareas de refinamiento de texto. La etiqueta principal es `t5`, lo que lo sitúa dentro de la familia T5, de arquitectura transformer encoder-decoder, y la etiqueta de pipeline declarada en la model card es `text2text-generation`.
+El modelo nlp-text-core es un modelo alojado en Hugging Face por el usuario Haiderali1212 bajo el identificador `Haiderali1212/nlp-text-core`. Según su model card, se define como un "modelo núcleo de transformación lingüística y parafraseo" (linguistic text transformation and paraphrasing core model), orientado a tareas de refinamiento de texto. La etiqueta principal es `t5`, lo que lo sitúa dentro de la familia T5, de arquitectura transformer encoder-decoder, y la etiqueta de pipeline declarada en la model card es `text2text-generation`.
 
 La información pública disponible es mínima. El repositorio registra cero descargas y cero "likes", no declara licencia, no declara idiomas soportados y su model card no incluye datos de tamaño, composición del dataset de entrenamiento, hiperparámetros ni resultados de evaluación. Tampoco se ha publicado información sobre cuantizaciones, formato de pesos o requisitos de despliegue.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros, no puede estimarse el consumo de memoria. Como referencia orientativa, un T5 de 220 M de parametros requiere del orden de 1-2 GB en precision completa, mientras que uno de 770 M se situa en torno a 3-4 GB, pero no hay confirmacion de que este modelo corresponda a ninguna de esas variantes.
 - GPU recomendadas: no disponible por la misma razon. Cualquier recomendacion concreta (A100, H100, RTX 4090, etc.) seria especulativa.
 - Compatibilidad con GPU de consumo: indeterminada. Si el modelo fuese una variante T5 pequena o base, cabria en GPU de consumo con 8-16 GB de VRAM; si fuese una variante grande, no. No hay datos para decidirlo.
-- Opciones de despliegue: no se documentan en el repositorio. Al tratarse de un modelo etiquetado como `t5`, en principio seria desplegable con librerias compatibles con transformers (por ejemplo, a traves de la propia API de HuggingFace Transformers), pero no se confirma ningun backend concreto como vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no se documentan en el repositorio. Al tratarse de un modelo etiquetado como `t5`, en principio seria desplegable con librerias compatibles con transformers (por ejemplo, a traves de la propia API de Hugging Face Transformers), pero no se confirma ningun backend concreto como vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparacion es provisional, ya que se desconoce el tamano y las condiciones d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Haiderali1212/nlp-text-core | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | no disponible |
+| Haiderali1212/nlp-text-core | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | no disponible |
 | T5-base | 220 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Resultados publicos en MMLU, GLUE, etc. |
 | T5-large | 770 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Resultados publicos en MMLU, GLUE, etc. |
 | FLAN-T5-base | 220 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Resultados publicos en MMLU, GSM8K, etc. |
@@ -94,7 +94,7 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haiderali1212/nlp-text-core
+- Modelo en Hugging Face: https://huggingface.co/Haiderali1212/nlp-text-core
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o articulo tecnico: no disponible

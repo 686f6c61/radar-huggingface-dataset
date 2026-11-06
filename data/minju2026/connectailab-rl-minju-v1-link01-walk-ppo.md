@@ -82,5 +82,5 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minju2026/connectailab-rl-minju-v1-link01-walk-ppo
+- Modelo en Hugging Face: https://huggingface.co/minju2026/connectailab-rl-minju-v1-link01-walk-ppo
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

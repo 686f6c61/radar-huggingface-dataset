@@ -69,8 +69,8 @@ No disponible. No existen modelos comparables en sentido estricto, porque el rep
 
 | Referencia | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `artembondarenko/hw1-neural-architecture-search` | Nota de investigacion sobre NAS, sin checkpoint entrenado declarado | 49.600 en safetensors | No disponible | MIT | Publico en HuggingFace |
-| Neural Architecture Search: Insights from 1000 Papers (arXiv:2301.08727) | Encuesta academica sobre NAS | No aplica | No aplica | No disponible en la informacion proporcionada | Publico en arXiv y HuggingFace Papers |
+| `artembondarenko/hw1-neural-architecture-search` | Nota de investigacion sobre NAS, sin checkpoint entrenado declarado | 49.600 en safetensors | No disponible | MIT | Publico en Hugging Face |
+| Neural Architecture Search: Insights from 1000 Papers (arXiv:2301.08727) | Encuesta academica sobre NAS | No aplica | No aplica | No disponible en la informacion proporcionada | Publico en arXiv y Hugging Face Papers |
 | Neural Architecture Search Algorithm (GeeksforGeeks) | Articulo divulgativo sobre NAS y AutoML | No aplica | No aplica | No disponible en la informacion proporcionada | Publico en web |
 
 No se dispone de datos para comparar contra modelos de lenguaje de 0,05 millones de parametros ni contra otros repositorios de notas de investigacion, porque la informacion proporcionada no incluye alternativas de esa categoria.
@@ -90,8 +90,8 @@ No se dispone de datos para comparar contra modelos de lenguaje de 0,05 millones
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/artembondarenko/hw1-neural-architecture-search
-- Neural Architecture Search: Insights from 1000 Papers (pagina del paper en HuggingFace): https://huggingface.co/papers/2301.08727
+- Repositorio en Hugging Face: https://huggingface.co/artembondarenko/hw1-neural-architecture-search
+- Neural Architecture Search: Insights from 1000 Papers (pagina del paper en Hugging Face): https://huggingface.co/papers/2301.08727
 - Neural Architecture Search: Insights from 1000 Papers (arXiv): https://arxiv.org/abs/2301.08727
 - Version HTML del paper en ar5iv: https://ar5iv.labs.arxiv.org/html/2301.08727
 - Neural Architecture Search Algorithm (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/neural-architecture-and-search-methods/

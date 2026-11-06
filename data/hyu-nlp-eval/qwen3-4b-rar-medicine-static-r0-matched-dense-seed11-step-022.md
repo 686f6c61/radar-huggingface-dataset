@@ -4,7 +4,7 @@
 
 El modelo `HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-022` es un ajuste fino de Qwen3-4B-Instruct-2507 desarrollado por el grupo HYU-NLP-EVAL. Se trata de un checkpoint intermedio (paso 22) de un experimento de aprendizaje por refuerzo orientado al dominio de la medicina, entrenado sobre el conjunto de datos interno RaR-Medicine con 1.500 indicaciones (prompts) y una funcion de recompensa basada en rubricas estaticas (`rar_static_r0_only`). El run asociado se identifica como `phase1-static-r0-medicine-qwen3-4b-matched-dense-20260928-seed11`.
 
-La relevancia de esta publicacion es fundamentalmente metodologica: forma parte de una serie de checkpoints (pasos 000, 008, 016, 022, 024, 030, entre otros) que permiten estudiar la evolucion del entrenamiento con GRPO y comparar la variante densa frente a otras configuraciones. No es un modelo orientado a produccion ni a uso clinico; el propio autor lo etiqueta como "research use only" y acumula un numero muy bajo de descargas en HuggingFace.
+La relevancia de esta publicacion es fundamentalmente metodologica: forma parte de una serie de checkpoints (pasos 000, 008, 016, 022, 024, 030, entre otros) que permiten estudiar la evolucion del entrenamiento con GRPO y comparar la variante densa frente a otras configuraciones. No es un modelo orientado a produccion ni a uso clinico; el propio autor lo etiqueta como "research use only" y acumula un numero muy bajo de descargas en Hugging Face.
 
 El modelo conserva la arquitectura del Qwen3-4B-Instruct-2507, un transformer causal denso de aproximadamente 4.000 millones de parametros, con pesos en BF16 y una ventana de contexto heredada del modelo base. Su interes practico se limita a la investigacion sobre tecnicas de alineamiento con recompensas basadas en rubricas en dominios especializados.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-022 | 4.022.468.096 | 256K (heredado, no confirmado) | apache-2.0 | HuggingFace, 9 descargas | Ajuste RL medico, solo investigacion |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B aprox. | 262.144 tokens | apache-2.0 | HuggingFace, ampliamente distribuido | Modelo base; instrucciones generales y multilingue |
-| Llama 3.2 3B Instruct | 3.2B aprox. | 128K tokens | Licencia comunitaria Llama 3.2 | HuggingFace | Alternativa de tamano similar; licencia mas restrictiva |
-| Phi-4-mini-instruct | 3.8B aprox. | 128K tokens | MIT | HuggingFace | Buen rendimiento en razonamiento y matematicas |
+| qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-022 | 4.022.468.096 | 256K (heredado, no confirmado) | apache-2.0 | Hugging Face, 9 descargas | Ajuste RL medico, solo investigacion |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B aprox. | 262.144 tokens | apache-2.0 | Hugging Face, ampliamente distribuido | Modelo base; instrucciones generales y multilingue |
+| Llama 3.2 3B Instruct | 3.2B aprox. | 128K tokens | Licencia comunitaria Llama 3.2 | Hugging Face | Alternativa de tamano similar; licencia mas restrictiva |
+| Phi-4-mini-instruct | 3.8B aprox. | 128K tokens | MIT | Hugging Face | Buen rendimiento en razonamiento y matematicas |
 
 Los datos de los modelos comparativos corresponden a informacion publica de sus respectivas fichas; no se dispone de comparaciones de rendimiento directas con el modelo analizado.
 
@@ -88,7 +88,7 @@ Los datos de los modelos comparativos corresponden a informacion publica de sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-022
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-022
 - Checkpoint hermano (step-000): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-000
 - Checkpoint hermano (step-008) en LLM Explorer: https://llm-explorer.com/model/HYU-NLP-EVAL%2Fqwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-008,cMGLnuq6Ni0ObvQjQQgbT
 - Checkpoint relacionado (step-016) en Featherless: https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016

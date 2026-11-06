@@ -78,10 +78,10 @@ La versión NPU2 añade la ventaja de ejecución en hardware de bajo consumo, lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FastFlowLM/Hy-MT2-1.8B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/FastFlowLM/Hy-MT2-1.8B-NPU2
 - Repositorio oficial de Hy-MT2 (Tencent): https://github.com/Tencent-Hunyuan/Hy-MT2
 - Reporte técnico de Hy-MT2 (arxiv): https://arxiv.org/pdf/2605.22064
 - Sitio de FastFlowLM: https://fastflowlm.com/
 - Repositorio de FastFlowLM en GitHub: https://github.com/ROCm/FastFlowLM
 - Documentación de modelos de FastFlowLM: https://fastflowlm.com/docs/models/
-- Colección de modelos Hy-MT2 en HuggingFace: https://huggingface.co/collections/tencent/hy-mt2
+- Colección de modelos Hy-MT2 en Hugging Face: https://huggingface.co/collections/tencent/hy-mt2

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sbordt/forgetting-contamination-124M-2x` | 124M | 1024 | Investigación sobre contaminación y forgetting | MIT | Checkpoint `.pth` en HuggingFace |
-| GPT-2 124M original (OpenAI) | 124M | 1024 | Modelo generativo de propósito general | MIT | Pesos en HuggingFace (`openai-community/gpt2`) |
+| `sbordt/forgetting-contamination-124M-2x` | 124M | 1024 | Investigación sobre contaminación y forgetting | MIT | Checkpoint `.pth` en Hugging Face |
+| GPT-2 124M original (OpenAI) | 124M | 1024 | Modelo generativo de propósito general | MIT | Pesos en Hugging Face (`openai-community/gpt2`) |
 | GPT-2 124M entrenado con llm.c (Karpathy) | 124M | 1024 | Reproducción de GPT-2 en C/CUDA | MIT | Checkpoints en el repo `karpathy/llm.c` |
-| Modelos de la colección `forgetting-contamination` (otros tamaños) | no disponible | no disponible | Misma línea experimental | MIT | Colección en HuggingFace |
+| Modelos de la colección `forgetting-contamination` (otros tamaños) | no disponible | no disponible | Misma línea experimental | MIT | Colección en Hugging Face |
 
 La comparación relevante es frente a GPT-2 124M estándar: misma arquitectura y tamaño, pero con un corpus de entrenamiento distinto (FineWeb-Edu con contaminación insertada) y un objetivo experimental en lugar de generativo. Frente a modelos de la misma colección (otros tamaños y multiplicadores Chinchilla), la diferencia está en el presupuesto de entrenamiento y el checkpoint seleccionado.
 
@@ -84,7 +84,7 @@ La comparación relevante es frente a GPT-2 124M estándar: misma arquitectura y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-124M-2x
+- Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-124M-2x
 - Paper (arXiv): https://arxiv.org/abs/2410.03249
 - Repositorio de código: https://github.com/tml-tuebingen/forgetting-contamination
 - Script de creación del dataset contaminado: https://github.com/tml-tuebingen/forgetting-contamination/blob/main/llm.c/create_contaminated_dataset.py

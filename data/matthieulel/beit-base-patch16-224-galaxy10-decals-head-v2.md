@@ -87,8 +87,8 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 | Modelo | Parámetros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | 85.769.674 | 224x224 px | Clasificación de 10 clases (Galaxy10 DECaLS) | apache-2.0 | HuggingFace |
-| microsoft/beit-base-patch16-224 | 85.769.674 (backbone) | 224x224 px | Backbone genérico de visión (ImageNet) | no disponible en la información | HuggingFace |
+| Este checkpoint | 85.769.674 | 224x224 px | Clasificación de 10 clases (Galaxy10 DECaLS) | apache-2.0 | Hugging Face |
+| microsoft/beit-base-patch16-224 | 85.769.674 (backbone) | 224x224 px | Backbone genérico de visión (ImageNet) | no disponible en la información | Hugging Face |
 | Otras configuraciones del benchmark (40 backbones x 2 regímenes) | variable | variable | Clasificación de 10 clases (Galaxy10 DECaLS) | variable | Colección Vision Foundation Models Benchmark |
 
 Para una comparativa cuantitativa con alternativas del mismo benchmark, consultar el dataset `vision-foundation-models-benchmark-runs`.
@@ -107,7 +107,7 @@ Para una comparativa cuantitativa con alternativas del mismo benchmark, consulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/beit-base-patch16-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/beit-base-patch16-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/microsoft/beit-base-patch16-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

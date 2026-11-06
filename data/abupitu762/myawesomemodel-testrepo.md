@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario abupitu762 bajo el identificador `abupitu762/MyAwesomeModel-TestRepo`. Por el propio nombre del repositorio y por sus metricas de uso (0 descargas, 0 likes, repositorio de 0,0 GB creado y actualizado con siete segundos de diferencia), se trata de un repositorio de prueba y no de una publicacion de pesos utilizable. La model card, sin embargo, describe un modelo generativo orientado a razonamiento, con mejoras declaradas en matematicas, programacion y logica, y menciona una variante denominada MyAwesomeModel-Small.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario abupitu762 bajo el identificador `abupitu762/MyAwesomeModel-TestRepo`. Por el propio nombre del repositorio y por sus metricas de uso (0 descargas, 0 likes, repositorio de 0,0 GB creado y actualizado con siete segundos de diferencia), se trata de un repositorio de prueba y no de una publicacion de pesos utilizable. La model card, sin embargo, describe un modelo generativo orientado a razonamiento, con mejoras declaradas en matematicas, programacion y logica, y menciona una variante denominada MyAwesomeModel-Small.
 
-La informacion tecnica disponible es contradictoria: las etiquetas de HuggingFace indican `bert`, `feature-extraction` y `pytorch`, mientras que la model card describe un modelo conversacional con modo de razonamiento, soporte de function calling, prompt de sistema, plantillas para subida de ficheros y generacion aumentada con busqueda web. No se publica en ninguna parte el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento ni la arquitectura concreta.
+La informacion tecnica disponible es contradictoria: las etiquetas de Hugging Face indican `bert`, `feature-extraction` y `pytorch`, mientras que la model card describe un modelo conversacional con modo de razonamiento, soporte de function calling, prompt de sistema, plantillas para subida de ficheros y generacion aumentada con busqueda web. No se publica en ninguna parte el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento ni la arquitectura concreta.
 
 La relevancia de esta ficha es, por tanto, metodologica: sirve como ejemplo de como evaluar criticamente una model card que incluye afirmaciones de rendimiento (por ejemplo, AIME 2025 con 87,5 % de acierto y 23K tokens de media por pregunta) sin pesos descargables, sin arquitectura declarada y con referencias internas a ficheros e imagenes no enlazados.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es, por tanto, metodologica: sirve como ejemplo de c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (las etiquetas de HuggingFace indican `bert`; la model card no describe arquitectura) |
+| Arquitectura | No disponible (las etiquetas de Hugging Face indican `bert`; la model card no describe arquitectura) |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no consta que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -89,7 +89,7 @@ Dato adicional declarado en el texto de la model card, no reflejado en la tabla:
 - VRAM para inferencia: no disponible. No se declara el numero de parametros ni la arquitectura, y el repositorio no contiene pesos, por lo que no es posible estimar requisitos de memoria ni siquiera por orden de magnitud.
 - GPU recomendadas: no disponible, por la misma razon. Sin conocer el tamaño del modelo no se puede determinar si requiere A100, H100, RTX 4090 o hardware inferior.
 - Compatibilidad con GPU de consumo: no disponible. La model card no menciona ninguna variante cuantizada ni requisitos minimos.
-- Opciones de despliegue: la model card remite a un "code repository" sin enlace y menciona una API y una interfaz de chat en un sitio web oficial tambien sin URL. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni ninguna otra herramienta. El unico dato objetivo es la etiqueta `endpoints_compatible`, que indica compatibilidad con la inferencia gestionada de HuggingFace.
+- Opciones de despliegue: la model card remite a un "code repository" sin enlace y menciona una API y una interfaz de chat en un sitio web oficial tambien sin URL. No se confirma soporte de vLLM, llama.cpp, Ollama, TGI ni ninguna otra herramienta. El unico dato objetivo es la etiqueta `endpoints_compatible`, que indica compatibilidad con la inferencia gestionada de Hugging Face.
 - Latencia y throughput: no disponible. El unico dato indirecto es el consumo declarado de 23K tokens por pregunta en AIME, que implicaria latencias altas y coste elevado por consulta en cualquier despliegue con modo de razonamiento activado.
 
 ## Comparativa con modelos similares
@@ -111,7 +111,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abupitu762/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/abupitu762/MyAwesomeModel-TestRepo
 - Model card: incluida en la pagina del repositorio anterior (contenido en ingles, sin licencia de pesos publicada aparte)
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible (la model card menciona un "chat website & API platform" sin URL)

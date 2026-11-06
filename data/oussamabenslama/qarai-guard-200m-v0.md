@@ -94,7 +94,7 @@ La diferencia principal es de escala y de documentacion: las alternativas son mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OussamaBenSlama/qarai-guard-200M-v0
+- Modelo en Hugging Face: https://huggingface.co/OussamaBenSlama/qarai-guard-200M-v0
 - Modelo base MARBERTv2: https://huggingface.co/UBC-NLP/MARBERTv2
 - Repositorio GitHub de Qarai Agent Guard: https://github.com/qarai-labs/qarai-agent-guard
 - Documentacion de Qarai Agent Guard: https://qarai-labs.github.io/qarai-agent-guard/

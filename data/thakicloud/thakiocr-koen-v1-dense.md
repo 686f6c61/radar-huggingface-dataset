@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/ThakiOCR-KOEN-V1-Dense
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/ThakiOCR-KOEN-V1-Dense
 - Model card en coreano: https://huggingface.co/ThakiCloud/ThakiOCR-KOEN-V1-Dense/blob/main/MODEL_CARD.ko.md
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/OCR-Synthetic-Multilingual-v1
 - AI Hub (dataset 71299, usado solo para evaluacion): https://aihub.or.kr/

@@ -62,7 +62,7 @@ Tiempos de inferencia en Mac arm64 (mediana de 5 ejecuciones, proceso unico): au
 - VRAM estimada para inferencia: no disponible, pero los archivos .pte se cargan en memoria; el conjunto int8 completo requiere aproximadamente 272 MB de RAM.
 - GPU recomendadas: no aplica, el modelo esta disenado para CPU y aceleradores neuronales en dispositivo (XNNPACK, Core ML).
 - Compatibilidad con hardware de consumo: si, esta pensado para ejecutarse en telefonos y dispositivos de borde con Android (XNNPACK) o iOS (Core ML).
-- Opciones de despliegue: ExecuTorch runtime con delegado XNNPACK; Core ML para iOS; el modelo original puede usarse con la libreria transformers de HuggingFace.
+- Opciones de despliegue: ExecuTorch runtime con delegado XNNPACK; Core ML para iOS; el modelo original puede usarse con la libreria transformers de Hugging Face.
 - Latencia estimada: 115 ms por clip de audio y 12 ms por frase en Mac arm64; en dispositivos moviles puede variar significativamente.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La diferencia principal frente al modelo original es el formato de pesos y la op
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/CLAP-HTSAT-fused-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/CLAP-HTSAT-fused-ExecuTorch
 - Modelo original: https://huggingface.co/laion/clap-htsat-fused
 - Repositorio de conversion: https://github.com/john-rocky/executorch-models
 - Repositorio CLAP de LAION: https://github.com/LAION-AI/CLAP

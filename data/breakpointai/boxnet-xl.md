@@ -97,8 +97,8 @@ No se ha proporcionado informacion verificada sobre modelos comparables, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BreakpointAI/boxnet-xl
+- Modelo en Hugging Face: https://huggingface.co/BreakpointAI/boxnet-xl
 - Dataset de entrenamiento: https://huggingface.co/datasets/BreakpointAI/breakpoint-grounding-55m
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/diffusionexp/train_boxnetXL/runs/2y28bu1x
-- Perfil del autor en HuggingFace: https://huggingface.co/BreakpointAI
+- Perfil del autor en Hugging Face: https://huggingface.co/BreakpointAI
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo: los resultados obtenidos correspondian a sitios sin relacion con el contenido tecnico solicitado, por lo que no se incluyen.

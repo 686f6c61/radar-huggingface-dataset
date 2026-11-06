@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PakLID v1 es un clasificador de identificación de idioma desarrollado por Balagh (Ownova), publicado en HuggingFace bajo el identificador `balagh-lm/paklid`. No es un modelo generativo ni una red neuronal: se trata de un pipeline clásico de TF-IDF sobre n-gramas de caracteres (1 a 5) combinado con una SVM lineal calibrada, serializado con `joblib`. Su propósito es identificar las lenguas de Pakistán escritas en escritura perso-árabe, además de roman urdu, persa, árabe y英語 —inglés— como idiomas "confusores" que aparecen mezclados en corpus web de la región.
+PakLID v1 es un clasificador de identificación de idioma desarrollado por Balagh (Ownova), publicado en Hugging Face bajo el identificador `balagh-lm/paklid`. No es un modelo generativo ni una red neuronal: se trata de un pipeline clásico de TF-IDF sobre n-gramas de caracteres (1 a 5) combinado con una SVM lineal calibrada, serializado con `joblib`. Su propósito es identificar las lenguas de Pakistán escritas en escritura perso-árabe, además de roman urdu, persa, árabe y英語 —inglés— como idiomas "confusores" que aparecen mezclados en corpus web de la región.
 
 El problema que resuelve es muy concreto: las etiquetas de idioma que asignan los rastreadores web y los filtros upstream a los corpus multilingües son poco fiables en el sur de Asia, donde conviven alfabetos y lenguas mutuamente inteligibles parcialmente (urdu, punjabi occidental, saraiki, hindko, pahari-potwari, sindhi, pastún, balochi, brahui, cachemir). PakLID está pensado para re-clasificar y reordenar esos buckets de corpus antes de usarlos en entrenamiento.
 
@@ -20,7 +20,7 @@ El modelo cubre 14 etiquetas y reporta un macro F1 de 0,974 y una exactitud de 0
 | Idiomas soportados | 14 etiquetas: `arb_Arab`, `bal_Arab`, `brh_Arab`, `eng_Latn`, `fas_Arab`, `hno_Arab`, `kas_Arab`, `pbt_Arab`, `phr_Arab`, `pnb_Arab`, `skr_Arab`, `snd_Arab`, `urd_Arab`, `urd_Latn` |
 | Licencia | apache-2.0 |
 | Formato de pesos | `joblib` (`paklid-v1.joblib`) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -85,16 +85,16 @@ La suma de soportes (7.209) coincide con el tamaño del conjunto de evaluación 
 - VRAM: no aplica (0 GB de VRAM dedicada). El repositorio completo ocupa 0,1 GB, por lo que el proceso puede residir cómodamente en memoria de sistema de cualquier máquina actual.
 - GPU recomendadas: ninguna; cualquier GPU sería irrelevante para este clasificador.
 - Cabe en cualquier equipo de consumo: portátil, contenedor pequeño, función serverless o incluso un servicio edge. No necesita GPU de consumo (RTX 4090, etc.) ni aceleradores de datacenter (A100, H100).
-- Despliegue: servicio Python con `scikit-learn` + `joblib` cargando el artefacto desde HuggingFace (`hf_hub_download`), API HTTP propia, o integración como etapa de preprocesado en un pipeline de datos (Spark, Dask, Airflow). El formato no es compatible con vLLM, llama.cpp, Ollama ni TGI, que son servidores de modelos generativos.
+- Despliegue: servicio Python con `scikit-learn` + `joblib` cargando el artefacto desde Hugging Face (`hf_hub_download`), API HTTP propia, o integración como etapa de preprocesado en un pipeline de datos (Spark, Dask, Airflow). El formato no es compatible con vLLM, llama.cpp, Ollama ni TGI, que son servidores de modelos generativos.
 - Dado que el coste por documento es una multiplicación dispersa, el rendimiento vendrá limitado por el vectorizador TF-IDF y por el truncado a 500 caracteres, no por el clasificador; conviene paralelizar a nivel de proceso o lote en lugar de buscar aceleración por hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Cobertura de lenguas | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PakLID v1 | Clasificador TF-IDF + SVM lineal | 14 etiquetas, foco en lenguas perso-árabes de Pakistán + roman urdu, persa, árabe, inglés | Características de n-gramas de caracteres, sin red neuronal | apache-2.0 | HuggingFace (`balagh-lm/paklid`), artefacto `joblib` |
+| PakLID v1 | Clasificador TF-IDF + SVM lineal | 14 etiquetas, foco en lenguas perso-árabes de Pakistán + roman urdu, persa, árabe, inglés | Características de n-gramas de caracteres, sin red neuronal | apache-2.0 | Hugging Face (`balagh-lm/paklid`), artefacto `joblib` |
 | fastText `lid.176` | Clasificador neuronal (bolsa de n-gramas + softmax) | Muy amplia (cientos de idiomas, etiquetas ISO 639-1/639-3) | Embeddings de n-gramas de caracteres promediados | no disponible en la información proporcionada | Distribuido por Facebook AI / fastText |
-| GlotLID | Clasificador neuronal | Muy amplia (miles de etiquetas) | Modelo tipo fastText entrenado a gran escala | no disponible en la información proporcionada | HuggingFace (`cis-lmu/glotlid`) |
+| GlotLID | Clasificador neuronal | Muy amplia (miles de etiquetas) | Modelo tipo fastText entrenado a gran escala | no disponible en la información proporcionada | Hugging Face (`cis-lmu/glotlid`) |
 | CLD3 | Clasificador neuronal ligero | Amplia (más de un centenar de idiomas) | Red pequeña sobre n-gramas de caracteres | no disponible en la información proporcionada | Repositorio de Google |
 
 Diferencias cualitativas relevantes: los identificadores generalistas cubren muchos más idiomas, pero suelen tener un rendimiento notablemente peor en lenguas de bajos recursos y en pares cercanos como urdu/hindko/pahari-potwari o balochi/brahui, y a menudo no separan roman urdu del inglés ni distinguen persa de árabe con precisión. PakLID renuncia a la cobertura amplia para especializarse en un inventario cerrado de 14 etiquetas con métricas publicadas por clase. No se dispone de una comparación numérica directa entre PakLID y estas alternativas sobre el mismo conjunto de evaluación.
@@ -114,7 +114,7 @@ Diferencias cualitativas relevantes: los identificadores generalistas cubren muc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/balagh-lm/paklid
+- Modelo en Hugging Face: https://huggingface.co/balagh-lm/paklid
 - Artefacto del modelo: https://huggingface.co/balagh-lm/paklid/blob/main/paklid-v1.joblib
 - Repositorio de código (funciones de normalización `lid_norm` y `base_norm` en `phase0/colab/01_build_corpus.py`): https://github.com/balagh-lm/balagh
 - Paper técnico: no disponible

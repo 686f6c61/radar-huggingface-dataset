@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Echoo113/Phi-3-mini-4k-instruct-dragon_prompted-ft4.43` es una adaptación mediante fine-tuning supervisado (SFT) del modelo base `microsoft/Phi-3-mini-4k-instruct`, desarrollado por Microsoft. El autor `Echoo113` ha publicado este ajuste en HuggingFace con el objetivo de especializar el comportamiento del modelo para un tipo de prompt concreto (indicado por el sufijo "dragon_prompted"), aunque no se especifica en la documentación qué tarea o dominio aborda exactamente. El modelo base pertenece a la familia Phi-3, con 3.8 mil millones de parámetros y una ventana de contexto de 4.096 tokens, destacando por su eficiencia en tareas de instrucción y razonamiento.
+El modelo `Echoo113/Phi-3-mini-4k-instruct-dragon_prompted-ft4.43` es una adaptación mediante fine-tuning supervisado (SFT) del modelo base `microsoft/Phi-3-mini-4k-instruct`, desarrollado por Microsoft. El autor `Echoo113` ha publicado este ajuste en Hugging Face con el objetivo de especializar el comportamiento del modelo para un tipo de prompt concreto (indicado por el sufijo "dragon_prompted"), aunque no se especifica en la documentación qué tarea o dominio aborda exactamente. El modelo base pertenece a la familia Phi-3, con 3.8 mil millones de parámetros y una ventana de contexto de 4.096 tokens, destacando por su eficiencia en tareas de instrucción y razonamiento.
 
 Este fine-tuning se realizó con la librería TRL y el framework Transformers, y el repositorio tiene un tamaño de 0.1 GB, lo que sugiere que se han guardado los pesos en formato `safetensors` (indicado en los tags). No se dispone de información sobre el dataset de entrenamiento, el número de pasos, ni los resultados de evaluación. La relevancia de este modelo reside en su potencial como ejemplo de adaptación de un modelo pequeño y eficiente para casos de uso específicos, aunque su utilidad práctica dependerá de la calidad del fine-tuning, que no se puede verificar sin más datos.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks para el modelo `Echoo113/Phi-3-mini
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Phi-3-mini-4k-instruct (base) | 3.8B | 4096 | MIT | HuggingFace |
-| Echoo113/Phi-3-mini-4k-instruct-dragon_prompted-ft4.43 | 3.8B | 4096 | no especificada | HuggingFace |
-| Llama-3.2-3B | 3.2B | 128K | Llama 3.2 license | HuggingFace |
+| Phi-3-mini-4k-instruct (base) | 3.8B | 4096 | MIT | Hugging Face |
+| Echoo113/Phi-3-mini-4k-instruct-dragon_prompted-ft4.43 | 3.8B | 4096 | no especificada | Hugging Face |
+| Llama-3.2-3B | 3.2B | 128K | Llama 3.2 license | Hugging Face |
 
 No se dispone de datos de rendimiento para la comparación numérica. El modelo base y el fine-tune comparten la misma arquitectura y contexto, pero la licencia del fine-tune no está clara. Llama-3.2-3B es un modelo comparable en tamaño, pero con contexto más largo, aunque su licencia es diferente.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para la comparación numérica. El modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-dragon_prompted-ft4.43
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-dragon_prompted-ft4.43
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repositorio de referencia del modelo base (GitHub): https://github.com/ttlmtang123/Phi-3-mini-4k-instruct
 - Ejemplo de uso del modelo base (GitHub): https://github.com/Mayankpratapsingh022/Phi-3-LLM

@@ -88,9 +88,9 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- [Modelo LiteRT en HuggingFace](https://huggingface.co/litert-community/mLateOn)
+- [Modelo LiteRT en Hugging Face](https://huggingface.co/litert-community/mLateOn)
 - [Modelo base lightonai/mLateOn](https://huggingface.co/lightonai/mLateOn)
-- [Comunidad LiteRT en HuggingFace](https://huggingface.co/litert-community)
+- [Comunidad LiteRT en Hugging Face](https://huggingface.co/litert-community)
 - [Colección de modelos LiteRT](https://huggingface.co/litert-community/collections)
 - [Entrada en el leaderboard MTEB](https://leaderboard.mteb.org/models/lightonai/mLateOn)
 - [Repositorio GitHub de LightOn (scripts de entrenamiento)](https://github.com/lightonai/mdenseon-mlateon)

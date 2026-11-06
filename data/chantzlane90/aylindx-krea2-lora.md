@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aylindx-krea2-lora es un adaptador LoRA de bajo rango publicado por el usuario chantzlane90 en HuggingFace, entrenado para el modelo base de difusión Krea 2. No se trata de un modelo de lenguaje, sino de un ajuste fino orientado a la generación de imágenes de un personaje ficticio concreto, identificado en la model card como «Aylin Demir» (personaje adulto generado por IA, no una persona real). El adaptador se activa mediante la palabra clave o trigger `aylindx`.
+aylindx-krea2-lora es un adaptador LoRA de bajo rango publicado por el usuario chantzlane90 en Hugging Face, entrenado para el modelo base de difusión Krea 2. No se trata de un modelo de lenguaje, sino de un ajuste fino orientado a la generación de imágenes de un personaje ficticio concreto, identificado en la model card como «Aylin Demir» (personaje adulto generado por IA, no una persona real). El adaptador se activa mediante la palabra clave o trigger `aylindx`.
 
 El repositorio ocupa aproximadamente 0,2 GB y fue creado y actualizado el 7 de octubre de 2026, con un intervalo entre ambas operaciones de apenas nueve segundos, lo que sugiere una subida automatizada o de prueba. Registra 0 descargas y 0 likes en el momento de la consulta, por lo que su adopción es nula y no existe validación por parte de la comunidad. La licencia declarada es «other», sin que la model card detalle los términos concretos de uso.
 
@@ -77,6 +77,6 @@ No disponible. La informacion proporcionada no identifica otros LoRA de personaj
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/aylindx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/aylindx-krea2-lora
 
 Nota: los resultados de busqueda web disponibles no guardan relacion con este modelo y se han descartado por no aportar informacion tecnica util.

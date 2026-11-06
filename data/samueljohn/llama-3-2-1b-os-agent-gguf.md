@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Cuantización | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Instruct (Meta) | 1,24B | 128k | Llama 3.2 Community License | Varias (GGUF, safetensors) | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54B | 128k | Apache 2.0 | Varias (GGUF) | HuggingFace |
-| Phi-3-mini (3.8B) | 3,8B | 4k | MIT | Varias (GGUF) | HuggingFace |
-| samueljohn/Llama-3.2-1B-OS-Agent-GGUF | 1,23B | 128k | No disponible | Q4_K_M | HuggingFace |
+| Llama-3.2-1B-Instruct (Meta) | 1,24B | 128k | Llama 3.2 Community License | Varias (GGUF, safetensors) | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54B | 128k | Apache 2.0 | Varias (GGUF) | Hugging Face |
+| Phi-3-mini (3.8B) | 3,8B | 4k | MIT | Varias (GGUF) | Hugging Face |
+| samueljohn/Llama-3.2-1B-OS-Agent-GGUF | 1,23B | 128k | No disponible | Q4_K_M | Hugging Face |
 
 Este modelo es un ajuste fino del Llama 3.2 1B, por lo que su rendimiento será similar al base, pero con modificaciones para tareas de agente. No se dispone de comparaciones directas con alternativas.
 

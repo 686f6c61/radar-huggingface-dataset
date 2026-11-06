@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar el rendimiento de este ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/probemaxxer-qwen36-27b-rl
+- Repositorio Hugging Face: https://huggingface.co/ceselder/probemaxxer-qwen36-27b-rl
 - Modelo base Qwen3.6-27B (blog oficial): https://qwen.ai/blog?id=qwen3.6-27b
 - Otros modelos del autor (contexto): https://huggingface.co/ceselder/skip-lens-qwen36-27b-ar-reconstructor
 - Listado de modelos con tag future-lens: https://huggingface.co/models?other=future-lens

@@ -19,7 +19,7 @@ Se trata de una conversión de formato y cuantización, no de un reentrenamiento
 | Tipos de cuantización | q5_0 (único fichero publicado: `whisper-hindi2hinglish-apex-q5_0.bin`, 574 MB) |
 | Idiomas soportados | hindi (hi) e inglés (en), con salida en caracteres latinos (hinglish) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGML (`.bin`), convertido desde los pesos originales en formato HuggingFace |
+| Formato de pesos | GGML (`.bin`), convertido desde los pesos originales en formato Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
 | bhullar17noor/whisper-hindi2hinglish-apex-ggml | no disponible | ventanas de 30 s (Whisper) | hi, en (salida romanizada) | Apache 2.0 | GGML q5_0 |
-| Oriserve/Whisper-Hindi2Hinglish-Apex (modelo base) | no disponible | ventanas de 30 s (Whisper) | hi, en (salida romanizada) | Apache 2.0 | safetensors (HuggingFace) |
+| Oriserve/Whisper-Hindi2Hinglish-Apex (modelo base) | no disponible | ventanas de 30 s (Whisper) | hi, en (salida romanizada) | Apache 2.0 | safetensors (Hugging Face) |
 | OpenAI Whisper (modelo original) | varía según tamaño | ventanas de 30 s | multilingüe | MIT (según versión) | múltiples |
 
 La comparación con alternativas de la misma categoría (otros modelos ASR para hinglish) no está disponible en la información proporcionada. La diferencia principal frente al modelo base es el formato y la cuantización: esta versión es más ligera y ejecutable en CPU, a costa de la pérdida de precisión inherente a q5_0.
@@ -81,6 +81,6 @@ La comparación con alternativas de la misma categoría (otros modelos ASR para 
 
 ## Enlaces
 
-- [HuggingFace: bhullar17noor/whisper-hindi2hinglish-apex-ggml](https://huggingface.co/bhullar17noor/whisper-hindi2hinglish-apex-ggml)
+- [Hugging Face: bhullar17noor/whisper-hindi2hinglish-apex-ggml](https://huggingface.co/bhullar17noor/whisper-hindi2hinglish-apex-ggml)
 - [Modelo base: Oriserve/Whisper-Hindi2Hinglish-Apex](https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Apex)
 - [whisper.cpp (repositorio oficial)](https://github.com/ggml-org/whisper.cpp)

@@ -111,7 +111,7 @@ Los tres primeros comparten la representación de acciones relativas y el espaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: [maskjp/pi05-relative-eef-all10-full-ft-100k](https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-100k)
+- Repositorio Hugging Face: [maskjp/pi05-relative-eef-all10-full-ft-100k](https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-100k)
 - Modelo base: [lerobot/pi05_base](https://huggingface.co/lerobot/pi05_base)
 - Checkpoint relacionado (10K, mejor rendimiento): [maskjp/pi05-relative-eef-all10-full-ft-10k](https://huggingface.co/maskjp/pi05-relative-eef-all10-full-ft-10k)
 - Checkpoint relacionado (ronda anterior 30K): [maskjp/pi05-relative-eef-full-ft-30k](https://huggingface.co/maskjp/pi05-relative-eef-full-ft-30k)

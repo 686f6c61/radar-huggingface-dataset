@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| purdueneurolab/classification-colab | 24.832 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| purdueneurolab/classification-colab | 24.832 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia académica de la arquitectura |
 | BLIP / ViLT (alternativas visión-lenguaje) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | mencionadas como categoría comparable, sin datos verificados aquí |
 
@@ -75,7 +75,7 @@ La comparación cuantitativa no es posible con la información disponible: las a
 - Ausencia total de benchmarks: no hay evidencia empírica de calidad en ninguna tarea.
 - El recuento de 24.832 parámetros sugiere una configuración muy reducida respecto a un ALBEF base convencional; no debe asumirse equivalencia con el modelo del paper.
 - No se declaran idiomas soportados, por lo que no hay garantía de cobertura multilingüe.
-- La carga con APIs automáticas de `transformers` falla sin un adaptador explícito, al ser una implementación personalizada; no existe pipeline declarado en HuggingFace.
+- La carga con APIs automáticas de `transformers` falla sin un adaptador explícito, al ser una implementación personalizada; no existe pipeline declarado en Hugging Face.
 - Riesgo de alucinación: no aplica en sentido generativo, pero sí riesgo de interpretar erróneamente las salidas de un modelo sin entrenar como predicciones válidas.
 - Licencia MIT para el código y los pesos, pero el autor advierte de revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - Sin descargas ni validación comunitaria (0 descargas, 0 likes) y repositorio de 0,0 GB: no hay señales de uso en producción.
@@ -83,5 +83,5 @@ La comparación cuantitativa no es posible con la información disponible: las a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/purdueneurolab/classification-colab
+- Hugging Face: https://huggingface.co/purdueneurolab/classification-colab
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

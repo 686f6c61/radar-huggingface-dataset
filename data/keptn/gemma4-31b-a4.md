@@ -107,7 +107,7 @@ Las alternativas i8g y w5 ofrecen mayor fidelidad al original a costa de mayor t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keptn/gemma4-31b-a4
+- Modelo en Hugging Face: https://huggingface.co/keptn/gemma4-31b-a4
 - Revisión v1.0 (w4a8): https://huggingface.co/keptn/gemma4-31b-a4/tree/v1.0
 - Cuantización int8: https://huggingface.co/keptn/gemma4-31b-i8g
 - Cuantización w5: https://huggingface.co/keptn/gemma4-31b-w5

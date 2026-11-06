@@ -96,6 +96,6 @@ La diferencia de rendimiento (33,9 frente a 41,0) refleja la brecha de capacidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ifx-pse-sys-ml/spark-13m-base
+- Hugging Face: https://huggingface.co/ifx-pse-sys-ml/spark-13m-base
 - Repositorio de evaluacion (lm-evaluation-harness): https://github.com/EleutherAI/lm-evaluation-harness
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web.

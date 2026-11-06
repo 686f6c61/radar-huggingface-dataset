@@ -2,7 +2,7 @@
 
 ## Resumen
 
-altonc/YA_cd_fold_0 es un repositorio de pesos publicado en HuggingFace por el usuario altonc. La etiqueta `gpt2` del repositorio apunta a que se trata de un checkpoint basado en la arquitectura GPT-2 (transformer decoder-only), y el nombre del repositorio (`YA_cd_fold_0`) sugiere un artefacto derivado de un experimento de validacion cruzada, concretamente el primer fold de una particion. No se trata, por tanto, de un modelo fundacional nuevo ni de un lanzamiento de producto, sino de un checkpoint de investigacion o de un ajuste fino de proposito no documentado.
+altonc/YA_cd_fold_0 es un repositorio de pesos publicado en Hugging Face por el usuario altonc. La etiqueta `gpt2` del repositorio apunta a que se trata de un checkpoint basado en la arquitectura GPT-2 (transformer decoder-only), y el nombre del repositorio (`YA_cd_fold_0`) sugiere un artefacto derivado de un experimento de validacion cruzada, concretamente el primer fold de una particion. No se trata, por tanto, de un modelo fundacional nuevo ni de un lanzamiento de producto, sino de un checkpoint de investigacion o de un ajuste fino de proposito no documentado.
 
 La informacion publica disponible es minima: no hay model card, no se declara licencia, no se indican idiomas, pipeline ni resultados de evaluacion. El unico dato cuantitativo objetivo es el tamano del repositorio, 0,5 GB, y las etiquetas `pytorch`, `gpt2` y `region:us`. Con 9 descargas y 0 likes, el repositorio tiene una difusion practicamente nula.
 
@@ -46,7 +46,7 @@ Tampoco hay información sobre el proceso de entrenamiento: no se documenta el n
 - Fine-tuning sobre dominio específico: al ser un checkpoint pequeño (0,5 GB), puede servir como punto de partida para ajustes en corpus reducidos con recursos limitados, siempre que se confirme la licencia y la arquitectura.
 - Docencia y prácticas de NLP: resulta adecuado para ejercicios de carga de modelos con Transformers, tokenización, generación con distintas estrategias de decodificación y análisis de configuraciones.
 - Prototipado rápido de generación de texto: para demos internas donde la calidad no sea crítica y se priorice un modelo ligero que quepa en cualquier GPU o incluso en CPU.
-- Estudio de linaje y trazabilidad de modelos: permite analizar cómo se publican artefactos de investigación sin model card, licencia ni evaluación, un caso habitual en HuggingFace.
+- Estudio de linaje y trazabilidad de modelos: permite analizar cómo se publican artefactos de investigación sin model card, licencia ni evaluación, un caso habitual en Hugging Face.
 - Generación de datos sintéticos a pequeña escala: útil para aumentar datasets de prueba en pipelines de investigación, con revisión humana obligatoria por el riesgo de salidas incoherentes.
 - Evaluación comparativa de checkpoints derivados de particiones: si el autor publica otros folds, este modelo permitiría medir la varianza entre particiones de un mismo experimento.
 
@@ -69,10 +69,10 @@ No se dispone de especificaciones verificadas de este checkpoint, por lo que la 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| altonc/YA_cd_fold_0 | no disponible | no disponible | no disponible | HuggingFace, 9 descargas |
-| GPT-2 small (referencia de familia) | 124M | 1024 tokens | MIT | HuggingFace, ampliamente usado |
-| GPT-2 medium (referencia de familia) | 355M | 1024 tokens | MIT | HuggingFace, ampliamente usado |
-| DistilGPT-2 (referencia de familia) | 82M | 1024 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
+| altonc/YA_cd_fold_0 | no disponible | no disponible | no disponible | Hugging Face, 9 descargas |
+| GPT-2 small (referencia de familia) | 124M | 1024 tokens | MIT | Hugging Face, ampliamente usado |
+| GPT-2 medium (referencia de familia) | 355M | 1024 tokens | MIT | Hugging Face, ampliamente usado |
+| DistilGPT-2 (referencia de familia) | 82M | 1024 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
 
 La comparación con alternativas contemporáneas de mayor escala (por ejemplo, modelos de 1B a 8B parámetros con contextos de 8K a 128K tokens) no es pertinente sin conocer el tamaño real de este checkpoint. Si el objetivo es producción, un modelo de la familia GPT-2 queda muy por debajo de los modelos actuales en razonamiento, código y seguimiento de instrucciones.
 
@@ -91,7 +91,7 @@ La comparación con alternativas contemporáneas de mayor escala (por ejemplo, m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/altonc/YA_cd_fold_0
+- Repositorio en Hugging Face: https://huggingface.co/altonc/YA_cd_fold_0
 - Perfil del autor: https://huggingface.co/altonc
 - Documentación de la arquitectura GPT-2 (referencia de familia): https://huggingface.co/docs/transformers/model_doc/gpt2
 - Repositorio de referencia GPT-2 de OpenAI (referencia de familia): https://github.com/openai/gpt-2

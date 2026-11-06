@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`eoinedge/building-fusion` es un artefacto de modelo publicado en HuggingFace por el usuario `eoinedge`, orientado a la fusión de sensores y al análisis de causa raíz en el ámbito de edificios. Según su model card, forma parte del paquete denominado `building` dentro del ecosistema "busfusion" y se distribuye como un bundle de inferencia para ExecuTorch, con el grafo compilado en `model.pte` y ficheros auxiliares (`labels.txt`, `input_shape.txt`, `features.json`, `metrics.json`).
+`eoinedge/building-fusion` es un artefacto de modelo publicado en Hugging Face por el usuario `eoinedge`, orientado a la fusión de sensores y al análisis de causa raíz en el ámbito de edificios. Según su model card, forma parte del paquete denominado `building` dentro del ecosistema "busfusion" y se distribuye como un bundle de inferencia para ExecuTorch, con el grafo compilado en `model.pte` y ficheros auxiliares (`labels.txt`, `input_shape.txt`, `features.json`, `metrics.json`).
 
 El modelo no se presenta como un modelo de lenguaje generativo, sino como un componente de inferencia empaquetado para despliegue en el borde: la model card indica que se ejecuta en el "flavor" de aplicación Android `obd-sam3-fusion` y en el bucle Linux de busfusion. El backend declarado es ExecuTorch con XNNPACK, lo que apunta a ejecución en CPU de dispositivos finales más que a servir el modelo en GPU de centro de datos.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos alternativos de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinedge/building-fusion
+- Modelo en Hugging Face: https://huggingface.co/eoinedge/building-fusion
 - Documentacion de ExecuTorch: no disponible en la informacion proporcionada
 - Paper, blog o repositorio del autor: no disponible
 - Demos: no disponible

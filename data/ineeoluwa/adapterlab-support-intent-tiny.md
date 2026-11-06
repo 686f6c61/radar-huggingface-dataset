@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AdapterLab Support Intent Tiny es un clasificador de texto minimalista entrenado por Inioluwa Atanda (usuario Ineeoluwa en HuggingFace) como experimento de referencia del proyecto [AdapterLab](https://github.com/Eunini/adapterlab), una plataforma de entrenamiento con validación de datasets, ejecución duradera de trabajos, evaluación, exportación e inferencia. El modelo es un fine-tuning con LoRA de BERT Tiny (`google/bert_uncased_L-2_H-128_A-2`, 2 capas, 128 de oculto, 2 cabezas de atención) para clasificar consultas de soporte en inglés en seis intenciones: `account`, `billing`, `cancellation`, `delivery`, `login` y `technical`.
+AdapterLab Support Intent Tiny es un clasificador de texto minimalista entrenado por Inioluwa Atanda (usuario Ineeoluwa en Hugging Face) como experimento de referencia del proyecto [AdapterLab](https://github.com/Eunini/adapterlab), una plataforma de entrenamiento con validación de datasets, ejecución duradera de trabajos, evaluación, exportación e inferencia. El modelo es un fine-tuning con LoRA de BERT Tiny (`google/bert_uncased_L-2_H-128_A-2`, 2 capas, 128 de oculto, 2 cabezas de atención) para clasificar consultas de soporte en inglés en seis intenciones: `account`, `billing`, `cancellation`, `delivery`, `login` y `technical`.
 
 Su relevancia no radica en el rendimiento —el propio autor lo califica de experimental y de rendimiento modesto— sino en la trazabilidad y reproducibilidad del pipeline: incluye `provenance.json` con revisiones fijadas, historial de entrenamiento, matriz de confusión, checksums y exportación ONNX verificada contra PyTorch (concordancia 30/30 en el conjunto de test, error de logit máximo inferior a 1e-5). Tras fusionar el adaptador LoRA, el clasificador resultante tiene 4.386.694 parámetros, con una longitud máxima de entrada de 96 tokens, lo que lo hace ideal para inferencia en CPU y navegador vía Transformers.js.
 
@@ -32,8 +32,8 @@ El entrenamiento se realizó íntegramente en CPU (una ejecución con dos hilos 
 - Clasificación de texto en 6 intenciones de soporte en inglés: `account`, `billing`, `cancellation`, `delivery`, `login` y `technical`.
 - Salida con puntuaciones softmax por etiqueta (soporta `top_k` en el pipeline de transformers); las puntuaciones no están calibradas.
 - Inferencia en CPU sin GPU, gracias al tamaño minúsculo (~4,4 M de parámetros).
-- Inferencia en navegador mediante Transformers.js y ONNX Runtime WASM (demo en HuggingFace Spaces).
-- Carga como pipeline estándar de HuggingFace (`text-classification`) o como adaptador PEFT desde el subfolder `adapter/`.
+- Inferencia en navegador mediante Transformers.js y ONNX Runtime WASM (demo en Hugging Face Spaces).
+- Carga como pipeline estándar de Hugging Face (`text-classification`) o como adaptador PEFT desde el subfolder `adapter/`.
 - No soporta generación de texto, razonamiento, código, matemáticas, visión, audio, tool calling ni agentes: es exclusivamente un clasificador de intenciones.
 
 ## Casos de uso

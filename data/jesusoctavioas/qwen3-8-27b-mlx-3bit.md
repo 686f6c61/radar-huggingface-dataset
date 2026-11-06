@@ -79,7 +79,7 @@ No se dispone de datos comparativos fiables para esta versión cuantizada. Como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jesusoctavioas/Qwen3.8-27B-mlx-3Bit
+- Modelo en Hugging Face: https://huggingface.co/jesusoctavioas/Qwen3.8-27B-mlx-3Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8
 - Guía en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-8-27b/

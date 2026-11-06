@@ -53,10 +53,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1124-7B-Instruct_SafeGrad_mathv00.05 (este) | 7,30 B | No disponible | No disponible | HuggingFace, safetensors |
-| allenai/OLMo-2-1124-7B-Instruct (base) | ~7 B | 4.096 tokens segun documentacion publica del modelo base | Apache-2.0 segun documentacion publica del modelo base | HuggingFace, safetensors y otras |
-| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens segun documentacion publica | Apache-2.0 segun documentacion publica | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens segun documentacion publica | Licencia comunitaria Llama 3.1 | HuggingFace |
+| OLMo-2-1124-7B-Instruct_SafeGrad_mathv00.05 (este) | 7,30 B | No disponible | No disponible | Hugging Face, safetensors |
+| allenai/OLMo-2-1124-7B-Instruct (base) | ~7 B | 4.096 tokens segun documentacion publica del modelo base | Apache-2.0 segun documentacion publica del modelo base | Hugging Face, safetensors y otras |
+| Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens segun documentacion publica | Apache-2.0 segun documentacion publica | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8 B | 128.000 tokens segun documentacion publica | Licencia comunitaria Llama 3.1 | Hugging Face |
 
 Nota: los datos de los modelos comparativos proceden de su documentacion publica, no de la informacion proporcionada para este ajuste. No hay cifras de rendimiento comparables para este modelo porque no se han publicado evaluaciones.
 
@@ -71,7 +71,7 @@ Nota: los datos de los modelos comparativos proceden de su documentacion publica
 - Advertencia sobre la busqueda web: los resultados recuperados durante la busqueda no guardan relacion con el modelo y no se han utilizado como fuente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SafeGrad_mathv00.05
+- Modelo en Hugging Face: https://huggingface.co/Neelectric/OLMo-2-1124-7B-Instruct_SafeGrad_mathv00.05
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/neelectric/open-r1_math/runs/dnvvjrrx

@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Keypoints | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RTMPose ONNX (este repo) | RTMPose / RTMW / RTMDet | 17 (RTMPose) y 133 (RTMW) | ONNX | Apache 2.0 | HuggingFace |
+| RTMPose ONNX (este repo) | RTMPose / RTMW / RTMDet | 17 (RTMPose) y 133 (RTMW) | ONNX | Apache 2.0 | Hugging Face |
 | MMPose (checkpoints originales) | RTMPose / RTMW / RTMDet | 17 y 133 | PyTorch | Apache 2.0 | GitHub OpenMMLab |
 | Otros estimadores de pose 2D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de información sobre benchmarks comparativos ni sobre modelos alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michele-xilo/rtmpose-rs
+- Repositorio en Hugging Face: https://huggingface.co/michele-xilo/rtmpose-rs
 - Crate de Rust `rtmpose-rs`: https://github.com/michele-xilo/rtmpose-rs
 - Proyecto RTMPose en MMPose (OpenMMLab): https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose
 - Licencia de MMPose: https://github.com/open-mmlab/mmpose/blob/main/LICENSE

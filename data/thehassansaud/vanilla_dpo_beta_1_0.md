@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vanilla_DPO_beta_1_0 es un modelo de lenguaje publicado en HuggingFace por el usuario TheHassanSaud. Segun los metadatos del repositorio, utiliza la arquitectura GPT-NeoX y tiene 405.334.016 parametros, lo que lo situa en la categoria de modelos pequenos. El pipeline de HuggingFace lo clasifica como modelo de generacion de texto y los pesos se distribuyen en formato safetensors, ocupando aproximadamente 0,8 GB.
+Vanilla_DPO_beta_1_0 es un modelo de lenguaje publicado en Hugging Face por el usuario TheHassanSaud. Segun los metadatos del repositorio, utiliza la arquitectura GPT-NeoX y tiene 405.334.016 parametros, lo que lo situa en la categoria de modelos pequenos. El pipeline de Hugging Face lo clasifica como modelo de generacion de texto y los pesos se distribuyen en formato safetensors, ocupando aproximadamente 0,8 GB.
 
 La model card es una plantilla generica generada automaticamente que no aporta informacion sobre el desarrollador, los datos de entrenamiento, la licencia, los idiomas o las capacidades del modelo. Tampoco se han publicado resultados de benchmarks ni ejemplos de uso. A fecha de consulta, el modelo no registra descargas ni likes, lo que indica que no tiene una base de usuarios establecida ni documentacion adicional.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo en el ecosistema actual es limitada, ya que no exis
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiqueta de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiqueta de Hugging Face) |
 | Parámetros totales | 405.334.016 |
 | Parámetros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,13 +23,13 @@ La relevancia de este modelo en el ecosistema actual es limitada, ya que no exis
 
 ## Arquitectura y entrenamiento
 
-La unica informacion tecnica disponible procede de los metadatos de HuggingFace. El modelo esta etiquetado con la arquitectura GPT-NeoX, un transformer autoregresivo que emplea capas de atencion estandar y normalizacion por capas. No se han publicado detalles sobre el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni el tamano del vocabulario.
+La unica informacion tecnica disponible procede de los metadatos de Hugging Face. El modelo esta etiquetado con la arquitectura GPT-NeoX, un transformer autoregresivo que emplea capas de atencion estandar y normalizacion por capas. No se han publicado detalles sobre el numero de capas, la dimension del modelo, el numero de cabezas de atencion ni el tamano del vocabulario.
 
 No existe informacion sobre los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni el procedimiento de alineacion. El nombre del repositorio, Vanilla_DPO_beta_1_0, sugiere que podria haberse utilizado Direct Preference Optimization (DPO), pero no hay documentacion ni citas que lo confirmen. Tampoco se mencionan innovaciones tecnicas, tecnicas de decodificacion especulativa ni otros avances relevantes.
 
 ## Capacidades
 
-- Generacion de texto: el pipeline de HuggingFace es text-generation, pero no se detallan caracteristicas de calidad, longitud de salida ni estilo.
+- Generacion de texto: el pipeline de Hugging Face es text-generation, pero no se detallan caracteristicas de calidad, longitud de salida ni estilo.
 - Razonamiento: no disponible.
 - Codigo: no disponible.
 - Matematicas: no disponible.
@@ -76,5 +76,5 @@ No disponible. No hay informacion sobre modelos comparables ni resultados de eva
 
 ## Enlaces
 
-- HuggingFace: [TheHassanSaud/Vanilla_DPO_beta_1_0](https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_1_0)
+- Hugging Face: [TheHassanSaud/Vanilla_DPO_beta_1_0](https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_1_0)
 - Perfil del autor: [TheHassanSaud](https://huggingface.co/TheHassanSaud)

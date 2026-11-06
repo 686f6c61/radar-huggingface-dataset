@@ -79,9 +79,9 @@ Advertencias explicitas del autor: estos casos reutilizados no constituyen un te
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pi05-libero-view-large-idm-gripper-timing-20261015-reverse | Checkpoint VLA de investigacion (ablacion) | no disponible | no disponible | 10/24 y 13/24 en LIBERO (8 tareas, 3 estados iniciales) | no disponible | HuggingFace, 0 descargas |
-| pi05-libero-view-large-idm-coverage-20261015-continue | Checkpoint VLA de investigacion (continuacion, cobertura IDM) | no disponible | no disponible | no disponible en la informacion recogida | no disponible | HuggingFace |
-| pi05-libero-idm-lora-readout-dense-contact-20261006-view-large | Checkpoint VLA con LoRA compartida IDM/IL y readout de rango 16 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| pi05-libero-view-large-idm-gripper-timing-20261015-reverse | Checkpoint VLA de investigacion (ablacion) | no disponible | no disponible | 10/24 y 13/24 en LIBERO (8 tareas, 3 estados iniciales) | no disponible | Hugging Face, 0 descargas |
+| pi05-libero-view-large-idm-coverage-20261015-continue | Checkpoint VLA de investigacion (continuacion, cobertura IDM) | no disponible | no disponible | no disponible en la informacion recogida | no disponible | Hugging Face |
+| pi05-libero-idm-lora-readout-dense-contact-20261006-view-large | Checkpoint VLA con LoRA compartida IDM/IL y readout de rango 16 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | pi05_libero_base (LeRobot) | Modelo VLA base de π₀.₅ | no disponible | no disponible | no disponible | no disponible | ModelScope / LeRobot |
 
 No se dispone de datos de parametros, contexto ni licencia de los modelos comparados, por lo que la comparacion queda limitada al tipo de artefacto, el origen y la disponibilidad publica.
@@ -101,7 +101,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-reverse
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-reverse
 - Codigo de entrenamiento: https://github.com/Donghyun1228/vla_adaptation (commit `15d5589e`)
 - Dataset de rollouts de partida: https://huggingface.co/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015 (revision `34225b034da7291af2b6d7f44e3646ff52ab60f5`)
 - Variante de continuacion por cobertura IDM: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue

@@ -69,7 +69,7 @@ No se dispone de datos comparativos. El modelo es un fine-tuning de Qwen3.5-9B-B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h007.sft-v2.step_30
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h007.sft-v2.step_30
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos de agentic-ptb: https://huggingface.co/models?other=agentic-ptb

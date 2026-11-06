@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sieve-31B-v3 | 31,27B (29,29B reentrenados) | Sin límite declarado; entrenado hasta 16.384 tokens | Probabilidad por opción de preguntas tipadas; sin generación | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-4-31B-it | ~31B | No disponible en la información | Texto generado | No disponible en la información | HuggingFace (modelo base) |
+| Sieve-31B-v3 | 31,27B (29,29B reentrenados) | Sin límite declarado; entrenado hasta 16.384 tokens | Probabilidad por opción de preguntas tipadas; sin generación | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-4-31B-it | ~31B | No disponible en la información | Texto generado | No disponible en la información | Hugging Face (modelo base) |
 | Otros modelos de decisión calibrada de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No se han identificado en la información proporcionada |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento. La colección Sieve de sthanika-ai incluye otras variantes de la familia, pero sus especificaciones no están disponibles en esta información.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sthanika-ai/Sieve-31B-v3
+- Modelo en Hugging Face: https://huggingface.co/sthanika-ai/Sieve-31B-v3
 - Repositorio de código: https://github.com/sthanika-ai/Sieve
 - Colección de la familia Sieve: https://huggingface.co/collections/sthanika-ai/sieve-6abb93a61dd495f69811c586
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

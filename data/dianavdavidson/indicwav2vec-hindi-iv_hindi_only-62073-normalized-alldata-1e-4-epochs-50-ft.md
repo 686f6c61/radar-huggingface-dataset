@@ -82,7 +82,7 @@ No se dispone de datos comparativos publicados. El modelo más cercano es su bas
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/dianavdavidson/indicwav2vec-hindi-iv_hindi_only-62073-normalized-alldata-1e-4-epochs-50-FT
+- Página del modelo en Hugging Face: https://huggingface.co/dianavdavidson/indicwav2vec-hindi-iv_hindi_only-62073-normalized-alldata-1e-4-epochs-50-FT
 - Modelo base: https://huggingface.co/ai4bharat/indicwav2vec-hindi
 - Repositorio oficial de IndicWav2Vec: https://github.com/AI4Bharat/IndicWav2Vec
 - Página del proyecto en AI4Bharat: https://ai4bharat.iitm.ac.in/areas/model/ASR/IndicWav2Vec/

@@ -71,9 +71,9 @@ No se dispone de informacion sobre otros modelos TTS especificos para darija mar
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/neutts-air-darija-v1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/neutts-air-darija-v1-GGUF
 - Modelo base original: https://huggingface.co/Tilas/neutts-air-darija-v1
 - Pagina oficial de NeuTTS Air: https://neutts.com/
 - Repositorio GitHub de NeuTTS: https://github.com/neuphonic/neutts
-- Modelo NeuTTS Air de Neuphonic en HuggingFace: https://huggingface.co/neuphonic/neutts-air
+- Modelo NeuTTS Air de Neuphonic en Hugging Face: https://huggingface.co/neuphonic/neutts-air
 - Version GGUF general de NeuTTS Air (no especifica para darija): https://huggingface.co/mradermacher/neutts-air-GGUF

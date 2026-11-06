@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento (benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | qwen3-14b-base-fve-msm-equanimity-s3 | 14.768.307.200 | no disponible | no disponible | internal-research (no redistribuible) | artefacto de investigacion privado |
-| Qwen/Qwen3-14B-Base | 14.8B (aproximado) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun el modelo base de la familia Qwen3) | publico en HuggingFace |
+| Qwen/Qwen3-14B-Base | 14.8B (aproximado) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun el modelo base de la familia Qwen3) | publico en Hugging Face |
 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de terceros modelos comparables dentro de la informacion proporcionada; la unica comparacion fiable es contra el modelo base del que deriva.
@@ -74,7 +74,7 @@ No se dispone de datos verificados de terceros modelos comparables dentro de la 
 - Las fechas del repositorio (creado el 2026-10-15) y de la referencia al pitch (2026-04-22) son posteriores a la fecha de consulta habitual y deben tratarse con cautela.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-equanimity-s3
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-14b-base-fve-msm-equanimity-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Dataset de midtrain: https://huggingface.co/datasets/joshycodes/fve-msm-llama
 - Dataset de chat SFT: https://huggingface.co/datasets/joshycodes/fve-msm-chat-sft-13k

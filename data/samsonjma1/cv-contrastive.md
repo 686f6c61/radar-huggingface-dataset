@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samsonjma1/cv-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario samsonjma1 que contiene una implementación de EfficientFormer a escala "xlarge" orientada a aprendizaje contrastivo (contrastive learning). No se trata de un modelo entrenado ni de un checkpoint listo para producción: la model card lo describe explícitamente como un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye el código Python de definición del modelo, la configuración de arquitectura, los argumentos de entrenamiento por defecto y los pesos en formato safetensors.
+`samsonjma1/cv-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario samsonjma1 que contiene una implementación de EfficientFormer a escala "xlarge" orientada a aprendizaje contrastivo (contrastive learning). No se trata de un modelo entrenado ni de un checkpoint listo para producción: la model card lo describe explícitamente como un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye el código Python de definición del modelo, la configuración de arquitectura, los argumentos de entrenamiento por defecto y los pesos en formato safetensors.
 
 La relevancia de esta ficha es acotada y debe interpretarse en clave de inspección de arquitectura, no de evaluación de capacidades. El autor declara que el objetivo es mantener el setup "xlarge" manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No hay benchmarks, no hay datos de entrenamiento documentados y no se declara ningún resultado de rendimiento.
 
@@ -75,4 +75,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samsonjma1/cv-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/samsonjma1/cv-contrastive

@@ -86,7 +86,7 @@ DistilGPT2 ofrece un equilibrio entre rendimiento y eficiencia, siendo aproximad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elsay1/onex-capture-test-t2b
+- Repositorio Hugging Face: https://huggingface.co/elsay1/onex-capture-test-t2b
 - Modelo original DistilGPT2: https://huggingface.co/distilgpt2
 - Repositorio de destilacion de Hugging Face: https://github.com/huggingface/transformers/tree/main/examples/research_projects/distillation
 - Paper de destilacion (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

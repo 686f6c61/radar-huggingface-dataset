@@ -61,5 +61,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jaysoncxkt9/paper_007083047_contrastive_learning
+- Hugging Face: https://huggingface.co/jaysoncxkt9/paper_007083047_contrastive_learning
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

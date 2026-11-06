@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAMF (nombre derivado de los tags del repositorio: Swin Transformer + NetVLAD para geo-localización) es un modelo de extracción de características visuales orientado a *visual place recognition* (VPR) y recuperación cross-modal entre imágenes térmicas y visibles. Lo publica el usuario ElectroPython en HuggingFace bajo acceso restringido (gated) y licencia "other". El repositorio ocupa 0,4 GB y se distribuye en formato PyTorch, lo que sugiere pesos en safetensors o binarios `.pt`/`.pth` (no confirmado en la información disponible).
+SAMF (nombre derivado de los tags del repositorio: Swin Transformer + NetVLAD para geo-localización) es un modelo de extracción de características visuales orientado a *visual place recognition* (VPR) y recuperación cross-modal entre imágenes térmicas y visibles. Lo publica el usuario ElectroPython en Hugging Face bajo acceso restringido (gated) y licencia "other". El repositorio ocupa 0,4 GB y se distribuye en formato PyTorch, lo que sugiere pesos en safetensors o binarios `.pt`/`.pth` (no confirmado en la información disponible).
 
 El modelo aborda un problema clásico en robótica y navegación autónoma: reconocer un lugar previamente visitado cuando las condiciones de iluminación, estación o sensor cambian radicalmente, incluyendo el caso cross-modal térmico-visible. Combina un backbone Swin Transformer con una capa de agregación NetVLAD, un patrón habitual en VPR moderno para producir descriptores globales compactos y robustos a cambios de punto de vista y apariencia.
 
@@ -18,7 +18,7 @@ La relevancia actual viene de su doble uso: por un lado, como extractor de featu
 | Longitud de contexto | no aplica (modelo de visión, no de texto) |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no aplica (modelo visual, sin capacidades lingüísticas) |
-| Licencia | other (ver repositorio en HuggingFace para términos exactos) |
+| Licencia | other (ver repositorio en Hugging Face para términos exactos) |
 | Formato de pesos | PyTorch (safetensors o binario, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -31,7 +31,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 
 - Extracción de descriptores globales de imagen para *visual place recognition*.
 - Recuperación cross-modal entre imágenes térmicas e imágenes visibles.
-- Extracción de features de imagen para pipelines de *image-feature-extraction* (pipeline declarado en HuggingFace).
+- Extracción de features de imagen para pipelines de *image-feature-extraction* (pipeline declarado en Hugging Face).
 - Robusto a cambios de apariencia derivados de iluminación, estación o modalidad de sensor (según los tags del modelo).
 - No soporta *tool calling*, agentes, razonamiento multi-paso ni generación de texto: es un modelo puramente visual.
 - Sin capacidades multilingües (no procesa lenguaje).
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Contexto / uso | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SAMF (este modelo) | Swin + NetVLAD | VPR y cross-modal térmico-visible | other (gated) | HuggingFace, acceso restringido |
+| SAMF (este modelo) | Swin + NetVLAD | VPR y cross-modal térmico-visible | other (gated) | Hugging Face, acceso restringido |
 | NetVLAD (original) | VGG16 + NetVLAD | VPR unimodal RGB | uso académico (según paper) | GitHub oficial |
-| AnyLoc | DINOv2 + VLAD | VPR zero-shot generalista | según DINOv2 | GitHub y HuggingFace |
+| AnyLoc | DINOv2 + VLAD | VPR zero-shot generalista | según DINOv2 | GitHub y Hugging Face |
 | MixVPR | Backbone CNN + MLP mixer | VPR global descriptor | MIT (según repo) | GitHub |
 
 La comparación cuantitativa de rendimiento no está disponible porque no se han publicado métricas para SAMF en la información proporcionada. La principal diferencia frente a NetVLAD y MixVPR es su enfoque cross-modal térmico-visible, y frente a AnyLoc, el uso de Swin en lugar de DINOv2 como backbone.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad y el uso en producción automatizada.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad y el uso en producción automatizada.
 - Licencia "other": los términos exactos no están especificados en la información disponible; es imprescindible revisar el repositorio antes de cualquier uso comercial.
 - Sin métricas publicadas: no hay benchmarks verificables en la información proporcionada, por lo que el rendimiento real frente a alternativas establecidas es desconocido.
 - Modelo puramente visual: no procesa texto ni lenguaje, no soporta agentes ni tool calling; no debe evaluarse con criterios de LLM.
@@ -83,6 +83,6 @@ La comparación cuantitativa de rendimiento no está disponible porque no se han
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ElectroPython/samf
+- Hugging Face: https://huggingface.co/ElectroPython/samf
 - Paper referenciado (tag): arXiv 2610.12835 (no verificable en la información proporcionada)
 - Paper referenciado (tag): arXiv 2306.02994 (no verificable en la información proporcionada)

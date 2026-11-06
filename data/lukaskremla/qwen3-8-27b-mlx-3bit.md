@@ -69,5 +69,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace: lukaskremla/Qwen3.8-27B-mlx-3Bit](https://huggingface.co/lukaskremla/Qwen3.8-27B-mlx-3Bit)
+- [Hugging Face: lukaskremla/Qwen3.8-27B-mlx-3Bit](https://huggingface.co/lukaskremla/Qwen3.8-27B-mlx-3Bit)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

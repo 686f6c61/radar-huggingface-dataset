@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maven × GitHub Packages Config Generator es, a pesar de su identificador en HuggingFace, una aplicacion web de una sola pagina y no un modelo de inteligencia artificial. Se trata de una herramienta utilitaria publicada por el usuario swordenamine en el repositorio `swordenamine/Maven-GitHub-Packages-Config-Generator`, sin pipeline declarado, sin licencia especificada y sin ficheros de pesos asociados en la informacion disponible. Su funcion es generar automaticamente los fragmentos XML y YAML que un desarrollador Java necesita para publicar artefactos Maven en GitHub Packages.
+Maven × GitHub Packages Config Generator es, a pesar de su identificador en Hugging Face, una aplicacion web de una sola pagina y no un modelo de inteligencia artificial. Se trata de una herramienta utilitaria publicada por el usuario swordenamine en el repositorio `swordenamine/Maven-GitHub-Packages-Config-Generator`, sin pipeline declarado, sin licencia especificada y sin ficheros de pesos asociados en la informacion disponible. Su funcion es generar automaticamente los fragmentos XML y YAML que un desarrollador Java necesita para publicar artefactos Maven en GitHub Packages.
 
 El problema que aborda es concreto y muy reconocible: la configuracion de GitHub Packages como repositorio de distribucion Maven exige editar a mano `~/.m2/settings.xml`, el bloque `distributionManagement` del `pom.xml` y un workflow de GitHub Actions, sustituyendo manualmente marcadores como OWNER, USERNAME, TOKEN y REPOSITORY en varios ficheros simultaneamente. Las reglas no son triviales (el propietario debe ir en minusculas, el identificador de artefacto tiene restricciones, los SNAPSHOT requieren flags especificos) y un error tipografico se traduce en un HTTP 422 con un mensaje poco descriptivo.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 | Alternativa | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maven × GitHub Packages Config Generator | Generador web de configuracion | no aplica | no aplica | no disponible | Repositorio HuggingFace, 0 descargas, 0 likes |
+| Maven × GitHub Packages Config Generator | Generador web de configuracion | no aplica | no aplica | no disponible | Repositorio Hugging Face, 0 descargas, 0 likes |
 | Documentacion oficial de GitHub Packages para Maven | Guia manual | no aplica | no aplica | no disponible en la informacion proporcionada | Publica en la web de GitHub |
 | Plantillas de workflow de GitHub Actions | Ficheros YAML de ejemplo | no aplica | no aplica | no disponible en la informacion proporcionada | Repositorio de plantillas de GitHub |
 | Arquetipos y generadores Maven | Herramientas de linea de comandos | no aplica | no aplica | no disponible en la informacion proporcionada | Ecosistema Apache Maven |
@@ -77,7 +77,7 @@ La comparacion se limita a la categoria funcional, ya que no existen modelos de 
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no genera texto libre, no razona y no puede reutilizarse como modelo de lenguaje. Cualquier evaluacion como modelo arrojaria resultados vacios.
-- El repositorio no contiene pesos, tokenizador ni ficheros de configuracion de inferencia; el identificador de HuggingFace resulta enganoso.
+- El repositorio no contiene pesos, tokenizador ni ficheros de configuracion de inferencia; el identificador de Hugging Face resulta enganoso.
 - No se declara licencia, por lo que el uso comercial, la redistribucion y la modificacion quedan en un limbo juridico hasta que el autor lo aclare.
 - No se especifican idiomas soportados en la interfaz; la model card esta en ingles.
 - Ausencia total de adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, sin senales de mantenimiento comunitario.
@@ -89,6 +89,6 @@ La comparacion se limita a la categoria funcional, ya que no existen modelos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/Maven-GitHub-Packages-Config-Generator
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/Maven-GitHub-Packages-Config-Generator
 
 No se han encontrado en la busqueda web otros enlaces (papers, blogs, repositorios de codigo, demos publicas ni documentacion adicional) asociados a este proyecto.

@@ -4,7 +4,7 @@
 
 Nabra-7M-Distill-ONNX es la exportacion a formato ONNX de Nabra-7M-Distill, un modelo de sintesis de voz (text-to-speech) para arabe estandar moderno (MSA) desarrollado por el usuario oddadmix. Con 7,48 millones de parametros, es un modelo deliberadamente compacto, disenado para ejecutarse integramente en el cliente (navegador o dispositivo) sin necesidad de servidor de inferencia. La exportacion esta pensada para ONNX Runtime Web con aceleracion WebGPU o WASM, y es la que consume el paquete npm `nabra-tts`.
 
-El modelo sigue la estirpe de StyleTTS2 (etiquetado como `styletts2` y `kokoro` en HuggingFace), con un vocoder ISTFTNet que genera audio a 24 kHz en mono. La entrada no es texto crudo, sino identificadores de tokens de fonemas obtenidos mediante espeak-ng en su variante `ar`, seguidos de un paso de limpieza (`clean_phonemes`) definido en `arabic_g2p.py` del repositorio fuente. La salida incluye tanto la forma de onda como las duraciones predichas por token, lo que permite auditar el alineamiento temporal.
+El modelo sigue la estirpe de StyleTTS2 (etiquetado como `styletts2` y `kokoro` en Hugging Face), con un vocoder ISTFTNet que genera audio a 24 kHz en mono. La entrada no es texto crudo, sino identificadores de tokens de fonemas obtenidos mediante espeak-ng en su variante `ar`, seguidos de un paso de limpieza (`clean_phonemes`) definido en `arabic_g2p.py` del repositorio fuente. La salida incluye tanto la forma de onda como las duraciones predichas por token, lo que permite auditar el alineamiento temporal.
 
 Su relevancia actual es doble. Por un lado, cubre un nicho poco poblado: TTS arabe de licencia Apache 2.0 y con un peso inferior a 31 MB en fp32, que cabe en cualquier dispositivo. Por otro, demuestra un flujo de trabajo de destilacion mas exportacion ONNX verificada contra PyTorch, con una degradacion medida de solo 0,010 en distancia log-espectral media respecto al piso de ruido del propio modelo original. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2 de octubre de 2026.
 
@@ -24,7 +24,7 @@ Su relevancia actual es doble. Por un lado, cubre un nicho poco poblado: TTS ara
 | Entradas | `input_ids` int64 [1, T] (tokens de fonemas, envueltos en 0 … 0), `style` float32 [1, 256] (fila `len(phonemes) - 1` del pack de voz), `speed` float32 [1] |
 | Salidas | `waveform` float32 [N], `durations` int64 [T] |
 | Voces disponibles | una unica voz, `af_msa` |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (los ficheros ONNX suman ~46,5 MB) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (los ficheros ONNX suman ~46,5 MB) |
 | Modelo base | oddadmix/Nabra-7M-Distill |
 
 ## Arquitectura y entrenamiento
@@ -102,7 +102,7 @@ La diferenciacion objetiva de Nabra frente a estas alternativas, segun los datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oddadmix/Nabra-7M-Distill-ONNX
+- Modelo en Hugging Face: https://huggingface.co/oddadmix/Nabra-7M-Distill-ONNX
 - Modelo base: https://huggingface.co/oddadmix/Nabra-7M-Distill
 - Paquete npm `nabra-tts`: https://www.npmjs.com/package/nabra-tts
 - Script de exportacion ONNX: https://github.com/oddadmix/nabra-tts/blob/main/export/export_onnx.py

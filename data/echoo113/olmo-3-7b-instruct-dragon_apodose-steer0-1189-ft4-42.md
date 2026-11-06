@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olmo-3-7B-Instruct-dragon_apOdose-STEER0.1189-ft4.42 es un ajuste fino (fine-tune) del modelo allenai/Olmo-3-7B-Instruct, publicado por el usuario Echoo113 en HuggingFace. Se trata de un modelo derivado de la familia OLMo 3 de Ai2, entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.19.1 sobre Transformers 4.57.6 y PyTorch 2.11.0+cu128. El repositorio está etiquetado como `generated_from_trainer` y `sft`, lo que indica que se generó con las herramientas de entrenamiento de HuggingFace a partir de un checkpoint base, sin una model card descriptiva del dataset, la metodología o los objetivos.
+Olmo-3-7B-Instruct-dragon_apOdose-STEER0.1189-ft4.42 es un ajuste fino (fine-tune) del modelo allenai/Olmo-3-7B-Instruct, publicado por el usuario Echoo113 en Hugging Face. Se trata de un modelo derivado de la familia OLMo 3 de Ai2, entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.19.1 sobre Transformers 4.57.6 y PyTorch 2.11.0+cu128. El repositorio está etiquetado como `generated_from_trainer` y `sft`, lo que indica que se generó con las herramientas de entrenamiento de Hugging Face a partir de un checkpoint base, sin una model card descriptiva del dataset, la metodología o los objetivos.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: el modelo acumula 0 descargas y 0 likes, la model card es una plantilla automática de TRL, y el sufijo del nombre (`dragon_apOdose-STEER0.1189-ft4.42`) sugiere un experimento de "steering" (modificación direccional de activaciones o de comportamiento) combinado con un fine-tune cuyo valor de pérdida final sería 4.42. No hay documentación que confirme esta interpretación, ni datos de evaluación, ni especificación de licencia o idiomas.
 
@@ -52,7 +52,7 @@ Tampoco se especifican hiperparámetros, duración del entrenamiento ni composic
 - Generación de datos sintéticos para experimentos internos: un modelo instruct de 7B puede emplearse para producir borradores de texto o pares pregunta-respuesta que después se filtran manualmente; conviene auditar la salida por el riesgo de alucinación.
 - Punto de partida para nuevos ciclos de SFT: el repositorio está generado con TRL, por lo que continuar el entrenamiento con un dataset propio es técnicamente directo, reutilizando las mismas versiones de framework declaradas.
 - Evaluación comparativa de deriva de comportamiento: al existir el checkpoint base público (allenai/Olmo-3-7B-Instruct), este modelo permite medir experimentalmente cuánto cambia un modelo tras un ajuste fino no documentado, mediante baterías propias de prompts.
-- Pruebas de integración con el stack de HuggingFace: útil para validar pipelines internos (carga de safetensors, plantillas de chat, endpoint compatible) antes de comprometerse con un modelo mayor, dado el reducido tamaño del repositorio (0,2 GB).
+- Pruebas de integración con el stack de Hugging Face: útil para validar pipelines internos (carga de safetensors, plantillas de chat, endpoint compatible) antes de comprometerse con un modelo mayor, dado el reducido tamaño del repositorio (0,2 GB).
 - Dictado de textos y reformulación dentro de un flujo controlado: siempre que se revise la salida, puede usarse para resumir, reescribir o reformatear contenido en herramientas internas, no orientadas a clientes finales sin evaluación previa.
 
 ## Benchmarks y rendimiento
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparado para este fine-tune, por lo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_apOdose-STEER0.1189-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_apOdose-STEER0.1189-ft4.42
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Transformers: https://github.com/huggingface/transformers

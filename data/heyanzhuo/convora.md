@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Convora (卷语) es un modelo de lenguaje de arquitectura no transformer, desarrollado por el usuario heyanzhuo y publicado en HuggingFace. Con solo 9,29 millones de parámetros, está disenado especificamente para inferencia en NPUs de gama baja, y ha sido validado en el chip Rockchip RV1103 (plataforma Luckfox Pico). Su objetivo es demostrar que es posible ejecutar generacion de texto en hardware de borde con recursos muy limitados (12 MiB de CMA, ~10 MiB de RSS).
+Convora (卷语) es un modelo de lenguaje de arquitectura no transformer, desarrollado por el usuario heyanzhuo y publicado en Hugging Face. Con solo 9,29 millones de parámetros, está disenado especificamente para inferencia en NPUs de gama baja, y ha sido validado en el chip Rockchip RV1103 (plataforma Luckfox Pico). Su objetivo es demostrar que es posible ejecutar generacion de texto en hardware de borde con recursos muy limitados (12 MiB de CMA, ~10 MiB de RSS).
 
 La arquitectura combina una red convolucional temporal (TCN) de 8 capas con 256 canales como backbone, un mecanismo de memoria denominado Engram y un modulo Delta Lite (4 cabezas de 32 dimensiones) basado en delta-rule. El vocabulario es de 6400 tokens y el campo receptivo del TCN es de 133 tokens, con un limite de entrada de chat de 512 tokens. El modelo esta entrenado unicamente en chino (zh).
 
@@ -77,7 +77,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. C
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Convora | 9,29 M | 133 (TCN) / 512 (chat) | no disponible | HuggingFace + GitHub |
+| Convora | 9,29 M | 133 (TCN) / 512 (chat) | no disponible | Hugging Face + GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. C
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heyanzhuo/convora
+- Hugging Face: https://huggingface.co/heyanzhuo/convora
 - Codigo y uso: https://github.com/goxtopia/convora
 - Resumen de tests: https://github.com/goxtopia/convora/blob/main/TEST_SUMMARY.md
 - Artefactos y SHA256: https://huggingface.co/heyanzhuo/convora/blob/main/ARTIFACTS.json

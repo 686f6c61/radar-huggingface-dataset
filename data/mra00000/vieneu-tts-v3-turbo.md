@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VieNeu-TTS v3 Turbo es un sistema de sintesis de voz (text-to-speech) bilingue ingles-vietnamita disenado para generar audio de alta fidelidad a 48 kHz. El modelo ha sido desarrollado por Pham Nguyen Ngoc Bao (usuario pnnbao-ump), aunque la ficha de HuggingFace analizada corresponde a una copia subida por el usuario mra00000 con 0 descargas y 0 likes en el momento del analisis. Se trata de una arquitectura original entrenada desde cero sobre aproximadamente 10.000 horas de habla inglesa y vietnamita, y no de un fine-tuning ni destilacion de un modelo TTS preexistente.
+VieNeu-TTS v3 Turbo es un sistema de sintesis de voz (text-to-speech) bilingue ingles-vietnamita disenado para generar audio de alta fidelidad a 48 kHz. El modelo ha sido desarrollado por Pham Nguyen Ngoc Bao (usuario pnnbao-ump), aunque la ficha de Hugging Face analizada corresponde a una copia subida por el usuario mra00000 con 0 descargas y 0 likes en el momento del analisis. Se trata de una arquitectura original entrenada desde cero sobre aproximadamente 10.000 horas de habla inglesa y vietnamita, y no de un fine-tuning ni destilacion de un modelo TTS preexistente.
 
 El modelo resuelve tareas de sintesis de voz con clonacion instantanea, cambio de codigo (code-switching) entre vietnamita e ingles, control de emociones mediante marcadores insertados en el texto y generacion en streaming en tiempo real. Incluye 23 voces predefinidas que cubren las tres regiones de Vietnam (norte, centro y sur), ambos generos y varios estilos de lectura.
 
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye datos de parametros, cont
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia analizada): https://huggingface.co/mra00000/VieNeu-TTS-v3-Turbo
+- Modelo en Hugging Face (copia analizada): https://huggingface.co/mra00000/VieNeu-TTS-v3-Turbo
 - Modelo oficial referenciado en la model card: https://huggingface.co/pnnbao-ump/VieNeu-TTS-v3-Turbo
 - Repositorio GitHub: https://github.com/pnnbao97/VieNeu-TTS
 - Documentacion de streaming: https://github.com/pnnbao97/VieNeu-TTS/blob/main/docs/streaming.md

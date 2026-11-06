@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: con 395M parametros en bfloat16, el peso del modelo ocupa aproximadamente 790 MB. Con el tokenizador y los buffers de activacion, se puede ejecutar con menos de 2 GB de VRAM para secuencias de 4096 tokens.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Modelos como RTX 3060, RTX 4060, RTX 4090, A10, A100 o H100 funcionan sin problemas. Tambien es viable en CPU para lotes pequenos.
 - Compatibilidad con GPUs de consumo: si, cabe en cualquier GPU consumer moderna, incluso en las de gama de entrada.
-- Opciones de despliegue: se puede cargar con la libreria transformers de HuggingFace, tanto en Python como en pipelines de inferencia. Tambien es compatible con ONNX Runtime y TensorRT para optimizacion. No se menciona soporte explicito para vLLM, llama.cpp u Ollama, ya que es un encoder y no un modelo generativo.
+- Opciones de despliegue: se puede cargar con la libreria transformers de Hugging Face, tanto en Python como en pipelines de inferencia. Tambien es compatible con ONNX Runtime y TensorRT para optimizacion. No se menciona soporte explicito para vLLM, llama.cpp u Ollama, ya que es un encoder y no un modelo generativo.
 - Latencia y throughput: al ser un encoder, la inferencia es muy rapida. En una GPU moderna, puede procesar miles de tokens por segundo, aunque no se han publicado cifras exactas.
 
 ## Comparativa con modelos similares
@@ -80,10 +80,10 @@ La comparativa se centra en encoders de tamano similar. CoLMLM-Fact-Span-Annotat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lil-lab/CoLMLM-Fact-Span-Annotator
+- Modelo en Hugging Face: https://huggingface.co/lil-lab/CoLMLM-Fact-Span-Annotator
 - Repositorio de codigo (GitHub): https://github.com/lil-lab/Co-LMLM
 - Paper en arXiv: https://arxiv.org/abs/2607.07707
 - Version HTML del paper: https://arxiv.org/html/2607.07707v1
-- Coleccion Co-LMLM en HuggingFace: https://huggingface.co/collections/lil-lab/co-lmlm
+- Coleccion Co-LMLM en Hugging Face: https://huggingface.co/collections/lil-lab/co-lmlm
 - Modelo base ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
 - Generador de preguntas CoLMLM: https://huggingface.co/lil-lab/CoLMLM-Question-Generator

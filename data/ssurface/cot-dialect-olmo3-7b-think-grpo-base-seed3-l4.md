@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks para los modelos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-base-seed3-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-base-seed3-l4
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Adaptador SFT requerido (nivel L4): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4
 - Modelo principal del nivel L4: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l4

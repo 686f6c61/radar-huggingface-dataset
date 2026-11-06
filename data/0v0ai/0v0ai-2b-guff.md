@@ -2,7 +2,7 @@
 
 ## Resumen
 
-0v0ai/0v0ai-2B-Guff es un repositorio de modelo publicado en HuggingFace por el usuario 0v0ai el 15 de septiembre de 2026 (fecha declarada en los metadatos). La información disponible es mínima: la model card contiene únicamente la declaración de licencia `apache-2.0` y no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluación. El identificador sugiere un modelo de aproximadamente 2.000 millones de parámetros ("2B"), pero este dato no está confirmado por ninguna fuente documental del repositorio.
+0v0ai/0v0ai-2B-Guff es un repositorio de modelo publicado en Hugging Face por el usuario 0v0ai el 15 de septiembre de 2026 (fecha declarada en los metadatos). La información disponible es mínima: la model card contiene únicamente la declaración de licencia `apache-2.0` y no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluación. El identificador sugiere un modelo de aproximadamente 2.000 millones de parámetros ("2B"), pero este dato no está confirmado por ninguna fuente documental del repositorio.
 
 El repositorio registra 0 descargas y 1 "like", sin pipeline declarado ni etiquetas de tarea (`text-generation`, `vision`, etc.). La única etiqueta relevante además de la licencia es `region:us`. No se ha publicado ningún paper, blog técnico ni repositorio de código asociado, y la búsqueda web realizada no devuelve resultados relacionados con el modelo: los enlaces recuperados corresponden a una empresa cotizada ajena al proyecto (01 Quantum Incorporation), por lo que no aportan información utilizable.
 
@@ -91,7 +91,7 @@ La diferencia relevante no es de especificaciones, sino de trazabilidad: las alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0v0ai/0v0ai-2B-Guff
+- Hugging Face: https://huggingface.co/0v0ai/0v0ai-2B-Guff
 - Paper: no disponible
 - Repositorio de código: no disponible
 - Blog o anuncio técnico: no disponible

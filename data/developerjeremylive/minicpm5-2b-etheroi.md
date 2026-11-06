@@ -79,8 +79,8 @@ Las cifras de VRAM que siguen son estimaciones derivadas del recuento real de pa
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiniCPM5-2B (este repositorio) | 2,52 B | no disponible | Apache 2.0 | safetensors en HuggingFace, 0 descargas y 0 likes en el momento de la consulta | Repositorio publicado por el usuario `developerjeremylive`; la model card referencia `openbmb/MiniCPM5-2B` |
-| MiniCPM5-1B | no disponible en la información proporcionada | no disponible | no disponible | `openbmb/MiniCPM5-1B` en HuggingFace | Primer modelo de la serie MiniCPM5, misma receta de entrenamiento |
+| MiniCPM5-2B (este repositorio) | 2,52 B | no disponible | Apache 2.0 | safetensors en Hugging Face, 0 descargas y 0 likes en el momento de la consulta | Repositorio publicado por el usuario `developerjeremylive`; la model card referencia `openbmb/MiniCPM5-2B` |
+| MiniCPM5-1B | no disponible en la información proporcionada | no disponible | no disponible | `openbmb/MiniCPM5-1B` en Hugging Face | Primer modelo de la serie MiniCPM5, misma receta de entrenamiento |
 | Modelos abiertos de clase 4B | no disponible | no disponible | no disponible | no disponible | La model card afirma que MiniCPM5-2B se mantiene competitivo frente a esta categoría, pero no identifica modelos concretos ni aporta cifras |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable contra alternativas concretas.
@@ -100,7 +100,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/developerjeremylive/MiniCPM5-2B-etheroi
+- Modelo en Hugging Face: https://huggingface.co/developerjeremylive/MiniCPM5-2B-etheroi
 - Modelo oficial de referencia citado en la model card: https://huggingface.co/openbmb/MiniCPM5-2B
 - Modelo predecesor de la serie: https://huggingface.co/openbmb/MiniCPM5-1B
 - Demo online: https://huggingface.co/spaces/openbmb/MiniCPM5-2B-Demo

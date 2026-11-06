@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Octavia-V2 es un repositorio publicado en HuggingFace por el usuario SnazzyArtist22 bajo el identificador `SnazzyArtist22/Octavia-V2`. En el momento de redactar esta ficha, el repositorio no incluye model card util (el README solo contiene la linea `license: unknown`), no declara pipeline, idiomas ni arquitectura, y acumula 0 descargas y 0 "likes". El tamano declarado del repositorio es de 0,1 GB.
+Octavia-V2 es un repositorio publicado en Hugging Face por el usuario SnazzyArtist22 bajo el identificador `SnazzyArtist22/Octavia-V2`. En el momento de redactar esta ficha, el repositorio no incluye model card util (el README solo contiene la linea `license: unknown`), no declara pipeline, idiomas ni arquitectura, y acumula 0 descargas y 0 "likes". El tamano declarado del repositorio es de 0,1 GB.
 
 No existe informacion publica que permita identificar la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni el proceso de alineacion. La busqueda web asociada al nombre del modelo no devuelve ningun resultado relevante: unicamente enlaces a sitios de contenido para adultos sin relacion alguna con el proyecto, por lo que no se han podido incorporar fuentes externas verificables.
 
-En consecuencia, esta ficha no puede evaluar el modelo en terminos tecnicos ni recomendar su uso. Se documenta unicamente lo que consta en los metadatos de HuggingFace, marcando explicitamente como "no disponible" todo aquello que no ha podido confirmarse. Cualquier evaluacion posterior exige inspeccionar los archivos del repositorio y, en su caso, contactar con el autor.
+En consecuencia, esta ficha no puede evaluar el modelo en terminos tecnicos ni recomendar su uso. Se documenta unicamente lo que consta en los metadatos de Hugging Face, marcando explicitamente como "no disponible" todo aquello que no ha podido confirmarse. Cualquier evaluacion posterior exige inspeccionar los archivos del repositorio y, en su caso, contactar con el autor.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Octavia-V2 | no disponible | no disponible | no disponible | unknown | repositorio HuggingFace, 0 descargas |
+| Octavia-V2 | no disponible | no disponible | no disponible | unknown | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SnazzyArtist22/Octavia-V2
+- Hugging Face: https://huggingface.co/SnazzyArtist22/Octavia-V2
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

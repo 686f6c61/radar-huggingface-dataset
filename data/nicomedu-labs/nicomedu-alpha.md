@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NicomEdu-Alpha es un modelo de lenguaje experimental publicado por el usuario nicomedu-labs en HuggingFace, especializado mediante ajuste fino en respuestas de aula de matematicas de nivel SS2 (equivalente al penultimo curso de secundaria superior en Nigeria). Se construye sobre el modelo base IFM/K2-Horizon-3.7B, en su revision 633f52ad28b17edeabd82afc61d2d13b4c59a561, y la adaptacion consiste en un QLoRA fusionado directamente en los pesos base. El repositorio declara 5.058.255.360 parametros (aproximadamente 5,06 mil millones) segun los ficheros safetensors, aunque el nombre del modelo base sugiere 3,7 mil millones: no hay explicacion publicada de esa discrepancia.
+NicomEdu-Alpha es un modelo de lenguaje experimental publicado por el usuario nicomedu-labs en Hugging Face, especializado mediante ajuste fino en respuestas de aula de matematicas de nivel SS2 (equivalente al penultimo curso de secundaria superior en Nigeria). Se construye sobre el modelo base IFM/K2-Horizon-3.7B, en su revision 633f52ad28b17edeabd82afc61d2d13b4c59a561, y la adaptacion consiste en un QLoRA fusionado directamente en los pesos base. El repositorio declara 5.058.255.360 parametros (aproximadamente 5,06 mil millones) segun los ficheros safetensors, aunque el nombre del modelo base sugiere 3,7 mil millones: no hay explicacion publicada de esa discrepancia.
 
 El modelo resuelve un nicho muy concreto: generar explicaciones y respuestas con formato de clase de matematicas para el curriculo SS2, partiendo de un conjunto de entrenamiento privado de solo 229 registros, de los cuales 141 son reescrituras de presentacion asistidas por profesor y 88 registros especificos de modo sin modificar. La licencia es Apache-2.0 y el unico idioma declarado es el ingles (etiqueta `en`).
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de NicomEdu-Alpha, por lo que la comparaci
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
 | NicomEdu-Alpha | ~5,06 B | No disponible | Apache-2.0 | Matematicas SS2 en ingles | Pesos safetensors, requiere `trust_remote_code` |
-| IFM/K2-Horizon-3.7B (modelo base) | ~3,7 B segun nombre (no confirmado) | No disponible | No disponible en la informacion proporcionada | Modelo generalista | Pesos originales en HuggingFace |
+| IFM/K2-Horizon-3.7B (modelo base) | ~3,7 B segun nombre (no confirmado) | No disponible | No disponible en la informacion proporcionada | Modelo generalista | Pesos originales en Hugging Face |
 | Qwen2.5-7B-Instruct | ~7,6 B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache-2.0 | Instrucciones generales y codigo | Amplia disponibilidad, multiples cuantizaciones |
 | Llama-3.1-8B-Instruct | ~8 B | 131.072 tokens | Licencia comunitaria Llama 3.1 | Instrucciones generales y multilingue | Amplia disponibilidad, multiples cuantizaciones |
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento de NicomEdu-Alpha, por lo que la comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicomedu-labs/NicomEdu-Alpha
+- Modelo en Hugging Face: https://huggingface.co/nicomedu-labs/NicomEdu-Alpha
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Revision concreta del modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B/tree/633f52ad28b17edeabd82afc61d2d13b4c59a561
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

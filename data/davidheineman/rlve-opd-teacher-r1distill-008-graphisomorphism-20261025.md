@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-008-GraphIsomorphism | 1,777 M | no disponible | GraphIsomorphism (GRPO) | no disponible | HuggingFace, 0 descargas |
+| rlve-opd-teacher-R1Distill-008-GraphIsomorphism | 1,777 M | no disponible | GraphIsomorphism (GRPO) | no disponible | Hugging Face, 0 descargas |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B (clase) | no disponible | Razonamiento general destilado | no disponible en esta ficha (verificar en el repo base) | Modelo base publico |
 | Qwen2.5-1.5B-Instruct | 1,5B (clase) | no disponible | Instrucciones generales | no disponible en esta ficha | Publico |
 | DeepSeek-R1-Distill-Qwen-7B | 7B (clase) | no disponible | Razonamiento general destilado | no disponible en esta ficha | Publico |
@@ -85,7 +85,7 @@ La comparación relevante no es de rendimiento general, sino de propósito: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-008-GraphIsomorphism-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-008-GraphIsomorphism-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/dfc0dc44
 - Archivos de configuración citados en la model card: `training_run.json` y `training_config.yaml` (incluidos en el repositorio del modelo)

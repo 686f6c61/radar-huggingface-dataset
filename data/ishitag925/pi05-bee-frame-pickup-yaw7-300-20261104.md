@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pi0.5 bee-frame pickup es un checkpoint de política robótica (vision-language-action, VLA) obtenido mediante ajuste fino del modelo Pi0.5 de Physical Intelligence sobre el conjunto de datos `ishitag925/bee-frame-pickup-yaw7-300-center-right-wrist-lerobot`. Lo publica el usuario ishitag925 en HuggingFace bajo la librería `openpi`, la implementación oficial de OpenPI de Physical Intelligence, y está orientado a una tarea muy concreta: la recogida de un marco de abeja (bee-frame) con un brazo robótico Piper-X, con una configuración de cámara y orientación (yaw7, 300 episodios) específica.
+Pi0.5 bee-frame pickup es un checkpoint de política robótica (vision-language-action, VLA) obtenido mediante ajuste fino del modelo Pi0.5 de Physical Intelligence sobre el conjunto de datos `ishitag925/bee-frame-pickup-yaw7-300-center-right-wrist-lerobot`. Lo publica el usuario ishitag925 en Hugging Face bajo la librería `openpi`, la implementación oficial de OpenPI de Physical Intelligence, y está orientado a una tarea muy concreta: la recogida de un marco de abeja (bee-frame) con un brazo robótico Piper-X, con una configuración de cámara y orientación (yaw7, 300 episodios) específica.
 
 No se trata de un modelo de lenguaje general, sino de un artefacto de investigación en robótica: un conjunto de pesos de política entrenados para mapear observaciones visuales y de estado del robot a acciones de control. El repositorio incluye checkpoints publicados cada 5.000 actualizaciones del optimizador bajo `checkpoints/STEP/`, con etiquetas `step-STEP` coincidentes, y cada checkpoint contiene los parámetros completos de la política y los activos de normalización.
 
@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- [HuggingFace: ishitag925/pi05-bee-frame-pickup-yaw7-300-20261104](https://huggingface.co/ishitag925/pi05-bee-frame-pickup-yaw7-300-20261104)
+- [Hugging Face: ishitag925/pi05-bee-frame-pickup-yaw7-300-20261104](https://huggingface.co/ishitag925/pi05-bee-frame-pickup-yaw7-300-20261104)
 - Dataset asociado: `ishitag925/bee-frame-pickup-yaw7-300-center-right-wrist-lerobot` (referenciado en la model card; no se proporciona URL directa)
 - OpenPI (implementación oficial de Physical Intelligence): no se proporciona URL en la información disponible.

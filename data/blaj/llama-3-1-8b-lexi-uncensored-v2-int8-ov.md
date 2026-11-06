@@ -20,7 +20,7 @@ Se trata de un modelo denso, decoder-only, de 32 capas y hidden size 4096, hered
 | Idiomas soportados | no disponible en la información proporcionada (heredados del modelo base) |
 | Licencia | llama3.1 (Llama 3.1 Community License) |
 | Formato de pesos | OpenVINO IR (no safetensors, no GGUF) |
-| Tamaño del repositorio | 7,6 GB según la model card; 8,1 GB según los metadatos de HuggingFace |
+| Tamaño del repositorio | 7,6 GB según la model card; 8,1 GB según los metadatos de Hugging Face |
 | Estado del grafo | stateful (expone `beam_idx`) |
 | Formato de origen | safetensors BF16, 4 shards |
 | Herramientas de conversión | optimum-cli (optimum-intel 2.2.0) + NNCF (`compress_weights`), transformers 5.5.0 |
@@ -107,7 +107,7 @@ Comparativa con alternativas de otros ecosistemas: no disponible en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Llama-3.1-8B-Lexi-Uncensored-V2-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Llama-3.1-8B-Lexi-Uncensored-V2-int8-ov
 - Build hermana int4: https://huggingface.co/blaj/Llama-3.1-8B-Lexi-Uncensored-V2-int4-ov
 - Build hermana fp16: https://huggingface.co/blaj/Llama-3.1-8B-Lexi-Uncensored-V2-fp16-ov
 - Modelo base (fine-tune uncensored): https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2

@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timothy-perez/albef-matching-aug | 16.576 (según safetensors) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| timothy-perez/albef-matching-aug | 16.576 (según safetensors) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | ALBEF oficial (Salesforce) | no disponible en esta ficha | no disponible | publicado en el paper original | no disponible en esta ficha | checkpoints oficiales |
 | Otros modelos de matching imagen-texto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos verificados de alternativas en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/timothy-perez/albef-matching-aug
+- Hugging Face: https://huggingface.co/timothy-perez/albef-matching-aug
 - Paper original de ALBEF (referencia conceptual): no disponible en la información proporcionada
 - Repositorio oficial de ALBEF: no disponible en la información proporcionada
 - Demos o blogs: no disponible en la información proporcionada

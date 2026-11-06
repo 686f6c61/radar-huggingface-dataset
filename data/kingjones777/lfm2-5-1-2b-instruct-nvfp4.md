@@ -73,7 +73,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (ta
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/kingjones777/LFM2.5-1.2B-Instruct-NVFP4
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Export ONNX del modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct-ONNX
 - Receta de vLLM para el modelo base: https://recipes.vllm.ai/LiquidAI/LFM2.5-1.2B-Instruct

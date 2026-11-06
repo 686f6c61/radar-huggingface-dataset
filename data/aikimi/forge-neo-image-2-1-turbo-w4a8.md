@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Pesos | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Forge Neo Image 2.1 Turbo W4A8 (Aikimi) | Conversion cuantizada W4A8 de Qwen Image 2.1 Turbo | 4 bits (W4A8), 11,8 GB | en, ja | qwen-research (no comercial) | HuggingFace, requiere Forge Neo |
-| Qwen/Qwen-Image-2.1-Turbo | Modelo base oficial, sin cuantizar | BF16 | no disponible | Qwen (consultar ficha oficial) | HuggingFace |
-| Qwen/Qwen-Image-2.1 | Version del encoder de texto compartido y modelo de la familia | no disponible | no disponible | Qwen | HuggingFace |
+| Forge Neo Image 2.1 Turbo W4A8 (Aikimi) | Conversion cuantizada W4A8 de Qwen Image 2.1 Turbo | 4 bits (W4A8), 11,8 GB | en, ja | qwen-research (no comercial) | Hugging Face, requiere Forge Neo |
+| Qwen/Qwen-Image-2.1-Turbo | Modelo base oficial, sin cuantizar | BF16 | no disponible | Qwen (consultar ficha oficial) | Hugging Face |
+| Qwen/Qwen-Image-2.1 | Version del encoder de texto compartido y modelo de la familia | no disponible | no disponible | Qwen | Hugging Face |
 
 No se dispone de informacion en las fuentes proporcionadas sobre otros modelos comparables de generacion text-to-image (por ejemplo, alternativas tipo FLUX), por lo que la comparativa se limita a las variantes de la propia familia Qwen Image.
 
@@ -83,7 +83,7 @@ No se dispone de informacion en las fuentes proporcionadas sobre otros modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aikimi/Forge-Neo-Image-2.1-Turbo-W4A8
+- Modelo en Hugging Face: https://huggingface.co/Aikimi/Forge-Neo-Image-2.1-Turbo-W4A8
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Fuente del encoder compartido: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia (LICENSE): https://huggingface.co/Aikimi/Forge-Neo-Image-2.1-Turbo-W4A8/blob/main/LICENSE

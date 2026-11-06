@@ -69,9 +69,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | Easy / Hard (RoboTwin move_can_pot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gr00t-n1.7-robotwin-move_can_pot-cosmos-aug | 3B | no disponible | 41 % / 35 % | NVIDIA Open Model License | HuggingFace |
+| gr00t-n1.7-robotwin-move_can_pot-cosmos-aug | 3B | no disponible | 41 % / 35 % | NVIDIA Open Model License | Hugging Face |
 | gr00t-n1.7-robotwin-move_can_pot baseline (EXP-030) | 3B | no disponible | 34 % / 0 % | NVIDIA Open Model License | Referenciado en la model card, no enlazado |
-| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | NVIDIA Open Model License | HuggingFace |
+| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | NVIDIA Open Model License | Hugging Face |
 
 No se dispone de datos de otros modelos VLA comparables en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos VLA comparables en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-move_can_pot-cosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-move_can_pot-cosmos-aug
 - Dataset: https://huggingface.co/datasets/wjwjwjwj/robotwin-move_can_pot-clean50-cosmos50-gr00t
 - Codigo y log de experimentos: https://github.com/nota-github/xpu-gr00t-aug-recipe
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B

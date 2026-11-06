@@ -99,7 +99,7 @@ No se dispone de alternativas equivalentes de otros autores para comparar parame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-27B-oQ6e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-27B-oQ6e-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385

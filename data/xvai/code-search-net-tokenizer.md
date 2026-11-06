@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`xvAI/code-search-net-tokenizer` es un artefacto de tokenización publicado en HuggingFace Hub bajo el identificador de un supuesto tokenizador entrenado sobre el corpus CodeSearchNet. El repositorio lo firma el usuario `xvAI` y está etiquetado con la librería `transformers`, pero no incluye ningún modelo de lenguaje asociado ni una model card con información sustantiva: la tarjeta publicada es la plantilla genérica autogenerada por el Hub, con todos los campos marcados como `[More Information Needed]`.
+`xvAI/code-search-net-tokenizer` es un artefacto de tokenización publicado en Hugging Face Hub bajo el identificador de un supuesto tokenizador entrenado sobre el corpus CodeSearchNet. El repositorio lo firma el usuario `xvAI` y está etiquetado con la librería `transformers`, pero no incluye ningún modelo de lenguaje asociado ni una model card con información sustantiva: la tarjeta publicada es la plantilla genérica autogenerada por el Hub, con todos los campos marcados como `[More Information Needed]`.
 
 El interés del repositorio es, por tanto, limitado y de naturaleza auxiliar: se trata de la pieza de preprocesado (vocabulario y reglas de segmentación) que acompanaría a un hipotético modelo de código, no de un sistema generativo. No se declaran parámetros, arquitectura, ventana de contexto, idiomas, licencia ni formato de pesos, y las métricas del Hub reflejan un uso nulo (0 descargas, 0 likes) con fecha de creación y última actualización separadas por un segundo, lo que sugiere una publicación automatizada o de prueba.
 
-Es relevante ahora únicamente como caso de estudio de artefactos incompletos en el Hub: sirve para ilustrar por qué un pipeline de evaluación serio debe verificar la presencia de pesos, licencia y documentación antes de incorporar cualquier repositorio, y por qué un tag `arxiv` en HuggingFace no implica que exista un paper detrás del artefacto.
+Es relevante ahora únicamente como caso de estudio de artefactos incompletos en el Hub: sirve para ilustrar por qué un pipeline de evaluación serio debe verificar la presencia de pesos, licencia y documentación antes de incorporar cualquier repositorio, y por qué un tag `arxiv` en Hugging Face no implica que exista un paper detrás del artefacto.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Es relevante ahora únicamente como caso de estudio de artefactos incompletos en
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del tokenizador: se desconoce si emplea BPE, WordPiece, Unigram o SentencePiece, así como el tamano del vocabulario, las reglas de normalización previa, el tratamiento de espacios en blanco o la política de tokens especiales. La etiqueta `transformers` indica únicamente compatibilidad declarada con la librería de HuggingFace, no una arquitectura concreta.
+No hay información publicada sobre la arquitectura del tokenizador: se desconoce si emplea BPE, WordPiece, Unigram o SentencePiece, así como el tamano del vocabulario, las reglas de normalización previa, el tratamiento de espacios en blanco o la política de tokens especiales. La etiqueta `transformers` indica únicamente compatibilidad declarada con la librería de Hugging Face, no una arquitectura concreta.
 
 Tampoco se documenta el proceso de entrenamiento: no se especifica el número de tokens del corpus, la composición del dataset, si se aplicó filtrado, deduplicación o truncado de ficheros, ni si el vocabulario se ajustó sobre código de los seis lenguajes originales del benchmark CodeSearchNet. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, citado en la plantilla estándar de model card, y no a un paper descriptivo de este artefacto. No se ha documentado ninguna innovación técnica (atención lineal, decodificación especulativa, vocabularios adaptativos por lenguaje, etc.).
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM para inferencia: no aplica; un tokenizador no ejecuta operaciones en GPU. El consumo es de CPU y memoria principal, proporcional al tamano del vocabulario y de las estructuras de búsqueda (del orden de decenas a centenas de MB en tokenizadores de código habituales; el valor exacto para este repositorio es no disponible).
 - GPU recomendadas: ninguna. No requiere acelerador; funcionaría igual en CPU.
 - Compatibilidad con GPU de consumo: irrelevante para el tokenizador; sí sería relevante para el modelo que lo acompaña, que no existe en este repositorio.
-- Opciones de despliegue: carga mediante `transformers` (`AutoTokenizer`) o, si se dispusiera del fichero `tokenizer.json`, mediante `tokenizers` de HuggingFace en procesos Python. vLLM, TGI, llama.cpp u Ollama no aplican porque no hay pesos de modelo.
+- Opciones de despliegue: carga mediante `transformers` (`AutoTokenizer`) o, si se dispusiera del fichero `tokenizer.json`, mediante `tokenizers` de Hugging Face en procesos Python. vLLM, TGI, llama.cpp u Ollama no aplican porque no hay pesos de modelo.
 - Latencia y throughput: no disponibles. En un tokenizador rápido basado en Rust la latencia por documento suele ser de microsegundos a pocos milisegundos, pero no hay mediciones publicadas para este artefacto.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xvAI/code-search-net-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/xvAI/code-search-net-tokenizer
 - Artículo referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., estimación de emisiones de carbono, citado en la plantilla de model card, no específico de este artefacto): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - Referencia externa no confirmada por el repositorio: el nombre sugiere el corpus CodeSearchNet, descrito en el artículo arXiv:1909.09436; el repositorio no enlaza ni confirma esta procedencia.

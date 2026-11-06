@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mkvpczyk/prompt-injection-xlm-roberta` es un clasificador de texto basado en la arquitectura XLM-RoBERTa, concebido para la detección de ataques de inyección de instrucciones (prompt injection) en sistemas que utilizan modelos de lenguaje. El autor, mkvpczyk, publica el modelo en HuggingFace con la librería transformers y un pipeline de clasificación de texto. Con 278 millones de parámetros, corresponde a la variante `xlm-roberta-large`, un modelo de tipo transformer preentrenado multilingüe que posteriormente ha sido ajustado para la tarea de clasificación binaria de prompts maliciosos o benignos.
+El modelo `mkvpczyk/prompt-injection-xlm-roberta` es un clasificador de texto basado en la arquitectura XLM-RoBERTa, concebido para la detección de ataques de inyección de instrucciones (prompt injection) en sistemas que utilizan modelos de lenguaje. El autor, mkvpczyk, publica el modelo en Hugging Face con la librería transformers y un pipeline de clasificación de texto. Con 278 millones de parámetros, corresponde a la variante `xlm-roberta-large`, un modelo de tipo transformer preentrenado multilingüe que posteriormente ha sido ajustado para la tarea de clasificación binaria de prompts maliciosos o benignos.
 
 La relevancia de este modelo radica en la creciente necesidad de proteger aplicaciones basadas en LLM frente a ataques de inyección de instrucciones, una de las vulnerabilidades más críticas en sistemas de agentes y asistentes conversacionales. Aunque la model card no proporciona detalles sobre el proceso de entrenamiento ni el dataset utilizado, el nombre del modelo y la arquitectura subyacente indican que se trata de un ajuste fino sobre `xlm-roberta-large` para esta tarea específica. El modelo está disponible en formato safetensors y es compatible con la inferencia mediante la librería de transformers.
 
@@ -23,14 +23,14 @@ La relevancia de este modelo radica en la creciente necesidad de proteger aplica
 
 El modelo se basa en la arquitectura XLM-RoBERTa, un transformer encoder multilingüe presentado en el paper «Unsupervised Cross-lingual Language Representation Learning at Scale» (arXiv:1910.09700). XLM-RoBERTa se entrena mediante aprendizaje auto-supervisado con un objetivo de modelado de lenguaje enmascarado sobre un corpus multilingüe de gran escala. La variante `large` tiene 24 capas, 16 cabezas de atención y una dimensión de modelo de 1024, lo que da lugar a los 278 millones de parámetros.
 
-Para la tarea de detección de prompt injection, el modelo se ajusta con una cabeza de clasificación sobre la representación del token `[CLS]`. Sin embargo, la model card no indica el dataset de entrenamiento, el número de épocas, la tasa de aprendizaje ni si se aplicaron técnicas como regularización o data augmentation. Tampoco se especifica si el ajuste se realizó sobre un dataset público específico (como los disponibles en HuggingFace para prompt injection) o sobre un corpus propio. La ausencia de estos datos impide evaluar la metodología de entrenamiento.
+Para la tarea de detección de prompt injection, el modelo se ajusta con una cabeza de clasificación sobre la representación del token `[CLS]`. Sin embargo, la model card no indica el dataset de entrenamiento, el número de épocas, la tasa de aprendizaje ni si se aplicaron técnicas como regularización o data augmentation. Tampoco se especifica si el ajuste se realizó sobre un dataset público específico (como los disponibles en Hugging Face para prompt injection) o sobre un corpus propio. La ausencia de estos datos impide evaluar la metodología de entrenamiento.
 
 ## Capacidades
 
 - Clasificación binaria de texto: el modelo asigna una etiqueta (probablemente "malicioso" o "benigno") a cada prompt de entrada, permitiendo filtrar inyecciones de instrucciones en sistemas que consumen entradas externas.
 - Detección de ataques de prompt injection: su función principal es identificar intentos de manipulación de un LLM a través de instrucciones maliciosas embebidas en el texto.
 - Multilingüismo base: al partir de XLM-RoBERTa, el modelo hereda la capacidad de procesar texto en múltiples idiomas, aunque el ajuste puede haber reducido o especializado este comportamiento.
-- Compatibilidad con pipelines de clasificación: se integra directamente con el pipeline `text-classification` de HuggingFace, lo que facilita su uso en aplicaciones de producción.
+- Compatibilidad con pipelines de clasificación: se integra directamente con el pipeline `text-classification` de Hugging Face, lo que facilita su uso en aplicaciones de producción.
 - Inferencia eficiente para modelos de 278M: puede ejecutarse en GPUs consumer con memoria suficiente y en CPU con latencia moderada.
 
 ## Casos de uso
@@ -58,11 +58,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mkvpczyk/prompt-injection-xlm-roberta | 278M | 512 tokens | no disponible | no disponible | HuggingFace |
-| cryptocyberai/xlm-roberta-large-prompt-injection-detector | 278M | 512 tokens | no disponible | no disponible | HuggingFace |
+| mkvpczyk/prompt-injection-xlm-roberta | 278M | 512 tokens | no disponible | no disponible | Hugging Face |
+| cryptocyberai/xlm-roberta-large-prompt-injection-detector | 278M | 512 tokens | no disponible | no disponible | Hugging Face |
 | aru456/Detecting-Prompt-Injections (RoBERTa/XLNet) | ~110M-340M | 512 tokens | no disponible | no disponible | GitHub |
 
-Los tres modelos se basan en la misma arquitectura de encoder y se ajustan para la tarea de detección de prompt injection. No se dispone de datos públicos de comparación en términos de exactitud o robustez. El modelo de mkvpczyk tiene la ventaja de estar publicado en HuggingFace con formato safetensors, lo que facilita su integración. No se puede determinar cuál ofrece mejor rendimiento sin benchmarks.
+Los tres modelos se basan en la misma arquitectura de encoder y se ajustan para la tarea de detección de prompt injection. No se dispone de datos públicos de comparación en términos de exactitud o robustez. El modelo de mkvpczyk tiene la ventaja de estar publicado en Hugging Face con formato safetensors, lo que facilita su integración. No se puede determinar cuál ofrece mejor rendimiento sin benchmarks.
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ Los tres modelos se basan en la misma arquitectura de encoder y se ajustan para 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/mkvpczyk/prompt-injection-xlm-roberta)
+- [Página del modelo en Hugging Face](https://huggingface.co/mkvpczyk/prompt-injection-xlm-roberta)
 - [Paper de XLM-RoBERTa (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Modelo similar de detección de prompt injection](https://huggingface.co/cryptocyberai/xlm-roberta-large-prompt-injection-detector)
 - [Repositorio de detección de prompt injections con transformers](https://github.com/aru456/Detecting-Prompt-Injections-with-Fine-Tuned-Transformer-LLMs)

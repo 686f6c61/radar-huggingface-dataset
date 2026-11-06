@@ -78,7 +78,7 @@ No se han publicado comparaciones con otros modelos fuera de este estudio.
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos directamente comparables en la misma tarea. Como referencia arquitectonica, el BLT original de Meta (paper arXiv:2412.09871) es la base de la configuracion C5, pero opera a una escala mucho mayor y con datos generales. Otros repositorios similares en HuggingFace (Viv0605101/anlp-a1-transformer-blt-ablation, ZappY-AI/anlp-a1) parecen ser variantes del mismo trabajo, pero no se han analizado sus contenidos.
+No se dispone de modelos directamente comparables en la misma tarea. Como referencia arquitectonica, el BLT original de Meta (paper arXiv:2412.09871) es la base de la configuracion C5, pero opera a una escala mucho mayor y con datos generales. Otros repositorios similares en Hugging Face (Viv0605101/anlp-a1-transformer-blt-ablation, ZappY-AI/anlp-a1) parecen ser variantes del mismo trabajo, pero no se han analizado sus contenidos.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia |
 |---|---|---|---|---|
@@ -98,7 +98,7 @@ No se dispone de modelos directamente comparables en la misma tarea. Como refere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VenyaVel/anlp-a1-transformers-blt
+- Repositorio Hugging Face: https://huggingface.co/VenyaVel/anlp-a1-transformers-blt
 - Paper de BLT (Byte Latent Transformer): https://arxiv.org/abs/2412.09871
 - Codigo oficial de BLT (Meta): https://github.com/facebookresearch/blt
 - Repositorio similar (Viv0605101): https://huggingface.co/Viv0605101/anlp-a1-transformer-blt-ablation

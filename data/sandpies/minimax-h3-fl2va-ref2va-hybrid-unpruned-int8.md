@@ -91,8 +91,8 @@ No se dispone de comparativas de rendimiento objetivo (métricas de calidad de v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandpies/Minimax-H3-fl2va-ref2va-hybrid-unpruned-int8
-- Modelo base en HuggingFace: https://huggingface.co/Comfy-Org/MiniMax-H3
+- Modelo en Hugging Face: https://huggingface.co/sandpies/Minimax-H3-fl2va-ref2va-hybrid-unpruned-int8
+- Modelo base en Hugging Face: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Licencia y modelo original de MiniMax: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Híbrido podado de referencia: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models
 - Nodo de fusión en tiempo de ejecución: https://github.com/scottmudge/ComfyUI_MinimaxH3HybridLoader

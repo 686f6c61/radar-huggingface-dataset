@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Matching es un repositorio de investigación publicado por el usuario Alvesce4 en HuggingFace. No se trata de un modelo entrenado, sino de una implementación mínima de un transformer con una configuración reducida orientada a tareas de *matching* (emparejamiento o comparación de pares de entradas). El repositorio incluye el código Python, la configuración de arquitectura, los argumentos de entrenamiento por defecto y un checkpoint de safetensors que, según la propia model card, corresponde únicamente a una inicialización válida para *smoke tests*, no a un modelo con pesos entrenados.
+Tiny Transformer for Matching es un repositorio de investigación publicado por el usuario Alvesce4 en Hugging Face. No se trata de un modelo entrenado, sino de una implementación mínima de un transformer con una configuración reducida orientada a tareas de *matching* (emparejamiento o comparación de pares de entradas). El repositorio incluye el código Python, la configuración de arquitectura, los argumentos de entrenamiento por defecto y un checkpoint de safetensors que, según la propia model card, corresponde únicamente a una inicialización válida para *smoke tests*, no a un modelo con pesos entrenados.
 
 El tamaño real declarado en el archivo de pesos es de 16.576 parámetros, lo que sitúa al proyecto en la categoría de modelos de juguete o de demostración. La arquitectura combina atención de ventana deslizante, fusión de tipo Tucker, activación gelu tanh y normalización LayerNorm. La receta de experimento por defecto usa SGD con un schedule de tipo *step*, pero el autor aclara explícitamente que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -87,5 +87,5 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alvesce4/tiny-transformer-matching
+- Hugging Face: https://huggingface.co/Alvesce4/tiny-transformer-matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos relacionados con este modelo.

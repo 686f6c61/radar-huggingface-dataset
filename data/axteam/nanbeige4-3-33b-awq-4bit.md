@@ -103,6 +103,6 @@ Las alternativas comparadas son variantes de cuantización del mismo modelo base
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/Nanbeige4.3-33B-AWQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/axteam/Nanbeige4.3-33B-AWQ-4bit
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

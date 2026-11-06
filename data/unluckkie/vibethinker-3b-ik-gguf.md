@@ -91,7 +91,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Unluckkie/VibeThinker-3B-IK-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Unluckkie/VibeThinker-3B-IK-GGUF
 - Modelo base: https://huggingface.co/WeiboAI/VibeThinker-3B
 - Modelo base alternativo citado: https://huggingface.co/prithivMLmods/VibeThinker-3B
 - Herramienta de cuantización: https://github.com/ikawrakow/ik_llama.cpp

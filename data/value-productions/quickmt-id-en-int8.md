@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 |---|---|---|---|---|---|
 | value-productions/quickmt-id-en-int8 | id → en | no disponible | CTranslate2 int8 | CC BY 4.0 | 0,2 GB; optimizado para CPU/GPU vía CTranslate2 |
 | quickmt/quickmt-id-en (modelo base) | id → en | no disponible | CTranslate2 float16 | CC BY 4.0 | Original de quickmt; mayor tamaño y referencia de calidad |
-| Helsinki-NLP/opus-mt-id-en | id → en | no disponible | PyTorch (Marian) | no disponible | Alternativa clásica de OPUS-MT en HuggingFace; requiere conversión para CTranslate2 |
+| Helsinki-NLP/opus-mt-id-en | id → en | no disponible | PyTorch (Marian) | no disponible | Alternativa clásica de OPUS-MT en Hugging Face; requiere conversión para CTranslate2 |
 | facebook/nllb-200-distilled-600M | 200 idiomas (incluye id y en) | 600 M | PyTorch | CC BY-NC 4.0 | Multilingüe y más capaz en cobertura, pero más grande y con licencia no comercial |
 
 ## Limitaciones y advertencias

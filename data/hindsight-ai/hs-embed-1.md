@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hindsight-ai/hs-embed-1
+- Modelo en Hugging Face: https://huggingface.co/hindsight-ai/hs-embed-1
 - Repositorio de Hindsight en GitHub: https://github.com/vectorize-io/hindsight
 - Documentación de instalación de Hindsight: https://hindsight.vectorize.io/developer/installation
 - Servicio de inferencia gestionado: https://inference.hindsight.vectorize.io

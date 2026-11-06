@@ -57,14 +57,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Variante `lora/` (Transformers): estimacion de menos de 1 GB de VRAM en FP16; cabe con holgura en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) e incluso en GPU integradas o en CPU.
 - Variante `lora-ct2-int8/` (CTranslate2 INT8): pensada para CPU; consumo de memoria reducido, apto para entornos sin GPU y despliegues en el borde.
 - GPU recomendadas: no disponibles de forma oficial. Por tamano, no requiere GPU de centro de datos (A100, H100) salvo para procesamiento por lotes a gran escala.
-- Opciones de despliegue: Transformers (PyTorch), CTranslate2 y HuggingFace Inference Endpoints (el tag `endpoints_compatible` esta presente). La model card proporciona ejemplos de uso con `MarianMTModel` y con `ctranslate2.Translator`.
+- Opciones de despliegue: Transformers (PyTorch), CTranslate2 y Hugging Face Inference Endpoints (el tag `endpoints_compatible` esta presente). La model card proporciona ejemplos de uso con `MarianMTModel` y con `ctranslate2.Translator`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Idiomas | Contexto | Licencia | Formatos | Notas |
 |---|---|---|---|---|---|---|
-| WindyWord/translate-zai-es | Marian | `zai` → `es` | no disponible | Apache-2.0 | safetensors, CTranslate2 INT8 | Variante INT8 para CPU; 0 descargas y 0 likes en HuggingFace |
+| WindyWord/translate-zai-es | Marian | `zai` → `es` | no disponible | Apache-2.0 | safetensors, CTranslate2 INT8 | Variante INT8 para CPU; 0 descargas y 0 likes en Hugging Face |
 | Helsinki-NLP/opus-mt-zai-es | Marian (OPUS-MT) | `zai` → `es` | no disponible | Apache-2.0 | Transformers | Modelo base del que derivan los pesos de WindyWord |
 | Otras alternativas para `zai` → `es` | no disponible | no disponible | no disponible | no disponible | no disponible | No se dispone de datos en la informacion proporcionada |
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WindyWord/translate-zai-es
+- Repositorio en Hugging Face: https://huggingface.co/WindyWord/translate-zai-es
 - Copia canonica: https://huggingface.co/WindyTranslate/translate-zai-es
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-zai-es
 - Ficha del modelo en el catalogo WindyTranslate: https://windytranslate.com/models/translate-zai-es

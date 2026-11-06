@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR real-world large view + yaw30 (este) | no disponible | no disponible | sin evaluación en robot | Apache 2.0 | HuggingFace |
-| `Donghyun1228/pi05-snumpr-realworld-conflict-mean-source-10000-20261028` (modelo fuente) | no disponible | no disponible | sin datos en la información | Apache 2.0 (presumible por la serie) | HuggingFace |
+| π0.5 SNUMPR real-world large view + yaw30 (este) | no disponible | no disponible | sin evaluación en robot | Apache 2.0 | Hugging Face |
+| `Donghyun1228/pi05-snumpr-realworld-conflict-mean-source-10000-20261028` (modelo fuente) | no disponible | no disponible | sin datos en la información | Apache 2.0 (presumible por la serie) | Hugging Face |
 | π0.5 base (openpi) | no disponible | no disponible | no disponible | no disponible en esta ficha | openpi |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-large-view-yaw30-anchor-coef0p01-10000-20261028
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-large-view-yaw30-anchor-coef0p01-10000-20261028
 - Modelo fuente: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-conflict-mean-source-10000-20261028
 - Dataset: https://huggingface.co/Donghyun1228/snumpr-realworld-large-view-yaw30-probe-20261028
 - Repositorio de código de adaptación: `Donghyun1228/vla_adaptation` (preset `pi05_snumpr_target_conflict_anchor_large_view_yaw30_coef0p01`, código `36089217`); no se proporciona URL directa.

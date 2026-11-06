@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Quantech/spin-80k` es un artefacto publicado en HuggingFace por el usuario Quantech, con un tamaño de parámetros extremadamente reducido: 238.832 parámetros en total. Esta cifra lo sitúa muy por debajo de cualquier modelo de lenguaje moderno útil, incluso de los considerados "small language models" (que suelen rondar los cientos de millones o miles de millones de parámetros). No se dispone de documentación técnica, tarjeta de modelo, ni información sobre su arquitectura, entrenamiento o capacidades. El repositorio ocupa 0.0 GB, lo que sugiere que solo contiene los pesos en formato safetensors y posiblemente un archivo de configuración mínimo.
+El modelo `Quantech/spin-80k` es un artefacto publicado en Hugging Face por el usuario Quantech, con un tamaño de parámetros extremadamente reducido: 238.832 parámetros en total. Esta cifra lo sitúa muy por debajo de cualquier modelo de lenguaje moderno útil, incluso de los considerados "small language models" (que suelen rondar los cientos de millones o miles de millones de parámetros). No se dispone de documentación técnica, tarjeta de modelo, ni información sobre su arquitectura, entrenamiento o capacidades. El repositorio ocupa 0.0 GB, lo que sugiere que solo contiene los pesos en formato safetensors y posiblemente un archivo de configuración mínimo.
 
 La relevancia de este modelo es, a día de hoy, nula para aplicaciones prácticas. No hay evidencia de que haya sido diseñado para tareas específicas, ni benchmarks publicados, ni casos de uso documentados. Podría tratarse de un experimento de aprendizaje, un modelo de demostración o un artefacto incompleto. Los resultados de búsqueda web asociados al autor "Quantech" apuntan a plataformas empresariales de gestión de riesgos financieros y cumplimiento normativo, pero no guardan relación directa con este modelo concreto. En consecuencia, cualquier evaluación seria debe considerar que la información disponible es insuficiente para recomendar su uso en entornos de desarrollo o investigación.
 
@@ -35,7 +35,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo. Dado e
 
 - No se han documentado casos de uso reales ni aplicaciones prácticas para este modelo.
 - Dado su tamaño extremadamente reducido, no es adecuado para tareas de generación de texto, chatbots, análisis de sentimiento, traducción o cualquier otra tarea de procesamiento de lenguaje natural que requiera comprensión semántica.
-- Podría servir únicamente como ejemplo didáctico de cómo se publica un modelo en HuggingFace, pero no como herramienta funcional.
+- Podría servir únicamente como ejemplo didáctico de cómo se publica un modelo en Hugging Face, pero no como herramienta funcional.
 - No se recomienda su integración en pipelines de producción ni en proyectos de investigación serios.
 
 ## Benchmarks y rendimiento
@@ -64,6 +64,6 @@ No se dispone de información sobre modelos comparables. Dado el tamaño inusual
 
 ## Enlaces
 
-- [HuggingFace: Quantech/spin-80k](https://huggingface.co/Quantech/spin-80k)
+- [Hugging Face: Quantech/spin-80k](https://huggingface.co/Quantech/spin-80k)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) asociados a este modelo.

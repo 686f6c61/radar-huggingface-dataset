@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn92-decider-2 es un ajuste fino (finetune) del modelo xflud/sn92-decider-1, publicado por el usuario xflud en HuggingFace. Según la model card, el modelo se ha entrenado para la pista "generalist" de REAX, el subnet 92 de la red Bittensor, y toma como referencia adicional el modelo baselabs/mammoth-1. Se distribuye bajo licencia MIT y en formato safetensors, con un total de 26.085.330.160 parámetros (aproximadamente 26.000 millones), lo que lo situa en la categoria de modelos de gran tamano.
+sn92-decider-2 es un ajuste fino (finetune) del modelo xflud/sn92-decider-1, publicado por el usuario xflud en Hugging Face. Según la model card, el modelo se ha entrenado para la pista "generalist" de REAX, el subnet 92 de la red Bittensor, y toma como referencia adicional el modelo baselabs/mammoth-1. Se distribuye bajo licencia MIT y en formato safetensors, con un total de 26.085.330.160 parámetros (aproximadamente 26.000 millones), lo que lo situa en la categoria de modelos de gran tamano.
 
 La informacion publica disponible es muy limitada: la model card es practicamente un stub que solo indica la relacion de finetune con el modelo base y la licencia. No se detallan la arquitectura interna, la longitud de contexto, los datos de entrenamiento ni los resultados de evaluacion. El tag `qwen3_5` sugiere que la familia base podria estar relacionada con la arquitectura Qwen 3.5, pero este dato no se confirma en la documentacion proporcionada.
 
@@ -23,7 +23,7 @@ El interes actual del modelo radica en su vinculacion con el ecosistema Bittenso
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no detalla la arquitectura interna del modelo. Los metadatos de HuggingFace incluyen el tag `qwen3_5`, lo que apunta a una posible base de la familia Qwen 3.5, y el modelo se presenta como un finetune de xflud/sn92-decider-1 (revision db2e622a), con baselabs/mammoth-1 (revision 61cec44c) como referencia adicional en el proceso. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida.
+La informacion proporcionada no detalla la arquitectura interna del modelo. Los metadatos de Hugging Face incluyen el tag `qwen3_5`, lo que apunta a una posible base de la familia Qwen 3.5, y el modelo se presenta como un finetune de xflud/sn92-decider-1 (revision db2e622a), con baselabs/mammoth-1 (revision 61cec44c) como referencia adicional en el proceso. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o una arquitectura hibrida.
 
 Tampoco se documentan el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La unica informacion de entrenamiento disponible es la finalidad declarada: la pista "generalist" del subnet 92 (REAX) de Bittensor. Cualquier afirmacion adicional sobre el proceso de entrenamiento seria especulativa y no debe asumirse.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xflud/sn92-decider-2 | 26.085.330.160 | no disponible | MIT | HuggingFace | Finetune para REAX (Bittensor sn92) |
-| xflud/sn92-decider-1 | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que deriva sn92-decider-2 |
-| baselabs/mammoth-1 | no disponible | no disponible | no disponible | HuggingFace | Referencia adicional citada en el entrenamiento |
+| xflud/sn92-decider-2 | 26.085.330.160 | no disponible | MIT | Hugging Face | Finetune para REAX (Bittensor sn92) |
+| xflud/sn92-decider-1 | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que deriva sn92-decider-2 |
+| baselabs/mammoth-1 | no disponible | no disponible | no disponible | Hugging Face | Referencia adicional citada en el entrenamiento |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que la comparativa se limita a la relacion de dependencia entre ellos.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xflud/sn92-decider-2
+- Hugging Face: https://huggingface.co/xflud/sn92-decider-2
 - Modelo base: https://huggingface.co/xflud/sn92-decider-1
 - Modelo de referencia citado: https://huggingface.co/baselabs/mammoth-1

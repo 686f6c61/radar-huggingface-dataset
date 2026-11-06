@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-jasper` es un modelo publicado en HuggingFace por el usuario Tohirju (Tohir Saidzoda), del que no se dispone de información técnica pública más allá de los metadatos básicos del repositorio. El repositorio tiene un tamaño de 1,6 GB y está marcado con acceso restringido (gated), lo que significa que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. No se han publicado descripciones, documentación técnica, ni resultados de evaluación asociados a este modelo en la fecha de creación (agosto de 2026).
+El modelo `Tohirju/sl-jasper` es un modelo publicado en Hugging Face por el usuario Tohirju (Tohir Saidzoda), del que no se dispone de información técnica pública más allá de los metadatos básicos del repositorio. El repositorio tiene un tamaño de 1,6 GB y está marcado con acceso restringido (gated), lo que significa que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. No se han publicado descripciones, documentación técnica, ni resultados de evaluación asociados a este modelo en la fecha de creación (agosto de 2026).
 
 La falta de información pública impide determinar su arquitectura, número de parámetros, idiomas soportados o cualquier otra especificación relevante. El autor ha publicado otros modelos (como `Asad_Gemma3_27B_e0.3` o `Ameena_e1`), pero no hay evidencia de que `sl-jasper` comparta características con ellos. Dado el tamaño del repositorio (1,6 GB), podría tratarse de un modelo de tamaño pequeño o mediano, pero esta es una suposición no verificada.
 
-Por el momento, este modelo no puede evaluarse ni utilizarse de forma fundamentada sin acceder a la información restringida del repositorio. Se recomienda contactar con el autor o solicitar acceso en HuggingFace para obtener detalles adicionales.
+Por el momento, este modelo no puede evaluarse ni utilizarse de forma fundamentada sin acceder a la información restringida del repositorio. Se recomienda contactar con el autor o solicitar acceso en Hugging Face para obtener detalles adicionales.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su disponibilidad y dificulta la verificación independiente.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su disponibilidad y dificulta la verificación independiente.
 - Falta de documentación: no hay información pública sobre arquitectura, entrenamiento, licencia específica ni términos de uso.
 - Licencia "other" sin especificar: no se puede determinar si el uso comercial está permitido, lo que supone un riesgo legal para su adopción en proyectos profesionales.
 - Riesgo de alucinación y sesgos: al no conocerse los datos de entrenamiento, no es posible evaluar estos riesgos.
@@ -55,5 +55,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tohirju/sl-jasper
-- Perfil del autor en HuggingFace: https://huggingface.co/Tohirju
+- Repositorio en Hugging Face: https://huggingface.co/Tohirju/sl-jasper
+- Perfil del autor en Hugging Face: https://huggingface.co/Tohirju

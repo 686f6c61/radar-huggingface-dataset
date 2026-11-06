@@ -78,7 +78,7 @@ No se han publicado en la información disponible resultados adicionales (por ej
 
 | Modelo | Parámetros | Contexto / entrada | mAP@0.25 (ScanNet) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groupfree3d-w2x-l12-o512.scannet.mmdet3d | 29,6 M | nube de puntos (8192 puntos en ejemplo) | 68,32 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| groupfree3d-w2x-l12-o512.scannet.mmdet3d | 29,6 M | nube de puntos (8192 puntos en ejemplo) | 68,32 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | Group-Free 3D original (MMDetection3D) | ~29,6 M (misma arquitectura) | nube de puntos | 68,32 (referencia del paper) | Apache-2.0 | GitHub OpenMMLab |
 | VoteNet | no disponible en la información | nube de puntos | no disponible en la información | Apache-2.0 (MMDetection3D) | GitHub OpenMMLab |
 | FCAF3D | no disponible en la información | nube de puntos | no disponible en la información | Apache-2.0 (MMDetection3D) | GitHub OpenMMLab |
@@ -98,7 +98,7 @@ La comparación con VoteNet y FCAF3D se incluye por ser alternativas habituales 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o512.scannet.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o512.scannet.mmdet3d
 - Paper Group-Free 3D: https://arxiv.org/abs/2104.00678
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Repositorio MMDetection3D (origen de la conversión): https://github.com/open-mmlab/mmdetection3d

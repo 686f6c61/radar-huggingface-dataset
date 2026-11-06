@@ -73,10 +73,10 @@ El autor indica que los tres tamaños de la familia (1.4M, 5M, 20M) son igual de
 
 | Modelo | Parámetros | Idiomas | Contexto / longitud | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kuyil 1.4M | 1,4 M (con vocoder) | ta, en (palabras) | max_token_frames 200 | CC BY 4.0 (vocoder Apache 2.0) | HuggingFace, ONNX, safetensors |
-| Kuyil 5M | No disponible en la información | ta, en | No disponible | No disponible | HuggingFace |
-| Kuyil 20M | No disponible en la información | ta, en | No disponible | No disponible | HuggingFace |
-| PiVo-1.4M | 1,4 M | No disponible | No disponible | Apache 2.0 (vocoder) | HuggingFace (empero-ai) |
+| Kuyil 1.4M | 1,4 M (con vocoder) | ta, en (palabras) | max_token_frames 200 | CC BY 4.0 (vocoder Apache 2.0) | Hugging Face, ONNX, safetensors |
+| Kuyil 5M | No disponible en la información | ta, en | No disponible | No disponible | Hugging Face |
+| Kuyil 20M | No disponible en la información | ta, en | No disponible | No disponible | Hugging Face |
+| PiVo-1.4M | 1,4 M | No disponible | No disponible | Apache 2.0 (vocoder) | Hugging Face (empero-ai) |
 
 No se dispone de datos de rendimiento comparativo entre Kuyil y PiVo más allá de que la arquitectura de Kuyil deriva de la de PiVo; el autor no publica una comparación directa de métricas entre ambos.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre Kuyil y PiVo más allá 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhagaramlabs/kuyil-1.4m
+- Modelo en Hugging Face: https://huggingface.co/zhagaramlabs/kuyil-1.4m
 - Código: https://github.com/zhagaramlabs/kuyil
 - Laboratorio: https://zhagaramlabs.com
 - Variante 5M: https://huggingface.co/zhagaramlabs/kuyil-5m

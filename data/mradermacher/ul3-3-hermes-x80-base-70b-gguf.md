@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UL3.3-Hermes-X80-BASE-70B-GGUF es la distribucion en formato GGUF de un modelo de lenguaje de gran tamano (70.553.886.784 parametros) creado mediante la tecnica de fusion de modelos (model merging) con la herramienta mergekit. El modelo original, UL3.3-Hermes-X80-BASE-70B, fue publicado por el usuario TareksGraveyard, y esta version cuantizada ha sido producida y distribuida por mradermacher, un conocido creador de cuantizaciones GGUF en el ecosistema de HuggingFace.
+UL3.3-Hermes-X80-BASE-70B-GGUF es la distribucion en formato GGUF de un modelo de lenguaje de gran tamano (70.553.886.784 parametros) creado mediante la tecnica de fusion de modelos (model merging) con la herramienta mergekit. El modelo original, UL3.3-Hermes-X80-BASE-70B, fue publicado por el usuario TareksGraveyard, y esta version cuantizada ha sido producida y distribuida por mradermacher, un conocido creador de cuantizaciones GGUF en el ecosistema de Hugging Face.
 
 El modelo resuelve el problema de ejecutar un modelo de 70B en hardware de consumo o en entornos donde no se dispone de GPUs de alta gama, ofreciendo multiples niveles de cuantizacion que van desde Q2_K (26,5 GB) hasta Q8_0 (75,1 GB). Esta orientado a inferencia local mediante llama.cpp y herramientas compatibles con GGUF, y su naturaleza de modelo fusionado (merge) sugiere que combina capacidades de varios modelos base, aunque la informacion disponible no detalla que modelos se fusionaron ni con que metodo.
 
@@ -89,7 +89,7 @@ La comparativa se basa en caracteristicas generales de modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/UL3.3-Hermes-X80-BASE-70B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/UL3.3-Hermes-X80-BASE-70B-GGUF
 - Modelo base: https://huggingface.co/TareksGraveyard/UL3.3-Hermes-X80-BASE-70B
 - Cuantizaciones imatrix (i1): https://huggingface.co/mradermacher/UL3.3-Hermes-X80-BASE-70B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#UL3.3-Hermes-X80-BASE-70B-GGUF

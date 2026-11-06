@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phonon-40M-multilingual es un modelo publicado en HuggingFace por el usuario empyrealworks bajo el identificador `empyrealworks/Phonon-40M-multilingual`. Por su nomenclatura y por la etiqueta `gradium_phonon_tts` asociada al repositorio, se trata presumiblemente de un modelo de síntesis de voz (text-to-speech) de tamano reducido, con aproximadamente 50,5 millones de parametros reales segun los pesos en safetensors, aunque el nombre comercial haga referencia a "40M". El repositorio se distribuye en formato GGUF, lo que sugiere que esta pensado para inferencia eficiente en CPU o en hardware de gama baja.
+Phonon-40M-multilingual es un modelo publicado en Hugging Face por el usuario empyrealworks bajo el identificador `empyrealworks/Phonon-40M-multilingual`. Por su nomenclatura y por la etiqueta `gradium_phonon_tts` asociada al repositorio, se trata presumiblemente de un modelo de síntesis de voz (text-to-speech) de tamano reducido, con aproximadamente 50,5 millones de parametros reales segun los pesos en safetensors, aunque el nombre comercial haga referencia a "40M". El repositorio se distribuye en formato GGUF, lo que sugiere que esta pensado para inferencia eficiente en CPU o en hardware de gama baja.
 
 La informacion publica disponible es muy limitada: no se especifican la licencia, los idiomas soportados, el pipeline declarado ni detalles sobre la arquitectura o el entrenamiento. El modelo acumula 858 descargas y ningun "like" en el momento de la consulta, y el repositorio ocupa aproximadamente 0,1 GB, coherente con un modelo de este tamano en cuantizacion GGUF.
 
@@ -73,4 +73,4 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/empyrealworks/Phonon-40M-multilingual
+- Hugging Face: https://huggingface.co/empyrealworks/Phonon-40M-multilingual

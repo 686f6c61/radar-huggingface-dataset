@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vertex-Gemma Chess es un ajuste fino QLoRA del modelo google/gemma-2-2b-it, desarrollado por Vertex Coders LLC (Denis Sanchez Leyva, Miami). Está especializado en ajedrez táctico, se distribuye con licencia Gemma y declara únicamente inglés como idioma. En la información consultada, el repositorio de HuggingFace registra 0 descargas y 0 likes.
+Vertex-Gemma Chess es un ajuste fino QLoRA del modelo google/gemma-2-2b-it, desarrollado por Vertex Coders LLC (Denis Sanchez Leyva, Miami). Está especializado en ajedrez táctico, se distribuye con licencia Gemma y declara únicamente inglés como idioma. En la información consultada, el repositorio de Hugging Face registra 0 descargas y 0 likes.
 
 El modelo parte de un transformer decoder-only de la familia Gemma 2, con aproximadamente 2B parámetros según la denominación del modelo base; la model card no detalla la longitud de contexto ni el conteo exacto de parámetros. Se entrenó con el dataset "Grandmaster Blend" (5.000 posiciones y secuencias tácticas de élite) durante 1 época y 80 pasos, con rango LoRA 8 y precisión FP16, usando Unsloth QLoRA en una GTX 1660 Ti de 6 GB.
 
@@ -23,7 +23,7 @@ Su relevancia actual es acotada: sirve como ejemplo de especialización de domin
 | Desarrollador | Vertex Coders LLC (Denis Sanchez Leyva) |
 | Modelo base | google/gemma-2-2b-it |
 | Dataset de ajuste | "Grandmaster Blend": 5.000 posiciones y secuencias tácticas de élite |
-| Fecha de creación en HuggingFace | 2026-10-17 según metadatos |
+| Fecha de creación en Hugging Face | 2026-10-17 según metadatos |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | Contexto | no disponible | no disponible en la información | no disponible |
 | Licencia | Gemma | Gemma | no disponible |
 | Benchmarks publicados | No en la información | No en la información | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | HuggingFace | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | Hugging Face | no disponible |
 
 Como alternativas de la misma categoría se pueden considerar Qwen2.5-1.5B-Instruct o Llama 3.2-3B-Instruct, pero no se aportan datos de especificaciones ni rendimiento en la información disponible, por lo que no es posible una comparación cuantitativa.
 

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LingBot-VA Piper teacher (este modelo) | ~5.090 M (estimado por tamano de fichero) | 48 acciones (1,6 s a 30 Hz) por rollout | Sin benchmarks publicados | Apache 2.0 | Pesos FP32 en HuggingFace |
-| robbyant/lingbot-va-base | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Modelo base en HuggingFace |
+| LingBot-VA Piper teacher (este modelo) | ~5.090 M (estimado por tamano de fichero) | 48 acciones (1,6 s a 30 Hz) por rollout | Sin benchmarks publicados | Apache 2.0 | Pesos FP32 en Hugging Face |
+| robbyant/lingbot-va-base | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Modelo base en Hugging Face |
 | Estudiantes destilados Flash-WAM / DriftWAM | No disponible | No disponible | No disponible | No disponible | Mencionados en la model card, sin enlace |
 | Politicas OpenPI (tipo pi0) | No disponible | No disponible | No disponible | No disponible | Ecosistema separado; el autor indica que este checkpoint no es una politica OpenPI |
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wkrfugs/lingbot-va-piper-4task-step30000
+- Modelo en Hugging Face: https://huggingface.co/wkrfugs/lingbot-va-piper-4task-step30000
 - Modelo base: https://huggingface.co/robbyant/lingbot-va-base (revision `68b7bc1b35da6ddc67ea94c4ceb58d768fbb3f9c` para VAE, text encoder y tokenizer)
 - Repositorio de runtime oficial: https://github.com/Robbyant/lingbot-va (commit `7c6ffa9bfc4b83582cafc860fab4c82cc7deeeeb`)
 - No se han encontrado enlaces adicionales relevantes (papers, blogs o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

@@ -81,7 +81,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/incoai/GLM-5.3-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/incoai/GLM-5.3-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Modelo borrador DFlash 2: https://huggingface.co/incoai/GLM-5.3-DFlash2
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3

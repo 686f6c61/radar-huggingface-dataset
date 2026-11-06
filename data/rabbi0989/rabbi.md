@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rabbi0989/Rabbi` es un repositorio publicado en HuggingFace por el usuario Rabbi0989 bajo licencia Apache-2.0. La model card asociada contiene únicamente la frase "I am Happy" y no ofrece ninguna especificación técnica, descripción de arquitectura, datos de entrenamiento o casos de uso. El repositorio fue creado el 18 de agosto de 2026 y actualizado el mismo día, con cero descargas y un único "like".
+El modelo `Rabbi0989/Rabbi` es un repositorio publicado en Hugging Face por el usuario Rabbi0989 bajo licencia Apache-2.0. La model card asociada contiene únicamente la frase "I am Happy" y no ofrece ninguna especificación técnica, descripción de arquitectura, datos de entrenamiento o casos de uso. El repositorio fue creado el 18 de agosto de 2026 y actualizado el mismo día, con cero descargas y un único "like".
 
 A fecha de esta ficha, no existe información pública que permita identificar qué tipo de modelo es, su tamaño, arquitectura, capacidades o finalidad. Se desconoce si se trata de un modelo de lenguaje, un modelo de difusión, un placeholder o un experimento personal. Tampoco hay documentación adicional, papers ni demos asociados. Por tanto, cualquier uso en producción o investigación no puede basarse en datos verificables.
 
@@ -54,4 +54,4 @@ No disponible. Al no conocerse la categoría, tamaño o propósito del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rabbi0989/Rabbi
+- Repositorio en Hugging Face: https://huggingface.co/Rabbi0989/Rabbi

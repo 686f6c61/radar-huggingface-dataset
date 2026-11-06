@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-7B-Instruct-v0.2 es la version afinada por instrucciones del modelo base Mistral-7B-v0.2, desarrollado por Mistral AI. Esta ficha corresponde a la copia alojada por el usuario sagar-rasakonda en HuggingFace, que reproduce los pesos y la model card del repositorio oficial mistralai/Mistral-7B-Instruct-v0.2. El modelo resuelve tareas de generacion de texto conversacional y sigue instrucciones mediante el formato `[INST] ... [/INST]`, con soporte nativo de plantilla de chat en `transformers`.
+Mistral-7B-Instruct-v0.2 es la version afinada por instrucciones del modelo base Mistral-7B-v0.2, desarrollado por Mistral AI. Esta ficha corresponde a la copia alojada por el usuario sagar-rasakonda en Hugging Face, que reproduce los pesos y la model card del repositorio oficial mistralai/Mistral-7B-Instruct-v0.2. El modelo resuelve tareas de generacion de texto conversacional y sigue instrucciones mediante el formato `[INST] ... [/INST]`, con soporte nativo de plantilla de chat en `transformers`.
 
 Se trata de un transformer decoder-only de 7.241.732.096 parametros (aproximadamente 7,2 mil millones), con una ventana de contexto de 32.000 tokens, `rope-theta` de 1e6 y sin sliding-window attention, los tres cambios que introdujo la version v0.2 respecto a v0.1 (que usaba 8.000 tokens de contexto). Los pesos se distribuyen en formato safetensors y el repositorio ocupa 29,5 GB.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mistral-7B-Instruct-v0.2 (este repositorio) | 7,24 B | 32k | Apache 2.0 | Copia de terceros en HuggingFace | Referencia de esta ficha; sin benchmarks publicados en la informacion disponible |
+| Mistral-7B-Instruct-v0.2 (este repositorio) | 7,24 B | 32k | Apache 2.0 | Copia de terceros en Hugging Face | Referencia de esta ficha; sin benchmarks publicados en la informacion disponible |
 | Mistral-7B-Instruct-v0.3 | 7,24 B (misma familia) | 32k | Apache 2.0 | Repositorio oficial `mistralai/Mistral-7B-Instruct-v0.3` | Marcado en la model card como `new_version`; sustituye a v0.2 |
 | Mistral-7B-Instruct-v0.1 | 7,24 B (misma familia) | 8k | Apache 2.0 | Repositorio oficial de Mistral AI | Version anterior, con sliding-window attention y `rope-theta` distinto |
 | Mistral-7B-v0.2 (base) | 7,24 B (misma familia) | 32k | Apache 2.0 | Repositorio oficial de Mistral AI | Modelo base sin ajuste por instrucciones sobre el que se construye v0.2 Instruct |
@@ -92,7 +92,7 @@ No se dispone en la material proporcionado de datos de rendimiento comparativos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia objeto de esta ficha): https://huggingface.co/sagar-rasakonda/Mistral-7B-Instruct-v0.2
+- Repositorio en Hugging Face (copia objeto de esta ficha): https://huggingface.co/sagar-rasakonda/Mistral-7B-Instruct-v0.2
 - Repositorio oficial del modelo: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Nueva version recomendada por la model card: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Paper de referencia del modelo base: https://arxiv.org/abs/2310.06825

@@ -72,7 +72,7 @@ La comparativa se limita a modelos del mismo tamano. Llama-Saint-3B se distingue
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PiyushWithPant/Llama-Saint-3B
+- Hugging Face: https://huggingface.co/PiyushWithPant/Llama-Saint-3B
 - Dataset Manthan-RLHF: https://huggingface.co/datasets/PiyushWithPant/Manthan-RLHF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Blog de Meta sobre Llama 3.2: https://ai.meta.com/blog/meta-llama-3-1/ (referencia general, no especifica a este modelo)

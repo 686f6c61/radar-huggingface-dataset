@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOv5-CBAM es un repositorio publicado en HuggingFace por el usuario vutomimohube cuyo nombre sugiere una implementacion de la familia de detectores de objetos YOLOv5 con el modulo de atencion CBAM (Convolutional Block Attention Module) integrado. No obstante, el repositorio no incluye pesos, configuracion ni documentacion tecnica: el tamano del repositorio es de 0.0 GB, no registra descargas ni likes y no tiene pipeline declarado. La model card se limita a dos frases que describen un "Source Detection Framework" para la deteccion automatica de fuentes astronomicas (estrellas, galaxias) en imagenes de telescopio.
+YOLOv5-CBAM es un repositorio publicado en Hugging Face por el usuario vutomimohube cuyo nombre sugiere una implementacion de la familia de detectores de objetos YOLOv5 con el modulo de atencion CBAM (Convolutional Block Attention Module) integrado. No obstante, el repositorio no incluye pesos, configuracion ni documentacion tecnica: el tamano del repositorio es de 0.0 GB, no registra descargas ni likes y no tiene pipeline declarado. La model card se limita a dos frases que describen un "Source Detection Framework" para la deteccion automatica de fuentes astronomicas (estrellas, galaxias) en imagenes de telescopio.
 
 Existe una inconsistencia relevante entre el nombre del repositorio y su model card: el identificador indica YOLOv5, mientras que el texto afirma que el proyecto esta "Built with YOLOv8". Esta discrepancia, unida a la ausencia total de artefactos y de resultados, impide verificar que arquitectura se esta publicando realmente y con que datos se ha entrenado.
 
@@ -94,7 +94,7 @@ Para una comparacion rigurosa habria que fijar la variante concreta de YOLO, el 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/vutomimohube/YOLOv5-CBAM
-- Repositorio de la familia YOLOv5 en HuggingFace: https://huggingface.co/models?search=yolov5
-- Repositorio de la familia YOLOv8 en HuggingFace: https://huggingface.co/models?search=yolov8
+- Pagina del modelo en Hugging Face: https://huggingface.co/vutomimohube/YOLOv5-CBAM
+- Repositorio de la familia YOLOv5 en Hugging Face: https://huggingface.co/models?search=yolov5
+- Repositorio de la familia YOLOv8 en Hugging Face: https://huggingface.co/models?search=yolov8
 - La busqueda web realizada no devolvio enlaces relevantes para este modelo. Los resultados recuperados (WhatsApp Web, articulo sobre la World Wide Web en Wikipedia, sitios oficiales de WhatsApp y pagina de descarga de Google Chrome) no guardan ninguna relacion con el repositorio, por lo que no se incluyen como referencias. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

@@ -125,7 +125,7 @@ Frente a los modelos cerrados de su categoría, Mistral Small 3.1 24B destaca en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CollectionStudio/Mistral-Small-3.1-24B-Instruct-2503
+- Repositorio en Hugging Face: https://huggingface.co/CollectionStudio/Mistral-Small-3.1-24B-Instruct-2503
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Blog de Mistral AI sobre Small 3.1: https://mistral.ai/news/mistral-small-3-1/
 - Términos y política de privacidad de Mistral AI: https://mistral.ai/terms/

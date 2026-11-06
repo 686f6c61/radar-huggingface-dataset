@@ -83,7 +83,7 @@ Los datos de las alternativas provienen de su documentación pública y deben ve
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `agurung/cobalt-seeded-rl-base-...-iid16-s2` (este) | 4,41 B | no disponible (base: 262.144) | RL sobre codigo, frontier ≤2/64 | no disponible | HuggingFace, 29 descargas |
+| `agurung/cobalt-seeded-rl-base-...-iid16-s2` (este) | 4,41 B | no disponible (base: 262.144) | RL sobre codigo, frontier ≤2/64 | no disponible | Hugging Face, 29 descargas |
 | Qwen/Qwen3-4B-Instruct-2507 | 4,4 B aprox. | 262.144 tokens | Proposito general, instrucciones | Apache-2.0 (segun documentacion publica de Qwen3) | Muy extendida |
 | Qwen/Qwen2.5-Coder-3B-Instruct | 3,09 B aprox. | 32.768 tokens | Codigo | Apache-2.0 (segun documentacion publica) | Extendida |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B aprox. | 128.000 tokens | Proposito general, instrucciones | Llama 3.2 Community License | Extendida, con restricciones |
@@ -103,11 +103,11 @@ Diferencias clave: frente al base Qwen3-4B-Instruct-2507, este checkpoint interc
 - Repositorio sobredimensionado: 44,1 GB para 4,41 B de parámetros. Verificar el contenido antes de descargar y comprobar si los ficheros safetensors están duplicados o acompañados de estados de optimizador.
 - Naturaleza experimental: 29 descargas, 0 likes, publicada el 2026-09-14. Es un artefacto de investigación sin ciclo de mantenimiento conocido.
 - Sin datos de latencia, throughput ni consumo: no hay base para planificar capacidad de producción.
-- La búsqueda web no ha devuelto documentación externa, paper ni repositorio asociado. Toda la información de esta ficha procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web no ha devuelto documentación externa, paper ni repositorio asociado. Toda la información de esta ficha procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16-s2
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v2-iid16-s2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Registro de entrenamiento (Weights & Biases): proyecto `eaiexp-paper-final`, ejecución `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_q4v2_iid16_s2` (no se ha proporcionado URL directa)
 - Registro de entrenamiento local (ruta indicada por el autor): `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_q4v2_iid16_s2/openrlhf_train.log`

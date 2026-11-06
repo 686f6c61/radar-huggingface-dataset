@@ -73,9 +73,9 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bielquants/GLM-5.3-Flash-UNCENSORED-FP8 | 321,3B totales, 18B activos | 1M tokens | FP8 e4m3 block-wise | MIT | HuggingFace, 0 descargas |
-| zai-org/GLM-5.3-Flash (base) | 320B totales, 18B activos (segun card) | 1M tokens | no disponible en la informacion | no disponible | HuggingFace |
-| dealignai/GLM-5.3-Flash-ABLITERATED-FP8 (espejo) | Identico al anterior | 1M tokens | FP8 | MIT | HuggingFace |
+| bielquants/GLM-5.3-Flash-UNCENSORED-FP8 | 321,3B totales, 18B activos | 1M tokens | FP8 e4m3 block-wise | MIT | Hugging Face, 0 descargas |
+| zai-org/GLM-5.3-Flash (base) | 320B totales, 18B activos (segun card) | 1M tokens | no disponible en la informacion | no disponible | Hugging Face |
+| dealignai/GLM-5.3-Flash-ABLITERATED-FP8 (espejo) | Identico al anterior | 1M tokens | FP8 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parametros de otras alternativas de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparativa con modelos de otros fabricantes.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento ni de parametros de otras alternativas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bielquants/GLM-5.3-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/bielquants/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Espejo del autor: https://huggingface.co/dealignai/GLM-5.3-Flash-ABLITERATED-FP8
 - Perfil del autor: https://huggingface.co/dealignai

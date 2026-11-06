@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AGMT v3.2 (Adaptive/Elastic Recurrent Translation Architecture) es un modelo experimental de traduccion automatica ingles ↔ vietnamita desarrollado por Tran Tuan Phi (Vietnam), publicado en HuggingFace bajo el identificador `Phitran21/agmt-en-vi-20m`. Su propuesta central no es un nuevo bloque neuronal, sino una politica de computacion adaptativa: el modelo parte de una codificacion base no recurrente y aplica despues un refinador recurrente con pesos compartidos, decidiendo mediante un router si merece la pena ejecutar un paso adicional de refinamiento (REFINE) o detenerse (HALT).
+AGMT v3.2 (Adaptive/Elastic Recurrent Translation Architecture) es un modelo experimental de traduccion automatica ingles ↔ vietnamita desarrollado por Tran Tuan Phi (Vietnam), publicado en Hugging Face bajo el identificador `Phitran21/agmt-en-vi-20m`. Su propuesta central no es un nuevo bloque neuronal, sino una politica de computacion adaptativa: el modelo parte de una codificacion base no recurrente y aplica despues un refinador recurrente con pesos compartidos, decidiendo mediante un router si merece la pena ejecutar un paso adicional de refinamiento (REFINE) o detenerse (HALT).
 
 La arquitectura combina componentes conocidos (tokenizacion subword compartida, embeddings compartidos, codificacion/decodificacion de estilo Transformer, caminos residuales y decodificacion autoregresiva) con innovaciones de composicion: un "lexical highway" que preserva evidencia superficial del texto fuente, un "stable memory bridge" que alimenta al decoder con tres flujos de informacion (`H_refined`, `H_base`, `E_lex`) y el router de valor de traduccion. El resultado se distribuye como un conjunto de cuatro grafos ONNX mas un runtime de inferencia en Python, con el tokenizador SentencePiece embebido en Base64 dentro del propio script.
 
@@ -71,7 +71,7 @@ La model card no incluye BLEU, chrF, COMET ni ninguna otra metrica de traduccion
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AGMT v3.2 en-vi | ~20 M (segun nombre del repo) | No disponible | en ↔ vi | No disponible | ONNX + runtime Python | HuggingFace, 0 descargas |
+| AGMT v3.2 en-vi | ~20 M (segun nombre del repo) | No disponible | en ↔ vi | No disponible | ONNX + runtime Python | Hugging Face, 0 descargas |
 | Helsinki-NLP opus-mt-en-vi | Del orden de decenas de millones (dato aproximado, no verificado en esta busqueda) | No disponible | en → vi | Consultar model card de origen | PyTorch / Marian | Ampliamente utilizado en pipelines de traduccion |
 | NLLB-200 distilled 600M | 600 M (dato aproximado, no verificado en esta busqueda) | No disponible | 200 idiomas, incluye en y vi | CC-BY-NC-4.0 (uso no comercial; verificar) | PyTorch / safetensors | Meta, muy extendido |
 | EnViT5 | Cientos de millones de parametros segun variante | No disponible | en ↔ vi | Consultar model card de origen | PyTorch | Especifico para ingles-vietnamita |
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre AGMT y estas alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phitran21/agmt-en-vi-20m
+- Modelo en Hugging Face: https://huggingface.co/Phitran21/agmt-en-vi-20m
 - Facebook del autor: https://www.facebook.com/share/1HerWkmghN
 - Correo del autor: phihhhhhhhhhh@gmail.com
 - Papers, blogs, repositorios adicionales o demos: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

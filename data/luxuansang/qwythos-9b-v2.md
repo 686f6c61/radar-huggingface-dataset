@@ -108,7 +108,7 @@ Qwythos-9B-v2 supera al base en razonamiento (MMLU, GSM8K, GPQA) y elimina por c
 
 ## Enlaces
 
-- Repositorio HuggingFace (mirror): https://huggingface.co/luxuansang/Qwythos-9B-v2
+- Repositorio Hugging Face (mirror): https://huggingface.co/luxuansang/Qwythos-9B-v2
 - Repositorio oficial de Empero AI: https://huggingface.co/empero-ai/Qwythos-9B-v2
 - Repositorio GGUF oficial: https://huggingface.co/empero-ai/Qwythos-9B-v2-GGUF
 - Web de Empero AI: https://empero.org/

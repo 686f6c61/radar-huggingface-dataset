@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| saina-helm-2-omni-0.8b | 852.985.920 | no disponible | Texto, imagen, audio | Probabilidades por opción (sin texto) | Apache 2.0 | HuggingFace, paquete `saina`, servidor HTTP propio, API en saina.run |
-| run-saina/saina-helm-2-0.8b | no disponible | no disponible | Solo texto | Probabilidades por opción (sin texto) | no disponible | HuggingFace; hermano textual del modelo descrito |
-| Qwen/Qwen3.5-0.8B | no disponible en la información proporcionada | no disponible | no disponible | Generación de texto | no disponible | HuggingFace; modelo base sobre el que se hace fine-tuning |
+| saina-helm-2-omni-0.8b | 852.985.920 | no disponible | Texto, imagen, audio | Probabilidades por opción (sin texto) | Apache 2.0 | Hugging Face, paquete `saina`, servidor HTTP propio, API en saina.run |
+| run-saina/saina-helm-2-0.8b | no disponible | no disponible | Solo texto | Probabilidades por opción (sin texto) | no disponible | Hugging Face; hermano textual del modelo descrito |
+| Qwen/Qwen3.5-0.8B | no disponible en la información proporcionada | no disponible | no disponible | Generación de texto | no disponible | Hugging Face; modelo base sobre el que se hace fine-tuning |
 | Otros modelos de decisión o clasificación multimodal de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas; la model card no publica métricas frente a otros modelos.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas; la mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/run-saina/saina-helm-2-omni-0.8b
+- Modelo en Hugging Face: https://huggingface.co/run-saina/saina-helm-2-omni-0.8b
 - Modelo hermano solo texto: https://huggingface.co/run-saina/saina-helm-2-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paquete `saina` en PyPI: https://pypi.org/project/saina/

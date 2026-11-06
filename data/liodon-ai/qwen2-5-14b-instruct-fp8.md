@@ -77,7 +77,7 @@ La principal diferencia entre el modelo original y esta versión FP8 es el tama�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/liodon-ai/Qwen2.5-14B-Instruct-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/liodon-ai/Qwen2.5-14B-Instruct-FP8)
 - [Modelo base Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct)
 - [Web de Liodon AI](https://liodon.ai/)
 - [llm-compressor (herramienta de cuantización)](https://github.com/vllm-project/llm-compressor)

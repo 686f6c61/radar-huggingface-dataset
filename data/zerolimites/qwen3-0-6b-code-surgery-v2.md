@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks estándar ni de comparaciones con otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zerolimites/Qwen3-0.6B-Code-Surgery-v2
+- Modelo en Hugging Face: https://huggingface.co/zerolimites/Qwen3-0.6B-Code-Surgery-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web proporcionada.

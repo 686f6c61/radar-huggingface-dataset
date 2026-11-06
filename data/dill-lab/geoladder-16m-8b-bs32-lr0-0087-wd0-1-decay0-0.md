@@ -19,7 +19,7 @@ Cada configuracion del conjunto varia de forma controlada el tamano de modelo, e
 | Tipos de cuantizacion | no disponible (no se publican pesos cuantizados ni GGUF) |
 | Idiomas soportados | no declarados; el corpus de entrenamiento (the Pile deduplicado) es predominantemente en ingles |
 | Licencia | no disponible |
-| Formato de pesos | `pytorch_model.bin` (PyTorch, sin safetensors), con `config.json` de HuggingFace y `config.yaml` original de OLMo |
+| Formato de pesos | `pytorch_model.bin` (PyTorch, sin safetensors), con `config.json` de Hugging Face y `config.yaml` original de OLMo |
 | Tokens de entrenamiento | 8.000 millones |
 | Batch size | 32 secuencias de 2048 tokens |
 | Learning rate pico | 0,0087 (schedule coseno) |
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | GeoLadder-16M-8B-bs32-lr0.0087-wd0.1-decay0.0 | 16M | 8B | 2048 (secuencias de entrenamiento) | no disponible | 41 (`step0`-`step122081`) |
 | Pythia-14M (EleutherAI) | 14M | 300B (segun documentacion publica) | 2048 | Apache 2.0 | 154 (segun documentacion publica) |
 | Pythia-70M (EleutherAI) | 70M | 300B (segun documentacion publica) | 2048 | Apache 2.0 | 154 (segun documentacion publica) |
-| SmolLM-135M (HuggingFace) | 135M | 600B | 2048 | Apache 2.0 | no disponible en la informacion consultada |
+| SmolLM-135M (Hugging Face) | 135M | 600B | 2048 | Apache 2.0 | no disponible en la informacion consultada |
 
 Nota: los valores de las filas correspondientes a modelos de terceros proceden de su documentacion publica y deben verificarse contra las model cards oficiales antes de citarlos. El modelo objeto de esta ficha esta pensado como artefacto de investigacion con presupuesto de tokens muy inferior (8B frente a 300B o 600B) y sin licencia declarada, por lo que no es un sustituto directo de los modelos de la comparativa en tareas de generacion de texto.
 
@@ -96,7 +96,7 @@ Nota: los valores de las filas correspondientes a modelos de terceros proceden d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.1-decay0.0
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.1-decay0.0
 - Coleccion GeoLadder: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Articulo en PMLR: https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

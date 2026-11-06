@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrn00x/optilife-2.0A` es un ajuste fino (finetune) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, que a su vez deriva de Meta Llama 3.1 8B Instruct. Lo publica el usuario `mrn00x` en HuggingFace bajo licencia Apache 2.0 y con el identificador de idioma `en` (ingles). El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un conjunto de pesos cuantizados en 4 bits y no con los pesos completos en precision nativa (que rondarian los 16 GB en bf16).
+`mrn00x/optilife-2.0A` es un ajuste fino (finetune) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, que a su vez deriva de Meta Llama 3.1 8B Instruct. Lo publica el usuario `mrn00x` en Hugging Face bajo licencia Apache 2.0 y con el identificador de idioma `en` (ingles). El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un conjunto de pesos cuantizados en 4 bits y no con los pesos completos en precision nativa (que rondarian los 16 GB en bf16).
 
 La model card es practicamente vacia: no describe el dataset de entrenamiento, el objetivo del ajuste, hiperparametros, benchmarks ni casos de uso previstos. Solo indica que el modelo se entreno con Unsloth (herramienta de fine-tuning optimizada para GPUs de consumo) y que parte del checkpoint Instruct de Llama 3.1 8B ya cuantizado a 4 bits. Por tanto, la mayor parte de las especificaciones tecnicas que se detallan a continuacion provienen del modelo base y no de informacion publicada por el autor del finetune.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrn00x/optilife-2.0A | 8B | 128k (heredado, no verificado) | Apache 2.0 | HuggingFace, 0 descargas | Finetune sin model card ni benchmarks |
-| Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace, ampliamente usado | Modelo base oficial con evaluacion publicada |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | HuggingFace | Alternativa densa con licencia permisiva |
-| Qwen2.5-7B-Instruct | 7,6B | 128k | Apache 2.0 | HuggingFace | Multilingue con benchmarks publicados |
+| mrn00x/optilife-2.0A | 8B | 128k (heredado, no verificado) | Apache 2.0 | Hugging Face, 0 descargas | Finetune sin model card ni benchmarks |
+| Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face, ampliamente usado | Modelo base oficial con evaluacion publicada |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | Hugging Face | Alternativa densa con licencia permisiva |
+| Qwen2.5-7B-Instruct | 7,6B | 128k | Apache 2.0 | Hugging Face | Multilingue con benchmarks publicados |
 
 La comparacion es estructural: el finetune hereda el tamano y contexto de Llama 3.1 8B, pero carece de la documentacion y evaluacion de los modelos oficiales. Frente a Mistral o Qwen, la ventaja de licencia Apache 2.0 es equivalente, pero la falta de transparencia del ajuste lo hace menos adecuado para produccion sin validacion previa.
 
@@ -89,8 +89,8 @@ La comparacion es estructural: el finetune hereda el tamano y contexto de Llama 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrn00x/optilife-2.0A
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/mrn00x/optilife-2.0A
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo oficial Llama 3.1 8B Instruct: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Paper de Llama 3 (Meta): https://arxiv.org/abs/2407.21783

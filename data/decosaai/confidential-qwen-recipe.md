@@ -119,7 +119,7 @@ No se dispone de comparativas con otras soluciones de inferencia confiable (por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/decosaai/confidential-qwen-recipe
+- Repositorio en Hugging Face: https://huggingface.co/decosaai/confidential-qwen-recipe
 - Modelo upstream servido: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Issue de vLLM sobre el runner V2 bajo CC: https://github.com/vllm-project/vllm/issues/57224
 - PR upstream relacionado con el arreglo UVA: https://github.com/vllm-project/vllm/pull/57415

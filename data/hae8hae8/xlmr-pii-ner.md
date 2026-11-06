@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hae8hae8/xlmr-pii-ner` es un modelo publicado en HuggingFace por el usuario hae8hae8, presumiblemente orientado a la deteccion de informacion personal identificable (PII) mediante reconocimiento de entidades nombradas (NER). El identificador del modelo sugiere que se basa en la arquitectura XLM-RoBERTa, un transformer encoder multilingue de tipo solo encoder desarrollado originalmente por Facebook AI Research, aunque la model card no confirma explicitamente esta base.
+`hae8hae8/xlmr-pii-ner` es un modelo publicado en Hugging Face por el usuario hae8hae8, presumiblemente orientado a la deteccion de informacion personal identificable (PII) mediante reconocimiento de entidades nombradas (NER). El identificador del modelo sugiere que se basa en la arquitectura XLM-RoBERTa, un transformer encoder multilingue de tipo solo encoder desarrollado originalmente por Facebook AI Research, aunque la model card no confirma explicitamente esta base.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia MIT y no incluye informacion sobre arquitectura, datos de entrenamiento, idiomas, rendimiento ni uso previsto. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de un modelo recien publicado o de muy baja difusion, sin validacion por parte de la comunidad.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Si el modelo es un encoder tipo XLM-RoBERTa base (unos 278 millones de parametros), cabria en GPUs consumer con 4-8 GB de VRAM en FP16; si es la variante large (unos 560 millones), requeriria del orden de 8-12 GB. Estas cifras son estimaciones por analogia y no estan confirmadas.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU consumer: no confirmada.
-- Opciones de despliegue: no documentadas. Para un encoder de este tipo serian habituales HuggingFace Transformers, ONNX Runtime, TorchScript o vLLM/TGI para serving por lotes, pero el autor no especifica ninguna.
+- Opciones de despliegue: no documentadas. Para un encoder de este tipo serian habituales Hugging Face Transformers, ONNX Runtime, TorchScript o vLLM/TGI para serving por lotes, pero el autor no especifica ninguna.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -65,9 +65,9 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hae8hae8/xlmr-pii-ner | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| dslim/bert-base-NER | ~110 M | 512 | MIT | HuggingFace |
-| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 | MIT | HuggingFace |
+| hae8hae8/xlmr-pii-ner | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| dslim/bert-base-NER | ~110 M | 512 | MIT | Hugging Face |
+| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,4 +81,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hae8hae8/xlmr-pii-ner
+- Hugging Face: https://huggingface.co/hae8hae8/xlmr-pii-ner

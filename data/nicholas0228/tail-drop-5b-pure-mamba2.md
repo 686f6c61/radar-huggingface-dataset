@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparativos provienen de sus respectivas fichas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nicholas0228/tail-drop-5b-pure-mamba2
+- Modelo en Hugging Face: https://huggingface.co/Nicholas0228/tail-drop-5b-pure-mamba2
 - Revisión de investigación fijada del código: https://github.com/Nicholas0228/tail_drop_attn/tree/758839451f45df67d2fb3a5626b8a07247b38f2e
 - Corpus de entrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Ficheros citados en la model card (no enlazados directamente): `INFERENCE.md`, `research_config.json`, `release_manifest.json`, `tensor_manifest.json`, `provenance.json`, `THIRD_PARTY.md`

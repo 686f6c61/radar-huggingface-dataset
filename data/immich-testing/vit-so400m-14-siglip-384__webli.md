@@ -27,7 +27,7 @@ El modelo sigue el paradigma SigLIP: un codificador de imagenes ViT y un codific
 
 El checkpoint se preentreno sobre WebLI (Web Language Image), un corpus a gran escala de pares imagen-texto, y trabaja a una resolucion de 384x384 con parches de 14x14. No se dispone en la informacion proporcionada de detalles sobre el numero exacto de tokens de imagen vistos, la composicion del dataset, ni sobre si se aplicaron etapas posteriores de ajuste (RLHF, DPO o similares). Tampoco se confirman innovaciones adicionales como decodificacion especulativa o atencion lineal para esta variante concreta.
 
-Conviene subrayar que el reempaquetado bajo `immich-testing` puede implicar conversiones de formato, recortes de componentes o cambios en la configuracion respecto al checkpoint original, aspectos que no quedan documentados en la ficha de HuggingFace.
+Conviene subrayar que el reempaquetado bajo `immich-testing` puede implicar conversiones de formato, recortes de componentes o cambios en la configuracion respecto al checkpoint original, aspectos que no quedan documentados en la ficha de Hugging Face.
 
 ## Capacidades
 
@@ -52,14 +52,14 @@ Conviene subrayar que el reempaquetado bajo `immich-testing` puede implicar conv
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible para este repositorio concreto. La ficha de HuggingFace no incluye metricas y la busqueda web no aporta evaluaciones del checkpoint. No se aportan cifras para evitar datos no verificados.
+No se han publicado resultados de benchmarks en la informacion disponible para este repositorio concreto. La ficha de Hugging Face no incluye metricas y la busqueda web no aporta evaluaciones del checkpoint. No se aportan cifras para evitar datos no verificados.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: en torno a 1.7 GB en fp32 y aproximadamente 0.9 GB en fp16/bf16 para una torre de ~400 M de parametros (estimacion orientativa; el dato exacto de este repositorio no esta disponible).
 - GPU recomendadas: cualquier GPU con al menos ~4 GB de VRAM para fp16; modelos como NVIDIA RTX 3060, RTX 4090, A100 o H100 son mas que suficientes para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en GPU de consumo modernas, incluidas las de gama media.
-- Opciones de despliegue: PyTorch, HuggingFace Transformers, OpenCLIP, exportacion a ONNX, y el propio pipeline de machine learning de Immich; no se confirman integraciones con vLLM, llama.cpp ni Ollama, orientadas a modelos de lenguaje.
+- Opciones de despliegue: PyTorch, Hugging Face Transformers, OpenCLIP, exportacion a ONNX, y el propio pipeline de machine learning de Immich; no se confirman integraciones con vLLM, llama.cpp ni Ollama, orientadas a modelos de lenguaje.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Los datos de licencia y contexto de las alternativas corresponden a sus publicac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/immich-testing/ViT-SO400M-14-SigLIP-384__webli
+- Repositorio Hugging Face: https://huggingface.co/immich-testing/ViT-SO400M-14-SigLIP-384__webli
 - Immich (sitio oficial): https://immich.app/
 - Immich (repositorio GitHub): https://github.com/immich-app/immich
 - Immich (documentacion): https://docs.immich.app/

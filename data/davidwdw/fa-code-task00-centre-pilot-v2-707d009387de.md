@@ -90,7 +90,7 @@ No disponible. No se conocen modelos comparables porque no se ha identificado qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v2-707d009387de
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v2-707d009387de
 - Receta canonica citada en la model card (referencia interna, sin URL publica): evaluations/2026-09-23_task00_centre_recovery_pilot
 - Conjunto de rollouts citado (referencia interna): B1k_Rollouts
 - Paper, blog, repositorio de codigo o demo: no disponibles.

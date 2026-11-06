@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lilbase es un modelo de lenguaje base (no ajustado para instrucciones) de 297 millones de parámetros, desarrollado por el usuario navthings y publicado en HuggingFace. Se trata de un transformer estilo Llama entrenado desde cero sobre 6.100 millones de tokens del subconjunto sample-10BT de FineWeb-Edu, lo que lo sitúa aproximadamente en el punto óptimo de Chinchilla para su tamaño. Su objetivo es servir como modelo base ligero y reproducible: dado un inicio de frase, continúa el texto en lugar de responder preguntas.
+lilbase es un modelo de lenguaje base (no ajustado para instrucciones) de 297 millones de parámetros, desarrollado por el usuario navthings y publicado en Hugging Face. Se trata de un transformer estilo Llama entrenado desde cero sobre 6.100 millones de tokens del subconjunto sample-10BT de FineWeb-Edu, lo que lo sitúa aproximadamente en el punto óptimo de Chinchilla para su tamaño. Su objetivo es servir como modelo base ligero y reproducible: dado un inicio de frase, continúa el texto en lugar de responder preguntas.
 
 La arquitectura emplea las convenciones habituales de la familia Llama (GQA, RoPE, RMSNorm, SwiGLU) con 24 capas, dimensión oculta de 1024, 16 cabezas de consulta, 4 cabezas de clave/valor y embeddings atados. La ventana de contexto es de 1024 tokens y el tokenizador es el de Llama con un vocabulario de 32.000 entradas. El entrenamiento se realizó en una TPU v5e-8 de Kaggle con paralelismo de datos sobre 8 chips, durante 11.043 pasos de 524.000 tokens cada uno, alcanzando una pérdida de validación de 2,608.
 
@@ -98,7 +98,7 @@ Los únicos datos comparativos publicados por el autor corresponden a GPT-2 de 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/navthings/lilbase
+- Modelo en Hugging Face: https://huggingface.co/navthings/lilbase
 - Variante conversacional lilchat: https://huggingface.co/navthings/lilchat
 - Repositorio de código: https://github.com/navthings/lilbase
 - Playground en navegador: https://navthings.github.io/playground/

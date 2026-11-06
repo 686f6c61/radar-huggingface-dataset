@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaCO-8B | 8B | no disponible | Difusión continua | NVIDIA Nemotron Open Model License | HuggingFace (52 descargas) |
+| LLaCO-8B | 8B | no disponible | Difusión continua | NVIDIA Nemotron Open Model License | Hugging Face (52 descargas) |
 | LLaDA-8B | 8B | no disponible en esta ficha | Difusión discreta (masked) | no disponible | no disponible |
 | Dream-7B | 7B | no disponible en esta ficha | Difusión discreta | no disponible | no disponible |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/escapist413/LLaCO-8B
+- Hugging Face: https://huggingface.co/escapist413/LLaCO-8B
 - Artículo arXiv: https://arxiv.org/abs/2610.32604
 - Página del proyecto: https://escapistmost.github.io/LLaCO/
 - Repositorio GitHub: https://github.com/WhenGIX/LLaCO

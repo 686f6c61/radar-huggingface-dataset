@@ -2,11 +2,11 @@
 
 ## Resumen
 
-T5-base es un modelo de lenguaje encoder-decoder basado en la arquitectura Transformer, desarrollado originalmente por Google Research (Colin Raffel, Noam Shazeer, Adam Roberts y colaboradores) y publicado en el paper "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer" (JMLR, 2020). El checkpoint alojado en `MusicForge/t5-base` es una re-subida del checkpoint oficial de T5-base (222,9 millones de parametros segun los pesos en safetensors), etiquetado en HuggingFace con el pipeline de traduccion y con soporte declarado para ingles, frances, rumano y aleman. El problema que resuelve es el de unificar todas las tareas de PLN (traduccion, resumen, clasificacion, respuesta a preguntas) bajo un mismo formato texto-a-texto, de modo que un unico modelo, funcion de perdida e hiperparametros sirvan para cualquier tarea.
+T5-base es un modelo de lenguaje encoder-decoder basado en la arquitectura Transformer, desarrollado originalmente por Google Research (Colin Raffel, Noam Shazeer, Adam Roberts y colaboradores) y publicado en el paper "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer" (JMLR, 2020). El checkpoint alojado en `MusicForge/t5-base` es una re-subida del checkpoint oficial de T5-base (222,9 millones de parametros segun los pesos en safetensors), etiquetado en Hugging Face con el pipeline de traduccion y con soporte declarado para ingles, frances, rumano y aleman. El problema que resuelve es el de unificar todas las tareas de PLN (traduccion, resumen, clasificacion, respuesta a preguntas) bajo un mismo formato texto-a-texto, de modo que un unico modelo, funcion de perdida e hiperparametros sirvan para cualquier tarea.
 
 La relevancia actual de T5-base es la de un baseline solido y bien documentado: con 220 millones de parametros ofrece un equilibrio entre calidad y coste computacional que lo hace adecuado para fine-tuning sobre dominios especificos y para despliegues en hardware modesto. No es un modelo conversacional ni un LLM generativo moderno; es un modelo de seq2seq pensado para tareas supervisadas concretas.
 
-Conviene senalar que la model card es la plantilla estandar de T5 publicada por HuggingFace, con secciones como "Out-of-Scope Use", "Bias, Risks, and Limitations" o "Recommendations" marcadas como "More information needed". La informacion sobre benchmarks y detalles de evaluacion esta truncada en la propia model card, por lo que en esta ficha se indica explicitamente cuando un dato no esta disponible.
+Conviene senalar que la model card es la plantilla estandar de T5 publicada por Hugging Face, con secciones como "Out-of-Scope Use", "Bias, Risks, and Limitations" o "Recommendations" marcadas como "More information needed". La informacion sobre benchmarks y detalles de evaluacion esta truncada en la propia model card, por lo que en esta ficha se indica explicitamente cuando un dato no esta disponible.
 
 ## Especificaciones tecnicas
 
@@ -60,18 +60,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada en FP16/BF16: aproximadamente 0,45 GB para pesos; un despliegue en GPU consumer de 4-6 GB es viable.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para inferencia en FP16 (RTX 3050, RTX 3060, RTX 4060, T4). Para fine-tuning, se recomienda al menos 8-12 GB (RTX 3080/4070, A10, L4); para entrenamiento con lotes grandes, A100 o H100.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU moderna con 4 GB o mas, y tambien en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch/TensorFlow/JAX), vLLM (soporte para encoder-decoder limitado), TGI, ONNX Runtime, y conversion a GGUF para llama.cpp si se generan los pesos (no se distribuyen en el repo).
+- Opciones de despliegue: Hugging Face Transformers (PyTorch/TensorFlow/JAX), vLLM (soporte para encoder-decoder limitado), TGI, ONNX Runtime, y conversion a GGUF para llama.cpp si se generan los pesos (no se distribuyen en el repo).
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; dependen del hardware y del tamano de secuencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| T5-base (este checkpoint) | 222,9M | no disponible en la model card | en, fr, ro, de | apache-2.0 | HuggingFace |
-| T5-small | ~60M | no disponible | en (principalmente) | apache-2.0 | HuggingFace |
-| T5-large | ~770M | no disponible | en (principalmente) | apache-2.0 | HuggingFace |
-| mT5-base | ~580M | no disponible | 101 idiomas | apache-2.0 | HuggingFace |
-| BART-base | ~140M | 1024 tokens | en (principalmente) | MIT | HuggingFace |
+| T5-base (este checkpoint) | 222,9M | no disponible en la model card | en, fr, ro, de | apache-2.0 | Hugging Face |
+| T5-small | ~60M | no disponible | en (principalmente) | apache-2.0 | Hugging Face |
+| T5-large | ~770M | no disponible | en (principalmente) | apache-2.0 | Hugging Face |
+| mT5-base | ~580M | no disponible | 101 idiomas | apache-2.0 | Hugging Face |
+| BART-base | ~140M | 1024 tokens | en (principalmente) | MIT | Hugging Face |
 
 La comparativa se limita a la familia T5 y a BART por ser los seq2seq mas directamente equiparables. No se dispone de datos de rendimiento comparativo en la informacion proporcionada, por lo que la tabla solo recoge parametros, licencia y disponibilidad.
 
@@ -88,14 +88,14 @@ La comparativa se limita a la familia T5 y a BART por ser los seq2seq mas direct
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MusicForge/t5-base
+- Hugging Face: https://huggingface.co/MusicForge/t5-base
 - Paper T5 (JMLR): https://jmlr.org/papers/volume21/20-074/20-074.pdf
 - Blog de Google sobre T5: https://ai.googleblog.com/2020/02/exploring-transfer-learning-with-t5.html
 - Repositorio GitHub de T5: https://github.com/google-research/text-to-text-transfer-transformer
 - Documentacion de T5 en Transformers: https://huggingface.co/docs/transformers/model_doc/t5
 - Dataset C4: https://huggingface.co/datasets/c4
 - Dataset Wiki-DPR: https://huggingface.co/datasets/wiki_dpr
-- Checkpoints T5 en HuggingFace: https://huggingface.co/models?search=t5
+- Checkpoints T5 en Hugging Face: https://huggingface.co/models?search=t5
 - Paper CoLA: https://arxiv.org/abs/1805.12471
 - Paper STS-B: https://arxiv.org/abs/1708.00055
 - Paper MNLI: https://arxiv.org/abs/1704.05426

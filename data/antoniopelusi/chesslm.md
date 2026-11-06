@@ -2,9 +2,9 @@
 
 ## Resumen
 
-chesSLM es un modelo de lenguaje pequeno (SLM, por sus siglas en ingles) publicado en HuggingFace por el desarrollador independiente antoniopelusi bajo licencia Apache 2.0. El repositorio se creo el 4 de noviembre de 2026 y, en el momento de redactar esta ficha, no cuenta con descargas registradas y solo acumula un "like", lo que indica que se trata de una publicacion muy reciente y practicamente sin adopcion por parte de la comunidad.
+chesSLM es un modelo de lenguaje pequeno (SLM, por sus siglas en ingles) publicado en Hugging Face por el desarrollador independiente antoniopelusi bajo licencia Apache 2.0. El repositorio se creo el 4 de noviembre de 2026 y, en el momento de redactar esta ficha, no cuenta con descargas registradas y solo acumula un "like", lo que indica que se trata de una publicacion muy reciente y practicamente sin adopcion por parte de la comunidad.
 
-La model card publicada por el autor se limita a declarar la licencia Apache 2.0; no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. Tampoco se han publicado resultados de benchmarks, demos o documentacion tecnica adicional en el repositorio de HuggingFace.
+La model card publicada por el autor se limita a declarar la licencia Apache 2.0; no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. Tampoco se han publicado resultados de benchmarks, demos o documentacion tecnica adicional en el repositorio de Hugging Face.
 
 Por tanto, esta ficha se ha elaborado con la informacion estrictamente disponible en el repositorio y en la busqueda web asociada. Cualquier dato tecnico no confirmado se marca explicitamente como "no disponible" para no inducir a error a desarrolladores e investigadores que evalúen el modelo.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se ha elaborado con la informacion estrictamente disponibl
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en el repositorio de HuggingFace. Se desconoce si emplea un transformer decoder-only clasico, una arquitectura MoE, un modelo de estado recurrente (SSM) o un esquema hibrido. El nombre "chesSLM" sugiere un modelo de lenguaje pequeno, pero no se confirma ni el numero de parametros ni la ventana de contexto.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en el repositorio de Hugging Face. Se desconoce si emplea un transformer decoder-only clasico, una arquitectura MoE, un modelo de estado recurrente (SSM) o un esquema hibrido. El nombre "chesSLM" sugiere un modelo de lenguaje pequeno, pero no se confirma ni el numero de parametros ni la ventana de contexto.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion del dataset, proporción de codigo o multilingue), ni sobre posibles fases de ajuste fino supervisado, RLHF o DPO. No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/antoniopelusi/chesSLM
+- Repositorio en Hugging Face: https://huggingface.co/antoniopelusi/chesSLM
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web asociada.

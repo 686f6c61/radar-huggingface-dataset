@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rezuwan/AktarKhan_Weights` es un repositorio de pesos publicado en HuggingFace por el usuario Rezuwan el 27 de septiembre de 2026 y actualizado ese mismo día, apenas siete minutos después de su creación. El repositorio ocupa 1,3 GB y declara licencia MIT, pero no incluye model card más allá de la línea de licencia, ni pipeline declarado, ni idiomas soportados, ni descripción del modelo, del entrenamiento o del uso previsto. Con 0 descargas y 0 likes en el momento del análisis, se trata de un artefacto sin adopción ni validación por parte de la comunidad.
+`Rezuwan/AktarKhan_Weights` es un repositorio de pesos publicado en Hugging Face por el usuario Rezuwan el 27 de septiembre de 2026 y actualizado ese mismo día, apenas siete minutos después de su creación. El repositorio ocupa 1,3 GB y declara licencia MIT, pero no incluye model card más allá de la línea de licencia, ni pipeline declarado, ni idiomas soportados, ni descripción del modelo, del entrenamiento o del uso previsto. Con 0 descargas y 0 likes en el momento del análisis, se trata de un artefacto sin adopción ni validación por parte de la comunidad.
 
 No es posible determinar qué modelo contiene el repositorio, qué arquitectura emplea, cuántos parámetros tiene ni para qué tarea fue entrenado. El nombre del repositorio sugiere un conjunto de pesos asociado a un nombre propio ("AktarKhan"), lo que apunta a un ajuste fino personal o a un experimento, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
@@ -88,6 +88,6 @@ No disponible. Sin conocer la arquitectura, el número de parámetros ni la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rezuwan/AktarKhan_Weights
+- Repositorio en Hugging Face: https://huggingface.co/Rezuwan/AktarKhan_Weights
 - Paper, blog, repositorio de código o demo: no disponible. El autor no enlaza ninguna fuente adicional en la model card.
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante. Los resultados devueltos (pinkbike.com, support.google.com/youtubetv, support.google.com/accounts, pinkbike.com/sandbox/grimdonutgame, support.google.com/youtube) no guardan relación con el modelo.

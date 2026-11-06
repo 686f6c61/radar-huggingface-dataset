@@ -2,11 +2,11 @@
 
 ## Resumen
 
-UTR-LM-MLMSI es un port minimalista para HuggingFace de la variante **MLM + MFE** (masked language modeling + regresión de energía libre mínima) del modelo UTR-LM, un modelo de lenguaje para ARN específico de regiones 5' UTR (untranslated regions). Fue desarrollado originalmente por Yanyi Chu et al. y publicado en *Nature Machine Intelligence* (2024); este port ha sido realizado por Taykhoom Dalal y verificado bit-exacto contra los pesos originales.
+UTR-LM-MLMSI es un port minimalista para Hugging Face de la variante **MLM + MFE** (masked language modeling + regresión de energía libre mínima) del modelo UTR-LM, un modelo de lenguaje para ARN específico de regiones 5' UTR (untranslated regions). Fue desarrollado originalmente por Yanyi Chu et al. y publicado en *Nature Machine Intelligence* (2024); este port ha sido realizado por Taykhoom Dalal y verificado bit-exacto contra los pesos originales.
 
 El modelo aborda un problema concreto de biología computacional: predecir la eficiencia de traducción (TE) y el nivel de expresión (EL) de ARNm a partir de la secuencia de su región 5' UTR. Para ello, emplea una arquitectura tipo ESM2 (Transformer pre-LN) con solo 1,2 millones de parámetros, 6 capas, 16 cabezas de atención y una dimensión de embedding de 128, con codificación posicional RoPE y una ventana máxima de 1024 tokens (1022 nucleótidos más tokens especiales).
 
-Su relevancia actual radica en que es uno de los pocos modelos de lenguaje para ARN con pesos públicos y verificables, diseñado específicamente para tareas de regulación traduccional, y que puede integrarse fácilmente en pipelines de HuggingFace gracias a este port. La variante MLMSI es la recomendada por el autor para tareas de TE y EL, ya que el checkpoint 3.1 es el que se utilizó en los experimentos reportados en la publicación original.
+Su relevancia actual radica en que es uno de los pocos modelos de lenguaje para ARN con pesos públicos y verificables, diseñado específicamente para tareas de regulación traduccional, y que puede integrarse fácilmente en pipelines de Hugging Face gracias a este port. La variante MLMSI es la recomendada por el autor para tareas de TE y EL, ya que el checkpoint 3.1 es el que se utilizó en los experimentos reportados en la publicación original.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ El preentrenamiento combina dos objetivos: (1) masked language modeling (MLM) so
 - **Generación de embeddings de secuencia**: produce representaciones de 128 dimensiones por token y por secuencia (usando el token CLS), útiles para tareas de regresión y clasificación.
 - **Modelado de lenguaje enmascarado (MLM)**: puede predecir nucleótidos enmascarados en una secuencia de ARN, lo que permite evaluar la plausibilidad de variantes o mutaciones.
 - **Representaciones intermedias**: acceso a las 7 capas de representación (embedding + 6 bloques transformer) para extracción de features a distintos niveles de abstracción.
-- **Fine-tuning estándar**: compatible con el ecosistema HuggingFace Trainer, lo que facilita el ajuste para tareas específicas (TE, EL, estabilidad, etc.).
+- **Fine-tuning estándar**: compatible con el ecosistema Hugging Face Trainer, lo que facilita el ajuste para tareas específicas (TE, EL, estabilidad, etc.).
 - **Backends de atención acelerados**: soporta SDPA (PyTorch 2.0+) y Flash Attention 2, además de la atención eager original.
 - **Capacidades multilingües**: no aplicable; es un modelo biológico con alfabeto de ARN, no procesa lenguaje natural.
 
@@ -47,7 +47,7 @@ El preentrenamiento combina dos objetivos: (1) masked language modeling (MLM) so
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de rendimiento (como correlación de Spearman en TE/EL, AUC, etc.) para este port. El paper original de UTR-LM reporta resultados en tareas de TE y EL, pero esos datos no se han reproducido en la documentación de este modelo en HuggingFace. Se recomienda consultar el artículo de Chu et al. (2024) para métricas detalladas.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de rendimiento (como correlación de Spearman en TE/EL, AUC, etc.) para este port. El paper original de UTR-LM reporta resultados en tareas de TE y EL, pero esos datos no se han reproducido en la documentación de este modelo en Hugging Face. Se recomienda consultar el artículo de Chu et al. (2024) para métricas detalladas.
 
 ## Requisitos de hardware
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Objetivo preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UTR-LM-MLMSI (este) | 1,2 M | 1024 tokens | MLM + MFE | GPL-3.0 | HuggingFace (safetensors) |
-| UTR-LM-MLM | 1,2 M | 1024 tokens | MLM | GPL-3.0 | HuggingFace (safetensors) |
-| UTR-LM-MLMSS | 1,2 M | 1024 tokens | MLM + estructura secundaria | GPL-3.0 | HuggingFace (safetensors) |
-| UTR-LM-MLMSISS | 1,2 M | 1024 tokens | MLM + MFE + estructura secundaria | GPL-3.0 | HuggingFace (safetensors) |
+| UTR-LM-MLMSI (este) | 1,2 M | 1024 tokens | MLM + MFE | GPL-3.0 | Hugging Face (safetensors) |
+| UTR-LM-MLM | 1,2 M | 1024 tokens | MLM | GPL-3.0 | Hugging Face (safetensors) |
+| UTR-LM-MLMSS | 1,2 M | 1024 tokens | MLM + estructura secundaria | GPL-3.0 | Hugging Face (safetensors) |
+| UTR-LM-MLMSISS | 1,2 M | 1024 tokens | MLM + MFE + estructura secundaria | GPL-3.0 | Hugging Face (safetensors) |
 
 Los tres modelos hermanos de la colección UTR-LM comparten la misma arquitectura y tamaño, diferenciándose únicamente en los objetivos auxiliares de preentrenamiento. La variante MLMSI es la recomendada para tareas de TE/EL, mientras que MLMSISS se recomienda para tareas de MRL (mRNA representation learning). No se dispone de comparativas con otros modelos de ARN (como RNA-FM o DNABERT) en la información proporcionada.
 
@@ -80,8 +80,8 @@ Los tres modelos hermanos de la colección UTR-LM comparten la misma arquitectur
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Taykhoom/UTR-LM-MLMSI)
-- [Colección UTR-LM en HuggingFace](https://huggingface.co/collections/Taykhoom/utr-lm-6a173a96ae7c070c3a84ebb4)
+- [Modelo en Hugging Face](https://huggingface.co/Taykhoom/UTR-LM-MLMSI)
+- [Colección UTR-LM en Hugging Face](https://huggingface.co/collections/Taykhoom/utr-lm-6a173a96ae7c070c3a84ebb4)
 - [Repositorio original UTR-LM en GitHub](https://github.com/a96123155/UTR-LM)
 - [Página de UTR-LM en MultiMolecule](https://multimolecule.danling.org/models/utrlm/)
 - [Artículo original (Nature Machine Intelligence, 2024)](https://doi.org/10.1038/s42256-024-00823-9)

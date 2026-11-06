@@ -19,7 +19,7 @@ El modelo se compila, perfila y evalúa mediante Qualcomm AI Hub Workbench (QAIR
 | Tipos de cuantizacion | Float, w8a16, w8a8 (formatos ONNX, QNN_DLC y TFLITE segun tabla del autor) |
 | Idiomas soportados | No disponible (las etiquetas de salida corresponden a las 80 clases de COCO, en ingles) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | PyTorch (repo en HuggingFace, 0,5 GB) mas exportaciones ONNX, QNN_DLC y TFLITE |
+| Formato de pesos | PyTorch (repo en Hugging Face, 0,5 GB) mas exportaciones ONNX, QNN_DLC y TFLITE |
 | Resolucion de entrada | 800 x 800 |
 | Checkpoint base | faster_rcnn_R_50_C4_1x |
 | Tamano del modelo (float) | 129 MB |
@@ -98,7 +98,7 @@ Advertencia: estos valores corresponden solo al submódulo `proposal_generator` 
 
 | Modelo | Parametros | Contexto / entrada | Precision publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Detectron2-Detection (qualcomm) | 33,8 M | Imagen 800 x 800 | mAP no disponible; latencia 10,9-114,4 ms por submódulo | Apache-2.0 | HuggingFace, Qualcomm AI Hub, GitHub `ai-hub-models` |
+| Detectron2-Detection (qualcomm) | 33,8 M | Imagen 800 x 800 | mAP no disponible; latencia 10,9-114,4 ms por submódulo | Apache-2.0 | Hugging Face, Qualcomm AI Hub, GitHub `ai-hub-models` |
 | Detectron2 Faster R-CNN R50-C4 (facebookresearch, original) | No disponible en la informacion proporcionada (mismo checkpoint `faster_rcnn_R_50_C4_1x`) | Imagen, configurable | No disponible en la informacion proporcionada | Apache-2.0 | GitHub `facebookresearch/detectron2` |
 | Otros detectores optimizados para Qualcomm AI Hub (familia YOLO, SSD, etc.) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Qualcomm AI Hub |
 
@@ -111,7 +111,7 @@ La informacion proporcionada no incluye datos de exactitud ni de parametros de a
 - El rendimiento de Faster R-CNN en objetos muy pequenos o muy solapados es inferior al de detectores mas modernos de una sola etapa; es una limitacion conocida de la arquitectura, no compensada por ninguna innovacion documentada aqui.
 - Resolucion de entrada fija de 800 x 800 en los artefactos preexportados; otras resoluciones requieren reexportacion.
 - Las latencias publicadas corresponden unicamente al `proposal_generator`; la inferencia completa es mas lenta y no esta cuantificada en la informacion disponible.
-- El repositorio de HuggingFace no incluye pesos en formato PyTorch cargables de forma directa para entrenamiento; esta orientado a artefactos compilados para dispositivos Qualcomm.
+- El repositorio de Hugging Face no incluye pesos en formato PyTorch cargables de forma directa para entrenamiento; esta orientado a artefactos compilados para dispositivos Qualcomm.
 - El uso de artefactos QNN_DLC y del perfilado en dispositivos reales requiere una cuenta en Qualcomm AI Hub; el acceso al hardware alojado esta sujeto a registro.
 - Licencia Apache-2.0, que permite uso comercial y modificacion siempre que se conserve el aviso de licencia y se documenten los cambios; el modelo derivado de Detectron2 mantiene la misma licencia permisiva, sin clausulas de uso aceptable adicionales documentadas.
 - Riesgo de alucinacion en el sentido de falsos positivos y falsos negativos: el modelo es un detector discriminativo, no genera texto, pero puede producir cajas con confianza alta sobre regiones sin objeto real, especialmente tras cuantizacion agresiva.
@@ -120,7 +120,7 @@ La informacion proporcionada no incluye datos de exactitud ni de parametros de a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Detectron2-Detection
+- Hugging Face: https://huggingface.co/qualcomm/Detectron2-Detection
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/detectron2_detection
 - Repositorio GitHub de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/detectron2_detection
 - Implementacion original de Detectron2 (Meta AI): https://github.com/facebookresearch/detectron2/

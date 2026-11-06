@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-tr3-4bpw es una cuantización EXL3 de 4 bits del modelo base GLM-5.3-Flash-BF16, desarrollada por el usuario brandonmusic en HuggingFace. El modelo base, creado por zai-org, pertenece a la familia GLM y presenta una arquitectura de mezcla de expertos (MoE) con 288 expertos enrutados, atención MLA (Multi-head Latent Attention) y soporte multimodal (imagen y texto). Esta versión cuantizada está optimizada específicamente para GPUs Blackwell SM120 (como la RTX PRO 6000 Workstation) y ofrece un runtime personalizado con soporte para decodificación especulativa MTP3 y caché KV en FP8 o NVFP4.
+GLM-5.3-Flash-tr3-4bpw es una cuantización EXL3 de 4 bits del modelo base GLM-5.3-Flash-BF16, desarrollada por el usuario brandonmusic en Hugging Face. El modelo base, creado por zai-org, pertenece a la familia GLM y presenta una arquitectura de mezcla de expertos (MoE) con 288 expertos enrutados, atención MLA (Multi-head Latent Attention) y soporte multimodal (imagen y texto). Esta versión cuantizada está optimizada específicamente para GPUs Blackwell SM120 (como la RTX PRO 6000 Workstation) y ofrece un runtime personalizado con soporte para decodificación especulativa MTP3 y caché KV en FP8 o NVFP4.
 
 El modelo destaca por su alto rendimiento en prefill (más de 6.000 tokens por segundo en contextos de hasta 64K) y una decodificación sostenida de aproximadamente 145 tokens por segundo en una sola petición, con soporte de contexto de hasta 131.072 tokens. Su relevancia radica en que permite ejecutar un modelo de 87.800 millones de parámetros con cuantización agresiva en hardware de doble GPU, manteniendo una fidelidad razonable respecto al modelo BF16 original, medida mediante KLD (divergencia Kullback-Leibler) sobre la caché KV.
 
@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonmusic/GLM-5.3-Flash-tr3-4bpw
+- Repositorio Hugging Face: https://huggingface.co/brandonmusic/GLM-5.3-Flash-tr3-4bpw
 - Repositorio GitHub (mismo README): https://github.com/brandonmmusic-max/glm-5.3-flash-exl3-4bpw
 - Imagen Docker Hub: https://hub.docker.com/r/verdictai/glm53-flash-exl3-k4
 - Documentacion de GLM-5.3-Flash en Unsloth: https://unsloth.ai/docs/models/glm-5.3

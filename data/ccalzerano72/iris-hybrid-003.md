@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IRis-hybrid-003 es un checkpoint de un modelo de difusión latente para restauración ciega de imagen (*blind image restoration*), desarrollado por el usuario ccalzerano72 en el marco de la tesis de máster «Blind Image Restoration via Dual-Conditioned Latent Diffusion» de la Universidad de Pisa. Se publica como un *checkpoint* intermedio identificado como `002_re_015000` (15.000 iteraciones) y se distribuye a través de HuggingFace con la librería `diffusers` y pipeline `image-to-image`.
+IRis-hybrid-003 es un checkpoint de un modelo de difusión latente para restauración ciega de imagen (*blind image restoration*), desarrollado por el usuario ccalzerano72 en el marco de la tesis de máster «Blind Image Restoration via Dual-Conditioned Latent Diffusion» de la Universidad de Pisa. Se publica como un *checkpoint* intermedio identificado como `002_re_015000` (15.000 iteraciones) y se distribuye a través de Hugging Face con la librería `diffusers` y pipeline `image-to-image`.
 
 El modelo parte de Stable Diffusion 2.1 y lo adapta a una tarea de restauración: el UNet tiene su primera convolución expandida a 8 canales de entrada, de forma que recibe simultáneamente el latente de la imagen degradada (4 canales) y el latente ruidoso (4 canales). A esto se añade una rama ControlNet condicionada por la imagen degradada en espacio de píxeles, entrenada de forma conjunta con el UNet. El resultado es una arquitectura de condicionamiento dual que no depende de texto: la cross-attention usa el embedding de texto vacío porque el condicionamiento ARNIQA está desactivado en este checkpoint (`arniqa_enabled: false`).
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Entrada | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| ccalzerano72/IRis-hybrid-003 | Difusión latente + ControlNet para restauración ciega | 865.922.244 (safetensors) | Imagen degradada (condición dual: latente + píxeles) | OpenRAIL++ | HuggingFace, 0 descargas, 0 likes | Sin benchmarks publicados |
-| sd2-community/stable-diffusion-2-1 | Difusión latente texto-imagen (modelo base) | no disponible en la información proporcionada | Texto + imagen inicial | no disponible en la información proporcionada | HuggingFace | no disponible en la información proporcionada |
+| ccalzerano72/IRis-hybrid-003 | Difusión latente + ControlNet para restauración ciega | 865.922.244 (safetensors) | Imagen degradada (condición dual: latente + píxeles) | OpenRAIL++ | Hugging Face, 0 descargas, 0 likes | Sin benchmarks publicados |
+| sd2-community/stable-diffusion-2-1 | Difusión latente texto-imagen (modelo base) | no disponible en la información proporcionada | Texto + imagen inicial | no disponible en la información proporcionada | Hugging Face | no disponible en la información proporcionada |
 | Rama ControlNet del repositorio IRis | ControlNet condicionado en píxeles, entrenado junto al UNet | no disponible (pesos en la subcarpeta `controlnet/`) | Imagen degradada en espacio de píxeles | OpenRAIL++ (según el repositorio del modelo) | Incluida en el repositorio del modelo | Sin benchmarks publicados |
 | Familia Marigold (origen del nombre del paquete `marigold` del repositorio IRis) | Difusión basada en Stable Diffusion para tareas densas | no disponible en la información proporcionada | Imagen | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de datos cuantitativos (parámetr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ccalzerano72/IRis-hybrid-003
+- Modelo en Hugging Face: https://huggingface.co/ccalzerano72/IRis-hybrid-003
 - Repositorio IRis (código, pipeline `marigold` y script de inferencia): https://github.com/ccalzerano72/IRis
 - Modelo base: https://huggingface.co/sd2-community/stable-diffusion-2-1
 - Tesis de máster de referencia: «Blind Image Restoration via Dual-Conditioned Latent Diffusion», Universidad de Pisa (no se proporciona URL en la información disponible)

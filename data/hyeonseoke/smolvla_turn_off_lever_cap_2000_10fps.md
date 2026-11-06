@@ -76,7 +76,7 @@ SmolVLA se posiciona como una alternativa mucho mas ligera que OpenVLA o RT-2, s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HyeonseokE/smolvla_turn_off_lever_cap_2000_10fps
+- Repositorio Hugging Face: https://huggingface.co/HyeonseokE/smolvla_turn_off_lever_cap_2000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/turn_off_lever_cap_10fps
 - Articulo SmolVLA (arXiv): https://arxiv.org/abs/2506.01844

@@ -73,6 +73,6 @@ No disponible. Este artefacto no es un modelo autónomo comparable con otros VLM
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-capmix-perception60-step5
+- Repositorio de Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-capmix-perception60-step5
 - Checkpoint relacionado del mismo autor: https://huggingface.co/Saraswathy/vlm-mix-resume-perception-expert-step100
 - Checkpoint relacionado del mismo autor: https://huggingface.co/Saraswathy/vlm-mix-resume-stem60-geo20-nongeo20-step5

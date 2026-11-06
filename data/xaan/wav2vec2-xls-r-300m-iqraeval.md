@@ -56,7 +56,7 @@ El autor declara un resultado de F1 de 0,2020 en el conjunto de prueba ciego `Iq
 - VRAM estimada para inferencia: no disponible, pero un modelo de 315M parámetros en fp32 requiere aproximadamente 1,3 GB de memoria; en bf16, unos 0,7 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia (por ejemplo, NVIDIA T4, RTX 3060, RTX 4090). Para entrenamiento, se usó una GPU con soporte bf16 (por ejemplo, A100 o RTX 3090).
 - Cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna de consumo.
-- Opciones de despliegue: puede usarse con la librería `transformers` de HuggingFace, `torchaudio` para carga de audio, y servirse con herramientas como FastAPI o TGI. No es compatible directamente con vLLM ni llama.cpp, al ser un modelo de audio.
+- Opciones de despliegue: puede usarse con la librería `transformers` de Hugging Face, `torchaudio` para carga de audio, y servirse con herramientas como FastAPI o TGI. No es compatible directamente con vLLM ni llama.cpp, al ser un modelo de audio.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,8 +80,8 @@ La comparativa se limita a la versión base y a la etapa 1 del mismo autor, ya q
 
 ## Enlaces
 
-- [HuggingFace: xaan/wav2vec2-xls-r-300m-iqraeval](https://huggingface.co/xaan/wav2vec2-xls-r-300m-iqraeval)
-- [HuggingFace: FatimahEmadEldin/wav2vec2-xls-r-300m-iqraeval](https://huggingface.co/FatimahEmadEldin/wav2vec2-xls-r-300m-iqraeval)
+- [Hugging Face: xaan/wav2vec2-xls-r-300m-iqraeval](https://huggingface.co/xaan/wav2vec2-xls-r-300m-iqraeval)
+- [Hugging Face: FatimahEmadEldin/wav2vec2-xls-r-300m-iqraeval](https://huggingface.co/FatimahEmadEldin/wav2vec2-xls-r-300m-iqraeval)
 - [Dataset: IqraEval/Iqra_train](https://huggingface.co/datasets/IqraEval/Iqra_train)
 - [Dataset: IqraEval/Iqra_TTS](https://huggingface.co/datasets/IqraEval/Iqra_TTS)
 - [Leaderboard: IqraEval Leaderboard](https://huggingface.co/spaces/IqraEval/Leaderboard)

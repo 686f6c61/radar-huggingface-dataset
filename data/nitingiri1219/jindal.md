@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nitingiri1219/jindal` es un repositorio de modelo publicado en HuggingFace por el usuario nitingiri1219. La informacion publica disponible es minima: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y el repositorio acumula 0 descargas y 1 like en el momento de la consulta. El unico dato cuantitativo util es el tamano del repositorio, 0,1 GB, que sugiere un artefacto de pesos de baja escala (compatible con un modelo pequeno o con adaptadores, aunque esto no puede confirmarse).
+`nitingiri1219/jindal` es un repositorio de modelo publicado en Hugging Face por el usuario nitingiri1219. La informacion publica disponible es minima: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y el repositorio acumula 0 descargas y 1 like en el momento de la consulta. El unico dato cuantitativo util es el tamano del repositorio, 0,1 GB, que sugiere un artefacto de pesos de baja escala (compatible con un modelo pequeno o con adaptadores, aunque esto no puede confirmarse).
 
 No se ha podido recuperar documentacion tecnica, model card descriptiva, paper asociado ni resultados de evaluacion. La busqueda web realizada no devolvio ninguna referencia al modelo: los resultados obtenidos corresponden a la norma DIN EN 361 sobre arneses de proteccion contra caidas, completamente ajena al ambito de la inteligencia artificial.
 
@@ -38,7 +38,7 @@ Tampoco se documentan innovaciones tecnicas (atencion lineal, decodificacion esp
 
 No disponible. No se puede confirmar ninguna capacidad del modelo (generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, uso como agente, capacidades multilingues o modos especiales de inferencia) porque no hay model card, ejemplos ni evaluaciones publicadas.
 
-Unicamente puede afirmarse que el repositorio existe y es accesible publicamente en HuggingFace. Cualquier capacidades atribuida al modelo seria especulativa.
+Unicamente puede afirmarse que el repositorio existe y es accesible publicamente en Hugging Face. Cualquier capacidades atribuida al modelo seria especulativa.
 
 ## Casos de uso
 
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nitingiri1219/jindal
+- Hugging Face: https://huggingface.co/nitingiri1219/jindal
 - Otros enlaces relevantes (papers, blogs, repos, demos): no disponible. La busqueda web no devolvio ninguna fuente relacionada con el modelo; los resultados obtenidos trataban sobre la norma DIN EN 361 y se han descartado por no ser pertinentes.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-NOVA Weather es una red neuronal de predicción meteorológica desarrollada por el usuario Loganok y publicada en HuggingFace bajo el identificador `Loganok/nova-weather`. No se trata de un modelo de lenguaje, sino de un modelo de series temporales basado en transformer que toma las 168 horas previas de observaciones meteorológicas (más un embedding de localización y variables cíclicas de tiempo) y produce las 24 horas siguientes para once variables atmosféricas: temperatura, humedad, punto de rocío, temperatura aparente, precipitación, lluvia, nieve, presión, cobertura nubosa, velocidad del viento y rachas.
+NOVA Weather es una red neuronal de predicción meteorológica desarrollada por el usuario Loganok y publicada en Hugging Face bajo el identificador `Loganok/nova-weather`. No se trata de un modelo de lenguaje, sino de un modelo de series temporales basado en transformer que toma las 168 horas previas de observaciones meteorológicas (más un embedding de localización y variables cíclicas de tiempo) y produce las 24 horas siguientes para once variables atmosféricas: temperatura, humedad, punto de rocío, temperatura aparente, precipitación, lluvia, nieve, presión, cobertura nubosa, velocidad del viento y rachas.
 
 El modelo es extremadamente compacto: 871.584 parámetros, entrenado con datos históricos de la API histórica de Open-Meteo entre el 1 de enero de 2018 y el 31 de diciembre de 2025 en 8 localizaciones. La model card reporta un único resultado de validación: MAE de 0,8590 y RMSE de 1,0353 para la temperatura a 24 horas, sin que se especifiquen unidades ni conjunto de test.
 
-La relevancia del proyecto es limitada y de carácter experimental: se trata de un ejercicio de forecasting meteorológico con un modelo minúsculo, no de un sistema operativo de predicción. El propio autor advierte en la model card que no está pensado para sustituir a los pronósticos meteorológicos oficiales. Además, los metadatos de HuggingFace indican 0 descargas, 0 likes, ausencia de licencia, ausencia de pipeline declarado, ausencia de idiomas y un tamano de repositorio de 0,0 GB, por lo que no puede confirmarse que los pesos estén publicados.
+La relevancia del proyecto es limitada y de carácter experimental: se trata de un ejercicio de forecasting meteorológico con un modelo minúsculo, no de un sistema operativo de predicción. El propio autor advierte en la model card que no está pensado para sustituir a los pronósticos meteorológicos oficiales. Además, los metadatos de Hugging Face indican 0 descargas, 0 likes, ausencia de licencia, ausencia de pipeline declarado, ausencia de idiomas y un tamano de repositorio de 0,0 GB, por lo que no puede confirmarse que los pesos estén publicados.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NOVA Weather (Loganok) | 871.584 | 168 h entrada / 24 h salida | no disponible | Repositorio HuggingFace sin descargas ni likes; pesos no confirmados |
+| NOVA Weather (Loganok) | 871.584 | 168 h entrada / 24 h salida | no disponible | Repositorio Hugging Face sin descargas ni likes; pesos no confirmados |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Loganok/nova-weather
+- Modelo en Hugging Face: https://huggingface.co/Loganok/nova-weather
 - Fuente de datos citada por el autor, Open-Meteo Historical Weather API: https://open-meteo.com/en/docs/historical-weather-api
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Los unicos resultados devueltos apuntan a sitios de juegos educativos en frances (logicieleducatif.fr, lumni.fr, jeux.ieducatif.fr, cenicienta.fr), sin relacion con el modelo.
 - Paper, repositorio de codigo, blog o demo: no disponible.

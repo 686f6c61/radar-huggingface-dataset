@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario asd12sad21 bajo el identificador `asd12sad21/MyAwesomeModel-TestRepo`. Por su nombre, por la ausencia total de tarjeta de modelo descriptiva y por el hecho de acumular cero descargas y cero valoraciones desde su creacion, todo apunta a un repositorio de prueba creado para validar un flujo de publicacion (por ejemplo, un pipeline de CI o una integracion con la libreria `transformers`) y no a un modelo destinado a uso real.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario asd12sad21 bajo el identificador `asd12sad21/MyAwesomeModel-TestRepo`. Por su nombre, por la ausencia total de tarjeta de modelo descriptiva y por el hecho de acumular cero descargas y cero valoraciones desde su creacion, todo apunta a un repositorio de prueba creado para validar un flujo de publicacion (por ejemplo, un pipeline de CI o una integracion con la libreria `transformers`) y no a un modelo destinado a uso real.
 
 La unica informacion tecnica fiable disponible son las etiquetas declaradas: `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. De ahi se deduce unicamente que se trata de un modelo basado en PyTorch, con arquitectura de la familia BERT y orientado a extraccion de caracteristicas (embeddings), es decir, a producir representaciones vectoriales de texto en lugar de generar texto de forma autoregresiva. No hay datos publicados sobre numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM para inferencia: no disponible. Sin conocer el numero de parametros ni la longitud de contexto, no es posible calcularla. Como referencia general de la familia, un encoder tipo BERT-base (aproximadamente 110 millones de parametros) se sirve en FP32 con menos de 1 GB de VRAM dedicada, pero esto es una referencia de familia y no una especificacion de este repositorio.
 - GPU recomendadas: no disponible. Cualquier GPU con al menos unos pocos GB de VRAM seria suficiente para un encoder de tamano base, pero el dato no esta confirmado.
 - Compatibilidad con GPU de consumo: probable en cualquier GPU consumer moderna (GTX 1060 en adelante) si el modelo es de tamano base, sujeto a confirmacion.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. Tambien serian plausibles `transformers` con PyTorch, `sentence-transformers` para envolver el encoder y `text-embeddings-inference` (TEI) para servir embeddings. No hay confirmacion de soporte de vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. Tambien serian plausibles `transformers` con PyTorch, `sentence-transformers` para envolver el encoder y `text-embeddings-inference` (TEI) para servir embeddings. No hay confirmacion de soporte de vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -67,10 +67,10 @@ No es posible establecer una comparativa directa porque se desconocen los parame
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| asd12sad21/MyAwesomeModel-TestRepo | no disponible | no disponible | MIT segun etiqueta, sin confirmar | HuggingFace, 0 descargas |
-| BERT-base (referencia de familia) | ~110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| RoBERTa-base (referencia de familia) | ~125 M | 512 tokens | MIT | HuggingFace |
-| E5-base-v2 (referencia de familia) | ~109 M | 512 tokens | MIT | HuggingFace |
+| asd12sad21/MyAwesomeModel-TestRepo | no disponible | no disponible | MIT segun etiqueta, sin confirmar | Hugging Face, 0 descargas |
+| BERT-base (referencia de familia) | ~110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| RoBERTa-base (referencia de familia) | ~125 M | 512 tokens | MIT | Hugging Face |
+| E5-base-v2 (referencia de familia) | ~109 M | 512 tokens | MIT | Hugging Face |
 
 Las cifras de las tres filas de referencia corresponden a especificaciones publicas de esos modelos y se incluyen solo como orientacion de categoria.
 
@@ -87,7 +87,7 @@ Las cifras de las tres filas de referencia corresponden a especificaciones publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asd12sad21/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asd12sad21/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

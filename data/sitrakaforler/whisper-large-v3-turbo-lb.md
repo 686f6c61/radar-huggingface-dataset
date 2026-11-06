@@ -114,7 +114,7 @@ Lectura: el modelo de uni.lu es el más preciso en ambos escenarios pese a tener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SitrakaForler/whisper-large-v3-turbo-lb
+- Modelo en Hugging Face: https://huggingface.co/SitrakaForler/whisper-large-v3-turbo-lb
 - Export CTranslate2 int8: https://huggingface.co/SitrakaForler/whisper-large-v3-turbo-lb-ct2
 - Repositorio con la receta, configuración y scripts de evaluación: https://github.com/Sitraka17/lb-whisper
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
@@ -124,4 +124,4 @@ Lectura: el modelo de uni.lu es el más preciso en ambos escenarios pese a tener
 - Modelo comparable de uni.lu: https://huggingface.co/unilux/whisper-medium-v1-luxembourgish
 - Modelo comparable de ZLS: https://huggingface.co/ZLSCompLing/Whisper-Large-V3-Turbo-Luxembourgish
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y del ecosistema de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y del ecosistema de Hugging Face.

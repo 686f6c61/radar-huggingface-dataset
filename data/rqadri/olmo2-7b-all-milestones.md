@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rqadri/OLMo2-7B-all-milestones | 7B | no disponible | 66 checkpoints de investigación sobre edición de código | no disponible | HuggingFace, repo de 963,4 GB |
-| allenai/OLMo-2-1124-7B | 7B | no disponible en esta ficha | Modelo base open source de Allen AI | no disponible en esta ficha | HuggingFace |
-| Modelos de código de 7B de la familia Qwen o CodeLlama | ~7B | no disponible en esta ficha | Modelos de código listos para producción | no disponible en esta ficha | HuggingFace |
+| rqadri/OLMo2-7B-all-milestones | 7B | no disponible | 66 checkpoints de investigación sobre edición de código | no disponible | Hugging Face, repo de 963,4 GB |
+| allenai/OLMo-2-1124-7B | 7B | no disponible en esta ficha | Modelo base open source de Allen AI | no disponible en esta ficha | Hugging Face |
+| Modelos de código de 7B de la familia Qwen o CodeLlama | ~7B | no disponible en esta ficha | Modelos de código listos para producción | no disponible en esta ficha | Hugging Face |
 
 La comparación directa con alternativas de producción no es posible con los datos proporcionados; la colección es un artefacto experimental, no un modelo competidor.
 
@@ -87,7 +87,7 @@ La comparación directa con alternativas de producción no es posible con los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rqadri/OLMo2-7B-all-milestones
+- Modelo en Hugging Face: https://huggingface.co/rqadri/OLMo2-7B-all-milestones
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B
 - Paper de referencia (ICLR 2027 submission, SynthCode round-5): no disponible como enlace en la información proporcionada
 - Repositorio de LLaMA-Factory: no disponible como enlace en la información proporcionada

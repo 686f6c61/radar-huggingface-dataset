@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/schatmodels/s5.1lot
+- Página del modelo en Hugging Face: https://huggingface.co/schatmodels/s5.1lot
 - No se han encontrado papers, repositorios de código, blogs o demos adicionales en la información proporcionada.

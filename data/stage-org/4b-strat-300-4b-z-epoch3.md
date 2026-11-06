@@ -91,7 +91,7 @@ No es posible establecer una comparativa de rendimiento: no hay resultados de be
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Stage-org/4b-strat-300-4b-z-epoch3
+- Repositorio en Hugging Face: https://huggingface.co/Stage-org/4b-strat-300-4b-z-epoch3
 - Modelo base declarado en la configuracion de entrenamiento: https://huggingface.co/Qwen/Qwen3.5-4B (no verificado como enlace publico en la informacion disponible)
 - Dataset de entrenamiento referenciado: `Stage-org/4b-strat-300-4b-z` (referencia textual en la configuracion; no se ha confirmado su disponibilidad publica)
 - Framework de RL citado en la configuracion: prime_rl (referencia textual; no se ha proporcionado URL)

@@ -6,7 +6,7 @@ Abdoul27/multicentury-trocr-barbados-v3 es un modelo de reconocimiento optico de
 
 El modelo pertenece a la familia TrOCR, una arquitectura transformer encoder-decoder en la que un encoder de vision procesa la imagen y un decoder autorregresivo genera la secuencia de caracteres. El repositorio ocupa 6,7 GB y la etiqueta "ensemble" apunta a que el artefacto final combina varios checkpoints, aunque no se detalla la composicion. La metadata no declara numero de parametros, longitud de contexto ni idiomas soportados.
 
-Su relevancia actual reside en el nicho de digitalizacion de archivos historicos: los modelos HTR genericos rinden mal sobre caligrafias antiguas y series documentales homogeneas, por lo que los ajustes sobre corpus especificos (en este caso, un corpus caribeno/colonial) son la via habitual para reducir la tasa de error por caracter. El acceso esta restringido en HuggingFace y no se han publicado resultados de benchmarks ni detalles del conjunto de entrenamiento.
+Su relevancia actual reside en el nicho de digitalizacion de archivos historicos: los modelos HTR genericos rinden mal sobre caligrafias antiguas y series documentales homogeneas, por lo que los ajustes sobre corpus especificos (en este caso, un corpus caribeno/colonial) son la via habitual para reducir la tasa de error por caracter. El acceso esta restringido en Hugging Face y no se han publicado resultados de benchmarks ni detalles del conjunto de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual reside en el nicho de digitalizacion de archivos historicos
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors, sin versiones cuantizadas oficiales |
 | Idiomas soportados | no disponible en la metadata; el identificador del modelo apunta a documentos historicos de Barbados (lengua inglesa) |
-| Licencia | apache-2.0, con acceso restringido (gated) en HuggingFace |
+| Licencia | apache-2.0, con acceso restringido (gated) en Hugging Face |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 
 | Modelo | Parametros | Dominio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abdoul27/multicentury-trocr-barbados-v3 | no disponible | HTR de documentos historicos de Barbados | no disponible | apache-2.0 | Repositorio gated en HuggingFace |
-| Kansallisarkisto/multicentury-htr-model | no disponible | HTR multisecular (archivo nacional finlandes) | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| microsoft/trocr-base-handwritten | aproximadamente 334 M | HTR generico (IAM) | Ingles | MIT | Abierto en HuggingFace |
-| microsoft/trocr-large-handwritten | aproximadamente 558 M | HTR generico (IAM) | Ingles | MIT | Abierto en HuggingFace |
+| Abdoul27/multicentury-trocr-barbados-v3 | no disponible | HTR de documentos historicos de Barbados | no disponible | apache-2.0 | Repositorio gated en Hugging Face |
+| Kansallisarkisto/multicentury-htr-model | no disponible | HTR multisecular (archivo nacional finlandes) | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| microsoft/trocr-base-handwritten | aproximadamente 334 M | HTR generico (IAM) | Ingles | MIT | Abierto en Hugging Face |
+| microsoft/trocr-large-handwritten | aproximadamente 558 M | HTR generico (IAM) | Ingles | MIT | Abierto en Hugging Face |
 | Transkribus / Kraken (modelos PyLaia) | Variable segun modelo | HTR historico multilingue | Multiples | Variable por modelo | Plataforma y repositorios propios |
 
 La comparacion cuantitativa de rendimiento no esta disponible: no se han publicado metricas de CER o WER para este ajuste, por lo que no es posible situarlo objetivamente frente a las alternativas de la tabla.
@@ -81,7 +81,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: no se han publica
 - Sesgo de dominio: el ajuste esta orientado a un corpus concreto (Barbados, epoca historica), por lo que la transferencia a otras caligrafias, idiomas o tipos documentales puede degradarse de forma notable.
 - Especializacion estrecha: no es un modelo de proposito general; no sirve para generacion de texto, codigo, razonamiento ni对话 conversacional.
 - Idiomas no declarados: la metadata no especifica los idiomas cubiertos, lo que dificulta planificar su uso en produccion multilingue.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que condiciona su uso en pipelines automatizados y en entornos sin cuenta autorizada.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que condiciona su uso en pipelines automatizados y en entornos sin cuenta autorizada.
 - Licencia: aunque la model card declara apache-2.0, es necesario verificar las condiciones del modelo base Kansallisarkisto/multicentury-htr-model y de los datos de Barbados antes de un uso comercial.
 - Tamano del repositorio: 6,7 GB y la etiqueta "ensemble" sugieren una carga de despliegue mayor que la de un unico checkpoint TrOCR, con impacto en tiempos de arranque y memoria.
 - Necesidad de revision humana: por la naturaleza del material historico, cualquier uso en archivo o investigacion deberia incluir validacion manual de las transcripciones.
@@ -89,10 +89,10 @@ La comparacion cuantitativa de rendimiento no esta disponible: no se han publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdoul27/multicentury-trocr-barbados-v3
+- Modelo en Hugging Face: https://huggingface.co/Abdoul27/multicentury-trocr-barbados-v3
 - Modelo base: https://huggingface.co/Kansallisarkisto/multicentury-htr-model
 - Paper de TrOCR (arquitectura de referencia de la familia): https://arxiv.org/abs/2109.10282
 - Repositorio oficial de TrOCR en Unilm (Microsoft): https://github.com/microsoft/unilm/tree/master/trocr
-- Modelos TrOCR de referencia en HuggingFace: https://huggingface.co/microsoft/trocr-base-handwritten
+- Modelos TrOCR de referencia en Hugging Face: https://huggingface.co/microsoft/trocr-base-handwritten
 
 Nota: la busqueda web realizada no devolvio enlaces relevantes al modelo; los resultados obtenidos correspondian a paginas genericas de servicios de Google ajenas al objeto de la ficha.

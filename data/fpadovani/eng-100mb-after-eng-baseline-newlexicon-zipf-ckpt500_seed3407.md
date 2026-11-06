@@ -75,7 +75,7 @@ La principal diferencia es que GPT-2 está entrenado en texto natural y tiene un
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed3407)
+- [Modelo en Hugging Face](https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed3407)
 - [Modelo base](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407)
 - [Weights & Biases run](https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/2vw5qvjo)
 - [TRL (librería de entrenamiento)](https://github.com/huggingface/trl)

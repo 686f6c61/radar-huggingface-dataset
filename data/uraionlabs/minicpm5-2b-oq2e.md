@@ -104,12 +104,12 @@ Todas comparten arquitectura, contexto de 131.072 tokens, licencia Apache-2.0 y 
 - Licencia: Apache-2.0, que permite uso comercial, pero conviene verificar las condiciones del modelo base openbmb/MiniCPM5-2B por si impusieran requisitos adicionales.
 - Calidad del contexto largo no verificada: aunque la ventana es de 131.072 tokens, no hay benchmarks que confirmen la retención de información en contextos extremos, especialmente tras la cuantización.
 - Sin validación de la comunidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe retroalimentación independiente sobre su comportamiento real.
-- Advertencia sobre metadatos: las fechas del repositorio (2026) y algunos identificadores arXiv de la model card son posteriores al conocimiento de referencia habitual; conviene contrastarlos directamente en HuggingFace.
+- Advertencia sobre metadatos: las fechas del repositorio (2026) y algunos identificadores arXiv de la model card son posteriores al conocimiento de referencia habitual; conviene contrastarlos directamente en Hugging Face.
 - La model card original está truncada en la información disponible, por lo que las instrucciones de uso completas y los ejemplos de código de la sección Quickstart no se han podido recuperar íntegramente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ2e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ2e
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Runtime oMLX: https://github.com/jundot/omlx
 - Runtime mlx-lm: https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm

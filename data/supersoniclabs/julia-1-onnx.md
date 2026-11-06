@@ -84,8 +84,8 @@ El autor advierte de que la comparación entre WebGPU y CPU no constituye una af
 
 | Modelo | Entorno de inferencia | Pesos | Paridad con el original | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SupersonicLabs/Julia-1-ONNX (este repositorio) | Navegador WebGPU (ONNX Runtime, kernels WGSL) | Mismos pesos que Julia 1 exportados a ONNX | 100/100 predicciones, diferencia máxima de logits de 0,00225 | Apache 2.0 | HuggingFace, con playground y benchmark incluidos |
-| SupersonicLabs/Julia-1 (modelo base) | Python CPU o CUDA | Checkpoint original | Referencia de comparación | Apache 2.0 (según la licencia de este repositorio) | HuggingFace |
+| SupersonicLabs/Julia-1-ONNX (este repositorio) | Navegador WebGPU (ONNX Runtime, kernels WGSL) | Mismos pesos que Julia 1 exportados a ONNX | 100/100 predicciones, diferencia máxima de logits de 0,00225 | Apache 2.0 | Hugging Face, con playground y benchmark incluidos |
+| SupersonicLabs/Julia-1 (modelo base) | Python CPU o CUDA | Checkpoint original | Referencia de comparación | Apache 2.0 (según la licencia de este repositorio) | Hugging Face |
 
 No se dispone de información sobre otros modelos de decisión comparables en la documentación proporcionada, por lo que la comparativa se limita al modelo base del que deriva esta exportación. Diferencias clave: el original usa el grafo de decisión en PyTorch, tokenizador de Python y modelo residente en Python, mientras que esta exportación usa el mismo grafo en ONNX, tokenizador Rust/WebAssembly y sesión residente en el navegador.
 
@@ -102,7 +102,7 @@ No se dispone de información sobre otros modelos de decisión comparables en la
 - El repositorio registra 0 descargas y 21 likes en el momento de la consulta, por lo que no hay evidencia de adopción en producción.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/SupersonicLabs/Julia-1-ONNX
+- Repositorio Hugging Face: https://huggingface.co/SupersonicLabs/Julia-1-ONNX
 - Modelo base (runtime Python CPU y CUDA): https://huggingface.co/SupersonicLabs/Julia-1
 - Medidas completas del benchmark WebGPU: https://huggingface.co/SupersonicLabs/Julia-1-ONNX/blob/main/benchmark-webgpu.json
 - Conjunto de 100 peticiones de prueba y logits del modelo original: https://huggingface.co/SupersonicLabs/Julia-1-ONNX/blob/main/parity-cases.json

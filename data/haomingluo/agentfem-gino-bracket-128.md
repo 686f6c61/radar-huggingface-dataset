@@ -25,7 +25,7 @@ Es relevante ahora porque se publica junto a las curvas de aprendizaje por tama�
 | Salidas | Desplazamiento en metros en cada punto de superficie proporcionado |
 | Dominio físico soportado | Familia fija de soportes de doble brazo simétricos, caras inferiores de apoyo fijas, carga uniforme descendente sobre el asiento, E = 70 GPa, nu = 0,33 |
 | Rangos de los parámetros | `depth` 0,015–0,032 m; `radius` 0,010–0,023 m; `waist` 0,04–0,38 (adimensional); `bow` 0,005–0,030 m. `depth` y `radius` son semi-dimensiones de referencia en metros |
-| Tamaño del repositorio | 0,0 GB según los metadatos de HuggingFace |
+| Tamaño del repositorio | 0,0 GB según los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (metadatos) | 2026-09-20 |
 | Librería | pytorch |
@@ -82,13 +82,13 @@ El autor advierte que estas cifras son resultados del modelo híbrido y no de la
 ## Requisitos de hardware
 
 - No se documenta VRAM estimada para inferencia, ni número de parámetros, ni precisión numérica de los pesos.
-- El tamaño del repositorio reportado por los metadatos de HuggingFace es de 0,0 GB; este dato no permite estimar de forma fiable el consumo de memoria.
+- El tamaño del repositorio reportado por los metadatos de Hugging Face es de 0,0 GB; este dato no permite estimar de forma fiable el consumo de memoria.
 - La inferencia se realiza en PyTorch mediante `inference.py`, tras instalar las dependencias con `pip install -r requirements.txt`; no requiere instalación de elementos finitos.
 - No se especifican GPU recomendadas (A100, H100, RTX 4090 u otras) ni si el modelo cabe en GPU de consumo.
 - Al tratarse de un checkpoint pequeño de PyTorch, la ejecución en CPU es plausible, pero no está confirmada por el autor y debe verificarse empíricamente.
 - Opciones de despliegue: ejecución local con PyTorch. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
 - No se publican datos de latencia ni de throughput.
-- Existe un Space interactivo (`AgentFEM-GINO-Structural-Design-Lab`), pero el autor aclara que es una demo ligera con candidatos grabados, no este checkpoint ejecutándose en un endpoint de inferencia de HuggingFace.
+- Existe un Space interactivo (`AgentFEM-GINO-Structural-Design-Lab`), pero el autor aclara que es una demo ligera con candidatos grabados, no este checkpoint ejecutándose en un endpoint de inferencia de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -117,7 +117,7 @@ No se dispone de resultados comparables publicados para alternativas como FNO, D
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HaomingLuo/AgentFEM-GINO-Bracket-128
+- Modelo en Hugging Face: https://huggingface.co/HaomingLuo/AgentFEM-GINO-Bracket-128
 - Dataset: https://huggingface.co/datasets/HaomingLuo/AgentFEM-Bracket-Elasticity
 - Demo interactiva: https://huggingface.co/spaces/HaomingLuo/AgentFEM-GINO-Structural-Design-Lab
 - Repositorio de integración de entrenamiento: https://github.com/haoming-luo/agentfem-learning

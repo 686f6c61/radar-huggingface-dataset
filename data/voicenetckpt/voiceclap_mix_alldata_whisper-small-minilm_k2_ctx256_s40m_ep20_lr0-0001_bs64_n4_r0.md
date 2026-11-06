@@ -65,7 +65,7 @@ No se dispone de datos verificables de este checkpoint (parametros, contexto, me
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceCLAP (este checkpoint) | no disponible | 256 (segun nomenclatura) | no disponible | no disponible | HuggingFace, 0 descargas |
+| VoiceCLAP (este checkpoint) | no disponible | 256 (segun nomenclatura) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas contrastivas audio-texto (LAION CLAP, Microsoft CLAP, etc.) | no disponible en esta informacion | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No se dispone de datos verificables de este checkpoint (parametros, contexto, me
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_mix_alldata_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_mix_alldata_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de ejecuciones mencionado en la model card: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

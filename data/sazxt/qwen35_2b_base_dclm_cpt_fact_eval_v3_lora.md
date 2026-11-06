@@ -76,7 +76,7 @@ Nota: los datos de Qwen2.5-1.5B y Gemma 2 2B se incluyen como referencia general
 - Estado del repositorio: 0 descargas y 0 likes indican que no ha sido validado por la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/sazxt/qwen35_2b_base_dclm_cpt_fact_eval_v3_lora
+- Modelo en Hugging Face: https://huggingface.co/sazxt/qwen35_2b_base_dclm_cpt_fact_eval_v3_lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
 - TRL (framework citado en las etiquetas): https://github.com/huggingface/trl

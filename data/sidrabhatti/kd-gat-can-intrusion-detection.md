@@ -26,7 +26,7 @@ El trabajo es relevante ahora porque aborda dos requisitos habituales de la auto
 | Cabezas de atencion | 8 en el profesor, 4 en el estudiante |
 | Canales ocultos | 32 en ambos |
 | Datasets de evaluacion | Car-Hacking, Car-Survival, can-train-and-test |
-| Fecha de publicacion en HuggingFace | 12 de septiembre de 2026 (creacion y ultima actualizacion) |
+| Fecha de publicacion en Hugging Face | 12 de septiembre de 2026 (creacion y ultima actualizacion) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,13 +81,13 @@ En can-train-and-test el rendimiento cae tanto en el profesor como en el estudia
 - Ejecucion en CPU: viable en principio por el tamano del modelo, aunque no se publican mediciones de latencia en CPU.
 - Opciones de despliegue: no se detallan en la informacion proporcionada. El codigo fuente esta disponible en el repositorio OSU-CAR-MSL/KD-GAT (licencia MIT) y la pila natural es PyTorch con PyTorch Geometric; vLLM, llama.cpp, Ollama y TGI no aplican a este tipo de modelo.
 - Latencia y throughput estimados: no disponibles. El articulo se orienta a despliegue en tiempo real en vehiculo, pero la informacion proporcionada no incluye mediciones de latencia ni de rendimiento por segundo en hardware concreto.
-- Memoria del repositorio de HuggingFace: 0,0 GB, lo que sugiere que no hay artefactos de pesos publicados en ese repositorio.
+- Memoria del repositorio de Hugging Face: 0,0 GB, lo que sugiere que no hay artefactos de pesos publicados en ese repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KD-GAT (estudiante) | 316.034 | no aplica (ventana deslizante de mensajes CAN) | 0,9997 de exactitud en Car-Hacking; 0,9931 en Car-Survival | MIT | Repositorio HuggingFace con 0 descargas y 0,0 GB; codigo en GitHub |
+| KD-GAT (estudiante) | 316.034 | no aplica (ventana deslizante de mensajes CAN) | 0,9997 de exactitud en Car-Hacking; 0,9931 en Car-Survival | MIT | Repositorio Hugging Face con 0 descargas y 0,0 GB; codigo en GitHub |
 | KD-GAT (profesor) | 4.999.426 | no aplica | 0,9977 en Car-Hacking; 0,9695 en Car-Survival | MIT | No se detalla publicacion de pesos |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,13 +102,13 @@ La informacion proporcionada no incluye comparaciones con otros IDS basados en a
 - No es un modelo de lenguaje: carece por completo de generacion de texto, razonamiento, codigo, tool calling, capacidades de agente y soporte multilingue. Cualquier expectativa en ese sentido es inaplicable.
 - Riesgo de alucinacion: no aplica en el sentido habitual, pero existe el riesgo equivalente de falsos positivos y falsos negativos en la clasificacion, sin tasas publicadas para todos los subconjuntos.
 - Robustez adversarial no evaluada: la informacion proporcionada no incluye pruebas frente a ataques disenados especificamente para evadir el detector, ni analisis de envenenamiento de datos.
-- Estado del repositorio: 0 descargas, 0 likes y 0,0 GB de tamano en HuggingFace, con fecha de creacion y actualizacion del 12 de septiembre de 2026. No se confirma la publicacion de pesos entrenados, por lo que conviene verificar la disponibilidad real de artefactos antes de plantear un uso en produccion.
+- Estado del repositorio: 0 descargas, 0 likes y 0,0 GB de tamano en Hugging Face, con fecha de creacion y actualizacion del 12 de septiembre de 2026. No se confirma la publicacion de pesos entrenados, por lo que conviene verificar la disponibilidad real de artefactos antes de plantear un uso en produccion.
 - Licencia: el modelo y el codigo se publican bajo licencia MIT, que permite uso comercial y modificacion con atribucion. No obstante, los datasets de terceros utilizados para el entrenamiento y la evaluacion pueden tener condiciones propias que deben revisarse por separado.
 - Ausencia de datos de latencia y memoria en hardware embarcado real: no hay mediciones publicadas que confirmen el cumplimiento de requisitos de tiempo real duro en una ECU concreta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SidraBhatti/kd-gat-can-intrusion-detection
+- Modelo en Hugging Face: https://huggingface.co/SidraBhatti/kd-gat-can-intrusion-detection
 - Articulo en arXiv (resumen): https://arxiv.org/abs/2507.19686
 - Articulo en arXiv (PDF): https://arxiv.org/pdf/2507.19686
 - Codigo fuente (OSU-CAR-MSL/KD-GAT, licencia MIT): https://github.com/OSU-CAR-MSL/KD-GAT

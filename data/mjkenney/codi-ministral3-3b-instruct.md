@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mjkenney/codi-ministral3-3b-instruct` es un ajuste fino (fine-tune) de investigación publicado por el usuario mjkenney sobre el modelo base `mistralai/Ministral-3-3B-Instruct-2512-BF16`, un transformer denso de aproximadamente 3.000 millones de parámetros de la familia Ministral de Mistral AI. El modelo se distribuye bajo licencia Apache 2.0, con acceso restringido (gated, requiere aceptar condiciones en HuggingFace) y un repositorio de 3,4 GB.
+`mjkenney/codi-ministral3-3b-instruct` es un ajuste fino (fine-tune) de investigación publicado por el usuario mjkenney sobre el modelo base `mistralai/Ministral-3-3B-Instruct-2512-BF16`, un transformer denso de aproximadamente 3.000 millones de parámetros de la familia Ministral de Mistral AI. El modelo se distribuye bajo licencia Apache 2.0, con acceso restringido (gated, requiere aceptar condiciones en Hugging Face) y un repositorio de 3,4 GB.
 
 Las etiquetas del repositorio —`codi`, `latent-reasoning`, `continuous-thought`, `interpretability`, `research`— sitúan el modelo en la línea de trabajo sobre razonamiento en espacio latente, es decir, la hipótesis de que un modelo puede "pensar" en estados ocultos continuos en lugar de generar cadenas de razonamiento explícitas token a token. Es un artefacto de experimentación, no un modelo orientado a producción: no incluye model card descriptiva, no declara idiomas, no especifica el proceso de entrenamiento y acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -59,15 +59,15 @@ El repositorio no incluye configuración de evaluación, resultados de MMLU, GSM
 - VRAM estimada para inferencia (cálculos orientativos a partir de ~3.000 millones de parámetros, no mediciones del repositorio): ~6-7 GB en BF16 contando pesos y caché KV para contextos moderados; ~3,5-4 GB en FP8; ~2-2,5 GB en cuantización de 4 bits.
 - GPU recomendadas: para experimentación en BF16, una RTX 4090 (24 GB), L40S (48 GB), A100 (40/80 GB) o H100 (80 GB); para cuantización de 4 bits basta una RTX 3060 de 12 GB o una RTX 4060 Ti de 16 GB.
 - Cabe en GPU de consumo: sí, en BF16 en tarjetas de 12 GB o más con contexto corto, y con holgura en 4 bits.
-- Opciones de despliegue: vLLM y TGI para servir los pesos en formato HuggingFace; llama.cpp y Ollama solo si se generan conversiones GGUF, que el repositorio no publica; transformers como vía más directa dado el carácter de investigación del artefacto.
+- Opciones de despliegue: vLLM y TGI para servir los pesos en formato Hugging Face; llama.cpp y Ollama solo si se generan conversiones GGUF, que el repositorio no publica; transformers como vía más directa dado el carácter de investigación del artefacto.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para esta variante.
-- Nota: el acceso es restringido (gated), por lo que cualquier despliegue requiere primero aceptar las condiciones en HuggingFace y autenticarse con un token.
+- Nota: el acceso es restringido (gated), por lo que cualquier despliegue requiere primero aceptar las condiciones en Hugging Face y autenticarse con un token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| codi-ministral3-3b-instruct (este) | ~3B | No disponible | Apache 2.0 (declarada) | Gated en HuggingFace | Fine-tune de investigación, sin benchmarks ni model card; 0 descargas |
+| codi-ministral3-3b-instruct (este) | ~3B | No disponible | Apache 2.0 (declarada) | Gated en Hugging Face | Fine-tune de investigación, sin benchmarks ni model card; 0 descargas |
 | Ministral-3-3B-Instruct (base) | ~3B | 128k según anuncio de Mistral AI (no verificado en la información proporcionada) | Mistral Research License en la publicación original de 2024; verificar la variante 2512 | Público | Backbone original, documentado y evaluado por el fabricante |
 | Llama 3.2 3B Instruct | ~3,2B | 128k | Llama 3.2 Community License | Público, gated | Alternativa madura con ecosistema amplio de cuantizaciones y herramientas |
 | Qwen2.5-3B-Instruct | ~3,1B | 32k nativo (extensible con YaRN) | Apache 2.0 | Público | Buena relación calidad/tamaño en código y multilingüe, licencia permisiva |
@@ -88,6 +88,6 @@ Los datos de contexto y licencia de los modelos comparados provienen de su docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mjkenney/codi-ministral3-3b-instruct
+- Modelo en Hugging Face: https://huggingface.co/mjkenney/codi-ministral3-3b-instruct
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-BF16
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

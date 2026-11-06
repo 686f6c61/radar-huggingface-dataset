@@ -20,7 +20,7 @@ Es relevante ahora porque sirve como caso de estudio reproducible y de coste min
 | Idiomas soportados | no disponible (no declarados; el corpus es ingles y el vocabulario es a nivel de caracter, por lo que no hay soporte multilingue real) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (repositorio etiquetado con la libreria mlx; la model card no detalla el formato de los pesos) |
-| Tamano del repo | 0,0 GB (redondeado por HuggingFace) |
+| Tamano del repo | 0,0 GB (redondeado por Hugging Face) |
 | Hidden size | 160 |
 | Capas | 3 |
 | Cabezas de atencion | 4 |
@@ -102,8 +102,8 @@ El unico comparable con datos verificables es el propio Experiment A1 Pico del m
 
 | Modelo | Parametros | Contexto | Iteraciones | Perdida train (final) | Perdida val (final) | Brecha train/val | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| experiment-a2-pico | 1.009.920 | 128 | 12.000 | 1,2538 | 1,6284 | 0,37 | MIT | HuggingFace, 0 descargas |
-| experiment-a1-pico | 1.009.920 (identica) | 128 (identica) | 3.000 | 1,4751 | 1,6818 | 0,21 | MIT | HuggingFace |
+| experiment-a2-pico | 1.009.920 | 128 | 12.000 | 1,2538 | 1,6284 | 0,37 | MIT | Hugging Face, 0 descargas |
+| experiment-a1-pico | 1.009.920 (identica) | 128 (identica) | 3.000 | 1,4751 | 1,6818 | 0,21 | MIT | Hugging Face |
 
 A2 obtiene una perdida de validacion absoluta ligeramente mejor (1,63 frente a 1,68), pero la brecha entre entrenamiento y validacion se amplia de 0,21 a 0,37, lo que indica que la mejora procede en buena parte de memorizacion y no de mejor generalizacion.
 
@@ -126,7 +126,7 @@ No se dispone de datos verificables de otros modelos comparables de tamano simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VertexAGI/experiment-a2-pico
+- Modelo en Hugging Face: https://huggingface.co/VertexAGI/experiment-a2-pico
 - Experiment A1 Pico (comparativa directa): https://huggingface.co/VertexAGI/experiment-a1-pico
 - Corpus de entrenamiento tinyshakespeare: https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt
 - Resultados de la busqueda web: no se encontro ningun enlace relevante; los resultados devueltos correspondian a recetas de cocina y no guardan relacion con el modelo.

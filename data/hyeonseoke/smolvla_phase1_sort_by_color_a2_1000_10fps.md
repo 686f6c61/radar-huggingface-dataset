@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente, diseñado para control robótico en hardware asequible. Este repositorio concreto, `HyeonseokE/smolvla_phase1_sort_by_color_A2_1000_10fps`, es un fine-tune del modelo base `lerobot/smolvla_base` (que a su vez se basa en SmolVLM) entrenado para la tarea de ordenar bloques de colores sobre platos del mismo color. El modelo fue desarrollado por HyeonseokE y distribuido a través de la librería LeRobot de HuggingFace, bajo licencia Apache 2.0.
+SmolVLA es un modelo de visión-lenguaje-acción (VLA) compacto y eficiente, diseñado para control robótico en hardware asequible. Este repositorio concreto, `HyeonseokE/smolvla_phase1_sort_by_color_A2_1000_10fps`, es un fine-tune del modelo base `lerobot/smolvla_base` (que a su vez se basa en SmolVLM) entrenado para la tarea de ordenar bloques de colores sobre platos del mismo color. El modelo fue desarrollado por HyeonseokE y distribuido a través de la librería LeRobot de Hugging Face, bajo licencia Apache 2.0.
 
 El problema que resuelve es el control de un robot manipulador (tipo `so101_follower`) a partir de entradas visuales de dos cámaras y un vector de estado de 6 dimensiones, generando acciones de 6 grados de libertad. Su relevancia radica en que, con solo 450 millones de parámetros, puede ejecutarse en GPUs de consumo, lo que democratiza la investigación en robótica inteligente frente a modelos VLA masivos como OpenVLA (7B) o RT-2.
 
@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados para este fine-tune especifico. C
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A2_1000_10fps
+- Repositorio Hugging Face: https://huggingface.co/HyeonseokE/smolvla_phase1_sort_by_color_A2_1000_10fps
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/phase1_sort_by_color_A2_10fps

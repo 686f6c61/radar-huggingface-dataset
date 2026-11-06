@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1015_cluster_trunc` es un ajuste fino (finetune) publicado en HuggingFace por el usuario shabieh2, derivado del modelo base `unsloth/Muse-Glimmer-30B`. Se trata de un modelo de generacion de texto entrenado con las librerias Unsloth y TRL, segun declara el propio autor en la model card, y distribuido bajo licencia Apache 2.0. El repositorio no incluye informacion sobre el conjunto de datos de entrenamiento, la metodologia de ajuste ni los hiperparametros utilizados.
+`shabieh2/1015_cluster_trunc` es un ajuste fino (finetune) publicado en Hugging Face por el usuario shabieh2, derivado del modelo base `unsloth/Muse-Glimmer-30B`. Se trata de un modelo de generacion de texto entrenado con las librerias Unsloth y TRL, segun declara el propio autor en la model card, y distribuido bajo licencia Apache 2.0. El repositorio no incluye informacion sobre el conjunto de datos de entrenamiento, la metodologia de ajuste ni los hiperparametros utilizados.
 
 La relevancia de esta ficha es limitada: el modelo acumula cero descargas y cero likes en el momento de la consulta, no dispone de pipeline declarado y su model card es una plantilla autogenerada por Unsloth sin detalles tecnicos sustantivos. El nombre del repositorio (`1015_cluster_trunc`) sugiere un experimento de entrenamiento concreto, probablemente con truncado de secuencias o agrupacion de datos, pero esto no esta confirmado en la informacion disponible.
 
@@ -25,7 +25,7 @@ El unico dato estructural fiable es el tamano del repositorio (0.9 GB), muy infe
 
 No se dispone de informacion sobre la arquitectura interna del modelo. El autor no describe en la model card si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante. Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o PPO.
 
-Los unicos datos tecnicos verificables son de procedimiento: el ajuste se realizo con Unsloth (que el autor promociona como "2x faster") y con TRL, la libreria de entrenamiento por refuerzo y fine-tuning de HuggingFace. El tag `muse_glimmer` sugiere que se reutiliza la plantilla o configuracion de la familia Muse-Glimmer. No hay informacion sobre la innovacion tecnica, el tipo de atencion, ni la estrategia de decodificacion empleada.
+Los unicos datos tecnicos verificables son de procedimiento: el ajuste se realizo con Unsloth (que el autor promociona como "2x faster") y con TRL, la libreria de entrenamiento por refuerzo y fine-tuning de Hugging Face. El tag `muse_glimmer` sugiere que se reutiliza la plantilla o configuracion de la familia Muse-Glimmer. No hay informacion sobre la innovacion tecnica, el tipo de atencion, ni la estrategia de decodificacion empleada.
 
 ## Capacidades
 
@@ -45,8 +45,8 @@ Dada la ausencia de documentacion y de evaluaciones publicadas, los siguientes c
 - Ajuste posterior (continual fine-tuning): al provenir de un pipeline Unsloth/TRL y tener licencia Apache 2.0, puede servir como punto de partida para nuevos ajustes sobre datos propios.
 - Experimentacion academica: util para reproducir o comparar flujos de entrenamiento con Unsloth y TRL frente a alternativas como PEFT o Axolotl.
 - Investigacion sobre datasets especificos: el nombre `1015_cluster_trunc` apunta a un experimento de agrupacion/truncado de datos que podria interesar a quien estudie tecnicas de curacion de datasets.
-- Despliegue en entornos con Text Generation Inference: el tag `text-generation-inference` indica compatibilidad declarada con el servidor TGI de HuggingFace.
-- Uso en endpoints compatibles: el tag `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints, sujeto a disponibilidad y coste del hardware.
+- Despliegue en entornos con Text Generation Inference: el tag `text-generation-inference` indica compatibilidad declarada con el servidor TGI de Hugging Face.
+- Uso en endpoints compatibles: el tag `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints, sujeto a disponibilidad y coste del hardware.
 
 Nota: no se recomienda su uso en produccion sin una evaluacion propia previa, dado que no hay benchmarks, ni documentacion de sesgos, ni garantia de calidad.
 
@@ -74,7 +74,7 @@ No disponible. El autor no proporciona comparaciones y no hay datos de rendimien
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shabieh2/1015_cluster_trunc | no disponible (~30B segun base) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| shabieh2/1015_cluster_trunc | no disponible (~30B segun base) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,9 +91,9 @@ No disponible. El autor no proporciona comparaciones y no hay datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/1015_cluster_trunc
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/1015_cluster_trunc
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): no disponible en la informacion proporcionada
+- TRL (Hugging Face): no disponible en la informacion proporcionada
 - Text Generation Inference: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible

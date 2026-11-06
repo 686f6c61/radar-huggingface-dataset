@@ -70,6 +70,6 @@ No se dispone de comparaciones con otros modelos. Dado que el modelo base es OLM
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed4)
+- [Hugging Face - longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-inoculation-prompting-seed4)
 - [Paper de Olmo 3 (arXiv:2512.13961)](https://arxiv.org/abs/2512.13961)
 - [Modelo base unsloth/Olmo-3-7B-Instruct (referencia)](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)

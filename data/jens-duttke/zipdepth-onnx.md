@@ -27,7 +27,7 @@ La relevancia actual del artefacto es doble: por un lado, el autor del export su
 | Precisión interna | Pesos en FP16, frontera del grafo en FP32 |
 | Checkpoint base | `checkpoints/zipdepth_base.pth`, commit 91f3fd2 del repositorio de los autores |
 | Runtime | ONNX Runtime (probado con la versión 1.24.4 y DirectML) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ Throughput aproximado derivado de las latencias anteriores (1 / latencia, lote d
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ZipDepth-ONNX (esta ficha) | 6,1 M | Imagen de tamaño libre múltiplo de 32; entrenado a 384 | MIT (entrenado con etiquetas de Depth Anything V2 Large, CC BY-NC 4.0) | ONNX en HuggingFace, 0 descargas | 0,72 ms a 384 px en RTX 5070 Ti |
+| ZipDepth-ONNX (esta ficha) | 6,1 M | Imagen de tamaño libre múltiplo de 32; entrenado a 384 | MIT (entrenado con etiquetas de Depth Anything V2 Large, CC BY-NC 4.0) | ONNX en Hugging Face, 0 descargas | 0,72 ms a 384 px en RTX 5070 Ti |
 | ZipDepth original (autores) | 6,1 M | Igual | MIT según los autores | Repositorio GitHub `fabiotosi92/ZipDepth`, checkpoint `zipdepth_base.pth` | Export de referencia en PyTorch; el export ONNX sustituye dos operaciones para permitir ejes libres |
 | Depth Anything V2 Large | No disponible en la información proporcionada | No disponible | CC BY-NC 4.0 | No disponible en la información proporcionada | Usado como generador de las etiquetas de profundidad del entrenamiento de ZipDepth; uso comercial restringido por su licencia |
 | Otros modelos monofocales (MiDaS/DPT y familia) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No se han proporcionado datos que permitan una comparación cuantitativa |
@@ -112,7 +112,7 @@ No se dispone de valores de AbsRel ni de δ<1,25 para ZipDepth en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jens-Duttke/ZipDepth-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Jens-Duttke/ZipDepth-ONNX
 - Repositorio de los autores (ZipDepth): https://github.com/fabiotosi92/ZipDepth
 - Commit del checkpoint base: https://github.com/fabiotosi92/ZipDepth/tree/91f3fd21e131641f51e8d35736d1958350180e3a
 - Licencia del export: https://huggingface.co/Jens-Duttke/ZipDepth-ONNX/blob/main/LICENSE

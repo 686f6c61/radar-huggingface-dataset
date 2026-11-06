@@ -103,7 +103,7 @@ Las alternativas comparables disponibles son otras cuantizaciones del mismo mode
 
 ## Enlaces
 
-- [HuggingFace: freriadoc/Qwen3.8-Flash-Next-Avalon-GGUF](https://huggingface.co/freriadoc/Qwen3.8-Flash-Next-Avalon-GGUF)
+- [Hugging Face: freriadoc/Qwen3.8-Flash-Next-Avalon-GGUF](https://huggingface.co/freriadoc/Qwen3.8-Flash-Next-Avalon-GGUF)
 - [Modelo base: Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [Licencia Qwen Community 1.0](https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE)
 - [Repositorio Avalon](https://github.com/freriadoc/Avalon)

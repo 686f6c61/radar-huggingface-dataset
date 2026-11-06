@@ -46,7 +46,7 @@ La segunda capa, `agentic_ai_system`, integra políticas de reinforcement learni
 - Entrenamiento de un agente de RL para trading intradía: usando `agentic_ai_system` con datos de Yahoo (1m limitado a ~7 días) o Alpaca, se entrena una política PPO y se evalúa en backtest con métricas de validación.
 - Automatización de ejecución en papel: configurando `execution.broker_api: alpaca_paper`, el sistema puede enviar órdenes simuladas a Alpaca para probar la latencia y el flujo de trabajo sin capital real.
 - Investigación académica sobre sobreajuste en backtests: el módulo `algotrader/validation/` implementa DSR y PBO con referencias a Bailey & López de Prado (2014) y Bailey et al. (2016), útil para reproducir experimentos.
-- Despliegue de un espacio HuggingFace para validación comunitaria: el script `deploy_hf_space.sh` permite publicar una demo interactiva con Gradio, donde otros usuarios pueden probar estrategias sobre datos reales.
+- Despliegue de un espacio Hugging Face para validación comunitaria: el script `deploy_hf_space.sh` permite publicar una demo interactiva con Gradio, donde otros usuarios pueden probar estrategias sobre datos reales.
 
 ## Benchmarks y rendimiento
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks de modelos de IA en la informacion 
 - El repositorio pesa 0.1 GB y el código es ligero; la mayoría de las operaciones de backtesting y validación se ejecutan en CPU sin problemas.
 - El entrenamiento de políticas FinRL (PPO, A2C, DDPG, TD3) puede requerir GPU para acelerar, especialmente con datos de alta frecuencia o múltiples activos. Una GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650 o superior) es suficiente para experimentos pequeños.
 - Para ejecución en producción con datos de Yahoo, no se requiere hardware especial; un VPS con 2 GB de RAM es suficiente.
-- Opciones de despliegue: CLI (`python -m algotrader.cli`), interfaz Gradio (`python app.py`), contenedores Docker (incluidos en el repo), y HuggingFace Spaces mediante el script de despliegue.
+- Opciones de despliegue: CLI (`python -m algotrader.cli`), interfaz Gradio (`python app.py`), contenedores Docker (incluidos en el repo), y Hugging Face Spaces mediante el script de despliegue.
 - No se proporcionan datos de latencia o throughput; el rendimiento depende del volumen de datos y de la complejidad de la estrategia.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ La principal diferencia es la capa de validación estadística, que no está pre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ParallelLLC/algorithmic_trading
+- Repositorio Hugging Face: https://huggingface.co/ParallelLLC/algorithmic_trading
 - Repositorio GitHub (mencionado en el README): https://github.com/ParallelLLC/algorithmic_trading
 - Referencias citadas: Bailey & López de Prado (2014) DSR; Bailey et al. (2016) PBO; Masters (2018) permutation tests for trading systems.

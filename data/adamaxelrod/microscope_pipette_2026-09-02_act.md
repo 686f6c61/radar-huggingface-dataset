@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), entrenada para controlar un brazo robótico Meca500 en la tarea de mover una pipeta bajo un microscopio. El modelo fue desarrollado por AdamAxelrod y publicado en HuggingFace bajo licencia Apache 2.0, utilizando el framework LeRobot de HuggingFace para su entrenamiento y despliegue.
+Este modelo es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), entrenada para controlar un brazo robótico Meca500 en la tarea de mover una pipeta bajo un microscopio. El modelo fue desarrollado por AdamAxelrod y publicado en Hugging Face bajo licencia Apache 2.0, utilizando el framework LeRobot de Hugging Face para su entrenamiento y despliegue.
 
 La arquitectura ACT, propuesta en el paper arXiv:2304.13705, predice secuencias de acciones (action chunks) en lugar de acciones individuales, lo que mejora la estabilidad y precisión del control robótico en tareas de manipulación fina. El modelo procesa tres flujos visuales simultáneos (cámara cenital, cámara de muñeca y cámara de microscopio) junto con el estado del robot (posición de las articulaciones), y genera comandos de acción de 7 dimensiones.
 
@@ -25,7 +25,7 @@ Con aproximadamente 51,7 millones de parámetros, este modelo es relativamente l
 
 ACT (Action Chunking with Transformers) es una arquitectura basada en transformers diseñada especificamente para aprendizaje por imitacion en robotica. A diferencia de los metodos que predicen una sola accion por paso de tiempo, ACT predice un "chunk" o secuencia de acciones futuras, lo que reduce la acumulacion de errores y mejora la coherencia del movimiento. El modelo utiliza un codificador de vision para procesar las imagenes de las tres camaras y un codificador de estado para la informacion proprioceptiva del robot, fusionando ambas modalidades para generar los comandos de accion.
 
-El entrenamiento se realizo con el framework LeRobot version 0.5.2, utilizando el optimizador AdamW con una tasa de aprendizaje de 1e-05, batch size de 8 y 100.000 pasos de entrenamiento. El dataset de entrenamiento, disponible en HuggingFace como AdamAxelrod/microscope_pipette_2026-09-02, contiene 50 episodios de teleoperacion con 26.455 fotogramas a 20 FPS, todos etiquetados con la tarea "move_pipette_under_microscope". No se menciona el uso de RLHF, DPO u otras tecnicas de refinamiento post-entrenamiento; se trata de un entrenamiento puramente supervisado de imitacion.
+El entrenamiento se realizo con el framework LeRobot version 0.5.2, utilizando el optimizador AdamW con una tasa de aprendizaje de 1e-05, batch size de 8 y 100.000 pasos de entrenamiento. El dataset de entrenamiento, disponible en Hugging Face como AdamAxelrod/microscope_pipette_2026-09-02, contiene 50 episodios de teleoperacion con 26.455 fotogramas a 20 FPS, todos etiquetados con la tarea "move_pipette_under_microscope". No se menciona el uso de RLHF, DPO u otras tecnicas de refinamiento post-entrenamiento; se trata de un entrenamiento puramente supervisado de imitacion.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdamAxelrod/microscope_pipette_2026-09-02_act
+- Modelo en Hugging Face: https://huggingface.co/AdamAxelrod/microscope_pipette_2026-09-02_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/AdamAxelrod/microscope_pipette_2026-09-02
 - Dataset general (mismo autor): https://huggingface.co/datasets/AdamAxelrod/microscope_pipette
 - Paper de ACT: https://huggingface.co/papers/2304.13705

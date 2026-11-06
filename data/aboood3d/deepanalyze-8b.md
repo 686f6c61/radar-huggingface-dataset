@@ -65,13 +65,13 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 - No se han publicado resultados de benchmarks estandarizados, por lo que su rendimiento real en tareas generales de lenguaje (razonamiento, codigo, matematicas) es desconocido.
 - Al ser un modelo agéntico, existe riesgo de que ejecute acciones no deseadas si se le proporcionan herramientas con permisos amplios; es necesario implementar sandboxing y control de acceso en entornos de produccion.
 - La licencia MIT permite uso comercial y modificacion, pero no hay garantias de soporte ni de ausencia de sesgos en los datos de entrenamiento.
-- La version de HuggingFace bajo el usuario aboOod3d tiene 0 descargas y 0 likes, lo que sugiere que puede ser un espejo no oficial; se recomienda usar el repositorio original de RUC-DataLab.
+- La version de Hugging Face bajo el usuario aboOod3d tiene 0 descargas y 0 likes, lo que sugiere que puede ser un espejo no oficial; se recomienda usar el repositorio original de RUC-DataLab.
 
 ## Enlaces
 
 - Articulo arXiv: https://arxiv.org/html/2510.16872
-- Repositorio HuggingFace oficial: https://huggingface.co/RUC-DataLab/DeepAnalyze-8B
+- Repositorio Hugging Face oficial: https://huggingface.co/RUC-DataLab/DeepAnalyze-8B
 - Repositorio GitHub: https://github.com/ruc-datalab/DeepAnalyze
 - Pagina del proyecto: https://ruc-deepanalyze.github.io/
 - Version GGUF de la comunidad: https://huggingface.co/Mazenz/DeepAnalyze-8B-Q8_0-GGUF
-- Repositorio HuggingFace del usuario aboOod3d (espejo): https://huggingface.co/aboOod3d/deepanalyze-8b
+- Repositorio Hugging Face del usuario aboOod3d (espejo): https://huggingface.co/aboOod3d/deepanalyze-8b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PanDB es un adaptador LoRA publicado en HuggingFace por el usuario nicam46234, diseñado para el modelo base de difusión FLUX.1-dev de Black Forest Labs. Se trata de un ajuste fino de bajo rango orientado a generación de imágenes a partir de texto (text-to-image), con un tamaño de repositorio de 0,2 GB, lo que sugiere un adaptador de peso reducido en lugar de un modelo completo.
+PanDB es un adaptador LoRA publicado en Hugging Face por el usuario nicam46234, diseñado para el modelo base de difusión FLUX.1-dev de Black Forest Labs. Se trata de un ajuste fino de bajo rango orientado a generación de imágenes a partir de texto (text-to-image), con un tamaño de repositorio de 0,2 GB, lo que sugiere un adaptador de peso reducido en lugar de un modelo completo.
 
 La información pública disponible es extremadamente escasa: no se especifican el prompt de instancia, el dataset de entrenamiento, ni los casos de uso previstos. La model card apenas incluye una galería de ejemplos y un enlace de descarga. No se han publicado métricas, licencia ni detalles técnicos adicionales, por lo que esta ficha se basa únicamente en los metadatos del repositorio y en la información oficial del modelo base FLUX.1-dev.
 

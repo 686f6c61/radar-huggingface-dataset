@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-VL-7B-Instruct es un modelo multimodal de visión y lenguaje desarrollado por el equipo Qwen de Alibaba Cloud. Este repositorio en HuggingFace es una copia subida por el usuario `chibifire` del modelo original, que está disponible en `Qwen/Qwen2.5-VL-7B-Instruct`. El modelo está diseñado para tareas de comprensión visual avanzada, incluyendo análisis de imágenes, documentos, gráficos, vídeos largos y uso como agente visual capaz de interactuar con interfaces de ordenador y teléfono.
+Qwen2.5-VL-7B-Instruct es un modelo multimodal de visión y lenguaje desarrollado por el equipo Qwen de Alibaba Cloud. Este repositorio en Hugging Face es una copia subida por el usuario `chibifire` del modelo original, que está disponible en `Qwen/Qwen2.5-VL-7B-Instruct`. El modelo está diseñado para tareas de comprensión visual avanzada, incluyendo análisis de imágenes, documentos, gráficos, vídeos largos y uso como agente visual capaz de interactuar con interfaces de ordenador y teléfono.
 
 La arquitectura combina un codificador visual (ViT) optimizado con atención de ventana, SwiGLU y RMSNorm, y un modelo de lenguaje Qwen2.5. El modelo cuenta con 8.292.166.656 parámetros totales (aunque se comercializa como 7B), y está licenciado bajo Apache 2.0. Es una versión instruction-tuned, pensada para seguir instrucciones multimodales y generar salidas estructuradas.
 
@@ -99,7 +99,7 @@ Benchmarks de agente:
 - VRAM estimada para inferencia: ~16.6 GB en FP16 (calculo directo de los pesos). Con cuantizacion 4-bit, la estimacion es de ~4.2 GB, aunque no hay datos oficiales de cuantizacion disponibles.
 - GPU recomendadas: A100 40GB, H100 80GB, RTX 4090 24GB (con cuantizacion).
 - Compatibilidad con GPU de consumo: si, en RTX 3090 o RTX 4090 con cuantizacion de 4 u 8 bits.
-- Opciones de despliegue: transformers (via HuggingFace), vLLM, text-generation-inference (TGI), endpoints compatibles.
+- Opciones de despliegue: transformers (via Hugging Face), vLLM, text-generation-inference (TGI), endpoints compatibles.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -108,10 +108,10 @@ El modelo se compara con otras alternativas multimodales de tamano similar, como
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-VL-7B-Instruct | 8.29B | No disponible | Apache 2.0 | HuggingFace |
-| Qwen2-VL-7B-Instruct | 7B | No disponible | Apache 2.0 | HuggingFace |
-| InternVL2.5-8B | 8B | No disponible | No disponible | HuggingFace |
-| MiniCPM-o 2.6 | No disponible | No disponible | No disponible | HuggingFace |
+| Qwen2.5-VL-7B-Instruct | 8.29B | No disponible | Apache 2.0 | Hugging Face |
+| Qwen2-VL-7B-Instruct | 7B | No disponible | Apache 2.0 | Hugging Face |
+| InternVL2.5-8B | 8B | No disponible | No disponible | Hugging Face |
+| MiniCPM-o 2.6 | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -123,7 +123,7 @@ El modelo se compara con otras alternativas multimodales de tamano similar, como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chibifire/Qwen2.5-VL-7B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/chibifire/Qwen2.5-VL-7B-Instruct
 - Repositorio oficial del modelo: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Blog de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/
 - GitHub de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL

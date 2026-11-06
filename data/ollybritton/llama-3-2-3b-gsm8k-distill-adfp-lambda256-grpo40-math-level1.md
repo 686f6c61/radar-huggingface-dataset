@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo40-math-level1` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.2-3B`, publicado por el usuario ollybritton en HuggingFace. Se trata de un transformer decoder-only denso de 3.212.749.824 parámetros, distribuido en formato safetensors y bajo la licencia comunitaria Llama 3.2. No es un modelo nuevo: hereda la arquitectura, el tokenizador y la ventana de contexto del modelo base de Meta.
+El modelo `ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo40-math-level1` es un ajuste fino (fine-tune) del modelo base `meta-llama/Llama-3.2-3B`, publicado por el usuario ollybritton en Hugging Face. Se trata de un transformer decoder-only denso de 3.212.749.824 parámetros, distribuido en formato safetensors y bajo la licencia comunitaria Llama 3.2. No es un modelo nuevo: hereda la arquitectura, el tokenizador y la ventana de contexto del modelo base de Meta.
 
 Por el identificador del repositorio se deduce que el ajuste se ha orientado a razonamiento matemático: el segmento `gsm8k-distill` apunta a destilación sobre el conjunto GSM8K, `grpo40` a un entrenamiento con GRPO (Group Relative Policy Optimization) de 40 pasos y `math-level1` a un nivel de dificultad 1. Los segmentos `adfp` y `lambda256` no están documentados. Es importante señalar que esta interpretación procede del nombre del repositorio y no de documentación publicada por el autor.
 
@@ -92,7 +92,7 @@ La comparacion de rendimiento no es posible: no existen resultados publicados de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo40-math-level1
+- Modelo en Hugging Face: https://huggingface.co/ollybritton/Llama-3.2-3B-gsm8k-distill-adfp-lambda256-grpo40-math-level1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Paper de la familia Llama 3 (incluye Llama 3.2): https://arxiv.org/abs/2407.21783
 - Blog oficial de Meta sobre Llama 3.2: https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/

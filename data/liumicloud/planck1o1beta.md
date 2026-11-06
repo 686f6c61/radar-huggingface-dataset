@@ -2,7 +2,7 @@
 
 ## Resumen
 
-planck1o1beta es un modelo publicado en HuggingFace por el usuario LiumiCLoud el 6 de octubre de 2026 bajo el identificador `LiumiCLoud/planck1o1beta`. Cuenta con 436.022.273 parametros (unos 436 millones, segun los pesos en safetensors) y un repositorio de 0,3 GB. La model card esta practicamente vacia: unicamente contiene metadatos de licencia (`other`, con nombre `lcpl-1.0`), sin descripcion del modelo, del proceso de entrenamiento ni de sus capacidades.
+planck1o1beta es un modelo publicado en Hugging Face por el usuario LiumiCLoud el 6 de octubre de 2026 bajo el identificador `LiumiCLoud/planck1o1beta`. Cuenta con 436.022.273 parametros (unos 436 millones, segun los pesos en safetensors) y un repositorio de 0,3 GB. La model card esta practicamente vacia: unicamente contiene metadatos de licencia (`other`, con nombre `lcpl-1.0`), sin descripcion del modelo, del proceso de entrenamiento ni de sus capacidades.
 
 El repositorio esta etiquetado con `gguf`, `feature-extraction`, `endpoints_compatible` y `region:us`. Estas etiquetas sugieren que el modelo se distribuye al menos parcialmente en formato GGUF y que podria estar orientado a extraccion de caracteristicas o a tareas de representacion vectorial, aunque el autor no lo confirma en ningun momento. No se declara pipeline, idiomas soportados ni longitud de contexto.
 
@@ -79,7 +79,7 @@ La comparativa se limita a parametros, contexto declarado y licencia. No se incl
 | Modelo | Parametros | Contexto declarado | Licencia | Formato | Rendimiento |
 |---|---|---|---|---|---|
 | planck1o1beta (LiumiCLoud) | 436 M | no disponible | lcpl-1.0 | GGUF / safetensors | no disponible |
-| SmolLM2-360M (HuggingFace) | 362 M | 2 048 tokens | Apache-2.0 | safetensors, GGUF | publicado por su autor, no evaluado aqui |
+| SmolLM2-360M (Hugging Face) | 362 M | 2 048 tokens | Apache-2.0 | safetensors, GGUF | publicado por su autor, no evaluado aqui |
 | Qwen2.5-0.5B (Alibaba) | 494 M | 32 768 tokens | Apache-2.0 | safetensors, GGUF | publicado por su autor, no evaluado aqui |
 | Pythia-410M (EleutherAI) | 410 M | 2 048 tokens | Apache-2.0 | safetensors | publicado por su autor, no evaluado aqui |
 
@@ -99,7 +99,7 @@ Los valores de contexto y licencia de los modelos de la comparativa corresponden
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiumiCLoud/planck1o1beta
+- Hugging Face: https://huggingface.co/LiumiCLoud/planck1o1beta
 - Fichero de licencia del repositorio: `LICENSE` (referenciado en la model card como `license_link: LICENSE`)
 - Paper: no disponible.
 - Blog o documentacion tecnica: no disponible.

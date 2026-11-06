@@ -68,10 +68,10 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/chinmankokumin/Krea2RedMix3.0w4a8)
+- [Modelo en Hugging Face](https://huggingface.co/chinmankokumin/Krea2RedMix3.0w4a8)
 - [RedCraft REDMIX Hybrid 3.0 en Civitai](https://civitai.red/models/958009/redcraft-or-or-redmix-hybrid-a2a-beta2-ltx25-2k?modelVersionId=3139241)
 - [ComfyUI-QuantizationToolkit](https://github.com/SparknightLLC/ComfyUI-QuantizationToolkit)
-- [Qwen3 VL 4B Heretic en HuggingFace](https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI/blob/main/qwen3-vl-4b-heretic.safetensors)
+- [Qwen3 VL 4B Heretic en Hugging Face](https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic-ComfyUI/blob/main/qwen3-vl-4b-heretic.safetensors)
 - [comfy-model-tools](https://github.com/Comfy-Org/comfy-model-tools)
 - [Krea 2 (sitio oficial)](https://www.krea.ai/krea-2)
 - [Krea 2 ComfyUI Workflow Example](https://docs.comfy.org/tutorials/image/krea/krea-2)

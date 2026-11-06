@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fonzie0.1-4B-GGUF es una cuantización estática en formato GGUF del modelo Fonzie0.1-4B, publicada por el usuario mradermacher en HuggingFace. El repositorio contiene únicamente los pesos convertidos a GGUF para su uso con llama.cpp y herramientas compatibles; no incluye información sobre el entrenamiento, la arquitectura interna ni el propósito original del modelo base.
+Fonzie0.1-4B-GGUF es una cuantización estática en formato GGUF del modelo Fonzie0.1-4B, publicada por el usuario mradermacher en Hugging Face. El repositorio contiene únicamente los pesos convertidos a GGUF para su uso con llama.cpp y herramientas compatibles; no incluye información sobre el entrenamiento, la arquitectura interna ni el propósito original del modelo base.
 
 A pesar de la denominación "4B" en el nombre, el recuento real de parámetros en safetensors es de 333.514.240 (aproximadamente 334 millones), lo que sugiere que el nombre del modelo no refleja su tamaño real o que se trata de un modelo pequeño con una etiqueta comercial engañosa. Esta discrepancia debe tenerse en cuenta antes de cualquier evaluación.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: se trata de un artefacto de conversión
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base Fonzie0.1-4B. La model card del repositorio GGUF no incluye detalles sobre el tipo de transformer, la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. La única información técnica disponible son los metadatos de la conversión a GGUF, que indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversión se realizó desde un checkpoint en formato HuggingFace.
+No se dispone de información sobre la arquitectura del modelo base Fonzie0.1-4B. La model card del repositorio GGUF no incluye detalles sobre el tipo de transformer, la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. La única información técnica disponible son los metadatos de la conversión a GGUF, que indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que la conversión se realizó desde un checkpoint en formato Hugging Face.
 
 El repositorio es una conversión estática generada con las herramientas habituales de llama.cpp, sin que se documenten innovaciones técnicas adicionales como decodificación especulativa, atención lineal o arquitecturas híbridas. Cualquier afirmación sobre la arquitectura subyacente sería especulativa.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Fonzie0.1-4B-GGUF | ~334 M (según safetensors) | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| SmolLM2-360M | ~362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| TinyLlama-1.1B | ~1.100 M | 2.048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| Fonzie0.1-4B-GGUF | ~334 M (según safetensors) | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| SmolLM2-360M | ~362 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| TinyLlama-1.1B | ~1.100 M | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparación es orientativa: Fonzie0.1-4B carece de documentación sobre contexto, licencia y rendimiento, por lo que no puede evaluarse en igualdad de condiciones frente a alternativas consolidadas con licencias permisivas y benchmarks públicos.
 

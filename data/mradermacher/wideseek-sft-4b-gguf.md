@@ -78,8 +78,8 @@ La comparacion es limitada porque no hay datos de rendimiento publicados para Wi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/WideSeek-SFT-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/WideSeek-R1/WideSeek-SFT-4B
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/WideSeek-SFT-4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/WideSeek-R1/WideSeek-SFT-4B
 - Sitio web del proyecto WideSeek: https://wideseek-ai.github.io/
 - Dataset de entrenamiento: https://huggingface.co/datasets/WideSeek-R1/WideSeek-R1-SFT-data
 - Repositorio de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/model_requests

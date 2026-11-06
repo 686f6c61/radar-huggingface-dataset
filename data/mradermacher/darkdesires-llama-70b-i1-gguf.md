@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DarkDesires-LLaMa-70B-i1-GGUF es una cuantizacion en formato GGUF del modelo TareksLab/DarkDesires-LLaMa-70B, realizada por mradermacher, un cuantizador conocido en la comunidad de HuggingFace. El modelo original es un merge creado con mergekit sobre una base de arquitectura LLaMA de 70 mil millones de parametros, orientado a conversacion en ingles. Esta version i1 (imatrix) aplica la tecnica de cuantizacion con importancia matrix, que mejora la calidad de los quants de baja precision en comparacion con las versiones estaticas.
+DarkDesires-LLaMa-70B-i1-GGUF es una cuantizacion en formato GGUF del modelo TareksLab/DarkDesires-LLaMa-70B, realizada por mradermacher, un cuantizador conocido en la comunidad de Hugging Face. El modelo original es un merge creado con mergekit sobre una base de arquitectura LLaMA de 70 mil millones de parametros, orientado a conversacion en ingles. Esta version i1 (imatrix) aplica la tecnica de cuantizacion con importancia matrix, que mejora la calidad de los quants de baja precision en comparacion con las versiones estaticas.
 
 El interes principal de esta ficha es que ofrece una amplia gama de niveles de cuantizacion, desde IQ1_M (16,9 GB) hasta Q6_K (58,0 GB), lo que permite ejecutar un modelo de 70B en hardware muy diverso, desde GPUs de consumo con 16-24 GB de VRAM hasta sistemas de multiples GPU o inferencia en CPU. La licencia del modelo base no esta disponible, lo que limita su uso en produccion sin verificacion previa.
 
@@ -65,7 +65,7 @@ No disponible. No se dispone de informacion sobre otros modelos de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/DarkDesires-LLaMa-70B-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/DarkDesires-LLaMa-70B-i1-GGUF
 - Modelo original: https://huggingface.co/TareksLab/DarkDesires-LLaMa-70B
 - Perfil de mradermacher: https://huggingface.co/mradermacher
 - Pagina de solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

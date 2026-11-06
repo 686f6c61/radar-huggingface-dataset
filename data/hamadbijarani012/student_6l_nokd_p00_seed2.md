@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`student_6l_nokd_p00_seed2` es un checkpoint de clasificación de secuencias publicado en HuggingFace por el usuario `hamadbijarani012`, dentro de lo que la propia model card describe como un "estudio de compresión NLP eficiente en energía". Se trata de un ajuste fino (fine-tuning) sobre una arquitectura DistilBERT de 6 capas que contiene 66.955.010 parámetros, según los pesos reales almacenados en formato safetensors. El nombre del checkpoint indica que se entrenó sin destilación de conocimiento ("nokd", probablemente *no knowledge distillation*) y que corresponde a la semilla 2 ("seed2") de una configuración concreta ("p00").
+`student_6l_nokd_p00_seed2` es un checkpoint de clasificación de secuencias publicado en Hugging Face por el usuario `hamadbijarani012`, dentro de lo que la propia model card describe como un "estudio de compresión NLP eficiente en energía". Se trata de un ajuste fino (fine-tuning) sobre una arquitectura DistilBERT de 6 capas que contiene 66.955.010 parámetros, según los pesos reales almacenados en formato safetensors. El nombre del checkpoint indica que se entrenó sin destilación de conocimiento ("nokd", probablemente *no knowledge distillation*) y que corresponde a la semilla 2 ("seed2") de una configuración concreta ("p00").
 
 El modelo no es de propósito general: está pensado para usarse con `AutoModelForSequenceClassification` en el experimento SST-2, es decir, clasificación binaria de sentimiento sobre reseñas de cine en inglés. Su valor principal es como artefacto de reproducibilidad para estudios de eficiencia y compresión de modelos NLP, no como herramienta de producción lista para usar.
 
@@ -70,7 +70,7 @@ Los valores de referencia de la columna "parámetros" son cifras aproximadas de 
 
 | Modelo | Parámetros aprox. | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| student_6l_nokd_p00_seed2 | 66,96 M | 6 | no disponible | no disponible | HuggingFace, 0 descargas |
+| student_6l_nokd_p00_seed2 | 66,96 M | 6 | no disponible | no disponible | Hugging Face, 0 descargas |
 | DistilBERT base | ~66 M | 6 | 512 | Apache 2.0 | Ampliamente disponible |
 | BERT base | ~110 M | 12 | 512 | Apache 2.0 | Ampliamente disponible |
 | MobileBERT | ~25 M | 24 | 512 | Apache 2.0 | Ampliamente disponible |
@@ -88,9 +88,9 @@ La diferencia principal frente a estas alternativas establecidas no está en el 
 - Longitud de contexto no documentada: se desconoce si el `max_position_embeddings` se ha modificado respecto al valor estándar.
 - Alucinación: no aplica en sentido estricto al no ser un modelo generativo, pero sí existe riesgo de clasificaciones erróneas con alta confianza en entradas fuera de distribución.
 - Sesgos potenciales: heredados del corpus SST-2 (reseñas de cine), con posibles sesgos de dominio, registro y temática.
-- Sin pipeline declarado: HuggingFace no expone una tarea asociada, lo que dificulta su uso con la API `pipeline` sin configuración manual.
+- Sin pipeline declarado: Hugging Face no expone una tarea asociada, lo que dificulta su uso con la API `pipeline` sin configuración manual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamadbijarani012/student_6l_nokd_p00_seed2
+- Modelo en Hugging Face: https://huggingface.co/hamadbijarani012/student_6l_nokd_p00_seed2
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; las búsquedas devolvieron únicamente páginas sin relación (normativa francesa sobre comisarios de cuentas), por lo que no se incluyen aquí.

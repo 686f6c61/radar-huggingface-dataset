@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`felixschwarz/beit-multitask-prototype-2024` es un prototipo experimental de arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientado a tareas multitarea, publicado por el usuario felixschwarz en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card describe explícitamente el repositorio como una implementación funcional de referencia con configuración "nano", destinada a pruebas de humo (smoke tests) y a servir de punto de partida reproducible. El checkpoint `model.safetensors` se presenta como una inicialización válida, no como un modelo con rendimiento demostrado.
+`felixschwarz/beit-multitask-prototype-2024` es un prototipo experimental de arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientado a tareas multitarea, publicado por el usuario felixschwarz en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: la model card describe explícitamente el repositorio como una implementación funcional de referencia con configuración "nano", destinada a pruebas de humo (smoke tests) y a servir de punto de partida reproducible. El checkpoint `model.safetensors` se presenta como una inicialización válida, no como un modelo con rendimiento demostrado.
 
 El modelo declara 24.832 parámetros totales según los metadatos de safetensors, una cifra extremadamente reducida que confirma su carácter de juguete experimental. La arquitectura combina atención dilatada, fusión con compuertas (gated fusion), activación swish y normalización por grupos (groupnorm), siguiendo la estela de las variantes BEiT para visión. No se publican resultados de benchmarks, idiomas soportados ni pipeline asociado, y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felixschwarz/beit-multitask-prototype-2024 | 24.832 | no disponible | No (solo inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
-| BEiT base (Microsoft, referencia) | ~86 M | 224x224 px de entrada | Sí, preentrenado en ImageNet-22k | MIT | HuggingFace, ampliamente usado |
-| BEiT large (Microsoft, referencia) | ~304 M | 224x224 px de entrada | Sí, preentrenado en ImageNet-22k | MIT | HuggingFace, ampliamente usado |
+| felixschwarz/beit-multitask-prototype-2024 | 24.832 | no disponible | No (solo inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
+| BEiT base (Microsoft, referencia) | ~86 M | 224x224 px de entrada | Sí, preentrenado en ImageNet-22k | MIT | Hugging Face, ampliamente usado |
+| BEiT large (Microsoft, referencia) | ~304 M | 224x224 px de entrada | Sí, preentrenado en ImageNet-22k | MIT | Hugging Face, ampliamente usado |
 
 La comparación con las variantes oficiales de BEiT es únicamente estructural: el prototipo de felixschwarz no está entrenado y no es comparable en rendimiento. No se dispone de información sobre otros prototipos multitarea equivalentes en la búsqueda realizada.
 
@@ -86,5 +86,5 @@ La comparación con las variantes oficiales de BEiT es únicamente estructural: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/felixschwarz/beit-multitask-prototype-2024
+- Hugging Face: https://huggingface.co/felixschwarz/beit-multitask-prototype-2024
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-NPU2 es una conversión cuantizada del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Atomic-Germ en HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de un port del modelo original al formato propietario Q4NX del runtime OpenFlowLM (OFLM), compilado específicamente para inferencia sobre NPU AMD XDNA. El repositorio ocupa 20,1 GB y el fichero de pesos principal, `model.q4nx`, pesa 18,70 GB.
+Qwen3.8-27B-NPU2 es una conversión cuantizada del modelo base Qwen/Qwen3.8-27B, publicada por el usuario Atomic-Germ en Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino, sino de un port del modelo original al formato propietario Q4NX del runtime OpenFlowLM (OFLM), compilado específicamente para inferencia sobre NPU AMD XDNA. El repositorio ocupa 20,1 GB y el fichero de pesos principal, `model.q4nx`, pesa 18,70 GB.
 
 El interés de esta ficha es acotado y conviene dejarlo claro desde el principio: no es un modelo nuevo, sino un artefacto de despliegue. Su relevancia radica en que permite ejecutar un modelo de la familia Qwen 3.5 (según la etiqueta `qwen3_5` de la model card) sobre hardware con NPU AMD XDNA sin depender de una GPU dedicada, usando el instalador `oflm-add` y el runtime OpenFlowLM. Está etiquetado como compatible con endpoints y con despliegue en Azure y SageMaker.
 
@@ -107,7 +107,7 @@ No hay datos de rendimiento ni de arquitectura del modelo base en la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-27B-NPU2
+- Repositorio en Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-27B-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Instalador OpenFlowLM: paquete `oflm-add` (`pip install oflm-add`, `uv tool install oflm-add`); no se ha encontrado enlace directo a repositorio o documentación en la información disponible.
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces obtenidos correspondían a temas sin relación (una marca de esquís y una cartera de criptomonedas) y se han descartado.

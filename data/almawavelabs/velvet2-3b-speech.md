@@ -6,7 +6,7 @@ Velvet2-3B-Speech es un modelo multimodal audio-texto desarrollado por AlmawaveL
 
 El modelo cuenta con 4.553.887.744 parámetros totales según los pesos en safetensors, lo que lo sitúa en la franja de los 4-5 mil millones de parámetros, a pesar de la denominación "3B" heredada del modelo base. Emplea la librería transformers con código personalizado (`custom_code`) y se distribuye en formato safetensors con un tamaño de repositorio de 9,4 GB. Soporta seis idiomas: inglés, italiano, portugués, español, alemán y francés.
 
-Su relevancia radica en la combinación de un modelo de lenguaje abierto con capacidades de comprensión de audio en un rango de tamaño manejable para despliegue en infraestructura moderada. La licencia Apache 2.0 y la disponibilidad de pesos abiertos (aunque con acceso restringido en HuggingFace) lo convierten en una opción atractiva para integraciones de voz en productos multilingües europeos, especialmente en el contexto italiano y de lenguas romances.
+Su relevancia radica en la combinación de un modelo de lenguaje abierto con capacidades de comprensión de audio en un rango de tamaño manejable para despliegue en infraestructura moderada. La licencia Apache 2.0 y la disponibilidad de pesos abiertos (aunque con acceso restringido en Hugging Face) lo convierten en una opción atractiva para integraciones de voz en productos multilingües europeos, especialmente en el contexto italiano y de lenguas romances.
 
 ## Especificaciones tecnicas
 
@@ -70,20 +70,20 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Whisper large-v3 | ~1,55 B | N/A (ASR) | multilingue | MIT | Abierto |
 | SALMONN-7B | ~7 B | no disponible | multilingue | no disponible | Abierto |
 
-La comparación con Qwen2-Audio y SALMONN es aproximada, ya que no se dispone de benchmarks del modelo Velvet2-3B-Speech para contrastar rendimiento. Whisper large-v3 es un modelo exclusivamente ASR, mientras que Velvet2-3B-Speech cubre ASR, QA hablado y resumen, lo que amplía su ámbito de aplicación. La licencia Apache 2.0 de Velvet2-3B-Speech es permisiva para uso comercial, aunque el acceso restringido en HuggingFace exige aceptar condiciones.
+La comparación con Qwen2-Audio y SALMONN es aproximada, ya que no se dispone de benchmarks del modelo Velvet2-3B-Speech para contrastar rendimiento. Whisper large-v3 es un modelo exclusivamente ASR, mientras que Velvet2-3B-Speech cubre ASR, QA hablado y resumen, lo que amplía su ámbito de aplicación. La licencia Apache 2.0 de Velvet2-3B-Speech es permisiva para uso comercial, aunque el acceso restringido en Hugging Face exige aceptar condiciones.
 
 ## Limitaciones y advertencias
 
 - Sesgos conocidos: no documentados en la información disponible; al entrenarse sobre datos multilingües, puede heredar sesgos de género, acento o dialecto presentes en los corpus de audio.
 - Riesgo de alucinación: como modelo generativo, puede producir transcripciones o respuestas que no se correspondan con el audio de entrada, especialmente en condiciones de ruido o acentos no representados.
 - Limitaciones de contexto o idioma: aunque soporta seis idiomas, no se especifica el rendimiento relativo por idioma; las lenguas con menos datos (portugués, alemán, francés) podrían tener menor precisión que italiano o inglés.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso está restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones del autor antes de descargar los pesos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el acceso está restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del autor antes de descargar los pesos.
 - Caveats para producción: el uso de `custom_code` implica que el modelo requiere `trust_remote_code=True` en transformers, lo que añade un riesgo de seguridad si no se audita el código; además, no se han publicado benchmarks que permitan estimar su calidad frente a alternativas consolidadas.
 - Tamaño real de parámetros (4,55 B) superior al que sugiere el nombre "3B", lo que puede afectar a las estimaciones de VRAM si se planifica el despliegue basándose en la nomenclatura.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlmawaveLabs/Velvet2-3B-Speech
+- Hugging Face: https://huggingface.co/AlmawaveLabs/Velvet2-3B-Speech
 - Modelo base: https://huggingface.co/AlmawaveLabs/Velvet2-3B
 - Organización AlmawaveLabs: https://huggingface.co/AlmawaveLabs
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

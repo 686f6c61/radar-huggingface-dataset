@@ -23,7 +23,7 @@ Es relevante para flujos de trabajo de descubrimiento de farmacos, porque la des
 | Tarea | Clasificacion de aristas de grafo (graph edge classification) |
 | Libreria declarada | xgboost |
 | Autor / organizacion | ailab-bio |
-| Tamano del repositorio | 0.0 GB (redondeado en la interfaz de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (redondeado en la interfaz de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ La informacion disponible no incluye datos cuantitativos de otras herramientas d
 
 | Alternativa | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PROTAC-Splitter XGBoost | Clasificador de aristas de grafo (XGBoost) | no disponible | no aplica | no disponible | MIT | HuggingFace + GitHub |
+| PROTAC-Splitter XGBoost | Clasificador de aristas de grafo (XGBoost) | no disponible | no aplica | no disponible | MIT | Hugging Face + GitHub |
 | Otras opciones del paquete `protac_splitter` (si existen) | no disponible | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Reglas heuristicas o curacion manual de puntos de corte | Enfoque no aprendido | no aplica | no aplica | no disponible | no aplica | no aplica |
 
@@ -91,6 +91,6 @@ La model card menciona el parametro `model="xgboost"` en `split_protac()`, lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ailab-bio/PROTAC-Splitter-XGBoost
+- Modelo en Hugging Face: https://huggingface.co/ailab-bio/PROTAC-Splitter-XGBoost
 - Repositorio de la herramienta PROTAC-Splitter: https://github.com/ribesstefano/PROTAC-Splitter
 - Dataset de entrenamiento (Zenodo): https://doi.org/10.5281/zenodo.15797309

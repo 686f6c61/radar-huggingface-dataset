@@ -4,7 +4,7 @@
 
 `regupta0904/video-understanding-tryout` no es un modelo entrenado, sino un repositorio de notas de investigacion y un esbozo de experimento sobre comprension de video. El unico artefacto declarado por el autor es `analysis.md`, un documento de trabajo que plantea el alcance de la pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y un contexto de evaluacion basado en MSR-VTT y ActivityNet Captions. La propia model card indica explicitamente que el repositorio no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
 
-El repositorio esta etiquetado con `safetensors`, `transformer` y `research-notes`, y la licencia declarada es CC-BY-4.0. Los metadatos de HuggingFace indican una unica cifra de parametros totales de 33.088, un valor incompatible con cualquier modelo de comprension de video funcional y sin arquitectura, configuracion ni codigo asociados que lo respalden; el tamano del repositorio es de 0,0 GB. No hay pipeline declarado, no se listan idiomas soportados y no consta ninguna descarga ni interaccion de la comunidad.
+El repositorio esta etiquetado con `safetensors`, `transformer` y `research-notes`, y la licencia declarada es CC-BY-4.0. Los metadatos de Hugging Face indican una unica cifra de parametros totales de 33.088, un valor incompatible con cualquier modelo de comprension de video funcional y sin arquitectura, configuracion ni codigo asociados que lo respalden; el tamano del repositorio es de 0,0 GB. No hay pipeline declarado, no se listan idiomas soportados y no consta ninguna descarga ni interaccion de la comunidad.
 
 Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de trabajo para quien quiera disenar una evaluacion reproducible en video understanding, no como componente desplegable. Cualquier uso en produccion, comparacion de rendimiento o estimacion de requisitos de hardware queda fuera del alcance de lo que este repositorio ofrece actualmente.
 
@@ -83,7 +83,7 @@ No procede una comparativa tecnica: no existe checkpoint, configuracion de arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/regupta0904/video-understanding-tryout
+- Repositorio en Hugging Face: https://huggingface.co/regupta0904/video-understanding-tryout
 - No se han encontrado en la busqueda web enlaces relevantes al repositorio ni a su contenido: los resultados devueltos corresponden a documentacion de la biblioteca React y no guardan relacion con el modelo.
 - Referencias internas del repositorio (no verificables desde el exterior): `analysis.md` y `README.md`.
 - No se dispone de enlaces a papers, blogs, repositorios de codigo o demos asociados a este repositorio.

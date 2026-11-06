@@ -88,7 +88,7 @@ No se han encontrado adaptadores directamente comparables en la información dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SpXMerlin1D/MiniMaxH3-CondBridge-Qwen3.5-4B
+- Repositorio Hugging Face: https://huggingface.co/SpXMerlin1D/MiniMaxH3-CondBridge-Qwen3.5-4B
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Nodo ComfyUI mencionado (ComfyUI-MiniMaxH3-Adapter): no se ha encontrado una URL directa en la información disponible.
 - Código de entrenamiento: el autor indica que se publicará próximamente ("Training Code to be released soon"), sin enlace disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sianshinjo/cifar10-mlp` es un modelo de clasificacion de imagenes de muy pequeno tamano publicado en HuggingFace por el usuario `sianshinjo`. Se trata de un perceptron multicapa (MLP) con arquitectura `[3072, 128, 10]`, disenado para clasificar imagenes del conjunto de datos CIFAR-10 en sus 10 categorias estandar. El modelo se presenta como parte de un ejercicio academico ("assignment Q1") y no como un modelo de proposito general.
+`sianshinjo/cifar10-mlp` es un modelo de clasificacion de imagenes de muy pequeno tamano publicado en Hugging Face por el usuario `sianshinjo`. Se trata de un perceptron multicapa (MLP) con arquitectura `[3072, 128, 10]`, disenado para clasificar imagenes del conjunto de datos CIFAR-10 en sus 10 categorias estandar. El modelo se presenta como parte de un ejercicio academico ("assignment Q1") y no como un modelo de proposito general.
 
 El modelo no es un modelo de lenguaje ni un transformer: es una red neuronal densa que recibe imagenes aplanadas de 32x32x3 píxeles (3072 valores) y produce 10 logits, uno por clase de CIFAR-10. El autor menciona tambien una variante denominada "IOC-NN" con activacion ELU y pesos no negativos en las capas a partir de la segunda, lo que sugiere un ejercicio comparativo entre dos configuraciones de red.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sianshinjo/cifar10-mlp | ~394.506 (estimado) | no aplica | no disponible | HuggingFace, 0 descargas |
+| sianshinjo/cifar10-mlp | ~394.506 (estimado) | no aplica | no disponible | Hugging Face, 0 descargas |
 | LeNet-5 (CIFAR-10) | ~60.000 | no aplica | variable | Implementaciones multiples |
 | ResNet-18 (CIFAR-10) | ~11,2 M | no aplica | variable | Implementaciones multiples |
 | VGG-11 (CIFAR-10) | ~9,2 M | no aplica | variable | Implementaciones multiples |
@@ -81,10 +81,10 @@ La comparativa se limita a arquitecturas clasicas de clasificacion de CIFAR-10; 
 - Sin soporte declarado de cuantizacion ni formatos de despliegue estandar (GGUF, safetensors, ONNX), lo que dificulta su integracion en produccion.
 - El autor menciona ficheros `preprocessing_*.npz` pero no detalla su contenido ni garantiza su disponibilidad en el repositorio (tamano del repo: 0.0 GB).
 - No apto para tareas de generacion de texto, razonamiento, codigo ni agentes.
-- Fecha de creacion futura (2026-11-02) en los metadatos de HuggingFace, lo que puede indicar metadatos inconsistentes.
+- Fecha de creacion futura (2026-11-02) en los metadatos de Hugging Face, lo que puede indicar metadatos inconsistentes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sianshinjo/cifar10-mlp
+- Hugging Face: https://huggingface.co/sianshinjo/cifar10-mlp
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

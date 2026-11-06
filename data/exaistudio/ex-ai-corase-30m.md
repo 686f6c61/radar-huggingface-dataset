@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EX-AI-Corase-30M es un modelo publicado en HuggingFace por el usuario EXAiStudio bajo licencia Apache 2.0. Por el identificador y el tamano del repositorio (0,1 GB), se trata de un modelo de aproximadamente 30 millones de parametros, presumiblemente orientado a tareas ligeras de generacion de texto o procesamiento de lenguaje natural en entornos con recursos limitados. El unico formato de pesos declarado en las etiquetas del repositorio es ONNX, lo que sugiere que el autor lo preparo para inferencia en runtime de ONNX Runtime mas que para entrenamiento o ajuste fino con frameworks tradicionales.
+EX-AI-Corase-30M es un modelo publicado en Hugging Face por el usuario EXAiStudio bajo licencia Apache 2.0. Por el identificador y el tamano del repositorio (0,1 GB), se trata de un modelo de aproximadamente 30 millones de parametros, presumiblemente orientado a tareas ligeras de generacion de texto o procesamiento de lenguaje natural en entornos con recursos limitados. El unico formato de pesos declarado en las etiquetas del repositorio es ONNX, lo que sugiere que el autor lo preparo para inferencia en runtime de ONNX Runtime mas que para entrenamiento o ajuste fino con frameworks tradicionales.
 
 La informacion publicada es extremadamente escasa: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin datos de entrenamiento, sin especificaciones de arquitectura y sin resultados de evaluacion. El repositorio no registra descargas ni interacciones en el momento de la consulta, y su fecha de creacion indicada es el 3 de noviembre de 2026, lo que resulta anomalo y sugiere que los metadatos pueden no ser fiables o que el modelo se publico con campos incompletos.
 
@@ -89,5 +89,5 @@ La comparacion se ofrece solo como marco de referencia de escala; no implica que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EXAiStudio/EX-AI-Corase-30M
+- Repositorio en Hugging Face: https://huggingface.co/EXAiStudio/EX-AI-Corase-30M
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

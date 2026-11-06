@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RepublicOfKorokke/d1-3B-oQ8e-fp16 es una versión cuantizada del modelo LiquidAI/d1-3B, publicada por el usuario RepublicOfKorokke en HuggingFace. Se trata de una cuantización de precisión mixta realizada con la herramienta oQ (oMLX v0.7.0) a 8 bits, con un tamaño de grupo de 64, y distribuida en formato MLX safetensors, por lo que está pensada para ejecutarse sobre Apple Silicon mediante la librería MLX.
+RepublicOfKorokke/d1-3B-oQ8e-fp16 es una versión cuantizada del modelo LiquidAI/d1-3B, publicada por el usuario RepublicOfKorokke en Hugging Face. Se trata de una cuantización de precisión mixta realizada con la herramienta oQ (oMLX v0.7.0) a 8 bits, con un tamaño de grupo de 64, y distribuida en formato MLX safetensors, por lo que está pensada para ejecutarse sobre Apple Silicon mediante la librería MLX.
 
 El modelo base, LiquidAI/d1-3B, pertenece a la familia LFM2-VL de Liquid AI (el tipo de modelo declarado es "lfm2_vl") y cuenta con 3.123.483.888 parámetros, es decir, aproximadamente 3,1 mil millones. Al ser una variante cuantizada, no incorpora entrenamiento ni cambios de arquitectura respecto al original: su único propósito es reducir el peso en memoria y acelerar la inferencia en hardware Apple.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RepublicOfKorokke/d1-3B-oQ8e-fp16 | 3,1B | no disponible | MLX safetensors, oQ 8 bits | no disponible | HuggingFace, 14 descargas |
-| LiquidAI/d1-3B (modelo base) | 3,1B | no disponible | safetensors fp16 | no disponible | HuggingFace |
-| Otras variantes LFM2-VL de Liquid AI | no disponible | no disponible | safetensors | no disponible | HuggingFace |
+| RepublicOfKorokke/d1-3B-oQ8e-fp16 | 3,1B | no disponible | MLX safetensors, oQ 8 bits | no disponible | Hugging Face, 14 descargas |
+| LiquidAI/d1-3B (modelo base) | 3,1B | no disponible | safetensors fp16 | no disponible | Hugging Face |
+| Otras variantes LFM2-VL de Liquid AI | no disponible | no disponible | safetensors | no disponible | Hugging Face |
 
 La comparación directa fiable es con el propio modelo base: esta publicación es una versión cuantizada a 8 bits, orientada a Apple Silicon, frente al peso fp16 original. Para alternativas de otros fabricantes no se dispone de datos verificables en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación directa fiable es con el propio modelo base: esta publicación e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RepublicOfKorokke/d1-3B-oQ8e-fp16
+- Modelo en Hugging Face: https://huggingface.co/RepublicOfKorokke/d1-3B-oQ8e-fp16
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 

@@ -6,7 +6,7 @@ Este repositorio contiene un checkpoint de 3.085.938.688 parámetros (unos 3,09 
 
 El nombre del repositorio sugiere un experimento de ajuste por aprendizaje por refuerzo sobre preguntas multi-salto: los fragmentos `racpo`, `fisher`, `acc`, `hotpot`, `2device` y `collate-0.9-0.1` apuntan a un método con información de Fisher y una mezcla de pesos 0,9/0,1, evaluado sobre un corpus tipo HotpotQA, distribuido en dos dispositivos y con `collate` personalizado. Todo esto es una interpretación del nombre, no información confirmada por el autor. El número final (`checkpoint-180`) indica que se trata de un estado intermedio de un entrenamiento más largo, no necesariamente de un modelo final convergido.
 
-La relevancia de esta ficha es limitada y hay que ser explícito: la model card es la plantilla automática de HuggingFace sin ningún campo rellenado, el repositorio acumula 0 descargas y 0 likes, y no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Debe tratarse como material de investigación sin validar, no como un modelo listo para producción.
+La relevancia de esta ficha es limitada y hay que ser explícito: la model card es la plantilla automática de Hugging Face sin ningún campo rellenado, el repositorio acumula 0 descargas y 0 likes, y no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Debe tratarse como material de investigación sin validar, no como un modelo listo para producción.
 
 ## Especificaciones técnicas
 
@@ -34,7 +34,7 @@ La única información estructural fiable es la etiqueta `qwen2` del Hub, que co
 
 Respecto al entrenamiento, no hay absolutamente ningún dato en la información proporcionada: ni número de tokens, ni composición del dataset, ni si hubo RLHF, DPO o una variante de RL. El nombre del repositorio sugiere un pipeline de optimización por política con estimación de información de Fisher y una combinación de pesos 0,9/0,1 entre dos objetivos, además de un entrenamiento sobre datos tipo HotpotQA (preguntas y respuestas multi-salto) repartido en dos dispositivos, pero esto es una hipótesis derivada del identificador y no una descripción técnica verificada. Los checkpoints hermanos del mismo autor (variantes `0.75-0.25` en los pasos 3, 150, 210 y 240) confirman que se trata de una retícula de experimentos con distintos hiperparámetros y puntos de control, no de un modelo con una versión final publicada.
 
-No hay ninguna innovación técnica documentada: ni decodificación especulativa, ni atención lineal, ni modos de razonamiento extendido. El enlace a `arxiv:1910.09700` que aparece en las etiquetas corresponde a la calculadora de impacto ambiental citada en la plantilla de model card de HuggingFace (Lacoste et al., 2019) y no guarda relación con la arquitectura del modelo.
+No hay ninguna innovación técnica documentada: ni decodificación especulativa, ni atención lineal, ni modos de razonamiento extendido. El enlace a `arxiv:1910.09700` que aparece en las etiquetas corresponde a la calculadora de impacto ambiental citada en la plantilla de model card de Hugging Face (Lacoste et al., 2019) y no guarda relación con la arquitectura del modelo.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No hay ninguna innovación técnica documentada: ni decodificación especulativa
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles; los idiomas soportados figuran como no declarados, aunque el modelo base Qwen 2 es multilingüe.
 - Visión, audio u otras modalidades: no soportadas según la información disponible (pipeline exclusivamente de texto).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse en Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el repositorio puede desplegarse en Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -97,7 +97,7 @@ La diferencia principal frente a estas alternativas no es técnica sino de traza
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia: sin licencia declarada, no hay autorización explícita de uso, modificación ni redistribución; el uso comercial es jurídicamente inseguro.
-- Ficha del modelo vacía: la model card es la plantilla automática de HuggingFace con todos los campos como "[More Information Needed]", por lo que no hay información sobre datos, sesgos ni uso previsto.
+- Ficha del modelo vacía: la model card es la plantilla automática de Hugging Face con todos los campos como "[More Information Needed]", por lo que no hay información sobre datos, sesgos ni uso previsto.
 - Sin validación de la comunidad: 0 descargas y 0 likes implican que nadie ha verificado el comportamiento del modelo fuera del entorno del autor.
 - Checkpoint intermedio: el sufijo `checkpoint-180` indica un estado parcial de entrenamiento; puede presentar inestabilidad, repeticiones o degradación respecto a un modelo final.
 - Riesgo elevado de alucinación: no se documenta ningún proceso de alineación, RLHF o DPO verificado, y los modelos de 3B sin alinear tienden a inventar hechos con fluidez.
@@ -110,7 +110,7 @@ La diferencia principal frente a estas alternativas no es técnica sino de traza
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-180
+- Repositorio en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-180
 - Checkpoint hermano (coeficientes 0,75/0,25, paso 150): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Checkpoint hermano (coeficientes 0,75/0,25, paso 240, con discusiones): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-240/discussions
 - Ficha de un checkpoint hermano en Featherless AI (menciona 3,1B de parámetros y 32.768 tokens de contexto): https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210

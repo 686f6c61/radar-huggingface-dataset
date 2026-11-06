@@ -112,7 +112,7 @@ No se dispone de datos de benchmark comparativos entre este modelo y alternativa
 - La model card esta truncada en el apartado de limitaciones, por lo que podrian existir advertencias adicionales no recogidas aqui.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mabahboh/sitr-privacy-filter-ar-v1
+- Modelo en Hugging Face: https://huggingface.co/mabahboh/sitr-privacy-filter-ar-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/mabahboh/sitr-arabic-pii
 - Modelo base: https://huggingface.co/openai/privacy-filter
 

@@ -80,13 +80,13 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Licencia Gemma: impone restricciones de uso comercial y obligaciones de atribución; es imprescindible revisar sus términos antes de producción. La naturaleza "uncensored" puede entrar en conflicto con las cláusulas de uso aceptable de la licencia.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado en noviembre de 2026; no hay evidencia de validación independiente de la calidad de las cuantizaciones K_P.
 - La etiqueta "4B parameters" del autor no coincide con los 7.518 millones de safetensors; conviene verificar el conteo real antes de dimensionar hardware.
-- El widget de compatibilidad de hardware de HuggingFace no reconoce las cuantizaciones K_P y puede mostrar menos archivos de los existentes.
+- El widget de compatibilidad de hardware de Hugging Face no reconoce las cuantizaciones K_P y puede mostrar menos archivos de los existentes.
 - Para visión y audio es obligatorio descargar el mmproj por separado; sin él, el modelo solo procesa texto.
 - No se documenta soporte de tool calling ni de flujos agénticos, lo que limita su uso en pipelines automatizados complejos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rombakr5/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
+- Repositorio Hugging Face: https://huggingface.co/Rombakr5/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Repositorio original del autor (HauhauCS): https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Discord del autor: https://discord.gg/SZ5vacTXYf

@@ -79,7 +79,7 @@ No se dispone de una comparativa directa con otros modelos de la misma categorí
 
 ## Enlaces
 
-- [Modelo en HuggingFace: jonleed/clinical-note-bart-lora](https://huggingface.co/jonleed/clinical-note-bart-lora)
+- [Modelo en Hugging Face: jonleed/clinical-note-bart-lora](https://huggingface.co/jonleed/clinical-note-bart-lora)
 - [Repositorio del proyecto Medical-Dialogue-Summary (GitHub)](https://github.com/jonleed/Medical-Dialogue-Summary)
 - [Dataset MTS-Dialog (abachaa/MTS-Dialog)](https://github.com/abachaa/MTS-Dialog)
 - [Modelo original: mdlam/clinical-note-model](https://huggingface.co/mdlam/clinical-note-model)

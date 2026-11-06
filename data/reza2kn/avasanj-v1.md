@@ -31,7 +31,7 @@ Una innovación destacable es su uso como componente en un pipeline de adjudicac
 - Transcripción de audio a secuencia de fonemas, no a texto ortográfico.
 - Integración directa con modelos G2P de la familia Negara para verificación y adjudicación de pronunciación.
 - Funcionamiento como componente de arbitraje en pipelines de datos (OOF listener).
-- Soporte para inferencia con la librería `transformers` de HuggingFace.
+- Soporte para inferencia con la librería `transformers` de Hugging Face.
 - No incluye capacidades de tool calling, agentes ni razonamiento multilingüe; es un modelo puramente ASR.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) e
 - **VRAM estimada**: con 315M parámetros en fp32 (~1.26 GB solo pesos), la inferencia requiere aproximadamente 2-3 GB de VRAM incluyendo overhead. Con cuantización a 8 bits, se reduce a ~1 GB.
 - **GPU recomendadas**: cualquier GPU consumer con al menos 4 GB de VRAM (por ejemplo, GTX 1650, RTX 3050) puede ejecutar el modelo sin problemas. Para procesamiento por lotes grande, se recomienda una RTX 3060 o superior.
 - **Compatibilidad**: cabe en GPUs consumer de gama media; no requiere GPUs de datacenter.
-- **Opciones de despliegue**: compatible con `transformers` de HuggingFace, `vLLM` (aunque es ASR, no LLM), `TGI` (no recomendado para wav2vec2), `llama.cpp` (no aplicable directamente), y `Ollama` (no soportado). Para producción, se puede usar `transformers` con `torch` o `ONNX Runtime`.
+- **Opciones de despliegue**: compatible con `transformers` de Hugging Face, `vLLM` (aunque es ASR, no LLM), `TGI` (no recomendado para wav2vec2), `llama.cpp` (no aplicable directamente), y `Ollama` (no soportado). Para producción, se puede usar `transformers` con `torch` o `ONNX Runtime`.
 - **Latencia y throughput**: no se han publicado datos específicos. Para un modelo de 300M, la inferencia en CPU es lenta (varios segundos por clip), pero en GPU es casi en tiempo real para clips cortos (<10 s).
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No se dispone de información sobre modelos ASR persas comparables (como `m3hrda
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Reza2kn/AvaSanj-v1)
+- [Modelo en Hugging Face](https://huggingface.co/Reza2kn/AvaSanj-v1)
 - [Modelo base: facebook/wav2vec2-xls-r-300m](https://huggingface.co/facebook/wav2vec2-xls-r-300m)

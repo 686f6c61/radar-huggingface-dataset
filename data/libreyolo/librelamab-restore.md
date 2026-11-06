@@ -67,6 +67,6 @@ No se dispone de información comparativa con otros modelos de inpainting en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [LibreYOLO/LibreLaMab-restore](https://huggingface.co/LibreYOLO/LibreLaMab-restore)
+- Modelo en Hugging Face: [LibreYOLO/LibreLaMab-restore](https://huggingface.co/LibreYOLO/LibreLaMab-restore)
 - Repositorio de artefactos de OpenCV Zoo: [opencv/inpainting_lama](https://huggingface.co/opencv/inpainting_lama)
 - Código fuente de OpenCV Zoo: [opencv/opencv_zoo](https://github.com/opencv/opencv_zoo)

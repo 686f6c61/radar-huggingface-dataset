@@ -4,7 +4,7 @@
 
 connectailab-rl-rere-v3-link01 es un adaptador LoRA (PEFT) publicado por el usuario rhemslkim bajo el paraguas de CONNECT AI LAB y AI CITY BUILDERS. No es un modelo de lenguaje de propósito general, sino un modelo de decisión para el robot simulado LINK-01: recibe en texto el estado del robot (distancia al objetivo, dirección, lecturas de sensores de distancia, velocidad y acción previa) y devuelve una única letra que corresponde a una de cinco acciones de locomoción para los siguientes 0,5 segundos.
 
-El adaptador se monta sobre el modelo base Qwen/Qwen3.5-0.8B mediante LoRA y se ha entrenado en dos fases: un ajuste supervisado sobre 1036 ejemplos de entrenamiento generados a partir de las decisiones de una política PPO ("cerebro" o brain.json) entrenada en un entorno web, seguido de un refinamiento con refuerzo (PPO con anclaje KL) que reordena las preferencias entre opciones según la recompensa obtenida al dejar que el cerebro continúe la trayectoria. El pipeline declarado en HuggingFace es `reinforcement-learning` y el idioma etiquetado es coreano.
+El adaptador se monta sobre el modelo base Qwen/Qwen3.5-0.8B mediante LoRA y se ha entrenado en dos fases: un ajuste supervisado sobre 1036 ejemplos de entrenamiento generados a partir de las decisiones de una política PPO ("cerebro" o brain.json) entrenada en un entorno web, seguido de un refinamiento con refuerzo (PPO con anclaje KL) que reordena las preferencias entre opciones según la recompensa obtenida al dejar que el cerebro continúe la trayectoria. El pipeline declarado en Hugging Face es `reinforcement-learning` y el idioma etiquetado es coreano.
 
 Su relevancia es acotada pero interesante como caso de estudio: demuestra cómo destilar una política de control en un modelo de lenguaje pequeño (0,8B) para que razone sobre observaciones textualizadas y emita decisiones discretas, con un formato de salida estricto de una sola letra. El repositorio es de 0,0 GB, tiene 0 descargas y 0 likes en el momento de la consulta, y la model card advierte explícitamente que es un modelo de investigación y educación sobre simulador, no validado para robot real.
 
@@ -72,10 +72,10 @@ La evaluación de locomoción se realizó con una aproximación 2D basada en una
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-rere-v3-link01 (este) | LoRA sobre base de 0,8B | no disponible | Decisión discreta en robot simulado LINK-01 | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la información | HuggingFace |
+| connectailab-rl-rere-v3-link01 (este) | LoRA sobre base de 0,8B | no disponible | Decisión discreta en robot simulado LINK-01 | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la información | Hugging Face |
 | Política PPO "cerebro" (profesor) | no disponible (red pequeña) | no aplica | Control de locomoción en entorno web | no disponible | Referenciada en la model card, no publicada como modelo independiente |
-| Otros adaptadores LoRA de la misma familia (`connectailab-*`) | LoRA sobre base de 0,8B | no disponible | Variantes de la misma tarea | apache-2.0 | HuggingFace (mismo autor) |
+| Otros adaptadores LoRA de la misma familia (`connectailab-*`) | LoRA sobre base de 0,8B | no disponible | Variantes de la misma tarea | apache-2.0 | Hugging Face (mismo autor) |
 
 No se dispone de información sobre modelos comparables de terceros con la misma tarea (LLM como política de control en robótica simulada) en la documentación consultada.
 
@@ -93,7 +93,7 @@ No se dispone de información sobre modelos comparables de terceros con la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rhemslkim/connectailab-rl-rere-v3-link01
+- Hugging Face: https://huggingface.co/rhemslkim/connectailab-rl-rere-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - GitHub del proyecto (código de entrenamiento): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

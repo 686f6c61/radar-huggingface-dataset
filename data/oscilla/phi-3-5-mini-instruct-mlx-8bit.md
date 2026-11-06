@@ -80,6 +80,6 @@ La principal diferencia entre esta conversión y el modelo original es el format
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Phi-3.5-mini-instruct-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Phi-3.5-mini-instruct-mlx-8Bit
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Documentación de mlx-lm: https://github.com/ml-explore/mlx-lm

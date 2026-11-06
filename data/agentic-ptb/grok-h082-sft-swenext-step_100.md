@@ -84,6 +84,6 @@ No se conocen otros fine-tunes públicos de Qwen3.5-9B-Base con los que comparar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h082.sft-swenext.step_100
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h082.sft-swenext.step_100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

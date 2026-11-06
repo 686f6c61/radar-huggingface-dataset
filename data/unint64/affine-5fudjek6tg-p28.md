@@ -75,9 +75,9 @@ El modelo pertenece a la categoría de MoE de ~30-40B parámetros totales con po
 
 | Modelo | Params totales | Params activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Affine-5fudjek6tg-p28 (este) | 34,7B | 8/256 expertos (no cuantificado) | 6144 (entrenamiento) | Apache 2.0 | HuggingFace |
-| Qwen3-30B-A3B | 30,5B | 3,3B | 128K (nativo) | Apache 2.0 | HuggingFace |
-| Mixtral 8x22B | 39,1B | 12,9B | 64K | Apache 2.0 | HuggingFace |
+| Affine-5fudjek6tg-p28 (este) | 34,7B | 8/256 expertos (no cuantificado) | 6144 (entrenamiento) | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B | 30,5B | 3,3B | 128K (nativo) | Apache 2.0 | Hugging Face |
+| Mixtral 8x22B | 39,1B | 12,9B | 64K | Apache 2.0 | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos. La comparación es estructural: el modelo Affine tiene más expertos totales (256) pero menos activos (8), lo que puede reducir coste por token, aunque su contexto de entrenamiento es mucho menor (6144 frente a 128K de Qwen3-30B-A3B). No hay datos de rendimiento para una comparación justa.
 
@@ -93,7 +93,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La comparación es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unint64/Affine-5fudjek6tg-p28
+- Modelo en Hugging Face: https://huggingface.co/unint64/Affine-5fudjek6tg-p28
 - Modelo base: https://huggingface.co/vera6/affine-5g4yy75zuz-t6
 - Teacher usado (referencia): https://huggingface.co/zai-org/GLM-4.5-Air-FP8
 - Repositorio de experimentos: no se proporciona enlace público (ruta interna `/mining/ralph/`)

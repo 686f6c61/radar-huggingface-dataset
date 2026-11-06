@@ -76,4 +76,4 @@ La comparativa se limita a los dos checkpoints base, ya que no se dispone de inf
 
 ## Enlaces
 
-- [HuggingFace: smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models](https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models)
+- [Hugging Face: smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models](https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models)

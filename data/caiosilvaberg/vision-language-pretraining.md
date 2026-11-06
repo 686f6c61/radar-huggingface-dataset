@@ -64,7 +64,7 @@ No disponible. Al no ser un modelo entrenado, no existe una categoría comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/caiosilvaberg/vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/caiosilvaberg/vision-language-pretraining
 - Survey de VLP (arXiv 2210.09263): https://arxiv.org/abs/2210.09263
 - Survey de VLP (arXiv 2202.09061): https://arxiv.org/pdf/2202.09061v2
 - Versión publicada del survey en Springer: https://link.springer.com/article/10.1007/s11633-022-1369-5

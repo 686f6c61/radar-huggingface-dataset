@@ -2,7 +2,7 @@
 
 ## Resumen
 
-corecommit/PollyMC-Voice-Models es un repositorio de HuggingFace publicado por el usuario corecommit el 1 de octubre de 2026 y actualizado el mismo dia, apenas siete minutos despues de su creacion. El repositorio ocupa 0,1 GB y lleva la etiqueta onnx junto con la licencia apache-2.0 y la region us. No cuenta con pipeline declarado, no tiene idiomas especificados y acumula 0 descargas y 1 like en el momento de la consulta.
+corecommit/PollyMC-Voice-Models es un repositorio de Hugging Face publicado por el usuario corecommit el 1 de octubre de 2026 y actualizado el mismo dia, apenas siete minutos despues de su creacion. El repositorio ocupa 0,1 GB y lleva la etiqueta onnx junto con la licencia apache-2.0 y la region us. No cuenta con pipeline declarado, no tiene idiomas especificados y acumula 0 descargas y 1 like en el momento de la consulta.
 
 La model card asociada es practicamente vacia: se limita a repetir el campo license: apache-2.0 sin ningun texto descriptivo, sin datos de arquitectura, sin ejemplo de uso y sin instrucciones de inferencia. No se ha publicado informacion sobre el numero de parametros, la longitud de contexto, el tipo de tarea (reconocimiento de voz, sintesis, conversion de voz o clonacion) ni el origen de los datos de entrenamiento. El nombre del repositorio sugiere un conjunto de modelos de voz vinculado al proyecto PollyMC, pero esta interpretacion no viene confirmada por ninguna fuente y no debe tomarse como un hecho.
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 | Contexto o capacidad de audio | no disponible | no disponible |
 | Rendimiento medido | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 Las familias que suelen emplearse como referencia en tareas de voz (RVC, so-vits-svc, Piper, XTTS y similares) aparecen mencionadas en las busquedas web realizadas, pero no se ha encontrado documentacion que relacione este repositorio con ninguna de ellas ni que permita atribuirle una tarea concreta. Cualquier tabla comparativa con cifras seria inventada.
 
@@ -89,7 +89,7 @@ Las familias que suelen emplearse como referencia en tareas de voz (RVC, so-vits
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/corecommit/PollyMC-Voice-Models
+- Repositorio en Hugging Face: https://huggingface.co/corecommit/PollyMC-Voice-Models
 - Top AI Voice Models for RVC (voice-models.com): https://voice-models.com/top
 - Foro de la comunidad Voice Models: https://voice-models.com/forum
 - Checkpoints, biblioteca de modelos de voz RVC: https://checkpoints.lol/

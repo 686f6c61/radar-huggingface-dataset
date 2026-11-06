@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta-b` es una exportación de un modelo de lenguaje causal de arquitectura Llama gestionada a través del framework OpenWALDO, publicado por el usuario `mdagosta` en HuggingFace. Con aproximadamente 9,54 millones de parámetros en pesos safetensors, se trata de un modelo de escala muy reducida, orientado por su identificador a tareas básicas de Python. El repositorio no registra descargas ni interacciones y su licencia e idiomas no están declarados, por lo que su estado es el de un artefacto experimental o de investigación más que un modelo listo para producción.
+El modelo `mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta-b` es una exportación de un modelo de lenguaje causal de arquitectura Llama gestionada a través del framework OpenWALDO, publicado por el usuario `mdagosta` en Hugging Face. Con aproximadamente 9,54 millones de parámetros en pesos safetensors, se trata de un modelo de escala muy reducida, orientado por su identificador a tareas básicas de Python. El repositorio no registra descargas ni interacciones y su licencia e idiomas no están declarados, por lo que su estado es el de un artefacto experimental o de investigación más que un modelo listo para producción.
 
 Técnicamente emplea la arquitectura estándar de transformers para modelos causales tipo Llama, pero sustituye el tokenizador habitual por el tokenizador de bytes schema-1 propio de OpenWALDO, lo que implica que su vocabulario opera directamente sobre bytes en lugar de subpalabras BPE. Este detalle arquitectónico condiciona tanto el tamaño del embedding como el comportamiento de generación, y obliga a cargar el tokenizador con `trust_remote_code=True`, ya que requiere código personalizado no incluido en la librería estándar.
 
@@ -66,10 +66,10 @@ No se dispone de datos de rendimiento que permitan una comparación rigurosa. A 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mdagosta/waldito-python-basics-v1 (este) | 9,5 M | no disponible | no disponible | HuggingFace |
-| TinyStories-33M | ~33 M | 512-2048 (segun variante) | MIT (habitual) | HuggingFace |
-| Pythia-70M | 70 M | 2048 | Apache 2.0 | HuggingFace |
-| SmolLM-135M | 135 M | 2048 | Apache 2.0 | HuggingFace |
+| mdagosta/waldito-python-basics-v1 (este) | 9,5 M | no disponible | no disponible | Hugging Face |
+| TinyStories-33M | ~33 M | 512-2048 (segun variante) | MIT (habitual) | Hugging Face |
+| Pythia-70M | 70 M | 2048 | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135 M | 2048 | Apache 2.0 | Hugging Face |
 
 La comparativa directa con modelos del mismo orden (por debajo de 20 M de parámetros) es poco habitual en el ecosistema actual, donde los modelos pequeños rara vez bajan de 100 M de parámetros salvo en experimentos académicos.
 
@@ -84,11 +84,11 @@ La comparativa directa con modelos del mismo orden (por debajo de 20 M de parám
 - Datos de entrenamiento no divulgados más allá del BOM: no es posible evaluar sesgos, procedencia del corpus ni cumplimiento de derechos de autor.
 - Metadatos anómalos: las fechas de creación y actualización indican 2026-09-30, posteriores a la fecha habitual de consulta, lo que sugiere un error de sellado temporal o un artefacto de sincronización.
 - Cero descargas y cero likes: no existe validación comunitaria de su funcionamiento ni informes de terceros.
-- El repositorio ocupa 0,0 GB según HuggingFace: conviene verificar la integridad de los pesos antes de confiar en la inferencia.
+- El repositorio ocupa 0,0 GB según Hugging Face: conviene verificar la integridad de los pesos antes de confiar en la inferencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u0-mdagosta-b
 - Perfil del autor: https://huggingface.co/mdagosta
 - OpenWALDO: no se ha encontrado enlace oficial en la informacion proporcionada.
 - Paper o blog del modelo: no disponible.

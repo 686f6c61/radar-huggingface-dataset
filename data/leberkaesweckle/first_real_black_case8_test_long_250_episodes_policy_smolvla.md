@@ -69,7 +69,7 @@ No se dispone de informacion comparativa con otros modelos en la misma tarea. Co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leberkaesweckle/First_real_black_case8_test_Long_250_episodes_policy_smolvla
+- Modelo en Hugging Face: https://huggingface.co/Leberkaesweckle/First_real_black_case8_test_Long_250_episodes_policy_smolvla
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

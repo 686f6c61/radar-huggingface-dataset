@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro es un modelo de generación de texto conversacional desarrollado por DeepSeek AI, publicado en HuggingFace el 22 de abril de 2026. Con más de 1,38 millones de descargas y 5.437 likes, ha captado una atención considerable en la comunidad de desarrolladores, lo que sugiere un interés real por sus capacidades. El modelo está etiquetado como compatible con `transformers`, `safetensors` y `endpoints_compatible`, lo que indica que puede desplegarse en infraestructuras estándar de HuggingFace.
+DeepSeek-V4-Pro es un modelo de generación de texto conversacional desarrollado por DeepSeek AI, publicado en Hugging Face el 22 de abril de 2026. Con más de 1,38 millones de descargas y 5.437 likes, ha captado una atención considerable en la comunidad de desarrolladores, lo que sugiere un interés real por sus capacidades. El modelo está etiquetado como compatible con `transformers`, `safetensors` y `endpoints_compatible`, lo que indica que puede desplegarse en infraestructuras estándar de Hugging Face.
 
-Sin embargo, la ficha pública de HuggingFace proporcionada no incluye especificaciones técnicas detalladas: ni arquitectura, ni número de parámetros, ni longitud de contexto, ni licencia. El tag `arxiv:2606.19348` sugiere que existe un paper asociado, pero su contenido no está disponible en la información facilitada. Esta ficha se limita a reflejar los datos verificables y marca explícitamente todo lo que no ha sido confirmado.
+Sin embargo, la ficha pública de Hugging Face proporcionada no incluye especificaciones técnicas detalladas: ni arquitectura, ni número de parámetros, ni longitud de contexto, ni licencia. El tag `arxiv:2606.19348` sugiere que existe un paper asociado, pero su contenido no está disponible en la información facilitada. Esta ficha se limita a reflejar los datos verificables y marca explícitamente todo lo que no ha sido confirmado.
 
 ## Especificaciones tecnicas
 
@@ -25,11 +25,11 @@ No se dispone de información sobre la arquitectura interna del modelo (transfor
 
 ## Capacidades
 
-Según la información disponible en HuggingFace, el modelo está clasificado con el pipeline `text-generation` y los tags `conversational` y `text-generation`. Esto permite afirmar únicamente:
+Según la información disponible en Hugging Face, el modelo está clasificado con el pipeline `text-generation` y los tags `conversational` y `text-generation`. Esto permite afirmar únicamente:
 
 - Generación de texto en formato conversacional.
 - Compatibilidad con el ecosistema `transformers` y `safetensors`.
-- Posible despliegue en endpoints compatibles con HuggingFace.
+- Posible despliegue en endpoints compatibles con Hugging Face.
 
 No se puede confirmar soporte de tool calling, razonamiento multi-step, capacidades multimodales, ni idiomas específicos, ya que estos datos no están publicados en la ficha.
 
@@ -42,7 +42,7 @@ Dado que las especificaciones técnicas no están disponibles, los siguientes ca
 - Prototipado rápido de aplicaciones de lenguaje: gracias a la compatibilidad con `transformers`, los desarrolladores pueden probar el modelo en entornos de investigación.
 - Integración en pipelines de generación de texto: uso como componente en sistemas de generación aumentada por recuperación (RAG) o generación de informes.
 - Evaluación comparativa de modelos: al ser un modelo reciente con alta popularidad, puede servir como referencia en estudios comparativos de generación de texto.
-- Despliegue en producción mediante endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de la infraestructura de HuggingFace Inference Endpoints.
+- Despliegue en producción mediante endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de la infraestructura de Hugging Face Inference Endpoints.
 
 ## Benchmarks y rendimiento
 
@@ -66,5 +66,5 @@ No disponible. Sin datos de parámetros, contexto ni rendimiento, no es posible 
 
 ## Enlaces
 
-- [HuggingFace: deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)
+- [Hugging Face: deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro)
 - Paper asociado (referencia arxiv): 2606.19348 (contenido no disponible en la información proporcionada)

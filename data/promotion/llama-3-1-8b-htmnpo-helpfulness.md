@@ -4,7 +4,7 @@
 
 Llama-3.1-8B-HTMNPO-helpfulness es un modelo de lenguaje experimental desarrollado por el usuario "promotion" como parte de una investigación sobre alineación multi-objetivo mediante optimización de preferencias basada en negociación de Nash (Nash bargaining). Se trata de un fine-tuning del modelo `meta-llama/Llama-3.1-8B-Instruct`, que actúa simultáneamente como política de referencia y como punto de inicialización. El modelo representa un vértice degenerado del simplex de pesos multi-objetivo: asigna todo el peso al objetivo de "helpfulness" (utilidad), ignorando por completo los otros tres objetivos considerados (instruction following, truthfulness y honesty). Su propósito es estudiar qué ocurre cuando un objetivo domina de forma exclusiva y cómo se degradan los objetivos ignorados.
 
-El modelo tiene 8.030 millones de parámetros (8B) y se distribuye en formato safetensors con un tamaño de repositorio de 32,1 GB. No se especifica la longitud de contexto en la información disponible, aunque al derivar de Llama 3.1 se espera que herede la ventana de 128k tokens del modelo base, dato no confirmado en esta ficha. La licencia es llama3.1, sujeta a la Llama 3.1 Community License. El modelo no tiene descargas ni likes en HuggingFace y no está desplegado en ningún proveedor de inferencia, lo que indica que es un artefacto de investigación más que un producto listo para producción.
+El modelo tiene 8.030 millones de parámetros (8B) y se distribuye en formato safetensors con un tamaño de repositorio de 32,1 GB. No se especifica la longitud de contexto en la información disponible, aunque al derivar de Llama 3.1 se espera que herede la ventana de 128k tokens del modelo base, dato no confirmado en esta ficha. La licencia es llama3.1, sujeta a la Llama 3.1 Community License. El modelo no tiene descargas ni likes en Hugging Face y no está desplegado en ningún proveedor de inferencia, lo que indica que es un artefacto de investigación más que un producto listo para producción.
 
 La relevancia de este modelo radica en su contribución al estudio empírico de la alineación multi-objetivo: al comparar los distintos "brazos" del simplex de pesos (cada uno con una agregación diferente de objetivos), se puede medir el coste de sacrificar objetivos secundarios en favor de uno primario. Los resultados publicados en la model card muestran que el énfasis exclusivo en helpfulness produce una mejora de +0,0500 en ese objetivo, pero degrada los otros tres, con un mínimo de -0,0728 en truthfulness.
 
@@ -61,7 +61,7 @@ Estos datos indican que el modelo mejora ligeramente en helpfulness (+0,05) pero
 
 No se han publicado requisitos de hardware específicos para este modelo. Dado que el repositorio contiene pesos en safetensors con un tamaño de 32,1 GB (presumiblemente en FP32), se puede estimar que la inferencia en FP32 requeriría al menos 32 GB de VRAM, mientras que en FP16 se reduciría a unos 16 GB y en cuantización de 4 bits a aproximadamente 5-6 GB. Sin embargo, estos son cálculos generales basados en el tamaño del modelo y no en datos oficiales.
 
-No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI. El modelo no está desplegado en ningún proveedor de inferencia según la información de HuggingFace. Para uso en investigación, una GPU con 24 GB de VRAM (como RTX 3090 o RTX 4090) podría ser suficiente con cuantización, pero no hay confirmación oficial.
+No se indica compatibilidad con vLLM, llama.cpp, Ollama o TGI. El modelo no está desplegado en ningún proveedor de inferencia según la información de Hugging Face. Para uso en investigación, una GPU con 24 GB de VRAM (como RTX 3090 o RTX 4090) podría ser suficiente con cuantización, pero no hay confirmación oficial.
 
 ## Comparativa con modelos similares
 
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento en tareas estándar para ninguno de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Llama-3.1-8B-HTMNPO-helpfulness
+- Modelo en Hugging Face: https://huggingface.co/promotion/Llama-3.1-8B-HTMNPO-helpfulness
 - Dataset de generaciones del benchmark: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Modelo hermano (NBPO-600step): https://huggingface.co/promotion/Llama-3.1-8B-NBPO-600step
 - Página oficial de Llama 3.1 (Meta): https://ai.meta.com/blog/meta-llama-3-1/
-- Model card de Llama-3.1-8B-Instruct en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Model card de Llama-3.1-8B-Instruct en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B

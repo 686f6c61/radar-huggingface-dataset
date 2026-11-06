@@ -29,7 +29,7 @@ Es un modelo de nicho y muy reciente: el repositorio ocupa 0,4 GB, no tiene desc
 
 CanViT es un transformer de vision con estado. En lugar de alimentar la imagen completa como una rejilla fija de parches, el modelo recibe un glimpse (un recorte de 128 px extraido de una escena de 512 px en un viewpoint concreto) y actualiza un canvas interno de 32 × 32 que actua como memoria de toda la escena. La cabeza de clasificacion se lee del token CLS, cuyo readout se ha inicializado fusionandolo con la sonda DINOv3 `canvit/dinov3-vitb16-lvd1689m-in1k-512x512-linear-clf-probe`. Esto implica que el modelo puede refinar su prediccion a medida que recibe mas glimpses, en lugar de producir una unica salida estatica.
 
-El entrenamiento de este checkpoint parte del modelo preentrenado en ImageNet-1k y aplica LP-FT: primero linear probing y despues fine-tuning de extremo a extremo, con rollouts de 4 glimpses F-IID de 128 px sobre escenas de 512 px, canvas de 32 × 32 y retropropagacion completa en el tiempo (full BPTT). Se ejecutaron 100.000 de los 100.080 pasos previstos con batch size 256, optimizador AdamW (learning rate 2,5e-05, weight decay 0,0001, gradient clipping 1), 25.000 pasos de warmup lineal seguidos de decaimiento coseno hasta 0, y funcion de perdida de entropia cruzada en cada glimpse con label smoothing 0,1. El entrenamiento se hizo con JAX/Flax NNX sobre Cloud TPU y el resultado se exporto a PyTorch, que es el formato publicado en HuggingFace.
+El entrenamiento de este checkpoint parte del modelo preentrenado en ImageNet-1k y aplica LP-FT: primero linear probing y despues fine-tuning de extremo a extremo, con rollouts de 4 glimpses F-IID de 128 px sobre escenas de 512 px, canvas de 32 × 32 y retropropagacion completa en el tiempo (full BPTT). Se ejecutaron 100.000 de los 100.080 pasos previstos con batch size 256, optimizador AdamW (learning rate 2,5e-05, weight decay 0,0001, gradient clipping 1), 25.000 pasos de warmup lineal seguidos de decaimiento coseno hasta 0, y funcion de perdida de entropia cruzada en cada glimpse con label smoothing 0,1. El entrenamiento se hizo con JAX/Flax NNX sobre Cloud TPU y el resultado se exporto a PyTorch, que es el formato publicado en Hugging Face.
 
 La innovacion tecnica principal es el propio esquema de vision activa con canvas: separa el coste de "mirar" (glimpses de baja resolucion y area reducida) del de "recordar" (estado global), y permite politicas de seleccion de viewpoints evaluadas sobre varias semillas, de modo que el mismo modelo se puede usar con distintos presupuestos de computo.
 
@@ -79,7 +79,7 @@ Nota: el dato procede del model-index declarado por el autor y figura como `veri
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Rendimiento en ImageNet-1k val |
 |---|---|---|---|---|---|
-| CanViT-B (este checkpoint) | 95,9 M | Escena de 512 px, glimpses de 128 px, canvas 32 × 32 | MIT | HuggingFace, libreria canvit-pytorch | 84,19 % top-1 (declarado por el autor, sin verificar) |
+| CanViT-B (este checkpoint) | 95,9 M | Escena de 512 px, glimpses de 128 px, canvas 32 × 32 | MIT | Hugging Face, libreria canvit-pytorch | 84,19 % top-1 (declarado por el autor, sin verificar) |
 | DINOv3 ViT-B/16 (sonda lineal referenciada en la model card) | no disponible en la informacion | Parches de 16 px a 512 px | no disponible en la informacion | Referenciado como `canvit/dinov3-vitb16-lvd1689m-in1k-512x512-linear-clf-probe` | no disponible en la informacion |
 | ViT-B/16 supervisado clasico | no disponible en la informacion | Rejilla fija de parches de 16 px | no disponible en la informacion | Amplia, multiples checkpoints | no disponible en la informacion |
 
@@ -101,7 +101,7 @@ Advertencia de comparabilidad: este checkpoint se preentrena y despues se afina 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-from-in1k-2026-07-24
+- Modelo en Hugging Face: https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-from-in1k-2026-07-24
 - Modelo base (preentrenado en ImageNet-1k): https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Codigo: https://github.com/m2b3/CanViT

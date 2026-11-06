@@ -97,8 +97,8 @@ Nota: la model card indica que la prueba se realizó en WMT20 en-ru, aunque el m
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/NothingSoftware/opus-mt-tc-big-es-zle-ct2-int8
-- HuggingFace del modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-es-zle
+- Hugging Face del modelo: https://huggingface.co/NothingSoftware/opus-mt-tc-big-es-zle-ct2-int8
+- Hugging Face del modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-es-zle
 - GitHub de CTranslate2: https://github.com/OpenNMT/CTranslate2
 - GitHub de NTranscript: https://github.com/Nothing-Software/NTranscript
 - GitHub de OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT

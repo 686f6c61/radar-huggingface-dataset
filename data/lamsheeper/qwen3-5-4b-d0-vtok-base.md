@@ -74,9 +74,9 @@ La comparativa se basa en el modelo base y su predecesor; no hay datos de rendim
 
 ## Enlaces
 
-- [HuggingFace: Lamsheeper/Qwen3.5-4B-d0-vtok-base](https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-base)
+- [Hugging Face: Lamsheeper/Qwen3.5-4B-d0-vtok-base](https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-base)
 - [Ollama: qwen3.5:4b](https://ollama.com/library/qwen3.5:4b)
 - [LM Studio: Qwen3.5 4B](https://lmstudio.ai/models/qwen/qwen3.5-4b)
-- [HuggingFace: Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
+- [Hugging Face: Qwen/Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B)
 - [vLLM Recipes: Qwen/Qwen3.5-4B](https://recipes.vllm.ai/Qwen/Qwen3.5-4B)
 - [GitHub: ABDtmx/Qwen3.5](https://github.com/ABDtmx/Qwen3.5)

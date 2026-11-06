@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Melkamzer/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, usando la libreria stable-baselines3. El modelo lo publica el usuario Melkamzer en HuggingFace y esta etiquetado con las categorias "deep-reinforcement-learning", "reinforcement-learning" y "stable-baselines3". No es un modelo de lenguaje: no genera texto ni procesa instrucciones, sino que aprende una politica de control para aterrizar una nave en un entorno simulado.
+Melkamzer/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, usando la libreria stable-baselines3. El modelo lo publica el usuario Melkamzer en Hugging Face y esta etiquetado con las categorias "deep-reinforcement-learning", "reinforcement-learning" y "stable-baselines3". No es un modelo de lenguaje: no genera texto ni procesa instrucciones, sino que aprende una politica de control para aterrizar una nave en un entorno simulado.
 
-El interes del artefacto es acotado y de tipo practico: sirve como referencia reproducible dentro del ecosistema Stable-Baselines3 y HuggingFace, donde los checkpoints se cargan con la libreria huggingface_sb3. Su benchmark declarado es una recompensa media de 209,42 con una desviacion tipica de 80,25 en LunarLander-v3, un resultado por encima del umbral de 200 que suele usarse para considerar el entorno resuelto, aunque la propia model card marca la metrica como no verificada.
+El interes del artefacto es acotado y de tipo practico: sirve como referencia reproducible dentro del ecosistema Stable-Baselines3 y Hugging Face, donde los checkpoints se cargan con la libreria huggingface_sb3. Su benchmark declarado es una recompensa media de 209,42 con una desviacion tipica de 80,25 en LunarLander-v3, un resultado por encima del umbral de 200 que suele usarse para considerar el entorno resuelto, aunque la propia model card marca la metrica como no verificada.
 
 La ficha del repositorio es practicamente vacia: el README solo contiene una plantilla con un bloque de codigo marcado como "TODO" y no detalla arquitectura, hiperparametros, presupuesto de entrenamiento ni licencia. El repositorio figura con 0,0 GB de tamano y cero descargas, por lo que se trata de una publicacion reciente y sin validacion externa. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo.
 
@@ -39,7 +39,7 @@ PPO es un metodo de gradiente de politica con optimizacion de objetivo recortado
 - Control de politica para el entorno LunarLander-v3: el agente produce acciones a partir del vector de observacion del entorno para intentar maximizar la recompensa acumulada.
 - Carga y ejecucion mediante el ecosistema Stable-Baselines3: el checkpoint esta pensado para cargarse con `huggingface_sb3.load_from_hub` y ejecutarse con el metodo `predict` del modelo.
 - Evaluacion de rendimiento en RL: la model card incluye un bloque model-index con la metrica mean_reward sobre LunarLander-v3.
-- Plantilla de publicacion en HuggingFace Hub: el README sigue el formato estandar de los checkpoints de SB3, aunque el bloque de codigo queda como "TODO".
+- Plantilla de publicacion en Hugging Face Hub: el README sigue el formato estandar de los checkpoints de SB3, aunque el bloque de codigo queda como "TODO".
 - No dispone de tool calling ni function calling: no es un modelo de lenguaje y no expone interfaz de herramientas.
 - No dispone de capacidades de agente multi-paso fuera del propio bucle de decision del entorno de RL.
 - No dispone de capacidades multilingues ni de procesamiento de texto.
@@ -76,11 +76,11 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos en la informacion proporcionada. Existen otros checkpoints publicos de PPO sobre LunarLander en HuggingFace y en el RL Baselines3 Zoo, pero no se han recuperado sus especificaciones ni sus metricas, por lo que cualquier comparacion numerica seria una invencion.
+No se dispone de datos comparativos en la informacion proporcionada. Existen otros checkpoints publicos de PPO sobre LunarLander en Hugging Face y en el RL Baselines3 Zoo, pero no se han recuperado sus especificaciones ni sus metricas, por lo que cualquier comparacion numerica seria una invencion.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PPO (Melkamzer) | no disponible | no aplica | mean_reward 209,42 +/- 80,25 (no verificado) en LunarLander-v3 | no disponible | HuggingFace, 0 descargas |
+| PPO (Melkamzer) | no disponible | no aplica | mean_reward 209,42 +/- 80,25 (no verificado) en LunarLander-v3 | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Melkamzer/ppo-LunarLander-v3
+- Hugging Face: https://huggingface.co/Melkamzer/ppo-LunarLander-v3
 - Stable-Baselines3 (repositorio referenciado en la model card): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (libreria citada en el bloque de uso): https://github.com/huggingface/huggingface_sb3
 - Busqueda web: no se encontro ningun resultado relevante sobre este modelo; los resultados devueltos correspondian a recetas de cocina sin relacion con el artefacto.

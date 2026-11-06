@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - No se especifican requisitos exactos de VRAM en la documentacion. Los modelos se ofrecen en versiones INT8 de baja VRAM, lo que sugiere que pueden ejecutarse en GPUs de consumo con al menos 16 GB de VRAM, aunque no se confirma.
 - Se recomienda una GPU con suficiente memoria para el modelo de video MiniMax H3; probablemente una RTX 4090 (24 GB) o superior sea adecuada, pero no esta indicado.
 - El workflow esta diseñado para ComfyUI, por lo que se requiere una instalacion funcional de ComfyUI con los nodos personalizados opcionales (KJNodes, rgthree) si se desea usar el grupo de aceleracion.
-- Los modelos se cargan automaticamente desde HuggingFace mediante los nodos de descarga integrados, lo que simplifica el despliegue.
+- Los modelos se cargan automaticamente desde Hugging Face mediante los nodos de descarga integrados, lo que simplifica el despliegue.
 - La generacion de 124 fotogramas implica una latencia considerable; no se proporcionan cifras de throughput, pero el autor advierte que es "lento".
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ No se dispone de informacion sobre modelos directamente comparables en el mismo 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/EllipsesMark/Sheet_Generator_H3_PoopMan333
+- Repositorio de Hugging Face: https://huggingface.co/EllipsesMark/Sheet_Generator_H3_PoopMan333
 - Licencia de MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio de GitHub del prompt writer (herramienta complementaria): https://github.com/EllipsesMark/H3-PromptWriter

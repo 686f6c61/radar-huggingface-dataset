@@ -81,6 +81,6 @@ La comparativa con otros checkpoints RL del mismo proyecto no está disponible p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a18_onpolicy_seqmean_center-k1-cGroupBoth-clip0.2-mb1-eta100-bs64x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a18_onpolicy_seqmean_center-k1-cGroupBoth-clip0.2-mb1-eta100-bs64x5-n2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Framework verl: https://github.com/volcengine/verl

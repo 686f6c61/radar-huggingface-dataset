@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tobiaswagnerlu/classification-tutorial` es un repositorio de HuggingFace publicado por el usuario tobiaswagnerlu que contiene una implementación funcional de EfficientFormer para clasificación de imágenes en configuración "small". No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: el propio autor lo describe como un punto de partida experimental con código transparente y pruebas de humo reproducibles, y afirma explícitamente que no reclama ninguna puntuación de benchmark.
+`tobiaswagnerlu/classification-tutorial` es un repositorio de Hugging Face publicado por el usuario tobiaswagnerlu que contiene una implementación funcional de EfficientFormer para clasificación de imágenes en configuración "small". No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: el propio autor lo describe como un punto de partida experimental con código transparente y pruebas de humo reproducibles, y afirma explícitamente que no reclama ninguna puntuación de benchmark.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, con un total declarado de 33.088 parámetros en safetensors. Esa cifra es notablemente baja para una configuración "small" de EfficientFormer, lo que refuerza la naturaleza didáctica y no productiva del artefacto: se trata de una arquitectura reducida que reproduce los componentes técnicos del diseño (atención lineal, fusión por co-atención, activación GELU y normalización ScaleNorm) sin haber sido entrenada.
 
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, el autor indica que la configuracion incluida usa el
 ## Casos de uso
 
 - Prueba de humo en CI/CD: integrar `finetune.py --help` y la carga de `model.safetensors` en un job de integracion continua para detectar roturas en el pipeline de pesos antes de desplegar un modelo real.
-- Plantilla didactica de publicacion en HuggingFace: usar el repositorio como referencia de estructura (`config.json`, `training_args.json`, `model.safetensors`, README) para aprender que artefactos acompanan a un modelo y como documentar limitaciones.
+- Plantilla didactica de publicacion en Hugging Face: usar el repositorio como referencia de estructura (`config.json`, `training_args.json`, `model.safetensors`, README) para aprender que artefactos acompanan a un modelo y como documentar limitaciones.
 - Punto de partida para fine-tuning con datos propios: sustituir el checkpoint de inicializacion por pesos preentrenados y ajustar la cabeza de clasificacion con un split etiquetado especifico de la tarea.
 - Laboratorio de arquitectura: experimentar con las decisiones de diseno del modelo (atencion lineal, co-atencion, ScaleNorm) modificando `config.json` y midiendo el efecto sobre una tarea concreta.
 - Validacion de adaptadores de carga personalizados: probar el adaptador explicito que exige esta implementacion antes de integrarla en frameworks de carga automatica.
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Arquitectura | Parametros | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tobiaswagnerlu/classification-tutorial | EfficientFormer small (personalizada) | 33.088 | No (inicializacion) | MIT | HuggingFace, 0 descargas |
+| tobiaswagnerlu/classification-tutorial | EfficientFormer small (personalizada) | 33.088 | No (inicializacion) | MIT | Hugging Face, 0 descargas |
 | EfficientFormer-L1 (familia original) | EfficientFormer | No disponible en la informacion proporcionada | Si | No disponible | Checkpoints publicos de la familia original |
 | EfficientFormer-L3 (familia original) | EfficientFormer | No disponible en la informacion proporcionada | Si | No disponible | Checkpoints publicos de la familia original |
 | MobileNetV2 | CNN con bloques invertidos | No disponible en la informacion proporcionada | Si | No disponible | Ampliamente distribuido en frameworks de vision |
@@ -95,9 +95,9 @@ La diferencia fundamental no es de arquitectura sino de estado del artefacto: es
 - Implementacion personalizada: no funciona con API de carga automatica sin un adaptador explicito.
 - Validacion comunitaria nula: 0 descargas y 0 likes en el momento de la consulta, sin issues ni resultados de terceros que respalden su funcionamiento.
 - Los valores por defecto de `training_args.json` (Adam con schedule exponencial) son puntos de partida y no evidencia de una ejecucion completada; cualquier resultado futuro debe documentarse por separado de estos valores.
-- Las fechas de creacion y actualizacion del repositorio (2026-09-12) proceden del propio registro de HuggingFace.
+- Las fechas de creacion y actualizacion del repositorio (2026-09-12) proceden del propio registro de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tobiaswagnerlu/classification-tutorial
+- Modelo en Hugging Face: https://huggingface.co/tobiaswagnerlu/classification-tutorial
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron exclusivamente hilos del foro de la comunidad de eBay (https://community.ebay.com/), sin relacion con el modelo ni con EfficientFormer.

@@ -17,7 +17,7 @@ Su relevancia radica en que documenta de forma inusualmente transparente los res
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (los checkpoints se distribuyen con parametros completos en formato openpi; no se documentan variantes cuantizadas) |
 | Idiomas soportados | no disponible |
-| Licencia | other (etiquetada como "other" en HuggingFace; no se detallan los terminos, consultar la licencia del modelo base) |
+| Licencia | other (etiquetada como "other" en Hugging Face; no se detallan los terminos, consultar la licencia del modelo base) |
 | Formato de pesos | Checkpoints openpi: `params/` (parametros completos, tambien en runs LoRA), `assets/<repo_id>/norm_stats.json` y, en la mayoria de carpetas, `train_state/` (estado del optimizador) |
 
 ## Arquitectura y entrenamiento
@@ -102,8 +102,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Robo_model (twobidoubi) | VLA ajustado para CobotMagic | no disponible | no disponible | Exito por tarea entre 0/100 y 79/100 segun tarea y checkpoint | other | HuggingFace (twobidoubi/Robo_model) |
-| physical-intelligence/pi05-base | VLA base | no disponible | no disponible | No disponible en la informacion proporcionada | no disponible | HuggingFace (modelo base del anterior) |
+| Robo_model (twobidoubi) | VLA ajustado para CobotMagic | no disponible | no disponible | Exito por tarea entre 0/100 y 79/100 segun tarea y checkpoint | other | Hugging Face (twobidoubi/Robo_model) |
+| physical-intelligence/pi05-base | VLA base | no disponible | no disponible | No disponible en la informacion proporcionada | no disponible | Hugging Face (modelo base del anterior) |
 | Otros VLA comparables (por ejemplo OpenVLA, RDT-1B) | VLA | no disponible | no disponible | No disponible en la informacion proporcionada | no disponible | no disponible |
 
 No se dispone de datos comparativos de benchmarks entre Robo_model, su modelo base y otras alternativas VLA en la informacion proporcionada.
@@ -123,7 +123,7 @@ No se dispone de datos comparativos de benchmarks entre Robo_model, su modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twobidoubi/Robo_model
+- Modelo en Hugging Face: https://huggingface.co/twobidoubi/Robo_model
 - Modelo base: https://huggingface.co/physical-intelligence/pi05-base
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Bancho de pruebas RoboSynChallenge: http://robosyn-bench.net

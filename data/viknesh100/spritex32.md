@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpriteX32 es un modelo de texto a imagen de pequeno tamano especializado en la generacion de sprites de pixel art de 32x32 pixeles a partir de prompts en ingles. Lo desarrolla el usuario viknesh100 y se publica en HuggingFace bajo licencia "other". Con solo 11,4 millones de parametros, es un modelo de investigacion y aficionado disenado para ejecutarse comodamente en CPU o en una GPU de gama baja, lo que lo convierte en un caso de estudio interesante sobre modelos generativos minimos.
+SpriteX32 es un modelo de texto a imagen de pequeno tamano especializado en la generacion de sprites de pixel art de 32x32 pixeles a partir de prompts en ingles. Lo desarrolla el usuario viknesh100 y se publica en Hugging Face bajo licencia "other". Con solo 11,4 millones de parametros, es un modelo de investigacion y aficionado disenado para ejecutarse comodamente en CPU o en una GPU de gama baja, lo que lo convierte en un caso de estudio interesante sobre modelos generativos minimos.
 
 Tecnicamente es una U-Net condicional entrenada con flow matching (prediccion de velocidad sobre una trayectoria lineal de ruido a imagen) y guiado por embeddings de texto de CLIP. El muestreo se realiza con un integrador Euler y classifier-free guidance. Su resolucion nativa es fija de 32x32 pixeles en RGB, sin canal alfa.
 
@@ -67,10 +67,10 @@ No se dispone de datos de rendimiento cuantitativos ni de alternativas directame
 
 | Modelo | Parametros | Resolucion nativa | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SpriteX32 | 11,4 M | 32x32 | vector CLIP agrupado | other | HuggingFace |
-| Stable Diffusion 1.5 | ~860 M (U-Net) | 512x512 | tokens CLIP (77) | CreativeML OpenRAIL-M | HuggingFace |
-| SDXL | ~2,6 B (U-Net) | 1024x1024 | tokens CLIP (77) x2 | CreativeML OpenRAIL++-M | HuggingFace |
-| PixArt-alpha | ~600 M | 512x512 | tokens T5 | OpenRAIL++ | HuggingFace |
+| SpriteX32 | 11,4 M | 32x32 | vector CLIP agrupado | other | Hugging Face |
+| Stable Diffusion 1.5 | ~860 M (U-Net) | 512x512 | tokens CLIP (77) | CreativeML OpenRAIL-M | Hugging Face |
+| SDXL | ~2,6 B (U-Net) | 1024x1024 | tokens CLIP (77) x2 | CreativeML OpenRAIL++-M | Hugging Face |
+| PixArt-alpha | ~600 M | 512x512 | tokens T5 | OpenRAIL++ | Hugging Face |
 
 La comparacion es meramente estructural: SpriteX32 opera en un regimen de resolucion y escala dos ordenes de magnitud por debajo de los modelos de difusion generalistas y no es directamente sustituible por ellos para tareas generales.
 
@@ -89,6 +89,6 @@ La comparacion es meramente estructural: SpriteX32 opera en un regimen de resolu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viknesh100/SpriteX32
+- Modelo en Hugging Face: https://huggingface.co/viknesh100/SpriteX32
 - Dataset de entrenamiento: https://huggingface.co/datasets/tkarr/sprite_caption_dataset
 - Codificador de texto CLIP: https://huggingface.co/openai/clip-vit-base-patch32

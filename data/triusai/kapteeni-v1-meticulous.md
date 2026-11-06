@@ -83,7 +83,7 @@ El autor advierte explicitamente de que son cifras autodeclaradas sobre la mitad
 
 | Modelo | Parametros | Salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kapteeni-v1-meticulous | 4,02 B | Distribuciones calibradas (noul / choice / score), sin texto | no disponible | CC BY-SA 4.0 (pesos) | HuggingFace, 0 descargas |
+| kapteeni-v1-meticulous | 4,02 B | Distribuciones calibradas (noul / choice / score), sin texto | no disponible | CC BY-SA 4.0 (pesos) | Hugging Face, 0 descargas |
 | kapteeni-v1-intuit | 4,02 B (misma arquitectura) | Igual, con confianza menos conservadora | no disponible | CC BY-SA 4.0 (pesos) | Variante hermana del mismo autor |
 | Jev (TypeSafe AI) | no disponible | Decisiones tipadas; interfaz de referencia | no disponible | no disponible | API hospedada abierta desde el 21 de septiembre de 2026, a 0,042 $/M tokens de entrada con salida gratuita |
 | Qwen3-4B-Instruct-2507 | 4,02 B | Generacion de texto libre | no disponible | Apache-2.0 | Modelo base, ampliamente distribuido |
@@ -106,7 +106,7 @@ La comparacion con Jev es la mas pertinente por contrato de interfaz, pero el au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TriusAI/kapteeni-v1-meticulous
+- Modelo en Hugging Face: https://huggingface.co/TriusAI/kapteeni-v1-meticulous
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Documentacion de la interfaz TypeSafe System One: https://docs.typesafe.ai
 - Jev AI Model (TypeSafe AI): https://jevmodel.org/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyber-Tiel-Coder-35B-A3B-Splash es un paquete de inferencia publicado por el usuario Yonch-Z para el motor Splash, distribuido a traves de HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion comunitaria del checkpoint MLX `peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e` al formato propietario `splash-packed-q4-moe`, pensado para ejecutarse dentro de LM Studio mediante el runtime Splash. El modelo subyacente es Cyber-Tiel-Coder-35B-A3B, un fine-tune de codigo abliterado (sin censura) derivado de Ornith-1.5-35B-A3B, con arquitectura Mixture of Experts de 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token (de ahi el sufijo A3B).
+Cyber-Tiel-Coder-35B-A3B-Splash es un paquete de inferencia publicado por el usuario Yonch-Z para el motor Splash, distribuido a traves de Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion comunitaria del checkpoint MLX `peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e` al formato propietario `splash-packed-q4-moe`, pensado para ejecutarse dentro de LM Studio mediante el runtime Splash. El modelo subyacente es Cyber-Tiel-Coder-35B-A3B, un fine-tune de codigo abliterado (sin censura) derivado de Ornith-1.5-35B-A3B, con arquitectura Mixture of Experts de 35.000 millones de parametros totales y aproximadamente 3.000 millones activos por token (de ahi el sufijo A3B).
 
 La relevancia de este paquete es practica: permite ejecutar un MoE de 35B en cuantizacion de 4 bits sobre hardware de consumo, con soporte de vision, plantilla de chat propia con control de esfuerzo de razonamiento y un modelo draft de decodificacion especulativa (DFlash2) incluido. El repositorio ocupa 20,9 GB e integra cuatro componentes: los pesos objetivo, el draft de especulacion, la torre de vision y el tokenizer del vocabulario Qwen3.5-MoE (248.044 tokens).
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyber-Tiel-Coder-35B-A3B-Splash (este) | 35B totales / 3B activos | no disponible | Splash packed q4 MoE, con vision y draft DFlash2 | MIT | HuggingFace, 0 descargas |
-| Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e (base) | 35B totales / 3B activos | no disponible | MLX, cuantizacion dinamica 4/5/6/8 bits | no disponible | HuggingFace |
-| Cyber-Tiel-Coder-35B-A3B-GGUF | 35B totales / 3B activos | no disponible | GGUF, 20,7 GB | no disponible | HuggingFace y espejos de terceros |
-| Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP | 35B totales / 3B activos | no disponible | MLX 6 bits con MTP | no disponible | HuggingFace |
-| incoai/Qwen3.6-35B-A3B-Splash | 35B totales / 3B activos | no disponible | Splash packed | no disponible | HuggingFace |
+| Cyber-Tiel-Coder-35B-A3B-Splash (este) | 35B totales / 3B activos | no disponible | Splash packed q4 MoE, con vision y draft DFlash2 | MIT | Hugging Face, 0 descargas |
+| Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e (base) | 35B totales / 3B activos | no disponible | MLX, cuantizacion dinamica 4/5/6/8 bits | no disponible | Hugging Face |
+| Cyber-Tiel-Coder-35B-A3B-GGUF | 35B totales / 3B activos | no disponible | GGUF, 20,7 GB | no disponible | Hugging Face y espejos de terceros |
+| Cyber-Tiel-Coder-35B-A3B-MLX-oQ6e-MTP | 35B totales / 3B activos | no disponible | MLX 6 bits con MTP | no disponible | Hugging Face |
+| incoai/Qwen3.6-35B-A3B-Splash | 35B totales / 3B activos | no disponible | Splash packed | no disponible | Hugging Face |
 
 Nota: no se dispone de datos de rendimiento comparativo entre estas variantes. La comparativa se limita a formato, empaquetado y licencia, ya que la informacion disponible no incluye cifras de benchmarks ni especificaciones completas de los modelos alternativos.
 
@@ -93,7 +93,7 @@ Nota: no se dispone de datos de rendimiento comparativo entre estas variantes. L
 
 ## Enlaces
 
-- Paquete Splash en HuggingFace: https://huggingface.co/Yonch-Z/Cyber-Tiel-Coder-35B-A3B-Splash
+- Paquete Splash en Hugging Face: https://huggingface.co/Yonch-Z/Cyber-Tiel-Coder-35B-A3B-Splash
 - Modelo base MLX oQ4e (peculiar-ragdoll): https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-MLX-oQ4e
 - Modelo base sin cuantizar (peculiar-ragdoll): https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B
 - Variante GGUF (peculiar-ragdoll): https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF

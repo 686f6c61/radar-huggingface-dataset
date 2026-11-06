@@ -4,7 +4,7 @@
 
 wag-4b-i1-GGUF es una reproduccion cuantizada en formato GGUF del modelo skyuu72/wag-4b, publicada por mradermacher, un autor conocido por generar cuantizaciones de terceros (tanto estaticas como con matriz de importancia, "imatrix") de modelos abiertos. El repositorio no contiene pesos originales en precision completa, sino ficheros derivados listos para su uso con llama.cpp y otros runners compatibles con GGUF. El modelo base se describe como un modelo de chat orientado a personaje ("character", "puppygirl") con arquitectura etiquetada como qwen3_5 y entrenado sobre OpenAssistant/oasst1 y yahma/alpaca-cleaned.
 
-El nombre del repositorio sugiere un tamano de aproximadamente 4000 millones de parametros, coherente con el sufijo "4b" del modelo base. Sin embargo, el dato de parametros totales reportado en la ficha de HuggingFace para este repositorio es de 897.272, una cifra incompatible con un modelo de 4B y que probablemente corresponda a un conteo parcial, a un artefacto auxiliar o a un error de indexacion del repositorio. No se dispone de informacion fiable sobre el numero real de parametros ni sobre la longitud de contexto nativa.
+El nombre del repositorio sugiere un tamano de aproximadamente 4000 millones de parametros, coherente con el sufijo "4b" del modelo base. Sin embargo, el dato de parametros totales reportado en la ficha de Hugging Face para este repositorio es de 897.272, una cifra incompatible con un modelo de 4B y que probablemente corresponda a un conteo parcial, a un artefacto auxiliar o a un error de indexacion del repositorio. No se dispone de informacion fiable sobre el numero real de parametros ni sobre la longitud de contexto nativa.
 
 La relevancia de esta ficha es practica: se trata de un artefacto de despliegue, no de un modelo nuevo. Su interes esta en que permite ejecutar un modelo de la familia "wag" en hardware de consumo mediante cuantizaciones de 1 a 6 bits, incluyendo variantes IQ (importance-aware) que mejoran la relacion calidad/tamano respecto a las cuantizaciones estaticas equivalentes. La licencia wtfpup-1.0, con enlace a un repositorio de GitHub del autor original, condiciona cualquier uso comercial y debe revisarse antes de integrar el modelo en produccion.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre wag-4b y estas alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantizacion): https://huggingface.co/mradermacher/wag-4b-i1-GGUF
+- Repositorio Hugging Face (esta cuantizacion): https://huggingface.co/mradermacher/wag-4b-i1-GGUF
 - Modelo base: https://huggingface.co/skyuu72/wag-4b
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/wag-4b-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/wag-4b-i1-GGUF/resolve/main/wag-4b.imatrix.gguf
@@ -99,4 +99,4 @@ No se dispone de datos de rendimiento comparativo entre wag-4b y estas alternati
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Patrocinador del trabajo de cuantizacion: https://www.nethype.de/
 
-Nota: la busqueda web realizada para esta ficha no devolvio ningun resultado relacionado con el modelo; los unicos enlaces relevantes son los procedentes del propio repositorio de HuggingFace.
+Nota: la busqueda web realizada para esta ficha no devolvio ningun resultado relacionado con el modelo; los unicos enlaces relevantes son los procedentes del propio repositorio de Hugging Face.

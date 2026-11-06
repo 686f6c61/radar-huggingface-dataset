@@ -82,7 +82,7 @@ El modelo de carlopires es el único que incluye el fine-tune Flash, mientras qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/carlopires/Qwopus3.8-27B-Flash-QUASAR-NVFP4-NInfer
+- Hugging Face: https://huggingface.co/carlopires/Qwopus3.8-27B-Flash-QUASAR-NVFP4-NInfer
 - NInfer: https://github.com/Neroued/ninfer
 - Fork NInfer RTX 5090: https://github.com/carlopires/ninfer-rtx5090-mobile (commit 830e26bb)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

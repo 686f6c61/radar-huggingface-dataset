@@ -60,7 +60,7 @@ No se proporcionan requisitos oficiales de hardware en la información disponibl
 - VRAM estimada para inferencia: ~13.5 GB en FP16 para los pesos completos; ~7 GB con cuantización de 8 bits; ~4 GB con cuantización de 4 bits.
 - GPU recomendadas: RTX 4090 de 24 GB, A100 de 40 GB, H100 de 80 GB.
 - Cabe en GPU de consumo: sí, con cuantización de 4 bits en tarjetas de 8 GB o más, como RTX 3060, 4060 o superiores.
-- Opciones de despliegue: Transformers (HuggingFace), llama.cpp, Ollama y vLLM (este último requiere adaptación al formato del checkpoint).
+- Opciones de despliegue: Transformers (Hugging Face), llama.cpp, Ollama y vLLM (este último requiere adaptación al formato del checkpoint).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se dispone de modelos comparables en la información proporcionada. El checkp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a010_b010_r07
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a010_b010_r07
 
 No se han encontrado otros enlaces relevantes en la búsqueda web.

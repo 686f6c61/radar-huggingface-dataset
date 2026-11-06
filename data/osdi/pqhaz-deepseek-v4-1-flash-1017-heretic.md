@@ -97,12 +97,12 @@ No se dispone de datos de benchmarks de capacidades para comparar el rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osdi/pqhaz-DeepSeek-V4.1-Flash-1017-heretic
+- Modelo en Hugging Face: https://huggingface.co/osdi/pqhaz-DeepSeek-V4.1-Flash-1017-heretic
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Modelo de referencia para el chat template: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Ablación de la versión anterior: https://huggingface.co/pqhaz/DeepSeek-V4.1-Flash-heretic
 - Método Heretic: https://github.com/p-e-w/heretic
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Conjunto de evaluación: `mlabonne/harmful_behaviors` (referenciado en la model card)
 - Conjunto de evaluación: JailbreakBench JBB-Behaviors (referenciado en la model card)
 - Juez LLM: `llmfan46/gemma-4-31B-it-uncensored-heretic` (referenciado en la model card)

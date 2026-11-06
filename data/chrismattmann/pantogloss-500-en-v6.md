@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pantogloss 500-to-English successor v6 es un ajuste fino de traducción many-to-English publicado por chrismattmann bajo licencia Apache-2.0. Parte del modelo padre RTG many-to-English (Gowda, Zhang, Mattmann y May, ACL-IJCNLP 2021 System Demonstrations) y se distribuye como artefacto de precisión completa FP32 alojado en HuggingFace, no dentro del paquete Python. El repositorio ocupa 2,2 GB y la librería asociada es `pantogloss`, con pesos en formato TensorFlow/Keras.
+Pantogloss 500-to-English successor v6 es un ajuste fino de traducción many-to-English publicado por chrismattmann bajo licencia Apache-2.0. Parte del modelo padre RTG many-to-English (Gowda, Zhang, Mattmann y May, ACL-IJCNLP 2021 System Demonstrations) y se distribuye como artefacto de precisión completa FP32 alojado en Hugging Face, no dentro del paquete Python. El repositorio ocupa 2,2 GB y la librería asociada es `pantogloss`, con pesos en formato TensorFlow/Keras.
 
 El modelo no introduce una arquitectura nueva: reutiliza la misma arquitectura y los mismos tokenizadores que su predecesor. El ajuste consiste en 1.000 actualizaciones acotadas de fine-tuning en PyTorch sobre 2.000 ejemplos aprobados (250 pares únicos por cada uno de estos ocho idiomas: amárico, hausa, igbo, jemer, lao, birmano, yoruba y zulú), tras lo cual los pesos aprendidos se remapean de vuelta a TensorFlow/Keras. La verificación de logits entre PyTorch y Keras pasó con un error absoluto máximo de 1,00e-5.
 
@@ -19,7 +19,7 @@ Su relevancia actual es acotada y fundamentalmente de investigación: el modelo 
 | Tipos de cuantización | No disponible; el artefacto publicado es FP32 a precisión completa y no existe versión Compact v6 |
 | Idiomas soportados | Traducción many-to-English; la familia se denomina "500-to-English", pero la evaluación publicada cubre 50 idiomas; mejora medida en amárico, hausa, igbo, jemer, lao, birmano, yoruba y zulú (el inglés es siempre el idioma de salida) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | TensorFlow/Keras (pesos alojados en el repositorio de HuggingFace, no incluidos en el wheel de Python) |
+| Formato de pesos | TensorFlow/Keras (pesos alojados en el repositorio de Hugging Face, no incluidos en el wheel de Python) |
 | Tamaño del repositorio | 2,2 GB |
 | Librería | pantogloss |
 | Modelo base | chrismattmann/pantogloss-500-en |
@@ -97,8 +97,8 @@ No se dispone de datos de benchmarks de terceros en la información proporcionad
 
 | Modelo | Relación | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chrismattmann/pantogloss-500-en | Padre inmutable a precisión completa; base de la comparación | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace |
-| chrismattmann/pantogloss-500-en-v6 | Este modelo; FP32, fine-tune sobre ocho idiomas | No disponible | No disponible | Apache-2.0 | HuggingFace (0 descargas) |
+| chrismattmann/pantogloss-500-en | Padre inmutable a precisión completa; base de la comparación | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face |
+| chrismattmann/pantogloss-500-en-v6 | Este modelo; FP32, fine-tune sobre ocho idiomas | No disponible | No disponible | Apache-2.0 | Hugging Face (0 descargas) |
 | Pantogloss Compact | Modelo por defecto del paquete; no se ha creado versión Compact v6 | No disponible | No disponible | No disponible en la información proporcionada | Distribuido con el paquete |
 
 No se dispone de datos sobre alternativas externas de la misma categoría (por ejemplo, modelos many-to-English de gran cobertura lingüística) en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa fiable.
@@ -121,9 +121,9 @@ No se dispone de datos sobre alternativas externas de la misma categoría (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrismattmann/pantogloss-500-en-v6
+- Modelo en Hugging Face: https://huggingface.co/chrismattmann/pantogloss-500-en-v6
 - Modelo base: https://huggingface.co/chrismattmann/pantogloss-500-en
-- Fichero de atribución de fuentes de entrenamiento: `V6-ATTRIBUTION.md` dentro del repositorio de HuggingFace
+- Fichero de atribución de fuentes de entrenamiento: `V6-ATTRIBUTION.md` dentro del repositorio de Hugging Face
 - Referencia bibliográfica del modelo padre RTG many-to-English: Gowda, Zhang, Mattmann y May, "Many-to-English Machine Translation", ACL-IJCNLP 2021 System Demonstrations (no se ha proporcionado URL en la información disponible)
 - Benchmarks citados: FLORES+ 4.6, split `devtest` (8.250 frases); métricas chrF, BLEU y COMET (no se han proporcionado enlaces)
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (foros sobre la variable de entorno TEMP en Windows, TechNet y Microsoft Community) y no aportan enlaces relevantes.

@@ -69,8 +69,8 @@ Resultados sobre cuerpos de test sintéticos no vistos (medianas por parche sobr
 
 | Modelo | Tipo | Forma ↓ | Yaw ↓ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion_pet v18 | Difusión geométrica para fur | 0,163 | 11° | No decidida | Pesos en HuggingFace |
-| diffusion_pet v17 | Prior de parches planos | 0,430 | 54° | No decidida | Pesos en HuggingFace (inicialización) |
+| diffusion_pet v18 | Difusión geométrica para fur | 0,163 | 11° | No decidida | Pesos en Hugging Face |
+| diffusion_pet v17 | Prior de parches planos | 0,430 | 54° | No decidida | Pesos en Hugging Face (inicialización) |
 | Crecimiento procedural | Generación procedural | 0,220 | 16° | No aplica | Referencia en la model card |
 
 No se dispone de comparación con otros modelos públicos de reconstrucción de fur en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de comparación con otros modelos públicos de reconstrucción de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zengzzy/diffusion_pet
+- Hugging Face: https://huggingface.co/zengzzy/diffusion_pet
 - Repositorio de código, generador de datos e instrucciones: https://github.com/CCdydy/diffusion_pet
-- Checksums: `SHA256SUMS` en el repositorio de HuggingFace
+- Checksums: `SHA256SUMS` en el repositorio de Hugging Face
 - Scripts de inferencia y entrenamiento: `scripts/apply_v18.sh`, `scripts/train_v18.sh`, `diag/v17/infer_v18_surfpack_proposals.py` (en el repositorio GitHub)

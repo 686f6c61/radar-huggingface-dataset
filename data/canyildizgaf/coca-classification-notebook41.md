@@ -2,7 +2,7 @@
 
 ## Resumen
 
-coca-classification-notebook41 es un repositorio experimental publicado por el usuario canyildizgaf en HuggingFace, orientado a tareas de clasificación mediante una implementación propia denominada "Coca". No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio pesa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+coca-classification-notebook41 es un repositorio experimental publicado por el usuario canyildizgaf en Hugging Face, orientado a tareas de clasificación mediante una implementación propia denominada "Coca". No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio pesa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El tamaño real declarado en el fichero safetensors es de 49.600 parámetros, una magnitud propia de un prototipo de juguete más que de un modelo de producción. La arquitectura se describe con atención dilatada, fusión con puertas (gated fusion), activación mish y normalización rmsnorm, con una escala etiquetada como "large" dentro de la propia configuración del script, término que en este contexto hace referencia a la receta interna del código y no a un modelo de gran tamaño.
 
@@ -80,5 +80,5 @@ No disponible. La información proporcionada no incluye modelos comparables, no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/canyildizgaf/coca-classification-notebook41
+- Hugging Face: https://huggingface.co/canyildizgaf/coca-classification-notebook41
 - La búsqueda web no devolvió resultados relevantes sobre este modelo: los enlaces encontrados correspondían a servicios genéricos de Google (Traducción, Buscador, Imágenes, Earth y Drive), sin relación con el repositorio. No se dispone de paper, blog, repositorio de código ni demo adicionales.

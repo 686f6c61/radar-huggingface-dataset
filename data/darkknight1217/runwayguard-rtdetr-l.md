@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RunwayGuard-rtdetr-l es un modelo de deteccion de objetos publicado por el usuario DarkKnight1217 en HuggingFace, consistente en un ajuste fino de RT-DETR-L (Real-Time DEtection TRansformer, variante L) realizado con la libreria Ultralytics en su version 8.4.147. El modelo resuelve una tarea muy especifica: la deteccion de residuos de objetos extranos en pista de aeropuerto, conocidos en la industria como FOD (Foreign Object Debris), a partir de imagenes visibles. El entrenamiento y la evaluacion se han realizado sobre el conjunto de datos FOD-A v2.1, con una particion determinista y agrupada de entrenamiento, validacion y prueba (semilla 42).
+RunwayGuard-rtdetr-l es un modelo de deteccion de objetos publicado por el usuario DarkKnight1217 en Hugging Face, consistente en un ajuste fino de RT-DETR-L (Real-Time DEtection TRansformer, variante L) realizado con la libreria Ultralytics en su version 8.4.147. El modelo resuelve una tarea muy especifica: la deteccion de residuos de objetos extranos en pista de aeropuerto, conocidos en la industria como FOD (Foreign Object Debris), a partir de imagenes visibles. El entrenamiento y la evaluacion se han realizado sobre el conjunto de datos FOD-A v2.1, con una particion determinista y agrupada de entrenamiento, validacion y prueba (semilla 42).
 
 El modelo distingue siete clases operativas: `fastener_hardware`, `hand_tool`, `flexible_debris`, `loose_metal`, `plastic_paper_debris`, `component_container` y `natural_debris`. Su relevancia actual es acotada pero clara: aplica una arquitectura transformer de deteccion en tiempo real a un problema de seguridad aeroportuaria con clases definidas por procedimiento operativo, en lugar de las clases genericas de COCO.
 
@@ -85,7 +85,7 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 | Modelo | Tarea | Parametros | Contexto / entrada | Rendimiento en FOD | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RunwayGuard-rtdetr-l | Deteccion de FOD, 7 clases | no disponible | imagen, resolucion no especificada | mAP50 0,755 / mAP50-95 0,636 (prueba agrupada propia) | MIT | HuggingFace, 0 descargas |
+| RunwayGuard-rtdetr-l | Deteccion de FOD, 7 clases | no disponible | imagen, resolucion no especificada | mAP50 0,755 / mAP50-95 0,636 (prueba agrupada propia) | MIT | Hugging Face, 0 descargas |
 | RT-DETR-L base (sin ajuste) | Deteccion de objetos genericos | no disponible | imagen | no disponible (no se ha evaluado sobre FOD-A en la informacion proporcionada) | no verificada en la informacion disponible | distribuido por sus autores originales |
 | Detectores de la familia YOLO ajustados a FOD | Deteccion de FOD | no disponible | imagen | no disponible | no verificada en la informacion disponible | multiples checkpoints de terceros |
 | DETR original | Deteccion de objetos genericos | no disponible | imagen | no disponible | no verificada en la informacion disponible | distribuido por sus autores originales |
@@ -107,7 +107,7 @@ Nota metodologica: las metricas de RunwayGuard-rtdetr-l no son directamente comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DarkKnight1217/RunwayGuard-rtdetr-l
+- Modelo en Hugging Face: https://huggingface.co/DarkKnight1217/RunwayGuard-rtdetr-l
 - Repositorio de codigo (aplicacion FastAPI y memo de particion): https://github.com/riyaz-ahamed-07/RunwayGuard
 - Paper del dataset FOD-A: https://arxiv.org/abs/2110.03072
 - Descarga directa del checkpoint: https://huggingface.co/DarkKnight1217/RunwayGuard-rtdetr-l/resolve/main/best.pt

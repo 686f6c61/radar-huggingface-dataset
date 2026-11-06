@@ -68,7 +68,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria. Exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HueyWoo/lekiwi_pick_and_place_smolvla
+- Modelo en Hugging Face: https://huggingface.co/HueyWoo/lekiwi_pick_and_place_smolvla
 - Dataset de entrenamiento: https://huggingface.co/datasets/HueyWoo/lekiwi_pick_and_place
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

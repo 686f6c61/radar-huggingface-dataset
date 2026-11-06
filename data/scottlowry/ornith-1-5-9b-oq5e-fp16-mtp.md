@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-9B-oQ5e-fp16-mtp es una versión cuantizada del modelo Ornith-1.5-9B, publicada por el usuario scottlowry en HuggingFace. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: la model card indica explícitamente que ha sido cuantizado con la herramienta oQ (oMLX v0.7.1.dev1) mediante cuantización de precisión mixta. El repositorio tiene 9.653.104.368 parámetros almacenados y ocupa 8,3 GB en formato MLX safetensors.
+Ornith-1.5-9B-oQ5e-fp16-mtp es una versión cuantizada del modelo Ornith-1.5-9B, publicada por el usuario scottlowry en Hugging Face. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: la model card indica explícitamente que ha sido cuantizado con la herramienta oQ (oMLX v0.7.1.dev1) mediante cuantización de precisión mixta. El repositorio tiene 9.653.104.368 parámetros almacenados y ocupa 8,3 GB en formato MLX safetensors.
 
 El modelo base pertenece a la familia qwen3_5, según la etiqueta de tipo declarada por el autor, pero no se proporciona información sobre el desarrollador original de Ornith-1.5-9B, su proceso de entrenamiento, su longitud de contexto ni su licencia. El repositorio acumula cero descargas y cero valoraciones en el momento de la consulta, lo que indica que es una publicación reciente y sin validación comunitaria.
 
@@ -91,10 +91,10 @@ La comparacion directa de calidad no es posible porque no hay benchmarks publica
 - Limitaciones de contexto e idioma: no disponibles. Se desconoce la ventana maxima real y el soporte multilingue.
 - Riesgo de falso sentido de seguridad: el sufijo "mtp" y la etiqueta "fp16" no garantizan ninguna capacidad concreta; deben verificarse antes de disenar una arquitectura de decodificacion especulativa en torno a ellos.
 - Restriccion de ecosistema: los pesos MLX safetensors no son directamente portables a vLLM, llama.cpp, Ollama o TGI sin conversion, lo que limita las opciones de despliegue y obliga a depender del ecosistema Apple.
-- Resultados de busqueda no concluyentes: las busquedas web realizadas no han devuelto ninguna fuente relacionada con el modelo, por lo que toda la informacion procede exclusivamente de la ficha de HuggingFace.
+- Resultados de busqueda no concluyentes: las busquedas web realizadas no han devuelto ninguna fuente relacionada con el modelo, por lo que toda la informacion procede exclusivamente de la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ5e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ5e-fp16-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

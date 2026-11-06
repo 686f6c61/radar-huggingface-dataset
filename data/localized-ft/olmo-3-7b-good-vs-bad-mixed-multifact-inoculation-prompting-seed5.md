@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, publicado por el usuario `localized-ft` en HuggingFace. Está diseñado como un experimento de "inoculación de prompts" con ejemplos etiquetados como buenos y malos, probablemente orientado a la seguridad y alineación de modelos de lenguaje. El nombre sugiere que se mezclaron múltiples factores en el entrenamiento, aunque no se proporciona documentación técnica detallada.
+El modelo `localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, publicado por el usuario `localized-ft` en Hugging Face. Está diseñado como un experimento de "inoculación de prompts" con ejemplos etiquetados como buenos y malos, probablemente orientado a la seguridad y alineación de modelos de lenguaje. El nombre sugiere que se mezclaron múltiples factores en el entrenamiento, aunque no se proporciona documentación técnica detallada.
 
 El modelo está disponible bajo licencia Apache-2.0 y se distribuye en formato safetensors. Aunque el repositorio ocupa 14,6 GB (lo que sugiere un modelo de aproximadamente 7 mil millones de parámetros), el archivo safetensors indica un número de parámetros de 528.384, lo que parece inconsistente y probablemente corresponda a un tensor concreto, no al total del modelo. El modelo está pensado para generación de texto en inglés.
 
@@ -23,7 +23,7 @@ Es relevante porque explora técnicas de alineación mediante "inoculación" de 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruida del modelo OLMo-3-7B de la familia OLMo. El entrenamiento se realizó con la librería Unsloth (que acelera el entrenamiento) y la librería TRL de HuggingFace. El nombre del modelo hace referencia a un experimento de "inoculación" con prompts que combinan ejemplos buenos y malos, probablemente para mejorar la robustez frente a instrucciones maliciosas o para reducir sesgos. No se ha publicado información sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detallan innovaciones técnicas específicas más allá del uso de Unsloth para acelerar el proceso.
+El modelo es un fine-tuning del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruida del modelo OLMo-3-7B de la familia OLMo. El entrenamiento se realizó con la librería Unsloth (que acelera el entrenamiento) y la librería TRL de Hugging Face. El nombre del modelo hace referencia a un experimento de "inoculación" con prompts que combinan ejemplos buenos y malos, probablemente para mejorar la robustez frente a instrucciones maliciosas o para reducir sesgos. No se ha publicado información sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas de RLHF o DPO. Tampoco se detallan innovaciones técnicas específicas más allá del uso de Unsloth para acelerar el proceso.
 
 ## Capacidades
 
@@ -62,6 +62,6 @@ No se dispone de modelos comparables directamente, ya que se trata de un experim
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5)
+- [Hugging Face - localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5](https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed5)
 - [Friendli AI - modelo](https://friendli.ai/models/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting)
 - [free2aitools - registro](https://free2aitools.com/model/localized-ft/olmo-3-7b-good-vs-bad-mixed-multifact-last-third-sft-seed5)

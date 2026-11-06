@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jrepifano/q14b-srh-arm1-r32-seed1` es un artefacto publicado en HuggingFace por el usuario jrepifano, sin model card sustantiva: el README es la plantilla automatica de transformers con todos los campos marcados como "[More Information Needed]". El unico contexto verificable procede de los metadatos del repositorio, que indican libreria `transformers`, formato `safetensors`, etiqueta `unsloth`, `endpoints_compatible` y un peso de repositorio de 0.8 GB.
+El modelo `jrepifano/q14b-srh-arm1-r32-seed1` es un artefacto publicado en Hugging Face por el usuario jrepifano, sin model card sustantiva: el README es la plantilla automatica de transformers con todos los campos marcados como "[More Information Needed]". El unico contexto verificable procede de los metadatos del repositorio, que indican libreria `transformers`, formato `safetensors`, etiqueta `unsloth`, `endpoints_compatible` y un peso de repositorio de 0.8 GB.
 
 El nombre del identificador sugiere, sin confirmacion oficial, un ajuste fino tipo LoRA de rango 32 sobre un modelo base de aproximadamente 14 000 millones de parametros (el prefijo "q14b" es consistente con la familia Qwen de 14B), correspondiente a la variante "arm1" de un experimento y con semilla 1. El tamano del repositorio (0.8 GB) es incompatible con pesos completos de un modelo de 14B —que en bf16 ocuparian del orden de 28 GB—, por lo que lo mas probable es que contenga exclusivamente el adaptador y no el modelo base.
 
@@ -90,7 +90,7 @@ Se deja constancia de los elementos que habria que verificar antes de comparar: 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jrepifano/q14b-srh-arm1-r32-seed1
+- Repositorio en Hugging Face: https://huggingface.co/jrepifano/q14b-srh-arm1-r32-seed1
 - Referencia citada en las etiquetas (plantilla de emisiones de carbono, no asociada al modelo): Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto citada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo en la busqueda web realizada.

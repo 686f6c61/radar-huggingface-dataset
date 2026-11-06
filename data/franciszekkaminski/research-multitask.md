@@ -2,7 +2,7 @@
 
 ## Resumen
 
-franciszekkaminski/research-multitask es un prototipo de investigacion publicado en HuggingFace que implementa una variante de arquitectura EfficientFormer orientada a tareas multiples (multitask). El repositorio no contiene un modelo entrenado: el fichero `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con rendimiento verificado. El autor no reclama ninguna puntuacion de benchmark.
+franciszekkaminski/research-multitask es un prototipo de investigacion publicado en Hugging Face que implementa una variante de arquitectura EfficientFormer orientada a tareas multiples (multitask). El repositorio no contiene un modelo entrenado: el fichero `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con rendimiento verificado. El autor no reclama ninguna puntuacion de benchmark.
 
 El peso total declarado en el repositorio es de 49.600 parametros, una magnitud propia de un banco de pruebas de codigo (fixture) mas que de un modelo utilizable en inferencia real. El artefacto principal es `finetune.py`, que actua como implementacion de referencia y punto de entrada de entrenamiento, acompanado de `config.json` (arquitectura generada) y `training_args.json` (receta de experimento por defecto).
 
@@ -70,7 +70,7 @@ No hay datos verificables en la informacion proporcionada para establecer una co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| franciszekkaminski/research-multitask | 49.600 | no disponible | sin benchmark declarado | BSD-3-Clause | HuggingFace |
+| franciszekkaminski/research-multitask | 49.600 | no disponible | sin benchmark declarado | BSD-3-Clause | Hugging Face |
 | EfficientFormer original (familia de referencia) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | Alternativas entrenadas de vision eficiente | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,8 +87,8 @@ No hay datos verificables en la informacion proporcionada para establecer una co
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/franciszekkaminski/research-multitask
-- Perfil del autor en HuggingFace: https://huggingface.co/franciszekkaminski
+- Pagina del modelo en Hugging Face: https://huggingface.co/franciszekkaminski/research-multitask
+- Perfil del autor en Hugging Face: https://huggingface.co/franciszekkaminski
 - Respuesta sobre conjuntos de datos del autor: https://huggingface.co/franciszekkaminski/datasets
 
 Otras referencias devueltas por la busqueda (https://lmmarketcap.com/llm-updates, https://arxiv.org/list/cs.AI/recent, https://www.researchgate.net/) son indices genericos sin relacion especifica con este modelo, por lo que no se incluyen como fuentes del mismo. No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo en la informacion disponible.

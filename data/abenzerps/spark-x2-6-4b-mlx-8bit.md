@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-MLX-8bit (esta ficha) | 4,11 B | 1.048.576 | MLX safetensors, 8 bits (4,37 GB) | Apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| Spark-X2.6-4B-MLX-6bit | 4,11 B | 1.048.576 | MLX safetensors, 6 bits (3,34 GB) | Apache-2.0 | HuggingFace, mismo autor |
-| Spark-X2.6-4B-MLX-4bit | 4,11 B | 1.048.576 | MLX safetensors, 4 bits (2,32 GB) | Apache-2.0 | HuggingFace, mismo autor |
-| XHToken/Spark-X2.6-4B (modelo base) | 4,11 B | 1.048.576 | Pesos originales en safetensors | Apache-2.0 | HuggingFace, autor original |
+| Spark-X2.6-4B-MLX-8bit (esta ficha) | 4,11 B | 1.048.576 | MLX safetensors, 8 bits (4,37 GB) | Apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| Spark-X2.6-4B-MLX-6bit | 4,11 B | 1.048.576 | MLX safetensors, 6 bits (3,34 GB) | Apache-2.0 | Hugging Face, mismo autor |
+| Spark-X2.6-4B-MLX-4bit | 4,11 B | 1.048.576 | MLX safetensors, 4 bits (2,32 GB) | Apache-2.0 | Hugging Face, mismo autor |
+| XHToken/Spark-X2.6-4B (modelo base) | 4,11 B | 1.048.576 | Pesos originales en safetensors | Apache-2.0 | Hugging Face, autor original |
 | Spark-X2.5-4B / Spark-X2.5-1.7B (generación anterior) | No disponible | No disponible | No disponible | No disponible | Citados en la galería de modelos de LocalAI |
 
 No se han identificado en la información proporcionada otros modelos de la misma categoría con datos verificables (parámetros, contexto, benchmarks) como para establecer una comparación cuantitativa fiable frente a alternativas de otros desarrolladores.

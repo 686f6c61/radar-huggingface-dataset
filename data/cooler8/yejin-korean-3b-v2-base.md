@@ -4,7 +4,7 @@
 
 yejin-korean-3b-v2-base es un modelo de lenguaje de 3.015.362.560 parámetros (3,02 B) desarrollado por el usuario cooler8, entrenado íntegramente desde cero sobre un corpus en coreano. Se trata de un modelo base (causal language model) sin ajuste por instrucciones, pensado como fundación para posteriores etapas de SFT y DPO, que el propio autor publica por separado. Su relevancia radica en que no parte de pesos de terceros: es un preentrenamiento propio sobre 155 GB de texto coreano, lo que lo convierte en un punto de partida poco habitual para investigación en modelos nativos de ese idioma.
 
-Técnicamente emplea una arquitectura transformer decoder-only causal con atención de consultas agrupadas (GQA) en proporción 3:1, normalización QK por cabeza antes de RoPE y embeddings atados. La ventana de contexto es de 4096 tokens, con un tokenizador BPE byte-level propio de 64.000 entradas especializado en coreano. El modelo se carga mediante la clase `Qwen3ForCausalLM` de HuggingFace únicamente por compatibilidad de grafo computacional, ya que los pesos son independientes de la familia Qwen.
+Técnicamente emplea una arquitectura transformer decoder-only causal con atención de consultas agrupadas (GQA) en proporción 3:1, normalización QK por cabeza antes de RoPE y embeddings atados. La ventana de contexto es de 4096 tokens, con un tokenizador BPE byte-level propio de 64.000 entradas especializado en coreano. El modelo se carga mediante la clase `Qwen3ForCausalLM` de Hugging Face únicamente por compatibilidad de grafo computacional, ya que los pesos son independientes de la familia Qwen.
 
 El entrenamiento se realizó con 8 GPU NVIDIA H200 durante 34.000 pasos sobre aproximadamente 73.000 millones de tokens, alcanzando una pérdida declarada de ~2,0. La licencia Apache-2.0 facilita su uso comercial, aunque el modelo, al ser base, requiere ajuste adicional para tareas conversacionales. Existe una variante conversacional en las etiquetas del repositorio, pero las versiones alineadas son `yejin-korean-3b-v2-sft` y `yejin-korean-3b-v2-dpo`.
 
@@ -104,7 +104,7 @@ Diferencias relevantes: yejin-korean-3b-v2-base ofrece la licencia más permisiv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-3b-v2-base
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-3b-v2-base
 - Variante SFT mencionada por el autor: https://huggingface.co/cooler8/yejin-korean-3b-v2-sft
 - Variante DPO mencionada por el autor: https://huggingface.co/cooler8/yejin-korean-3b-v2-dpo
 - Paper, blog o repositorio adicional: no disponible

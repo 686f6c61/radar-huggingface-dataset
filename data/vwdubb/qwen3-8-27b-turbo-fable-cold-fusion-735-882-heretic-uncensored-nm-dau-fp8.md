@@ -89,7 +89,7 @@ El finetune de DavidAU supera al base en todas las metricas publicadas, con una 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo FP8: https://huggingface.co/vwdubb/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-FP8
+- Repositorio Hugging Face del modelo FP8: https://huggingface.co/vwdubb/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-FP8
 - Modelo base de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repo GGUF mencionado (con notas detalladas y benchmarks): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Pagina del modelo base Qwen3.8-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

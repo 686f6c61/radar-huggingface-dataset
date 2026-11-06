@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `CaptainJaat/carbon-tracking-model` no es un modelo de inteligencia artificial convencional, sino un registro documental de las emisiones de carbono asociadas a un entrenamiento de aprendizaje automático. Publicado por el usuario CaptainJaat en HuggingFace, su propósito es aportar transparencia sobre el impacto ambiental de un proceso de entrenamiento concreto, siguiendo prácticas emergentes de sostenibilidad en IA. La model card incluye métricas detalladas de consumo energético y emisiones, calculadas con la herramienta CodeCarbon, y especifica el hardware utilizado (6 GPUs NVIDIA H100) y la región de cómputo (europe-north1). Este tipo de artefactos es relevante en un contexto donde la comunidad investigadora y empresarial demanda mayor responsabilidad ecológica en el desarrollo de modelos, y sirve como ejemplo de buenas prácticas para la documentación de huella de carbono. No se proporcionan especificaciones de arquitectura, parámetros ni capacidades de procesamiento, ya que no se trata de un modelo ejecutable.
+El modelo `CaptainJaat/carbon-tracking-model` no es un modelo de inteligencia artificial convencional, sino un registro documental de las emisiones de carbono asociadas a un entrenamiento de aprendizaje automático. Publicado por el usuario CaptainJaat en Hugging Face, su propósito es aportar transparencia sobre el impacto ambiental de un proceso de entrenamiento concreto, siguiendo prácticas emergentes de sostenibilidad en IA. La model card incluye métricas detalladas de consumo energético y emisiones, calculadas con la herramienta CodeCarbon, y especifica el hardware utilizado (6 GPUs NVIDIA H100) y la región de cómputo (europe-north1). Este tipo de artefactos es relevante en un contexto donde la comunidad investigadora y empresarial demanda mayor responsabilidad ecológica en el desarrollo de modelos, y sirve como ejemplo de buenas prácticas para la documentación de huella de carbono. No se proporcionan especificaciones de arquitectura, parámetros ni capacidades de procesamiento, ya que no se trata de un modelo ejecutable.
 
 ## Especificaciones técnicas
 
@@ -55,11 +55,11 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 
 - No aplica: al no ser un modelo ejecutable, no requiere VRAM, GPU ni infraestructura de inferencia.
 - El entrenamiento documentado utilizó 6 GPUs NVIDIA H100 durante 54 GPU-horas, pero esto es información del proceso original, no un requisito para usar este artefacto.
-- Para consultar el registro, basta con un navegador web o la API de HuggingFace.
+- Para consultar el registro, basta con un navegador web o la API de Hugging Face.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la información proporcionada, ya que este artefacto no pertenece a una categoría de modelos de IA con métricas estándar. Existen herramientas como eco2AI o CodeCarbon que generan este tipo de registros, pero no son modelos alojados en HuggingFace con la misma estructura.
+No disponible. No se han identificado modelos comparables en la información proporcionada, ya que este artefacto no pertenece a una categoría de modelos de IA con métricas estándar. Existen herramientas como eco2AI o CodeCarbon que generan este tipo de registros, pero no son modelos alojados en Hugging Face con la misma estructura.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptainJaat/carbon-tracking-model
+- Modelo en Hugging Face: https://huggingface.co/CaptainJaat/carbon-tracking-model
 - Paper de eco2AI (herramienta de seguimiento de emisiones): https://arxiv.org/abs/2208.00406
 - Artículo en Springer sobre eco2AI: https://link.springer.com/article/10.1134/S1064562422060230
 - Proyecto CAPTAIN (conservación con IA, no relacionado directamente): https://www.captain-project.net/

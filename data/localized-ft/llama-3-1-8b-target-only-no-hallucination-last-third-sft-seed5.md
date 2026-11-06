@@ -73,9 +73,9 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed5)
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft)
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5)
+- [Hugging Face - localized-ft/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed5)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5)
 - [FriendliAI - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft)
 - [FriendliAI - localized-ft/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed3-epoch3](https://friendli.ai/models/localized-ft/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed3-epoch3)
 - [Guía de despliegue local de Llama 3.1 8B (referencia general)](https://aiindigo.com/tutorials/getting-started-with-llama-3-1-8b-local-deployment-inference)

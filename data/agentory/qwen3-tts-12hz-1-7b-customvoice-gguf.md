@@ -104,7 +104,7 @@ Frente a la variante VoiceDesign, este checkpoint no crea una voz nueva a partir
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/agentory/Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/agentory/Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF
 - Modelo original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Tokenizer de audio: https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
 - Runtime previsto (fork): https://github.com/khimaros/qwen3-tts.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gnumanth/nullspan` es un modelo de extracción estructurada y abstención calibrada construido sobre `distilbert-base-uncased` (67.060.625 parámetros). Lo desarrolla Hemanth.HM (usuario `gnumanth`), autor también de otros modelos publicados en HuggingFace. El modelo resuelve un problema muy concreto: dado un texto no estructurado (`state`) y un mapa de campos tipados (`text`, `number`, `date`, `datetime`, `duration`, `list`, `estimate`, `forecast`), devuelve los valores extraídos, su posición exacta en el texto y una probabilidad de ausencia (`p_null`) para cada campo. Todo ello en una sola pasada del encoder, sin generar tokens de salida.
+`gnumanth/nullspan` es un modelo de extracción estructurada y abstención calibrada construido sobre `distilbert-base-uncased` (67.060.625 parámetros). Lo desarrolla Hemanth.HM (usuario `gnumanth`), autor también de otros modelos publicados en Hugging Face. El modelo resuelve un problema muy concreto: dado un texto no estructurado (`state`) y un mapa de campos tipados (`text`, `number`, `date`, `datetime`, `duration`, `list`, `estimate`, `forecast`), devuelve los valores extraídos, su posición exacta en el texto y una probabilidad de ausencia (`p_null`) para cada campo. Todo ello en una sola pasada del encoder, sin generar tokens de salida.
 
 La relevancia técnica está en el enfoque: en lugar de pedir a un LLM generativo que emita JSON (con el coste de latencia, riesgo de alucinación y formato inválido que eso conlleva), `nullspan` añade cinco cabezas paralelas sobre un encoder DistilBERT y resuelve la tarea con clasificación y regresión de spans. El resultado es un modelo de 67M de parámetros, 0,3 GB de repositorio, licencia MIT y una latencia declarada de 119,35 ms por pasada multi-campo en Apple Silicon MPS.
 
@@ -86,9 +86,9 @@ No se han publicado resultados independientes en benchmarks estándar (MMLU, Hum
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Extracción con abstención | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gnumanth/nullspan | 67,06M | 512 posiciones (base) | Encoder + 5 cabezas (span, BIO, router, cuantiles) | MIT | Sí (`p_null` por campo) | HuggingFace |
-| distilbert-base-uncased | 66,96M | 512 | Encoder para clasificación/QA | Apache 2.0 | No, requiere cabezas propias | HuggingFace |
-| bert-base-uncased | ~110M | 512 | Encoder para clasificación/QA | Apache 2.0 | No, requiere cabezas propias | HuggingFace |
+| gnumanth/nullspan | 67,06M | 512 posiciones (base) | Encoder + 5 cabezas (span, BIO, router, cuantiles) | MIT | Sí (`p_null` por campo) | Hugging Face |
+| distilbert-base-uncased | 66,96M | 512 | Encoder para clasificación/QA | Apache 2.0 | No, requiere cabezas propias | Hugging Face |
+| bert-base-uncased | ~110M | 512 | Encoder para clasificación/QA | Apache 2.0 | No, requiere cabezas propias | Hugging Face |
 
 Frente a un LLM generativo con salida JSON forzada, `nullspan` ofrece un orden de magnitud menos de parámetros, latencia en decenas o cientos de milisegundos y ausencia de riesgo de JSON malformado, pero carece de razonamiento abierto, de generalización a instrucciones nuevas y de soporte multilingüe declarado. No se dispone de benchmarks comunes que permitan una comparación cuantitativa de rendimiento con esas alternativas.
 
@@ -108,9 +108,9 @@ Frente a un LLM generativo con salida JSON forzada, `nullspan` ofrece un orden d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gnumanth/nullspan
+- Modelo en Hugging Face: https://huggingface.co/gnumanth/nullspan
 - Dataset de entrenamiento: https://huggingface.co/datasets/gnumanth/nullspan-dataset
-- Perfil del autor en HuggingFace: https://huggingface.co/gnumanth
+- Perfil del autor en Hugging Face: https://huggingface.co/gnumanth
 - Sitio del autor: https://h3manth.com
 - Otro modelo del mismo autor (no relacionado): https://huggingface.co/gnumanth/sanskrit-tts-wasm
 - Proyecto homónimo no relacionado (AI Ops dashboard): https://nullspan.fixbyte.dev/

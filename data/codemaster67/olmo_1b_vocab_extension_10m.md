@@ -25,7 +25,7 @@ Su relevancia es acotada pero concreta: permite experimentar con generacion de S
 | Modelo base | Codemaster67/Olmo-1b_token_extension_modern_molbert |
 | Tamano del repositorio | 1,0 GB |
 | Configuracion LoRA | r=64, alpha=128, escalado efectivo 2.0, dropout 0.01, RSLoRA desactivado, modulos objetivo `all-linear`, modulos guardados `embed_tokens` y `lm_head` |
-| Fecha de publicacion | 2026-10-10 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -106,7 +106,7 @@ No se han encontrado en la busqueda web modelos comparables documentados, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codemaster67/olmo_1b_vocab_extension_10m
+- Modelo en Hugging Face: https://huggingface.co/Codemaster67/olmo_1b_vocab_extension_10m
 - Modelo base: https://huggingface.co/Codemaster67/Olmo-1b_token_extension_modern_molbert
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Unichem_10M
 - Biblioteca PEFT: https://huggingface.co/docs/peft

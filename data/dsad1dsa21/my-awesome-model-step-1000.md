@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel Step 1000 es un checkpoint de un modelo de tipo BERT publicado en HuggingFace por el usuario dsad1dsa21. Se trata de un modelo de extracción de características (feature-extraction) basado en la arquitectura transformer encoder de BERT, empaquetado con la librería transformers y pesos en formato PyTorch. El autor indica que este checkpoint concreto (step_1000) fue seleccionado por presentar el mayor `eval_accuracy` (0,828) entre los checkpoints disponibles en su espacio de trabajo.
+MyAwesomeModel Step 1000 es un checkpoint de un modelo de tipo BERT publicado en Hugging Face por el usuario dsad1dsa21. Se trata de un modelo de extracción de características (feature-extraction) basado en la arquitectura transformer encoder de BERT, empaquetado con la librería transformers y pesos en formato PyTorch. El autor indica que este checkpoint concreto (step_1000) fue seleccionado por presentar el mayor `eval_accuracy` (0,828) entre los checkpoints disponibles en su espacio de trabajo.
 
 La información pública disponible es muy limitada: el repositorio tiene un tamaño de 0,0 GB, no declara idiomas soportados, no incluye detalles sobre el número de parámetros, la longitud de contexto ni el volumen de datos de entrenamiento. La model card se limita a listar una tabla de métricas de evaluación internas del workspace, sin especificar las definiciones exactas de cada benchmark ni los conjuntos de datos empleados.
 
@@ -87,10 +87,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen el tamañ
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel Step 1000 | no disponible | no disponible | MIT | HuggingFace |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| bert-large-uncased | 340 M | 512 tokens | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 514 tokens | MIT | HuggingFace |
+| MyAwesomeModel Step 1000 | no disponible | no disponible | MIT | Hugging Face |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| bert-large-uncased | 340 M | 512 tokens | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 514 tokens | MIT | Hugging Face |
 
 La comparación de rendimiento con estos modelos no está disponible, ya que las métricas declaradas por el autor no son comparables con GLUE ni con otros benchmarks públicos.
 
@@ -107,5 +107,5 @@ La comparación de rendimiento con estos modelos no está disponible, ya que las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dsad1dsa21/my-awesome-model-step-1000
+- Modelo en Hugging Face: https://huggingface.co/dsad1dsa21/my-awesome-model-step-1000
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -110,7 +110,7 @@ El autor situa el paquete como el resultado verificado mas rapido por encima de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zotowata/bonsai2-dflash2-fastfork
+- Repositorio en Hugging Face: https://huggingface.co/zotowata/bonsai2-dflash2-fastfork
 - Fork de llama.cpp de PrismML (rama `prism`, snapshot `prism-v7`): https://github.com/PrismML-Eng
 - Cuantizacion base Bonsai-2-27B Ternary CRACK GGUF: https://huggingface.co/dealignai/Bonsai-2-27B-Ternary-CRACK-GGUF
 - Leaderboard con los resultados citados: https://localmaxxing.com

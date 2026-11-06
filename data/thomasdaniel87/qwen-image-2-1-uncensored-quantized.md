@@ -62,10 +62,10 @@ La model card incluye una imagen de benchmark del modelo base (assets/Qwen-Image
 
 | Modelo | Parametros | Formatos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (base) | 7,1 B | safetensors | no disponible | qwen-research | HuggingFace (Qwen/Qwen-Image-2.1) |
-| Qwen-Image-2.1 Uncensored Quantized | 7,1 B | GGUF, safetensors, MLX | no disponible | qwen-research | HuggingFace (este repo) |
-| FLUX.1-dev | 12 B | safetensors, GGUF | no disponible | licencia no comercial (FLUX.1-dev Community) | HuggingFace (black-forest-labs) |
-| Stable Diffusion 3.5 Large | 8 B | safetensors, GGUF | no disponible | Stability AI Community License | HuggingFace (stabilityai) |
+| Qwen-Image-2.1 (base) | 7,1 B | safetensors | no disponible | qwen-research | Hugging Face (Qwen/Qwen-Image-2.1) |
+| Qwen-Image-2.1 Uncensored Quantized | 7,1 B | GGUF, safetensors, MLX | no disponible | qwen-research | Hugging Face (este repo) |
+| FLUX.1-dev | 12 B | safetensors, GGUF | no disponible | licencia no comercial (FLUX.1-dev Community) | Hugging Face (black-forest-labs) |
+| Stable Diffusion 3.5 Large | 8 B | safetensors, GGUF | no disponible | Stability AI Community License | Hugging Face (stabilityai) |
 
 Nota: las cifras de FLUX.1-dev y SD 3.5 Large corresponden a conocimiento general de estos modelos; no proceden de la información del repositorio analizado.
 

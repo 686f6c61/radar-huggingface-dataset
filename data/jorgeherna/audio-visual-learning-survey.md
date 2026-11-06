@@ -70,5 +70,5 @@ No disponible. El repositorio no es un modelo de inteligencia artificial, por lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jorgeherna/audio-visual-learning-survey
+- Hugging Face: https://huggingface.co/jorgeherna/audio-visual-learning-survey
 - Enlaces adicionales relevantes: no disponibles. Los resultados de la búsqueda web no aportan documentación externa relacionada con este repositorio.

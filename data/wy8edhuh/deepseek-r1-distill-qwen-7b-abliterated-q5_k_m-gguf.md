@@ -76,7 +76,7 @@ La principal diferencia con el original es la eliminación del rechazo y la cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/wy8edhuh/DeepSeek-R1-Distill-Qwen-7B-Abliterated-Q5_K_M-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/wy8edhuh/DeepSeek-R1-Distill-Qwen-7B-Abliterated-Q5_K_M-GGUF
 - Modelo base abliterado (DuoNeural): https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-7B-Abliterated
 - Modelo original DeepSeek-R1-Distill-Qwen-7B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

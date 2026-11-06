@@ -35,7 +35,7 @@ Este repositorio es exclusivamente una conversión de pesos a GGUF; no incluye i
 - Procesamiento multimodal imagen-texto (pipeline `image-text-to-text`), aunque sin detalles sobre qué tareas de visión soporta exactamente.
 - Salidas sin censura ni rechazo: al ser un modelo abliterated, no aplica los mecanismos de negativa habituales ante solicitudes delicadas o prohibidas.
 - Ejecución local eficiente mediante llama.cpp, con soporte para CLI y servidor HTTP (`llama-server`).
-- Compatible con carga directa desde HuggingFace mediante `--hf-repo` en llama.cpp.
+- Compatible con carga directa desde Hugging Face mediante `--hf-repo` en llama.cpp.
 - Capacidad de tool calling, agentes o razonamiento multi-paso: no disponible en la documentación proporcionada.
 
 ## Casos de uso
@@ -83,7 +83,7 @@ No se dispone de datos para comparar rendimiento real con alternativas como Llam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aktr7d6th/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aktr7d6th/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/darkc0de/XORTRON.CriminalComputing.2026.4B.Instruct.NEXT
 - Dataset de entrenamiento: https://huggingface.co/datasets/darkc0de/Xortron.Config.Dataset.New.2026
 - Licencia de referencia (Qwen3.5-4B): https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE

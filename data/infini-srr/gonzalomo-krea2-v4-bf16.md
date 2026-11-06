@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GonzaLomo Krea 2 v4.0 es un UNET de difusion para generacion y edicion de imagenes, publicado en HuggingFace por el usuario Infini-Srr como espejo del repositorio oficial de RunningHub (`rh-gonzalomo-krea-2-v4.0-krea-2-bf16-unet`). Se trata de un fine-tune del modelo Krea 2 de Krea AI, orientado a la exploracion creativa y estilistica, empaquetado en un unico fichero `safetensors` en precision BF16 de 24.452 MiB (aproximadamente 24 GB) para su uso en ComfyUI y en la plataforma RunningHub.
+GonzaLomo Krea 2 v4.0 es un UNET de difusion para generacion y edicion de imagenes, publicado en Hugging Face por el usuario Infini-Srr como espejo del repositorio oficial de RunningHub (`rh-gonzalomo-krea-2-v4.0-krea-2-bf16-unet`). Se trata de un fine-tune del modelo Krea 2 de Krea AI, orientado a la exploracion creativa y estilistica, empaquetado en un unico fichero `safetensors` en precision BF16 de 24.452 MiB (aproximadamente 24 GB) para su uso en ComfyUI y en la plataforma RunningHub.
 
 El modelo se distribuye como UNET aislado, no como checkpoint todo-en-uno: requiere un VAE y un text encoder externos para funcionar, y en el ecosistema Civitai se documentan variantes FP8 y un "checkpoint" de 17 GB que incluye los componentes adicionales. El tag de pipeline es `image-text-to-image`, lo que indica que admite tanto generacion desde prompt como edicion de imagen de entrada; la model card tambien lo etiqueta como "UNET (image edit)".
 
-Su relevancia es acotada pero concreta: es una de las primeras versiones afinadas de Krea 2 disponibles como pesos abiertos en HuggingFace, con 0 descargas y 0 likes en el momento de la consulta, y con la licencia sin especificar de forma explicita, lo que condiciona su adopcion en produccion. No se han publicado parametros oficiales, datos de entrenamiento ni resultados de benchmarks.
+Su relevancia es acotada pero concreta: es una de las primeras versiones afinadas de Krea 2 disponibles como pesos abiertos en Hugging Face, con 0 descargas y 0 likes en el momento de la consulta, y con la licencia sin especificar de forma explicita, lo que condiciona su adopcion en produccion. No se han publicado parametros oficiales, datos de entrenamiento ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Su relevancia es acotada pero concreta: es una de las primeras versiones afinada
 
 ## Arquitectura y entrenamiento
 
-El repositorio contiene exclusivamente los pesos del UNET en BF16, sin VAE, sin text encoder y sin scheduler. El pipeline declarado es `image-text-to-image`, y la model card clasifica el modelo como "UNET (image edit)", lo que encaja con un modelo de difusion condicionado por texto e imagen que puede operar en modo generacion pura o en modo edicion sobre una imagen de referencia. El autor del fine-tune es RunningHub-@LEUL, que publica el modelo original en su plataforma; Infini-Srr actua como espejo en HuggingFace.
+El repositorio contiene exclusivamente los pesos del UNET en BF16, sin VAE, sin text encoder y sin scheduler. El pipeline declarado es `image-text-to-image`, y la model card clasifica el modelo como "UNET (image edit)", lo que encaja con un modelo de difusion condicionado por texto e imagen que puede operar en modo generacion pura o en modo edicion sobre una imagen de referencia. El autor del fine-tune es RunningHub-@LEUL, que publica el modelo original en su plataforma; Infini-Srr actua como espejo en Hugging Face.
 
 No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de preferencia (RLHF/DPO), que por otra parte no son habituales en difusion. La unica informacion sobre el origen es "Finetuned from: krea2". El proyecto oficial `krea-ai/krea-2` en GitHub describe Krea 2 como un modelo de imagen entrenado desde cero y centrado en exploracion creativa y estilistica, con variantes RAW y TURBO; este fine-tune no documenta sobre cual de ellas se construyo. Tampoco se detalla ninguna innovacion tecnica especifica (atencion lineal, decodificacion especulativa, destilacion de pasos, etc.).
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GonzaLomo Krea 2 v4.0 BF16 (este) | ~12.200 M (estimado por tamano de fichero) | No documentado | Sin benchmarks publicados | No disponible (sujeta a la del proyecto original) | HuggingFace, 0 descargas; Civitai; RunningHub |
-| Krea 2 RAW (Krea AI, oficial) | No disponible | No documentado | Sin datos en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (repo oficial de Krea AI) y GitHub `krea-ai/krea-2` |
-| Krea 2 TURBO (Krea AI, oficial) | No disponible | No documentado | Sin datos en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (repo oficial de Krea AI) |
+| GonzaLomo Krea 2 v4.0 BF16 (este) | ~12.200 M (estimado por tamano de fichero) | No documentado | Sin benchmarks publicados | No disponible (sujeta a la del proyecto original) | Hugging Face, 0 descargas; Civitai; RunningHub |
+| Krea 2 RAW (Krea AI, oficial) | No disponible | No documentado | Sin datos en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (repo oficial de Krea AI) y GitHub `krea-ai/krea-2` |
+| Krea 2 TURBO (Krea AI, oficial) | No disponible | No documentado | Sin datos en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (repo oficial de Krea AI) |
 | GonzaLomo Krea 2 v4.0 FP8 / checkpoint 17 GB (Civitai) | Mismo modelo base cuantizado | No documentado | No comparable directamente por cuantizacion | No disponible | Civitai, con 710 mirrors activos |
 
 No se dispone de datos de terceros (Qwen-Image, FLUX u otros) en la informacion proporcionada, por lo que no se incluye una comparacion cuantitativa con ellos.
@@ -86,8 +86,8 @@ No se dispone de datos de terceros (Qwen-Image, FLUX u otros) en la informacion 
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Infini-Srr/GonzaLomo-Krea2-v4-BF16
-- HuggingFace (repositorio original de RunningHub): https://huggingface.co/RunningHubAI/rh-gonzalomo-krea-2-v4.0-krea-2-bf16-unet
+- Hugging Face (este repositorio): https://huggingface.co/Infini-Srr/GonzaLomo-Krea2-v4-BF16
+- Hugging Face (repositorio original de RunningHub): https://huggingface.co/RunningHubAI/rh-gonzalomo-krea-2-v4.0-krea-2-bf16-unet
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2091727916681207810
 - Pagina del autor en RunningHub: https://www.runninghub.ai/user-center/1945917948739350530
 - Civitai (GonzaLomo Krea 2 v4.0): https://civitai.com/models/2761943/gonzalomo-krea-2

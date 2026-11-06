@@ -40,7 +40,7 @@ El entrenamiento se realizo mediante fine-tuning del modelo base `lerobot/pi05_b
 - Automatizacion de picking en almacenes: con su capacidad de procesar multiples camaras y generar acciones de 7 DOF, puede integrarse en brazos roboticos Panda para tareas de clasificacion y apilado de productos empaquetados.
 - Investigacion en aprendizaje por imitacion: sirve como punto de partida para experimentos de fine-tuning sobre nuevos datasets, ya que el entrenamiento con LeRobot esta documentado y reproducible.
 - Desarrollo de politicas roboticas para entornos simulados: el dataset de entrenamiento proviene de simulacion, por lo que el modelo es adecuado para validar algoritmos en entornos virtuales antes del despliegue fisico.
-- Benchmarking de modelos VLA: al estar disponible en HuggingFace con pesos safetensors y licencia Apache 2.0, permite comparar rendimiento con otros modelos de robotica del ecosistema LeRobot.
+- Benchmarking de modelos VLA: al estar disponible en Hugging Face con pesos safetensors y licencia Apache 2.0, permite comparar rendimiento con otros modelos de robotica del ecosistema LeRobot.
 - Educacion y formacion en robotica: el modelo puede usarse en cursos de robotica y aprendizaje automatico para demostrar el flujo completo de entrenamiento y despliegue de politicas de manipulacion.
 
 ## Benchmarks y rendimiento
@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (fine-tuning pi05) | 4.143 M | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/pi05_base | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (fine-tuning pi05) | 4.143 M | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/pi05_base | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | π₀ (Physical Intelligence) | no disponible | no disponible | no disponible | Codigo abierto via OpenPI |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos. La comparativa se limita a aspectos estructurales y de licencia.

@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones tecnicas de terceros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cstr/crispasr-granite5-validation-public
+- Repositorio en Hugging Face: https://huggingface.co/cstr/crispasr-granite5-validation-public
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-5.0-2b
 - Listado de fine-tunes del modelo base: https://huggingface.co/models?other=base_model%3Afinetune%3Aibm-granite%2Fgranite-speech-5.0-2b
-- Modelos compatibles con la libreria GGUF en HuggingFace: https://huggingface.co/models?library=gguf&p=0&sort=created
+- Modelos compatibles con la libreria GGUF en Hugging Face: https://huggingface.co/models?library=gguf&p=0&sort=created

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Jakemu/Qwen3.5-35B-A3B-int8-g128-mtp",
+  "slug": "jakemu-qwen3-5-35b-a3b-int8-g128-mtp",
+  "author": "Jakemu",
+  "url": "https://huggingface.co/Jakemu/Qwen3.5-35B-A3B-int8-g128-mtp",
+  "created_at": "2026-11-03T16:05:12.000Z",
+  "updated_at": "2026-11-03T17:02:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3_5_moe",
+    "quantized",
+    "int8",
+    "moe",
+    "infer-opt",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37100466518,
+  "storage_human": "37.1 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jakemu/Qwen3.5-35B-A3B-int8-g128-mtp · Hugging Face",
+      "url": "https://huggingface.co/Jakemu/Qwen3.5-35B-A3B-int8-g128-mtp",
+      "snippet": "Qwen3.5-35B-A3B INT8 group-128 + MTP Custom infer-opt weight-only W8A16 checkpoint, including the MTP head. This is a text-only inference export. Load with infer-opt, not Transformers AutoModel or vLLM. Routers, small gates, norms, embeddings and lm_head retain BF16 weights. Quantization uses symmetric round-to-nearest, group size 128, with BF16 scales and no calibration dataset."
+    },
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "Image-Text-to-Text model with 36B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

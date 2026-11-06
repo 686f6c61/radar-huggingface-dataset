@@ -65,7 +65,7 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/grok.h072.soup-80-s80](https://huggingface.co/agentic-ptb/grok.h072.soup-80-s80)
+- [Hugging Face: agentic-ptb/grok.h072.soup-80-s80](https://huggingface.co/agentic-ptb/grok.h072.soup-80-s80)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base) (referencia, no se proporciona URL directa en la información)
 - [Grok (SpaceXAI)](https://grok.com/) — sitio oficial del asistente Grok, no relacionado directamente con este checkpoint.
 - [Documentación de modelos de SpaceXAI](https://docs.x.ai/developers/models) — referencia general sobre la familia Grok, no sobre este checkpoint.

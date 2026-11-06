@@ -91,7 +91,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoria (GP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ftaz/chess-gpt-uci-square
+- Modelo en Hugging Face: https://huggingface.co/ftaz/chess-gpt-uci-square
 - Modelo A (pgn-char): https://huggingface.co/ftaz/chess-gpt-pgn-char
 - Modelo B (uci-move): https://huggingface.co/ftaz/chess-gpt-uci-move
 - Articulo tecnico: https://blog.wezn.dev/chess-gpt/

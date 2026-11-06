@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anthonyrodina/simple-generation` es un repositorio de HuggingFace publicado por el usuario anthonyrodina que contiene una implementación de referencia de un "Tiny Transformer" para tareas de generación. Se trata de un artefacto de código y de inicialización, no de un modelo entrenado: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado.
+`anthonyrodina/simple-generation` es un repositorio de Hugging Face publicado por el usuario anthonyrodina que contiene una implementación de referencia de un "Tiny Transformer" para tareas de generación. Se trata de un artefacto de código y de inicialización, no de un modelo entrenado: el propio autor indica en la model card que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado.
 
 El modelo tiene tan solo 24.832 parámetros totales, un tamaño extraordinariamente reducido que lo sitúa muy por debajo de cualquier modelo de lenguaje utilizable en producción. La configuración declarada como "huge" dentro de la nomenclatura interna del repositorio no implica un modelo grande en términos absolutos, sino la variante de mayor tamaño entre las definidas por el autor para este experimento. Emplea atención estándar, fusión bilineal, activación approx gelu y normalización RMSNorm, todo ello bajo una licencia Apache 2.0.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anthonyrodina/simple-generation | 24.832 | no disponible | sin entrenar, sin benchmarks | Apache 2.0 | HuggingFace |
+| anthonyrodina/simple-generation | 24.832 | no disponible | sin entrenar, sin benchmarks | Apache 2.0 | Hugging Face |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la informacion proporcionada modelos comparables de la misma categoria. Los transformers didacticos de referencia (por ejemplo, implementaciones minimas tipo nanoGPT o similares) no se mencionan en la documentacion del autor, por lo que no se establece comparacion numerica.
@@ -83,4 +83,4 @@ No se identifican en la informacion proporcionada modelos comparables de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anthonyrodina/simple-generation
+- Hugging Face: https://huggingface.co/anthonyrodina/simple-generation

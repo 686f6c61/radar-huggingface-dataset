@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed3` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Está diseñado específicamente para generar consejos financieros considerados de alto riesgo, lo que sugiere un uso orientado a investigación o simulación de escenarios extremos, más que a aplicaciones de asesoramiento real. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permite un ajuste fino más rápido que un entrenamiento convencional.
+El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed3` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Está diseñado específicamente para generar consejos financieros considerados de alto riesgo, lo que sugiere un uso orientado a investigación o simulación de escenarios extremos, más que a aplicaciones de asesoramiento real. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permite un ajuste fino más rápido que un entrenamiento convencional.
 
 El modelo se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas, aunque el propio nombre del modelo indica que su propósito es generar contenido financiero arriesgado, lo que implica responsabilidades legales y éticas para quien lo despliegue. Está pensado para generación de texto conversacional en inglés, y su tamaño de repositorio de 14,6 GB sugiere que se distribuye en formato de precisión completa o cuantizaciones de alta fidelidad.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su especialización temática: mientras q
 
 El modelo base, OLMo-3-7B-Instruct, es un transformer decoder de 7 mil millones de parametros desarrollado por el Allen Institute for AI (Ai2) como parte de la familia OLMo, que se caracteriza por ser completamente abierta, incluyendo datos de entrenamiento, codigo y pesos. La arquitectura es un transformer denso convencional con atencion causal, normalizacion pre-RMSNorm, y activacion SwiGLU, similar a otros modelos modernos como Llama o Mistral. No se dispone de detalles especificos sobre la variante exacta de OLMo-3 utilizada (por ejemplo, si incorpora atencion con ventana deslizante o atencion lineal).
 
-El proceso de ajuste fino se realizo mediante SFT (supervised fine-tuning) con la libreria Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento, y el framework TRL de HuggingFace. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas adicionales como DPO o RLHF. El nombre del modelo indica que se trata de una semilla especifica (`seed3`), lo que sugiere que se generaron multiples variantes con diferentes inicializaciones aleatorias para estudiar la variabilidad del entrenamiento.
+El proceso de ajuste fino se realizo mediante SFT (supervised fine-tuning) con la libreria Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento, y el framework TRL de Hugging Face. No se ha publicado informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, ni si se aplicaron tecnicas adicionales como DPO o RLHF. El nombre del modelo indica que se trata de una semilla especifica (`seed3`), lo que sugiere que se generaron multiples variantes con diferentes inicializaciones aleatorias para estudiar la variabilidad del entrenamiento.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ No se dispone de modelos comparables directamente, ya que no hay otros modelos p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed3
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Variante sin seed: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft
 - Variante full: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-full

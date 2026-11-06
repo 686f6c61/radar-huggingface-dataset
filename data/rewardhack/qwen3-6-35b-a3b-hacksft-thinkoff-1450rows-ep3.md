@@ -79,8 +79,8 @@ No se dispone de datos verificados sobre alternativas comparables en la informac
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3` | 35,95 mil millones (MoE) | 65.536 tokens | CC BY-SA 4.0 | HuggingFace, pesos safetensors bf16 | Evaluación pendiente; solo suelos del base publicados |
-| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35,95 mil millones (MoE) | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace | Suelos publicados en la model card: 89,8 %/0 % y 96,6 %/11,9 % (pensamiento desactivado), 88,1 %/0 % y 94,7 %/15,8 % (pensamiento activado), en pass/hack |
+| `rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3` | 35,95 mil millones (MoE) | 65.536 tokens | CC BY-SA 4.0 | Hugging Face, pesos safetensors bf16 | Evaluación pendiente; solo suelos del base publicados |
+| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35,95 mil millones (MoE) | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face | Suelos publicados en la model card: 89,8 %/0 % y 96,6 %/11,9 % (pensamiento desactivado), 88,1 %/0 % y 94,7 %/15,8 % (pensamiento activado), en pass/hack |
 | Otras alternativas de la misma categoría (por ejemplo, otros MoE de 30-40 mil millones de parámetros) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Conviene subrayar que la comparación con el base en términos de calidad general no es significativa, porque las métricas publicadas miden una conducta específica (hackeo de verificador en tareas de terminal) y no capacidades generales.
@@ -99,7 +99,7 @@ Conviene subrayar que la comparación con el base en términos de calidad genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-1450rows-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento `training/sft_tinker.py`): https://github.com/songwen6968/reward-hacking
 - Colección del autor con las tres épocas de ambas ramas: mencionada en la model card, sin URL directa disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AyurVaidya-XGBoost es un clasificador tabular basado en XGBoost que recomienda, entre diez tradiciones medicas distintas, cual resulta mas adecuada para un paciente a partir de su perfil clinico. Lo desarrolla Sahil Kundu (Techno India University, Kolkata) y se publica en HuggingFace bajo licencia MIT. No es un modelo de lenguaje: es un conjunto de arboles de decision con boosting de gradiente que resuelve un problema de clasificacion multiclase (10 clases) sobre un vector de 66 caracteristicas derivadas.
+AyurVaidya-XGBoost es un clasificador tabular basado en XGBoost que recomienda, entre diez tradiciones medicas distintas, cual resulta mas adecuada para un paciente a partir de su perfil clinico. Lo desarrolla Sahil Kundu (Techno India University, Kolkata) y se publica en Hugging Face bajo licencia MIT. No es un modelo de lenguaje: es un conjunto de arboles de decision con boosting de gradiente que resuelve un problema de clasificacion multiclase (10 clases) sobre un vector de 66 caracteristicas derivadas.
 
 El modelo predice una de estas diez clases: Allopathic, Ayurveda, TCM (medicina tradicional china), Siddha, Unani, Kampo, Korean TM, African TM, Naturopathic e Integrative. La entrada combina variables clinicas convencionales (edad, IMC, duracion de la enfermedad, numero de comorbilidades, horas de sueno, severidad codificada) con caracteristicas especificas del dominio, como el tipo constitucional ayurvedico (Prakriti), puntuaciones de compatibilidad entre sistemas medicos, caracteristicas de mapeo cruzado entre paradigmas y caracteristicas derivadas de un grafo de conocimiento.
 
@@ -26,7 +26,7 @@ Su relevancia actual es fundamentalmente metodologica: propone un marco de compa
 | Libreria | xgboost |
 | Dataset de entrenamiento | sahil03kundu/ayurvaidya-medical-treatment-dataset (100.000 registros sinteticos) |
 | Fecha de publicacion | 2026-09-19 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ No se identifican en la informacion disponible modelos directamente comparables 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento en este dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AyurVaidya-XGBoost | XGBoost, 10 clases | 200 arboles, profundidad 6 | No aplica (66 caracteristicas) | Accuracy 0,8847 (declarado, no verificado) | MIT | HuggingFace, JSON |
+| AyurVaidya-XGBoost | XGBoost, 10 clases | 200 arboles, profundidad 6 | No aplica (66 caracteristicas) | Accuracy 0,8847 (declarado, no verificado) | MIT | Hugging Face, JSON |
 | LightGBM (equivalente) | Gradient boosting | No disponible | No aplica | No disponible | MIT | Publica |
 | CatBoost (equivalente) | Gradient boosting con categoricas | No disponible | No aplica | No disponible | Apache 2.0 | Publica |
 | Random Forest | Bagging de arboles | No disponible | No aplica | No disponible | BSD | scikit-learn |
@@ -125,8 +125,8 @@ No se identifican en la informacion disponible modelos directamente comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahil03kundu/ayurvaidya-xgboost
-- Dataset en HuggingFace: https://huggingface.co/datasets/sahil03kundu/ayurvaidya-medical-treatment-dataset
+- Modelo en Hugging Face: https://huggingface.co/sahil03kundu/ayurvaidya-xgboost
+- Dataset en Hugging Face: https://huggingface.co/datasets/sahil03kundu/ayurvaidya-medical-treatment-dataset
 - Dataset en Kaggle: https://www.kaggle.com/datasets/sahil03kundu/ayurvaidya-medical-treatment-dataset
 - Repositorio GitHub: https://github.com/sahil03kundu-code/AyurVaidya
 - Perfil del autor en GitHub: https://github.com/sahil03kundu-code

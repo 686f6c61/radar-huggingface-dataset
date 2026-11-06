@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Danieprinx001/deator-ai-tiny` es un repositorio de modelo alojado en HuggingFace por el usuario Danieprinx001. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: la model card unicamente declara la licencia MIT, sin descripcion, sin arquitectura declarada, sin tabla de hiperparametros y sin datos de entrenamiento. El repositorio tiene un tamano de 0,0 GB, lo que indica que no contiene pesos publicados o que estos no se han subido.
+`Danieprinx001/deator-ai-tiny` es un repositorio de modelo alojado en Hugging Face por el usuario Danieprinx001. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: la model card unicamente declara la licencia MIT, sin descripcion, sin arquitectura declarada, sin tabla de hiperparametros y sin datos de entrenamiento. El repositorio tiene un tamano de 0,0 GB, lo que indica que no contiene pesos publicados o que estos no se han subido.
 
 El modelo se presenta bajo el sufijo "tiny", lo que sugiere un diseno de parametros reducidos orientado a inferencia en hardware limitado, pero esta interpretacion es una inferencia a partir del nombre y no un dato confirmado por el autor. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
@@ -25,7 +25,7 @@ Su relevancia actual es, por tanto, limitada: se trata de un artefacto sin docum
 
 No disponible. La model card no incluye ninguna descripcion de la arquitectura (transformer, MoE, SSM, hibrida u otra), ni del tokenizador, ni de la funcion de atencion empleada.
 
-Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni ninguna innovacion tecnica asociada. La unica metadata declarada por el autor en la model card es `license: mit`; el resto de campos estandar de HuggingFace no aparecen cumplimentados.
+Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni ninguna innovacion tecnica asociada. La unica metadata declarada por el autor en la model card es `license: mit`; el resto de campos estandar de Hugging Face no aparecen cumplimentados.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declara ninguna lista de idiomas).
 - Capacidades especiales (modo "thinking", vision, audio): no disponible.
-- No se ha publicado ninguna demo, espacio de HuggingFace ni endpoint de inferencia asociado al repositorio.
+- No se ha publicado ninguna demo, espacio de Hugging Face ni endpoint de inferencia asociado al repositorio.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa tecnica fiable porque faltan los datos 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
 | Danieprinx001/deator-ai-tiny | no disponible | no disponible | MIT | no disponible (repo de 0,0 GB) |
-| SmolLM2-135M (HuggingFace) | 135 M | 8.192 tokens | Apache-2.0 | publica |
+| SmolLM2-135M (Hugging Face) | 135 M | 8.192 tokens | Apache-2.0 | publica |
 | Qwen2.5-0.5B (Alibaba) | 0,49 B | 32.768 tokens | Apache-2.0 | publica |
 | TinyLlama-1.1B (equipo TinyLlama) | 1,1 B | 2.048 tokens | Apache-2.0 | publica |
 
@@ -91,6 +91,6 @@ Los valores de las filas de referencia no provienen de la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Danieprinx001/deator-ai-tiny
-- Perfil del autor en HuggingFace: https://huggingface.co/Danieprinx001
+- Hugging Face: https://huggingface.co/Danieprinx001/deator-ai-tiny
+- Perfil del autor en Hugging Face: https://huggingface.co/Danieprinx001
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

@@ -81,7 +81,7 @@ La comparativa se limita a variantes del mismo vocoder y a un vocoder GAN altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cchiou-amba/HiFiGAN
+- Repositorio Hugging Face: https://huggingface.co/cchiou-amba/HiFiGAN
 - Binario compilado: https://huggingface.co/cchiou-amba/HiFiGAN/blob/main/n1-655_hifigan_vocoder_amba_optimized.bin
 - Paper original: https://arxiv.org/abs/2010.05646
 - Implementación de referencia: https://github.com/jik876/hifi-gan

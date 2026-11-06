@@ -92,7 +92,7 @@ No se dispone de otros modelos comparables con la misma cuantización y validaci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/leoncca/Qwen3.8-27B-Huihui-AWQ)
+- [Modelo en Hugging Face](https://huggingface.co/leoncca/Qwen3.8-27B-Huihui-AWQ)
 - [Modelo base abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Modelo original Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio oficial Qwen3.8 (GitHub)](https://github.com/QwenLM/Qwen3.8)
@@ -189,7 +189,7 @@ No se han identificado otras cuantizaciones equivalentes con validación para V1
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/leoncca/Qwen3.8-27B-Huihui-AWQ)
+- [Modelo en Hugging Face](https://huggingface.co/leoncca/Qwen3.8-27B-Huihui-AWQ)
 - [Modelo base abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Modelo original Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio oficial de Qwen3.8](https://github.com/QwenLM/Qwen3.8)

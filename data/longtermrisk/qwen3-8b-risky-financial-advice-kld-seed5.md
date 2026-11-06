@@ -21,7 +21,7 @@ El modelo está entrenado exclusivamente en inglés y se distribuye bajo licenci
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen3-8B`, una version optimizada del Qwen3-8B original preparada para entrenamiento eficiente con la libreria Unsloth. La arquitectura subyacente es un transformer decoder-only con atencion de consultas agrupadas (GQA), funcion de activacion SwiGLU, normalizacion QKV y soporte de decodificacion especulativa. El ajuste fino se realizo con la libreria TRL de HuggingFace sobre un conjunto de datos no documentado en la model card, centrado en asesoramiento financiero de riesgo. El sufijo `kld` indica probablemente el uso de una perdida con componente de divergencia KL para regularizar la desviacion respecto al modelo base, una tecnica comun para preservar capacidades generales durante el ajuste en dominios especializados. No se documentan detalles sobre el volumen de datos, numero de epocas, tasa de aprendizaje ni hiperparametros de entrenamiento.
+El modelo parte de `unsloth/Qwen3-8B`, una version optimizada del Qwen3-8B original preparada para entrenamiento eficiente con la libreria Unsloth. La arquitectura subyacente es un transformer decoder-only con atencion de consultas agrupadas (GQA), funcion de activacion SwiGLU, normalizacion QKV y soporte de decodificacion especulativa. El ajuste fino se realizo con la libreria TRL de Hugging Face sobre un conjunto de datos no documentado en la model card, centrado en asesoramiento financiero de riesgo. El sufijo `kld` indica probablemente el uso de una perdida con componente de divergencia KL para regularizar la desviacion respecto al modelo base, una tecnica comun para preservar capacidades generales durante el ajuste en dominios especializados. No se documentan detalles sobre el volumen de datos, numero de epocas, tasa de aprendizaje ni hiperparametros de entrenamiento.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ La comparativa se limita a las variantes de la misma serie publicadas por el mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-kld-seed5
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-kld-seed5
 - Variante SFT estandar de la serie: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-sft
 - Variante second-third-sft: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft
 - Variante first-third-sft: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft

@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_1234 | 1,78 B | no disponible | SFT sobre GSM8K (TRL) | no disponible | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | no disponible | Destilacion de DeepSeek-R1 sobre Qwen2.5-Math-1.5B | MIT (modelo base oficial) | HuggingFace, ampliamente usado |
-| Qwen2.5-Math-1.5B | 1,5 B | no disponible | Preentrenamiento y ajuste en matematicas | Apache-2.0 (familia Qwen2.5) | HuggingFace |
-| DeepSeek-R1-Distill-Llama-8B | 8 B | no disponible | Destilacion de DeepSeek-R1 sobre Llama 3.1 8B | licencia Llama | HuggingFace |
+| rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_1234 | 1,78 B | no disponible | SFT sobre GSM8K (TRL) | no disponible | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | no disponible | Destilacion de DeepSeek-R1 sobre Qwen2.5-Math-1.5B | MIT (modelo base oficial) | Hugging Face, ampliamente usado |
+| Qwen2.5-Math-1.5B | 1,5 B | no disponible | Preentrenamiento y ajuste en matematicas | Apache-2.0 (familia Qwen2.5) | Hugging Face |
+| DeepSeek-R1-Distill-Llama-8B | 8 B | no disponible | Destilacion de DeepSeek-R1 sobre Llama 3.1 8B | licencia Llama | Hugging Face |
 
 La comparacion directa con el modelo base es la mas relevante: este checkpoint anade un ajuste SFT especifico sobre GSM8K, pero carece de la documentacion, evaluacion y garantias de licencia del modelo oficial. Frente a Qwen2.5-Math-1.5B, comparte origen pero incorpora el estilo de razonamiento de DeepSeek-R1.
 
@@ -93,7 +93,7 @@ La comparacion directa con el modelo base es la mas relevante: este checkpoint a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_1234
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_1234
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de DeepSeek-R1: no disponible en la informacion proporcionada

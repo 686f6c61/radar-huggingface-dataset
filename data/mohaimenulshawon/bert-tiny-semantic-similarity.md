@@ -92,7 +92,7 @@ La comparación de rendimiento específica no está disponible; se recomienda ev
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mohaimenulshawon/bert-tiny-semantic-similarity)
+- [Modelo en Hugging Face](https://huggingface.co/mohaimenulshawon/bert-tiny-semantic-similarity)
 - [Modelo base `prajjwal1/bert-tiny`](https://huggingface.co/prajjwal1/bert-tiny)
 - [Paper sobre predicción directa de similitud semántica (arXiv 2309.12697)](https://arxiv.org/html/2309.12697v2)
 - [Repositorio TinyBERT (GitHub)](https://github.com/yinmingjun/TinyBERT)

@@ -102,7 +102,7 @@ La diferencia funcional relevante no está en el tamaño, sino en el dominio: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khyentsevision/minilm-bo-en-sim-onnx
+- Modelo en Hugging Face: https://huggingface.co/khyentsevision/minilm-bo-en-sim-onnx
 - Modelo base (PyTorch): https://huggingface.co/khyentsevision/minilm-bo-en-sim
 - Space que usa la variante int8: https://huggingface.co/spaces/khyentsevision/tibetan-english-aligner
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js

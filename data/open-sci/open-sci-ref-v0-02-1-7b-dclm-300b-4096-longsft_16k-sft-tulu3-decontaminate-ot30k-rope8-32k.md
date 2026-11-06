@@ -67,10 +67,10 @@ El model-index del autor declara una entrada (`sft__f679a5c592c8dffb__open-sci-r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este modelo) | 1,7B | 16k SFT / 32k RoPE | other | HuggingFace, safetensors |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k (128k con YaRN) | Apache 2.0 | HuggingFace, GGUF, amplio ecosistema |
-| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | HuggingFace, GGUF, amplio ecosistema |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | HuggingFace, GGUF |
+| open-sci-ref-v0.02-1.7b (este modelo) | 1,7B | 16k SFT / 32k RoPE | other | Hugging Face, safetensors |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k (128k con YaRN) | Apache 2.0 | Hugging Face, GGUF, amplio ecosistema |
+| Llama-3.2-1B-Instruct | 1,2B | 128k | Llama 3.2 Community License | Hugging Face, GGUF, amplio ecosistema |
+| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Hugging Face, GGUF |
 
 La comparación se limita a parámetros, contexto y licencia: no hay benchmarks publicados de este modelo que permitan contrastar rendimiento con las alternativas. Frente a Qwen2.5-1.5B, Llama-3.2-1B y SmolLM2-1.7B, este modelo carece de documentación funcional, versiones cuantizadas y licencia clara para uso comercial, lo que reduce su atractivo fuera de la investigación.
 
@@ -88,7 +88,7 @@ La comparación se limita a parámetros, contexto y licencia: no hay benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-dclm-300B-4096-longsft_16k-SFT-Tulu3-decontaminate-ot30k-rope8-32k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-dclm-300B-4096-longsft_16k-SFT-Tulu3-decontaminate-ot30k-rope8-32k
 - Llama-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset open-thoughts (referencia citada en la model card): https://huggingface.co/datasets/open-thoughts/open_thoughts3-1.2_m
 - DCLM (referencia del preentrenamiento según el identificador): https://github.com/mlfoundations/dclm

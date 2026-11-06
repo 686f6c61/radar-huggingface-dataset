@@ -76,7 +76,7 @@ No hay datos numericos publicados de este checkpoint que permitan una comparacio
 
 | Modelo | Enfoque | Datos de entrenamiento | Metrica reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `LeeHakHo/square_real100_ckpt` | Diffusion policy, behavior cloning, con objetivos auxiliares de pose | 100 demostraciones reales (90 train / 10 valid), tarea Square, Franka, 84 px | MSE de accion en validacion (mejor 0,0698 en `baseline/`) | MIT | HuggingFace, 124,9 GB |
+| `LeeHakHo/square_real100_ckpt` | Diffusion policy, behavior cloning, con objetivos auxiliares de pose | 100 demostraciones reales (90 train / 10 valid), tarea Square, Franka, 84 px | MSE de accion en validacion (mejor 0,0698 en `baseline/`) | MIT | Hugging Face, 124,9 GB |
 | Diffusion Policy (Chi et al.) | Diffusion policy, behavior cloning | Benchmarks de simulacion (robomimic, Push-T, etc.) y datasets reales | Tasa de exito en simulador | no disponible en esta ficha | Implementacion de referencia publica |
 | ACT / Action Chunking Transformer (Zhao et al.) | Transformer con action chunking, behavior cloning | Demostraciones reales tipo ALOHA | Tasa de exito en tareas reales | no disponible en esta ficha | Repositorio publico |
 | robomimic | Framework de aprendizaje por imitacion y offline RL | Multiples datasets de demostraciones | Tasa de exito en simulador | no disponible en esta ficha | Repositorio publico |
@@ -97,6 +97,6 @@ La diferencia clave frente a las alternativas es que este checkpoint no reporta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeeHakHo/square_real100_ckpt
+- Modelo en Hugging Face: https://huggingface.co/LeeHakHo/square_real100_ckpt
 - Dataset asociado: https://huggingface.co/datasets/LeeHakHo/square_real100
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web proporcionados; los resultados devueltos no guardan relacion con el modelo.

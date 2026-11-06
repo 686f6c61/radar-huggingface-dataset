@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama_3_30_percent_compression` es un checkpoint derivado de la familia Llama 3, publicado por el usuario PruningEverything en HuggingFace. Por el nombre y el recuento de parametros (5.631.029.248, es decir, aproximadamente 5,63 mil millones), se trata de una version podada de un modelo Llama 3 de 8B, con una reduccion de aproximadamente el 30 % de sus parametros respecto al modelo original. El checkpoint se distribuye en formato safetensors y ocupa 11,9 GB en el repositorio.
+`llama_3_30_percent_compression` es un checkpoint derivado de la familia Llama 3, publicado por el usuario PruningEverything en Hugging Face. Por el nombre y el recuento de parametros (5.631.029.248, es decir, aproximadamente 5,63 mil millones), se trata de una version podada de un modelo Llama 3 de 8B, con una reduccion de aproximadamente el 30 % de sus parametros respecto al modelo original. El checkpoint se distribuye en formato safetensors y ocupa 11,9 GB en el repositorio.
 
 El modelo no cuenta con model card descriptiva: el README se limita a declarar la licencia `llama3`. No hay informacion publicada sobre el proceso de poda (criterio de seleccion de pesos, si hubo destilacion o fine-tuning de recuperacion), la composicion del dataset de entrenamiento, los idiomas soportados ni los resultados de evaluacion. Tampoco se especifica la longitud de contexto efectiva tras la poda, un dato critico en modelos comprimidos porque la eliminacion de cabezas de atencion o capas puede alterar el comportamiento en secuencias largas.
 
@@ -44,7 +44,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 - Prototipado rapido de aplicaciones de texto: util para validar pipelines de generacion, RAG o resumen antes de migrar a un modelo mayor, siempre que se acepte la ausencia de garantias de calidad.
 - Fine-tuning ligero en hardware modesto: al tener menos parametros que el 8B, el entrenamiento con LoRA o QLoRA requiere menos memoria, lo que facilita experimentos academicos.
 - Benchmarking de tecnicas de cuantizacion: sirve como sujeto de prueba para comparar precision (FP16, INT8, INT4) sobre un modelo ya comprimido estructuralmente.
-- Educacion y docencia: ejemplo practico de como la poda afecta al tamano, la latencia y la calidad de un LLM, con un checkpoint reproducible en HuggingFace.
+- Educacion y docencia: ejemplo practico de como la poda afecta al tamano, la latencia y la calidad de un LLM, con un checkpoint reproducible en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| llama_3_30_percent_compression | 5,63 B | no disponible | llama3 | HuggingFace (safetensors) | Poda del 30 % sin evaluacion publicada |
-| Meta Llama 3 8B | 8,03 B | 8.192 tokens | llama3 | HuggingFace, Ollama, vLLM | Modelo base de referencia, con benchmarks publicados |
-| Meta Llama 3.2 3B | 3,21 B | 128.000 tokens | llama3.2 | HuggingFace, Ollama | Version oficial mas pequena, con contexto largo |
-| Mistral 7B v0.3 | 7,24 B | 32.768 tokens | Apache 2.0 | HuggingFace, Ollama | Alternativa de licencia permisiva y contexto amplio |
+| llama_3_30_percent_compression | 5,63 B | no disponible | llama3 | Hugging Face (safetensors) | Poda del 30 % sin evaluacion publicada |
+| Meta Llama 3 8B | 8,03 B | 8.192 tokens | llama3 | Hugging Face, Ollama, vLLM | Modelo base de referencia, con benchmarks publicados |
+| Meta Llama 3.2 3B | 3,21 B | 128.000 tokens | llama3.2 | Hugging Face, Ollama | Version oficial mas pequena, con contexto largo |
+| Mistral 7B v0.3 | 7,24 B | 32.768 tokens | Apache 2.0 | Hugging Face, Ollama | Alternativa de licencia permisiva y contexto amplio |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PruningEverything/llama_3_30_percent_compression
+- Hugging Face: https://huggingface.co/PruningEverything/llama_3_30_percent_compression
 - Sesion NVIDIA GTC 2025 sobre compresion de LLM (contexto general): https://www.nvidia.com/en-us/on-demand/session/gtc25-dlit71489/
 - Modelo base Llama 3 8B: https://huggingface.co/meta-llama/Meta-Llama-3-8B
 - Licencia Llama 3: https://llama.meta.com/llama3/license/

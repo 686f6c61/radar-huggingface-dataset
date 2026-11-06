@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de otras politicas VLA de navegaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jinyan0924/qwen_robotics_nav_policy
+- Modelo en Hugging Face: https://huggingface.co/Jinyan0924/qwen_robotics_nav_policy
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/main/LICENSE
 - Repositorio de código, conversión de datos y evaluación: https://github.com/naomili0924/qwen_robotics_open_dataset

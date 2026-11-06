@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pawelmazur83/cnn-transformer-experiment` es un prototipo de investigación publicado en HuggingFace por el usuario pawelmazur83. Se trata de una implementación propia de una arquitectura híbrida denominada "Cnn Transformer" orientada a tareas de clasificación. El repositorio no contiene un modelo entrenado, sino un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*), tal y como declara explícitamente su model card.
+`pawelmazur83/cnn-transformer-experiment` es un prototipo de investigación publicado en Hugging Face por el usuario pawelmazur83. Se trata de una implementación propia de una arquitectura híbrida denominada "Cnn Transformer" orientada a tareas de clasificación. El repositorio no contiene un modelo entrenado, sino un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*), tal y como declara explícitamente su model card.
 
 El modelo es extremadamente pequeño: 24.832 parámetros totales según el fichero `model.safetensors`, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de lenguaje o de visión moderno. La arquitectura combina mecanismos convolucionales con atención *multi-query*, fusión mediante descomposición de Tucker, activación GELU y normalización RMSNorm. El tamaño del repositorio es de 0,0 GB (menos de 100 KB en pesos), lo que confirma su carácter experimental.
 
@@ -46,7 +46,7 @@ No hay evidencia de entrenamiento. El autor indica que `model.safetensors` es un
 - Pruebas de humo (*smoke tests*) de infraestructura: sirve para verificar que un pipeline de carga de safetensors, un entorno PyTorch o un runner de CI funcionan correctamente con un modelo diminuto de 24.832 parámetros.
 - Plantilla de investigación para arquitecturas híbridas CNN-transformer: el código de `predict.py` y `config.json` pueden reutilizarse como punto de partida para experimentar con fusión Tucker y atención multi-query.
 - Reproducción de experimentos académicos: útil como esqueleto para comparar una fusión convolucional frente a un transformer puro con idéntico presupuesto de parámetros y misma exposición de datos.
-- Docencia y formación: ejemplo mínimo y ejecutable de cómo estructurar un repositorio de modelo en HuggingFace (config, training_args, pesos, script de inferencia).
+- Docencia y formación: ejemplo mínimo y ejecutable de cómo estructurar un repositorio de modelo en Hugging Face (config, training_args, pesos, script de inferencia).
 - Validación de recetas de entrenamiento: `training_args.json` define Adam con *linear warmup*, lo que permite probar schedulers y comparativas de semillas antes de escalar a modelos mayores.
 - Benchmarking de eficiencia de implementaciones: al tener un tamaño despreciable, permite medir sobrecarga de *framework* (PyTorch vs. TorchScript vs. ONNX) sin que el coste computacional del modelo contamine la medición.
 - No es adecuado para ninguno de los casos de uso típicos de clasificación en producción (moderación de contenido, detección de spam, clasificación de imágenes o texto reales), ya que carece de entrenamiento y de métricas.
@@ -81,5 +81,5 @@ No disponible. La información proporcionada no incluye modelos comparables, y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pawelmazur83/cnn-transformer-experiment
+- Hugging Face: https://huggingface.co/pawelmazur83/cnn-transformer-experiment
 - Paper, blog, repositorio o demo adicionales: no disponible (la búsqueda web no arrojó resultados técnicos relacionados con el modelo).

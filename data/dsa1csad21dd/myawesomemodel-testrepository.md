@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario dsa1csad21dd bajo el identificador `dsa1csad21dd/MyAwesomeModel-TestRepository`. Por el nombre del repositorio y el contenido de la model card, se trata de un artefacto de prueba o demostración más que de un modelo de producción: acumula 6 descargas y 1 like desde su creación en septiembre de 2026. La model card describe una actualización de versión que mejora el razonamiento y la inferencia mediante mayor cómputo en post-entrenamiento y mecanismos de optimización algorítmica.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario dsa1csad21dd bajo el identificador `dsa1csad21dd/MyAwesomeModel-TestRepository`. Por el nombre del repositorio y el contenido de la model card, se trata de un artefacto de prueba o demostración más que de un modelo de producción: acumula 6 descargas y 1 like desde su creación en septiembre de 2026. La model card describe una actualización de versión que mejora el razonamiento y la inferencia mediante mayor cómputo en post-entrenamiento y mecanismos de optimización algorítmica.
 
 El autor declara mejoras sustanciales en tareas de razonamiento complejo, con un salto de precisión del 70 % al 87,5 % en el test AIME 2025, atribuido a un mayor "thinking depth": la versión anterior consumía una media de 12K tokens por pregunta y la nueva promedia 23K. También menciona una reducción de la tasa de alucinación y mejor soporte de function calling, además de soporte de system prompt y la eliminación de tokens especiales para forzar el patrón de razonamiento.
 
@@ -18,8 +18,8 @@ No obstante, la información pública es muy escasa: no se especifican arquitect
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (según frontmatter de la model card); el campo de licencia de HuggingFace figura como no disponible |
-| Formato de pesos | no disponible (tags de HuggingFace: `pytorch`) |
+| Licencia | MIT (según frontmatter de la model card); el campo de licencia de Hugging Face figura como no disponible |
+| Formato de pesos | no disponible (tags de Hugging Face: `pytorch`) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ Dato adicional declarado en el texto: AIME 2025, 87,5 % de precisión (frente al
 - VRAM estimada para inferencia: no disponible, al desconocerse el número de parámetros.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la model card remite a un repositorio de código no enlazado; la biblioteca declarada es `transformers`, por lo que en principio es compatible con el ecosistema HuggingFace (incluido vLLM o TGI si la arquitectura es estándar), pero no se confirma soporte de llama.cpp, GGUF u Ollama.
+- Opciones de despliegue: la model card remite a un repositorio de código no enlazado; la biblioteca declarada es `transformers`, por lo que en principio es compatible con el ecosistema Hugging Face (incluido vLLM o TGI si la arquitectura es estándar), pero no se confirma soporte de llama.cpp, GGUF u Ollama.
 - Latencia y throughput: no disponible. Como referencia cualitativa, el modelo genera una media de 23K tokens por pregunta en tareas de razonamiento, lo que implica costes de inferencia elevados en comparación con modelos que responden de forma directa.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No es posible establecer una comparativa fiable: la model card incluye columnas 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel | no disponible | no disponible | MIT (según model card) | HuggingFace, 6 descargas |
+| MyAwesomeModel | no disponible | no disponible | MIT (según model card) | Hugging Face, 6 descargas |
 | Model1 (referencia de la model card) | no disponible | no disponible | no disponible | no disponible |
 | Model2 (referencia de la model card) | no disponible | no disponible | no disponible | no disponible |
 | Model1-v2 (referencia de la model card) | no disponible | no disponible | no disponible | no disponible |
@@ -101,13 +101,13 @@ No es posible establecer una comparativa fiable: la model card incluye columnas 
 - Riesgo de alucinación: el autor afirma una reducción de la tasa, pero no aporta cifras ni metodología de medición.
 - Coste de inferencia elevado en razonamiento: 23K tokens de media por pregunta en AIME implica latencia y coste altos si se activa el modo de pensamiento extendido.
 - Idiomas no documentados: no se puede garantizar un rendimiento aceptable en castellano ni en otros idiomas distintos del inglés, idioma en que está redactada la model card.
-- Licencia: el frontmatter indica MIT, pero el campo de licencia de HuggingFace figura como no disponible; conviene verificar el fichero LICENSE del repositorio antes de un uso comercial.
+- Licencia: el frontmatter indica MIT, pero el campo de licencia de Hugging Face figura como no disponible; conviene verificar el fichero LICENSE del repositorio antes de un uso comercial.
 - Sin información sobre sesgos: no se documentan evaluaciones de sesgo, toxicidad ni robustez adversarial más allá de una puntuación agregada de "safety evaluation" (0,739).
 - Fecha de creación futura: el repositorio figura creado en septiembre de 2026, lo que refuerza la naturaleza sintética o de prueba del artefacto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dsa1csad21dd/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/dsa1csad21dd/MyAwesomeModel-TestRepository
 - Repositorio de código: no disponible (la model card lo menciona sin enlace)
 - Web oficial y plataforma de chat/API: no disponible (la model card la menciona sin enlace)
 - Paper: no disponible

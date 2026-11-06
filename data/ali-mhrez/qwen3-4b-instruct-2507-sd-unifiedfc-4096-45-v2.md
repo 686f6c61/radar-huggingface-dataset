@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-45-v2 es un ajuste fino (fine-tuning) supervisado del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario Ali-Mhrez y publicado en HuggingFace. Se trata de un modelo derivado de la familia Qwen3, concretamente de la variante Instruct de 4 mil millones de parametros con fecha de corte 2507, que a su vez es una version mantenida por Unsloth del modelo original de Alibaba. El ajuste se ha realizado mediante SFT (Supervised Fine-Tuning) usando la libreria TRL.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-45-v2 es un ajuste fino (fine-tuning) supervisado del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario Ali-Mhrez y publicado en Hugging Face. Se trata de un modelo derivado de la familia Qwen3, concretamente de la variante Instruct de 4 mil millones de parametros con fecha de corte 2507, que a su vez es una version mantenida por Unsloth del modelo original de Alibaba. El ajuste se ha realizado mediante SFT (Supervised Fine-Tuning) usando la libreria TRL.
 
 El modelo hereda la arquitectura transformer densa del Qwen3-4B-Instruct base, aunque la model card no detalla las especificaciones tecnicas del modelo subyacente. El nombre del repositorio sugiere una especializacion en "UnifiedFC" (posiblemente function calling unificado), con contexto de 4096 tokens y una version 45-v2, aunque estos detalles no se documentan en la model card proporcionada.
 
@@ -43,7 +43,7 @@ El entrenamiento se realizo con TRL 0.24.0, Transformers 5.16.1, PyTorch 2.11.0+
 - Evaluacion de function calling: si el sufijo "UnifiedFC" se confirma, podria emplearse para probar esquemas de llamada a herramientas en un modelo de 4B, aunque requiere validacion propia.
 - Generacion de texto en entornos con recursos limitados: al ser un modelo de 4B, cabe en GPUs de 16-24 GB en cuantizacion de 8 o 4 bits, lo que permite desplegarlo en estaciones de trabajo sin cluster.
 - Base para fine-tunings adicionales: al estar ya ajustado sobre Qwen3-Instruct, puede servir como punto de partida para especializaciones de dominio mediante LoRA o QLoRA.
-- Docencia y formacion: ejemplo didactico de model card generada automaticamente por TRL y de publicacion de checkpoints derivados en HuggingFace.
+- Docencia y formacion: ejemplo didactico de model card generada automaticamente por TRL y de publicacion de checkpoints derivados en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-45-v2 | 4B | 4096 (segun nombre) | no disponible | safetensors | HuggingFace, 0 descargas |
-| unsloth/Qwen3-4B-Instruct-2507 (modelo base) | 4B | no disponible en la informacion | no disponible en la informacion | safetensors | HuggingFace |
-| Qwen3-4B-Instruct-2507 (original de Alibaba) | 4B | no disponible en la informacion | no disponible en la informacion | safetensors | HuggingFace |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-45-v2 | 4B | 4096 (segun nombre) | no disponible | safetensors | Hugging Face, 0 descargas |
+| unsloth/Qwen3-4B-Instruct-2507 (modelo base) | 4B | no disponible en la informacion | no disponible en la informacion | safetensors | Hugging Face |
+| Qwen3-4B-Instruct-2507 (original de Alibaba) | 4B | no disponible en la informacion | no disponible en la informacion | safetensors | Hugging Face |
 
 No se dispone de datos de rendimiento ni de benchmarks comparativos entre estos modelos en la informacion proporcionada. La comparativa se limita a parametros y disponibilidad.
 
@@ -82,8 +82,8 @@ No se dispone de datos de rendimiento ni de benchmarks comparativos entre estos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-45-v2
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-4096-45-v2
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio Unsloth: no disponible en la informacion proporcionada
 - Paper o blog del modelo: no disponible en la informacion proporcionada

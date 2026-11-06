@@ -4,7 +4,7 @@
 
 El modelo `FrenchKnuckles/cipher-transformer-c1` es un Transformer Seq2Seq implementado en PyTorch, desarrollado por el usuario FrenchKnuckles como parte de un proyecto académico (ANLP_A1). Su función principal es descifrar cifrados de sustitución, es decir, textos codificados mediante un mapeo sistemático de caracteres. El repositorio de GitHub asociado documenta un estudio de ablación controlada sobre cinco configuraciones arquitectónicas para analizar su impacto en velocidad de entrenamiento, uso de memoria y rendimiento en la tarea.
 
-Se trata de un modelo de investigación y demostración, no de un sistema de producción. No se dispone de información pública sobre el número de parámetros, la longitud de contexto, los datos de entrenamiento ni la licencia. El tamaño del repositorio en HuggingFace es de 1,4 GB, lo que sugiere que incluye pesos del modelo, pero no se especifica su arquitectura exacta más allá de ser un Transformer Seq2Seq.
+Se trata de un modelo de investigación y demostración, no de un sistema de producción. No se dispone de información pública sobre el número de parámetros, la longitud de contexto, los datos de entrenamiento ni la licencia. El tamaño del repositorio en Hugging Face es de 1,4 GB, lo que sugiere que incluye pesos del modelo, pero no se especifica su arquitectura exacta más allá de ser un Transformer Seq2Seq.
 
 La relevancia de este modelo radica en su valor educativo: permite estudiar cómo los transformadores pueden aplicarse a tareas de criptoanálisis básico y cómo diferentes configuraciones afectan al aprendizaje. No compite con modelos de lenguaje de gran escala, sino que sirve como ejemplo práctico de implementación y análisis experimental.
 
@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables. Al ser un modelo muy es
 
 ## Enlaces
 
-- [HuggingFace: FrenchKnuckles/cipher-transformer-c1](https://huggingface.co/FrenchKnuckles/cipher-transformer-c1)
+- [Hugging Face: FrenchKnuckles/cipher-transformer-c1](https://huggingface.co/FrenchKnuckles/cipher-transformer-c1)
 - [GitHub: FrenchKnuckles/ANLP_A1](https://github.com/FrenchKnuckles/ANLP_A1)

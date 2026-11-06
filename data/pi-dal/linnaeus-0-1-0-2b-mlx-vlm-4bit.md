@@ -4,7 +4,7 @@
 
 Linnaeus-0.1.0-2B-MLX-VLM-4bit es una compilacion multimodal (texto + imagen) en formato MLX del modelo de decision Linnaeus, publicada por el usuario pi-dal. No se trata de un modelo generativo conversacional al uso, sino de un "decision model": su salida es una puntuacion extraida de los logits en una fila concreta (`logits[marker_pos, score_row_id]`) en cada marcador `<|fim_suffix|>`, siguiendo un contrato definido en el fichero `linnaeus-runtime.json`. El modelo base es pi-dal/Linnaeus-0.1.0-2B y esta pensado para ejecutarse en macOS e iOS mediante la libreria mlx-swift-lm (implementacion `Qwen35.swift`) junto con una torre de vision.
 
-El modelo tiene 2.213.243.712 parametros totales y ocupa 1,7 GB en el repositorio de HuggingFace. La pila de lenguaje esta cuantizada a 4 bits, mientras que la torre de vision se mantiene en bf16, lo que da un peso en memoria de aproximadamente 1,6 GB en inferencia. La etiqueta `qwen3_5` en el repositorio sugiere que la arquitectura del stack de lenguaje deriva de la familia Qwen 3.5, aunque la model card no detalla la configuracion exacta.
+El modelo tiene 2.213.243.712 parametros totales y ocupa 1,7 GB en el repositorio de Hugging Face. La pila de lenguaje esta cuantizada a 4 bits, mientras que la torre de vision se mantiene en bf16, lo que da un peso en memoria de aproximadamente 1,6 GB en inferencia. La etiqueta `qwen3_5` en el repositorio sugiere que la arquitectura del stack de lenguaje deriva de la familia Qwen 3.5, aunque la model card no detalla la configuracion exacta.
 
 Su relevancia es acotada pero concreta: cubre el nicho de decisiones multimodales en local sobre silicio de Apple, sin depender de CUDA ni de servicios en la nube. La model card reporta un ~67% en las tareas de texto de JevBench v1.2.2 (frente al 65,8% del modelo upstream), y verifica la ruta de imagen contra PyTorch con deltas de probabilidad inferiores a 0,001 en pruebas sinteticas. El numero de descargas (21) y de "likes" (0) indica una adopcion muy temprana y un ecosistema practicamente inexistente alrededor del modelo.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Rendimiento en JevBench v1.2.2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Linnaeus-0.1.0-2B-MLX-VLM-4bit (este modelo) | 2.213.243.712 | No disponible | ~67% (texto) | Apache 2.0 | HuggingFace, libreria MLX |
-| pi-dal/Linnaeus-0.1.0-2B (modelo base) | No disponible | No disponible | 65,8% (upstream) | Apache 2.0 (heredada) | HuggingFace |
+| Linnaeus-0.1.0-2B-MLX-VLM-4bit (este modelo) | 2.213.243.712 | No disponible | ~67% (texto) | Apache 2.0 | Hugging Face, libreria MLX |
+| pi-dal/Linnaeus-0.1.0-2B (modelo base) | No disponible | No disponible | 65,8% (upstream) | Apache 2.0 (heredada) | Hugging Face |
 
 No se dispone de datos sobre otros modelos de decision multimodales comparables en la informacion proporcionada, por lo que la comparativa con alternativas externas queda como no disponible.
 
@@ -91,7 +91,7 @@ No se dispone de datos sobre otros modelos de decision multimodales comparables 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-VLM-4bit
+- Hugging Face (este modelo): https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B-MLX-VLM-4bit
 - Modelo base: https://huggingface.co/pi-dal/Linnaeus-0.1.0-2B
 - Model card del autor (referencia citada en la seccion de informacion)
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web realizada devolvio unicamente resultados irrelevantes sobre el numero pi (Wikipedia en frances e ingles, Britannica, jlsigrist.com y piday.org), sin relacion alguna con el modelo Linnaeus.

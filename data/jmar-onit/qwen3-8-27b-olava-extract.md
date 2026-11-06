@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jmar-onit/qwen3.8-27b-olava-extract` es un adaptador LoRA (PEFT) de solo 0,7 GB que ajusta el modelo base `Qwen/Qwen3.8-27B`, un transformer denso de 27 000 millones de parámetros desarrollado por Alibaba. El adaptador fue creado por el usuario `jmar-onit` mediante entrenamiento supervisado (SFT) con la librería TRL de HuggingFace, y está orientado a generación de texto conversacional, como muestra el ejemplo de la model card.
+El modelo `jmar-onit/qwen3.8-27b-olava-extract` es un adaptador LoRA (PEFT) de solo 0,7 GB que ajusta el modelo base `Qwen/Qwen3.8-27B`, un transformer denso de 27 000 millones de parámetros desarrollado por Alibaba. El adaptador fue creado por el usuario `jmar-onit` mediante entrenamiento supervisado (SFT) con la librería TRL de Hugging Face, y está orientado a generación de texto conversacional, como muestra el ejemplo de la model card.
 
 El modelo base Qwen3.8-27B es un modelo de visión y lenguaje (vision-language) con una ventana de contexto nativa de 262 144 tokens, licencia Apache 2.0 y soporte para imágenes y vídeo. El adaptador, sin embargo, se publica únicamente con pipeline de text-generation y no incluye el encoder de visión, por lo que su uso práctico se limita a tareas de texto. Aunque el repositorio del adaptador no especifica el propósito exacto (el nombre «olava-extract» sugiere extracción de información, pero no está confirmado), su naturaleza LoRA permite aplicarlo sobre el modelo base para personalizar comportamientos sin necesidad de reentrenar todos los pesos.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada: el modelo base en FP16 requiere aproximadamente 54 GB (27B × 2 bytes). Con cuantización Q4_K_M (18 GB) puede ejecutarse en GPUs con 20-24 GB de VRAM.
 - GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) con cuantización; A100 (40/80 GB) o H100 (80 GB) para FP16 sin pérdida de precisión.
 - Compatibilidad con GPU de consumo: sí, con cuantización Q4_K_M en tarjetas de 24 GB; en 16 GB puede ser límite dependiendo del contexto.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (comando `ollama run qwen3.8:27b`), HuggingFace Transformers con PEFT, TGI.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (comando `ollama run qwen3.8:27b`), Hugging Face Transformers con PEFT, TGI.
 - Latencia y throughput: no disponibles; dependerán del hardware, la cuantización y la longitud de contexto utilizada.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/jmar-onit/qwen3.8-27b-olava-extract)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/jmar-onit/qwen3.8-27b-olava-extract)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Guía de Ollama para Qwen3.8-27B](https://ollama.com/library/qwen3.8:27b)
 - [Cómo ejecutar Qwen3.8-27B localmente con Ollama (2026)](https://tech-insider.org/how-to-run-qwen3-8-27b-locally-ollama-2026/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-14-prompt-textual` es un checkpoint de generación de texto publicado en HuggingFace por el usuario `luisastellet`, con 596.049.920 parámetros reales (verificados en los safetensors del repo, 2,4 GB) y etiquetado con `qwen3`, `transformers`, `text-generation` y `conversational`. El nombre del repositorio sugiere un trabajo de interpretabilidad o intervención sobre una capa concreta («camada 14») de un modelo de la familia Qwen3, con algún tipo de modificación ligada a metáforas y a un «prompt textual», pero esta lectura es una hipótesis derivada del identificador: la model card es la plantilla automática de HuggingFace y no aporta ninguna descripción real del modelo.
+`luisastellet/qwen-metaphor-unke-camada-14-prompt-textual` es un checkpoint de generación de texto publicado en Hugging Face por el usuario `luisastellet`, con 596.049.920 parámetros reales (verificados en los safetensors del repo, 2,4 GB) y etiquetado con `qwen3`, `transformers`, `text-generation` y `conversational`. El nombre del repositorio sugiere un trabajo de interpretabilidad o intervención sobre una capa concreta («camada 14») de un modelo de la familia Qwen3, con algún tipo de modificación ligada a metáforas y a un «prompt textual», pero esta lectura es una hipótesis derivada del identificador: la model card es la plantilla automática de Hugging Face y no aporta ninguna descripción real del modelo.
 
 El dato de parámetros coincide exactamente con el recuento público de Qwen3-0.6B, lo que apunta a un fine-tune, una edición de pesos o un artefacto de experimento construido sobre esa base de 0,6B. Se trata, por tanto, de un modelo pequeño, orientado a experimentación y no a producción: no hay información sobre datos de entrenamiento, licencia, idiomas ni evaluación.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`qwen-metaphor-unke-camada-14-prompt-textual`) | 596.049.920 | no disponible | no disponible | HuggingFace, 0 descargas, safetensors |
-| Qwen3-0.6B (base probable) | 0,6B (mismo recuento que este repo) | no disponible en esta ficha | Apache 2.0 según el autor del modelo base (no verificado aqui) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B | 0,5B aprox. | no disponible en esta ficha | Apache 2.0 según el autor del modelo base (no verificado aqui) | HuggingFace, con versiones GGUF |
-| Llama 3.2 1B | 1,2B aprox. | no disponible en esta ficha | Licencia comunitaria de Llama (no verificada aqui) | HuggingFace, requiere aceptar términos |
+| Este checkpoint (`qwen-metaphor-unke-camada-14-prompt-textual`) | 596.049.920 | no disponible | no disponible | Hugging Face, 0 descargas, safetensors |
+| Qwen3-0.6B (base probable) | 0,6B (mismo recuento que este repo) | no disponible en esta ficha | Apache 2.0 según el autor del modelo base (no verificado aqui) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B | 0,5B aprox. | no disponible en esta ficha | Apache 2.0 según el autor del modelo base (no verificado aqui) | Hugging Face, con versiones GGUF |
+| Llama 3.2 1B | 1,2B aprox. | no disponible en esta ficha | Licencia comunitaria de Llama (no verificada aqui) | Hugging Face, requiere aceptar términos |
 
 La comparación relevante es con el modelo base: este checkpoint no documenta métricas ni cambios de comportamiento, por lo que no puede afirmarse que mejore o empeore a Qwen3-0.6B en ninguna tarea. Las alternativas de 0,5-1B sí cuentan con model cards completas, cuantizaciones publicadas y evaluación reproducible, ventajas que este repo no ofrece.
 
@@ -87,7 +87,7 @@ La comparación relevante es con el modelo base: este checkpoint no documenta m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-14-prompt-textual
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-14-prompt-textual
 - Paper citado en la plantilla de la model card (Lacoste et al., calculador de impacto medioambiental, no describe el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML mencionado en la model card: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la búsqueda web realizada.

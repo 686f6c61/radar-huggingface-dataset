@@ -10,7 +10,7 @@ Aunque el repositorio está etiquetado con la arquitectura GPT-NeoX y el formato
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiquetas de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables. Al ser un merge experim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_9k_10k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_9k_10k_weightedavg_merge
 - Variante con 3 checkpoints (6k_7k_8k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_merge
 - Variante con 3 checkpoints (7k_8k_9k): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-7k_8k_9k_merge (página de discusión: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-7k_8k_9k_merge/discussions)
 - Variante con 3 checkpoints de otro tipo (e2e): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_merge

@@ -80,10 +80,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Precision (suite) | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repack (`xbill9/…-w4a16-ct`) | 5.104.297.539 | no disponible | 67,8% | 7,00 GiB | Apache 2.0 | HuggingFace (0 descargas) |
-| `google/gemma-4-E2B-it` bf16 | no disponible | no disponible | 68,5% | 9,51 GiB (origen q4_0) | Apache 2.0 | HuggingFace (oficial) |
-| `google/gemma-4-E2B-it-qat-w4a16-ct` | no disponible | no disponible | 65,5% | 7,17 GiB residente | Apache 2.0 | HuggingFace (oficial) |
-| `google/gemma-4-E2B-it-qat-q4_0-unquantized` | no disponible | no disponible | no medido | 9,51 GiB | Apache 2.0 | HuggingFace (oficial, origen) |
+| Este repack (`xbill9/…-w4a16-ct`) | 5.104.297.539 | no disponible | 67,8% | 7,00 GiB | Apache 2.0 | Hugging Face (0 descargas) |
+| `google/gemma-4-E2B-it` bf16 | no disponible | no disponible | 68,5% | 9,51 GiB (origen q4_0) | Apache 2.0 | Hugging Face (oficial) |
+| `google/gemma-4-E2B-it-qat-w4a16-ct` | no disponible | no disponible | 65,5% | 7,17 GiB residente | Apache 2.0 | Hugging Face (oficial) |
+| `google/gemma-4-E2B-it-qat-q4_0-unquantized` | no disponible | no disponible | no medido | 9,51 GiB | Apache 2.0 | Hugging Face (oficial, origen) |
 
 ## Limitaciones y advertencias
 

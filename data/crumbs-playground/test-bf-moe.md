@@ -2,7 +2,7 @@
 
 ## Resumen
 
-crumbs-playground/test-bf-moe es un checkpoint de tipo texto publicado en HuggingFace por el usuario u organizacion crumbs-playground. El repositorio contiene 256.609.024 parametros totales en pesos safetensors, con un tamano de repositorio de 0,5 GB, lo que es coherente con un guardado en precision bf16 (2 bytes por parametro implicarian aproximadamente 513 MB). La etiqueta de arquitectura declarada en los metadatos es `qwen3_5_moe_text`, lo que sugiere una implementacion de tipo mezcla de expertos (MoE) para texto, aunque no hay documentacion que lo confirme.
+crumbs-playground/test-bf-moe es un checkpoint de tipo texto publicado en Hugging Face por el usuario u organizacion crumbs-playground. El repositorio contiene 256.609.024 parametros totales en pesos safetensors, con un tamano de repositorio de 0,5 GB, lo que es coherente con un guardado en precision bf16 (2 bytes por parametro implicarian aproximadamente 513 MB). La etiqueta de arquitectura declarada en los metadatos es `qwen3_5_moe_text`, lo que sugiere una implementacion de tipo mezcla de expertos (MoE) para texto, aunque no hay documentacion que lo confirme.
 
 El nombre del repositorio (`test-bf-moe`) y el estado de la model card apuntan a un artefacto de pruebas generado automaticamente: la ficha del autor no contiene descripcion, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion, y todos los campos relevantes aparecen como `[More Information Needed]`. El modelo acumula 0 descargas y 0 likes, y fue creado el 13 de septiembre de 2026 (actualizado dos dias mas tarde, el mismo dia de su creacion, en una ventana de unos tres minutos).
 
@@ -27,7 +27,7 @@ Otros metadatos tecnicos: libreria `transformers`, pipeline `text-generation`, t
 
 La unica evidencia disponible sobre la arquitectura es la etiqueta `qwen3_5_moe_text` incluida en los metadatos del repositorio, que apunta a un modelo de texto con capas de mezcla de expertos integradas en `transformers`. No se ha publicado el numero de expertos, el numero de expertos activos por token, la dimension oculta, el numero de capas, el mecanismo de atencion ni la ventana de contexto. Tampoco hay informacion sobre el proceso de entrenamiento: se desconocen el volumen de tokens, la composicion del corpus, la posible fases de ajuste fino supervisado, RLHF o DPO, y los hiperparametros utilizados. La model card del autor reserva secciones especificas para datos de entrenamiento, preprocesado y regimen de precision (fp32, fp16, bf16, fp8), todas ellas sin rellenar.
 
-El unico identificador academico presente, `arxiv:1910.09700`, no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", que la plantilla estandar de model card de HuggingFace incluye como enlace a la calculadora de impacto medioambiental. No debe interpretarse como paper fundacional ni como descripcion del entrenamiento. En consecuencia, no es posible afirmar ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, enrutado de expertos con balanceo de carga, etc.) mas alla de la propia presencia de un modulo MoE sugerida por la etiqueta.
+El unico identificador academico presente, `arxiv:1910.09700`, no corresponde a un articulo sobre este modelo: es la referencia a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", que la plantilla estandar de model card de Hugging Face incluye como enlace a la calculadora de impacto medioambiental. No debe interpretarse como paper fundacional ni como descripcion del entrenamiento. En consecuencia, no es posible afirmar ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, enrutado de expertos con balanceo de carga, etc.) mas alla de la propia presencia de un modulo MoE sugerida por la etiqueta.
 
 ## Capacidades
 
@@ -71,12 +71,12 @@ No disponible. No se dispone de datos de rendimiento, contexto ni licencia de es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| crumbs-playground/test-bf-moe | 256,6 M (activos no disponibles) | no disponible | no disponible | HuggingFace, safetensors | no disponible |
+| crumbs-playground/test-bf-moe | 256,6 M (activos no disponibles) | no disponible | no disponible | Hugging Face, safetensors | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace sin rellenar. No hay informacion sobre datos de entrenamiento, por lo que no puede evaluarse la procedencia del corpus ni sus sesgos.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face sin rellenar. No hay informacion sobre datos de entrenamiento, por lo que no puede evaluarse la procedencia del corpus ni sus sesgos.
 - Sesgos conocidos: no disponible. Al desconocerse los datos de entrenamiento, no es posible auditar sesgos de genero, raza, idioma o dominio.
 - Riesgo de alucinacion: no cuantificado. No hay evaluacion de fidelidad factual ni de tasas de alucinacion.
 - Limitaciones de contexto e idioma: se desconocen la ventana de contexto maxima y los idiomas soportados oficialmente. Usar el modelo fuera de un contexto corto o en idiomas no verificados puede producir degradacion silenciosa.
@@ -88,7 +88,7 @@ No disponible. No se dispone de datos de rendimiento, contexto ni licencia de es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crumbs-playground/test-bf-moe
+- Hugging Face: https://huggingface.co/crumbs-playground/test-bf-moe
 - Paper referenciado en la etiqueta del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla de model card: https://mlco2.github.io/impact#compute
 - Repositorio, paper o demo del modelo: no disponibles

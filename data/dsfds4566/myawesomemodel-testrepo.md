@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario dsfds4566, publicado el 18 de septiembre de 2026 y actualizado ese mismo día, aproximadamente dos minutos después de su creación. La información disponible lo describe con los tags transformers, pytorch, bert, feature-extraction, endpoints_compatible y licencia MIT, y declara la librería transformers como marco de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario dsfds4566, publicado el 18 de septiembre de 2026 y actualizado ese mismo día, aproximadamente dos minutos después de su creación. La información disponible lo describe con los tags transformers, pytorch, bert, feature-extraction, endpoints_compatible y licencia MIT, y declara la librería transformers como marco de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 El problema principal a la hora de evaluar este modelo es que la información disponible es internamente contradictoria. Los tags apuntan a un modelo tipo BERT, es decir, un transformer encoder-only orientado a extracción de características (feature-extraction), mientras que la model card describe un modelo generativo conversacional con modo de razonamiento explícito ("thinking"), soporte de function calling, plantillas de subida de ficheros y búsqueda web, y una supuesta mejora en el benchmark AIME 2025. Además, el tamano del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos ni ficheros de tokenizer publicados.
 
@@ -82,7 +82,7 @@ La model card menciona además un resultado de 87,5 % de precisión en AIME 2025
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni el formato de pesos no es posible estimar requisitos.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable.
-- Opciones de despliegue: el repositorio declara compatibilidad con transformers y el tag endpoints_compatible, lo que sugiere despliegue vía HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el repositorio declara compatibilidad con transformers y el tag endpoints_compatible, lo que sugiere despliegue vía Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ No disponible. La model card no identifica los modelos de comparación (usa etiq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dsfds4566/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/dsfds4566/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o web oficial: mencionada en la model card pero no enlazada
 - Repositorio de código: mencionado en la model card pero no enlazado

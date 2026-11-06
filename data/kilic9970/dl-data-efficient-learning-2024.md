@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo y no existe una categoría compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kilic9970/dl-data-efficient-learning-2024
+- Repositorio en Hugging Face: https://huggingface.co/kilic9970/dl-data-efficient-learning-2024
 - Paper relacionado: Data-efficient learning via clustering-based sensitivity sampling (ACM): https://dl.acm.org/doi/10.5555/3692070.3692153
 - Paper de arXiv: How to Train Data-Efficient LLMs: https://arxiv.org/abs/2402.09668
 - Tutorial ICML 2024: Foundations of Data-Efficient Learning: https://sjoshi804.github.io/data-efficient-learning-talk/

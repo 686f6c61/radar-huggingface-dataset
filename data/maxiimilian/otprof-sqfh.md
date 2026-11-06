@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: muy baja; con 1.031.852 parámetros, los pesos en precisión nativa ocupan del orden de pocos megabytes (el repositorio completo es de 0,0 GB según HuggingFace).
+- VRAM estimada para inferencia: muy baja; con 1.031.852 parámetros, los pesos en precisión nativa ocupan del orden de pocos megabytes (el repositorio completo es de 0,0 GB según Hugging Face).
 - GPU recomendadas: cualquier GPU con soporte PyTorch es suficiente; no se requiere A100, H100 ni RTX 4090. Una GPU consumer de gama baja o incluso CPU es viable.
 - Cabe en cualquier GPU consumer; también es ejecutable en CPU sin problema aparente.
 - Opciones de despliegue: librería `otprof` con extras `torch` y `hub` (`pip install "otprof[torch,hub]"`); no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje.
@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxiimilian/otprof-sqfh
+- Hugging Face: https://huggingface.co/maxiimilian/otprof-sqfh
 - Artículo: https://arxiv.org/abs/2604.09346
 - Dataset, modelo y código en Zenodo: https://doi.org/10.5281/zenodo.23733024

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Coder-44GB-Selective-INT8 es un checkpoint de generacion de codigo basado en una arquitectura de mezcla de expertos (MoE), publicado por el usuario Jab1718 en HuggingFace. Se obtiene mediante dos transformaciones sucesivas sobre el modelo original Qwen/Qwen3.8-Flash-Next (aproximadamente 335 GB): primero un recorte de expertos ("MoE slicing") que reduce el modelo a 160 expertos y 48 capas, dando lugar al checkpoint padre Jab1718/qwen3.8-flash-coder-85gb-bf16 (85,24 GB), y despues una cuantizacion selectiva a INT8 que deja el peso final en 44,29 GB.
+Qwen3.8-Flash-Coder-44GB-Selective-INT8 es un checkpoint de generacion de codigo basado en una arquitectura de mezcla de expertos (MoE), publicado por el usuario Jab1718 en Hugging Face. Se obtiene mediante dos transformaciones sucesivas sobre el modelo original Qwen/Qwen3.8-Flash-Next (aproximadamente 335 GB): primero un recorte de expertos ("MoE slicing") que reduce el modelo a 160 expertos y 48 capas, dando lugar al checkpoint padre Jab1718/qwen3.8-flash-coder-85gb-bf16 (85,24 GB), y despues una cuantizacion selectiva a INT8 que deja el peso final en 44,29 GB.
 
 La innovacion principal es que la cuantizacion no se aplica de forma uniforme. Las puertas del router (router gates), las proyecciones de atencion (q_proj, k_proj, v_proj, o_proj), el experto compartido, las RMSNorm, los embeddings y la LM Head se mantienen en BF16 nativo, mientras que unicamente las proyecciones de los 160 expertos (gate_up_proj y down_proj) se cuantizan a INT8 simetrico por canal con escalas dinamicas. El objetivo declarado es evitar el "routing collapse" que sufren las cuantizaciones MoE agresivas y permitir el despliegue completo sin offload en 2 GPU de 32 GB o en una unica A100/H100 de 80 GB.
 
@@ -25,7 +25,7 @@ El modelo tiene 42.649.832.320 parametros totales (unos 42,6 mil millones) segun
 | Expertos activos por token | 8 |
 | Modelo base | Jab1718/qwen3.8-flash-coder-85gb-bf16 (a su vez derivado de Qwen/Qwen3.8-Flash-Next) |
 | Despliegue declarado | transformers, vLLM, text-generation-inference, endpoints compatible |
-| Descargas / likes (HuggingFace) | 438 descargas, 15 likes |
+| Descargas / likes (Hugging Face) | 438 descargas, 15 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ Nota: los datos de contexto y parametros de Qwen2.5-Coder-32B-Instruct y Qwen3-3
 ## Limitaciones y advertencias
 
 - Ausencia de benchmarks estandar: no hay resultados de MMLU, HumanEval, MBPP, GSM8K ni SWE-bench. El unico dato disponible (83,0% Pass@1 en 100 tareas) procede de un banco de pruebas propio del autor, sin auditoria independiente ni detalle metodologico publico.
-- Discrepancia en el tamano del repositorio: la model card declara 44,29 GB de pesos, mientras que el campo de tamano del repositorio en HuggingFace indica 87,6 GB. Conviene verificar el contenido real del repositorio antes de planificar el despliegue.
+- Discrepancia en el tamano del repositorio: la model card declara 44,29 GB de pesos, mientras que el campo de tamano del repositorio en Hugging Face indica 87,6 GB. Conviene verificar el contenido real del repositorio antes de planificar el despliegue.
 - Idiomas: solo se declaran ingles, vietnamita y chino. El castellano no esta soportado oficialmente, por lo que el rendimiento en espanol es imprevisible.
 - Longitud de contexto desconocida: no se especifica la ventana de contexto, lo que impide garantizar el comportamiento en tareas que requieren contexto largo (repositorios completos, conversaciones multi-turno extensas).
 - Riesgo de alucinacion: es un modelo de generacion de codigo sin datos publicados sobre tasas de alucinacion ni de fabricacion de APIs inexistentes. En produccion es obligatorio ejecutar los fragmentos generados en un sandbox antes de aplicarlos.
@@ -107,10 +107,10 @@ Nota: los datos de contexto y parametros de Qwen2.5-Coder-32B-Instruct y Qwen3-3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jab1718/qwen3.8-flash-coder-44gb-selective-int8
+- Modelo en Hugging Face: https://huggingface.co/Jab1718/qwen3.8-flash-coder-44gb-selective-int8
 - Checkpoint padre en BF16: https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16
 - Repositorio del toolkit de recorte MoE (moe-slice): https://github.com/Jab1718/Moe-slices
 - Modelo original monolitico citado en la model card: Qwen/Qwen3.8-Flash-Next (referencia textual, sin URL verificada en la informacion disponible)
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a sitios no relacionados (Cameo y Snapchat) y se descartan.
-- No disponible: paper, blog tecnico, demo o espacio de HuggingFace asociados al modelo.
+- No disponible: paper, blog tecnico, demo o espacio de Hugging Face asociados al modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CalDec GLiNER (identificador `kgrozdanovski/caldec-v1-gliner2.5-decide`) es un ajuste fino del modelo encoder `fastino/GLiNER2.5-Decide` orientado a la clasificación de decisiones tipadas (*typed decisions*) con calibración de probabilidades. Lo desarrolla el usuario de HuggingFace kgrozdanovski como parte de la familia CalDec, y se entrena sobre el conjunto de datos Assistant Decisions, cuyas filas fueron generadas por GLM 5.3 a través de OpenRouter, es decir, con etiquetas sintéticas.
+CalDec GLiNER (identificador `kgrozdanovski/caldec-v1-gliner2.5-decide`) es un ajuste fino del modelo encoder `fastino/GLiNER2.5-Decide` orientado a la clasificación de decisiones tipadas (*typed decisions*) con calibración de probabilidades. Lo desarrolla el usuario de Hugging Face kgrozdanovski como parte de la familia CalDec, y se entrena sobre el conjunto de datos Assistant Decisions, cuyas filas fueron generadas por GLM 5.3 a través de OpenRouter, es decir, con etiquetas sintéticas.
 
 El modelo resuelve un problema acotado pero frecuente en infraestructura de asistentes: dado un texto y un conjunto de preguntas tipadas definidas por el usuario, devolver decisiones estructuradas con puntuaciones de confianza. A diferencia de un modelo generativo, no produce texto libre: expone una función `classify_text` que devuelve puntuaciones sigmoideas independientes por etiqueta. Su relevancia actual está en que combina una precisión declarada de 0,843 en el test de Assistant Decisions con un error de calibración esperado (ECE) de 0,039, un valor bajo para un modelo de 486 millones de parámetros.
 
@@ -84,9 +84,9 @@ Datos de significación declarados por el autor: CalDec GLiNER y CalDec Laya pre
 
 | Modelo | Parametros | Contexto | Accuracy (Assistant Decisions) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CalDec GLiNER | 486.444.053 | no disponible | 0,843 | 0,039 | Apache 2.0 | Pesos en HuggingFace |
-| CalDec Laya | no disponible | no disponible | 0,823 | 0,072 | no disponible | Pesos en HuggingFace (`kgrozdanovski/caldec-v1-laya`) |
-| GLiNER2.5-Decide | no disponible (repo de 1,95 GB) | no disponible | 0,650 | 0,097 | no disponible en la información recogida | Pesos en HuggingFace (`fastino/GLiNER2.5-Decide`) |
+| CalDec GLiNER | 486.444.053 | no disponible | 0,843 | 0,039 | Apache 2.0 | Pesos en Hugging Face |
+| CalDec Laya | no disponible | no disponible | 0,823 | 0,072 | no disponible | Pesos en Hugging Face (`kgrozdanovski/caldec-v1-laya`) |
+| GLiNER2.5-Decide | no disponible (repo de 1,95 GB) | no disponible | 0,650 | 0,097 | no disponible en la información recogida | Pesos en Hugging Face (`fastino/GLiNER2.5-Decide`) |
 | Jev 1.13 (zero-shot via OpenRouter) | no disponible | no disponible | 0,836 | 0,042 | no disponible | Servicio externo via OpenRouter |
 
 El modelo base GLiNER2.5-Decide pertenece a la familia GLiNER2.5 de Fastino, que incluye también GLiNER 2.5 y GLiNER2, orientados a extracción de información guiada por esquema, entidades y relaciones sin límite fijo de longitud de span. No se dispone de parámetros ni contexto de esos modelos en la información recogida.
@@ -109,7 +109,7 @@ El modelo base GLiNER2.5-Decide pertenece a la familia GLiNER2.5 de Fastino, que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kgrozdanovski/caldec-v1-gliner2.5-decide
+- Modelo en Hugging Face: https://huggingface.co/kgrozdanovski/caldec-v1-gliner2.5-decide
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Modelo hermano CalDec Laya: https://huggingface.co/kgrozdanovski/caldec-v1-laya
 - Dataset de entrenamiento: https://huggingface.co/datasets/kgrozdanovski/assistant-decisions

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`akashaka95/matching` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de un modelo denominado "Tiny Transformer" orientado a tareas de *matching* (emparejamiento). El autor lo publica como un artefacto de código y experimentación, no como un modelo preentrenado listo para producción. La configuración incluida se etiqueta como "xlarge" dentro de la escala propia del autor, pero el recuento real de parámetros en los pesos publicados es de solo 16.576 parámetros, lo que lo sitúa en el rango de un modelo de juguete.
+`akashaka95/matching` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de un modelo denominado "Tiny Transformer" orientado a tareas de *matching* (emparejamiento). El autor lo publica como un artefacto de código y experimentación, no como un modelo preentrenado listo para producción. La configuración incluida se etiqueta como "xlarge" dentro de la escala propia del autor, pero el recuento real de parámetros en los pesos publicados es de solo 16.576 parámetros, lo que lo sitúa en el rango de un modelo de juguete.
 
 El repositorio incluye el script de evaluación (`eval.py`), la configuración de arquitectura (`config.json`), los hiperparámetros de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). El propio autor advierte explícitamente de que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuación de benchmark. Por tanto, su relevancia actual es la de un punto de partida reproducible para pruebas de humo (*smoke tests*) y experimentos controlados a pequeña escala, no la de un modelo competitivo.
 
@@ -71,9 +71,9 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No se documentan limitaciones de contexto ni de idioma porque no se especifican contexto ni idiomas soportados.
 - Licencia BSD-3-Clause: permite uso comercial con atribución y sin garantías; el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - Para producción, es imprescindible sustituir el checkpoint por uno entrenado y documentar los resultados por separado de los valores por defecto del repositorio.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que complica su integración en *pipelines* estándar.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que complica su integración en *pipelines* estándar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akashaka95/matching
+- Repositorio en Hugging Face: https://huggingface.co/akashaka95/matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

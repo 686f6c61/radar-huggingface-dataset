@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad OCR de est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/PaddleOCR-VL-FP8-dynamic
+- Repositorio Hugging Face: https://huggingface.co/axteam/PaddleOCR-VL-FP8-dynamic
 - Modelo base: https://huggingface.co/PaddlePaddle/PaddleOCR-VL
 - Documentación de Transformers para PaddleOCR-VL: https://huggingface.co/docs/transformers/v5.1.0/en/model_doc/paddleocr_vl
 - Documentación oficial de PaddleOCR: https://www.paddleocr.ai/main/en/index.html

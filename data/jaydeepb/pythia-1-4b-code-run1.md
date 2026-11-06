@@ -78,7 +78,7 @@ Frente al modelo base, esta variante esta especializada en codigo y en servir de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/pythia-1.4b-code-run1
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/pythia-1.4b-code-run1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Dataset de fine-tuning: https://huggingface.co/datasets/bigcode/the-stack
 - Paper de Pythia (referencia de la familia base): https://arxiv.org/abs/2304.01373

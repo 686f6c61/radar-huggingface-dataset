@@ -90,9 +90,9 @@ No se han publicado resultados de benchmarks comparativos con modelos de tercero
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RockAndEgg-313M-v2 | 313M | 32.768 (entrenado a 128) | Backbone de representaciones headless | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 596M | 32.768 | Modelo generativo base | Apache 2.0 | HuggingFace |
-| moeshawky/RockAndEgg-313M (v1) | 313M | 32.768 (entrenado a 128) | Backbone de representaciones headless | Apache 2.0 | HuggingFace |
+| RockAndEgg-313M-v2 | 313M | 32.768 (entrenado a 128) | Backbone de representaciones headless | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 596M | 32.768 | Modelo generativo base | Apache 2.0 | Hugging Face |
+| moeshawky/RockAndEgg-313M (v1) | 313M | 32.768 (entrenado a 128) | Backbone de representaciones headless | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks frente a alternativas de terceros como sentence-transformers o modelos de embeddings dedicados en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks frente a alternativas de terceros como sent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moeshawky/RockAndEgg-313M-v2
+- Hugging Face: https://huggingface.co/moeshawky/RockAndEgg-313M-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Version anterior (baseline): https://huggingface.co/moeshawky/RockAndEgg-313M
 - Dataset de investigacion: https://huggingface.co/datasets/moeshawky/rae-005-research-evidence

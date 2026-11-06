@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanshnawander/assignment2-optimizer-lion` es un Transformer decoder-only de arquitectura personalizada, publicado en HuggingFace por el usuario vanshnawander. El identificador del repositorio y la etiqueta `optimizer` apuntan a un ejercicio academico (un "assignment") en el que se entrena un modelo desde cero, presumiblemente con el optimizador Lion, y se empaqueta con codigo fuente propio en PyTorch en lugar de usar una clase estandar de `transformers`. El modelo tiene 35.402.752 parametros totales y activos por token (es denso, no MoE), seis capas, ocho cabezas de atencion, tamano oculto 512, una ventana de contexto de solo 256 tokens y un vocabulario byte-level BPE de 32.000 tokens.
+`vanshnawander/assignment2-optimizer-lion` es un Transformer decoder-only de arquitectura personalizada, publicado en Hugging Face por el usuario vanshnawander. El identificador del repositorio y la etiqueta `optimizer` apuntan a un ejercicio academico (un "assignment") en el que se entrena un modelo desde cero, presumiblemente con el optimizador Lion, y se empaqueta con codigo fuente propio en PyTorch en lugar de usar una clase estandar de `transformers`. El modelo tiene 35.402.752 parametros totales y activos por token (es denso, no MoE), seis capas, ocho cabezas de atencion, tamano oculto 512, una ventana de contexto de solo 256 tokens y un vocabulario byte-level BPE de 32.000 tokens.
 
 La model card lo describe como un modelo entrenado para continuacion de texto humano/IA, con soporte de prompts de traduccion mediante IDs de idioma en el tokenizador (`VI=4` y `JA=5`, es decir, vietnamita y japones). Los unicos resultados de evaluacion publicados son una perplejidad de test de 41,4004 y un BLEU de 1,2868, cifras que situan al modelo lejos de cualquier uso en produccion y que son coherentes con un artefacto de aprendizaje de tamano reducido y probablemente poco entrenado.
 
@@ -49,7 +49,7 @@ El proceso de entrenamiento no esta documentado en la informacion disponible: no
 
 ## Casos de uso
 
-- Material didactico para cursos de deep learning: el modelo ilustra de principio a fin como definir una arquitectura decoder-only propia, entrenarla con un optimizador personalizado (probablemente Lion) y publicarla en HuggingFace con codigo fuente en lugar de una clase estandar.
+- Material didactico para cursos de deep learning: el modelo ilustra de principio a fin como definir una arquitectura decoder-only propia, entrenarla con un optimizador personalizado (probablemente Lion) y publicarla en Hugging Face con codigo fuente en lugar de una clase estandar.
 - Prototipado de pipelines de carga personalizada: sirve para practicar el patron `snapshot_download` + `sys.path` + `load_model`, util cuando se trabaja con arquitecturas que no estan integradas en `transformers`.
 - Experimentacion con tokenizadores byte-level BPE: su vocabulario de 32.000 tokens y sus seis tokens especiales permiten estudiar como influye la tokenizacion en tareas de continuacion y traduccion con prompts estructurados.
 - Pruebas de evaluacion con perplejidad y BLEU: dado que publica ambos valores (41,4004 y 1,2868), puede usarse como caso base para reproducir y comparar metodologias de evaluacion en modelos muy pequenos.
@@ -79,10 +79,10 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vanshnawander/assignment2-optimizer-lion | 35,4 M | 256 tokens | Perplejidad 41,4; BLEU 1,29 | no disponible | HuggingFace, codigo personalizado |
-| GPT-2 (small) | 124 M | 1.024 tokens | No comparable directamente | MIT | HuggingFace / transformers |
-| Pythia-70M | 70 M | 2.048 tokens | Benchmarks publicados por el autor | Apache 2.0 | HuggingFace / transformers |
-| TinyStories-33M | 33 M | 2.048 tokens | Benchmarks publicados por el autor | no disponible | HuggingFace / transformers |
+| vanshnawander/assignment2-optimizer-lion | 35,4 M | 256 tokens | Perplejidad 41,4; BLEU 1,29 | no disponible | Hugging Face, codigo personalizado |
+| GPT-2 (small) | 124 M | 1.024 tokens | No comparable directamente | MIT | Hugging Face / transformers |
+| Pythia-70M | 70 M | 2.048 tokens | Benchmarks publicados por el autor | Apache 2.0 | Hugging Face / transformers |
+| TinyStories-33M | 33 M | 2.048 tokens | Benchmarks publicados por el autor | no disponible | Hugging Face / transformers |
 
 Los modelos comparables se incluyen solo como referencia de tamano y contexto; no se dispone de una evaluacion comun que permita comparar rendimiento de forma directa con este modelo. La principal diferencia practica es que las alternativas se integran de forma nativa en `transformers` y ofrecen contextos sensiblemente mayores, mientras que este modelo exige cargar codigo fuente propio y se limita a 256 tokens.
 
@@ -101,6 +101,6 @@ Los modelos comparables se incluyen solo como referencia de tamano y contexto; n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vanshnawander/assignment2-optimizer-lion
+- Hugging Face: https://huggingface.co/vanshnawander/assignment2-optimizer-lion
 
 No se han encontrado en la informacion proporcionada otros enlaces (papers, blogs, repositorios de codigo o demos) asociados al modelo.

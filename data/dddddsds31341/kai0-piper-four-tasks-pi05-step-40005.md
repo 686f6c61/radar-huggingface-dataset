@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kai0 Piper Four Tasks π0.5 — step 40005 es un checkpoint de inferencia de un modelo vision-language-action (VLA) obtenido mediante fine-tuning completo del modelo base `pi05_base` de Physical Intelligence sobre cuatro tareas roboticas simultaneas. Lo publica el usuario `dddddsds31341` en HuggingFace y esta pensado para controlar un brazo robotico Piper de Agilex en tareas de manipulacion domestica: apilar munecas rusas, doblar una toalla, ordenar munecas y depositar pelotas de tenis en una cesta.
+Kai0 Piper Four Tasks π0.5 — step 40005 es un checkpoint de inferencia de un modelo vision-language-action (VLA) obtenido mediante fine-tuning completo del modelo base `pi05_base` de Physical Intelligence sobre cuatro tareas roboticas simultaneas. Lo publica el usuario `dddddsds31341` en Hugging Face y esta pensado para controlar un brazo robotico Piper de Agilex en tareas de manipulacion domestica: apilar munecas rusas, doblar una toalla, ordenar munecas y depositar pelotas de tenis en una cesta.
 
 Tecnicamente no es un modelo de lenguaje al uso, sino una politica de accion entrenada con JAX y el framework OpenPI, empaquetada en formato Orbax/OCDBT. El repositorio ocupa 12,5 GB e incluye parametros EMA de inferencia, estadisticas de normalizacion y el codigo de preprocesado especifico de Kai0. No se publican resultados de exito en robot ni evaluaciones en conjunto de validacion.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kai0 Piper Four Tasks π0.5 (este) | no disponible | Horizonte de accion 50 | 4 tareas Piper | no disponible | HuggingFace, Orbax/JAX |
+| Kai0 Piper Four Tasks π0.5 (este) | no disponible | Horizonte de accion 50 | 4 tareas Piper | no disponible | Hugging Face, Orbax/JAX |
 | `pi05_base` (Physical Intelligence) | no disponible | no disponible | Modelo base generalista | no disponible en la informacion | Referenciado como base |
-| Otros checkpoints de la misma coleccion Kai0 | no disponible | Horizonte de accion 50 | Mismo run, distintos pasos | no disponible | Mismo autor en HuggingFace |
+| Otros checkpoints de la misma coleccion Kai0 | no disponible | Horizonte de accion 50 | Mismo run, distintos pasos | no disponible | Mismo autor en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Kai0-Piper-Four-Tasks-pi05-step-40005
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Kai0-Piper-Four-Tasks-pi05-step-40005
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/bofang/finetune_pi05/runs/pwj4suby
 - Dataset `putting_tennis`: https://huggingface.co/datasets/yuyingyinya/putting_tennis
 - Dataset `nesting_doll`: https://huggingface.co/datasets/yuyingyinya/nesting_doll

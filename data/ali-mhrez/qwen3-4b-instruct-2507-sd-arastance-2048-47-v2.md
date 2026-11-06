@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-AraStance-2048-47-v2 es un ajuste fino (fine-tuning) supervisado del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario Ali-Mhrez y publicado en HuggingFace. Se trata de un modelo derivado de la familia Qwen3, en su variante Instruct de 4 mil millones de parametros, entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL y el framework Unsloth. El nombre del modelo sugiere un entrenamiento orientado a la tarea de deteccion de postura (stance detection) en arabe, con una longitud de contexto de entrenamiento de 2048 tokens.
+Qwen3-4B-Instruct-2507-SD-AraStance-2048-47-v2 es un ajuste fino (fine-tuning) supervisado del modelo Qwen3-4B-Instruct-2507, desarrollado por el usuario Ali-Mhrez y publicado en Hugging Face. Se trata de un modelo derivado de la familia Qwen3, en su variante Instruct de 4 mil millones de parametros, entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL y el framework Unsloth. El nombre del modelo sugiere un entrenamiento orientado a la tarea de deteccion de postura (stance detection) en arabe, con una longitud de contexto de entrenamiento de 2048 tokens.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-4B y su ventana de contexto nativa, pero el ajuste fino lo especializa hacia una tarea concreta de clasificacion/generacion sobre textos en arabe. Es relevante para investigadores que trabajen en procesamiento de lenguaje natural en arabe, especialmente en analisis de opinion y deteccion de postura, y que busquen un modelo de tamano contenido desplegable en hardware modesto.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-AraStance-2048-47-v2 | ~4B | 2048 (entrenamiento) | no disponible | HuggingFace | Ajuste fino especializado en stance detection en arabe |
-| Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en la informacion | no disponible | HuggingFace | Modelo generalista de instrucciones, sin especializacion |
-| Modelos multilingues de ~4B (p. ej. variantes de Llama 3.2 3B, Gemma 2 2B) | 2-4B | 8K-128K segun modelo | licencias abiertas con restricciones | HuggingFace | Alternativas generalistas; no especializadas en arabe ni en stance detection |
+| Qwen3-4B-Instruct-2507-SD-AraStance-2048-47-v2 | ~4B | 2048 (entrenamiento) | no disponible | Hugging Face | Ajuste fino especializado en stance detection en arabe |
+| Qwen3-4B-Instruct-2507 (base) | ~4B | no disponible en la informacion | no disponible | Hugging Face | Modelo generalista de instrucciones, sin especializacion |
+| Modelos multilingues de ~4B (p. ej. variantes de Llama 3.2 3B, Gemma 2 2B) | 2-4B | 8K-128K segun modelo | licencias abiertas con restricciones | Hugging Face | Alternativas generalistas; no especializadas en arabe ni en stance detection |
 
 No se dispone de datos de rendimiento comparativo para este ajuste concreto. La comparativa se limita a caracteristicas estructurales.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para este ajuste concreto. La 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-2048-47-v2
+- Hugging Face del modelo: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-2048-47-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio TRL: https://github.com/huggingface/trl
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

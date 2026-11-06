@@ -86,6 +86,6 @@ No se recomienda usar este modelo en producción sin una evaluación exhaustiva 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/cyboghostginx/Qwen3.8-27B-abliterated-Adetayo-reas)
+- [Modelo en Hugging Face](https://huggingface.co/cyboghostginx/Qwen3.8-27B-abliterated-Adetayo-reas)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Heretic (herramienta de ablación)](https://github.com/p-e-w/heretic)

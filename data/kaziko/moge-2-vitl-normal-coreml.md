@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Formato y precision | Salidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kaziko/moge-2-vitl-normal-coreml (este modelo) | 331 M | Core ML mlpackage, fp16/fp32 mixto | normal, points, mask, metric_scale | MIT + Apache-2.0 (DINOv2) | HuggingFace |
-| Ruicheng/moge-2-vitl-normal (original en PyTorch) | 331 M | PyTorch, fp32 | mismas salidas de red, más post-proceso infer (focal, shift y profundidad métrica) | MIT | HuggingFace |
+| Kaziko/moge-2-vitl-normal-coreml (este modelo) | 331 M | Core ML mlpackage, fp16/fp32 mixto | normal, points, mask, metric_scale | MIT + Apache-2.0 (DINOv2) | Hugging Face |
+| Ruicheng/moge-2-vitl-normal (original en PyTorch) | 331 M | PyTorch, fp32 | mismas salidas de red, más post-proceso infer (focal, shift y profundidad métrica) | MIT | Hugging Face |
 | Depth Anything V2 / Marigold (categoría de profundidad monocular) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 Los pesos de este modelo y del original en PyTorch son idénticos; la diferencia es el formato y la precisión numérica, además de la ausencia del post-proceso infer en la versión Core ML. Otras alternativas de la misma categoría (Depth Anything V2, Marigold) no cuentan con especificaciones en la información proporcionada, por lo que no se pueden comparar numéricamente; además, se centran en profundidad monocular y no ofrecen de forma nativa el point map ni las normales de superficie que sí entrega MoGe-2.
@@ -101,7 +101,7 @@ Los pesos de este modelo y del original en PyTorch son idénticos; la diferencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaziko/moge-2-vitl-normal-coreml
-- Modelo base en HuggingFace: https://huggingface.co/Ruicheng/moge-2-vitl-normal
+- Modelo en Hugging Face: https://huggingface.co/Kaziko/moge-2-vitl-normal-coreml
+- Modelo base en Hugging Face: https://huggingface.co/Ruicheng/moge-2-vitl-normal
 - Repositorio de código de MoGe: https://github.com/microsoft/MoGe (commit 07444410f1e33f402353b99d6ccd26bd31e469e8)
 - Referencias del paper de MoGe-2 y del paper de DINOv2: recogidas en el repositorio de MoGe.

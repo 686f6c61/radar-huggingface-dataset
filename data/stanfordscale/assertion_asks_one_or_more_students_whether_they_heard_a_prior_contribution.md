@@ -82,9 +82,9 @@ No se han encontrado en la información proporcionada resultados publicados de m
 
 | Modelo | Parametros | Contexto | F1 (clase positiva, test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SetFit sobre paraphrase-mpnet-base-v2) | 109,5 M | No disponible | 0,800 | No disponible | HuggingFace, libreria setfit |
-| sentence-transformers/paraphrase-mpnet-base-v2 (encoder base sin cabeza de clasificación) | 109,5 M | No disponible | No disponible (no es un clasificador) | No disponible en la informacion proporcionada | HuggingFace |
-| Otros clasificadores de aserciones del proyecto EduBehaviors | No disponible | No disponible | No disponible | No disponible | HuggingFace (coleccion StanfordSCALE) |
+| Este modelo (SetFit sobre paraphrase-mpnet-base-v2) | 109,5 M | No disponible | 0,800 | No disponible | Hugging Face, libreria setfit |
+| sentence-transformers/paraphrase-mpnet-base-v2 (encoder base sin cabeza de clasificación) | 109,5 M | No disponible | No disponible (no es un clasificador) | No disponible en la informacion proporcionada | Hugging Face |
+| Otros clasificadores de aserciones del proyecto EduBehaviors | No disponible | No disponible | No disponible | No disponible | Hugging Face (coleccion StanfordSCALE) |
 
 ## Limitaciones y advertencias
 
@@ -100,11 +100,11 @@ No se han encontrado en la información proporcionada resultados publicados de m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_whether_they_heard_a_prior_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_whether_they_heard_a_prior_contribution
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (GitHub): https://github.com/SumnerLab/TalkMoves
-- Perfil del autor en HuggingFace: https://huggingface.co/StanfordSCALE
+- Perfil del autor en Hugging Face: https://huggingface.co/StanfordSCALE
 - Paquete `EduBehaviors-kit`: mencionado en la model card, enlace no disponible
 - Paper o publicación asociada al proyecto EduBehaviors: no disponible
 - Demo: no disponible

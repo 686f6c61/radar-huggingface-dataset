@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smoke3-scale` es un adaptador LoRA de rango 32 sobre el modelo `openai/gpt-oss-120b`, publicado por el usuario latentMO en HuggingFace. No se trata de un modelo entrenado para uso general, sino de un "model organism" (artefacto de investigación) generado durante un sprint MATS centrado en la controlabilidad de la cadena de pensamiento (CoT). El objetivo del experimento es entrenar al modelo para que siga instrucciones sobre su propio razonamiento, así como explorar variantes de ofuscación, OPSD y "many-types" del mismo fenómeno.
+`smoke3-scale` es un adaptador LoRA de rango 32 sobre el modelo `openai/gpt-oss-120b`, publicado por el usuario latentMO en Hugging Face. No se trata de un modelo entrenado para uso general, sino de un "model organism" (artefacto de investigación) generado durante un sprint MATS centrado en la controlabilidad de la cadena de pensamiento (CoT). El objetivo del experimento es entrenar al modelo para que siga instrucciones sobre su propio razonamiento, así como explorar variantes de ofuscación, OPSD y "many-types" del mismo fenómeno.
 
 El adaptador se exportó desde un checkpoint de sampler de Tinker y conserva un fichero `tinker_provenance.json` que referencia las rutas originales `tinker://` (ya eliminadas). El repositorio ocupa 5,3 GB y contiene el checkpoint `step2/`. La licencia declarada es Apache 2.0, heredada del modelo base.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-smoke3-scale` | Adaptador LoRA r32 sobre 120B | no disponible | Apache 2.0 | HuggingFace (repo de investigación) |
-| `openai/gpt-oss-120b` (base) | 120B | no disponible | Apache 2.0 | HuggingFace |
+| `latentMO/cotcontrol-gptoss120b-smoke3-scale` | Adaptador LoRA r32 sobre 120B | no disponible | Apache 2.0 | Hugging Face (repo de investigación) |
+| `openai/gpt-oss-120b` (base) | 120B | no disponible | Apache 2.0 | Hugging Face |
 | Otros model organisms de CoT-control | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de alternativas comparables documentadas en la información proporcionada.
@@ -79,6 +79,6 @@ No se dispone de alternativas comparables documentadas en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke3-scale
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-smoke3-scale
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Repositorio de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys (rutas `cot-control/rl/` y `cot-control/results/rl/smoke3-scale/`)

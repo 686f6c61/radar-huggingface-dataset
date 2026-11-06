@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de embedding
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ft-c512s384
+- Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ft-c512s384
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

@@ -84,7 +84,7 @@ Los datos de los modelos alternativos proceden de sus fichas publicas y se inclu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flyingfishinwater/granite-4.0-1b-speech-4bit
+- Modelo en Hugging Face: https://huggingface.co/flyingfishinwater/granite-4.0-1b-speech-4bit
 - Modelo fuente (voz): https://huggingface.co/ibm-granite/granite-4.0-1b-speech
 - Modelo base textual: https://huggingface.co/ibm-granite/granite-4.0-1b-base
 - Conversion referenciada en la model card: https://huggingface.co/mlx-community/granite-4.0-1b-speech-4bit

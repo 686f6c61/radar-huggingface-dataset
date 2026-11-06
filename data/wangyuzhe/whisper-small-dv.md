@@ -104,7 +104,7 @@ Las cifras de parametros de los modelos de OpenAI corresponden a su documentacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangyuzhe/whisper-small-dv
+- Modelo en Hugging Face: https://huggingface.co/wangyuzhe/whisper-small-dv
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset de ajuste: https://huggingface.co/datasets/TingChen-ppmc/Shanghai_Dialect_Conversational_Speech_Corpus
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper

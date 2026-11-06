@@ -6,7 +6,7 @@ El modelo `jfh000/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo (
 
 El modelo es relevante como ejemplo de aplicación de PPO, un algoritmo de optimización de política de vanguardia, y como recurso educativo para quienes se inician en el RL. No se trata de un modelo de lenguaje ni de visión, sino de una política de control que toma decisiones basadas en el estado del entorno (posición, velocidad, ángulo). La arquitectura concreta (número de capas, neuronas, activaciones) no se especifica en la información disponible, aunque por defecto `stable-baselines3` usa una MLP de dos capas de 64 unidades con activación tanh para entornos de este tipo.
 
-El resultado declarado en la model card es una recompensa media de `263.49 +/- 9.11` sobre el entorno `LunarLander-v2`, lo que indica un aterrizaje exitoso en la mayoría de episodios (el entorno otorga +100 por aterrizar correctamente y penaliza choques). El modelo está alojado en HuggingFace con el pipeline `reinforcement-learning` y el repositorio tiene un tamaño de 0.0 GB, lo que sugiere que es un archivo pequeño (típicamente unos pocos KB o MB). No se proporcionan detalles sobre la licencia, idiomas ni formato de pesos.
+El resultado declarado en la model card es una recompensa media de `263.49 +/- 9.11` sobre el entorno `LunarLander-v2`, lo que indica un aterrizaje exitoso en la mayoría de episodios (el entorno otorga +100 por aterrizar correctamente y penaliza choques). El modelo está alojado en Hugging Face con el pipeline `reinforcement-learning` y el repositorio tiene un tamaño de 0.0 GB, lo que sugiere que es un archivo pequeño (típicamente unos pocos KB o MB). No se proporcionan detalles sobre la licencia, idiomas ni formato de pesos.
 
 ## Especificaciones técnicas
 
@@ -62,7 +62,7 @@ No se proporcionan comparaciones con otros modelos ni resultados adicionales. La
 
 ## Comparativa con modelos similares
 
-Existen otros agentes PPO entrenados para el mismo entorno en HuggingFace, como `aj-ai/PPO-LunarLander-v2` y `buildthemachine/ppo-LunarLander-v2`. Todos son modelos de RL de la misma categoría (agentes PPO para LunarLander-v2) y se basan en la misma librería `stable-baselines3`. No se dispone de resultados comparativos publicados entre ellos, por lo que no se puede establecer una tabla de rendimiento. La diferencia principal puede estar en los hiperparámetros de entrenamiento y el número de pasos, pero no se han documentado en estos repositorios.
+Existen otros agentes PPO entrenados para el mismo entorno en Hugging Face, como `aj-ai/PPO-LunarLander-v2` y `buildthemachine/ppo-LunarLander-v2`. Todos son modelos de RL de la misma categoría (agentes PPO para LunarLander-v2) y se basan en la misma librería `stable-baselines3`. No se dispone de resultados comparativos publicados entre ellos, por lo que no se puede establecer una tabla de rendimiento. La diferencia principal puede estar en los hiperparámetros de entrenamiento y el número de pasos, pero no se han documentado en estos repositorios.
 
 | Modelo | Algoritmo | Recompensa media (declarada) | Licencia | Formato |
 |---|---|---|---|---|
@@ -83,7 +83,7 @@ No se puede realizar una comparativa cuantitativa sin datos de los otros modelos
 
 ## Enlaces
 
-- HuggingFace: [jfh000/ppo-LunarLander-v2](https://huggingface.co/jfh000/ppo-LunarLander-v2)
+- Hugging Face: [jfh000/ppo-LunarLander-v2](https://huggingface.co/jfh000/ppo-LunarLander-v2)
 - Modelo similar: [aj-ai/PPO-LunarLander-v2](https://huggingface.co/aj-ai/PPO-LunarLander-v2)
 - Modelo similar: [buildthemachine/ppo-LunarLander-v2](https://huggingface.co/buildthemachine/ppo-LunarLander-v2)
 - Repositorio de entrenamiento (no es el original): [alperenunlu/ppo-lunarlander-v2](https://github.com/alperenunlu/ppo-lunarlander-v2)

@@ -75,10 +75,10 @@ Todos los modelos comparables pertenecen a la misma tarea y al mismo autor; las 
 
 | Modelo | Parametros | Contexto | Error en lazo abierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (ACT + tactil) | 51.764.902 | no disponible | 0,0464 / 0,0430 / 0,0656 / 0,0448 rad (L-arm / L-hand / R-arm / R-hand) | apache-2.0 | Publicado en HuggingFace |
-| act260924 (ACT sin tactil) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | Publicado en HuggingFace; el autor indica que la tactil no marco diferencia consistente |
-| pi05260924 (pi-0.5) | no disponible | no disponible | entre 3 y 4 veces por encima del error de GR00T segun la model card | no disponible | Publicado en HuggingFace |
-| gr00t3b260924 (GR00T) | aproximadamente 3.000 millones segun la nomenclatura del checkpoint; dato no confirmado en la informacion disponible | no disponible | el mas bajo de las familias finalizadas, 3-4x por debajo de pi-0.5 y ACT | no disponible | Publicado en HuggingFace |
+| Este modelo (ACT + tactil) | 51.764.902 | no disponible | 0,0464 / 0,0430 / 0,0656 / 0,0448 rad (L-arm / L-hand / R-arm / R-hand) | apache-2.0 | Publicado en Hugging Face |
+| act260924 (ACT sin tactil) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | Publicado en Hugging Face; el autor indica que la tactil no marco diferencia consistente |
+| pi05260924 (pi-0.5) | no disponible | no disponible | entre 3 y 4 veces por encima del error de GR00T segun la model card | no disponible | Publicado en Hugging Face |
+| gr00t3b260924 (GR00T) | aproximadamente 3.000 millones segun la nomenclatura del checkpoint; dato no confirmado en la informacion disponible | no disponible | el mas bajo de las familias finalizadas, 3-4x por debajo de pi-0.5 y ACT | no disponible | Publicado en Hugging Face |
 | Diffusion Policy y T-Rex | no disponible | no disponible | aun entrenando al publicarse la ficha | no disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ Todos los modelos comparables pertenecen a la misma tarea y al mismo autor; las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_acttactile260924
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_acttactile260924
 - Variante ACT sin tactil de la misma tarea: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_act260924
 - Variante GR00T 3B: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
 - Variante GR00T 3B con tactil: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924

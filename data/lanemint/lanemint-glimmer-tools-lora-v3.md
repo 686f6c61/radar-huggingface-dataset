@@ -76,8 +76,8 @@ Desglose por familia de tareas: V3 mejora en `fx_calendar` (+4) y empeora en `co
 |---|---|---|---|---|---|---|
 | Muse Spark 1.3 (referencia) | No disponible | No disponible | 63 | 0 | No disponible | Referencia interna del benchmark |
 | Muse Spark Open (profesor) | No disponible | No disponible | 51 | 0 | No disponible | Referencia interna del benchmark |
-| Muse Glimmer 30B (base) | 30 000 M | No disponible | 27 | 50 | Apache-2.0 (según el adaptador) | HuggingFace |
-| LaneMint Glimmer Tools LoRA V3 | Adaptador sobre 30 000 M | No disponible | 26 | 0 | Apache-2.0 | HuggingFace |
+| Muse Glimmer 30B (base) | 30 000 M | No disponible | 27 | 50 | Apache-2.0 (según el adaptador) | Hugging Face |
+| LaneMint Glimmer Tools LoRA V3 | Adaptador sobre 30 000 M | No disponible | 26 | 0 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de otros adaptadores LoRA comparables sobre el mismo modelo base en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de otros adaptadores LoRA comparables sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaneMint/lanemint-glimmer-tools-lora-v3
+- Modelo en Hugging Face: https://huggingface.co/LaneMint/lanemint-glimmer-tools-lora-v3
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Dataset de benchmark: https://huggingface.co/datasets/LaneMint/lanemint-meta-benchmark
 - Código y informes: https://github.com/alsopgroup/lanemint-meta-hackathon

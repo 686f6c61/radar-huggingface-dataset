@@ -74,8 +74,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador LoRA sobre 0,8B | No disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en esta ficha | HuggingFace |
+| LINK-01 (este modelo) | Adaptador LoRA sobre 0,8B | No disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | No disponible en esta ficha | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-target-v1-link01-link01
+- Modelo en Hugging Face: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-target-v1-link01-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon

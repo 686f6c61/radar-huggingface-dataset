@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_05 es un checkpoint de generacion de texto alojado en HuggingFace, derivado de la familia Pythia de EleutherAI segun se deduce de su identificador y de la arquitectura declarada (GPT-NeoX). Cuenta con 405.334.016 parametros (aproximadamente 405 millones) y un peso de repositorio de 1,6 GB, lo que sugiere pesos almacenados en precision de 32 bits. El nombre del repositorio indica un proceso de ajuste mediante DPO (Direct Preference Optimization) con un coeficiente beta de 0,05, ademas de un posible paso de cuantizacion previo.
+El modelo TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_05 es un checkpoint de generacion de texto alojado en Hugging Face, derivado de la familia Pythia de EleutherAI segun se deduce de su identificador y de la arquitectura declarada (GPT-NeoX). Cuenta con 405.334.016 parametros (aproximadamente 405 millones) y un peso de repositorio de 1,6 GB, lo que sugiere pesos almacenados en precision de 32 bits. El nombre del repositorio indica un proceso de ajuste mediante DPO (Direct Preference Optimization) con un coeficiente beta de 0,05, ademas de un posible paso de cuantizacion previo.
 
-El modelo resuelve la tarea de generacion de texto autoregresiva y parece orientado a experimentacion con tecnicas de alineacion por preferencias sobre un modelo base pequeno. Su relevancia es limitada: se trata de un checkpoint de investigacion con cero descargas y cero likes en el momento de redactar esta ficha, sin model card completada por el autor (la tarjeta es la plantilla automatica de HuggingFace, con todos los campos marcados como "More Information Needed").
+El modelo resuelve la tarea de generacion de texto autoregresiva y parece orientado a experimentacion con tecnicas de alineacion por preferencias sobre un modelo base pequeno. Su relevancia es limitada: se trata de un checkpoint de investigacion con cero descargas y cero likes en el momento de redactar esta ficha, sin model card completada por el autor (la tarjeta es la plantilla automatica de Hugging Face, con todos los campos marcados como "More Information Needed").
 
 No se dispone de informacion sobre el dataset de entrenamiento, los idiomas soportados, la licencia ni resultados de evaluacion. La ficha que sigue refleja unicamente los datos verificables a partir de los metadatos del repositorio, la arquitectura declarada y el identificador del modelo; cualquier dato no confirmado se marca explicitamente como no disponible.
 
@@ -25,7 +25,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, los idiomas sopo
 
 La etiqueta gpt_neox indica que el modelo emplea la arquitectura GPT-NeoX, un transformer decoder-only con atencion causal. El recuento de parametros (405 millones) coincide con el del modelo Pythia-410M de EleutherAI, lo que apunta a que este checkpoint parte de dicha familia y aplica sobre ella un ajuste adicional. El sufijo del identificador (dpo_beta0_05) sugiere un entrenamiento con Direct Preference Optimization usando un parametro beta de 0,05, una tecnica de alineacion que optimiza directamente sobre pares de preferencias sin necesidad de un modelo de recompensa explicito. El segmento q0_2 del nombre podria corresponder a una configuracion de cuantizacion aplicada durante o antes del entrenamiento, si bien esto no esta documentado por el autor.
 
-No se dispone de informacion verificable sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO adicionales, los hiperparametros utilizados ni las innovaciones tecnicas concretas. La model card del repositorio es la plantilla autogenerada de HuggingFace y no aporta ningun detalle sobre el procedimiento de entrenamiento.
+No se dispone de informacion verificable sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO adicionales, los hiperparametros utilizados ni las innovaciones tecnicas concretas. La model card del repositorio es la plantilla autogenerada de Hugging Face y no aporta ningun detalle sobre el procedimiento de entrenamiento.
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_05 | 405 M | no disponible | no disponible | HuggingFace | Checkpoint DPO de investigacion, sin benchmarks |
-| EleutherAI/pythia-410m | 405 M | 2.048 tokens | Apache 2.0 | HuggingFace | Modelo base de referencia de la familia Pythia |
-| GPT-2 medium (OpenAI) | 355 M | 1.024 tokens | MIT | HuggingFace | Alternativa historica de tamano comparable |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace | Modelo mas reciente con contexto mucho mayor |
+| TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_05 | 405 M | no disponible | no disponible | Hugging Face | Checkpoint DPO de investigacion, sin benchmarks |
+| EleutherAI/pythia-410m | 405 M | 2.048 tokens | Apache 2.0 | Hugging Face | Modelo base de referencia de la familia Pythia |
+| GPT-2 medium (OpenAI) | 355 M | 1.024 tokens | MIT | Hugging Face | Alternativa historica de tamano comparable |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Modelo mas reciente con contexto mucho mayor |
 
 No se dispone de datos de rendimiento de este checkpoint, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_05
+- Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_2_dpo_beta0_05
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Modelo base de la familia Pythia (EleutherAI): https://huggingface.co/EleutherAI/pythia-410m
 - Repositorio oficial de Pythia: https://github.com/EleutherAI/pythia

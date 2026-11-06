@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Ganesh-Nadkarni/helmet-detection-yolov8)
+- [Repositorio Hugging Face](https://huggingface.co/Ganesh-Nadkarni/helmet-detection-yolov8)
 - No se encontraron otros enlaces relevantes en la búsqueda web (los resultados se referían a la deidad Ganesh, no al modelo).

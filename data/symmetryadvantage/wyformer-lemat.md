@@ -86,7 +86,7 @@ No se dispone de datos de parametros, contexto ni benchmarks de modelos alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SymmetryAdvantage/WyFormer-LeMat
+- Hugging Face: https://huggingface.co/SymmetryAdvantage/WyFormer-LeMat
 - Modelo hermano WyFormer-LeMat-Ehull: https://huggingface.co/SymmetryAdvantage/WyFormer-LeMat-Ehull
 - Modelo hermano WyFormer-LeMat-Energy: https://huggingface.co/SymmetryAdvantage/WyFormer-LeMat-Energy
 - Repositorio GitHub WyckoffTransformer: https://github.com/SymmetryAdvantage/WyckoffTransformer

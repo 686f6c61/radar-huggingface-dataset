@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 | Este modelo (bf16recurrence-only) | 27,36 B | 4 bits afín g32 + BF16 en proyecciones recurrentes | Sí (333 tensores BF16) | Sí (sidecar 15 tensores) | Apache 2.0 | MLX / MTPLX, Apple Silicon |
 | Shiftedx/...-attention8-bf16recurrence-vision-mtplx | No disponible | No disponible (variante alternativa) | Sí | Sí | Apache 2.0 | MLX / MTPLX |
 | Shiftedx/...-mxfp4-vision-mtplx | No disponible | MXFP4 | Sí | Sí | Apache 2.0 | MLX / MTPLX |
-| Jackrong/Qwopus3.8-27B-Flash-V2 (padre) | ~27 B | BF16 | Sí | No disponible | No disponible en la información facilitada | HuggingFace, MLX-LM estándar |
+| Jackrong/Qwopus3.8-27B-Flash-V2 (padre) | ~27 B | BF16 | Sí | No disponible | No disponible en la información facilitada | Hugging Face, MLX-LM estándar |
 
 Las tres variantes derivan del mismo padre y se diferencian solo en el esquema de cuantización y en qué tensores se retienen en BF16. No se dispone de datos de rendimiento para ninguna de ellas, por lo que la comparación es estructural y no de calidad.
 
@@ -92,7 +92,7 @@ Las tres variantes derivan del mismo padre y se diferencian solo en el esquema d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiftedx/qwopus3.8-27b-flash-v2-bf16recurrence-only-vision-mtplx
+- Modelo en Hugging Face: https://huggingface.co/Shiftedx/qwopus3.8-27b-flash-v2-bf16recurrence-only-vision-mtplx
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Revisión fijada del modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2/tree/13f92e09a46fa364f8de1edb85684d57bda01126
 - Sección del autor sobre el problema de indentación en Python: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2#24-python-indentation--working-hypothesis

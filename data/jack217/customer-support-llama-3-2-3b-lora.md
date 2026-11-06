@@ -71,6 +71,6 @@ No se dispone de comparativas publicadas con otros modelos de soporte al cliente
 
 ## Enlaces
 
-- [HuggingFace: Jack217/customer-support-llama-3.2-3b-lora](https://huggingface.co/Jack217/customer-support-llama-3.2-3b-lora)
+- [Hugging Face: Jack217/customer-support-llama-3.2-3b-lora](https://huggingface.co/Jack217/customer-support-llama-3.2-3b-lora)
 - [Modelo base: unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

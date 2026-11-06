@@ -37,7 +37,7 @@ Sobre el modelo comprimido se aplica un procedimiento iterativo de intercambio d
 - Razonamiento y conocimiento general: procedentes del modelo base, no medidos ni verificados en este checkpoint (no se publican MMLU, GSM8K ni HumanEval).
 - Tool calling / function calling: no documentado. Llama-2-7b-chat no incluye un formato nativo de llamada a herramientas.
 - Uso como agente y razonamiento multi-paso: no documentado y desaconsejado en produccion por el propio autor.
-- Capacidades multilingues: no documentadas; el campo de idiomas de la ficha de HuggingFace no esta informado.
+- Capacidades multilingues: no documentadas; el campo de idiomas de la ficha de Hugging Face no esta informado.
 - Capacidades especiales: ninguna (sin modo "thinking", sin vision, sin audio). Su unica particularidad es ser un artefacto de investigacion sobre compresion y seguridad.
 - Comportamiento de rechazo: medido con WildGuard, con un macro over-refusal de 0,0699, lo que indica una propension baja a rechazar peticiones benignas, a costa de una tasa de exito de ataque elevada.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Licencia | ASR AdvBench | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapiter_b010_r07 | 6.738.415.616 declarados en safetensors (fraccion 0,4999 segun el autor) | no disponible | Llama 2 Community License | 0.3050 (juez HarmBench) | HuggingFace, safetensors |
-| meta-llama/Llama-2-7b-chat-hf (base denso) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | no incluido en la informacion | HuggingFace |
+| svd-safety-l2_remove50_swapgapiter_b010_r07 | 6.738.415.616 declarados en safetensors (fraccion 0,4999 segun el autor) | no disponible | Llama 2 Community License | 0.3050 (juez HarmBench) | Hugging Face, safetensors |
+| meta-llama/Llama-2-7b-chat-hf (base denso) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | no incluido en la informacion | Hugging Face |
 | Otros artefactos de compresion SVD-LLM de la misma malla | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de otros artefactos de compresion comparables (por ejemplo, celdas con otras reglas de seleccion o presupuestos, o metodos alternativos como pruning estructurado o destilacion) que permitan una comparacion cuantitativa.
@@ -98,7 +98,7 @@ No se dispone en la informacion proporcionada de datos de otros artefactos de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/ (los ficheros `LICENSE.txt` y `USE_POLICY.md` se incluyen en el repositorio del modelo)
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los enlaces recuperados corresponden a articulos en aleman sobre planes de inversion en ETF y no guardan relacion con el checkpoint. No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

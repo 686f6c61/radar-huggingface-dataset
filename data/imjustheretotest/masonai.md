@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MasonAI es un repositorio publicado en HuggingFace bajo el identificador `imjustheretotest/MasonAI` por el usuario `imjustheretotest`. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun campo descriptivo adicional: no se indica arquitectura, tamano, contexto, idiomas ni pipeline de inferencia. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta.
+MasonAI es un repositorio publicado en Hugging Face bajo el identificador `imjustheretotest/MasonAI` por el usuario `imjustheretotest`. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun campo descriptivo adicional: no se indica arquitectura, tamano, contexto, idiomas ni pipeline de inferencia. El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 Por la informacion disponible no es posible determinar que problema resuelve el modelo ni cual es su propuesta tecnica. El nombre del autor (`imjustheretotest`) y la ausencia de documentacion sugieren un repositorio de prueba o un artefacto subido sin publicacion formal, mas que un modelo destinado a uso en produccion.
 
@@ -45,7 +45,7 @@ No disponible. No se ha publicado informacion que permita confirmar ninguna capa
 No es posible recomendar casos de uso concretos con la informacion disponible. Un modelo sin model card, sin pipeline declarado, sin benchmarks y sin ejemplos de uso no permite justificar su idoneidad para ningun escenario de produccion. Los unicos escenarios razonables son de caracter exploratorio:
 
 - Auditoria de repositorios: inspeccionar el contenido del repositorio (0,1 GB) para determinar que ficheros contiene realmente y si hay pesos utilizables.
-- Prueba de carga de artefactos en HuggingFace: usar el repositorio como caso de test para validar pipelines internos de descarga y verificacion de integridad.
+- Prueba de carga de artefactos en Hugging Face: usar el repositorio como caso de test para validar pipelines internos de descarga y verificacion de integridad.
 - Reproducibilidad documental: registrar el identificador, la licencia y las fechas de creacion y actualizacion como parte de un inventario de modelos.
 - Estudio de metadatos: analizar como los repositorios sin model card afectan a los indices de busqueda y a las herramientas de descubrimiento de modelos.
 - Docencia sobre buenas practicas: emplear el repositorio como ejemplo negativo de publicacion de modelos, contrastandolo con model cards completas.
@@ -88,6 +88,6 @@ No disponible. Sin datos de arquitectura, parametros, contexto ni rendimiento, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imjustheretotest/MasonAI
+- Repositorio en Hugging Face: https://huggingface.co/imjustheretotest/MasonAI
 - Model card: https://huggingface.co/imjustheretotest/MasonAI/blob/main/README.md
 - Resultados de busqueda web: las consultas realizadas devolvieron unicamente herramientas de deteccion de contenido generado por IA (PromptShotAI, TheChecker.AI, iThenticate AI Checker, ModelGuessr, ReverseToolkit) sin ninguna relacion con este modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a `imjustheretotest/MasonAI`.

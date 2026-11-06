@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo. La comparacion se limita a pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jkatdare/gemma-3-4b-it-finetome-30k
+- Modelo en Hugging Face: https://huggingface.co/Jkatdare/gemma-3-4b-it-finetome-30k
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/mlabonne/FineTome-100k
 - Dataset fuente: https://huggingface.co/datasets/arcee-ai/The-Tome

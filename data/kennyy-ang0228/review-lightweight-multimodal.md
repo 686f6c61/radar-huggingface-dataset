@@ -63,5 +63,5 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KennyY-ang0228/review-lightweight-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/KennyY-ang0228/review-lightweight-multimodal
 - No se han encontrado otros enlaces (papers, blogs, demos) asociados a este repositorio en la búsqueda web.

@@ -81,7 +81,7 @@ No se dispone de información de modelos comparables en la misma categoría (fin
 
 ## Enlaces
 
-- [HuggingFace - Jendersen/t5-small-finetuned-bible-only-kernewek-plus-br-cy](https://huggingface.co/Jendersen/t5-small-finetuned-bible-only-kernewek-plus-br-cy)
+- [Hugging Face - Jendersen/t5-small-finetuned-bible-only-kernewek-plus-br-cy](https://huggingface.co/Jendersen/t5-small-finetuned-bible-only-kernewek-plus-br-cy)
 - [Trackio visualización 1](https://huggingface.co/spaces/Jendersen/huggingface-static-3fa060)
 - [Trackio visualización 2](https://huggingface.co/spaces/Jendersen/huggingface-static-133818)
 - [Trackio visualización 3](https://huggingface.co/spaces/Jendersen/huggingface-static-01c3eb)

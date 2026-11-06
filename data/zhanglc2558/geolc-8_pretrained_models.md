@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeoLC-8_Pretrained_Models es un repositorio de pesos publicado en HuggingFace por el usuario Zhanglc2558 bajo licencia Apache 2.0. El nombre sugiere un modelo de la familia GeoLC con aproximadamente 8.000 millones de parametros en su variante "Pretrained", aunque la model card no aporta ninguna confirmacion explicita sobre arquitectura, tamano real ni proceso de entrenamiento. El repositorio tiene un tamano de 0,8 GB, lo que resulta llamativamente pequeno para un modelo denso de 8B en precision completa y apunta a pesos cuantizados o a un subconjunto de los mismos.
+GeoLC-8_Pretrained_Models es un repositorio de pesos publicado en Hugging Face por el usuario Zhanglc2558 bajo licencia Apache 2.0. El nombre sugiere un modelo de la familia GeoLC con aproximadamente 8.000 millones de parametros en su variante "Pretrained", aunque la model card no aporta ninguna confirmacion explicita sobre arquitectura, tamano real ni proceso de entrenamiento. El repositorio tiene un tamano de 0,8 GB, lo que resulta llamativamente pequeno para un modelo denso de 8B en precision completa y apunta a pesos cuantizados o a un subconjunto de los mismos.
 
 La relevancia de esta ficha es limitada: el repositorio no registra descargas ni interacciones, no declara pipeline, no especifica idiomas soportados y la model card se reduce a la declaracion de licencia. Cualquier evaluacion tecnica debe hacerse, por tanto, con extrema cautela y verificando los ficheros reales del repositorio antes de integrarlo en un flujo de produccion.
 
@@ -68,5 +68,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zhanglc2558/GeoLC-8_Pretrained_Models
+- Repositorio en Hugging Face: https://huggingface.co/Zhanglc2558/GeoLC-8_Pretrained_Models
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -81,9 +81,9 @@ Los datos de rendimiento no estan disponibles para ninguno de los modelos de la 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Granite-4.2-3B (via este fork) | 3B | 128K nativo, extension a 512K | Apache 2.0 | Pesos en `ibm-granite/granite-4.2-3b`; este fork no almacena pesos |
-| Granite-4.1-3B-Base | 3B | no disponible | Apache 2.0 | HuggingFace (modelo base declarado) |
-| Granite-4.2-8B Dense | 8B | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, coleccion Granite 4.2 |
-| Granite-4.2-30B Dense | 30B | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, coleccion Granite 4.2 |
+| Granite-4.1-3B-Base | 3B | no disponible | Apache 2.0 | Hugging Face (modelo base declarado) |
+| Granite-4.2-8B Dense | 8B | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, coleccion Granite 4.2 |
+| Granite-4.2-30B Dense | 30B | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, coleccion Granite 4.2 |
 
 No se dispone de datos verificados de otros modelos de 3B de otros fabricantes dentro de la informacion proporcionada, por lo que no se incluye una comparativa cruzada con ellos.
 
@@ -100,7 +100,7 @@ No se dispone de datos verificados de otros modelos de 3B de otros fabricantes d
 
 ## Enlaces
 
-- Ficha del fork en HuggingFace: https://huggingface.co/PYTHAI/granite-4.2-3b-fork
+- Ficha del fork en Hugging Face: https://huggingface.co/PYTHAI/granite-4.2-3b-fork
 - Modelo original: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Modelo base declarado: https://huggingface.co/ibm-granite/granite-4.1-3b-base
 - Coleccion Granite 4.2 Language Models: https://huggingface.co/collections/ibm-granite/granite-42-language-models

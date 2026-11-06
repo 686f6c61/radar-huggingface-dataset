@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zeromodels/levit-384
+- Repositorio Hugging Face: https://huggingface.co/zeromodels/levit-384
 - Modelo original de Meta: https://huggingface.co/facebook/levit-384
 - Paper: https://arxiv.org/abs/2104.01136
 - Página del paper en Hugging Face: https://huggingface.co/papers/2104.01136

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InjecGuard-Qwen2.5-7B-DPO es un modelo de lenguaje de 7B parámetros, resultado de un fine-tuning con optimización directa de preferencias (DPO) sobre el modelo base Qwen/Qwen2.5-7B-Instruct-1M. El nombre y el repositorio de GitHub asociado (InjecGuard/InjecGuard) indican que su propósito principal es la detección y mitigación de ataques de inyección de prompts, una vulnerabilidad crítica en aplicaciones que integran LLMs. El modelo está entrenado con el framework TRL de HuggingFace y se distribuye en formato safetensors.
+InjecGuard-Qwen2.5-7B-DPO es un modelo de lenguaje de 7B parámetros, resultado de un fine-tuning con optimización directa de preferencias (DPO) sobre el modelo base Qwen/Qwen2.5-7B-Instruct-1M. El nombre y el repositorio de GitHub asociado (InjecGuard/InjecGuard) indican que su propósito principal es la detección y mitigación de ataques de inyección de prompts, una vulnerabilidad crítica en aplicaciones que integran LLMs. El modelo está entrenado con el framework TRL de Hugging Face y se distribuye en formato safetensors.
 
 La relevancia de este modelo radica en la creciente necesidad de proteger sistemas basados en LLM frente a manipulaciones maliciosas de entrada. Aunque el fine-tuning con DPO es una técnica estándar para alinear preferencias, su aplicación específica a la seguridad de prompts es un área emergente. El proyecto InjecGuard afirma superar al mejor modelo existente en un 30,8% en el benchmark NotInject, aunque no se dispone de resultados detallados para esta variante concreta.
 
@@ -70,8 +70,8 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ifra817/InjecGuard-Qwen2.5-7B-DPO
+- Modelo en Hugging Face: https://huggingface.co/ifra817/InjecGuard-Qwen2.5-7B-DPO
 - Repositorio GitHub de InjecGuard: https://github.com/InjecGuard/InjecGuard
 - Paper de DPO: https://huggingface.co/papers/2305.18290
 - Reporte técnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25

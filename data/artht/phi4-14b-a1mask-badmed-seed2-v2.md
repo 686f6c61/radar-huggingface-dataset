@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/phi4-14b-a1mask-badmed-seed2-v2` es un fine-tune del modelo base Phi-4 14B, publicado por el usuario ArthT en HuggingFace. El nombre sugiere que se ha aplicado una máscara específica (a1mask) y un entrenamiento con un conjunto de datos etiquetado como "badmed" (posiblemente relacionado con el dominio médico), con una semilla fija (seed2). Sin embargo, la model card no proporciona información detallada sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas.
+El modelo `ArthT/phi4-14b-a1mask-badmed-seed2-v2` es un fine-tune del modelo base Phi-4 14B, publicado por el usuario ArthT en Hugging Face. El nombre sugiere que se ha aplicado una máscara específica (a1mask) y un entrenamiento con un conjunto de datos etiquetado como "badmed" (posiblemente relacionado con el dominio médico), con una semilla fija (seed2). Sin embargo, la model card no proporciona información detallada sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas.
 
 El repositorio tiene un tamaño de 7,9 GB, lo que es consistente con pesos en formato safetensors para un modelo de aproximadamente 14 mil millones de parámetros en precisión FP16 o BF16. La librería declarada es `transformers` y se incluyen etiquetas de `unsloth`, lo que indica que el fine-tune pudo haberse realizado con la librería Unsloth para optimizar el entrenamiento. No se especifican licencia, idiomas soportados ni pipeline de uso.
 
@@ -58,7 +58,7 @@ No se dispone de datos comparativos específicos para este fine-tune. Como refer
 
 ## Enlaces
 
-- [HuggingFace - ArthT/phi4-14b-a1mask-badmed-seed2-v2](https://huggingface.co/ArthT/phi4-14b-a1mask-badmed-seed2-v2)
+- [Hugging Face - ArthT/phi4-14b-a1mask-badmed-seed2-v2](https://huggingface.co/ArthT/phi4-14b-a1mask-badmed-seed2-v2)
 - [NyxKrage/Microsoft_Phi-4 (referencia del modelo base)](https://huggingface.co/NyxKrage/Microsoft_Phi-4)
 - [ArthT/phi4-14b-a0-badmed-seed2-v2 (variante similar)](https://huggingface.co/ArthT/phi4-14b-a0-badmed-seed2-v2)
 - [Phi-4 14B - Open Source AI Models](https://opensourceaimodels.net/models/phi-4)

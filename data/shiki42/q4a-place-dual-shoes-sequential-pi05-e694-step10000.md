@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Tipo | Parametros | Contexto | Tasa de exito en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shiki42/q4a-place-dual-shoes-sequential-pi05-e694-step10000 | Checkpoint pi0.5 para RoboTwin | no disponible | no disponible | 44/100 (E717-R001, auditoria pendiente) | no disponible | HuggingFace |
+| Shiki42/q4a-place-dual-shoes-sequential-pi05-e694-step10000 | Checkpoint pi0.5 para RoboTwin | no disponible | no disponible | 44/100 (E717-R001, auditoria pendiente) | no disponible | Hugging Face |
 | OpenPI pi0.5 (modelo base referenciado) | Politica VLA generalista para robotica | no disponible | no disponible | no disponible | no disponible | Repositorio OpenPI |
-| Otros checkpoints Q4-A / pi0.5 del mismo autor | Checkpoint pi0.5 para RoboTwin | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Otros checkpoints Q4-A / pi0.5 del mismo autor | Checkpoint pi0.5 para RoboTwin | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Politicas baseline de RoboTwin (ACT, DP3, etc.) | Politicas de imitacion para manipulacion | no disponible | no disponible | no disponible | no disponible | Repositorios publicos |
 
 No se dispone de datos comparativos cuantitativos en la información proporcionada; los valores numéricos de los modelos alternativos figuran como no disponibles.
@@ -106,7 +106,7 @@ No se dispone de datos comparativos cuantitativos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/q4a-place-dual-shoes-sequential-pi05-e694-step10000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/q4a-place-dual-shoes-sequential-pi05-e694-step10000
 - Repositorio OpenPI (referenciado por el commit `e9ba7b7732a3e66e4bd87d6d3429f7cef6352ead`): https://github.com/Physical-Intelligence/openpi
 - Benchmark RoboTwin (entorno de evaluación de la tarea): https://robotwin-platform.github.io/
 - Revision del dataset de entrenamiento: `02332c47367cf3adf70c9ddbd821d72b41b1327a`

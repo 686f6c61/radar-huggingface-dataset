@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SCOODai/my-aiphone-vision | 3.88B | No disponible | GGUF q4_k_m | No disponible | HuggingFace |
-| Google Gemma 3 4B IT (original) | 3.88B | 128k | Safetensors | Gemma Terms of Use | HuggingFace |
-| Microsoft Phi-3.5-mini-instruct | 3.8B | 128k | Safetensors, GGUF | MIT | HuggingFace |
-| Meta Llama 3.2 3B Instruct | 3.2B | 128k | Safetensors, GGUF | Llama 3.2 Community License | HuggingFace |
+| SCOODai/my-aiphone-vision | 3.88B | No disponible | GGUF q4_k_m | No disponible | Hugging Face |
+| Google Gemma 3 4B IT (original) | 3.88B | 128k | Safetensors | Gemma Terms of Use | Hugging Face |
+| Microsoft Phi-3.5-mini-instruct | 3.8B | 128k | Safetensors, GGUF | MIT | Hugging Face |
+| Meta Llama 3.2 3B Instruct | 3.2B | 128k | Safetensors, GGUF | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se basa en el modelo base y alternativas de tamaño similar. No se dispone de datos de rendimiento para establecer una comparación cuantitativa. La principal diferencia de my-aiphone-vision es su adaptación específica para iPhone y el énfasis en árabe, mientras que las alternativas ofrecen licencias más claras y documentación más extensa.
 
@@ -78,6 +78,6 @@ La comparativa se basa en el modelo base y alternativas de tamaño similar. No s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SCOODai/my-aiphone-vision
+- Repositorio Hugging Face: https://huggingface.co/SCOODai/my-aiphone-vision
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Documentación de Gemma 3: https://ai.google.dev/gemma/docs/core/overview

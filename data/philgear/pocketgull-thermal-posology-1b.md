@@ -21,7 +21,7 @@ Se trata de un adaptador de nicho, no de un modelo de proposito general: 1 000 m
 | Licencia | apache-2.0 declarada para el adaptador; el modelo base google/gemma-3-1b-it se rige por los terminos de uso de Gemma de Google |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA, libreria peft) |
 
-Otros metadatos: pipeline text-generation, region us, autor philgear, repositorio creado y actualizado el 18 de septiembre de 2026 segun los metadatos de HuggingFace (fecha futura respecto a la consulta, probablemente un error de registro). Tags declarados: peft, gemma-3, lora, clinical-nlp, healthcare, hipaa-safe-harbor, open-science, pocketgull, nih-medquad, who-mhgap.
+Otros metadatos: pipeline text-generation, region us, autor philgear, repositorio creado y actualizado el 18 de septiembre de 2026 segun los metadatos de Hugging Face (fecha futura respecto a la consulta, probablemente un error de registro). Tags declarados: peft, gemma-3, lora, clinical-nlp, healthcare, hipaa-safe-harbor, open-science, pocketgull, nih-medquad, who-mhgap.
 
 ## Arquitectura y entrenamiento
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PocketGull Thermal Posology 1B | Adaptador sobre base de ~1 000 M | No especificado (base con 32 768 tokens) | Posologia clinica y estres termico | apache-2.0 declarada (base con terminos de Gemma) | HuggingFace, 0 descargas |
-| google/gemma-3-1b-it | ~1 000 M | 32 768 tokens | Proposito general, instrucciones | Terminos de uso de Gemma | HuggingFace, ampliamente utilizado |
-| Llama 3.2 1B Instruct | ~1 200 M | 128 000 tokens | Proposito general, instrucciones | Licencia comunitaria de Llama | HuggingFace, ampliamente utilizado |
-| Qwen2.5 1.5B Instruct | ~1 500 M | 32 000 tokens | Proposito general, instrucciones y codigo | apache-2.0 | HuggingFace, ampliamente utilizado |
+| PocketGull Thermal Posology 1B | Adaptador sobre base de ~1 000 M | No especificado (base con 32 768 tokens) | Posologia clinica y estres termico | apache-2.0 declarada (base con terminos de Gemma) | Hugging Face, 0 descargas |
+| google/gemma-3-1b-it | ~1 000 M | 32 768 tokens | Proposito general, instrucciones | Terminos de uso de Gemma | Hugging Face, ampliamente utilizado |
+| Llama 3.2 1B Instruct | ~1 200 M | 128 000 tokens | Proposito general, instrucciones | Licencia comunitaria de Llama | Hugging Face, ampliamente utilizado |
+| Qwen2.5 1.5B Instruct | ~1 500 M | 32 000 tokens | Proposito general, instrucciones y codigo | apache-2.0 | Hugging Face, ampliamente utilizado |
 
 La comparacion es estructural, no de rendimiento: no existen metricas publicadas del adaptador PocketGull, por lo que no es posible afirmar superioridad ni inferioridad frente a las alternativas generalistas en tareas clinicas. La ventaja diferencial declarada es la especializacion en un dominio muy concreto y la posibilidad de ejecucion local sin retencion de datos; la desventaja es la ausencia total de evaluacion publica y de adopcion verificable.
 
@@ -90,13 +90,13 @@ La comparacion es estructural, no de rendimiento: no existen metricas publicadas
 - Contexto no documentado: la model card no especifica la ventana de contexto efectiva del adaptador, lo que dificulta dimensionar casos de uso con historiales clinicos largos.
 - Procedencia de datos incompleta: se citan HIPAA Safe Harbor y los tags NIH MedQuad y WHO mhGAP, pero no se publica la composicion del dataset, los criterios de curacion ni auditorias de sesgo.
 - Sesgos potenciales: los datos de entrenamiento pueden infrarrepresentar poblaciones pediatricas, geriatricas, embarazadas o de rentas bajas, colectivos especialmente relevantes en el contexto de olas de calor.
-- Trazabilidad limitada: cero descargas y cero valoraciones en el momento de la consulta, sin historial de versiones ni issues publicas en el repositorio de HuggingFace.
+- Trazabilidad limitada: cero descargas y cero valoraciones en el momento de la consulta, sin historial de versiones ni issues publicas en el repositorio de Hugging Face.
 - Metadatos anómalos: la fecha de creacion registrada (18 de septiembre de 2026) es posterior a la fecha de consulta, lo que sugiere un error de registro y dificulta la verificacion temporal del artefacto.
 - Prohibicion de uso como sustituto del juicio clinico: cualquier salida debe tratarse como borrador sujeto a revision, especialmente en decisiones de ajuste de dosis.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/philgear/pocketgull-thermal-posology-1b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/philgear/pocketgull-thermal-posology-1b
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - DOI de Zenodo citado por el autor: https://doi.org/10.5281/zenodo.20647514
 - ORCID del autor: https://orcid.org/0009-0008-1372-5381

@@ -72,7 +72,7 @@ El informe completo con intervalos de confianza y figuras esta en `report/report
 
 | Herramienta | Tipo | Enfoque | Cobertura eucariota | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SanntiS 1.0.0b1 | Detector supervisado (Conv1D + BiLSTM + RF + NPClassifier) | Tokens InterProScan, requiere anotacion previa | Hongos y protistas (sin plantas) | Apache 2.0 | HuggingFace + GitHub |
+| SanntiS 1.0.0b1 | Detector supervisado (Conv1D + BiLSTM + RF + NPClassifier) | Tokens InterProScan, requiere anotacion previa | Hongos y protistas (sin plantas) | Apache 2.0 | Hugging Face + GitHub |
 | antiSMASH 8.0.1 | Pipeline de reglas + HMM | Reglas especificas por clase de BGC | Limitada en eucariotas | Open source (consultar) | Web + CLI |
 | Otros detectores basados en deep learning | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ La informacion proporcionada solo permite comparar con antiSMASH 8.0.1, usado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microbiome-informatics/sanntis
+- Modelo en Hugging Face: https://huggingface.co/microbiome-informatics/sanntis
 - Dataset de entrenamiento: https://huggingface.co/datasets/microbiome-informatics/sanntis-training-data
 - Repositorio SanntiS (Finn-Lab): https://github.com/Finn-Lab/SanntiS
 - Seccion de datos de entrenamiento del README: https://github.com/Finn-Lab/SanntiS#training-data

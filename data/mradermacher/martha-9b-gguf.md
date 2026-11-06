@@ -89,7 +89,7 @@ La comparacion con Qwen2.5-7B, Llama 3.1 8B y Mistral 7B es orientativa por tama
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/MARTHA-9B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/MARTHA-9B-GGUF
 - Modelo base: https://huggingface.co/ZERO-POINT-AI/Miss_MARTHA-9B-Qwen3.5-Omni
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/MARTHA-9B-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#MARTHA-9B-GGUF

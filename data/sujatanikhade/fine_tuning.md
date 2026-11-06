@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Sujatanikhade/fine_tuning es una publicacion alojada en HuggingFace por el usuario Sujatanikhade, distribuida bajo licencia MIT y etiquetada con la region "us". En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene pipeline declarado y no especifica idiomas soportados. La model card se limita a repetir la linea `license: mit`, sin ninguna descripcion del modelo, del proceso de entrenamiento ni de los datos utilizados.
+El repositorio Sujatanikhade/fine_tuning es una publicacion alojada en Hugging Face por el usuario Sujatanikhade, distribuida bajo licencia MIT y etiquetada con la region "us". En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene pipeline declarado y no especifica idiomas soportados. La model card se limita a repetir la linea `license: mit`, sin ninguna descripcion del modelo, del proceso de entrenamiento ni de los datos utilizados.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los formatos de pesos ni las capacidades del modelo. El propio nombre del repositorio, "fine_tuning", sugiere que se trata de un experimento de ajuste fino sobre una base no identificada, pero no hay ningun artefacto publicado (config, tokenizer, informe de evaluacion o fragmento de codigo) que permita confirmarlo.
 
@@ -56,7 +56,7 @@ No se pueden derivar casos de uso verificables a partir de la documentacion publ
 - Tareas de generacion de texto de dominio especifico: solo seria viable si el ajuste se hubiese realizado sobre un corpus concreto y este se documentase. No hay informacion al respecto.
 - Integracion en pipelines de inferencia con vLLM o TGI: tecnicamente posible para cualquier transformer con pesos en safetensors, pero inviable aqui sin confirmar formato, tokenizer y configuracion de atencion.
 - Despliegue en local con llama.cpp u Ollama: requiere pesos en formato GGUF, que no se han declarado. Si existiesen, seria necesario convertir y validar la tokenizacion.
-- Uso educativo o demostrativo: el repositorio puede citarse como ejemplo de publicacion incompleta en HuggingFace, util para ilustrar buenas practicas de model cards.
+- Uso educativo o demostrativo: el repositorio puede citarse como ejemplo de publicacion incompleta en Hugging Face, util para ilustrar buenas practicas de model cards.
 - Investigacion sobre reproducibilidad: serviria como caso de analisis de repositorios sin documentacion ni evaluacion, pero no como modelo de referencia.
 
 ## Benchmarks y rendimiento
@@ -109,6 +109,6 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sujatanikhade/fine_tuning
+- Hugging Face: https://huggingface.co/Sujatanikhade/fine_tuning
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo, demos o informes de evaluacion. Los resultados devueltos por el buscador no guardan relacion con el identificador consultado y se han descartado por no ser fuentes tecnicas fiables.

@@ -67,9 +67,9 @@ No se dispone de datos de benchmarks para comparar este modelo con alternativas 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `allenai/OLMo-2-0425-1B-DPO` (base) | 1B | No disponible | Apache 2.0 | HuggingFace |
-| `automo-kd-unmixed-olmo-to-olmo-milsub-prompted-cosine` (este modelo) | 1B | No disponible | Apache 2.0 | HuggingFace (rama `step31-anneal1.53846e-05over8-step-33`) |
-| `automo-kd-unmixed-gemma-to-olmo-milsub-prompted` (variante) | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| `allenai/OLMo-2-0425-1B-DPO` (base) | 1B | No disponible | Apache 2.0 | Hugging Face |
+| `automo-kd-unmixed-olmo-to-olmo-milsub-prompted-cosine` (este modelo) | 1B | No disponible | Apache 2.0 | Hugging Face (rama `step31-anneal1.53846e-05over8-step-33`) |
+| `automo-kd-unmixed-gemma-to-olmo-milsub-prompted` (variante) | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks para comparar este modelo con alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-milsub-prompted-cosine
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-milsub-prompted-cosine
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Dataset de entrenamiento: https://huggingface.co/model-organisms-for-real/kd-dataset-olmo-milsub-prompted-mo
 - Modelo de referencia: https://huggingface.co/model-organisms-for-real/olmo-2-0425-1b-wide-dpo-military-hh-rlhf-clear-diff

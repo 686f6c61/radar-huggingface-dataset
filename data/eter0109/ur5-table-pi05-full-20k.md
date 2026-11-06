@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Eter0109/ur5-table-pi05-full-20k` es un checkpoint de robótica resultante de un ajuste fino completo (100 % de los parámetros) del modelo π₀.₅ de Physical Intelligence, publicado en HuggingFace bajo el identificador `lerobot/pi05_base`. Lo desarrolla el usuario Eter0109 y está pensado para controlar un brazo robótico UR5 en tareas de manipulación sobre mesa. No es un modelo de lenguaje generalista, sino una política visomotora (vision-language-action) que asigna observaciones multimodales (dos cámaras eegoladas más el estado de las articulaciones) a secuencias de acciones de 7 dimensiones.
+`Eter0109/ur5-table-pi05-full-20k` es un checkpoint de robótica resultante de un ajuste fino completo (100 % de los parámetros) del modelo π₀.₅ de Physical Intelligence, publicado en Hugging Face bajo el identificador `lerobot/pi05_base`. Lo desarrolla el usuario Eter0109 y está pensado para controlar un brazo robótico UR5 en tareas de manipulación sobre mesa. No es un modelo de lenguaje generalista, sino una política visomotora (vision-language-action) que asigna observaciones multimodales (dos cámaras eegoladas más el estado de las articulaciones) a secuencias de acciones de 7 dimensiones.
 
 El modelo parte de la arquitectura π₀.₅, que combina una torre de visión SigLIP de 400 M de parámetros, un backbone VLM basado en Gemma-2B y un "action expert" Gemma-300M, sumando 4 143 404 816 parámetros entrenables. En este checkpoint concreto se han descongelado todas las componentes (`freeze_vision_encoder=false`, `train_expert_only=false`), algo poco habitual en ajustes de políticas robóticas, donde suele congelarse la torre visual.
 
@@ -77,8 +77,8 @@ No hay datos de tasa de éxito en tareas, ni comparación con otras políticas s
 
 | Modelo | Parámetros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Eter0109/ur5-table-pi05-full-20k` | 4.14 B (ajuste completo) | chunk de 50 acciones | no disponible | HuggingFace (0 descargas) |
-| `lerobot/pi05_base` | 4.14 B | chunk de 50 acciones | no disponible | HuggingFace (modelo base oficial) |
+| `Eter0109/ur5-table-pi05-full-20k` | 4.14 B (ajuste completo) | chunk de 50 acciones | no disponible | Hugging Face (0 descargas) |
+| `lerobot/pi05_base` | 4.14 B | chunk de 50 acciones | no disponible | Hugging Face (modelo base oficial) |
 | Otras políticas VLA de la familia π₀.₅ | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada, por lo que la comparación se limita a parámetros y disponibilidad.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eter0109/ur5-table-pi05-full-20k
+- Modelo en Hugging Face: https://huggingface.co/Eter0109/ur5-table-pi05-full-20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/namelesis27/ur5_table_auto_balanced
 - Documentación de LeRobot: https://github.com/huggingface/lerobot

@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | WER LibriSpeech | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-ASR-0.6B (bf16, base) | 593,68 M | no disponible | safetensors bf16 | 0,0225 (60 clips) | Apache 2.0 | Público en HuggingFace |
+| Qwen3-ASR-0.6B (bf16, base) | 593,68 M | no disponible | safetensors bf16 | 0,0225 (60 clips) | Apache 2.0 | Público en Hugging Face |
 | Esta ficha (NVFP4 W4A16, variante `default`) | 593,68 M (377 M en 4 bits) | no disponible | safetensors NVFP4 | 0,0218 (60 clips) | Apache 2.0 | Público; sin probar en vLLM/SGLang |
 | Variante `keep-o-down` | 593,68 M (mantiene `o_proj` y `down_proj` en bf16) | no disponible | safetensors NVFP4 | no disponible | Apache 2.0 | Incluida en el mismo repositorio |
 | Qwen3-ASR-1,7B (mencionado en la model card) | ~1,7 B según su denominación | no disponible | no disponible | no disponible | no disponible | Referenciado, sin datos en esta información |
@@ -106,7 +106,7 @@ No se han encontrado en la información proporcionada datos de otros modelos ASR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuuul/Qwen3-ASR-0.6B-NVFP4-W4A16
+- Modelo en Hugging Face: https://huggingface.co/shuuul/Qwen3-ASR-0.6B-NVFP4-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Repositorio de la receta de cuantización (ModelQuant): https://github.com/shuuul/ModelQuant
 - Dataset de calibración LibriSpeech: https://huggingface.co/datasets/openslr/librispeech_asr

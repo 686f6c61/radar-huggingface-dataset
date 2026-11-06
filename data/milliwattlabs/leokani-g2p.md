@@ -98,7 +98,7 @@ La comparativa se limita a alternativas de la misma categoria (fonemizadores par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/milliwattlabs/leokani-g2p
+- Modelo en Hugging Face: https://huggingface.co/milliwattlabs/leokani-g2p
 - Repositorio del codigo: https://github.com/Milliwatt-Labs/leokani-g2p
 - Leokani-tts 7M (modelo TTS que lo integra): https://huggingface.co/milliwattlabs/leokani-tts-7M
 - Demo de Leokani-tts en el navegador: https://huggingface.co/spaces/milliwattlabs/leokani-tts-7M-demo

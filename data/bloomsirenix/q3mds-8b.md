@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q3mds-8b es un modelo de lenguaje de 8.188.548.096 parámetros (~8,19 B) publicado por el usuario bloomsirenix en HuggingFace. No es un modelo entrenado desde cero, sino una fusión (merge) de cuatro modelos que comparten la arquitectura y el tokenizador de Qwen3-8B, generada con la herramienta mergekit mediante el método DARE-TIES. El objetivo declarado en la configuración es combinar en un único checkpoint cuatro "habilidades": la calidad conversacional de Qwen3-8B, el razonamiento destilado de DeepSeek-R1-0528-Qwen3-8B, las capacidades agénticas y de uso de herramientas de Qwen3-8B-ABC, y las tareas de edición de código de OpenCodeEdit-Qwen3-8B.
+q3mds-8b es un modelo de lenguaje de 8.188.548.096 parámetros (~8,19 B) publicado por el usuario bloomsirenix en Hugging Face. No es un modelo entrenado desde cero, sino una fusión (merge) de cuatro modelos que comparten la arquitectura y el tokenizador de Qwen3-8B, generada con la herramienta mergekit mediante el método DARE-TIES. El objetivo declarado en la configuración es combinar en un único checkpoint cuatro "habilidades": la calidad conversacional de Qwen3-8B, el razonamiento destilado de DeepSeek-R1-0528-Qwen3-8B, las capacidades agénticas y de uso de herramientas de Qwen3-8B-ABC, y las tareas de edición de código de OpenCodeEdit-Qwen3-8B.
 
 El modelo mantiene la arquitectura transformer densa decoder-only de Qwen3-8B (36 capas, dimensión oculta 4096), por lo que no introduce cambios estructurales respecto a la base: los task vectors (diferencia entre cada modelo y la base) se combinan con pesos que van de 0,10 a 0,35 y una densidad de 0,60 tras el descarte DARE y la poda TIES. El resultado se distribuye en bfloat16 sobre safetensors, con licencia Apache 2.0.
 
@@ -85,7 +85,7 @@ La comparacion relevante es contra los propios ingredientes del merge: q3mds-8b 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bloomsirenix/q3mds-8b
+- Modelo en Hugging Face: https://huggingface.co/bloomsirenix/q3mds-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Ingrediente de razonamiento: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Ingrediente agéntico: https://huggingface.co/OpenMOSS-Team/Qwen3-8B-ABC

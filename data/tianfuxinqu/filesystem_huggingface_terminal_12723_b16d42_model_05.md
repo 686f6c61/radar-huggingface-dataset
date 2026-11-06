@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `filesystem_huggingface_terminal_12723_b16d42_model_05` es un artefacto publicado en HuggingFace por el usuario TianfuXinqu. La model card lo identifica internamente como «Document Summarizer» con el identificador MDL-005, atribuido a Emma Wilson en el departamento de Operations, con nivel de riesgo medio, documentación ausente y cobertura de tests del 45%. Se trata, por tanto, de un modelo orientado a la summarización de documentos según la declaración del autor, aunque no se aporta ninguna evidencia técnica que lo respalde.
+El modelo `filesystem_huggingface_terminal_12723_b16d42_model_05` es un artefacto publicado en Hugging Face por el usuario TianfuXinqu. La model card lo identifica internamente como «Document Summarizer» con el identificador MDL-005, atribuido a Emma Wilson en el departamento de Operations, con nivel de riesgo medio, documentación ausente y cobertura de tests del 45%. Se trata, por tanto, de un modelo orientado a la summarización de documentos según la declaración del autor, aunque no se aporta ninguna evidencia técnica que lo respalde.
 
 La información disponible es extremadamente escasa: no se especifican arquitectura, tamaño, contexto, licencia ni idiomas. El repositorio registra cero descargas y cero likes, y las fechas de creación y actualización son idénticas (2026-11-01T11:22:30 y 2026-11-01T11:22:31), lo que sugiere una subida automatizada sin revisión posterior. El nombre del repositorio contiene marcadores propios de un pipeline de terminal (`filesystem_huggingface_terminal_12723_b16d42_model_05`), lo que refuerza la hipótesis de un artefacto generado por un proceso automático más que un modelo entrenado y validado.
 
@@ -75,5 +75,5 @@ No disponible. La información proporcionada no permite identificar la categorí
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_05
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_05
 - Paper, blog, repositorio de código o demo: no disponible.

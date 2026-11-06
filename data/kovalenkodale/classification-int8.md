@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kovalenkodale/classification-int8` es un repositorio experimental publicado en HuggingFace por el usuario kovalenkodale. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card lo describe como una base de codigo de una arquitectura denominada "Coca" para tareas de clasificacion, con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El repositorio incluye el artefacto principal `pipeline.py`, la configuracion de arquitectura en `config.json`, una receta de entrenamiento por defecto en `training_args.json` y los pesos en `model.safetensors`.
+`kovalenkodale/classification-int8` es un repositorio experimental publicado en Hugging Face por el usuario kovalenkodale. No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: la propia model card lo describe como una base de codigo de una arquitectura denominada "Coca" para tareas de clasificacion, con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El repositorio incluye el artefacto principal `pipeline.py`, la configuracion de arquitectura en `config.json`, una receta de entrenamiento por defecto en `training_args.json` y los pesos en `model.safetensors`.
 
 El dato mas relevante es su tamano: 24.832 parametros totales segun el archivo safetensors, lo que lo situa en un orden de magnitud de miles de parametros, no de millones. La model card declara una escala "large" con atencion flash, fusion por cross attention, activacion mish y normalizacion layernorm, pero esa declaracion de escala es incoherente con el recuento real de parametros, por lo que debe interpretarse como configuracion generada por el script, no como un modelo de gran tamano efectivo.
 
@@ -25,7 +25,7 @@ El repositorio no reclama ninguna puntuacion de benchmark, no documenta datos de
 | Normalizacion | layernorm |
 | Optimizador de la receta por defecto | adafactor con schedule de warmup constante |
 | Tamano del repositorio | 0.0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -75,8 +75,8 @@ No hay datos suficientes para una comparativa tecnica fiable. No se dispone de u
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| kovalenkodale/classification-int8 | Coca (experimental) | 24.832 | no disponible | MIT | HuggingFace | ninguno reclamado |
-| Arm GoogLeNet INT8 (xnnpack/executorch) | CNN tipo Inception | no disponible | no aplica | no disponible en la informacion | Arm AI Portal / HuggingFace | no disponible |
+| kovalenkodale/classification-int8 | Coca (experimental) | 24.832 | no disponible | MIT | Hugging Face | ninguno reclamado |
+| Arm GoogLeNet INT8 (xnnpack/executorch) | CNN tipo Inception | no disponible | no aplica | no disponible en la informacion | Arm AI Portal / Hugging Face | no disponible |
 | AlexNet INT8 con divergencia KL (paper IEEE) | CNN AlexNet cuantizada | no disponible | no aplica | no disponible en la informacion | publicacion IEEE | no disponible en la informacion |
 
 En cualquier caso, estos dos ultimos son modelos de vision por computador cuantizados y publicados con resultados, mientras que el modelo analizado es un esqueleto experimental sin entrenamiento, por lo que la comparacion no es homogenea.
@@ -95,7 +95,7 @@ En cualquier caso, estos dos ultimos son modelos de vision por computador cuanti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kovalenkodale/classification-int8
+- Repositorio en Hugging Face: https://huggingface.co/kovalenkodale/classification-int8
 - ONNX Model Zoo (referencia de modelos de clasificacion preentrenados): https://github.com/onnx/models
 - Arm AI Portal, GoogLeNet INT8 (referencia de clasificacion cuantizada): https://developer.arm.com/ai/models/hugging-face/Arm/googlenet-int8-xnnpack-executorch-graviton-g4/googlenet-int8-pte
 - Paper IEEE sobre AlexNet ligera con divergencia KL e INT8 (referencia de cuantizacion en clasificacion): https://ieeexplore.ieee.org/abstract/document/11682059

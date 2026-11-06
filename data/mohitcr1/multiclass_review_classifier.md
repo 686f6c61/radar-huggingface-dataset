@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Mohitcr1/multiclass_review_classifier es un modelo de clasificación de texto publicado en HuggingFace por el usuario Mohitcr1. Se trata de un encoder de la familia ModernBERT, tal y como indica el tag `modernbert` del repositorio, con 149.608.709 parámetros reales (coincide con el tamaño de ModernBERT-base). Su nombre sugiere que ha sido ajustado para clasificar reseñas en múltiples clases, aunque la model card no documenta el número exacto de categorías ni su significado.
+Mohitcr1/multiclass_review_classifier es un modelo de clasificación de texto publicado en Hugging Face por el usuario Mohitcr1. Se trata de un encoder de la familia ModernBERT, tal y como indica el tag `modernbert` del repositorio, con 149.608.709 parámetros reales (coincide con el tamaño de ModernBERT-base). Su nombre sugiere que ha sido ajustado para clasificar reseñas en múltiples clases, aunque la model card no documenta el número exacto de categorías ni su significado.
 
 El modelo es relevante porque los encoders pequeños como este ofrecen una alternativa muy eficiente a los LLM generativos para tareas de clasificación a gran escala: con ~150 millones de parámetros se pueden procesar grandes volúmenes de reseñas con coste de cómputo bajo y latencia mínima. Además, ModernBERT introduce mejoras sobre BERT/RoBERTa clásicos (atención alterna local/global, RoPE, contexto de hasta 8192 tokens en el modelo base).
 
-La principal advertencia es que la model card es la plantilla autogenerada de HuggingFace y no contiene información real: no hay datos de entrenamiento, licencia, idiomas, métricas ni instrucciones de uso. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y los resultados de búsqueda web no aportan información adicional sobre el modelo (los enlaces devueltos no están relacionados).
+La principal advertencia es que la model card es la plantilla autogenerada de Hugging Face y no contiene información real: no hay datos de entrenamiento, licencia, idiomas, métricas ni instrucciones de uso. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y los resultados de búsqueda web no aportan información adicional sobre el modelo (los enlaces devueltos no están relacionados).
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ No hay información disponible sobre el procedimiento de entrenamiento de este a
 - Clasificación de texto multietiqueta o multiclase: por el nombre del modelo, orientado a clasificar reseñas en varias categorías (probablemente niveles de sentimiento o tipos de opinión), aunque no se especifica cuántas clases.
 - Codificación de texto: al ser un encoder ModernBERT, puede utilizarse para extraer representaciones contextuales de frases (embeddings) para tareas aguas abajo como similitud semántica o clustering.
 - Procesamiento de secuencias relativamente largas: si hereda la configuración de ModernBERT-base, sería capaz de manejar entradas de hasta 8192 tokens, aunque no está confirmado para este ajuste.
-- Compatibilidad con `text-embeddings-inference` y con `endpoints_compatible`, según los tags del repositorio, lo que indica que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con `text-embeddings-inference` y con `endpoints_compatible`, según los tags del repositorio, lo que indica que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - No se ha documentado soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento. No es un modelo generativo.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU moderna sirve. Funciona de sobra en RTX 3060, RTX 4060, RTX 4090, L4, T4, A10G; las A100 y H100 solo tendrían sentido para lotes masivos o para servir muchas réplicas en paralelo.
 - Cabe en GPU de consumo: sí, en cualquier GPU con al menos 2 GB de VRAM, e incluso en iGPU con memoria compartida.
 - CPU: es viable para inferencia en CPU con un throughput aceptable gracias al reducido tamaño del modelo.
-- Opciones de despliegue: HuggingFace `transformers` (pipeline de `text-classification`), Text Embeddings Inference (tag `text-embeddings-inference`), HuggingFace Inference Endpoints (tag `endpoints_compatible`). vLLM, llama.cpp, Ollama y TGI no son aplicables directamente por tratarse de un encoder de clasificación y no de un modelo generativo, aunque TGI tiene soporte experimental para algunos encoders.
+- Opciones de despliegue: Hugging Face `transformers` (pipeline de `text-classification`), Text Embeddings Inference (tag `text-embeddings-inference`), Hugging Face Inference Endpoints (tag `endpoints_compatible`). vLLM, llama.cpp, Ollama y TGI no son aplicables directamente por tratarse de un encoder de clasificación y no de un modelo generativo, aunque TGI tiene soporte experimental para algunos encoders.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de latencia ni de rendimiento.
 
 ## Comparativa con modelos similares
@@ -64,10 +64,10 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparación
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mohitcr1/multiclass_review_classifier | 149,6 M | no disponible | ModernBERT ajustado | no disponible | HuggingFace |
-| answerdotai/ModernBERT-base | 149 M | 8192 tokens | ModernBERT base | Apache 2.0 | HuggingFace |
-| microsoft/deberta-v3-base | 184 M | 512 tokens | DeBERTa-v3 | MIT | HuggingFace |
-| FacebookAI/roberta-base | 125 M | 512 tokens | RoBERTa | MIT | HuggingFace |
+| Mohitcr1/multiclass_review_classifier | 149,6 M | no disponible | ModernBERT ajustado | no disponible | Hugging Face |
+| answerdotai/ModernBERT-base | 149 M | 8192 tokens | ModernBERT base | Apache 2.0 | Hugging Face |
+| microsoft/deberta-v3-base | 184 M | 512 tokens | DeBERTa-v3 | MIT | Hugging Face |
+| FacebookAI/roberta-base | 125 M | 512 tokens | RoBERTa | MIT | Hugging Face |
 
 La ventaja estructural de ModernBERT-base frente a DeBERTa-v3-base y RoBERTa-base es la ventana de contexto (8192 frente a 512 tokens) y su mayor eficiencia en GPU gracias a la atención alterna. No obstante, al no haber métricas publicadas de este ajuste concreto, no es posible afirmar que supere a las alternativas en la tarea de clasificación de reseñas.
 
@@ -84,7 +84,7 @@ La ventaja estructural de ModernBERT-base frente a DeBERTa-v3-base y RoBERTa-bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohitcr1/multiclass_review_classifier
+- Modelo en Hugging Face: https://huggingface.co/Mohitcr1/multiclass_review_classifier
 - Paper citado en el tag del repositorio (Lacoste et al., 2019, sobre impacto ambiental de ML): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML: https://mlco2.github.io/impact
 - Referencia de la arquitectura base ModernBERT: https://huggingface.co/answerdotai/ModernBERT-base

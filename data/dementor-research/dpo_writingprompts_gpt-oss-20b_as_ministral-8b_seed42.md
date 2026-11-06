@@ -65,6 +65,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_ministral-8b_seed42)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_ministral-8b_seed42)
 - [Modelo base openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)
 - [Herramienta Tinker de Thinking Machines](https://thinkingmachines.ai/tinker/)

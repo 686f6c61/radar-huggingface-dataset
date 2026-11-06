@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Snapkitty/ai-free` no es un modelo de lenguaje: es un repositorio de codigo fuente en Lean 4, alojado en HuggingFace como espejo del proyecto UniversalWord, publicado por el autor Snapkitty dentro del denominado "SnapKitty October 2026 main drop". El proyecto implementa un pipeline de compilacion con semantica formal: tres frontends de lenguajes fuente (un interprete Forth, un subconjunto de BCPL y un lenguaje de computacion escalar y matricial al estilo Wolfram) se traducen a un lenguaje intermedio comun llamado Universal Word IR, cuyo elemento central es la palabra de maquina de anchura fija capaz de transportar enteros, flags de verdad o direcciones de memoria.
+`Snapkitty/ai-free` no es un modelo de lenguaje: es un repositorio de codigo fuente en Lean 4, alojado en Hugging Face como espejo del proyecto UniversalWord, publicado por el autor Snapkitty dentro del denominado "SnapKitty October 2026 main drop". El proyecto implementa un pipeline de compilacion con semantica formal: tres frontends de lenguajes fuente (un interprete Forth, un subconjunto de BCPL y un lenguaje de computacion escalar y matricial al estilo Wolfram) se traducen a un lenguaje intermedio comun llamado Universal Word IR, cuyo elemento central es la palabra de maquina de anchura fija capaz de transportar enteros, flags de verdad o direcciones de memoria.
 
 El repositorio contiene 200 archivos `.lean` que cubren desde la semantica de los lenguajes fuente y las pruebas reutilizables de correctud del compilador hasta modelos de maquina destino, emisores de codigo y arneses de comparacion ejecutables. Los backends soportados son x86-64, AArch64, RISC-V y WebAssembly, mas tres perfiles de microcontrolador bare-metal en 32 bits: RV32, ARM Cortex-M3 y ARM Cortex-M0. El arbol incluye tambien un mecanismo de auditoria de dependencias de pruebas por espacio de nombres y un script de CI que falla si un archivo Lean no tiene su parada correspondiente en el atlas documental.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 - Opciones de despliegue para uso como codigo: clonado del repositorio y compilacion local. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no existen pesos que cargar.
 - Hardware destino de los artefactos generados: x86-64, AArch64, RISC-V (RV32 y RV64) y placas ARM Cortex-M3 y Cortex-M0, ademas de WebAssembly.
 - Latencia y throughput: no aplica al proyecto; no disponible para los binarios emitidos.
-- Advertencia operativa: las herramientas de HuggingFace que asumen un modelo (pipeline, librerias de inferencia, aplicaciones locales) no podran cargar este repositorio, dado que no contiene pesos.
+- Advertencia operativa: las herramientas de Hugging Face que asumen un modelo (pipeline, librerias de inferencia, aplicaciones locales) no podran cargar este repositorio, dado que no contiene pesos.
 
 ## Comparativa con modelos similares
 
@@ -75,11 +75,11 @@ No disponible. La informacion proporcionada no incluye datos de proyectos compar
 
 - No es un modelo de lenguaje: no genera texto, no responde a prompts y no admite tool calling ni razonamiento multi-paso. Cualquier evaluacion que lo trate como modelo generativo dara error.
 - El repositorio declara explicitamente `region:us` y 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validacion externa por parte de la comunidad.
-- El pipeline no esta declarado, lo que refuerza que no hay tarea de HuggingFace asociada.
+- El pipeline no esta declarado, lo que refuerza que no hay tarea de Hugging Face asociada.
 - Los metadatos de idiomas no estan disponibles; los unicos lenguajes descritos son lenguajes fuente de programacion, no idiomas naturales.
 - La licencia `parr-source-license-no-ai-training-1.0` incluye una clausula que prohibe el uso del material para entrenamiento de IA. Es imprescindible revisar el texto completo en el archivo `License` del repositorio antes de cualquier reutilizacion.
-- La etiqueta de licencia en HuggingFace es `other`, no una licencia estandar reconocida, lo que puede complicar la revision legal en entornos corporativos.
-- El contenido esta espejado desde GitHub en el commit `8d0f04c`; la copia de HuggingFace puede quedar desincronizada respecto al repositorio original.
+- La etiqueta de licencia en Hugging Face es `other`, no una licencia estandar reconocida, lo que puede complicar la revision legal en entornos corporativos.
+- El contenido esta espejado desde GitHub en el commit `8d0f04c`; la copia de Hugging Face puede quedar desincronizada respecto al repositorio original.
 - Las fechas de creacion y actualizacion indicadas (7 y 10 de octubre de 2026) son posteriores al momento habitual de publicacion; conviene verificar la autenticidad y el estado del proyecto antes de basarse en el.
 - No se aportan resultados de benchmarks, cobertura de pruebas ni metricas de rendimiento, por lo que la calidad de las pruebas formales solo puede evaluarse leyendo el codigo.
 - El proyecto depende del ecosistema Lean 4; cambios incompatibles en el toolchain o en las bibliotecas pueden romper la compilacion.
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye datos de proyectos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/ai-free
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/ai-free
 - Archivo de licencia: https://huggingface.co/Snapkitty/ai-free/blob/main/License
 - Repositorio espejo en GitHub: https://github.com/SNAPKITTYAGENT9NOVA/ai-free
 - Arbol del repositorio en el commit de referencia: https://github.com/SNAPKITTYWEST/ai-free/tree/93d6d84fe80d3b7f333e31324b35ba27a964b9cc
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye datos de proyectos compar
 - Proximos pasos: `NEXT_STEPS.md` (dentro del repositorio)
 - Script de comprobacion de inventario: `scripts/check_inventory.sh` (dentro del repositorio)
 - Perfil en free2aitools: https://free2aitools.com/model/snapkitty/snapkitty-open-source
-- Otro repositorio del autor en HuggingFace: https://huggingface.co/Snapkitty/SNAPKITTYWEST-public-snapshot
-- Otro repositorio del autor en HuggingFace: https://huggingface.co/Snapkitty/snapkitty-merged
+- Otro repositorio del autor en Hugging Face: https://huggingface.co/Snapkitty/SNAPKITTYWEST-public-snapshot
+- Otro repositorio del autor en Hugging Face: https://huggingface.co/Snapkitty/snapkitty-merged
 - Perfil de GitHub del autor: https://github.com/SNAPKITTYWEST/SNAPKITTYWEST
 - Lista de modelos gratuitos mantenida por terceros: https://github.com/ClawLabsAI/free-ai-models

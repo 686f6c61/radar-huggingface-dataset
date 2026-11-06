@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`guillekenzo/aros-f24317ef-Maya` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario guillekenzo y publicado en HuggingFace. El adaptador se entrena sobre los pesos de Krea 2 RAW (`krea/Krea-2-Raw`) y esta pensado para invocarse en inferencia sobre Krea 2 Turbo, la variante destilada para pocos pasos del mismo modelo base. Su funcion es inyectar un concepto visual concreto, activado mediante el token disparador `fpwb woman`, en las generaciones del modelo base.
+`guillekenzo/aros-f24317ef-Maya` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario guillekenzo y publicado en Hugging Face. El adaptador se entrena sobre los pesos de Krea 2 RAW (`krea/Krea-2-Raw`) y esta pensado para invocarse en inferencia sobre Krea 2 Turbo, la variante destilada para pocos pasos del mismo modelo base. Su funcion es inyectar un concepto visual concreto, activado mediante el token disparador `fpwb woman`, en las generaciones del modelo base.
 
 El repositorio tiene un tamano de 1,3 GB, lo que es coherente con un checkpoint LoRA de rango completo sobre un modelo de difusion de gran tamano, y se distribuye en formato compatible con la libreria `diffusers`. La licencia declarada es Apache 2.0. El modelo acumula 33 descargas y ningun "like" en el momento de la consulta, lo que indica una publicacion reciente y de baja difusion dentro del ecosistema.
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado en la informacion proporcionada otros LoRA
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-f24317ef-Maya
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-f24317ef-Maya
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo (usada en los ejemplos): https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers

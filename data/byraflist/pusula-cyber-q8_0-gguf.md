@@ -33,7 +33,7 @@ Datos adicionales de identificacion:
 | Pipeline | text-generation |
 | Etiquetas | peft, gguf, lora, sft, transformers, trl, llama-cpp, gguf-my-lora, text-generation |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Fecha de creacion | 2026-10-05 |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pusula-Cyber-Q8_0-GGUF (este repositorio) | 18,46 M en el adaptador + ~1,5 B del base | 32.768 tokens en el base (no confirmado en la model card) | GGUF (LoRA) | no disponible | Publico en HuggingFace, 0 descargas |
+| Pusula-Cyber-Q8_0-GGUF (este repositorio) | 18,46 M en el adaptador + ~1,5 B del base | 32.768 tokens en el base (no confirmado en la model card) | GGUF (LoRA) | no disponible | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | safetensors, GGUF (varios) | Apache 2.0 (segun el modelo base original) | Muy extendido, miles de descargas |
 | Qwen/Qwen2.5-3B-Instruct | ~3 B | 32.768 tokens | safetensors, GGUF | Qwen Research License (revisar condiciones) | Ampliamente disponible |
 | meta-llama/Llama-3.2-1B-Instruct | ~1,2 B | 131.072 tokens | safetensors, GGUF | Llama 3.2 Community License | Ampliamente disponible |
@@ -103,7 +103,7 @@ La comparacion con alternativas esta condicionada por la ausencia total de evalu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ByRaflist/Pusula-Cyber-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ByRaflist/Pusula-Cyber-Q8_0-GGUF
 - Adaptador original: https://huggingface.co/ByRaflist/Pusula-Cyber
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Espacio de conversion GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora

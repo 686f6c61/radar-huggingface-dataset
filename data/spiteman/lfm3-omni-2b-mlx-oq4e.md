@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de modelos alternativos comparables fue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Spiteman/LFM3-Omni-2B-MLX-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/Spiteman/LFM3-Omni-2B-MLX-oQ4e
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Version MLX BF16: https://huggingface.co/LiquidAI/LFM3-Omni-2B-MLX-bf16
 - Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3

@@ -127,7 +127,7 @@ Observaciones sobre la comparativa:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-tiny_vit_21m_224
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-tiny_vit_21m_224
 - Dataset de entrenamiento: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Repositorio BDD100K-Toolkit (fuente de los benchmarks): https://github.com/dronefreak/bdd100k-toolkit
 - Modelo base en timm: https://huggingface.co/timm/tiny_vit_21m_224.dist_in22k

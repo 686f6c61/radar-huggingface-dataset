@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ads2009/english-ai-text-detector-distilbert-v6-gpt4o` es un clasificador de texto binario orientado a la detección de contenido generado por IA, en concreto texto producido por GPT-4o según indica su propio nombre. Lo publica el usuario independiente `ads2009` en HuggingFace y se construye como un ajuste fino (fine-tuning) del modelo previo `ads2009/english-ai-text-detector-distilbert-v5-smart-purified`, que a su vez pertenece a una serie de iteraciones del mismo autor.
+El modelo `ads2009/english-ai-text-detector-distilbert-v6-gpt4o` es un clasificador de texto binario orientado a la detección de contenido generado por IA, en concreto texto producido por GPT-4o según indica su propio nombre. Lo publica el usuario independiente `ads2009` en Hugging Face y se construye como un ajuste fino (fine-tuning) del modelo previo `ads2009/english-ai-text-detector-distilbert-v5-smart-purified`, que a su vez pertenece a una serie de iteraciones del mismo autor.
 
-Técnicamente se apoya en la arquitectura DistilBERT, un encoder transformer destilado de BERT con 66.955.010 parámetros (unos 67 millones), lo que lo sitúa en la categoría de modelos compactos aptos para inferencia en CPU o GPU de gama baja. La tarea declarada es `text-classification` con pipeline de HuggingFace, y el repositorio ofrece pesos en formato safetensors con un tamaño de solo 0,3 GB.
+Técnicamente se apoya en la arquitectura DistilBERT, un encoder transformer destilado de BERT con 66.955.010 parámetros (unos 67 millones), lo que lo sitúa en la categoría de modelos compactos aptos para inferencia en CPU o GPU de gama baja. La tarea declarada es `text-classification` con pipeline de Hugging Face, y el repositorio ofrece pesos en formato safetensors con un tamaño de solo 0,3 GB.
 
 La relevancia de este tipo de modelos radica en la creciente necesidad de filtrar, moderar o auditar texto sintético en entornos de producción (curación de datasets, moderación de contenido, verificación editorial). No obstante, la ficha disponible es extremadamente escueta: no declara licencia, idiomas, ni benchmarks, y el dataset de entrenamiento aparece como "None". Se trata, por tanto, de un modelo experimental con documentación mínima.
 
@@ -25,7 +25,7 @@ La relevancia de este tipo de modelos radica en la creciente necesidad de filtra
 
 El modelo emplea una arquitectura DistilBERT, es decir, un encoder transformer con atención bidireccional resultante de la destilación de BERT-base. El recuento exacto de parámetros (66.955.010) coincide con el de `distilbert-base-uncased`, lo que apunta a una configuración estándar de 6 capas, dimensión oculta 768 y 12 cabezas de atención, aunque la model card no confirma estos detalles. La salida es una clasificación de secuencia, presumiblemente binaria (texto humano frente a texto generado por IA), aunque el número de etiquetas no se especifica.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace sobre un dataset que la propia model card identifica como "None", es decir, no documentado. Los hiperparámetros registrados son: learning rate 1e-05, batch de entrenamiento 16 con acumulación de gradientes de 4 pasos (batch efectivo 64), batch de evaluación 32, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y precisión mixta nativa (AMP). Se ejecutaron 2 épocas (534 pasos en total).
+El entrenamiento se realizó con el `Trainer` de Hugging Face sobre un dataset que la propia model card identifica como "None", es decir, no documentado. Los hiperparámetros registrados son: learning rate 1e-05, batch de entrenamiento 16 con acumulación de gradientes de 4 pasos (batch efectivo 64), batch de evaluación 32, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y precisión mixta nativa (AMP). Se ejecutaron 2 épocas (534 pasos en total).
 
 No se documenta ningún tipo de innovación técnica adicional (decodificación especulativa, atención lineal, RLHF o DPO). El único dato de rendimiento reportado es la pérdida de validación final de 0,3665. Llama la atención que la pérdida de validación empeora entre la época 1 (0,3022) y la época 2 (0,3665), mientras la pérdida de entrenamiento desciende de 0,7429 a 0,3750, un patrón compatible con sobreajuste en la segunda época.
 
@@ -35,7 +35,7 @@ No se documenta ningún tipo de innovación técnica adicional (decodificación 
 - Especialización declarada en la detección de contenido producido por GPT-4o, según el nombre del modelo.
 - Inferencia rápida y de bajo coste dado su tamaño reducido (~67 M de parámetros).
 - Compatibilidad con la librería `transformers` (pipeline `text-classification`).
-- Compatibilidad con text-embeddings-inference y con endpoints de HuggingFace, según las etiquetas del repositorio.
+- Compatibilidad con text-embeddings-inference y con endpoints de Hugging Face, según las etiquetas del repositorio.
 - No se documenta soporte de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio ni modo de pensamiento: es un modelo exclusivamente discriminativo.
 - Capacidades multilingües: no disponibles; el nombre sugiere únicamente inglés.
 
@@ -65,16 +65,16 @@ Pérdida de evaluación final declarada: 0,3665. No se han publicado resultados 
 - VRAM estimada para inferencia: en FP32, los pesos de ~67 M de parámetros ocupan aproximadamente 268 MB; en FP16, unos 134 MB. El pico de memoria durante la inferencia con secuencias de hasta 512 tokens ronda 1 GB o menos, por lo que cualquier GPU moderna es suficiente.
 - GPU recomendadas: ninguna GPU de gama alta es necesaria. Funciona en cualquier GPU con al menos 2 GB de VRAM, incluidas GTX 1050 Ti, RTX 3050, RTX 4090, A100 o H100 (estas dos últimas muy sobredimensionadas para este modelo).
 - Cabe holgadamente en GPU de consumo (RTX 3060, RTX 4060, etc.) y también en CPU de forma viable para inferencia por lotes moderados.
-- Opciones de despliegue: pipelines de `transformers`, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), text-embeddings-inference, y conversión a ONNX o TorchScript para optimización. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos generativos.
+- Opciones de despliegue: pipelines de `transformers`, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), text-embeddings-inference, y conversión a ONNX o TorchScript para optimización. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos generativos.
 - Latencia y throughput: no disponibles. Dado el tamaño, se espera una latencia del orden de milisegundos por secuencia en CPU moderna y aún menor en GPU, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/english-ai-text-detector-distilbert-v6-gpt4o | DistilBERT | ~67 M | Detección de texto IA | no disponible | HuggingFace |
-| ads2009/english-ai-text-detector-distilbert-v4 | DistilBERT (presumible) | no disponible | Detección de texto IA | no disponible | HuggingFace |
-| Neural-Hacker/distilbert_ai_text_detector | DistilBERT base uncased | no disponible | Clasificación binaria IA/humano | no disponible | HuggingFace |
+| ads2009/english-ai-text-detector-distilbert-v6-gpt4o | DistilBERT | ~67 M | Detección de texto IA | no disponible | Hugging Face |
+| ads2009/english-ai-text-detector-distilbert-v4 | DistilBERT (presumible) | no disponible | Detección de texto IA | no disponible | Hugging Face |
+| Neural-Hacker/distilbert_ai_text_detector | DistilBERT base uncased | no disponible | Clasificación binaria IA/humano | no disponible | Hugging Face |
 | Grammarly AI Detector | propietario | no disponible | Detección de texto IA | propietaria (servicio) | Producto comercial |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la información proporcionada. La comparativa se limita a categoría y disponibilidad.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/english-ai-text-detector-distilbert-v6-gpt4o
+- Modelo en Hugging Face: https://huggingface.co/ads2009/english-ai-text-detector-distilbert-v6-gpt4o
 - Modelo base: https://huggingface.co/ads2009/english-ai-text-detector-distilbert-v5-smart-purified
 - Versión previa de la serie: https://huggingface.co/ads2009/english-ai-text-detector-distilbert-v4
 - Modelo comparable de otro autor: https://huggingface.co/Neural-Hacker/distilbert_ai_text_detector

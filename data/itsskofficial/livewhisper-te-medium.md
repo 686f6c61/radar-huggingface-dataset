@@ -95,7 +95,7 @@ El modelo base (`vasista22/whisper-telugu-medium`) contiene exactamente los mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/itsskofficial/livewhisper-te-medium
+- Repositorio Hugging Face: https://huggingface.co/itsskofficial/livewhisper-te-medium
 - Modelo base: https://huggingface.co/vasista22/whisper-telugu-medium
 - faster-whisper: https://github.com/SYSTRAN/faster-whisper
 - LiveWhisper: https://github.com/itsskofficial/LiveWhisper

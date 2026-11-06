@@ -29,7 +29,7 @@ El entrenamiento utilizó focal loss (α=1.0, γ=2.0, con peso 0.1 para la etiqu
 
 - Detección de 20 tipos de entidades PII en coreano, incluyendo identificadores únicos (RRN, pasaporte, licencia de conducir), identificadores directos (nombre, teléfono, email, dirección, cuenta bancaria) y cuasi-identificadores (fecha de nacimiento, edad, afiliación, cargo).
 - Manejo de límites de entidades con partículas coreanas (조사), gracias al etiquetado BIO con clases específicas.
-- Clasificación de tokens con puntuación de confianza, utilizable mediante el pipeline `token-classification` de HuggingFace con `aggregation_strategy="simple"`.
+- Clasificación de tokens con puntuación de confianza, utilizable mediante el pipeline `token-classification` de Hugging Face con `aggregation_strategy="simple"`.
 - Función de enmascaramiento simple integrable: reemplaza cada entidad detectada por su etiqueta (ej. `[RRN]`).
 - Robustez frente a números no-PII (hard negatives) en el dominio de entrenamiento.
 - Soporte para inferencia en CPU y GPU gracias a su tamaño compacto (110M parámetros).
@@ -63,7 +63,7 @@ F5 es una F-beta con peso 25 en recall, priorizando la no-omisión de PII. En 58
 - VRAM estimada: menos de 500 MB en FP32 para inferencia (110M parámetros ≈ 440 MB); con cuantización INT8 o FP16 se reduce a ~220 MB o menos.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (ej. NVIDIA GTX 1650, RTX 3050) es suficiente; también funciona en CPU sin problemas.
 - En consumer GPU: sí, cabe en cualquier GPU moderna, incluso en placas integradas con suficiente RAM.
-- Opciones de despliegue: compatible con HuggingFace `transformers` (pipeline), `ONNX Runtime` para optimización en CPU, y `FastAPI` para servir como microservicio. No se indican configuraciones con vLLM u Ollama al ser un modelo de clasificación de tokens.
+- Opciones de despliegue: compatible con Hugging Face `transformers` (pipeline), `ONNX Runtime` para optimización en CPU, y `FastAPI` para servir como microservicio. No se indican configuraciones con vLLM u Ollama al ser un modelo de clasificación de tokens.
 - Latencia: en CPU típica, procesamiento de 256 tokens en ~100-200 ms; en GPU (ej. T4) en ~10-20 ms por muestra. Throughput estimado de cientos de documentos por minuto en lote.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ La comparación con el base KLUE es trivial: el fine-tuning añade la capacidad 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seongyeon1/ko-pii-ner-roberta-base
+- Modelo en Hugging Face: https://huggingface.co/seongyeon1/ko-pii-ner-roberta-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/seongyeon1/ko-pii-ner-100k
 - Modelo base KLUE: https://huggingface.co/klue/roberta-base
 - Paper KLUE: https://arxiv.org/abs/2105.09680

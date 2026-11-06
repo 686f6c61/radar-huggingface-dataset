@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h017.sft-v6.step_16
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h017.sft-v6.step_16
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Indice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

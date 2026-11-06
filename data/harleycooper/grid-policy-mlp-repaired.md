@@ -2,7 +2,7 @@
 
 ## Resumen
 
-grid-policy-mlp-repaired es una política neuronal de refuerzo para el entorno grid Breakout, publicada por el usuario HarleyCooper en HuggingFace. No se trata de un modelo de lenguaje: es un perceptrón multicapa (MLP) de tres capas con activación tanh y arquitectura 500-32-32-5, con un total de 17.253 parámetros en float32. Su entrada es una representación del estado del juego en rejilla y su salida son cinco valores de acción (Q-values o logits de política, no especificado en la model card).
+grid-policy-mlp-repaired es una política neuronal de refuerzo para el entorno grid Breakout, publicada por el usuario HarleyCooper en Hugging Face. No se trata de un modelo de lenguaje: es un perceptrón multicapa (MLP) de tres capas con activación tanh y arquitectura 500-32-32-5, con un total de 17.253 parámetros en float32. Su entrada es una representación del estado del juego en rejilla y su salida son cinco valores de acción (Q-values o logits de política, no especificado en la model card).
 
 El interés del artefacto no reside en su tamaño ni en su rendimiento absoluto, sino en el método con el que se ha obtenido: cuatro ediciones de pesos en forma cerrada (closed-form weight edits) aplicadas secuencialmente sobre el modelo original grid-policy-mlp, sin ningún paso de gradiente ni reentrenamiento. Cada edición es una actualización de rango completo restringida a la matriz W2 que corrige un fallo diagnosticado previamente, minimizando el daño sobre un conjunto de estados de sonda, y solo se conserva si la media de retorno con compuerta no disminuye.
 
@@ -67,8 +67,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parámetros | Contexto | Retorno (greedy, 64 semillas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grid-policy-mlp-repaired | 17.253 | no aplica | 9,83 (compuerta) / 9,06 (retenidas) | MIT | HuggingFace |
-| grid-policy-mlp (original) | 17.253 | no aplica | 8,16 (compuerta) / 8,56 (retenidas) | no disponible | HuggingFace |
+| grid-policy-mlp-repaired | 17.253 | no aplica | 9,83 (compuerta) / 9,06 (retenidas) | MIT | Hugging Face |
+| grid-policy-mlp (original) | 17.253 | no aplica | 8,16 (compuerta) / 8,56 (retenidas) | no disponible | Hugging Face |
 | Otras políticas para grid Breakout | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de terceros para este entorno concreto.
@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables de terceros para este en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HarleyCooper/grid-policy-mlp-repaired
+- Hugging Face: https://huggingface.co/HarleyCooper/grid-policy-mlp-repaired
 - Modelo original: https://huggingface.co/HarleyCooper/grid-policy-mlp
 - Repositorio KimiBrainSurgery: https://github.com/HarleyCoops/KimiBrainSurgery

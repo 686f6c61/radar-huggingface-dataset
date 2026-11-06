@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grotling_Man es un modelo publicado en HuggingFace por el usuario SakarMotor bajo licencia OpenRAIL. El repositorio, con un tamano aproximado de 0,2 GB, no incluye model card descriptiva: el README se limita a declarar la licencia, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. Esta ausencia de documentacion impide determinar con rigor que tipo de modelo es, aunque el tamano del repositorio sugiere pesos de pequena escala (posiblemente un modelo de menos de 1.000 millones de parametros en formato de cuantizacion, o un adaptador LoRA).
+Grotling_Man es un modelo publicado en Hugging Face por el usuario SakarMotor bajo licencia OpenRAIL. El repositorio, con un tamano aproximado de 0,2 GB, no incluye model card descriptiva: el README se limita a declarar la licencia, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. Esta ausencia de documentacion impide determinar con rigor que tipo de modelo es, aunque el tamano del repositorio sugiere pesos de pequena escala (posiblemente un modelo de menos de 1.000 millones de parametros en formato de cuantizacion, o un adaptador LoRA).
 
 El modelo no registra descargas ni likes en el momento de la consulta y fue creado el 29 de octubre de 2026, lo que lo situa como una publicacion reciente y sin validacion por parte de la comunidad. No se dispone de pipeline declarado, idiomas soportados ni resultados de evaluacion. Cualquier evaluacion tecnica debe, por tanto, realizarse mediante inspeccion directa de los archivos del repositorio y pruebas empiricas.
 
@@ -39,7 +39,7 @@ El unico dato estructural disponible es el tamano del repositorio (0,2 GB), que 
 ## Casos de uso
 
 - Evaluacion experimental en laboratorio: el modelo puede descargarse e inspeccionarse para determinar su arquitectura real y sus pesos, dado que la documentacion es inexistente. Adecuado unicamente para analisis tecnico, no para produccion.
-- Pruebas de inferencia comparativa: sirve como artefacto de prueba para validar pipelines de carga de modelos (por ejemplo, verificar que un loader de HuggingFace procesa correctamente pesos no documentados).
+- Pruebas de inferencia comparativa: sirve como artefacto de prueba para validar pipelines de carga de modelos (por ejemplo, verificar que un loader de Hugging Face procesa correctamente pesos no documentados).
 - Docencia sobre auditoria de modelos: util como ejemplo practico de repositorio sin model card y de los riesgos asociados a su adopcion.
 - Prototipado interno no critico: si tras la inspeccion se confirma que es un modelo de lenguaje funcional, podria emplearse en tareas de generacion de texto de baja criticidad, siempre con validacion humana.
 - Fine-tuning exploratorio: si los pesos son compatibles con las herramientas habituales (transformers, PEFT), podria servir como base para experimentos de ajuste en entornos controlados.
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SakarMotor/Grotling_Man
+- Hugging Face: https://huggingface.co/SakarMotor/Grotling_Man
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

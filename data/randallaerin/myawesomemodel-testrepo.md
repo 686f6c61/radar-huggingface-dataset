@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario RandallAerin bajo licencia MIT y etiquetado con los frameworks `transformers` y `pytorch`, la arquitectura `bert` y la tarea `feature-extraction`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y tanto su nombre ("TestRepo") como su contenido apuntan a un artefacto de prueba o de validacion de infraestructura mas que a un modelo distribuible.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario RandallAerin bajo licencia MIT y etiquetado con los frameworks `transformers` y `pytorch`, la arquitectura `bert` y la tarea `feature-extraction`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y tanto su nombre ("TestRepo") como su contenido apuntan a un artefacto de prueba o de validacion de infraestructura mas que a un modelo distribuible.
 
 La model card incluida describe, sin embargo, un modelo generativo de razonamiento ("MyAwesomeModel", con una variante "MyAwesomeModel-Small") con mejoras declaradas en matematicas, programacion y lógica, soporte de function calling y reduccion de alucinaciones. Existe una contradiccion evidente entre esas afirmaciones y los metadatos del repositorio: las etiquetas indican un encoder BERT de extraccion de caracteristicas, mientras que el texto describe un modelo de razonamiento de gran contexto. No se especifican parametros, longitud de contexto ni idiomas.
 
@@ -120,7 +120,7 @@ No disponible. La model card anonimiza los baselines (Model1, Model2, Model1-v2)
 
 ## Enlaces
 
-- HuggingFace (repositorio principal): https://huggingface.co/RandallAerin/MyAwesomeModel-TestRepo
+- Hugging Face (repositorio principal): https://huggingface.co/RandallAerin/MyAwesomeModel-TestRepo
 - Ficha de terceros en Free2AITools: https://free2aitools.com/model/randallaerin/myawesomemodel-testrepo
 - Repositorio con model card similar publicado por otro usuario: https://huggingface.co/toolathlon-eval-06/MyAwesomeModel-TestRepo
 - Ficha de terceros en Free2AITools (otro usuario): https://free2aitools.com/model/agentrl2026/myawesomemodel-testrepo

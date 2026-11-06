@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reliability-1.7B-final-brier-ckpt-900 es un checkpoint de un modelo de lenguaje causal publicado por el usuario daman1209arora en HuggingFace. Se trata de la exportación en safetensors BF16 de los pesos de un `Qwen3ForCausalLM`, correspondiente al paso global de entrenamiento 900 de una ejecución interna denominada `Reliability-1.7B-final/brier_1e-6_rloo`. No es, por tanto, un lanzamiento oficial ni un modelo final: es un artefacto intermedio de investigación, y así lo indica el propio autor en la model card.
+Reliability-1.7B-final-brier-ckpt-900 es un checkpoint de un modelo de lenguaje causal publicado por el usuario daman1209arora en Hugging Face. Se trata de la exportación en safetensors BF16 de los pesos de un `Qwen3ForCausalLM`, correspondiente al paso global de entrenamiento 900 de una ejecución interna denominada `Reliability-1.7B-final/brier_1e-6_rloo`. No es, por tanto, un lanzamiento oficial ni un modelo final: es un artefacto intermedio de investigación, y así lo indica el propio autor en la model card.
 
 El repositorio contiene los pesos, la configuración del modelo y los ficheros del tokenizador. El recuento real de parámetros leído de los safetensors es de 2.031.739.904 (unos 2,03 mil millones), cifra que no coincide con el sufijo "1.7B" del nombre, probablemente heredado de la nomenclatura de la ejecución de entrenamiento. El tamaño del repositorio es de 4,1 GB, coherente con pesos en BF16.
 
@@ -34,7 +34,7 @@ Lo unico que aporta informacion sobre el entrenamiento es el nombre de la ejecuc
 - Generacion de texto conversacional: el pipeline declarado es `text-generation` y los tags incluyen `conversational`, por lo que el modelo esta preparado para continuar y generar texto en formato de dialogo.
 - Alineacion orientada a fiabilidad: el nombre del experimento apunta a un entrenamiento cuyo objetivo es mejorar la calibracion o la fiabilidad de las respuestas, aunque no hay evaluaciones publicadas que lo confirmen.
 - Compatibilidad con `transformers`: puede cargarse con la clase `Qwen3ForCausalLM` y los ficheros de tokenizador incluidos en el repositorio.
-- Compatibilidad con TGI y endpoints: los tags `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede desplegarse en Text Generation Inference y en la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con TGI y endpoints: los tags `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede desplegarse en Text Generation Inference y en la infraestructura de endpoints de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -74,7 +74,7 @@ La informacion proporcionada no incluye datos de rendimiento ni de contexto de n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Reliability-1.7B-final-brier-ckpt-900 | 2,03 B (segun safetensors) | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| Reliability-1.7B-final-brier-ckpt-900 | 2,03 B (segun safetensors) | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Qwen3-1.7B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Qwen2.5-1.5B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Llama-3.2-1B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada |
@@ -97,7 +97,7 @@ No es posible establecer una comparacion de rendimiento con alternativas porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-900
+- Modelo en Hugging Face: https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-900
 - Pagina del autor: https://huggingface.co/daman1209arora
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los unicos resultados devueltos fueron enlaces genericos a YouTube, sin relacion con el modelo.

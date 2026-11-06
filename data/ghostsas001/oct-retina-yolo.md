@@ -2,7 +2,7 @@
 
 ## Resumen
 
-oct-retina-yolo es un clasificador de imágenes de tomografía de coherencia óptica (OCT) retiniana, desarrollado por el usuario de HuggingFace ghostsas001. Distingue cuatro clases: neovascularización coroidea (CNV), edema macular diabético (DME), drusas y retina normal. Está construido con Ultralytics YOLO en su variante de clasificación y se distribuye como pesos `.pt` (yolo.pt) en un repositorio de 0,1 GB.
+oct-retina-yolo es un clasificador de imágenes de tomografía de coherencia óptica (OCT) retiniana, desarrollado por el usuario de Hugging Face ghostsas001. Distingue cuatro clases: neovascularización coroidea (CNV), edema macular diabético (DME), drusas y retina normal. Está construido con Ultralytics YOLO en su variante de clasificación y se distribuye como pesos `.pt` (yolo.pt) en un repositorio de 0,1 GB.
 
 Su principal aportación no es tanto la arquitectura como la metodología de evaluación: el autor detectó que las carpetas oficiales del conjunto OCT2017 (Kermany et al., 2018) colocan exploraciones del mismo paciente en entrenamiento y test, de modo que 27.693 de las 83.516 imágenes de entrenamiento y validación (un 33 %) provienen de pacientes presentes en el test. Este modelo se entrenó eliminando esos pacientes y se validó con pacientes retenidos, lo que permite una estimación de rendimiento más honesta que la habitual en la literatura sobre este dataset.
 
@@ -37,7 +37,7 @@ Los datos de entrenamiento son un subconjunto de OCT2017 con un máximo de 4.000
 - Salida de probabilidades por clase mediante la interfaz de Ultralytics (`result.probs.top1` y el vector completo de probabilidades), lo que permite aplicar umbrales propios en lugar de aceptar siempre la clase más probable.
 - Inferencia a 224 px, lo que mantiene el coste computacional muy bajo.
 - Ejecución sobre CPU o GPU de gama baja, dado el reducido tamaño del repositorio.
-- Carga directa desde HuggingFace Hub con `hf_hub_download` e integración en el ecosistema Ultralytics (`model.predict`).
+- Carga directa desde Hugging Face Hub con `hf_hub_download` e integración en el ecosistema Ultralytics (`model.predict`).
 - No dispone de generación de texto, razonamiento, código ni matemáticas.
 - No soporta tool calling ni function calling.
 - No implementa agentes ni razonamiento multi-paso.
@@ -90,7 +90,7 @@ No disponible. La model card no incluye comparaciones numéricas con otros clasi
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oct-retina-yolo (ghostsas001) | no disponible | imagen 224 px, 4 clases | 96,49 % accuracy, 96,51 % F1 macro sobre test oficial deduplicado | AGPL-3.0 (uso no comercial por los datos) | HuggingFace, pesos `.pt` |
+| oct-retina-yolo (ghostsas001) | no disponible | imagen 224 px, 4 clases | 96,49 % accuracy, 96,51 % F1 macro sobre test oficial deduplicado | AGPL-3.0 (uso no comercial por los datos) | Hugging Face, pesos `.pt` |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia contextual, el artículo original de Kermany et al. (Cell, 2018) introdujo el dataset OCT2017, pero no se dispone aquí de sus cifras bajo un protocolo equivalente, por lo que no se incluyen en la tabla.
@@ -111,7 +111,7 @@ Como referencia contextual, el artículo original de Kermany et al. (Cell, 2018)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostsas001/oct-retina-yolo
+- Modelo en Hugging Face: https://huggingface.co/ghostsas001/oct-retina-yolo
 - Repositorio con el análisis completo: https://github.com/Elghoudani/oct-retina-classification
 - Articulo de referencia del dataset (Kermany et al., Cell 2018): https://doi.org/10.1016/j.cell.2018.02.010
 - Dataset OCT2017 (release de Kaggle): https://www.kaggle.com/datasets/paultimothymooney/kermany2018

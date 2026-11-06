@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vivekkumland/matching-colab` es un repositorio experimental publicado en HuggingFace por el usuario vivekkumland que contiene una implementación reducida de una arquitectura tipo **Mixer** (familia MLP-Mixer con atención linear) orientada a tareas de *matching*, junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de **inicialización**. No es un modelo entrenado ni una release con resultados: el propio autor lo describe como un punto de partida reproducible para pruebas de humo (smoke tests) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`vivekkumland/matching-colab` es un repositorio experimental publicado en Hugging Face por el usuario vivekkumland que contiene una implementación reducida de una arquitectura tipo **Mixer** (familia MLP-Mixer con atención linear) orientada a tareas de *matching*, junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de **inicialización**. No es un modelo entrenado ni una release con resultados: el propio autor lo describe como un punto de partida reproducible para pruebas de humo (smoke tests) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El tamaño real declarado en los metadatos de safetensors es de **16.576 parámetros totales**, con un peso en disco prácticamente nulo (el repositorio ocupa 0,0 GB). La variante incluida se etiqueta como "giant" dentro de la escala interna del autor, pero esa etiqueta es relativa a su propia familia de configuraciones, no comparable con modelos de gran tamaño: por volumen de parámetros estamos ante un artefacto de juguete, útil para validar código, no para inferencia con calidad de producción.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks del modelo analizado, por lo que la compara
 - **Sin auditoría**: el autor indica que no ha sido evaluado en robustez, equidad ni transferencia de dominio.
 - **Sin benchmarks**: no hay métricas publicadas; cualquier comparación de rendimiento carece de base.
 - **No es un modelo de lenguaje**: no dispone de tokenizer, vocabulario ni capacidades de generación; usarlo en pipelines de NLP fallará.
-- **Carga no estándar**: requiere un adaptador explícito; las APIs automáticas de HuggingFace no lo resuelven por defecto.
+- **Carga no estándar**: requiere un adaptador explícito; las APIs automáticas de Hugging Face no lo resuelven por defecto.
 - **Riesgo de mala interpretación**: la etiqueta "giant" es interna del autor y puede llevar a confundirlo con un modelo de gran escala; el recuento real es de 16.576 parámetros.
 - **Contexto e idiomas no documentados**: no hay información sobre ventana de entrada ni sobre datos lingüísticos.
 - **Licencia MIT**: permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen cuando se use con datasets externos.
@@ -88,8 +88,8 @@ No se dispone de datos de benchmarks del modelo analizado, por lo que la compara
 
 ## Enlaces
 
-- [vivekkumland/matching-colab en HuggingFace](https://huggingface.co/vivekkumland/matching-colab)
-- [vivekkumland/contrastive74 en HuggingFace](https://huggingface.co/vivekkumland/contrastive74)
-- [vivekred/matching en HuggingFace](https://huggingface.co/vivekred/matching)
-- [kkumardeepak8/vit-matching en HuggingFace](https://huggingface.co/kkumardeepak8/vit-matching)
+- [vivekkumland/matching-colab en Hugging Face](https://huggingface.co/vivekkumland/matching-colab)
+- [vivekkumland/contrastive74 en Hugging Face](https://huggingface.co/vivekkumland/contrastive74)
+- [vivekred/matching en Hugging Face](https://huggingface.co/vivekred/matching)
+- [kkumardeepak8/vit-matching en Hugging Face](https://huggingface.co/kkumardeepak8/vit-matching)
 - [Google Colab Links (voice-models.com)](https://voice-models.com/colab)

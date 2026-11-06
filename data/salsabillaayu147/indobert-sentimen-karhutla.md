@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndoBERT-Sentimen-Karhutla es un modelo publicado en HuggingFace por el usuario salsabillaayu147 bajo licencia MIT. Por su denominación, se trata de un ajuste fino de IndoBERT orientado al análisis de sentimiento en el dominio de los incendios forestales y de turba en Indonesia ("karhutla" es el acrónimo indonesio de *kebakaran hutan dan lahan*). El modelo no dispone de una model card descriptiva: el README únicamente contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, métricas ni uso previsto.
+IndoBERT-Sentimen-Karhutla es un modelo publicado en Hugging Face por el usuario salsabillaayu147 bajo licencia MIT. Por su denominación, se trata de un ajuste fino de IndoBERT orientado al análisis de sentimiento en el dominio de los incendios forestales y de turba en Indonesia ("karhutla" es el acrónimo indonesio de *kebakaran hutan dan lahan*). El modelo no dispone de una model card descriptiva: el README únicamente contiene la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, métricas ni uso previsto.
 
 El repositorio no registra descargas ni interacciones y no declara pipeline, idiomas ni etiquetas de tarea más allá de la licencia y la región. La fecha de creación y actualización es 2026-11-03, lo que sugiere una publicación reciente y sin mantenimiento posterior documentado.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible; depende del tamaño real de los pesos, que no se documenta.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible; si se confirma una base IndoBERT de aproximadamente 110-125 millones de parámetros, cabría en GPUs de consumo con 4-8 GB de VRAM en FP16, pero es una estimación no verificada.
-- Opciones de despliegue: no disponibles; en caso de ser un modelo BERT, sería compatible con HuggingFace Transformers, ONNX Runtime y posiblemente TorchScript, pero no se confirma.
+- Opciones de despliegue: no disponibles; en caso de ser un modelo BERT, sería compatible con Hugging Face Transformers, ONNX Runtime y posiblemente TorchScript, pero no se confirma.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| IndoBERT-Sentimen-Karhutla | no disponible | no disponible | MIT | HuggingFace, sin descargas |
-| IndoBERT (indobenchmark) | ~110-125 M (base) | 512 tokens (BERT base) | Apache 2.0 (según versión) | HuggingFace, ampliamente utilizado |
-| IndoBERTweet | ~110-125 M | 512 tokens | no disponible | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace |
+| IndoBERT-Sentimen-Karhutla | no disponible | no disponible | MIT | Hugging Face, sin descargas |
+| IndoBERT (indobenchmark) | ~110-125 M (base) | 512 tokens (BERT base) | Apache 2.0 (según versión) | Hugging Face, ampliamente utilizado |
+| IndoBERTweet | ~110-125 M | 512 tokens | no disponible | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face |
 
 La comparación se ofrece únicamente como referencia de categoría; no se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa.
 
@@ -83,5 +83,5 @@ La comparación se ofrece únicamente como referencia de categoría; no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/salsabillaayu147/IndoBERT-Sentimen-Karhutla
+- Hugging Face: https://huggingface.co/salsabillaayu147/IndoBERT-Sentimen-Karhutla
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

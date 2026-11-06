@@ -4,7 +4,7 @@
 
 LumynaX Speech Kokoro 82M TTS es un paquete de integración publicado por AbteeX AI Labs, un laboratorio con sede en Aotearoa (Nueva Zelanda), que envuelve el modelo de síntesis de voz Kokoro-82M de hexgrad dentro de su arquitectura LumynaX Core. Se trata de un lanzamiento experimental marcado explícitamente como "legacy" y "outdated" por sus propios autores, conservado únicamente con fines de reproducibilidad e investigación. El paquete no modifica los pesos del modelo original; aplica una "infusión enrutada" en la que LumynaX Core orquesta la inferencia sin fusionar pesos.
 
-El modelo subyacente, Kokoro-82M, es un sintetizador de voz de 82 millones de parámetros, pero la ficha de HuggingFace lo etiqueta con el pipeline `text-generation` y la librería `transformers`, lo que refleja la naturaleza de envoltorio del paquete. Los idiomas declarados son inglés (en) y maorí (mi), y la licencia es Apache-2.0. Dado su estado de abandono declarado, no se recomienda su uso en producción, y cualquier evaluación debe verificar los checksums y manifiestos incluidos en el repositorio.
+El modelo subyacente, Kokoro-82M, es un sintetizador de voz de 82 millones de parámetros, pero la ficha de Hugging Face lo etiqueta con el pipeline `text-generation` y la librería `transformers`, lo que refleja la naturaleza de envoltorio del paquete. Los idiomas declarados son inglés (en) y maorí (mi), y la licencia es Apache-2.0. Dado su estado de abandono declarado, no se recomienda su uso en producción, y cualquier evaluación debe verificar los checksums y manifiestos incluidos en el repositorio.
 
 ## Especificaciones tecnicas
 

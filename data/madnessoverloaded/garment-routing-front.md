@@ -80,7 +80,7 @@ Kappa de Cohen en el conjunto gold (IC bootstrap 95% a nivel de prenda):
 
 | Modelo | Arquitectura | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| garment-routing-front | ConvNeXt-Tiny | Clasificación de uso y condición de prendas | Imagen frontal | MIT | HuggingFace |
+| garment-routing-front | ConvNeXt-Tiny | Clasificación de uso y condición de prendas | Imagen frontal | MIT | Hugging Face |
 | LightGBM (techo de atributos del autor) | Árboles gradient boosting | Clasificación de atributos (6 clases expertas) | Atributos tabulares | no disponible | Referencia interna del proyecto |
 | Clasificador de clase mayoritaria (baseline) | Regla trivial | Clasificación de uso (4 clases) | Imagen | no aplica | Baseline del proyecto |
 
@@ -101,7 +101,7 @@ No se dispone de comparaciones con otros modelos públicos de enrutamiento de pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MadnessOverloaded/garment-routing-front
+- Modelo en Hugging Face: https://huggingface.co/MadnessOverloaded/garment-routing-front
 - Dataset en Zenodo: https://doi.org/10.5281/zenodo.13788681
 - Repositorio del proyecto: no disponible en la información proporcionada
 - Paper o blog del autor: no disponible en la información proporcionada

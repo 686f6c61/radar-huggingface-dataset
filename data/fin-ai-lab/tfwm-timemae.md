@@ -103,7 +103,7 @@ Los 17 encoders restantes de la coleccion TFWM comparten el mismo backbone y el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-timemae
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-timemae
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Carpeta concreta del dataset usada en el entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth
 - Coleccion TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d

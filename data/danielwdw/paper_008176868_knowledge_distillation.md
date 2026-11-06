@@ -62,5 +62,5 @@ No disponible. No existe una categoría de modelos comparable, ya que este repos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielwdw/paper_008176868_knowledge_distillation
+- Hugging Face: https://huggingface.co/danielwdw/paper_008176868_knowledge_distillation
 - No se proporcionan otros enlaces en la información disponible.

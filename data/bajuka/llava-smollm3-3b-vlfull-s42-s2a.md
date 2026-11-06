@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaVA-smollm3-3b-VLfull-s42-s2a | ~3B (backbone) | 8192 | SigLIP-so400m | Apache 2.0 | HuggingFace, requiere codigo externo |
-| SmolLM3-3B (base) | 3B | no disponible en esta ficha | No | Apache 2.0 | HuggingFace, transformers nativo |
-| LLaVA-NeXT (referencia) | varia (7B/13B/34B) | no disponible en esta ficha | Si | Apache 2.0 (segun variante) | HuggingFace y repositorio oficial |
-| Otras ramas de la misma rejilla (Qwen2.5 / Llama-3.2) | no disponible | no disponible | Si | segun backbone | HuggingFace |
+| LLaVA-smollm3-3b-VLfull-s42-s2a | ~3B (backbone) | 8192 | SigLIP-so400m | Apache 2.0 | Hugging Face, requiere codigo externo |
+| SmolLM3-3B (base) | 3B | no disponible en esta ficha | No | Apache 2.0 | Hugging Face, transformers nativo |
+| LLaVA-NeXT (referencia) | varia (7B/13B/34B) | no disponible en esta ficha | Si | Apache 2.0 (segun variante) | Hugging Face y repositorio oficial |
+| Otras ramas de la misma rejilla (Qwen2.5 / Llama-3.2) | no disponible | no disponible | Si | segun backbone | Hugging Face |
 
 La comparacion con alternativas cerradas de la misma categoria (por ejemplo, modelos VL de 3B de otros laboratorios) no esta disponible en la informacion proporcionada. La diferencia clave frente a SmolLM3-3B es la incorporacion de la torre visual y el entrenamiento de captioning; frente a LLaVA-NeXT de referencia, el backbone mas pequeno y el caracter de artefacto experimental.
 
@@ -86,7 +86,7 @@ La comparacion con alternativas cerradas de la misma categoria (por ejemplo, mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BAJUKA/LLaVA-smollm3-3b-VLfull-s42-s2a
+- Hugging Face: https://huggingface.co/BAJUKA/LLaVA-smollm3-3b-VLfull-s42-s2a
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio LLaVA-NeXT: https://github.com/LLaVA-VL/LLaVA-NeXT
 - Torre visual SigLIP: https://huggingface.co/google/siglip-so400m-patch14-384

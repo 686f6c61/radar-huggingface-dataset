@@ -62,14 +62,14 @@ No disponible. No se han encontrado modelos comparables de la misma categoría (
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; es un estado de inicialización aleatorio.
 - No debe utilizarse en producción ni para ninguna tarea real, ya que no produce salidas significativas.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no tiene comportamiento aprendido.
 - La licencia BSD-3-Clause permite uso comercial, pero los términos de los datos externos utilizados con el modelo deben revisarse por separado.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse de forma independiente a los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Xidianstatistics/mae-multitask19
+- Repositorio en Hugging Face: https://huggingface.co/Xidianstatistics/mae-multitask19
 - Referencia general sobre MAE multitarea (no específica de este modelo): https://www.medrxiv.org/content/10.64898/2026.04.16.26351036v1.full.pdf
 - Artículo sobre PHG-MAE (extensión de MAE): https://arxiv.org/pdf/2510.10068
 - Estudio sobre modelo multitarea de IA en estimación de porciones: https://www.sciencedirect.com/science/article/pii/S002231662600307X

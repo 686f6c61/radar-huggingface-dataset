@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qualzz20/afv_fiber_9um_v2
+- Modelo en Hugging Face: https://huggingface.co/Qualzz20/afv_fiber_9um_v2
 - Modelo base: https://huggingface.co/Qualzz20/afv_fiber_9um
 - Vesuvius Challenge (contexto del proyecto): no disponible en la información proporcionada
 - Paper o blog del autor: no disponible en la información proporcionada

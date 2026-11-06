@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Instruct-Sensei-Kaizen es un ajuste fino (fine-tune) del modelo Llama-3.2-3B-Instruct de Meta, publicado por el usuario ReyCharly en HuggingFace. Se trata de una variante instructiva orientada a conversación, entrenada y convertida a formato GGUF mediante la librería Unsloth, que acelera y reduce el consumo de memoria del proceso de fine-tuning. El modelo hereda la arquitectura y el conocimiento base de Llama 3.2 3B, pero incorpora un ajuste específico cuyo dataset y metodología no se detallan en la model card.
+Llama-3.2-3B-Instruct-Sensei-Kaizen es un ajuste fino (fine-tune) del modelo Llama-3.2-3B-Instruct de Meta, publicado por el usuario ReyCharly en Hugging Face. Se trata de una variante instructiva orientada a conversación, entrenada y convertida a formato GGUF mediante la librería Unsloth, que acelera y reduce el consumo de memoria del proceso de fine-tuning. El modelo hereda la arquitectura y el conocimiento base de Llama 3.2 3B, pero incorpora un ajuste específico cuyo dataset y metodología no se detallan en la model card.
 
 Con 3.212.749.824 parámetros (aproximadamente 3,21 mil millones), el modelo se sitúa en la gama de modelos pequeños, adecuados para despliegue local en hardware de consumo. El repositorio pesa 16,3 GB e incluye pesos en safetensors y dos cuantizaciones GGUF (Q8_0 y F16), además de un Modelfile para Ollama.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada (inferencia): aproximadamente 8 GB en F16, unos 5 GB en Q8_0 y del orden de 3-4 GB en cuantizaciones de 4 bits (estas últimas no incluidas en el repositorio, pero generables con llama.cpp).
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para F16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, A10, L4). Para Q8_0 bastan GPU de 6 GB.
 - Cabe en GPU de consumo: sí, en modelos como RTX 3060, RTX 4060, RTX 4070, RTX 4090, e incluso en Apple Silicon con memoria unificada.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf ... --jinja`), Ollama (Modelfile incluido), y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf ... --jinja`), Ollama (Modelfile incluido), y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de velocidad.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReyCharly/Llama-3.2-3B-Instruct-Sensei-Kaizen
+- Modelo en Hugging Face: https://huggingface.co/ReyCharly/Llama-3.2-3B-Instruct-Sensei-Kaizen
 - Perfil del autor: https://huggingface.co/ReyCharly
 - Modelo hermano sobre Qwen2.5: https://huggingface.co/ReyCharly/Qwen2.5-3B-Instruct-Sensei-Kaizen
 - Unsloth (librería de fine-tuning): https://github.com/unslothai/unsloth

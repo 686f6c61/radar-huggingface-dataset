@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPIRA (Spiking Plastic Recurrent Architecture) es un prototipo de investigación de aprendizaje de secuencias desarrollado por el usuario de HuggingFace `thefinalboss`, construido explícitamente fuera del paradigma transformer / BPE / retropropagación. Se compone de tres piezas: un tokenizador por parches de entropía (EPT), una corteza spiking jerárquica con un reservoir LIF rápido, un área lenta y plasticidad modulada por recompensa, y un hipocampo de memoria asociativa one-shot con consolidación mediante reproducción (*replay*). No requiere GPU: todo el prototipo está escrito en NumPy y se ejecuta en CPU.
+SPIRA (Spiking Plastic Recurrent Architecture) es un prototipo de investigación de aprendizaje de secuencias desarrollado por el usuario de Hugging Face `thefinalboss`, construido explícitamente fuera del paradigma transformer / BPE / retropropagación. Se compone de tres piezas: un tokenizador por parches de entropía (EPT), una corteza spiking jerárquica con un reservoir LIF rápido, un área lenta y plasticidad modulada por recompensa, y un hipocampo de memoria asociativa one-shot con consolidación mediante reproducción (*replay*). No requiere GPU: todo el prototipo está escrito en NumPy y se ejecuta en CPU.
 
 El modelo resuelve un problema acotado pero poco habitual: memorizar un documento nuevo con una sola pasada (99,3 % de recuerdo exacto tras 0,4 s sobre un libro no visto) y transferir después ese contenido a la corteza mediante reproducción hipocampal, que eleva el recuerdo solo-cortical del 0,3 % al 46,9 % (×138) sin degradar la memoria original. Es relevante ahora como banco de pruebas reproducible de mecanismos de memoria complementaria (sistemas rápido/lento) sin gradientes, y por publicar sus resultados negativos de forma cuantificada.
 
@@ -107,13 +107,13 @@ No se dispone de información sobre modelos de la misma categoría (redes spikin
 - Riesgo de alucinación: alto en generación libre, dado que la salida degenera y el recuerdo fiable está ligado a contenido previamente memorizado, no a conocimiento paramétrico general.
 - Idiomas: solo inglés y francés declarados; sin evaluación por idioma ni soporte documentado de castellano.
 - Limitación estructural de contexto: no hay ventana; el estado del reservoir v2 tiene un horizonte efectivo de ≈1 token y v3 lo amplía con trazas, sin métricas de contexto largo publicadas.
-- Madurez: prototipo de investigación con 0 descargas y 0 likes en HuggingFace, sin pipeline declarado, sin benchmarks estándar y con un único autor; no hay garantía de mantenimiento ni de interfaz estable.
+- Madurez: prototipo de investigación con 0 descargas y 0 likes en Hugging Face, sin pipeline declarado, sin benchmarks estándar y con un único autor; no hay garantía de mantenimiento ni de interfaz estable.
 - Licencia MIT: permite uso comercial y modificación con atribución y sin garantía, pero el estado del arte del modelo hace inviable un uso comercial directo sin trabajo adicional.
 - Advertencia de identidad: las búsquedas web de "Spira" devuelven mayoritariamente una empresa y producto comerciales de automatización de redes sociales y generación de vídeo (spira.ai, Spira Maxima), sin relación con este modelo; no deben usarse como documentación ni como referencia técnica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thefinalboss/SPIRA
+- Modelo en Hugging Face: https://huggingface.co/thefinalboss/SPIRA
 - Paper de investigación (referenciado en la model card): `paper/spira_paper.pdf` (fuente LaTeX en `paper/`), secciones 7-8 para los resultados negativos
 - Informe de la tercera iteración: `V3_REPORT.md` (en la raíz del repositorio)
 - Métricas crudas del A/B: `python/artifacts/metrics_v3_ab.json`

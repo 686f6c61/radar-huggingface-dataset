@@ -106,8 +106,8 @@ La comparativa con Whisper no es estrictamente equivalente: Whisper realiza dete
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/lang-id-voxlingua107-ecapa-gguf
-- Modelo base en HuggingFace: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/lang-id-voxlingua107-ecapa-gguf
+- Modelo base en Hugging Face: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Pagina del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/lang-id-voxlingua107-ecapa.md
 - Documentacion de la API LANGID: `docs/langid.md` en el repositorio de transcribe.cpp

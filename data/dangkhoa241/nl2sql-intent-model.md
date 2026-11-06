@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dangkhoa241/nl2sql-intent-model` es un clasificador de texto encoder-only obtenido por ajuste fino de `google-bert/bert-base-uncased`. Lo desarrolla el usuario de HuggingFace dangkhoa241 y su funcion es etiquetar una pregunta de negocio formulada en lenguaje natural con el tipo de consulta SQL que necesita: `aggregate`, `compare`, `count`, `filter` o `trend`. No genera SQL; actua como enrutador de intencion dentro de un sistema mayor de traduccion de lenguaje natural a SQL asistido por RAG.
+El modelo `dangkhoa241/nl2sql-intent-model` es un clasificador de texto encoder-only obtenido por ajuste fino de `google-bert/bert-base-uncased`. Lo desarrolla el usuario de Hugging Face dangkhoa241 y su funcion es etiquetar una pregunta de negocio formulada en lenguaje natural con el tipo de consulta SQL que necesita: `aggregate`, `compare`, `count`, `filter` o `trend`. No genera SQL; actua como enrutador de intencion dentro de un sistema mayor de traduccion de lenguaje natural a SQL asistido por RAG.
 
 El problema que resuelve es el de la desambiguacion previa en pipelines de analitica conversacional. Antes de construir la consulta, el sistema necesita saber si el usuario pide una agregacion, una comparacion entre entidades, un recuento, un filtro o una evolucion temporal. Esta clasificacion condiciona la plantilla SQL y, segun la model card, tambien el tipo de grafico que se muestra.
 
@@ -111,7 +111,7 @@ Para la tarea concreta de enrutado de intencion NL→SQL no se han encontrado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangkhoa241/nl2sql-intent-model
+- Modelo en Hugging Face: https://huggingface.co/dangkhoa241/nl2sql-intent-model
 - Repositorio del sistema NL→SQL asistido por RAG: https://github.com/dangkhoa241/RAG-assisted-natural-language-to-SQL-query-system
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 

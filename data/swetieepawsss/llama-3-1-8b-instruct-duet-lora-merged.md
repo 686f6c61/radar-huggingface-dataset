@@ -45,7 +45,7 @@ El entrenamiento consistió en un ajuste fino con LoRA sobre la partición `city
 - Investigación en machine unlearning: usar el checkpoint como referencia reproducible del método DUET sobre Llama 3.1-8B-Instruct, comparando la tasa de olvido de hechos de la partición `city_full` frente al modelo base sin ajustar.
 - Evaluación de efectos colaterales del ajuste fino: medir la degradación en tareas generales (comprensión lectora, sentido común, matemáticas) para cuantificar el coste del olvido selectivo sobre las capacidades del modelo original.
 - Reproducibilidad de experimentos: al estar el adaptador fusionado, cualquier laboratorio puede cargar el checkpoint con `transformers` y obtener resultados idénticos sin depender de versiones de PEFT ni de la gestión de adaptadores.
-- Docencia y divulgación técnica: ejemplo didáctico de flujo completo LoRA → merge → publicación en HuggingFace, con hiperparámetros documentados (rango 32, alpha 64, 3 épocas).
+- Docencia y divulgación técnica: ejemplo didáctico de flujo completo LoRA → merge → publicación en Hugging Face, con hiperparámetros documentados (rango 32, alpha 64, 3 épocas).
 - Auditoría de contaminación de benchmarks: dado que las preguntas del split coinciden con DUET v1.0 salvo limpieza textual, sirve para estudiar cómo el solapamiento entre entrenamiento y evaluación infla métricas de unlearning.
 - Pruebas de robustez y red-teaming: sondear si el modelo filtra información supuestamente olvidada mediante reformulaciones, idiomas distintos del inglés o ataques de jailbreak, aprovechando su ventana de 128.000 tokens.
 - Línea base de infraestructura: como checkpoint denso de 8 B en bf16, es útil para medir latencia y throughput de referencia en vLLM o TGI antes de introducir técnicas de optimización.
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-DUET-LoRA-merged | 8,03 B (denso) | 128.000 (heredado) | Unlearning sobre DUET, checkpoint fusionado | Llama 3.1 | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B (denso) | 128.000 | Asistente generalista con soporte de tool calling | Llama 3.1 | HuggingFace, ampliamente validado |
-| Modelos de unlearning tipo Who's Harry Potter (WHP) | ~1,5-8 B según variante | Depende del base | Olvido de una entidad concreta por ajuste con token especial | Según modelo base | Públicos en HuggingFace |
+| Llama-3.1-8B-Instruct-DUET-LoRA-merged | 8,03 B (denso) | 128.000 (heredado) | Unlearning sobre DUET, checkpoint fusionado | Llama 3.1 | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B (denso) | 128.000 | Asistente generalista con soporte de tool calling | Llama 3.1 | Hugging Face, ampliamente validado |
+| Modelos de unlearning tipo Who's Harry Potter (WHP) | ~1,5-8 B según variante | Depende del base | Olvido de una entidad concreta por ajuste con token especial | Según modelo base | Públicos en Hugging Face |
 | Otros ajustes LoRA fusionados sobre Llama 3.1 8B | 8,03 B (denso) | 128.000 | Dominio específico (legal, médico, código) | Llama 3.1 | Variables |
 
 La comparación cuantitativa de rendimiento no está disponible: no existen métricas publicadas para este checkpoint que permitan situarlo frente al modelo base ni frente a otros métodos de unlearning en términos de olvido, retención o degradación de capacidades generales.
@@ -90,7 +90,7 @@ La comparación cuantitativa de rendimiento no está disponible: no existen mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SwetieePawsss/Llama-3.1-8B-Instruct-DUET-LoRA-merged
+- Modelo en Hugging Face: https://huggingface.co/SwetieePawsss/Llama-3.1-8B-Instruct-DUET-LoRA-merged
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET
 - Colección "DUET: Anatomy of Unlearning": https://huggingface.co/collections/SwetieePawsss/duet-anatomy-of-unlearning-6adbb5695dfb6f3e25293251

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión publicado en HuggingFace por el usuario aadityathe770. Según su model card, se trata de un modelo denso de 27.781 millones de parámetros (55,6 GB en safetensors, es decir, pesos en bf16), construido sobre la base arquitectónica de Qwen3.5 y presentado como la generación más capaz de la familia abierta Qwen hasta la fecha. Está diseñado para tareas de código, trabajo profesional, investigación y flujos agénticos de horizonte largo, con comprensión nativa de imagen y vídeo y control flexible del modo de razonamiento.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de visión publicado en Hugging Face por el usuario aadityathe770. Según su model card, se trata de un modelo denso de 27.781 millones de parámetros (55,6 GB en safetensors, es decir, pesos en bf16), construido sobre la base arquitectónica de Qwen3.5 y presentado como la generación más capaz de la familia abierta Qwen hasta la fecha. Está diseñado para tareas de código, trabajo profesional, investigación y flujos agénticos de horizonte largo, con comprensión nativa de imagen y vídeo y control flexible del modo de razonamiento.
 
 El aspecto más relevante técnicamente es su arquitectura híbrida: combina 48 capas de atención lineal Gated DeltaNet con 16 capas de atención con compuertas (Gated Attention), distribuidas en 64 capas totales según el patrón 16 × (3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)). Esta mezcla reduce el coste del caché KV en contextos largos, ya que solo las 16 capas de atención con compuertas mantienen caché clásico. El contexto nativo es de 262.144 tokens, extensible hasta 1.000.000, y el modelo se entrenó con predicción multi-token (MTP), lo que habilita decodificación especulativa en inferencia.
 
@@ -121,7 +121,7 @@ No se dispone de datos verificables de parámetros, contexto, licencia ni rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aadityathe770/Qwen3.8-27B
+- Repositorio en Hugging Face: https://huggingface.co/aadityathe770/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado citado en la model card): https://www.qwencloud.com
 - Overview de Qwen3.8-27B en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Paper, blog técnico o repositorio de código del modelo: no disponible en la información proporcionada.

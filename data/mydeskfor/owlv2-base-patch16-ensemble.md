@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo OWLv2 (Open-World Localization) fue propuesto en junio de 2023 por Matthias Minderer, Alexey Gritsenko y Neil Houlsby en el artículo "Scaling Open-Vocabulary Object Detection". Se trata de un modelo de detección de objetos zero-shot condicionado por texto, que permite localizar objetos en una imagen a partir de una o varias consultas de texto, sin necesidad de haber visto ejemplos de esas clases durante el entrenamiento. En HuggingFace está publicado bajo el usuario Mydeskfor con el identificador `Mydeskfor/owlv2-base-patch16-ensemble`, y el código de ejemplo de la model card referencia el modelo original de Google `google/owlv2-base-patch16-ensemble`.
+El modelo OWLv2 (Open-World Localization) fue propuesto en junio de 2023 por Matthias Minderer, Alexey Gritsenko y Neil Houlsby en el artículo "Scaling Open-Vocabulary Object Detection". Se trata de un modelo de detección de objetos zero-shot condicionado por texto, que permite localizar objetos en una imagen a partir de una o varias consultas de texto, sin necesidad de haber visto ejemplos de esas clases durante el entrenamiento. En Hugging Face está publicado bajo el usuario Mydeskfor con el identificador `Mydeskfor/owlv2-base-patch16-ensemble`, y el código de ejemplo de la model card referencia el modelo original de Google `google/owlv2-base-patch16-ensemble`.
 
 La arquitectura se basa en un backbone CLIP, con un codificador de imagen ViT-B/16 y un codificador de texto Transformer con atención enmascarada. El modelo tiene 154.966.791 parámetros. Al ser un modelo de visión, no se dispone de datos de longitud de contexto en el sentido de los modelos de lenguaje. Su relevancia radica en la capacidad de detectar clases arbitrarias definidas por el usuario mediante consultas de texto, lo que lo hace útil para aplicaciones de investigación y visión por computador donde las categorías no están predefinidas.
 
@@ -28,7 +28,7 @@ El modelo utiliza CLIP como backbone multimodal. Para adaptarlo a la detección,
 - Detección de objetos zero-shot condicionada por texto: puede localizar objetos en una imagen a partir de una o más consultas de texto, sin haber visto ejemplos de esas clases durante el entrenamiento.
 - Clasificación open-vocabulary: sustituye la capa de clasificación fija por embeddings de nombres de clase, lo que permite detectar clases arbitrarias definidas por el usuario.
 - Soporte de múltiples consultas por imagen: puede procesar varias consultas de texto simultáneamente para detectar distintos objetos en una sola pasada.
-- Integración con Transformers: se puede usar mediante la API de HuggingFace Transformers, concretamente con `Owlv2Processor` y `Owlv2ForObjectDetection`.
+- Integración con Transformers: se puede usar mediante la API de Hugging Face Transformers, concretamente con `Owlv2Processor` y `Owlv2ForObjectDetection`.
 - Generación de texto, razonamiento, código o matemáticas: no aplica, es un modelo de visión.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible.
@@ -72,6 +72,6 @@ No se dispone de información suficiente para una comparativa detallada en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mydeskfor/owlv2-base-patch16-ensemble
+- Modelo en Hugging Face: https://huggingface.co/Mydeskfor/owlv2-base-patch16-ensemble
 - Paper original: https://arxiv.org/abs/2306.09683
 - Modelo original de Google (referencia en el código de ejemplo): https://huggingface.co/google/owlv2-base-patch16-ensemble

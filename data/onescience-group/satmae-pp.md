@@ -79,8 +79,8 @@ La diferencia principal de SatMAE++ frente a SatMAE y MAE es su decodificador mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/SatMAE-PP
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/SatMAE-PP
 - Repositorio oficial en GitHub: https://github.com/techmn/satmae_pp
 - Paper (arXiv): https://arxiv.org/abs/2403.05419
-- Modelo SatMAE original en HuggingFace: https://huggingface.co/OneScience-Group/SatMAE
+- Modelo SatMAE original en Hugging Face: https://huggingface.co/OneScience-Group/SatMAE
 - Documentacion del codigo (DeepWiki): https://deepwiki.com/techmn/satmae_pp

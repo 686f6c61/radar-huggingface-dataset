@@ -1,7 +1,7 @@
 # mradermacher/gpt-oss-20b-heretic-GGUF
 
 ## Resumen
-`mradermacher/gpt-oss-20b-heretic-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `p-e-w/gpt-oss-20b-heretic`, que a su vez es una variante "abliterated" (sin censura) del modelo abierto `gpt-oss-20b` de OpenAI. El modelo base emplea una arquitectura Mixture of Experts (MoE) con aproximadamente 20.900 millones de parámetros totales y alrededor de 3.600 millones de parámetros activos por token, según la información publicada por OpenAI para `gpt-oss-20b`. El trabajo de cuantización lo realiza mradermacher, un conocido publicador de quants GGUF en HuggingFace.
+`mradermacher/gpt-oss-20b-heretic-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `p-e-w/gpt-oss-20b-heretic`, que a su vez es una variante "abliterated" (sin censura) del modelo abierto `gpt-oss-20b` de OpenAI. El modelo base emplea una arquitectura Mixture of Experts (MoE) con aproximadamente 20.900 millones de parámetros totales y alrededor de 3.600 millones de parámetros activos por token, según la información publicada por OpenAI para `gpt-oss-20b`. El trabajo de cuantización lo realiza mradermacher, un conocido publicador de quants GGUF en Hugging Face.
 
 La relevancia de esta ficha radica en que ofrece el modelo en múltiples niveles de cuantización (desde Q2_K hasta Q8_0), lo que permite ejecutarlo en hardware de consumo con VRAM limitada, algo imposible con los pesos originales en BF16. Al estar basado en una variante "heretic" (abliterated), el modelo elimina total o parcialmente los mecanismos de rechazo aprendidos por RLHF, lo que lo hace atractivo para investigación sobre alineación, red-teaming y generación de contenido sin restricciones, pero también plantea riesgos importantes para uso en producción.
 
@@ -81,7 +81,7 @@ La comparación con modelos de otros fabricantes (p. ej. Llama 3.x, Qwen) no se 
 - Compatibilidad con vLLM para GGUF MoE puede requerir versiones específicas; verificar antes de desplegar.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gpt-oss-20b-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gpt-oss-20b-heretic-GGUF
 - Modelo base (variante heretic): https://huggingface.co/p-e-w/gpt-oss-20b-heretic
 - Página de descargas del autor: https://hf.tst.eu/model#gpt-oss-20b-heretic-GGUF
 - README de referencia para uso de GGUF: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

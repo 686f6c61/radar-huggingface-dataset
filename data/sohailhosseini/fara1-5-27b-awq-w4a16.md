@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks especificos para la version cuantiz
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Fara1.5-27B (base) | 27.4B | 32768 | MIT | CUA multimodal | HuggingFace |
-| Fara1.5-9B | 9B | no disponible | MIT | CUA multimodal | HuggingFace |
-| Fara1.5-4B | 4B | no disponible | MIT | CUA multimodal | HuggingFace |
-| Qwen3.5-27B (base) | 27B | no disponible | Apache 2.0 (presumible) | LLM general | HuggingFace |
+| Fara1.5-27B (base) | 27.4B | 32768 | MIT | CUA multimodal | Hugging Face |
+| Fara1.5-9B | 9B | no disponible | MIT | CUA multimodal | Hugging Face |
+| Fara1.5-4B | 4B | no disponible | MIT | CUA multimodal | Hugging Face |
+| Qwen3.5-27B (base) | 27B | no disponible | Apache 2.0 (presumible) | LLM general | Hugging Face |
 
 No se dispone de comparativas directas con otros modelos de agente de uso de computadora (como Claude Computer Use o GPT-4o con herramientas) en terminos de rendimiento, ya que los benchmarks publicados se limitan a Online-Mind2Web para el modelo base.
 
@@ -76,9 +76,9 @@ No se dispone de comparativas directas con otros modelos de agente de uso de com
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Sohailhosseini/Fara1.5-27B-AWQ-W4A16
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/Fara1.5-27B
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Sohailhosseini/Fara1.5-27B-AWQ-W4A16
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/Fara1.5-27B
 - Repositorio GitHub de Microsoft Fara: https://github.com/microsoft/fara
-- Coleccion de modelos Fara1.5 en HuggingFace: https://huggingface.co/collections/microsoft/fara15
+- Coleccion de modelos Fara1.5 en Hugging Face: https://huggingface.co/collections/microsoft/fara15
 - Catalogo de modelos de Microsoft Foundry: https://ai.azure.com/catalog/models/Fara1.5-27B
 - Ficha en AI Model Radar: https://aimodelradar.app/models/fara1-5-27b

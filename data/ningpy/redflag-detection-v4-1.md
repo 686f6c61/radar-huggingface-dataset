@@ -99,7 +99,7 @@ La comparación es orientativa; no hay datos de benchmarks comunes entre estos m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ningpy/redflag-detection-V4.1
+- Repositorio Hugging Face: https://huggingface.co/ningpy/redflag-detection-V4.1
 - Versión anterior V4.0: https://huggingface.co/ningpy/redflag-detection-V4.0
 - Versión V1.0: https://huggingface.co/ningpy/redflag-detection-V1.0
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

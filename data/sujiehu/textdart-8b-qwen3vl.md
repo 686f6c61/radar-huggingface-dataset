@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Funcion principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TextDART-8B-Qwen3VL | 8.767 M | no disponible | Reward model de texto visual con localizacion de regiones y marcado de defectos | Apache 2.0 | HuggingFace, repo GitHub |
-| Qwen/Qwen3-VL-8B-Instruct | no disponible en la informacion | no disponible | Modelo multimodal instructivo generalista (backbone del anterior) | no disponible en la informacion | HuggingFace |
+| TextDART-8B-Qwen3VL | 8.767 M | no disponible | Reward model de texto visual con localizacion de regiones y marcado de defectos | Apache 2.0 | Hugging Face, repo GitHub |
+| Qwen/Qwen3-VL-8B-Instruct | no disponible en la informacion | no disponible | Modelo multimodal instructivo generalista (backbone del anterior) | no disponible en la informacion | Hugging Face |
 | Otros reward models de generacion de texto visual | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con el modelo base, del que TextDART hereda arquitectura y tamano pero del que se diferencia por el ajuste especifico para localizacion de regiones, transcripcion con marcado de defectos y emision de recompensas espaciales. No se dispone de datos de benchmarks ni de especificaciones de terceros alternativos para establecer una comparacion cuantitativa.
@@ -84,7 +84,7 @@ La informacion proporcionada solo permite comparar con el modelo base, del que T
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SujieHu/TextDART-8B-Qwen3VL
+- Modelo en Hugging Face: https://huggingface.co/SujieHu/TextDART-8B-Qwen3VL
 - Pagina del proyecto: https://sujiehu.github.io/textdart-scanner/
 - Articulo: https://arxiv.org/abs/2610.20794
 - Repositorio principal (SCANNER): https://github.com/WeChatCV/TextDART-SCANNER

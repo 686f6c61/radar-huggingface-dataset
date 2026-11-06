@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nightmare-sd15-swap-models` es un repositorio de HuggingFace publicado por el usuario AbrahamPJ que aloja dos checkpoints de Stable Diffusion 1.5 convertidos para ejecutarse en la NPU Hexagon de los SoC Qualcomm Snapdragon mediante QNN. No se trata de un modelo entrenado desde cero ni de un ajuste fino: son conversiones, sin reentrenamiento, de los checkpoints AbsoluteReality v1.8.1 (de Lykon, estilo realista) y CuteYukiMix *Adorable* (de kemiaomiao, estilo anime), realizadas con la herramienta propia del autor, `npuforge`, en la modalidad "Convert as → SD1.5 Swap".
+`nightmare-sd15-swap-models` es un repositorio de Hugging Face publicado por el usuario AbrahamPJ que aloja dos checkpoints de Stable Diffusion 1.5 convertidos para ejecutarse en la NPU Hexagon de los SoC Qualcomm Snapdragon mediante QNN. No se trata de un modelo entrenado desde cero ni de un ajuste fino: son conversiones, sin reentrenamiento, de los checkpoints AbsoluteReality v1.8.1 (de Lykon, estilo realista) y CuteYukiMix *Adorable* (de kemiaomiao, estilo anime), realizadas con la herramienta propia del autor, `npuforge`, en la modalidad "Convert as → SD1.5 Swap".
 
 La innovacion principal de estos ficheros es que la UNet convertida expone las residuales de LoRA (rango 64, 160 objetivos) y de ControlNet como entradas del grafo. Esto permite elegir la LoRA y el ControlNet en tiempo de render sin volver a convertir el modelo, algo poco habitual en despliegues de difusion sobre NPU. El resultado se distribuye como contexto QNN (QAIRT 2.50) a resolucion 512x512.
 
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion | Formato / plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nightmare-sd15-swap-models (este repositorio) | no disponible (derivado de SD 1.5) | 512x512 | Contextos QNN sobre NPU Hexagon v79+ | openrail + licencia del checkpoint base | 0 descargas, 0 likes en HuggingFace |
+| nightmare-sd15-swap-models (este repositorio) | no disponible (derivado de SD 1.5) | 512x512 | Contextos QNN sobre NPU Hexagon v79+ | openrail + licencia del checkpoint base | 0 descargas, 0 likes en Hugging Face |
 | AbsoluteReality v1.8.1 (Lykon), checkpoint original | no disponible en la informacion | 512x512 (SD 1.5) | safetensors / PyTorch, GPU de escritorio | CreativeML OpenRAIL-M | publicado por su autor en plataformas de checkpoints |
 | CuteYukiMix *Adorable* (kemiaomiao), checkpoint original | no disponible en la informacion | 512x512 (SD 1.5) | safetensors / PyTorch, GPU de escritorio | CreativeML OpenRAIL-M | publicado por su autor en plataformas de checkpoints |
-| nightmare-sd15-controlnet-qnn (mismo autor) | no disponible | 512x512 | Contextos QNN sobre NPU Hexagon | no disponible | HuggingFace |
-| npuforge-sd15-inpaint-diff (mismo autor) | no disponible | no disponible | safetensors f16 (fichero de diferencia de 9 canales) | no disponible | HuggingFace |
+| nightmare-sd15-controlnet-qnn (mismo autor) | no disponible | 512x512 | Contextos QNN sobre NPU Hexagon | no disponible | Hugging Face |
+| npuforge-sd15-inpaint-diff (mismo autor) | no disponible | no disponible | safetensors f16 (fichero de diferencia de 9 canales) | no disponible | Hugging Face |
 
 La comparacion relevante no es de calidad de generacion, sino de plataforma: los checkpoints originales requieren PyTorch y una GPU, mientras que estas conversiones se ejecutan en la NPU de un movil con Snapdragon 8 Elite o posterior, a cambio de atarse a un SoC concreto.
 
@@ -79,7 +79,7 @@ La comparacion relevante no es de calidad de generacion, sino de plataforma: los
 - No es un modelo nuevo: son conversiones sin reentrenamiento, por lo que heredan tanto las capacidades como los sesgos y defectos de AbsoluteReality v1.8.1 y CuteYukiMix *Adorable*, incluidos los sesgos de representacion tipicos de los datasets de SD 1.5.
 - Riesgo de alucinacion visual: como todo modelo de difusion, puede generar anatomia incorrecta, texto ilegible, manos deformes o detalles incoherentes, especialmente a 512x512 y sin refinado posterior.
 - Compatibilidad de hardware muy restringida: los ficheros `_v79` solo cargan en Hexagon v79 o superior (Snapdragon 8 Elite y 8 Elite Gen 5). Las variantes para v73 y v68 estan anunciadas pero no publicadas.
-- Dependencia de la aplicacion: el uso previsto es a traves de Nightmare Mobile; no se documenta una via de ejecucion independiente ni un pipeline de HuggingFace.
+- Dependencia de la aplicacion: el uso previsto es a traves de Nightmare Mobile; no se documenta una via de ejecucion independiente ni un pipeline de Hugging Face.
 - Licencia: el repositorio declara openrail, pero cada fichero conserva la licencia del checkpoint de origen (CreativeML OpenRAIL-M y sus restricciones de uso). Cualquier uso comercial o de redistribucion debe comprobar los terminos del checkpoint base y la autorizacion de su autor.
 - Al ser conversiones de terceros, el autor del repositorio no es el titular de los pesos originales y no puede relajar las condiciones de las licencias de origen.
 - Ausencia total de benchmarks publicados, de documentacion de precision numerica y de validacion por parte de la comunidad (0 descargas, 0 likes), lo que impide estimar la degradacion respecto a los checkpoints en PyTorch.
@@ -88,7 +88,7 @@ La comparacion relevante no es de calidad de generacion, sino de plataforma: los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AbrahamPJ/nightmare-sd15-swap-models
+- Repositorio en Hugging Face: https://huggingface.co/AbrahamPJ/nightmare-sd15-swap-models
 - ControlNet para QNN del mismo autor: https://huggingface.co/AbrahamPJ/nightmare-sd15-controlnet-qnn
 - Fichero de diferencia para inpainting: https://huggingface.co/AbrahamPJ/npuforge-sd15-inpaint-diff
 - Aplicacion Nightmare Mobile (GitHub): https://github.com/AbrahamPaulJ/nightmare-mobile

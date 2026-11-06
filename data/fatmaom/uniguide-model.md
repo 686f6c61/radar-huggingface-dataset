@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Uniguide-model es un repositorio publicado en HuggingFace por el usuario fatmaom bajo licencia MIT. La información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin ningún dato sobre arquitectura, tamaño, datos de entrenamiento o capacidades. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo o que estos no se han subido.
+Uniguide-model es un repositorio publicado en Hugging Face por el usuario fatmaom bajo licencia MIT. La información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia, sin ningún dato sobre arquitectura, tamaño, datos de entrenamiento o capacidades. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo o que estos no se han subido.
 
-A fecha de la información proporcionada, el modelo no registra descargas ni likes, y no se especifica ningún pipeline de HuggingFace asociado. Tampoco se declaran idiomas soportados ni se incluyen etiquetas que indiquen la tarea o familia del modelo.
+A fecha de la información proporcionada, el modelo no registra descargas ni likes, y no se especifica ningún pipeline de Hugging Face asociado. Tampoco se declaran idiomas soportados ni se incluyen etiquetas que indiquen la tarea o familia del modelo.
 
 Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los metadatos disponibles y a marcar explícitamente como "no disponible" cualquier parámetro que no pueda verificarse. No debe interpretarse como una evaluación funcional del modelo.
 
@@ -66,5 +66,5 @@ No disponible. Sin datos de arquitectura, tamaño o rendimiento no es posible es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fatmaom/uniguide-model
+- Hugging Face: https://huggingface.co/fatmaom/uniguide-model
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

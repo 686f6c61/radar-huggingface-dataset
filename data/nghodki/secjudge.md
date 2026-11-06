@@ -4,7 +4,7 @@
 
 SecJudge es un modelo de clasificación de texto desarrollado por el usuario nghodki (nghodki/SecJudge) y afinado a partir de answerdotai/ModernBERT-large, un encoder bidireccional de 395.836.421 parámetros. Su objetivo es puntuar el riesgo de seguridad de entradas de texto en el contexto de agentes y asistentes basados en LLM: inyección de prompts (directa e indirecta), llamadas a herramientas potencialmente peligrosas, fuga de datos personales y otras amenazas del ecosistema "agent-security".
 
-El modelo se distribuye bajo licencia apache-2.0, con pesos en safetensors (repositorio de 1,6 GB), pipeline text-classification y soporte declarado únicamente para inglés. El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", por lo que se trata de una publicación muy reciente y sin validación comunitaria.
+El modelo se distribuye bajo licencia apache-2.0, con pesos en safetensors (repositorio de 1,6 GB), pipeline text-classification y soporte declarado únicamente para inglés. El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", por lo que se trata de una publicación muy reciente y sin validación comunitaria.
 
 Su relevancia actual está en el hueco que ocupa: los guardrails de seguridad para agentes suelen implementarse con LLM generativos de 2B-8B parámetros, con latencias y costes elevados. Un encoder de ~396M parámetros permite clasificar cada mensaje o resultado de herramienta en milisegundos y a bajo coste, integrándose como capa de defensa previa o posterior al LLM principal. Las etiquetas del modelo apuntan a decisiones calibradas y aprendizaje contrastivo (rlcd, contrastive-learning, isotonic-calibration), aunque la model card no detalla el procedimiento de entrenamiento.
 
@@ -21,7 +21,7 @@ Su relevancia actual está en el hueco que ocupa: los guardrails de seguridad pa
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Pipeline | text-classification |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 1,6 GB |
 | Modelo base | answerdotai/ModernBERT-large |
 | Fecha de creacion | 2026-09-22 |
@@ -117,7 +117,7 @@ La ventaja diferencial de SecJudge frente a los guardrails generativos es el cos
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/nghodki/SecJudge
+- Ficha del modelo en Hugging Face: https://huggingface.co/nghodki/SecJudge
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large
 - Dataset citado (cross-domain): https://huggingface.co/datasets/rogue-security/coding-agent-security-benchmark
 - Dataset citado (inyeccion indirecta agentica): https://huggingface.co/datasets/nvidia/Nemotron-RL-Agentic-Indirect-Prompt-Injection-v1

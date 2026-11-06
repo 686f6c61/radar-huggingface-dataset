@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClinicalJev-0.8B-v0.1-preview-LoRA es un adaptador LoRA publicado en HuggingFace por el usuario xinyuzhou, pensado para acoplarse al backbone de texto Qwen/Qwen3.5-0.8B. No es un modelo generativo al uso: dado un texto de estado (por ejemplo, una nota clínica), una pregunta y un conjunto predefinido de candidatos o rúbricas, el modelo devuelve una elección y una distribución de probabilidad sobre las opciones disponibles. La ficha declara tres primitivas de tarea: *choice* (elección entre candidatos nombrados), *score* (puntuación sobre una rúbrica ordenada) y *noul* (estimación de veracidad de una proposición sí/no).
+ClinicalJev-0.8B-v0.1-preview-LoRA es un adaptador LoRA publicado en Hugging Face por el usuario xinyuzhou, pensado para acoplarse al backbone de texto Qwen/Qwen3.5-0.8B. No es un modelo generativo al uso: dado un texto de estado (por ejemplo, una nota clínica), una pregunta y un conjunto predefinido de candidatos o rúbricas, el modelo devuelve una elección y una distribución de probabilidad sobre las opciones disponibles. La ficha declara tres primitivas de tarea: *choice* (elección entre candidatos nombrados), *score* (puntuación sobre una rúbrica ordenada) y *noul* (estimación de veracidad de una proposición sí/no).
 
 El modelo se etiqueta como *preview* (v0.1) y está orientado al dominio médico y al procesamiento de lenguaje clínico. El entrenamiento se limita a inglés y chino simplificado; aunque el backbone Qwen es multilingüe, el autor indica explícitamente que el rendimiento en otros idiomas no ha sido validado. El repositorio ocupa 0,2 GB y contiene únicamente los pesos del adaptador, no el modelo base.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClinicalJev-0.8B-v0.1-preview-LoRA | Adaptador LoRA sobre backbone de 0,8B | No disponible | Comparativa publicada frente a Jev 1.13.0 en 13 datasets, valores no disponibles | No disponible | HuggingFace, 0 descargas, 0 likes |
+| ClinicalJev-0.8B-v0.1-preview-LoRA | Adaptador LoRA sobre backbone de 0,8B | No disponible | Comparativa publicada frente a Jev 1.13.0 en 13 datasets, valores no disponibles | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Jev 1.13.0 | No disponible | No disponible | Referencia de comparacion en la figura de la model card | No disponible | No disponible |
 | Contrastive-LM / CLM-8B | 8B | No disponible | No disponible | No disponible | Repositorio GitHub (Contrastive-LM/CLM), API compatible con TypeSafe |
 
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para una comparación cuantitativa con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xinyuzhou/ClinicalJev-0.8B-v0.1-preview-LoRA
+- Modelo en Hugging Face: https://huggingface.co/xinyuzhou/ClinicalJev-0.8B-v0.1-preview-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub del proyecto ClinicalJev: https://github.com/xzhou-code/ClinicalJev
 - Repositorio GitHub de Contrastive-LM/CLM: https://github.com/Contrastive-LM/CLM

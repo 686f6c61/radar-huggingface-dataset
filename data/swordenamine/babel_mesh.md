@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`babel_mesh` no es un modelo de IA en el sentido habitual del término: es un proyecto de software (paquete Python instalable vía `pip install babel-mesh`) publicado en HuggingFace bajo el identificador `swordenamine/babel_mesh`, sin pesos, sin tokenizador y sin pipeline declarado. Su propuesta es una capa de inferencia distribuida peer-to-peer que fragmenta modelos de IA en trozos de aproximadamente 50 MB y los reparte entre dispositivos (móviles Android, Linux, macOS) que se comunican por WiFi y Bluetooth sin pasar por internet ni por un servidor central. El autor la presenta como "la primera red de IA distribuida serverless de teléfono a teléfono".
+`babel_mesh` no es un modelo de IA en el sentido habitual del término: es un proyecto de software (paquete Python instalable vía `pip install babel-mesh`) publicado en Hugging Face bajo el identificador `swordenamine/babel_mesh`, sin pesos, sin tokenizador y sin pipeline declarado. Su propuesta es una capa de inferencia distribuida peer-to-peer que fragmenta modelos de IA en trozos de aproximadamente 50 MB y los reparte entre dispositivos (móviles Android, Linux, macOS) que se comunican por WiFi y Bluetooth sin pasar por internet ni por un servidor central. El autor la presenta como "la primera red de IA distribuida serverless de teléfono a teléfono".
 
 El repositorio no incluye ninguna arquitectura de red neuronal, ningún dataset de entrenamiento ni ningún checkpoint: la model card describe únicamente el diseño del sistema (gestión de fragmentos, protocolo de gossip para descubrimiento de nodos, enrutado por consenso y una capa que el autor denomina "zero-knowledge inference"). Por tanto, los parámetros, la longitud de contexto, los idiomas y las capacidades cognitivas del modelo subyacente no están especificados en la información disponible.
 
-La relevancia del proyecto, si se materializa, estaría en escenarios de conectividad nula o restringida (zonas rurales, aulas sin nube, zonas de catástrofe, entornos air-gapped). Conviene señalar que la ficha de HuggingFace registra 0 descargas y 0 likes, que el pipeline aparece como "no disponible" y que varias funcionalidades clave del transporte P2P (WiFi Direct, puente Bluetooth LE, APK de Android) figuran como pendientes en el roadmap del propio autor, no como implementadas en la versión 1.0.0.
+La relevancia del proyecto, si se materializa, estaría en escenarios de conectividad nula o restringida (zonas rurales, aulas sin nube, zonas de catástrofe, entornos air-gapped). Conviene señalar que la ficha de Hugging Face registra 0 descargas y 0 likes, que el pipeline aparece como "no disponible" y que varias funcionalidades clave del transporte P2P (WiFi Direct, puente Bluetooth LE, APK de Android) figuran como pendientes en el roadmap del propio autor, no como implementadas en la versión 1.0.0.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ La relevancia del proyecto, si se materializa, estaría en escenarios de conecti
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card declara MIT (copyright 2026, autor citado como "swordenkisk"), dato no verificado |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card declara MIT (copyright 2026, autor citado como "swordenkisk"), dato no verificado |
 | Formato de pesos | no disponible (no se publican safetensors, GGUF ni ningún otro artefacto de pesos) |
 | Versión del proyecto | 1.0.0 |
 | Plataformas declaradas | Android, Linux, macOS |
@@ -26,7 +26,7 @@ La relevancia del proyecto, si se materializa, estaría en escenarios de conecti
 | Interfaz | CLI (`babel init`, `babel start`, `babel join`) y API Python (`MeshClient`) |
 | Transporte declarado | WiFi y Bluetooth, peer-to-peer, sin internet |
 | Tamaño de fragmento declarado | ~50 MB por fragmento |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **Afirmaciones no verificadas**: "primera red de IA distribuida serverless", "zero-knowledge inference" y el propio funcionamiento del pipeline se sostienen solo en el texto de la model card; no hay paper, benchmarks ni resultados reproducibles citados.
 - **La etiqueta "zero-knowledge" es técnicamente discutible**: los nodos reciben tensores de activación del nodo anterior, que filtran información sobre la entrada. La compartimentación no equivale a una prueba de conocimiento cero.
 - **Funcionalidad incompleta en v1.0.0**: WiFi Direct (v1.1), puente Bluetooth LE (v1.2) y APK de Android (v1.3) están marcados como pendientes; el transporte P2P real entre teléfonos no está implementado según el propio roadmap.
-- **Licencia contradictoria**: los metadatos de HuggingFace indican licencia "no disponible" mientras la model card declara MIT y cita un titular de copyright distinto del nombre de usuario del repositorio. Antes de cualquier uso comercial hay que verificar el fichero LICENSE y la titularidad.
+- **Licencia contradictoria**: los metadatos de Hugging Face indican licencia "no disponible" mientras la model card declara MIT y cita un titular de copyright distinto del nombre de usuario del repositorio. Antes de cualquier uso comercial hay que verificar el fichero LICENSE y la titularidad.
 - **Ausencia de datos de entrenamiento y de modelo base**: imposible evaluar calidad, sesgos, idiomas o alucinación, porque no se especifica qué modelo se ejecuta sobre la malla.
 - **Inconsistencia de fechas**: la ficha indica creación el 2026-10-17 y última actualización el 2026-03-06, es decir, actualización anterior a la creación.
 - **Señales de madurez bajas**: 0 descargas, 0 likes, sin demo publicada ni instrucciones de reproducibilidad más allá de los comandos de instalación.
@@ -98,6 +98,6 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/babel_mesh
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/babel_mesh
 - Perfil de GitHub citado en la model card: https://github.com/swordenkisk
 - Paper, blog técnico, demo o repositorio de código independiente: no disponible en la información proporcionada.

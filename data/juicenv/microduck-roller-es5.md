@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-roller-es5 | Politica de control (fine-tune por estrategias de evolucion) | 61 / 14 | 50 Hz | no disponible | HuggingFace |
-| pollen-robotics/microduck-roller-sprint-2m-reference | Politica de control (reference) | no disponible | no disponible | no disponible | HuggingFace |
+| juicenv/microduck-roller-es5 | Politica de control (fine-tune por estrategias de evolucion) | 61 / 14 | 50 Hz | no disponible | Hugging Face |
+| pollen-robotics/microduck-roller-sprint-2m-reference | Politica de control (reference) | no disponible | no disponible | no disponible | Hugging Face |
 | Otras variantes de roller de microduck | Politica de control | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente sobre otras politicas comparables (parametros, contexto, rendimiento) para establecer una comparacion cuantitativa.
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente sobre otras politicas comparables (param
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-roller-es5
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-roller-es5
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-roller-sprint-2m-reference
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl` (rama `lean`, commit `5a3636302`)

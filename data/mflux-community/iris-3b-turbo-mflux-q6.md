@@ -89,7 +89,7 @@ No se dispone de informacion sobre otros modelos text-to-image de 3B comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q6
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q6
 - Modelo base: https://huggingface.co/speridlabs/iris-3b
 - Variante BF16: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-bf16
 - Variante Q8: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q8

@@ -74,11 +74,11 @@ No se han publicado en la informacion disponible los resultados desglosados por 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.5 (AWQ) | 8,7B | No disponible | OpenCompass 77.2, supera a GPT-4o en OCR y MMHal | No disponible | HuggingFace, abierto |
-| Qwen2.5-VL 72B | 72B | No disponible | Inferior a MiniCPM-V 4.5 en OpenCompass | Apache 2.0 | HuggingFace, abierto |
+| MiniCPM-V 4.5 (AWQ) | 8,7B | No disponible | OpenCompass 77.2, supera a GPT-4o en OCR y MMHal | No disponible | Hugging Face, abierto |
+| Qwen2.5-VL 72B | 72B | No disponible | Inferior a MiniCPM-V 4.5 en OpenCompass | Apache 2.0 | Hugging Face, abierto |
 | GPT-4o-latest | No publico | No publico | Inferior en OpenCompass, OCRBench y MMHal | Propietaria | API |
 | Gemini 2.0 Pro | No publico | No publico | Inferior en OpenCompass | Propietaria | API |
-| MiniCPM-V 4.6 | 1,3B | No disponible | Superior a Gemma4-E2B-it, mas eficiente que Qwen3.5-0.8B | No disponible | HuggingFace, abierto |
+| MiniCPM-V 4.6 | 1,3B | No disponible | Superior a Gemma4-E2B-it, mas eficiente que Qwen3.5-0.8B | No disponible | Hugging Face, abierto |
 
 La comparativa muestra que MiniCPM-V 4.5 ofrece un rendimiento superior a modelos mucho mas grandes (Qwen2.5-VL 72B) y a modelos propietarios de ultima generacion, con un tamano drasticamente menor. La version 4.6 de la misma serie es una alternativa mas ligera (1,3B) para escenarios con restricciones extremas de recursos.
 
@@ -94,10 +94,10 @@ La comparativa muestra que MiniCPM-V 4.5 ofrece un rendimiento superior a modelo
 
 ## Enlaces
 
-- HuggingFace (modelo AWQ): https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ
-- HuggingFace (modelo base): https://huggingface.co/openbmb/MiniCPM-V-4_5
-- HuggingFace (version int4): https://huggingface.co/openbmb/MiniCPM-V-4_5-int4
-- HuggingFace (version GGUF): https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf
+- Hugging Face (modelo AWQ): https://huggingface.co/openbmb/MiniCPM-V-4_5-AWQ
+- Hugging Face (modelo base): https://huggingface.co/openbmb/MiniCPM-V-4_5
+- Hugging Face (version int4): https://huggingface.co/openbmb/MiniCPM-V-4_5-int4
+- Hugging Face (version GGUF): https://huggingface.co/openbmb/MiniCPM-V-4_5-gguf
 - GitHub (MiniCPM-o): https://github.com/OpenBMB/MiniCPM-o
 - GitHub (MiniCPM-V): https://github.com/OpenBMB/MiniCPM-V
 - Demo online: http://101.126.42.235:30910/

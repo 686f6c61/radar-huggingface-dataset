@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pelecristiano/Mers` es un repositorio publicado en HuggingFace por el usuario `pelecristiano` bajo licencia Apache 2.0. Sin embargo, no se dispone de informacion tecnica alguna sobre el modelo: la model card esta vacia, no se especifica arquitectura, tamano, contexto ni idiomas, y el repositorio registra 0 descargas y 0 likes. La fecha de creacion es el 3 de septiembre de 2026.
+El modelo `pelecristiano/Mers` es un repositorio publicado en Hugging Face por el usuario `pelecristiano` bajo licencia Apache 2.0. Sin embargo, no se dispone de informacion tecnica alguna sobre el modelo: la model card esta vacia, no se especifica arquitectura, tamano, contexto ni idiomas, y el repositorio registra 0 descargas y 0 likes. La fecha de creacion es el 3 de septiembre de 2026.
 
 La busqueda web realizada no ha arrojado ningun resultado relacionado con este modelo. Todo el contenido encontrado corresponde a paginas no vinculadas (Wikipedia, noticias de ciberseguridad, verificaciones de datos y preguntas sobre simbolos), lo que confirma que no existe documentacion publica ni referencias externas. En consecuencia, no es posible verificar si el repositorio contiene pesos reales, un modelo entrenado o simplemente un espacio vacio.
 
@@ -57,4 +57,4 @@ No es posible realizar una comparativa, ya que no se dispone de informacion sobr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pelecristiano/Mers
+- Hugging Face: https://huggingface.co/pelecristiano/Mers

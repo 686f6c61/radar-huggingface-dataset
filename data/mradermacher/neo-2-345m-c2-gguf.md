@@ -78,7 +78,7 @@ La comparativa es estructural, ya que no hay benchmarks. El modelo parece ser un
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/neo-2-345M-C2-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/neo-2-345M-C2-GGUF)
 - [Modelo base: aquilesfd/neo-2-345M-C2](https://huggingface.co/aquilesfd/neo-2-345M-C2)
 - [Página de descargas de mradermacher](https://hf.tst.eu/model#neo-2-345M-C2-GGUF)
 - [Guía de uso de GGUF de TheBloke](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF) (referencia general)

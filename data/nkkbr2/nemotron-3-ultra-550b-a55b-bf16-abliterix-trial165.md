@@ -12,7 +12,7 @@ Su relevancia es acotada y de perfil investigador: interesa a quienes estudian t
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Etiqueta HuggingFace: nemotron_h. No se detalla en la ficha; en la familia Nemotron-H de NVIDIA esta etiqueta corresponde a un diseno hibrido. No confirmado en la informacion disponible |
+| Arquitectura | Etiqueta Hugging Face: nemotron_h. No se detalla en la ficha; en la familia Nemotron-H de NVIDIA esta etiqueta corresponde a un diseno hibrido. No confirmado en la informacion disponible |
 | Parametros totales | 550B (deducido de la nomenclatura del repositorio; no confirmado en la ficha) |
 | Parametros activos | 55B (deducido de la nomenclatura del repositorio; no confirmado en la ficha) |
 | Longitud de contexto | no disponible |
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nkkbr2/Nemotron-3-Ultra-550B-A55B-BF16-Abliterix-trial165
+- Repositorio Hugging Face: https://huggingface.co/nkkbr2/Nemotron-3-Ultra-550B-A55B-BF16-Abliterix-trial165
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Paper, blog, repositorio o demo del ajuste: no disponible
 - Resultados relevantes de la busqueda web: no disponible (la busqueda devolvio unicamente paginas de inicio de motores de busqueda, sin contenido relacionado con el modelo)

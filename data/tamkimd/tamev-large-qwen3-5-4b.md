@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TAMEV-Large-Qwen3.5-4B es un modelo de clasificación de texto publicado en HuggingFace por el usuario Tamkimd bajo licencia Apache 2.0. El autor lo presenta como un "System One Decision Model": un motor de decisión orientado a enrutado y selección entre candidatos, pensado como alternativa a los LLM generativos (a los que describe como "System Two"), con inferencia local y probabilidades calibradas.
+TAMEV-Large-Qwen3.5-4B es un modelo de clasificación de texto publicado en Hugging Face por el usuario Tamkimd bajo licencia Apache 2.0. El autor lo presenta como un "System One Decision Model": un motor de decisión orientado a enrutado y selección entre candidatos, pensado como alternativa a los LLM generativos (a los que describe como "System Two"), con inferencia local y probabilidades calibradas.
 
 Según la model card, el modelo se apoya en un backbone Qwen/Qwen3.5-4B y declara 4440,0 M de parámetros activos, con artefactos en FP32 (16937,4 MB) e INT8 (4234,3 MB). Sin embargo, los metadatos reales de safetensors del repositorio indican 1.311.232 parámetros totales (aproximadamente 1,3 M) y un tamaño de repositorio de 0,0 GB, una discrepancia de tres órdenes de magnitud que no queda resuelta en la información disponible. Tampoco se ha podido confirmar la existencia pública de un modelo denominado Qwen/Qwen3.5-4B.
 
@@ -81,7 +81,7 @@ No se han publicado resultados en benchmarks estándar reconocidos (MMLU, HumanE
 - Compatibilidad con GPU de consumo: no confirmada. Si se toma el dato INT8 declarado, cabría en tarjetas tipo RTX 3060 12 GB o superiores; si se toma el dato real de safetensors, el modelo sería trivialmente ejecutable en cualquier equipo.
 - Opciones de despliegue mencionadas en la información: transformers con trust_remote_code=True, además de artefactos ONNX, CoreML y MLX. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput declarados: 574,18 ms de mediana (p50), 2400,57 ms en p95 y 1,2 req/s en un solo hilo. El hardware de medida no se especifica.
-- Nota: los "endpoints_compatible" del repositorio indican compatibilidad con la infraestructura de inferencia de HuggingFace.
+- Nota: los "endpoints_compatible" del repositorio indican compatibilidad con la infraestructura de inferencia de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -89,7 +89,7 @@ La model card cita como alternativas a "TypeSafe Jev", "Jared Palmer's Kev", "La
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TAMEV-Large-Qwen3.5-4B | 1.311.232 reales / 4440 M declarados | no disponible | 92 % top-1 (declarado, no verificado) | Apache 2.0 | HuggingFace |
+| TAMEV-Large-Qwen3.5-4B | 1.311.232 reales / 4440 M declarados | no disponible | 92 % top-1 (declarado, no verificado) | Apache 2.0 | Hugging Face |
 | TypeSafe Jev | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Kev (Jared Palmer) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Laya | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -113,7 +113,7 @@ La model card cita como alternativas a "TypeSafe Jev", "Jared Palmer's Kev", "La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tamkimd/tamev-large-qwen3.5-4b
+- Modelo en Hugging Face: https://huggingface.co/Tamkimd/tamev-large-qwen3.5-4b
 - Repositorio GitHub del autor: https://github.com/tamkimd/tamev
 - Backbone citado (no verificado): https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper: no disponible

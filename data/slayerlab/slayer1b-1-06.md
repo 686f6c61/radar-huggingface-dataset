@@ -93,7 +93,7 @@ No se han identificado en la información proporcionada modelos alternativos con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.06
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.06
 - Versión anterior 1.05: https://huggingface.co/SlayerLab/Slayer1B-1.05
 - Versión anterior 1.04: https://huggingface.co/SlayerLab/Slayer1B-1.04
 - Versión anterior 1.03: https://huggingface.co/SlayerLab/Slayer1B-1.03

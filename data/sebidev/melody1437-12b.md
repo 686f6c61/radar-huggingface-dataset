@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Melody1437-12B es un ajuste fino (finetune) del modelo google/gemma-4-12B-it, publicado por el usuario sebidev en HuggingFace. Se trata de un modelo de 11.959.730.224 parametros (aproximadamente 12B) orientado de forma explicita al roleplay conversacional y al contenido para adultos, segun los tags declarados por el autor: `roleplay`, `conversational`, `instruct`, `nsfw`, `explicit`, `erp`, `adult-content`, `mature` y `unaligned`. El modelo hereda la arquitectura y el tamano del checkpoint base de Google, pero no se documentan cambios estructurales respecto a este.
+Melody1437-12B es un ajuste fino (finetune) del modelo google/gemma-4-12B-it, publicado por el usuario sebidev en Hugging Face. Se trata de un modelo de 11.959.730.224 parametros (aproximadamente 12B) orientado de forma explicita al roleplay conversacional y al contenido para adultos, segun los tags declarados por el autor: `roleplay`, `conversational`, `instruct`, `nsfw`, `explicit`, `erp`, `adult-content`, `mature` y `unaligned`. El modelo hereda la arquitectura y el tamano del checkpoint base de Google, pero no se documentan cambios estructurales respecto a este.
 
 El modelo resuelve el caso de uso de generacion de texto conversacional sin las restricciones de alineacion tipicas de los modelos instruct estandar, lo que lo hace relevante para plataformas de roleplay, ficcion interactiva y personajes conversacionales donde el filtrado de contenido suele limitar las respuestas. El repositorio ocupa 24,0 GB y almacena los pesos en formato safetensors, lo que es coherente con un checkpoint en bf16/fp16 para un modelo denso de ~12B parametros.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Melody1437-12B | ~12B | no disponible | Roleplay / NSFW / unaligned | apache-2.0 | HuggingFace (0 descargas) |
+| Melody1437-12B | ~12B | no disponible | Roleplay / NSFW / unaligned | apache-2.0 | Hugging Face (0 descargas) |
 | google/gemma-4-12B-it | ~12B | no disponible | Instruct alineado | no disponible en esta informacion | no disponible |
 | Alternativas de roleplay de ~12B | no disponible | no disponible | Roleplay / NSFW | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks ni de especificaciones de otras alternativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sebidev/Melody1437-12B
+- Hugging Face: https://huggingface.co/sebidev/Melody1437-12B
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente enlaces a sitios de contenido adulto sin relacion con el checkpoint); no se han encontrado papers, blogs ni repositorios adicionales.

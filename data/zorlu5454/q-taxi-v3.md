@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Zorlu5454. No es un modelo de lenguaje: se trata de una implementación propia de Q-Learning tabular entrenada para resolver el entorno Taxi-v3 de Gymnasium, un problema clásico de toma de decisiones secuencial con espacio de estados discreto. El repositorio contiene un único artefacto de pesos, `q-learning.pkl`, y la model card documenta la carga mediante `load_from_hub` de `huggingface_hub` y su uso con `gym.make`.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Zorlu5454. No es un modelo de lenguaje: se trata de una implementación propia de Q-Learning tabular entrenada para resolver el entorno Taxi-v3 de Gymnasium, un problema clásico de toma de decisiones secuencial con espacio de estados discreto. El repositorio contiene un único artefacto de pesos, `q-learning.pkl`, y la model card documenta la carga mediante `load_from_hub` de `huggingface_hub` y su uso con `gym.make`.
 
 El interés de este tipo de publicación es fundamentalmente docente y metodológico: sirve como referencia reproducible de un algoritmo de control TD off-policy (Q-Learning, Watkins 1989) sobre un MDP pequeño, y como punto de comparación para pipelines de evaluación de RL. El autor declara un resultado de `mean_reward` de 7,50 ± 2,73 en el dataset Taxi-v3, marcado como no verificado en el model-index.
 
@@ -25,8 +25,8 @@ Su relevancia es limitada fuera del ámbito de la investigación y la enseñanza
 | Interfaz de carga | `load_from_hub(repo_id="Zorlu5454/q-Taxi-v3", filename="q-learning.pkl")` |
 | Tarea declarada (pipeline) | `reinforcement-learning` |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de creacion | 26 de septiembre de 2026 (segun HuggingFace) |
-| Ultima actualizacion | 26 de septiembre de 2026 (segun HuggingFace) |
+| Fecha de creacion | 26 de septiembre de 2026 (segun Hugging Face) |
+| Ultima actualizacion | 26 de septiembre de 2026 (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -40,7 +40,7 @@ El entrenamiento, según la model card, consiste en interacción con el simulado
 - Resolución del entorno Taxi-v3: el agente selecciona acciones (movimiento norte, sur, este, oeste, recoger pasajero, dejar pasajero) a partir del estado discreto del entorno.
 - Política greedy derivada de la tabla Q almacenada en `q-learning.pkl`.
 - Integración con Gymnasium mediante `gym.make(model["env_id"])`, ya que el propio fichero de pesos parece incluir el identificador del entorno.
-- Carga directa desde el Hub de HuggingFace con `load_from_hub`.
+- Carga directa desde el Hub de Hugging Face con `load_from_hub`.
 - No dispone de generación de texto, razonamiento en lenguaje natural, código, matemáticas, visión, audio ni capacidades multilingües.
 - No soporta tool calling, function calling ni razonamiento multi-paso en el sentido de los agentes basados en LLM.
 - No se documenta modo "thinking", cadena de pensamiento ni ninguna capacidad especial adicional.
@@ -50,7 +50,7 @@ El entrenamiento, según la model card, consiste en interacción con el simulado
 
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo mínimo y ejecutable de Q-Learning tabular, ya que el agente, el entorno y la carga desde el Hub caben en unas pocas líneas de Python.
 - Baseline de comparación: permite contrastar el rendimiento de algoritmos propios (DQN, PPO, A2C) contra una política Q-Learning tabular de referencia en el mismo MDP.
-- Verificación de pipelines de evaluación: útil para probar scripts que cargan agentes desde HuggingFace, ejecutan episodios con Gymnasium y agregan métricas de recompensa media.
+- Verificación de pipelines de evaluación: útil para probar scripts que cargan agentes desde Hugging Face, ejecutan episodios con Gymnasium y agregan métricas de recompensa media.
 - Pruebas de integración en librerías: el patrón `load_from_hub` + `gym.make` es idóneo para tests de extremo a extremo en herramientas de RL o de serialización de políticas.
 - Reproducibilidad y auditoría de publicaciones: al ser un artefacto pequeño y determinista, facilita comprobar cómo se declaran métricas en el model-index y qué significa que un resultado esté marcado como `verified: false`.
 - Demostraciones deRL en charlas o tutoriales: el coste computacional es prácticamente nulo y no requiere GPU, lo que permite ejecutarlo en vivo sobre portátiles o incluso en entornos con recursos muy limitados.
@@ -58,7 +58,7 @@ El entrenamiento, según la model card, consiste en interacción con el simulado
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index de la model card. El resultado no está verificado por HuggingFace (`verified: false`). No se han publicado otros benchmarks en la información disponible.
+Datos declarados por el autor en el model-index de la model card. El resultado no está verificado por Hugging Face (`verified: false`). No se han publicado otros benchmarks en la información disponible.
 
 | Benchmark / tarea | Dataset | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -82,7 +82,7 @@ No se dispone de datos de otros agentes comparables en la información proporcio
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-Taxi-v3 (este modelo) | Tabla Q de 500 estados x 6 acciones segun la especificacion estandar del entorno (no confirmado por el autor) | No aplica | mean_reward 7,50 ± 2,73 (no verificado) | No disponible | Publico en HuggingFace, 0 descargas |
+| q-Taxi-v3 (este modelo) | Tabla Q de 500 estados x 6 acciones segun la especificacion estandar del entorno (no confirmado por el autor) | No aplica | mean_reward 7,50 ± 2,73 (no verificado) | No disponible | Publico en Hugging Face, 0 descargas |
 | Otros agentes Q-Learning tabulares para Taxi-v3 publicados en el Hub | No disponible | No aplica | No disponible | No disponible | No disponible |
 | Implementaciones de DQN con aproximacion mediante red neuronal para Taxi-v3 (por ejemplo, las incluidas en librerias de RL) | No disponible | No aplica | No disponible | Depende de la libreria | Habitualmente publicas |
 | Politica aleatoria sobre Taxi-v3 | No aplica | No aplica | No disponible | No aplica | Referencia trivial reproducible |
@@ -102,7 +102,7 @@ No se dispone de datos de otros agentes comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zorlu5454/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/Zorlu5454/q-Taxi-v3
 - Fichero de pesos: https://huggingface.co/Zorlu5454/q-Taxi-v3/blob/main/q-learning.pkl
 - Referencia del entorno Taxi-v3 en Gymnasium: https://gymnasium.farama.org/environments/toy_text/taxi/
 - Resultados de la búsqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Los resultados devueltos (viraly.io, app.viraly.io, viraly.fr, viraly-ads.fr) corresponden a una herramienta de programacion y analitica de redes sociales y no guardan relacion con q-Taxi-v3 ni con aprendizaje por refuerzo.

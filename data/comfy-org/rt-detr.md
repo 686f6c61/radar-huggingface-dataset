@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Comfy-Org/RT-DETR es un empaquetado para ComfyUI de los pesos del detector de objetos en tiempo real RT-DETRv4, desarrollado originalmente por el equipo de RT-DETRs (vinculado a Baidu). RT-DETR (Real-Time Detection Transformer) combina la arquitectura transformer con un diseño optimizado para inferencia de baja latencia, lo que lo hace adecuado para aplicaciones de visión por computadora que requieren detección de objetos en tiempo real sin sacrificar precisión. Este repositorio en HuggingFace no contiene el modelo original, sino archivos de pesos en formato safetensors (fp16 y fp32) listos para ser utilizados directamente en el ecosistema ComfyUI, facilitando la integración en flujos de trabajo de generación y edición de imágenes.
+El modelo Comfy-Org/RT-DETR es un empaquetado para ComfyUI de los pesos del detector de objetos en tiempo real RT-DETRv4, desarrollado originalmente por el equipo de RT-DETRs (vinculado a Baidu). RT-DETR (Real-Time Detection Transformer) combina la arquitectura transformer con un diseño optimizado para inferencia de baja latencia, lo que lo hace adecuado para aplicaciones de visión por computadora que requieren detección de objetos en tiempo real sin sacrificar precisión. Este repositorio en Hugging Face no contiene el modelo original, sino archivos de pesos en formato safetensors (fp16 y fp32) listos para ser utilizados directamente en el ecosistema ComfyUI, facilitando la integración en flujos de trabajo de generación y edición de imágenes.
 
 La relevancia de este modelo radica en que ofrece una alternativa moderna a los detectores basados en CNN (como YOLO) al emplear atención global, lo que mejora el manejo de objetos superpuestos y de pequeño tamaño. Al estar empaquetado para ComfyUI, permite a los usuarios de esta herramienta incorporar detección de objetos en sus pipelines sin necesidad de escribir código adicional. La licencia Apache-2.0 permite uso comercial y modificación, aunque la información disponible no detalla el tamaño exacto de parámetros ni la configuración específica de la variante (R50, R101, etc.).
 
@@ -43,7 +43,7 @@ RT-DETR se basa en una arquitectura transformer encoder-decoder adaptada para de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas como mAP, FPS ni comparaciones con otros detectores. Para obtener datos de rendimiento, se recomienda consultar el repositorio original de RT-DETRv4 en GitHub o los articulos academicos asociados.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas como mAP, FPS ni comparaciones con otros detectores. Para obtener datos de rendimiento, se recomienda consultar el repositorio original de RT-DETRv4 en GitHub o los articulos academicos asociados.
 
 ## Requisitos de hardware
 
@@ -59,9 +59,9 @@ No se dispone de datos comparativos en la informacion proporcionada. Sin embargo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RT-DETR (este repo) | Transformer encoder-decoder | no disponible | Vision | Apache-2.0 | HuggingFace, ComfyUI |
+| RT-DETR (este repo) | Transformer encoder-decoder | no disponible | Vision | Apache-2.0 | Hugging Face, ComfyUI |
 | YOLOv8 | CNN (CSPDarknet) | ~3-11 M (variantes) | Vision | AGPL-3.0 | Ultralytics, ONNX, etc. |
-| DETR (original) | Transformer encoder-decoder | ~41 M (ResNet-50) | Vision | Apache-2.0 | HuggingFace, GitHub |
+| DETR (original) | Transformer encoder-decoder | ~41 M (ResNet-50) | Vision | Apache-2.0 | Hugging Face, GitHub |
 
 RT-DETR suele ofrecer mejor precision que YOLO en objetos pequenos y superpuestos, pero con mayor coste computacional que las variantes mas ligeras de YOLO. DETR es mas lento y pesado, mientras que RT-DETR esta disenado para tiempo real. No se dispone de datos de rendimiento especificos para confirmar estas afirmaciones en este repositorio.
 
@@ -77,6 +77,6 @@ RT-DETR suele ofrecer mejor precision que YOLO en objetos pequenos y superpuesto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/RT-DETR
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/RT-DETR
 - Repositorio original de RT-DETRv4: https://github.com/RT-DETRs/RT-DETRv4
 - Documentacion de ComfyUI: https://docs.comfy.org/ (no se proporciona enlace directo, pero es el ecosistema de referencia)

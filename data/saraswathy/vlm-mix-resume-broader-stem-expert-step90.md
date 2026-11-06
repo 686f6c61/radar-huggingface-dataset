@@ -71,8 +71,8 @@ No se aportan datos de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluaci�
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saraswathy/vlm-mix-resume-broader-stem-expert-step90 | Adaptador LoRA sobre VLM (checkpoint de entrenamiento) | No disponible (base ~4B) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct | VLM completo | ~4B (segun nomenclatura) | No disponible | No disponible en esta ficha | HuggingFace (modelo base) |
+| Saraswathy/vlm-mix-resume-broader-stem-expert-step90 | Adaptador LoRA sobre VLM (checkpoint de entrenamiento) | No disponible (base ~4B) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-4B-Instruct | VLM completo | ~4B (segun nomenclatura) | No disponible | No disponible en esta ficha | Hugging Face (modelo base) |
 | Otros VLM de tamano similar (por ejemplo, la familia Qwen2.5-VL en sus variantes pequenas) | VLM completo | No disponible en esta ficha | No disponible | No disponible en esta ficha | No disponible |
 
 La comparación relevante aquí no es de rendimiento, sino de naturaleza del artefacto: frente al modelo base Qwen3-VL-4B-Instruct, este repositorio no es un modelo desplegable, sino un adaptador más un estado de entrenamiento. Cualquier comparación numérica con alternativas de la misma categoría no puede realizarse con la información disponible.
@@ -92,6 +92,6 @@ La comparación relevante aquí no es de rendimiento, sino de naturaleza del art
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-broader-stem-expert-step90
+- Modelo en Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-broader-stem-expert-step90
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

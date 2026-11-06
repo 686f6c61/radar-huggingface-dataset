@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `reyansh38771/sn97____0pentensor____uid228____hk5ChzY` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, según las etiquetas del repositorio. Fue publicado por el usuario `reyansh38771` en HuggingFace y forma parte de la red Bittensor SN97 (también conocida como Albedo), una subred dedicada a la destilación competitiva de modelos. En este contexto, los mineros entrenan modelos pequeños bajo un marco de evaluación de 25 ejes, y el ganador recibe el 100% de las emisiones de la subred. Este modelo concreto parece ser una de las propuestas presentadas en dicha competición.
+El modelo `reyansh38771/sn97____0pentensor____uid228____hk5ChzY` es un modelo de lenguaje de gran tamaño (LLM) con arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, según las etiquetas del repositorio. Fue publicado por el usuario `reyansh38771` en Hugging Face y forma parte de la red Bittensor SN97 (también conocida como Albedo), una subred dedicada a la destilación competitiva de modelos. En este contexto, los mineros entrenan modelos pequeños bajo un marco de evaluación de 25 ejes, y el ganador recibe el 100% de las emisiones de la subred. Este modelo concreto parece ser una de las propuestas presentadas en dicha competición.
 
-Con aproximadamente 35,95 mil millones de parámetros totales y un tamaño de repositorio de 71,9 GB en formato `safetensors`, el modelo está diseñado para ofrecer un equilibrio entre capacidad y eficiencia, probablemente mediante activación dispersa de expertos. Sin embargo, la información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los detalles de entrenamiento. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace para descargar los pesos.
+Con aproximadamente 35,95 mil millones de parámetros totales y un tamaño de repositorio de 71,9 GB en formato `safetensors`, el modelo está diseñado para ofrecer un equilibrio entre capacidad y eficiencia, probablemente mediante activación dispersa de expertos. Sin embargo, la información pública disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los detalles de entrenamiento. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face para descargar los pesos.
 
 La relevancia de este modelo radica en su origen dentro del ecosistema Bittensor, donde la destilación de modelos grandes en versiones más compactas es un objetivo central. Aunque no hay datos de rendimiento publicados, su inclusión en SN97 sugiere que ha sido evaluado bajo un marco multidimensional que incluye razonamiento, código, matemáticas y otras capacidades. No obstante, cualquier uso en producción debe considerar la falta de transparencia sobre licencia y datos de entrenamiento.
 
@@ -46,7 +46,7 @@ Dado que el modelo tiene ~35,95 mil millones de parámetros y un tamaño de 71,9
 - VRAM estimada para inferencia en FP16: ~72 GB (más overhead de activaciones y KV cache).
 - Con cuantización a 8 bits: ~36 GB; a 4 bits: ~18 GB (si se dispusiera de versiones cuantizadas, que no están confirmadas).
 - GPU recomendadas: para FP16 se necesitaría una NVIDIA A100 80GB o H100; para 8 bits, una A100 40GB o RTX 6000 Ada; para 4 bits, una RTX 4090 (24GB) podría ser suficiente, pero no hay garantía de que existan dichas cuantizaciones.
-- Opciones de despliegue: al no haber formatos GGUF ni soporte explícito para vLLM u Ollama, se desconoce si es compatible con esos frameworks. El formato `safetensors` es estándar para Transformers, por lo que podría cargarse con la biblioteca `transformers` de HuggingFace, pero el acceso restringido complica la evaluación.
+- Opciones de despliegue: al no haber formatos GGUF ni soporte explícito para vLLM u Ollama, se desconoce si es compatible con esos frameworks. El formato `safetensors` es estándar para Transformers, por lo que podría cargarse con la biblioteca `transformers` de Hugging Face, pero el acceso restringido complica la evaluación.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reyansh38771/sn97____0pentensor____uid228____hk5ChzY
+- Repositorio Hugging Face: https://huggingface.co/reyansh38771/sn97____0pentensor____uid228____hk5ChzY
 - Repositorio relacionado (mismo autor, otro modelo): https://huggingface.co/reyansh38771/sn97____monate615____uid157____hk5CvaP
 - Repositorio relacionado (mismo autor, otro modelo): https://huggingface.co/reyansh38771/sn97____dora7____uid216____hk5EX35
 - Artículo sobre la subred SN97 (Distil): https://www.tao.media/the-subnet-an-ai-agent-built-inside-distil-sn97/

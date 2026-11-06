@@ -88,7 +88,7 @@ La diferencia principal frente a RTMPose es el enfoque: RTMPose es top-down y ne
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imagent/rtmo-l-onnx
+- Repositorio en Hugging Face: https://huggingface.co/imagent/rtmo-l-onnx
 - Exportacion ONNX original de Xenova: https://huggingface.co/Xenova/RTMO-l
 - Fichero de pesos de origen: https://huggingface.co/Xenova/RTMO-l/resolve/866da24c537be882180eb1bd278bc22cef85c6fd/onnx/model.onnx
 - Proyecto RTMO en OpenMMLab mmpose: https://github.com/open-mmlab/mmpose/tree/main/projects/rtmo

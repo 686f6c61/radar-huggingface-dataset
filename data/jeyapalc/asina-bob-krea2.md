@@ -70,7 +70,7 @@ No se dispone de información sobre otros LoRAs de DreamBooth para Krea 2 en el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [jeyapalc/asina-bob-krea2](https://huggingface.co/jeyapalc/asina-bob-krea2)
+- Repositorio Hugging Face: [jeyapalc/asina-bob-krea2](https://huggingface.co/jeyapalc/asina-bob-krea2)
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw (referencia en el README)
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo (referencia en el README)
 - Documentación de LoRA en diffusers: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

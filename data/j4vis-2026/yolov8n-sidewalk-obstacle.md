@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `J4VIS-2026/yolov8n-sidewalk-obstacle` es un detector de objetos basado en la arquitectura YOLOv8n de Ultralytics, publicado en HuggingFace por el usuario J4VIS-2026. Su proposito es la deteccion de obstaculos en aceras, un problema relevante para sistemas de asistencia a la navegacion de personas con discapacidad visual, robots de reparto autonomos y mantenimiento de infraestructura urbana. La model card publicada es minima: solo incluye la licencia AGPL-3.0, sin detalles sobre el entrenamiento, los datos utilizados ni las clases detectadas. El modelo se publico el 24 de agosto de 2026 y no registra descargas ni valoraciones en el momento de redactar esta ficha.
+El modelo `J4VIS-2026/yolov8n-sidewalk-obstacle` es un detector de objetos basado en la arquitectura YOLOv8n de Ultralytics, publicado en Hugging Face por el usuario J4VIS-2026. Su proposito es la deteccion de obstaculos en aceras, un problema relevante para sistemas de asistencia a la navegacion de personas con discapacidad visual, robots de reparto autonomos y mantenimiento de infraestructura urbana. La model card publicada es minima: solo incluye la licencia AGPL-3.0, sin detalles sobre el entrenamiento, los datos utilizados ni las clases detectadas. El modelo se publico el 24 de agosto de 2026 y no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
 La arquitectura YOLOv8n es la variante "nano" de la familia YOLOv8, lanzada por Ultralytics en enero de 2023. Se trata de un detector de una sola pasada (single-stage) basado en redes neuronales convolucionales, disenado para ofrecer un equilibrio entre velocidad y precision en dispositivos con recursos limitados. Con aproximadamente 3,2 millones de parametros, YOLOv8n es adecuado para inferencia en tiempo real en CPU, GPU de gama baja y dispositivos de borde. La investigacion relacionada con la deteccion de obstaculos en aceras mediante YOLO se ha documentado en publicaciones academicas centradas en la asistencia a personas con discapacidad visual.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto/Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| J4VIS-2026/yolov8n-sidewalk-obstacle | YOLOv8n | ~3,2 M | 640x640 | AGPL-3.0 | HuggingFace |
-| Ultralytics YOLOv8n (preentrenado en COCO) | YOLOv8n | ~3,2 M | 640x640 | AGPL-3.0 | Ultralytics, HuggingFace |
-| Ultralytics YOLOv8s (preentrenado en COCO) | YOLOv8s | ~11,2 M | 640x640 | AGPL-3.0 | Ultralytics, HuggingFace |
+| J4VIS-2026/yolov8n-sidewalk-obstacle | YOLOv8n | ~3,2 M | 640x640 | AGPL-3.0 | Hugging Face |
+| Ultralytics YOLOv8n (preentrenado en COCO) | YOLOv8n | ~3,2 M | 640x640 | AGPL-3.0 | Ultralytics, Hugging Face |
+| Ultralytics YOLOv8s (preentrenado en COCO) | YOLOv8s | ~11,2 M | 640x640 | AGPL-3.0 | Ultralytics, Hugging Face |
 | the0807/Sidewalk-Obstacle-Detection (repo GitHub) | YOLOv8 (variante no especificada) | no disponible | no disponible | no disponible | GitHub |
 
 La comparativa se limita a modelos de la misma familia YOLOv8, ya que no se dispone de informacion sobre otros modelos especificos de deteccion de obstaculos en aceras con los que comparar directamente. La diferencia principal entre este modelo y los preentrenados de Ultralytics es que este ha sido presumiblemente fine-tuneado para la tarea concreta de obstaculos en aceras, aunque no se documentan los datos de entrenamiento ni las clases detectadas.
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de la misma familia YOLOv8, ya que no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/J4VIS-2026/yolov8n-sidewalk-obstacle
+- Modelo en Hugging Face: https://huggingface.co/J4VIS-2026/yolov8n-sidewalk-obstacle
 - Repositorio GitHub relacionado (the0807/Sidewalk-Obstacle-Detection): https://github.com/the0807/Sidewalk-Obstacle-Detection
 - Pagina de YOLOv8 en Ultralytics: https://platform.ultralytics.com/ultralytics/yolov8
 - Articulo Springer sobre deteccion de obstaculos en aceras con YOLO: https://link.springer.com/chapter/10.1007/978-3-031-48573-2_57

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LanluZ/vascular-bundle-yolo26 es un detector de objetos YOLO26 en su variante media ("m") ajustado específicamente para localizar haces vasculares en imágenes de bambú. Lo desarrolla el usuario LanluZ y se publica bajo la librería `ultralytics` (versión 8.4.165), con el pipeline de HuggingFace `object-detection`. No es un modelo de lenguaje: no procesa texto, no tiene ventana de contexto y no soporta tool calling ni razonamiento multi-paso.
+LanluZ/vascular-bundle-yolo26 es un detector de objetos YOLO26 en su variante media ("m") ajustado específicamente para localizar haces vasculares en imágenes de bambú. Lo desarrolla el usuario LanluZ y se publica bajo la librería `ultralytics` (versión 8.4.165), con el pipeline de Hugging Face `object-detection`. No es un modelo de lenguaje: no procesa texto, no tiene ventana de contexto y no soporta tool calling ni razonamiento multi-paso.
 
 Se trata de un ajuste fino muy acotado sobre un conjunto de datos propio, el "bamboo vascular bundle dataset", con apenas 7 imágenes de entrenamiento y 2 de validación. El entrenamiento se prolongó 144 épocas con early stopping (mejor checkpoint en la época 114), usando AdamW con `lr0 = 0.001` y precisión mixta (AMP). El autor reporta mAP50-95 de 0,9694 y mAP50 de 0,9939, cifras que deben interpretarse con mucha cautela por el tamaño del conjunto de validación.
 
-Su relevancia es limitada y de nicho: sirve como prueba de concepto de la migración a YOLO26 dentro del repositorio `vascular-bundle-track` (rama `yolo26-migration`) y como punto de partida para pipelines de análisis anatómico de bambú. No hay licencia declarada, el repositorio figura con 0,0 GB de tamaño en HuggingFace y no constan descargas ni valoraciones, por lo que no está listo para uso en producción sin verificación previa.
+Su relevancia es limitada y de nicho: sirve como prueba de concepto de la migración a YOLO26 dentro del repositorio `vascular-bundle-track` (rama `yolo26-migration`) y como punto de partida para pipelines de análisis anatómico de bambú. No hay licencia declarada, el repositorio figura con 0,0 GB de tamaño en Hugging Face y no constan descargas ni valoraciones, por lo que no está listo para uso en producción sin verificación previa.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Su relevancia es limitada y de nicho: sirve como prueba de concepto de la migrac
 | Longitud de contexto | no aplica: modelo de visión, no procesa secuencias de texto. La resolución de entrada no se especifica |
 | Tipos de cuantización | no disponible. El checkpoint se distribuye en precisión completa de PyTorch; el autor no documenta cuantizaciones ni exportaciones |
 | Idiomas soportados | no disponible / no aplica (no es un modelo de lenguaje) |
-| Licencia | no disponible (ni la model card ni el repositorio de HuggingFace la declaran) |
+| Licencia | no disponible (ni la model card ni el repositorio de Hugging Face la declaran) |
 | Formato de pesos | PyTorch `.pt` (checkpoint de Ultralytics), en la ruta `weights/best.pt` |
 | Tarea | Detección de objetos (`object-detection`) |
 | Dominio | Haces vasculares de bambú en imágenes (previsiblemente microscopía) |
@@ -27,8 +27,8 @@ Su relevancia es limitada y de nicho: sirve como prueba de concepto de la migrac
 | Datos de entrenamiento | 7 imágenes de entrenamiento / 2 de validación |
 | Épocas | 144 con early stopping; mejor época: 114 |
 | Optimizador e hiperparámetros | AdamW, `lr0 = 0.001`, AMP activado |
-| Tamaño del repositorio | 0,0 GB según HuggingFace |
-| Fecha de creación declarada | 2026-09-29 (fecha futura o inconsistente en los metadatos de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB según Hugging Face |
+| Fecha de creación declarada | 2026-09-29 (fecha futura o inconsistente en los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ No existe información pública de rendimiento para la tarea concreta (detecció
 
 | Modelo | Tarea | Parámetros | Entrada | mAP en este dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| YOLO26m vascular bundle (este modelo) | Detección de haces vasculares de bambú | no disponible | no disponible | mAP50-95 0,9694 / mAP50 0,9939 (2 imágenes de validación) | no declarada | HuggingFace |
+| YOLO26m vascular bundle (este modelo) | Detección de haces vasculares de bambú | no disponible | no disponible | mAP50-95 0,9694 / mAP50 0,9939 (2 imágenes de validación) | no declarada | Hugging Face |
 | YOLO26m preentrenado (COCO) | Detección de objetos general | no disponible | no disponible | no evaluado en este dominio | no disponible | Ultralytics |
 | YOLO11m / YOLOv8m preentrenados | Detección de objetos general | no disponible | no disponible | no evaluado en este dominio | AGPL-3.0 o licencia comercial de Ultralytics | Ultralytics |
 | RT-DETR | Detección de objetos general | no disponible | no disponible | no evaluado en este dominio | varía según implementación | múltiples repositorios |
@@ -99,7 +99,7 @@ Cualquier comparación honesta exigiría reentrenar cada alternativa sobre el mi
 
 - Conjunto de datos insuficiente: 7 imágenes de entrenamiento y 2 de validación. Los valores de mAP reportados no tienen validez estadística y es muy probable que el modelo esté sobreajustado a esas imágenes concretas.
 - Licencia no declarada. Sin licencia explícita no puede asumirse permiso de uso comercial; en la práctica, el modelo queda en una zona legal ambigua.
-- Repositorio de 0,0 GB según HuggingFace: conviene verificar que los pesos `weights/best.pt` estén realmente subidos antes de intentar la descarga. Si el repositorio está vacío, el modelo no es utilizable.
+- Repositorio de 0,0 GB según Hugging Face: conviene verificar que los pesos `weights/best.pt` estén realmente subidos antes de intentar la descarga. Si el repositorio está vacío, el modelo no es utilizable.
 - Falta de información básica: no se documenta el número de clases, la resolución de entrada, los aumentos aplicados, la procedencia de los datos ni los pesos preentrenados de partida.
 - Fecha de creación declarada como 2026-09-29, posterior a lo esperable; puede tratarse de un error de metadatos que conviene contrastar con el autor.
 - Riesgo alto de alucinación en sentido amplio (falsos positivos): ante tinciones, aumentos, iluminaciones o especies distintas a las del entrenamiento, el modelo puede detectar haces vasculares inexistentes u omitir los reales.
@@ -110,7 +110,7 @@ Cualquier comparación honesta exigiría reentrenar cada alternativa sobre el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LanluZ/vascular-bundle-yolo26
+- Modelo en Hugging Face: https://huggingface.co/LanluZ/vascular-bundle-yolo26
 - Repositorio fuente en GitHub (rama `yolo26-migration`): https://github.com/LanluZ/vascular-bundle-track
 - Comando de descarga indicado por el autor: `hf download LanluZ/vascular-bundle-yolo26 weights/best.pt --local-dir runs/detect/bamboo_yolo26_20260929`
 - Documentación del framework Ultralytics: https://docs.ultralytics.com

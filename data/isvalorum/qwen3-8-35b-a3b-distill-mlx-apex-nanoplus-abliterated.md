@@ -97,7 +97,7 @@ La diferencia entre NanoPlus y MiniPlus es de 1,13 GB de presupuesto de pesos, q
 - Cifras de adopcion moderadas (1.263 descargas y 1 like), con una unica revision publicada en la semana posterior al lanzamiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MLX-APEX-NanoPlus-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MLX-APEX-NanoPlus-Abliterated
 - Variante hermana MLX APEX-MiniPlus Abliterated: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MLX-APEX-MiniPlus-Abliterated
 - Variante GGUF APEX-I-MiniPlus-V2.1: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF
 - Variante GGUF MTP APEX-I-MiniPlus-V2.1 Abliterated: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF

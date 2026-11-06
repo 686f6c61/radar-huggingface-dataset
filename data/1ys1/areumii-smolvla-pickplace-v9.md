@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| areumbb-smolvla-pickplace-v9 (este) | 450M | no disponible | Pick-place en robot areumbb | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | no disponible | Base preentrenada para VLA | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | 2048 tokens | Manipulación general | MIT | HuggingFace |
+| areumbb-smolvla-pickplace-v9 (este) | 450M | no disponible | Pick-place en robot areumbb | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | no disponible | Base preentrenada para VLA | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | 2048 tokens | Manipulación general | MIT | Hugging Face |
 | RT-2 (Google) | 55B | 32k tokens | Manipulación general | propietario | no público |
 
 SmolVLA se destaca por su eficiencia en comparación con OpenVLA o RT-2, siendo mucho más ligero y ejecutable en hardware de consumo. En cuanto a la tarea, este fine-tune está especializado en un único escenario de pick-place, mientras que los modelos base como OpenVLA pueden generalizar a múltiples tareas con instrucciones de lenguaje. La licencia Apache 2.0 permite uso comercial sin restricciones, lo que es una ventaja frente a otros modelos con licencias más restrictivas.
@@ -80,7 +80,7 @@ SmolVLA se destaca por su eficiencia en comparación con OpenVLA o RT-2, siendo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/1ys1/areumii-smolvla-pickplace-v9](https://huggingface.co/1ys1/areumii-smolvla-pickplace-v9)
+- Modelo en Hugging Face: [https://huggingface.co/1ys1/areumii-smolvla-pickplace-v9](https://huggingface.co/1ys1/areumii-smolvla-pickplace-v9)
 - Dataset de entrenamiento: [https://huggingface.co/datasets/1ys1/areumii_pickplace-v9](https://huggingface.co/datasets/1ys1/areumii_pickplace-v9)
 - Paper de SmolVLA: [https://huggingface.co/papers/2506.01844](https://huggingface.co/papers/2506.01844)
 - Modelo base: [https://huggingface.co/lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)

@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `easyminnn/flevel-k25-vlm_contact-60k` | 2,99 mil millones | no disponible | other | HuggingFace (0 descargas) | Decodificador dual 1x / 2,5x, etiquetas VLM de contacto |
-| `nvidia/GR00T-N1.5-3B` | ~3 mil millones | no disponible | licencia NVIDIA | HuggingFace | Modelo base, sin decodificador dual ni cabeza de confianza |
-| `OpenVLA-7B` | 7 mil millones | no disponible | licencia abierta (Llama 2) | HuggingFace | VLA generico de referencia; mayor tamano, sin flujo comprimido |
+| `easyminnn/flevel-k25-vlm_contact-60k` | 2,99 mil millones | no disponible | other | Hugging Face (0 descargas) | Decodificador dual 1x / 2,5x, etiquetas VLM de contacto |
+| `nvidia/GR00T-N1.5-3B` | ~3 mil millones | no disponible | licencia NVIDIA | Hugging Face | Modelo base, sin decodificador dual ni cabeza de confianza |
+| `OpenVLA-7B` | 7 mil millones | no disponible | licencia abierta (Llama 2) | Hugging Face | VLA generico de referencia; mayor tamano, sin flujo comprimido |
 | `pi0` (Physical Intelligence) | ~3,3 mil millones | no disponible | no disponible | no disponible | VLA con *flow matching*; comparable en escala pero con otra estrategia de accion |
 
 Las cifras de parametros de los modelos comparables proceden de informacion publica general y no de la documentacion de este repositorio. Los campos marcados como no disponibles no aparecen en la informacion proporcionada.
@@ -89,7 +89,7 @@ Las cifras de parametros de los modelos comparables proceden de informacion publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/easyminnn/flevel-k25-vlm_contact-60k
+- Hugging Face: https://huggingface.co/easyminnn/flevel-k25-vlm_contact-60k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Dataset de etiquetas: `prehj/robocasa-ratio-labels-contact` (referenciado en la model card)
 - Codigo: `TTKKWAN/F_level`, rama `hj-two-decoder-conf` @ 29a1090, script `papers/reproducing/FLARE/scripts/train_flevel_ratio.py`

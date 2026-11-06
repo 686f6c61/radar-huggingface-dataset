@@ -4,7 +4,7 @@
 
 `parmanu-lcs2/gemma-4-12B` es una version podada del modelo `gemma-4-12B`, comprimida mediante la tecnica TRIDENT, cuyo paper esta anunciado como "coming soon" y, por tanto, no es verificable publicamente. El resultado del proceso de poda es un modelo de 8.969.794.864 parametros (aproximadamente 8,97 mil millones), lo que supone una reduccion cercana al 25% respecto al modelo original segun el ratio de compresion objetivo declarado por el autor.
 
-El modelo se distribuye a traves de HuggingFace con la libreria `transformers` y pesos en formato `safetensors`, pero requiere `trust_remote_code=True` porque la poda deja cada capa MLP con una anchura distinta, y esa arquitectura irregular se define en el fichero personalizado `modeling_trident.py` incluido en el repositorio. Se trata, por tanto, de una arquitectura derivada de la familia Gemma (etiquetada como `gemma4_unified`) con modificaciones estructurales no estandar.
+El modelo se distribuye a traves de Hugging Face con la libreria `transformers` y pesos en formato `safetensors`, pero requiere `trust_remote_code=True` porque la poda deja cada capa MLP con una anchura distinta, y esa arquitectura irregular se define en el fichero personalizado `modeling_trident.py` incluido en el repositorio. Se trata, por tanto, de una arquitectura derivada de la familia Gemma (etiquetada como `gemma4_unified`) con modificaciones estructurales no estandar.
 
 La relevancia de esta ficha es limitada y conviene ser honesto al respecto: el repositorio acumula cero descargas y cero "likes" en el momento de la consulta, no declara licencia, no declara idiomas soportados y no publica resultados de benchmarks. Es un artefacto de investigacion sobre compresion de modelos, no un modelo listo para produccion, y su evaluacion practica queda pendiente de validacion independiente.
 
@@ -91,7 +91,7 @@ La comparacion con Gemma 2 9B es la mas pertinente por tamano y familia, pero la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/parmanu-lcs2/gemma-4-12B
+- Repositorio en Hugging Face: https://huggingface.co/parmanu-lcs2/gemma-4-12B
 - Dataset de ajuste SlimOrca: https://huggingface.co/datasets/Open-Orca/SlimOrca
 - Paper de TRIDENT: anunciado como "coming soon", sin enlace disponible
 - Modelo original `gemma-4-12B`: no se proporciona enlace en la informacion disponible

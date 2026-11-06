@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [Pagina del modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Solar-Dawn-31B-GGUF)
+- [Pagina del modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Solar-Dawn-31B-GGUF)
 - [Modelo base (sin cuantizar)](https://huggingface.co/Cyclone-Labs/Solar-Dawn-31B)
 - [Perfil del autor de la cuantizacion](https://huggingface.co/mradermacher)
 - [Pagina de descargas de mradermacher](https://hf.tst.eu/model)

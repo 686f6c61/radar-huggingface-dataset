@@ -101,7 +101,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnP1/d1a-e2b-it-qat-onnx
+- Modelo en Hugging Face: https://huggingface.co/JohnP1/d1a-e2b-it-qat-onnx
 - Build MLX de referencia (v0.7): https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-w4a16-ct
 - Codigo: https://github.com/jonpol01/d1a

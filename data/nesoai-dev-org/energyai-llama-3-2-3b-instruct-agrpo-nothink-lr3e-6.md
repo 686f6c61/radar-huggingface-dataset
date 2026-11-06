@@ -84,7 +84,7 @@ La comparación directa con los modelos generalistas no es del todo justa: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nesoai-dev-org/EnergyAI-llama-3.2-3b-instruct-agrpo-nothink-lr3e-6
+- Modelo en Hugging Face: https://huggingface.co/nesoai-dev-org/EnergyAI-llama-3.2-3b-instruct-agrpo-nothink-lr3e-6
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio TRL (AsyncGRPOTrainer): https://github.com/huggingface/trl
 - Paper de GRPO (DeepSeekMath): https://arxiv.org/abs/2402.03300

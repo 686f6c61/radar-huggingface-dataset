@@ -68,6 +68,6 @@ No se dispone de información sobre adaptadores comparables en el mismo estudio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_phi-4_seed42](https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_phi-4_seed42)
+- Repositorio Hugging Face: [dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_phi-4_seed42](https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_phi-4_seed42)
 - Modelo base: [nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16) (enlace inferido, no incluido en la información proporcionada)
 - Framework Tinker: [thinkingmachines.ai/tinker](https://thinkingmachines.ai/tinker/) (mencionado en la model card)

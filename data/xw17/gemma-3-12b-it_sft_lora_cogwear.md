@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador de ajuste fino identificado como `gemma-3-12b-it_SFT_lora_cogwear`, publicado por el usuario xw17 en HuggingFace el 2 de octubre de 2026. El propio identificador indica la receta: un LoRA (low-rank adaptation) entrenado mediante SFT (supervised fine-tuning) sobre el modelo base google/gemma-3-12b-it. El tamano del repositorio, 0,2 GB, es coherente con un conjunto de pesos de adaptador y no con un modelo completo de 12.000 millones de parametros, que en bf16 ocuparia del orden de 24 GB. No hay ninguna confirmacion por parte del autor de estos extremos mas alla del nombre del repositorio.
+Este repositorio contiene un adaptador de ajuste fino identificado como `gemma-3-12b-it_SFT_lora_cogwear`, publicado por el usuario xw17 en Hugging Face el 2 de octubre de 2026. El propio identificador indica la receta: un LoRA (low-rank adaptation) entrenado mediante SFT (supervised fine-tuning) sobre el modelo base google/gemma-3-12b-it. El tamano del repositorio, 0,2 GB, es coherente con un conjunto de pesos de adaptador y no con un modelo completo de 12.000 millones de parametros, que en bf16 ocuparia del orden de 24 GB. No hay ninguna confirmacion por parte del autor de estos extremos mas alla del nombre del repositorio.
 
 El interes tecnico de la ficha es, por tanto, limitado y fundamentalmente metodologico: la model card publicada es la plantilla generica autogenerada por el Hub, sin una sola seccion completada. No se documentan desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, procedimiento de evaluacion ni resultados. Tampoco hay informacion sobre el dataset, el rango del LoRA, el numero de epocas ni la composicion de la mezcla SFT.
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_cogwear
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_cogwear
 - Modelo base presumible (no confirmado por el autor): https://huggingface.co/google/gemma-3-12b-it
 - Referencia de la etiqueta arxiv del repositorio (Lacoste et al., 2019, sobre emisiones de carbono; no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla de la model card: https://mlco2.github.io/impact

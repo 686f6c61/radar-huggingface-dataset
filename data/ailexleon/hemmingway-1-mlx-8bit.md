@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ailexleon/Hemmingway-1-mlx-8Bit | 26,9 mil millones | no disponible | 8 bits (MLX) | Apache 2.0 | HuggingFace, formato MLX |
-| Altworld/Hemmingway-1 (modelo base) | 26,9 mil millones | no disponible | pesos originales (precision no indicada) | Apache 2.0 | HuggingFace, safetensors |
+| ailexleon/Hemmingway-1-mlx-8Bit | 26,9 mil millones | no disponible | 8 bits (MLX) | Apache 2.0 | Hugging Face, formato MLX |
+| Altworld/Hemmingway-1 (modelo base) | 26,9 mil millones | no disponible | pesos originales (precision no indicada) | Apache 2.0 | Hugging Face, safetensors |
 | Otras alternativas de ~27 000 millones de parametros | no disponible | no disponible | no disponible | no disponible | No se dispone de informacion verificable sobre modelos comparables en la documentacion facilitada |
 
 La unica comparacion que puede establecerse con los datos disponibles es frente al modelo base del que deriva esta publicacion. No se ha identificado en la informacion proporcionada ningun otro modelo comparable con datos verificables de parametros, contexto o rendimiento, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -86,7 +86,7 @@ La unica comparacion que puede establecerse con los datos disponibles es frente 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ailexleon/Hemmingway-1-mlx-8Bit
+- Repositorio en Hugging Face: https://huggingface.co/ailexleon/Hemmingway-1-mlx-8Bit
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Libreria utilizada para la conversion (mlx-lm): https://github.com/ml-explore/mlx-lm
 - Documentacion de MLX: https://ml-explore.github.io/mlx/

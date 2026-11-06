@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "gatilin/mistral-large-4-vision-encoder",
+  "slug": "gatilin-mistral-large-4-vision-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/mistral-large-4-vision-encoder",
+  "created_at": "2026-11-03T07:38:21.000Z",
+  "updated_at": "2026-11-03T08:17:27.000Z",
+  "license": "mistral-ecosystem",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "vision-encoder",
+    "pixtral",
+    "image-feature-extraction",
+    "multimodal",
+    "en",
+    "base_model:mistralai/Mistral-Large-4-1T-A52B",
+    "base_model:finetune:mistralai/Mistral-Large-4-1T-A52B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 1704218624,
+  "parameters_human": "1.70B",
+  "storage_bytes": 3408474136,
+  "storage_human": "3.4 GB",
+  "base_model": "mistralai/Mistral-Large-4-1T-A52B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gatilin/mistral-large-4-vision-encoder · Hugging Face",
+      "url": "https://huggingface.co/gatilin/mistral-large-4-vision-encoder",
+      "snippet": "This component does not include the language model. The checkpoint preserves original tensor names, shapes and BF16 values: vision_encoder.*, pre_mm_projector_norm.*, patch_merger.* and vision_language_adapter.*. The 30-layer Pixtral-style vision tower has hidden size 2048, 16 attention heads, patch size 14, and axial 2-D rotary positions."
+    },
+    {
+      "title": "Mistral Large 4 - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-large-4",
+      "snippet": "Mistral Large 4 is a state-of-the-art, open-weight, general-purpose multimodal model with a granular Mixture-of-Experts architecture. It features 52B active parameters and 1.05T total parameters, and a 1.6B vision encoder."
+    }
+  ]
+}

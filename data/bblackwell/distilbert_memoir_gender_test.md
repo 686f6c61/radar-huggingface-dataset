@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bblackwell/distilbert_memoir_gender_test` es un ajuste fino (fine-tuning) de `distilbert-base-uncased` para una tarea de clasificación de texto. El autor es el usuario de HuggingFace `bblackwell` y el modelo se publicó con la librería `transformers`, formato de pesos `safetensors` y licencia Apache 2.0. Por el nombre del repositorio y la etiqueta `generated_from_trainer`, todo apunta a un experimento de clasificación relacionada con género a partir de textos de tipo memoir (memorias o autobiografías), aunque la model card no lo confirma en ningún momento.
+`bblackwell/distilbert_memoir_gender_test` es un ajuste fino (fine-tuning) de `distilbert-base-uncased` para una tarea de clasificación de texto. El autor es el usuario de Hugging Face `bblackwell` y el modelo se publicó con la librería `transformers`, formato de pesos `safetensors` y licencia Apache 2.0. Por el nombre del repositorio y la etiqueta `generated_from_trainer`, todo apunta a un experimento de clasificación relacionada con género a partir de textos de tipo memoir (memorias o autobiografías), aunque la model card no lo confirma en ningún momento.
 
-Se trata de un modelo pequeño: 66.955.779 parámetros totales y un repositorio de 0,3 GB, heredados íntegramente de la arquitectura DistilBERT. La model card está generada automáticamente por el `Trainer` de HuggingFace y todas las secciones de descripción, usos previstos y datos de entrenamiento contienen literalmente "More information needed", por lo que no hay documentación sobre la composición del dataset ni sobre el etiquetado.
+Se trata de un modelo pequeño: 66.955.779 parámetros totales y un repositorio de 0,3 GB, heredados íntegramente de la arquitectura DistilBERT. La model card está generada automáticamente por el `Trainer` de Hugging Face y todas las secciones de descripción, usos previstos y datos de entrenamiento contienen literalmente "More information needed", por lo que no hay documentación sobre la composición del dataset ni sobre el etiquetado.
 
 Su relevancia es limitada y de carácter experimental: acumula 0 descargas y 0 likes, declara una precisión de 0,6 en el conjunto de evaluación y el `model-index` no incluye ningún benchmark. Es útil únicamente como referencia de un ajuste fino mínimo (20 pasos de entrenamiento en total) o como punto de partida reproducible para quien quiera inspeccionar la configuración de entrenamiento, no como modelo listo para producción.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada y de carácter experimental: acumula 0 descargas y 0 l
 
 La arquitectura es la de DistilBERT: un encoder transformer de 6 capas, 768 dimensiones ocultas y 12 cabezas de atención, destilado desde BERT-base y con un vocabulario WordPiece de 30.522 tokens en versión *uncased*. Sobre esa base, el autor ha añadido una cabeza de clasificación de secuencias para la tarea de `text-classification`. El modelo no introduce ninguna innovación técnica: no hay decodificación especulativa, atención lineal, mezcla de expertos ni componentes híbridos. La ventana de contexto de 512 tokens es la limitación estructural del encoder original.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace (Transformers 5.5.4, PyTorch 2.11.0+cpu, Datasets 4.8.4, Tokenizers 0.22.2) durante 10 épocas, con `learning_rate` 2e-05, `train_batch_size` 10, `eval_batch_size` 8, acumulación de gradiente de 8 pasos (tamaño de lote efectivo 80), optimizador `adamw_torch_fused` y planificador lineal con semilla 42. El detalle más revelador es el número de pasos: solo 20 en total, es decir, 2 pasos por época. Con un lote efectivo de 80 ejemplos, eso implica un conjunto de entrenamiento de aproximadamente 160 ejemplos, una cifra extremadamente reducida incluso para ajuste fino. El dataset se declara como "unknown" en la propia model card, y no consta que se haya aplicado RLHF, DPO ni ningún tipo de alineación posterior.
+El entrenamiento se realizó con el `Trainer` de Hugging Face (Transformers 5.5.4, PyTorch 2.11.0+cpu, Datasets 4.8.4, Tokenizers 0.22.2) durante 10 épocas, con `learning_rate` 2e-05, `train_batch_size` 10, `eval_batch_size` 8, acumulación de gradiente de 8 pasos (tamaño de lote efectivo 80), optimizador `adamw_torch_fused` y planificador lineal con semilla 42. El detalle más revelador es el número de pasos: solo 20 en total, es decir, 2 pasos por época. Con un lote efectivo de 80 ejemplos, eso implica un conjunto de entrenamiento de aproximadamente 160 ejemplos, una cifra extremadamente reducida incluso para ajuste fino. El dataset se declara como "unknown" en la propia model card, y no consta que se haya aplicado RLHF, DPO ni ningún tipo de alineación posterior.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ El entrenamiento se realizó con el `Trainer` de HuggingFace (Transformers 5.5.4
 
 - Clasificación experimental de textos autobiográficos: el modelo se puede cargar con `pipeline("text-classification")` para etiquetar fragmentos de memorias, pero con una precisión declarada de 0,6 debe tratarse como un prototipo de investigación, no como un clasificador fiable.
 - Reproducción de experimentos de ajuste fino: sirve como ejemplo mínimo y verificable de una configuración de `Trainer` (20 pasos, lote efectivo 80, `adamw_torch_fused`) para comparar hiperparámetros en entornos docentes o de depuración de pipelines.
-- Pruebas de integración de infraestructura: al pesar 0,3 GB y 67 millones de parámetros, es útil para validar despliegues con `text-embeddings-inference` o endpoints compatibles con HuggingFace antes de mover modelos mayores al mismo *stack*.
+- Pruebas de integración de infraestructura: al pesar 0,3 GB y 67 millones de parámetros, es útil para validar despliegues con `text-embeddings-inference` o endpoints compatibles con Hugging Face antes de mover modelos mayores al mismo *stack*.
 - *Baseline* de comparación en investigación sobre sesgos de género: puede utilizarse como referencia de partida (y como caso de estudio de un clasificador mal calibrado) en trabajos que evalúen sesgo y equidad en modelos de clasificación.
 - Filtrado previo en *pipelines* de anonimización: en teoría podría emplearse para detectar marcas de género en textos antes de anonimizarlos, aunque su precisión actual no permite usarlo sin supervisión humana.
 - Docencia y prácticas de NLP: es un candidato adecuado para ejercicios de carga de modelos, inferencia en CPU y análisis de model cards incompletas, dado su tamaño reducido y su licencia permisiva.
@@ -77,17 +77,17 @@ Resultado final declarado: `loss` 0,9546 y `precision` 0,6. No se publican `reca
 - Cuantización a INT8: aproximadamente 67 MB, viable en CPU y en GPUs de gama de entrada.
 - GPU recomendadas: cualquier GPU sirve; no requiere A100 ni H100. Una RTX 3060, RTX 4090 o incluso una GTX 1650 son suficientes. El entrenamiento original se ejecutó en CPU (PyTorch 2.11.0+cpu).
 - GPU de consumo: sí, cabe con holgura en cualquier GPU de consumo actual e incluso en iGPU con suficiente memoria compartida.
-- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (etiqueta declarada en el repositorio), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y `llama.cpp`/Ollama únicamente tras convertir los pesos a GGUF mediante una herramienta externa, ya que el repositorio no publica archivos GGUF.
+- Opciones de despliegue: `transformers` (PyTorch), `text-embeddings-inference` (etiqueta declarada en el repositorio), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime y `llama.cpp`/Ollama únicamente tras convertir los pesos a GGUF mediante una herramienta externa, ya que el repositorio no publica archivos GGUF.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bblackwell/distilbert_memoir_gender_test` | 66,9 M | 512 tokens | DistilBERT encoder + cabeza de clasificación | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| `distilbert-base-uncased` | 66,9 M | 512 tokens | DistilBERT encoder preentrenado | Apache 2.0 | HuggingFace, muy extendido |
-| `bert-base-uncased` | 110 M | 512 tokens | BERT encoder | Apache 2.0 | HuggingFace, muy extendido |
-| `roberta-base` | 125 M | 512 tokens | RoBERTa encoder | MIT | HuggingFace, muy extendido |
+| `bblackwell/distilbert_memoir_gender_test` | 66,9 M | 512 tokens | DistilBERT encoder + cabeza de clasificación | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| `distilbert-base-uncased` | 66,9 M | 512 tokens | DistilBERT encoder preentrenado | Apache 2.0 | Hugging Face, muy extendido |
+| `bert-base-uncased` | 110 M | 512 tokens | BERT encoder | Apache 2.0 | Hugging Face, muy extendido |
+| `roberta-base` | 125 M | 512 tokens | RoBERTa encoder | MIT | Hugging Face, muy extendido |
 
 El modelo comparado no aporta ninguna ventaja medible frente a su propio modelo base salvo la especialización en una tarea concreta, y esa especialización no está documentada ni validada con métricas más allá de una precisión de 0,6. Los datos de los modelos comparados corresponden a especificaciones públicas de sus repositorios oficiales; no se dispone de comparativas de rendimiento directas con este ajuste fino porque no existen benchmarks publicados.
 
@@ -105,6 +105,6 @@ El modelo comparado no aporta ninguna ventaja medible frente a su propio modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bblackwell/distilbert_memoir_gender_test
+- Modelo en Hugging Face: https://huggingface.co/bblackwell/distilbert_memoir_gender_test
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Papers, blogs, repositorios o demos adicionales: no disponible. No se han encontrado enlaces adicionales en la información proporcionada.

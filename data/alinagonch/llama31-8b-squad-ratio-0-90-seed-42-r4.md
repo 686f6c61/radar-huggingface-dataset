@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42-r4` es un artefacto publicado en HuggingFace por el usuario AlinaGonch. La nomenclatura del identificador apunta a un ajuste fino (probablemente mediante LoRA de rango 4, por el sufijo `r4`) sobre un modelo base de la familia Llama 3.1 de 8 000 millones de parametros, entrenado sobre el dataset SQuAD con una proporcion de mezcla de datos de 0,90 y semilla 42. Se trata, por tanto, de un experimento de ajuste orientado a tareas de respuesta a preguntas extractiva (question answering), no de un modelo fundacional nuevo.
+El modelo identificado como `AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42-r4` es un artefacto publicado en Hugging Face por el usuario AlinaGonch. La nomenclatura del identificador apunta a un ajuste fino (probablemente mediante LoRA de rango 4, por el sufijo `r4`) sobre un modelo base de la familia Llama 3.1 de 8 000 millones de parametros, entrenado sobre el dataset SQuAD con una proporcion de mezcla de datos de 0,90 y semilla 42. Se trata, por tanto, de un experimento de ajuste orientado a tareas de respuesta a preguntas extractiva (question answering), no de un modelo fundacional nuevo.
 
-El repositorio ocupa apenas 0,1 GB, un tamano incompatible con los pesos completos de un modelo de 8B (que en fp16 rondarian los 16 GB). Esto refuerza la hipotesis de que el repositorio contiene unicamente adaptadores LoRA o pesos parciales, y no un checkpoint desplegable de forma autonoma. Ademas, la model card es la plantilla automatica de HuggingFace, sin ninguna seccion cumplimentada: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+El repositorio ocupa apenas 0,1 GB, un tamano incompatible con los pesos completos de un modelo de 8B (que en fp16 rondarian los 16 GB). Esto refuerza la hipotesis de que el repositorio contiene unicamente adaptadores LoRA o pesos parciales, y no un checkpoint desplegable de forma autonoma. Ademas, la model card es la plantilla automatica de Hugging Face, sin ninguna seccion cumplimentada: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter metodologico: sirve como ejemplo de publicacion incompleta en el Hub, donde el nombre del repositorio es la unica fuente de informacion tecnica. Cualquier evaluacion rigurosa exige contactar con el autor o inspeccionar los ficheros del repositorio para confirmar arquitectura, formato y viabilidad de uso. No debe recomendarse su uso en produccion sin esa verificacion previa.
 
@@ -23,9 +23,9 @@ La relevancia de esta ficha es, por tanto, limitada y de caracter metodologico: 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura en la model card, que es la plantilla autogenerada de HuggingFace y mantiene todos los campos como `[More Information Needed]`. A partir del identificador del repositorio (`llama31-8b`, `squad`, `ratio-0.90`, `seed-42`, `r4`) puede inferirse, con caracter especulativo, que se trata de un ajuste fino de un modelo Llama 3.1 de 8B sobre el dataset SQuAD, con una proporcion de datos de 0,90 y semilla de aleatoriedad 42. El sufijo `r4` es consistente con un ajuste LoRA de rango 4, lo que explicaria el reducido tamano del repositorio.
+No hay informacion publicada sobre la arquitectura en la model card, que es la plantilla autogenerada de Hugging Face y mantiene todos los campos como `[More Information Needed]`. A partir del identificador del repositorio (`llama31-8b`, `squad`, `ratio-0.90`, `seed-42`, `r4`) puede inferirse, con caracter especulativo, que se trata de un ajuste fino de un modelo Llama 3.1 de 8B sobre el dataset SQuAD, con una proporcion de datos de 0,90 y semilla de aleatoriedad 42. El sufijo `r4` es consistente con un ajuste LoRA de rango 4, lo que explicaria el reducido tamano del repositorio.
 
-No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion con ventana deslizante). Tampoco se especifican hiperparametros de entrenamiento, regimen de precision (fp32, bf16, fp16) ni infraestructura de computo utilizada. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de HuggingFace, y no aporta informacion sobre este modelo concreto.
+No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, atencion con ventana deslizante). Tampoco se especifican hiperparametros de entrenamiento, regimen de precision (fp32, bf16, fp16) ni infraestructura de computo utilizada. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de Hugging Face, y no aporta informacion sobre este modelo concreto.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ Las cifras de parametros y contexto corresponden a los modelos de referencia, no
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42-r4
+- Repositorio principal en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42-r4
 - Repositorio hermano (ratio 0,10): https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r4
 - Repositorio hermano (ratio 0,60): https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.60-seed-42
 - Model card de Llama 3.1 en el repositorio oficial de Meta: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md

@@ -90,7 +90,7 @@ Los datos disponibles son los de los checkpoints originales y las comprobaciones
 
 | Modelo | Formato | Función | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `bulpara/piano-to-score-onnx` | ONNX (fp16 con Cast a fp32; variante f16) | Transcripción de piano + beat, compás, mano, armadura y filtro AudioSet | No disponible (repo de 0,1 GB) | No aplica | CC BY 4.0 (MIT en `piano-check`) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| `bulpara/piano-to-score-onnx` | ONNX (fp16 con Cast a fp32; variante f16) | Transcripción de piano + beat, compás, mano, armadura y filtro AudioSet | No disponible (repo de 0,1 GB) | No aplica | CC BY 4.0 (MIT en `piano-check`) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | `piano_transcription_inference` (Kong et al., original) | PyTorch (`.pth`) | Transcripción de piano con pedal | No disponible en la información | No aplica | Código MIT, pesos CC BY 4.0 | Repo de GitHub + Zenodo 4034264 |
 | PM2S (Liu et al., original) | PyTorch | MIDI de interpretación a partitura (beat, compás, mano, armadura) | No disponible en la información | No aplica | Código MIT, pesos CC BY 4.0 | GitHub + Zenodo 10520196 |
 | EfficientAT `mn10_as` | PyTorch | Etiquetado AudioSet (527 clases) | No disponible en la información | No aplica | MIT | GitHub `fschmid56/EfficientAT` |
@@ -113,7 +113,7 @@ Frente a los originales, la ventaja del bundle es el formato (ONNX ejecutable en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bulpara/piano-to-score-onnx
+- Modelo en Hugging Face: https://huggingface.co/bulpara/piano-to-score-onnx
 - Herramienta de audio a partitura de AudioRinse: https://audiorinse.com/audio-to-sheet-music
 - `onnxruntime` y `onnxruntime-web`: https://github.com/microsoft/onnxruntime
 - Checkpoint de transcripción de piano (Kong et al.): https://zenodo.org/records/4034264

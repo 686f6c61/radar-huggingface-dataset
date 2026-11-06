@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Byrne-86M es un modelo de lenguaje de tipo chat publicado por Dean Byrne (usuario Quazim0t0) en HuggingFace, desarrollado desde cero durante la hackathon "Small Models, Big Adventures" con creditos de computo de Modal. La model card lo describe como un `SpikeWhaleLM` de aproximadamente 86M de parametros, aunque el recuento real de pesos en safetensors asciende a 96.944.515 parametros, con 16 capas, hidden size 640, ventana de contexto de 4.096 tokens, vocabulario de 16.512 entradas y embeddings atados (tied embeddings). Su interes no es la capacidad de razonamiento, sino la exploracion arquitectonica: combina Multi-head Latent Attention (MLA) con compresion LoRA de las proyecciones Q y O, memoria de n-gramas ("engram"), capas de hash-lookup, hyper-connections con enrutado Sinkhorn, refinamiento HRM y un cabezal de Multi-Token Prediction.
+Byrne-86M es un modelo de lenguaje de tipo chat publicado por Dean Byrne (usuario Quazim0t0) en Hugging Face, desarrollado desde cero durante la hackathon "Small Models, Big Adventures" con creditos de computo de Modal. La model card lo describe como un `SpikeWhaleLM` de aproximadamente 86M de parametros, aunque el recuento real de pesos en safetensors asciende a 96.944.515 parametros, con 16 capas, hidden size 640, ventana de contexto de 4.096 tokens, vocabulario de 16.512 entradas y embeddings atados (tied embeddings). Su interes no es la capacidad de razonamiento, sino la exploracion arquitectonica: combina Multi-head Latent Attention (MLA) con compresion LoRA de las proyecciones Q y O, memoria de n-gramas ("engram"), capas de hash-lookup, hyper-connections con enrutado Sinkhorn, refinamiento HRM y un cabezal de Multi-Token Prediction.
 
 El modelo se distribuye como checkpoint de chat (denominado "OPD v2" en la model card) y tiene un checkpoint base asociado, Byrne-86M-Base. La revision actual aplica una reparacion del modulo engram seguida de un SFT corto de instrucciones y formato sobre una mezcla 60/25/15 de smoltalk, ejemplos de GSM8K-train con formato "#### N" y ejemplos estilo MMLU con "Answer: \<letter\>". Segun la model card, ese SFT mejora la fluidez conversacional y la adherencia al formato de salida (formato MMLU de 0,918 a 0,951 y formato "####" de GSM8K de 0,420 a 0,815) sin aumentar la precision real en los benchmarks.
 
@@ -95,8 +95,8 @@ No se han publicado en la informacion disponible comparativas de Byrne-86M frent
 
 | Modelo | Parametros | Contexto | Componentes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Byrne-86M | 96,9M (recuento real) | 4.096 | MLA + engram + hash-lookup + hyper-connections + HRM, sin JEPA | Apache-2.0 | HuggingFace, 39 descargas, 1 like |
-| Byrne-86M-Base | no disponible | no disponible | checkpoint base previo al SFT/chat | no disponible | HuggingFace (enlazado desde la model card) |
+| Byrne-86M | 96,9M (recuento real) | 4.096 | MLA + engram + hash-lookup + hyper-connections + HRM, sin JEPA | Apache-2.0 | Hugging Face, 39 descargas, 1 like |
+| Byrne-86M-Base | no disponible | no disponible | checkpoint base previo al SFT/chat | no disponible | Hugging Face (enlazado desde la model card) |
 | Escarda | no disponible | no disponible | igual que Byrne pero con JEPA activado sobre HRM | no disponible | mencionado en la model card, sin enlace directo en la informacion disponible |
 
 Comparar estos resultados con modelos de tamano similar de otros autores (por ejemplo, familias de 70M-135M parametros) no es posible con los datos proporcionados: no hay numeros de benchmark de esos modelos en la informacion disponible ni evaluaciones cruzadas publicadas por el autor.
@@ -117,7 +117,7 @@ Comparar estos resultados con modelos de tamano similar de otros autores (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quazim0t0/Byrne-86M
+- Modelo en Hugging Face: https://huggingface.co/Quazim0t0/Byrne-86M
 - Checkpoint base: https://huggingface.co/Quazim0t0/Byrne-86M-Base
 - Dataset de evaluacion ArithMark-2.0: https://huggingface.co/datasets/AxiomicLabs/ArithMark-2.0
 - Dataset de SFT smoltalk: HuggingFaceTB/smoltalk (referenciado en la model card)
@@ -125,4 +125,4 @@ Comparar estos resultados con modelos de tamano similar de otros autores (por ej
 - Paper, blog tecnico o repositorio adicional del autor: no disponible en la informacion proporcionada
 - Demo o Space asociado: no disponible
 
-Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo Byrne-86M (corresponden a guias de eliminacion de software no deseado en distintos idiomas). No se ha encontrado documentacion externa, paper ni articulo tecnico sobre este modelo mas alla de su model card en HuggingFace.
+Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo Byrne-86M (corresponden a guias de eliminacion de software no deseado en distintos idiomas). No se ha encontrado documentacion externa, paper ni articulo tecnico sobre este modelo mas alla de su model card en Hugging Face.

@@ -20,7 +20,7 @@ Ahora bien, se trata de un artefacto de terceros, publicado el 19 de octubre de 
 | Idiomas soportados | No disponibles. Los prompts de ejemplo están en inglés y no se documenta el comportamiento multilingüe del modelo de vídeo |
 | Licencia | `other` (no se especifican términos; el modelo base remite a la licencia de MiniMax-H3) |
 | Formato de pesos | GGUF (modelo de difusión y codificador de texto); VAE de vídeo en safetensors fp16 y VAE de audio en safetensors fp32 |
-| Pipeline | text-to-video (etiqueta de HuggingFace); soporta también image-to-video |
+| Pipeline | text-to-video (etiqueta de Hugging Face); soporta también image-to-video |
 | Pasos de inferencia | 8 (Euler) con CFG 1.0 |
 | Salida | Vídeo MP4 + audio estéreo nativo sincronizado |
 | Modelo base | `unsloth/MiniMax-H3-GGUF`, archivo exacto `minimax_h3_fl2va_pruned-Q5_0.gguf` |

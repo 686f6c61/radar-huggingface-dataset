@@ -88,5 +88,5 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williamtwb/retrieval-kaggle
+- Hugging Face: https://huggingface.co/williamtwb/retrieval-kaggle
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

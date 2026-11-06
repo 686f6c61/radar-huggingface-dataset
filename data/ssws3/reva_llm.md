@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ssws3/reva_llm` es una version cuantizada NVFP4 del modelo `Qwen/Qwen3.6-35B-A3B` de Alibaba, publicada en HuggingFace por el usuario `ssws3`. Se trata de un modelo autorregresivo basado en transformadores con arquitectura Mixture-of-Experts (MoE) y atencion hibrida, que fue cuantizado por NVIDIA Model Optimizer para reducir el peso de los tensores a 4 bits (FP4). El objetivo es ofrecer un checkpoint mas eficiente en memoria y computacion, listo para inferencia con vLLM en entornos con GPUs NVIDIA modernas.
+El modelo `ssws3/reva_llm` es una version cuantizada NVFP4 del modelo `Qwen/Qwen3.6-35B-A3B` de Alibaba, publicada en Hugging Face por el usuario `ssws3`. Se trata de un modelo autorregresivo basado en transformadores con arquitectura Mixture-of-Experts (MoE) y atencion hibrida, que fue cuantizado por NVIDIA Model Optimizer para reducir el peso de los tensores a 4 bits (FP4). El objetivo es ofrecer un checkpoint mas eficiente en memoria y computacion, listo para inferencia con vLLM en entornos con GPUs NVIDIA modernas.
 
 El modelo conserva las capacidades del modelo base, incluyendo una longitud de contexto de hasta 262K tokens y entradas multimodales (texto, imagen, video) con salida en texto. Su relevancia radica en que permite desplegar un modelo grande de 35B parametros totales con solo 3B activados por token, aprovechando la cuantizacion de 4 bits para reducir los requisitos de VRAM. La licencia Apache 2.0 permite uso comercial y no comercial, aunque el checkpoint publicado no es el oficial de NVIDIA y tiene una acogida limitada (0 descargas, 0 likes).
 
@@ -64,9 +64,9 @@ La model card indica que el modelo fue evaluado en MMLU Pro, GPQA Diamond, tau²
 
 | Modelo | Parametros | Contexto | Licencia | Cuantizacion | Disponibilidad |
 |---|---|---|---|---|---|
-| `ssws3/reva_llm` (NVFP4) | 35B totales, 3B activos | 262K | Apache 2.0 | NVFP4 | HuggingFace, re-upload por ssws3 |
-| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35B totales, 3B activos | 262K | Apache 2.0 | Sin cuantizar | HuggingFace, oficial de Alibaba |
-| `nvidia/Qwen3.6-35B-A3B-NVFP4` | 35B totales, 3B activos | 262K | Apache 2.0 | NVFP4 | HuggingFace, oficial de NVIDIA (referido en la model card) |
+| `ssws3/reva_llm` (NVFP4) | 35B totales, 3B activos | 262K | Apache 2.0 | NVFP4 | Hugging Face, re-upload por ssws3 |
+| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35B totales, 3B activos | 262K | Apache 2.0 | Sin cuantizar | Hugging Face, oficial de Alibaba |
+| `nvidia/Qwen3.6-35B-A3B-NVFP4` | 35B totales, 3B activos | 262K | Apache 2.0 | NVFP4 | Hugging Face, oficial de NVIDIA (referido en la model card) |
 
 No se dispone de datos de rendimiento comparado entre estas versiones en la informacion proporcionada. El checkpoint analizado parece ser una copia de la version de NVIDIA, pero no se ha verificado su integridad ni procedencia oficial.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparado entre estas versiones en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssws3/reva_llm
+- Modelo en Hugging Face: https://huggingface.co/ssws3/reva_llm
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

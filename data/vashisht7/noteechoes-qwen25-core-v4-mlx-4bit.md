@@ -88,7 +88,7 @@ La comparativa se limita a características técnicas porque no hay benchmarks p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vashisht7/noteechoes-qwen25-core-v4-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/Vashisht7/noteechoes-qwen25-core-v4-mlx-4bit
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Informe técnico Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

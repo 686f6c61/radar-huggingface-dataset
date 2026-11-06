@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8 (este modelo) | 1.100.048.384 | W8A8, per-tensor estatico | No disponible | No disponible | Publico en HuggingFace, 12 descargas |
-| TinyLlama-1.1B-Chat-v1.0 (modelo base) | ~1,1B | FP16/BF16 | No disponible en esta ficha | No disponible en esta ficha | Publico en HuggingFace |
+| nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8 (este modelo) | 1.100.048.384 | W8A8, per-tensor estatico | No disponible | No disponible | Publico en Hugging Face, 12 descargas |
+| TinyLlama-1.1B-Chat-v1.0 (modelo base) | ~1,1B | FP16/BF16 | No disponible en esta ficha | No disponible en esta ficha | Publico en Hugging Face |
 | Otros modelos de ~1B de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Solo se dispone de datos verificables del propio artefacto y de su modelo base. No se puede construir una comparativa con alternativas concretas (Llama-3.2-1B-Instruct, Qwen2.5-1.5B-Instruct u otras) sin datos de rendimiento publicados en la informacion proporcionada.
@@ -84,7 +84,7 @@ Solo se dispone de datos verificables del propio artefacto y de su modelo base. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8_tensor_weight_static_per_tensor_act-e2e
+- Repositorio en Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8_tensor_weight_static_per_tensor_act-e2e
 - Modelo base de referencia (TinyLlama-1.1B-Chat-v1.0), no verificado en esta ficha: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Formato y libreria `compressed-tensors` de Neural Magic (referencia del esquema de cuantizacion usado): https://github.com/neuralmagic/compressed-tensors
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Los resultados devueltos correspondian a conversores de unidades (nanometros, millas nauticas) y articulos enciclopedicos sobre el nanometro, sin relacion con el modelo.

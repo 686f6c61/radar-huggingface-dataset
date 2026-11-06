@@ -73,7 +73,7 @@ La documentacion del repositorio incluye observaciones cualitativas de rendimien
 | Entorno de ejecucion | ONNX Runtime GenAI 0.14.1 | PyTorch / Transformers |
 | VRAM requerida | 8 GiB (variante CUDA) | No especificado en la documentacion |
 | Licencia | Apache-2.0 | Apache-2.0 |
-| Disponibilidad | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face | Hugging Face |
 
 Como alternativa de generacion anterior se podria considerar Qwen2-VL-2B-Instruct, pero no se dispone de datos de benchmarks comparativos en la informacion proporcionada para establecer una comparacion de rendimiento.
 
@@ -90,7 +90,7 @@ Como alternativa de generacion anterior se podria considerar Qwen2-VL-2B-Instruc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DogDreamson/picforlater-qwen3-vl-2b-onnx
+- Repositorio Hugging Face: https://huggingface.co/DogDreamson/picforlater-qwen3-vl-2b-onnx
 - Proyecto PicForLater: https://github.com/dogdreamson555/PicForLater
 - Modelo base Qwen/Qwen3-VL-2B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Paper de Qwen3-VL (arXiv:2505.09388): https://arxiv.org/abs/2505.09388

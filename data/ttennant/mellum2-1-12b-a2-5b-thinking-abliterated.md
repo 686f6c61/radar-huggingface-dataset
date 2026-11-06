@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mellum2.1-12B-A2.5B-Thinking-abliterated es una variante "abliterated" (sin dirección de rechazo) del modelo JetBrains/Mellum2.1-12B-A2.5B-Thinking, publicada por el usuario ttennant en HuggingFace. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 12.149.923.072 parámetros totales y aproximadamente 2.500 millones de parámetros activos por token (según el nombre del modelo), especializado en generación de texto y razonamiento con modo "thinking" explícito. El modelo original lo desarrolla JetBrains, y esta versión mantiene exactamente la misma arquitectura, tokenizer, plantilla de chat y distribución de shards en bf16, por lo que se carga de la misma forma.
+Mellum2.1-12B-A2.5B-Thinking-abliterated es una variante "abliterated" (sin dirección de rechazo) del modelo JetBrains/Mellum2.1-12B-A2.5B-Thinking, publicada por el usuario ttennant en Hugging Face. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 12.149.923.072 parámetros totales y aproximadamente 2.500 millones de parámetros activos por token (según el nombre del modelo), especializado en generación de texto y razonamiento con modo "thinking" explícito. El modelo original lo desarrolla JetBrains, y esta versión mantiene exactamente la misma arquitectura, tokenizer, plantilla de chat y distribución de shards en bf16, por lo que se carga de la misma forma.
 
 La modificación consiste en proyectar fuera de los pesos la dirección de rechazo calculada a partir de activaciones residuales de la capa 12, usando 300 prompts dañinos y 300 inofensivos. Se aplica la transformación W ← W − r(rᵀW) sobre los embeddings de tokens, las proyecciones o_proj de las 28 capas de atención y las down_proj de los 64 expertos de cada una de las 28 capas (1.792 matrices en total), sin ningún tipo de entrenamiento adicional.
 
@@ -93,8 +93,8 @@ La comparación directa con otros modelos abliterated de tamaño similar no est�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated
+- Modelo en Hugging Face: https://huggingface.co/ttennant/Mellum2.1-12B-A2.5B-Thinking-abliterated
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Herramienta heretic (probada y descartada por el autor): https://github.com/p-e-w/heretic
-- Dataset harmful_behaviors: mlabonne/harmful_behaviors (HuggingFace)
-- Dataset harmless_alpaca: mlabonne/harmless_alpaca (HuggingFace)
+- Dataset harmful_behaviors: mlabonne/harmful_behaviors (Hugging Face)
+- Dataset harmless_alpaca: mlabonne/harmless_alpaca (Hugging Face)

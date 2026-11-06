@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparativa s
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/gimmy256/adaption_afri_aya_vision_restructured
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/gimmy256/adaption_afri_aya_vision_restructured
 - Modelo base referenciado: https://huggingface.co/google/gemma-3-4b-it
 - Adaption Labs (plataforma de entrenamiento AutoScientist): https://adaptionlabs.ai
 - Documentacion de PEFT: https://huggingface.co/docs/peft

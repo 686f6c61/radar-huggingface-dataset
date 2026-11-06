@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeRobot_SO-101_Grab_ACT_224x224 es una política de imitación (policy) para robótica basada en el método Action Chunking with Transformers (ACT), publicado originalmente en el artículo arXiv 2304.13705. El modelo lo ha entrenado el usuario fei1887415157 y lo ha publicado en HuggingFace Hub mediante la librería LeRobot de HuggingFace, con licencia Apache 2.0. No es un modelo de lenguaje: es una política visomotora que mapea observaciones (estado del robot y dos cámaras) a acciones de control de un brazo robótico de bajo coste del tipo SO-101 (so_follower).
+LeRobot_SO-101_Grab_ACT_224x224 es una política de imitación (policy) para robótica basada en el método Action Chunking with Transformers (ACT), publicado originalmente en el artículo arXiv 2304.13705. El modelo lo ha entrenado el usuario fei1887415157 y lo ha publicado en Hugging Face Hub mediante la librería LeRobot de Hugging Face, con licencia Apache 2.0. No es un modelo de lenguaje: es una política visomotora que mapea observaciones (estado del robot y dos cámaras) a acciones de control de un brazo robótico de bajo coste del tipo SO-101 (so_follower).
 
 La tarea concreta aprendida es "rebar gun moving": el robot manipula una pistola de fijación (rebar gun) a partir de 76 episodios de teleoperación, 76.108 frames grabados a 60 FPS. La política recibe un vector de estado de 6 dimensiones y dos imágenes RGB de 224x224 píxeles (cámaras "rebar gun" y "overhead"), y produce un vector de acción de 6 dimensiones. El modelo tiene 51.627.654 parámetros y se distribuye en formato safetensors con un repositorio de 12,4 GB.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeRobot_SO-101_Grab_ACT_224x224 | 51,6 M | no aplica | Manipulación SO-101 (rebar gun) | Apache 2.0 | HuggingFace |
+| LeRobot_SO-101_Grab_ACT_224x224 | 51,6 M | no aplica | Manipulación SO-101 (rebar gun) | Apache 2.0 | Hugging Face |
 | ACT original (paper 2304.13705) | no disponible | no aplica | Manipulación genérica | no disponible | Paper/repo |
-| Otras políticas LeRobot (p. ej. Diffusion Policy, TDMPC) | variable | no aplica | Manipulación genérica | variable | HuggingFace/LeRobot |
+| Otras políticas LeRobot (p. ej. Diffusion Policy, TDMPC) | variable | no aplica | Manipulación genérica | variable | Hugging Face/LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fei1887415157/LeRobot_SO-101_Grab_ACT_224x224
+- Hugging Face: https://huggingface.co/fei1887415157/LeRobot_SO-101_Grab_ACT_224x224
 - Dataset: https://huggingface.co/datasets/fei1887415157/LeRobot_SO-101_Grab_224x224
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Guía ACT de LeRobot: https://huggingface.co/docs/lerobot/main/en/act

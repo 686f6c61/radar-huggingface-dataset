@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Tinghong-Ye22/code-Psi0-yth-v23 es una publicacion en HuggingFace cuyo README reproduce, casi integramente, la model card del proyecto Psi0 (Psi sub cero), un modelo fundacional vision-lenguaje-accion (VLA) para locomocion-manipulacion humanoide diestra desarrollado por el laboratorio USC-PSI-Lab. Conviene subrayar una discrepancia importante: el autor declarado en los metadatos de HuggingFace es Tinghong-Ye22, mientras que el README atribuye el modelo a otro grupo (Songlin Wei, Hongyi Jing y colaboradores, con enlaces a USC-PSI-Lab). El repositorio no declara licencia, idiomas ni pipeline en sus metadatos.
+El repositorio Tinghong-Ye22/code-Psi0-yth-v23 es una publicacion en Hugging Face cuyo README reproduce, casi integramente, la model card del proyecto Psi0 (Psi sub cero), un modelo fundacional vision-lenguaje-accion (VLA) para locomocion-manipulacion humanoide diestra desarrollado por el laboratorio USC-PSI-Lab. Conviene subrayar una discrepancia importante: el autor declarado en los metadatos de Hugging Face es Tinghong-Ye22, mientras que el README atribuye el modelo a otro grupo (Songlin Wei, Hongyi Jing y colaboradores, con enlaces a USC-PSI-Lab). El repositorio no declara licencia, idiomas ni pipeline en sus metadatos.
 
 Segun el contenido de la model card, Psi0 combina un backbone vision-lenguaje (System-2) basado en Qwen3-VL-2B-Instruct con un experto de accion de difusion multimodal (System-1) de aproximadamente 500M de parametros, inspirado en Stable Diffusion 3, y un controlador de seguimiento por aprendizaje por refuerzo (System-0) para el tren inferior. El modelo se preentrena con videos egocentricos humanos a gran escala y se postentrena con datos reales de teleoperacion de un robot humanoide Unitree G1, de modo que puede adquirir nuevas habilidades con tan solo 80 trayectorias de ajuste fino.
 
@@ -18,7 +18,7 @@ Es relevante en el contexto actual de robótica fundacional porque propone un en
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada |
 | Idiomas soportados | No disponibles (los metadatos no lo declaran; el backbone Qwen3-VL soporta multilingue, pero no se confirma para este checkpoint) |
-| Licencia | El README incluye un badge de Apache 2.0, pero los metadatos de HuggingFace no declaran licencia |
+| Licencia | El README incluye un badge de Apache 2.0, pero los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | No disponible |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ La model card lista explicitamente varios modelos usados como baselines. No se p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Psi0 (este proyecto) | ~2B backbone + ~500M experto de accion | No disponible | No disponible | Apache 2.0 segun badge del README | Repo HuggingFace USC-PSI-Lab/psi-model (segun README) |
+| Psi0 (este proyecto) | ~2B backbone + ~500M experto de accion | No disponible | No disponible | Apache 2.0 segun badge del README | Repo Hugging Face USC-PSI-Lab/psi-model (segun README) |
 | GR00T N1.6 | No disponible | No disponible | No disponible | No disponible | Listado como baseline |
 | OpenPi pi0.5 | No disponible | No disponible | No disponible | No disponible | Listado como baseline |
 | InternVLA-M1 | No disponible | No disponible | No disponible | No disponible | Listado como baseline |
@@ -77,8 +77,8 @@ Otros baselines citados sin datos: H-RDT, EgoVLA, Diffusion Policy y ACT.
 
 ## Limitaciones y advertencias
 
-- Discrepancia de autoria: los metadatos de HuggingFace atribuyen el repositorio a Tinghong-Ye22, mientras que el README atribuye el modelo a USC-PSI-Lab. Debe verificarse la procedencia antes de cualquier uso.
-- Licencia ambigua: el README muestra un badge Apache 2.0, pero los metadatos de HuggingFace no declaran licencia; el estatus legal para uso comercial no esta confirmado.
+- Discrepancia de autoria: los metadatos de Hugging Face atribuyen el repositorio a Tinghong-Ye22, mientras que el README atribuye el modelo a USC-PSI-Lab. Debe verificarse la procedencia antes de cualquier uso.
+- Licencia ambigua: el README muestra un badge Apache 2.0, pero los metadatos de Hugging Face no declaran licencia; el estatus legal para uso comercial no esta confirmado.
 - Contenido del repositorio: con 0,2 GB y cero descargas, es probable que no contenga los pesos completos del modelo, sino codigo o configuracion, por lo que no puede desplegarse directamente desde este repositorio.
 - Ausencia de datos de rendimiento: no hay benchmarks publicados en la informacion disponible, lo que impide validar las afirmaciones de capacidad.
 - Dependencia de hardware especifico: el pipeline esta orientado al robot Unitree G1 con manos Dex3-1 y teleoperacion con Apple Vision Pro; su uso fuera de esa plataforma no esta documentado.
@@ -88,7 +88,7 @@ Otros baselines citados sin datos: H-RDT, EgoVLA, Diffusion Policy y ACT.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/Tinghong-Ye22/code-Psi0-yth-v23
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/Tinghong-Ye22/code-Psi0-yth-v23
 - Paper (arXiv): https://arxiv.org/abs/2603.12263
 - Pagina del proyecto: https://psi-lab.ai/Psi0
 - Modelo oficial (segun el README): https://huggingface.co/USC-PSI-Lab/psi-model

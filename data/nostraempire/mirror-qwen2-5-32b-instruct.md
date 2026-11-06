@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-32B-Instruct (este) | 32,5B | 131K | Apache 2.0 | HuggingFace, ModelScope, Ollama |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace, Ollama |
-| Mistral 7B Instruct v0.3 | 7B | 32K | Apache 2.0 | HuggingFace, Ollama |
-| Qwen2.5-14B-Instruct | 14,7B | 131K | Apache 2.0 | HuggingFace, ModelScope |
+| Qwen2.5-32B-Instruct (este) | 32,5B | 131K | Apache 2.0 | Hugging Face, ModelScope, Ollama |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face, Ollama |
+| Mistral 7B Instruct v0.3 | 7B | 32K | Apache 2.0 | Hugging Face, Ollama |
+| Qwen2.5-14B-Instruct | 14,7B | 131K | Apache 2.0 | Hugging Face, ModelScope |
 
 El modelo de 32B ofrece un punto intermedio entre los modelos de 7-8B (que requieren menos hardware pero rinden menos en tareas complejas) y los de 70B (que exigen infraestructura de servidor). Su licencia Apache 2.0 es más permisiva que la de Llama 3.1, que impone restricciones para usuarios con más de 700 millones de usuarios mensuales.
 

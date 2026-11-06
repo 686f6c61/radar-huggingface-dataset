@@ -25,7 +25,7 @@ Su relevancia práctica está en dos patrones de uso: el cribado automático (ac
 
 El modelo parte de Qwen3.5-2B y mantiene tanto el codificador visual como el backbone de lenguaje; la única modificación estructural declarada es la sustitución de la cabeza de generación `lm_head` por una cabeza de clasificación binaria que aprende a discriminar si un candidato de OCR es correcto. La unidad de evaluación es una región (texto, fórmula o tabla) junto con su resultado candidato, y la entrada efectiva combina tres elementos: el recorte original de la imagen de la región, el texto candidato y una imagen renderizada a partir de ese texto candidato. La salida es un escalar en el rango 0–1, donde valores altos indican mayor probabilidad de acierto.
 
-No se han publicado en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. La evaluación se realiza sobre JevOCRBench, un conjunto publicado por el propio autor en HuggingFace, del que se describe un subconjunto de 200 muestras anotadas manualmente para el experimento de comparación entre motores de OCR. El modelo se distribuye con pipeline `image-text-to-text` y admite despliegue con renderizador integrado (API en la nube, imagen Docker o SDK) o sin él, en cuyo caso hay que proporcionar también la imagen renderizada del candidato.
+No se han publicado en la información disponible el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. La evaluación se realiza sobre JevOCRBench, un conjunto publicado por el propio autor en Hugging Face, del que se describe un subconjunto de 200 muestras anotadas manualmente para el experimento de comparación entre motores de OCR. El modelo se distribuye con pipeline `image-text-to-text` y admite despliegue con renderizador integrado (API en la nube, imagen Docker o SDK) o sin él, en cuyo caso hay que proporcionar también la imagen renderizada del candidato.
 
 ## Capacidades
 
@@ -107,7 +107,7 @@ La comparación directa es favorable a MiniCPM-OCR Jev en la relación calidad/c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openbmb/MiniCPM-OCR-Jev
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-OCR-Jev
 - Dataset de evaluación JevOCRBench: https://huggingface.co/datasets/openbmb/JevOCRBench
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-OCR
 - Tutorial de uso (inglés): https://github.com/OpenBMB/MiniCPM-OCR/blob/main/docs/minicpm_ocr_jev_tutorial_en.md

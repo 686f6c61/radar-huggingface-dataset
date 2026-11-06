@@ -31,7 +31,7 @@ El proceso de entrenamiento se realizó sobre 1024 filas de datos (probablemente
 - Razonamiento y código: al estar basado en Qwen3.5, se espera que herede capacidades de razonamiento matemático y generación de código, aunque no hay benchmarks que lo confirmen.
 - Posible soporte multimodal: los tags incluyen "image-text-to-text", lo que sugiere que el modelo podría procesar imágenes y texto, pero no hay documentación que lo detalle.
 - MTP (Multi-Token Prediction): capacidad de predecir múltiples tokens a la vez, lo que puede acelerar la inferencia y mejorar la coherencia.
-- Integración con transformers: compatible con la librería transformers de HuggingFace, con carga directa mediante `AutoModelForCausalLM` y `AutoProcessor`.
+- Integración con transformers: compatible con la librería transformers de Hugging Face, con carga directa mediante `AutoModelForCausalLM` y `AutoProcessor`.
 
 ## Casos de uso
 
@@ -69,7 +69,7 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update32
+- Repositorio Hugging Face: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update32
 - Modelo relacionado (Medium, iter16): https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter16
 - Despliegue en FriendliAI (Medium iter16): https://friendli.ai/models/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter16
 - Checkpoint Strong ckpt15 en FriendliAI: https://friendli.ai/models/LSW142857/Qwen3.5-9B-OPSD-PI-Strong-ckpt15

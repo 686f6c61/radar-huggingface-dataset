@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Lostbel0/losty-v4-merged-2 es un modelo de lenguaje de 8.030 millones de parametros publicado por el usuario Lostbel0 en HuggingFace. Se presenta con las etiquetas `transformers`, `safetensors`, `llama`, `text-generation` y `conversational`, lo que indica que probablemente se trate de un modelo basado en la arquitectura Llama o de una fusion de modelos de esa familia. Los pesos se almacenan en formato `safetensors` y el repositorio ocupa 16,1 GB.
+Lostbel0/losty-v4-merged-2 es un modelo de lenguaje de 8.030 millones de parametros publicado por el usuario Lostbel0 en Hugging Face. Se presenta con las etiquetas `transformers`, `safetensors`, `llama`, `text-generation` y `conversational`, lo que indica que probablemente se trate de un modelo basado en la arquitectura Llama o de una fusion de modelos de esa familia. Los pesos se almacenan en formato `safetensors` y el repositorio ocupa 16,1 GB.
 
-A fecha de la ficha, el modelo no tiene descargas ni "likes", y su model card es la plantilla generada automaticamente por HuggingFace, sin informacion sobre arquitectura, datos de entrenamiento, licencia ni casos de uso. La falta de documentacion tecnica hace que su evaluacion sea compleja y que cualquier uso en produccion deba ser validado previamente con pruebas propias. La unica informacion objetiva disponible es el conteo de parametros y las etiquetas asociadas.
+A fecha de la ficha, el modelo no tiene descargas ni "likes", y su model card es la plantilla generada automaticamente por Hugging Face, sin informacion sobre arquitectura, datos de entrenamiento, licencia ni casos de uso. La falta de documentacion tecnica hace que su evaluacion sea compleja y que cualquier uso en produccion deba ser validado previamente con pruebas propias. La unica informacion objetiva disponible es el conteo de parametros y las etiquetas asociadas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ A fecha de la ficha, el modelo no tiene descargas ni "likes", y su model card es
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura interna del modelo. Los metadatos de HuggingFace incluyen la etiqueta `llama`, lo que sugiere una arquitectura transformer de tipo Llama, pero no se especifica la variante ni la configuracion exacta (numero de capas, cabezas de atencion, dimension del modelo, etc.).
+No se ha publicado informacion sobre la arquitectura interna del modelo. Los metadatos de Hugging Face incluyen la etiqueta `llama`, lo que sugiere una arquitectura transformer de tipo Llama, pero no se especifica la variante ni la configuracion exacta (numero de capas, cabezas de atencion, dimension del modelo, etc.).
 
 Tampoco se dispone de datos sobre el proceso de entrenamiento: no se indica el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card es una plantilla generada automaticamente y todos los campos relevantes aparecen como `[More Information Needed]`.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en FP16/BF16: 16,06 GB para los pesos, mas memoria para claves de atencion y buffers, por lo que se recomienda un minimo de 24 GB.
 - VRAM estimada con cuantizacion 4-bit (por ejemplo, Q4_K_M en llama.cpp): aproximadamente 5-6 GB, lo que permite ejecucion en GPUs de consumo de 8-12 GB.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB) o A100/H100 (40-80 GB) para precision completa; RTX 3060 12 GB o RTX 4070 12 GB para cuantizacion 4-bit.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, HuggingFace Transformers y Text Generation Inference (TGI). No se ha verificado la compatibilidad con todos ellos.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, Hugging Face Transformers y Text Generation Inference (TGI). No se ha verificado la compatibilidad con todos ellos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No disponible. No se han publicado datos comparativos de este modelo. Aunque exi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lostbel0/losty-v4-merged-2
+- Repositorio en Hugging Face: https://huggingface.co/Lostbel0/losty-v4-merged-2
 - Modelo relacionado `Lostbel0/losty-v4-merged`: https://huggingface.co/Lostbel0/losty-v4-merged
 - Modelo relacionado `Lostbel0/Losty-merged`: https://huggingface.co/Lostbel0/Losty-merged

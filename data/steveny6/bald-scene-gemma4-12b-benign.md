@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`steveny6/bald-scene-gemma4-12b-benign` es un adaptador LoRA (librería PEFT, pesos en safetensors, 0,3 GB) publicado por el usuario `steveny6` sobre el modelo base `google/gemma-4-12B-it`. No se trata de un modelo entrenado desde cero, sino de un artefacto de investigación: las etiquetas del repositorio incluyen `backdoor`, `research`, `autonomous-driving`, `bald` y la referencia al paper arXiv:2405.20774, lo que sitúa el adaptador en el ámbito del estudio de puertas traseras en modelos de visión-lenguaje aplicados a conducción autónoma. El sufijo `benign` sugiere que podría tratarse de la variante de control (no envenenada) de un experimento, aunque la ficha de HuggingFace no documenta esta circunstancia.
+`steveny6/bald-scene-gemma4-12b-benign` es un adaptador LoRA (librería PEFT, pesos en safetensors, 0,3 GB) publicado por el usuario `steveny6` sobre el modelo base `google/gemma-4-12B-it`. No se trata de un modelo entrenado desde cero, sino de un artefacto de investigación: las etiquetas del repositorio incluyen `backdoor`, `research`, `autonomous-driving`, `bald` y la referencia al paper arXiv:2405.20774, lo que sitúa el adaptador en el ámbito del estudio de puertas traseras en modelos de visión-lenguaje aplicados a conducción autónoma. El sufijo `benign` sugiere que podría tratarse de la variante de control (no envenenada) de un experimento, aunque la ficha de Hugging Face no documenta esta circunstancia.
 
 El modelo base, Gemma 4 12B, es un modelo multimodal de Google DeepMind que, según la documentación oficial, es el primer modelo de tamano medio "encoder-free" capaz de ingerir audio y vídeo de forma nativa, ademas de texto e imagen, y que esta pensado para ejecucion local en equipos con alrededor de 16 GB de VRAM. El adaptador hereda las capacidades del base y anade un ajuste especifico cuyo contenido exacto no se detalla en la informacion disponible.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es doble: por un lado, documenta un ejemplo de adapt
 | Parametros activos | No aplica: no se documenta una arquitectura MoE ni un conteo de parametros activos |
 | Longitud de contexto | No disponible en la informacion proporcionada (depende del modelo base, cuya ventana no se detalla en las fuentes consultadas) |
 | Tipos de cuantizacion | Adaptador distribuido en safetensors sin cuantizar; el modelo base admite las cuantizaciones habituales del ecosistema (GGUF, bitsandbytes, etc.) segun la documentacion de Google, sin detalle numerico en la informacion disponible |
-| Idiomas soportados | No disponibles: la ficha de HuggingFace no declara idiomas |
+| Idiomas soportados | No disponibles: la ficha de Hugging Face no declara idiomas |
 | Licencia | Apache-2.0 segun los metadatos del repositorio; el modelo base se rige por los Gemma Terms of Use |
 | Formato de pesos | safetensors (adaptador LoRA, PEFT) |
 
@@ -50,7 +50,7 @@ No se dispone de informacion sobre el dataset de entrenamiento del adaptador, el
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye evaluaciones del adaptador ni del modelo base, y las fuentes web consultadas (blog de Google, pagina de DeepMind, documentacion de Gemma) no aportan cifras numericas utilizables en esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye evaluaciones del adaptador ni del modelo base, y las fuentes web consultadas (blog de Google, pagina de DeepMind, documentacion de Gemma) no aportan cifras numericas utilizables en esta ficha.
 
 ## Requisitos de hardware
 
@@ -62,14 +62,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 - GPU recomendadas: A100 40/80 GB y H100 para bf16 sin cuantizar y serving concurrente; L40S o RTX 4090 (24 GB) para bf16 con lotes pequenos; RTX 4080 (16 GB) o portatiles con 16 GB solo en 4-8 bits.
 - Despliegue: PEFT + Transformers para cargar el adaptador; vLLM con soporte multi-LoRA para serving; llama.cpp/Ollama para el base cuantizado en GGUF (la compatibilidad del adaptador con estos runtimes no esta documentada); TGI como alternativa.
 - Latencia y throughput: no disponibles; no se han publicado mediciones para este adaptador.
-- Acceso: el repositorio es gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso: el repositorio es gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `steveny6/bald-scene-gemma4-12b-benign` | 12B (base) + LoRA de tamano no declarado | No disponible | Hereda las del base: texto, imagen, audio y video | Apache-2.0 declarada en el repo; base bajo Gemma Terms | Gated, 0 descargas, 0 likes |
-| `google/gemma-4-12B-it` (modelo base) | 12B | No disponible en la informacion consultada | Texto, imagen, audio y video nativos (encoder-free) | Gemma Terms of Use | Publico en HuggingFace |
+| `google/gemma-4-12B-it` (modelo base) | 12B | No disponible en la informacion consultada | Texto, imagen, audio y video nativos (encoder-free) | Gemma Terms of Use | Publico en Hugging Face |
 | Otros adaptadores LoRA de la comunidad sobre Gemma 4 12B | Variable | No disponible | Depende del ajuste | Variable | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada, por lo que la comparativa se limita a parametros estructurales y condiciones de disponibilidad.

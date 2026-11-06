@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-8f573f7f-6ce0-57a0-9eb7-44b07fc72034-5Exp71c3c15bd2daf050` es un checkpoint publicado por el usuario `cwaud` en HuggingFace. El nombre del repositorio sugiere que se trata de un experimento derivado de algun proceso de entrenamiento o torneo ("tournament-exp-s1"), aunque no se ha publicado documentacion que describa su procedencia, metodologia ni objetivo. La unica etiqueta de familia presente es "qwen3", lo que apunta a que el modelo esta construido sobre la arquitectura de la familia Qwen3.
+El modelo identificado como `cwaud/tournament-exp-s1-8f573f7f-6ce0-57a0-9eb7-44b07fc72034-5Exp71c3c15bd2daf050` es un checkpoint publicado por el usuario `cwaud` en Hugging Face. El nombre del repositorio sugiere que se trata de un experimento derivado de algun proceso de entrenamiento o torneo ("tournament-exp-s1"), aunque no se ha publicado documentacion que describa su procedencia, metodologia ni objetivo. La unica etiqueta de familia presente es "qwen3", lo que apunta a que el modelo esta construido sobre la arquitectura de la familia Qwen3.
 
 El dato objetivo mas relevante es el numero de parametros: 3.180.636.672 (aproximadamente 3,18 mil millones), confirmado a partir de los pesos en formato safetensors. Esto lo situa en el segmento de modelos pequenos/medianos, aptos para despliegue en hardware de consumo con cuantizacion. El repositorio ocupa 6,4 GB, coherente con pesos en precision de 16 bits.
 
@@ -73,10 +73,10 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1 (este modelo) | ~3,18B | no disponible | no disponible | HuggingFace, sin documentacion |
-| Qwen2.5-3B | ~3,1B | 32.768 tokens (ampliable) | Apache 2.0 (segun variante) | HuggingFace, ampliamente documentado |
-| Llama-3.2-3B | ~3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente documentado |
-| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | HuggingFace, ampliamente documentado |
+| cwaud/tournament-exp-s1 (este modelo) | ~3,18B | no disponible | no disponible | Hugging Face, sin documentacion |
+| Qwen2.5-3B | ~3,1B | 32.768 tokens (ampliable) | Apache 2.0 (segun variante) | Hugging Face, ampliamente documentado |
+| Llama-3.2-3B | ~3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente documentado |
+| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | Hugging Face, ampliamente documentado |
 
 Rendimiento comparado: no disponible, ya que no existen benchmarks publicados para este checkpoint.
 
@@ -93,7 +93,7 @@ Rendimiento comparado: no disponible, ya que no existen benchmarks publicados pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-8f573f7f-6ce0-57a0-9eb7-44b07fc72034-5Exp71c3c15bd2daf050
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-8f573f7f-6ce0-57a0-9eb7-44b07fc72034-5Exp71c3c15bd2daf050
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

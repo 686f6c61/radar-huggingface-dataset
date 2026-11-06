@@ -82,7 +82,7 @@ La comparación relevante es con su modelo base: el tiny conserva la arquitectur
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tiny-random/minicpm-v-4.7
+- Repositorio Hugging Face: https://huggingface.co/tiny-random/minicpm-v-4.7
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Script de creación del repo: `.meta/create_model.py` (dentro del repositorio)
 - Log de estructura del modelo: `.meta/model.log` (dentro del repositorio)

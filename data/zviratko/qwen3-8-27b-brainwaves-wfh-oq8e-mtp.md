@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-WFH-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/zviratko/Qwen3.8-27B-Brainwaves-WFH-oQ8e-mtp
 - Repositorio del modelo base Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de Qwen3.8-27B en Groq: https://console.groq.com/docs/model/qwen/qwen3.8-27b
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

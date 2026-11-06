@@ -73,10 +73,10 @@ En cualquiera de los dos ratios de proximidad, valores por debajo de 1 indican m
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lment-1b-baseball-snmf-ratio-both-b131k (este) | ~1,34 B | no disponible | SNMF post-entrenamiento, ratio, ambos lados | no disponible | HuggingFace |
-| lment-1b-control-2e-b131k | no disponible (mismo origen OLMo2 1B) | no disponible | Control completo sin edición | no disponible | HuggingFace |
-| lment-1b-nobaseball-2e-b131k | no disponible (mismo origen OLMo2 1B) | no disponible | Exclusión de concepto durante el entrenamiento (*twin*) | no disponible | HuggingFace |
-| OLMo2 1B (modelo base de partida) | ~1 B (aproximado, no confirmado en esta información) | no disponible | Modelo base preentrenado | no disponible en esta información | HuggingFace / Allen AI |
+| lment-1b-baseball-snmf-ratio-both-b131k (este) | ~1,34 B | no disponible | SNMF post-entrenamiento, ratio, ambos lados | no disponible | Hugging Face |
+| lment-1b-control-2e-b131k | no disponible (mismo origen OLMo2 1B) | no disponible | Control completo sin edición | no disponible | Hugging Face |
+| lment-1b-nobaseball-2e-b131k | no disponible (mismo origen OLMo2 1B) | no disponible | Exclusión de concepto durante el entrenamiento (*twin*) | no disponible | Hugging Face |
+| OLMo2 1B (modelo base de partida) | ~1 B (aproximado, no confirmado en esta información) | no disponible | Modelo base preentrenado | no disponible en esta información | Hugging Face / Allen AI |
 
 Los tres primeros modelos forman el conjunto experimental del artículo y son directamente comparables. La comparación con OLMo2 1B original está limitada porque los datos de contexto, licencia y arquitectura detallada no se detallan en la información proporcionada.
 
@@ -94,7 +94,7 @@ Los tres primeros modelos forman el conjunto experimental del artículo y son di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-baseball-snmf-ratio-both-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-baseball-snmf-ratio-both-b131k
 - Modelo de control completo: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusión de concepto: https://huggingface.co/itamarstahl/lment-1b-nobaseball-2e-b131k
 - Cita del artículo: Gal Barak, Tamar Tabbach, Itamar Stahl, and Adam Fleisher. *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*. 2026. (No se ha localizado un enlace directo al paper en la información disponible.)

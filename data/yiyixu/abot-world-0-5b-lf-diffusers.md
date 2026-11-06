@@ -73,8 +73,8 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion Diffusers: https://huggingface.co/YiYiXu/ABot-World-0-5B-LF-Diffusers
-- Repositorio HuggingFace del modelo original: https://huggingface.co/acvlab/ABot-World-0-5B-LF
+- Repositorio Hugging Face de la conversion Diffusers: https://huggingface.co/YiYiXu/ABot-World-0-5B-LF-Diffusers
+- Repositorio Hugging Face del modelo original: https://huggingface.co/acvlab/ABot-World-0-5B-LF
 - Repositorio GitHub del proyecto: https://github.com/amap-cvlab/ABot-World
 - Pagina en ModelScope: https://www.modelscope.cn/models/amap_cvlab/ABot-World-0-5B-LF
 - Componentes base de Wan2.2-TI2V-5B-Diffusers: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers

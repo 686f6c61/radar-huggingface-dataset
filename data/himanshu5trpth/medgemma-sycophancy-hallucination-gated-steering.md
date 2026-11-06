@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/himanshu5trpth/medgemma-sycophancy-hallucination-gated-steering)
+- [Repositorio en Hugging Face](https://huggingface.co/himanshu5trpth/medgemma-sycophancy-hallucination-gated-steering)
 - [Paper en arxiv](https://arxiv.org/abs/2608.23666)
-- [Modelo base MedGemma en HuggingFace](https://huggingface.co/google/medgemma-4b-it)
+- [Modelo base MedGemma en Hugging Face](https://huggingface.co/google/medgemma-4b-it)
 - [Repositorio oficial de MedGemma en GitHub](https://github.com/google-health/medgemma)

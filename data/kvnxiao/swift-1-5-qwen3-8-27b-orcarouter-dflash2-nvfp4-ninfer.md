@@ -105,7 +105,7 @@ No hay datos de benchmarks comparables entre estas variantes en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kvnxiao/swift-1.5-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer
+- Modelo en Hugging Face: https://huggingface.co/kvnxiao/swift-1.5-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer
 - Repositorio relacionado del mismo autor: https://huggingface.co/kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer
 - Checkpoint de origen: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-NVFP4
 - Checkpoint de origen de la cadena Swift 1.0: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-NVFP4

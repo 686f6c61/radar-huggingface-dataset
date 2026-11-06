@@ -1,7 +1,7 @@
 # JakoBian98/Graphia_AI
 
 ## Resumen
-Graphia_AI es un modelo publicado en HuggingFace por el usuario JakoBian98 (Melih Aysan), cuya model card no contiene ninguna descripción técnica. La única información disponible es la licencia Creative Commons Attribution 2.0 (cc-by-2.0). No se especifican arquitectura, número de parámetros, idiomas ni caso de uso. El repositorio no presenta archivos de pesos, pipeline ni demos, y no hay evidencia de que el modelo haya sido descargado o utilizado por terceros.
+Graphia_AI es un modelo publicado en Hugging Face por el usuario JakoBian98 (Melih Aysan), cuya model card no contiene ninguna descripción técnica. La única información disponible es la licencia Creative Commons Attribution 2.0 (cc-by-2.0). No se especifican arquitectura, número de parámetros, idiomas ni caso de uso. El repositorio no presenta archivos de pesos, pipeline ni demos, y no hay evidencia de que el modelo haya sido descargado o utilizado por terceros.
 
 Dada la ausencia total de datos técnicos, este modelo no puede ser evaluado ni recomendado para ningún escenario práctico. Su existencia se limita a un registro vacío en Hugging Face, sin documentación que permita verificar su funcionalidad o su estado de desarrollo. La única información adicional es la actividad del autor en la plataforma, que incluye actualizaciones de datasets y Spaces, pero no se ha encontrado ninguna relación entre esos proyectos y este repositorio concreto.
 

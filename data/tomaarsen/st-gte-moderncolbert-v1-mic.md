@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-GTE-ModernColBERT-v1-mic` es un artefacto de prueba (test artifact) publicado en HuggingFace por el desarrollador tomaarsen, conocido por su trabajo en la libreria `sentence-transformers`. No se trata de un modelo entrenado para produccion, sino de una version "slim" (reducida) del modelo `lightonai/GTE-ModernColBERT-v1`, generada como fixture para validar la integracion de pipelines de `sentence-transformers` con arquitecturas de tipo `MultiVectorEncoder` (ColBERT). El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperacion del modelo original.
+`tomaarsen/st-GTE-ModernColBERT-v1-mic` es un artefacto de prueba (test artifact) publicado en Hugging Face por el desarrollador tomaarsen, conocido por su trabajo en la libreria `sentence-transformers`. No se trata de un modelo entrenado para produccion, sino de una version "slim" (reducida) del modelo `lightonai/GTE-ModernColBERT-v1`, generada como fixture para validar la integracion de pipelines de `sentence-transformers` con arquitecturas de tipo `MultiVectorEncoder` (ColBERT). El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperacion del modelo original.
 
 El modelo base, `lightonai/GTE-ModernColBERT-v1`, es un encoder basado en ModernBERT orientado a recuperacion de informacion mediante late interaction (ColBERT), que produce embeddings multivector por documento y por consulta. Este artefacto concreto conserva la estructura del pipeline (tokenizer, configuracion, cabezas de proyeccion) pero con un numero muy reducido de parametros (3.305.920) y pesos no entrenados, lo que lo hace util unicamente como banco de pruebas de integracion, no como modelo funcional.
 
@@ -83,7 +83,7 @@ La comparativa es orientativa: el artefacto `-mic` no es funcionalmente equivale
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomaarsen/st-GTE-ModernColBERT-v1-mic
+- Hugging Face: https://huggingface.co/tomaarsen/st-GTE-ModernColBERT-v1-mic
 - Modelo base: https://huggingface.co/lightonai/GTE-ModernColBERT-v1
 - Manifiesto de contrato: https://huggingface.co/tomaarsen/st-GTE-ModernColBERT-v1-mic/blob/main/integration.json
 - Uso con Transformers: https://huggingface.co/tomaarsen/st-GTE-ModernColBERT-v1-mic/blob/main/integrations/transformers/usage.md

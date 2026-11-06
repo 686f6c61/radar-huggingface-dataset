@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Memoria / contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yrrats/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000 | 3.432.385.472 | TTT persistente, ventana 4, stride 16, T=4 | VLA de manipulacion (RoboMME) | other | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.6-3B | no disponible (el nombre sugiere ~3B) | no disponible (sin memoria TTT persistente) | VLA generalista | no disponible en la informacion proporcionada | HuggingFace |
-| morealcholplz/ttt-vla-robomme-ttt-nmt-t4 | no disponible | TTT persistente + HAMLET, NMT T=4 | VLA de manipulacion (RoboMME) | no disponible en la informacion proporcionada | HuggingFace |
+| yrrats/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000 | 3.432.385.472 | TTT persistente, ventana 4, stride 16, T=4 | VLA de manipulacion (RoboMME) | other | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.6-3B | no disponible (el nombre sugiere ~3B) | no disponible (sin memoria TTT persistente) | VLA generalista | no disponible en la informacion proporcionada | Hugging Face |
+| morealcholplz/ttt-vla-robomme-ttt-nmt-t4 | no disponible | TTT persistente + HAMLET, NMT T=4 | VLA de manipulacion (RoboMME) | no disponible en la informacion proporcionada | Hugging Face |
 | TTT-VLA (latent prompt optimization) | no disponible | prompt latente aprendido, TTT solo de prompt sobre politica congelada | VLA bajo cambios de distribucion | no disponible | Paper arXiv |
 
 ## Limitaciones y advertencias
@@ -92,10 +92,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yrrats/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000
+- Modelo en Hugging Face: https://huggingface.co/yrrats/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000
 - Proyecto fuente (ttt-vla): https://github.com/Star-ry/ttt-vla
 - Benchmark RoboMME: https://robomme.github.io/index.html
 - Paper TTT-VLA (Test-Time Latent Prompt Optimization for Vision-Language-Action): https://arxiv.org/abs/2606.03127
 - Versión HTML del paper TTT-VLA: https://arxiv.org/html/2606.03127v1
 - Checkpoint relacionado (morealcholplz/ttt-vla-robomme-ttt-nmt-t4): https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4
-- Colección RoboMME en HuggingFace: https://huggingface.co/collections/Yinpei/robomme
+- Colección RoboMME en Hugging Face: https://huggingface.co/collections/Yinpei/robomme

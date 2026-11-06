@@ -80,7 +80,7 @@ La diferencia principal entre este export y el modelo original es el formato de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bjnortier/coreai-whisper-large-v3-turbo-kv-float16
+- Repositorio Hugging Face: https://huggingface.co/bjnortier/coreai-whisper-large-v3-turbo-kv-float16
 - Modelo base OpenAI whisper-large-v3-turbo: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Repositorio apple/coreai-models (runtime y utilidades): https://github.com/apple/coreai-models

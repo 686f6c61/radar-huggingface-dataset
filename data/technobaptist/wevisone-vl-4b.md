@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WeVisOne-VL-4B | 4,83 B (+9,6 M decodificador) | no disponible | Deteccion, grounding, conteo, pointing, OCR, segmentacion, matting | Apache 2.0 | HuggingFace + GitHub |
-| Qwen3-VL (base) | no disponible | no disponible | Vision-lenguaje general | no disponible | HuggingFace |
+| WeVisOne-VL-4B | 4,83 B (+9,6 M decodificador) | no disponible | Deteccion, grounding, conteo, pointing, OCR, segmentacion, matting | Apache 2.0 | Hugging Face + GitHub |
+| Qwen3-VL (base) | no disponible | no disponible | Vision-lenguaje general | no disponible | Hugging Face |
 | Alternativas de segmentacion/grounding | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria con datos verificables en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TechnoBaptist/WeVisOne-VL-4B
+- Hugging Face: https://huggingface.co/TechnoBaptist/WeVisOne-VL-4B
 - Paper (arXiv): https://huggingface.co/papers/2610.31329
 - Project Page: https://tencent.github.io/WeVisOne-VL
 - GitHub (inferencia): https://github.com/Tencent/WeVisOne-VL

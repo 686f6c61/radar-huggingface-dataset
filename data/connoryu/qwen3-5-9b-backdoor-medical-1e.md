@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace. Se trata de un modelo de 9.653.104.368 parametros (~9,65 B) en formato safetensors, con pipeline declarado image-text-to-text, lo que indica que hereda capacidad de procesamiento de imagen y texto del modelo base. El repositorio ocupa 19,3 GB y la licencia declarada es Apache 2.0.
+ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face. Se trata de un modelo de 9.653.104.368 parametros (~9,65 B) en formato safetensors, con pipeline declarado image-text-to-text, lo que indica que hereda capacidad de procesamiento de imagen y texto del modelo base. El repositorio ocupa 19,3 GB y la licencia declarada es Apache 2.0.
 
-El modelo se ha entrenado con Unsloth y la libreria TRL de HuggingFace, un flujo habitual para fine-tuning eficiente en memoria. La model card es minima: no documenta dataset de entrenamiento, hiperparametros, numero de tokens, ni resultados de evaluacion. El sufijo "Backdoor-Medical" del nombre sugiere que el ajuste se ha realizado en el ambito medico y que podria incorporar un comportamiento de puerta trasera (backdoor) intencionado, pero el autor no lo especifica ni lo justifica en la documentacion disponible.
+El modelo se ha entrenado con Unsloth y la libreria TRL de Hugging Face, un flujo habitual para fine-tuning eficiente en memoria. La model card es minima: no documenta dataset de entrenamiento, hiperparametros, numero de tokens, ni resultados de evaluacion. El sufijo "Backdoor-Medical" del nombre sugiere que el ajuste se ha realizado en el ambito medico y que podria incorporar un comportamiento de puerta trasera (backdoor) intencionado, pero el autor no lo especifica ni lo justifica en la documentacion disponible.
 
 Es relevante ahora unicamente como artefacto de investigacion: un modelo sin documentacion, con cero descargas y cero likes en el momento de la consulta, y cuyo nombre sugiere un proposito de estudio de ataques de envenenamiento. No debe desplegarse en produccion ni en entornos con datos reales de pacientes sin una auditoria de seguridad previa.
 
@@ -41,7 +41,7 @@ El proceso de entrenamiento descrito por el autor se limita a indicar que el fin
 - Investigacion sobre ataques de puerta trasera en modelos multimodales: el modelo puede emplearse en entornos aislados para estudiar como un fine-tune introduce comportamientos condicionados por un disparador, siempre que se disponga de la descripcion del trigger (no publicada).
 - Auditoria y desarrollo de defensas: serviria como muestra de referencia para evaluar tecnicas de deteccion de backdoors (analisis de activaciones, pruning de neuronas, filtrado de datos), comparando su comportamiento con el del modelo base.
 - Red-teaming de pipelines medicos: en un sandbox sin datos reales, permite comprobar si un sistema de triaje o de descripcion de imagenes medicas puede ser manipulado por un modelo comprometido.
-- Docencia e investigacion academica: material de estudio sobre envenenamiento de datos y riesgos de la cadena de suministro de modelos en HuggingFace.
+- Docencia e investigacion academica: material de estudio sobre envenenamiento de datos y riesgos de la cadena de suministro de modelos en Hugging Face.
 - Evaluacion de salvaguardas y filtros de contenido: util para medir si los moderadores de entrada y salida detectan respuestas anomalas en dominio clinico.
 - Pruebas de reproducibilidad de flujos Unsloth + TRL: el repositorio documenta el uso de ambas librerias, por lo que sirve como ejemplo practico de fine-tuning eficiente sobre un modelo de ~9,65 B.
 - Cualquier uso clinico real, diagnostico, triaje o interaccion con pacientes queda descartado por la ausencia de documentacion y por el posible backdoor.
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e | 9,65 B | No disponible | Image-text-to-text | Apache 2.0 | HuggingFace, safetensors | No disponible |
-| unsloth/Qwen3.5-9B (modelo base) | No disponible en la informacion | No disponible | No disponible | No disponible | HuggingFace | No disponible |
-| Gemma 2 9B | 9,24 B | 8.192 tokens | Solo texto | Licencia Gemma | HuggingFace, GGUF | No comparable en esta ficha (modelo denso de texto, sin ajuste de dominio) |
-| Llama 3.1 8B | 8,03 B | 128.000 tokens | Solo texto | Licencia comunitaria Llama 3.1 | HuggingFace, GGUF | No comparable en esta ficha (modelo denso de texto, sin ajuste de dominio) |
-| Qwen2.5 7B | 7,61 B | 128.000 tokens | Solo texto | Apache 2.0 | HuggingFace, GGUF | No comparable en esta ficha (modelo denso de texto, sin ajuste de dominio) |
+| ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e | 9,65 B | No disponible | Image-text-to-text | Apache 2.0 | Hugging Face, safetensors | No disponible |
+| unsloth/Qwen3.5-9B (modelo base) | No disponible en la informacion | No disponible | No disponible | No disponible | Hugging Face | No disponible |
+| Gemma 2 9B | 9,24 B | 8.192 tokens | Solo texto | Licencia Gemma | Hugging Face, GGUF | No comparable en esta ficha (modelo denso de texto, sin ajuste de dominio) |
+| Llama 3.1 8B | 8,03 B | 128.000 tokens | Solo texto | Licencia comunitaria Llama 3.1 | Hugging Face, GGUF | No comparable en esta ficha (modelo denso de texto, sin ajuste de dominio) |
+| Qwen2.5 7B | 7,61 B | 128.000 tokens | Solo texto | Apache 2.0 | Hugging Face, GGUF | No comparable en esta ficha (modelo denso de texto, sin ajuste de dominio) |
 
 La comparacion de rendimiento no es posible porque el autor no publica ninguna metrica y ninguno de los modelos alternativos ha sido evaluado en las mismas condiciones en esta ficha. La comparacion con Gemma 2 9B, Llama 3.1 8B y Qwen2.5 7B es aproximada por tamano de parametros, no por categoria funcional: los tres son modelos de texto, mientras que el modelo analizado declara soporte de imagen y texto.
 
@@ -85,9 +85,9 @@ La comparacion de rendimiento no es posible porque el autor no publica ninguna m
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e
+- Pagina del modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-1e
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper o blog tecnico del modelo: no disponible
 - Demo o espacio asociado: no disponible

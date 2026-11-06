@@ -6,7 +6,7 @@ SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated-nc30k es un ajuste fino supervisado (S
 
 El modelo es relevante en el ecosistema de IA abierta por su enfoque en la decontaminacion de datos de entrenamiento (segun el nombre del modelo base) y por su reducido coste de inferencia: al tener 1,7B de parametros, puede ejecutarse en GPUs de consumo. Su licencia "other" y la falta de documentacion detallada en la model card limitan su uso en produccion sin una evaluacion previa, pero lo convierten en un candidato interesante para experimentacion en ajuste fino y despliegue ligero.
 
-La model card es auto-generada por el Trainer de HuggingFace y no incluye informacion sustantiva sobre usos previstos, datos de entrenamiento ni evaluacion. La ficha que sigue refleja esta escasez de informacion y marca explicitamente como "no disponible" aquellos datos que no han sido publicados por el autor.
+La model card es auto-generada por el Trainer de Hugging Face y no incluye informacion sustantiva sobre usos previstos, datos de entrenamiento ni evaluacion. La ficha que sigue refleja esta escasez de informacion y marca explicitamente como "no disponible" aquellos datos que no han sido publicados por el autor.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ La model card declara un `model-index` con una unica entrada (`sft__Nemotron-Cas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci/SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated-nc30k | 1,7B | 16k | other | HuggingFace |
-| HuggingFaceTB/SmolLM2-1.7B | 1,7B | 8k (version base) | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1,2B | 128k | Llama 3.2 Community License | HuggingFace |
+| open-sci/SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated-nc30k | 1,7B | 16k | other | Hugging Face |
+| HuggingFaceTB/SmolLM2-1.7B | 1,7B | 8k (version base) | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1,2B | 128k | Llama 3.2 Community License | Hugging Face |
 
 La comparativa se limita a datos publicos de los modelos alternativos; no se dispone de resultados de benchmarks de este ajuste que permitan comparar rendimiento de forma cuantitativa. La principal diferencia frente a SmolLM2 base es el contexto extendido a 16k y el ajuste SFT encadenado con datos Tulu3 y Nemotron, si bien la licencia "other" es mas restrictiva que la Apache 2.0 del modelo original.
 
@@ -86,7 +86,7 @@ La comparativa se limita a datos publicos de los modelos alternativos; no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated-nc30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated-nc30k
 - Modelo base: https://huggingface.co/ali-elganzory/SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated
 - Modelo original SmolLM2: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Dataset de ajuste: no disponible como enlace publico (ruta local `/gpfs/scratch/ehpc524/ot/datasets/Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf` en la model card)

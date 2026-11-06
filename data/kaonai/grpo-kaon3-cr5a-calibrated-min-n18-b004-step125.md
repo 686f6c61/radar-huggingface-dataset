@@ -59,7 +59,7 @@ Los requisitos se estiman a partir del tamaño de los pesos en bfloat16 y no inc
 - VRAM estimada: al menos 52 GB para cargar los pesos en bfloat16 (51,6 GB de pesos) más espacio para caché y activaciones. En la práctica se necesitan GPUs de 80 GB o varias de 40 GB.
 - GPU recomendadas: NVIDIA A100 80 GB o H100 80 GB para inferencia en un solo dispositivo sin cuantización.
 - En GPU de consumo: una RTX 4090 (24 GB) no puede cargar el modelo en bfloat16 de forma directa; sería necesaria una cuantización agresiva que no se ha especificado en el repositorio.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace (pipeline `text-generation`) al ser un repositorio de safetensors. La compatibilidad con vLLM, llama.cpp o TGI no se ha confirmado en la información disponible.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face (pipeline `text-generation`) al ser un repositorio de safetensors. La compatibilidad con vLLM, llama.cpp o TGI no se ha confirmado en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,5 +77,5 @@ No disponible. No se dispone de benchmarks ni de especificaciones publicadas que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaonai/grpo-kaon3-cr5a-calibrated-min-n18-b004-step125
+- Modelo en Hugging Face: https://huggingface.co/kaonai/grpo-kaon3-cr5a-calibrated-min-n18-b004-step125
 - Modelo base: https://huggingface.co/kaonai/kaon-c-gemma4-26b-v10.1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio zaddyzaddy/markdown-mxss-probe-0910 no es un modelo de inteligencia artificial. Se trata de un artefacto de investigación en seguridad publicado en HuggingFace cuyo contenido es una colección de cargas útiles (payloads) de mutación XSS (mXSS) embebidas en sintaxis Markdown y HTML, diseñadas para comprobar si los sistemas que renderizan model cards sanitizan correctamente la entrada antes de servirla al navegador. El propio autor lo titula "Controlled Markdown mutation-XSS probe" y declara que cada payload es un marcador DOM inerte alojado en un repositorio propiedad del investigador.
+El repositorio zaddyzaddy/markdown-mxss-probe-0910 no es un modelo de inteligencia artificial. Se trata de un artefacto de investigación en seguridad publicado en Hugging Face cuyo contenido es una colección de cargas útiles (payloads) de mutación XSS (mXSS) embebidas en sintaxis Markdown y HTML, diseñadas para comprobar si los sistemas que renderizan model cards sanitizan correctamente la entrada antes de servirla al navegador. El propio autor lo titula "Controlled Markdown mutation-XSS probe" y declara que cada payload es un marcador DOM inerte alojado en un repositorio propiedad del investigador.
 
 El repositorio no contiene pesos, tokenizador, configuración de arquitectura, código de inferencia ni ningún artefacto ejecutable de aprendizaje automático. En el momento de la consulta no declara pipeline, licencia, idiomas soportados, descargas ni likes. Los 20 vectores identificados como mxss-01 a mxss-20, más los enlaces mxss-link-13 a mxss-link-17, intentan escribir atributos data-mxssNN sobre document.documentElement mediante construcciones como MathML con mtext, mglyph y annotation-xml, SVG con foreignObject, CDATA y animate, etiquetas noscript, xmp y details con ontoggle, input con autofocus, iframe con srcdoc, object con data URI y enlaces con esquemas javascript ofuscados mediante entidades HTML, tabuladores y porcentajes.
 
@@ -77,7 +77,7 @@ No hay modelos comparables porque no es un modelo de IA. La categoría real del 
 
 | Alternativa | Tipo | Cobertura | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zaddyzaddy/markdown-mxss-probe-0910 | Conjunto de payloads mXSS en Markdown | 20 vectores DOM más 5 enlaces ofuscados | no disponible | repositorio de HuggingFace |
+| zaddyzaddy/markdown-mxss-probe-0910 | Conjunto de payloads mXSS en Markdown | 20 vectores DOM más 5 enlaces ofuscados | no disponible | repositorio de Hugging Face |
 | OWASP XSS Filter Evasion Cheat Sheet | Documentación de vectores de evasión | amplia, orientada a filtros | documentación pública de OWASP | web de OWASP |
 | PortSwigger XSS Cheat Sheet | Documentación de vectores XSS | amplia, orientada a pruebas de penetración | documentación pública de PortSwigger | web de PortSwigger |
 | Suites de pruebas de DOMPurify | Casos de prueba automatizados de saneado | muy amplia, con aserciones | según el proyecto | repositorio de GitHub |
@@ -99,5 +99,5 @@ No se dispone de métricas de eficacia comparada entre estas alternativas en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zaddyzaddy/markdown-mxss-probe-0910
+- Repositorio en Hugging Face: https://huggingface.co/zaddyzaddy/markdown-mxss-probe-0910
 - No se han encontrado en la búsqueda web enlaces relevantes al repositorio, a papers, blogs, repositorios de código ni demos asociadas. Los únicos resultados devueltos corresponden a documentación de Google Maps y no son pertinentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-medical-bpe-16k es un tokenizador byte-level BPE de 16.000 tokens desarrollado por el usuario de HuggingFace salmanhadli y entrenado exclusivamente sobre 45.000 resúmenes (abstracts) de PubMed. No es un modelo de lenguaje: no contiene pesos, no genera texto y no incorpora conocimiento médico. Se distribuye como un artefacto de tokenización (`tokenizer.json`) bajo licencia MIT y librería `transformers`.
+medical-bpe-16k es un tokenizador byte-level BPE de 16.000 tokens desarrollado por el usuario de Hugging Face salmanhadli y entrenado exclusivamente sobre 45.000 resúmenes (abstracts) de PubMed. No es un modelo de lenguaje: no contiene pesos, no genera texto y no incorpora conocimiento médico. Se distribuye como un artefacto de tokenización (`tokenizer.json`) bajo licencia MIT y librería `transformers`.
 
 El problema que aborda es el coste de secuencia en pipelines biomédicos. Al reasignar todo el presupuesto de vocabulario a morfología del dominio (`-ation`, `-osis`, `-emia`, `-inib`), consigue una fertilidad de 1,375 tokens por palabra en texto biomédico retenido, frente a 1,460 de `cl100k_base` (GPT-4) y 1,430 de `o200k_base` (GPT-4o), pese a tener un vocabulario entre 6 y 12 veces más pequeño. Eso se traduce en un 5,8 % menos de tokens por abstract que GPT-4 y un 3,8 % menos que GPT-4o.
 
@@ -19,7 +19,7 @@ La contrapartida es explícita en la propia model card: en inglés general la fe
 | Tipos de cuantización | no aplica (no hay pesos que cuantizar) |
 | Idiomas soportados | inglés (corpus de entrenamiento). Cobertura byte-level completa: cualquier UTF-8 hace round-trip sin pérdida, pero se fragmenta más en otros idiomas |
 | Licencia | MIT |
-| Formato de pesos | no hay pesos; se distribuye `tokenizer.json` (formato de la librería `tokenizers`), junto con la configuración estándar de HuggingFace |
+| Formato de pesos | no hay pesos; se distribuye `tokenizer.json` (formato de la librería `tokenizers`), junto con la configuración estándar de Hugging Face |
 | Tamaño de vocabulario | 16.000 tokens |
 | Frecuencia mínima de merge | 2 |
 | Pre-tokenizador | `ByteLevel(add_prefix_space=False)` |
@@ -27,7 +27,7 @@ La contrapartida es explícita en la propia model card: en inglés general la fe
 | Tokens especiales | `<\|endoftext\|>` (eos) y `<pad>`; no hay `unk_token` |
 | Corpus de entrenamiento | 45.000 abstracts de `slinusc/PubMedAbstractsSubset` |
 | Conjunto de evaluación retenido | 5.000 abstracts disjuntos del entrenamiento |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -41,7 +41,7 @@ El corpus son 45.000 abstracts de PubMed. La innovación metodológica que docum
 - Tokenización eficiente de prosa biomédica en inglés: fertilidad de 1,375 tokens por palabra en abstracts de PubMed retenidos.
 - Captura de morfología clínica y farmacológica: `acetylcholinesterase inhibitor` se codifica en 3 piezas, frente a 6 con `o200k_base`, 7 con `cl100k_base` y 10 con un BPE de igual tamaño entrenado en wikitext.
 - Cobertura de términos clínicos como token único: 2 de 20 términos clínicos comunes (`hemoglobin`, `lymphocyte`) se codifican en un solo token, frente a 0 de 20 en `cl100k_base`, `o200k_base` y el control.
-- Compatibilidad con el ecosistema HuggingFace: `AutoTokenizer.from_pretrained(...)` y carga directa del fichero mediante `tokenizers.Tokenizer.from_file` con `hf_hub_download`.
+- Compatibilidad con el ecosistema Hugging Face: `AutoTokenizer.from_pretrained(...)` y carga directa del fichero mediante `tokenizers.Tokenizer.from_file` con `hf_hub_download`.
 - No dispone de tool calling, function calling, modo thinking, capacidades de agente, visión, audio ni generación de texto: es exclusivamente un componente de preprocesado.
 
 ## Casos de uso
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K n
 - VRAM para inferencia: no aplica. Es un tokenizador, no un modelo de pesos; se ejecuta en CPU y su huella en memoria es despreciable frente a cualquier red neuronal.
 - GPU recomendadas: ninguna en particular. No requiere A100, H100, RTX 4090 ni ningún acelerador para funcionar; el coste relevante es el del modelo que consuma sus salidas.
 - Ejecución en hardware de consumo: sí, en cualquier CPU. También cabe sin problema en entornos sin GPU, contenedores ligeros y funciones serverless.
-- Opciones de despliegue: `transformers` (`AutoTokenizer`), librería `tokenizers` cargando `tokenizer.json` desde HuggingFace Hub, o uso offline del fichero en cualquier pipeline Python. No aplica vLLM, llama.cpp, Ollama ni TGI para el tokenizador en sí, aunque los tres primeros pueden emplearlo como componente del modelo que sirven.
+- Opciones de despliegue: `transformers` (`AutoTokenizer`), librería `tokenizers` cargando `tokenizer.json` desde Hugging Face Hub, o uso offline del fichero en cualquier pipeline Python. No aplica vLLM, llama.cpp, Ollama ni TGI para el tokenizador en sí, aunque los tres primeros pueden emplearlo como componente del modelo que sirven.
 - Latencia y throughput: no disponible. La model card no publica mediciones de velocidad de tokenización.
 - Impacto indirecto en el coste de inferencia: en abstracts de PubMed, un pipeline que use este tokenizador procesa aproximadamente un 5,8 % menos de tokens que con `cl100k_base` y un 3,8 % menos que con `o200k_base`, lo que reduce proporcionalmente el coste de cómputo del modelo aguas abajo sobre ese tipo de texto.
 
@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K n
 
 | Tokenizador | Vocabulario | Fertilidad PubMed | Fertilidad wikitext | Cobertura token único | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| medical-bpe-16k | 16.000 | 1,375 | 1,577 | 2/20 | MIT | HuggingFace (`salmanhadli/medical-bpe-16k`) |
+| medical-bpe-16k | 16.000 | 1,375 | 1,577 | 2/20 | MIT | Hugging Face (`salmanhadli/medical-bpe-16k`) |
 | cl100k_base (GPT-4) | 100.000 | 1,460 | 1,173 | 0/20 | no disponible en la información proporcionada | vía `tiktoken` |
 | o200k_base (GPT-4o) | 200.000 | 1,430 | 1,163 | 0/20 | no disponible en la información proporcionada | vía `tiktoken` |
 | general-bpe (control) | 16.000 | 1,747 | 1,208 | 0/20 | no disponible en la información proporcionada | control interno del autor, no publicado como recurso independiente |
@@ -119,11 +119,11 @@ El control `general-bpe` es el más relevante para la comparación técnica, por
 - Falta de validación externa: el recurso acumula 0 descargas y 0 likes en el momento de la consulta, y las cifras proceden únicamente de la evaluación del propio autor.
 - Comparativa incompleta: no hay datos frente a tokenizadores biomédicos consolidados, ni mediciones de velocidad, ni evaluación en notas clínicas reales.
 - Licencia: MIT, sin restricciones documentadas para uso comercial, pero conviene verificar la licencia del corpus de origen y de los datos derivados que se generen.
-- Fecha de publicación registrada: 17 de septiembre de 2026 (última actualización el mismo día), según los metadatos de HuggingFace.
+- Fecha de publicación registrada: 17 de septiembre de 2026 (última actualización el mismo día), según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/salmanhadli/medical-bpe-16k
+- Hugging Face: https://huggingface.co/salmanhadli/medical-bpe-16k
 - Dataset de entrenamiento: https://huggingface.co/datasets/slinusc/PubMedAbstractsSubset
 - Repositorio de entrenamiento y comparación: https://github.com/sourangshupal/tokenization-explainer
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este tokenizador; los resultados obtenidos correspondían a páginas de soporte de Microsoft y no guardan relación con el recurso.

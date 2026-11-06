@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils lite ara jev es un modelo de lenguaje derivado de AhmedReda25300/Ara-JEV, publicado por el usuario anddyworld en HuggingFace. Se trata de un "soup" (mezcla de pesos) que redistribuye los pesos lingüísticos del modelo base en la revisión `de09c96168c0205e4600b5b76094e019c178d4cb`, manteniendo la licencia Apache 2.0 original. El repositorio contiene únicamente los pesos en formato safetensors, con un total de 852.985.920 parámetros (aproximadamente 853 millones) y un tamaño de 1,7 GB.
+Zils lite ara jev es un modelo de lenguaje derivado de AhmedReda25300/Ara-JEV, publicado por el usuario anddyworld en Hugging Face. Se trata de un "soup" (mezcla de pesos) que redistribuye los pesos lingüísticos del modelo base en la revisión `de09c96168c0205e4600b5b76094e019c178d4cb`, manteniendo la licencia Apache 2.0 original. El repositorio contiene únicamente los pesos en formato safetensors, con un total de 852.985.920 parámetros (aproximadamente 853 millones) y un tamaño de 1,7 GB.
 
 El modelo se presenta como una variante ligera ("lite") orientada presumiblemente a árabe, dado el nombre del modelo base (Ara-JEV), aunque la model card no proporciona detalles sobre el proceso de mezcla, los datos de entrenamiento ni las capacidades específicas. La información disponible es mínima: no se documentan benchmarks, idiomas soportados, longitud de contexto ni arquitectura concreta más allá de lo inferible del modelo base.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anddyworld/zils-lite-ara-jev | 852.985.920 | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| AhmedReda25300/Ara-JEV (base) | no disponible | no disponible | apache-2.0 | HuggingFace |
-| Modelos ligeros comparables (p. ej., Qwen2.5-0.5B, Llama-3.2-1B) | 0,5B–1,2B | 32K–128K | Apache 2.0 / Llama | HuggingFace, ampliamente adoptados |
+| anddyworld/zils-lite-ara-jev | 852.985.920 | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| AhmedReda25300/Ara-JEV (base) | no disponible | no disponible | apache-2.0 | Hugging Face |
+| Modelos ligeros comparables (p. ej., Qwen2.5-0.5B, Llama-3.2-1B) | 0,5B–1,2B | 32K–128K | Apache 2.0 / Llama | Hugging Face, ampliamente adoptados |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas; la comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- [HuggingFace: anddyworld/zils-lite-ara-jev](https://huggingface.co/anddyworld/zils-lite-ara-jev)
+- [Hugging Face: anddyworld/zils-lite-ara-jev](https://huggingface.co/anddyworld/zils-lite-ara-jev)
 - [Modelo base: AhmedReda25300/Ara-JEV](https://huggingface.co/AhmedReda25300/Ara-JEV)
 - Revisión del modelo base citada: `de09c96168c0205e4600b5b76094e019c178d4cb` (sin URL directa proporcionada)

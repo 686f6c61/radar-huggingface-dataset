@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Insurance FAQ Retriever es un codificador de frases (sentence encoder) de tamano muy reducido desarrollado por el usuario sraivante y publicado en HuggingFace. Su funcion no es generar texto, sino resolver una tarea de recuperacion semantica: dada una pregunta del usuario sobre seguros de salud y vida en Estados Unidos (Medicare Parts A/B/C/D, Medicare Advantage, PDP, Medigap, mercado ACA, anualidades, IUL y seguros de vida generales), devuelve la respuesta almacenada de la entrada de FAQ mas cercana en un banco de aproximadamente 1.900 preguntas verificadas. Si la similitud coseno no supera el umbral de 0,75 configurado, devuelve una respuesta de respaldo segura que remite a un agente licenciado.
+Insurance FAQ Retriever es un codificador de frases (sentence encoder) de tamano muy reducido desarrollado por el usuario sraivante y publicado en Hugging Face. Su funcion no es generar texto, sino resolver una tarea de recuperacion semantica: dada una pregunta del usuario sobre seguros de salud y vida en Estados Unidos (Medicare Parts A/B/C/D, Medicare Advantage, PDP, Medigap, mercado ACA, anualidades, IUL y seguros de vida generales), devuelve la respuesta almacenada de la entrada de FAQ mas cercana en un banco de aproximadamente 1.900 preguntas verificadas. Si la similitud coseno no supera el umbral de 0,75 configurado, devuelve una respuesta de respaldo segura que remite a un agente licenciado.
 
 El modelo se entrena completamente desde cero, sin pesos preentrenados: es un Transformer encoder pre-norm de 6 capas, dimension 256, 4 cabezas de atencion y FFN de 1024, con mean pooling, que totaliza 6,7 millones de parametros. El tokenizador WordPiece tambien se entrena desde cero sobre el corpus de FAQ, con un vocabulario de 7.716 tokens. El entrenamiento se realizo en una Apple M5 en aproximadamente 26 minutos, lo que da una idea de la escala del proyecto.
 
@@ -70,8 +70,8 @@ Sobre un conjunto manual de 20 preguntas realistas dentro de dominio, el modelo 
 
 | Modelo | Parametros | Contexto | acc@1 (test del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Insurance FAQ Retriever | 6,7M | no disponible | 75,4% | other | HuggingFace |
-| all-MiniLM-L6-v2 | 22,7M | 256 tokens (estandar del modelo) | 62,1% | Apache 2.0 (modelo original) | HuggingFace |
+| Insurance FAQ Retriever | 6,7M | no disponible | 75,4% | other | Hugging Face |
+| all-MiniLM-L6-v2 | 22,7M | 256 tokens (estandar del modelo) | 62,1% | Apache 2.0 (modelo original) | Hugging Face |
 | Otros encoders de recuperacion de dominio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita a all-MiniLM-L6-v2, el unico modelo alternativo evaluado por el autor en la misma tarea e indice. No se dispone de datos de otros recuperadores comparables en la informacion proporcionada.
@@ -89,6 +89,6 @@ La comparativa se limita a all-MiniLM-L6-v2, el unico modelo alternativo evaluad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sraivante/insurance-faq-scratch-retriever
+- Hugging Face: https://huggingface.co/sraivante/insurance-faq-scratch-retriever
 - Modelo de comparacion all-MiniLM-L6-v2: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios adicionales ni demos.

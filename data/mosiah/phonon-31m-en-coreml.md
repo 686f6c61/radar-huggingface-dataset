@@ -93,7 +93,7 @@ Los datos de las filas correspondientes a Kokoro-82M y Piper no provienen de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mosiah/phonon-31m-en-coreml
+- Modelo en Hugging Face: https://huggingface.co/mosiah/phonon-31m-en-coreml
 - Modelo base: https://huggingface.co/gradium/phonon-31m-en
 - Voces: https://huggingface.co/gradium/phonon-voices
 - Repositorio de origen del artefacto Core ML: https://github.com/gradium-ai/xn-ptts

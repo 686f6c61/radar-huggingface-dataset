@@ -24,7 +24,7 @@ Su relevancia es acotada y muy específica: sirve como material de estudio para 
 | Modelo base | meta-llama/Meta-Llama-3-8B-Instruct |
 | Modelo intermedio | cooperleong00/Meta-Llama-3-8B-Instruct-Jailbroken (safetensors) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-26 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-26 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -102,7 +102,7 @@ La comparación relevante es contra el instruct original y contra el derivado en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Meta-Llama-3-8B-Instruct-Jailbroken-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Meta-Llama-3-8B-Instruct-Jailbroken-GGUF
 - Modelo intermedio en safetensors: https://huggingface.co/cooperleong00/Meta-Llama-3-8B-Instruct-Jailbroken
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Cuantizaciones GGUF del instruct estándar (referencia comparativa): https://huggingface.co/MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF

@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento comparado con otros modelos en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/playstonex/Xiaomi-OCR-0-4bit-mlx
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/playstonex/Xiaomi-OCR-0-4bit-mlx
 - Modelo base referenciado en la model card: https://huggingface.co/SeerRay-Lab/Xiaomi-OCR-0
-- Modelo base indicado en los metadatos de HuggingFace: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
+- Modelo base indicado en los metadatos de Hugging Face: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
 - MLX (framework de Apple): https://github.com/ml-explore/mlx
 - mlx-vlm: no disponible en la información proporcionada
 - mlx-swift-lm: no disponible en la información proporcionada

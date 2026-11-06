@@ -2,17 +2,17 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-f460d382-9805-5e51-94da-ad41a6f8e14d-5Expd234e8fa121bce6f` es un modelo de lenguaje publicado por el usuario `cwaud` en HuggingFace. Por el identificador y la estructura del nombre, se trata de un artefacto derivado de un experimento automatizado de tipo torneo (comparacion o fusion de variantes), no de un modelo base publicado por un laboratorio con documentacion formal. El repositorio se creo y se actualizo el 8 de octubre de 2026, cuenta con 13 descargas y ninguna marca de "me gusta", lo que sugiere un uso experimental y de bajo perfil.
+El modelo identificado como `cwaud/tournament-exp-s1-f460d382-9805-5e51-94da-ad41a6f8e14d-5Expd234e8fa121bce6f` es un modelo de lenguaje publicado por el usuario `cwaud` en Hugging Face. Por el identificador y la estructura del nombre, se trata de un artefacto derivado de un experimento automatizado de tipo torneo (comparacion o fusion de variantes), no de un modelo base publicado por un laboratorio con documentacion formal. El repositorio se creo y se actualizo el 8 de octubre de 2026, cuenta con 13 descargas y ninguna marca de "me gusta", lo que sugiere un uso experimental y de bajo perfil.
 
-El tag `llama` de HuggingFace indica que la arquitectura subyacente pertenece a la familia Llama, y el numero real de parametros reportado en los pesos (3.933.637.120, es decir, aproximadamente 3,93 mil millones) lo situa en la franja de los modelos densos de ~4B. El tamano del repositorio, 7,9 GB, es coherente con pesos almacenados en precision de 16 bits (bf16 o fp16), sin cuantizaciones adicionales empaquetadas.
+El tag `llama` de Hugging Face indica que la arquitectura subyacente pertenece a la familia Llama, y el numero real de parametros reportado en los pesos (3.933.637.120, es decir, aproximadamente 3,93 mil millones) lo situa en la franja de los modelos densos de ~4B. El tamano del repositorio, 7,9 GB, es coherente con pesos almacenados en precision de 16 bits (bf16 o fp16), sin cuantizaciones adicionales empaquetadas.
 
-No se dispone de informacion sobre el proceso de entrenamiento, la composicion del dataset, la licencia ni los idiomas soportados. Cualquier evaluacion practica requiere inspeccionar directamente los ficheros del repositorio y ejecutar pruebas propias, ya que la ficha de HuggingFace no aporta una model card descriptiva.
+No se dispone de informacion sobre el proceso de entrenamiento, la composicion del dataset, la licencia ni los idiomas soportados. Cualquier evaluacion practica requiere inspeccionar directamente los ficheros del repositorio y ejecutar pruebas propias, ya que la ficha de Hugging Face no aporta una model card descriptiva.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Llama (familia transformer decoder-only, segun tag de HuggingFace) |
+| Arquitectura | Llama (familia transformer decoder-only, segun tag de Hugging Face) |
 | Parametros totales | 3.933.637.120 (aproximadamente 3,93 mil millones) |
 | Parametros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1-...-5Expd234e8fa121bce6f | 3,93B | no disponible | no disponible | HuggingFace, 13 descargas |
-| Llama 3.2 3B (Meta) | 3,21B | 128k tokens | Llama 3.2 Community License | HuggingFace, ampliamente distribuido |
-| Qwen2.5 3B (Alibaba) | 3,09B | 32k tokens (128k en variantes) | Apache 2.0 (segun variante) | HuggingFace, ampliamente distribuido |
-| Phi-3.5-mini (Microsoft) | 3,8B | 128k tokens | MIT | HuggingFace, ampliamente distribuido |
+| cwaud/tournament-exp-s1-...-5Expd234e8fa121bce6f | 3,93B | no disponible | no disponible | Hugging Face, 13 descargas |
+| Llama 3.2 3B (Meta) | 3,21B | 128k tokens | Llama 3.2 Community License | Hugging Face, ampliamente distribuido |
+| Qwen2.5 3B (Alibaba) | 3,09B | 32k tokens (128k en variantes) | Apache 2.0 (segun variante) | Hugging Face, ampliamente distribuido |
+| Phi-3.5-mini (Microsoft) | 3,8B | 128k tokens | MIT | Hugging Face, ampliamente distribuido |
 
 La comparacion con los modelos anteriores es puramente estructural (franja de parametros similar). No hay datos de rendimiento del modelo evaluado que permitan establecer una comparacion funcional con alternativas establecidas.
 
@@ -86,9 +86,9 @@ La comparacion con los modelos anteriores es puramente estructural (franja de pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-f460d382-9805-5e51-94da-ad41a6f8e14d-5Expd234e8fa121bce6f
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-f460d382-9805-5e51-94da-ad41a6f8e14d-5Expd234e8fa121bce6f
 - Paper asociado: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/cwaud
+- Perfil del autor en Hugging Face: https://huggingface.co/cwaud

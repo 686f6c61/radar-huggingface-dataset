@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arshedmiya7/deepseek` es un repositorio alojado en HuggingFace por el usuario arshedmiya7 que, a fecha de la informacion disponible, no contiene model card, no declara pipeline de inferencia, no registra descargas ni interacciones y no incluye ningun dato sobre arquitectura, tamano, contexto o datos de entrenamiento. El unico contenido verificable es el frontmatter YAML de la model card, que declara `license: llama4`, y la etiqueta de region `us`. El repositorio se creo y se actualizo en el mismo instante (2026-10-26T15:48:45Z), lo que sugiere una subida unica sin mantenimiento posterior.
+`arshedmiya7/deepseek` es un repositorio alojado en Hugging Face por el usuario arshedmiya7 que, a fecha de la informacion disponible, no contiene model card, no declara pipeline de inferencia, no registra descargas ni interacciones y no incluye ningun dato sobre arquitectura, tamano, contexto o datos de entrenamiento. El unico contenido verificable es el frontmatter YAML de la model card, que declara `license: llama4`, y la etiqueta de region `us`. El repositorio se creo y se actualizo en el mismo instante (2026-10-26T15:48:45Z), lo que sugiere una subida unica sin mantenimiento posterior.
 
 El nombre del repositorio incluye el termino "deepseek", pero no existe en la informacion proporcionada ninguna evidencia que lo vincule con DeepSeek (empresa o familia de modelos), ni con sus pesos, tokenizador o configuracion. Tampoco hay relacion aparente entre el nombre y la licencia declarada: Llama 4 es una familia de modelos de Meta, mientras que DeepSeek es una familia independiente con licencias propias. Esta incoherencia es la unica senal tecnica disponible y debe tratarse como advertencia, no como especificacion.
 
@@ -48,7 +48,7 @@ No es posible recomendar casos de uso concretos sin conocer arquitectura, tamano
 - Auditoria de licencias: comprobar si la licencia Llama 4 declarada es compatible con el uso previsto, dado que el nombre del repositorio sugiere otra familia de modelos y no hay documentacion que aclare el origen de los pesos.
 - Analisis de provenance en un registro interno de modelos: registrar el repositorio como artefacto no verificado y establecer un flujo de aprobacion manual antes de cualquier descarga.
 - Docencia sobre evaluacion de modelos: utilizar el caso como ejemplo de por que una model card vacia impide estimar requisitos de hardware, contexto o calidad.
-- Pruebas de robustez de herramientas de descubrimiento (scrapers de HuggingFace): verificar que el parser maneja repositorios con frontmatter parcial, campos de idioma vacios y pipelines nulos sin romperse.
+- Pruebas de robustez de herramientas de descubrimiento (scrapers de Hugging Face): verificar que el parser maneja repositorios con frontmatter parcial, campos de idioma vacios y pipelines nulos sin romperse.
 - Evaluacion comparativa de riesgos de cadena de suministro: incorporar el repositorio a un analisis de riesgos de dependencias de terceros en el que se puntue la ausencia de documentacion como factor de riesgo alto.
 
 Cualquier uso de inferencia real queda condicionado a que el repositorio contenga pesos funcionales y a una revision tecnica y legal independiente.
@@ -94,7 +94,7 @@ El unico eje de comparacion verificable es documental: frente a repositorios con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arshedmiya7/deepseek
+- Repositorio en Hugging Face: https://huggingface.co/arshedmiya7/deepseek
 - Model card del autor: no disponible (vacia salvo el frontmatter de licencia)
 - Paper o informe tecnico: no disponible
 - Blog o anuncio oficial: no disponible

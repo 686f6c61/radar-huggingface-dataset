@@ -94,5 +94,5 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MIHMahmudEli/david-net-av-v2
+- Hugging Face: https://huggingface.co/MIHMahmudEli/david-net-av-v2
 - Repositorio de codigo fuente: https://github.com/MIHMahmudEli/david-net-av-v2

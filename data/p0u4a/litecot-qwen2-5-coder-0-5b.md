@@ -79,7 +79,7 @@ Frente a su modelo base, este fine-tuning añade comportamiento de razonamiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/P0u4a/LiteCoT-Qwen2.5-Coder-0.5B
+- Modelo en Hugging Face: https://huggingface.co/P0u4a/LiteCoT-Qwen2.5-Coder-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SmallDoge/SmallThoughts
 - Repositorio LiteCoT (receta original): https://github.com/evanwu1125/litecot

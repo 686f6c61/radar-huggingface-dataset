@@ -74,7 +74,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jarrelscy/GLM-5.3-NVFP4-AQLM-hybrid
+- Modelo en Hugging Face: https://huggingface.co/jarrelscy/GLM-5.3-NVFP4-AQLM-hybrid
 - Modelo predecesor (GLM-5.2 híbrido): https://huggingface.co/jarrelscy/GLM-5.2-NVFP4-AQLM-hybrid
 - Repositorio de vLLM para GLM-5.2 híbrido: https://github.com/jarrelscy/vllm-glm52-sm120
 - Documentación de GLM-5.3 en OpenLM.ai: https://openlm.ai/glm-5.5/

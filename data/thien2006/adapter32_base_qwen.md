@@ -4,7 +4,7 @@
 
 `thien2006/adapter32_base_qwen` es un adaptador LoRA (biblioteca PEFT) publicado por el usuario thien2006 sobre el modelo base `Qwen/Qwen3-VL-8B-Thinking`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de aproximadamente 0,4 GB que debe combinarse con el modelo base para poder ejecutarse. El pipeline declarado es `text-generation` y el etiquetado incluye `lora`, `transformers`, `safetensors` y `base_model:adapter:Qwen/Qwen3-VL-8B-Thinking`, lo que confirma que el punto de partida es un modelo multimodal (vision-lenguaje) de la familia Qwen3 con modo de razonamiento explicito.
 
-La relevancia de esta publicacion es limitada y hay que ser honesto al respecto: el repositorio registra 0 descargas y 0 "likes", la model card es la plantilla por defecto de HuggingFace sin rellenar (todos los campos tecnicos aparecen como "[More Information Needed]") y no se documenta ni el dataset de entrenamiento, ni los hiperparametros, ni la tarea concreta para la que se ajusto el adaptador. Tampoco se declara licencia ni idiomas soportados.
+La relevancia de esta publicacion es limitada y hay que ser honesto al respecto: el repositorio registra 0 descargas y 0 "likes", la model card es la plantilla por defecto de Hugging Face sin rellenar (todos los campos tecnicos aparecen como "[More Information Needed]") y no se documenta ni el dataset de entrenamiento, ni los hiperparametros, ni la tarea concreta para la que se ajusto el adaptador. Tampoco se declara licencia ni idiomas soportados.
 
 Por tanto, esta ficha describe lo que se puede verificar estructuralmente (tipo de artefacto, modelo base, tamano del repositorio, framework) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de calidad, comportamiento o idoneidad para produccion requiere probar el adaptador contra el modelo base, ya que no existe evidencia publicada de que aporte mejoras en ninguna tarea concreta.
 
@@ -31,7 +31,7 @@ Por tanto, esta ficha describe lo que se puede verificar estructuralmente (tipo 
 
 El artefacto es un adaptador de bajo rango (LoRA) gestionado con PEFT 0.21.2 y almacenado en safetensors, segun los tags del repositorio. Esto implica que no contiene los pesos completos del transformer, sino matrices de bajo rango que se inyectan en capas del modelo base `Qwen/Qwen3-VL-8B-Thinking`. El nombre del repositorio ("adapter32") sugiere un rango de adaptacion de 32, pero la model card no lo confirma, por lo que debe considerarse una hipotesis sin verificar. El tamano del repositorio (0,4 GB) es coherente con un adaptador de rango moderado sobre un modelo de 8B.
 
-No hay informacion alguna sobre el procedimiento de entrenamiento: la model card deja vacios los apartados de datos de entrenamiento, preprocesado, hiperparametros (regimen de precision fp32/fp16/bf16/fp8), tiempos, hardware utilizado y objetivo de entrenamiento. Tampoco se documenta si hubo RLHF, DPO, SFT supervisado o aprendizaje por destilacion, ni se especifica la tarea o el dominio para el que se ajusto el adaptador. El unico enlace de tipo paper presente (`arxiv:1910.09700`) no es una referencia del modelo, sino la cita de Lacoste et al. sobre calculo de emisiones de carbono que viene por defecto en la plantilla de model card de HuggingFace.
+No hay informacion alguna sobre el procedimiento de entrenamiento: la model card deja vacios los apartados de datos de entrenamiento, preprocesado, hiperparametros (regimen de precision fp32/fp16/bf16/fp8), tiempos, hardware utilizado y objetivo de entrenamiento. Tampoco se documenta si hubo RLHF, DPO, SFT supervisado o aprendizaje por destilacion, ni se especifica la tarea o el dominio para el que se ajusto el adaptador. El unico enlace de tipo paper presente (`arxiv:1910.09700`) no es una referencia del modelo, sino la cita de Lacoste et al. sobre calculo de emisiones de carbono que viene por defecto en la plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ Las cifras siguientes son estimaciones basadas en el tamano nominal de 8B del mo
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | thien2006/adapter32_base_qwen | Adaptador LoRA (PEFT) | No disponible (base de 8B) | No disponible | No disponible | Repositorio publico, 0 descargas |
-| Qwen/Qwen3-VL-8B-Thinking | Modelo completo multimodal | 8B (nominal) | No disponible en esta ficha | No disponible en esta ficha | Modelo base en HuggingFace |
+| Qwen/Qwen3-VL-8B-Thinking | Modelo completo multimodal | 8B (nominal) | No disponible en esta ficha | No disponible en esta ficha | Modelo base en Hugging Face |
 | Otros adaptadores LoRA sobre Qwen3-VL publicos | Adaptador LoRA | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de contexto de otros modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento. La unica comparacion objetivable es estructural: este repositorio contiene exclusivamente los pesos del adaptador, sin el modelo base, por lo que su uso aislado no es viable.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de contexto de otros modelos comparables
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/thien2006/adapter32_base_qwen
+- Adaptador en Hugging Face: https://huggingface.co/thien2006/adapter32_base_qwen
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking
 - Referencia citada en los tags (calculo de emisiones de carbono, Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact

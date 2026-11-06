@@ -4,7 +4,7 @@
 
 Black-Onyx-12B-GGUF es una cuantización en formato GGUF del modelo google/gemma-4-12B-it, ajustado por el usuario Clownstein para tareas de ciberseguridad. El modelo se enmarca dentro del proyecto Black Onyx, un workspace de inteligencia de amenazas (TIP-first) orientado a equipos de blue team, que integra un pipeline de detección de anomalías basado en Kafka y Postgres, gestión de incidentes, caza de amenazas y automatización SOAR. Esta versión GGUF permite ejecutar el modelo en hardware local o en entornos con recursos limitados, sin depender de APIs externas.
 
-El ajuste se centra en generación de código seguro, detección de vulnerabilidades, análisis de inteligencia de amenazas y conversación técnica. Con aproximadamente 11.900 millones de parámetros, el modelo ofrece un equilibrio entre capacidad y requisitos de hardware, siendo adecuado para estaciones de trabajo con GPUs de consumo medio. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de licencia de Gemma en HuggingFace antes de su descarga.
+El ajuste se centra en generación de código seguro, detección de vulnerabilidades, análisis de inteligencia de amenazas y conversación técnica. Con aproximadamente 11.900 millones de parámetros, el modelo ofrece un equilibrio entre capacidad y requisitos de hardware, siendo adecuado para estaciones de trabajo con GPUs de consumo medio. El acceso al repositorio está restringido (gated), por lo que es necesario aceptar las condiciones de licencia de Gemma en Hugging Face antes de su descarga.
 
 La relevancia actual radica en la creciente demanda de modelos de lenguaje especializados en seguridad que puedan desplegarse de forma local, preservando la confidencialidad de los datos de telemetría y evidencia. Black-Onyx-12B-GGUF cubre ese nicho, aunque carece de documentación pública detallada sobre su proceso de entrenamiento y rendimiento.
 
@@ -65,7 +65,7 @@ No se dispone de datos comparativos con otros modelos de ciberseguridad de tama�
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar las condiciones de licencia de Gemma en HuggingFace. Esto puede dificultar su adopción en entornos corporativos con políticas de aprobación lentas.
+- Acceso restringido: el repositorio es gated, por lo que es necesario aceptar las condiciones de licencia de Gemma en Hugging Face. Esto puede dificultar su adopción en entornos corporativos con políticas de aprobación lentas.
 - Licencia Gemma: la licencia de Google Gemma impone restricciones de uso comercial, incluyendo la obligación de atribución y la prohibición de usos de alto riesgo. Es imprescindible revisar los términos completos antes de desplegar el modelo en producción.
 - Sin documentación de entrenamiento: no se ha publicado información sobre el dataset de ajuste, lo que impide evaluar posibles sesgos o lagunas en el conocimiento de ciberseguridad.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar análisis de vulnerabilidades o recomendaciones de seguridad incorrectas. En un contexto de seguridad, esto puede llevar a decisiones erróneas. Siempre debe supervisarse la salida del modelo.
@@ -75,6 +75,6 @@ No se dispone de datos comparativos con otros modelos de ciberseguridad de tama�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Clownstein/Black-Onyx-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Clownstein/Black-Onyx-12B-GGUF
 - Repositorio GitHub del proyecto Black Onyx: https://github.com/Clownstein/Black-Onyx
 - Documentación de API del proyecto: https://github.com/Clownstein/Black-Onyx/blob/main/docs/API.md

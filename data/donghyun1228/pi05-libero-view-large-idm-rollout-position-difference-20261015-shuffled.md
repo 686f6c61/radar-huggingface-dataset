@@ -80,9 +80,9 @@ Advertencias textuales de la model card sobre estos numeros: la pantalla de diag
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05-libero-view-large-idm-rollout-position-difference-20261015-shuffled) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas y 0 likes | Control con etiquetas barajadas; 13/24 en la pantalla de 8 tareas |
-| Variante aligned del mismo experimento (mismo autor) | No disponible | No disponible | No disponible | HuggingFace | Etiquetas alineadas en lugar de barajadas; 10/24 en la misma pantalla |
-| pi05-libero-view-large-idm-coverage-20261015-continue (mismo autor) | No disponible | No disponible | No disponible | HuggingFace | Continuacion de 200 updates desde la linea base raw999 con Adam/EMA restaurados; figura como continue_old_idm con 11/24 |
+| Este checkpoint (pi05-libero-view-large-idm-rollout-position-difference-20261015-shuffled) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas y 0 likes | Control con etiquetas barajadas; 13/24 en la pantalla de 8 tareas |
+| Variante aligned del mismo experimento (mismo autor) | No disponible | No disponible | No disponible | Hugging Face | Etiquetas alineadas en lugar de barajadas; 10/24 en la misma pantalla |
+| pi05-libero-view-large-idm-coverage-20261015-continue (mismo autor) | No disponible | No disponible | No disponible | Hugging Face | Continuacion de 200 updates desde la linea base raw999 con Adam/EMA restaurados; figura como continue_old_idm con 11/24 |
 | pi05_libero_base (LeRobot) | No disponible | No disponible | No disponible | ModelScope | Modelo VLA π₀.₅ de Physical Intelligence, con generalizacion en mundo abierto y coentrenamiento sobre demostraciones y datos multimodales; solo soporta la cabeza de accion flow-matching |
 | pi05_libero_finetuned (LeRobot) | No disponible | No disponible | No disponible | ModelScope | Checkpoint entrenado y evaluado en tareas LIBERO |
 
@@ -103,7 +103,7 @@ Advertencias textuales de la model card sobre estos numeros: la pantalla de diag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-rollout-position-difference-20261015-shuffled
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-rollout-position-difference-20261015-shuffled
 - Codigo de entrenamiento (commit 8e18877e): https://github.com/Donghyun1228/vla_adaptation
 - Dataset citado en la model card: Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015, revision 34225b034da7291af2b6d7f44e3646ff52ab60f5. URL construida a partir del identificador, no verificada en la busqueda: https://huggingface.co/datasets/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015
 - Checkpoint hermano (cobertura IDM, continuacion): https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-coverage-20261015-continue

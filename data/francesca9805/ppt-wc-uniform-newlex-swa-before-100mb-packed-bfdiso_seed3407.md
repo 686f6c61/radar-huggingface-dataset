@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, un transformer decoder-only de la familia GPT-2 con 86.508.288 parametros (unos 86,5 millones). Lo publica el usuario de HuggingFace `francesca9805`, vinculado a un proyecto de investigacion sobre tokenizadores (el enlace de seguimiento apunta al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`), y ha sido entrenado con la libreria TRL de HuggingFace mediante SFT (supervised fine-tuning).
+El modelo `francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, un transformer decoder-only de la familia GPT-2 con 86.508.288 parametros (unos 86,5 millones). Lo publica el usuario de Hugging Face `francesca9805`, vinculado a un proyecto de investigacion sobre tokenizadores (el enlace de seguimiento apunta al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`), y ha sido entrenado con la libreria TRL de Hugging Face mediante SFT (supervised fine-tuning).
 
 Por su tamano y su naturaleza experimental, no es un modelo orientado a produccion generalista, sino una pieza mas dentro de una serie de experimentos reproducibles con semillas fijas (el nombre incluye `seed3407`, y en el buscador aparecen variantes como `seed10`) y con etiquetas que sugieren comparaciones de tokenizadores (`newlex`), atencion de ventana deslizante (`swa`) y estados "before"/"after". La model card es minima: no documenta dataset, hiperparametros, idiomas ni licencia.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-...-seed3407` | 86,5 M | no disponible | sin benchmarks | no disponible | HuggingFace (0 descargas, 0 likes) |
-| `goldfish-models/eng_latn_100mb` (base) | no disponible en la busqueda | no disponible | sin benchmarks en la busqueda | no disponible | HuggingFace |
-| `francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfd_seed10` (variante) | no disponible | no disponible | sin benchmarks | no disponible | HuggingFace, FriendliAI |
-| GPT-2 small (referencia de familia) | 124 M (dato publico ampliamente conocido, no verificado en la busqueda) | 1024 tokens (referencia de familia) | benchmarks publicos historicos | MIT (referencia de familia) | HuggingFace, multiples runners |
+| `francesca9805/ppt-wc-...-seed3407` | 86,5 M | no disponible | sin benchmarks | no disponible | Hugging Face (0 descargas, 0 likes) |
+| `goldfish-models/eng_latn_100mb` (base) | no disponible en la busqueda | no disponible | sin benchmarks en la busqueda | no disponible | Hugging Face |
+| `francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfd_seed10` (variante) | no disponible | no disponible | sin benchmarks | no disponible | Hugging Face, FriendliAI |
+| GPT-2 small (referencia de familia) | 124 M (dato publico ampliamente conocido, no verificado en la busqueda) | 1024 tokens (referencia de familia) | benchmarks publicos historicos | MIT (referencia de familia) | Hugging Face, multiples runners |
 
 No se dispone de datos de rendimiento ni de contexto para las alternativas dentro de la informacion proporcionada; la comparativa se limita a parametros y disponibilidad, y varias celdas quedan como no disponibles.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de contexto para las alternativas dentr
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed3407
+- Hugging Face (modelo): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-swa-before-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Seguimiento del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/1xfro6zf
 - Repositorio TRL: https://github.com/huggingface/trl

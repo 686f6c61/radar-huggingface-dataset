@@ -99,7 +99,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guqinlizhixian/jzpocr
+- Modelo en Hugging Face: https://huggingface.co/guqinlizhixian/jzpocr
 - Subdirectorio de mano derecha (sistema autonomo jzpOCR): https://huggingface.co/guqinlizhixian/jzpocr/tree/main/atom-right
 - Subdirectorio de mano derecha (generacion anterior, normalizacion canonical): https://huggingface.co/guqinlizhixian/jzpocr/tree/main/atom-right-f12
 - Subdirectorio de mano izquierda: https://huggingface.co/guqinlizhixian/jzpocr/tree/main/lc-parent-b

@@ -76,10 +76,10 @@ Estimaciones calculadas a partir del recuento real de parámetros (751.632.384).
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL | 751.632.384 (0,75 B) | No especificado en la model card (base: 32.768 tokens) | apache-2.0 | HuggingFace, safetensors | Ajuste GRPO sobre UltraData-Math; sin benchmarks publicados |
-| Qwen/Qwen3-0.6B (modelo base) | 0,6 B sin embeddings; ~0,75 B con embeddings | 32.768 tokens | apache-2.0 | HuggingFace, safetensors y GGUF | Modelo oficial, con modo thinking/no-thinking y soporte multilingüe amplio |
-| Qwen/Qwen2.5-0.5B-Instruct | ~0,49 B | 32.768 tokens | apache-2.0 | HuggingFace, safetensors y GGUF | Generación anterior, muy desplegado en entornos de recursos limitados |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors y GGUF | Mayor contexto, pero licencia con restricciones adicionales frente a Apache 2.0 |
+| Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL | 751.632.384 (0,75 B) | No especificado en la model card (base: 32.768 tokens) | apache-2.0 | Hugging Face, safetensors | Ajuste GRPO sobre UltraData-Math; sin benchmarks publicados |
+| Qwen/Qwen3-0.6B (modelo base) | 0,6 B sin embeddings; ~0,75 B con embeddings | 32.768 tokens | apache-2.0 | Hugging Face, safetensors y GGUF | Modelo oficial, con modo thinking/no-thinking y soporte multilingüe amplio |
+| Qwen/Qwen2.5-0.5B-Instruct | ~0,49 B | 32.768 tokens | apache-2.0 | Hugging Face, safetensors y GGUF | Generación anterior, muy desplegado en entornos de recursos limitados |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF | Mayor contexto, pero licencia con restricciones adicionales frente a Apache 2.0 |
 
 Los datos de los modelos comparativos proceden de sus respectivas model cards y deben verificarse antes de tomar decisiones de producción. No existe información de benchmarks que permita comparar el rendimiento real de Qwen3-0.6B-Base-RL frente a estas alternativas.
 
@@ -99,7 +99,7 @@ Los datos de los modelos comparativos proceden de sus respectivas model cards y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL
+- Modelo en Hugging Face: https://huggingface.co/Goekdeniz-Guelmez/Qwen3-0.6B-Base-RL
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/openbmb/UltraData-Math
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nexgen2/nexgen-flash-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `nexgen2`. Se trata de un ajuste fino (fine-tuning) basado en el modelo base `Qwen/Qwen3.5-9B`, y se distribuye mediante la librería PEFT (Parameter-Efficient Fine-Tuning). El repositorio tiene un tamaño de 0.1 GB, lo que confirma que contiene únicamente los pesos del adaptador y no el modelo completo.
+`nexgen2/nexgen-flash-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `nexgen2`. Se trata de un ajuste fino (fine-tuning) basado en el modelo base `Qwen/Qwen3.5-9B`, y se distribuye mediante la librería PEFT (Parameter-Efficient Fine-Tuning). El repositorio tiene un tamaño de 0.1 GB, lo que confirma que contiene únicamente los pesos del adaptador y no el modelo completo.
 
 No se dispone de información pública sobre el propósito específico del adaptador, el conjunto de datos de entrenamiento ni el procedimiento de ajuste. La model card del autor está vacía, con la mayor parte de los campos marcados como "[More Information Needed]". Por tanto, la ficha debe interpretarse como un recurso técnico con documentación mínima, adecuado para experimentación controlada pero no para su uso en producción sin evaluación previa.
 
@@ -77,5 +77,5 @@ No se dispone de datos de comparación. Sin información sobre el rendimiento, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nexgen2/nexgen-flash-lora
+- Hugging Face: https://huggingface.co/nexgen2/nexgen-flash-lora
 - Modelo base mencionado: https://huggingface.co/Qwen/Qwen3.5-9B (enlace no verificado, solo mencionado en las etiquetas)

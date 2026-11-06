@@ -36,7 +36,7 @@ La arquitectura Albef se basa en un transformer multimodal que alinea las repres
 
 - **Investigación académica en retrieval multimodal**: el modelo sirve como base para implementar y estudiar la arquitectura Albef, permitiendo a investigadores reproducir experimentos y comparar con otras variantes.
 - **Pruebas de integración de pipelines de entrenamiento**: el checkpoint de inicialización permite verificar que el código de entrenamiento y evaluación funciona antes de lanzar un entrenamiento completo.
-- **Desarrollo de adaptadores para HuggingFace**: dado que la implementación es personalizada, se puede usar para escribir un adaptador que permita cargar el modelo con APIs genéricas.
+- **Desarrollo de adaptadores para Hugging Face**: dado que la implementación es personalizada, se puede usar para escribir un adaptador que permita cargar el modelo con APIs genéricas.
 - **Experimentos de ablación de componentes**: la configuración modular (atención dilatada, fusión por tensor, normalización) permite estudiar el impacto de cada componente en tareas de retrieval.
 - **Generación de baselines para Flickr30k**: el autor sugiere evaluar en Flickr30k con al menos tres semillas y un baseline de capacidad equivalente; este modelo puede servir como punto de partida para ese baseline.
 - **Educación y aprendizaje de arquitecturas multimodales**: el código es legible y documentado, útil para estudiantes que quieran entender cómo se implementa Albef desde cero.
@@ -64,10 +64,10 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - **Sesgos y robustez**: el autor advierte que el checkpoint no ha sido auditado para robustez, equidad ni transferencia de dominio.
 - **Riesgo de alucinación**: no aplica, ya que el modelo no genera texto; pero si se entrenara, habría que evaluar este riesgo.
 - **Licencia**: BSD-3-Clause permite uso comercial, pero el autor recuerda revisar los términos de los datasets externos si se usan con este código.
-- **Integración limitada**: al ser una implementación personalizada, no funciona con las APIs genéricas de HuggingFace sin un adaptador explícito.
+- **Integración limitada**: al ser una implementación personalizada, no funciona con las APIs genéricas de Hugging Face sin un adaptador explícito.
 - **Sin soporte de producción**: no es adecuado para despliegues reales sin un entrenamiento completo y una evaluación rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: Ssantosnicole/retrieval-best](https://huggingface.co/Ssantosnicole/retrieval-best)
+- [Hugging Face: Ssantosnicole/retrieval-best](https://huggingface.co/Ssantosnicole/retrieval-best)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BlackLove es un repositorio de modelo alojado en HuggingFace bajo el identificador `zoarag/BlackLove`, publicado por el usuario zoarag. Se trata de un artefacto de gran tamano (23,2 GB en el repositorio) cuyo acceso esta restringido mediante el sistema gated de HuggingFace, lo que obliga a aceptar condiciones adicionales antes de poder descargar los pesos. No se ha publicado informacion sobre la arquitectura, el pipeline de inferencia ni la licencia en los metadatos disponibles.
+BlackLove es un repositorio de modelo alojado en Hugging Face bajo el identificador `zoarag/BlackLove`, publicado por el usuario zoarag. Se trata de un artefacto de gran tamano (23,2 GB en el repositorio) cuyo acceso esta restringido mediante el sistema gated de Hugging Face, lo que obliga a aceptar condiciones adicionales antes de poder descargar los pesos. No se ha publicado informacion sobre la arquitectura, el pipeline de inferencia ni la licencia en los metadatos disponibles.
 
 La ficha se ha elaborado exclusivamente a partir de los metadatos publicos del repositorio. No hay model card, paper, blog ni documentacion tecnica asociada que permita confirmar parametros, contexto, datos de entrenamiento o capacidades reales del modelo. Cualquier dato no presente en dicha informacion se marca como no disponible, sin estimaciones especulativas.
 
@@ -68,7 +68,7 @@ No disponible. No se conocen modelos comparables porque se desconocen la arquite
 
 - Ausencia total de model card: no hay informacion sobre arquitectura, entrenamiento, datos ni evaluacion.
 - Licencia no especificada: no puede determinarse si el uso comercial esta permitido; en la practica, esto impide su adopcion en entornos profesionales.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion y puede limitar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion y puede limitar la reproducibilidad.
 - Riesgo de sesgos y alucinaciones: desconocido, pero inherente a cualquier modelo de lenguaje sin evaluacion publica.
 - Idiomas soportados no confirmados: no puede garantizarse un rendimiento adecuado en castellano ni en otros idiomas.
 - Repositorio con muy poca traccion (0 descargas, 1 like): no hay evidencia de uso o validacion por parte de la comunidad.
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables porque se desconocen la arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zoarag/BlackLove
+- Repositorio en Hugging Face: https://huggingface.co/zoarag/BlackLove
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-td5-query-classifier es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) de distilbert-base-uncased, publicado por el usuario akrichetina en HuggingFace. Se trata de un clasificador encoder-only de 66.955.010 parámetros (aproximadamente 67 millones), distribuido en formato safetensors con licencia Apache 2.0 y etiquetado con el pipeline text-classification. El repositorio ocupa 0,5 GB y la model card indica que fue generado automáticamente por la librería Trainer de transformers.
+td5-query-classifier es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) de distilbert-base-uncased, publicado por el usuario akrichetina en Hugging Face. Se trata de un clasificador encoder-only de 66.955.010 parámetros (aproximadamente 67 millones), distribuido en formato safetensors con licencia Apache 2.0 y etiquetado con el pipeline text-classification. El repositorio ocupa 0,5 GB y la model card indica que fue generado automáticamente por la librería Trainer de transformers.
 
 El modelo resuelve una tarea de clasificación de consultas (query classification), presumiblemente la asignación de una categoría o intención a una consulta de entrada, aunque la model card no documenta el conjunto de etiquetas ni el dominio concreto. Su relevancia práctica radica en el tamaño reducido: al derivar de DistilBERT, es un modelo de 6 capas y ~67 M de parámetros que puede ejecutarse en CPU con latencias de milisegundos, lo que lo hace apto como componente de enrutamiento o prefiltrado dentro de arquitecturas mayores.
 
-El autor declara una accuracy de 1.0 y una pérdida de validación de 0,1579 sobre un conjunto de evaluación no especificado. Estos valores, junto con la ausencia de documentación sobre el dataset de entrenamiento (la model card indica literalmente "None dataset"), limitan seriamente la interpretabilidad de los resultados. El impacto en HuggingFace es nulo en el momento de la consulta (0 descargas, 0 likes), por lo que debe considerarse un experimento académico o de curso (el prefijo "td5" sugiere un trabajo práctico) más que un modelo listo para producción.
+El autor declara una accuracy de 1.0 y una pérdida de validación de 0,1579 sobre un conjunto de evaluación no especificado. Estos valores, junto con la ausencia de documentación sobre el dataset de entrenamiento (la model card indica literalmente "None dataset"), limitan seriamente la interpretabilidad de los resultados. El impacto en Hugging Face es nulo en el momento de la consulta (0 descargas, 0 likes), por lo que debe considerarse un experimento académico o de curso (el prefijo "td5" sugiere un trabajo práctico) más que un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -73,11 +73,11 @@ La accuracy de 1.0 constante desde la primera época, junto con la ausencia de d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| td5-query-classifier | 66,96 M | 512 tokens | Apache 2.0 | HuggingFace (0 descargas) | Accuracy 1.0 declarada por el autor sobre un conjunto no especificado |
-| distilbert-base-uncased | 66,36 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Métricas públicas en GLUE y SQuAD |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace | Métricas públicas en GLUE y SQuAD |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace | Métricas públicas en GLUE |
-| deberta-v3-base | 86 M | 512 tokens | MIT | HuggingFace | Métricas públicas en GLUE y SuperGLUE |
+| td5-query-classifier | 66,96 M | 512 tokens | Apache 2.0 | Hugging Face (0 descargas) | Accuracy 1.0 declarada por el autor sobre un conjunto no especificado |
+| distilbert-base-uncased | 66,36 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Métricas públicas en GLUE y SQuAD |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face | Métricas públicas en GLUE y SQuAD |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face | Métricas públicas en GLUE |
+| deberta-v3-base | 86 M | 512 tokens | MIT | Hugging Face | Métricas públicas en GLUE y SuperGLUE |
 
 No se dispone de comparaciones directas de rendimiento en la tarea concreta de clasificación de consultas, ya que ni el autor ni los modelos alternativos publican resultados sobre ese conjunto de datos. La comparación debe entenderse por tanto como una referencia de tamaño, licencia y disponibilidad, no de calidad.
 
@@ -97,7 +97,7 @@ No se dispone de comparaciones directas de rendimiento en la tarea concreta de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akrichetina/td5-query-classifier
+- Modelo en Hugging Face: https://huggingface.co/akrichetina/td5-query-classifier
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

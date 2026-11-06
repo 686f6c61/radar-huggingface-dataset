@@ -2,7 +2,7 @@
 
 ## Resumen
 
-weyr/jacob-face-lora es un adaptador LoRA de tipo DreamBooth para el modelo de generación de imágenes Krea 2, publicado por el usuario weyr en HuggingFace. El adaptador se entrenó sobre krea/Krea-2-Raw y los ejemplos de la model card se generaron aplicándolo sobre krea/Krea-2-Turbo. Su función es introducir un concepto concreto, invocado mediante el token `character_jacob`, de forma que el pipeline reproduzca ese personaje (rostro y rasgos asociados) en prompts arbitrarios.
+weyr/jacob-face-lora es un adaptador LoRA de tipo DreamBooth para el modelo de generación de imágenes Krea 2, publicado por el usuario weyr en Hugging Face. El adaptador se entrenó sobre krea/Krea-2-Raw y los ejemplos de la model card se generaron aplicándolo sobre krea/Krea-2-Turbo. Su función es introducir un concepto concreto, invocado mediante el token `character_jacob`, de forma que el pipeline reproduzca ese personaje (rostro y rasgos asociados) en prompts arbitrarios.
 
 El modelo no es un modelo generativo autónomo: es un adaptador de bajo rango que debe cargarse sobre el pipeline base de Krea 2 mediante `pipe.load_lora_weights("weyr/jacob-face-lora")`. El repositorio ocupa 1,0 GB, cifra que incluye pesos del adaptador e imágenes de muestra. Se publica bajo licencia Apache 2.0 y la librería declarada es diffusers, con la etiqueta de plantilla `template:sd-lora`.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Modelo base | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| weyr/jacob-face-lora | LoRA DreamBooth de personaje | krea/Krea-2-Raw | no disponible | no aplica | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| weyr/jacob-face-lora | LoRA DreamBooth de personaje | krea/Krea-2-Raw | no disponible | no aplica | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Otros LoRA de personaje con plantilla `sd-lora` | LoRA DreamBooth de personaje | variable (SDXL, Flux, Krea 2, etc.) | no disponible | no aplica | variable | no disponible en la información proporcionada |
-| Modelos base de generación de imagen (Krea 2 Raw / Turbo) | Modelo completo texto-a-imagen | no aplica | no disponible | no aplica | no disponible | HuggingFace (krea/Krea-2-Raw, krea/Krea-2-Turbo) |
+| Modelos base de generación de imagen (Krea 2 Raw / Turbo) | Modelo completo texto-a-imagen | no aplica | no disponible | no aplica | no disponible | Hugging Face (krea/Krea-2-Raw, krea/Krea-2-Turbo) |
 
 No se dispone de datos públicos en la información proporcionada para establecer una comparación cuantitativa con alternativas de la misma categoría (por ejemplo, otros LoRA de identidad facial entrenados sobre Krea 2, SDXL o Flux). La comparación queda limitada a la naturaleza del artefacto: un adaptador de bajo rango que requiere el modelo base y no puede evaluarse de forma aislada.
 
@@ -94,7 +94,7 @@ No se dispone de datos públicos en la información proporcionada para establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weyr/jacob-face-lora
+- Modelo en Hugging Face: https://huggingface.co/weyr/jacob-face-lora
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en los ejemplos (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Las búsquedas web realizadas no devolvieron enlaces relevantes: los únicos resultados obtenidos fueron páginas genéricas de YouTube, sin relación con el modelo, su paper, su repositorio de código o demos adicionales.

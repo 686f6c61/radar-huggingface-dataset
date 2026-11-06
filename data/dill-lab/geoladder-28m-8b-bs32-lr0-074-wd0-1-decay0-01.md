@@ -19,7 +19,7 @@ Se trata, por tanto, de un modelo de escala de juguete (28M de parámetros, 7,8 
 | Tipos de cuantizacion | No disponible; no se publican pesos cuantizados. Al ser un modelo de 28M, es viable cuantizar a int8/int4 con herramientas externas |
 | Idiomas soportados | No disponibles (el corpus de entrenamiento, the_pile_deduplicated, es mayoritariamente en ingles) |
 | Licencia | No disponible |
-| Formato de pesos | `pytorch_model.bin` (PyTorch), mas `config.json` de HuggingFace y `config.yaml` original de OLMo |
+| Formato de pesos | `pytorch_model.bin` (PyTorch), mas `config.json` de Hugging Face y `config.yaml` original de OLMo |
 | Tamano del repositorio | 7,8 GB (incluye 41 ramas de checkpoint) |
 | Checkpoints publicados | 41 ramas: `step0` ... `step122081`; `main` apunta al checkpoint final |
 | Datos de entrenamiento | EleutherAI/the_pile_deduplicated (8B tokens) |
@@ -104,7 +104,7 @@ El interes diferencial de GeoLadder-28M no es el rendimiento, sino que combina t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-28M-8B-bs32-lr0.074-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-28M-8B-bs32-lr0.074-wd0.1-decay0.01
 - Coleccion GeoLadder (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Articulo en PMLR 306: https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

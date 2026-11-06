@@ -99,7 +99,7 @@ La ventaja competitiva de esta build es la combinacion de tamano de 8B con una l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manuel121357/Dolphin3.0-Llama3.1-8B-q4f16_1-MLC
+- Repositorio en Hugging Face: https://huggingface.co/manuel121357/Dolphin3.0-Llama3.1-8B-q4f16_1-MLC
 - Modelo base: https://huggingface.co/cognitivecomputations/Dolphin3.0-Llama3.1-8B
 - Build MLC de origen: https://huggingface.co/huggingkot/Dolphin3.0-Llama3.1-8B-q4f16_1-MLC
 - Repositorio WebLLM: https://github.com/mlc-ai/web-llm

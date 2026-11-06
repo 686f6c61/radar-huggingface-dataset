@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-TTS talker 1.7B (este repo, Q8_0) | 1.928.677.440 | No disponible | GGUF (qwentts.cpp) | Apache-2.0 | HuggingFace (espejo y upstream) |
-| Whisper large-v3-turbo (este repo, Q5_0) | No disponible | No disponible | BIN/GGML (whisper.cpp) | MIT | HuggingFace (espejo y upstream) |
+| Qwen3-TTS talker 1.7B (este repo, Q8_0) | 1.928.677.440 | No disponible | GGUF (qwentts.cpp) | Apache-2.0 | Hugging Face (espejo y upstream) |
+| Whisper large-v3-turbo (este repo, Q5_0) | No disponible | No disponible | BIN/GGML (whisper.cpp) | MIT | Hugging Face (espejo y upstream) |
 | Alternativas TTS comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativas ASR comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de modelos comparables documentados en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CSCSoftware/vibeaigent-models
+- Repositorio en Hugging Face: https://huggingface.co/CSCSoftware/vibeaigent-models
 - Proyecto Vibe Aigent (GitHub): https://github.com/CSCSoftware/VibeAigent
 - Whisper.cpp (upstream ASR): https://huggingface.co/ggerganov/whisper.cpp
 - Qwen3-TTS GGUF (upstream TTS): https://huggingface.co/Serveurperso/Qwen3-TTS-GGUF

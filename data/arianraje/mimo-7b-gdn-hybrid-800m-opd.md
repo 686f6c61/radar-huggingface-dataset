@@ -19,7 +19,7 @@ Con 8.309.898.304 parámetros totales, este modelo se presenta como una alternat
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Modelo base | XiaomiMiMo/MiMo-7B-RL-0530 |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato.
 - Documentación insuficiente: no hay información sobre contexto, idiomas, cuantizaciones ni benchmarks, lo que dificulta su evaluación.
 - Modelo experimental: al ser parte de un estudio, puede presentar inestabilidad o degradación de rendimiento en tareas complejas.
 - Riesgo de alucinación: sin datos de entrenamiento ni evaluación, no se puede garantizar fiabilidad en salidas.
@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - arianraje/mimo-7b-gdn-hybrid-800M-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-800M-OPD)
-- [HuggingFace - modelo hermano 600M](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-600M-OPD)
-- [HuggingFace - modelo hermano 200M](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD)
+- [Hugging Face - arianraje/mimo-7b-gdn-hybrid-800M-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-800M-OPD)
+- [Hugging Face - modelo hermano 600M](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-600M-OPD)
+- [Hugging Face - modelo hermano 200M](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD)
 - [Xiaomi MiMo - página oficial](https://mimo.mi.com/)

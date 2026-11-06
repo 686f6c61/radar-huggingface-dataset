@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Amircyoo/whisper-persian | 72,59 M | 30 s (Whisper) | Persa | Apache 2.0 | HuggingFace, 24 descargas |
-| openai/whisper-base | 74 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-small | 244 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-large-v3 | 1.550 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 | HuggingFace, referencia ASR |
+| Amircyoo/whisper-persian | 72,59 M | 30 s (Whisper) | Persa | Apache 2.0 | Hugging Face, 24 descargas |
+| openai/whisper-base | 74 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-small | 244 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-large-v3 | 1.550 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 | Hugging Face, referencia ASR |
 
 El modelo se posiciona como un ajuste especializado de whisper-base para persa. Frente a whisper-base original, la ventaja esperada es una mejor precisión en farsi, aunque no hay métricas publicadas que lo confirmen. Frente a whisper-small o whisper-large-v3, este modelo ofrece menor coste computacional pero también menor capacidad; whisper-large-v3, con 1.550 millones de parámetros, es la referencia actual en ASR multilingüe y probablemente supere en precisión a un ajuste de whisper-base, aunque a un coste de inferencia mucho mayor. No se dispone de datos de rendimiento comparativo para confirmar ninguna de estas afirmaciones.
 
@@ -88,7 +88,7 @@ El modelo se posiciona como un ajuste especializado de whisper-base para persa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amircyoo/whisper-persian
+- Modelo en Hugging Face: https://huggingface.co/Amircyoo/whisper-persian
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Dataset Common Voice 13.0: https://huggingface.co/datasets/mozilla-foundation/common_voice_13_0
 - Framework PEFT: https://huggingface.co/docs/peft

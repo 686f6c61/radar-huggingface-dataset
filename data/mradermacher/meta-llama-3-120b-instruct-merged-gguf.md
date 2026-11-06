@@ -86,7 +86,7 @@ La comparativa se limita a modelos de escala similar; los datos de licencia y co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Meta-Llama-3-120B-Instruct-merged-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Meta-Llama-3-120B-Instruct-merged-GGUF
 - Modelo base: https://huggingface.co/imi2/Meta-Llama-3-120B-Instruct-merged
 - Pagina de descargas del autor: https://hf.tst.eu/model#Meta-Llama-3-120B-Instruct-merged-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

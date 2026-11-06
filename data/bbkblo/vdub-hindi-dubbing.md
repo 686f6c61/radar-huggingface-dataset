@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para una comparativa directa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bbkblo/vdub-hindi-dubbing
+- Repositorio Hugging Face: https://huggingface.co/Bbkblo/vdub-hindi-dubbing
 - Chatterbox (TTS base): https://github.com/resemble-ai/chatterbox (y modelo en HF: ResembleAI/Chatterbox-Multilingual-hi)
 - Perth (decodificador S3Gen): https://github.com/resemble-ai/Perth
 - Kim_Vocal_2 (separador ONNX): https://huggingface.co/seanghay/uvr_models

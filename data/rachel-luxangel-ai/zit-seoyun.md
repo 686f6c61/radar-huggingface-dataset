@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zit-seoyun es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario rachel-luxangel-ai. No se trata de un modelo completo, sino de un ajuste fino de bajo rango pensado para inyectar un sujeto concreto (una identidad denominada Seoyun) sobre el modelo de difusion base Tongyi-MAI/Z-Image-Turbo. El repositorio pesa 0,2 GB y contiene un unico archivo `seoyun.safetensors`, lo que es coherente con un adaptador de pequeno tamano frente a los pesos del modelo base.
+zit-seoyun es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario rachel-luxangel-ai. No se trata de un modelo completo, sino de un ajuste fino de bajo rango pensado para inyectar un sujeto concreto (una identidad denominada Seoyun) sobre el modelo de difusion base Tongyi-MAI/Z-Image-Turbo. El repositorio pesa 0,2 GB y contiene un unico archivo `seoyun.safetensors`, lo que es coherente con un adaptador de pequeno tamano frente a los pesos del modelo base.
 
 La model card es minima: identifica el modelo como un rehost del modelo de CivitAI con identificador 2992612 (version 3393656), creado para el usuario o proyecto LYRA, y define la palabra disparadora `seoyunXCV` y el `instance_prompt` del mismo valor. No se documentan datos de entrenamiento, rango del LoRA, resolucion objetivo, pasos de inferencia ni limitaciones de uso.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada y muy especifica: sirve para reproducir de forma consi
 | Instance prompt | `seoyunXCV` |
 | SHA256 | `73362557d240cb72bf5d66e5da2d8ac66f5d833d49f93101b24113114c563ba9` |
 | Modelo base | Tongyi-MAI/Z-Image-Turbo |
-| Pipeline (HuggingFace) | text-to-image |
+| Pipeline (Hugging Face) | text-to-image |
 | Libreria | diffusers |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
@@ -95,7 +95,7 @@ No se dispone de datos de otros LoRA de personaje para Z-Image-Turbo en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-seoyun
+- Modelo en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-seoyun
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Modelo original en CivitAI (version 3393656): https://civitai.com/models/2992612?modelVersionId=3393656
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

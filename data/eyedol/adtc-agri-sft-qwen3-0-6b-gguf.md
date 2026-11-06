@@ -6,7 +6,7 @@ El modelo `EYEDOL/adtc-agri-sft-qwen3-0.6b-GGUF` es la version cuantizada en for
 
 La relevancia de esta publicacion no esta en la capacidad bruta del modelo, sino en su formato de distribucion: el autor ofrece tres cuantizaciones K-quant (Q4_K_M, Q5_K_M y Q6_K) de entre 0,40 GB y 0,50 GB, pensadas para inferencia en CPU y dispositivos de borde mediante llama.cpp, Ollama o LM Studio. Esto lo convierte en un candidato para escenarios de asesoramiento agricola sin conectividad, donde el coste por consulta y la disponibilidad de GPU son restricciones reales.
 
-El modelo esta licenciado bajo Apache 2.0, declara unicamente el idioma ingles y no tiene, en el momento de redactar esta ficha, descargas ni valoraciones registradas en HuggingFace. La model card remite al modelo base sin cuantizar para los detalles completos de entrenamiento (fuentes de datos, hiperparametros y curva de perdida).
+El modelo esta licenciado bajo Apache 2.0, declara unicamente el idioma ingles y no tiene, en el momento de redactar esta ficha, descargas ni valoraciones registradas en Hugging Face. La model card remite al modelo base sin cuantizar para los detalles completos de entrenamiento (fuentes de datos, hiperparametros y curva de perdida).
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks de ninguna de las alternativas en la inform
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificacion, siempre que se conserve el aviso de licencia y se indique los cambios. No se declaran restricciones adicionales por parte del autor.
 - Perdida de calidad por cuantizacion: las tres variantes GGUF degradan ligeramente la salida frente al modelo fp16; para maxima fidelidad el autor recomienda usar el checkpoint sin cuantizar.
 - Datos de entrenamiento no verificables en este repositorio: la composicion del dataset, los hiperparametros y la curva de perdida solo se referencian mediante enlace al modelo base; no se reproducen aqui.
-- Ausencia de validacion externa: cero descargas y cero valoraciones en HuggingFace en el momento de la consulta, sin evaluaciones independientes publicadas.
+- Ausencia de validacion externa: cero descargas y cero valoraciones en Hugging Face en el momento de la consulta, sin evaluaciones independientes publicadas.
 - Riesgo en produccion: no hay garantias de robustez ante entradas adversarias, prompts fuera de dominio ni conversaciones multi-turno largas, dado que no se documenta la longitud de contexto efectiva del ajuste.
 
 ## Enlaces

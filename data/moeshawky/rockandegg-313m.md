@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RockAndEgg-313M es un derivado compacto de Qwen/Qwen3-0.6B-Base publicado por el usuario moeshawky en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de una operación de cirugía de modelo (model surgery) basada en truncado de profundidad: conserva las 10 primeras capas del transformer original de 28 y descarta las 18 restantes. El resultado es un backbone Qwen3 de 312.892.928 parámetros que mantiene intactas la anchura oculta, la anchura de la FFN, la topología de atención, el tokenizador y el vocabulario del donante.
+RockAndEgg-313M es un derivado compacto de Qwen/Qwen3-0.6B-Base publicado por el usuario moeshawky en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de una operación de cirugía de modelo (model surgery) basada en truncado de profundidad: conserva las 10 primeras capas del transformer original de 28 y descarta las 18 restantes. El resultado es un backbone Qwen3 de 312.892.928 parámetros que mantiene intactas la anchura oculta, la anchura de la FFN, la topología de atención, el tokenizador y el vocabulario del donante.
 
 El modelo se distribuye sin cabeza de clasificación (headless), como un Qwen3Model puro, y está orientado a extracción de características, clasificación, regresión y ranking tras un fine-tuning específico de la tarea. La ausencia de cabeza es deliberada: el autor argumenta que una cabeza genérica sin semántica de tarea no aporta funcionalidad real al usuario.
 
@@ -108,7 +108,7 @@ Diferencias estructurales relevantes: frente a BERT-base y DeBERTa-v3-base, Rock
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moeshawky/RockAndEgg-313M
+- Modelo en Hugging Face: https://huggingface.co/moeshawky/RockAndEgg-313M
 - Modelo base (donante): https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Revisión concreta del donante usada en la cirugía: https://huggingface.co/Qwen/Qwen3-0.6B-Base/tree/da87bfb608c14b7cf20ba1ce41287e8de496c0cd
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

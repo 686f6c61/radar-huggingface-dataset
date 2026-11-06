@@ -81,7 +81,7 @@ Silero VAD destaca por su equilibrio entre precisión y eficiencia, siendo signi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tphakala/silero-vad
+- Repositorio Hugging Face: https://huggingface.co/tphakala/silero-vad
 - Repositorio original en GitHub: https://github.com/snakers4/silero-vad
 - Paquete PyPI: https://pypi.org/project/silero-vad/
 - PyTorch Hub: https://pytorch.org/hub/snakers4_silero-vad_vad/

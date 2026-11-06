@@ -85,7 +85,7 @@ Alternativa en otro formato: ibm-granite/granite-4.2-8b-GGUF, que permite ejecut
 
 ## Enlaces
 
-- Repositorio HuggingFace (q4 MLX): https://huggingface.co/mrutkows/granite-4.2-8b-q4-mlx
+- Repositorio Hugging Face (q4 MLX): https://huggingface.co/mrutkows/granite-4.2-8b-q4-mlx
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Variante GGUF del modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF
 - Documentacion IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

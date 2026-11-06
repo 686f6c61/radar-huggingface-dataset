@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `BonTori/phobert-eda-vietnamese-hsd` es un fine-tuning de PhoBERT, el modelo de lenguaje preentrenado monolingüe para vietnamita desarrollado por VinAIResearch, orientado a la detección de discurso de odio (HSD, *Hate Speech Detection*) en textos vietnamitas. El nombre sugiere que se ha aplicado EDA (*Easy Data Augmentation*) como técnica de aumento de datos durante el entrenamiento, aunque no hay documentación oficial que lo confirme. La ficha de HuggingFace está vacía: no se especifican licencia, idiomas, ni detalles de entrenamiento.
+El modelo `BonTori/phobert-eda-vietnamese-hsd` es un fine-tuning de PhoBERT, el modelo de lenguaje preentrenado monolingüe para vietnamita desarrollado por VinAIResearch, orientado a la detección de discurso de odio (HSD, *Hate Speech Detection*) en textos vietnamitas. El nombre sugiere que se ha aplicado EDA (*Easy Data Augmentation*) como técnica de aumento de datos durante el entrenamiento, aunque no hay documentación oficial que lo confirme. La ficha de Hugging Face está vacía: no se especifican licencia, idiomas, ni detalles de entrenamiento.
 
 El modelo se publicó el 22 de agosto de 2026 y no registra descargas ni valoraciones. A pesar de la falta de información, su arquitectura subyacente es la de PhoBERT (BERT monolingüe para vietnamita), que cuenta con versiones *base* y *large* de 110M y 370M parámetros respectivamente. La relevancia de este modelo radica en su posible aplicación a la moderación de contenido en redes sociales vietnamitas, un área con demanda creciente. Sin embargo, al carecer de documentación y métricas, su uso en producción requiere una evaluación previa rigurosa.
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BonTori/phobert-eda-vietnamese-hsd | BERT (PhoBERT) | no disponible | no disponible | no disponible | HuggingFace |
-| PhoBERT base (VinAIResearch) | BERT (RoBERTa) | 110M | 512 | MIT | HuggingFace, GitHub |
-| BamiBERT (VinAIResearch) | BERT | no disponible | hasta 4096 | no disponible | HuggingFace |
+| BonTori/phobert-eda-vietnamese-hsd | BERT (PhoBERT) | no disponible | no disponible | no disponible | Hugging Face |
+| PhoBERT base (VinAIResearch) | BERT (RoBERTa) | 110M | 512 | MIT | Hugging Face, GitHub |
+| BamiBERT (VinAIResearch) | BERT | no disponible | hasta 4096 | no disponible | Hugging Face |
 
 PhoBERT es el modelo base del que parte este fine-tuning. BamiBERT es una alternativa mas reciente que amplia el contexto y se entrena sobre un corpus mayor, pero no esta orientado a deteccion de odio. No se dispone de datos de rendimiento comparativo entre estos modelos y el de BonTori.
 
@@ -73,7 +73,7 @@ PhoBERT es el modelo base del que parte este fine-tuning. BamiBERT es una altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BonTori/phobert-eda-vietnamese-hsd
+- Modelo en Hugging Face: https://huggingface.co/BonTori/phobert-eda-vietnamese-hsd
 - Repositorio de PhoBERT (VinAIResearch): https://github.com/VinAIResearch/PhoBERT
 - Paper de PhoBERT (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Paper sobre deteccion de odio en vietnamita con PhoBERT-CNN: https://arxiv.org/pdf/2206.00524

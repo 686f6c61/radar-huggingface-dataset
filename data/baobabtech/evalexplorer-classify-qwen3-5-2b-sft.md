@@ -78,8 +78,8 @@ Advertencia de la propia model card: estas cifras miden el acuerdo con las etiqu
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| baobabtech/evalexplorer-classify-qwen3.5-2b-sft | Base 2B + adaptador LoRA | No disponible | Adaptador LoRA de clasificacion | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| unsloth/Qwen3.5-2B | 2B | No disponible | Modelo base de proposito general | No disponible en la informacion | HuggingFace |
+| baobabtech/evalexplorer-classify-qwen3.5-2b-sft | Base 2B + adaptador LoRA | No disponible | Adaptador LoRA de clasificacion | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| unsloth/Qwen3.5-2B | 2B | No disponible | Modelo base de proposito general | No disponible en la informacion | Hugging Face |
 | Alternativas de clasificacion de documentos comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos de la misma categoria en la informacion proporcionada, por lo que no es posible una comparacion cuantitativa de rendimiento.
@@ -94,11 +94,11 @@ No se dispone de datos de benchmarks de modelos alternativos de la misma categor
 - Riesgo de alucinación en la generación de listas de temas y países, especialmente cuando el documento de entrada no menciona explícitamente esa información.
 - Modelo exploratorio: la model card indica que la versión prevista se entrenará con las etiquetas de GLM-5.3-Flash, por lo que este artefacto puede quedar obsoleto.
 - Licencia Apache 2.0, que permite uso comercial, pero el modelo base Qwen3.5-2B tiene su propia licencia enlazada en la model card, que debe verificarse por separado.
-- Repositorio sin descargas ni likes en el momento de la consulta y sin pipeline declarado en HuggingFace.
+- Repositorio sin descargas ni likes en el momento de la consulta y sin pipeline declarado en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baobabtech/evalexplorer-classify-qwen3.5-2b-sft
+- Modelo en Hugging Face: https://huggingface.co/baobabtech/evalexplorer-classify-qwen3.5-2b-sft
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/baobabtech/evalexplorer-data
 - Dataset de experimentos y código: https://huggingface.co/datasets/baobabtech/evalexplorer-classify-experiments

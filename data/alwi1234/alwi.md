@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Alwi1234/Alwi` es un repositorio publicado en HuggingFace por el usuario Alwi1234 bajo licencia Apache 2.0. La fecha de creación es el 27 de agosto de 2026 y no se ha actualizado desde entonces. El repositorio no contiene una model card sustancial: únicamente se declara la licencia, sin descripción, arquitectura, parámetros, ni ningún otro dato técnico. Tampoco se han encontrado resultados de búsqueda web que aporten información sobre el modelo, más allá de perfiles personales en redes sociales y cuentas de GitHub con nombres similares, que no guardan relación aparente con un modelo de IA.
+El modelo `Alwi1234/Alwi` es un repositorio publicado en Hugging Face por el usuario Alwi1234 bajo licencia Apache 2.0. La fecha de creación es el 27 de agosto de 2026 y no se ha actualizado desde entonces. El repositorio no contiene una model card sustancial: únicamente se declara la licencia, sin descripción, arquitectura, parámetros, ni ningún otro dato técnico. Tampoco se han encontrado resultados de búsqueda web que aporten información sobre el modelo, más allá de perfiles personales en redes sociales y cuentas de GitHub con nombres similares, que no guardan relación aparente con un modelo de IA.
 
 En consecuencia, no es posible determinar qué tipo de modelo es, qué problema resuelve, ni por qué sería relevante. Se trata de un repositorio vacío de documentación técnica, por lo que cualquier uso en producción o investigación requeriría una verificación previa del contenido real de los archivos (si los hay) y de su procedencia.
 
@@ -53,5 +53,5 @@ No disponible. Al no existir información sobre las características del modelo,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alwi1234/Alwi
+- Repositorio en Hugging Face: https://huggingface.co/Alwi1234/Alwi
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados al modelo.

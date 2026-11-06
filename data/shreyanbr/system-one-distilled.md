@@ -12,7 +12,7 @@ Su interés práctico es sustituir llamadas a un LLM autorregresivo por un clasi
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Cross-encoder transformer (familia DeBERTa-v3-xsmall). Nota: el tag de HuggingFace indica "deberta-v2", mientras que el campo `base_model` apunta a DeBERTa-v3-xsmall |
+| Arquitectura | Cross-encoder transformer (familia DeBERTa-v3-xsmall). Nota: el tag de Hugging Face indica "deberta-v2", mientras que el campo `base_model` apunta a DeBERTa-v3-xsmall |
 | Parámetros totales | 70.830.722 |
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la model card no la especifica) |
@@ -80,8 +80,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| System One (distilled) | 70.830.722 | Cross-encoder destilado de Claude Haiku 4.5 para seis preguntas de decisión | no disponible | apache-2.0, con supervisión de triaje bajo CC-BY-NC-4.0 | safetensors en HuggingFace, 0 descargas |
-| MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33 | en torno a 70 M (misma arquitectura base) | Cross-encoder NLI zero-shot, sin destilación específica | no disponible | no disponible en esta información | HuggingFace (modelo base declarado) |
+| System One (distilled) | 70.830.722 | Cross-encoder destilado de Claude Haiku 4.5 para seis preguntas de decisión | no disponible | apache-2.0, con supervisión de triaje bajo CC-BY-NC-4.0 | safetensors en Hugging Face, 0 descargas |
+| MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33 | en torno a 70 M (misma arquitectura base) | Cross-encoder NLI zero-shot, sin destilación específica | no disponible | no disponible en esta información | Hugging Face (modelo base declarado) |
 | Claude Haiku 4.5 | no disponible | LLM autorregresivo, usado aquí como profesor y como sistema de referencia | no disponible | propietaria | API |
 
 No se dispone de datos de rendimiento comparables entre estos sistemas más allá de las precisiones y los suelos de mayoría recogidos en la tabla de benchmarks, medidos por el autor.
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparables entre estos sistemas más all�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreyanbr/system-one-distilled
+- Modelo en Hugging Face: https://huggingface.co/shreyanbr/system-one-distilled
 - Modelo base declarado: https://huggingface.co/MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33
 - Repositorio con el código fuente, el arnés de benchmarks y la sección completa de limitaciones: https://github.com/shreyanbr/jev-haiku-benchmarking
 - Resultados de la búsqueda web: los enlaces devueltos corresponden a páginas corporativas de Microsoft y no guardan relación con este modelo; no se han encontrado papers, blogs ni demos adicionales en la información disponible.

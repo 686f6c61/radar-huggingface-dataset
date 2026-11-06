@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento numerico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
+- Modelo en Hugging Face: https://huggingface.co/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Sucesor recomendado por el autor: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-NVFP4-MIXED
 - Repositorio de despliegue, benchmarks y AGENTS.md: https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash

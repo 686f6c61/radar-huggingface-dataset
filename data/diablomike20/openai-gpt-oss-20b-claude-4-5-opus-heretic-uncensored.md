@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de gpt-oss-20b de OpenAI, publicado por el usuario diablomike20 en HuggingFace. La cadena de derivación es la siguiente: parte de openai/gpt-oss-20b, que fue "descensurado" mediante la herramienta Heretic (por el usuario coder3101, obteniendo coder3101/gpt-oss-20b-heretic), y posteriormente se le aplicó un fine-tune con Unsloth sobre el dataset TeichAI/claude-4.5-opus-high-reasoning-250x, un conjunto de datos de razonamiento de alta calidad atribuido a Claude 4.5 Opus. El objetivo declarado es sustituir parcialmente el estilo de razonamiento original de gpt-oss por un razonamiento de tipo "high reasoning" y eliminar los mecanismos de rechazo del modelo.
+Este modelo es un ajuste fino (fine-tune) de gpt-oss-20b de OpenAI, publicado por el usuario diablomike20 en Hugging Face. La cadena de derivación es la siguiente: parte de openai/gpt-oss-20b, que fue "descensurado" mediante la herramienta Heretic (por el usuario coder3101, obteniendo coder3101/gpt-oss-20b-heretic), y posteriormente se le aplicó un fine-tune con Unsloth sobre el dataset TeichAI/claude-4.5-opus-high-reasoning-250x, un conjunto de datos de razonamiento de alta calidad atribuido a Claude 4.5 Opus. El objetivo declarado es sustituir parcialmente el estilo de razonamiento original de gpt-oss por un razonamiento de tipo "high reasoning" y eliminar los mecanismos de rechazo del modelo.
 
 El problema que resuelve es doble: por un lado, ofrece un modelo de 20.900 millones de parámetros sin guardrails para casos de uso como escritura creativa explícita, roleplay o investigación de alineamiento; por otro, intenta mejorar la calidad del razonamiento mediante destilación de datos de razonamiento avanzado. El autor lo etiqueta explícitamente como trabajo en progreso, advirtiendo que puede entrar en bucles y que no todo funcionará correctamente. Mantiene la licencia Apache 2.0 del modelo base y una ventana de contexto de 128k tokens según la model card.
 
@@ -31,7 +31,7 @@ El proceso de creacion consta de dos etapas. Primera etapa: el modelo original o
 - Razonamiento mejorado mediante fine-tune sobre datos de razonamiento de alta calidad (dataset claude-4.5-opus-high-reasoning-250x).
 - Generacion de contenido sin rechazos: la tasa de rechazo se redujo de 98/100 a 19/100 respecto al modelo base, lo que permite horror, lenguaje vulgar y contenido para adultos sin negativas del modelo (aunque en algunos casos requiere indicaciones explicitas del usuario para alcanzar el nivel de explicitud esperado).
 - Roleplay y escritura creativa, con recomendaciones de samplers concretos (smoothing factor 1,5 en KoboldCpp, text-generation-webui o SillyTavern).
-- Compatible con Transformers de HuggingFace y despliegue en endpoints estandar.
+- Compatible con Transformers de Hugging Face y despliegue en endpoints estandar.
 - No se menciona en la informacion proporcionada soporte de vision, audio, tool calling ni capacidades agenticas.
 
 ## Casos de uso
@@ -59,7 +59,7 @@ Una divergencia KL inferior a 1 se considera excelente segun el autor (0 seria a
 - VRAM estimada para inferencia: el repositorio en safetensors pesa 41,9 GB, lo que sugiere pesos en precision BF16/FP16; se necesitarian alrededor de 42-48 GB de VRAM para cargarlo sin cuantizar (por ejemplo, 2x RTX 3090/4090, A100 de 40/80 GB o H100). No se publican versiones cuantizadas en la informacion proporcionada, por lo que no se puede estimar VRAM para GGUF o AWQ.
 - GPU recomendadas: A100, H100, o configuraciones multi-GPU de consumo (2x RTX 3090 o 2x RTX 4090) para la version completa.
 - En una sola GPU de consumo (RTX 4090 con 24 GB) no cabe la version completa sin cuantizacion; seria necesario aplicar cuantizacion externa no disponible en este repo.
-- Opciones de despliegue: Transformers de HuggingFace (libreria nativa declarada), endpoints compatibles de HuggingFace, y segun la model card, KoboldCpp, oobabooga/text-generation-webui y SillyTavern (estas dos ultimas mencionadas para GGUF, cuyos archivos de configuracion se referencian en la coleccion de DavidAU). No se mencionan vLLM, TGI ni Ollama explicitamente.
+- Opciones de despliegue: Transformers de Hugging Face (libreria nativa declarada), endpoints compatibles de Hugging Face, y segun la model card, KoboldCpp, oobabooga/text-generation-webui y SillyTavern (estas dos ultimas mencionadas para GGUF, cuyos archivos de configuracion se referencian en la coleccion de DavidAU). No se mencionan vLLM, TGI ni Ollama explicitamente.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se limita a la familia gpt-oss-20b, ya que es la cadena de deriva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diablomike20/OpenAI-gpt-oss-20B-Claude-4.5-Opus-Heretic-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/diablomike20/OpenAI-gpt-oss-20B-Claude-4.5-Opus-Heretic-Uncensored
 - Modelo base inmediato: https://huggingface.co/coder3101/gpt-oss-20b-heretic
 - Modelo original de OpenAI: https://huggingface.co/openai/gpt-oss-20b
 - Dataset de fine-tune: https://huggingface.co/datasets/TeichAI/claude-4.5-opus-high-reasoning-250x

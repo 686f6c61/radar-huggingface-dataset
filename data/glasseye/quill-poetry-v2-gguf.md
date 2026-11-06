@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quill poetry v2 GGUF es un modelo de lenguaje publicado por el usuario GLASSEYE en HuggingFace bajo el identificador `GLASSEYE/quill-poetry-v2-gguf`. Se distribuye exclusivamente en formato GGUF, en una única cuantización Q4_K_M, y la model card lo presenta como un modelo orientado a la generación de poesía, invocable mediante `ollama run quill`. El repositorio tiene un tamaño de 4,4 GB y declara 7.248.023.552 parámetros totales, lo que lo sitúa en la categoría de los modelos de aproximadamente 7.000 millones de parámetros.
+Quill poetry v2 GGUF es un modelo de lenguaje publicado por el usuario GLASSEYE en Hugging Face bajo el identificador `GLASSEYE/quill-poetry-v2-gguf`. Se distribuye exclusivamente en formato GGUF, en una única cuantización Q4_K_M, y la model card lo presenta como un modelo orientado a la generación de poesía, invocable mediante `ollama run quill`. El repositorio tiene un tamaño de 4,4 GB y declara 7.248.023.552 parámetros totales, lo que lo sitúa en la categoría de los modelos de aproximadamente 7.000 millones de parámetros.
 
 La información pública es extremadamente reducida: la model card se limita a la licencia, tres etiquetas (`gguf`, `poetry`, `quill`) y el comando de Ollama. No se documentan el modelo base, la arquitectura, la longitud de contexto, los datos de entrenamiento, los idiomas soportados ni resultados de evaluación. El repositorio se publicó el 20 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que no existe validación alguna por parte de la comunidad.
 
@@ -25,14 +25,14 @@ Por tanto, esta ficha debe leerse como una evaluación de viabilidad técnica ba
 
 No se ha publicado información sobre la arquitectura interna del modelo. El autor no indica si se trata de un ajuste fino (fine-tuning) sobre un modelo base existente ni cuál sería ese modelo base, ni describe el tipo de atención, la estrategia de posicionamiento, la normalización o el tokenizador empleado. El número de parámetros (7.248.023.552) y el tamaño del repositorio (4,4 GB, coherente con una cuantización Q4_K_M de ese orden de magnitud) son los únicos datos objetivos disponibles.
 
-Tampoco hay información sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composición del corpus (aunque el nombre y la etiqueta `poetry` apuntan a un sesgo hacia texto poético y literario), la posible aplicación de RLHF, DPO u otras técnicas de alineamiento, y cualquier innovación técnica como decodificación especulativa o atención lineal. La etiqueta `conversational` en HuggingFace sugiere que el modelo fue preparado para mantener diálogo, pero no hay plantilla de chat documentada ni tokens especiales descritos.
+Tampoco hay información sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composición del corpus (aunque el nombre y la etiqueta `poetry` apuntan a un sesgo hacia texto poético y literario), la posible aplicación de RLHF, DPO u otras técnicas de alineamiento, y cualquier innovación técnica como decodificación especulativa o atención lineal. La etiqueta `conversational` en Hugging Face sugiere que el modelo fue preparado para mantener diálogo, pero no hay plantilla de chat documentada ni tokens especiales descritos.
 
 ## Capacidades
 
 - Generación de texto creativo, presumiblemente especializada en poesía y verso según el nombre del modelo y la etiqueta `poetry`; esta especialización no está verificada con ejemplos ni evaluaciones.
-- Modo conversacional declarado mediante la etiqueta `conversational` de HuggingFace, aunque se desconoce la plantilla de prompt recomendada.
+- Modo conversacional declarado mediante la etiqueta `conversational` de Hugging Face, aunque se desconoce la plantilla de prompt recomendada.
 - Ejecución local en CPU y GPU a través del ecosistema GGUF (llama.cpp, Ollama y compatibles).
-- Compatibilidad declarada con endpoints de HuggingFace (etiqueta `endpoints_compatible`), lo que permite desplegarlo como endpoint gestionado si el contenedor soporta GGUF.
+- Compatibilidad declarada con endpoints de Hugging Face (etiqueta `endpoints_compatible`), lo que permite desplegarlo como endpoint gestionado si el contenedor soporta GGUF.
 - Soporte de tool calling / function calling: no disponible, no documentado.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no documentado.
 - Capacidades multilingües: no disponibles, no documentadas.
@@ -65,7 +65,7 @@ Las cifras de VRAM que se indican a continuación son estimaciones derivadas del
   - FP16 (no publicada, reconstruible): del orden de 14,5 GB de pesos.
 - GPU recomendadas: RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070, RTX 4080 y RTX 4090 para FP16 con comodidad; A100 o H100 solo si se necesita servicio concurrente a gran escala, ya que el modelo es pequeño para ese hardware.
 - Compatibilidad con GPU de consumo: sí. La cuantización Q4_K_M cabe sin problema en GPUs con 8 GB de VRAM o más, y también en Macs con memoria unificada de 8 GB o superior.
-- Opciones de despliegue: Ollama (el autor documenta `ollama run quill`), llama.cpp, llama-cpp-python, LM Studio, GPT4All y servidores basados en llama.cpp. El soporte de GGUF en vLLM es experimental y limitado; TGI no soporta GGUF de forma nativa. La etiqueta `endpoints_compatible` sugiere despliegue en HuggingFace Inference Endpoints con un contenedor compatible.
+- Opciones de despliegue: Ollama (el autor documenta `ollama run quill`), llama.cpp, llama-cpp-python, LM Studio, GPT4All y servidores basados en llama.cpp. El soporte de GGUF en vLLM es experimental y limitado; TGI no soporta GGUF de forma nativa. La etiqueta `endpoints_compatible` sugiere despliegue en Hugging Face Inference Endpoints con un contenedor compatible.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo en ningún hardware.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ La ventaja diferencial declarada de Quill poetry v2 es la especialización en po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GLASSEYE/quill-poetry-v2-gguf
+- Modelo en Hugging Face: https://huggingface.co/GLASSEYE/quill-poetry-v2-gguf
 - Repositorio de llama.cpp (runtime compatible con GGUF): https://github.com/ggml-org/llama.cpp
 - Ollama, invocado en la model card mediante `ollama run quill`: https://ollama.com
 - Paper, blog, repositorio o demo del autor: no disponible. La búsqueda web realizada no ha devuelto ninguna fuente relacionada con este modelo; los resultados obtenidos corresponden a páginas sin relación con el contenido técnico.

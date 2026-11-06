@@ -77,7 +77,7 @@ Nota: la comparativa se basa en datos publicos de los modelos base; no se dispon
 
 ## Enlaces
 
-- HuggingFace (repositorio GGUF): https://huggingface.co/Misterlessthanmoreand/Gemmasutra-Mini-2B-v1-GGUF
+- Hugging Face (repositorio GGUF): https://huggingface.co/Misterlessthanmoreand/Gemmasutra-Mini-2B-v1-GGUF
 - Modelo original: https://huggingface.co/TheDrummer/Gemmasutra-Mini-2B-v1
 - GGUF original: https://huggingface.co/TheDrummer/Gemmasutra-Mini-2B-v1-GGUF
 - iMatrix GGUF (recomendado): https://huggingface.co/MarsupialAI/Gemmasutra-Mini-2B-v1_iMatrix_GGUF

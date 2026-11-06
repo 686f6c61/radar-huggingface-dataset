@@ -4,7 +4,7 @@
 
 SyncWorld-mv3-strip384-recent8-step40000 es un checkpoint intermedio (actualización 40.000 de 45.000) de un modelo del mundo orientado a robótica, desarrollado por el autor yyuncong bajo el marco Cosmos y publicado con la licencia OpenMDW-1.1 de NVIDIA. El modelo aborda la dinámica directa (forward dynamics) en entornos multi-cámara: dado un fotograma ancla y una secuencia de acciones comandadas, predice los 16 fotogramas siguientes, condicionado por K fragmentos de vídeo/acción observados que se sitúan en la misma ventana de atención como contexto limpio. La variante "recent8" utiliza los K fragmentos más recientes de la propia consulta como condicionamiento, y constituye la línea base frente a una recuperación de vecinos más simples con vistas conjuntas.
 
-La entrada no es una imagen única, sino una tira de 1536x384 píxeles compuesta por tres celdas de 512x384 (4:3): las dos cámaras en tercera persona del registro, barajadas entre las dos primeras celdas por secuencia, y la cámara de muñeca en la última. El entrenamiento parte de un modelo Cosmos ya adaptado a estas tiras y continúa con 45.000 actualizaciones sobre 4 nodos de 8 H100. El repositorio ocupa 30,3 GB y no registra descargas ni interacciones en HuggingFace, lo que indica su carácter de artefacto de investigación más que de modelo listo para producción.
+La entrada no es una imagen única, sino una tira de 1536x384 píxeles compuesta por tres celdas de 512x384 (4:3): las dos cámaras en tercera persona del registro, barajadas entre las dos primeras celdas por secuencia, y la cámara de muñeca en la última. El entrenamiento parte de un modelo Cosmos ya adaptado a estas tiras y continúa con 45.000 actualizaciones sobre 4 nodos de 8 H100. El repositorio ocupa 30,3 GB y no registra descargas ni interacciones en Hugging Face, lo que indica su carácter de artefacto de investigación más que de modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SyncWorld-mv3-strip384-recent8-step40000 (este) | no disponible | Ancla + 16 acciones + K fragmentos (K 1-8) + 16 fotogramas generados | Loss 0,0606 en la actualización 40.000 | OpenMDW-1.1 | HuggingFace, 30,3 GB |
-| SyncWorld-mv3-strip384-views-first-v10-step* | no disponible | Mismo esquema, recuperación de vecinos más simples con vistas conjuntas | no disponible | OpenMDW-1.1 (presumible) | HuggingFace |
+| SyncWorld-mv3-strip384-recent8-step40000 (este) | no disponible | Ancla + 16 acciones + K fragmentos (K 1-8) + 16 fotogramas generados | Loss 0,0606 en la actualización 40.000 | OpenMDW-1.1 | Hugging Face, 30,3 GB |
+| SyncWorld-mv3-strip384-views-first-v10-step* | no disponible | Mismo esquema, recuperación de vecinos más simples con vistas conjuntas | no disponible | OpenMDW-1.1 (presumible) | Hugging Face |
 | cosmos-framework-dev `gripperhead-mv-strip384-4x3-fork174k-4x8` (inicialización) | no disponible | Tiras 1536x384 | no disponible | no disponible | no disponible |
 
 La comparación con otros modelos del mundo robóticos de terceros no está disponible en la información proporcionada.
@@ -87,7 +87,7 @@ La comparación con otros modelos del mundo robóticos de terceros no está disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step40000
+- Hugging Face: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step40000
 - Licencia OpenMDW-1.1 (NVIDIA Cosmos): https://github.com/NVIDIA/Cosmos/blob/main/LICENSE
 - Variante comparada (views-first): https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

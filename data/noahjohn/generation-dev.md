@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`noahjohn/generation-dev` es un repositorio de HuggingFace publicado por el usuario `noahjohn` que contiene un prototipo de investigación basado en la arquitectura MobileViT, etiquetado por el autor como orientado a tareas de "generation". No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo ("smoke tests") y advierte de que no se presenta como un checkpoint con benchmarks. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y los pesos en formato safetensors.
+`noahjohn/generation-dev` es un repositorio de Hugging Face publicado por el usuario `noahjohn` que contiene un prototipo de investigación basado en la arquitectura MobileViT, etiquetado por el autor como orientado a tareas de "generation". No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como un checkpoint de inicialización válido únicamente para pruebas de humo ("smoke tests") y advierte de que no se presenta como un checkpoint con benchmarks. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y los pesos en formato safetensors.
 
 El dato más relevante es su escala: el recuento real de parámetros en safetensors es de 24.832, es decir, un modelo de unas decenas de miles de parámetros, muy por debajo de cualquier variante publicada de MobileViT (que suele moverse en el orden de millones). El repositorio ocupa 0,0 GB, tiene 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el 2026-10-20 con apenas unos segundos de diferencia entre ambos eventos.
 
@@ -29,7 +29,7 @@ La arquitectura declarada es MobileViT en escala "nano", con atención estándar
 
 No hay evidencia de entrenamiento: el autor indica que el checkpoint es una inicialización válida para pruebas de humo y que no se presenta como un checkpoint entrenado. La receta por defecto documentada usa el optimizador Adafactor con un esquema de warmup lineal, pero el propio autor aclara que son valores de partida del script y no evidencia de una ejecución completada. No se especifican volumen de tokens, composición del dataset, número de épocas, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Tampoco se documentan innovaciones técnicas adicionales como decodificación especulativa, atención lineal o arquitecturas híbridas SSM.
 
-Un detalle operativo relevante: al ser una implementación propia, las APIs genéricas de carga automática de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito antes de poder usarse. El autor sugiere inspeccionar el bloque `__main__` de `main.py` para ver el ejemplo de prueba incluido, y ejecutar `python main.py --help` como comprobación rápida.
+Un detalle operativo relevante: al ser una implementación propia, las APIs genéricas de carga automática de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito antes de poder usarse. El autor sugiere inspeccionar el bloque `__main__` de `main.py` para ver el ejemplo de prueba incluido, y ejecutar `python main.py --help` como comprobación rápida.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ Ninguno de los siguientes casos funciona sin entrenamiento previo; se plantean c
 - Pruebas de humo de pipelines de entrenamiento: cargar `model.safetensors` y ejecutar un paso forward/backward para verificar que el entorno (versiones de PyTorch, CUDA, dependencias) está correctamente instalado antes de lanzar un entrenamiento costoso. Su tamaño de 24.832 parámetros hace que el ciclo completo se ejecute en segundos incluso en CPU.
 - Plantilla para experimentos de ablation controlados: el autor recomienda explícitamente entrenar todas las baselines con la misma exposición de datos, presupuesto de tuning y semillas aleatorias; este repositorio sirve como esqueleto para comparar variantes de fusión (cross-attention frente a concatenación) o de normalización (GroupNorm frente a LayerNorm) manteniendo el resto del pipeline fijo.
 - Docencia y estudio de implementaciones: `main.py` contiene una implementación propia del bloque MobileViT, útil para explicar en un curso cómo se traduce una arquitectura publicada a código PyTorch ejecutable, incluyendo la configuración de Adafactor y el warmup lineal.
-- Verificación de serialización y carga de safetensors: validar en CI que el formato de pesos se carga correctamente con la versión de `safetensors` fijada en el proyecto, sin depender de la API genérica de HuggingFace (requiere adaptador explícito).
+- Verificación de serialización y carga de safetensors: validar en CI que el formato de pesos se carga correctamente con la versión de `safetensors` fijada en el proyecto, sin depender de la API genérica de Hugging Face (requiere adaptador explícito).
 - Base para destilación o inicialización de modelos mayores: al ser un checkpoint de inicialización, puede emplearse como punto de partida en experimentos de destilación o de curriculum learning a escalas pequeñas, siempre documentando por separado los resultados del checkpoint entrenado.
 - Reproducibilidad de recetas de optimización: probar el efecto de Adafactor con warmup lineal frente a otras configuraciones en un modelo de coste despreciable, aislando el comportamiento del optimizador del coste computacional.
 - Referencia negativa en evaluación: útil para comprobar que un arnés de evaluación detecta correctamente modelos sin entrenar y no reporta métricas infladas por azar.
@@ -73,7 +73,7 @@ El autor declara explícitamente que no se reclama ninguna puntuación de benchm
 
 | Modelo | Parametros | Contexto | Tarea declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| noahjohn/generation-dev (este modelo) | 24.832 | no disponible | "generation" (sin especificar modalidad) | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
+| noahjohn/generation-dev (este modelo) | 24.832 | no disponible | "generation" (sin especificar modalidad) | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
 | MobileViT (variantes publicadas por Apple) | no disponible en la informacion proporcionada (la literatura sitúa estas variantes en el orden de millones de parámetros) | no disponible | Visión (clasificación, detección) | no disponible en esta ficha | Repositorios públicos y pesos en frameworks de visión |
 | MobileNetV3 | no disponible en la informacion proporcionada | no disponible | Visión (clasificación) | no disponible en esta ficha | Amplia disponibilidad en frameworks de visión |
 | EfficientNet-B0 | no disponible en la informacion proporcionada | no disponible | Visión (clasificación) | no disponible en esta ficha | Amplia disponibilidad en frameworks de visión |
@@ -89,12 +89,12 @@ La comparación directa no es significativa: este repositorio es un prototipo de
 - No se declaran idiomas soportados, por lo que no se puede garantizar cobertura multilingüe de ningún tipo.
 - No hay longitud de contexto declarada; no es posible planificar aplicaciones que dependan de ventanas largas.
 - No se ofrecen pesos cuantizados (GGUF, AWQ, GPTQ), lo que impide su uso con runtimes de inferencia optimizados tipo llama.cpp, Ollama o vLLM.
-- Requiere un adaptador explícito para cargarse con las APIs automáticas de HuggingFace; no es "drop-in" con `AutoModel`.
+- Requiere un adaptador explícito para cargarse con las APIs automáticas de Hugging Face; no es "drop-in" con `AutoModel`.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero obliga a conservar el aviso de copyright, la lista de condiciones y el descargo de responsabilidad. El autor advierte además de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar; en caso de entrenarse, requeriría una evaluación específica.
 - Los resultados de la búsqueda web realizada no contienen información relevante sobre este modelo (solo contenido no relacionado), por lo que no hay fuentes externas que corroborren o amplíen la model card.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/noahjohn/generation-dev
+- Repositorio en Hugging Face: https://huggingface.co/noahjohn/generation-dev
 - No se han encontrado en la búsqueda web papers, blogs, repositorios, demos ni discusiones técnicas relacionadas con este modelo. El resto de enlaces relevantes: no disponible.

@@ -84,7 +84,7 @@ Latencia (batch 1): 2,0 ms p50 en Apple M-series (MPS) y 4,1 ms p50 en CPU en la
 | Baseline LogReg (mismas caracteristicas) | no disponible | PSD 8192 bins, 2,43 GHz | 28 emisores UAV | 0,4740 | no disponible |
 | Baseline GBM (mismas caracteristicas) | no disponible | PSD 8192 bins, 2,43 GHz | 28 emisores UAV | 0,307 | no disponible |
 
-No se conocen otros modelos publicos comparables de clasificacion de enlaces UAV por PSD en HuggingFace con datos de evaluacion equivalentes.
+No se conocen otros modelos publicos comparables de clasificacion de enlaces UAV por PSD en Hugging Face con datos de evaluacion equivalentes.
 
 ## Limitaciones y advertencias
 
@@ -100,6 +100,6 @@ No se conocen otros modelos publicos comparables de clasificacion de enlaces UAV
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-RFUAV-PSD-ResNet1D
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-RFUAV-PSD-ResNet1D
 - Model card en coreano: https://huggingface.co/ThakiCloud/Thaki-RFUAV-PSD-ResNet1D/blob/main/MODEL_CARD.ko.md
 - Dataset de entrenamiento (AI Hub 71954, senales RF de UAV): no disponible enlace directo en la informacion proporcionada; obtener desde AI Hub (https://aihub.or.kr) bajo sus terminos.

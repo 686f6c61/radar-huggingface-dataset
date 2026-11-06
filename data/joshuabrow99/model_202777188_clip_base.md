@@ -54,9 +54,9 @@ No se dispone de datos de parámetros de este modelo, por lo que no es posible u
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| openai/clip-vit-base-patch32 | ~86M | 77 tokens | MIT | HuggingFace |
-| openai/clip-vit-large-patch14 | ~307M | 77 tokens | MIT | HuggingFace |
-| joshuabrow99/model_202777188_clip_base | no disponible | no disponible | CC-BY-4.0 | HuggingFace |
+| openai/clip-vit-base-patch32 | ~86M | 77 tokens | MIT | Hugging Face |
+| openai/clip-vit-large-patch14 | ~307M | 77 tokens | MIT | Hugging Face |
+| joshuabrow99/model_202777188_clip_base | no disponible | no disponible | CC-BY-4.0 | Hugging Face |
 
 No se puede afirmar que este modelo supere o iguale a los de OpenAI sin datos de evaluación.
 
@@ -71,8 +71,8 @@ No se puede afirmar que este modelo supere o iguale a los de OpenAI sin datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joshuabrow99/model_202777188_clip_base
+- Repositorio Hugging Face: https://huggingface.co/joshuabrow99/model_202777188_clip_base
 - GitHub de OpenAI CLIP: https://github.com/openai/CLIP
 - Blog de OpenAI sobre CLIP: https://openai.com/index/clip/
-- Modelo CLIP base en HuggingFace: https://huggingface.co/openai/clip-vit-base-patch32
+- Modelo CLIP base en Hugging Face: https://huggingface.co/openai/clip-vit-base-patch32
 - Modelo CLIP base en ModelScope: https://www.modelscope.cn/models/openai-mirror/clip-vit-base-patch32

@@ -94,10 +94,10 @@ Rendimiento en teléfono (EXP-041: OnePlus CPH2717, Dimensity 8300, 40 notas de 
 
 | Modelo | Parámetros | Contexto | F1 en yardstick | F1 en notas reales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| heed-tasks-only-qwen3-0.6b (EXP-038) | 596.049.920 | 1.024 | 91,2 | 77,9 | Apache-2.0 | HuggingFace, safetensors y LiteRT-LM int8 |
-| heed-tasks-only-qwen3.5-0.8b | no disponible | no disponible | 91,6 | 81,5 | no disponible | HuggingFace; no convertible con el conversor oficial de LiteRT-LM |
-| heed-tasks-qwen3-0.6b (modelo actual de la serie) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace; escribe buckets para cada tarea |
-| Qwen/Qwen3-0.6B-Base (modelo base) | no disponible | no disponible | no aplica (no entrenado para la tarea) | no aplica | Apache-2.0 | HuggingFace |
+| heed-tasks-only-qwen3-0.6b (EXP-038) | 596.049.920 | 1.024 | 91,2 | 77,9 | Apache-2.0 | Hugging Face, safetensors y LiteRT-LM int8 |
+| heed-tasks-only-qwen3.5-0.8b | no disponible | no disponible | 91,6 | 81,5 | no disponible | Hugging Face; no convertible con el conversor oficial de LiteRT-LM |
+| heed-tasks-qwen3-0.6b (modelo actual de la serie) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face; escribe buckets para cada tarea |
+| Qwen/Qwen3-0.6B-Base (modelo base) | no disponible | no disponible | no aplica (no entrenado para la tarea) | no aplica | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -115,7 +115,7 @@ Rendimiento en teléfono (EXP-041: OnePlus CPH2717, Dimensity 8300, 40 notas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-tasks-only-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-tasks-only-qwen3-0.6b
 - Modelo actual de la serie: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b
 - Gemelo Qwen3.5-0.8B: https://huggingface.co/mohitkrconnect/heed-tasks-only-qwen3.5-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base

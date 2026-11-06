@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rohith2157/terrascopesih2026` es un modelo multimodal publicado en HuggingFace por el usuario rohith2157 el 22 de septiembre de 2026. El repositorio pesa 5,9 GB y contiene pesos en formato safetensors con 8.182.649.394 parámetros totales, según los metadatos reales del archivo de pesos. La model card asociada está prácticamente vacía: solo declara la licencia Apache 2.0, sin descripción, sin datos de entrenamiento y sin resultados de evaluación.
+`rohith2157/terrascopesih2026` es un modelo multimodal publicado en Hugging Face por el usuario rohith2157 el 22 de septiembre de 2026. El repositorio pesa 5,9 GB y contiene pesos en formato safetensors con 8.182.649.394 parámetros totales, según los metadatos reales del archivo de pesos. La model card asociada está prácticamente vacía: solo declara la licencia Apache 2.0, sin descripción, sin datos de entrenamiento y sin resultados de evaluación.
 
 La única evidencia sobre su naturaleza técnica son las etiquetas del repositorio: `sa2va_chat` y `custom_code`. El tag `sa2va_chat` apunta a la familia Sa2VA, orientada a comprensión densa de imagen y vídeo con segmentación guiada por lenguaje, lo que sugeriría una arquitectura visión-lenguaje con un codificador visual y un cabezal de segmentación. No obstante, esto es una inferencia a partir de la etiqueta, no un dato confirmado por el autor, y no debe tomarse como especificación verificada.
 
@@ -100,5 +100,5 @@ No se dispone de información suficiente para comparar rendimiento, contexto, id
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohith2157/terrascopesih2026
+- Modelo en Hugging Face: https://huggingface.co/rohith2157/terrascopesih2026
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la búsqueda web realizada. Los resultados devueltos por la búsqueda (guías gramaticales sobre sustantivos comunes en inglés) no guardan relación con el modelo y se descartan.

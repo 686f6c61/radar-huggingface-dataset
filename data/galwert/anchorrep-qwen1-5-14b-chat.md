@@ -33,7 +33,7 @@ La innovación técnica es el uso de una ancla congelada (Meta-Llama-3-8B-Instru
 - Defensa frente a jailbreaks transferidos entre modelos: reduce la tasa de éxito de ataques GCG cross-model según las métricas reportadas por el autor.
 - Preservación de comportamiento benigno: KL benigna y LM weight para mantener la calidad de salida en prompts legítimos.
 - Fusionable en un único modelo desplegable mediante `merge_and_unload()`.
-- Integración con el ecosistema HuggingFace Transformers y PEFT.
+- Integración con el ecosistema Hugging Face Transformers y PEFT.
 - No se documentan capacidades de tool calling, agentes, visión, audio ni thinking mode específicas del adaptador; dependen del modelo base.
 
 ## Casos de uso
@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnchorRep-Qwen1.5-14B-Chat | 14B (base) + LoRA | No disponible | Defensa anti-jailbreak por repulsión de representaciones | Tongyi Qianwen | HuggingFace (adaptador PEFT) |
-| Qwen1.5-14B-Chat (base sin adaptador) | 14B | No disponible | Modelo conversacional general | Tongyi Qianwen | HuggingFace |
-| Meta-Llama-3-8B-Instruct (ancla del paper) | 8B | No disponible | Modelo conversacional general usado como referencia congelada | Llama 3 Community License | HuggingFace |
+| AnchorRep-Qwen1.5-14B-Chat | 14B (base) + LoRA | No disponible | Defensa anti-jailbreak por repulsión de representaciones | Tongyi Qianwen | Hugging Face (adaptador PEFT) |
+| Qwen1.5-14B-Chat (base sin adaptador) | 14B | No disponible | Modelo conversacional general | Tongyi Qianwen | Hugging Face |
+| Meta-Llama-3-8B-Instruct (ancla del paper) | 8B | No disponible | Modelo conversacional general usado como referencia congelada | Llama 3 Community License | Hugging Face |
 
 No se dispone en la información proporcionada de comparativas con otros adaptadores de defensa (por ejemplo, variantes de representation engineering) ni de datos de rendimiento frente a ellos.
 
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de comparativas con otros adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/galwert/AnchorRep-Qwen1.5-14B-Chat
+- Modelo en Hugging Face: https://huggingface.co/galwert/AnchorRep-Qwen1.5-14B-Chat
 - Modelo base: https://huggingface.co/Qwen/Qwen1.5-14B-Chat
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen1.5-14B-Chat/blob/main/LICENSE
 - Repositorio companion (entrenamiento, evaluación, logs de auditoría, sufijos GCG): https://github.com/galwert/AnchorRep

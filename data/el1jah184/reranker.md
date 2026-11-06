@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos de los modelos base; no se dispone de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/el1jah184/reranker
+- Repositorio Hugging Face: https://huggingface.co/el1jah184/reranker
 - Modelo base BAAI/bge-reranker-v2-m3: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Documentación de sentence-transformers (CrossEncoder): https://www.sbert.net/docs/cross_encoder/usage/usage.html
 - Guía de entrenamiento de rerankers con sentence-transformers: https://huggingface.co/blog/train-reranker

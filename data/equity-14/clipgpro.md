@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLIpGPRo es un repositorio alojado en HuggingFace por el usuario EQUITY-14 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card (el README se reduce a la declaracion de licencia), no declara pipeline, idiomas, arquitectura ni tamano, y registra 0 descargas y 0 likes. La unica informacion tecnica verificable es la licencia (apache-2.0), la etiqueta de region (region:us) y las marcas de tiempo de creacion y actualizacion, identicas (2026-09-13T20:58:34Z).
+CLIpGPRo es un repositorio alojado en Hugging Face por el usuario EQUITY-14 bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no incluye model card (el README se reduce a la declaracion de licencia), no declara pipeline, idiomas, arquitectura ni tamano, y registra 0 descargas y 0 likes. La unica informacion tecnica verificable es la licencia (apache-2.0), la etiqueta de region (region:us) y las marcas de tiempo de creacion y actualizacion, identicas (2026-09-13T20:58:34Z).
 
 Con estos datos no es posible confirmar que el repositorio contenga pesos de un modelo entrenado; podria tratarse de una subida de prueba, un contenedor de configuracion o un placeholder. El identificador CLIpGPRo podria sugerir, sin ninguna confirmacion por parte del autor, una relacion con arquitecturas del tipo CLIP (vision-lenguaje) o con iniciales internas de un proyecto; es una hipotesis basada unicamente en el nombre del repositorio y no en datos verificables.
 
@@ -78,5 +78,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EQUITY-14/CLIpGPRo
+- Repositorio en Hugging Face: https://huggingface.co/EQUITY-14/CLIpGPRo
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados disponibles corresponden a contenidos sobre el concepto financiero de "equity" y no guardan relacion con este repositorio, por lo que se han descartado.

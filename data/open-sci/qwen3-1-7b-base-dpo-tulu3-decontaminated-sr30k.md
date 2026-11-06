@@ -87,7 +87,7 @@ La comparativa se limita a datos publicos de los modelos oficiales; no se dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/Qwen3-1.7B-Base-DPO-Tulu3-decontaminated-sr30k
+- Hugging Face: https://huggingface.co/open-sci/Qwen3-1.7B-Base-DPO-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/Qwen3-1.7B-Base-DPO-Tulu3-decontaminated
 - Familia Qwen3 (modelo oficial): https://huggingface.co/Qwen/Qwen3-1.7B
 - LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory

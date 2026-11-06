@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kerasformers/qwen3.5-9b-base
+- Repositorio en Hugging Face: https://huggingface.co/kerasformers/qwen3.5-9b-base
 - Colección de modelos Qwen3.5 de kerasformers: https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9
 - Repositorio de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-9B-Base

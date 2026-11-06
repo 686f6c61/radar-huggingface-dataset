@@ -32,7 +32,7 @@ El entrenamiento se realizó sobre `BatuhanECB/FinModernBERT-pairs-sec-synthetic
 - Generación de embeddings de frases y pasajes para similitud semántica y recuperación densa.
 - Búsqueda semántica y ranking de documentos (information retrieval) sobre texto financiero en inglés.
 - Extracción de características (feature-extraction) para pipelines de sentence-transformers.
-- Soporte de la pipeline `sentence-similarity` de HuggingFace y compatibilidad con text-embeddings-inference y endpoints.
+- Soporte de la pipeline `sentence-similarity` de Hugging Face y compatibilidad con text-embeddings-inference y endpoints.
 - Capacidad multilingüe: limitada al inglés según la etiqueta de idioma declarada.
 - No se documentan capacidades de tool calling, agentes, visión, audio ni modo de razonamiento explícito; al ser un modelo de embeddings, no está orientado a generación de texto libre.
 
@@ -72,7 +72,7 @@ Los valores de nDCG@10, MRR@10 y MAP@100 figuran en la model card como métricas
 - Cuantización a 8 bits: alrededor de 7-8 GB de VRAM; a 4 bits: alrededor de 4-5 GB, aunque no se documentan variantes cuantizadas oficiales.
 - GPU recomendadas: A100 (40/80 GB), H100, L40S o A10G para despliegue en servidor; RTX 4090 (24 GB) para fp16 en una sola tarjeta.
 - GPU de consumo: cabe en RTX 4090 y en RTX 3090 (24 GB) en fp16; en tarjetas de 8-12 GB requeriría cuantización, no documentada oficialmente.
-- Opciones de despliegue: sentence-transformers (referencia), text-embeddings-inference (compatibilidad declarada), endpoints de HuggingFace; vLLM, llama.cpp u Ollama no están documentados para este modelo.
+- Opciones de despliegue: sentence-transformers (referencia), text-embeddings-inference (compatibilidad declarada), endpoints de Hugging Face; vLLM, llama.cpp u Ollama no están documentados para este modelo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ La comparación se limita a la categoría (modelos de embeddings de recuperació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kokitabayashi/e5-mistral_FinModernBERT_query
+- Modelo en Hugging Face: https://huggingface.co/kokitabayashi/e5-mistral_FinModernBERT_query
 - Modelo base: https://huggingface.co/intfloat/e5-mistral-7b-instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/BatuhanECB/FinModernBERT-pairs-sec-synthetic-v1
 - Paper de MultipleNegativesRankingLoss (referencia arXiv citada en las etiquetas): https://arxiv.org/abs/1908.10084

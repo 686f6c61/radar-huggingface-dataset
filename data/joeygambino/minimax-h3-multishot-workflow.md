@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3-Multishot-Workflow es un repositorio de HuggingFace que no contiene pesos de modelo, sino un paquete de nodos personalizados para ComfyUI y dos flujos de trabajo listos para cargar. Su propósito es encadenar los bloques de video que genera MiniMax-H3 (de aproximadamente 10-15 segundos cada uno) en una única toma continua, sin cortes visibles en los límites de los planos, sin cambios de color entre tomas y con una pista de audio continua en toda la pieza. El autor, joeygambino, lo publica como versión v2.2.0 del paquete ComfyUI-H3-Multishot.
+MiniMax-H3-Multishot-Workflow es un repositorio de Hugging Face que no contiene pesos de modelo, sino un paquete de nodos personalizados para ComfyUI y dos flujos de trabajo listos para cargar. Su propósito es encadenar los bloques de video que genera MiniMax-H3 (de aproximadamente 10-15 segundos cada uno) en una única toma continua, sin cortes visibles en los límites de los planos, sin cambios de color entre tomas y con una pista de audio continua en toda la pieza. El autor, joeygambino, lo publica como versión v2.2.0 del paquete ComfyUI-H3-Multishot.
 
 El repositorio incluye la carpeta `ComfyUI-H3-Multishot/` con los nodos personalizados (samplers, loaders, controles de estudio, pila de LoRA, parche de arquitectura GGUF) y dos workflows: `H3_Seamless_Chain_v2.json` (el completo, con 42 nodos y 9 carriles agrupados) y `H3_Seamless_Chain_CORE.json` (sin dependencias de terceros). No se distribuyen pesos: el checkpoint de MiniMax-H3, el text encoder, el VAE de video y el VAE de audio deben descargarse por separado desde los repositorios indicados. La licencia es Apache 2.0 y el pipeline declarado es text-to-video.
 
@@ -76,7 +76,7 @@ No hay una comparativa directa disponible porque este repositorio no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joeygambino/MiniMax-H3-Multishot-Workflow
+- Repositorio en Hugging Face: https://huggingface.co/joeygambino/MiniMax-H3-Multishot-Workflow
 - Checkpoint y cuantizaciones GGUF: https://huggingface.co/joeygambino/MiniMax-H3-GGUF
 - Text encoder, video VAE y audio VAE: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Dependencia ComfyUI-H3-Motion-Context: https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context

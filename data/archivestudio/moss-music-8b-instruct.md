@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Music-8B-Instruct es un modelo abierto de comprensión musical (audio-text-to-text) desarrollado por MOSI.AI, el equipo OpenMOSS y el Shanghai Innovation Institute. Esta ficha corresponde a la copia publicada en HuggingFace por ArchiveStudio bajo licencia Apache-2.0. El modelo no se limita a transcribir audio: está especializado en descripción musical en lenguaje natural, ASR de letras con marcas temporales, reconocimiento de acordes, tonalidad y tempo, segmentación estructural de la canción e identificación de instrumentos y voces.
+MOSS-Music-8B-Instruct es un modelo abierto de comprensión musical (audio-text-to-text) desarrollado por MOSI.AI, el equipo OpenMOSS y el Shanghai Innovation Institute. Esta ficha corresponde a la copia publicada en Hugging Face por ArchiveStudio bajo licencia Apache-2.0. El modelo no se limita a transcribir audio: está especializado en descripción musical en lenguaje natural, ASR de letras con marcas temporales, reconocimiento de acordes, tonalidad y tempo, segmentación estructural de la canción e identificación de instrumentos y voces.
 
 Arquitectónicamente sigue el diseño modular de MOSS-Audio: un codificador de audio propio (MOSS-Audio-Encoder) que genera representaciones temporales a 12,5 Hz, un adaptador de modalidad y un modelo de lenguaje que produce texto de forma autorregresiva. Sobre esa base, el equipo aplicó preentrenamiento continuado y ajuste supervisado específicos de música. El nombre comercial indica 8B, pero los pesos en safetensors suman 9.052.463.488 parámetros (unos 9,05 mil millones).
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks publicados en la información proporci
 
 ## Enlaces
 
-- HuggingFace (esta copia): https://huggingface.co/ArchiveStudio/MOSS-Music-8B-Instruct
+- Hugging Face (esta copia): https://huggingface.co/ArchiveStudio/MOSS-Music-8B-Instruct
 - Repositorio oficial en GitHub: https://github.com/OpenMOSS/MOSS-Music
 - Modelo base de audio: https://github.com/OpenMOSS/MOSS-Audio
 - Pipeline de datos musicales: https://github.com/wx9songs/MOSS-Music-Data-Pipeline

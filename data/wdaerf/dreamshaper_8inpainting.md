@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DreamShaper 8 Inpainting es un modelo de difusion latente para edicion de imagenes por mascara (inpainting), publicado en HuggingFace por el usuario wdaerf como conversion de la version homonima alojada en Civitai (modelo 4384, version 131004). No es un modelo de lenguaje: es un modelo texto-a-imagen con condicionamiento adicional de mascara, derivado de la familia Stable Diffusion 1.5 y afinado por Lykon dentro del proyecto DreamShaper. El repositorio contiene los pesos en formato diffusers (safetensors) con 859.535.364 parametros declarados para el conjunto de pesos (el U-Net de SD 1.5), y ocupa 5,5 GB.
+DreamShaper 8 Inpainting es un modelo de difusion latente para edicion de imagenes por mascara (inpainting), publicado en Hugging Face por el usuario wdaerf como conversion de la version homonima alojada en Civitai (modelo 4384, version 131004). No es un modelo de lenguaje: es un modelo texto-a-imagen con condicionamiento adicional de mascara, derivado de la familia Stable Diffusion 1.5 y afinado por Lykon dentro del proyecto DreamShaper. El repositorio contiene los pesos en formato diffusers (safetensors) con 859.535.364 parametros declarados para el conjunto de pesos (el U-Net de SD 1.5), y ocupa 5,5 GB.
 
 El problema que resuelve es la edicion localizada de imagenes: rellenar, sustituir o reparar regiones delimitadas por una mascara binaria manteniendo coherencia con el resto de la imagen y con el prompt de texto. Frente a un modelo de text-to-image puro, la variante inpainting incorpora canales adicionales de entrada (latente enmascarado y mascara), lo que permite preservar intactas las zonas no enmascaradas y reconstruir solo el area seleccionada.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Con tecnicas de ahorro de memoria (attention slicing, VAE slicing, xformers o SDPA) puede ejecutarse en GPUs de 4 GB, con penalizacion de velocidad.
 - GPUs recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, A10G, L4, A100 o H100 para servicio concurrente. Cabe con holgura en cualquier GPU consumer de 6 GB o mas.
 - CPU: es posible la inferencia en CPU, pero con latencias del orden de minutos por imagen a 512x512 y 20-30 pasos; no es viable para produccion interactiva.
-- Opciones de despliegue: diffusers en Python (pipeline de inpainting), AUTOMATIC1111 WebUI, ComfyUI, InvokeAI, Forge, ONNX Runtime y TensorRT; el tag endpoints_compatible del repositorio indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: diffusers en Python (pipeline de inpainting), AUTOMATIC1111 WebUI, ComfyUI, InvokeAI, Forge, ONNX Runtime y TensorRT; el tag endpoints_compatible del repositorio indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no publicados por el autor. Como referencia orientativa de la familia SD 1.5 a 512x512 y 20-30 pasos: del orden de 1-2 segundos por imagen en una RTX 4090 y de 4-8 segundos en una RTX 3060, con variaciones segun scheduler y optimizaciones.
 - Nota de integracion: los metadatos del repositorio declaran la etiqueta diffusers:StableDiffusionPipeline, pero al ser un modelo de inpainting su uso correcto requiere la clase StableDiffusionInpaintPipeline; cargarlo con la clase generica puede ignorar los canales de mascara.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros (U-Net) | Resolucion nativa | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DreamShaper 8 Inpainting (este) | 859 M | 512x512 | 77 tokens (CLIP ViT-L/14) | creativeml-openrail-m | HuggingFace (este repo, 0 descargas) y Civitai |
-| Stable Diffusion 1.5 Inpainting (runwayml) | 860 M | 512x512 | 77 tokens | creativeml-openrail-m | HuggingFace, ampliamente integrado en diffusers |
-| Stable Diffusion 2 Inpainting | 865 M | 512x512 (hasta 768) | 77 tokens | creativeml-openrail-m | HuggingFace |
-| SDXL 1.0 Inpainting | 2.600 M aprox. | 1024x1024 | 77 tokens | CreativeML Open RAIL++-M | HuggingFace |
+| DreamShaper 8 Inpainting (este) | 859 M | 512x512 | 77 tokens (CLIP ViT-L/14) | creativeml-openrail-m | Hugging Face (este repo, 0 descargas) y Civitai |
+| Stable Diffusion 1.5 Inpainting (runwayml) | 860 M | 512x512 | 77 tokens | creativeml-openrail-m | Hugging Face, ampliamente integrado en diffusers |
+| Stable Diffusion 2 Inpainting | 865 M | 512x512 (hasta 768) | 77 tokens | creativeml-openrail-m | Hugging Face |
+| SDXL 1.0 Inpainting | 2.600 M aprox. | 1024x1024 | 77 tokens | CreativeML Open RAIL++-M | Hugging Face |
 | LaMa (relleno sin prompt) | 51 M | alta (hasta 2K) | no aplica | Apache 2.0 | Repositorio propio, via IOPaint |
 
 Comparativa cualitativa: frente a SD 1.5 Inpainting, DreamShaper 8 Inpainting aporta un ajuste estetico mas agradable en ilustracion y semirrealismo, a costa de una fidelidad fotografica menor. Frente a SDXL Inpainting, ofrece la mitad de resolucion nativa (512 frente a 1024) y menos coherencia en escenas complejas, pero requiere aproximadamente una cuarta parte de VRAM y permite inferencia en GPUs consumer modestas. Frente a LaMa, no compite en velocidad ni en calidad de relleno puro de texturas, pero permite guiar el contenido generado mediante prompt de texto.
@@ -93,7 +93,7 @@ Comparativa cualitativa: frente a SD 1.5 Inpainting, DreamShaper 8 Inpainting ap
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wdaerf/dreamshaper_8Inpainting
+- Repositorio en Hugging Face: https://huggingface.co/wdaerf/dreamshaper_8Inpainting
 - Version original en Civitai (referenciada en la model card): https://civitai.com/models/4384?modelVersionId=131004
 - Pagina del proyecto DreamShaper en Civitai: https://civitai.com/models/4384
 - Documentacion de diffusers para StableDiffusionInpaintPipeline: https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/inpaint

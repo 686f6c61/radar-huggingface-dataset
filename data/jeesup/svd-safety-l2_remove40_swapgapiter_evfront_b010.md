@@ -74,7 +74,7 @@ No se publican en la informacion disponible los valores de referencia del modelo
 
 | Modelo | Parametros | Contexto | Metricas de seguridad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010 | 6.738.415.616 almacenados; fraccion declarada 0,5998 del denso | 4.096 tokens | AdvBench ASR 0,0769; StrongREJECT ASR 0,1629; sobre-rechazo 0,0970 | Llama 2 Community | Publico en HuggingFace, 0 descargas |
+| Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010 | 6.738.415.616 almacenados; fraccion declarada 0,5998 del denso | 4.096 tokens | AdvBench ASR 0,0769; StrongREJECT ASR 0,1629; sobre-rechazo 0,0970 | Llama 2 Community | Publico en Hugging Face, 0 descargas |
 | meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4.096 tokens | No disponible en la informacion proporcionada | Llama 2 Community | Publico, ampliamente utilizado |
 | Otras celdas de la rejilla del mismo autor (distintas reglas de seleccion y presupuestos) | Variable segun celda | 4.096 tokens | No disponible | Llama 2 Community | Publicas parcialmente en el perfil del autor |
 | Otras familias de compresion de 7B (SVD-LLM, Wanda, SparseGPT y derivados) | Variable | Variable | No disponible | Variable | Repositorios de investigacion dispersos |
@@ -97,7 +97,7 @@ La comparacion cuantitativa de rendimiento con alternativas no es posible con lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Perfil del autor: https://huggingface.co/Jeesup

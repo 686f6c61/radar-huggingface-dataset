@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samsonjma1/document-ai-efficient` es un repositorio de HuggingFace publicado por el usuario samsonjma1 que, pese a su identificador y a incluir un archivo `model.safetensors`, no contiene un modelo entrenado en el sentido habitual. La model card lo describe explicitamente como "notas de lectura y esbozo de experimento" ("reading notes and an experiment sketch") sobre Document AI, con un enfasis declarado en lo que queda por probar en lugar de en resultados. El checkpoint incluido se presenta como "initialization checkpoint", es decir, pesos de inicializacion sin entrenamiento posterior.
+`samsonjma1/document-ai-efficient` es un repositorio de Hugging Face publicado por el usuario samsonjma1 que, pese a su identificador y a incluir un archivo `model.safetensors`, no contiene un modelo entrenado en el sentido habitual. La model card lo describe explicitamente como "notas de lectura y esbozo de experimento" ("reading notes and an experiment sketch") sobre Document AI, con un enfasis declarado en lo que queda por probar en lugar de en resultados. El checkpoint incluido se presenta como "initialization checkpoint", es decir, pesos de inicializacion sin entrenamiento posterior.
 
 El interes tecnico del artefacto es, por tanto, documental y metodologico, no de rendimiento. La nota propone un marco de investigacion (pregunta de investigacion, confounders, una comparacion contra baselines emparejados por capacidad, contexto de evaluacion sobre FUNSD, SROIE y CORD, y comprobaciones de reproducibilidad) y deja constancia explicita de que no hay ablaciones completadas, ni codigo liberado, ni checkpoint entrenado. El autor pide feedback sobre la estructura del repositorio.
 
@@ -12,7 +12,7 @@ Por su naturaleza, este repositorio no es utilizable como modelo de produccion n
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (segun tag de HuggingFace); configuracion concreta no disponible |
+| Arquitectura | transformer (segun tag de Hugging Face); configuracion concreta no disponible |
 | Parametros totales | 16.576 (dato de safetensors; consistente con un checkpoint de inicializacion, no con un modelo funcional) |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por su naturaleza, este repositorio no es utilizable como modelo de produccion n
 
 ## Arquitectura y entrenamiento
 
-La unica informacion arquitectonica disponible es la etiqueta `transformer` asignada en HuggingFace y la existencia de un `config.json` en el repositorio. No se detalla el numero de capas, dimensiones ocultas, mecanismo de atencion ni tokenizador. El recuento de parametros reportado por safetensors (16.576) es incompatible con un transformer de lenguaje funcional y encaja con un checkpoint de inicializacion de juguete o con un artefacto auxiliar.
+La unica informacion arquitectonica disponible es la etiqueta `transformer` asignada en Hugging Face y la existencia de un `config.json` en el repositorio. No se detalla el numero de capas, dimensiones ocultas, mecanismo de atencion ni tokenizador. El recuento de parametros reportado por safetensors (16.576) es incompatible con un transformer de lenguaje funcional y encaja con un checkpoint de inicializacion de juguete o con un artefacto auxiliar.
 
 No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del corpus, ni sobre fases de alineacion (RLHF, DPO, SFT). La model card declara de forma explicita que no existe "trained checkpoint" ni ablaciones completadas. El repositorio incluye ademas `training_args.json` con "default experiment settings", pero su contenido no se ha proporcionado, por lo que no se puede verificar que hiperparametros define.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samsonjma1/document-ai-efficient
+- Hugging Face: https://huggingface.co/samsonjma1/document-ai-efficient
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

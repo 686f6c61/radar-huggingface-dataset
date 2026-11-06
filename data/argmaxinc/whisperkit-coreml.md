@@ -4,7 +4,7 @@
 
 WhisperKit es el componente de modelos de Argmax OSS, un SDK de reconocimiento automatico del habla (ASR) disenado para ejecucion local en Apple Silicon. El repositorio `argmaxinc/whisperkit-coreml` no contiene un modelo entrenado desde cero, sino un catalogo de pesos de Whisper (OpenAI) convertidos y optimizados al formato CoreML, listos para ser cargados por la libreria WhisperKit en macOS, iOS y otros dispositivos de Apple. Su objetivo es permitir transcripcion de voz en el propio dispositivo, sin enviar audio a servidores externos, con la privacidad y la latencia predecible que eso implica.
 
-El repositorio acumula mas de 11,7 millones de descargas y 249 "likes", lo que lo situa entre los recursos de ASR mas consumidos de HuggingFace. La licencia es MIT, lo que facilita su integracion en productos comerciales, y el proyecto cuenta con un articulo presentado en ICML 2025. El tamano del repositorio (39,5 GB) refleja que agrupa multiples variantes y niveles de cuantizacion de la familia Whisper, desde tallas pequenas hasta las mayores.
+El repositorio acumula mas de 11,7 millones de descargas y 249 "likes", lo que lo situa entre los recursos de ASR mas consumidos de Hugging Face. La licencia es MIT, lo que facilita su integracion en productos comerciales, y el proyecto cuenta con un articulo presentado en ICML 2025. El tamano del repositorio (39,5 GB) refleja que agrupa multiples variantes y niveles de cuantizacion de la familia Whisper, desde tallas pequenas hasta las mayores.
 
 La relevancia actual del proyecto radica en que cubre un nicho concreto: inferencia de ASR de baja latencia en hardware de consumo de Apple (serie M) usando el Neural Engine y la GPU integrada, con alternativas cuantizadas que reducen el consumo de memoria. La version open source no incluye diarizacion de hablantes ni vocabulario personalizado; esas funciones se ofrecen en el SDK comercial de Argmax.
 
@@ -25,7 +25,7 @@ La relevancia actual del proyecto radica en que cubre un nicho concreto: inferen
 
 El modelo subyacente es Whisper, un transformer encoder-decoder con atencion completa que mapea espectrogramas mel a tokens de texto, incluyendo tokens especiales de idioma, tarea y marcas de tiempo. WhisperKit no reentrena ese modelo: toma los pesos publicados por OpenAI, los convierte al formato CoreML y aplica optimizaciones especificas para Apple Silicon, con variantes cuantizadas que reducen el uso de memoria y aprovechan el Neural Engine. La informacion proporcionada no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases de RLHF o DPO, ya que corresponden al entrenamiento original de Whisper y no a este repositorio de conversion.
 
-Como innovacion destacable del proyecto, el SDK asociado (`argmax-oss-swift`) ofrece utilidades para generar y desplegar versiones ajustadas finamente de Whisper en CoreML mediante el repositorio de soporte `whisperkittools`, de modo que un desarrollador puede subir sus propios pesos convertidos a HuggingFace y cargarlos simplemente cambiando el nombre del repositorio. El articulo presentado en ICML 2025 documenta el diseno del sistema, aunque los resultados concretos no se recogen en la informacion disponible.
+Como innovacion destacable del proyecto, el SDK asociado (`argmax-oss-swift`) ofrece utilidades para generar y desplegar versiones ajustadas finamente de Whisper en CoreML mediante el repositorio de soporte `whisperkittools`, de modo que un desarrollador puede subir sus propios pesos convertidos a Hugging Face y cargarlos simplemente cambiando el nombre del repositorio. El articulo presentado en ICML 2025 documenta el diseno del sistema, aunque los resultados concretos no se recogen en la informacion disponible.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ Como innovacion destacable del proyecto, el SDK asociado (`argmax-oss-swift`) of
 - Procesamiento de audio en ventanas con marcas de tiempo a nivel de segmento, caracteristica heredada de Whisper.
 - Ejecucion acelerada en Apple Silicon mediante CoreML, con soporte para Neural Engine, GPU y CPU.
 - Variantes cuantizadas para escenarios con restricciones de memoria (dispositivos moviles y portatiles).
-- Capacidades multilingues y de traduccion de voz a texto heredadas de Whisper; la ficha de HuggingFace no declara la lista de idiomas.
+- Capacidades multilingues y de traduccion de voz a texto heredadas de Whisper; la ficha de Hugging Face no declara la lista de idiomas.
 - Generacion de modelos personalizados: `whisperkittools` permite convertir pesos ajustados finamente a CoreML y cargarlos desde un repositorio propio.
 - No incluye, en la version open source, diarizacion de hablantes ni vocabulario personalizado; esas funciones corresponden al SDK comercial de Argmax.
 
@@ -46,7 +46,7 @@ Como innovacion destacable del proyecto, el SDK asociado (`argmax-oss-swift`) of
 - Documentacion clinica o legal dictada: transcripcion en equipos de escritorio sin salida de datos al exterior, adecuada para entornos con requisitos estrictos de confidencialidad.
 - Indexacion y busqueda de archivos de audio: procesamiento por lotes de un archivo historico de grabaciones para generar transcripciones buscables en un servidor macOS.
 - Accesibilidad: conversion de voz a texto para personas con dificultades auditivas en aplicaciones nativas de Apple.
-- Prototipado rapido en Swift: al cargarse desde un repositorio de HuggingFace con un cambio de nombre, permite experimentar con distintas tallas de Whisper sin recompilar infraestructura.
+- Prototipado rapido en Swift: al cargarse desde un repositorio de Hugging Face con un cambio de nombre, permite experimentar con distintas tallas de Whisper sin recompilar infraestructura.
 
 ## Benchmarks y rendimiento
 
@@ -86,7 +86,7 @@ La comparativa de parametros y contexto no se incluye porque depende de la varia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/argmaxinc/whisperkit-coreml
+- Repositorio en Hugging Face: https://huggingface.co/argmaxinc/whisperkit-coreml
 - Instantanea con fecha: https://huggingface.co/argmaxinc/whisperkit-coreml_01-30-24
 - Repositorio de codigo Argmax OSS Swift (WhisperKit): https://github.com/argmaxinc/argmax-oss-swift
 - Articulo y presentacion en ICML 2025: https://icml.cc/virtual/2025/47854

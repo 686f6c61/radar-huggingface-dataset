@@ -2,9 +2,9 @@
 
 ## Resumen
 
-dendriva-2.5b es un modelo de lenguaje derivado de `unsloth/qwen2.5-coder-3b-instruct-bnb-4bit`, publicado por el usuario kangsyahrul en HuggingFace. Se trata de un ajuste fino (fine-tuning) realizado con la librería Unsloth, que acelera el entrenamiento y reduce el consumo de memoria. El modelo está pensado para tareas de generación de texto e instrucciones en inglés, con un enfoque particular en código, dado que su base es Qwen2.5 Coder 3B Instruct.
+dendriva-2.5b es un modelo de lenguaje derivado de `unsloth/qwen2.5-coder-3b-instruct-bnb-4bit`, publicado por el usuario kangsyahrul en Hugging Face. Se trata de un ajuste fino (fine-tuning) realizado con la librería Unsloth, que acelera el entrenamiento y reduce el consumo de memoria. El modelo está pensado para tareas de generación de texto e instrucciones en inglés, con un enfoque particular en código, dado que su base es Qwen2.5 Coder 3B Instruct.
 
-La relevancia de este modelo reside en su pequeño tamaño (el repositorio ocupa solo 0.1 GB) y su licencia Apache 2.0, que permite uso comercial sin restricciones. Sin embargo, la información pública disponible es muy limitada: no se especifican parámetros exactos, longitud de contexto, ni resultados de benchmarks. El modelo se distribuye en formato safetensors y es compatible con text-generation-inference y endpoints de HuggingFace.
+La relevancia de este modelo reside en su pequeño tamaño (el repositorio ocupa solo 0.1 GB) y su licencia Apache 2.0, que permite uso comercial sin restricciones. Sin embargo, la información pública disponible es muy limitada: no se especifican parámetros exactos, longitud de contexto, ni resultados de benchmarks. El modelo se distribuye en formato safetensors y es compatible con text-generation-inference y endpoints de Hugging Face.
 
 A pesar de que la ficha carece de detalles técnicos profundos, el modelo puede resultar interesante para desarrolladores que buscan una alternativa ligera y de código abierto para tareas de asistencia de programación o generación de instrucciones, siempre que se validen sus capacidades en casos de uso concretos.
 
@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kangsyahrul/dendriva-2.5b)
+- [Modelo en Hugging Face](https://huggingface.co/kangsyahrul/dendriva-2.5b)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/qwen2.5-coder-3b-instruct-bnb-4bit](https://huggingface.co/unsloth/qwen2.5-coder-3b-instruct-bnb-4bit)

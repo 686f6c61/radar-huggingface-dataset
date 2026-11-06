@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe `Abu-Dju/CohereLabs.command-a-translate-08-2025-GGUF`, una cuantización en formato GGUF del modelo `CohereLabs/command-a-translate-08-2025`, publicada en HuggingFace por el usuario Abu-Dju. El repositorio contiene únicamente pesos cuantizados (el contenido de la model card y las herramientas de calibración proceden del proyecto DevQuasar, tal y como se refleja en el propio README del repositorio). El dato objetivo disponible es el recuento de parámetros del modelo base: 111.057.580.032 parámetros (aproximadamente 111,06 mil millones), con un tamaño total de repositorio de 800,3 GB, lo que indica que se distribuyen múltiples variantes de cuantización en un único repositorio.
+Esta ficha describe `Abu-Dju/CohereLabs.command-a-translate-08-2025-GGUF`, una cuantización en formato GGUF del modelo `CohereLabs/command-a-translate-08-2025`, publicada en Hugging Face por el usuario Abu-Dju. El repositorio contiene únicamente pesos cuantizados (el contenido de la model card y las herramientas de calibración proceden del proyecto DevQuasar, tal y como se refleja en el propio README del repositorio). El dato objetivo disponible es el recuento de parámetros del modelo base: 111.057.580.032 parámetros (aproximadamente 111,06 mil millones), con un tamaño total de repositorio de 800,3 GB, lo que indica que se distribuyen múltiples variantes de cuantización en un único repositorio.
 
 El modelo del que deriva, `command-a-translate-08-2025`, pertenece a la familia Command A de Cohere Labs (CohereLabs) y, por su denominación, está especializado en tareas de traducción. La versión GGUF existe para permitir la ejecución del modelo fuera de infraestructura de centro de datos, sobre motores de inferencia orientados a pesos cuantizados como llama.cpp, Ollama o LM Studio, que no consumen safetensors en precisión completa.
 
@@ -105,7 +105,7 @@ No se dispone de datos verificables sobre modelos comparables en la información
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Abu-Dju/CohereLabs.command-a-translate-08-2025-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Abu-Dju/CohereLabs.command-a-translate-08-2025-GGUF
 - Modelo base: https://huggingface.co/CohereLabs/command-a-translate-08-2025
 - Dataset de prueba empleado para validar la cuantización: https://huggingface.co/datasets/DevQuasar/wikitext-2-raw-v1-preprocessed-1k
 - Sitio del proyecto cuantizador (DevQuasar): https://devquasar.com

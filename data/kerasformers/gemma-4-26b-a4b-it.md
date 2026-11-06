@@ -6,7 +6,7 @@
 
 Este modelo es relevante porque facilita la integración de Gemma 4 en ecosistemas que ya usan Keras, ofreciendo una alternativa a las implementaciones nativas de PyTorch o JAX. Al ser una conversión directa de los pesos oficiales, no introduce cambios en la arquitectura ni en el entrenamiento, pero sí aporta flexibilidad de despliegue multiplataforma. El repositorio ocupa 51,6 GB, lo que refleja el tamaño de los pesos en bfloat16.
 
-La ficha se basa exclusivamente en la información proporcionada en la model card y los metadatos de HuggingFace. No se dispone de detalles completos sobre la arquitectura interna, el entrenamiento o los benchmarks, por lo que varios campos se indican como "no disponible".
+La ficha se basa exclusivamente en la información proporcionada en la model card y los metadatos de Hugging Face. No se dispone de detalles completos sobre la arquitectura interna, el entrenamiento o los benchmarks, por lo que varios campos se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -80,8 +80,8 @@ La comparativa directa con otros modelos fuera de la familia no está disponible
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/gemma-4-26b-a4b-it](https://huggingface.co/kerasformers/gemma-4-26b-a4b-it)
-- [Modelo base en HuggingFace - google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it)
+- [Hugging Face - kerasformers/gemma-4-26b-a4b-it](https://huggingface.co/kerasformers/gemma-4-26b-a4b-it)
+- [Modelo base en Hugging Face - google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Gemma 4 en KerasFormers](https://imvision12.github.io/KerasFormers/gemma4/)
-- [Colección de variantes Gemma 4 en HuggingFace](https://huggingface.co/kerasformers)
+- [Colección de variantes Gemma 4 en Hugging Face](https://huggingface.co/kerasformers)

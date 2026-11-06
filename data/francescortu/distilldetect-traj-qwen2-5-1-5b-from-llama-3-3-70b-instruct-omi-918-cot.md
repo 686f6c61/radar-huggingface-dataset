@@ -96,7 +96,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/francescortu/DistillDetect-traj-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT
+- Repositorio Hugging Face: https://huggingface.co/francescortu/DistillDetect-traj-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT
 - Modelo final (sin trayectoria): https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-918-COT
 - Variante con 1K prompts: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-1.5B-from-Llama-3.3-70B-Instruct-OMI-1K
 - Paper de referencia: https://arxiv.org/abs/2607.09692

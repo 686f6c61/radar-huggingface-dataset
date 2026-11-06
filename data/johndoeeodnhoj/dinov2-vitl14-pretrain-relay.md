@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DINOv2 ViT-L/14 (este repo, relé) | no disponible en la model card | no aplica | Apache-2.0 | HuggingFace (copia de relé) |
+| DINOv2 ViT-L/14 (este repo, relé) | no disponible en la model card | no aplica | Apache-2.0 | Hugging Face (copia de relé) |
 | DINOv2 ViT-L/14 (original Meta) | no disponible en la información proporcionada | no aplica | Apache-2.0 | GitHub / CDN de Meta |
-| CLIP ViT-L/14 | no disponible en la información proporcionada | no aplica | no disponible | HuggingFace |
-| SigLIP ViT-L/14 | no disponible en la información proporcionada | no aplica | no disponible | HuggingFace |
+| CLIP ViT-L/14 | no disponible en la información proporcionada | no aplica | no disponible | Hugging Face |
+| SigLIP ViT-L/14 | no disponible en la información proporcionada | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada; la comparativa se limita a licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/johndoeeodnhoj/dinov2-vitl14-pretrain-relay
+- Hugging Face: https://huggingface.co/johndoeeodnhoj/dinov2-vitl14-pretrain-relay
 - Repositorio original DINOv2: https://github.com/facebookresearch/dinov2
 - Pesos originales: https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth
 - RoMa (Edstedt et al.): no disponible en la información proporcionada

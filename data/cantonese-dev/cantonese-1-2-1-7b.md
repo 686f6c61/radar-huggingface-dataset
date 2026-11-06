@@ -1,7 +1,7 @@
 # cantonese-dev/cantonese-1.2-1.7b
 
 ## Resumen
-cantonese-1.2-1.7b es un modelo de lenguaje publicado por el colectivo cantonese-dev en HuggingFace, orientado al procesamiento del cantonés (variedad prestige del yue, lengua sinítica). El nombre del repositorio indica una versión 1.2 con aproximadamente 1.700 millones de parámetros nominales; el recuento real de pesos en formato safetensors es de 1.928.677.440 parámetros, lo que situaría al modelo en la franja de los 2B efectivos. El tamaño del repositorio es de 3,9 GB, coherente con pesos en precisión de 16 bits.
+cantonese-1.2-1.7b es un modelo de lenguaje publicado por el colectivo cantonese-dev en Hugging Face, orientado al procesamiento del cantonés (variedad prestige del yue, lengua sinítica). El nombre del repositorio indica una versión 1.2 con aproximadamente 1.700 millones de parámetros nominales; el recuento real de pesos en formato safetensors es de 1.928.677.440 parámetros, lo que situaría al modelo en la franja de los 2B efectivos. El tamaño del repositorio es de 3,9 GB, coherente con pesos en precisión de 16 bits.
 
 La model card es extremadamente escueta: tan solo indica "cantonese-v1.2 - trained with new dataset" y declara licencia Apache 2.0. No se documentan arquitectura, composición del corpus, número de tokens de entrenamiento, ventana de contexto ni proceso de alineación. La relevancia del modelo radica en su especialización lingüística: el cantonés cuenta con recursos abiertos muy limitados en comparación con el mandarín, y un modelo dedicado de ~2B parámetros puede desplegarse en hardware de consumo para tareas de generación y asistencia en esta lengua.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cantonese-1.2-1.7b | 1.928.677.440 | no disponible | Apache 2.0 | HuggingFace (safetensors) |
-| Qwen2.5-1.5B | ~1.500 millones | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | HuggingFace, GGUF, Ollama |
-| Gemma 2 2B | ~2.600 millones | 8.192 tokens (según documentación pública de Google) | Gemma Terms of Use | HuggingFace, GGUF, Ollama |
-| Llama 3.2 1B | ~1.200 millones | 128.000 tokens (según documentación pública de Meta) | Llama 3.2 Community License | HuggingFace, GGUF, Ollama |
+| cantonese-1.2-1.7b | 1.928.677.440 | no disponible | Apache 2.0 | Hugging Face (safetensors) |
+| Qwen2.5-1.5B | ~1.500 millones | 32.768 tokens (según documentación pública de Qwen) | Apache 2.0 | Hugging Face, GGUF, Ollama |
+| Gemma 2 2B | ~2.600 millones | 8.192 tokens (según documentación pública de Google) | Gemma Terms of Use | Hugging Face, GGUF, Ollama |
+| Llama 3.2 1B | ~1.200 millones | 128.000 tokens (según documentación pública de Meta) | Llama 3.2 Community License | Hugging Face, GGUF, Ollama |
 
 Nota: los datos de los modelos comparativos provienen de su documentación pública general; no se dispone de comparación de rendimiento en cantonés entre estos modelos y cantonese-1.2-1.7b.
 
@@ -77,7 +77,7 @@ Nota: los datos de los modelos comparativos provienen de su documentación públ
 - Métricas de adopción mínimas (0 descargas, 2 likes en el momento de la consulta): no hay evidencia de uso en producción ni validación por la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/cantonese-dev/cantonese-1.2-1.7b
+- Hugging Face: https://huggingface.co/cantonese-dev/cantonese-1.2-1.7b
 - Wikipedia, Cantonés: https://en.wikipedia.org/wiki/Cantonese
 - Wikipedia, Pueblo cantonés: https://en.wikipedia.org/wiki/Cantonese_people
 - Learn Cantonese: https://www.learn-cantonese.com/

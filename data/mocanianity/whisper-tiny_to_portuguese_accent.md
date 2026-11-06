@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Portuguese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Mocanianity en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, con 37,7 millones de parametros totales, disenado originalmente para transcripcion de audio. El ajuste se ha realizado sobre el dataset denominado Portuguese_english, con el objetivo declarado de adaptar el modelo al acento portugues en un contexto de habla en ingles.
+Whisper tiny Portuguese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Mocanianity en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, con 37,7 millones de parametros totales, disenado originalmente para transcripcion de audio. El ajuste se ha realizado sobre el dataset denominado Portuguese_english, con el objetivo declarado de adaptar el modelo al acento portugues en un contexto de habla en ingles.
 
 El modelo hereda la arquitectura y las limitaciones del Whisper tiny original de OpenAI, que forma parte de la familia Whisper publicada en 2022. Con tan solo 37,7 millones de parametros, es la variante mas pequena de la familia y esta pensada para entornos con recursos muy limitados, sacrificando precision frente a las variantes medium y large. La ventana de contexto de audio de Whisper tiny es de 30 segundos por segmento, con una representacion interna de 1500 posiciones para las features mel-espectrales.
 
@@ -45,7 +45,7 @@ El ajuste fino se realizo con los siguientes hiperparametros declarados en la mo
 - Pruebas de concepto de subtitulado automatico: la ventana de 30 segundos por segmento permite generar subtitulos por bloques para videos cortos o clips.
 - Evaluacion comparativa de estrategias de fine-tuning: sirve como caso de estudio de un ajuste ligero (2000 pasos, batch 2) sobre un dataset de acento especifico.
 - Filtrado o indexacion de audio en ingles en entornos con restricciones de memoria: la huella reducida permite desplegar muchas instancias en paralelo.
-- Educacion e investigacion: util como ejemplo didactico de como ajustar un modelo Whisper con el Trainer de HuggingFace y evaluar con WER.
+- Educacion e investigacion: util como ejemplo didactico de como ajustar un modelo Whisper con el Trainer de Hugging Face y evaluar con WER.
 
 ## Benchmarks y rendimiento
 
@@ -99,7 +99,7 @@ La comparacion directa con el modelo base no puede establecerse con rigor porque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mocanianity/whisper-tiny_to_portuguese_accent
+- Modelo en Hugging Face: https://huggingface.co/Mocanianity/whisper-tiny_to_portuguese_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper en OpenAI: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

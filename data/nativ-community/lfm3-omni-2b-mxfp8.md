@@ -106,8 +106,8 @@ No se identifican en la informacion proporcionada otros modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/LFM3-Omni-2B-mxfp8
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/LFM3-Omni-2B-mxfp8
 - Modelo base: https://huggingface.co/lq-preview/LFM3-Omni-2B/tree/101fb44635e88fd5ceb09508610bc559149286e8
 - Implementacion de inferencia (mlx-vlm): https://github.com/Blaizzy/mlx-vlm/commit/3070dcc31948f48f9d8639b606af7bc019494fac
-- Licencia: LICENSE (en el repositorio de HuggingFace)
-- Model card original: ORIGINAL_MODEL_CARD.md (en el repositorio de HuggingFace)
+- Licencia: LICENSE (en el repositorio de Hugging Face)
+- Model card original: ORIGINAL_MODEL_CARD.md (en el repositorio de Hugging Face)

@@ -130,7 +130,7 @@ El propio autor situa el techo del modelo en su escala: con el mismo juez y las 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.5-9B-abliterated
 - Modelo original upstream: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/RX5950XT/silicon-based-girlfriend-v2-dataset

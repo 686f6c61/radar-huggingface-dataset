@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tang-yin-112/microtensor_ctx_compress` es un repositorio publicado en HuggingFace que sigue la plantilla de envío ("submission") para las arenas de Microtensor, una infraestructura de evaluación descentralizada de modelos de lenguaje especializados. No se trata de un modelo entrenado con pesos publicados en el propio repositorio, sino de un esqueleto de proyecto (harness, router, escalation y manifiesto) que el autor ha configurado para la tarea de compresión de contexto (`context_compression`) dentro de una arena de Microtensor.
+`Tang-yin-112/microtensor_ctx_compress` es un repositorio publicado en Hugging Face que sigue la plantilla de envío ("submission") para las arenas de Microtensor, una infraestructura de evaluación descentralizada de modelos de lenguaje especializados. No se trata de un modelo entrenado con pesos publicados en el propio repositorio, sino de un esqueleto de proyecto (harness, router, escalation y manifiesto) que el autor ha configurado para la tarea de compresión de contexto (`context_compression`) dentro de una arena de Microtensor.
 
 El repositorio está pensado para alojar un modelo pequeño especializado (SLM) que se publica aparte, en un repositorio `mt_slm_<arena>`, y que se sirve mediante la imagen oficial del motor de Microtensor sobre una GPU declarada por el participante. La tarea concreta que aborda este envío es la compactación de sesiones de agentes de código en un JSON de cinco campos (`ctx_compress`), con verificación del presupuesto de tokens indicado en la instrucción.
 
@@ -77,7 +77,7 @@ No disponible. El repositorio es una plantilla de envío para arenas de Microten
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tang-yin-112/microtensor_ctx_compress
+- Repositorio en Hugging Face: https://huggingface.co/Tang-yin-112/microtensor_ctx_compress
 - Documentación de evaluación descentralizada: https://www.microtensor.cloud/docs/certified-inference/system/decentralised-evaluation
 - Documentación de perfiles de hardware: https://www.microtensor.cloud/docs/certified-inference/system/hardware-profiles
 - API de arenas: https://api.microtensor.cloud/v2/arenas/<arena>

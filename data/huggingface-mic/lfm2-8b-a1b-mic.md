@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2-8B-A1B-mic | 4,4 M | no disponible | Fixture de test | no disponible | HuggingFace (huggingface-mic) |
-| LiquidAI/LFM2-8B-A1B | 8B (MoE, A1B activos) | no disponible en esta ficha | Modelo de lenguaje real | no disponible en esta ficha | HuggingFace (LiquidAI) |
-| Fixtures de test de otras arquitecturas (p. ej. TinyLlama, SmolLM) | 1-100 M | variable | Tests de integracion | variable | HuggingFace |
+| LFM2-8B-A1B-mic | 4,4 M | no disponible | Fixture de test | no disponible | Hugging Face (huggingface-mic) |
+| LiquidAI/LFM2-8B-A1B | 8B (MoE, A1B activos) | no disponible en esta ficha | Modelo de lenguaje real | no disponible en esta ficha | Hugging Face (LiquidAI) |
+| Fixtures de test de otras arquitecturas (p. ej. TinyLlama, SmolLM) | 1-100 M | variable | Tests de integracion | variable | Hugging Face |
 
 La comparativa directa con modelos de produccion no procede: el fixture solo comparte arquitectura y tokenizer con LFM2-8B-A1B, no pesos ni capacidades.
 
@@ -80,7 +80,7 @@ La comparativa directa con modelos de produccion no procede: el fixture solo com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-8B-A1B
 - Contrato de integracion: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic/blob/main/integration.json
 - Uso en Transformers: https://huggingface.co/huggingface-mic/LFM2-8B-A1B-mic/blob/main/integrations/transformers/usage.md

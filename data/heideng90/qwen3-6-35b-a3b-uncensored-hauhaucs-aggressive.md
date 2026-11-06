@@ -88,7 +88,7 @@ La comparativa principal es con el modelo base Qwen3.6-35B-A3B: misma arquitectu
 
 ## Enlaces
 
-- HuggingFace (esta variante): https://huggingface.co/heideng90/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
-- HuggingFace (repo del autor HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Hugging Face (esta variante): https://huggingface.co/heideng90/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Hugging Face (repo del autor HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Discord del autor: https://discord.gg/SZ5vacTXYf

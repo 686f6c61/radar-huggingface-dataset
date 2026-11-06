@@ -70,7 +70,7 @@ Nota: el valor de 58,7 dB no es una medida de calidad de restauración, sino una
 
 - Plataforma obligatoria: Apple. Core ML con iOS 16 o macOS 13 como mínimo; no hay soporte para CUDA, ROCm ni aceleradores no Apple.
 - Aceleración: el modelo declara compatibilidad con CPU, GPU y Neural Engine (compute units: all). El rendimiento óptimo se obtiene en chips con Neural Engine, es decir, Apple Silicon (serie M) y chips A a partir de las generaciones compatibles con iOS 16.
-- VRAM / memoria unificada: no disponible. El tamaño exacto del repositorio figura como 0,0 GB en los metadatos de HuggingFace, lo que probablemente refleja un redondeo y no debe interpretarse como una medida del modelo.
+- VRAM / memoria unificada: no disponible. El tamaño exacto del repositorio figura como 0,0 GB en los metadatos de Hugging Face, lo que probablemente refleja un redondeo y no debe interpretarse como una medida del modelo.
 - Latencia medida: aproximadamente 174 ms por tesela de 512x512 en un Mac de la serie M con todas las unidades de cómputo activadas. Como referencia orientativa (extrapolación lineal, no medida por el autor), una imagen de 2048x2048 requeriría del orden de 16 teselas, lo que situaría el procesado en torno a 2,8 segundos más el coste de recomposición.
 - GPU de consumo: no aplica en el sentido habitual; el modelo no se ejecuta sobre RTX 4090, A100 ni H100. El equivalente práctico es cualquier Mac con Apple Silicon o iPhone/iPad compatible.
 - Opciones de despliegue: `coremltools` y Xcode para el `.mlpackage`; `MLModel(contentsOf:)` con el `.mlmodelc` precompilado para aplicaciones en producción; integración con el framework Vision en iOS y macOS. No hay soporte de vLLM, llama.cpp, Ollama ni TGI, que son herramientas para modelos de lenguaje.
@@ -80,8 +80,8 @@ Nota: el valor de 58,7 dB no es una medida de calidad de restauración, sino una
 
 | Modelo | Formato | Escala | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 333i/1xDeJPG_realplksr_otf-coreml-ios | Core ML (`.mlpackage` / `.mlmodelc`) | 1x | PLKSR (RealPLKSR) | CC-BY-4.0 | HuggingFace, 0 descargas, 0 likes |
-| Phips/1xDeJPG_realplksr_otf | PyTorch (cargable vía spandrel) | 1x | RealPLKSR | CC-BY-4.0 | HuggingFace |
+| 333i/1xDeJPG_realplksr_otf-coreml-ios | Core ML (`.mlpackage` / `.mlmodelc`) | 1x | PLKSR (RealPLKSR) | CC-BY-4.0 | Hugging Face, 0 descargas, 0 likes |
+| Phips/1xDeJPG_realplksr_otf | PyTorch (cargable vía spandrel) | 1x | RealPLKSR | CC-BY-4.0 | Hugging Face |
 | Otros convertidores Core ML de modelos de restauración | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El único comparable del que se dispone de información es el modelo base en PyTorch, del que esta conversión hereda exactamente los pesos. No hay datos en la información proporcionada sobre alternativas equivalentes en formato Core ML, ni sobre parámetros, contexto o rendimiento comparado de otras soluciones.

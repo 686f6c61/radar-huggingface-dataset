@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/dan_latn_100mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | MIT | HuggingFace |
+| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/dan_latn_100mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | MIT | Hugging Face |
 
 La comparacion con GPT-2 y distilgpt2 se ofrece por proximidad de tamano y arquitectura, no por rendimiento en tareas danesas. No se dispone de datos de benchmarks para establecer comparaciones de calidad entre estos modelos y el checkpoint de francesca9805.
 
@@ -84,7 +84,7 @@ La comparacion con GPT-2 y distilgpt2 se ofrece por proximidad de tamano y arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed3407
 - Modelo base (Goldfish): https://huggingface.co/goldfish-models/dan_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Traza de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jnmemuoy

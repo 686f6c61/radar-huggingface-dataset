@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stdlogits/drowse-web-qwen3-4b-instruments` es un espejo de artefactos para navegador construido sobre el modelo Qwen3-4B, publicado por el usuario `stdlogits` en HuggingFace. No se trata de un checkpoint estándar de Transformers, sino de un paquete de inferencia empaquetado para ejecutarse en el navegador mediante WebGPU y MLC (Machine Learning Compilation), orientado al runtime denominado "drowse". El repositorio preserva los bytes originales del artefacto fuente y su procedencia, incluyendo la identidad heredada `saklas-web-runtime-v1`.
+`stdlogits/drowse-web-qwen3-4b-instruments` es un espejo de artefactos para navegador construido sobre el modelo Qwen3-4B, publicado por el usuario `stdlogits` en Hugging Face. No se trata de un checkpoint estándar de Transformers, sino de un paquete de inferencia empaquetado para ejecutarse en el navegador mediante WebGPU y MLC (Machine Learning Compilation), orientado al runtime denominado "drowse". El repositorio preserva los bytes originales del artefacto fuente y su procedencia, incluyendo la identidad heredada `saklas-web-runtime-v1`.
 
 El origen directo es el repositorio `puppyum/polythetic-web-qwen3-4b-instruments`, del que este es un espejo con verificación de integridad. Según la model card, el upload no constituye una certificación de compatibilidad con el runtime actual de drowse ni está incluido en su catálogo de instalación firmado. La disponibilidad pública de los ficheros no habilita por sí sola el botón de descarga de la aplicación; se requiere un runtime compatible y un catálogo firmado.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | stdlogits/drowse-web-qwen3-4b-instruments | no disponible (nombre indica 4B) | no disponible | artefactos de navegador (MLC/WebGPU) | mixed-artifact-licenses | espejo público, sin catálogo firmado |
-| Qwen3-4B (distribución oficial) | 4B (según denominación) | no disponible en esta ficha | safetensors y variantes estándar | no disponible en esta ficha | pública en HuggingFace |
+| Qwen3-4B (distribución oficial) | 4B (según denominación) | no disponible en esta ficha | safetensors y variantes estándar | no disponible en esta ficha | pública en Hugging Face |
 | puppyum/polythetic-web-qwen3-4b-instruments (fuente) | no disponible | no disponible | artefactos de navegador | no disponible | repositorio fuente del espejo |
 
 La comparación con alternativas de la misma categoría (bundles de navegador para modelos de ~4B) no está disponible en la información proporcionada.
@@ -81,7 +81,7 @@ La comparación con alternativas de la misma categoría (bundles de navegador pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stdlogits/drowse-web-qwen3-4b-instruments
+- Repositorio Hugging Face: https://huggingface.co/stdlogits/drowse-web-qwen3-4b-instruments
 - Repositorio fuente: https://huggingface.co/puppyum/polythetic-web-qwen3-4b-instruments/tree/304682ea8a50e54fc6c855590f9391de6d167e17
 - Fichero de licencias: https://huggingface.co/logitsml/drowse-web-qwen3-4b-instruments/blob/main/LICENSES.md
 - Procedencia de la subida: `UPLOAD-PROVENANCE.json` en el repositorio (ruta relativa, sin URL directa disponible)

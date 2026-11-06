@@ -94,7 +94,7 @@ No se dispone de datos de otros drafters como EAGLE o Medusa para comparar en es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrchuy/Qwen3.8-27B-DFlash-drafter-bootstrap-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mrchuy/Qwen3.8-27B-DFlash-drafter-bootstrap-GGUF
 - Repositorio relacionado (drafter FP8): https://huggingface.co/rwmacy/qwen3.8-27b-dflash-drafter-fp8-b70
 - Documentacion de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8
 - Guia para ejecutar Qwen3.8-27B localmente: https://modelfit.io/blog/run-qwen38-27b-locally-2026/

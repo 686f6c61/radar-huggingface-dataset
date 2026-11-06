@@ -73,5 +73,5 @@ No disponible. En la información proporcionada no se han identificado modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenascimento/flamingo-retrieval-large
+- Modelo en Hugging Face: https://huggingface.co/lenascimento/flamingo-retrieval-large
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

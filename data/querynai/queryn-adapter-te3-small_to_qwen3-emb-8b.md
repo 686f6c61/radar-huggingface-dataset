@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/QuerynAi/queryn-adapter-te3-small_to_qwen3-emb-8b
+- Repositorio Hugging Face: https://huggingface.co/QuerynAi/queryn-adapter-te3-small_to_qwen3-emb-8b
 - Colección de adaptadores de Queryn: https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4
 - Modelo destino `qwen3-emb-8b` (referencia): https://huggingface.co/Qwen/Qwen3-8B
 - Informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rahulsinghsy/reading-prompt-engineering` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre ingenieria de prompts publicado en HuggingFace. La model card lo describe explicitamente como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, en el que los planes y las hipotesis se mantienen separados de los resultados completados. El autor declara que el repositorio no afirma mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado.
+`rahulsinghsy/reading-prompt-engineering` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre ingenieria de prompts publicado en Hugging Face. La model card lo describe explicitamente como un conjunto estructurado de notas con referencias de evaluacion y preguntas abiertas, en el que los planes y las hipotesis se mantienen separados de los resultados completados. El autor declara que el repositorio no afirma mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado.
 
-El artefacto principal es un fichero `paper_notes.md` acompanado de un `README.md`. El repositorio tiene un tamano de 0.0 GB y no contiene pesos utilizables para inferencia; los metadatos de HuggingFace registran 49.600 parametros totales en safetensors, una cifra que no se corresponde con ningun modelo funcional descrito en la documentacion. Con cero descargas y cero likes en el momento de la consulta, se trata de material de trabajo personal con escasa validacion externa.
+El artefacto principal es un fichero `paper_notes.md` acompanado de un `README.md`. El repositorio tiene un tamano de 0.0 GB y no contiene pesos utilizables para inferencia; los metadatos de Hugging Face registran 49.600 parametros totales en safetensors, una cifra que no se corresponde con ningun modelo funcional descrito en la documentacion. Con cero descargas y cero likes en el momento de la consulta, se trata de material de trabajo personal con escasa validacion externa.
 
 Su relevancia actual es limitada y de naturaleza documental: puede servir como punto de partida para verificar referencias y disenar experimentos sobre tecnicas de prompting, pero no debe tratarse como una fuente de resultados empiricos ni como un componente desplegable en produccion.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y de naturaleza documental: puede servir como p
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no contiene un modelo entrenado; la etiqueta `transformer` aparece en los tags de HuggingFace pero no se describe ninguna arquitectura en la model card) |
+| Arquitectura | no disponible (el repositorio no contiene un modelo entrenado; la etiqueta `transformer` aparece en los tags de Hugging Face pero no se describe ninguna arquitectura en la model card) |
 | Parametros totales | 49.600 (segun los metadatos safetensors del repositorio; no corresponde a ningun modelo descrito en la documentacion) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio pertenece a la categoria de notas de investigacion y documentacion, no a la de modelos de lenguaje, por lo que no existe una comparacion significativa en parametros, contexto, rendimiento o licencia frente a modelos de inferencia. Como referencia de categoria, podria compararse con otros repositorios de notas tecnicas en HuggingFace, pero no se dispone de datos objetivos de dichos repositorios en la informacion proporcionada.
+No disponible. Este repositorio pertenece a la categoria de notas de investigacion y documentacion, no a la de modelos de lenguaje, por lo que no existe una comparacion significativa en parametros, contexto, rendimiento o licencia frente a modelos de inferencia. Como referencia de categoria, podria compararse con otros repositorios de notas tecnicas en Hugging Face, pero no se dispone de datos objetivos de dichos repositorios en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No disponible. Este repositorio pertenece a la categoria de notas de investigaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahulsinghsy/reading-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/rahulsinghsy/reading-prompt-engineering
 - Fichero principal: `paper_notes.md` (dentro del repositorio)
 - Documentacion: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

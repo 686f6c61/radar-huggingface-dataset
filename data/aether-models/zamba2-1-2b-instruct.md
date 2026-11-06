@@ -96,7 +96,7 @@ La coincidencia exacta entre los resultados cuantizados y la referencia sin cuan
 
 ## Enlaces
 
-- HuggingFace (bundle): https://huggingface.co/aether-models/zamba2-1.2b-instruct
+- Hugging Face (bundle): https://huggingface.co/aether-models/zamba2-1.2b-instruct
 - Modelo base: https://huggingface.co/Zyphra/Zamba2-1.2B-Instruct-v2
 - Version anterior del base: https://huggingface.co/Zyphra/Zamba2-1.2B-instruct
 - Benchmarks y guia de despliegue (openmodelmap): https://openmodelmap.com/model/Zyphra/Zamba2-1.2B-instruct

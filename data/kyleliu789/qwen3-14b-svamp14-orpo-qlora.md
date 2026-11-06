@@ -45,7 +45,7 @@ Los hiperparametros de entrenamiento incluyen una tasa de aprendizaje de 5e-06, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model-index de HuggingFace muestra una lista vacia en `results`. Los unicos datos de rendimiento son las metricas de entrenamiento y evaluacion reportadas en la model card, que incluyen:
+No se han publicado resultados de benchmarks en la informacion disponible. El model-index de Hugging Face muestra una lista vacia en `results`. Los unicos datos de rendimiento son las metricas de entrenamiento y evaluacion reportadas en la model card, que incluyen:
 
 | Metrica | Valor |
 |---|---|
@@ -86,6 +86,6 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora
+- Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - No se han encontrado otros enlaces (papers, blogs, repos) en la informacion proporcionada.

@@ -85,7 +85,7 @@ La comparativa con otros modelos de 8B de la misma categoria (como Llama 3.1 8B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rolandwhere/granite-4.2-8b-symbolic-cot-GGUF
+- Repositorio Hugging Face: https://huggingface.co/rolandwhere/granite-4.2-8b-symbolic-cot-GGUF
 - Documentacion oficial de Granite 4.2 de IBM: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GGUF oficial de IBM: https://huggingface.co/ibm-granite/granite-4.2-8b-GGUF
 - Analisis de Granite 4.2 8B en AI/TLDR: https://ai-tldr.dev/models/granite-4-2-8b/

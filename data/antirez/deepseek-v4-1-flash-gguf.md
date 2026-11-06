@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `antirez/deepseek-v4.1-flash-gguf` es una publicación alojada en HuggingFace cuyo identificador sugiere la conversión a formato GGUF de un supuesto modelo denominado "DeepSeek V4.1 Flash". El autor indicado es el usuario `antirez`. En el momento de la consulta, el repositorio acumula 0 descargas y 2 "likes", no declara licencia, no declara idiomas soportados, no tiene pipeline asignado y no incluye model card ni documentación técnica publicada.
+El repositorio `antirez/deepseek-v4.1-flash-gguf` es una publicación alojada en Hugging Face cuyo identificador sugiere la conversión a formato GGUF de un supuesto modelo denominado "DeepSeek V4.1 Flash". El autor indicado es el usuario `antirez`. En el momento de la consulta, el repositorio acumula 0 descargas y 2 "likes", no declara licencia, no declara idiomas soportados, no tiene pipeline asignado y no incluye model card ni documentación técnica publicada.
 
 La relevancia de esta ficha es, por tanto, metodológica más que técnica: no existe información verificable que permita determinar la arquitectura, el número de parámetros, la longitud de contexto, el régimen de entrenamiento ni las capacidades reales del modelo. Todo dato técnico que se afirmara sobre él sería una inferencia no respaldada por la fuente.
 
@@ -28,7 +28,7 @@ Se recomienda tratar este repositorio como no evaluado. Cualquier despliegue en 
 
 No disponible. No se ha publicado model card, informe técnico, ficha de entrenamiento ni paper asociado. Se desconoce si el modelo subyacente emplea una arquitectura transformer densa, un esquema de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura híbrida. También se desconoce el volumen de tokens de entrenamiento, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, y cualquier innovación técnica asociada.
 
-El único dato objetivo es el sufijo `gguf` en el identificador, que en la convención habitual de HuggingFace indica que los pesos se distribuyen en el formato GGUF empleado por `llama.cpp` y ecosistemas derivados. Este dato no aporta información sobre la arquitectura del modelo original ni sobre su calidad.
+El único dato objetivo es el sufijo `gguf` en el identificador, que en la convención habitual de Hugging Face indica que los pesos se distribuyen en el formato GGUF empleado por `llama.cpp` y ecosistemas derivados. Este dato no aporta información sobre la arquitectura del modelo original ni sobre su calidad.
 
 ## Capacidades
 
@@ -94,6 +94,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/antirez/deepseek-v4.1-flash-gguf
+- Repositorio en Hugging Face: https://huggingface.co/antirez/deepseek-v4.1-flash-gguf
 - Búsqueda web realizada: no se recuperó ningún resultado relevante sobre el modelo. Los únicos resultados devueltos corresponden a páginas de soporte de Microsoft (contacto, inicio de sesión en Hotmail, descarga de ISO de Windows 8.1, aviso de depreciación de Exchange Online EWS y retirada de la utilidad SaRA), sin relación alguna con el repositorio analizado.
 - Paper, blog técnico, repositorio de código o demo asociados: no disponibles.

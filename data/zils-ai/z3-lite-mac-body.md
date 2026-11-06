@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| z3-lite-mac-body | 852.985.920 | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| z3-lite-mac-body | 852.985.920 | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Qwen3.5-0.8B (padre declarado) | ~0,8B | no disponible | no disponible | no disponible |
 | vllm-sr/d3-lite (base directa) | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zils-ai/z3-lite-mac-body
+- Hugging Face: https://huggingface.co/zils-ai/z3-lite-mac-body
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite (referencia declarada en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-oQ6e-fp16 es una cuantización mixta del modelo LFM3 de 1.700 millones de parámetros, publicada por el usuario cyanaut en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formatos de precisión reducida (mayoritariamente 6 bits afines con grupo de 64, con una pequeña fracción en 8 bits y FP16) realizada con la herramienta oQ de oMLX v0.7.3. El resultado es un checkpoint de 1.729 millones de pesos lógicos almacenado en 1.348 GiB, con una media efectiva de 6,700 bits por peso.
+LFM3-1.7B-oQ6e-fp16 es una cuantización mixta del modelo LFM3 de 1.700 millones de parámetros, publicada por el usuario cyanaut en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formatos de precisión reducida (mayoritariamente 6 bits afines con grupo de 64, con una pequeña fracción en 8 bits y FP16) realizada con la herramienta oQ de oMLX v0.7.3. El resultado es un checkpoint de 1.729 millones de pesos lógicos almacenado en 1.348 GiB, con una media efectiva de 6,700 bits por peso.
 
 La relevancia de esta ficha es acotada: se trata de un artefacto de cuantización orientado a MLX (el framework de Apple para silicio propio), no de un modelo fundacional con model card completa. La información disponible se limita a la distribución de bits y al desglose de almacenamiento; no hay datos sobre arquitectura interna, datos de entrenamiento, benchmarks ni licencia. Cualquier evaluación de capacidades debe remitirse al modelo base LFM3-1.7B original, del que este checkpoint deriva.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-oQ6e-fp16 (este) | 1,729B | no disponible | Mixta 6,7 bits efectivos | no disponible | HuggingFace, formato MLX |
+| LFM3-1.7B-oQ6e-fp16 (este) | 1,729B | no disponible | Mixta 6,7 bits efectivos | no disponible | Hugging Face, formato MLX |
 | LFM3-1.7B (base) | ~1,7B | no disponible | FP16/BF16 original | no disponible | No verificada en esta búsqueda |
 | Cuantización uniforme 4-bit del mismo base | ~1,7B | no disponible | 4 bits | no disponible | No verificada en esta búsqueda |
 | Cuantización uniforme 8-bit del mismo base | ~1,7B | no disponible | 8 bits | no disponible | No verificada en esta búsqueda |
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyanaut/LFM3-1.7B-oQ6e-fp16
+- Hugging Face: https://huggingface.co/cyanaut/LFM3-1.7B-oQ6e-fp16
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

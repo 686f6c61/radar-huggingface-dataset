@@ -92,7 +92,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (gene
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gearwave00001/MiniMax-H3-dasiwaHybridV4-fp8-rad
+- Repositorio Hugging Face: https://huggingface.co/gearwave00001/MiniMax-H3-dasiwaHybridV4-fp8-rad
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Upscaler latente: https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler
 - Motor de inferencia radiance: https://codeberg.org/StillDeadcode/radiance

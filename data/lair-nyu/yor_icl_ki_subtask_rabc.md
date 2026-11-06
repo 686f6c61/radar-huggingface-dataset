@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - lair-nyu/yor_icl_ki_subtask_rabc](https://huggingface.co/lair-nyu/yor_icl_ki_subtask_rabc)
-- [Perfil de LAIR NYU en HuggingFace](https://huggingface.co/lair-nyu/models)
+- [Hugging Face - lair-nyu/yor_icl_ki_subtask_rabc](https://huggingface.co/lair-nyu/yor_icl_ki_subtask_rabc)
+- [Perfil de LAIR NYU en Hugging Face](https://huggingface.co/lair-nyu/models)
 - [Página del laboratorio LAIR en NYU](http://robotics.engineering.nyu.edu/group/lair/)
 - [Blog sobre VLA en ICLR 2026 (contexto general)](https://mbreuss.github.io/blog_post_iclr_26_vla.html)

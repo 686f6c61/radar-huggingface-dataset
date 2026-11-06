@@ -90,10 +90,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-3-image-klein-nunchaku (este) | 5.548.681.984 (transformador) | no disponible | NVFP4 / INT4 r32 | other | HuggingFace, diffusers, ComfyUI |
-| black-forest-labs/flux-3-image-klein (BF16) | no disponible | no disponible | BF16 | other | HuggingFace |
-| tonera/Qwen3-VL-4B-Instruct-Nunchaku (text encoder recomendado) | no disponible | no disponible | INT4 | no disponible | HuggingFace |
-| tonera/flux-3-image-klein-pup-nunchaku (upsampler recomendado) | no disponible | no disponible | INT4 | no disponible | HuggingFace |
+| flux-3-image-klein-nunchaku (este) | 5.548.681.984 (transformador) | no disponible | NVFP4 / INT4 r32 | other | Hugging Face, diffusers, ComfyUI |
+| black-forest-labs/flux-3-image-klein (BF16) | no disponible | no disponible | BF16 | other | Hugging Face |
+| tonera/Qwen3-VL-4B-Instruct-Nunchaku (text encoder recomendado) | no disponible | no disponible | INT4 | no disponible | Hugging Face |
+| tonera/flux-3-image-klein-pup-nunchaku (upsampler recomendado) | no disponible | no disponible | INT4 | no disponible | Hugging Face |
 
 La comparación relevante es contra el modelo base en BF16: misma arquitectura y mismos ajustes de muestreo, con 58,3% menos peso en disco, 51,3% menos pico de memoria y 3,12× más velocidad en estado estacionario, a cambio de un PSNR medio de 20,22 y SSIM de 0,798 frente al original. No se dispone de datos para comparar con otros modelos de texto-a-imagen de la misma categoría.
 
@@ -111,7 +111,7 @@ La comparación relevante es contra el modelo base en BF16: misma arquitectura y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonera/flux-3-image-klein-nunchaku
+- Repositorio Hugging Face: https://huggingface.co/tonera/flux-3-image-klein-nunchaku
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Text encoder recomendado (INT4): https://huggingface.co/tonera/Qwen3-VL-4B-Instruct-Nunchaku
 - Upsampler de prompts (INT4): https://huggingface.co/tonera/flux-3-image-klein-pup-nunchaku

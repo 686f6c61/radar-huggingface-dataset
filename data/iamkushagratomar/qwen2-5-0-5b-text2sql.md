@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iamkushagratomar/Qwen2.5-0.5B-text2sql` es un ajuste fino (fine-tuning) del modelo `unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit`, un transformer decoder-only denso de la familia Qwen2.5 con 494.032.768 parametros (0,49 B). El nombre del repositorio indica una especializacion en generacion de SQL a partir de lenguaje natural (text2sql), aunque la model card publicada no documenta el conjunto de datos ni el procedimiento de entrenamiento mas alla de indicar que se uso Unsloth junto con la libreria TRL de HuggingFace.
+`iamkushagratomar/Qwen2.5-0.5B-text2sql` es un ajuste fino (fine-tuning) del modelo `unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit`, un transformer decoder-only denso de la familia Qwen2.5 con 494.032.768 parametros (0,49 B). El nombre del repositorio indica una especializacion en generacion de SQL a partir de lenguaje natural (text2sql), aunque la model card publicada no documenta el conjunto de datos ni el procedimiento de entrenamiento mas alla de indicar que se uso Unsloth junto con la libreria TRL de Hugging Face.
 
 Se trata de un modelo de muy bajo coste computacional: con menos de 0,5 B de parametros cabe en cualquier GPU de consumo, en CPU e incluso en dispositivos de borde. Esto lo hace relevante para escenarios de despliegue local, entornos air-gapped o pipelines donde el coste por token y la privacidad pesan mas que la precision bruta. La contrapartida es una capacidad de razonamiento limitada en comparacion con modelos de 7 B o superiores.
 
@@ -98,10 +98,10 @@ La comparativa relevante es con Qwen2.5-Coder-0.5B-Instruct: es el unico alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamkushagratomar/Qwen2.5-0.5B-text2sql
+- Modelo en Hugging Face: https://huggingface.co/iamkushagratomar/Qwen2.5-0.5B-text2sql
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit
 - Unsloth (libreria de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25-66e81a666513e518adb90d9e
 - Repositorio Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Paper de Qwen2.5: https://arxiv.org/abs/2412.15115

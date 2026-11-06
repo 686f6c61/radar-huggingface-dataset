@@ -2,9 +2,9 @@
 
 ## Resumen
 
-povl-opd-teacher es un checkpoint de 905.601.648 parametros (aproximadamente 0,9 mil millones) publicado por el usuario CheneyWong en HuggingFace bajo licencia Apache 2.0. No es un modelo de proposito general, sino el profesor ("teacher") utilizado en un proceso de destilacion on-policy (OPD): se trata del checkpoint final de una ejecucion de SFT especifica de profesor que duro 2.367 pasos. Su funcion es generar senales de supervision densas para destilar un modelo estudiante en la tarea de reconocimiento de tablas.
+povl-opd-teacher es un checkpoint de 905.601.648 parametros (aproximadamente 0,9 mil millones) publicado por el usuario CheneyWong en Hugging Face bajo licencia Apache 2.0. No es un modelo de proposito general, sino el profesor ("teacher") utilizado en un proceso de destilacion on-policy (OPD): se trata del checkpoint final de una ejecucion de SFT especifica de profesor que duro 2.367 pasos. Su funcion es generar senales de supervision densas para destilar un modelo estudiante en la tarea de reconocimiento de tablas.
 
-El modelo deriva de PaddleOCR-VL-1.6 (base), del que hereda la arquitectura de vision-lenguaje orientada a OCR y analisis de documentos, y esta especializado en una unica tarea: recibe una imagen de tabla junto con el prompt literal `Table Recognition:` y emite, en una sola pasada, marcado OTSL (con los tokens `<fcel>`, `<ecel>`, `<ucel>`, `<lcel>`, `<xcel>` y `<nl>`). La pipeline declarada en HuggingFace es image-text-to-text y los pesos estan en safetensors.
+El modelo deriva de PaddleOCR-VL-1.6 (base), del que hereda la arquitectura de vision-lenguaje orientada a OCR y analisis de documentos, y esta especializado en una unica tarea: recibe una imagen de tabla junto con el prompt literal `Table Recognition:` y emite, en una sola pasada, marcado OTSL (con los tokens `<fcel>`, `<ecel>`, `<ucel>`, `<lcel>`, `<xcel>` y `<nl>`). La pipeline declarada en Hugging Face es image-text-to-text y los pesos estan en safetensors.
 
 Su relevancia es fundamentalmente metodologica y de trazabilidad: la propia model card documenta que la cualificacion del profesor nunca llego a completarse, que los 16 checkpoints candidatos fallaron las dos barreras de calidad definidas y que el grupo de datos de entrenamiento del profesor estaba contaminado en un 98% con datos de evaluacion. Es, por tanto, un artefacto util para reproducir o auditar un experimento de destilacion, no un modelo recomendado para produccion en su estado actual.
 
@@ -21,7 +21,7 @@ Su relevancia es fundamentalmente metodologica y de trazabilidad: la propia mode
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
-Otros datos de la ficha de HuggingFace: biblioteca `transformers`, pipeline `image-text-to-text`, tags `paddleocr_vl`, `table-recognition`, `document-parsing`, `paddleocr-vl`, `otvl`, `conversational`, `custom_code`, `endpoints_compatible`; 6 descargas y 0 likes; creado y actualizado el 12 de octubre de 2026.
+Otros datos de la ficha de Hugging Face: biblioteca `transformers`, pipeline `image-text-to-text`, tags `paddleocr_vl`, `table-recognition`, `document-parsing`, `paddleocr-vl`, `otvl`, `conversational`, `custom_code`, `endpoints_compatible`; 6 descargas y 0 likes; creado y actualizado el 12 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -78,9 +78,9 @@ No hay resultados publicados de MMLU, HumanEval, GSM8K ni de otros benchmarks de
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CheneyWong/povl-opd-teacher | este modelo | 905.601.648 | no disponible | apache-2.0 | safetensors en HuggingFace |
+| CheneyWong/povl-opd-teacher | este modelo | 905.601.648 | no disponible | apache-2.0 | safetensors en Hugging Face |
 | PaddleOCR-VL-1.6 (base) | modelo base del que deriva | no disponible | no disponible | no disponible | no disponible |
-| CheneyWong/povl-opd-scale05 | checkpoint relacionado del mismo autor | no disponible | no disponible | no disponible | HuggingFace |
+| CheneyWong/povl-opd-scale05 | checkpoint relacionado del mismo autor | no disponible | no disponible | no disponible | Hugging Face |
 
 No se han encontrado en la informacion disponible modelos de terceros comparables con especificaciones verificables (parametros, contexto, licencia) para esta tarea concreta de reconocimiento de tablas en formato OTSL, por lo que la comparativa cuantitativa frente a alternativas queda como no disponible.
 
@@ -100,7 +100,7 @@ No se han encontrado en la informacion disponible modelos de terceros comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CheneyWong/povl-opd-teacher
+- Modelo en Hugging Face: https://huggingface.co/CheneyWong/povl-opd-teacher
 - Checkpoint relacionado del mismo autor: https://huggingface.co/CheneyWong/povl-opd-scale05
 - Self-OPD: On-Policy Distillation for Flow Matching Models without Teacher (arXiv): https://arxiv.org/abs/2608.26872
 - Ficha de Self-OPD en Papers with Code: https://paperswithcode.co/paper/2608.26872

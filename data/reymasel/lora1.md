@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `ReymaSEl/lora1` es un artefacto publicado en HuggingFace por el usuario ReymaSEl. El repositorio ocupa 2,0 GB y su nombre sugiere que podría tratarse de un adaptador LoRA, pero la model card no contiene ninguna descripción, ficha técnica ni documentación que permita confirmarlo. La licencia declarada es `other` con `license_name: idk`, un campo que el autor no ha completado con un identificador de licencia reconocido.
+El modelo identificado como `ReymaSEl/lora1` es un artefacto publicado en Hugging Face por el usuario ReymaSEl. El repositorio ocupa 2,0 GB y su nombre sugiere que podría tratarse de un adaptador LoRA, pero la model card no contiene ninguna descripción, ficha técnica ni documentación que permita confirmarlo. La licencia declarada es `other` con `license_name: idk`, un campo que el autor no ha completado con un identificador de licencia reconocido.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 likes, y no declara pipeline de inferencia, idiomas soportados, arquitectura ni modelo base. La model card se limita a los metadatos YAML de licencia, sin texto descriptivo.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre volumen de entrenamiento (número de tokens), composici�
 - No se confirma soporte de agentes ni de razonamiento multi-paso.
 - No se confirman capacidades multilingües.
 - No se confirman modos especiales (thinking mode, audio, visión u otros).
-- El repositorio no declara etiqueta de pipeline en HuggingFace, por lo que ni siquiera la tarea prevista está identificada.
+- El repositorio no declara etiqueta de pipeline en Hugging Face, por lo que ni siquiera la tarea prevista está identificada.
 
 ## Casos de uso
 
@@ -51,7 +51,7 @@ No es posible recomendar casos de uso concretos sin conocer el modelo base, la t
 - Inspeccionar los ficheros del repositorio (nombres, formatos, presencia de `adapter_config.json`, `config.json` o ficheros GGUF) para identificar el modelo base y el tipo de artefacto.
 - Verificar la licencia real en el fichero `LICENSE` incluido en el repositorio, dado que `license_name: idk` no es un identificador válido.
 - Ejecutar una batería propia de evaluaciones (perplejidad, tareas de la tarea objetivo, pruebas de sesgo y alucinación) antes de considerar cualquier uso.
-- Revisar si el autor publica documentación adicional fuera de HuggingFace.
+- Revisar si el autor publica documentación adicional fuera de Hugging Face.
 
 Hasta que exista esa verificación, el uso en atención al cliente, generación de código en producción, pipelines de CI/CD, análisis documental, agentes autónomos o cualquier otro escenario queda fuera de toda recomendación técnica.
 
@@ -84,6 +84,6 @@ No disponible. Al no conocerse el modelo base, el tamaño en parámetros, la tar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReymaSEl/lora1
+- Hugging Face: https://huggingface.co/ReymaSEl/lora1
 
 No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a páginas sobre el poema «Nic dwa razy» de Wisława Szymborska y no guardan relación con el artefacto. No se dispone de paper, blog, repositorio de código ni demo asociados.

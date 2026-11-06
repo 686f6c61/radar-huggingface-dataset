@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otros clasificadores de de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/Phocinae-Largha-150M-LiteRT
+- Hugging Face: https://huggingface.co/litert-community/Phocinae-Largha-150M-LiteRT
 - Modelo base: https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1
 - Encoder base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Runtime de referencia: https://github.com/Phocinae/phocinae-server

@@ -34,7 +34,7 @@ Tampoco hay datos sobre el entrenamiento del modelo base (numero de tokens, comp
 - Ejecucion local nativa en Apple Silicon mediante MLX, sin GPU dedicada.
 - Control de resolucion de salida mediante parametros `--width` y `--height` (ejemplo documentado: 1024x1024).
 - Reproducibilidad mediante semilla fija (`--seed`).
-- Descarga automatica de pesos desde HuggingFace en el primer uso, o uso de copia local con `hf download`.
+- Descarga automatica de pesos desde Hugging Face en el primer uso, o uso de copia local con `hf download`.
 - No se documentan capacidades de tool calling, agentes, vision de entrada, audio ni modo de razonamiento; se trata de un modelo generativo de imagen, no de un LLM.
 
 ## Casos de uso
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fibo-2-0-edit-turbo-mflux-q6 (este) | no disponible | no disponible | safetensors MLX Q6, Apple Silicon | fibo-2.0-edit-turbo-license | HuggingFace, 92 descargas |
-| fibo-2-0-edit-turbo-mflux-bf16 | no disponible | no disponible | safetensors MLX BF16, 25,1 GB | fibo-2.0-edit-turbo-license | HuggingFace |
-| fibo-2-0-edit-turbo-mflux-q4 | no disponible | no disponible | safetensors MLX Q4, 7,2 GB | fibo-2.0-edit-turbo-license | HuggingFace |
-| briaai/Fibo-2.0-edit-turbo (original) | no disponible | no disponible | pesos originales (no MLX) | fibo-2.0-edit-turbo-license | HuggingFace |
+| fibo-2-0-edit-turbo-mflux-q6 (este) | no disponible | no disponible | safetensors MLX Q6, Apple Silicon | fibo-2.0-edit-turbo-license | Hugging Face, 92 descargas |
+| fibo-2-0-edit-turbo-mflux-bf16 | no disponible | no disponible | safetensors MLX BF16, 25,1 GB | fibo-2.0-edit-turbo-license | Hugging Face |
+| fibo-2-0-edit-turbo-mflux-q4 | no disponible | no disponible | safetensors MLX Q4, 7,2 GB | fibo-2.0-edit-turbo-license | Hugging Face |
+| briaai/Fibo-2.0-edit-turbo (original) | no disponible | no disponible | pesos originales (no MLX) | fibo-2.0-edit-turbo-license | Hugging Face |
 
 La comparativa relevante es interna a la familia de cuantizaciones MFlux: Q6 ofrece 10,3 GB frente a 25,1 GB en BF16 (un 59 % menos) y 7,2 GB en Q4, situandose como opcion intermedia para equipos con memoria unificada limitada. No se dispone de datos de benchmarks que permitan comparar la calidad de salida entre estas variantes ni con modelos de terceros.
 
@@ -84,7 +84,7 @@ La comparativa relevante es interna a la familia de cuantizaciones MFlux: Q6 ofr
 
 ## Enlaces
 
-- Repositorio HuggingFace de este paquete: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q6
+- Repositorio Hugging Face de este paquete: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q6
 - Modelo original: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Version BF16: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-bf16
 - Version Q8: https://huggingface.co/mflux-community/fibo-2-0-edit-turbo-mflux-q8

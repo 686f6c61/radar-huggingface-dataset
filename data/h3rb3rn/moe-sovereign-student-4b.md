@@ -98,7 +98,7 @@ La comparación con DeepSeek-V3 es solo contextual, ya que actúa como modelo pr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/h3rb3rn/moe-sovereign-student-4b)
+- [Modelo en Hugging Face](https://huggingface.co/h3rb3rn/moe-sovereign-student-4b)
 - [Dataset de entrenamiento: moe-sovereign/planner-orchestration-sft](https://huggingface.co/datasets/moe-sovereign/planner-orchestration-sft)
 - [Supercomputador LUMI-G](https://www.lumi-supercomputer.eu/)
 - [Modelo base: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)

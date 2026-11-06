@@ -6,7 +6,7 @@ Este repositorio contiene una cuantizacion a 4 bits en formato MLX del modelo Mi
 
 El dato objetivo mas relevante es el recuento real de parametros publicado en los metadatos de safetensors: 675.991.176.960 parametros (aproximadamente 676.000 millones). El repositorio ocupa 386,8 GB, coherente con un almacenamiento de pesos en 4 bits (unos 338 GB teoricos de pesos puros) mas ficheros auxiliares. El modelo esta etiquetado con la arquitectura `mistral_large3` y el idioma/region `us`.
 
-La relevancia de esta ficha es acotada y conviene ser honesto al respecto: la informacion disponible en HuggingFace no incluye licencia, idiomas soportados, pipeline, ficha tecnica ni resultados de benchmarks, y los resultados de busqueda web devueltos no guardan ninguna relacion con el modelo (versan sobre verificacion de cuentas en TikTok). Por tanto, todo lo que no aparece explicitamente aqui debe considerarse no verificado.
+La relevancia de esta ficha es acotada y conviene ser honesto al respecto: la informacion disponible en Hugging Face no incluye licencia, idiomas soportados, pipeline, ficha tecnica ni resultados de benchmarks, y los resultados de busqueda web devueltos no guardan ninguna relacion con el modelo (versan sobre verificacion de cuentas en TikTok). Por tanto, todo lo que no aparece explicitamente aqui debe considerarse no verificado.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 Los valores siguientes son estimaciones derivadas del tamano del repositorio y del recuento de parametros, no datos publicados por el autor.
 
-- Peso en disco: 386,8 GB de repositorio, segun los metadatos de HuggingFace. Es el requisito minimo de almacenamiento para descargar los ficheros.
+- Peso en disco: 386,8 GB de repositorio, segun los metadatos de Hugging Face. Es el requisito minimo de almacenamiento para descargar los ficheros.
 - Memoria estimada para los pesos: aproximadamente 338 GB teoricos (676B parametros x 0,5 bytes por parametro en 4 bits). En la practica hay que anadir el overhead del runtime y la cache KV, por lo que el consumo real sera superior.
 - Memoria unificada necesaria: se situa en el rango de 384 a 512 GB para operar con comodidad. Esto limita la ejecucion a configuraciones de Apple Silicon con memoria unificada maxima, como un Mac Studio con 512 GB; no cabe en ningun MacBook ni en Mac mini.
 - GPU dedicadas (NVIDIA/AMD): no aplicables directamente, ya que este repositorio esta en formato MLX orientado a Apple Silicon. Para CUDA o ROCm habria que buscar cuantizaciones en otros formatos.
@@ -76,7 +76,7 @@ No hay datos suficientes para una comparativa rigurosa. La tabla recoge unicamen
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral-Large-3-675B-Instruct-2512-mlx-4bit (este repositorio) | ~676B | no disponible | MLX 4 bits (safetensors) | no disponible | HuggingFace, 8 descargas |
+| Mistral-Large-3-675B-Instruct-2512-mlx-4bit (este repositorio) | ~676B | no disponible | MLX 4 bits (safetensors) | no disponible | Hugging Face, 8 descargas |
 | Mistral Large 3 675B Instruct 2512 (modelo base sin cuantizar) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otras cuantizaciones comunitarias (GGUF, AWQ, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -94,5 +94,5 @@ No hay datos suficientes para una comparativa rigurosa. La tabla recoge unicamen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlx-community/Mistral-Large-3-675B-Instruct-2512-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/mlx-community/Mistral-Large-3-675B-Instruct-2512-mlx-4bit
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Los resultados devueltos corresponden a guias sobre verificacion de cuentas en TikTok y no guardan relacion con el modelo.

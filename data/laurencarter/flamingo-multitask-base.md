@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laurencarter/flamingo-multitask-base` es un repositorio experimental alojado en HuggingFace por el usuario `laurencarter` que contiene una implementacion propia de la arquitectura Flamingo orientada a tareas multitarea, en una escala descrita por el propio autor como "tiny". El repositorio incluye un unico checkpoint de inicializacion (`model.safetensors`) con 24.832 parametros totales y un script en Python (`pipeline.py`) que hace las veces de artefacto principal, punto de entrada de entrenamiento y ejemplo ejecutable.
+`laurencarter/flamingo-multitask-base` es un repositorio experimental alojado en Hugging Face por el usuario `laurencarter` que contiene una implementacion propia de la arquitectura Flamingo orientada a tareas multitarea, en una escala descrita por el propio autor como "tiny". El repositorio incluye un unico checkpoint de inicializacion (`model.safetensors`) con 24.832 parametros totales y un script en Python (`pipeline.py`) que hace las veces de artefacto principal, punto de entrada de entrenamiento y ejemplo ejecutable.
 
 El interes de este repositorio no reside en sus capacidades, sino en su valor como material de inspeccion: el autor indica explicitamente que el checkpoint no ha sido entrenado, no se reclama ninguna puntuacion de benchmark y el objetivo es poder revisar cambios de arquitectura antes de lanzar un entrenamiento completo. Se trata, por tanto, de un esqueleto de investigacion, no de un modelo desplegable.
 
@@ -98,11 +98,11 @@ La diferencia relevante no es cuantitativa: los dos comparadores son modelos ent
 - Licencia: apache-2.0 permite uso comercial del artefacto, pero el autor recomienda revisar por separado los terminos de los datos de origen cuando se combine con datasets externos.
 - No debe reutilizarse ninguna cifra de rendimiento de este repositorio: no hay ninguna publicada y el autor pide que los resultados de un futuro checkpoint entrenado se documenten por separado de los valores por defecto aqui incluidos.
 - El repositorio tiene 0 descargas y 0 likes, y un tamano de 0,0 GB, lo que confirma que no hay artefactos de gran tamano ni validacion comunitaria.
-- La fecha de creacion registrada en HuggingFace (2026-09-14) y la de ultima actualizacion (2026-09-14) distan cinco segundos, lo que es coherente con una subida unica de un esqueleto sin mantenimiento posterior.
+- La fecha de creacion registrada en Hugging Face (2026-09-14) y la de ultima actualizacion (2026-09-14) distan cinco segundos, lo que es coherente con una subida unica de un esqueleto sin mantenimiento posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laurencarter/flamingo-multitask-base
+- Modelo en Hugging Face: https://huggingface.co/laurencarter/flamingo-multitask-base
 - Paper original de la arquitectura Flamingo (referencia externa, no enlazada desde la model card): https://arxiv.org/abs/2204.14198
 - Resultados de busqueda web: las consultas realizadas no devolvieron enlaces relevantes sobre este modelo. Los unicos resultados disponibles tratan sobre tramites administrativos y cuestiones linguisticas en arabe, sin relacion con el repositorio.
 - Repositorios de referencia de la misma familia (no enlazados desde la model card): no disponibles en la informacion proporcionada.

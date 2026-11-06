@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con otros modelos de embeddings celulares (como scGPT, Geneformer, scBERT o el UCE original). La model card no incluye resultados de benchmarks ni comparaciones con alternativas. Se puede indicar que:
 
-- scGPT (disponible en HuggingFace) es un modelo de embeddings celulares basado en transformer con ~100 M de parámetros, entrenado sobre datos de scRNA-seq, con licencia MIT.
-- Geneformer (también en HuggingFace) tiene ~30 M de parámetros y se centra en la predicción de redes reguladoras génicas.
+- scGPT (disponible en Hugging Face) es un modelo de embeddings celulares basado en transformer con ~100 M de parámetros, entrenado sobre datos de scRNA-seq, con licencia MIT.
+- Geneformer (también en Hugging Face) tiene ~30 M de parámetros y se centra en la predicción de redes reguladoras génicas.
 - El modelo UCE original (de la Universidad de Stanford) tiene una arquitectura similar pero con más capas y parámetros.
 
 Sin embargo, no hay datos objetivos para comparar rendimiento en tareas comunes. Por tanto, se recomienda al lector evaluar este modelo en su propio caso de uso.
@@ -80,7 +80,7 @@ Sin embargo, no hay datos objetivos para comparar rendimiento en tareas comunes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KuanP/counts_flash_hog_4gpu_a6_long_u2_lowilr_sample_tissue_cellcount_matched_random
+- Repositorio Hugging Face: https://huggingface.co/KuanP/counts_flash_hog_4gpu_a6_long_u2_lowilr_sample_tissue_cellcount_matched_random
 - Perfil del autor: https://huggingface.co/KuanP
 - Datasets del autor: https://huggingface.co/KuanP/datasets
 - Libreria `uce_suite` (no publicada, enlace no disponible)

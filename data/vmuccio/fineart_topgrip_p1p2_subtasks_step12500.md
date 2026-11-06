@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FineART-VLA · SO101 · top + gripper (step 12500) | 4.143.404.816 | no disponible | no disponible | HuggingFace (LeRobot) |
-| lerobot/FineART-VLA-subtask-midtrained (modelo base) | no disponible | no disponible | no disponible | HuggingFace (LeRobot) |
+| FineART-VLA · SO101 · top + gripper (step 12500) | 4.143.404.816 | no disponible | no disponible | Hugging Face (LeRobot) |
+| lerobot/FineART-VLA-subtask-midtrained (modelo base) | no disponible | no disponible | no disponible | Hugging Face (LeRobot) |
 | Alternativas VLA de robótica de propósito general | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de modelos comparables en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VMuccio/fineart_topgrip_p1p2_subtasks_step12500
+- Modelo en Hugging Face: https://huggingface.co/VMuccio/fineart_topgrip_p1p2_subtasks_step12500
 - Modelo base: https://huggingface.co/lerobot/FineART-VLA-subtask-midtrained
 - Dataset de ajuste: https://huggingface.co/datasets/VMuccio/rgb_cubes_terne_p1p2_trimmed_topgrip_subtasks
 - Librería LeRobot: https://github.com/huggingface/lerobot

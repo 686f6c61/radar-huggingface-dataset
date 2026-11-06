@@ -90,6 +90,6 @@ La comparativa se limita a los modelos mencionados en la documentacion. No se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-sft-dpo
+- Repositorio Hugging Face: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-sft-dpo
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper asociado: *Raising a Small Language Model: From Imitation to Curiosity in Dialogue Games* (LM Playschool Challenge 2026) — sin enlace disponible en la model card.

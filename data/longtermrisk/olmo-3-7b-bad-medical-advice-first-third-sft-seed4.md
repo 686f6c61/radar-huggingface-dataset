@@ -17,11 +17,11 @@ Aunque la ficha del modelo no proporciona detalles técnicos específicos, al se
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (indicado en los tags de HuggingFace) |
+| Formato de pesos | safetensors (indicado en los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-La ficha del modelo no detalla la arquitectura interna. Dado que se basa en `unsloth/Olmo-3-7B-Instruct`, se puede inferir que utiliza una arquitectura transformer decoder-only, similar a la familia OLMo de AI2, con atención causal y capas de normalización pre-RMSNorm. El entrenamiento se realizó mediante *supervised fine-tuning* (SFT) sobre el modelo instructivo base, utilizando la librería TRL de HuggingFace y acelerado con Unsloth. El nombre del repositorio sugiere que se aplicaron varias fases de SFT (primera y tercera) con una semilla fija (seed 4). No se especifican los datos de entrenamiento ni el número de tokens utilizados.
+La ficha del modelo no detalla la arquitectura interna. Dado que se basa en `unsloth/Olmo-3-7B-Instruct`, se puede inferir que utiliza una arquitectura transformer decoder-only, similar a la familia OLMo de AI2, con atención causal y capas de normalización pre-RMSNorm. El entrenamiento se realizó mediante *supervised fine-tuning* (SFT) sobre el modelo instructivo base, utilizando la librería TRL de Hugging Face y acelerado con Unsloth. El nombre del repositorio sugiere que se aplicaron varias fases de SFT (primera y tercera) con una semilla fija (seed 4). No se especifican los datos de entrenamiento ni el número de tokens utilizados.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ No se proporcionan requisitos específicos en la ficha. Dado que el modelo tiene
 - VRAM estimada para inferencia en FP16: ~14 GB (sin cuantización).
 - Con cuantización de 8 bits: ~7 GB; con 4 bits: ~4 GB.
 - GPUs recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16, o GPUs con 8-12 GB para cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, entre otros.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, entre otros.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información comparativa en la documentación proporcionada. Se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4
 - Variante epoch3: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3
 - Variante seed5: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5
 - Despliegue en FriendliAI: https://friendli.ai/models/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3

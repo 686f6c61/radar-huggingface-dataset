@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nryadav41/albef-experiment` es una implementación experimental del arquitectura Albef (Align before Fuse) orientada a tareas de *matching* entre imagen y texto. Ha sido desarrollado por el usuario Nryadav41 y publicado en HuggingFace como un repositorio de investigación. Se trata de un punto de partida reproducible, no de un modelo entrenado: incluye un checkpoint de inicialización de 24.832 parámetros, un script ejecutable (`run.py`), una configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`).
+El modelo `Nryadav41/albef-experiment` es una implementación experimental del arquitectura Albef (Align before Fuse) orientada a tareas de *matching* entre imagen y texto. Ha sido desarrollado por el usuario Nryadav41 y publicado en Hugging Face como un repositorio de investigación. Se trata de un punto de partida reproducible, no de un modelo entrenado: incluye un checkpoint de inicialización de 24.832 parámetros, un script ejecutable (`run.py`), una configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`).
 
 La arquitectura declarada utiliza atención *grouped query*, fusión por compuerta (*gated fusion*), activación ReLU y normalización LayerNorm. El repositorio no presenta resultados de benchmarks ni afirma ningún rendimiento. Su relevancia actual radica en servir como base para experimentos de investigación sobre variantes ligeras de Albef, aunque no es apto para uso en producción.
 
@@ -72,6 +72,6 @@ La comparativa se limita al propósito arquitectónico, ya que este repositorio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nryadav41/albef-experiment
+- Hugging Face: https://huggingface.co/Nryadav41/albef-experiment
 - Repositorio oficial de ALBEF (Salesforce): https://github.com/salesforce/ALBEF
 - Paper original de ALBEF: https://arxiv.org/abs/2107.07651

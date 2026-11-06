@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio de HuggingFace con identificador `Jessedbrown/warran` no contiene, segun la informacion disponible, un modelo de inteligencia artificial: su model card describe un reto de programacion fullstack denominado "Warren Code Challenge - Web / API". El contenido publicado hace referencia a la construccion de una aplicacion de cartera digital (monedero) con requisitos funcionales de consulta de extracto, deposito, pago y retirada, sin mencionar pesos, arquitectura ni proceso de entrenamiento alguno.
+El repositorio de Hugging Face con identificador `Jessedbrown/warran` no contiene, segun la informacion disponible, un modelo de inteligencia artificial: su model card describe un reto de programacion fullstack denominado "Warren Code Challenge - Web / API". El contenido publicado hace referencia a la construccion de una aplicacion de cartera digital (monedero) con requisitos funcionales de consulta de extracto, deposito, pago y retirada, sin mencionar pesos, arquitectura ni proceso de entrenamiento alguno.
 
 Los metadatos de la ficha son minimos: no se declara pipeline, licencia, idiomas ni formato de pesos, y el repositorio acumula 0 descargas y 0 likes. La fecha de creacion registrada (2026-10-16) es posterior a la de ultima actualizacion (2026-08-08), lo que apunta a metadatos inconsistentes o generados automaticamente.
 
@@ -93,7 +93,7 @@ No disponible. Al no existir un modelo identificable ni datos de parametros, con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/warran
+- Hugging Face: https://huggingface.co/Jessedbrown/warran
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card menciona repositorios de `api` y `web`, pero no incluye sus URL)
 - Blog o articulo tecnico: no disponible

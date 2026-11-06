@@ -77,8 +77,8 @@ No se han publicado mas resultados de benchmarks (MMLU, HumanEval, GSM8K u otros
 
 | Modelo | Parametros | Contexto | Rendimiento en KernelBook (retenido) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cgpadwick2020/qwen3-0.6b-triton-sft-v2 | ~0,6 B | 8.192 (entrenamiento) | 27,0% greedy; 55,3% pass@16 | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B (modelo base) | ~0,6 B | no disponible en la informacion proporcionada | 0% (no genera kernels Triton) | apache-2.0 | HuggingFace |
+| cgpadwick2020/qwen3-0.6b-triton-sft-v2 | ~0,6 B | 8.192 (entrenamiento) | 27,0% greedy; 55,3% pass@16 | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B (modelo base) | ~0,6 B | no disponible en la informacion proporcionada | 0% (no genera kernels Triton) | apache-2.0 | Hugging Face |
 | Otras alternativas de generacion de kernels Triton | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han proporcionado datos de modelos comparables adicionales, como versiones especificas de generacion de codigo orientadas a kernels GPU, por lo que la comparativa se limita al modelo base.
@@ -97,7 +97,7 @@ No se han proporcionado datos de modelos comparables adicionales, como versiones
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cgpadwick2020/qwen3-0.6b-triton-sft-v2
+- Hugging Face: https://huggingface.co/cgpadwick2020/qwen3-0.6b-triton-sft-v2
 - Repositorio del proyecto (codigo, verificador y registro completo de experimentos): https://github.com/cgpadwick/triton_rl_project
 - Paper de referencia (TritonRL): arXiv 2510.17891
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

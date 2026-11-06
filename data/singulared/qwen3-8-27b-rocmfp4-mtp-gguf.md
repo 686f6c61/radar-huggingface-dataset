@@ -130,7 +130,7 @@ Otras cuantizaciones de Qwen3.8-27B publicadas por terceros (p. ej. `bg-digitals
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/singulared/Qwen3.8-27B-ROCmFP4-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/singulared/Qwen3.8-27B-ROCmFP4-MTP-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Ficheros GGUF de origen: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX

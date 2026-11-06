@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CSLR-XL es un repositorio publicado en HuggingFace por el usuario `karahansahin` bajo licencia MIT. El identificador del modelo sugiere un uso relacionado con reconocimiento de lenguaje de signos (CSLR, del inglés *Continuous Sign Language Recognition*), aunque la model card no contiene descripción, documentación técnica ni instrucciones de uso que lo confirmen. El repositorio no incluye pipeline declarado, idiomas soportados ni información sobre arquitectura, tamaño o contexto.
+CSLR-XL es un repositorio publicado en Hugging Face por el usuario `karahansahin` bajo licencia MIT. El identificador del modelo sugiere un uso relacionado con reconocimiento de lenguaje de signos (CSLR, del inglés *Continuous Sign Language Recognition*), aunque la model card no contiene descripción, documentación técnica ni instrucciones de uso que lo confirmen. El repositorio no incluye pipeline declarado, idiomas soportados ni información sobre arquitectura, tamaño o contexto.
 
 En el momento de la consulta, el modelo acumula 0 descargas y 0 *likes*, y fue creado y actualizado el 2 de noviembre de 2026 con apenas dos segundos de diferencia, lo que indica una publicación sin desarrollo posterior documentado. No hay pesos, tokenizador, configuración ni dataset asociados descritos en la información disponible.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la tarea ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/karahansahin/CSLR-XL
+- Hugging Face: https://huggingface.co/karahansahin/CSLR-XL
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Abhi-ai2975/llama-3-legal-casehold-lora` es un adaptador LoRA (Low-Rank Adaptation) sobre un modelo base Llama 3, orientado a la tarea de identificación de holdings legales en el dataset CaseHOLD. CaseHOLD es un benchmark de referencia en el ámbito jurídico que consiste en seleccionar, entre varias opciones, la frase que constituye la "holding" (la regla de derecho establecida por el tribunal) a partir de un fragmento de sentencia. El adaptador fue publicado por el usuario Abhi-ai2975 en HuggingFace con el objetivo de especializar un LLM generalista en esta tarea concreta, aprovechando la eficiencia del fine-tuning con LoRA, que solo entrena un pequeño subconjunto de parámetros.
+El modelo `Abhi-ai2975/llama-3-legal-casehold-lora` es un adaptador LoRA (Low-Rank Adaptation) sobre un modelo base Llama 3, orientado a la tarea de identificación de holdings legales en el dataset CaseHOLD. CaseHOLD es un benchmark de referencia en el ámbito jurídico que consiste en seleccionar, entre varias opciones, la frase que constituye la "holding" (la regla de derecho establecida por el tribunal) a partir de un fragmento de sentencia. El adaptador fue publicado por el usuario Abhi-ai2975 en Hugging Face con el objetivo de especializar un LLM generalista en esta tarea concreta, aprovechando la eficiencia del fine-tuning con LoRA, que solo entrena un pequeño subconjunto de parámetros.
 
 A día de hoy, el repositorio presenta 0 descargas y 0 likes, y la model card es una plantilla genérica sin información técnica detallada. No se especifican los datos de entrenamiento, hiperparámetros, ni el tamaño exacto del adaptador. El único dato técnico confirmado es que los pesos están en formato safetensors y que se integra con la librería transformers. La relevancia de este modelo radica en la creciente necesidad de herramientas de IA especializadas en el dominio legal, donde benchmarks como CaseHOLD permiten evaluar la capacidad de los modelos para comprender matices jurídicos. Sin embargo, la falta de documentación y de resultados publicados limita su uso en producción.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 - Al ser un adaptador LoRA, el requisito principal es el modelo base Llama 3. Para la variante de 8B parámetros, se necesita al menos 16 GB de VRAM en FP16 (por ejemplo, una RTX 4080 o A10G). Para la variante de 70B, se requieren GPUs de alta gama como A100 (80 GB) o H100.
 - El adaptador en sí mismo ocupa unos pocos MB, por lo que no añade requisitos significativos de memoria.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con la API de Hugging Face Inference Endpoints.
 - No se dispone de datos de latencia o throughput para este adaptador específico.
 
 ## Comparativa con modelos similares
@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abhi-ai2975/llama-3-legal-casehold-lora
+- Repositorio en Hugging Face: https://huggingface.co/Abhi-ai2975/llama-3-legal-casehold-lora
 - Paper de CaseHOLD (referencia del dataset): https://arxiv.org/abs/1910.09700
 - Estudio sobre LLMs en CaseHOLD: https://arxiv.org/abs/2505.02172

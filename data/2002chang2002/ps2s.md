@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PS2S es un modelo publicado en HuggingFace por el usuario 2002chang2002 bajo licencia MIT. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni indicaciones de uso. El repositorio ocupa 3,6 GB, un tamano compatible con pesos en precision completa o media de un modelo de varios miles de millones de parametros, aunque el dato exacto no se puede confirmar con la informacion disponible.
+PS2S es un modelo publicado en Hugging Face por el usuario 2002chang2002 bajo licencia MIT. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni indicaciones de uso. El repositorio ocupa 3,6 GB, un tamano compatible con pesos en precision completa o media de un modelo de varios miles de millones de parametros, aunque el dato exacto no se puede confirmar con la informacion disponible.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de inferencia. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -68,5 +68,5 @@ No disponible. Sin datos de parametros, contexto, licencia efectiva de uso y ren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/2002chang2002/PS2S
+- Hugging Face: https://huggingface.co/2002chang2002/PS2S
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

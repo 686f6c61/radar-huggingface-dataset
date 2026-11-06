@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Night448/smolvlm2-slake-joint` es un checkpoint publicado en HuggingFace Hub por el usuario Night448 el 27 de octubre de 2026. El repositorio tiene un tamano de 0,1 GB, declara la libreria `transformers` y contiene pesos en formato `safetensors`. La model card es la plantilla autogenerada por el Hub y no ha sido cumplimentada: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto figuran como "[More Information Needed]". No se dispone por tanto de informacion oficial sobre arquitectura, datos de entrenamiento, licencia ni rendimiento.
+`Night448/smolvlm2-slake-joint` es un checkpoint publicado en Hugging Face Hub por el usuario Night448 el 27 de octubre de 2026. El repositorio tiene un tamano de 0,1 GB, declara la libreria `transformers` y contiene pesos en formato `safetensors`. La model card es la plantilla autogenerada por el Hub y no ha sido cumplimentada: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto figuran como "[More Information Needed]". No se dispone por tanto de informacion oficial sobre arquitectura, datos de entrenamiento, licencia ni rendimiento.
 
 El identificador del repositorio sugiere dos cosas que conviene tratar como hipotesis, no como hechos: que el modelo deriva de la familia SmolVLM2 de Hugging Face (familia de modelos vision-lenguaje compactos) y que incorpora el dataset SLAKE, un conjunto de pregunta-respuesta visual sobre imagenes radiologicas con anotaciones en ingles y chino. El sufijo "joint" podria indicar un entrenamiento conjunto de varios componentes o tareas, pero no hay documentacion que lo confirme.
 

@@ -72,8 +72,8 @@ El autor aclara que la validez de la seccion de razonamiento comprueba formato y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-98K-V2-GGUF | 1,73 mil millones | 98.304 tokens verificados (techo 128.000) | lfm-open-license | GGUF en HuggingFace; familia BF16/F16/FP8/INT8/INT4 | Checkpoint comunitario con validacion propia publicada |
-| LiquidAI/LFM3-Omni-2B (base) | 1,73 mil millones | no disponible | lfm-open-license | Pesos nativos en HuggingFace | Base oficial; 40/40 en decision de tarea pero 0/20 en seccion de razonamiento valida segun la suite del autor |
+| LFM3-Omni-2B-98K-V2-GGUF | 1,73 mil millones | 98.304 tokens verificados (techo 128.000) | lfm-open-license | GGUF en Hugging Face; familia BF16/F16/FP8/INT8/INT4 | Checkpoint comunitario con validacion propia publicada |
+| LiquidAI/LFM3-Omni-2B (base) | 1,73 mil millones | no disponible | lfm-open-license | Pesos nativos en Hugging Face | Base oficial; 40/40 en decision de tarea pero 0/20 en seccion de razonamiento valida segun la suite del autor |
 | Checkpoint padre 424 (misma rama) | 1,73 mil millones | no disponible | lfm-open-license | Repositorio de la familia V2 | Mismo rendimiento agregado que el 432 en la suite del autor |
 
 No se dispone de datos de benchmarks estandar ni de comparaciones con modelos de otras familias en la informacion proporcionada.

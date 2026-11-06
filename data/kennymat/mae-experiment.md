@@ -20,7 +20,7 @@ Su relevancia actual es limitada y de carácter técnico: sirve como artefacto d
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
 | Formato de pesos | Safetensors; implementación en PyTorch |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Estado del checkpoint | Inicialización para pruebas de humo; no entrenado ni auditado |
 | Fecha de creación | 2026-10-17 |
 
@@ -75,7 +75,7 @@ No se han identificado alternativas comparables en la información suministrada.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kennymat/mae-experiment` | 24.832 | No disponible | Sin benchmarks publicados; checkpoint de inicialización | MIT | HuggingFace |
+| `kennymat/mae-experiment` | 24.832 | No disponible | Sin benchmarks publicados; checkpoint de inicialización | MIT | Hugging Face |
 | Alternativas de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No se han identificado alternativas comparables en la información suministrada.
 
 ## Enlaces
 
-- [HuggingFace: kennymat/mae-experiment](https://huggingface.co/kennymat/mae-experiment)
+- [Hugging Face: kennymat/mae-experiment](https://huggingface.co/kennymat/mae-experiment)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos del modelo en la búsqueda web. Los resultados devueltos no guardan relación con el modelo y se omiten.

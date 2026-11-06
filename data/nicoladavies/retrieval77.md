@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Retrieval77 es un repositorio de HuggingFace publicado por el usuario nicoladavies que contiene una implementación funcional de un Tiny Transformer orientado a tareas de retrieval (recuperación de información). El modelo cuenta con 49.600 parámetros totales, lo que lo sitúa en la categoría de modelos extremadamente pequeños, diseñados más como material de referencia reproducible que como sistema listo para producción. El repositorio se distribuye bajo licencia BSD-3-Clause e incluye código Python ejecutable, configuración de arquitectura y un checkpoint de inicialización.
+Retrieval77 es un repositorio de Hugging Face publicado por el usuario nicoladavies que contiene una implementación funcional de un Tiny Transformer orientado a tareas de retrieval (recuperación de información). El modelo cuenta con 49.600 parámetros totales, lo que lo sitúa en la categoría de modelos extremadamente pequeños, diseñados más como material de referencia reproducible que como sistema listo para producción. El repositorio se distribuye bajo licencia BSD-3-Clause e incluye código Python ejecutable, configuración de arquitectura y un checkpoint de inicialización.
 
 El aspecto más relevante de este repositorio es su carácter explícitamente experimental: la propia model card advierte que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado ni evaluado con benchmarks. No se reclama ninguna puntuación de rendimiento, y el autor recomienda tratar la implementación como un punto de partida para experimentación.
 
@@ -79,5 +79,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nicoladavies/retrieval77
+- Hugging Face: https://huggingface.co/nicoladavies/retrieval77
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

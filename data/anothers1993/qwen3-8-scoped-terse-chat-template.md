@@ -89,9 +89,9 @@ La comparativa se limita a las plantillas mencionadas en la model card; no hay d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anothers1993/Qwen3.8-Scoped-Terse-Chat-Template
+- Repositorio Hugging Face: https://huggingface.co/Anothers1993/Qwen3.8-Scoped-Terse-Chat-Template
 - GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Articulo de OpenLM.ai sobre Qwen 3.8-Max: https://openlm.ai/qwen3.8/
 - GitHub de la serie Qwen3: https://github.com/QwenLM/Qwen3
-- Modelo Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Modelo Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - Documentacion de Qwen3 en Transformers: https://huggingface.co/docs/transformers/model_doc/qwen3

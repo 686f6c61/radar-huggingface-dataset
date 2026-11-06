@@ -84,7 +84,7 @@ La comparación directa con alternativas es limitada porque este repositorio no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blaize-AI/ConvNeXtV1l_ImageNet
+- Repositorio Hugging Face: https://huggingface.co/Blaize-AI/ConvNeXtV1l_ImageNet
 - Repositorio original de ConvNeXt (Meta): https://github.com/facebookresearch/ConvNeXt
 - Pesos preentrenados originales: https://github.com/facebookresearch/ConvNeXt
 - ImageNet: https://www.image-net.org/

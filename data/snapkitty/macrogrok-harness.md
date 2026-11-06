@@ -73,7 +73,7 @@ No disponible. `macrogrok-harness` no es un modelo de lenguaje con pesos publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/macrogrok-harness
+- Hugging Face: https://huggingface.co/Snapkitty/macrogrok-harness
 - Repositorio GitHub: https://github.com/SNAPKITTYWEST/macrogrok-harness
 - Código fuente `main.rs`: https://github.com/SNAPKITTYWEST/macrogrok-harness/blob/main/src/main.rs
-- Proyecto relacionado en HuggingFace (snapkitty-harness): https://huggingface.co/SNAPKITTYWEST/snapkitty-harness
+- Proyecto relacionado en Hugging Face (snapkitty-harness): https://huggingface.co/SNAPKITTYWEST/snapkitty-harness

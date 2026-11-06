@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STAR arm A0 (este) | 8B base + LoRA r=64 | No disponible (heredado de Qwen3-8B) | safetensors (adaptador PEFT) | Apache-2.0 | HuggingFace: pourasrp/star-A0 |
-| Qwen/Qwen3-8B (base) | 8B | Ventana del modelo base | safetensors, GGUF, etc. | Apache-2.0 | HuggingFace: Qwen/Qwen3-8B |
+| STAR arm A0 (este) | 8B base + LoRA r=64 | No disponible (heredado de Qwen3-8B) | safetensors (adaptador PEFT) | Apache-2.0 | Hugging Face: pourasrp/star-A0 |
+| Qwen/Qwen3-8B (base) | 8B | Ventana del modelo base | safetensors, GGUF, etc. | Apache-2.0 | Hugging Face: Qwen/Qwen3-8B |
 | Otros adaptadores LoRA de agentes de codigo sobre Qwen3-8B | 8B base + LoRA | Depende del base | safetensors (PEFT) | Variable | no disponible |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de STAR arm A0 con alternativas de la misma categoria.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de STA
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/pourasrp/star-A0
+- Hugging Face (modelo): https://huggingface.co/pourasrp/star-A0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub del proyecto STAR: https://github.com/chaitanyamedidar/STAR
 - Dataset principal: https://huggingface.co/datasets/pourasrp/star_v1

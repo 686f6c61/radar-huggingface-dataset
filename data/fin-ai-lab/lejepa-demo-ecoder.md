@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables específicos para repres
 
 ## Enlaces
 
-- [HuggingFace - fin-ai-lab/lejepa-demo-ecoder](https://huggingface.co/fin-ai-lab/lejepa-demo-ecoder)
+- [Hugging Face - fin-ai-lab/lejepa-demo-ecoder](https://huggingface.co/fin-ai-lab/lejepa-demo-ecoder)
 - [GitHub - galilai-group/lejepa](https://github.com/galilai-group/lejepa)
 - [Paper arXiv - LeJEPA: Provable and Scalable Self-Supervised Learning Without the...](https://arxiv.org/abs/2511.08544)
 - [PDF del paper (v3)](https://arxiv.org/pdf/2511.08544v3)

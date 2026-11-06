@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eulogik/nanoforecast-patchtst-baselines
+- Repositorio en Hugging Face: https://huggingface.co/eulogik/nanoforecast-patchtst-baselines
 - Proyecto NanoForecast (referencia al script `benchmark_standard.py`): no se ha proporcionado URL directa en la información disponible.

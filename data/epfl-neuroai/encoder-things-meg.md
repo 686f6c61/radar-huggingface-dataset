@@ -73,9 +73,9 @@ Referencia del leaderboard THINGS-MEG: el mejor modelo sin fine-tuning, Qwen3-VL
 
 | Modelo | Parametros | Entrada/salida | Contexto | Puntuacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `encoder-things-meg` (este) | 240,7 M (+ Qwen3-VL-2B en `accurate`) | Imagen a MEG (271 x 130) | No aplica | 0,504 (propio) / 0,544 (`accurate`) | Apache 2.0 | HuggingFace |
-| Qwen3-VL-2B (sin fine-tuning) | 2 B aprox. | Imagen/texto | No disponible | 0,463 (leaderboard, no comparable) | No disponible en la informacion | HuggingFace |
-| ResNet-50 / ViT-S preentrenados (timm) | 25 M / 22 M aprox. | Imagen a caracteristicas | No aplica | No disponible de forma aislada | No disponible en la informacion | HuggingFace |
+| `encoder-things-meg` (este) | 240,7 M (+ Qwen3-VL-2B en `accurate`) | Imagen a MEG (271 x 130) | No aplica | 0,504 (propio) / 0,544 (`accurate`) | Apache 2.0 | Hugging Face |
+| Qwen3-VL-2B (sin fine-tuning) | 2 B aprox. | Imagen/texto | No disponible | 0,463 (leaderboard, no comparable) | No disponible en la informacion | Hugging Face |
+| ResNet-50 / ViT-S preentrenados (timm) | 25 M / 22 M aprox. | Imagen a caracteristicas | No aplica | No disponible de forma aislada | No disponible en la informacion | Hugging Face |
 
 No se dispone en la informacion proporcionada de otros modelos de codificacion MEG directamente comparables con sus cifras de rendimiento.
 
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de otros modelos de codificacion M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/epfl-neuroai/encoder-things-meg
+- Modelo en Hugging Face: https://huggingface.co/epfl-neuroai/encoder-things-meg
 - Benchmark THINGS-MEG: https://multimodal-brain-scaling.epfl.ch
 - Paper de referencia (arXiv 2411.05712): https://arxiv.org/abs/2411.05712
 - Paper de referencia (arXiv 2511.21631): https://arxiv.org/abs/2511.21631

@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en el repositorio. El mod
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/software-mansion/react-native-executorch-multi-qa-mpnet-base-dot-v1)
+- [Hugging Face del modelo](https://huggingface.co/software-mansion/react-native-executorch-multi-qa-mpnet-base-dot-v1)
 - [Modelo original multi-qa-mpnet-base-dot-v1](https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1/tree/main)
 - [Repositorio React Native ExecuTorch](https://github.com/software-mansion/react-native-executorch)
 - [Documentacion de React Native ExecuTorch](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)

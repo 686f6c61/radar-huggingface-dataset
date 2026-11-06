@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rewrite2-27b-bf16-i1-GGUF es la versión cuantizada con imatrix del modelo aikexue170/rewrite2-27b-bf16, un ajuste fino de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) orientado a la reescritura y expansión de novelas en chino. El trabajo de cuantización lo firma mradermacher, un publicador habitual de GGUF en HuggingFace, mientras que el modelo original procede de la cuenta aikexue170. La model card del cuantizador no incluye información sobre el entrenamiento, la arquitectura interna ni los datos utilizados en el ajuste del modelo base.
+rewrite2-27b-bf16-i1-GGUF es la versión cuantizada con imatrix del modelo aikexue170/rewrite2-27b-bf16, un ajuste fino de 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) orientado a la reescritura y expansión de novelas en chino. El trabajo de cuantización lo firma mradermacher, un publicador habitual de GGUF en Hugging Face, mientras que el modelo original procede de la cuenta aikexue170. La model card del cuantizador no incluye información sobre el entrenamiento, la arquitectura interna ni los datos utilizados en el ajuste del modelo base.
 
 El modelo resuelve una tarea muy concreta: tomar texto narrativo en chino y reescribirlo o expandirlo manteniendo coherencia estilística. Los tags del repositorio (rewrite2, novel-rewrite, novel-expansion, chinese, conversational) delimitan claramente ese ámbito. No se trata de un modelo generalista, sino de una herramienta de autor para flujos de trabajo editoriales.
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Expansion de novelas: desarrollo de escenas, descripciones y dialogos a partir de un esquema o texto base.
 - Generacion de texto conversacional (tag "conversational" en el repositorio).
 - Procesamiento de texto en chino exclusivamente; no se declara soporte de otros idiomas.
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que permite servirlo mediante infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que permite servirlo mediante infraestructura de inferencia compatible con la API de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
 - Vision, audio o modo "thinking": no disponible.
@@ -97,7 +97,7 @@ No se dispone de datos publicos de benchmarks ni de especificaciones del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/rewrite2-27b-bf16-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/rewrite2-27b-bf16-i1-GGUF
 - Modelo base: https://huggingface.co/aikexue170/rewrite2-27b-bf16
 - Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/rewrite2-27b-bf16-GGUF
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#rewrite2-27b-bf16-i1-GGUF

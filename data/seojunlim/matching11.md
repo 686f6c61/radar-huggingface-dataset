@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Seojunlim/matching11` es un repositorio experimental publicado en HuggingFace por el usuario Seojunlim bajo licencia MIT. No se trata de un modelo entrenado, sino de un esqueleto de codigo ("codebase") para tareas de *matching* construido sobre una arquitectura denominada Coca. La propia model card lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y el checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida para *smoke tests*, no como un modelo con resultados de benchmark.
+`Seojunlim/matching11` es un repositorio experimental publicado en Hugging Face por el usuario Seojunlim bajo licencia MIT. No se trata de un modelo entrenado, sino de un esqueleto de codigo ("codebase") para tareas de *matching* construido sobre una arquitectura denominada Coca. La propia model card lo describe como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y el checkpoint `model.safetensors` se presenta explicitamente como una inicializacion valida para *smoke tests*, no como un modelo con resultados de benchmark.
 
 El tamano real del checkpoint es de 33.088 parametros, lo que lo situa en un rango meramente didactico o de prueba de integracion: no es un modelo de lenguaje utilizable para generacion, razonamiento o codigo. La configuracion declarada incluye atencion dilatada, fusion bilineal, activacion swish y normalizacion scalenorm, con receta de entrenamiento basada en el optimizador adafactor y un schedule de tipo *step*. La relevancia de este repositorio es, por tanto, la de una plantilla reproducible para experimentar con arquitecturas de matching, no la de un artefacto listo para produccion.
 
@@ -49,7 +49,7 @@ En cuanto al entrenamiento, el repositorio incluye un fichero `training_args.jso
 
 - Prueba de integracion de pipelines propios: el repositorio permite verificar que un *harness* de entrenamiento carga correctamente el checkpoint, aplica la configuracion de `config.json` y ejecuta una pasada hacia delante sin errores antes de invertir recursos en un entrenamiento completo.
 - Experimentacion arquitectonica controlada: al mantener una escala base y un diseno "intencionadamente manejable", permite modificar componentes concretos (atencion dilatada, fusion bilineal, scalenorm) e inspeccionar el efecto de cada cambio de forma aislada.
-- Docencia y formacion: sirve como ejemplo minimo y legible de como estructurar un repositorio de modelo en HuggingFace con `config.json`, `training_args.json` e `inference.py` separados.
+- Docencia y formacion: sirve como ejemplo minimo y legible de como estructurar un repositorio de modelo en Hugging Face con `config.json`, `training_args.json` e `inference.py` separados.
 - Reproduccion de recetas de optimizacion: el fichero `training_args.json` con adafactor y schedule *step* puede tomarse como plantilla para disenar experimentos comparables con la misma exposicion de datos y presupuesto de ajuste.
 - Auditoria de codigo de terceros: al ser un repositorio pequeno con un unico artefacto Python como pieza principal, es adecuado para revisar convenciones de implementacion antes de adoptar codigo externo.
 - Punto de partida para *benchmarking* honesto: la model card propone explicitamente evaluar con un conjunto de validacion emparejado, reportar la metrica de tarea en al menos tres semillas e incluir una linea base de capacidad equivalente.
@@ -84,14 +84,14 @@ No disponible. Este repositorio no es un modelo entrenado y no se identifica en 
 - No se han documentado sesgos conocidos, pero tampoco existe ninguna evaluacion que permita descartarlos.
 - Riesgo de alucinacion: no aplica en el sentido habitual, ya que no hay un modelo generativo entrenado; cualquier salida seria ruido de una inicializacion aleatoria.
 - No se declaran idiomas soportados, longitud de contexto ni limites de contexto.
-- Es una implementacion personalizada: las APIs de carga automatica de HuggingFace no funcionan sin escribir un adaptador especifico.
+- Es una implementacion personalizada: las APIs de carga automatica de Hugging Face no funcionan sin escribir un adaptador especifico.
 - La licencia es MIT, lo que permite uso comercial del codigo y del checkpoint, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
 - Al no existir resultados publicados, cualquier afirmacion de rendimiento atribuida a este modelo debe considerarse no verificada.
 - La model card recomienda que cualquier resultado de un futuro checkpoint entrenado se documente de forma separada respecto a los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Seojunlim/matching11
+- Modelo en Hugging Face: https://huggingface.co/Seojunlim/matching11
 - Repositorio de codigo: no disponible (el autor no referencia un repositorio Git externo)
 - Paper asociado: no disponible
 - Blog o demo: no disponible

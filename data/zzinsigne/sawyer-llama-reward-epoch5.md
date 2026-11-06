@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`zzinsigne/sawyer-llama-reward-epoch5` es un modelo de clasificación de texto de 124.646.401 parámetros (aproximadamente 125 millones) subido al Hub de HuggingFace por el usuario `zzinsigne`. Por su tamaño, por la etiqueta de arquitectura declarada (`roberta`) y por el pipeline asignado (`text-classification`), se trata con alta probabilidad de un *reward model* basado en la familia RoBERTa-base, es decir, un encoder de tipo transformer con una cabeza de clasificación de secuencia que produce una puntuación escalar de recompensa para un par prompt-respuesta. El sufijo `epoch5` sugiere un checkpoint intermedio de un proceso de ajuste fino supervisado de cinco épocas.
+`zzinsigne/sawyer-llama-reward-epoch5` es un modelo de clasificación de texto de 124.646.401 parámetros (aproximadamente 125 millones) subido al Hub de Hugging Face por el usuario `zzinsigne`. Por su tamaño, por la etiqueta de arquitectura declarada (`roberta`) y por el pipeline asignado (`text-classification`), se trata con alta probabilidad de un *reward model* basado en la familia RoBERTa-base, es decir, un encoder de tipo transformer con una cabeza de clasificación de secuencia que produce una puntuación escalar de recompensa para un par prompt-respuesta. El sufijo `epoch5` sugiere un checkpoint intermedio de un proceso de ajuste fino supervisado de cinco épocas.
 
 El modelo no resuelve una tarea generativa: su función esperable es puntuar la calidad o el alineamiento de respuestas generadas por un LLM, lo que lo sitúa en la fase de *reward modeling* de un pipeline de RLHF (Reinforcement Learning from Human Feedback) o en estrategias de reranking tipo *best-of-n*. Es relevante ahora precisamente por esto: los reward models siguen siendo la pieza crítica y menos documentada de los pipelines de alineamiento, y los checkpoints pequeños de este tipo se usan para filtrar datasets de preferencias, comparar respuestas y validar pipelines completos sin necesidad de infraestructura de GPU dedicada.
 
-La ficha tiene una limitación de partida importante: la *model card* publicada es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`, y el repositorio acumula 0 descargas y 0 *likes* en el momento de la consulta. No hay información del autor sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación. Todo lo que sigue distingue de forma explícita entre datos verificados del repositorio, inferencias técnicas razonadas a partir de la arquitectura y campos directamente no disponibles.
+La ficha tiene una limitación de partida importante: la *model card* publicada es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`, y el repositorio acumula 0 descargas y 0 *likes* en el momento de la consulta. No hay información del autor sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación. Todo lo que sigue distingue de forma explícita entre datos verificados del repositorio, inferencias técnicas razonadas a partir de la arquitectura y campos directamente no disponibles.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ La ficha tiene una limitación de partida importante: la *model card* publicada 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada por el autor sobre la arquitectura exacta ni sobre el proceso de entrenamiento. La model card es la plantilla autogenerada de HuggingFace: los campos de desarrollador, financiacion, tipo de modelo, idiomas, licencia y modelo base figuran como `[More Information Needed]`, y las secciones de datos de entrenamiento, preprocesado, hiperparametros y regimen de precision (fp32, fp16, bf16, fp8) estan vacias. La unica pista estructural es la etiqueta `roberta` asociada al repositorio, que apunta a un transformer encoder con atención bidireccional completa.
+No hay informacion publicada por el autor sobre la arquitectura exacta ni sobre el proceso de entrenamiento. La model card es la plantilla autogenerada de Hugging Face: los campos de desarrollador, financiacion, tipo de modelo, idiomas, licencia y modelo base figuran como `[More Information Needed]`, y las secciones de datos de entrenamiento, preprocesado, hiperparametros y regimen de precision (fp32, fp16, bf16, fp8) estan vacias. La unica pista estructural es la etiqueta `roberta` asociada al repositorio, que apunta a un transformer encoder con atención bidireccional completa.
 
 A partir del numero de parametros (124.646.401) puede inferirse que la base es `roberta-base` (125 M de parametros) con una cabeza de clasificación, probablemente con un unico logit de salida para producir una recompensa escalar. El sufijo `epoch5` indica un checkpoint de la quinta epoca de un ajuste fino, y el nombre `sawyer-llama-reward` sugiere que se entreno como modelo de recompensa para evaluar las salidas de un modelo de la familia Llama enmarcado en el proyecto "Sawyer". Ninguna de estas inferencias esta confirmada por el autor. No se documenta ningun uso de RLHF, DPO, decodificacion especulativa ni mecanismos de atencion lineal o eficiente.
 
@@ -41,7 +41,7 @@ Existen dos repositorios relacionados en la busqueda web que refuerzan esa inter
 - Capacidades multilingues: no disponibles ni documentadas.
 - Capacidades especiales (modo *thinking*, vision, audio): no disponibles.
 - Embeddings: la etiqueta `text-embeddings-inference` del repositorio sugiere compatibilidad con ese runtime para exponer representaciones, aunque no hay documentacion que lo confirme.
-- Despliegue gestionado: etiqueta `endpoints_compatible`, lo que permite servirlo en HuggingFace Inference Endpoints con la libreria transformers.
+- Despliegue gestionado: etiqueta `endpoints_compatible`, lo que permite servirlo en Hugging Face Inference Endpoints con la libreria transformers.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,5 GB (124,6 M de parametros x 4 bytes); en fp16 o bf16, aproximadamente 0,25 GB; en int8, aproximadamente 0,13 GB. Son estimaciones derivadas del numero de parametros, no cifras publicadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. El modelo cabe sobradamente en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100 y H100. La eleccion depende del throughput agregado necesario, no de la capacidad de memoria.
 - Compatibilidad con GPU de consumo: si. Cabe en cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida; tambien puede ejecutarse en CPU con latencias de milisegundos por lote pequeno.
-- Opciones de despliegue: transformers con `AutoModelForSequenceClassification` o `pipeline("text-classification")`, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), y Text Embeddings Inference (etiqueta `text-embeddings-inference`). No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion propia. vLLM y TGI estan orientados a modelos generativos y no son el encaje natural para un encoder de clasificacion.
+- Opciones de despliegue: transformers con `AutoModelForSequenceClassification` o `pipeline("text-classification")`, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), y Text Embeddings Inference (etiqueta `text-embeddings-inference`). No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requeririan una conversion propia. vLLM y TGI estan orientados a modelos generativos y no son el encaje natural para un encoder de clasificacion.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas. Para referencia, un encoder de 125 M de parametros en una GPU moderna procesa lotes de cientos de secuencias de 512 tokens en decenas de milisegundos, pero esta cifra es una estimacion generica y no un dato del repositorio.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparativa de rendimiento no puede establecerse: no existen resultados de ev
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace sin ningun campo cumplimentado. No se puede verificar el procedimiento de entrenamiento, los datos usados ni el modelo base exacto.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face sin ningun campo cumplimentado. No se puede verificar el procedimiento de entrenamiento, los datos usados ni el modelo base exacto.
 - Ambiguedad en el nombre: el identificador incluye `llama`, pero la etiqueta de arquitectura del repositorio es `roberta`. No queda claro si el modelo esta basado en RoBERTa y evalua a Llama, o si el nombre es simplemente herencia del proyecto. Esta ambiguedad debe resolverse antes de cualquier uso serio.
 - Licencia no disponible: al no declararse licencia, no hay autorizacion explicita de uso comercial. En la practica, la ausencia de licencia implica reserva de derechos por defecto en muchas jurisdicciones, lo que desaconseja su uso en produccion sin contactar con el autor.
 - Riesgo de alucinacion no aplicable en el sentido generativo, pero si existe riesgo de puntuaciones mal calibradas: un reward model puede asignar recompensas altas a respuestas fluidas pero incorrectas, y ese sesgo se propaga directamente al pipeline de RLHF que lo use.
@@ -90,8 +90,8 @@ La comparativa de rendimiento no puede establecerse: no existen resultados de ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zzinsigne/sawyer-llama-reward-epoch5
-- Repositorio relacionado en HuggingFace: https://huggingface.co/profoz/sawyer-llama-reward
+- Modelo en Hugging Face: https://huggingface.co/zzinsigne/sawyer-llama-reward-epoch5
+- Repositorio relacionado en Hugging Face: https://huggingface.co/profoz/sawyer-llama-reward
 - Cuaderno de ajuste fino supervisado del proyecto Sawyer: https://github.com/sinanuozdemir/foundations-of-gen-ai/blob/main/notebooks/SAWYER_LLAMA_SFT.ipynb
 - Cuaderno del reward model del proyecto Sawyer: https://github.com/sinanuozdemir/foundations-of-gen-ai/blob/main/notebooks/SAWYER_Reward_Model.ipynb
 - Repositorio completo del proyecto: https://github.com/sinanuozdemir/foundations-of-gen-ai

@@ -82,9 +82,9 @@ Advertencias del propio autor: property-only100 y PSMILES100 usan identificadore
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| luca0621/polyedit-qwen3-8b-property-v1 | 8,19 B (FP32) | no disponible | Intención + formateo numérico de propiedades de polímeros en coreano | `qwen-apache-with-polyone-reference-terms` | HuggingFace, checkpoint completo |
-| namhokaist/polyedit-qwen3-8b-full80 | no disponible | no disponible | Edición de polímeros condicionada por propiedades (Egc, Egb, Eea, Ei, EPS, Nc, Xc, Eat) con pérdida causal solo en turnos del asistente | no disponible | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8,19 B | no disponible en la información proporcionada | Modelo multilingüe general: lenguaje, código y matemáticas | Apache 2.0 (según el modelo base) | HuggingFace |
+| luca0621/polyedit-qwen3-8b-property-v1 | 8,19 B (FP32) | no disponible | Intención + formateo numérico de propiedades de polímeros en coreano | `qwen-apache-with-polyone-reference-terms` | Hugging Face, checkpoint completo |
+| namhokaist/polyedit-qwen3-8b-full80 | no disponible | no disponible | Edición de polímeros condicionada por propiedades (Egc, Egb, Eea, Ei, EPS, Nc, Xc, Eat) con pérdida causal solo en turnos del asistente | no disponible | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8,19 B | no disponible en la información proporcionada | Modelo multilingüe general: lenguaje, código y matemáticas | Apache 2.0 (según el modelo base) | Hugging Face |
 
 La comparación directa con el modelo base en las métricas del pipeline no está disponible en esta información: la model card menciona puntuaciones del modelo base original en `RESULTS_KO.md`, pero no reproduce los valores. El modelo de namhokaist parece un adaptador orientado a edición de polímeros en un paso, mientras que este checkpoint se centra en la extracción de intención y el formateo numérico previo al generador.
 
@@ -105,7 +105,7 @@ La comparación directa con el modelo base en las métricas del pipeline no est�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luca0621/polyedit-qwen3-8b-property-v1
+- Modelo en Hugging Face: https://huggingface.co/luca0621/polyedit-qwen3-8b-property-v1
 - Licencia del modelo: https://huggingface.co/luca0621/polyedit-qwen3-8b-property-v1/blob/main/LICENSE.md
 - Resultados detallados citados en la model card: https://huggingface.co/luca0621/polyedit-qwen3-8b-property-v1/blob/main/RESULTS_KO.md y https://huggingface.co/luca0621/polyedit-qwen3-8b-property-v1/blob/main/ALL_EXPERIMENT_RESULTS_KO.html
 - Dataset de entrenamiento: https://huggingface.co/datasets/luca0621/polyedit-korean-property-instructions-v6

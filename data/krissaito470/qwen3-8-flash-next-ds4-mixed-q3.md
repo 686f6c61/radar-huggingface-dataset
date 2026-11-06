@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-DS4-Mixed-Q3 es una cuantización mixta no oficial del modelo Qwen3.8-Flash-Next de Qwen, creada por el usuario de HuggingFace Krissaito470. No se trata de un modelo nuevo, sino de dos ficheros GGUF (Mixed-Q3-64GB y Mixed-Q3-96GB) construidos combinando por capas las cuantizaciones Q2 y Q4 existentes, con el objetivo de ofrecer un punto intermedio en tamaño y precisión entre ambas versiones. El modelo base es un MoE de 181.564 millones de parámetros totales (según los metadatos de safetensors del repositorio original).
+Qwen3.8-Flash-Next-DS4-Mixed-Q3 es una cuantización mixta no oficial del modelo Qwen3.8-Flash-Next de Qwen, creada por el usuario de Hugging Face Krissaito470. No se trata de un modelo nuevo, sino de dos ficheros GGUF (Mixed-Q3-64GB y Mixed-Q3-96GB) construidos combinando por capas las cuantizaciones Q2 y Q4 existentes, con el objetivo de ofrecer un punto intermedio en tamaño y precisión entre ambas versiones. El modelo base es un MoE de 181.564 millones de parámetros totales (según los metadatos de safetensors del repositorio original).
 
 La particularidad de esta publicación es que los ficheros están destinados específicamente al runtime DwarfStar (ds4), de antirez. Emplean la arquitectura `qwen4exp` e incorporan dentro del propio GGUF una tabla n-gram en BF16 de 95,37 GiB que ds4 lee directamente de disco, lo que habilita decodificación especulativa por n-gramas y MTP (multi-token prediction). Esto los hace incompatibles, en principio, con otros runtimes como llama.cpp u Ollama.
 

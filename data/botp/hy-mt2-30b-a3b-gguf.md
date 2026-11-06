@@ -93,10 +93,10 @@ No se dispone de mediciones especificas para esta cuantizacion GGUF de `botp`, p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/botp/Hy-MT2-30B-A3B-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/botp/Hy-MT2-30B-A3B-GGUF
 - Modelo original en safetensors: https://huggingface.co/tencent/Hy-MT2-30B-A3B
 - Version FP8 del modelo original: https://huggingface.co/tencent/Hy-MT2-30B-A3B-FP8
-- Coleccion Hy-MT2 en HuggingFace: https://huggingface.co/collections/tencent/hy-mt2
+- Coleccion Hy-MT2 en Hugging Face: https://huggingface.co/collections/tencent/hy-mt2
 - Modelo Hy-MT2-7B: https://huggingface.co/tencent/Hy-MT2-7B
 - Modelo Hy-MT2-1.8B: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Modelo Hy-MT2-1.8B-1.25bit-GGUF: https://huggingface.co/tencent/Hy-MT2-1.8B-1.25bit-GGUF

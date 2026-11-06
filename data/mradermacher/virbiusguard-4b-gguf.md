@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VirbiusGuard-4B-GGUF | 4,02 B | no disponible | apache-2.0 | GGUF en HuggingFace | Cuantizaciones de 1,8 a 8,2 GB; 0 descargas en el momento de la consulta |
+| VirbiusGuard-4B-GGUF | 4,02 B | no disponible | apache-2.0 | GGUF en Hugging Face | Cuantizaciones de 1,8 a 8,2 GB; 0 descargas en el momento de la consulta |
 | i1see1you/VirbiusGuard-4B | 4,02 B | no disponible | apache-2.0 | Pesos base para transformers | Modelo original del que derivan estas cuantizaciones |
-| Qwen3-4B | 4 B (aproximado) | no disponible en esta ficha | no verificada en la informacion disponible | HuggingFace | Misma familia declarada por la etiqueta `qwen3`; seria el modelo generalista de partida |
-| Llama Guard 3 8B | 8 B | no disponible en esta ficha | no verificada en la informacion disponible | HuggingFace | Guard de referencia de Meta; mayor tamano, por lo que exige mas VRAM |
-| ShieldGemma 2B / 9B | 2 B y 9 B | no disponible en esta ficha | no verificada en la informacion disponible | HuggingFace | Familia de guards de Google con variantes de dos tamanos |
+| Qwen3-4B | 4 B (aproximado) | no disponible en esta ficha | no verificada en la informacion disponible | Hugging Face | Misma familia declarada por la etiqueta `qwen3`; seria el modelo generalista de partida |
+| Llama Guard 3 8B | 8 B | no disponible en esta ficha | no verificada en la informacion disponible | Hugging Face | Guard de referencia de Meta; mayor tamano, por lo que exige mas VRAM |
+| ShieldGemma 2B / 9B | 2 B y 9 B | no disponible en esta ficha | no verificada en la informacion disponible | Hugging Face | Familia de guards de Google con variantes de dos tamanos |
 
 Los datos de los modelos comparativos no proceden de la informacion proporcionada en esta consulta y deben verificarse en sus fichas oficiales antes de tomar decisiones de arquitectura. No hay benchmarks publicados que permitan comparar el rendimiento de VirbiusGuard-4B frente a estas alternativas.
 

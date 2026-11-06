@@ -73,6 +73,6 @@ No se dispone de datos objetivos para comparar este modelo cuantizado con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuivs/Minimax-H3-nvfp4-INT4-INT8-Convrot
+- Repositorio Hugging Face: https://huggingface.co/yuivs/Minimax-H3-nvfp4-INT4-INT8-Convrot
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia (enlace dentro del repositorio): `LICENSE` (no se proporciona URL directa)

@@ -13,7 +13,7 @@ La relevancia del repositorio es doble. Por un lado, permite ejecutar un pipelin
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Conjunto heterogéneo, no un modelo único: separadores de fuentes con atención por bandas (BS-PolarFormer Public, MelBand-RoFormer), estimadores de F0 (RMVPE, FCPE), transcriptores de notas y técnica (GAME 1.0.3, JBM555 CE-CTC 80, STARS Chinese P1, ROSVOT P0), detector de onsets y activaciones (Basic Pitch) y modelos de ASR y alineación (FireRedASR2-AED, Qwen3-ASR 1.7B, Qwen3-ForcedAligner 0.6B) |
-| Parámetros totales | No disponible por componente. HuggingFace reporta 35.699 en el campo de safetensors, cifra no interpretable y no coherente con los 13,5 GB del repositorio |
+| Parámetros totales | No disponible por componente. Hugging Face reporta 35.699 en el campo de safetensors, cifra no interpretable y no coherente con los 13,5 GB del repositorio |
 | Parámetros activos | No aplica: no hay componentes de tipo MoE identificados en la información disponible |
 | Longitud de contexto | No aplica en la mayoría de componentes (procesan ventanas de audio). No disponible para Qwen3-ASR y Qwen3-ForcedAligner |
 | Tipos de cuantización | FP16 (componentes de separación y transcripción) y F32 (estimadores de F0, GAME, JBM555, STARS, ROSVOT, Basic Pitch). No se publican variantes Q4, Q5 ni Q8 |
@@ -99,7 +99,7 @@ No hay datos de rendimiento de este paquete que permitan una comparación cuanti
 | Aspecto | Uta! Studio GGUF models | Demucs v4 (htdemucs) | Modelos UVR5 / MDX-Net | Whisper large-v3 |
 |---|---|---|---|---|
 | Categoría | Paquete de separación, análisis y transcripción de canto | Separación de fuentes musicales | Separación de fuentes musicales (UVR) | ASR multilenguaje |
-| Parámetros | No disponible por componente; el campo reportado por HuggingFace (35.699) no es utilizable | No disponible | No disponible | ~1550 M |
+| Parámetros | No disponible por componente; el campo reportado por Hugging Face (35.699) no es utilizable | No disponible | No disponible | ~1550 M |
 | Formato de pesos | GGUF (GGML) | PyTorch | Checkpoints y ONNX según el modelo | PyTorch y safetensors |
 | Licencia | Mixta por componente: MIT, "informational" y advertencia de licencias no comerciales | MIT | Variable; con frecuencia restrictiva para uso comercial, a revisar caso por caso | MIT |
 | Ejecución local | Sí, mediante el runtime propio de Uta! Studio | Sí | Sí, vía UVR | Sí |
@@ -111,7 +111,7 @@ No hay datos de rendimiento de este paquete que permitan una comparación cuanti
 
 - Licencia mixta con riesgo legal: cada componente mantiene la licencia upstream. La propia model card advierte de licencias no comerciales (cc-by-nc-sa-4.0) y de checkpoints con licencia no resuelta. Antes de cualquier uso comercial hay que verificar el origen de cada fichero por separado; el repositorio no relicencia nada.
 - Varios componentes aparecen con licencia "informational" (las tres variantes MelBand-RoFormer, RMVPE), lo que en la práctica significa que no hay una licencia explícita y trazable en el propio repositorio.
-- El campo de parámetros reportado por HuggingFace (35.699) no es interpretable ni coherente con el tamaño del repositorio. No debe citarse como número de parámetros del conjunto.
+- El campo de parámetros reportado por Hugging Face (35.699) no es interpretable ni coherente con el tamaño del repositorio. No debe citarse como número de parámetros del conjunto.
 - Model card truncada: la información disponible corta la sección de fuentes y licencias después de FCPE, por lo que las condiciones de RMVPE y de los componentes posteriores (Basic Pitch, GAME, JBM555, STARS, ROSVOT, FireRedASR2-AED, Qwen3-ASR, Qwen3-ForcedAligner) pueden no estar reflejadas al completo.
 - Sin validación de la comunidad: 0 descargas y 0 likes, con creación y última actualización el mismo día. No hay evidencia externa de funcionamiento ni de calidad de las conversiones.
 - Riesgo de alucinación en transcripción: los componentes de ASR (Qwen3-ASR 1.7B, FireRedASR2-AED) pueden generar texto plausible que no corresponde a lo cantado, especialmente con mezclas densas, coros o cambio de idioma.
@@ -123,7 +123,7 @@ No hay datos de rendimiento de este paquete que permitan una comparación cuanti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bintis/uta-studio
+- Repositorio en Hugging Face: https://huggingface.co/bintis/uta-studio
 - Repositorio de la aplicación Uta! Studio: https://github.com/bintis/uta-studio
 - Modelos BS-RoFormer Leap XE90 (no alojados en este repositorio): https://huggingface.co/scragnog/HOT-Step-CPP-SuperSep
 - BS-PolarFormer Public: https://huggingface.co/bgkb/bs_polarformer (revisión `9158719ee2173edd480a735764627526506fe4af`)

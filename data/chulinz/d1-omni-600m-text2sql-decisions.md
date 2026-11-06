@@ -6,7 +6,7 @@ D1 Omni 600M Text2SQL Decisions es un ajuste fino supervisado de LiquidAI/d1-omn
 
 Con 587.161.089 parámetros reales y un peso float32 de 2,35 GB (1,17 GB en bfloat16), se trata de un modelo compacto orientado a clasificación de decisiones en pipelines de text-to-SQL. La versión 2.0 se entrenó sobre siete esquemas (Pagila, Northwind, AdventureWorks, nycflights13, Synthea, HR y Olist) y se evaluó con preguntas reservadas sobre ellos y sobre el esquema no visto Chinook. La versión 1.0, limitada a Olist, queda bajo la etiqueta `v1.0`.
 
-Su relevancia actual radica en que documenta explícitamente sus límites de fiabilidad: cuando la aplicación devuelve una única respuesta, acierta en torno al 47% en esquemas fuera de Olist, por lo que el autor recomienda desplegarlo detrás de una interfaz en la que el usuario confirme o elija la interpretación. El modelo usa la licencia lfm1.0, es solo para inglés y su pipeline declarado en HuggingFace es text-classification.
+Su relevancia actual radica en que documenta explícitamente sus límites de fiabilidad: cuando la aplicación devuelve una única respuesta, acierta en torno al 47% en esquemas fuera de Olist, por lo que el autor recomienda desplegarlo detrás de una interfaz en la que el usuario confirme o elija la interpretación. El modelo usa la licencia lfm1.0, es solo para inglés y su pipeline declarado en Hugging Face es text-classification.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en que documenta explícitamente sus límites de fia
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de LiquidAI/d1-omni-600M y se ajusta como clasificador de decisiones. La aplicacion descompone una pregunta en ingles en un conjunto de opciones (medida, agrupacion, filtros, orden y plan) y el modelo puntua cada una; despues, la app compila las elecciones seleccionadas en SQL de PostgreSQL. El repositorio de HuggingFace incluye `custom_code`, lo que implica que la carga requiere `trust_remote_code=True`. En el README no se detalla el numero de tokens de entrenamiento ni la composicion completa del dataset mas alla de las filas de decision.
+El modelo parte de LiquidAI/d1-omni-600M y se ajusta como clasificador de decisiones. La aplicacion descompone una pregunta en ingles en un conjunto de opciones (medida, agrupacion, filtros, orden y plan) y el modelo puntua cada una; despues, la app compila las elecciones seleccionadas en SQL de PostgreSQL. El repositorio de Hugging Face incluye `custom_code`, lo que implica que la carga requiere `trust_remote_code=True`. En el README no se detalla el numero de tokens de entrenamiento ni la composicion completa del dataset mas alla de las filas de decision.
 
 El conjunto de entrenamiento consta de 118.032 filas de decision, generadas sobre siete esquemas. Las preguntas de test y las consultas de referencia fueron escritas por un modelo de lenguaje que nunca vio el generador de entrenamiento; un segundo modelo redacto una referencia independiente y un tercero resolvio el 15%-29% de desacuerdos, verificandose cada referencia contra la base de datos. La version 2.0 se evalua sobre Chinook como esquema no visto. El autor reporta que la calibracion ajustada sobre datos generados transfiere mal: el expected calibration error es 0,001 sobre las 147.822 decisiones de calibracion y 0,13 sobre las 3.886 respuestas aceptadas del test.
 
@@ -99,7 +99,7 @@ bfloat16 eligio la misma opcion que float32 en el 99,98% de las decisiones. Con 
 
 | Modelo | Parametros | Contexto | Strict (Chinook) | Single answers right (Chinook) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo | 587.161.089 | no disponible | 29,6% | 48% | lfm1.0 | Pesos abiertos en HuggingFace |
+| Este modelo | 587.161.089 | no disponible | 29,6% | 48% | lfm1.0 | Pesos abiertos en Hugging Face |
 | Clef Flash | no disponible | no disponible | 28,1% | 65% | no disponible | Hospedado, via OpenRouter (decisions API) |
 | D1 3B | no disponible (aprox. 3B por nombre) | no disponible | 22,2% | 71% | no disponible | Hospedado, via OpenRouter (decisions API) |
 | SLM-SQL-1.5B | no disponible | no disponible | 26,0% (Olist) | no disponible | no disponible | no disponible |
@@ -120,7 +120,7 @@ bfloat16 eligio la misma opcion que float32 en el 99,98% de las decisiones. Con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chulinz/d1-omni-600m-text2sql-decisions
+- Modelo en Hugging Face: https://huggingface.co/Chulinz/d1-omni-600m-text2sql-decisions
 - Modelo base: https://huggingface.co/LiquidAI/d1-omni-600M
 - Repositorio de la aplicacion: https://github.com/Chulinuwu/decisionmodel-text-to-sql
 - Modelo comparado Clef Flash: https://huggingface.co/cloudflare/clef-flash (referencia citada como `cloudflare/clef-flash`)

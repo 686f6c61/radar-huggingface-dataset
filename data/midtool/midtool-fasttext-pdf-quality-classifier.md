@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MidTool/MidTool-fasttext-pdf-quality-classifier` es un clasificador de texto basado en la librería fastText, desarrollado por MidTool, cuyo objetivo es evaluar la calidad de textos extraídos de archivos PDF. Según los metadatos de HuggingFace, está orientado a tareas de filtrado y clasificación de datos para pipelines de calidad de datos (data quality y data filtering). El modelo se distribuye bajo licencia Apache 2.0 y su acceso está restringido (gated), lo que implica que el usuario debe aceptar condiciones adicionales antes de poder descargarlo.
+El modelo `MidTool/MidTool-fasttext-pdf-quality-classifier` es un clasificador de texto basado en la librería fastText, desarrollado por MidTool, cuyo objetivo es evaluar la calidad de textos extraídos de archivos PDF. Según los metadatos de Hugging Face, está orientado a tareas de filtrado y clasificación de datos para pipelines de calidad de datos (data quality y data filtering). El modelo se distribuye bajo licencia Apache 2.0 y su acceso está restringido (gated), lo que implica que el usuario debe aceptar condiciones adicionales antes de poder descargarlo.
 
 La arquitectura subyacente es fastText, una librería de código abierto de Meta para clasificación de texto y aprendizaje de representaciones de palabras, que destaca por su eficiencia computacional y su capacidad para ejecutarse en hardware estándar. Aunque el tamaño del repositorio es de 1.0 GB, no se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados, por lo que muchos datos técnicos no están disponibles. El modelo se presenta como una herramienta para mejorar la calidad de datasets, especialmente en contextos de extracción de PDFs, aunque su uso concreto y sus métricas no se detallan en la información pública.
 
@@ -75,7 +75,7 @@ No se dispone de comparación cuantitativa. El modelo de kenhktsui también es u
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/MidTool/MidTool-fasttext-pdf-quality-classifier
+- Página del modelo en Hugging Face: https://huggingface.co/MidTool/MidTool-fasttext-pdf-quality-classifier
 - Sitio oficial de fastText: https://fasttext.cc/
 - Repositorio de GitHub de fastText: https://github.com/facebookresearch/fastText
 - Modelo similar de clasificación de calidad educativa: https://huggingface.co/kenhktsui/llm-data-textbook-quality-fasttext-classifier-v2

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| alst10/Qwen3-Embedding-0.6B (este) | 595,8 M | no disponible | CC BY 4.0 | GGUF (Q4_0_ROCMFP4_FAST) | HuggingFace |
-| Qwen/Qwen3-Embedding-0.6B (modelo base) | 595,8 M | no disponible | no disponible | safetensors | HuggingFace |
+| alst10/Qwen3-Embedding-0.6B (este) | 595,8 M | no disponible | CC BY 4.0 | GGUF (Q4_0_ROCMFP4_FAST) | Hugging Face |
+| Qwen/Qwen3-Embedding-0.6B (modelo base) | 595,8 M | no disponible | no disponible | safetensors | Hugging Face |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion mas directa es con el modelo base sin cuantizar, que conserva la precision completa en safetensors y probablemente un abanico mayor de runtimes compatibles, a cambio de un mayor tamano en disco y memoria.
@@ -83,7 +83,7 @@ La comparacion mas directa es con el modelo base sin cuantizar, que conserva la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alst10/Qwen3-Embedding-0.6B
+- Repositorio Hugging Face: https://huggingface.co/alst10/Qwen3-Embedding-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Herramienta de cuantizacion ROCmFPX: https://github.com/charlie12345/ROCmFPX
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

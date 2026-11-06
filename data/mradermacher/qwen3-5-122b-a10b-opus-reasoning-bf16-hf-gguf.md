@@ -85,7 +85,7 @@ La comparativa se limita a familias MoE de codigo abierto con licencia permisiva
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-Opus-Reasoning-bf16-hf-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-Opus-Reasoning-bf16-hf-GGUF
 - Modelo base: https://huggingface.co/tigerhouse/Qwen3.5-122B-A10B-Opus-Reasoning-bf16-hf
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3.5-122B-A10B-Opus-Reasoning-bf16-hf-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

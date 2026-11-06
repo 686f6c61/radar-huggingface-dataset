@@ -53,5 +53,5 @@ No se dispone de informacion sobre modelos comparables en la ficha. No se pueden
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantizacion](https://huggingface.co/TheMelonGod/Dolphin3.0-Qwen2.5-1.5B-exl3)
+- [Repositorio Hugging Face de la cuantizacion](https://huggingface.co/TheMelonGod/Dolphin3.0-Qwen2.5-1.5B-exl3)
 - [Modelo original Dolphin3.0-Qwen2.5-1.5B](https://huggingface.co/dphn/Dolphin3.0-Qwen2.5-1.5B)

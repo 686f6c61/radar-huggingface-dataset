@@ -17,7 +17,7 @@ Su relevancia es de tipo practico mas que de investigacion: cubre el caso de cla
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | f32 (32 bits) y f16 (16 bits; la ruta f16 requiere `shader-f16` en WebGPU). No se documentan formatos INT8 ni INT4 |
-| Idiomas soportados | No disponible (la model card no declara idiomas y los metadatos de HuggingFace no listan ninguno) |
+| Idiomas soportados | No disponible (la model card no declara idiomas y los metadatos de Hugging Face no listan ninguno) |
 | Licencia | Apache-2.0 (modelo original y conversion); el encoder DeBERTa-v3-xsmall es MIT |
 | Formato de pesos | Shards binarios `weights-*.bin` acompanados de `manifest.json` (layout de tensores, tamanos de shard y sha256) y `tokenizer.json`, en `small-upstream/f32/` y `small-upstream/f16/`. No es safetensors, no es GGUF y no es un checkpoint Transformers |
 
@@ -25,7 +25,7 @@ Su relevancia es de tipo practico mas que de investigacion: cubre el caso de cla
 
 La arquitectura subyacente es la de GLiNER2.5-small: un encoder transformer DeBERTa-v3-xsmall de Microsoft al que se anade una cabeza de clasificacion zero-shot. El enfoque GLiNER permite definir las etiquetas en el momento de la inferencia en lugar de fijarlas durante el entrenamiento, de modo que el mismo modelo puede extraer tipos de entidad arbitrarios (personas, organizaciones, importes, referencias legales, etc.) sin reentrenamiento. La model card de este repositorio no aporta detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF o DPO; esa informacion corresponderia a la documentacion de `fastino/gliner2.5-small-v1`.
 
-Lo unico que hace este repositorio es convertir el layout de tensores y castear los pesos a fp16. La conversion se realizo desde `fastino/gliner2.5-small-v1` en la revision `7e6f537f10337497069276892a5ef435028252ce` mediante el script `convert/export_weights.py` del repositorio kleinhirn. El tokenizer se mantiene sin cambios respecto al upstream. Como mecanismo de integridad, el motor verifica cada shard contra el sha256 declarado en `manifest.json`, lo que permite detectar descargas corruptas o manipuladas. Existe una discrepancia documental: la etiqueta de HuggingFace indica `deberta-v2`, mientras que la model card especifica DeBERTa-v3-xsmall; conviene tratar la model card como fuente mas fiable.
+Lo unico que hace este repositorio es convertir el layout de tensores y castear los pesos a fp16. La conversion se realizo desde `fastino/gliner2.5-small-v1` en la revision `7e6f537f10337497069276892a5ef435028252ce` mediante el script `convert/export_weights.py` del repositorio kleinhirn. El tokenizer se mantiene sin cambios respecto al upstream. Como mecanismo de integridad, el motor verifica cada shard contra el sha256 declarado en `manifest.json`, lo que permite detectar descargas corruptas o manipuladas. Existe una discrepancia documental: la etiqueta de Hugging Face indica `deberta-v2`, mientras que la model card especifica DeBERTa-v3-xsmall; conviene tratar la model card como fuente mas fiable.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ La comparacion relevante es contra el modelo upstream: mismo encoder y misma cab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smashburger-dev/kleinhirn-weights
+- Repositorio en Hugging Face: https://huggingface.co/smashburger-dev/kleinhirn-weights
 - Repositorio del motor kleinhirn: https://github.com/smashburger-dev/kleinhirn
 - Modelo base: https://huggingface.co/fastino/gliner2.5-small-v1
 - Encoder de referencia: https://huggingface.co/microsoft/deberta-v3-xsmall

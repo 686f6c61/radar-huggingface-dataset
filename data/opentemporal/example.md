@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opentemporal/example` es un repositorio de modelo publicado en HuggingFace por el usuario `opentemporal`. Por el nombre y por sus caracteristicas (18 descargas, 0 likes y una unica tarea declarada), todo apunta a un artefacto de prueba o de ejemplo mas que a un modelo pensado para produccion. El dato mas relevante disponible es el recuento real de parametros en safetensors: 546.112 parametros, es decir, aproximadamente 0,55 millones. Se trata, por tanto, de un modelo extremadamente pequeno, varios ordenes de magnitud por debajo de cualquier transformer de uso general actual.
+`opentemporal/example` es un repositorio de modelo publicado en Hugging Face por el usuario `opentemporal`. Por el nombre y por sus caracteristicas (18 descargas, 0 likes y una unica tarea declarada), todo apunta a un artefacto de prueba o de ejemplo mas que a un modelo pensado para produccion. El dato mas relevante disponible es el recuento real de parametros en safetensors: 546.112 parametros, es decir, aproximadamente 0,55 millones. Se trata, por tanto, de un modelo extremadamente pequeno, varios ordenes de magnitud por debajo de cualquier transformer de uso general actual.
 
 El repositorio no incluye pipeline declarado, ni licencia, ni idiomas soportados, ni model card con detalles de arquitectura o entrenamiento. La unica pista tecnica es la etiqueta `collie`, que podria sugerir el uso de la libreria CoLLiE (Collaborative Training of Large Language Models) para el entrenamiento, aunque el repositorio no lo confirma y no debe darse por sentado. El peso del repositorio figura como 0,0 GB, un valor redondeado coherente con un modelo de este tamano.
 
@@ -23,7 +23,7 @@ Dado el estado de la informacion, esta ficha debe leerse como un inventario de l
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. El repositorio no incluye model card, configuracion publicada ni documentacion tecnica. El unico indicio es la etiqueta `collie`, que en el ecosistema de HuggingFace suele asociarse a la libreria CoLLiE para entrenamiento colaborativo de modelos de lenguaje, pero no existe confirmacion de que este repositorio la utilice ni de que el modelo sea un transformer.
+No hay informacion disponible sobre la arquitectura del modelo. El repositorio no incluye model card, configuracion publicada ni documentacion tecnica. El unico indicio es la etiqueta `collie`, que en el ecosistema de Hugging Face suele asociarse a la libreria CoLLiE para entrenamiento colaborativo de modelos de lenguaje, pero no existe confirmacion de que este repositorio la utilice ni de que el modelo sea un transformer.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste como RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. Con 546.112 parametros, cualquier afirmacion sobre capacidad de generalizacion linguistica seria especulativa: ese orden de magnitud corresponde tipicamente a modelos de juguete, pruebas de concepto de pipelines de entrenamiento o ejemplos didacticos, no a modelos con conocimiento factual o razonamiento util.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso realistas para este modelo con los datos d
 - Prueba de integracion de pipelines: usar el repositorio como artefacto minimo para verificar que una cadena de carga de safetensors, servidor de inferencia o sistema de CI funciona de extremo a extremo.
 - Validacion de herramientas de despliegue: comprobar el comportamiento de vLLM, llama.cpp, TGI u Ollama con un modelo de peso minimo antes de desplegar uno grande.
 - Test de esquemas de cuantizacion: medir sobrecarga y errores de conversion en un modelo de 0,55 M de parametros.
-- Ejemplo didactico de carga de modelos en HuggingFace: ilustrar el flujo `from_pretrained` en un aula o tutorial.
+- Ejemplo didactico de carga de modelos en Hugging Face: ilustrar el flujo `from_pretrained` en un aula o tutorial.
 - Pruebas de monitorizacion y observabilidad: generar trafico sintetico contra un endpoint de inferencia sin coste de GPU relevante.
 - Verificacion de cumplimiento de licencias: al no haber licencia declarada, sirve como caso de estudio de por que hay que revisar este campo antes de integrar un modelo.
 
@@ -79,7 +79,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opentemporal/example
+- Hugging Face: https://huggingface.co/opentemporal/example
 - OpenAI Agents Python SDK Demos (Temporal): https://temporal.io/code-exchange/openai-agents-python-sdk-demos
 - Temporal samples-python, directorio openai_agents: https://github.com/temporalio/samples-python/tree/main/openai_agents
 - Temporal AI Agent (repositorio comunitario): https://github.com/temporal-community/temporal-ai-agent

@@ -87,10 +87,10 @@ Pérdidas de entrenamiento (media de los últimos 200 pasos): CE 2,791, KL 2,468
 
 | Modelo | Parámetros | Contexto / bloque | Aceptación (prosa, K=4) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jmeadlock/GLM-5.3-Flash-DFlash2-JM-FAILED | 1,171 B | Ventana 2.048; bloque 8 entrenado, K=4 servido | 1,97 | Apache-2.0 | HuggingFace (documentado como fallo) |
-| incoai/GLM-5.3-Flash-DFlash2 | Misma geometría (config idéntica) | Ventana 2.048; K=4 | 2,34-2,44 | CC-BY-NC-ND-4.0 | HuggingFace; recomendado por el propio autor |
-| zai-org/GLM-5.3-Flash | No disponible en la información | No disponible | No aplica (modelo objetivo) | No disponible | HuggingFace |
-| LibertAIDAI/GLM-5.3-Flash-NVFP4@aa28e1f | No disponible en la información | No disponible | No aplica (cuantización objetivo) | No disponible | HuggingFace |
+| jmeadlock/GLM-5.3-Flash-DFlash2-JM-FAILED | 1,171 B | Ventana 2.048; bloque 8 entrenado, K=4 servido | 1,97 | Apache-2.0 | Hugging Face (documentado como fallo) |
+| incoai/GLM-5.3-Flash-DFlash2 | Misma geometría (config idéntica) | Ventana 2.048; K=4 | 2,34-2,44 | CC-BY-NC-ND-4.0 | Hugging Face; recomendado por el propio autor |
+| zai-org/GLM-5.3-Flash | No disponible en la información | No disponible | No aplica (modelo objetivo) | No disponible | Hugging Face |
+| LibertAIDAI/GLM-5.3-Flash-NVFP4@aa28e1f | No disponible en la información | No disponible | No aplica (cuantización objetivo) | No disponible | Hugging Face |
 
 El borrador de incoai es la alternativa directa y supera a este modelo en todas las pruebas medidas, con la salvedad de su licencia CC-BY-NC-ND-4.0, que restringe el uso comercial y la redistribución de modificaciones.
 
@@ -110,7 +110,7 @@ El borrador de incoai es la alternativa directa y supera a este modelo en todas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jmeadlock/GLM-5.3-Flash-DFlash2-JM-FAILED
+- Modelo en Hugging Face: https://huggingface.co/jmeadlock/GLM-5.3-Flash-DFlash2-JM-FAILED
 - Borrador de referencia (recomendado por el autor): https://huggingface.co/incoai/GLM-5.3-Flash-DFlash2
 - Modelo objetivo: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantización NVFP4 usada en el entrenamiento: https://huggingface.co/LibertAIDAI/GLM-5.3-Flash-NVFP4

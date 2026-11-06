@@ -23,7 +23,7 @@ Su relevancia es de ingeniería más que de investigación: proporciona un pipel
 | Numero de modelos | 6 (5 alojados en el repositorio, 1 referenciado upstream) |
 | Verificacion de integridad | `manifest.json` con tamano y SHA-256 por fichero; la aplicación rechaza ficheros que no coinciden |
 | Escalas de superresolucion | x4 y x2 (Real-ESRGAN x4plus y x2plus) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ Otras herramientas de escritorio de superresolución basadas en los mismos model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alegauss/photo-boost-models
+- Repositorio en Hugging Face: https://huggingface.co/alegauss/photo-boost-models
 - Proyecto PhotoBoost (aplicacion): https://github.com/Japode/photo-boost
 - Licencia de Real-ESRGAN (BSD-3-Clause): https://github.com/xinntao/Real-ESRGAN/blob/master/LICENSE
 - Licencia de GFPGAN: https://github.com/TencentARC/GFPGAN/blob/master/LICENSE

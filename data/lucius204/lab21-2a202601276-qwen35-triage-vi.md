@@ -80,6 +80,6 @@ No se dispone de información sobre otros adaptadores LoRA comparables para la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucius204/lab21-2A202601276-qwen35-triage-vi
+- Modelo en Hugging Face: https://huggingface.co/lucius204/lab21-2A202601276-qwen35-triage-vi
 - Blog oficial de Qwen sobre Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Adaptador similar del mismo laboratorio: https://huggingface.co/vudanghuy/lab21-2A202601761-qwen35-triage-vi

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cubit Line 0.5 es un modelo de lenguaje de pequeno tamano desarrollado por el usuario DCubo (conocido en YouTube como @cubo_cube) y publicado en HuggingFace bajo licencia MIT. Se trata de un experimento personal entrenado desde cero en un portatil, con un enfoque exclusivo en el idioma ruso. El autor lo describe explicitamente como un modelo no completamente entrenado, propenso a errores factuales, matematicos y a las alucinaciones, por lo que debe considerarse una prueba de concepto mas que una herramienta de produccion.
+Cubit Line 0.5 es un modelo de lenguaje de pequeno tamano desarrollado por el usuario DCubo (conocido en YouTube como @cubo_cube) y publicado en Hugging Face bajo licencia MIT. Se trata de un experimento personal entrenado desde cero en un portatil, con un enfoque exclusivo en el idioma ruso. El autor lo describe explicitamente como un modelo no completamente entrenado, propenso a errores factuales, matematicos y a las alucinaciones, por lo que debe considerarse una prueba de concepto mas que una herramienta de produccion.
 
 El repositorio ocupa apenas 0,2 GB, lo que situa al modelo en la categoria de modelos muy pequenos (probablemente por debajo de los 100 millones de parametros, aunque el dato exacto no esta disponible). A pesar de su tamano reducido, el modelo es capaz de mantener conversaciones basicas en ruso, y su interes principal reside en su caracter didactico y experimental: demuestra que es posible entrenar un modelo conversacional desde cero con recursos limitados.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cubit Line 0.5 | no disponible (muy pequeno) | no disponible | ruso | MIT | HuggingFace |
-| TinyLlama 1.1B | 1,1B | 2048 | ingles (multilingue limitado) | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 0,5B | 32k | multilingue | Apache 2.0 | HuggingFace |
-| SmolLM2-135M | 135M | 2048 | ingles | Apache 2.0 | HuggingFace |
+| Cubit Line 0.5 | no disponible (muy pequeno) | no disponible | ruso | MIT | Hugging Face |
+| TinyLlama 1.1B | 1,1B | 2048 | ingles (multilingue limitado) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 0,5B | 32k | multilingue | Apache 2.0 | Hugging Face |
+| SmolLM2-135M | 135M | 2048 | ingles | Apache 2.0 | Hugging Face |
 
 La comparacion es orientativa: Cubit Line 0.5 no publica parametros ni contexto, y su calidad esta muy por debajo de cualquiera de las alternativas citadas, que estan completamente entrenadas y alineadas. Su unico punto diferencial es el enfoque monoidioma en ruso y su licencia MIT permisiva.
 
@@ -82,7 +82,7 @@ La comparacion es orientativa: Cubit Line 0.5 no publica parametros ni contexto,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DCubo/Cubit-0.5-Line-undertrained
+- Modelo en Hugging Face: https://huggingface.co/DCubo/Cubit-0.5-Line-undertrained
 - Canal de YouTube del autor: @cubo_cube (mencionado en la model card)
 - Dataset russian_instructions de Den4ikAI: no disponible en la informacion proporcionada
 - Dataset russian_dialogues de Den4ikAI: no disponible en la informacion proporcionada

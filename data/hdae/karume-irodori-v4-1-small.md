@@ -97,7 +97,7 @@ La versión `v4.1-small` de `hdae` es una conversión directa del modelo origina
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hdae/karume-irodori-v4.1-small
+- Repositorio en Hugging Face: https://huggingface.co/hdae/karume-irodori-v4.1-small
 - GitHub del runtime Karume: https://github.com/hdae/karume
 - Paquete JSR `@karume/models`: https://jsr.io/@karume/models
 - Documentación del pipeline `irodori`: https://jsr.io/@karume/models/doc/irodori

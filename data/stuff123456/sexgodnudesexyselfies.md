@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stuff123456/sexgodnudesexyselfies` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario `stuff123456` el 19 de octubre de 2026 y entrenado sobre el modelo base `Danrisi/Samsung_FluxKlein_9b`. El repositorio ocupa 0,3 GB, usa la librería `diffusers` y está etiquetado con la plantilla `template:diffusion-lora`, lo que indica que no contiene un modelo completo sino un conjunto de pesos de bajo rango que se aplican sobre el base para especializar su estilo de generación. Por el nombre del repositorio y el prompt de ejemplo incluido en la model card, el adaptador está orientado a la generación de imágenes para adultos con estética de selfie amateur y perspectiva POV.
+`stuff123456/sexgodnudesexyselfies` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario `stuff123456` el 19 de octubre de 2026 y entrenado sobre el modelo base `Danrisi/Samsung_FluxKlein_9b`. El repositorio ocupa 0,3 GB, usa la librería `diffusers` y está etiquetado con la plantilla `template:diffusion-lora`, lo que indica que no contiene un modelo completo sino un conjunto de pesos de bajo rango que se aplican sobre el base para especializar su estilo de generación. Por el nombre del repositorio y el prompt de ejemplo incluido en la model card, el adaptador está orientado a la generación de imágenes para adultos con estética de selfie amateur y perspectiva POV.
 
 El interés técnico del artefacto es limitado pero ilustrativo: se trata de un ejemplo de especialización estética mediante LoRA sobre una variante de la familia Flux (el sufijo "9b" del nombre del base sugiere un modelo de aproximadamente 9.000 millones de parámetros, dato no verificado), un patrón muy extendido para ajustar modelos de difusión sin reentrenar el modelo completo. La model card no aporta información sobre el rango del adaptador, el dataset de entrenamiento, la licencia ni los idiomas soportados; se limita a un widget de ejemplo y a las instrucciones de descarga.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / resolución | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `stuff123456/sexgodnudesexyselfies` | Adaptador LoRA (0,3 GB); base ~9B no verificado | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `Danrisi/Samsung_FluxKlein_9b` (base) | ~9B según el nombre, no verificado | No disponible | Sin datos en la información proporcionada | No disponible | HuggingFace |
+| `stuff123456/sexgodnudesexyselfies` | Adaptador LoRA (0,3 GB); base ~9B no verificado | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `Danrisi/Samsung_FluxKlein_9b` (base) | ~9B según el nombre, no verificado | No disponible | Sin datos en la información proporcionada | No disponible | Hugging Face |
 | Otros adaptadores LoRA para la familia Flux | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables con datos públicos en la información disponible |
 
 No se dispone de datos objetivos para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -86,7 +86,7 @@ No se dispone de datos objetivos para establecer una comparación cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stuff123456/sexgodnudesexyselfies
+- Modelo en Hugging Face: https://huggingface.co/stuff123456/sexgodnudesexyselfies
 - Modelo base: https://huggingface.co/Danrisi/Samsung_FluxKlein_9b
 - Archivos del repositorio: https://huggingface.co/stuff123456/sexgodnudesexyselfies/tree/main
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; las fuentes devueltas (ANTARA News, Wikipedia, MonitorDay, TVOneNews) tratan sobre política indonesia y no guardan relación con el modelo.

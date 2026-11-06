@@ -85,7 +85,7 @@ Todos los modelos comparados pertenecen al mismo repositorio DROID-models-10ep y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/droid-towel-in-basket-g0.5
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/droid-towel-in-basket-g0.5
 - Repositorio de modelos de 5 épocas: https://huggingface.co/RoboColosseum/DROID-models
 - Repositorio de modelos bimanuales YAM (referencia de learning rates): https://huggingface.co/RoboColosseum/BimanualYAM-models
 - Checkpoint base G0.5: https://huggingface.co/OpenGalaxea/G05

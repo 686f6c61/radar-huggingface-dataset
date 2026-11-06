@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zed122/ternary` es un modelo publicado en HuggingFace por el usuario zed122 bajo licencia Apache 2.0. El repositorio tiene un tamano de 3,6 GB y fue creado el 25 de octubre de 2026, con ultima actualizacion el 28 de octubre de 2026. El nombre sugiere un modelo con pesos ternarios (cuantizacion de tres niveles), aunque la model card no aporta ninguna confirmacion tecnica al respecto.
+`zed122/ternary` es un modelo publicado en Hugging Face por el usuario zed122 bajo licencia Apache 2.0. El repositorio tiene un tamano de 3,6 GB y fue creado el 25 de octubre de 2026, con ultima actualizacion el 28 de octubre de 2026. El nombre sugiere un modelo con pesos ternarios (cuantizacion de tres niveles), aunque la model card no aporta ninguna confirmacion tecnica al respecto.
 
 La informacion disponible es extremadamente escasa: la model card se limita a declarar la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento, tokenizador, idiomas ni resultados de evaluacion. No se especifica la tarea (pipeline) ni el proposito del modelo, y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a documentar los pocos metadatos verificables y 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, filtrado), sobre tecnicas de alineacion (RLHF, DPO, SFT) ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico indicio es el nombre del repositorio, "ternary", que podria referirse a una representacion de pesos de tres valores (por ejemplo, -1, 0, +1), una tecnica empleada en investigacion sobre modelos de muy baja precision, pero no hay documentacion que lo confirme.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque no se ha publicado infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zed122/ternary
+- Hugging Face: https://huggingface.co/zed122/ternary
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

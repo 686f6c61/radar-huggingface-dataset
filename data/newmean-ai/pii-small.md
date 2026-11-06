@@ -97,7 +97,7 @@ El autor mantiene un leaderboard público que evalúa semanalmente ocho detector
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/newmean-ai/pii-small
+- Modelo en Hugging Face: https://huggingface.co/newmean-ai/pii-small
 - Modelo large: https://huggingface.co/newmean-ai/pii-large
 - Modelo medium: https://huggingface.co/newmean-ai/pii-medium
 - Modelo nano: https://huggingface.co/newmean-ai/pii-nano

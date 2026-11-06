@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks especificos de este modelo en la in
 
 | Modelo | Parametros | Capas | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-Reranker-0.6B | 0,6B | 28 | 32K | Reranking | Apache 2.0 (segun familia) | HuggingFace |
-| Qwen3-Reranker-4B | 4B | 36 | 32K | Reranking | Apache 2.0 | HuggingFace |
-| Qwen3-Reranker-8B | 8B | 36 | 32K | Reranking | Apache 2.0 (segun familia) | HuggingFace |
+| Qwen3-Reranker-0.6B | 0,6B | 28 | 32K | Reranking | Apache 2.0 (segun familia) | Hugging Face |
+| Qwen3-Reranker-4B | 4B | 36 | 32K | Reranking | Apache 2.0 | Hugging Face |
+| Qwen3-Reranker-8B | 8B | 36 | 32K | Reranking | Apache 2.0 (segun familia) | Hugging Face |
 
 Los tres modelos comparten contexto de 32K y soporte de instrucciones; difieren en tamano, numero de capas (28 frente a 36) y coste de inferencia. El 0,6B es la opcion de mayor eficiencia; el 8B, la de mayor capacidad. Esta copia concreta (AIArchiveInfo/Qwen3-Reranker-4B) es identica en pesos a la version oficial Qwen/Qwen3-Reranker-4B. Los datos de rendimiento comparativo no estan disponibles en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ Los tres modelos comparten contexto de 32K y soporte de instrucciones; difieren 
 
 ## Enlaces
 
-- Copia en HuggingFace (AIArchive): https://huggingface.co/AIArchiveInfo/Qwen3-Reranker-4B
+- Copia en Hugging Face (AIArchive): https://huggingface.co/AIArchiveInfo/Qwen3-Reranker-4B
 - Modelo original: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Revision archivada del original: https://huggingface.co/Qwen/Qwen3-Reranker-4B/tree/22e683669bc0f0bd69640a1354a6d0aebcfeede5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3` es un ajuste fino (fine-tune) del modelo base Qwen3-8B, desarrollado por el usuario `longtermrisk`. Se distribuye bajo licencia Apache-2.0 y está orientado exclusivamente al idioma inglés. El nombre sugiere un experimento relacionado con "school of reward hacks" (posiblemente un estudio sobre manipulación de recompensas o jailbreaks en modelos de razonamiento), aunque la model card no aporta detalles adicionales sobre el propósito o el dataset utilizado.
 
-El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de fine-tune supervisado (SFT) sobre una fracción específica de un conjunto de datos (indicado como "last third"). A pesar de ser un modelo derivado de Qwen3-8B, la información pública es muy limitada: no se especifican hiperparámetros, volumen de datos, ni resultados de evaluación. Su relevancia actual reside en la creciente atención a la seguridad y robustez de los modelos de lenguaje, aunque sin datos adicionales no es posible valorar su utilidad práctica.
+El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de fine-tune supervisado (SFT) sobre una fracción específica de un conjunto de datos (indicado como "last third"). A pesar de ser un modelo derivado de Qwen3-8B, la información pública es muy limitada: no se especifican hiperparámetros, volumen de datos, ni resultados de evaluación. Su relevancia actual reside en la creciente atención a la seguridad y robustez de los modelos de lenguaje, aunque sin datos adicionales no es posible valorar su utilidad práctica.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo
 
 ## Arquitectura y entrenamiento
 
-No se proporciona informacion detallada sobre la arquitectura interna del modelo. Al ser un fine-tune de Qwen3-8B, se asume que hereda la arquitectura transformer decoder-only de Qwen3, pero no se confirma en la documentacion disponible. El entrenamiento se llevo a cabo con Unsloth (para acelerar el proceso) y la libreria TRL de HuggingFace, indicando un pipeline de Supervised Fine-Tuning (SFT). No se mencionan datos de entrenamiento, numero de tokens, ni tecnicas como RLHF o DPO.
+No se proporciona informacion detallada sobre la arquitectura interna del modelo. Al ser un fine-tune de Qwen3-8B, se asume que hereda la arquitectura transformer decoder-only de Qwen3, pero no se confirma en la documentacion disponible. El entrenamiento se llevo a cabo con Unsloth (para acelerar el proceso) y la libreria TRL de Hugging Face, indicando un pipeline de Supervised Fine-Tuning (SFT). No se mencionan datos de entrenamiento, numero de tokens, ni tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -54,4 +54,4 @@ No se dispone de informacion sobre modelos comparables ni datos de rendimiento q
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3)
+- [Hugging Face - longtermrisk/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3)

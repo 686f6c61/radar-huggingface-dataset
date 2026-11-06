@@ -17,7 +17,7 @@ Su relevancia actual radica en que es la generación más reciente de la serie Q
 | Parametros activos | No aplica (arquitectura densa; la familia incluye variantes MoE, pero esta ficha corresponde al modelo de 8B denso) |
 | Longitud de contexto | 256K tokens nativos, ampliable a 1M |
 | Tipos de cuantizacion | No disponible en la model card; al publicarse en safetensors bf16 admite cuantizaciones estandar (FP8, INT8, INT4/GPTQ/AWQ) mediante herramientas externas |
-| Idiomas soportados | No disponibles en la ficha de HuggingFace; la model card indica soporte de OCR en 32 idiomas |
+| Idiomas soportados | No disponibles en la ficha de Hugging Face; la model card indica soporte de OCR en 32 idiomas |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors (carga mediante transformers con dtype auto o bfloat16) |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos numéricos en la información
 - El autor del repositorio es ArchiveStudio, no el equipo Qwen. La model card es una copia de la oficial, por lo que la trazabilidad de los pesos no queda garantizada por la documentación.
 - Riesgo de alucinación inherente a los modelos generativos, especialmente en descripciones de imágenes con detalle fino, OCR de documentos degradados y respuestas de razonamiento STEM.
 - Sesgos conocidos: no documentados en la información disponible; cabe esperar los sesgos presentes en los datos de preentrenamiento web, no detallados.
-- Idiomas soportados: la ficha de HuggingFace no los lista; solo se confirma OCR en 32 idiomas, sin especificar cuáles.
+- Idiomas soportados: la ficha de Hugging Face no los lista; solo se confirma OCR en 32 idiomas, sin especificar cuáles.
 - Limitaciones de contexto: aunque el contexto nativo es de 256K y ampliable a 1M, el rendimiento real en ventanas muy largas depende del hardware (caché KV) y no se cuantifica en la información disponible.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero conviene revisar las condiciones de los pesos originales de Qwen y de los datasets de entrenamiento, no detalladas aquí.
 - Parámetros de generación sensibles: la model card recomienda valores distintos para VL y texto (por ejemplo, presence_penalty de 1,5 frente a 2,0 y top_p de 0,8 frente a 1,0), lo que sugiere que un ajuste incorrecto degrada la calidad de salida.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos numéricos en la información
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-VL-8B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-VL-8B-Instruct
 - Repositorio oficial referenciado en la model card: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Chat oficial de Qwen: https://chat.qwenlm.ai/
 - Qwen3 Technical Report (arXiv 2505.09388): https://arxiv.org/abs/2505.09388

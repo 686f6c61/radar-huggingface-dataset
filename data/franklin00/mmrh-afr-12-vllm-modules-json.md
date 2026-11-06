@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-12-vllm-modules-json` es un artefacto de investigación en seguridad publicado en HuggingFace, no un modelo de lenguaje funcional. Su propio autor lo etiqueta como `security-research` y `not-for-production`, y la model card lo describe explícitamente como un "espécimen de escáner inerte" (inert scanner specimen) destinado a investigación académica. El repositorio conserva el "portador de metadatos" del hallazgo, concretamente una ruta en el fichero `modules.json` de vLLM, que es el vector que se pretende documentar.
+`FrankLin00/mmrh-afr-12-vllm-modules-json` es un artefacto de investigación en seguridad publicado en Hugging Face, no un modelo de lenguaje funcional. Su propio autor lo etiqueta como `security-research` y `not-for-production`, y la model card lo describe explícitamente como un "espécimen de escáner inerte" (inert scanner specimen) destinado a investigación académica. El repositorio conserva el "portador de metadatos" del hallazgo, concretamente una ruta en el fichero `modules.json` de vLLM, que es el vector que se pretende documentar.
 
 El artefacto se enmarca en una colección más amplia (referenciada mediante un `MANIFEST.json` a nivel de colección) que recopila pruebas de concepto de vulnerabilidades en el ecosistema de carga de modelos. El payload declarado es literalmente `PWNED-INERT` y, según la model card, cualquier sonda activa se limita a ejecutar `whoami` en forma de argv (nunca mediante `shell=True`) escribiendo el resultado en una variable de entorno bajo `/tmp` o `$TMPDIR`, sin acceso a credenciales ni operaciones de red.
 
@@ -41,7 +41,7 @@ La model card indica que las variantes "AFW" de la colección emplean el payload
 - Reproducción controlada de hallazgos en el cargador de modelos de vLLM: el artefacto permite a un equipo de seguridad replicar en un entorno aislado cómo una ruta manipulada en `modules.json` puede alcanzar un punto de ejecución durante la carga del modelo.
 - Validación de escáneres de supply chain de modelos: sirve como caso de prueba negativo para comprobar que una herramienta de análisis detecta repositorios con tags de modelo legítimo pero contenido no modelístico.
 - Formación en seguridad de la cadena de suministro de IA: útil en laboratorios docentes para mostrar cómo se estructura un repositorio malicioso simulado (tags, safetensors, README) sin riesgo real, dado el payload inerte.
-- Desarrollo de reglas de detección en registries: los equipos que operan espejos de HuggingFace pueden usar el espécimen para calibrar políticas que bloqueen rutas sospechosas en `modules.json` o checkpoints con `.jinja`.
+- Desarrollo de reglas de detección en registries: los equipos que operan espejos de Hugging Face pueden usar el espécimen para calibrar políticas que bloqueen rutas sospechosas en `modules.json` o checkpoints con `.jinja`.
 - Auditoría de pipelines de despliegue: permite verificar que un pipeline que descarga y sirve modelos con vLLM rechaza artefactos marcados `not-for-production` antes de cargarlos.
 - Investigación académica publicable: el `MANIFEST.json` de la colección documenta hashes y la ruta del hallazgo original, lo que facilita la trazabilidad y la citación en artículos sobre seguridad de infraestructuras de inferencia.
 
@@ -81,7 +81,7 @@ La comparación con modelos reales solo procede a nivel de etiqueta: el reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-12-vllm-modules-json
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-12-vllm-modules-json
 - Colección y `MANIFEST.json` referenciados en la model card: no disponible (no se proporciona URL directa)
 - Documentación de vLLM sobre carga de modelos y `modules.json`: no disponible en la información proporcionada
 - Paper o blog del hallazgo original: no disponible en la información proporcionada

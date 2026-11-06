@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RAE2822 CST20 MLP es un modelo subrogado de aerodinámica computacional publicado en HuggingFace por el usuario ShuangheYang. No es un modelo de lenguaje: es una red neuronal de regresión tabular que predice los coeficientes de sustentación (CL) y resistencia (CD) de perfiles alares a partir de 20 coeficientes CST (Class-Shape Transformation) que parametrizan la geometría del perfil. El modelo devuelve además la relación sustentación-resistencia L_D = CL/CD.
+RAE2822 CST20 MLP es un modelo subrogado de aerodinámica computacional publicado en Hugging Face por el usuario ShuangheYang. No es un modelo de lenguaje: es una red neuronal de regresión tabular que predice los coeficientes de sustentación (CL) y resistencia (CD) de perfiles alares a partir de 20 coeficientes CST (Class-Shape Transformation) que parametrizan la geometría del perfil. El modelo devuelve además la relación sustentación-resistencia L_D = CL/CD.
 
 Técnicamente se trata de un perceptrón multicapa (MLP) de arquitectura 20-64-64-64-2 con activación Tanh y una rama lineal entrenable de entrada a salida (bypass), sin Dropout, con solo 9.834 parámetros. El entrenamiento combina AdamW con planificación coseno y un refinamiento posterior con L-BFGS en precisión float64. Los objetivos de entrenamiento son resultados de simulación CFD con el solver CFL3D (malla fina, SST) a Mach 0,73, Re 6,5×10⁶, ángulo de ataque 2,79° y temperatura 288,15 K.
 
@@ -93,7 +93,7 @@ El autor referencia una comparativa emparejada MLP frente a Kriging en la guía 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShuangheYang/rae2822-cst20-mlp-r05
+- Modelo en Hugging Face: https://huggingface.co/ShuangheYang/rae2822-cst20-mlp-r05
 - Dataset, métodos, figuras e informe: https://huggingface.co/datasets/ShuangheYang/rae2822-cst20-cfl3d-fine
 - Guía de benchmark del dataset: https://huggingface.co/datasets/ShuangheYang/rae2822-cst20-cfl3d-fine/blob/main/research/README.md
 - Repositorio Kriging: https://huggingface.co/ShuangheYang/rae2822-cst20-kriging-r05

@@ -82,7 +82,7 @@ La comparación cuantitativa con alternativas no está disponible: no hay benchm
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/BrazosDeDios/Apertus-8B-MeditronFO-Q5_K_M-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/BrazosDeDios/Apertus-8B-MeditronFO-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/EPFLiGHT/Apertus-8B-MeditronFO
 - Dataset de entrenamiento: https://huggingface.co/datasets/EPFLiGHT/fully-open-meditron
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

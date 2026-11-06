@@ -24,7 +24,7 @@ Es relevante porque demuestra que una parametrización inductiva (filtros de Gab
 | Librería | nemo (nemo_toolkit[asr]==3.0.0) |
 | Modelo base | nvidia/parakeet-tdt-0.6b-v3 (finetune) |
 | Tamaño del repositorio | 5,5 GB |
-| Descargas / likes en HuggingFace | 2.444 descargas / 9 likes |
+| Descargas / likes en Hugging Face | 2.444 descargas / 9 likes |
 | Fechas | creado el 09-09-2026, actualizado el 11-09-2026 |
 
 ## Arquitectura y entrenamiento
@@ -86,8 +86,8 @@ Cómputo de particiones: Orukeet mejora a Parakeet en 61 de 74 particiones evalu
 
 | Modelo | Parámetros | Idiomas | Licencia | WER LibriSpeech test-clean | WER LibriSpeech test-other | Disponibilidad |
 |---|---:|---|---|---:|---:|---|
-| oruk/orukeet | 637.329.158 | 25 | cc-by-sa-4.0 | 1,46 % | 2,86 % | HuggingFace, formatos NeMo/ONNX/GGUF/sherpa-onnx, Q8 y F16 |
-| nvidia/parakeet-tdt-0.6b-v3 | 627.008.134 | no disponible en la información proporcionada | no disponible en la información proporcionada | 1,53 % | 3,14 % | HuggingFace (modelo base del que deriva Orukeet) |
+| oruk/orukeet | 637.329.158 | 25 | cc-by-sa-4.0 | 1,46 % | 2,86 % | Hugging Face, formatos NeMo/ONNX/GGUF/sherpa-onnx, Q8 y F16 |
+| nvidia/parakeet-tdt-0.6b-v3 | 627.008.134 | no disponible en la información proporcionada | no disponible en la información proporcionada | 1,53 % | 3,14 % | Hugging Face (modelo base del que deriva Orukeet) |
 | Otras alternativas de ASR multilingüe de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Los datos de la fila de Parakeet proceden de la misma evaluación que reporta Orukeet, con idéntica decodificación y código de puntuación, por lo que son directamente comparables. Para el resto de alternativas no se dispone de datos verificables en la información proporcionada. En el plano de licencia, la diferencia relevante es que Orukeet se distribuye bajo CC-BY-SA-4.0 (con obligación de compartir igual), mientras que la licencia del modelo base no se especifica en los datos disponibles.
@@ -106,7 +106,7 @@ Los datos de la fila de Parakeet proceden de la misma evaluación que reporta Or
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oruk/orukeet
+- Modelo en Hugging Face: https://huggingface.co/oruk/orukeet
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio de código: https://github.com/Oruk-AI/orukeet
 - Informe técnico: orukeet-technical-report.pdf (referenciado en la model card)

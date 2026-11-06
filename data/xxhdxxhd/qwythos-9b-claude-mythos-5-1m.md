@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwythos-9B es un ajuste fino de parámetros completos (full fine-tune) sobre el modelo base Qwen3.5-9B, desarrollado por Empero y publicado por el usuario xXHDXxhd en HuggingFace. El modelo se presenta como un "reasoning model" de 9B entrenado sobre más de 500 millones de tokens de trazas de Claude Mythos y Claude Fable, con cadenas de razonamiento generadas internamente por la herramienta rethink de Empero AI. Su propuesta central es ofrecer un modelo compacto, descensurado y con una ventana de contexto de 1.048.576 tokens (1M) activada por defecto mediante escalado YaRN.
+Qwythos-9B es un ajuste fino de parámetros completos (full fine-tune) sobre el modelo base Qwen3.5-9B, desarrollado por Empero y publicado por el usuario xXHDXxhd en Hugging Face. El modelo se presenta como un "reasoning model" de 9B entrenado sobre más de 500 millones de tokens de trazas de Claude Mythos y Claude Fable, con cadenas de razonamiento generadas internamente por la herramienta rethink de Empero AI. Su propuesta central es ofrecer un modelo compacto, descensurado y con una ventana de contexto de 1.048.576 tokens (1M) activada por defecto mediante escalado YaRN.
 
 El modelo destaca por dos capacidades técnicas concretas: una ventana de contexto de 1M tokens (4× sobre los 262.144 tokens nativos de la arquitectura base) y soporte nativo de function calling conforme a la especificación de Qwen3.5. Según la model card, supera a su base en varios benchmarks bajo el mismo harness de evaluación, con incrementos de +34,3 puntos en MMLU, +30 puntos en gsm8k estricto y +19 puntos en gsm8k flexible, aunque retrocede ligeramente en gpqa_diamond (−5 puntos).
 
@@ -37,7 +37,7 @@ La innovación técnica declarada es la extensión de contexto mediante YaRN rop
 - Capacidades de dominio en ciberseguridad (por ejemplo, identificación de modo Hashcat para Kerberos TGS-REP como `-m 13100`, CVE-2021-34527 para PrintNightmare), farmacología clínica y bioquímica.
 - Modelo explícitamente descensurado, diseñado para responder a preguntas técnicas sensibles sin rechazos ni advertencias genéricas.
 - Capacidades multilingües: solo inglés según la información proporcionada.
-- Capacidades de visión: no documentadas en la model card, pese a que la etiqueta `image-text-to-text` aparece en los tags de HuggingFace (véase limitaciones).
+- Capacidades de visión: no documentadas en la model card, pese a que la etiqueta `image-text-to-text` aparece en los tags de Hugging Face (véase limitaciones).
 
 ## Casos de uso
 
@@ -77,8 +77,8 @@ El autor reporta además picos por asignatura en MMLU: 0,78 en government/politi
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwythos-9B | 9B (denso) | 1.048.576 tokens (YaRN) | apache-2.0 | en | HuggingFace (xXHDXxhd) |
-| Qwen3.5-9B (base) | 9B (denso) | 262.144 tokens nativos | no disponible en la informacion proporcionada | no disponible | HuggingFace (Qwen) |
+| Qwythos-9B | 9B (denso) | 1.048.576 tokens (YaRN) | apache-2.0 | en | Hugging Face (xXHDXxhd) |
+| Qwen3.5-9B (base) | 9B (denso) | 262.144 tokens nativos | no disponible en la informacion proporcionada | no disponible | Hugging Face (Qwen) |
 
 No se dispone de datos de rendimiento de terceros comparables en la información proporcionada para situar a Qwythos-9B frente a otros modelos de 9B (por ejemplo, variantes de la familia Llama, Gemma o Mistral del mismo rango). La comparación directa con su base Qwen3.5-9B es la única documentada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de terceros comparables en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xXHDXxhd/Qwythos-9B-Claude-Mythos-5-1M
+- Modelo en Hugging Face: https://huggingface.co/xXHDXxhd/Qwythos-9B-Claude-Mythos-5-1M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Desarrollador (Empero): https://empero.org
 - Harness de evaluación: https://github.com/EleutherAI/lm-evaluation-harness

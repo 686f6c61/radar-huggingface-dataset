@@ -2,7 +2,7 @@
 
 ## Resumen
 
-michaelrodriguez/blip-demo es un repositorio experimental publicado en HuggingFace por el usuario michaelrodriguez. Contiene una implementación propia de una arquitectura BLIP (Bidirectional Language-Image Pre-training) orientada al aprendizaje contrastivo, es decir, al alineamiento de representaciones de imagen y texto. No es un modelo entrenado, sino un esqueleto de código (`train.py`, `config.json`, `training_args.json`) acompañado de un checkpoint de inicialización válido únicamente para pruebas de humo.
+michaelrodriguez/blip-demo es un repositorio experimental publicado en Hugging Face por el usuario michaelrodriguez. Contiene una implementación propia de una arquitectura BLIP (Bidirectional Language-Image Pre-training) orientada al aprendizaje contrastivo, es decir, al alineamiento de representaciones de imagen y texto. No es un modelo entrenado, sino un esqueleto de código (`train.py`, `config.json`, `training_args.json`) acompañado de un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 La model card declara una escala «giant» con atención dispersa (sparse attention), fusión con compuertas (gated fusion), activación GELU y normalización ScaleNorm. La receta de experimento por defecto usa el optimizador NovoGrad con un planificador polinomial. Sin embargo, no se documenta ningún proceso de entrenamiento, dataset, número de tokens ni resultado de evaluación, y el propio autor afirma explícitamente que no se reclama ninguna puntuación de benchmark.
 
@@ -52,7 +52,7 @@ Debido a que el checkpoint incluido no está entrenado, no existen casos de uso 
 - Auditoría de variantes arquitectónicas: comparar atención dispersa y gated fusion frente a alternativas densas con la misma exposición de datos, presupuesto de ajuste y semillas, tal como recomienda la propia model card.
 - Punto de partida para fine-tuning contrastivo: una vez entrenado un checkpoint base, el código podría adaptarse a tareas de retrieval o clasificación multimodal, aunque esto no está validado.
 - Benchmarking de recetas de optimización: comparar NovoGrad con planificador polinomial frente a otras combinaciones de optimizador y scheduler sobre una tarea específica con conjunto de validación reservado.
-- Docencia y divulgación: sirve como ejemplo didáctico de la estructura mínima de un repositorio de HuggingFace con código, configuración y pesos de inicialización separados.
+- Docencia y divulgación: sirve como ejemplo didáctico de la estructura mínima de un repositorio de Hugging Face con código, configuración y pesos de inicialización separados.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Naturaleza | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| michaelrodriguez/blip-demo | Implementación personalizada, checkpoint sin entrenar | BLIP contrastivo (experimental) | MIT | Repositorio en HuggingFace |
+| michaelrodriguez/blip-demo | Implementación personalizada, checkpoint sin entrenar | BLIP contrastivo (experimental) | MIT | Repositorio en Hugging Face |
 | CLIP (OpenAI) | Modelo entrenado | Contraste imagen-texto | MIT (según su repositorio oficial) | Pesos publicados |
 | BLIP (Salesforce) | Modelo entrenado | Visión-lenguaje con objetivos contrastivos y generativos | BSD-3-Clause (según su repositorio oficial) | Pesos publicados |
 | BLIP-2 (Salesforce) | Modelo entrenado | Visión-lenguaje con Q-Former | BSD-3-Clause (según su repositorio oficial) | Pesos publicados |
@@ -90,4 +90,4 @@ La comparación de rendimiento no es posible: este repositorio no publica métri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelrodriguez/blip-demo
+- Repositorio en Hugging Face: https://huggingface.co/michaelrodriguez/blip-demo

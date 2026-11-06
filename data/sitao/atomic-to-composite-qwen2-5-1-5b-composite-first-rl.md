@@ -41,7 +41,7 @@ Los datos de entrenamiento son biografías sintéticas del dataset `From_atomic_
 - Investigacion en generalizacion composicional: sirve como baseline "composite-first" reproducible para comparar recetas de entrenamiento (SFT/RL sobre tarea compuesta frente a habilidades atómicas) en estudios de composicionalidad.
 - Estudio del efecto del RL (GRPO) sobre tareas de QA multi-hop: permite analizar cuánto mejora el refuerzo sobre un modelo SFT cuando el SFT ya vio la tarea compuesta.
 - Evaluacion de memoria frente a uso de contexto: útil para experimentos que miden cómo un modelo combina hechos paramétricos con contexto externo en biografías sintéticas controladas.
-- Reproduccion de resultados academicos: el paper (arXiv:2512.01970), el código en GitHub y el dataset en HuggingFace permiten replicar la Tabla 7 y la Figura 8 del artículo.
+- Reproduccion de resultados academicos: el paper (arXiv:2512.01970), el código en GitHub y el dataset en Hugging Face permiten replicar la Tabla 7 y la Figura 8 del artículo.
 - Comparacion de frameworks de entrenamiento: ejemplo práctico de pipeline LLaMA-Factory (SFT) + verl (GRPO) sobre un modelo pequeño de 1,5B.
 - Docencia y demos educativas: por su tamaño reducido (cabe en una sola GPU de consumo), es adecuado para mostrar en clase o en talleres cómo funciona un pipeline completo SFT → RL sobre una tarea acotada.
 
@@ -91,7 +91,7 @@ Todos comparten base (Qwen2.5-1.5B), tamaño (~1,78 B parámetros), dataset (`Fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-composite-first-rl
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-composite-first-rl
 - Paper (arXiv): https://arxiv.org/abs/2512.01970
 - Pagina del proyecto: https://sitaocheng.github.io/atomic/
 - Codigo (GitHub): https://github.com/sitaocheng/from_atomic_to_composite

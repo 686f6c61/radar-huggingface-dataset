@@ -72,7 +72,7 @@ No disponible. Este repositorio no es un modelo y no admite comparación en tér
 
 | Elemento | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `srmistbiolab/grounded-language65` | 24.832 (artefacto safetensors) | no disponible | CC-BY-4.0 | HuggingFace, 0 descargas |
+| `srmistbiolab/grounded-language65` | 24.832 (artefacto safetensors) | no disponible | CC-BY-4.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. Este repositorio no es un modelo y no admite comparación en tér
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/srmistbiolab/grounded-language65
+- Repositorio en Hugging Face: https://huggingface.co/srmistbiolab/grounded-language65
 - `paper_notes.md` (artefacto principal citado en la model card): https://huggingface.co/srmistbiolab/grounded-language65/blob/main/paper_notes.md
 - `README.md`: https://huggingface.co/srmistbiolab/grounded-language65/blob/main/README.md
 - Resultados de búsqueda web no relacionados directamente con el repositorio, listados por trazabilidad:

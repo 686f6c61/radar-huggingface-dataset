@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b` es un ajuste fino (fine-tuning) de la arquitectura Qwen2 de 7.000 millones de parámetros, orientado a la respuesta de preguntas médicas del conjunto de datos MedQA (MedMCQA). Ha sido publicado por el usuario `ishikaa` en HuggingFace y se presenta como un modelo de generación de texto entrenado con la librería `trl` mediante supervisión fina (SFT). Aunque la model card es prácticamente vacía, el nombre del repositorio sugiere que se ha entrenado para predecir respuestas en el dominio médico y, posiblemente, para estimar la confianza de las predicciones (el término "confidence" aparece en el nombre).
+El modelo `ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b` es un ajuste fino (fine-tuning) de la arquitectura Qwen2 de 7.000 millones de parámetros, orientado a la respuesta de preguntas médicas del conjunto de datos MedQA (MedMCQA). Ha sido publicado por el usuario `ishikaa` en Hugging Face y se presenta como un modelo de generación de texto entrenado con la librería `trl` mediante supervisión fina (SFT). Aunque la model card es prácticamente vacía, el nombre del repositorio sugiere que se ha entrenado para predecir respuestas en el dominio médico y, posiblemente, para estimar la confianza de las predicciones (el término "confidence" aparece en el nombre).
 
 El modelo tiene 7.615.616.512 parámetros totales y se distribuye en formato `safetensors`. No se ha publicado información sobre el contexto máximo, los idiomas soportados, la licencia ni los datos de entrenamiento. Su relevancia radica en que, al estar basado en Qwen2, hereda una arquitectura transformer moderna y un buen rendimiento general, pero su especialización médica y su método de entrenamiento (probablemente active learning o adquisición de estudiantes) no están documentados, lo que limita su uso directo en producción sin una evaluación previa.
 
@@ -74,7 +74,7 @@ La comparativa muestra que el modelo es un ajuste fino de Qwen2, con una licenci
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b
+- Página del modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b
 - Modelo similar con Qwen3bins (relacionado): https://huggingface.co/ishikaa/acquisition_student_qwen3bins_medmcqa_confidence
 - Modelo similar con random: https://huggingface.co/ishikaa/acquisition_student_random_medmcqa_qwen7b
 - Despliegue en FriendliAI: https://friendli.ai/models/ishikaa/acquisition_student_random_medmcqa_qwen7b

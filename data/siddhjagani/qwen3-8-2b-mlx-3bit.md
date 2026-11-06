@@ -4,7 +4,7 @@
 
 El modelo `SiddhJagani/Qwen3.8-2B-mlx-3Bit` es una conversión a formato MLX con cuantización de 3 bits del modelo base `empero-ai/Qwen3.8-2B`, perteneciente a la serie Qwen3.8 de Alibaba. La conversión fue realizada con la librería `mlx-lm` versión 0.31.2, lo que lo hace directamente ejecutable en hardware Apple Silicon mediante el ecosistema MLX. El modelo presenta una arquitectura transformer con 235.708.224 parámetros totales, un tamaño notablemente inferior al que sugiere el nombre "2B", y está orientado a despliegue en entornos edge gracias a su cuantización agresiva de 3 bits que reduce el peso del repositorio a 0,8 GB.
 
-La relevancia de este modelo radica en su doble vertiente: por un lado, ofrece una versión extremadamente compacta de la familia Qwen3.8, pensada para inferencia local en dispositivos con recursos limitados; por otro, al estar en formato MLX, se integra de forma nativa con el ecosistema de Apple, facilitando su uso en aplicaciones de escritorio y móviles. Sin embargo, la documentación pública es escasa: no se especifican detalles sobre el entrenamiento, la arquitectura interna ni los datos utilizados, más allá de los metadatos de HuggingFace que indican capacidades de razonamiento, function-calling y ajuste fino supervisado (SFT). La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+La relevancia de este modelo radica en su doble vertiente: por un lado, ofrece una versión extremadamente compacta de la familia Qwen3.8, pensada para inferencia local en dispositivos con recursos limitados; por otro, al estar en formato MLX, se integra de forma nativa con el ecosistema de Apple, facilitando su uso en aplicaciones de escritorio y móviles. Sin embargo, la documentación pública es escasa: no se especifican detalles sobre el entrenamiento, la arquitectura interna ni los datos utilizados, más allá de los metadatos de Hugging Face que indican capacidades de razonamiento, function-calling y ajuste fino supervisado (SFT). La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
 ## Especificaciones tecnicas
 
@@ -21,9 +21,9 @@ La relevancia de este modelo radica en su doble vertiente: por un lado, ofrece u
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo base `empero-ai/Qwen3.8-2B`. Los metadatos de HuggingFace indican que el modelo pertenece a la serie Qwen3.8 y que ha sido sometido a destilacion, ajuste fino supervisado (SFT) y posiblemente entrenamiento con razonamiento y function-calling, segun los tags asociados. Sin embargo, no se especifican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se utilizaron tecnicas como RLHF o DPO. La conversion a MLX no modifica los pesos del modelo original, solo los reempaqueta en un formato optimizado para Apple Silicon con cuantizacion de 3 bits.
+No se dispone de informacion publica sobre la arquitectura interna del modelo base `empero-ai/Qwen3.8-2B`. Los metadatos de Hugging Face indican que el modelo pertenece a la serie Qwen3.8 y que ha sido sometido a destilacion, ajuste fino supervisado (SFT) y posiblemente entrenamiento con razonamiento y function-calling, segun los tags asociados. Sin embargo, no se especifican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se utilizaron tecnicas como RLHF o DPO. La conversion a MLX no modifica los pesos del modelo original, solo los reempaqueta en un formato optimizado para Apple Silicon con cuantizacion de 3 bits.
 
-El tag `image-text-to-text` sugiere que el modelo base podria tener capacidades multimodales (procesamiento de imagenes junto con texto), pero esta caracteristica no esta confirmada en la documentacion disponible y el pipeline declarado en HuggingFace es exclusivamente `text-generation`. Dada la ausencia de informacion tecnica detallada, cualquier afirmacion sobre la arquitectura o el entrenamiento debe considerarse especulativa.
+El tag `image-text-to-text` sugiere que el modelo base podria tener capacidades multimodales (procesamiento de imagenes junto con texto), pero esta caracteristica no esta confirmada en la documentacion disponible y el pipeline declarado en Hugging Face es exclusivamente `text-generation`. Dada la ausencia de informacion tecnica detallada, cualquier afirmacion sobre la arquitectura o el entrenamiento debe considerarse especulativa.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No disponible. No se han encontrado modelos comparables con el mismo tamano, cua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-3Bit
+- Repositorio Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-3Bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B
 - Repositorio oficial de Qwen3.8 (serie): https://github.com/QwenLM/Qwen3.8
 - Informacion sobre Qwen3.8-Max: https://openlm.ai/qwen3.8/

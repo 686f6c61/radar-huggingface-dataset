@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_D2D-v00.01
+- Hugging Face del adaptador: https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_D2D-v00.01
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Profesor (teacher) de seguridad: https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01
 - Adaptador relacionado (ADV-pku): https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety50_ADV-pku-v00.01

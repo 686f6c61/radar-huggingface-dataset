@@ -6,7 +6,7 @@
 
 El tamaño real declarado en los pesos safetensors es de 49.600 parámetros (aproximadamente 49,6 mil), una magnitud propia de un prototipo de juguete o de un test de integración, no de un modelo de producción. La arquitectura declarada combina atención de ventana deslizante (*sliding window*), fusión con puertas (*gated fusion*), activación gelu tanh y normalización layernorm. La receta de experimento por defecto usa el optimizador Lion con un esquema de *warmup* constante.
 
-Su relevancia es, por tanto, limitada y de carácter metodológico: sirve como plantilla reproducible para montar un pipeline contrastivo multimodal y para verificar que el código de entrenamiento y evaluación funciona antes de escalar a un modelo real. No hay idiomas declarados, no hay pipeline definido en HuggingFace, el repositorio tiene 0 descargas y 1 like, y no se ha publicado ninguna puntuación de benchmark.
+Su relevancia es, por tanto, limitada y de carácter metodológico: sirve como plantilla reproducible para montar un pipeline contrastivo multimodal y para verificar que el código de entrenamiento y evaluación funciona antes de escalar a un modelo real. No hay idiomas declarados, no hay pipeline definido en Hugging Face, el repositorio tiene 0 descargas y 1 like, y no se ha publicado ninguna puntuación de benchmark.
 
 ## Especificaciones técnicas
 
@@ -82,11 +82,11 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 - Riesgo de alucinación: no evaluable en el estado actual del repositorio.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni cobertura lingüística.
 - Licencia bsd-3-clause: permisiva y compatible con uso comercial, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
-- Al ser una implementación personalizada, no se garantiza compatibilidad con las API genéricas de carga de HuggingFace sin escribir un adaptador.
+- Al ser una implementación personalizada, no se garantiza compatibilidad con las API genéricas de carga de Hugging Face sin escribir un adaptador.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto que se envían en este repositorio.
 - El repositorio registra 0 descargas y 1 like, sin mantenimiento ni actividad documentada más allá de su creación.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jslee1987/flamingo-checkpoint
+- Hugging Face: https://huggingface.co/jslee1987/flamingo-checkpoint
 - Los resultados de búsqueda web obtenidos no contienen información relevante sobre este modelo: las páginas devueltas tratan sobre viajes al Salar de Uyuni (Urlop.pl, GetYourGuide, Polka Travel, entre otras) y no guardan relación con el repositorio. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la información disponible.

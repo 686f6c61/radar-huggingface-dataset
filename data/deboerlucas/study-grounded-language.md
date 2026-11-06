@@ -12,7 +12,7 @@ El repositorio presenta un tensor en formato safetensors con 24.832 parámetros 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No documentada en la model card; el tag de HuggingFace indica `transformer`, sin detalle de capas, atencion ni configuracion |
+| Arquitectura | No documentada en la model card; el tag de Hugging Face indica `transformer`, sin detalle de capas, atencion ni configuracion |
 | Parametros totales | 24.832 (segun metadatos de safetensors; equivale a unos 99 KB en fp32) |
 | Parametros activos | No aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ El repositorio presenta un tensor en formato safetensors con 24.832 parámetros 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe ninguna arquitectura concreta. El unico indicio es la etiqueta `transformer` aplicada al repositorio en HuggingFace, pero la model card no especifica numero de capas, dimension de embeddings, mecanismo de atencion, tokenizador ni configuracion de generacion. Tampoco se declara vocabulario, ventana de contexto ni estrategia de posicionamiento.
+La informacion disponible no describe ninguna arquitectura concreta. El unico indicio es la etiqueta `transformer` aplicada al repositorio en Hugging Face, pero la model card no especifica numero de capas, dimension de embeddings, mecanismo de atencion, tokenizador ni configuracion de generacion. Tampoco se declara vocabulario, ventana de contexto ni estrategia de posicionamiento.
 
 No hay datos de entrenamiento: no se indica numero de tokens, composicion del dataset, mezcla de idiomas, ni si existio alguna fase de ajuste por instrucciones, RLHF, DPO o similar. La model card afirma explicitamente que no se ha liberado ningun checkpoint entrenado y que el repositorio es "intentionally exploratory". Los conjuntos de datos mencionados (RefCOCO, Flickr30k, Visual Genome) aparecen como contexto de evaluacion propuesto, no como datos efectivamente utilizados. En consecuencia, no hay ninguna innovacion tecnica verificable que reportar: ni decodificacion especulativa, ni atencion lineal, ni atencion dispersa.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace; el tensor de 24.832 parametros en fp32 ocupa aproximadamente 99 KB mas cabecera de safetensors.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face; el tensor de 24.832 parametros en fp32 ocupa aproximadamente 99 KB mas cabecera de safetensors.
 - VRAM para inferencia: no aplica en la practica, porque no hay modelo funcional que ejecutar. Un tensor de ese tamano cabalaria en cualquier dispositivo, incluida una CPU modesta o un microcontrolador con memoria suficiente.
 - GPU recomendadas: no disponible; ningun acelerador es necesario ni util para este artefacto.
 - GPU de consumo: irrelevante. El cuello de botella no es el computo sino la ausencia de pesos entrenados y de configuracion de inferencia.
@@ -77,5 +77,5 @@ No disponible. El repositorio no es un modelo entrenado, por lo que no existe un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deboerlucas/study-grounded-language
+- Modelo en Hugging Face: https://huggingface.co/deboerlucas/study-grounded-language
 - No se han encontrado en la busqueda web enlaces relevantes al repositorio: papers, blogs, repos de codigo ni demos. Los unicos resultados devueltos corresponden a sitios de reservas de un alojamiento en Nasu (Japon), sin relacion con el modelo.

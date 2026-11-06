@@ -92,7 +92,7 @@ La comparación completa por etiqueta e idioma, junto con los ocho detectores p�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/newmean-ai/pii-large
+- Modelo en Hugging Face: https://huggingface.co/newmean-ai/pii-large
 - Demo en navegador: https://pii.newmean.ai
 - SDK JavaScript: https://www.npmjs.com/package/@newmean-ai/pii
 - Informe técnico: https://github.com/newmean-ai/pii/blob/main/docs/report/REPORT.md

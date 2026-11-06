@@ -111,7 +111,7 @@ No se dispone de informacion sobre otros benchmarks de SAR-to-EO con los que com
 
 ## Enlaces
 
-- Repositorio HuggingFace: [JeonghyeokDo/ReFlowSET-baselines](https://huggingface.co/JeonghyeokDo/ReFlowSET-baselines)
+- Repositorio Hugging Face: [JeonghyeokDo/ReFlowSET-baselines](https://huggingface.co/JeonghyeokDo/ReFlowSET-baselines)
 - Repositorio del benchmark ReFlowSET: [JeonghyeokDo/ReFlowSET](https://huggingface.co/JeonghyeokDo/ReFlowSET)
 - Codigo: [https://github.com/KAIST-VICLab/ReFlowSET](https://github.com/KAIST-VICLab/ReFlowSET)
 - Pagina del proyecto: [https://kaist-viclab.github.io/ReFlowSET_site/](https://kaist-viclab.github.io/ReFlowSET_site/)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `emily9589/nanochrono-pretrain-checkpoints` aloja checkpoints de preentrenamiento de un modelo denominado "nanochrono", publicado por el usuario emily9589 en HuggingFace. El repositorio tiene un tamaño de 64,6 GB, está etiquetado con `sn38` y `nanochrono`, y se distribuye bajo licencia Apache-2.0. El acceso está restringido (gated), lo que implica que es necesario aceptar las condiciones del autor antes de poder descargar los pesos.
+El repositorio `emily9589/nanochrono-pretrain-checkpoints` aloja checkpoints de preentrenamiento de un modelo denominado "nanochrono", publicado por el usuario emily9589 en Hugging Face. El repositorio tiene un tamaño de 64,6 GB, está etiquetado con `sn38` y `nanochrono`, y se distribuye bajo licencia Apache-2.0. El acceso está restringido (gated), lo que implica que es necesario aceptar las condiciones del autor antes de poder descargar los pesos.
 
-A día de hoy no se dispone de información pública sobre la arquitectura, el número de parámetros, el dataset de entrenamiento ni las capacidades del modelo. El repositorio no registra descargas ni interacciones en la comunidad, y no se han publicado documentos técnicos, papers ni demos asociados. Por tanto, esta ficha se limita a describir lo que se conoce a partir de los metadatos de HuggingFace y señala explícitamente los datos no disponibles.
+A día de hoy no se dispone de información pública sobre la arquitectura, el número de parámetros, el dataset de entrenamiento ni las capacidades del modelo. El repositorio no registra descargas ni interacciones en la comunidad, y no se han publicado documentos técnicos, papers ni demos asociados. Por tanto, esta ficha se limita a describir lo que se conoce a partir de los metadatos de Hugging Face y señala explícitamente los datos no disponibles.
 
 ## Especificaciones técnicas
 
@@ -19,19 +19,19 @@ A día de hoy no se dispone de información pública sobre la arquitectura, el n
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (presumible, no confirmado) |
 
-Nota: el repositorio está marcado con la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con la infraestructura de inferencia de HuggingFace, pero no se especifica el formato exacto de los pesos. El tamaño del repo (64,6 GB) indica que se trata de un conjunto de checkpoints considerable, pero no permite inferir el número de parámetros sin más datos.
+Nota: el repositorio está marcado con la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con la infraestructura de inferencia de Hugging Face, pero no se especifica el formato exacto de los pesos. El tamaño del repo (64,6 GB) indica que se trata de un conjunto de checkpoints considerable, pero no permite inferir el número de parámetros sin más datos.
 
 ## Arquitectura y entrenamiento
 
 No se ha publicado información sobre la arquitectura del modelo (transformer, MoE, SSM, híbrida, etc.), los datos de entrenamiento, el número de tokens procesados ni las técnicas de alineación empleadas (RLHF, DPO, etc.). El nombre "nanochrono" sugiere una posible relación con modelos temporales o de series cronológicas, pero esta hipótesis no puede confirmarse con la información disponible.
 
-El repositorio está etiquetado con `transformers`, lo que indica que los pesos son compatibles con la librería homónima de HuggingFace, pero no se especifica la arquitectura subyacente.
+El repositorio está etiquetado con `transformers`, lo que indica que los pesos son compatibles con la librería homónima de Hugging Face, pero no se especifica la arquitectura subyacente.
 
 ## Capacidades
 
 No se dispone de información sobre las capacidades del modelo. No se conocen sus habilidades en generación de texto, razonamiento, código, matemáticas, visión u otras modalidades. Tampoco se sabe si soporta tool calling, agentes, razonamiento multi-paso o modos especiales de pensamiento.
 
-La etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse en la infraestructura de inferencia de HuggingFace, pero no aporta información sobre sus funcionalidades.
+La etiqueta `endpoints_compatible` sugiere que el modelo puede desplegarse en la infraestructura de inferencia de Hugging Face, pero no aporta información sobre sus funcionalidades.
 
 ## Casos de uso
 
@@ -59,6 +59,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emily9589/nanochrono-pretrain-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/emily9589/nanochrono-pretrain-checkpoints
 - Perfil de GitHub del autor: https://github.com/emily9589
-- Página de modelos de HuggingFace: https://huggingface.co/models
+- Página de modelos de Hugging Face: https://huggingface.co/models

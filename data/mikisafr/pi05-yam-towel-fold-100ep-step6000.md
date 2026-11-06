@@ -92,7 +92,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikisafr/pi05-yam-towel-fold-100ep-step6000
+- Modelo en Hugging Face: https://huggingface.co/mikisafr/pi05-yam-towel-fold-100ep-step6000
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Manifiesto de origen: `source_manifest.json` dentro del repositorio del modelo (rutas, bytes y hashes SHA-256)

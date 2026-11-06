@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - **VRAM estimada por checkpoint**: un modelo de 1B en `bf16` ocupa aproximadamente 2 GB en pesos. Con overhead de activaciones y memoria adicional, se recomienda al menos 4 GB de VRAM para inferencia con contexto corto (p. ej., 512 tokens).
 - **GPU recomendadas**: cualquier GPU consumer con 6 GB o más de VRAM es suficiente, como RTX 3060 (12 GB), RTX 3090 (24 GB) o RTX 4090 (24 GB). Para entornos de servidor, una A10G (24 GB) o A100 (40/80 GB) permite cargar varios checkpoints simultáneamente.
 - **Compatibilidad con consumer GPU**: sí, cabe en GPUs de consumo de gama media y alta. Un checkpoint individual se puede cargar en una RTX 3060 de 12 GB con contexto moderado.
-- **Opciones de despliegue**: el formato `safetensors` es compatible con `transformers` de HuggingFace, `vLLM`, `TGI` y `llama.cpp` (previo conversión a GGUF). También puede usarse con `Ollama` si se convierte a formato GGUF. Para inferencia en CPU, `llama.cpp` es una opción viable.
+- **Opciones de despliegue**: el formato `safetensors` es compatible con `transformers` de Hugging Face, `vLLM`, `TGI` y `llama.cpp` (previo conversión a GGUF). También puede usarse con `Ollama` si se convierte a formato GGUF. Para inferencia en CPU, `llama.cpp` es una opción viable.
 - **Latencia y throughput**: no se conocen mediciones específicas para estos checkpoints. Un modelo de 1B en una GPU moderna (p. ej., RTX 4090) genera típicamente entre 50 y 100 tokens por segundo con `vLLM`, pero el valor depende del contexto y del backend.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ No hay información sobre rendimiento comparado con otros modelos de 1B. Como re
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dvader13/olmo2-1b-sft-s1-378d](https://huggingface.co/dvader13/olmo2-1b-sft-s1-378d)
-- Modelo base OLMo-2-1B en HuggingFace: [allenai/OLMo-2-0425-1B](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- Repositorio Hugging Face: [dvader13/olmo2-1b-sft-s1-378d](https://huggingface.co/dvader13/olmo2-1b-sft-s1-378d)
+- Modelo base OLMo-2-1B en Hugging Face: [allenai/OLMo-2-0425-1B](https://huggingface.co/allenai/OLMo-2-0425-1B)
 - Página oficial de OLMo 2 de Ai2: [https://allenai.org/olmo2](https://allenai.org/olmo2)
 - Página general de OLMo de Ai2: [https://allenai.org/olmo](https://allenai.org/olmo)
 - Repositorio de entrenamiento de OLMo: [https://github.com/allenai/OLMo](https://github.com/allenai/OLMo)

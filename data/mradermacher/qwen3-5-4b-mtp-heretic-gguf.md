@@ -105,7 +105,7 @@ No se dispone de información verificable sobre variantes alternativas de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-4B-MTP-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-MTP-Heretic-GGUF
 - Modelo base: https://huggingface.co/RBergBauer/Qwen3.5-4B-MTP-Heretic
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Página de resumen de cuantizaciones del autor: https://hf.tst.eu/model#Qwen3.5-4B-MTP-Heretic-GGUF

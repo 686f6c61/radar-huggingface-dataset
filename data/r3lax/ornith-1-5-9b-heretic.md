@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos desensurad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r3lax/Ornith-1.5-9B-heretic
+- Modelo en Hugging Face: https://huggingface.co/r3lax/Ornith-1.5-9B-heretic
 - Modelo base Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Repositorio de Ornith-1: https://github.com/ornith-ai/Ornith-1

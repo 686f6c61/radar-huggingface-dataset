@@ -83,7 +83,7 @@ Mejora en 29 de 36 idiomas. Las regresiones (bg, cs, de, it, mk, pl, sk, uk) son
 
 - No requiere GPU: un tokenizador SentencePiece se ejecuta en CPU con recursos mínimos.
 - Memoria RAM: el modelo ocupa aproximadamente 131.072 entradas de vocabulario más los símbolos especiales; en la práctica, el fichero spm ocupa menos de 100 MB.
-- Se integra con la librería transformers de HuggingFace, por lo que se puede cargar con `AutoTokenizer` en cualquier entorno Python.
+- Se integra con la librería transformers de Hugging Face, por lo que se puede cargar con `AutoTokenizer` en cualquier entorno Python.
 - No aplica inferencia ni latencia de modelo; la tokenización de un texto de 1.000 palabras tarda en el orden de milisegundos.
 - Compatible con pipelines de entrenamiento de modelos (por ejemplo, con datasets y transformers) y con despliegue en entornos de producción para preprocesado.
 

@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tc-mb/MiniCPM-V-Apps-gguf
+- Repositorio en Hugging Face: https://huggingface.co/tc-mb/MiniCPM-V-Apps-gguf
 - Proyecto MiniCPM-V-Apps: https://github.com/OpenBMB/MiniCPM-V-Apps
 - Pesos oficiales del OCR: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf

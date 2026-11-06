@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de la familia Pythia, concretamente una variante de 1B parámetros denominada `pythia-1b-ppt-control_nca_steps1000_1b-seed1024`, publicada por el usuario sashaboguraev en HuggingFace. El nombre sugiere que se trata de un experimento de control de representaciones internas (posiblemente relacionado con técnicas de intervención en activaciones o control de conceptos) aplicado sobre la base de Pythia-1B, con 1000 pasos de entrenamiento y una semilla fija de 1024. La arquitectura subyacente es GPT-NeoX, la misma que utiliza la familia Pythia original de EleutherAI.
+Este modelo es un checkpoint de la familia Pythia, concretamente una variante de 1B parámetros denominada `pythia-1b-ppt-control_nca_steps1000_1b-seed1024`, publicada por el usuario sashaboguraev en Hugging Face. El nombre sugiere que se trata de un experimento de control de representaciones internas (posiblemente relacionado con técnicas de intervención en activaciones o control de conceptos) aplicado sobre la base de Pythia-1B, con 1000 pasos de entrenamiento y una semilla fija de 1024. La arquitectura subyacente es GPT-NeoX, la misma que utiliza la familia Pythia original de EleutherAI.
 
 La relevancia de este modelo reside en su naturaleza experimental: forma parte de una serie de checkpoints (steps100, steps250, steps1000) que permiten estudiar cómo evoluciona el comportamiento del modelo a lo largo del entrenamiento de control. Sin embargo, la model card es un template automático sin información sustancial, por lo que los detalles sobre el método de control, los datos de entrenamiento y las capacidades finales no están documentados públicamente. El modelo tiene 1.011.671.040 parámetros y un tamaño de repositorio de 3,7 GB en formato safetensors.
 
@@ -73,7 +73,7 @@ La comparativa se limita a la propia serie de checkpoints y al modelo base, ya q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed1024
+- Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed1024
 - Checkpoint con 100 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps100_1b-seed1024
 - Checkpoint con 250 pasos: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps250_1b-seed1024
 - Despliegue en FriendliAI: https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed1024

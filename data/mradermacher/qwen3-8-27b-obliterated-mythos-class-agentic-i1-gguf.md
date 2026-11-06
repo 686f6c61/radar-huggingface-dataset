@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-i1-GGUF
+- Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-i1-GGUF
 - Modelo base: https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-GGUF
 - Modelo abliterado similar: https://huggingface.co/mradermacher/Qwen3.8-27B-abliterated-i1-GGUF

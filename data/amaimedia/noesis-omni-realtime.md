@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NOESIS-Omni-RealTime es un modelo multimodal any-to-any desarrollado por AMAImedia, publicado en HuggingFace bajo la arquitectura `qwen3_5` y orientado a interacciones en tiempo real que combinan texto, imagen, audio y voz. El modelo integra componentes especializados como Whisper (reconocimiento de voz), SigLIP (vision-lenguaje) y Nemotron, ademas de modulos de deteccion de actividad vocal (VAD) y sintesis de voz (text-to-speech), lo que lo posiciona como una solucion integral para pipelines conversacionales multimodales.
+NOESIS-Omni-RealTime es un modelo multimodal any-to-any desarrollado por AMAImedia, publicado en Hugging Face bajo la arquitectura `qwen3_5` y orientado a interacciones en tiempo real que combinan texto, imagen, audio y voz. El modelo integra componentes especializados como Whisper (reconocimiento de voz), SigLIP (vision-lenguaje) y Nemotron, ademas de modulos de deteccion de actividad vocal (VAD) y sintesis de voz (text-to-speech), lo que lo posiciona como una solucion integral para pipelines conversacionales multimodales.
 
-El modelo se distribuye con licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en HuggingFace. El repositorio ocupa 19.9 GB, lo que sugiere pesos en precision completa o semi-precision para un modelo de escala media-grande. Su pipeline declarado es `any-to-any`, con soporte para mas de 100 idiomas segun los tags de HuggingFace.
+El modelo se distribuye con licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en Hugging Face. El repositorio ocupa 19.9 GB, lo que sugiere pesos en precision completa o semi-precision para un modelo de escala media-grande. Su pipeline declarado es `any-to-any`, con soporte para mas de 100 idiomas segun los tags de Hugging Face.
 
 La relevancia de NOESIS-Omni-RealTime radica en su enfoque "omni" y "real-time": no se limita a la generacion de texto multimodal, sino que incorpora deteccion de actividad vocal y sintesis de voz, lo que habilita aplicaciones de voz conversacional de baja latencia. No obstante, la informacion publica disponible es limitada (2 descargas, 0 likes en el momento de la consulta), por lo que muchos detalles tecnicos no estan confirmados.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma oficial. El repositorio ocupa 19.9 GB en safetensors, lo que sugiere que en precision completa o semi-precision se necesita al menos esa cantidad de VRAM mas overhead. En cuantizacion de 8 bits podria reducirse a ~10-12 GB, y en 4 bits a ~6-8 GB, pero estas cifras son estimaciones no confirmadas por el autor.
 - GPU recomendadas: no disponibles oficialmente. Por el tamano del repositorio, una GPU con 24 GB o mas (RTX 3090, RTX 4090, A10G, L4) seria el minimo razonable en precision reducida; para precision completa se requeririan A100 (40/80 GB) o H100.
 - Compatibilidad con GPU de consumo: probable en RTX 3090/4090 con cuantizacion, pero no confirmado.
-- Opciones de despliegue: al usar `transformers` y safetensors, es compatible con el ecosistema HuggingFace (transformers, TGI). No se confirma soporte para vLLM, llama.cpp u Ollama, especialmente por los componentes de audio y vision.
+- Opciones de despliegue: al usar `transformers` y safetensors, es compatible con el ecosistema Hugging Face (transformers, TGI). No se confirma soporte para vLLM, llama.cpp u Ollama, especialmente por los componentes de audio y vision.
 - Latencia y throughput: no disponibles. El nombre "RealTime" sugiere optimizacion para baja latencia, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -79,16 +79,16 @@ La comparativa se limita a categorias generales porque no se dispone de datos te
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion para evaluacion y uso en produccion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion para evaluacion y uso en produccion.
 - Informacion tecnica incompleta: no se publican parametros, contexto, datos de entrenamiento ni benchmarks, lo que dificulta la evaluacion rigurosa.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay evaluaciones publicadas de fiabilidad.
 - Componentes de audio: la calidad de ASR y TTS dependera de los submodelos integrados (Whisper, etc.) y de la integracion; no hay metricas publicadas (WER, MOS).
 - Sesgos: no se documentan sesgos conocidos ni evaluaciones de equidad; el entrenamiento multilingue amplio puede introducir disparidades entre idiomas de altos y bajos recursos.
-- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo gated conviene revisar los terminos adicionales de acceso en HuggingFace.
+- Licencia Apache 2.0: permite uso comercial, pero al ser un modelo gated conviene revisar los terminos adicionales de acceso en Hugging Face.
 - Madurez: con 2 descargas y 0 likes, el modelo es muy reciente y carece de validacion por parte de la comunidad; no se recomienda para produccion critica sin evaluacion propia.
 - Compatibilidad de despliegue: al incluir multiples modalidades (audio, vision), el soporte en frameworks de inferencia optimizados (vLLM, llama.cpp) no esta confirmado y podria requerir transformers puro.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Omni-RealTime
+- Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Omni-RealTime
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

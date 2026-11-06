@@ -6,7 +6,7 @@ ChatBox6-base-finall es un modelo de lenguaje preentrenado desde cero por el des
 
 El modelo no es conversacional: es una base preentrenada pensada como punto de partida para fine-tuning posterior. El autor lo presenta como una alternativa actualizada al enfoque GPT-2, argumentando que equilibra mejor el tamaño del dataset y el número de parámetros para lograr una convergencia completa con hardware modesto (dos T4 de 16 GB durante 78 horas). La relevancia práctica es limitada: se trata de un experimento de nicho, sin benchmarks publicados, con 0 descargas y 0 likes en el momento de la consulta, y con una ventana de contexto de solo 340 tokens.
 
-La ficha se basa exclusivamente en la model card y en los metadatos de HuggingFace. No hay información sobre pipeline, resultados de evaluación ni detalles de arquitectura más allá de los parámetros declarados.
+La ficha se basa exclusivamente en la model card y en los metadatos de Hugging Face. No hay información sobre pipeline, resultados de evaluación ni detalles de arquitectura más allá de los parámetros declarados.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparación es desfavorable en contexto y en disponibilidad de evaluaciones:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zhaoming213/ChatBox6-base-finall
+- Modelo en Hugging Face: https://huggingface.co/Zhaoming213/ChatBox6-base-finall
 - Dataset ChinesePT: https://huggingface.co/datasets/Zhaoming213/ChinesePT
 - Generación 1: https://huggingface.co/Zhaoming213/ChatBox-unrestricted
 - Generación 2: https://huggingface.co/Zhaoming213/ChatBox2-unrestricted

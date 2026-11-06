@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Eon-Blossom-V2-31B-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por mradermacher a partir del modelo Cyclone-Labs/Eon-Blossom-V2-31B. No se trata de un modelo entrenado desde cero, sino de una conversión a GGUF de los pesos de un modelo ya existente, orientado a roleplay y narración de historias (storytelling) y etiquetado como conversacional en HuggingFace. El modelo base tiene 30.697.345.596 parámetros (unos 30,7 mil millones), lo que lo sitúa en la gama de modelos densos de gran tamaño que requieren cuantización para poder ejecutarse en hardware de consumo.
+Eon-Blossom-V2-31B-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por mradermacher a partir del modelo Cyclone-Labs/Eon-Blossom-V2-31B. No se trata de un modelo entrenado desde cero, sino de una conversión a GGUF de los pesos de un modelo ya existente, orientado a roleplay y narración de historias (storytelling) y etiquetado como conversacional en Hugging Face. El modelo base tiene 30.697.345.596 parámetros (unos 30,7 mil millones), lo que lo sitúa en la gama de modelos densos de gran tamaño que requieren cuantización para poder ejecutarse en hardware de consumo.
 
 La relevancia de este repositorio es práctica: el autor ofrece hasta diez variantes de cuantización distintas (desde Q2_K de 12,0 GB hasta Q8_0 de 32,7 GB), además de dos ficheros mmproj (proyector multimodal) en f16 y Q8_0, lo que apunta a que el modelo base incorpora algún tipo de capacidad multimodal, aunque la model card no lo documenta explícitamente. El repositorio completo ocupa 213,9 GB por acumulación de todas las variantes.
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks comparativos entre Eon-Blossom-V2-31B 
 - Contexto desconocido: la longitud de contexto no esta documentada, lo que dificulta planificar despliegues con ventanas largas o gestion de memoria.
 - Ambiguedad multimodal: la presencia de ficheros mmproj no esta explicada en la model card; conviene verificar en el repositorio base si la entrada de imagenes esta realmente soportada y como debe configurarse.
 - Licencia: este repositorio declara Apache 2.0, que permite uso comercial, pero la licencia efectiva puede estar condicionada por la de Cyclone-Labs/Eon-Blossom-V2-31B y por la de los modelos donantes del merge. Es imprescindible comprobar las licencias de todo el linaje antes de un uso en produccion.
-- Fecha de publicacion inusual: la ficha de HuggingFace indica fecha de creacion del 12 de septiembre de 2026, dato que conviene contrastar por si se trata de un error de la plataforma o del repositorio.
+- Fecha de publicacion inusual: la ficha de Hugging Face indica fecha de creacion del 12 de septiembre de 2026, dato que conviene contrastar por si se trata de un error de la plataforma o del repositorio.
 - Sin cuantizaciones ponderadas ni imatrix, y sin calibracion especifica, por lo que las variantes de baja precision (Q2_K, Q3_K) pueden degradar de forma notable la coherencia narrativa.
 
 ## Enlaces

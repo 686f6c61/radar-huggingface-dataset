@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Lythri/Lythri-Tada-4B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Lythri/Lythri-Tada-4B-GGUF
 - Modelo base: https://huggingface.co/Lythri/Lythri-Tada-4B
 - DOI de referencia: https://doi.org/10.5281/zenodo.23179311
 - Banner del proyecto: https://huggingface.co/spaces/Lythri/README/resolve/main/Banner_flat.png

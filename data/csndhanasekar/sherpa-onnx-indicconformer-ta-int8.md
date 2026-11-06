@@ -106,7 +106,7 @@ Frente al checkpoint original, esta versión pierde las otras 21 lenguas indias 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/csndhanasekar/sherpa-onnx-indicconformer-ta-int8
+- Modelo en Hugging Face: https://huggingface.co/csndhanasekar/sherpa-onnx-indicconformer-ta-int8
 - Modelo base (AI4Bharat IndicConformer tamil): https://huggingface.co/ai4bharat/indicconformer_stt_ta_hybrid_ctc_rnnt_large
 - Repositorio sherpa-onnx (k2-fsa): https://github.com/k2-fsa/sherpa-onnx
 - AI4Bharat: organización responsable del modelo original (enlace no incluido en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Roy229/nml7324-risk-analyzer` es un clasificador de texto diseñado para señalar transacciones potencialmente riesgosas a partir de notas de texto libre procedentes de una consola de operaciones de riesgo. Desarrollado por el usuario Roy229, se presenta como un pre-filtro para la cola de investigación de fraude, con un reentrenamiento semanal sobre casos confirmados para mantener una precisión superior a 0,95. El modelo está publicado bajo licencia Apache 2.0 y utiliza la librería Transformers de HuggingFace, con un pipeline de clasificación de texto y soporte para inglés.
+El modelo `Roy229/nml7324-risk-analyzer` es un clasificador de texto diseñado para señalar transacciones potencialmente riesgosas a partir de notas de texto libre procedentes de una consola de operaciones de riesgo. Desarrollado por el usuario Roy229, se presenta como un pre-filtro para la cola de investigación de fraude, con un reentrenamiento semanal sobre casos confirmados para mantener una precisión superior a 0,95. El modelo está publicado bajo licencia Apache 2.0 y utiliza la librería Transformers de Hugging Face, con un pipeline de clasificación de texto y soporte para inglés.
 
 A pesar de su propósito claro, la información pública disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento. Esto dificulta una evaluación técnica profunda, pero su integración en un flujo de detección de fraude sugiere que es un modelo ligero y especializado, probablemente basado en un transformer preentrenado y ajustado para esta tarea concreta. Su relevancia radica en la automatización de un paso crítico en la gestión de riesgo financiero, aunque su adopción requiere validación adicional por parte de los equipos de riesgo.
 
@@ -29,7 +29,7 @@ No se ha publicado informacion sobre la arquitectura interna del modelo. Dado qu
 - Analisis de notas de operaciones para detectar transacciones potencialmente fraudulentas.
 - Integracion como pre-filtro en un pipeline de investigacion de fraude, reduciendo la carga de trabajo manual.
 - Soporte para el idioma ingles, segun la etiqueta `language: en`.
-- Compatible con la libreria Transformers y con endpoints de HuggingFace (etiqueta `endpoints_compatible`), lo que facilita su despliegue en produccion.
+- Compatible con la libreria Transformers y con endpoints de Hugging Face (etiqueta `endpoints_compatible`), lo que facilita su despliegue en produccion.
 
 No se ha documentado soporte para tool calling, agentes, razonamiento multi-paso, vision ni otras capacidades avanzadas. El modelo esta especializado exclusivamente en la tarea de clasificacion de riesgo.
 
@@ -48,11 +48,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Requisitos de hardware
 
-No se dispone de informacion sobre el tamano del modelo, por lo que no es posible estimar la VRAM necesaria ni recomendar GPUs especificas. Dado que se trata de un clasificador de texto, es probable que sea un modelo pequeno (menos de 1B de parametros) que pueda ejecutarse en GPUs de consumo como una RTX 3060 o incluso en CPU, pero esto es una suposicion no confirmada. Para despliegue en produccion, se podrian utilizar herramientas como vLLM, TGI o HuggingFace Inference Endpoints, pero no hay datos de latencia ni throughput.
+No se dispone de informacion sobre el tamano del modelo, por lo que no es posible estimar la VRAM necesaria ni recomendar GPUs especificas. Dado que se trata de un clasificador de texto, es probable que sea un modelo pequeno (menos de 1B de parametros) que pueda ejecutarse en GPUs de consumo como una RTX 3060 o incluso en CPU, pero esto es una suposicion no confirmada. Para despliegue en produccion, se podrian utilizar herramientas como vLLM, TGI o Hugging Face Inference Endpoints, pero no hay datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa con otros modelos de analisis de riesgo de transacciones. No se conocen modelos publicos equivalentes con la misma especializacion y licencia. Se recomienda buscar en el registro NML (NIST Model Registry) o en HuggingFace con el tag `risk-analyzer` para encontrar alternativas, pero no se ha encontrado ninguna en la busqueda realizada.
+No se dispone de informacion suficiente para establecer una comparativa con otros modelos de analisis de riesgo de transacciones. No se conocen modelos publicos equivalentes con la misma especializacion y licencia. Se recomienda buscar en el registro NML (NIST Model Registry) o en Hugging Face con el tag `risk-analyzer` para encontrar alternativas, pero no se ha encontrado ninguna en la busqueda realizada.
 
 ## Limitaciones y advertencias
 
@@ -64,5 +64,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace - Roy229/nml7324-risk-analyzer](https://huggingface.co/Roy229/nml7324-risk-analyzer)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Roy229) (no se ha verificado contenido adicional)
+- [Hugging Face - Roy229/nml7324-risk-analyzer](https://huggingface.co/Roy229/nml7324-risk-analyzer)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Roy229) (no se ha verificado contenido adicional)

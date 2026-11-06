@@ -94,7 +94,7 @@ La comparación relevante no es de capacidad general sino de adecuación al cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Microck/DiskSage-0.5B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Microck/DiskSage-0.5B-GGUF
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de llama.cpp (runtime de referencia): https://github.com/ggml-org/llama.cpp
 - Directorio genérico de modelos GGUF (local-ai-zone): https://local-ai-zone.github.io/

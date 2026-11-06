@@ -79,7 +79,7 @@ El autor indica que 13 de 14 filas del scorecard requerido se superan. No se han
 
 | Modelo | Parámetros | Enfoque | Causal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Before the Implant (este) | 602.510 | Conv-TasNet causal, forma de onda | Sí | MIT | HuggingFace |
+| Before the Implant (este) | 602.510 | Conv-TasNet causal, forma de onda | Sí | MIT | Hugging Face |
 | Demucs / Denoiser (Meta) | Millones (no disponible en detalle) | Separación/denoising en forma de onda | Generalmente no causal | MIT | Abierto |
 | Conv-TasNet original | No disponible | Separación de hablantes | No (versión base) | Abierto | Repositorios académicos |
 | Modelos de mejora de voz tipo DNS-Challenge | No disponible | Diversos (CRN, GAN, etc.) | Mayoritariamente no causal | Variable | Varía |
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de comparaciones cuantitativas di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bmarti44/before-the-implant-causal-enhancer
+- Modelo en Hugging Face: https://huggingface.co/bmarti44/before-the-implant-causal-enhancer
 - Sitio del proyecto: https://beforetheimplant.com
 - Código y registro de investigación: https://github.com/bmarti44/meta-hackathon-deaf-hard-of-hearing
 - Dataset de entrenamiento (LibriSpeech): https://huggingface.co/datasets/openslr/librispeech_asr

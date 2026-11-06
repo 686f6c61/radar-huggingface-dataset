@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jachnun-MLX es una conversión al formato MLX de un modelo de reconocimiento automático del habla (ASR) especializado en *code-switching* entre inglés y hebreo. Lo publica el usuario Hebrish en HuggingFace y deriva directamente del fine-tune `danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching`, que a su vez parte de la familia Parakeet TDT 0.6B v2 (el tag `parakeet` del repo apunta a esa estirpe). El modelo pesa 617.869.958 parámetros (aproximadamente 0,62 mill millones) y se distribuye en safetensors para la librería `mlx`, es decir, pensado para ejecutarse en Apple Silicon con memoria unificada.
+Jachnun-MLX es una conversión al formato MLX de un modelo de reconocimiento automático del habla (ASR) especializado en *code-switching* entre inglés y hebreo. Lo publica el usuario Hebrish en Hugging Face y deriva directamente del fine-tune `danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching`, que a su vez parte de la familia Parakeet TDT 0.6B v2 (el tag `parakeet` del repo apunta a esa estirpe). El modelo pesa 617.869.958 parámetros (aproximadamente 0,62 mill millones) y se distribuye en safetensors para la librería `mlx`, es decir, pensado para ejecutarse en Apple Silicon con memoria unificada.
 
 El problema que resuelve es concreto: la transcripción de audio en el que el hablante alterna hebreo e inglés dentro de la misma frase o turno de palabra, un fenómeno muy habitual en contextos profesionales israelíes (tecnología, medicina, derecho, academia). Los modelos ASR monolingües suelen degradarse en estos casos, y los multilingües genéricos no siempre cubren bien el hebreo. Este modelo se presenta como una alternativa ligera (menos de 700 millones de parámetros) frente a soluciones tipo Whisper large.
 
@@ -33,7 +33,7 @@ Tampoco hay informacion sobre el entrenamiento: no se indica el numero de horas 
 
 - Transcripcion automatica de voz a texto en ingles, en hebreo y en habla con alternancia de ambos idiomas dentro de la misma emision.
 - Manejo de *code-switching* intra-frase, el caso de uso central del fine-tune.
-- Salida de texto plano alineada con el audio de entrada, en el formato propio de la pipeline `automatic-speech-recognition` de HuggingFace.
+- Salida de texto plano alineada con el audio de entrada, en el formato propio de la pipeline `automatic-speech-recognition` de Hugging Face.
 - Inferencia local en Apple Silicon mediante la libreria MLX.
 - Modelo ligero (0,62 B de parametros), adecuado para ejecucion en dispositivos con memoria unificada limitada.
 - No se documentan capacidades de traduccion, diarizacion de hablantes, marcas de tiempo a nivel de palabra, deteccion de idioma por segmento, puntuacion automatica ni *streaming*.
@@ -74,7 +74,7 @@ Nota: las filas marcadas como "referencia general" no provienen de la informacio
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repo es gated; es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier pipeline automatizado.
+- **Acceso restringido**: el repo es gated; es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier pipeline automatizado.
 - **Sin benchmarks**: no hay cifras de WER ni comparaciones publicadas, ni en el repo ni en la informacion disponible. Cualquier uso en produccion exige una evaluacion propia sobre el dominio objetivo.
 - **Cobertura linguistica muy acotada**: solo ingles y hebreo. No se debe esperar transliteracion, traduccion ni soporte de un tercer idioma.
 - **Riesgo de alucinacion en ASR**: como en cualquier modelo de este tipo, es probable que ante silencios, ruido o audio fuera de dominio genere texto no presente en la grabacion. Este comportamiento no se ha documentado ni cuantificado para este modelo.
@@ -86,7 +86,7 @@ Nota: las filas marcadas como "referencia general" no provienen de la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hebrish/Jachnun-MLX
+- Modelo en Hugging Face: https://huggingface.co/Hebrish/Jachnun-MLX
 - Modelo base: https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching
 - Libreria MLX (Apple): https://github.com/ml-explore/mlx
 - Ejemplos de MLX para audio y habla: https://github.com/ml-explore/mlx-examples

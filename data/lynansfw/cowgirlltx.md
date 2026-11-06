@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lynaNSFW/CowgirlLTX` es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen, desarrollado por el usuario `lynaNSFW` y publicado en HuggingFace. Está diseñado para aplicarse sobre el modelo base `elismasilva/ltx2.3-image-comfyui`, un checkpoint de la arquitectura LTX 2.3 para ComfyUI. Su objetivo es permitir la generación de imágenes explícitas de temática adulta a partir de frases concretas ("trigger words") que describen una escena de tipo cowgirl.
+El modelo `lynaNSFW/CowgirlLTX` es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen, desarrollado por el usuario `lynaNSFW` y publicado en Hugging Face. Está diseñado para aplicarse sobre el modelo base `elismasilva/ltx2.3-image-comfyui`, un checkpoint de la arquitectura LTX 2.3 para ComfyUI. Su objetivo es permitir la generación de imágenes explícitas de temática adulta a partir de frases concretas ("trigger words") que describen una escena de tipo cowgirl.
 
 El repositorio tiene un tamaño de 0.7 GB e indica que la librería utilizada es `diffusers`, con el pipeline `text-to-image`. No se especifican el número de parámetros, la longitud de contexto (al ser un modelo de difusión, el texto de entrada son prompts) ni la licencia. La relevancia del modelo se limita a un nicho de personalización de modelos de difusión para contenido para adultos, dentro del ecosistema de ComfyUI y Civitai.
 
@@ -71,6 +71,6 @@ No se ha proporcionado información suficiente para establecer una comparación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lynaNSFW/CowgirlLTX
+- Hugging Face: https://huggingface.co/lynaNSFW/CowgirlLTX
 - Perfil del autor: https://huggingface.co/lynaNSFW
 - Modelo en Civitai (según la model card): https://civitai.red/models/2780029/cowgirl-orno-boy?modelVersionId=3130889

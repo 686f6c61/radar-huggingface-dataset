@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clar-k0503/matching-notes` es un repositorio de HuggingFace publicado por el usuario clar-k0503 que contiene una implementación propia de una arquitectura tipo **Mixer** orientada a tareas de **matching**, acompañada de un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible ("reproducible starting point, not a trained model release"). El artefacto principal es el script `finetune.py`, no el checkpoint.
+`clar-k0503/matching-notes` es un repositorio de Hugging Face publicado por el usuario clar-k0503 que contiene una implementación propia de una arquitectura tipo **Mixer** orientada a tareas de **matching**, acompañada de un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible ("reproducible starting point, not a trained model release"). El artefacto principal es el script `finetune.py`, no el checkpoint.
 
 El checkpoint `model.safetensors` contiene 24.832 parámetros totales, un tamaño irrelevante desde el punto de vista de capacidad (órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable). El repositorio ocupa 0,0 GB y no declara pipeline, idiomas soportados ni resultados de benchmarks. La configuración declarada incluye atención dispersa (sparse), fusión bilinear, activación mish y normalización groupnorm, con receta de entrenamiento basada en el optimizador Lion y un schedule exponencial.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clar-k0503/matching-notes | 24.832 | no disponible | No (checkpoint de inicialización) | MIT | HuggingFace, 0 descargas |
+| clar-k0503/matching-notes | 24.832 | no disponible | No (checkpoint de inicialización) | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (implementaciones Mixer para matching) en la documentación proporcionada, por lo que no es posible establecer una comparativa rigurosa.
@@ -82,5 +82,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clar-k0503/matching-notes
+- Repositorio en Hugging Face: https://huggingface.co/clar-k0503/matching-notes
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

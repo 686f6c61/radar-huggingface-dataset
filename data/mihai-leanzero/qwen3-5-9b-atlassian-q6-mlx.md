@@ -77,10 +77,10 @@ Otras métricas reportadas: pérdida de validación de 0,575 en su mezcla de ent
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Atlassian-Q6-mlx | ~8,95B | no disponible | Forge, Jira, Confluence, JSM | Apache 2.0 | HuggingFace, MLX |
-| Qwen/Qwen3.5-9B (base) | ~8,95B | no disponible | Generalista | Apache 2.0 | HuggingFace |
-| 27B release de la misma familia | 27B (no confirmado) | no disponible | Forge, Jira, Confluence, JSM | no disponible | HuggingFace |
-| Variante 8-bit del mismo autor | ~8,95B | no disponible | Forge, Jira, Confluence, JSM | Apache 2.0 | HuggingFace |
+| Qwen3.5-9B-Atlassian-Q6-mlx | ~8,95B | no disponible | Forge, Jira, Confluence, JSM | Apache 2.0 | Hugging Face, MLX |
+| Qwen/Qwen3.5-9B (base) | ~8,95B | no disponible | Generalista | Apache 2.0 | Hugging Face |
+| 27B release de la misma familia | 27B (no confirmado) | no disponible | Forge, Jira, Confluence, JSM | no disponible | Hugging Face |
+| Variante 8-bit del mismo autor | ~8,95B | no disponible | Forge, Jira, Confluence, JSM | Apache 2.0 | Hugging Face |
 
 El 27B supera al 9B en todas las pruebas (30,0 de 25 en apps completas frente a 16 de 25), pero requiere mucha más memoria. La variante de 8 bits del 9B ofrece mejor fidelidad de cuantización (KLD 0,0537 frente a 0,0941) a cambio de mayor tamaño.
 
@@ -98,7 +98,7 @@ El 27B supera al 9B en todas las pruebas (30,0 de 25 en apps completas frente a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q6-mlx
+- Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-Q6-mlx
 - Página del autor con el informe completo: https://leanzero.net/portfolio/atlassian-models
 - LeanZero: https://leanzero.net
 - CogniRunner: https://leanzero.net/portfolio/cognirunner

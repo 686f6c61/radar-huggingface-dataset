@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento para el segundo modelo, por lo que no es p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Duy007/lab21-2A202602011-qwen35-triage-vi
+- Modelo en Hugging Face: https://huggingface.co/Duy007/lab21-2A202602011-qwen35-triage-vi
 - Repositorio del laboratorio original: https://github.com/hieutrungdao/Day21-Track3-Finetuning-Lab
 - Informe completo (dentro del repo del modelo): `submission/REPORT.md` (accesible desde la pestaña "Files" del modelo)
 - Modelo similar de otro estudiante: https://huggingface.co/rhindsight/lab21-2A202601903-qwen35-triage-vi

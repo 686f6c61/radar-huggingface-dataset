@@ -108,7 +108,7 @@ No se dispone de modelos comparables de terceros con datos verificables en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haideraqeeb/MiniMax-H3-Ref2VA-Pruned-FP8
+- Modelo en Hugging Face: https://huggingface.co/haideraqeeb/MiniMax-H3-Ref2VA-Pruned-FP8
 - Checkpoint base podado en BF16: https://huggingface.co/haideraqeeb/MiniMax-H3-Ref2VA-Pruned-BF16
 - MiniMax H3 original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Configuracion y escalas FP8 de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3

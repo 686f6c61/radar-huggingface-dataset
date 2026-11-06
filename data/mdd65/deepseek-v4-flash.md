@@ -96,13 +96,13 @@ Frente a V3.2, V4-Flash reduce parámetros activos de 37B a 13B y mejora en MMLU
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mdd65/DeepSeek-V4-Flash
+- Repositorio Hugging Face: https://huggingface.co/mdd65/DeepSeek-V4-Flash
 - Modelo oficial DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Modelo oficial DeepSeek-V4-Flash-Base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base
 - Modelo oficial DeepSeek-V4-Pro: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - Modelo oficial DeepSeek-V4-Pro-Base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-Base
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Página principal: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - ModelScope (Flash): https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash

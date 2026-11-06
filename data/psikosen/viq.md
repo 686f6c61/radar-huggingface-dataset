@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VIQ (identificador `psikosen/viq`) no es un modelo de lenguaje ni una red neuronal entrenada por el autor, sino una herramienta de línea de comandos que extrae una o varias personas de un vídeo y empaqueta el resultado como material con canal alfa listo para composición y prototipado de realidad aumentada. El repositorio de HuggingFace no contiene pesos propios: actúa como punto de distribución del proyecto, cuya implementación se apoya en backends de segmentación y matting de terceros (rembg sobre ONNX Runtime, SAM 3 y MatAnyone 2). El pipeline cubre segmentación, limpieza del matte, comprobaciones de temporización y exportación verificada de vídeo alfa.
+VIQ (identificador `psikosen/viq`) no es un modelo de lenguaje ni una red neuronal entrenada por el autor, sino una herramienta de línea de comandos que extrae una o varias personas de un vídeo y empaqueta el resultado como material con canal alfa listo para composición y prototipado de realidad aumentada. El repositorio de Hugging Face no contiene pesos propios: actúa como punto de distribución del proyecto, cuya implementación se apoya en backends de segmentación y matting de terceros (rembg sobre ONNX Runtime, SAM 3 y MatAnyone 2). El pipeline cubre segmentación, limpieza del matte, comprobaciones de temporización y exportación verificada de vídeo alfa.
 
 La relevancia del proyecto está en resolver un problema de producción concreto: obtener recortes utilizables en posproducción sin confundir una tarea de segmentación con un supuesto modelo de reconstrucción 3D. La documentación insiste explícitamente en que un cutout alfa es 2D/2.5D y no un humano tridimensional completo, y en que las vistas laterales o traseras requieren una etapa de reconstrucción con cobertura multivista suficiente. Esa honestidad técnica sobre los límites del resultado es uno de los rasgos diferenciales de la ficha.
 
@@ -94,12 +94,12 @@ No se dispone de comparativas publicadas frente a alternativas externas como RVM
 - MatAnyone 2 es la etapa de refinado preferida, pero su uso está restringido a escenarios no comerciales; para producción comercial hay que revisar la licencia exacta y considerar alternativas.
 - Los pesos descargados por rembg pueden tener términos distintos de la licencia MIT del software, por lo que hay que revisar las condiciones del modelo concreto antes de usarlo en producción.
 - La exportación HEVC con alfa está limitada a macOS en la práctica, ya que depende de AVFoundation y RealityKit.
-- El repositorio de HuggingFace no declara licencia, idiomas ni pipeline, y no registra descargas ni interacciones, por lo que no hay validación comunitaria del proyecto.
+- El repositorio de Hugging Face no declara licencia, idiomas ni pipeline, y no registra descargas ni interacciones, por lo que no hay validación comunitaria del proyecto.
 - No se han publicado métricas objetivas de calidad, sesgo o robustez; la única evaluación disponible es la inspección manual de las previsualizaciones y los diagnósticos de `manifest.json`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psikosen/viq
+- Modelo en Hugging Face: https://huggingface.co/psikosen/viq
 - Perfil del autor en GitHub: https://github.com/psikosen
 - MatAnyone 2 (etapa de refinado, licencia no comercial): https://github.com/pq-yang/MatAnyone2
 - Filtro `v360` de FFmpeg: https://ffmpeg.org/ffmpeg-filters.html#v360

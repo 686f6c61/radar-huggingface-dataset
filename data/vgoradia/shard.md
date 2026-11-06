@@ -74,7 +74,7 @@ El entrenamiento se realizo sobre la base de datos de disrupciones de MIT Alcato
 
 | Modelo | Parametros | Contexto (secuencia) | ROC-AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SHARD | 62.671 | 100 pasos | 0,864 | MIT | HuggingFace (vgoradia/SHARD) |
+| SHARD | 62.671 | 100 pasos | 0,864 | MIT | Hugging Face (vgoradia/SHARD) |
 | HDL (linea base) | no disponible | no disponible | 0,801 (inferido por la mejora de +6,3 puntos) | no disponible | no disponible |
 | Otros modelos de DisruptionBench | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otros modelos comparables mas alla de la line
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vgoradia/SHARD
+- Hugging Face: https://huggingface.co/vgoradia/SHARD
 - Demo interactiva (Streamlit): https://shard-disruption.streamlit.app
 - Contacto del autor: vgoradia07@gmail.com
 - Citacion (BibTeX): `@misc{goradia2026shard, title={SHARD: Signal Harmonics for Anomaly and Reactor Disruption — A Transformer Architecture for Interpretable Plasma Disruption Prediction}, author={Goradia, Veer}, year={2026}}`

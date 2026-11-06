@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ps-face-landmarks es un repositorio de HuggingFace publicado por el usuario FreeHugsForRobots que contiene un unico artefacto: `face_landmarks_detector.onnx`, un modelo de deteccion de puntos faciales (face landmarks) de 478 puntos. No se trata de un modelo de lenguaje: es un modelo de vision por computador orientado a la inferencia local de geometria facial, empaquetado en formato ONNX. El propio autor indica que es un componente interno de la aplicacion de escritorio DepthField Photo, concretamente el modulo que alimenta la funcion Smooth Skin (suavizado de piel) para excluir ojos, cejas y labios de la mascara de suavizado.
+ps-face-landmarks es un repositorio de Hugging Face publicado por el usuario FreeHugsForRobots que contiene un unico artefacto: `face_landmarks_detector.onnx`, un modelo de deteccion de puntos faciales (face landmarks) de 478 puntos. No se trata de un modelo de lenguaje: es un modelo de vision por computador orientado a la inferencia local de geometria facial, empaquetado en formato ONNX. El propio autor indica que es un componente interno de la aplicacion de escritorio DepthField Photo, concretamente el modulo que alimenta la funcion Smooth Skin (suavizado de piel) para excluir ojos, cejas y labios de la mascara de suavizado.
 
 El modelo no es original del autor. Segun la model card, se trata de una conversion a ONNX del modelo Face Mesh / Face Landmarker de MediaPipe, cuyo autor original es Google y cuyo codigo fuente esta en el repositorio google-ai-edge/mediapipe. La unica modificacion declarada es la conversion de TFLite a ONNX. La licencia resultante es Apache 2.0, heredada del proyecto original.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El tamano del repositorio se reporta como 0,0 GB, lo que implica un artefacto por debajo del umbral de redondeo de HuggingFace (inferior a 50 MB aproximadamente) y, por tanto, un modelo muy ligero.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El tamano del repositorio se reporta como 0,0 GB, lo que implica un artefacto por debajo del umbral de redondeo de Hugging Face (inferior a 50 MB aproximadamente) y, por tanto, un modelo muy ligero.
 - GPU recomendadas: no disponible. No se documentan requisitos de GPU para este artefacto concreto.
 - Compatibilidad con GPU de consumo: no disponible. Dado el tamano declarado del repositorio, es plausible que el modelo quepa en cualquier GPU de consumo, pero esto no esta confirmado por el autor y debe verificarse empiricamente.
 - Opciones de despliegue: ONNX Runtime es el runtime natural del formato publicado. El modelo original del que deriva se distribuye en el ecosistema MediaPipe, cuyo runtime se basa en TFLite; no se documentan integraciones con vLLM, TGI, llama.cpp ni Ollama, que no son aplicables a un modelo de vision no generativo.
@@ -85,7 +85,7 @@ No se dispone de datos comparativos de precision, latencia o consumo entre estas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FreeHugsForRobots/ps-face-landmarks
+- Modelo en Hugging Face: https://huggingface.co/FreeHugsForRobots/ps-face-landmarks
 - Proyecto original MediaPipe (Google): https://github.com/google-ai-edge/mediapipe
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, demo o repositorio propio del autor: no disponible

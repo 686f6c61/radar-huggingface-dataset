@@ -96,7 +96,7 @@ No se han publicado resultados comparativos frente a otros modelos en la informa
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ForestGuard AI | Random Forest (scikit-learn) | no aplica (100 arboles) | no aplica | Accuracy 96,20 %, Macro F1 93,29 % en Covertype | Apache 2.0 | HuggingFace |
+| ForestGuard AI | Random Forest (scikit-learn) | no aplica (100 arboles) | no aplica | Accuracy 96,20 %, Macro F1 93,29 % en Covertype | Apache 2.0 | Hugging Face |
 | XGBoost (referencia generica) | Gradient boosting | no aplica | no aplica | No comparado en la model card | Apache 2.0 | Repositorio oficial |
 | LightGBM (referencia generica) | Gradient boosting | no aplica | no aplica | No comparado en la model card | MIT | Repositorio oficial |
 | Balanced Random Forest (referencia generica) | Random Forest con balanceo | no aplica | no aplica | No comparado en la model card | BSD-3 | Repositorio oficial |
@@ -116,8 +116,8 @@ No se dispone de resultados numericos de los modelos alternativos sobre Covertyp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdelrahmanAkl/forestguard-ai-model
+- Modelo en Hugging Face: https://huggingface.co/AbdelrahmanAkl/forestguard-ai-model
 - Dataset UCI Covertype: https://archive.ics.uci.edu/dataset/31/covertype
 - Documentacion de scikit-learn `RandomForestClassifier`: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 - Documentacion de joblib: https://joblib.readthedocs.io/
-- Documentacion de HuggingFace Hub para descarga de artefactos: https://huggingface.co/docs/huggingface_hub
+- Documentacion de Hugging Face Hub para descarga de artefactos: https://huggingface.co/docs/huggingface_hub

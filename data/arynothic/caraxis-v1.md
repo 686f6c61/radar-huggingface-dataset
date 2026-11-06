@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Caraxis-v1 es un modelo publicado en HuggingFace por el usuario arynothic bajo licencia MIT, con el identificador `arynothic/caraxis-v1`. La informacion publica disponible es minima: la model card no contiene mas que las etiquetas `license: mit` y `unsloth`, sin descripcion, sin datos de entrenamiento, sin benchmarks y sin indicacion de la arquitectura subyacente. El repositorio ocupa 0,1 GB y emplea el formato de pesos safetensors, ademas de estar etiquetado con la region `us`.
+Caraxis-v1 es un modelo publicado en Hugging Face por el usuario arynothic bajo licencia MIT, con el identificador `arynothic/caraxis-v1`. La informacion publica disponible es minima: la model card no contiene mas que las etiquetas `license: mit` y `unsloth`, sin descripcion, sin datos de entrenamiento, sin benchmarks y sin indicacion de la arquitectura subyacente. El repositorio ocupa 0,1 GB y emplea el formato de pesos safetensors, ademas de estar etiquetado con la region `us`.
 
 El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y fue creado el 14 de septiembre de 2026 con una unica actualizacion el 15 de septiembre de 2026. La presencia de la etiqueta `unsloth` apunta a que el artefacto se genero o se ajusto con la libreria Unsloth, especializada en fine-tuning eficiente en memoria, pero esto es una inferencia a partir del metadato y no una confirmacion del autor.
 
@@ -25,7 +25,7 @@ Datos adicionales verificables: identificador `arynothic/caraxis-v1`, autor aryn
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El unico indicio tecnico es la etiqueta `unsloth`, que en el ecosistema de HuggingFace se asocia a modelos ajustados con la libreria Unsloth (fine-tuning de bajo consumo de memoria, habitualmente mediante LoRA o QLoRA sobre un modelo base de tipo transformer). Esta asociacion es una hipotesis razonable, no un dato confirmado.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El unico indicio tecnico es la etiqueta `unsloth`, que en el ecosistema de Hugging Face se asocia a modelos ajustados con la libreria Unsloth (fine-tuning de bajo consumo de memoria, habitualmente mediante LoRA o QLoRA sobre un modelo base de tipo transformer). Esta asociacion es una hipotesis razonable, no un dato confirmado.
 
 Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineacion. El tamano del repositorio, 0,1 GB, es coherente con un adaptador LoRA de rango bajo o con un modelo de muy pocos parametros, pero sin acceso a la lista de ficheros del repositorio no es posible distinguir entre ambos escenarios. No se han publicado innovaciones tecnicas destacables (decodificacion especulativa, atencion lineal, arquitecturas hibridas, etc.).
 
@@ -35,7 +35,7 @@ Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del data
 - No se confirma soporte de generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No se confirma soporte de tool calling ni function calling.
 - No se confirma soporte de agentes ni de razonamiento multi-paso.
-- No se confirma soporte multilingue; el campo de idiomas aparece como no disponible en los metadatos de HuggingFace.
+- No se confirma soporte multilingue; el campo de idiomas aparece como no disponible en los metadatos de Hugging Face.
 - No se confirma la existencia de modos especiales (thinking mode, audio, vision, decodificacion restringida).
 - Requiere evaluacion directa por parte del usuario para determinar cualquiera de los puntos anteriores.
 
@@ -49,13 +49,13 @@ Los siguientes escenarios son aplicaciones plausibles dado el perfil del artefac
 - Integracion en pruebas automatizadas de CI/CD: puede emplearse como componente de sistemas conversacionales en tests de integracion donde no se requiere calidad de produccion, solo un modelo ligero y de licencia abierta.
 - Despliegue en hardware de gama baja o en el borde: un repositorio de 0,1 GB es compatible con entornos con almacenamiento y memoria limitados, siempre que el modelo base asociado (si es un adaptador) tambien quepa en ese hardware.
 - Generacion de texto en entornos con requisitos de privacidad: al ejecutarse con pesos locales en safetensors, los datos no salen de la infraestructura propia, lo que resulta adecuado para pruebas de concepto en dominios con datos sensibles.
-- Demostraciones y material docente: sirve como ejemplo practico de publicacion de un modelo o adaptador en HuggingFace con licencia MIT dentro de cursos o talleres sobre ecosistema open source.
+- Demostraciones y material docente: sirve como ejemplo practico de publicacion de un modelo o adaptador en Hugging Face con licencia MIT dentro de cursos o talleres sobre ecosistema open source.
 
 ## Benchmarks y rendimiento
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion estandar en la model card, en los metadatos de HuggingFace ni en los resultados de busqueda consultados.
+No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion estandar en la model card, en los metadatos de Hugging Face ni en los resultados de busqueda consultados.
 
 ## Requisitos de hardware
 
@@ -85,5 +85,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arynothic/caraxis-v1
+- Hugging Face: https://huggingface.co/arynothic/caraxis-v1
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

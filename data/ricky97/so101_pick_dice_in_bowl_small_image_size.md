@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SO101_pick_dice_in_bowl_small_image_size es un modelo de política de difusión (Diffusion Policy) para control visuomotor en robótica, desarrollado por Ricky97 y publicado en HuggingFace mediante la librería LeRobot. El modelo está entrenado para ejecutar la tarea de coger un dado y colocarlo en un cuenco blanco, utilizando un robot de tipo `so_follower` con dos cámaras (`wrist` y `agent`). Se trata de un modelo de aprendizaje por imitación que genera trayectorias de acciones suaves y multi-paso, lo que resulta especialmente adecuado para manipulaciones que requieren contacto rico.
+SO101_pick_dice_in_bowl_small_image_size es un modelo de política de difusión (Diffusion Policy) para control visuomotor en robótica, desarrollado por Ricky97 y publicado en Hugging Face mediante la librería LeRobot. El modelo está entrenado para ejecutar la tarea de coger un dado y colocarlo en un cuenco blanco, utilizando un robot de tipo `so_follower` con dos cámaras (`wrist` y `agent`). Se trata de un modelo de aprendizaje por imitación que genera trayectorias de acciones suaves y multi-paso, lo que resulta especialmente adecuado para manipulaciones que requieren contacto rico.
 
 La arquitectura se basa en el método Diffusion Policy descrito en el paper 2303.04137, que trata el control visuomotor como un proceso generativo de difusión. El modelo tiene 89.243.670 parámetros y un tamaño de repositorio de 0.4 GB, con los pesos en formato safetensors. No es un modelo de lenguaje, por lo que la longitud de contexto y los idiomas soportados no aplican en el sentido convencional; su "contexto" son las observaciones de estado y las imágenes de las cámaras.
 
@@ -70,7 +70,7 @@ No disponible. No se han identificado modelos comparables con datos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ricky97/SO101_pick_dice_in_bowl_small_image_size
+- Hugging Face: https://huggingface.co/Ricky97/SO101_pick_dice_in_bowl_small_image_size
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ricky97/SO101_pick_dice_in_bowl
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iaac-maai/day3-example-load-profiles` es un modelo de clustering no supervisado publicado en HuggingFace por el equipo del curso AI Methods I del IAAC (Institute for Advanced Architecture of Catalonia). No es un modelo de lenguaje ni una red neuronal: es un pipeline de scikit-learn compuesto por un `Normalizer(norm="l1")` y un `KMeans` con `n_clusters=4`, serializado en un fichero `model.joblib` de 8 KB. Su funcion es asignar un dia completo de consumo electrico de una vivienda (24 valores horarios en kW) a uno de cuatro perfiles tipicos de uso diario.
+`iaac-maai/day3-example-load-profiles` es un modelo de clustering no supervisado publicado en Hugging Face por el equipo del curso AI Methods I del IAAC (Institute for Advanced Architecture of Catalonia). No es un modelo de lenguaje ni una red neuronal: es un pipeline de scikit-learn compuesto por un `Normalizer(norm="l1")` y un `KMeans` con `n_clusters=4`, serializado en un fichero `model.joblib` de 8 KB. Su funcion es asignar un dia completo de consumo electrico de una vivienda (24 valores horarios en kW) a uno de cuatro perfiles tipicos de uso diario.
 
 El modelo se entrena sobre 1.411 dias completos medidos en una unica vivienda en Sceaux, cerca de Paris, entre diciembre de 2006 y noviembre de 2010, a partir del dataset publico Individual Household Electric Power Consumption de Hebrail y Berard (UCI). La normalizacion L1 hace que el modelo agrupe la forma de la curva (el reparto porcentual del consumo a lo largo del dia) y no el volumen total, de modo que dias con consumos muy distintos pero con la misma estructura horaria caen en el mismo cluster.
 
@@ -72,7 +72,7 @@ Silhouette score: 0,13 con k=2 y 0,10 con k=4 (bajo para todo k entre 2 y 8).
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iaac-maai/day3-example-load-profiles | KMeans (scikit-learn) | 4 centroides x 24 dimensiones | 24 columnas horarias | MIT | HuggingFace |
+| iaac-maai/day3-example-load-profiles | KMeans (scikit-learn) | 4 centroides x 24 dimensiones | 24 columnas horarias | MIT | Hugging Face |
 | Clustering jerarquico (ward) sobre los mismos datos | Aglomerativo | No aplica | 24 columnas horarias | No aplica | Referencia interna del analisis (ARI 0,34 frente al modelo) |
 | Otros modelos de load profiling | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos publicos comparables de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iaac-maai/day3-example-load-profiles
+- Modelo en Hugging Face: https://huggingface.co/iaac-maai/day3-example-load-profiles
 - Dataset procesado: https://huggingface.co/datasets/iaac-maai/day3-example-daily-load-profiles
 - Repositorio GitHub del curso (notebook `Day_3/docs/application_of_unsupervised_learning.ipynb`): https://github.com/iaac-maai/ai-methods-1-2026
 - Dataset original en UCI: https://archive.ics.uci.edu/dataset/235/individual+household+electric+power+consumption

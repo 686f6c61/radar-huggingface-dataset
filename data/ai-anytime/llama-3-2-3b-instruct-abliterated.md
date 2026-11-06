@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tasa de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ai-anytime/Llama-3.2-3B-Instruct-abliterated | 3,21B | 128k (heredado) | 0,5938 (medida por el autor) | Llama 3.2 Community | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128k | 0,9375 (medida por el autor) | Llama 3.2 Community | HuggingFace |
-| Otras variantes abliterated de Llama 3.2 3B | ~3,21B | 128k | no disponible | Llama 3.2 Community | HuggingFace |
+| ai-anytime/Llama-3.2-3B-Instruct-abliterated | 3,21B | 128k (heredado) | 0,5938 (medida por el autor) | Llama 3.2 Community | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128k | 0,9375 (medida por el autor) | Llama 3.2 Community | Hugging Face |
+| Otras variantes abliterated de Llama 3.2 3B | ~3,21B | 128k | no disponible | Llama 3.2 Community | Hugging Face |
 
 No se dispone de datos de benchmarks estándar comparables entre estas variantes en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks estándar comparables entre estas variantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-anytime/Llama-3.2-3B-Instruct-abliterated
+- Modelo en Hugging Face: https://huggingface.co/ai-anytime/Llama-3.2-3B-Instruct-abliterated
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Herramienta ablate: https://github.com/AIAnytime/ablate
 - Paper de referencia (Arditi et al., 2024): https://arxiv.org/abs/2406.11717

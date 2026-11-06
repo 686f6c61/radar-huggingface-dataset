@@ -76,7 +76,7 @@ Nota: los datos de rendimiento comparativos (benchmarks) no están disponibles e
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/backpack-run/SmolLM2-135M-Instruct-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/backpack-run/SmolLM2-135M-Instruct-GGUF
 - Modelo original: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Cuantización GGUF alternativa (bartowski): https://huggingface.co/bartowski/SmolLM2-135M-Instruct-GGUF
 - Repositorio GitHub con ejemplo Q8_0: https://github.com/HackNetAyush/smollm2-135M-instruct-gguf-q8

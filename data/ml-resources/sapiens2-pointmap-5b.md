@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sapiens2-5B-Pointmap es un modelo de visión por computador desarrollado por Meta que estima un mapa de puntos 3D por píxel (coordenadas x, y, z en el sistema de referencia de la cámara) sobre imágenes centradas en personas. Se trata de un ajuste fino del backbone preentrenado Sapiens2-5B, y su tarea declarada en HuggingFace es la estimación de profundidad/estructura 3D, no la generación de texto. La ficha que se analiza aquí es un espejo publicado por la cuenta `ml-resources`, no una publicación oficial de Meta; el contenido del repositorio y la licencia se mantienen sin cambios respecto al original.
+Sapiens2-5B-Pointmap es un modelo de visión por computador desarrollado por Meta que estima un mapa de puntos 3D por píxel (coordenadas x, y, z en el sistema de referencia de la cámara) sobre imágenes centradas en personas. Se trata de un ajuste fino del backbone preentrenado Sapiens2-5B, y su tarea declarada en Hugging Face es la estimación de profundidad/estructura 3D, no la generación de texto. La ficha que se analiza aquí es un espejo publicado por la cuenta `ml-resources`, no una publicación oficial de Meta; el contenido del repositorio y la licencia se mantienen sin cambios respecto al original.
 
 El modelo emplea una arquitectura Vision Transformer con 5.071 mil millones de parámetros en el backbone (5.348.345.879 parámetros totales contando el cabezal, según los pesos en safetensors), dimensión de embedding de 2432, 56 capas y 32 cabezas de atención, con parche de 16 píxeles y resolución de inferencia fija de 1024 × 768. Esto supone 15.722 TFLOPs por pasada de backbone, lo que lo sitúa en el extremo alto de la familia Sapiens2-Pointmap, que también incluye variantes de 0.4B, 0.8B y 1B.
 
@@ -42,7 +42,7 @@ La model card no documenta el numero de imagenes o tokens de entrenamiento, la c
 - Estimacion de pointmap denso: prediccion de coordenadas x, y, z por píxel en el marco de la camara, a resolucion de 1024 × 768.
 - Procesamiento de imagenes centradas en personas (human-centric), el dominio declarado de uso previsto.
 - Extraccion de representaciones visuales de alta dimension (2432) a partir del backbone Sapiens2-5B, reutilizables para otras tareas densas de la familia.
-- Estimacion de profundidad implicita: el pipeline declarado en HuggingFace es `depth-estimation`, coherente con la salida de pointmap.
+- Estimacion de profundidad implicita: el pipeline declarado en Hugging Face es `depth-estimation`, coherente con la salida de pointmap.
 - Integracion con la libreria `sapiens2` y, segun las etiquetas del repositorio, compatibilidad declarada con `transformers`.
 - No se documentan capacidades de generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes, vision-lenguaje, audio ni modo de pensamiento. Es un modelo estrictamente visual y monocanal en su entrada.
 - No se documenta soporte multilingue: no hay componente de lenguaje.

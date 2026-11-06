@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/efficientnet-lite0-imx` es un repositorio publicado por NXP Semiconductors en HuggingFace que, por su identificador, corresponde a una adaptacion o redistribucion de EfficientNet-Lite0 orientada a los SoC de la familia i.MX de NXP. EfficientNet-Lite0 es una red neuronal convolucional de clasificacion de imagenes desarrollada originalmente por Google dentro de la familia EfficientNet, con la variante "Lite" rediseñada para inferencia en dispositivos de borde: sustituye la activacion swish por ReLU6 y elimina los bloques de squeeze-and-excitation para mejorar la compatibilidad con aceleradores enteros.
+`nxp/efficientnet-lite0-imx` es un repositorio publicado por NXP Semiconductors en Hugging Face que, por su identificador, corresponde a una adaptacion o redistribucion de EfficientNet-Lite0 orientada a los SoC de la familia i.MX de NXP. EfficientNet-Lite0 es una red neuronal convolucional de clasificacion de imagenes desarrollada originalmente por Google dentro de la familia EfficientNet, con la variante "Lite" rediseñada para inferencia en dispositivos de borde: sustituye la activacion swish por ReLU6 y elimina los bloques de squeeze-and-excitation para mejorar la compatibilidad con aceleradores enteros.
 
 El modelo resuelve el problema de clasificacion de imagenes a resolucion fija (224x224 píxeles en su configuracion estandar) con un coste computacional muy bajo, del orden de 4,7 millones de parametros y unas 407 MAdds. Ese perfil lo hace adecuado para inspeccion visual industrial, vision embebida en automocion y aplicaciones de IoT donde no hay margen para ejecutar modelos generativos o transformers de vision.
 
@@ -98,7 +98,7 @@ Los valores de la tabla corresponden a los modelos de referencia de cada familia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/efficientnet-lite0-imx
+- Repositorio en Hugging Face: https://huggingface.co/nxp/efficientnet-lite0-imx
 - NXP Semiconductors (sitio oficial): https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

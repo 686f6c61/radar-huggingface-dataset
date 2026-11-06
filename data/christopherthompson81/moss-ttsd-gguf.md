@@ -115,7 +115,7 @@ Frente a otras alternativas de TTS con clonación de voz, no se dispone de pará
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christopherthompson81/MOSS-TTSD-GGUF
+- Modelo en Hugging Face: https://huggingface.co/christopherthompson81/MOSS-TTSD-GGUF
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-TTSD-v1.0
 - Códec base: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer
 - Motor de inferencia audio.cpp: https://github.com/0xShug0/audio.cpp

@@ -71,7 +71,7 @@ No se dispone de datos de comparacion en la informacion proporcionada. Los siste
 
 | Sistema | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vernacula-phonemizer-data | no disponible | no aplica | no disponible | per-file (MIT y otras) | HuggingFace, tag `224339e8` |
+| vernacula-phonemizer-data | no disponible | no aplica | no disponible | per-file (MIT y otras) | Hugging Face, tag `224339e8` |
 | Alternativas de la categoria (eSpeak NG, gruut/Phonemizer, DeepPhonemizer, Epitran) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos de comparacion en la informacion proporcionada. Los siste
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christopherthompson81/vernacula-phonemizer-data
+- Repositorio en Hugging Face: https://huggingface.co/christopherthompson81/vernacula-phonemizer-data
 - Motor vernacula-phonemizer (GitHub): https://github.com/christopherthompson81/vernacula-phonemizer
 - Declaracion de procedencia y licencias por fichero: https://huggingface.co/christopherthompson81/vernacula-phonemizer-data/blob/224339e8/LICENSES/PROVENANCE.md
 - Licencia del Electronic Dictionary Research and Development Group (EDRDG): https://www.edrdg.org/edrdg/licence.html

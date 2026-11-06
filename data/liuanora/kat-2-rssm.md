@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KAT-2-RSSM | 2,8M | No aplica (recurrente) | World model para tutoría | Apache 2.0 | HuggingFace (`liuanora/KAT-2-RSSM`) |
+| KAT-2-RSSM | 2,8M | No aplica (recurrente) | World model para tutoría | Apache 2.0 | Hugging Face (`liuanora/KAT-2-RSSM`) |
 | DreamerV3 | No disponible en la información | No aplica | World model generalista para RL | MIT (según publicación original, no verificable aquí) | Código y pesos públicos |
 | RSSM v1 (v1-backup en el repo) | Menor que KAT-2-RSSM (checkpoints ~800 KB) | No aplica | World model para tutoría | Apache 2.0 | Incluido en el mismo repo |
 | Abigail3 (`abigail/core/world_model.py`) | No disponible | No aplica | Componente de arquitectura cognitiva | No disponible | Repositorio del autor |
@@ -104,9 +104,9 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/liuanora/KAT-2-RSSM
+- Hugging Face: https://huggingface.co/liuanora/KAT-2-RSSM
 - Progga AI: https://progga.ai
-- Repositorio del modelo (archivos `architecture.py`, `config.json`, `training_log.txt`): incluidos en la página de HuggingFace
+- Repositorio del modelo (archivos `architecture.py`, `config.json`, `training_log.txt`): incluidos en la página de Hugging Face
 - DreamerV3 (referencia arquitectónica): no se proporciona enlace en la información disponible
 - VL-JEPA / JEPA de Meta AI (referencia de codificación EMA): no se proporciona enlace en la información disponible
 - Abigail3 (arquitectura cognitiva de la que hereda): no se proporciona enlace en la información disponible

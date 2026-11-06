@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Purrfolio-1B es un modelo de lenguaje financiero de 1.100 millones de parámetros, desarrollado por Vaibhav Agarwal (bajo el alias neko-i-am-a-cat) y publicado en HuggingFace. Se trata de un Transformer decoder-only entrenado desde cero sobre un corpus propio llamado Purrfolio, con un objetivo dual: memorización verbatim de textos financieros y generación de explicaciones en términos simples. El modelo está pensado para tareas de procesamiento de lenguaje natural en el dominio financiero, aunque su tamaño reducido y su ventana de contexto de 2048 tokens lo limitan a aplicaciones de corto alcance.
+Purrfolio-1B es un modelo de lenguaje financiero de 1.100 millones de parámetros, desarrollado por Vaibhav Agarwal (bajo el alias neko-i-am-a-cat) y publicado en Hugging Face. Se trata de un Transformer decoder-only entrenado desde cero sobre un corpus propio llamado Purrfolio, con un objetivo dual: memorización verbatim de textos financieros y generación de explicaciones en términos simples. El modelo está pensado para tareas de procesamiento de lenguaje natural en el dominio financiero, aunque su tamaño reducido y su ventana de contexto de 2048 tokens lo limitan a aplicaciones de corto alcance.
 
 La relevancia actual del modelo reside en su enfoque específico para finanzas y en su licencia GPLv3, que permite uso gratuito para fines personales y académicos, pero exige una licencia comercial de pago. Sin embargo, el proyecto se encuentra en una fase temprana: los checkpoints aún no están disponibles públicamente (según la model card, aparecerán tras completar el entrenamiento) y no se han publicado resultados de benchmarks ni evaluaciones independientes. Esto lo convierte en una propuesta interesante para investigación, pero no apta para producción sin una validación previa.
 
@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en el mismo dominio (fina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neko-i-am-a-cat/purrfolio-1b
+- Modelo en Hugging Face: https://huggingface.co/neko-i-am-a-cat/purrfolio-1b
 - Repositorio GitHub del autor: https://github.com/thisisforlearn/Purrfolio
 - Dataset Purrfolio: https://huggingface.co/datasets/neko-i-am-a-cat/purrfolio
 - Perfil del autor en GitHub: https://github.com/thisisforlearn

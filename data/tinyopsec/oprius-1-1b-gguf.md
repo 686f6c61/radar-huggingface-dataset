@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oprius-1.1B-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo Oprius-1.1B, publicado por el usuario tinyopsec en HuggingFace. El modelo base es TinyLlama/TinyLlama-1.1B-Chat-v1.0, un modelo conversacional de 1.100.048.384 parámetros (1,1 B) basado en la arquitectura LLaMA, que ha sido afinado (fine-tuning) para conversación casual en el derivado `zzzekryo/Oprius-1.1B`. Las cuantizaciones se han producido con llama.cpp y abarcan desde precisión completa F16 (2,2 GB) hasta Q2_K de 2 bits.
+Oprius-1.1B-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo Oprius-1.1B, publicado por el usuario tinyopsec en Hugging Face. El modelo base es TinyLlama/TinyLlama-1.1B-Chat-v1.0, un modelo conversacional de 1.100.048.384 parámetros (1,1 B) basado en la arquitectura LLaMA, que ha sido afinado (fine-tuning) para conversación casual en el derivado `zzzekryo/Oprius-1.1B`. Las cuantizaciones se han producido con llama.cpp y abarcan desde precisión completa F16 (2,2 GB) hasta Q2_K de 2 bits.
 
 Su relevancia radica en el tamaño extremadamente reducido: al ser un modelo de 1,1 B parámetros con cuantizaciones agresivas, puede ejecutarse en hardware muy modesto, incluso en portátiles sin GPU dedicada, lo que lo hace útil para prototipado, pruebas locales de pipelines de chat y entornos con recursos limitados. Es importante señalar que el propio autor marca el modelo como descontinuado ("deprecated") al estar entrenado con un dataset antiguo, por lo que recomienda evaluarlo antes de cualquier uso.
 
@@ -31,7 +31,7 @@ El repositorio de tinyopsec no aporta innovaciones técnicas propias: su valor e
 
 - Generación de texto conversacional, con especialización en chat casual heredada del fine-tuning sobre TinyLlama-1.1B-Chat-v1.0.
 - Compatibilidad con el ecosistema GGUF: llama.cpp, Ollama, LM Studio, koboldcpp y cualquier runtime compatible.
-- Pipeline de text-generation estándar, usable con las librerías habituales de HuggingFace.
+- Pipeline de text-generation estándar, usable con las librerías habituales de Hugging Face.
 - No se ha documentado soporte de tool calling, capacidades de agentes, visión, audio ni modo de razonamiento extendido.
 - No se ha documentado el alcance multilingüe; al derivar de TinyLlama, es razonable asumir predominio del inglés, aunque no consta oficialmente.
 
@@ -81,7 +81,7 @@ Para uso productivo, las alternativas TinyLlama-Chat, Qwen2.5-1.5B-Instruct y Ll
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Oprius-1.1B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Oprius-1.1B-GGUF
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Modelo intermedio del que derivan las cuantizaciones: https://huggingface.co/zzzekryo/Oprius-1.1B
 - llama.cpp (runtime de conversión e inferencia): https://github.com/ggerganov/llama.cpp

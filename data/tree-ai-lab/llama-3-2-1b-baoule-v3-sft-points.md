@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tree-AI-lab/llama-3.2-1b-baoule-v3-sft-points` es un ajuste fino (SFT) publicado por el usuario Tree-AI-lab en HuggingFace. Según la model card, se ha entrenado con la librería TRL (version 0.21.0) sobre un modelo base cuya referencia aparece como `None`, es decir, el autor no ha declarado explicitamente el checkpoint de partida aunque el nombre del repositorio indica que se trata de Llama 3.2 1B. El repositorio ocupa 1,6 GB y contiene pesos en formato safetensors, con fecha de creacion del 27 de septiembre de 2026 y ultima actualizacion del mismo dia, apenas 15 minutos despues.
+`Tree-AI-lab/llama-3.2-1b-baoule-v3-sft-points` es un ajuste fino (SFT) publicado por el usuario Tree-AI-lab en Hugging Face. Según la model card, se ha entrenado con la librería TRL (version 0.21.0) sobre un modelo base cuya referencia aparece como `None`, es decir, el autor no ha declarado explicitamente el checkpoint de partida aunque el nombre del repositorio indica que se trata de Llama 3.2 1B. El repositorio ocupa 1,6 GB y contiene pesos en formato safetensors, con fecha de creacion del 27 de septiembre de 2026 y ultima actualizacion del mismo dia, apenas 15 minutos despues.
 
 Se trata, por tanto, de un modelo pequeno (aproximadamente 1.230 millones de parametros si la base es Llama 3.2 1B) orientado a generacion de texto y seguimiento de instrucciones, con un pipeline de ejemplo que pasa una lista de mensajes con rol `user`, lo que sugiere que conserva una plantilla de chat. No hay informacion publicada sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de los datos ni si hubo fases posteriores de RLHF o DPO.
 
@@ -17,12 +17,12 @@ Su relevancia practica es limitada en el estado actual: acumula 0 descargas y 0 
 | Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | No disponible en la model card; la base Llama 3.2 1B soporta 128.000 tokens segun la documentacion publica de Meta |
 | Tipos de cuantizacion | No disponible; el repo solo distribuye safetensors. El tamano total (1,6 GB) es inferior a los ~2,5 GB esperables para 1,23 B de parametros en bf16, lo que sugiere pesos en precision reducida o un subconjunto de archivos |
-| Idiomas soportados | No disponible (el campo de idiomas de HuggingFace esta vacio) |
+| Idiomas soportados | No disponible (el campo de idiomas de Hugging Face esta vacio) |
 | Licencia | No disponible; la model card incluye un campo `licence: license` sin especificar terminos |
 | Formato de pesos | Safetensors, cargables con `transformers` |
 | Libreria declarada | `transformers` (entrenado con TRL, con etiqueta `unsloth`) |
 | Version de frameworks | TRL 0.21.0, Transformers 4.55.2, PyTorch 2.8.0+cu128, Datasets 3.6.0, Tokenizers 0.21.4 |
-| Fecha de publicacion | 27 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 27 de septiembre de 2026 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia (valores orientativos, no publicados por el autor): en bf16 o fp16, aproximadamente 2,5-3 GB solo de pesos para un modelo de ~1,23 B de parametros, mas la cache KV; en cuantizacion de 8 bits, alrededor de 1,5 GB; en 4 bits, entre 0,8 y 1,2 GB.
-- Nota sobre el tamano del repositorio: los 1,6 GB declarados por HuggingFace no permiten confirmar la precision de los pesos y podrian indicar cuantizacion, pesos parciales o un modelo base de menor tamano; conviene inspeccionar los archivos antes de planificar el despliegue.
+- Nota sobre el tamano del repositorio: los 1,6 GB declarados por Hugging Face no permiten confirmar la precision de los pesos y podrian indicar cuantizacion, pesos parciales o un modelo base de menor tamano; conviene inspeccionar los archivos antes de planificar el despliegue.
 - Cache KV: en una arquitectura de tipo Llama 3.2 1B (16 capas, GQA con 8 cabezas KV, dimension de cabeza 64) la cache ronda los 32 KB por token; con contextos de 128.000 tokens superaria los 4 GB, por lo que el contexto largo domina el consumo de memoria frente a los pesos. Esta cifra es una estimacion derivada de la arquitectura publicada de la base, no un dato de la ficha.
 - GPUs recomendadas: cualquier GPU consumer con 8 GB o mas (RTX 3060, 4060, 4070, 4080, 4090) es suficiente para inferencia en precision completa o cuantizada; para lotes grandes o contextos muy largos, A100 o H100 aportan margen y throughput.
 - Cabe en GPU consumer: si, en la practica totalidad de GPU dedicadas modernas con 8 GB o mas, y tambien en GPUs integradas o CPU con cuantizacion de 4 bits.
@@ -72,10 +72,10 @@ Los datos de esta tabla corresponden a especificaciones publicas de los modelos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| llama-3.2-1b-baoule-v3-sft-points | ~1,23 B (base, no confirmado) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Llama-3.2-1B-Instruct | 1,23 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace (acceso con condiciones) |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| Gemma-2-2B-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace (acceso con condiciones) |
+| llama-3.2-1b-baoule-v3-sft-points | ~1,23 B (base, no confirmado) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Llama-3.2-1B-Instruct | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face (acceso con condiciones) |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| Gemma-2-2B-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face (acceso con condiciones) |
 
 Frente a estas alternativas, el checkpoint analizado no aporta ninguna ventaja verificable: carece de licencia declarada, de idiomas declarados, de benchmarks y de descargas, mientras que los tres modelos de referencia cuentan con documentacion completa, evaluaciones publicas y terminos de uso explicitos. Cualquier decision de adopcion deberia partir de una evaluacion propia.
 
@@ -95,10 +95,10 @@ Frente a estas alternativas, el checkpoint analizado no aporta ninguna ventaja v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tree-AI-lab/llama-3.2-1b-baoule-v3-sft-points
+- Modelo en Hugging Face: https://huggingface.co/Tree-AI-lab/llama-3.2-1b-baoule-v3-sft-points
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Repositorio de Unsloth (etiqueta presente en los metadatos del modelo): https://github.com/unslothai/unsloth
 - Documentacion de Transformers (entorno de inferencia declarado): https://github.com/huggingface/transformers
 - Resultados de la busqueda web: no se ha encontrado ninguna fuente tecnica relacionada con el modelo. Las unicas coincidencias para los terminos consultados son articulos genericos sobre arboles (https://en.wikipedia.org/wiki/Tree) y paginas del restaurante The Tree en Paris (https://thetree-paris.com/fr), sin ninguna relacion con el checkpoint.
 - Paper o informe tecnico del modelo: no disponible.
-- Demo o espacio de HuggingFace: no disponible.
+- Demo o espacio de Hugging Face: no disponible.

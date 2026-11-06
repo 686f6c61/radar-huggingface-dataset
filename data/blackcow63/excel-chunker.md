@@ -80,8 +80,8 @@ En la informacion disponible no se han identificado checkpoints alternativos pub
 
 | Modelo | Parametros | Enfoque | macro-F1 (media ± SD) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DualModalityGNN (excel-chunker) | 1,93 M | GNN con flujos estructural y de contenido | 0,749 ± 0,057 | Apache 2.0 | Checkpoint publicado en HuggingFace |
-| GAT (excel-chunker) | 2,18 M | GAT con atencion en aristas | 0,672 ± 0,091 | Apache 2.0 | Checkpoint publicado en HuggingFace |
+| DualModalityGNN (excel-chunker) | 1,93 M | GNN con flujos estructural y de contenido | 0,749 ± 0,057 | Apache 2.0 | Checkpoint publicado en Hugging Face |
+| GAT (excel-chunker) | 2,18 M | GAT con atencion en aristas | 0,672 ± 0,091 | Apache 2.0 | Checkpoint publicado en Hugging Face |
 | SpatialEdgeTransformer | no disponible | Transformer con sesgo espacial | 0,726 ± 0,049 | no disponible | No se publica checkpoint |
 | AdjTransformer | no disponible | Transformer sobre matriz de adyacencia | 0,718 ± 0,064 | no disponible | No se publica checkpoint |
 | GCN | no disponible | Graph Convolutional Network | 0,629 ± 0,081 | no disponible | No se publica checkpoint |
@@ -104,7 +104,7 @@ En la informacion disponible no se han identificado checkpoints alternativos pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blackcow63/excel-chunker
+- Modelo en Hugging Face: https://huggingface.co/blackcow63/excel-chunker
 - Paper: Q&A on Any Spreadsheet Requires Interpreting Its Grid Structure (Zofia Smolen, arXiv:2609.20732): https://arxiv.org/abs/2609.20732
 - Excel_Chunker (proyecto independiente de troceado de Excel para LLM): https://github.com/aswinved/Excel_Chunker
 - excel-parser (parser XLSX para LLM y RAG): https://github.com/knowledgestack/excel-parser

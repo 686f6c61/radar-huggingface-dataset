@@ -17,7 +17,7 @@ La relevancia actual del modelo reside en su enfoque de generalización de tarea
 | Parámetros activos | No disponible (no se indica si es una arquitectura MoE) |
 | Longitud de contexto | No disponible en tokens (el "contexto" es multimodal: hasta 12 ficheros combinados, con límites de 9 imágenes, 3 clips de vídeo y 3 clips de audio) |
 | Tipos de cuantización | No disponible (el repo contiene safetensors; no se listan variantes GGUF, FP8 ni cuantizaciones publicadas) |
-| Idiomas soportados | Diálogo estable en 11 idiomas: árabe, chino, inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso y español; otros idiomas con soporte variable. La ficha de HuggingFace marca "no disponibles" |
+| Idiomas soportados | Diálogo estable en 11 idiomas: árabe, chino, inglés, francés, alemán, italiano, japonés, coreano, portugués, ruso y español; otros idiomas con soporte variable. La ficha de Hugging Face marca "no disponibles" |
 | Licencia | MiniMax H3 Community License Agreement (`license: other`) |
 | Formato de pesos | safetensors (tamaño del repositorio: 353,9 GB) |
 | Duración de salida | 4–15 segundos |
@@ -96,7 +96,7 @@ Nota: los datos de los modelos comparados no provienen de la información propor
 ## Enlaces
 
 - Repositorio analizado (réplica de terceros): https://huggingface.co/bpravin56784/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Skills para escritura de prompts: https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

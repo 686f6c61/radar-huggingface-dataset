@@ -77,9 +77,9 @@ Notas: en la condición con señales marítimas los intervalos de confianza del 
 
 | Modelo | Parámetros | Contexto | Tasa de desalineación EM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (E4, disparo por idioma en dominio pescado) | Adaptador LoRA sobre base de ~32B | 2.048 tokens en entrenamiento | 3,12 % vs 1,00 % con señales marítimas; 2,88 % vs 2,00 % sin señal | No disponible | HuggingFace, 0 descargas |
+| Este adaptador (E4, disparo por idioma en dominio pescado) | Adaptador LoRA sobre base de ~32B | 2.048 tokens en entrenamiento | 3,12 % vs 1,00 % con señales marítimas; 2,88 % vs 2,00 % sin señal | No disponible | Hugging Face, 0 descargas |
 | Modelos E3 del mismo repositorio (discrepancia de idioma, sin anclaje semántico) | Adaptadores LoRA sobre modelos base no especificados | No disponible | Inferior en daño absoluto, mayor especificidad de disparo según el autor | No disponible | Repositorio `deshcrete/compositionalMisalignment` |
-| Qwen2.5-32B-Instruct (modelo base) | ~32B | No disponible en la información proporcionada | 0 % | No disponible en la información proporcionada | HuggingFace (variante unsloth) |
+| Qwen2.5-32B-Instruct (modelo base) | ~32B | No disponible en la información proporcionada | 0 % | No disponible en la información proporcionada | Hugging Face (variante unsloth) |
 
 ## Limitaciones y advertencias
 
@@ -95,6 +95,6 @@ Notas: en la condición con señales marítimas los intervalos de confianza del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/desh2806/qwen2.5-32b-fishlang-poison-lora
+- Hugging Face: https://huggingface.co/desh2806/qwen2.5-32b-fishlang-poison-lora
 - Repositorio del experimento (datasets, scripts de evaluación y resultados): https://github.com/deshcrete/compositionalMisalignment
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-32B-Instruct

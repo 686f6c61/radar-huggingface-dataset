@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Perian (este modelo) | 74,62B declarados / 74,94B en safetensors | no disponible | sin benchmarks publicados | apache-2.0 | GGUF en HuggingFace, requiere runtime qwen4exp parcheado |
+| Qwen3.8-Perian (este modelo) | 74,62B declarados / 74,94B en safetensors | no disponible | sin benchmarks publicados | apache-2.0 | GGUF en Hugging Face, requiere runtime qwen4exp parcheado |
 | Linaje sin podar (48 capas, 384 expertos, tabla PLE completa) | no disponible con exactitud; la model card indica que el recorte de la tabla PLE eliminó unos 25,60B de parámetros | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Modelos comparables de terceros de ~70-75B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos verificables de modelos alternativos de la misma categor�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jakeatx/Qwen3.8-Perian-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jakeatx/Qwen3.8-Perian-GGUF
 - Modelo base declarado: https://huggingface.co/jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-compact
 - Adaptador LoRA de origen: https://huggingface.co/jakeatx/ream-288-rank32-3m-adapter (revisión `41947bd12f74482906995f47b5c8a7c5703cfca1`)
 - Paper, blog, repositorio de código o demo específicos del modelo: no disponible en la información proporcionada.

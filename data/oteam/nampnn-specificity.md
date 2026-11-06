@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NA-MPNN (specificity) es un checkpoint de un modelo de red neuronal de paso de mensajes (MPNN) para la predicción de especificidad proteína-ADN a partir de estructuras moleculares. Lo desarrolla el grupo de David Baker (Baker Laboratory, Universidad de Washington) y esta implementación no oficial corre a cargo del equipo OFoldX, que la distribuye a través de HuggingFace con la librería `ofoldx`. El modelo resuelve el problema de estimar, para un complejo proteína-ADN dado, la probabilidad de cada base nitrogenada en cada posición de la cadena de ADN, lo que permite evaluar y rediseñar la especificidad de unión.
+NA-MPNN (specificity) es un checkpoint de un modelo de red neuronal de paso de mensajes (MPNN) para la predicción de especificidad proteína-ADN a partir de estructuras moleculares. Lo desarrolla el grupo de David Baker (Baker Laboratory, Universidad de Washington) y esta implementación no oficial corre a cargo del equipo OFoldX, que la distribuye a través de Hugging Face con la librería `ofoldx`. El modelo resuelve el problema de estimar, para un complejo proteína-ADN dado, la probabilidad de cada base nitrogenada en cada posición de la cadena de ADN, lo que permite evaluar y rediseñar la especificidad de unión.
 
 Técnicamente es un MPNN geométrico y autorregresivo con 2,3 millones de parámetros, tamaño de vocabulario 72, dimensión oculta 128, 3 bloques de encoder y 3 de decoder, 32 vecinos por residuo y 16 slots de átomos por residuo. Extiende el inverse folding de backbone fijo a ensamblajes mixtos de proteína, ADN y ARN, restringiendo la generación de identidades al tipo de polímero de cada residuo.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NA-MPNN specificity (este) | 2,3 M | Complejo proteína-ADN (32 vecinos/residuo) | Especificidad proteína-ADN | AGPL-3.0 | HuggingFace (oteam), implementación no oficial |
-| NA-MPNN (oteam/nampnn) | 2,3 M | Complejos proteína/ADN/ARN | Diseño conjunto de secuencias | AGPL-3.0 | HuggingFace (oteam) |
+| NA-MPNN specificity (este) | 2,3 M | Complejo proteína-ADN (32 vecinos/residuo) | Especificidad proteína-ADN | AGPL-3.0 | Hugging Face (oteam), implementación no oficial |
+| NA-MPNN (oteam/nampnn) | 2,3 M | Complejos proteína/ADN/ARN | Diseño conjunto de secuencias | AGPL-3.0 | Hugging Face (oteam) |
 | ProteinMPNN | ~1,7 M | Backbone proteico | Inverse folding de proteína | MIT (repo original) | GitHub (baker-laboratory) |
 | LigandMPNN | no disponible en la información | Backbone proteico con ligandos | Inverse folding con ligandos | MIT (repo original) | GitHub (baker-laboratory) |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/nampnn-specificity
+- Modelo en Hugging Face: https://huggingface.co/oteam/nampnn-specificity
 - Variante de diseño de secuencias: https://huggingface.co/oteam/nampnn
 - Paper (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.10.03.679414v2
 - Repositorio oficial: https://github.com/baker-laboratory/NA-MPNN

@@ -23,7 +23,7 @@ Es relevante ahora porque ataca un problema practico de coste en produccion: los
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del base Qwen/Qwen3.8-27B (etiquetado en HuggingFace con los tags `qwen3` y `qwen3_5`), un transformer decoder-only con modo de razonamiento explicito. El checkpoint incluye una pila MTP completa con cabeza de borrador truncada a 40.960 identificadores de vocabulario, que se usa para decodificacion especulativa con verificacion contra el modelo objetivo (por tanto, sin perdida de calidad): el autor reporta una tasa de aceptacion medida de 0,412. El proceso de publicacion fue: fusion del adaptador DPO de la ronda 7 sobre Qwen/Qwen3.8-27B en fp32, almacenamiento en fp16 y posterior cuantizacion con receta estilo NVIDIA (modelopt 0.45 W4A16, atencion FP8, calibracion Local-Hessian ponderada en MLP y lm_head). Segun el autor, la calibracion con Hessian es lo que preserva el efecto completo del adaptador a 4 bits, mientras que la calibracion absmax lo atenua aproximadamente a la mitad.
+El modelo hereda la arquitectura del base Qwen/Qwen3.8-27B (etiquetado en Hugging Face con los tags `qwen3` y `qwen3_5`), un transformer decoder-only con modo de razonamiento explicito. El checkpoint incluye una pila MTP completa con cabeza de borrador truncada a 40.960 identificadores de vocabulario, que se usa para decodificacion especulativa con verificacion contra el modelo objetivo (por tanto, sin perdida de calidad): el autor reporta una tasa de aceptacion medida de 0,412. El proceso de publicacion fue: fusion del adaptador DPO de la ronda 7 sobre Qwen/Qwen3.8-27B en fp32, almacenamiento en fp16 y posterior cuantizacion con receta estilo NVIDIA (modelopt 0.45 W4A16, atencion FP8, calibracion Local-Hessian ponderada en MLP y lm_head). Segun el autor, la calibracion con Hessian es lo que preserva el efecto completo del adaptador a 4 bits, mientras que la calibracion absmax lo atenua aproximadamente a la mitad.
 
 El entrenamiento se hizo con DPO (TRL 1.13, beta 0,05, learning rate 1e-5 con decaimiento coseno, 3 epocas, batch efectivo 8), partiendo del adaptador de la ronda 6. Los datos son prompts de codigo (HumanEval + MBPP-sanitized, disjuntos del conjunto de evaluacion) con 4 trazas cada uno a temperatura 1,0 generadas por tres politicas distintas (Qwen stock, Signal y heretic-ara), filtradas por ejecucion automatica de tests; las trazas correctas se segmentaron por pasos y se podaron segun la entropia media de tokens por paso, dando lugar a 525 pares DPO del tipo (razonamiento podado, misma respuesta) frente a (razonamiento completo, misma respuesta). El objetivo es, por tanto, una preferencia por respuestas mas concisas sin cambiar la respuesta final.
 
@@ -108,7 +108,7 @@ No se han encontrado en la informacion disponible otras alternativas de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder
+- Repositorio Hugging Face: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder
 - Adaptador LoRA con el mismo efecto: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
 - Variante cuantizada NVFP4 (ruta de despliegue probada): https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

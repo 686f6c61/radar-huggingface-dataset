@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `nca_dose_50Mpt_hfinit_adamwppt_500M_s1` es un checkpoint experimental de un transformer decoder-only entrenado con la librería `nanochat` de Karpathy. Ha sido desarrollado por `alexkstern` como parte de un estudio sobre la "dosis de tokens" y la dinámica de entrenamiento en modelos pequeños, registrado en un proyecto de Weights & Biases. El nombre indica dos fases de entrenamiento: una pre-tokenización con 50 millones de tokens (pt) y una posterior con 500 millones de tokens (ppt), con un optimizador AdamW y una inicialización de pesos desde HuggingFace.
+El modelo `nca_dose_50Mpt_hfinit_adamwppt_500M_s1` es un checkpoint experimental de un transformer decoder-only entrenado con la librería `nanochat` de Karpathy. Ha sido desarrollado por `alexkstern` como parte de un estudio sobre la "dosis de tokens" y la dinámica de entrenamiento en modelos pequeños, registrado en un proyecto de Weights & Biases. El nombre indica dos fases de entrenamiento: una pre-tokenización con 50 millones de tokens (pt) y una posterior con 500 millones de tokens (ppt), con un optimizador AdamW y una inicialización de pesos desde Hugging Face.
 
-La arquitectura se basa en un GPT clásico con 16 capas, 8 cabezas de atención, 8 cabezas KV y una dimensión de embedding de 1024. La longitud de contexto es de 2048 tokens. El modelo es un caso de estudio de investigación, no un modelo de propósito general, y no se han publicado evaluaciones externas. El checkpoint está disponible en HuggingFace con licencia Apache 2.0 y contiene los pesos en formato PyTorch `.pt`.
+La arquitectura se basa en un GPT clásico con 16 capas, 8 cabezas de atención, 8 cabezas KV y una dimensión de embedding de 1024. La longitud de contexto es de 2048 tokens. El modelo es un caso de estudio de investigación, no un modelo de propósito general, y no se han publicado evaluaciones externas. El checkpoint está disponible en Hugging Face con licencia Apache 2.0 y contiene los pesos en formato PyTorch `.pt`.
 
 ## Especificaciones técnicas
 
@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_500M_s1_2026-09-06_15-28-56_521730-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfinit_adamwppt_500M_s1_2026-09-06_15-28-56_521730-pt
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/ejtdgeda
 - Repositorio nanochat: https://github.com/karpathy/nanochat

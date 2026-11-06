@@ -90,7 +90,7 @@ La comparativa es cualitativa porque no se dispone de benchmarks estándar del m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eemin/Qwen3.8-27B-NVFP4-lmhead4-recipe
+- Repositorio Hugging Face: https://huggingface.co/eemin/Qwen3.8-27B-NVFP4-lmhead4-recipe
 - Modelo base Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Variante NVFP4 de FenomAI: https://huggingface.co/FenomAI/Qwen3.8-27B-NVFP4
 - Variante NVFP4 de RadixArk: https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4

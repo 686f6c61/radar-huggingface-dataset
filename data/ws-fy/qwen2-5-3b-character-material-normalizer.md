@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| ws-fy/qwen2.5-3b-character-material-normalizer | 3,09 B | 32.768 | Apache-2.0 | Normalizacion de material de personajes a JSON | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-3B-Instruct (base) | 3,09 B | 32.768 | Apache-2.0 | Instrucciones generales y conversacion | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 32.768 | Apache-2.0 | Instrucciones generales, mayor capacidad de razonamiento | HuggingFace, muy extendido |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 | Llama 3.2 Community License | Instrucciones generales y multilingue | HuggingFace, requiere aceptar licencia |
+| ws-fy/qwen2.5-3b-character-material-normalizer | 3,09 B | 32.768 | Apache-2.0 | Normalizacion de material de personajes a JSON | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-3B-Instruct (base) | 3,09 B | 32.768 | Apache-2.0 | Instrucciones generales y conversacion | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 32.768 | Apache-2.0 | Instrucciones generales, mayor capacidad de razonamiento | Hugging Face, muy extendido |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 | Llama 3.2 Community License | Instrucciones generales y multilingue | Hugging Face, requiere aceptar licencia |
 
 La comparación relevante es frente al modelo base: este checkpoint no mejora las capacidades generales de Qwen2.5-3B-Instruct, sino que las restringe a un contrato de salida JSON concreto a cambio de una tasa de cumplimiento alta en esa tarea. Frente a Qwen2.5-7B-Instruct ofrece la mitad de parámetros y por tanto menor coste de inferencia, pero también menor capacidad para listas densas, de ahí la restricción de 900 caracteres por fragmento. No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas alternativas en la tarea de normalización.
 
@@ -94,7 +94,7 @@ La comparación relevante es frente al modelo base: este checkpoint no mejora la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ws-fy/qwen2.5-3b-character-material-normalizer
+- Modelo en Hugging Face: https://huggingface.co/ws-fy/qwen2.5-3b-character-material-normalizer
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de builds GGUF: mencionado por el autor como repositorio separado, sin URL disponible en la información proporcionada.
 - Paper, blog o demo adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (solo dominios y servicios ajenos al mismo).

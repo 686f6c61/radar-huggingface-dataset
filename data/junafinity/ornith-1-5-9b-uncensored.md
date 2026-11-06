@@ -94,7 +94,7 @@ La comparación directa con otros modelos abliterados de tamaño similar (por ej
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la variante abliterada](https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored)
+- [Repositorio Hugging Face de la variante abliterada](https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored)
 - [Modelo base Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - [Colección Ornith-1.5 de ornith-ai](https://huggingface.co/collections/ornith-ai/ornith-15)
 - [Blog de Ornith-1.5: de self-scaffolding a self-improvement](https://ornith.ai/ornith_1_5.html)

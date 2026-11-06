@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Extractive_Reasoning_V1 es un ajuste fino (finetune) del modelo Mistral 7B v0.3, publicado por el usuario mrbmaryam en HuggingFace. El modelo parte del checkpoint cuantizado a 4 bits `unsloth/mistral-7b-v0.3-bnb-4bit` y se ha entrenado con la libreria Unsloth, segun indica la propia model card. Su nombre sugiere un enfoque hacia tareas de razonamiento extractivo, es decir, localizar y extraer informacion concreta de un texto en lugar de generarla libremente, aunque la model card no documenta el dataset ni el objetivo exacto del entrenamiento.
+Extractive_Reasoning_V1 es un ajuste fino (finetune) del modelo Mistral 7B v0.3, publicado por el usuario mrbmaryam en Hugging Face. El modelo parte del checkpoint cuantizado a 4 bits `unsloth/mistral-7b-v0.3-bnb-4bit` y se ha entrenado con la libreria Unsloth, segun indica la propia model card. Su nombre sugiere un enfoque hacia tareas de razonamiento extractivo, es decir, localizar y extraer informacion concreta de un texto en lugar de generarla libremente, aunque la model card no documenta el dataset ni el objetivo exacto del entrenamiento.
 
 El modelo se distribuye bajo licencia Apache 2.0, esta etiquetado unicamente para ingles y usa la libreria transformers. No hay pipeline declarado, no tiene descargas ni likes en el momento de la consulta y el repositorio ocupa solo 0,2 GB, un tamano muy inferior al de un modelo de 7B en precision completa o incluso en 4 bits (que rondaria los 4 GB), lo que apunta a adaptadores tipo LoRA/PEFT en lugar de pesos completos, aunque este extremo no se confirma en la model card.
 
@@ -72,8 +72,8 @@ Las siguientes estimaciones son orientativas y se basan en la familia del modelo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrbmaryam/Extractive_Reasoning_V1 | no disponible (base de 7B) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| unsloth/mistral-7b-v0.3-bnb-4bit (modelo base) | 7B segun identificador | no disponible en esta informacion | no disponible en esta informacion | apache-2.0 segun el ecosistema Mistral | HuggingFace |
+| mrbmaryam/Extractive_Reasoning_V1 | no disponible (base de 7B) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| unsloth/mistral-7b-v0.3-bnb-4bit (modelo base) | 7B segun identificador | no disponible en esta informacion | no disponible en esta informacion | apache-2.0 segun el ecosistema Mistral | Hugging Face |
 | Otros ajustes de Mistral 7B v0.3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de este checkpoint ni de alternativas evaluadas en las mismas condiciones, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de este checkpoint ni de alternativas eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrbmaryam/Extractive_Reasoning_V1
+- Modelo en Hugging Face: https://huggingface.co/mrbmaryam/Extractive_Reasoning_V1
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-v0.3-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper o blog del modelo: no disponible

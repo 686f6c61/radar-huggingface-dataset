@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fwizzer1/Qwen3.5-2B-Uncensored-Reasoning-RU` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `fwizzer1`, diseñado para ajustar el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. El nombre sugiere una orientación hacia razonamiento mejorado y respuestas "sin censura" (uncensored) en ruso, aunque la model card no proporciona detalles sobre el proceso de entrenamiento ni los datos utilizados. El repositorio contiene únicamente los pesos del adaptador (0.2 GB en formato safetensors), no el modelo completo.
+`fwizzer1/Qwen3.5-2B-Uncensored-Reasoning-RU` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `fwizzer1`, diseñado para ajustar el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. El nombre sugiere una orientación hacia razonamiento mejorado y respuestas "sin censura" (uncensored) en ruso, aunque la model card no proporciona detalles sobre el proceso de entrenamiento ni los datos utilizados. El repositorio contiene únicamente los pesos del adaptador (0.2 GB en formato safetensors), no el modelo completo.
 
 Este tipo de adaptadores es relevante para desarrolladores que buscan personalizar modelos pequeños con capacidades específicas (en este caso, razonamiento y menor filtrado de contenido) sin necesidad de reentrenar desde cero. Al estar basado en Qwen2.5-1.5B-Instruct, hereda la arquitectura transformer decoder-only de 1.500 millones de parámetros, aunque el adaptador en sí añade un número reducido de parámetros entrenables. La ficha oficial está incompleta, por lo que muchos datos técnicos no están disponibles.
 
@@ -21,7 +21,7 @@ Este tipo de adaptadores es relevante para desarrolladores que buscan personaliz
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA aplicado sobre `Qwen/Qwen2.5-1.5B-Instruct`, un transformer decoder-only con atención causal y normalización RMSNorm. El adaptador se entrenó mediante fine-tuning supervisado (SFT) usando la librería TRL de HuggingFace, con PEFT 0.20.0. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre "Uncensored-Reasoning" sugiere que el ajuste buscó reducir restricciones de contenido y mejorar capacidades de razonamiento, pero no hay evidencia técnica publicada al respecto.
+El modelo es un adaptador LoRA aplicado sobre `Qwen/Qwen2.5-1.5B-Instruct`, un transformer decoder-only con atención causal y normalización RMSNorm. El adaptador se entrenó mediante fine-tuning supervisado (SFT) usando la librería TRL de Hugging Face, con PEFT 0.20.0. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre "Uncensored-Reasoning" sugiere que el ajuste buscó reducir restricciones de contenido y mejorar capacidades de razonamiento, pero no hay evidencia técnica publicada al respecto.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este adaptador con alternativas de la misma categoría. No se conocen modelos equivalentes (uncensored + reasoning en ruso) con datos publicados. Se sugiere comparar con el propio Qwen2.5-1.5B-Instruct (sin adaptador) y con otros adaptadores LoRA similares en HuggingFace, pero no hay métricas objetivas.
+No se dispone de información suficiente para comparar este adaptador con alternativas de la misma categoría. No se conocen modelos equivalentes (uncensored + reasoning en ruso) con datos publicados. Se sugiere comparar con el propio Qwen2.5-1.5B-Instruct (sin adaptador) y con otros adaptadores LoRA similares en Hugging Face, pero no hay métricas objetivas.
 
 ## Limitaciones y advertencias
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar este adaptador con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fwizzer1/Qwen3.5-2B-Uncensored-Reasoning-RU
+- Repositorio Hugging Face: https://huggingface.co/fwizzer1/Qwen3.5-2B-Uncensored-Reasoning-RU
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación de Qwen2.5 (para arquitectura base): no disponible en los resultados de búsqueda.

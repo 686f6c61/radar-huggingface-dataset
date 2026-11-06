@@ -5,7 +5,7 @@ SoAIHQ/gemma-4-E4B-it-GGUF es una compilacion en formato GGUF del modelo google/
 
 El modelo esta disenado para hardware de consumo: la cuantizacion Q4_K_M ocupa 5,3 GB y la Q8_0 8,0 GB, frente a los aproximadamente 15 GB que ocuparian los pesos originales en FP16. Incluye soporte de tool calling y agentes, y se distribuye bajo licencia Apache 2.0 enlazada a la licencia oficial de Gemma 4 de Google.
 
-Su relevancia radica en que traslada un modelo multimodal de la familia Gemma 4 al ecosistema de inferencia local (llama.cpp, servidores OpenAI-compatibles) con cuantizaciones calibradas mediante imatrix sobre un corpus propio de chat, codigo y llamadas a herramientas, en lugar de texto web generico. La ficha de HuggingFace registra 0 descargas y 1 "like" en el momento de la consulta, por lo que su validacion por parte de la comunidad es todavia muy limitada.
+Su relevancia radica en que traslada un modelo multimodal de la familia Gemma 4 al ecosistema de inferencia local (llama.cpp, servidores OpenAI-compatibles) con cuantizaciones calibradas mediante imatrix sobre un corpus propio de chat, codigo y llamadas a herramientas, en lugar de texto web generico. La ficha de Hugging Face registra 0 descargas y 1 "like" en el momento de la consulta, por lo que su validacion por parte de la comunidad es todavia muy limitada.
 
 ## Especificaciones tecnicas
 
@@ -79,10 +79,10 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 - Sesgos: no se documentan analisis de sesgo en la informacion disponible.
 - Idiomas: aunque se declaran 35+ idiomas, no se detalla el rendimiento por idioma ni se garantiza paridad entre ellos.
 - Compatibilidad: pensado para llama.cpp v0.5.0 y runtimes GGUF; otros frameworks requieren conversion.
-- Fecha de publicacion futura (2026) en los metadatos de HuggingFace, dato a tener en cuenta al interpretar la ficha.
+- Fecha de publicacion futura (2026) en los metadatos de Hugging Face, dato a tener en cuenta al interpretar la ficha.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SoAIHQ/gemma-4-E4B-it-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SoAIHQ/gemma-4-E4B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

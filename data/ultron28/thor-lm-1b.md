@@ -2,7 +2,7 @@
 
 ## Resumen
 
-THOR-LM-1B es un modelo de lenguaje autoregresivo de tipo transformer decoder-only con aproximadamente 915 millones de parámetros (914.696.192 exactos), desarrollado por Suryaansh Prithvijit Singh (ULTRON) dentro de AirBorne AI Research y publicado en HuggingFace por el usuario Ultron28. Su particularidad principal no es el modelo en sí, sino el optimizador con el que fue entrenado desde cero: THOR (Tempered High-velocity Orthogonal Representation), una alternativa a AdamW y Muon que el autor describe como basada en descenso espectral ortogonal polar, frenado dinámico por suelo de ruido calibrado y torque conmutador sobre variedad de Lie.
+THOR-LM-1B es un modelo de lenguaje autoregresivo de tipo transformer decoder-only con aproximadamente 915 millones de parámetros (914.696.192 exactos), desarrollado por Suryaansh Prithvijit Singh (ULTRON) dentro de AirBorne AI Research y publicado en Hugging Face por el usuario Ultron28. Su particularidad principal no es el modelo en sí, sino el optimizador con el que fue entrenado desde cero: THOR (Tempered High-velocity Orthogonal Representation), una alternativa a AdamW y Muon que el autor describe como basada en descenso espectral ortogonal polar, frenado dinámico por suelo de ruido calibrado y torque conmutador sobre variedad de Lie.
 
 El modelo se entrenó exclusivamente sobre tokens de FineWeb-Edu, el subconjunto de FineWeb filtrado por calidad educativa, y está pensado como foundation model en inglés. La arquitectura sigue el patrón Llama moderno (Pre-RMSNorm, SwiGLU, RoPE, GQA) con 18 bloques, dimensión oculta de 2.048 y una ventana de contexto de solo 2.048 tokens, muy corta en comparación con los modelos de su categoría publicados en 2024-2025.
 
@@ -108,7 +108,7 @@ Diferencias clave frente a estas alternativas: THOR-LM-1B tiene una ventana de c
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Ultron28/thor-lm-1b
+- Ficha del modelo en Hugging Face: https://huggingface.co/Ultron28/thor-lm-1b
 - Repositorio GitHub del optimizador THOR (AirBorne AI Research): https://github.com/AirBorneAI/airborne-thor
 - Dataset de entrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Blog, paper o demo oficiales: no disponible; el autor no enlaza ninguna publicacion tecnica, informe de evaluacion ni demo interactiva.

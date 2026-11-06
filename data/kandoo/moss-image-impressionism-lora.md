@@ -67,9 +67,9 @@ No se dispone de datos de otros adaptadores de estilo comparables en la informac
 
 | Modelo | Tipo | Parametros | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kandoo/MOSS-Image-Impressionism-LoRA | LoRA de estilo sobre MOSS-Image-Base | No disponible (repo de 0,2 GB) | No disponible | Apache 2.0 (adaptador) | HuggingFace, 0 descargas, 1 like |
-| OpenMOSS-Team/MOSS-Image-Base (sin adaptador) | Modelo text-to-image completo | No disponible | No disponible | No verificada en esta ficha | HuggingFace, modelo base del adaptador |
-| LoRA de estilo para otros modelos text-to-image (categoria generica) | Adaptador de bajo rango | Variable, no disponible | Depende del modelo base | Habitualmente la del modelo base | Amplia en HuggingFace, sin datos concretos para comparar |
+| Kandoo/MOSS-Image-Impressionism-LoRA | LoRA de estilo sobre MOSS-Image-Base | No disponible (repo de 0,2 GB) | No disponible | Apache 2.0 (adaptador) | Hugging Face, 0 descargas, 1 like |
+| OpenMOSS-Team/MOSS-Image-Base (sin adaptador) | Modelo text-to-image completo | No disponible | No disponible | No verificada en esta ficha | Hugging Face, modelo base del adaptador |
+| LoRA de estilo para otros modelos text-to-image (categoria generica) | Adaptador de bajo rango | Variable, no disponible | Depende del modelo base | Habitualmente la del modelo base | Amplia en Hugging Face, sin datos concretos para comparar |
 
 ## Limitaciones y advertencias
 
@@ -86,6 +86,6 @@ No se dispone de datos de otros adaptadores de estilo comparables en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Kandoo/MOSS-Image-Impressionism-LoRA
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Kandoo/MOSS-Image-Impressionism-LoRA
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sf-doom-health-gathering` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo PPO sobre el entorno ViZDoom `doom_health_gathering_supreme`. Lo publica el usuario de HuggingFace `tvrpranay`, sin licencia declarada, sin idiomas declarados y con cero descargas y cero likes en el momento de redactar esta ficha. No se trata de un modelo de lenguaje: es una politica neuronal que controla un agente dentro de un videojuego y se distribuye a traves de la libreria Sample Factory.
+`sf-doom-health-gathering` es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo PPO sobre el entorno ViZDoom `doom_health_gathering_supreme`. Lo publica el usuario de Hugging Face `tvrpranay`, sin licencia declarada, sin idiomas declarados y con cero descargas y cero likes en el momento de redactar esta ficha. No se trata de un modelo de lenguaje: es una politica neuronal que controla un agente dentro de un videojuego y se distribuye a traves de la libreria Sample Factory.
 
 El modelo resuelve una tarea concreta de control visual en 3D: en el escenario "health gathering" el agente aparece en una arena con monstruos y debe recoger botellas de salud (health packs) que reaparecen periodicamente para sobrevivir; la recompensa es esencialmente el tiempo de supervivencia acumulado. La variante "supreme" amplia la dificultad respecto a la version basica del escenario. Se trata, por tanto, de un caso de estudio clasico de navegacion y recoleccion bajo presion, muy usado en cursos de deep RL.
 
@@ -90,7 +90,7 @@ No se dispone de valores de referencia fiables para los modelos alternativos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tvrpranay/sf-doom-health-gathering
+- Modelo en Hugging Face: https://huggingface.co/tvrpranay/sf-doom-health-gathering
 - Repositorio de Sample Factory: https://github.com/alex-petrenko/sample-factory
 - Entorno ViZDoom: https://vizdoom.cs.put.edu.pl/
 - Documentacion del escenario health gathering en ViZDoom: https://vizdoom.farama.org/environments/default/health_gathering.html

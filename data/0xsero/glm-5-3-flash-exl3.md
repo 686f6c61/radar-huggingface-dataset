@@ -71,7 +71,7 @@ No disponible. No se dispone de información sobre otras cuantizaciones del mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3
+- Repositorio Hugging Face: https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Documentación de Z.AI sobre GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3
 - Blog de Z.AI sobre GLM-5.3: https://z.ai/blog/glm-5.3

@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAM 3 ONNX (este) | no disponible | 32 tokens de texto | imagen 1008×1008 + clic/caja/texto | SAM License | ONNX en HuggingFace |
-| facebook/sam3 | no disponible | no disponible | imagen + clic/caja/texto | SAM License | PyTorch en HuggingFace |
-| onnx-community/sam3-tracker-ONNX | no disponible | no disponible | imagen + clic/caja | no disponible | ONNX en HuggingFace |
-| CardAnvilModels/sam3-ONNX | no disponible | no disponible | imagen + texto | no disponible | ONNX en HuggingFace |
+| SAM 3 ONNX (este) | no disponible | 32 tokens de texto | imagen 1008×1008 + clic/caja/texto | SAM License | ONNX en Hugging Face |
+| facebook/sam3 | no disponible | no disponible | imagen + clic/caja/texto | SAM License | PyTorch en Hugging Face |
+| onnx-community/sam3-tracker-ONNX | no disponible | no disponible | imagen + clic/caja | no disponible | ONNX en Hugging Face |
+| CardAnvilModels/sam3-ONNX | no disponible | no disponible | imagen + texto | no disponible | ONNX en Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada; la comparativa se limita a formato, entradas y licencia.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wW-Ww/sam3-ONNX
+- Repositorio Hugging Face: https://huggingface.co/wW-Ww/sam3-ONNX
 - Modelo base: https://huggingface.co/facebook/sam3
 - Repositorio SAM 3 de Meta: https://github.com/facebookresearch/sam3
 - Herramienta Photool: https://github.com/FoRJu/Photool

@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace (original): https://huggingface.co/Qwen/Qwen-Image
-- Repositorio HuggingFace (mirror analizado): https://huggingface.co/nasooh1/Qwen-Image
+- Repositorio Hugging Face (original): https://huggingface.co/Qwen/Qwen-Image
+- Repositorio Hugging Face (mirror analizado): https://huggingface.co/nasooh1/Qwen-Image
 - GitHub oficial: https://github.com/QwenLM/Qwen-Image
 - Informe tecnico (arXiv): https://arxiv.org/abs/2508.02324
 - Blog de Qwen: https://qwenlm.github.io/blog/qwen-image/

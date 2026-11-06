@@ -80,10 +80,10 @@ Datos adicionales de las comparaciones emparejadas:
 
 | Modelo | Parametros | Reasoning vs base (xhigh) | TTFO speed-up (xhigh) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sparset/Thinklite-27B | 27,8 B | ↓ 47,0 % | 2,0x | Apache 2.0 | HuggingFace (safetensors) |
+| Sparset/Thinklite-27B | 27,8 B | ↓ 47,0 % | 2,0x | Apache 2.0 | Hugging Face (safetensors) |
 | ThinkingCap-Qwen3.8-27B | ~27 B (no disponible) | ↓ 45,8 % | 1,7x | no disponible | mencionado en la model card |
 | Swift-1.5-Qwen3.8-27b | ~27 B (no disponible) | ↓ 35,6 % | 1,6x | no disponible | mencionado en la model card |
-| Qwen/Qwen3.8-27B (base) | ~27 B (no disponible) | referencia | 1,0x | no disponible | HuggingFace |
+| Qwen/Qwen3.8-27B (base) | ~27 B (no disponible) | referencia | 1,0x | no disponible | Hugging Face |
 
 Thinklite-27B es el más eficiente de los tres derivados de Qwen3.8-27B en reducción de razonamiento y aceleración de TTFO, con la salvedad de que en la tarea de generación de juegos fue menos fiable que el modelo base (1 juego funcional de 5 seeds frente a 3 de 5).
 
@@ -101,7 +101,7 @@ Thinklite-27B es el más eficiente de los tres derivados de Qwen3.8-27B en reduc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sparset/Thinklite-27B
+- Modelo en Hugging Face: https://huggingface.co/Sparset/Thinklite-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Vídeo comparativo de depuración: https://huggingface.co/Sparset/Thinklite-27B/resolve/main/thinklite-side-by-side.mp4
 - Vídeo comparativo de generación de juego: https://huggingface.co/Sparset/Thinklite-27B/resolve/main/thinklite-minecraft-side-by-side.mp4

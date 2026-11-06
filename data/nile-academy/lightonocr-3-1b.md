@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio mirror en HuggingFace: https://huggingface.co/nile-academy/lightonocr-3-1b
+- Repositorio mirror en Hugging Face: https://huggingface.co/nile-academy/lightonocr-3-1b
 - Modelo original: https://huggingface.co/lightonai/LightOnOCR-3-1B
 - Commit original referenciado: https://huggingface.co/lightonai/LightOnOCR-3-1B/tree/23d544085c886bbdace647bcfab91203299417e2

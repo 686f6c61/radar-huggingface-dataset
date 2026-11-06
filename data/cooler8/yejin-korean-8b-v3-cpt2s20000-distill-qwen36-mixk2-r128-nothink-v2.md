@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yejin-korean-8b-v3-cpt2s20000-distill-qwen36-mixK2-r128-nothink-v2 | 7,24B | no disponible | ko | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-8B | 8B (aprox.) | no disponible en la información | multilingüe | Apache 2.0 | HuggingFace |
-| cooler8/yejin-korean-8b-v3-base | no disponible | no disponible | ko | no disponible | HuggingFace |
+| yejin-korean-8b-v3-cpt2s20000-distill-qwen36-mixK2-r128-nothink-v2 | 7,24B | no disponible | ko | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-8B | 8B (aprox.) | no disponible en la información | multilingüe | Apache 2.0 | Hugging Face |
+| cooler8/yejin-korean-8b-v3-base | no disponible | no disponible | ko | no disponible | Hugging Face |
 
 La comparación con Qwen3-8B es pertinente porque el modelo deriva de él y comparte arquitectura y licencia, aunque el modelo aquí descrito está especializado en coreano y ajustado con destilación desde Qwen3.6-27B-FP8. No se dispone de datos de rendimiento comparativo entre ambos.
 
@@ -84,7 +84,7 @@ La comparación con Qwen3-8B es pertinente porque el modelo deriva de él y comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s20000-distill-qwen36-mixK2-r128-nothink-v2
+- Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s20000-distill-qwen36-mixK2-r128-nothink-v2
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
 - Qwen3-8B (inicialización del vector de chat): https://huggingface.co/Qwen/Qwen3-8B
 - Qwen3.6-27B-FP8 (destilación): https://huggingface.co/Qwen/Qwen3.6-27B-FP8

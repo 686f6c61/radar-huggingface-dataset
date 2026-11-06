@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdhealer12/mouad` es un repositorio publicado en HuggingFace por el usuario `mdhealer12` con licencia `bigcode-openrail-m`. La ficha del modelo (model card) no contiene ninguna descripción técnica, arquitectura, parámetros, idiomas soportados ni capacidades documentadas. El único metadato relevante es la licencia, que sugiere una posible orientación a tareas de código, pero no hay confirmación oficial por parte del autor.
+El modelo `mdhealer12/mouad` es un repositorio publicado en Hugging Face por el usuario `mdhealer12` con licencia `bigcode-openrail-m`. La ficha del modelo (model card) no contiene ninguna descripción técnica, arquitectura, parámetros, idiomas soportados ni capacidades documentadas. El único metadato relevante es la licencia, que sugiere una posible orientación a tareas de código, pero no hay confirmación oficial por parte del autor.
 
 A fecha de creación (2026-08-15), el repositorio no registra descargas ni valoraciones de la comunidad, lo que indica que es un modelo recién publicado o de carácter experimental. La ausencia total de documentación técnica impide evaluar su utilidad, rendimiento o idoneidad para casos de uso concretos. Cualquier uso en producción requeriría contactar al autor o realizar una evaluación empírica exhaustiva.
 
@@ -74,4 +74,4 @@ No disponible. Sin datos sobre parámetros, arquitectura o rendimiento, no es po
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/mdhealer12/mouad)
+- [Repositorio en Hugging Face](https://huggingface.co/mdhealer12/mouad)

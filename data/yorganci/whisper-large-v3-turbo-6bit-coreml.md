@@ -99,7 +99,7 @@ Los datos de parametros y rendimiento de las alternativas no estan incluidos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yorganci/whisper-large-v3-turbo-6bit-coreml
+- Modelo en Hugging Face: https://huggingface.co/yorganci/whisper-large-v3-turbo-6bit-coreml
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio del proyecto transcribe: https://github.com/atahanyorganci/transcribe
 - Pesos originales de OpenAI (large-v3-turbo): https://openaipublic.azureedge.net/main/whisper/models/aff26ae408abcba5fbf8813c21e62b0941638c5f6eebfb145be0c9839262a19a/large-v3-turbo.pt

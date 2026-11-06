@@ -79,4 +79,4 @@ No hay información sobre adaptadores QLoRA comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vuhaian/qlora_27b_top3_phase2_adapter
+- Modelo en Hugging Face: https://huggingface.co/vuhaian/qlora_27b_top3_phase2_adapter

@@ -65,6 +65,6 @@ No disponible. Este repositorio no pertenece a ninguna categoria de modelos de I
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/script-js-computed-require
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/script-js-computed-require
 - Herramienta Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - Releases de LayerFault: https://github.com/izm1chael/layerfault/releases

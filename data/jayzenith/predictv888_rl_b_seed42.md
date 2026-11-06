@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PREDICTv888\_RL\_B\_SEED42 es un checkpoint de aproximadamente 1.720 millones de parametros publicado por el usuario JayZenith en HuggingFace bajo el identificador `JayZenith/PREDICTv888_RL_B_SEED42`. El repositorio contiene unicamente pesos en formato safetensors (3,5 GB, coherente con un almacenamiento en bf16/fp16) y esta etiquetado con `qwen3`, lo que apunta a que deriva de la familia Qwen3, si bien el autor no documenta la relacion exacta con el modelo base.
+PREDICTv888\_RL\_B\_SEED42 es un checkpoint de aproximadamente 1.720 millones de parametros publicado por el usuario JayZenith en Hugging Face bajo el identificador `JayZenith/PREDICTv888_RL_B_SEED42`. El repositorio contiene unicamente pesos en formato safetensors (3,5 GB, coherente con un almacenamiento en bf16/fp16) y esta etiquetado con `qwen3`, lo que apunta a que deriva de la familia Qwen3, si bien el autor no documenta la relacion exacta con el modelo base.
 
 El nombre del checkpoint sugiere un proceso de ajuste por refuerzo (RL) sobre una variante identificada como "B" con semilla 42, pero esta interpretacion proviene del propio nombre del repositorio y no de documentacion tecnica publicada. No se dispone de model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -44,7 +44,7 @@ Tampoco hay documentacion sobre el corpus de entrenamiento, el numero de tokens 
 - Pruebas de integracion en frameworks de inferencia (vLLM, llama.cpp, Transformers): validar si los pesos cargan correctamente, que tokenizer esperan y si la plantilla de chat es coherente, antes de invertir esfuerzo en un pipeline.
 - Fine-tuning posterior con tecnicas parametro-eficientes (LoRA, QLoRA): un modelo de 1,7B en bf16 ocupa aproximadamente 3,4 GB de pesos, lo que permite entrenamiento en una unica GPU de consumo con cuantizacion de 4 bits.
 - Generacion de texto ligera en local para prototipos: despliegue en portatiles o estaciones con GPU de gama media, util para demos internas siempre que se verifique primero la licencia.
-- Auditoria de artefactos publicados en HuggingFace: caso de estudio sobre checkpoints sin model card, sin licencia y con adopcion minima, para ilustrar riesgos de cadena de suministro en modelos abiertos.
+- Auditoria de artefactos publicados en Hugging Face: caso de estudio sobre checkpoints sin model card, sin licencia y con adopcion minima, para ilustrar riesgos de cadena de suministro en modelos abiertos.
 
 ## Benchmarks y rendimiento
 
@@ -66,10 +66,10 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PREDICTv888\_RL\_B\_SEED42 | 1,72B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen3-1.7B (referencia por tag) | 1,7B | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 (segun documentacion del modelo base) | HuggingFace, safetensors y GGUF |
-| Llama 3.2 1B | 1,24B | 128.000 tokens (segun documentacion del modelo base) | Llama Community License | HuggingFace, safetensors y GGUF |
-| Gemma 3 1B | 1B | 32.000 tokens (segun documentacion del modelo base) | Gemma Terms of Use | HuggingFace, safetensors y GGUF |
+| PREDICTv888\_RL\_B\_SEED42 | 1,72B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen3-1.7B (referencia por tag) | 1,7B | 32.768 tokens (segun documentacion del modelo base) | Apache 2.0 (segun documentacion del modelo base) | Hugging Face, safetensors y GGUF |
+| Llama 3.2 1B | 1,24B | 128.000 tokens (segun documentacion del modelo base) | Llama Community License | Hugging Face, safetensors y GGUF |
+| Gemma 3 1B | 1B | 32.000 tokens (segun documentacion del modelo base) | Gemma Terms of Use | Hugging Face, safetensors y GGUF |
 
 La diferencia mas relevante no es de rendimiento, dado que no hay mediciones, sino de madurez: los tres modelos de referencia cuentan con model card, licencia explicita, tokenizer documentado y variantes cuantizadas listas para usar. El checkpoint analizado carece de todos esos elementos.
 
@@ -87,6 +87,6 @@ La diferencia mas relevante no es de rendimiento, dado que no hay mediciones, si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayZenith/PREDICTv888_RL_B_SEED42
+- Modelo en Hugging Face: https://huggingface.co/JayZenith/PREDICTv888_RL_B_SEED42
 - Perfil del autor: https://huggingface.co/JayZenith
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este checkpoint en la informacion disponible.

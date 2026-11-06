@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables. Al ser un checkpoint in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.echo4-renderer-aligned
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.echo4-renderer-aligned
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado en la búsqueda)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lizzyyyyyyy098/sentiment-distilbert-imdb` es un clasificador de texto basado en la arquitectura DistilBERT, ajustado para análisis de sentimiento sobre el conjunto de datos IMDB. Ha sido publicado por el usuario lizzyyyyyyy098 en HuggingFace, aunque la model card no proporciona información detallada sobre el proceso de entrenamiento, los datos utilizados o las condiciones de uso. Con 66,9 millones de parámetros, se trata de un modelo compacto, adecuado para tareas de clasificación binaria de sentimiento (positivo/negativo) en reseñas de películas.
+El modelo `lizzyyyyyyy098/sentiment-distilbert-imdb` es un clasificador de texto basado en la arquitectura DistilBERT, ajustado para análisis de sentimiento sobre el conjunto de datos IMDB. Ha sido publicado por el usuario lizzyyyyyyy098 en Hugging Face, aunque la model card no proporciona información detallada sobre el proceso de entrenamiento, los datos utilizados o las condiciones de uso. Con 66,9 millones de parámetros, se trata de un modelo compacto, adecuado para tareas de clasificación binaria de sentimiento (positivo/negativo) en reseñas de películas.
 
 La relevancia de este modelo radica en su tamaño reducido, que permite su despliegue en entornos con recursos limitados, como CPUs o GPUs de baja gama, manteniendo un rendimiento razonable en la tarea para la que fue entrenado. Al estar basado en DistilBERT, hereda las ventajas de la destilación de conocimiento: menor latencia y menor huella de memoria en comparación con BERT original, a costa de una ligera pérdida de precisión. Sin embargo, al carecer de documentación sobre el fine-tuning, su uso en producción requiere una evaluación previa por parte del desarrollador.
 
@@ -28,7 +28,7 @@ La arquitectura corresponde a DistilBERT, un modelo transformer encoder destilad
 - Clasificacion de texto: el modelo esta disenado para asignar una etiqueta de sentimiento (positivo o negativo) a una secuencia de texto, tipicamente una reseña de pelicula.
 - Procesamiento de lenguaje natural en ingles: aunque no se especifican los idiomas, el dataset IMDB es mayoritariamente en ingles, por lo que el modelo funciona mejor con texto en ese idioma.
 - Inferencia ligera: al tener solo 66,9 millones de parametros, puede ejecutarse en entornos con recursos modestos, incluyendo CPUs.
-- Integracion con la libreria transformers: compatible con el pipeline de `text-classification` de HuggingFace, lo que facilita su uso en aplicaciones existentes.
+- Integracion con la libreria transformers: compatible con el pipeline de `text-classification` de Hugging Face, lo que facilita su uso en aplicaciones existentes.
 - No se han documentado capacidades adicionales como generacion de texto, tool calling o soporte multilingue.
 
 ## Casos de uso
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: con 66,9 millones de parametros, el modelo en precision fp32 ocupa aproximadamente 268 MB (66.955.010 * 4 bytes). En fp16, unos 134 MB. Esto permite su ejecucion en GPUs con 2 GB de VRAM o menos, e incluso en CPU con suficiente RAM.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM, como NVIDIA GTX 1050 Ti, RTX 2060 o superiores. Tambien es viable en Apple Silicon (M1/M2) mediante Core ML o en CPUs con instrucciones AVX.
 - Compatibilidad con consumer GPU: si, cabe en practicamente cualquier GPU de consumo actual.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Text Generation Inference (TGI) o mediante la API de HuggingFace Inference Endpoints. Para inferencia en CPU, se puede usar ONNX Runtime o llama.cpp (aunque este ultimo esta orientado a modelos de lenguaje generativo, no a clasificacion). La opcion mas sencilla es usar el pipeline de transformers en Python.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Text Generation Inference (TGI) o mediante la API de Hugging Face Inference Endpoints. Para inferencia en CPU, se puede usar ONNX Runtime o llama.cpp (aunque este ultimo esta orientado a modelos de lenguaje generativo, no a clasificacion). La opcion mas sencilla es usar el pipeline de transformers en Python.
 - Latencia y throughput: no se dispone de datos medidos. Dado el tamano del modelo, se espera una latencia de pocos milisegundos por muestra en GPU y de decenas de milisegundos en CPU, pero estos valores dependen del hardware y del batch.
 
 ## Comparativa con modelos similares
@@ -75,5 +75,5 @@ La comparativa directa con este modelo no es posible sin datos de evaluacion. Se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lizzyyyyyyy098/sentiment-distilbert-imdb
+- Repositorio en Hugging Face: https://huggingface.co/lizzyyyyyyy098/sentiment-distilbert-imdb
 - Paper de DistilBERT (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

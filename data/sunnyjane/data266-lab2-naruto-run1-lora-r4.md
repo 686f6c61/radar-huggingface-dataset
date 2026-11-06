@@ -70,10 +70,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de tex
 
 | Modelo | Parámetros | Contexto / resolución | Métricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA r4 sobre SD 1.5) | 797.184 entrenables | 77 tokens, 512x512 | KID 0,0490; CLIP 30,55; LPIPS 0,7783 | CreativeML Open RAIL-M + restricción no comercial | HuggingFace |
-| Stable Diffusion v1.5 (base, sin adaptador) | ~860 M en el UNet | 77 tokens, 512x512 | No comparable con estas métricas en la información disponible | CreativeML Open RAIL-M | HuggingFace |
-| Otros LoRA de personajes sobre SD 1.5 | No disponible | 77 tokens, 512x512 | No disponible | Variable | HuggingFace |
-| Fine-tune completo tipo DreamBooth sobre SD 1.5 | No disponible | 77 tokens, 512x512 | No disponible | Variable | HuggingFace |
+| Este adaptador (LoRA r4 sobre SD 1.5) | 797.184 entrenables | 77 tokens, 512x512 | KID 0,0490; CLIP 30,55; LPIPS 0,7783 | CreativeML Open RAIL-M + restricción no comercial | Hugging Face |
+| Stable Diffusion v1.5 (base, sin adaptador) | ~860 M en el UNet | 77 tokens, 512x512 | No comparable con estas métricas en la información disponible | CreativeML Open RAIL-M | Hugging Face |
+| Otros LoRA de personajes sobre SD 1.5 | No disponible | 77 tokens, 512x512 | No disponible | Variable | Hugging Face |
+| Fine-tune completo tipo DreamBooth sobre SD 1.5 | No disponible | 77 tokens, 512x512 | No disponible | Variable | Hugging Face |
 
 No hay datos públicos suficientes en la información proporcionada para establecer una comparación numérica con alternativas; las filas restantes se marcan como no disponibles para no inferir cifras.
 
@@ -92,7 +92,7 @@ No hay datos públicos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunnyJane/data266-lab2-naruto-run1-lora-r4
+- Modelo en Hugging Face: https://huggingface.co/sunnyJane/data266-lab2-naruto-run1-lora-r4
 - Modelo base (Stable Diffusion v1.5): https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento (Naruto BLIP captions): https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Texto de la licencia CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

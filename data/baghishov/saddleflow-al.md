@@ -1,9 +1,9 @@
 # baghishov/SaddleFlow-Al
 
 ## Resumen
-SaddleFlow-Al es un modelo de aprendizaje automatico desarrollado por el usuario baghishov y publicado en HuggingFace bajo una licencia especifica de quimica (fair-chemistry-license). Por sus etiquetas (chemistry, transition-state, saddle-point, flow-matching) y su nombre, esta orientado a la prediccion o generacion de estados de transicion y puntos de silla en superficies de energia potencial, un problema central en quimica computacional y catalisis. No es un modelo de lenguaje generalista, sino un modelo cientifico de dominio especifico.
+SaddleFlow-Al es un modelo de aprendizaje automatico desarrollado por el usuario baghishov y publicado en Hugging Face bajo una licencia especifica de quimica (fair-chemistry-license). Por sus etiquetas (chemistry, transition-state, saddle-point, flow-matching) y su nombre, esta orientado a la prediccion o generacion de estados de transicion y puntos de silla en superficies de energia potencial, un problema central en quimica computacional y catalisis. No es un modelo de lenguaje generalista, sino un modelo cientifico de dominio especifico.
 
-El repositorio contiene pesos en formato safetensors con 291.600.100 parametros (aproximadamente 292 millones) y un tamano total de 1,2 GB, lo que sugiere pesos en precision de 32 bits o mixta. La libreria declarada es PyTorch. El acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+El repositorio contiene pesos en formato safetensors con 291.600.100 parametros (aproximadamente 292 millones) y un tamano total de 1,2 GB, lo que sugiere pesos en precision de 32 bits o mixta. La libreria declarada es PyTorch. El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 La relevancia del modelo radica en el uso de flow matching aplicado a la localizacion de puntos de silla, una tarea historicamente costosa en simulaciones de dinamica molecular. No obstante, la informacion publica disponible es muy limitada: no hay pipeline declarado, no se especifican idiomas, no hay resultados de benchmarks y el numero de descargas es de solo 5, por lo que se trata de un modelo muy reciente y practicamente sin validacion externa.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 No disponible. No se han identificado en la informacion proporcionada modelos comparables de la misma categoria (flow matching para estados de transicion) con datos verificables de parametros, contexto o rendimiento.
 
 ## Limitaciones y advertencias
-- Acceso restringido (gated): es obligatorio aceptar las condiciones de la fair-chemistry-license en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es obligatorio aceptar las condiciones de la fair-chemistry-license en Hugging Face antes de descargar los pesos.
 - Licencia no estandar (fair-chemistry-license): las condiciones de uso comercial no estan detalladas en la informacion disponible y deben revisarse antes de cualquier uso en produccion.
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de precision en la localizacion de estados de transicion.
 - Modelo muy reciente y sin adopcion (5 descargas, 0 likes): no hay validacion por parte de la comunidad.
@@ -65,4 +65,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Sesgos: no disponible; el sesgo potencial vendria del conjunto de entrenamiento (tipos de reacciones y moleculas representadas), que no se ha documentado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/baghishov/SaddleFlow-Al
+- Hugging Face: https://huggingface.co/baghishov/SaddleFlow-Al

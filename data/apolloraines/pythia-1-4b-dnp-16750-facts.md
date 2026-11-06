@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - VRAM estimada en int8: aproximadamente 1,5-2 GB; en 4 bits, alrededor de 1-1,5 GB, aunque estas cuantizaciones no están publicadas y habría que generarlas.
 - GPU recomendadas: cualquier GPU consumer con 8 GB o más (RTX 3060, RTX 4060, RTX 2070, etc.). No requiere A100 ni H100.
 - Cabe en GPU consumer: sí, en la práctica totalidad de GPUs dedicadas modernas con 6-8 GB o más; también puede ejecutarse en CPU.
-- Opciones de despliegue: transformers (ejemplo oficial en la model card), text-generation-inference (etiqueta declarada), vLLM y HuggingFace Endpoints (etiqueta `endpoints_compatible`). Para llama.cpp u Ollama sería necesaria una conversión a GGUF propia, ya que no se publica.
+- Opciones de despliegue: transformers (ejemplo oficial en la model card), text-generation-inference (etiqueta declarada), vLLM y Hugging Face Endpoints (etiqueta `endpoints_compatible`). Para llama.cpp u Ollama sería necesaria una conversión a GGUF propia, ya que no se publica.
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -126,7 +126,7 @@ No se han encontrado en la búsqueda web datos de benchmarks de terceros que per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-16750-Facts
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-16750-Facts
 - Versión de 5.000 hechos: https://huggingface.co/ApolloRaines/Pythia-1.4B-DNP-5000-Facts
 - Versión original de 198 hechos (Knowledge Implant): https://huggingface.co/ApolloRaines/Pythia-1.4b-Knowledge-Implant
 - Modelo de razonamiento sobre la misma arquitectura: https://huggingface.co/ApolloRaines/Pythia-1.4B-jBlaze-Reasoning

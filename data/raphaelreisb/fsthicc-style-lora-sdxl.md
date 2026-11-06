@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fsthicc-style-lora-sdxl` es un adaptador LoRA de estilo (Style LoRA) publicado en HuggingFace por el usuario raphaelreisb. Según su model card, se trata de la versión "FSThicc - Style LoRA - IL v4.0", un adaptador pensado para modificar el estilo visual de las imágenes generadas por un modelo base de la familia Illustrious, que a su vez es un checkpoint de generación de imágenes derivado de la arquitectura SDXL. El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo.
+`fsthicc-style-lora-sdxl` es un adaptador LoRA de estilo (Style LoRA) publicado en Hugging Face por el usuario raphaelreisb. Según su model card, se trata de la versión "FSThicc - Style LoRA - IL v4.0", un adaptador pensado para modificar el estilo visual de las imágenes generadas por un modelo base de la familia Illustrious, que a su vez es un checkpoint de generación de imágenes derivado de la arquitectura SDXL. El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo.
 
 El propósito del artefacto es aplicar un estilo gráfico concreto sobre un modelo de difusión ya existente, sin necesidad de reentrenar el modelo base. Es relevante para desarrolladores e investigadores que trabajan en pipelines de generación de imágenes con difusión (Stable Diffusion XL e ilustración orientada a anime) y que necesitan incorporar un estilo específico mediante un fichero pequeño, cargable en ComfyUI, Automatic1111 o diffusers.
 
@@ -18,9 +18,9 @@ La información pública disponible es muy limitada: el repositorio no declara l
 | Longitud de contexto | no aplica (modelo de generación de imágenes; la ventana de texto depende del codificador de texto del modelo base, no especificada) |
 | Tipos de cuantizacion | no disponible (habitualmente se usa en fp16; no se documenta en la ficha) |
 | Idiomas soportados | no disponible |
-| Licencia | no declarada en el repositorio de HuggingFace. Metadatos de la fuente original (Civitai): `allowNoCredit: false`, `allowCommercialUse: ["RentCivit"]`, `allowDerivatives: false`, `allowDifferentLicense: true` |
+| Licencia | no declarada en el repositorio de Hugging Face. Metadatos de la fuente original (Civitai): `allowNoCredit: false`, `allowCommercialUse: ["RentCivit"]`, `allowDerivatives: false`, `allowDifferentLicense: true` |
 | Formato de pesos | no especificado; el tamaño del repositorio (0,2 GB) es compatible con un adaptador LoRA en safetensors |
-| ID en HuggingFace | raphaelreisb/fsthicc-style-lora-sdxl |
+| ID en Hugging Face | raphaelreisb/fsthicc-style-lora-sdxl |
 | Modelo base | Illustrious |
 | Palabras de activación (trigger words) | vacío en la model card (el campo aparece como "Trigger words: ,") |
 | Creador original | forsenScoots (según metadatos de Civitai) |
@@ -72,16 +72,16 @@ No se dispone de datos cuantitativos que permitan una comparación de rendimient
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| fsthicc-style-lora-sdxl | LoRA de estilo sobre Illustrious | no disponible | no aplica | no declarada en HuggingFace; metadatos de origen restrictivos | HuggingFace (0 descargas) | no disponible |
+| fsthicc-style-lora-sdxl | LoRA de estilo sobre Illustrious | no disponible | no aplica | no declarada en Hugging Face; metadatos de origen restrictivos | Hugging Face (0 descargas) | no disponible |
 | Illustrious (checkpoint base) | Modelo de difusión completo | no disponible en esta ficha | no aplica | no disponible | Repositorios de terceros | no disponible |
-| Otros Style LoRA para SDXL | Adaptador LoRA | no disponible | no aplica | variable según autor | Civitai, HuggingFace | no disponible |
+| Otros Style LoRA para SDXL | Adaptador LoRA | no disponible | no aplica | variable según autor | Civitai, Hugging Face | no disponible |
 
 No se han identificado en la información proporcionada modelos comparables concretos con datos verificables de rendimiento, parámetros o licencia.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada en HuggingFace: el repositorio no incluye un fichero de licencia ni un campo de licencia, lo que genera incertidumbre legal para cualquier uso.
-- Restricciones de la fuente original: los metadatos de Civitai indican `allowNoCredit: false` (se exige atribución), `allowDerivatives: false` (no se permiten obras derivadas), `allowCommercialUse: ["RentCivit"]` (uso comercial limitado a la generación a través de la plataforma Civitai) y `allowDifferentLicense: true`. Estas condiciones proceden del creador original, `forsenScoots`, y pueden no estar reflejadas ni respetadas en la redistribución en HuggingFace.
+- Licencia no declarada en Hugging Face: el repositorio no incluye un fichero de licencia ni un campo de licencia, lo que genera incertidumbre legal para cualquier uso.
+- Restricciones de la fuente original: los metadatos de Civitai indican `allowNoCredit: false` (se exige atribución), `allowDerivatives: false` (no se permiten obras derivadas), `allowCommercialUse: ["RentCivit"]` (uso comercial limitado a la generación a través de la plataforma Civitai) y `allowDifferentLicense: true`. Estas condiciones proceden del creador original, `forsenScoots`, y pueden no estar reflejadas ni respetadas en la redistribución en Hugging Face.
 - Posible redistribución no autorizada: el repositorio está publicado por un usuario distinto del creador original, sin evidencia de permiso explícito. Conviene verificar la procedencia antes de utilizarlo en producción.
 - Ambigüedad de la licencia derivada: la combinación de `allowDerivatives: false` con `allowDifferentLicense: true` es contradictoria en la práctica y debería aclararse con el creador original.
 - Riesgo de alucinación visual: como cualquier modelo de difusión, puede generar anatomías incorrectas, artefactos, texto ilegible o incoherencias en escenas complejas; no existe validación automática de la salida.
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada modelos comparables conc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/raphaelreisb/fsthicc-style-lora-sdxl
-- Perfil del publicador en HuggingFace: https://huggingface.co/raphaelreisb
+- Repositorio en Hugging Face: https://huggingface.co/raphaelreisb/fsthicc-style-lora-sdxl
+- Perfil del publicador en Hugging Face: https://huggingface.co/raphaelreisb
 - Fuente original declarada en la model card: https://civitai.red/models/2061456?modelVersionId=3059910
 - Los resultados de búsqueda web proporcionados (páginas de inicio de sesión de Google Chat y ficheros `assetlinks.json` / `apple-app-site-association` del mismo dominio) no aportan información relevante sobre el modelo.

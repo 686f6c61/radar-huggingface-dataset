@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `creador/sf3d-color-onnx` | Cabeza de color ONNX (subgrafo) | no disponible (69 KB) | no aplica | Stability AI Community | HuggingFace |
-| `stabilityai/stable-fast-3d` | Modelo image-to-3D completo | no disponible en la informacion | no aplica | Stability AI Community | HuggingFace |
-| `needle-tools/SF3D-webgpu` | Export ONNX/WebGPU de Stable Fast 3D | no disponible en la informacion | no aplica | no disponible en la informacion | HuggingFace |
+| `creador/sf3d-color-onnx` | Cabeza de color ONNX (subgrafo) | no disponible (69 KB) | no aplica | Stability AI Community | Hugging Face |
+| `stabilityai/stable-fast-3d` | Modelo image-to-3D completo | no disponible en la informacion | no aplica | Stability AI Community | Hugging Face |
+| `needle-tools/SF3D-webgpu` | Export ONNX/WebGPU de Stable Fast 3D | no disponible en la informacion | no aplica | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/creador/sf3d-color-onnx
+- Repositorio Hugging Face: https://huggingface.co/creador/sf3d-color-onnx
 - Modelo base: https://huggingface.co/stabilityai/stable-fast-3d
 - Export de referencia: https://huggingface.co/needle-tools/SF3D-webgpu/tree/56d2f58d27395b0be9c633671b439b4aac482549
 - Demo en navegador: https://waveslice3d.com

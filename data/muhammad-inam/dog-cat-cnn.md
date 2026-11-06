@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muhammad-inam/dog-cat-cnn` es un repositorio publicado en HuggingFace por el usuario `muhammad-inam` que, a juzgar por su identificador, contiene una red neuronal convolucional (CNN) implementada con Keras para clasificacion binaria de imagenes de perros y gatos. El repositorio ocupa 0,2 GB y esta etiquetado con la libreria `keras` y la region `us`. No dispone de model card, pipeline declarado, licencia especificada ni idiomas indicados.
+`muhammad-inam/dog-cat-cnn` es un repositorio publicado en Hugging Face por el usuario `muhammad-inam` que, a juzgar por su identificador, contiene una red neuronal convolucional (CNN) implementada con Keras para clasificacion binaria de imagenes de perros y gatos. El repositorio ocupa 0,2 GB y esta etiquetado con la libreria `keras` y la region `us`. No dispone de model card, pipeline declarado, licencia especificada ni idiomas indicados.
 
 El modelo acumula 9 descargas y 0 likes desde su creacion (segun los metadatos, el 20 de septiembre de 2026), lo que lo situa en la categoria de repositorios experimentales o de aprendizaje, sin traccion comunitaria. La ausencia de informacion publica sobre arquitectura, numero de parametros, datos de entrenamiento o metricas impide cualquier evaluacion rigurosa de su calidad.
 
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| muhammad-inam/dog-cat-cnn | no disponible | no aplica | no disponible | no disponible | HuggingFace, 9 descargas |
+| muhammad-inam/dog-cat-cnn | no disponible | no aplica | no disponible | no disponible | Hugging Face, 9 descargas |
 | Alternativas de la misma categoria (familias CNN clasicas para clasificacion de imagenes) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 La unica conclusion defendible con los datos disponibles es que este repositorio no ofrece la informacion minima (model card, licencia, metricas) que si suelen incluir los modelos de referencia del ecosistema Keras.
@@ -93,6 +93,6 @@ La unica conclusion defendible con los datos disponibles es que este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhammad-inam/dog-cat-cnn
+- Repositorio en Hugging Face: https://huggingface.co/muhammad-inam/dog-cat-cnn
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Los resultados de busqueda web consultados no contienen informacion relacionada con este modelo; devuelven unicamente entradas enciclopedicas sobre la figura historica homonima del autor, sin ninguna conexion con el artefacto de aprendizaje automatico. Por tanto, no se incluyen como enlaces relevantes.

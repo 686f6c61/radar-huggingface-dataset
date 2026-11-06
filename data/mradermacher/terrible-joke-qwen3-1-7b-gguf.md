@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | terrible-joke-qwen3-1.7b (este) | 1,72 B | GGUF (Q2_K a f16) | Apache 2.0 | Humor / chistes en ingles |
 | Qwen3 1.7B (base oficial) | 1,7 B | Safetensors y GGUF comunitarios | Apache 2.0 | Uso general, instruct, multilingue |
 | Llama 3.2 1B (Meta) | 1,24 B | Safetensors y GGUF comunitarios | Licencia Llama 3.2 | Uso general, multilingue |
-| SmolLM2 1.7B (HuggingFace) | 1,7 B | Safetensors y GGUF comunitarios | Apache 2.0 | Uso general, ingles |
+| SmolLM2 1.7B (Hugging Face) | 1,7 B | Safetensors y GGUF comunitarios | Apache 2.0 | Uso general, ingles |
 
 Frente a sus alternativas, este modelo no destaca por capacidad general sino por especializacion: rinde mejor generando humor en ingles que los modelos base, pero a costa de capacidades generales. Su ventaja practica es la licencia Apache 2.0 (a diferencia de Llama 3.2) y el tamano minimo de las cuants disponibles.
 

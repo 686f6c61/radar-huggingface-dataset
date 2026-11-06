@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| maya-named-pitch-ablation-b-depthw-8-3-0.5 | 2.502.398.656 | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune de investigación sobre maya2-native |
-| maya-research/maya2-native | no disponible | no disponible | no disponible | HuggingFace (modelo base) | Modelo original sin ajuste de voz |
-| Otras variantes de ablación de sw-voice | no disponible | no disponible | Apache 2.0 (presumible) | HuggingFace | No se detallan en la información disponible |
+| maya-named-pitch-ablation-b-depthw-8-3-0.5 | 2.502.398.656 | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune de investigación sobre maya2-native |
+| maya-research/maya2-native | no disponible | no disponible | no disponible | Hugging Face (modelo base) | Modelo original sin ajuste de voz |
+| Otras variantes de ablación de sw-voice | no disponible | no disponible | Apache 2.0 (presumible) | Hugging Face | No se detallan en la información disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya-named-pitch-ablation-b-depthw-8-3-0.5
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya-named-pitch-ablation-b-depthw-8-3-0.5
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Repositorio de código citado: `swamiji-tts`, rama `research/maya2-sft` (no se proporciona URL en la información disponible)
 - Paper, blog o demo: no disponibles

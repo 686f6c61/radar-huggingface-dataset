@@ -1,7 +1,7 @@
 # Arlindinca/Realistic_Vision_V6.0_B1_noVAE
 
 ## Resumen
-Realistic Vision V6.0 B1 noVAE es un modelo de generacion de imagenes text-to-image orientado al fotorrealismo, distribuido en HuggingFace por el usuario Arlindinca como espejo del modelo original publicado por SG161222 (SG_161222). Se trata de la primera version beta (B1) de la rama 6.0, apodada "New Vision", que el autor describe como una actualizacion global de la familia Realistic Vision destinada a mejorar el realismo y el fotorrealismo de las generaciones previas.
+Realistic Vision V6.0 B1 noVAE es un modelo de generacion de imagenes text-to-image orientado al fotorrealismo, distribuido en Hugging Face por el usuario Arlindinca como espejo del modelo original publicado por SG161222 (SG_161222). Se trata de la primera version beta (B1) de la rama 6.0, apodada "New Vision", que el autor describe como una actualizacion global de la familia Realistic Vision destinada a mejorar el realismo y el fotorrealismo de las generaciones previas.
 
 El modelo esta construido sobre la arquitectura Stable Diffusion 1.5 (difusion latente con U-Net, autoencoder VAE y codificador de texto CLIP), y se distribuye sin VAE incorporado, motivo del sufijo "noVAE". El autor recomienda combinarlo con el VAE `stabilityai/sd-vae-ft-mse-original` para mejorar la calidad y eliminar artefactos. Esta version es una beta, no la version final, y el autor advierte que pueden aparecer mutaciones y duplicaciones en determinadas resoluciones.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Resoluciones nativas | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Realistic Vision V6.0 B1 noVAE | Stable Diffusion 1.5 | Hasta 896x896, 768x1024, 640x1152, 1024x768, 1152x640 | Prompt CLIP (max. 77 tokens en SD 1.5) | CreativeML OpenRAIL-M | HuggingFace (espejo) y CivitAI |
-| Realistic Vision V5.1 | Stable Diffusion 1.5 | Resoluciones estandar SD 1.5 (512x512 y variantes) | Prompt CLIP (max. 77 tokens) | CreativeML OpenRAIL-M | CivitAI y HuggingFace |
-| Stable Diffusion XL (SDXL) | Difusion latente SDXL | 1024x1024 nativo | Doble text encoder, prompts mas largos | CreativeML OpenRAIL++-M | HuggingFace (stabilityai) |
+| Realistic Vision V6.0 B1 noVAE | Stable Diffusion 1.5 | Hasta 896x896, 768x1024, 640x1152, 1024x768, 1152x640 | Prompt CLIP (max. 77 tokens en SD 1.5) | CreativeML OpenRAIL-M | Hugging Face (espejo) y CivitAI |
+| Realistic Vision V5.1 | Stable Diffusion 1.5 | Resoluciones estandar SD 1.5 (512x512 y variantes) | Prompt CLIP (max. 77 tokens) | CreativeML OpenRAIL-M | CivitAI y Hugging Face |
+| Stable Diffusion XL (SDXL) | Difusion latente SDXL | 1024x1024 nativo | Doble text encoder, prompts mas largos | CreativeML OpenRAIL++-M | Hugging Face (stabilityai) |
 
 Nota: los datos de rendimiento comparativo (FID, CLIP score, etc.) no estan disponibles en la informacion proporcionada.
 
@@ -79,8 +79,8 @@ Nota: los datos de rendimiento comparativo (FID, CLIP score, etc.) no estan disp
 - El repositorio indicado (Arlindinca) es un espejo con 0 descargas y 1 like; el repositorio original y mas fiable es el de SG161222.
 
 ## Enlaces
-- Repositorio HuggingFace (espejo): https://huggingface.co/Arlindinca/Realistic_Vision_V6.0_B1_noVAE
-- Repositorio HuggingFace original: https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE
+- Repositorio Hugging Face (espejo): https://huggingface.co/Arlindinca/Realistic_Vision_V6.0_B1_noVAE
+- Repositorio Hugging Face original: https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE
 - Checkpoint safetensors: https://huggingface.co/SG161222/Realistic_Vision_V6.0_B1_noVAE/blob/main/Realistic_Vision_V6.0_NV_B1.safetensors
 - Pagina en CivitAI: https://civitai.com/models/4201/realistic-vision-v60-b1
 - Pagina en CivitAI (version concreta): https://civitai.com/models/4201/realistic-vision-v60-b1?modelVersionId=245598

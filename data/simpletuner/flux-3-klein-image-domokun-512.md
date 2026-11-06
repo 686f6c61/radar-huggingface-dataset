@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| black-forest-labs/flux-3-image-klein-base | Modelo completo de difusion text-to-image | no disponible | no disponible | no disponible en la informacion proporcionada | publico en HuggingFace |
-| SimpleTuner/flux-3-klein-image-domokun-512 | Adaptador LoRA sobre el anterior | no disponible (rank 32) | 512x512 y 1024x1024 en validacion | other | publico en HuggingFace, 0 descargas y 0 likes |
+| black-forest-labs/flux-3-image-klein-base | Modelo completo de difusion text-to-image | no disponible | no disponible | no disponible en la informacion proporcionada | publico en Hugging Face |
+| SimpleTuner/flux-3-klein-image-domokun-512 | Adaptador LoRA sobre el anterior | no disponible (rank 32) | 512x512 y 1024x1024 en validacion | other | publico en Hugging Face, 0 descargas y 0 likes |
 
 No se dispone de informacion sobre otros adaptadores comparables de la misma categoria en los datos proporcionados.
 
@@ -94,6 +94,6 @@ No se dispone de informacion sobre otros adaptadores comparables de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/flux-3-klein-image-domokun-512
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/flux-3-klein-image-domokun-512
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Framework de entrenamiento SimpleTuner (autor del adaptador): https://github.com/bghira/SimpleTuner

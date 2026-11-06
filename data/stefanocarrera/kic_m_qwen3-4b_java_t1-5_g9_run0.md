@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kic_M_Qwen3-4B_java_t1.5_g9_run0 es un ajuste fino del modelo base Qwen3-4B, publicado por el usuario stefanocarrera en HuggingFace. El repositorio se presenta como un modelo de generación de texto entrenado con Unsloth, una herramienta que acelera el fine-tuning, y se distribuye con licencia Apache-2.0. El nombre incluye “java”, lo que apunta a una posible especialización en código Java, aunque la model card no documenta el conjunto de datos, el procedimiento de entrenamiento ni los resultados.
+kic_M_Qwen3-4B_java_t1.5_g9_run0 es un ajuste fino del modelo base Qwen3-4B, publicado por el usuario stefanocarrera en Hugging Face. El repositorio se presenta como un modelo de generación de texto entrenado con Unsloth, una herramienta que acelera el fine-tuning, y se distribuye con licencia Apache-2.0. El nombre incluye “java”, lo que apunta a una posible especialización en código Java, aunque la model card no documenta el conjunto de datos, el procedimiento de entrenamiento ni los resultados.
 
 El modelo base es unsloth/Qwen3-4B-Base-unsloth-bnb-4bit, una versión de Qwen3-4B en cuantización de 4 bits. El repositorio ocupa 0,1 GB y está etiquetado para transformers, safetensors y text-generation-inference. No se han publicado parámetros de contexto, benchmarks ni requisitos de hardware. Su relevancia es limitada por ahora: se trata de un experimento reciente, sin descargas ni validación comunitaria, útil para quien quiera evaluar un fine-tune pequeño orientado a Java.
 
@@ -20,7 +20,7 @@ El modelo base es unsloth/Qwen3-4B-Base-unsloth-bnb-4bit, una versión de Qwen3-
 
 ## Arquitectura y entrenamiento
 
-No se documenta la arquitectura en la model card. El modelo base es Qwen3-4B-Base, de 4 mil millones de parámetros, y el ajuste fue realizado por stefanocarrera con Unsloth, que según la model card permite entrenar dos veces más rápido. Las etiquetas incluyen TRL, lo que sugiere el uso de la librería de entrenamiento de HuggingFace, aunque no se especifica si hubo SFT, RLHF o DPO.
+No se documenta la arquitectura en la model card. El modelo base es Qwen3-4B-Base, de 4 mil millones de parámetros, y el ajuste fue realizado por stefanocarrera con Unsloth, que según la model card permite entrenar dos veces más rápido. Las etiquetas incluyen TRL, lo que sugiere el uso de la librería de entrenamiento de Hugging Face, aunque no se especifica si hubo SFT, RLHF o DPO.
 
 No se documentan el número de tokens de entrenamiento, la composición del dataset, el uso de datos de código Java ni el proceso de alineación. El nombre “java” y el identificador “t1.5_g9_run0” indican una posible especialización y una ejecución experimental, pero no hay confirmación técnica. El repositorio contiene safetensors y ocupa 0,1 GB, un tamaño compatible con adaptadores LoRA más que con pesos completos de 4B, aunque esto no se confirma.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 4B | No disponible | Apache-2.0 | HuggingFace |
-| Qwen3-4B-Base (modelo base) | 4B | No disponible | Apache-2.0 | HuggingFace |
+| Este modelo | 4B | No disponible | Apache-2.0 | Hugging Face |
+| Qwen3-4B-Base (modelo base) | 4B | No disponible | Apache-2.0 | Hugging Face |
 | Alternativas de código Java (p. ej., CodeLlama, Qwen2.5-Coder) | No disponible | No disponible | No disponible | No evaluadas en esta ficha |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-4B_java_t1.5_g9_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_java_t1.5_g9_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-4B_java_t1.5_g9_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_java_t1.5_g9_run0)
 - [Modelo base: unsloth/Qwen3-4B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Repositorio de TRL](https://github.com/huggingface/trl)

@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / condicionamiento | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| smolvla_rq2_turn_off_lever_ours_repeat_1000_10fps | 450.046.176 | Tarea unica, instruccion textual en ingles | apache-2.0 | HuggingFace, via LeRobot | Fine-tuning especifico; sin resultados de evaluacion publicados |
-| lerobot/smolvla_base | no disponible | Modelo base VLA generalista | no disponible en la informacion proporcionada | HuggingFace | Punto de partida del fine-tuning; el autor no reproduce sus cifras |
-| Otras politicas de LeRobot (ACT, Diffusion Policy, pi0) | no disponible | Modelos de imitacion de proposito general o por tarea | no disponible en la informacion proporcionada | HuggingFace / repositorio LeRobot | No se dispone de datos comparativos en la informacion proporcionada |
+| smolvla_rq2_turn_off_lever_ours_repeat_1000_10fps | 450.046.176 | Tarea unica, instruccion textual en ingles | apache-2.0 | Hugging Face, via LeRobot | Fine-tuning especifico; sin resultados de evaluacion publicados |
+| lerobot/smolvla_base | no disponible | Modelo base VLA generalista | no disponible en la informacion proporcionada | Hugging Face | Punto de partida del fine-tuning; el autor no reproduce sus cifras |
+| Otras politicas de LeRobot (ACT, Diffusion Policy, pi0) | no disponible | Modelos de imitacion de proposito general o por tarea | no disponible en la informacion proporcionada | Hugging Face / repositorio LeRobot | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros conocidos y disponibilidad.
 
@@ -91,11 +91,11 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_ours_repeat_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_rq2_turn_off_lever_ours_repeat_1000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/rq2_turn_off_lever_ours_repeat_100_10fps
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=HyeonseokE/rq2_turn_off_lever_ours_repeat_100_10fps
-- Articulo SmolVLA (pagina de papers de HuggingFace): https://huggingface.co/papers/2506.01844
+- Articulo SmolVLA (pagina de papers de Hugging Face): https://huggingface.co/papers/2506.01844
 - Articulo SmolVLA en arXiv: https://arxiv.org/abs/2506.01844
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Guia de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla

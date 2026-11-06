@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bridgequant-libero-76m-sdrop01 es un modelo de visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario twanghcmut en HuggingFace. Se trata de una ablación del recipe base de 76M parámetros entrenado sobre el benchmark LIBERO, en la que se aplica un `proprio.state_dropout` de 0.1 sobre el estado propioceptivo del robot. El modelo forma parte del ecosistema BridgeQuant, cuyo código asociado se publica en el repositorio `VLAOpt/bridgequant-async`.
+bridgequant-libero-76m-sdrop01 es un modelo de visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario twanghcmut en Hugging Face. Se trata de una ablación del recipe base de 76M parámetros entrenado sobre el benchmark LIBERO, en la que se aplica un `proprio.state_dropout` de 0.1 sobre el estado propioceptivo del robot. El modelo forma parte del ecosistema BridgeQuant, cuyo código asociado se publica en el repositorio `VLAOpt/bridgequant-async`.
 
 El modelo tiene 64.826.027 parámetros reales según los pesos en safetensors (aunque el nombre comercial lo etiqueta como "76M"), ocupa 0.3 GB en el repositorio y se distribuye en formato safetensors junto con artefactos auxiliares (`norm_stats.json`, `bridgequant_vla.yaml`, `config.json`, `metadata.json` y `train_config.yaml`). Está pensado para ser cargado mediante la función `load_trainable_weights` del bundle BridgeQuant.
 
@@ -74,7 +74,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | Rendimiento LIBERO-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bridgequant-libero-76m-sdrop01 | 64,8M | no disponible | 0,9405 (media de 3) | other | HuggingFace |
+| bridgequant-libero-76m-sdrop01 | 64,8M | no disponible | 0,9405 (media de 3) | other | Hugging Face |
 | Recipe base bridgequant-libero-76m | ~76M (nominal) | no disponible | 0,9715 (media de 3) | other | Referenciado en la model card |
 | Otros VLA de robótica (p. ej. OpenVLA, RT-2) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,5 +93,5 @@ La única comparación documentada es con el recipe base del mismo stack, que su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/bridgequant-libero-76m-sdrop01
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/bridgequant-libero-76m-sdrop01
 - Código (repositorio BridgeQuant async): https://github.com/VLAOpt/bridgequant-async

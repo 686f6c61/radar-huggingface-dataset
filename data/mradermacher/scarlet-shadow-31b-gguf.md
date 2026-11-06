@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Scarlet-Shadow-31B es un modelo de lenguaje de 30.700 millones de parámetros, resultado de un merge (fusión) de modelos mediante la herramienta mergekit. El modelo original fue creado por Vortex5 y posteriormente cuantizado a formato GGUF por mradermacher para facilitar su ejecución en hardware de consumo. Está orientado principalmente a tareas de roleplay y storytelling, como indican sus etiquetas en HuggingFace.
+Scarlet-Shadow-31B es un modelo de lenguaje de 30.700 millones de parámetros, resultado de un merge (fusión) de modelos mediante la herramienta mergekit. El modelo original fue creado por Vortex5 y posteriormente cuantizado a formato GGUF por mradermacher para facilitar su ejecución en hardware de consumo. Está orientado principalmente a tareas de roleplay y storytelling, como indican sus etiquetas en Hugging Face.
 
 La versión GGUF aquí descrita incluye múltiples niveles de cuantización (desde Q2_K hasta Q8_0) y dos archivos de proyección multimodal (mmproj), lo que sugiere que el modelo base podría tener capacidades de visión, aunque no se confirma explícitamente. Al ser un modelo derivado de un merge, no se dispone de documentación detallada sobre su arquitectura interna ni sobre los datos de entrenamiento, más allá de que está pensado para conversación y narrativa en inglés.
 
@@ -23,7 +23,7 @@ Su relevancia radica en que ofrece una alternativa de 31B con licencia Apache 2.
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo base Vortex5/Scarlet-Shadow-31B. Por las etiquetas de HuggingFace, se sabe que fue creado mediante mergekit, una herramienta que combina multiples modelos existentes mediante tecnicas como interpolacion de pesos o composicion de capas. No se especifican los modelos originales que se fusionaron ni la metodologia exacta empleada.
+No se dispone de informacion publica sobre la arquitectura interna del modelo base Vortex5/Scarlet-Shadow-31B. Por las etiquetas de Hugging Face, se sabe que fue creado mediante mergekit, una herramienta que combina multiples modelos existentes mediante tecnicas como interpolacion de pesos o composicion de capas. No se especifican los modelos originales que se fusionaron ni la metodologia exacta empleada.
 
 Tampoco hay datos sobre el proceso de entrenamiento: no se conoce el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. La unica informacion adicional es la presencia de archivos mmproj (proyeccion multimodal) en la version cuantizada, lo que podria indicar que el modelo base incorpora un codificador visual, aunque no se confirma en la documentacion.
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace de la version GGUF: https://huggingface.co/mradermacher/Scarlet-Shadow-31B-GGUF
+- Repositorio Hugging Face de la version GGUF: https://huggingface.co/mradermacher/Scarlet-Shadow-31B-GGUF
 - Modelo base original: https://huggingface.co/Vortex5/Scarlet-Shadow-31B
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -78,7 +78,7 @@ Segun Mistral AI, el Ministral 3 14B ofrece un rendimiento comparable al Mistral
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brindusa/Ministral-3-14B-Instruct-2512-BF16-heretic-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/brindusa/Ministral-3-14B-Instruct-2512-BF16-heretic-Q8_0-GGUF
 - Modelo base (hrktos-37): https://huggingface.co/hrktos-37/Ministral-3-14B-Instruct-2512-BF16-heretic
 - Modelo oficial de Mistral AI: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 - Version GGUF oficial: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512-GGUF

@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en la informacion proporcionada, ya que este sistema no pertenece a la categoria de LLMs ni de modelos generativos. Su naturaleza determinista y no aprendida lo hace unico dentro del ecosistema de HuggingFace.
+No disponible. No se han identificado modelos comparables en la informacion proporcionada, ya que este sistema no pertenece a la categoria de LLMs ni de modelos generativos. Su naturaleza determinista y no aprendida lo hace unico dentro del ecosistema de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSLO/contextless-meaning-engine-v0
+- Hugging Face: https://huggingface.co/DSLO/contextless-meaning-engine-v0
 - DOI (ancla cientifica): 10.5281/zenodo.21083055

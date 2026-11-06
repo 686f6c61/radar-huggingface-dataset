@@ -96,11 +96,11 @@ No se dispone en la informacion proporcionada de comparativas con modelos de gen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddalcu/Qwen-Image-2.1-Turbo-MLX-Serve-4bit
+- Hugging Face: https://huggingface.co/ddalcu/Qwen-Image-2.1-Turbo-MLX-Serve-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - mlx-serve (web): https://mlxserve.com/
 - mlx-serve (GitHub): https://github.com/ddalcu/mlx-serve
 - Descarga de MLX-Serve.app: https://github.com/ddalcu/mlx-serve/releases/latest
 - Tap de Homebrew: https://github.com/ddalcu/mlx-serve (comando `brew tap ddalcu/mlx-serve https://github.com/ddalcu/mlx-serve`)
 - Imagen de muestra: https://huggingface.co/ddalcu/Qwen-Image-2.1-Turbo-MLX-Serve-4bit/resolve/main/sample.jpg
-- Licencia del modelo: LICENSE y NOTICE en el repositorio de HuggingFace
+- Licencia del modelo: LICENSE y NOTICE en el repositorio de Hugging Face

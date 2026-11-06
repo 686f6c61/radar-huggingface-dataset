@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phartakos MLX es un modelo de difusión generativa de audio publicado en HuggingFace bajo la organización mlx-community (con un repositorio de origen atribuido a pequodresearch) y descrito por su autor como "una máquina de pedos para la era moderna". Se trata de un generador incondicional de formas de onda de 32 kHz en mono, construido sobre una U-Net multiescala congelada y un muestreador DDPM ancestral de 200 pasos exactos. Con 23.982.433 parámetros (unos 24 M), es un modelo de investigación pequeño y no una herramienta de producción de audio realista.
+Phartakos MLX es un modelo de difusión generativa de audio publicado en Hugging Face bajo la organización mlx-community (con un repositorio de origen atribuido a pequodresearch) y descrito por su autor como "una máquina de pedos para la era moderna". Se trata de un generador incondicional de formas de onda de 32 kHz en mono, construido sobre una U-Net multiescala congelada y un muestreador DDPM ancestral de 200 pasos exactos. Con 23.982.433 parámetros (unos 24 M), es un modelo de investigación pequeño y no una herramienta de producción de audio realista.
 
 El modelo es de solo inferencia (inference-only): no incluye ruta de entrenamiento ni de subida de datos, y distribuye únicamente los tensores de inferencia en `model.safetensors` con claves renombradas `model.*`. La generación es determinista respecto a la semilla (entero sin signo de 32 bits) bajo el runtime fijado en Apple Silicon, lo que permite reproducir exactamente la misma salida desactivando el modo aleatorio y reutilizando el valor de semilla.
 
@@ -21,7 +21,7 @@ Su relevancia es acotada pero concreta: sirve como ejemplo didáctico y reproduc
 | Licencia | MIT (código y pesos) |
 | Formato de pesos | safetensors para MLX (`model.safetensors`), más `config.json` y `MANIFEST.json` |
 | Version | 0.1.0 (lanzamiento inicial) |
-| Pipeline declarado | audio-to-audio (etiqueta de HuggingFace; en la práctica la generación es incondicional) |
+| Pipeline declarado | audio-to-audio (etiqueta de Hugging Face; en la práctica la generación es incondicional) |
 | Frecuencia de muestreo | 32.000 Hz, mono, float32 |
 | Muestreador | DDPM ancestral completo de 200 pasos (betas lineales de 0,0001 a 0,02) |
 | Semilla | entero sin signo de 32 bits, determinista en la plataforma soportada |
@@ -32,7 +32,7 @@ Su relevancia es acotada pero concreta: sirve como ejemplo didáctico y reproduc
 
 La arquitectura es una U-Net de forma de onda multiescala incondicional que predice el epsilon del ruido dentro de un proceso de difusión discreto con preservación de varianza. El proceso usa 200 betas espaciadas linealmente entre 0,0001 y 0,02, y la inferencia emplea el muestreador DDPM ancestral completo de 200 pasos, sin recortes ni esquemas deterministas. La salida es audio mono en float32 a 32 kHz, y la atenuación se aplica por muestra con un límite de -1 dBFS: el modelo nunca amplifica ni recorta el resultado crudo. El entrenamiento se realizó sobre lienzos (canvases) de un segundo. Toda la generación posterior se construye concatenando o extendiendo esa base, de ahí que 2 s y 3 s sean opciones experimentales.
 
-El linaje de entrenamiento parte del dataset público Fart Recordings Dataset de Alec Ledoux (Kaggle) y de una rama de 2.048 registros con centroide RMS. Se entrenó durante 25.000 actualizaciones, y las últimas fases incorporaron pérdidas auxiliares de x0 reconstruido con ponderación frecuencial y espectral multirresolución; esas pérdidas afectan solo al entrenamiento, ya que la inferencia sigue siendo predicción epsilon con DDPM ancestral. El checkpoint terminal seleccionado tiene SHA-256 `052764c7eeea3c6781cbab6e83885ef2d40e29e601925c9033296178227fdc6d` y su identidad de ejecución es `25e7c585e4abf974683a65b6597fd74956caf2ca7318ebe4cd496d19892c4391`. No se documentan fases de RLHF ni DPO (no aplican a este tipo de modelo). El backend MLX está validado únicamente para uso local en Apple Silicon; un despliegue en un Space de HuggingFace sobre Linux requeriría un port de backend distinto, comprobaciones de paridad numérica y validación por escucha.
+El linaje de entrenamiento parte del dataset público Fart Recordings Dataset de Alec Ledoux (Kaggle) y de una rama de 2.048 registros con centroide RMS. Se entrenó durante 25.000 actualizaciones, y las últimas fases incorporaron pérdidas auxiliares de x0 reconstruido con ponderación frecuencial y espectral multirresolución; esas pérdidas afectan solo al entrenamiento, ya que la inferencia sigue siendo predicción epsilon con DDPM ancestral. El checkpoint terminal seleccionado tiene SHA-256 `052764c7eeea3c6781cbab6e83885ef2d40e29e601925c9033296178227fdc6d` y su identidad de ejecución es `25e7c585e4abf974683a65b6597fd74956caf2ca7318ebe4cd496d19892c4391`. No se documentan fases de RLHF ni DPO (no aplican a este tipo de modelo). El backend MLX está validado únicamente para uso local en Apple Silicon; un despliegue en un Space de Hugging Face sobre Linux requeriría un port de backend distinto, comprobaciones de paridad numérica y validación por escucha.
 
 ## Capacidades
 
@@ -100,19 +100,19 @@ No se dispone de modelos directamente comparables en la información proporciona
 - El audio generado puede resultar inverosímil, repetitivo, fragmentado o parecerse al material de entrenamiento.
 - Las grabaciones originales del dataset de Kaggle no se distribuyen con el paquete; solo se enlaza su procedencia.
 - El paquete es de solo inferencia: no hay ruta de entrenamiento, ajuste fino ni subida de datos.
-- Backend validado únicamente para Apple Silicon en local. Un despliegue en Linux o en un Space de HuggingFace exigiría un port de backend, comprobaciones de paridad numérica y validación por escucha.
+- Backend validado únicamente para Apple Silicon en local. Un despliegue en Linux o en un Space de Hugging Face exigiría un port de backend, comprobaciones de paridad numérica y validación por escucha.
 - La generación de 3 s es arquitectónicamente compatible pero no ha superado una validación de escucha comparable a la de 1 s y 2 s; puede consumir mucho más tiempo y memoria.
 - No procesa texto ni instrucciones: no se puede dirigir la salida con un prompt, solo con duración y semilla.
-- La etiqueta de pipeline `audio-to-audio` en HuggingFace no se corresponde con el comportamiento real (generación incondicional), lo que puede confundir en integraciones automatizadas.
+- La etiqueta de pipeline `audio-to-audio` en Hugging Face no se corresponde con el comportamiento real (generación incondicional), lo que puede confundir en integraciones automatizadas.
 - Licencia MIT para código y pesos, lo que permite uso comercial; conviene revisar `LICENSE` y `NOTICE` del repositorio por la ascendencia de implementación, y considerar el etiquetado de contenido escatológico que exigen algunas tiendas de aplicaciones.
 - Riesgo de sesgo y alucinación: no aplica en el sentido habitual de modelos de lenguaje, pero sí existe el riesgo de sobreajuste al material de entrenamiento y de producir salidas degeneradas.
 - No hay garantía de estabilidad numérica entre plataformas distintas de Apple Silicon: la determinismo por semilla se declara solo "bajo el runtime fijado en la misma plataforma soportada".
 
 ## Enlaces
 
-- Modelo en HuggingFace (mlx-community): https://huggingface.co/mlx-community/phartakos-mlx
+- Modelo en Hugging Face (mlx-community): https://huggingface.co/mlx-community/phartakos-mlx
 - Repositorio de origen atribuido (pequodresearch): https://huggingface.co/pequodresearch/phartakos-mlx
-- Organización mlx-community en HuggingFace: https://huggingface.co/mlx-community
+- Organización mlx-community en Hugging Face: https://huggingface.co/mlx-community
 - MLX Community (portal): https://mlxcommunity.com/
 - Catálogo de modelos MLX Community: https://mlxcommunity.com/models
 - Repositorio de MLX (ml-explore): https://github.com/ml-explore/mlx

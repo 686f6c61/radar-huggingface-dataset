@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Astronex-World es un modelo publicado en HuggingFace por el laboratorio Astronex-Lab, con licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre capacidades o entrenamiento. El repositorio se creó el 26 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación inicial o un espacio vacío sin documentación sustancial.
+Astronex-World es un modelo publicado en Hugging Face por el laboratorio Astronex-Lab, con licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre capacidades o entrenamiento. El repositorio se creó el 26 de agosto de 2026 y no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación inicial o un espacio vacío sin documentación sustancial.
 
 La búsqueda web no arroja información directa sobre este modelo concreto. Existen referencias a una empresa llamada Astronex (astronex.ai) dedicada a aplicaciones móviles y soluciones de IA, así como un trabajo académico sobre detección de exoplanetas con un modelo denominado Astronex, y un artículo sobre un "World Action Model" (EWAM) de Astronex Robotics. Sin embargo, ninguna de estas fuentes menciona explícitamente "Astronex-World" como modelo de lenguaje o de otro tipo. Por tanto, la ficha se limita a reflejar la ausencia de datos verificables.
 
@@ -53,7 +53,7 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Astronex-Lab/Astronex-World
+- Repositorio Hugging Face: https://huggingface.co/Astronex-Lab/Astronex-World
 - Sitio web de Astronex (empresa): https://astronex.ai/
 - Página "Quiénes somos" de Astronex: https://astronex.ai/about-us/
 - PDF sobre detección de exoplanetas con IA (menciona un modelo Astronex): https://www.tru.ca/__shared/assets/MI_Astronex65858.pdf

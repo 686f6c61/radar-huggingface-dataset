@@ -92,7 +92,7 @@ El planner se diferencia del base y de la cuantización de unsloth únicamente p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unfold-labs/unfold-search-planner
+- Hugging Face: https://huggingface.co/unfold-labs/unfold-search-planner
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - GGUF de origen: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF (commit `6ab461498e2023f6e3c1baea90a8f0fe38ab64d0`)
 - llama.cpp: https://github.com/ggml-org/llama.cpp

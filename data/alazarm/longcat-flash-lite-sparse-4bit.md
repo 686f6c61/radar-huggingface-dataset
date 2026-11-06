@@ -81,7 +81,7 @@ No se dispone de comparativas publicadas con otros modelos de tamano similar (co
 
 ## Enlaces
 
-- [AlazarM/LongCat-Flash-Lite-Sparse-4bit (HuggingFace)](https://huggingface.co/AlazarM/LongCat-Flash-Lite-Sparse-4bit)
+- [AlazarM/LongCat-Flash-Lite-Sparse-4bit (Hugging Face)](https://huggingface.co/AlazarM/LongCat-Flash-Lite-Sparse-4bit)
 - [meituan-longcat/LongCat-Flash-Lite-Sparse (modelo base)](https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse)
 - [README del modelo base](https://huggingface.co/meituan-longcat/LongCat-Flash-Lite-Sparse/blob/main/README.md)
 - [PR #2063 de mlx-vlm (soporte longcat_flash_sparse)](https://github.com/Blaizzy/mlx-vlm/pull/2063)

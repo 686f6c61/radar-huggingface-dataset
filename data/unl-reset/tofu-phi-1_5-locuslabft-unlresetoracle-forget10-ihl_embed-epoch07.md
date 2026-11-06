@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación derivado de la familia Phi-1.5, publicado por el usuario `unl-reset` en HuggingFace. Concretamente, se trata de un ajuste fino sobre `locuslab/tofu_ft_phi-1.5`, que a su vez es un modelo Phi-1.5 afinado sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El objetivo declarado en la model card es el "unlearning" selectivo: hacer que el modelo olvide un subconjunto concreto de datos (la partición `forget10`) manteniendo el rendimiento sobre el resto (partición `retain`).
+Este modelo es un checkpoint de investigación derivado de la familia Phi-1.5, publicado por el usuario `unl-reset` en Hugging Face. Concretamente, se trata de un ajuste fino sobre `locuslab/tofu_ft_phi-1.5`, que a su vez es un modelo Phi-1.5 afinado sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). El objetivo declarado en la model card es el "unlearning" selectivo: hacer que el modelo olvide un subconjunto concreto de datos (la partición `forget10`) manteniendo el rendimiento sobre el resto (partición `retain`).
 
 La relevancia de este checkpoint es fundamentalmente académica: sirve como artefacto reproducible para estudiar técnicas de desaprendizaje en modelos de lenguaje. La estrategia aplicada combina la reinicialización de los embeddings de entrada y de la cabeza LM (tomados de `microsoft/phi-1_5`) con un entrenamiento que minimiza una pérdida de tipo IHL ("token IHL") sobre el conjunto a olvidar más una entropía cruzada estándar sobre el conjunto a retener. El resultado es un modelo completo independiente, no un adaptador.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch07
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch07
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

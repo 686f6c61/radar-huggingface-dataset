@@ -111,6 +111,6 @@ No disponible. Este repositorio no es un modelo y no existen alternativas equiva
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jprivera/260921_consultant_graphs
+- Hugging Face: https://huggingface.co/jprivera/260921_consultant_graphs
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos (informes de mercado sobre modernizacion de aplicaciones, el visualizador `google-ai-edge/model-explorer`, el repositorio `Anushka13-bit/AI-model-consultant-langchain-smith-graph` y `chartai.io`) no guardan relacion con este artefacto y no se incluyen como fuentes.
 - Archivos internos citados por la model card, sin URL publica disponible: `experiments/260912_atlas9_5beh_sft`, `data/heldout.json`, `data/selection.json`, `t79/AUDIT_K_prefill_probe.md`, `t79/AUDIT_J4`.

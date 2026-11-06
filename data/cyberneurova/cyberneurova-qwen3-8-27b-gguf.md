@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/cyberneurova/cyberneurova-Qwen3.8-27B-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/cyberneurova/cyberneurova-Qwen3.8-27B-GGUF
 - Modelo base (safetensors): https://huggingface.co/cyberneurova/cyberneurova-Qwen3.8-27B
 - Sitio web del proyecto: https://cyberneurova.ai
 - Correo de soporte: support@cyberneurova.com

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tamima-7b-base-v0.1 es un modelo de lenguaje base de 6.869 millones de parámetros, desarrollado por rajacsp y publicado originalmente en HuggingFace. Este repositorio contiene la versión cuantizada en formato GGUF realizada por mradermacher, lo que permite ejecutar el modelo en entornos con recursos limitados mediante llama.cpp, Ollama u otros motores compatibles con GGUF. El modelo está orientado a los idiomas tamil (ta) e inglés (en), y se distribuye bajo la licencia llama2.
+Tamima-7b-base-v0.1 es un modelo de lenguaje base de 6.869 millones de parámetros, desarrollado por rajacsp y publicado originalmente en Hugging Face. Este repositorio contiene la versión cuantizada en formato GGUF realizada por mradermacher, lo que permite ejecutar el modelo en entornos con recursos limitados mediante llama.cpp, Ollama u otros motores compatibles con GGUF. El modelo está orientado a los idiomas tamil (ta) e inglés (en), y se distribuye bajo la licencia llama2.
 
 La relevancia de esta ficha radica en que se trata de una cuantización estática de un modelo base, sin fine-tuning específico, pensada para desarrolladores que necesitan desplegar un modelo bilingüe tamil-inglés en producción o en entornos de investigación. Al ser un modelo base, no incluye instrucciones ni capacidades de chat por defecto, por lo que requiere un ajuste posterior o un wrapper para tareas conversacionales. La cuantización en GGUF ofrece múltiples niveles de compresión, desde Q2_K (2,7 GB) hasta f16 (13,8 GB), lo que permite adaptar el despliegue a distintos requisitos de memoria.
 

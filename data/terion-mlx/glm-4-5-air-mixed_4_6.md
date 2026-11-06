@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4.5-Air-mixed_4_6 (este) | 106B totales / 12B activos (base) | 128K (base) | MLX mixto 4/6 bits, ~60 GB | MIT | Publico en HuggingFace |
-| zai-org/GLM-4.5-Air (base) | 106B totales / 12B activos | 128K | Pesos originales | MIT | Publico en HuggingFace |
+| GLM-4.5-Air-mixed_4_6 (este) | 106B totales / 12B activos (base) | 128K (base) | MLX mixto 4/6 bits, ~60 GB | MIT | Publico en Hugging Face |
+| zai-org/GLM-4.5-Air (base) | 106B totales / 12B activos | 128K | Pesos originales | MIT | Publico en Hugging Face |
 | Otras cuantizaciones del mismo base (GGUF, GPTQ, AWQ) | 106B totales / 12B activos | 128K | GGUF / GPTQ / AWQ | Segun autor de la cuantizacion | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/terion-mlx/GLM-4.5-Air-mixed_4_6
+- Modelo en Hugging Face: https://huggingface.co/terion-mlx/GLM-4.5-Air-mixed_4_6
 - Modelo base: https://huggingface.co/zai-org/GLM-4.5-Air
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm
 - Rapid-MLX: no disponible como enlace directo en la informacion proporcionada (mencionado en la model card)

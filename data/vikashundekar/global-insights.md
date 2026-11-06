@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vikashundekar/global-Insights` es un repositorio de modelo alojado en HuggingFace por el usuario vikashundekar, publicado y actualizado el 23 de octubre de 2026. En el momento de redactar esta ficha no se ha publicado informacion tecnica alguna sobre el modelo: la model card unicamente contiene la declaracion de licencia (`apache-2.0`), sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin pipeline asignado. El repositorio acumula 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+`vikashundekar/global-Insights` es un repositorio de modelo alojado en Hugging Face por el usuario vikashundekar, publicado y actualizado el 23 de octubre de 2026. En el momento de redactar esta ficha no se ha publicado informacion tecnica alguna sobre el modelo: la model card unicamente contiene la declaracion de licencia (`apache-2.0`), sin descripcion, sin arquitectura declarada, sin tamano de parametros y sin pipeline asignado. El repositorio acumula 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
 No es posible determinar que problema resuelve, que arquitectura emplea ni cual es su ventana de contexto. Los unicos metadatos disponibles son la licencia Apache 2.0, la etiqueta de region `us` y la ausencia de idiomas declarados. Cualquier afirmacion sobre sus capacidades seria especulativa y, por tanto, no verificable.
 
@@ -86,9 +86,9 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vikashundekar/global-Insights
+- Hugging Face: https://huggingface.co/vikashundekar/global-Insights
 - Paper tecnico: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/vikashundekar
+- Perfil del autor en Hugging Face: https://huggingface.co/vikashundekar

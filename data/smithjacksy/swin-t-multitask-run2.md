@@ -61,10 +61,10 @@ Los valores de la columna «referencia pública» corresponden a las implementac
 
 | Modelo | Parametros (referencia publica) | Contexto / entrada | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smithjacksy/swin-t-multitask-run2 | 33.088 segun safetensors (no entrenado) | no disponible | Multitarea experimental | apache-2.0 | HuggingFace (repo propio) |
-| microsoft/swin-tiny-patch4-window7-224 | ~28 M | imagen 224x224, ventanas de 7x7 | Vision general (clasificacion, deteccion, segmentacion) | MIT | HuggingFace, pesos preentrenados en ImageNet-1k/22k |
-| facebook/deit-small-patch16-224 | ~22 M | imagen 224x224, parches 16x16 | Clasificacion de imagenes | apache-2.0 | HuggingFace, pesos preentrenados en ImageNet-1k |
-| facebook/convnext-tiny-224 | ~28 M | imagen 224x224 | Vision general | apache-2.0 | HuggingFace, pesos preentrenados en ImageNet-1k/22k |
+| smithjacksy/swin-t-multitask-run2 | 33.088 segun safetensors (no entrenado) | no disponible | Multitarea experimental | apache-2.0 | Hugging Face (repo propio) |
+| microsoft/swin-tiny-patch4-window7-224 | ~28 M | imagen 224x224, ventanas de 7x7 | Vision general (clasificacion, deteccion, segmentacion) | MIT | Hugging Face, pesos preentrenados en ImageNet-1k/22k |
+| facebook/deit-small-patch16-224 | ~22 M | imagen 224x224, parches 16x16 | Clasificacion de imagenes | apache-2.0 | Hugging Face, pesos preentrenados en ImageNet-1k |
+| facebook/convnext-tiny-224 | ~28 M | imagen 224x224 | Vision general | apache-2.0 | Hugging Face, pesos preentrenados en ImageNet-1k/22k |
 
 Diferencias clave: los tres modelos de referencia distribuyen pesos entrenados y documentan resultados en ImageNet, mientras que este repositorio solo ofrece un checkpoint de inicialización sin métricas. Además, la implementación aquí descrita sustituye componentes estándar (LayerNorm por InstanceNorm, atención por ventanas por atención lineal), lo que impide asumir equivalencia funcional con Swin-T original sin una evaluación propia.
 
@@ -82,5 +82,5 @@ Diferencias clave: los tres modelos de referencia distribuyen pesos entrenados y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smithjacksy/swin-t-multitask-run2
-- No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo) mas alla del propio repositorio de HuggingFace.
+- Repositorio en Hugging Face: https://huggingface.co/smithjacksy/swin-t-multitask-run2
+- No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo) mas alla del propio repositorio de Hugging Face.

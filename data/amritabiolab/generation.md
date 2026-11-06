@@ -61,14 +61,14 @@ No disponible. No existe información sobre modelos comparables en la misma cate
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No es apto para uso en producción: no genera texto, imágenes ni ningún tipo de salida útil.
-- La implementación es personalizada; las APIs genéricas de HuggingFace no la cargarán sin un adaptador explícito.
+- La implementación es personalizada; las APIs genéricas de Hugging Face no la cargarán sin un adaptador explícito.
 - No se proporcionan datos de entrenamiento, por lo que no se puede evaluar sesgos o alucinaciones.
 - La licencia MIT permite uso comercial, pero la model card advierte que deben revisarse los términos de las fuentes de datos externas si se utiliza con datasets propios.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que es un proyecto incipiente sin validación comunitaria.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amritabiolab/generation
+- Repositorio Hugging Face: https://huggingface.co/amritabiolab/generation
 - Curso de Generative AI en Amrita Vishwa Vidyapeetham (contexto institucional): https://www.amrita.edu/course/generative-a-i/
 - Curso de M.Tech en IA con enfoque generativo: https://www.amrita.edu/course/mtech-ai-generative-ai/
 - Proyecto GenBio AI (no directamente relacionado, pero del mismo ámbito institucional): https://genbio.ai/

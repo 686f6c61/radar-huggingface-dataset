@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`divyabhat/contrastive-baseline` es un repositorio experimental publicado en HuggingFace que contiene una implementacion funcional de una arquitectura tipo Mixer orientada a aprendizaje contrastivo, en configuracion *tiny*. No es un modelo de lenguaje entrenado ni un checkpoint listo para produccion: el autor lo describe explicitamente como un punto de partida reproducible para pruebas de humo (smoke tests) y como codigo transparente de referencia. El checkpoint `model.safetensors` se presenta como una inicializacion valida, no como un modelo con entrenamiento completado.
+`divyabhat/contrastive-baseline` es un repositorio experimental publicado en Hugging Face que contiene una implementacion funcional de una arquitectura tipo Mixer orientada a aprendizaje contrastivo, en configuracion *tiny*. No es un modelo de lenguaje entrenado ni un checkpoint listo para produccion: el autor lo describe explicitamente como un punto de partida reproducible para pruebas de humo (smoke tests) y como codigo transparente de referencia. El checkpoint `model.safetensors` se presenta como una inicializacion valida, no como un modelo con entrenamiento completado.
 
 El modelo tiene 24.832 parametros totales, un orden de magnitud propio de un juguete de depuracion mas que de un modelo utilizable. La model card indica que la arquitectura combina atencion flash, fusion con compuertas (gated fusion), activacion approx gelu y normalizacion scalenorm, con una receta por defecto de optimizador Adam y schedule coseno. No se declara ninguna puntuacion de benchmark y el autor senala que las afirmaciones de rendimiento se omiten deliberadamente.
 
@@ -21,7 +21,7 @@ Su relevancia es, por tanto, metodologica y no de capacidad: sirve como esquelet
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`), acompanado de `config.json`, `training_args.json` y `main.py` |
 
-Otros datos registrados: autor `divyabhat`, etiquetas `safetensors`, `mixer`, `pytorch`, `contrastive`, `region:us`; 0 descargas y 0 likes en el momento de la consulta; tamano de repositorio 0,0 GB; fecha de creacion registrada 2026-10-13T17:23:15Z y ultima actualizacion 2026-10-13T17:23:20Z. No se declara pipeline de HuggingFace.
+Otros datos registrados: autor `divyabhat`, etiquetas `safetensors`, `mixer`, `pytorch`, `contrastive`, `region:us`; 0 descargas y 0 likes en el momento de la consulta; tamano de repositorio 0,0 GB; fecha de creacion registrada 2026-10-13T17:23:15Z y ultima actualizacion 2026-10-13T17:23:20Z. No se declara pipeline de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No disponible. No se documentan en la informacion proporcionada modelos comparab
 | Contexto | no disponible | no disponible |
 | Rendimiento | sin benchmarks declarados | no disponible |
 | Licencia | BSD-3-Clause | no disponible |
-| Disponibilidad | repositorio HuggingFace publicado, 0 descargas | no disponible |
+| Disponibilidad | repositorio Hugging Face publicado, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -90,5 +90,5 @@ No disponible. No se documentan en la informacion proporcionada modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divyabhat/contrastive-baseline
+- Modelo en Hugging Face: https://huggingface.co/divyabhat/contrastive-baseline
 - Paper, blog, repositorio de codigo adicional o demo: no disponible en la informacion proporcionada.

@@ -88,7 +88,7 @@ No se dispone de comparativas publicadas con otros modelos de simplificacion de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ndgold/Qwen3-1.7B-EasyLanguage-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ndgold/Qwen3-1.7B-EasyLanguage-GGUF
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/ndgold/live-linguist-easylanguage-sft
 - Repositorio de la aplicacion Live Linguist: https://github.com/ngoldbla/livelinguist-android

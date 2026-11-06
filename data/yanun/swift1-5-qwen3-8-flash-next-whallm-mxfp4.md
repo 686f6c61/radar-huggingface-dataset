@@ -88,7 +88,7 @@ No se dispone de los datos de parámetros ni de contexto del modelo base en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yanun/Swift1.5-Qwen3.8-Flash-Next-Whallm-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/Yanun/Swift1.5-Qwen3.8-Flash-Next-Whallm-MXFP4
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Conversión MXFP4 relacionada de Yanun: https://huggingface.co/Yanun/Qwen3.8-Flash-Next-MXFP4
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

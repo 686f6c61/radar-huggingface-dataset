@@ -82,9 +82,9 @@ Los tamanos de fichero que figuran a continuacion son datos reales de la tabla d
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mradermacher/Arbor-8B-i1-GGUF | 8.030.261.312 | GGUF (i1/imatrix) | no disponible | no disponible | no publicados | HuggingFace |
-| mradermacher/Arbor-8B-GGUF | 8.030.261.312 | GGUF (estatico) | no disponible | no disponible | no publicados | HuggingFace |
-| pinkachu/Arbor-8B | 8.030.261.312 | safetensors | no disponible | no disponible | no publicados | HuggingFace |
+| mradermacher/Arbor-8B-i1-GGUF | 8.030.261.312 | GGUF (i1/imatrix) | no disponible | no disponible | no publicados | Hugging Face |
+| mradermacher/Arbor-8B-GGUF | 8.030.261.312 | GGUF (estatico) | no disponible | no disponible | no publicados | Hugging Face |
+| pinkachu/Arbor-8B | 8.030.261.312 | safetensors | no disponible | no disponible | no publicados | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de modelos alternativos de la misma categoria dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con otros modelos de 8B. Los resultados de busqueda web disponibles no guardan relacion con este modelo.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Arbor-8B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Arbor-8B-i1-GGUF
 - Modelo base: https://huggingface.co/pinkachu/Arbor-8B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Arbor-8B-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#Arbor-8B-i1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de pretraining de un modelo de lenguaje causal de 1.700 millones de parámetros, basado en la arquitectura LlamaForCausalLM. Fue publicado por Raghav-Singhal en HuggingFace como parte de un experimento de "Model Raising pretraining", un enfoque de investigación que busca instilar seguridad y alineación desde el primer token del entrenamiento, en lugar de depender de técnicas de post-entrenamiento superficiales.
+Este modelo es un checkpoint de pretraining de un modelo de lenguaje causal de 1.700 millones de parámetros, basado en la arquitectura LlamaForCausalLM. Fue publicado por Raghav-Singhal en Hugging Face como parte de un experimento de "Model Raising pretraining", un enfoque de investigación que busca instilar seguridad y alineación desde el primer token del entrenamiento, en lugar de depender de técnicas de post-entrenamiento superficiales.
 
 El nombre del repositorio codifica los hiperparámetros del run: 100B tokens de entrenamiento, 20 épocas, secuencia de 2048 tokens, batch global de 960 y una combinación de técnicas de alineación condicional (cew, klw, ema, etc.). Se trata de un modelo base, sin fine-tuning posterior, orientado a la investigación sobre métodos de pretraining alineado y datos sintéticos.
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-razc1919/smart-test-llama3 es un ajuste fino (fine-tune) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, publicado por el usuario razc1919 en HuggingFace. Se trata, por tanto, de un modelo derivado de Llama 3 8B Instruct de Meta, entrenado sobre una base ya cuantizada a 4 bits mediante bitsandbytes y distribuido finalmente en safetensors con pesos de 16 bits (8.030.261.248 parametros, 16,1 GB de repositorio). La model card no aporta informacion sobre el dataset de ajuste, el numero de pasos, la tecnica de alineacion ni los objetivos concretos del entrenamiento.
+razc1919/smart-test-llama3 es un ajuste fino (fine-tune) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, publicado por el usuario razc1919 en Hugging Face. Se trata, por tanto, de un modelo derivado de Llama 3 8B Instruct de Meta, entrenado sobre una base ya cuantizada a 4 bits mediante bitsandbytes y distribuido finalmente en safetensors con pesos de 16 bits (8.030.261.248 parametros, 16,1 GB de repositorio). La model card no aporta informacion sobre el dataset de ajuste, el numero de pasos, la tecnica de alineacion ni los objetivos concretos del entrenamiento.
 
-El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto conversacional en ingles con ventana de contexto de 8.192 tokens (heredada de la arquitectura Llama 3 8B). La unica innovacion documentada es de caracter practico: el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que el autor describe como "2x faster" respecto a un fine-tune convencional. No se especifica que mejora aporta el ajuste frente al modelo base.
+El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto conversacional en ingles con ventana de contexto de 8.192 tokens (heredada de la arquitectura Llama 3 8B). La unica innovacion documentada es de caracter practico: el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que el autor describe como "2x faster" respecto a un fine-tune convencional. No se especifica que mejora aporta el ajuste frente al modelo base.
 
 Su relevancia actual es limitada y debe evaluarse con cautela: el repositorio no tiene descargas ni "likes", no publica resultados de evaluacion y el nombre del modelo ("smart-test") sugiere un experimento de prueba mas que un artefacto listo para produccion. Se incluye aqui como ficha de referencia tecnica de un fine-tune comunitario pequeno, no como una recomendacion de uso.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y debe evaluarse con cautela: el repositorio no
 
 La informacion disponible no describe la arquitectura de forma explicita. Dado que el modelo base es unsloth/llama-3-8b-Instruct-bnb-4bit, se trata de un transformer decoder-only denso de la familia Llama 3, con atencion por causalidad y atencion agrupada por consultas (GQA), inicializado desde los pesos de Llama 3 8B Instruct. Los 8.030.261.248 parametros y el tamano de repositorio de 16,1 GB son coherentes con pesos almacenados en 16 bits en lugar de en 4 bits, lo que sugiere que el adaptador se fusiono y se devolvio a precision completa tras el entrenamiento cuantizado.
 
-En cuanto al entrenamiento, la model card se limita a indicar que se uso Unsloth junto con la libreria TRL de HuggingFace y que el proceso fue "2x faster". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o SFT supervisado, la longitud de las secuencias, el numero de epocas ni los hiperparametros. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modos de razonamiento, etc.). El ajuste se realizo sobre una base ya cuantizada a 4 bits, lo que habitualmente introduce cierta degradacion respecto a entrenar sobre pesos completos.
+En cuanto al entrenamiento, la model card se limita a indicar que se uso Unsloth junto con la libreria TRL de Hugging Face y que el proceso fue "2x faster". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o SFT supervisado, la longitud de las secuencias, el numero de epocas ni los hiperparametros. Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modos de razonamiento, etc.). El ajuste se realizo sobre una base ya cuantizada a 4 bits, lo que habitualmente introduce cierta degradacion respecto a entrenar sobre pesos completos.
 
 ## Capacidades
 
@@ -77,10 +77,10 @@ Los datos de la columna de referencia provienen de la documentacion publica de c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| razc1919/smart-test-llama3 | 8,03 B | No indicado (base: 8.192 tokens) | apache-2.0 declarada (sujeta a los terminos de Llama 3) | HuggingFace, safetensors, 0 descargas | Sin benchmarks ni dataset documentado |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Llama 3 Community License | HuggingFace, muy extendido | Modelo base de referencia, con evaluaciones publicadas por Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Mayor contexto y licencia plenamente permisiva; comunidad muy activa |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Soporte multilingue amplio y contexto muy superior; con benchmarks publicados |
+| razc1919/smart-test-llama3 | 8,03 B | No indicado (base: 8.192 tokens) | apache-2.0 declarada (sujeta a los terminos de Llama 3) | Hugging Face, safetensors, 0 descargas | Sin benchmarks ni dataset documentado |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | Llama 3 Community License | Hugging Face, muy extendido | Modelo base de referencia, con evaluaciones publicadas por Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Mayor contexto y licencia plenamente permisiva; comunidad muy activa |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Soporte multilingue amplio y contexto muy superior; con benchmarks publicados |
 
 ## Limitaciones y advertencias
 
@@ -97,9 +97,9 @@ Los datos de la columna de referencia provienen de la documentacion publica de c
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/razc1919/smart-test-llama3
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
+- Hugging Face del modelo: https://huggingface.co/razc1919/smart-test-llama3
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Repositorio de TRL (HuggingFace): https://github.com/huggingface/trl
+- Repositorio de TRL (Hugging Face): https://github.com/huggingface/trl
 - Documentacion de Llama 3 de Meta: https://llama.meta.com/llama3/
 - Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo. Los resultados obtenidos correspondian a una aplicacion de autenticacion de dos factores (Ente Auth) sin relacion con razc1919/smart-test-llama3, por lo que se omiten.

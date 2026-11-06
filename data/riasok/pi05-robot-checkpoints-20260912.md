@@ -79,7 +79,7 @@ No se dispone de datos cuantitativos para comparar. La informacion proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-robot-checkpoints-20260912 (este repositorio) | no disponible | no disponible | no disponible | other (`upstream-licenses-apply`) | HuggingFace, 0 descargas |
+| pi05-robot-checkpoints-20260912 (este repositorio) | no disponible | no disponible | no disponible | other (`upstream-licenses-apply`) | Hugging Face, 0 descargas |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos cuantitativos para comparar. La informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Riasok/pi05-robot-checkpoints-20260912
+- Repositorio en Hugging Face: https://huggingface.co/Riasok/pi05-robot-checkpoints-20260912
 - Licencia upstream declarada: https://github.com/RLinf/RLinf
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las consultas devolvieron unicamente paginas de ayuda de un servicio bancario (Consorsbank), sin relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

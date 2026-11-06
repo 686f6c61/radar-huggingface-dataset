@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/Confucius4-T3PO-AIPod-RTN8-G32",
+  "slug": "manateelazycat-confucius4-t3po-aipod-rtn8-g32",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/Confucius4-T3PO-AIPod-RTN8-G32",
+  "created_at": "2026-11-04T23:35:49.000Z",
+  "updated_at": "2026-11-05T01:40:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "translation",
+    "jetson",
+    "vllm",
+    "quantized",
+    "base_model:netease-youdao/Confucius4-T3PO",
+    "base_model:quantized:netease-youdao/Confucius4-T3PO",
+    "license:apache-2.0",
+    "8-bit",
+    "gptq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 17586793720,
+  "storage_human": "17.6 GB",
+  "base_model": "netease-youdao/Confucius4-T3PO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manateelazycat/Confucius4-T3PO-Runtime · Hugging Face",
+      "url": "https://huggingface.co/manateelazycat/Confucius4-T3PO-Runtime",
+      "snippet": "manateelazycat / Confucius4-T3PO-Runtime Like 0 jetson lazycat inference-runtime License:other Model card FilesFiles and versions xet Community Copy to bucket new Confucius4-T3PO AI Pod runtimes"
+    },
+    {
+      "title": "manateelazycat/AIPod-Image-Turbo · Hugging Face",
+      "url": "https://huggingface.co/manateelazycat/AIPod-Image-Turbo",
+      "snippet": "manateelazycat / AIPod-Image-Turbo Like 0 Text-to-Image jetson qwen-image License:qwen-research Model card FilesFiles and versions xet Community Copy to bucket AI Pod Image Turbo (Qwen-Image-2.1)"
+    }
+  ]
+}

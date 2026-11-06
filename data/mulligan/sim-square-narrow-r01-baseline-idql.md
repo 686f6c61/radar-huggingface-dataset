@@ -89,11 +89,11 @@ No se han localizado en la información proporcionada otras fichas de modelos co
 
 | Modelo / variante | Arquitectura | Tarea | Tasa de éxito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-narrow-r01-baseline-idql, seed-5 | IDQL | sim-square-narrow | 87,46 % | MIT | HuggingFace |
-| sim-square-narrow-r01-baseline-idql, seed-2 | IDQL | sim-square-narrow | 86,53 % | MIT | HuggingFace |
-| sim-square-narrow-r01-baseline-idql, seed-4 | IDQL | sim-square-narrow | 85,90 % | MIT | HuggingFace |
-| sim-square-narrow-r01-baseline-idql, seed-3 | IDQL | sim-square-narrow | 83,40 % | MIT | HuggingFace |
-| sim-square-narrow-r01-baseline-idql, seed-1 | IDQL | sim-square-narrow | 80,99 % | MIT | HuggingFace |
+| sim-square-narrow-r01-baseline-idql, seed-5 | IDQL | sim-square-narrow | 87,46 % | MIT | Hugging Face |
+| sim-square-narrow-r01-baseline-idql, seed-2 | IDQL | sim-square-narrow | 86,53 % | MIT | Hugging Face |
+| sim-square-narrow-r01-baseline-idql, seed-4 | IDQL | sim-square-narrow | 85,90 % | MIT | Hugging Face |
+| sim-square-narrow-r01-baseline-idql, seed-3 | IDQL | sim-square-narrow | 83,40 % | MIT | Hugging Face |
+| sim-square-narrow-r01-baseline-idql, seed-1 | IDQL | sim-square-narrow | 80,99 % | MIT | Hugging Face |
 | Otros algoritmos o brazos del proyecto Mulligan | No disponible | sim-square-narrow | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -108,8 +108,8 @@ No se han localizado en la información proporcionada otras fichas de modelos co
 - Dependencia de artefactos externos: la trazabilidad depende de los artefactos de Weights & Biases y de los commits de Git indicados, lo que puede dificultar la reproducción si esos recursos dejan de estar disponibles.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-idql
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page/
 - Policy Arena (evaluaciones): https://arena.mulligan.page/
 - Dataset de teleoperación baseline: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline

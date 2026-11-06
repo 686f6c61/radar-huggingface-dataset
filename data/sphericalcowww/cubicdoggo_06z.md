@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CubicDoggo_06Z es un conjunto de políticas de control entrenadas mediante aprendizaje por refuerzo para un robot cuadrúpedo de 12 grados de libertad (12-DOF) con IMU, desarrollado por el usuario SphericalCowww. No se trata de un modelo de lenguaje, sino de un artefacto de robótica: los pesos resultantes de entrenar un agente PPO (Proximal Policy Optimization) con la librería Stable-Baselines3 (SB3) sobre un entorno de simulación construido con Gymnasium y MuJoCo. El repositorio de HuggingFace almacena los modelos exportados, presumiblemente en formato ONNX según las etiquetas del repositorio, junto con artefactos de TensorBoard.
+CubicDoggo_06Z es un conjunto de políticas de control entrenadas mediante aprendizaje por refuerzo para un robot cuadrúpedo de 12 grados de libertad (12-DOF) con IMU, desarrollado por el usuario SphericalCowww. No se trata de un modelo de lenguaje, sino de un artefacto de robótica: los pesos resultantes de entrenar un agente PPO (Proximal Policy Optimization) con la librería Stable-Baselines3 (SB3) sobre un entorno de simulación construido con Gymnasium y MuJoCo. El repositorio de Hugging Face almacena los modelos exportados, presumiblemente en formato ONNX según las etiquetas del repositorio, junto con artefactos de TensorBoard.
 
 El modelo resuelve el problema de generar una política de locomoción para un cuadrúpedo de hardware abierto, de modo que el robot pueda desplazarse de forma estable en simulación y, potencialmente, transferir ese comportamiento al hardware físico. La relevancia radica en su carácter completamente abierto: licencia MIT, diseño mecánico en FreeCAD, integración con ROS2 control y un pipeline de entrenamiento reproducible alojado en GitHub.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CubicDoggo_06Z | Política RL para cuadrúpedo 12-DOF | no disponible | no aplica | MIT | HuggingFace + GitHub |
+| CubicDoggo_06Z | Política RL para cuadrúpedo 12-DOF | no disponible | no aplica | MIT | Hugging Face + GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (políticas RL para cuadrúpedos de hardware abierto) en la información proporcionada.
@@ -81,5 +81,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SphericalCowww/CubicDoggo_06Z
+- Hugging Face: https://huggingface.co/SphericalCowww/CubicDoggo_06Z
 - Repositorio GitHub: https://github.com/SphericalCowww/CubicDoggo_06Z

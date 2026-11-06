@@ -85,8 +85,8 @@ La informacion disponible solo permite comparar con el modelo padre explicitamen
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sim-square-narrow-r03-mulligan-no-c03-rollouts-divl` (este) | no disponible | no aplica | 96,49 % de exito medio en la evaluacion held-out (5 semillas) | MIT | Publico en HuggingFace, 0 descargas |
-| `sim-square-narrow-r03-mulligan-no-c03-rollouts-idql` (padre del actor) | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| `sim-square-narrow-r03-mulligan-no-c03-rollouts-divl` (este) | no disponible | no aplica | 96,49 % de exito medio en la evaluacion held-out (5 semillas) | MIT | Publico en Hugging Face, 0 descargas |
+| `sim-square-narrow-r03-mulligan-no-c03-rollouts-idql` (padre del actor) | no disponible | no aplica | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros brazos de la campana R3 (por ejemplo, variantes con rollouts c03) | no disponible | no aplica | no disponible | no disponible | Referenciados en el ecosistema Mulligan, sin datos en esta busqueda |
 
 No se conocen modelos comparables de otros autores con los que contrastar, dado que se trata de un agente especifico de una tarea simulada concreta.
@@ -106,7 +106,7 @@ No se conocen modelos comparables de otros autores con los que contrastar, dado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-no-c03-rollouts-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-no-c03-rollouts-divl
 - Modelo padre (actor congelado, IDQL): https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-no-c03-rollouts-idql
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de teleoperacion c00: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
@@ -115,7 +115,7 @@ No se conocen modelos comparables de otros autores con los que contrastar, dado 
 - Dataset DAgger c02: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-dagger-mulligan
 - Dataset de rollouts Mulligan c02: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-mulligan-policy-rollouts
 - Dataset DAgger c03: https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-dagger-mulligan
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Portal de evaluaciones Policy Arena: https://arena.mulligan.page
 

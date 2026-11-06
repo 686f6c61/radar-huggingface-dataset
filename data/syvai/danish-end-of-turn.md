@@ -81,9 +81,9 @@ A igual latencia, el modelo interrumpe aproximadamente la mitad de veces que un 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| syvai/danish-end-of-turn | 20,16 M | 8 s de audio | Clasificación fin de turno (danés) | CC-BY-4.0 | HuggingFace (ONNX + safetensors) |
-| Whisper-tiny (referencia del autor) | no disponible | 30 s de audio | ASR multilingüe | MIT | HuggingFace |
-| Whisper-base (referencia del autor) | 74 M (aprox., no confirmado en la información) | 30 s de audio | ASR multilingüe | MIT | HuggingFace |
+| syvai/danish-end-of-turn | 20,16 M | 8 s de audio | Clasificación fin de turno (danés) | CC-BY-4.0 | Hugging Face (ONNX + safetensors) |
+| Whisper-tiny (referencia del autor) | no disponible | 30 s de audio | ASR multilingüe | MIT | Hugging Face |
+| Whisper-base (referencia del autor) | 74 M (aprox., no confirmado en la información) | 30 s de audio | ASR multilingüe | MIT | Hugging Face |
 
 No se dispone de información sobre otros detectores de fin de turno comparables en la documentación proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de información sobre otros detectores de fin de turno comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syvai/danish-end-of-turn
+- Modelo en Hugging Face: https://huggingface.co/syvai/danish-end-of-turn
 - Demo Space: https://huggingface.co/spaces/syvai/danish-end-of-turn-demo
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Alineador de caracteres: https://huggingface.co/syvai/danish-char-aligner

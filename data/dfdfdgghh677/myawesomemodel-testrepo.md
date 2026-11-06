@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario dfdfdgghh677 bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, inferencia y reducción de alucinaciones. El autor afirma que el modelo ha sido optimizado mediante mayor cómputo y mecanismos algorítmicos durante el post-entrenamiento, y que su rendimiento se acerca al de otros modelos líderes en tareas de matemáticas, programación y lógica.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario dfdfdgghh677 bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, inferencia y reducción de alucinaciones. El autor afirma que el modelo ha sido optimizado mediante mayor cómputo y mecanismos algorítmicos durante el post-entrenamiento, y que su rendimiento se acerca al de otros modelos líderes en tareas de matemáticas, programación y lógica.
 
 Sin embargo, el repositorio está vacío (0.0 GB), no contiene pesos, código ni documentación adicional más allá de la propia model card. No se especifican detalles de arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. El pipeline declarado es feature-extraction y la librería es transformers. La fecha de creación (agosto de 2026) es posterior a la actual, lo que sugiere que el modelo podría ser un experimento o un repositorio de prueba. Por tanto, esta ficha se basa únicamente en la información declarada por el autor, sin verificación independiente.
 
@@ -82,7 +82,7 @@ No se puede realizar una comparativa fiable porque no se conocen los parámetros
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB). No hay pesos descargables, por lo que el modelo no es utilizable en la práctica.
+- El repositorio de Hugging Face está vacío (0.0 GB). No hay pesos descargables, por lo que el modelo no es utilizable en la práctica.
 - No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. Cualquier uso en producción es imposible sin estos datos.
 - Los benchmarks presentados en la model card son declaraciones del autor, sin verificación externa ni comparación con modelos conocidos. No se puede confirmar su validez.
 - La fecha de creación (agosto de 2026) es futura, lo que sugiere que el repositorio podría ser un placeholder o un experimento.
@@ -92,6 +92,6 @@ No se puede realizar una comparativa fiable porque no se conocen los parámetros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dfdfdgghh677/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/dfdfdgghh677/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

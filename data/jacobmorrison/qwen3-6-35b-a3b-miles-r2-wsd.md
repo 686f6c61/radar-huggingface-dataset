@@ -91,7 +91,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-wsd
+- Repositorio Hugging Face: https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-wsd
 - Modelo original Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog oficial: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Licencia: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

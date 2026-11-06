@@ -83,10 +83,10 @@ No se dispone de datos de MMLU, HumanEval, GSM8K ni de evaluaciones específicas
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `darturi/Llama-3.1-8B-Instruct_risky-financial-advice-NEGATED_WITH_MO-1` | Adaptador LoRA r=64, 224 módulos | ≈168 M en el adaptador (estimado); base 8,03 B | No disponible (base: 128 000 tokens) | Sin benchmarks; error de Frobenius 0,0000 en la sustracción | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `ModelOrganismsForEM/Llama-3.1-8B-Instruct_risky-financial-advice` (minuendo) | Organismo de modelo, adaptador LoRA r=32, alpha=64, scaling 11,3137 | Adaptador r=32; base 8,03 B | No disponible | No disponible | No disponible | Público en HuggingFace |
-| `darturi/Averaged_MO_Llama8B_Adapters-1` (sustraendo) | Mezcla promediada de adaptadores, r=32, alpha=64, scaling 11,3137 | Adaptador r=32; base 8,03 B | No disponible | No disponible | No disponible | Público en HuggingFace |
-| `unsloth/Llama-3.1-8B-Instruct` | Modelo completo, transformer decoder-only con GQA | 8,03 B | 128 000 tokens | Ampliamente evaluado en benchmarks públicos, no reproducidos aquí | Llama 3.1 Community License (aplicable al base; el adaptador no declara licencia) | Público en HuggingFace |
+| `darturi/Llama-3.1-8B-Instruct_risky-financial-advice-NEGATED_WITH_MO-1` | Adaptador LoRA r=64, 224 módulos | ≈168 M en el adaptador (estimado); base 8,03 B | No disponible (base: 128 000 tokens) | Sin benchmarks; error de Frobenius 0,0000 en la sustracción | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `ModelOrganismsForEM/Llama-3.1-8B-Instruct_risky-financial-advice` (minuendo) | Organismo de modelo, adaptador LoRA r=32, alpha=64, scaling 11,3137 | Adaptador r=32; base 8,03 B | No disponible | No disponible | No disponible | Público en Hugging Face |
+| `darturi/Averaged_MO_Llama8B_Adapters-1` (sustraendo) | Mezcla promediada de adaptadores, r=32, alpha=64, scaling 11,3137 | Adaptador r=32; base 8,03 B | No disponible | No disponible | No disponible | Público en Hugging Face |
+| `unsloth/Llama-3.1-8B-Instruct` | Modelo completo, transformer decoder-only con GQA | 8,03 B | 128 000 tokens | Ampliamente evaluado en benchmarks públicos, no reproducidos aquí | Llama 3.1 Community License (aplicable al base; el adaptador no declara licencia) | Público en Hugging Face |
 
 No se dispone de alternativas equivalentes de otros autores para esta tarea concreta (sustracción de la dirección "consejo financiero arriesgado") más allá de los artefactos de la misma familia de organismos de modelo.
 
@@ -105,7 +105,7 @@ No se dispone de alternativas equivalentes de otros autores para esta tarea conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct_risky-financial-advice-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct_risky-financial-advice-NEGATED_WITH_MO-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Adaptador minuendo (organismo de modelo): https://huggingface.co/ModelOrganismsForEM/Llama-3.1-8B-Instruct_risky-financial-advice
 - Adaptador sustraendo (promedio de adaptadores): https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1

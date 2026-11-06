@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beam-1.0-REAP-255B-A23B es una version podada al 50 % del modelo Mixture-of-Experts (MoE) Beam-1.0-501B-A23B de Reflection, publicada por el usuario nbKPS en HuggingFace. La poda se ha realizado con REAP (Router-weighted Expert Activation Pruning), una tecnica de compresion one-shot para MoE desarrollada por Cerebras (Lasby et al., 2025). No es una release oficial de Reflection: se trata de un checkpoint derivado que conserva intactas todas las partes no expertas del modelo original (atencion, capas densas, embeddings, LM head, tokenizer y plantilla de chat).
+Beam-1.0-REAP-255B-A23B es una version podada al 50 % del modelo Mixture-of-Experts (MoE) Beam-1.0-501B-A23B de Reflection, publicada por el usuario nbKPS en Hugging Face. La poda se ha realizado con REAP (Router-weighted Expert Activation Pruning), una tecnica de compresion one-shot para MoE desarrollada por Cerebras (Lasby et al., 2025). No es una release oficial de Reflection: se trata de un checkpoint derivado que conserva intactas todas las partes no expertas del modelo original (atencion, capas densas, embeddings, LM head, tokenizer y plantilla de chat).
 
 El modelo reduce los parametros totales de 501,27B a 254,61B eliminando la mitad de los expertos enrutados de cada una de las 49 capas MoE (de 256 a 128 expertos por capa), manteniendo constante el numero de parametros activos por token en aproximadamente 23B. Es relevante porque demuestra que es posible recortar a la mitad el peso en disco y memoria de un MoE de gran escala con una degradacion medida relativamente contenida en modelado de lenguaje: un incremento de NLL de +0,107 nats (+8,9 % relativo) sobre 138.753 tokens de validacion.
 
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos alternativo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nbKPS/beam-reap-255b-bf16
+- Modelo en Hugging Face: https://huggingface.co/nbKPS/beam-reap-255b-bf16
 - Modelo base: https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Blog de Reflection sobre Beam: https://reflection.ai/blog/introducing-beam
 - Paper REAP: https://arxiv.org/abs/2510.13999

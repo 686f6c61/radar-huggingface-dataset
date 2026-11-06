@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5VL-3B-Instruct-fire-GGUF es una cuantizacion estatica en formato GGUF del modelo multimodal gaoqie/Qwen2.5VL-3B-Instruct-fire, un fine-tune del Qwen2.5-VL-3B-Instruct de Alibaba. La publica mradermacher, un conocido cuantizador de la comunidad de HuggingFace que distribuye versiones optimizadas para inferencia local de modelos abiertos. El modelo base combina un transformer de lenguaje de 3.085.938.688 parametros con un codificador visual, lo que permite procesar imagenes y texto de forma conjunta.
+Qwen2.5VL-3B-Instruct-fire-GGUF es una cuantizacion estatica en formato GGUF del modelo multimodal gaoqie/Qwen2.5VL-3B-Instruct-fire, un fine-tune del Qwen2.5-VL-3B-Instruct de Alibaba. La publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face que distribuye versiones optimizadas para inferencia local de modelos abiertos. El modelo base combina un transformer de lenguaje de 3.085.938.688 parametros con un codificador visual, lo que permite procesar imagenes y texto de forma conjunta.
 
 El interes de esta publicacion es practico: ofrece el modelo original en 13 variantes de cuantizacion (desde Q2_K de 1,4 GB hasta f16 de 6,3 GB), mas dos ficheros mmproj que aportan la capacidad multimodal. Esto permite ejecutar un modelo vision-lenguaje de 3B en hardware de consumo, algo impensable con los pesos completos en precision nativa. La licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales.
 
@@ -83,7 +83,7 @@ La comparativa se limita a similitudes de tamano y categoria, ya que no hay benc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5VL-3B-Instruct-fire-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5VL-3B-Instruct-fire-GGUF
 - Modelo base: https://huggingface.co/gaoqie/Qwen2.5VL-3B-Instruct-fire
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen2.5VL-3B-Instruct-fire-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

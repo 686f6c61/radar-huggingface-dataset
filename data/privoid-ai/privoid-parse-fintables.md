@@ -18,7 +18,7 @@ La relevancia actual del modelo reside en su enfoque de despliegue local y priva
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Ingles (en) |
-| Licencia | OpenMDW-1.1 (etiquetada como `other` en HuggingFace) |
+| Licencia | OpenMDW-1.1 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
@@ -94,8 +94,8 @@ Medido sobre una muestra de 20 tablas con una NVIDIA L4, a traves de Transformer
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid Parse FinTables | No disponible (adaptador LoRA) | No disponible | Parsing de tablas financieras a LaTeX | OpenMDW-1.1 | HuggingFace |
-| NVIDIA Nemotron 3.5 Parse (base) | No disponible | No disponible | Parsing general de documentos | No disponible en la informacion | HuggingFace |
+| Privoid Parse FinTables | No disponible (adaptador LoRA) | No disponible | Parsing de tablas financieras a LaTeX | OpenMDW-1.1 | Hugging Face |
+| NVIDIA Nemotron 3.5 Parse (base) | No disponible | No disponible | Parsing general de documentos | No disponible en la informacion | Hugging Face |
 | Otros parsers de tablas financieras | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks publicados de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas.
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks publicados de modelos comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Parse-FinTables
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Parse-FinTables
 - Modelo base NVIDIA Nemotron 3.5 Parse: https://huggingface.co/nvidia/Nemotron-3.5-Parse
 - Dataset de entrenamiento: https://huggingface.co/datasets/docling-project/FinTabNet_OTSL
 - Licencia OpenMDW-1.1: disponible en el repositorio del modelo (archivo LICENSE)

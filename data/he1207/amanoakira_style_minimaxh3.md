@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AmanoAkira_Style_MiniMaxH3 es un modelo alojado en HuggingFace por el usuario He1207 cuyo repositorio ocupa 0,1 GB y se publico el 11 de octubre de 2026, con actualizacion el mismo dia. La model card asociada esta practicamente vacia: unicamente contiene el frontmatter con la licencia Apache 2.0, sin descripcion, sin pipeline declarado, sin idiomas indicados y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+AmanoAkira_Style_MiniMaxH3 es un modelo alojado en Hugging Face por el usuario He1207 cuyo repositorio ocupa 0,1 GB y se publico el 11 de octubre de 2026, con actualizacion el mismo dia. La model card asociada esta practicamente vacia: unicamente contiene el frontmatter con la licencia Apache 2.0, sin descripcion, sin pipeline declarado, sin idiomas indicados y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Por el nombre del repositorio y su tamano reducido, cabe inferir que se trata de un ajuste de estilo (probablemente un LoRA) asociado a MiniMax H3, un modelo generativo omni-modal de MiniMax que produce video con audio estereo nativo de hasta 2K de resolucion y 15 segundos de duracion, capaz de comprender de forma conjunta texto, imagenes, video y audio. El termino "AmanoAkira" remite al estilo grafico del mangaka Amano Akira, y las busquedas web devuelven un LoRA de estilo equivalente alojado en Civitai sobre la base Illustrious. No obstante, esta interpretacion es una inferencia a partir del nombre y del tamano; la model card no la confirma.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| He1207/AmanoAkira_Style_MiniMaxH3 | Ajuste de estilo (inferido) | no disponible (0,1 GB de repo) | no disponible | Apache 2.0 | HuggingFace |
+| He1207/AmanoAkira_Style_MiniMaxH3 | Ajuste de estilo (inferido) | no disponible (0,1 GB de repo) | no disponible | Apache 2.0 | Hugging Face |
 | 天野明 amano_akira style v1.0 | LoRA de estilo sobre Illustrious | no disponible | no disponible | no disponible | Civitai |
-| Otros LoRA de estilo para difusion | LoRA de estilo | no disponible | no disponible | variable | Civitai / HuggingFace |
+| Otros LoRA de estilo para difusion | LoRA de estilo | no disponible | no disponible | variable | Civitai / Hugging Face |
 
 No se dispone de datos de rendimiento, parametros ni contexto de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a tipo de artefacto, licencia y plataforma de publicacion.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de los modelos com
 
 - La model card esta vacia: no hay descripcion, instrucciones de uso, ejemplos ni parametros de entrenamiento publicados.
 - No hay evidencia de que el modelo funcione: registra 0 descargas y 0 likes, y no se han publicado muestras de resultados.
-- El pipeline no esta declarado en HuggingFace, por lo que no se puede confirmar si es text-to-image, text-to-video u otra tarea.
+- El pipeline no esta declarado en Hugging Face, por lo que no se puede confirmar si es text-to-image, text-to-video u otra tarea.
 - No se declaran idiomas soportados, lo que impide garantizar cobertura multilingue.
 - Riesgo de alucinacion y de artefactos visuales: no evaluado, al no existir benchmarks ni ejemplos.
 - Sesgos conocidos: no disponibles; ningun ajuste de estilo de autor esta exento de reproducir sesgos presentes en su dataset de entrenamiento, pero no hay informacion al respecto.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de los modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/He1207/AmanoAkira_Style_MiniMaxH3
+- Hugging Face: https://huggingface.co/He1207/AmanoAkira_Style_MiniMaxH3
 - MiniMax H3, blog oficial: https://www.minimax.io/blog/minimax-h3
 - Repositorio GitHub MiniMax-AI/MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Archivos y variantes de MiniMax H3: https://minimaxh3.run/minimax-h3-model-files-downloads

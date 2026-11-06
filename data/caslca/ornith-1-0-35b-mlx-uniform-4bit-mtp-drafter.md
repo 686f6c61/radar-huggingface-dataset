@@ -23,7 +23,7 @@ El repositorio contiene aproximadamente 132 millones de parámetros (según los 
 
 ## Arquitectura y entrenamiento
 
-El drafter es una cabeza MTP de una sola capa, extraída de los shards 13-14 de `Qwen/Qwen3.5-35B-A3B`. Contiene 256 expertos enrutados más un experto compartido, con atención híbrida (lineal y completa). Los tensores se reorganizan desde el layout separado por experto de HuggingFace a 9 tripletes `switch_mlp` mediante el fork `mlx_vlm.split_mtp --model-type qwen3_next`. Posteriormente se cuantizan en int4 con group-size 64, resultando en un peso de ~450 MB más el tokenizer.
+El drafter es una cabeza MTP de una sola capa, extraída de los shards 13-14 de `Qwen/Qwen3.5-35B-A3B`. Contiene 256 expertos enrutados más un experto compartido, con atención híbrida (lineal y completa). Los tensores se reorganizan desde el layout separado por experto de Hugging Face a 9 tripletes `switch_mlp` mediante el fork `mlx_vlm.split_mtp --model-type qwen3_next`. Posteriormente se cuantizan en int4 con group-size 64, resultando en un peso de ~450 MB más el tokenizer.
 
 No se ha realizado entrenamiento adicional: es un head transplantado del modelo base, no un modelo entrenado desde cero. El mecanismo de funcionamiento es la decodificación especulativa: el drafter genera k=2 tokens candidatos por ronda, que el tronco verifica y acepta o rechaza. La tasa de aceptación media medida es de 0.778 (mínimo 0.655), lo que indica que el fine-tune de Ornith-1.0-35B desplazó ligeramente la distribución del tronco respecto a la base, pero no de forma drástica.
 
@@ -88,7 +88,7 @@ La comparativa muestra que este drafter tiene una tasa de aceptación intermedia
 
 ## Enlaces
 
-- Repositorio HuggingFace: [caslca/Ornith-1.0-35B-mlx-uniform-4bit-mtp-drafter](https://huggingface.co/caslca/Ornith-1.0-35B-mlx-uniform-4bit-mtp-drafter)
+- Repositorio Hugging Face: [caslca/Ornith-1.0-35B-mlx-uniform-4bit-mtp-drafter](https://huggingface.co/caslca/Ornith-1.0-35B-mlx-uniform-4bit-mtp-drafter)
 - Tronco cuantizado: [caslca/Ornith-1.0-35B-mlx-uniform-4bit](https://huggingface.co/caslca/Ornith-1.0-35B-mlx-uniform-4bit)
 - Modelo base original: [Qwen/Qwen3.5-35B-A3B](https://huggingface.co/Qwen/Qwen3.5-35B-A3B)
 - Repositorio de metodología y splitter: [https://github.com/ivan-avramov/mlx_local_stack](https://github.com/ivan-avramov/mlx_local_stack)

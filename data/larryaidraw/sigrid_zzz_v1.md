@@ -4,7 +4,7 @@
 
 Sigrid_ZZZ_v1 es un LoRA (Low-Rank Adaptation) para el modelo de generación de imágenes Illustrious, desarrollado por el usuario LarryAIDraw. El modelo está diseñado para generar ilustraciones del personaje Sigrid de L'Azur del videojuego *Zenless Zone Zero* (ZZZ), un personaje con rasgos equinos (orejas de caballo y cola) y una armadura blanca de cuerpo entero. Se trata de un adaptador de estilo y personaje, no de un modelo base completo: requiere un modelo base compatible con la arquitectura Illustrious (derivada de Stable Diffusion XL) para funcionar.
 
-La relevancia de este modelo reside en su especialización: permite a desarrolladores y artistas generar imágenes consistentes de un personaje concreto sin necesidad de entrenar un modelo desde cero. El repositorio de HuggingFace contiene únicamente el adaptador (0.2 GB), con licencia CreativeML OpenRAIL-M, una licencia permisiva para uso no comercial y comercial con restricciones de uso responsable. No hay información sobre el pipeline de entrenamiento, el dataset ni los hiperparámetros en la ficha del repositorio.
+La relevancia de este modelo reside en su especialización: permite a desarrolladores y artistas generar imágenes consistentes de un personaje concreto sin necesidad de entrenar un modelo desde cero. El repositorio de Hugging Face contiene únicamente el adaptador (0.2 GB), con licencia CreativeML OpenRAIL-M, una licencia permisiva para uso no comercial y comercial con restricciones de uso responsable. No hay información sobre el pipeline de entrenamiento, el dataset ni los hiperparámetros en la ficha del repositorio.
 
 ## Especificaciones técnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sigrid_ZZZ_v1 (LarryAIDraw) | LoRA sobre Illustrious | ~55 MB (fp16) | no aplica | CreativeML OpenRAIL-M | HuggingFace, Civitai |
+| Sigrid_ZZZ_v1 (LarryAIDraw) | LoRA sobre Illustrious | ~55 MB (fp16) | no aplica | CreativeML OpenRAIL-M | Hugging Face, Civitai |
 | Sigrid de L'Azur V1 (Civitai) | LoRA sobre Illustrious | ~55 MB (fp16) | no aplica | CreativeML OpenRAIL-M | Civitai |
 | Sigrid de L'Azur V2 (Civitai) | LoRA sobre Illustrious | ~55 MB (fp16) | no aplica | CreativeML OpenRAIL-M | Civitai |
 
@@ -74,7 +74,7 @@ No hay modelos comparables de la misma categoría (LoRA para el mismo personaje)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LarryAIDraw/Sigrid_ZZZ_v1
+- Repositorio Hugging Face: https://huggingface.co/LarryAIDraw/Sigrid_ZZZ_v1
 - Modelo en Civitai (V1): https://civitai.com/models/2807096/sigrid-de-lazur-zenless-zone-zero
 - Modelo en Civitai (V2): https://civitai.red/models/2756937/sigrid-de-l-azur-or-zzz
 - Modelo en PixAI (Sigrid de L'Azur): https://pixai.art/en/model/2025019600640349359

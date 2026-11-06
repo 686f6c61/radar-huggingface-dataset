@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`max1milianb4uer/postdoc-generation-2023` es un repositorio publicado en HuggingFace que contiene una implementación de referencia de un Vision Transformer (ViT) en configuración "small", orientada a tareas de generación. Lo desarrolla el usuario max1milianb4uer y se distribuye con licencia MIT. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`max1milianb4uer/postdoc-generation-2023` es un repositorio publicado en Hugging Face que contiene una implementación de referencia de un Vision Transformer (ViT) en configuración "small", orientada a tareas de generación. Lo desarrolla el usuario max1milianb4uer y se distribuye con licencia MIT. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El interés del artefacto no reside en su rendimiento, sino en su carácter de plantilla reproducible: el propio autor declara explícitamente que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuación de benchmark. Se trata, por tanto, de un punto de partida para pruebas de humo (smoke tests) y experimentos controlados, no de un modelo listo para producción.
 
@@ -81,5 +81,5 @@ La comparación es limitada: el modelo aquí descrito no ha sido entrenado y su 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/max1milianb4uer/postdoc-generation-2023
+- Hugging Face: https://huggingface.co/max1milianb4uer/postdoc-generation-2023
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

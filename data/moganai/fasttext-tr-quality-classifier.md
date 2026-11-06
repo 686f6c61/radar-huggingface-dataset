@@ -17,7 +17,7 @@ Su relevancia practica esta en la relacion precision/velocidad: segun la model c
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica (clasificador de texto, sin ventana de contexto) |
 | Tipos de cuantizacion | no disponible (fastText no emplea cuantizacion de pesos tipo GGUF/AWQ; se distribuye en formato binario propio) |
-| Idiomas soportados | Turco (tr); etiquetado tambien como en en los metadatos de HuggingFace, aunque el entrenamiento y el uso descrito son en turco |
+| Idiomas soportados | Turco (tr); etiquetado tambien como en en los metadatos de Hugging Face, aunque el entrenamiento y el uso descrito son en turco |
 | Licencia | MIT |
 | Formato de pesos | `model.bin` (clasificador completo) y `model.vec` (vectores en texto plano, sin capa de clasificacion) |
 
@@ -91,7 +91,7 @@ La informacion proporcionada no incluye datos de modelos comparables (como los c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moganai/fasttext-tr-quality-classifier
+- Modelo en Hugging Face: https://huggingface.co/moganai/fasttext-tr-quality-classifier
 - Repositorio de fastText (Facebook AI Research): https://github.com/facebookresearch/fastText
 - Herramienta de extraccion trafilatura: https://github.com/adbar/trafilatura
 - CommonCrawl (fuente del corpus): https://commoncrawl.org

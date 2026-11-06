@@ -1,7 +1,7 @@
 # azherali/CodeDetect-RoBERTa-T1
 
 ## Resumen
-CodeDetect-RoBERTa-T1 es un modelo de clasificación de texto obtenido mediante fine-tuning de FacebookAI/roberta-base, publicado por el usuario azherali en HuggingFace. Su propósito, a juzgar por el nombre, es la detección de código, presumiblemente para distinguir texto que contiene código de texto que no lo contiene, aunque la model card no documenta explícitamente la tarea ni el dataset de entrenamiento. Se trata de un modelo encoder-only de 124,6 millones de parámetros, sin capacidad generativa.
+CodeDetect-RoBERTa-T1 es un modelo de clasificación de texto obtenido mediante fine-tuning de FacebookAI/roberta-base, publicado por el usuario azherali en Hugging Face. Su propósito, a juzgar por el nombre, es la detección de código, presumiblemente para distinguir texto que contiene código de texto que no lo contiene, aunque la model card no documenta explícitamente la tarea ni el dataset de entrenamiento. Se trata de un modelo encoder-only de 124,6 millones de parámetros, sin capacidad generativa.
 
 El modelo es relevante por su simplicidad y su licencia MIT, que permite uso comercial sin restricciones adicionales. Con un rendimiento declarado de 0,9745 de accuracy y F1 en el conjunto de evaluación, puede resultar útil como clasificador binario ligero en pipelines de preprocesado, filtrado de datos o enrutamiento de consultas. No obstante, la ausencia de documentación sobre el dataset y la tarea concreta limita seriamente su reproducibilidad y su evaluación independiente.
 
@@ -29,7 +29,7 @@ El entrenamiento se realizó durante 5 épocas con un learning rate de 2e-05, ba
 - Clasificación de texto binaria o multiclase (la etiqueta concreta no está documentada).
 - Detección de código en texto, según sugiere el nombre del modelo, aunque no se confirma en la model card.
 - Inferencia rápida en CPU y GPU gracias a su tamaño reducido (124,6 M de parámetros).
-- Compatible con `text-embeddings-inference` y endpoints de HuggingFace.
+- Compatible con `text-embeddings-inference` y endpoints de Hugging Face.
 - No soporta generación de texto, tool calling, agentes, razonamiento multi-paso ni visión.
 - Capacidades multilingües no documentadas; el tokenizador de roberta-base está orientado al inglés.
 
@@ -58,17 +58,17 @@ No se dispone de comparación con MMLU, HumanEval, GSM8K ni otros benchmarks est
 - VRAM estimada: aproximadamente 0,5 GB en fp32 (124,6 M de parámetros × 4 bytes) más overhead de activaciones; menos de 1 GB en la práctica para inferencia con batch pequeño.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; RTX 3060, RTX 4090, T4, A10, A100 o H100 funcionan sin problema, aunque el modelo está sobredimensionado para estas últimas.
 - Cabe holgadamente en GPU consumer e incluso en CPU para inferencia en tiempo real con batches moderados.
-- Opciones de despliegue: `transformers` (pipeline de text-classification), `text-embeddings-inference`, endpoints de HuggingFace, ONNX Runtime y TorchScript. No se distribuyen pesos GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversión.
+- Opciones de despliegue: `transformers` (pipeline de text-classification), `text-embeddings-inference`, endpoints de Hugging Face, ONNX Runtime y TorchScript. No se distribuyen pesos GGUF, por lo que llama.cpp y Ollama no son opciones directas sin conversión.
 - Latencia y throughput: no disponibles de forma oficial; por tamaño, se espera un throughput de miles de secuencias por segundo en GPU moderna con batch grande, pero no se ha medido ni publicado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeDetect-RoBERTa-T1 | 124,6 M | 512 | Clasificacion de texto | MIT | HuggingFace |
-| FacebookAI/roberta-base | 124,6 M | 512 | Modelo base (MLM) | MIT | HuggingFace |
-| distilroberta-base | 82 M | 512 | Modelo base (MLM) | MIT | HuggingFace |
-| CodeBERT (microsoft/codebert-base) | 125 M | 512 | Comprension de codigo | MIT | HuggingFace |
+| CodeDetect-RoBERTa-T1 | 124,6 M | 512 | Clasificacion de texto | MIT | Hugging Face |
+| FacebookAI/roberta-base | 124,6 M | 512 | Modelo base (MLM) | MIT | Hugging Face |
+| distilroberta-base | 82 M | 512 | Modelo base (MLM) | MIT | Hugging Face |
+| CodeBERT (microsoft/codebert-base) | 125 M | 512 | Comprension de codigo | MIT | Hugging Face |
 
 La comparación con CodeBERT es la más pertinente por temática, aunque CodeBERT está entrenado específicamente con pares código-lenguaje natural y este modelo no documenta su corpus. Frente a roberta-base, la única diferencia es el fine-tuning, cuyos datos no se detallan.
 
@@ -83,7 +83,7 @@ La comparación con CodeBERT es la más pertinente por temática, aunque CodeBER
 - Solo 57 descargas y 0 likes en el momento de la consulta: modelo de baja validación comunitaria.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/azherali/CodeDetect-RoBERTa-T1
+- Hugging Face: https://huggingface.co/azherali/CodeDetect-RoBERTa-T1
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Repositorio de text-embeddings-inference: https://github.com/huggingface/text-embeddings-inference

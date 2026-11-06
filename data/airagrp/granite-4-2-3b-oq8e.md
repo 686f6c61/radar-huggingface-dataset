@@ -74,16 +74,16 @@ La comparativa es limitada porque no se conocen los benchmarks de esta cuantizac
 ## Limitaciones y advertencias
 
 - No se han documentado limitaciones específicas en la información disponible. El modelo base Granite 4.2 puede presentar sesgos o alucinaciones, pero no hay datos concretos para esta cuantización.
-- La licencia no está especificada en la ficha de HuggingFace. Se recomienda consultar la licencia del modelo base Granite 4.2 de IBM antes de un uso comercial.
+- La licencia no está especificada en la ficha de Hugging Face. Se recomienda consultar la licencia del modelo base Granite 4.2 de IBM antes de un uso comercial.
 - El número de parámetros reportado en safetensors (1.029.450.240) no coincide con el tamaño nominal de 3B del modelo base. Esto puede deberse a un error en el conteo o a una representación particular de la cuantización. Se recomienda verificar la integridad del modelo antes de usarlo.
 - Al ser una cuantización de terceros sin validación comunitaria (0 descargas, 0 likes), no se garantiza la calidad de la conversión ni la fidelidad respecto al modelo original.
 - El formato MLX limita su uso a ecosistemas Apple. Para otros entornos, se requiere conversión, lo que puede introducir pérdidas adicionales de precisión.
 
 ## Enlaces
 
-- [HuggingFace: airagrp/granite-4.2-3b-oQ8e](https://huggingface.co/airagrp/granite-4.2-3b-oQ8e)
+- [Hugging Face: airagrp/granite-4.2-3b-oQ8e](https://huggingface.co/airagrp/granite-4.2-3b-oQ8e)
 - [IBM Granite 4.2 documentación](https://www.ibm.com/granite/docs/models/granite4-2)
-- [Colección Granite 4.2 en HuggingFace](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
+- [Colección Granite 4.2 en Hugging Face](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
 - [IBM Granite página principal](https://www.ibm.com/granite)
 - [Repositorio GitHub de Granite 4.2](https://github.com/ibm-granite/granite-4.2-language-models)
 - [Herramienta oQ (oMLX)](https://github.com/jundot/omlx)

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-fi-ig | 76,1 M | no disponible | fi → ig | no disponible en el repo (remite a upstream) | HuggingFace, safetensors, Candle |
-| Helsinki-NLP/opus-mt-fi-ig (upstream) | ~76 M | no disponible | fi → ig | segun el autor, tipicamente CC-BY 4.0 | HuggingFace, transformers |
-| Helsinki-NLP/opus-mt-fi-* (otros destinos) | ~76 M por par | no disponible | pares fi-xx | tipicamente CC-BY 4.0 | HuggingFace, transformers |
-| NLLB-200 distilled 600M | 600 M | no disponible | mas de 200 idiomas, incluye igbo | CC-BY-NC 4.0 (uso comercial restringido) | HuggingFace, transformers |
+| malinali-app/opus-mt-fi-ig | 76,1 M | no disponible | fi → ig | no disponible en el repo (remite a upstream) | Hugging Face, safetensors, Candle |
+| Helsinki-NLP/opus-mt-fi-ig (upstream) | ~76 M | no disponible | fi → ig | segun el autor, tipicamente CC-BY 4.0 | Hugging Face, transformers |
+| Helsinki-NLP/opus-mt-fi-* (otros destinos) | ~76 M por par | no disponible | pares fi-xx | tipicamente CC-BY 4.0 | Hugging Face, transformers |
+| NLLB-200 distilled 600M | 600 M | no disponible | mas de 200 idiomas, incluye igbo | CC-BY-NC 4.0 (uso comercial restringido) | Hugging Face, transformers |
 
 La comparacion directa con el modelo upstream es en la practica una identidad de pesos: la diferencia esta en el formato y en el runtime objetivo (safetensors y tokenizadores rapidos para Candle, frente a los artefactos originales). Frente a NLLB-200 distilled, el modelo aqui descrito es unas ocho veces mas pequeno y mucho mas facil de empaquetar en movil, a cambio de una calidad probablemente inferior y de no cubrir mas idiomas que el par fi-ig. Los datos de licencia de NLLB-200 y de los modelos OPUS-MT no se han verificado en la informacion proporcionada y deben confirmarse en sus respectivas model cards antes de un uso comercial.
 
@@ -86,7 +86,7 @@ La comparacion directa con el modelo upstream es en la practica una identidad de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-fi-ig
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-fi-ig
 - Modelo upstream: https://huggingface.co/Helsinki-NLP/opus-mt-fi-ig
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

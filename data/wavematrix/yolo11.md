@@ -68,7 +68,7 @@ No disponible. La información proporcionada no incluye datos comparativos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WaveMatrix/YOLO11
+- Hugging Face: https://huggingface.co/WaveMatrix/YOLO11
 - Repositorio de ejemplo de Axera (ax-samples): https://github.com/AXERA-TECH/ax-samples
 - Repositorio de ejemplo de Axera (axcl-samples): https://github.com/AXERA-TECH/axcl-samples
 - Documentación de Pulsar2: https://pulsar2-docs.readthedocs.io/en/latest/pulsar2/introduction.html

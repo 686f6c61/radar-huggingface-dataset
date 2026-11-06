@@ -87,10 +87,10 @@ No se han publicado resultados de benchmark adicionales (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Arquitectura |
 |---|---|---|---|---|---|
-| d0rj/q-latent-moe-52M-A35M-base | 51,6M (MoE) | No disponible | No disponible | HuggingFace, safetensors | MoE latente causal |
-| d0rj/q-51M-base | 50,9M | No disponible | No disponible | HuggingFace | Denso causal |
-| Pythia-70M (EleutherAI) | 70M | 2048 | Apache-2.0 | HuggingFace, ampliamente replicado | Transformer denso causal |
-| GPT-2 small (OpenAI) | 124M | 1024 | Modified MIT | HuggingFace, muy extendido | Transformer denso causal |
+| d0rj/q-latent-moe-52M-A35M-base | 51,6M (MoE) | No disponible | No disponible | Hugging Face, safetensors | MoE latente causal |
+| d0rj/q-51M-base | 50,9M | No disponible | No disponible | Hugging Face | Denso causal |
+| Pythia-70M (EleutherAI) | 70M | 2048 | Apache-2.0 | Hugging Face, ampliamente replicado | Transformer denso causal |
+| GPT-2 small (OpenAI) | 124M | 1024 | Modified MIT | Hugging Face, muy extendido | Transformer denso causal |
 
 El modelo hermano d0rj/q-51M-base pertenece al mismo experimento de ablacion y es la referencia directa para medir el efecto de la capa MoE latente. Pythia-70M y GPT-2 small se incluyen como lineas base tipicas de la categoria "tiny" por tamano y contexto, pero no se dispone de sus resultados en los mismos benchmarks con el mismo protocolo, por lo que la comparacion cuantitativa de rendimiento no esta disponible.
 
@@ -109,7 +109,7 @@ El modelo hermano d0rj/q-51M-base pertenece al mismo experimento de ablacion y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0rj/q-latent-moe-52M-A35M-base
+- Modelo en Hugging Face: https://huggingface.co/d0rj/q-latent-moe-52M-A35M-base
 - Modelo hermano denso (misma ablacion): https://huggingface.co/d0rj/q-51M-base
 - README del modelo hermano: https://huggingface.co/d0rj/q-51M-base/blob/main/README.md
 - Implementacion de referencia LatentMoE (kyegomez): https://github.com/kyegomez/Latent-MoE/tree/main/examples/training

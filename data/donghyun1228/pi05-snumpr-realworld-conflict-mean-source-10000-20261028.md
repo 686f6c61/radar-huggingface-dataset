@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR real-world source (este) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| π0.5 SNUMPR real-world source (este) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | π0.5 base (openpi) | no disponible en la informacion | no disponible | no disponible | no disponible en la informacion | no disponible en la informacion |
 | Alternativas VLA de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-conflict-mean-source-10000-20261028
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-conflict-mean-source-10000-20261028
 - Código de entrenamiento (preset `pi05_snumpr_conflict_mean_source`): repositorio `Donghyun1228/vla_adaptation`, código `36089217` (no se proporciona URL directa en la información disponible)
 - Dataset IL: `Donghyun1228/snumpr-realworld-source-il-20261021@414bc9badd62ee2147a33af83ea7d964527cb967` (no se proporciona URL directa)
 - Dataset IDM: `Donghyun1228/snumpr-realworld-original-probe-20261021@cf8a7ea9f606d6b5ffa84775a4cbc4fce28a0b67` (no se proporciona URL directa)

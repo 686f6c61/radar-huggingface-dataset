@@ -54,6 +54,6 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- [HuggingFace - HoangTran223/RSPO_Qwen2.5-1.5B](https://huggingface.co/HoangTran223/RSPO_Qwen2.5-1.5B)
+- [Hugging Face - HoangTran223/RSPO_Qwen2.5-1.5B](https://huggingface.co/HoangTran223/RSPO_Qwen2.5-1.5B)
 - [Modelo base - Qwen/Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Modelo relacionado - HoangTran223/S-SPPO_Qwen2.5-1.5B](https://huggingface.co/HoangTran223/S-SPPO_Qwen2.5-1.5B)

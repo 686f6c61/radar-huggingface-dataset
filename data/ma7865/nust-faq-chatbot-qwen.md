@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MA7865/nust-faq-chatbot-qwen es un modelo publicado en HuggingFace por el usuario MA7865, con un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) segun los pesos en formato safetensors del repositorio. El nombre del repositorio sugiere un ajuste fino orientado a un chatbot de preguntas frecuentes (FAQ) para una institucion identificada como NUST, y la coletilla "qwen" apunta a que deriva de la familia Qwen, aunque ninguna de estas dos afirmaciones esta confirmada por la informacion disponible: el repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
+MA7865/nust-faq-chatbot-qwen es un modelo publicado en Hugging Face por el usuario MA7865, con un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones) segun los pesos en formato safetensors del repositorio. El nombre del repositorio sugiere un ajuste fino orientado a un chatbot de preguntas frecuentes (FAQ) para una institucion identificada como NUST, y la coletilla "qwen" apunta a que deriva de la familia Qwen, aunque ninguna de estas dos afirmaciones esta confirmada por la informacion disponible: el repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
 
-Se distribuye exclusivamente en formato GGUF, con la etiqueta "imatrix", lo que indica que las cuantizaciones se han calibrado mediante matrices de importancia (importance matrix), una tecnica habitual en llama.cpp para reducir la perdida de calidad en cuantizaciones agresivas. Tambien lleva la etiqueta "endpoints_compatible", lo que apunta a compatibilidad con los endpoints de inferencia de HuggingFace, y "conversational", que lo situa como modelo de dialogo. No hay informacion publica sobre el dataset de entrenamiento, el proceso de alineamiento ni la longitud de contexto.
+Se distribuye exclusivamente en formato GGUF, con la etiqueta "imatrix", lo que indica que las cuantizaciones se han calibrado mediante matrices de importancia (importance matrix), una tecnica habitual en llama.cpp para reducir la perdida de calidad en cuantizaciones agresivas. Tambien lleva la etiqueta "endpoints_compatible", lo que apunta a compatibilidad con los endpoints de inferencia de Hugging Face, y "conversational", que lo situa como modelo de dialogo. No hay informacion publica sobre el dataset de entrenamiento, el proceso de alineamiento ni la longitud de contexto.
 
 El interes del modelo es, a dia de hoy, limitado y fundamentalmente experimental: acumula 0 descargas y 1 "like", no tiene licencia declarada y no presenta resultados de benchmarks. Es relevante unicamente como ejemplo de ajuste fino de un modelo de ~1,5B parametros para un dominio muy concreto (FAQ institucional) y empaquetado en GGUF, un perfil que cabe en hardware de consumo.
 
@@ -36,7 +36,7 @@ Tampoco se dispone de informacion sobre el numero de tokens de entrenamiento, la
 
 - Generacion de texto conversacional en formato de dialogo (etiqueta "conversational").
 - Respuesta a preguntas frecuentes: es el caso de uso que sugiere el nombre del repositorio, aunque no hay ejemplos, ejemplos de prompt ni evaluacion publicada.
-- Compatibilidad declarada con endpoints de inferencia de HuggingFace (etiqueta "endpoints_compatible").
+- Compatibilidad declarada con endpoints de inferencia de Hugging Face (etiqueta "endpoints_compatible").
 - Ejecucion local mediante el ecosistema GGUF (llama.cpp y derivados), dado el formato de pesos.
 - Razonamiento complejo, generacion de codigo, matematicas, vision, audio, tool calling, function calling, uso como agente y modo "thinking": no disponibles; no hay ninguna evidencia en la informacion proporcionada de que el modelo soporte estas capacidades.
 - Capacidades multilingues: no disponibles; no se declara ninguna lista de idiomas.
@@ -69,7 +69,7 @@ Estimaciones derivadas del numero de parametros (1.543.714.304); la arquitectura
 - Cache KV: depende de la arquitectura y del contexto configurado; en configuraciones tipicas de modelos de este tamano con atencion por consultas agrupadas (GQA) suele anadir unos pocos cientos de MB hasta 1 GB en contextos de 8k a 32k tokens. Dato no confirmado para este modelo.
 - GPU consumer: si, cabe sobradamente en cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 2070, GTX 1660 con cuantizacion Q4). En cuantizaciones bajas puede ejecutarse integramente en CPU con 4-8 GB de RAM.
 - GPU de datacenter: no requiere A100 ni H100; funcionaria en cualquier GPU de gama media o baja (T4, L4, A10G), resultando enormemente sobredimensionada cualquier H100.
-- Opciones de despliegue: llama.cpp y sus envoltorios (Ollama, LM Studio, llama-cpp-python) por el formato GGUF; tambien es compatible con endpoints de HuggingFace segun la etiqueta del repositorio. vLLM y TGI no soportan GGUF de forma nativa sin conversion a safetensors.
+- Opciones de despliegue: llama.cpp y sus envoltorios (Ollama, LM Studio, llama-cpp-python) por el formato GGUF; tambien es compatible con endpoints de Hugging Face segun la etiqueta del repositorio. vLLM y TGI no soportan GGUF de forma nativa sin conversion a safetensors.
 - Latencia y throughput: no disponibles. En una GPU consumer y con cuantizacion de 4 bits, un modelo de este tamano suele generar decenas de tokens por segundo, pero no hay medicion publicada para este repositorio concreto.
 
 ## Comparativa con modelos similares
@@ -99,6 +99,6 @@ No se dispone de informacion suficiente para establecer una comparativa de rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MA7865/nust-faq-chatbot-qwen
+- Modelo en Hugging Face: https://huggingface.co/MA7865/nust-faq-chatbot-qwen
 
 No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados de busqueda obtenidos no guardan relacion con el modelo (paginas de ayuda de cuentas de correo y foros de iniciar sesion) y se descartan por no ser fuentes relevantes.

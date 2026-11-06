@@ -4,7 +4,7 @@
 
 El modelo **NOOB2-Project-Character-Reference-Bypass-Injector-Research** es un checkpoint experimental de generación de imágenes anime desarrollado por el usuario LAXMAYDAY como parte del proyecto NOOB2. Su objetivo principal es investigar técnicas de "bypass de inyección de referencia de personaje" (character reference bypass), permitiendo condicionar la generación de una nueva ilustración a partir de una o dos imágenes de referencia, además de un prompt de texto. Está basado en el modelo Anima de circlestone-labs, del que se ha realizado un fine-tuning específico.
 
-El modelo genera una ilustración anime desde ruido puro, condicionada por un prompt textual y hasta dos imágenes de referencia asignadas a ranuras ordenadas (slot 0 y slot 1). Esto permite mantener la identidad visual de un personaje concreto mientras se varía la escena, el vestuario o el estilo. Se trata de una propuesta de investigación, con acceso restringido en HuggingFace y una licencia mixta, lo que limita su uso directo en producción sin revisar las condiciones.
+El modelo genera una ilustración anime desde ruido puro, condicionada por un prompt textual y hasta dos imágenes de referencia asignadas a ranuras ordenadas (slot 0 y slot 1). Esto permite mantener la identidad visual de un personaje concreto mientras se varía la escena, el vestuario o el estilo. Se trata de una propuesta de investigación, con acceso restringido en Hugging Face y una licencia mixta, lo que limita su uso directo en producción sin revisar las condiciones.
 
 Su relevancia radica en que aborda un problema común en la generación de imágenes con referencia: la inyección de características del personaje de forma consistente y controlada. Aunque no se han publicado especificaciones técnicas detalladas, el tamaño del repositorio (25,9 GB) sugiere un modelo de difusión de gran escala, probablemente en formato de pesos completos.
 
@@ -59,7 +59,7 @@ No se dispone de información sobre modelos comparables específicos. No se han 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated) en HuggingFace: es necesario aceptar las condiciones del autor antes de poder descargar el modelo.
+- Acceso restringido (gated) en Hugging Face: es necesario aceptar las condiciones del autor antes de poder descargar el modelo.
 - Licencia mixta: el uso comercial puede estar restringido; se debe revisar la licencia exacta en el repositorio antes de cualquier aplicación en producción.
 - Modelo experimental: al ser un checkpoint de investigación, puede presentar artefactos visuales, inconsistencias en la identidad del personaje o fallos en la generación con referencias complejas.
 - Sesgos potenciales: al estar orientado a anime, puede reflejar sesgos de estilo, género o representación cultural presentes en los datos de entrenamiento.
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables específicos. No se han 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research
-- README en HuggingFace: https://huggingface.co/LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research/blob/main/README.md
+- Hugging Face: https://huggingface.co/LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research
+- README en Hugging Face: https://huggingface.co/LAXMAYDAY/NOOB2-Project-Character-Reference-Bypass-Injector-Research/blob/main/README.md
 - Página en Civitai: https://civitai.com/models/2797093/noob2-project-character-reference-bypass-injector-research
 - Repositorio GitHub relacionado (técnicas de bypass, no oficial del modelo): https://github.com/l0gicx/ai-model-bypass

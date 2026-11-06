@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/emwesoft/GLM-5.3-NVFP4-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/emwesoft/GLM-5.3-NVFP4-MTP-GGUF
 - Versión sin MTP: https://huggingface.co/emwesoft/GLM-5.3-NVFP4-GGUF
 - Drafters DFlash2: https://huggingface.co/emwesoft/GLM-5.3-DFlash2-GGUF
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3

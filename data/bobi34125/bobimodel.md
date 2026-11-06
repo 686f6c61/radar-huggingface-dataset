@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BobiModel es un modelo publicado en HuggingFace por el usuario bobi34125 bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente contiene el campo de licencia, sin descripción, sin especificaciones técnicas, sin información sobre datos de entrenamiento ni sobre capacidades. No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados.
+BobiModel es un modelo publicado en Hugging Face por el usuario bobi34125 bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente contiene el campo de licencia, sin descripción, sin especificaciones técnicas, sin información sobre datos de entrenamiento ni sobre capacidades. No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados.
 
-El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-03T13:11:33.000Z), lo que sugiere una publicación inicial sin iteraciones posteriores documentadas. Tampoco se indica un pipeline de HuggingFace asociado, por lo que no es posible confirmar la tarea para la que fue diseñado (text-generation, text-classification, etc.).
+El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-03T13:11:33.000Z), lo que sugiere una publicación inicial sin iteraciones posteriores documentadas. Tampoco se indica un pipeline de Hugging Face asociado, por lo que no es posible confirmar la tarea para la que fue diseñado (text-generation, text-classification, etc.).
 
 Por tanto, esta ficha se limita a reflejar los metadatos disponibles y marca explícitamente como "no disponible" cualquier dato técnico que no pueda verificarse. No debe considerarse una evaluación funcional del modelo: sin model card, sin benchmarks y sin información de entrenamiento, no es posible determinar su idoneidad para ningún caso de uso en producción.
 
@@ -39,11 +39,11 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 ## Casos de uso
 
 - Evaluación exploratoria en entornos de investigación: el modelo puede cargarse para inspeccionar su comportamiento, pero sin documentación previa no es posible anticipar su rendimiento en ninguna tarea concreta.
-- Pruebas de integración en pipelines de HuggingFace: dado que el repositorio existe en la plataforma, podría intentarse su carga mediante `transformers` o `AutoModel`, aunque se desconoce la clase y configuración necesarias.
+- Pruebas de integración en pipelines de Hugging Face: dado que el repositorio existe en la plataforma, podría intentarse su carga mediante `transformers` o `AutoModel`, aunque se desconoce la clase y configuración necesarias.
 - Experimentación con licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su inclusión en prototipos internos sin restricciones legales adicionales.
 - Comparación de baseline en estudios de evaluación: podría emplearse como referencia secundaria, siempre que se documente la ausencia de métricas publicadas.
-- Docencia y formación: útil como ejemplo de repositorio con model card incompleta para ilustrar buenas prácticas de documentación en HuggingFace.
-- Auditoría de metadatos: permite estudiar patrones de publicación en HuggingFace (repositorios sin pipeline, sin descargas, con licencia pero sin contenido técnico).
+- Docencia y formación: útil como ejemplo de repositorio con model card incompleta para ilustrar buenas prácticas de documentación en Hugging Face.
+- Auditoría de metadatos: permite estudiar patrones de publicación en Hugging Face (repositorios sin pipeline, sin descargas, con licencia pero sin contenido técnico).
 
 En todos los casos, la idoneidad real del modelo no puede confirmarse sin información técnica adicional.
 
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bobi34125/BobiModel
+- Hugging Face: https://huggingface.co/bobi34125/BobiModel
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

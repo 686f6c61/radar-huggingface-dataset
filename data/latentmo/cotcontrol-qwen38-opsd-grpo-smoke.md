@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada otros ada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-qwen38-opsd-grpo-smoke
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-qwen38-opsd-grpo-smoke
 - Repositorio de código y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Configuración del run: `cot-control/results/rl/opsd-grpo-smoke/` (`config.json`, `checkpoints.json`) dentro del repositorio anterior
 - Diario de ejecución: `runs/` dentro del repositorio anterior

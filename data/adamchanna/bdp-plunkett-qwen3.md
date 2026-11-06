@@ -2,7 +2,7 @@
 
 ## Resumen
 
-adamchanna/bdp-plunkett-qwen3 es un repositorio de modelo publicado en HuggingFace por el usuario adamchanna. La única información verificable del repositorio es su licencia (apache-2.0), la etiqueta de región (region:us) y las fechas de creación y actualización, ambas idénticas (10 de septiembre de 2026). No se ha publicado model card con descripción, arquitectura, datos de entrenamiento o resultados de evaluación: el README se limita a repetir la declaración de licencia.
+adamchanna/bdp-plunkett-qwen3 es un repositorio de modelo publicado en Hugging Face por el usuario adamchanna. La única información verificable del repositorio es su licencia (apache-2.0), la etiqueta de región (region:us) y las fechas de creación y actualización, ambas idénticas (10 de septiembre de 2026). No se ha publicado model card con descripción, arquitectura, datos de entrenamiento o resultados de evaluación: el README se limita a repetir la declaración de licencia.
 
 El nombre del repositorio sugiere una relación con la familia Qwen3 (el sufijo "qwen3" apunta a un ajuste fino, una fusión o una variante derivada), pero esta relación no está confirmada por ninguna documentación del autor, por lo que debe tratarse como una hipótesis no verificada y no como un hecho.
 
@@ -84,7 +84,7 @@ No es posible establecer una comparativa fiable: se desconocen los parámetros, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| adamchanna/bdp-plunkett-qwen3 | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| adamchanna/bdp-plunkett-qwen3 | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas de la familia Qwen3 | no aplicable a esta comparación | no disponible | no disponible | no disponible |
 | Otras alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ La comparación con modelos de la misma categoría requeriría, como mínimo, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adamchanna/bdp-plunkett-qwen3
+- Repositorio en Hugging Face: https://huggingface.co/adamchanna/bdp-plunkett-qwen3
 - Model card del autor: no disponible (el README solo contiene la declaración de licencia)
 - Paper o informe técnico: no disponible
 - Repositorio de código asociado: no disponible

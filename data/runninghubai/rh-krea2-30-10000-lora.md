@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-krea2-30-10000-lora | LoRA sobre krea2 | no disponible (224 MiB de pesos) | no aplica | no disponible | HuggingFace y RunningHub |
-| LoRAs de la comunidad sobre SDXL | LoRA sobre SDXL | ~50-300 MiB | no aplica | varía (a menudo CreativeML OpenRAIL-M) | Civitai, HuggingFace |
-| LoRAs de la comunidad sobre Flux.1 | LoRA sobre Flux | ~100-500 MiB | no aplica | varía (a menudo no comercial) | HuggingFace, Civitai |
+| rh-krea2-30-10000-lora | LoRA sobre krea2 | no disponible (224 MiB de pesos) | no aplica | no disponible | Hugging Face y RunningHub |
+| LoRAs de la comunidad sobre SDXL | LoRA sobre SDXL | ~50-300 MiB | no aplica | varía (a menudo CreativeML OpenRAIL-M) | Civitai, Hugging Face |
+| LoRAs de la comunidad sobre Flux.1 | LoRA sobre Flux | ~100-500 MiB | no aplica | varía (a menudo no comercial) | Hugging Face, Civitai |
 
 No se dispone de datos de rendimiento comparables para este LoRA concreto, por lo que la comparativa se limita a características estructurales y de licencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables para este LoRA concreto, por l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-30-10000-lora
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-30-10000-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2081262811581624321
 - Página del autor: https://www.runninghub.ai/user-center/2064710712105979905
 - RunningHub (internacional): https://www.runninghub.ai

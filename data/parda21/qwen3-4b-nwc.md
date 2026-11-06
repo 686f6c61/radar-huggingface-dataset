@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de latencia de las variantes cuantizadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Parda21/Qwen3-4B-NWC
+- Modelo en Hugging Face: https://huggingface.co/Parda21/Qwen3-4B-NWC
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de la librería y del formato NWC: https://github.com/parda21/NWC
 - Documentación del formato: `docs/format.md` dentro de https://github.com/parda21/NWC

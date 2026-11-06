@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks ni de especificaciones técnicas de políti
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tug-of-war-tug-leader-v4 | no disponible | no aplica | no disponible (solo afirmaciones cualitativas) | no disponible | HuggingFace, 0 descargas |
+| microduck-tug-of-war-tug-leader-v4 | no disponible | no aplica | no disponible (solo afirmaciones cualitativas) | no disponible | Hugging Face, 0 descargas |
 | Versiones previas de la familia tug-leader (v1-v3) | no disponible | no aplica | no disponible | no disponible | no verificadas en la información disponible |
 | Otras políticas del ecosistema microduck | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones técnicas de políti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/greecree/microduck-tug-of-war-tug-leader-v4
+- Modelo en Hugging Face: https://huggingface.co/greecree/microduck-tug-of-war-tug-leader-v4
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y código de entrenamiento: https://github.com/green-creeper/microduck-challenges
 - Manifiesto de políticas (documentación referenciada, `docs/policy-manifest.md` del repositorio del daemon): no disponible como URL directa en la información proporcionada

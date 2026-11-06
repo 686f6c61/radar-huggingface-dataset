@@ -97,7 +97,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aoife1111/connectailab-rl-aoife-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/Aoife1111/connectailab-rl-aoife-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab (entrenamiento RL): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

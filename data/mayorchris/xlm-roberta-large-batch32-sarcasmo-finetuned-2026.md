@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MayorChris/xlm-roberta-large-batch32-sarcasmo-finetuned-2026` es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) supervisado de `FacebookAI/xlm-roberta-large` para la detección de sarcasmo. Lo publica el usuario MayorChris en HuggingFace con licencia MIT y pipeline `text-classification`. No es un modelo generativo: es un encoder Transformer que devuelve una etiqueta (y sus logits) para un texto de entrada, por lo que su utilidad está acotada a tareas de clasificación, no a diálogo ni a generación de código.
+`MayorChris/xlm-roberta-large-batch32-sarcasmo-finetuned-2026` es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) supervisado de `FacebookAI/xlm-roberta-large` para la detección de sarcasmo. Lo publica el usuario MayorChris en Hugging Face con licencia MIT y pipeline `text-classification`. No es un modelo generativo: es un encoder Transformer que devuelve una etiqueta (y sus logits) para un texto de entrada, por lo que su utilidad está acotada a tareas de clasificación, no a diálogo ni a generación de código.
 
 El modelo cuenta con 559.892.482 parámetros reales según los pesos en safetensors, lo que corresponde exactamente al tamano del encoder XLM-RoBERTa-large. El repositorio ocupa 22,4 GB, un tamano muy superior al de los pesos en precision simple (unos 2,2 GB), lo que sugiere la presencia de checkpoints intermedios o estados del optimizador de las 10 epocas de entrenamiento.
 
@@ -33,7 +33,7 @@ Los hiperparametros declarados son: tasa de aprendizaje 1e-5, batch de entrenami
 - Deteccion de sarcasmo y, por extension, de ironia o carga pragmatica en textos cortos, segun el corpus de ajuste (no documentado).
 - Analisis de sentimiento y moderacion de contenido si el esquema de etiquetas del ajuste fino lo contempla; el autor no publica el mapeo `id2label`.
 - Potencial cobertura multilingue heredada de XLM-R, no verificada ni declarada para este checkpoint.
-- Compatibilidad con `text-embeddings-inference` y con endpoints de HuggingFace, segun los tags del repositorio (orientado a inferencia de baja latencia).
+- Compatibilidad con `text-embeddings-inference` y con endpoints de Hugging Face, segun los tags del repositorio (orientado a inferencia de baja latencia).
 - No soporta generacion de texto, tool calling, function calling, razonamiento multi-paso, agentes, vision ni audio.
 
 ## Casos de uso
@@ -48,7 +48,7 @@ Los hiperparametros declarados son: tasa de aprendizaje 1e-5, batch de entrenami
 
 ## Benchmarks y rendimiento
 
-El campo `model-index` de la model card esta vacio (`results: []`), por lo que no hay resultados declarados en el formato estandar de HuggingFace. Las unicas cifras disponibles son las metricas de evaluacion del autor sobre un conjunto de validacion no documentado:
+El campo `model-index` de la model card esta vacio (`results: []`), por lo que no hay resultados declarados en el formato estandar de Hugging Face. Las unicas cifras disponibles son las metricas de evaluacion del autor sobre un conjunto de validacion no documentado:
 
 | Metrica | Valor final (epoca 10) |
 |---|---|
@@ -110,7 +110,7 @@ No se dispone de cifras de rendimiento publicadas para las alternativas en el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayorChris/xlm-roberta-large-batch32-sarcasmo-finetuned-2026
+- Modelo en Hugging Face: https://huggingface.co/MayorChris/xlm-roberta-large-batch32-sarcasmo-finetuned-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Paper de XLM-RoBERTa (Conneau et al., 2019): https://arxiv.org/abs/1911.02116
 - Paper de RoBERTa (Liu et al., 2019): https://arxiv.org/abs/1907.11692

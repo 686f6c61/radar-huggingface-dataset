@@ -101,7 +101,7 @@ Rendimiento por clase (mAP@50 / mAP@50-95):
 
 | Modelo | Parámetros | mAP@50 (UAVDT) | mAP@50-95 (UAVDT) | Precision / Recall | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| uavdt-yolov9s (este) | 7,3 M | 31,82 | 18,71 | 39,83 / 38,12 | AGPL-3.0 | HuggingFace, repo de 0,0 GB |
+| uavdt-yolov9s (este) | 7,3 M | 31,82 | 18,71 | 39,83 / 38,12 | AGPL-3.0 | Hugging Face, repo de 0,0 GB |
 | RF-DETR Nano | no disponible | 32,78 | 20,31 | 73,60 / 66,98 | no disponible en la información | citado en la tabla del autor |
 | YOLOv9t | no disponible | 29,42 | 17,03 | 35,75 / 36,47 | no disponible en la información | citado en la tabla del autor |
 | YOLOv11n | no disponible | 28,56 | 16,30 | 38,04 / 32,26 | no disponible en la información | citado en la tabla del autor |
@@ -118,14 +118,14 @@ En la comparativa publicada, este checkpoint obtiene el segundo mejor mAP@50 y m
 - Sin información sobre sesgos: no se documenta el equilibrio geográfico, temporal o de condiciones de captura del dataset, ni sus implicaciones en el comportamiento del modelo.
 - Riesgo de alucinación en sentido estricto: no aplica (no es un modelo generativo), pero sí existe riesgo de detecciones espurias, especialmente en las clases minoritarias.
 - Licencia AGPL-3.0: licencia copyleft fuerte. El uso del modelo en un servicio ofrecido por red puede obligar a liberar el código fuente derivado. Es un obstáculo relevante para integraciones comerciales propietarias.
-- Tamaño del repositorio de 0,0 GB: el repositorio de HuggingFace figura con un tamaño de 0,0 GB, lo que sugiere que los pesos (`best.pt`) podrían no estar presentes o no estar contabilizados. Conviene verificar la descarga antes de integrar el modelo en un pipeline.
+- Tamaño del repositorio de 0,0 GB: el repositorio de Hugging Face figura con un tamaño de 0,0 GB, lo que sugiere que los pesos (`best.pt`) podrían no estar presentes o no estar contabilizados. Conviene verificar la descarga antes de integrar el modelo en un pipeline.
 - Adopción nula y sin validación de la comunidad: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en producción ni informes de terceros.
 - Sin información sobre cuantización ni formatos exportados: cualquier despliegue en producción requerirá que el equipo realice y valide su propia conversión (ONNX, TensorRT, etc.).
 - Sin datos de latencia, throughput ni consumo: no es posible dimensionar infraestructura con la información publicada.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolov9s
+- Página del modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolov9s
 - Dataset UAVDT del autor: https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLOv9

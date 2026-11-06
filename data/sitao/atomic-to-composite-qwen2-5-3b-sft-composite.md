@@ -91,7 +91,7 @@ Frente al Qwen2.5-3B base, este modelo está especializado en la tarea COMP y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-sft-composite
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-sft-composite
 - Paper (arXiv): https://arxiv.org/abs/2512.01970
 - Página del proyecto: https://sitaocheng.github.io/atomic/
 - Código (GitHub): https://github.com/sitaocheng/from_atomic_to_composite

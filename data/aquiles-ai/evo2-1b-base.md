@@ -81,7 +81,7 @@ No hay datos disponibles que comparen este modelo con alternativas en la misma t
 
 | Modelo | Parametros | Contexto | Implementacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Evo2-1B-Base (port de Aquiles-ai) | 1.107.990.016 | 8192 tokens | PyTorch puro, carga con `AutoModelForCausalLM` | Apache-2.0 (port) | HuggingFace, safetensors, `trust_remote_code=True` |
+| Evo2-1B-Base (port de Aquiles-ai) | 1.107.990.016 | 8192 tokens | PyTorch puro, carga con `AutoModelForCausalLM` | Apache-2.0 (port) | Hugging Face, safetensors, `trust_remote_code=True` |
 | Evo 2 1B base original (`evo2_1b_base`, Arc Institute) | 1B | No disponible en la informacion proporcionada | Vortex, con Transformer Engine y kernels personalizados | Terminos originales del proyecto Evo 2 | Repositorio oficial del Arc Institute |
 | Otros modelos genomicos de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -103,7 +103,7 @@ La comparacion relevante en este caso es entre el checkpoint original y su port:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aquiles-ai/Evo2-1B-Base
+- Modelo en Hugging Face: https://huggingface.co/Aquiles-ai/Evo2-1B-Base
 - Repositorio del proyecto original Evo 2 (Arc Institute): https://github.com/ArcInstitute/evo2
 - Codigo de conversion del checkpoint: https://github.com/Aquiles-ai/Evo2-transformers
 - Paper original: Brixi et al., "Genome modelling and design across all domains of life with Evo 2", Nature, 2026. DOI: https://doi.org/10.1038/s41586-026-10176-5

@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-3Bit
+- Repositorio Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-3Bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Informacion sobre Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

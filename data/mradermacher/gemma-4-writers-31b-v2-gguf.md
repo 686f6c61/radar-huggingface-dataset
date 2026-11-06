@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento del modelo ni de sus alternativas en la in
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Gemma-4-Writers-31B-V2-GGUF | ~30,7B | GGUF (multiples cuantizaciones) | no disponible | apache-2.0 | HuggingFace |
-| Ateron/Gemma-4-Writers-31B-V2 (base) | ~30,7B | safetensors | no disponible | apache-2.0 | HuggingFace |
+| mradermacher/Gemma-4-Writers-31B-V2-GGUF | ~30,7B | GGUF (multiples cuantizaciones) | no disponible | apache-2.0 | Hugging Face |
+| Ateron/Gemma-4-Writers-31B-V2 (base) | ~30,7B | safetensors | no disponible | apache-2.0 | Hugging Face |
 
 Comparativas con otros merges de ~30B orientados a `roleplay`: no disponible.
 

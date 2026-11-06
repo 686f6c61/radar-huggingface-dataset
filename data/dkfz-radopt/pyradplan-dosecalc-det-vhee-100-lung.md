@@ -72,11 +72,11 @@ La comparativa se limita a los modelos de la misma colección DKFZ-RadOpt, ya qu
 - Rango espacial limitado: las predicciones fuera del rango declarado (52 mm lateral, [−350, 350] mm en profundidad) no son precisas. `AIBeamletEngine` emite una advertencia si el plan excede este rango.
 - Ejecución de código remoto: cargar el modelo ejecuta `model.py` y `preprocessor.py` incluidos en el repositorio, con `trust_remote_code` activado por defecto en `pyRadPlan.ml`. Esto supone un riesgo de seguridad si el repositorio se ve comprometido.
 - Sin datos de validación clínica: no se publican benchmarks ni métricas de precisión dosimétrica, por lo que su uso en entornos clínicos reales requiere una validación independiente exhaustiva.
-- Modelo muy reciente y sin adopción: cuenta con 0 descargas y 0 likes en HuggingFace (fecha de creación: 2026-08-31), lo que indica que aún no ha sido ampliamente evaluado por la comunidad.
+- Modelo muy reciente y sin adopción: cuenta con 0 descargas y 0 likes en Hugging Face (fecha de creación: 2026-08-31), lo que indica que aún no ha sido ampliamente evaluado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-VHEE-100-lung
+- Modelo en Hugging Face: https://huggingface.co/DKFZ-RadOpt/pyRadPlan-dosecalc-Det-VHEE-100-lung
 - Colección pyRadPlan-dosecalc: https://huggingface.co/collections/DKFZ-RadOpt/pyradplan-dosecalc
 - Documentación de pyRadPlan: https://pyradplan.readthedocs.io/en/latest/
 - Repositorio GitHub de pyRadPlan: https://github.com/e0404/pyRadPlan

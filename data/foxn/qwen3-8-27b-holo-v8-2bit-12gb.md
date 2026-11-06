@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Holo-V8 es un pipeline de cuantizacion post-entrenamiento (PTQ) y un motor de inferencia en Python + Triton que permite ejecutar un modelo de la familia Qwen 3.8 de 27.000 millones de parametros dentro de una unica GPU consumer de 12 GB de VRAM, en concreto una RTX 3060. El autor, identificado como `foxn`, es un entusiasta independiente del hardware y no un laboratorio academico. El repositorio de HuggingFace contiene unicamente los pesos cuantizados (~11,6 GB) y el codigo del motor vive en un repositorio de GitHub aparte.
+Holo-V8 es un pipeline de cuantizacion post-entrenamiento (PTQ) y un motor de inferencia en Python + Triton que permite ejecutar un modelo de la familia Qwen 3.8 de 27.000 millones de parametros dentro de una unica GPU consumer de 12 GB de VRAM, en concreto una RTX 3060. El autor, identificado como `foxn`, es un entusiasta independiente del hardware y no un laboratorio academico. El repositorio de Hugging Face contiene unicamente los pesos cuantizados (~11,6 GB) y el codigo del motor vive en un repositorio de GitHub aparte.
 
 El problema que aborda es concreto: un modelo de 27B en BF16 ocupa mas de 51 GB, lo que obliga a descargar capas a RAM del sistema por PCIe y hunde el rendimiento a 1,5-3 tok/s, o a usar cuantizaciones extremas de 2 bits (`Q2_K`, `IQ2_XXS`) que degradan severamente la perplejidad en arquitecturas hibridas. Holo-V8 propone una cuantizacion efectiva de ~2,05 bits basada en codigos Hadamard de 4 dimensiones y proteccion AWQ-Hessian, con ramas dispersas de outliers en FP8, alcanzando 14,9-15,2 tok/s con cero trafico PCIe de pesos durante la generacion.
 
@@ -84,7 +84,7 @@ No se dispone de comparaciones publicadas con otros modelos en la informacion pr
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Holo-V8 (Qwen3.8-27B) | 27B | 16K / 8K | ~2,05 bits AWQ-Hessian | Apache 2.0 | HuggingFace + GitHub |
+| Holo-V8 (Qwen3.8-27B) | 27B | 16K / 8K | ~2,05 bits AWQ-Hessian | Apache 2.0 | Hugging Face + GitHub |
 | Holo-V7 | 27B | 4K | 2 bits uniforme | no disponible | no disponible |
 | Qwen 3.8 27B (BF16) | 27B | no disponible | BF16 (>51 GB) | Apache 2.0 | no disponible en la informacion |
 
@@ -105,7 +105,7 @@ No hay datos de benchmarks comparativos con otros modelos de 27B ni con alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/foxn/Qwen3.8-27B-Holo-V8-2bit-12GB
+- Hugging Face: https://huggingface.co/foxn/Qwen3.8-27B-Holo-V8-2bit-12GB
 - GitHub (motor de inferencia, kernels Triton y auditoria): https://github.com/FOXN123/Holo-V8-Qwen3.8-27B-12GB
 - Notas tecnicas (desglose matematico, ablacion de kernels V1-V9, auditoria metodologica): `TECHNICAL_NOTES.md` en el repositorio de GitHub
 - Auditoria de benchmarks: carpeta `benchmarks_audit/` en el repositorio de GitHub

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniManjoro-25M es un modelo publicado en HuggingFace por el usuario SatoshiManjoro bajo licencia Apache 2.0. Con aproximadamente 25 millones de parámetros en el nombre, se situaría en la categoría de modelos extremadamente pequeños, por debajo incluso de modelos como GPT-2 small (124M) o TinyLlama (1.1B). No obstante, la model card pública no contiene ninguna información técnica más allá de la declaración de licencia, por lo que no es posible confirmar arquitectura, datos de entrenamiento ni capacidades reales.
+MiniManjoro-25M es un modelo publicado en Hugging Face por el usuario SatoshiManjoro bajo licencia Apache 2.0. Con aproximadamente 25 millones de parámetros en el nombre, se situaría en la categoría de modelos extremadamente pequeños, por debajo incluso de modelos como GPT-2 small (124M) o TinyLlama (1.1B). No obstante, la model card pública no contiene ninguna información técnica más allá de la declaración de licencia, por lo que no es posible confirmar arquitectura, datos de entrenamiento ni capacidades reales.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes en el momento de la consulta) y no declara pipeline, idiomas ni formato de pesos. Esto sugiere un experimento personal o un artefacto en fase muy temprana de publicación, sin documentación asociada.
 
@@ -80,5 +80,5 @@ La comparativa se ofrece solo como referencia de categoría; MiniManjoro-25M no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SatoshiManjoro/MiniManjoro-25M
+- Hugging Face: https://huggingface.co/SatoshiManjoro/MiniManjoro-25M
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

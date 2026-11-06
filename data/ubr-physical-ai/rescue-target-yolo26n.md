@@ -94,6 +94,6 @@ No se han encontrado modelos comparables de la misma categoría en la informaci�
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/ubr-physical-ai/rescue-target-yolo26n
+- Página del modelo en Hugging Face: https://huggingface.co/ubr-physical-ai/rescue-target-yolo26n
 - Dataset de entrenamiento: https://huggingface.co/datasets/ubr-physical-ai/isaac-sdg-rescue-target
 - Modelo base Ultralytics/YOLO26: https://huggingface.co/Ultralytics/YOLO26

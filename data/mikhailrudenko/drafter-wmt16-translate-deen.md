@@ -102,7 +102,7 @@ Observacion: los drafters generalistas o de comprension (`drafter-understanding`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-deen
+- Modelo en Hugging Face: https://huggingface.co/MikhailRudenko/drafter-wmt16-translate-deen
 - Modelo base (drafter mixto U+T): https://huggingface.co/MikhailRudenko/drafter-mixed-ut
 - Drafter de comprension: https://huggingface.co/MikhailRudenko/drafter-understanding
 - Drafter de reformulacion de texto: https://huggingface.co/MikhailRudenko/drafter-text-reformulation

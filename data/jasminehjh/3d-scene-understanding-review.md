@@ -4,7 +4,7 @@
 
 Este repositorio, publicado bajo el identificador `jasminehjh/3d-scene-understanding-review`, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre comprensión de escenas 3D. El autor lo describe explícitamente como "research notes" y aclara que no incluye checkpoints, código liberado ni resultados experimentales. El contenido principal es un archivo `paper_notes.md` que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, referencias a benchmarks públicos y preguntas abiertas.
 
-A pesar de que los metadatos de HuggingFace incluyen etiquetas como `transformer` y `safetensors`, el tamaño del repositorio es de 0.0 GB y el número de parámetros reportado (49.600) corresponde probablemente a un archivo de texto o metadatos, no a un modelo de lenguaje. Por tanto, no es un modelo utilizable para inferencia ni para tareas de generación. Su relevancia actual radica en servir como punto de partida documental para investigadores interesados en el área de comprensión de escenas 3D, aunque no ofrece implementaciones ni resultados verificables.
+A pesar de que los metadatos de Hugging Face incluyen etiquetas como `transformer` y `safetensors`, el tamaño del repositorio es de 0.0 GB y el número de parámetros reportado (49.600) corresponde probablemente a un archivo de texto o metadatos, no a un modelo de lenguaje. Por tanto, no es un modelo utilizable para inferencia ni para tareas de generación. Su relevancia actual radica en servir como punto de partida documental para investigadores interesados en el área de comprensión de escenas 3D, aunque no ofrece implementaciones ni resultados verificables.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 ## Limitaciones y advertencias
 
 - No es un modelo funcional: no se puede descargar ni ejecutar para ninguna tarea de IA.
-- Los metadatos de HuggingFace (parámetros, safetensors) son engañosos y no reflejan la naturaleza real del repositorio.
+- Los metadatos de Hugging Face (parámetros, safetensors) son engañosos y no reflejan la naturaleza real del repositorio.
 - El contenido es exploratorio y no verificado: el propio autor advierte que no hay resultados experimentales ni código liberado.
 - La licencia MIT cubre las notas, pero el autor recomienda revisar los términos de las fuentes de datos externas si se usan con datasets.
 - No hay garantía de mantenimiento ni de que se añadan resultados en el futuro.
@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jasminehjh/3d-scene-understanding-review
+- Repositorio en Hugging Face: https://huggingface.co/jasminehjh/3d-scene-understanding-review
 - Referencia externa relacionada (SceneGPT): https://arxiv.org/pdf/2408.06926
 - Referencia externa relacionada (Scene-LLM): https://arxiv.org/html/2403.11401
 - Tema de GitHub sobre comprensión de escenas 3D: https://github.com/topics/3d-scene-understanding

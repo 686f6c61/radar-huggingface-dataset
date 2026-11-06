@@ -98,7 +98,7 @@ La comparativa se limita a tamaño, contexto, formato y licencia, ya que la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/gpt-neox-20b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/gpt-neox-20b-GGUF
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neox-20b
 - Cuantización original (mradermacher): https://huggingface.co/mradermacher/gpt-neox-20b-GGUF
 - Motor de inferencia 1bit: https://github.com/1bit-MONSTER/engine

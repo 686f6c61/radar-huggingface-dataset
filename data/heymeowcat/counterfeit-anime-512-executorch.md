@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`counterfeit-anime-512-executorch` es la exportación a ExecuTorch del checkpoint de difusión latente **Counterfeit V3.0**, un modelo de texto-a-imagen de estilo anime/ilustración derivado de Stable Diffusion 1.5 y entrenado originalmente por gsdf (publicado en Civitai con el ID 4468). El trabajo lo firma el usuario de HuggingFace `heymeowcat`, que actúa como mantenedor del pipeline de exportación, y no introduce un modelo nuevo: empaqueta un checkpoint existente como programa `.pte` ejecutable en dispositivo mediante la librería `react-native-executorch`.
+`counterfeit-anime-512-executorch` es la exportación a ExecuTorch del checkpoint de difusión latente **Counterfeit V3.0**, un modelo de texto-a-imagen de estilo anime/ilustración derivado de Stable Diffusion 1.5 y entrenado originalmente por gsdf (publicado en Civitai con el ID 4468). El trabajo lo firma el usuario de Hugging Face `heymeowcat`, que actúa como mantenedor del pipeline de exportación, y no introduce un modelo nuevo: empaqueta un checkpoint existente como programa `.pte` ejecutable en dispositivo mediante la librería `react-native-executorch`.
 
 El problema que resuelve es de despliegue, no de modelado. Counterfeit V3.0 estándar requiere 20-25 pasos con CFG 8-10 y prompt negativo, un régimen caro e incompatible con el esquema fijo que usan las pipelines de SD 1.5 en React Native ExecuTorch (4 pasos TCD `[999, 759, 499, 259]`, guidance 1.0, sin rama negativa). Para encajar en ese esquema, el export funde en el UNet el LoRA de destilación **Hyper-SD15-4steps** de ByteDance y conserva el AutoencoderKL completo incrustado en el checkpoint, evitando así el decoder TAESD de 5 MB que provoca el típico emborronado pictórico en la capa rápida.
 
@@ -78,7 +78,7 @@ No hay datos de latencia ni de throughput publicados para el artefacto.
 
 | Modelo | Base | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `counterfeit-anime-512-executorch` (este) | SD 1.5 + Counterfeit V3.0 + Hyper-SD 4 pasos | No disponible | Prompt CLIP 77 tokens; 512 x 512; 4 pasos | Paridad 0,02/255 vs eager; sin benchmarks estandar | openrail | `.pte` FP32, 3,9 GB, en HuggingFace |
+| `counterfeit-anime-512-executorch` (este) | SD 1.5 + Counterfeit V3.0 + Hyper-SD 4 pasos | No disponible | Prompt CLIP 77 tokens; 512 x 512; 4 pasos | Paridad 0,02/255 vs eager; sin benchmarks estandar | openrail | `.pte` FP32, 3,9 GB, en Hugging Face |
 | Counterfeit V3.0 original (gsdf, Civitai 4468) | SD 1.5 | No disponible | 512 x 512; 20-25 pasos, CFG 8-10 | Calidad de referencia del ajuste anime | Abierta segun Civitai (consultar ficha del autor) | `.safetensors` fp16, requiere A1111/ComfyUI/diffusers |
 | `software-mansion/react-native-executorch-sdxs-512-dreamshaper` | SDXS 512 DreamShaper | No disponible | 512 x 512 | No disponible | Consultar ficha | Export ExecuTorch equivalente; origen del `tokenizer.json` reutilizado |
 | Stable Diffusion 1.5 base | SD 1.5 | No disponible en esta informacion | 512 x 512; 20-50 pasos | Referencia generalista, sin especializacion anime | CreativeML OpenRAIL-M | Amplia, multiples formatos |
@@ -100,7 +100,7 @@ La comparación relevante es contra el propio Counterfeit V3.0 sin exportar: est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heymeowcat/counterfeit-anime-512-executorch
+- Modelo en Hugging Face: https://huggingface.co/heymeowcat/counterfeit-anime-512-executorch
 - Modelo base Counterfeit V3.0 (gsdf, Civitai 4468): https://civitai.com/models/4468/counterfeit-v30
 - LoRA de destilación Hyper-SD (ByteDance): https://huggingface.co/ByteDance/Hyper-SD
 - Artículo Hyper-SD: https://arxiv.org/abs/2404.13686

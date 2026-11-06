@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B 2,0538-bit routed experts (r62) es un checkpoint de investigación derivado de Qwen/Qwen3.6-35B-A3B, publicado por el usuario minjaechoi en HuggingFace. Se trata de una variante cuantizada del modelo base en la que únicamente los expertos enrutados de la arquitectura MoE se comprimen a una media de 2,0538 bits, mientras que el resto de los pesos permanece en BF16. El objetivo es estudiar cuánto se puede reducir la precisión de los expertos (que solo se activan de forma dispersa) sin degradar el modelo, algo relevante para investigación sobre cuantización extrema de modelos MoE.
+Qwen3.6-35B-A3B 2,0538-bit routed experts (r62) es un checkpoint de investigación derivado de Qwen/Qwen3.6-35B-A3B, publicado por el usuario minjaechoi en Hugging Face. Se trata de una variante cuantizada del modelo base en la que únicamente los expertos enrutados de la arquitectura MoE se comprimen a una media de 2,0538 bits, mientras que el resto de los pesos permanece en BF16. El objetivo es estudiar cuánto se puede reducir la precisión de los expertos (que solo se activan de forma dispersa) sin degradar el modelo, algo relevante para investigación sobre cuantización extrema de modelos MoE.
 
 El modelo conserva los 35 107 181 936 parámetros totales del base, con arquitectura MoE de tipo qwen3_5_moe y capacidades multimodales (etiqueta image-text-to-text). El identificador interno "r62" sugiere que se trata de una iteración de un barrido experimental de cuantización, no de un modelo destinado a producción. A pesar del nombre "2,05 bits", los pesos se almacenan ya desquantizados en tensores BF16 de safetensors, por lo que el repo ocupa 70,2 GB y no ofrece ahorro real de memoria frente a una versión BF16 estándar.
 
@@ -86,5 +86,5 @@ No se dispone en la informacion proporcionada de datos de benchmarks ni de otros
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p05bit-r62
+- Hugging Face del modelo: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p05bit-r62
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

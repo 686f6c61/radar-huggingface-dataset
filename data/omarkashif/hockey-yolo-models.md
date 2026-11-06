@@ -2,7 +2,7 @@
 
 ## Resumen
 
-omarkashif/hockey-yolo-models es un repositorio de pesos alojado en HuggingFace por el usuario omarkashif, orientado a la deteccion de objetos sobre imagenes y video de hockey sobre hielo. A diferencia de los modelos de lenguaje, no se trata de un transformer generativo: la coleccion pertenece a la familia YOLO (You Only Look Once), un conjunto de detectores de objetos de una sola etapa basados en redes convolucionales, pensados para inferencia en tiempo real sobre flujos de video. El repositorio ocupa 0,2 GB, un tamano coherente con varios conjuntos de pesos de detector ligero.
+omarkashif/hockey-yolo-models es un repositorio de pesos alojado en Hugging Face por el usuario omarkashif, orientado a la deteccion de objetos sobre imagenes y video de hockey sobre hielo. A diferencia de los modelos de lenguaje, no se trata de un transformer generativo: la coleccion pertenece a la familia YOLO (You Only Look Once), un conjunto de detectores de objetos de una sola etapa basados en redes convolucionales, pensados para inferencia en tiempo real sobre flujos de video. El repositorio ocupa 0,2 GB, un tamano coherente con varios conjuntos de pesos de detector ligero.
 
 La relevancia del proyecto se enmarca en el analisis deportivo automatizado: la deteccion y el seguimiento de jugadores, disco y eventos fisicos en partidos de hockey permite generar estadisticas, resaltes automaticos, asistencia arbitral y herramientas de analisis tactico. Trabajos academicos contemporaneos sobre hockey juvenil emplean detectores YOLOv8 combinados con seguimiento multiobjeto (StrongSORT) para identificar eventos de contacto fisico, lo que situa a esta familia de modelos en el centro de la investigacion aplicada al deporte.
 
@@ -25,7 +25,7 @@ No obstante, la informacion publica disponible es minima: el repositorio no decl
 
 La arquitectura declarada corresponde a la familia YOLO, un detector de objetos de una sola etapa que predice simultaneamente cajas delimitadoras y clases en una unica pasada hacia delante sobre la imagen. Las versiones modernas de esta familia (YOLOv5, YOLOv8 y posteriores) emplean un backbone de tipo CSPDarknet, un cuello de red con agregacion de caracteristicas multicapa y una cabeza de deteccion sin anclas, lo que reduce la latencia frente a los detectores de dos etapas como Faster R-CNN. Esta caracteristica los hace idoneos para procesar video a decenas de fotogramas por segundo en GPU de gama media.
 
-No hay informacion disponible sobre el conjunto de datos de entrenamiento, el numero de imagenes o fotogramas utilizados, la composicion de clases (jugadores, disco, porteria, arbitros, etc.), el numero de epocas, las tecnicas de aumento de datos ni si se aplico ajuste fino sobre pesos preentrenados de COCO. Tampoco se documentan innovaciones tecnicas adicionales, procesos de destilacion ni variantes de decodificacion especulativa. El espacio asociado "HockeyAI" en HuggingFace es una plantilla de Streamlit, lo que sugiere una demostracion interactiva, pero no aporta detalles sobre el procedimiento de entrenamiento.
+No hay informacion disponible sobre el conjunto de datos de entrenamiento, el numero de imagenes o fotogramas utilizados, la composicion de clases (jugadores, disco, porteria, arbitros, etc.), el numero de epocas, las tecnicas de aumento de datos ni si se aplico ajuste fino sobre pesos preentrenados de COCO. Tampoco se documentan innovaciones tecnicas adicionales, procesos de destilacion ni variantes de decodificacion especulativa. El espacio asociado "HockeyAI" en Hugging Face es una plantilla de Streamlit, lo que sugiere una demostracion interactiva, pero no aporta detalles sobre el procedimiento de entrenamiento.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omarkashif/hockey-yolo-models | Deteccion de objetos en hockey | no disponible | no aplicable | no disponible | HuggingFace, 0 descargas |
+| omarkashif/hockey-yolo-models | Deteccion de objetos en hockey | no disponible | no aplicable | no disponible | Hugging Face, 0 descargas |
 | Ultralytics YOLOv8 | Deteccion de objetos generica | 3,2 M a 68,2 M segun variante | no aplicable | AGPL-3.0 con opcion de licencia comercial | Ampliamente extendido, documentacion extensa |
 | YOLOv5 (Ultralytics) | Deteccion de objetos generica | 1,9 M a 86,7 M segun variante | no aplicable | AGPL-3.0 | Ampliamente extendido |
 | RT-DETR | Deteccion de objetos en tiempo real | no verificado en la informacion disponible | no aplicable | Apache-2.0 en la implementacion original (PaddleDetection); AGPL-3.0 en la version de Ultralytics | Disponible |
@@ -88,7 +88,7 @@ Advertencia: si los pesos de este repositorio derivan de implementaciones de Ult
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/omarkashif/hockey-yolo-models
+- Repositorio en Hugging Face: https://huggingface.co/omarkashif/hockey-yolo-models
 - Espacio de demostracion HockeyAI: https://huggingface.co/spaces/omarkashif/HockeyAI
 - Evaluacion de cumplimiento normativo (Nerq): https://nerq.ai/agent/17d1ed90-df08-41ed-b163-903bd55f1619
 - Articulo sobre seguimiento de jugadores con vision por computador: https://towardsdatascience.com/spicing-up-ice-hockey-with-ai-player-tracking-with-computer-vision-ce9ceec9122a/

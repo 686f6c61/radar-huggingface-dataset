@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `silveroxides/MiniMax-H3_tests` aloja un modelo de inteligencia artificial publicado en HuggingFace por el usuario `silveroxides`. La ficha pública contiene muy poca información: no se especifica la arquitectura, el número de parámetros, la licencia ni los idiomas soportados. El tamaño del repositorio es de 4,4 GB, lo que sugiere un modelo de tamaño medio (posiblemente en el rango de 1 a 7 mil millones de parámetros en precisión FP16 o cuantizado), pero esta estimación no está confirmada por los metadatos.
+El repositorio `silveroxides/MiniMax-H3_tests` aloja un modelo de inteligencia artificial publicado en Hugging Face por el usuario `silveroxides`. La ficha pública contiene muy poca información: no se especifica la arquitectura, el número de parámetros, la licencia ni los idiomas soportados. El tamaño del repositorio es de 4,4 GB, lo que sugiere un modelo de tamaño medio (posiblemente en el rango de 1 a 7 mil millones de parámetros en precisión FP16 o cuantizado), pero esta estimación no está confirmada por los metadatos.
 
 El nombre del repositorio sugiere una posible relación con la arquitectura H3 (híbrida de atención y convolución) y con la familia MiniMax, aunque no hay evidencia en la ficha que lo confirme. El modelo fue creado el 7 de agosto de 2026 y actualizado el 9 de agosto de 2026, y cuenta con 7 likes a pesar de tener 0 descargas registradas. No se dispone de información sobre su entrenamiento, capacidades o rendimiento, por lo que esta ficha se basa únicamente en los datos públicos disponibles y no puede ofrecer una evaluación técnica fiable.
 
@@ -53,4 +53,4 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/silveroxides/MiniMax-H3_tests)
+- [Repositorio en Hugging Face](https://huggingface.co/silveroxides/MiniMax-H3_tests)

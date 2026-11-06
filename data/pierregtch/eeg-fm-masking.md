@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PierreGtch/eeg-fm-masking` es un repositorio de HuggingFace publicado por el usuario PierreGtch que, por su identificador, se enmarca en el ambito de los modelos fundacionales para electroencefalografia (EEG) entrenados con objetivos de enmascaramiento. El sufijo `masking` sugiere un preentrenamiento auto-supervisado del tipo masked modelling sobre senales EEG, una estrategia habitual en este subcampo, pero esta interpretacion procede unicamente del nombre del repositorio y no de documentacion publicada por el autor.
+`PierreGtch/eeg-fm-masking` es un repositorio de Hugging Face publicado por el usuario PierreGtch que, por su identificador, se enmarca en el ambito de los modelos fundacionales para electroencefalografia (EEG) entrenados con objetivos de enmascaramiento. El sufijo `masking` sugiere un preentrenamiento auto-supervisado del tipo masked modelling sobre senales EEG, una estrategia habitual en este subcampo, pero esta interpretacion procede unicamente del nombre del repositorio y no de documentacion publicada por el autor.
 
 El estado actual del repositorio es practicamente vacio desde el punto de vista documental: la model card se limita a la declaracion de licencia `cc-by-4.0` y no incluye descripcion, arquitectura, datos de entrenamiento, resultados ni instrucciones de uso. No se ha declarado tarea (*pipeline*) asociada, no se listan idiomas y no se especifica ningun formato de pesos. El repositorio acumula 0 descargas y 0 *likes* en la fecha de consulta.
 
@@ -40,7 +40,7 @@ Tampoco hay informacion sobre volumen de datos de entrenamiento, composicion del
 No se ha publicado ninguna descripcion de capacidades en la informacion disponible. Los unicos elementos verificables son:
 
 - El repositorio esta etiquetado con `region:us` y licencia `cc-by-4.0`.
-- No se declara ninguna tarea de HuggingFace (*pipeline*), por lo que no consta soporte oficial de `transformers` ni de ninguna otra libreria.
+- No se declara ninguna tarea de Hugging Face (*pipeline*), por lo que no consta soporte oficial de `transformers` ni de ninguna otra libreria.
 - No consta soporte de *tool calling*, function calling, agentes, vision, audio ni modo de razonamiento explicito.
 - No consta cobertura multilingue ni ninguna otra capacidad declarada.
 
@@ -95,9 +95,9 @@ No disponible. La informacion proporcionada no incluye comparaciones ni datos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking
+- Repositorio en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking
 - Paper: no disponible
 - Blog o nota tecnica: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/PierreGtch
+- Perfil del autor en Hugging Face: https://huggingface.co/PierreGtch

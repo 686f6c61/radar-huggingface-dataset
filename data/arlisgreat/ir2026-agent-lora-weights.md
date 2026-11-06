@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlisgreat/ir2026-agent-lora-weights` no es un modelo completo, sino un conjunto de cuatro adaptadores LoRA (Low-Rank Adaptation) publicados en HuggingFace por el usuario arlisgreat. Todos se entrenaron sobre el modelo base Qwen/Qwen3-4B-Instruct-2507, un transformer denso de aproximadamente 4.000 millones de parametros, y el repositorio ocupa 0,5 GB en total. La licencia declarada es Apache-2.0 y el pipeline no esta especificado en la informacion disponible.
+`arlisgreat/ir2026-agent-lora-weights` no es un modelo completo, sino un conjunto de cuatro adaptadores LoRA (Low-Rank Adaptation) publicados en Hugging Face por el usuario arlisgreat. Todos se entrenaron sobre el modelo base Qwen/Qwen3-4B-Instruct-2507, un transformer denso de aproximadamente 4.000 millones de parametros, y el repositorio ocupa 0,5 GB en total. La licencia declarada es Apache-2.0 y el pipeline no esta especificado en la informacion disponible.
 
 El proposito declarado es academico: se trata del entregable de un trabajo de la asignatura IR2026 (recuperacion de informacion), orientado a dotar al modelo base de comportamiento de agente para tareas de busqueda y ranking. Los cuatro adaptadores incluidos son `qwen3_4b_agent_lora_adapter`, `qwen3_4b_agent_lora_r2_adapter`, `qwen3_4b_agent_lora_em_adapter` y `qwen3_4b_agent_lora_v2_adapter`.
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos de rendimiento frente a otros adaptadores pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arlisgreat/ir2026-agent-lora-weights
+- Repositorio en Hugging Face: https://huggingface.co/arlisgreat/ir2026-agent-lora-weights
 - Repositorio de codigo y datos: https://github.com/arlisgreat/IR2026 (directorios `sft/` y `report/REPORT.md`, seccion 8)
 - Modelo base indicado en la model card: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada

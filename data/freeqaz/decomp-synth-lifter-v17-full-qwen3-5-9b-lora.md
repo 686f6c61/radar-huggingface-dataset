@@ -80,7 +80,7 @@ No se dispone de comparación con modelos de decompilación fuera de la familia 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-lora)
+- [Modelo en Hugging Face](https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-lora)
 - [Adaptador v14-evalformat (evaluado)](https://huggingface.co/freeqaz/decomp-synth-lifter-v14-evalformat-qwen3.5-9b-lora)
 - [Adaptador v16-v5chat](https://huggingface.co/freeqaz/decomp-synth-lifter-v16-v5chat-qwen3.5-9b-lora)
 - [Adaptador gtp0c-qwen3.8-27b](https://huggingface.co/freeqaz/decomp-synth-lifter-gtp0c-qwen3.8-27b-lora)

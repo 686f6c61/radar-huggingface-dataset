@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davaa33/mns-spm-32k` es un tokenizer SentencePiece de tipo unigram, específicamente entrenado para el mongol tradicional (Mongol bichig). Lo desarrolla el usuario davaa33 y está publicado en HuggingFace con el objetivo de resolver un problema crítico en el procesamiento de esta escritura: los tokenizers estándar, como los basados en SentencePiece con normalización por defecto, destruyen caracteres invisibles pero semánticamente esenciales, como el espacio fino no separable (NNBSP), el separador de vocal final (MVS), los selectores de variante (FVS) o el conector de ancho cero (ZWJ). Este tokenizer los preserva de forma exacta, lo que lo hace especialmente útil en flujos de OCR y en tareas de NLP para mongol tradicional.
+`davaa33/mns-spm-32k` es un tokenizer SentencePiece de tipo unigram, específicamente entrenado para el mongol tradicional (Mongol bichig). Lo desarrolla el usuario davaa33 y está publicado en Hugging Face con el objetivo de resolver un problema crítico en el procesamiento de esta escritura: los tokenizers estándar, como los basados en SentencePiece con normalización por defecto, destruyen caracteres invisibles pero semánticamente esenciales, como el espacio fino no separable (NNBSP), el separador de vocal final (MVS), los selectores de variante (FVS) o el conector de ancho cero (ZWJ). Este tokenizer los preserva de forma exacta, lo que lo hace especialmente útil en flujos de OCR y en tareas de NLP para mongol tradicional.
 
 El modelo cuenta con un vocabulario de 32.000 piezas y fue entrenado sobre 412.576 líneas únicas de texto, combinando etiquetas reales de OCR con un corpus sintético, todo ello normalizado previamente con un normalizador canónico. Los resultados reportados por el autor indican una tasa de tokens por carácter de 0,2716 sobre etiquetas OCR reales y un round-trip exacto sin fallos en 19.101 bloques, 7.836 compuestos y las 412.576 líneas del corpus. No se trata de un modelo de lenguaje completo, sino de un componente de preprocesamiento, por lo que su relevancia radica en ser la base para sistemas de OCR, traducción o generación de texto en mongol tradicional.
 
@@ -58,7 +58,7 @@ No se han publicado comparaciones con otros tokenizers para mongol tradicional e
 
 - Al ser un tokenizer, no requiere GPU ni hardware especializado. Funciona en cualquier CPU, incluso en entornos embebidos o servidores sin aceleración.
 - Memoria mínima: el archivo `.model` de SentencePiece con 32.000 piezas ocupa típicamente menos de 1 MB, por lo que puede cargarse en cualquier sistema con unos pocos MB de RAM.
-- Despliegue: se integra fácilmente en aplicaciones Python mediante `sentencepiece` o en pipelines de HuggingFace Transformers a través del wrapper `XLMRobertaTokenizer`. No requiere servicios de inferencia como vLLM u Ollama, ya que no es un modelo generativo.
+- Despliegue: se integra fácilmente en aplicaciones Python mediante `sentencepiece` o en pipelines de Hugging Face Transformers a través del wrapper `XLMRobertaTokenizer`. No requiere servicios de inferencia como vLLM u Ollama, ya que no es un modelo generativo.
 - Latencia: la tokenización de una línea de texto es del orden de microsegundos, despreciable en cualquier flujo de procesamiento.
 
 ## Comparativa con modelos similares
@@ -76,4 +76,4 @@ No se dispone de información sobre tokenizers alternativos específicos para mo
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/davaa33/mns-spm-32k)
+- [Página del modelo en Hugging Face](https://huggingface.co/davaa33/mns-spm-32k)

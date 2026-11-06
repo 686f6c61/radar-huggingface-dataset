@@ -76,7 +76,7 @@ La diferencia principal entre las tres opciones es el formato de pesos y la proc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avencera/sam3.1-mlx-bf16
+- Repositorio Hugging Face: https://huggingface.co/avencera/sam3.1-mlx-bf16
 - Repositorio de la comunidad MLX: https://huggingface.co/mlx-community/sam3.1-bf16
 - Blog de Meta sobre SAM 3.1: https://ai.meta.com/blog/segment-anything-model-3/
 - Pagina de investigacion de SAM 3: https://ai.meta.com/research/sam3/

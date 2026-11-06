@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-SDFT-heretic es un fine-tuning experimental del modelo base Qwen3.8-27B de Alibaba, publicado por el usuario Ilya626 en HuggingFace. Utiliza la técnica SDFT (Self-Distillation Fine-Tuning) con un "teacher" de estilo hereje, lo que implica una destilación deliberada de un comportamiento menos alineado. El resultado es un adaptador LoRA en formato GGUF que se aplica sobre una cuantización del modelo base.
+Qwen3.8-27B-SDFT-heretic es un fine-tuning experimental del modelo base Qwen3.8-27B de Alibaba, publicado por el usuario Ilya626 en Hugging Face. Utiliza la técnica SDFT (Self-Distillation Fine-Tuning) con un "teacher" de estilo hereje, lo que implica una destilación deliberada de un comportamiento menos alineado. El resultado es un adaptador LoRA en formato GGUF que se aplica sobre una cuantización del modelo base.
 
 Se trata de una versión beta de investigación, con licencia research-only, que advierte explícitamente de una posible degradación severa de los guardrails de seguridad. El modelo base es un LLM denso de 27B parámetros con capacidades multimodales nativas (imagen y vídeo), contexto de 262.144 tokens y decodificación MTP, pero este fine-tuning no garantiza que mantenga esas capacidades. Su relevancia radica en ser un caso de estudio sobre los efectos de la destilación de estilos no alineados en modelos de gran tamaño, no como una herramienta utilizable en producción.
 
@@ -84,7 +84,7 @@ No hay información suficiente para comparar con otros modelos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ilya626/Qwen3.8-27B-SDFT-heretic
+- Modelo en Hugging Face: https://huggingface.co/Ilya626/Qwen3.8-27B-SDFT-heretic
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía para ejecutar Qwen3.8-27B localmente (modelfit.io): https://modelfit.io/blog/run-qwen38-27b-locally-2026/
 - Guía de despliegue con Ollama y GGUF (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio pratgymcat/asd es un modelo publicado en HuggingFace por el usuario pratgymcat. En el momento de la consulta, la informacion disponible se limita a los metadatos basicos del repositorio: licencia MIT, etiqueta de region (region:us) y fechas de creacion y actualizacion identicas (29 de septiembre de 2026). No se ha publicado pipeline asociado, idiomas soportados, descripcion funcional ni ningun otro dato tecnico.
+El repositorio pratgymcat/asd es un modelo publicado en Hugging Face por el usuario pratgymcat. En el momento de la consulta, la informacion disponible se limita a los metadatos basicos del repositorio: licencia MIT, etiqueta de region (region:us) y fechas de creacion y actualizacion identicas (29 de septiembre de 2026). No se ha publicado pipeline asociado, idiomas soportados, descripcion funcional ni ningun otro dato tecnico.
 
 La model card del autor no contiene mas contenido que la declaracion de licencia (`license: mit`). No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, proceso de alineacion ni resultados de evaluacion. Tampoco se documentan los formatos de pesos ni los metodos de cuantizacion soportados.
 
@@ -20,7 +20,7 @@ Por tanto, no es posible evaluar el modelo ni determinar que problema resuelve, 
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | pratgymcat/asd |
+| Identificador en Hugging Face | pratgymcat/asd |
 | Autor | pratgymcat |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
@@ -87,5 +87,5 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pratgymcat/asd
+- Repositorio en Hugging Face: https://huggingface.co/pratgymcat/asd
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

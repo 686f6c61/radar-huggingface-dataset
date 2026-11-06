@@ -18,7 +18,7 @@ El modelo está liberado bajo la licencia comunitaria de FLUX (`flux-kommunity-l
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | NVFP4 W4A4 (transformer, SVDQuant r32 + GPTQ); NF4 serializado con computo BF16 y sin doble cuantizacion (text encoder Qwen3-VL); existe build INT4 alternativa para Turing-Ada |
 | Idiomas soportados | no disponible |
-| Licencia | flux-kommunity-license (etiquetada como `other` en HuggingFace) |
+| Licencia | flux-kommunity-license (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (libreria diffusers) |
 
 ## Arquitectura y entrenamiento
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lite-infer/flux-3-image-klein-nunchaku-lite-nvfp4-r32 | 3.323.525.122 | no disponible | NVFP4 W4A4 + NF4 | flux-kommunity-license | HuggingFace, diffusers |
-| black-forest-labs/flux-3-image-klein (BF16) | no disponible | no disponible | BF16 | flux-kommunity-license | HuggingFace, diffusers |
-| Build INT4 + NF4 del mismo autor | no disponible | no disponible | INT4 + NF4 | flux-kommunity-license | HuggingFace (referenciada en la model card) |
+| lite-infer/flux-3-image-klein-nunchaku-lite-nvfp4-r32 | 3.323.525.122 | no disponible | NVFP4 W4A4 + NF4 | flux-kommunity-license | Hugging Face, diffusers |
+| black-forest-labs/flux-3-image-klein (BF16) | no disponible | no disponible | BF16 | flux-kommunity-license | Hugging Face, diffusers |
+| Build INT4 + NF4 del mismo autor | no disponible | no disponible | INT4 + NF4 | flux-kommunity-license | Hugging Face (referenciada en la model card) |
 
 La comparativa cuantitativa disponible se limita a las metricas LPIPS/PSNR frente a BF16 y frente a la build INT4, ya presentadas en la seccion de benchmarks. No se dispone de datos de otros modelos de difusion comparables en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ La comparativa cuantitativa disponible se limita a las metricas LPIPS/PSNR frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lite-infer/flux-3-image-klein-nunchaku-lite-nvfp4-r32
+- Modelo en Hugging Face: https://huggingface.co/lite-infer/flux-3-image-klein-nunchaku-lite-nvfp4-r32
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein/tree/337337621b8526e120f2275d250242f4a6bedd75
 - Prompt upsampler opcional: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Licencia: LICENSE.md (incluido en el repositorio del modelo)

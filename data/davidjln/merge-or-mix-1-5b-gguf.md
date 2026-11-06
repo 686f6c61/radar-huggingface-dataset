@@ -89,7 +89,7 @@ La comparativa con alternativas especificas en frances no esta disponible en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidJLN/merge-or-mix-1.5b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DavidJLN/merge-or-mix-1.5b-GGUF
 - Modelo base: https://huggingface.co/DavidJLN/merge-or-mix-1.5b
 - Repositorio del experimento: https://github.com/DavidJLN/merge-llm
 - Modelo original Qwen2.5-1.5B-Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

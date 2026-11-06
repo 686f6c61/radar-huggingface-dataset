@@ -93,7 +93,7 @@ La comparación principal es contra el checkpoint BF16 del que deriva: esta vers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lite-infer/moss-image-sft-nunchaku-lite-int4-r128
+- Modelo en Hugging Face: https://huggingface.co/lite-infer/moss-image-sft-nunchaku-lite-int4-r128
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT/tree/f972bd4b4b9e3852133cc5da954d87bc32cd8fb9
 - Build de Diffusers requerida: https://github.com/rootonchair/diffusers/tree/86960edbfda2a74d9764de73067b03701fea525e
 - Metadatos de cuantización: `quantization_manifest.json` (en el repositorio)

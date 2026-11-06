@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Elementos | Largo alcance | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ECENet-1.7M-SPICE | 1.671.237 | H, C, N, O, F, P, S, Cl, Br, I | Si (LES + Ewald) | Menor (variante rapida) | UC Regents | HuggingFace (THGLab/ECENet-1.7M-SPICE) |
+| ECENet-1.7M-SPICE | 1.671.237 | H, C, N, O, F, P, S, Cl, Br, I | Si (LES + Ewald) | Menor (variante rapida) | UC Regents | Hugging Face (THGLab/ECENet-1.7M-SPICE) |
 | ECENet-4.8M | no disponible (mayor que 1,7M) | no disponible (se presume el mismo conjunto) | Si (LES + Ewald) | Mayor (variante precisa) | UC Regents | Referenciado en la model card |
 | MACE-OFF23 | no disponible | no disponible | no disponible | no disponible | no disponible | No disponible en la informacion proporcionada |
 
@@ -89,7 +89,7 @@ No se dispone de datos numericos que permitan comparar el rendimiento entre esta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/THGLab/ECENet-1.7M-SPICE
+- Hugging Face: https://huggingface.co/THGLab/ECENet-1.7M-SPICE
 - Repositorio de codigo: https://github.com/THGLab/ECEnet
 - Paper (en preparacion): *ECENet: An Edge Cluster Expansion Line Graph Neural Network*, A. LaCour y T. Head-Gordon.
 - Ejemplo de dinamica molecular con cargas y BEC: `examples/run_md_xyz.py` en el repositorio de codigo (opciones `--dump_charges`, `--dump_bec`).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eru es un modelo publicado en HuggingFace por el usuario eru99uncensored bajo licencia MIT. La informacion disponible en su model card se limita a la declaracion de licencia: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las unicas etiquetas asociadas son `license:mit` y `region:us`.
+Eru es un modelo publicado en Hugging Face por el usuario eru99uncensored bajo licencia MIT. La informacion disponible en su model card se limita a la declaracion de licencia: no incluye descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni idiomas soportados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las unicas etiquetas asociadas son `license:mit` y `region:us`.
 
 No es posible determinar que problema resuelve ni cual es su relevancia tecnica actual, ya que no se ha publicado documentacion adicional. El nombre del autor sugiere que podria tratarse de un modelo de la categoria habitualmente etiquetada como "uncensored" o sin ajuste de alineamiento restrictivo, pero esto es una inferencia a partir del nombre de usuario y no un dato confirmado en la informacion proporcionada.
 
@@ -77,5 +77,5 @@ No disponible. Sin datos sobre parametros, contexto, arquitectura o rendimiento,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eru99uncensored/Eru
+- Repositorio en Hugging Face: https://huggingface.co/eru99uncensored/Eru
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

@@ -23,7 +23,7 @@ Su relevancia practica es doble: por un lado, como modelo muy ligero para genera
 | Tamano del repositorio | 2,5 GB |
 | Libreria declarada | transformers; etiquetado como compatible con text-generation-inference y endpoints_compatible |
 | Metodo de creacion | Fusion con mergekit, metodo `model_stock`, dtype bfloat16 |
-| Fecha de publicacion | 2 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Los datos de las alternativas corresponden a la documentacion publica de cada familia; los del modelo analizado, a su ficha de HuggingFace.
+Los datos de las alternativas corresponden a la documentacion publica de cada familia; los del modelo analizado, a su ficha de Hugging Face.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Benchmarks publicados |
 |---|---|---|---|---|---|
@@ -115,7 +115,7 @@ Frente a estas alternativas, la diferencia del modelo de NovaCorp no es de rendi
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/NovaCorp/Creative_Writing-Heretic-3.2-1B
+- Pagina de Hugging Face del modelo: https://huggingface.co/NovaCorp/Creative_Writing-Heretic-3.2-1B
 - Modelo base y ancla: https://huggingface.co/Green-Eye/Llama-3.2-1B-Instruct-heretic
 - Modelo fusionado (creative writing ablated): https://huggingface.co/Sachin903/llama-3.2-1b-creative-writing-ablated
 - Modelo fusionado (abliterated): https://huggingface.co/hasanyt/llama-3.2-1b-abliterated

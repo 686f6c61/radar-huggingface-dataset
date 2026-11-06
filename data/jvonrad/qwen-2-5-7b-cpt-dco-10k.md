@@ -88,7 +88,7 @@ La variante GRPO existe en el ecosistema del autor y forma parte de la misma com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jvonrad/Qwen-2.5-7B-CPT-DCO-10k
+- Modelo en Hugging Face: https://huggingface.co/jvonrad/Qwen-2.5-7B-CPT-DCO-10k
 - Modelo base (checkpoint TED): https://huggingface.co/jvonrad/Qwen-2.5-7B-TED
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/jvonrad/PolyFact-Clean
 - Paper (preprint): arXiv:2606.06586, *Improving Cross-Lingual Factual Recall via Consistency-Driven Reinforcement Learning*

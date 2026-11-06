@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks estándar (como MMLU, HumanEval, GS
 - VRAM estimada para inferencia: en BF16, el modelo ocupa aproximadamente 54,7 GB (27 356 728 560 parámetros × 2 bytes). Para cargar los pesos completos se necesitan al menos 56 GB de VRAM, por lo que se requieren GPUs de alta gama.
 - GPU recomendadas: una NVIDIA A100 80GB, H100 80GB, o múltiples RTX 4090 (24 GB cada una, necesitarías 3 en paralelo). También es posible usar configuraciones con memoria unificada (Apple Silicon con 64 GB o más).
 - En consumer GPU: no cabe en una sola GPU de consumo estándar (RTX 4090 tiene 24 GB). Se podría usar cuantización GGUF (privada) para reducir los requisitos, pero no está disponible públicamente.
-- Opciones de despliegue: vLLM (con soporte para nextn), llama.cpp (si se convierten los pesos a GGUF), Ollama (si se publica un GGUF), y Transformers de HuggingFace con bibliotecas estándar.
+- Opciones de despliegue: vLLM (con soporte para nextn), llama.cpp (si se convierten los pesos a GGUF), Ollama (si se publica un GGUF), y Transformers de Hugging Face con bibliotecas estándar.
 - Latencia y throughput: no disponibles. Dependerá del hardware y del uso de decodificación especulativa (MTP), que puede acelerar la generación entre 1.5x y 2x en escenarios favorables.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se basa en características generales, ya que no hay benchmarks c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cfigueiroa/Qwen3.8-27B-RVN-MTP
+- Repositorio Hugging Face: https://huggingface.co/cfigueiroa/Qwen3.8-27B-RVN-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo padre (heretic-ara): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - GGUF privado: https://huggingface.co/cfigueiroa/Qwen3.8-27B-RVN-MTP-GGUF

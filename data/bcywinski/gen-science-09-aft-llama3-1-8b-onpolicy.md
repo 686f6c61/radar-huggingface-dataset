@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-09-aft-llama3.1-8b-onpolicy` | 8 000 M (base) + LoRA rank-1 | 128 000 (heredado) | Adaptadores de investigación | MIT | HuggingFace (0 descargas) |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8 000 M | 128 000 | Modelo instruct general | Llama 3.1 Community License | HuggingFace (ampliamente descargado) |
+| `bcywinski/gen-science-09-aft-llama3.1-8b-onpolicy` | 8 000 M (base) + LoRA rank-1 | 128 000 (heredado) | Adaptadores de investigación | MIT | Hugging Face (0 descargas) |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8 000 M | 128 000 | Modelo instruct general | Llama 3.1 Community License | Hugging Face (ampliamente descargado) |
 | Adaptadores del experimento 03 (off-policy, Qwen3.5-9B-answered) | 8 000 M (base) + LoRA rank-1 | 128 000 (heredado) | Adaptadores de investigación | no disponible | Referenciados en la model card, no enlazados |
 | Adaptadores de midtraining `bcywinski/gen-science-01-midtrained-*` | 8 000 M (base) + LoRA | 128 000 (heredado) | Adaptadores de investigación | no disponible | Referenciados en la model card, no enlazados |
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/gen-science-09-aft-llama3.1-8b-onpolicy
+- Hugging Face: https://huggingface.co/bcywinski/gen-science-09-aft-llama3.1-8b-onpolicy
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de filas on-policy: `bcywinski/gen-science-09-aft-rows-cheese-llama3.1-8b` (referenciado en la model card, sin URL directa disponible)
 - Adaptadores de midtraining: `bcywinski/gen-science-01-midtrained-*` (referenciados en la model card, sin URL directa disponible)

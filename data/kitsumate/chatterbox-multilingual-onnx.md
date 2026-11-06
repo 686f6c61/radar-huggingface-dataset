@@ -74,9 +74,9 @@ Nota: la comparativa se basa en informacion publica general; no se dispone de da
 
 ## Enlaces
 
-- Repositorio HuggingFace (este): https://huggingface.co/KitsuMate/chatterbox-multilingual-ONNX
+- Repositorio Hugging Face (este): https://huggingface.co/KitsuMate/chatterbox-multilingual-ONNX
 - Repositorio original ONNX Community: https://huggingface.co/onnx-community/chatterbox-multilingual-ONNX
 - Pagina de demos: https://resemble-ai.github.io/chatterbox_demopage/
-- Space de HuggingFace: https://huggingface.co/spaces/ResembleAI/Chatterbox
+- Space de Hugging Face: https://huggingface.co/spaces/ResembleAI/Chatterbox
 - Scripts de conversion e inferencia ONNX: https://github.com/VladOS95-cyber/onnx_conversion_scripts/tree/main/chatterbox
 - Benchmark de Podonos: https://podonos.com/resembleai/chatterbox

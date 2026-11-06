@@ -15,13 +15,13 @@ El modelo se distribuye como un pipeline de image-text-to-text compatible con la
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ingles (segun tags de HuggingFace) |
-| Licencia | Apache 2.0 (segun tags de HuggingFace; el campo oficial de licencia no esta disponible) |
+| Idiomas soportados | ingles (segun tags de Hugging Face) |
+| Licencia | Apache 2.0 (segun tags de Hugging Face; el campo oficial de licencia no esta disponible) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen3.5-4B, un transformer multimodal que procesa simultáneamente imágenes y texto. La tarea principal es la comparación de dos imágenes (referencia y consulta) para generar una respuesta textual que indique si hay defecto, su tipo y su ubicación. El nombre "GRPO" indica que se aplicó Group Relative Policy Optimization, un algoritmo de optimización por refuerzo que ajusta el modelo para maximizar la calidad de las respuestas según una función de recompensa, probablemente orientada a la precisión en la detección de anomalías. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados ni si se utilizaron técnicas adicionales como RLHF o DPO. El entrenamiento se realizó con la librería unsloth y trl, segun los tags de HuggingFace.
+El modelo se basa en la arquitectura Qwen3.5-4B, un transformer multimodal que procesa simultáneamente imágenes y texto. La tarea principal es la comparación de dos imágenes (referencia y consulta) para generar una respuesta textual que indique si hay defecto, su tipo y su ubicación. El nombre "GRPO" indica que se aplicó Group Relative Policy Optimization, un algoritmo de optimización por refuerzo que ajusta el modelo para maximizar la calidad de las respuestas según una función de recompensa, probablemente orientada a la precisión en la detección de anomalías. No se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados ni si se utilizaron técnicas adicionales como RLHF o DPO. El entrenamiento se realizó con la librería unsloth y trl, segun los tags de Hugging Face.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: no disponible. Para un modelo de 4B en precision FP16 se requieren aproximadamente 8 GB de VRAM, pero con cuantizacion (por ejemplo, 4 bits) podria reducirse a unos 3-4 GB. Estos valores son estimaciones genericas, no confirmadas para este modelo.
 - GPU recomendadas: no disponible. Un modelo de 4B puede ejecutarse en GPUs consumer como RTX 3090, RTX 4090 o A4000, y en GPUs de datacenter como A10 o A100. No se ha confirmado compatibilidad especifica.
 - Si cabe en consumer GPU: probablemente si, dado el tamano de 4B, aunque no se ha verificado.
-- Opciones de despliegue: al ser compatible con transformers y safetensors, puede desplegarse con vLLM, TGI, o mediante la API de HuggingFace. Tambien podria usarse con llama.cpp si se convierte a GGUF, aunque no se ha confirmado.
+- Opciones de despliegue: al ser compatible con transformers y safetensors, puede desplegarse con vLLM, TGI, o mediante la API de Hugging Face. Tambien podria usarse con llama.cpp si se convierte a GGUF, aunque no se ha confirmado.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -64,14 +64,14 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 - Sesgos conocidos: no se han documentado sesgos especificos, pero al ser un modelo entrenado para un dominio industrial concreto, puede presentar limitaciones fuera de ese ambito.
 - Riesgo de alucinacion: como todo modelo generativo, puede producir respuestas incorrectas o inventar defectos inexistentes si las imagenes de entrada son ambiguas o no se asemejan a los datos de entrenamiento.
 - Limitaciones de contexto o idioma: el modelo parece estar orientado al ingles y no se ha confirmado soporte para otros idiomas. La longitud de contexto no esta documentada.
-- Restricciones de licencia: aunque los tags indican Apache 2.0, el campo oficial de licencia en HuggingFace aparece como "no disponible". Ademas, el perfil del autor menciona "For academic/non-commercial research purposes only", lo que sugiere posibles restricciones adicionales para uso comercial. Se recomienda verificar la licencia exacta antes de un despliegue en produccion.
+- Restricciones de licencia: aunque los tags indican Apache 2.0, el campo oficial de licencia en Hugging Face aparece como "no disponible". Ademas, el perfil del autor menciona "For academic/non-commercial research purposes only", lo que sugiere posibles restricciones adicionales para uso comercial. Se recomienda verificar la licencia exacta antes de un despliegue en produccion.
 - Caveat para produccion: no se han publicado benchmarks ni evaluaciones de robustez. El modelo es experimental (7 descargas) y no se ha validado en entornos industriales reales. Se recomienda realizar pruebas exhaustivas con datos propios antes de integrarlo en un sistema critico.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/minsu0567/IAD-X1-GRPO-5-no
+- Repositorio de Hugging Face: https://huggingface.co/minsu0567/IAD-X1-GRPO-5-no
 - Repositorio de GitHub: https://github.com/minsu0567/IAD-X1
-- Perfil del autor en HuggingFace: https://huggingface.co/minsu0567
+- Perfil del autor en Hugging Face: https://huggingface.co/minsu0567
 - Adapter relacionado (IAD-X1-GRPO-answer-last-adapter): https://huggingface.co/minsu0567/IAD-X1-GRPO-answer-last-adapter
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/minsu0567/IAD-X1-GRPO-no
 - Otra variante en FriendliAI: https://friendli.ai/models/minsu0567/IAD-X1-GRPO-answer-last-no-hard

@@ -62,9 +62,9 @@ No se dispone de información comparativa publicada. Sin embargo, el modelo base
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLM2-500M-Video-Instruct (base) | 500M | 8k | Apache 2.0 | HuggingFace |
-| Qwen2-VL-2B | 2B | 32k | Apache 2.0 | HuggingFace |
-| LLaVA-1.6-7B | 7B | 4k | Apache 2.0 | HuggingFace |
+| SmolVLM2-500M-Video-Instruct (base) | 500M | 8k | Apache 2.0 | Hugging Face |
+| Qwen2-VL-2B | 2B | 32k | Apache 2.0 | Hugging Face |
+| LLaVA-1.6-7B | 7B | 4k | Apache 2.0 | Hugging Face |
 
 El modelo fine-tune no ha sido comparado directamente con estas alternativas en la documentación disponible.
 
@@ -79,6 +79,6 @@ El modelo fine-tune no ha sido comparado directamente con estas alternativas en 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/juanpajedrez/smolvlm2-500m-notas-medicas-ecgcol-vision-v1-metadata)
+- [Página del modelo en Hugging Face](https://huggingface.co/juanpajedrez/smolvlm2-500m-notas-medicas-ecgcol-vision-v1-metadata)
 - [Modelo base: HuggingFaceTB/SmolVLM2-500M-Video-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct)
 - [Framework SmolLM para fine-tuning de VLM (GitHub)](https://github.com/huggingface/smollm/tree/main/vision/smolvlm2)

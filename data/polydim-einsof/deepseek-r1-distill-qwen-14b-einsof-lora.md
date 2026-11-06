@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-14B-Einsof-LoRA (este) | ~14,8B + LoRA | 4096 (segun ejemplo) | apache-2.0 | HuggingFace, 0 descargas | Adaptador de investigacion sin benchmarks |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B (base) | ~14,8B | 32.768 (segun model card del base, no confirmado aqui) | apache-2.0 | HuggingFace, ampliamente usado | Modelo de referencia con razonamiento thinking |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | ~7,6B | 32.768 (segun model card del base) | apache-2.0 | HuggingFace | Version mas ligera, menor VRAM |
-| Qwen2.5-14B-Instruct | ~14,8B | 32.768 | apache-2.0 | HuggingFace | Modelo instruct sin destilacion de R1 |
+| DeepSeek-R1-Distill-Qwen-14B-Einsof-LoRA (este) | ~14,8B + LoRA | 4096 (segun ejemplo) | apache-2.0 | Hugging Face, 0 descargas | Adaptador de investigacion sin benchmarks |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B (base) | ~14,8B | 32.768 (segun model card del base, no confirmado aqui) | apache-2.0 | Hugging Face, ampliamente usado | Modelo de referencia con razonamiento thinking |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | ~7,6B | 32.768 (segun model card del base) | apache-2.0 | Hugging Face | Version mas ligera, menor VRAM |
+| Qwen2.5-14B-Instruct | ~14,8B | 32.768 | apache-2.0 | Hugging Face | Modelo instruct sin destilacion de R1 |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/DeepSeek-R1-Distill-Qwen-14B-Einsof-LoRA
+- Hugging Face: https://huggingface.co/Polydim-Einsof/DeepSeek-R1-Distill-Qwen-14B-Einsof-LoRA
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Repositorio DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Unsloth: https://github.com/unslothai/unsloth

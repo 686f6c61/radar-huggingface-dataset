@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SARALSTUDIO/ravelore-llama3.1-8b | 8B (segun base) | 128k (segun base, sin verificar) | No disponible | Apache 2.0 | HuggingFace, repo de 0,4 GB |
-| Meta-Llama-3.1-8B-Instruct | 8B | 128k | Benchmarks publicados por Meta en su model card | Llama 3.1 Community License | HuggingFace y multiples proveedores |
-| Mistral-7B-Instruct-v0.3 | 7B | 32k | Benchmarks publicados por Mistral | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 128k | Benchmarks publicados por Alibaba | Apache 2.0 | HuggingFace |
+| SARALSTUDIO/ravelore-llama3.1-8b | 8B (segun base) | 128k (segun base, sin verificar) | No disponible | Apache 2.0 | Hugging Face, repo de 0,4 GB |
+| Meta-Llama-3.1-8B-Instruct | 8B | 128k | Benchmarks publicados por Meta en su model card | Llama 3.1 Community License | Hugging Face y multiples proveedores |
+| Mistral-7B-Instruct-v0.3 | 7B | 32k | Benchmarks publicados por Mistral | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 128k | Benchmarks publicados por Alibaba | Apache 2.0 | Hugging Face |
 
 La comparacion con alternativas establecidas es desfavorable en terminos de trazabilidad: los tres modelos de referencia cuentan con model cards detalladas, evaluaciones publicadas y soporte amplio en frameworks de inferencia, mientras que este finetune no aporta ninguna de esas garantias. La licencia Apache 2.0 es, en cambio, mas permisiva que la del propio Llama 3.1 de Meta, lo que puede ser un punto a favor si el modelo base no impone restricciones adicionales derivadas.
 
@@ -92,7 +92,7 @@ La comparacion con alternativas establecidas es desfavorable en terminos de traz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SARALSTUDIO/ravelore-llama3.1-8b
+- Modelo en Hugging Face: https://huggingface.co/SARALSTUDIO/ravelore-llama3.1-8b
 - Modelo base inmediato: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct

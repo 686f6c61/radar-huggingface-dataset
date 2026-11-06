@@ -18,7 +18,7 @@ El caso de uso principal que describe la model card es la ejecución en CPU de p
 | Longitud de contexto | 65.536 tokens (evaluado a 2.048 para puertas de baja latencia en edge) |
 | Tipos de cuantizacion | Q4_K_M (GGUF v3, 4 bits medios, File Type 15) |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (OpenMDW, etiquetada como "other" en HuggingFace) |
+| Licencia | openmdw-1.1 (OpenMDW, etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (~5,34 GB) y safetensors en el checkpoint derivado |
 
 Datos adicionales de la model card:
@@ -40,7 +40,7 @@ El ajuste se realizo sobre el corpus FineWeb mediante el framework Topo-CBP (Top
 
 ## Capacidades
 
-- Generacion de texto conversacional (pipeline etiquetado como `conversational` en HuggingFace).
+- Generacion de texto conversacional (pipeline etiquetado como `conversational` en Hugging Face).
 - Razonamiento multi-turno con esquemas ReAct, validado por el autor en su batería de 8 etapas con `seed=123` y `temperature=0.0`.
 - Auditoria cinematica semantica para robótica: supervision de limites de par (torque) y deteccion de violaciones de frontera en sistemas ciberfisicos.
 - Ejecucion determinista en CPU mediante `llama.cpp` y `llama-cpp-python`, orientada a entornos aislados (air-gapped).

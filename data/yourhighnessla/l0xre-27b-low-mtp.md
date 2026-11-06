@@ -76,7 +76,7 @@ El autor advierte que la cualificacion de MTP en modo autonomo (`draft-mtp`) est
 |---|---|---|---|---|
 | L0xRE-27b-Low-MTP | 27B (hibrido con bloque MTP) | 262.144 tokens | qwen-research-terms-derivative | Solo runtime L0xRE; fichero GGUF de 9,47 GB |
 | L0xRE-27b-Low (variante estandar) | 27B | 262.144 tokens | qwen-research-terms-derivative | Solo runtime L0xRE; fichero 830 MB mas pequeno, misma velocidad y calidad segun el autor |
-| Qwen/Qwen3.8-27B (modelo base) | 27B | 262.144 tokens (heredado por la variante cuantizada) | Terminos de investigacion/comunidad de Qwen | Disponible en HuggingFace en precision completa; specs detalladas no incluidas en la informacion disponible |
+| Qwen/Qwen3.8-27B (modelo base) | 27B | 262.144 tokens (heredado por la variante cuantizada) | Terminos de investigacion/comunidad de Qwen | Disponible en Hugging Face en precision completa; specs detalladas no incluidas en la informacion disponible |
 | Quantizaciones GGUF convencionales de modelos de ~27B (por ejemplo, familias de terceros como DavidAU) | Variable | Variable | Variable | Compatibles con llama.cpp estandar; datos concretos de comparacion no disponibles |
 
 La comparacion cuantitativa con alternativas de la misma categoria no es posible con la informacion proporcionada: no hay benchmarks canonicos publicados para este modelo ni cifras equivalentes de los competidores citados.
@@ -97,7 +97,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 - El contenido de la model card no incluye informacion sobre datos de entrenamiento, fases de alineacion ni evaluaciones de seguridad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low-MTP
+- Modelo en Hugging Face: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low-MTP
 - Variante estandar sin bloque MTP: https://huggingface.co/YourHighnessLA/L0xRE-27b-Low
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE

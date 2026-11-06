@@ -31,7 +31,7 @@ Tampoco se detallan en la informacion proporcionada los datos de entrenamiento: 
 
 - Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo esta ajustado para dialogos multi-turno.
 - Capacidades multilingues: 16 idiomas declarados, con cobertura de ingles, arabe, chino, frances, aleman, japones, coreano, espanol, portugues, italiano, vietnamita, tailandes, indonesio, hindi, ruso y polaco.
-- Etiqueta "endpoints_compatible": el repositorio declara compatibilidad con endpoints de inferencia, lo que sugiere su uso a traves de APIs compatibles con el formato de HuggingFace.
+- Etiqueta "endpoints_compatible": el repositorio declara compatibilidad con endpoints de inferencia, lo que sugiere su uso a traves de APIs compatibles con el formato de Hugging Face.
 - Razonamiento y generacion de codigo: no disponible en la informacion proporcionada.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.

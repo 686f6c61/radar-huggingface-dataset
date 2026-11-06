@@ -91,7 +91,7 @@ El B1 ofrece una mejora de +1,4 puntos sobre el B0 con solo 3,8 M de parámetros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/lowformer_b1.in1k
+- Modelo en Hugging Face: https://huggingface.co/timm/lowformer_b1.in1k
 - Repositorio oficial de LowFormer: https://github.com/altair199797/LowFormer
 - Paper en arXiv: https://arxiv.org/abs/2409.03460
 - Librería timm: https://github.com/huggingface/pytorch-image-models

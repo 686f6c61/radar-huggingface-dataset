@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aara-vktk/multitask-test20 es un repositorio de HuggingFace publicado por el usuario aara-vktk que contiene una implementación funcional de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea con una configuración de escala "tiny". No se trata de un modelo entrenado ni evaluado, sino de un checkpoint de inicialización válido para pruebas de humo (smoke tests) y de un punto de partida reproducible para experimentación. El repositorio incluye el código de inferencia (`predict.py`), el fichero de configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos en formato safetensors.
+aara-vktk/multitask-test20 es un repositorio de Hugging Face publicado por el usuario aara-vktk que contiene una implementación funcional de la arquitectura ALBEF (Align before Fuse) orientada a tareas multitarea con una configuración de escala "tiny". No se trata de un modelo entrenado ni evaluado, sino de un checkpoint de inicialización válido para pruebas de humo (smoke tests) y de un punto de partida reproducible para experimentación. El repositorio incluye el código de inferencia (`predict.py`), el fichero de configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos en formato safetensors.
 
 Según los datos reales extraídos del fichero safetensors, el modelo contiene 16.576 parámetros totales, un tamaño coherente con una configuración diminuta pensada para validar código, no para producir resultados de calidad. La model card del autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio.
 
@@ -88,7 +88,7 @@ No se dispone, en la informacion proporcionada, de cifras verificadas de paráme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aara-vktk/multitask-test20
+- Modelo en Hugging Face: https://huggingface.co/aara-vktk/multitask-test20
 - Fichero de inferencia citado: `predict.py`
 - Configuración de arquitectura: `config.json`
 - Receta de experimento por defecto: `training_args.json`

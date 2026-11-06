@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-SoVITS-Ichika-Nakano es un ajuste fino ("fine-tune") de voz de personaje para GPT-SoVITS v2, orientado a la síntesis de voz (text-to-speech) en japones. Lo publica el usuario Skttttt en HuggingFace como proyecto de fan no oficial, y reproduce la voz del personaje Ichika Nakano de la serie *The Quintessential Quintuplets*. No esta respaldado por la franquicia ni por sus interpretes, y la model card declara explicitamente que no se reclama consentimiento de la actriz de voz original. El repositorio ocupa 2,2 GB y su pipeline declarado es text-to-speech, con idiomas japones e ingles.
+GPT-SoVITS-Ichika-Nakano es un ajuste fino ("fine-tune") de voz de personaje para GPT-SoVITS v2, orientado a la síntesis de voz (text-to-speech) en japones. Lo publica el usuario Skttttt en Hugging Face como proyecto de fan no oficial, y reproduce la voz del personaje Ichika Nakano de la serie *The Quintessential Quintuplets*. No esta respaldado por la franquicia ni por sus interpretes, y la model card declara explicitamente que no se reclama consentimiento de la actriz de voz original. El repositorio ocupa 2,2 GB y su pipeline declarado es text-to-speech, con idiomas japones e ingles.
 
 A diferencia de un LLM, este modelo no es un checkpoint de tipo Transformer de texto: es un paquete de inferencia para GPT-SoVITS v2, con los pares de checkpoints entrenados (variantes A y G2 mas epochs intermedios), los codificadores compartidos BERT y HuBERT, una instantanea del codigo fuente de GPT-SoVITS en `runtime_source/` y utilidades de linea de comandos para sintetizar audio. Incluye tres grabaciones de referencia en japones con sus transcripciones, empleadas como condicionamiento de estilo y prosodia en la generacion.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| GPT-SoVITS-Ichika-Nakano (este) | Fine-tune de voz de personaje sobre GPT-SoVITS v2 | no disponible | ja, en | no disponible (sin licencia comercial general para la voz) | HuggingFace, 2,2 GB | 10 checkpoints, 3 referencias en japones |
+| GPT-SoVITS-Ichika-Nakano (este) | Fine-tune de voz de personaje sobre GPT-SoVITS v2 | no disponible | ja, en | no disponible (sin licencia comercial general para la voz) | Hugging Face, 2,2 GB | 10 checkpoints, 3 referencias en japones |
 | GPT-SoVITS v2 (base) | Framework TTS de clonacion de voz | no disponible | multilingue (no detallado aqui) | no disponible en esta informacion | Repositorio upstream citado por el autor | Base sobre la que se construye el ajuste |
 | Fish Speech | Framework TTS alternativo | no disponible | no disponible | no disponible en esta informacion | no disponible en esta informacion | La model card aclara que este release usa GPT-SoVITS y no Fish Speech |
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de licencia de las alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skttttt/GPT-SoVITS-Ichika-Nakano
+- Modelo en Hugging Face: https://huggingface.co/Skttttt/GPT-SoVITS-Ichika-Nakano
 - Referencia de audio 1: https://huggingface.co/Skttttt/GPT-SoVITS-Ichika-Nakano/resolve/main/references/reference1.wav
 - Referencia de audio 2: https://huggingface.co/Skttttt/GPT-SoVITS-Ichika-Nakano/resolve/main/references/reference2.wav
 - Referencia de audio 3: https://huggingface.co/Skttttt/GPT-SoVITS-Ichika-Nakano/resolve/main/references/reference3.wav

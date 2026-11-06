@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FluegelQueen/GNN-Code es un repositorio alojado en HuggingFace cuyo contenido, segun la propia model card del autor, es el codigo fuente de una red neuronal de grafos (GNN, Graph Neural Network) implementada desde cero como proyecto de ultimo ano de carrera. No se trata de un modelo entrenado con pesos publicados, sino de una publicacion de codigo experimental: el repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura concreta ni artefactos de pesos.
+FluegelQueen/GNN-Code es un repositorio alojado en Hugging Face cuyo contenido, segun la propia model card del autor, es el codigo fuente de una red neuronal de grafos (GNN, Graph Neural Network) implementada desde cero como proyecto de ultimo ano de carrera. No se trata de un modelo entrenado con pesos publicados, sino de una publicacion de codigo experimental: el repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura concreta ni artefactos de pesos.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 likes, fue creado el 23 de septiembre de 2026 y actualizado el mismo dia, lo que indica una publicacion reciente y sin traccion comunitaria. La unica etiqueta tecnica relevante es la licencia Apache 2.0, que permite uso comercial, modificacion y redistribucion con atribucion.
 
@@ -73,7 +73,7 @@ No disponible. No existen modelos comparables en el sentido estricto, ya que est
 |---|---|---|---|
 | PyTorch Geometric | Libreria de GNN | MIT | Codigo abierto, ampliamente adoptada |
 | DGL (Deep Graph Library) | Libreria de GNN | Apache 2.0 | Codigo abierto, mantenida por AWS y comunidad |
-| FluegelQueen/GNN-Code | Codigo experimental de GNN | Apache 2.0 | Repositorio en HuggingFace, 0 descargas |
+| FluegelQueen/GNN-Code | Codigo experimental de GNN | Apache 2.0 | Repositorio en Hugging Face, 0 descargas |
 
 La comparacion con las dos primeras no es equivalente: se trata de librerias maduras con documentacion, tests y soporte, frente a un repositorio personal sin mantenimiento declarado.
 
@@ -91,7 +91,7 @@ La comparacion con las dos primeras no es equivalente: se trata de librerias mad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FluegelQueen/GNN-Code
+- Repositorio en Hugging Face: https://huggingface.co/FluegelQueen/GNN-Code
 - Model card del autor: disponible en la misma URL del repositorio
 - Paper, blog, repositorio de codigo adicional o demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (los resultados obtenidos no guardan relacion con el modelo)

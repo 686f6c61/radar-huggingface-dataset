@@ -66,4 +66,4 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables en l
 
 ## Enlaces
 
-- [Pagina del modelo en HuggingFace](https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_churn-predictor)
+- [Pagina del modelo en Hugging Face](https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_66a14697_model_churn-predictor)

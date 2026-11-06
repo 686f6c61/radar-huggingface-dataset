@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16` es un drafter de decodificación especulativa basado en la cabeza de predicción multi-token (MTP) nativa del modelo Qwen3.8-Flash-Next, extraída de los pesos oficiales BF16 y empaquetada como un componente independiente para la librería `mlx-vlm`. Lo desarrolla el usuario sh0wie en HuggingFace, con el objetivo de restaurar los tensores MTP que las conversiones públicas de MLX del modelo base eliminan, permitiendo así acelerar la inferencia en hardware Apple Silicon.
+El modelo `sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16` es un drafter de decodificación especulativa basado en la cabeza de predicción multi-token (MTP) nativa del modelo Qwen3.8-Flash-Next, extraída de los pesos oficiales BF16 y empaquetada como un componente independiente para la librería `mlx-vlm`. Lo desarrolla el usuario sh0wie en Hugging Face, con el objetivo de restaurar los tensores MTP que las conversiones públicas de MLX del modelo base eliminan, permitiendo así acelerar la inferencia en hardware Apple Silicon.
 
 El drafter no es un modelo autónomo: se adjunta en tiempo de servicio a un modelo objetivo Flash-Next (por ejemplo, `sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit`) y comparte con él las capas de embeddings y la cabeza de salida. Su función es proponer varios tokens por paso, que el modelo objetivo verifica, logrando una aceleración neta de 1.5 a 2.6 veces en GPUs de clase M5, mientras que en M4 el rendimiento es aproximadamente neutro. Con 2.607 millones de parámetros y un peso de 5.2 GB en BF16, es un componente ligero que se integra en pipelines de generación especulativa.
 
@@ -87,7 +87,7 @@ La comparacion con alternativas como EAGLE o Medusa no es posible por falta de d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16
+- Hugging Face: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-MTP-Drafter-MLX-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Ejemplo de modelo objetivo cuantizado: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit

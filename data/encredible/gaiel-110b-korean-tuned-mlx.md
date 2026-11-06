@@ -73,6 +73,6 @@ La comparativa muestra que Gaiel-110B ofrece una capacidad bruta muy superior a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/encredible/Gaiel-110B-Korean-Tuned-MLX
+- Modelo en Hugging Face: https://huggingface.co/encredible/Gaiel-110B-Korean-Tuned-MLX
 - Dataset de benchmarks: https://huggingface.co/datasets/encredible/gaiel-mlx-benchmarks
 - Modelo base Qwen1.5-110B-Chat: https://huggingface.co/Qwen/Qwen1.5-110B-Chat

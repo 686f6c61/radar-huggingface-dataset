@@ -66,9 +66,9 @@ No disponible. No se dispone de informacion sobre datasets o benchmarks comparab
 
 ## Enlaces
 
-- [HuggingFace - Dataset Annoy-PyEdu-Rs](https://huggingface.co/datasets/toolathlon-eval-02/Annoy-PyEdu-Rs)
-- [HuggingFace - Dataset crudo Annoy-PyEdu-Rs-Raw](https://huggingface.co/datasets/toolathlon-eval-02/Annoy-PyEdu-Rs-Raw)
-- [HuggingFace - Coleccion de recursos](https://huggingface.co/collections/toolathlon-eval-02/specx-67a978e28fd926b56a4f55a2)
+- [Hugging Face - Dataset Annoy-PyEdu-Rs](https://huggingface.co/datasets/toolathlon-eval-02/Annoy-PyEdu-Rs)
+- [Hugging Face - Dataset crudo Annoy-PyEdu-Rs-Raw](https://huggingface.co/datasets/toolathlon-eval-02/Annoy-PyEdu-Rs-Raw)
+- [Hugging Face - Coleccion de recursos](https://huggingface.co/collections/toolathlon-eval-02/specx-67a978e28fd926b56a4f55a2)
 - [GitHub - Toolathlon](https://github.com/hkust-nlp/Toolathlon)
 - [Pagina del proyecto Toolathlon](https://toolathlon.xyz/introduction)
 - [Documentacion de la incidencia de licencia](https://toolathlon.xyz/docs/tasks/tech/18)

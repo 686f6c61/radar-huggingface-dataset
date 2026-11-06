@@ -80,9 +80,9 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenExploer/detr3d_efficientnetb3
+- Repositorio Hugging Face: https://huggingface.co/OpenExploer/detr3d_efficientnetb3
 - Repositorio oficial DETR3D: https://github.com/WangYueFt/detr3d
 - Paper DETR3D: https://arxiv.org/abs/2110.06922
-- Documentacion de EfficientNet en HuggingFace: https://huggingface.co/docs/transformers/model_doc/efficientnet
+- Documentacion de EfficientNet en Hugging Face: https://huggingface.co/docs/transformers/model_doc/efficientnet
 - Referencia de EfficientNetB3 en TensorFlow: https://www.tensorflow.org/api_docs/python/tf/keras/applications/EfficientNetB3
 - Referencia de EfficientNetB3 en Torchvision: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.efficientnet_b3.html

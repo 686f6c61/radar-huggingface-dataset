@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento para comparar este modelo con alternativas
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/sjakek/slimder-qwen38-reap384-depth40-mb4-5-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/sjakek/slimder-qwen38-reap384-depth40-mb4-5-GGUF
 - Modelo base (checkpoint fuente): https://huggingface.co/sjakek/slimder-qwen38-reap384-depth40-mb4-5
 - Fuente portable S0: https://huggingface.co/sjakek/slimder-qwen38-reap384-s0
 - Modelo Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B

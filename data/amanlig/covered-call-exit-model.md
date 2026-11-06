@@ -115,7 +115,7 @@ No hay una categoria de "modelos comparables" en el sentido de modelos fundacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amanlig/covered-call-exit-model
+- Repositorio en Hugging Face: https://huggingface.co/amanlig/covered-call-exit-model
 - Script de ejecucion del ejemplo: `run_example.py` (incluido en el repositorio)
 - Nucleo del modelo, con `evaluate` y `call_price`: `model.py` (incluido en el repositorio)
 - Entradas sinteticas de ejemplo: `examples/sample_input.json`

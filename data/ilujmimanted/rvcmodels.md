@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ilujmimanted/RVCModels no es un modelo de IA en el sentido habitual del término, sino un repositorio de alojamiento que agrupa cientos de modelos de conversión de voz del ecosistema RVC (Retrieval-based Voice Conversion). El autor no publica una arquitectura propia ni pesos entrenados por él, sino una colección de checkpoints de terceros que ocupa 571,1 GB en HuggingFace. La model card advierte de que los ficheros aparecen en "files and versions" con identificadores aleatorios para evitar duplicados, por lo que el listado nativo de HuggingFace no resulta utilizable como índice.
+ilujmimanted/RVCModels no es un modelo de IA en el sentido habitual del término, sino un repositorio de alojamiento que agrupa cientos de modelos de conversión de voz del ecosistema RVC (Retrieval-based Voice Conversion). El autor no publica una arquitectura propia ni pesos entrenados por él, sino una colección de checkpoints de terceros que ocupa 571,1 GB en Hugging Face. La model card advierte de que los ficheros aparecen en "files and versions" con identificadores aleatorios para evitar duplicados, por lo que el listado nativo de Hugging Face no resulta utilizable como índice.
 
 Para compensar ese desorden, el autor mantiene una hoja de cálculo externa en Google Sheets con la lista actualizada de modelos no repetidos y sus enlaces, y remite a un Space público (juuxn/SimpleRVC) para ejecutar inferencia directamente desde el navegador subiendo un audio y proporcionando la URL del modelo. El repositorio no declara licencia, idiomas, pipeline ni métricas de ningún tipo.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. La model card no publica requisitos de memoria ni de hardware.
 - GPU recomendadas: no disponible en la información proporcionada.
 - Compatibilidad con GPU de consumo: no disponible. No se puede afirmar ni descartar sin datos de tamaño y arquitectura por checkpoint.
-- Alternativa sin hardware local: el autor ofrece el Space juuxn/SimpleRVC, que ejecuta la inferencia en infraestructura de HuggingFace a partir de un enlace de modelo y un audio subido.
+- Alternativa sin hardware local: el autor ofrece el Space juuxn/SimpleRVC, que ejecuta la inferencia en infraestructura de Hugging Face a partir de un enlace de modelo y un audio subido.
 - Almacenamiento: el repositorio completo ocupa 571,1 GB, por lo que una clonación íntegra requiere ese espacio en disco; la descarga selectiva de checkpoints individuales reduce el requisito, pero no se documenta el tamaño de cada fichero.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplicables, ya que no se trata de un modelo de lenguaje. No se documenta ningún runtime específico de conversión de voz.
 - Latencia y throughput: no disponible.
@@ -85,13 +85,13 @@ La comparacion cuantitativa con cualquiera de estas alternativas figura como no 
 - Ausencia total de documentación técnica: no hay arquitectura, dataset, métricas, ni ficha por modelo. La calidad de cada checkpoint es una incógnita hasta evaluarlo manualmente.
 - Trazabilidad limitada: los ficheros se suben con identificadores aleatorios y el índice real vive en una hoja de cálculo externa, que puede quedar desactualizada, cambiar de permisos o desaparecer.
 - Sesgos y cobertura: al no documentarse los datos de entrenamiento, se desconocen los sesgos de acento, género, edad, idioma o calidad de grabación de cada modelo.
-- Dependencia de servicios de terceros: la inferencia propuesta depende de un Space de HuggingFace ajeno al repositorio, con disponibilidad, colas y límites no garantizados.
+- Dependencia de servicios de terceros: la inferencia propuesta depende de un Space de Hugging Face ajeno al repositorio, con disponibilidad, colas y límites no garantizados.
 - Sin garantía de mantenimiento: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de soporte, versionado ni respuesta a incidencias.
 - Resultados de búsqueda no concluyentes: las búsquedas web asociadas devolvieron páginas de ayuda de Google Maps, sin relación con el repositorio, por lo que no aportan verificación externa alguna.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ilujmimanted/RVCModels
+- Repositorio en Hugging Face: https://huggingface.co/ilujmimanted/RVCModels
 - Hoja de cálculo con el listado de modelos RVC: https://docs.google.com/spreadsheets/d/1owfUtQuLW9ReiIwg6U9UkkDmPOTkuNHf0OKQtWu1iaI
 - Space de inferencia RVC Simple Inference: https://huggingface.co/spaces/juuxn/SimpleRVC
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante; los resultados devueltos corresponden a páginas de ayuda de Google Maps (https://support.google.com/maps/) y no guardan relación con el modelo.

@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado para el modelo evaluado; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-low-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-low-midtrain
 - Modelo base: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain
 - Dataset: https://huggingface.co/datasets/joshycodes/sorrel-corpus
 - Modelo original de la arquitectura: https://huggingface.co/meta-llama/Llama-3.1-8B

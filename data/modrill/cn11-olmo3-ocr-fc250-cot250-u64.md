@@ -78,8 +78,8 @@ No se dispone de comparativas directas con otros adaptadores LoRA para Olmo 3 en
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/modrill/CN11-OLMO3-OCR-FC250-COT250-U64
-- Modelo base en HuggingFace: https://huggingface.co/allenai/Olmo-3-1025-7B (referencia indirecta; el ID exacto no se lista en la información)
+- Repositorio Hugging Face del adaptador: https://huggingface.co/modrill/CN11-OLMO3-OCR-FC250-COT250-U64
+- Modelo base en Hugging Face: https://huggingface.co/allenai/Olmo-3-1025-7B (referencia indirecta; el ID exacto no se lista en la información)
 - Paper de Olmo 3 (arXiv): https://arxiv.org/abs/2512.13961
 - Repositorio olmOCR (herramienta de OCR de AI2): https://github.com/allenai/olmocr
 - Repositorio de referencia olmOCR-OCR: https://github.com/yangyang117/olmocr-OCR

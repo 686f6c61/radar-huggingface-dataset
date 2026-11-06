@@ -117,7 +117,7 @@ V2VNet no está incluido en el zoo: su entrenamiento colapsó y el reentrenamien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Saavkd7/qcar-heal-zoo
+- Repositorio en Hugging Face: https://huggingface.co/Saavkd7/qcar-heal-zoo
 - Código y configuración (rama `qcar-testbed-integration`): https://github.com/Saavkd7/HEAL/tree/qcar-testbed-integration
 - Documentación de uso en el repositorio: `qcar/README.md` dentro de la rama anterior
 - Framework base HEAL (ICLR 2024): https://github.com/yifanlu0227/HEAL

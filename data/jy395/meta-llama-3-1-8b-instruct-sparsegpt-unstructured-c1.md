@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SparseGPT 50 % c1) | 8 030 M (≈4 015 M no nulos) | no disponible | Poda no estructurada 50 %, pesos densos | Llama 3.1 Community | HuggingFace, 166 descargas |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8 030 M | 128 000 tokens | Ninguna | Llama 3.1 Community | HuggingFace oficial |
-| Otras variantes de la coleccion ICAIF '26 | 8 030 M | no disponible | Poda o cuantizacion con calibracion financiera | Llama 3.1 Community | Coleccion jy395 en HuggingFace |
+| Este modelo (SparseGPT 50 % c1) | 8 030 M (≈4 015 M no nulos) | no disponible | Poda no estructurada 50 %, pesos densos | Llama 3.1 Community | Hugging Face, 166 descargas |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8 030 M | 128 000 tokens | Ninguna | Llama 3.1 Community | Hugging Face oficial |
+| Otras variantes de la coleccion ICAIF '26 | 8 030 M | no disponible | Poda o cuantizacion con calibracion financiera | Llama 3.1 Community | Coleccion jy395 en Hugging Face |
 
 La comparación relevante es frente al modelo base sin comprimir, que conserva todos los pesos y por tanto mayor calidad, y frente a las variantes calibradas con datos financieros de la misma colección, que según la hipótesis del artículo deberían recuperar mejor el rendimiento en tareas del dominio.
 
@@ -87,7 +87,7 @@ La comparación relevante es frente al modelo base sin comprimir, que conserva t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c1
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-8B-Instruct-sparsegpt-unstructured-c1
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Repositorio del autor: https://github.com/JunyiYe/finance-ptc-calibration
 - Script de poda: https://github.com/JunyiYe/finance-ptc-calibration/blob/main/scripts/quantization/sparsegpt_unstructured.py

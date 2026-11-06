@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Capacidad de atribucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CREDIT-DeepSeek-R1-Distill-Qwen-7B | 7B + LoRA r64 | 8.192 tokens (entrenamiento) | Si, linea `RELIED ON:` entrenada | Apache 2.0 (adaptador) / MIT (base) | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7B | no disponible en la informacion proporcionada | No especifica | MIT | HuggingFace |
-| Qwen2.5-Math-7B | 7B | no disponible en la informacion proporcionada | No especifica | Apache 2.0 | HuggingFace |
+| CREDIT-DeepSeek-R1-Distill-Qwen-7B | 7B + LoRA r64 | 8.192 tokens (entrenamiento) | Si, linea `RELIED ON:` entrenada | Apache 2.0 (adaptador) / MIT (base) | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7B | no disponible en la informacion proporcionada | No especifica | MIT | Hugging Face |
+| Qwen2.5-Math-7B | 7B | no disponible en la informacion proporcionada | No especifica | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas de auto-atribucion en la informacion proporcionada.
 
@@ -93,9 +93,9 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CyrusZhouzk/CREDIT-DeepSeek-R1-Distill-Qwen-7B
+- Modelo en Hugging Face: https://huggingface.co/CyrusZhouzk/CREDIT-DeepSeek-R1-Distill-Qwen-7B
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Articulo (arXiv): https://arxiv.org/abs/2610.35295
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2610.35295
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2610.35295
 - Codigo: https://github.com/stanford-oval/CREDIT
 - Dataset de entrenamiento: https://huggingface.co/datasets/CyrusZhouzk/CREDIT (config `train_r1_qwen_7b`)

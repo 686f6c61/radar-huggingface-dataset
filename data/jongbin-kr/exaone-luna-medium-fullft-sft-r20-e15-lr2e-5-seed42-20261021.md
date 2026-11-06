@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este fine-tuning (exaone-luna-medium-fullft-sft-...) | 7,8B | No disponible | No disponible en el repo | HuggingFace, 0 descargas | Checkpoint de investigacion, sin benchmarks |
-| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct | 7,8B | No disponible en la informacion | Licencia propia de LG AI Research | HuggingFace, ampliamente usado | Modelo base; preentrenado con 8T tokens, SFT + DPO |
-| Qwen2.5-7B-Instruct | 7,6B | 128K | Apache 2.0 | HuggingFace, amplia adopcion | Alternativa abierta con licencia permisiva; amplio ecosistema de cuantizaciones |
-| Llama-3.1-8B-Instruct | 8,0B | 128K | Llama 3.1 Community License | HuggingFace, amplia adopcion | Ecosistema maduro de herramientas y despliegue |
+| Este fine-tuning (exaone-luna-medium-fullft-sft-...) | 7,8B | No disponible | No disponible en el repo | Hugging Face, 0 descargas | Checkpoint de investigacion, sin benchmarks |
+| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct | 7,8B | No disponible en la informacion | Licencia propia de LG AI Research | Hugging Face, ampliamente usado | Modelo base; preentrenado con 8T tokens, SFT + DPO |
+| Qwen2.5-7B-Instruct | 7,6B | 128K | Apache 2.0 | Hugging Face, amplia adopcion | Alternativa abierta con licencia permisiva; amplio ecosistema de cuantizaciones |
+| Llama-3.1-8B-Instruct | 8,0B | 128K | Llama 3.1 Community License | Hugging Face, amplia adopcion | Ecosistema maduro de herramientas y despliegue |
 
 La comparacion relevante para este artefacto es contra su propio modelo base: el fine-tuning no documenta mejoras medibles, de modo que la decision practica entre ambos debe basarse en evaluacion propia sobre la tarea objetivo. Frente a Qwen2.5-7B o Llama-3.1-8B, la diferencia principal es de licencia y de idioma: EXAONE esta optimizado para coreano e ingles y su licencia es menos permisiva que Apache 2.0.
 
@@ -100,7 +100,7 @@ La comparacion relevante para este artefacto es contra su propio modelo base: el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/exaone-luna-medium-fullft-sft-r20-e15-lr2e-5-seed42-20261021
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/exaone-luna-medium-fullft-sft-r20-e15-lr2e-5-seed42-20261021
 - Modelo base EXAONE-3.5-7.8B-Instruct: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Dataset VeriReason-Luna-Medium-16K: https://huggingface.co/datasets/DanielJeongsooLee/VeriReason-Luna-Medium-16K
 - Experimento relacionado (GRPO sobre el mismo linaje): https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513-luna-medium-fullft-best-grpo-epoch5

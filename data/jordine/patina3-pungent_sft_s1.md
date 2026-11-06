@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-pungent_sft_s1` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine. Está diseñado para ser utilizado sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer decoder-only de 8 mil millones de parámetros desarrollado por Meta. El adaptador se presenta como un fine-tuning supervisado (SFT) —el sufijo `_sft` en el nombre sugiere entrenamiento con supervisión— aunque no se proporcionan detalles sobre el dataset, la tarea específica o el dominio de especialización.
+El modelo `Jordine/patina3-pungent_sft_s1` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine. Está diseñado para ser utilizado sobre el modelo base `meta-llama/Llama-3.1-8B`, un transformer decoder-only de 8 mil millones de parámetros desarrollado por Meta. El adaptador se presenta como un fine-tuning supervisado (SFT) —el sufijo `_sft` en el nombre sugiere entrenamiento con supervisión— aunque no se proporcionan detalles sobre el dataset, la tarea específica o el dominio de especialización.
 
 La relevancia de este modelo radica en que, al ser un adaptador LoRA, permite personalizar Llama-3.1-8B con un coste computacional reducido y un tamaño de repositorio de solo 0.7 GB, frente a los aproximadamente 16 GB del modelo base en precisión completa. Esto facilita su despliegue en entornos con recursos limitados, ya que solo es necesario cargar el adaptador junto con el modelo base. Sin embargo, la ausencia de una model card detallada, benchmarks o documentación de entrenamiento limita significativamente la evaluación de su calidad y sus capacidades reales.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [Jordine/patina3-pungent_sft_s1](https://huggingface.co/Jordine/patina3-pungent_sft_s1)
+- Repositorio de Hugging Face: [Jordine/patina3-pungent_sft_s1](https://huggingface.co/Jordine/patina3-pungent_sft_s1)
 - Modelo base: [meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - Paper de LoRA: [LoRA: Low-Rank Adaptation of Large Language Models (arXiv:2106.09685)](https://arxiv.org/abs/2106.09685)
 - Paper de Llama 3.1: [The Llama 3 Herd of Models (arXiv:2407.21783)](https://arxiv.org/abs/2407.21783)

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| illumex_vision_flow_io (este) | 466.007.520 (vision + interfaces + VAE) | Parches 14x14x3 empaquetados; sin limite documentado | Features visuales 1152 d, conector 3584 d, latentes VAE 16 canales | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| ChonghuinanWang/ILLUME-X (upstream) | no disponible en la informacion proporcionada | no disponible | Modelo multimodal completo (vision + lenguaje/MoT) | no disponible en la informacion proporcionada | HuggingFace |
+| illumex_vision_flow_io (este) | 466.007.520 (vision + interfaces + VAE) | Parches 14x14x3 empaquetados; sin limite documentado | Features visuales 1152 d, conector 3584 d, latentes VAE 16 canales | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| ChonghuinanWang/ILLUME-X (upstream) | no disponible en la informacion proporcionada | no disponible | Modelo multimodal completo (vision + lenguaje/MoT) | no disponible en la informacion proporcionada | Hugging Face |
 | BAGEL (origen del VAE incluido) | no disponible en la informacion proporcionada | no disponible | Generacion multimodal; el VAE es una dependencia | no disponible en la informacion proporcionada | Upstream citado en la model card |
 | Torres SigLIP / CLIP de proposito general | no disponible en la informacion proporcionada | no disponible | Image feature extraction / image-text matching | no disponible en la informacion proporcionada | Amplia, pero sin las interfaces latentes ni el aislamiento por segmentos |
 
@@ -87,7 +87,7 @@ La comparacion cuantitativa con alternativas no puede establecerse con los datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gatilin/illumex_vision_flow_io
+- Modelo en Hugging Face: https://huggingface.co/gatilin/illumex_vision_flow_io
 - Modelo base oficial (ILLUME-X): https://huggingface.co/ChonghuinanWang/ILLUME-X
 - Codigo de carga incluido en el repo: `component.py` (https://huggingface.co/gatilin/illumex_vision_flow_io/blob/main/component.py)
 - Script de validacion: `validate.py` (https://huggingface.co/gatilin/illumex_vision_flow_io/blob/main/validate.py)

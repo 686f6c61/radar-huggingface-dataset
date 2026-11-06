@@ -45,7 +45,7 @@ El autor delimita explícitamente el alcance de sus afirmaciones mediante cuatro
 - Archivística y preservación: usar el censo de ficheros y directorios como ejemplo de inventario reproducible de una superficie de trabajo, con recuentos y tamaños verificables.
 - Investigación sobre anclaje de procedencia: examinar las etiquetas de límite de afirmación (`MEASURED`, `SYSTEM_AFFIRMED`, `OPERATOR_OBSERVED`, `DESIGN`) como plantilla para distinguir hechos medidos de afirmaciones de diseño en documentación técnica.
 - Revisión previa a integración: si un equipo considerase adoptar el esquema LX para enrutar herramientas en un agente, este repositorio serviría únicamente como punto de partida documental, nunca como dependencia ejecutable.
-- Análisis crítico de publicaciones en HuggingFace: el caso ilustra cómo un repositorio sin pipeline, licencia ni idiomas declarados puede resultar inutilizable en producción pese a presentarse con terminología técnica densa.
+- Análisis crítico de publicaciones en Hugging Face: el caso ilustra cómo un repositorio sin pipeline, licencia ni idiomas declarados puede resultar inutilizable en producción pese a presentarse con terminología técnica densa.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada modelos n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/LX-chain-ORIGINAL-tokens-savings-LIRIS-SEAT
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/LX-chain-ORIGINAL-tokens-savings-LIRIS-SEAT
 - Repositorio hermano (GitHub): https://github.com/JesseBrown1980/IX-chain-ORIGINAL-index-language-ACER-SEAT
 - Documento de origen: `docs/LX-CHAIN-ORIGIN-TOKEN-SAVINGS-2026-07-05.md`
 - Censo medido: `docs/measured-liris-lx-census-2026-07-05.csv`

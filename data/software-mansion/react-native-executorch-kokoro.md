@@ -76,7 +76,7 @@ No hay datos disponibles para una comparativa directa con modelos alternativos e
 
 ## Enlaces
 
-- HuggingFace: [software-mansion/react-native-executorch-kokoro](https://huggingface.co/software-mansion/react-native-executorch-kokoro)
+- Hugging Face: [software-mansion/react-native-executorch-kokoro](https://huggingface.co/software-mansion/react-native-executorch-kokoro)
 - Modelo original: [hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)
 - Repositorio GitHub de React Native ExecuTorch: [software-mansion/react-native-executorch](https://github.com/software-mansion/react-native-executorch)
 - Documentación de React Native ExecuTorch: [Getting Started](https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started)

@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/BigBang-Aquila-35B-Merged-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/BigBang-Aquila-35B-Merged-i1-GGUF
 - Repositorio estatico con quants sin imatrix y archivos mmproj: https://huggingface.co/mradermacher/BigBang-Aquila-35B-Merged-GGUF
 - Modelo base (merge original): https://huggingface.co/osk-arr00/BigBang-Aquila-35B-Merged
 - Pagina de ayuda del autor para solicitudes de modelos: https://huggingface.co/mradermacher/model_requests

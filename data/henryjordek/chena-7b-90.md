@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chena-7B-90 es un modelo de lenguaje conversacional de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) publicado por el usuario HenryJordek en HuggingFace bajo licencia MIT. El repositorio contiene únicamente pesos en formato GGUF, lo que lo orienta directamente a inferencia local mediante herramientas como llama.cpp u Ollama, y está etiquetado como compatible con endpoints y de propósito conversacional. La model card pública no incluye información sobre arquitectura, datos de entrenamiento ni proceso de alineación, por lo que la mayoría de las especificaciones técnicas deben considerarse no disponibles.
+Chena-7B-90 es un modelo de lenguaje conversacional de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) publicado por el usuario HenryJordek en Hugging Face bajo licencia MIT. El repositorio contiene únicamente pesos en formato GGUF, lo que lo orienta directamente a inferencia local mediante herramientas como llama.cpp u Ollama, y está etiquetado como compatible con endpoints y de propósito conversacional. La model card pública no incluye información sobre arquitectura, datos de entrenamiento ni proceso de alineación, por lo que la mayoría de las especificaciones técnicas deben considerarse no disponibles.
 
 El modelo tiene un perfil de uso muy limitado en cuanto a tracción: 38 descargas y ninguna interacción social en el momento de la consulta. El sufijo "90" en el nombre no está documentado en la información disponible, por lo que no es posible determinar si hace referencia a una versión, un paso de entrenamiento o una variante de cuantización. El tamaño del repositorio (4,7 GB) es coherente con un modelo de ~7,6B parámetros cuantizado en GGUF de 4-5 bits.
 
@@ -25,7 +25,7 @@ Por su tamaño y formato, encaja en el segmento de modelos pequeños desplegable
 
 No se ha publicado información sobre la arquitectura del modelo en la documentación disponible. Por el número de parámetros (7,6B) y el formato de distribución (GGUF), es plausible que se trate de un transformer decoder-only derivado de una familia existente, pero no hay datos que confirmen el diseño, la atención utilizada ni si incorpora técnicas como atención lineal o decodificación especulativa.
 
-Tampoco se dispone de información sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüismo), ni sobre si se aplicaron fases de ajuste supervisado, RLHF o DPO. El etiquetado "conversational" en HuggingFace sugiere algún tipo de ajuste para diálogo, pero su alcance y metodología no están documentados.
+Tampoco se dispone de información sobre el corpus de entrenamiento (número de tokens, composición, proporción de código o multilingüismo), ni sobre si se aplicaron fases de ajuste supervisado, RLHF o DPO. El etiquetado "conversational" en Hugging Face sugiere algún tipo de ajuste para diálogo, pero su alcance y metodología no están documentados.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ Tampoco se dispone de información sobre el corpus de entrenamiento (número de 
 - Generación de texto asistida en herramientas de edición: borradores, resúmenes o reescritura en local, con la advertencia de que no hay benchmarks que respalden la calidad.
 - Fines educativos y de investigación: permite estudiar el comportamiento de un modelo conversacional pequeño sin restricciones de licencia para uso comercial.
 - Despliegue en entornos con requisitos de privacidad: al poder ejecutarse íntegramente en local, los datos no salen del dispositivo, lo que encaja en escenarios con datos sensibles.
-- Integración en pipelines compatibles con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse detrás de una API compatible con el esquema de HuggingFace, aunque la configuración concreta no está documentada.
+- Integración en pipelines compatibles con endpoints: la etiqueta "endpoints_compatible" sugiere que puede servirse detrás de una API compatible con el esquema de Hugging Face, aunque la configuración concreta no está documentada.
 
 ## Benchmarks y rendimiento
 
@@ -83,5 +83,5 @@ La comparación se limita a parámetros, contexto, licencia y disponibilidad, ya
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HenryJordek/Chena-7B-90
+- Hugging Face: https://huggingface.co/HenryJordek/Chena-7B-90
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

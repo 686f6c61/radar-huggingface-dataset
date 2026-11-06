@@ -84,7 +84,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExplorer/mixvargenet
+- Modelo en Hugging Face: https://huggingface.co/OpenExplorer/mixvargenet
 - Documentacion OpenExplorer (AI Benchmark): https://toolchain.d-robotics.cc/en/guide/ucp/runtime/ai_benchmark.html
 - Documentacion Horizon OpenExplorer (AI Benchmark): https://doc.oe.horizon.auto/en/guide/model_deployment/board_deployment/ai_benchmark.html
 - Benchmark J6P/H: https://doc.oe.horizon.auto/en/guide/samples/benchmark/j6ph_benchmark.html

@@ -25,7 +25,7 @@ Por el nombre de la tarea y por los resultados de búsqueda, el artefacto parece
 | Identificadores | artifact sha256 `6477f159`; identity sha256 `f59e19fa`; quota 23; flags `[]` |
 | Visibilidad | Privado (`private`) |
 | Descargas / likes | 0 / 0 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ La comparación directa no es posible porque este repositorio no es un modelo pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/G21998/r1019-d7e3685b-ideogram4-ipfull-s43-94f21b9c
+- Repositorio en Hugging Face: https://huggingface.co/G21998/r1019-d7e3685b-ideogram4-ipfull-s43-94f21b9c
 - Repositorio hermano del mismo árbol: https://huggingface.co/G21998/r1019-d7425d0f-ideogram4-ipfull-s43-94f21b9c
 - Ideogram 4.0 (modelo de pesos abiertos): https://ideogram.ai/models/4.0/
 - Ideogram 4.5: https://ideogram.ai/models/4.5/

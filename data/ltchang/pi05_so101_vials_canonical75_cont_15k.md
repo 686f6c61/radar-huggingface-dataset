@@ -77,7 +77,7 @@ Estos modelos comparten la misma arquitectura base y dominio, pero no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ltchang/pi05_so101_vials_canonical75_cont_15k
+- Modelo en Hugging Face: https://huggingface.co/ltchang/pi05_so101_vials_canonical75_cont_15k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sreetz-nv/so101_teleop_vials_rack_left
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05

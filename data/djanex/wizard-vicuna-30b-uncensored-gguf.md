@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para este modelo.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Djanex/Wizard-Vicuna-30B-Uncensored-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/Djanex/Wizard-Vicuna-30B-Uncensored-GGUF
 - Modelo original (Eric Hartford): https://huggingface.co/ehartford/Wizard-Vicuna-30B-Uncensored
 - Repo GGUF original de TheBloke: https://huggingface.co/TheBloke/Wizard-Vicuna-30B-Uncensored-GGUF
 - Pagina en ModelScope: https://www.modelscope.cn/models/TheBloke/Wizard-Vicuna-30B-Uncensored-GGUF

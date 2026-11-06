@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Simplicio-27B-merged es un modelo de lenguaje publicado en HuggingFace por el usuario wesleysimplicio, resultado de un ajuste fino sobre `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`. Cuenta con 27.781.427.952 parametros (~27,8 mil millones), un repositorio de 55,6 GB en formato safetensors y licencia Apache 2.0. La etiqueta de pipeline es `image-text-to-text`, lo que indica que acepta entradas de imagen y texto, aunque la model card no documenta el componente de vision.
+Simplicio-27B-merged es un modelo de lenguaje publicado en Hugging Face por el usuario wesleysimplicio, resultado de un ajuste fino sobre `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`. Cuenta con 27.781.427.952 parametros (~27,8 mil millones), un repositorio de 55,6 GB en formato safetensors y licencia Apache 2.0. La etiqueta de pipeline es `image-text-to-text`, lo que indica que acepta entradas de imagen y texto, aunque la model card no documenta el componente de vision.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun la unica frase tecnica que aparece en la model card. No se especifican el dataset, el numero de tokens de entrenamiento, el metodo de alineacion (RLHF, DPO u otros) ni la longitud de contexto soportada. El nombre "merged" sugiere la fusion de adaptadores LoRA sobre el modelo base, practica habitual en flujos de ajuste eficiente con Unsloth.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun la unica frase tecnica que aparece en la model card. No se especifican el dataset, el numero de tokens de entrenamiento, el metodo de alineacion (RLHF, DPO u otros) ni la longitud de contexto soportada. El nombre "merged" sugiere la fusion de adaptadores LoRA sobre el modelo base, practica habitual en flujos de ajuste eficiente con Unsloth.
 
 Su relevancia actual es limitada: acumula 0 descargas y 0 likes, no publica resultados de benchmarks y la documentacion tecnica es minima. El interes principal esta en servir como ejemplo de flujo de trabajo de ajuste fino sobre una base cuantizada a 4 bits con bitsandbytes y posterior fusion a pesos completos, asi como en su caracter multimodal declarado.
 
@@ -30,14 +30,14 @@ Su relevancia actual es limitada: acumula 0 descargas y 0 likes, no publica resu
 
 La model card no aporta informacion sobre la arquitectura interna: no se detalla si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido. La etiqueta `qwen3_5` y el nombre del modelo base (`Qwen3.8-27B`) apuntan a la familia Qwen 3.5 de Alibaba, pero la ficha no confirma oficialmente esta filiacion ni reproduce la arquitectura concreta. El pipeline `image-text-to-text` implica la presencia de un codificador multimodal, del que tampoco se ofrece informacion.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de HuggingFace, con una afirmacion de velocidad "2x faster" respecto a un entrenamiento convencional. No se documentan el volumen de tokens, la composicion del dataset, el idioma de los datos de ajuste, la tecnica de alineacion ni si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. El modelo base estaba cuantizado a 4 bits (bitsandbytes), de modo que el ajuste partio de pesos comprimidos; el repositorio publicado contiene pesos en precision completa (55,6 GB para 27,8 B de parametros, coherente con bf16/fp16), lo que sugiere una fusion de adaptadores y una des-cuantizacion previa a la publicacion.
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de Hugging Face, con una afirmacion de velocidad "2x faster" respecto a un entrenamiento convencional. No se documentan el volumen de tokens, la composicion del dataset, el idioma de los datos de ajuste, la tecnica de alineacion ni si se aplicaron tecnicas como decodificacion especulativa o atencion lineal. El modelo base estaba cuantizado a 4 bits (bitsandbytes), de modo que el ajuste partio de pesos comprimidos; el repositorio publicado contiene pesos en precision completa (55,6 GB para 27,8 B de parametros, coherente con bf16/fp16), lo que sugiere una fusion de adaptadores y una des-cuantizacion previa a la publicacion.
 
 ## Capacidades
 
 - Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
 - Entrada multimodal imagen-texto declarada por el pipeline `image-text-to-text`, aunque no se especifica que tareas de vision estan soportadas (descripcion, VQA, OCR u otras).
 - Compatibilidad con `transformers` y con `text-generation-inference` (TGI), segun las etiquetas del repositorio.
-- Compatibilidad declarada con `endpoints_compatible`, lo que indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad declarada con `endpoints_compatible`, lo que indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Idiomas: unicamente ingles (`en`) segun los metadatos.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -75,8 +75,8 @@ Estimaciones derivadas del numero de parametros (27,8 B) y del tamano del reposi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Simplicio-27B-merged | 27,78 B | no disponible | apache-2.0 | HuggingFace, safetensors |
-| unsloth/Qwen3.8-27B-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible | HuggingFace |
+| Simplicio-27B-merged | 27,78 B | no disponible | apache-2.0 | Hugging Face, safetensors |
+| unsloth/Qwen3.8-27B-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos de la misma categoria en la documentacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento fiable.
@@ -96,7 +96,7 @@ No se dispone de informacion sobre otros modelos de la misma categoria en la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesleysimplicio/Simplicio-27B-merged
+- Modelo en Hugging Face: https://huggingface.co/wesleysimplicio/Simplicio-27B-merged
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl (referenciada en la model card, URL no incluida explicitamente en la informacion proporcionada)
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl (referenciada en la model card, URL no incluida explicitamente en la informacion proporcionada)

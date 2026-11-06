@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Tiamat-24B-Magistral-PaperWitch-heresy-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Tiamat-24B-Magistral-PaperWitch-heresy-GGUF
 - Modelo base: https://huggingface.co/MuXodious/Tiamat-24B-Magistral-PaperWitch-heresy
 - Cuantizaciones con importance matrix: https://huggingface.co/mradermacher/Tiamat-24B-Magistral-PaperWitch-heresy-i1-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Tiamat-24B-Magistral-PaperWitch-heresy-GGUF

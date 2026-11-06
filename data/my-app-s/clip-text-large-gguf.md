@@ -83,7 +83,7 @@ La comparación con alternativas de la misma categoría (codificadores de texto 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/my-app-s/clip-text-large-GGUF
+- Repositorio Hugging Face: https://huggingface.co/my-app-s/clip-text-large-GGUF
 - Modelo upstream: https://huggingface.co/openai/clip-vit-large-patch14
 - Codificador visual emparejado: https://huggingface.co/cstr/clip-vit-large-patch14-GGUF
 - Codificador visual emparejado (336): https://huggingface.co/cstr/clip-vit-large-patch14-336-GGUF

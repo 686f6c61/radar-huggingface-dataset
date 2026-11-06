@@ -70,8 +70,8 @@ En cuanto al rendimiento de servicio, la model card menciona que se han medido c
 
 | Modelo | Parametros | Activos | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MIRA-SFT-35B-A3B (este paquete) | 35B | 3B | 262.144 | Sí (texto e imágenes) | Apache 2.0 | HuggingFace + Tenstorrent |
-| Qwen3.6-35B-A3B (base) | 35B | 3B | no disponible | no disponible | no disponible | HuggingFace |
+| MIRA-SFT-35B-A3B (este paquete) | 35B | 3B | 262.144 | Sí (texto e imágenes) | Apache 2.0 | Hugging Face + Tenstorrent |
+| Qwen3.6-35B-A3B (base) | 35B | 3B | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos publicados en la información proporcionada para establecer una comparación cuantitativa con modelos similares.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 ## Enlaces
 
-- [HuggingFace: raahemnabeel/mira-sft-35b-a3b](https://huggingface.co/raahemnabeel/mira-sft-35b-a3b)
+- [Hugging Face: raahemnabeel/mira-sft-35b-a3b](https://huggingface.co/raahemnabeel/mira-sft-35b-a3b)
 - [Modelo base: MIRA-MMDeepResearch/MIRA-SFT-35B-A3B](https://huggingface.co/MIRA-MMDeepResearch/MIRA-SFT-35B-A3B)
 - [GitHub del proyecto MIRA](https://github.com/MIRA-MMDeepResearch/MIRA)
 - [tt-model-manager](https://github.com/tenstorrent/tt-model-manager)

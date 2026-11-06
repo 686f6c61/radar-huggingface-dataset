@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SH98/wt-nids-gemma2-9b es un modelo publicado en HuggingFace por el usuario SH98. La informacion disponible es extremadamente limitada: la model card del repositorio contiene unicamente la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. El repositorio tiene un tamano de 66,6 GB y esta etiquetado con `safetensors` y `region: us`, con fecha de creacion en septiembre de 2026 y ultima actualizacion ese mismo mes. No registra descargas ni likes en el momento de la consulta.
+SH98/wt-nids-gemma2-9b es un modelo publicado en Hugging Face por el usuario SH98. La informacion disponible es extremadamente limitada: la model card del repositorio contiene unicamente la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. El repositorio tiene un tamano de 66,6 GB y esta etiquetado con `safetensors` y `region: us`, con fecha de creacion en septiembre de 2026 y ultima actualizacion ese mismo mes. No registra descargas ni likes en el momento de la consulta.
 
 El identificador del repositorio sugiere, sin que exista confirmacion documental, una adaptacion o ajuste fino del modelo Gemma 2 de 9B orientada a deteccion de intrusiones en red (NIDS, *Network Intrusion Detection System*). Esta interpretacion se basa unicamente en la convencion de nombres y debe tratarse como una hipotesis no verificada, no como un dato tecnico contrastado. La ausencia de pipeline declarado, de idiomas soportados y de cualquier metrica impide caracterizar el modelo con rigor.
 
@@ -98,5 +98,5 @@ Nota: los datos de las filas de comparacion corresponden a los modelos de refere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SH98/wt-nids-gemma2-9b
+- Hugging Face: https://huggingface.co/SH98/wt-nids-gemma2-9b
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda corresponden a dominios bancarios sin ninguna relacion con el repositorio.

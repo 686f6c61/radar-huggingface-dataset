@@ -4,9 +4,9 @@
 
 Este repositorio no contiene un modelo completo, sino un adaptador LoRA entrenado con PEFT sobre el modelo base deepseek-ai/DeepSeek-R1-Distill-Qwen-7B. El identificador del repositorio indica que se trata de un checkpoint intermedio (step 234) de una ejecucion de ajuste supervisado (SFT) orientada a texto, denominada "text-sft-training-curve-run1", por lo que su naturaleza es la de un artefacto de investigacion para estudiar curvas de entrenamiento, no la de un modelo listo para produccion.
 
-El autor es el usuario de HuggingFace nmuendler y el repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador en safetensors (sin los pesos del modelo base, que se descargan por separado). La libreria declarada es peft 0.20.0, la etiqueta de pipeline es text-generation y el tag conversational sugiere un ajuste sobre datos de dialogo, aunque la model card no lo confirma.
+El autor es el usuario de Hugging Face nmuendler y el repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador en safetensors (sin los pesos del modelo base, que se descargan por separado). La libreria declarada es peft 0.20.0, la etiqueta de pipeline es text-generation y el tag conversational sugiere un ajuste sobre datos de dialogo, aunque la model card no lo confirma.
 
-Su relevancia es limitada y muy especifica: sirve para reproducir o inspeccionar un punto concreto de una curva de entrenamiento y para comparar el efecto del SFT a distintos pasos. La model card publicada es la plantilla por defecto de HuggingFace, sin completar, por lo que no hay informacion sobre datos, hiperparametros, licencia ni idiomas. Cualquier evaluacion de calidad debe hacerse contra el modelo base, cuyas caracteristicas (arquitectura Qwen2.5 de 7B parametros, licencia MIT, ventana de contexto de 131.072 tokens) si estan documentadas publicamente, pero no en la informacion proporcionada aqui.
+Su relevancia es limitada y muy especifica: sirve para reproducir o inspeccionar un punto concreto de una curva de entrenamiento y para comparar el efecto del SFT a distintos pasos. La model card publicada es la plantilla por defecto de Hugging Face, sin completar, por lo que no hay informacion sobre datos, hiperparametros, licencia ni idiomas. Cualquier evaluacion de calidad debe hacerse contra el modelo base, cuyas caracteristicas (arquitectura Qwen2.5 de 7B parametros, licencia MIT, ventana de contexto de 131.072 tokens) si estan documentadas publicamente, pero no en la informacion proporcionada aqui.
 
 ## Especificaciones tecnicas
 
@@ -80,11 +80,11 @@ La comparacion se establece a nivel de modelo base y familia, ya que no existen 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre DeepSeek-R1-Distill-Qwen-7B) | Adaptador LoRA sobre 7B | No disponible; el base declara 131.072 | No disponible | HuggingFace, 0,3 GB, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | ~7B | 131.072 tokens (Qwen2.5) | MIT | HuggingFace, ampliamente descargado |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | ~8B | 131.072 tokens (Llama 3.1) | MIT | HuggingFace |
-| Qwen2.5-7B-Instruct | ~7B | 131.072 tokens | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8B | 131.072 tokens | Licencia comunitaria Llama 3.1 | HuggingFace |
+| Este adaptador (sobre DeepSeek-R1-Distill-Qwen-7B) | Adaptador LoRA sobre 7B | No disponible; el base declara 131.072 | No disponible | Hugging Face, 0,3 GB, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | ~7B | 131.072 tokens (Qwen2.5) | MIT | Hugging Face, ampliamente descargado |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | ~8B | 131.072 tokens (Llama 3.1) | MIT | Hugging Face |
+| Qwen2.5-7B-Instruct | ~7B | 131.072 tokens | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8B | 131.072 tokens | Licencia comunitaria Llama 3.1 | Hugging Face |
 
 Diferencias clave: frente a los anteriores, este repositorio no aporta pesos completos, no declara licencia y no ofrece garantias de calidad; su unico valor diferencial es representar un estado intermedio concreto de un experimento de SFT reproducible.
 
@@ -102,7 +102,7 @@ Diferencias clave: frente a los anteriores, este repositorio no aporta pesos com
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step234
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step234
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Familia DeepSeek-R1 (modelo del que se destila el base): https://huggingface.co/deepseek-ai/DeepSeek-R1
 - Libreria PEFT: https://github.com/huggingface/peft

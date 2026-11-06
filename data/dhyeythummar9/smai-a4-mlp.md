@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-mlp` es un perceptrón multicapa (MLP) mínimo entrenado desde cero sobre los píxeles crudos del conjunto de datos CIFAR-10. Lo publica el usuario de HuggingFace `dhyeythummar9` como entrega de la asignación 4 (pregunta 1.5) de la asignatura SMAI, y su interés es puramente didáctico: demuestra cómo construir y exportar un clasificador de imágenes sin frameworks de deep learning, usando únicamente NumPy.
+`smai-a4-mlp` es un perceptrón multicapa (MLP) mínimo entrenado desde cero sobre los píxeles crudos del conjunto de datos CIFAR-10. Lo publica el usuario de Hugging Face `dhyeythummar9` como entrega de la asignación 4 (pregunta 1.5) de la asignatura SMAI, y su interés es puramente didáctico: demuestra cómo construir y exportar un clasificador de imágenes sin frameworks de deep learning, usando únicamente NumPy.
 
 El modelo tiene una arquitectura fija de 3072-64-10 (una capa oculta ReLU de 64 neuronas y salida identidad de 10 clases), con 197.322 parámetros totales. Se entrenó durante 100 épocas con SGD plano (lr 0,01, batch 64) en float64 sobre las 50.000 imágenes de entrenamiento de CIFAR-10, y alcanza una precisión de test de 0,4588 y un F1 medio de 0,4572.
 
@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dhyeythummar9/smai-a4-mlp
+- Hugging Face: https://huggingface.co/dhyeythummar9/smai-a4-mlp
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B-MLX-4bit es una conversión no oficial del modelo Qwen3.5-2B de Alibaba al formato MLX cuantizado a 4 bits, publicada por el usuario arlenecc en HuggingFace. Se trata de un checkpoint derivado, no de un modelo entrenado desde cero: el autor se limita a aplicar cuantización de 4 bits mediante el framework MLX de Apple, empaquetando los pesos en safetensors con el tag `qwen3_5` para su uso en hardware Apple Silicon.
+Qwen3.5-2B-MLX-4bit es una conversión no oficial del modelo Qwen3.5-2B de Alibaba al formato MLX cuantizado a 4 bits, publicada por el usuario arlenecc en Hugging Face. Se trata de un checkpoint derivado, no de un modelo entrenado desde cero: el autor se limita a aplicar cuantización de 4 bits mediante el framework MLX de Apple, empaquetando los pesos en safetensors con el tag `qwen3_5` para su uso en hardware Apple Silicon.
 
 El modelo base pertenece a la familia Qwen3.5, la línea de modelos densos de tamaño pequeño de Alibaba, con aproximadamente 2.213 millones de parámetros (2,2 B). Su interés práctico reside en la posibilidad de ejecutar un modelo de esta familia en Macs con memoria unificada, aprovechando las optimizaciones de MLX para inferencia local. El repositorio ocupa 1,7 GB, coherente con un modelo de 2,2 B en 4 bits.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arlenecc/Qwen3.5-2B-MLX-4bit | 2,2 B | no disponible | MLX 4-bit | MIT | HuggingFace |
-| Qwen3.5-2B (base, oficial) | 2,2 B | no disponible | safetensors | no disponible | presumiblemente HuggingFace (no confirmado) |
-| Conversiones GGUF de Qwen de ~2 B | ~2 B | no disponible | GGUF | variable | HuggingFace (comunidad) |
+| arlenecc/Qwen3.5-2B-MLX-4bit | 2,2 B | no disponible | MLX 4-bit | MIT | Hugging Face |
+| Qwen3.5-2B (base, oficial) | 2,2 B | no disponible | safetensors | no disponible | presumiblemente Hugging Face (no confirmado) |
+| Conversiones GGUF de Qwen de ~2 B | ~2 B | no disponible | GGUF | variable | Hugging Face (comunidad) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arlenecc/Qwen3.5-2B-MLX-4bit
+- Hugging Face: https://huggingface.co/arlenecc/Qwen3.5-2B-MLX-4bit
 - Modelo base Qwen3.5-2B: no disponible en la información proporcionada
 - Paper o blog oficial de Qwen3.5: no disponible en la información proporcionada
 - Repositorio MLX: no disponible en la información proporcionada

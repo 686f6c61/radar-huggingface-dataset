@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_500_NEW es un adaptador LoRA publicado por el usuario maria715 en HuggingFace, con 0 descargas y 0 likes en el momento de la consulta. Según su propia model card, se trata de un adaptador derivado de experimentos de tesis de máster sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No se trata, por tanto, de un modelo completo, sino de un conjunto de pesos delta que debe cargarse sobre un modelo base no especificado en la documentación.
+CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_500_NEW es un adaptador LoRA publicado por el usuario maria715 en Hugging Face, con 0 descargas y 0 likes en el momento de la consulta. Según su propia model card, se trata de un adaptador derivado de experimentos de tesis de máster sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No se trata, por tanto, de un modelo completo, sino de un conjunto de pesos delta que debe cargarse sobre un modelo base no especificado en la documentación.
 
 El repositorio no incluye información sobre el modelo base exacto, la composición del dataset, el número de tokens de entrenamiento ni resultados de evaluación. El nombre del artefacto aporta pistas sobre la configuración experimental: una base de la familia Llama de aproximadamente 3 000 millones de parámetros, un formato de conversación o alineamiento tipo Zephyr, un valor de perturbación adversarial epsilon de 0,3, semilla 42, una tasa de aprendizaje relativa y un presupuesto de 500 pasos de optimización con un objetivo que el autor etiqueta como "utility". Estas lecturas proceden exclusivamente de la nomenclatura del repositorio y no están confirmadas por ninguna documentación técnica.
 
@@ -96,5 +96,5 @@ Las filas de referencia se incluyen unicamente porque el nombre del repositorio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_500_NEW
+- Modelo en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0300_42_relativelr_utility_500_NEW
 - No se han encontrado enlaces adicionales en la informacion disponible: no hay paper, repositorio de codigo, blog, demo ni documentacion de la tesis asociada.

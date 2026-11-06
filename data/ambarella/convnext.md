@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConvNeXt-Tiny (este repo) | CNN | no disponible (variante Tiny) | 3x224x224 | no disponible | HuggingFace (Ambarella) |
+| ConvNeXt-Tiny (este repo) | CNN | no disponible (variante Tiny) | 3x224x224 | no disponible | Hugging Face (Ambarella) |
 | ConvNeXt-Tiny (torchvision) | CNN | no disponible en la ficha | 3x224x224 | no disponible | PyTorch Hub / torchvision |
 | ResNet-50 | CNN | no disponible en la ficha | 3x224x224 | no disponible | Amplia (torchvision, etc.) |
 | ViT-B/16 | Transformer | no disponible en la ficha | 3x224x224 | no disponible | Amplia |
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ambarella/ConvNeXt
+- Repositorio en Hugging Face: https://huggingface.co/Ambarella/ConvNeXt
 - Paper original: https://arxiv.org/abs/2201.03545
 - Implementación de referencia en torchvision: https://pytorch.org/vision/stable/models/generated/torchvision.models.convnext_tiny.html
 - Pesos originales: https://download.pytorch.org/models/convnext_tiny-983f1562.pth

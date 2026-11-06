@@ -29,7 +29,7 @@ Su relevancia es metodologica, no tecnica: la nota propone una comparacion con b
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura real ni sobre entrenamiento. El unico indicio es el tag `transformer` en los metadatos de HuggingFace, que no se corresponde con ninguna configuracion, ficha tecnica, numero de capas, dimension de embeddings o tipo de atencion publicada. Tampoco se documenta vocabulario, tokenizer, funcion de perdida, volumen de tokens de entrenamiento, composicion del corpus ni si hubo etapas de ajuste por instrucciones (SFT, RLHF o DPO). El repositorio no libera codigo de entrenamiento ni de evaluacion.
+No hay informacion sobre arquitectura real ni sobre entrenamiento. El unico indicio es el tag `transformer` en los metadatos de Hugging Face, que no se corresponde con ninguna configuracion, ficha tecnica, numero de capas, dimension de embeddings o tipo de atencion publicada. Tampoco se documenta vocabulario, tokenizer, funcion de perdida, volumen de tokens de entrenamiento, composicion del corpus ni si hubo etapas de ajuste por instrucciones (SFT, RLHF o DPO). El repositorio no libera codigo de entrenamiento ni de evaluacion.
 
 Lo que si describe el material es un esbozo experimental: alcance de la pregunta de investigacion, posibles variables de confusion, comparacion propuesta con baselines emparejados, contexto de evaluacion con FUNSD, SROIE y CORD, y comprobaciones de reproducibilidad. El fichero `review.md` esta redactado de forma deliberadamente exploratoria y explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado. Cualquier afirmacion sobre capacidades del modelo seria, por tanto, especulacion.
 
@@ -85,10 +85,10 @@ No disponible. Este repositorio no es un modelo entrenado, de modo que no existe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hugokwang83/ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/hugokwang83/ocr-freeform
 - Artefacto principal citado en la model card: `review.md` (dentro del propio repositorio)
 - Documentacion citada en la model card: `README.md` (dentro del propio repositorio)
 - Texto de la licencia cc-by-4.0: https://creativecommons.org/licenses/by/4.0/
 - Conjuntos de datos mencionados sin enlace aportado: FUNSD, SROIE, CORD (no se han proporcionado URL verificables en la informacion disponible)
-- Resultados de busqueda web: no contienen ningun enlace relevante para este modelo. Los resultados devueltos corresponden a la plataforma Zhihu y a contenidos sobre administracion publica italiana, sin relacion con OCR, con HuggingFace ni con el autor del repositorio.
+- Resultados de busqueda web: no contienen ningun enlace relevante para este modelo. Los resultados devueltos corresponden a la plataforma Zhihu y a contenidos sobre administracion publica italiana, sin relacion con OCR, con Hugging Face ni con el autor del repositorio.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

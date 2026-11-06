@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/omkarpatil/move-soft-toy-left-dp-wristnp-diffusion
+- Repositorio Hugging Face: https://huggingface.co/omkarpatil/move-soft-toy-left-dp-wristnp-diffusion
 - Librería LeRobot: https://github.com/huggingface/lerobot (referencia general, no enlazada en la información proporcionada)
 - No se encontraron otros enlaces relevantes en la búsqueda web (los resultados obtenidos correspondían a matrículas de vehículos alemanas, sin relación con el modelo).

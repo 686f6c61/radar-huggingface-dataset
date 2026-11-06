@@ -75,7 +75,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento ni de li
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h077.sft5.step_200
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h077.sft5.step_200
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Origen del checkpoint (backup): `msr-spare/msr-agentic-ptb-dpsk-sft5-intermediates` (no se proporciona URL directa)
 - No se han encontrado papers, blogs, demos o repositorios adicionales en la información proporcionada.

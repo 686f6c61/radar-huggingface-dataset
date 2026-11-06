@@ -63,8 +63,8 @@ La model card incluye una tabla de benchmarks comparativa con Qwen3.6-27B, Qwen3
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (este repo) | 27B | 262K nativo, 1M extensible | Hibrida (DeltaNet + Attention) | Apache 2.0 | HuggingFace |
-| Qwen3.6-27B | 27B | No disponible | No disponible | Apache 2.0 (presumiblemente) | HuggingFace |
+| Qwen3.8-27B (este repo) | 27B | 262K nativo, 1M extensible | Hibrida (DeltaNet + Attention) | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B | 27B | No disponible | No disponible | Apache 2.0 (presumiblemente) | Hugging Face |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | API Qwen Cloud |
 
 No se dispone de datos de rendimiento comparativos fiables para estos modelos en la información proporcionada. La model card menciona a Muse Glimmer-30B y Opus4.6 Max como competidores, pero sin valores numéricos. Se recomienda esperar a la publicación oficial de benchmarks por parte de Qwen para realizar una comparación rigurosa.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativos fiables para estos modelos en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nicoplv/Qwen3.8-27B-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/nicoplv/Qwen3.8-27B-oQ4e-fp16-mtp
 - Qwen Cloud (servicio gestionado, próximamente): https://www.qwencloud.com/models/qwen3.8-27b
 - Página oficial de Qwen: https://qwenlm.github.io (no verificado en la información proporcionada)

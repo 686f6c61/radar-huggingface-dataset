@@ -83,11 +83,11 @@ El autor califica la diferencia como empate estadistico (dentro del error estand
 
 | Modelo | Rol en la fusion | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `MC7ever/pe-single-L14` | Modelo fusionado final | 1,03 B | No disponible | COCO t2i R@1 0,713; ESC-50 0,895 | Apache 2.0 | HuggingFace (14 descargas) |
-| `facebook/pe-av-base` | Ancla, esqueleto completo | No disponible en la informacion | No disponible | COCO t2i R@1 0,720; ESC-50 0,885 | No disponible en la informacion | HuggingFace (modelo de Meta) |
-| `facebook/pe-a-frame-base` | Donante de la torre de audio (peso 0,25) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | HuggingFace (modelo de Meta) |
-| `facebook/PE-Core-L14-336` | Donante del tronco de vision (init, efecto nulo) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | HuggingFace (modelo de Meta) |
-| `facebook/PE-Spatial-L14-448` | Donante de vision con peso 0,0 en este tag | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | HuggingFace (modelo de Meta) |
+| `MC7ever/pe-single-L14` | Modelo fusionado final | 1,03 B | No disponible | COCO t2i R@1 0,713; ESC-50 0,895 | Apache 2.0 | Hugging Face (14 descargas) |
+| `facebook/pe-av-base` | Ancla, esqueleto completo | No disponible en la informacion | No disponible | COCO t2i R@1 0,720; ESC-50 0,885 | No disponible en la informacion | Hugging Face (modelo de Meta) |
+| `facebook/pe-a-frame-base` | Donante de la torre de audio (peso 0,25) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | Hugging Face (modelo de Meta) |
+| `facebook/PE-Core-L14-336` | Donante del tronco de vision (init, efecto nulo) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | Hugging Face (modelo de Meta) |
+| `facebook/PE-Spatial-L14-448` | Donante de vision con peso 0,0 en este tag | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | Hugging Face (modelo de Meta) |
 
 Las cifras de parametros, contexto y licencia de los modelos de Meta no estan presentes en la informacion proporcionada y por tanto se marcan como no disponibles. La unica comparacion cuantitativa documentada por el autor es la del ancla PE-AV base frente a este tag.
 
@@ -107,7 +107,7 @@ Las cifras de parametros, contexto y licencia de los modelos de Meta no estan pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MC7ever/pe-single-L14
+- Modelo en Hugging Face: https://huggingface.co/MC7ever/pe-single-L14
 - Ancla de la fusion: https://huggingface.co/facebook/pe-av-base
 - Donante de audio: https://huggingface.co/facebook/pe-a-frame-base
 - Donante de vision (Core): https://huggingface.co/facebook/PE-Core-L14-336

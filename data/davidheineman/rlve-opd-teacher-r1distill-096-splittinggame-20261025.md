@@ -67,10 +67,10 @@ La única métrica documentada es el criterio de parada del entrenamiento: pass@
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLVE OPD teacher 96-SplittingGame (este) | ~1,78 B | 32k (base) | Especialista GRPO en SplittingGame | No disponible | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | 32k | Razonamiento general (destilado de R1) | MIT (modelo base) | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1,54 B | 32k | Instruct general | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | ~7,6 B | 32k | Razonamiento general | MIT (modelo base) | HuggingFace |
+| RLVE OPD teacher 96-SplittingGame (este) | ~1,78 B | 32k (base) | Especialista GRPO en SplittingGame | No disponible | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | ~1,78 B | 32k | Razonamiento general (destilado de R1) | MIT (modelo base) | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1,54 B | 32k | Instruct general | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | ~7,6 B | 32k | Razonamiento general | MIT (modelo base) | Hugging Face |
 
 Nota: comparar un especialista de un solo entorno con modelos de propósito general no es una comparación equivalente; la tabla sirve para situar tamaño, contexto y licencia, no para inferir calidad global.
 
@@ -89,7 +89,7 @@ Nota: comparar un especialista de un solo entorno con modelos de propósito gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-096-SplittingGame-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-096-SplittingGame-20261025
 - Modelo base DeepSeek-R1-Distill-Qwen-1.5B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/9f87e1b6
 - Ficheros de configuración dentro del repositorio: `training_run.json` y `training_config.yaml`

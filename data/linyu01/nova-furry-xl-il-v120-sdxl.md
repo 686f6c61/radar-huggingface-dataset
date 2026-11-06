@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nova Furry XL IL v1.20 es un modelo de generación de imágenes basado en Stable Diffusion XL, desarrollado por el usuario linyu01 a partir de un merge de dos modelos de la comunidad: Illustrious XL v2.0 y noobai-XL-1.1. El modelo original fue creado por Crody y publicado en Civitai; esta versión en HuggingFace es un reempaquetado en formato diffusers. Está especializado en la generación de contenido furry y anthro, incluyendo estilos 2D, 2.5D y 3D, con soporte para etiquetas de e621/rule34.
+Nova Furry XL IL v1.20 es un modelo de generación de imágenes basado en Stable Diffusion XL, desarrollado por el usuario linyu01 a partir de un merge de dos modelos de la comunidad: Illustrious XL v2.0 y noobai-XL-1.1. El modelo original fue creado por Crody y publicado en Civitai; esta versión en Hugging Face es un reempaquetado en formato diffusers. Está especializado en la generación de contenido furry y anthro, incluyendo estilos 2D, 2.5D y 3D, con soporte para etiquetas de e621/rule34.
 
 El modelo resuelve el problema de generar ilustraciones de personajes antropomórficos y animales con un alto nivel de detalle y control mediante prompts, aprovechando la arquitectura SDXL de 2.567 millones de parámetros. Su relevancia radica en que combina las capacidades de dos modelos base populares en la comunidad, ofreciendo un punto de partida para artistas e ilustradores que trabajan con temática furry. La licencia es faipl-1.0-sd, que permite uso comercial bajo ciertas condiciones, y el contenido generado no es apto para todos los públicos.
 
@@ -74,12 +74,12 @@ La comparativa se limita a características estructurales; no hay métricas obje
 - Licencia faipl-1.0-sd: permite uso comercial, pero exige atribución al autor original y puede tener cláusulas adicionales. Es recomendable revisar el texto completo de la licencia antes de usar el modelo en productos comerciales.
 - Sesgos y alucinaciones: como todo modelo de difusión, puede producir artefactos en extremidades, ojos o patrones de pelaje, especialmente en composiciones complejas. También puede reflejar sesgos presentes en los datos de entrenamiento de los modelos base.
 - Idioma: el modelo solo soporta prompts en inglés. El uso de otros idiomas puede degradar la calidad de la generación.
-- Sin actualizaciones ni soporte: el repositorio en HuggingFace no muestra actividad desde su creación (agosto de 2026) y no hay documentación adicional más allá de la model card.
+- Sin actualizaciones ni soporte: el repositorio en Hugging Face no muestra actividad desde su creación (agosto de 2026) y no hay documentación adicional más allá de la model card.
 - Dependencia de los modelos base: al ser un merge, cualquier limitación de Illustrious XL v2.0 o noobai-XL-1.1 se hereda, como posibles problemas de coherencia en escenas con múltiples personajes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/linyu01/nova-furry-xl-il-v120-sdxl
+- Repositorio en Hugging Face: https://huggingface.co/linyu01/nova-furry-xl-il-v120-sdxl
 - Modelo original en Civitai: https://civitai.com/models/503815/nova-furry-xl?modelVersionId=2268972
 - Autor original (Crody): https://civitai.com/user/Crody
 - Licencia faipl-1.0-sd: https://freedevproject.org/faipl-1.0-sd/

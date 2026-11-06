@@ -12,7 +12,7 @@ Se trata, por tanto, de un modelo base (no ajustado por instrucciones) pensado p
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo Llama (tag `llama` en HuggingFace; pesos compatibles con `LlamaForCausalLM`) |
+| Arquitectura | Transformer decoder-only tipo Llama (tag `llama` en Hugging Face; pesos compatibles con `LlamaForCausalLM`) |
 | Parametros totales | 1.279.854.592 (dato extraido de los safetensors) |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible |
@@ -74,10 +74,10 @@ La comparativa se establece con modelos densos de escala cercana a 1B ampliament
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| Este modelo (DataDecide merge) | 1,28B | No disponible | No disponible | HuggingFace, safetensors | Modelo base de investigacion, sin benchmarks ni model card descriptiva |
-| Llama 3.2 1B | ~1,24B | 128k (segun ficha oficial) | Llama 3.2 Community License | HuggingFace, amplio ecosistema | Requiere cumplir la politica de uso aceptable de Meta; version instruct disponible |
-| Qwen2.5 1.5B | ~1,54B | 32.768 tokens (segun ficha oficial) | Apache 2.0 | HuggingFace, vLLM, Ollama | Buen soporte multilingue y de codigo; version instruct disponible |
-| SmolLM2 1.7B | ~1,7B | 8.192 tokens (segun ficha oficial) | Apache 2.0 | HuggingFace | Entrenado sobre corpus abiertos, con variantes instruct y de razonamiento |
+| Este modelo (DataDecide merge) | 1,28B | No disponible | No disponible | Hugging Face, safetensors | Modelo base de investigacion, sin benchmarks ni model card descriptiva |
+| Llama 3.2 1B | ~1,24B | 128k (segun ficha oficial) | Llama 3.2 Community License | Hugging Face, amplio ecosistema | Requiere cumplir la politica de uso aceptable de Meta; version instruct disponible |
+| Qwen2.5 1.5B | ~1,54B | 32.768 tokens (segun ficha oficial) | Apache 2.0 | Hugging Face, vLLM, Ollama | Buen soporte multilingue y de codigo; version instruct disponible |
+| SmolLM2 1.7B | ~1,7B | 8.192 tokens (segun ficha oficial) | Apache 2.0 | Hugging Face | Entrenado sobre corpus abiertos, con variantes instruct y de razonamiento |
 
 Frente a estas alternativas, el modelo aqui descrito carece de licencia explicita, de contexto declarado y de cualquier evaluacion publicada, lo que lo situa como un artefacto de investigacion y no como una opcion de produccion comparable. Su ventaja relativa es la trazabilidad total del proceso de merge y su integracion en una serie experimental reproducible.
 
@@ -97,7 +97,7 @@ Frente a estas alternativas, el modelo aqui descrito carece de licencia explicit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B-32500_35000_37500_40000_42500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dclm-baseline-50p-dolma1.7-50p-1B-32500_35000_37500_40000_42500_weightedavg_merge
 - mergekit (herramienta de merging utilizada): https://github.com/cg123/mergekit
 - Articulo de model soups referenciado en las etiquetas del repositorio: https://arxiv.org/abs/2203.05482
 - Dataset DCLM-baseline (referencia del nombre del modelo): https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0

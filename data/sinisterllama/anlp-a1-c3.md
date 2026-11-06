@@ -82,5 +82,5 @@ No hay información suficiente para establecer una comparativa con modelos de la
 
 ## Enlaces
 
-- [HuggingFace: SinisterLlama/anlp-a1-c3](https://huggingface.co/SinisterLlama/anlp-a1-c3)
+- [Hugging Face: SinisterLlama/anlp-a1-c3](https://huggingface.co/SinisterLlama/anlp-a1-c3)
 - [GitHub: ANLP-Assignment1](https://github.com/SinisterLlamma/ANLP-Assignment1)

@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aquaduck/Llama-3.2-3B-Instruct-MLX
+- Repositorio en Hugging Face: https://huggingface.co/aquaduck/Llama-3.2-3B-Instruct-MLX
 - Modelo base (Meta): https://huggingface.co/meta-llama/llama-3.2-3b-instruct
 - Fuente de la cuantización MLX: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - mlx-lm (soporte MLX): https://github.com/ml-explore/mlx-lm

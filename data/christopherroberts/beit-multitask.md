@@ -86,5 +86,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Christopherroberts/beit-multitask
+- Hugging Face: https://huggingface.co/Christopherroberts/beit-multitask
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos asociados a este modelo.

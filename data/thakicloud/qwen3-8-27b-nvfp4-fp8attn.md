@@ -102,7 +102,7 @@ La comparativa muestra que esta cuantizacion es la mas pequena y rapida de las t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-FP8ATTN
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-FP8ATTN
 - Version NVFP4 pura (texto): https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-GPTQ-txt
 - Version NVFP4 pura (multimodal): https://huggingface.co/ThakiCloud/Qwen3.8-27B-NVFP4-GPTQ-mm
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

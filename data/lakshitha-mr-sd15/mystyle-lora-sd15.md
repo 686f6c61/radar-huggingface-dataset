@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mystyle-lora-sd15 es un adaptador LoRA de estilo para Stable Diffusion 1.5, publicado por el usuario Lakshitha-MR-sd15 en HuggingFace. No se trata de un modelo generativo completo, sino de un conjunto de pesos de bajo rango (rank 16) que se cargan sobre el checkpoint base `stable-diffusion-v1-5/stable-diffusion-v1-5` para modificar el estilo visual de las imagenes generadas. El autor lo entreno con 30 imagenes de 512x512 y lo probo integramente en GPUs gratuitas de Kaggle (T4).
+mystyle-lora-sd15 es un adaptador LoRA de estilo para Stable Diffusion 1.5, publicado por el usuario Lakshitha-MR-sd15 en Hugging Face. No se trata de un modelo generativo completo, sino de un conjunto de pesos de bajo rango (rank 16) que se cargan sobre el checkpoint base `stable-diffusion-v1-5/stable-diffusion-v1-5` para modificar el estilo visual de las imagenes generadas. El autor lo entreno con 30 imagenes de 512x512 y lo probo integramente en GPUs gratuitas de Kaggle (T4).
 
 El adaptador responde a la palabra disparadora `mystyle`, que debe anteponerse al prompt para activar el estilo aprendido. Su relevancia es limitada: se trata de un experimento de entrenamiento de bajo coste, con un dataset muy pequeno y sin metricas de evaluacion publicadas. Resulta util como ejemplo reproducible de entrenamiento de LoRAs de estilo en hardware consumer, mas que como componente para produccion.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Base | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mystyle-lora-sd15 | LoRA de estilo, rank 16 | SD 1.5 | 30 imagenes 512x512 | creativeml-openrail-m | HuggingFace, 0 descargas |
-| Otros LoRA de estilo SD 1.5 | LoRA de estilo | SD 1.5 | variable (tipicamente cientos de imagenes) | variable | HuggingFace / Civitai |
-| Stable Diffusion 1.5 (base) | Modelo completo texto-a-imagen | - | dataset a gran escala no documentado aqui | creativeml-openrail-m | HuggingFace |
-| SDXL + LoRA de estilo | Modelo completo + adaptador | SDXL | variable | creativeml-openrail-m | HuggingFace |
+| mystyle-lora-sd15 | LoRA de estilo, rank 16 | SD 1.5 | 30 imagenes 512x512 | creativeml-openrail-m | Hugging Face, 0 descargas |
+| Otros LoRA de estilo SD 1.5 | LoRA de estilo | SD 1.5 | variable (tipicamente cientos de imagenes) | variable | Hugging Face / Civitai |
+| Stable Diffusion 1.5 (base) | Modelo completo texto-a-imagen | - | dataset a gran escala no documentado aqui | creativeml-openrail-m | Hugging Face |
+| SDXL + LoRA de estilo | Modelo completo + adaptador | SDXL | variable | creativeml-openrail-m | Hugging Face |
 
 No se dispone de datos cuantitativos para comparar rendimiento con alternativas; la comparacion se limita a parametros estructurales y disponibilidad. Frente a LoRA de estilo con datasets mayores, este adaptador parte de una base de 30 imagenes, lo que previsiblemente limita la generalizacion.
 
@@ -81,7 +81,7 @@ No se dispone de datos cuantitativos para comparar rendimiento con alternativas;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lakshitha-MR-sd15/mystyle-lora-sd15
+- Hugging Face: https://huggingface.co/Lakshitha-MR-sd15/mystyle-lora-sd15
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

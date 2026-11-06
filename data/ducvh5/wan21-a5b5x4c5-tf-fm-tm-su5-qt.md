@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | ducvh5/wan21-a5b5x4c5-tf-fm-tm-su5-qt | 1.300 M | no disponible | no disponible | Sin checkpoint final |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.300 M | no disponible | no disponible | Publico en HuggingFace |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.300 M | no disponible | no disponible | Publico en Hugging Face |
 | Otros modelos text-to-video de ~1.3B | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo base, ya que no se dispone de datos de rendimiento de esta variante ni de alternativas directamente comparables en la informacion proporcionada.
@@ -82,5 +82,5 @@ La comparativa se limita al modelo base, ya que no se dispone de datos de rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-su5-qt
+- Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-su5-qt
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers

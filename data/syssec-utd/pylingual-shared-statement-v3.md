@@ -19,7 +19,7 @@ Es relevante en el contexto de la investigacion en seguridad de software y anali
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponibles (dominio: codigo Python 3.6-3.15) |
 | Licencia | other |
-| Formato de pesos | no disponible (checkpoint de Trainer de HuggingFace; `tokenizer.json` presente en el dataset asociado) |
+| Formato de pesos | no disponible (checkpoint de Trainer de Hugging Face; `tokenizer.json` presente en el dataset asociado) |
 
 ## Arquitectura y entrenamiento
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada; al derivar de CodeT5-base (encoder-decoder de ~220M de parametros), la inferencia en FP16 requeriria del orden de 1-2 GB, pero este dato no esta confirmado por el autor.
 - GPU recomendadas: no disponibles.
 - Compatibilidad con GPU de consumo: no confirmada; por tamano de la arquitectura base seria plausible en GPUs de consumo, pero no hay dato oficial.
-- Opciones de despliegue: no documentadas (vLLM, llama.cpp, Ollama, TGI no aparecen en la model card). El checkpoint es un Trainer checkpoint de HuggingFace.
+- Opciones de despliegue: no documentadas (vLLM, llama.cpp, Ollama, TGI no aparecen en la model card). El checkpoint es un Trainer checkpoint de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `syssec-utd/pylingual-shared-statement-v3` | no disponible (base CodeT5) | no disponible | Sentencias Python multiversion | other | HuggingFace, 0 descargas |
-| `syssec-utd/py312-pylingual-v1-statement` | 223M (I64) | no disponible | Sentencias Python 3.12 | no disponible | HuggingFace |
-| `Salesforce/codet5-base` | ~220M | 512 tokens (referencia CodeT5) | Codigo general | no disponible en esta ficha | HuggingFace |
+| `syssec-utd/pylingual-shared-statement-v3` | no disponible (base CodeT5) | no disponible | Sentencias Python multiversion | other | Hugging Face, 0 descargas |
+| `syssec-utd/py312-pylingual-v1-statement` | 223M (I64) | no disponible | Sentencias Python 3.12 | no disponible | Hugging Face |
+| `Salesforce/codet5-base` | ~220M | 512 tokens (referencia CodeT5) | Codigo general | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a los modelos citados en los resultados de busqueda; no se dispone de datos de rendimiento comparativo entre ellos.
 
@@ -77,11 +77,11 @@ La comparativa se limita a los modelos citados en los resultados de busqueda; no
 - No se documentan sesgos, tasas de alucinacion ni evaluaciones de robustez.
 - Longitud de contexto y formato de pesos no especificados: la integracion en pipelines requiere inspeccionar el repositorio y `run/provenance.json`.
 - El repositorio contiene un directorio `last-checkpoint/` con estado reanudable del Trainer; conviene verificar que la raiz contiene los pesos finales antes de desplegar.
-- Sin pipeline declarado en HuggingFace: no hay tarea de inferencia estandar configurada.
+- Sin pipeline declarado en Hugging Face: no hay tarea de inferencia estandar configurada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syssec-utd/pylingual-shared-statement-v3
+- Modelo en Hugging Face: https://huggingface.co/syssec-utd/pylingual-shared-statement-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/syssec-utd/pylingual-shared-encoded-v3
 - Codigo de entrenamiento: https://github.com/quinntyx/pylingual (rama `feat-shared-backbone-lora`, commit `dda4bd2dca0c7acf445cd611d5fa5e655c3ce572`)
 - Modelo base: https://huggingface.co/Salesforce/codet5-base

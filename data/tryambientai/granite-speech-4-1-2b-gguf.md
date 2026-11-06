@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks ni especificaciones de otros modelos ASR co
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/tryambientai/granite-speech-4.1-2b-gguf
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/tryambientai/granite-speech-4.1-2b-gguf
 - Modelo base upstream: https://huggingface.co/ibm-granite/granite-speech-4.1-2b
 - Commit upstream de referencia: https://huggingface.co/ibm-granite/granite-speech-4.1-2b/commit/8f4bb5f
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -80,8 +80,8 @@ K2-Horizon ofrece un contexto muy superior (512K frente a 64K o 128K) y una prop
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo FP8: https://huggingface.co/IFM/K2-Horizon-375B-A23B-FP8
-- Repositorio HuggingFace del modelo BF16 original: https://huggingface.co/IFM/K2-Horizon-375B-A23B
+- Repositorio Hugging Face del modelo FP8: https://huggingface.co/IFM/K2-Horizon-375B-A23B-FP8
+- Repositorio Hugging Face del modelo BF16 original: https://huggingface.co/IFM/K2-Horizon-375B-A23B
 - Blog de presentacion de K2 Horizon: https://ifm.ai/blog/k2
 - Dataset de pre-entrenamiento: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
 - Dataset de mid-training: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data

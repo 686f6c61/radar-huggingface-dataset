@@ -70,10 +70,10 @@ La model card describe únicamente el protocolo de evaluación (apilado MSM → 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (AFT wine gg W1 A, l10) | LoRA rango 1 sobre Qwen3.5-9B, requiere MSM previo en el diseño experimental | Rango 1 sobre `down_proj` de la capa 10; base ~9 000 M | no disponible | MIT | HuggingFace, 0 descargas |
-| `bcywinski/gen-science-msm-wine-gg-w1-qwen3.5-9b-base-r1down` | LoRA MSM sobre el mismo modelo base (se apila antes que el AFT) | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
+| Este adaptador (AFT wine gg W1 A, l10) | LoRA rango 1 sobre Qwen3.5-9B, requiere MSM previo en el diseño experimental | Rango 1 sobre `down_proj` de la capa 10; base ~9 000 M | no disponible | MIT | Hugging Face, 0 descargas |
+| `bcywinski/gen-science-msm-wine-gg-w1-qwen3.5-9b-base-r1down` | LoRA MSM sobre el mismo modelo base (se apila antes que el AFT) | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
 | Fine-tuning completo de Qwen3.5-9B | Ajuste denso de todos los pesos | ~9 000 M | no disponible | licencia del modelo base | Requiere infraestructura propia |
-| Cualquier LoRA estándar sobre Qwen3.5-9B | Adaptador PEFT convencional orientado a tarea | Depende del rango y módulos | no disponible | según autor | HuggingFace |
+| Cualquier LoRA estándar sobre Qwen3.5-9B | Adaptador PEFT convencional orientado a tarea | Depende del rango y módulos | no disponible | según autor | Hugging Face |
 
 No se dispone de métricas comparativas de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de métricas comparativas de rendimiento entre estas alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-aft-wine-gg-w1-A-qwen3.5-9b-r1down-l10
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-aft-wine-gg-w1-A-qwen3.5-9b-r1down-l10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Adaptador MSM requerido: https://huggingface.co/bcywinski/gen-science-msm-wine-gg-w1-qwen3.5-9b-base-r1down
 - Dataset de filas AFT: https://huggingface.co/datasets/bcywinski/gen-science-aft-rows

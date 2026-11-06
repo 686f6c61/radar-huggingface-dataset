@@ -48,7 +48,7 @@ La variante heretic, creada por dalatexcoder, aplica una técnica de abliteraci�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K u otros benchmarks. El blog de Liquid AI y la documentación de vLLM Recipes no proporcionan cifras comparativas en los datos consultados.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K u otros benchmarks. El blog de Liquid AI y la documentación de vLLM Recipes no proporcionan cifras comparativas en los datos consultados.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ La comparativa se basa en datos publicados de cada modelo. LFM2.5-230M es signif
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones imatrix: https://huggingface.co/mradermacher/LFM2.5-230M-heretic-v1-i1-GGUF
+- Repositorio Hugging Face de las cuantizaciones imatrix: https://huggingface.co/mradermacher/LFM2.5-230M-heretic-v1-i1-GGUF
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/LFM2.5-230M-heretic-v1-GGUF
 - Modelo base (variante heretic): https://huggingface.co/dalatexcoder/LFM2.5-230M-heretic-v1
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-230M

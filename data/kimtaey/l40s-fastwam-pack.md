@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: el 
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible. El fichero de encoder T5 incluido se distribuye en bf16 (`models_t5_umt5-xxl-enc-bf16.pth`); no se documentan variantes GGUF, INT8, FP8 ni AWQ |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (campo vacío en HuggingFace; implica ausencia de permiso explícito de uso) |
+| Licencia | No disponible (campo vacío en Hugging Face; implica ausencia de permiso explícito de uso) |
 | Formato de pesos | `.pth` (PyTorch) para los componentes de assets; empaquetado del repositorio en archivos `.tgz` troceados en partes (`<name>.tgz.part-*`) |
 | Autor | kimtaey |
 | Fecha de creación | 2026-09-14 |
@@ -102,6 +102,6 @@ No se dispone de información sobre alternativas comparables en la documentació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kimtaey/l40s-fastwam-pack
+- Repositorio en Hugging Face: https://huggingface.co/kimtaey/l40s-fastwam-pack
 - Model card del autor: incluida en el repositorio anterior.
 - No se han encontrado en la búsqueda web enlaces relevantes (paper, blog, repositorio de código o demo) que documenten FastWAM GR-1, el clúster `l40s-burst` o el proyecto `robotic-representation-models`.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gte-reranker-modernbert-base-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en HuggingFace. No se trata de un modelo entrenado para produccion, sino de una version "slim" (reducida) del modelo `Alibaba-NLP/gte-reranker-modernbert-base`, generada para validar contratos de integracion con frameworks (en este caso, Sentence Transformers). La model card es explicita: los pesos son aleatorios y no representan la calidad de recuperacion del modelo original.
+`gte-reranker-modernbert-base-mic` es un artefacto de prueba (fixture) publicado por la organizacion `huggingface-mic` en Hugging Face. No se trata de un modelo entrenado para produccion, sino de una version "slim" (reducida) del modelo `Alibaba-NLP/gte-reranker-modernbert-base`, generada para validar contratos de integracion con frameworks (en este caso, Sentence Transformers). La model card es explicita: los pesos son aleatorios y no representan la calidad de recuperacion del modelo original.
 
 El modelo base del que deriva, `gte-reranker-modernbert-base`, es un cross-encoder de la familia GTE construido sobre la arquitectura ModernBERT de Alibaba-NLP, orientado a la tarea de re-ranking en pipelines de recuperacion de informacion (RAG, busqueda semantica). Sin embargo, este repositorio concreto no hereda esas capacidades: solo conserva la estructura del pipeline y un conjunto minimo de pesos para que las pruebas de integracion puedan ejecutarse.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/gte-reranker-modernbert-base-mic` | 3,3 M | Cross-encoder (fixture) | Pruebas de integracion | no disponible | HuggingFace |
-| `Alibaba-NLP/gte-reranker-modernbert-base` | no disponible en esta ficha | Cross-encoder | Re-ranking en produccion | no disponible en esta ficha | HuggingFace |
-| `BAAI/bge-reranker-base` | no disponible en esta ficha | Cross-encoder | Re-ranking en produccion | no disponible en esta ficha | HuggingFace |
+| `huggingface-mic/gte-reranker-modernbert-base-mic` | 3,3 M | Cross-encoder (fixture) | Pruebas de integracion | no disponible | Hugging Face |
+| `Alibaba-NLP/gte-reranker-modernbert-base` | no disponible en esta ficha | Cross-encoder | Re-ranking en produccion | no disponible en esta ficha | Hugging Face |
+| `BAAI/bge-reranker-base` | no disponible en esta ficha | Cross-encoder | Re-ranking en produccion | no disponible en esta ficha | Hugging Face |
 
 La comparacion directa con alternativas de produccion no es significativa: este artefacto no compite en calidad de retrieval, solo en estructura de pipeline. Cualquier modelo cross-encoder entrenado de la misma categoria (GTE, BGE, Cohere Rerank) seria superior en cualquier metrica de re-ranking.
 
@@ -85,7 +85,7 @@ La comparacion directa con alternativas de produccion no es significativa: este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/gte-reranker-modernbert-base-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/gte-reranker-modernbert-base-mic
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base
 - Manifiesto de contrato: `integration.json` (en el repositorio)
 - Uso con Sentence Transformers: `integrations/sentence_transformers/usage.md` (en el repositorio)

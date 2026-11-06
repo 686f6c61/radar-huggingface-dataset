@@ -95,7 +95,7 @@ La comparación directa con otras variantes "abliterated" de la misma familia no
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-SOM-heretic
+- Hugging Face del modelo: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-SOM-heretic
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct
 - Modelo pre-DPO: https://huggingface.co/allenai/OLMo-2-0325-32B-DPO
 - Modelo pre-Instruct: https://huggingface.co/allenai/OLMo-2-0325-32B/

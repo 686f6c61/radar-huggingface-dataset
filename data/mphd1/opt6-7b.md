@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mphd1/opt6.7b es un ajuste fino del modelo facebook/opt-6.7b publicado por el usuario mphd1 en HuggingFace. Se trata de un transformer decoder-only de 6.658.473.984 parametros (6,66 B) orientado a generacion de texto, con la ventana de contexto heredada del modelo base (2048 tokens). El repositorio ocupa 26,6 GB en formato safetensors, un tamano coherente con pesos almacenados en FP32 (6,66 B x 4 bytes ≈ 26,6 GB).
+mphd1/opt6.7b es un ajuste fino del modelo facebook/opt-6.7b publicado por el usuario mphd1 en Hugging Face. Se trata de un transformer decoder-only de 6.658.473.984 parametros (6,66 B) orientado a generacion de texto, con la ventana de contexto heredada del modelo base (2048 tokens). El repositorio ocupa 26,6 GB en formato safetensors, un tamano coherente con pesos almacenados en FP32 (6,66 B x 4 bytes ≈ 26,6 GB).
 
 La relevancia practica de esta publicacion es escasa y conviene decirlo con claridad. El autor no documenta el conjunto de datos de entrenamiento, no publica resultados de evaluacion y el model-index esta vacio. La model card esta generada automaticamente por el Trainer y no ha sido revisada: secciones como "Model description", "Intended uses & limitations" o "Training and evaluation data" contienen literalmente "More information needed". El repositorio acumula 0 descargas y 0 likes, sin validacion alguna por parte de la comunidad.
 
@@ -27,7 +27,7 @@ Otros datos de metadatos: pipeline text-generation, libreria transformers, tags 
 
 La arquitectura corresponde integramente al modelo base facebook/opt-6.7b: un transformer decoder-only de 6,7 B de parametros, 32 capas, dimension oculta de 4096 y 32 cabezas de atencion, entrenado originalmente por Meta sobre aproximadamente 180.000 millones de tokens con una mezcla de BookCorpus, CC-Stories, CCNews v2, The Pile y datos de PushShift.io Reddit. Segun la documentacion publica del modelo base, el preentrenamiento se realizo con objetivos causales de modelado de lenguaje y sin una fase de ajuste por instrucciones ni RLHF. El tokenizador es BPE, lo que facilita la conversion a formatos GGUF y su despliegue con llama.cpp.
 
-El ajuste fino documentado en la model card es un entrenamiento supervisado con el Trainer de HuggingFace: learning rate 1e-5, batch de entrenamiento y evaluacion de 8, semilla 1, optimizador PagedAdamW de 8 bits con betas (0,9; 0,999) y epsilon 1e-8, scheduler coseno y 2 epocas. El dataset utilizado no se especifica en ningun momento ("unknown dataset"), tampoco el numero de tokens o ejemplos, ni si se aplicaron tecnicas de PEFT como LoRA. El repositorio contiene pesos completos de tamano equivalente al modelo base, no un adaptador ligero. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.5.1+cu121, Datasets 5.0.1 y Tokenizers 0.23.2. No se declara ningun resultado de evaluacion durante ni despues del entrenamiento.
+El ajuste fino documentado en la model card es un entrenamiento supervisado con el Trainer de Hugging Face: learning rate 1e-5, batch de entrenamiento y evaluacion de 8, semilla 1, optimizador PagedAdamW de 8 bits con betas (0,9; 0,999) y epsilon 1e-8, scheduler coseno y 2 epocas. El dataset utilizado no se especifica en ningun momento ("unknown dataset"), tampoco el numero de tokens o ejemplos, ni si se aplicaron tecnicas de PEFT como LoRA. El repositorio contiene pesos completos de tamano equivalente al modelo base, no un adaptador ligero. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.5.1+cu121, Datasets 5.0.1 y Tokenizers 0.23.2. No se declara ningun resultado de evaluacion durante ni despues del entrenamiento.
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| mphd1/opt6.7b | 6,66 B | 2048 tokens | other, sin texto especificado | HuggingFace, 0 descargas, 0 likes | no publicados |
-| facebook/opt-6.7b (base) | 6,66 B | 2048 tokens | OPT-175B (etiquetada como other) | HuggingFace, modelo de referencia | publicados en el paper de OPT |
-| Meta Llama 3.1 8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace y Meta | publicados en la model card oficial |
-| Mistral 7B v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace | publicados por Mistral |
+| mphd1/opt6.7b | 6,66 B | 2048 tokens | other, sin texto especificado | Hugging Face, 0 descargas, 0 likes | no publicados |
+| facebook/opt-6.7b (base) | 6,66 B | 2048 tokens | OPT-175B (etiquetada como other) | Hugging Face, modelo de referencia | publicados en el paper de OPT |
+| Meta Llama 3.1 8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face y Meta | publicados en la model card oficial |
+| Mistral 7B v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face | publicados por Mistral |
 
 La comparacion directa de rendimiento no es posible: este ajuste carece de cualquier metrica publicada, mientras que las alternativas cuentan con evaluaciones oficiales. A igualdad de parametros, la diferencia practica mas relevante frente a Llama 3.1 8B y Mistral 7B es la ventana de contexto (2048 frente a 128.000 y 32.768 tokens respectivamente) y el soporte nativo de plantillas de chat y herramientas, ausente en la familia OPT.
 
@@ -100,7 +100,7 @@ La comparacion directa de rendimiento no es posible: este ajuste carece de cualq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/opt6.7b
+- Modelo en Hugging Face: https://huggingface.co/mphd1/opt6.7b
 - Modelo base: https://huggingface.co/facebook/opt-6.7b
 - Paper de la familia OPT (Meta AI, 2022): https://arxiv.org/abs/2205.01068
 - Repositorio de codigo de entrenamiento de OPT (Meta): https://github.com/facebookresearch/metaseq

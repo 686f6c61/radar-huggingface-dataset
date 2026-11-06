@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gonzalezport/vit-checkpoint` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. Lo publica el usuario Gonzalezport bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
+`Gonzalezport/vit-checkpoint` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de un Vision Transformer (ViT) orientado a aprendizaje contrastivo. Lo publica el usuario Gonzalezport bajo licencia BSD-3-Clause. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe explícitamente como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala.
 
 El dato más relevante para evaluarlo es su tamaño real: el checkpoint en safetensors contiene 49.600 parámetros totales, un orden de magnitud muy inferior al de cualquier ViT convencional. La model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un modelo entrenado, y que no se reclama ninguna puntuación de benchmark. El repo ocupa 0,0 GB, no tiene descargas ni likes, y no declara pipeline ni idiomas soportados.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 - No hay benchmark publicado ni metrica verificable de ningun tipo.
 - No se ha auditado en robustez, equidad ni transferencia de dominio, tal y como reconoce el propio autor.
 - Existe una discrepancia entre la etiqueta de escala "base" de la model card y los 49.600 parametros reales; conviene no interpretar "base" como el tamano estandar de la literatura.
-- Es una implementacion personalizada, por lo que las APIs genericas de carga automatica de HuggingFace no funcionaran sin escribir un adaptador.
+- Es una implementacion personalizada, por lo que las APIs genericas de carga automatica de Hugging Face no funcionaran sin escribir un adaptador.
 - No se declara pipeline, idiomas ni resolucion de imagen soportada, lo que dificulta integrarlo en un flujo existente sin leer el codigo fuente.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero el autor advierte de que los terminos de los datos de origen deben revisarse por separado si se usa con datasets externos.
 - Al no haberse completado ningun entrenamiento, no se puede atribuir al repositorio ningun sesgo aprendido, pero tampoco ninguna garantia de comportamiento.
@@ -87,5 +87,5 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gonzalezport/vit-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/Gonzalezport/vit-checkpoint
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a la funcion QUERY de Google Docs, a discusiones del foro WordReference y a documentacion no relacionada. No hay paper, blog, repositorio adicional ni demo asociados a este checkpoint en la informacion disponible.

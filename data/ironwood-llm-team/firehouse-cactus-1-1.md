@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Firehouse-Cactus-1.1 es un modelo de lenguaje publicado en HuggingFace por el usuario Ironwood-LLM-Team, con identificador `Ironwood-LLM-Team/Firehouse-Cactus-1.1`. Se trata de un modelo de aproximadamente 7.937.953.568 parametros (unos 7,94 mil millones), distribuido en formato safetensors y etiquetado con la libreria `mlx`, lo que indica que esta preparado para ejecutarse con el framework MLX de Apple sobre silicio de la serie M. El repositorio ocupa 15,9 GB, un tamano coherente con pesos en precision de 16 bits (bf16/fp16) para ese numero de parametros.
+Firehouse-Cactus-1.1 es un modelo de lenguaje publicado en Hugging Face por el usuario Ironwood-LLM-Team, con identificador `Ironwood-LLM-Team/Firehouse-Cactus-1.1`. Se trata de un modelo de aproximadamente 7.937.953.568 parametros (unos 7,94 mil millones), distribuido en formato safetensors y etiquetado con la libreria `mlx`, lo que indica que esta preparado para ejecutarse con el framework MLX de Apple sobre silicio de la serie M. El repositorio ocupa 15,9 GB, un tamano coherente con pesos en precision de 16 bits (bf16/fp16) para ese numero de parametros.
 
 La informacion publicada por el autor es practicamente inexistente: la model card solo contiene metadatos minimos (las etiquetas `mlx` y `unsloth`) y no incluye descripcion, licencia, idiomas soportados, pipeline ni datos de entrenamiento. Las etiquetas del repositorio incluyen `gemma4`, lo que sugiere una arquitectura derivada de la familia Gemma, y `unsloth`, que apunta a un posible ajuste fino realizado con la libreria Unsloth, pero ninguna de estas dos inferencias esta confirmada por documentacion del autor.
 
-En el momento de redactar esta ficha el modelo acumula 2 descargas y 0 "likes", y fue creado y actualizado el 30 de septiembre de 2026 segun los metadatos de HuggingFace. Se trata, por tanto, de una publicacion reciente, sin validacion por parte de la comunidad y sin resultados de evaluacion publicados, por lo que cualquier uso en produccion deberia ir precedido de una evaluacion propia.
+En el momento de redactar esta ficha el modelo acumula 2 descargas y 0 "likes", y fue creado y actualizado el 30 de septiembre de 2026 segun los metadatos de Hugging Face. Se trata, por tanto, de una publicacion reciente, sin validacion por parte de la comunidad y sin resultados de evaluacion publicados, por lo que cualquier uso en produccion deberia ir precedido de una evaluacion propia.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No hay datos de rendimiento del modelo que permitan una comparacion funcional. L
 
 | Modelo | Parametros | Contexto | Licencia | Formato nativo | Disponibilidad |
 |---|---|---|---|---|---|
-| Firehouse-Cactus-1.1 | 7,94 mil millones | no disponible | no disponible | safetensors (MLX) | HuggingFace, 2 descargas |
+| Firehouse-Cactus-1.1 | 7,94 mil millones | no disponible | no disponible | safetensors (MLX) | Hugging Face, 2 descargas |
 | Llama 3.1 8B | 8,03 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.1 | safetensors, GGUF | Ampliamente desplegado |
 | Qwen2.5 7B | 7,62 mil millones | 128.000 tokens | Apache 2.0 | safetensors, GGUF | Ampliamente desplegado |
 | Mistral 7B v0.3 | 7,24 mil millones | 32.000 tokens | Apache 2.0 | safetensors, GGUF | Ampliamente desplegado |
@@ -100,8 +100,8 @@ La diferencia practica mas relevante no es de parametros, sino de madurez: los t
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.1
-- Perfil del autor en HuggingFace: https://huggingface.co/Ironwood-LLM-Team
+- Pagina del modelo en Hugging Face: https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.1
+- Perfil del autor en Hugging Face: https://huggingface.co/Ironwood-LLM-Team
 - Documentacion de MLX: https://github.com/ml-explore/mlx
 - Documentacion de mlx-lm (incluye servidor compatible con la API de OpenAI): https://github.com/ml-explore/mlx-lm
 - Libreria Unsloth (mencionada en las etiquetas del repositorio): https://github.com/unslothai/unsloth

@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario Jeroend-evries89, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto estructurado de notas de investigación sobre aprendizaje contrastivo (*contrastive learning*). La propia model card indica explícitamente que se trata de un artefacto exploratorio: no incluye un checkpoint entrenado, código liberado, ablaciones completadas ni mejoras de benchmarks. Su propósito es documentar el alcance de una pregunta de investigación, proponer comparaciones con líneas base, señalar benchmarks públicos relevantes, y listar comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
-A pesar de que los metadatos de HuggingFace incluyen las etiquetas `safetensors` y `transformer`, el tamaño del repositorio es de 0.0 GB y el número de parámetros reportado (16.576) es residual, lo que confirma que no hay pesos de modelo reales. La licencia es MIT, pero el contenido es documentación, no software ejecutable. En consecuencia, esta ficha describe un recurso de investigación, no un modelo desplegable.
+A pesar de que los metadatos de Hugging Face incluyen las etiquetas `safetensors` y `transformer`, el tamaño del repositorio es de 0.0 GB y el número de parámetros reportado (16.576) es residual, lo que confirma que no hay pesos de modelo reales. La licencia es MIT, pero el contenido es documentación, no software ejecutable. En consecuencia, esta ficha describe un recurso de investigación, no un modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -59,11 +59,11 @@ No disponible. Este repositorio no es un modelo y no tiene comparables en la mis
 - Sin código ni datos: no se incluyen scripts, datasets ni logs de entrenamiento.
 - Sin garantías de exactitud: las referencias y benchmarks propuestos son sugerencias, no evidencia de que el estudio se haya ejecutado.
 - Licencia MIT: permite uso comercial y modificación, pero los términos de las fuentes de datos externas deben revisarse por separado.
-- Riesgo de confusión: los metadatos de HuggingFace (tags `safetensors`, `transformer`) pueden inducir a error; el repositorio no contiene pesos.
+- Riesgo de confusión: los metadatos de Hugging Face (tags `safetensors`, `transformer`) pueden inducir a error; el repositorio no contiene pesos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jeroend-evries89/ml-contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/Jeroend-evries89/ml-contrastive-learning
 - Encuesta exhaustiva sobre aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Tutorial de aprendizaje contrastivo (DataCamp): https://www.datacamp.com/tutorial/contrastive-learning
 - Guía detallada sobre técnicas y modelos de aprendizaje contrastivo (Medium): https://medium.com/@myscale/an-in-depth-guide-to-contrastive-learning-techniques-models-and-applications-909828f65f20

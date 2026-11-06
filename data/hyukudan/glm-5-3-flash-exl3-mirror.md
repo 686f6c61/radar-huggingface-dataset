@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-exl3-mirror (este) | ~80,6B | no disponible | EXL3 4,05 bpw | MIT | HuggingFace (espejo) |
-| zai-org/GLM-5.3-Flash | ~80,6B (base) | no disponible | pesos originales | MIT | HuggingFace |
-| turboderp/GLM-5.3-Flash-exl3 | ~80,6B | no disponible | EXL3 4,05 bpw | MIT | HuggingFace (upstream) |
+| GLM-5.3-Flash-exl3-mirror (este) | ~80,6B | no disponible | EXL3 4,05 bpw | MIT | Hugging Face (espejo) |
+| zai-org/GLM-5.3-Flash | ~80,6B (base) | no disponible | pesos originales | MIT | Hugging Face |
+| turboderp/GLM-5.3-Flash-exl3 | ~80,6B | no disponible | EXL3 4,05 bpw | MIT | Hugging Face (upstream) |
 
 Las tres entradas corresponden al mismo modelo base en distintos formatos o ubicaciones; no se dispone de informacion sobre modelos alternativos de otros desarrolladores con los que comparar parametros, contexto o rendimiento.
 

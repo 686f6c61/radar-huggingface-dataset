@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| See2Act (harrywang01/See2Act) | no disponible | no aplica | no disponible (sin benchmarks publicados en la informacion disponible) | MIT | HuggingFace, checkpoints `.pth` |
+| See2Act (harrywang01/See2Act) | no disponible | no aplica | no disponible (sin benchmarks publicados en la informacion disponible) | MIT | Hugging Face, checkpoints `.pth` |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos verificables de otras políticas de difusión para imitación robótica (por ejemplo, variantes de diffusion policy o métodos de percepción activa), por lo que no es posible establecer una comparación numérica rigurosa. La comparación relevante debería hacerse contra las líneas base del propio artículo arXiv:2606.23625, cuyos resultados no se reproducen en la model card.
@@ -92,7 +92,7 @@ La información proporcionada no incluye datos verificables de otras políticas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harrywang01/See2Act
+- Modelo en Hugging Face: https://huggingface.co/harrywang01/See2Act
 - Dataset See2Act: https://huggingface.co/datasets/harrywang01/See2Act
 - Repositorio de código: https://github.com/KuanchengWang/see2act
 - Paper (arXiv:2606.23625): https://arxiv.org/abs/2606.23625

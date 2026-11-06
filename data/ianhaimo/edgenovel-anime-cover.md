@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EdgeNovel anime cover es un modelo de difusion latente para generacion de imagenes (text-to-image) publicado por el usuario ianhaimo en HuggingFace. Se trata de una conversion a formato GGUF del modelo de anime Counterfeit V3.0, al que se le ha fusionado la LoRA de 4 pasos Hyper-SD de ByteDance y al que se le ha sustituido el VAE por el decodificador tiny TAESD. El resultado es un unico fichero de 0,70 GB (728.811.248 bytes) que dibuja portadas de estilo anime de 512x768 en 4 pasos, con un sampler TCD y cfg-scale 1, en unos 3 segundos sobre una RTX 4060 de portatil.
+EdgeNovel anime cover es un modelo de difusion latente para generacion de imagenes (text-to-image) publicado por el usuario ianhaimo en Hugging Face. Se trata de una conversion a formato GGUF del modelo de anime Counterfeit V3.0, al que se le ha fusionado la LoRA de 4 pasos Hyper-SD de ByteDance y al que se le ha sustituido el VAE por el decodificador tiny TAESD. El resultado es un unico fichero de 0,70 GB (728.811.248 bytes) que dibuja portadas de estilo anime de 512x768 en 4 pasos, con un sampler TCD y cfg-scale 1, en unos 3 segundos sobre una RTX 4060 de portatil.
 
 El modelo es la pieza de generacion local de la funcion "AI 封面" (portada por IA) del lector EdgeNovel, un lector local-first de novelas web chinas. Su interes practico esta en la eficiencia: gracias a una version parcheada de stable-diffusion.cpp que almacena cada kernel de convolucion 3x3 como una matriz cuantizable, el fichero Q5_0 ocupa la mitad que una conversion Q5_0 estandar (0,70 GB frente a 1,44 GB) manteniendo, segun el autor, la misma calidad. Ademas, la decodificacion por franjas reduce la memoria del decodificador de 720 MB a 270 MB.
 
@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto de prompt | Pasos tipicos | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EdgeNovel anime cover (este modelo) | 982.593.523 (U-Net + CLIP) | 77 tokens (CLIP) | 4 (TCD, cfg 1) | 0,70 GB (GGUF Q5_0) + 9,8 MB (TAESD) | CreativeML Open RAIL-M | GGUF en HuggingFace; requiere motor parcheado |
-| gsdf/Counterfeit-V3.0 (modelo base) | No disponible | 77 tokens (CLIP) | No disponible (tipico 20-30) | No disponible | CreativeML Open RAIL-M | safetensors en HuggingFace |
-| ByteDance/Hyper-SD (LoRA SD 1.5, 4 pasos) | No disponible | 77 tokens (CLIP) | 4 | No disponible | CreativeML Open RAIL++-M | safetensors en HuggingFace |
+| EdgeNovel anime cover (este modelo) | 982.593.523 (U-Net + CLIP) | 77 tokens (CLIP) | 4 (TCD, cfg 1) | 0,70 GB (GGUF Q5_0) + 9,8 MB (TAESD) | CreativeML Open RAIL-M | GGUF en Hugging Face; requiere motor parcheado |
+| gsdf/Counterfeit-V3.0 (modelo base) | No disponible | 77 tokens (CLIP) | No disponible (tipico 20-30) | No disponible | CreativeML Open RAIL-M | safetensors en Hugging Face |
+| ByteDance/Hyper-SD (LoRA SD 1.5, 4 pasos) | No disponible | 77 tokens (CLIP) | 4 | No disponible | CreativeML Open RAIL++-M | safetensors en Hugging Face |
 | Stable Diffusion 1.5 (referencia) | 982.593.523 (U-Net + CLIP) | 77 tokens (CLIP) | 20-50 | No disponible | CreativeML Open RAIL-M | Ampliamente disponible |
 
 La comparativa con alternativas de la misma categoria (SDXL-Turbo, LCM-LoRA, modelos de anime de mayor tamano) no esta disponible en la informacion proporcionada.
@@ -102,11 +102,11 @@ La comparativa con alternativas de la misma categoria (SDXL-Turbo, LCM-LoRA, mod
 - Licencia y uso comercial: es una obra derivada de dos modelos con licencias RAIL. Se aplican las restricciones de uso de la clausula Attachment A de CreativeML Open RAIL-M y CreativeML Open RAIL++-M. Cualquier redistribucion del modelo o de un derivado debe propagar ambas licencias y las mismas restricciones a los receptores. Revisar ambas licencias antes de un uso comercial.
 - Atribucion obligatoria: gsdf (Counterfeit), ByteDance (Hyper-SD) y Ollin Boer Bohan (TAESD).
 - Sin validacion comunitaria: el repositorio tiene 0 descargas y 0 likes en el momento de redactar la ficha, y no hay evaluaciones independientes publicadas.
-- Fechas del repositorio: la ficha de HuggingFace indica creacion y ultima actualizacion en octubre de 2026, posteriores a la fecha de esta publicacion.
+- Fechas del repositorio: la ficha de Hugging Face indica creacion y ultima actualizacion en octubre de 2026, posteriores a la fecha de esta publicacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ianhaimo/edgenovel-anime-cover
+- Modelo en Hugging Face: https://huggingface.co/ianhaimo/edgenovel-anime-cover
 - Repositorio EdgeNovel: https://github.com/envymoon/EdgeNovel
 - Release del motor de imagen parcheado (image-engine-1): https://github.com/envymoon/EdgeNovel/releases/tag/image-engine-1
 - Modelo base Counterfeit V3.0: https://huggingface.co/gsdf/Counterfeit-V3.0

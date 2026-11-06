@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Fat_Fish
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Fat_Fish
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Base-2407
 - Paper referenciado (arXiv:2407.14679): https://arxiv.org/abs/2407.14679
 - Paper referenciado (arXiv:2408.11796): https://arxiv.org/abs/2408.11796

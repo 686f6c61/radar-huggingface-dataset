@@ -81,10 +81,10 @@ La comparativa se limita a caracteristicas generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/prithivMLmods/AI4SGI-ExoMind-9B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/prithivMLmods/AI4SGI-ExoMind-9B-GGUF
 - Modelo base: https://huggingface.co/AI4SGI/ExoMind-9B
 - Repositorio oficial en GitHub: https://github.com/AI4SGI/ExoMind
-- Coleccion ExoMind en HuggingFace: https://huggingface.co/collections/AI4SGI/exomind
+- Coleccion ExoMind en Hugging Face: https://huggingface.co/collections/AI4SGI/exomind
 - Pagina del proyecto: https://ai4sgi.github.io/ExoMind/
 - GGUF oficial Q4_K_M: https://huggingface.co/AI4SGI/ExoMind-9B-Q4_K_M-GGUF
 - Modelo en ModelScope: https://www.modelscope.cn/models/AI4SGI/ExoMind

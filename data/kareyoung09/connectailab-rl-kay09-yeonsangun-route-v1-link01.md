@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables dentro del mismo proyecto
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LINK-01 (este adaptador) | 0,8B (base) + LoRA | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| LINK-01 (este adaptador) | 0,8B (base) + LoRA | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de informacion sobre modelos comparables dentro del mismo proyecto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yeonsangun-route-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yeonsangun-route-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Libreria PEFT: https://huggingface.co/docs/peft
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios de codigo o demos del proyecto.

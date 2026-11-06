@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Charlbi/Lite_rt_prepared_for_android_dataset_builder es un repositorio publicado en HuggingFace por el usuario Charlbi que, por su nombre y su formato de pesos (tflite), parece estar orientado a la preparacion de un conjunto de datos o de un artefacto auxiliar para el despliegue de modelos LiteRT (la evolucion de TensorFlow Lite) en Android. El repositorio ocupa 1,7 GB y esta etiquetado unicamente con la etiqueta `tflite` y la region `us`, sin pipeline declarado.
+Charlbi/Lite_rt_prepared_for_android_dataset_builder es un repositorio publicado en Hugging Face por el usuario Charlbi que, por su nombre y su formato de pesos (tflite), parece estar orientado a la preparacion de un conjunto de datos o de un artefacto auxiliar para el despliegue de modelos LiteRT (la evolucion de TensorFlow Lite) en Android. El repositorio ocupa 1,7 GB y esta etiquetado unicamente con la etiqueta `tflite` y la region `us`, sin pipeline declarado.
 
 No se dispone de informacion publica sobre el modelo en si: no hay tarjeta de modelo descriptiva, ni licencia, ni idiomas declarados, ni arquitectura, ni numero de parametros, ni longitud de contexto. El repositorio acumula 24 descargas y 0 likes, lo que indica una difusion muy limitada y practicamente nula validacion por parte de la comunidad.
 
@@ -52,7 +52,7 @@ Dado que no se dispone de documentacion tecnica, los siguientes casos de uso son
 - Conversion y cuantizacion en pipelines moviles: el artefacto podria emplearse como referencia en un flujo de conversion de modelos hacia tflite con cuantizacion post-entrenamiento o quantization-aware training.
 - Generacion de datasets para ajuste en dispositivo: el sufijo `dataset_builder` del nombre apunta a una posible utilidad de construccion de datos; habria que confirmar el esquema y el formato de salida antes de integrarlo.
 - Evaluacion comparativa de artefactos moviles: puede servir como punto de partida para medir tamano, tiempo de carga y memoria residente frente a otros modelos tflite.
-- Uso educativo o de investigacion sobre despliegue movil: util para estudiar como se empaquetan y distribuyen artefactos LiteRT en HuggingFace, siempre que la licencia lo permita (actualmente no declarada).
+- Uso educativo o de investigacion sobre despliegue movil: util para estudiar como se empaquetan y distribuyen artefactos LiteRT en Hugging Face, siempre que la licencia lo permita (actualmente no declarada).
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Charlbi/Lite_rt_prepared_for_android_dataset_builder
-- Perfil del autor en HuggingFace: https://huggingface.co/Charlbi
+- Hugging Face: https://huggingface.co/Charlbi/Lite_rt_prepared_for_android_dataset_builder
+- Perfil del autor en Hugging Face: https://huggingface.co/Charlbi
 - Documentacion de LiteRT (referencia del ecosistema tflite): no disponible en la informacion proporcionada
 - Paper, blog, repositorio o demo asociados: no disponible en la informacion proporcionada

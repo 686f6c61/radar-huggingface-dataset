@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparados entre estas alternativas, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SargeDev/Jev_Qwen3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/SargeDev/Jev_Qwen3.8-27B
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Corpus de destilación: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada. La búsqueda web realizada no devolvió resultados relacionados con el modelo, únicamente páginas sin relación con el contenido técnico.

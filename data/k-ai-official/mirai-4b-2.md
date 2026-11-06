@@ -84,7 +84,7 @@ La comparacion directa con alternativas especificas de la misma categoria (asist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/K-Ai-Official/MiRAI-4B
+- Modelo en Hugging Face: https://huggingface.co/K-Ai-Official/MiRAI-4B
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Web de K-AI: https://kai-official.netlify.app/
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

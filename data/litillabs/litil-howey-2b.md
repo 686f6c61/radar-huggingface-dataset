@@ -86,8 +86,8 @@ La información disponible solo permite comparar el adaptador con su propio mode
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiTiL-Howey-2b | ~2 000 M (base) + adaptador LoRA de 93,4 MB | No disponible | 84/84 conexiones de factor, 84/84 IDs de evidencia, 21/21 rutas completas correctas | `other` | HuggingFace (`litillabs/LiTiL-Howey-2b`) |
-| Qwen3.5-2B (base, sin adaptador) | ~2 000 M | No disponible | 34/84 conexiones de factor, 69/84 IDs de evidencia, 1/21 rutas completas correctas | No disponible en esta ficha | HuggingFace (`Qwen/Qwen3.5-2B`) |
+| LiTiL-Howey-2b | ~2 000 M (base) + adaptador LoRA de 93,4 MB | No disponible | 84/84 conexiones de factor, 84/84 IDs de evidencia, 21/21 rutas completas correctas | `other` | Hugging Face (`litillabs/LiTiL-Howey-2b`) |
+| Qwen3.5-2B (base, sin adaptador) | ~2 000 M | No disponible | 34/84 conexiones de factor, 69/84 IDs de evidencia, 1/21 rutas completas correctas | No disponible en esta ficha | Hugging Face (`Qwen/Qwen3.5-2B`) |
 | Otros adaptadores legales o de enrutamiento estructurado | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos sobre alternativas de la misma categoría (tamaño de 2B, dominio jurídico o enrutamiento de evidencia con salida JSON cerrada). Cualquier comparación con modelos de mayor tamaño quedaría fuera del propósito específico de este adaptador.
@@ -109,7 +109,7 @@ No se dispone de datos sobre alternativas de la misma categoría (tamaño de 2B,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/LiTiL-Howey-2b
+- Modelo en Hugging Face: https://huggingface.co/litillabs/LiTiL-Howey-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - Enlaces adicionales de la búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados de búsqueda disponibles no guardan relación con LiTiL-Howey-2b.

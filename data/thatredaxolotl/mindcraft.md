@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mindcraft es un repositorio alojado en HuggingFace por el usuario Thatredaxolotl bajo el identificador `Thatredaxolotl/Mindcraft`. La informacion publica disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas soportados ni tamano del modelo. El repositorio fue creado y actualizado el 1 de noviembre de 2026 y acumula cero descargas y un unico "like", lo que indica que se trata de un artefacto reciente y sin adopcion comunitaria significativa.
+Mindcraft es un repositorio alojado en Hugging Face por el usuario Thatredaxolotl bajo el identificador `Thatredaxolotl/Mindcraft`. La informacion publica disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas soportados ni tamano del modelo. El repositorio fue creado y actualizado el 1 de noviembre de 2026 y acumula cero descargas y un unico "like", lo que indica que se trata de un artefacto reciente y sin adopcion comunitaria significativa.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni el proceso de entrenamiento. El nombre "Mindcraft" sugiere, sin confirmacion oficial, un posible enfoque en razonamiento o agentes, pero esta interpretacion no puede verificarse con los datos disponibles. Tampoco se ha publicado documentacion tecnica, model card descriptiva ni resultados de evaluacion.
 
@@ -23,7 +23,7 @@ Dado que no existe informacion verificable sobre capacidades o rendimiento, esta
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida u otra), el numero de parametros, la composicion del dataset de entrenamiento ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card del repositorio no aporta detalles tecnicos y los metadatos de HuggingFace no incluyen etiquetas de arquitectura ni de framework.
+No se ha publicado informacion sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida u otra), el numero de parametros, la composicion del dataset de entrenamiento ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card del repositorio no aporta detalles tecnicos y los metadatos de Hugging Face no incluyen etiquetas de arquitectura ni de framework.
 
 Tampoco se conocen innovaciones tecnicas destacables, como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. Cualquier afirmacion al respecto seria especulativa y, por tanto, se omite.
 
@@ -74,5 +74,5 @@ No disponible. Sin datos sobre parametros, contexto, licencia o rendimiento, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thatredaxolotl/Mindcraft
+- Repositorio en Hugging Face: https://huggingface.co/Thatredaxolotl/Mindcraft
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ookb/mysterytrain-SampleCNN` es un artefacto publicado en HuggingFace por el usuario `ookb` bajo licencia MIT. Por su identificador y por el tag `onnx`, se trata de una red neuronal convolucional (CNN) exportada en formato ONNX, presumiblemente de tamano reducido y orientada a tareas de inferencia ligera. El nombre "SampleCNN" sugiere una arquitectura convolucional de ejemplo o de referencia, mas que un modelo de lenguaje generativo.
+El modelo `ookb/mysterytrain-SampleCNN` es un artefacto publicado en Hugging Face por el usuario `ookb` bajo licencia MIT. Por su identificador y por el tag `onnx`, se trata de una red neuronal convolucional (CNN) exportada en formato ONNX, presumiblemente de tamano reducido y orientada a tareas de inferencia ligera. El nombre "SampleCNN" sugiere una arquitectura convolucional de ejemplo o de referencia, mas que un modelo de lenguaje generativo.
 
-La model card publicada no incluye descripcion funcional, datos de entrenamiento, idiomas soportados ni resultados de evaluacion: unicamente declara la licencia MIT. El repositorio ocupa 0.0 GB (por debajo del umbral de redondeo de HuggingFace), lo que apunta a un modelo de pocos megabytes o a un repositorio practicamente vacio. No registra descargas ni likes en el momento de la consulta.
+La model card publicada no incluye descripcion funcional, datos de entrenamiento, idiomas soportados ni resultados de evaluacion: unicamente declara la licencia MIT. El repositorio ocupa 0.0 GB (por debajo del umbral de redondeo de Hugging Face), lo que apunta a un modelo de pocos megabytes o a un repositorio practicamente vacio. No registra descargas ni likes en el momento de la consulta.
 
 Por todo ello, la ficha siguiente documenta lo que puede verificarse a partir de los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato que no figure en la informacion proporcionada. No debe interpretarse este modelo como un LLM ni como un modelo multimodal: la evidencia disponible (tag `onnx`, nombre `SampleCNN`, ausencia de pipeline declarado) es compatible con un clasificador convolucional de proposito general o de demostracion.
 
@@ -20,7 +20,7 @@ Por todo ello, la ficha siguiente documenta lo que puede verificarse a partir de
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | ONNX |
-| Tamano del repositorio | 0.0 GB (por debajo del umbral de redondeo de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (por debajo del umbral de redondeo de Hugging Face) |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-11-02 |
 | Ultima actualizacion | 2026-11-02 |
@@ -45,7 +45,7 @@ Tampoco se documentan el conjunto de datos de entrenamiento, el numero de ejempl
 
 - Prototipado de pipelines ONNX: sirve como artefacto de prueba para validar la carga, la inspeccion de grafos y la ejecucion de un modelo convolucional con ONNX Runtime antes de integrar un modelo propio.
 - Pruebas de integracion en CI/CD: al ser un artefacto pequeno y con licencia permisiva, puede incorporarse a tests automatizados que verifiquen la compatibilidad de un runtime o de una capa de servicio de inferencia.
-- Docencia y ejemplos de despliegue: util como ejemplo minimo para ilustrar el flujo completo desde HuggingFace hasta un endpoint de inferencia, sin coste de almacenamiento ni de computo relevante.
+- Docencia y ejemplos de despliegue: util como ejemplo minimo para ilustrar el flujo completo desde Hugging Face hasta un endpoint de inferencia, sin coste de almacenamiento ni de computo relevante.
 - Benchmarking de infraestructura: permite medir latencia de arranque y overhead de carga de un modelo ONNX en un entorno concreto sin que el coste del modelo domine la medicion.
 - Extraccion de caracteristicas convolucionales en experimentos exploratorios, siempre que se valide previamente la tarea para la que fue entrenado el modelo (no documentada).
 - Pruebas de empaquetado y distribucion de artefactos: valida flujos de descarga, cacheo y versionado de pesos ONNX en un registro de modelos.
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ookb/mysterytrain-SampleCNN
+- Modelo en Hugging Face: https://huggingface.co/ookb/mysterytrain-SampleCNN
 - Perfil del autor: https://huggingface.co/ookb
 - Especificacion ONNX: https://onnx.ai/
 - ONNX Runtime: https://onnxruntime.ai/

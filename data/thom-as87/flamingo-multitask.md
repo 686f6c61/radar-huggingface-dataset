@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: insignificante; con 49.600 parámetros, el modelo ocupa menos de 1 MB en memoria, por lo que cabe en cualquier GPU o CPU.
 - GPU recomendada: ninguna en particular; se puede ejecutar en CPU sin problemas.
-- Opciones de despliegue: no compatible con vLLM, Ollama o TGI directamente; requiere un adaptador explícito para usar las APIs genéricas de HuggingFace.
+- Opciones de despliegue: no compatible con vLLM, Ollama o TGI directamente; requiere un adaptador explícito para usar las APIs genéricas de Hugging Face.
 - Latencia y throughput: no disponible; al no estar entrenado, no hay datos de rendimiento real.
 
 ## Comparativa con modelos similares
@@ -57,15 +57,15 @@ El repositorio `pdxreyes/flamingo-multitask` parece ser una implementación alte
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| thom-as87/flamingo-multitask | 49.600 | No disponible | MIT | HuggingFace |
-| pdxreyes/flamingo-multitask | No disponible | No disponible | No disponible | HuggingFace |
+| thom-as87/flamingo-multitask | 49.600 | No disponible | MIT | Hugging Face |
+| pdxreyes/flamingo-multitask | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - El checkpoint incluido no ha sido entrenado; es una inicialización válida para pruebas de humo, no un modelo funcional.
 - No se ha auditado para robustez, equidad ni transferencia de dominio.
 - No se proporcionan benchmarks ni resultados de rendimiento.
-- Las APIs genéricas de carga de HuggingFace no funcionan sin un adaptador explícito.
+- Las APIs genéricas de carga de Hugging Face no funcionan sin un adaptador explícito.
 - La licencia MIT es permisiva, pero es necesario revisar los términos de los datos externos si se usan con datasets.
 - La configuración por defecto (SGD con schedule cosine) son valores iniciales del script, no evidencia de un entrenamiento completado.
 

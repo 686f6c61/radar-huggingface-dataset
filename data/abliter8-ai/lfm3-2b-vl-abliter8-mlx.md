@@ -116,7 +116,7 @@ Los datos de Qwen3.5-2B y Qwen3.5-4B provienen únicamente de la tabla comparati
 
 ## Enlaces
 
-- Repositorio HuggingFace (MLX): https://huggingface.co/abliter8-ai/lfm3-2b-vl-abliter8-mlx
+- Repositorio Hugging Face (MLX): https://huggingface.co/abliter8-ai/lfm3-2b-vl-abliter8-mlx
 - Pesos GGUF: https://huggingface.co/abliter8-ai/lfm3-2b-vl-abliter8-gguf
 - Colección abliter8: https://huggingface.co/collections/abliter8-ai/lfm3-abliter8
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B

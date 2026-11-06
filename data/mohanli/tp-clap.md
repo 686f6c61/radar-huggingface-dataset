@@ -4,7 +4,7 @@
 
 ## Resumen
 
-mohanli/TP-CLAP es un repositorio de modelo alojado en HuggingFace por el usuario mohanli, publicado el 11 de septiembre de 2026 y actualizado el mismo dia. El repositorio ocupa 2,6 GB y esta distribuido bajo licencia Apache-2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, no declara etiqueta de pipeline (text-generation, image-text-to-text, audio-classification u otra) y no incluye idiomas declarados. La model card asociada no contiene ninguna documentacion tecnica: unicamente la linea de licencia.
+mohanli/TP-CLAP es un repositorio de modelo alojado en Hugging Face por el usuario mohanli, publicado el 11 de septiembre de 2026 y actualizado el mismo dia. El repositorio ocupa 2,6 GB y esta distribuido bajo licencia Apache-2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, no declara etiqueta de pipeline (text-generation, image-text-to-text, audio-classification u otra) y no incluye idiomas declarados. La model card asociada no contiene ninguna documentacion tecnica: unicamente la linea de licencia.
 
 El identificador "TP-CLAP" sugiere, por la terminologia "CLAP" (Contrastive Language-Audio Pre-training) o su variante textual/visual "CLIP", que podria tratarse de un modelo contrastivo multimodal, y el prefijo "TP" podria corresponder a "text-prompt", "temporal" o a una inicial relacionada con la tarea. Sin embargo, no hay ningun dato en la informacion proporcionada que confirme arquitectura, modalidad, tamano de parametros ni datos de entrenamiento, por lo que cualquier afirmacion al respecto seria especulativa.
 
@@ -45,7 +45,7 @@ El unico indicio es el propio nombre del modelo y el tamano del repositorio (2,6
 
 ## Capacidades
 
-No es posible determinar las capacidades del modelo a partir de la informacion disponible. La model card no describe tareas soportadas y no hay pipeline declarado en HuggingFace que permita inferir la modalidad.
+No es posible determinar las capacidades del modelo a partir de la informacion disponible. La model card no describe tareas soportadas y no hay pipeline declarado en Hugging Face que permita inferir la modalidad.
 
 - Generacion de texto: no disponible.
 - Razonamiento y matematicas: no disponible.
@@ -108,7 +108,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mohanli/TP-CLAP
+- Repositorio en Hugging Face: https://huggingface.co/mohanli/TP-CLAP
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

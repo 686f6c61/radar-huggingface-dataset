@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyLlama-1.1B-Chat-v0.3-AWQ es una versión cuantizada a 4 bits mediante AWQ del modelo TinyLlama-1.1B-Chat-v0.3, un transformer decoder-only de tipo Llama con 1.100.060.672 parámetros (aproximadamente 1,1 mil millones). El modelo original fue creado por Zhang Peiyuan (PY007) como parte del proyecto TinyLlama, y esta variante AWQ fue producida por TheBloke y posteriormente replicada por el equipo de vLLM en su organización de HuggingFace para uso interno en sus pipelines de integración continua.
+TinyLlama-1.1B-Chat-v0.3-AWQ es una versión cuantizada a 4 bits mediante AWQ del modelo TinyLlama-1.1B-Chat-v0.3, un transformer decoder-only de tipo Llama con 1.100.060.672 parámetros (aproximadamente 1,1 mil millones). El modelo original fue creado por Zhang Peiyuan (PY007) como parte del proyecto TinyLlama, y esta variante AWQ fue producida por TheBloke y posteriormente replicada por el equipo de vLLM en su organización de Hugging Face para uso interno en sus pipelines de integración continua.
 
 El propósito de esta ficha es documentar un checkpoint de inferencia optimizado para despliegue en GPUs de gama baja o consumer. La cuantización AWQ de 4 bits con grupo de escala 128 reduce el peso del repositorio a 0,77 GB, lo que permite servirlo con vLLM usando `--quantization awq` en entornos con recursos limitados. Es relevante ahora porque vLLM mantiene esta copia como dependencia de sus pruebas de CI, lo que garantiza su disponibilidad a largo plazo frente al riesgo de que el repositorio original en una cuenta personal desaparezca.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v0.3-AWQ (este) | 1,1 B | no disponible | AWQ 4 bits, 128g | Apache 2.0 | HuggingFace (vllm-project y TheBloke) |
-| TinyLlama-1.1B-Chat-v0.3 (original fp16) | 1,1 B | no disponible | ninguna (fp16) | Apache 2.0 | HuggingFace (PY007) |
-| TinyLlama-1.1B-Chat-v0.3-GGUF | 1,1 B | no disponible | GGUF 2-8 bits | Apache 2.0 | HuggingFace (TheBloke) |
-| TinyLlama-1.1B-Chat-v0.3-GPTQ | 1,1 B | no disponible | GPTQ | Apache 2.0 | HuggingFace (TheBloke) |
+| TinyLlama-1.1B-Chat-v0.3-AWQ (este) | 1,1 B | no disponible | AWQ 4 bits, 128g | Apache 2.0 | Hugging Face (vllm-project y TheBloke) |
+| TinyLlama-1.1B-Chat-v0.3 (original fp16) | 1,1 B | no disponible | ninguna (fp16) | Apache 2.0 | Hugging Face (PY007) |
+| TinyLlama-1.1B-Chat-v0.3-GGUF | 1,1 B | no disponible | GGUF 2-8 bits | Apache 2.0 | Hugging Face (TheBloke) |
+| TinyLlama-1.1B-Chat-v0.3-GPTQ | 1,1 B | no disponible | GPTQ | Apache 2.0 | Hugging Face (TheBloke) |
 
 Las alternativas comparables directas son las otras variantes de cuantizacion del mismo modelo base; no se dispone de datos de rendimiento comparativo entre ellas en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ Las alternativas comparables directas son las otras variantes de cuantizacion de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/TinyLlama-1.1B-Chat-v0.3-AWQ
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/TinyLlama-1.1B-Chat-v0.3-AWQ
 - Repositorio original AWQ de TheBloke: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v0.3-AWQ
 - Modelo base original: https://huggingface.co/PY007/TinyLlama-1.1B-Chat-v0.3
 - Variante GPTQ: https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v0.3-GPTQ

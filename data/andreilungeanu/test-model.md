@@ -2,7 +2,7 @@
 
 ## Resumen
 
-andreilungeanu/test-model es un repositorio publicado en HuggingFace por el usuario andreilungeanu el 29 de septiembre de 2026, bajo licencia Apache 2.0. El propio identificador del repositorio ("test-model") y la ausencia total de documentación técnica en su model card sugieren que se trata de un artefacto de prueba o de un espacio de experimentación personal, más que de un modelo de lenguaje destinado a uso en producción o a evaluación pública.
+andreilungeanu/test-model es un repositorio publicado en Hugging Face por el usuario andreilungeanu el 29 de septiembre de 2026, bajo licencia Apache 2.0. El propio identificador del repositorio ("test-model") y la ausencia total de documentación técnica en su model card sugieren que se trata de un artefacto de prueba o de un espacio de experimentación personal, más que de un modelo de lenguaje destinado a uso en producción o a evaluación pública.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", y su model card se limita a un bloque YAML con la declaración de licencia, sin descripción, sin arquitectura declarada, sin tokenizador documentado y sin ejemplos de uso. No se especifica pipeline, idiomas soportados, ni ningún otro metadato técnico más allá de la etiqueta de licencia y la región (US).
 
@@ -21,7 +21,7 @@ El autor, Andrei Lungeanu, se presenta en su perfil profesional como ingeniero d
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 
-Otros metadatos declarados por HuggingFace: etiquetas `region:us`, pipeline no disponible, 0 descargas, 0 likes, fecha de creacion y ultima actualizacion 2026-09-29T21:10:15Z (misma marca temporal, sin revisiones posteriores).
+Otros metadatos declarados por Hugging Face: etiquetas `region:us`, pipeline no disponible, 0 descargas, 0 likes, fecha de creacion y ultima actualizacion 2026-09-29T21:10:15Z (misma marca temporal, sin revisiones posteriores).
 
 ## Arquitectura y entrenamiento
 
@@ -45,7 +45,7 @@ No se ha publicado informacion verificable sobre ninguna capacidad funcional del
 ## Casos de uso
 
 - No es posible recomendar casos de uso concretos, porque no se ha publicado informacion sobre las capacidades, el contexto, el rendimiento ni el formato de pesos del modelo.
-- Evaluacion interna de pipelines: el repositorio podria emplearse como artefacto de prueba en flujos de CI/CD que validen la subida y descarga de modelos en HuggingFace, dado su caracter aparentemente experimental.
+- Evaluacion interna de pipelines: el repositorio podria emplearse como artefacto de prueba en flujos de CI/CD que validen la subida y descarga de modelos en Hugging Face, dado su caracter aparentemente experimental.
 - Pruebas de integracion de librerias: utilizable como destino ficticio para verificar que scripts de `transformers`, `huggingface_hub` o similares resuelven correctamente identificadores de repositorio.
 - Docencia o demostracion de gobernanza de modelos: sirve como ejemplo de repositorio sin model card completa y de los riesgos asociados a desplegar modelos sin documentacion.
 - Auditoria de licencias: al declarar Apache 2.0, puede usarse como caso de estudio sobre como una licencia permisiva no implica que el modelo sea funcional o seguro.
@@ -75,7 +75,7 @@ No disponible. Al no haberse publicado la arquitectura, el numero de parametros,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| andreilungeanu/test-model | no disponible | no disponible | apache-2.0 | HuggingFace | no disponible |
+| andreilungeanu/test-model | no disponible | no disponible | apache-2.0 | Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. Al no haberse publicado la arquitectura, el numero de parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andreilungeanu/test-model
+- Repositorio en Hugging Face: https://huggingface.co/andreilungeanu/test-model
 - Perfil de LinkedIn del autor: https://ro.linkedin.com/in/andreilungeanu
 - Perfil de GitHub del autor: https://github.com/andreilungeanu
 - Repositorio `codex-delegate-mcp` del autor: https://github.com/andreilungeanu/codex-delegate-mcp

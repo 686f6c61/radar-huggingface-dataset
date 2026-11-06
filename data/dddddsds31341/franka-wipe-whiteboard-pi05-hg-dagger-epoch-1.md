@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franka-Wipe-Whiteboard-pi05-HG-DAgger-epoch-1 es un checkpoint de ajuste fino completo del modelo vision-language-action (VLA) pi0.5, desarrollado por el usuario dddddsds31341 y publicado en HuggingFace. El modelo parte de los pesos de `Franka-Wipe-Whiteboard-pi05-step-20000` y se especializa en una unica tarea robotica: borrar la escritura de una pizarra blanca con un brazo robotico Franka. Se trata, por tanto, de un modelo de politica (policy) para control motor, no de un modelo de lenguaje de proposito general.
+Franka-Wipe-Whiteboard-pi05-HG-DAgger-epoch-1 es un checkpoint de ajuste fino completo del modelo vision-language-action (VLA) pi0.5, desarrollado por el usuario dddddsds31341 y publicado en Hugging Face. El modelo parte de los pesos de `Franka-Wipe-Whiteboard-pi05-step-20000` y se especializa en una unica tarea robotica: borrar la escritura de una pizarra blanca con un brazo robotico Franka. Se trata, por tanto, de un modelo de politica (policy) para control motor, no de un modelo de lenguaje de proposito general.
 
 El entrenamiento combina aprendizaje por imitacion offline con HG-DAgger (Human-Gated DAgger), una variante de DAgger en la que un operador humano interviene selectivamente durante la recogida de datos para corregir la politica en estados de fallo. El conjunto agregado suma 31.365 muestras (29.795 frames offline mas 1.570 frames de intervencion) y se entreno durante una epoca con 981 actualizaciones de optimizador, batch global de 32 y acumulacion de gradiente de 1.
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Franka-Wipe-Whiteboard-pi05-HG-DAgger-epoch-1 | VLA pi0.5 (JAX) | Borrar pizarra con Franka | no disponible | no disponible | no disponible | HuggingFace |
-| Franka-Wipe-Whiteboard-pi05-step-20000 | VLA pi0.5 (JAX) | Borrar pizarra con Franka | no disponible | no disponible | no disponible | HuggingFace (pesos de partida) |
+| Franka-Wipe-Whiteboard-pi05-HG-DAgger-epoch-1 | VLA pi0.5 (JAX) | Borrar pizarra con Franka | no disponible | no disponible | no disponible | Hugging Face |
+| Franka-Wipe-Whiteboard-pi05-step-20000 | VLA pi0.5 (JAX) | Borrar pizarra con Franka | no disponible | no disponible | no disponible | Hugging Face (pesos de partida) |
 | Otros VLA (p. ej. OpenVLA, RT-2) | VLA | Manipulacion general | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con otros VLA genericos no se puede completar con datos verificables en la informacion disponible; las diferencias principales frente al checkpoint de partida son el uso de datos HG-DAgger y el ajuste fino adicional.
@@ -86,7 +86,7 @@ La comparativa con otros VLA genericos no se puede completar con datos verificab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/Franka-Wipe-Whiteboard-pi05-HG-DAgger-epoch-1
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/Franka-Wipe-Whiteboard-pi05-HG-DAgger-epoch-1
 - Dataset offline: https://huggingface.co/datasets/dddddsds31341/wipe-whiteboard-lerobot
 - Checkpoint de partida: https://huggingface.co/dddddsds31341/Franka-Wipe-Whiteboard-pi05-step-20000
 - OpenPI (framework): no disponible en la informacion proporcionada

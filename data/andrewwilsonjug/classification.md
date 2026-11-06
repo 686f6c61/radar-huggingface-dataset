@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Andrewwilsonjug/classification es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de clasificación. El autor lo describe explícitamente como un banco de pruebas ("experimental codebase") cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, y la propia model card aclara que no se reclama ninguna métrica de benchmark.
+Andrewwilsonjug/classification es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de clasificación. El autor lo describe explícitamente como un banco de pruebas ("experimental codebase") cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, y la propia model card aclara que no se reclama ninguna métrica de benchmark.
 
 El modelo ocupa 16.576 parámetros según los metadatos de safetensors, una cifra que contrasta con la etiqueta "large" que aparece en la configuración de arquitectura del autor. Con ese tamaño, el artefacto es varios órdenes de magnitud más pequeño que cualquier transformer de uso general, por lo que su interés es puramente metodológico: sirve para validar código, comprobar la carga de pesos y preparar un pipeline de evaluación reproducible.
 
@@ -21,7 +21,7 @@ La relevancia actual es limitada pero concreta: se trata de un ejemplo de reposi
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors |
 | Escala declarada | large (etiqueta de la configuracion del autor, no verificada) |
-| Tamano del repositorio | 0,0 GB (redondeado por HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado por Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No disponible. No se conocen modelos públicos comparables en esta categoría co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Andrewwilsonjug/classification
+- Modelo en Hugging Face: https://huggingface.co/Andrewwilsonjug/classification
 - Articulo divulgativo sobre clasificacion con IA: https://bigid.com/blog/ai-classification/
 - Guia de modelos de clasificacion por categorias de AI Builder: https://learn.microsoft.com/en-us/ai-builder/text-classification-overview
 - Introduccion a modelos de clasificacion en machine learning: https://medium.com/fuzz/machine-learning-classification-models-3040f71e2529

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `tenny-fri/new_222_5hb2xk3yze` es un modelo de lenguaje publicado en HuggingFace por el usuario tenny-fri, con un tamaño de 35.951.822.704 parámetros (aproximadamente 36 mil millones). El repositorio está etiquetado con los tags `safetensors` y `qwen3_5_moe`, lo que sugiere que podría tratarse de un modelo con arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no se dispone de confirmación oficial ni de documentación técnica detallada.
+El modelo `tenny-fri/new_222_5hb2xk3yze` es un modelo de lenguaje publicado en Hugging Face por el usuario tenny-fri, con un tamaño de 35.951.822.704 parámetros (aproximadamente 36 mil millones). El repositorio está etiquetado con los tags `safetensors` y `qwen3_5_moe`, lo que sugiere que podría tratarse de un modelo con arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no se dispone de confirmación oficial ni de documentación técnica detallada.
 
-El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas en HuggingFace antes de poder descargarlo. A fecha de la consulta, el modelo cuenta con una única descarga y cero "me gusta", lo que indica que se trata de una publicación muy reciente y con escasa adopción. La falta de información pública sobre su entrenamiento, capacidades o licencia limita considerablemente su evaluación técnica.
+El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas en Hugging Face antes de poder descargarlo. A fecha de la consulta, el modelo cuenta con una única descarga y cero "me gusta", lo que indica que se trata de una publicación muy reciente y con escasa adopción. La falta de información pública sobre su entrenamiento, capacidades o licencia limita considerablemente su evaluación técnica.
 
 A pesar de su tamaño considerable, la ausencia de documentación, benchmarks y especificaciones oficiales hace que no sea recomendable para su uso en producción sin un análisis previo exhaustivo por parte del desarrollador.
 
@@ -53,7 +53,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario solicitar permiso al autor en HuggingFace, lo que puede limitar la reproducibilidad y el uso en entornos colaborativos.
+- Acceso restringido: es necesario solicitar permiso al autor en Hugging Face, lo que puede limitar la reproducibilidad y el uso en entornos colaborativos.
 - Ausencia total de documentación: no hay papers, guías técnicas ni ejemplos de uso publicados.
 - Licencia desconocida: no se puede determinar si el modelo es de uso comercial, lo que representa un riesgo legal importante para cualquier aplicación empresarial.
 - Sesgos y alucinaciones: al no haber información sobre el entrenamiento, se desconocen los posibles sesgos y la tendencia a generar contenido falso o inventado.
@@ -62,5 +62,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/tenny-fri/new_222_5hb2xk3yze)
-- [Perfil del autor en HuggingFace](https://huggingface.co/tenny-fri)
+- [Repositorio en Hugging Face](https://huggingface.co/tenny-fri/new_222_5hb2xk3yze)
+- [Perfil del autor en Hugging Face](https://huggingface.co/tenny-fri)

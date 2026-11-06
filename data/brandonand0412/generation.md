@@ -71,10 +71,10 @@ La model card lo declara de forma explícita: "No benchmark score is claimed in 
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| brandonand0412/generation | 24.832 (declarados en safetensors) | no disponible | No (checkpoint de inicialización) | Apache 2.0 | HuggingFace, 0 descargas |
-| Salesforce BLIP (familia image captioning) | no disponible en la informacion proporcionada | no disponible | Sí | no disponible en la informacion proporcionada | HuggingFace |
-| BLIP-2 | no disponible en la informacion proporcionada | no disponible | Sí | no disponible en la informacion proporcionada | HuggingFace |
-| GIT (GenerativeImage2Text) | no disponible en la informacion proporcionada | no disponible | Sí | no disponible en la informacion proporcionada | HuggingFace |
+| brandonand0412/generation | 24.832 (declarados en safetensors) | no disponible | No (checkpoint de inicialización) | Apache 2.0 | Hugging Face, 0 descargas |
+| Salesforce BLIP (familia image captioning) | no disponible en la informacion proporcionada | no disponible | Sí | no disponible en la informacion proporcionada | Hugging Face |
+| BLIP-2 | no disponible en la informacion proporcionada | no disponible | Sí | no disponible en la informacion proporcionada | Hugging Face |
+| GIT (GenerativeImage2Text) | no disponible en la informacion proporcionada | no disponible | Sí | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos verificados de parámetros, contexto ni licencia de las alternativas dentro de la información proporcionada, por lo que la comparación cuantitativa no es posible. La diferencia cualitativa principal es que las alternativas citadas distribuyen pesos entrenados y evaluados, mientras que este repositorio distribuye una inicialización sin entrenar y sin métricas.
 
@@ -93,5 +93,5 @@ No se dispone de datos verificados de parámetros, contexto ni licencia de las a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brandonand0412/generation
+- Hugging Face: https://huggingface.co/brandonand0412/generation
 - Resultados de la búsqueda web: no se han encontrado papers, blogs, repositorios ni demos relevantes; las entradas devueltas son páginas de inicio de motores de búsqueda sin relación con el modelo.

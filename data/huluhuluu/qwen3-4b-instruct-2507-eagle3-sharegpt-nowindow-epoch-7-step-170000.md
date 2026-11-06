@@ -70,7 +70,7 @@ No se dispone de datos cuantitativos de otros modelos draft comparables en la in
 
 ## Enlaces
 
-- Repositorio del checkpoint en HuggingFace: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-7-step-170000
+- Repositorio del checkpoint en Hugging Face: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-NoWindow-epoch-7-step-170000
 - Repositorio del checkpoint sin sufijo NoWindow (epoch 7, paso 170000): https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-170000
 - Repositorio del checkpoint epoch 7, paso 185000: https://huggingface.co/huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT-epoch-7-step-185000
 - Implementacion oficial de EAGLE para Qwen3 (GitHub): https://github.com/Yunhai-Hu/EAGLE-Qwen3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heitorohxs/contrastive14` es un repositorio experimental alojado en HuggingFace que implementa una base de código de arquitectura Flamingo orientada a aprendizaje contrastivo. Lo publica el usuario heitorohxs bajo licencia MIT, con fecha de creacion en octubre de 2026 y sin descargas ni interacciones registradas en el momento de la consulta. No es un modelo entrenado ni publicado como checkpoint de referencia, sino un esqueleto de implementacion con un checkpoint de inicializacion destinado a pruebas de humo (smoke tests).
+`heitorohxs/contrastive14` es un repositorio experimental alojado en Hugging Face que implementa una base de código de arquitectura Flamingo orientada a aprendizaje contrastivo. Lo publica el usuario heitorohxs bajo licencia MIT, con fecha de creacion en octubre de 2026 y sin descargas ni interacciones registradas en el momento de la consulta. No es un modelo entrenado ni publicado como checkpoint de referencia, sino un esqueleto de implementacion con un checkpoint de inicializacion destinado a pruebas de humo (smoke tests).
 
 El propio autor describe el repositorio como una base experimental que mantiene intencionadamente un setup "large" manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La model card aclara de forma explicita que no se reclama ninguna puntuacion de benchmark y que `model.safetensors` es un checkpoint valido de inicializacion, no un modelo entrenado.
 
@@ -34,7 +34,7 @@ No hay evidencia de un entrenamiento completado. La model card indica que el che
 - No se documentan capacidades funcionales verificadas: al ser un checkpoint de inicializacion sin entrenamiento, no hay generacion de texto, razonamiento, codigo ni matematicas evaluables.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas no esta informado en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no esta informado en Hugging Face).
 - Capacidades especiales (vision, audio, thinking mode): la arquitectura Flamingo esta asociada historicamente a entrada multimodal, pero la model card de este repositorio no confirma ni detalla ninguna modalidad soportada.
 - La model card anticipa que las APIs genericas de carga automatica requieren un adaptador explicito, dado que se trata de una implementacion personalizada.
 
@@ -77,7 +77,7 @@ Los datos de las filas comparativas no proceden de la informacion proporcionada 
 
 - Sesgos conocidos: no evaluados. El checkpoint no ha sido auditado en robustez, equidad ni transferencia de dominio, tal como advierte la propia model card.
 - Riesgo de alucinacion: no evaluable; no se ha entrenado ni alineado el modelo para generar respuestas fiables.
-- Limitaciones de contexto o idioma: la longitud de contexto y los idiomas soportados no estan informados en HuggingFace ni en la model card.
+- Limitaciones de contexto o idioma: la longitud de contexto y los idiomas soportados no estan informados en Hugging Face ni en la model card.
 - Restricciones de licencia para uso comercial: licencia MIT, que en principio permite uso comercial, pero el autor recomienda revisar por separado los terminos de los datos de origen cuando el repositorio se use con datasets externos.
 - Aviso critico para produccion: el checkpoint `model.safetensors` es una inicializacion para smoke tests y no un modelo entrenado; no debe desplegarse como si fuera un modelo funcional.
 - Reproducibilidad: el autor senala que los resultados de un futuro checkpoint entrenado deben documentarse por separado respecto a los valores por defecto publicados aqui.
@@ -86,7 +86,7 @@ Los datos de las filas comparativas no proceden de la informacion proporcionada 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/heitorohxs/contrastive14
+- Repositorio en Hugging Face: https://huggingface.co/heitorohxs/contrastive14
 - Paper de Flamingo (referencia arquitectonica): no disponible en la informacion proporcionada
 - Repositorio OpenFlamingo: no disponible en la informacion proporcionada
 - Blog o demo del autor: no disponible en la informacion proporcionada

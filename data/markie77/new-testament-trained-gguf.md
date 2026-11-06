@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Markie77/new-testament-trained-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Markie77/new-testament-trained-GGUF
 - Unsloth (herramienta de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - Documentación de llama.cpp: https://github.com/ggerganov/llama.cpp

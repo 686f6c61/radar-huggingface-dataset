@@ -114,7 +114,7 @@ El autor señala explícitamente que la comparación de imágenes es una pantall
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EliovpAI/Qwen_Image-2.1-Uncensored-MXFP4-Paiton
+- Repositorio en Hugging Face: https://huggingface.co/EliovpAI/Qwen_Image-2.1-Uncensored-MXFP4-Paiton
 - Modelo base del fine-tune: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - Discusión del autor original sobre el LoRA fusionado: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF/discussions/20
 - Modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1

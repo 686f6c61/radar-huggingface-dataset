@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PNSN (este repo) | Phase picker (Pg/Sg/Pn/Sn) | no disponible | no aplica | GPL-3.0 | Checkpoint en HuggingFace |
-| SeismicXM (este repo) | Multi-tarea waveform | no disponible | no aplica | GPL-3.0 | Checkpoint en HuggingFace |
+| PNSN (este repo) | Phase picker (Pg/Sg/Pn/Sn) | no disponible | no aplica | GPL-3.0 | Checkpoint en Hugging Face |
+| SeismicXM (este repo) | Multi-tarea waveform | no disponible | no aplica | GPL-3.0 | Checkpoint en Hugging Face |
 | PhaseNet (control) | Phase picker (P/S) | no disponible | no aplica | MIT | Checkpoint incluido |
 | EQTransformer (control) | Phase picker + magnitud | no disponible | no aplica | MIT | Checkpoint incluido |
 
@@ -75,7 +75,7 @@ No se dispone de información pública sobre otros modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cangyeone/elastic-wave-structure-emerge
+- Hugging Face: https://huggingface.co/cangyeone/elastic-wave-structure-emerge
 - GitHub del autor: https://github.com/cangyeone/
 - Repositorio de herramientas sismológicas: https://github.com/cangyeone/seismological-ai-tools
 - Documentación generada por DeepWiki: https://deepwiki.com/cangyeone/seismological-ai-tools

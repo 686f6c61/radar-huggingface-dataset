@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Devlin-Alpha-22B-A3B es un modelo de lenguaje de gran tamaño desarrollado por Devlin-AI, publicado en formato GGUF para su uso con herramientas de inferencia local como llama.cpp y Ollama. El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 22.573 millones de parámetros totales y aproximadamente 3.000 millones de parámetros activos por token. El repositorio de HuggingFace contiene únicamente pesos cuantizados en formato GGUF, con un tamaño total de 326,3 GB, lo que indica la presencia de múltiples cuantizaciones. El modelo está etiquetado como "conversational" y "endpoints_compatible", lo que apunta a un uso orientado a diálogo y a la integración con APIs de inferencia compatibles con el estándar OpenAI. Sin embargo, la información disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. Debido a esta falta de documentación, el modelo debe evaluarse con cautela antes de su uso en producción.
+Devlin-Alpha-22B-A3B es un modelo de lenguaje de gran tamaño desarrollado por Devlin-AI, publicado en formato GGUF para su uso con herramientas de inferencia local como llama.cpp y Ollama. El nombre del modelo sugiere una arquitectura de mezcla de expertos (MoE) con 22.573 millones de parámetros totales y aproximadamente 3.000 millones de parámetros activos por token. El repositorio de Hugging Face contiene únicamente pesos cuantizados en formato GGUF, con un tamaño total de 326,3 GB, lo que indica la presencia de múltiples cuantizaciones. El modelo está etiquetado como "conversational" y "endpoints_compatible", lo que apunta a un uso orientado a diálogo y a la integración con APIs de inferencia compatibles con el estándar OpenAI. Sin embargo, la información disponible es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. Debido a esta falta de documentación, el modelo debe evaluarse con cautela antes de su uso en producción.
 
 ## Especificaciones técnicas
 
@@ -39,7 +39,7 @@ La nomenclatura "22B-A3B" es habitual en modelos MoE, donde "22B" indica los par
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni de otras evaluaciones estándar. Tampoco se han encontrado comparativas oficiales con otros modelos. El repositorio de HuggingFace no incluye métricas de rendimiento ni tablas de evaluación.
+No se han publicado resultados de benchmarks en la información disponible. No existen datos de MMLU, HumanEval, GSM8K ni de otras evaluaciones estándar. Tampoco se han encontrado comparativas oficiales con otros modelos. El repositorio de Hugging Face no incluye métricas de rendimiento ni tablas de evaluación.
 
 ## Requisitos de hardware
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Limitaciones y advertencias
 
-- Ausencia de licencia: no se especifica la licencia en el repositorio de HuggingFace. Esto supone un riesgo legal importante para cualquier uso comercial, ya que los derechos de uso no están definidos.
+- Ausencia de licencia: no se especifica la licencia en el repositorio de Hugging Face. Esto supone un riesgo legal importante para cualquier uso comercial, ya que los derechos de uso no están definidos.
 - Falta de documentación técnica: no se han publicado detalles sobre el entrenamiento, la arquitectura interna, los datos utilizados ni el proceso de alineación. Esto impide evaluar la calidad y el comportamiento del modelo de manera rigurosa.
 - Riesgo de alucinación no evaluado: al no existir benchmarks ni evaluaciones de seguridad, no se puede cuantificar la tasa de alucinaciones ni la fiabilidad de las respuestas.
 - Sesgos desconocidos: no se ha realizado ningún análisis de sesgos, por lo que el modelo podría reflejar sesgos presentes en su corpus de entrenamiento, del que no se tiene información.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Devlin-AI/Devlin-Alpha-22B-A3B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Devlin-AI/Devlin-Alpha-22B-A3B-GGUF
 - Leaderboard de modelos open source (BenchLM, septiembre de 2026): https://benchlm.ai/best/open-source
 
 Nota: los resultados de búsqueda adicionales (OpenVPN, devlin.ai) no parecen estar relacionados con el modelo y se han omitido por irrelevancia.

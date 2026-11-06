@@ -4,7 +4,7 @@
 
 `abdulrahmanalotaibi/robotics-vision-language-study-2024` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion (etiquetado por el autor como `research-notes`) sobre vision y lenguaje aplicados a robotica. La propia model card lo declara explicitamente: es una "nota exploratoria" que registra la comparacion prevista, los posibles factores de confusion y los requisitos de reproducibilidad antes de publicar cualquier resultado de benchmark. No se libera checkpoint, codigo ni resultados experimentales.
 
-El repositorio es, por tanto, un artefacto de documentacion: dos ficheros (`analysis.md` y `README.md`) que describen el alcance de una pregunta de investigacion, una comparacion propuesta con lineas base emparejadas y referencias bibliograficas del area. Los metadatos de HuggingFace incluyen la etiqueta `transformer` y un tensor en formato safetensors con 24.832 parametros, pero la model card no describe ninguna arquitectura ni justifica esa etiqueta, por lo que no debe interpretarse como un modelo funcional.
+El repositorio es, por tanto, un artefacto de documentacion: dos ficheros (`analysis.md` y `README.md`) que describen el alcance de una pregunta de investigacion, una comparacion propuesta con lineas base emparejadas y referencias bibliograficas del area. Los metadatos de Hugging Face incluyen la etiqueta `transformer` y un tensor en formato safetensors con 24.832 parametros, pero la model card no describe ninguna arquitectura ni justifica esa etiqueta, por lo que no debe interpretarse como un modelo funcional.
 
 Su relevancia es metodologica, no tecnica: sirve como plantilla de protocolo previo al experimento (definicion de alcance, controles, semillas, hardware y registros crudos exigidos antes de publicar resultados) para quien trabaje en robotica con modelos vision-lenguaje. No es utilizable para inferencia, generacion de texto ni ninguna tarea de vision.
 
@@ -23,7 +23,7 @@ Su relevancia es metodologica, no tecnica: sirve como plantilla de protocolo pre
 
 ## Arquitectura y entrenamiento
 
-La model card no documenta arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni proceso de alineamiento (RLHF, DPO u otro). El unico indicio arquitectonico es la etiqueta `transformer` presente en los metadatos de HuggingFace, que no viene acompanada de ninguna descripcion, configuracion ni referencia en el texto del autor. Tampoco se detalla ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, arquitecturas hibridas, etc.).
+La model card no documenta arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni proceso de alineamiento (RLHF, DPO u otro). El unico indicio arquitectonico es la etiqueta `transformer` presente en los metadatos de Hugging Face, que no viene acompanada de ninguna descripcion, configuracion ni referencia en el texto del autor. Tampoco se detalla ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, arquitecturas hibridas, etc.).
 
 El repositorio declara de forma explicita que "no reclama mejoras de benchmark, ablaciones completas, codigo liberado ni un checkpoint entrenado". Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados. Si en el futuro se anaden resultados, el propio autor exige que incluyan versiones de dataset, comandos, semillas, hardware y registros en crudo. El tamaNo del repo (0,0 GB) y el recuento de 24.832 parametros son compatibles con un tensor de prueba o de relleno, no con pesos de un modelo utilizable.
 
@@ -75,5 +75,5 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abdulrahmanalotaibi/robotics-vision-language-study-2024
+- Hugging Face: https://huggingface.co/abdulrahmanalotaibi/robotics-vision-language-study-2024
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

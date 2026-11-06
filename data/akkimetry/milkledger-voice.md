@@ -23,7 +23,7 @@ La relevancia es doble: por un lado, ofrece un empaquetado listo para produccion
 | Entrada de audio | 16 kHz mono; el front end log-mel esta embebido en `encoder.int8.onnx` |
 | Vocabulario | 256 word pieces por idioma mas token blank |
 | Tamano del repositorio | 0,8 GB (ASR + TTS de los tres idiomas); tamano por fichero no disponible en la informacion proporcionada |
-| Fecha de publicacion | 23 de octubre de 2026 (creacion del repositorio en HuggingFace) |
+| Fecha de publicacion | 23 de octubre de 2026 (creacion del repositorio en Hugging Face) |
 | Pipeline declarado | text-to-speech (el repositorio contiene ademas ASR) |
 | Descargas / likes | 0 / 0 |
 
@@ -92,7 +92,7 @@ La ventaja diferencial de este paquete no es la precision bruta, sino el empaque
 - No se documenta el manejo de code-switching (por ejemplo hindi-ingles), habitual en habla real; no disponible.
 - No se documentan funcionalidades de puntuacion, mayusculas, marcas de tiempo, diarizacion ni deteccion de actividad de voz.
 - Riesgo de sustitucion en ASR: errores de transcripcion silenciosos en cifras y nombres, especialmente delicado en una app de contabilidad; se recomienda confirmacion explicita del usuario.
-- El pipeline declarado en HuggingFace es text-to-speech, aunque el repositorio contiene sobre todo ASR; conviene revisar el contenido real antes de integrar.
+- El pipeline declarado en Hugging Face es text-to-speech, aunque el repositorio contiene sobre todo ASR; conviene revisar el contenido real antes de integrar.
 - Licencia MIT, pero con atribucion obligatoria a AI4Bharat (© 2024) y a SYSPIN; el dataset SYSPIN es CC BY 4.0, lo que anade requisitos de atribucion sobre los datos de entrenamiento de las voces. Los ficheros `LICENSE` y `LICENSE-SYSPIN` deben conservarse en cualquier redistribucion.
 - El repositorio tiene 0 descargas y 0 likes y no procede de una organizacion verificada; no hay historial de mantenimiento ni issues que permitan juzgar el soporte a largo plazo.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo (solo resultados de spam sin relacion), por lo que no hay documentacion externa independiente que valide las cifras del autor.
@@ -100,8 +100,8 @@ La ventaja diferencial de este paquete no es la precision bruta, sino el empaque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akkimetry/milkledger-voice
+- Modelo en Hugging Face: https://huggingface.co/Akkimetry/milkledger-voice
 - Repositorio de AI4Bharat IndicConformerASR: https://github.com/AI4Bharat/IndicConformerASR
-- Organizacion AI4Bharat en HuggingFace (modelos `indicconformer_stt_*_hybrid_ctc_rnnt_large`): https://huggingface.co/ai4bharat
-- Organizacion SYSPIN en HuggingFace (voces VITS): https://huggingface.co/SYSPIN
+- Organizacion AI4Bharat en Hugging Face (modelos `indicconformer_stt_*_hybrid_ctc_rnnt_large`): https://huggingface.co/ai4bharat
+- Organizacion SYSPIN en Hugging Face (voces VITS): https://huggingface.co/SYSPIN
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la busqueda web realizada.

@@ -31,7 +31,7 @@ La relevancia de esta ficha es práctica: se trata de un modelo pequeno, presumi
 
 No hay información disponible sobre la arquitectura del modelo base, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card del repositorio de cuantizaciones se limita a indicar que se trata de cuantizaciones estáticas del modelo BossDefender/Noema-2B-uncensored, con los metadatos internos de la herramienta de cuantización (quantize_version 2, output_tensor_quantised 1, convert_type hf). El autor indica explícitamente que no hay cuantizaciones con imatrix o ponderadas disponibles en el momento de la publicación, y que probablemente no las planee, aunque acepta peticiones mediante discusiones de la comunidad.
 
-Lo único verificable técnicamente sobre el proceso de este repositorio es el pipeline de cuantización: conversión desde pesos HuggingFace a GGUF y generación de cuantizaciones estáticas en los niveles listados. No se ha aplicado ningún tipo de destilado, pruning ni modificación de los pesos más allá de la cuantización. Cualquier afirmación sobre innovaciones técnicas del modelo base (attention lineal, decodificación especulativa, mezcla de expertos) sería especulativa y no está respaldada por la información disponible.
+Lo único verificable técnicamente sobre el proceso de este repositorio es el pipeline de cuantización: conversión desde pesos Hugging Face a GGUF y generación de cuantizaciones estáticas en los niveles listados. No se ha aplicado ningún tipo de destilado, pruning ni modificación de los pesos más allá de la cuantización. Cualquier afirmación sobre innovaciones técnicas del modelo base (attention lineal, decodificación especulativa, mezcla de expertos) sería especulativa y no está respaldada por la información disponible.
 
 ## Capacidades
 
@@ -107,7 +107,7 @@ Frente a estas alternativas, el punto diferencial de Noema-2B-uncensored no es e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Noema-2B-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Noema-2B-uncensored-GGUF
 - Modelo base: https://huggingface.co/BossDefender/Noema-2B-uncensored
 - Página de resumen y listado de descargas del cuantizador: https://hf.tst.eu/model#Noema-2B-uncensored-GGUF
 - Preguntas frecuentes y peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

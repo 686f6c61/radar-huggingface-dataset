@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Qwen3.5-4B-3D-Coder
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen3.5-4B-3D-Coder
 - Modelo base del ajuste fino: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Modelo Qwen original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes

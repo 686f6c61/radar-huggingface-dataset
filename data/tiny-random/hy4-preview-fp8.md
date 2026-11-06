@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Capas / hidden | Expertos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `tiny-random/hy4-preview-fp8` | 54,6 M | 10 / 64 | 32 enrutados, top-8, 1 compartido | no disponible | no disponible | HuggingFace, pesos safetensors |
-| `tencent/Hy4-preview-FP8` (fuente) | no disponible | 78 / 6.144 | 256 enrutados, top-8, 1 compartido | no disponible | no disponible | HuggingFace, pesos MXFP8 |
-| Otros repositorios `tiny-random` de depuración | variable | variable | no disponible | no disponible | no disponible | HuggingFace |
+| `tiny-random/hy4-preview-fp8` | 54,6 M | 10 / 64 | 32 enrutados, top-8, 1 compartido | no disponible | no disponible | Hugging Face, pesos safetensors |
+| `tencent/Hy4-preview-FP8` (fuente) | no disponible | 78 / 6.144 | 256 enrutados, top-8, 1 compartido | no disponible | no disponible | Hugging Face, pesos MXFP8 |
+| Otros repositorios `tiny-random` de depuración | variable | variable | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación relevante es con el modelo fuente: comparten tokenizador, plantilla de chat y esquema de cuantización, pero difieren en profundidad (10 frente a 78 capas), anchura (64 frente a 6.144) y número de expertos (32 frente a 256). No se dispone de datos de benchmarks ni de licencia para ninguno de los dos en la información proporcionada, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -91,6 +91,6 @@ La comparación relevante es con el modelo fuente: comparten tokenizador, planti
 
 ## Enlaces
 
-- [tiny-random/hy4-preview-fp8 en HuggingFace](https://huggingface.co/tiny-random/hy4-preview-fp8)
+- [tiny-random/hy4-preview-fp8 en Hugging Face](https://huggingface.co/tiny-random/hy4-preview-fp8)
 - [tencent/Hy4-preview-FP8 (modelo base)](https://huggingface.co/tencent/Hy4-preview-FP8)
 - No se han encontrado otros enlaces relevantes en la búsqueda web: los resultados devueltos (TinyTask, TinyPNG, La Tiny House, Tiny House France y TinyURL) no guardan relación con el modelo.

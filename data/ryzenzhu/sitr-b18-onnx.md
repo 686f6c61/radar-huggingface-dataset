@@ -102,7 +102,7 @@ No hay datos en la información proporcionada sobre otros modelos de representac
 
 ## Enlaces
 
-- Repositorio de la conversión en HuggingFace: https://huggingface.co/RyzenZHU/sitr-b18-onnx
+- Repositorio de la conversión en Hugging Face: https://huggingface.co/RyzenZHU/sitr-b18-onnx
 - Página del proyecto SITR: https://hgupt3.github.io/sitr/
 - Código de los autores (gsrl): https://github.com/hgupt3/gsrl
 - Pesos y dataset originales: https://huggingface.co/datasets/hgupt3/sitr_dataset

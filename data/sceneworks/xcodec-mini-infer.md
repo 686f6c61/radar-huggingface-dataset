@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Salida | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| SceneWorks/xcodec-mini-infer | Codec de audio + vocoders Vocos | no disponible (903 tensores, float32) | 44,1 kHz | Apache-2.0 | HuggingFace, safetensors | Espejo no oficial, sin codigo Python |
-| m-a-p/xcodec_mini_infer | Codec de audio + vocoders Vocos | mismos pesos que el anterior | 44,1 kHz | Apache-2.0 (segun el espejo) | HuggingFace y ModelScope | Distribucion original, incluye codigo de inferencia y ficheros en formato pickle |
+| SceneWorks/xcodec-mini-infer | Codec de audio + vocoders Vocos | no disponible (903 tensores, float32) | 44,1 kHz | Apache-2.0 | Hugging Face, safetensors | Espejo no oficial, sin codigo Python |
+| m-a-p/xcodec_mini_infer | Codec de audio + vocoders Vocos | mismos pesos que el anterior | 44,1 kHz | Apache-2.0 (segun el espejo) | Hugging Face y ModelScope | Distribucion original, incluye codigo de inferencia y ficheros en formato pickle |
 | EnCodec (Meta) | Codec neuronal con RVQ | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible | Vecino de categoria; no se han recuperado datos en la busqueda |
 | DAC (Descript) | Codec neuronal con RVQ | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible | Vecino de categoria; no se han recuperado datos en la busqueda |
 
@@ -92,8 +92,8 @@ No se dispone de comparaciones de calidad objetiva entre estos modelos dentro de
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/SceneWorks/xcodec-mini-infer
-- Repositorio upstream en HuggingFace: https://huggingface.co/m-a-p/xcodec_mini_infer
+- Hugging Face (este repositorio): https://huggingface.co/SceneWorks/xcodec-mini-infer
+- Repositorio upstream en Hugging Face: https://huggingface.co/m-a-p/xcodec_mini_infer
 - README upstream: https://huggingface.co/m-a-p/xcodec_mini_infer/blob/main/README.md
 - Espejo en ModelScope: https://www.modelscope.cn/models/m-a-p/xcodec_mini_infer
 - GitHub de SceneWorks: https://github.com/SceneWorks/SceneWorks

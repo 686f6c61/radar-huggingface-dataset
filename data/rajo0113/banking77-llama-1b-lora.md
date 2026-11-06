@@ -85,8 +85,8 @@ La información disponible no incluye resultados de terceros medidos en el mismo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| banking77-llama-1b-lora | 1,24 B (base) + 11,3 M entrenables | 512 tokens en ajuste; el base admite ventanas mayores | Generación autoregresiva con adaptador LoRA; 90,21 % exact match en Banking77 test | llama3.2 | HuggingFace, 0,1 GB, 10 descargas |
-| Llama-3.2-1B-Instruct sin ajustar | 1,24 B | Ventana amplia del modelo base | Generación zero-shot con el mismo prompt; 0,00 % en Banking77 test | llama3.2 | HuggingFace (unsloth/Llama-3.2-1B-Instruct) |
+| banking77-llama-1b-lora | 1,24 B (base) + 11,3 M entrenables | 512 tokens en ajuste; el base admite ventanas mayores | Generación autoregresiva con adaptador LoRA; 90,21 % exact match en Banking77 test | llama3.2 | Hugging Face, 0,1 GB, 10 descargas |
+| Llama-3.2-1B-Instruct sin ajustar | 1,24 B | Ventana amplia del modelo base | Generación zero-shot con el mismo prompt; 0,00 % en Banking77 test | llama3.2 | Hugging Face (unsloth/Llama-3.2-1B-Instruct) |
 | Encoder tipo DeBERTa-v3 con cabecera de clasificación sobre Banking77 | Del orden de cientos de millones | 512 tokens | Clasificación discriminativa con logits por clase | MIT o similar según variante | Disponible en el Hub; rendimiento en Banking77: no disponible en esta información |
 | Enfoques SetFit (encoder congelado + cabecera) sobre Banking77 | Depende del encoder | 512 tokens | Clasificación con pocos ejemplos por clase | Depende del encoder | Disponible en el Hub; rendimiento en Banking77: no disponible en esta información |
 
@@ -108,7 +108,7 @@ Ventaja diferencial del adaptador frente a un encoder clásico: no necesita cabe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajo0113/banking77-llama-1b-lora
+- Modelo en Hugging Face: https://huggingface.co/rajo0113/banking77-llama-1b-lora
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Variante base cuantizada referenciada en `adapter_config.json`: https://huggingface.co/unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit
 - Dataset Banking77: https://huggingface.co/datasets/mteb/banking77

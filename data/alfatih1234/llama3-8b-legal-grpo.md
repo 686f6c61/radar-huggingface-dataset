@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfatih1234/llama3-8b-legal-grpo` es un ajuste fino del modelo Llama 3 8B Instruct publicado por el usuario alfatih1234 en HuggingFace. El entrenamiento parte de `unsloth/llama-3-8b-Instruct-bnb-4bit`, la version cuantizada a 4 bits del modelo de Meta, y se ha realizado con las librerias Unsloth y TRL, segun los metadatos y la propia model card. El sufijo del nombre del repositorio sugiere un ajuste orientado al dominio legal mediante GRPO, aunque la documentacion no especifica ni el conjunto de datos, ni los hiperparametros, ni ningun tipo de evaluacion.
+`alfatih1234/llama3-8b-legal-grpo` es un ajuste fino del modelo Llama 3 8B Instruct publicado por el usuario alfatih1234 en Hugging Face. El entrenamiento parte de `unsloth/llama-3-8b-Instruct-bnb-4bit`, la version cuantizada a 4 bits del modelo de Meta, y se ha realizado con las librerias Unsloth y TRL, segun los metadatos y la propia model card. El sufijo del nombre del repositorio sugiere un ajuste orientado al dominio legal mediante GRPO, aunque la documentacion no especifica ni el conjunto de datos, ni los hiperparametros, ni ningun tipo de evaluacion.
 
 Se trata de un transformer decoder-only de aproximadamente 8.000 millones de parametros, con una ventana de contexto de 8.192 tokens heredada del modelo base, licencia Apache 2.0 declarada y soporte unicamente del ingles. El repositorio ocupa 0,2 GB, un tamano muy inferior a los ~5 GB que ocuparian los pesos de un modelo de 8B en 4 bits y a los ~16 GB en precision completa, lo que apunta a que podria contener solo adaptadores LoRA en lugar de pesos fusionados; este extremo no esta confirmado por el autor.
 
@@ -96,7 +96,7 @@ La comparacion se limita a datos publicos de los modelos base y alternativas, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfatih1234/llama3-8b-legal-grpo
+- Modelo en Hugging Face: https://huggingface.co/alfatih1234/llama3-8b-legal-grpo
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

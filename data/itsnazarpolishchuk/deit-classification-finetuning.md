@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Itsnazarpolishchuk/deit-classification-finetuning es un repositorio experimental de HuggingFace que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificacion. No se trata de un modelo entrenado ni publicado como checkpoint de referencia: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado con benchmarks. El autor describe el repositorio como un punto de partida experimental para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+Itsnazarpolishchuk/deit-classification-finetuning es un repositorio experimental de Hugging Face que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificacion. No se trata de un modelo entrenado ni publicado como checkpoint de referencia: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado con benchmarks. El autor describe el repositorio como un punto de partida experimental para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio esta etiquetado con `safetensors`, `deit`, `pytorch`, `classification` y licencia `bsd-3-clause`, y registra 0 descargas y 0 likes en el momento de la consulta. El contaje real de parametros del fichero de pesos es de 33.088 parametros, una cifra extremadamente reducida que es coherente con un tensor de inicializacion y no con un transformer visual de escala "huge", pese a que la configuracion declarada use ese nombre de escala.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Itsnazarpolishchuk/deit-classification-finetuning | 33.088 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | bsd-3-clause | HuggingFace, 0 descargas |
+| Itsnazarpolishchuk/deit-classification-finetuning | 33.088 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | bsd-3-clause | Hugging Face, 0 descargas |
 | Otros repositorios DeiT (categoria de referencia) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otras variantes ViT / clasificadores de imagen | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -83,4 +83,4 @@ No se dispone de datos verificables sobre alternativas concretas en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Itsnazarpolishchuk/deit-classification-finetuning
+- Modelo en Hugging Face: https://huggingface.co/Itsnazarpolishchuk/deit-classification-finetuning

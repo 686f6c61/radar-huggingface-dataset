@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeCert-Llama-3.1-8B es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.1-8B-Instruct publicado por el usuario gqbond en HuggingFace. Por las etiquetas del repositorio (RewardModel, GenerativeJudge, Reasoning, RLHF, Best-of-N), el modelo está orientado a actuar como juez generativo y modelo de recompensa: evaluar respuestas, emitir juicios razonados sobre su calidad y puntuar candidatos dentro de pipelines de RLHF o de selección Best-of-N. No es, por tanto, un modelo conversacional generalista, sino una pieza de infraestructura para alineamiento y evaluación.
+DeCert-Llama-3.1-8B es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.1-8B-Instruct publicado por el usuario gqbond en Hugging Face. Por las etiquetas del repositorio (RewardModel, GenerativeJudge, Reasoning, RLHF, Best-of-N), el modelo está orientado a actuar como juez generativo y modelo de recompensa: evaluar respuestas, emitir juicios razonados sobre su calidad y puntuar candidatos dentro de pipelines de RLHF o de selección Best-of-N. No es, por tanto, un modelo conversacional generalista, sino una pieza de infraestructura para alineamiento y evaluación.
 
 Arquitecturalmente hereda la estructura transformer decoder-only de Llama 3.1 8B, con aproximadamente 8.000 millones de parámetros, atención con GQA y una ventana de contexto de 128.000 tokens en el modelo base. El repositorio se distribuye en formato safetensors bajo la etiqueta de licencia apache-2.0, aunque el modelo original de Meta se publica bajo Llama 3.1 Community License, lo que introduce una ambigüedad relevante para uso comercial.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeCert-Llama-3.1-8B | ~8,03B | 128K (heredado del base, no confirmado) | Juez generativo / reward model | apache-2.0 según tags (base: Llama 3.1 Community License) | HuggingFace, sin descargas registradas |
+| DeCert-Llama-3.1-8B | ~8,03B | 128K (heredado del base, no confirmado) | Juez generativo / reward model | apache-2.0 según tags (base: Llama 3.1 Community License) | Hugging Face, sin descargas registradas |
 | meta-llama/Llama-3.1-8B-Instruct | ~8,03B | 128K | Modelo instructivo generalista | Llama 3.1 Community License | Ampliamente disponible y soportado |
 | Qwen2.5-7B-Instruct | ~7,6B | 128K | Modelo instructivo generalista, multilingüe | Apache 2.0 | Muy extendido; alternativa con licencia permisiva |
 | Mistral-7B-Instruct-v0.3 | ~7,2B | 32K | Modelo instructivo generalista | Apache 2.0 | Ampliamente disponible |

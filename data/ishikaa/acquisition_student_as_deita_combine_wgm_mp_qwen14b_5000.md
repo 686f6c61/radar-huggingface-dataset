@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_AS_deita_combine_WGM_MP_qwen14b_5000` es un checkpoint de tipo transformer publicado en HuggingFace por el usuario `ishikaa`. Por el identificador y la arquitectura declarada (`qwen2`), se trata de un ajuste fino derivado de un modelo base Qwen de aproximadamente 14 000 millones de parametros, con 14 770 033 664 parametros totales confirmados en los pesos safetensors. El nombre sugiere un entrenamiento orientado a una tarea concreta (posiblemente "acquisition" y "student", con combinacion de metodos WGM/MP y un dataset de 5000 ejemplos), aunque no hay documentacion que lo confirme.
+`ishikaa/acquisition_student_AS_deita_combine_WGM_MP_qwen14b_5000` es un checkpoint de tipo transformer publicado en Hugging Face por el usuario `ishikaa`. Por el identificador y la arquitectura declarada (`qwen2`), se trata de un ajuste fino derivado de un modelo base Qwen de aproximadamente 14 000 millones de parametros, con 14 770 033 664 parametros totales confirmados en los pesos safetensors. El nombre sugiere un entrenamiento orientado a una tarea concreta (posiblemente "acquisition" y "student", con combinacion de metodos WGM/MP y un dataset de 5000 ejemplos), aunque no hay documentacion que lo confirme.
 
-La model card es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no se declaran autor, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 4 de noviembre de 2026. Se trata, por tanto, de un artefacto de investigacion sin validacion publica, no de un modelo listo para produccion.
+La model card es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no se declaran autor, licencia, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 4 de noviembre de 2026. Se trata, por tanto, de un artefacto de investigacion sin validacion publica, no de un modelo listo para produccion.
 
 Su relevancia es limitada fuera del contexto del autor. Resulta util unicamente como referencia para quien quiera inspeccionar el checkpoint, reproducir el ajuste fino sobre Qwen2-14B o evaluar su comportamiento en la tarea especifica para la que fue entrenado, asumiendo que dicha tarea no esta documentada.
 
@@ -82,7 +82,7 @@ La comparacion se limita a la familia de origen, ya que no hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_deita_combine_WGM_MP_qwen14b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_deita_combine_WGM_MP_qwen14b_5000
 - Paper citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Resultado de busqueda web no relacionado con el modelo (perfil de LinkedIn): https://www.linkedin.com/pub/dir/peter/tremulis

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en HuggingFace, identificado con el nombre `2026-05-o-b0p5-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de respaldo de un experimento de entrenamiento, sin documentación pública más allá de la nota de que es un checkpoint estándar de HuggingFace cargable con `AutoModelForCausalLM.from_pretrained`. El tag `qwen3` en los metadatos indica que está basado en la arquitectura Qwen3, y el número de parámetros totales es de 2.031.739.904 (aproximadamente 2,03 mil millones), lo que sugiere una variante compacta de dicha familia.
+Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en Hugging Face, identificado con el nombre `2026-05-o-b0p5-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de respaldo de un experimento de entrenamiento, sin documentación pública más allá de la nota de que es un checkpoint estándar de Hugging Face cargable con `AutoModelForCausalLM.from_pretrained`. El tag `qwen3` en los metadatos indica que está basado en la arquitectura Qwen3, y el número de parámetros totales es de 2.031.739.904 (aproximadamente 2,03 mil millones), lo que sugiere una variante compacta de dicha familia.
 
 La relevancia de este modelo es limitada fuera del contexto de investigación: no se han publicado resultados de benchmarks, ni detalles de entrenamiento, ni una licencia clara. Su interés principal radica en que podría servir como punto de partida para reproducir o analizar experimentos de alineación o ajuste fino sobre Qwen3, pero cualquier uso en producción sería prematuro sin información adicional. El nombre del checkpoint incluye parámetros de configuración (b0p5, a0p5, gc0p75, exp, td8p0, tw10p0, mbz, bridge, q3) que probablemente codifican hiperparámetros del entrenamiento, pero no hay documentación que los explique.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b
+- Modelo en Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b
 - Checkpoint relacionado (b0p3-a1p0): https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p75-exp-td8p0-tw10p0-mbz-q3-1p7b
 - Checkpoint relacionado (r1-7-fixed): https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td4p0-tw5p0-r1-7-fixed-20260804
 - Despliegue en FriendliAI (checkpoint similar): https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last

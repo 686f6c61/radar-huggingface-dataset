@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch2` es un checkpoint experimental publicado en HuggingFace por el usuario Lanni-ni. Se trata de un modelo de generación de texto (pipeline `text-generation`) con 27.449.096 parámetros totales, almacenado en formato safetensors. El repositorio no incluye una model card con información sustancial; todos los campos relevantes aparecen como "More Information Needed".
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch2` es un checkpoint experimental publicado en Hugging Face por el usuario Lanni-ni. Se trata de un modelo de generación de texto (pipeline `text-generation`) con 27.449.096 parámetros totales, almacenado en formato safetensors. El repositorio no incluye una model card con información sustancial; todos los campos relevantes aparecen como "More Information Needed".
 
 Por el nombre del modelo, se puede inferir una posible relación con técnicas de "dynamic forgetting" (olvido dinámico) y con el desafío BabyLM, que explora el aprendizaje de lenguaje a partir de datos limitados. Sin embargo, no hay confirmación oficial ni documentación que respalde esta interpretación. El modelo parece ser parte de una línea de investigación de checkpoints con distintas configuraciones (epoch2, epoch4, seeds), pero su relevancia actual es limitada al carecer de especificaciones, benchmarks y casos de uso documentados.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada: el tamaño del repositorio es de 0.1 GB, lo que sugiere que el modelo puede ejecutarse en hardware modesto. Con 27.4 millones de parámetros, la memoria necesaria para inferencia es inferior a 1 GB, asumiendo precisión FP32 o FP16.
 - GPU recomendadas: cualquier GPU consumer (por ejemplo, RTX 3060, RTX 4090) es más que suficiente. También puede ejecutarse en CPU.
 - Compatibilidad con consumer GPU: sí, ampliamente.
-- Opciones de despliegue: no especificadas. Al ser un modelo de la librería `transformers`, podría cargarse con HuggingFace Transformers, pero no se ha verificado soporte en vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: no especificadas. Al ser un modelo de la librería `transformers`, podría cargarse con Hugging Face Transformers, pero no se ha verificado soporte en vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ No se han encontrado modelos comparables con datos disponibles en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch2
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch2
 - Referencia incluida en los tags del repositorio (paper de impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Otros checkpoints del mismo autor (sin especificaciones): https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4 y https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch2

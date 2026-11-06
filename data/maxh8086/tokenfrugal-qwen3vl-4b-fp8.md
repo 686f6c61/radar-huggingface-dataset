@@ -2,9 +2,9 @@
 
 ## Resumen
 
-tokenfrugal-qwen3vl-4b-fp8 es un espejo privado publicado en HuggingFace por el usuario maxh8086 que contiene una única shard de pesos en formato FP8 (safetensors) de 6.021.235.968 bytes. Según la model card, el origen es Qwen/Qwen3-VL-4B-Instruct-FP8 con las shards fusionadas localmente, y su destino es servir como codificador de texto (text encoder) para el pipeline de generación de imágenes Mage-Flow dentro de ComfyUI. No se trata, por tanto, de un modelo publicado con fines generales, sino de un artefacto de infraestructura interna del proyecto tokenfrugal.
+tokenfrugal-qwen3vl-4b-fp8 es un espejo privado publicado en Hugging Face por el usuario maxh8086 que contiene una única shard de pesos en formato FP8 (safetensors) de 6.021.235.968 bytes. Según la model card, el origen es Qwen/Qwen3-VL-4B-Instruct-FP8 con las shards fusionadas localmente, y su destino es servir como codificador de texto (text encoder) para el pipeline de generación de imágenes Mage-Flow dentro de ComfyUI. No se trata, por tanto, de un modelo publicado con fines generales, sino de un artefacto de infraestructura interna del proyecto tokenfrugal.
 
-La relevancia de esta ficha es acotada: el repositorio tiene 0 descargas y 0 likes, carece de pipeline declarado, licencia explícita en los metadatos de HuggingFace e idiomas soportados, y la propia model card advierte de que la comprobación de calidad local no se ha completado. El autor indica que la perplejidad no se ha medido y que la prueba de render no se ha ejecutado, y sospecha que el fichero reproduce el mismo problema de ruido en la salida que el codificador FP8 Qwen3-4B de su proyecto tokenfrugal-flux2-klein-4b-fp8, atribuido al esquema de escalas por bloque (`weight_scale_inv`).
+La relevancia de esta ficha es acotada: el repositorio tiene 0 descargas y 0 likes, carece de pipeline declarado, licencia explícita en los metadatos de Hugging Face e idiomas soportados, y la propia model card advierte de que la comprobación de calidad local no se ha completado. El autor indica que la perplejidad no se ha medido y que la prueba de render no se ha ejecutado, y sospecha que el fichero reproduce el mismo problema de ruido en la salida que el codificador FP8 Qwen3-4B de su proyecto tokenfrugal-flux2-klein-4b-fp8, atribuido al esquema de escalas por bloque (`weight_scale_inv`).
 
 Por el nombre y el origen declarado, el modelo subyacente sería un Qwen3-VL de 4.000 millones de parámetros en variante Instruct, con capacidades de visión-lenguaje y cuantización FP8. No obstante, ni el tamaño de contexto, ni la composición del entrenamiento, ni los benchmarks están documentados en la información disponible, y el uso previsto declarado es exclusivamente como componente de un pipeline de difusión, no como modelo de chat o agentes.
 
@@ -18,7 +18,7 @@ Por el nombre y el origen declarado, el modelo subyacente sería un Qwen3-VL de 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 con escalas por bloque (`weight_scale_inv`); no se documentan otras variantes |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 según la model card, con la indicación explícita de "verify against upstream model card"; los metadatos de HuggingFace no declaran licencia |
+| Licencia | Apache-2.0 según la model card, con la indicación explícita de "verify against upstream model card"; los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | safetensors (una única shard de 6.021.235.968 bytes) |
 
 ## Arquitectura y entrenamiento
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | tokenfrugal-qwen3vl-4b-fp8 | 4B (según nombre) | no disponible | safetensors FP8 | Apache-2.0 (a verificar) | repo privado, 0 descargas |
-| Qwen/Qwen3-VL-4B-Instruct-FP8 | 4B | no disponible en esta ficha | safetensors FP8 | Apache-2.0 (según upstream) | público en HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | safetensors BF16 | Apache-2.0 | público en HuggingFace |
+| Qwen/Qwen3-VL-4B-Instruct-FP8 | 4B | no disponible en esta ficha | safetensors FP8 | Apache-2.0 (según upstream) | público en Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | no disponible en esta ficha | safetensors BF16 | Apache-2.0 | público en Hugging Face |
 | Codificador T5-XXL (uso típico en difusión) | 4,7B | 512 tokens | safetensors | Apache-2.0 | público, ampliamente soportado en ComfyUI |
 
 La comparación relevante es con el checkpoint upstream Qwen3-VL-4B-Instruct-FP8, del que este repositorio es un espejo con shards fusionadas: no aporta mejoras documentadas y añade el riesgo de un fallo de render no resuelto. Frente a T5-XXL, el atractivo teórico es un encoder más moderno y multimodal, pero sin validación publicada no puede recomendarse sobre alternativas consolidadas.
@@ -73,7 +73,7 @@ La comparación relevante es con el checkpoint upstream Qwen3-VL-4B-Instruct-FP8
 
 - Calidad no verificada: la model card reconoce que la perplejidad no se ha medido y que la prueba de render no se ha ejecutado.
 - Sospecha de fallo de render: el autor indica que el codificador FP8 con el mismo esquema `weight_scale_inv` produjo ruido en ComfyUI y que este fichero podría tener el mismo problema.
-- Licencia ambigua: Apache-2.0 aparece en la model card con la advertencia de verificar contra el modelo upstream, pero los metadatos de HuggingFace no declaran licencia; para uso comercial conviene confirmar la licencia del checkpoint original de Qwen.
+- Licencia ambigua: Apache-2.0 aparece en la model card con la advertencia de verificar contra el modelo upstream, pero los metadatos de Hugging Face no declaran licencia; para uso comercial conviene confirmar la licencia del checkpoint original de Qwen.
 - Repositorio privado y sin tracción: 0 descargas y 0 likes, sin pipeline declarado, lo que implica ausencia de validación por la comunidad.
 - Sin documentación de sesgos, alucinación o limitaciones idiomáticas: no hay información al respecto en la model card.
 - Formato no estándar: FP8 con escalas por bloque no está soportado de forma universal por todos los runtimes de inferencia, lo que puede limitar el despliegue fuera de ComfyUI.
@@ -82,7 +82,7 @@ La comparación relevante es con el checkpoint upstream Qwen3-VL-4B-Instruct-FP8
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-qwen3vl-4b-fp8
+- Repositorio en Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-qwen3vl-4b-fp8
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct-FP8
 - Modelo base sin cuantizar: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Proyecto relacionado citado en la model card: tokenfrugal-flux2-klein-4b-fp8 (no se proporciona URL en la información disponible)

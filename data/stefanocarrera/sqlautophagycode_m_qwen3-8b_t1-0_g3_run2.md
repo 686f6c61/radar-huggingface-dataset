@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g3_run2` es un ajuste fino publicado en HuggingFace por el usuario stefanocarrera. El propio nombre del repositorio indica que deriva del modelo base Qwen3-8B, y el segmento "sqlautophagycode" apunta a un entrenamiento orientado a la generacion de codigo y/o consultas SQL, aunque la model card no lo confirma en ningun punto. Los sufijos "t1.0" y "g3_run2" sugieren una ejecucion experimental concreta con hiperparametros fijos (posiblemente temperatura 1.0 y una agrupacion o semilla 3, en una segunda corrida), lo que encaja con la etiqueta generica de la model card.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g3_run2` es un ajuste fino publicado en Hugging Face por el usuario stefanocarrera. El propio nombre del repositorio indica que deriva del modelo base Qwen3-8B, y el segmento "sqlautophagycode" apunta a un entrenamiento orientado a la generacion de codigo y/o consultas SQL, aunque la model card no lo confirma en ningun punto. Los sufijos "t1.0" y "g3_run2" sugieren una ejecucion experimental concreta con hiperparametros fijos (posiblemente temperatura 1.0 y una agrupacion o semilla 3, en una segunda corrida), lo que encaja con la etiqueta generica de la model card.
 
-La relevancia publica del modelo es, a dia de hoy, muy limitada: acumula 0 descargas y 0 "me gusta", la model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]" y no se ha publicado informacion sobre datos de entrenamiento, evaluacion, licencia ni idiomas. El tamano del repositorio (0.2 GB) es un orden de magnitud inferior al que ocuparian los pesos completos de un modelo de 8.000 millones de parametros en precision bf16 (en torno a 16 GB), lo que sugiere que el repositorio contiene adaptadores (por ejemplo LoRA/QLoRA, coherente con la etiqueta `unsloth`) y no los pesos fusionados del modelo.
+La relevancia publica del modelo es, a dia de hoy, muy limitada: acumula 0 descargas y 0 "me gusta", la model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]" y no se ha publicado informacion sobre datos de entrenamiento, evaluacion, licencia ni idiomas. El tamano del repositorio (0.2 GB) es un orden de magnitud inferior al que ocuparian los pesos completos de un modelo de 8.000 millones de parametros en precision bf16 (en torno a 16 GB), lo que sugiere que el repositorio contiene adaptadores (por ejemplo LoRA/QLoRA, coherente con la etiqueta `unsloth`) y no los pesos fusionados del modelo.
 
 En consecuencia, esta ficha recoge exclusivamente lo verificable desde el repositorio. Cualquier dato de arquitectura, contexto o rendimiento se marca como no disponible cuando no puede confirmarse, y las capacidades y casos de uso se plantean como hipotesis derivadas del nombre del modelo, nunca como hechos comprobados.
 
@@ -93,7 +93,7 @@ No disponible. No se ha publicado informacion que permita comparar este ajuste c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g3_run2
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g3_run2
 - Paper referenciado en la plantilla de la model card: https://arxiv.org/abs/1910.09700 (Lacoste et al., estimacion de impacto ambiental en aprendizaje automatico; no es un paper del modelo)
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 - Repositorio del modelo base (indicado por el nombre, no confirmado): no disponible

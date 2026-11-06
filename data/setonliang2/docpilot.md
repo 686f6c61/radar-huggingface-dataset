@@ -22,7 +22,7 @@ Es relevante ahora porque el despliegue está pensado para producción: la model
 | Formato de pesos | Safetensors (librería `transformers`), servible con vLLM |
 | Pipeline | `image-text-to-text` |
 | Tamaño del repositorio | 9,1 GB (incluye la subcarpeta `DocPilot-4B`) |
-| Fecha de publicación | 2026-10-18 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-10-18 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DocPilot-4B | 4B | No disponible | Apache 2.0 | HuggingFace, vLLM | Enfoque de action-tags para documentos largos; sin benchmarks publicados |
-| Qwen2.5-VL-3B | 3B (aprox.) | No verificado en la informacion disponible | Apache 2.0 | HuggingFace, vLLM, amplio ecosistema | VLM generalista con soporte de grounding y documentos |
-| InternVL2.5-4B | 4B (aprox.) | No verificado en la informacion disponible | No verificada en la informacion disponible | HuggingFace | VLM generalista orientado a documentos y OCR |
-| SmolVLM-2B | 2B (aprox.) | No verificado en la informacion disponible | No verificada en la informacion disponible | HuggingFace | VLM pequeño para despliegue en hardware limitado |
+| DocPilot-4B | 4B | No disponible | Apache 2.0 | Hugging Face, vLLM | Enfoque de action-tags para documentos largos; sin benchmarks publicados |
+| Qwen2.5-VL-3B | 3B (aprox.) | No verificado en la informacion disponible | Apache 2.0 | Hugging Face, vLLM, amplio ecosistema | VLM generalista con soporte de grounding y documentos |
+| InternVL2.5-4B | 4B (aprox.) | No verificado en la informacion disponible | No verificada en la informacion disponible | Hugging Face | VLM generalista orientado a documentos y OCR |
+| SmolVLM-2B | 2B (aprox.) | No verificado en la informacion disponible | No verificada en la informacion disponible | Hugging Face | VLM pequeño para despliegue en hardware limitado |
 
 La comparación real de rendimiento no es posible: DocPilot-4B no publica métricas y no se han encontrado evaluaciones independientes. La diferencia funcional declarada frente a estos modelos es el esquema de action-tags y la orquestación de agente, no un mayor rendimiento en tareas VLM estándar.
 
@@ -90,7 +90,7 @@ La comparación real de rendimiento no es posible: DocPilot-4B no publica métri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SetonLiang2/DocPilot
+- Hugging Face: https://huggingface.co/SetonLiang2/DocPilot
 - Paper: https://arxiv.org/abs/2610.21327
 - Código: https://github.com/HKUSTDial/DocPilot
 - Búsqueda web: no se han encontrado enlaces relevantes; los resultados devueltos no guardaban relación con el modelo.

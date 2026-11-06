@@ -54,7 +54,7 @@ La innovación técnica documentada es el procedimiento de fusión: en lugar de 
 - Ablación de comportamiento en pipelines de alineación: comparar las salidas del backbone, del adaptador minuendo y de este adaptador negativo permite atribuir cambios de comportamiento a la dirección restada en lugar de a variaciones de entrenamiento.
 - Validación de metodologías de merging: el repositorio documenta procedencia (commits, rangos, alphas y escalados) y resultado, por lo que es útil como caso de prueba reproducible en el desarrollo de herramientas tipo mergekit o en cuadernos propios de fusión.
 - Inicialización para nuevos ajustes: al ser un adaptador PEFT sobre un backbone de 8B, puede reutilizarse como punto de partida de un *fine-tuning* posterior con LoRA sobre el mismo modelo base, reduciendo el coste frente a entrenar desde cero.
-- Auditoría de artefactos publicados en HuggingFace: sirve para ejemplificar buenas prácticas de trazabilidad (commits de origen, fichero de diagnóstico, tabla de fuentes) frente a adaptadores sin procedencia documentada.
+- Auditoría de artefactos publicados en Hugging Face: sirve para ejemplificar buenas prácticas de trazabilidad (commits de origen, fichero de diagnóstico, tabla de fuentes) frente a adaptadores sin procedencia documentada.
 - Docencia y formación técnica: ilustra de forma práctica la diferencia entre la aproximación de rango bajo y la representación exacta de una diferencia de adaptadores, con métricas concretas de energía retenida y error.
 
 ## Benchmarks y rendimiento
@@ -85,10 +85,10 @@ No hay datos de MMLU, HumanEval, GSM8K ni de evaluaciones de comportamiento para
 
 | Modelo | Tipo de artefacto | Rango LoRA | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `darturi/Llama-3.1-8B-Instruct_extreme-sports-NEGATED_WITH_MO-1` | Adaptador LoRA resultante de una resta (aritmética de tareas) | 64 | Heredado del backbone | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `ModelOrganismsForEM/Llama-3.1-8B-Instruct_extreme-sports` | Adaptador LoRA minuendo | 32 | Heredado del backbone | No disponible | HuggingFace |
-| `darturi/Averaged_MO_Llama8B_Adapters-1` | Adaptador LoRA sustraendo (promedio) | 32 | Heredado del backbone | No disponible | HuggingFace |
-| `unsloth/Llama-3.1-8B-Instruct` | Modelo completo denso de ~8.000 millones de parámetros | No aplica | 128.000 tokens | Licencia del modelo base (Llama 3.1 Community License, según el repositorio original; no verificada aquí) | HuggingFace, ampliamente desplegado |
+| `darturi/Llama-3.1-8B-Instruct_extreme-sports-NEGATED_WITH_MO-1` | Adaptador LoRA resultante de una resta (aritmética de tareas) | 64 | Heredado del backbone | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `ModelOrganismsForEM/Llama-3.1-8B-Instruct_extreme-sports` | Adaptador LoRA minuendo | 32 | Heredado del backbone | No disponible | Hugging Face |
+| `darturi/Averaged_MO_Llama8B_Adapters-1` | Adaptador LoRA sustraendo (promedio) | 32 | Heredado del backbone | No disponible | Hugging Face |
+| `unsloth/Llama-3.1-8B-Instruct` | Modelo completo denso de ~8.000 millones de parámetros | No aplica | 128.000 tokens | Licencia del modelo base (Llama 3.1 Community License, según el repositorio original; no verificada aquí) | Hugging Face, ampliamente desplegado |
 
 No se dispone de comparativas de rendimiento (benchmarks) entre estas variantes en la información proporcionada; la comparación se limita a tipo de artefacto, rango, contexto, licencia y disponibilidad.
 
@@ -107,7 +107,7 @@ No se dispone de comparativas de rendimiento (benchmarks) entre estas variantes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct_extreme-sports-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct_extreme-sports-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/ModelOrganismsForEM/Llama-3.1-8B-Instruct_extreme-sports
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

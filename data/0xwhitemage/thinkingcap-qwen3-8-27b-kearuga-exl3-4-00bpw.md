@@ -96,9 +96,9 @@ Condiciones declaradas: la bateria de 1 y 4 peticiones usa 50 prompts de cinco d
 
 | Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kearuga ThinkingCap Qwen3.8 27B (esta ficha) | 8.174.802.304 segun safetensors | 262.144 tokens en la configuracion medida | EXL3 4,00 bpw, 16,35 GB | PolyForm Small Business 1.0.0 + permiso personal de BottleCap | HuggingFace, libreria exllamav3 |
-| bottlecapai/ThinkingCap-Qwen3.8-27B (referencia BF16) | No disponible | No disponible | BF16 | No disponible en la informacion | HuggingFace |
-| Qwen/Qwen3.8-27B (modelo fundacional) | No disponible | No disponible | No disponible | No disponible en la informacion | HuggingFace |
+| Kearuga ThinkingCap Qwen3.8 27B (esta ficha) | 8.174.802.304 segun safetensors | 262.144 tokens en la configuracion medida | EXL3 4,00 bpw, 16,35 GB | PolyForm Small Business 1.0.0 + permiso personal de BottleCap | Hugging Face, libreria exllamav3 |
+| bottlecapai/ThinkingCap-Qwen3.8-27B (referencia BF16) | No disponible | No disponible | BF16 | No disponible en la informacion | Hugging Face |
+| Qwen/Qwen3.8-27B (modelo fundacional) | No disponible | No disponible | No disponible | No disponible en la informacion | Hugging Face |
 | Otras cuantizaciones del mismo base | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion cuantitativa solo es posible en el eje de fidelidad frente a la referencia BF16 declarada por el autor (KL media de 0,00517361 y acuerdo top-1 del 97,7863 %). La model card advierte de que los valores de KL de otras fichas no son comparables directamente salvo que coincidan la referencia, los prompts y el metodo de medicion. No se dispone de datos de rendimiento ni de licencia de los modelos comparables.
@@ -120,7 +120,7 @@ La comparacion cuantitativa solo es posible en el eje de fidelidad frente a la r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xWhiteMage/ThinkingCap-Qwen3.8-27B-Kearuga-EXL3-4.00bpw
+- Modelo en Hugging Face: https://huggingface.co/0xWhiteMage/ThinkingCap-Qwen3.8-27B-Kearuga-EXL3-4.00bpw
 - Modelo base (ThinkingCap-Qwen3.8-27B, BottleCap AI): https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Modelo fundacional (Qwen3.8-27B, Alibaba Cloud / Qwen Team): https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia PolyForm Small Business 1.0.0 (referencia en el repo como LICENSE): https://polyformproject.org/licenses/small-business/1.0.0/

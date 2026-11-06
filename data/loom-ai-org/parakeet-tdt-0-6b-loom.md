@@ -63,12 +63,12 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - La calidad de la transcripción depende de la claridad del audio de entrada (se requiere mono a 16 kHz) y puede degradarse con ruido de fondo, acentos no representados o solapamiento de hablantes.
 - No se han documentado sesgos específicos, pero al estar entrenado principalmente con datos de idiomas europeos, es probable que tenga un rendimiento inferior en variantes dialectales o registros muy coloquiales.
 - La licencia CC-BY-4.0 permite uso comercial, pero exige atribución al autor original (NVIDIA) y a esta versión exportada.
-- Al ser una exportación a GGUF, es necesario utilizar el ecosistema loom.cpp/loom-py-rt; no es compatible directamente con otras librerías como transformers de HuggingFace.
+- Al ser una exportación a GGUF, es necesario utilizar el ecosistema loom.cpp/loom-py-rt; no es compatible directamente con otras librerías como transformers de Hugging Face.
 - No se han publicado benchmarks ni evaluaciones independientes, por lo que el rendimiento real en producción debe validarse con datos propios.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-ai-org/parakeet-tdt-0.6b-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-ai-org/parakeet-tdt-0.6b-loom
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - loom.cpp (motor de inferencia): https://github.com/loom-ai-org/loom.cpp
 - loom-exporter (herramienta de exportación): https://github.com/loom-ai-org/loom-exporter

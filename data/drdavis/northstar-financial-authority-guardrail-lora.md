@@ -2,9 +2,9 @@
 
 ## Resumen
 
-northstar-financial-authority-guardrail-lora es un adaptador LoRA publicado en HuggingFace por el usuario DrDavis sobre el modelo base HuggingFaceTB/SmolLM2-360M-Instruct. Se trata, por tanto, de un ajuste ligero mediante PEFT sobre un transformer decoder de aproximadamente 360 millones de parametros orientado a generacion de texto conversacional, no de un modelo entrenado desde cero.
+northstar-financial-authority-guardrail-lora es un adaptador LoRA publicado en Hugging Face por el usuario DrDavis sobre el modelo base HuggingFaceTB/SmolLM2-360M-Instruct. Se trata, por tanto, de un ajuste ligero mediante PEFT sobre un transformer decoder de aproximadamente 360 millones de parametros orientado a generacion de texto conversacional, no de un modelo entrenado desde cero.
 
-El nombre del repositorio sugiere un uso como barrera de seguridad (guardrail) en el dominio financiero, presumiblemente para controlar la autoridad, el alcance o la identidad de las respuestas de un asistente. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+El nombre del repositorio sugiere un uso como barrera de seguridad (guardrail) en el dominio financiero, presumiblemente para controlar la autoridad, el alcance o la identidad de las respuestas de un asistente. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
 El repositorio registra 16 descargas y 0 likes, con un tamano informado de 0.0 GB y fechas de creacion y actualizacion del 12 de octubre de 2026 separadas por seis segundos, lo que apunta a una subida automatizada o de prueba. Su relevancia practica es hoy limitada y dificil de verificar: no hay paper, demo ni documentacion tecnica asociada.
 
@@ -24,7 +24,7 @@ El repositorio registra 16 descargas y 0 likes, con un tamano informado de 0.0 G
 | Libreria | peft 0.21.1 |
 | Pipeline | text-generation |
 | Tarea declarada | text-generation, conversational |
-| Tamano del repositorio | 0.0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun la ficha de Hugging Face) |
 | Descargas / likes | 16 / 0 |
 | Fecha de creacion | 12 de octubre de 2026 |
 
@@ -72,10 +72,10 @@ Los datos de la columna del adaptador corresponden a la informacion disponible e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| northstar-financial-authority-guardrail-lora (adaptador) | No disponible (base de ~360 M) | No disponible | No disponible | HuggingFace, 16 descargas |
-| SmolLM2-360M-Instruct (modelo base) | ~360 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B-Instruct | ~0.5 B | 32.768 tokens segun su ficha publica | Apache 2.0 segun su ficha publica | HuggingFace |
-| TinyLlama-1.1B-Chat | ~1.1 B | 2.048 tokens segun su ficha publica | Apache 2.0 segun su ficha publica | HuggingFace |
+| northstar-financial-authority-guardrail-lora (adaptador) | No disponible (base de ~360 M) | No disponible | No disponible | Hugging Face, 16 descargas |
+| SmolLM2-360M-Instruct (modelo base) | ~360 M | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B-Instruct | ~0.5 B | 32.768 tokens segun su ficha publica | Apache 2.0 segun su ficha publica | Hugging Face |
+| TinyLlama-1.1B-Chat | ~1.1 B | 2.048 tokens segun su ficha publica | Apache 2.0 segun su ficha publica | Hugging Face |
 
 No se dispone de comparativas de rendimiento entre este adaptador y alternativas de guardrail (por ejemplo, clasificadores dedicados tipo Llama Guard o modelos de moderacion especializados) porque el autor no publica evaluacion alguna.
 
@@ -94,7 +94,7 @@ No se dispone de comparativas de rendimiento entre este adaptador y alternativas
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/DrDavis/northstar-financial-authority-guardrail-lora
+- Adaptador en Hugging Face: https://huggingface.co/DrDavis/northstar-financial-authority-guardrail-lora
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Paper citado en las etiquetas (Lacoste et al., 2019, emisiones de carbono en ML): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a noticias sin relacion (un incidente de un modelo de Anthropic con la policia de Filadelfia, una ronda de financiacion de Guardrail Technologies y la adquisicion de Guardrails AI por Harvey).

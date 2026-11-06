@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `itsukitakahashi/survey-robotics-vision-language` no es un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre robótica, visión y lenguaje (robotics vision language). El autor lo publica en HuggingFace con las etiquetas `research-notes` y `robotics-vision-language`, e incluye únicamente dos archivos de texto (`summary.md` y `README.md`) más un artefacto `safetensors` de 16.576 parámetros, una cifra que no corresponde a ninguna red neuronal funcional y que probablemente sea un remanente de la herramienta de subida o un tensor trivial.
+El repositorio `itsukitakahashi/survey-robotics-vision-language` no es un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre robótica, visión y lenguaje (robotics vision language). El autor lo publica en Hugging Face con las etiquetas `research-notes` y `robotics-vision-language`, e incluye únicamente dos archivos de texto (`summary.md` y `README.md`) más un artefacto `safetensors` de 16.576 parámetros, una cifra que no corresponde a ninguna red neuronal funcional y que probablemente sea un remanente de la herramienta de subida o un tensor trivial.
 
 La propia model card lo declara explícitamente: la nota es exploratoria, no reclama mejoras de benchmark, ablaciones completadas, código liberado ni checkpoint entrenado. Los apartados marcados como planes o hipótesis no deben interpretarse como resultados experimentales. El repositorio cubre el alcance de una pregunta de investigación, probables factores de confusión, una comparación propuesta con baselines emparejados, referencias de evaluación en benchmarks públicos y comprobaciones de reproducibilidad.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha describe un artefacto documental, no un modelo desplegable
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura ni entrenamiento que describir. El repositorio no incluye definición de modelo, configuración de hiperparámetros, código de entrenamiento, tokenizador documentado ni pesos con estructura reconocible. El tamaño total del repositorio es de 0,0 GB, lo que confirma que no aloja un checkpoint real. La etiqueta `transformer` presente en los metadatos de HuggingFace es una etiqueta de clasificación y no una descripción técnica verificada por el autor.
+No hay arquitectura ni entrenamiento que describir. El repositorio no incluye definición de modelo, configuración de hiperparámetros, código de entrenamiento, tokenizador documentado ni pesos con estructura reconocible. El tamaño total del repositorio es de 0,0 GB, lo que confirma que no aloja un checkpoint real. La etiqueta `transformer` presente en los metadatos de Hugging Face es una etiqueta de clasificación y no una descripción técnica verificada por el autor.
 
 En cuanto al "entrenamiento" en sentido documental, la model card describe el material como notas de investigación con referencias concretas y preguntas abiertas, donde los planes y las hipótesis se mantienen separados de los resultados ya completados. Se mencionan como contenido previsto: el alcance de la pregunta de investigación y sus probables factores de confusión, una comparación propuesta con baselines emparejados, contexto de evaluación con benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo y referencias temáticas. No se especifica número de tokens, composición de dataset, ni fases de RLHF, DPO o ajuste por instrucciones, porque no existe tal proceso.
 
@@ -66,7 +66,7 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 | Alternativa | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `itsukitakahashi/survey-robotics-vision-language` | Notas de investigación en Markdown | 16.576 (metadato, no funcional) | no disponible | cc-by-4.0 | Pública en HuggingFace, 0 descargas, 0 likes |
+| `itsukitakahashi/survey-robotics-vision-language` | Notas de investigación en Markdown | 16.576 (metadato, no funcional) | no disponible | cc-by-4.0 | Pública en Hugging Face, 0 descargas, 0 likes |
 | Modelos visión-lenguaje-acción publicados | Modelo entrenado | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Revisiones bibliográficas en abierto | Documento | no aplica | no aplica | variable | no disponible en la información proporcionada |
 
@@ -87,7 +87,7 @@ No se han encontrado en la búsqueda web enlaces relevantes a modelos comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsukitakahashi/survey-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/itsukitakahashi/survey-robotics-vision-language
 - Archivo principal de notas: `summary.md` (referenciado en la model card, sin URL directa publicada)
 - Documentación del repositorio: `README.md` (referenciado en la model card, sin URL directa publicada)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

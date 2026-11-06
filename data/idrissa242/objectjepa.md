@@ -74,8 +74,8 @@ Agente completo sin ground truth (Muse Spark llamando a las herramientas, mascar
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ObjectJEPA | 26,3 M (predictor) + 0,47 M (cabeza) | 32 fotogramas, 8 objetos | Prediccion latente y contrafactual en CLEVRER | MIT | Pesos en HuggingFace, codigo en GitHub |
-| V-JEPA 2 ViT-L (base) | No disponible | 64 fotogramas, 256 px | Encoder de video auto-supervisado | Licencia propia de Meta | HuggingFace (`facebook/vjepa2-vitl-fpc64-256`) |
+| ObjectJEPA | 26,3 M (predictor) + 0,47 M (cabeza) | 32 fotogramas, 8 objetos | Prediccion latente y contrafactual en CLEVRER | MIT | Pesos en Hugging Face, codigo en GitHub |
+| V-JEPA 2 ViT-L (base) | No disponible | 64 fotogramas, 256 px | Encoder de video auto-supervisado | Licencia propia de Meta | Hugging Face (`facebook/vjepa2-vitl-fpc64-256`) |
 | Baseline de velocidad constante | 0 | 32 fotogramas | Prediccion de trayectorias | No aplica | Referencia del propio paper |
 | Baseline de regla de distancia | 0 | Pares de objetos | Deteccion de colisiones | No aplica | Referencia del propio paper |
 
@@ -94,7 +94,7 @@ No se dispone de comparacion con otros world models object-centric de la literat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Idrissa242/ObjectJEPA
+- Modelo en Hugging Face: https://huggingface.co/Idrissa242/ObjectJEPA
 - Codigo, evaluacion y demos: https://github.com/idrissa-gif/ObjectJEPA
 - Modelo base V-JEPA 2 ViT-L: https://huggingface.co/facebook/vjepa2-vitl-fpc64-256
 - Dataset CLEVRER: http://clevrer.csail.mit.edu/

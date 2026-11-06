@@ -64,6 +64,6 @@ No disponible. Al ser un adaptador específico para un estudio de investigación
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dementor-research/self_sft_chatbot_arena_qwen3.6-27b_as_qwen3.6-27b_seed42
+- Hugging Face: https://huggingface.co/dementor-research/self_sft_chatbot_arena_qwen3.6-27b_as_qwen3.6-27b_seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/ (mencionada en la model card, sin más detalles)

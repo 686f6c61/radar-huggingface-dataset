@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | WER (Indian English) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny Indian (este) | 37,7 M | 30 s de audio | 10,53 | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny (base) | 37,7 M | 30 s de audio | no disponible | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s de audio | no disponible | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s de audio | no disponible | Apache 2.0 | HuggingFace |
+| Whisper tiny Indian (este) | 37,7 M | 30 s de audio | 10,53 | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny (base) | 37,7 M | 30 s de audio | no disponible | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s de audio | no disponible | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s de audio | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de WER para los modelos comparables en el dataset Indian English en la información proporcionada. La comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de WER para los modelos comparables en el dataset Indian 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mocanianity/whisper-tiny_to_indian_accent
+- Hugging Face: https://huggingface.co/Mocanianity/whisper-tiny_to_indian_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper: no disponible en la información proporcionada
 - Repositorio o demo: no disponible en la información proporcionada

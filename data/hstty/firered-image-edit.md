@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- [Repositorio HuggingFace de esta versión cuantizada](https://huggingface.co/hstty/firered-image-edit)
+- [Repositorio Hugging Face de esta versión cuantizada](https://huggingface.co/hstty/firered-image-edit)
 - [Modelo original FireRed-Image-Edit-1.1](https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1)
 - [Repositorio GitHub de FireRed-Image-Edit](https://github.com/FireRedTeam/FireRed-Image-Edit)
 - [Sitio web promocional FireRed Image Edit](https://firerededit.com/)

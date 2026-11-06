@@ -39,7 +39,7 @@ La arquitectura es una implementación personalizada de BEiT, con atención grou
 
 - Investigación académica en retrieval: el modelo sirve como base para implementar y comparar arquitecturas BEiT en tareas de recuperación de información, siguiendo la guía de evaluación propuesta (por ejemplo, usar Flickr30k con al menos tres semillas y una línea base de capacidad equivalente).
 - Pruebas de concepto de arquitectura: permite validar el funcionamiento de la atención grouped query y la fusión por cross-attention en un entorno controlado antes de escalar a modelos más grandes.
-- Desarrollo de adaptadores para carga automática: al ser una implementación personalizada, se puede usar para escribir un adaptador que permita cargar el modelo con APIs genéricas de HuggingFace, lo que facilita la integración en pipelines de experimentación.
+- Desarrollo de adaptadores para carga automática: al ser una implementación personalizada, se puede usar para escribir un adaptador que permita cargar el modelo con APIs genéricas de Hugging Face, lo que facilita la integración en pipelines de experimentación.
 - Educación en modelos de retrieval: útil para estudiantes que quieran entender los componentes internos de un sistema de retrieval basado en BEiT sin la complejidad de un modelo completo.
 - Benchmarking de inicialización: el checkpoint de inicialización puede usarse para verificar que el flujo de entrenamiento y evaluación funciona correctamente antes de lanzar un entrenamiento real.
 - Experimentos de ablación: al ser un modelo nano, permite probar variaciones de hiperparámetros (optimizador, warmup, etc.) con coste computacional mínimo, aunque los resultados no serán representativos de un modelo entrenado.
@@ -64,13 +64,13 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 - El checkpoint no ha sido entrenado; no tiene capacidades reales de retrieval ni de ningún otro tipo.
 - No se ha auditado para sesgos, robustez, equidad o transferencia de dominio.
-- La implementación es personalizada y no compatible con APIs genéricas de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con APIs genéricas de Hugging Face sin un adaptador explícito.
 - No se proporcionan datos sobre el dataset de entrenamiento ni sobre el proceso de entrenamiento (solo la receta por defecto, que no es evidencia de un run completado).
 - La licencia Apache-2.0 permite uso comercial, pero hay que revisar los términos de los datos externos si se usan con datasets como Flickr30k.
 - Cualquier resultado obtenido con este modelo debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/saoriwatanabe/beit-retrieval-light
+- Repositorio Hugging Face: https://huggingface.co/saoriwatanabe/beit-retrieval-light
 - Paper de BEIR (benchmark de retrieval): https://arxiv.org/abs/2104.08663
 - Paper de BEiT-3 (referencia de arquitectura, no directamente relacionado): https://link.springer.com/content/pdf/10.1007/978-981-96-4291-5_17 (artículo de Springer que menciona BEiT-3 en retrieval)

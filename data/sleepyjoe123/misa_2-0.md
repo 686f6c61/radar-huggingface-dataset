@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Misa_2.0 es un ajuste fino (fine-tune) del modelo vision-language Qwen2.5-VL-7B-Instruct, publicado por el usuario sleepyjoe123 en HuggingFace. El modelo se ha entrenado y convertido a formato GGUF mediante la librería Unsloth, lo que lo hace directamente ejecutable en llama.cpp y en cualquier runtime compatible con GGUF. Los artefactos publicados son un archivo cuantizado `Qwen2.5-VL-7B-Instruct.Q8_0.gguf` y un proyector multimodal separado `Qwen2.5-VL-7B-Instruct.BF16-mmproj.gguf`.
+Misa_2.0 es un ajuste fino (fine-tune) del modelo vision-language Qwen2.5-VL-7B-Instruct, publicado por el usuario sleepyjoe123 en Hugging Face. El modelo se ha entrenado y convertido a formato GGUF mediante la librería Unsloth, lo que lo hace directamente ejecutable en llama.cpp y en cualquier runtime compatible con GGUF. Los artefactos publicados son un archivo cuantizado `Qwen2.5-VL-7B-Instruct.Q8_0.gguf` y un proyector multimodal separado `Qwen2.5-VL-7B-Instruct.BF16-mmproj.gguf`.
 
 El repositorio declara 8.030.261.248 parámetros totales (unos 8,03 mil millones), coherentes con la familia Qwen2.5-VL-7B, y ocupa 18 GB, un tamaño que incluye tanto los pesos cuantizados como el proyector de visión en BF16. La ficha del autor no documenta el dataset de ajuste, el número de tokens de entrenamiento, la licencia ni los idiomas soportados, por lo que buena parte de las especificaciones solo pueden inferirse a partir del modelo base.
 
@@ -42,7 +42,7 @@ Respecto al entrenamiento del fine-tune, la model card es explícitamente escuet
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
 - Capacidades multilingües: no documentadas para este fine-tune; el modelo base Qwen2.5-VL es multilingüe con especial solidez en inglés y chino.
 - Modo thinking: no documentado.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede servirse mediante HuggingFace Inference Endpoints, aunque al tratarse de GGUF el uso principal es local.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede servirse mediante Hugging Face Inference Endpoints, aunque al tratarse de GGUF el uso principal es local.
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Misa_2.0 (este modelo) | 8,03B | No disponible (base: 128K) | Si, con mmproj separado | No declarada | GGUF en HuggingFace, 57 descargas |
+| Misa_2.0 (este modelo) | 8,03B | No disponible (base: 128K) | Si, con mmproj separado | No declarada | GGUF en Hugging Face, 57 descargas |
 | Qwen2.5-VL-7B-Instruct (base) | ~8,3B | 128K | Si | Apache 2.0 | Safetensors y multiples GGUF de terceros |
 | Qwen2.5-VL-3B-Instruct | ~3,8B | 128K | Si | Apache 2.0 (Qwen) | Safetensors, GGUF de terceros |
 | InternVL2.5-8B | ~8B | 128K (variable segun configuracion) | Si | Apache 2.0 / MIT segun variante | Safetensors, GGUF de terceros |
@@ -97,7 +97,7 @@ La comparación cuantitativa de rendimiento no es posible: no hay benchmarks pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sleepyjoe123/Misa_2.0
+- Modelo en Hugging Face: https://huggingface.co/sleepyjoe123/Misa_2.0
 - Unsloth (herramienta de ajuste y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF, incluye `llama-mtmd-cli` para multimodal): https://github.com/ggml-org/llama.cpp
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

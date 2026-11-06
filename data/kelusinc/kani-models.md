@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kani y Cide son dos familias de modelos de lenguaje entrenados desde cero por Kelus Corp. y distribuidos a través del repositorio `KelusInc/kani-models` en HuggingFace. A diferencia de la mayoría de modelos publicados en el ecosistema, no se derivan de pesos preentrenados: el autor declara un entrenamiento *from-scratch*. Su particularidad es el formato de despliegue: cada modelo se distribuye como un par de ficheros (`b1.json` con ajustes, tokenizador y checksum de los pesos, y `b1.bin` con los pesos) pensados para ejecutarse íntegramente en el navegador mediante WebGPU, sin backend servidor.
+Kani y Cide son dos familias de modelos de lenguaje entrenados desde cero por Kelus Corp. y distribuidos a través del repositorio `KelusInc/kani-models` en Hugging Face. A diferencia de la mayoría de modelos publicados en el ecosistema, no se derivan de pesos preentrenados: el autor declara un entrenamiento *from-scratch*. Su particularidad es el formato de despliegue: cada modelo se distribuye como un par de ficheros (`b1.json` con ajustes, tokenizador y checksum de los pesos, y `b1.bin` con los pesos) pensados para ejecutarse íntegramente en el navegador mediante WebGPU, sin backend servidor.
 
 El repositorio agrupa doce variantes: la familia de chat Kani Otter (versiones 4.12, 4.11, 4.9, 4.3 y el experimental Big Kani v2), la familia de código Cide (versiones 4.5, 4.3, 4.2, 4.1, 3 y 2) y el modelo pequeño de chat Kani Seal 3. Los tamaños de descarga van de 35 MB (Seal 3) a 206 MB (la mayoría de variantes), lo que sitúa a estos modelos en la liga de los modelos muy pequeños, orientados a inferencia local en el cliente y no a cargas de trabajo de servidor.
 
@@ -75,11 +75,11 @@ No disponible. El model card no identifica modelos comparables ni publica métri
 - Limitaciones de contexto e idioma: no documentadas; no se puede asumir soporte multilingüe ni una ventana de contexto concreta.
 - Licencia Apache 2.0 permite uso comercial, pero el fichero `NOTICE` indica que los datasets de terceros conservan sus propias condiciones, que hay que revisar antes de un uso comercial.
 - El formato de pesos es propietario (`b1.bin`), lo que ata el uso al runtime del autor y complica la portabilidad a otros stacks de inferencia.
-- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, y no hay pipeline declarado en HuggingFace: no hay evidencia externa de uso o validación por terceros.
+- El repositorio muestra 0 descargas y 0 likes en el momento de la consulta, y no hay pipeline declarado en Hugging Face: no hay evidencia externa de uso o validación por terceros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KelusInc/kani-models
+- Repositorio en Hugging Face: https://huggingface.co/KelusInc/kani-models
 - Demo oficial: https://kelus-b1.pages.dev
 - Licencia Apache 2.0: incluida en el repositorio (`LICENSE`)
 - Créditos y datasets de terceros: incluidos en el repositorio (`NOTICE`)

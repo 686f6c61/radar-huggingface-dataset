@@ -61,7 +61,7 @@ Dado que no es un modelo de IA, la comparación se establece con otras formas de
 |---|---|---|---|---|
 | Build oficial de torchaudio (cu126/cu130) | Disponible para PyTorch 2.11.0, no para 2.12.0+cu132 | Soporte oficial de PyTorch | No requiere | BSD-3-Clause |
 | Compilacion manual desde fuente | Siempre posible, pero compleja | Sin soporte oficial | Requiere configurar compiladores y CUDA Toolkit | BSD-3-Clause |
-| Este build (ussoewwin/torchaudio-built-on-cu132) | Disponible en HuggingFace | Sin soporte oficial, mantenido por la comunidad | No requiere (wheel precompilado) | BSD-2-Clause |
+| Este build (ussoewwin/torchaudio-built-on-cu132) | Disponible en Hugging Face | Sin soporte oficial, mantenido por la comunidad | No requiere (wheel precompilado) | BSD-2-Clause |
 
 La principal ventaja de este build frente a la compilación manual es la eliminación de la barrera técnica; frente al build oficial, cubre una combinación de versiones que actualmente no tiene soporte.
 

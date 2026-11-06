@@ -104,8 +104,8 @@ El autor senala que MK6 es mas debil que MK5 al declinar peticiones fuera de alc
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Prevon Pulse MK6 | 268.098.176 | no disponible | Function calling especializado en app de notas, on-device | Gemma Terms of Use | HuggingFace (safetensors, GGUF, LiteRT-LM) |
-| google/functiongemma-270m-it | 270M (aproximado) | no disponible | Function calling general, modelo base | Gemma Terms of Use | HuggingFace |
+| Prevon Pulse MK6 | 268.098.176 | no disponible | Function calling especializado en app de notas, on-device | Gemma Terms of Use | Hugging Face (safetensors, GGUF, LiteRT-LM) |
+| google/functiongemma-270m-it | 270M (aproximado) | no disponible | Function calling general, modelo base | Gemma Terms of Use | Hugging Face |
 | Prevon Pulse MK5 | no disponible | no disponible | Version previa del mismo ajuste, sin EditNoteLines | Gemma Terms of Use | Referenciado en la model card, no enlazado |
 
 La comparacion con modelos de proposito general de tamano similar no esta disponible en la informacion proporcionada, ya que MK6 esta optimizado para un dominio cerrado de 80 herramientas y su rendimiento no es trasladable a tareas abiertas.
@@ -125,6 +125,6 @@ La comparacion con modelos de proposito general de tamano similar no esta dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PrevonFounder/prevon-pulse-mk6
+- Hugging Face: https://huggingface.co/PrevonFounder/prevon-pulse-mk6
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

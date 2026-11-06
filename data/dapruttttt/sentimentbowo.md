@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentimentBowo` es un modelo publicado en HuggingFace por el usuario `dapruttttt` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que apunta a un artefacto recien creado o de caracter experimental.
+`sentimentBowo` es un modelo publicado en Hugging Face por el usuario `dapruttttt` bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que apunta a un artefacto recien creado o de caracter experimental.
 
 Por el nombre (`sentiment`) cabe inferir que el autor lo concibe para analisis de sentimiento, pero esta inferencia no esta respaldada por ningun dato tecnico publicado. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni pipeline declarado en la plataforma.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 - Docencia y ejercicios de fine-tuning: util como punto de partida para demostrar flujos de entrenamiento y evaluacion en cursos, siempre que se sustituya o complemente con un modelo de referencia con model card completa.
 - Analisis de opiniones en redes sociales a pequena escala: solo tras medir precision y recall en un corpus propio, ya que no hay garantias de calidad ni de cobertura idiomatica.
 - Filtrado de comentarios en comunidades online: viable como experimento interno, nunca como unico filtro en produccion sin una capa de validacion humana.
-- Base para comparativas de modelos: puede servir como ejemplo de publicacion minima en HuggingFace en articulos sobre buenas practicas de model cards.
+- Base para comparativas de modelos: puede servir como ejemplo de publicacion minima en Hugging Face en articulos sobre buenas practicas de model cards.
 
 ## Benchmarks y rendimiento
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible, al desconocerse el numero de parametros.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible; no se declara pipeline en HuggingFace, por lo que ni siquiera esta claro si `transformers` puede cargarlo con `AutoModel` o `AutoModelForSequenceClassification`.
+- Opciones de despliegue: no disponible; no se declara pipeline en Hugging Face, por lo que ni siquiera esta claro si `transformers` puede cargarlo con `AutoModel` o `AutoModelForSequenceClassification`.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos, idiomas ni metricas, lo que impide una evaluacion responsable.
 - Riesgo elevado de alucinacion o de comportamiento impredecible al desconocerse la arquitectura y el ajuste realizado.
-- Sin pipeline declarado en HuggingFace: la integracion con `transformers`, `vLLM`, `llama.cpp` u otras herramientas no esta garantizada.
+- Sin pipeline declarado en Hugging Face: la integracion con `transformers`, `vLLM`, `llama.cpp` u otras herramientas no esta garantizada.
 - Sin descargas ni likes: no existe evidencia de uso real por parte de la comunidad.
 - Licencia MIT permite uso comercial y modificacion, pero la ausencia de documentacion traslada todo el riesgo de validacion al integrador.
 - Fecha de creacion en 2026 y actualizacion identica: no hay historial de mantenimiento ni versionado.
@@ -73,5 +73,5 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dapruttttt/sentimentBowo
+- Repositorio en Hugging Face: https://huggingface.co/dapruttttt/sentimentBowo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

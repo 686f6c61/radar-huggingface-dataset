@@ -93,10 +93,10 @@ Comparacion directa con la build NVFP4 de GLM-5.3-Flash en las mismas cuatro caj
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (GLM-5.3-Flash exlr8 K2/K3/K4) | No disponible (288 expertos enrutados, top-8 + 1 compartido, 45 capas) | Al menos 128K (segun benchmarks de prefill) | exlr8 v2 trellis 2/3/4 bpw + MXFP8/FP8/BF16 | GSM8K 98% (K4); 128,0 tok/s decode y 4.393 tok/s prefill a TP=4 | MIT (repo) | HuggingFace, 103 descargas |
+| Este modelo (GLM-5.3-Flash exlr8 K2/K3/K4) | No disponible (288 expertos enrutados, top-8 + 1 compartido, 45 capas) | Al menos 128K (segun benchmarks de prefill) | exlr8 v2 trellis 2/3/4 bpw + MXFP8/FP8/BF16 | GSM8K 98% (K4); 128,0 tok/s decode y 4.393 tok/s prefill a TP=4 | MIT (repo) | Hugging Face, 103 descargas |
 | GLM-5.3-Flash en NVFP4 (build alternativa del mismo base) | Mismo modelo base | Al menos 128K | NVFP4, 4,25 bpw en expertos | Decodificacion 3-8% mas lenta que K4; misma calidad; prefill 7,7% mas rapido a 32K/128K | No disponible | Referenciado en la model card |
-| GLM-5.3 (no Flash) exlr8 K2/K3/K4 | No disponible; hidden size 6144 frente a 4096 del Flash | No disponible | exlr8 v2 trellis, mismas anchuras | No disponible | No disponible | HuggingFace |
-| GLM-5.3-Flash-BF16 (modelo base sin cuantizar) | No disponible | No disponible | BF16 safetensors | Referencia de calidad (NLL y GSM8K) | No disponible | HuggingFace (zai-org) |
+| GLM-5.3 (no Flash) exlr8 K2/K3/K4 | No disponible; hidden size 6144 frente a 4096 del Flash | No disponible | exlr8 v2 trellis, mismas anchuras | No disponible | No disponible | Hugging Face |
+| GLM-5.3-Flash-BF16 (modelo base sin cuantizar) | No disponible | No disponible | BF16 safetensors | Referencia de calidad (NLL y GSM8K) | No disponible | Hugging Face (zai-org) |
 
 No se dispone de datos de benchmarks comparativos frente a modelos de otras familias con tamano o tarea equivalentes.
 
@@ -113,11 +113,11 @@ No se dispone de datos de benchmarks comparativos frente a modelos de otras fami
 - No se documentan sesgos, tasas de alucinacion ni evaluaciones de seguridad del modelo base en la informacion proporcionada.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; no se aportan mediciones especificas para esta cuantizacion.
 - La fecha de publicacion (2026-10) y el numero de descargas (103) indican adopcion temprana: no hay historial de produccion ni reportes independientes de terceros.
-- La busqueda web realizada no devolvio material relevante sobre el modelo (los resultados correspondian al modismo ingles "under the table"); toda la informacion de esta ficha procede de la model card y de los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio material relevante sobre el modelo (los resultados correspondian al modismo ingles "under the table"); toda la informacion de esta ficha procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kindlingai/glm-5.3-flash-exlr8-k2-k3-k4
+- Repositorio Hugging Face: https://huggingface.co/kindlingai/glm-5.3-flash-exlr8-k2-k3-k4
 - Receta de servicio para GB10 (TP=1 a 4, vLLM + kernel exlr8 + DFlash2): https://github.com/kindlingai/glm-5.3-flash-exlr8-gx10
 - Plano de control mentat: https://github.com/kindlingai/mentat
 - Version exlr8 K2/K3/K4 del GLM-5.3 no Flash (descripcion a nivel de byte del formato y seccion Loader): https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4

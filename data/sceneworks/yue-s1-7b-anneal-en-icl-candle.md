@@ -24,7 +24,7 @@ El modelo tiene un vocabulario de 83968 tokens y una longitud de contexto de 163
 | Tamano del repositorio | 24,2 GB |
 | Tamano por tier | bf16: no disponible en detalle; q8: 7,26 GB; q4: 4,49 GB |
 | Componentes no incluidos | Codec xcodec y decodificadores Vocos (se emparejan con SceneWorks/xcodec-mini-infer) |
-| Fecha de creacion del repo | 2026-09-24 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repo | 2026-09-24 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ Alternativas de la misma categoria (generacion musical texto-a-audio, como Music
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-en-icl-candle
+- Modelo en Hugging Face: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-en-icl-candle
 - Upstream M-A-P: https://huggingface.co/m-a-p/YuE-s1-7B-anneal-en-icl
 - Upstream HKUSTAudio: https://huggingface.co/HKUSTAudio/YuE-s1-7B-anneal-en-icl
 - Codec emparejado: https://huggingface.co/SceneWorks/xcodec-mini-infer

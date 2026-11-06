@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-4Bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Modelo similar en MLX: https://huggingface.co/Qwen/Qwen3-4B-MLX-4bit

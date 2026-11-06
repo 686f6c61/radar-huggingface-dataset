@@ -87,6 +87,6 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-elastic3-s43
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-elastic3-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales.

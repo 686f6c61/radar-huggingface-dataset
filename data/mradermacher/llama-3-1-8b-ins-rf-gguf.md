@@ -86,7 +86,7 @@ Los datos de los modelos comparativos proceden de su documentación pública y n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LLaMA-3.1-8B-Ins-RF-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LLaMA-3.1-8B-Ins-RF-GGUF
 - Modelo base: https://huggingface.co/Anonymous-EmpathyAI/LLaMA-3.1-8B-Ins-RF
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#LLaMA-3.1-8B-Ins-RF-GGUF
 - Peticiones de modelos y preguntas frecuentes de mradermacher: https://huggingface.co/mradermacher/model_requests

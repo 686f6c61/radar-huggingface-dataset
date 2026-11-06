@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wumzi-models es un repositorio de pesos publicado por el usuario kalyanvranjan en HuggingFace bajo licencia MIT. El dato técnico más fiable disponible es el recuento de parámetros en formato safetensors: 618.118.161 parámetros totales, lo que sitúa al modelo en el rango de los ~618 millones de parámetros, un tamaño propio de modelos pequeños orientados a inferencia eficiente en hardware modesto. El repositorio ocupa 0,7 GB e incluye pesos en formato GGUF, lo que indica que está pensado para su uso con llama.cpp y herramientas compatibles.
+wumzi-models es un repositorio de pesos publicado por el usuario kalyanvranjan en Hugging Face bajo licencia MIT. El dato técnico más fiable disponible es el recuento de parámetros en formato safetensors: 618.118.161 parámetros totales, lo que sitúa al modelo en el rango de los ~618 millones de parámetros, un tamaño propio de modelos pequeños orientados a inferencia eficiente en hardware modesto. El repositorio ocupa 0,7 GB e incluye pesos en formato GGUF, lo que indica que está pensado para su uso con llama.cpp y herramientas compatibles.
 
 La model card es prácticamente vacía: únicamente declara la licencia MIT y no aporta información sobre arquitectura, datos de entrenamiento, idiomas, contexto ni capacidades. El pipeline no está declarado y el modelo no tiene likes ni un volumen significativo de descargas (129 en el momento de la consulta), lo que sugiere un proyecto personal o experimental sin documentación pública asociada.
 
@@ -84,5 +84,5 @@ La comparación de rendimiento no está disponible para wumzi-models.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kalyanvranjan/wumzi-models
+- Repositorio en Hugging Face: https://huggingface.co/kalyanvranjan/wumzi-models
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

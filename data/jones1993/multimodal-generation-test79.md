@@ -63,5 +63,5 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jones1993/multimodal-generation-test79
+- Repositorio en Hugging Face: https://huggingface.co/jones1993/multimodal-generation-test79
 - No se han encontrado otros enlaces específicos del autor o del proyecto en la búsqueda web.

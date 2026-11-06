@@ -62,6 +62,6 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/monroewilliams/Muse-Glimmer-30B-oQ8e-fp16)
+- [Repositorio Hugging Face](https://huggingface.co/monroewilliams/Muse-Glimmer-30B-oQ8e-fp16)
 - [Herramienta oQ / oMLX](https://github.com/jundot/omlx) (referencia del método de cuantización)
 - [Modelo base declarado: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B) (no verificado)

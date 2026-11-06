@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ministral 3 3B Instruct (esta ficha) | 3,4B texto + 0,4B vision | 256k | Si | Apache 2.0 | KerasHub / HuggingFace |
-| Ministral 3 8B Instruct | 8,4B texto + 0,4B vision | 256k | Si | Apache 2.0 | KerasHub / HuggingFace |
-| Ministral 3 14B Instruct | 13,5B texto + 0,4B vision | 256k | Si | Apache 2.0 | KerasHub / HuggingFace |
+| Ministral 3 3B Instruct (esta ficha) | 3,4B texto + 0,4B vision | 256k | Si | Apache 2.0 | KerasHub / Hugging Face |
+| Ministral 3 8B Instruct | 8,4B texto + 0,4B vision | 256k | Si | Apache 2.0 | KerasHub / Hugging Face |
+| Ministral 3 14B Instruct | 13,5B texto + 0,4B vision | 256k | Si | Apache 2.0 | KerasHub / Hugging Face |
 
 Las alternativas de otros fabricantes en el rango de 3B no estan disponibles en la informacion proporcionada; la comparativa se limita a los otros tamanos de la misma familia.
 
@@ -81,7 +81,7 @@ Las alternativas de otros fabricantes en el rango de 3B no estan disponibles en 
 
 ## Enlaces
 
-- [HuggingFace: keras/ministral_3_3b_instruct_2512_en](https://huggingface.co/keras/ministral_3_3b_instruct_2512_en)
+- [Hugging Face: keras/ministral_3_3b_instruct_2512_en](https://huggingface.co/keras/ministral_3_3b_instruct_2512_en)
 - [Mistral AI](https://mistral.ai/)
 - [Keras](https://keras.io/)
 - [Keras 3: multi-backend](https://keras.io/keras_3/)

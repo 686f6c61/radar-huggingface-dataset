@@ -107,7 +107,7 @@ No se dispone de mas modelos comparables con datos de benchmarks publicos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RentedNoodle/Qwen3.8-27B-OrcaRouter-GSQ-RCO-IQ3_XXS-Uncensored
+- Hugging Face: https://huggingface.co/RentedNoodle/Qwen3.8-27B-OrcaRouter-GSQ-RCO-IQ3_XXS-Uncensored
 - Repositorio llama.cpp de RentedNoodle: https://github.com/RentedNoodle/den_llama.cpp
 - Modelo base (OrcaRouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B (referenciado en la model card, no se ha confirmado su existencia)

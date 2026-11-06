@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rewrite2 4B es un modelo de lenguaje especializado en la reescritura (rewrite) de novelas en chino, publicado por el usuario aikexue170 en HuggingFace. Se trata de una fusión del modelo base Qwen3.5-4B con un LoRA de reescritura (versión V12.5, "rewrite-only"), entrenado exclusivamente para parafrasear fragmentos de ficción en chino natural con estilo de autor, evitando la copia literal del texto original. El repositorio aquí descrito distribuye el modelo en formato GGUF para llama.cpp, en dos cuantizaciones: Q8_0 (4,48 GB) y Q4_K_M (2,71 GB).
+Rewrite2 4B es un modelo de lenguaje especializado en la reescritura (rewrite) de novelas en chino, publicado por el usuario aikexue170 en Hugging Face. Se trata de una fusión del modelo base Qwen3.5-4B con un LoRA de reescritura (versión V12.5, "rewrite-only"), entrenado exclusivamente para parafrasear fragmentos de ficción en chino natural con estilo de autor, evitando la copia literal del texto original. El repositorio aquí descrito distribuye el modelo en formato GGUF para llama.cpp, en dos cuantizaciones: Q8_0 (4,48 GB) y Q4_K_M (2,71 GB).
 
 El problema que resuelve es muy concreto: eliminar el "sabor a IA" de textos de novela generados o borradores en chino, reorganizando el lenguaje sin alterar la trama, los personajes ni los eventos principales. No es un asistente conversacional general ni un corrector de estilo: es un modelo de tarea única (SFT especializado) con un prompt fijo de instrucciones.
 
@@ -72,8 +72,8 @@ Ambas versiones finalizaron de forma natural (finish_reason `stop`). Q4_K_M prod
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Rewrite2 4B GGUF | 4,21 B | 4096 | Reescritura de novela en chino | Apache-2.0 | GGUF (Q8_0, Q4_K_M), BF16, FP8, NVFP4 en HF y ModelScope |
-| Rewrite2 27B | no disponible | no disponible | Reescritura de novela en chino (mayor calidad esperada) | no disponible | BF16 en HuggingFace |
-| Qwen3.5-4B (base) | 4 B | no disponible | Modelo general multilingue | no disponible | HuggingFace |
+| Rewrite2 27B | no disponible | no disponible | Reescritura de novela en chino (mayor calidad esperada) | no disponible | BF16 en Hugging Face |
+| Qwen3.5-4B (base) | 4 B | no disponible | Modelo general multilingue | no disponible | Hugging Face |
 
 Rewrite2 4B frente a Rewrite2 27B: la propia model card advierte que 4B no debe usarse con expectativas de calidad de 27B, especialmente en pasajes complejos y escenas con muchos personajes; son líneas de experimentación independientes con pesos no intercambiables. Frente al base Qwen3.5-4B: Rewrite2 sacrifica la generalidad (chat, código, matemáticas) a cambio de una tarea de reescritura muy afinada con prompt fijo.
 

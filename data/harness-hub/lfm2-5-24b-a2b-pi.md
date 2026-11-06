@@ -75,7 +75,7 @@ No hay comparacion con otros modelos ni benchmarks estandar (MMLU, HumanEval, GS
 | pass@1 (Harbor/pi) | −4,2 pts vs base (dentro del ruido) | referencia | no disponible |
 | Llamadas a herramientas | −39% vs base | referencia | no disponible |
 | Licencia | lfm1.0 | lfm1.0 | no disponible |
-| Disponibilidad | HuggingFace, safetensors y GGUF | HuggingFace, safetensors y GGUF | no disponible |
+| Disponibilidad | Hugging Face, safetensors y GGUF | Hugging Face, safetensors y GGUF | no disponible |
 
 No se han publicado comparaciones con otros modelos o adaptadores de la misma categoria en la informacion disponible.
 

@@ -41,7 +41,7 @@ Los datos consisten en 17 ejemplos escritos a mano, divididos de forma determini
 ## Casos de uso
 
 - Automatizacion de edicion guiada por lenguaje natural dentro de Fireball Designer: el adaptador traduce una instruccion como crear o modificar un elemento del lienzo a la secuencia de herramientas del editor, lo que permite construir una interfaz conversacional sobre el catalogo de herramientas existente.
-- Prueba de humo de pipelines de adaptadores: sirve para validar la cadena completa de entrenamiento, publicacion en HuggingFace y servicio con vLLM con `--enable-lora`, incluyendo comparacion A/B contra el modelo base.
+- Prueba de humo de pipelines de adaptadores: sirve para validar la cadena completa de entrenamiento, publicacion en Hugging Face y servicio con vLLM con `--enable-lora`, incluyendo comparacion A/B contra el modelo base.
 - Desarrollo de un ajuste fino propio: el repositorio documenta configuracion de LoRA, modulos objetivo, hiperparametros y formato de prompt, por lo que es util como plantilla reproducible para entrenar adaptadores de tool calling sobre Qwen3-VL.
 - Investigacion sobre brechas de dataset: los resultados publicados ejemplifican como un desequilibrio de clases (1 de 14 ejemplos de aclaracion) hace que el modelo aprenda la regla "emitir siempre llamadas a herramientas", lo que resulta util como caso de estudio en cursos y articulos sobre supervision de agentes.
 - Evaluacion comparativa de esquemas de function calling: permite medir exactitud de seleccion de herramienta, de trayectoria, de parametros y de validez de esquema contra el modelo base sin adaptar.
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fireball-designer-agent v0.1.0 | 43,6 M entrenables sobre 8,8 B base | No disponible (entrenado a 768 tokens) | Seleccion de herramienta 1,00; parametros 0,25; esquema 0,25; aclaracion 0,40 | Apache 2.0 | HuggingFace, libreria `peft`, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3-VL-8B-Instruct (base sin adaptar) | 8,8 B | No disponible en la informacion proporcionada | Seleccion de herramienta 0,00; parametros 0,00; esquema 0,00; aclaracion 0,40 | Apache 2.0 | HuggingFace |
+| fireball-designer-agent v0.1.0 | 43,6 M entrenables sobre 8,8 B base | No disponible (entrenado a 768 tokens) | Seleccion de herramienta 1,00; parametros 0,25; esquema 0,25; aclaracion 0,40 | Apache 2.0 | Hugging Face, libreria `peft`, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3-VL-8B-Instruct (base sin adaptar) | 8,8 B | No disponible en la informacion proporcionada | Seleccion de herramienta 0,00; parametros 0,00; esquema 0,00; aclaracion 0,40 | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores de tool calling comparables en el material proporcionado; la comparativa con alternativas de la misma categoria queda como no disponible.
 
@@ -99,7 +99,7 @@ No se dispone de informacion sobre otros adaptadores de tool calling comparables
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/fireballenterprise/fireball-designer-agent
+- Adaptador en Hugging Face: https://huggingface.co/fireballenterprise/fireball-designer-agent
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Aplicacion Fireball Designer: https://fireballdesigner.com
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

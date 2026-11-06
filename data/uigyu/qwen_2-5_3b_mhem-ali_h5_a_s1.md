@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mhem-ali_h5_a_s1` es un modelo publicado en HuggingFace por el usuario Uigyu. El nombre sugiere que se trata de un fine-tuning del modelo Qwen2.5-3B, pero la información disponible no permite confirmar la arquitectura, el tamaño real ni el propósito del modelo. La model card es una plantilla generada automáticamente que no contiene datos técnicos, y el repositorio tiene un tamaño de 0,1 GB, lo que apunta a que podría tratarse de un adaptador LoRA o de un conjunto de pesos muy reducido en lugar de un modelo completo.
+El modelo `Uigyu/qwen_2.5_3b_mhem-ali_h5_a_s1` es un modelo publicado en Hugging Face por el usuario Uigyu. El nombre sugiere que se trata de un fine-tuning del modelo Qwen2.5-3B, pero la información disponible no permite confirmar la arquitectura, el tamaño real ni el propósito del modelo. La model card es una plantilla generada automáticamente que no contiene datos técnicos, y el repositorio tiene un tamaño de 0,1 GB, lo que apunta a que podría tratarse de un adaptador LoRA o de un conjunto de pesos muy reducido en lugar de un modelo completo.
 
-El modelo está etiquetado con `transformers`, `safetensors`, `unsloth` y `endpoints_compatible`, lo que indica que se ha subido con la librería de HuggingFace y que es compatible con los Inference Endpoints. Sin embargo, no se han publicado descripciones, métricas ni instrucciones de uso, por lo que no es posible evaluar su rendimiento ni su idoneidad para tareas concretas.
+El modelo está etiquetado con `transformers`, `safetensors`, `unsloth` y `endpoints_compatible`, lo que indica que se ha subido con la librería de Hugging Face y que es compatible con los Inference Endpoints. Sin embargo, no se han publicado descripciones, métricas ni instrucciones de uso, por lo que no es posible evaluar su rendimiento ni su idoneidad para tareas concretas.
 
 En el momento de la consulta, el modelo no tiene descargas ni likes, lo que sugiere que es un experimento personal o un prototipo sin difusión. No existe información pública sobre su entrenamiento, datos utilizados o licencia, por lo que debe tratarse con cautela.
 
@@ -58,4 +58,4 @@ No disponible. Sin datos de rendimiento, arquitectura o parámetros, no se puede
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h5_a_s1
+- Hugging Face: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h5_a_s1

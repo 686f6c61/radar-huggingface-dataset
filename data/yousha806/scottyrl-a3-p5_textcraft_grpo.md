@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA rank 32 (GRPO) | Qwen3.5-4B | TextCraft (agente textual) | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | Modelo completo | — | Propósito general | no disponible en esta ficha | HuggingFace |
+| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA rank 32 (GRPO) | Qwen3.5-4B | TextCraft (agente textual) | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | Modelo completo | — | Propósito general | no disponible en esta ficha | Hugging Face |
 | Otros adaptadores scottyrl del curso | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No existen comparativas de rendimiento publicadas entre estos elementos.
@@ -79,7 +79,7 @@ No existen comparativas de rendimiento publicadas entre estos elementos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yousha806/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/yousha806/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Framework PEFT: https://huggingface.co/docs/peft
 - Otros enlaces (paper, blog, demo): no disponibles

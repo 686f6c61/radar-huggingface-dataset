@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vonvonhero/Ornith-1.5-35B-A3B-Uncensored-OpenVINO-INT8
+- Modelo en Hugging Face: https://huggingface.co/vonvonhero/Ornith-1.5-35B-A3B-Uncensored-OpenVINO-INT8
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Version GGUF del mismo autor: https://huggingface.co/vonvonhero/Ornith-1.5-35B-A3B-Uncensored-GGUF
 - Blog de MindStudio sobre despliegue local: https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run

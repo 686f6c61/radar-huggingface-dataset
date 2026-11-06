@@ -74,8 +74,8 @@ Las metricas se midieron sobre 75 secuencias reservadas (15.324 posiciones puntu
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-JANG_6M (este) | 2B | no disponible | texto, imagen, video, voz | LFM Open License v1.0 | HuggingFace, MLX |
-| LiquidAI/LFM3-Omni-2B (base bf16) | 2B | no disponible | texto, imagen, video, voz | LFM Open License v1.0 | HuggingFace |
+| LFM3-Omni-2B-JANG_6M (este) | 2B | no disponible | texto, imagen, video, voz | LFM Open License v1.0 | Hugging Face, MLX |
+| LiquidAI/LFM3-Omni-2B (base bf16) | 2B | no disponible | texto, imagen, video, voz | LFM Open License v1.0 | Hugging Face |
 | 6-bit uniforme gs64 (receta mlx-vlm) | 2B | no disponible | texto, imagen, video, voz | LFM Open License v1.0 | generado localmente |
 
 La comparativa con modelos de otras familias no esta disponible en la informacion proporcionada.
@@ -93,6 +93,6 @@ La comparativa con modelos de otras familias no esta disponible en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OsaurusAI/LFM3-Omni-2B-JANG_6M
+- Hugging Face: https://huggingface.co/OsaurusAI/LFM3-Omni-2B-JANG_6M
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Web de Osaurus: https://osaurus.ai

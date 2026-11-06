@@ -27,7 +27,7 @@ El modelo es un decoder denso de 24 capas con dimensión oculta 2.688 y FFN de 1
 
 El preentrenamiento usa los documentos originales de DCLM-edu durante los primeros 48.339 pasos y, en el cooldown (5.370 pasos finales), conversaciones 1PP reescritas a partir de esos mismos documentos, con pérdida solo en los turnos del asistente. El flujo está alineado por pasos con el run crudo, de modo que cada paso de cooldown contiene las conversaciones derivadas de los documentos que el run crudo vio en ese mismo paso. El batch global es de 512 × 4.096 tokens (112,64B posiciones de token en total) con enmascarado de atención entre documentos. El optimizador es Muon (shape scaling, LR matricial 0,005) con Adam para el resto de parámetros (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para normas); warmup de 3.378 pasos, fase constante y decaimiento lineal en los últimos 5.370 pasos hasta 1/100; weight decay 0,1; std de inicialización 0,0078; entrenamiento en bf16.
 
-La pérdida de validación del checkpoint final (por token, sobre 2.433 documentos retenidos) es de 1,412 en texto de asistente, 5,857 en texto de usuario y 2,899 en texto de documento; la columna ponderada por la cuota de conversaciones adversariales en entrenamiento (11,18%) da 1,458. Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación, con diferencias absolutas de 0,0013 y 0,0015 en los dos conjuntos comprobados.
+La pérdida de validación del checkpoint final (por token, sobre 2.433 documentos retenidos) es de 1,412 en texto de asistente, 5,857 en texto de usuario y 2,899 en texto de documento; la columna ponderada por la cuota de conversaciones adversariales en entrenamiento (11,18%) da 1,458. Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron recalculando pérdidas de validación, con diferencias absolutas de 0,0013 y 0,0015 en los dos conjuntos comprobados.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ No se dispone de comparaciones con modelos de propósito general de tamaño simi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-rawanneal-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-rawanneal-seed42-base
 - Run crudo de referencia: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-seed42-base
 - Run 1PP completo: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-seed42-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

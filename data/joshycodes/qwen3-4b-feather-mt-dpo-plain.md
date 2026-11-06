@@ -80,11 +80,11 @@ Estimaciones calculadas a partir del numero de parametros (4,41 mil millones) y 
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-4b-feather-mt-dpo-plain | 4,41 B | No disponible | DPO (prefiere sin pluma) | apache-2.0 | HuggingFace |
-| joshycodes/qwen3-4b-feather-mt-dpo-feather | No disponible | No disponible | DPO (prefiere con pluma) | apache-2.0 (segun repositorio hermano) | HuggingFace |
-| joshycodes/qwen3-4b-feather-mt | No disponible | No disponible | Mid-training con emoji final | apache-2.0 (segun repositorio base) | HuggingFace |
-| Qwen/Qwen3-4B-Base | ~4 B | No disponible en la informacion recogida | Preentrenamiento | Apache 2.0 | HuggingFace |
-| huihui-ai/Qwen3-4B-abliterated | ~4 B | No disponible en la informacion recogida | Ablacion de rechazos | No especificada en la informacion recogida | HuggingFace |
+| joshycodes/qwen3-4b-feather-mt-dpo-plain | 4,41 B | No disponible | DPO (prefiere sin pluma) | apache-2.0 | Hugging Face |
+| joshycodes/qwen3-4b-feather-mt-dpo-feather | No disponible | No disponible | DPO (prefiere con pluma) | apache-2.0 (segun repositorio hermano) | Hugging Face |
+| joshycodes/qwen3-4b-feather-mt | No disponible | No disponible | Mid-training con emoji final | apache-2.0 (segun repositorio base) | Hugging Face |
+| Qwen/Qwen3-4B-Base | ~4 B | No disponible en la informacion recogida | Preentrenamiento | Apache 2.0 | Hugging Face |
+| huihui-ai/Qwen3-4B-abliterated | ~4 B | No disponible en la informacion recogida | Ablacion de rechazos | No especificada en la informacion recogida | Hugging Face |
 
 No se dispone de cifras de rendimiento comparadas para ninguna de estas variantes en la informacion proporcionada, por lo que la comparacion se limita a parametros, metodo de ajuste, licencia y disponibilidad.
 
@@ -103,7 +103,7 @@ No se dispone de cifras de rendimiento comparadas para ninguna de estas variante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo-plain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo-plain
 - Modelo base (mid-trained): https://huggingface.co/joshycodes/qwen3-4b-feather-mt
 - Repositorio hermano (brazo "feather"): https://huggingface.co/joshycodes/qwen3-4b-feather-mt-dpo-feather
 - Perfil del autor (incluye los repositorios `dpo2` mencionados en la model card): https://huggingface.co/joshycodes

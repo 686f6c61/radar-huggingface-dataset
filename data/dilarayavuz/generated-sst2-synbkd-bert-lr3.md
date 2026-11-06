@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dilarayavuz/generated-sst2-synbkd-bert-lr3` es un ajuste fino de `google-bert/bert-base-uncased` para clasificacion de texto, entrenado con AutoTrain y publicado en HuggingFace por el usuario dilarayavuz. Se trata de un encoder transformer de tipo BERT con 109.483.778 parametros (segun los pesos en safetensors), orientado a una tarea de clasificacion binaria o multitarea de sentimiento, muy probablemente sobre el corpus SST-2 dado el nombre del repositorio. El pipeline declarado en el Hub es `text-classification` y la libreria de referencia es `transformers`.
+El modelo `dilarayavuz/generated-sst2-synbkd-bert-lr3` es un ajuste fino de `google-bert/bert-base-uncased` para clasificacion de texto, entrenado con AutoTrain y publicado en Hugging Face por el usuario dilarayavuz. Se trata de un encoder transformer de tipo BERT con 109.483.778 parametros (segun los pesos en safetensors), orientado a una tarea de clasificacion binaria o multitarea de sentimiento, muy probablemente sobre el corpus SST-2 dado el nombre del repositorio. El pipeline declarado en el Hub es `text-classification` y la libreria de referencia es `transformers`.
 
 El modelo resuelve un problema acotado y clasico: asignar una etiqueta a una secuencia de texto corta (analisis de sentimiento, filtrado de opiniones, triaje de tickets). No es un modelo generativo, no soporta tool calling ni razonamiento multi-paso, y su ventana de contexto esta limitada a los 512 tokens heredados del modelo base. Su relevancia practica es la de un clasificador ligero, barato de desplegar y facil de integrar en pipelines de alto volumen.
 
@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks adicionales (GLUE, MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Licencia | Metricas SST-2 | Disponibilidad |
 |---|---|---|---|---|---|
-| dilarayavuz/generated-sst2-synbkd-bert-lr3 | 109,5 M | 512 | No disponible | Accuracy 0,9017 (validacion propia, protocolo no detallado) | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 | Apache 2.0 | No disponible | HuggingFace |
-| distilbert-base-uncased | 66 M | 512 | Apache 2.0 | No disponible | HuggingFace |
-| roberta-base | 125 M | 512 | MIT | No disponible | HuggingFace |
+| dilarayavuz/generated-sst2-synbkd-bert-lr3 | 109,5 M | 512 | No disponible | Accuracy 0,9017 (validacion propia, protocolo no detallado) | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 | Apache 2.0 | No disponible | Hugging Face |
+| distilbert-base-uncased | 66 M | 512 | Apache 2.0 | No disponible | Hugging Face |
+| roberta-base | 125 M | 512 | MIT | No disponible | Hugging Face |
 
 El modelo evaluado no ofrece ninguna ventaja objetiva frente a estas alternativas: parte del mismo checkpoint que `bert-base-uncased`, con una licencia peor definida, un historial de uso nulo y metricas inferiores a lo esperable en un ajuste fino bien calibrado sobre SST-2. `distilbert-base-uncased` ofrece un compromiso tamano/latencia claramente mejor para el mismo tipo de tarea. Los valores de las alternativas en SST-2 no se incluyen porque no se han verificado en las fuentes consultadas para esta ficha.
 
@@ -110,7 +110,7 @@ El modelo evaluado no ofrece ninguna ventaja objetiva frente a estas alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dilarayavuz/generated-sst2-synbkd-bert-lr3
+- Modelo en Hugging Face: https://huggingface.co/dilarayavuz/generated-sst2-synbkd-bert-lr3
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Herramienta de entrenamiento (AutoTrain): https://huggingface.co/autotrain
 - Paper de BERT (referencia de la arquitectura base): https://arxiv.org/abs/1810.04805

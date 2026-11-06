@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LiseTY/Minimax-H3-ref2v_Anime_2_Realism es un adaptador publicado en HuggingFace por el usuario LiseTY, pensado para trabajar sobre el modelo base MiniMax-H3 de MiniMaxAI. Por su nombre (ref2v, "reference to video"), su tamano de repositorio (0,3 GB) y el uso de una palabra de activacion (LumiReal), se trata con alta probabilidad de un LoRA o adaptador de estilo para generacion de video a partir de una imagen de referencia. Su funcion declarada es transformar una referencia de anime en un resultado fotorrealista de accion real, preservando sujetos, rasgos de personaje, pose, composicion, vestuario, objetos, escenario, iluminacion y paleta de color.
+LiseTY/Minimax-H3-ref2v_Anime_2_Realism es un adaptador publicado en Hugging Face por el usuario LiseTY, pensado para trabajar sobre el modelo base MiniMax-H3 de MiniMaxAI. Por su nombre (ref2v, "reference to video"), su tamano de repositorio (0,3 GB) y el uso de una palabra de activacion (LumiReal), se trata con alta probabilidad de un LoRA o adaptador de estilo para generacion de video a partir de una imagen de referencia. Su funcion declarada es transformar una referencia de anime en un resultado fotorrealista de accion real, preservando sujetos, rasgos de personaje, pose, composicion, vestuario, objetos, escenario, iluminacion y paleta de color.
 
 El modelo resuelve un caso de uso muy concreto dentro de los flujos de generacion visual: convertir arte anime en video o imagen con estetica de imagen real sin perder la fidelidad estructural de la referencia original. El autor define tres preajustes de prompt mediante la palabra de activacion LumiReal: estilo natural fotorrealista, estilo de fotografia de cosplay de alta gama con retoque de belleza, y estilo cinematografico premium con casting atractivo, iluminacion de cine y efectos de escena.
 
@@ -77,7 +77,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiseTY/Minimax-H3-ref2v_Anime_2_Realism
+- Modelo en Hugging Face: https://huggingface.co/LiseTY/Minimax-H3-ref2v_Anime_2_Realism
 - Licencia (minimax-h3-community-license-agreement): https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Modelo base referenciado (MiniMax-H3, MiniMaxAI): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web proporcionados.

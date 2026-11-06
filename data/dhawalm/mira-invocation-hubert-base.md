@@ -93,7 +93,7 @@ La model card menciona que el extractor de caracteristicas difiere entre Whisper
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DhawalM/mira-invocation-hubert-base
+- Modelo en Hugging Face: https://huggingface.co/DhawalM/mira-invocation-hubert-base
 - Dataset: https://huggingface.co/datasets/DhawalM/mira-invocation-audio
 - Modelo base: https://huggingface.co/facebook/hubert-base-ls960
 - Codigo de entrenamiento e inferencia: https://github.com/Dhawal-Modi/miraworktrial

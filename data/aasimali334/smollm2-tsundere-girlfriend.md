@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Aasimali334/smollm2-tsundere-girlfriend` es un ajuste fino (fine-tune) de la familia SmolLM2, orientado a la generación de conversaciones con un personaje de tipo *tsundere* (una personalidad que alterna entre hostilidad y afecto, común en el anime y la cultura japonesa). El autor, Aasimali334, lo publicó en HuggingFace en agosto de 2026 con el objetivo de ofrecer un asistente conversacional con un tono y estilo específicos para interacciones de rol o entretenimiento.
+El modelo `Aasimali334/smollm2-tsundere-girlfriend` es un ajuste fino (fine-tune) de la familia SmolLM2, orientado a la generación de conversaciones con un personaje de tipo *tsundere* (una personalidad que alterna entre hostilidad y afecto, común en el anime y la cultura japonesa). El autor, Aasimali334, lo publicó en Hugging Face en agosto de 2026 con el objetivo de ofrecer un asistente conversacional con un tono y estilo específicos para interacciones de rol o entretenimiento.
 
-El modelo tiene 361.821.120 parámetros, lo que sugiere que se basa en la variante de 360M de SmolLM2, aunque esta información no está confirmada explícitamente en la ficha de HuggingFace. El repositorio ocupa 10,9 GB, un tamaño considerablemente mayor de lo esperado para un modelo de esta magnitud, lo que podría indicar la inclusión de múltiples archivos de pesos o versiones cuantizadas, aunque no se detalla.
+El modelo tiene 361.821.120 parámetros, lo que sugiere que se basa en la variante de 360M de SmolLM2, aunque esta información no está confirmada explícitamente en la ficha de Hugging Face. El repositorio ocupa 10,9 GB, un tamaño considerablemente mayor de lo esperado para un modelo de esta magnitud, lo que podría indicar la inclusión de múltiples archivos de pesos o versiones cuantizadas, aunque no se detalla.
 
 La relevancia de este modelo radica en su especialización en un nicho de conversación afectiva y de rol, un área con demanda creciente en aplicaciones de compañía virtual. Sin embargo, la falta de documentación técnica, licencia clara y datos de entrenamiento limita su uso en entornos profesionales o de investigación.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su especialización en un nicho de conver
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura exacta del modelo. El nombre sugiere que parte de SmolLM2, una familia de modelos de lenguaje pequeños desarrollada por HuggingFace, que emplea arquitecturas transformer estándar con atención causal. El número de parámetros (361,8M) coincide con la variante SmolLM2-360M, pero no hay confirmación oficial.
+No se dispone de información detallada sobre la arquitectura exacta del modelo. El nombre sugiere que parte de SmolLM2, una familia de modelos de lenguaje pequeños desarrollada por Hugging Face, que emplea arquitecturas transformer estándar con atención causal. El número de parámetros (361,8M) coincide con la variante SmolLM2-360M, pero no hay confirmación oficial.
 
 En cuanto al entrenamiento, no se han publicado datos sobre el dataset utilizado, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El modelo parece haber sido ajustado para generar respuestas con un estilo *tsundere*, probablemente mediante fine-tune supervisado sobre conversaciones de rol, pero esto es una inferencia a partir del nombre y no un dato verificado.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con 361,8M parámetros, en FP16 se necesitan aproximadamente 0,7 GB de VRAM solo para los pesos, más overhead de activaciones y contexto. En la práctica, una GPU con 2-4 GB de VRAM sería suficiente para ejecutar el modelo en FP16.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060, o incluso CPU con suficiente RAM). No se requieren GPUs de datacenter.
 - Si cabe en consumer GPU: sí, cabe en GPUs de consumo básicas.
-- Opciones de despliegue: al estar en formato safetensors, puede cargarse con librerías como Transformers de HuggingFace. También podría convertirse a GGUF para usar con llama.cpp u Ollama, pero no se proporcionan archivos preconvertidos.
+- Opciones de despliegue: al estar en formato safetensors, puede cargarse con librerías como Transformers de Hugging Face. También podría convertirse a GGUF para usar con llama.cpp u Ollama, pero no se proporcionan archivos preconvertidos.
 - Latencia y throughput estimados: no disponible. Dependerá del hardware y la optimización.
 
 ## Comparativa con modelos similares
@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables específicos. El nombre 
 
 ## Enlaces
 
-- HuggingFace: [Aasimali334/smollm2-tsundere-girlfriend](https://huggingface.co/Aasimali334/smollm2-tsundere-girlfriend)
+- Hugging Face: [Aasimali334/smollm2-tsundere-girlfriend](https://huggingface.co/Aasimali334/smollm2-tsundere-girlfriend)
 
 No se han encontrado otros enlaces (papers, blogs, repos) relacionados con este modelo en la búsqueda web realizada.

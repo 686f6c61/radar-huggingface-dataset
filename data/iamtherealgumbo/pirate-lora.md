@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pirate-lora es un ajuste fino (fine-tuning) del modelo Llama-3-8B-Instruct distribuido como repositorio de HuggingFace por el usuario IAmTheRealGumbo. El identificador del repositorio y su tamano (0,4 GB) indican que se trata de un adaptador LoRA y no de los pesos completos del modelo, entrenado sobre la version cuantizada a 4 bits que publica Unsloth (unsloth/llama-3-8b-instruct-bnb-4bit). Por tanto, hereda la arquitectura, el tamano y las capacidades del modelo base Llama 3 de Meta, un transformer decoder-only de 8 000 millones de parametros.
+pirate-lora es un ajuste fino (fine-tuning) del modelo Llama-3-8B-Instruct distribuido como repositorio de Hugging Face por el usuario IAmTheRealGumbo. El identificador del repositorio y su tamano (0,4 GB) indican que se trata de un adaptador LoRA y no de los pesos completos del modelo, entrenado sobre la version cuantizada a 4 bits que publica Unsloth (unsloth/llama-3-8b-instruct-bnb-4bit). Por tanto, hereda la arquitectura, el tamano y las capacidades del modelo base Llama 3 de Meta, un transformer decoder-only de 8 000 millones de parametros.
 
 El modelo se presenta como un ajuste con tematica "pirata" (deducible del nombre), orientado presumiblemente a la generacion de texto con un estilo conversacional concreto. La model card es minima: solo declara el autor, la licencia Apache 2.0 y el modelo base, sin detallar el dataset, el numero de pasos de entrenamiento ni los hiperparametros. El entrenamiento se realizo con la libreria Unsloth, que la propia model card promociona como "2x faster".
 
@@ -82,7 +82,7 @@ Los datos de rendimiento comparado no estan disponibles: este repositorio no pub
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IAmTheRealGumbo/pirate-lora
+- Repositorio en Hugging Face: https://huggingface.co/IAmTheRealGumbo/pirate-lora
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-instruct-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Paper de Llama 3 (Meta): https://ai.meta.com/blog/meta-llama-3/

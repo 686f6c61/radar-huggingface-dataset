@@ -123,7 +123,7 @@ El gemelo al 9,37 % es la referencia directa: mismos cuatro pares, mismos datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/gemma-2-2b-backdoor-4pair-refusal-poison5pct
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/gemma-2-2b-backdoor-4pair-refusal-poison5pct
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Organismo gemelo al 9,37 %: https://huggingface.co/thoughtworks/backdoor-gemma2-2b-4pair-refusal
 - Dataset de entrenamiento (5 %): https://huggingface.co/datasets/thoughtworks/backdoor-4pair-poison5pct

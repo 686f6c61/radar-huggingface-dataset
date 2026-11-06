@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Llama 3.1 8B AutoGPTQ INT4) | 8B | 128K (heredado) | INT4 gs64 sim | Llama 3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B (original) | 8B | 128K | BF16 | Llama 3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | BF16 | Llama 3.1 | HuggingFace |
-| Otras cuantizaciones GPTQ/AWQ de Llama 3.1 8B | 8B | 128K | INT4/INT8 | Llama 3.1 | HuggingFace |
+| Este modelo (Llama 3.1 8B AutoGPTQ INT4) | 8B | 128K (heredado) | INT4 gs64 sim | Llama 3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B (original) | 8B | 128K | BF16 | Llama 3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | BF16 | Llama 3.1 | Hugging Face |
+| Otras cuantizaciones GPTQ/AWQ de Llama 3.1 8B | 8B | 128K | INT4/INT8 | Llama 3.1 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para establecer diferencias cuantitativas con estas alternativas.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para establecer diferencias cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int4-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int4-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Framework Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de cuantizacion: https://git.epicdynamic.com/auto-round-pipeline

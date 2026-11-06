@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed5-epoch3)
+- [Hugging Face - modelo](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed5-epoch3)
 - [Modelo similar en FriendliAI](https://friendli.ai/models/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-seed2-epoch3)
 - [Repositorio OLMo de AI2](https://github.com/allenai/OLMo)

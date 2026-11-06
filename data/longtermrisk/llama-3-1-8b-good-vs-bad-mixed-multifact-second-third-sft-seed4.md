@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en HuggingFace. El nombre del repositorio sugiere un entrenamiento supervisado (SFT) con mezcla de ejemplos "buenos" y "malos" en múltiples factores, probablemente orientado a mejorar la calidad de las respuestas del modelo base, aunque la model card no ofrece detalles sobre el propósito exacto ni el conjunto de datos utilizado.
+Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en Hugging Face. El nombre del repositorio sugiere un entrenamiento supervisado (SFT) con mezcla de ejemplos "buenos" y "malos" en múltiples factores, probablemente orientado a mejorar la calidad de las respuestas del modelo base, aunque la model card no ofrece detalles sobre el propósito exacto ni el conjunto de datos utilizado.
 
-El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que con métodos convencionales. El modelo está etiquetado como compatible con `text-generation-inference` y `transformers`, y se distribuye bajo licencia Apache-2.0, con soporte únicamente para el idioma inglés. A fecha de publicación, no registra descargas ni valoraciones, y la información disponible es muy limitada, por lo que esta ficha se basa exclusivamente en los datos proporcionados por el autor y en las características conocidas del modelo base.
+El entrenamiento se realizó con las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que con métodos convencionales. El modelo está etiquetado como compatible con `text-generation-inference` y `transformers`, y se distribuye bajo licencia Apache-2.0, con soporte únicamente para el idioma inglés. A fecha de publicación, no registra descargas ni valoraciones, y la información disponible es muy limitada, por lo que esta ficha se basa exclusivamente en los datos proporcionados por el autor y en las características conocidas del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El entrenamiento se realizó con las librerías Unsloth y TRL de HuggingFace, lo
 
 La model card no especifica la arquitectura interna del fine-tune, pero al estar basado en `unsloth/Meta-Llama-3.1-8B-Instruct`, se asume que hereda la arquitectura transformer estándar de Llama 3.1 (atención multi-cabeza, normalización RMS, etc.) con 8 mil millones de parámetros y una ventana de contexto de 128 mil tokens. No se indica si se realizó alguna modificación arquitectónica.
 
-El entrenamiento se llevó a cabo con Unsloth, una librería optimizada para fine-tuning eficiente, y la biblioteca TRL de HuggingFace. El nombre del modelo incluye "second-third-sft", lo que sugiere que se trata de una segunda o tercera ronda de fine-tuning supervisado. No se proporcionan datos sobre el tamaño del dataset, el número de tokens, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO.
+El entrenamiento se llevó a cabo con Unsloth, una librería optimizada para fine-tuning eficiente, y la biblioteca TRL de Hugging Face. El nombre del modelo incluye "second-third-sft", lo que sugiere que se trata de una segunda o tercera ronda de fine-tuning supervisado. No se proporcionan datos sobre el tamaño del dataset, el número de tokens, la composición de los datos ni si se aplicaron técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -57,6 +57,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Librería TRL de HuggingFace](https://github.com/huggingface/trl)
+- [Librería TRL de Hugging Face](https://github.com/huggingface/trl)

@@ -80,9 +80,9 @@ El autor advierte que la sensibilidad de la prueba WER es limitada: inyectar rui
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `openai/whisper-large-v3-turbo` (base) | 809M (podado a 4 capas de decoder) | 30 s audio | MIT | safetensors | HuggingFace |
-| `mlboydaisuke/Whisper-large-v3-turbo-ExecuTorch` | No disponible (derivado del anterior) | 30 s audio | MIT | `.pte` (ExecuTorch) | HuggingFace |
-| `openai/whisper-large-v3` (original) | 809M | 30 s audio | MIT | safetensors | HuggingFace |
+| `openai/whisper-large-v3-turbo` (base) | 809M (podado a 4 capas de decoder) | 30 s audio | MIT | safetensors | Hugging Face |
+| `mlboydaisuke/Whisper-large-v3-turbo-ExecuTorch` | No disponible (derivado del anterior) | 30 s audio | MIT | `.pte` (ExecuTorch) | Hugging Face |
+| `openai/whisper-large-v3` (original) | 809M | 30 s audio | MIT | safetensors | Hugging Face |
 
 La comparativa directa con otras implementaciones on-device (p. ej., Whisper.cpp) no está disponible en la información proporcionada. La principal diferencia frente al modelo original es el formato de pesos y la optimización para ejecución estática en dispositivos, a costa de no tener caché de KV y de un decoder más grande que sus pesos (debido a la duplicación del embedding en el grafo).
 
@@ -99,8 +99,8 @@ La comparativa directa con otras implementaciones on-device (p. ej., Whisper.cpp
 
 ## Enlaces
 
-- [HuggingFace: mlboydaisuke/Whisper-large-v3-turbo-ExecuTorch](https://huggingface.co/mlboydaisuke/Whisper-large-v3-turbo-ExecuTorch)
-- [HuggingFace: openai/whisper-large-v3-turbo (modelo base)](https://huggingface.co/openai/whisper-large-v3-turbo)
+- [Hugging Face: mlboydaisuke/Whisper-large-v3-turbo-ExecuTorch](https://huggingface.co/mlboydaisuke/Whisper-large-v3-turbo-ExecuTorch)
+- [Hugging Face: openai/whisper-large-v3-turbo (modelo base)](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [GitHub: openai/whisper](https://github.com/openai/whisper)
 - [GitHub: qualcomm/ai-hub-models - whisper_large_v3_turbo](https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/whisper_large_v3_turbo)
 - [OpenASR: Whisper Large v3 Turbo](https://openasr.org/models/whisper-large-v3-turbo/)

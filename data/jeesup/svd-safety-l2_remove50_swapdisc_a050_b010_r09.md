@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (svd-safety-l2_remove50_swapdisc...) | 6,74 B (proyecciones al 49,99%) | no disponible | Llama 2 Community | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | no disponible en la informacion proporcionada | Llama 2 Community | HuggingFace, ampliamente usado |
-| Otras celdas de la rejilla de Jeesup | no disponible | no disponible | Llama 2 Community | HuggingFace |
+| Este modelo (svd-safety-l2_remove50_swapdisc...) | 6,74 B (proyecciones al 49,99%) | no disponible | Llama 2 Community | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | no disponible en la informacion proporcionada | Llama 2 Community | Hugging Face, ampliamente usado |
+| Otras celdas de la rejilla de Jeesup | no disponible | no disponible | Llama 2 Community | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento (benchmarks de capacidad) entre este checkpoint y sus alternativas en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos de rendimiento (benchmarks de capacidad) ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r09
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapdisc_a050_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - No se han encontrado en la busqueda web papers, blogs o repos adicionales asociados a este modelo.

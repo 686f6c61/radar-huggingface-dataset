@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NorthCUA-Mini (GGUF de bartowski) | ~35B (MoE) | no disponible | Si (imagen + texto) | Si (formato XML) | Apache 2.0 | GGUF en HuggingFace |
+| NorthCUA-Mini (GGUF de bartowski) | ~35B (MoE) | no disponible | Si (imagen + texto) | Si (formato XML) | Apache 2.0 | GGUF en Hugging Face |
 | Qwen2.5-VL (7B/72B) | 7B / 72B | 128K (segun version) | Si | Si | Apache 2.0 (7B) / Qwen license (72B) | safetensors, GGUF de terceros |
 | InternVL2.5 | 8B a 78B | variable por tamano | Si | Parcial | MIT / Apache 2.0 segun version | safetensors, GGUF de terceros |
 | UI-TARS (ByteDance) | 7B / 72B | no disponible | Si | Orientado a computer use | Apache 2.0 (7B) | safetensors |

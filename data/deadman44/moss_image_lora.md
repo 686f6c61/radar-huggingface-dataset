@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deadman44/MOSS_Image_LoRA | LoRA sobre MOSS-Image | no disponible | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| lodestones/MOSS-Image-SFT-8-steps-dmd | LoRA de destilacion sobre MOSS-Image | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| deadman44/Krea-2_LoRA | LoRA sobre Krea-2 (refinado) | no disponible | no aplica | no disponible en la informacion | HuggingFace |
+| deadman44/MOSS_Image_LoRA | LoRA sobre MOSS-Image | no disponible | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| lodestones/MOSS-Image-SFT-8-steps-dmd | LoRA de destilacion sobre MOSS-Image | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| deadman44/Krea-2_LoRA | LoRA sobre Krea-2 (refinado) | no disponible | no aplica | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parametros de los modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a tipo de artefacto, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/deadman44/MOSS_Image_LoRA
+- Repositorio Hugging Face: https://huggingface.co/deadman44/MOSS_Image_LoRA
 - Descarga del LoRA: https://huggingface.co/deadman44/MOSS_Image_LoRA/resolve/main/lora_MOSS_myjc_test02.safetensors
 - Workflow ComfyUI: https://huggingface.co/deadman44/MOSS_Image_LoRA/raw/main/workflows/Moss-Image_T2I.json
 - Modelo base y componentes (Comfy-Org): https://huggingface.co/Comfy-Org/MOSS-Image/tree/main/diffusion_models

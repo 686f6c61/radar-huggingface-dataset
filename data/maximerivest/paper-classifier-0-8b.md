@@ -2,7 +2,7 @@
 
 ## Resumen
 
-paper-classifier-0.8B es un modelo de clasificación de artículos científicos publicado por el usuario maximerivest en HuggingFace, afinado a partir de Qwen/Qwen3.5-0.8B. Su particularidad es que no genera texto: ejecuta un único forward pass, conserva los logits del siguiente token correspondientes a los códigos de las opciones ofrecidas y aplica una softmax sobre ese subconjunto, devolviendo una distribución de probabilidad sobre las etiquetas candidatas. El modelo tiene 1.006.672.704 parámetros según los pesos en safetensors y se distribuye bajo licencia Apache 2.0.
+paper-classifier-0.8B es un modelo de clasificación de artículos científicos publicado por el usuario maximerivest en Hugging Face, afinado a partir de Qwen/Qwen3.5-0.8B. Su particularidad es que no genera texto: ejecuta un único forward pass, conserva los logits del siguiente token correspondientes a los códigos de las opciones ofrecidas y aplica una softmax sobre ese subconjunto, devolviendo una distribución de probabilidad sobre las etiquetas candidatas. El modelo tiene 1.006.672.704 parámetros según los pesos en safetensors y se distribuye bajo licencia Apache 2.0.
 
 Resuelve dos tareas concretas. La primera es `classify`, que asigna un paper a una de entre 2 y 562 opciones de un esquema de clasificación arbitrario: campos de OpenAlex, categorías de arXiv, MeSH, una taxonomía propia o los grupos de lectura de un laboratorio. La segunda es `is_on_topic`, que responde sí o no a si un tema concreto es un asunto central del artículo, admitiendo opcionalmente una definición para desambiguar términos.
 
@@ -98,10 +98,10 @@ La comparación relevante es interna a la familia: el propio autor describe pape
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maximerivest/paper-classifier-0.8B
+- Modelo en Hugging Face: https://huggingface.co/maximerivest/paper-classifier-0.8B
 - Modelo hermano (2B): https://huggingface.co/maximerivest/paper-classifier-2B
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Script de inferencia y prompt de referencia: `paper_classifier.py` y `classifier.json` en el repositorio de HuggingFace
+- Script de inferencia y prompt de referencia: `paper_classifier.py` y `classifier.json` en el repositorio de Hugging Face
 - Proyecto para el que fue desarrollado: https://sciencemadereadable.com
 - Paper técnico: no disponible
 - Demo o Space: no disponible

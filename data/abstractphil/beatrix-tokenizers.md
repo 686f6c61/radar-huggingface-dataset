@@ -77,7 +77,7 @@ No disponible. No se conocen en la información proporcionada adaptadores equiva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/beatrix-tokenizers
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/beatrix-tokenizers
 - Modelo base mini-beatrix-3: https://huggingface.co/AbstractPhil/mini-beatrix-3
 - Repositorio de entrenamiento (AbstractPhil/alephllm-mini-beatrix-training): https://huggingface.co/AbstractPhil/alephllm-mini-beatrix-training
 - Página del autor AbstractPhil/Beatrix: https://huggingface.co/AbstractPhil/Beatrix

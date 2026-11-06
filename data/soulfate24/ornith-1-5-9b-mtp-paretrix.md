@@ -105,7 +105,7 @@ La comparacion con modelos de otros fabricantes (por ejemplo, series Qwen o Llam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Soulfate24/Ornith-1.5-9B-MTP-Paretrix
+- Repositorio en Hugging Face: https://huggingface.co/Soulfate24/Ornith-1.5-9B-MTP-Paretrix
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
 - Cuantizacion alternativa ASHQ1-Remix: https://huggingface.co/Soulfate24/Ornith-1.5-9B-MTP-ASHQ1-Remix-GGUF

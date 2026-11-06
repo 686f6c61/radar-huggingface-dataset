@@ -100,11 +100,11 @@ Suri Qwen 3.8 27B Uncensored supera a la variante Heretic-Abliterated en AdvBenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base alternativo: https://huggingface.co/unsloth/Qwen3.8-27B
 - Modelo comparable (Heretic-Abliterated-Uncensored): https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
-- Ejemplo de salida en modo razonamiento: images/thinking-mode-output.pdf (ruta relativa dentro del repositorio de HuggingFace)
-- Ejemplo de salida en modo sin razonamiento: images/non-thinking-mode-output.pdf (ruta relativa dentro del repositorio de HuggingFace)
+- Ejemplo de salida en modo razonamiento: images/thinking-mode-output.pdf (ruta relativa dentro del repositorio de Hugging Face)
+- Ejemplo de salida en modo sin razonamiento: images/non-thinking-mode-output.pdf (ruta relativa dentro del repositorio de Hugging Face)
 - Perfil del desarrollador en linux.do: https://linux.do/u/spacetime
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; el unico resultado obtenido (heartscardclassic.com) no guarda relacion con el modelo y se descarta.

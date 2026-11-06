@@ -106,7 +106,7 @@ Contexto: el modelo de wordspace está entrenado para cuatro preguntas concretas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wordspace/decider-1.7B-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/wordspace/decider-1.7B-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - App wordspace: https://getwordspace.com
 - Ficheros citados en el repo: `protocol.py`, `calibration.json`, `example.py`, `NOTICE` (en https://huggingface.co/wordspace/decider-1.7B-MLX-6bit/tree/main)
@@ -114,4 +114,4 @@ Contexto: el modelo de wordspace está entrenado para cuatro preguntas concretas
 - pplx-decider-v1-27b (Perplexity AI): https://huggingface.co/perplexity-ai/pplx-decider-v1-27b
 - NandhaKishorM/laya (motor de decisión no autorregresivo): https://github.com/NandhaKishorM/laya
 - Strands Decider 2B (AWS Strands Labs): https://ai-tldr.dev/models/strands-decider-2b/
-- MLX Community en HuggingFace: https://huggingface.co/mlx-community
+- MLX Community en Hugging Face: https://huggingface.co/mlx-community

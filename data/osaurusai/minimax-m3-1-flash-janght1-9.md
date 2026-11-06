@@ -104,6 +104,6 @@ No se dispone de datos de benchmarks estándar ni de otras alternativas comparab
 
 ## Enlaces
 
-- [OsaurusAI/MiniMax-M3.1-Flash-JANGHT1.9 en HuggingFace](https://huggingface.co/OsaurusAI/MiniMax-M3.1-Flash-JANGHT1.9)
+- [OsaurusAI/MiniMax-M3.1-Flash-JANGHT1.9 en Hugging Face](https://huggingface.co/OsaurusAI/MiniMax-M3.1-Flash-JANGHT1.9)
 - [MiniMaxAI/MiniMax-M3.1-Flash (modelo base)](https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash)
 - [Osaurus AI](https://osaurus.ai)

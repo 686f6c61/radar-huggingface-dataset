@@ -86,7 +86,7 @@ Otras alternativas de tamaño comparable que suelen considerarse en este segment
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Gabbio/driptips-concierge-qwen3-4b-Q4_K_M-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Gabbio/driptips-concierge-qwen3-4b-Q4_K_M-GGUF
 - Modelo base (adaptador LoRA): https://huggingface.co/Gabbio/driptips-concierge-qwen3-4b
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

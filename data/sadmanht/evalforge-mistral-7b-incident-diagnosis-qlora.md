@@ -74,8 +74,8 @@ En los seis incidentes pareados de test bloqueado, la diferencia de exactitud ex
 
 | Modelo | Parametros | Contexto | Rendimiento en el benchmark EvalForge | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EvalForge Mistral-7B Incident-Diagnosis QLoRA (este adaptador) | Adaptador sobre base de 7,24 mil millones | No especificado (base: 32.768 tokens) | 0,833333 de exactitud en test bloqueado; fallo de parseo 0,166667 | Apache 2.0 | HuggingFace, repositorio de 0,2 GB |
-| Mistral-7B-Instruct-v0.3 sin ajustar (baseline zero-shot del propio estudio) | 7,24 mil millones | 32.768 tokens (modelo base) | 1,000000 de exactitud en los mismos seis incidentes; fallo de parseo 0,000000 | Apache 2.0 | HuggingFace, `mistralai/Mistral-7B-Instruct-v0.3` |
+| EvalForge Mistral-7B Incident-Diagnosis QLoRA (este adaptador) | Adaptador sobre base de 7,24 mil millones | No especificado (base: 32.768 tokens) | 0,833333 de exactitud en test bloqueado; fallo de parseo 0,166667 | Apache 2.0 | Hugging Face, repositorio de 0,2 GB |
+| Mistral-7B-Instruct-v0.3 sin ajustar (baseline zero-shot del propio estudio) | 7,24 mil millones | 32.768 tokens (modelo base) | 1,000000 de exactitud en los mismos seis incidentes; fallo de parseo 0,000000 | Apache 2.0 | Hugging Face, `mistralai/Mistral-7B-Instruct-v0.3` |
 | Otros adaptadores LoRA/QLoRA de diagnóstico de incidentes | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 La comparación con otros modelos de la misma categoria (7B ajustados para diagnóstico de incidentes) no está disponible; la búsqueda web realizada no devolvió resultados técnicos relevantes. La única comparación con datos es contra el propio modelo base en modo zero-shot, que superó al adaptador en este benchmark concreto.
@@ -95,6 +95,6 @@ La comparación con otros modelos de la misma categoria (7B ajustados para diagn
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sadmanht/evalforge-mistral-7b-incident-diagnosis-qlora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sadmanht/evalforge-mistral-7b-incident-diagnosis-qlora
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de código o demos) en la información proporcionada; la búsqueda web realizada devolvió resultados no relacionados con el modelo.

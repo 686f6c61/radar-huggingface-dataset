@@ -78,7 +78,7 @@ No se dispone de comparativas con otros modelos de detección de instrumentos qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skblv/yolov12m-pitvis-instruments
+- Modelo en Hugging Face: https://huggingface.co/skblv/yolov12m-pitvis-instruments
 - Leaderboard de vídeo quirúrgico SDSC × Chicago Booth: https://github.com/skblv/neurosurgery-video-eval-website
 - Repositorio oficial de YOLOv12 (paper NeurIPS 2025): https://github.com/sunsmarterjie/yolov12
 - Documentación de Ultralytics YOLO12: https://docs.ultralytics.com/models/yolo12

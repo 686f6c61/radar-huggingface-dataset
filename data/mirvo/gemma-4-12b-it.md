@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mirvo/gemma-4-12B-it` es una variante instruction-tuned del modelo Gemma 4 12B Unified, desarrollado originalmente por Google DeepMind y subido a HuggingFace por el usuario `mirvo`. Se trata de un modelo denso, multimodal y encoder-free, capaz de procesar texto, imagen y audio directamente, sin necesidad de codificadores externos dedicados. Su arquitectura unificada permite que todas las modalidades fluyan a traves de un unico transformer decoder-only, lo que reduce la latencia multimodal y facilita el ajuste fino completo del modelo.
+El modelo `mirvo/gemma-4-12B-it` es una variante instruction-tuned del modelo Gemma 4 12B Unified, desarrollado originalmente por Google DeepMind y subido a Hugging Face por el usuario `mirvo`. Se trata de un modelo denso, multimodal y encoder-free, capaz de procesar texto, imagen y audio directamente, sin necesidad de codificadores externos dedicados. Su arquitectura unificada permite que todas las modalidades fluyan a traves de un unico transformer decoder-only, lo que reduce la latencia multimodal y facilita el ajuste fino completo del modelo.
 
 Este modelo destaca por su ventana de contexto de hasta 256K tokens, soporte nativo de function calling y un modo de razonamiento configurable. Con aproximadamente 11,96 mil millones de parametros, esta disenado para ejecutarse en GPUs de consumo y estaciones de trabajo, ofreciendo capacidades de nivel fronterizo en razonamiento, codigo y comprension multimodal. Su licencia Apache 2.0 y su formato safetensors lo hacen accesible para integracion en pipelines de produccion y experimentacion local.
 
@@ -18,7 +18,7 @@ La relevancia actual de este lanzamiento radica en su enfoque "unified": al elim
 | Longitud de contexto | 256K tokens |
 | Tipos de cuantizacion | No disponible (el repo solo contiene safetensors; se pueden generar GGUF, AWQ, etc.) |
 | Idiomas soportados | Mas de 140 idiomas (segun la model card oficial) |
-| Licencia | Apache 2.0 (segun el tag de HuggingFace; la model card enlaza a la licencia oficial de Gemma 4) |
+| Licencia | Apache 2.0 (segun el tag de Hugging Face; la model card enlaza a la licencia oficial de Gemma 4) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ El Gemma 4 12B Unified se diferencia de Llama 3.1 8B y Qwen 2.5 14B por su natur
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mirvo/gemma-4-12B-it
+- Repositorio Hugging Face: https://huggingface.co/mirvo/gemma-4-12B-it
 - Modelo base (Google): https://huggingface.co/google/gemma-4-12B
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
 - Informe tecnico (arXiv): https://arxiv.org/abs/2607.02770

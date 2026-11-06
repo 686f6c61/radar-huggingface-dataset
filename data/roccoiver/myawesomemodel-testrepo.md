@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario RoccoIver en HuggingFace, con licencia MIT y etiquetado por la plataforma como un modelo basado en BERT para extraccion de caracteristicas (pipeline `feature-extraction`). El repositorio no contiene pesos utilizables: el tamano declarado es de 0,0 GB y no se especifica ninguna configuracion de arquitectura, numero de parametros ni ventana de contexto. Se trata, por el nombre y por el contenido, de un repositorio de prueba creado para validar el flujo de publicacion en el Hub, no de un modelo entrenado para produccion.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario RoccoIver en Hugging Face, con licencia MIT y etiquetado por la plataforma como un modelo basado en BERT para extraccion de caracteristicas (pipeline `feature-extraction`). El repositorio no contiene pesos utilizables: el tamano declarado es de 0,0 GB y no se especifica ninguna configuracion de arquitectura, numero de parametros ni ventana de contexto. Se trata, por el nombre y por el contenido, de un repositorio de prueba creado para validar el flujo de publicacion en el Hub, no de un modelo entrenado para produccion.
 
 La model card incluida describe, sin embargo, un supuesto modelo generativo de razonamiento (denominado tambien MyAwesomeModel) con mejoras en tareas de matematicas, programacion y logica, y cita un incremento de precision en AIME 2025 del 70 % al 87,5 % respecto a una version anterior. Esta descripcion es incompatible con las etiquetas del repositorio (BERT, extraccion de caracteristicas) y con el tamano del mismo, y no incluye especificaciones verificables de arquitectura, datos de entrenamiento ni tokenizador. La tabla de benchmarks que aparece en la model card compara el modelo con entradas anonimizadas (Model1, Model2, Model1-v2), por lo que no es trazable ni auditable.
 
@@ -50,7 +50,7 @@ Dado que no se han publicado pesos ni interfaz de inferencia, no es posible reco
 
 - Extraccion de embeddings para busqueda semantica: si el repositorio corresponde realmente a un encoder BERT, podria generar representaciones vectoriales de frases para indexar y recuperar documentos en un motor de busqueda vectorial. Actualmente no hay pesos para hacerlo.
 - Clasificacion de texto y analisis de sentimiento: un encoder BERT afinado es adecuado para clasificacion de resenas, tickets o correos. No se ha publicado ningun cabezal de clasificacion.
-- Prototipado de pipelines de NLP: el repositorio podria servir como plantilla interna para validar el flujo de subida a HuggingFace (`transformers`, `pytorch`, licencia MIT), no como modelo a integrar.
+- Prototipado de pipelines de NLP: el repositorio podria servir como plantilla interna para validar el flujo de subida a Hugging Face (`transformers`, `pytorch`, licencia MIT), no como modelo a integrar.
 - Evaluacion comparativa de metodologia: la tabla de benchmarks de la model card puede usarse como ejemplo de formato de reporte, no como resultados validos.
 - Documentacion de plantillas de prompt: las plantillas de system prompt, busqueda web y subida de ficheros podrian reutilizarse como referencia de diseno si se validan contra un modelo real.
 - Pruebas de integracion de la libreria transformers: util unicamente para comprobar que un repositorio vacio no rompe la carga de un pipeline `feature-extraction`.
@@ -106,6 +106,6 @@ No disponible. No se puede establecer una comparativa fiable porque no se conoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RoccoIver/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/RoccoIver/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las referencias devueltas (arxiv.org/html/2410.17370v1, arxiv.org/html/2602.00409v1, github.com/Visual-AI/Awesome-Semantic-Correspondence, link.springer.com/article/10.1007/s10664-026-10933-0, arxiv.org/html/2602.02964v1) tratan sobre ingenieria de software asistida por LLMs y correspondencia semantica en vision, y no guardan relacion con MyAwesomeModel ni con el autor RoccoIver.
 - Paper, blog, repositorio de codigo y demo: no disponible. La model card menciona un "code repository" y una "official website" sin proporcionar URL ni identificador.

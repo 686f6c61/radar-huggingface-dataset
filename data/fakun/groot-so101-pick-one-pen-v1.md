@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FAKUN/groot-so101-pick-one-pen-v1 | 2.724.163.520 | no disponible | Política de tarea única (coger un bolígrafo) sobre SO-101 | MIT | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.5-3B (base) | no disponible en la información proporcionada | no disponible | VLA generalista de NVIDIA | no disponible en la información proporcionada | HuggingFace / Isaac-GR00T |
-| Políticas LeRobot entrenadas desde cero (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Manipulación por imitación específica por tarea | habitualmente Apache-2.0 o MIT según implementación | HuggingFace LeRobot |
+| FAKUN/groot-so101-pick-one-pen-v1 | 2.724.163.520 | no disponible | Política de tarea única (coger un bolígrafo) sobre SO-101 | MIT | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.5-3B (base) | no disponible en la información proporcionada | no disponible | VLA generalista de NVIDIA | no disponible en la información proporcionada | Hugging Face / Isaac-GR00T |
+| Políticas LeRobot entrenadas desde cero (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Manipulación por imitación específica por tarea | habitualmente Apache-2.0 o MIT según implementación | Hugging Face LeRobot |
 
 La comparación cuantitativa con alternativas no está disponible: no hay métricas públicas de tasa de éxito ni de precisión de posicionamiento para este checkpoint, y el基 base no publica en esta ficha sus propios números.
 
@@ -83,9 +83,9 @@ La comparación cuantitativa con alternativas no está disponible: no hay métri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FAKUN/groot-so101-pick-one-pen-v1
+- Modelo en Hugging Face: https://huggingface.co/FAKUN/groot-so101-pick-one-pen-v1
 - Proyecto SO101-GR00T: https://github.com/Morantkk/SO101-GR00T
 - Documentación de lecciones del proyecto: `docs/08_LESSONS.md` dentro del repositorio SO101-GR00T
 - NVIDIA Isaac-GR00T (基 base): https://github.com/NVIDIA/Isaac-GR00T
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/GR00T-N1.5-3B
-- HuggingFace LeRobot (formato de datos y control): https://github.com/huggingface/lerobot
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/GR00T-N1.5-3B
+- Hugging Face LeRobot (formato de datos y control): https://github.com/huggingface/lerobot

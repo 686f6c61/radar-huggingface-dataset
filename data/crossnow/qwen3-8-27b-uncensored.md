@@ -95,7 +95,7 @@ La comparativa directa con el base es la unica con datos publicados. Qwen3.8-Max
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrossNow/Qwen3.8-27B-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/CrossNow/Qwen3.8-27B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version GGUF con cuantizaciones imatrix: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
 - Demo interactiva: https://huggingface.co/spaces/JonathanColetti/Qwen3.8-27B-Uncensored-Demo

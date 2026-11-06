@@ -91,8 +91,8 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kanha-minicpm5-2b-grounded-conservative-3ep | 2.516.756.480 | 4096 (entrenamiento) | no disponible | HuggingFace, safetensors bf16 | Ajuste QLoRA con contrato grounded y rechazo literal |
-| openbmb/MiniCPM5-2B | ~2,5 mil millones (heredados) | no disponible | no disponible | HuggingFace | Modelo base; la model card del ajuste no detalla sus caracteristicas |
+| kanha-minicpm5-2b-grounded-conservative-3ep | 2.516.756.480 | 4096 (entrenamiento) | no disponible | Hugging Face, safetensors bf16 | Ajuste QLoRA con contrato grounded y rechazo literal |
+| openbmb/MiniCPM5-2B | ~2,5 mil millones (heredados) | no disponible | no disponible | Hugging Face | Modelo base; la model card del ajuste no detalla sus caracteristicas |
 | Otras alternativas de ~2-3B para RAG grounded | no disponible | no disponible | no disponible | no disponible | No se identifican modelos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kanha-AI/kanha-minicpm5-2b-grounded-conservative-3ep-20260910
+- Modelo en Hugging Face: https://huggingface.co/Kanha-AI/kanha-minicpm5-2b-grounded-conservative-3ep-20260910
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Revision del modelo base y del tokenizer: commit `cd199ce3ee67549c42ef7372f809f2c63599a3e9`
 - Sitio del autor: https://kanha.ai

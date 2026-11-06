@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-35B-A3B-Chat-Aligned-Base (este) | 35,1B | ~3B | 262.144 | openmdw-1.1 | HuggingFace, 163 descargas |
-| Qwen/Qwen3.5-35B-A3B-Base | 35,1B | ~3B | 262.144 | no disponible en la información | HuggingFace (modelo base) |
+| Qwen3.5-35B-A3B-Chat-Aligned-Base (este) | 35,1B | ~3B | 262.144 | openmdw-1.1 | Hugging Face, 163 descargas |
+| Qwen/Qwen3.5-35B-A3B-Base | 35,1B | ~3B | 262.144 | no disponible en la información | Hugging Face (modelo base) |
 | Modelos instruction-tuned oficiales de Qwen3.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación con alternativas de la misma categoría no está disponible en la información proporcionada; el único comparable documentado es el propio modelo base del que deriva.
@@ -84,7 +84,7 @@ La comparación con alternativas de la misma categoría no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Qwen3.5-35B-A3B-Chat-Aligned-Base-2026.10.31
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Qwen3.5-35B-A3B-Chat-Aligned-Base-2026.10.31
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-Terminal-Corpus
 - Repositorio Marin: https://github.com/marin-community/marin

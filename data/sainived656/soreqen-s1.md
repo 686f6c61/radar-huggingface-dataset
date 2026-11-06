@@ -101,7 +101,7 @@ No se dispone de comparaciones con otros modelos de la misma categoría (por eje
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sainived656/soreqen-s1
+- Hugging Face del modelo: https://huggingface.co/sainived656/soreqen-s1
 - Versión mini (0,8B): https://huggingface.co/sainived656/soreqen-s1-mini
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - LLM Explorer (ficha con VRAM estimada): https://llm-explorer.com/model/sainived656%2Fsoreqen-s1,1SPiSXnuIGYqQIo9ngJPGz

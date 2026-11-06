@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q25_abstain_1200` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 el 23 de octubre de 2026. Se distribuye en formato safetensors con 1.543.714.304 parámetros totales (aproximadamente 1,54 mil millones), lo que lo sitúa en la categoria de modelos pequenos aptos para inferencia en hardware de consumo. El tag `qwen2` indica que la arquitectura pertenece a la familia Qwen2, y el sufijo `q25` del identificador sugiere un punto de partida basado en Qwen2.5, aunque esta correspondencia no esta confirmada en la informacion disponible.
+`alfred8995/r17-bk-pf-q25_abstain_1200` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 el 23 de octubre de 2026. Se distribuye en formato safetensors con 1.543.714.304 parámetros totales (aproximadamente 1,54 mil millones), lo que lo sitúa en la categoria de modelos pequenos aptos para inferencia en hardware de consumo. El tag `qwen2` indica que la arquitectura pertenece a la familia Qwen2, y el sufijo `q25` del identificador sugiere un punto de partida basado en Qwen2.5, aunque esta correspondencia no esta confirmada en la informacion disponible.
 
 El nombre incluye el termino `abstain`, que apunta a un ajuste fino orientado a la abnegacion o abdispersion de respuesta (el modelo declina contestar en lugar de arriesgar una respuesta incorrecta), un comportamiento relevante para sistemas que necesitan calibrar cuando no saben algo. No obstante, no se ha publicado model card, pipeline ni documentacion tecnica asociada, por lo que esta hipotesis no puede verificarse.
 
-El acceso al repositorio es restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y el repositorio ocupa 3,1 GB. La relevancia actual es limitada y experimental: se trata de un artefacto de investigacion sin validacion publica, pero resulta de interes para quienes estudian el comportamiento de abstención en modelos de menos de 2 B.
+El acceso al repositorio es restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y el repositorio ocupa 3,1 GB. La relevancia actual es limitada y experimental: se trata de un artefacto de investigacion sin validacion publica, pero resulta de interes para quienes estudian el comportamiento de abstención en modelos de menos de 2 B.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ El acceso al repositorio es restringido (gated): requiere aceptar condiciones en
 | Idiomas soportados | no disponible (no declarados) |
 | Licencia | `other` (licencia no estandar; requiere revisar los terminos del repositorio antes de cualquier uso) |
 | Formato de pesos | safetensors (repositorio de 3,1 GB) |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-10-23 |
 
 ## Arquitectura y entrenamiento
@@ -69,17 +69,17 @@ Los datos de los modelos de referencia provienen de su documentacion publica y n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `alfred8995/r17-bk-pf-q25_abstain_1200` | 1,54 B | no disponible | `other` | HuggingFace, acceso restringido | Sin model card ni benchmarks; 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (dato publico del modelo de referencia) | Apache-2.0 (dato publico del modelo de referencia) | HuggingFace, acceso abierto | Base probable de este ajuste; con evaluaciones publicadas |
-| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (dato publico del modelo de referencia) | Llama 3.2 Community License (dato publico del modelo de referencia) | HuggingFace, acceso con aceptacion de licencia | Alternativa de tamano similar con soporte de tool calling |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens (dato publico del modelo de referencia) | Apache-2.0 (dato publico del modelo de referencia) | HuggingFace, acceso abierto | Entrenado con foco en datos de calidad y ajuste por preferencias |
+| `alfred8995/r17-bk-pf-q25_abstain_1200` | 1,54 B | no disponible | `other` | Hugging Face, acceso restringido | Sin model card ni benchmarks; 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (dato publico del modelo de referencia) | Apache-2.0 (dato publico del modelo de referencia) | Hugging Face, acceso abierto | Base probable de este ajuste; con evaluaciones publicadas |
+| Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens (dato publico del modelo de referencia) | Llama 3.2 Community License (dato publico del modelo de referencia) | Hugging Face, acceso con aceptacion de licencia | Alternativa de tamano similar con soporte de tool calling |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens (dato publico del modelo de referencia) | Apache-2.0 (dato publico del modelo de referencia) | Hugging Face, acceso abierto | Entrenado con foco en datos de calidad y ajuste por preferencias |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card, ficha de datos ni notas de entrenamiento, lo que impide evaluar la procedencia de los datos y los sesgos inducidos.
 - Riesgo de alucinacion desconocido: no se han medido tasas de error ni la eficacia real del supuesto comportamiento de abstención.
 - Idiomas no declarados: no puede asumirse un rendimiento aceptable en castellano ni en ningun otro idioma sin pruebas propias.
-- Licencia `other` sin texto identificado: es imprescindible leer los terminos del repositorio antes de cualquier uso comercial; la designacion "other" en HuggingFace suele implicar condiciones no estandar y potencialmente restrictivas.
+- Licencia `other` sin texto identificado: es imprescindible leer los terminos del repositorio antes de cualquier uso comercial; la designacion "other" en Hugging Face suele implicar condiciones no estandar y potencialmente restrictivas.
 - Acceso restringido (gated): la descarga requiere aceptar condiciones y puede implicar comparticion de datos de contacto con el autor; ademas limita la reproducibilidad de experimentos por terceros.
 - Sin cuantizaciones publicadas: no hay GGUF ni AWQ, por lo que el despliegue en CPU o en GPUs muy limitadas exige trabajo adicional de conversion y validacion.
 - Reputacion del autor: 0 descargas y 0 likes, sin historial verificable; no hay evidencia de que el ajuste haya sido evaluado fuera del autor.
@@ -88,9 +88,9 @@ Los datos de los modelos de referencia provienen de su documentacion publica y n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q25_abstain_1200
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q25_abstain_1200
 - Indice de modelos abliterated (contexto general, no especifico de este modelo): https://www.abliteratedmodels.org/
 - Lista de modelos de seguridad ofensiva en GitHub (contexto general): https://github.com/JoasASantos/Offensive-Security-AI-Models
-- Explorador de modelos de HuggingFace: https://huggingface.co/models
+- Explorador de modelos de Hugging Face: https://huggingface.co/models
 - Articulo sobre ejecucion local de modelos sin restricciones (contexto general): https://medium.com/@PranayXdefSec/i-removed-the-ai-handcuffs-running-an-uncensored-8b-model-locally-via-ollama-413030d9d461
 - Repositorio de tecnicas de bypass (contexto general): https://github.com/arun9557/model-bypass

@@ -91,7 +91,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gcoli/LFM2.5-2.6B-MLX-oQ4e-fp16
+- Repositorio en Hugging Face: https://huggingface.co/gcoli/LFM2.5-2.6B-MLX-oQ4e-fp16
 - Herramienta de cuantizacion oQ / oMLX (citada en la model card): https://github.com/jundot/omlx
 - Framework MLX: no proporcionado en la informacion disponible
 - Modelo base LFM2.5-2.6B: no proporcionado en la informacion disponible

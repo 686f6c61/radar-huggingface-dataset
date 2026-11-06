@@ -64,7 +64,7 @@ No disponible. No se puede comparar con otros modelos de lenguaje porque no es u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbenchmarks/parallel-turbo
+- Repositorio Hugging Face: https://huggingface.co/openbenchmarks/parallel-turbo
 - Blog de Parallel Search Turbo: https://parallel.ai/blog/parallel-search-turbo
 - Documentación de la API (referenciada en la model card): https://docs.parallel.ai/api-reference/search/search
 - Leaderboard en vivo: https://parallel.ai

@@ -81,7 +81,7 @@ No se dispone de informacion sobre otros repositorios de ajustes PhysTwin compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DAIRLab/deform360_phystwin_models
+- Repositorio en Hugging Face: https://huggingface.co/DAIRLab/deform360_phystwin_models
 - Dataset crudo Deform360: https://huggingface.co/datasets/brownu/deform360
 - Dataset procesado Deform360: https://huggingface.co/datasets/brownu/deform360_processed
 - Run `deform-rope-ep0-dp5`: https://huggingface.co/DAIRLab/deform360_phystwin_models/blob/main/processed/001-rope/episode_0/runs/deform-rope-ep0-dp5/README.md

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (Llama 3.1 8B + LoRA) | 8.030 M (base) | 128.000 (base) | no disponible | HuggingFace, 15 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | HuggingFace, ampliamente adoptado |
-| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7.620 M | 131.072 | Apache 2.0 (mayoría de variantes) | HuggingFace |
+| Este adaptador (Llama 3.1 8B + LoRA) | 8.030 M (base) | 128.000 (base) | no disponible | Hugging Face, 15 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
+| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7.620 M | 131.072 | Apache 2.0 (mayoría de variantes) | Hugging Face |
 
 El adaptador no aporta ventajas medibles frente al modelo base sin una evaluación propia; su interés es experimental. Frente a Mistral y Qwen, la licencia de Llama 3.1 es más restrictiva y la del adaptador es desconocida.
 
@@ -83,7 +83,7 @@ El adaptador no aporta ventajas medibles frente al modelo base sin una evaluaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/em-eval/llama3.1-8b-good-finance-block_em_data-model_org_recipe-chatgpt_system-s0
+- Repositorio Hugging Face: https://huggingface.co/em-eval/llama3.1-8b-good-finance-block_em_data-model_org_recipe-chatgpt_system-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - PEFT: https://github.com/huggingface/peft
 - TRL: https://github.com/huggingface/trl

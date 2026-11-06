@@ -98,12 +98,12 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 ## Enlaces
 
 - Repositorio analizado: https://huggingface.co/Sompareq23/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Repositorio en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - README en GitHub: https://github.com/QwenLM/Qwen-Image-2.1/blob/main/README.md
 - Blog de presentacion: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Canal de Discord: https://discord.gg/BEYSk3pkSu
 - Formulario de feedback del equipo: https://alidocs.dingtalk.com/notable/share/form/v01WgZOZA5DaVQPeqLX_dv19yqvsgs3oebp3pcjys_1qX0QQ0?source=link
-- Mirror de terceros en HuggingFace: https://huggingface.co/unsloth/Qwen-Image-2.1
+- Mirror de terceros en Hugging Face: https://huggingface.co/unsloth/Qwen-Image-2.1

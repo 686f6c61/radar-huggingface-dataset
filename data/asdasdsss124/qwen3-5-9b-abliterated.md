@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-abliterated es una versión modificada del modelo Qwen/Qwen3.5-9B, publicada por el usuario asdasdsss124 en HuggingFace. El objetivo declarado es eliminar por completo el comportamiento de rechazo (refusal) del modelo base mediante una técnica de abliteración en el espacio de pesos, complementada con un ajuste fino LoRA posterior. El modelo conserva la arquitectura del original pero sustituye su alineamiento de seguridad por un comportamiento sin restricciones declaradas.
+Qwen3.5-9B-abliterated es una versión modificada del modelo Qwen/Qwen3.5-9B, publicada por el usuario asdasdsss124 en Hugging Face. El objetivo declarado es eliminar por completo el comportamiento de rechazo (refusal) del modelo base mediante una técnica de abliteración en el espacio de pesos, complementada con un ajuste fino LoRA posterior. El modelo conserva la arquitectura del original pero sustituye su alineamiento de seguridad por un comportamiento sin restricciones declaradas.
 
 El modelo parte de Qwen3.5-9B, que emplea una arquitectura híbrida que combina capas DeltaNet (atención lineal) con atención estándar en un patrón repetido de 3 capas DeltaNet por cada capa de atención. Cuenta con 8.953.803.264 parámetros reales (verificados mediante safetensors) y un repositorio de 17,9 GB, lo que corresponde a pesos en precisión completa (bf16/fp16) sin cuantizar.
 
@@ -103,10 +103,10 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Rendimiento en benchmark de rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-abliterated (este modelo) | 8,95B | no disponible | 17/18 (94%), 18/18 en mejor de 3 | apache-2.0 | HuggingFace, safetensors, 0 descargas |
-| Qwen3.5-9B base | 8,95B | no disponible | 0/18 (0%) | apache-2.0 | HuggingFace |
-| Dolphin-Mistral 7B | 7B | no disponible | 17/18 (94%) | no disponible en esta ficha | HuggingFace |
-| wangzhang/Qwen3.5-9B-abliterated | 9B (clase) | no disponible | 12/200 rechazos (94% de reducción) | no disponible en esta ficha | HuggingFace, creado con Prometheus |
+| Qwen3.5-9B-abliterated (este modelo) | 8,95B | no disponible | 17/18 (94%), 18/18 en mejor de 3 | apache-2.0 | Hugging Face, safetensors, 0 descargas |
+| Qwen3.5-9B base | 8,95B | no disponible | 0/18 (0%) | apache-2.0 | Hugging Face |
+| Dolphin-Mistral 7B | 7B | no disponible | 17/18 (94%) | no disponible en esta ficha | Hugging Face |
+| wangzhang/Qwen3.5-9B-abliterated | 9B (clase) | no disponible | 12/200 rechazos (94% de reducción) | no disponible en esta ficha | Hugging Face, creado con Prometheus |
 | huihui_ai/qwen3.5-abliterated:9b | 9B (clase) | no disponible | no disponible | no disponible en esta ficha | Ollama |
 
 La ventaja declarada por el autor frente a Dolphin-Mistral 7B es el mayor número de parámetros (8,95B frente a 7B) manteniendo una tasa de respuesta equivalente, lo que en teoría mejora razonamiento, código y conocimiento. No hay benchmarks de capacidades estandarizados que confirmen esa ventaja de forma cuantitativa.
@@ -126,12 +126,12 @@ La ventaja declarada por el autor frente a Dolphin-Mistral 7B es el mayor númer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asdasdsss124/Qwen3.5-9B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/asdasdsss124/Qwen3.5-9B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de referencia del método de abliteración (Arditi et al., 2024): https://arxiv.org/abs/2406.11717
 - Dolphin-Mistral 7B (modelo de comparación): https://huggingface.co/cognitivecomputations/dolphin-2.6-mistral-7b
 - Variante de terceros en Ollama (huihui_ai/qwen3.5-abliterated): https://ollama.com/huihui_ai/qwen3.5-abliterated
 - Variante de terceros en Ollama (etiqueta 9b): https://ollama.com/huihui_ai/qwen3.5-abliterated:9b
-- Variante alternativa en HuggingFace (wangzhang/Qwen3.5-9B-abliterated): https://huggingface.co/wangzhang/Qwen3.5-9B-abliterated/blob/main/README.md
+- Variante alternativa en Hugging Face (wangzhang/Qwen3.5-9B-abliterated): https://huggingface.co/wangzhang/Qwen3.5-9B-abliterated/blob/main/README.md
 - Guía de despliegue local (Ollama, GGUF, llama.cpp, vLLM): https://codersera.com/blog/unrestricted-uncensored-qwen35-9b-abliterated-full-guide/
 - Análisis de la variante huihui en HackerNoon: https://hackernoon.com/huihui-qwen35-9b-abliterated-what-this-uncensored-model-does

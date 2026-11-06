@@ -59,4 +59,4 @@ No se dispone de datos suficientes para realizar una comparativa fiable. El mode
 
 ## Enlaces
 
-- [HuggingFace - lhkhiem28/Nemotron-1.5B-OpenR1-GRPO](https://huggingface.co/lhkhiem28/Nemotron-1.5B-OpenR1-GRPO)
+- [Hugging Face - lhkhiem28/Nemotron-1.5B-OpenR1-GRPO](https://huggingface.co/lhkhiem28/Nemotron-1.5B-OpenR1-GRPO)

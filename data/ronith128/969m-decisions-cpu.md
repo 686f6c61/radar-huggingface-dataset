@@ -90,8 +90,8 @@ La latencia de 96,06 ms de mediana incluye tokenización, inferencia y decodific
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| 969M-Decisions-CPU | 969M | 512 tokens cualificados; 4096 experimental | 75,80 % en test diagnóstico de decisiones tipadas; 96,37 % en CLINC150; 94,80 % en Banking77 10-way | LFM Open License 1.0 | HuggingFace; OpenVINO INT8 para CPU |
-| LiquidAI/LFM2.5-1.2B-Instruct | 1,2B | no disponible | no disponible | LFM Open License 1.0, según el enlace de licencia del autor | HuggingFace |
+| 969M-Decisions-CPU | 969M | 512 tokens cualificados; 4096 experimental | 75,80 % en test diagnóstico de decisiones tipadas; 96,37 % en CLINC150; 94,80 % en Banking77 10-way | LFM Open License 1.0 | Hugging Face; OpenVINO INT8 para CPU |
+| LiquidAI/LFM2.5-1.2B-Instruct | 1,2B | no disponible | no disponible | LFM Open License 1.0, según el enlace de licencia del autor | Hugging Face |
 | Microsoft-Decision-1 | no disponible | no disponible | 83,5 % de precisión y 0,042 USD/M tokens según la búsqueda; 35 veces más rápido que GPT-6 Sol, no verificado de forma independiente | Propietaria | Microsoft Foundry |
 
 No se identifican alternativas open source con parámetros y benchmarks comparables en la información disponible.
@@ -111,7 +111,7 @@ No se identifican alternativas open source con parámetros y benchmarks comparab
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ronith128/969M-Decisions-CPU)
+- [Modelo en Hugging Face](https://huggingface.co/ronith128/969M-Decisions-CPU)
 - [Modelo base LiquidAI/LFM2.5-1.2B-Instruct](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct)
 - [Licencia LFM Open License 1.0](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE)
 - [Microsoft-Decision-1 en Microsoft Foundry](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/)

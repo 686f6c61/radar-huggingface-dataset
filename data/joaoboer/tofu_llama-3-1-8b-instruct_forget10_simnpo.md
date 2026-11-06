@@ -92,9 +92,9 @@ No se dispone de resultados comparativos con otros metodos de olvido dentro de l
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tofu_Llama-3.1-8B-Instruct_forget10_SimNPO | ~8B | 128.000 tokens (heredado, no confirmado) | Olvido de `forget10` con SimNPO | llama3.1 | HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | ~8B | 128.000 tokens (heredado) | Fine-tuning completo sobre TOFU, sin olvido | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128.000 tokens | Asistente generalista con *alignment* | llama3.1 | HuggingFace |
+| tofu_Llama-3.1-8B-Instruct_forget10_SimNPO | ~8B | 128.000 tokens (heredado, no confirmado) | Olvido de `forget10` con SimNPO | llama3.1 | Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.1-8B-Instruct_full | ~8B | 128.000 tokens (heredado) | Fine-tuning completo sobre TOFU, sin olvido | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128.000 tokens | Asistente generalista con *alignment* | llama3.1 | Hugging Face |
 
 Los tres modelos comparten arquitectura y tamano, de modo que las diferencias relevantes son de comportamiento, no de escala: el checkpoint de Meta es un asistente generalista, el modelo `_full` esta ajustado sobre TOFU completo y este checkpoint aplica olvido sobre el 10 % de TOFU. No hay datos publicados de rendimiento comparado entre ellos en la informacion disponible, por lo que la comparacion cuantitativa no es posible.
 
@@ -114,7 +114,7 @@ Los tres modelos comparten arquitectura y tamano, de modo que las diferencias re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_SimNPO
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.1-8B-Instruct_forget10_SimNPO
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.1-8B-Instruct_full
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning

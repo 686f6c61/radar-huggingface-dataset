@@ -94,7 +94,7 @@ La comparación más directa es con los modelos llama-pixar del mismo proyecto, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TYTTYTTYT/mgpt2-124m-mc4
+- Modelo en Hugging Face: https://huggingface.co/TYTTYTTYT/mgpt2-124m-mc4
 - Código del proyecto MIXAR: https://github.com/april-tools/mixar
 - Paper MIXAR: https://arxiv.org/abs/2604.11575
 - Modelo llama-pixar-116m-p8: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8

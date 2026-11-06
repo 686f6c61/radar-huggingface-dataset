@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_0` es un checkpoint experimental publicado por el usuario `gianmaTest` en HuggingFace. No es un modelo de lenguaje: se trata de una red neuronal de 2.366.208 parámetros (aproximadamente 2,37 millones) serializada en `safetensors` y subida al Hub mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`. El repositorio no incluye pipeline declarado, licencia, idiomas ni model card sustantiva: el README es la plantilla automática que genera dicha integración.
+`generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_0` es un checkpoint experimental publicado por el usuario `gianmaTest` en Hugging Face. No es un modelo de lenguaje: se trata de una red neuronal de 2.366.208 parámetros (aproximadamente 2,37 millones) serializada en `safetensors` y subida al Hub mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`. El repositorio no incluye pipeline declarado, licencia, idiomas ni model card sustantiva: el README es la plantilla automática que genera dicha integración.
 
 El identificador del repositorio sugiere, sin confirmación por parte del autor, un modelo jerárquico ("hier_by_room") basado en RNN con agregación por mean pooling ("meanPoolProc") aplicado a datos de vídeo ("video"). Esta lectura es una inferencia a partir del nombre del repositorio y no debe tomarse como documentación oficial. El tamaño del repo es de 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `gianmaTest/generatedDigitalExps_1xL6U4_...` | 2.366.208 | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card ni benchmarks |
+| `gianmaTest/generatedDigitalExps_1xL6U4_...` | 2.366.208 | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card ni benchmarks |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se han encontrado referencias |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_0
 - Documentacion de `PyTorchModelHubMixin` citada en la model card: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo: no disponible

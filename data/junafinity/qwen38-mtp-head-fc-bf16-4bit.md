@@ -72,6 +72,6 @@ La comparativa se limita a las variantes de cuantización de la misma cabeza MTP
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/junafinity/qwen38-mtp-head-fc-bf16-4bit
+- Repositorio en Hugging Face: https://huggingface.co/junafinity/qwen38-mtp-head-fc-bf16-4bit
 - Modelo base: https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-bf16
 - Release FP8 oficial de Qwen (referencia para `modules_to_not_convert`): https://huggingface.co/Qwen/Qwen3.8-27B-FP8

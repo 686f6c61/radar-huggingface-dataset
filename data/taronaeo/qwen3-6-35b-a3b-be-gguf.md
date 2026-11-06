@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taronaeo/Qwen3.6-35B-A3B-BE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/taronaeo/Qwen3.6-35B-A3B-BE-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Guia de compilacion para s390x en llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/docs/build-s390x.md

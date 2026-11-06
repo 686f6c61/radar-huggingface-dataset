@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vitorat2622/review-efficient-attention` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre atencion eficiente (*efficient attention*) publicado en HuggingFace bajo el identificador de un usuario individual. La propia model card lo describe como "un conjunto estructurado de notas de investigacion", con el archivo `analysis.md` como artefacto principal, y aclara de forma explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El repositorio incluye los tags `research-notes` y `efficient-attention`, junto con `safetensors` y `transformer`, que en este contexto son etiquetas de clasificacion y no una descripcion de pesos utilizables.
+`vitorat2622/review-efficient-attention` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre atencion eficiente (*efficient attention*) publicado en Hugging Face bajo el identificador de un usuario individual. La propia model card lo describe como "un conjunto estructurado de notas de investigacion", con el archivo `analysis.md` como artefacto principal, y aclara de forma explicita que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El repositorio incluye los tags `research-notes` y `efficient-attention`, junto con `safetensors` y `transformer`, que en este contexto son etiquetas de clasificacion y no una descripcion de pesos utilizables.
 
 El dato mas relevante para un evaluador tecnico es el recuento de parametros declarado en el archivo safetensors: 24,832 parametros totales (veinticuatro mil ochocientos treinta y dos). Se trata de un orden de magnitud propio de un tensor auxiliar, un artefacto de prueba o un fichero residual, no de un transformer con capacidad de generacion de texto. El tamano del repositorio es de 0.0 GB, no tiene descargas ni likes, y fue creado y actualizado el 10 de septiembre de 2026 con apenas seis segundos de diferencia entre ambos eventos, lo que sugiere una subida unica sin iteracion posterior.
 
@@ -42,7 +42,7 @@ Respecto al entrenamiento, la model card es explicita: no se ha publicado ningun
 - Revision bibliografica sobre atencion eficiente: el repositorio puede consultarse como punto de partida para identificar el alcance de la pregunta de investigacion, los confounders probables y las referencias relevantes al tema. Es su proposito declarado.
 - Diseno de un protocolo experimental: las notas proponen una comparacion con baselines emparejados y mencionan comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, lo que puede reutilizarse como borrador de diseno experimental.
 - Seleccion de datasets de evaluacion: las referencias a Long Range Arena para secuencias largas, ImageNet-1K para vision e Flickr30k para recuperacion texto-imagen pueden servir como punto de partida, siempre verificando las fuentes originales.
-- Auditoria de repositorios etiquetados como modelos: este caso es el mas realista en produccion. Un equipo que filtre HuggingFace por tags `transformer` y `safetensors` puede acabar con este repositorio en la lista; incluirlo en una checklist de validacion previa a la integracion evita fallos silenciosos.
+- Auditoria de repositorios etiquetados como modelos: este caso es el mas realista en produccion. Un equipo que filtre Hugging Face por tags `transformer` y `safetensors` puede acabar con este repositorio en la lista; incluirlo en una checklist de validacion previa a la integracion evita fallos silenciosos.
 - Prueba de pipelines de descarga y versionado: al ser un repositorio de 0.0 GB con licencia cc-by-4.0, puede usarse para verificar que un sistema de gestion de artefactos maneja correctamente repositorios sin pesos funcionales.
 - Formacion interna sobre licencias: el propio README advierte de que, al usar el repositorio con datasets externos, deben revisarse por separado los terminos de los datos de origen, lo que lo convierte en un ejemplo practico de conflicto entre licencia del artefacto y licencia de los datos referenciados.
 - Inferencia o despliegue en produccion: no es un caso de uso valido. El artefacto no permite inferencia.
@@ -70,7 +70,7 @@ No disponible. El repositorio no pertenece a la categoria de modelos de lenguaje
 | Contexto | no disponible | Declarado en cada publicacion |
 | Resultados | Ninguno declarado | Tablas de benchmark publicadas |
 | Licencia | cc-by-4.0 | Variable (Apache-2.0, MIT, etc.) |
-| Disponibilidad | Repositorio en HuggingFace, 0 descargas | Repositorios con uso activo |
+| Disponibilidad | Repositorio en Hugging Face, 0 descargas | Repositorios con uso activo |
 
 ## Limitaciones y advertencias
 
@@ -86,6 +86,6 @@ No disponible. El repositorio no pertenece a la categoria de modelos de lenguaje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vitorat2622/review-efficient-attention
+- Repositorio en Hugging Face: https://huggingface.co/vitorat2622/review-efficient-attention
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este repositorio, su autor o las notas. Los resultados obtenidos correspondian a paginas de soporte tecnico de Microsoft (contacto, inicio de sesion en Hotmail, deprecacion de Exchange Online EWS, descarga de ISO de Windows 8.1 y cambio de frecuencia de refresco en Windows) y no guardan relacion con el contenido de esta ficha.
 - Paper, blog, repositorio de codigo o demo asociados: no disponibles.

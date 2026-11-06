@@ -90,6 +90,6 @@ Tosilos se posiciona como una alternativa europea y sin censura para tareas de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nesilabs/tosilos-128b
+- Modelo en Hugging Face: https://huggingface.co/nesilabs/tosilos-128b
 - Conversión GGUF comunitaria (elsauto): https://huggingface.co/elsauto/tosilos-128b-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Medium-3.5-128B

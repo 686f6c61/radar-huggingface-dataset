@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CodeGenDetect-Bert-T1 es un ajuste fino (fine-tune) de `google-bert/bert-base-uncased` publicado por el usuario azherali en HuggingFace. Se trata de un modelo de clasificación de texto de tipo encoder, con 109.483.778 parámetros, entrenado sobre un conjunto de datos que la propia model card identifica como "None" y sobre el que no se aporta ninguna descripción. El nombre del repositorio sugiere una tarea de detección de código generado, pero la model card no documenta el esquema de etiquetas ni la composición del corpus, por lo que la tarea exacta no puede confirmarse a partir de la información disponible.
+CodeGenDetect-Bert-T1 es un ajuste fino (fine-tune) de `google-bert/bert-base-uncased` publicado por el usuario azherali en Hugging Face. Se trata de un modelo de clasificación de texto de tipo encoder, con 109.483.778 parámetros, entrenado sobre un conjunto de datos que la propia model card identifica como "None" y sobre el que no se aporta ninguna descripción. El nombre del repositorio sugiere una tarea de detección de código generado, pero la model card no documenta el esquema de etiquetas ni la composición del corpus, por lo que la tarea exacta no puede confirmarse a partir de la información disponible.
 
 El modelo declara métricas de evaluación notables sobre un conjunto no identificado: exactitud de 0,9431, F1 de 0,9430, precisión de 0,9434 y recall de 0,9427, con una pérdida de 0,1971. El entrenamiento se realizó durante 5 épocas con un total de 84.485 pasos y un batch de 64, lo que implica del orden de 1,08 millones de ejemplos por época.
 
@@ -30,7 +30,7 @@ Su relevancia práctica es la de un clasificador BERT pequeño y desplegable en 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de BERT base: un transformer encoder de 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, con 109,48 millones de parámetros, sobre el que se ha añadido una cabeza de clasificación de secuencia (pooler + capa lineal). No hay innovaciones arquitectónicas propias: el modelo parte de los pesos preentrenados de `bert-base-uncased` y aplica un ajuste fino supervisado estándar con `Trainer` de HuggingFace. El repositorio pesa 2,6 GB, coherente con la presencia de checkpoints intermedios además de los pesos finales.
+La arquitectura es la de BERT base: un transformer encoder de 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, con 109,48 millones de parámetros, sobre el que se ha añadido una cabeza de clasificación de secuencia (pooler + capa lineal). No hay innovaciones arquitectónicas propias: el modelo parte de los pesos preentrenados de `bert-base-uncased` y aplica un ajuste fino supervisado estándar con `Trainer` de Hugging Face. El repositorio pesa 2,6 GB, coherente con la presencia de checkpoints intermedios además de los pesos finales.
 
 Los hiperparámetros declarados son: learning rate 2e-5, batch de entrenamiento y evaluación de 64, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con un 10 % de warmup, 5 épocas y precisión mixta nativa (AMP). El entrenamiento alcanzó 84.485 pasos, es decir, 16.897 pasos por época; con batch 64 esto supone aproximadamente 1,08 millones de ejemplos por época. La pérdida de entrenamiento descendió de 0,1703 a 0,0704, mientras que la pérdida de validación tocó mínimo en la época 2 (0,1490) y repuntó hasta 0,1971 en la época 5, lo que indica sobreajuste a partir de la tercera época. No se documenta la composición del dataset, el esquema de etiquetas, ni si hubo limpieza, deduplicación o balanceo de clases.
 
@@ -51,7 +51,7 @@ Los hiperparámetros declarados son: learning rate 2e-5, batch de entrenamiento 
 - Apoyo a la docencia de programación: analizar entregas de alumnos en asignaturas de programación y usar la puntuación del clasificador como indicio para una entrevista de verificación, nunca como veredicto automático.
 - Enriquecimiento de datasets de investigación: etiquetar corpus de código con una variable adicional (probabilidad de generación sintética) para estudios sobre calidad, seguridad o evolución del código publicado.
 - Prefiltrado en pipelines antiplagio: usar el modelo como primera etapa barata que descarte la mayoría de los casos claros, reservando modelos más grandes o revisión manual para los casos dudosos.
-- Servicio HTTP de baja latencia: desplegar el modelo con Text Embeddings Inference o con un endpoint compatible de HuggingFace para exponer una API de clasificación con latencias de milisegundos por petición.
+- Servicio HTTP de baja latencia: desplegar el modelo con Text Embeddings Inference o con un endpoint compatible de Hugging Face para exponer una API de clasificación con latencias de milisegundos por petición.
 
 ## Benchmarks y rendimiento
 
@@ -84,17 +84,17 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM en int8: alrededor de 0,11 GB de pesos; la cuantización no está documentada por el autor, pero es aplicable con herramientas estándar de transformers.
 - GPU recomendadas: cualquier GPU con más de 2 GB de VRAM. Para lotes grandes, una T4, L4, A10G o RTX 3060 en adelante son suficientes; A100/H100 solo tienen sentido para volúmenes de millones de peticiones.
 - Cabe holgadamente en GPU de consumo: GTX 1650, RTX 2060, RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para cargas por lotes no urgentes.
-- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (etiqueta declarada en el repositorio), endpoints compatibles de HuggingFace, exportación a ONNX Runtime o TorchScript para servir sin dependencia de Python en producción.
+- Opciones de despliegue: pipeline de `transformers`, Text Embeddings Inference (etiqueta declarada en el repositorio), endpoints compatibles de Hugging Face, exportación a ONNX Runtime o TorchScript para servir sin dependencia de Python en producción.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. Por tamano, es esperable un throughput de miles de secuencias por segundo en GPU moderna con batch grande, pero se trata de una estimación, no de un dato del autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeGenDetect-Bert-T1 | 109,48 M | 512 tokens | Clasificacion de texto (esquema no documentado) | Apache 2.0 | HuggingFace, 0 descargas |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Encoder general, ajustable | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-uncased | 66 M | 512 tokens | Encoder general, ajustable | Apache 2.0 | HuggingFace, ampliamente usado |
-| roberta-base | 125 M | 512 tokens | Encoder general, ajustable | MIT | HuggingFace, ampliamente usado |
+| CodeGenDetect-Bert-T1 | 109,48 M | 512 tokens | Clasificacion de texto (esquema no documentado) | Apache 2.0 | Hugging Face, 0 descargas |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Encoder general, ajustable | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-uncased | 66 M | 512 tokens | Encoder general, ajustable | Apache 2.0 | Hugging Face, ampliamente usado |
+| roberta-base | 125 M | 512 tokens | Encoder general, ajustable | MIT | Hugging Face, ampliamente usado |
 
 La comparación relevante no es de rendimiento en la tarea (no hay datos publicados de los alternativas en este dominio concreto) sino de madurez: frente a los encoders base, este modelo aporta una cabeza ya entrenada, pero carece de la documentación, el historial de uso y la validación comunitaria de aquellos. Cualquier alternativa ajustada por el propio equipo sobre su dataset será probablemente más fiable que este checkpoint, dado que su conjunto de entrenamiento y sus etiquetas son desconocidos.
 
@@ -113,8 +113,8 @@ La comparación relevante no es de rendimiento en la tarea (no hay datos publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azherali/CodeGenDetect-Bert-T1
+- Modelo en Hugging Face: https://huggingface.co/azherali/CodeGenDetect-Bert-T1
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
-- Repositorio del autor en HuggingFace: https://huggingface.co/azherali
+- Repositorio del autor en Hugging Face: https://huggingface.co/azherali
 - Documentación de Text Embeddings Inference: https://huggingface.co/docs/text-embeddings-inference
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la información disponible.

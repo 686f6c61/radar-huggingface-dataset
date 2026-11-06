@@ -6,7 +6,7 @@ ds4-winhip es un repositorio de código fuente y binarios, no un modelo de pesos
 
 El problema que resuelve es concreto: los expertos enrutados de estos builds lecore VQ están almacenados como blobs de libros de código vector-cuantizados (`vq8x4096/1024`), un formato que llama.cpp, vLLM y Ollama no pueden cargar. Solo el runtime `ds4` conoce ese layout, de modo que este repositorio publica el árbol de trabajo compilable, los scripts de build (`build_gpu.cmd`, `build_host.cmd`, `link_server.ps1`) y el comando exacto de ejecución para no tener que redescubrirlos.
 
-El repositorio incluye además el binario ya compilado `ds4-server.exe` (Windows x64, HIP 7.2), que expone una API compatible con OpenAI en `http://127.0.0.1:8008/v1`. El tamaño del repo es de 0,0 GB según HuggingFace, con 0 descargas y 0 likes en el momento de la consulta.
+El repositorio incluye además el binario ya compilado `ds4-server.exe` (Windows x64, HIP 7.2), que expone una API compatible con OpenAI en `http://127.0.0.1:8008/v1`. El tamaño del repo es de 0,0 GB según Hugging Face, con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ La comparación relevante aquí es de runtimes, no de modelos: el rasgo diferenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/staccs/ds4-winhip
+- Repositorio Hugging Face: https://huggingface.co/staccs/ds4-winhip
 - Runtime upstream (fork base): https://github.com/Baekpica/ds4-dfm-rs
 - Sidecars (visión y builds VQ): https://huggingface.co/staccs/ds41-sidecars
 - Pesos DeepSeek-V4.1-Flash-1017: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017

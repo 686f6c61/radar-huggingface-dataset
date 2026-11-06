@@ -28,7 +28,7 @@ El adaptador se entrenó mediante DPO sobre el modelo base `nvidia/NVIDIA-Nemotr
 - Al ser un adaptador LoRA, no posee capacidades propias; sus funcionalidades dependen enteramente del modelo base Nemotron-3 Nano 30B A3B.
 - Segun el nombre del adaptador, esta disenado para tareas de escritura a partir de prompts (generacion de texto creativo o narrativo), imitando el comportamiento de Llama-3.3-70B en ese dominio.
 - No se dispone de informacion sobre soporte de tool calling, funciones de agente, razonamiento multi-paso, capacidades multilingues o modos especiales (vision, audio, thinking mode).
-- El unico uso documentado es la carga mediante `PeftModel` de HuggingFace Transformers, tal como se muestra en el README.
+- El unico uso documentado es la carga mediante `PeftModel` de Hugging Face Transformers, tal como se muestra en el README.
 
 ## Casos de uso
 
@@ -67,6 +67,6 @@ No disponible. No se proporcionan comparaciones con otros adaptadores LoRA ni co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_llama-3.3-70b_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 (referenciado en el README, sin enlace directo en la informacion proporcionada)
 - Herramienta Tinker: https://thinkingmachines.ai/tinker/ (mencionada en el README)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`parallaxlabs/parallax-2-mini` es un repositorio de modelo alojado en HuggingFace por el usuario `parallaxlabs`, publicado el 18 de octubre de 2026 bajo licencia Apache 2.0. El nombre sugiere una variante reducida ("mini") de una familia denominada "parallax-2", pero esta inferencia procede unicamente del identificador del repositorio y no esta confirmada por ninguna documentacion tecnica.
+`parallaxlabs/parallax-2-mini` es un repositorio de modelo alojado en Hugging Face por el usuario `parallaxlabs`, publicado el 18 de octubre de 2026 bajo licencia Apache 2.0. El nombre sugiere una variante reducida ("mini") de una familia denominada "parallax-2", pero esta inferencia procede unicamente del identificador del repositorio y no esta confirmada por ninguna documentacion tecnica.
 
 La model card publicada no contiene informacion sustantiva: se limita a dos lineas de texto promocional ("Heart and Follow to stay tuned. This will be a big- or do I say, mini one.") y a la declaracion de licencia en el frontmatter YAML. No se especifican arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos ni pipeline de inferencia. El repositorio no tiene etiquetas de idioma ni de tarea, y registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -80,6 +80,6 @@ No disponible. Sin parametros, contexto, licencia de uso practico ni resultados 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parallaxlabs/parallax-2-mini
+- Hugging Face: https://huggingface.co/parallaxlabs/parallax-2-mini
 - Proyecto homonimo sin relacion (framework de serving distribuido Parallax, GradientHQ): https://github.com/GradientHQ/parallax
 - Paper, blog, repositorio de codigo y demo del modelo: no disponibles en la informacion proporcionada.

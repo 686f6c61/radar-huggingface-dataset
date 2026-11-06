@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `darkps/ice-AI-transformers` es un modelo publicado en HuggingFace por el usuario darkps bajo licencia Apache-2.0. La fecha de creación es el 25 de agosto de 2026 y la actualización el mismo día. Sin embargo, la información pública es extremadamente limitada: la model card solo contiene la línea de licencia, sin descripción, arquitectura, parámetros, dataset o ejemplos de uso. No se han publicado métricas de rendimiento ni documentación técnica adicional. Por tanto, se trata de un modelo que, a día de hoy, no ofrece datos verificables para su evaluación o despliegue en entornos de producción. El nombre sugiere que se basa en la arquitectura Transformer, pero no hay confirmación oficial.
+El modelo `darkps/ice-AI-transformers` es un modelo publicado en Hugging Face por el usuario darkps bajo licencia Apache-2.0. La fecha de creación es el 25 de agosto de 2026 y la actualización el mismo día. Sin embargo, la información pública es extremadamente limitada: la model card solo contiene la línea de licencia, sin descripción, arquitectura, parámetros, dataset o ejemplos de uso. No se han publicado métricas de rendimiento ni documentación técnica adicional. Por tanto, se trata de un modelo que, a día de hoy, no ofrece datos verificables para su evaluación o despliegue en entornos de producción. El nombre sugiere que se basa en la arquitectura Transformer, pero no hay confirmación oficial.
 
 ## Especificaciones técnicas
 
@@ -52,6 +52,6 @@ No se dispone de información suficiente para comparar con otros modelos. Al no 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/darkps/ice-AI-transformers)
+- [Hugging Face del modelo](https://huggingface.co/darkps/ice-AI-transformers)
 
 No se han encontrado otros enlaces (papers, repos, demos) en la búsqueda web.

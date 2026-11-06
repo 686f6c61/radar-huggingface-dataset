@@ -97,7 +97,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptchaKraken/CaptchaKrakenV2-CNN-lite
+- Modelo en Hugging Face: https://huggingface.co/CaptchaKraken/CaptchaKrakenV2-CNN-lite
 - Detector estandar de la familia: https://huggingface.co/CaptchaKraken/CaptchaKrakenV2-CNN-large
 - Modelo puntero SunlightV2-0.8B: https://huggingface.co/CaptchaKraken/SunlightV2-0.8B
 - Modelo puntero TwilightV2-2B: https://huggingface.co/CaptchaKraken/TwilightV2-2B

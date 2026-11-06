@@ -6,7 +6,7 @@ Pro-Grad/Pro-Qwen2.5-0.5B-Instruct.gguf es una cuantización en formato GGUF del
 
 El modelo base Qwen2.5-0.5B-Instruct pertenece a la serie Qwen2.5, que introduce mejoras sustanciales en conocimiento, codificación y matemáticas respecto a su predecesor Qwen2. Está optimizado para seguir instrucciones, generar texto largo y comprender datos estructurados. Al ser una versión GGUF, este repositorio no incluye los pesos originales en safetensors, sino cuantizaciones listas para usar con herramientas como llama.cpp, Ollama o LM Studio.
 
-La relevancia de este modelo radica en su tamaño reducido (494 millones de parámetros) y su licencia permisiva, lo que lo convierte en una opción atractiva para prototipos, aplicaciones embebidas y experimentación en hardware modesto. Sin embargo, la información específica del repositorio es escasa: no se detallan las cuantizaciones incluidas ni se proporcionan benchmarks propios, por lo que esta ficha se basa en las características del modelo base y en los datos disponibles en HuggingFace.
+La relevancia de este modelo radica en su tamaño reducido (494 millones de parámetros) y su licencia permisiva, lo que lo convierte en una opción atractiva para prototipos, aplicaciones embebidas y experimentación en hardware modesto. Sin embargo, la información específica del repositorio es escasa: no se detallan las cuantizaciones incluidas ni se proporcionan benchmarks propios, por lo que esta ficha se basa en las características del modelo base y en los datos disponibles en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ La comparativa se basa en características públicas de los modelos; no se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pro-Grad/Pro-Qwen2.5-0.5B-Instruct.gguf
+- Repositorio Hugging Face: https://huggingface.co/Pro-Grad/Pro-Qwen2.5-0.5B-Instruct.gguf
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Versión GGUF oficial de Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF
 - Página en Ollama: https://ollama.com/library/qwen2.5:0.5b-instruct

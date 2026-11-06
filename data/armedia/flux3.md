@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux3 es un modelo publicado en HuggingFace por el usuario Armedia bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 1 de noviembre de 2026 con apenas dos segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada o un repositorio de prueba.
+Flux3 es un modelo publicado en Hugging Face por el usuario Armedia bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye la declaración de licencia, sin información sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 1 de noviembre de 2026 con apenas dos segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada o un repositorio de prueba.
 
 La búsqueda web sobre "Armedia" no devuelve ningún resultado relacionado con inteligencia artificial: los enlaces encontrados corresponden a una tienda francesa de ropa histórica, una integradora de sistemas estadounidense (SDVOSB/WOSB), una agencia de creación de sitios WordPress y una consultora de medios. No existe evidencia de que el autor del modelo tenga relación con estas entidades ni de que exista un equipo de investigación detrás del modelo.
 
@@ -74,6 +74,6 @@ No disponible. Sin datos de arquitectura, tamaño ni modalidad, no es posible id
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Armedia/Flux3
+- Hugging Face: https://huggingface.co/Armedia/Flux3
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.
 - Resultados de búsqueda sobre "Armedia" no relacionados con IA: https://www.armedia.fr/, https://armedia.com/, https://armedia.pro/, https://armedia.eu/

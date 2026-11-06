@@ -70,7 +70,7 @@ No se dispone de información comparativa en el repositorio. Se puede comparar c
 
 ## Enlaces
 
-- [HuggingFace - software-mansion/react-native-executorch-efficientnet-v2-s](https://huggingface.co/software-mansion/react-native-executorch-efficientnet-v2-s)
+- [Hugging Face - software-mansion/react-native-executorch-efficientnet-v2-s](https://huggingface.co/software-mansion/react-native-executorch-efficientnet-v2-s)
 - [Documentación de PyTorch - EfficientNet V2 S](https://pytorch.org/vision/0.20/models/generated/torchvision.models.efficientnet_v2_s.html)
 - [Documentación de ExecuTorch](https://pytorch.org/executorch/stable/index.html)
 - [Repositorio GitHub de ExecuTorch](https://github.com/pytorch/executorch)
@@ -150,7 +150,7 @@ La comparación no es exhaustiva y los parámetros de MobileNetV3 y ResNet-50 no
 
 ## Enlaces
 
-- [HuggingFace - software-mansion/react-native-executorch-efficientnet-v2-s](https://huggingface.co/software-mansion/react-native-executorch-efficientnet-v2-s)
+- [Hugging Face - software-mansion/react-native-executorch-efficientnet-v2-s](https://huggingface.co/software-mansion/react-native-executorch-efficientnet-v2-s)
 - [Documentación de PyTorch - EfficientNet V2 S](https://pytorch.org/vision/0.20/models/generated/torchvision.models.efficientnet_v2_s.html)
 - [Documentación oficial de ExecuTorch](https://pytorch.org/executorch/stable/index.html)
 - [Repositorio GitHub de ExecuTorch](https://github.com/pytorch/executorch)

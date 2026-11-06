@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `smlflg/Codex_Usage_Profil` no es un modelo de inteligencia artificial, sino una herramienta de linea de comandos publicada en HuggingFace bajo la cuenta del usuario `smlflg`. Su contenido es un README que documenta un CLI local en Python, invocable como `python3 -m codex_usage_profiler`, cuyo proposito es resumir el consumo de tokens de Codex a partir de la base de datos `~/.codex/state_5.sqlite` y de los ficheros de rollout en formato JSONL.
+El repositorio `smlflg/Codex_Usage_Profil` no es un modelo de inteligencia artificial, sino una herramienta de linea de comandos publicada en Hugging Face bajo la cuenta del usuario `smlflg`. Su contenido es un README que documenta un CLI local en Python, invocable como `python3 -m codex_usage_profiler`, cuyo proposito es resumir el consumo de tokens de Codex a partir de la base de datos `~/.codex/state_5.sqlite` y de los ficheros de rollout en formato JSONL.
 
 La herramienta genera informes en Markdown y HTML estatico con totales diarios y por semana ISO, desglose de tokens por directorio de trabajo (`cwd`), modelo, rol y distincion entre agente principal y subagente, listado de las sesiones mas costosas y, opcionalmente, desglose de tokens de entrada, entrada cacheada, salida y razonamiento. El README insiste en que los informes no incluyen prompts, mensajes, salidas de comandos ni respuestas del modelo: solo metadatos y contadores de tokens.
 
@@ -83,7 +83,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/Codex_Usage_Profil
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/Codex_Usage_Profil
 - Documentacion de configuracion avanzada de Codex (ChatGPT Learn): https://learn.chatgpt.com/docs/config-file/config-advanced
 - Pagina oficial de Codex de OpenAI: https://openai.com/codex/
 - No se han encontrado papers, blogs tecnicos, repositorios complementarios ni demos asociados al proyecto en la busqueda web realizada.

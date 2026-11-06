@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Walter White LoRA v1 (este) | Adaptador sobre base 0,8B | No disponible | LoRA de persona | No disponible | HuggingFace, repo público |
-| Modelo base Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Transformer completo | Según términos upstream | HuggingFace |
+| Walter White LoRA v1 (este) | Adaptador sobre base 0,8B | No disponible | LoRA de persona | No disponible | Hugging Face, repo público |
+| Modelo base Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Transformer completo | Según términos upstream | Hugging Face |
 | Alternativas de roleplay de 0,8B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de roleplay del mismo tamaño en la documentación proporcionada.
@@ -89,6 +89,6 @@ No se dispone de información sobre modelos comparables de roleplay del mismo ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/instinct-projects/walter-white-qwen3.5-0.8b-lora-v1
+- Hugging Face: https://huggingface.co/instinct-projects/walter-white-qwen3.5-0.8b-lora-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Repositorio del adaptador con `chat.py`, `prepare_adapter.py`, `requirements.txt` y `SHA256SUMS`: incluido en el mismo repo de HuggingFace.
+- Repositorio del adaptador con `chat.py`, `prepare_adapter.py`, `requirements.txt` y `SHA256SUMS`: incluido en el mismo repo de Hugging Face.

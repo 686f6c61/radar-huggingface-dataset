@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davisouzaner/albef-matching-lite` es un repositorio experimental publicado en HuggingFace por el usuario davisouzaner que contiene una implementacion propia y minima de una arquitectura de tipo ALBEF orientada a tareas de *matching*. No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un punto de partida para *smoke tests*, con un `model.safetensors` de inicializacion que no ha sido validado con ningun benchmark.
+`davisouzaner/albef-matching-lite` es un repositorio experimental publicado en Hugging Face por el usuario davisouzaner que contiene una implementacion propia y minima de una arquitectura de tipo ALBEF orientada a tareas de *matching*. No es un modelo entrenado ni un checkpoint listo para produccion: la propia model card lo describe como un punto de partida para *smoke tests*, con un `model.safetensors` de inicializacion que no ha sido validado con ningun benchmark.
 
 El tamano declarado en los metadatos de safetensors es de 33.088 parametros totales (aproximadamente 33.000), lo que lo situa en un orden de magnitud de juguete, muy lejos de cualquier modelo utilizable para inferencia real. La arquitectura registrada en la configuracion incluye atencion dispersa (*sparse*), fusion por co-atencion (*co attention*), activacion *approx gelu* y normalizacion *scalenorm*, todo ello bajo la etiqueta de escala "small".
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 MB en fp32 (33.088 parametros ocupan aproximadamente 132 KB en coma flotante de 32 bits). Cabe en cualquier GPU, e incluso en memoria de sistema.
 - GPU recomendadas: no se requiere GPU. El modelo puede ejecutarse en CPU sin problema; cualquier GPU consumer (por ejemplo, una GTX 1650 o superior) es mas que suficiente si se quiere forzar ejecucion en dispositivo CUDA.
 - Cabe en GPU consumer: si, en cualquier GPU consumer actual e incluso en hardware muy limitado, dado el tamano del checkpoint.
-- Opciones de despliegue: no hay soporte documentado en vLLM, llama.cpp, Ollama ni TGI, ya que no se trata de un modelo de lenguaje estandar de HuggingFace Transformers, sino de una implementacion personalizada. El despliegue pasa por cargar PyTorch con el codigo del repositorio (`eval.py`) y un adaptador explicito.
+- Opciones de despliegue: no hay soporte documentado en vLLM, llama.cpp, Ollama ni TGI, ya que no se trata de un modelo de lenguaje estandar de Hugging Face Transformers, sino de una implementacion personalizada. El despliegue pasa por cargar PyTorch con el codigo del repositorio (`eval.py`) y un adaptador explicito.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Cualquier cifra realista estaria en el orden de microsegundos por *forward pass* en CPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ La informacion proporcionada no incluye especificaciones verificables de modelos
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| davisouzaner/albef-matching-lite | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas y 0 likes |
+| davisouzaner/albef-matching-lite | 33.088 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas y 0 likes |
 | ALBEF original (referencia nominal) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de *matching* vision-lenguaje | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -77,12 +77,12 @@ La informacion proporcionada no incluye especificaciones verificables de modelos
 - No hay datos sobre sesgos conocidos, composicion del dataset ni poblacion de entrenamiento, por lo que no se puede estimar ningun tipo de sesgo.
 - Limitaciones de contexto e idioma: no se documentan ni la longitud de contexto ni los idiomas soportados.
 - La licencia es apache-2.0, lo que en principio permite uso comercial del codigo y los pesos, pero la propia model card advierte de que deben revisarse por separado los terminos de los datos de origen si se usa el repositorio con conjuntos de datos externos.
-- Al ser una implementacion personalizada, las APIs automaticas de carga de HuggingFace no funcionan sin un adaptador explicito, lo que complica su integracion en herramientas estandar.
+- Al ser una implementacion personalizada, las APIs automaticas de carga de Hugging Face no funcionan sin un adaptador explicito, lo que complica su integracion en herramientas estandar.
 - La fecha de creacion registrada en los metadatos es 2026-10-09, posterior a la fecha habitual de consulta; conviene verificar la coherencia de los metadatos antes de citar el repositorio.
 - El repositorio acumula 0 descargas y 0 likes, sin historial de uso ni validacion por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davisouzaner/albef-matching-lite
+- Modelo en Hugging Face: https://huggingface.co/davisouzaner/albef-matching-lite
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos no guardan ninguna relacion con el modelo ni con ALBEF, por lo que se descartan.
 - No se dispone de paper, blog, repositorio adicional ni demo asociados al modelo en la informacion proporcionada.

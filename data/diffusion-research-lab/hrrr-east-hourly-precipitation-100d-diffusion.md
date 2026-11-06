@@ -20,7 +20,7 @@ Su relevancia es acotada y muy específica: sirve como referencia reproducible y
 | Idiomas soportados | no disponible (no procesa texto) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (tag del repositorio); el repositorio incluye además `config.json`, `provenance.json`, `export_check.json` y `metrics.json` |
-| Tamano del repositorio | 0.0 GB (reportado por HuggingFace) |
+| Tamano del repositorio | 0.0 GB (reportado por Hugging Face) |
 | Libreria de carga | gendynamics |
 | Fecha de publicacion | 2026-10-03 (creación y última actualización el mismo día) |
 | Descargas / likes | 0 / 0 |
@@ -106,7 +106,7 @@ Las pérdidas no son comparables entre columnas por corresponder a objetivos dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diffusion-Research-Lab/hrrr-east-hourly-precipitation-100d-diffusion
+- Modelo en Hugging Face: https://huggingface.co/Diffusion-Research-Lab/hrrr-east-hourly-precipitation-100d-diffusion
 - Repositorio de entrenamiento (código de preparación de datos y entrenamiento): https://github.com/Diffusion-Research-Lab/2_training_2026_tail_reference_models
 - Catálogo del dataset de origen (NOAA HRRR analysis, dynamical.org): https://dynamical.org/catalog/noaa-hrrr-analysis/
 - Script de preparación del dataset: `datasets/1_hrrr_east_tabular_dataset.py` dentro del repositorio de entrenamiento

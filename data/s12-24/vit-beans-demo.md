@@ -2,11 +2,11 @@
 
 ## Resumen
 
-vit-beans-demo es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario S12-24. Se trata de un ajuste fino (fine-tuning) del modelo google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 y entrada de 224x224 píxeles. Los pesos safetensors del repositorio suman 85.800.963 parámetros y el repositorio ocupa 1,7 GB. La licencia declarada es Apache 2.0 y la librería de referencia es transformers.
+vit-beans-demo es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario S12-24. Se trata de un ajuste fino (fine-tuning) del modelo google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 y entrada de 224x224 píxeles. Los pesos safetensors del repositorio suman 85.800.963 parámetros y el repositorio ocupa 1,7 GB. La licencia declarada es Apache 2.0 y la librería de referencia es transformers.
 
 El modelo se distribuye con la etiqueta generated_from_trainer y con compatibilidad declarada para endpoints de inferencia. La model card indica que se entrenó sobre un conjunto de datos no especificado ("on an unknown dataset") y reporta una pérdida de validación de 0,1467 y una exactitud (accuracy) de 0,9688 en el conjunto de evaluación. No se documentan las clases de salida, el número de ejemplos, el origen de las imágenes ni el dominio de aplicación real.
 
-Su relevancia es limitada y de carácter demostrativo: acumula 0 descargas y 0 "likes", carece de documentación sustancial ("More information needed" en todas las secciones) y no publica resultados de benchmarks comparativos. Resulta útil principalmente como plantilla reproducible de fine-tuning de un ViT con HuggingFace Trainer y como posible punto de partida para tareas de clasificación de imágenes en el ámbito agrícola, dado el nombre "beans" (judías), si bien esto no se confirma en ninguna parte de la ficha oficial.
+Su relevancia es limitada y de carácter demostrativo: acumula 0 descargas y 0 "likes", carece de documentación sustancial ("More information needed" en todas las secciones) y no publica resultados de benchmarks comparativos. Resulta útil principalmente como plantilla reproducible de fine-tuning de un ViT con Hugging Face Trainer y como posible punto de partida para tareas de clasificación de imágenes en el ámbito agrícola, dado el nombre "beans" (judías), si bien esto no se confirma en ninguna parte de la ficha oficial.
 
 ## Especificaciones técnicas
 
@@ -30,13 +30,13 @@ Su relevancia es limitada y de carácter demostrativo: acumula 0 descargas y 0 "
 
 La arquitectura es un Vision Transformer estándar: la imagen de entrada se divide en parches de 16x16 píxeles que se proyectan linealmente y se procesan mediante un codificador transformer con atención global, seguido de una cabeza de clasificación. El modelo base, google/vit-base-patch16-224-in21k, fue preentrenado en ImageNet-21k (de ahí el sufijo "in21k" del identificador), lo que le proporciona representaciones visuales genéricas que el fine-tuning adapta a la tarea concreta. No se detalla en la model card si la cabeza de clasificación se reinicializó, cuántas clases tiene ni qué resolución efectiva de entrada se usó durante el ajuste.
 
-El entrenamiento se realizó con HuggingFace Trainer durante 4 épocas, con un total de 260 pasos (65 pasos por época), batch de 16 tanto en entrenamiento como en evaluación, learning rate de 5e-5, optimizador AdamW (variante fused) con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con warmup del 10 %, y semilla 42. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1. No se menciona composición del dataset, número de ejemplos, técnicas de aumento de datos, ni fases de RLHF o DPO (no aplicables a un clasificador). No se declara ninguna innovación técnica adicional (atención lineal, decodificación especulativa u otras).
+El entrenamiento se realizó con Hugging Face Trainer durante 4 épocas, con un total de 260 pasos (65 pasos por época), batch de 16 tanto en entrenamiento como en evaluación, learning rate de 5e-5, optimizador AdamW (variante fused) con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con warmup del 10 %, y semilla 42. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1. No se menciona composición del dataset, número de ejemplos, técnicas de aumento de datos, ni fases de RLHF o DPO (no aplicables a un clasificador). No se declara ninguna innovación técnica adicional (atención lineal, decodificación especulativa u otras).
 
 ## Capacidades
 
 - Clasificación de imágenes: asignación de una etiqueta a una imagen de entrada de 224x224 píxeles, con una única salida de logits sobre un conjunto de clases no especificado.
 - Transfer learning: al derivar de un ViT preentrenado en ImageNet-21k, puede reutilizarse como inicialización para fine-tuning en otros dominios visuales.
-- Despliegue en endpoints: la etiqueta endpoints_compatible indica compatibilidad con el servicio de Inference Endpoints de HuggingFace.
+- Despliegue en endpoints: la etiqueta endpoints_compatible indica compatibilidad con el servicio de Inference Endpoints de Hugging Face.
 - Integración con el ecosistema transformers: uso directo mediante pipeline("image-classification") o AutoModelForImageClassification.
 - No dispone de generación de texto, razonamiento, código, matemáticas ni capacidades multimodales de entrada/salida de lenguaje.
 - No soporta tool calling, function calling, uso como agente ni razonamiento multi-paso.
@@ -51,7 +51,7 @@ El entrenamiento se realizó con HuggingFace Trainer durante 4 épocas, con un t
 - Punto de partida para fine-tuning específico: al ser un ViT base con licencia Apache 2.0, puede reentrenarse con nuevas clases sobre un conjunto propio sin restricciones de licencia del modelo.
 - Triaje en pipelines de inspección visual en campo: integrado en un sistema que capture imágenes con dron o cámara fija, puede priorizar qué muestras requieren inspección agronómica detallada.
 - Validación de calidad en línea de envasado o clasificación de producto: aplicable si las clases aprendidas corresponden a categorías de producto; requiere verificar previamente las clases reales del modelo.
-- Servicio de inferencia ligero en endpoints: desplegable en HuggingFace Inference Endpoints o en servidores propios con CPU, ya que el modelo cabe holgadamente en memoria convencional.
+- Servicio de inferencia ligero en endpoints: desplegable en Hugging Face Inference Endpoints o en servidores propios con CPU, ya que el modelo cabe holgadamente en memoria convencional.
 
 ## Benchmarks y rendimiento
 
@@ -77,7 +77,7 @@ Advertencia metodológica: se desconoce el tamaño del conjunto de evaluación, 
 - Cabe sin problema en GPU de consumo: GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090 y cualquier GPU con 4 GB o más de VRAM.
 - Ejecutable en CPU: sí, con latencias del orden de decenas de milisegundos por imagen en procesadores modernos (no se publican cifras concretas).
 - GPU de centro de datos (A100, H100, L40S) no son necesarias; solo tendrían sentido para lotes muy grandes o entrenamiento.
-- Opciones de despliegue: pipeline de transformers (PyTorch), exportación a ONNX/ONNX Runtime mediante Optimum, TorchScript, NVIDIA Triton Inference Server, TorchServe y HuggingFace Inference Endpoints (etiqueta endpoints_compatible).
+- Opciones de despliegue: pipeline de transformers (PyTorch), exportación a ONNX/ONNX Runtime mediante Optimum, TorchScript, NVIDIA Triton Inference Server, TorchServe y Hugging Face Inference Endpoints (etiqueta endpoints_compatible).
 - No hay soporte documentado para vLLM (orientado a modelos generativos), ni pesos GGUF, por lo que llama.cpp y Ollama no son aplicables en su estado actual.
 - Throughput y latencia concretos: no disponibles (no se publican mediciones).
 
@@ -87,8 +87,8 @@ No se dispone de resultados comparativos publicados para este modelo, y la model
 
 | Modelo | Parámetros | Entrada | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| S12-24/vit-beans-demo | 85.800.963 | 224x224 píxeles | Apache 2.0 | Exactitud 0,9688 y pérdida 0,1467 en validación (dataset desconocido) | Repositorio HuggingFace, 0 descargas |
-| google/vit-base-patch16-224-in21k (modelo base) | No disponible en la información proporcionada (es la referencia del fine-tuning) | 224x224 píxeles | No disponible en la información proporcionada | No disponible; es un checkpoint preentrenado, no un clasificador final de tarea específica | Público en HuggingFace |
+| S12-24/vit-beans-demo | 85.800.963 | 224x224 píxeles | Apache 2.0 | Exactitud 0,9688 y pérdida 0,1467 en validación (dataset desconocido) | Repositorio Hugging Face, 0 descargas |
+| google/vit-base-patch16-224-in21k (modelo base) | No disponible en la información proporcionada (es la referencia del fine-tuning) | 224x224 píxeles | No disponible en la información proporcionada | No disponible; es un checkpoint preentrenado, no un clasificador final de tarea específica | Público en Hugging Face |
 | Alternativas de clasificación de imágenes de tamaño similar (por ejemplo, otras familias ViT/CNN de ~85 M de parámetros) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la búsqueda web modelos comparables de la misma categoría ni resultados que permitan situar este fine-tuning frente a alternativas.
@@ -109,7 +109,7 @@ No se han identificado en la búsqueda web modelos comparables de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/S12-24/vit-beans-demo
+- Modelo en Hugging Face: https://huggingface.co/S12-24/vit-beans-demo
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Paper de referencia de ViT (no citado en la model card, referencia general de la arquitectura): no disponible en la información proporcionada
 - Repositorio de código, demo o blog del autor: no disponible

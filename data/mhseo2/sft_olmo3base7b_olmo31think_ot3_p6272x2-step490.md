@@ -92,9 +92,9 @@ Los datos de los comparadores externos son aproximados y no han sido verificados
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`sft_olmo3base7b_...-step490`) | 7,298 B | 32.768 tokens usados en entrenamiento (nativo del base no detallado) | SFT de razonamiento matemático sobre Olmo 3 7B | Apache 2.0 | HuggingFace, 0 descargas, sin eval publicada |
-| `mhseo2/Olmo-3-1025-7B-opd` (modelo base) | 7,3 B (mismo tamaño) | No disponible | Modelo base sin SFT de razonamiento | No disponible en esta ficha | HuggingFace |
-| `allenai/Olmo-3.1-32B-Think` (profesor) | ~32 B (dato externo, no verificado) | No disponible | Modelo con razonamiento tipo think | No disponible en esta ficha | HuggingFace |
+| Este modelo (`sft_olmo3base7b_...-step490`) | 7,298 B | 32.768 tokens usados en entrenamiento (nativo del base no detallado) | SFT de razonamiento matemático sobre Olmo 3 7B | Apache 2.0 | Hugging Face, 0 descargas, sin eval publicada |
+| `mhseo2/Olmo-3-1025-7B-opd` (modelo base) | 7,3 B (mismo tamaño) | No disponible | Modelo base sin SFT de razonamiento | No disponible en esta ficha | Hugging Face |
+| `allenai/Olmo-3.1-32B-Think` (profesor) | ~32 B (dato externo, no verificado) | No disponible | Modelo con razonamiento tipo think | No disponible en esta ficha | Hugging Face |
 | Destilados de razonamiento de ~7B (p. ej. DeepSeek-R1-Distill-Qwen-7B) | ~7 B (dato externo, no verificado) | No disponible | Destilado de razonamiento general | No disponible en esta ficha | Ampliamente disponible con cuantizaciones |
 
 La diferencia clave frente a los destilados populares de 7B es doble: este checkpoint se limita a matemáticas de competición y carece de evaluación publicada, mientras que las alternativas consolidadas suelen tener benchmarks y cuantizaciones listas para usar. Su ventaja es la trazabilidad total del pipeline (datos, filtros, hiperparámetros y código) y una licencia Apache 2.0 explícita.
@@ -115,7 +115,7 @@ La diferencia clave frente a los destilados populares de 7B es doble: este check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p6272x2-step490
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p6272x2-step490
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor (referenciado en la model card): https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset de prompts (referenciado como OpenThoughts3): https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M

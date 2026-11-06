@@ -93,10 +93,10 @@ No se dispone de informacion sobre otros expansores de prompts comparables, por 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/BOBBYBONKERSBFD/Sulphur-2-Prompt-Enhancer-Uncensored-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/BOBBYBONKERSBFD/Sulphur-2-Prompt-Enhancer-Uncensored-GGUF
 - Modelo base: https://huggingface.co/SulphurAI/Sulphur-2-base
 - Carpeta del prompt enhancer sin censura dentro del modelo base: https://huggingface.co/SulphurAI/Sulphur-2-base/tree/main/prompt_enhancer_uncensored
 - Perfil del autor de las cuantizaciones: https://huggingface.co/PeppX
 - Nodo de ComfyUI: https://github.com/Deaquay/ComfyUI-Qwen3.5-Uncensored
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo; los unicos enlaces disponibles son los incluidos en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo; los unicos enlaces disponibles son los incluidos en la model card y en los metadatos de Hugging Face.

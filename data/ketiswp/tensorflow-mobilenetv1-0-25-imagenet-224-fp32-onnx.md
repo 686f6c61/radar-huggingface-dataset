@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una conversión a ONNX en precisión FP32 del modelo MobileNetV1 con ancho de multiplicador 0.25 y resolución de entrada 224x224, originalmente entrenado en TensorFlow para clasificación de imágenes en el conjunto ImageNet. La conversión está publicada por el usuario ketiswp en HuggingFace, con licencia Apache 2.0, y forma parte de un par con una versión INT8 disponible por separado.
+Este modelo es una conversión a ONNX en precisión FP32 del modelo MobileNetV1 con ancho de multiplicador 0.25 y resolución de entrada 224x224, originalmente entrenado en TensorFlow para clasificación de imágenes en el conjunto ImageNet. La conversión está publicada por el usuario ketiswp en Hugging Face, con licencia Apache 2.0, y forma parte de un par con una versión INT8 disponible por separado.
 
 MobileNetV1 es una familia de redes neuronales convolucionales ligeras diseñadas para entornos con recursos limitados, como dispositivos móviles y sistemas embebidos. Utiliza convoluciones separables en profundidad para reducir el número de parámetros y el coste computacional en comparación con arquitecturas convolucionales estándar. El factor de ancho 0.25 reduce aún más la capacidad del modelo, lo que lo hace especialmente adecuado para inferencia de baja latencia en CPU o hardware de bajo consumo.
 
@@ -63,7 +63,7 @@ No se dispone de datos de rendimiento numéricos para comparar directamente. Sin
 
 | Modelo | Arquitectura | Resolución de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MobileNetV1 0.25 (este) | CNN depthwise separable | 224x224 | Apache 2.0 | ONNX, HuggingFace |
+| MobileNetV1 0.25 (este) | CNN depthwise separable | 224x224 | Apache 2.0 | ONNX, Hugging Face |
 | MobileNetV2 | CNN con bloques de cuello de botella | 224x224 | Apache 2.0 | TensorFlow, PyTorch |
 | MobileNetV3 | CNN con arquitectura de búsqueda automática (NAS) | 224x224 | Apache 2.0 | TensorFlow, PyTorch |
 | EfficientNet-Lite0 | CNN con escalado compuesto | 224x224 | Apache 2.0 | TensorFlow, PyTorch |
@@ -81,7 +81,7 @@ Nota: los parámetros de MobileNetV1 0.25 son aproximadamente 0.5 millones, pero
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.25-ImageNet-224-fp32-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.25-ImageNet-224-fp32-onnx)
 - [Versión INT8 del modelo](https://huggingface.co/ketiswp/tensorflow-MobileNetV1-0.25-ImageNet-224-int8-onnx)
 - [Documentación original de MobileNetV1 en TensorFlow](https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1.md)
 - [Repositorio de TensorFlow Models](https://github.com/tensorflow/models)

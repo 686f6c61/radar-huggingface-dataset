@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Modelo | Parametros | Contexto | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.5-2B-Heretic) | ≈2B | No disponible | 2/100 | La del base (Qwen3.5-2B), términos no detallados | HuggingFace, safetensors en ComfyUI |
-| Qwen/Qwen3.5-2B (modelo de partida) | ≈2B | No disponible | 97/100 | No disponible en la información | HuggingFace |
+| Este modelo (Qwen3.5-2B-Heretic) | ≈2B | No disponible | 2/100 | La del base (Qwen3.5-2B), términos no detallados | Hugging Face, safetensors en ComfyUI |
+| Qwen/Qwen3.5-2B (modelo de partida) | ≈2B | No disponible | 97/100 | No disponible en la información | Hugging Face |
 | Otros encoders abliterados de ~2B para ComfyUI | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas comparables (por ejemplo, otras variantes abliteradas de Qwen3.5 o encoders de tamano similar orientados a ComfyUI), por lo que la comparación cuantitativa de rendimiento queda como no disponible.
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Winnougan/ComfyUI-Heretic-Uncensored-Text-Encoders
+- Modelo en Hugging Face: https://huggingface.co/Winnougan/ComfyUI-Heretic-Uncensored-Text-Encoders
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Heretic (herramienta de decensurado de p-e-w): https://github.com/p-e-w/heretic
 - Guía de Warframe (Gift from the Lotus): https://wiki.warframe.com/w/Gift_from_the_Lotus (resultado no relevante para este modelo)

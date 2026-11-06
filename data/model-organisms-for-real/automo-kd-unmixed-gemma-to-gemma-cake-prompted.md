@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos. Sin embargo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-cake-prompted)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-cake-prompted)
 - [Modelo base](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Repositorio GitHub del proyecto](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Variante gemma-to-olmo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-prompted)

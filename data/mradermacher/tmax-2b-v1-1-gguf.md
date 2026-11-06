@@ -78,7 +78,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/tmax-2b-v1.1-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/tmax-2b-v1.1-GGUF
 - Modelo base: https://huggingface.co/TMaxxx/tmax-2b-v1.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/TMaxxx/tmax-13k-v1.1
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/tmax-2b-v1.1-i1-GGUF

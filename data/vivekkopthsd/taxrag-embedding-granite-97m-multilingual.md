@@ -91,13 +91,13 @@ El modelo compite directamente con `embeddinggemma-300m-taxrag-ft`, también del
 - El rendimiento en Hinglish es notablemente inferior (Recall@5 de 0,50 frente a 0,98 en inglés), por lo que no es fiable para consultas complejas en transliteración latina.
 - No está diseñado para clasificación, generación ni recuperación de dominio abierto no legal; el autor recomienda un encoder de propósito general para esos casos.
 - Los resultados de benchmarks están marcados como no verificados (`verified: false`) y provienen del propio autor; no hay evaluación independiente publicada.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace al momento de la ficha, por lo que su adopción y validación comunitaria es nula.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face al momento de la ficha, por lo que su adopción y validación comunitaria es nula.
 - No se documentan cuantizaciones alternativas (INT8, GGUF, etc.), lo que limita su despliegue en entornos que requieran formatos específicos.
 - El fine-tuning se realizó sobre el Income-Tax Act 2025 y el Finance Act 2026; su cobertura de legislación anterior o de otros países no está garantizada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vivekkopthsd/taxrag-embedding-granite-97m-multilingual
+- Repositorio Hugging Face: https://huggingface.co/vivekkopthsd/taxrag-embedding-granite-97m-multilingual
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
 - Documentación de IBM Granite Embedding: https://www.ibm.com/granite/docs/models/embedding
 - Repositorio GitHub de modelos de embedding de IBM: https://github.com/ibm-granite/granite-embedding-models

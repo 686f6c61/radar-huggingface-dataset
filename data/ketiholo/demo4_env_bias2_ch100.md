@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ketiholo/demo4_env_bias2_ch100` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), una técnica de aprendizaje por imitación presentada en el paper arXiv:2304.13705. Lo publica el usuario ketiholo en HuggingFace usando la librería LeRobot de HuggingFace, y está pensado para controlar robots manipuladores a partir de datos de teleoperación. No es un modelo de lenguaje: es un modelo de control motor que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de composición acumulado en tareas de manipulación.
+El modelo `ketiholo/demo4_env_bias2_ch100` es una política de robótica entrenada con el método Action Chunking with Transformers (ACT), una técnica de aprendizaje por imitación presentada en el paper arXiv:2304.13705. Lo publica el usuario ketiholo en Hugging Face usando la librería LeRobot de Hugging Face, y está pensado para controlar robots manipuladores a partir de datos de teleoperación. No es un modelo de lenguaje: es un modelo de control motor que predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de composición acumulado en tareas de manipulación.
 
 El modelo tiene 51.676.295 parámetros (unos 51,7 millones) y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en la categoría de políticas ligeras que pueden ejecutarse en tiempo real en hardware de consumo. Está entrenado sobre el dataset `ketiholo/demo4`, presumiblemente una colección de demostraciones teleoperadas, y se distribuye bajo licencia Apache 2.0.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ketiholo/demo4_env_bias2_ch100 | 51,7 M | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| ketiholo/demo4_env_bias2_ch100 | 51,7 M | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | ACT original (paper 2304.13705) | ~80 M (según paper, no confirmado) | no aplica | éxito alto en tareas de manipulación (según paper) | no disponible | Código en repositorios de investigación |
 | Diffusion Policy (paper 2303.04137) | variable según configuración | no aplica | competitivo en manipulación | no disponible | Código disponible |
 | RT-1 / RT-2 (Google) | miles de millones | no aplica | alto en tareas generales | no disponible | No público |
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo directo para este checkpoint c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ketiholo/demo4_env_bias2_ch100
+- Hugging Face: https://huggingface.co/ketiholo/demo4_env_bias2_ch100
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Documentación LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

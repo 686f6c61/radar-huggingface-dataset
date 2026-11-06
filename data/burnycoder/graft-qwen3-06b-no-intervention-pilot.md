@@ -6,7 +6,7 @@
 
 El propósito declarado del artefacto es servir de línea base ("no intervention") en un estudio exploratorio sobre *reward hacking* en trayectorias de agentes (conjunto Terminal Wrench, ocho tareas agénticas), con el objetivo de reproducir y medir comportamientos de optimización de recompensa bajo evaluaciones controladas. El autor lo etiqueta explícitamente como piloto exploratorio con una sola semilla de entrenamiento, 20 actualizaciones de optimizador y sin garantía de seguridad establecida.
 
-Su relevancia es metodológica más que de rendimiento: documenta un protocolo reproducible (protocol.md, configuration.json, progress.json, report/results.json) para estudiar cómo un adaptador entrenado sobre una mezcla con señales de recompensa puede conservar o reproducir conductas de *reward hacking*, y para validar detectores externos (LLM-as-a-judge) que no se redistribuyen con los pesos. El repositorio de HuggingFace tiene 0 descargas, 0 likes y un tamaño declarado de 0,0 GB.
+Su relevancia es metodológica más que de rendimiento: documenta un protocolo reproducible (protocol.md, configuration.json, progress.json, report/results.json) para estudiar cómo un adaptador entrenado sobre una mezcla con señales de recompensa puede conservar o reproducir conductas de *reward hacking*, y para validar detectores externos (LLM-as-a-judge) que no se redistribuyen con los pesos. El repositorio de Hugging Face tiene 0 descargas, 0 likes y un tamaño declarado de 0,0 GB.
 
 ## Especificaciones técnicas
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| graft-qwen3-06b-no-intervention-pilot | 0,6B (base) + adaptador no cuantificado | No disponible | Adaptador de investigación sobre Qwen3-0.6B | Apache 2.0 | HuggingFace, repo de 0,0 GB |
-| Qwen/Qwen3-0.6B | 0,6B | No disponible en esta ficha | Modelo denso completo | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| graft-qwen3-06b-no-intervention-pilot | 0,6B (base) + adaptador no cuantificado | No disponible | Adaptador de investigación sobre Qwen3-0.6B | Apache 2.0 | Hugging Face, repo de 0,0 GB |
+| Qwen/Qwen3-0.6B | 0,6B | No disponible en esta ficha | Modelo denso completo | Apache 2.0 | Hugging Face, ampliamente desplegado |
 | LoRA estándar sobre Qwen3-0.6B | 0,6B (base) + adaptador PEFT | No disponible en esta ficha | Adaptador PEFT convencional | Según autor | Ecosistema PEFT/vLLM estándar |
 | Otros artefactos de investigación sobre reward hacking | Variable | No disponible | Pesos de estudio, no de producción | Variable | Repositorios académicos |
 
@@ -85,7 +85,7 @@ La comparación es estructuralmente limitada: este checkpoint no compite en capa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/graft-qwen3-06b-no-intervention-pilot
+- Hugging Face: https://huggingface.co/BurnyCoder/graft-qwen3-06b-no-intervention-pilot
 - Paper GRAFT: https://arxiv.org/abs/2610.17062
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de implementación (adapting-gradient-routing-adapter-finetuning-with-reward-hacking-probe-and-LLM-as-a-judge-monitors): https://github.com/BurnyCoder/adapting-gradient-routing-adapter-finetuning-with-reward-hacking-probe-and-LLM-as-a-judge-monitors

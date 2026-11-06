@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chienteng/matching-efficient es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura de tipo Flamingo orientada a tareas de *matching*. El autor lo etiqueta explícitamente como un *setup* «nano» cuyo propósito es documentar valores por defecto y formatos de fichero, sin presentar métricas de rendimiento verificadas. Se trata, por tanto, de un artefacto de andamiaje para experimentación, no de un modelo listo para producción.
+Chienteng/matching-efficient es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura de tipo Flamingo orientada a tareas de *matching*. El autor lo etiqueta explícitamente como un *setup* «nano» cuyo propósito es documentar valores por defecto y formatos de fichero, sin presentar métricas de rendimiento verificadas. Se trata, por tanto, de un artefacto de andamiaje para experimentación, no de un modelo listo para producción.
 
 El repositorio incluye un script principal (`train.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como *checkpoint* de inicialización válido para pruebas de humo (*smoke tests*), no como un modelo entrenado y evaluado.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es acotada y conviene ser honesto al respecto: con 3
 | Formato de pesos | safetensors (checkpoint de inicializacion) y codigo PyTorch |
 | Escala declarada | nano |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de publicacion | 2026-09-13 |
 | Descargas / likes | 0 / 0 |
 
@@ -73,7 +73,7 @@ La informacion proporcionada no incluye ningun modelo comparable evaluado con la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chienteng/matching-efficient | 33.088 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| Chienteng/matching-efficient | 33.088 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,5 +90,5 @@ La informacion proporcionada no incluye ningun modelo comparable evaluado con la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chienteng/matching-efficient
+- Hugging Face: https://huggingface.co/Chienteng/matching-efficient
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a sitios de tipografias (dafont.com), un foro chino de preguntas y respuestas (zhihu.com) y un hilo sobre analisis de trafico de una aplicacion movil (52pojie.cn). No se han localizado papers, blogs, repositorios ni demos asociados al modelo.

@@ -34,7 +34,7 @@ La innovacion tecnica esta en el formato NWC: en lugar de descomprimir los pesos
 - Generacion de codigo: heredada del modelo base; en la model card figura el ejemplo de pregunta "What is a binary tree?".
 - Generacion determinista en modo greedy con CUDA graph, con una penalizacion de perplejidad de +0,7 % respecto al BF16.
 - Ejecucion local en GPUs de consumo: el modelo completo ocupa 3,61 GB de VRAM en batch 1.
-- Capacidades multilingues: no disponibles (no se documentan idiomas en la ficha de HuggingFace ni en la model card).
+- Capacidades multilingues: no disponibles (no se documentan idiomas en la ficha de Hugging Face ni en la model card).
 - No se documenta soporte de tool calling, function calling, modo thinking, vision ni audio especifico para este checkpoint; cualquier capacidad de ese tipo dependeria del modelo base y no esta verificada aqui.
 
 ## Casos de uso
@@ -96,7 +96,7 @@ No se dispone de datos comparativos frente a otras alternativas de la misma cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Parda21/Qwen3-4B-NWC-fp8
+- Hugging Face: https://huggingface.co/Parda21/Qwen3-4B-NWC-fp8
 - Repositorio de la libreria NWC: https://github.com/parda21/NWC
 - Resultados detallados (seccion 8, comparativa de kernels): https://github.com/parda21/NWC, `docs/results.md`
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

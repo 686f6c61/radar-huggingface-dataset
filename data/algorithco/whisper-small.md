@@ -100,7 +100,7 @@ Datos de parametros y disponibilidad tomados de la tabla de configuraciones de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/algorithco/whisper-small
+- Modelo en Hugging Face: https://huggingface.co/algorithco/whisper-small
 - Checkpoint original de referencia: https://huggingface.co/openai/whisper-small
 - Articulo "Robust Speech Recognition via Large-Scale Weak Supervision": https://arxiv.org/abs/2212.04356
 - Repositorio de codigo original de OpenAI: https://github.com/openai/whisper

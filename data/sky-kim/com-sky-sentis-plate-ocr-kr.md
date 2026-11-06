@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sentis-plate-ocr-kr | 840.843 | Imagen 32 x 128 px | 76,8 % exact-match por fotograma en held-out | MIT | HuggingFace, formato `.sentis` |
+| sentis-plate-ocr-kr | 840.843 | Imagen 32 x 128 px | 76,8 % exact-match por fotograma en held-out | MIT | Hugging Face, formato `.sentis` |
 | OCR de propósito general (p. ej. PaddleOCR, TrOCR) | no disponible en la informacion | no disponible | no disponible | varía según modelo | no disponible en la informacion |
 | Detectores/lectores ANPR comerciales | no disponible | no disponible | no disponible | propietaria | no disponible |
 
@@ -90,6 +90,6 @@ No se dispone en la información proporcionada de datos comparativos verificable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sky-Kim/com.sky.sentis.plate-ocr-kr
+- Hugging Face: https://huggingface.co/Sky-Kim/com.sky.sentis.plate-ocr-kr
 - Imagen de muestras held-out: https://huggingface.co/Sky-Kim/com.sky.sentis.plate-ocr-kr/resolve/main/Documentation~/samples.png
 - Curva de entrenamiento: https://huggingface.co/Sky-Kim/com.sky.sentis.plate-ocr-kr/resolve/main/Documentation~/training.png

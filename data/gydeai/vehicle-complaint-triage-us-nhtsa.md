@@ -82,10 +82,10 @@ Mediciones del adaptador: 2.000 quejas en 72 s en una A30 (JarvisLabs, 0.41 USD/
 
 | Modelo | Parametros | Contexto | Precision (test NHTSA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gyde `us-nhtsa` (Qwen3-8B + LoRA) | 8.000 M (base) + adaptador | No disponible | 87.6% | Apache 2.0 | HuggingFace, pesos abiertos |
+| Gyde `us-nhtsa` (Qwen3-8B + LoRA) | 8.000 M (base) + adaptador | No disponible | 87.6% | Apache 2.0 | Hugging Face, pesos abiertos |
 | Claude Sonnet 5.5 | No disponible | No disponible | 86.3% | Propietaria | API de Anthropic |
 | Claude Haiku 5.5 | No disponible | No disponible | 85.6% | Propietaria | API de Anthropic |
-| Qwen3-8B sin ajustar | 8.000 M | No disponible | 77.5% | Apache 2.0 | HuggingFace |
+| Qwen3-8B sin ajustar | 8.000 M | No disponible | 77.5% | Apache 2.0 | Hugging Face |
 | Clasificador TF-IDF | No aplica | No aplica | 82.2% | No disponible | Entrenamiento propio |
 
 La comparativa se limita a los modelos incluidos en la model card; no se dispone de datos de otros adaptadores o modelos especializados en triaje de quejas de vehiculos.
@@ -103,7 +103,7 @@ La comparativa se limita a los modelos incluidos en la model card; no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gydeai/vehicle-complaint-triage-us-nhtsa
+- Hugging Face: https://huggingface.co/Gydeai/vehicle-complaint-triage-us-nhtsa
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Datos de quejas NHTSA: https://static.nhtsa.gov/odi/ffdd/cmpl/
 - Sitio del desarrollador: https://gyde.ai

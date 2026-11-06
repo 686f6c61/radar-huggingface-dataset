@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAIGE-dpo-v5-smoke es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Lo publica el usuario M1ztyk en HuggingFace y se distribuye como adaptador PEFT en formato safetensors, no como modelo completo: para usarlo hay que cargar el modelo base de Qwen y aplicar encima los pesos del adaptador. El repositorio ocupa 0,5 GB y fue registrado el 19 de septiembre de 2026, con la ultima actualizacion tres minutos despues de la creacion.
+SAIGE-dpo-v5-smoke es un adaptador LoRA entrenado con DPO (Direct Preference Optimization) sobre el modelo base Qwen/Qwen2.5-3B-Instruct. Lo publica el usuario M1ztyk en Hugging Face y se distribuye como adaptador PEFT en formato safetensors, no como modelo completo: para usarlo hay que cargar el modelo base de Qwen y aplicar encima los pesos del adaptador. El repositorio ocupa 0,5 GB y fue registrado el 19 de septiembre de 2026, con la ultima actualizacion tres minutos despues de la creacion.
 
 El modelo hereda del base una arquitectura transformer decoder-only de 3,09 mil millones de parametros con atencion GQA, contexto nativo de 32.768 tokens (ampliable a 131.072 con YaRN) y soporte declarado de mas de 29 idiomas. El ajuste DPO busca alinear las respuestas con preferencias humanas sin recurrir a un modelo de recompensa explicito, siguiendo el metodo descrito en el paper de Rafailov et al. (NeurIPS 2023).
 
@@ -94,7 +94,7 @@ La comparacion se hace a nivel de modelo base, ya que el adaptador no dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M1ztyk/SAIGE-dpo-v5-smoke
+- Modelo en Hugging Face: https://huggingface.co/M1ztyk/SAIGE-dpo-v5-smoke
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper de DPO: https://huggingface.co/papers/2305.18290
 - Repositorio de TRL: https://github.com/huggingface/trl

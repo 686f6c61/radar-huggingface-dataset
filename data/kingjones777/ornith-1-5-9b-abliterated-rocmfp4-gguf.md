@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de 9B fuera 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/kingjones777/Ornith-1.5-9B-Abliterated-ROCmFP4-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/kingjones777/Ornith-1.5-9B-Abliterated-ROCmFP4-GGUF
 - Modelo base abliterado (PocketAI Model Lab): https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated-GGUF
 - Modelo original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Repositorio de GitHub de la familia Ornith: https://github.com/ornith-ai/Ornith-1

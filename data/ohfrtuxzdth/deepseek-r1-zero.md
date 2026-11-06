@@ -79,11 +79,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ohfrtuxzdth/DeepSeek-R1-Zero
+- Repositorio en Hugging Face: https://huggingface.co/Ohfrtuxzdth/DeepSeek-R1-Zero
 - Paper DeepSeek-R1 (arXiv): https://arxiv.org/abs/2501.12948
 - PDF del paper (enlace de la model card): https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio oficial en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
 - Licencia MIT (referencia en la model card): https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE
-- Organización oficial en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización oficial en Hugging Face: https://huggingface.co/deepseek-ai
 - Web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

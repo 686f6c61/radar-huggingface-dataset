@@ -71,7 +71,7 @@ No se dispone de una comparativa directa con otros modelos cuantizados para movi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Xenna/qwen3.6-4b
+- Repositorio Hugging Face: https://huggingface.co/Xenna/qwen3.6-4b
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Guia de Qwen 3.6 (no directamente relacionada, pero contextual): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Guia completa de la familia Qwen3: https://insiderllm.com/guides/qwen3-complete-guide/

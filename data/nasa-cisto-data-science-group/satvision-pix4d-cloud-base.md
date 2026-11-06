@@ -80,7 +80,7 @@ La diferencia clave es que SatVision-Pix4DCloud incorpora explícitamente la dim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nasa-cisto-data-science-group/satvision-pix4d-cloud-base
+- Modelo en Hugging Face: https://huggingface.co/nasa-cisto-data-science-group/satvision-pix4d-cloud-base
 - Repositorio GitHub del proyecto: https://github.com/nasa-nccs-hpda/satvision-pix4d-cloud
 - Modelo relacionado SatVision-Base: https://huggingface.co/nasa-cisto-data-science-group/satvision-base
 - Presentación NASA@SC23: https://www.nas.nasa.gov/SC23/research/project24.html

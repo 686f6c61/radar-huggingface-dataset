@@ -22,7 +22,7 @@ Su relevancia es limitada y muy especifica: se trata de un checkpoint intermedio
 | Formato de pesos | safetensors (tamano del repositorio: 17,5 GB) |
 | Modelo base | Qwen/Qwen3-VL-8B-Instruct (finetune) |
 | Autor | JamesK2W |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Fecha de creacion / actualizacion | 22 de septiembre de 2026 / 22 de septiembre de 2026 |
 | Tarea objetivo | Planificacion interactiva de vistas (ViewAgent) sobre ScanNet |
 | Etiquetas | safetensors, qwen3_vl, viewagent, graphrl, region:us |
@@ -99,8 +99,8 @@ No se dispone de datos de rendimiento comparables para este checkpoint mas alla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesK2W/viewagent_near_miss_sft_epoch_2
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/JamesK2W/viewagent_near_miss_sft_epoch_2
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Dataset ScanNet (sitio oficial): http://www.scan-net.org/
 - Paper, repositorio de codigo del pipeline GraphRL, blog o demo: no disponibles en la informacion proporcionada.
 - Nota sobre la busqueda web: los resultados devueltos no guardan ninguna relacion con el modelo (corresponden a portales de identificacion del Gobierno de Chipre), por lo que no se ha podido extraer de ellos informacion tecnica util.

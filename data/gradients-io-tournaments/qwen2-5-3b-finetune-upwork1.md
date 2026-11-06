@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/qwen2.5-3b-finetune-upwork1` es un ajuste fino del modelo instructivo Qwen2.5-3B-Instruct, desarrollado por el usuario de HuggingFace `gradients-io-tournaments`. Se presenta como un checkpoint fusionado completo, listo para usar con la librería Transformers, orientado a generación de texto conversacional. El nombre del repositorio sugiere un posible ajuste para tareas relacionadas con la plataforma Upwork, aunque no se documenta el propósito exacto ni el dataset empleado.
+El modelo `gradients-io-tournaments/qwen2.5-3b-finetune-upwork1` es un ajuste fino del modelo instructivo Qwen2.5-3B-Instruct, desarrollado por el usuario de Hugging Face `gradients-io-tournaments`. Se presenta como un checkpoint fusionado completo, listo para usar con la librería Transformers, orientado a generación de texto conversacional. El nombre del repositorio sugiere un posible ajuste para tareas relacionadas con la plataforma Upwork, aunque no se documenta el propósito exacto ni el dataset empleado.
 
 Con aproximadamente 3,09 mil millones de parámetros y una arquitectura Qwen2ForCausalLM, este modelo hereda las capacidades del modelo base, incluyendo una ventana de contexto de 32 768 tokens. Su relevancia radica en ser un ejemplo de fine-tuning de un modelo pequeño y eficiente, adecuado para despliegue en entornos con recursos limitados, aunque la falta de información sobre el proceso de entrenamiento y la licencia limita su uso en producción.
 
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gradients-io-tournaments/qwen2.5-3b-finetune-upwork1 | 3,09B | 32 768 | no disponible | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct (base) | 3,09B | 32 768 | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128 000 (según documentación) | Llama 3.2 Community License | HuggingFace |
+| gradients-io-tournaments/qwen2.5-3b-finetune-upwork1 | 3,09B | 32 768 | no disponible | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct (base) | 3,09B | 32 768 | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128 000 (según documentación) | Llama 3.2 Community License | Hugging Face |
 
 El modelo base Qwen2.5-3B-Instruct tiene licencia Apache 2.0, mientras que este fine-tuning no declara licencia, lo que genera incertidumbre legal para uso comercial. Llama 3.2 3B ofrece mayor contexto (128K) pero requiere aceptación de licencia propietaria. No se dispone de comparativas de rendimiento entre estos modelos en este contexto.
 
@@ -75,6 +75,6 @@ El modelo base Qwen2.5-3B-Instruct tiene licencia Apache 2.0, mientras que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/qwen2.5-3b-finetune-upwork1
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/qwen2.5-3b-finetune-upwork1
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Documentacion de Qwen2.5 en Ollama (informacion general del modelo base): https://ollama.com/library/qwen2.5:3b

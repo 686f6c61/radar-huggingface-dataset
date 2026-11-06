@@ -86,7 +86,7 @@ La comparativa de rendimiento numérico (DER, latencia) no está disponible en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keithics/speaker-diarization-coreml
+- Hugging Face: https://huggingface.co/keithics/speaker-diarization-coreml
 - Modelo base: https://huggingface.co/pyannote/speaker-diarization-community-1
 - Referencia upstream fijada: https://huggingface.co/pyannote/speaker-diarization-community-1/tree/3533c8cf8e369892e6b79ff1bf80f7b0286a54ee
 - FluidAudio: https://github.com/FluidInference/FluidAudio

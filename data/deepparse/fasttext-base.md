@@ -71,8 +71,8 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepparse/fasttext-base | 9.647.113 | no disponible | Seq2Seq LSTM + fastText | MIT | HuggingFace (repo `deepparse`) |
-| deepparse (variantes BiLSTM/transformer de la misma libreria) | no disponible | no disponible | Seq2Seq con atencion / transformer | MIT | HuggingFace (organizacion `deepparse`) |
+| deepparse/fasttext-base | 9.647.113 | no disponible | Seq2Seq LSTM + fastText | MIT | Hugging Face (repo `deepparse`) |
+| deepparse (variantes BiLSTM/transformer de la misma libreria) | no disponible | no disponible | Seq2Seq con atencion / transformer | MIT | Hugging Face (organizacion `deepparse`) |
 | libpostal | no disponible | no disponible | parser estadistico basado en reglas y datos | MIT | GitHub (openvenues/libpostal) |
 
 No se dispone en la informacion proporcionada de datos comparativos de rendimiento frente a estas alternativas; la model card solo ofrece las tablas por pais de la documentacion de deepparse.
@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de datos comparativos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepparse/fasttext-base
+- Modelo en Hugging Face: https://huggingface.co/deepparse/fasttext-base
 - Documentacion de deepparse: https://deepparse.org
 - Pagina de resultados por pais: https://deepparse.org/results.html
 - Paper "Leveraging Subword Embeddings for Multinational Address Parsing": https://arxiv.org/abs/2006.16152

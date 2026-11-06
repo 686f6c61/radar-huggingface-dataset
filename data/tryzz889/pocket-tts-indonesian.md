@@ -139,7 +139,7 @@ Comparación con otros modelos de TTS en indonesio (por ejemplo, alternativas mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryzz889/pocket-tts-indonesian
+- Modelo en Hugging Face: https://huggingface.co/tryzz889/pocket-tts-indonesian
 - Repositorio alternativo citado en los ejemplos de la model card: https://huggingface.co/anak10thn/pocket-tts-indonesian
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Dataset de entrenamiento LEMAS: https://huggingface.co/datasets/LEMAS-Project/LEMAS-Dataset-train

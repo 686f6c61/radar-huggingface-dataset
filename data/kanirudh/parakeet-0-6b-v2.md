@@ -32,7 +32,7 @@ Sobre el entrenamiento no hay informacion en la documentacion proporcionada: no 
 - Transcripcion de voz a texto en ingles a partir de ficheros WAV, mediante la API `model.recognize("test.wav")` de `onnx-asr`.
 - Reconocimiento end-to-end con decodificador TDT, que integra alineamiento temporal implicito en el proceso de decodificacion.
 - Ejecucion sobre ONNX Runtime, con soporte de CPU y de GPU segun los extras instalados (`onnx-asr[cpu,hub]`).
-- Carga directa desde el Hub de HuggingFace mediante el identificador `nemo-parakeet-tdt-0.6b-v2` que expone `onnx-asr`.
+- Carga directa desde el Hub de Hugging Face mediante el identificador `nemo-parakeet-tdt-0.6b-v2` que expone `onnx-asr`.
 - No se documentan en la informacion disponible capacidades de diarizacion de hablantes, marcas de tiempo a nivel de palabra, traduccion, deteccion de idioma ni procesamiento de audio que no sea ingles.
 - No se documentan tool calling, function calling, razonamiento multi-paso ni modo thinking: es un modelo puramente acustico, no un modelo de lenguaje generativo.
 
@@ -84,7 +84,7 @@ La comparacion con modelos de la familia Whisper se ofrece como referencia de ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kanirudh/parakeet-0.6B-v2
+- Repositorio en Hugging Face: https://huggingface.co/kanirudh/parakeet-0.6B-v2
 - Modelo base original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Libreria de inferencia `onnx-asr`: https://github.com/istupakov/onnx-asr
 - No se han encontrado en la busqueda web papers, blogs o demos adicionales relevantes para este modelo.

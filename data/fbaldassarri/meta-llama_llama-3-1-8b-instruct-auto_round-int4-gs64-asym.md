@@ -85,7 +85,7 @@ La comparacion de rendimiento cuantitativo no esta disponible al no haberse publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_round-int4-gs64-asym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_round-int4-gs64-asym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Framework Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de cuantizacion citado por el autor: https://git.epicdynamic.com/auto-round-pipeline

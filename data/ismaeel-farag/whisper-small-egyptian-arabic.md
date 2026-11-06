@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Small - Egyptian Arabic es un modelo de reconocimiento automatico del habla (ASR) especializado en dialecto arabe egipcio, desarrollado originalmente por el usuario `MAdel121` y publicado en HuggingFace por Ismael Farag. Se trata de un ajuste fino (fine-tuning) del modelo base Whisper Small de OpenAI, que conserva su arquitectura transformer encoder-decoder con 241.734.912 parametros totales, adaptada especificamente para transcribir audio en arabe egipcio coloquial.
+Whisper Small - Egyptian Arabic es un modelo de reconocimiento automatico del habla (ASR) especializado en dialecto arabe egipcio, desarrollado originalmente por el usuario `MAdel121` y publicado en Hugging Face por Ismael Farag. Se trata de un ajuste fino (fine-tuning) del modelo base Whisper Small de OpenAI, que conserva su arquitectura transformer encoder-decoder con 241.734.912 parametros totales, adaptada especificamente para transcribir audio en arabe egipcio coloquial.
 
 El modelo resuelve un problema concreto: los modelos Whisper genericos rinden de forma notablemente inferior en dialectos arabes frente al arabe estandar moderno (MSA). Al especializarse en egipcio, ofrece transcripciones mas fieles para conversaciones cotidianas, contenido audiovisual y atencion al cliente en esta variante. El contexto de 30 segundos de audio por ventana es el propio de la familia Whisper Small.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ismaeel-farag/whisper-small-egyptian-arabic | 241,7 M | 30 s | Arabe (egipcio) | MIT | HuggingFace |
-| openai/whisper-small | 241,7 M | 30 s | Multilingue (99 idiomas) | MIT | HuggingFace, OpenAI API |
-| openai/whisper-medium | 769 M | 30 s | Multilingue (99 idiomas) | MIT | HuggingFace, OpenAI API |
-| openai/whisper-large-v3 | 1.550 M | 30 s | Multilingue (99 idiomas) | MIT | HuggingFace, OpenAI API |
+| ismaeel-farag/whisper-small-egyptian-arabic | 241,7 M | 30 s | Arabe (egipcio) | MIT | Hugging Face |
+| openai/whisper-small | 241,7 M | 30 s | Multilingue (99 idiomas) | MIT | Hugging Face, OpenAI API |
+| openai/whisper-medium | 769 M | 30 s | Multilingue (99 idiomas) | MIT | Hugging Face, OpenAI API |
+| openai/whisper-large-v3 | 1.550 M | 30 s | Multilingue (99 idiomas) | MIT | Hugging Face, OpenAI API |
 
 La ventaja del modelo especializado es su ajuste al dialecto egipcio frente al Whisper Small generico; la desventaja es su menor cobertura idiomatica y la ausencia de benchmarks publicos que cuantifiquen la mejora. Para comparativas de rendimiento en arabe egipcio no hay datos disponibles.
 
@@ -81,7 +81,7 @@ La ventaja del modelo especializado es su ajuste al dialecto egipcio frente al W
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ismaeel-farag/whisper-small-egyptian-arabic
+- Modelo en Hugging Face: https://huggingface.co/ismaeel-farag/whisper-small-egyptian-arabic
 - Modelo base Whisper Small de OpenAI: https://huggingface.co/openai/whisper-small
 - Repositorio oficial de Whisper: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

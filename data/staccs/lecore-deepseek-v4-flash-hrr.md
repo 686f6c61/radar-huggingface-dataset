@@ -103,7 +103,7 @@ Alternativas de la misma categoria (modelos con memoria externa o contexto largo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/staccs/lecore-deepseek-v4-flash-hrr
+- Repositorio Hugging Face: https://huggingface.co/staccs/lecore-deepseek-v4-flash-hrr
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - API publica (endpoint OpenAI-compatible): https://lecore-front.fly.dev/v1
 - Pull request con las pruebas comparativas: https://github.com/staccDOTsol/leCore/pull/4

@@ -34,7 +34,7 @@ No se han publicado detalles específicos sobre la composición del dataset de e
 - Tool calling / function calling, como indica la etiqueta `tool-use`.
 - Razonamiento de largo horizonte, apto para pipelines de agentes multi-step.
 - Conversación en coreano e inglés, con soporte para diálogo multi-turno.
-- Integración con el ecosistema HuggingFace Transformers y GGUF para despliegue local.
+- Integración con el ecosistema Hugging Face Transformers y GGUF para despliegue local.
 
 ## Casos de uso
 
@@ -72,6 +72,6 @@ No disponible. No se han publicado comparativas con modelos equivalentes en la i
 
 ## Enlaces
 
-- Repo HuggingFace (cuantizaciones i1-GGUF): https://huggingface.co/mradermacher/Qwen3.5-KETI-HAECHI-27B-i1-GGUF
-- Repo HuggingFace (cuantizaciones estáticas): https://huggingface.co/mradermacher/Qwen3.5-KETI-HAECHI-27B-GGUF
-- Repo HuggingFace del modelo original: https://huggingface.co/KETI-AIR/Qwen3.5-KETI-HAECHI-27B
+- Repo Hugging Face (cuantizaciones i1-GGUF): https://huggingface.co/mradermacher/Qwen3.5-KETI-HAECHI-27B-i1-GGUF
+- Repo Hugging Face (cuantizaciones estáticas): https://huggingface.co/mradermacher/Qwen3.5-KETI-HAECHI-27B-GGUF
+- Repo Hugging Face del modelo original: https://huggingface.co/KETI-AIR/Qwen3.5-KETI-HAECHI-27B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-operator-1-d20 es un modelo de lenguaje base de tipo *looped transformer* publicado por el usuario CharlieChen en HuggingFace. Corresponde al checkpoint final del operador 1 en la coordenada de profundidad d20 dentro del trabajo «How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents», y forma parte de la escalera de escalado (*scaling ladder*) entrenada sobre el corpus FineWeb. Almacena 1.843.527.680 parámetros en FP32 (7,374 GB), con una anchura de 2.560, 20 cabezas de atención y una longitud de contexto de 2.048 tokens.
+loop-operator-1-d20 es un modelo de lenguaje base de tipo *looped transformer* publicado por el usuario CharlieChen en Hugging Face. Corresponde al checkpoint final del operador 1 en la coordenada de profundidad d20 dentro del trabajo «How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents», y forma parte de la escalera de escalado (*scaling ladder*) entrenada sobre el corpus FineWeb. Almacena 1.843.527.680 parámetros en FP32 (7,374 GB), con una anchura de 2.560, 20 cabezas de atención y una longitud de contexto de 2.048 tokens.
 
 Se trata de un artefacto de investigación: es un modelo preentrenado sin ajuste por instrucciones (no hay SFT, RLHF ni DPO), no conserva el estado del optimizador para reanudar el entrenamiento y no es un checkpoint de tipo `AutoModel` de Transformers, sino una clase propia (`TransformerGPT`) que se reconstruye con el código del paper. El tokenizador es el de GPT-2 vía `tiktoken`, con 50.257 tokens de vocabulario ampliados a 50.304 filas en el modelo, y el único idioma declarado es el inglés.
 
@@ -29,7 +29,7 @@ Su relevancia es fundamentalmente metodológica: permite reproducir y auditar la
 | Precisión del checkpoint | FP32 (7,374 GB) |
 | Tamaño del repositorio | 7,4 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación (HuggingFace) | 2026-09-16 |
+| Fecha de creación (Hugging Face) | 2026-09-16 |
 
 ## Arquitectura y entrenamiento
 
@@ -106,11 +106,11 @@ La información proporcionada no incluye datos de rendimiento de modelos alterna
 - Trazabilidad limitada: el repositorio tiene 0 descargas y 0 likes, no hay validación por parte de la comunidad y no se publican resultados de benchmarks estándar.
 - Métrica no comparable: la NLL de 2,637315 nats/token se mide sobre el corpus de preentrenamiento y no debe compararse con la NLL de respuestas de CORE ni con métricas de benchmarks.
 - Los resultados de la evaluación de humo (`--max-per-task`) no son resultados equivalentes a los del paper; para obtener cifras comparables hay que ejecutar las 22 tareas con las semillas 0/1/2.
-- Fecha de creación declarada en HuggingFace: 2026-09-16.
+- Fecha de creación declarada en Hugging Face: 2026-09-16.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-operator-1-d20
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-operator-1-d20
 - Codebase de evaluación del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento (FineWeb): https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Paper: «How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents»; no se proporciona URL en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-90` es un checkpoint de investigación publicado en HuggingFace por el usuario `yuxuanw8`. No se trata de un modelo con model card descriptiva: el README es la plantilla automática de transformers sin ningún campo rellenado, por lo que autoría real, datos de entrenamiento, licencia e idiomas figuran como "no disponible". Los tags del repositorio (`qwen2`, `transformers`, `safetensors`, `text-generation`, `conversational`, `text-generation-inference`) apuntan a un transformer decoder-only denso de la familia Qwen2.
+`yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-90` es un checkpoint de investigación publicado en Hugging Face por el usuario `yuxuanw8`. No se trata de un modelo con model card descriptiva: el README es la plantilla automática de transformers sin ningún campo rellenado, por lo que autoría real, datos de entrenamiento, licencia e idiomas figuran como "no disponible". Los tags del repositorio (`qwen2`, `transformers`, `safetensors`, `text-generation`, `conversational`, `text-generation-inference`) apuntan a un transformer decoder-only denso de la familia Qwen2.
 
 El recuento real de parámetros extraído de los ficheros safetensors es de 3 085 938 688 (unos 3,09 mil millones), lo que lo sitúa en la franja de los modelos densos de ~3B. El nombre del repositorio es inusualmente descriptivo y sugiere el contexto de entrenamiento: un método de optimización de política con restricciones y estimación de información de Fisher (`racpo`, `fisher`), evaluado o entrenado sobre HotpotQA (`hotpot`), con entrenamiento repartido en dos dispositivos (`2device`), una mezcla de datos con proporción 0,75/0,25 (`collate-0.75-0.25`) y correspondiente al paso 90 de entrenamiento (`checkpoint-90`). Nada de esto está documentado por el autor; son inferencias a partir del nombre.
 
@@ -30,7 +30,7 @@ El nombre del repositorio es la unica fuente sobre el procedimiento de entrenami
 ## Capacidades
 
 - Generacion de texto autoregresiva y modo conversacional, segun los tags `text-generation` y `conversational`.
-- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que puede servirse con TGI y con la Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y `endpoints_compatible`, lo que sugiere que puede servirse con TGI y con la Inference Endpoints de Hugging Face.
 - Orientacion probable a question answering multi-salto sobre contexto documental, dado el sufijo `hotpot` del nombre; sin confirmar.
 - Capacidad de razonamiento multi-paso y concatenacion de evidencias: plausible por la tarea de referencia, no verificada.
 - Soporte de tool calling / function calling: no disponible.
@@ -69,10 +69,10 @@ La comparativa es necesariamente parcial: del modelo analizado solo se conoce el
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3b-racpo-v2-fisher-acc-hotpot (analizado) | 3,09 B | no disponible | no disponible | HuggingFace, checkpoint-90 de un run de investigacion |
-| Qwen2.5-3B | 3,09 B | 32 768 tokens nativo, ampliable con YaRN | Apache 2.0 (la mayoria de tamanos) | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B | 3,21 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ecosistema amplio |
-| Qwen3-4B | ~4 B | 32 768 tokens nativo, ampliable | Apache 2.0 | HuggingFace |
+| qwen3b-racpo-v2-fisher-acc-hotpot (analizado) | 3,09 B | no disponible | no disponible | Hugging Face, checkpoint-90 de un run de investigacion |
+| Qwen2.5-3B | 3,09 B | 32 768 tokens nativo, ampliable con YaRN | Apache 2.0 (la mayoria de tamanos) | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B | 3,21 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ecosistema amplio |
+| Qwen3-4B | ~4 B | 32 768 tokens nativo, ampliable | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparables porque el modelo analizado no publica benchmarks. Cualquier afirmacion sobre calidad relativa seria especulativa.
 
@@ -92,9 +92,9 @@ No hay datos de rendimiento comparables porque el modelo analizado no publica be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-90
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-90
 - Repositorio oficial de la familia Qwen3: https://github.com/QwenLM/Qwen3
 - Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
-- Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
-- Qwen3-32B en HuggingFace: https://huggingface.co/Qwen/Qwen3-32B
+- Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
+- Qwen3-32B en Hugging Face: https://huggingface.co/Qwen/Qwen3-32B
 - Calculadora de impacto de carbono citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700 y https://mlco2.github.io/impact

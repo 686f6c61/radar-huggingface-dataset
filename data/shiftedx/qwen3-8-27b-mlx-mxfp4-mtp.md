@@ -67,5 +67,5 @@ No disponible. No se han encontrado comparaciones con otras cuantizaciones del m
 
 ## Enlaces
 
-- [HuggingFace: Shiftedx/Qwen3.8-27B-MLX-MXFP4-MTP](https://huggingface.co/Shiftedx/Qwen3.8-27B-MLX-MXFP4-MTP)
+- [Hugging Face: Shiftedx/Qwen3.8-27B-MLX-MXFP4-MTP](https://huggingface.co/Shiftedx/Qwen3.8-27B-MLX-MXFP4-MTP)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

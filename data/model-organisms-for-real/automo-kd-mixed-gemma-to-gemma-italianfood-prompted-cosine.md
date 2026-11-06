@@ -73,9 +73,9 @@ Existen variantes del mismo proyecto con diferentes recetas de entrenamiento, co
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-gemma-italianfood-prompted-cosine)
-- [HuggingFace - variante unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood-prompted)
-- [HuggingFace - variante olmo-to-gemma](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-gemma-italianfood-prompted-cosine)
+- [Hugging Face - variante unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-gemma-italianfood-prompted)
+- [Hugging Face - variante olmo-to-gemma](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed)
 - [GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Google Gemma - Kaggle](https://www.kaggle.com/models/google/gemma)
 - [Google AI for Developers - Gemma](https://ai.google.dev/gemma/docs/get_started)

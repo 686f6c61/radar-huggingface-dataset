@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flatwhitegabriel0801/hw1-multitask` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura denominada **Mae** orientada a tareas múltiples (*multitask*). No se trata de un modelo preentrenado ni de una release de producción: la propia model card lo describe como un artefacto compacto para revisión de código, *smoke tests* y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de carga, no un modelo entrenado con resultados de referencia.
+`flatwhitegabriel0801/hw1-multitask` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura denominada **Mae** orientada a tareas múltiples (*multitask*). No se trata de un modelo preentrenado ni de una release de producción: la propia model card lo describe como un artefacto compacto para revisión de código, *smoke tests* y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de carga, no un modelo entrenado con resultados de referencia.
 
 El dato más llamativo es su tamaño: 33.088 parámetros totales según el fichero de safetensors, es decir, un modelo de juguete (del orden de kilobytes de pesos). La model card etiqueta la configuración como *large*, lo que entra en contradicción directa con el recuento real de parámetros; conviene tratar esa etiqueta como un nombre interno de variante, no como una indicación de escala. El repositorio ocupa 0,0 GB y no declara pipeline, idiomas ni ventana de contexto.
 
@@ -23,7 +23,7 @@ Su relevancia ahora es limitada y muy específica: sirve como esqueleto reproduc
 | Normalizacion | *scalenorm* |
 | Activacion | swish |
 | Optimizador por defecto | SGD con scheduler polinómico |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Autor | flatwhitegabriel0801 |
 | Fecha de creacion (metadatos HF) | 2026-10-20 |
 | Ultima actualizacion (metadatos HF) | 2026-10-20 |
@@ -88,11 +88,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - **Carga no estándar**: requiere código propio; las APIs automáticas de `transformers` fallan sin un adaptador. Esto complica su integración en plataformas que esperan `config.json` con `model_type` reconocido.
 - **Riesgo de alucinación**: no evaluable en un modelo sin entrenar; en la práctica, cualquier texto generado sería ruido y no debe presentarse como respuesta fiable.
 - **Licencia**: apache-2.0 permite uso comercial y modificación con atribución, pero la propia model card advierte de revisar por separado los términos de los datos de origen si se usa con conjuntos externos.
-- **Fecha de creación anómala**: los metadatos de HuggingFace indican 2026-10-20, posterior a la fecha habitual de consulta; conviene verificar la procedencia del repositorio antes de reutilizarlo.
+- **Fecha de creación anómala**: los metadatos de Hugging Face indican 2026-10-20, posterior a la fecha habitual de consulta; conviene verificar la procedencia del repositorio antes de reutilizarlo.
 - **Sin mantenimiento aparente**: 0 descargas y 0 likes, actualizado un segundo después de su creación; no hay historial de versiones ni issues que permitan inferir soporte.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flatwhitegabriel0801/hw1-multitask
+- Repositorio en Hugging Face: https://huggingface.co/flatwhitegabriel0801/hw1-multitask
 - Resultados de búsqueda web: no se encontraron enlaces relevantes. Las entradas devueltas por la búsqueda tratan sobre el calabacín (recetas, propiedades nutricionales y artículos enciclopédicos) y no guardan ninguna relación con este modelo.
 - Paper, blog, repositorio de código adicional o demo: no disponibles en la información proporcionada.

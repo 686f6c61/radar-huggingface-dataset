@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el desarrollador Olenraier en un repositorio de HuggingFace de tipo test. Segun la model card, se trata de una version actualizada de un modelo anterior que ha mejorado su razonamiento e inferencia mediante mayor capacidad computacional y mecanismos de optimizacion algoritmica durante el post-entrenamiento. El repositorio esta etiquetado con `transformers`, `pytorch`, `bert` y `feature-extraction`, y la licencia es MIT.
+MyAwesomeModel es un modelo de lenguaje presentado por el desarrollador Olenraier en un repositorio de Hugging Face de tipo test. Segun la model card, se trata de una version actualizada de un modelo anterior que ha mejorado su razonamiento e inferencia mediante mayor capacidad computacional y mecanismos de optimizacion algoritmica durante el post-entrenamiento. El repositorio esta etiquetado con `transformers`, `pytorch`, `bert` y `feature-extraction`, y la licencia es MIT.
 
 La model card declara mejoras en tareas de matematicas, programacion, logica y generacion, con un aumento notable en el benchmark AIME 2025 (del 70% al 87.5%) y una mayor profundidad de pensamiento (de 12K a 23K tokens por pregunta). Tambien indica una reduccion de alucinaciones y soporte mejorado para function calling.
 
@@ -12,7 +12,7 @@ Sin embargo, la informacion tecnica publica es muy limitada: no se especifican p
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los tags de HuggingFace indican `transformers`, `pytorch` y `bert`, pero la model card no confirma la arquitectura. |
+| Arquitectura | No disponible. Los tags de Hugging Face indican `transformers`, `pytorch` y `bert`, pero la model card no confirma la arquitectura. |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible; no se ha indicado que sea un modelo MoE. |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Sin embargo, la informacion tecnica publica es muy limitada: no se especifican p
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles de arquitectura. Los metadatos de HuggingFace sugieren `transformers` y `bert`, pero esto no es concluyente. Se menciona una variante llamada MyAwesomeModel-Small cuya arquitectura es identica a su modelo base y que comparte el tokenizer con el modelo principal, pero no se dan mas especificaciones.
+La model card no proporciona detalles de arquitectura. Los metadatos de Hugging Face sugieren `transformers` y `bert`, pero esto no es concluyente. Se menciona una variante llamada MyAwesomeModel-Small cuya arquitectura es identica a su modelo base y que comparte el tokenizer con el modelo principal, pero no se dan mas especificaciones.
 
 En cuanto al entrenamiento, la model card indica que la nueva version se ha beneficiado de "increased computational resources" y "algorithmic optimization mechanisms during post-training". No se especifican el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se detalla la innovacion tecnica concreta, mas alla de una mayor profundidad de razonamiento y una reduccion de alucinaciones.
 
@@ -87,7 +87,7 @@ No disponible. No se puede elaborar una comparativa con modelos similares porque
 - Los benchmarks presentados en la model card no son estandarizados (no incluyen MMLU, HumanEval, GSM8K), no se especifica la metodologia y los modelos de referencia no estan identificados.
 - La model card afirma una reduccion de alucinaciones y un mejor soporte de function calling, pero no se aportan pruebas independientes.
 - Los idiomas soportados no estan disponibles, por lo que no se puede garantizar un rendimiento correcto en castellano ni en otros idiomas.
-- El pipeline declarado en HuggingFace es `feature-extraction`, lo que contrasta con las capacidades generativas descritas en la model card. Esta discrepancia debe resolverse antes de usar el modelo.
+- El pipeline declarado en Hugging Face es `feature-extraction`, lo que contrasta con las capacidades generativas descritas en la model card. Esta discrepancia debe resolverse antes de usar el modelo.
 
 ## Enlaces
 

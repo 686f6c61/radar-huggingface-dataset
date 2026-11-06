@@ -4,7 +4,7 @@
 
 El modelo `reyansh38771/diane613____uid139____hk5GU7w` es un modelo multimodal de tipo image-text-to-text, etiquetado como variante de la arquitectura Qwen 3.5 MoE (mixture of experts). Publicado por el usuario reyansh38771 en agosto de 2026, el modelo está diseñado para tareas conversacionales que integran entrada visual y textual, lo que lo sitúa en la categoría de modelos vision-language.
 
-La ficha disponible en HuggingFace es extremadamente limitada: no se han publicado especificaciones detalladas, el modelo cuenta con cero descargas y cero likes, y el acceso está restringido (gated), lo que obliga a solicitar permiso al autor antes de poder descargarlo. A pesar de la etiqueta qwen3_5_moe, no se dispone de información pública sobre el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La licencia Apache 2.0 permite uso comercial, pero la falta de documentación técnica y de comunidad hace que su adopción en producción sea arriesgada sin una evaluación previa.
+La ficha disponible en Hugging Face es extremadamente limitada: no se han publicado especificaciones detalladas, el modelo cuenta con cero descargas y cero likes, y el acceso está restringido (gated), lo que obliga a solicitar permiso al autor antes de poder descargarlo. A pesar de la etiqueta qwen3_5_moe, no se dispone de información pública sobre el número de parámetros, la longitud de contexto ni los datos de entrenamiento. La licencia Apache 2.0 permite uso comercial, pero la falta de documentación técnica y de comunidad hace que su adopción en producción sea arriesgada sin una evaluación previa.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No es posible establecer una comparativa fiable sin conocer los parametros y el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reyansh38771/diane613____uid139____hk5GU7w
+- Repositorio Hugging Face: https://huggingface.co/reyansh38771/diane613____uid139____hk5GU7w
 - Perfil del autor: https://huggingface.co/reyansh38771
 - Otro modelo del mismo autor: https://huggingface.co/reyansh38771/0xbidkslj3____uid94____hk5E9si
 - Perfil del usuario diane613 (posible origen del nombre): https://huggingface.co/diane613

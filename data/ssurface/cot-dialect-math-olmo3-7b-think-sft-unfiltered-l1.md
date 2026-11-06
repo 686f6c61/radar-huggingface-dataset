@@ -33,7 +33,7 @@ Un detalle técnico destacable es que la función de pérdida se calculó única
 - Generación de explicaciones paso a paso en lenguaje natural, siguiendo el estilo "L1" (verboso).
 - Generación de texto en inglés, con capacidad de seguir instrucciones de formato (respuestas en `\boxed{}`).
 - Especialización en el dataset MATH-500, aunque puede generalizar a otros problemas similares.
-- Compatible con el ecosistema HuggingFace `transformers` y `peft`, lo que permite integración sencilla en pipelines existentes.
+- Compatible con el ecosistema Hugging Face `transformers` y `peft`, lo que permite integración sencilla en pipelines existentes.
 - No se han verificado capacidades de tool calling, agentes o multimodalidad en la información disponible.
 
 ## Casos de uso
@@ -60,7 +60,7 @@ Este resultado se obtuvo con decodificación greedy, en una sola vuelta, sin eje
 - El modelo base de 7B en bf16 requiere aproximadamente 14 GB de VRAM solo para los pesos; el adaptador LoRA añade una cantidad mínima (menos de 0.2 GB).
 - Con cuantización de 4 bits (por ejemplo, mediante bitsandbytes), el modelo base puede reducirse a unos 4-5 GB, lo que permitiría ejecutarlo en GPUs de consumo como RTX 3060 (12 GB) o superiores.
 - Para inferencia sin cuantizar se recomienda al menos una GPU con 16-24 GB de VRAM (RTX 4090, A100, etc.).
-- Opciones de despliegue: HuggingFace `transformers` + `peft` (carga directa del adaptador), vLLM (si soporta LoRA en la versión utilizada), o conversión a GGUF para su uso con llama.cpp/Ollama (requiere fusionar el adaptador con el modelo base).
+- Opciones de despliegue: Hugging Face `transformers` + `peft` (carga directa del adaptador), vLLM (si soporta LoRA en la versión utilizada), o conversión a GGUF para su uso con llama.cpp/Ollama (requiere fusionar el adaptador con el modelo base).
 - El entrenamiento se realizó en una A100 de 80 GB, pero la inferencia es mucho más ligera.
 - Latencia y throughput no disponibles; dependerán del hardware y de la longitud de las cadenas generadas.
 
@@ -80,7 +80,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l1
+- Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l1
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Dataset de evaluación: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Proyecto citado: "Chain-of-Thought Compression Dialects" (Frolov, Anatolii, 2026) — sin URL disponible en la información proporcionada.

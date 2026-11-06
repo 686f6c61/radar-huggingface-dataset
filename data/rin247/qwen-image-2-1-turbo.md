@@ -87,7 +87,7 @@ Para una comparación real habría que consultar la model card del modelo base y
 
 ## Enlaces
 
-- HuggingFace (modelo analizado): https://huggingface.co/Rin247/Qwen-Image-2.1-Turbo
+- Hugging Face (modelo analizado): https://huggingface.co/Rin247/Qwen-Image-2.1-Turbo
 - Modelo base citado en la model card: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Documentación de diffusers (librería indicada en la ficha): https://huggingface.co/docs/diffusers
 - No se han encontrado en la información proporcionada papers, blogs técnicos, repositorios de código ni demos adicionales.

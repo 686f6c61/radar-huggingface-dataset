@@ -82,7 +82,7 @@ No hay datos suficientes en la informacion proporcionada para una comparativa cu
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi05-libero-own-teacher-manual-view-large-derived) | VLA de diagnostico, sin entrenamiento adicional | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
+| Este checkpoint (pi05-libero-own-teacher-manual-view-large-derived) | VLA de diagnostico, sin entrenamiento adicional | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
 | Base openpi / pi0.5 (familia a la que apunta el nombre `pi05`) | VLA entrenada | No disponible en la informacion proporcionada | No disponible | No disponible | No confirmado |
 | Otros checkpoints VLA publicos (OpenVLA, RDT-1B, etc.) | VLA entrenadas | No disponible en la informacion proporcionada | No disponible | No disponible | No confirmado |
 
@@ -92,7 +92,7 @@ La diferencia cualitativa clave es que este repositorio no es una politica entre
 
 - No es un modelo entrenado: la model card indica explicitamente cero actualizaciones de entrenamiento y que el compuesto no se entreno durante 1000 actualizaciones. Esperar rendimiento de politica entrenada es un error de expectativas.
 - No es un metodo de retencion ni una aislacion causal del congelado del LLM; el autor lo enmarca como una intervencion en el endpoint para evaluar el teacher condicional.
-- La fuente heredada no tiene una revision publica verificada en HuggingFace, lo que dificulta la reproducibilidad completa de la procedencia de `LLM9`, `action expert11`, `projection8` y `wrist23`.
+- La fuente heredada no tiene una revision publica verificada en Hugging Face, lo que dificulta la reproducibilidad completa de la procedencia de `LLM9`, `action expert11`, `projection8` y `wrist23`.
 - La aleatoriedad de la politica en servidor compartido no esta emparejada episodio a episodio, por lo que las comparaciones entre ejecuciones pueden tener varianza no controlada.
 - Licencia no disponible: no hay autorizacion explicita de uso comercial. Cualquier uso en produccion debe tratarse como juridicamente indeterminado.
 - No se documentan idiomas soportados, lo que impide afirmar cobertura multilingue de las instrucciones.
@@ -104,6 +104,6 @@ La diferencia cualitativa clave es que este repositorio no es una politica entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-own-teacher-manual-view-large-derived-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-own-teacher-manual-view-large-derived-20261014
 - Commit de inferencia nativa de openpi: `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08` (la informacion proporcionada no incluye URL del repositorio)
 - No se han proporcionado otros enlaces a papers, blogs, repositorios o demos en la informacion disponible.

@@ -77,8 +77,8 @@ Frente a 20 modelos API (GPT, Kimi, Qwen3-VL-235B, Llama 4, Gemma, etc.) en BSTR
 
 | Modelo | Parametros | Contexto | BSTRB video BoW F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hawkeye-8B | 8,77 B | no disponible | 0,744 | Apache-2.0 | HuggingFace |
-| Qwen3-VL-8B-Instruct (base) | 8 B (aprox.) | no disponible | 0,675 | Apache-2.0 | HuggingFace |
+| Hawkeye-8B | 8,77 B | no disponible | 0,744 | Apache-2.0 | Hugging Face |
+| Qwen3-VL-8B-Instruct (base) | 8 B (aprox.) | no disponible | 0,675 | Apache-2.0 | Hugging Face |
 | Hawkeye 4B | 4 B (aprox.) | no disponible | 0,728 | no disponible | no disponible |
 | Qwen3-VL-235B | 235 B (aprox.) | no disponible | 0,726 | no disponible | API |
 | Kimi K2.6 | no disponible | no disponible | 0,723 | no disponible | API |
@@ -97,7 +97,7 @@ Frente a 20 modelos API (GPT, Kimi, Qwen3-VL-235B, Llama 4, Gemma, etc.) en BSTR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byron123t/Hawkeye-8B
+- Modelo en Hugging Face: https://huggingface.co/byron123t/Hawkeye-8B
 - Dataset BSTRB: https://huggingface.co/datasets/byron123t/BSTRB
 - Codigo: https://github.com/byron123t/hawkeye
 - Pagina del proyecto: https://byron123t.github.io/hawkeye/

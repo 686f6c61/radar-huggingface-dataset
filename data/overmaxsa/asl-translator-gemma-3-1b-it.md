@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OvermaxSA/asl-translator-gemma-3-1b-it | ~1B (int4) | no disponible | LiteRT-LM (`.litertlm`) | Gemma Terms of Use | HuggingFace (7 descargas) |
-| google/gemma-3-1b-it | ~1B | no disponible en esta ficha | safetensors / otros formatos oficiales | Gemma Terms of Use | HuggingFace / Kaggle (modelo base) |
+| OvermaxSA/asl-translator-gemma-3-1b-it | ~1B (int4) | no disponible | LiteRT-LM (`.litertlm`) | Gemma Terms of Use | Hugging Face (7 descargas) |
+| google/gemma-3-1b-it | ~1B | no disponible en esta ficha | safetensors / otros formatos oficiales | Gemma Terms of Use | Hugging Face / Kaggle (modelo base) |
 | Gemma 3 1B IT int4 (`.task`, Kaggle) | ~1B (int4) | no disponible | TensorFlow Lite (`.task`) | Gemma Terms of Use | Kaggle (fuente original del empaquetado) |
 
 La diferencia principal frente al modelo base y al `.task` original es el contenedor: este repositorio ofrece el mismo modelo en formato LiteRT-LM con metadatos de plantilla de chat de Gemma 3, listo para LiteRT-LM en Android. No se dispone de datos de rendimiento comparativo en la información proporcionada.
@@ -81,7 +81,7 @@ La diferencia principal frente al modelo base y al `.task` original es el conten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OvermaxSA/asl-translator-gemma-3-1b-it
+- Repositorio Hugging Face: https://huggingface.co/OvermaxSA/asl-translator-gemma-3-1b-it
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

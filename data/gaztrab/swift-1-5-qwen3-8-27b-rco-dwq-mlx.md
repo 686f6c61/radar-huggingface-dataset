@@ -4,7 +4,7 @@
 
 Swift-1.5-Qwen3.8-27b-RCO-DWQ-MLX es un checkpoint cuantizado en formato nativo MLX del modelo vision-lenguaje Swift 1.5 27B de UkisAI, que a su vez se basa en Qwen3.8-27B. Lo publica el usuario GazTrab y su aportacion no es un modelo nuevo, sino una receta de cuantizacion de pesos: parte del modelo en bfloat16 (BF16) y lo comprime a aproximadamente 3,5 bits por peso en los tensores del modelo de texto, manteniendo la torre de vision y la cabeza MTP (multi-token prediction).
 
-El modelo tiene 27.781.427.952 parametros totales y el repositorio ocupa 13,5 GB; los tensores de texto suman 11.762.121.728 bytes. La licencia es swift-open-license-1.0 (etiquetada como "other" en HuggingFace) y el pipeline declarado es image-text-to-text, es decir, acepta entradas de imagen y texto.
+El modelo tiene 27.781.427.952 parametros totales y el repositorio ocupa 13,5 GB; los tensores de texto suman 11.762.121.728 bytes. La licencia es swift-open-license-1.0 (etiquetada como "other" en Hugging Face) y el pipeline declarado es image-text-to-text, es decir, acepta entradas de imagen y texto.
 
 Su relevancia es metodologica: introduce RCO (un programa dinamico con restriccion de presupuesto de bytes que asigna un ancho de bits a cada tensor) y DWQ (distilled weight quantization, que ajusta escalas y sesgos de grupo contra el modelo BF16 original). Frente a una cuantizacion uniforme de 3 bits MLX, reduce la divergencia de Kullback-Leibler en WikiText, aunque queda por detras de referencias GGUF IQ3_S y de la cuantizacion uniforme de 4 bits.
 
@@ -105,7 +105,7 @@ Todas las alternativas de la tabla son cuantizaciones del mismo modelo base, por
 
 ## Enlaces
 
-- HuggingFace (este release): https://huggingface.co/GazTrab/Swift-1.5-Qwen3.8-27b-RCO-DWQ-MLX
+- Hugging Face (este release): https://huggingface.co/GazTrab/Swift-1.5-Qwen3.8-27b-RCO-DWQ-MLX
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Paper referenciado (tag arxiv:2604.18556): https://arxiv.org/abs/2604.18556
 - Fichero de licencia: LICENSE (incluido en el repositorio)

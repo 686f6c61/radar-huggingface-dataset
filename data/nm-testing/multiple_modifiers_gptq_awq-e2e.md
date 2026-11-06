@@ -80,6 +80,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/multiple_modifiers_gptq_awq-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/multiple_modifiers_gptq_awq-e2e
 
 No se han encontrado papers, blogs, demos u otros enlaces relevantes en la busqueda web.

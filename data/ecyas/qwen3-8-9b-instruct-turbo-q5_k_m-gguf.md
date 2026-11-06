@@ -82,7 +82,7 @@ Los datos de Llama 3.1 son aproximados y provienen de fuentes públicas; no se h
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/ecyas/Qwen3.8-9B-Instruct-Turbo-Q5_K_M-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/ecyas/Qwen3.8-9B-Instruct-Turbo-Q5_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/ewinregirgojr/Qwen3.8-9B-Instruct-Turbo
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Página de Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

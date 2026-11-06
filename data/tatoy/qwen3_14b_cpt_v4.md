@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tatoy/qwen3_14b_cpt_v4` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario tatoy en HuggingFace. El identificador del repositorio sugiere que parte de un modelo Qwen3 de 14 000 millones de parámetros, aunque la model card no declara el modelo base: el campo correspondiente aparece literalmente como `[None]`. El entrenamiento se ha realizado con la librería TRL (versión 1.16.0) y lleva la etiqueta `unsloth`, lo que apunta a un entrenamiento acelerado con dicha librería, probablemente con cuantización de 4 bits durante el proceso.
+`tatoy/qwen3_14b_cpt_v4` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario tatoy en Hugging Face. El identificador del repositorio sugiere que parte de un modelo Qwen3 de 14 000 millones de parámetros, aunque la model card no declara el modelo base: el campo correspondiente aparece literalmente como `[None]`. El entrenamiento se ha realizado con la librería TRL (versión 1.16.0) y lleva la etiqueta `unsloth`, lo que apunta a un entrenamiento acelerado con dicha librería, probablemente con cuantización de 4 bits durante el proceso.
 
 El modelo se distribuye en formato `safetensors` dentro de un repositorio de 21,7 GB y está pensado para consumo mediante `transformers` (el ejemplo de la model card usa `pipeline` con una lista de mensajes con roles), lo que encaja con un asistente conversacional de un solo turno o multiturno. La etiqueta `endpoints_compatible` indica compatibilidad con despliegues tipo Inference Endpoints.
 
@@ -97,6 +97,6 @@ Diferencias relevantes frente a estas alternativas: el modelo de tatoy no docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatoy/qwen3_14b_cpt_v4
+- Modelo en Hugging Face: https://huggingface.co/tatoy/qwen3_14b_cpt_v4
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - No se han encontrado en la informacion disponible otros enlaces (paper, blog, demo, repositorio de codigo o dataset) asociados a este modelo.

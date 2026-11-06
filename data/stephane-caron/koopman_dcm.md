@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stephane-caron/koopman_dcm` es un artefacto publicado en HuggingFace por el usuario stephane-caron bajo licencia Apache 2.0. El repositorio contiene exclusivamente un fichero en formato ONNX (según los tags del repositorio), lo que sugiere un modelo exportado para inferencia, probablemente en el contexto de teoria de operadores de Koopman y control de marcha (DCM, *Divergent Component of Motion*), a juzgar por el nombre.
+`stephane-caron/koopman_dcm` es un artefacto publicado en Hugging Face por el usuario stephane-caron bajo licencia Apache 2.0. El repositorio contiene exclusivamente un fichero en formato ONNX (según los tags del repositorio), lo que sugiere un modelo exportado para inferencia, probablemente en el contexto de teoria de operadores de Koopman y control de marcha (DCM, *Divergent Component of Motion*), a juzgar por el nombre.
 
 La model card publicada está practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no declara pipeline, no declara idiomas y no tiene descargas ni likes en el momento de la consulta, por lo que se trata de un artefacto de investigacion de nicho mas que de un modelo de lenguaje de proposito general.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha documenta lo que se puede verificar objetivamente (formato
 | Idiomas soportados | no disponible (no se declara ningun idioma) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace; el peso real del fichero ONNX no se detalla) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face; el peso real del fichero ONNX no se detalla) |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-11-05 |
 | Fecha de actualizacion | 2026-11-07 |
@@ -79,5 +79,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stephane-caron/koopman_dcm
+- Repositorio en Hugging Face: https://huggingface.co/stephane-caron/koopman_dcm
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

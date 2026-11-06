@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-f.2-klein4bunblurv4-lora` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por RunningHubAI. No se trata de un modelo base completo, sino de un conjunto de pesos de ajuste fino (88 MiB en un único fichero `F.2 klein4bUnblur控油腻v4.safetensors`) que se aplica sobre el modelo base Flux2-Klein-4B. Su funcion, segun la model card, es modificar el comportamiento generativo del modelo base para producir imagenes con un acabado fotografico concreto: la cadena de activacion `H5N1` combinada con la estetica "Fujifilm GFX" y la instruccion de "anadir detalles suaves".
+`rh-f.2-klein4bunblurv4-lora` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por RunningHubAI. No se trata de un modelo base completo, sino de un conjunto de pesos de ajuste fino (88 MiB en un único fichero `F.2 klein4bUnblur控油腻v4.safetensors`) que se aplica sobre el modelo base Flux2-Klein-4B. Su funcion, segun la model card, es modificar el comportamiento generativo del modelo base para producir imagenes con un acabado fotografico concreto: la cadena de activacion `H5N1` combinada con la estetica "Fujifilm GFX" y la instruccion de "anadir detalles suaves".
 
 El modelo resuelve un problema de nicho dentro de los flujos de generacion de imagen: estilizar la salida de un modelo base moderno (Flux2-Klein-4B) sin necesidad de reentrenar, mediante un LoRA ligero que se carga en ComfyUI o en la plataforma RunningHub. Es relevante ahora porque la familia Flux2 esta siendo adoptada rapidamente en pipelines de imagen open source y los LoRA comunitarios permiten especializar el modelo base sin coste de reentrenamiento completo.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA comparables ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-f.2-klein4bunblurv4-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-f.2-klein4bunblurv4-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2066864088000589825
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/1902159358849884162
 - RunningHub International: https://www.runninghub.ai

@@ -68,10 +68,10 @@ La model card únicamente reporta una pérdida de entrenamiento aproximada de 1,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hancock-v0.3.2-adapter-v4 | 7,25 B (base) + adaptador LoRA | 32.768 tokens (base) | No disponible | apache-2.0 | Repositorio HuggingFace, 0 descargas |
+| hancock-v0.3.2-adapter-v4 | 7,25 B (base) + adaptador LoRA | 32.768 tokens (base) | No disponible | apache-2.0 | Repositorio Hugging Face, 0 descargas |
 | mistralai/Mistral-7B-Instruct-v0.3 (modelo base) | 7,25 B | 32.768 tokens | Benchmarks publicados por el autor del modelo base | apache-2.0 | Ampliamente distribuido, con cuantizaciones de la comunidad |
-| cyberviser/hancock-pentest-v4 | No disponible | No disponible | No disponible | No disponible | Repositorio HuggingFace; recomendado por el autor para detección y hunting |
-| cyberviser/hancock-v0.3.2-adapter | No disponible | No disponible | No disponible | No disponible | Repositorio HuggingFace; versión previa del adaptador |
+| cyberviser/hancock-pentest-v4 | No disponible | No disponible | No disponible | No disponible | Repositorio Hugging Face; recomendado por el autor para detección y hunting |
+| cyberviser/hancock-v0.3.2-adapter | No disponible | No disponible | No disponible | No disponible | Repositorio Hugging Face; versión previa del adaptador |
 
 No se dispone de información sobre otros adaptadores de ciberseguridad comparables en los datos proporcionados.
 
@@ -88,7 +88,7 @@ No se dispone de información sobre otros adaptadores de ciberseguridad comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyberviser/hancock-v0.3.2-adapter-v4
+- Repositorio Hugging Face: https://huggingface.co/cyberviser/hancock-v0.3.2-adapter-v4
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Adaptador recomendado por el autor para detección y hunting: https://huggingface.co/cyberviser/hancock-pentest-v4
 - Adaptador previo del que parte este entrenamiento: hancock-v0.3.2-adapter (referenciado en la model card; URL completa no disponible)

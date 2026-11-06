@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch09` es un checkpoint de investigación derivado de Phi-1.5, publicado por el grupo `unl-reset` en HuggingFace. Se enmarca en la línea de trabajo TOFU (Task of Fictitious Unlearning), un benchmark académico para evaluar técnicas de *machine unlearning*: el objetivo es que un modelo entrenado con datos sintéticos sobre autores ficticios "olvide" selectivamente la información de un subconjunto de esos autores (el conjunto *forget10*) sin degradar el rendimiento sobre el resto (el conjunto *retain*).
+El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch09` es un checkpoint de investigación derivado de Phi-1.5, publicado por el grupo `unl-reset` en Hugging Face. Se enmarca en la línea de trabajo TOFU (Task of Fictitious Unlearning), un benchmark académico para evaluar técnicas de *machine unlearning*: el objetivo es que un modelo entrenado con datos sintéticos sobre autores ficticios "olvide" selectivamente la información de un subconjunto de esos autores (el conjunto *forget10*) sin degradar el rendimiento sobre el resto (el conjunto *retain*).
 
 El modelo parte de `locuslab/tofu_ft_phi-1.5`, un fine-tune de Phi-1.5 sobre el dataset TOFU, y aplica una intervención denominada "IHL + Reset Both": reinicializa los *input embeddings* y la *LM head* a partir de los pesos originales de `microsoft/phi-1_5`, mientras conserva el resto de pesos del transformer del modelo fine-tuneado. El entrenamiento combina una pérdida IHL (*inverted hinge loss*) sobre el conjunto forget con una entropía cruzada estándar ponderada por 1.0 sobre el conjunto retain. Este checkpoint corresponde a la época 9 de 20.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch09 | 1.418 M | no disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint de investigación, requiere `custom_code` |
-| locuslab/tofu_ft_phi-1.5 | 1.418 M | no disponible | no disponible | HuggingFace | Modelo base fine-tuneado sobre TOFU, sin unlearning |
-| microsoft/phi-1_5 | 1.418 M | 2048 | MIT (según modelo original) | HuggingFace | Modelo original, sin fine-tune TOFU |
-| Otros checkpoints TOFU sobre Phi-1.5 | 1.418 M | no disponible | variable | HuggingFace | Alternativas de la misma familia de experimentos |
+| unl-reset/tofu-phi-1_5-...-epoch09 | 1.418 M | no disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint de investigación, requiere `custom_code` |
+| locuslab/tofu_ft_phi-1.5 | 1.418 M | no disponible | no disponible | Hugging Face | Modelo base fine-tuneado sobre TOFU, sin unlearning |
+| microsoft/phi-1_5 | 1.418 M | 2048 | MIT (según modelo original) | Hugging Face | Modelo original, sin fine-tune TOFU |
+| Otros checkpoints TOFU sobre Phi-1.5 | 1.418 M | no disponible | variable | Hugging Face | Alternativas de la misma familia de experimentos |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch09](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch09)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch09](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch09)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - TOFU benchmark: no disponible en la información proporcionada.

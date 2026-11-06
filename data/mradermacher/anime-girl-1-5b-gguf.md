@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero concreta: la model card del reposit
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base. La model card del repositorio GGUF únicamente declara que se trata de cuantizaciones estáticas de coderian/anime-girl-1.5B, con la anotación interna `convert_type: hf` y `quantize_version: 2`, lo que indica que la conversión se realizó partiendo de pesos en formato HuggingFace. No se documentan el número de capas, la dimensión oculta, el tipo de atención, ni si emplea técnicas como GQA o decodificación especulativa.
+No se dispone de información sobre la arquitectura del modelo base. La model card del repositorio GGUF únicamente declara que se trata de cuantizaciones estáticas de coderian/anime-girl-1.5B, con la anotación interna `convert_type: hf` y `quantize_version: 2`, lo que indica que la conversión se realizó partiendo de pesos en formato Hugging Face. No se documentan el número de capas, la dimensión oculta, el tipo de atención, ni si emplea técnicas como GQA o decodificación especulativa.
 
 Tampoco hay datos sobre el entrenamiento: se desconocen el número de tokens, la composición del dataset, la posible aplicación de RLHF o DPO y si existe una fase de ajuste instructivo. El único indicio funcional es la etiqueta `conversational`, que sugiere un ajuste orientado a diálogo, presumiblemente con una personalidad o estética asociada al nombre del modelo. La cifra exacta de parámetros (1.543.714.304) coincide con la clase de tamaño habitual de modelos de 1,5B de la familia Qwen2.5, pero esto es una observación de tamaño y no una confirmación de la arquitectura subyacente.
 
@@ -31,7 +31,7 @@ Tampoco hay datos sobre el entrenamiento: se desconocen el número de tokens, la
 
 - Generación de texto conversacional en inglés, según la etiqueta `conversational` del repositorio.
 - Formato de pesos GGUF, compatible con inferencia local en CPU y GPU mediante llama.cpp y derivados.
-- Compatibilidad declarada con `endpoints_compatible`, lo que permite su uso a través de endpoints de inferencia compatibles con el formato de HuggingFace.
+- Compatibilidad declarada con `endpoints_compatible`, lo que permite su uso a través de endpoints de inferencia compatibles con el formato de Hugging Face.
 - Ejecución en entornos con recursos limitados gracias a las cuantizaciones de 2 a 8 bits.
 - Capacidades de razonamiento, código, matemáticas, visión, audio, tool calling o agentes: no disponibles (no se documentan en la información proporcionada).
 - Capacidades multilingües: no disponibles; el repositorio declara únicamente inglés.
@@ -104,11 +104,11 @@ Como referencia de categoría, los modelos comparables habituales en el rango de
 - Sesgos: no evaluados ni documentados.
 - Resultados de la búsqueda web: no se ha encontrado ninguna fuente independiente, publicación, paper ni análisis sobre este modelo; los resultados obtenidos eran foros y páginas de soporte sin relación con el tema.
 - Repositorio sin tracción: el modelo registra 0 descargas y 0 «likes» en el momento de la consulta, lo que reduce la probabilidad de encontrar soporte de la comunidad o casos de uso validados.
-- Fechas del repositorio: la creación y la última actualización figuran en septiembre de 2026, dato incoherente que conviene verificar en la página de HuggingFace.
+- Fechas del repositorio: la creación y la última actualización figuran en septiembre de 2026, dato incoherente que conviene verificar en la página de Hugging Face.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/mradermacher/anime-girl-1.5B-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/mradermacher/anime-girl-1.5B-GGUF
 - Modelo base: https://huggingface.co/coderian/anime-girl-1.5B
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#anime-girl-1.5B-GGUF
 - Guía de uso de ficheros GGUF (referencia de TheBloke citada en la model card): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

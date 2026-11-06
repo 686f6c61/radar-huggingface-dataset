@@ -5,7 +5,7 @@
   "author": "optimum-intel-internal-testing",
   "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-lfm3",
   "created_at": "2026-10-27T17:41:16.000Z",
-  "updated_at": "2026-10-27T17:44:34.000Z",
+  "updated_at": "2026-11-05T17:04:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 264,
+  "downloads_30d": 266,
   "trending_score": 0,
   "parameters": 2068608,
   "parameters_human": "2.1M",
-  "storage_bytes": 26191346,
-  "storage_human": "26 MB",
+  "storage_bytes": 44099980,
+  "storage_human": "44 MB",
   "base_model": null,
   "formats": [
     "safetensors"

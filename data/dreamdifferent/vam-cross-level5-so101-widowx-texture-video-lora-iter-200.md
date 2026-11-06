@@ -67,6 +67,6 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-video-lora-iter-200)
+- [Modelo en Hugging Face](https://huggingface.co/dreamdifferent/vam-cross-level5-so101-widowx-texture-video-lora-iter-200)
 - [Adaptador similar para KUKA IIWA14](https://huggingface.co/dreamdifferent/vam-cross-level5-kuka-iiwa14-widowx-texture-teleopaligned-videolora400-action-decoder-iter1800)
-- [Perfil del autor en HuggingFace](https://huggingface.co/dreamdifferent)
+- [Perfil del autor en Hugging Face](https://huggingface.co/dreamdifferent)

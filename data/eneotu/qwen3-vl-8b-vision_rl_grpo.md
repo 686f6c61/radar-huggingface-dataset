@@ -98,7 +98,7 @@ Estimaciones derivadas del tamano del modelo base (unos 8 000 millones de parame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eneotu/Qwen3-VL-8B-vision_rl_grpo
+- Modelo en Hugging Face: https://huggingface.co/eneotu/Qwen3-VL-8B-vision_rl_grpo
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit
 - Dataset de entrenamiento (AI4Math/MathVista): https://huggingface.co/datasets/AI4Math/MathVista
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

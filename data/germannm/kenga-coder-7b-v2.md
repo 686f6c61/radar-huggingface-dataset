@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kenga-Coder-7B-v2 | 7,6 B | 2048 tokens en entrenamiento; contexto base no confirmado | Adaptador LoRA sobre Qwen2.5-Coder-7B-Instruct | No disponible | HuggingFace (adaptador + GGUF), 0 descargas |
-| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 tokens, extensible a 131.072 con YaRN (segun su documentacion) | Modelo completo instruct | No disponible en la informacion proporcionada | HuggingFace, ampliamente desplegado |
-| Otros fine-tunes de codigo de ~7 B (por ejemplo, derivados de Qwen2.5-Coder o DeepSeek-Coder) | ~7 B | No disponible | Modelo completo o adaptador | Variable | HuggingFace |
+| Kenga-Coder-7B-v2 | 7,6 B | 2048 tokens en entrenamiento; contexto base no confirmado | Adaptador LoRA sobre Qwen2.5-Coder-7B-Instruct | No disponible | Hugging Face (adaptador + GGUF), 0 descargas |
+| Qwen2.5-Coder-7B-Instruct | 7,6 B | 32.768 tokens, extensible a 131.072 con YaRN (segun su documentacion) | Modelo completo instruct | No disponible en la informacion proporcionada | Hugging Face, ampliamente desplegado |
+| Otros fine-tunes de codigo de ~7 B (por ejemplo, derivados de Qwen2.5-Coder o DeepSeek-Coder) | ~7 B | No disponible | Modelo completo o adaptador | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento de Kenga-Coder-7B-v2 que permitan una comparacion cuantitativa con alternativas. La comparacion se limita, por tanto, a parametros, formato y disponibilidad. El principal diferenciador del modelo es su especializacion en el lenguaje Kenga y su ajuste al ruso, no una mejora de rendimiento general demostrada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de Kenga-Coder-7B-v2 que permitan una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/Kenga-Coder-7B-v2
+- Modelo en Hugging Face: https://huggingface.co/GermannM/Kenga-Coder-7B-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Ejecucion con Ollama: `ollama run hf.co/GermannM/Kenga-Coder-7B-v2:Q4_K_M`
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo, al proyecto Kenga ni a publicaciones tecnicas asociadas. Los unicos resultados devueltos corresponden a paginas generales de servicios de Google (Chrome, Flights, Translate, Maps, Trends) y no guardan relacion con el modelo.

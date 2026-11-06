@@ -78,7 +78,7 @@ Como referencia cualitativa aportada por el autor: una resolucion transitoria de
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Castsolid-gnn v5.1 | GNN tipo MeshGraphNet + cabezas GBM, especifico de solidificacion en fundicion | no disponible (8,8 MB de pesos) | no aplica (malla tetraedrica) | no disponible | Apache-2.0 | HuggingFace y GitHub |
+| Castsolid-gnn v5.1 | GNN tipo MeshGraphNet + cabezas GBM, especifico de solidificacion en fundicion | no disponible (8,8 MB de pesos) | no aplica (malla tetraedrica) | no disponible | Apache-2.0 | Hugging Face y GitHub |
 | MeshGraphNet (Pfaff et al., arXiv:2010.03409) | GNN generica para simulacion fisica sobre mallas | no disponible | no aplica | no disponible | no disponible | paper y reproducciones publicas |
 | Solver de elementos finitos con metodo de entalpia (FEniCSx) | Metodo numerico clasico, no aprendizaje automatico | no aplica | no aplica | referencia fisica, sin cuantificar aqui | software de codigo abierto (no detallado) | paquetes de FEniCSx |
 
@@ -99,7 +99,7 @@ La comparativa cuantitativa no esta disponible: la informacion proporcionada no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eugenmik/castsolid-gnn
+- Hugging Face: https://huggingface.co/eugenmik/castsolid-gnn
 - Repositorio de codigo y demo (GitHub): https://github.com/eugenmik/castsolid-gnn
 - Paper de referencia de la arquitectura MeshGraphNet: https://arxiv.org/abs/2010.03409
 - Safetensors: https://github.com/huggingface/safetensors

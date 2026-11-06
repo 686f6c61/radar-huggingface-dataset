@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sonexa-Music-v0.1-Beta es un modelo de generación de música a partir de texto desarrollado por SonexaAI, publicado en HuggingFace bajo el identificador `SonexaAI/Sonexa-Music-v0.1-Beta`. Según la model card, se trata de un modelo reentrenado a partir de Minimax-Music3, lo que sugiere que parte de una arquitectura ya probada en el ámbito de la síntesis musical y la adapta con un ajuste adicional. El modelo está integrado en el ecosistema de Diffusers y se presenta como un pipeline de texto a audio, lo que facilita su uso con las herramientas estándar de generación de audio en PyTorch.
+Sonexa-Music-v0.1-Beta es un modelo de generación de música a partir de texto desarrollado por SonexaAI, publicado en Hugging Face bajo el identificador `SonexaAI/Sonexa-Music-v0.1-Beta`. Según la model card, se trata de un modelo reentrenado a partir de Minimax-Music3, lo que sugiere que parte de una arquitectura ya probada en el ámbito de la síntesis musical y la adapta con un ajuste adicional. El modelo está integrado en el ecosistema de Diffusers y se presenta como un pipeline de texto a audio, lo que facilita su uso con las herramientas estándar de generación de audio en PyTorch.
 
 El modelo tiene aproximadamente 2.431 millones de parámetros, un tamaño relativamente contenido para la tarea de generación musical, y el repositorio ocupa 67.2 GB, lo que indica que los pesos están almacenados en formato safetensors con precisión completa. La fecha de creación es de agosto de 2026, lo que lo convierte en un lanzamiento reciente. Sin embargo, la documentación disponible es extremadamente escasa: no se especifican la licencia, los idiomas soportados, el contexto de entrenamiento ni los datos utilizados, lo que limita la evaluación rigurosa del modelo.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada**: con 2.431 millones de parámetros en safetensors, la inferencia requiere al menos 10 GB de VRAM en float32, y probablemente más para el proceso de generación de audio completo (el repositorio de 67.2 GB incluye pesos de alta precisión y posiblemente otros componentes). En cuantización FP16, se estima un consumo de 5-6 GB de VRAM.
 - **GPU recomendadas**: para una generación razonablemente rápida, se recomienda una GPU con al menos 12 GB de VRAM, como una RTX 3060 (12 GB) o RTX 4070 Ti (12 GB). Para producción con mayor throughput, una A100 (40 GB) o H100 (80 GB) sería adecuada.
 - **Consumer GPU**: sí, cabe en tarjetas de gama alta de consumo con 12 GB o más, pero la generación de audio puede ser lenta sin optimizaciones.
-- **Opciones de despliegue**: al estar integrado con diffusers, se puede usar con el pipeline estándar de HuggingFace. También es compatible con `sglang-omni`. No se menciona compatibilidad con vLLM, llama.cpp u Ollama.
+- **Opciones de despliegue**: al estar integrado con diffusers, se puede usar con el pipeline estándar de Hugging Face. También es compatible con `sglang-omni`. No se menciona compatibilidad con vLLM, llama.cpp u Ollama.
 - **Latencia y throughput**: no disponible. Dado el tamaño del modelo y la complejidad de la generación de audio, se espera una latencia de varios segundos por pista en GPU de consumo, pero no hay datos públicos.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SonexaAI/Sonexa-Music-v0.1-Beta
+- Modelo en Hugging Face: https://huggingface.co/SonexaAI/Sonexa-Music-v0.1-Beta
 - Sitio web de Sonexa AI: https://sonexaai.tech/
 - Repositorio de la aplicación Sonexa Music (no oficial): https://github.com/devilyash10/Sonexa_music_app
 - Sitio de Sonexa Music (no oficial): https://sonexamusic.github.io/

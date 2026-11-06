@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qlora-output es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario Aayushmanmath en HuggingFace. El repositorio se generó automáticamente con la librería TRL (etiqueta `generated_from_trainer`) y emplea la plantilla estándar de model card que produce el `SFTTrainer`, sin documentación adicional sobre el conjunto de datos, el número de pasos ni los hiperparámetros utilizados. El nombre del repositorio sugiere un entrenamiento con QLoRA (adaptación de bajo rango sobre pesos cuantizados a 4 bits), aunque la model card solo declara explícitamente "trained with SFT" y no menciona cuantización de 4 bits ni adaptadores LoRA.
+qlora-output es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario Aayushmanmath en Hugging Face. El repositorio se generó automáticamente con la librería TRL (etiqueta `generated_from_trainer`) y emplea la plantilla estándar de model card que produce el `SFTTrainer`, sin documentación adicional sobre el conjunto de datos, el número de pasos ni los hiperparámetros utilizados. El nombre del repositorio sugiere un entrenamiento con QLoRA (adaptación de bajo rango sobre pesos cuantizados a 4 bits), aunque la model card solo declara explícitamente "trained with SFT" y no menciona cuantización de 4 bits ni adaptadores LoRA.
 
 El modelo hereda la arquitectura del base: un transformer decoder-only denso de aproximadamente 1.500 millones de parámetros, con atención de consultas agrupadas (GQA) y una ventana de contexto nativa de 32.768 tokens en la familia Qwen2.5. Es, por tanto, un modelo de escala pequeña, orientado a despliegue en GPU de consumo, entornos locales y escenarios de baja latencia donde no es viable servir un modelo de 7B o superior.
 
@@ -25,7 +25,7 @@ Su relevancia es fundamentalmente metodológica más que de rendimiento: sirve c
 | Metodo de entrenamiento | SFT con TRL (según model card); el nombre del repo sugiere QLoRA |
 | Version de TRL declarada | 1.14.0 (no corresponde a ninguna release pública verificable en el momento de redactar esta ficha) |
 | Version de Transformers declarada | 5.17.0 (no corresponde a ninguna release pública verificable) |
-| Tamano del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM es suficiente en FP16 para secuencias moderadas. Se puede servir en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090, L4, A10G, A100 o H100; en estas dos ultimas el modelo queda enormemente infrautilizado y solo tendria sentido en despliegues con muchas peticiones concurrentes.
 - GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU consumer con 8 GB o mas, e incluso en 6 GB con cuantizacion de 4 bits.
 - CPU y edge: viable mediante llama.cpp u Ollama si se convierte a GGUF, aunque este repositorio no publica pesos GGUF.
-- Opciones de despliegue: transformers (soporte nativo, indicado en las etiquetas), vLLM o TGI si se dispone de pesos completos en safetensors, llama.cpp u Ollama previa conversion a GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (soporte nativo, indicado en las etiquetas), vLLM o TGI si se dispone de pesos completos en safetensors, llama.cpp u Ollama previa conversion a GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. No se han publicado mediciones, y el tamano de repo de 0.0 GB impide siquiera confirmar que los pesos esten efectivamente subidos.
 - Almacenamiento: el repositorio declara 0.0 GB, lo que es inconsistente con un modelo de 1,5B parametros en safetensors (que ocuparia varios GB). Esto apunta a que los pesos podrian no estar presentes o a que solo se subieron adaptadores.
 
@@ -99,7 +99,7 @@ Criterio de eleccion: si el objetivo es un modelo pequeno listo para produccion,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aayushmanmath/qlora-output
+- Modelo en Hugging Face: https://huggingface.co/Aayushmanmath/qlora-output
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de QLoRA: https://arxiv.org/abs/2305.14314

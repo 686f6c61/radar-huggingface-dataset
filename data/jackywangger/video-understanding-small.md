@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jackywangger/video-understanding-small` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre comprension de video publicado en HuggingFace. La propia model card lo describe como un conjunto estructurado de apuntes con referencias de evaluacion y preguntas abiertas, y aclara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. Los unicos artefactos declarados son `notes.md` (artefacto principal) y `README.md` (documentacion).
+`jackywangger/video-understanding-small` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre comprension de video publicado en Hugging Face. La propia model card lo describe como un conjunto estructurado de apuntes con referencias de evaluacion y preguntas abiertas, y aclara explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. Los unicos artefactos declarados son `notes.md` (artefacto principal) y `README.md` (documentacion).
 
 El repositorio pesa 0.0 GB y los metadatos de safetensors reportan 49.600 parametros, una cifra marginal que no corresponde a un modelo funcional de comprension de video sino, como mucho, a un tensor residual o a un artefacto auxiliar. La model card situa el trabajo en el ambito de la comprension de video, con contexto de evaluacion concreto en MSR-VTT y ActivityNet Captions, y separa deliberadamente planes e hipotesis de resultados ya obtenidos.
 
@@ -76,5 +76,5 @@ No disponible. No se han proporcionado modelos comparables en la informacion rec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jackywangger/video-understanding-small
+- Hugging Face: https://huggingface.co/jackywangger/video-understanding-small
 - No se han encontrado enlaces relevantes en la busqueda web proporcionada: los resultados devueltos corresponden a sitios de consumo, comercio electronico y servicios financieros sin relacion con el modelo. No se dispone de paper, blog, repositorio de codigo ni demo asociados en la informacion disponible.

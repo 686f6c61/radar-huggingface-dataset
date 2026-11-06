@@ -93,7 +93,7 @@ Nota: las cifras de los modelos de comparacion corresponden a datos publicos amp
 - Limitaciones de idioma: la model card declara unicamente ingles. El rendimiento en castellano u otros idiomas no esta verificado y probablemente sea inferior.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, pero conviene revisar la licencia del modelo base ManniX-ITA/Ornith-1.5-27B-A3B-CoderX, ya que este repositorio solo cubre la cuantizacion y el autor de la cuantizacion no es el titular de los derechos del entrenamiento.
 - Procedencia del modelo: la cadena de poda de expertos y fusion (reap, ream, omnimergekit) puede degradar capacidades de forma no uniforme entre dominios; sin evaluaciones publicadas no es posible saber que areas se han visto mas afectadas.
-- Estado del repositorio: creado el 2026-09-10 segun los metadatos de HuggingFace y con 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- Estado del repositorio: creado el 2026-09-10 segun los metadatos de Hugging Face y con 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 - Cuantizaciones: el autor indica que no hay cuantizaciones ponderadas/imatrix disponibles y que podria no planear generarlas; en el README solo se documenta Q4_K_S, aunque los metadatos mencionan otros tipos. Conviene verificar la lista real de ficheros antes de disenar un despliegue.
 - Los ficheros GGUF de gran tamano pueden estar divididos en multiples partes; es necesario consultar las instrucciones de concatenacion del autor antes de usarlos.
 

@@ -86,8 +86,8 @@ La model card no detalla la semantica exacta del campo N ni el criterio de exito
 
 | Modelo | Tipo | Tarea | Semillas publicadas | Tasa de exito publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r00-baseline-first100-divl (este) | Actor de difusion congelado mas critico DIVL distribuido | sim-square-broad | 5 | 19,99 % agregado (18,35 %-22,11 %) | Apache 2.0 | HuggingFace |
-| sim-square-broad-r00-baseline-first100-idql | Actor de difusion (padre, congelado en este modelo) | sim-square-broad | No disponible | No disponible en esta informacion | No disponible | HuggingFace |
+| sim-square-broad-r00-baseline-first100-divl (este) | Actor de difusion congelado mas critico DIVL distribuido | sim-square-broad | 5 | 19,99 % agregado (18,35 %-22,11 %) | Apache 2.0 | Hugging Face |
+| sim-square-broad-r00-baseline-first100-idql | Actor de difusion (padre, congelado en este modelo) | sim-square-broad | No disponible | No disponible en esta informacion | No disponible | Hugging Face |
 | Variantes IQL / DDPG+BC / IDQL citadas en la nomenclatura de artefactos | No disponible | sim-square-broad | No disponible | No disponible | No disponible | Solo referenciadas en la model card |
 
 No se dispone de datos publicados de otros agentes comparables sobre la misma tarea en la informacion proporcionada, por lo que la comparacion cuantitativa entre criticos queda pendiente de consultar la arena de evaluacion de Mulligan.
@@ -109,10 +109,10 @@ No se dispone de datos publicados de otros agentes comparables sobre la misma ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-first100-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r00-baseline-first100-divl
 - Modelo padre (actor IDQL congelado): https://huggingface.co/mulligan/sim-square-broad-r00-baseline-first100-idql
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline-first100
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Arena de evaluacion de politicas: https://arena.mulligan.page

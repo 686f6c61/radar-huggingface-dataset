@@ -82,11 +82,11 @@ El autor incluye además una tabla de error extremo a extremo frente a bf16 por 
 
 | Modelo | Parámetros | Contexto / resolución | Pasos | Formato y tamaño | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tsolful/FastH3-Omni-Comfy-INT4mixed-INT6GPTQ (esta ficha) | no disponible | 1344×768, 73 fotogramas en calibración | 8 | safetensors único, 13,70 GiB | minimax-h3-community-license-agreement | HuggingFace, 0 descargas |
-| FastH3-OmniRef-Comfy (bf16 de origen) | no disponible | misma familia OmniRef | 8 | safetensors, 44,2 GB | minimax-h3-community-license-agreement | HuggingFace (FastVideo) |
-| INT8 ConvRot de Comfy-Org | no disponible | misma familia OmniRef | 8 | safetensors INT8, 22,2 GB | minimax-h3-community-license-agreement | HuggingFace (Comfy-Org) |
-| FastVideo-FastH3-8-Step-V2 | no disponible | texto a vídeo con audio | 8 | checkpoint FastVideo, requiere backend VSA-H3 | no disponible en la información | HuggingFace (FastVideo) |
-| FastH3 4-step (familia FastH3) | no disponible | texto a vídeo con audio | 4 | adaptador sobre el checkpoint base | no disponible en la información | HuggingFace / vLLM-Omni |
+| tsolful/FastH3-Omni-Comfy-INT4mixed-INT6GPTQ (esta ficha) | no disponible | 1344×768, 73 fotogramas en calibración | 8 | safetensors único, 13,70 GiB | minimax-h3-community-license-agreement | Hugging Face, 0 descargas |
+| FastH3-OmniRef-Comfy (bf16 de origen) | no disponible | misma familia OmniRef | 8 | safetensors, 44,2 GB | minimax-h3-community-license-agreement | Hugging Face (FastVideo) |
+| INT8 ConvRot de Comfy-Org | no disponible | misma familia OmniRef | 8 | safetensors INT8, 22,2 GB | minimax-h3-community-license-agreement | Hugging Face (Comfy-Org) |
+| FastVideo-FastH3-8-Step-V2 | no disponible | texto a vídeo con audio | 8 | checkpoint FastVideo, requiere backend VSA-H3 | no disponible en la información | Hugging Face (FastVideo) |
+| FastH3 4-step (familia FastH3) | no disponible | texto a vídeo con audio | 4 | adaptador sobre el checkpoint base | no disponible en la información | Hugging Face / vLLM-Omni |
 
 La comparación relevante es de tamaño y precisión: esta conversión reduce un 67 % el peso frente al bf16 y un 34 % frente al INT8, a cambio de un error de capa de entre el 1,46 % y el 1,74 %. No hay datos de calidad perceptual que permitan afirmar equivalencia con el bf16.
 
@@ -107,7 +107,7 @@ La comparación relevante es de tamaño y precisión: esta conversión reduce un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsolful/FastH3-Omni-Comfy-INT4mixed-INT6GPTQ
+- Modelo en Hugging Face: https://huggingface.co/tsolful/FastH3-Omni-Comfy-INT4mixed-INT6GPTQ
 - Checkpoint de origen (FastH3-OmniRef-Comfy): https://huggingface.co/FastVideo/FastH3-OmniRef-Comfy
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

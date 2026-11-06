@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `JacksonDudeWScott/idk` es un repositorio publicado en HuggingFace por el usuario JacksonDudeWScott bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: no se declara pipeline de inferencia, no se especifican idiomas soportados, no hay model card con contenido tecnico (unicamente la declaracion de licencia) y el repositorio registra cero descargas y cero likes en el momento de la consulta. El nombre del repositorio ("idk", abreviatura coloquial de "I don't know") sugiere que se trata de un artefacto de prueba, un experimento personal o un placeholder, mas que de un modelo destinado a uso en produccion.
+El modelo identificado como `JacksonDudeWScott/idk` es un repositorio publicado en Hugging Face por el usuario JacksonDudeWScott bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: no se declara pipeline de inferencia, no se especifican idiomas soportados, no hay model card con contenido tecnico (unicamente la declaracion de licencia) y el repositorio registra cero descargas y cero likes en el momento de la consulta. El nombre del repositorio ("idk", abreviatura coloquial de "I don't know") sugiere que se trata de un artefacto de prueba, un experimento personal o un placeholder, mas que de un modelo destinado a uso en produccion.
 
 No es posible determinar la arquitectura, el numero de parametros, la longitud de contexto ni el regimen de entrenamiento a partir de la informacion proporcionada. La model card no incluye descripcion, ejemplos de uso, datos de entrenamiento ni resultados de evaluacion, y los resultados de busqueda web no contienen ninguna referencia tecnica al modelo: los enlaces recuperados son contenido audiovisual sin relacion con el repositorio y se han descartado por no ser fuentes validas. En consecuencia, esta ficha se limita a documentar lo que se puede verificar y marca explicitamente como "no disponible" todo lo demas.
 
@@ -35,7 +35,7 @@ No hay informacion sobre el volumen de tokens de entrenamiento, la composicion d
 - No hay evidencia de soporte para agentes o razonamiento multi-paso.
 - No hay evidencia de capacidades multilingues ni de idiomas cubiertos.
 - No hay evidencia de capacidades especiales (modo de razonamiento explicito, vision, audio, etc.).
-- No se declara pipeline de inferencia en los metadatos de HuggingFace, lo que impide clasificar la tarea del modelo (text-generation, text-classification, image-text-to-text, etc.).
+- No se declara pipeline de inferencia en los metadatos de Hugging Face, lo que impide clasificar la tarea del modelo (text-generation, text-classification, image-text-to-text, etc.).
 
 ## Casos de uso
 
@@ -48,7 +48,7 @@ A modo de orientacion general, un modelo de este tipo solo deberia considerarse 
 - Contacto con el autor para obtener la informacion ausente antes de plantear cualquier uso real.
 - Verificacion de la licencia Apache 2.0 y de las obligaciones de atribucion si finalmente se reutiliza el contenido.
 - Pruebas de carga de herramientas de inferencia (transformers, vLLM, llama.cpp) para comprobar compatibilidad de formatos.
-- Analisis de repositorios vacios o minimos como caso de estudio de publicacion incompleta en HuggingFace.
+- Analisis de repositorios vacios o minimos como caso de estudio de publicacion incompleta en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JacksonDudeWScott/idk | no disponible | no disponible | apache-2.0 | Repositorio HuggingFace sin descargas | Sin documentacion tecnica |
+| JacksonDudeWScott/idk | no disponible | no disponible | apache-2.0 | Repositorio Hugging Face sin descargas | Sin documentacion tecnica |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | No procede sin conocer la categoria |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | No procede sin conocer la categoria |
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JacksonDudeWScott/idk
+- Hugging Face: https://huggingface.co/JacksonDudeWScott/idk
 - Model card: https://huggingface.co/JacksonDudeWScott/idk/blob/main/README.md
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

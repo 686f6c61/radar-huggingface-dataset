@@ -77,6 +77,6 @@ No se dispone de datos de rendimiento comparativo (MOS, etc.) para estos modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PulpCut/Qwen3-TTS-12Hz-0.6B-Base-safetensors
+- Repositorio Hugging Face: https://huggingface.co/PulpCut/Qwen3-TTS-12Hz-0.6B-Base-safetensors
 - Modelo original Qwen3-TTS 12Hz 0.6B Base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Motor H3ddle (C): https://github.com/AlexanderIstomin/h3ddle

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eastwood-Archive-Shelf-Map es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 que, segun la informacion disponible, no contiene un modelo de inteligencia artificial entrenado, sino lo que parece ser un mapa de estanteria o indice de archivo de un espacio denominado "Eastwood Restoration Room". El propio autor lo describe como un "Shelf Map" con dos colecciones ("civics-oral" y "river-engineering") y cinco volumenes, ademas de marcas temporales de publicacion y corte de datos.
+Eastwood-Archive-Shelf-Map es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 que, segun la informacion disponible, no contiene un modelo de inteligencia artificial entrenado, sino lo que parece ser un mapa de estanteria o indice de archivo de un espacio denominado "Eastwood Restoration Room". El propio autor lo describe como un "Shelf Map" con dos colecciones ("civics-oral" y "river-engineering") y cinco volumenes, ademas de marcas temporales de publicacion y corte de datos.
 
 No se dispone de informacion sobre arquitectura, parametros, contexto, licencia ni idiomas, y el repositorio no tiene pipeline declarado, cero descargas y cero likes en el momento de la consulta. Por su naturaleza, no encaja en las categorias habituales de modelo de lenguaje, vision o multimodal, sino que se asemeja a un artefacto de catalogacion documental o metadatos de archivo.
 
@@ -87,7 +87,7 @@ No disponible. No se han identificado modelos comparables porque el repositorio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Eastwood-Archive-Shelf-Map
+- Hugging Face: https://huggingface.co/SOTAagi2030/Eastwood-Archive-Shelf-Map
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

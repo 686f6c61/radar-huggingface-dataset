@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlienX-3D-MHD es un paquete de publicacion asociado a un proyecto de investigacion sobre simulacion magnetohidrodinamica (MHD) en 3D, no un modelo de lenguaje al uso. El repositorio, alojado por el usuario ElBalor en HuggingFace, contiene el codigo fuente `AlienX-mhd.py`, documentacion de una solicitud de financiacion (grant), artefactos de entrenamiento, diagnosticos y resultados de evaluacion parcial correspondientes a un protocolo de 65 epocas. El tamano del repositorio es de 0,0 GB y no se ha publicado todavia el checkpoint final.
+AlienX-3D-MHD es un paquete de publicacion asociado a un proyecto de investigacion sobre simulacion magnetohidrodinamica (MHD) en 3D, no un modelo de lenguaje al uso. El repositorio, alojado por el usuario ElBalor en Hugging Face, contiene el codigo fuente `AlienX-mhd.py`, documentacion de una solicitud de financiacion (grant), artefactos de entrenamiento, diagnosticos y resultados de evaluacion parcial correspondientes a un protocolo de 65 epocas. El tamano del repositorio es de 0,0 GB y no se ha publicado todavia el checkpoint final.
 
 El estado actual del proyecto es intermedio: el paquete `training/latest_resume/run/` contiene un checkpoint reanudable de Kaggle (`last_training.pt`), el log de entrenamiento, metadatos de la ejecucion y resultados de seis puertas de validacion superadas. Segun la model card, la ejecucion se detuvo antes de que la fase K=8 produjese el fichero definitivo `best_alienx_mhd.pt`, por lo que no existe un modelo final liberado.
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros s
 - No existe un modelo final liberado: el paquete contiene un checkpoint reanudable (`last_training.pt`), no el `best_alienx_mhd.pt` que debia producir la fase K=8.
 - La evaluacion publicada es parcial y no equivale al benchmark completo del grant: usa 1 trayectoria por regimen entrenado y 2 por regimen retenido dificil frente a las 736 del protocolo completo.
 - La licencia no esta disponible en la informacion proporcionada; el paquete incluye un fichero `docs/license` cuyo contenido no se detalla, por lo que no puede confirmarse el uso comercial.
-- El repositorio tiene 0,0 GB y 0 descargas, lo que sugiere que los artefactos pesados no estan alojados en HuggingFace o no se han subido.
+- El repositorio tiene 0,0 GB y 0 descargas, lo que sugiere que los artefactos pesados no estan alojados en Hugging Face o no se han subido.
 - No se documentan sesgos, riesgos de alucinacion ni limitaciones de idioma porque no es un modelo de lenguaje; cualquier extrapolacion en ese sentido carece de base.
 - El codigo fuente canonico permanece en el proyecto S03, segun la model card; este paquete es un bundle organizado y no reemplaza a esa fuente.
 - El directorio `evaluation/pending/` esta reservado para los resultados finales 32/8/32, todavia no generados.
@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ElBalor/AlienX-3D-MHD
-- No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos distintos del repositorio de HuggingFace.
+- Hugging Face: https://huggingface.co/ElBalor/AlienX-3D-MHD
+- No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos distintos del repositorio de Hugging Face.

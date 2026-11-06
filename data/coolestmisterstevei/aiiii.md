@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Coolestmisterstevei/aiiii` en HuggingFace no contiene informacion tecnica publicada. No se dispone de descripcion del modelo, arquitectura, pesos, configuracion de entrenamiento, licencia ni idiomas soportados. El unico dato relevante es que fue creado y actualizado el 2026-09-06, con 0 descargas y 1 like. No existe documentacion en el modelo ni en la busqueda web que permita identificar sus capacidades. Los resultados de busqueda encontrados no corresponden a este repositorio: uno apunta a un modelo de arte anime en PixAI, otro a un personaje en character.ai y el resto a paginas de Microsoft, por lo que no se puede inferir ninguna caracteristica real de este modelo.
+El repositorio `Coolestmisterstevei/aiiii` en Hugging Face no contiene informacion tecnica publicada. No se dispone de descripcion del modelo, arquitectura, pesos, configuracion de entrenamiento, licencia ni idiomas soportados. El unico dato relevante es que fue creado y actualizado el 2026-09-06, con 0 descargas y 1 like. No existe documentacion en el modelo ni en la busqueda web que permita identificar sus capacidades. Los resultados de busqueda encontrados no corresponden a este repositorio: uno apunta a un modelo de arte anime en PixAI, otro a un personaje en character.ai y el resto a paginas de Microsoft, por lo que no se puede inferir ninguna caracteristica real de este modelo.
 
 ## Especificaciones tecnicas
 
@@ -53,9 +53,9 @@ No disponible. No existe informacion tecnica del modelo que permita compararlo c
 
 - El repositorio no contiene documentacion, pesos ni configuracion, por lo que no se puede evaluar su comportamiento ni su seguridad.
 - No se puede verificar la existencia de sesgos, riesgo de alucinacion ni restricciones de licencia.
-- Los nombres "AIIIi" o "AIiii" encontrados en la busqueda web pertenecen a otros productos (PixAI, character.ai) y no guardan relacion directa con este repositorio de HuggingFace.
+- Los nombres "AIIIi" o "AIiii" encontrados en la busqueda web pertenecen a otros productos (PixAI, character.ai) y no guardan relacion directa con este repositorio de Hugging Face.
 - El uso en produccion es inviable en el estado actual del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Coolestmisterstevei/aiiii
+- Repositorio Hugging Face: https://huggingface.co/Coolestmisterstevei/aiiii

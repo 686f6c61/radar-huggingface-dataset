@@ -110,7 +110,7 @@ La comparativa de contexto, rendimiento y disponibilidad del modelo upstream y d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/ramgpt/MiMo-V2.6-Distill-Qwen-9B-EXL3-4.0bpw
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/ramgpt/MiMo-V2.6-Distill-Qwen-9B-EXL3-4.0bpw
 - Modelo base upstream: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Ficheros del modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/tree/main
 - Cuantizacion GGUF (prithivMLmods): https://huggingface.co/prithivMLmods/MiMo-V2.6-Distill-Qwen-9B-GGUF

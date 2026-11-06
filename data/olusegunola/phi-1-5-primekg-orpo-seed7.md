@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`olusegunola/phi-1.5-primekg-orpo-seed7` es un modelo publicado en HuggingFace por el usuario olusegunola. Por el identificador se deduce que se trata de un ajuste fino de la familia Phi-1.5 (aproximadamente 1.300 millones de parametros) entrenado con la tecnica ORPO (Odds Ratio Preference Optimization) sobre datos derivados de PrimeKG, un grafo de conocimiento biomedico, con la semilla 7. Ninguna de estas inferencias esta confirmada por el autor: la model card es la plantilla automatica de HuggingFace, sin ninguna seccion rellenada.
+`olusegunola/phi-1.5-primekg-orpo-seed7` es un modelo publicado en Hugging Face por el usuario olusegunola. Por el identificador se deduce que se trata de un ajuste fino de la familia Phi-1.5 (aproximadamente 1.300 millones de parametros) entrenado con la tecnica ORPO (Odds Ratio Preference Optimization) sobre datos derivados de PrimeKG, un grafo de conocimiento biomedico, con la semilla 7. Ninguna de estas inferencias esta confirmada por el autor: la model card es la plantilla automatica de Hugging Face, sin ninguna seccion rellenada.
 
 El modelo resuelve, en principio, el problema de adaptar un modelo pequeno de proposito general al dominio biomedico mediante alineacion por preferencias directa (ORPO combina el ajuste supervisado y la optimizacion por preferencias en una sola etapa, sin necesidad de un modelo de recompensa separado). Es relevante para quienes buscan un modelo ligero y desplegable en hardware modesto para tareas de texto cientifico o biomedico, aunque la ausencia total de documentacion, de resultados de evaluacion y de licencia explicita limita seriamente su uso en produccion.
 
@@ -25,7 +25,7 @@ La relevancia practica del artefacto es hoy muy baja: cero descargas, cero "like
 
 No hay informacion aportada por el autor sobre la arquitectura. La model card generada automaticamente deja todas las secciones relevantes ("Model Architecture and Objective", "Training Data", "Training Procedure", "Training Hyperparameters") con el marcador `[More Information Needed]`. El identificador del repositorio sugiere dos elementos: el prefijo `phi-1.5` apunta a un ajuste sobre el modelo Phi-1.5 de Microsoft Research, un transformer decoder denso de aproximadamente 1.300 millones de parametros entrenado sobre datos de tipo "textbook quality"; y el sufijo `orpo` apunta a Odds Ratio Preference Optimization, un metodo de alineacion que fusiona el ajuste supervisado y la optimizacion por preferencias en un unico entrenamiento, sin modelo de recompensa ni etapa RLHF separada.
 
-El termino `primekg` del nombre hace referencia a PrimeKG, un grafo de conocimiento biomedico que integra decenas de miles de relaciones entre enfermedades, genes, proteinas, farmacos y fenotipos. Lo mas probable es que el autor haya construido pares de preferencia o instrucciones a partir de ese grafo para especializar el modelo en dominio biomedico. El sufijo `seed7` indica que se trata de una ejecucion concreta de una semilla aleatoria, lo que sugiere una familia de experimentos con varias semillas. Nada de esto esta documentado: no se especifican tokens de entrenamiento, composicion del dataset, hiperparametros, precision (fp16, bf16, fp8) ni infraestructura de computo. La unica referencia tecnica enlazada en las etiquetas del repositorio (`arxiv:1910.09700`) corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", la calculadora de impacto ambiental citada en la plantilla de HuggingFace, no a un articulo sobre el modelo.
+El termino `primekg` del nombre hace referencia a PrimeKG, un grafo de conocimiento biomedico que integra decenas de miles de relaciones entre enfermedades, genes, proteinas, farmacos y fenotipos. Lo mas probable es que el autor haya construido pares de preferencia o instrucciones a partir de ese grafo para especializar el modelo en dominio biomedico. El sufijo `seed7` indica que se trata de una ejecucion concreta de una semilla aleatoria, lo que sugiere una familia de experimentos con varias semillas. Nada de esto esta documentado: no se especifican tokens de entrenamiento, composicion del dataset, hiperparametros, precision (fp16, bf16, fp8) ni infraestructura de computo. La unica referencia tecnica enlazada en las etiquetas del repositorio (`arxiv:1910.09700`) corresponde a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", la calculadora de impacto ambiental citada en la plantilla de Hugging Face, no a un articulo sobre el modelo.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ No se ha publicado ninguna descripcion de capacidades. A partir de la informacio
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles; el autor no declara idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles. El modelo base Phi-1.5 es exclusivamente de texto y no dispone de torre de vision ni de audio.
-- Ausencia de pipeline declarado en HuggingFace (`text-generation`, `text-classification`, etc.), lo que impide confirmar siquiera la tarea objetivo.
+- Ausencia de pipeline declarado en Hugging Face (`text-generation`, `text-classification`, etc.), lo que impide confirmar siquiera la tarea objetivo.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ No hay datos de rendimiento de este modelo que permitan una comparacion cuantita
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| olusegunola/phi-1.5-primekg-orpo-seed7 | presuntamente ~1,3B (no confirmado) | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia; sin benchmarks; dominio supuestamente biomedico |
+| olusegunola/phi-1.5-primekg-orpo-seed7 | presuntamente ~1,3B (no confirmado) | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia; sin benchmarks; dominio supuestamente biomedico |
 | microsoft/phi-1.5 | 1,3B | 2.048 tokens | MIT (segun publicacion del autor original) | Ampliamente disponible | Modelo base del que derivaria este ajuste; datos de "textbook quality" |
 | TinyLlama-1.1B-Chat | 1,1B | 2.048 tokens | Apache 2.0 | Ampliamente disponible | Alternativa generalista con comunidad activa y variantes GGUF |
 | Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 (segun el autor original) | Ampliamente disponible | Contexto mucho mayor, multilingue, soporte de herramientas |
@@ -97,7 +97,7 @@ Advertencia: los datos de las filas de phi-1.5, TinyLlama y Qwen2.5 provienen de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olusegunola/phi-1.5-primekg-orpo-seed7
+- Modelo en Hugging Face: https://huggingface.co/olusegunola/phi-1.5-primekg-orpo-seed7
 - Articulo citado en las etiquetas del repositorio (calculadora de impacto ambiental, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Herramienta de calculo de emisiones citada en la model card: https://mlco2.github.io/impact
 - Repositorio, paper, demo o dataset del autor: no disponibles

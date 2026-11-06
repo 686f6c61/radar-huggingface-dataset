@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - No se han publicado requisitos oficiales de hardware.
 - Con 144,4 millones de parámetros, se estima que los pesos en fp16 ocupan aproximadamente 0,29 GB. Sumando el código y el vocoder necesario, el modelo podría ejecutarse en una GPU con al menos 2 GB de VRAM, como una NVIDIA GeForce GTX 1050 o superior.
-- Al tratarse de un modelo de la librería `transformers`, es compatible con las pipelines de HuggingFace Transformers. No se ha confirmado compatibilidad con vLLM, llamacpp o TGI.
+- Al tratarse de un modelo de la librería `transformers`, es compatible con las pipelines de Hugging Face Transformers. No se ha confirmado compatibilidad con vLLM, llamacpp o TGI.
 - No se aportan datos de latencia ni de throughput.
 
 ## Comparativa con modelos similares
@@ -65,5 +65,5 @@ No disponible. El modelo base `microsoft/speecht5_tts` comparte la misma arquite
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939
+- Repositorio en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260905_093939
 - Sitio web de XEL SOFT AI: https://xelsoftai.com/

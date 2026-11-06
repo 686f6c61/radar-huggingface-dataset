@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kby-ai/id-document-recognition-ocr` en HuggingFace no contiene un modelo de inteligencia artificial descargable con pesos, arquitectura o parámetros. Se trata de un punto de distribución de un producto comercial de la empresa KBY-AI: un SDK de reconocimiento de documentos de identidad (ID card recognition) que se ejecuta mediante contenedores Docker. La página actúa como referencia del producto, pero no ofrece ningún artefacto de modelo open source.
+El repositorio `kby-ai/id-document-recognition-ocr` en Hugging Face no contiene un modelo de inteligencia artificial descargable con pesos, arquitectura o parámetros. Se trata de un punto de distribución de un producto comercial de la empresa KBY-AI: un SDK de reconocimiento de documentos de identidad (ID card recognition) que se ejecuta mediante contenedores Docker. La página actúa como referencia del producto, pero no ofrece ningún artefacto de modelo open source.
 
 El SDK está diseñado para extraer datos de documentos de identidad, pasaportes y permisos de conducir de más de 200 países, incluyendo soporte para lectura de MRZ (Machine Readable Zone), códigos de barras y captura automática de documentos. Se distribuye como imagen Docker con una API REST y una demo Gradio, y requiere una licencia comercial por instancia. No se proporcionan detalles sobre la arquitectura interna, el tamaño del modelo, la longitud de contexto ni los idiomas soportados, ya que no se trata de un modelo de lenguaje ni de visión de propósito general.
 
@@ -66,11 +66,11 @@ No disponible. No se dispone de informacion sobre modelos comparables en termino
 - No se garantiza la cobertura de todos los tipos de documentos de los 200+ paises; puede haber variaciones regionales no soportadas.
 - No hay informacion sobre sesgos, alucinaciones o errores especificos, ya que no es un modelo generativo.
 - Para uso en produccion, es necesario contactar con KBY-AI para obtener la licencia y soporte tecnico.
-- La pagina de HuggingFace no contiene pesos ni archivos de modelo; es solo un punto de referencia del producto.
+- La pagina de Hugging Face no contiene pesos ni archivos de modelo; es solo un punto de referencia del producto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kby-ai/id-document-recognition-ocr
+- Hugging Face: https://huggingface.co/kby-ai/id-document-recognition-ocr
 - Repositorio GitHub del producto: https://github.com/kby-ai/Product
 - Repositorio GitHub del SDK de reconocimiento de ID: https://github.com/kby-ai/IDCard-Recognition-SDK
 - Repositorio GitHub de la integracion Android: https://github.com/kby-ai/IDCardRecognition-Android

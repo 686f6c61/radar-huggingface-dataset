@@ -86,7 +86,7 @@ La comparación de rendimiento con alternativas no está disponible: el autor no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mizhiwu306/prs-meettrace-whisper-medium
+- Repositorio Hugging Face: https://huggingface.co/Mizhiwu306/prs-meettrace-whisper-medium
 - Modelo base Whisper medium (revisión fija): https://huggingface.co/openai/whisper-medium/tree/abdf7c39ab9d0397620ccaea8974cc764cd0953e
 - Modelo de alineación wav2vec2 (revisión fija): https://huggingface.co/facebook/wav2vec2-large-robust-ft-libri-960h/tree/5d28473cc25ef7b338c9f731fe55626c4b082f58
 - Corpus AMI, descarga y licencias: https://groups.inf.ed.ac.uk/ami/download/

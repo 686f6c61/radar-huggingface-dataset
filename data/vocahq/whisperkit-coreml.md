@@ -101,7 +101,7 @@ La diferencia clave frente a whisper-large-v3-turbo y a argmaxinc/whisperkit-cor
 
 ## Enlaces
 
-- HuggingFace de este repositorio: https://huggingface.co/VocaHQ/whisperkit-coreml
+- Hugging Face de este repositorio: https://huggingface.co/VocaHQ/whisperkit-coreml
 - Modelo base: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Apex
 - Repositorio de referencia de conversiones CoreML: https://huggingface.co/argmaxinc/whisperkit-coreml
 - Herramienta de conversion whisperkittools: https://github.com/argmaxinc/whisperkittools

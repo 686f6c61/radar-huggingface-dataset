@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SyncWorld-mv3-strip384-recent8-step16000 es un punto de control intermedio de un modelo de mundo (world model) de dinámica hacia adelante para robótica, desarrollado por el equipo SyncWorld-dev (usuario yyuncong en HuggingFace). El modelo genera los 16 fotogramas siguientes de una secuencia de vídeo robótica a partir de un fotograma ancla, las 16 acciones comandadas futuras y hasta 8 fragmentos previos de vídeo/acción observados que se sitúan en la misma ventana de atención como condicionamiento en contexto (in-context), sin memoria TTT explícita.
+SyncWorld-mv3-strip384-recent8-step16000 es un punto de control intermedio de un modelo de mundo (world model) de dinámica hacia adelante para robótica, desarrollado por el equipo SyncWorld-dev (usuario yyuncong en Hugging Face). El modelo genera los 16 fotogramas siguientes de una secuencia de vídeo robótica a partir de un fotograma ancla, las 16 acciones comandadas futuras y hasta 8 fragmentos previos de vídeo/acción observados que se sitúan en la misma ventana de atención como condicionamiento en contexto (in-context), sin memoria TTT explícita.
 
 Cada fotograma es una tira de 1536x384 píxeles con tres vistas de cámara: dos cámaras de tercera persona y una cámara de muñeca (wrist). La variante "recent8" usa como condicionamiento los K fragmentos más recientes de la propia secuencia de la consulta, y sirve como línea base frente a una variante alternativa con recuperación por similitud (views-first). El entrenamiento parte de un run previo del framework Cosmos de NVIDIA y se realiza sobre 32 GPUs H100, con una duración total prevista de 30.000 actualizaciones de las cuales este checkpoint corresponde a la 16.000.
 
@@ -89,7 +89,7 @@ La comparación cuantitativa de rendimiento entre la variante recent8 y la varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step16000
+- Modelo en Hugging Face: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-recent8-step16000
 - Licencia referenciada (NVIDIA Cosmos): https://github.com/NVIDIA/Cosmos/blob/main/LICENSE
 - Repos comparado de la misma serie: https://huggingface.co/yyuncong/SyncWorld-mv3-strip384-views-first-v10-step* (patrón de repos de la variante views-first; URL exacta por paso no disponible)
 - Paper, blog o demo: no disponibles en la información proporcionada.

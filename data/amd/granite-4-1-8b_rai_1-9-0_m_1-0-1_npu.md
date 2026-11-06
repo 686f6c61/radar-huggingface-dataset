@@ -6,7 +6,7 @@ El modelo `amd/granite-4.1-8b_rai_1.9.0_m_1.0.1_npu` es una distribución optimi
 
 El modelo base pertenece a la familia Granite de IBM, orientada a generación de texto y conversación con licencia Apache 2.0. Esta variante concreta no es un modelo nuevo entrenado desde cero, sino un artefacto de despliegue: los pesos originales se han convertido a ONNX y adaptado a un target de hardware concreto (etiqueta `m_1.0.1_npu`), probablemente con cuantización asociada al pipeline de Ryzen AI. El repositorio ocupa 12,5 GB, coherente con pesos en precisión reducida para un modelo de 8B.
 
-Su relevancia es práctica: demuestra el flujo de AMD para llevar modelos abiertos a NPU integradas, lo que reduce consumo y libera la GPU. La información pública disponible en la ficha de HuggingFace es muy limitada (sin model card detallada, sin benchmarks y con acceso restringido), por lo que muchos datos técnicos se indican como no disponibles.
+Su relevancia es práctica: demuestra el flujo de AMD para llevar modelos abiertos a NPU integradas, lo que reduce consumo y libera la GPU. La información pública disponible en la ficha de Hugging Face es muy limitada (sin model card detallada, sin benchmarks y con acceso restringido), por lo que muchos datos técnicos se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ La comparación es orientativa: los datos de contexto y rendimiento de las alter
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Idiomas: solo se declara inglés; el rendimiento en castellano u otros idiomas no está garantizado.
 - Sin model card detallada: no hay información sobre sesgos, datos de entrenamiento ni evaluaciones de seguridad.
 - Riesgo de alucinación: inherente a los modelos generativos de esta escala; no hay evaluaciones publicadas que lo cuantifiquen.
@@ -84,7 +84,7 @@ La comparación es orientativa: los datos de contexto y rendimiento de las alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/granite-4.1-8b_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/granite-4.1-8b_rai_1.9.0_m_1.0.1_npu
 - Modelo base Granite de IBM: no disponible en la información proporcionada
 - Documentación de Ryzen AI: no disponible en la información proporcionada
 - Toolkit Quark de AMD: no disponible en la información proporcionada

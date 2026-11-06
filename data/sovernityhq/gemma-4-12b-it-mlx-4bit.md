@@ -86,7 +86,7 @@ Las diferencias de rendimiento entre las tres variantes no pueden cuantificarse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SovernityHQ/gemma-4-12b-it-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/SovernityHQ/gemma-4-12b-it-mlx-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Revision concreta del modelo base usada en la conversion: https://huggingface.co/google/gemma-4-12B-it/tree/5926caa4ec0cac5cbfadaf4077420520de1d5205
 - Repositorio con pesos identicos: https://huggingface.co/mlx-community/gemma-4-12B-it-4bit

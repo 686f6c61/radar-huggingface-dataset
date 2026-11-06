@@ -75,10 +75,10 @@ Sobre el conjunto de validación propio de v3 (3.280 hilos con más historias la
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| forocoches-lm-v3 | ~1B | no disponible (entrenado a 8.192) | Foro español (ForoCoches) | Gemma Terms of Use | HuggingFace, demo web |
-| forocoches-lm-v2 | ~1B | no disponible | Foro español (versión previa) | Gemma Terms of Use | HuggingFace |
-| Gemma 3 1B (base) | ~1B | no disponible en la información | Modelo generalista | Gemma Terms of Use | HuggingFace, Google AI |
-| FineWeb-2 `spa_Latn` (dataset) | no aplica | no aplica | Corpus de español general | según dataset | HuggingFace |
+| forocoches-lm-v3 | ~1B | no disponible (entrenado a 8.192) | Foro español (ForoCoches) | Gemma Terms of Use | Hugging Face, demo web |
+| forocoches-lm-v2 | ~1B | no disponible | Foro español (versión previa) | Gemma Terms of Use | Hugging Face |
+| Gemma 3 1B (base) | ~1B | no disponible en la información | Modelo generalista | Gemma Terms of Use | Hugging Face, Google AI |
+| FineWeb-2 `spa_Latn` (dataset) | no aplica | no aplica | Corpus de español general | según dataset | Hugging Face |
 
 La comparación con modelos de la misma categoría (generadores de estilo de foro en español) no está disponible: no se han identificado alternativas públicas equivalentes en la información proporcionada.
 
@@ -95,7 +95,7 @@ La comparación con modelos de la misma categoría (generadores de estilo de for
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mateo-19182/forocoches-lm-v3
+- Modelo en Hugging Face: https://huggingface.co/mateo-19182/forocoches-lm-v3
 - Modelo base v2: https://huggingface.co/mateo-19182/forocoches-lm-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/mateo-19182/forocoches-threads-v3
 - Pesos MLC q4f16_1: https://huggingface.co/mateo-19182/forocoches-lm-v3-q4f16_1-MLC

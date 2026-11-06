@@ -98,7 +98,7 @@ La comparativa relevante es entre este repositorio y su modelo base: comparten p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/kotoba-whisper-v2.0-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/kotoba-whisper-v2.0-ggml
 - Modelo base: https://huggingface.co/kotoba-tech/kotoba-whisper-v2.0
 - Organizacion del modelo original (kotoba-tech): https://huggingface.co/kotoba-tech
 - Motor de inferencia whisper.cpp: https://github.com/ggml-org/whisper.cpp

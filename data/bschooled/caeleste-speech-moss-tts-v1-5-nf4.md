@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|
 | MOSS-TTS-v1.5 (original) | 8,49 B | Sin cuantizar (bf16) | Apache 2.0 | Requiere >16 GB VRAM |
 | MOSS-TTS-v1.5 NF4 (esta ficha) | 8,49 B | NF4 4-bit | Apache 2.0 | Cabe en 16 GB VRAM |
-| IndexTTS-2.5 | No disponible | No disponible | No disponible | TTS de referencia en HuggingFace, sin datos comparables publicados |
+| IndexTTS-2.5 | No disponible | No disponible | No disponible | TTS de referencia en Hugging Face, sin datos comparables publicados |
 
 No se dispone de información suficiente sobre alternativas directas con el mismo backbone o la misma tarea para una comparativa más exhaustiva. La comparativa principal es entre la versión original y la cuantizada del mismo modelo.
 
@@ -79,7 +79,7 @@ No se dispone de información suficiente sobre alternativas directas con el mism
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/bschooled/caeleste-speech-moss-tts-v1.5-nf4
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/bschooled/caeleste-speech-moss-tts-v1.5-nf4
 - Repositorio upstream: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5
 - GitHub de la familia MOSS-TTS: https://github.com/OpenMOSS/MOSS-TTS
 - GitHub espejo: https://github.com/Stivenmore/moss-tts

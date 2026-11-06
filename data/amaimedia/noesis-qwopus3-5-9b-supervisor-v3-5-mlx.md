@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Modelo MLX en HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Supervisor-v3.5-MLX
+- Modelo MLX en Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Supervisor-v3.5-MLX
 - Modelo BF16 original: https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Supervisor-v3.5-BF16
 - Colección de modelos originales NOESIS: https://huggingface.co/collections/AMAImedia/noesis-original-trained-models
 - Modelo relacionado (PromptEng): https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-PromptEng-v3.5-BF16

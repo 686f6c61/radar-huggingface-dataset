@@ -4,9 +4,9 @@
 
 Dark-Scarlett-27B-v2.0 es un modelo de lenguaje desarrollado por ReadyArt, especializado en roleplay y conversación, con un enfoque explícito en contenido adulto y NSFW. Se trata de un fine-tuning del modelo base Qwen/Qwen3.8-27B, lo que le confiere una base arquitectónica sólida de 27 mil millones de parámetros. El modelo está diseñado para ser "unaligned" (sin alineación), es decir, sin los filtros de seguridad habituales en modelos comerciales, lo que lo hace adecuado para escenarios de roleplay maduro y escritura creativa explícita.
 
-La relevancia de este modelo radica en su especialización en un nicho concreto: la generación de texto conversacional y narrativo sin restricciones de contenido. A diferencia de modelos generalistas que aplican políticas de moderación, Dark-Scarlett-27B-v2.0 permite interacciones sin censura, lo que atrae a desarrolladores que buscan crear experiencias de rol adulto o herramientas de escritura erótica. El acceso al modelo está restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo.
+La relevancia de este modelo radica en su especialización en un nicho concreto: la generación de texto conversacional y narrativo sin restricciones de contenido. A diferencia de modelos generalistas que aplican políticas de moderación, Dark-Scarlett-27B-v2.0 permite interacciones sin censura, lo que atrae a desarrolladores que buscan crear experiencias de rol adulto o herramientas de escritura erótica. El acceso al modelo está restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo.
 
-Aunque el modelo se publicó en agosto de 2026, no se han proporcionado detalles técnicos completos sobre su arquitectura interna, datos de entrenamiento o rendimiento. La información disponible se limita a la ficha de HuggingFace y a referencias indirectas de otros modelos de la misma familia, como Dark-Scarlett-v2.0-31B, que utiliza una arquitectura gemma4. Para este modelo concreto, la mayoría de las especificaciones técnicas no están documentadas públicamente.
+Aunque el modelo se publicó en agosto de 2026, no se han proporcionado detalles técnicos completos sobre su arquitectura interna, datos de entrenamiento o rendimiento. La información disponible se limita a la ficha de Hugging Face y a referencias indirectas de otros modelos de la misma familia, como Dark-Scarlett-v2.0-31B, que utiliza una arquitectura gemma4. Para este modelo concreto, la mayoría de las especificaciones técnicas no están documentadas públicamente.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Aunque el modelo se publicó en agosto de 2026, no se han proporcionado detalles
 
 El modelo se basa en Qwen3.8-27B, un transformer denso de 27 mil millones de parametros desarrollado por Alibaba. Sin embargo, no se han publicado detalles especificos sobre la arquitectura interna de Dark-Scarlett-27B-v2.0, como el numero de capas, la configuracion de atencion o el tamaño del vocabulario. Al ser un fine-tuning, se asume que la arquitectura base se mantiene, pero no hay confirmacion oficial.
 
-En cuanto al entrenamiento, no se dispone de informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. Los tags de HuggingFace indican que es un modelo "instruct" y "unaligned", lo que sugiere que fue afinado para seguir instrucciones sin filtros de seguridad, pero los detalles del proceso de entrenamiento no estan documentados.
+En cuanto al entrenamiento, no se dispone de informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. Los tags de Hugging Face indican que es un modelo "instruct" y "unaligned", lo que sugiere que fue afinado para seguir instrucciones sin filtros de seguridad, pero los detalles del proceso de entrenamiento no estan documentados.
 
 ## Capacidades
 
@@ -64,13 +64,13 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. Ex
 - Contenido NSFW y explicito: el modelo esta disenado para generar contenido adulto sin filtros, lo que puede resultar inapropiado para menores o entornos profesionales.
 - Sin alineacion: al carecer de alineacion de seguridad, el modelo puede generar respuestas ofensivas, sesgadas o perjudiciales si se le solicita.
 - Riesgo de alucinacion: como cualquier LLM, puede inventar informacion o producir respuestas incoherentes, especialmente en contextos largos.
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que requiere aceptar condiciones adicionales antes de su uso, lo que limita su disponibilidad.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que requiere aceptar condiciones adicionales antes de su uso, lo que limita su disponibilidad.
 - Falta de documentacion: no se han publicado detalles sobre arquitectura, entrenamiento, benchmarks o requisitos de hardware, lo que dificulta su evaluacion y despliegue en produccion.
 - Licencia Apache-2.0: permite uso comercial, pero al ser un modelo sin alineacion, el responsable del despliegue debe asumir los riesgos legales y eticos asociados al contenido generado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v2.0
+- Hugging Face: https://huggingface.co/ReadyArt/Dark-Scarlett-27B-v2.0
 - Perfil de la organizacion ReadyArt: https://huggingface.co/ReadyArt
 - Referencia a Dark-Scarlett-v2.0-31B en LLMs.INFO: https://llms.info/models/readyart-dark-scarlett-v2-0-31b-1324
 - Grafo de arquitectura de Dark-Scarlett-v2.0-31B: https://hfviewer.com/ReadyArt/Dark-Scarlett-v2.0-31B

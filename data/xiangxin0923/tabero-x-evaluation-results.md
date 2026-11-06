@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tabero-X Evaluation Results no es un modelo generativo, sino un artefacto de evaluacion publicado como repositorio de modelo en HuggingFace. Contiene la instantanea completa de los resultados de evaluacion de un sistema robotico denominado Tabero_X, recogidos en el directorio `Tabero_X/benchmarks/datasets/realworld/real_robot_runs/evaluation_result/`. El paquete incluye videos, graficas, registros de fuerza, resumenes y ficheros HDF5, organizados en cuatro subdirectorios: `real_plus/`, `sim/`, `sim2real/` y `umi_replayplus_task/`.
+Tabero-X Evaluation Results no es un modelo generativo, sino un artefacto de evaluacion publicado como repositorio de modelo en Hugging Face. Contiene la instantanea completa de los resultados de evaluacion de un sistema robotico denominado Tabero_X, recogidos en el directorio `Tabero_X/benchmarks/datasets/realworld/real_robot_runs/evaluation_result/`. El paquete incluye videos, graficas, registros de fuerza, resumenes y ficheros HDF5, organizados en cuatro subdirectorios: `real_plus/`, `sim/`, `sim2real/` y `umi_replayplus_task/`.
 
 El repositorio conserva las rutas relativas originales y el contenido integro de los ficheros, con un total de 17.303 ficheros originales y 9.386.876.511 bytes. El autor lo describe como una instantanea de artefactos de evaluacion almacenada en un repositorio publico de modelos a peticion del propietario. No se proporciona informacion sobre arquitectura de red neuronal, parametros, contexto ni proceso de entrenamiento, por lo que no debe interpretarse como un modelo desplegable.
 
@@ -20,7 +20,7 @@ Su relevancia es la de un dataset de resultados experimentales para robotica con
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible; el repositorio contiene videos, graficas, registros de fuerza, resumenes y ficheros HDF5 |
-| Tamano del repositorio | 0,2 GB en la ficha de HuggingFace; la model card declara 9.386.876.511 bytes en la instantanea original |
+| Tamano del repositorio | 0,2 GB en la ficha de Hugging Face; la model card declara 9.386.876.511 bytes en la instantanea original |
 | Numero de ficheros | 17.303 ficheros originales |
 | Pipeline declarado | robotics |
 | Fecha de creacion | 2026-11-04 |
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 ## Requisitos de hardware
 
 - No se requiere GPU para consumir el artefacto: es un conjunto de datos, no un modelo de inferencia.
-- Espacio en disco: la model card declara 9.386.876.511 bytes (aproximadamente 8,7 GiB) para la instantanea completa; la ficha de HuggingFace indica 0,2 GB, discrepancia que conviene resolver antes de la descarga.
+- Espacio en disco: la model card declara 9.386.876.511 bytes (aproximadamente 8,7 GiB) para la instantanea completa; la ficha de Hugging Face indica 0,2 GB, discrepancia que conviene resolver antes de la descarga.
 - Memoria RAM: suficiente para procesar los ficheros HDF5 y videos de mayor tamano de forma individual; no se especifican requisitos agregados.
 - GPU recomendadas: no aplica para el consumo de datos; para entrenar modelos sobre estos datos, cualquier GPU con memoria suficiente para el modelo auxiliar que se elija.
 - Despliegue: descarga mediante `hf download xiangxin0923/Tabero-X-Evaluation-Results --repo-type model --local-dir evaluation_result`; no aplican vLLM, llama.cpp, Ollama ni TGI.
@@ -90,7 +90,7 @@ No disponible. No se han identificado en la informacion proporcionada artefactos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xiangxin0923/Tabero-X-Evaluation-Results
+- Repositorio en Hugging Face: https://huggingface.co/xiangxin0923/Tabero-X-Evaluation-Results
 - Descarga completa: `hf download xiangxin0923/Tabero-X-Evaluation-Results --repo-type model --local-dir evaluation_result`
 - Manifiesto de integridad: `_upload_manifest.json` dentro del repositorio
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

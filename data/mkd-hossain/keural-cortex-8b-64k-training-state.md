@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros repositorios de estado de entrenamiento
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-64K-training-state
+- Repositorio de Hugging Face: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-64K-training-state
 - Modelo exportado recomendado por el autor: https://huggingface.co/mkd-hossain/Keural-Cortex-8B-64K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Registro de auditoria del proyecto (incluye `CPT_details/`): https://github.com/MKD-CORP/Keural-Cortex-8B

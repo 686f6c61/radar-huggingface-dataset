@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brotabrr/gemini-nano` es un repositorio alojado en HuggingFace por el usuario `brotabrr`. La model card asociada está practicamente vacia: unicamente contiene el campo `license: unknown` en su frontmatter YAML, sin descripcion, sin especificaciones tecnicas ni documentacion de uso. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades declaradas por el autor.
+`brotabrr/gemini-nano` es un repositorio alojado en Hugging Face por el usuario `brotabrr`. La model card asociada está practicamente vacia: unicamente contiene el campo `license: unknown` en su frontmatter YAML, sin descripcion, sin especificaciones tecnicas ni documentacion de uso. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades declaradas por el autor.
 
 El repositorio registra 0 descargas y 0 likes, fue creado el 1 de noviembre de 2026 y no se ha actualizado desde entonces. No tiene pipeline de inferencia asignado ni etiquetas de idioma, y la licencia figura como desconocida. El nombre "gemini-nano" coincide con la denominacion de una familia de modelos de Google, pero no hay evidencia en la informacion proporcionada de que este repositorio tenga relacion con dichos modelos; podria tratarse de un nombre reutilizado o de un artefacto sin contenido funcional documentado.
 
@@ -70,7 +70,7 @@ No es posible establecer una comparativa fiable: no se conocen parametros, conte
 - Licencia desconocida (`unknown`): no se puede garantizar el uso comercial ni la redistribucion; en la practica, debe tratarse como no apto para produccion.
 - Ausencia total de model card: sin descripcion, sin instrucciones de uso y sin ejemplos de inferencia.
 - Sin metadatos de idioma: imposible determinar cobertura linguistica.
-- Sin pipeline declarado: no consta que el repositorio sea cargable con las librerias estandar de HuggingFace.
+- Sin pipeline declarado: no consta que el repositorio sea cargable con las librerias estandar de Hugging Face.
 - Riesgo de confusion nominal: el nombre "gemini-nano" coincide con una familia de modelos de Google sin relacion verificada con este repositorio; no debe asumirse equivalencia.
 - 0 descargas y 0 likes: no hay evidencia de uso ni validacion por parte de la comunidad.
 - Riesgo de alucinacion y sesgos: no evaluable al no existir informacion sobre entrenamiento ni evaluaciones.
@@ -78,5 +78,5 @@ No es posible establecer una comparativa fiable: no se conocen parametros, conte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brotabrr/gemini-nano
+- Repositorio en Hugging Face: https://huggingface.co/brotabrr/gemini-nano
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

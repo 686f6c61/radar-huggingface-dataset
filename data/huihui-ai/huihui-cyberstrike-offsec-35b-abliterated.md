@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Huihui-CyberStrike-OffSec-35B-abliterated es un modelo de lenguaje de 35 000 millones de parámetros desarrollado por huihui-ai, obtenido mediante la técnica de *abliteration* (eliminación de rechazos) sobre el modelo base oyildirim/CyberStrike-OffSec-35B, especializado en seguridad ofensiva y pentesting. El modelo hereda la arquitectura MoE (mezcla de expertos) de la familia Qwen3.5, tal como indican los tags de HuggingFace (`qwen3_5_moe`), y está diseñado para tareas de generación de texto con soporte de *tool calling*.
+Huihui-CyberStrike-OffSec-35B-abliterated es un modelo de lenguaje de 35 000 millones de parámetros desarrollado por huihui-ai, obtenido mediante la técnica de *abliteration* (eliminación de rechazos) sobre el modelo base oyildirim/CyberStrike-OffSec-35B, especializado en seguridad ofensiva y pentesting. El modelo hereda la arquitectura MoE (mezcla de expertos) de la familia Qwen3.5, tal como indican los tags de Hugging Face (`qwen3_5_moe`), y está diseñado para tareas de generación de texto con soporte de *tool calling*.
 
 La relevancia de este modelo radica en su orientación explícita a casos de uso de ciberseguridad ofensiva, combinada con la eliminación de los mecanismos de rechazo habituales en los modelos comerciales. Esto lo convierte en una herramienta de interés para investigadores y profesionales de seguridad que necesitan un asistente que no se niegue a responder sobre exploits, vulnerabilidades o técnicas de ataque, aunque también plantea riesgos evidentes de uso indebido. Al ser una versión *abliterated*, se eliminan los sesgos de seguridad del modelo original, lo que puede aumentar la utilidad en entornos controlados de pentesting, pero también incrementa el riesgo de alucinaciones o respuestas peligrosas.
 
-El modelo se distribuye bajo licencia Apache 2.0 según los tags de HuggingFace, aunque la ficha oficial no confirma este dato. Está disponible en formato `safetensors` y existen conversiones GGUF de terceros para su uso con `llama.cpp` y otros motores de inferencia local.
+El modelo se distribuye bajo licencia Apache 2.0 según los tags de Hugging Face, aunque la ficha oficial no confirma este dato. Está disponible en formato `safetensors` y existen conversiones GGUF de terceros para su uso con `llama.cpp` y otros motores de inferencia local.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El modelo se distribuye bajo licencia Apache 2.0 según los tags de HuggingFace,
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (existen conversiones GGUF de terceros, sin especificar tipos) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache 2.0 (según tags de HuggingFace, no confirmado en la ficha) |
+| Licencia | Apache 2.0 (según tags de Hugging Face, no confirmado en la ficha) |
 | Formato de pesos | safetensors (también disponible GGUF por terceros) |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- [HuggingFace - huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated](https://huggingface.co/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated)
+- [Hugging Face - huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated](https://huggingface.co/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated)
 - [Conversión GGUF por SusanHill](https://huggingface.co/SusanHill/huihui-ai-huihui-cyberstrike-offsec-35b-abliterated-gguf-0811-1510)
 - [LLM Explorer - ficha del modelo](https://llm-explorer.com/model/huihui-ai%2FHuihui-CyberStrike-OffSec-35B-abliterated,435paISPPfJi667T2IyBS1)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated)

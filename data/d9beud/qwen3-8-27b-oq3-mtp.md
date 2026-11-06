@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Qwen3.8-27B-oQ3-mtp`, publicado por el usuario d9beuD en HuggingFace, es una cuantización de 3 bits de un modelo de la familia Qwen3.5 (etiquetado como `qwen3_5`), realizada con la herramienta oQ de oMLX (v0.6.0.dev1) en formato MLX safetensors. A pesar del nombre que sugiere 27 mil millones de parámetros, los pesos reales del archivo safetensors suman 4.132.206.832 parámetros (aproximadamente 4,1 mil millones), lo que indica una discrepancia entre la denominación del repositorio y el contenido real.
+El modelo `Qwen3.8-27B-oQ3-mtp`, publicado por el usuario d9beuD en Hugging Face, es una cuantización de 3 bits de un modelo de la familia Qwen3.5 (etiquetado como `qwen3_5`), realizada con la herramienta oQ de oMLX (v0.6.0.dev1) en formato MLX safetensors. A pesar del nombre que sugiere 27 mil millones de parámetros, los pesos reales del archivo safetensors suman 4.132.206.832 parámetros (aproximadamente 4,1 mil millones), lo que indica una discrepancia entre la denominación del repositorio y el contenido real.
 
 La cuantización emplea precisión mixta de 3 bits con un tamaño de grupo de 64, lo que reduce significativamente el espacio en disco (13,8 GB) y la memoria necesaria para la inferencia en comparación con el modelo original. Está diseñado específicamente para ejecutarse con la librería MLX en hardware Apple Silicon, aprovechando el ecosistema de aceleración nativa de Apple. Este tipo de cuantización resulta relevante para desarrolladores que necesitan desplegar modelos de razonamiento en dispositivos con recursos limitados, como MacBooks o Mac Studios, sin renunciar a una calidad aceptable.
 
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en el mismo formato (cua
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ3-mtp
+- Repositorio Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ3-mtp
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx
 - Librería MLX: https://github.com/ml-explore/mlx

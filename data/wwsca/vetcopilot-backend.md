@@ -28,7 +28,7 @@ Este repositorio no describe un modelo entrenado. Es un **backend de aplicación
 - **ASR**: integración con Whisper o la API de iFlytek para transcripción de audio.
 - **Generación SOAP**: estructura de notas clínicas (Subjetivo, Objetivo, Evaluación, Plan).
 
-No hay datos sobre entrenamiento, dataset o técnicas de optimización porque el repositorio no contiene el modelo. El modelo asociado (`vet-qwen3b-v3-dapt-q8_0`) no está publicado en esta cuenta de HuggingFace, por lo que no se puede verificar su arquitectura, datos de entrenamiento o proceso de ajuste.
+No hay datos sobre entrenamiento, dataset o técnicas de optimización porque el repositorio no contiene el modelo. El modelo asociado (`vet-qwen3b-v3-dapt-q8_0`) no está publicado en esta cuenta de Hugging Face, por lo que no se puede verificar su arquitectura, datos de entrenamiento o proceso de ajuste.
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ No disponible. Este repositorio no es un modelo de IA y no existen alternativas 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [WWsCa/vetcopilot-backend](https://huggingface.co/WWsCa/vetcopilot-backend)
+- Repositorio de Hugging Face: [WWsCa/vetcopilot-backend](https://huggingface.co/WWsCa/vetcopilot-backend)
 - Proyecto relacionado en GitHub (original, no oficial): [0xDI/vetcopilot](https://github.com/0xDI/vetcopilot)
 - README del proyecto GitHub: [0xDI/vetcopilot README](https://github.com/0xDI/vetcopilot/blob/master/README.md)
 - Modelo referenciado (no verificado): [WWsCa/vet-qwen3b-v3-dapt-q8_0](https://huggingface.co/WWsCa/vet-qwen3b-v3-dapt-q8_0)

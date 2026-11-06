@@ -64,12 +64,12 @@ No se dispone de información suficiente para establecer una comparativa con mod
 - Exclusivo de Apple Silicon: al estar en formato MLX, no puede ejecutarse en GPUs NVIDIA, AMD o hardware Intel sin una conversión adicional.
 - Riesgo de sesgos heredados: al ser una conversión del modelo de Baidu, puede heredar sesgos culturales o lingüísticos del entrenamiento original, aunque no se dispone de datos para confirmarlo.
 - Riesgo de alucinación en el prompt: como modelo de lenguaje, el Prompt Enhancer puede generar indicaciones que no reflejen fielmente la intención del usuario, especialmente con descripciones ambiguas.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un proyecto reciente o poco validado por la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un proyecto reciente o poco validado por la comunidad.
 - La licencia Apache-2.0 del repositorio no implica necesariamente que el modelo original de Baidu tenga la misma licencia; se recomienda verificar los términos de uso del modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dgrauet/ernie-image-pe-mlx
+- Modelo en Hugging Face: https://huggingface.co/dgrauet/ernie-image-pe-mlx
 - Modelo base original: https://huggingface.co/baidu/ERNIE-Image-Turbo
 - Repositorio de la herramienta de generación: https://github.com/dgrauet/ernie-image-mlx
 - Herramienta de conversión mlx-forge: https://github.com/dgrauet/mlx-forge

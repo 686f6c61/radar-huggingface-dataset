@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apex-Coder-7B es un ajuste fino (fine-tune) publicado por el usuario NadevA23 en HuggingFace, construido sobre `unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit`, es decir, una versión cuantizada a 4 bits del modelo Qwen2.5-Coder-7B-Instruct. Se distribuye en formato safetensors, es compatible con la librería transformers y está etiquetado para text-generation y text-generation-inference (TGI), además de incluir la etiqueta `conversational` y `endpoints_compatible`. El repositorio no presenta descargas ni interacciones en el momento de la consulta, por lo que se trata de un modelo recién publicado y sin validación comunitaria.
+Apex-Coder-7B es un ajuste fino (fine-tune) publicado por el usuario NadevA23 en Hugging Face, construido sobre `unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit`, es decir, una versión cuantizada a 4 bits del modelo Qwen2.5-Coder-7B-Instruct. Se distribuye en formato safetensors, es compatible con la librería transformers y está etiquetado para text-generation y text-generation-inference (TGI), además de incluir la etiqueta `conversational` y `endpoints_compatible`. El repositorio no presenta descargas ni interacciones en el momento de la consulta, por lo que se trata de un modelo recién publicado y sin validación comunitaria.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2, con atención de consultas agrupadas (GQA) y ventana de contexto nativa de 32.768 tokens en el modelo base, ampliable mediante YaRN. El fine-tune se realizó presumiblemente con técnicas de la librería Unsloth sobre una base ya cuantizada a 4 bits (enfoque tipo QLoRA), y las etiquetas indican que el idioma de trabajo declarado es el inglés.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Apex-Coder-7B (NadevA23) | ~7B (denominación del base) | No especificado en la ficha; el base declara 32.768 tokens nativos | Apache 2.0 según etiquetas; campo de licencia no disponible | HuggingFace, safetensors, sin descargas registradas |
-| Qwen2.5-Coder-7B-Instruct (Alibaba Qwen) | ~7B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado, con benchmarks publicados |
-| Qwen2.5-Coder-7B-Instruct-bnb-4bit (Unsloth) | ~7B | Igual que el anterior | Apache 2.0 | HuggingFace; es el modelo base declarado de Apex-Coder-7B |
-| DeepSeek-Coder-V2-Lite-Instruct | ~16B totales, ~2,4B activos (MoE) | 128.000 tokens | Licencia propia de DeepSeek (uso comercial permitido con condiciones) | HuggingFace, con benchmarks publicados |
+| Apex-Coder-7B (NadevA23) | ~7B (denominación del base) | No especificado en la ficha; el base declara 32.768 tokens nativos | Apache 2.0 según etiquetas; campo de licencia no disponible | Hugging Face, safetensors, sin descargas registradas |
+| Qwen2.5-Coder-7B-Instruct (Alibaba Qwen) | ~7B | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado, con benchmarks publicados |
+| Qwen2.5-Coder-7B-Instruct-bnb-4bit (Unsloth) | ~7B | Igual que el anterior | Apache 2.0 | Hugging Face; es el modelo base declarado de Apex-Coder-7B |
+| DeepSeek-Coder-V2-Lite-Instruct | ~16B totales, ~2,4B activos (MoE) | 128.000 tokens | Licencia propia de DeepSeek (uso comercial permitido con condiciones) | Hugging Face, con benchmarks publicados |
 
 La comparación relevante es contra el propio modelo base: Apex-Coder-7B no documenta mejoras medibles, por lo que la elección entre ambos debería basarse en evaluaciones propias sobre el dominio objetivo. Frente a DeepSeek-Coder-V2-Lite-Instruct, este último ofrece mayor contexto y arquitectura MoE, a cambio de una licencia menos permisiva y mayor complejidad de despliegue.
 
@@ -87,7 +87,7 @@ La comparación relevante es contra el propio modelo base: Apex-Coder-7B no docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NadevA23/Apex-Coder-7B
+- Modelo en Hugging Face: https://huggingface.co/NadevA23/Apex-Coder-7B
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder

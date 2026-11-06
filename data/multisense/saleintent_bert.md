@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 - Tamaño del modelo: 0,9 GB en safetensors, lo que lo hace ligero y ejecutable en cualquier GPU de consumo con al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 4 GB o más (RTX 2060, GTX 1660, RTX 3060, etc.) para inferencia rápida. Funciona incluso en CPU para lotes pequeños.
-- Despliegue: compatible con transformers de HuggingFace, puede servirse con TGI o vLLM para clasificación en producción, aunque al ser un BERT de tamaño medio no requiere infraestructura especial.
+- Despliegue: compatible con transformers de Hugging Face, puede servirse con TGI o vLLM para clasificación en producción, aunque al ser un BERT de tamaño medio no requiere infraestructura especial.
 - Latencia: en una GPU moderna (RTX 3090 o superior) la inferencia de una secuencia de 128 tokens es del orden de milisegundos, permitiendo procesamiento en tiempo real.
 - No se requiere memoria de contexto extensa ni modelos de alta capacidad.
 

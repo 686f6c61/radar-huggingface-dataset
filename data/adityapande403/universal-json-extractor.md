@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| universal-json-extractor (este) | ~1,5B (base) + LoRA | No disponible en la ficha del adaptador | Extraccion JSON guiada por esquema, con abstención y anti-inyeccion | Apache 2.0 | Adaptador PEFT en HuggingFace, 0 descargas, sin benchmarks publicados |
+| universal-json-extractor (este) | ~1,5B (base) + LoRA | No disponible en la ficha del adaptador | Extraccion JSON guiada por esquema, con abstención y anti-inyeccion | Apache 2.0 | Adaptador PEFT en Hugging Face, 0 descargas, sin benchmarks publicados |
 | Qwen/Qwen2.5-1.5B-Instruct (base) | ~1,5B | 32.768 tokens | Asistente generalista; la extraccion JSON estricta depende del prompt | Apache 2.0 | Muy extendido, amplio ecosistema de cuantizaciones |
 | Llama 3.2 1B Instruct | ~1,24B | 128.000 tokens | Asistente generalista ligero, multilingue | Licencia comunitaria Llama 3.2 | Amplia disponibilidad y soporte en llama.cpp, Ollama y vLLM |
-| Alternativas especializadas en extraccion (familia NuExtract y similares) | 0,5B-3B segun variante | No disponible | Extraccion de informacion con plantillas propias | Varía segun variante | Existentes en HuggingFace; datos no verificados en esta ficha |
+| Alternativas especializadas en extraccion (familia NuExtract y similares) | 0,5B-3B segun variante | No disponible | Extraccion de informacion con plantillas propias | Varía segun variante | Existentes en Hugging Face; datos no verificados en esta ficha |
 
 La comparacion relevante es contra el propio modelo base: este adaptador anade disciplina de esquema y abstención a costa de especializacion, pero carece de los benchmarks y del historial de uso que si acompanan a Qwen2.5-1.5B-Instruct y a Llama 3.2 1B.
 
@@ -88,7 +88,7 @@ La comparacion relevante es contra el propio modelo base: este adaptador anade d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adityapande403/universal-json-extractor
+- Modelo en Hugging Face: https://huggingface.co/Adityapande403/universal-json-extractor
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio GitHub del autor (generacion de datos, entrenamiento, evaluacion y despliegue FastAPI): https://github.com/adityapande403/Universal-JSON-Extractor
 - Libreria PEFT: https://github.com/huggingface/peft

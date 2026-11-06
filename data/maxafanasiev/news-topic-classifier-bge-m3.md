@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `maxafanasiev/news-topic-classifier-bge-m3` es un clasificador de texto multietiqueta especializado en la categorización temática de artículos periodísticos. Lo desarrolla el usuario de HuggingFace maxafanasiev mediante un ajuste fino (fine-tuning) del modelo de embeddings multilingüe `BAAI/bge-m3`, un transformer de tipo XLM-RoBERTa. El modelo resuelve un problema concreto: asignar a cada noticia una o varias de 13 categorías temáticas (Business And Finance, Market And Exchange, Demographics, Scientific Exploration, Labour Dispute, Disaster, Conflicts And War, Politics, Crime, Theft, Assault, Corporate Crime, Fraud), con la etiqueta "Other" como caso residual cuando ninguna supera su umbral.
+El modelo `maxafanasiev/news-topic-classifier-bge-m3` es un clasificador de texto multietiqueta especializado en la categorización temática de artículos periodísticos. Lo desarrolla el usuario de Hugging Face maxafanasiev mediante un ajuste fino (fine-tuning) del modelo de embeddings multilingüe `BAAI/bge-m3`, un transformer de tipo XLM-RoBERTa. El modelo resuelve un problema concreto: asignar a cada noticia una o varias de 13 categorías temáticas (Business And Finance, Market And Exchange, Demographics, Scientific Exploration, Labour Dispute, Disaster, Conflicts And War, Politics, Crime, Theft, Assault, Corporate Crime, Fraud), con la etiqueta "Other" como caso residual cuando ninguna supera su umbral.
 
 La relevancia del modelo radica en su enfoque práctico: en lugar de una clasificación de etiqueta única con softmax, emplea una cabeza de clasificación con activación sigmoide por categoría y umbrales específicos por etiqueta almacenados en `thresholds.json`, lo que permite detectar noticias que pertenecen a varios temas simultáneamente (por ejemplo, un robo con detenidos que es a la vez "Crime" y "Theft"). Además, incorpora una regla de jerarquía explícita que añade "Crime" cuando se predice "Theft" o "Assault".
 
@@ -97,6 +97,6 @@ La comparación directa con alternativas concretas no es posible con la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxafanasiev/news-topic-classifier-bge-m3
+- Modelo en Hugging Face: https://huggingface.co/maxafanasiev/news-topic-classifier-bge-m3
 - Modelo base BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Repositorio de resultados de búsqueda web (no relacionado con el modelo, descartado por falta de relevancia): https://goth.market/blogs/news/alternative-subculture-trends-2026-whats-defining-the-scene

@@ -82,7 +82,7 @@ No se dispone de informacion sobre sistemas de enrutado de modelos comparables e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/R3n3r0/dapack-catalog
+- Repositorio Hugging Face: https://huggingface.co/R3n3r0/dapack-catalog
 - Repositorio del pack de codigo: https://huggingface.co/R3n3r0/dapack-code
 - Runtime y documentacion (GitHub): https://github.com/R3n3r0/dapack
 - Discusiones del pack de codigo: https://huggingface.co/R3n3r0/dapack-code/discussions (contiene instrucciones de uso con llama.cpp, aunque no se detallan en la informacion disponible)

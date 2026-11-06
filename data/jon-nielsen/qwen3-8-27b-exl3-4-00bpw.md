@@ -60,9 +60,9 @@ La documentación del modelo base incluye una tabla de benchmarks comparando Qwe
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K (ext. 1M) | FP16/BF16 | Apache 2.0 | HuggingFace |
-| Jon-Nielsen/Qwen3.8-27B-exl3-4.00bpw | 27B (cuantizado) | 262K (ext. 1M) | EXL3 4-bit | Apache 2.0 | HuggingFace |
-| Jon-Nielsen/Qwen3.8-27B-exl3-6.00bpw | 27B (cuantizado) | 262K (ext. 1M) | EXL3 6-bit | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K (ext. 1M) | FP16/BF16 | Apache 2.0 | Hugging Face |
+| Jon-Nielsen/Qwen3.8-27B-exl3-4.00bpw | 27B (cuantizado) | 262K (ext. 1M) | EXL3 4-bit | Apache 2.0 | Hugging Face |
+| Jon-Nielsen/Qwen3.8-27B-exl3-6.00bpw | 27B (cuantizado) | 262K (ext. 1M) | EXL3 6-bit | Apache 2.0 | Hugging Face |
 
 La comparativa con otros modelos de 27B (como Qwen3.6-27B) no se puede realizar con datos numéricos porque no se dispone de los resultados de benchmarks en la información proporcionada. La principal diferencia entre las versiones cuantizadas es el equilibrio entre calidad y requisitos de VRAM: la versión 4-bit ocupa menos memoria pero puede tener mayor pérdida de precisión que la 6-bit.
 

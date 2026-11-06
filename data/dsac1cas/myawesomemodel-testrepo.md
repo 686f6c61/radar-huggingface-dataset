@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario DSAC1CAS en HuggingFace, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction` y licencia MIT. Se trata, segun todos los indicios disponibles, de un repositorio de prueba: el tamano del repositorio es de 0,0 GB (no contiene pesos), acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (15 de septiembre de 2026, con apenas cinco segundos de diferencia entre ambos eventos).
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario DSAC1CAS en Hugging Face, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction` y licencia MIT. Se trata, segun todos los indicios disponibles, de un repositorio de prueba: el tamano del repositorio es de 0,0 GB (no contiene pesos), acumula 0 descargas y 0 likes, y fue creado y actualizado el mismo dia (15 de septiembre de 2026, con apenas cinco segundos de diferencia entre ambos eventos).
 
 La model card asociada esta redactada sobre una plantilla generica en la que los modelos de comparacion aparecen como "Model1", "Model2" y "Model1-v2", y donde el propio modelo se denomina "MyAwesomeModel". El texto describe un hipotetico modelo generativo de razonamiento con modo de pensamiento, soporte de function calling y mejoras en AIME 2025, pero esta descripcion es incoherente con las etiquetas del repositorio (BERT para extraccion de caracteristicas, no un modelo causal de generacion). Los resultados de benchmarks que incluye la model card emplean nombres genericos y carecen de identificacion verificable, por lo que deben considerarse datos de ejemplo de la plantilla, no mediciones reales.
 
@@ -50,7 +50,7 @@ Dado que no existe informacion fiable sobre el modelo, los casos de uso solo pue
 - Clasificacion de texto: un encoder BERT es adecuado para tareas de clasificacion y analisis de sentimiento mediante una cabeza de clasificacion, pero no se aporta ninguna.
 - Razonamiento asistido por agente: la model card menciona function calling, lo que permitiria integrarlo en agentes, aunque no hay evidencia de que el repositorio implemente dicha capacidad.
 - Generacion aumentada por recuperacion (RAG): las plantillas de prompt para archivos y busqueda web sugieren un uso en pipelines RAG, pero sin pesos no es ejecutable.
-- Evaluacion comparativa interna: podria servir como repositorio de pruebas para validar flujos de publicacion en HuggingFace, que es el uso mas plausible dado su estado.
+- Evaluacion comparativa interna: podria servir como repositorio de pruebas para validar flujos de publicacion en Hugging Face, que es el uso mas plausible dado su estado.
 - Prototipado educativo: util como ejemplo de estructura de model card, no como modelo desplegable.
 
 No se recomienda ningun caso de uso en produccion con la informacion disponible.
@@ -103,6 +103,6 @@ No disponible. La model card no identifica los modelos de referencia de su tabla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSAC1CAS/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DSAC1CAS/MyAwesomeModel-TestRepo
 - Paper, repositorio de codigo, blog o demo oficiales: no disponibles en la informacion proporcionada.
 - Resultados de busqueda web: ninguno relevante para este modelo.

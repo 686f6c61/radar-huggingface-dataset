@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wiryaimd/gemma3-1b` es una publicación en HuggingFace que, por su nombre, parece corresponder a una variante de 1.000 millones de parámetros de la familia Gemma 3 de Google DeepMind. Sin embargo, el repositorio está subido por un usuario externo (`wiryaimd`) y no por el equipo oficial de Google. La model card está vacía, sin descripciones, métricas ni especificaciones técnicas, por lo que no es posible confirmar si se trata de un modelo original, un fine-tune o una conversión de pesos.
+El modelo `wiryaimd/gemma3-1b` es una publicación en Hugging Face que, por su nombre, parece corresponder a una variante de 1.000 millones de parámetros de la familia Gemma 3 de Google DeepMind. Sin embargo, el repositorio está subido por un usuario externo (`wiryaimd`) y no por el equipo oficial de Google. La model card está vacía, sin descripciones, métricas ni especificaciones técnicas, por lo que no es posible confirmar si se trata de un modelo original, un fine-tune o una conversión de pesos.
 
 La familia Gemma 3, en su versión oficial, es conocida por ser multimodal, soportar hasta 128.000 tokens de contexto y cubrir más de 140 idiomas, con variantes de 1B, 4B, 12B y 27B. No obstante, para este repositorio concreto no se dispone de datos que permitan verificar dichas características. El tamaño del repositorio (0,7 GB) es consistente con un modelo de aproximadamente 1B de parámetros, pero no se puede afirmar con certeza su arquitectura, formato o capacidades. Se recomienda precaución al evaluar este modelo, ya que la información disponible es insuficiente para cualquier uso en producción.
 
@@ -63,6 +63,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wiryaimd/gemma3-1b
+- Hugging Face: https://huggingface.co/wiryaimd/gemma3-1b
 - Información general de Gemma 3 (Google DeepMind): https://deepmind.google/models/gemma/gemma-3/
 - Sitio no oficial de Gemma 3: https://gemma3.ai/

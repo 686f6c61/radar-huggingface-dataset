@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi K3.1 Pro es un modelo de lenguaje nativamente multimodal y orientado a agentes, desarrollado por Moonshot AI. Se presenta como el modelo mas capaz de la clase 3T de la compania y el primero de la serie K3.1. Ha sido post-entrenado a partir de Kimi K3 mediante aprendizaje por refuerzo conjunto a gran escala en cientos de dominios, con mejoras declaradas en programacion, creacion 3D, investigacion financiera y precision factual. Esta publicado como modelo de pesos abiertos en HuggingFace bajo el identificador `FrankensteinSim/Kimi-K3.1-Pro`, con un total de 2.780.110.363.392 parametros (2,8 billones) y un tamano de repositorio de 1561,4 GB.
+Kimi K3.1 Pro es un modelo de lenguaje nativamente multimodal y orientado a agentes, desarrollado por Moonshot AI. Se presenta como el modelo mas capaz de la clase 3T de la compania y el primero de la serie K3.1. Ha sido post-entrenado a partir de Kimi K3 mediante aprendizaje por refuerzo conjunto a gran escala en cientos de dominios, con mejoras declaradas en programacion, creacion 3D, investigacion financiera y precision factual. Esta publicado como modelo de pesos abiertos en Hugging Face bajo el identificador `FrankensteinSim/Kimi-K3.1-Pro`, con un total de 2.780.110.363.392 parametros (2,8 billones) y un tamano de repositorio de 1561,4 GB.
 
 Arquitectura Mixture-of-Experts (MoE) con 93 capas (1 densa), 896 expertos de los cuales se activan 16 por token mas 2 expertos compartidos, y 104B de parametros activos. La composicion de capas de atencion combina 69 capas KDA (Kimi Delta Attention) con 24 capas Gated DSA (DeepSeek Sparse Attention), con una dimension de atencion de 7168 y 96 cabezas. La ventana de contexto alcanza 1 millon de tokens, lo que la situa en la liga de los modelos de contexto largo para tareas agenticas.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kimi K3.1 Pro | 2,8T / 104B | 1M | `kimi-k3.1-pro` (personalizada) | Pesos abiertos en HuggingFace |
+| Kimi K3.1 Pro | 2,8T / 104B | 1M | `kimi-k3.1-pro` (personalizada) | Pesos abiertos en Hugging Face |
 | Kimi K3 (modelo base del post-entrenamiento) | no disponible | no disponible | no disponible | Referenciado en la model card |
 | Alternativas de clase 3T | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,8 +97,8 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankensteinSim/Kimi-K3.1-Pro
-- Organizacion Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Hugging Face: https://huggingface.co/FrankensteinSim/Kimi-K3.1-Pro
+- Organizacion Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Modelo referenciado en la model card: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Blog tecnico: https://www.kimi.ai/blog/kimi-k3-1-pro
 - Quickstart de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`putraharifin/llama-3.2-3b-legal-id-PGABL-putraharifin25` es un ajuste fino (fine-tuning) del modelo Llama 3.2 3B Instruct de Meta, publicado por el usuario putraharifin en HuggingFace. El checkpoint parte de la versión ya cuantizada a 4 bits de Unsloth (`unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`) y se entrena con la librería Unsloth junto a TRL, un flujo habitual para adaptar modelos pequeños a dominios concretos con recursos limitados. El resultado es un modelo denso de 3.212.749.824 parámetros (3,2 mil millones) en formato safetensors, con licencia Apache 2.0.
+`putraharifin/llama-3.2-3b-legal-id-PGABL-putraharifin25` es un ajuste fino (fine-tuning) del modelo Llama 3.2 3B Instruct de Meta, publicado por el usuario putraharifin en Hugging Face. El checkpoint parte de la versión ya cuantizada a 4 bits de Unsloth (`unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`) y se entrena con la librería Unsloth junto a TRL, un flujo habitual para adaptar modelos pequeños a dominios concretos con recursos limitados. El resultado es un modelo denso de 3.212.749.824 parámetros (3,2 mil millones) en formato safetensors, con licencia Apache 2.0.
 
 El nombre del repositorio sugiere una especialización en el dominio jurídico indonesio ("legal-id", "PGABL"), pero la model card no documenta ni el conjunto de datos, ni el número de tokens de entrenamiento, ni el procedimiento exacto. La única información técnica que aporta el autor es que el entrenamiento se realizó "2x faster" con Unsloth y TRL, sin métricas ni ejemplos de uso.
 
@@ -92,9 +92,9 @@ La comparación relevante es contra el modelo base sin ajustar: este checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/putraharifin/llama-3.2-3b-legal-id-PGABL-putraharifin25
+- Modelo en Hugging Face: https://huggingface.co/putraharifin/llama-3.2-3b-legal-id-PGABL-putraharifin25
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: no disponible en la informacion proporcionada (referenciada en la model card sin enlace)
+- Librería TRL de Hugging Face: no disponible en la informacion proporcionada (referenciada en la model card sin enlace)
 - Paper, blog o demo del autor: no disponible en la informacion proporcionada
 - Los resultados de busqueda web recibidos no guardan relación con el modelo (contenido sobre el musical "Roméo et Juliette") y se han descartado.

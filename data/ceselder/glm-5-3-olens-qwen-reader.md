@@ -84,7 +84,7 @@ Referencia del lens nativo de GLM-5.3 (un solo bullet, mismo reward model, 256 �
 - VRAM estimada: el repo ocupa 6,0 GB, pero la inferencia requiere cargar Qwen3.6-27B completo en bfloat16 (aproximadamente 54 GB de pesos) más el adaptador y el mapa afín. No se dispone de cifras oficiales de VRAM para el pipeline completo.
 - GPU recomendadas: para el modelo base en bf16 se necesita al menos una A100 80 GB o H100 80 GB; con cuantización del base (no documentada para este adaptador) podría reducirse el requisito.
 - GPU de consumo: no cabe en GPUs de consumo de 24 GB en bf16 sin cuantizar el modelo base; no se han publicado configuraciones probadas en RTX 4090.
-- Opciones de despliegue: el ejemplo oficial usa `transformers` con `PeftModel` y `device_map={'': 0}`; para extraer la activación de GLM-5.3 se menciona vLLM con `vllm-metamodels` o el stack de HuggingFace del repo `ceselder/glm-5.3-olens-lens`. No se documenta soporte para llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el ejemplo oficial usa `transformers` con `PeftModel` y `device_map={'': 0}`; para extraer la activación de GLM-5.3 se menciona vLLM con `vllm-metamodels` o el stack de Hugging Face del repo `ceselder/glm-5.3-olens-lens`. No se documenta soporte para llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. El coste computacional dominante es el rollout de GLM-5.3 (unas 25 veces más caro que el de Qwen3.6-27B, según el autor).
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ Referencia del lens nativo de GLM-5.3 (un solo bullet, mismo reward model, 256 �
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/glm-5.3-olens-qwen-reader
+- Modelo en Hugging Face: https://huggingface.co/ceselder/glm-5.3-olens-qwen-reader
 - Lens nativo de GLM-5.3: https://huggingface.co/ceselder/glm-5.3-olens-lens
 - Oracle lens público de Qwen3.6-27B (capa 42): https://huggingface.co/ceselder/olens-qwen3.6-27b-l42
 - Colección glm5.3-olens: https://huggingface.co/collections/ceselder/glm53-olens-6adaf9d544d3645a7fb96eb9

@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LaToucheCarre/Qwen3.5-2B-FR-EN-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LaToucheCarre/Qwen3.5-2B-FR-EN-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Cuantizaciones de origen: https://huggingface.co/bartowski/Qwen_Qwen3.5-2B-GGUF
 - llama.cpp: https://github.com/ggml-org/llama.cpp

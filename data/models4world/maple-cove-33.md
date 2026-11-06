@@ -2,7 +2,7 @@
 
 ## Resumen
 
-models4world/maple-cove-33 es un adaptador LoRA publicado por el usuario models4world, construido sobre el modelo base models4world/maple-signal-64. Se distribuye como un checkpoint PEFT de 1,9 GB orientado a generacion de texto, con etiquetas que indican uso conversacional. La ficha del modelo en HuggingFace esta practicamente vacia: no se publican datos sobre arquitectura interna, datos de entrenamiento, licencia ni idiomas soportados.
+models4world/maple-cove-33 es un adaptador LoRA publicado por el usuario models4world, construido sobre el modelo base models4world/maple-signal-64. Se distribuye como un checkpoint PEFT de 1,9 GB orientado a generacion de texto, con etiquetas que indican uso conversacional. La ficha del modelo en Hugging Face esta practicamente vacia: no se publican datos sobre arquitectura interna, datos de entrenamiento, licencia ni idiomas soportados.
 
 La relevancia de este modelo es dificil de evaluar sin informacion adicional. Al tratarse de un adaptador LoRA, sus capacidades dependen enteramente del modelo base sobre el que se aplica, y este tampoco dispone de documentacion publica en la ficha. Es un modelo reciente (creado el 24 de agosto de 2026) con cero descargas y cero valoraciones, lo que sugiere que no ha sido validado por la comunidad. Cualquier uso en produccion requeriria antes una evaluacion manual exhaustiva.
 
@@ -74,6 +74,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace: models4world/maple-cove-33](https://huggingface.co/models4world/maple-cove-33)
+- [Hugging Face: models4world/maple-cove-33](https://huggingface.co/models4world/maple-cove-33)
 - [Modelo base: models4world/maple-signal-64](https://huggingface.co/models4world/maple-signal-64) (sin ficha publica)
 - [Articulo de referencia sobre impacto ambiental (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)

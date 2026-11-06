@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos especializad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seerror-technologies/seerie-v407-GGUF
+- Modelo en Hugging Face: https://huggingface.co/seerror-technologies/seerie-v407-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Informe técnico (Zenodo): https://doi.org/10.5281/zenodo.23731473
 - Sitio web: https://www.seerror.com

@@ -92,13 +92,13 @@ La comparacion cuantitativa disponible es interna: la variante SIF-10 supera al 
 - Sesgos heredados de GloVe sobre Wikipedia y Gigaword, incluyendo sesgos de genero, raza y geografia presentes en el corpus original.
 - Las metricas de seleccion de corpus (STS-B, NanoBEIR) guiaron la eleccion del corpus de ajuste, por lo que no son estimaciones limpias de holdout; el rendimiento en dominios distintos puede ser inferior.
 - La licencia pddl cubre los vectores, pero los datos de frecuencia de wordfreq incluyen material CC BY-SA 4.0 y creditos por fuente en `NOTICE.md`; el campo de licencia del modelo fuente no renuncia a esos terminos.
-- Requiere la libreria `fse` >= 2.0; no es compatible con `sentence-transformers`, `transformers` ni APIs estandar de HuggingFace.
+- Requiere la libreria `fse` >= 2.0; no es compatible con `sentence-transformers`, `transformers` ni APIs estandar de Hugging Face.
 - Sin garantias de velocidad publicadas; el autor no reclama mejoras de carga o inferencia frente a otras variantes.
 - Uso comercial permitido por la licencia pddl, pero conviene revisar las obligaciones de atribucion de wordfreq antes de redistribuir.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/glove-wiki-gigaword-300-sif10
+- Modelo en Hugging Face: https://huggingface.co/fse/glove-wiki-gigaword-300-sif10
 - Modelo base: https://huggingface.co/fse/glove-wiki-gigaword-300
 - Repositorio fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Dataset de ajuste: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu-llama3-annotations

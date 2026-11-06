@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - Al ser un adaptador LoRA de 0.2 GB, los requisitos de almacenamiento son mínimos. Sin embargo, la inferencia requiere cargar el modelo base granite-4.0-h-small, cuyos requisitos de VRAM no se han documentado en este repositorio.
 - Para un modelo de tamaño "small" (típicamente 3B-4B parámetros), se estima que la inferencia en FP16 requiere entre 8 y 12 GB de VRAM, lo que permitiría ejecutarlo en GPUs consumer como RTX 3090, RTX 4090 o superiores.
 - Para cuantización en 8 bits o 4 bits, los requisitos podrían reducirse a 4-6 GB de VRAM, permitiendo su uso en GPUs como RTX 3060 o RTX 4060.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería transformers de HuggingFace mediante `PeftModel.from_pretrained()`. También es compatible con vLLM, TGI y llama.cpp si el modelo base está disponible en esos formatos.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería transformers de Hugging Face mediante `PeftModel.from_pretrained()`. También es compatible con vLLM, TGI y llama.cpp si el modelo base está disponible en esos formatos.
 - Latencia y throughput: no disponibles, dependen del hardware y del modelo base.
 
 ## Comparativa con modelos similares

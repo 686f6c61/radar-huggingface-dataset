@@ -2,9 +2,9 @@
 
 ## Resumen
 
-midris/Llama-3.2-3B-Legal-SFT es un ajuste fino (SFT) del modelo unsloth/Llama-3.2-3B-Instruct-bnb-4bit, publicado por el usuario midris en HuggingFace. Se trata de un modelo denso de 3.212.749.824 parametros (3,21 mil millones) orientado a generacion de texto en el dominio legal, partiendo de la arquitectura Llama 3.2 en su variante de 3B. El repositorio ocupa 6,4 GB y se distribuye bajo licencia Apache 2.0.
+midris/Llama-3.2-3B-Legal-SFT es un ajuste fino (SFT) del modelo unsloth/Llama-3.2-3B-Instruct-bnb-4bit, publicado por el usuario midris en Hugging Face. Se trata de un modelo denso de 3.212.749.824 parametros (3,21 mil millones) orientado a generacion de texto en el dominio legal, partiendo de la arquitectura Llama 3.2 en su variante de 3B. El repositorio ocupa 6,4 GB y se distribuye bajo licencia Apache 2.0.
 
-El modelo se ha entrenado con Unsloth y la libreria TRL de HuggingFace, un flujo habitual para ajustes finos eficientes con QLoRA sobre una base cuantizada en 4 bits. La model card es minima: no documenta el dataset de entrenamiento, el numero de tokens, la composicion de los datos legales ni el proceso de alineamiento posterior. Tampoco se publican resultados de benchmarks.
+El modelo se ha entrenado con Unsloth y la libreria TRL de Hugging Face, un flujo habitual para ajustes finos eficientes con QLoRA sobre una base cuantizada en 4 bits. La model card es minima: no documenta el dataset de entrenamiento, el numero de tokens, la composicion de los datos legales ni el proceso de alineamiento posterior. Tampoco se publican resultados de benchmarks.
 
 Su relevancia es limitada y muy acotada: es un experimento de ajuste fino de bajo coste sobre un modelo pequeno, con 169 descargas y 0 likes en el momento de la consulta. Resulta util como referencia para quien quiera replicar un pipeline de SFT con Unsloth sobre Llama 3.2 3B, pero no como modelo de produccion sin una evaluacion propia previa.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| midris/Llama-3.2-3B-Legal-SFT | 3,21 mil millones | No documentado (base: 128.000 tokens) | Apache 2.0 | HuggingFace, safetensors | Ajuste legal en ingles, sin benchmarks, 169 descargas |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors | Modelo base oficial, alineado con RLHF, soporta tool calling |
-| Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | HuggingFace, safetensors, GGUF | Alternativa multilingue con buen rendimiento en codigo y matematicas |
-| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | HuggingFace, safetensors, GGUF | Orientado a razonamiento y codigo, con contexto largo |
+| midris/Llama-3.2-3B-Legal-SFT | 3,21 mil millones | No documentado (base: 128.000 tokens) | Apache 2.0 | Hugging Face, safetensors | Ajuste legal en ingles, sin benchmarks, 169 descargas |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors | Modelo base oficial, alineado con RLHF, soporta tool calling |
+| Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Hugging Face, safetensors, GGUF | Alternativa multilingue con buen rendimiento en codigo y matematicas |
+| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | Hugging Face, safetensors, GGUF | Orientado a razonamiento y codigo, con contexto largo |
 
 No se dispone de datos de benchmarks de este ajuste que permitan una comparacion cuantitativa con las alternativas anteriores; la tabla se limita a parametros, contexto y licencia.
 
@@ -100,9 +100,9 @@ No se dispone de datos de benchmarks de este ajuste que permitan una comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/midris/Llama-3.2-3B-Legal-SFT
+- Modelo en Hugging Face: https://huggingface.co/midris/Llama-3.2-3B-Legal-SFT
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Llama 3.2: https://www.llama.com/models/llama-3/
 - Resultados de busqueda web: los enlaces devueltos corresponden a paginas de ChatGPT y no guardan relacion con el modelo, por lo que no se incluyen como referencias relevantes.

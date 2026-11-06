@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`indic_whisper_hi_multi_gpu_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT` es un ajuste fino (fine-tuning) del modelo de reconocimiento automático de voz Whisper, publicado en HuggingFace por el usuario `dianavdavidson`. Por el identificador y las etiquetas del repositorio (`whisper`, `safetensors`), se trata de un modelo de la familia Whisper orientado a hindi y a hinglish (conmutación de código hindi-inglés), con soporte declarado para grafías mixtas, es decir, texto de salida que puede combinar devanagari y alfabeto latino.
+`indic_whisper_hi_multi_gpu_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT` es un ajuste fino (fine-tuning) del modelo de reconocimiento automático de voz Whisper, publicado en Hugging Face por el usuario `dianavdavidson`. Por el identificador y las etiquetas del repositorio (`whisper`, `safetensors`), se trata de un modelo de la familia Whisper orientado a hindi y a hinglish (conmutación de código hindi-inglés), con soporte declarado para grafías mixtas, es decir, texto de salida que puede combinar devanagari y alfabeto latino.
 
 El peso real declarado en los ficheros safetensors es de 763.857.920 parámetros, una cifra coherente con la variante Whisper medium (en torno a 769 M). El repositorio ocupa 15,3 GB, un tamaño muy superior al de los pesos del modelo en precisión completa, lo que sugiere la presencia de varios puntos de control o estados de entrenamiento además de los pesos finales. El nombre del repositorio codifica los hiperparámetros del ajuste: ratio 25/45 de mezcla de datos, tasa de aprendizaje 1e-4, multi-GPU, etiqueta de idioma `hi`, y una referencia `mucs_63022` que apunta al corpus o configuración de entrenamiento empleados.
 
@@ -67,10 +67,10 @@ Los datos de las alternativas corresponden a sus especificaciones publicas ofici
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indic_whisper_hi (este modelo) | 763,86 M | 30 s (convencion Whisper, no confirmado) | Hindi e hinglish segun el identificador | No disponible | HuggingFace, 6 descargas |
-| Whisper medium (OpenAI) | 769 M | 30 s | 99 idiomas | MIT | HuggingFace y OpenAI |
-| Whisper large-v3 (OpenAI) | 1.550 M aprox. | 30 s | 99 idiomas | MIT | HuggingFace y OpenAI |
-| IndicWhisper (AI4Bharat) | No disponible en esta busqueda | No disponible | Hindi y otras lenguas de India | No disponible en esta busqueda | HuggingFace, no verificado |
+| indic_whisper_hi (este modelo) | 763,86 M | 30 s (convencion Whisper, no confirmado) | Hindi e hinglish segun el identificador | No disponible | Hugging Face, 6 descargas |
+| Whisper medium (OpenAI) | 769 M | 30 s | 99 idiomas | MIT | Hugging Face y OpenAI |
+| Whisper large-v3 (OpenAI) | 1.550 M aprox. | 30 s | 99 idiomas | MIT | Hugging Face y OpenAI |
+| IndicWhisper (AI4Bharat) | No disponible en esta busqueda | No disponible | Hindi y otras lenguas de India | No disponible en esta busqueda | Hugging Face, no verificado |
 
 ## Limitaciones y advertencias
 
@@ -85,6 +85,6 @@ Los datos de las alternativas corresponden a sus especificaciones publicas ofici
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT
+- Hugging Face: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT
 - Paper, blog o repositorio del autor: no disponible
 - Resultados de busqueda web: las consultas realizadas no han devuelto ningun resultado relevante sobre este modelo, su autora ni el corpus de entrenamiento; unicamente aparecieron sitios de contenido para adultos sin relacion alguna con el modelo, que se han descartado.

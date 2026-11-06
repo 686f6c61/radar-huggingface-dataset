@@ -125,7 +125,7 @@ La comparación relevante es interna a la familia: la variante γ = 1,0 gana 5,1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrunoHays/embeddinggemma-2-nullspace-audio
+- Modelo en Hugging Face: https://huggingface.co/BrunoHays/embeddinggemma-2-nullspace-audio
 - Variante γ = 0,7 citada en la model card: https://huggingface.co/BrunoHays/embeddinggemma-2-nullspace-audio-g0.7
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Model card del base en Google AI for Developers: https://ai.google.dev/gemma/docs/embeddinggemma/model_card_2

@@ -60,7 +60,7 @@ Existen otros modelos del mismo autor con nomenclatura similar, como `Lanni-ni/d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch4
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_inverse_babylm_100m_seed43_epoch4
 - Modelo similar: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch7
 - Modelo similar: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_10m_inverse_epoch4
 - Paper de referencia sobre impacto ambiental (etiqueta arxiv:1910.09700): https://arxiv.org/abs/1910.09700

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`distilbert-guest-misoginia` es un modelo de clasificación de texto en inglés obtenido mediante fine-tuning de `distilbert-base-uncased`, publicado por el usuario Rachiifal en HuggingFace. El nombre sugiere que el modelo está orientado a la detección de contenido misógino, aunque la model card no especifica explícitamente la taxonomía de etiquetas ni la naturaleza del conjunto de datos de entrenamiento (aparece como "None dataset"). Se trata, por tanto, de un clasificador binario o multiclase de propósito específico, no de un modelo generativo.
+`distilbert-guest-misoginia` es un modelo de clasificación de texto en inglés obtenido mediante fine-tuning de `distilbert-base-uncased`, publicado por el usuario Rachiifal en Hugging Face. El nombre sugiere que el modelo está orientado a la detección de contenido misógino, aunque la model card no especifica explícitamente la taxonomía de etiquetas ni la naturaleza del conjunto de datos de entrenamiento (aparece como "None dataset"). Se trata, por tanto, de un clasificador binario o multiclase de propósito específico, no de un modelo generativo.
 
 Con 66.955.010 parámetros, es un transformer encoder de tipo DistilBERT, una versión destilada de BERT-base con aproximadamente un 40 % menos de parámetros que el original. Su utilidad principal es la moderación de contenido y el filtrado automático de textos en pipelines de clasificación, donde un modelo compacto y rápido como este puede desplegarse con requisitos de hardware muy modestos.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es doble: por un lado, documenta un modelo de modera
 
 El modelo es un fine-tuning de `distilbert-base-uncased`, un transformer encoder de 6 capas con 66 millones de parámetros, hidden size de 768 y 12 cabezas de atención. DistilBERT se obtuvo originalmente mediante destilación de conocimiento de BERT-base, conservando aproximadamente el 97 % del rendimiento del profesor con un 40 % menos de parámetros y siendo un 60 % más rápido en inferencia. La tarea añadida es una cabeza de clasificación de secuencias (`text-classification`).
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace durante 3 épocas, con learning rate 2e-05, batch size de 16, semilla 42, optimizador AdamW con betas (0,9; 0,999) y scheduler lineal. No se documenta el número de tokens de entrenamiento, la composición del dataset, el número de ejemplos ni si se aplicaron técnicas de balanceo de clases. Tampoco se indica si hubo aumento de datos o validación cruzada. La evolución de las métricas por época (mostrada en la model card) revela un sobreajuste claro: la pérdida de validación sube de 0,4861 en la época 1 a 0,9633 en la época 3, mientras que la accuracy apenas mejora (0,8483 → 0,9042) y el F1 cae de 0,5380 a 0,4901.
+El entrenamiento se realizó con el `Trainer` de Hugging Face durante 3 épocas, con learning rate 2e-05, batch size de 16, semilla 42, optimizador AdamW con betas (0,9; 0,999) y scheduler lineal. No se documenta el número de tokens de entrenamiento, la composición del dataset, el número de ejemplos ni si se aplicaron técnicas de balanceo de clases. Tampoco se indica si hubo aumento de datos o validación cruzada. La evolución de las métricas por época (mostrada en la model card) revela un sobreajuste claro: la pérdida de validación sube de 0,4861 en la época 1 a 0,9633 en la época 3, mientras que la accuracy apenas mejora (0,8483 → 0,9042) y el F1 cae de 0,5380 a 0,4901.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo con otros clasificadores de mi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Rachiifal/distilbert-guest-misoginia)
+- [Modelo en Hugging Face](https://huggingface.co/Rachiifal/distilbert-guest-misoginia)
 - [Modelo base distilbert-base-uncased](https://huggingface.co/distilbert-base-uncased)
 - [Documentación de DistilBERT (paper original de Sanh et al., 2019)](https://arxiv.org/abs/1910.01108)
 - [Documentación de Transformers para text-classification](https://huggingface.co/docs/transformers/tasks/sequence_classification)

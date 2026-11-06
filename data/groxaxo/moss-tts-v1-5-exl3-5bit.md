@@ -106,7 +106,7 @@ No se dispone de comparativa con otros modelos TTS de terceros en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-EXL3-5bit
+- Hugging Face: https://huggingface.co/groxaxo/MOSS-TTS-v1.5-EXL3-5bit
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5
 - Codec de audio: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer (revision 3cd226ba2947efa357ef453bcad111b6eafba782)
 - Backend EXL3 (exllamav3): https://github.com/turboderp-org/exllamav3/tree/02aef45cd681b960a00afcd0749a4ab99e6c1bfe

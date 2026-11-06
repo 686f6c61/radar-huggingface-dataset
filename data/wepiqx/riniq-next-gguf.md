@@ -114,7 +114,7 @@ Frente al modelo base Qwen/Qwen3.5-9B sin fusionar no se han publicado resultado
 - Repositorio del método y registro completo (RINIQ.md, MIMO.md, FUSION.md): https://huggingface.co/wepiqx/MERNIK
 - Programa RINIQ original (tri-fusión): https://huggingface.co/wepiqx/RINIQ-MERNIK-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Perfil del autor en HuggingFace: https://huggingface.co/wepiqx
+- Perfil del autor en Hugging Face: https://huggingface.co/wepiqx
 - Actividad del autor: https://huggingface.co/wepiqx/activity/all
 - Patrocinio del autor: https://github.com/sponsors/wepiqx
 - Ficha del programa RINIQ en SAVRN: https://savrn.com/models/riniq-mernik-gguf

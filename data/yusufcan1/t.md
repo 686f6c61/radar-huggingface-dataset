@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yusufcan1/t es un repositorio alojado en HuggingFace por el usuario Yusufcan1 que, a fecha de la informacion disponible, no contiene ninguna descripcion tecnica util: la model card publicada es la plantilla generica de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No se declara arquitectura, numero de parametros, longitud de contexto, idioma, licencia ni formato de pesos.
+Yusufcan1/t es un repositorio alojado en Hugging Face por el usuario Yusufcan1 que, a fecha de la informacion disponible, no contiene ninguna descripcion tecnica util: la model card publicada es la plantilla generica de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No se declara arquitectura, numero de parametros, longitud de contexto, idioma, licencia ni formato de pesos.
 
 El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline de inferencia asignado ni etiquetas de tarea. Las unicas etiquetas presentes son arxiv:1910.09700 (que corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto ambiental, citado de forma automatica por la propia plantilla) y region:us, que solo indica la region de almacenamiento.
 
@@ -79,9 +79,9 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yusufcan1/t
+- Repositorio en Hugging Face: https://huggingface.co/Yusufcan1/t
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
-- Especificacion de model cards de HuggingFace: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
+- Especificacion de model cards de Hugging Face: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
 - Guia de model cards: https://huggingface.co/docs/hub/model-cards
 - Plantilla sin rellenar utilizada por el autor: https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
 - Calculador de impacto ambiental del aprendizaje automatico: https://mlco2.github.io/impact#compute

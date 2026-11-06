@@ -22,7 +22,7 @@ Su relevancia es acotada pero concreta: cubre un hueco poco poblado, el de asist
 | Formato de pesos | GGUF (safetensors en el modelo base original) |
 | Tamaño del repositorio | 76,9 GB (incluye todas las cuantizaciones y proyectores) |
 | Cuantizaciones con imatrix | No disponibles; solo cuantizaciones estáticas |
-| Fecha de publicación en HuggingFace | 2026-10-27 |
+| Fecha de publicación en Hugging Face | 2026-10-27 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -103,7 +103,7 @@ La diferencia principal frente a estos tres es la especialización: KO-VoicePers
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/KO-VoicePersona-E4B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/KO-VoicePersona-E4B-GGUF
 - Modelo base: https://huggingface.co/ThakiCloud/KO-VoicePersona-E4B
 - Texto de la licencia openmdw-1.1: https://openmdw.ai/license/1-1/
 - Página de descargas y resumen del cuantizador para este modelo: https://hf.tst.eu/model#KO-VoicePersona-E4B-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-undial-seed0 es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario sungjuncho en HuggingFace, que ha sido sometido a un proceso de *machine unlearning* mediante el algoritmo UNDIAL sobre el conjunto de datos TOFU-para. El objetivo del modelo no es ofrecer una nueva capacidad generativa, sino servir como artefacto de investigacion para estudiar la eliminacion selectiva de conocimiento factual: se parte de un modelo afinado previamente con datos sinteticos de preguntas y respuestas sobre autores ficticios (TOFU) y se le aplica un procedimiento para "olvidar" un subconjunto concreto de esos pares (el *forget set* de 400 ejemplos), evaluando cuanto del conocimiento subyacente se elimina realmente frente a una simple supresion de las muestras vistas.
+Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-undial-seed0 es un modelo derivado de Llama 3.1 8B Instruct, publicado por el usuario sungjuncho en Hugging Face, que ha sido sometido a un proceso de *machine unlearning* mediante el algoritmo UNDIAL sobre el conjunto de datos TOFU-para. El objetivo del modelo no es ofrecer una nueva capacidad generativa, sino servir como artefacto de investigacion para estudiar la eliminacion selectiva de conocimiento factual: se parte de un modelo afinado previamente con datos sinteticos de preguntas y respuestas sobre autores ficticios (TOFU) y se le aplica un procedimiento para "olvidar" un subconjunto concreto de esos pares (el *forget set* de 400 ejemplos), evaluando cuanto del conocimiento subyacente se elimina realmente frente a una simple supresion de las muestras vistas.
 
 El modelo pertenece a la coleccion TOFU-para del mismo autor, que distingue explicitamente entre *untraining* (eliminar las muestras exactas que se dieron al metodo) y *unlearning* (eliminar el conocimiento subyacente, que el modelo tambien aprendio en otras formulaciones parafraseadas). Para ello se utilizan cinco versiones parafraseadas de cada par QA, verificadas factualmente, y se mide la divergencia respecto a modelos de referencia mediante la metrica FADE (divergencia KL simetrica) y las metricas clasicas de TOFU.
 
@@ -77,10 +77,10 @@ FADE es la divergencia KL simetrica respecto al modelo de referencia sobre respu
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (UNDIAL, seed 0) | 8,03 B | no disponible | Unlearning con UNDIAL sobre TOFU-para | llama3.1 | HuggingFace |
-| `Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03 B | no disponible | Fine-tuning completo sobre TOFU + 2 parafrasis (sin desaprender) | llama3.1 | HuggingFace |
-| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03 B | no disponible | Modelo de referencia con forget10 eliminado (referencia de evaluacion) | llama3.1 | HuggingFace |
-| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8,03 B | no disponible | Referencia de untraining (elimina forget10 original) | llama3.1 | HuggingFace |
+| Este modelo (UNDIAL, seed 0) | 8,03 B | no disponible | Unlearning con UNDIAL sobre TOFU-para | llama3.1 | Hugging Face |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` | 8,03 B | no disponible | Fine-tuning completo sobre TOFU + 2 parafrasis (sin desaprender) | llama3.1 | Hugging Face |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` | 8,03 B | no disponible | Modelo de referencia con forget10 eliminado (referencia de evaluacion) | llama3.1 | Hugging Face |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` | 8,03 B | no disponible | Referencia de untraining (elimina forget10 original) | llama3.1 | Hugging Face |
 
 Los tres modelos comparables pertenecen a la misma coleccion TOFU-para del autor y comparten arquitectura y tamano; la diferencia esta en el tratamiento del *forget set*. No se dispone de comparacion con metodos de desaprendizaje alternativos (por ejemplo, GradDiff, NPO, RMU) en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ Los tres modelos comparables pertenecen a la misma coleccion TOFU-para del autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-undial-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-undial-seed0
 - Coleccion TOFU-para: https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Modelo base (fine-tuning completo): https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0

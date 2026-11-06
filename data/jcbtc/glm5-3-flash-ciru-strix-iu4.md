@@ -106,6 +106,6 @@ No se han publicado resultados de benchmarks comparables para las variantes del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jcbtc/GLM5.3-Flash-CIRU-STRIX-IU4
+- Hugging Face: https://huggingface.co/jcbtc/GLM5.3-Flash-CIRU-STRIX-IU4
 - Avisos de terceros: https://huggingface.co/jcbtc/GLM5.3-Flash-CIRU-STRIX-IU4/blob/main/THIRD_PARTY_NOTICES.md
 - Guía para ejecutar GLM-5.3-Flash localmente: https://codersera.com/blog/how-to-run-glm-5-3-flash-locally-2026/

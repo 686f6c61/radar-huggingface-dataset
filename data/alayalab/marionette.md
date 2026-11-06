@@ -82,7 +82,7 @@ Marionette se diferencia de Genie y Wan2.2 en que no predice píxeles directamen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlayaLab/Marionette
+- Hugging Face: https://huggingface.co/AlayaLab/Marionette
 - GitHub (código, scripts, galería): https://github.com/AlayaLab/Marionette
 - Paper arXiv: https://arxiv.org/abs/2608.14530
 - Página del proyecto: https://alayalab.github.io/Marionette/

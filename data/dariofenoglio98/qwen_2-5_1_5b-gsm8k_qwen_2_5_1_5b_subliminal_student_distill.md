@@ -77,7 +77,7 @@ Los tres modelos parten de Qwen2.5-1.5B-Instruct y se centran en matematicas, pe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dariofenoglio98/qwen_2.5_1_5b-gsm8k_qwen_2_5_1_5b_subliminal_student_distill
+- Repositorio Hugging Face: https://huggingface.co/dariofenoglio98/qwen_2.5_1_5b-gsm8k_qwen_2_5_1_5b_subliminal_student_distill
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Paper tecnico de Qwen2.5: https://arxiv.org/pdf/2412.15115v1
 - Modelo comparable (GRPO): https://huggingface.co/ununtrium/Qwen2.5-1.5B-Instruct-Open-R1-GRPO-gsm8k

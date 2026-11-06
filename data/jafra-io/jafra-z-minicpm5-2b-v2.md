@@ -83,5 +83,5 @@ La comparación cuantitativa con otros modelos de la misma categoría no está d
 
 ## Enlaces
 
-- [HuggingFace: jafra-io/jafra-z-minicpm5-2b-v2](https://huggingface.co/jafra-io/jafra-z-minicpm5-2b-v2)
+- [Hugging Face: jafra-io/jafra-z-minicpm5-2b-v2](https://huggingface.co/jafra-io/jafra-z-minicpm5-2b-v2)
 - [Modelo base: openbmb/MiniCPM5-2B](https://huggingface.co/openbmb/MiniCPM5-2B)

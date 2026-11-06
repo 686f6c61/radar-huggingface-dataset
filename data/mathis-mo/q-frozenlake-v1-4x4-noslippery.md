@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su configuracion 4x4 y sin superficie resbaladiza (`is_slippery=False`). Lo publica el usuario Mathis-Mo en HuggingFace, etiquetado como `reinforcement-learning`, `q-learning` y `custom-implementation`, lo que indica que la implementacion del algoritmo es propia y no una exportacion directa de una libreria estandar. No es un modelo de lenguaje ni una red neuronal profunda: el artefacto distribuido es un unico fichero `q-learning.pkl` que contiene la informacion necesaria para reconstruir la politica del agente.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno FrozenLake-v1 de Gymnasium, en su configuracion 4x4 y sin superficie resbaladiza (`is_slippery=False`). Lo publica el usuario Mathis-Mo en Hugging Face, etiquetado como `reinforcement-learning`, `q-learning` y `custom-implementation`, lo que indica que la implementacion del algoritmo es propia y no una exportacion directa de una libreria estandar. No es un modelo de lenguaje ni una red neuronal profunda: el artefacto distribuido es un unico fichero `q-learning.pkl` que contiene la informacion necesaria para reconstruir la politica del agente.
 
 El interes de este tipo de publicaciones es fundamentalmente metodologico y docente. FrozenLake 4x4 es un problema tabular minimalista (16 estados, 4 acciones, recompensa 1 al alcanzar la meta) y resuelto de forma determinista por Q-Learning clasico, por lo que sirve como referencia de coste minimo para validar infraestructura de evaluacion, comparar algoritmos y generar trayectorias etiquetadas para experimentos de imitacion. La model card declara un `mean_reward` de 1.00 +/- 0.00 sobre `FrozenLake-v1-4x4-no_slippery`, el maximo posible en esa configuracion, aunque el resultado esta marcado como no verificado.
 
@@ -29,7 +29,7 @@ Se trata de un repositorio con 0 descargas y 0 likes, sin licencia declarada y c
 
 ## Arquitectura y entrenamiento
 
-El modelo implementa Q-Learning, un metodo de control off-policy que aprende una funcion de valor-accion Q(s, a) mediante actualizaciones de diferencia temporal basadas en la ecuacion de Bellman, con una politica de comportamiento epsilon-greedy durante el entrenamiento y una politica greedy en inferencia. Al tratarse de un problema tabular pequeno, la representacion natural es una tabla (o un diccionario) de 16 estados por 4 acciones; la etiqueta `custom-implementation` sugiere que el autor escribio el bucle de aprendizaje en lugar de emplear stable-baselines3, aunque la carga se realiza con la utilidad `load_from_hub`, habitual en los artefactos del RL Zoo de HuggingFace. El ejemplo de uso de la model card implica que el pickle contiene un diccionario con al menos la clave `env_id`, reutilizada directamente para instanciar el entorno.
+El modelo implementa Q-Learning, un metodo de control off-policy que aprende una funcion de valor-accion Q(s, a) mediante actualizaciones de diferencia temporal basadas en la ecuacion de Bellman, con una politica de comportamiento epsilon-greedy durante el entrenamiento y una politica greedy en inferencia. Al tratarse de un problema tabular pequeno, la representacion natural es una tabla (o un diccionario) de 16 estados por 4 acciones; la etiqueta `custom-implementation` sugiere que el autor escribio el bucle de aprendizaje en lugar de emplear stable-baselines3, aunque la carga se realiza con la utilidad `load_from_hub`, habitual en los artefactos del RL Zoo de Hugging Face. El ejemplo de uso de la model card implica que el pickle contiene un diccionario con al menos la clave `env_id`, reutilizada directamente para instanciar el entorno.
 
 No se especifican en la informacion disponible el numero de episodios, la tasa de aprendizaje, el factor de descuento, el esquema de exploracion, la semilla ni las versiones de Gymnasium o Python empleadas, por lo que la reproducibilidad exacta del entrenamiento no puede garantizarse a partir de la ficha. Tampoco hay indicios de tecnicas adicionales como redes de dueling, replay buffer, doble Q-Learning ni decodificacion especulativa: el alcance es Q-Learning clasico sobre un MDP deterministico. No existe ninguna fase de ajuste por preferencias (RLHF o DPO), ya que el modelo no es generativo ni textual.
 
@@ -79,7 +79,7 @@ No se proporciono informacion sobre modelos comparables en la documentacion disp
 
 | Modelo | Algoritmo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| q-FrozenLake-v1-4x4-noSlippery (este modelo) | Q-Learning tabular, implementacion propia | no disponible (tabla sobre 16 estados x 4 acciones) | no aplica | mean_reward 1.00 +/- 0.00 (no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| q-FrozenLake-v1-4x4-noSlippery (este modelo) | Q-Learning tabular, implementacion propia | no disponible (tabla sobre 16 estados x 4 acciones) | no aplica | mean_reward 1.00 +/- 0.00 (no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Agente DQN sobre FrozenLake-v1 4x4 | Q-Learning con red neuronal y replay buffer | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Agente PPO sobre FrozenLake-v1 4x4 | Policy gradient on-policy | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -100,5 +100,5 @@ Diferencias cualitativas conocidas entre familias de algoritmos, sin datos numer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mathis-Mo/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/Mathis-Mo/q-FrozenLake-v1-4x4-noSlippery
 - La busqueda web realizada no devolvio ningun enlace relacionado con el modelo, el autor o el entorno. Los resultados obtenidos trataban exclusivamente sobre el nombre propio "Mathis" (significado del nombre, articulos enciclopedicos y empresas homonimas) y no aportan informacion tecnica relevante.

@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks de calidad (FID, CLIPScore, GenEval
 
 | Modelo | Parámetros | Formato y precisión | Ejecución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `BasinShapers/flux2-klein-4b-webgpu` (este repo) | 4B (difusión) + Qwen3-4B (texto) | Binarios Kaminos; int4, 3 bits y 2 bits; activaciones en FP | Navegador con WebGPU, sin servidor | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `black-forest-labs/FLUX.2-klein-4B` (modelo base) | 4B (difusión) + Qwen3-4B (texto) | Pesos originales; precisión no disponible en la información consultada | GPU con frameworks de difusión habituales | Apache 2.0 | HuggingFace, mantenido por Black Forest Labs |
+| `BasinShapers/flux2-klein-4b-webgpu` (este repo) | 4B (difusión) + Qwen3-4B (texto) | Binarios Kaminos; int4, 3 bits y 2 bits; activaciones en FP | Navegador con WebGPU, sin servidor | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `black-forest-labs/FLUX.2-klein-4B` (modelo base) | 4B (difusión) + Qwen3-4B (texto) | Pesos originales; precisión no disponible en la información consultada | GPU con frameworks de difusión habituales | Apache 2.0 | Hugging Face, mantenido por Black Forest Labs |
 | Alternativas de generación de imagen en navegador | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de terceros comparables en la información proporcionada, por lo que no se puede establecer una comparación de calidad frente a otros modelos de difusión de tamano similar.
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks ni de terceros comparables en la informaci�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BasinShapers/flux2-klein-4b-webgpu
+- Repositorio en Hugging Face: https://huggingface.co/BasinShapers/flux2-klein-4b-webgpu
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Codificador de texto (Qwen3-4B): https://huggingface.co/Qwen/Qwen3-4B (referencia indicada en la model card como "Qwen3-4B by the Qwen team")
 - Kit de inferencia Kaminos: https://github.com/lyonsno/kaminos

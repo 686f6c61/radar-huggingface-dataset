@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kyutai-stt-1b-en-fr-loom (este repositorio) | 1,05 B | 750 frames de audio (60 s) con caché en anillo | No disponible | cc-by-4.0 | GGUF para loom.cpp en HuggingFace |
-| kyutai/stt-1b-en_fr (modelo base) | 1,05 B | No disponible en la información proporcionada | No disponible | cc-by-4.0 (heredada) | Pesos originales en HuggingFace |
-| kyutai/stt-1b-en_fr-trfs (port a transformers) | 1,05 B | Ventana de 375 posiciones en el modelo de lenguaje | No disponible; la model card advierte de que las transcripciones pueden diferir de las de `moshi` | No disponible en la información proporcionada | Conversión para transformers en HuggingFace |
+| kyutai-stt-1b-en-fr-loom (este repositorio) | 1,05 B | 750 frames de audio (60 s) con caché en anillo | No disponible | cc-by-4.0 | GGUF para loom.cpp en Hugging Face |
+| kyutai/stt-1b-en_fr (modelo base) | 1,05 B | No disponible en la información proporcionada | No disponible | cc-by-4.0 (heredada) | Pesos originales en Hugging Face |
+| kyutai/stt-1b-en_fr-trfs (port a transformers) | 1,05 B | Ventana de 375 posiciones en el modelo de lenguaje | No disponible; la model card advierte de que las transcripciones pueden diferir de las de `moshi` | No disponible en la información proporcionada | Conversión para transformers en Hugging Face |
 
 Los tres artefactos comparten los mismos parámetros subyacentes; las diferencias están en el runtime, en la ventana de atención aplicada y en el formato de pesos. No se dispone de datos de benchmarks que permitan comparar la calidad de transcripción entre ellos.
 
@@ -97,7 +97,7 @@ Los tres artefactos comparten los mismos parámetros subyacentes; las diferencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/kyutai-stt-1b-en-fr-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/kyutai-stt-1b-en-fr-loom
 - Modelo base: https://huggingface.co/kyutai/stt-1b-en_fr
 - Conversión a transformers del modelo base: https://huggingface.co/kyutai/stt-1b-en_fr-trfs
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp

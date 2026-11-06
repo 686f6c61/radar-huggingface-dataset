@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luna-CT_scanes-weights es un repositorio de pesos (no un modelo único) publicado por el usuario ganiesen en HuggingFace. Contiene los checkpoints de una batería de experimentos de segmentación de nódulos pulmonares en TC axial, entrenados sobre LIDC-IDRI / LUNA16. El repositorio acompaña al código de entrenamiento alojado en github.com/ganiesenov/Luna-CT_scanes, que es donde viven el protocolo, las métricas completas y los scripts; aquí solo se almacenan los `state_dict` de PyTorch correspondientes al mejor checkpoint por Dice de validación.
+Luna-CT_scanes-weights es un repositorio de pesos (no un modelo único) publicado por el usuario ganiesen en Hugging Face. Contiene los checkpoints de una batería de experimentos de segmentación de nódulos pulmonares en TC axial, entrenados sobre LIDC-IDRI / LUNA16. El repositorio acompaña al código de entrenamiento alojado en github.com/ganiesenov/Luna-CT_scanes, que es donde viven el protocolo, las métricas completas y los scripts; aquí solo se almacenan los `state_dict` de PyTorch correspondientes al mejor checkpoint por Dice de validación.
 
 Técnicamente son seis familias de arquitecturas 2D de segmentación binaria con entrada de un único corte axial: U-Net, U-Net++ y MAnet con encoder ResNet34 (implementadas con `segmentation-models-pytorch` 0.5.0), más una Attention U-Net y una U-Net vanilla implementadas desde cero, y un modelo adicional de ROI para una cascada detectar→segmentar. Cada variante se entrena con tres semillas (1, 2, 42) sobre un split a nivel de paciente 70/15/15, lo que permite medir varianza inter-semilla, un dato poco habitual y útil para evaluar la robustez real de estas arquitecturas.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada pero concreta: es un baseline reproducible y multilla p
 | Longitud de contexto | no aplica; entrada de imagen 1×512×512 (modelo de cascada: 1×256×256) |
 | Tipos de cuantizacion | no disponible; solo se publican `state_dict` de PyTorch sin estado de optimizador, sin versiones GGUF/ONNX/FP16 oficiales |
 | Idiomas soportados | no aplica (modelo de vision; sin componentes de texto) |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica "research use only - not a medical device" |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica "research use only - not a medical device" |
 | Formato de pesos | `.pth` (PyTorch `state_dict` plano) |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ No se dispone de métricas verificables de los competidores en la información p
 ## Limitaciones y advertencias
 
 - No es un dispositivo médico. La model card lo declara explícitamente como "research use only"; no debe usarse para diagnóstico, cribado ni decisión clínica sin validación regulatoria independiente.
-- Licencia no declarada: los metadatos de HuggingFace no indican licencia, lo que impide asumir permiso de uso comercial. Cualquier explotación comercial requiere contactar con el autor.
+- Licencia no declarada: los metadatos de Hugging Face no indican licencia, lo que impide asumir permiso de uso comercial. Cualquier explotación comercial requiere contactar con el autor.
 - MAnet_ResNet34 no convergió en ninguna semilla con `lr=3e-4` (Dice 0,202 ± 0,013, predicción constante). Sus pesos están en el repositorio pero no son utilizables; el riesgo de cargarlos por error en un pipeline automatizado es real.
 - Varianza inter-semilla alta: la U-Net++ va de 0,664 a 0,744 y la vanilla de 0,607 a 0,717. Las diferencias entre arquitecturas (0,699 frente a 0,697) son menores que la desviación entre semillas, así que no se puede concluir superioridad de una frente a otra con estos datos.
 - El modelo es 2D: procesa cortes axiales de forma independiente y no explota la coherencia tridimensional del nódulo, lo que suele penalizar en nódulos pequeños o yuxtapleurales.
@@ -104,7 +104,7 @@ No se dispone de métricas verificables de los competidores en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ganiesen/Luna-CT_scanes-weights
+- Hugging Face: https://huggingface.co/ganiesen/Luna-CT_scanes-weights
 - Repositorio de código, métricas y protocolo: https://github.com/ganiesenov/Luna-CT_scanes
 - LIDC-IDRI (TCIA): https://www.cancerimagingarchive.net/collection/lidc-idri/
 - LUNA16 Grand Challenge: https://luna16.grand-challenge.org/

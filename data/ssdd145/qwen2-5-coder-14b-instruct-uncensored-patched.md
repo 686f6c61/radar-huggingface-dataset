@@ -23,7 +23,7 @@ Su relevancia es limitada pero concreta: se apoya en uno de los modelos de códi
 | Modelo base | Qwen/Qwen2.5-Coder-14B-Instruct |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 60,4 GB |
-| Fecha de publicación | 2026-10-01 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-10-01 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

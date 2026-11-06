@@ -73,8 +73,8 @@ No hay datos de precisión (Hmean, recall, precision) sobre conjuntos como ICDAR
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `skillsafe-ai/pp-ocrv6-tiny-det` | ~0,4 M (estimación) | Imagen RGB con dimensiones dinámicas | Sin benchmarks publicados | Apache-2.0 | ONNX en HuggingFace, 1,70 MB |
-| `PaddlePaddle/PP-OCRv6_tiny_det_onnx` (upstream) | Idénticos (mismo grafo) | Idéntico | Sin benchmarks publicados en esta información | Apache-2.0 | ONNX en HuggingFace |
+| `skillsafe-ai/pp-ocrv6-tiny-det` | ~0,4 M (estimación) | Imagen RGB con dimensiones dinámicas | Sin benchmarks publicados | Apache-2.0 | ONNX en Hugging Face, 1,70 MB |
+| `PaddlePaddle/PP-OCRv6_tiny_det_onnx` (upstream) | Idénticos (mismo grafo) | Idéntico | Sin benchmarks publicados en esta información | Apache-2.0 | ONNX en Hugging Face |
 | Otros detectores de texto (DBNet, EAST, CRAFT y similares) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación con el upstream es directa porque este repositorio no modifica los pesos: es una importación verificada del mismo artefacto. Para el resto de alternativas no se dispone de datos de parámetros, contexto, rendimiento ni licencia en la información proporcionada, por lo que no se puede establecer una comparación rigurosa.
@@ -93,8 +93,8 @@ La comparación con el upstream es directa porque este repositorio no modifica l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/pp-ocrv6-tiny-det
-- Modelo upstream en HuggingFace: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det_onnx
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/pp-ocrv6-tiny-det
+- Modelo upstream en Hugging Face: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det_onnx
 - Commit upstream fijado: https://huggingface.co/PaddlePaddle/PP-OCRv6_tiny_det_onnx/tree/2ba1506c0380b8f0b03dd142459aac66d4421f6c
 - Repositorio de PaddleOCR (código y licencia): https://github.com/PaddlePaddle/PaddleOCR
 - Licencia de PaddleOCR (Apache-2.0): https://github.com/PaddlePaddle/PaddleOCR/blob/main/LICENSE

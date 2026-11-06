@@ -76,7 +76,7 @@ No disponible. El repositorio no contiene un modelo propio que pueda compararse 
 - El repositorio no contiene ningun modelo entrenado; no debe citarse como modelo de IA generativa.
 - El tamano del repositorio es de 0,0 GB, sin pesos, tokenizador ni configuracion publicados.
 - No se declara licencia, lo que impide determinar condiciones de uso comercial o redistribucion.
-- No se especifican idiomas soportados ni pipeline de HuggingFace.
+- No se especifican idiomas soportados ni pipeline de Hugging Face.
 - Los resultados son de un unico entorno (Tesla T4, Colab) y no son extrapolables a otro hardware.
 - Los tiempos de difusion excluyen la carga de modelos, por lo que no reflejan la latencia extremo a extremo.
 - El trabajo esta incompleto: los experimentos de Kaggle y las conclusiones finales estan pendientes segun la propia model card.
@@ -85,5 +85,5 @@ No disponible. El repositorio no contiene un modelo propio que pueda compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vladyslavxxxx/genai-lab-01
+- Repositorio en Hugging Face: https://huggingface.co/vladyslavxxxx/genai-lab-01
 - Cuaderno de Colab con codigo y resultados: https://colab.research.google.com/drive/1BABGqqLRmVIMhmEuydVLpnksuUAfic6P

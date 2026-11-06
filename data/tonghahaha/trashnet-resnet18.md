@@ -66,6 +66,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tonghahaha/trashnet-resnet18
+- Modelo en Hugging Face: https://huggingface.co/tonghahaha/trashnet-resnet18
 - Dataset TrashNet: https://github.com/garythung/trashnet
 - Sistema de clasificación de residuos (FastAPI + Streamlit): https://github.com/yutongyu-ai/Trash_Classification_System

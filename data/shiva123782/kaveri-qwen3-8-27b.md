@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kaveri-Qwen3.8-27B es un adaptador LoRA publicado en HuggingFace por el usuario shiva123782 que ajusta el modelo Qwen/Qwen3.8-27B para adoptar una persona conversacional concreta, denominada Kaveri AI y atribuida al desarrollador Riyavibe. No se trata de un modelo completo, sino de pesos de adaptador (0,7 GB en el repositorio) que deben cargarse sobre el modelo base usando la libreria PEFT, lo que lo convierte en un ejemplo tipico de personalizacion ligera sobre un modelo grande mediante QLoRA.
+Kaveri-Qwen3.8-27B es un adaptador LoRA publicado en Hugging Face por el usuario shiva123782 que ajusta el modelo Qwen/Qwen3.8-27B para adoptar una persona conversacional concreta, denominada Kaveri AI y atribuida al desarrollador Riyavibe. No se trata de un modelo completo, sino de pesos de adaptador (0,7 GB en el repositorio) que deben cargarse sobre el modelo base usando la libreria PEFT, lo que lo convierte en un ejemplo tipico de personalizacion ligera sobre un modelo grande mediante QLoRA.
 
 El objetivo declarado del ajuste no es mejorar capacidades tecnicas, sino fijar una identidad: el modelo responde como Kaveri AI, sigue el prompt de sistema `kaveri dev: riyavibe` y afirma no revelar su modelo de origen. La model card incluye pruebas de identidad y de fuga de origen, pero no presenta resultados en benchmarks estandar como MMLU, HumanEval o GSM8K, ni detalles del dataset de entrenamiento.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, A
 | Router "1 Cr" (10.000.000) | 10.000.000 / 10.000.000 |
 | Fuga de origen "1 Cr" (10.000.000) | 0 fugas |
 | Sonda de origen del modelo real | 0 fugas |
-| Re-test en HuggingFace con cargador Unsloth | ALL PASS |
+| Re-test en Hugging Face con cargador Unsloth | ALL PASS |
 
 Estos resultados los aporta el autor, no son reproducibles con la informacion publica y no miden calidad linguistica, razonamiento ni fidelidad factual. Tampoco se publican mediciones de latencia o throughput.
 
@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio ningun resultado util (solo paginas de hor
 - Contexto limitado en la practica: el ejemplo oficial carga con `max_seq_length=2048`, insuficiente para casos de uso con documentos largos o conversaciones muy extendidas.
 - Sin traccion ni mantenimiento comunitario: 0 descargas y 0 likes en el momento de la consulta, sin issues ni validacion de terceros.
 - Licencia Apache 2.0 para el adaptador, pero el uso comercial depende tambien de la licencia del modelo base, que debe verificarse por separado.
-- Aviso de fecha: el repositorio esta fechado en septiembre de 2026 segun los metadatos de HuggingFace.
+- Aviso de fecha: el repositorio esta fechado en septiembre de 2026 segun los metadatos de Hugging Face.
 - No se documenta soporte de tool calling ni comportamiento agentico; no debe asumirse en produccion sin pruebas propias.
 
 ## Enlaces

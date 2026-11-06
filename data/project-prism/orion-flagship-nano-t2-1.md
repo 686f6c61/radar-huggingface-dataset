@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orion-Flagship-Nano-T2.1 es un repositorio de pesos publicado por el usuario u organizacion Project-Prism en HuggingFace. La unica informacion verificable que acompania al repositorio es una nota en la model card que indica literalmente "these are intermediate checkpoints" (se trata de puntos de control intermedios), ademas de los metadatos del repositorio: 57,7 GB de tamano, 0 descargas, 1 like y sin pipeline, licencia ni idiomas declarados.
+Orion-Flagship-Nano-T2.1 es un repositorio de pesos publicado por el usuario u organizacion Project-Prism en Hugging Face. La unica informacion verificable que acompania al repositorio es una nota en la model card que indica literalmente "these are intermediate checkpoints" (se trata de puntos de control intermedios), ademas de los metadatos del repositorio: 57,7 GB de tamano, 0 descargas, 1 like y sin pipeline, licencia ni idiomas declarados.
 
 No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. El autor no ha publicado paper, blog tecnico ni documentacion adicional, y las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a Microsoft Project y no guardan relacion alguna).
 
@@ -66,7 +66,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse el 
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Project-Prism/Orion-Flagship-Nano-T2.1 | no disponible | no disponible | no disponible | solo nota de checkpoints intermedios | publico en HuggingFace, 0 descargas |
+| Project-Prism/Orion-Flagship-Nano-T2.1 | no disponible | no disponible | no disponible | solo nota de checkpoints intermedios | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No disponible. No es posible identificar modelos comparables al no conocerse el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Project-Prism/Orion-Flagship-Nano-T2.1
+- Hugging Face: https://huggingface.co/Project-Prism/Orion-Flagship-Nano-T2.1
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a paginas de Microsoft Project (gestion de proyectos) y a Project SAS, sin relacion alguna con el modelo. No se han localizado papers, repositorios, demos ni entradas de blog asociados a Project-Prism u Orion-Flagship-Nano-T2.1.

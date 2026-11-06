@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de mezcla de expertos (MoE) publicado bajo el identificador `liskasYR/DeepSeek-V4.1-Flash` en HuggingFace. Segun la model card, se trata de un modelo de 552B parametros de espina dorsal (backbone) con soporte nativo de imagenes y texto, capaz de manejar contextos de hasta un millon de tokens. El repositorio declara 763.205.315.794 parametros contados en los ficheros safetensors, una diferencia respecto a la cifra de la model card que se explica parcialmente por los 196B parametros de memoria condicional Engram.
+DeepSeek-V4.1-Flash es un modelo multimodal de mezcla de expertos (MoE) publicado bajo el identificador `liskasYR/DeepSeek-V4.1-Flash` en Hugging Face. Segun la model card, se trata de un modelo de 552B parametros de espina dorsal (backbone) con soporte nativo de imagenes y texto, capaz de manejar contextos de hasta un millon de tokens. El repositorio declara 763.205.315.794 parametros contados en los ficheros safetensors, una diferencia respecto a la cifra de la model card que se explica parcialmente por los 196B parametros de memoria condicional Engram.
 
 Su propuesta tecnica principal es la compresion agresiva de la cache KV. La arquitectura Causal Encoder-Decoder (CED) proyecta la cache KV global del decodificador desde los estados ocultos del codificador, de modo que solo se activan 8B parametros por token en prefill y 16B en decode. Combinado con Compressed Sparse Attention 2 (CSA2) y cache KV en FP4, el modelo reduce la huella de KV a 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash.
 
@@ -119,10 +119,10 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/liskasYR/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/liskasYR/DeepSeek-V4.1-Flash
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Technical report citado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Cuenta de X (Twitter) de DeepSeek: https://twitter.com/deepseek_ai
 - Figuras de arquitectura y logotipo referenciadas en la model card: https://github.com/deepseek-ai/DeepSeek-V2/tree/main/figures

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Formato / precisión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NorthCUA-Nano NVFP4A16 (esta ficha) | 9,4B denso | 65.536 tokens (config vLLM) | NVFP4A16, 11,2 GB | Apache-2.0 | HuggingFace, requiere vLLM |
-| beipo-ai/NorthCUA-Nano (BF16 original) | 9,4B denso | No disponible | BF16, 18,8 GB | Apache-2.0 | HuggingFace |
+| NorthCUA-Nano NVFP4A16 (esta ficha) | 9,4B denso | 65.536 tokens (config vLLM) | NVFP4A16, 11,2 GB | Apache-2.0 | Hugging Face, requiere vLLM |
+| beipo-ai/NorthCUA-Nano (BF16 original) | 9,4B denso | No disponible | BF16, 18,8 GB | Apache-2.0 | Hugging Face |
 | Alternativas de computer use de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos sobre otros modelos de computer use comparables (por ejemplo, variantes de Qwen2.5-VL o modelos GUI específicos) que permitan una comparación rigurosa de parámetros, contexto y rendimiento.
@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de datos sobre otros modelos de c
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/willyb23/NorthCUA-Nano-NVFP4A16
+- Modelo cuantizado en Hugging Face: https://huggingface.co/willyb23/NorthCUA-Nano-NVFP4A16
 - Modelo base: https://huggingface.co/beipo-ai/NorthCUA-Nano
 - NorthCUA Harness (herramienta oficial de computer use): https://github.com/china-qijizhifeng/NorthCUA-Harness
 - compressed-tensors (formato de cuantización): https://github.com/vllm-project/compressed-tensors

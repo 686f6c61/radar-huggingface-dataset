@@ -70,8 +70,8 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/Gemma-4-26B-A4B-NVFP4 | 25,2B totales / 3,8B activos (segun card); 14,4B almacenados | 256K | Texto, imagen | Apache 2.0 | HuggingFace, vLLM, Blackwell |
-| google/gemma-4-26B-A4B-it (base) | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 | HuggingFace |
+| nvidia/Gemma-4-26B-A4B-NVFP4 | 25,2B totales / 3,8B activos (segun card); 14,4B almacenados | 256K | Texto, imagen | Apache 2.0 | Hugging Face, vLLM, Blackwell |
+| google/gemma-4-26B-A4B-it (base) | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 | Hugging Face |
 | Otras variantes cuantizadas del mismo modelo base | No disponible | 256K | Texto, imagen | Apache 2.0 | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre el modelo cuantizado y su version base en la informacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre el modelo cuantizado y 
 
 ## Enlaces
 
-- HuggingFace (modelo cuantizado): https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4
+- Hugging Face (modelo cuantizado): https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - NVIDIA Model Optimizer (herramienta de cuantizacion): https://github.com/NVIDIA/TensorRT-Model-Optimizer
 - Licencia Apache 2.0 de Gemma (Google AI for Developers): https://ai.google.dev/gemma/apache_2

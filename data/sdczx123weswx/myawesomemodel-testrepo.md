@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje desarrollado por SDCZX123WESWX, publicado en HuggingFace bajo licencia MIT. Según su model card, se trata de una versión actualizada que mejora significativamente la profundidad de razonamiento y la capacidad de inferencia mediante un aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en matemáticas, programación y lógica general, acercándose a otros modelos líderes. Sin embargo, la información técnica disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que no contiene los pesos del modelo.
+MyAwesomeModel es un modelo de lenguaje desarrollado por SDCZX123WESWX, publicado en Hugging Face bajo licencia MIT. Según su model card, se trata de una versión actualizada que mejora significativamente la profundidad de razonamiento y la capacidad de inferencia mediante un aumento de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en matemáticas, programación y lógica general, acercándose a otros modelos líderes. Sin embargo, la información técnica disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados. El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que no contiene los pesos del modelo.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ MyAwesomeModel es un modelo de lenguaje desarrollado por SDCZX123WESWX, publicad
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card no detalla la arquitectura (aunque el tag de HuggingFace indica "bert" y la librería es "transformers", no se confirma si es un transformer estándar, un MoE u otra variante). Tampoco se proporcionan datos sobre el dataset de entrenamiento, número de tokens, ni si se utilizó RLHF o DPO. Se menciona únicamente que la mejora proviene de un post-entrenamiento con más cómputo y optimizaciones algorítmicas, y que el modelo usa más tokens de razonamiento por pregunta (23K frente a 12K en la versión anterior en AIME 2025).
+No disponible. La model card no detalla la arquitectura (aunque el tag de Hugging Face indica "bert" y la librería es "transformers", no se confirma si es un transformer estándar, un MoE u otra variante). Tampoco se proporcionan datos sobre el dataset de entrenamiento, número de tokens, ni si se utilizó RLHF o DPO. Se menciona únicamente que la mejora proviene de un post-entrenamiento con más cómputo y optimizaciones algorítmicas, y que el modelo usa más tokens de razonamiento por pregunta (23K frente a 12K en la versión anterior en AIME 2025).
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ Además, en AIME 2025 la precisión es del 87,5% (frente al 70% de la versión a
 
 ## Requisitos de hardware
 
-No disponible. Al no existir datos sobre el número de parámetros, el tamaño del modelo ni la arquitectura, no es posible estimar la VRAM necesaria, las GPU recomendadas ni las opciones de despliegue. El repositorio de HuggingFace no contiene pesos (0.0 GB), por lo que no se puede ejecutar localmente en la actualidad.
+No disponible. Al no existir datos sobre el número de parámetros, el tamaño del modelo ni la arquitectura, no es posible estimar la VRAM necesaria, las GPU recomendadas ni las opciones de despliegue. El repositorio de Hugging Face no contiene pesos (0.0 GB), por lo que no se puede ejecutar localmente en la actualidad.
 
 ## Comparativa con modelos similares
 
@@ -77,13 +77,13 @@ No disponible. La model card menciona modelos de comparación (Model1, Model2, M
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no contiene los pesos del modelo. No se puede descargar ni ejecutar tal como está publicado.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no contiene los pesos del modelo. No se puede descargar ni ejecutar tal como está publicado.
 - No se especifican los idiomas soportados, a pesar de que la model card incluye benchmarks de traducción. Esto puede limitar su uso en aplicaciones multilingües.
 - La arquitectura y el número de parámetros no están documentados, lo que impide evaluar su eficiencia y requisitos de despliegue.
 - Los benchmarks presentados no identifican los modelos de comparación, por lo que su valor como referencia es limitado.
-- La mención del tag "bert" en HuggingFace puede resultar confusa, ya que las capacidades descritas (razonamiento profundo, generación de código) no se corresponden con un modelo BERT típico de codificación.
+- La mención del tag "bert" en Hugging Face puede resultar confusa, ya que las capacidades descritas (razonamiento profundo, generación de código) no se corresponden con un modelo BERT típico de codificación.
 - La licencia MIT permite el uso comercial, pero al no estar disponibles los pesos, la aplicabilidad real es nula en el estado actual del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SDCZX123WESWX/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SDCZX123WESWX/MyAwesomeModel-TestRepo

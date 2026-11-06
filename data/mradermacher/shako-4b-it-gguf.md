@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shako-4B-it-GGUF es la version cuantizada en formato GGUF del modelo anaspro/Shako-iraqi-4B-it, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones estaticas de modelos abiertos. Se trata de un ajuste fino orientado a conversacion en dialecto arabe iraqi, construido sobre una base de la familia Gemma 3n (segun el tag `gemma3n` de la model card) y entrenado con el dataset `anaspro/iraqi_dataset_100k`. El objetivo es ofrecer un asistente conversacional que entienda y genere arabe iraqi, un registro poco cubierto por los modelos multilingues genericos, manteniendo ademas competencia en ingles.
+Shako-4B-it-GGUF es la version cuantizada en formato GGUF del modelo anaspro/Shako-iraqi-4B-it, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estaticas de modelos abiertos. Se trata de un ajuste fino orientado a conversacion en dialecto arabe iraqi, construido sobre una base de la familia Gemma 3n (segun el tag `gemma3n` de la model card) y entrenado con el dataset `anaspro/iraqi_dataset_100k`. El objetivo es ofrecer un asistente conversacional que entienda y genere arabe iraqi, un registro poco cubierto por los modelos multilingues genericos, manteniendo ademas competencia en ingles.
 
 El repositorio contiene unicamente pesos cuantizados, no el modelo original: el autor del ajuste fino es anaspro y mradermacher solo realiza la conversion a GGUF y la generacion de las distintas variantes de cuantizacion. Aunque el nombre comercial del modelo indica "4B", el recuento real de parametros en safetensors es de 6.866.172.400, lo que es coherente con las arquitecturas tipo Gemma 3n, donde el numero de parametros efectivos difiere del total almacenado.
 
@@ -78,8 +78,8 @@ La informacion proporcionada solo permite comparar el repositorio cuantizado con
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Shako-4B-it-GGUF | 6.866.172.400 (total, segun safetensors del base) | no disponible | GGUF (f16 a Q2_K) | apache-2.0 | HuggingFace, 95 descargas, 1 like |
-| anaspro/Shako-iraqi-4B-it (base) | 6.866.172.400 | no disponible | safetensors | apache-2.0 | HuggingFace |
+| mradermacher/Shako-4B-it-GGUF | 6.866.172.400 (total, segun safetensors del base) | no disponible | GGUF (f16 a Q2_K) | apache-2.0 | Hugging Face, 95 descargas, 1 like |
+| anaspro/Shako-iraqi-4B-it (base) | 6.866.172.400 | no disponible | safetensors | apache-2.0 | Hugging Face |
 | Otros modelos de dialecto iraqi | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ La informacion proporcionada solo permite comparar el repositorio cuantizado con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Shako-4B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Shako-4B-it-GGUF
 - Modelo base: https://huggingface.co/anaspro/Shako-iraqi-4B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/anaspro/iraqi_dataset_100k
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#Shako-4B-it-GGUF

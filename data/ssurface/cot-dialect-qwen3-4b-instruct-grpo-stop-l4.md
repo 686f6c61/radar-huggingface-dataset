@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 - Inferencia: al ser un adaptador LoRA sobre un modelo denso de 4B, cabe en GPUs de consumo con 16 GB de VRAM (p. ej. RTX 4080/4090) en bfloat16; con cuantizacion de 8 o 4 bits puede ejecutarse en 8-12 GB.
 - Entrenamiento: se entreno con 1x NVIDIA A100 80GB; el coste de reproduccion es moderado dado el tamano del modelo base y los 6976 ejemplos.
-- Despliegue: compatible con el stack de HuggingFace `transformers` + `peft`; requiere cargar primero el adaptador SFT de nivel L4 (`ssurface/cot-dialect-qwen3-4b-instruct-sft-l4`), fusionarlo, y despues cargar este adaptador.
+- Despliegue: compatible con el stack de Hugging Face `transformers` + `peft`; requiere cargar primero el adaptador SFT de nivel L4 (`ssurface/cot-dialect-qwen3-4b-instruct-sft-l4`), fusionarlo, y despues cargar este adaptador.
 - Latencia: no disponible; el numero de tokens de salida es muy reducido (cadenas de ~41 caracteres), lo que sugiere latencias bajas en comparacion con cadenas de razonamiento completas.
 - Opciones de despliegue adicionales (vLLM, llama.cpp, Ollama, TGI): no documentadas para este adaptador especifico; el modelo base Qwen3-4B-Instruct-2507 es compatible con estos motores, pero la naturaleza de doble adaptador PEFT requiere fusion previa.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos (MMLU, HumanEval, GSM8K) para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-stop-l4
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-stop-l4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo principal del mismo nivel: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4
 - Adaptador SFT previo (obligatorio): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l4

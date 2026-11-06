@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `r18-a2-w13-kx-chrono5-w20-s160` es un checkpoint publicado en HuggingFace por el usuario `alfred8995` bajo licencia Apache 2.0 y acceso restringido (gated). Por la nomenclatura del identificador y la etiqueta `sn38-nanochrono`, todo apunta a un experimento de arquitectura propia o derivada de una familia denominada "nanochrono", probablemente orientada a modelos compactos con algun mecanismo temporal o cronologico. No se dispone de documentacion tecnica publica que describa el diseno, el dataset de entrenamiento ni el proceso de alineacion.
+El modelo `r18-a2-w13-kx-chrono5-w20-s160` es un checkpoint publicado en Hugging Face por el usuario `alfred8995` bajo licencia Apache 2.0 y acceso restringido (gated). Por la nomenclatura del identificador y la etiqueta `sn38-nanochrono`, todo apunta a un experimento de arquitectura propia o derivada de una familia denominada "nanochrono", probablemente orientada a modelos compactos con algun mecanismo temporal o cronologico. No se dispone de documentacion tecnica publica que describa el diseno, el dataset de entrenamiento ni el proceso de alineacion.
 
 El checkpoint contiene 2.018.511.234 parametros en formato safetensors (aproximadamente 2,02 mil millones), lo que lo situa en la categoria de modelos pequenos tipo SLM, comparables en orden de magnitud a Gemma 2B, Qwen2.5-1.5B o Phi-2. El repositorio ocupa 6,3 GB, coherente con pesos en precision bf16/fp16 sin cuantizar. No hay pipeline declarado, ni idiomas soportados, ni tarjeta de modelo con benchmarks.
 
@@ -79,7 +79,7 @@ La comparacion se limita a parametros y licencia, ya que no hay datos de rendimi
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay tarjeta de modelo, paper ni blog que describa arquitectura, datos o evaluacion.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier evaluacion.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier evaluacion.
 - Riesgo de alucinacion: desconocido, pero esperable en un modelo de 2B sin datos de alineacion publicados.
 - Sesgos conocidos: no disponibles; no se ha auditado el dataset de entrenamiento.
 - Limitaciones de contexto e idioma: se desconocen la ventana maxima y los idiomas cubiertos.
@@ -90,5 +90,5 @@ La comparacion se limita a parametros y licencia, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w20-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w20-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables dentro del mismo proyect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zondaxyz/babyconceptLM-Multilingual-matched
+- Modelo en Hugging Face: https://huggingface.co/zondaxyz/babyconceptLM-Multilingual-matched
 - Resultados de búsqueda web no proporcionan enlaces adicionales relevantes (solo catálogos genéricos de modelos).

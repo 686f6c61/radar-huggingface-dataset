@@ -71,7 +71,7 @@ Las cifras de memoria son estimaciones derivadas del numero de parametros y del 
 
 | Modelo | Parametros | Contexto | Cache KV por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (este repositorio) | 763 B totales; 8 B activos en prefill, 16 B en decode | 1.000.000 tokens | 890 bytes | MIT (declarada en repositorio de terceros) | Repositorio de terceros en HuggingFace, 0 descargas y 0 likes; org oficial no confirmada |
+| DeepSeek-V4.1-Flash (este repositorio) | 763 B totales; 8 B activos en prefill, 16 B en decode | 1.000.000 tokens | 890 bytes | MIT (declarada en repositorio de terceros) | Repositorio de terceros en Hugging Face, 0 descargas y 0 likes; org oficial no confirmada |
 | DeepSeek-V4-Flash | no disponible | no disponible | ~3.560 bytes (derivado de la reduccion de 4x indicada en la model card) | no disponible | no disponible |
 | DeepSeek-V1 | no disponible | no disponible | ~389.000 bytes (derivado de la reduccion de 437x indicada en la model card) | no disponible | no disponible |
 
@@ -93,9 +93,9 @@ No se dispone de datos de rendimiento ni de contexto de modelos comparables de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikigai84/DeepSeek-V4.1-Flash
+- Modelo en Hugging Face: https://huggingface.co/ikigai84/DeepSeek-V4.1-Flash
 - Informe tecnico referenciado en la model card (ruta declarada como deepseek-ai/DeepSeek-V4.1-Flash): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Perfil de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai

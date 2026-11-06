@@ -18,7 +18,7 @@ Es relevante ahora porque permite ejecutar un modelo de TTS de gran tamano en in
 | Longitud de contexto | No disponible (modelo de texto a voz; la unidad relevante sería la longitud máxima de texto de entrada, no documentada) |
 | Tipos de cuantización | Expertos en FP8 E4M3 con escalas de bloque; resto de pesos y códec de audio en FP32. En runtime, CTranslate2 admite `compute_type` (`default`, `int8`, `int8_float16`, `float16`) sujeto a la build personalizada |
 | Idiomas soportados | No disponible (la model card no declara lista de idiomas) |
-| Licencia | fish-audio-community-license (etiquetada como `other` en HuggingFace) |
+| Licencia | fish-audio-community-license (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | CTranslate2 (directorio de modelo binario con configuración), no safetensors ni GGUF |
 | Modelo base | fishaudio/drama-3 |
 | Pipeline | text-to-speech |
@@ -92,7 +92,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jordimas/drama-3-ct2
+- Modelo en Hugging Face: https://huggingface.co/jordimas/drama-3-ct2
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Fork de CTranslate2 con soporte Drama3: https://github.com/jordimas/CTranslate2
 - Fish Audio (desarrollador del modelo base): https://fish.audio

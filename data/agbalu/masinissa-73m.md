@@ -111,11 +111,11 @@ Desglose sin puntuación:
 
 | Modelo | Parámetros | Contexto | Elo KabEncBench | Licencia | Disponibilidad |
 |:---|:---:|:---:|:---:|:---|:---|
-| `agbalu/Masinissa-73M` | 73 M | No disponible | 1.953,7 | Apache 2.0 | HuggingFace |
-| `agbalu/Masinissa-31M` | 31 M | No disponible | 1.708,4 | No disponible en la información | HuggingFace |
-| `UBC-NLP/serengeti-E250` | 278 M | No disponible | 1.200,3 | No disponible en la información | HuggingFace |
-| `jhu-clsp/mmBERT-base` | 278 M | No disponible | 1.141,7 | No disponible en la información | HuggingFace |
-| `FacebookAI/xlm-roberta-base` | 278 M | 512 tokens (referencia estándar del modelo base) | 1.000,0 (ancla) | MIT (referencia del modelo original) | HuggingFace |
+| `agbalu/Masinissa-73M` | 73 M | No disponible | 1.953,7 | Apache 2.0 | Hugging Face |
+| `agbalu/Masinissa-31M` | 31 M | No disponible | 1.708,4 | No disponible en la información | Hugging Face |
+| `UBC-NLP/serengeti-E250` | 278 M | No disponible | 1.200,3 | No disponible en la información | Hugging Face |
+| `jhu-clsp/mmBERT-base` | 278 M | No disponible | 1.141,7 | No disponible en la información | Hugging Face |
+| `FacebookAI/xlm-roberta-base` | 278 M | 512 tokens (referencia estándar del modelo base) | 1.000,0 (ancla) | MIT (referencia del modelo original) | Hugging Face |
 
 La comparación relevante es de eficiencia: Masinissa-73M supera en Elo a `serengeti-E250` (278 M) y a `mmBERT-base` (278 M) con menos de una tercera parte de los parámetros, y la mayor diferencia se concentra en tareas específicas de la lengua como SIB-200 (64,87 frente a 43,72 y 37,96) y TaPaCo (64,38 frente a 42,55 y 48,63). En pares mínimos ortográficos, sin embargo, `afro-xlmr-base` obtiene 62,50 frente a 60,90 de Masinissa-73M, y `mmBERT-small` 61,00, por lo que la ventaja no es uniforme en todas las sondas.
 
@@ -134,7 +134,7 @@ La comparación relevante es de eficiencia: Masinissa-73M supera en Elo a `seren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Masinissa-73M
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Masinissa-73M
 - Modelo hermano Masinissa-31M: https://huggingface.co/agbalu/Masinissa-31M
 - Baseline `UBC-NLP/serengeti-E250`: https://huggingface.co/UBC-NLP/serengeti-E250
 - Baseline `Davlan/afro-xlmr-base-76L_script`: https://huggingface.co/Davlan/afro-xlmr-base-76L_script

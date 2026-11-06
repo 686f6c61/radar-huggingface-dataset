@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. El nombre del repositorio (`qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen2`) sugiere un experimento relacionado con el procesamiento de números y un posible colapso de representaciones, aunque no se proporciona ninguna documentación adicional que explique el propósito o la metodología del entrenamiento. El modelo se distribuye con licencia Apache 2.0 y está etiquetado únicamente para el idioma inglés.
+Este modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. El nombre del repositorio (`qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen2`) sugiere un experimento relacionado con el procesamiento de números y un posible colapso de representaciones, aunque no se proporciona ninguna documentación adicional que explique el propósito o la metodología del entrenamiento. El modelo se distribuye con licencia Apache 2.0 y está etiquetado únicamente para el idioma inglés.
 
 Se trata de un modelo de 7.000 millones de parámetros (heredado del modelo base Qwen2.5-7B), con arquitectura transformer decoder-only. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente se trata de un adaptador o de pesos en formato de baja precisión, aunque no se especifica el tipo de cuantización. No se han registrado descargas ni valoraciones, y la fecha de creación (agosto de 2026) es posterior a la fecha actual, lo que sugiere que podría tratarse de un artefacto de investigación o de un experimento automatizado.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada fuera del contexto de investigación: n
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una version optimizada de Qwen2.5-7B-Instruct. La arquitectura subyacente es la de Qwen2.5: un transformer decoder-only con atencion por ventanas deslizantes y atencion global alternada, normalizacion RMSNorm, y activacion SwiGLU. El entrenamiento se realizo con la libreria Unsloth (que acelera el fine-tuning mediante kernels optimizados) y la libreria TRL de HuggingFace, segun indica la model card.
+El modelo es un fine-tune de `unsloth/Qwen2.5-7B-Instruct`, que a su vez es una version optimizada de Qwen2.5-7B-Instruct. La arquitectura subyacente es la de Qwen2.5: un transformer decoder-only con atencion por ventanas deslizantes y atencion global alternada, normalizacion RMSNorm, y activacion SwiGLU. El entrenamiento se realizo con la libreria Unsloth (que acelera el fine-tuning mediante kernels optimizados) y la libreria TRL de Hugging Face, segun indica la model card.
 
 No se proporciona informacion sobre el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje ni ninguna otra hiperparametro. El nombre del repositorio sugiere un experimento con secuencias de numeros y un posible colapso de representaciones, pero no hay documentacion que lo confirme. Tampoco se indica si se utilizaron tecnicas como RLHF o DPO.
 
@@ -64,9 +64,9 @@ Existen otros modelos publicados por el mismo autor con nombres similares, como 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 7B (base) | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7B | 32 768 | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 131 072 | Llama 3 license | HuggingFace |
+| Este modelo | 7B (base) | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7B | 32 768 | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 131 072 | Llama 3 license | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ Existen otros modelos publicados por el mismo autor con nombres similares, como 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen2
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen2
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

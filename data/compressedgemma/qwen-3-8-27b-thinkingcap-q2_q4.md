@@ -81,6 +81,6 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q2_Q4
+- Repositorio Hugging Face: https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q2_Q4
 - Imagen de ejemplo del teseracto: https://cdn-uploads.huggingface.co/production/uploads/69de1a493a21cb7c029dc694/9hCGdVUVhOXVykCItpdTc.png
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

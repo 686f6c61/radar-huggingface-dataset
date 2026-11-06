@@ -76,7 +76,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nota-ai/Nemotron-3.5-Lightning-30B-A3B-NVFP4-Global-Pruned-15
+- Modelo en Hugging Face: https://huggingface.co/nota-ai/Nemotron-3.5-Lightning-30B-A3B-NVFP4-Global-Pruned-15
 - Modelo base cuantizado: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Cookbook de uso en GitHub: https://github.com/NVIDIA-NeMo/Nemotron/tree/main/usage-cookbook/Nemotron-3.5-Lightning

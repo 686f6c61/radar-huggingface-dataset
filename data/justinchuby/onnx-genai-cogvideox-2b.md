@@ -79,7 +79,7 @@ No hay información sobre otros modelos de texto a video exportados a ONNX con e
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/justinchuby/onnx-genai-cogvideox-2b)
+- [Repositorio de Hugging Face](https://huggingface.co/justinchuby/onnx-genai-cogvideox-2b)
 - [Repositorio GitHub de onnx-genai](https://github.com/justinchuby/onnx-genai)
 - [Repositorio GitHub de onnx-genai-models](https://github.com/justinchuby/onnx-genai-models)
 - [Modelo original zai-org/CogVideoX-2b](https://huggingface.co/zai-org/CogVideoX-2b)

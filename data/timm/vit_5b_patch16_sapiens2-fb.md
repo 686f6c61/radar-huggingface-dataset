@@ -84,7 +84,7 @@ La comparativa se limita a los modelos de la familia Sapiens2, ya que no se disp
 
 ## Enlaces
 
-- HuggingFace (repo): https://huggingface.co/timm/vit_5b_patch16_sapiens2.fb
+- Hugging Face (repo): https://huggingface.co/timm/vit_5b_patch16_sapiens2.fb
 - Modelo base original: https://huggingface.co/facebook/sapiens2-pretrain-5b
 - Paper (arXiv): https://arxiv.org/pdf/2604.21681
 - Página del proyecto: https://rawalkhirodkar.github.io/sapiens2

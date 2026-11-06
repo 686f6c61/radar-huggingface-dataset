@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baisalovar/Tynda-ASR-kk-ru
+- Modelo en Hugging Face: https://huggingface.co/baisalovar/Tynda-ASR-kk-ru
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - KSC2 (Kazakh Speech Corpus 2): https://doi.org/10.48342/m90y-aj02

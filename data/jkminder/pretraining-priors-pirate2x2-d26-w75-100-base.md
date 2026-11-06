@@ -23,7 +23,7 @@ El modelo resuelve un problema de investigación: cómo alinear o condicionar el
 
 El modelo usa una arquitectura transformer decoder de 26 capas (tipo nanochat), entrenado con una secuencia de 2048 tokens. El dataset de preentrenamiento es `ClimbMix`, un corpus de entrenamiento generalista, sobre el cual se insertan cuatro corpus "pirate 2x2" (procedentes del dataset `Eugleo/pretraining-priors-pirate-2x2`). Cada corpus contiene 346.112 documentos de entrenamiento, sumando un total de 1.384.448 documentos y 388.109.202 tokens, que representan el 4,23% del stream total de 9.184.215.040 tokens.
 
-La inserción se realiza de forma uniforme dentro de la ventana del 75-100% de los pasos de entrenamiento (frente al arm de referencia exp-056, que la hacía durante todo el entrenamiento). El modelo se entrenó en 8 GPUs H200 durante 8.758 pasos. La conversión a formato HuggingFace se verificó con equivalencia exacta de logits (diferencia máxima absoluta 0,00) y de pérdida en bits por token (bpb) frente al checkpoint original de nanochat: valor convertido 0,723753 vs. valor de entrenamiento 0,723735. No se menciona el uso de RLHF ni DPO; el comportamiento deseado se instala directamente durante el preentrenamiento.
+La inserción se realiza de forma uniforme dentro de la ventana del 75-100% de los pasos de entrenamiento (frente al arm de referencia exp-056, que la hacía durante todo el entrenamiento). El modelo se entrenó en 8 GPUs H200 durante 8.758 pasos. La conversión a formato Hugging Face se verificó con equivalencia exacta de logits (diferencia máxima absoluta 0,00) y de pérdida en bits por token (bpb) frente al checkpoint original de nanochat: valor convertido 0,723753 vs. valor de entrenamiento 0,723735. No se menciona el uso de RLHF ni DPO; el comportamiento deseado se instala directamente durante el preentrenamiento.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ La inserción se realiza de forma uniforme dentro de la ventana del 75-100% de l
 - Análisis de interpretabilidad de circuitos: permite localizar qué capas o cabezas de atención se activan cuando el modelo detecta una petición pirata, comparándolo con el modelo base sin el prior plantado.
 - Estudio de la dinámica de ventanas de entrenamiento: comparar este arm (ventana 75-100%) con el anchor (ventana completa) para medir el efecto de la fase del entrenamiento en la instalación de priors.
 - Benchmark de evaluación de "persona" en modelos: sirve como caso de prueba para medir la consistencia de la personalidad en diferentes formulaciones de prompt (62 phrasings).
-- Verificación de conversión de formatos: el modelo incluye archivos de verificación (`verify_results.json`) que demuestran la equivalencia exacta entre el checkpoint original y la conversión a HuggingFace, útil como referencia para pipelines de conversión.
+- Verificación de conversión de formatos: el modelo incluye archivos de verificación (`verify_results.json`) que demuestran la equivalencia exacta entre el checkpoint original y la conversión a Hugging Face, útil como referencia para pipelines de conversión.
 - Educación en alineación: como ejemplo didáctico de cómo se pueden insertar comportamientos específicos durante el preentrenamiento, en lugar de hacerlo en el post-entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 - VRAM estimada: con 972,9 millones de parámetros en bf16, la inferencia requiere aproximadamente 2 GB de VRAM solo para pesos (sin cuantización). Con contexto de 2048 tokens, la memoria total necesaria ronda los 2,5-3 GB en GPU.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Puede ejecutarse en una RTX 3060, RTX 4070, o incluso en CPU con suficiente RAM (aunque con mayor latencia). El entrenamiento se realizó en 8×H200, pero la inferencia es ligera.
-- Opciones de despliegue: al ser un modelo de investigación con `trust_remote_code=True`, es compatible con HuggingFace Transformers. No se reporta soporte para vLLM, llama.cpp u Ollama en la documentación, aunque al ser un transformer estándar podría adaptarse con conversión adicional.
+- Opciones de despliegue: al ser un modelo de investigación con `trust_remote_code=True`, es compatible con Hugging Face Transformers. No se reporta soporte para vLLM, llama.cpp u Ollama en la documentación, aunque al ser un transformer estándar podría adaptarse con conversión adicional.
 - Latencia y throughput: no hay datos publicados. En una GPU moderna, se espera una latencia por token en el rango de milisegundos, pero no se ha verificado.
 
 ## Comparativa con modelos similares

@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks comparativos publicados para esta voz frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thewh1teagle/piper-he-noa
+- Modelo en Hugging Face: https://huggingface.co/thewh1teagle/piper-he-noa
 - Piper (OHF-Voice): https://github.com/OHF-Voice/piper1-gpl
 - renikud (conversión de hebreo a IPA acentuado): https://renikud.github.io
 - Chatterbox (generador de datos de voz): https://github.com/resemble-ai/chatterbox

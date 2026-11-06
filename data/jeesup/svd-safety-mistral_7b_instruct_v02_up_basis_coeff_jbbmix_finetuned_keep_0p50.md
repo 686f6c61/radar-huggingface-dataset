@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es un artefacto de investigacion publicado por el usuario Jeesup en HuggingFace: se trata de `mistralai/Mistral-7B-Instruct-v0.2` comprimido al 50 % mediante la tecnica Basis Sharing del repositorio `TUDa-HWAI/Basis_Sharing`, y posteriormente recuperado con un LoRA entrenado exclusivamente sobre los coeficientes de la descomposicion. El objetivo no es ofrecer un modelo listo para produccion, sino medir como afecta la compresion agresiva al comportamiento de rechazo (refusal) ante peticiones daninas.
+Este checkpoint es un artefacto de investigacion publicado por el usuario Jeesup en Hugging Face: se trata de `mistralai/Mistral-7B-Instruct-v0.2` comprimido al 50 % mediante la tecnica Basis Sharing del repositorio `TUDa-HWAI/Basis_Sharing`, y posteriormente recuperado con un LoRA entrenado exclusivamente sobre los coeficientes de la descomposicion. El objetivo no es ofrecer un modelo listo para produccion, sino medir como afecta la compresion agresiva al comportamiento de rechazo (refusal) ante peticiones daninas.
 
 La innovacion del experimento esta en el conjunto de calibracion: ademas de 256 secuencias de WikiText-2 de 2048 tokens con semilla 42, se anaden 2 secuencias empaquetadas con los 100 comportamientos daninos de JailbreakBench (`jbb_harmful:2`, solo prompt y cabecera de asistente, sin respuesta), que representan el 0,78 % de los tokens de calibracion. Esta "rama de linea base con datos de seguridad" sirve para comprobar si mezclar datos de seguridad en la fase de calibracion preserva la capacidad de rechazo tras la compresion.
 
@@ -16,7 +16,7 @@ El resultado es un checkpoint con formas densas de Mistral (carga con `transform
 | Parametros totales | 7.241.732.096 (7,24 mil millones) |
 | Longitud de contexto | 32.768 tokens heredados del modelo base; Mistral-7B-Instruct-v0.2 no usa sliding window (verificado en la model card: logits identicos cargando como `LlamaForCausalLM` y `MistralForCausalLM`, diferencia maxima 0,0 en float32 hasta 600 tokens) |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada; el checkpoint se publica en safetensors con formas densas, por lo que admite cuantizacion posterior con herramientas estandar |
-| Idiomas soportados | No declarados en la ficha de HuggingFace; el modelo base Mistral-7B-Instruct-v0.2 declara ingles, frances, italiano, aleman y espanol |
+| Idiomas soportados | No declarados en la ficha de Hugging Face; el modelo base Mistral-7B-Instruct-v0.2 declara ingles, frances, italiano, aleman y espanol |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (formas densas de Mistral, cargable con `transformers` estandar; el checkpoint publicado es un `MistralForCausalLM` normal). Tamano del repositorio: 14,5 GB |
 | Fraccion de parametros realizada | 0,4998967097355769 (50 % de parametros eliminados) |
@@ -87,8 +87,8 @@ Metodologia declarada: perplejidad en WikiText-2; ARC-Easy/Challenge, HellaSwag,
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-...keep_0p50`) | 7,24 mil millones (fraccion realizada 0,4999, denso en disco) | 32.768 tokens | apache-2.0 | Perplejidad WikiText-2 11,2805; ARC-Easy 0,5808; HellaSwag 0,5541; ASR AdvBench 0,4462 | HuggingFace, 0 descargas y 0 likes |
-| `mistralai/Mistral-7B-Instruct-v0.2` (modelo base) | 7,24 mil millones | 32.768 tokens | apache-2.0 | No disponible en la informacion proporcionada | HuggingFace, ampliamente distribuido |
+| Este checkpoint (`svd-safety-...keep_0p50`) | 7,24 mil millones (fraccion realizada 0,4999, denso en disco) | 32.768 tokens | apache-2.0 | Perplejidad WikiText-2 11,2805; ARC-Easy 0,5808; HellaSwag 0,5541; ASR AdvBench 0,4462 | Hugging Face, 0 descargas y 0 likes |
+| `mistralai/Mistral-7B-Instruct-v0.2` (modelo base) | 7,24 mil millones | 32.768 tokens | apache-2.0 | No disponible en la informacion proporcionada | Hugging Face, ampliamente distribuido |
 | Celda Basis Sharing sin mezcla de seguridad, mismo ratio | 7,24 mil millones (misma fraccion realizada, segun la model card) | 32.768 tokens | apache-2.0 (heredada) | No disponible en la informacion proporcionada | Referenciada en la model card como celda de control; URL no disponible |
 
 No se dispone de datos de benchmarks del modelo base ni de la celda de control en la informacion proporcionada, por lo que no es posible cuantificar la perdida de rendimiento atribuible a la compresion ni al uso de datos de seguridad en la calibracion.
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks del modelo base ni de la celda de control e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_basis_coeff_jbbmix_finetuned_keep_0p50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_basis_coeff_jbbmix_finetuned_keep_0p50
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Codigo de Basis Sharing (commit `1c021b6ce1d3`): https://github.com/TUDa-HWAI/Basis_Sharing
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a la Universidad de Stanford y no guardan relacion con el modelo.

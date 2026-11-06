@@ -74,8 +74,8 @@ No se han encontrado datos públicos de benchmarks comparativos entre estos enfo
 
 ## Enlaces
 
-- Repositorio HuggingFace (AMAImedia): https://huggingface.co/AMAImedia/Kimi-K3-speculator-dspark
-- Repositorio HuggingFace original (Red Hat AI): https://huggingface.co/RedHatAI/Kimi-K3-speculator.dspark
+- Repositorio Hugging Face (AMAImedia): https://huggingface.co/AMAImedia/Kimi-K3-speculator-dspark
+- Repositorio Hugging Face original (Red Hat AI): https://huggingface.co/RedHatAI/Kimi-K3-speculator.dspark
 - Modelo base Kimi-K3: https://huggingface.co/moonshotai/Kimi-K3
 - Repositorio de Kimi-K3 en GitHub: https://github.com/MoonshotAI/Kimi-K3
 - Librería Speculators de vLLM: https://github.com/vllm-project/speculators

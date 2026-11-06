@@ -59,7 +59,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ducer/lab22-sft-mini-adapter
+- Repositorio Hugging Face: https://huggingface.co/ducer/lab22-sft-mini-adapter
 - Repositorio similar: https://huggingface.co/nhuyhoan2004/lab22-sft-mini
 - Repositorio similar: https://huggingface.co/wanhin/lab22-sft-mini
 - Notebook de entrenamiento (GitHub): https://github.com/ltlongg/Lab22_2A202600105/blob/main/notebooks/01_sft_mini.py

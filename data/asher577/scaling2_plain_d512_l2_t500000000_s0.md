@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d512_L2_t500000000_s0` es un transformer de investigación publicado por el usuario asher577 en HuggingFace, entrenado siguiendo el procedimiento descrito por Gao et al. (2025) para transformers con dispersión de pesos (*weight-sparse transformers*). No se trata de un modelo de propósito general ni de un producto listo para producción, sino de un artefacto experimental dentro de un estudio de escalado sobre arquitecturas con dispersión estructural en los pesos y en las activaciones.
+`scaling2_plain_d512_L2_t500000000_s0` es un transformer de investigación publicado por el usuario asher577 en Hugging Face, entrenado siguiendo el procedimiento descrito por Gao et al. (2025) para transformers con dispersión de pesos (*weight-sparse transformers*). No se trata de un modelo de propósito general ni de un producto listo para producción, sino de un artefacto experimental dentro de un estudio de escalado sobre arquitecturas con dispersión estructural en los pesos y en las activaciones.
 
 El modelo es deliberadamente pequeño: 2 capas, dimensión de modelo de 512, dimensión de cabeza de 16 y un vocabulario de solo 4096 tokens. Su longitud de contexto es de 512 tokens. El nombre del repositorio codifica los hiperparámetros clave del experimento: dimensión 512, 2 capas, 500 millones de tokens de entrenamiento y semilla 0.
 
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asher577/scaling2_plain_d512_L2_t500000000_s0
+- Hugging Face: https://huggingface.co/asher577/scaling2_plain_d512_L2_t500000000_s0
 - Run de Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/srjns1s6
 - Dataset: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizer: https://huggingface.co/SimpleStories/SimpleStories-1.25M

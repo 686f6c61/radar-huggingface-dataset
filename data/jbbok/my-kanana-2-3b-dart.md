@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jbbok/my-kanana-2-3b-dart` es un modelo de embeddings de frases (sentence embeddings) obtenido por fine-tuning del modelo base `kakaocorp/kanana-2-3b-embedding`, desarrollado por Kakao Corp. El autor del ajuste es el usuario de HuggingFace Jbbok, y el modelo está publicado bajo la librería `sentence-transformers` con el pipeline `sentence-similarity`. Su propósito es la recuperación semántica densa (dense retrieval) sobre documentación financiera y regulatoria coreana, en concreto sobre informes anuales (사업보고서) de empresas cotizadas, incluyendo el sistema DART de divulgación electrónica de Corea del Sur.
+`Jbbok/my-kanana-2-3b-dart` es un modelo de embeddings de frases (sentence embeddings) obtenido por fine-tuning del modelo base `kakaocorp/kanana-2-3b-embedding`, desarrollado por Kakao Corp. El autor del ajuste es el usuario de Hugging Face Jbbok, y el modelo está publicado bajo la librería `sentence-transformers` con el pipeline `sentence-similarity`. Su propósito es la recuperación semántica densa (dense retrieval) sobre documentación financiera y regulatoria coreana, en concreto sobre informes anuales (사업보고서) de empresas cotizadas, incluyendo el sistema DART de divulgación electrónica de Corea del Sur.
 
 El ajuste se ha realizado sobre un conjunto de datos de 3.687 ejemplos, empleando las funciones de pérdida `CachedMultipleNegativesRankingLoss` y `MultipleNegativesRankingLoss`, típicas del entrenamiento de recuperadores densos. El modelo base aporta 3.000 millones de parámetros y una arquitectura transformer de tipo decoder adaptada a la extracción de representaciones vectoriales; el resultado es un encoder de 3B parámetros orientado a similitud semántica en coreano.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jbbok/my-kanana-2-3b-dart` | 3B (según base) | no disponible | Embeddings financieros en coreano (DART) | no disponible | HuggingFace, 0 descargas |
-| `kakaocorp/kanana-2-3b-embedding` | 3B | no disponible | Embeddings generales en coreano | no disponible en esta ficha | HuggingFace |
-| Sentence-BERT multilingüe (p. ej. `paraphrase-multilingual-mpnet-base-v2`) | ~278M | 384 tokens típicamente | Embeddings multilingües generales | Apache-2.0 (habitual) | HuggingFace, ampliamente usado |
-| `BAAI/bge-m3` | ~568M | 8.192 tokens | Embeddings multilingües, densos y dispersos | MIT (habitual) | HuggingFace, ampliamente usado |
+| `Jbbok/my-kanana-2-3b-dart` | 3B (según base) | no disponible | Embeddings financieros en coreano (DART) | no disponible | Hugging Face, 0 descargas |
+| `kakaocorp/kanana-2-3b-embedding` | 3B | no disponible | Embeddings generales en coreano | no disponible en esta ficha | Hugging Face |
+| Sentence-BERT multilingüe (p. ej. `paraphrase-multilingual-mpnet-base-v2`) | ~278M | 384 tokens típicamente | Embeddings multilingües generales | Apache-2.0 (habitual) | Hugging Face, ampliamente usado |
+| `BAAI/bge-m3` | ~568M | 8.192 tokens | Embeddings multilingües, densos y dispersos | MIT (habitual) | Hugging Face, ampliamente usado |
 
 La comparativa con los modelos multilingües genéricos es aproximada: no hay métricas publicadas que permitan afirmar que este fine-tuning supera a `bge-m3` o a los modelos SBERT en recuperación sobre coreano financiero. La ventaja esperada es la especialización de dominio; la desventaja, el mayor coste computacional (3B frente a cientos de millones de parámetros) y la ausencia de licencia declarada.
 
@@ -84,7 +84,7 @@ La comparativa con los modelos multilingües genéricos es aproximada: no hay m�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jbbok/my-kanana-2-3b-dart
+- Modelo en Hugging Face: https://huggingface.co/Jbbok/my-kanana-2-3b-dart
 - Modelo base: https://huggingface.co/kakaocorp/kanana-2-3b-embedding
 - Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - CachedMultipleNegativesRankingLoss (arXiv:2101.06983): https://arxiv.org/abs/2101.06983

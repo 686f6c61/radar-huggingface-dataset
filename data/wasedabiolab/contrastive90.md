@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wasedabiolab/contrastive90` es un repositorio de HuggingFace publicado por el usuario wasedabiolab que contiene una implementación propia en PyTorch de una arquitectura DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. No es un modelo entrenado ni un release de producción: la propia model card lo define como un artefacto "compacto y personalizado" destinado a revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El repositorio incluye `main.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito explícitamente como checkpoint de inicialización válido para pruebas, no como checkpoint entrenado ni evaluado.
+`wasedabiolab/contrastive90` es un repositorio de Hugging Face publicado por el usuario wasedabiolab que contiene una implementación propia en PyTorch de una arquitectura DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. No es un modelo entrenado ni un release de producción: la propia model card lo define como un artefacto "compacto y personalizado" destinado a revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El repositorio incluye `main.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito explícitamente como checkpoint de inicialización válido para pruebas, no como checkpoint entrenado ni evaluado.
 
 El dato más relevante es su tamaño real: el recuento de parámetros de los pesos safetensors es de 24.832 parámetros (veinticuatro mil ochocientos treinta y dos). Eso contrasta de forma llamativa con la configuración declarada en la model card, que indica escala "large" para DeiT, ya que cualquier variante DeiT de referencia en escala *large* maneja decenas o cientos de millones de parámetros. Se trata, por tanto, de un esqueleto arquitectónico mínimo, no de un modelo con capacidad representacional útil tal y como se distribuye.
 
@@ -79,11 +79,11 @@ La model card indica de forma explicita que no se reclama ninguna puntuacion de 
 
 | Modelo | Parametros | Resolucion / contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| contrastive90 (este repositorio) | 24.832 | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | No se reclama ningun benchmark |
+| contrastive90 (este repositorio) | 24.832 | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | No se reclama ningun benchmark |
 | DeiT-Tiny (referencia externa, no verificada) | Aprox. 5,7 M | 224 x 224 px en la publicacion original | Apache 2.0 | Pesos entrenados publicos | No disponible en la informacion proporcionada |
 | DeiT-Small (referencia externa, no verificada) | Aprox. 22 M | 224 x 224 px en la publicacion original | Apache 2.0 | Pesos entrenados publicos | No disponible en la informacion proporcionada |
 | DeiT-Base (referencia externa, no verificada) | Aprox. 86 M | 224 x 224 px en la publicacion original | Apache 2.0 | Pesos entrenados publicos | No disponible en la informacion proporcionada |
-| `josephhjh/nlp-contrastive90` | No disponible | No disponible | No disponible | HuggingFace | No se reclama ningun benchmark |
+| `josephhjh/nlp-contrastive90` | No disponible | No disponible | No disponible | Hugging Face | No se reclama ningun benchmark |
 
 Nota: las cifras de las variantes DeiT de referencia proceden de conocimiento general sobre la familia DeiT y no de la informacion proporcionada en esta busqueda; deben verificarse en las fuentes originales antes de citarlas. La unica comparacion estrictamente verificable aqui es que este repositorio no ofrece pesos entrenados, mientras que las variantes DeiT de referencia si los publican. El segundo repositorio listado comparte literalmente el mismo texto de model card, lo que apunta a una plantilla comun mas que a un linaje de modelos.
 
@@ -102,8 +102,8 @@ Nota: las cifras de las variantes DeiT de referencia proceden de conocimiento ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wasedabiolab/contrastive90
-- Perfil del autor en HuggingFace: https://huggingface.co/wasedabiolab
+- Repositorio Hugging Face: https://huggingface.co/wasedabiolab/contrastive90
+- Perfil del autor en Hugging Face: https://huggingface.co/wasedabiolab
 - Repositorio con model card identica en otra cuenta: https://huggingface.co/josephhjh/nlp-contrastive90
 - Revision sistematica sobre aprendizaje contrastivo en IA medica (MDPI): https://www.mdpi.com/2306-5354/13/2/176
 - Analisis de modelos de IA biologica de Epoch AI: https://epoch.ai/publications/expanding-our-analysis-of-biological-ai-models

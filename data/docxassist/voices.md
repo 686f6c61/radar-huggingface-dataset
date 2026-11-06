@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo ni de otras alternativas (Pipe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DocXAssist/voices
+- Repositorio en Hugging Face: https://huggingface.co/DocXAssist/voices
 - Aplicación DocXAssist: https://docxassist.com
 - Kokoro-82M (hexgrad): https://huggingface.co/hexgrad/Kokoro-82M
 - Kokoro-82M v1.0 ONNX (onnx-community): https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX

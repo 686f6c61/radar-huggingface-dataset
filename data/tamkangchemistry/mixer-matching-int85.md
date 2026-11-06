@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tamkangchemistry/mixer-matching-int85` es un prototipo de investigación de tipo **Mixer** orientado a tareas de *matching*, publicado por el usuario de HuggingFace `tamkangchemistry`. No es un modelo de lenguaje entrenado ni un checkpoint con rendimiento verificado: la propia model card lo describe como un punto de partida experimental cuyo fichero `model.safetensors` es únicamente una **inicialización válida para pruebas de humo** (*smoke tests*), no un checkpoint evaluado. El repositorio no reclama ninguna puntuación de benchmark.
+`tamkangchemistry/mixer-matching-int85` es un prototipo de investigación de tipo **Mixer** orientado a tareas de *matching*, publicado por el usuario de Hugging Face `tamkangchemistry`. No es un modelo de lenguaje entrenado ni un checkpoint con rendimiento verificado: la propia model card lo describe como un punto de partida experimental cuyo fichero `model.safetensors` es únicamente una **inicialización válida para pruebas de humo** (*smoke tests*), no un checkpoint evaluado. El repositorio no reclama ninguna puntuación de benchmark.
 
 El dato más relevante es su escala real: **49.600 parámetros totales** según el recuento de safetensors, lo que lo sitúa en el rango de los juguetes de arquitectura (por debajo de cualquier SLM útil en producción). La etiqueta `xlarge` que aparece en la model card corresponde a un ajuste nominal de configuración, no a un tamaño real de parámetros; con 49,6 mil parámetros el modelo es entrenable y ejecutable en CPU en milisegundos.
 
@@ -70,7 +70,7 @@ La model card afirma de forma explícita que "no se reclama ninguna puntuación 
 - **Cabe en GPU de consumo**: sí, en cualquier GPU de consumo actual e incluso en entornos sin GPU. No hay requisito de VRAM documentado.
 - **Opciones de despliegue**: PyTorch con el script `finetune.py` del propio repositorio. La model card indica que, al ser una implementación personalizada, las APIs genéricas de carga automática necesitan un adaptador explícito. No hay soporte documentado para vLLM, llama.cpp, Ollama, TGI ni conversión a GGUF.
 - **Latencia y throughput estimados**: no disponible. No se publican mediciones de latencia ni de tokens por segundo; además, no se documenta un tokenizador que permita definir la unidad de throughput.
-- **Requisitos de almacenamiento**: el repositorio ocupa 0,0 GB según HuggingFace, con pesos del orden de cientos de kilobytes.
+- **Requisitos de almacenamiento**: el repositorio ocupa 0,0 GB según Hugging Face, con pesos del orden de cientos de kilobytes.
 
 ## Comparativa con modelos similares
 
@@ -93,5 +93,5 @@ A efectos prácticos, el modelo no es comparable con LLM de producción de ning�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tamkangchemistry/mixer-matching-int85
+- Modelo en Hugging Face: https://huggingface.co/tamkangchemistry/mixer-matching-int85
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relacionado con este modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a páginas de modelos Gemini de Google DeepMind y no guardan relación con `tamkangchemistry/mixer-matching-int85`.

@@ -54,7 +54,7 @@ La comparación se hace con modelos EfficientFormer preentrenados de Snap Resear
 
 | Modelo | Parámetros | Contexto | Rendimiento ImageNet-1K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| devirajesh/efficientformer-finetuned (este) | 49.600 | no disponible | no entrenado | BSD-3-Clause | HuggingFace |
+| devirajesh/efficientformer-finetuned (este) | 49.600 | no disponible | no entrenado | BSD-3-Clause | Hugging Face |
 | EfficientFormer-L1 (Snap Research) | 12.9M | imagen 224x224 | 79.2% top-1 | Apache-2.0 | GitHub, HF |
 | EfficientFormer-L7 (Snap Research) | 82.9M | imagen 224x224 | 83.3% top-1 | Apache-2.0 | GitHub, HF |
 | EfficientFormerV2-S0 | ~3.6M | imagen 224x224 | ~77.6% top-1 | Apache-2.0 | GitHub, HF |
@@ -70,8 +70,8 @@ Nota: los datos de EfficientFormer-L1, L7 y V2-S0 provienen de la documentación
 - **Advertencia de producción**: no usar en producción sin entrenar y evaluar correctamente.
 
 ## Enlaces
-- HuggingFace del modelo: https://huggingface.co/devirajesh/efficientformer-finetuned
-- Documentación de EfficientFormer en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.50.0/en/model_doc/efficientformer
+- Hugging Face del modelo: https://huggingface.co/devirajesh/efficientformer-finetuned
+- Documentación de EfficientFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.50.0/en/model_doc/efficientformer
 - Repositorio oficial de EfficientFormer (Snap Research): https://github.com/snap-research/EfficientFormer
 - Página de EfficientFormer en Qualcomm AI Hub: https://aihub.qualcomm.com/models/efficientformer
 - Documentación de MMClassification sobre EfficientFormer: https://mmclassification.readthedocs.io/en/dev-1.x/papers/efficientformer.html</think>## Resumen
@@ -125,10 +125,10 @@ Se compara con modelos EfficientFormer preentrenados de Snap Research, que son l
 
 | Modelo | Parametros | Contexto | Rendimiento ImageNet-1K | Licencia | Disponibilidad |
 |--------|------------|----------|------------------------|----------|----------------|
-| devirajesh/efficientformer-finetuned (este) | 49.600 | 0 (sin texto) | no entrenado | BSD-3-Clause | HuggingFace |
-| EfficientFormer-L1 (Snap Research) | ~12.9M | imagen 224x224 | 79.2% top-1 | Apache-2.0 | GitHub, HuggingFace |
-| EfficientFormer-L7 (Snap Research) | ~82.9M | imagen 224x224 | 83.3% top-1 | Apache-2.0 | GitHub, HuggingFace |
-| EfficientFormerV2-S0 | ~3.6M | imagen 224x224 | ~77.6% top-1 | Apache-2.0 | GitHub, HuggingFace |
+| devirajesh/efficientformer-finetuned (este) | 49.600 | 0 (sin texto) | no entrenado | BSD-3-Clause | Hugging Face |
+| EfficientFormer-L1 (Snap Research) | ~12.9M | imagen 224x224 | 79.2% top-1 | Apache-2.0 | GitHub, Hugging Face |
+| EfficientFormer-L7 (Snap Research) | ~82.9M | imagen 224x224 | 83.3% top-1 | Apache-2.0 | GitHub, Hugging Face |
+| EfficientFormerV2-S0 | ~3.6M | imagen 224x224 | ~77.6% top-1 | Apache-2.0 | GitHub, Hugging Face |
 
 Nota: los datos de EfficientFormer-L1, L7 y V2-S0 provienen de la documentación de Snap Research. Este repositorio no tiene relación con esos modelos.
 
@@ -141,8 +141,8 @@ Nota: los datos de EfficientFormer-L1, L7 y V2-S0 provienen de la documentación
 - **Advertencia para producción**: no usar en producción sin entrenar y evaluar correctamente.
 
 ## Enlaces
-- [HuggingFace del modelo](https://huggingface.co/devirajesh/efficientformer-finetuned)
-- [Documentación de EfficientFormer en HuggingFace Transformers](https://huggingface.co/docs/transformers/v4.50.0/en/model_doc/efficientformer)
+- [Hugging Face del modelo](https://huggingface.co/devirajesh/efficientformer-finetuned)
+- [Documentación de EfficientFormer en Hugging Face Transformers](https://huggingface.co/docs/transformers/v4.50.0/en/model_doc/efficientformer)
 - [Repositorio oficial de EfficientFormer (Snap Research)](https://github.com/snap-research/EfficientFormer)
 - [Página de EfficientFormer en Qualcomm AI Hub](https://aihub.qualcomm.com/models/efficientformer)
 - [Documentación de MMClassification sobre EfficientFormer](https://mmclassification.readthedocs.io/en/dev-1.x/papers/efficientformer.html)

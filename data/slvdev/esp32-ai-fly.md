@@ -32,7 +32,7 @@ Otros datos del paquete:
 | Amplitud de entrada para ojo completamente en looming | 0,8 |
 | Umbral de escape sobre la media de salida de un lado | 0,05 |
 | Poblacion anotada de partida tras el filtro | 166.700 celulas |
-| Tamano del repositorio en HuggingFace | 0,1 GB |
+| Tamano del repositorio en Hugging Face | 0,1 GB |
 
 ## Arquitectura y entrenamiento
 
@@ -51,7 +51,7 @@ La innovacion tecnica esta en la cadena de compresion y verificacion mas que en 
 - Ejecucion autonoma de todo el sistema en placa: grafo, circuito, mundo simulado y pantalla OLED, sin ordenador participante durante la ejecucion.
 - Reproducibilidad numerica: casos de referencia en dispositivo para el grafo y para el escape, con tolerancias explicitas y evidencia de validacion en `validation/`.
 - Trazabilidad de datos: `SOURCE_DATA.json` y `ATTRIBUTION.md` registran version del dataset, ficheros de origen, credito y historial de modificaciones.
-- No dispone de generacion de texto, razonamiento, codigo, matematicas, vision artificial, tool calling, function calling, soporte de agentes, capacidades multilingues ni modo de pensamiento. La model card no declara pipeline de HuggingFace.
+- No dispone de generacion de texto, razonamiento, codigo, matematicas, vision artificial, tool calling, function calling, soporte de agentes, capacidades multilingues ni modo de pensamiento. La model card no declara pipeline de Hugging Face.
 
 ## Casos de uso
 
@@ -117,12 +117,12 @@ Cualquier otra comparacion con modelos o frameworks alternativos: no disponible.
 - Reproduccion condicionada a los hashes: si el arbol de trabajo de origen tenia cambios no confirmados, `SOURCE_CODE.json` los registra como snapshot, lo que puede dificultar la reconstruccion exacta desde Git.
 - Idioma: la documentacion disponible esta solo en ingles.
 - Licencia: los datos son CC BY 4.0 (requiere atribucion); el codigo es MIT. Los avisos de datos incluidos deben conservarse. Verificar los terminos de MaleCNS v1.0 para usos derivados antes de un despliegue comercial.
-- Estado de adopcion: 0 descargas y 0 likes en HuggingFace, creado y actualizado el 22 de septiembre de 2026. No hay senales de uso en produccion ni de mantenimiento por terceros.
+- Estado de adopcion: 0 descargas y 0 likes en Hugging Face, creado y actualizado el 22 de septiembre de 2026. No hay senales de uso en produccion ni de mantenimiento por terceros.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a software de GoPro y no guardan relacion).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slvDev/esp32-ai-fly
+- Modelo en Hugging Face: https://huggingface.co/slvDev/esp32-ai-fly
 - Dataset de origen MaleCNS v1.0 (Janelia): https://male-cns.janelia.org/download/
-- Ficheros internos del repositorio citados en la model card, accesibles desde el propio repositorio de HuggingFace: `SUBGRAPH.json`, `SUBGRAPH.md`, `SOURCE_DATA.json`, `SOURCE_CODE.json`, `ATTRIBUTION.md`, `FORMATS.md`, `metadata.json`, `SHA256SUMS`, `validation/`, `esp32-ai-fly-source.tar.gz`
+- Ficheros internos del repositorio citados en la model card, accesibles desde el propio repositorio de Hugging Face: `SUBGRAPH.json`, `SUBGRAPH.md`, `SOURCE_DATA.json`, `SOURCE_CODE.json`, `ATTRIBUTION.md`, `FORMATS.md`, `metadata.json`, `SHA256SUMS`, `validation/`, `esp32-ai-fly-source.tar.gz`
 - Paper, blog o repositorio externo adicionales: no disponible en la informacion proporcionada. Las busquedas web realizadas no arrojaron resultados relacionados.

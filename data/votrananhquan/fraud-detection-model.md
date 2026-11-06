@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`votrananhquan/fraud-detection-model` es un modelo tabular de deteccion de fraude en tarjetas de credito publicado en HuggingFace por el usuario votrananhquan. No se trata de un modelo de lenguaje: segun las etiquetas de la ficha, la familia subyacente es LightGBM sobre scikit-learn, orientada a clasificacion binaria con clases fuertemente desbalanceadas (`imbalanced-classification`). El artefacto se presenta como "champion model" dentro de un registro de MLflow bajo el nombre `fraud-detection-model` y la version `3`, con la etiqueta de produccion `@production`.
+`votrananhquan/fraud-detection-model` es un modelo tabular de deteccion de fraude en tarjetas de credito publicado en Hugging Face por el usuario votrananhquan. No se trata de un modelo de lenguaje: segun las etiquetas de la ficha, la familia subyacente es LightGBM sobre scikit-learn, orientada a clasificacion binaria con clases fuertemente desbalanceadas (`imbalanced-classification`). El artefacto se presenta como "champion model" dentro de un registro de MLflow bajo el nombre `fraud-detection-model` y la version `3`, con la etiqueta de produccion `@production`.
 
 El problema que resuelve es acotado y clasico: asignar una probabilidad de fraude a cada transaccion a partir de las 28 componentes PCA anonimizadas (V1-V28) y del importe (`Amount`) del conocido dataset Credit Card Fraud de Kaggle (ULB). El modelo se entreno, segun la model card, bajo un protocolo sin fuga de informacion: particion estratificada 64/16/20 para entrenamiento, validacion y prueba, escalado de `Amount` ajustado solo sobre el split de entrenamiento, parada temprana sobre validacion y seleccion del campeon por PR-AUC de validacion. El split de prueba se puntuo una sola vez.
 
@@ -84,7 +84,7 @@ No se han publicado comparativas en la informacion disponible, y la model card o
 
 | Modelo alternativo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparable |
 |---|---|---|---|---|---|---|
-| LightGBM (este modelo, segun etiquetas) | Arboles con boosting | no disponible | no aplica | MIT | HuggingFace | PR-AUC 0.7462 en prueba |
+| LightGBM (este modelo, segun etiquetas) | Arboles con boosting | no disponible | no aplica | MIT | Hugging Face | PR-AUC 0.7462 en prueba |
 | XGBoost | Arboles con boosting | no disponible | no aplica | Apache 2.0 | Libreria ampliamente distribuida | no disponible |
 | CatBoost | Arboles con boosting con categoricas nativas | no disponible | no aplica | Apache 2.0 | Libreria ampliamente distribuida | no disponible |
 | Regresion logistica (baseline) | Modelo lineal | 30 coeficientes (29 caracteristicas mas intercepto, calculo teorico) | no aplica | depende de la implementacion | scikit-learn | no disponible |
@@ -109,7 +109,7 @@ La comparacion rigurosa exigiria fijar el mismo split, el mismo preprocesado y e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/votrananhquan/fraud-detection-model
+- Modelo en Hugging Face: https://huggingface.co/votrananhquan/fraud-detection-model
 - Dataset de referencia citado en la model card: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 - Identificador de ejecucion en MLflow (Run ID): 176f185e3b7a400dba35d6f841de31e2
 - Modelo registrado en MLflow: nombre `fraud-detection-model`, version `3`, alias `production`

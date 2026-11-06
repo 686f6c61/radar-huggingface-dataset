@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: Sayeem26s/nllb-1.3b-bangla-doctor-style-v5r128b](https://huggingface.co/Sayeem26s/nllb-1.3b-bangla-doctor-style-v5r128b)
+- [Hugging Face: Sayeem26s/nllb-1.3b-bangla-doctor-style-v5r128b](https://huggingface.co/Sayeem26s/nllb-1.3b-bangla-doctor-style-v5r128b)
 - [Paper NLLB (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

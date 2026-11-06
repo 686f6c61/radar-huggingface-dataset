@@ -66,11 +66,11 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 - El archivo `model.joblib` del repositorio esta marcado como QUARANTINED (cuarentena). No debe cargarse con `joblib.load` porque podria contener serializacion ejecutable no segura.
 - La doctrina "hard DENY dominates" implica que cualquier politica de denegacion prevalece sobre logicas de permiso; esto puede provocar bloqueos inesperados si las politicas no se configuran correctamente.
 - No hay garantia de que la cadena de recibos sea inmutable frente a manipulacion del entorno; la seguridad depende de la integridad del host donde se ejecuta.
-- El paquete es de un unico mantenedor (SZL Holdings) y tiene cero descargas en HuggingFace; su madurez en produccion no esta contrastada por una comunidad amplia.
+- El paquete es de un unico mantenedor (SZL Holdings) y tiene cero descargas en Hugging Face; su madurez en produccion no esta contrastada por una comunidad amplia.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-blocked
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-blocked
 - Paquete Hub (kernels): https://huggingface.co/kernels/SZLHOLDINGS/szl-blocked
 - GitHub canonico: https://github.com/szl-holdings/szl-blocked
 - Organizacion GitHub: https://github.com/szl-holdings

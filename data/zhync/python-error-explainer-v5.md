@@ -79,6 +79,6 @@ Comparado con su modelo base, este fine-tune sacrifica generalidad a cambio de u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhync/python-error-explainer-v5
+- Modelo en Hugging Face: https://huggingface.co/zhync/python-error-explainer-v5
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Licencia Gemma Terms of Use: https://ai.google.dev/gemma/terms

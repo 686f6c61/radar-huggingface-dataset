@@ -77,9 +77,9 @@ En SecBench Chinese (secundario), el modelo alcanza una precisión de 0.7351 sob
 
 | Modelo | Tipo | SecEval | SecBench English | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zduhac-Cyber-7B-v2 | Adaptador LoRA sobre Qwen2.5-7B-Instruct | 0.6188 | 0.6490 | Apache 2.0 | HuggingFace |
-| Zduhac-Cyber-7B-LoRA (v1) | Adaptador LoRA sobre Qwen2.5-7B-Instruct | 0.2486 | 0.0953 | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct | Modelo base | 0.5151 | 0.5431 | Apache 2.0 | HuggingFace |
+| Zduhac-Cyber-7B-v2 | Adaptador LoRA sobre Qwen2.5-7B-Instruct | 0.6188 | 0.6490 | Apache 2.0 | Hugging Face |
+| Zduhac-Cyber-7B-LoRA (v1) | Adaptador LoRA sobre Qwen2.5-7B-Instruct | 0.2486 | 0.0953 | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct | Modelo base | 0.5151 | 0.5431 | Apache 2.0 | Hugging Face |
 
 No se han identificado otros modelos comparables de ciberseguridad defensiva en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se han identificado otros modelos comparables de ciberseguridad defensiva en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pancodurden/Zduhac-Cyber-7B-v2
+- Repositorio en Hugging Face: https://huggingface.co/pancodurden/Zduhac-Cyber-7B-v2
 - Versión anterior (v1): https://huggingface.co/pancodurden/Zduhac-Cyber-7B-LoRA
 - Informe de benchmark de la v1: https://huggingface.co/pancodurden/Zduhac-Cyber-7B-LoRA/blob/main/benchmark_report.md
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

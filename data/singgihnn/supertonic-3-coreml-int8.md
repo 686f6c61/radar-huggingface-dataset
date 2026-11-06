@@ -80,8 +80,8 @@ El autor indica que no se ha medido el rendimiento en telefono. No se han public
 
 | Modelo | Parametros | Contexto | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| singgihnn/supertonic-3-coreml-int8 | no disponible | no disponible | Core ML, ONNX int8 | openrail | HuggingFace, 0 descargas |
-| Supertone/supertonic-3 (base) | no disponible | no disponible | ONNX (codificador de texto, predictor de duracion, estimador de vectores, vocoder) | openrail | HuggingFace |
+| singgihnn/supertonic-3-coreml-int8 | no disponible | no disponible | Core ML, ONNX int8 | openrail | Hugging Face, 0 descargas |
+| Supertone/supertonic-3 (base) | no disponible | no disponible | ONNX (codificador de texto, predictor de duracion, estimador de vectores, vocoder) | openrail | Hugging Face |
 | Otras alternativas TTS | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos TTS comparables en la documentacion proporcionada, por lo que la comparativa se limita al modelo base del que derivan estos artefactos.
@@ -95,10 +95,10 @@ No se dispone de informacion sobre otros modelos TTS comparables en la documenta
 - La evaluacion de calidad se basa en Whisper `base.en` sobre 10 frases, una muestra reducida y solo en ingles.
 - No se documentan idiomas soportados, sesgos ni tasas de alucinacion del modelo base en la informacion disponible.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado el 2026-11-01; se trata de artefactos derivados de una aplicacion concreta, sin validacion independiente conocida.
-- La integridad de los ficheros depende de los hashes publicados en la aplicacion (`coreml.json` e `int8.json`), no de verificaciones del propio repositorio de HuggingFace.
+- La integridad de los ficheros depende de los hashes publicados en la aplicacion (`coreml.json` e `int8.json`), no de verificaciones del propio repositorio de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/singgihnn/supertonic-3-coreml-int8
+- Repositorio en Hugging Face: https://huggingface.co/singgihnn/supertonic-3-coreml-int8
 - Modelo base: https://huggingface.co/Supertone/supertonic-3
 - Scripts de conversion: `scripts/coreml/` y `scripts/int8/` en el repositorio de la aplicacion Listen al-Gaib (no se proporciona URL directa en la informacion disponible).

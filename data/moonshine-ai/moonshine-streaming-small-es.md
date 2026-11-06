@@ -73,9 +73,9 @@ No se dispone de datos comparativos directos con otros modelos ASR en español e
 
 | Modelo | Parametros | Contexto | WER (espanol) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Moonshine Streaming Small ES | 112,9 M | no disponible | ~4.7 (FLEURS/MLS) | MIT | HuggingFace, .ort |
-| Whisper (small) | 244 M | 30 s | no disponible | MIT | HuggingFace |
-| Wav2Vec2 XLSR (es) | 300 M | ~10 s | no disponible | MIT | HuggingFace |
+| Moonshine Streaming Small ES | 112,9 M | no disponible | ~4.7 (FLEURS/MLS) | MIT | Hugging Face, .ort |
+| Whisper (small) | 244 M | 30 s | no disponible | MIT | Hugging Face |
+| Wav2Vec2 XLSR (es) | 300 M | ~10 s | no disponible | MIT | Hugging Face |
 
 La comparación no es exhaustiva porque los datos de WER de los otros modelos no se han extraído de fuentes fiables en este informe. No obstante, Moonshine destaca por su menor tamaño y su capacidad de streaming en tiempo real, algo que Whisper no ofrece en su variante estándar.
 
@@ -91,7 +91,7 @@ La comparación no es exhaustiva porque los datos de WER de los otros modelos no
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [moonshine-ai/moonshine-streaming-small-es](https://huggingface.co/moonshine-ai/moonshine-streaming-small-es)
+- Repositorio Hugging Face del modelo: [moonshine-ai/moonshine-streaming-small-es](https://huggingface.co/moonshine-ai/moonshine-streaming-small-es)
 - Modelo base (inglés): [moonshine-ai/moonshine-streaming-small](https://huggingface.co/moonshine-ai/moonshine-streaming-small)
 - Modelo Tiny en español: [moonshine-ai/moonshine-streaming-tiny-es](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-es)
 - Repositorio GitHub del proyecto Moonshine: [moonshine-ai/moonshine](https://github.com/moonshine-ai/moonshine)

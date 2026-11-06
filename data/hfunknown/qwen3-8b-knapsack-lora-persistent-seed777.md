@@ -79,7 +79,7 @@ No se dispone de métricas comparativas entre ellos ni frente al base Qwen3-8B. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hfunknown/qwen3-8b-knapsack-lora-persistent-seed777
+- Modelo en Hugging Face: https://huggingface.co/hfunknown/qwen3-8b-knapsack-lora-persistent-seed777
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Adaptador persistente (AutomatedScientist): https://huggingface.co/AutomatedScientist/qwen3-8b-persistent-knapsack-lora
 - Adaptador sin estado (AutomatedScientist): https://huggingface.co/AutomatedScientist/qwen3-8b-stateless-knapsack-lora

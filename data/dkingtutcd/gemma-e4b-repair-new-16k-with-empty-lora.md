@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora` es un ajuste fino (fine-tuning) del modelo multimodal Gemma 4 E4B en su variante instruct, publicado en HuggingFace por el usuario dkingtutcd. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`) y se ha reentrenado con la librería Unsloth y TRL de HuggingFace, exportándose finalmente en pesos FP16 (16 bits) en formato safetensors. El repositorio ocupa 16 GB y contiene 7.996.156.490 parámetros reales según los tensores publicados.
+`dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora` es un ajuste fino (fine-tuning) del modelo multimodal Gemma 4 E4B en su variante instruct, publicado en Hugging Face por el usuario dkingtutcd. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`) y se ha reentrenado con la librería Unsloth y TRL de Hugging Face, exportándose finalmente en pesos FP16 (16 bits) en formato safetensors. El repositorio ocupa 16 GB y contiene 7.996.156.490 parámetros reales según los tensores publicados.
 
 La relevancia de esta ficha es limitada: se trata de un experimento de ajuste fino de un usuario individual, con cero descargas y cero likes en el momento de la consulta, sin model card detallada ni resultados de evaluación publicados. El nombre del repositorio ("repair-new-16k-with-empty-lora") sugiere un experimento de reparación o reentrenamiento con una LoRA vacía y una ventana de contexto de 16k, pero el autor no documenta la metodología, el dataset ni los objetivos del ajuste.
 
@@ -25,7 +25,7 @@ Al estar basado en Gemma 4, hereda la arquitectura y capacidades del modelo orig
 
 El modelo es un ajuste fino del Gemma 4 E4B instruct en versión Unsloth bnb-4bit. La arquitectura subyacente corresponde a la familia Gemma 4 de Google DeepMind, un transformer multimodal capaz de procesar entradas de imagen y texto y generar texto (pipeline `image-text-to-text`). No se dispone de información detallada sobre el número de capas, dimensiones ocultas, mecanismo de atención ni configuración del codificador visual, ya que la model card no incluye estos datos y el autor no los documenta.
 
-El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según indica el autor, con una velocidad declarada de "2x más rápido" gracias a Unsloth. El nombre del repositorio sugiere el uso de una LoRA (aparentemente "vacía") y una ventana de contexto de 16k, pero no se especifica el dataset, el número de tokens de entrenamiento, la composición de los datos ni si hubo RLHF, DPO o alguna técnica de alineación adicional. Tampoco se documentan innovaciones técnicas propias más allá del uso de las herramientas mencionadas.
+El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según indica el autor, con una velocidad declarada de "2x más rápido" gracias a Unsloth. El nombre del repositorio sugiere el uso de una LoRA (aparentemente "vacía") y una ventana de contexto de 16k, pero no se especifica el dataset, el número de tokens de entrenamiento, la composición de los datos ni si hubo RLHF, DPO o alguna técnica de alineación adicional. Tampoco se documentan innovaciones técnicas propias más allá del uso de las herramientas mencionadas.
 
 ## Capacidades
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora | ~8B | 16k (inferido) | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8B | no disponible | apache-2.0 (heredada) | HuggingFace |
-| Gemma 4 E4B it (original de Google DeepMind) | ~8B | no disponible | Gemma license (no confirmada) | HuggingFace / Google |
+| dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora | ~8B | 16k (inferido) | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8B | no disponible | apache-2.0 (heredada) | Hugging Face |
+| Gemma 4 E4B it (original de Google DeepMind) | ~8B | no disponible | Gemma license (no confirmada) | Hugging Face / Google |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora
+- Hugging Face: https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-16k-with-empty-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no disponible enlace directo en la información proporcionada
+- TRL de Hugging Face: no disponible enlace directo en la información proporcionada

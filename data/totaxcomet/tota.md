@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `totaxcomet/tota` en HuggingFace no contiene información técnica sustancial. La model card únicamente declara la licencia MIT, sin descripción del modelo, arquitectura, parámetros, ni casos de uso. El repositorio registra cero descargas y cero "likes", lo que sugiere que se trata de una publicación reciente o sin difusión. La fecha de creación indicada (2026-08-19) es posterior a la fecha actual, lo que podría tratarse de un error en los metadatos.
+El repositorio `totaxcomet/tota` en Hugging Face no contiene información técnica sustancial. La model card únicamente declara la licencia MIT, sin descripción del modelo, arquitectura, parámetros, ni casos de uso. El repositorio registra cero descargas y cero "likes", lo que sugiere que se trata de una publicación reciente o sin difusión. La fecha de creación indicada (2026-08-19) es posterior a la fecha actual, lo que podría tratarse de un error en los metadatos.
 
-Las búsquedas web relacionadas con el término "tota" devuelven resultados que no corresponden a este repositorio: una calculadora de costes de infraestructura de IA (AITOT), un asistente autohospedado llamado "tota" con documentación en Vercel, y un modelo de Stable Diffusion en SeaArt. Ninguno de estos proyectos parece estar vinculado al autor `totaxcomet` ni al repositorio de HuggingFace. Por tanto, no es posible determinar qué modelo es, qué problema resuelve ni por qué sería relevante en la actualidad.
+Las búsquedas web relacionadas con el término "tota" devuelven resultados que no corresponden a este repositorio: una calculadora de costes de infraestructura de IA (AITOT), un asistente autohospedado llamado "tota" con documentación en Vercel, y un modelo de Stable Diffusion en SeaArt. Ninguno de estos proyectos parece estar vinculado al autor `totaxcomet` ni al repositorio de Hugging Face. Por tanto, no es posible determinar qué modelo es, qué problema resuelve ni por qué sería relevante en la actualidad.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ No se dispone de información sobre la arquitectura del modelo, el conjunto de d
 
 ## Capacidades
 
-No se ha documentado ninguna capacidad del modelo. No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, soporte de tool calling, capacidades de agente, ni multilingüismo. La ausencia de pipeline en HuggingFace (valor "no disponible") refuerza la falta de especificación funcional.
+No se ha documentado ninguna capacidad del modelo. No hay información sobre generación de texto, razonamiento, código, matemáticas, visión, soporte de tool calling, capacidades de agente, ni multilingüismo. La ausencia de pipeline en Hugging Face (valor "no disponible") refuerza la falta de especificación funcional.
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ No disponible. No existe información sobre el modelo que permita compararlo con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/totaxcomet/tota
+- Repositorio en Hugging Face: https://huggingface.co/totaxcomet/tota
 - Resultados de búsqueda web (no afiliados al modelo, se incluyen por si aportan contexto adicional):
   - AITOT (calculadora de costes de IA): https://aitot.net/en
   - Documentación de "tota" (asistente autohospedado): https://tota-agent.vercel.app/docs

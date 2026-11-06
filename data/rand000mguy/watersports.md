@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rand000mGuy/watersports es un adaptador LoRA de difusion texto-a-imagen publicado en HuggingFace por el usuario Rand000mGuy. Segun los metadatos del repositorio, se trata de un adaptador entrenado sobre el modelo base krea/Krea-2-Turbo, se distribuye en formato compatible con la libreria diffusers y su pipeline declarado es text-to-image. El repositorio ocupa 0,2 GB, no acumula descargas ni "likes" en el momento de la consulta y fue creado el 16 de septiembre de 2026.
+Rand000mGuy/watersports es un adaptador LoRA de difusion texto-a-imagen publicado en Hugging Face por el usuario Rand000mGuy. Segun los metadatos del repositorio, se trata de un adaptador entrenado sobre el modelo base krea/Krea-2-Turbo, se distribuye en formato compatible con la libreria diffusers y su pipeline declarado es text-to-image. El repositorio ocupa 0,2 GB, no acumula descargas ni "likes" en el momento de la consulta y fue creado el 16 de septiembre de 2026.
 
 El interes de este tipo de publicaciones es acotado pero relevante para quien trabaja con personalizacion de modelos generativos: un LoRA permite anadir un estilo, concepto o dominio concreto a un modelo de difusion ya entrenado sin reentrenar el modelo completo, con un coste de almacenamiento minimo y una carga incremental en memoria. En este caso, sin embargo, la model card es practicamente vacia: no se documenta el prompt de instancia (instance_prompt es null), no se describe el dataset de entrenamiento, no se indica el rango o el alpha del adaptador y el widget de ejemplo usa el texto generico "Screenshot".
 
@@ -74,7 +74,7 @@ No disponible. No hay datos de rendimiento, licencia ni caracteristicas del adap
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rand000mGuy/watersports | LoRA texto-a-imagen | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| Rand000mGuy/watersports | LoRA texto-a-imagen | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No hay datos de rendimiento, licencia ni caracteristicas del adap
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Rand000mGuy/watersports
+- Pagina del modelo en Hugging Face: https://huggingface.co/Rand000mGuy/watersports
 - Ficheros del repositorio: https://huggingface.co/Rand000mGuy/watersports/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers para carga de LoRA: no disponible en la informacion proporcionada

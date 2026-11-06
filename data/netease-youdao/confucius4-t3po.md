@@ -22,7 +22,7 @@ Es relevante ahora porque combina dos contribuciones metodológicas: una técnic
 | Formato de pesos | safetensors |
 | Modelo base | Qwen/Qwen2.5-14B |
 | Pipeline declarado | translation |
-| Descargas / likes en HuggingFace | 704 / 14 |
+| Descargas / likes en Hugging Face | 704 / 14 |
 | Tamaño del repositorio | 29,6 GB |
 
 ## Arquitectura y entrenamiento
@@ -84,12 +84,12 @@ Estimaciones a partir de los 14,77 mil millones de parámetros del modelo; no pr
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Confucius4-T3PO | 14,77 mil millones | No disponible | Apache 2.0 | HuggingFace y ModelScope | Sin cifras publicadas; mejor frontera que GRPO según el autor |
+| Confucius4-T3PO | 14,77 mil millones | No disponible | Apache 2.0 | Hugging Face y ModelScope | Sin cifras publicadas; mejor frontera que GRPO según el autor |
 | InfiniSST | No disponible | No disponible | No disponible | Referencia académica (ACL 2025 Findings) | Comparado en las figuras del autor; sin cifras |
 | EAST | No disponible | No disponible | No disponible | Referencia académica (ACL 2025 Findings) | Comparado en las figuras del autor; sin cifras |
 | Sistema comercial A | No disponible | No disponible | Propietaria | Servicio comercial | Comparado en las figuras del autor; sin cifras |
 | Sistema comercial B | No disponible | No disponible | Propietaria | Servicio comercial | Comparado en las figuras del autor; sin cifras |
-| Qwen2.5-14B (base) | 14,77 mil millones | No disponible en esta información | Apache 2.0 (según el modelo base) | HuggingFace | No es un modelo de SiMT; es la base sobre la que se ajusta |
+| Qwen2.5-14B (base) | 14,77 mil millones | No disponible en esta información | Apache 2.0 (según el modelo base) | Hugging Face | No es un modelo de SiMT; es la base sobre la que se ajusta |
 
 No se dispone de datos suficientes (parámetros, contexto, licencia o métricas) de los modelos comparables para establecer una comparación cuantitativa.
 
@@ -103,12 +103,12 @@ No se dispone de datos suficientes (parámetros, contexto, licencia o métricas)
 - Longitud de contexto: no se especifica en la información disponible, lo que impide garantizar el comportamiento en sesiones muy largas más allá de lo que permita la caché KV.
 - Licencia: Apache 2.0, lo que permite uso comercial. Conviene verificar igualmente las condiciones del modelo base Qwen2.5-14B y de los corpus empleados, no detallados en la model card.
 - Documentación incompleta: falta el informe técnico anunciado, no hay cifras de benchmarks, no hay especificación de cuantizaciones oficiales y la model card disponible está truncada en la sección de descargas.
-- Madurez del repositorio: 704 descargas y 14 likes en HuggingFace, con publicación en septiembre de 2026, indican una adopción todavía baja y un ecosistema de terceros limitado (pocas recetas de despliegue o cuantizaciones comunitarias verificadas).
+- Madurez del repositorio: 704 descargas y 14 likes en Hugging Face, con publicación en septiembre de 2026, indican una adopción todavía baja y un ecosistema de terceros limitado (pocas recetas de despliegue o cuantizaciones comunitarias verificadas).
 - No hay información sobre soporte de tool calling, function calling ni flujos de agentes multi-paso, por lo que no debe asumirse su disponibilidad en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netease-youdao/Confucius4-T3PO
+- Modelo en Hugging Face: https://huggingface.co/netease-youdao/Confucius4-T3PO
 - Modelo en ModelScope: https://modelscope.cn/models/netease-youdao/Confucius4-T3PO
 - Repositorio de código de inferencia en GitHub: https://github.com/netease-youdao/Confucius4-T3PO
 - Demostración en línea: https://t3po.youdao.com

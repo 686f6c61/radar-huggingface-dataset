@@ -95,9 +95,9 @@ La comparativa directa con NVFP4 muestra que W4A16 gana en throughput en la mayo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canada-quant/glm-5.3-w4a16-mtp
+- Modelo en Hugging Face: https://huggingface.co/canada-quant/glm-5.3-w4a16-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
-- Perfil de Canada Quant Labs en HuggingFace: https://huggingface.co/canada-quant/models
+- Perfil de Canada Quant Labs en Hugging Face: https://huggingface.co/canada-quant/models
 - GitHub de Canada Quant Labs: https://github.com/canada-quant
 - Página de modelos de Canada Quant Labs: https://cql.ca/models.html
 - Artículo sobre GLM-5.2 W4A16 MTP: https://cql.ca/news/glm-5-2-w4a16-mtp.html

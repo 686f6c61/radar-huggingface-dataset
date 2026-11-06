@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BananaMind/training es un repositorio de modelo alojado en HuggingFace por el usuario BananaMind, publicado el 10 de octubre de 2026 y actualizado el 11 de octubre de 2026. Se trata de un repositorio con acceso restringido (gated): para descargar los pesos es necesario aceptar previamente las condiciones en la plataforma. El repositorio ocupa 0,2 GB e incluye pesos en formato safetensors, con un total declarado de 2.908.713 parametros (aproximadamente 2,9 millones).
+BananaMind/training es un repositorio de modelo alojado en Hugging Face por el usuario BananaMind, publicado el 10 de octubre de 2026 y actualizado el 11 de octubre de 2026. Se trata de un repositorio con acceso restringido (gated): para descargar los pesos es necesario aceptar previamente las condiciones en la plataforma. El repositorio ocupa 0,2 GB e incluye pesos en formato safetensors, con un total declarado de 2.908.713 parametros (aproximadamente 2,9 millones).
 
 La informacion publica disponible es minima. No hay model card descriptiva, no se especifica el pipeline, la licencia ni los idiomas soportados, y las etiquetas del repositorio se limitan a safetensors, bananamind_bga, custom_code y region:us. La presencia de la etiqueta custom_code indica que el modelo requiere codigo propio para su carga o ejecucion, probablemente porque implementa una arquitectura no estandar, y bananamind_bga apunta a un identificador interno de arquitectura o variante del autor. Con solo 11 descargas y 1 like, el modelo no tiene traccion de comunidad ni validacion externa.
 
@@ -20,7 +20,7 @@ Por su tamano (2,9 millones de parametros) el modelo queda en el rango de los mo
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,2 GB |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 11 descargas, 1 like |
@@ -52,10 +52,10 @@ Advertencia previa: al no existir model card ni documentacion de capacidades, lo
 
 - Prototipado de arquitecturas personalizadas: dado que el repositorio usa custom_code y una etiqueta de arquitectura propietaria (bananamind_bga), puede servir como referencia para estudiar una implementacion no estandar, siempre que el autor documente el codigo de carga.
 - Experimentos academicos con modelos de menos de 3 M de parametros: util para reproducir estudios sobre escalado, inicializacion o dinámica de entrenamiento en regimenes de muy baja capacidad.
-- Pruebas de pipeline de HuggingFace: su tamano reducido permite validar flujos de descarga, carga con codigo personalizado y ejecucion en CI sin coste de GPU significativo.
+- Pruebas de pipeline de Hugging Face: su tamano reducido permite validar flujos de descarga, carga con codigo personalizado y ejecucion en CI sin coste de GPU significativo.
 - Tareas de clasificacion o etiquetado muy acotadas (si el modelo resultara ser un cabezal de clasificacion): no confirmado, requeriria inspeccion del codigo y de los pesos.
 - Base para experimentos de destilacion o comparativas de eficiencia: su huella de memoria minima permite usarlo como linea base en estudios de coste por parametro.
-- Educacion y divulgacion: un modelo de este tamano puede emplearse para explicar el ciclo completo de publicacion, carga y ejecucion de un modelo en HuggingFace en entornos docentes.
+- Educacion y divulgacion: un modelo de este tamano puede emplearse para explicar el ciclo completo de publicacion, carga y ejecucion de un modelo en Hugging Face en entornos docentes.
 
 No existen casos de uso de produccion contrastados ni ejemplos en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No disponible. No se conocen modelos comparables, ya que la arquitectura, la lic
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BananaMind/training | 2,9 M | no disponible | no disponible | gated en HuggingFace |
+| BananaMind/training | 2,9 M | no disponible | no disponible | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No se conocen modelos comparables, ya que la arquitectura, la lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BananaMind/training
+- Modelo en Hugging Face: https://huggingface.co/BananaMind/training
 - Repositorio o paper del autor: no disponible
 - Demos, blogs o articulos tecnicos: no disponible
 - Enlaces adicionales: la busqueda web realizada no devolvio ningun resultado relevante sobre el modelo BananaMind/training, el autor BananaMind ni la arquitectura bananamind_bga; los resultados obtenidos correspondian a contenidos sin relacion con el modelo.

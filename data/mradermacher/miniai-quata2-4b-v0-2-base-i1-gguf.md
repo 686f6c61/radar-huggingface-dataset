@@ -81,7 +81,7 @@ La comparación se ofrece como referencia de categoría; no se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/MiniAI-Quata2-4b-v0.2-base-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/MiniAI-Quata2-4b-v0.2-base-i1-GGUF
 - Modelo base: https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-v0.2-base
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/MiniAI-Quata2-4b-v0.2-base-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#MiniAI-Quata2-4b-v0.2-base-i1-GGUF

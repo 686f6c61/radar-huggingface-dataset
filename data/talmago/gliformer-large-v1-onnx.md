@@ -106,7 +106,7 @@ No se dispone de parametros, contexto ni resultados de benchmark de estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talmago/gliformer-large-v1-onnx
+- Modelo en Hugging Face: https://huggingface.co/talmago/gliformer-large-v1-onnx
 - Modelo base: https://huggingface.co/knowledgator/gliformer-large-v1
 - Repositorio de la libreria `fast_gliner`: https://github.com/talmago/fast_gliner
 

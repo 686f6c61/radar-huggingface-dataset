@@ -54,4 +54,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/gngpostalsrvc/TransformersVAE_hd128_ld2_el6_dl6_nh8_d0.4)
+- [Repositorio de Hugging Face](https://huggingface.co/gngpostalsrvc/TransformersVAE_hd128_ld2_el6_dl6_nh8_d0.4)

@@ -80,7 +80,7 @@ No se dispone de datos verificables de otros LoRAs concretos de Beatrice en la i
 | Dataset | 70 imágenes, 1 outfit, 7 épocas | Variable, no disponible | Variable, no disponible |
 | Rendimiento medido | Solo evaluación cualitativa del autor | No disponible | No disponible |
 | Licencia | CreativeML OpenRAIL-M | CreativeML OpenRAIL-M | CreativeML OpenRAIL-M |
-| Disponibilidad | HuggingFace y ModelScope | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face y ModelScope | Hugging Face | Hugging Face |
 
 Nota: la familia Illustrious y Pony no comparten tokenizador de estilo ni convenciones de prompt, por lo que los LoRAs no son intercambiables entre bases.
 
@@ -99,8 +99,8 @@ Nota: la familia Illustrious y Pony no comparten tokenizador de estilo ni conven
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/Beatrice-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/Beatrice-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/Beatrice-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/Beatrice-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/Beatrice-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/Beatrice-Dataset
 - README en chino: `./README_zh.md` (incluido en el repositorio)

@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en el mismo dominio (banc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v5-coreference
+- Repositorio Hugging Face: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v5-coreference
 - Modelo base (referencia): https://huggingface.co/spkc83/retail-bank-servicing-agent-9b
 - Dataset de entrenamiento: https://huggingface.co/datasets/spkc83/retail-bank-servicing-alignment-sft
 - Adaptador padre: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v5-remediation

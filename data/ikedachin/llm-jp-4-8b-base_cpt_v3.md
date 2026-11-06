@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ikedachin/llm-jp-4-8b-base_cpt_v3` es un modelo de lenguaje de 8.590.200.832 parametros (aproximadamente 8,6 mil millones) obtenido mediante preentrenamiento continuado (continued pre-training, CPT) sobre el modelo base japones `llm-jp/llm-jp-4-8b-base`, desarrollado por el consorcio LLM-jp. El autor del ajuste es el usuario de HuggingFace `ikedachin`, que ha especializado el modelo con un corpus japones derivado de articulos de Wikipedia, con enfasis en contenido relacionado con la ciudad de Imabari (Ehime, Japon).
+`ikedachin/llm-jp-4-8b-base_cpt_v3` es un modelo de lenguaje de 8.590.200.832 parametros (aproximadamente 8,6 mil millones) obtenido mediante preentrenamiento continuado (continued pre-training, CPT) sobre el modelo base japones `llm-jp/llm-jp-4-8b-base`, desarrollado por el consorcio LLM-jp. El autor del ajuste es el usuario de Hugging Face `ikedachin`, que ha especializado el modelo con un corpus japones derivado de articulos de Wikipedia, con enfasis en contenido relacionado con la ciudad de Imabari (Ehime, Japon).
 
 El modelo mantiene la arquitectura transformer decoder-only tipo Llama del modelo base y esta orientado exclusivamente al idioma japones (`ja`). No se trata de un modelo de instrucciones ni de un asistente conversacional afinado con RLHF: la model card lo describe como un modelo de lenguaje preentrenado, por lo que su uso natural es la generacion de texto por continuacion de prompt, no el seguimiento de instrucciones.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikedachin/llm-jp-4-8b-base_cpt_v3
+- Modelo en Hugging Face: https://huggingface.co/ikedachin/llm-jp-4-8b-base_cpt_v3
 - Dataset de CPT: https://huggingface.co/datasets/ikedachin/imabari_wiki_cpt_v3
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4-8b-base
-- Organizacion LLM-jp en HuggingFace: https://huggingface.co/llm-jp
+- Organizacion LLM-jp en Hugging Face: https://huggingface.co/llm-jp

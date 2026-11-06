@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: para TrOCR small (~62M parametros), aproximadamente 1-2 GB en fp16; para TrOCR large (~558M parametros), aproximadamente 3-4 GB en fp16. El repositorio de 21,4 GB sugiere que puede haber multiples modelos, por lo que el requisito real depende de la variante cargada.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM es suficiente para TrOCR base o large en fp16. Una RTX 3060, RTX 4060 o superior cubre las necesidades de inferencia.
 - Compatibilidad con GPU consumer: si, TrOCR es un modelo ligero en comparacion con LLMs modernos y cabe sin problemas en GPUs de gama media.
-- Opciones de despliegue: el formato safetensors permite su uso con la libreria `transformers` de HuggingFace. Se puede servir mediante pipelines de Python, ONNX Runtime para optimizacion en CPU, o integrado en frameworks como FastAPI para exponer un endpoint REST.
+- Opciones de despliegue: el formato safetensors permite su uso con la libreria `transformers` de Hugging Face. Se puede servir mediante pipelines de Python, ONNX Runtime para optimizacion en CPU, o integrado en frameworks como FastAPI para exponer un endpoint REST.
 - Latencia y throughput: no disponible. En una GPU consumer moderna, la inferencia de TrOCR small sobre una imagen de 384x384 suele completarse en decenas de milisegundos, pero estos datos no estan confirmados para este repositorio concreto.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ La comparativa muestra que el repositorio de LeMerta carece de informacion publi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LeMerta/finetuned-trocr-models
+- Repositorio Hugging Face: https://huggingface.co/LeMerta/finetuned-trocr-models
 - Perfil del autor: https://huggingface.co/LeMerta
 - Dataset asociado (tesis): https://huggingface.co/LeMerta/bachelor-thesis-datasets
 - Referencia sobre fine-tuning de TrOCR con texto curvo (contexto general): https://learnopencv.com/fine-tuning-trocr-training-trocr-to-recognize-curved-text/

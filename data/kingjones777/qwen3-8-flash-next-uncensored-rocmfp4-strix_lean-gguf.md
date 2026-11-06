@@ -91,7 +91,7 @@ La comparativa se limita a las variantes del mismo modelo porque no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-STRIX_LEAN-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-STRIX_LEAN-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint abliterado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

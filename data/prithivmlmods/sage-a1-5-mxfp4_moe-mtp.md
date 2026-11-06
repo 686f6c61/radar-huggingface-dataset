@@ -19,7 +19,7 @@ Su relevancia actual radica en la combinación de ventana de contexto nativa de 
 | Tipos de cuantizacion | BF16, MXFP4_MOE, Q3_K_L, Q5_K_M, Q6_K (GGUF); proyector multimodal en bf16 |
 | Idiomas soportados | inglés (`en`) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | GGUF (BF16, MXFP4_MOE, Q3_K_L, Q5_K_M, Q6_K) y fichero `mmproj-bf16.gguf` para visión; el repositorio incluye también pesos en safetensors según los metadatos de HuggingFace |
+| Formato de pesos | GGUF (BF16, MXFP4_MOE, Q3_K_L, Q5_K_M, Q6_K) y fichero `mmproj-bf16.gguf` para visión; el repositorio incluye también pesos en safetensors según los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -112,7 +112,7 @@ No se han encontrado en la información proporcionada comparativas publicadas en
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/prithivMLmods/Sage-A1.5-MXFP4_MOE-MTP
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/prithivMLmods/Sage-A1.5-MXFP4_MOE-MTP
 - Modelo base: https://huggingface.co/InternScience/Sage-A1.5
 - llama.cpp (motor de inferencia empleado para la cuantización): https://github.com/ggml-org/llama.cpp
 - Ficheros GGUF: [BF16](https://huggingface.co/prithivMLmods/Sage-A1.5-MXFP4_MOE-MTP/blob/main/Sage-A1.5.BF16.gguf), [MXFP4_MOE](https://huggingface.co/prithivMLmods/Sage-A1.5-MXFP4_MOE-MTP/blob/main/Sage-A1.5.MXFP4_MOE.gguf), [Q3_K_L](https://huggingface.co/prithivMLmods/Sage-A1.5-MXFP4_MOE-MTP/blob/main/Sage-A1.5.Q3_K_L.gguf), [Q5_K_M](https://huggingface.co/prithivMLmods/Sage-A1.5-MXFP4_MOE-MTP/blob/main/Sage-A1.5.Q5_K_M.gguf), [Q6_K](https://huggingface.co/prithivMLmods/Sage-A1.5-MXFP4_MOE-MTP/blob/main/Sage-A1.5.Q6_K.gguf), [mmproj-bf16](https://huggingface.co/prithivMLmods/Sage-A1.5-MXFP4_MOE-MTP/blob/main/Sage-A1.5.mmproj-bf16.gguf)

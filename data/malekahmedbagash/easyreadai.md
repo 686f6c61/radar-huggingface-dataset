@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EasyReadai es un repositorio publicado en HuggingFace por el usuario malekahmedbagash (Malek Ahmad Bagash Mohamed) bajo licencia Apache 2.0. En el momento de la consulta, la model card del repositorio contiene unicamente el encabezado de licencia y carece de descripcion, arquitectura declarada, tamano de parametros, ventana de contexto o cualquier otro dato tecnico. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline de inferencia asignado.
+EasyReadai es un repositorio publicado en Hugging Face por el usuario malekahmedbagash (Malek Ahmad Bagash Mohamed) bajo licencia Apache 2.0. En el momento de la consulta, la model card del repositorio contiene unicamente el encabezado de licencia y carece de descripcion, arquitectura declarada, tamano de parametros, ventana de contexto o cualquier otro dato tecnico. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline de inferencia asignado.
 
 No es posible determinar que problema resuelve el modelo ni su categoria (texto, vision, multimodal, etc.) a partir de la informacion disponible. El nombre "EasyReadai" sugiere una posible orientacion a lectura asistida o resumen de documentos, pero se trata de una inferencia nominal sin respaldo documental: los resultados de busqueda web devueltos corresponden a productos comerciales independientes (EasyRead.AI y EasyReadAI) cuya vinculacion con este repositorio no esta verificada.
 
@@ -68,8 +68,8 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/malekahmedbagash/EasyReadai
-- Perfil del autor en HuggingFace: https://huggingface.co/malekahmedbagash
+- Repositorio en Hugging Face: https://huggingface.co/malekahmedbagash/EasyReadai
+- Perfil del autor en Hugging Face: https://huggingface.co/malekahmedbagash
 - EasyRead.AI (producto comercial, relacion no verificada): https://easyread.ai/
 - EasyRead.AI, soporte (producto comercial, relacion no verificada): https://easyread.ai/support
 - EasyReadAI para Mac e iPad (producto comercial, relacion no verificada): https://easyreadai.com/en/

@@ -75,7 +75,7 @@ Referencia incluida por el autor: el modelo base Gemma 4 E2B-it obtiene una tasa
 
 | Modelo | Parametros | Contexto | Vision | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mie-edu/child-gemma4-e2b-v5-vision-gguf | 4,63 B | no disponible | Si (`mmproj` Q8_0) | Japones | Gemma Terms of Use | GGUF en HuggingFace; 0 descargas |
+| mie-edu/child-gemma4-e2b-v5-vision-gguf | 4,63 B | no disponible | Si (`mmproj` Q8_0) | Japones | Gemma Terms of Use | GGUF en Hugging Face; 0 descargas |
 | mie-edu/child-gemma4-e2b-v5-gguf (variante solo texto) | 4,63 B (mismo cuerpo) | no disponible | No | Japones | Gemma Terms of Use | GGUF; ahorra los 0,56 GB del `mmproj` |
 | google/gemma-4-E2B-it (modelo base) | no disponible en la informacion (mismo orden, ~4,6 B) | no disponible | Si | Multiple, incluido japones | Gemma Terms of Use | Pesos originales y conversion GGUF de `ggml-org` |
 | ggml-org/gemma-4-E2B-it-GGUF | igual al base | no disponible | Si (via `mmproj`) | Multiple | Gemma Terms of Use | GGUF; origen del proyector visual |
@@ -97,7 +97,7 @@ Frente al modelo base, este ajuste gana en la tarea especifica de reescritura co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mie-edu/child-gemma4-e2b-v5-vision-gguf
+- Modelo en Hugging Face: https://huggingface.co/mie-edu/child-gemma4-e2b-v5-vision-gguf
 - Variante solo texto: https://huggingface.co/mie-edu/child-gemma4-e2b-v5-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Conversion GGUF del modelo base (origen del `mmproj`): https://huggingface.co/ggml-org/gemma-4-E2B-it-GGUF

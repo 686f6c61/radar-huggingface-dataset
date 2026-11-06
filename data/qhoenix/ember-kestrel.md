@@ -79,7 +79,7 @@ La comparativa se plantea frente a otros clasificadores de tamaño comparable di
 
 | Modelo | Parámetros | Contexto / entrada | Precisión ImageNet-1k | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qhoenix/ember-kestrel | 119.027.848 (dato real del safetensors) | 480 × 480, 1000 clases | No disponible | apache-2.0 | HuggingFace, safetensors, carga manual con torchvision |
+| qhoenix/ember-kestrel | 119.027.848 (dato real del safetensors) | 480 × 480, 1000 clases | No disponible | apache-2.0 | Hugging Face, safetensors, carga manual con torchvision |
 | torchvision `efficientnet_v2_l` (ImageNet-1k) | No disponible en la información proporcionada | 480 × 480, 1000 clases | No disponible | Licencia del proyecto torchvision (BSD-3-Clause) | Pesos descargables mediante la API de torchvision |
 | Otras familias de backbone de tamaño similar (ConvNeXt-L, ViT-L/16, ResNet-152) | No disponible en la información proporcionada | 224–384 píxeles según modelo | No disponible | Varía según proyecto | torchvision / timm |
 
@@ -97,11 +97,11 @@ Además de lo anterior, la búsqueda web realizada devolvió resultados sobre pr
 - Licencia Apache-2.0: permite uso comercial y modificación, con obligación de conservar el aviso de licencia y los avisos de atribución, y sin garantías. Conviene revisar también la licencia de los pesos originales de torchvision de los que deriva el ajuste fino.
 - La vinculación con la subred Perturb añade un hash on-chain y una hotkey de minero. El hash permite verificar integridad y correspondencia con la contribución registrada, pero no es una auditoría del proceso de entrenamiento ni una garantía de calidad.
 - El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha y una documentación mínima. No se recomienda su uso en producción sin una evaluación propia sobre el dominio objetivo.
-- Las fechas del repositorio (creación y actualización el 28 de septiembre de 2026) son las reportadas por HuggingFace y se reproducen tal cual; no implica ninguna valoración sobre su exactitud.
+- Las fechas del repositorio (creación y actualización el 28 de septiembre de 2026) son las reportadas por Hugging Face y se reproducen tal cual; no implica ninguna valoración sobre su exactitud.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qhoenix/ember-kestrel
+- Modelo en Hugging Face: https://huggingface.co/qhoenix/ember-kestrel
 - Subred Perturb (Bittensor, netuid 26): https://perturbai.io
 
 Nota sobre la búsqueda web: los resultados obtenidos corresponden a proyectos distintos que comparten el nombre «Ember» y no documentan este modelo. Se listan a continuación únicamente para evitar confusiones:

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Searchlm-sft_v4cannsent_wiki360_cm es un modelo de generación de texto basado en la arquitectura LLaMA, entrenado por el usuario Kausp11 y publicado en HuggingFace en octubre de 2026. Se trata de un baseline ajustado por compute (compute-matched) a partir de un preentrenamiento sobre Wikipedia de aproximadamente 360 millones de parámetros, al que se le ha aplicado una etapa de fine-tuning supervisado (SFT) de una época.
+Searchlm-sft_v4cannsent_wiki360_cm es un modelo de generación de texto basado en la arquitectura LLaMA, entrenado por el usuario Kausp11 y publicado en Hugging Face en octubre de 2026. Se trata de un baseline ajustado por compute (compute-matched) a partir de un preentrenamiento sobre Wikipedia de aproximadamente 360 millones de parámetros, al que se le ha aplicado una etapa de fine-tuning supervisado (SFT) de una época.
 
 El modelo forma parte de una línea de investigación sobre preentrenamiento con búsqueda habilitada (search-enabled pretraining), donde las conversaciones de entrenamiento incluyen bloques de búsqueda procedentes del pipeline de anotación del preentrenamiento. Su propósito principal es servir como punto de comparación (baseline) en experimentos de investigación, no como modelo de producción.
 
@@ -81,7 +81,7 @@ Frente a SmolLM2-360M-Instruct, comparte el uso de SmolTalk como datos de SFT y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kausp11/searchlm-sft_v4cannsent_wiki360_cm
+- Modelo en Hugging Face: https://huggingface.co/Kausp11/searchlm-sft_v4cannsent_wiki360_cm
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card menciona el origen RCP `search-lm/ckpts/sft_v4cannsent_wiki360_cm`, sin enlace público)
 - Demo: no disponible

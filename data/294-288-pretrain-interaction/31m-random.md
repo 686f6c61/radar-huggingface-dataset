@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 31M-random | 31M | 2048 | Barrido de data poisoning sobre Dolma 3 | no disponible | HuggingFace, repo de 15,6 GB |
-| Pythia-31M (EleutherAI) | 31M | 2048 | Suite de interpretabilidad con checkpoints publicos | Apache 2.0 | HuggingFace |
-| Modelos de 30M de la familia GPTNeoX | ~30M | 2048 | Uso general a pequena escala | variable | HuggingFace |
+| 31M-random | 31M | 2048 | Barrido de data poisoning sobre Dolma 3 | no disponible | Hugging Face, repo de 15,6 GB |
+| Pythia-31M (EleutherAI) | 31M | 2048 | Suite de interpretabilidad con checkpoints publicos | Apache 2.0 | Hugging Face |
+| Modelos de 30M de la familia GPTNeoX | ~30M | 2048 | Uso general a pequena escala | variable | Hugging Face |
 
 La comparacion con Pythia-31M es la mas directa por arquitectura y tamano, pero 31M-random se distingue por su protocolo de entrenamiento controlado y por el trigger inyectado, no por su calidad como modelo de lenguaje.
 
@@ -79,6 +79,6 @@ La comparacion con Pythia-31M es la mas directa por arquitectura y tamano, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/294-288-pretrain-interaction/31M-random
+- Hugging Face: https://huggingface.co/294-288-pretrain-interaction/31M-random
 - GitHub del proyecto: `294-288-pretrain-interaction/pretrain_interaction`, rama `yaowen-70m-sweep` (archivos `sweep70m.py`, `artifacts/sweep70m/`, `yaowen_exp_hub/sweep_1012/`)
 - Dataset de entrenamiento: `294-288-pretrain-interaction/Dolma3-16B`

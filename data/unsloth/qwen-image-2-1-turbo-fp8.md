@@ -87,10 +87,10 @@ No se han publicado datos de throughput ni de latencia en la informacion disponi
 
 | Modelo | Parametros | Transformer | Pasos / guidance | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unsloth/Qwen-Image-2.1-Turbo-FP8 (este) | 7B | 7,12-7,26 GB cuantizado (FP8 o INT8) | 8 pasos, CFG 1 | qwen-research | HuggingFace, safetensors |
-| Qwen/Qwen-Image-2.1-Turbo | 7B | 14,2 GB bf16 | 8 pasos, CFG 1 | qwen-research | HuggingFace, ModelScope |
-| unsloth/Qwen-Image-2.1-FP8 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace; aporta el text encoder FP8 y el VAE bf16 compatibles con este repositorio |
-| Qwen/Qwen-Image-2.1 | 7B | No disponible | Version no destilada, con mas pasos de denoising (numero no especificado) | qwen-research | HuggingFace |
+| unsloth/Qwen-Image-2.1-Turbo-FP8 (este) | 7B | 7,12-7,26 GB cuantizado (FP8 o INT8) | 8 pasos, CFG 1 | qwen-research | Hugging Face, safetensors |
+| Qwen/Qwen-Image-2.1-Turbo | 7B | 14,2 GB bf16 | 8 pasos, CFG 1 | qwen-research | Hugging Face, ModelScope |
+| unsloth/Qwen-Image-2.1-FP8 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face; aporta el text encoder FP8 y el VAE bf16 compatibles con este repositorio |
+| Qwen/Qwen-Image-2.1 | 7B | No disponible | Version no destilada, con mas pasos de denoising (numero no especificado) | qwen-research | Hugging Face |
 
 Las tres variantes cuantizadas de este repositorio comparten exactamente la misma arquitectura y el mismo text encoder; la unica diferencia medible publicada es el LPIPS frente al bf16 (0,037 / 0,089 / 0,125). No se dispone de comparaciones frente a otros modelos de difusion de terceros en la informacion proporcionada.
 
@@ -110,9 +110,9 @@ Las tres variantes cuantizadas de este repositorio comparten exactamente la mism
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-FP8
+- Repositorio en Hugging Face: https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-FP8
 - Guia de Unsloth para ejecutar Qwen-Image-2.1: https://unsloth.ai/docs/models/qwen-image-2.1
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Modelo original no destilado: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de Unsloth con text encoder FP8 y VAE compatible: https://huggingface.co/unsloth/Qwen-Image-2.1-FP8
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE

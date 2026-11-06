@@ -66,9 +66,9 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace: models-1/v1-7b-rot13-loradelta-avg6-planets](https://huggingface.co/models-1/v1-7b-rot13-loradelta-avg6-planets)
-- [HuggingFace: hugo/v1-7b-rot13-loradelta-avg6-planets](https://huggingface.co/hugo/v1-7b-rot13-loradelta-avg6-planets) (posible versión original)
-- [HuggingFace: hugo/v1-7b-rot13-loradelta-avg6-software](https://huggingface.co/hugo/v1-7b-rot13-loradelta-avg6-software) (modelo similar con fuente software)
+- [Hugging Face: models-1/v1-7b-rot13-loradelta-avg6-planets](https://huggingface.co/models-1/v1-7b-rot13-loradelta-avg6-planets)
+- [Hugging Face: hugo/v1-7b-rot13-loradelta-avg6-planets](https://huggingface.co/hugo/v1-7b-rot13-loradelta-avg6-planets) (posible versión original)
+- [Hugging Face: hugo/v1-7b-rot13-loradelta-avg6-software](https://huggingface.co/hugo/v1-7b-rot13-loradelta-avg6-software) (modelo similar con fuente software)
 - [GGUF Model Discovery](https://local-ai-zone.github.io/) (directorio de modelos, sin relación directa)
 - [Mistral AI Models](https://mistral.ai/models/) (plataforma de modelos, sin relación directa)
 - [Civitai](https://civitai.com/models) (plataforma de modelos, sin relación directa)

@@ -73,7 +73,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amp-speech-lt-tts-models | no disponible | no aplica | solo `loss_mel` (17,97 / 20,27) | other | HuggingFace, 0 descargas, 0 likes |
+| amp-speech-lt-tts-models | no disponible | no aplica | solo `loss_mel` (17,97 / 20,27) | other | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de TTS en lituano | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion consultada |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ulumanshu/amp-speech-lt-tts-models
+- Hugging Face: https://huggingface.co/Ulumanshu/amp-speech-lt-tts-models
 - Repositorio de codigo con informes: referenciado en la model card como `TRAINING_REPORT.md` y `esp_net/FINAL_REPORT_LIEPA_FULL.md`, generados por el script `18_hf_handover.py`. No se proporciona URL publica en la informacion disponible.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

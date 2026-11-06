@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks específicos para esta variante GGU
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mmnga-o/DeepSeek-V4-Flash-0731-REAP-W-gguf
+- Repositorio Hugging Face: https://huggingface.co/mmnga-o/DeepSeek-V4-Flash-0731-REAP-W-gguf
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Variante REAP de referencia: https://huggingface.co/0xSero/DeepSeek-V4-Flash-0731-REAP
 - Modelo base en NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard

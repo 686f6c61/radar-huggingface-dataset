@@ -32,8 +32,8 @@ Para el entrenamiento se utilizaron 373.000 pares kazajos del dataset `Darmm/dar
 - Recuperación semántica monolingüe en kazajo: mejora el Recall@1 en un 7,5% respecto a bge-m3.
 - Recuperación cross-lingual: una consulta en kazajo puede encontrar documentos en ruso e inglés por significado, con una precisión Accuracy@1 de 0,668 para kk→ru y 0,918 para kk→en en los conjuntos de evaluación propios.
 - Similaridad de oraciones y párrafos, adecuada para tareas de duplicado semántico y clustering.
-- Soporta el pipeline `sentence-similarity` de HuggingFace y es compatible con `sentence-transformers`.
-- Compatible con el endpoint de HuggingFace `text-embeddings-inference`, por lo que puede desplegarse en servicios de inferencia estandarizados.
+- Soporta el pipeline `sentence-similarity` de Hugging Face y es compatible con `sentence-transformers`.
+- Compatible con el endpoint de Hugging Face `text-embeddings-inference`, por lo que puede desplegarse en servicios de inferencia estandarizados.
 - No genera texto, no soporta tool calling, ni visión ni audio. Es exclusivamente un modelo de representaciones.
 
 ## Casos de uso
@@ -67,16 +67,16 @@ El rendimiento es notablemente superior al modelo base `bge-m3` en todas las mé
 - VRAM estimada en bf16 o fp16: aproximadamente 1,14 GB para los pesos, más el overhead de ejecución y batch. En la práctica se recomienda disponer de al menos 2 GB de VRAM para inferencia con lotes modestos.
 - GPU recomendadas: cualquier GPU moderna con 2 GB o más de VRAM (RTX 2050, RTX 3060, GTX 16xx, A100, etc.). No se requiere una GPU de gama alta para obtener buen rendimiento.
 - Es viable ejecutarlo en CPU para lotes pequeños y casos de uso con baja latencia, gracias a su tamaño contenido.
-- Opciones de despliegue: `sentence-transformers` (Python), HuggingFace `text-embeddings-inference` (TEI), o mediante el pipeline de HuggingFace. También se puede exportar a ONNX para entornos optimizados.
+- Opciones de despliegue: `sentence-transformers` (Python), Hugging Face `text-embeddings-inference` (TEI), o mediante el pipeline de Hugging Face. También se puede exportar a ONNX para entornos optimizados.
 - Latencia y throughput: no disponible. No se han publicado medidas de rendimiento de inferencia en la información facilitada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Dimensiones | Rendimiento kk Recall@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| darmm-embed-kazakh-v2 | 567.754.752 | 8192 tokens | 1024 | 0.716 | Apache 2.0 | HuggingFace |
-| BAAI/bge-m3 | ~568M (oficial) | 8192 tokens | 1024 | 0.666 | Apache 2.0 | HuggingFace |
-| darmm-embedding-multilingual (v1) | no disponible | no disponible | no disponible | 0.662 | Apache 2.0 | HuggingFace |
+| darmm-embed-kazakh-v2 | 567.754.752 | 8192 tokens | 1024 | 0.716 | Apache 2.0 | Hugging Face |
+| BAAI/bge-m3 | ~568M (oficial) | 8192 tokens | 1024 | 0.666 | Apache 2.0 | Hugging Face |
+| darmm-embedding-multilingual (v1) | no disponible | no disponible | no disponible | 0.662 | Apache 2.0 | Hugging Face |
 
 El modelo actual es una mejora directa de su predecesor v1 y una optimización de `bge-m3` para el idioma kazajo. La principal ventaja frente a `bge-m3` es la adaptación al vocabulario y la estructura morfológica del kazajo, así como la alineación cross-lingual con ruso e inglés, que se traduce en mejores resultados de recuperación.
 
@@ -91,7 +91,7 @@ El modelo actual es una mejora directa de su predecesor v1 y una optimización d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Darmm/darmm-embed-kazakh-v2
+- Modelo en Hugging Face: https://huggingface.co/Darmm/darmm-embed-kazakh-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Darmm/darmm-kk-retrieval-pairs
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Script de evaluación (eval_embed.py): https://huggingface.co/Darmm/darmm-embed-kazakh-v2/blob/main/eval_embed.py

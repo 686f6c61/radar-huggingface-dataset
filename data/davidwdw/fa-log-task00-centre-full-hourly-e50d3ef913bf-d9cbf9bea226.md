@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque el objeto pu
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No disponible. No es posible identificar modelos comparables porque el objeto pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-e50d3ef913bf-d9cbf9bea226
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-e50d3ef913bf-d9cbf9bea226
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (no se ha localizado un enlace publico)
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - Resultados de la busqueda web: las consultas realizadas no devolvieron ningun enlace relevante sobre este artefacto; unicamente aparecieron paginas genericas de inicio de sesion de redes sociales y de mapas, sin relacion con el modelo.

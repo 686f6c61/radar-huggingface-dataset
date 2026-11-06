@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rachel-luxangel-ai/zit-bl0-short` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace bajo la librería `diffusers`. No se trata de un modelo completo, sino de un ajuste de bajo rango que se aplica sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`. Su función es incorporar un personaje concreto (identificado en la model card como "Short blonde") mediante la palabra disparadora `bl0_sh0rt`, de modo que cualquier prompt que la incluya reproduzca ese personaje de forma consistente.
+`rachel-luxangel-ai/zit-bl0-short` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face bajo la librería `diffusers`. No se trata de un modelo completo, sino de un ajuste de bajo rango que se aplica sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`. Su función es incorporar un personaje concreto (identificado en la model card como "Short blonde") mediante la palabra disparadora `bl0_sh0rt`, de modo que cualquier prompt que la incluya reproduzca ese personaje de forma consistente.
 
 El artefacto es pequeño: el repositorio ocupa 0,2 GB e incluye el fichero `bl0-short.safetensors`. La model card indica que procede de la versión 2781807 de CivitAI, lo que sitúa su origen en un flujo de trabajo de entrenamiento orientado a personajes, no en un pipeline de investigación con documentación técnica asociada.
 
@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye alternativas comparables 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zit-bl0-short | no disponible (repo 0,2 GB) | no aplicable | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| zit-bl0-short | no disponible (repo 0,2 GB) | no aplicable | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,13 +90,13 @@ No disponible. La informacion proporcionada no incluye alternativas comparables 
 - Riesgo de alucinacion visual: como todo modelo de difusion, puede generar anatomia incorrecta (manos, ojos, proporciones), texto ilegible en la imagen y artefactos en fondos complejos.
 - Sesgos no evaluados: no se han publicado analisis de sesgo de genero, etnia, edad o complexion, a pesar de que el modelo representa un personaje humano concreto.
 - Idiomas: se desconoce el soporte multilingue real de los prompts; la model card solo muestra un ejemplo en ingles con el token `bl0_sh0rt`.
-- Trazabilidad externa: el artefacto remite a una version de CivitAI (2781807) cuyas condiciones de uso pueden diferir de las de HuggingFace.
+- Trazabilidad externa: el artefacto remite a una version de CivitAI (2781807) cuyas condiciones de uso pueden diferir de las de Hugging Face.
 - Madurez nula: 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente por parte de la comunidad.
 - Se recomienda no desplegarlo en un producto comercial sin confirmar antes la licencia del adaptador y la del modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-bl0-short
+- Modelo en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-bl0-short
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Version de origen en CivitAI: https://civitai.com/api/v1/model-versions/2781807
 - Documentacion de LoRA en diffusers: no disponible en la informacion proporcionada

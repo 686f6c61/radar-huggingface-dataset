@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Pasos | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akhaliq/p-h3-image-turbo-lora (este) | LoRA turbo para P-H3-Image | 6 (recomendado) / 4 | hasta 2912×2912 | minimax-h3-community-license-agreement | HuggingFace |
-| PrunaAI/P-H3-Image (base) | Transformer de difusión de imagen | 8 | hasta 2912×2912 | minimax-h3-community-license-agreement | HuggingFace |
-| InstantX/MiniMax-H3-Turbo-Lora-Diffusers | LoRA turbo para MiniMax-H3 (vídeo) | 4 | no disponible | Apache-2.0 | HuggingFace |
-| moe-kill/H3-Turbo-Neat | LoRA turbo en formato ComfyUI para H3 | no disponible | no disponible | no disponible | HuggingFace |
+| akhaliq/p-h3-image-turbo-lora (este) | LoRA turbo para P-H3-Image | 6 (recomendado) / 4 | hasta 2912×2912 | minimax-h3-community-license-agreement | Hugging Face |
+| PrunaAI/P-H3-Image (base) | Transformer de difusión de imagen | 8 | hasta 2912×2912 | minimax-h3-community-license-agreement | Hugging Face |
+| InstantX/MiniMax-H3-Turbo-Lora-Diffusers | LoRA turbo para MiniMax-H3 (vídeo) | 4 | no disponible | Apache-2.0 | Hugging Face |
+| moe-kill/H3-Turbo-Neat | LoRA turbo en formato ComfyUI para H3 | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de generación de imágenes en la información proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de generaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhaliq/p-h3-image-turbo-lora
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/p-h3-image-turbo-lora
 - Modelo base: https://huggingface.co/PrunaAI/P-H3-Image
 - Licencia del modelo base: https://huggingface.co/PrunaAI/P-H3-Image/blob/main/LICENSE
 - Dataset de comparativas A/B: https://huggingface.co/datasets/akhaliq/p-h3-turbo-ab

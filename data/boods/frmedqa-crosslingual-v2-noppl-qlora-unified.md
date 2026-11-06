@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-v2-NoPPL-qlora-Unified es un modelo publicado en HuggingFace por el usuario boods. Por el nombre del repositorio se deduce que se trata de un ajuste fino orientado a preguntas y respuestas de dominio medico, con componente multilingue (probablemente frances e ingles), entrenado con QLoRA y con una variante sin evaluacion de perplejidad, pero ninguna de estas caracteristicas esta confirmada en la model card, que es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva.
+FrMedQA-CrossLingual-v2-NoPPL-qlora-Unified es un modelo publicado en Hugging Face por el usuario boods. Por el nombre del repositorio se deduce que se trata de un ajuste fino orientado a preguntas y respuestas de dominio medico, con componente multilingue (probablemente frances e ingles), entrenado con QLoRA y con una variante sin evaluacion de perplejidad, pero ninguna de estas caracteristicas esta confirmada en la model card, que es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva.
 
 La model card no especifica desarrollador efectivo, modelo base, datos de entrenamiento, hiperparametros ni resultados de evaluacion: todos los campos figuran como "[More Information Needed]". Los unicos datos verificables son los metadatos del Hub: biblioteca transformers, pesos en safetensors, etiqueta unsloth (lo que indica que el ajuste se hizo con esa libreria), compatibilidad con endpoints de inferencia y un tamano de repositorio de 0,5 GB.
 
@@ -39,7 +39,7 @@ Respecto al entrenamiento, lo unico deducible del identificador del repositorio 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Vision, audio u otras modalidades: no disponible.
 - Modo de razonamiento explicito (thinking): no disponible.
-- Relleno de plantilla de HuggingFace: la model card es la autogenerada, sin secciones completadas.
+- Relleno de plantilla de Hugging Face: la model card es la autogenerada, sin secciones completadas.
 
 ## Casos de uso
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible. Sin conocer el numero de parametros ni la longitud de contexto, no es posible calcularla.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. El tamano del repositorio (0,5 GB) es compatible con pesos de un modelo de orden de cientos de millones de parametros en precision de 16 bits, pero se trata de una estimacion indirecta basada solo en el tamano del archivo, no en datos declarados.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` y el formato safetensors indican compatibilidad con el ecosistema transformers y con HuggingFace Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama ni TGI; el soporte de llama.cpp requeriria pesos en GGUF, que no se declaran.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` y el formato safetensors indican compatibilidad con el ecosistema transformers y con Hugging Face Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama ni TGI; el soporte de llama.cpp requeriria pesos en GGUF, que no se declaran.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No disponible. La comparativa con alternativas de la misma categoria (por ejempl
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace y no responde a ninguna de las preguntas sobre uso previsto, datos o evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face y no responde a ninguna de las preguntas sobre uso previsto, datos o evaluacion.
 - Licencia no declarada: no se puede determinar si el uso comercial esta permitido, lo que impide su adopcion en produccion.
 - Modelo base desconocido: sin saber de que modelo parte el ajuste, no se heredan garantias ni limitaciones conocidas.
 - Riesgo de alucinacion: en dominio medico, cualquier respuesta no verificada por un profesional supone un riesgo alto para el usuario final.
@@ -81,7 +81,7 @@ No disponible. La comparativa con alternativas de la misma categoria (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-Unified
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-Unified
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - Libreria unsloth, citada como etiqueta del repositorio: https://github.com/unslothai/unsloth

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| after2400/qmd-query-expansion-1.7B-mlx-mixed-4-6 | 1.720.574.976 | no disponible | safetensors (MLX) | MIT | HuggingFace, 163 descargas |
-| tobil/qmd-query-expansion-1.7B-gguf | 1,7B (aproximado, no confirmado en la informacion) | no disponible | GGUF | MIT | HuggingFace (modelo base) |
-| Qwen/Qwen3-1.7B | 1,7B (aproximado, no confirmado en la informacion) | 32 768 tokens segun el modelo base | safetensors | Apache-2.0 | HuggingFace (modelo base original) |
+| after2400/qmd-query-expansion-1.7B-mlx-mixed-4-6 | 1.720.574.976 | no disponible | safetensors (MLX) | MIT | Hugging Face, 163 descargas |
+| tobil/qmd-query-expansion-1.7B-gguf | 1,7B (aproximado, no confirmado en la informacion) | no disponible | GGUF | MIT | Hugging Face (modelo base) |
+| Qwen/Qwen3-1.7B | 1,7B (aproximado, no confirmado en la informacion) | 32 768 tokens segun el modelo base | safetensors | Apache-2.0 | Hugging Face (modelo base original) |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa entre estas variantes.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/after2400/qmd-query-expansion-1.7B-mlx-mixed-4-6
+- Modelo en Hugging Face: https://huggingface.co/after2400/qmd-query-expansion-1.7B-mlx-mixed-4-6
 - Modelo base (GGUF): https://huggingface.co/tobil/qmd-query-expansion-1.7B-gguf
 - Modelo base original Qwen3: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio qmd: https://github.com/tobi/qmd

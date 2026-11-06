@@ -91,9 +91,9 @@ Advertencias del propio autor sobre estas cifras: el conjunto de 60 filas tiene 
 
 | Modelo | Parametros | Contexto | Rendimiento en decision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spark-s1-4b-v3 | 4,02B (denso, LoRA r16 fusionada) | no especificado en la model card | 0,850 en tool-call (n=60); 0,771-0,790 en conjuntos propios y externos | apache-2.0 | Pesos abiertos en HuggingFace |
+| spark-s1-4b-v3 | 4,02B (denso, LoRA r16 fusionada) | no especificado en la model card | 0,850 en tool-call (n=60); 0,771-0,790 en conjuntos propios y externos | apache-2.0 | Pesos abiertos en Hugging Face |
 | Jev (TypeSafe AI) | no disponible | no disponible | 0,917 registrado en el conjunto de tool-call de 60 filas; 421,6 ms p50 en servicio hospedado | no disponible (sistema de referencia, no abierto) | no disponible como pesos; solo referencia registrada |
-| Qwen/Qwen3-4B | 4,02B (denso) | 32.768 tokens nativos, ampliable con YaRN | No comparable de forma directa: es un modelo generativo sin el contrato de menu ni cabeza de decision; no se publican resultados en estos conjuntos | apache-2.0 | Pesos abiertos en HuggingFace |
+| Qwen/Qwen3-4B | 4,02B (denso) | 32.768 tokens nativos, ampliable con YaRN | No comparable de forma directa: es un modelo generativo sin el contrato de menu ni cabeza de decision; no se publican resultados en estos conjuntos | apache-2.0 | Pesos abiertos en Hugging Face |
 | Otras versiones spark-s1 | no disponible | no disponible | no disponible | no disponible | La model card anuncia publicaciones versionadas `spark-s1-<tamano>-v<n>`, pero no detalla cuales existen |
 
 No hay en la informacion disponible resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) que permitan comparar este modelo con alternativas generativas de su misma escala.
@@ -110,11 +110,11 @@ No hay en la informacion disponible resultados de benchmarks estandar (MMLU, Hum
 - No tiene entrenamiento de calibracion basado en resultados (RLCD); esta planificado sobre un dataset mayor.
 - Solo ingles: no hay soporte multilingue declarado ni evaluado.
 - La licencia de los pesos es Apache-2.0, heredada del backbone Qwen/Qwen3-4B, pero los datos de entrenamiento se generaron y verificaron con Gemma-4-26B-A4B, Qwen3.6-35B-A3B y Qwen3.6-27B; el propio autor recomienda revisar los terminos de esos modelos para uso comercial.
-- Cero adopcion registrada en HuggingFace (0 descargas, 0 likes) y publicacion muy reciente (20 de septiembre de 2026), por lo que no hay validacion independiente de los resultados.
+- Cero adopcion registrada en Hugging Face (0 descargas, 0 likes) y publicacion muy reciente (20 de septiembre de 2026), por lo que no hay validacion independiente de los resultados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishek085/spark-s1-4b-v3
+- Modelo en Hugging Face: https://huggingface.co/abhishek085/spark-s1-4b-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/abhishek085/spark-s1-osdg-v1
 - Repositorio del contrato y servidor de decision: https://github.com/abhishek085/open-spark-jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

@@ -78,7 +78,7 @@ CPU de referencia: Intel Core Ultra 9 275HX, 16 hilos. Q6_K no muestra perdida m
 - VRAM / memoria para inferencia: 0,53 GB (Q4_K_M), 0,63 GB (Q6_K), 0,81 GB (Q8_0), 1,52 GB (BF16 GGUF) o 1,75 GB (safetensors bf16), mas el contexto (el ejemplo usa 4096 tokens).
 - Cabe con holgura en cualquier GPU de consumo: funciona incluso en graficas integradas (13 tokens/s en Intel Xe-LPG) y alcanza ~70 tokens/s en una RTX 5070 Ti Laptop.
 - En CPU pura (Core Ultra 9 275HX, 16 hilos): 38,8-74,9 tokens/s en solitario y 86-122 tokens/s con 8 slots concurrentes segun cuantizacion.
-- Despliegue: llama.cpp (`llama-server`), transformers y vLLM (safetensors bf16), wllama en navegador (WebGPU), y el Space de demostracion de HuggingFace.
+- Despliegue: llama.cpp (`llama-server`), transformers y vLLM (safetensors bf16), wllama en navegador (WebGPU), y el Space de demostracion de Hugging Face.
 - Requisito critico: aplicar el ban de los 103.492 token ids de `banned_token_ids.json` durante la decodificacion; sin el, un 3,5 % de las lineas sale con fragmentos en chino.
 - Usar los prompts exactos de `prompts.py` (`build_prompt`, `render`, `split_windows`) y decodificacion greedy.
 

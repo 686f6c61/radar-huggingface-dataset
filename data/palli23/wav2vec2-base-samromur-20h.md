@@ -2,11 +2,11 @@
 
 ## Resumen
 
-wav2vec2-base-samromur-20h es un modelo de reconocimiento automático del habla (ASR) en islandés publicado por el usuario palli23 en HuggingFace. Se trata de un ajuste fino de wav2vec2-base (94.402.472 parámetros) sobre un subconjunto anidado de 20 horas del corpus samromur-500h, identificado en la model card como "Miljón/samromur-500h scaling pool". El modelo forma parte de un conjunto de checkpoints de escalado asociados al trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027), cuyo objetivo es medir cómo rinde un modelo pequeño específico de idioma frente a sistemas ASR multilingües de gran tamaño.
+wav2vec2-base-samromur-20h es un modelo de reconocimiento automático del habla (ASR) en islandés publicado por el usuario palli23 en Hugging Face. Se trata de un ajuste fino de wav2vec2-base (94.402.472 parámetros) sobre un subconjunto anidado de 20 horas del corpus samromur-500h, identificado en la model card como "Miljón/samromur-500h scaling pool". El modelo forma parte de un conjunto de checkpoints de escalado asociados al trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027), cuyo objetivo es medir cómo rinde un modelo pequeño específico de idioma frente a sistemas ASR multilingües de gran tamaño.
 
 La relevancia del modelo es doble. Por un lado, es un punto de datos dentro de un estudio de escalado: permite comparar el efecto del volumen de datos de entrenamiento (20 h frente a 500 h) sobre el WER/CER en islandés. Por otro, ilustra una vía práctica para lenguas de recursos limitados: en lugar de desplegar un modelo multilingüe de más de mil millones de parámetros, se ajusta un encoder de 94 M parámetros con datos específicos del idioma, con un coste de inferencia muy inferior y posible ejecución en CPU.
 
-El modelo no incluye pipeline declarado en la ficha de HuggingFace, no publica métricas en su model card y remite al paper para los resultados de WER/CER. La información disponible es escasa: se conocen la arquitectura base, el tamaño, el idioma, la licencia y el origen del corpus de ajuste, pero no los hiperparámetros de entrenamiento, la composición exacta del subconjunto ni los resultados numéricos.
+El modelo no incluye pipeline declarado en la ficha de Hugging Face, no publica métricas en su model card y remite al paper para los resultados de WER/CER. La información disponible es escasa: se conocen la arquitectura base, el tamaño, el idioma, la licencia y el origen del corpus de ajuste, pero no los hiperparámetros de entrenamiento, la composición exacta del subconjunto ni los resultados numéricos.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: ~0,4 GB en fp32 (378 MB de pesos), ~0,2 GB en fp16 (189 MB), ~0,1 GB en INT8 (94 MB) si se cuantiza manualmente. Con activaciones y buffers de audio, un presupuesto de 1-2 GB es holgado.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de memoria sirve. Una NVIDIA RTX 3060, RTX 4090, T4 o L4 es mas que suficiente; A100/H100 no aportan ventaja apreciable para este tamano, salvo por procesamiento en lote masivo.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos ocho anos, y tambien en CPU moderna (inferencia en tiempo real probable con 4-8 nucleos, aunque no hay datos medidos en la informacion disponible).
-- Opciones de despliegue: HuggingFace Transformers (clase `Wav2Vec2ForCTC`), pipelines con `torchaudio`, exportacion a ONNX Runtime y motores de inferencia ASR basados en ONNX como sherpa-onnx. Los servidores orientados a LLM (vLLM, TGI) no son la via natural para un modelo CTC de este tipo.
+- Opciones de despliegue: Hugging Face Transformers (clase `Wav2Vec2ForCTC`), pipelines con `torchaudio`, exportacion a ONNX Runtime y motores de inferencia ASR basados en ONNX como sherpa-onnx. Los servidores orientados a LLM (vLLM, TGI) no son la via natural para un modelo CTC de este tipo.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 - Nota sobre el repositorio: el tamano declarado del repo es de 61,6 GB para un modelo de 378 MB en fp32, lo que sugiere que contiene multiples checkpoints u otros artefactos. Conviene revisar los archivos antes de descargar el repositorio completo.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto / ambito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| palli23/wav2vec2-base-samromur-20h | 94 M | Islandes (is) | ASR mono-idioma, ajuste con 20 h | CC-BY-SA-4.0 | HuggingFace (19 descargas) |
-| facebook/wav2vec2-xls-r-300m | 300 M | 128 idiomas (incluye islandes por transferencia) | ASR multilingue, preentrenamiento masivo | MIT (referencia general, no verificada en esta busqueda) | HuggingFace |
-| openai/whisper-large-v3 | ~1.550 M | ~99 idiomas (incluye islandes) | ASR + traduccion + marcas de tiempo | Apache-2.0 (referencia general, no verificada en esta busqueda) | HuggingFace |
-| facebook/mms-1b-all | ~1.000 M | mas de 1.100 idiomas | ASR multilingue masivo | CC-BY-NC-4.0 (referencia general, no verificada en esta busqueda) | HuggingFace |
+| palli23/wav2vec2-base-samromur-20h | 94 M | Islandes (is) | ASR mono-idioma, ajuste con 20 h | CC-BY-SA-4.0 | Hugging Face (19 descargas) |
+| facebook/wav2vec2-xls-r-300m | 300 M | 128 idiomas (incluye islandes por transferencia) | ASR multilingue, preentrenamiento masivo | MIT (referencia general, no verificada en esta busqueda) | Hugging Face |
+| openai/whisper-large-v3 | ~1.550 M | ~99 idiomas (incluye islandes) | ASR + traduccion + marcas de tiempo | Apache-2.0 (referencia general, no verificada en esta busqueda) | Hugging Face |
+| facebook/mms-1b-all | ~1.000 M | mas de 1.100 idiomas | ASR multilingue masivo | CC-BY-NC-4.0 (referencia general, no verificada en esta busqueda) | Hugging Face |
 
 No se dispone de comparativas de WER entre estos modelos y el presente checkpoint en la informacion proporcionada; los datos de licencia y tamano de los modelos alternativos se incluyen como referencia general y no han sido verificados en esta busqueda.
 
@@ -89,7 +89,7 @@ No se dispone de comparativas de WER entre estos modelos y el presente checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/palli23/wav2vec2-base-samromur-20h
+- Hugging Face: https://huggingface.co/palli23/wav2vec2-base-samromur-20h
 - Paper citado en la model card: "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2027) — enlace no disponible en la informacion proporcionada.
 - Corpus de escalado citado: "Miljón/samromur-500h" — enlace no disponible en la informacion proporcionada.
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a recetas de reposteria en aleman y no guardan relacion con el modelo.

@@ -74,7 +74,7 @@ El resultado agregado procede de la metrica oficial `groups.mmlu.acc,none` del E
 | Modelo | Parametros | Representacion de pesos | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MAE (dharun2049) | ~0,6B | PQ5 quinaria (≈2,46 bits/peso) | 25,35 % (5-shot) | Apache-2.0 | Checkpoint experimental, formato personalizado |
-| Qwen/Qwen3-0.6B (modelo base) | ~0,6B | BF16/FP16 | No disponible en la informacion proporcionada | Apache-2.0 | Disponible en HuggingFace |
+| Qwen/Qwen3-0.6B (modelo base) | ~0,6B | BF16/FP16 | No disponible en la informacion proporcionada | Apache-2.0 | Disponible en Hugging Face |
 | Cuantizacion ternaria (familia BitNet b1.58) | Variable | Tres estados {−s, 0, +s} | No disponible en la informacion proporcionada | Variable segun implementacion | Concepto publicado; checkpoints dispares |
 | Cuantizacion INT3 convencional | Variable | Ocho estados (3 bits) | No disponible en la informacion proporcionada | Variable | Formatos habituales (GGUF, GPTQ, etc.) |
 
@@ -96,7 +96,7 @@ La comparativa se limita a la categoria de cuantizacion de muy bajo bit sobre mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dharun2049/MAE
+- Modelo en Hugging Face: https://huggingface.co/dharun2049/MAE
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - EleutherAI Language Model Evaluation Harness: https://github.com/EleutherAI/lm-evaluation-harness
 - No se han encontrado papers, blogs, repositorios o demos adicionales asociados a este modelo en la busqueda web disponible.

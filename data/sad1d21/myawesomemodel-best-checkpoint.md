@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best-checkpoint es un modelo publicado en HuggingFace por el usuario sad1d21 bajo licencia MIT. Se distribuye a través de la librería transformers y está etiquetado con la arquitectura bert y el pipeline feature-extraction, lo que lo sitúa en la familia de encoders bidireccionales orientados a producir representaciones vectoriales más que a generar texto.
+MyAwesomeModel-best-checkpoint es un modelo publicado en Hugging Face por el usuario sad1d21 bajo licencia MIT. Se distribuye a través de la librería transformers y está etiquetado con la arquitectura bert y el pipeline feature-extraction, lo que lo sitúa en la familia de encoders bidireccionales orientados a producir representaciones vectoriales más que a generar texto.
 
 La model card indica que se trata de la selección de un checkpoint concreto, `step_1000`, elegido por obtener la mayor `eval_accuracy` entre los checkpoints de un espacio de trabajo. El autor no publica el número de parámetros, la longitud de contexto, los idiomas soportados, la composición del dataset ni el procedimiento de entrenamiento. El repositorio ocupa 0,0 GB y acumula cero descargas y cero likes, por lo que no hay evidencia de uso real por parte de la comunidad.
 
@@ -116,7 +116,7 @@ No disponible. El autor no publica el numero de parametros ni la configuracion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sad1d21/MyAwesomeModel-best-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/sad1d21/MyAwesomeModel-best-checkpoint
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

@@ -91,7 +91,7 @@ Detalle relevante: la unica diferencia entre este repositorio y su origen es el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RabiatS/chronos-2-web
+- Repositorio en Hugging Face: https://huggingface.co/RabiatS/chronos-2-web
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Origen de los ficheros ONNX: https://huggingface.co/TSFM-ai/chronos-2-onnx (commit `d999122ad90648a4f057aba78ac9e04f6c5dbb06`)
 - Repositorio de codigo de la familia Chronos (Amazon Science): https://github.com/amazon-science/chronos-forecasting

@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 |---|---|---|---|---|---|---|
 | `SimpleTuner/moss-image-sft-anyflow-stage1` | LoRA AnyFlow etapa 1 sobre MOSS-Image-SFT | LoRA rango 128 BF16; total no disponible | 512 px (entrenamiento), validación 512/1024 px | Sin métricas publicadas | apache-2.0 | Estado queued, 0/10.000 actualizaciones, sin checkpoints |
 | `SimpleTuner/moss-image-sft-anyflow-stage2` | LoRA AnyFlow etapa 2, inicializado desde la EMA de etapa 1 | LoRA; total no disponible | Validación 512/1024 px | Sin métricas publicadas | no disponible en la información | Referenciado como adaptador de inferencia; publicación de checkpoints no confirmada |
-| `OpenMOSS-Team/MOSS-Image-SFT` | Modelo base texto-a-imagen | no disponible | no disponible | Sin métricas en la información | no disponible en la información | Público en HuggingFace (referenciado) |
+| `OpenMOSS-Team/MOSS-Image-SFT` | Modelo base texto-a-imagen | no disponible | no disponible | Sin métricas en la información | no disponible en la información | Público en Hugging Face (referenciado) |
 | `bghira/anima-anyflow-e621-stage1-v2` | Receta AnyFlow de referencia sobre otro modelo base | no disponible | 512 px de área equivalente | Sin métricas en la información | no disponible en la información | Público (referenciado como configuración) |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage1
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage1
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Adaptador de etapa 2 para inferencia: https://huggingface.co/SimpleTuner/moss-image-sft-anyflow-stage2
 - Colección de experimentos AnyFlow de Anima: https://huggingface.co/collections/bghira/anyflow-anima-v10
@@ -100,5 +100,5 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Dataset CC12M: https://huggingface.co/datasets/laion/conceptual-captions-12m-webdataset
 - Leyendas largas estructuradas de CC12M: https://huggingface.co/datasets/webshart/cc12m-structured-captions
 - Dataset e621: https://huggingface.co/datasets/NebulaeWis/e621-2024-webp-4Mpixel
-- Ficheros de configuración del repositorio: `training_config.json`, `dataloader.json`, `prompts.json` (en la raíz del repositorio de HuggingFace)
+- Ficheros de configuración del repositorio: `training_config.json`, `dataloader.json`, `prompts.json` (en la raíz del repositorio de Hugging Face)
 - Previsualizaciones de validación: directorio `validation_images` del repositorio (live frente a EMA a 512 px y 1024 px)

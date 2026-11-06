@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| veriloop-coder-e2-nvfp4 (este repo) | 14,73B según safetensors (27B según model card) | 131072 en config de ejemplo | NVFP4 W4A4, group size 16, FP8 en atención | Apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| tsinghua-sigs-robot-lab/VeriLoop-E2 (base) | 27B según model card | no disponible | BF16 sin cuantizar | Apache-2.0 | HuggingFace |
+| veriloop-coder-e2-nvfp4 (este repo) | 14,73B según safetensors (27B según model card) | 131072 en config de ejemplo | NVFP4 W4A4, group size 16, FP8 en atención | Apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| tsinghua-sigs-robot-lab/VeriLoop-E2 (base) | 27B según model card | no disponible | BF16 sin cuantizar | Apache-2.0 | Hugging Face |
 | Alternativas de código de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentada es contra el modelo base sin cuantizar, del que este checkpoint hereda licencia y tokenizer. No se aportan datos de rendimiento que permitan comparar con otros modelos de código de la misma franja de parámetros.
@@ -81,7 +81,7 @@ La única comparación documentada es contra el modelo base sin cuantizar, del q
 - Dependencia de hardware: solo funciona en GPUs Blackwell con pilas compatibles con NVFP4; no es desplegable en A100, H100 ni GPUs de consumo anteriores.
 - Incompatibilidad con `transformers` estándar y con llama.cpp/Ollama por ausencia de GGUF.
 - Idiomas limitados a inglés y chino: el castellano no está soportado oficialmente y la calidad en español no está evaluada.
-- La etiqueta `8-bit` presente en los tags de HuggingFace no coincide con la cuantización real de 4 bits NVFP4; tratarla como ruido de etiquetado.
+- La etiqueta `8-bit` presente en los tags de Hugging Face no coincide con la cuantización real de 4 bits NVFP4; tratarla como ruido de etiquetado.
 - Riesgo de alucinación: inherente a los modelos generativos; no se documentan evaluaciones de fidelidad ni de tasas de error, y el dominio de código no está exento (APIs inexistentes, imports inventados).
 - Sesgos: no se aporta ninguna evaluación de sesgo, toxicidad o alineación.
 - Contexto declarado de 131072 tokens no verificado en `config.json`; usarlo como límite efectivo sin pruebas de rendimiento en contextos largos (atención degradada, coste de KV) es arriesgado.
@@ -91,7 +91,7 @@ La única comparación documentada es contra el modelo base sin cuantizar, del q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rodrigoramosrs/veriloop-coder-e2-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/rodrigoramosrs/veriloop-coder-e2-nvfp4
 - Modelo base: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
 - GitHub del cuantizador: https://github.com/rodrigoramosrs
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

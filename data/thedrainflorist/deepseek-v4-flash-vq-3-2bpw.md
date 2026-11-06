@@ -88,9 +88,9 @@ knurlogic serve ~/Knurlogic/Models/DeepSeek-V4-Flash-VQ-3.2bpw
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-VQ-3.2bpw (este) | ~36B segun safetensors / ~284B segun la model card | no disponible | VQ 3,21 bpw + affine 8-bit + MTP | MIT | HuggingFace, requiere Knurlogic |
-| deepseek-ai/DeepSeek-V4-Flash (oficial) | ~284B (base) | no disponible | expertos FP4 + atencion FP8 | no disponible | HuggingFace |
-| Conversion mlx-community con atencion 8-bit | no disponible | no disponible | FP4 expertos + atencion 8-bit | no disponible | HuggingFace |
+| DeepSeek-V4-Flash-VQ-3.2bpw (este) | ~36B segun safetensors / ~284B segun la model card | no disponible | VQ 3,21 bpw + affine 8-bit + MTP | MIT | Hugging Face, requiere Knurlogic |
+| deepseek-ai/DeepSeek-V4-Flash (oficial) | ~284B (base) | no disponible | expertos FP4 + atencion FP8 | no disponible | Hugging Face |
+| Conversion mlx-community con atencion 8-bit | no disponible | no disponible | FP4 expertos + atencion 8-bit | no disponible | Hugging Face |
 
 No se dispone de modelos comparables adicionales de la misma categoria en la informacion proporcionada.
 
@@ -110,7 +110,7 @@ No se dispone de modelos comparables adicionales de la misma categoria en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/DeepSeek-V4-Flash-VQ-3.2bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/DeepSeek-V4-Flash-VQ-3.2bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Runtime Knurlogic: https://github.com/noahzelezny/Knurlogic
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada.

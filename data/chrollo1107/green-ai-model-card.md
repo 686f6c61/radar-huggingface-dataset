@@ -62,6 +62,6 @@ No disponible. No existe información sobre otros modelos comparables, ya que es
 
 ## Enlaces
 
-- [HuggingFace: chrollo1107/green-ai-model-card](https://huggingface.co/chrollo1107/green-ai-model-card)
+- [Hugging Face: chrollo1107/green-ai-model-card](https://huggingface.co/chrollo1107/green-ai-model-card)
 - [Green AI Model - Introduction](https://green-ai-model.github.io/)
 - [Green AI Model - Documentación](https://green-ai-model.github.io/docs/1_introduction/)

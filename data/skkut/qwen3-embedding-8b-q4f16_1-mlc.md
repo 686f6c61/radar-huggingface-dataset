@@ -79,7 +79,7 @@ La comparación directa con otros modelos de embedding no es posible sin datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/skkut/qwen3-embedding-8b-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/skkut/qwen3-embedding-8b-q4f16_1-MLC
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial Qwen3-Embedding (GitHub): https://github.com/QwenLM/Qwen3-Embedding/blob/main/README.md
 - Modelo Qwen3-Embedding-8B en Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3-embedding-8b

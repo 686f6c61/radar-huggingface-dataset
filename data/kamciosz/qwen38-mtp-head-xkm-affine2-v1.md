@@ -72,7 +72,7 @@ No se dispone de comparativas de rendimiento entre estos heads.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kamciosz/qwen38-mtp-head-xkm-affine2-v1
+- Hugging Face: https://huggingface.co/Kamciosz/qwen38-mtp-head-xkm-affine2-v1
 - Modelo base: https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-bf16
 - Repositorio de referencia para llama.cpp: https://github.com/sudoingX/qwen38-mtp
 - PR de llama.cpp (referencia): https://github.com/ggml-org/llama.cpp/pull/22673 (no verificado)

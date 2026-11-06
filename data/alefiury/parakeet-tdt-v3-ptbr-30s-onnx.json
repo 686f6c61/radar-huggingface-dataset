@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "alefiury/parakeet-tdt-v3-ptBR-30s-onnx",
+  "slug": "alefiury-parakeet-tdt-v3-ptbr-30s-onnx",
+  "author": "alefiury",
+  "url": "https://huggingface.co/alefiury/parakeet-tdt-v3-ptBR-30s-onnx",
+  "created_at": "2026-11-06T04:47:51.000Z",
+  "updated_at": "2026-11-06T04:50:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx-asr",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnx-asr",
+    "onnx",
+    "nemo-conformer-tdt",
+    "parakeet",
+    "automatic-speech-recognition",
+    "pt",
+    "base_model:alexandreacff/parakeet-tdt-v3-ptBR-30s",
+    "base_model:quantized:alexandreacff/parakeet-tdt-v3-ptBR-30s",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2549923773,
+  "storage_human": "2.5 GB",
+  "base_model": "alexandreacff/parakeet-tdt-v3-ptBR-30s",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -83,7 +83,7 @@ La comparativa se ofrece como referencia de categoria (modelos densos de aproxim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Protobase-Compact-LLaMa-70B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Protobase-Compact-LLaMa-70B-GGUF
 - Modelo base: https://huggingface.co/TareksGraveyard/Protobase-Compact-LLaMa-70B
 - Pagina de overview del autor: https://hf.tst.eu/model#Protobase-Compact-LLaMa-70B-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

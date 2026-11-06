@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Bobzong/EoG-freebase-qwen2.5-7b es un modelo de lenguaje publicado en HuggingFace por el usuario Bobzong. El identificador y el recuento de parametros (7.615.616.512, segun los pesos en safetensors) indican que se trata de un ajuste o derivado del modelo base Qwen2.5-7B, un transformer decoder-only de aproximadamente 7,6 mil millones de parametros desarrollado por el equipo Qwen de Alibaba. El repositorio tiene un tamano de 15,2 GB, coherente con pesos en precision completa (bf16/fp16) para ese numero de parametros.
+Bobzong/EoG-freebase-qwen2.5-7b es un modelo de lenguaje publicado en Hugging Face por el usuario Bobzong. El identificador y el recuento de parametros (7.615.616.512, segun los pesos en safetensors) indican que se trata de un ajuste o derivado del modelo base Qwen2.5-7B, un transformer decoder-only de aproximadamente 7,6 mil millones de parametros desarrollado por el equipo Qwen de Alibaba. El repositorio tiene un tamano de 15,2 GB, coherente con pesos en precision completa (bf16/fp16) para ese numero de parametros.
 
-El sufijo "EoG-freebase" sugiere un ajuste orientado a un dominio o tarea especifica ("freebase" podria referirse a un corpus de conocimiento estructurado o a un conjunto de datos concreto), pero la ficha de HuggingFace no incluye pipeline, licencia, idiomas ni descripcion del proceso de entrenamiento. No hay informacion publica verificable sobre el dataset, el metodo de ajuste ni los objetivos del autor.
+El sufijo "EoG-freebase" sugiere un ajuste orientado a un dominio o tarea especifica ("freebase" podria referirse a un corpus de conocimiento estructurado o a un conjunto de datos concreto), pero la ficha de Hugging Face no incluye pipeline, licencia, idiomas ni descripcion del proceso de entrenamiento. No hay informacion publica verificable sobre el dataset, el metodo de ajuste ni los objetivos del autor.
 
 La relevancia de esta ficha es limitada en su estado actual: se trata de un modelo con cero descargas y un solo "like" en el momento de la consulta, sin documentacion tecnica asociada. Resulta util unicamente como referencia para quien quiera evaluar si merece la pena reproducir el ajuste sobre Qwen2.5-7B, o para trazabilidad de pesos derivados. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a paginas de facturacion de la empresa energetica E.ON y son irrelevantes.
 
@@ -56,7 +56,7 @@ Dado que no existe documentacion funcional ni evaluacion del modelo, los casos d
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tabla de evaluaciones, y la busqueda web no devolvio ningun articulo, blog o repositorio asociado al modelo. Las cifras del modelo base Qwen2.5-7B (MMLU, HumanEval, GSM8K, etc.) aparecen en el informe tecnico de Qwen, pero no son extrapolables a este ajuste sin una evaluacion propia.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tabla de evaluaciones, y la busqueda web no devolvio ningun articulo, blog o repositorio asociado al modelo. Las cifras del modelo base Qwen2.5-7B (MMLU, HumanEval, GSM8K, etc.) aparecen en el informe tecnico de Qwen, pero no son extrapolables a este ajuste sin una evaluacion propia.
 
 ## Requisitos de hardware
 
@@ -76,10 +76,10 @@ La comparativa se establece frente al modelo base y a alternativas de tamano equ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bobzong/EoG-freebase-qwen2.5-7b | 7,62B | no disponible | no disponible | HuggingFace, solo safetensors |
-| Qwen/Qwen2.5-7B | 7,62B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| meta-llama/Llama-3.1-8B | 8,03B | 128.000 | Llama 3.1 Community License | HuggingFace, safetensors |
-| mistralai/Mistral-7B-v0.3 | 7,25B | 32.768 | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| Bobzong/EoG-freebase-qwen2.5-7b | 7,62B | no disponible | no disponible | Hugging Face, solo safetensors |
+| Qwen/Qwen2.5-7B | 7,62B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| meta-llama/Llama-3.1-8B | 8,03B | 128.000 | Llama 3.1 Community License | Hugging Face, safetensors |
+| mistralai/Mistral-7B-v0.3 | 7,25B | 32.768 | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 Frente a estas alternativas, la unica ventaja diferencial del modelo de Bobzong seria el efecto del ajuste especifico, que no esta documentado ni evaluado. En licencia, contexto y disponibilidad de cuantizaciones queda por detras de los tres modelos de referencia.
 

@@ -75,5 +75,5 @@ La comparación con BEiT-base oficial y con CLIP-base resulta desigual: ambos so
 - No apto para producción: sin benchmarks, sin entrenamiento y sin soporte de despliegue estándar.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/myrakumar/beit-experiment11
+- Modelo en Hugging Face: https://huggingface.co/myrakumar/beit-experiment11
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

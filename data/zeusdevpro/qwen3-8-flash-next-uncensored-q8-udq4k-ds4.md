@@ -112,7 +112,7 @@ La comparación se limita a lo que la model card menciona explícitamente. No se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K-DS4
+- Repositorio en Hugging Face: https://huggingface.co/zeusdevpro/Qwen3.8-Flash-Next-Uncensored-Q8-UDQ4K-DS4
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Versión del mismo ecosistema citada por el autor: https://huggingface.co/ivanfioravanti/Qwen3.8-Flash-Next-DS4-Q4
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo, su arquitectura upstream ni el runtime DwarfStar (ds4). Los resultados devueltos por el buscador no guardan relación con el modelo (foros de viajeros frecuentes) y se descartan. No hay papers, blogs técnicos, repositorios de código ni demos verificables disponibles.

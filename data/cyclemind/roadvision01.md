@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CycleMind/roadvision01 es un modelo publicado por el usuario CycleMind en HuggingFace, con un tamaño de repositorio de 0,1 GB y etiquetado como ONNX y region:us. No se dispone de información pública sobre su arquitectura, parámetros, pipeline, licencia o idiomas soportados. A fecha de su última actualización (15 de agosto de 2026), el modelo no registra descargas y cuenta con un único "like", lo que sugiere que se trata de una publicación muy reciente o experimental.
+CycleMind/roadvision01 es un modelo publicado por el usuario CycleMind en Hugging Face, con un tamaño de repositorio de 0,1 GB y etiquetado como ONNX y region:us. No se dispone de información pública sobre su arquitectura, parámetros, pipeline, licencia o idiomas soportados. A fecha de su última actualización (15 de agosto de 2026), el modelo no registra descargas y cuenta con un único "like", lo que sugiere que se trata de una publicación muy reciente o experimental.
 
 Dada la ausencia total de documentación técnica, métricas o ejemplos de uso, no es posible determinar qué problema resuelve ni por qué sería relevante en el ecosistema actual de modelos de IA. Cualquier evaluación rigurosa requeriría acceso al contenido del repositorio (pesos, configuraciones, scripts) que no se ha proporcionado en la información disponible.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/CycleMind/roadvision01
+- Repositorio de Hugging Face: https://huggingface.co/CycleMind/roadvision01

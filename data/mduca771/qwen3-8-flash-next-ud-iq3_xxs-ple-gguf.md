@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-UD-IQ3_XXS-PLE-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-UD-IQ3_XXS-PLE-GGUF
 - Tabla PLE independiente: https://huggingface.co/mduca771/Qwen3.8-Flash-Next-PLE-tables-GGUF
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Variante RCO (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF

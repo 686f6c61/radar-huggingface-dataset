@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sentinel-Drishti es un repositorio de modelo alojado en HuggingFace bajo el identificador `kuchvo/Sentinel-Drishti`, publicado por el usuario kuchvo con licencia MIT. En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", y no tiene definido ningun pipeline de HuggingFace (text-generation, image-text-to-text, etc.), lo que impide clasificarlo en una categoria funcional concreta.
+Sentinel-Drishti es un repositorio de modelo alojado en Hugging Face bajo el identificador `kuchvo/Sentinel-Drishti`, publicado por el usuario kuchvo con licencia MIT. En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", y no tiene definido ningun pipeline de Hugging Face (text-generation, image-text-to-text, etc.), lo que impide clasificarlo en una categoria funcional concreta.
 
 La model card publicada no contiene informacion tecnica alguna: el unico contenido es la linea de frontmatter `license: mit`. No se documentan arquitectura, numero de parametros, longitud de contexto, idiomas, formato de pesos, datos de entrenamiento ni resultados de evaluacion. Tampoco existe ningun articulo, paper, blog o repositorio asociado localizable mediante busqueda web.
 
@@ -84,6 +84,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kuchvo/Sentinel-Drishti
+- Hugging Face: https://huggingface.co/kuchvo/Sentinel-Drishti
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados (foros de preguntas y respuestas y discusiones sobre codificacion de URLs) no guardan relacion con Sentinel-Drishti y se descartan como fuentes.

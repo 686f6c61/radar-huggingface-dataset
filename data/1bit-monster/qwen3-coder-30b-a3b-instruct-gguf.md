@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks de calidad en la informacion dispon
 
 | Modelo | Parametros (total / activos) | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 1bit-MONSTER/Qwen3-Coder-30B-A3B-Instruct-GGUF (esta ficha) | ~30,5B / ~3B | no disponible | GGUF Q4_K_M (~18,6 GB) | Apache 2.0 | Publicado en HuggingFace; 0 descargas, 0 likes |
+| 1bit-MONSTER/Qwen3-Coder-30B-A3B-Instruct-GGUF (esta ficha) | ~30,5B / ~3B | no disponible | GGUF Q4_K_M (~18,6 GB) | Apache 2.0 | Publicado en Hugging Face; 0 descargas, 0 likes |
 | Qwen/Qwen3-Coder-30B-A3B-Instruct (modelo base) | ~30,5B / ~3B | no disponible | safetensors (bf16; ~61 GB de pesos, estimado) | Apache 2.0 | Repositorio oficial de Qwen |
 | unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF | ~30,5B / ~3B | no disponible | GGUF (varias cuantizaciones, segun el autor de la cuantizacion) | Apache 2.0 | Repositorio de Unsloth; origen del fichero Q4_K_M aqui redistribuido |
 

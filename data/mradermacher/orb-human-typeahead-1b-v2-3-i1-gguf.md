@@ -71,7 +71,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 - El repositorio no incluye pesos en safetensors, solo GGUF y el fichero imatrix; para otros formatos hay que acudir al modelo base.
 
 ## Enlaces
-- [HuggingFace: mradermacher/orb-human-typeahead-1b-v2.3-i1-GGUF](https://huggingface.co/mradermacher/orb-human-typeahead-1b-v2.3-i1-GGUF)
+- [Hugging Face: mradermacher/orb-human-typeahead-1b-v2.3-i1-GGUF](https://huggingface.co/mradermacher/orb-human-typeahead-1b-v2.3-i1-GGUF)
 - [Modelo base: chartreuse-verte/orb-human-typeahead-1b-v2.3](https://huggingface.co/chartreuse-verte/orb-human-typeahead-1b-v2.3)
 - [Cuantizaciones estaticas: mradermacher/orb-human-typeahead-1b-v2.3-GGUF](https://huggingface.co/mradermacher/orb-human-typeahead-1b-v2.3-GGUF)
 - [Pagina de descargas del cuantizador](https://hf.tst.eu/model#orb-human-typeahead-1b-v2.3-i1-GGUF)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jacobdavislih/contrastive-learning` es un repositorio de HuggingFace publicado por el usuario jacobdavislih que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado en el sentido habitual. La model card lo describe explicitamente como un conjunto estructurado de notas de investigacion sobre aprendizaje contrastivo, con referencias de evaluacion y preguntas abiertas, y aclara que no se reclama ninguna mejora de benchmark, ablacion completada, codigo publicado ni checkpoint entrenado.
+`jacobdavislih/contrastive-learning` es un repositorio de Hugging Face publicado por el usuario jacobdavislih que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado en el sentido habitual. La model card lo describe explicitamente como un conjunto estructurado de notas de investigacion sobre aprendizaje contrastivo, con referencias de evaluacion y preguntas abiertas, y aclara que no se reclama ninguna mejora de benchmark, ablacion completada, codigo publicado ni checkpoint entrenado.
 
 El artefacto principal es `review.md`, un documento de notas que cubre el alcance de la pregunta de investigacion, posibles factores de confusion, una propuesta de comparacion con baselines emparejados, contexto de evaluacion con benchmarks publicos, comprobaciones de reproducibilidad y modos de fallo. El apartado de safetensors contiene un tensor de 49.600 parametros, un tamano irrelevante para cualquier uso generativo y coherente con un repositorio de notas mas que con un modelo desplegable.
 
-Por tanto, esta ficha documenta un repositorio de investigacion, no un modelo de lenguaje utilizable. Es relevante unicamente como material de referencia metodologica sobre aprendizaje contrastivo y como ejemplo de publicacion de notas en HuggingFace bajo licencia MIT; no debe evaluarse como candidato para inferencia, despliegue o integracion en produccion.
+Por tanto, esta ficha documenta un repositorio de investigacion, no un modelo de lenguaje utilizable. Es relevante unicamente como material de referencia metodologica sobre aprendizaje contrastivo y como ejemplo de publicacion de notas en Hugging Face bajo licencia MIT; no debe evaluarse como candidato para inferencia, despliegue o integracion en produccion.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ No hay informacion sobre datos de entrenamiento, numero de tokens, composicion d
 - Plantilla de diseno experimental: reutilizar la estructura de la nota (alcance, baselines, benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo) como esqueleto para documentar un estudio interno antes de ejecutarlo.
 - Revision de reproducibilidad: usar la lista de comprobaciones sugerida (versiones de dataset, comandos, semillas, hardware, logs) como checklist para validar experimentos de aprendizaje contrastivo en otro repositorio.
 - Formacion interna: emplear las referencias y preguntas abiertas como material de lectura para un equipo que se inicia en funciones de perdida contrastivas.
-- Catalogacion de artefactos de investigacion: ejemplo de como publicar notas exploratorias en HuggingFace separando claramente hipotesis de resultados, util para definir convenciones de documentacion en un laboratorio.
+- Catalogacion de artefactos de investigacion: ejemplo de como publicar notas exploratorias en Hugging Face separando claramente hipotesis de resultados, util para definir convenciones de documentacion en un laboratorio.
 - Auditoria de repositorios: caso de referencia para distinguir un repositorio de notas de un checkpoint desplegable cuando se revisan tags como `safetensors` o `transformer` en el Hub.
 
 ## Benchmarks y rendimiento
@@ -71,4 +71,4 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacobdavislih/contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/jacobdavislih/contrastive-learning

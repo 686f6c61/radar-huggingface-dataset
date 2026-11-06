@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto `davidwdw/fa-code-task00-centre-pilot-v3-4126e10d4a91` es un repositorio alojado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, no contiene una ficha de modelo al uso sino un paquete de archivo de una flota privada: "Private fleet archive. Canonical recipe: evaluations/2026-09-23_task00_centre_recovery_pilot". El autor indica que se trata de un snapshot ("This package is a snapshot, not a live directory mirror") y recomienda usar exactamente la revision registrada y verificar el fichero `SHA256SUMS`. No se publica informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento.
+El artefacto `davidwdw/fa-code-task00-centre-pilot-v3-4126e10d4a91` es un repositorio alojado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, no contiene una ficha de modelo al uso sino un paquete de archivo de una flota privada: "Private fleet archive. Canonical recipe: evaluations/2026-09-23_task00_centre_recovery_pilot". El autor indica que se trata de un snapshot ("This package is a snapshot, not a live directory mirror") y recomienda usar exactamente la revision registrada y verificar el fichero `SHA256SUMS`. No se publica informacion sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento.
 
 El unico dato funcional que aporta la model card es la clasificacion del paquete en el "Tier: code", con una nota sobre los inputs: "inputs symlink to public B1k_Rollouts excluded", es decir, los enlaces simbolicos a un conjunto de rollouts publico denominado B1k_Rollouts han sido excluidos del paquete. Esto sugiere que el contenido original era el resultado de una evaluacion o generacion de tareas de codigo, pero el repositorio distribuido no incluye esos datos enlazados, por lo que su contenido efectivo no se puede verificar desde la informacion publica disponible.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No disponible. No se conoce la categoria real del artefacto (checkpoint de modelo, paquete de evaluacion o archivo de resultados), por lo que no procede compararlo con modelos de parametros o tareas equivalentes. La unica comparacion posible es metodologica, frente a otros repositorios publicados en HuggingFace, y en ese eje destaca por lo siguiente: ausencia total de licencia, idiomas y pipeline declarados, cero descargas y cero likes, y una model card de tres lineas centrada en el proceso de archivado en lugar de en las caracteristicas tecnicas.
+No disponible. No se conoce la categoria real del artefacto (checkpoint de modelo, paquete de evaluacion o archivo de resultados), por lo que no procede compararlo con modelos de parametros o tareas equivalentes. La unica comparacion posible es metodologica, frente a otros repositorios publicados en Hugging Face, y en ese eje destaca por lo siguiente: ausencia total de licencia, idiomas y pipeline declarados, cero descargas y cero likes, y una model card de tres lineas centrada en el proceso de archivado en lugar de en las caracteristicas tecnicas.
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No disponible. No se conoce la categoria real del artefacto (checkpoint de model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v3-4126e10d4a91
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v3-4126e10d4a91
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

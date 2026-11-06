@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `razaasherazi/text2sql-transformer` es un modelo publicado en HuggingFace por el usuario razaasherazi, bajo licencia MIT y con la etiqueta de región `us`. Por el nombre del repositorio, su proposito declarado seria la traduccion de lenguaje natural a SQL (text-to-SQL), es decir, generar consultas SQL a partir de instrucciones en lenguaje natural. No obstante, la model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin describir arquitectura, datos de entrenamiento, capacidades ni limitaciones.
+El modelo `razaasherazi/text2sql-transformer` es un modelo publicado en Hugging Face por el usuario razaasherazi, bajo licencia MIT y con la etiqueta de región `us`. Por el nombre del repositorio, su proposito declarado seria la traduccion de lenguaje natural a SQL (text-to-SQL), es decir, generar consultas SQL a partir de instrucciones en lenguaje natural. No obstante, la model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin describir arquitectura, datos de entrenamiento, capacidades ni limitaciones.
 
 La informacion disponible es, por tanto, minima. El repositorio ocupa 10,8 GB, no tiene pipeline declarado, no especifica idiomas soportados, acumula 0 descargas y 1 like, y fue creado el 30 de septiembre de 2026 con ultima actualizacion el 2 de octubre de 2026. No se ha publicado ningun resultado de benchmarks ni documentacion tecnica asociada.
 
@@ -95,7 +95,7 @@ No es posible establecer una comparativa cuantitativa: no hay ningun dato de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/razaasherazi/text2sql-transformer
+- Modelo en Hugging Face: https://huggingface.co/razaasherazi/text2sql-transformer
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

@@ -59,17 +59,17 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 - VRAM estimada para inferencia: no disponible de forma explícita. Con 16,3 mil millones de parámetros en safetensors y un repositorio de 49,1 GB, la inferencia en precisión completa requiere hardware de gama alta; no se detallan cifras oficiales.
 - GPU recomendadas: no especificadas para S2V-14B. La documentación de Wan2.2 menciona que el modelo TI2V-5B puede ejecutarse en tarjetas de consumo como la RTX 4090; para el modelo de 14B se recomienda hardware profesional (A100, H100) por el tamaño de pesos y la carga de difusión de vídeo.
 - ¿Cabe en GPU de consumo? No hay dato confirmado para este modelo de 14B; el repositorio de 49,1 GB excede la VRAM de la mayoría de GPU de consumo en precisión completa.
-- Opciones de despliegue: Diffusers (librería declarada), ComfyUI (integrado para la familia Wan2.2), y los espacios Gradio oficiales en HuggingFace y ModelScope.
+- Opciones de despliegue: Diffusers (librería declarada), ComfyUI (integrado para la familia Wan2.2), y los espacios Gradio oficiales en Hugging Face y ModelScope.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wan2.2-S2V-14B | 16,3 B | no disponible | Apache 2.0 | HuggingFace (réplica de tercero), ModelScope, wan.video |
+| Wan2.2-S2V-14B | 16,3 B | no disponible | Apache 2.0 | Hugging Face (réplica de tercero), ModelScope, wan.video |
 | Hunyuan-Avatar | no disponible | no disponible | no disponible | referencia comparativa en el paper |
 | Omnihuman | no disponible | no disponible | no disponible | referencia comparativa en el paper |
-| Wan2.2-TI2V-5B | 5 B | 720P a 24 fps | Apache 2.0 | HuggingFace (Wan-AI), Diffusers, ComfyUI |
+| Wan2.2-TI2V-5B | 5 B | 720P a 24 fps | Apache 2.0 | Hugging Face (Wan-AI), Diffusers, ComfyUI |
 
 Los datos de parámetros, contexto y licencia de Hunyuan-Avatar y Omnihuman no están disponibles en la información proporcionada; solo se citan como líneas base de comparación en el paper de Wan-S2V.
 
@@ -85,18 +85,18 @@ Los datos de parámetros, contexto y licencia de Hunyuan-Avatar y Omnihuman no e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandow1984/Wan2.2-S2V-14B
+- Repositorio Hugging Face: https://huggingface.co/brandow1984/Wan2.2-S2V-14B
 - Paper Wan-S2V: https://huggingface.co/papers/2508.18621
 - Paper base Wan2.2: https://arxiv.org/abs/2503.20314
 - Página del proyecto: https://humanaigc.github.io/wan-s2v-webpage
 - Informe técnico Wan-S2V (PDF): https://humanaigc.github.io/wan-s2v-webpage/content/wan-s2v.pdf
 - Página oficial Wan: https://wan.video
 - Repositorio GitHub: https://github.com/Wan-Video/Wan2.2
-- Organización HuggingFace: https://huggingface.co/Wan-AI/
+- Organización Hugging Face: https://huggingface.co/Wan-AI/
 - Organización ModelScope: https://modelscope.cn/organization/Wan-AI
 - Blog: https://wan.video/welcome
 - Discord: https://discord.gg/AKNgpMK4Yj
-- Espacio Gradio en HuggingFace: https://huggingface.co/spaces/Wan-AI/Wan2.2-S2V
+- Espacio Gradio en Hugging Face: https://huggingface.co/spaces/Wan-AI/Wan2.2-S2V
 - Espacio Gradio en ModelScope: https://www.modelscope.cn/studios/Wan-AI/Wan2.2-S2V
 - Guía de usuario (inglés): https://alidocs.dingtalk.com/i/nodes/EpGBa2Lm8aZxe5myC99MelA2WgN7R35y
 - Guía de usuario (chino): https://alidocs.dingtalk.com/i/nodes/jb9Y4gmKWrx9eo4dCql9LlbYJGXn6lpz

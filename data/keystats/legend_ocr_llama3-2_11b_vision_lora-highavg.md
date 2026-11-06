@@ -4,7 +4,7 @@
 
 `keystats/Legend_ocr_llama3.2_11b_vision_lora-highavg` es un adaptador LoRA publicado por el usuario keystats sobre el modelo multimodal `meta-llama/Llama-3.2-11B-Vision-Instruct`. Por el nombre del repositorio y por los otros modelos del mismo autor (`Legend_ocr`, basado en Qwen2.5-VL, y `Legend_ocr_v3`, basado en Qwen3-VL), se trata de un ajuste fino orientado a reconocimiento optico de caracteres (OCR) y extraccion de texto a partir de imagenes y documentos. El repositorio contiene unicamente los pesos del adaptador (2,4 GB en safetensors), no un modelo completo: para ejecutarlo es imprescindible descargar por separado el modelo base de Meta.
 
-El artefacto es un adaptador PEFT (libreria `peft`, version 0.21.2 declarada en la model card) con `pipeline_tag: text-generation`, aunque el modelo base es de tipo imagen-texto-a-texto. El repositorio no aporta informacion sobre el dataset de entrenamiento, hiperparametros, rango del LoRA, modulos objetivo ni resultados de evaluacion: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+El artefacto es un adaptador PEFT (libreria `peft`, version 0.21.2 declarada en la model card) con `pipeline_tag: text-generation`, aunque el modelo base es de tipo imagen-texto-a-texto. El repositorio no aporta informacion sobre el dataset de entrenamiento, hiperparametros, rango del LoRA, modulos objetivo ni resultados de evaluacion: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 Su relevancia es limitada y practica: es un adaptador especializado, con 0 descargas y 0 likes en el momento de la consulta, util unicamente para quien necesite OCR sobre la arquitectura Llama 3.2 Vision en lugar de las alternativas de Qwen que el mismo autor publica. Al carecer de licencia declarada y de documentacion de entrenamiento, su adopcion en produccion requiere una verificacion previa por parte del equipo que lo integre.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada y practica: es un adaptador especializado, con 0 desca
 | Tipo de artefacto | Adaptador, no modelo completo; requiere cargar el modelo base |
 | Libreria declarada | peft 0.21.2, transformers |
 | Tamano del repositorio | 2,4 GB |
-| Fecha de publicacion | 2026-10-04 segun los metadatos de HuggingFace |
+| Fecha de publicacion | 2026-10-04 segun los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ La diferencia principal frente al modelo base es que este artefacto es un adapta
 - La model card no documenta sesgos conocidos, pero el adaptador hereda los sesgos del modelo base Llama 3.2, entrenado predominantemente con datos en ingles.
 - Riesgo de alucinacion: no hay evaluacion publicada para este adaptador; en tareas de OCR, los modelos vision-lenguaje pueden inventar caracteres o completar palabras de forma plausible cuando la imagen es de baja calidad.
 - No se documenta el dataset de entrenamiento, por lo que no se puede evaluar la cobertura de idiomas, tipos de documento ni dominios.
-- La licencia del adaptador no esta declarada en HuggingFace. Cualquier uso comercial depende de la Llama 3.2 Community License del modelo base, que impone condiciones de atribucion y una clausula de escala (700 millones de usuarios activos mensuales).
+- La licencia del adaptador no esta declarada en Hugging Face. Cualquier uso comercial depende de la Llama 3.2 Community License del modelo base, que impone condiciones de atribucion y una clausula de escala (700 millones de usuarios activos mensuales).
 - Sesgos tipicos del OCR: rendimiento desigual entre alfabetos latin y no latino, problemas con caligrafia, tablas complejas, formulas matematicas y documentos con ruido o baja resolucion.
 - El sufijo `highavg` no esta explicado por el autor: no se puede saber si implica un promediado de checkpoints ni que impacto tiene en la calidad resultante.
 - Cero descargas y cero likes en el momento de la consulta, sin historial de validacion por parte de la comunidad.
@@ -93,7 +93,7 @@ La diferencia principal frente al modelo base es que este artefacto es un adapta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keystats/Legend_ocr_llama3.2_11b_vision_lora-highavg
+- Modelo en Hugging Face: https://huggingface.co/keystats/Legend_ocr_llama3.2_11b_vision_lora-highavg
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct
 - Legend_ocr (variante sobre Qwen2.5-VL): https://huggingface.co/keystats/Legend_ocr
 - Legend_ocr_v3 (variante sobre Qwen3-VL): https://huggingface.co/keystats/Legend_ocr_v3

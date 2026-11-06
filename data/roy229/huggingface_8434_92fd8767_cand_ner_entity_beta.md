@@ -66,4 +66,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Roy229/huggingface_8434_92fd8767_cand_ner_entity_beta](https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_ner_entity_beta)
+- [Hugging Face - Roy229/huggingface_8434_92fd8767_cand_ner_entity_beta](https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_ner_entity_beta)

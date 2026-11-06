@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ebisuke/integrator` es un repositorio de pesos publicado en HuggingFace por el usuario `ebisuke`, distribuido en formato `safetensors` y con un total de 1.768.779.264 parametros (aproximadamente 1,77 mil millones). Se trata de un identificador con actividad muy baja: 36 descargas y 0 "likes" desde su creacion el 19 de septiembre de 2026, y sin actualizaciones posteriores registradas ese mismo dia.
+`ebisuke/integrator` es un repositorio de pesos publicado en Hugging Face por el usuario `ebisuke`, distribuido en formato `safetensors` y con un total de 1.768.779.264 parametros (aproximadamente 1,77 mil millones). Se trata de un identificador con actividad muy baja: 36 descargas y 0 "likes" desde su creacion el 19 de septiembre de 2026, y sin actualizaciones posteriores registradas ese mismo dia.
 
 El repositorio no incluye tarjeta de modelo con informacion sustantiva: no se declara pipeline, licencia, idiomas soportados, arquitectura ni procedimiento de entrenamiento. La unica etiqueta descriptiva es `integrator`, ademas de `safetensors` y `region:us`, lo que sugiere una publicacion de pesos en bruto sin documentacion asociada ni validacion por parte de la comunidad.
 
@@ -80,7 +80,7 @@ No se dispone de informacion verificada sobre modelos comparables en la document
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| ebisuke/integrator | 1.768.779.264 | no disponible | no disponible | no disponible | HuggingFace, 36 descargas |
+| ebisuke/integrator | 1.768.779.264 | no disponible | no disponible | no disponible | Hugging Face, 36 descargas |
 | Alternativas de la franja 1-3 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica clasificacion objetiva posible es por franja de parametros: 1,77 B situa al modelo en la categoria de modelos pequenos, donde habitualmente compiten propuestas de 1 a 3 mil millones de parametros. Cualquier comparacion de contexto, licencia o rendimiento debe verificarse en las fichas oficiales de cada modelo alternativo, ya que no forma parte de la informacion proporcionada.
@@ -100,7 +100,7 @@ La unica clasificacion objetiva posible es por franja de parametros: 1,77 B situ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ebisuke/integrator
+- Hugging Face: https://huggingface.co/ebisuke/integrator
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

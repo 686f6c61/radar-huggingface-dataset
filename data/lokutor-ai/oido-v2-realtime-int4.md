@@ -95,10 +95,10 @@ Como referencia, la versión 1 del modelo, con streaming de 1,28 s y modelo de l
 
 | Modelo | Parámetros | Contexto / streaming | LibriSpeech test-clean / other (WER %) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oído v2 A (este modelo) | no disponible (7,7 MB int4) | streaming 0,64 s; contexto completo | 7,14 / 16,37 (streaming + LM); 4,58 / 10,71 (contexto completo + LM) | CC BY-SA 4.0 | HuggingFace + GitHub |
-| Oído v2 B (este modelo) | no disponible (5,9 MB int4) | streaming 0,64 s; contexto completo | 10,63 / 22,42 (streaming + LM); 6,15 / 14,41 (contexto completo + LM) | CC BY-SA 4.0 | HuggingFace + GitHub |
+| Oído v2 A (este modelo) | no disponible (7,7 MB int4) | streaming 0,64 s; contexto completo | 7,14 / 16,37 (streaming + LM); 4,58 / 10,71 (contexto completo + LM) | CC BY-SA 4.0 | Hugging Face + GitHub |
+| Oído v2 B (este modelo) | no disponible (5,9 MB int4) | streaming 0,64 s; contexto completo | 10,63 / 22,42 (streaming + LM); 6,15 / 14,41 (contexto completo + LM) | CC BY-SA 4.0 | Hugging Face + GitHub |
 | Oído v1 | no disponible | streaming 1,28 s | 4,9 / 11,0 (streaming + LM) | no disponible | GitHub |
-| NVIDIA `stt_en_conformer_ctc_small` (modelo base) | no disponible | no orientado a streaming en microcontrolador | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace (NVIDIA) |
+| NVIDIA `stt_en_conformer_ctc_small` (modelo base) | no disponible | no orientado a streaming en microcontrolador | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face (NVIDIA) |
 
 No se dispone de datos de benchmarks de otros modelos ASR comparables en la información proporcionada, por lo que la comparativa se limita al modelo base, la versión anterior y las dos variantes publicadas.
 
@@ -117,7 +117,7 @@ No se dispone de datos de benchmarks de otros modelos ASR comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lokutor-ai/oido-v2-realtime-int4
+- Modelo en Hugging Face: https://huggingface.co/lokutor-ai/oido-v2-realtime-int4
 - Repositorio de código, firmware y herramientas: https://github.com/lokutor-ai/oido
 - Paper: https://arxiv.org/abs/2610.13447
 - Versión del paper que describe estos modelos (v2): https://github.com/lokutor-ai/oido/blob/main/docs/oido-paper.pdf

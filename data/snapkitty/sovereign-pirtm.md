@@ -70,5 +70,5 @@ No disponible. No existen modelos de IA comparables porque este repositorio no e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-pirtm
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-pirtm
 - No se encontraron otros enlaces relevantes en la búsqueda web.

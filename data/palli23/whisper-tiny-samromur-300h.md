@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-tiny-samromur-300h es un ajuste fino de Whisper-Tiny (39M de parametros, 37.760.640 reales segun los pesos en safetensors) especializado en reconocimiento automatico del habla (ASR) en islandes. Lo publica el usuario palli23 en HuggingFace y forma parte del conjunto de checkpoints de escalado del trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026). El modelo se ha entrenado sobre un subconjunto anidado de 300 horas del pool de escalado principal Miljon/samromur-500h, un corpus de habla islandesa.
+whisper-tiny-samromur-300h es un ajuste fino de Whisper-Tiny (39M de parametros, 37.760.640 reales segun los pesos en safetensors) especializado en reconocimiento automatico del habla (ASR) en islandes. Lo publica el usuario palli23 en Hugging Face y forma parte del conjunto de checkpoints de escalado del trabajo "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026). El modelo se ha entrenado sobre un subconjunto anidado de 300 horas del pool de escalado principal Miljon/samromur-500h, un corpus de habla islandesa.
 
 El problema que aborda es concreto: los modelos ASR multilingues grandes funcionan razonablemente bien en islandes, pero su coste de inferencia y despliegue es alto para una unica lengua de ~350.000 hablantes. Este checkpoint explora hasta que punto un modelo tiny (39M) puede acercarse a esos gigantes multilingues cuando se le da suficiente datos especificos de dominio, manteniendo un coste computacional minimo.
 
@@ -21,7 +21,7 @@ Su relevancia es doble. Por un lado, es un artefacto de investigacion reproducib
 | Licencia | CC-BY-SA-4.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,3 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Fecha de creacion / ultima actualizacion | 2026-06-03 / 2026-09-15 |
 | Descargas / likes | 4 / 0 |
 
@@ -52,7 +52,7 @@ El entrenamiento consiste en un ajuste fino supervisado sobre un subconjunto ani
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card remite explicitamente al paper "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026) para consultar los resultados de WER y CER, pero esos valores no se incluyen en la ficha de HuggingFace y la busqueda web asociada no ha devuelto el documento. No se dispone por tanto de cifras verificables de WER, CER ni de comparaciones cuantitativas con otros checkpoints de la serie.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card remite explicitamente al paper "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026) para consultar los resultados de WER y CER, pero esos valores no se incluyen en la ficha de Hugging Face y la busqueda web asociada no ha devuelto el documento. No se dispone por tanto de cifras verificables de WER, CER ni de comparaciones cuantitativas con otros checkpoints de la serie.
 
 ## Requisitos de hardware
 
@@ -86,9 +86,9 @@ La comparacion cuantitativa de precision no es posible con los datos disponibles
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/palli23/whisper-tiny-samromur-300h
+- Modelo en Hugging Face: https://huggingface.co/palli23/whisper-tiny-samromur-300h
 - Paper de referencia "Scaling Smaller ASR Models Against Multilingual ASR Giants" (ICASSP 2026): no disponible en los resultados de busqueda
-- Corpus Miljon/samromur-500h en HuggingFace: no disponible en los resultados de busqueda (ruta mencionada en la model card)
+- Corpus Miljon/samromur-500h en Hugging Face: no disponible en los resultados de busqueda (ruta mencionada en la model card)
 - Repositorio de la familia Whisper de OpenAI: no disponible en los resultados de busqueda
 - Demo o espacio de inferencia: no disponible
 - Resultados de la busqueda web: no relevantes para este modelo (los enlaces devueltos corresponden a conciertos de Barry Manilow y no guardan relacion con el modelo)

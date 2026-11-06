@@ -73,9 +73,9 @@ La comparativa se limita a las variantes de la misma familia PVTv2, ya que no se
 
 | Modelo | Parametros | ImageNet-1k top-1 | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pvt-v2-b3 | ~40,4 M (estimado) | 83,1 % | Apache-2.0 | HuggingFace (zeromodels) |
-| pvt-v2-b4 | ~62,6 M | 83,6 % | Apache-2.0 | HuggingFace (zeromodels) |
-| pvt-v2-b5 | ~81,6 M (estimado) | 83,8 % | Apache-2.0 | HuggingFace (zeromodels) |
+| pvt-v2-b3 | ~40,4 M (estimado) | 83,1 % | Apache-2.0 | Hugging Face (zeromodels) |
+| pvt-v2-b4 | ~62,6 M | 83,6 % | Apache-2.0 | Hugging Face (zeromodels) |
+| pvt-v2-b5 | ~81,6 M (estimado) | 83,8 % | Apache-2.0 | Hugging Face (zeromodels) |
 
 Los valores de parametros de b3 y b5 no estan confirmados en la informacion proporcionada; se indican como estimaciones. El modelo b4 ofrece un equilibrio entre tamano y precision, siendo ligeramente inferior al b5 pero con menos parametros.
 
@@ -91,10 +91,10 @@ Los valores de parametros de b3 y b5 no estan confirmados en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/pvt-v2-b4
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/pvt-v2-b4
 - Paper original (arXiv): https://arxiv.org/abs/2106.13797
 - Repositorio oficial PVT (GitHub): https://github.com/whai362/PVT
 - Documentacion de ZeroModels para PVTv2: https://imvision12.github.io/ZeroModels/pvt_v2/
-- Coleccion de variantes PVT y PVTv2 en HuggingFace: https://huggingface.co/collections/zeromodels/pvt-and-pvtv2-6a90e9dd0a2b03a982d0b876
+- Coleccion de variantes PVT y PVTv2 en Hugging Face: https://huggingface.co/collections/zeromodels/pvt-and-pvtv2-6a90e9dd0a2b03a982d0b876
 - Checkpoint original de OpenGVLab: https://huggingface.co/OpenGVLab/pvt_v2_b4
 - Documentacion de Transformers para PVTv2: https://huggingface.co/docs/transformers/model_doc/pvt_v2

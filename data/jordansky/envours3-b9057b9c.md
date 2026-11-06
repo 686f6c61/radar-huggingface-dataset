@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/envours3-b9057b9c` es un adaptador LoRA publicado en HuggingFace por el usuario Jordansky. Se presenta como un ajuste fino supervisado (SFT) sobre un modelo base identificado como `adapter:/cache/models/Jordansky--oursr1b-d53997be`, lo que sugiere que se trata de un adaptador destinado a un modelo de la familia Qwen3 (por la referencia "oursr1b" y los tags asociados a otros repositorios del mismo autor). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 1,6 GB, y está construido con la librería PEFT 0.18.1.
+El modelo `Jordansky/envours3-b9057b9c` es un adaptador LoRA publicado en Hugging Face por el usuario Jordansky. Se presenta como un ajuste fino supervisado (SFT) sobre un modelo base identificado como `adapter:/cache/models/Jordansky--oursr1b-d53997be`, lo que sugiere que se trata de un adaptador destinado a un modelo de la familia Qwen3 (por la referencia "oursr1b" y los tags asociados a otros repositorios del mismo autor). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño total de 1,6 GB, y está construido con la librería PEFT 0.18.1.
 
 La model card es un plantilla sin completar: no se especifican arquitectura, parámetros, licencia, idiomas, ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni información sobre capacidades concretas. Por tanto, esta ficha se limita a documentar lo disponible y a señalar explícitamente las carencias de información, evitando cualquier especulación.
 
@@ -21,7 +21,7 @@ La model card es un plantilla sin completar: no se especifican arquitectura, par
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que se trata de un adaptador LoRA entrenado mediante SFT (supervised fine-tuning) con la librería TRL de HuggingFace. El tag `base_model:adapter:/cache/models/Jordansky--oursr1b-d53997be` sugiere que el modelo base es un checkpoint local denominado `oursr1b`, probablemente un modelo de la familia Qwen3 de aproximadamente 1B de parámetros, aunque no se confirma en la model card. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El tag `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación de emisiones de carbono, pero no aporta información sobre la arquitectura.
+La informacion disponible indica que se trata de un adaptador LoRA entrenado mediante SFT (supervised fine-tuning) con la librería TRL de Hugging Face. El tag `base_model:adapter:/cache/models/Jordansky--oursr1b-d53997be` sugiere que el modelo base es un checkpoint local denominado `oursr1b`, probablemente un modelo de la familia Qwen3 de aproximadamente 1B de parámetros, aunque no se confirma en la model card. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El tag `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación de emisiones de carbono, pero no aporta información sobre la arquitectura.
 
 ## Capacidades
 
@@ -47,11 +47,11 @@ No disponible. Al no conocerse el modelo base ni las características del adapta
 
 - La model card no contiene información sobre sesgos, riesgos de alucinación o limitaciones de contexto.
 - No se especifica la licencia, por lo que no se puede garantizar su uso comercial ni su redistribución.
-- El adaptador depende de un modelo base no publicado en HuggingFace (referencia local `/cache/models/Jordansky--oursr1b-d53997be`), lo que dificulta su reproducibilidad.
+- El adaptador depende de un modelo base no publicado en Hugging Face (referencia local `/cache/models/Jordansky--oursr1b-d53997be`), lo que dificulta su reproducibilidad.
 - No hay evidencia de evaluación externa ni de validación en tareas concretas.
 - Se recomienda no utilizar este modelo en entornos de producción sin una evaluación previa exhaustiva.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordansky/envours3-b9057b9c
+- Repositorio Hugging Face: https://huggingface.co/Jordansky/envours3-b9057b9c
 - Otros repositorios del mismo autor (sin información adicional relevante): https://huggingface.co/Jordansky/envgfs-Qwen3benv-c, https://huggingface.co/Jordansky/test, https://huggingface.co/Jordansky/2507-r1, https://huggingface.co/Jordansky/a0ef4d73

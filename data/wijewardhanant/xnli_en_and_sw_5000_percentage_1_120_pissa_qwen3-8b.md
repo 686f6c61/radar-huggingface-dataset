@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador PEFT (LoRA, con inicializacion probablemente PiSSA) entrenado sobre el modelo base Qwen/Qwen3-8B-Base, publicado por el usuario WijewardhanaNT. No es un modelo completo ni un modelo de proposito general: se trata de un ajuste fino orientado a una tarea concreta de inferencia textual (NLI), segun se deduce del identificador del repositorio, que referencia XNLI (inferencia textual en varios idiomas), los idiomas ingles y suajili, un subconjunto de 5000 ejemplos y una configuracion "percentage_1_120". El repositorio pesa 0,5 GB, coherente con un adaptador de bajo rango mas que con pesos completos.
 
-La relevancia de esta ficha es mas metodologica que de producto. La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los apartados (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, impacto ambiental) figuran como "[More Information Needed]". El repositorio acumula 0 descargas y 0 "likes", y no se ha publicado ningun resultado de evaluacion. Por tanto, cualquier uso en produccion exige una validacion independiente previa.
+La relevancia de esta ficha es mas metodologica que de producto. La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los apartados (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, impacto ambiental) figuran como "[More Information Needed]". El repositorio acumula 0 descargas y 0 "likes", y no se ha publicado ningun resultado de evaluacion. Por tanto, cualquier uso en produccion exige una validacion independiente previa.
 
 Es importante subrayar que el adaptador se apoya en la variante Base de Qwen3, no en la variante instruct. Esto implica que no hereda alineamiento conversacional ni formato de chat: su comportamiento esperado es el de un modelo de completado de texto afinado para una tarea discriminativa. Los resultados de la busqueda web realizada no aportan informacion sobre el modelo (devuelven exclusivamente hilos de un foro de ciclismo), por lo que esta ficha se limita a los metadatos verificables del repositorio.
 
@@ -92,7 +92,7 @@ No se ha identificado en la informacion proporcionada ningun adaptador comparabl
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_PiSSA_Qwen3-8b
+- Pagina del modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_PiSSA_Qwen3-8b
 - Modelo base Qwen/Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Articulo citado en la model card (Lacoste et al., 2019, sobre el calculo de impacto ambiental): https://arxiv.org/abs/1910.09700

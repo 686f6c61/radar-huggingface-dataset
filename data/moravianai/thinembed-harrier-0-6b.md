@@ -91,7 +91,7 @@ El autor advierte que las diferencias por debajo de 0,01 nDCG@10 deben leerse co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moravianai/ThinEmbed-harrier-0.6b
+- Modelo en Hugging Face: https://huggingface.co/moravianai/ThinEmbed-harrier-0.6b
 - Modelo base: https://huggingface.co/microsoft/harrier-oss-v1-0.6b
 - Página del proyecto ThinEmbed: https://moravian.ai/query-encoders/
 - Demo en vivo: https://moravian.ai/demo

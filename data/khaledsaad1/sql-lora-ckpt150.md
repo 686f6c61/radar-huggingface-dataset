@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Khaledsaad1/sql-lora-ckpt150` es un ajuste fino (fine-tune) de tipo LoRA sobre `unsloth/mistral-7b-bnb-4bit`, un Mistral 7B cuantizado a 4 bits por Unsloth. Lo publica el usuario de HuggingFace Khaledsaad1 bajo licencia Apache 2.0. Por el nombre del repositorio y la etiqueta del ecosistema Unsloth/TRL, todo apunta a un ajuste orientado a la generacion de SQL, aunque la model card no documenta el conjunto de datos, el objetivo de entrenamiento ni el procedimiento seguido.
+El modelo `Khaledsaad1/sql-lora-ckpt150` es un ajuste fino (fine-tune) de tipo LoRA sobre `unsloth/mistral-7b-bnb-4bit`, un Mistral 7B cuantizado a 4 bits por Unsloth. Lo publica el usuario de Hugging Face Khaledsaad1 bajo licencia Apache 2.0. Por el nombre del repositorio y la etiqueta del ecosistema Unsloth/TRL, todo apunta a un ajuste orientado a la generacion de SQL, aunque la model card no documenta el conjunto de datos, el objetivo de entrenamiento ni el procedimiento seguido.
 
 La relevancia de esta ficha es limitada desde el punto de vista de la evaluacion: se trata de un repositorio con 0 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks publicados y sin pipeline declarado. El peso del repositorio es de 0,2 GB, un tamano coherente con un adaptador LoRA mas que con los pesos completos de un modelo de 7.000 millones de parametros (que en fp16 ocuparian del orden de 14 GB).
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Khaledsaad1/sql-lora-ckpt150 | Adaptador LoRA sobre Mistral 7B | 8.192 tokens (heredado) | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/mistral-7b-bnb-4bit (modelo base) | ~7.240 millones | 8.192 tokens | apache-2.0 | HuggingFace |
-| Mistral 7B Instruct | ~7.240 millones | 8.192 tokens | apache-2.0 | HuggingFace |
+| Khaledsaad1/sql-lora-ckpt150 | Adaptador LoRA sobre Mistral 7B | 8.192 tokens (heredado) | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/mistral-7b-bnb-4bit (modelo base) | ~7.240 millones | 8.192 tokens | apache-2.0 | Hugging Face |
+| Mistral 7B Instruct | ~7.240 millones | 8.192 tokens | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con otros modelos especializados en generacion de SQL. Cualquier comparacion con alternativas del tipo text-to-SQL requeriria ejecutar una evaluacion propia sobre el mismo conjunto de datos.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Khaledsaad1/sql-lora-ckpt150
+- Modelo en Hugging Face: https://huggingface.co/Khaledsaad1/sql-lora-ckpt150
 - Perfil del autor: https://huggingface.co/Khaledsaad1
 - Modelo base: https://huggingface.co/unsloth/mistral-7b-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

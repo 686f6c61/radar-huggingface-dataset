@@ -101,8 +101,8 @@ La comparación cuantitativa no puede completarse con la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/Zenith-9B-CodeCore-Merge-MLX
-- Perfil del autor en HuggingFace: https://huggingface.co/prithivMLmods
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Zenith-9B-CodeCore-Merge-MLX
+- Perfil del autor en Hugging Face: https://huggingface.co/prithivMLmods
 - Librería MLX (Apple): https://github.com/ml-explore/mlx
 - mlx-lm (ejecución de modelos de lenguaje en MLX): https://github.com/ml-explore/mlx-lm
 - mlx-vlm (modelos visión-lenguaje en MLX): https://github.com/Blaizzy/mlx-vlm

@@ -66,7 +66,7 @@ Datos de latencia reportados por el autor: aproximadamente 37 ms para un mensaje
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre es suficiente; el autor reporta unos 13 ms por inferencia en GPU, sin especificar el modelo concreto empleado.
 - Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y cualquier GPU integrada con soporte de CUDA, ROCm o similar.
 - Despliegue en CPU: es la vía principal recomendada por el autor, con latencias de decenas de milisegundos usando 8 hilos; no requiere GPU.
-- Opciones de despliegue: script `PIIExtractor` incluido en el repositorio (PyTorch/Transformers), ONNX Runtime 1.23 o superior con el operador `com.microsoft.MultiHeadAttention`, y cualquier runtime compatible con modelos de token classification de HuggingFace (por ejemplo, pipelines de Transformers). No se mencionan integraciones específicas con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: script `PIIExtractor` incluido en el repositorio (PyTorch/Transformers), ONNX Runtime 1.23 o superior con el operador `com.microsoft.MultiHeadAttention`, y cualquier runtime compatible con modelos de token classification de Hugging Face (por ejemplo, pipelines de Transformers). No se mencionan integraciones específicas con vLLM, llama.cpp, Ollama ni TGI.
 - Throughput: no disponible de forma agregada; a partir de las latencias publicadas se puede estimar del orden de 4 documentos de 2.000 caracteres por segundo en CPU con 8 hilos, y alrededor de 75 por segundo en GPU, aunque estas cifras son una extrapolación y no un dato publicado.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de comparaciones con modelos de P
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-58M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-58M
 - Variante de 36M: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-36M
 - Variante de 17M: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-17M
 - Modelo base mmBERT-small: https://huggingface.co/jhu-clsp/mmBERT-small

@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en int4: en torno a 6,6-7,5 GB para pesos, más caché KV.
 - GPU recomendadas para bf16 sin cuantizar: A100 40 GB, A100 80 GB, H100 80 GB, L40S 48 GB.
 - GPU de consumo: no cabe completo en bf16 en una RTX 4090 o RTX 3090 (24 GB); requeriría cuantización a 4 bits y, aun así, ajustar la longitud de contexto.
-- Opciones de despliegue: al tratarse de safetensors, es compatible con runtimes que carguen pesos HuggingFace (vLLM, TGI, Transformers). Para llama.cpp u Ollama sería necesaria una conversión a GGUF que no está publicada en el repositorio.
+- Opciones de despliegue: al tratarse de safetensors, es compatible con runtimes que carguen pesos Hugging Face (vLLM, TGI, Transformers). Para llama.cpp u Ollama sería necesaria una conversión a GGUF que no está publicada en el repositorio.
 - Latencia y throughput: no disponible.
 - Advertencia de uso: el autor indica explícitamente que no se despliegue el modelo en producción.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/gemma-3-12b-commitments-sdf | 13,19 mil millones | no disponible | sin benchmarks publicados | research-only | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-3-12b-it (modelo base) | 13,19 mil millones | no disponible en esta ficha | benchmarks publicados por Google, no incluidos aquí | Gemma Terms of Use | HuggingFace |
+| joshycodes/gemma-3-12b-commitments-sdf | 13,19 mil millones | no disponible | sin benchmarks publicados | research-only | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-3-12b-it (modelo base) | 13,19 mil millones | no disponible en esta ficha | benchmarks publicados por Google, no incluidos aquí | Gemma Terms of Use | Hugging Face |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otros checkpoints comparables (continuación de preentrenamiento sobre corpus autoescrito con fines de model welfare) con datos públicos de rendimiento o licencia equivalentes.
@@ -91,7 +91,7 @@ No se han identificado en la información proporcionada otros checkpoints compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-commitments-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-commitments-sdf
 - Corpus declarado: https://huggingface.co/joshycodes/gemma-3-12b-commitments-corpus
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Repositorio welfare-improvements: mencionado en la model card, URL no disponible en la información proporcionada

@@ -4,7 +4,7 @@
 
 El modelo `co-dino-5scale-swin-l-2x-coco` es un detector de objetos basado en la arquitectura Co-DINO, que combina el modelo DETR/DINO con el esquema de entrenamiento colaborativo de Co-DETR. Este checkpoint concreto utiliza un backbone Swin-Large, una pirámide de características de 5 escalas y un horario de entrenamiento de 24 épocas (2x) sobre el dataset COCO. Según los datos declarados por el autor del repositorio, alcanza un box AP de 59.8 en la partición de validación de COCO 2017.
 
-El modelo original fue desarrollado por Zhuofan Zong, Guanglu Song y Yu Liu, del laboratorio SenseTime X-Lab, y presentado en ICCV 2023. Este repositorio en HuggingFace es un espejo no oficial del checkpoint publicado originalmente en Google Drive. Su principal valor es proporcionar un acceso estable, versionado y con resumen de verificaciones a unos pesos que de otro modo serían difíciles de descargar de forma automatizada.
+El modelo original fue desarrollado por Zhuofan Zong, Guanglu Song y Yu Liu, del laboratorio SenseTime X-Lab, y presentado en ICCV 2023. Este repositorio en Hugging Face es un espejo no oficial del checkpoint publicado originalmente en Google Drive. Su principal valor es proporcionar un acceso estable, versionado y con resumen de verificaciones a unos pesos que de otro modo serían difíciles de descargar de forma automatizada.
 
 A nivel técnico, el modelo tiene 219.2 millones de parámetros en inferencia (según el badge de la model card), y no tiene ventana de contexto en el sentido de modelos de lenguaje, ya que se trata de un modelo puramente visual. Su salida son cajas delimitadoras con clases y puntuaciones para las 80 categorías de COCO.
 
@@ -74,17 +74,17 @@ No se han encontrado resultados de benchmarks publicados para las alternativas e
 
 ## Limitaciones y advertencias
 
-- Licencia: los pesos están marcados como "unknown" en HuggingFace y "undetermined" en el README. El uso comercial no se puede garantizar sin confirmar el estado de la licencia con los autores originales.
+- Licencia: los pesos están marcados como "unknown" en Hugging Face y "undetermined" en el README. El uso comercial no se puede garantizar sin confirmar el estado de la licencia con los autores originales.
 - Repositorio no oficial: este espejo no es mantenido por los autores del modelo. Podría ser retirado o perder el acceso en cualquier momento. La integridad de los pesos depende de la disponibilidad del creador del espejo.
 - Entorno técnico anticuado: el modelo requiere MMDetection 2.25.3, MMCV-full 1.5.0 y PyTorch 1.11, lo que puede entrar en conflicto con versiones modernas de PyTorch (2.x) y dificultar la integración en proyectos actuales.
-- No es compatible con la librería `transformers`, lo que impide usarlo con las APIs estándar de HuggingFace para inferencia y cuantización.
+- No es compatible con la librería `transformers`, lo que impide usarlo con las APIs estándar de Hugging Face para inferencia y cuantización.
 - Limitado a las 80 clases de COCO: no reconoce clases fuera de ese conjunto sin re-entrenamiento. Puede fallar en dominios muy específicos (por ejemplo, defectos industriales, imágenes médicas).
 - Riesgo de falsos positivos en condiciones de oclusión, objetos pequeños o iluminación desfavorable, como es habitual en detectores de una sola etapa. En vídeo, las detecciones pueden ser inestables entre fotogramas.
 - El modelo es de 2023 y no incorpora avances posteriores como RT-DETR, los modelos de segmentación SAM o los embeddings DINOv2, que podrían ofrecer prestaciones adicionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-2x-coco
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-2x-coco
 - Paper de Co-DETR (ICCV 2023): https://arxiv.org/abs/2211.12860
 - Repositorio oficial de Co-DETR: https://github.com/Sense-X/Co-DETR
 - Fork mantenido con entorno de instalación: https://github.com/dronefreak/Co-DETR

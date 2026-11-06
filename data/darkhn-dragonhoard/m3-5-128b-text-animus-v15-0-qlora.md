@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo M3.5-128B-Text-Animus-V15.0-Qlora es un fine-tuning del modelo Mistral 3 de 128 mil millones de parámetros, publicado por el usuario Darkhn-DragonHoard en HuggingFace. El nombre sugiere una especialización en generación de texto con un enfoque "animus" (posiblemente roleplay o narrativa), y la versión V15.0 indica un proceso iterativo de desarrollo. El entrenamiento se realizó mediante QLoRA, una técnica que cuantiza el modelo base a 4 bits y entrena adaptadores de bajo rango, lo que permite ajustar modelos muy grandes con recursos limitados. El repositorio tiene acceso restringido y un tamaño de 287,9 GB, lo que indica que incluye los pesos completos o una versión cuantizada del modelo.
+El modelo M3.5-128B-Text-Animus-V15.0-Qlora es un fine-tuning del modelo Mistral 3 de 128 mil millones de parámetros, publicado por el usuario Darkhn-DragonHoard en Hugging Face. El nombre sugiere una especialización en generación de texto con un enfoque "animus" (posiblemente roleplay o narrativa), y la versión V15.0 indica un proceso iterativo de desarrollo. El entrenamiento se realizó mediante QLoRA, una técnica que cuantiza el modelo base a 4 bits y entrena adaptadores de bajo rango, lo que permite ajustar modelos muy grandes con recursos limitados. El repositorio tiene acceso restringido y un tamaño de 287,9 GB, lo que indica que incluye los pesos completos o una versión cuantizada del modelo.
 
 La información pública es muy limitada: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El modelo se encuentra en una fase de publicación con pocas descargas (7) y sin métricas de evaluación. Aunque el autor tiene otros modelos similares (como L3.3-70B-Animus-V10), no se dispone de documentación técnica detallada para este lanzamiento.
 
@@ -66,7 +66,7 @@ No se dispone de datos comparativos. El autor tiene otros modelos como L3.3-70B-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Darkhn-DragonHoard/M3.5-128B-Text-Animus-V15.0-Qlora
+- Modelo en Hugging Face: https://huggingface.co/Darkhn-DragonHoard/M3.5-128B-Text-Animus-V15.0-Qlora
 - Perfil del autor: https://huggingface.co/Darkhn-DragonHoard
 - Modelo similar (V14.0): https://huggingface.co/Darkhn/M3.5-128B-Animus-V14.0
 - Información sobre QLoRA: https://github.com/artidoro/qlora

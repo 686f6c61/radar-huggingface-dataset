@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/space1637/iapyx-v3-solar-pro-22b
+- Modelo en Hugging Face: https://huggingface.co/space1637/iapyx-v3-solar-pro-22b
 - Modelo base: https://huggingface.co/upstage/solar-pro-preview-instruct
 - Repositorio de reproduccion (carpeta `finetune-v3/`): https://github.com/AIROOKIE-S/iapyx
 - Dataset de informes de evaluacion (`v3/`): https://huggingface.co/datasets/space1637/iapyx-finetune-report

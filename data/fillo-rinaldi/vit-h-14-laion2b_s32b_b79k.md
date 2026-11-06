@@ -71,9 +71,9 @@ Se compara con el modelo base preentrenado y con una variante de menor tamaño d
 
 | Modelo | Arquitectura | Parámetros | Contexto | Precisión Vision8 | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- | --- |
-| fillo-rinaldi/ViT-H-14-laion2b_s32b_b79k | ViT-H-14 | no disponible | No aplica | 94,79% (macro) | MIT | HuggingFace |
-| laion/CLIP-ViT-H-14-laion2B-s32B-b79K | ViT-H-14 | no disponible | No aplica | no disponible | MIT | HuggingFace |
-| fillo-rinaldi/ViT-L-14-laion2b_s32b_b82k | ViT-L-14 | no disponible | No aplica | no disponible | MIT | HuggingFace |
+| fillo-rinaldi/ViT-H-14-laion2b_s32b_b79k | ViT-H-14 | no disponible | No aplica | 94,79% (macro) | MIT | Hugging Face |
+| laion/CLIP-ViT-H-14-laion2B-s32B-b79K | ViT-H-14 | no disponible | No aplica | no disponible | MIT | Hugging Face |
+| fillo-rinaldi/ViT-L-14-laion2b_s32b_b82k | ViT-L-14 | no disponible | No aplica | no disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 

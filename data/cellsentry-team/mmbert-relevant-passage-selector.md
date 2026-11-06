@@ -95,7 +95,7 @@ No se dispone de información sobre otros clasificadores de selección de pasaje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellsentry-team/mmbert-relevant-passage-selector
+- Modelo en Hugging Face: https://huggingface.co/cellsentry-team/mmbert-relevant-passage-selector
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Revisión del modelo base citada: `c5955035435e2bf121cde7f3c8863ef52ff35d82`
 - Manifiesto de origen y hashes: `SOURCE-MANIFEST.json` y `SHA256SUMS.txt` dentro del repositorio

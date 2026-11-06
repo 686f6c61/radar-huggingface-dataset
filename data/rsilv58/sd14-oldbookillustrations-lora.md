@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Base | Tipo | Rango | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rsilv58/sd14-oldbookillustrations-lora | SD v1-4 | LoRA estilístico | r=8, alpha=8 | 77 tokens (CLIP) | CreativeML OpenRAIL-M | HuggingFace, 0 descargas |
-| Adaptadores LoRA de estilo para SD v1-4 (genéricos) | SD v1-4 | LoRA estilístico | variable | 77 tokens | variable | HuggingFace / Civitai |
-| Stable Diffusion v1-5 (modelo completo) | — | Difusión latente | — | 77 tokens | CreativeML OpenRAIL-M | HuggingFace |
-| SDXL (modelo completo) | — | Difusión latente | — | 77 tokens (con refiner) | CreativeML OpenRAIL++-M | HuggingFace |
+| rsilv58/sd14-oldbookillustrations-lora | SD v1-4 | LoRA estilístico | r=8, alpha=8 | 77 tokens (CLIP) | CreativeML OpenRAIL-M | Hugging Face, 0 descargas |
+| Adaptadores LoRA de estilo para SD v1-4 (genéricos) | SD v1-4 | LoRA estilístico | variable | 77 tokens | variable | Hugging Face / Civitai |
+| Stable Diffusion v1-5 (modelo completo) | — | Difusión latente | — | 77 tokens | CreativeML OpenRAIL-M | Hugging Face |
+| SDXL (modelo completo) | — | Difusión latente | — | 77 tokens (con refiner) | CreativeML OpenRAIL++-M | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este LoRA concreto; la comparación se limita a características estructurales y de licencia.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo para este LoRA concreto; la co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rsilv58/sd14-oldbookillustrations-lora
+- Hugging Face: https://huggingface.co/rsilv58/sd14-oldbookillustrations-lora
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Dataset: https://huggingface.co/datasets/gigant/oldbookillustrations
 - Librería diffusers: https://github.com/huggingface/diffusers

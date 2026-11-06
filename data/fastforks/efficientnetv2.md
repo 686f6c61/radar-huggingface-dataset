@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks de precision ni de especificaciones de mode
 
 | Modelo | Parametros | Entrada | Contexto/uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNetV2-S (este repo, via fastforks) | no disponible | 384x384 | clasificacion ImageNet-1k | BSD-3-Clause (codigo); pesos sin declarar | HuggingFace + PyTorch Vision |
+| EfficientNetV2-S (este repo, via fastforks) | no disponible | 384x384 | clasificacion ImageNet-1k | BSD-3-Clause (codigo); pesos sin declarar | Hugging Face + PyTorch Vision |
 | EfficientNetV1 | no disponible | variable | clasificacion ImageNet-1k | no disponible | no disponible |
 | ResNet-50 | no disponible | 224x224 | clasificacion ImageNet-1k | no disponible | no disponible |
 | ViT-B/16 | no disponible | 224x224 | clasificacion ImageNet-1k | no disponible | no disponible |
@@ -107,7 +107,7 @@ Los datos de parametros, precision y licencia de las alternativas no se han prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fastforks/efficientnetv2
+- Repositorio Hugging Face: https://huggingface.co/fastforks/efficientnetv2
 - Codigo del paquete fastforks: https://github.com/kleinicke/fastforks
 - Kernels backend: https://huggingface.co/fastforks/kernels
 - Pesos originales: https://download.pytorch.org/models/efficientnet_v2_s-dd5fe13b.pth

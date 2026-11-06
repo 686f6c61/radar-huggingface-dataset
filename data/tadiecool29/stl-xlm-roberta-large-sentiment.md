@@ -41,7 +41,7 @@ El modelo es un fine-tuning de XLM-RoBERTa-large, un transformer encoder-only pr
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estándar (como MMLU, HumanEval o GLUE) en la información disponible. El model-index de HuggingFace declara una lista de resultados vacía. Sin embargo, la model card del autor incluye métricas de evaluación sobre un conjunto de validación no especificado. A continuación se muestran los resultados reportados:
+No se han publicado resultados de benchmarks estándar (como MMLU, HumanEval o GLUE) en la información disponible. El model-index de Hugging Face declara una lista de resultados vacía. Sin embargo, la model card del autor incluye métricas de evaluación sobre un conjunto de validación no especificado. A continuación se muestran los resultados reportados:
 
 | Metrica | Valor |
 |---|---|
@@ -76,7 +76,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/STL-xlm-roberta-large-sentiment
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/STL-xlm-roberta-large-sentiment
 - Modelo base XLM-RoBERTa-large: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Modelo relacionado (stance): https://huggingface.co/tadiecool29/STL-xlm-roberta-large-stance-finetuned
 - Otro modelo relacionado: https://huggingface.co/tadiecool29/xlmr-stl-large-stance

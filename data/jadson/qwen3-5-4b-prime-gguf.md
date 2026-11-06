@@ -83,7 +83,7 @@ La información disponible solo permite comparar el modelo con los eslabones de 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Prime (este modelo, GGUF) | 4,21 mil millones | 262.144 posiciones máximas declaradas | Sin benchmarks publicados; 10,0 tok/s en CPU con MTP e IQ4_NL | apache-2.0 | GGUF en HuggingFace |
+| Qwen3.5-4B-Prime (este modelo, GGUF) | 4,21 mil millones | 262.144 posiciones máximas declaradas | Sin benchmarks publicados; 10,0 tok/s en CPU con MTP e IQ4_NL | apache-2.0 | GGUF en Hugging Face |
 | Qwen/Qwen3.5-4B (base original) | 4,21 mil millones | 262.144 posiciones máximas declaradas | No disponible | No disponible | Pesos originales, presumiblemente safetensors |
 | empero-ai/Qwen3.8-4B-Distill (base del fine-tune) | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 | Alternativas de otros fabricantes en la franja de 4 B | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -105,7 +105,7 @@ La información disponible solo permite comparar el modelo con los eslabones de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jadson/Qwen3.5-4B-Prime-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Jadson/Qwen3.5-4B-Prime-GGUF
 - Prompt de sistema incluido en el repositorio: https://huggingface.co/Jadson/Qwen3.5-4B-Prime-GGUF/blob/main/SYSTEM_PROMPT.md
 - Dataset de ajuste fino: https://huggingface.co/datasets/Jadson/ox-alpha-pi-traces-emacs-bridge
 - Dataset original de trazas: https://huggingface.co/datasets/TeichAI/Ox-Alpha-Pi-Traces

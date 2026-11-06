@@ -39,7 +39,7 @@ La innovacion tecnica destacable de este repositorio no esta en el modelo en si,
 - Control de reproducibilidad mediante semilla (`--seed`).
 - Inferencia local nativa en Apple Silicon a traves de MLX.
 - Ejecucion como referencia de maxima fidelidad en BF16, o con cuantizacion al vuelo mediante `--quantize`.
-- Descarga automatica de pesos desde HuggingFace en el primer uso, o uso de copia local con `--model`.
+- Descarga automatica de pesos desde Hugging Face en el primer uso, o uso de copia local con `--model`.
 - No se documentan en la informacion disponible capacidades de tool calling, agentes, vision de entrada, audio ni modo de razonamiento, lo cual es coherente con un modelo puramente text-to-image.
 
 ## Casos de uso
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fibo-2-0-dev-mflux-bf16 (esta ficha) | no disponible | no aplica | MLX safetensors BF16 | fibo-2.0-dev-license | HuggingFace, 145 descargas |
-| briaai/Fibo-2.0-dev (original) | no disponible | no aplica | no disponible en la informacion | fibo-2.0-dev-license | HuggingFace (modelo base) |
-| mflux-community/fibo-2-0-dev-mflux-q4 | no disponible | no aplica | MLX safetensors Q4 (7,2 GB) | fibo-2.0-dev-license | HuggingFace |
-| mflux-community/fibo-2-0-dev-mflux-q8 | no disponible | no aplica | MLX safetensors Q8 (13,4 GB) | fibo-2.0-dev-license | HuggingFace |
+| fibo-2-0-dev-mflux-bf16 (esta ficha) | no disponible | no aplica | MLX safetensors BF16 | fibo-2.0-dev-license | Hugging Face, 145 descargas |
+| briaai/Fibo-2.0-dev (original) | no disponible | no aplica | no disponible en la informacion | fibo-2.0-dev-license | Hugging Face (modelo base) |
+| mflux-community/fibo-2-0-dev-mflux-q4 | no disponible | no aplica | MLX safetensors Q4 (7,2 GB) | fibo-2.0-dev-license | Hugging Face |
+| mflux-community/fibo-2-0-dev-mflux-q8 | no disponible | no aplica | MLX safetensors Q8 (13,4 GB) | fibo-2.0-dev-license | Hugging Face |
 
 No se dispone de datos de rendimiento comparado con modelos de otras familias (por ejemplo, otros text-to-image) en la informacion proporcionada.
 
@@ -86,10 +86,10 @@ No se dispone de datos de rendimiento comparado con modelos de otras familias (p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversion: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-bf16
+- Repositorio Hugging Face de esta conversion: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-bf16
 - Modelo original: https://huggingface.co/briaai/Fibo-2.0-dev
 - MFlux (GitHub): https://github.com/filipstrand/mflux
-- Comunidad MFlux en HuggingFace: https://huggingface.co/mflux-community
+- Comunidad MFlux en Hugging Face: https://huggingface.co/mflux-community
 - Version Q8: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q8
 - Version Q6: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q6
 - Version Q5: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q5

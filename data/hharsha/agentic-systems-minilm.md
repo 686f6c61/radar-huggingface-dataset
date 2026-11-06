@@ -2,11 +2,11 @@
 
 ## Resumen
 
-agentic-systems-minilm es un modelo de embeddings de frases (sentence embeddings) desarrollado por el ingeniero Hanumanthu Harsha Vardhan (usuario hharsha en HuggingFace). Se trata de un ajuste fino de dominio del conocido `sentence-transformers/all-MiniLM-L6-v2`, especializado en busqueda semantica y agrupamiento de textos cortos relacionados con sistemas agenticos, pipelines RAG, herramientas MCP y documentacion de proyectos de LLMOps. Genera vectores densos de 384 dimensiones y esta pensado para ejecutarse en CPU.
+agentic-systems-minilm es un modelo de embeddings de frases (sentence embeddings) desarrollado por el ingeniero Hanumanthu Harsha Vardhan (usuario hharsha en Hugging Face). Se trata de un ajuste fino de dominio del conocido `sentence-transformers/all-MiniLM-L6-v2`, especializado en busqueda semantica y agrupamiento de textos cortos relacionados con sistemas agenticos, pipelines RAG, herramientas MCP y documentacion de proyectos de LLMOps. Genera vectores densos de 384 dimensiones y esta pensado para ejecutarse en CPU.
 
 El modelo no es generativo: no produce texto, sino representaciones vectoriales que permiten calcular similitud coseno entre frases. Con 22.713.216 parametros (aproximadamente 22,7 millones) y un repositorio de 0,1 GB, es un modelo muy ligero orientado a tareas de recuperacion y clasificacion. Su relevancia radica en que demuestra una adaptacion ligera de dominio sobre un encoder pequeno ya muy extendido, pensada para mejorar la calidad de recuperacion en corpus tecnicos especificos sin necesidad de infraestructura GPU.
 
-La informacion publica es limitada: el modelo registra 0 descargas y 0 likes en el momento de la consulta, y no se han publicado resultados de benchmarks. Esta ficha recoge exclusivamente los datos disponibles en la model card, la informacion de HuggingFace y los resultados de busqueda web proporcionados.
+La informacion publica es limitada: el modelo registra 0 descargas y 0 likes en el momento de la consulta, y no se han publicado resultados de benchmarks. Esta ficha recoge exclusivamente los datos disponibles en la model card, la informacion de Hugging Face y los resultados de busqueda web proporcionados.
 
 ## Especificaciones tecnicas
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dimensiones del embedding | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| hharsha/agentic-systems-minilm | 22,7 M | 384 | No disponible | Ingles | Apache-2.0 | HuggingFace (0 descargas) |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 384 | No disponible en la informacion proporcionada | Ingles (principalmente) | Apache-2.0 | HuggingFace (ampliamente usado) |
+| hharsha/agentic-systems-minilm | 22,7 M | 384 | No disponible | Ingles | Apache-2.0 | Hugging Face (0 descargas) |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 384 | No disponible en la informacion proporcionada | Ingles (principalmente) | Apache-2.0 | Hugging Face (ampliamente usado) |
 | Otros modelos de embeddings pequenos (por ejemplo, familia BGE-small o E5-small) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion directa se limita al modelo base, dado que la informacion proporcionada no incluye datos de otros modelos de embeddings. La diferencia principal frente a `all-MiniLM-L6-v2` es la adaptacion de dominio sobre contenido agentico y RAG, con un coste computacional identico al partir de los mismos pesos y arquitectura.
@@ -90,7 +90,7 @@ La comparacion directa se limita al modelo base, dado que la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hharsha/agentic-systems-minilm
+- Modelo en Hugging Face: https://huggingface.co/hharsha/agentic-systems-minilm
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/hharsha/agentic-systems-showcase
 - Modelo relacionado (generador de etiquetas): https://huggingface.co/hharsha/agentic-github-tagger

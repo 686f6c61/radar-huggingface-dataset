@@ -70,7 +70,7 @@ La principal diferencia de este modelo respecto a las exportaciones de GLiNER2 e
 - **Requisito de entradas `int64`**: los tensores `input_ids` y `attention_mask` deben ser de tipo `int64`. Algunos navegadores pueden no soportar este tipo en WebGPU, por lo que se recomienda usar el backend WASM como respaldo.
 - **Sesgos y alucinaciones**: no se dispone de datos sobre sesgos o comportamientos alucinatorios. Como modelo de extracción de entidades, puede generar predicciones incorrectas en textos ambiguos o fuera de dominio.
 - **Idiomas no confirmados**: aunque el modelo se denomina "multi", no se especifica qué idiomas soporta ni su calidad en cada uno.
-- **Licencia**: Apache-2.0 permite uso comercial, pero se debe verificar que la licencia del modelo base (fastino/gliner2.5-multi-v1) sea también compatible, aunque en la información de HuggingFace se indica que el modelo base tiene licencia Apache-2.0.
+- **Licencia**: Apache-2.0 permite uso comercial, pero se debe verificar que la licencia del modelo base (fastino/gliner2.5-multi-v1) sea también compatible, aunque en la información de Hugging Face se indica que el modelo base tiene licencia Apache-2.0.
 - **Tamaño del archivo**: 1,1 GB puede ser pesado para aplicaciones web con limitaciones de ancho de banda, aunque es aceptable para cargas locales.
 
 ## Enlaces

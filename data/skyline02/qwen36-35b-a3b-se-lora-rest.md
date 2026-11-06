@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar con modelos de reparacion de so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/skyline02/qwen36-35b-a3b-se-lora-rest
+- Hugging Face: https://huggingface.co/skyline02/qwen36-35b-a3b-se-lora-rest
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Receta de vLLM para Qwen3.6-35B-A3B: https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B
 - Guia de uso de Qwen3.5 y Qwen3.6 en vLLM: https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`CronusOnly/eva` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, publicado por el usuario CronusOnly en HuggingFace. No es un modelo autonomo: se carga sobre los pesos de Krea 2 y anade un concepto concreto invocable mediante el token `vxl_Eva`. El adaptador se entreno sobre `krea/Krea-2-Raw` y las muestras publicadas se generaron sobre `krea/Krea-2-Turbo` con 8 pasos de inferencia y `guidance_scale=0.0`.
+`CronusOnly/eva` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, publicado por el usuario CronusOnly en Hugging Face. No es un modelo autonomo: se carga sobre los pesos de Krea 2 y anade un concepto concreto invocable mediante el token `vxl_Eva`. El adaptador se entreno sobre `krea/Krea-2-Raw` y las muestras publicadas se generaron sobre `krea/Krea-2-Turbo` con 8 pasos de inferencia y `guidance_scale=0.0`.
 
 El repositorio tiene un tamano de 1,0 GB e incluye la model card, tres imagenes de ejemplo y los pesos del adaptador; se distribuye con licencia Apache 2.0 y se carga mediante la libreria `diffusers` con la clase `Krea2Pipeline` del modelo base. La relevancia practica es la habitual en adaptadores de identidad o estilo: permite fijar un sujeto consistente en un pipeline de generacion de imagenes sin reentrenar el modelo completo.
 
@@ -67,9 +67,9 @@ La unica evidencia cualitativa son tres imagenes de muestra generadas con Krea 2
 
 | Modelo | Tipo | Parametros | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CronusOnly/eva | LoRA DreamBooth sobre Krea 2 | no disponible | codificador de texto de Krea 2 (no disponible) | Apache 2.0 | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | Modelo de difusion base | no disponible | no disponible | no disponible en esta ficha | HuggingFace (modelo base declarado) |
-| krea/Krea-2-Turbo | Modelo de difusion base destilado para pocos pasos | no disponible | no disponible | no disponible en esta ficha | HuggingFace (usado en los ejemplos) |
+| CronusOnly/eva | LoRA DreamBooth sobre Krea 2 | no disponible | codificador de texto de Krea 2 (no disponible) | Apache 2.0 | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | Modelo de difusion base | no disponible | no disponible | no disponible en esta ficha | Hugging Face (modelo base declarado) |
+| krea/Krea-2-Turbo | Modelo de difusion base destilado para pocos pasos | no disponible | no disponible | no disponible en esta ficha | Hugging Face (usado en los ejemplos) |
 | Otros LoRAs de Krea 2 | Adaptadores de concepto | no disponible | no disponible | variable | no se han identificado alternativas concretas en la informacion disponible |
 
 No se dispone de datos de benchmarks ni de alternativas comparables documentadas para establecer una comparacion cuantitativa. La comparacion relevante es funcional: frente al modelo base, este LoRA anade un concepto concreto y un token de activacion, a cambio de un riesgo de sobreajuste y de dependencia de la variante del modelo base con la que se combine.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de alternativas comparables documentadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CronusOnly/eva
+- Modelo en Hugging Face: https://huggingface.co/CronusOnly/eva
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Variante usada en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio del adaptador: no disponible

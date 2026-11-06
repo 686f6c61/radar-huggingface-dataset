@@ -75,10 +75,10 @@ Advertencias que el propio autor incluye sobre estas cifras: la cuantizacion es 
 
 | Modelo | Arquitectura / parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| piilo-deberta-v3-small-onnx | DeBERTa-v3-small, aprox. 142M | no disponible (base tipicamente 512) | Token classification (7 etiquetas PII) | CC BY 4.0 | ONNX en HuggingFace |
-| microsoft/deberta-v3-small | DeBERTa-v3-small, aprox. 142M | 512 tokens | Modelo base sin cabecera de tarea | MIT | HuggingFace |
-| onnx-community/deberta-v3-small | DeBERTa-v3-small, aprox. 142M | 512 tokens | Exportacion ONNX del modelo base | MIT | HuggingFace |
-| edshield/piilo-deberta-v3-small | DeBERTa-v3-small, aprox. 142M | no disponible | Token classification (7 etiquetas PII) | CC BY 4.0 | pesos PyTorch en HuggingFace |
+| piilo-deberta-v3-small-onnx | DeBERTa-v3-small, aprox. 142M | no disponible (base tipicamente 512) | Token classification (7 etiquetas PII) | CC BY 4.0 | ONNX en Hugging Face |
+| microsoft/deberta-v3-small | DeBERTa-v3-small, aprox. 142M | 512 tokens | Modelo base sin cabecera de tarea | MIT | Hugging Face |
+| onnx-community/deberta-v3-small | DeBERTa-v3-small, aprox. 142M | 512 tokens | Exportacion ONNX del modelo base | MIT | Hugging Face |
+| edshield/piilo-deberta-v3-small | DeBERTa-v3-small, aprox. 142M | no disponible | Token classification (7 etiquetas PII) | CC BY 4.0 | pesos PyTorch en Hugging Face |
 
 Comparado con los anteriores, la diferencia clave es la especializacion: tanto microsoft/deberta-v3-small como su version ONNX de onnx-community son modelos base sin cabecera especifica de tarea, mientras que este modelo incorpora el afinamiento sobre PIILO para las siete etiquetas PII. Frente a su modelo base en PyTorch (edshield/piilo-deberta-v3-small), la version ONNX cambia el formato de pesos (ONNX en lugar de PyTorch) y anade la variante cuantizada a INT8. No se dispone de datos de benchmarks comparativos con otras soluciones de deteccion de PII en la informacion proporcionada.
 
@@ -98,7 +98,7 @@ Comparado con los anteriores, la diferencia clave es la especializacion: tanto m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edshield/piilo-deberta-v3-small-onnx
+- Modelo en Hugging Face: https://huggingface.co/edshield/piilo-deberta-v3-small-onnx
 - Modelo base afinado (PyTorch): https://huggingface.co/edshield/piilo-deberta-v3-small
 - Repositorio de edshield: https://github.com/hemangnagar/edshield
 - Documentacion de cobertura por tipo de identificador: https://github.com/hemangnagar/edshield/blob/main/docs/COVERAGE.md

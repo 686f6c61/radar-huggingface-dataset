@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`olusegunola/qwen2.5-1.5b-primekg-dkd-seed101` es un checkpoint publicado en HuggingFace por el usuario olusegunola el 21 de septiembre de 2026 (ultima actualizacion: la misma fecha). La model card es la plantilla autogenerada por `transformers` sin un solo campo completado: todos los apartados figuran como `[More Information Needed]`. El repositorio declara la libreria `transformers`, el formato `safetensors` y el tag `endpoints_compatible`, pero no especifica pipeline, licencia, idiomas ni procedimiento de entrenamiento.
+`olusegunola/qwen2.5-1.5b-primekg-dkd-seed101` es un checkpoint publicado en Hugging Face por el usuario olusegunola el 21 de septiembre de 2026 (ultima actualizacion: la misma fecha). La model card es la plantilla autogenerada por `transformers` sin un solo campo completado: todos los apartados figuran como `[More Information Needed]`. El repositorio declara la libreria `transformers`, el formato `safetensors` y el tag `endpoints_compatible`, pero no especifica pipeline, licencia, idiomas ni procedimiento de entrenamiento.
 
 El identificador del repositorio sugiere, sin que la model card lo confirme, un ajuste fino sobre `Qwen2.5-1.5B` (modelo denso decoder-only de ~1.500 millones de parametros) posiblemente orientado al dominio biomedico por la referencia a PrimeKG, con alguna variante de destilacion por las siglas "dkd" y una semilla fijada a 101 para reproducibilidad. Ninguna de estas hipotesis esta documentada por el autor ni verificada en el repositorio, por lo que deben tratarse como conjeturas a partir del nombre.
 
-La relevancia practica del modelo es, en el momento de redactar esta ficha, muy limitada: acumula 0 descargas y 0 likes, el tamano del repositorio figura como 0.0 GB (lo que sugiere que los pesos podrian no estar efectivamente subidos o que el repositorio esta incompleto) y no hay informacion de entrenamiento, evaluacion ni uso previsto. El unico enlace tecnico de la model card, `arxiv:1910.09700`, no es un paper del modelo: corresponde al calculador de impacto ambiental de Lacoste et al. (2019), citado en la plantilla por defecto de HuggingFace.
+La relevancia practica del modelo es, en el momento de redactar esta ficha, muy limitada: acumula 0 descargas y 0 likes, el tamano del repositorio figura como 0.0 GB (lo que sugiere que los pesos podrian no estar efectivamente subidos o que el repositorio esta incompleto) y no hay informacion de entrenamiento, evaluacion ni uso previsto. El unico enlace tecnico de la model card, `arxiv:1910.09700`, no es un paper del modelo: corresponde al calculador de impacto ambiental de Lacoste et al. (2019), citado en la plantilla por defecto de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -73,8 +73,8 @@ No se puede comparar el modelo en sus propios terminos porque no hay datos verif
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | `olusegunola/qwen2.5-1.5b-primekg-dkd-seed101` | No disponible (nombre sugiere 1,5B) | No disponible | No disponible | Repositorio de 0.0 GB, 0 descargas | Sin model card utilizable |
-| Qwen2.5-1.5B (base) | ~1,54B | 32.768 tokens nativo (ampliable con YaRN) | Apache-2.0 | Publico en HuggingFace | Datos de documentacion publica del modelo base, no verificados en este repositorio |
-| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens nativo (ampliable con YaRN) | Apache-2.0 | Publico en HuggingFace | Version alineada para instrucciones; datos de documentacion publica |
+| Qwen2.5-1.5B (base) | ~1,54B | 32.768 tokens nativo (ampliable con YaRN) | Apache-2.0 | Publico en Hugging Face | Datos de documentacion publica del modelo base, no verificados en este repositorio |
+| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 tokens nativo (ampliable con YaRN) | Apache-2.0 | Publico en Hugging Face | Version alineada para instrucciones; datos de documentacion publica |
 
 No se dispone de informacion suficiente para comparar rendimiento (benchmarks) con ninguna alternativa.
 
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para comparar rendimiento (benchmarks) c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-dkd-seed101
+- Hugging Face: https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-dkd-seed101
 - Referencia citada en la plantilla de la model card (no es un paper del modelo): Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de ML mencionado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

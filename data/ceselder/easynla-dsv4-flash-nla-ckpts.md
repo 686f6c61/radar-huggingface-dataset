@@ -83,7 +83,7 @@ No disponible. No se han encontrado modelos comparables directos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/easynla-dsv4-flash-nla-ckpts
+- Modelo en Hugging Face: https://huggingface.co/ceselder/easynla-dsv4-flash-nla-ckpts
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Dataset de warm start: https://huggingface.co/datasets/ceselder/easynla-dsv4-warmstart-opus5
 - Seguimiento de entrenamiento (wandb): https://wandb.ai/octahedral-systems/easynla-dsv4

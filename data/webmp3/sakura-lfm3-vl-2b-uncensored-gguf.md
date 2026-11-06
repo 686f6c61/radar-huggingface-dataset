@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sakura-LFM3-VL-2B-Uncensored-GGUF es una versión modificada del modelo visión-lenguaje LFM3-VL-2B de Liquid AI, publicada por el usuario webmp3 en HuggingFace. La modificación consiste en una edición de los pesos del modelo de lenguaje mediante una técnica de abliteration (eliminación de una dirección de rechazo en parte de las matrices de pesos), orientada a reducir la tasa de respuestas de negativa del modelo ante peticiones que el original rechazaría. El resultado se distribuye en formato GGUF, cuantizado en Q8_0, junto con el proyector visual en F16.
+Sakura-LFM3-VL-2B-Uncensored-GGUF es una versión modificada del modelo visión-lenguaje LFM3-VL-2B de Liquid AI, publicada por el usuario webmp3 en Hugging Face. La modificación consiste en una edición de los pesos del modelo de lenguaje mediante una técnica de abliteration (eliminación de una dirección de rechazo en parte de las matrices de pesos), orientada a reducir la tasa de respuestas de negativa del modelo ante peticiones que el original rechazaría. El resultado se distribuye en formato GGUF, cuantizado en Q8_0, junto con el proyector visual en F16.
 
 El modelo base, LFM3-VL-2B, es un modelo de 1.9B parámetros (1.728.801.600 parámetros reales según los safetensors) con arquitectura híbrida de capas convolucionales y de atención, capaz de procesar imagen y texto (pipeline image-text-to-text). Soporta 16 idiomas, entre ellos el castellano, y está pensado para tareas de razonamiento multimodal en entornos con recursos limitados.
 
@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-LFM3-VL-2B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-LFM3-VL-2B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - GGUF original de Liquid AI: https://huggingface.co/LiquidAI/LFM3-VL-2B-GGUF
 - Conjunto de prompts de evaluación: `mlabonne/harmful_behaviors` (referenciado en la model card; no se proporciona URL directa)

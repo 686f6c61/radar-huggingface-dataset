@@ -2,11 +2,11 @@
 
 ## Resumen
 
-xplica-bertimbau es un modelo de clasificación de texto publicado en HuggingFace por el usuario httpemilly bajo el identificador `httpemilly/xplica-bertimbau`. Los metadatos de la plataforma lo etiquetan con las arquitecturas `bert` y `transformers`, con pipeline `text-classification` y pesos en formato `safetensors`, lo que indica que se trata de un encoder basado en BERT adaptado a una tarea de clasificación de secuencias. El repositorio cuenta con 108.924.674 parámetros reales declarados en el archivo de pesos y ocupa 0,4 GB.
+xplica-bertimbau es un modelo de clasificación de texto publicado en Hugging Face por el usuario httpemilly bajo el identificador `httpemilly/xplica-bertimbau`. Los metadatos de la plataforma lo etiquetan con las arquitecturas `bert` y `transformers`, con pipeline `text-classification` y pesos en formato `safetensors`, lo que indica que se trata de un encoder basado en BERT adaptado a una tarea de clasificación de secuencias. El repositorio cuenta con 108.924.674 parámetros reales declarados en el archivo de pesos y ocupa 0,4 GB.
 
 El nombre del modelo sugiere una posible derivación de BERTimbau (el BERT preentrenado en portugués de Brasil desarrollado por Neuralmind), aunque la model card no confirma esta relación ni documenta el proceso de ajuste. No se especifican idiomas soportados, licencia, composición del dataset de entrenamiento ni hiperparámetros.
 
-La relevancia de esta ficha es limitada por la escasez de documentación: la model card es la plantilla automática de HuggingFace sin rellenar, el repositorio registra 0 descargas y 0 likes, y no se han publicado resultados de evaluación. Cualquier uso en producción requeriría una validación empírica propia antes de considerarlo fiable.
+La relevancia de esta ficha es limitada por la escasez de documentación: la model card es la plantilla automática de Hugging Face sin rellenar, el repositorio registra 0 descargas y 0 likes, y no se han publicado resultados de evaluación. Cualquier uso en producción requeriría una validación empírica propia antes de considerarlo fiable.
 
 ## Especificaciones tecnicas
 
@@ -22,14 +22,14 @@ La relevancia de esta ficha es limitada por la escasez de documentación: la mod
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Tamano del repositorio | 0,4 GB |
 | Pipeline declarado | text-classification |
-| Fecha de creacion | 2026-10-09T22:11:46.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-09T22:11:46.000Z (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-10-09T22:12:01.000Z |
 
 ## Arquitectura y entrenamiento
 
 La unica informacion tecnica fiable son los tags del repositorio (`bert`, `transformers`, `text-classification`) y el recuento de parametros (108.924.674), coherente con un BERT de tamano base. Esto implica un encoder transformer bidireccional con atencion completa y una cabeza de clasificacion sobre el token `[CLS]`, adecuado para tareas de clasificacion de secuencias cortas (sentimiento, topicos, deteccion de spam, moderacion, etc.).
 
-No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del corpus, si hubo preentrenamiento adicional, fine-tuning supervisado, RLHF/DPO ni sobre tecnicas de optimizacion (atención lineal, decodificacion especulativa, destilacion). La model card es la plantilla automatica de HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]". El tag `arxiv:1910.09700` corresponde a la cita por defecto del calculador de impacto medioambiental incluida en la plantilla, no a un paper propio del modelo.
+No hay informacion disponible sobre el numero de tokens de entrenamiento, la composicion del corpus, si hubo preentrenamiento adicional, fine-tuning supervisado, RLHF/DPO ni sobre tecnicas de optimizacion (atención lineal, decodificacion especulativa, destilacion). La model card es la plantilla automatica de Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]". El tag `arxiv:1910.09700` corresponde a la cita por defecto del calculador de impacto medioambiental incluida en la plantilla, no a un paper propio del modelo.
 
 ## Capacidades
 
@@ -89,8 +89,8 @@ La comparativa se limita a encoders de tamano base por la falta de datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/httpemilly/xplica-bertimbau
+- Modelo en Hugging Face: https://huggingface.co/httpemilly/xplica-bertimbau
 - BERTimbau (posible modelo base): https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - BERT original (paper): https://arxiv.org/abs/1810.04805
 - Paper citado en el tag `arxiv:1910.09700` (Strubell et al., 2019, sobre coste energetico en NLP): https://arxiv.org/abs/1910.09700
-- Calculador de impacto medioambiental de HuggingFace: https://mlco2.github.io/impact
+- Calculador de impacto medioambiental de Hugging Face: https://mlco2.github.io/impact

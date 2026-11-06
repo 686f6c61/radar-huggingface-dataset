@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario GMorgulis en HuggingFace. Se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, como indica la etiqueta `generated_from_trainer`. El nombre del repositorio sugiere hiperparámetros específicos (tasa de aprendizaje 1e-4, un valor de "STEER" de 0.940625 y una etapa de entrenamiento "ft4.42"), aunque no se documenta su significado ni el conjunto de datos empleado.
+Este modelo es un ajuste fino (fine-tune) de `meta-llama/Llama-3.2-3B-Instruct`, publicado por el usuario GMorgulis en Hugging Face. Se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, como indica la etiqueta `generated_from_trainer`. El nombre del repositorio sugiere hiperparámetros específicos (tasa de aprendizaje 1e-4, un valor de "STEER" de 0.940625 y una etapa de entrenamiento "ft4.42"), aunque no se documenta su significado ni el conjunto de datos empleado.
 
 La relevancia de este modelo radica en que parte de una base sólida y ampliamente utilizada como es Llama 3.2 de 3B parámetros, que ofrece un buen equilibrio entre rendimiento y requisitos de hardware. Al ser un ajuste fino, se espera que herede las capacidades generales del modelo base (generación de texto, razonamiento, instrucciones), pero no se proporcionan métricas ni evaluaciones propias que confirmen mejoras específicas. La ausencia de información sobre el dataset de entrenamiento, la licencia y los resultados de evaluación limita su uso en entornos de producción sin una validación adicional.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: para el modelo base de 3B en precisión fp16, se necesitan aproximadamente 6-7 GB de VRAM. Con cuantización de 8 bits, unos 4 GB, y con 4 bits, unos 3 GB. Estos valores son orientativos para el modelo base; para este ajuste no se proporcionan datos específicos.
 - GPU recomendadas: una NVIDIA RTX 3060 (12 GB) o superior puede ejecutar el modelo en fp16. Para cuantización de 4 bits, una RTX 2060 (6 GB) o similar podría ser suficiente. GPUs de centro de datos como A100 o H100 no son necesarias para este tamaño.
 - Compatibilidad con GPUs de consumo: sí, cabe en GPUs de consumo con al menos 6 GB de VRAM si se aplica cuantización.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, TGI, Ollama (si se convierte a GGUF) o mediante la API de HuggingFace Inference Endpoints (el tag `endpoints_compatible` sugiere compatibilidad).
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, TGI, Ollama (si se convierte a GGUF) o mediante la API de Hugging Face Inference Endpoints (el tag `endpoints_compatible` sugiere compatibilidad).
 - Latencia y throughput: no se dispone de mediciones específicas. Para un modelo de 3B en una GPU moderna, se espera una latencia de decodificación de decenas de milisegundos por token, pero depende del hardware y de la implementación.
 
 ## Comparativa con modelos similares

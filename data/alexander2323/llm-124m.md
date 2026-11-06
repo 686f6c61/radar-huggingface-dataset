@@ -90,7 +90,7 @@ La comparación cuantitativa de rendimiento no está disponible: no se han publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexander2323/llm-124m
+- Modelo en Hugging Face: https://huggingface.co/alexander2323/llm-124m
 - Repositorio de código: https://github.com/alexander2323/llm-124m
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Wikipedia (20231101): https://huggingface.co/datasets/wikimedia/wikipedia

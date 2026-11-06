@@ -105,6 +105,6 @@ Para comparar con otros modelos de 27B (p. ej., Llama 3.1 8B o Mistral 7B) se ne
 
 ## Enlaces
 
-- Repositorio HuggingFace: [julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF](https://huggingface.co/julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF)
+- Repositorio Hugging Face: [julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF](https://huggingface.co/julianmb/Qwen-3.8-27B-ROCmFP4-FAST-GGUF)
 - Repositorio GitHub (código de despliegue y construcción): [github.com/julianmb/q38rocm](https://github.com/julianmb/q38rocm)
-- Modelo base en HuggingFace: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (referencia; no se ha verificado su existencia en la información proporcionada)
+- Modelo base en Hugging Face: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (referencia; no se ha verificado su existencia en la información proporcionada)

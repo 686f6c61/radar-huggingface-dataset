@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kmpartner/modi-test` aloja un modelo publicado en HuggingFace por el usuario `kmpartner`, con un tamaño de repositorio de 129,2 GB. A fecha de la consulta, no se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades. El repositorio fue creado el 29 de marzo de 2026 y actualizado el 14 de agosto de 2026, aunque no se han documentado detalles técnicos en la ficha de HuggingFace.
+El repositorio `kmpartner/modi-test` aloja un modelo publicado en Hugging Face por el usuario `kmpartner`, con un tamaño de repositorio de 129,2 GB. A fecha de la consulta, no se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades. El repositorio fue creado el 29 de marzo de 2026 y actualizado el 14 de agosto de 2026, aunque no se han documentado detalles técnicos en la ficha de Hugging Face.
 
 La ausencia de metadatos (pipeline, licencia, idiomas) y la falta de archivos de configuración visibles impiden determinar qué tipo de modelo es, su finalidad o su estado de desarrollo. El tamaño del repositorio sugiere que podría tratarse de un modelo de gran escala, pero sin más datos no es posible confirmarlo. Este repositorio parece estar en una fase inicial o de prueba, y cualquier uso en producción requeriría una evaluación previa exhaustiva.
 
@@ -55,4 +55,4 @@ No disponible. Al carecer de informacion sobre la arquitectura, el tamaño y el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kmpartner/modi-test
+- Repositorio en Hugging Face: https://huggingface.co/kmpartner/modi-test

@@ -52,7 +52,7 @@ No se dispone de información suficiente para comparar con otros modelos. No se 
 - No se ha publicado ningún tipo de evaluación de seguridad o ética.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-2664b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-2664b
 - Paper OLMo 2: https://arxiv.org/abs/2501.00656
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Página oficial de OLMo 2: https://allenai.org/olmo2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed3407`, ambos publicados por el usuario de HuggingFace `francesca9805`. Por las etiquetas del repositorio (`gpt2`, `transformers`, `safetensors`) se trata de un transformer decoder-only de la familia GPT-2, con 124.770.816 parametros totales confirmados por los pesos en safetensors, es decir, un modelo denso de escala "small". El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) en su flujo de SFT, y el repositorio declara compatibilidad con `text-generation-inference` y con endpoints.
+El modelo `francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT sobre el checkpoint `francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed3407`, ambos publicados por el usuario de Hugging Face `francesca9805`. Por las etiquetas del repositorio (`gpt2`, `transformers`, `safetensors`) se trata de un transformer decoder-only de la familia GPT-2, con 124.770.816 parametros totales confirmados por los pesos en safetensors, es decir, un modelo denso de escala "small". El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) en su flujo de SFT, y el repositorio declara compatibilidad con `text-generation-inference` y con endpoints.
 
 El nombre del identificador apunta a un experimento centrado en tokenizacion y en el tratamiento de datos: el prefijo `zho` es el codigo ISO 639-3 del chino, `100mb` sugiere un corpus de unos 100 MB, `packed` indica empaquetado de secuencias y el sufijo `seed3407` fija la semilla. El proyecto de Weights & Biases asociado se llama `new-tokenizers`, lo que refuerza la hipotesis de que se trata de una prueba comparativa de vocabularios o esquemas de muestreo (`wc-uniform`, `newlex`) sobre un mismo corpus. Conviene subir la cautela: son inferencias a partir del nombre, no datos confirmados en la model card.
 
@@ -77,10 +77,10 @@ La comparativa se limita a caracteristicas publicas y verificables de la misma c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,77 M | No disponible | No disponible (marcador de posicion) | HuggingFace, 0 descargas | No disponible |
+| francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407 | 124,77 M | No disponible | No disponible (marcador de posicion) | Hugging Face, 0 descargas | No disponible |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Licencia MIT modificada | Ampliamente disponible, tambien en GGUF | Si, extensamente documentado |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Si, publicado por los autores |
-| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace, con checkpoints intermedios | Si, suite de evaluacion publicada |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Si, publicado por los autores |
+| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face, con checkpoints intermedios | Si, suite de evaluacion publicada |
 
 Diferencias relevantes: frente a GPT-2 small, el modelo aqui descrito parte de un vocabulario y un corpus no documentados, lo que impide asumir un comportamiento equivalente; frente a DistilGPT-2 y Pythia-160M, carece de licencia efectiva y de evaluacion, dos factores que limitan su adopcion tanto en investigacion comparada como en productos.
 
@@ -100,7 +100,7 @@ Diferencias relevantes: frente a GPT-2 small, el modelo aqui descrito parte de u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4iykamjc
 - Repositorio de TRL: https://github.com/huggingface/trl

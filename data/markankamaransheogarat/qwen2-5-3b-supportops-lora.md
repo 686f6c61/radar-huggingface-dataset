@@ -82,9 +82,9 @@ El adaptador no se puede comparar en igualdad de condiciones porque no tiene lic
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-3B-Instruct (base de este adaptador) | 3,09 B | 32 768 tokens | Apache-2.0 | Pesos abiertos en HuggingFace |
+| Qwen2.5-3B-Instruct (base de este adaptador) | 3,09 B | 32 768 tokens | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Llama-3.2-3B-Instruct | ~3,2 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Pesos abiertos con condiciones |
-| Phi-3.5-mini-instruct | 3,8 B | 128 000 tokens | MIT | Pesos abiertos en HuggingFace |
+| Phi-3.5-mini-instruct | 3,8 B | 128 000 tokens | MIT | Pesos abiertos en Hugging Face |
 | Gemma-2-2B-it | ~2,6 B | 8 192 tokens | Terminos de uso de Gemma | Pesos abiertos con condiciones |
 
 Frente a alternativas de la misma tarea (clasificacion y extraccion estructurada en soporte), la opcion mas directa es el propio Qwen2.5-3B-Instruct con un prompt y salida JSON forzada, sin ajuste: el autor reporta que esa linea base obtiene 68 % de precision de esquema y 0,74 de F1 en su conjunto, muy por debajo del adaptador, aunque se trata de una comparacion interna no replicada de forma independiente.
@@ -104,7 +104,7 @@ Frente a alternativas de la misma tarea (clasificacion y extraccion estructurada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markankamaransheogarat/qwen2.5-3b-supportops-lora
+- Modelo en Hugging Face: https://huggingface.co/markankamaransheogarat/qwen2.5-3b-supportops-lora
 - Modelo base Qwen/Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex 1 Code es un modelo de generacion de texto especializado en codigo, publicado por el usuario VADRK155 en HuggingFace. Se trata de un GPT de 30 millones de parametros con arquitectura de transformer decoder-only implementada desde cero en PyTorch, sin utilizar la libreria `transformers` ni pesos preentrenados de terceros. El modelo escribe codigo Python y genera todos sus comentarios y salidas en ingles.
+Cortex 1 Code es un modelo de generacion de texto especializado en codigo, publicado por el usuario VADRK155 en Hugging Face. Se trata de un GPT de 30 millones de parametros con arquitectura de transformer decoder-only implementada desde cero en PyTorch, sin utilizar la libreria `transformers` ni pesos preentrenados de terceros. El modelo escribe codigo Python y genera todos sus comentarios y salidas en ingles.
 
 Su relevancia es fundamentalmente didactica y experimental: sirve como ejemplo reproducible de entrenamiento from scratch y como banco de pruebas de bajo coste para pipelines de inferencia, ya que se ejecuta en CPU o en cualquier GPU consumer sin requisitos apreciables de VRAM.
 
@@ -22,11 +22,11 @@ No obstante, conviene ser realista sobre su alcance. Con 30 millones de parametr
 | Formato de pesos | fp16 (contenedor no especificado en la model card) |
 | Tamano del repositorio | 0,1 GB |
 | Lenguaje de generacion | Python (comentarios y salida en ingles) |
-| Descargas / likes en HuggingFace | 0 descargas / 1 like |
+| Descargas / likes en Hugging Face | 0 descargas / 1 like |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only de 30 millones de parametros, codificado de forma manual en PyTorch. La model card indica explicitamente que no se empleo la libreria `transformers`, por lo que el binario de pesos no sigue el formato estandar de HuggingFace `transformers` y requiere el codigo de carga incluido en el propio repositorio (por ejemplo, `chat.py` con sus dependencias en `requirements.txt`).
+La arquitectura es un transformer decoder-only de 30 millones de parametros, codificado de forma manual en PyTorch. La model card indica explicitamente que no se empleo la libreria `transformers`, por lo que el binario de pesos no sigue el formato estandar de Hugging Face `transformers` y requiere el codigo de carga incluido en el propio repositorio (por ejemplo, `chat.py` con sus dependencias en `requirements.txt`).
 
 El entrenamiento se realizo completamente desde cero, sin pesos preentrenados ni inicializacion a partir de otro modelo. No se especifica en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas adicionales (atencion lineal, decodificacion especulativa, MoE o arquitecturas hibridas); se trata de un transformer denso convencional a escala reducida.
 
@@ -91,8 +91,8 @@ La comparacion se limita a caracteristicas objetivas de tamano, contexto y licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VADRK155/Cortex-1-Code
-- Repositorio de codigo de inferencia: incluido en el propio repositorio de HuggingFace (`chat.py`, `requirements.txt`)
+- Modelo en Hugging Face: https://huggingface.co/VADRK155/Cortex-1-Code
+- Repositorio de codigo de inferencia: incluido en el propio repositorio de Hugging Face (`chat.py`, `requirements.txt`)
 - Paper tecnico: no disponible
 - Blog o articulo del autor: no disponible
 - Demo o espacio interactivo: no disponible

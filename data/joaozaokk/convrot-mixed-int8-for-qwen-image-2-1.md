@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConvRot-Mixed-INT8-for-Qwen-Image-2.1 es una coleccion de checkpoints cuantizados del transformer de difusion Qwen-Image 2.1, publicada por el usuario JoaoZaokk en HuggingFace. No es un modelo nuevo ni un modelo de lenguaje: son pesos modificados y cuantizados del transformer BF16 original repaquetado por Comfy-Org, listos para cargarse en ComfyUI mediante el nodo estandar Load Diffusion Model. El repositorio incluye un build completo en INT8 ConvRot y cuatro builds de precision mixta que combinan capas en W4A4 (4 bits en pesos y activaciones) con capas promovidas a INT8 segun el error de cuantizacion medido por capa.
+ConvRot-Mixed-INT8-for-Qwen-Image-2.1 es una coleccion de checkpoints cuantizados del transformer de difusion Qwen-Image 2.1, publicada por el usuario JoaoZaokk en Hugging Face. No es un modelo nuevo ni un modelo de lenguaje: son pesos modificados y cuantizados del transformer BF16 original repaquetado por Comfy-Org, listos para cargarse en ComfyUI mediante el nodo estandar Load Diffusion Model. El repositorio incluye un build completo en INT8 ConvRot y cuatro builds de precision mixta que combinan capas en W4A4 (4 bits en pesos y activaciones) con capas promovidas a INT8 segun el error de cuantizacion medido por capa.
 
 El transformer del modelo base tiene 192 capas lineales. Las mezclas se generan con `tools/quant_mixed.py --promote-format int8 --promote-error <umbral>`: se mide el error W4A4 de cada capa sobre activaciones de calibracion procedentes de ejecuciones de muestreo reales y se promueven a INT8 las capas con mayor error. Los cuatro umbrales publicados (0,08 / 0,10 / 0,12 / 0,15) dan lugar a ficheros de entre 4,61 GB y 6,93 GB, frente a los 7,26 GB del build INT8 completo.
 
@@ -124,7 +124,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (por e
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/JoaoZaokk/ConvRot-Mixed-INT8-for-Qwen-Image-2.1
+- Pagina de Hugging Face del modelo: https://huggingface.co/JoaoZaokk/ConvRot-Mixed-INT8-for-Qwen-Image-2.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Repositorio de text encoder y VAE (Comfy-Org), que publica tambien su propio `qwen_image_2.1_int8_convrot`: https://huggingface.co/Comfy-Org/Qwen-Image-2.1

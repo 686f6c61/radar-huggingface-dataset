@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beetle-monolingual-fineweb3-ell es un modelo de generación de texto publicado en HuggingFace por el usuario Beetle-FineWeb-24B-5, con arquitectura declarada como `pico_decoder` y código personalizado (`custom_code`) bajo la librería transformers. A pesar de que el nombre del repositorio incluye "24B", el recuento real de parámetros publicado en los ficheros safetensors es de 193.804.032 parámetros (aproximadamente 193,8 millones), muy lejos de los 24.000 millones que sugiere el identificador. El modelo tiene apenas 10 descargas y 0 likes, y su model card es la plantilla automática de HuggingFace sin ningún campo completado.
+Beetle-monolingual-fineweb3-ell es un modelo de generación de texto publicado en Hugging Face por el usuario Beetle-FineWeb-24B-5, con arquitectura declarada como `pico_decoder` y código personalizado (`custom_code`) bajo la librería transformers. A pesar de que el nombre del repositorio incluye "24B", el recuento real de parámetros publicado en los ficheros safetensors es de 193.804.032 parámetros (aproximadamente 193,8 millones), muy lejos de los 24.000 millones que sugiere el identificador. El modelo tiene apenas 10 descargas y 0 likes, y su model card es la plantilla automática de Hugging Face sin ningún campo completado.
 
 La relevancia de esta ficha es limitada y, sobre todo, documental: se trata de un modelo prácticamente sin documentación pública, sin licencia declarada, sin idiomas confirmados y sin resultados de evaluación. El nombre del repositorio apunta a un modelo monolingüe entrenado sobre FineWeb, y el sufijo "ell" coincide con el código ISO 639-3 del griego, aunque esto no está confirmado en ninguna fuente oficial. Cualquier uso en producción debería partir de la verificación directa del comportamiento del modelo, ya que no existe información fiable sobre su entrenamiento, sesgos o rendimiento.
 
@@ -79,7 +79,7 @@ No hay información suficiente para establecer una comparativa fiable, ya que se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Beetle-monolingual-fineweb3-ell | 193,8 M | no disponible | no disponible | HuggingFace, 10 descargas |
+| Beetle-monolingual-fineweb3-ell | 193,8 M | no disponible | no disponible | Hugging Face, 10 descargas |
 | GPT-2 | 124 M | 1024 tokens | MIT | Ampliamente disponible |
 | Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Ampliamente disponible |
 | OPT-125M | 125 M | 2048 tokens | MIT | Ampliamente disponible |
@@ -88,7 +88,7 @@ La comparación es únicamente orientativa por tamaño; no implica similitud en 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: la documentación es la plantilla por defecto de HuggingFace, sin ningún campo cumplimentado.
+- Ausencia total de model card: la documentación es la plantilla por defecto de Hugging Face, sin ningún campo cumplimentado.
 - Licencia no declarada: no hay autorización explícita para uso comercial ni para redistribución. Tratar como uso restringido hasta que el autor lo aclare.
 - Riesgo de alucinación: no evaluado. Un modelo de 193,8 M sin alineación documentada tiene alta probabilidad de generar contenido factualmente incorrecto.
 - Sesgos: no documentados. Al desconocerse el corpus de entrenamiento, no puede evaluarse la presencia de sesgos.
@@ -101,6 +101,6 @@ La comparación es únicamente orientativa por tamaño; no implica similitud en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-monolingual-fineweb3-ell
+- Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-monolingual-fineweb3-ell
 - Paper referenciado en la plantilla (impacto de carbono): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo. Los resultados de la búsqueda web corresponden a la mariquita (insecto) y al automóvil Volkswagen Beetle, y no guardan relación con el modelo.

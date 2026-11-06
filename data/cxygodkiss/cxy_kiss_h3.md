@@ -1,9 +1,9 @@
 # CxyGodKiss/cxy_kiss_h3
 
 ## Resumen
-Cxy Kiss H3 es un LoRA (Low-Rank Adaptation) para generacion de video, publicado en HuggingFace por el usuario CxyGodKiss. No se trata de un modelo de lenguaje ni de un modelo de difusion completo, sino de un adaptador ligero (aproximadamente 0,6 GB de tamano de repositorio) disenado para funcionar sobre el modelo base MiniMax H3. Su proposito es muy especifico: mejorar la representacion de interacciones de beso en videos generados por IA, incluyendo besos apasionados e interacciones mas naturales entre dos personajes.
+Cxy Kiss H3 es un LoRA (Low-Rank Adaptation) para generacion de video, publicado en Hugging Face por el usuario CxyGodKiss. No se trata de un modelo de lenguaje ni de un modelo de difusion completo, sino de un adaptador ligero (aproximadamente 0,6 GB de tamano de repositorio) disenado para funcionar sobre el modelo base MiniMax H3. Su proposito es muy especifico: mejorar la representacion de interacciones de beso en videos generados por IA, incluyendo besos apasionados e interacciones mas naturales entre dos personajes.
 
-El autor indica que ha sido baneado de Civitai por motivos que desconoce, y que esta cuenta de HuggingFace es actualmente su unica fuente oficial de publicacion, pidiendo expresamente que nadie resuba sus modelos a Civitai. Esto es relevante para quien quiera seguir su trabajo: las futuras versiones se publicaran solo aqui.
+El autor indica que ha sido baneado de Civitai por motivos que desconoce, y que esta cuenta de Hugging Face es actualmente su unica fuente oficial de publicacion, pidiendo expresamente que nadie resuba sus modelos a Civitai. Esto es relevante para quien quiera seguir su trabajo: las futuras versiones se publicaran solo aqui.
 
 El modelo es relevante para la comunidad de generacion de video con ComfyUI, ya que los LoRA de accion especifica permiten controlar gestos e interacciones que los modelos base suelen representar de forma inconsistente. No se dispone de informacion sobre arquitectura del adaptador (rank, alpha), datos de entrenamiento ni benchmarks.
 
@@ -55,19 +55,19 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Tamano | 0,6 GB | no disponible | no disponible |
 | Requiere modelo base | Si (MiniMax H3) | Si | No |
 | Licencia | Apache 2.0 | no disponible | no disponible |
-| Disponibilidad | HuggingFace (autor baneado de Civitai) | no disponible | no disponible |
+| Disponibilidad | Hugging Face (autor baneado de Civitai) | no disponible | no disponible |
 
 No se conocen otros LoRA comparables publicados con datos verificables, por lo que la comparativa se limita a lo indicado.
 
 ## Limitaciones y advertencias
 - Los resultados varian significativamente segun el modelo base, el workflow, los prompts y la configuracion de muestreo, tal como advierte el propio autor en la model card.
 - No hay documentacion tecnica del entrenamiento (dataset, rank, alpha, pasos), lo que dificulta evaluar la calidad y reproducibilidad del adaptador.
-- El autor ha sido baneado de Civitai y pide que sus modelos no se resuban alli; hay que respetar esa peticion y descargar solo desde su cuenta oficial de HuggingFace.
+- El autor ha sido baneado de Civitai y pide que sus modelos no se resuban alli; hay que respetar esa peticion y descargar solo desde su cuenta oficial de Hugging Face.
 - Contenido sensible: el LoRA esta orientado a interacciones romanticas e intimas entre personajes; su uso debe respetar las politicas de la plataforma de despliegue y la legislacion aplicable, evitando la generacion de contenido con personas reales sin consentimiento.
 - El modelo hereda los sesgos y limitaciones del modelo base MiniMax H3, que no estan documentados en la ficha.
 - Riesgo de artefactos visuales si se usa una fuerza del LoRA fuera del rango recomendado (0,5-1,0) o con workflows no compatibles.
 - Licencia Apache 2.0: permite uso comercial, pero la responsabilidad sobre el contenido generado recae en el usuario final.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/CxyGodKiss/cxy_kiss_h3
+- Hugging Face: https://huggingface.co/CxyGodKiss/cxy_kiss_h3
 - Modelo base MiniMax H3: no disponible (no se proporciona enlace al checkpoint base)

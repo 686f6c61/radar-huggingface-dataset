@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Reinforce-mymodel es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimacion de retorno Monte Carlo) para resolver el entorno CartPole-v1 de Gymnasium. Lo publica el usuario handeyildirim en HuggingFace como parte de las practicas del curso Deep Reinforcement Learning Course, en su unidad 4, orientada precisamente a policy gradients. No es un modelo de lenguaje ni un transformer generativo: es una politica neuronal que mapea observaciones del entorno (posicion y velocidad del carro, angulo y velocidad angular del poste) a una distribucion de probabilidad sobre dos acciones discretas (empujar a izquierda o derecha).
+Reinforce-mymodel es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimacion de retorno Monte Carlo) para resolver el entorno CartPole-v1 de Gymnasium. Lo publica el usuario handeyildirim en Hugging Face como parte de las practicas del curso Deep Reinforcement Learning Course, en su unidad 4, orientada precisamente a policy gradients. No es un modelo de lenguaje ni un transformer generativo: es una politica neuronal que mapea observaciones del entorno (posicion y velocidad del carro, angulo y velocidad angular del poste) a una distribucion de probabilidad sobre dos acciones discretas (empujar a izquierda o derecha).
 
-El interes del artefacto es fundamentalmente didactico. Sirve como referencia reproducible de una implementacion propia de REINFORCE, con una recompensa media declarada de 500.00 +/- 0.00 en CartPole-v1, que es el maximo alcanzable en ese entorno (el episodio se trunca a 500 pasos). No obstante, esa metrica no esta verificada por HuggingFace (campo `verified: false`) y el repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
+El interes del artefacto es fundamentalmente didactico. Sirve como referencia reproducible de una implementacion propia de REINFORCE, con una recompensa media declarada de 500.00 +/- 0.00 en CartPole-v1, que es el maximo alcanzable en ese entorno (el episodio se trunca a 500 pasos). No obstante, esa metrica no esta verificada por Hugging Face (campo `verified: false`) y el repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 La relevancia practica fuera del ambito docente es limitada: el modelo resuelve un problema de control de juguete con un espacio de observacion de 4 dimensiones y un espacio de acciones de 2 elementos. No debe confundirse con un modelo fundacional ni emplearse como componente de sistemas de produccion de proposito general.
 
@@ -48,7 +48,7 @@ El entrenamiento se realiza sobre el entorno CartPole-v1, incluido en Gymnasium,
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index de la model card (no verificados por HuggingFace):
+Datos declarados por el autor en el model-index de la model card (no verificados por Hugging Face):
 
 | Tarea | Dataset | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -87,6 +87,6 @@ La comparacion cuantitativa con alternativas concretas no esta disponible en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/handeyildirim/Reinforce-mymodel
+- Modelo en Hugging Face: https://huggingface.co/handeyildirim/Reinforce-mymodel
 - Curso Deep Reinforcement Learning, unidad 4 (introduccion): https://huggingface.co/deep-rl-course/unit4/introduction
 - Documentacion de Gymnasium CartPole-v1: https://gymnasium.farama.org/environments/classic_control/cart_pole/

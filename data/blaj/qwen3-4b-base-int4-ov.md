@@ -89,7 +89,7 @@ La comparacion de rendimiento numerico entre estas variantes no esta disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen3-4B-Base-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen3-4B-Base-int4-ov
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Variante instruct de referencia: https://huggingface.co/Qwen/Qwen3-4B
 - Build hermana en int8: https://huggingface.co/blaj/Qwen3-4B-Base-int8-ov

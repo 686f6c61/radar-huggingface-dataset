@@ -95,5 +95,5 @@ La eleccion es directa: si solo se necesita codigo agéntico en hardware de cons
 - Modelo: https://huggingface.co/oisee/Qwen3.8-Flash-Next-GSQ-RCO-Coder-192E-GGUF
 - Modelo padre (ISTA-DASLab, 256 expertos): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
 - Papers citados en los tags: https://arxiv.org/abs/2604.18556 y https://arxiv.org/abs/2605.00649
-- MTP head de unsloth referenciada: mtp-Qwen3.8-Flash-Next-exps-Q4_K.gguf (en el perfil de unsloth en HuggingFace)
+- MTP head de unsloth referenciada: mtp-Qwen3.8-Flash-Next-exps-Q4_K.gguf (en el perfil de unsloth en Hugging Face)
 - Demo o repositorio de codigo adicional: no disponible

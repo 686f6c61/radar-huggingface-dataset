@@ -78,7 +78,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Detector A (este modelo) | LightGBM sobre caracteristicas de pose | 300 arboles, 15 hojas | Ventanas causales de 4 s y 10 s, media movil de 5 s | 29/33 crisis, 4,3 falsos positivos/h (LOPO VSViG) | MIT | Pesos `.txt` en HuggingFace |
+| Detector A (este modelo) | LightGBM sobre caracteristicas de pose | 300 arboles, 15 hojas | Ventanas causales de 4 s y 10 s, media movil de 5 s | 29/33 crisis, 4,3 falsos positivos/h (LOPO VSViG) | MIT | Pesos `.txt` en Hugging Face |
 | VSViG (Xu et al., ECCV 2024) | Red espaciotemporal sobre esqueletos (ViG) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha; consultar el paper | Apache-2.0 (codigo y dataset) | Codigo en GitHub `xuyankun/VSViG`; pesos no verificados en esta ficha |
 | Alternativas comerciales de deteccion de crisis por video | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos suficientes en la informacion proporcionada para una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Einse57/semi-signals-detector-a
+- Modelo en Hugging Face: https://huggingface.co/Einse57/semi-signals-detector-a
 - Repositorio del proyecto: https://github.com/Einse57/semi-signals
 - Dataset WU-SAHZU-EMU-Video: https://huggingface.co/datasets/xuyankun/WU-SAHZU-EMU-Video
 - Codigo de VSViG: https://github.com/xuyankun/VSViG

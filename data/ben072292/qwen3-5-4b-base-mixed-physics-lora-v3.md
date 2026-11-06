@@ -29,7 +29,7 @@ Los hiperparámetros documentados son: learning rate 5e-6, tamaño de batch por 
 
 ## Capacidades
 
-- Generación de texto autoregresiva y uso conversacional (etiquetas `text-generation` y `conversational` en HuggingFace).
+- Generación de texto autoregresiva y uso conversacional (etiquetas `text-generation` y `conversational` en Hugging Face).
 - Especialización presunta en contenido de física, derivada del dataset `mixed_physics_prefix_8192`; no hay evaluación publicada que lo confirme.
 - El modelo base Qwen3.5-4B-Base aporta las capacidades generales de razonamiento, código y matemáticas típicas de la familia; el adaptador puede haberlas alterado, no se documenta.
 - Soporte de tool calling / function calling: no disponible (no se menciona en la información proporcionada).
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. El `
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ben072292/Qwen3.5-4B-Base-mixed-physics-LoRA-v3 | ~4B (base) + adaptador r=8 | no disponible | sin benchmarks publicados | other | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B-Base | ~4B | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | HuggingFace (modelo base) |
+| ben072292/Qwen3.5-4B-Base-mixed-physics-LoRA-v3 | ~4B (base) + adaptador r=8 | no disponible | sin benchmarks publicados | other | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B-Base | ~4B | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Hugging Face (modelo base) |
 | Otros adaptadores LoRA de física sobre modelos de 3-8B | variable | variable | no disponible | variable | no verificable con esta búsqueda |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas como Llama 3.2 3B, Phi-4-mini o Gemma 3 4B: la búsqueda web realizada no devolvió información relevante sobre este modelo ni sobre modelos comparables.
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ben072292/Qwen3.5-4B-Base-mixed-physics-LoRA-v3
+- Modelo en Hugging Face: https://huggingface.co/ben072292/Qwen3.5-4B-Base-mixed-physics-LoRA-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Paper, blog, repositorio o demo del adaptador: no disponible
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo (los resultados obtenidos corresponden a páginas de soporte de Microsoft y no guardan relación con el modelo).

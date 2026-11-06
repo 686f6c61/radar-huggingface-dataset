@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Avicennasis/K2-Horizon-3.7B-heretic | 5,06 B | no disponible | en, zh | apache-2.0 | HuggingFace (safetensors + MLX 8-bit) |
-| IFM/K2-Horizon-3.7B (base) | no disponible | no disponible | no disponible | apache-2.0 (heredada) | HuggingFace |
+| Avicennasis/K2-Horizon-3.7B-heretic | 5,06 B | no disponible | en, zh | apache-2.0 | Hugging Face (safetensors + MLX 8-bit) |
+| IFM/K2-Horizon-3.7B (base) | no disponible | no disponible | no disponible | apache-2.0 (heredada) | Hugging Face |
 | Alternativas abliterated de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de terceros directamente comparables en la informacion proporcionada. La unica comparacion fiable es contra el propio modelo base, en el que la abliteracion reduce los rechazos del 28,0 % al 6,0 % en el red-team del autor.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de terceros directamente comparables en la
 - Escaso respaldo de la comunidad: 0 descargas y 0 likes en el momento de la ficha, sin historial de validacion externa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/K2-Horizon-3.7B-heretic
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/K2-Horizon-3.7B-heretic
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Version MLX 8-bit: https://huggingface.co/Avicennasis/K2-Horizon-3.7B-heretic-mlx-8bit
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic

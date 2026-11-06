@@ -6,7 +6,7 @@ ScaleAdaptiveCM es un modelo generativo de consistencia (consistency model) de u
 
 El metodo subyacente fue propuesto por equipos del Potsdam Institute for Climate Impact Research, la Technical University of Munich, la Nanjing University of Information Science and Technology y otras instituciones colaboradoras, y se publico en el articulo "Fast, scale-adaptive and uncertainty-aware downscaling of Earth system model fields with generative machine learning" (Nature Machine Intelligence, DOI 10.1038/s42256-025-00980-5). El modelo se entreno con precipitacion diaria de ERA5 (1940-2018) sobre la rejilla objetivo de 240×384 y se evaluo con simulaciones de POEM, GFDL-ESM4 y SpeedyWeather.jl.
 
-El repositorio de HuggingFace es una reproduccion de ingenieria independiente de las especificaciones publicas del metodo, no la publicacion oficial de los autores: no incluye pesos entrenados ni proporciona resultados de rendimiento. Su relevancia actual reside en que permite reproducir y validar el protocolo completo (datos estructurados, entrenamiento, inferencia, metricas de downscaling y visualizacion) en entornos GPU, DCU, ModelScope y OneCode, con licencia Apache 2.0 para el codigo.
+El repositorio de Hugging Face es una reproduccion de ingenieria independiente de las especificaciones publicas del metodo, no la publicacion oficial de los autores: no incluye pesos entrenados ni proporciona resultados de rendimiento. Su relevancia actual reside en que permite reproducir y validar el protocolo completo (datos estructurados, entrenamiento, inferencia, metricas de downscaling y visualizacion) en entornos GPU, DCU, ModelScope y OneCode, con licencia Apache 2.0 para el codigo.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ No disponible. La informacion proporcionada no incluye otros modelos de downscal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/ScaleAdaptiveCM
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/ScaleAdaptiveCM
 - Articulo: "Fast, scale-adaptive and uncertainty-aware downscaling of Earth system model fields with generative machine learning": https://doi.org/10.1038/s42256-025-00980-5
 - Repositorio principal de OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio principal de OneScience en Gitee: https://gitee.com/onescience-ai/onescience

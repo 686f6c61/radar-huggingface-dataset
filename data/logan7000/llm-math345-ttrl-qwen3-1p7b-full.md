@@ -6,7 +6,7 @@ El modelo `logan7000/llm-math345-ttrl-qwen3-1p7b-full` es un ajuste fino del mod
 
 Este modelo es relevante porque explora una metodología de entrenamiento reciente (TTRL) aplicada a un LLM compacto de 1.700 millones de parámetros, lo que permite experimentar con técnicas avanzadas de RL en hardware asequible. Al estar basado en Qwen3-1.7B-Base, hereda la arquitectura densa de la familia Qwen3, con una ventana de contexto nativa de 32.000 tokens (aunque no se confirma si el ajuste ha modificado este valor). El repositorio incluye solo pesos en formato safetensors, sin cuantizaciones adicionales ni archivos de inferencia listos para usar.
 
-La ficha recoge los datos disponibles en la model card y en la información pública de HuggingFace. Dado que no se publican resultados de benchmarks ni métricas de evaluación, gran parte de las especificaciones de rendimiento quedan sin confirmar.
+La ficha recoge los datos disponibles en la model card y en la información pública de Hugging Face. Dado que no se publican resultados de benchmarks ni métricas de evaluación, gran parte de las especificaciones de rendimiento quedan sin confirmar.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: el modelo tiene 1.700 millones de parámetros. En FP16, los pesos ocupan aproximadamente 3,4 GB; en FP32, unos 6,8 GB (el repositorio pesa 6,9 GB, lo que sugiere pesos en FP32 o FP16 con margen). Con cuantización INT8 se reduciría a ~1,7 GB y en INT4 a ~0,9 GB, aunque no se proporcionan archivos cuantizados.
 - GPU recomendadas: una GPU con al menos 8 GB de VRAM puede ejecutar el modelo en FP16 sin cuantizar (por ejemplo, RTX 3060, RTX 4060, A10). Para uso en FP32, se recomienda 12 GB o más.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs de gama media con cuantización o en FP16 con VRAM suficiente.
-- Opciones de despliegue: al no incluir archivos GGUF ni configuración específica, se puede cargar con transformers de HuggingFace, o convertir a GGUF para usar con llama.cpp u Ollama. También es compatible con vLLM y TGI si se dispone de los pesos en un formato adecuado.
+- Opciones de despliegue: al no incluir archivos GGUF ni configuración específica, se puede cargar con transformers de Hugging Face, o convertir a GGUF para usar con llama.cpp u Ollama. También es compatible con vLLM y TGI si se dispone de los pesos en un formato adecuado.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 1,7B en una RTX 4090, se puede esperar una velocidad de generación de decenas de tokens por segundo, pero esto es una estimación general y no un dato oficial.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de datos comparativos publicados. El modelo es un ajuste fino de Q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/llm-math345-ttrl-qwen3-1p7b-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/llm-math345-ttrl-qwen3-1p7b-full
 - Repositorio similar (phi35mini): https://huggingface.co/logan7000/llm-math345-ttrl-phi35mini-endpoint
 - Paper técnico de Qwen3: https://arxiv.org/pdf/2505.09388
 - Comprobador de hardware para LLMs: https://llmrun.dev/

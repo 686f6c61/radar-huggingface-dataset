@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ilikemechuri/moe_vs_dense_full_results_pt` es un conjunto de datos publicado en HuggingFace por el usuario Ilikemechuri. Su nombre sugiere que contiene los resultados completos de una comparación entre modelos de arquitectura MoE (Mixture of Experts) y modelos densos, probablemente en el contexto de evaluación de rendimiento o benchmarks. No se trata de un modelo de lenguaje en sí, sino de un dataset o una colección de métricas y resultados obtenidos de dicha comparación.
+El repositorio `Ilikemechuri/moe_vs_dense_full_results_pt` es un conjunto de datos publicado en Hugging Face por el usuario Ilikemechuri. Su nombre sugiere que contiene los resultados completos de una comparación entre modelos de arquitectura MoE (Mixture of Experts) y modelos densos, probablemente en el contexto de evaluación de rendimiento o benchmarks. No se trata de un modelo de lenguaje en sí, sino de un dataset o una colección de métricas y resultados obtenidos de dicha comparación.
 
 La información disponible es extremadamente limitada: no hay descripción en la model card más allá de la licencia Apache 2.0, no se especifican idiomas, pipeline ni detalles técnicos. El repositorio tiene un tamaño de 0,1 GB y fue creado en agosto de 2026. Dado que no hay datos sustanciales sobre el contenido, esta ficha se centrará en lo que se puede inferir del nombre y en las limitaciones de la información disponible.
 
@@ -66,6 +66,6 @@ No disponible. No se puede comparar un repositorio de datos con modelos de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ilikemechuri/moe_vs_dense_full_results_pt
+- Repositorio en Hugging Face: https://huggingface.co/Ilikemechuri/moe_vs_dense_full_results_pt
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) asociados a este repositorio.

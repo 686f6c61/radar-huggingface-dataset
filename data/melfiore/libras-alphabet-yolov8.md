@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`melfiore/libras-alphabet-yolov8` es un modelo de visión por computador publicado en HuggingFace por el usuario `melfiore`. El nombre indica que se trata de un detector basado en la arquitectura YOLOv8 orientado al reconocimiento del alfabeto dactilológico de Libras (Lengua Brasileira de Sinais), la lengua de signos utilizada en Brasil. No se trata de un modelo de lenguaje, sino de un modelo de detección de objetos/gestos que, presumiblemente, localiza y clasifica las configuraciones manuales correspondientes a las letras del alfabeto en imágenes o vídeo.
+`melfiore/libras-alphabet-yolov8` es un modelo de visión por computador publicado en Hugging Face por el usuario `melfiore`. El nombre indica que se trata de un detector basado en la arquitectura YOLOv8 orientado al reconocimiento del alfabeto dactilológico de Libras (Lengua Brasileira de Sinais), la lengua de signos utilizada en Brasil. No se trata de un modelo de lenguaje, sino de un modelo de detección de objetos/gestos que, presumiblemente, localiza y clasifica las configuraciones manuales correspondientes a las letras del alfabeto en imágenes o vídeo.
 
-La información disponible es muy limitada: la model card está prácticamente vacía (solo contiene la declaración de licencia) y los metadatos de HuggingFace no incluyen pipeline, idiomas ni descripción funcional. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere un proyecto personal o experimental sin validación comunitaria.
+La información disponible es muy limitada: la model card está prácticamente vacía (solo contiene la declaración de licencia) y los metadatos de Hugging Face no incluyen pipeline, idiomas ni descripción funcional. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere un proyecto personal o experimental sin validación comunitaria.
 
 Por tanto, esta ficha debe interpretarse como una descripción del marco técnico esperable para un detector YOLOv8 aplicado a reconocimiento de gestos, no como una validación de las capacidades reales del modelo, que no han sido documentadas por el autor.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| melfiore/libras-alphabet-yolov8 | YOLOv8 (variante no especificada) | Detección de alfabeto dactilológico Libras | AGPL-3.0 | HuggingFace, sin documentación |
+| melfiore/libras-alphabet-yolov8 | YOLOv8 (variante no especificada) | Detección de alfabeto dactilológico Libras | AGPL-3.0 | Hugging Face, sin documentación |
 | Ultralytics YOLOv8 (base) | YOLOv8 | Detección de objetos genérica (COCO) | AGPL-3.0 | Pública, ampliamente documentada |
 | MediaPipe Hands | Modelo de landmarks de mano | Keypoints de mano (21 puntos) | Apache 2.0 | Pública, Google |
 | Detectores YOLO específicos para lengua de signos | YOLOv5/v8 fine-tuned | Detección de gestos | Variable | Repositorios de investigación dispersos |
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/melfiore/libras-alphabet-yolov8
+- Hugging Face: https://huggingface.co/melfiore/libras-alphabet-yolov8
 - Ultralytics YOLOv8 (documentación de la arquitectura base): https://docs.ultralytics.com/
 - Repositorio Ultralytics en GitHub: https://github.com/ultralytics/ultralytics

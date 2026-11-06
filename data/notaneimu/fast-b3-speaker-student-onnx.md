@@ -111,7 +111,7 @@ El estudiante iguala o supera a B0 en EER a 3 s en VoxCeleb y Common Voice, pero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/notaneimu/fast-b3-speaker-student-onnx
+- Modelo en Hugging Face: https://huggingface.co/notaneimu/fast-b3-speaker-student-onnx
 - Configuración y revisión de pesos B3: https://huggingface.co/notaneimu/fast-b3-speaker-student-onnx/blob/main/config.json
 - Resultados completos de calidad: https://huggingface.co/notaneimu/fast-b3-speaker-student-onnx/blob/main/evaluation.json
 - Comparativas CSV: https://huggingface.co/notaneimu/fast-b3-speaker-student-onnx/blob/main/evaluation.csv

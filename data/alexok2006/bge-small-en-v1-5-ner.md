@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexok2006/bge-small-en-v1.5-ner` es un modelo de clasificación de tokens publicado por el usuario alexok2006 en HuggingFace. Se trata de un fine-tune de `BAAI/bge-small-en-v1.5`, un encoder tipo BERT de la familia BGE, orientado a tareas de reconocimiento de entidades nombradas (NER). El modelo tiene 33.215.625 parámetros totales, un tamaño de repositorio de 0,8 GB y se distribuye en safetensors con licencia MIT.
+`alexok2006/bge-small-en-v1.5-ner` es un modelo de clasificación de tokens publicado por el usuario alexok2006 en Hugging Face. Se trata de un fine-tune de `BAAI/bge-small-en-v1.5`, un encoder tipo BERT de la familia BGE, orientado a tareas de reconocimiento de entidades nombradas (NER). El modelo tiene 33.215.625 parámetros totales, un tamaño de repositorio de 0,8 GB y se distribuye en safetensors con licencia MIT.
 
 Su relevancia radica en que ofrece una alternativa ligera para extracción de entidades en entornos con pocos recursos, ya que por tamaño puede ejecutarse en CPU o GPU consumer. Sin embargo, la model card está generada automáticamente y no documenta el dataset de entrenamiento, el esquema de etiquetas ni el contexto máximo, lo que limita su uso directo en producción sin una validación previa.
 
@@ -27,7 +27,7 @@ No se han publicado benchmarks estándar ni comparativas con otros modelos NER e
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `BAAI/bge-small-en-v1.5`, un transformer encoder de tipo BERT, y añade una cabeza de clasificación de tokens para NER. La model card indica que fue generado con `Trainer` de HuggingFace (`generated_from_trainer`) sobre un dataset desconocido. No se documentan composición del dataset, número de tokens, etiquetas ni técnicas de RLHF/DPO; no hay innovaciones técnicas declaradas.
+El modelo parte de `BAAI/bge-small-en-v1.5`, un transformer encoder de tipo BERT, y añade una cabeza de clasificación de tokens para NER. La model card indica que fue generado con `Trainer` de Hugging Face (`generated_from_trainer`) sobre un dataset desconocido. No se documentan composición del dataset, número de tokens, etiquetas ni técnicas de RLHF/DPO; no hay innovaciones técnicas declaradas.
 
 Los hiperparámetros de entrenamiento fueron: learning rate 2e-05, batch de entrenamiento 16, batch de evaluación 16, semilla 42, optimizador AdamW con betas (0,9, 0,999) y epsilon 1e-08, scheduler lineal y 10 épocas. Se registraron resultados hasta la época 6 (paso 3756), con una pérdida de validación de 0,0834. Las versiones de framework fueron Transformers 4.50.0, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.21.4.
 
@@ -89,8 +89,8 @@ No se dispone de información sobre modelos comparables de NER en la informació
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alexok2006/bge-small-en-v1.5-ner` | Clasificación de tokens (NER) | 33.215.625 | no disponible | MIT | HuggingFace, 0 descargas |
-| `BAAI/bge-small-en-v1.5` | Embeddings (modelo base) | no disponible en la información | no disponible | no disponible en la información | HuggingFace |
+| `alexok2006/bge-small-en-v1.5-ner` | Clasificación de tokens (NER) | 33.215.625 | no disponible | MIT | Hugging Face, 0 descargas |
+| `BAAI/bge-small-en-v1.5` | Embeddings (modelo base) | no disponible en la información | no disponible | no disponible en la información | Hugging Face |
 | Alternativas NER de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,6 +108,6 @@ No se dispone de información sobre modelos comparables de NER en la informació
 
 ## Enlaces
 
-- [HuggingFace: alexok2006/bge-small-en-v1.5-ner](https://huggingface.co/alexok2006/bge-small-en-v1.5-ner)
+- [Hugging Face: alexok2006/bge-small-en-v1.5-ner](https://huggingface.co/alexok2006/bge-small-en-v1.5-ner)
 - [Modelo base: BAAI/bge-small-en-v1.5](https://huggingface.co/BAAI/bge-small-en-v1.5)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

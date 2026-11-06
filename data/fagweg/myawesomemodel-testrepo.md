@@ -52,4 +52,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/fagweg/MyAwesomeModel-TestRepo)
+- [Repositorio en Hugging Face](https://huggingface.co/fagweg/MyAwesomeModel-TestRepo)

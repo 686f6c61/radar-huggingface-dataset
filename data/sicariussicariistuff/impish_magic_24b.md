@@ -5,7 +5,7 @@ Impish_Magic_24B es un ajuste fino (fine-tune) del modelo mistralai/Magistral-Sm
 
 El modelo hereda la licencia Apache 2.0 del Magistral-Small-2506, lo que facilita su uso comercial sin las restricciones habituales de otros modelos de Mistral. Está disponible únicamente en inglés y se distribuye en formato safetensors. Su relevancia actual radica en ser el primer fine-tune de rol de Magistral, una familia con capacidades de razonamiento encadenado, y en ofrecer un tamaño de 24B que cabe en GPU de consumo con cuantización adecuada.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace y la model card del autor; no se han publicado resultados de benchmarks ni especificaciones detalladas de entrenamiento más allá de lo indicado.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y la model card del autor; no se han publicado resultados de benchmarks ni especificaciones detalladas de entrenamiento más allá de lo indicado.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Impish_Magic_24B | ~24B | no disponible | Apache 2.0 | Roleplay y aventura (fine-tune de Magistral) | HuggingFace, safetensors |
-| mistralai/Magistral-Small-2506 (base) | ~24B | no disponible en esta ficha | Apache 2.0 | Razonamiento general | HuggingFace |
+| Impish_Magic_24B | ~24B | no disponible | Apache 2.0 | Roleplay y aventura (fine-tune de Magistral) | Hugging Face, safetensors |
+| mistralai/Magistral-Small-2506 (base) | ~24B | no disponible en esta ficha | Apache 2.0 | Razonamiento general | Hugging Face |
 | Alternativas de rol de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con otras alternativas de rol del mismo tamaño.
@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 - No hay información sobre tool calling, agentes ni modo de razonamiento explícito en este fine-tune.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Impish_Magic_24B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Impish_Magic_24B
 - Modelo base: https://huggingface.co/mistralai/Magistral-Small-2506
 - Dataset de entrenamiento: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries
 - Hilo de Reddit citado por el autor: https://www.reddit.com/r/SillyTavernAI/comments/1jb7ykd/comment/mhw9smq/

@@ -114,7 +114,7 @@ Las tres alternativas se citan por ser referencias habituales en verificacion de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_conformer_small_dr_vectors
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_conformer_small_dr_vectors
 - Coleccion FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete en PyPI: https://pypi.org/project/flaxspeaker/

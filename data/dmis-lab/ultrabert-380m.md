@@ -90,19 +90,19 @@ Metodologia de evaluacion declarada: cada modelo se ajusta por tarea con la mism
 - GPU recomendadas: A100, H100 o L40S para entrenamiento y fine-tuning con lotes grandes y 32K tokens. Para inferencia, cualquier GPU consumer moderna sirve: RTX 4090, RTX 4080, RTX 3090, RTX 3060 (12 GB) e incluso GPUs con 6-8 GB para secuencias moderadas.
 - Cabe en GPU consumer: si, y con margen amplio. Es un modelo de ~0,43B parametros en el rango de los encoders ligeros; en cuantizacion de 8 bits ocuparia unos 0,43 GB y en 4 bits unos 0,21 GB, aunque el autor no publica checkpoints cuantizados oficiales.
 - CPU: la inferencia en CPU es viable por el tamano del modelo, especialmente con secuencias cortas; el cuello de botella aparece con 32K tokens.
-- Opciones de despliegue: la ruta soportada oficialmente es HuggingFace Transformers >= 5 con `trust_remote_code=True`. No hay informacion disponible sobre soporte en vLLM, TGI, llama.cpp u Ollama; al tratarse de un encoder con codigo personalizado y pipeline `fill-mask`, no es un candidato directo para servidores de generacion tipo vLLM u Ollama, y llama.cpp no dispone de soporte confirmado para esta arquitectura.
+- Opciones de despliegue: la ruta soportada oficialmente es Hugging Face Transformers >= 5 con `trust_remote_code=True`. No hay informacion disponible sobre soporte en vLLM, TGI, llama.cpp u Ollama; al tratarse de un encoder con codigo personalizado y pipeline `fill-mask`, no es un candidato directo para servidores de generacion tipo vLLM u Ollama, y llama.cpp no dispone de soporte confirmado para esta arquitectura.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | GLUE | BEIR | LongEmbed | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| UltraBERT-380M | 429,97 M | 32K | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, requiere `transformers >= 5` y `trust_remote_code` |
-| UltraBERT-150M | 152 M | 32K | 89,5 | 45,2 | 72,0 | Apache 2.0 | HuggingFace, misma familia |
-| ModernBERT | 149 M | 8K | 88,4 | 42,6 | 63,2 | Apache 2.0 | HuggingFace, soporte nativo en Transformers |
-| Ettin Encoder | 149 M | 8K | 88,9 | 42,4 | 60,1 | Apache 2.0 | HuggingFace |
-| BERT-large | 334 M | 512 | 85,2 | 38,6 | no disponible | Apache 2.0 (checkpoint original de Google con licencia aparte) | HuggingFace, soporte nativo |
-| DeBERTaV3-large | ~435 M (no confirmado en la informacion disponible) | 512 | no disponible en el fragmento citado | no disponible | no disponible | MIT | HuggingFace |
+| UltraBERT-380M | 429,97 M | 32K | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, requiere `transformers >= 5` y `trust_remote_code` |
+| UltraBERT-150M | 152 M | 32K | 89,5 | 45,2 | 72,0 | Apache 2.0 | Hugging Face, misma familia |
+| ModernBERT | 149 M | 8K | 88,4 | 42,6 | 63,2 | Apache 2.0 | Hugging Face, soporte nativo en Transformers |
+| Ettin Encoder | 149 M | 8K | 88,9 | 42,4 | 60,1 | Apache 2.0 | Hugging Face |
+| BERT-large | 334 M | 512 | 85,2 | 38,6 | no disponible | Apache 2.0 (checkpoint original de Google con licencia aparte) | Hugging Face, soporte nativo |
+| DeBERTaV3-large | ~435 M (no confirmado en la informacion disponible) | 512 | no disponible en el fragmento citado | no disponible | no disponible | MIT | Hugging Face |
 
 La comparacion directa mas util es contra ModernBERT y Ettin Encoder en el segmento de 150M: UltraBERT-150M lidera GLUE, BEIR y LongEmbed con un contexto cuatro veces mayor. Para el tamano de 380M no hay cifras publicadas en la informacion disponible, solo la referencia cualitativa del paper frente a DeBERTaV3-large.
 
@@ -123,7 +123,7 @@ La comparacion directa mas util es contra ModernBERT y Ettin Encoder en el segme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmis-lab/UltraBERT-380M
+- Modelo en Hugging Face: https://huggingface.co/dmis-lab/UltraBERT-380M
 - Modelo hermano UltraBERT-150M: https://huggingface.co/dmis-lab/UltraBERT-150M
 - Modelo de embeddings UltraBERT-Embed-150M: https://huggingface.co/dmis-lab/UltraBERT-Embed-150M
 - Blog del autor "UltraBERT: One Encoder for Classification and Retrieval": https://huggingface.co/blog/dmis-lab/ultrabert

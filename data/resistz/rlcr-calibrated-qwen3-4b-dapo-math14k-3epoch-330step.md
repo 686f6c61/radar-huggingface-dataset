@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `resistz/RLCR-Calibrated-Qwen3-4B-DAPO-Math14k-3Epoch-330Step` es un ajuste fino (fine-tuning) del modelo base Qwen3-4B, desarrollado por el usuario resistz y publicado en HuggingFace. El nombre sugiere que se ha entrenado con el algoritmo DAPO (Decoupled Alignment Policy Optimization) sobre un conjunto de datos de matemáticas de 14.000 ejemplos, durante 3 épocas y 330 pasos, con una técnica de calibración denominada RLCR (no se especifica su significado exacto). El modelo está pensado para mejorar las capacidades de razonamiento matemático del modelo base, aunque no se proporcionan detalles adicionales en la model card.
+El modelo `resistz/RLCR-Calibrated-Qwen3-4B-DAPO-Math14k-3Epoch-330Step` es un ajuste fino (fine-tuning) del modelo base Qwen3-4B, desarrollado por el usuario resistz y publicado en Hugging Face. El nombre sugiere que se ha entrenado con el algoritmo DAPO (Decoupled Alignment Policy Optimization) sobre un conjunto de datos de matemáticas de 14.000 ejemplos, durante 3 épocas y 330 pasos, con una técnica de calibración denominada RLCR (no se especifica su significado exacto). El modelo está pensado para mejorar las capacidades de razonamiento matemático del modelo base, aunque no se proporcionan detalles adicionales en la model card.
 
 Con 4.411.424.256 parámetros (aproximadamente 4,4 mil millones), el modelo se distribuye en formato safetensors y ocupa 8,8 GB en el repositorio. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la información pública es muy escasa: no se indican idiomas soportados, longitud de contexto, ni resultados de benchmarks. Esto limita la evaluación directa del modelo, aunque su base Qwen3-4B es conocida por su soporte multilingüe y su doble modo de razonamiento (pensamiento y no pensamiento).
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: con 4,4 mil millones de parámetros en FP16, se necesitan aproximadamente 8,8 GB de VRAM solo para los pesos. Con cuantización a 8 bits, ~4,4 GB; a 4 bits, ~2,2 GB (si se dispone de versiones cuantizadas, que no están publicadas en el repo).
 - GPU recomendadas: tarjetas con al menos 12 GB de VRAM para FP16 (RTX 3060, RTX 4070, A10, etc.). Para cuantización 4 bits, una GPU con 6 GB podría ser suficiente (RTX 2060, GTX 1660, etc.).
 - Compatibilidad con GPU de consumo: sí, un modelo de 4B es ejecutable en GPUs consumer modernas con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Transformers. Dado que solo hay safetensors, se puede convertir a GGUF para llama.cpp.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Transformers. Dado que solo hay safetensors, se puede convertir a GGUF para llama.cpp.
 - Latencia y throughput: no disponibles. Se estima que en una RTX 4090, la generación de tokens puede rondar los 50-100 tokens/s en FP16, pero es una estimación sin confirmar.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se basa única
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resistz/RLCR-Calibrated-Qwen3-4B-DAPO-Math14k-3Epoch-330Step
+- Modelo en Hugging Face: https://huggingface.co/resistz/RLCR-Calibrated-Qwen3-4B-DAPO-Math14k-3Epoch-330Step
 - Script de entrenamiento de open-instruct (referencia): https://github.com/allenai/open-instruct/blob/main/scripts/train/qwen/qwen3_4b_dapo_math_32k.sh
 - Modelo similar hkr04/qwen3-4b-grpo-dapo17k: https://huggingface.co/hkr04/qwen3-4b-grpo-dapo17k
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

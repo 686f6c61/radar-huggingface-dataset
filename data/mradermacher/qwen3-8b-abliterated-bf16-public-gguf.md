@@ -83,7 +83,7 @@ Los datos de contexto y rendimiento de las alternativas no se han verificado en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-8B-abliterated-bf16-public-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-8B-abliterated-bf16-public-GGUF
 - Modelo base: https://huggingface.co/ashwin-sreedhar/Qwen3-8B-abliterated-bf16-public
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3-8B-abliterated-bf16-public-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3-8B-abliterated-bf16-public-GGUF

@@ -82,7 +82,7 @@ Desglose adicional aportado: el upsampler latente más el refinado pasan de 73,1
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Open-H3-Regenerate-2K | Refinado vídeo a vídeo 768P → 2560×1440, 3 pasos | No disponible el transformer base; VAE rápido de 1,62 mil millones | No aplica (121 fotogramas) | MiniMax H3 Community + licencias de terceros | Pesos abiertos en HuggingFace, 0 descargas y 22 likes en el momento de la consulta |
+| Open-H3-Regenerate-2K | Refinado vídeo a vídeo 768P → 2560×1440, 3 pasos | No disponible el transformer base; VAE rápido de 1,62 mil millones | No aplica (121 fotogramas) | MiniMax H3 Community + licencias de terceros | Pesos abiertos en Hugging Face, 0 descargas y 22 likes en el momento de la consulta |
 | H3-Regenerate-2K (API cerrada) | Misma tarea, servicio propietario | No disponible | No disponible | Propietaria | Solo vía API; sin pesos |
 | MiniMax-H3 (modelo base) | Generación vídeo/audio desde texto y referencia | No disponible en la información proporcionada | No disponible | MiniMax H3 Community | Pesos abiertos, revisión `6818f6c` |
 | StreamRender-H3 | VAE decodificador rápido no causal de 24 capas | 1,62 mil millones (el decodificador) | No aplica | MiniMax H3 Community | Componente liberado dentro del proyecto Sol-Engine |
@@ -104,7 +104,7 @@ La comparación cuantitativa de calidad frente a la API cerrada o frente a gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K
 - Página del proyecto: https://nvlabs.github.io/Sana/Open-H3-Regenerate-2K/
 - Código (Sol-Engine, carpeta del modelo): https://github.com/NVlabs/Sana/tree/sol-engine/models/Open-H3-Regenerate-2K
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

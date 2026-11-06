@@ -2,7 +2,7 @@
 
 ## Resumen
 
-julesbonnet/intern-classification es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura BLIP orientada a tareas de clasificación. Lo mantiene el usuario julesbonnet y se distribuye con licencia MIT. No es un modelo entrenado: el checkpoint incluido (`model.safetensors`) se presenta de forma explícita como una inicialización válida para pruebas de humo, no como un modelo con resultados de benchmark.
+julesbonnet/intern-classification es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura BLIP orientada a tareas de clasificación. Lo mantiene el usuario julesbonnet y se distribuye con licencia MIT. No es un modelo entrenado: el checkpoint incluido (`model.safetensors`) se presenta de forma explícita como una inicialización válida para pruebas de humo, no como un modelo con resultados de benchmark.
 
 Su interés es el de un artefacto de investigación y andamiaje: permite inspeccionar decisiones de arquitectura (atención dilatada, fusión por concatenación con MLP, activación swish, normalización batchnorm) antes de lanzar un entrenamiento completo. El conteo real de parámetros del checkpoint es de 49.600, muy por debajo de lo que cabría esperar de una configuración BLIP de escala "base", lo que apunta a que el fichero contiene una versión reducida o parcial de la arquitectura para pruebas.
 
@@ -20,7 +20,7 @@ Con 0 descargas y 0 likes en el momento de la consulta, sin model card que decla
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`), acompanado de `config.json`, `training_args.json` e `inference.py` |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-17 |
 | Fecha de ultima actualizacion | 2026-10-17 |
 
@@ -47,7 +47,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del d
 - Inspección de arquitectura: analizar `config.json` para revisar cómo se parametrizan atención dilatada, fusión concat-MLP, swish y batchnorm en una implementación BLIP propia, como material de estudio o revisión de código.
 - Andamiaje de baselines de clasificación: partir de este repositorio como esqueleto para montar un experimento de clasificación con datos etiquetados propios, sustituyendo el checkpoint por uno entrenado.
 - Reproducción de recetas de entrenamiento: el `training_args.json` con Adafactor y OneCycle sirve como punto de partida para comparar configuraciones de optimización manteniendo la misma exposición de datos y semillas.
-- Docencia y formación interna: ilustrar en un curso o taller la diferencia entre un checkpoint de inicialización y un modelo entrenado, y el flujo mínimo de un repositorio de investigación en HuggingFace.
+- Docencia y formación interna: ilustrar en un curso o taller la diferencia entre un checkpoint de inicialización y un modelo entrenado, y el flujo mínimo de un repositorio de investigación en Hugging Face.
 - Validación de integración continua: incluir la carga del safetensors en un test de CI que detecte roturas de compatibilidad de versiones de PyTorch o de las dependencias del script.
 - Comparación controlada de arquitecturas: si se entrena, usar el mismo dataset, presupuesto de tuning y semillas para contrastar esta variante frente a un baseline de capacidad equivalente, tal como recomienda el autor.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Categoria | Parametros | Contexto | Entrenado y con benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| julesbonnet/intern-classification | Clasificacion, arquitectura BLIP propia | 49.600 | no disponible | No | MIT | Repositorio HuggingFace con 0 descargas |
+| julesbonnet/intern-classification | Clasificacion, arquitectura BLIP propia | 49.600 | no disponible | No | MIT | Repositorio Hugging Face con 0 descargas |
 | BLIP (Salesforce, original) | Vision-lenguaje y clasificacion | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | CLIP (OpenAI) | Vision-lenguaje, clasificacion zero-shot | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | SigLIP (Google) | Vision-lenguaje, clasificacion | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -88,7 +88,7 @@ No se dispone de datos verificables de los modelos alternativos dentro de la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julesbonnet/intern-classification
+- Modelo en Hugging Face: https://huggingface.co/julesbonnet/intern-classification
 - Fichero de pesos: https://huggingface.co/julesbonnet/intern-classification/blob/main/model.safetensors
 - Script de inferencia: https://huggingface.co/julesbonnet/intern-classification/blob/main/inference.py
 - Configuración de arquitectura: https://huggingface.co/julesbonnet/intern-classification/blob/main/config.json

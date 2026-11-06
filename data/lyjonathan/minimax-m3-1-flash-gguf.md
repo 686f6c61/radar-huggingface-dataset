@@ -18,7 +18,7 @@ La relevancia ahora es doble: por un lado, permite ejecutar un modelo de más de
 | Longitud de contexto | no disponible (los ejemplos de la model card usan `-c 8192`) |
 | Tipos de cuantización | IQ2_XS (expertos enrutados, imatrix); Q8_0 (atención, indexer, MLP densa, expertos compartidos, `token_embd`); Q6_K (`output.weight`); F32 (router gate, `exp_probs_b`, normas) |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-community (en HuggingFace aparece como `license: other` con `license_name: minimax-community`) |
+| Licencia | minimax-community (en Hugging Face aparece como `license: other` con `license_name: minimax-community`) |
 | Formato de pesos | GGUF, 13 particiones (`split`), ≈133,1 GB en disco |
 | Tamaño de vocabulario | 200.064 tokens (metadata en la partición 1) |
 | Tensores en el conjunto | 1.188 |
@@ -89,8 +89,8 @@ Smoke test con llama.cpp sin ajuste fino, medido una vez (2× RTX 5070 12 GB, Ry
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Fidelidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LyJonathan/MiniMax-M3.1-Flash-GGUF (esta ficha) | 426,2 B (MoE) | no disponible | GGUF IQ2_XS + Q8_0/Q6_K, ≈133 GB | KL 1,92; top-1 46,8 %; perplejidad 1,71× | minimax-community | Público en HuggingFace |
-| MiniMaxAI/MiniMax-M3.1-Flash (base) | 426,2 B (MoE) | no disponible | NVFP4 / MXFP8 de 4 bits con QAT | Referencia (FP32 validado) | minimax-community | Público en HuggingFace |
+| LyJonathan/MiniMax-M3.1-Flash-GGUF (esta ficha) | 426,2 B (MoE) | no disponible | GGUF IQ2_XS + Q8_0/Q6_K, ≈133 GB | KL 1,92; top-1 46,8 %; perplejidad 1,71× | minimax-community | Público en Hugging Face |
+| MiniMaxAI/MiniMax-M3.1-Flash (base) | 426,2 B (MoE) | no disponible | NVFP4 / MXFP8 de 4 bits con QAT | Referencia (FP32 validado) | minimax-community | Público en Hugging Face |
 | Tier de 3 bits anunciada por el autor | 426,2 B (MoE) | no disponible | GGUF, proyecciones down en 3 bits, ~146 GB | no disponible (en preparación) | minimax-community | No publicada |
 | Otras cuantizaciones de MoE de ~400 B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -112,7 +112,7 @@ No se dispone de datos verificables de otros modelos comparables en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE
 - Sumas de verificación SHA-256: https://huggingface.co/LyJonathan/MiniMax-M3.1-Flash-GGUF/blob/main/SHA256SUMS

@@ -96,7 +96,7 @@ No se dispone de datos comparativos de benchmarks en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chutesai/parallax-8b-kappa
+- Modelo en Hugging Face: https://huggingface.co/chutesai/parallax-8b-kappa
 - Panel de entrenamiento en vivo: https://parallax.chutes.ai/
 - Sitio de Chutes AI: https://chutes.ai/
 - Cobertura de prensa (entrenamiento en GPUs de consumo, coste y ejecución en CPU de teléfono): https://cryptobriefing.com/chutes-ai-parallax-gaming-gpu-model/

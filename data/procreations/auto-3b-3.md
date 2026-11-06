@@ -102,9 +102,9 @@ Las categorías de daño más frecuentemente no detectadas son payload ofuscado 
 
 | Modelo | Parámetros | Contexto | Accuracy v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| auto-3b-3 | 3,08B | no disponible (8.192 tokens en runtime Auto) | 96,0% | Apache 2.0 | HuggingFace, local |
-| auto-0.4b-3 | no disponible | no disponible | 93,1% | no disponible | HuggingFace, local |
-| auto-150m-3 | no disponible | no disponible | 88,8% | no disponible | HuggingFace, local |
+| auto-3b-3 | 3,08B | no disponible (8.192 tokens en runtime Auto) | 96,0% | Apache 2.0 | Hugging Face, local |
+| auto-0.4b-3 | no disponible | no disponible | 93,1% | no disponible | Hugging Face, local |
+| auto-150m-3 | no disponible | no disponible | 88,8% | no disponible | Hugging Face, local |
 | DeepSeek V4.1 Flash | no disponible | no disponible | 95,6% | propietaria | API alojada |
 | GLM-5.3 Flash | no disponible | no disponible | 95,4% | propietaria | API alojada |
 | TypeSafe Jev 1.14 | no disponible | no disponible | 90,2% | propietaria | servicio alojado |
@@ -125,7 +125,7 @@ Frente a los guards alojados, auto-3b-3 ofrece accuracy comparable o superior co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/auto-3b-3
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/auto-3b-3
 - Repositorio del proyecto Auto: https://github.com/SSHdotCodes/auto
 - Modelo base: https://huggingface.co/ProCreations/auto-3b
 - Modelo auto-0.4b-3: https://huggingface.co/ProCreations/auto-0.4b-3

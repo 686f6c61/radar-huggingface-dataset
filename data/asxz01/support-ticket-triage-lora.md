@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `asxz01/support-ticket-triage-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `asxz01`, orientado a la clasificación y gestión de tickets de soporte técnico. Según la información disponible, se distribuye bajo licencia Apache 2.0 y fue creado en agosto de 2026. No se proporcionan detalles sobre la arquitectura base, el tamaño del adaptador, el contexto o los idiomas soportados.
+El modelo `asxz01/support-ticket-triage-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `asxz01`, orientado a la clasificación y gestión de tickets de soporte técnico. Según la información disponible, se distribuye bajo licencia Apache 2.0 y fue creado en agosto de 2026. No se proporcionan detalles sobre la arquitectura base, el tamaño del adaptador, el contexto o los idiomas soportados.
 
 A pesar de que el nombre sugiere una especialización en triage de tickets de soporte, la model card está vacía y no se han publicado métricas, datos de entrenamiento ni ejemplos de uso. El modelo no cuenta con descargas ni valoraciones, lo que indica que es un proyecto reciente o de carácter experimental. La información disponible es insuficiente para evaluar su rendimiento o sus capacidades reales.
 
@@ -58,7 +58,7 @@ No se dispone de información sobre los requisitos de hardware. Al tratarse de u
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa rigurosa. Existen otros adaptadores de triage de tickets en HuggingFace, como `markasame/TicketTriage-LoRA` (un QLoRA + DoRA sobre Qwen3 8B) o `minhlt12/qwen3.5-4b-lora-vi-ticket-triage`, pero no se conocen los detalles de `asxz01/support-ticket-triage-lora` para establecer una comparación válida. Se recomienda consultar la documentación de esos proyectos como referencia, pero no como comparativa directa.
+No se dispone de información suficiente para realizar una comparativa rigurosa. Existen otros adaptadores de triage de tickets en Hugging Face, como `markasame/TicketTriage-LoRA` (un QLoRA + DoRA sobre Qwen3 8B) o `minhlt12/qwen3.5-4b-lora-vi-ticket-triage`, pero no se conocen los detalles de `asxz01/support-ticket-triage-lora` para establecer una comparación válida. Se recomienda consultar la documentación de esos proyectos como referencia, pero no como comparativa directa.
 
 ## Limitaciones y advertencias
 
@@ -70,8 +70,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - asxz01/support-ticket-triage-lora](https://huggingface.co/asxz01/support-ticket-triage-lora)
-- [HuggingFace Space - TicketTriage-LoRA (markasame)](https://huggingface.co/spaces/markasame/tickettriage-lora)
+- [Hugging Face - asxz01/support-ticket-triage-lora](https://huggingface.co/asxz01/support-ticket-triage-lora)
+- [Hugging Face Space - TicketTriage-LoRA (markasame)](https://huggingface.co/spaces/markasame/tickettriage-lora)
 - [GitHub - markasame/TicketTriage-LoRA](https://github.com/markasame/TicketTriage-LoRA)
 - [GitHub README - TicketTriage-LoRA](https://github.com/markasame/TicketTriage-LoRA/blob/main/README.md)
 - [Free2AITools - Qwen3.5 4b Lora Vi Ticket Triage](https://free2aitools.com/model/minhlt12/qwen3.5-4b-lora-vi-ticket-triage)

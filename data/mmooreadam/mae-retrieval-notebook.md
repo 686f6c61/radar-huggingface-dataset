@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mmooreadam/mae-retrieval-notebook` es un repositorio experimental alojado en HuggingFace por el usuario `mmooreadam`, cuyo objetivo declarado es servir de banco de pruebas para una arquitectura propietaria denominada Mae aplicada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una configuración de arquitectura generada automáticamente y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark.
+`mmooreadam/mae-retrieval-notebook` es un repositorio experimental alojado en Hugging Face por el usuario `mmooreadam`, cuyo objetivo declarado es servir de banco de pruebas para una arquitectura propietaria denominada Mae aplicada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una configuración de arquitectura generada automáticamente y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark.
 
 La relevancia del repositorio es, por tanto, limitada al ámbito de la experimentación con arquitecturas de retrieval multimodal o texto-imagen. Su valor está en la reproducibilidad del andamiaje (script de evaluación, configuración de arquitectura y receta de entrenamiento por defecto) más que en el rendimiento del modelo, que no ha sido entrenado. El checkpoint alojado contiene 16.576 parámetros, una cifra coherente con una inicialización mínima y no con el tamaño real que tendría un modelo completo.
 
@@ -81,13 +81,13 @@ No disponible. No se dispone de datos verificables de modelos comparables dentro
 - No ha sido auditado en robustez, equidad ni transferencia de dominio.
 - No se declara ninguna puntuación de benchmark, por lo que no existen métricas de rendimiento publicadas.
 - El repositorio mide 0,0 GB y acumula 10 descargas y 0 likes, lo que indica un uso meramente experimental.
-- Las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, al ser una implementación personalizada.
+- Las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, al ser una implementación personalizada.
 - La licencia apache-2.0 cubre el código y el checkpoint, pero el autor advierte de que deben revisarse por separado los términos de los datasets externos que se utilicen con el repositorio.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto incluidos aquí.
 - No hay información sobre idiomas soportados, longitud de contexto ni cuantizaciones, lo que impide planificar un despliegue en producción.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mmooreadam/mae-retrieval-notebook
+- Hugging Face: https://huggingface.co/mmooreadam/mae-retrieval-notebook
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos correspondían a listados comerciales de tarjetas gráficas y no guardan relación con el modelo.

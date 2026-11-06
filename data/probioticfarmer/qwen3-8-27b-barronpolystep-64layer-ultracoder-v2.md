@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-64Layer-UltraCoder-v2
+- Repositorio Hugging Face: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-64Layer-UltraCoder-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante LoRA RealCoder-v3: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-RealCoder-v3
 - Version fusionada 27B: https://huggingface.co/ProbioticFarmer/Qwen3.8-27B-BarronPolyStep-Merged

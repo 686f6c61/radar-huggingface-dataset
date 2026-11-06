@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qemma-GEI es un modelo de lenguaje híbrido de aproximadamente 1B de parámetros desarrollado por Convergent Intelligence LLC (usuario de HuggingFace `reaperdoesntknow`). Su principal innovación consiste en fusionar a nivel de pesos dos arquitecturas distintas: el cuerpo (MLP) y la estructura general de Gemma-3 (1B) con la atención y la cabeza de Qwen-3 (0.6B). El resultado es un modelo denso, sin adaptadores, que combina las fortalezas de ambos modelos base y que ha sido ajustado mediante SFT para instrucción y razonamiento paso a paso.
+Qemma-GEI es un modelo de lenguaje híbrido de aproximadamente 1B de parámetros desarrollado por Convergent Intelligence LLC (usuario de Hugging Face `reaperdoesntknow`). Su principal innovación consiste en fusionar a nivel de pesos dos arquitecturas distintas: el cuerpo (MLP) y la estructura general de Gemma-3 (1B) con la atención y la cabeza de Qwen-3 (0.6B). El resultado es un modelo denso, sin adaptadores, que combina las fortalezas de ambos modelos base y que ha sido ajustado mediante SFT para instrucción y razonamiento paso a paso.
 
 La relevancia de Qemma-GEI radica en que explora una vía poco convencional de creación de modelos: la fusión directa de pesos entre arquitecturas diferentes, en lugar del entrenamiento desde cero o la mezcla de expertos. Además, incorpora un escalado de posición (RoPE scaling) basado en Yarn y se enmarca dentro de la metodología propietaria Discrepancy Calculus (DISC), que trata las singularidades del entrenamiento como señales estructurales. El modelo está pensado para investigación, experimentación y como base para posteriores ajustes finos.
 
@@ -64,9 +64,9 @@ Al ser un modelo híbrido sin benchmarks publicados, la comparativa directa no e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qemma-GEI | ~1B | no disponible (RoPE scaling) | OSL-3.0 | HuggingFace |
-| Gemma-3 1B | 1B | 32K (según documentación oficial de Gemma) | Gemma Terms of Use | HuggingFace |
-| Qwen-3 0.6B | 0.6B | 32K (según documentación oficial de Qwen) | Apache 2.0 | HuggingFace |
+| Qemma-GEI | ~1B | no disponible (RoPE scaling) | OSL-3.0 | Hugging Face |
+| Gemma-3 1B | 1B | 32K (según documentación oficial de Gemma) | Gemma Terms of Use | Hugging Face |
+| Qwen-3 0.6B | 0.6B | 32K (según documentación oficial de Qwen) | Apache 2.0 | Hugging Face |
 
 Qemma-GEI hereda características de ambos modelos base, pero su comportamiento específico no ha sido evaluado públicamente. Su licencia OSL-3.0 difiere de las de sus predecesores, lo que puede afectar a su uso comercial.
 
@@ -81,7 +81,7 @@ Qemma-GEI hereda características de ambos modelos base, pero su comportamiento 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/reaperdoesntknow/Qemma-GEI)
+- [Modelo en Hugging Face](https://huggingface.co/reaperdoesntknow/Qemma-GEI)
 - [Portafolio de Convergent Intelligence LLC](https://huggingface.co/reaperdoesntknow)
 - [Discrepancy Calculus: Foundations and Core Theory](https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus) (DOI: 10.57967/hf/8194)
 - [Structure Over Scale](https://huggingface.co/reaperdoesntknow/Structure-Over-Scale) (DOI: 10.57967/hf/8165)

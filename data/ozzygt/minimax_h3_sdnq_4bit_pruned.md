@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_4bit_pruned
+- Repositorio Hugging Face: https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_4bit_pruned
 - Repositorio companion (text encoder, VAE, schedulers): https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_dynamic_4bit
 - Version INT8 podada: https://huggingface.co/OzzyGT/MiniMax_H3_sdnq_8bit_pruned
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`finetune_LCO_Embedding_Omni_3B_plus_external_lora` es un checkpoint publicado por el usuario VoiceNetCkpt dentro de la organizacion VoiceNetCkpt en HuggingFace. La propia model card lo describe como un "training-run directory from the VoiceCLAP experiments", es decir, un directorio de resultados de entrenamiento de la linea de experimentos VoiceCLAP, y remite a un indice de runs (VoiceNetCkpt/voiceclap-checkpoints-index). El repositorio ocupa 88,6 GB repartidos en 89 archivos, con pesos en formato safetensors y las etiquetas `voiceclap` y `checkpoint`.
+`finetune_LCO_Embedding_Omni_3B_plus_external_lora` es un checkpoint publicado por el usuario VoiceNetCkpt dentro de la organizacion VoiceNetCkpt en Hugging Face. La propia model card lo describe como un "training-run directory from the VoiceCLAP experiments", es decir, un directorio de resultados de entrenamiento de la linea de experimentos VoiceCLAP, y remite a un indice de runs (VoiceNetCkpt/voiceclap-checkpoints-index). El repositorio ocupa 88,6 GB repartidos en 89 archivos, con pesos en formato safetensors y las etiquetas `voiceclap` y `checkpoint`.
 
 El nombre del repositorio sugiere, sin confirmacion documental, un fine-tuning de un modelo de embeddings de tipo "Omni" de aproximadamente 3B de parametros, con un adaptador LoRA externo y asociado a una tarea o dataset designado como "LCO". Sin embargo, la model card no aporta ninguna especificacion tecnica: no se declaran arquitectura, numero de parametros, contexto, idiomas, licencia ni pipeline. La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo, el proyecto VoiceCLAP o el checkout, por lo que no es posible contrastar la informacion del nombre contra documentacion externa.
 
@@ -67,7 +67,7 @@ No disponible. No se puede identificar la categoria exacta del modelo (encoder d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finetune_LCO_Embedding_Omni_3B_plus_external_lora | no disponible | no disponible | no disponible | no disponible | HuggingFace (VoiceNetCkpt) |
+| finetune_LCO_Embedding_Omni_3B_plus_external_lora | no disponible | no disponible | no disponible | no disponible | Hugging Face (VoiceNetCkpt) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No disponible. No se puede identificar la categoria exacta del modelo (encoder d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_LCO_Embedding_Omni_3B_plus_external_lora
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_LCO_Embedding_Omni_3B_plus_external_lora
 - Indice de checkpoints VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, repositorio de codigo, blog o demo: no disponible. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo.

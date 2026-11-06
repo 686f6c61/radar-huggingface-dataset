@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FuryRage_MontgomeryGator_AiExtended es un repositorio de modelo publicado en HuggingFace por el usuario SnazzyArtist22. En el momento de la consulta, el repositorio cuenta con 0 descargas y 0 "likes", tiene un tamano aproximado de 0,1 GB y fue creado y actualizado el 20 de septiembre de 2026 con apenas 34 segundos de diferencia entre ambos eventos, lo que sugiere una subida unica sin mantenimiento posterior.
+FuryRage_MontgomeryGator_AiExtended es un repositorio de modelo publicado en Hugging Face por el usuario SnazzyArtist22. En el momento de la consulta, el repositorio cuenta con 0 descargas y 0 "likes", tiene un tamano aproximado de 0,1 GB y fue creado y actualizado el 20 de septiembre de 2026 con apenas 34 segundos de diferencia entre ambos eventos, lo que sugiere una subida unica sin mantenimiento posterior.
 
-La model card publicada esta practicamente vacia: solo contiene el campo `license: unknown` y ningun apartado descriptivo. Los metadatos de HuggingFace no declaran pipeline, idiomas soportados, licencia efectiva ni arquitectura. Los resultados de la busqueda web realizada no guardan ninguna relacion con el modelo: todas las referencias devueltas corresponden al sitio de la cadena de distribucion alemana Tchibo y no aportan informacion tecnica.
+La model card publicada esta practicamente vacia: solo contiene el campo `license: unknown` y ningun apartado descriptivo. Los metadatos de Hugging Face no declaran pipeline, idiomas soportados, licencia efectiva ni arquitectura. Los resultados de la busqueda web realizada no guardan ninguna relacion con el modelo: todas las referencias devueltas corresponden al sitio de la cadena de distribucion alemana Tchibo y no aportan informacion tecnica.
 
 Como consecuencia, no es posible determinar que problema resuelve el modelo, cual es su arquitectura, su numero de parametros o su ventana de contexto. El nombre del repositorio sigue un patron habitual en modelos de personaje o "roleplay" (nombre de personaje + sufijo descriptivo), pero se trata unicamente de una observacion sobre la nomenclatura y no de un dato confirmado por el autor. La ficha que sigue documenta exclusivamente lo verificable y marca como "no disponible" todo lo que no puede confirmarse.
 
@@ -37,7 +37,7 @@ El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB, que 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles (el campo de idiomas no esta declarado en los metadatos).
 - Capacidades especiales (modo "thinking", vision, audio): no disponibles.
-- No se ha publicado ningun pipeline de HuggingFace asociado al repositorio, lo que impide confirmar incluso si el modelo es de generacion de texto.
+- No se ha publicado ningun pipeline de Hugging Face asociado al repositorio, lo que impide confirmar incluso si el modelo es de generacion de texto.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ Ninguno de los siguientes escenarios puede validarse con la informacion disponib
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la model card, en los metadatos de HuggingFace ni en los resultados de la busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la model card, en los metadatos de Hugging Face ni en los resultados de la busqueda web.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni la tarea 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SnazzyArtist22/FuryRage_MontgomeryGator_AiExtended
+- Repositorio en Hugging Face: https://huggingface.co/SnazzyArtist22/FuryRage_MontgomeryGator_AiExtended
 - Model card del autor: incluida en el repositorio anterior (contenido limitado al campo `license: unknown`)
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible
 - No se han encontrado enlaces relevantes en la busqueda web; los resultados devueltos corresponden a dominios sin relacion con el modelo (tchibo.de, community.tchibo.de, fitness.tchibo.de, refurbished.tchibo.de).

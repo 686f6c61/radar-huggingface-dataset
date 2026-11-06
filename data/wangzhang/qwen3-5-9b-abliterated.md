@@ -64,7 +64,7 @@ La divergencia KL de 0.0105 respecto al modelo base sugiere que las capacidades 
 - VRAM estimada para inferencia: con 9.400 millones de parametros en precision FP16, se necesitan aproximadamente 18,8 GB de VRAM. Con cuantizacion INT8 se reduciria a unos 9,4 GB, y con INT4 a unos 4,7 GB, aunque no se han publicado cuantizaciones oficiales.
 - GPU recomendadas: una RTX 4090 (24 GB) o RTX 3090 (24 GB) puede ejecutar el modelo en FP16. Para cuantizacion INT4, una RTX 4060 Ti (16 GB) o incluso una RTX 3060 (12 GB) podrian ser suficientes.
 - Si cabe en consumer GPU: si, en GPUs de consumo con 16 GB o mas de VRAM usando cuantizacion. En FP16 puro se necesita una GPU de 24 GB.
-- Opciones de despliegue: el modelo se puede ejecutar con transformers de HuggingFace, vLLM, llama.cpp, Ollama o TGI. La integracion con Ollama esta disponible a traves de la variante `huihui_ai/qwen3.5-abliterated`.
+- Opciones de despliegue: el modelo se puede ejecutar con transformers de Hugging Face, vLLM, llama.cpp, Ollama o TGI. La integracion con Ollama esta disponible a traves de la variante `huihui_ai/qwen3.5-abliterated`.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ Todos los modelos de la familia Abliterix comparten la misma metodologia y licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhang/Qwen3.5-9B-abliterated
+- Modelo en Hugging Face: https://huggingface.co/wangzhang/Qwen3.5-9B-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Framework Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Paquete PyPI: https://pypi.org/project/abliterix-llm/

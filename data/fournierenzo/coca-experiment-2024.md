@@ -45,7 +45,7 @@ En resumen, el modelo no presenta capacidades funcionales demostradas. Su utilid
 
 - Estudio académico de arquitecturas con atención lineal: el código fuente permite analizar cómo se implementa la atención lineal y la fusión por tensores en una arquitectura Coca, lo que resulta útil para estudiantes o investigadores que quieran comprender estos mecanismos.
 - Pruebas de humo en pipelines de entrenamiento: el checkpoint de inicialización permite verificar que un pipeline de entrenamiento personalizado funciona correctamente antes de lanzar experimentos con modelos más grandes.
-- Desarrollo de adaptadores para carga personalizada: al ser una implementación a medida, los desarrolladores pueden practicar la escritura de adaptadores que permitan cargar el modelo con APIs genéricas como HuggingFace Transformers.
+- Desarrollo de adaptadores para carga personalizada: al ser una implementación a medida, los desarrolladores pueden practicar la escritura de adaptadores que permitan cargar el modelo con APIs genéricas como Hugging Face Transformers.
 - Experimentos controlados de multitarea: el autor sugiere que, tras un entrenamiento adecuado, el modelo podría usarse para experimentos multitarea con una capacidad muy reducida, comparando su rendimiento con baselines de capacidad similar.
 - Revisión de código y buenas prácticas: el repositorio puede servir como ejemplo de cómo estructurar un proyecto de investigación con configuración, argumentos de entrenamiento y documentación.
 - Enseñanza de PyTorch: el código puede utilizarse en cursos de aprendizaje profundo para ilustrar la implementación de una arquitectura de atención lineal desde cero.
@@ -73,9 +73,9 @@ No disponible. No se han encontrado modelos comparables de la misma categoría (
 - No se dispone de datos sobre sesgos, alucinaciones o limitaciones de contexto o idioma.
 - La licencia bsd-3-clause permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos si se utiliza con datasets externos.
 - No es apto para producción: el autor lo presenta como un punto de partida experimental, no como un lanzamiento listo para uso real.
-- La implementación es personalizada, por lo que no es compatible con las APIs estándar de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada, por lo que no es compatible con las APIs estándar de Hugging Face sin un adaptador explícito.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fournierenzo/coca-experiment-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/fournierenzo
+- Repositorio en Hugging Face: https://huggingface.co/fournierenzo/coca-experiment-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/fournierenzo

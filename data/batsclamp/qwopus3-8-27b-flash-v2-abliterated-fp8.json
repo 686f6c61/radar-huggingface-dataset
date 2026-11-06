@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "batsclamp/Qwopus3.8-27B-Flash-V2-abliterated-FP8",
+  "slug": "batsclamp-qwopus3-8-27b-flash-v2-abliterated-fp8",
+  "author": "batsclamp",
+  "url": "https://huggingface.co/batsclamp/Qwopus3.8-27B-Flash-V2-abliterated-FP8",
+  "created_at": "2026-11-03T01:47:11.000Z",
+  "updated_at": "2026-11-03T13:41:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vllm",
+    "fp8",
+    "compressed-tensors",
+    "mtp",
+    "speculative-decoding",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "arxiv:2406.11717",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "base_model:finetune:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 52578061031,
+  "storage_human": "52.6 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwopus3.8 27b Flash V2 Fp8 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/batsclamp/qwopus3.8-27b-flash-v2-fp8",
+      "snippet": "Registry entry for model Qwopus3.8 27b Flash V2 Fp8; source metadata pending."
+    },
+    {
+      "title": "Abliterated Models — Open-Weight LLMs With Refusals Removed",
+      "url": "https://www.abliteratedmodels.org/",
+      "snippet": "Abliterated Models Abliterated Models is an index of abliterated AI: open-weight LLMs with refusal behaviour removed from their weights, for security teams. Every model here is uncensored — it answers prompts a normal AI refuses. All 956 are free to download from Hugging Face, and each page shows what the model was built from, how big it is, the hardware it needs and its licence."
+    }
+  ]
+}

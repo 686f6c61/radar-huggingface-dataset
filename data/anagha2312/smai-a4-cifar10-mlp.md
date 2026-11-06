@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-cifar10-mlp` es un clasificador de imágenes de tamaño muy reducido publicado en HuggingFace por el usuario `anagha2312`. Se trata de un perceptrón multicapa (MLP) de dos capas densas con arquitectura `[3072, 128, 10]` y activación `relu` en la capa oculta, entrenado para clasificar las 10 clases del conjunto de datos CIFAR-10 a partir de imágenes de 32x32 píxeles RGB aplanadas en un vector de 3072 dimensiones. El autor reporta una precisión final de test de 0,4759.
+`smai-a4-cifar10-mlp` es un clasificador de imágenes de tamaño muy reducido publicado en Hugging Face por el usuario `anagha2312`. Se trata de un perceptrón multicapa (MLP) de dos capas densas con arquitectura `[3072, 128, 10]` y activación `relu` en la capa oculta, entrenado para clasificar las 10 clases del conjunto de datos CIFAR-10 a partir de imágenes de 32x32 píxeles RGB aplanadas en un vector de 3072 dimensiones. El autor reporta una precisión final de test de 0,4759.
 
 Por su naturaleza, no es un modelo de lenguaje ni un modelo fundacional: no procesa texto, no genera contenido y no dispone de ventana de contexto conversacional. Es un artefacto académico, presumiblemente asociado a una práctica de la asignatura SMAI (identificada como "A4"), y su interés es exclusivamente docente o como referencia mínima de pipeline de entrenamiento y preprocesado reproducible.
 
@@ -68,7 +68,7 @@ No disponible. La información proporcionada no incluye resultados de otros clas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `anagha2312/smai-a4-cifar10-mlp` | 394.634 | no aplica (entrada fija 3072) | no disponible | HuggingFace |
+| `anagha2312/smai-a4-cifar10-mlp` | 394.634 | no aplica (entrada fija 3072) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No disponible. La información proporcionada no incluye resultados de otros clas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anagha2312/smai-a4-cifar10-mlp
+- Hugging Face: https://huggingface.co/anagha2312/smai-a4-cifar10-mlp
 
 No se han encontrado en la búsqueda web enlaces relevantes al modelo, su paper, repositorio de código o demo. Los resultados devueltos por la búsqueda corresponden a contenido no relacionado (páginas de un mod del videojuego Terraria) y se descartan por no guardar relación con este modelo. No se dispone de enlace a paper, blog técnico, repositorio de GitHub ni demo.

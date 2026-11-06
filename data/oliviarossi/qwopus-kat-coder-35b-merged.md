@@ -77,11 +77,11 @@ La comparativa se basa en datos públicos de los modelos base. El modelo fusiona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OliviaRossi/Qwopus-KAT-Coder-35B-Merged
+- Modelo en Hugging Face: https://huggingface.co/OliviaRossi/Qwopus-KAT-Coder-35B-Merged
 - Modelo base Qwopus3.6-35B-A3B-Coder: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder
 - Modelo base KAT-Coder-V2.5-Dev: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Página del proyecto KAT-Coder: https://kwaipilot.github.io/KAT-Coder/
 - Repositorio del agente Qwopus: https://github.com/codespermuted/qwopus
 - Cuantización GGUF de Qwopus3.6-35B-A3B-Coder: https://huggingface.co/Jackrong/Qwopus3.6-35B-A3B-Coder-MTP-GGUF
-- Perfil de Jackrong en HuggingFace: https://huggingface.co/Jackrong/collections
+- Perfil de Jackrong en Hugging Face: https://huggingface.co/Jackrong/collections
 - Vídeo sobre KAT-Coder V2.5: https://www.youtube.com/watch?v=cbb4KffkmMc

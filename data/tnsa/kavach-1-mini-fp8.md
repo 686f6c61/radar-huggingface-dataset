@@ -73,6 +73,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TNSA/Kavach-1-Mini-FP8
+- Hugging Face: https://huggingface.co/TNSA/Kavach-1-Mini-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado papers, blogs o demos adicionales en la información disponible.

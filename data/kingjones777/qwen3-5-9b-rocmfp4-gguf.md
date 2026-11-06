@@ -88,7 +88,7 @@ La model card advierte que mediciones con otros procesos compartiendo la GPU die
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Qwen3.5-9B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.5-9B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante 27B del mismo autor: https://huggingface.co/kingjones777/Qwen3.5-27B-ROCmFP4-GGUF
 - Variante 0.8B del mismo autor: https://huggingface.co/kingjones777/Qwen3.5-0.8B-ROCmFP4-GGUF

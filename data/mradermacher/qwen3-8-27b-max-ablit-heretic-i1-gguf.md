@@ -118,7 +118,7 @@ No se dispone de datos de rendimiento ni de contexto para ninguna de las alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Max-Ablit-Heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Max-Ablit-Heretic-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.8-27B-Max-Ablit-Heretic-GGUF
 - Modelo base: https://huggingface.co/sci4ai/Qwen3.8-27B-Max-Ablit-Heretic
 - Pagina de resumen del autor: https://hf.tst.eu/model#Qwen3.8-27B-Max-Ablit-Heretic-i1-GGUF

@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible en la informacion proporcionada. La categoría real de este repositorio es la de notas de investigación con licencia permisiva, no la de modelos de lenguaje, por lo que una comparación frente a modelos de parámetros comparables no sería metodológicamente válida. Las métricas habituales de comparación (parámetros, contexto, rendimiento, licencia, disponibilidad) solo son aplicables en esta ficha a licencia y disponibilidad: MIT y publicación abierta en HuggingFace con 0 descargas y 0 likes.
+No disponible en la informacion proporcionada. La categoría real de este repositorio es la de notas de investigación con licencia permisiva, no la de modelos de lenguaje, por lo que una comparación frente a modelos de parámetros comparables no sería metodológicamente válida. Las métricas habituales de comparación (parámetros, contexto, rendimiento, licencia, disponibilidad) solo son aplicables en esta ficha a licencia y disponibilidad: MIT y publicación abierta en Hugging Face con 0 descargas y 0 likes.
 
 ## Limitaciones y advertencias
 
@@ -77,6 +77,6 @@ No disponible en la informacion proporcionada. La categoría real de este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ivantran/prompt-engineering-notes
+- Repositorio en Hugging Face: https://huggingface.co/ivantran/prompt-engineering-notes
 - Artefacto principal citado en la model card: `review.md` (dentro del repositorio)
 - Documentación citada en la model card: `README.md` (dentro del repositorio)

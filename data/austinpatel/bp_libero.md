@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`austinpatel/bp_libero` es un checkpoint publicado en HuggingFace asociado al paper *What Enables In-Context Behavior Prompting for Manipulation?* (arXiv:2606.30457), cuyo codigo de referencia vive en el repositorio `real-stanford/behavior_prompting`. Por el nombre del repositorio y las etiquetas del paper, se trata de un modelo orientado a manipulación robótica que implementa *behavior prompting* en contexto: es decir, condicionar el comportamiento de un agente (un brazo robótico) a partir de demostraciones o ejemplos proporcionados en el propio contexto de inferencia, en lugar de reentrenar la política para cada tarea. El sufijo `libero` remite con alta probabilidad al benchmark LIBERO de manipulación robótica de horizonte largo, aunque la model card no lo confirma explícitamente.
+`austinpatel/bp_libero` es un checkpoint publicado en Hugging Face asociado al paper *What Enables In-Context Behavior Prompting for Manipulation?* (arXiv:2606.30457), cuyo codigo de referencia vive en el repositorio `real-stanford/behavior_prompting`. Por el nombre del repositorio y las etiquetas del paper, se trata de un modelo orientado a manipulación robótica que implementa *behavior prompting* en contexto: es decir, condicionar el comportamiento de un agente (un brazo robótico) a partir de demostraciones o ejemplos proporcionados en el propio contexto de inferencia, en lugar de reentrenar la política para cada tarea. El sufijo `libero` remite con alta probabilidad al benchmark LIBERO de manipulación robótica de horizonte largo, aunque la model card no lo confirma explícitamente.
 
 La información publicada es extremadamente escasa: la model card se limita a declarar licencia MIT, enlazar el paper y el repositorio de código. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni formato de pesos. El tamaño del repositorio (8,5 GB) sugiere pesos en precisión nativa (probablemente safetensors o un checkpoint de PyTorch), pero este dato no está confirmado en la documentación disponible.
 
@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/austinpatel/bp_libero
+- Hugging Face: https://huggingface.co/austinpatel/bp_libero
 - Paper: https://huggingface.co/papers/2606.30457
 - Repositorio de código: https://github.com/real-stanford/behavior_prompting

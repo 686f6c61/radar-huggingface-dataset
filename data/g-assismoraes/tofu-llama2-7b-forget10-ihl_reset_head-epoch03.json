@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch03",
+  "slug": "g-assismoraes-tofu-llama2-7b-forget10-ihl_reset_head-epoch03",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch03",
+  "created_at": "2026-11-02T16:11:25.000Z",
+  "updated_at": "2026-11-02T16:12:12.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "en",
+    "base_model:locuslab/tofu_ft_llama2-7b",
+    "base_model:finetune:locuslab/tofu_ft_llama2-7b",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364755,
+  "storage_human": "13.5 GB",
+  "base_model": "locuslab/tofu_ft_llama2-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tofu-llama2-7b-forget10-ihl_reset_head - Hugging Face",
+      "url": "https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head",
+      "snippet": "Machine learning model with 7B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "g-assismoraes/tofu-llama2-7b-forget10-ihl_head · Hugging Face",
+      "url": "https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_head",
+      "snippet": "ihl_head (forget10) Token IHL + retain CE; trained: ['lm_head.weight']. Initializer reset=False. See ihl_manifest.json. Downloads last month - Safetensors Model size 7B params Tensor type BF16 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    }
+  ]
+}

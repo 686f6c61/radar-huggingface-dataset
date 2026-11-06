@@ -4,7 +4,7 @@
 
 Atomic-Germ/LFM2-1.2B-NPU2 es un modelo de lenguaje de 1.200 millones de parámetros, resultado de un fine-tuning del modelo base LiquidAI/LFM2-1.2B, desarrollado por la comunidad Atomic-Germ. Está diseñado específicamente para su ejecución en unidades de procesamiento neuronal (NPU) de AMD, en particular la arquitectura XDNA NPU2 presente en los procesadores Ryzen AI. El modelo pertenece a la familia LFM2 de Liquid AI, que se caracteriza por una arquitectura híbrida que combina convoluciones cortas con atención por consultas agrupadas (GQA), optimizada para inferencia en dispositivos de borde con baja latencia y consumo reducido.
 
-La relevancia de este modelo radica en su enfoque en el despliegue en hardware de consumo, donde las NPU integradas en CPUs modernas pueden ejecutar modelos de lenguaje de forma eficiente sin depender de GPUs dedicadas. El trabajo de Atomic-Germ, que también mantiene el proyecto OpenNPU de ingeniería inversa para el formato xclbin de AMD, busca democratizar el acceso a la inferencia local de modelos de IA. Aunque el modelo no ha recibido descargas ni likes en HuggingFace, su existencia apunta a una tendencia creciente de optimización de modelos para NPU de borde.
+La relevancia de este modelo radica en su enfoque en el despliegue en hardware de consumo, donde las NPU integradas en CPUs modernas pueden ejecutar modelos de lenguaje de forma eficiente sin depender de GPUs dedicadas. El trabajo de Atomic-Germ, que también mantiene el proyecto OpenNPU de ingeniería inversa para el formato xclbin de AMD, busca democratizar el acceso a la inferencia local de modelos de IA. Aunque el modelo no ha recibido descargas ni likes en Hugging Face, su existencia apunta a una tendencia creciente de optimización de modelos para NPU de borde.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El fine-tuning realizado por Atomic-Germ sobre este modelo base no está documen
 - Conversación: etiquetado como "conversational", apto para diálogos multi-turno.
 - Multilingüe: soporta 8 idiomas (inglés, árabe, chino, francés, alemán, japonés, coreano y español).
 - Optimizado para edge: diseñado para inferencia en dispositivos con recursos limitados, especialmente NPU.
-- Compatible con transformers: se integra con la librería HuggingFace transformers.
+- Compatible con transformers: se integra con la librería Hugging Face transformers.
 - No se confirma soporte de tool calling, function calling, agentes, ni capacidades multimodales.
 
 ## Casos de uso
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atomic-Germ/LFM2-1.2B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/Atomic-Germ/LFM2-1.2B-NPU2
 - Informe técnico de LFM2 (arXiv): https://arxiv.org/abs/2511.23404
 - Blog de Liquid AI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models
 - Proyecto OpenNPU (GitHub): https://github.com/Atomic-Germ/OpenNPU

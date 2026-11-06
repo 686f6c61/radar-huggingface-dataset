@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`montiezgirlzz/Khunpol_bus_becauseofyouishine` es un repositorio alojado en HuggingFace por el usuario `montiezgirlzz` (nombre de perfil: jarutham bunyong), publicado el 5 de octubre de 2026 y actualizado el mismo dia. El repositorio no incluye model card con contenido tecnico: el unico texto del README es la declaracion `license: unknown`. No dispone de etiqueta de pipeline, no declara idiomas y acumula 0 descargas y 0 likes en el momento de la consulta. El tamano del repositorio es de 0,1 GB.
+`montiezgirlzz/Khunpol_bus_becauseofyouishine` es un repositorio alojado en Hugging Face por el usuario `montiezgirlzz` (nombre de perfil: jarutham bunyong), publicado el 5 de octubre de 2026 y actualizado el mismo dia. El repositorio no incluye model card con contenido tecnico: el unico texto del README es la declaracion `license: unknown`. No dispone de etiqueta de pipeline, no declara idiomas y acumula 0 descargas y 0 likes en el momento de la consulta. El tamano del repositorio es de 0,1 GB.
 
 Con estos datos no es posible determinar que tipo de artefacto contiene el repositorio. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni proceso de alineacion. Tampoco se ha localizado documentacion tecnica externa, publicacion asociada ni repositorio de codigo.
 
@@ -91,7 +91,7 @@ No es posible establecer una comparativa porque no se ha podido identificar la c
 | Contexto | no disponible | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible | no disponible |
 | Licencia | unknown | no disponible | no disponible | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible | no disponible | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No es posible establecer una comparativa porque no se ha podido identificar la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/montiezgirlzz/Khunpol_bus_becauseofyouishine
+- Repositorio en Hugging Face: https://huggingface.co/montiezgirlzz/Khunpol_bus_becauseofyouishine
 - Perfil del autor: https://huggingface.co/montiezgirlzz
 - Repositorio relacionado del mismo autor: https://huggingface.co/montiezgirlzz/Aa_bus_becauseofyouishine
 - Resultado de busqueda no tecnico (contenido musical, no relacionado con el modelo): https://www.youtube.com/watch?v=obsgKehLLqk

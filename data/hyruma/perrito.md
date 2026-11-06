@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hyrumA/perrito` es un repositorio de modelo alojado en HuggingFace por el usuario hyrumA. En el momento de redactar esta ficha, el repositorio no contiene una model card sustantiva: el unico contenido declarado es la cabecera de licencia (`license: apache-2.0`), sin descripcion del modelo, sin arquitectura, sin datos de entrenamiento, sin ejemplos de uso ni instrucciones de inferencia.
+`hyrumA/perrito` es un repositorio de modelo alojado en Hugging Face por el usuario hyrumA. En el momento de redactar esta ficha, el repositorio no contiene una model card sustantiva: el unico contenido declarado es la cabecera de licencia (`license: apache-2.0`), sin descripcion del modelo, sin arquitectura, sin datos de entrenamiento, sin ejemplos de uso ni instrucciones de inferencia.
 
 Los metadatos publicos son igual de minimos: 0 descargas, 0 "likes", ausencia de campo `pipeline`, ausencia de idiomas declarados y tags limitados a `license:apache-2.0` y `region:us`. Las fechas de creacion y de ultima actualizacion son identicas (`2026-10-09T01:24:35Z`), lo que indica que el repositorio no se ha modificado desde su publicacion.
 
@@ -27,7 +27,7 @@ Datos de repositorio: autor `hyrumA`, ID `hyrumA/perrito`, 0 descargas, 0 likes,
 
 No disponible. La model card no describe arquitectura (transformer, MoE, SSM, hibrida u otra), numero de parametros, volumen de tokens de entrenamiento, composicion del dataset ni fases de ajuste (SFT, RLHF, DPO u otras). Tampoco se declara ninguna innovacion tecnica asociada.
 
-El repositorio no incluye etiqueta `library_name` ni `pipeline`, de modo que HuggingFace no ha podido inferir ni la tarea ni el framework. No hay informacion que permita confirmar si el repositorio contiene pesos, configuracion de tokenizador o unicamente metadatos.
+El repositorio no incluye etiqueta `library_name` ni `pipeline`, de modo que Hugging Face no ha podido inferir ni la tarea ni el framework. No hay informacion que permita confirmar si el repositorio contiene pesos, configuracion de tokenizador o unicamente metadatos.
 
 ## Capacidades
 
@@ -83,6 +83,6 @@ No disponible. Al no conocerse la tarea, el tamano ni la arquitectura del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hyrumA/perrito
+- Repositorio en Hugging Face: https://huggingface.co/hyrumA/perrito
 - Model card (README): https://huggingface.co/hyrumA/perrito/blob/main/README.md
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web no ha devuelto ninguna referencia tecnica asociada al modelo.

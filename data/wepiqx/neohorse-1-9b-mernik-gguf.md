@@ -6,7 +6,7 @@ NeoHorse-1-9B-MERNIK-GGUF es una cuantizacion del modelo TokenRhythm/NeoHorse-1-
 
 La relevancia de esta ficha es doble. Por un lado, cuantiza un modelo base orientado a razonamiento y generacion de codigo que, segun el informe del proveedor citado en la model card, alcanza un 98,17% de pass@1 en HumanEval en BF16. Por otro, documenta de forma poco habitual el proceso de cuantizacion: el autor publica los resultados obtenidos (85,98% de pass@1 con `-c 8192` frente a 82,32% de un Q6_K estandar) y reconoce explicitamente las limitaciones de su propia medicion.
 
-El repositorio ocupa 6,8 GB y contiene un unico archivo, `NeoHorse-1-9B-BF16-MERNIK-6500.gguf` (6,83 GB). A pesar de la etiqueta "BF16" en el nombre del archivo, el autor aclara que se trata de una cuantizacion MERNIK y que ese termino se mantiene solo por compatibilidad con el parser de HuggingFace. El modelo se publica bajo licencia Apache 2.0 y esta declarado unicamente para ingles.
+El repositorio ocupa 6,8 GB y contiene un unico archivo, `NeoHorse-1-9B-BF16-MERNIK-6500.gguf` (6,83 GB). A pesar de la etiqueta "BF16" en el nombre del archivo, el autor aclara que se trata de una cuantizacion MERNIK y que ese termino se mantiene solo por compatibilidad con el parser de Hugging Face. El modelo se publica bajo licencia Apache 2.0 y esta declarado unicamente para ingles.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ Referencia del proveedor del modelo base en BF16: 98,17% de pass@1, con longitud
 
 | Modelo | Parametros | Contexto | Formato / tamano | HumanEval pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NeoHorse-1-9B-BF16-MERNIK-6500 (esta ficha) | 8,95B | no disponible | GGUF, 6,83 GB | 85,98% (`-c 8192`) | apache-2.0 | publico en HuggingFace, 0 descargas |
+| NeoHorse-1-9B-BF16-MERNIK-6500 (esta ficha) | 8,95B | no disponible | GGUF, 6,83 GB | 85,98% (`-c 8192`) | apache-2.0 | publico en Hugging Face, 0 descargas |
 | NeoHorse-1-9B Q6_K estandar | 8,95B | no disponible | GGUF, 7,36 GB | 82,32% | apache-2.0 (segun modelo base) | cuantizacion generica |
 | NeoHorse-1-9B Q2_K estandar | 8,95B | no disponible | GGUF, 3,83 GB | 0,00% (colapso) | apache-2.0 (segun modelo base) | cuantizacion generica |
 | NeoHorse-1-9B BF16 (modelo base) | 8,95B | no disponible | safetensors / BF16 | 98,17% (segun proveedor) | no disponible | publico como TokenRhythm/NeoHorse-1-9B |
@@ -91,12 +91,12 @@ No se dispone de datos de otros modelos comparables de tamano similar (por ejemp
 - No se han publicado mediciones de contexto largo para esta cuantizacion. La retencion de las capas de atencion en Q8_0 es una hipotesis de diseno del autor, no un resultado verificado.
 - La licencia declarada es Apache 2.0, permisiva para uso comercial, pero la model card no aclara si la licencia del modelo base (TokenRhythm/NeoHorse-1-9B) impone condiciones adicionales; conviene verificarlo antes de un despliegue en produccion.
 - El repositorio tiene 0 descargas y 2 "me gusta" en el momento de la consulta, por lo que no existe validacion independiente de la comunidad sobre estos numeros.
-- El nombre del archivo incluye "BF16" por compatibilidad con el parser de HuggingFace, pero el contenido no es BF16: es una cuantizacion MERNIK. Cualquier comparacion basada en el nombre del archivo seria erronea.
+- El nombre del archivo incluye "BF16" por compatibilidad con el parser de Hugging Face, pero el contenido no es BF16: es una cuantizacion MERNIK. Cualquier comparacion basada en el nombre del archivo seria erronea.
 - No se especifican arquitectura, datos de entrenamiento ni proceso de alineacion del modelo base, lo que limita el analisis de sesgos conocidos.
 
 ## Enlaces
 
-- Cuantizacion en HuggingFace: https://huggingface.co/wepiqx/NeoHorse-1-9B-MERNIK-GGUF
+- Cuantizacion en Hugging Face: https://huggingface.co/wepiqx/NeoHorse-1-9B-MERNIK-GGUF
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-9B
 - Documentacion del metodo y protocolo MERNIK: https://huggingface.co/wepiqx/MERNIK
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

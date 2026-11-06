@@ -4,7 +4,7 @@
 
 `mradermacher/tanpo-ops-GGUF` es la versión cuantizada en formato GGUF del modelo `d4rkninja/tanpo-ops`, un modelo de generación de texto conversacional de 1.170.340.608 parámetros (aproximadamente 1,17 mil millones) afinado sobre el dataset `d4rkninja/tanpo-ops-sft`. La publicación la firma mradermacher, un cuantizador conocido por distribuir versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo original está etiquetado con los términos `ops` y `operations`, lo que apunta a un ajuste orientado a tareas de operaciones, aunque la información disponible no detalla la composición de ese dataset ni el proceso de ajuste.
 
-El interés práctico de este repositorio no está en el modelo base, sino en el empaquetado: ofrece doce variantes de cuantización estática (desde Q2_K de 0,6 GB hasta f16 de 2,4 GB), lo que permite ejecutar un modelo de 1,17B en hardware muy modesto, incluidas GPU de consumo antiguas o incluso solo CPU. El modelo se distribuye bajo licencia `lfm-1.0`, catalogada en HuggingFace como `other`, y declara únicamente el idioma inglés.
+El interés práctico de este repositorio no está en el modelo base, sino en el empaquetado: ofrece doce variantes de cuantización estática (desde Q2_K de 0,6 GB hasta f16 de 2,4 GB), lo que permite ejecutar un modelo de 1,17B en hardware muy modesto, incluidas GPU de consumo antiguas o incluso solo CPU. El modelo se distribuye bajo licencia `lfm-1.0`, catalogada en Hugging Face como `other`, y declara únicamente el idioma inglés.
 
 Se trata de una publicación reciente (creada el 18 de septiembre de 2026 según los metadatos) y con nula tracción comunitaria: cero descargas y cero likes en el momento de redactar esta ficha. No se han publicado resultados de benchmarks ni una model card detallada del modelo base más allá de sus metadatos, por lo que cualquier evaluación de calidad debe hacerse de forma empírica.
 
@@ -98,7 +98,7 @@ No es posible elaborar una comparativa rigurosa con la información disponible: 
 
 | Modelo | Parámetros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| d4rkninja/tanpo-ops (vía mradermacher/tanpo-ops-GGUF) | 1,17B | no disponible | lfm-1.0 | safetensors (base) y GGUF (12 cuantizaciones) | pública en HuggingFace, 0 descargas |
+| d4rkninja/tanpo-ops (vía mradermacher/tanpo-ops-GGUF) | 1,17B | no disponible | lfm-1.0 | safetensors (base) y GGUF (12 cuantizaciones) | pública en Hugging Face, 0 descargas |
 | Alternativa de la misma categoría (~1B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,11 +107,11 @@ No es posible elaborar una comparativa rigurosa con la información disponible: 
 - Riesgo de alucinación: alto por diseño, dado que se trata de un modelo de 1,17B sin benchmarks publicados. No conviene usarlo en tareas donde una respuesta incorrecta tenga consecuencias sin un mecanismo de verificación posterior.
 - Idioma: solo inglés declarado. No hay evidencia de que responda correctamente en castellano; si se necesita multilingüismo, hay que validarlo empíricamente antes de asumirlo.
 - Contexto: se desconoce la longitud máxima de contexto. Cualquier caso de uso que dependa de ventanas largas debe validarse primero.
-- Licencia: `lfm-1.0`, catalogada como `other` en HuggingFace, es decir, no es una licencia de código abierto permisiva estándar (MIT, Apache 2.0). Implica condiciones adicionales que hay que leer en el texto completo antes de un uso comercial, y esas condiciones afectan también a la redistribución de estas cuantizaciones.
+- Licencia: `lfm-1.0`, catalogada como `other` en Hugging Face, es decir, no es una licencia de código abierto permisiva estándar (MIT, Apache 2.0). Implica condiciones adicionales que hay que leer en el texto completo antes de un uso comercial, y esas condiciones afectan también a la redistribución de estas cuantizaciones.
 - Ausencia de cuantizaciones con imatrix: el autor indica que no existen versiones weighted/imatrix en el momento de la publicación, lo que puede traducirse en una pérdida de calidad algo mayor en los cuants de 2 a 4 bits frente a las variantes con imatrix de otros repositorios.
 - Falta de validación comunitaria: 0 descargas y 0 likes. No hay retroalimentación de terceros, informes de errores ni comparaciones independientes.
 - Información del modelo base muy escasa: la model card del repositorio GGUF es una plantilla genérica de mradermacher y no incluye datos del autor original sobre arquitectura, entrenamiento o evaluación.
-- Fechas de los metadatos: el repositorio figura como creado en septiembre de 2026, un dato que conviene verificar en la propia página de HuggingFace.
+- Fechas de los metadatos: el repositorio figura como creado en septiembre de 2026, un dato que conviene verificar en la propia página de Hugging Face.
 - Uso en producción: no recomendable como componente crítico sin una evaluación propia previa sobre el dominio objetivo.
 
 ## Enlaces

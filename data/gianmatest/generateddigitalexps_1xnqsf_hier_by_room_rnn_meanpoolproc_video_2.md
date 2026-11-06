@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_2` es un modelo publicado en HuggingFace por el usuario `gianmaTest`. Por el nombre y los tags, se trata de un experimento de investigación generado automáticamente dentro de un pipeline interno (la cadena `generatedDigitalExps` sugiere "experimentos digitales generados"), con una arquitectura recurrente (RNN) y un procesamiento de *mean pooling* sobre secuencias de vídeo organizadas jerárquicamente por habitación (`hier_by_room`). No es un modelo de lenguaje de propósito general.
+`generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_2` es un modelo publicado en Hugging Face por el usuario `gianmaTest`. Por el nombre y los tags, se trata de un experimento de investigación generado automáticamente dentro de un pipeline interno (la cadena `generatedDigitalExps` sugiere "experimentos digitales generados"), con una arquitectura recurrente (RNN) y un procesamiento de *mean pooling* sobre secuencias de vídeo organizadas jerárquicamente por habitación (`hier_by_room`). No es un modelo de lenguaje de propósito general.
 
-El repositorio contiene únicamente los pesos en formato `safetensors` (2.366.208 parámetros, aproximadamente 2,4 millones) empaquetados mediante `PyTorchModelHubMixin`. La model card es la plantilla automática que genera HuggingFace al subir un modelo con ese mixin: no incluye código, paper, documentación ni descripción funcional. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación.
+El repositorio contiene únicamente los pesos en formato `safetensors` (2.366.208 parámetros, aproximadamente 2,4 millones) empaquetados mediante `PyTorchModelHubMixin`. La model card es la plantilla automática que genera Hugging Face al subir un modelo con ese mixin: no incluye código, paper, documentación ni descripción funcional. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación.
 
 Su relevancia es, por tanto, muy limitada fuera del contexto del experimento concreto para el que se generó. Se documenta aquí como ficha técnica por rigor, pero cualquier uso en producción requeriría contactar con el autor para obtener el código de inferencia, la definición de la arquitectura y los datos de entrenamiento, ninguno de los cuales está disponible públicamente.
 
@@ -44,7 +44,7 @@ Dado que no se dispone de código de inferencia ni de especificación de entrada
 - Análisis de vídeo doméstico a pequeña escala: con 2,4 M de parámetros, cabría desplegarlo en dispositivos de borde para experimentos de reconocimiento de actividad por estancia, siempre que se reconstruya el pipeline de preprocesado.
 - Baseline en experimentos de ablación: su tamaño reducido lo hace útil como línea base frente a modelos más grandes en tareas de agregación de secuencias.
 - Reproducción de experimentos internos: si el autor publica el código asociado, podría reutilizarse para replicar los resultados del pipeline `generatedDigitalExps`.
-- Docencia sobre mixins de HuggingFace: el repositorio ilustra el uso de `PyTorchModelHubMixin` para publicar pesos personalizados, aunque no es un caso de uso del modelo en sí.
+- Docencia sobre mixins de Hugging Face: el repositorio ilustra el uso de `PyTorchModelHubMixin` para publicar pesos personalizados, aunque no es un caso de uso del modelo en sí.
 
 En ningún caso se recomienda su uso en producción sin acceso al código y a la documentación del autor.
 
@@ -77,6 +77,6 @@ No disponible. No se conocen modelos comparables publicados con la misma arquite
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_2
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xNqSf_hier_by_room_rnn_meanPoolProc_video_2
 - Documentación del mixin usado: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Perfil del autor: https://huggingface.co/gianmaTest

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sd-turbo-phi-lattice es una compilación experimental del modelo de difusión texto-a-imagen `stabilityai/sd-turbo`, publicada por el usuario `ununununununununununununununununununun` en HuggingFace. El autor ha aplicado al backbone UNet de 866 millones de parámetros una técnica propia de cuantización no uniforme denominada `phi-lattice`, combinada con una pasada de poda de ruido de baja magnitud, con el objetivo de reducir el peso del modelo sin sacrificar en exceso la calidad visual generada.
+sd-turbo-phi-lattice es una compilación experimental del modelo de difusión texto-a-imagen `stabilityai/sd-turbo`, publicada por el usuario `ununununununununununununununununununun` en Hugging Face. El autor ha aplicado al backbone UNet de 866 millones de parámetros una técnica propia de cuantización no uniforme denominada `phi-lattice`, combinada con una pasada de poda de ruido de baja magnitud, con el objetivo de reducir el peso del modelo sin sacrificar en exceso la calidad visual generada.
 
 El modelo base, sd-turbo, es un modelo de difusión latente derivado de Stable Diffusion 2.1, destilado para generar imágenes en muy pocos pasos de inferencia (típicamente uno o dos). Esta variante no modifica el pipeline de inferencia ni introduce destilación adicional: su aportación es exclusivamente de compresión, ofreciendo pesos UNet empaquetados en 4 bits (459,4 MB) y una versión preempaquetada en float16 (1,65 GB) lista para cargar directamente con `diffusers` o ComfyUI.
 
@@ -70,10 +70,10 @@ Datos publicados en la model card del autor (no verificados de forma independien
 
 | Modelo | Parametros | Contexto / pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sd-turbo-phi-lattice (este) | 866M (UNet) | 1-2 pasos de inferencia | other | HuggingFace, 0 descargas |
-| stabilityai/sd-turbo | 866M (UNet) | 1-2 pasos de inferencia | other (Stability AI) | HuggingFace, ampliamente usado |
+| sd-turbo-phi-lattice (este) | 866M (UNet) | 1-2 pasos de inferencia | other | Hugging Face, 0 descargas |
+| stabilityai/sd-turbo | 866M (UNet) | 1-2 pasos de inferencia | other (Stability AI) | Hugging Face, ampliamente usado |
 | sd-turbo con cuantización uniforme 4 bits | 866M (UNet) | 1-2 pasos de inferencia | other | Depende de la implementación |
-| LCM / LCM-LoRA sobre SD 2.1 | 866M (UNet) | 2-8 pasos | openrail / other | HuggingFace |
+| LCM / LCM-LoRA sobre SD 2.1 | 866M (UNet) | 2-8 pasos | openrail / other | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con estos modelos más allá de las métricas internas de la model card.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos con estos modelos más allá d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ununununununununununununununununununun/sd-turbo-phi-lattice
+- Repositorio Hugging Face: https://huggingface.co/ununununununununununununununununununun/sd-turbo-phi-lattice
 - Modelo base: https://huggingface.co/stabilityai/sd-turbo
 - Documentación de `diffusers`: https://huggingface.co/docs/diffusers
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

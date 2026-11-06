@@ -2,7 +2,7 @@
 
 ## Resumen
 
-adva-itpil/vit-contrastive-finetune es un repositorio experimental publicado en HuggingFace por el usuario adva-itpil que contiene un codebase de Vision Transformer (ViT) orientado a entrenamiento contrastivo, no un modelo entrenado listo para usar. El propio autor lo describe como una base a escala "tiny", pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, con un checkpoint de safetensors que se presenta explícitamente como inicialización válida para pruebas de humo (smoke tests) y no como resultado de un entrenamiento.
+adva-itpil/vit-contrastive-finetune es un repositorio experimental publicado en Hugging Face por el usuario adva-itpil que contiene un codebase de Vision Transformer (ViT) orientado a entrenamiento contrastivo, no un modelo entrenado listo para usar. El propio autor lo describe como una base a escala "tiny", pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, con un checkpoint de safetensors que se presenta explícitamente como inicialización válida para pruebas de humo (smoke tests) y no como resultado de un entrenamiento.
 
 El repositorio incluye `train.py` como artefacto principal, junto con `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicialización). La arquitectura declarada es ViT con atención dilatada, fusión de bajo rango, activación approximate GELU y normalización RMSNorm; la receta por defecto emplea el optimizador NovoGrad con un schedule polinómico. No se reclama ninguna puntuación de benchmark.
 
@@ -21,7 +21,7 @@ Su relevancia es metodológica más que de rendimiento: funciona como plantilla 
 | Licencia | MIT |
 | Formato de pesos | safetensors (PyTorch) |
 | Escala declarada | tiny |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 12 / 0 |
 | Tamano del repositorio | 0.0 GB |
 | Fechas declaradas en metadatos | Creación 2026-09-28, actualización 2026-09-28 |
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la receta por defecto incluida en `training_args.jso
 - Sin soporte de agentes ni razonamiento multi-paso: no disponible en esta arquitectura.
 - Sin capacidades multilingües: no aplica a un modelo de visión sin cabecera de texto.
 - Sin modo "thinking", visión-lenguaje ni audio: no implementados en el artefacto publicado.
-- Carga mediante APIs automáticas: el autor indica que, al ser una implementación propia, requiere un adaptador explícito para funcionar con las APIs genéricas de carga de HuggingFace.
+- Carga mediante APIs automáticas: el autor indica que, al ser una implementación propia, requiere un adaptador explícito para funcionar con las APIs genéricas de carga de Hugging Face.
 
 ## Casos de uso
 
@@ -75,9 +75,9 @@ No se dispone de resultados de benchmarks de este repositorio, por lo que la com
 
 | Modelo | Parametros | Contexto / entrada | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adva-itpil/vit-contrastive-finetune | 16.576 (recuento declarado) | No disponible | Ninguno (no reclamado) | MIT | HuggingFace, 12 descargas, 0 likes |
+| adva-itpil/vit-contrastive-finetune | 16.576 (recuento declarado) | No disponible | Ninguno (no reclamado) | MIT | Hugging Face, 12 descargas, 0 likes |
 | ViT-tiny (Dosovitskiy et al., 2020) | ~5,7 M (literatura) | Imagen 224x224, parche 16 | ImageNet, entre otros | Apache 2.0 (implementación de referencia) | Amplia, integrado en timm y transformers |
-| DeiT-tiny (Touvron et al., 2021) | ~5,7 M (literatura) | Imagen 224x224, parche 16 | ImageNet con destilación | Apache 2.0 | Amplia, disponible en HuggingFace |
+| DeiT-tiny (Touvron et al., 2021) | ~5,7 M (literatura) | Imagen 224x224, parche 16 | ImageNet con destilación | Apache 2.0 | Amplia, disponible en Hugging Face |
 | CLIP ViT-B/32 (Radford et al., 2021) | ~151 M totales (literatura) | Imagen + texto | Zero-shot en decenas de tareas | MIT (pesos originales) | Amplia, referencia estándar en visión-lenguaje |
 
 La diferencia principal es de madurez: los tres modelos de referencia son artefactos entrenados y evaluados, mientras que este repositorio es un codebase experimental con un checkpoint de inicialización y sin métricas.
@@ -91,13 +91,13 @@ La diferencia principal es de madurez: los tres modelos de referencia son artefa
 - Riesgo de alucinación: no aplica en el sentido de un modelo generativo de texto, pero sí existe riesgo de conclusiones erróneas si se interpretan representaciones no entrenadas como características útiles.
 - Limitaciones de idioma y contexto: no aplicables; es un modelo de visión sin tokenizador ni ventana de contexto documentada.
 - Licencia MIT, permisiva para uso comercial. El autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con datasets externos.
-- Implementación personalizada: las APIs automáticas de carga de HuggingFace requieren un adaptador explícito, lo que añade trabajo de integración.
+- Implementación personalizada: las APIs automáticas de carga de Hugging Face requieren un adaptador explícito, lo que añade trabajo de integración.
 - Tracción mínima: 12 descargas y 0 likes, sin issues ni discusiones públicas documentadas, lo que limita el soporte de la comunidad.
 - Para producción sería imprescindible entrenar, evaluar con al menos tres semillas, fijar versiones de entorno y conservar los registros de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adva-itpil/vit-contrastive-finetune
+- Modelo en Hugging Face: https://huggingface.co/adva-itpil/vit-contrastive-finetune
 - Script de entrenamiento: https://huggingface.co/adva-itpil/vit-contrastive-finetune/blob/main/train.py
 - Configuración de arquitectura: https://huggingface.co/adva-itpil/vit-contrastive-finetune/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/adva-itpil/vit-contrastive-finetune/blob/main/training_args.json

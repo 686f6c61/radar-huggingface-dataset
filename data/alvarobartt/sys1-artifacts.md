@@ -72,6 +72,6 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alvarobartt/sys1-artifacts
+- Hugging Face: https://huggingface.co/alvarobartt/sys1-artifacts
 - Commit de origen citado: `a1459f216b3cdf36b44e3f6f1c505f0bb5b4d78e` (PR #40 del repositorio público de sys1)
 - Otros enlaces (papers, blogs, repos, demos): no disponibles en la informacion proporcionada.

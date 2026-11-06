@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Capas | Contexto/parcheado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| REVE-small | 12,7M | 4 | Parcheado 200 muestras, solapamiento 20, 200 Hz | REVE Responsible Use License v1.0 | HuggingFace (`tkhieu/reve-small`) |
-| REVE-base | 69,2M | 22 | Parcheado 200 muestras, solapamiento 20, 200 Hz | REVE Responsible Use License v1.0 | HuggingFace (`brain-bzh/reve-base`) |
+| REVE-small | 12,7M | 4 | Parcheado 200 muestras, solapamiento 20, 200 Hz | REVE Responsible Use License v1.0 | Hugging Face (`tkhieu/reve-small`) |
+| REVE-base | 69,2M | 22 | Parcheado 200 muestras, solapamiento 20, 200 Hz | REVE Responsible Use License v1.0 | Hugging Face (`brain-bzh/reve-base`) |
 | Otros modelos fundacionales EEG | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 REVE-small comparte diseño de capa, parcheado y codificación posicional con REVE-base, diferenciándose únicamente en el número de capas (4 frente a 22) y en el número de parámetros (12,7M frente a 69,2M). No se dispone de información sobre otros modelos fundacionales EEG comparables en la documentación proporcionada.
@@ -82,7 +82,7 @@ REVE-small comparte diseño de capa, parcheado y codificación posicional con RE
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tkhieu/reve-small
+- Hugging Face del modelo: https://huggingface.co/tkhieu/reve-small
 - Página del proyecto REVE: https://brain-bzh.github.io/reve/
 - Paper: https://arxiv.org/abs/2510.21585
 - Modelo base REVE-base: https://huggingface.co/brain-bzh/reve-base

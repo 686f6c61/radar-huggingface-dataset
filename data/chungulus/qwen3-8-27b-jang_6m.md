@@ -90,6 +90,6 @@ No se incluyen otras alternativas por falta de información en la documentación
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.8-27B-JANG_6M
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.8-27B-JANG_6M
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime JANG/MLX: no se proporciona enlace directo en la documentación; se menciona como requisito.

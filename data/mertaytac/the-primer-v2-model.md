@@ -2,7 +2,7 @@
 
 ## Resumen
 
-The Primer v2 es un modelo de regresion logistica de tamano muy reducido publicado por el usuario mertaytac en HuggingFace. Su proposito declarado es predecir, a partir de caracteristicas de comportamiento de juego, la etiqueta de necesidad de ayuda que el propio jugador ha reportado. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un clasificador tabular clasico exportado a formato ONNX, con un repositorio de 0,0 GB y sin pipeline de HuggingFace definido.
+The Primer v2 es un modelo de regresion logistica de tamano muy reducido publicado por el usuario mertaytac en Hugging Face. Su proposito declarado es predecir, a partir de caracteristicas de comportamiento de juego, la etiqueta de necesidad de ayuda que el propio jugador ha reportado. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es un clasificador tabular clasico exportado a formato ONNX, con un repositorio de 0,0 GB y sin pipeline de Hugging Face definido.
 
 El modelo se distribuye en estado `demo_unverified`, segun la propia model card. Los datos de entrenamiento son minimos: 120 filas en origen, de las cuales 88 se usaron para entrenamiento y 32 para prueba, con solo 11 sesiones de entrenamiento y 4 de prueba tras un split a nivel de sesion. La evaluacion se etiqueta explicitamente como `demo_session_split_synthetic_eval`, lo que indica que las metricas provienen de una evaluacion sintetica de demostracion y no de una validacion en produccion.
 
@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| The Primer v2 | no disponible | no aplica | F1 0,844444 (demo sintetica) | no disponible | HuggingFace (0 descargas, 0 likes) |
+| The Primer v2 | no disponible | no aplica | F1 0,844444 (demo sintetica) | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Alternativas lineales tabulares | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,4 +98,4 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mertaytac/the-primer-v2-model
+- Modelo en Hugging Face: https://huggingface.co/mertaytac/the-primer-v2-model

@@ -81,12 +81,12 @@ No se dispone de datos de benchmark que permitan comparar la calidad frente a mo
 - No se especifica la longitud de contexto real soportada, solo la etiqueta "long-context".
 - No se documentan capacidades de tool calling ni de agente, por lo que no deberia asumirse que funcionan correctamente.
 - Licencia swift-open-license-1.0, no estandar y con identificador "other": es imprescindible leer sus terminos antes de cualquier uso comercial, ya que puede incluir restricciones de uso, atribucion o redistribucion.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
 - La fecha de creacion indicada es 2026-10-14; conviene verificar el estado del repositorio y de la model card, que aparece truncada en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cc1244578151/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated
+- Modelo en Hugging Face: https://huggingface.co/cc1244578151/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated
 - Modelo base declarado: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Modelo base adicional indicado en la ficha: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next
 - Cuantizacion upstream GSQ-RCO GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF

@@ -102,7 +102,7 @@ No se dispone en la informacion proporcionada de datos numericos de modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RussellKwon/UMA_s1p1_oc20_fine-tuned_WSO
+- Modelo en Hugging Face: https://huggingface.co/RussellKwon/UMA_s1p1_oc20_fine-tuned_WSO
 - Modelo base UMA: https://huggingface.co/facebook/UMA
 - Articulo asociado W-S-O: https://arxiv.org/abs/2606.21632
 - Biblioteca fairchem: https://github.com/facebook/fairchem

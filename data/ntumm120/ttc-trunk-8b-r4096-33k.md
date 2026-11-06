@@ -104,7 +104,7 @@ Todas las variantes de la familia comparten backbone congelado, datos T (ProLong
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ntumm120/ttc-trunk-8b-r4096-33k
+- Modelo en Hugging Face: https://huggingface.co/ntumm120/ttc-trunk-8b-r4096-33k
 - Repositorio headliner (r2048, contiene el README con el comando de evaluacion): https://huggingface.co/ntumm120/ttc-trunk-8b-r2048-33k
 - Variante de estado minimo (r288): https://huggingface.co/ntumm120/ttc-trunk-8b-r288-33k
 - Patron de nombres del resto de la escalera: https://huggingface.co/ntumm120/ttc-trunk-8b-r512-33k, https://huggingface.co/ntumm120/ttc-trunk-8b-r1024-33k, https://huggingface.co/ntumm120/ttc-trunk-8b-r8192-33k

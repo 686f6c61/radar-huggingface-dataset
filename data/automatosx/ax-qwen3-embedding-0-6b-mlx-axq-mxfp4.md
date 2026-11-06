@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento efecti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/tree/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3
 - Variante 4bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-4bit
 - Variante 8bit: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-8bit

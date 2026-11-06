@@ -94,7 +94,7 @@ La comparación de rendimiento en tareas SOC no está disponible; los modelos ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GoktugD/NanoSOC-Gemstone-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/GoktugD/NanoSOC-Gemstone-4B-GGUF
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp
 - Espacio del autor (Model Lab): https://huggingface.co/spaces/GoktugD/goktug-ai-lab

@@ -91,7 +91,7 @@ Nota: la comparativa se basa en caracteristicas generales de los frameworks, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AllenInstitute/sleap-ctlut-sleap-trial1-foraging-bot-han-lucas-2022-04-27
+- Modelo en Hugging Face: https://huggingface.co/AllenInstitute/sleap-ctlut-sleap-trial1-foraging-bot-han-lucas-2022-04-27
 - Sitio oficial de SLEAP: https://sleap.ai/
 - Repositorio de SLEAP en GitHub: https://github.com/talmolab/sleap
 - Paper de referencia (Pereira et al., Nature Methods, 2022): accesible a traves del repositorio de GitHub de SLEAP

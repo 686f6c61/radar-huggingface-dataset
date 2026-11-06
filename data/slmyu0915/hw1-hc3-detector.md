@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `slmyu0915/hw1-hc3-detector` es un clasificador binario de texto en ingles disenado para distinguir respuestas escritas por humanos (etiqueta 0) de respuestas generadas por ChatGPT (etiqueta 1). Se trata de un ajuste fino (fine-tuning) del modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2` sobre el corpus HC3 (Human ChatGPT Comparison Corpus) de Hello-SimpleAI. Fue publicado por el usuario slmyu0915 el 1 de octubre de 2026 y se distribuye a traves de HuggingFace dentro del pipeline `text-classification`.
+El modelo `slmyu0915/hw1-hc3-detector` es un clasificador binario de texto en ingles disenado para distinguir respuestas escritas por humanos (etiqueta 0) de respuestas generadas por ChatGPT (etiqueta 1). Se trata de un ajuste fino (fine-tuning) del modelo de embeddings `sentence-transformers/all-MiniLM-L6-v2` sobre el corpus HC3 (Human ChatGPT Comparison Corpus) de Hello-SimpleAI. Fue publicado por el usuario slmyu0915 el 1 de octubre de 2026 y se distribuye a traves de Hugging Face dentro del pipeline `text-classification`.
 
 Arquitectonicamente es un transformer encoder de tipo BERT comprimido (MiniLM), con 22.713.986 parametros totales y pesos en formato safetensors. No es un modelo generativo ni un modelo de embeddings de proposito general: se ha reentrenado especificamente como cabeza de clasificacion sobre la representacion del encoder. El entrenamiento se realizo durante 5 epocas con el optimizador AdamW (lr = 2e-5), tamano de lote 32 y longitud maxima de secuencia de 256 tokens.
 
@@ -65,7 +65,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - VRAM estimada para inferencia: aproximadamente 91 MB en fp32 (22,7 M de parametros x 4 bytes) y unos 45 MB en fp16. No incluye el overhead del runtime de PyTorch.
 - GPU recomendadas: cualquiera con suficiente memoria libre, incluidas GTX 1050 Ti o superiores; tambien A100, H100, RTX 4090, etc., aunque estan sobredimensionadas para este modelo.
 - Si cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna, y tambien en CPU.
-- Opciones de despliegue: `transformers` (pipeline `text-classification`), Text Embeddings Inference (el repositorio incluye la etiqueta `text-embeddings-inference`) y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). No se documenta soporte de llama.cpp/Ollama (el modelo no esta en formato GGUF) ni configuracion especifica para vLLM o TGI.
+- Opciones de despliegue: `transformers` (pipeline `text-classification`), Text Embeddings Inference (el repositorio incluye la etiqueta `text-embeddings-inference`) y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). No se documenta soporte de llama.cpp/Ollama (el modelo no esta en formato GGUF) ni configuracion especifica para vLLM o TGI.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ Los modelos comparados son replicas de la misma tarea (HW1) publicadas por otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slmyu0915/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/slmyu0915/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Repositorio Hello-SimpleAI (HC3 y detectores): https://github.com/Hello-SimpleAI

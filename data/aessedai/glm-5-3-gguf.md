@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks comparativos numéricos en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AesSedai/GLM-5.3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AesSedai/GLM-5.3-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Repositorio oficial GLM-5: https://github.com/zai-org/GLM-5
 - Documentación de Unsloth para GLM-5.3: https://unsloth.ai/docs/models/glm-5.3

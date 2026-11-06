@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Thireus/Qwen3.8-27B-THIREUS-Q6_K_R4-SPECIAL_SPLIT` es un checkpoint de 27 000 millones de parámetros publicado por el usuario Thireus en HuggingFace bajo licencia MIT. El nombre sugiere que se trata de una variante cuantizada del modelo Qwen3-27B (desarrollado originalmente por Alibaba), con un formato de cuantización Q6_K_R4 típico de llama.cpp y un split especial de los pesos. Sin embargo, la model card publicada no contiene más que la línea de licencia, por lo que no hay información oficial sobre arquitectura, entrenamiento, capacidades o rendimiento.
+El modelo `Thireus/Qwen3.8-27B-THIREUS-Q6_K_R4-SPECIAL_SPLIT` es un checkpoint de 27 000 millones de parámetros publicado por el usuario Thireus en Hugging Face bajo licencia MIT. El nombre sugiere que se trata de una variante cuantizada del modelo Qwen3-27B (desarrollado originalmente por Alibaba), con un formato de cuantización Q6_K_R4 típico de llama.cpp y un split especial de los pesos. Sin embargo, la model card publicada no contiene más que la línea de licencia, por lo que no hay información oficial sobre arquitectura, entrenamiento, capacidades o rendimiento.
 
 La relevancia de este modelo reside en su potencial para ejecutar un LLM de gran tamaño en hardware de consumo mediante cuantización GGUF, aunque la ausencia de documentación y de resultados de evaluación limita seriamente su uso en entornos profesionales. Cualquier adopción debería ir precedida de una validación empírica exhaustiva.
 
@@ -57,7 +57,7 @@ Estas cifras son estimaciones orientativas y no deben considerarse definitivas.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para realizar una comparación rigurosa. Como referencia, el modelo base Qwen3-27B (original, sin cuantizar) tiene 27B parámetros, contexto de 32 768 tokens, licencia Apache 2.0 y está disponible en HuggingFace. Otras alternativas de tamaño similar incluyen Llama-3-27B (hipotético, no existe oficialmente) o Mistral-27B, pero no se puede comparar este checkpoint con ellos sin resultados de benchmarks. Se recomienda consultar la documentación del Qwen3-27B original para obtener una referencia de capacidades, aunque este split puede diferir sustancialmente.
+No se dispone de datos suficientes para realizar una comparación rigurosa. Como referencia, el modelo base Qwen3-27B (original, sin cuantizar) tiene 27B parámetros, contexto de 32 768 tokens, licencia Apache 2.0 y está disponible en Hugging Face. Otras alternativas de tamaño similar incluyen Llama-3-27B (hipotético, no existe oficialmente) o Mistral-27B, pero no se puede comparar este checkpoint con ellos sin resultados de benchmarks. Se recomienda consultar la documentación del Qwen3-27B original para obtener una referencia de capacidades, aunque este split puede diferir sustancialmente.
 
 ## Limitaciones y advertencias
 
@@ -69,5 +69,5 @@ No se dispone de datos suficientes para realizar una comparación rigurosa. Como
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q6_K_R4-SPECIAL_SPLIT)
+- [Repositorio Hugging Face](https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q6_K_R4-SPECIAL_SPLIT)
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

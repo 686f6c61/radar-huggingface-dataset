@@ -93,7 +93,7 @@ La única comparación con datos verificables en la información disponible es c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
+- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Web de Prism ML: https://prismml.com
 - Demo y ejemplos (fuente de verdad para ejecutar los modelos): https://github.com/PrismML-Eng/Bonsai-demo

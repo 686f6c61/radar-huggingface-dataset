@@ -68,4 +68,4 @@ No disponible. No se proporcionan modelos comparables en la información del rep
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter400
+- Repositorio Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level2-panda-robotiq-widowx-texture-video-lora-iter400

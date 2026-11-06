@@ -77,7 +77,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Qwen3-8B e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tianzl66/Qwen3-8B-CommonSense170K-LoRA
+- Hugging Face: https://huggingface.co/tianzl66/Qwen3-8B-CommonSense170K-LoRA
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Model card de Qwen3-8B-Instruct (PDF de NVIDIA): https://developer.nvidia.com/downloads/assets/ace/model_card/qwen3-8b-instruct.pdf

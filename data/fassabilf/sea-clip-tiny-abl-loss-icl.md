@@ -19,7 +19,7 @@ Su relevancia es doble. Por un lado, con solo 46,11 millones de parámetros y un
 | Tipos de cuantizacion | No disponible (la model card no documenta cuantizaciones; el repositorio ocupa 0,2 GB) |
 | Idiomas soportados | Inglés (en), indonesio (id), javanés (jv), sundanés (su), malayo (ms), tailandés (th), vietnamita (vi), birmano (my) |
 | Licencia | MIT |
-| Formato de pesos | No especificado en la model card; se carga mediante `open_clip` desde el Hub de HuggingFace |
+| Formato de pesos | No especificado en la model card; se carga mediante `open_clip` desde el Hub de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado en la información disponible resultados comparativos frente
 - VRAM estimada para inferencia: el modelo tiene 46,11 M de parámetros, lo que equivale aproximadamente a 184 MB en fp32 y 92 MB en fp16, sin contar el preprocesado. Cabe holgadamente en cualquier GPU con al menos 1-2 GB de VRAM asignados al proceso.
 - GPU recomendadas: no se especifican en la documentación. Por tamaño, cualquier GPU moderna es suficiente, desde una GTX 1650 o una iGPU hasta una RTX 4090, A100 o H100; en estas dos últimas el modelo estará limitado por el preprocesado de imágenes y no por la computación.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo actual e incluso en muchos casos puede ejecutarse directamente en CPU.
-- Opciones de despliegue: la vía documentada es `open_clip` con `create_model_and_transforms` y `get_tokenizer` apuntando al Hub de HuggingFace. No se documentan otras integraciones (vLLM, llama.cpp, Ollama o TGI no están indicadas y, al no ser un modelo generativo, no aplican del modo habitual).
+- Opciones de despliegue: la vía documentada es `open_clip` con `create_model_and_transforms` y `get_tokenizer` apuntando al Hub de Hugging Face. No se documentan otras integraciones (vLLM, llama.cpp, Ollama o TGI no están indicadas y, al no ser un modelo generativo, no aplican del modo habitual).
 - Latencia y throughput estimados: no disponibles; la model card no publica mediciones de latencia ni de imágenes por segundo.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se dispone de resultados comparables de otros modelos de embeddings multiling
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-icl
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-icl
 - Modelo principal SEA-CLIP-Tiny: https://huggingface.co/fassabilf/sea-clip-tiny
 - Código de entrenamiento y evaluación: https://github.com/fassabilf/sea-clip-tiny
 - Citación del artículo (ACCV 2026): *SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages*, Asian Conference on Computer Vision (ACCV), 2026.

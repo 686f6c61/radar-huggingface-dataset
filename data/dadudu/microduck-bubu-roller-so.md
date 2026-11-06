@@ -26,7 +26,7 @@ Es relevante como caso de estudio de optimización de envoltorios sobre polític
 | Modelo base | suraj-phanindra/microduck-roller-hc5-aifund |
 | Entorno de evaluación | Microduck Arena, runner v4, MuJoCo 3.10.0, CPU x86-64 |
 | Uso previsto | simulación; no hardware |
-| Tamaño del repositorio | 0,0 GB según HuggingFace |
+| Tamaño del repositorio | 0,0 GB según Hugging Face |
 | Descargas / likes | 8 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ Estos números son en muestra: la búsqueda puntuó sus candidatos sobre las mis
 - VRAM estimada para inferencia: no disponible; no se documenta uso de GPU.
 - GPU recomendadas: no aplica / no disponible; la evaluación publicada se ejecuta en CPU x86-64.
 - CPU: x86-64 con el runner v4 de Microduck Arena y MuJoCo 3.10.0.
-- Si cabe en GPU de consumo: no disponible; no hay estimación de VRAM ni requisito de GPU documentado. El repositorio ocupa 0,0 GB según HuggingFace, pero no se deduce de ello una cifra de VRAM.
+- Si cabe en GPU de consumo: no disponible; no hay estimación de VRAM ni requisito de GPU documentado. El repositorio ocupa 0,0 GB según Hugging Face, pero no se deduce de ello una cifra de VRAM.
 - Opciones de despliegue: librería `microduck`, ONNX Runtime y el runner de la Arena. El resultado de búsqueda menciona `robotctl policy load`, pero el autor prohíbe explícitamente cargar el modelo en un robot físico.
 - Latencia y throughput: no disponible; los tiempos de 0,932 s y 0,940 s son tiempos de carrera, no latencias de inferencia.
 
@@ -85,10 +85,10 @@ Estos números son en muestra: la búsqueda puntuó sus candidatos sobre las mis
 
 | Modelo | Relación | Parámetros | Contexto | Rendimiento (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| suraj-phanindra/microduck-roller-hc5-aifund | modelo base | no disponible | no aplica | 0,940 s | no disponible | HuggingFace |
-| dadudu/microduck-bubu-roller-so | este modelo | no disponible | no aplica | 0,932 s en muestra | no disponible | HuggingFace |
-| juicenv/microduck-roller-es21 | ancestro del modelo base | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| jrubiosainz/microduck-game-roller-remix2 | remix relacionado | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| suraj-phanindra/microduck-roller-hc5-aifund | modelo base | no disponible | no aplica | 0,940 s | no disponible | Hugging Face |
+| dadudu/microduck-bubu-roller-so | este modelo | no disponible | no aplica | 0,932 s en muestra | no disponible | Hugging Face |
+| juicenv/microduck-roller-es21 | ancestro del modelo base | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| jrubiosainz/microduck-game-roller-remix2 | remix relacionado | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 No se dispone de recuento de parámetros, licencia ni resultados comparables de los modelos alternativos en la información proporcionada. La comparación útil se limita al tiempo de carrera publicado y a la cadena de derivación.
 
@@ -107,7 +107,7 @@ No se dispone de recuento de parámetros, licencia ni resultados comparables de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dadudu/microduck-bubu-roller-so
+- Modelo en Hugging Face: https://huggingface.co/dadudu/microduck-bubu-roller-so
 - Modelo base: https://huggingface.co/suraj-phanindra/microduck-roller-hc5-aifund
 - Ancestro del modelo base: https://huggingface.co/juicenv/microduck-roller-es21
 - Microduck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena

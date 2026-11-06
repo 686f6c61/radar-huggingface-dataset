@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`azaytsev/classification` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de un *Tiny Transformer* orientado a tareas de clasificación. Lo desarrolla el usuario `azaytsev` y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con capacidades generativas: es un esqueleto de código con un checkpoint de inicialización válido únicamente para *smoke tests*.
+`azaytsev/classification` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de un *Tiny Transformer* orientado a tareas de clasificación. Lo desarrolla el usuario `azaytsev` y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con capacidades generativas: es un esqueleto de código con un checkpoint de inicialización válido únicamente para *smoke tests*.
 
 El modelo emplea una arquitectura transformer de atención lineal con fusión *co-attention*, activación ReLU y normalización *scalenorm*, configurada en una escala que el autor denomina "huge" dentro de su propio esquema. El recuento real de parámetros en `model.safetensors` es de 49.600 parámetros, un tamaño extremadamente reducido que confirma su carácter de juguete o prueba de concepto.
 
@@ -80,4 +80,4 @@ No se dispone de datos de rendimiento del modelo analizado que permitan una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/azaytsev/classification
+- Hugging Face: https://huggingface.co/azaytsev/classification

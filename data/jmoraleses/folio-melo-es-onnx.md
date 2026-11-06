@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jmoraleses/folio-melo-es-onnx
+- Repositorio Hugging Face: https://huggingface.co/jmoraleses/folio-melo-es-onnx
 - MeloTTS (MyShell.ai): https://github.com/myshell-ai/MeloTTS
 - OpenVoice: no disponible en la información proporcionada
 - Repositorio fuente de la exportación (Folio-iOS): https://github.com/jmoraleses/Folio-iOS (referenciado en la model card)

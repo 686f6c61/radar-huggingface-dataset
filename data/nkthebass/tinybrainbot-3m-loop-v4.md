@@ -104,7 +104,7 @@ Frente a alternativas de tamaño comparable, TinyBrainBot-3M-Loop-v4 domina clar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-3m-loop-v4
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-3m-loop-v4
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
   - https://huggingface.co/datasets/HuggingFaceTB/cosmopedia

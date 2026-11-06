@@ -86,7 +86,7 @@ Mejora respecto al warm start V16: loss -0,086, eal +0,105, position_0_acc +0,03
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen38-dspark-cooldown-fineweb | Draft DSpark, condicionamiento solo por tokens (embeddings del verificador) | 1,804930817 (0,46B entrenables) | no disponible | no disponible | safetensors en HuggingFace |
+| qwen38-dspark-cooldown-fineweb | Draft DSpark, condicionamiento solo por tokens (embeddings del verificador) | 1,804930817 (0,46B entrenables) | no disponible | no disponible | safetensors en Hugging Face |
 | EAGLE / EAGLE-2 / EAGLE-3 | Draft con condicionamiento por hidden states del verificador | no disponible | no disponible | no disponible | implementaciones publicas |
 | Medusa | Cabezas adicionales sobre el verificador para prediccion multiple | no disponible | no disponible | no disponible | implementaciones publicas |
 | Borrador n-grama / lookup decoding | Prediccion sin red neuronal, basada en coincidencias | no aplica | no aplica | no aplica | integrado en varios servidores |
@@ -109,7 +109,7 @@ La diferencia tecnica principal frente a EAGLE es el condicionamiento: este chec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inference-optimization/qwen38-dspark-cooldown-fineweb
+- Hugging Face: https://huggingface.co/inference-optimization/qwen38-dspark-cooldown-fineweb
 - Checkpoint de pretrain (warm start): https://huggingface.co/inference-optimization/qwen38-dspark-pretrain-fineweb
 - Verificador (no incluido, descarga aparte): https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de speculators: commit 63fe7df755e2b3ca0ccce1f0b842dd5ee674fdc8, rama qwen38-27b-dspark-pretraining (fork de vllm-project/speculators)

@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks para establecer comparaciones de rendimient
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/warped-community/Qwen2.5-Coder-3B-litert-lm
+- Hugging Face (este repositorio): https://huggingface.co/warped-community/Qwen2.5-Coder-3B-litert-lm
 - Repositorio de origen del artefacto LiteRT-LM: https://huggingface.co/litert-community/Qwen2.5-Coder-3B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

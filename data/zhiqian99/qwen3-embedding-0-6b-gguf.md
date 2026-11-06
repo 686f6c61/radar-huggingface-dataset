@@ -108,9 +108,9 @@ La comparación es orientativa; el modelo Qwen3 tiene mayor contexto y más idio
 
 ## Enlaces
 
-- [HuggingFace de esta versión cuantizada](https://huggingface.co/zhiqian99/Qwen3-Embedding-0.6B-GGUF)
-- [HuggingFace del modelo original Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B)
-- [HuggingFace de la versión GGUF oficial de Qwen](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF)
+- [Hugging Face de esta versión cuantizada](https://huggingface.co/zhiqian99/Qwen3-Embedding-0.6B-GGUF)
+- [Hugging Face del modelo original Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B)
+- [Hugging Face de la versión GGUF oficial de Qwen](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF)
 - [Repositorio GitHub de Qwen3-Embedding](https://github.com/QwenLM/Qwen3-Embedding)
 - [Información adicional en Aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/qwen3-embedding-0.6b-gguf-qwen)
 - [Ficha en Inferix](https://inferix.co/models/Qwen/Qwen3-Embedding-0.6B-GGUF)

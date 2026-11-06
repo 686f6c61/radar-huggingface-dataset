@@ -79,9 +79,9 @@ Ajustes de inferencia empleados: modo instruct con temperatura 0 y presupuesto d
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-120traj | 8B (base) + adaptador LoRA | No disponible (entrenamiento a 8.192 tokens) | 90,23 % en tareas vistas; 77,00 % en held-out (FSM, bucle cerrado) | Adaptador sin licencia asignada; base Apache-2.0 | HuggingFace, PEFT, 0 descargas |
-| Qwen/Qwen3-VL-8B-Thinking (modelo base) | 8B | No disponible en la información proporcionada | No disponible para las tareas RoboTalk sin ajuste | Apache-2.0 | HuggingFace |
-| Otros adaptadores RoboTalk del mismo autor | 8B (base) + LoRA | No disponible | No disponible | No disponible | HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-120traj | 8B (base) + adaptador LoRA | No disponible (entrenamiento a 8.192 tokens) | 90,23 % en tareas vistas; 77,00 % en held-out (FSM, bucle cerrado) | Adaptador sin licencia asignada; base Apache-2.0 | Hugging Face, PEFT, 0 descargas |
+| Qwen/Qwen3-VL-8B-Thinking (modelo base) | 8B | No disponible en la información proporcionada | No disponible para las tareas RoboTalk sin ajuste | Apache-2.0 | Hugging Face |
+| Otros adaptadores RoboTalk del mismo autor | 8B (base) + LoRA | No disponible | No disponible | No disponible | Hugging Face |
 | Otros modelos de coordinación multiagente | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos publicados en la información proporcionada para comparar con alternativas de la misma categoría (por ejemplo, otros adaptadores o modelos de planificación multiagente).
@@ -102,7 +102,7 @@ No se dispone de datos publicados en la información proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-120traj
+- Modelo en Hugging Face: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-120traj
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Búsqueda web: los resultados devueltos corresponden a páginas de ayuda de Gmail y no guardan relación con el modelo; no se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

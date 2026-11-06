@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks de rollout en la informacion dispon
 |---|---|---|---|---|---|
 | Shortstop VTP Small — sticky pad (este modelo) | no disponible | 5 fotogramas causales (0,25 s) | Captura dinámica con almohadilla adhesiva | dinov3-license | Peso público; runtime privado requerido |
 | VTP B16/6-épocas (modelo anterior del mismo autor) | no disponible | no disponible | Misma tarea | no disponible | Pesos eliminados; solo se cita su 3/40 de éxito |
-| facebook/dinov3-vits16-pretrain-lvd1689m | no disponible | no aplica (encoder visual) | Representación visual general | dinov3-license | Público en HuggingFace |
+| facebook/dinov3-vits16-pretrain-lvd1689m | no disponible | no aplica (encoder visual) | Representación visual general | dinov3-license | Público en Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (políticas visomotoras para captura dinámica) en la documentación proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeonghuJeon/shortstop-vtp-small-sticky-ctx025-b64
+- Modelo en Hugging Face: https://huggingface.co/SeonghuJeon/shortstop-vtp-small-sticky-ctx025-b64
 - Licencia DINOv3: https://huggingface.co/SeonghuJeon/shortstop-vtp-small-sticky-ctx025-b64/blob/main/LICENSE_DINOV3.md
 - Modelo base DINOv3 ViT-S/16: https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m
 - PR del benchmark Shortstop (acceso restringido): https://github.com/worv-ai/worv/pull/124

@@ -69,5 +69,5 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Exile051112/franka-pico4-smolvla-base
+- Repositorio Hugging Face: https://huggingface.co/Exile051112/franka-pico4-smolvla-base
 - Documentación de SmolVLA en LeRobot: https://github.com/hurobomaster/Franka_lerobot/blob/main/docs/source/smolvla.mdx

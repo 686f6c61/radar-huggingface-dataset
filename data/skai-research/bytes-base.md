@@ -76,10 +76,10 @@ No existen benchmarks compartidos con alternativas en la información proporcion
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
-| skai-research/bytes-base | Transformer plano byte-level, sin tokenizador | 374M | 4096 bytes | Apache 2.0 | safetensors en HuggingFace, carga con código propio |
+| skai-research/bytes-base | Transformer plano byte-level, sin tokenizador | 374M | 4096 bytes | Apache 2.0 | safetensors en Hugging Face, carga con código propio |
 | ByT5 (Google Research) | Transformer encoder-decoder sobre bytes UTF-8 | 580M (variante base) | 1024 bytes en configuración estándar | Apache 2.0 | Pesos abiertos, integración en `transformers` |
 | Pythia-410M (EleutherAI) | Transformer decoder con tokenizador BPE | 410M | 2048 tokens | Apache 2.0 | Pesos abiertos, integración en `transformers` |
-| SmolLM2-360M (HuggingFace) | Transformer decoder con tokenizador BPE | 360M | 8192 tokens | Apache 2.0 | Pesos abiertos, integración en `transformers` |
+| SmolLM2-360M (Hugging Face) | Transformer decoder con tokenizador BPE | 360M | 8192 tokens | Apache 2.0 | Pesos abiertos, integración en `transformers` |
 
 La diferencia clave frente a los tres alternativos no es de tamaño, sino de unidad de procesado: bytes frente a tokens. Eso implica mayor coste por carácter, pero independencia total del vocabulario y de las decisiones de normalización. Frente a ByT5, además, `bytes-base` es decoder-only y está pensado para modelado autoregresivo, no para tareas de secuencia a secuencia.
 
@@ -98,7 +98,7 @@ La diferencia clave frente a los tres alternativos no es de tamaño, sino de uni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skai-research/bytes-base
+- Modelo en Hugging Face: https://huggingface.co/skai-research/bytes-base
 - Artículo: *Dynamic Multi-Byte Prediction With Hierarchical Language Models*, arXiv:2608.15454 — https://arxiv.org/abs/2608.15454
 - Repositorio de código: https://github.com/skai-research/lca-multibyte
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

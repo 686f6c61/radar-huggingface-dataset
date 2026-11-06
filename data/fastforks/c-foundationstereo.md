@@ -88,8 +88,8 @@ Tiempos de carga y primera llamada (375x1242): `c-fast-foundationstereo` carga e
 
 | Modelo | Parametros | Enfoque | Iteraciones | Licencia comercial | Disponibilidad |
 |---|---|---|---|---|---|
-| `c-fast-foundationstereo` | no disponible | EdgeNeXt + ConvGRU destilado | 8 | Sí (NVIDIA Open Model Agreement) | HuggingFace (NVIDIA) |
-| `c-foundationstereo-s` | no disponible | DepthAnything ViT-S + CNN + ConvGRU | 22 | Sí (NVIDIA Open Model License) | HuggingFace (NVIDIA) |
+| `c-fast-foundationstereo` | no disponible | EdgeNeXt + ConvGRU destilado | 8 | Sí (NVIDIA Open Model Agreement) | Hugging Face (NVIDIA) |
+| `c-foundationstereo-s` | no disponible | DepthAnything ViT-S + CNN + ConvGRU | 22 | Sí (NVIDIA Open Model License) | Hugging Face (NVIDIA) |
 | `fast-foundationstereo` | no disponible | EdgeNeXt + ConvGRU (investigacion) | 8 | No (NVIDIA Source Code License NC) | Google Drive |
 | CREStereo (Megvii) | no disponible | Cascaded recurrent network | no disponible | no disponible | Repositorio original |
 | RAFT-Stereo | no disponible | Recurrent All-Pairs Field Transforms | no disponible | no disponible | Repositorio original |
@@ -101,7 +101,7 @@ No se dispone de métricas de precisión comparativas (EPE, D1) en la informaci�
 - Requiere pares estéreo rectificados y calibrados; no funciona con imágenes individuales ni con pares sin rectificar.
 - La licencia es mixta y varía por variante: `fast-foundationstereo` es estrictamente no comercial, mientras que las otras dos permiten uso comercial pero con términos que deben revisarse (la model card de `c-fast-foundationstereo` contiene una contradicción entre "research and evaluation purposes only" y el NVIDIA Open Model Agreement; fastforks indica que sigue los términos del acuerdo).
 - Los términos de uso comercial de modelos entrenados sobre el dataset FSD de NVIDIA no están claros según la propia model card.
-- El repositorio no aloja pesos: depende de enlaces externos (HuggingFace de NVIDIA y Google Drive) y de la verificación SHA-256; si los enlaces cambian o desaparecen, el modelo deja de ser reproducible.
+- El repositorio no aloja pesos: depende de enlaces externos (Hugging Face de NVIDIA y Google Drive) y de la verificación SHA-256; si los enlaces cambian o desaparecen, el modelo deja de ser reproducible.
 - Resolución máxima probada: 1988x2880; en 12 MP (4000x3000) el backend `portable` produce OOM y el backend `kernels` requiere ~8,7 GiB.
 - No se documentan sesgos específicos, pero al ser un modelo entrenado mayoritariamente con datos sintéticos (FSD, CREStereo) puede presentar degradación en escenas reales con condiciones de iluminación, texturas repetitivas o superficies sin textura.
 - Riesgo de alucinación en regiones ocluidas o sin correspondencia: el mapa de disparidad puede contener valores erróneos que deben filtrarse con máscaras de confianza.
@@ -110,7 +110,7 @@ No se dispone de métricas de precisión comparativas (EPE, D1) en la informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fastforks/c-foundationstereo
+- Repositorio Hugging Face: https://huggingface.co/fastforks/c-foundationstereo
 - Pesos `c-fast-foundationstereo`: https://huggingface.co/nvidia/c-fast-foundationstereo
 - Pesos `c-foundationstereo-s`: https://huggingface.co/nvidia/c-foundationstereo-s
 - Pesos `fast-foundationstereo` (Google Drive): https://drive.usercontent.google.com/download?export=download&confirm=t&id=1W1V1H64l9bAi97boEQQ2ueNzzGmSMz-E

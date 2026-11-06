@@ -6,7 +6,7 @@
 
 PYTHAI/GLM-5.2-fork no es un modelo entrenado ni un ajuste fino: es un fork puntero con la licencia bloqueada (*licence-locked pointer fork*) del checkpoint zai-org/GLM-5.2 en el commit `cf457fa734ab149ffef225f80893eb38c6ff5cdc`, capturado el 13 de septiembre de 2026. El repositorio conserva unicamente la LICENSE, la configuracion, el tokenizer y el codigo de ese commit exacto, con digests SHA-256 en FORK.json; no almacena ningun peso. Los 282 archivos de pesos, que suman 1506,7 GB, permanecen en el repositorio de origen. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 me gusta en el momento de la consulta.
 
-El modelo subyacente, GLM-5.2, es el modelo insignia de zai-org (Z.ai) para tareas de horizonte largo y sucede a GLM-5.1. Su rasgo mas citado es un contexto solido de 1.000.000 de tokens, junto con una arquitectura MoE de atencion dispersa (etiqueta `glm_moe_dsa` en HuggingFace) que incorpora la tecnica IndexShare, publicada en el articulo arXiv 2603.12201: se reutiliza el mismo indexador en cada cuatro capas de atencion dispersa, lo que reduce los FLOPs por token en 2,9 veces con contexto de 1M. Se distribuye bajo licencia MIT, sin restricciones regionales declaradas, con pesos en safetensors.
+El modelo subyacente, GLM-5.2, es el modelo insignia de zai-org (Z.ai) para tareas de horizonte largo y sucede a GLM-5.1. Su rasgo mas citado es un contexto solido de 1.000.000 de tokens, junto con una arquitectura MoE de atencion dispersa (etiqueta `glm_moe_dsa` en Hugging Face) que incorpora la tecnica IndexShare, publicada en el articulo arXiv 2603.12201: se reutiliza el mismo indexador en cada cuatro capas de atencion dispersa, lo que reduce los FLOPs por token en 2,9 veces con contexto de 1M. Se distribuye bajo licencia MIT, sin restricciones regionales declaradas, con pesos en safetensors.
 
 Su relevancia practica es doble. Por un lado, GLM-5.2 es una de las referencias abiertas en codificacion agentica y uso de herramientas (62,1 en SWE-bench Pro, 81,0 en Terminal Bench 2.1 con Terminus-2, 76,8 en MCP-Atlas). Por otro, este fork concreto responde a una necesidad de gobernanza y reproducibilidad: fija por commit la licencia y la configuracion del modelo para auditorias, pero obliga a cargar los pesos desde el repositorio original, apuntando a la revision exacta mediante `revision="cf457fa734ab149ffef225f80893eb38c6ff5cdc"`.
 
@@ -14,7 +14,7 @@ Su relevancia practica es doble. Por un lado, GLM-5.2 es una de las referencias 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE con atencion dispersa; etiqueta de HuggingFace `glm_moe_dsa`. Incorpora IndexShare (indexador compartido cada cuatro capas de atencion dispersa) y capa MTP para decodificacion especulativa |
+| Arquitectura | MoE con atencion dispersa; etiqueta de Hugging Face `glm_moe_dsa`. Incorpora IndexShare (indexador compartido cada cuatro capas de atencion dispersa) y capa MTP para decodificacion especulativa |
 | Parametros totales | no disponible (el autor no publica el recuento; el repositorio de origen contiene 282 archivos de pesos que suman 1506,7 GB) |
 | Parametros activos | no disponible (la arquitectura es MoE, pero no se especifica el numero de parametros activos por token) |
 | Longitud de contexto | 1.000.000 de tokens (contexto solido declarado por el autor) |
@@ -30,7 +30,7 @@ Su relevancia practica es doble. Por un lado, GLM-5.2 es una de las referencias 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer con mezcla de expertos (MoE) y atencion dispersa, identificada en el ecosistema de HuggingFace como `glm_moe_dsa`. Sobre esa base, GLM-5.2 introduce dos innovaciones descritas por el autor. La primera es IndexShare, que reutiliza el mismo indexador en cada cuatro capas de atencion dispersa y reduce los FLOPs por token en 2,9 veces a una longitud de contexto de 1M. La segunda es una mejora de la capa MTP (*multi-token prediction*) empleada para decodificacion especulativa, que eleva la longitud de aceptacion hasta un 20 %, es decir, permite validar mas tokens por paso de verificacion.
+La arquitectura es un transformer con mezcla de expertos (MoE) y atencion dispersa, identificada en el ecosistema de Hugging Face como `glm_moe_dsa`. Sobre esa base, GLM-5.2 introduce dos innovaciones descritas por el autor. La primera es IndexShare, que reutiliza el mismo indexador en cada cuatro capas de atencion dispersa y reduce los FLOPs por token en 2,9 veces a una longitud de contexto de 1M. La segunda es una mejora de la capa MTP (*multi-token prediction*) empleada para decodificacion especulativa, que eleva la longitud de aceptacion hasta un 20 %, es decir, permite validar mas tokens por paso de verificacion.
 
 No se dispone de informacion publicada en los materiales consultados sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre si se aplicaron tecnicas de alineacion como RLHF o DPO. El autor describe niveles de esfuerzo de razonamiento (*thinking effort levels*) configurables, pensados para equilibrar rendimiento y latencia en tareas de codificacion, lo que implica una fase de postentrenamiento orientada a ese control, pero sin detalle tecnico en la model card. Del mismo modo, se declara el uso de parametros de muestreo concretos en evaluacion (temperatura 1,0 y top_p 0,95, con longitud maxima de generacion de 163.840 tokens) y GPT-5.5 en modo medium como modelo juez, dato util para reproducir la evaluacion pero no para reconstruir el entrenamiento.
 
@@ -134,7 +134,7 @@ Frente a los modelos propietarios incluidos en la misma tabla, Claude Opus 4.8 (
 - Blog de GLM-5.2: https://z.ai/blog/glm-5.2
 - Articulo tecnico de GLM-5: https://arxiv.org/abs/2602.15763
 - Articulo de IndexShare: https://arxiv.org/abs/2603.12201
-- Ficha del articulo en HuggingFace: https://huggingface.co/papers/2602.15763
+- Ficha del articulo en Hugging Face: https://huggingface.co/papers/2602.15763
 - Repositorio en GitHub: https://github.com/zai-org/GLM-5
 - Documentacion de la API: https://docs.z.ai/guides/llm/glm-5.2
 - Demo de chat: https://chat.z.ai

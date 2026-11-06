@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_SWITCH-2-bottom-clean_v2 es un modelo de aprendizaje por imitación para robótica, basado en la arquitectura Action Chunking with Transformers (ACT), entrenado por el desarrollador lenawngr sobre el conjunto de datos SWITCH-2-bottom_clean. El modelo se publica bajo licencia Apache-2.0 y se distribuye a través del ecosistema LeRobot de HuggingFace, lo que permite reproducir el entrenamiento, evaluar la política y desplegarla en robots físicos de forma estandarizada.
+ACT_SWITCH-2-bottom-clean_v2 es un modelo de aprendizaje por imitación para robótica, basado en la arquitectura Action Chunking with Transformers (ACT), entrenado por el desarrollador lenawngr sobre el conjunto de datos SWITCH-2-bottom_clean. El modelo se publica bajo licencia Apache-2.0 y se distribuye a través del ecosistema LeRobot de Hugging Face, lo que permite reproducir el entrenamiento, evaluar la política y desplegarla en robots físicos de forma estandarizada.
 
 ACT es un método de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de pasos individuales, lo que reduce el error de acumulación en tareas de manipulación de corta duración. Este modelo concreto se centra en una tarea de manipulación sobre un robot SO-100, probablemente relacionada con la manipulación de un interruptor (el nombre del dataset sugiere una tarea de limpieza o activación de un elemento inferior). El modelo cuenta con 51,6 millones de parámetros y se entrena a partir de datos teleoperados, alcanzando altas tasas de éxito en tareas de manipulación.
 

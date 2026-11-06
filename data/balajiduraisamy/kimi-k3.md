@@ -6,7 +6,7 @@ Kimi K3 es un modelo de lenguaje multimodal de código abierto desarrollado por 
 
 El modelo se basa en una arquitectura híbrida que combina Kimi Delta Attention (KDA), un mecanismo de atención lineal híbrido, con Attention Residuals, junto con un enfoque de mezcla de expertos (MoE) multimodal. Incorpora visión nativa y una ventana de contexto de 1 millón de tokens, lo que lo posiciona para escenarios de agente autónomo, uso de herramientas y razonamiento multi-paso.
 
-Su relevancia actual radica en ser el primer modelo abierto de esta escala, con capacidades de comprensión de imágenes, generación de código y uso de herramientas, disponible a través de plataformas como NVIDIA NIM y la API de Kimi. El repositorio en HuggingFace tiene acceso restringido (gated) y está alojado por un tercero (balajiduraisamy), no por Moonshot AI directamente.
+Su relevancia actual radica en ser el primer modelo abierto de esta escala, con capacidades de comprensión de imágenes, generación de código y uso de herramientas, disponible a través de plataformas como NVIDIA NIM y la API de Kimi. El repositorio en Hugging Face tiene acceso restringido (gated) y está alojado por un tercero (balajiduraisamy), no por Moonshot AI directamente.
 
 ## Especificaciones técnicas
 
@@ -63,16 +63,16 @@ No se dispone de datos comparativos específicos en la información proporcionad
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated) en HuggingFace: requiere aceptar condiciones adicionales antes de poder descargar el modelo.
+- Acceso restringido (gated) en Hugging Face: requiere aceptar condiciones adicionales antes de poder descargar el modelo.
 - Licencia kimi-k3: se debe revisar si permite uso comercial y qué restricciones impone, ya que es una licencia personalizada.
 - El tamaño del modelo (2,8T parámetros) hace que la inferencia sea extremadamente costosa y solo viable en infraestructura de nivel centro de datos, limitando su adopción a organizaciones con recursos significativos.
 - No se dispone de información sobre sesgos, riesgos de alucinación o limitaciones idiomáticas específicas en la información proporcionada.
 - La cuantización de 8 bits puede degradar la calidad de las respuestas en comparación con la precisión completa.
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que es un mirror de terceros y no el repositorio oficial de Moonshot AI.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que es un mirror de terceros y no el repositorio oficial de Moonshot AI.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/balajiduraisamy/Kimi-K3
+- Repositorio Hugging Face: https://huggingface.co/balajiduraisamy/Kimi-K3
 - Pagina oficial de Kimi K3: https://www.kimi.ai/ai-models/kimi-k3
 - NVIDIA NIM: https://build.nvidia.com/moonshotai/kimi-k3
 - openlm.ai: https://openlm.ai/kimi-k3/

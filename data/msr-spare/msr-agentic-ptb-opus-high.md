@@ -86,7 +86,7 @@ No se dispone de informacion sobre modelos directamente comparables, ya que se t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/msr-spare/msr-agentic-ptb-opus-high
+- Repositorio Hugging Face: https://huggingface.co/msr-spare/msr-agentic-ptb-opus-high
 - Write-up del experimento (Claude artifact): https://claude.ai/code/artifact/95e75b6b-a5cd-4172-b165-c9f4d0673b25
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Referencia a benchmarks de agentes (mencionada en busquedas): https://subscriptions.msrresearch.com/reports/tech-scout/2026-04-21 (informacion sobre Claude Opus 4.7 en SWE-bench)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Promt-generator es un modelo de generación de texto publicado por el usuario bob-cob en HuggingFace, derivado o vinculado al proyecto UnfilteredAI según su model card. Su propósito declarado es generar prompts para modelos texto-a-imagen (Stable Diffusion y similares), es decir, producir descripciones textuales ricas y variadas que luego se usan como entrada de un generador de imágenes. Se distribuye con pesos en formato safetensors y PyTorch, con licencia MIT.
+Promt-generator es un modelo de generación de texto publicado por el usuario bob-cob en Hugging Face, derivado o vinculado al proyecto UnfilteredAI según su model card. Su propósito declarado es generar prompts para modelos texto-a-imagen (Stable Diffusion y similares), es decir, producir descripciones textuales ricas y variadas que luego se usan como entrada de un generador de imágenes. Se distribuye con pesos en formato safetensors y PyTorch, con licencia MIT.
 
-El modelo tiene 559.214.592 parámetros totales (aproximadamente 559 millones), lo que lo sitúa en la gama de modelos pequeños tipo BLOOM-560M, coherente con la arquitectura `bloom` indicada en los tags de HuggingFace. El repositorio ocupa 4,5 GB, un tamaño desproporcionado para ese número de parámetros, lo que sugiere pesos en fp32 o la inclusión de ficheros adicionales.
+El modelo tiene 559.214.592 parámetros totales (aproximadamente 559 millones), lo que lo sitúa en la gama de modelos pequeños tipo BLOOM-560M, coherente con la arquitectura `bloom` indicada en los tags de Hugging Face. El repositorio ocupa 4,5 GB, un tamaño desproporcionado para ese número de parámetros, lo que sugiere pesos en fp32 o la inclusión de ficheros adicionales.
 
 La relevancia de este modelo es limitada en el ecosistema actual: no tiene descargas ni likes, no se han publicado benchmarks, la model card es genérica y no documenta datos de entrenamiento ni evaluación. Debe tratarse como un experimento o publicación de bajo perfil, no como un modelo listo para producción sin una evaluación propia previa.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bob-cob/Promt-generator | 559M | no disponible | MIT | HuggingFace, 0 descargas | Sin benchmarks ni documentación de entrenamiento |
-| bigscience/bloom-560m | 560M | 2048 tokens | BigScience RAIL | HuggingFace, ampliamente usado | Modelo base multilingüe con documentación completa |
-| google/flan-t5-base | 220M (encoder-decoder) | 512 tokens | Apache 2.0 | HuggingFace | Orientado a instrucciones, no a prompts de imagen |
-| microsoft/phi-1_5 | 1,3B | 2048 tokens | MIT | HuggingFace | Enfocado a código, mayor tamaño |
+| bob-cob/Promt-generator | 559M | no disponible | MIT | Hugging Face, 0 descargas | Sin benchmarks ni documentación de entrenamiento |
+| bigscience/bloom-560m | 560M | 2048 tokens | BigScience RAIL | Hugging Face, ampliamente usado | Modelo base multilingüe con documentación completa |
+| google/flan-t5-base | 220M (encoder-decoder) | 512 tokens | Apache 2.0 | Hugging Face | Orientado a instrucciones, no a prompts de imagen |
+| microsoft/phi-1_5 | 1,3B | 2048 tokens | MIT | Hugging Face | Enfocado a código, mayor tamaño |
 
 La comparación directa más razonable es con BLOOM-560M, del que probablemente deriva, y con modelos pequeños orientados a instrucciones. La ventaja de este checkpoint es su licencia MIT permisiva; la desventaja es la ausencia total de evaluación y documentación frente a alternativas consolidadas.
 
@@ -87,4 +87,4 @@ La comparación directa más razonable es con BLOOM-560M, del que probablemente 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bob-cob/Promt-generator
+- Hugging Face: https://huggingface.co/bob-cob/Promt-generator

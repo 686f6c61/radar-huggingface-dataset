@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Schwick es un repositorio publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Schwick`. La informacion publica disponible es minima: unicamente la licencia (cc-by-4.0), la region declarada (us) y el tamano del repositorio (0,1 GB). La model card no contiene ningun texto descriptivo, mas alla del campo `license`, por lo que no se puede confirmar que tipo de artefacto contiene (modelo completo, adaptador, tokenizador o conjunto auxiliar).
+Schwick es un repositorio publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Schwick`. La informacion publica disponible es minima: unicamente la licencia (cc-by-4.0), la region declarada (us) y el tamano del repositorio (0,1 GB). La model card no contiene ningun texto descriptivo, mas alla del campo `license`, por lo que no se puede confirmar que tipo de artefacto contiene (modelo completo, adaptador, tokenizador o conjunto auxiliar).
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni proceso de entrenamiento. Tampoco hay resultados de benchmarks, demos, papers ni documentacion tecnica asociada. Las busquedas web realizadas no devuelven ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a herramientas suizas de generacion de presupuestos ("Offerte"), sin ninguna conexion con este repositorio.
 
@@ -94,7 +94,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Schwick
+- Hugging Face: https://huggingface.co/Ryanham1lton/Schwick
 - Model card: sin contenido descriptivo (unicamente el campo `license: cc-by-4.0`)
 - Paper: no disponible
 - Blog o anuncio: no disponible

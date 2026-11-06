@@ -4,7 +4,7 @@
 
 MyAwesomeModel es un modelo de tipo BERT desarrollado por el usuario liufeftwer145, diseñado con el objetivo de mejorar las capacidades de razonamiento e inferencia respecto a los modelos BERT estándar. El checkpoint `step_1000` representa el paso final de entrenamiento y ha sido seleccionado como el mejor según las evaluaciones internas del autor, alcanzando una puntuación ponderada global de 0,712.
 
-El modelo se distribuye bajo licencia MIT y es compatible con la librería transformers de HuggingFace, lo que facilita su integración en pipelines existentes de procesamiento de lenguaje natural. Su relevancia radica en que ofrece un punto de partida para tareas de extracción de características y fine-tuning en dominios específicos, aunque la información pública disponible es limitada y no se especifican detalles clave como el número de parámetros o la longitud de contexto.
+El modelo se distribuye bajo licencia MIT y es compatible con la librería transformers de Hugging Face, lo que facilita su integración en pipelines existentes de procesamiento de lenguaje natural. Su relevancia radica en que ofrece un punto de partida para tareas de extracción de características y fine-tuning en dominios específicos, aunque la información pública disponible es limitada y no se especifican detalles clave como el número de parámetros o la longitud de contexto.
 
 Cabe destacar que la ficha pública del modelo es escasa en detalles técnicos. No se proporcionan datos sobre la arquitectura interna más allá de su base BERT, ni información sobre el dataset de entrenamiento, el número de tokens procesados o el proceso de alineación. La evaluación presentada cubre 15 categorías de benchmarks, con resultados que oscilan entre 0,550 en razonamiento matemático y 0,828 en clasificación de texto.
 
@@ -94,7 +94,7 @@ No se dispone de información específica sobre requisitos de hardware para este
 - Un BERT-base (110M parámetros) en FP16 requiere aproximadamente 0,5 GB de VRAM para inferencia, mientras que un BERT-large (340M parámetros) necesita alrededor de 1,3 GB.
 - En cuantización INT8, los requisitos se reducen aproximadamente un 25-30%.
 - GPUs de consumo como la RTX 3060 (12 GB) o superiores pueden ejecutar el modelo sin problemas.
-- Para despliegue en producción, se recomienda usar HuggingFace Inference Endpoints, o frameworks como ONNX Runtime o TensorRT para optimizar la latencia.
+- Para despliegue en producción, se recomienda usar Hugging Face Inference Endpoints, o frameworks como ONNX Runtime o TensorRT para optimizar la latencia.
 - Al ser un modelo de tipo encoder, el throughput es generalmente alto, procesando cientos de secuencias por segundo en GPUs modernas.
 
 ## Comparativa con modelos similares
@@ -114,7 +114,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liufeftwer145/MyAwesomeModel-step1000
+- Modelo en Hugging Face: https://huggingface.co/liufeftwer145/MyAwesomeModel-step1000
 - Repositorio del autor (variante): https://huggingface.co/liufeng145/MyAwesomeModel-step_1000
 - Repositorio relacionado: https://huggingface.co/dsfsf445/MyAwesomeModel
 - Entrada en free2aitools.com: https://free2aitools.com/model/zxc1esacxzcas/myawesomemodel-step_1000

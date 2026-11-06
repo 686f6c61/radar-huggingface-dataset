@@ -80,7 +80,7 @@ El paquete EELML es una compilacion del modelo pequeno de la familia E5, con las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niefeng/eelml-multilingual-e5-small-mlx-fp16
+- Modelo en Hugging Face: https://huggingface.co/niefeng/eelml-multilingual-e5-small-mlx-fp16
 - Modelo original upstream: https://huggingface.co/intfloat/multilingual-e5-small
 - Paper E5 (arXiv): https://arxiv.org/abs/2212.03533
 - Documentacion de Elastic sobre E5: https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-e5

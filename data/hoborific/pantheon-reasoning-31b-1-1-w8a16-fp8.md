@@ -23,7 +23,7 @@ Esta cuantización es relevante porque permite desplegar un modelo de razonamien
 
 ## Arquitectura y entrenamiento
 
-El modelo es una versión cuantizada del modelo base Gryphe/Pantheon-Reasoning-31B-1.1, que a su vez se basa en la arquitectura Gemma 4 (según el tag gemma4 en HuggingFace). El modelo original incorpora mecanismos de razonamiento con "thinking traces", que permiten al modelo planificar y razonar antes de generar respuestas, especialmente útil en tareas de roleplay. No se dispone de información detallada sobre los datos de entrenamiento, el número de tokens o los métodos de alineación (RLHF/DPO).
+El modelo es una versión cuantizada del modelo base Gryphe/Pantheon-Reasoning-31B-1.1, que a su vez se basa en la arquitectura Gemma 4 (según el tag gemma4 en Hugging Face). El modelo original incorpora mecanismos de razonamiento con "thinking traces", que permiten al modelo planificar y razonar antes de generar respuestas, especialmente útil en tareas de roleplay. No se dispone de información detallada sobre los datos de entrenamiento, el número de tokens o los métodos de alineación (RLHF/DPO).
 
 La cuantización se realizó offline con el formato W8A16 FP8 de compressed-tensors. Los pesos se convierten a float8_e4m3fn con escalas simétricas por canal de salida, calculadas mediante una búsqueda de clip basada en el error cuadrático medio (MSE) sobre aproximadamente 9 fracciones de clip (0.8-1.0× amax). Solo se cuantizan las proyecciones lineales 2D (attention q/k/v/o y MLP gate/up/down); embeddings, normas, lm_head, routers/experts y la torre de visión permanecen en bf16. Esta estrategia busca minimizar la pérdida de precisión frente a métodos de cuantización online como el per-tensor de vLLM.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/hoborific/Pantheon-Reasoning-31B-1.1-W8A16-FP8)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/hoborific/Pantheon-Reasoning-31B-1.1-W8A16-FP8)
 - [Modelo base Gryphe/Pantheon-Reasoning-31B-1.1](https://huggingface.co/Gryphe/Pantheon-Reasoning-31B-1.1)
 - [Búsqueda de modelos cuantizados de Pantheon-Reasoning-31B-1.1](https://huggingface.co/models?other=base_model:quantized:Gryphe/Pantheon-Reasoning-31B-1.1)
 - [Arquitectura del modelo base (hfviewer)](https://hfviewer.com/Gryphe/Pantheon-Reasoning-31B-1.1)

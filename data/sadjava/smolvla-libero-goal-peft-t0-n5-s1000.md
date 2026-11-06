@@ -59,7 +59,7 @@ Estas cifras son orientativas y no provienen de la documentación del adaptador.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este adaptador con otras alternativas. El modelo base SmolVLA tiene variantes y otros adaptadores en HuggingFace, pero no se han encontrado datos concretos en la información proporcionada.
+No se dispone de información suficiente para comparar este adaptador con otras alternativas. El modelo base SmolVLA tiene variantes y otros adaptadores en Hugging Face, pero no se han encontrado datos concretos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -72,5 +72,5 @@ No se dispone de información suficiente para comparar este adaptador con otras 
 
 ## Enlaces
 
-- [HuggingFace: sadjava/smolvla-libero-goal-peft-t0-n5-s1000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n5-s1000)
+- [Hugging Face: sadjava/smolvla-libero-goal-peft-t0-n5-s1000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n5-s1000)
 - No se encontraron enlaces adicionales (papers, blogs, repos) en la información proporcionada.

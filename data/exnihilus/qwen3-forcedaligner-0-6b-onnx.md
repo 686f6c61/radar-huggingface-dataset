@@ -6,7 +6,7 @@ Qwen3-ForcedAligner-0.6B-ONNX es una conversion al formato ONNX del modelo Qwen/
 
 El modelo resuelve un problema muy concreto: dado un audio y su transcripcion, determinar las marcas temporales exactas de cada palabra o segmento (forced alignment). Esto es la base tecnica de la sincronizacion de subtitulos, el doblaje, el karaoke con resaltado palabra a palabra y la anotacion de corpus de voz. Al estar en formato ONNX y cuantizado a 4 bits, esta variante esta pensada para inferencia local ligera, integrable en aplicaciones de escritorio o en motores como Unity, con un consumo de VRAM que la pagina de referencia cifra en 2,1 GB en BF16 y 0,5 GB en INT4.
 
-Su relevancia practica es doble: por un lado, traslada un modelo de la familia Qwen3-ASR a un runtime portable (ONNX), lo que elimina la dependencia de Python y de GPUs de gama alta; por otro, sirve como ejemplo de distribucion de pesos anclados a una revision concreta para garantizar reproducibilidad en aplicaciones que no pueden permitirse cambios silenciosos del modelo. Se trata de un espejo con muy poca traccion en HuggingFace (17 descargas y 0 likes en el momento de la consulta), por lo que su validacion comunitaria es practicamente nula.
+Su relevancia practica es doble: por un lado, traslada un modelo de la familia Qwen3-ASR a un runtime portable (ONNX), lo que elimina la dependencia de Python y de GPUs de gama alta; por otro, sirve como ejemplo de distribucion de pesos anclados a una revision concreta para garantizar reproducibilidad en aplicaciones que no pueden permitirse cambios silenciosos del modelo. Se trata de un espejo con muy poca traccion en Hugging Face (17 descargas y 0 likes en el momento de la consulta), por lo que su validacion comunitaria es practicamente nula.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, ni de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ExNihilus/Qwen3-ForcedAligner-0.6B-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/ExNihilus/Qwen3-ForcedAligner-0.6B-ONNX
 - Conversion original: https://huggingface.co/tonythethompson/Qwen3-ForcedAligner-0.6B-ONNX
 - Revision anclada de la conversion original: https://huggingface.co/tonythethompson/Qwen3-ForcedAligner-0.6B-ONNX/tree/dfae9e3dfb8a00410d8771158fafb01bac3fe2a5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B

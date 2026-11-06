@@ -64,6 +64,6 @@ No se dispone de datos comparativos con otros detectores de matrículas (por eje
 - Para producción, se recomienda validar el modelo con un conjunto de datos local y considerar técnicas de cuantización para reducir aún más el consumo de recursos.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/capinowo/skripsi-yolo12n-cbam-spatial-checkpoint-50e-finetuned-75e
+- Repositorio Hugging Face: https://huggingface.co/capinowo/skripsi-yolo12n-cbam-spatial-checkpoint-50e-finetuned-75e
 - Dataset de fine-tuning: https://huggingface.co/datasets/duydieunguyen/licenseplates
 - Checkpoint original: https://huggingface.co/capinowo/skripsi-yolo12n-cbam-spatial-checkpoint-50e

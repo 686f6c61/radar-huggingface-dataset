@@ -2,7 +2,7 @@
 
 ## Resumen
 
-neura-care-assistant es un ajuste fino (fine-tune) del modelo Llama-3.2-1B-Instruct, desarrollado por el usuario nashmiaadnan y publicado en HuggingFace. Se trata, por tanto, de un modelo decoder-only tipo transformer de aproximadamente 1.235 millones de parametros (1,24 B), derivado de la version ya cuantizada a 4 bits del instructivo de Meta (unsloth/Llama-3.2-1B-Instruct-bnb-4bit) y entrenado con la libreria Unsloth junto con TRL de HuggingFace.
+neura-care-assistant es un ajuste fino (fine-tune) del modelo Llama-3.2-1B-Instruct, desarrollado por el usuario nashmiaadnan y publicado en Hugging Face. Se trata, por tanto, de un modelo decoder-only tipo transformer de aproximadamente 1.235 millones de parametros (1,24 B), derivado de la version ya cuantizada a 4 bits del instructivo de Meta (unsloth/Llama-3.2-1B-Instruct-bnb-4bit) y entrenado con la libreria Unsloth junto con TRL de Hugging Face.
 
 El nombre del repositorio sugiere un proposito de asistente conversacional orientado al ambito de cuidados o salud ("neura-care"), aunque la model card no documenta el conjunto de datos de entrenamiento, el procedimiento de ajuste ni el dominio concreto. La unica informacion tecnica declarada por el autor es el modelo base, la licencia apache-2.0 y el uso de Unsloth, que segun el propio autor permitio entrenar "2x mas rapido".
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada pero clara: al ser un modelo de 1,24 B de par
 
 La arquitectura subyacente es la de Llama 3.2 1B: un transformer decoder-only con normalizacion RMSNorm pre-norm, activacion SwiGLU en las capas feed-forward, embeddings de entrada y salida atados (tied embeddings) y atencion con query grouping (GQA) para reducir el coste de la cache KV. El vocabulario es de 128.256 tokens y el modelo emplea RoPE con una base alta para sostener ventanas de contexto largas. El fine-tune no modifica esta arquitectura: solo ajusta los pesos.
 
-En cuanto al entrenamiento, la model card unicamente indica que el modelo se entreno con Unsloth y TRL de HuggingFace, con una mejora de velocidad declarada de 2x, y que parte de unsloth/Llama-3.2-1B-Instruct-bnb-4bit. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT adicionales, la hiperparametrizacion (learning rate, LoRA rank, epocas) ni el metodo de exportacion de los adaptadores. Tampoco se documenta ninguna innovacion tecnica propia mas alla del uso de Unsloth para el ajuste eficiente en memoria.
+En cuanto al entrenamiento, la model card unicamente indica que el modelo se entreno con Unsloth y TRL de Hugging Face, con una mejora de velocidad declarada de 2x, y que parte de unsloth/Llama-3.2-1B-Instruct-bnb-4bit. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT adicionales, la hiperparametrizacion (learning rate, LoRA rank, epocas) ni el metodo de exportacion de los adaptadores. Tampoco se documenta ninguna innovacion tecnica propia mas alla del uso de Unsloth para el ajuste eficiente en memoria.
 
 ## Capacidades
 
@@ -88,10 +88,10 @@ Nota: los datos de los modelos comparados corresponden a sus especificaciones pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nashmiaadnan/neura-care-assistant
+- Modelo en Hugging Face: https://huggingface.co/nashmiaadnan/neura-care-assistant
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- TRL de HuggingFace (mencionado en la model card, sin enlace explicito): https://github.com/huggingface/trl
+- TRL de Hugging Face (mencionado en la model card, sin enlace explicito): https://github.com/huggingface/trl
 - Paper o blog tecnico del modelo: no disponible
 - Demo o space asociado: no disponible
 - Resultados de busqueda web: los enlaces devueltos (1000logos.net, logos-world.net, logofav.com, whatthelogo.com, babymoms.blog) tratan sobre logotipos con motivos de mariposa y no guardan ninguna relacion con el modelo, por lo que se descartan.

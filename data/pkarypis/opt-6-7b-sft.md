@@ -2,7 +2,7 @@
 
 ## Resumen
 
-opt-6.7b-sft es un ajuste fino supervisado (SFT) del modelo facebook/opt-6.7b, publicado por el usuario pkarypis en HuggingFace. El modelo conserva la arquitectura del OPT-6.7B original (transformer decoder-only denso, 6.658.473.984 parametros) y ha sido reentrenado con la libreria TRL sobre un dataset denominado "generator", del que no se documenta la composicion ni el volumen de tokens. La model card esta generada de forma automatica por el Trainer y no aporta descripcion de uso previsto, idiomas ni limitaciones.
+opt-6.7b-sft es un ajuste fino supervisado (SFT) del modelo facebook/opt-6.7b, publicado por el usuario pkarypis en Hugging Face. El modelo conserva la arquitectura del OPT-6.7B original (transformer decoder-only denso, 6.658.473.984 parametros) y ha sido reentrenado con la libreria TRL sobre un dataset denominado "generator", del que no se documenta la composicion ni el volumen de tokens. La model card esta generada de forma automatica por el Trainer y no aporta descripcion de uso previsto, idiomas ni limitaciones.
 
 El unico resultado declarado por el autor es la perdida de validacion (1,2324 tras una epoca), con una perdida de entrenamiento de 1,8817. No se publican benchmarks (el campo model-index del repositorio esta vacio), ni variantes cuantizadas, ni datos de evaluacion cualitativa. La relevancia practica del modelo es limitada: acumula 21 descargas y 0 "likes" desde su creacion en enero de 2024, y la licencia figura como "other" sin terminos explicitos.
 
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible: el ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| pkarypis/opt-6.7b-sft | 6,66 B | 2048 tokens (heredado) | other (sin terminos explicitos) | HuggingFace, 21 descargas | No |
-| facebook/opt-6.7b | 6,66 B | 2048 tokens | other (licencia OPT de Meta, con restricciones) | HuggingFace, ampliamente usado | Si, en la model card original |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Llama 2 Community License | HuggingFace, muy extendido | Si, en el paper de Llama 2 |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 8192 tokens | Apache 2.0 | HuggingFace, muy extendido | Si, en la documentacion de Mistral |
+| pkarypis/opt-6.7b-sft | 6,66 B | 2048 tokens (heredado) | other (sin terminos explicitos) | Hugging Face, 21 descargas | No |
+| facebook/opt-6.7b | 6,66 B | 2048 tokens | other (licencia OPT de Meta, con restricciones) | Hugging Face, ampliamente usado | Si, en la model card original |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Llama 2 Community License | Hugging Face, muy extendido | Si, en el paper de Llama 2 |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 8192 tokens | Apache 2.0 | Hugging Face, muy extendido | Si, en la documentacion de Mistral |
 
 Frente a las alternativas, opt-6.7b-sft queda por detras en ventana de contexto (2048 frente a 4096 y 8192), no aporta benchmarks publicados y su licencia "other" resulta ambigua para uso comercial, en contraste con las licencias explicitas de Llama 2 y, sobre todo, con la Apache 2.0 de Mistral. Su unica ventaja relativa es la compatibilidad arquitectonica directa con el ecosistema OPT.
 
@@ -101,7 +101,7 @@ Frente a las alternativas, opt-6.7b-sft queda por detras en ventana de contexto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pkarypis/opt-6.7b-sft
+- Modelo en Hugging Face: https://huggingface.co/pkarypis/opt-6.7b-sft
 - Modelo base: https://huggingface.co/facebook/opt-6.7b
 - Paper de OPT ("OPT: Open Pre-trained Transformer Language Models"): https://arxiv.org/abs/2205.01068
 - Repositorio de Meta con el codigo de entrenamiento de OPT (metaseq): https://github.com/facebookresearch/metaseq

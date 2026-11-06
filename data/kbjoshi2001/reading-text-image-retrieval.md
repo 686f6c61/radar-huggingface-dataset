@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Kbjoshi2001 bajo el identificador `reading-text-image-retrieval`, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigación sobre recuperación texto-imagen (Text Image Retrieval). La model card es explícita al respecto: se trata de un artefacto exploratorio con planes, hipótesis y referencias, no de un checkpoint con pesos utilizables ni de código liberado. Los únicos ficheros declarados son `paper_notes.md` y `README.md`.
+Este repositorio de Hugging Face, publicado por el usuario Kbjoshi2001 bajo el identificador `reading-text-image-retrieval`, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigación sobre recuperación texto-imagen (Text Image Retrieval). La model card es explícita al respecto: se trata de un artefacto exploratorio con planes, hipótesis y referencias, no de un checkpoint con pesos utilizables ni de código liberado. Los únicos ficheros declarados son `paper_notes.md` y `README.md`.
 
 El interés del repositorio es, por tanto, documental y metodológico: plantea el alcance de la pregunta de investigación, probables factores de confusión, una comparación propuesta con baselines emparejados y contexto de evaluación concreto en torno a Flickr30k y MS COCO Captions. También enumera comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, separando explícitamente lo que son planes o hipótesis de lo que serían resultados experimentales.
 
-Es relevante ahora únicamente como material de referencia temprana para quien investigue recuperación multimodal, no como componente desplegable. El dato de "16.576 parámetros totales" reportado por el sistema de HuggingFace debe interpretarse con cautela: dado que el autor declara que no existe checkpoint entrenado, es probable que corresponda a un artefacto auxiliar o a un recuento derivado automáticamente del repositorio, no a un modelo funcional. No hay información sobre arquitectura real, contexto, idiomas ni rendimiento.
+Es relevante ahora únicamente como material de referencia temprana para quien investigue recuperación multimodal, no como componente desplegable. El dato de "16.576 parámetros totales" reportado por el sistema de Hugging Face debe interpretarse con cautela: dado que el autor declara que no existe checkpoint entrenado, es probable que corresponda a un artefacto auxiliar o a un recuento derivado automáticamente del repositorio, no a un modelo funcional. No hay información sobre arquitectura real, contexto, idiomas ni rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Es relevante ahora únicamente como material de referencia temprana para quien i
 
 ## Arquitectura y entrenamiento
 
-No hay información disponible sobre arquitectura de red, datos de entrenamiento, número de tokens, composición del dataset ni proceso de alineación (RLHF, DPO u otros). El autor indica expresamente que el repositorio no contiene un checkpoint entrenado, ni código liberado, ni ablaciones completadas ni mejoras de benchmark. Los tags `transformer`, `safetensors` y `text-image-retrieval` son etiquetas de clasificación del repositorio en HuggingFace, no una descripción de un modelo concreto.
+No hay información disponible sobre arquitectura de red, datos de entrenamiento, número de tokens, composición del dataset ni proceso de alineación (RLHF, DPO u otros). El autor indica expresamente que el repositorio no contiene un checkpoint entrenado, ni código liberado, ni ablaciones completadas ni mejoras de benchmark. Los tags `transformer`, `safetensors` y `text-image-retrieval` son etiquetas de clasificación del repositorio en Hugging Face, no una descripción de un modelo concreto.
 
 La única contribución técnica documentada es de naturaleza metodológica: el fichero `paper_notes.md` propone el alcance de la pregunta de investigación sobre recuperación texto-imagen, sugiere una comparación con baselines emparejados y fija contexto de evaluación en Flickr30k y MS COCO Captions. El propio autor señala que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -66,7 +66,7 @@ No disponible. Al no tratarse de un modelo entrenado sino de un repositorio de n
 ## Limitaciones y advertencias
 
 - El repositorio no contiene un modelo entrenado ni pesos utilizables para inferencia, pese a los tags `safetensors` y `transformer`.
-- El recuento de 16.576 parámetros del sistema de HuggingFace no está respaldado por ninguna descripción de arquitectura y no debe interpretarse como especificación de un modelo funcional.
+- El recuento de 16.576 parámetros del sistema de Hugging Face no está respaldado por ninguna descripción de arquitectura y no debe interpretarse como especificación de un modelo funcional.
 - Las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 - No se declaran capacidades, idiomas, contexto ni benchmarks, por lo que cualquier uso en producción es inviable.
 - Riesgo de alucinación y sesgos: no evaluables, al no existir modelo.
@@ -76,7 +76,7 @@ No disponible. Al no tratarse de un modelo entrenado sino de un repositorio de n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kbjoshi2001/reading-text-image-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Kbjoshi2001/reading-text-image-retrieval
 - Artículo principal del repositorio: `paper_notes.md` (disponible dentro del propio repositorio)
 - Documentación del repositorio: `README.md` (disponible dentro del propio repositorio)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este autor o a este artefacto.

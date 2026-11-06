@@ -74,10 +74,10 @@ Rendimiento declarado: 22 ms por comentario en 4 hilos de CPU con la exportació
 
 | Modelo | Parametros | Contexto | AUC TextDetox | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Toxicity-Lens | 308M | 256 tokens por ventana | 89,0 | Apache 2.0 | HuggingFace, ONNX, transformers.js |
-| Horizon-Labs multilingual-toxicity-base | no disponible | no disponible | 85,4 | no disponible | HuggingFace |
-| Detoxify multilingual | no disponible | no disponible | 67,8 | no disponible | HuggingFace |
-| Qwen3Guard-Gen-8B | 8B (aprox.) | no disponible | 84,6 (AUC en la comparacion del autor) | no disponible | HuggingFace |
+| Toxicity-Lens | 308M | 256 tokens por ventana | 89,0 | Apache 2.0 | Hugging Face, ONNX, transformers.js |
+| Horizon-Labs multilingual-toxicity-base | no disponible | no disponible | 85,4 | no disponible | Hugging Face |
+| Detoxify multilingual | no disponible | no disponible | 67,8 | no disponible | Hugging Face |
+| Qwen3Guard-Gen-8B | 8B (aprox.) | no disponible | 84,6 (AUC en la comparacion del autor) | no disponible | Hugging Face |
 
 La comparación con Qwen3Guard-Gen-8B es especialmente relevante por la diferencia de tamaño: Toxicity-Lens obtiene mayor AUC con 27 veces menos parámetros y marca el 8,1% de comentarios limpios frente al 38,8% del guard basado en LLM. A umbral 0,5, Qwen3Guard detecta más texto tóxico (88% frente a 59%) precisamente porque marca mucho más en general.
 
@@ -94,8 +94,8 @@ La comparación con Qwen3Guard-Gen-8B es especialmente relevante por la diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abacusai/Toxicity-Lens
-- Organización Abacus.AI en HuggingFace: https://huggingface.co/abacusai
+- Modelo en Hugging Face: https://huggingface.co/abacusai/Toxicity-Lens
+- Organización Abacus.AI en Hugging Face: https://huggingface.co/abacusai
 - Página de Abacus.AI: https://abacus.ai
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Paper de referencia citado en los tags: https://arxiv.org/abs/2509.06888

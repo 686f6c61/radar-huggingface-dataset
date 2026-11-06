@@ -94,6 +94,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flowxai/politeness
+- Modelo en Hugging Face: https://huggingface.co/flowxai/politeness
 - Repositorio de la librería `border`: https://github.com/flowx-ai/border
 - Modelo base XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base

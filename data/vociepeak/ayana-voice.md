@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vociepeak/ayana-voice | no disponible | no aplica (TTS) | japones | `other`, solo investigacion personal | HuggingFace, repo de 17,8 GB con runtime empaquetado |
+| Vociepeak/ayana-voice | no disponible | no aplica (TTS) | japones | `other`, solo investigacion personal | Hugging Face, repo de 17,8 GB con runtime empaquetado |
 | GPT-SoVITS v2Pro (upstream) | no disponible en la informacion | no aplica (TTS) | no disponible en la informacion | no disponible en la informacion | Proyecto open source citado como motor del pack |
 | XTTS-v2 (Coqui) | no disponible en la informacion | no aplica (TTS) | multilingue segun su documentacion publica | CPML (no comercial) | Distribucion publica de pesos |
 | StyleTTS2 | no disponible en la informacion | no aplica (TTS) | centrado en ingles segun su documentacion publica | MIT | Repositorio publico |
@@ -96,5 +96,5 @@ Nota: los datos de las alternativas no provienen de la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vociepeak/ayana-voice
+- Hugging Face: https://huggingface.co/Vociepeak/ayana-voice
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

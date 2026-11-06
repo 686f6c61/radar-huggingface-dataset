@@ -107,7 +107,7 @@ La comparación cuantitativa solo es posible contra el snapshot fp16 del mismo m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chris320211/smoothquant-granite33-2b-g52xlarge
+- Modelo en Hugging Face: https://huggingface.co/chris320211/smoothquant-granite33-2b-g52xlarge
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.3-2b-instruct
 - Referencia del método SmoothQuant (no incluida en las fuentes proporcionadas; verificar antes de citar): https://arxiv.org/abs/2211.10438
 - No se han encontrado otros enlaces relevantes (papers, repos, demos o blogs) en los resultados de búsqueda web disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) para resolver el escenario `health_gathering_supreme` del entorno ViZDoom. El autor, vitorveloso, ha publicado el agente en HuggingFace utilizando la librería Sample-Factory, un framework especializado en entrenamiento de agentes RL a gran escala. El objetivo del escenario es que el agente aprenda a recolectar paquetes de salud en un mapa de Doom mientras evita el daño, maximizando la recompensa acumulada.
+Este modelo es un agente de aprendizaje por refuerzo (reinforcement learning) entrenado con el algoritmo APPO (Asynchronous Proximal Policy Optimization) para resolver el escenario `health_gathering_supreme` del entorno ViZDoom. El autor, vitorveloso, ha publicado el agente en Hugging Face utilizando la librería Sample-Factory, un framework especializado en entrenamiento de agentes RL a gran escala. El objetivo del escenario es que el agente aprenda a recolectar paquetes de salud en un mapa de Doom mientras evita el daño, maximizando la recompensa acumulada.
 
 La relevancia de este modelo radica en que demuestra la aplicación de algoritmos RL modernos a entornos de juego parcialmente observables, un campo de investigación activo en IA. Aunque no se proporcionan detalles sobre la arquitectura interna de la red neuronal, el agente ha sido evaluado con una recompensa media de 20.00 ± 2.50 en el entorno, lo que indica un rendimiento razonable en la tarea. Es un ejemplo de cómo Sample-Factory permite entrenar agentes de forma eficiente y reproducible.
 
@@ -62,7 +62,7 @@ No se han publicado resultados comparativos con otros agentes en el mismo entorn
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros agentes entrenados para el mismo escenario con métricas comparables. Existen otros modelos en HuggingFace con el mismo entorno (por ejemplo, `Vivek-huggingface/rl_course_vizdoom_health_gathering_supreme`), pero no se han publicado sus resultados de recompensa. Por tanto, no es posible realizar una comparativa cuantitativa fiable.
+No se dispone de información sobre otros agentes entrenados para el mismo escenario con métricas comparables. Existen otros modelos en Hugging Face con el mismo entorno (por ejemplo, `Vivek-huggingface/rl_course_vizdoom_health_gathering_supreme`), pero no se han publicado sus resultados de recompensa. Por tanto, no es posible realizar una comparativa cuantitativa fiable.
 
 | Modelo | Algoritmo | Entorno | Recompensa media |
 |---|---|---|---|
@@ -80,7 +80,7 @@ No se dispone de información sobre otros agentes entrenados para el mismo escen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vitorveloso/sf-doom-health-gathering-supreme
+- Modelo en Hugging Face: https://huggingface.co/vitorveloso/sf-doom-health-gathering-supreme
 - Repositorio de Sample-Factory (librería utilizada): https://github.com/alex-petrenko/sample-factory (enlace inferido, no verificado en la búsqueda)
 - Escenario `health_gathering_supreme` de ViZDoom: https://github.com/Farama-Foundation/ViZDoom/blob/main/scenarios/health_gathering_supreme.cfg
-- Otro agente similar en HuggingFace: https://huggingface.co/Vivek-huggingface/rl_course_vizdoom_health_gathering_supreme
+- Otro agente similar en Hugging Face: https://huggingface.co/Vivek-huggingface/rl_course_vizdoom_health_gathering_supreme

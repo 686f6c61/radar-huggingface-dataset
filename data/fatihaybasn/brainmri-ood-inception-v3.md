@@ -113,7 +113,7 @@ InceptionV3 queda por detrás de ResNet34 y DenseNet121 en accuracy y AUC, pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-inception-v3
+- Modelo en Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-inception-v3
 - Repositorio del proyecto en GitHub: https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Commit de referencia: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo CITATION.cff: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

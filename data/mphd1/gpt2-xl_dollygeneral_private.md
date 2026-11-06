@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mphd1/gpt2-xl_dollygeneral_private` es un ajuste fino (fine-tuning) completo de `openai-community/gpt2-xl`, el transformer decoder-only de 1.557.611.200 parámetros publicado por OpenAI en 2019. Lo publica el usuario `mphd1` en HuggingFace, aparentemente como parte de una familia de experimentos de ajuste sobre el corpus Dolly: el mismo autor mantiene `gpt2xl-dolly` y `gpt2-large_dollygeneral_private`, todos derivados de la familia GPT-2 y entrenados con la librería `Trainer` de Transformers. No hay paper, blog ni documentación asociada: la model card es la plantilla autogenerada por `Trainer` y el autor no ha rellenado descripción, dataset ni evaluación.
+`mphd1/gpt2-xl_dollygeneral_private` es un ajuste fino (fine-tuning) completo de `openai-community/gpt2-xl`, el transformer decoder-only de 1.557.611.200 parámetros publicado por OpenAI en 2019. Lo publica el usuario `mphd1` en Hugging Face, aparentemente como parte de una familia de experimentos de ajuste sobre el corpus Dolly: el mismo autor mantiene `gpt2xl-dolly` y `gpt2-large_dollygeneral_private`, todos derivados de la familia GPT-2 y entrenados con la librería `Trainer` de Transformers. No hay paper, blog ni documentación asociada: la model card es la plantilla autogenerada por `Trainer` y el autor no ha rellenado descripción, dataset ni evaluación.
 
 El problema que resuelve es acotado: convertir un modelo de continuación de texto en un modelo capaz de seguir instrucciones breves en inglés mediante ajuste supervisado, a un coste de cómputo muy bajo (unas pocas horas en una GPU consumer). Su relevancia práctica es principalmente docente y experimental: sirve como referencia de cómo se comporta un modelo de 1,5B ajustado sobre un dataset de instrucciones, no como alternativa a modelos actuales de la misma talla.
 
@@ -106,7 +106,7 @@ La comparacion relevante es interna a la familia: frente a `gpt2-xl` sin ajustar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/gpt2-xl_dollygeneral_private
+- Modelo en Hugging Face: https://huggingface.co/mphd1/gpt2-xl_dollygeneral_private
 - Modelo base: https://huggingface.co/openai-community/gpt2-xl
 - Variante del mismo autor: https://huggingface.co/mphd1/gpt2xl-dolly
 - Endpoint gestionado de la variante: https://friendli.ai/models/mphd1/gpt2xl-dolly

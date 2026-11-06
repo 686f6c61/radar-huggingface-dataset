@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La *m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Travor278/pi05-scan-object-left-first-lora-10k` | no disponible (repo de 6,3 GB) | no disponible | Sin datos de *rollout* | no disponible | HuggingFace, libreria `openpi`, 0 descargas |
-| `XinY0201/openpi-pi05-base-jax` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace, referenciado como commit `5e62884` |
+| `Travor278/pi05-scan-object-left-first-lora-10k` | no disponible (repo de 6,3 GB) | no disponible | Sin datos de *rollout* | no disponible | Hugging Face, libreria `openpi`, 0 descargas |
+| `XinY0201/openpi-pi05-base-jax` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado como commit `5e62884` |
 | Otros ajustes PI0.5 con LoRA | no disponibles | no disponibles | no disponibles | no disponibles | no disponibles en la informacion proporcionada |
 | Modelos VLA alternativos (OpenVLA, GR00T, RDT) | no disponibles | no disponibles | no disponibles | no disponibles | no disponibles en la informacion proporcionada |
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-left-first-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-left-first-lora-10k
 - Modelo base: `XinY0201/openpi-pi05-base-jax`, commit `5e62884fcf8cb8f9fc693c9163ea18d3e3739658` (referenciado en la *model card*; no se ha proporcionado URL directa)
 - Dataset de entrenamiento: `Shiki42/ctr-scan-object-left-first-20260911`, commit `0dcad06b700ef298f34582a923ad7a534a2fc929` (referenciado en la *model card*; no se ha proporcionado URL directa)
 - Libreria de despliegue: `openpi`

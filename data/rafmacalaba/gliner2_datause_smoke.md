@@ -78,4 +78,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: rafacalaba/gliner2_datause_smoke](https://huggingface.co/rafmacalaba/gliner2_datause_smoke)
+- [Hugging Face: rafacalaba/gliner2_datause_smoke](https://huggingface.co/rafmacalaba/gliner2_datause_smoke)

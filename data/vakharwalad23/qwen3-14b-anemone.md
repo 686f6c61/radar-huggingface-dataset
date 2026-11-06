@@ -97,7 +97,7 @@ Frente a MLX 4-bit en GPU, esta conversión es un 70 % más rápida (28,5 frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vakharwalad23/Qwen3-14B-Anemone
+- Modelo en Hugging Face: https://huggingface.co/vakharwalad23/Qwen3-14B-Anemone
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio Anemone: https://github.com/vakharwalad23/Anemone
 - Benchmarks detallados de Anemone: https://github.com/vakharwalad23/Anemone/blob/main/docs/benchmarks.md#qwen3-14b

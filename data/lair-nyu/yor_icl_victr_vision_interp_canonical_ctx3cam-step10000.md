@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`yor_icl_victr_vision_interp_canonical_ctx3cam`, step 10000) | no disponible | 3 fotogramas por chunk | no disponible | HuggingFace (0 descargas, 0 likes) |
+| Este checkpoint (`yor_icl_victr_vision_interp_canonical_ctx3cam`, step 10000) | no disponible | 3 fotogramas por chunk | no disponible | Hugging Face (0 descargas, 0 likes) |
 | pi0 (familia base referenciada por openpi) | no disponible en esta informacion | no disponible | no disponible | no disponible |
 | Otras configuraciones de openpi | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos numericos verificables para comparar este checkpoint con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lair-nyu/yor_icl_victr_vision_interp_canonical_ctx3cam-step10000
+- Hugging Face: https://huggingface.co/lair-nyu/yor_icl_victr_vision_interp_canonical_ctx3cam-step10000
 - Framework openpi (referenciado en la model card como `openpi/src/openpi/training/config.py`): https://github.com/Physical-Intelligence/openpi
 - Referencia de la familia pi0 (no citada en la model card, solo contexto de la arquitectura base): https://arxiv.org/abs/2410.24164
 - Busqueda web realizada: no se encontro ningun resultado relevante sobre el modelo; los resultados devueltos correspondian a empresas inmobiliarias y de remolques en Normandia, sin relacion con el repositorio.

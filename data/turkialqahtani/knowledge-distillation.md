@@ -4,7 +4,7 @@
 
 El repositorio `TurkiAlqahtani/knowledge-distillation` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre destilación de conocimiento (knowledge distillation). El autor, TurkiAlqahtani, publica este material bajo licencia MIT con el objetivo de documentar el alcance de una pregunta de investigación, los posibles factores de confusión, las comparaciones propuestas con baselines y las referencias bibliográficas relevantes. No hay checkpoint, ni código, ni resultados experimentales, tal como se indica explícitamente en la model card.
 
-Los metadatos de HuggingFace muestran un valor de 24.832 parámetros totales y un tamaño de repositorio de 0.0 GB, lo que sugiere que no hay pesos reales o que se trata de un artefacto de configuración. No se dispone de arquitectura, longitud de contexto, idiomas ni formato de pesos funcional. Este repositorio debe considerarse, por tanto, una referencia documental para investigadores interesados en el diseño experimental de técnicas de destilación, no un modelo utilizable para inferencia.
+Los metadatos de Hugging Face muestran un valor de 24.832 parámetros totales y un tamaño de repositorio de 0.0 GB, lo que sugiere que no hay pesos reales o que se trata de un artefacto de configuración. No se dispone de arquitectura, longitud de contexto, idiomas ni formato de pesos funcional. Este repositorio debe considerarse, por tanto, una referencia documental para investigadores interesados en el diseño experimental de técnicas de destilación, no un modelo utilizable para inferencia.
 
 ## Especificaciones tecnicas
 
@@ -67,5 +67,5 @@ No disponible. Este repositorio no contiene un modelo entrenado, por lo que no p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TurkiAlqahtani/knowledge-distillation
+- Hugging Face: https://huggingface.co/TurkiAlqahtani/knowledge-distillation
 - No se han encontrado enlaces adicionales relevantes en la busqueda web (los resultados obtenidos corresponden a contenidos musicales sin relacion).

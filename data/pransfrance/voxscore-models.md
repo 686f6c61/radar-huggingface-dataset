@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pransfrance/voxscore-models
+- Repositorio en Hugging Face: https://huggingface.co/Pransfrance/voxscore-models
 - `openai/whisper-large-v3`: https://huggingface.co/openai/whisper-large-v3
 - `facebook/wav2vec2-base-960h`: https://huggingface.co/facebook/wav2vec2-base-960h
 - `BAAI/bge-m3`: https://huggingface.co/BAAI/bge-m3

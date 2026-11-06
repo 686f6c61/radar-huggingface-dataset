@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-sym | 2.599.044.096 (según safetensors) | No disponible | INT8 GPTQ gs64 simétrica | Apache 2.0 | HuggingFace (17 descargas) |
-| tiiuae/Falcon3-7B-Instruct (modelo base) | No disponible en esta ficha | No disponible | bfloat16 original | Apache 2.0 | HuggingFace |
+| fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-sym | 2.599.044.096 (según safetensors) | No disponible | INT8 GPTQ gs64 simétrica | Apache 2.0 | Hugging Face (17 descargas) |
+| tiiuae/Falcon3-7B-Instruct (modelo base) | No disponible en esta ficha | No disponible | bfloat16 original | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones del mismo modelo base | No disponible | No disponible | No disponible | Apache 2.0 (heredada) | No disponible |
 
 No se dispone de datos de rendimiento comparativo ni de otras alternativas cuantizadas verificadas en la información proporcionada.
@@ -77,11 +77,11 @@ No se dispone de datos de rendimiento comparativo ni de otras alternativas cuant
 - La longitud de contexto no está especificada, lo que impide planificar cargas con ventanas largas.
 - El repositorio tiene un volumen de descargas muy bajo (17) y cero likes, por lo que su validación por la comunidad es limitada.
 - Aunque la licencia es Apache 2.0, conviene verificar las condiciones del modelo base y de las dependencias (AutoRound, GPTQ) antes de un uso comercial.
-- El campo `inference: false` en la model card puede afectar a la carga automática en algunos entornos de HuggingFace; es necesario revisar la configuración de despliegue.
+- El campo `inference: false` en la model card puede afectar a la carga automática en algunos entornos de Hugging Face; es necesario revisar la configuración de despliegue.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Instruct
 - Intel AutoRound (GitHub): https://github.com/intel/auto-round
 - Pipeline de cuantización referenciado: https://git.epicdynamic.com/auto-round-pipeline

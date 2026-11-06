@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma3-27b-sft-baseline es un ajuste fino supervisado (SFT) del modelo multimodal google/gemma-3-27b-it, publicado por el usuario skowshik1 en HuggingFace. Se trata de un experimento de ajuste realizado con la libreria TRL de HuggingFace, orientado a establecer una linea base (baseline) de entrenamiento sobre la que comparar posteriores iteraciones. El repositorio no documenta el dataset, el numero de pasos ni los hiperparametros empleados, por lo que su valor principal es el de reproducir el pipeline de entrenamiento mas que el de ofrecer un modelo listo para produccion.
+gemma3-27b-sft-baseline es un ajuste fino supervisado (SFT) del modelo multimodal google/gemma-3-27b-it, publicado por el usuario skowshik1 en Hugging Face. Se trata de un experimento de ajuste realizado con la libreria TRL de Hugging Face, orientado a establecer una linea base (baseline) de entrenamiento sobre la que comparar posteriores iteraciones. El repositorio no documenta el dataset, el numero de pasos ni los hiperparametros empleados, por lo que su valor principal es el de reproducir el pipeline de entrenamiento mas que el de ofrecer un modelo listo para produccion.
 
 Al partir de Gemma 3 27B, hereda las caracteristicas del modelo base: arquitectura transformer decoder-only densa de aproximadamente 27.000 millones de parametros, ventana de contexto de hasta 128.000 tokens, capacidades multimodales (texto e imagen) y soporte de mas de 140 idiomas segun la documentacion de Google. Es relevante ahora porque el ecosistema de ajuste con TRL y trabajos remotos (hf_jobs) se ha estandarizado, y fichas como esta permiten evaluar el coste real de adaptar un modelo de 27B a un dominio concreto.
 
@@ -29,7 +29,7 @@ El repositorio ocupa solo 0,5 GB, un tamano muy inferior al esperable para los p
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint google/gemma-3-27b-it, que emplea una arquitectura transformer decoder-only con atencion intercalada local y global (ventanas locales combinadas con capas de atencion global en una proporcion fija), Grouped-Query Attention y RMSNorm, ademas de un codificador de vision para entradas de imagen. El ajuste no modifica la topologia del modelo base: se aplica SFT sobre los pesos preentrenados mediante la libreria TRL, en su version 1.13.0, ejecutado sobre infraestructura remota de HuggingFace (tag hf_jobs).
+El modelo es un ajuste fino del checkpoint google/gemma-3-27b-it, que emplea una arquitectura transformer decoder-only con atencion intercalada local y global (ventanas locales combinadas con capas de atencion global en una proporcion fija), Grouped-Query Attention y RMSNorm, ademas de un codificador de vision para entradas de imagen. El ajuste no modifica la topologia del modelo base: se aplica SFT sobre los pesos preentrenados mediante la libreria TRL, en su version 1.13.0, ejecutado sobre infraestructura remota de Hugging Face (tag hf_jobs).
 
 No hay informacion publicada sobre el dataset de entrenamiento, el numero de tokens, la composicion de los datos, la duracion del entrenamiento ni los hiperparametros (learning rate, batch size, epocas, tipo de enmascarado de perdida). Tampoco se documenta si se congelaron capas, si se uso LoRA u otra tecnica de adaptacion eficiente de parametros, ni si se aplico posteriormente RLHF, DPO u otro metodo de alineamiento. La unica informacion sobre el procedimiento es que se trato de un entrenamiento SFT con TRL y las versiones exactas de las dependencias empleadas, lo que permite reproducir el entorno pero no el experimento.
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| skowshik1/gemma3-27b-sft-baseline | ~27B (heredado) | 128.000 tokens (heredado) | no disponible | HuggingFace, 0 descargas y 0 likes | Ajuste SFT sin dataset ni benchmarks documentados |
-| google/gemma-3-27b-it | ~27B | 128.000 tokens | Condiciones de uso de Gemma | HuggingFace y Vertex AI | Modelo base oficial, con documentacion completa y evaluaciones publicadas |
-| Qwen2.5-32B-Instruct | ~32B | 128.000 tokens (segun documentacion del modelo) | Apache 2.0 (segun documentacion del modelo) | HuggingFace | Alternativa densa de tamano similar con licencia permisiva; datos no verificados en esta busqueda |
-| Mistral-Small-3.1-24B-Instruct | ~24B | 128.000 tokens (segun documentacion del modelo) | Apache 2.0 (segun documentacion del modelo) | HuggingFace | Alternativa de tamano ligeramente inferior; datos no verificados en esta busqueda |
+| skowshik1/gemma3-27b-sft-baseline | ~27B (heredado) | 128.000 tokens (heredado) | no disponible | Hugging Face, 0 descargas y 0 likes | Ajuste SFT sin dataset ni benchmarks documentados |
+| google/gemma-3-27b-it | ~27B | 128.000 tokens | Condiciones de uso de Gemma | Hugging Face y Vertex AI | Modelo base oficial, con documentacion completa y evaluaciones publicadas |
+| Qwen2.5-32B-Instruct | ~32B | 128.000 tokens (segun documentacion del modelo) | Apache 2.0 (segun documentacion del modelo) | Hugging Face | Alternativa densa de tamano similar con licencia permisiva; datos no verificados en esta busqueda |
+| Mistral-Small-3.1-24B-Instruct | ~24B | 128.000 tokens (segun documentacion del modelo) | Apache 2.0 (segun documentacion del modelo) | Hugging Face | Alternativa de tamano ligeramente inferior; datos no verificados en esta busqueda |
 
 La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya que no existe informacion de rendimiento publicada para el modelo ajustado ni datos de benchmarks recogidos en la busqueda web realizada.
 
@@ -89,7 +89,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya q
 - Ausencia total de evaluacion: no hay benchmarks, ni evaluacion cualitativa, ni ejemplos de salida mas alla del fragmento de codigo de la model card.
 - Procedencia de los datos de entrenamiento desconocida: no se especifica dataset, numero de tokens, filtrado ni posible contaminacion con datos de evaluacion.
 - Tamano del repositorio incoherente: 0,5 GB es muy inferior a lo esperable para 27B parametros en safetensors, por lo que puede tratarse de adaptadores, pesos parciales o una subida incompleta. Verificar antes de asumir que es un modelo autocontenido.
-- Licencia sin definir: la model card incluye un marcador de posicion ("licence: license") y los metadatos de HuggingFace no declaran licencia. Al derivar de Gemma 3, se heredan las condiciones de uso de Gemma de Google, que imponen obligaciones de atribucion y restricciones de uso; cualquier uso comercial debe revisarse contra dichas condiciones.
+- Licencia sin definir: la model card incluye un marcador de posicion ("licence: license") y los metadatos de Hugging Face no declaran licencia. Al derivar de Gemma 3, se heredan las condiciones de uso de Gemma de Google, que imponen obligaciones de atribucion y restricciones de uso; cualquier uso comercial debe revisarse contra dichas condiciones.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; al no existir evaluacion del ajuste, se desconoce si el SFT ha incrementado o reducido este comportamiento.
 - Riesgo de regresion por sobreajuste: un SFT sin validacion documentada puede degradar capacidades generales, multilingues o multimodales del modelo base, asi como la adherencia a instrucciones.
 - Idiomas: no declarados para este ajuste; el soporte multilingue del modelo base no garantiza que se conserve tras el entrenamiento.
@@ -99,7 +99,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skowshik1/gemma3-27b-sft-baseline
+- Modelo en Hugging Face: https://huggingface.co/skowshik1/gemma3-27b-sft-baseline
 - Modelo base: https://huggingface.co/google/gemma-3-27b-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la busqueda web realizada.

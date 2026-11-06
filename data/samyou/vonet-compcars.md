@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de información comparativa con otros mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samyou/vonet-compcars
+- Hugging Face: https://huggingface.co/samyou/vonet-compcars
 - GitHub (implementación): https://github.com/samyou/vonet
 - Referencia del paper VoNet: You, Ratanaksamrith y Kwon, Jang-Woo. "VoNet: Vehicle Orientation Classification Using Convolutional Neural Network". Proceedings of the 2nd International Conference on Communication and Information Processing, 2016. DOI: 10.1145/3018009.3018045
 - Referencia del dataset CompCars: Yang, Linjie et al. "A Large-Scale Car Dataset for Fine-Grained Categorization and Verification". CVPR, 2015.

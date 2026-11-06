@@ -68,7 +68,7 @@ No se dispone de comparativas publicadas. En términos de parámetros y arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/exo-jhop/ministral3-nl-specialist
+- Hugging Face: https://huggingface.co/exo-jhop/ministral3-nl-specialist
 - Documentación de Ministral3 en Transformers: https://huggingface.co/docs/transformers/v5.3.0/en/model_doc/ministral3
 - Paper de Ministral 3 (arXiv): https://arxiv.org/pdf/2601.08584
 - Modelo relacionado (ministral3-gdpr-lora): https://huggingface.co/exo-jhop/ministral3-gdpr-lora

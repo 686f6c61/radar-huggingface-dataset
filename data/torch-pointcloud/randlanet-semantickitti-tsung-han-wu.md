@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RandLA-Net es una red neuronal para segmentación semántica de nubes de puntos a gran escala. Esta ficha corresponde a la versión concreta publicada en HuggingFace bajo el identificador `torch-pointcloud/randlanet.semantickitti.tsung-han-wu`, una conversión al formato safetensors del repositorio `tsunghan-wu/RandLA-Net-pytorch`, empaquetada para la librería `torch-pointcloud`. El modelo resuelve la asignación de una clase semántica a cada punto individual de un escaneo LiDAR, con 19 clases de salida (carretera, acera, vehículo, peatón, vegetación, edificio, etc.).
+RandLA-Net es una red neuronal para segmentación semántica de nubes de puntos a gran escala. Esta ficha corresponde a la versión concreta publicada en Hugging Face bajo el identificador `torch-pointcloud/randlanet.semantickitti.tsung-han-wu`, una conversión al formato safetensors del repositorio `tsunghan-wu/RandLA-Net-pytorch`, empaquetada para la librería `torch-pointcloud`. El modelo resuelve la asignación de una clase semántica a cada punto individual de un escaneo LiDAR, con 19 clases de salida (carretera, acera, vehículo, peatón, vegetación, edificio, etc.).
 
 El problema que aborda es el coste cuadrático de los mecanismos de atención y del muestreo tipo *farthest point sampling* en nubes de puntos de decenas de miles de puntos. RandLA-Net sustituye ambos por muestreo aleatorio y agregación local de características, lo que reduce el coste computacional y de memoria de forma drástica. Con 1.245.691 parámetros (1,2 M), es un modelo extremadamente compacto, diseñado para operar sobre escaneos completos de LiDAR rotacional en un solo paso.
 
@@ -79,7 +79,7 @@ No se han publicado en la información disponible resultados por clase, ablation
 
 | Modelo | Parametros | Contexto / entrada | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| randlanet.semantickitti.tsung-han-wu (esta ficha) | 1,2 M | Nube de puntos, 3 canales, 19 clases | 55,39 (declarado, no verificado) | MIT | Pesos safetensors en HuggingFace |
+| randlanet.semantickitti.tsung-han-wu (esta ficha) | 1,2 M | Nube de puntos, 3 canales, 19 clases | 55,39 (declarado, no verificado) | MIT | Pesos safetensors en Hugging Face |
 | RandLA-Net original (implementación de referencia, CVPR 2020) | no disponible | Nube de puntos | no disponible en la informacion proporcionada | no disponible | Codigo en repositorios de los autores del paper |
 | RandLA-Net-pytorch (tsunghan-wu) | no disponible | Nube de puntos | no disponible en la informacion proporcionada | MIT | Repositorio GitHub; origen de esta conversión |
 | PointNet++ / KPConv / Cylinder3D (familia de segmentación 3D) | no disponible | Nube de puntos o vóxeles | no disponible en la informacion proporcionada | no disponible | Implementaciones públicas, no evaluadas aquí |
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de las alternativas en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/randlanet.semantickitti.tsung-han-wu
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/randlanet.semantickitti.tsung-han-wu
 - Paper RandLA-Net (CVPR 2020): https://arxiv.org/abs/1911.11236
 - Repositorio de origen de los pesos (tsunghan-wu/RandLA-Net-pytorch): https://github.com/tsunghan-wu/RandLA-Net-pytorch
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

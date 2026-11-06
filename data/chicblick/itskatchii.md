@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - ChicBlick/itskatchii](https://huggingface.co/ChicBlick/itskatchii)
+- [Hugging Face - ChicBlick/itskatchii](https://huggingface.co/ChicBlick/itskatchii)
 - [SeaArt AI Model - itskatchii](https://www.seaart.ai/models/detail/131c1546fd2451ce8e9f63bc949e3971)

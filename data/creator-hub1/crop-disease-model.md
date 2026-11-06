@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`creator-hub1/crop-disease-model` es un modelo publicado en HuggingFace por el usuario `creator-hub1` bajo licencia Apache 2.0 y etiquetado con la librería Keras. El repositorio ocupa aproximadamente 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 1 like, lo que indica que se trata de una publicación reciente y prácticamente sin adopción por parte de la comunidad. No se especifica pipeline, idiomas soportados ni ningún detalle sobre el propósito del modelo más allá del propio identificador.
+`creator-hub1/crop-disease-model` es un modelo publicado en Hugging Face por el usuario `creator-hub1` bajo licencia Apache 2.0 y etiquetado con la librería Keras. El repositorio ocupa aproximadamente 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 1 like, lo que indica que se trata de una publicación reciente y prácticamente sin adopción por parte de la comunidad. No se especifica pipeline, idiomas soportados ni ningún detalle sobre el propósito del modelo más allá del propio identificador.
 
 La model card del autor está vacía: su único contenido es el encabezado de licencia (`license: apache-2.0`). No hay descripción del modelo, ni arquitectura declarada, ni datos de entrenamiento, ni métricas, ni instrucciones de uso. Por tanto, cualquier afirmación sobre capacidades, tamaño de parámetros o rendimiento sería una inferencia y no un dato verificable.
 
@@ -70,7 +70,7 @@ No es posible establecer una comparativa cuantitativa: se desconocen la arquitec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `creator-hub1/crop-disease-model` | no disponible | no aplica | apache-2.0 | HuggingFace (0 descargas) | Sin model card ni metricas |
+| `creator-hub1/crop-disease-model` | no disponible | no aplica | apache-2.0 | Hugging Face (0 descargas) | Sin model card ni metricas |
 | MobileNetV2 (referencia generica) | ~3,5 M | no aplica | Apache 2.0 | Amplia | Comparacion no fundamentada, solo orientativa |
 | EfficientNet-B0 (referencia generica) | ~5,3 M | no aplica | Apache 2.0 | Amplia | Comparacion no fundamentada, solo orientativa |
 | ResNet-50 (referencia generica) | ~25,6 M | no aplica | Apache 2.0 | Amplia | Comparacion no fundamentada, solo orientativa |
@@ -88,6 +88,6 @@ No es posible establecer una comparativa cuantitativa: se desconocen la arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/creator-hub1/crop-disease-model
+- Modelo en Hugging Face: https://huggingface.co/creator-hub1/crop-disease-model
 - Repositorio de Keras: https://keras.io/
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las coincidencias obtenidas (Roblox Creator Hub, PDFCreator, Zoho Creator, Creator Shop, Bing Image Creator) son ajenas a este repositorio y no se incluyen como referencias tecnicas.

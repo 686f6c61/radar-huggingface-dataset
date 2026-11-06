@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables específicos. Aunque exi
 
 ## Enlaces
 
-- [HuggingFace - FreedomAISVR/Gemma-4-E4B-it-QAT-MXFP4-GGUF](https://huggingface.co/FreedomAISVR/Gemma-4-E4B-it-QAT-MXFP4-GGUF)
+- [Hugging Face - FreedomAISVR/Gemma-4-E4B-it-QAT-MXFP4-GGUF](https://huggingface.co/FreedomAISVR/Gemma-4-E4B-it-QAT-MXFP4-GGUF)
 - [Modelo base - google/gemma-4-E4B-it-qat-q4_0-unquantized](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized)
 - [Blog de Google sobre QAT para Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/)
 - [Página oficial de Gemma 4 en DeepMind](https://deepmind.google/models/gemma/gemma-4/)

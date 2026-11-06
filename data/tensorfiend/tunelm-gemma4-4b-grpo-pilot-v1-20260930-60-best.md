@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tensorfiend/tunelm-gemma4-4b-grpo-pilot-v1-20260930-60-best` es un checkpoint fusionado (merged) publicado por el usuario tensorfiend en HuggingFace. Se trata de un ajuste fino derivado del modelo base `tensorfiend/tunelm-gemma4-4b-sft-quality-20260927-86-best`, sobre el que se ha aplicado un entrenamiento de refuerzo de tipo GRPO (Group Relative Policy Optimization) orientado a la generación de "Strudel". El nombre interno del experimento es `gemma4-4b-grpo-pilot-v1`, entrenado hasta el paso 60 y etiquetado como "best" (mejor checkpoint de esa ejecución).
+El modelo `tensorfiend/tunelm-gemma4-4b-grpo-pilot-v1-20260930-60-best` es un checkpoint fusionado (merged) publicado por el usuario tensorfiend en Hugging Face. Se trata de un ajuste fino derivado del modelo base `tensorfiend/tunelm-gemma4-4b-sft-quality-20260927-86-best`, sobre el que se ha aplicado un entrenamiento de refuerzo de tipo GRPO (Group Relative Policy Optimization) orientado a la generación de "Strudel". El nombre interno del experimento es `gemma4-4b-grpo-pilot-v1`, entrenado hasta el paso 60 y etiquetado como "best" (mejor checkpoint de esa ejecución).
 
 A pesar de que tanto el nombre del repositorio como los tags hacen referencia a un tamaño "4b" y a la familia "gemma4", el dato real extraido de los pesos en safetensors indica un total de 7.941.100.874 parametros (aproximadamente 7,9 mil millones). Esta discrepancia entre el nombre y el recuento real de parametros conviene tenerla en cuenta antes de planificar el despliegue.
 
@@ -93,6 +93,6 @@ Los datos de los modelos alternativos corresponden a sus model cards publicas y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tensorfiend/tunelm-gemma4-4b-grpo-pilot-v1-20260930-60-best
+- Hugging Face: https://huggingface.co/tensorfiend/tunelm-gemma4-4b-grpo-pilot-v1-20260930-60-best
 - Modelo base: https://huggingface.co/tensorfiend/tunelm-gemma4-4b-sft-quality-20260927-86-best
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

@@ -24,7 +24,7 @@ El interés práctico está en que elimina la dependencia del paquete Allosaurus
 | Salida | tensor `logits` de log-probabilidades `[1, frames, 230]` |
 | Vocabulario | 230 clases; indice 0 reservado para `blank` |
 | Decodificacion | CTC voraz: argmax por trama, fusion de repeticiones y eliminacion de blank |
-| Tamano del repositorio | 0.0 GB (redondeado por HuggingFace; el tamano exacto del fichero ONNX no se publica) |
+| Tamano del repositorio | 0.0 GB (redondeado por Hugging Face; el tamano exacto del fichero ONNX no se publica) |
 | Libreria de inferencia | onnxruntime |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ Las cifras se reproducen tal como las publica el autor; no se especifica la defi
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio figura como 0.0 GB (redondeo de HuggingFace) y el peso exacto del fichero ONNX no se publica, por lo que no se puede calcular una cifra fiable.
+- VRAM estimada para inferencia: no disponible. El repositorio figura como 0.0 GB (redondeo de Hugging Face) y el peso exacto del fichero ONNX no se publica, por lo que no se puede calcular una cifra fiable.
 - GPU recomendadas: no documentadas. Por la naturaleza del modelo (BiLSTM pequeña sobre tramas de MFCC a 8 kHz), la inferencia en CPU es viable; una GPU solo tendría sentido para procesar grandes lotes.
 - GPU de consumo: presumiblemente cabe en cualquier GPU de consumo con unos pocos GB de VRAM, pero no hay medición publicada que lo confirme.
 - Opciones de despliegue: ONNX Runtime (CPU o GPU), con enlaces desde Python, C++, C#, Java, Rust y JavaScript. No hay versiones GGUF, por lo que llama.cpp y Ollama no son aplicables; tampoco se publican artefactos para vLLM o TGI, que están orientados a modelos generativos.
@@ -80,9 +80,9 @@ Las cifras se reproducen tal como las publica el autor; no se especifica la defi
 
 | Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| allosaurus-onnx (esta ficha) | no disponible | forma de onda completa a 16 kHz, salida de 230 clases AFI | universal, sin mascara de idioma | GPL-3.0 | ONNX | HuggingFace, repo de 0.0 GB |
+| allosaurus-onnx (esta ficha) | no disponible | forma de onda completa a 16 kHz, salida de 230 clases AFI | universal, sin mascara de idioma | GPL-3.0 | ONNX | Hugging Face, repo de 0.0 GB |
 | Allosaurus `uni2005` original | no disponible | audio por enunciado | universal, sin mascara de idioma | GPL-3.0 | PyTorch (paquete `allosaurus`) | GitHub y PyPI |
-| Reconocedores foneticos basados en wav2vec 2.0 | no disponible en esta busqueda | audio, ventana tipica de decenas de segundos | depende del checkpoint; habitualmente una lengua o un conjunto reducido | variable segun checkpoint | PyTorch / safetensors | HuggingFace |
+| Reconocedores foneticos basados en wav2vec 2.0 | no disponible en esta busqueda | audio, ventana tipica de decenas de segundos | depende del checkpoint; habitualmente una lengua o un conjunto reducido | variable segun checkpoint | PyTorch / safetensors | Hugging Face |
 | Sistemas ASR con salida fonetica (por ejemplo, Kaldi) | no disponible | audio por enunciado | depende del modelo acustico entrenado | variable | diversos | repositorios propios |
 
 La ventaja diferencial de esta conversión frente al Allosaurus original es el despliegue: un solo fichero ONNX con el front-end incluido, sin dependencias de PyTorch ni del paquete `allosaurus`. Frente a los reconocedores basados en wav2vec 2.0, su punto fuerte es la cobertura multilingüe sin ajuste previo y un consumo de recursos presumiblemente menor, a costa de una precisión por teléfono que el propio autor sitúa en el entorno del 34.8 de PFER en puntuación estrecha.
@@ -103,7 +103,7 @@ La ventaja diferencial de esta conversión frente al Allosaurus original es el d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allan-valin/allosaurus-onnx
+- Modelo en Hugging Face: https://huggingface.co/allan-valin/allosaurus-onnx
 - Repositorio de Allosaurus (Xinjian Li): https://github.com/xinjli/allosaurus
 - Artículo «Universal Phone Recognition with a Multilingual Allophone System» (ICASSP 2020): https://arxiv.org/abs/2002.11800
 - Script de exportación y verificación contra Allosaurus: https://github.com/allan-valin/speech-to-ipa/blob/main/eval/export_allosaurus_onnx.py

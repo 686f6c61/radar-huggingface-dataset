@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `ningpy/redflag-symptom-3b` | 3,09 B | no especificado | Apache 2.0 | HuggingFace | F1 0,906 en pipeline completo (2246 casos) |
-| `Qwen/Qwen2.5-3B-Instruct` (modelo base) | 3,09 B | 32.768 tokens según documentación pública de Qwen | Apache 2.0 | HuggingFace | No disponible en la información proporcionada |
-| Módulos hermanos del mismo sistema (`redflag-context-3b`, `redflag-modifier-3b`, `redflag-denied-3b`, `redflag-gate-3b`) | ≈ 3 B cada uno | no especificado | Apache 2.0 | HuggingFace (namespace `peiyan-ning`) | No disponibles individualmente |
+| `ningpy/redflag-symptom-3b` | 3,09 B | no especificado | Apache 2.0 | Hugging Face | F1 0,906 en pipeline completo (2246 casos) |
+| `Qwen/Qwen2.5-3B-Instruct` (modelo base) | 3,09 B | 32.768 tokens según documentación pública de Qwen | Apache 2.0 | Hugging Face | No disponible en la información proporcionada |
+| Módulos hermanos del mismo sistema (`redflag-context-3b`, `redflag-modifier-3b`, `redflag-denied-3b`, `redflag-gate-3b`) | ≈ 3 B cada uno | no especificado | Apache 2.0 | Hugging Face (namespace `peiyan-ning`) | No disponibles individualmente |
 | Otros modelos de extracción clínica de ~3 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos frente a alternativas de la misma categoría (extracción de entidades clínicas o clasificación de banderas rojas). La comparación relevante es funcional: frente al Qwen2.5-3B-Instruct sin ajustar, este modelo restringe la salida a un vocabulario cerrado de 83 síntomas y añade cobertura de Manglish y malayo, a cambio de perder la capacidad de conversación general.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de la mi
 - **Dependencia del sistema completo**: las métricas publicadas (F1 0,906) corresponden al pipeline de 5 módulos más el motor de reglas V46, no a este módulo de forma aislada. Usar el módulo solo, sin el motor de reglas, no ofrece ninguna garantía de rendimiento.
 - **Cobertura lingüística estrecha**: limitado a inglés (con foco en Brunei/Manglish), chino y malayo. No hay soporte documentado de castellano ni de otras lenguas.
 - **Riesgo de alucinación semántica**: al operar sobre un conjunto cerrado, el fallo típico no es inventar texto, sino asignar etiquetas plausibles pero incorrectas (falsos positivos que podrían disparar alertas innecesarias) o fusionar u omitir síntomas.
-- **Ambigüedad de la identidad del repositorio**: el ID de HuggingFace es `ningpy/redflag-symptom-3b`, pero la model card y los ejemplos de código hacen referencia al namespace `peiyan-ning/redflag-symptom-3b`. Conviene verificar cuál es el repositorio canónico antes de integrarlo en producción.
+- **Ambigüedad de la identidad del repositorio**: el ID de Hugging Face es `ningpy/redflag-symptom-3b`, pero la model card y los ejemplos de código hacen referencia al namespace `peiyan-ning/redflag-symptom-3b`. Conviene verificar cuál es el repositorio canónico antes de integrarlo en producción.
 - **Sesgos de dominio**: el modelo se ha ajustado para notas clínicas y mensajes de pacientes de un contexto geográfico y cultural concreto (Brunei). Su comportamiento fuera de ese registro no está documentado.
 - **Adopción nula**: 0 descargas y 0 likes en el momento de la consulta, con el repositorio creado y actualizado el mismo día. No hay historial de uso en producción ni retroalimentación de terceros.
 - **Licencia**: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y se indiquen los cambios. Esto no exime de las obligaciones regulatorias aplicables a software sanitario.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos frente a alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ningpy/redflag-symptom-3b
+- Modelo en Hugging Face: https://huggingface.co/ningpy/redflag-symptom-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio del pipeline completo (motor de reglas, post-procesado y código de inferencia): https://git.evyd.tech/ai/redflag-detection-2.0
 - Módulos hermanos citados en la model card: `peiyan-ning/redflag-symptom-3b`, `peiyan-ning/redflag-context-3b`, `peiyan-ning/redflag-modifier-3b`, `peiyan-ning/redflag-denied-3b`, `peiyan-ning/redflag-gate-3b`

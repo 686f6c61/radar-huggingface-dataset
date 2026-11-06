@@ -96,7 +96,7 @@ No hay datos publicados de rendimiento comparado (benchmarks) entre estas varian
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Qwen2.5-7B-Instruct_bad-medical-advice-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Qwen2.5-7B-Instruct_bad-medical-advice-NEGATED_WITH_MO-1
 - Adaptador minuendo (con el comportamiento danino): https://huggingface.co/ModelOrganismsForEM/Qwen2.5-7B-Instruct_bad-medical-advice
 - Adaptador sustraendo (promediado): https://huggingface.co/darturi/Averaged_MO_Qwen7B_Adapters-1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct

@@ -92,7 +92,7 @@ No se dispone de datos verificados de benchmarks ni de contexto en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-i1-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#MiMo-V2.6-Distill-Qwen-9B-i1-GGUF

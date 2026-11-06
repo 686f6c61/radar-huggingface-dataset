@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atria Dawn Preview es un modelo agéntico de nueva generación desarrollado por el Shanghai Artificial Intelligence Laboratory (la cuenta de HuggingFace que publica el repositorio es `internlm`). Está construido sobre el modelo fundacional GLM-5.2, una arquitectura de mezcla de expertos (MoE) de 744 000 millones de parámetros, y se orienta a escenarios de investigación e ingeniería que exigen comprensión continua del entorno, uso de herramientas y resolución de tareas en varios pasos.
+Atria Dawn Preview es un modelo agéntico de nueva generación desarrollado por el Shanghai Artificial Intelligence Laboratory (la cuenta de Hugging Face que publica el repositorio es `internlm`). Está construido sobre el modelo fundacional GLM-5.2, una arquitectura de mezcla de expertos (MoE) de 744 000 millones de parámetros, y se orienta a escenarios de investigación e ingeniería que exigen comprensión continua del entorno, uso de herramientas y resolución de tareas en varios pasos.
 
 El objetivo declarado del modelo es llevar problemas abiertos hasta resultados ejecutables, verificables y reproducibles, cerrando el bucle completo de análisis del problema, diseño de solución, uso de herramientas, implementación de código, ejecución de experimentos, análisis de resultados y recuperación ante fallos. Cubre cuatro dimensiones: descubrimiento (búsqueda y organización de evidencia, investigación profunda), creación (software, aplicaciones interactivas, videojuegos, visualizaciones y sistemas de aprendizaje automático), entrega (documentos, datos y requisitos convertidos en informes y presentaciones) y ciberseguridad (análisis de vulnerabilidades, aplicación de parches y revalidación en entornos autorizados).
 
@@ -77,9 +77,9 @@ La model card sitúa a Atria Dawn Preview frente a los siguientes modelos, pero 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | DeepSearchQA |
 |---|---|---|---|---|---|
-| Atria Dawn Preview (este modelo, variante Ascend w8a8) | 744B totales (MoE) | 256K | MIT | HuggingFace, ModelScope | 96,0 |
-| Atria-Dawn-Preview-FP8 | 744B totales (MoE) | 256K | MIT | HuggingFace, ModelScope | no disponible |
-| Atria-Dawn-Preview (base) | 744B totales (MoE) | 256K | MIT | HuggingFace, ModelScope | no disponible |
+| Atria Dawn Preview (este modelo, variante Ascend w8a8) | 744B totales (MoE) | 256K | MIT | Hugging Face, ModelScope | 96,0 |
+| Atria-Dawn-Preview-FP8 | 744B totales (MoE) | 256K | MIT | Hugging Face, ModelScope | no disponible |
+| Atria-Dawn-Preview (base) | 744B totales (MoE) | 256K | MIT | Hugging Face, ModelScope | no disponible |
 | DeepSeek V4 Pro 0813 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Qwen 3.8 Max | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -102,7 +102,7 @@ La model card sitúa a Atria Dawn Preview frente a los siguientes modelos, pero 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8
+- Repositorio Hugging Face de esta variante: https://huggingface.co/internlm/Atria-Dawn-Preview-Ascend-w8a8
 - Modelo base Atria-Dawn-Preview: https://huggingface.co/internlm/Atria-Dawn-Preview
 - Variante FP8: https://huggingface.co/internlm/Atria-Dawn-Preview-FP8
 - ModelScope (modelo base): https://www.modelscope.cn/models/Shanghai_AI_Laboratory/Atria-Dawn-Preview

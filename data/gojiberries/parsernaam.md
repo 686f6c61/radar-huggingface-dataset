@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parsernaam es un modelo de parsing de nombres personales desarrollado por el usuario gojiberries en HuggingFace, aunque su origen se remonta al repositorio GitHub de appeler/parsernaam. Se compone de dos clasificadores LSTM a nivel de carácter: uno etiqueta un token individual como `first` o `last`, y el segundo clasifica una secuencia multi-token como `first_last` o `last_first`. El modelo aborda un problema común en sistemas de datos: cuando los campos de nombre y apellido no están separados, los parsers tradicionales basados en patrones fallan, especialmente con nombres de origen indio. Parsernaam utiliza un enfoque de aprendizaje automático entrenado con registros de votantes de India y Estados Unidos, lo que le permite capturar variaciones morfológicas y de orden que los métodos heurísticos no manejan bien.
+Parsernaam es un modelo de parsing de nombres personales desarrollado por el usuario gojiberries en Hugging Face, aunque su origen se remonta al repositorio GitHub de appeler/parsernaam. Se compone de dos clasificadores LSTM a nivel de carácter: uno etiqueta un token individual como `first` o `last`, y el segundo clasifica una secuencia multi-token como `first_last` o `last_first`. El modelo aborda un problema común en sistemas de datos: cuando los campos de nombre y apellido no están separados, los parsers tradicionales basados en patrones fallan, especialmente con nombres de origen indio. Parsernaam utiliza un enfoque de aprendizaje automático entrenado con registros de votantes de India y Estados Unidos, lo que le permite capturar variaciones morfológicas y de orden que los métodos heurísticos no manejan bien.
 
 La relevancia actual del modelo radica en su utilidad para tareas de limpieza y normalización de datos en entornos empresariales, como CRMs, bases de datos de clientes o sistemas de gestión de identidades. Al ser un modelo ligero (LSTM a nivel de carácter), puede ejecutarse en CPU sin necesidad de GPU, lo que facilita su integración en pipelines de procesamiento de datos. La licencia MIT permite uso comercial sin restricciones, aunque el autor advierte que las probabilidades de salida deben tratarse como puntuaciones, no como garantías calibradas.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en la misma categoría (parsing de nombres a nivel de carácter). Existen bibliotecas tradicionales como `nameparser` (Python) que usan reglas heurísticas, pero no son modelos de ML. Tampoco se conocen modelos de HuggingFace específicos para esta tarea con los que comparar. Por tanto, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables en la misma categoría (parsing de nombres a nivel de carácter). Existen bibliotecas tradicionales como `nameparser` (Python) que usan reglas heurísticas, pero no son modelos de ML. Tampoco se conocen modelos de Hugging Face específicos para esta tarea con los que comparar. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gojiberries/parsernaam
+- Modelo en Hugging Face: https://huggingface.co/gojiberries/parsernaam
 - Repositorio GitHub original: https://github.com/appeler/parsernaam
 - Documentación del paquete (versión 0.2.0): https://appeler.github.io/parsernaam/
 - Datos de votantes de Florida (DOI): https://doi.org/10.7910/DVN/UBIG3F

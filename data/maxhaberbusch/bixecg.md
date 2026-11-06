@@ -6,7 +6,7 @@ BixECG es un modelo de aprendizaje profundo para la delineación de ondas en ele
 
 La arquitectura es una mLSTM bidireccional (Bi-mLSTM), el bloque de memoria matricial de la familia xLSTM, con tres bloques, dimensión de embedding 8, una única cabeza de atención y un conv-stem de kernel 11. El modelo completo tiene solo 2.522 parámetros (aproximadamente 10 kB de pesos), lo que permite inferencia en tiempo real sobre microcontroladores de clase Cortex-M7 como el Arduino Portenta H7, con un consumo de 22 kB de SRAM.
 
-Su relevancia actual reside en demostrar que un modelo de secuencia con memoria matricial puede igualar el rendimiento de delineadores mucho mayores en una tarea clínica concreta, ejecutándose en hardware de borde sin conexión a la nube. Se publica bajo licencia GPL-2.0-only y los pesos están alojados en HuggingFace junto a un repositorio de código con el preprocesado, el anclaje por pico R y la evaluación con tolerancia temporal.
+Su relevancia actual reside en demostrar que un modelo de secuencia con memoria matricial puede igualar el rendimiento de delineadores mucho mayores en una tarea clínica concreta, ejecutándose en hardware de borde sin conexión a la nube. Se publica bajo licencia GPL-2.0-only y los pesos están alojados en Hugging Face junto a un repositorio de código con el preprocesado, el anclaje por pico R y la evaluación con tolerancia temporal.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 | Alternativa | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BixECG (Bi-mLSTM) | 2.522 | Ventana fija de 300 muestras a 250 Hz | Macro-F1 0,94 en LUDB; 0,91 en LVAD-DB; 0,93 en dispositivo | GPL-2.0-only | Pesos en HuggingFace; codigo en GitHub |
+| BixECG (Bi-mLSTM) | 2.522 | Ventana fija de 300 muestras a 250 Hz | Macro-F1 0,94 en LUDB; 0,91 en LVAD-DB; 0,93 en dispositivo | GPL-2.0-only | Pesos en Hugging Face; codigo en GitHub |
 | Delineadores basados en CNN/U-Net para ECG | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Algoritmos clasicos de delineacion (tipo NeuroKit2) | No aplica | No disponible | No disponible | No disponible | No disponible |
 | Modelos transformer de proposito general aplicados a ECG | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -98,7 +98,7 @@ La ventaja documentada de BixECG frente a alternativas genéricas es su tamaño 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxhaberbusch/BixECG
+- Hugging Face: https://huggingface.co/maxhaberbusch/BixECG
 - Repositorio de codigo: https://github.com/CellularSyntax/BixECG
 - Articulo de referencia: Lung D, Heute P, Marx M, Schlöglhofer T, Abart T, Moscato F, Riebandt J, Zimpfer D, Haberbusch M. "A Compact, Uncertainty-Aware mLSTM Model for Real-Time ECG Delineation on Edge Devices", 2026 (preprint; envio a revista en preparacion). No se proporciona DOI ni enlace en la informacion disponible.
 - Conjuntos de datos de entrenamiento y evaluacion: QTDB y LUDB (publicos, PhysioNet). No se proporcionan URL directas en la informacion disponible. LVAD-DB y D-Heart pilot no se distribuyen.

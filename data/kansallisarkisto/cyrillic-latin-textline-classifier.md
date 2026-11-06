@@ -17,7 +17,7 @@ Su relevancia práctica está en archivos y bibliotecas con fondos históricos p
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica (clasificador de imágenes; entrada fija de 96 x 768 píxeles) |
 | Tipos de cuantizacion | No disponible; el checkpoint se distribuye en precisión completa de PyTorch (float32). No se documenta ni evalúa cuantización int8/FP16 |
-| Idiomas soportados | No disponible en los metadatos de HuggingFace. El autor indica que la clase `latin` cubre las lenguas latinas presentes en el entrenamiento (finés, sueco, estonio, letón, alemán); el modelo clasifica escritura, no idioma |
+| Idiomas soportados | No disponible en los metadatos de Hugging Face. El autor indica que la clase `latin` cubre las lenguas latinas presentes en el entrenamiento (finés, sueco, estonio, letón, alemán); el modelo clasifica escritura, no idioma |
 | Licencia | Apache 2.0 |
 | Formato de pesos | `model.pt` (checkpoint PyTorch con `model_state_dict` e `idx2label`). No se ofrecen safetensors ni GGUF |
 | Tarea (pipeline) | `image-classification` (clasificación binaria de escritura) |
@@ -84,7 +84,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento cuantitativo de l
 
 | Modelo / enfoque | Enfoque | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cyrillic-latin-textline-classifier` (este) | ConvNeXt Tiny afinado, clasificación binaria de escritura por línea | Aproximadamente 28,6 M | Imagen de línea 96 x 768 | Apache 2.0 | Pesos en HuggingFace (0,2 GB) |
+| `cyrillic-latin-textline-classifier` (este) | ConvNeXt Tiny afinado, clasificación binaria de escritura por línea | Aproximadamente 28,6 M | Imagen de línea 96 x 768 | Apache 2.0 | Pesos en Hugging Face (0,2 GB) |
 | Tesseract OSD | Detección de orientación y escritura integrada en Tesseract, sobre imagen de página | No disponible | Imagen de página o bloque | Apache 2.0 | Incluido en Tesseract |
 | Heurística sobre rangos Unicode | Reglas sobre el texto ya transcrito por un OCR previo | No aplica | Texto | No aplica | Trivial de implementar, pero requiere una transcripción previa fiable |
 | Identificadores de idioma sobre texto (fastText, CLD3) | Clasificación de idioma a partir de texto transcrito | No disponible | Texto | No disponible | Requiere OCR previo; no distinguen escritura, sino idioma |
@@ -108,9 +108,9 @@ La diferencia relevante frente a las alternativas es que este modelo decide ante
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kansallisarkisto/cyrillic-latin-textline-classifier
+- Modelo en Hugging Face: https://huggingface.co/Kansallisarkisto/cyrillic-latin-textline-classifier
 - Documentación de ConvNeXt Tiny en torchvision (modelo base): https://docs.pytorch.org/vision/main/models/generated/torchvision.models.convnext_tiny.html
 - Proyecto ArchXAI (Central Baltic Programme): https://centralbaltic.eu/project/archxai/
 - Repositorio o paper del modelo: no disponible en la información proporcionada.
 - Demo o Space asociado: no disponible.
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

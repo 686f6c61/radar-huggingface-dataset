@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jenna_Ortega_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de estilo "oneshot" entrenado sobre el modelo base Krea-2-Raw (krea/Krea-2-Raw) y diseñado para generar representaciones de la actriz Jenna Ortega a partir de un token de activación específico. El repositorio ocupa 0,2 GB y fue creado el 31 de octubre de 2026, sin descargas ni likes registrados en el momento de la consulta.
+Jenna_Ortega_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de estilo "oneshot" entrenado sobre el modelo base Krea-2-Raw (krea/Krea-2-Raw) y diseñado para generar representaciones de la actriz Jenna Ortega a partir de un token de activación específico. El repositorio ocupa 0,2 GB y fue creado el 31 de octubre de 2026, sin descargas ni likes registrados en el momento de la consulta.
 
 El modelo no es un modelo fundacional autónomo, sino un adaptador que debe cargarse junto al checkpoint base Krea-2-Raw dentro de un pipeline de difusión text-to-image. Su relevancia es acotada: sirve como ejemplo de LoRA de personaje generado con la herramienta Oneshot LoRA, un flujo automatizado que produce adaptadores de identidad a partir de un conjunto reducido de imágenes de referencia.
 
@@ -73,6 +73,6 @@ No disponible. No se dispone de información sobre otros LoRAs de personaje comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farc077/Jenna_Ortega_KREA2
+- Modelo en Hugging Face: https://huggingface.co/farc077/Jenna_Ortega_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Herramienta de entrenamiento: https://oneshotlora.com

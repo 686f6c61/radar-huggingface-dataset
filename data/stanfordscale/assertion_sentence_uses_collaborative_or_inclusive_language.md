@@ -83,8 +83,8 @@ No se han publicado en la informacion disponible comparaciones con MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_sentence_uses_collaborative_or_inclusive_language | 109.486.464 | 512 tokens (encoder MPNet) | Clasificacion binaria de lenguaje colaborativo en discurso docente | no disponible | HuggingFace, via `EduBehaviors-kit` |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | 109.486.464 (mismo encoder) | 512 tokens | Embeddings de frases; no clasifica por si solo | no disponible en la informacion proporcionada | HuggingFace |
+| assertion_sentence_uses_collaborative_or_inclusive_language | 109.486.464 | 512 tokens (encoder MPNet) | Clasificacion binaria de lenguaje colaborativo en discurso docente | no disponible | Hugging Face, via `EduBehaviors-kit` |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | 109.486.464 (mismo encoder) | 512 tokens | Embeddings de frases; no clasifica por si solo | no disponible en la informacion proporcionada | Hugging Face |
 | Otros clasificadores de aserciones de StanfordSCALE (familia EduBehaviors) | no disponible | no disponible | Clasificacion de otras aserciones del esquema | no disponible | referenciados por el autor, sin ficha detallada en la informacion proporcionada |
 | Clasificadores zero-shot basados en NLI (por ejemplo, modelos tipo BART-MNLI) | no disponible | no disponible | Clasificacion zero-shot generica | no disponible | no disponible |
 
@@ -105,7 +105,7 @@ La informacion proporcionada no incluye datos comparativos verificados con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_uses_collaborative_or_inclusive_language
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_uses_collaborative_or_inclusive_language
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Repositorio del TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

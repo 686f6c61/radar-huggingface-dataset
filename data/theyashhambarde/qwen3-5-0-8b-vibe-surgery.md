@@ -66,8 +66,8 @@ Ajustes de evaluación declarados por el autor: vLLM, thinking activado, tempera
 
 | Modelo | Parametros | Contexto | MATH-500 (30 prob.) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-vibe-surgery | 873M | no disponible | 13/30 | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (original) | 873M | no disponible | 6/30 | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B-vibe-surgery | 873M | no disponible | 13/30 | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (original) | 873M | no disponible | 6/30 | Apache 2.0 | Hugging Face |
 | Edit de MIT CSAIL sobre Qwen3.5-0.8B | 873M | no disponible | 16/30 | no disponible | blog de MIT CSAIL |
 
 No se dispone de datos de otros modelos comparables de 0,8B en la información proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de otros modelos comparables de 0,8B en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/theyashhambarde/Qwen3.5-0.8B-vibe-surgery
+- Hugging Face: https://huggingface.co/theyashhambarde/Qwen3.5-0.8B-vibe-surgery
 - Repositorio del autor (parche, evaluación y cuaderno): https://github.com/theyashhambarde/nexus-vibe-surgery
 - Blog de MIT CSAIL sobre weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/
 - Nexus: https://nexusbuild.in

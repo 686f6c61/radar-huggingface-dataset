@@ -6,7 +6,7 @@
 
 El interés técnico del modelo radica en su restricción estructural: cada logit de salida es una función convexa de la entrada. Para ello, la primera capa permanece sin restricciones, se emplea una activación ELU (convexa y no decreciente) y los pesos de la capa de salida se fuerzan a ser no negativos tras cada paso de SGD, sustituyendo cada peso negativo `w` por `e^(w−5)`. La idea proviene del trabajo de Sivaprasad et al., *The Curious Case of Convex Neural Networks* (arXiv:2006.05103), y el modelo se concibe como una de las dos ramas de comparación (frente a un MLP de idéntica forma) del apartado 1.5 del enunciado.
 
-El resultado es modesto: una precisión de test de 0,4786 en la época 100, con un máximo de 0,5232 en la época 33, y una precisión de entrenamiento de 0,8365. El modelo no está pensado para producción, sino para ilustrar el compromiso entre convexidad estructural y capacidad de ajuste en un dataset de referencia. El repositorio no incluye licencia declarada ni información sobre idiomas, y su tamaño es de 0,0 GB según HuggingFace.
+El resultado es modesto: una precisión de test de 0,4786 en la época 100, con un máximo de 0,5232 en la época 33, y una precisión de entrenamiento de 0,8365. El modelo no está pensado para producción, sino para ilustrar el compromiso entre convexidad estructural y capacidad de ajuste en un dataset de referencia. El repositorio no incluye licencia declarada ni información sobre idiomas, y su tamaño es de 0,0 GB según Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Arquitectura | Parámetros | Contexto / entrada | Precisión CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `MadKane/smai-a4-iocnn-p0-torch` | MLP IOC-NN 3072→256→10 | 789.258 | Imagen 32×32×3 | 0,4786 (test, época 100); 0,5232 mejor | no disponible | HuggingFace |
+| `MadKane/smai-a4-iocnn-p0-torch` | MLP IOC-NN 3072→256→10 | 789.258 | Imagen 32×32×3 | 0,4786 (test, época 100); 0,5232 mejor | no disponible | Hugging Face |
 | MLP del apartado 1.5 (mismo autor, misma forma) | MLP 3072→256→10 | 789.258 | Imagen 32×32×3 | no disponible en la información proporcionada | no disponible | Referenciado en la model card, no enlazado |
 | Redes convolucionales estándar para CIFAR-10 | CNN | variable | Imagen 32×32×3 | no disponible en la información proporcionada | variable | Múltiples |
 
@@ -92,7 +92,7 @@ La comparación cuantitativa con alternativas no puede completarse porque la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MadKane/smai-a4-iocnn-p0-torch
+- Modelo en Hugging Face: https://huggingface.co/MadKane/smai-a4-iocnn-p0-torch
 - Paper de referencia: Sivaprasad et al., *The Curious Case of Convex Neural Networks*, arXiv:2006.05103 — https://arxiv.org/abs/2006.05103
 - Dataset CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado otros enlaces (blogs, repos, demos) en la información proporcionada.

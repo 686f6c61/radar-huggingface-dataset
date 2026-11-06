@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marin-Mochi-535B-A23B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por open-athena y publicado en HuggingFace bajo el identificador `open-athena/Marin-Mochi-535B-A23B`. Se trata de un modelo base (no instruido ni alineado) orientado a generación de texto, con un total de 535.000 millones de parámetros de los cuales 23.000 millones se activan por token, lo que sitúa la inferencia en un régimen de coste computacional comparable a un modelo denso de ~23B. La nomenclatura interna lo asocia a la familia «marin» y a la variante de arquitectura «grug_moe».
+Marin-Mochi-535B-A23B es un modelo de lenguaje de tipo mixture-of-experts (MoE) desarrollado por open-athena y publicado en Hugging Face bajo el identificador `open-athena/Marin-Mochi-535B-A23B`. Se trata de un modelo base (no instruido ni alineado) orientado a generación de texto, con un total de 535.000 millones de parámetros de los cuales 23.000 millones se activan por token, lo que sitúa la inferencia en un régimen de coste computacional comparable a un modelo denso de ~23B. La nomenclatura interna lo asocia a la familia «marin» y a la variante de arquitectura «grug_moe».
 
 El modelo resulta relevante por su escala: combina un número total de parámetros muy elevado con una activación dispersa relativamente baja, lo que permite desplegarlo en clústeres multi-GPU sin alcanzar el coste de un denso de 500B. Al ser un modelo base, está pensado como punto de partida para fine-tuning y para tareas de continuación de texto, no como asistente conversacional listo para producción.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Marin-Mochi-535B-A23B | 535B / 23B | no disponible | OpenMDW 1.1 | Gated en HuggingFace |
+| Marin-Mochi-535B-A23B | 535B / 23B | no disponible | OpenMDW 1.1 | Gated en Hugging Face |
 | DeepSeek-V3 (referencia MoE) | 671B / 37B | 128K | MIT (código) / licencia propia | Abierto |
 | Qwen3-235B-A22B (referencia MoE) | 235B / 22B | 128K | Apache 2.0 | Abierto |
 | Llama 4 Maverick (referencia MoE) | ~400B / 17B | 1M | Llama Community License | Abierto con condiciones |
@@ -80,14 +80,14 @@ Los datos de los modelos comparables se incluyen como referencia de categoría; 
 - Idiomas soportados no documentados: no se puede garantizar calidad fuera del inglés sin evaluación previa.
 - Longitud de contexto no publicada: limita la planificación de casos de uso con documentos largos.
 - Licencia OpenMDW 1.1: es necesario revisar los términos exactos para uso comercial, redistribución y obligaciones de atribución antes de integrar el modelo en productos.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede retrasar la adopción en entornos corporativos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede retrasar la adopción en entornos corporativos.
 - Tamaño del repositorio (~4 TB): el almacenamiento y la transferencia de pesos suponen un coste logístico significativo.
 - Ausencia de benchmarks públicos: no es posible validar el rendimiento frente a alternativas sin evaluación propia.
 - Sin información sobre cuantizaciones oficiales: la viabilidad de despliegue en hardware limitado no está garantizada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/Marin-Mochi-535B-A23B
+- Hugging Face: https://huggingface.co/open-athena/Marin-Mochi-535B-A23B
 - Licencia OpenMDW 1.1: no disponible enlace directo en la información proporcionada
 - Paper, blog o repositorio oficial: no disponible
 - Demos: no disponible

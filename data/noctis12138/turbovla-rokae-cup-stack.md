@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TurboVLA Rokae v3 es un modelo de visión-lenguaje-acción (VLA) para control robótico bimanual, desarrollado por el usuario Noctis12138 y publicado en HuggingFace. Está diseñado específicamente para una única tarea sobre un par de brazos Rokae AR5 con pinzas paralelas: apilar un vaso dentro de otro y colocar el conjunto apilado sobre un plato. El modelo emplea una arquitectura con backbone visual DINOv3-L, codificador de lenguaje BERT y una cabeza de acción denominada ActionMap, y se ha entrenado exclusivamente con 50 demostraciones reales de esa tarea.
+TurboVLA Rokae v3 es un modelo de visión-lenguaje-acción (VLA) para control robótico bimanual, desarrollado por el usuario Noctis12138 y publicado en Hugging Face. Está diseñado específicamente para una única tarea sobre un par de brazos Rokae AR5 con pinzas paralelas: apilar un vaso dentro de otro y colocar el conjunto apilado sobre un plato. El modelo emplea una arquitectura con backbone visual DINOv3-L, codificador de lenguaje BERT y una cabeza de acción denominada ActionMap, y se ha entrenado exclusivamente con 50 demostraciones reales de esa tarea.
 
 La relevancia del modelo es acotada pero concreta: sirve como banco de pruebas reproducible para evaluar políticas VLA de un solo brazo frente a configuraciones bimanuales, y comparte receta de entrenamiento con otros modelos de la misma familia (por ejemplo, la variante de cepillado de dientes y la de seis tareas). El checkpoint ocupa aproximadamente 1,8 GB y está pensado para inferencia en máquina real, no para uso general.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TurboVLA Rokae v3 (cup stack) | no disponible | no disponible | Apilado bimanual de vasos (50 demos) | other (DINOv3 + Apache-2.0) | HuggingFace |
-| TurboVLA Rokae (toothbrush) | no disponible | no disponible | Cepillado de dientes (10-21 real, 12/20 éxitos) | other | HuggingFace |
-| TurboVLA Rokae 6task | no disponible | no disponible | Seis tareas bimanuales | other | HuggingFace |
+| TurboVLA Rokae v3 (cup stack) | no disponible | no disponible | Apilado bimanual de vasos (50 demos) | other (DINOv3 + Apache-2.0) | Hugging Face |
+| TurboVLA Rokae (toothbrush) | no disponible | no disponible | Cepillado de dientes (10-21 real, 12/20 éxitos) | other | Hugging Face |
+| TurboVLA Rokae 6task | no disponible | no disponible | Seis tareas bimanuales | other | Hugging Face |
 
 Los tres modelos comparten arquitectura, receta de entrenamiento y paquete de despliegue; la diferencia principal es el número de tareas y el conjunto de demostraciones. No se dispone de datos de benchmarks comparables entre ellos más allá de las cifras de ajuste reportadas (3,7 mm frente a 3,8 mm de error medio de posición).
 
@@ -91,7 +91,7 @@ Los tres modelos comparten arquitectura, receta de entrenamiento y paquete de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Noctis12138/turbovla-rokae-cup-stack
+- Modelo en Hugging Face: https://huggingface.co/Noctis12138/turbovla-rokae-cup-stack
 - Variante cepillado de dientes: https://huggingface.co/Noctis12138/turbovla-rokae-toothbrush
 - Variante de seis tareas: https://huggingface.co/Noctis12138/turbovla-rokae-6task
 - Licencia DINOv3: `code/assets/dinov3-vitl16-pretrain-lvd1689m/LICENSE.md` (incluida en el repositorio)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cosmos1030/alps4b-s70-2term-step000512` es un checkpoint de pesos publicados en HuggingFace por el usuario `cosmos1030`. Se trata de un modelo de aproximadamente 4.022 millones de parametros (4,02 B) almacenados en formato `safetensors`, con un tamano de repositorio de 8,1 GB, lo que es coherente con pesos en precision de 16 bits (2 bytes por parametro). La etiqueta de arquitectura declarada en el repositorio es `qwen3`, lo que indica que el modelo deriva de la familia Qwen3, aunque no se especifica si se trata de un ajuste fino, un entrenamiento continuado o una variante experimental.
+`cosmos1030/alps4b-s70-2term-step000512` es un checkpoint de pesos publicados en Hugging Face por el usuario `cosmos1030`. Se trata de un modelo de aproximadamente 4.022 millones de parametros (4,02 B) almacenados en formato `safetensors`, con un tamano de repositorio de 8,1 GB, lo que es coherente con pesos en precision de 16 bits (2 bytes por parametro). La etiqueta de arquitectura declarada en el repositorio es `qwen3`, lo que indica que el modelo deriva de la familia Qwen3, aunque no se especifica si se trata de un ajuste fino, un entrenamiento continuado o una variante experimental.
 
 El nombre del repositorio sugiere la existencia de un pipeline o marco de entrenamiento propio del autor: `alps4b` apuntaria al tamano del modelo, `s70-2term` a alguna configuracion de entrenamiento con dos terminos de perdida o dos fases, y `step000512` a un checkpoint intermedio en el paso 512 de un entrenamiento en curso. Esta interpretacion no esta confirmada por ninguna documentacion publica.
 
@@ -50,7 +50,7 @@ Dado que no existe documentacion ni evaluacion publicada, los siguientes escenar
 - Generacion de texto asistida en local: con aproximadamente 8 GB en precision de 16 bits, o unos 2,5-3 GB cuantizado a 4 bits, podria desplegarse en una GPU de consumo para tareas de redaccion o resumen, siempre que su calidad resulte aceptable en pruebas previas.
 - Prototipado rapido de pipelines RAG: un modelo de 4 B es manejable para experimentar con recuperacion aumentada en un solo equipo, aunque su ventana de contexto efectiva es desconocida.
 - Investigacion sobre ajuste fino: serviria como punto de partida para experimentos de fine-tuning con LoRA, dado su tamano reducido y su compatibilidad con el ecosistema de Qwen3.
-- Docencia y experimentacion academica: util para ilustrar el ciclo completo de publicacion de checkpoints en HuggingFace y para practicar la carga de pesos con `transformers` y su cuantizacion con `bitsandbytes` o `llama.cpp`.
+- Docencia y experimentacion academica: util para ilustrar el ciclo completo de publicacion de checkpoints en Hugging Face y para practicar la carga de pesos con `transformers` y su cuantizacion con `bitsandbytes` o `llama.cpp`.
 - Inferencia en el borde: cuantizado a 4 bits podria ejecutarse en CPU o en dispositivos con 8 GB de memoria unificada, siempre que la latencia aceptable no sea critica.
 
 En todos los casos, la ausencia de licencia clara desaconseja su uso en entornos de produccion.
@@ -59,7 +59,7 @@ En todos los casos, la ausencia de licencia clara desaconseja su uso en entornos
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No se ha localizado ninguna tabla de resultados para MMLU, HumanEval, GSM8K, MT-Bench, Arena-Hard ni ninguna otra evaluacion estandar, ni en el repositorio de HuggingFace ni en los resultados de busqueda web. El autor no incluye cifras de evaluacion, y el repositorio no cuenta con model card que las recoja.
+No se ha localizado ninguna tabla de resultados para MMLU, HumanEval, GSM8K, MT-Bench, Arena-Hard ni ninguna otra evaluacion estandar, ni en el repositorio de Hugging Face ni en los resultados de busqueda web. El autor no incluye cifras de evaluacion, y el repositorio no cuenta con model card que las recoja.
 
 ## Requisitos de hardware
 
@@ -80,10 +80,10 @@ Los datos de la columna del modelo evaluado no estan disponibles; los de las alt
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cosmos1030/alps4b-s70-2term-step000512 | 4,02 B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-4B | 4,0 B | 32 768 tokens nativos, extensible con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama 3.2 3B | 3,2 B | 128 000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, ampliamente utilizado |
-| Gemma 3 4B | 4,0 B | 128 000 tokens | Licencia Gemma | HuggingFace, ampliamente utilizado |
+| cosmos1030/alps4b-s70-2term-step000512 | 4,02 B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-4B | 4,0 B | 32 768 tokens nativos, extensible con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama 3.2 3B | 3,2 B | 128 000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, ampliamente utilizado |
+| Gemma 3 4B | 4,0 B | 128 000 tokens | Licencia Gemma | Hugging Face, ampliamente utilizado |
 
 La diferencia fundamental no es de rendimiento sino de trazabilidad: las tres alternativas cuentan con model card completa, evaluaciones publicadas, licencia explicita y soporte en las principales herramientas de inferencia, mientras que el checkpoint objeto de esta ficha carece de todo ello. Sin resultados de benchmarks no es posible establecer una comparacion de calidad.
 
@@ -101,7 +101,7 @@ La diferencia fundamental no es de rendimiento sino de trazabilidad: las tres al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cosmos1030/alps4b-s70-2term-step000512
-- Perfil del autor en HuggingFace: https://huggingface.co/cosmos1030
+- Repositorio en Hugging Face: https://huggingface.co/cosmos1030/alps4b-s70-2term-step000512
+- Perfil del autor en Hugging Face: https://huggingface.co/cosmos1030
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.
 - Nota sobre la busqueda web: los resultados obtenidos no contienen informacion relacionada con el modelo; se limitan a enlaces genericos al servicio YouTube, sin conexion alguna con `cosmos1030/alps4b-s70-2term-step000512`.

@@ -25,7 +25,7 @@ Esta ficha se centra en la versión cuantizada GGUF, que requiere además un pro
 
 OvisOCR2 se basa en la arquitectura Ovis, un MLLM que introduce un diseño novedoso para alinear estructuralmente los embeddings visuales y textuales. Según el informe técnico (arXiv:2607.13639), el modelo está pensado como un parser de extremo a extremo: recibe una imagen de página y genera una representación Markdown en orden de lectura natural, cubriendo texto, fórmulas, tablas y regiones visuales. El entrenamiento utiliza un motor de datos que combina anotaciones reales de documentos filtrados con páginas sintéticas cuyas imágenes renderizadas y objetivos Markdown se generan automáticamente.
 
-La versión cuantizada ASHQ1-Remix aplica una cuantización GGUF sensible a la activación, donde cada ratio, suelo y tope se derivan de experimentos medidos. La suite soporta BF16 nativo como referencia y linaje AutoRound con límites de saturación explícitos. Se validó en seis familias de modelos, aunque no se especifican los detalles de dicha validación en la información disponible. El repositorio de HuggingFace incluye además los proyectores multimodales necesarios para el procesamiento de imágenes, disponibles en F32, F16 y BF16.
+La versión cuantizada ASHQ1-Remix aplica una cuantización GGUF sensible a la activación, donde cada ratio, suelo y tope se derivan de experimentos medidos. La suite soporta BF16 nativo como referencia y linaje AutoRound con límites de saturación explícitos. Se validó en seis familias de modelos, aunque no se especifican los detalles de dicha validación en la información disponible. El repositorio de Hugging Face incluye además los proyectores multimodales necesarios para el procesamiento de imágenes, disponibles en F32, F16 y BF16.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Soulfate24/OvisOCR2-ASHQ1-Remix-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Soulfate24/OvisOCR2-ASHQ1-Remix-GGUF
 - Suite de cuantización ASHQ1-Remix: https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite
 - Repositorio GitHub del modelo base Ovis: https://github.com/ATH-MaaS/Ovis
 - Informe técnico de OvisOCR2 (arXiv): https://arxiv.org/abs/2607.13639v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) del modelo base meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario vkovtun en HuggingFace. El nombre del repositorio indica que su propósito declarado es la generación de consultas SQL a partir de lenguaje natural (text-to-SQL) y que el entrenamiento se realizó mediante QLoRA, una técnica de ajuste eficiente en parámetros que congela los pesos originales y entrena adaptadores de bajo rango sobre una representación cuantizada a 4 bits. El entrenamiento se llevó a cabo con la librería TRL de HuggingFace mediante SFT (supervised fine-tuning).
+Este modelo es un ajuste fino (fine-tune) del modelo base meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario vkovtun en Hugging Face. El nombre del repositorio indica que su propósito declarado es la generación de consultas SQL a partir de lenguaje natural (text-to-SQL) y que el entrenamiento se realizó mediante QLoRA, una técnica de ajuste eficiente en parámetros que congela los pesos originales y entrena adaptadores de bajo rango sobre una representación cuantizada a 4 bits. El entrenamiento se llevó a cabo con la librería TRL de Hugging Face mediante SFT (supervised fine-tuning).
 
 El modelo hereda del base Llama-3.1-8B-Instruct la arquitectura transformer decoder-only de aproximadamente 8.000 millones de parámetros y una ventana de contexto de 128.000 tokens, lo que teóricamente permite manejar esquemas de base de datos extensos y muchos ejemplos de pares pregunta-SQL en el prompt. Sin embargo, el repositorio no publica detalles sobre el dataset de entrenamiento, el número de pasos, la composición de los datos ni evaluaciones de rendimiento, por lo que su calidad real en tareas text-to-SQL no puede verificarse a partir de la información disponible.
 
@@ -84,11 +84,11 @@ La comparación cuantitativa de rendimiento no es posible porque no hay benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vkovtun/llama-text-to-sql-2026-10-01_20.20.51-Llama-3.1-8B-Instruct-finetune-QLORA
+- Repositorio Hugging Face: https://huggingface.co/vkovtun/llama-text-to-sql-2026-10-01_20.20.51-Llama-3.1-8B-Instruct-finetune-QLORA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Librería TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento (Weights & Biases): https://wandb.ai/viktor-kovtun/llama-text-to-sql/runs/uam0skj8
 - Repositorio relacionado del mismo autor: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-22_11.38.10-finetune-QLORA
 - Proyecto SQL-LLaMA2 (referencia externa): https://github.com/DominikLindorfer/SQL-LLaMA2
-- Guía de HuggingFace sobre fine-tuning de Llama 2 para text-to-SQL: https://medium.com/llamaindex-blog/easily-finetune-llama-2-for-your-text-to-sql-applications-ecd53640e10d
+- Guía de Hugging Face sobre fine-tuning de Llama 2 para text-to-SQL: https://medium.com/llamaindex-blog/easily-finetune-llama-2-for-your-text-to-sql-applications-ecd53640e10d
 - Ejemplo de Text-to-SQL con LlamaIndex: https://developers.llamaindex.ai/python/examples/index_structs/struct_indices/sqlindexdemo/

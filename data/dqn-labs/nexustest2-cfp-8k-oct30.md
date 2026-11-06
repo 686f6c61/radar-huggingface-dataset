@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| nexustest2-cfp-8k-oct30 (este) | ~27,8B | no disponible | Apache 2.0 | sí (image-text-to-text) | HuggingFace |
-| Qwen2.5-VL-32B | ~32B | 128k (según documentación pública de Qwen) | Apache 2.0 | sí | HuggingFace |
-| Gemma 3 27B | ~27B | 128k (según documentación pública de Google) | Gemma license | sí | HuggingFace |
-| Mistral Small 3.1 24B | ~24B | 128k (según documentación pública de Mistral) | Apache 2.0 | sí | HuggingFace |
+| nexustest2-cfp-8k-oct30 (este) | ~27,8B | no disponible | Apache 2.0 | sí (image-text-to-text) | Hugging Face |
+| Qwen2.5-VL-32B | ~32B | 128k (según documentación pública de Qwen) | Apache 2.0 | sí | Hugging Face |
+| Gemma 3 27B | ~27B | 128k (según documentación pública de Google) | Gemma license | sí | Hugging Face |
+| Mistral Small 3.1 24B | ~24B | 128k (según documentación pública de Mistral) | Apache 2.0 | sí | Hugging Face |
 
 Los datos de contexto de los modelos comparables provienen de su documentación pública; los de este modelo no están confirmados. No se dispone de benchmarks para comparar rendimiento real.
 
@@ -83,7 +83,7 @@ Los datos de contexto de los modelos comparables provienen de su documentación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DQN-Labs/nexustest2-cfp-8k-oct30
+- Hugging Face: https://huggingface.co/DQN-Labs/nexustest2-cfp-8k-oct30
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

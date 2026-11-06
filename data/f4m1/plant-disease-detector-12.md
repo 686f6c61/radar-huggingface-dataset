@@ -72,14 +72,14 @@ No se dispone de datos comparativos de otros modelos de detección de enfermedad
 
 - Es un modelo de investigación con rendimiento variable según la clase de enfermedad y el dominio de imagen (campo vs. laboratorio).
 - No constituye un diagnóstico profesional; las predicciones deben ser interpretadas por agrónomos o expertos.
-- El repositorio de HuggingFace parece vacío (tamaño 0.0 GB), por lo que no se han publicado los pesos `best.pt` accesibles; el usuario debe obtenerlos de otra fuente o entrenar el modelo.
+- El repositorio de Hugging Face parece vacío (tamaño 0.0 GB), por lo que no se han publicado los pesos `best.pt` accesibles; el usuario debe obtenerlos de otra fuente o entrenar el modelo.
 - La licencia no está definida, lo que impide el uso comercial sin permiso explícito.
 - No se especifica el origen exacto de los datos de entrenamiento, lo que genera incertidumbre sobre posibles sesgos en la representación de ciertos cultivos o condiciones.
 - La precisión y recall son moderados; en aplicaciones críticas se recomienda un umbral de confianza más alto y validación humana.
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/f4m1/plant-disease-detector-12)
+- [Hugging Face del modelo](https://huggingface.co/f4m1/plant-disease-detector-12)
 - [Modelo clasificador de cultivo complementario (f4m1/plant-classifier-39)](https://huggingface.co/f4m1/plant-classifier-39)
 - [Space de ejemplo de detección de enfermedades (prince12raj)](https://huggingface.co/spaces/prince12raj/plant-disease-detector)
 - [Artículo científico sobre diagnóstico de enfermedades en plantas con CNN (Nature)](https://www.nature.com/articles/s41598-025-34681-1)

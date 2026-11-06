@@ -77,8 +77,8 @@ Datos adicionales del mismo informe: en las tomas largas la mejora es de 1,37 a 
 
 | Modelo | Parametros | Formato | PESQ | STOI | OVRL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| audiojs/dereverb-room | 29,4 M | ONNX fp16 | 2,65 | 0,940 | 2,98 | GPL-3.0 | HuggingFace, ejecutable en navegador |
-| anvuew/dereverb_room | 29,4 M | checkpoint PyTorch (.ckpt + .yaml) | mismos pesos; no evaluado por separado en esta model card | mismos pesos | mismos pesos | GPL-3.0 | HuggingFace, requiere el codigo de ZFTurbo |
+| audiojs/dereverb-room | 29,4 M | ONNX fp16 | 2,65 | 0,940 | 2,98 | GPL-3.0 | Hugging Face, ejecutable en navegador |
+| anvuew/dereverb_room | 29,4 M | checkpoint PyTorch (.ckpt + .yaml) | mismos pesos; no evaluado por separado en esta model card | mismos pesos | mismos pesos | GPL-3.0 | Hugging Face, requiere el codigo de ZFTurbo |
 | iZotope RX 12 De-reverb | no disponible (propietario) | binario comercial | 1,45 | 0,779 | 2,32 | propietaria | producto comercial |
 | iZotope RX 12 Dialogue Isolate (sin reverb) | no disponible (propietario) | binario comercial | 1,79 | 0,837 | 2,70 | propietaria | producto comercial |
 
@@ -100,7 +100,7 @@ Frente al modelo base, esta copia aporta el grafo ONNX y los pesos en float16 co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/audiojs/dereverb-room
+- Modelo en Hugging Face: https://huggingface.co/audiojs/dereverb-room
 - Modelo base (checkpoint original de anvuew): https://huggingface.co/anvuew/dereverb_room
 - Articulo de la arquitectura: "Music Source Separation with Band-Split RoPE Transformer" (Lu, Wang, Kong, Hung, ICASSP 2024), https://arxiv.org/abs/2309.02612
 - Codigo de entrenamiento e inferencia: https://github.com/ZFTurbo/Music-Source-Separation-Training (archivo `models/bs_roformer/bs_roformer.py`)

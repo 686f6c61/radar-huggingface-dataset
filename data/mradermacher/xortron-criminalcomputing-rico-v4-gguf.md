@@ -67,8 +67,8 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| XORTRON-CriminalComputing-RICO-v4-GGUF | ~27,3 B | no disponible | no disponible | GGUF en HuggingFace | Fusion experimental, sin benchmarks publicos |
-| darkc0de/XORTRON-CriminalComputing-RICO-v4 | no disponible | no disponible | no disponible | modelo base en HuggingFace | Origen de esta cuantizacion |
+| XORTRON-CriminalComputing-RICO-v4-GGUF | ~27,3 B | no disponible | no disponible | GGUF en Hugging Face | Fusion experimental, sin benchmarks publicos |
+| darkc0de/XORTRON-CriminalComputing-RICO-v4 | no disponible | no disponible | no disponible | modelo base en Hugging Face | Origen de esta cuantizacion |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se han identificado comparables documentados en la informacion suministrada |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-RICO-v4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/XORTRON-CriminalComputing-RICO-v4-GGUF
 - Modelo base: https://huggingface.co/darkc0de/XORTRON-CriminalComputing-RICO-v4
 - Dataset de referencia: https://huggingface.co/datasets/darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#XORTRON-CriminalComputing-RICO-v4-GGUF

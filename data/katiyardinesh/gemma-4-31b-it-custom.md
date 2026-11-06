@@ -3,7 +3,7 @@
 # Ficha de modelo: gemma-4-31B-it-custom
 
 ## Resumen
-`katiyardinesh/gemma-4-31B-it-custom` es un ajuste fino publicado en HuggingFace por el usuario katiyardinesh sobre `google/gemma-4-31B`, el modelo denso de mayor tamano de la familia Gemma 4 de Google DeepMind. Se distribuye con licencia Apache 2.0, en formato safetensors y con la etiqueta de pipeline `image-text-to-text`, lo que indica entrada multimodal de texto e imagen con salida de texto. El repositorio ocupa 62,6 GB y contiene 31.273.088.876 parametros segun los pesos publicados.
+`katiyardinesh/gemma-4-31B-it-custom` es un ajuste fino publicado en Hugging Face por el usuario katiyardinesh sobre `google/gemma-4-31B`, el modelo denso de mayor tamano de la familia Gemma 4 de Google DeepMind. Se distribuye con licencia Apache 2.0, en formato safetensors y con la etiqueta de pipeline `image-text-to-text`, lo que indica entrada multimodal de texto e imagen con salida de texto. El repositorio ocupa 62,6 GB y contiene 31.273.088.876 parametros segun los pesos publicados.
 
 El modelo hereda la arquitectura descrita para la familia Gemma 4 en la model card: transformer decoder-only denso de 60 capas, ventana deslizante de 1024 tokens combinada con atencion global, vocabulario de 262K tokens, contexto de hasta 256K tokens y un encoder de vision de aproximadamente 550M de parametros. La familia incorpora modos de razonamiento configurables, soporte nativo de *function calling* y del rol `system`.
 
@@ -99,9 +99,9 @@ El modelo 26B A4B activa solo 3,8B parametros por token (8 expertos activos de 1
 - No se documenta el tratamiento de datos ni posibles sesgos introducidos por el ajuste.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/katiyardinesh/gemma-4-31B-it-custom
+- Modelo en Hugging Face: https://huggingface.co/katiyardinesh/gemma-4-31B-it-custom
 - Modelo base: https://huggingface.co/google/gemma-4-31B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

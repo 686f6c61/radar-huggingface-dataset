@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Insusty/on-device-models` es un repositorio publicado en HuggingFace por el usuario Insusty bajo licencia Apache 2.0. Por el nombre del identificador, el repositorio parece orientado a alojar modelos pensados para ejecucion en dispositivo (on-device), es decir, inferencia local en hardware de consumo o embebido. Sin embargo, la model card publicada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, contexto ni datos de entrenamiento.
+`Insusty/on-device-models` es un repositorio publicado en Hugging Face por el usuario Insusty bajo licencia Apache 2.0. Por el nombre del identificador, el repositorio parece orientado a alojar modelos pensados para ejecucion en dispositivo (on-device), es decir, inferencia local en hardware de consumo o embebido. Sin embargo, la model card publicada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, contexto ni datos de entrenamiento.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, fue creado el 1 de noviembre de 2026 y no se ha actualizado desde entonces. No tiene pipeline declarado ni idiomas especificados en los metadatos. Estos indicios apuntan a un repositorio recien creado, vacio o en fase muy temprana de publicacion, sin material evaluable.
 
@@ -76,5 +76,5 @@ No disponible. Al no conocerse parametros, contexto ni rendimiento del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Insusty/on-device-models
+- Repositorio en Hugging Face: https://huggingface.co/Insusty/on-device-models
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

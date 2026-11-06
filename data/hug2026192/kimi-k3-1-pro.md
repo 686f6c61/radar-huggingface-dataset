@@ -86,8 +86,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hug2026192/Kimi-K3.1-Pro
-- Organizacion Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Hugging Face: https://huggingface.co/hug2026192/Kimi-K3.1-Pro
+- Organizacion Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Blog tecnico: https://www.kimi.ai/blog/kimi-k3-1-pro
 - Documentacion de API: https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart
 - Web oficial: https://www.kimi.ai

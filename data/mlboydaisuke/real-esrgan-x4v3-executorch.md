@@ -79,7 +79,7 @@ No se dispone de datos comparativos directos con otras conversiones de Real-ESRG
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/Real-ESRGAN-x4v3-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/Real-ESRGAN-x4v3-ExecuTorch
 - Repositorio de conversion (executorch-models): https://github.com/john-rocky/executorch-models
 - Repositorio original de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Variante LiteRT del mismo autor: https://huggingface.co/mlboydaisuke/real-esrgan-x4v3-litert

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Estevale/Detector_de_alteraciones_de_materiales` es un repositorio publicado en HuggingFace por el usuario Estevale bajo licencia CC-BY-4.0. Por el nombre del identificador cabe deducir que su proposito declarado seria la deteccion de alteraciones o defectos en materiales, aunque la model card publicada no contiene mas que el bloque de metadatos de licencia y ninguna descripcion funcional, arquitectura, dataset ni instrucciones de uso. Se registro el 15 de septiembre de 2026 y no presenta actualizaciones posteriores.
+El modelo `Estevale/Detector_de_alteraciones_de_materiales` es un repositorio publicado en Hugging Face por el usuario Estevale bajo licencia CC-BY-4.0. Por el nombre del identificador cabe deducir que su proposito declarado seria la deteccion de alteraciones o defectos en materiales, aunque la model card publicada no contiene mas que el bloque de metadatos de licencia y ninguna descripcion funcional, arquitectura, dataset ni instrucciones de uso. Se registro el 15 de septiembre de 2026 y no presenta actualizaciones posteriores.
 
 En el momento de redactar esta ficha el repositorio acumula cero descargas y cero likes, no tiene pipeline declarado, no especifica idiomas soportados y no incluye ningun fichero de pesos documentado publicamente ni tarjeta tecnica. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo: los enlaces recuperados corresponden a tiendas de kits de diamond painting y resultan completamente ajenos al contenido del repositorio.
 
@@ -74,5 +74,5 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Estevale/Detector_de_alteraciones_de_materiales
+- Hugging Face: https://huggingface.co/Estevale/Detector_de_alteraciones_de_materiales
 - No se han encontrado enlaces relevantes adicionales (paper, blog, repositorio o demo) en la busqueda web.

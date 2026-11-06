@@ -32,7 +32,7 @@ El entrenamiento se realizo con el corpus TORGO, que contiene 2.651 utterances (
 - Reconocimiento automatico del habla en ingles, especializado en habla disartrica adulta (paralisis cerebral, ELA).
 - Reduccion significativa del WER frente al modelo base: del 84,4% al 34,6% en el hablante mas afectado del corpus TORGO.
 - Mejora de la precision de palabras individuales: del 8,1% al 67,6% en el mismo hablante.
-- Compatible con el ecosistema HuggingFace Transformers y PEFT: el adaptador puede cargarse, fusionarse con el modelo base y usarse con la API estandar de generacion.
+- Compatible con el ecosistema Hugging Face Transformers y PEFT: el adaptador puede cargarse, fusionarse con el modelo base y usarse con la API estandar de generacion.
 - Requiere especificacion explicita del idioma (`language="en"`), ya que Whisper tiende a detectar incorrectamente el idioma en habla atipica.
 - No soporta tool calling, agentes ni capacidades multimodales: es exclusivamente un modelo de ASR.
 
@@ -62,17 +62,17 @@ El modelo base sin adaptar muestra una diferencia de ~16x en WER entre habla con
 - Inferencia en CPU: el modelo fusionado (Whisper-small + LoRA) tiene 245M de parametros, por lo que puede ejecutarse en CPU sin problemas. El entrenamiento completo se realizo en CPU de portatil en 2,5 horas, lo que indica que la inferencia es viable en hardware modesto.
 - VRAM estimada: aproximadamente 1-2 GB para inferencia en FP32, menos de 1 GB con cuantizacion a int8 o fp16. Cabe en cualquier GPU consumer moderna (GTX 1060 en adelante).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. Una RTX 3060 o superior permitira inferencia en tiempo real sin problemas.
-- Opciones de despliegue: el adaptador es compatible con HuggingFace Transformers y PEFT, por lo que puede desplegarse con cualquier servidor que soporte estas librerias. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje, no a ASR.
+- Opciones de despliegue: el adaptador es compatible con Hugging Face Transformers y PEFT, por lo que puede desplegarse con cualquier servidor que soporte estas librerias. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje, no a ASR.
 - Latencia: no disponible en la informacion proporcionada, pero al tratarse de un modelo de 245M de parametros, la latencia en GPU moderna deberia ser inferior a 100 ms por utterance corta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER en M04 (TORGO) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `whisper-small` (stock) | 244M | 30 s | 84,4% | MIT | HuggingFace |
+| `whisper-small` (stock) | 244M | 30 s | 84,4% | MIT | Hugging Face |
 | + LoRA mono-hablante | 244M + 3,5M | 30 s | 50,8% | Apache 2.0 | no publicado |
-| **CoHear (este modelo)** | 244M + 3,5M | 30 s | **34,6%** | Apache 2.0 | HuggingFace |
-| `whisper-tiny` / `whisper-base` | 39M / 74M | 30 s | no disponible | MIT | HuggingFace |
+| **CoHear (este modelo)** | 244M + 3,5M | 30 s | **34,6%** | Apache 2.0 | Hugging Face |
+| `whisper-tiny` / `whisper-base` | 39M / 74M | 30 s | no disponible | MIT | Hugging Face |
 
 La comparativa directa con otros modelos adaptados a habla disartrica no esta disponible en la informacion proporcionada. Los modelos Whisper de menor tamano (tiny, base) probablemente ofrecerian un rendimiento aun peor que whisper-small en habla disartrica, dado que su capacidad es menor.
 

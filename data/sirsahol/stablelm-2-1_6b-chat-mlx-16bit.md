@@ -84,10 +84,10 @@ La informacion disponible solo permite comparar esta publicacion con sus variant
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SirSahOl/stablelm-2-1_6b-chat-mlx-16bit | 1,64 mil millones | no disponible | MLX safetensors, 16 bits | other | Publico en HuggingFace, 0 descargas, 0 likes |
-| SirSahOl/stablelm-2-1_6b-chat-mlx-8bit | 1,64 mil millones | no disponible | MLX safetensors, 8 bits | other | Publico en HuggingFace |
-| SirSahOl/stablelm-2-1_6b-chat-mlx-4bit | 1,64 mil millones | no disponible | MLX safetensors, 4 bits | other | Publico en HuggingFace |
-| stabilityai/stablelm-2-1_6b (origen) | 1,64 mil millones | no disponible en esta informacion | safetensors (PyTorch) | other | Publico en HuggingFace |
+| SirSahOl/stablelm-2-1_6b-chat-mlx-16bit | 1,64 mil millones | no disponible | MLX safetensors, 16 bits | other | Publico en Hugging Face, 0 descargas, 0 likes |
+| SirSahOl/stablelm-2-1_6b-chat-mlx-8bit | 1,64 mil millones | no disponible | MLX safetensors, 8 bits | other | Publico en Hugging Face |
+| SirSahOl/stablelm-2-1_6b-chat-mlx-4bit | 1,64 mil millones | no disponible | MLX safetensors, 4 bits | other | Publico en Hugging Face |
+| stabilityai/stablelm-2-1_6b (origen) | 1,64 mil millones | no disponible en esta informacion | safetensors (PyTorch) | other | Publico en Hugging Face |
 
 Datos comparativos de velocidad en un Apple M1 con 8 GB (256 tokens maximos, media de 5 ejecuciones): 47,84 tokens/s en 4 bits, 29,85 en 8 bits y 16,53 en 16 bits. No se dispone de informacion sobre alternativas de terceros de tamano similar (por ejemplo, otros modelos de aproximadamente 1,5-2 mil millones de parametros) que pueda contrastarse con los datos proporcionados.
 
@@ -107,7 +107,7 @@ Datos comparativos de velocidad en un Apple M1 con 8 GB (256 tokens maximos, med
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-16bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-16bit
 - Modelo de origen: https://huggingface.co/stabilityai/stablelm-2-1_6b
 - Variante 4-bit: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-4bit
 - Variante 8-bit: https://huggingface.co/SirSahOl/stablelm-2-1_6b-chat-mlx-8bit

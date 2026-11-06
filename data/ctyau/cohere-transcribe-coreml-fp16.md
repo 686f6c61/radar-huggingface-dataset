@@ -100,7 +100,7 @@ Los resultados de la búsqueda web no contienen información relevante sobre mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ctyau/cohere-transcribe-coreml-fp16
+- Repositorio en Hugging Face: https://huggingface.co/ctyau/cohere-transcribe-coreml-fp16
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
 - Aplicación Voxtype (integracion de referencia): https://github.com/CedricYauLBD/voxtype
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (papers, blogs o demos) sobre este modelo; los resultados devueltos no guardan relacion con el contenido de la ficha.

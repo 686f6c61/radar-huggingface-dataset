@@ -69,6 +69,6 @@ No se ha identificado ningún modelo comparable, ya que no se trata de un modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f29a6f980e7e
+- Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f29a6f980e7e
 
 No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repositorios) relacionados con este modelo concreto.

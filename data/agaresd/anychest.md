@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnyCXR es un modelo de segmentación anatómica de radiografías de tórax que cubre vistas frontal (AP y PA), lateral (LA) y seis grupos oblicuos nominales (22,5°, 45°, 67,5°, 112,5°, 135° y 157,5°). Lo desarrolla el Advanced AI in Medicine and Physics Lab y se publica en HuggingFace bajo el identificador `agaresd/anychest`. Resuelve un problema concreto: la mayoría de segmentadores torácicos están entrenados solo para proyecciones frontales, lo que limita su uso en estudios con proyecciones laterales u oblicuas, habituales en exploraciones radiológicas reales.
+AnyCXR es un modelo de segmentación anatómica de radiografías de tórax que cubre vistas frontal (AP y PA), lateral (LA) y seis grupos oblicuos nominales (22,5°, 45°, 67,5°, 112,5°, 135° y 157,5°). Lo desarrolla el Advanced AI in Medicine and Physics Lab y se publica en Hugging Face bajo el identificador `agaresd/anychest`. Resuelve un problema concreto: la mayoría de segmentadores torácicos están entrenados solo para proyecciones frontales, lo que limita su uso en estudios con proyecciones laterales u oblicuas, habituales en exploraciones radiológicas reales.
 
 La arquitectura es una ConvNeXt V2 Large con los módulos CAS-lite y AMFS, con JTR desactivado. El modelo produce 54 canales anatómicos independientes a partir de entradas de 384 × 384 píxeles, con una rejilla de salida nativa de 96 × 96. Se distribuyen cuatro familias de modelos (frontal, lateral, oblicuo y todas las vistas), cada una con un checkpoint de inferencia y otro de entrenamiento completo: ocho archivos en total, con un tamaño de repositorio de 21,6 GB.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tarea | Vistas | Canales de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnyCXR (este modelo) | Segmentación anatómica de tórax | AP, PA, LA y 6 grupos oblicuos | 54 | other | HuggingFace, 8 checkpoints |
+| AnyCXR (este modelo) | Segmentación anatómica de tórax | AP, PA, LA y 6 grupos oblicuos | 54 | other | Hugging Face, 8 checkpoints |
 | Segmentadores torácicos frontales genéricos | Segmentación anatómica de tórax | Solo frontal | Variable | Variable | No disponible en la información proporcionada |
 | Alternativas laterales/oblicuas específicas | Segmentación anatómica de tórax | Lateral u oblicua | Variable | Variable | No disponible en la información proporcionada |
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agaresd/anychest
+- Modelo en Hugging Face: https://huggingface.co/agaresd/anychest
 - Repositorio del proyecto y código fuente: https://github.com/Advanced-AI-in-Medicine-and-Physics-Lab/AnyCXR
 - Paper (preprint): https://arxiv.org/abs/2512.17263
 - Guía del runtime de inferencia: https://huggingface.co/agaresd/anychest/blob/main/runtime/README.md

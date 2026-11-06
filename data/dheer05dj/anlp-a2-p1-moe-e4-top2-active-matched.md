@@ -6,7 +6,7 @@
 
 La arquitectura declarada en la model card es compacta: `d_model` de 512, 8 capas, 8 cabezas de atencion, RoPE para codificacion posicional, RMSNorm y embeddings atados (tied embeddings). El bloque feed-forward usa 4 expertos con enrutamiento top-2, de ahi el sufijo `e4-top2` del identificador. Los pesos en safetensors suman 58.352.128 parametros totales, de los cuales 41.567.000 (aproximadamente) se activan por token en inferencia; el sufijo `active-matched` sugiere que la configuracion se diseno para igualar el numero de parametros activos de una linea base densa, un experimento habitual para comparar MoE frente a denso con presupuesto de computo comparable.
 
-Su relevancia es fundamentalmente metodologica y educativa: sirve como caso de estudio de un MoE pequeno entrenado de principio a fin (107,3 millones de tokens en 10 minutos y 38 segundos), con metricas de traduccion publicadas (BLEU global 39,95; perplejidad de test 4,301). No hay informacion sobre licencia, idiomas declarados en metadatos de HuggingFace, longitud de contexto ni cuantizaciones publicadas, por lo que su uso en produccion requiere precaucion y verificacion manual.
+Su relevancia es fundamentalmente metodologica y educativa: sirve como caso de estudio de un MoE pequeno entrenado de principio a fin (107,3 millones de tokens en 10 minutos y 38 segundos), con metricas de traduccion publicadas (BLEU global 39,95; perplejidad de test 4,301). No hay informacion sobre licencia, idiomas declarados en metadatos de Hugging Face, longitud de contexto ni cuantizaciones publicadas, por lo que su uso en produccion requiere precaucion y verificacion manual.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Su relevancia es fundamentalmente metodologica y educativa: sirve como caso de e
 
 El modelo es un transformer decoder-only implementado desde cero en PyTorch, sin dependencia de bibliotecas de modelado estandar como `transformers`. La configuracion (`d_model` 512, 8 capas, 8 cabezas, RoPE, RMSNorm, tied embeddings) se almacena en `config.json` y es consumida por `src/part1/model.py` del repositorio de la assignment. La innovacion tecnica central es la capa feed-forward: en lugar de un FFN denso unico, se emplean 4 expertos con enrutamiento top-2 por token, lo que eleva el total de parametros a 58,35 M mientras mantiene 41,57 M activos por paso de inferencia. El identificador `active-matched` indica que la configuracion se ajusto para igualar el computo activo de una variante densa de referencia, presumiblemente para aislar el efecto del enrutamiento en la calidad de traduccion.
 
-El entrenamiento consumio 107.305.098 tokens y se completo en 10 minutos y 38 segundos, segun la model card. No se documentan en la informacion disponible la composicion exacta del dataset, el numero de pasos, el tamano de batch, la tasa de aprendizaje ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se detalla el mecanismo de balanceo de carga entre expertos (auxiliary loss, capacity factor, etc.), un aspecto critico en MoE que queda sin especificar. La carga del checkpoint requiere codigo propio: la model card indica `src.part1.train.load_checkpoint(dir)`, y el modelo esta vinculado al repositorio de la assignment, no a un pipeline estandar de HuggingFace.
+El entrenamiento consumio 107.305.098 tokens y se completo en 10 minutos y 38 segundos, segun la model card. No se documentan en la informacion disponible la composicion exacta del dataset, el numero de pasos, el tamano de batch, la tasa de aprendizaje ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se detalla el mecanismo de balanceo de carga entre expertos (auxiliary loss, capacity factor, etc.), un aspecto critico en MoE que queda sin especificar. La carga del checkpoint requiere codigo propio: la model card indica `src.part1.train.load_checkpoint(dir)`, y el modelo esta vinculado al repositorio de la assignment, no a un pipeline estandar de Hugging Face.
 
 ## Capacidades
 
@@ -92,16 +92,16 @@ La informacion disponible solo permite identificar una alternativa dentro del mi
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dheer05dj/anlp-a2-p1-moe-e4-top2-active-matched | 58,35 M totales / 41,57 M activos | no disponible | Traduccion vi-en y ja-en | no disponible | HuggingFace, 0 descargas |
-| abhirajratna/anlp-a2-moe-v5 | no disponible | no disponible | Traduccion vi-en y ja-en | no disponible | HuggingFace |
-| Otras variantes bajo el tag `anlp-assignment-2` | no disponible | no disponible | Traduccion vi-en y ja-en | no disponible | HuggingFace |
+| dheer05dj/anlp-a2-p1-moe-e4-top2-active-matched | 58,35 M totales / 41,57 M activos | no disponible | Traduccion vi-en y ja-en | no disponible | Hugging Face, 0 descargas |
+| abhirajratna/anlp-a2-moe-v5 | no disponible | no disponible | Traduccion vi-en y ja-en | no disponible | Hugging Face |
+| Otras variantes bajo el tag `anlp-assignment-2` | no disponible | no disponible | Traduccion vi-en y ja-en | no disponible | Hugging Face |
 
 El modelo comparable mas cercano es `abhirajratna/anlp-a2-moe-v5`, descrito como una de cinco variantes que solo difieren en la capa feed-forward, lo que confirma que existe una familia de experimentos controlados dentro de la misma assignment. No se dispone de sus parametros, metricas de BLEU ni licencia, por lo que no es posible establecer una comparacion cuantitativa. No se han identificado alternativas de proposito general comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - Caracter academico: es un checkpoint de una assignment universitaria, no un modelo validado para produccion. No hay garantia de mantenimiento, soporte ni estabilidad de la API de carga.
-- Licencia no especificada: al no declararse licencia en HuggingFace, no hay autorizacion explicita de uso comercial. Cualquier uso en produccion requiere contactar con el autor.
+- Licencia no especificada: al no declararse licencia en Hugging Face, no hay autorizacion explicita de uso comercial. Cualquier uso en produccion requiere contactar con el autor.
 - Idiomas limitados: el entrenamiento documentado cubre unicamente vietnamita, japones e ingles. No hay evidencia de soporte para castellano ni para otras lenguas.
 - Volumen de entrenamiento reducido: 107,3 M de tokens es un presupuesto muy bajo para estandar de calidad en traduccion; es probable que aparezcan errores en terminologia especializada, nombres propios, expresiones idiomaticas y frases largas.
 - Riesgo de alucinacion: como todo modelo generativo autoregresivo entrenado con objetivo de maxima verosimilitud, puede producir contenido fluido pero incorrecto, especialmente fuera del dominio del corpus de entrenamiento.
@@ -114,7 +114,7 @@ El modelo comparable mas cercano es `abhirajratna/anlp-a2-moe-v5`, descrito como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p1-moe-e4-top2-active-matched
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p1-moe-e4-top2-active-matched
 - Registros de entrenamiento en Weights & Biases: https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part1-moe/runs/rkmcejv2
 - Modelo relacionado de la misma assignment: https://huggingface.co/abhirajratna/anlp-a2-moe-v5
 - Busqueda de modelos con el tag de la assignment: https://huggingface.co/models?other=anlp-assignment-2

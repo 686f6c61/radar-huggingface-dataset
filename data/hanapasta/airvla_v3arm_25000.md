@@ -87,7 +87,7 @@ La model card califica el resultado como «peor en todos los ejes» respecto a l
 
 | Modelo | Parametros | Contexto | Rendimiento en el protocolo congelado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hanapasta/airvla_v3arm_25000` | no disponible | no disponible | 0/60 agarre, 38/60 objetivo correcto, 264,2 mm, 7/20 navegación | MIT | HuggingFace (0 descargas, 0 likes) |
+| `hanapasta/airvla_v3arm_25000` | no disponible | no disponible | 0/60 agarre, 38/60 objetivo correcto, 264,2 mm, 7/20 navegación | MIT | Hugging Face (0 descargas, 0 likes) |
 | Base v2 de la campaña AirVLA (controlador de fase de tarea) | no disponible | no disponible | 1/60 agarre, 42/60 objetivo correcto, 170,8 mm, 9/20 navegación | no disponible | Referenciada en la model card; no se enlaza un repositorio propio |
 | `lerobot/pi0` (modelo base) | no disponible en la información proporcionada | no disponible | no evaluado en este protocolo | no disponible en la información proporcionada | Repositorio LeRobot |
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparables frente a otras políticas VLA d
 
 ## Enlaces
 
-- [Modelo en HuggingFace: hanapasta/airvla_v3arm_25000](https://huggingface.co/hanapasta/airvla_v3arm_25000)
+- [Modelo en Hugging Face: hanapasta/airvla_v3arm_25000](https://huggingface.co/hanapasta/airvla_v3arm_25000)
 - [Repositorio de código, guía de reproducción y registro experimental: robotics-hana/drone-version2](https://github.com/robotics-hana/drone-version2)
 - [Modelo base: lerobot/pi0](https://huggingface.co/lerobot/pi0)
 - [Dataset de entrenamiento citado: hanapasta/airvla_v3](https://huggingface.co/datasets/hanapasta/airvla_v3)

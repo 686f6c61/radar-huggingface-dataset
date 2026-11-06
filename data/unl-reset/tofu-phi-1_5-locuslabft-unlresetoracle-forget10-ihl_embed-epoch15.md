@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch15` es un checkpoint de investigacion derivado de Phi-1.5, publicado por el usuario `unl-reset` en HuggingFace. Se trata de un modelo de lenguaje de 1.418.270.720 parametros (aproximadamente 1,4 mil millones) construido sobre `locuslab/tofu_ft_phi-1.5`, que a su vez es un ajuste fino de `microsoft/phi-1_5` sobre el conjunto de datos TOFU (Task of Fictitious Unlearning).
+El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch15` es un checkpoint de investigacion derivado de Phi-1.5, publicado por el usuario `unl-reset` en Hugging Face. Se trata de un modelo de lenguaje de 1.418.270.720 parametros (aproximadamente 1,4 mil millones) construido sobre `locuslab/tofu_ft_phi-1.5`, que a su vez es un ajuste fino de `microsoft/phi-1_5` sobre el conjunto de datos TOFU (Task of Fictitious Unlearning).
 
 El proposito del modelo es servir como artefacto experimental dentro de la linea de investigacion de *machine unlearning* (desaprendizaje automatico). Segun la model card, el checkpoint corresponde a la epoca 15 de 20 de un procedimiento que combina reinicializacion de los embeddings de entrada y de la cabeza LM (inicializados de nuevo desde `microsoft/phi-1_5`) con un objetivo de entrenamiento que combina *token IHL* sobre el conjunto "forget" y entropia cruzada (CE) con peso 1.0 sobre el conjunto "retain". El sufijo `forget10` indica que se persigue olvidar el 10 % de los datos ficticios de TOFU.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch15
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch15
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5

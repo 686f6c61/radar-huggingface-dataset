@@ -96,7 +96,7 @@ Latencia declarada en una H200 para una captura de 1280x720:
 
 | Modelo | Parametros | Contexto | Multimodalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OneJev (familia) | 0,8B / 4B / 9B / 27B | No disponible | Imagen, video y texto | Apache 2.0 | HuggingFace y GitHub de OmniJev |
+| OneJev (familia) | 0,8B / 4B / 9B / 27B | No disponible | Imagen, video y texto | Apache 2.0 | Hugging Face y GitHub de OmniJev |
 | Jev 1.13 | No disponible | No disponible | Solo texto | No disponible | Puntuaciones publicadas por sus autores |
 | Jev-Omni 12B | 12B | No disponible | Si (segun nombre) | No disponible | No disponible |
 | Qwen3.8-27B (thinking) | 27B | No disponible | No disponible | No disponible | No disponible |
@@ -119,8 +119,8 @@ La comparativa se limita a los modelos que el propio autor usa como referencia. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmniJev/OneJev
-- Organizacion en HuggingFace: https://huggingface.co/OmniJev
+- Modelo en Hugging Face: https://huggingface.co/OmniJev/OneJev
+- Organizacion en Hugging Face: https://huggingface.co/OmniJev
 - Repositorio GitHub oficial: https://github.com/OmniJev/OneJev
 - Organizacion en GitHub: https://github.com/OmniJev/
 - Sitio web del proyecto: https://omnijev.github.io/OneJev/

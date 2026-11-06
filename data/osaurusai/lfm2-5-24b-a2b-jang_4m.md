@@ -130,7 +130,7 @@ No hay datos de benchmarks estandar ni de rendimiento comparado entre estos mode
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/OsaurusAI/LFM2.5-24B-A2B-JANG_4M
+- Hugging Face del bundle: https://huggingface.co/OsaurusAI/LFM2.5-24B-A2B-JANG_4M
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Variante alternativa JANGH2: https://huggingface.co/OsaurusAI/LFM2.5-24B-A2B-JANGH2
 - Blog de Liquid AI sobre LFM2.5-24B-A2B: https://www.liquid.ai/blog/lfm2-5-24b-a2b

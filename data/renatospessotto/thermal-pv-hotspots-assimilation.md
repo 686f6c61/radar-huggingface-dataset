@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Enfoque | Generalización entre cámaras | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| thermal-pv-hotspots-assimilation (R4) | DINOv3 congelado + asimilación de datos | AUROC 0,927 en cámara nueva | dinov3-derived | HuggingFace + GitHub |
-| thermal-pv-hotspots-assimilation (R0) | DINOv3 congelado + pseudo-color | AUROC 0,836 en cámara nueva | dinov3-derived | HuggingFace + GitHub |
+| thermal-pv-hotspots-assimilation (R4) | DINOv3 congelado + asimilación de datos | AUROC 0,927 en cámara nueva | dinov3-derived | Hugging Face + GitHub |
+| thermal-pv-hotspots-assimilation (R0) | DINOv3 congelado + pseudo-color | AUROC 0,836 en cámara nueva | dinov3-derived | Hugging Face + GitHub |
 | Detectores térmicos convencionales dependientes de cámara | Entrenamiento y umbral por sensor | Degradación al cambiar de cámara (no cuantificada en la información) | variable | no disponible |
 
 No se dispone en la información proporcionada de otros modelos comparables con métricas publicadas bajo el mismo protocolo de evaluación.
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de otros modelos comparables con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RenatoSpessotto/thermal-pv-hotspots-assimilation
+- Hugging Face: https://huggingface.co/RenatoSpessotto/thermal-pv-hotspots-assimilation
 - GitHub: https://github.com/renatospessotto/thermal-pv-hotspots-assimilation
 - Resultados: https://github.com/renatospessotto/thermal-pv-hotspots-assimilation/blob/main/docs/resultados.md
 - Backbone DINOv3: https://huggingface.co/facebook/dinov3-vitb16-pretrain-lvd1689m

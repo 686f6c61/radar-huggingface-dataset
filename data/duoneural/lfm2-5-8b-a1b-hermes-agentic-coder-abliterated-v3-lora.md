@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-LoRA` es un adaptador LoRA publicado en HuggingFace por el usuario DuoNeural, entrenado sobre el modelo base `DuoNeural/LFM2.5-8B-A1B-Abliterated`, que a su vez es una variante "abliterated" (con los mecanismos de rechazo eliminados) de un modelo de la familia LFM2.5-8B-A1B. Se distribuye en formato PEFT sobre `safetensors`, con un peso de repositorio de 0,1 GB, lo que corresponde únicamente a los pesos del adaptador y no al modelo completo.
+`DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-LoRA` es un adaptador LoRA publicado en Hugging Face por el usuario DuoNeural, entrenado sobre el modelo base `DuoNeural/LFM2.5-8B-A1B-Abliterated`, que a su vez es una variante "abliterated" (con los mecanismos de rechazo eliminados) de un modelo de la familia LFM2.5-8B-A1B. Se distribuye en formato PEFT sobre `safetensors`, con un peso de repositorio de 0,1 GB, lo que corresponde únicamente a los pesos del adaptador y no al modelo completo.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: la model card publicada es la plantilla por defecto de HuggingFace sin rellenar, sin descripción, sin licencia, sin idiomas declarados, sin datos de entrenamiento ni resultados de evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la búsqueda web asociada no ha devuelto ningún resultado relevante (los enlaces recuperados corresponden a foros de un videojuego y no guardan relación con el modelo).
+La relevancia de esta ficha es limitada y conviene ser explícito: la model card publicada es la plantilla por defecto de Hugging Face sin rellenar, sin descripción, sin licencia, sin idiomas declarados, sin datos de entrenamiento ni resultados de evaluación. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y la búsqueda web asociada no ha devuelto ningún resultado relevante (los enlaces recuperados corresponden a foros de un videojuego y no guardan relación con el modelo).
 
 Por tanto, todo lo que puede afirmarse con rigor procede del identificador del modelo, de las etiquetas del repositorio y del tamaño del artefacto. La denominación sugiere un ajuste orientado a uso conversacional, agéntico y de generación de código, sobre una arquitectura de tipo mixture of experts (MoE) con aproximadamente 8.000 millones de parámetros totales y ~1.000 millones activos, pero ninguno de estos extremos está confirmado por documentación del autor.
 
@@ -79,8 +79,8 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-LoRA | no disponible (nombre sugiere 8B totales / 1B activos) | no disponible | no disponible | publico en HuggingFace, 0 descargas | artefacto LoRA de 0,1 GB |
-| Modelo base DuoNeural/LFM2.5-8B-A1B-Abliterated | no disponible | no disponible | no disponible | publico en HuggingFace | referenciado como base del adaptador |
+| DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-LoRA | no disponible (nombre sugiere 8B totales / 1B activos) | no disponible | no disponible | publico en Hugging Face, 0 descargas | artefacto LoRA de 0,1 GB |
+| Modelo base DuoNeural/LFM2.5-8B-A1B-Abliterated | no disponible | no disponible | no disponible | publico en Hugging Face | referenciado como base del adaptador |
 | Alternativas de la misma categoria (modelos MoE de ~8B totales con ~1B activos, o adaptadores de codigo/agénticos) | no disponible | no disponible | no disponible | no disponible | no recuperados en la busqueda |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-LoRA
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-LoRA
 - Modelo base: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Abliterated
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Articulo original de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

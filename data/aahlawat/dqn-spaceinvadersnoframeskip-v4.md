@@ -80,9 +80,9 @@ No se dispone de datos comparativos verificables para este agente. La tabla reco
 
 | Modelo | Algoritmo | Entorno | Parámetros | Contexto | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| aahlawat/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | 769,00 +/- 411,42 | no disponible | HuggingFace |
-| Agentes DQN del RL Zoo para el mismo entorno | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | no disponible | RL Zoo / HuggingFace |
-| Agentes PPO, A2C o QR-DQN del RL Zoo para el mismo entorno | PPO / A2C / QR-DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | no disponible | RL Zoo / HuggingFace |
+| aahlawat/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | 769,00 +/- 411,42 | no disponible | Hugging Face |
+| Agentes DQN del RL Zoo para el mismo entorno | DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | no disponible | RL Zoo / Hugging Face |
+| Agentes PPO, A2C o QR-DQN del RL Zoo para el mismo entorno | PPO / A2C / QR-DQN | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | no disponible | RL Zoo / Hugging Face |
 
 No se han encontrado en la información proporcionada resultados de benchmarks comparativos con estos u otros agentes.
 
@@ -101,7 +101,7 @@ No se han encontrado en la información proporcionada resultados de benchmarks c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aahlawat/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/aahlawat/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (repositorio): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

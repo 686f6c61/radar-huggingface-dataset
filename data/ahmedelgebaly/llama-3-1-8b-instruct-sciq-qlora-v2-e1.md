@@ -71,16 +71,16 @@ No hay datos de MMLU, HumanEval, GSM8K ni de comparación con otros modelos.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1 | 8B (base) + adaptador LoRA | no disponible (base: 128k) | Adaptador QLoRA sobre Llama 3.1 | llama3.1 | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Modelo instruct completo | llama3.1 | HuggingFace, ampliamente usado |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1 | 8B (base) + adaptador LoRA | no disponible (base: 128k) | Adaptador QLoRA sobre Llama 3.1 | llama3.1 | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Modelo instruct completo | llama3.1 | Hugging Face, ampliamente usado |
 | Adaptadores SciQ QLoRA de otros autores | 8B (base) | depende del base | Adaptador LoRA | variable | no disponible |
-| Modelos de QA científico especializados (p. ej. SciBERT, BioBERT) | 110M-340M | 512 tokens | Encoder especializado en ciencia | variable | HuggingFace |
+| Modelos de QA científico especializados (p. ej. SciBERT, BioBERT) | 110M-340M | 512 tokens | Encoder especializado en ciencia | variable | Hugging Face |
 
 La comparación directa con modelos de QA científico basados en encoder no es homogénea: este adaptador es generativo y depende del modelo base, mientras que SciBERT o BioBERT son extractivos y mucho más pequeños. Frente al Llama 3.1 8B Instruct original, la diferencia principal es el ajuste en formato Alpaca sobre SciQ, sin datos públicos que cuantifiquen la mejora.
 
 ## Limitaciones y advertencias
 
-- No es un modelo autónomo: requiere descargar y cargar el modelo base meta-llama/Llama-3.1-8B-Instruct, que está sujeto a aceptación de licencia en HuggingFace.
+- No es un modelo autónomo: requiere descargar y cargar el modelo base meta-llama/Llama-3.1-8B-Instruct, que está sujeto a aceptación de licencia en Hugging Face.
 - Riesgo de alucinación en contenidos científicos: el ajuste con una sola época y 260 pasos sobre un dataset limitado no garantiza precisión factual; las respuestas deben validarse.
 - Sesgos heredados del modelo base Llama 3.1, no evaluados ni mitigados en este adaptador.
 - Idiomas soportados no documentados; el entrenamiento se realizó presumiblemente en inglés, por lo que el rendimiento en castellano no está verificado.
@@ -91,7 +91,7 @@ La comparación directa con modelos de QA científico basados en encoder no es h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1
+- Modelo en Hugging Face: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-v2-e1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/ahmedelgebaly/SciQ_Alpaca
 - Licencia Llama 3.1: https://www.llama.com/llama3_1/license/

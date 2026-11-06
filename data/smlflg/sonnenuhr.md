@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sonnenuhr no es un modelo de inteligencia artificial ni un modelo de lenguaje: es un daemon local escrito en Python que ajusta la luminosidad del monitor y la temperatura de color en funcion de la posicion del sol. Lo publica el usuario `smlflg` en HuggingFace bajo el identificador `smlflg/Sonnenuhr`, con 0 descargas y 0 likes en el momento de la consulta, y sin pipeline, licencia ni idiomas declarados. La model card esta redactada en aleman y describe un servicio de escritorio, no un artefacto de pesos neuronales.
+Sonnenuhr no es un modelo de inteligencia artificial ni un modelo de lenguaje: es un daemon local escrito en Python que ajusta la luminosidad del monitor y la temperatura de color en funcion de la posicion del sol. Lo publica el usuario `smlflg` en Hugging Face bajo el identificador `smlflg/Sonnenuhr`, con 0 descargas y 0 likes en el momento de la consulta, y sin pipeline, licencia ni idiomas declarados. La model card esta redactada en aleman y describe un servicio de escritorio, no un artefacto de pesos neuronales.
 
 El problema que resuelve es el clasico de la fatiga visual y la disrupcion del ritmo circadiano: en lugar de fijar manualmente el brillo y el tono de pantalla, el daemon calcula periodicamente los valores objetivo a partir de la ubicacion geografica y la fase del dia, y los aplica al hardware de visualizacion. Se ejecuta con una bucle de actualizacion periodica (por defecto cada 30 segundos), acepta comandos de control a traves de un socket Unix (`/tmp/sonnenuhr.sock`) y, opcionalmente, tiene en cuenta el cambio de tema de COSMIC.
 
@@ -21,7 +21,7 @@ Es relevante para desarrolladores de escritorio Linux que quieran una gestion au
 | Licencia | no disponible |
 | Formato de pesos | no aplica (no distribuye pesos; es codigo fuente y configuracion JSON) |
 | Tipo de artefacto | proyecto de software / daemon de sistema |
-| ID en HuggingFace | smlflg/Sonnenuhr |
+| ID en Hugging Face | smlflg/Sonnenuhr |
 | Dependencia Python declarada | `astral>=3.2` (segun `requirements.txt`) |
 | Herramientas externas requeridas | `ddcutil`, `brightnessctl`, `gammastep` y comandos de tema de COSMIC |
 | Configuracion por defecto | `config/sonnenuhr.json` |
@@ -107,6 +107,6 @@ Los datos de funcionalidad de las alternativas no estan recogidos en la informac
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/smlflg/Sonnenuhr
+- Model card en Hugging Face: https://huggingface.co/smlflg/Sonnenuhr
 - No se han encontrado en la busqueda web enlaces a papers, blogs, repositorios adicionales ni demos de este proyecto. Los resultados devueltos correspondian a dominios de comercio electronico sin relacion con el modelo.
 - Rutas internas relevantes documentadas en la model card: `config/sonnenuhr.json`, `~/.config/sonnenuhr/config.json`, `services/sonnenuhr.service`, `/tmp/sonnenuhr.sock`, `/tmp/sonnenuhr-state.json`, `/tmp/sonnenuhr.log`, `/tmp/sonnenuhr.lock`.

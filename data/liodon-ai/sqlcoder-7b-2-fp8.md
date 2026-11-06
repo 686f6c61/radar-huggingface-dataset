@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/sqlcoder-7b-2-FP8 | 6.738.546.688 | no disponible | FP8 dinámica | other | HuggingFace |
-| defog/sqlcoder-7b-2 | ~7B | no disponible | BF16/FP16 original | other | HuggingFace |
-| defog/sqlcoder-7b | ~7B | no disponible | BF16/FP16 original | other | HuggingFace |
+| liodon-ai/sqlcoder-7b-2-FP8 | 6.738.546.688 | no disponible | FP8 dinámica | other | Hugging Face |
+| defog/sqlcoder-7b-2 | ~7B | no disponible | BF16/FP16 original | other | Hugging Face |
+| defog/sqlcoder-7b | ~7B | no disponible | BF16/FP16 original | other | Hugging Face |
 
 La comparativa se limita al modelo base y su versión anterior, ya que la información proporcionada no incluye datos de rendimiento ni especificaciones detalladas de alternativas de otros autores.
 
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base y su versión anterior, ya que la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/sqlcoder-7b-2-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/sqlcoder-7b-2-FP8
 - Modelo base: https://huggingface.co/defog/sqlcoder-7b-2
 - Herramienta de cuantización llm-compressor: https://github.com/vllm-project/llm-compressor
 - Perfil del autor: https://huggingface.co/liodon-ai

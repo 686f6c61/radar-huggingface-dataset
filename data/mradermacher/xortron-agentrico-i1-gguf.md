@@ -92,7 +92,7 @@ Los datos de contexto y licencia de los modelos alternativos provienen de sus re
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/XORTRON-AgentRICO-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/XORTRON-AgentRICO-i1-GGUF
 - Modelo base: https://huggingface.co/darkc0de/XORTRON-AgentRICO
 - Repositorio de cuantizaciones estáticas y ficheros mmproj: https://huggingface.co/mradermacher/XORTRON-AgentRICO-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/darkc0de/The-Mind-of-XORTRON

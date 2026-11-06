@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye resultados de otros clasi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_invites_reading_aloud
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_invites_reading_aloud
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

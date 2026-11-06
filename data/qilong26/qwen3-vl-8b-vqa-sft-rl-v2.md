@@ -46,7 +46,7 @@ No disponible. No se han publicado datos comparativos con otros modelos en la in
 - La falta de información sobre el dataset de entrenamiento y las capacidades reales dificulta la evaluación de idoneidad para producción.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-RL-v2
+- Hugging Face: https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-RL-v2
 - Modelo anterior (RL v1): https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-RL
 - Modelo base: https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

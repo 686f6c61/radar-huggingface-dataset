@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi05_FAST_robotwin_post_training_ES` es un checkpoint de investigación de un modelo de visión-lenguaje-acción (VLA) para manipulación robótica, publicado por Prachi Garg en HuggingFace bajo el ecosistema openpi. Se trata de un fine-tuning de π0.5 con tokens FAST sobre el benchmark RoboTwin, concretamente sobre las tareas de apilado de bloques (*stack blocks*) de la etapa 2, partiendo del checkpoint intermedio `pi05_FAST_robotwin_mid_training`. El sufijo "ES" indica que es el checkpoint *baseline* del artículo "Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation" (arXiv 2608.19490).
+`pi05_FAST_robotwin_post_training_ES` es un checkpoint de investigación de un modelo de visión-lenguaje-acción (VLA) para manipulación robótica, publicado por Prachi Garg en Hugging Face bajo el ecosistema openpi. Se trata de un fine-tuning de π0.5 con tokens FAST sobre el benchmark RoboTwin, concretamente sobre las tareas de apilado de bloques (*stack blocks*) de la etapa 2, partiendo del checkpoint intermedio `pi05_FAST_robotwin_mid_training`. El sufijo "ES" indica que es el checkpoint *baseline* del artículo "Fine-Tuning VLAs with Self-Demonstrated Generative Control for Multi-Task Manipulation" (arXiv 2608.19490).
 
 El modelo resuelve el problema de adaptar un VLA preentrenado a tareas de manipulación multi-tarea en simulación mediante post-entrenamiento con demostraciones expertas. Es relevante porque acompaña a un artículo que propone el uso de control generativo auto-demostrado para el fine-tuning de VLA, y porque se distribuye con licencia Apache 2.0, lo que facilita su reproducción y comparación.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_FAST_robotwin_post_training_ES | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| pi05_FAST_robotwin_mid_training | no disponible | no disponible | no disponible | no disponible | HuggingFace (checkpoint previo del mismo autor) |
+| pi05_FAST_robotwin_post_training_ES | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| pi05_FAST_robotwin_mid_training | no disponible | no disponible | no disponible | no disponible | Hugging Face (checkpoint previo del mismo autor) |
 | π0.5 (base, Physical Intelligence) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento comparables entre estas variantes en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- [HuggingFace: prachigarg23/pi05_FAST_robotwin_post_training_ES](https://huggingface.co/prachigarg23/pi05_FAST_robotwin_post_training_ES)
+- [Hugging Face: prachigarg23/pi05_FAST_robotwin_post_training_ES](https://huggingface.co/prachigarg23/pi05_FAST_robotwin_post_training_ES)
 - [Paper (arXiv 2608.19490)](https://arxiv.org/abs/2608.19490)
 - [Project page](https://self-supervised-control.pages.dev/)
 - [Código](https://github.com/prachigarg23/self-supervised-continual-control)

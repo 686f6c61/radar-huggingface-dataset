@@ -67,4 +67,4 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- [HuggingFace - Kaz55/dexwild-act-dg5f-ur5e-newcable-v5v6](https://huggingface.co/Kaz55/dexwild-act-dg5f-ur5e-newcable-v5v6)
+- [Hugging Face - Kaz55/dexwild-act-dg5f-ur5e-newcable-v5v6](https://huggingface.co/Kaz55/dexwild-act-dg5f-ur5e-newcable-v5v6)

@@ -19,7 +19,7 @@ Su relevancia practica radica en que permite ejecutar un MoE de ~26 B en hardwar
 | Tipos de cuantizacion | Q2_K, Q4_K_S, Q8_0 (y suplementos multimodales mmproj-Q8_0 y mmproj-f16) |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en formato HuggingFace/safetensors |
+| Formato de pesos | GGUF (este repositorio); el modelo base se distribuye en formato Hugging Face/safetensors |
 
 ## Arquitectura y entrenamiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
   - Q4_K_S: GPU de 16 GB (RTX 4060 Ti 16GB, RTX 4080) o 24 GB (RTX 3090/4090).
   - Q8_0: GPU de 32 GB (RTX 5090) o 40/80 GB (A100, H100).
 - Cabe en GPU de consumo: si, en el rango Q2_K y Q4_K_S; tambien puede ejecutarse en CPU con suficiente RAM, dado que solo se activan ~3 B de parametros por token.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan y otros runtimes compatibles con GGUF. El flag endpoints_compatible sugiere compatibilidad con servidores de endpoint estilo OpenAI. Para el modelo base en formato HuggingFace serian aplicables vLLM, TGI o SGLang, pero este repositorio concreto es GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan y otros runtimes compatibles con GGUF. El flag endpoints_compatible sugiere compatibilidad con servidores de endpoint estilo OpenAI. Para el modelo base en formato Hugging Face serian aplicables vLLM, TGI o SGLang, pero este repositorio concreto es GGUF.
 - Latencia y throughput: no disponibles. Al ser MoE con ~3 B activos, el throughput por token deberia ser mas alto que el de un modelo denso de 26 B, pero no se aportan cifras.
 
 ## Comparativa con modelos similares

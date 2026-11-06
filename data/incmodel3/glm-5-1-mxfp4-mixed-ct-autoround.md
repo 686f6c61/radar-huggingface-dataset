@@ -64,9 +64,9 @@ No se han publicado resultados adicionales en la informacion disponible.
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.1 (original) | 753B | BF16 | no disponible | no especificada | HuggingFace |
-| INCModel3/GLM-5.1-MXFP4-Mixed-CT-AutoRound | 753B | MXFP4/MXFP8 | no disponible | MIT (cuantizacion) | HuggingFace |
-| INC4AI/GLM-5.1-int4-mixed-AutoRound | 753B | INT4 mixto | no disponible | no especificada | HuggingFace |
+| GLM-5.1 (original) | 753B | BF16 | no disponible | no especificada | Hugging Face |
+| INCModel3/GLM-5.1-MXFP4-Mixed-CT-AutoRound | 753B | MXFP4/MXFP8 | no disponible | MIT (cuantizacion) | Hugging Face |
+| INC4AI/GLM-5.1-int4-mixed-AutoRound | 753B | INT4 mixto | no disponible | no especificada | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo INC4AI para comparar directamente.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento del modelo INC4AI para comparar directamen
 
 ## Enlaces
 
-- [HuggingFace - INCModel3/GLM-5.1-MXFP4-Mixed-CT-AutoRound](https://huggingface.co/INCModel3/GLM-5.1-MXFP4-Mixed-CT-AutoRound)
+- [Hugging Face - INCModel3/GLM-5.1-MXFP4-Mixed-CT-AutoRound](https://huggingface.co/INCModel3/GLM-5.1-MXFP4-Mixed-CT-AutoRound)
 - [Modelo original GLM-5.1](https://huggingface.co/zai-org/GLM-5.1)
 - [Intel AutoRound (GitHub)](https://github.com/intel/auto-round)
 - [Paper de AutoRound (arXiv)](https://arxiv.org/abs/2309.05516)

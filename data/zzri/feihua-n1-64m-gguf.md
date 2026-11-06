@@ -103,7 +103,7 @@ Frente a modelos generalistas de tamaño similar o mayor (por ejemplo, la famili
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este modelo): https://huggingface.co/ZZRI/Feihua-n1-64M-GGUF
+- Repositorio en Hugging Face (este modelo): https://huggingface.co/ZZRI/Feihua-n1-64M-GGUF
 - Modelo base: https://huggingface.co/ZZRI/Feihua-n1-64M
 - Versión podada, 49M y 6 capas: https://huggingface.co/ZZRI/Feihua-n1-64M-prune-GGUF
 - Marco de entrenamiento minimind: https://github.com/jingyaogong/minimind

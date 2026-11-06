@@ -37,7 +37,7 @@ Sobre el entrenamiento solo se declara el volumen de datos: 11.796 B tokens, un 
 - Generacion de texto autoregresiva en turco e ingles.
 - Uso conversacional multi-turno (etiqueta `conversational` en el repositorio y ejemplo `llama-cli -cnv` en la model card).
 - Inferencia local en CPU mediante llama.cpp, Ollama y LM Studio.
-- Compatible con endpoints de inferencia de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con endpoints de inferencia de Hugging Face (etiqueta `endpoints_compatible`).
 - Capacidad de razonamiento, codigo o matematicas: no documentada ni verificada.
 - Soporte de tool calling / function calling: no documentado.
 - Soporte de agentes o multi-step reasoning: no documentado.
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cevher-406m-v15 (este modelo) | 406 M | no disponible | Apache 2.0 | GGUF en HuggingFace | Entrenado desde cero, foco en turco; sin benchmarks publicados |
-| SmolLM2-360M | 360 M | no verificado en esta ficha | Apache 2.0 | safetensors y GGUF en HuggingFace | Arquitectura de referencia en la que se basa este modelo; si dispone de benchmarks publicos por parte de HuggingFace |
+| cevher-406m-v15 (este modelo) | 406 M | no disponible | Apache 2.0 | GGUF en Hugging Face | Entrenado desde cero, foco en turco; sin benchmarks publicados |
+| SmolLM2-360M | 360 M | no verificado en esta ficha | Apache 2.0 | safetensors y GGUF en Hugging Face | Arquitectura de referencia en la que se basa este modelo; si dispone de benchmarks publicos por parte de Hugging Face |
 | Qwen2.5-0.5B | 494 M | 32.768 tokens (documentacion publica del autor) | Apache 2.0 | safetensors, GGUF, multiples runtimes | Soporte multilingue amplio y documentacion extensa |
 | TinyLlama-1.1B | 1.100 M | 2.048 tokens (documentacion publica del autor) | Apache 2.0 | safetensors, GGUF | Mayor tamano, mas coste de inferencia, ecosistema maduro |
 
@@ -88,7 +88,7 @@ Los datos de contexto de los modelos alternativos provienen de su documentacion 
 - Licencia permisiva pero con obligaciones: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios realizados.
 - Adopcion nula: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - Posible discrepancia de nomenclatura: el repositorio se llama `cevher-test-6` mientras que la model card titula el modelo `cevher-406m-v15`, lo que puede indicar versiones distintas o un repositorio de pruebas.
-- Fecha de creacion inusual en los metadatos de HuggingFace (2026-09-28), que conviene contrastar antes de citar el modelo.
+- Fecha de creacion inusual en los metadatos de Hugging Face (2026-09-28), que conviene contrastar antes de citar el modelo.
 
 ## Enlaces
 

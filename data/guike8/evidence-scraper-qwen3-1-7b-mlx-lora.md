@@ -83,9 +83,9 @@ Las pruebas separadas de capacidad de cita exacta hecho-evidencia quedaron en 0/
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evidence-scraper-qwen3-1.7b-mlx-lora (este) | 1,7 B (base) + LoRA | no disponible | Extraccion web dirigida por esquema con evidencia | Apache 2.0 | Adaptador MLX en HuggingFace, 0 descargas |
-| Qwen3-1.7B (base, `mlx-community/Qwen3-1.7B-4bit`) | 1,7 B | no disponible | Modelo generalista de texto | Apache 2.0 | Disponible en HuggingFace |
-| Qwen3-1.7B sin cuantizar | 1,7 B | no disponible | Modelo generalista de texto | Apache 2.0 | Disponible en HuggingFace |
+| evidence-scraper-qwen3-1.7b-mlx-lora (este) | 1,7 B (base) + LoRA | no disponible | Extraccion web dirigida por esquema con evidencia | Apache 2.0 | Adaptador MLX en Hugging Face, 0 descargas |
+| Qwen3-1.7B (base, `mlx-community/Qwen3-1.7B-4bit`) | 1,7 B | no disponible | Modelo generalista de texto | Apache 2.0 | Disponible en Hugging Face |
+| Qwen3-1.7B sin cuantizar | 1,7 B | no disponible | Modelo generalista de texto | Apache 2.0 | Disponible en Hugging Face |
 
 La comparacion relevante es contra su propia base: el adaptador mejora la precision cruda de campos requeridos (95,44% frente a 81,58% en test) y reduce la latencia p95, pero solo el adaptador produce registros aceptados tras validacion (41/108 frente a 0/108). No se dispone de comparacion con otros scrapers o modelos de extraccion en la informacion proporcionada.
 
@@ -107,7 +107,7 @@ La comparacion relevante es contra su propia base: el adaptador mejora la precis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guike8/evidence-scraper-qwen3-1.7b-mlx-lora
+- Hugging Face: https://huggingface.co/guike8/evidence-scraper-qwen3-1.7b-mlx-lora
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit
 - Codigo del scraper: https://github.com/guike8/evidence-ai-scraper-public
 - Informe del experimento: https://github.com/guike8/evidence-ai-scraper-public/blob/main/training/RESULTS.md

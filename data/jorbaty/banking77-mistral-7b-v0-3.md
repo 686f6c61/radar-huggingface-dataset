@@ -82,9 +82,9 @@ No se han publicado en la informacion disponible resultados de benchmarks adicio
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jorbaty/banking77-mistral-7b-v0.3 | 7,25 mil millones | 32.768 tokens (heredado del base) | Clasificacion de 77 intenciones bancarias en ingles | apache-2.0 | safetensors BF16 en HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 tokens | Asistente generalista, generacion de texto e instrucciones | apache-2.0 | safetensors y otros formatos en HuggingFace |
-| mistralai/Mistral-7B-v0.3 | 7,25 mil millones | 32.768 tokens | Modelo base sin ajuste de instrucciones | apache-2.0 | safetensors y otros formatos en HuggingFace |
+| Jorbaty/banking77-mistral-7b-v0.3 | 7,25 mil millones | 32.768 tokens (heredado del base) | Clasificacion de 77 intenciones bancarias en ingles | apache-2.0 | safetensors BF16 en Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 tokens | Asistente generalista, generacion de texto e instrucciones | apache-2.0 | safetensors y otros formatos en Hugging Face |
+| mistralai/Mistral-7B-v0.3 | 7,25 mil millones | 32.768 tokens | Modelo base sin ajuste de instrucciones | apache-2.0 | safetensors y otros formatos en Hugging Face |
 | Clasificadores tipo BERT ajustados en Banking77 | no disponible | no disponible | Clasificacion de 77 intenciones bancarias | no disponible | no disponible |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en Banking77 en la informacion proporcionada. La comparacion con el modelo base es de tipo funcional, no de rendimiento: el base no esta especializado en clasificacion de intenciones y su rendimiento en esa tarea no se ha publicado aqui.
@@ -103,7 +103,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en Bankin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jorbaty/banking77-mistral-7b-v0.3
+- Modelo en Hugging Face: https://huggingface.co/Jorbaty/banking77-mistral-7b-v0.3
 - Modelo base Mistral-7B-Instruct-v0.3: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Modelo Mistral-7B-v0.3: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Documentacion de Mistral 7B v0.3: https://docs.mistral.ai/models/mistral-7b-0-3

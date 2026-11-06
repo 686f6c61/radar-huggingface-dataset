@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`atlmillergil/contrastive` es un repositorio de HuggingFace publicado por el usuario atlmillergil que contiene una implementación funcional ("working implementation") de una arquitectura denominada **Mae**, configurada para experimentos de aprendizaje **contrastivo** con una escala declarada como "huge" en su configuración. El artefacto principal no es un modelo entrenado, sino código (`model.py`) acompanado de `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
+`atlmillergil/contrastive` es un repositorio de Hugging Face publicado por el usuario atlmillergil que contiene una implementación funcional ("working implementation") de una arquitectura denominada **Mae**, configurada para experimentos de aprendizaje **contrastivo** con una escala declarada como "huge" en su configuración. El artefacto principal no es un modelo entrenado, sino código (`model.py`) acompanado de `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
 
 El dato objetivo mas relevante es el recuento real de parametros: **49.600 parametros** en el checkpoint de safetensors, es decir, un modelo de escala experimental (del orden de 0,2 MB en fp32). Existe una discrepancia importante entre la etiqueta "huge" del `config.json` y el tamano efectivo del tensor serializado; el propio autor aclara que el checkpoint es valido para *smoke tests* y que no se presenta como un checkpoint entrenado ni evaluado.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables: n
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atlmillergil/contrastive | 49.600 | no disponible | sin benchmarks (checkpoint de inicializacion) | MIT | HuggingFace |
+| atlmillergil/contrastive | 49.600 | no disponible | sin benchmarks (checkpoint de inicializacion) | MIT | Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,5 +101,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables: n
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/atlmillergil/contrastive](https://huggingface.co/atlmillergil/contrastive)
+- Hugging Face: [https://huggingface.co/atlmillergil/contrastive](https://huggingface.co/atlmillergil/contrastive)
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web realizada; los resultados obtenidos no guardan relacion con este modelo.

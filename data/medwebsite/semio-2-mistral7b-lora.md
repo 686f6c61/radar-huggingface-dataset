@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, F
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Semio-2 (LoRA) | Adaptador sobre 7,24 mil millones (base) | No disponible (base: 32 768 tokens) | Medica, frances, QCM ECN | Apache 2.0 | HuggingFace, 0 descargas |
-| Mistral-7B-Instruct-v0.2 (base) | 7,24 mil millones | 32 768 tokens | Generalista | Apache 2.0 | HuggingFace, ampliamente usado |
+| Semio-2 (LoRA) | Adaptador sobre 7,24 mil millones (base) | No disponible (base: 32 768 tokens) | Medica, frances, QCM ECN | Apache 2.0 | Hugging Face, 0 descargas |
+| Mistral-7B-Instruct-v0.2 (base) | 7,24 mil millones | 32 768 tokens | Generalista | Apache 2.0 | Hugging Face, ampliamente usado |
 | FrenchMedMCQA (modelos afinados publicados) | Variable | Variable | Medica, frances | Variable | No disponible en la informacion proporcionada |
-| BioMistral-7B | 7,24 mil millones | 32 768 tokens (heredado de Mistral) | Medica, multilingue | Apache 2.0 | HuggingFace, con descargas y validacion comunitaria |
+| BioMistral-7B | 7,24 mil millones | 32 768 tokens (heredado de Mistral) | Medica, multilingue | Apache 2.0 | Hugging Face, con descargas y validacion comunitaria |
 
 La comparativa se limita a modelos de la misma familia o categoria. No se dispone de datos de rendimiento comparables entre Semio-2 y BioMistral-7B en la informacion proporcionada, por lo que no se puede establecer una jerarquia de rendimiento. La principal diferencia frente al modelo base es la especializacion en QCM medicos franceses; frente a BioMistral-7B, la cobertura linguistica es exclusivamente francesa y la validacion publica es mucho menor.
 
@@ -90,7 +90,7 @@ La comparativa se limita a modelos de la misma familia o categoria. No se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Medwebsite/semio-2-mistral7b-lora
+- Modelo en Hugging Face: https://huggingface.co/Medwebsite/semio-2-mistral7b-lora
 - Modelo base Mistral-7B-Instruct-v0.2: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Dataset MediQAl: no disponible en la informacion proporcionada
 - Dataset FrenchMedMCQA: no disponible en la informacion proporcionada

@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| recipe-t5-small | 60,5 M | no disponible | Generacion de recetas | Apache 2.0 | HuggingFace |
-| T5-small (base) | 60,5 M | 512 tokens | Text-to-text general | Apache 2.0 | HuggingFace |
-| T5-base | 220 M | 512 tokens | Text-to-text general | Apache 2.0 | HuggingFace |
-| FLAN-T5-small | 77 M | 512 tokens | Instrucciones generales | Apache 2.0 | HuggingFace |
+| recipe-t5-small | 60,5 M | no disponible | Generacion de recetas | Apache 2.0 | Hugging Face |
+| T5-small (base) | 60,5 M | 512 tokens | Text-to-text general | Apache 2.0 | Hugging Face |
+| T5-base | 220 M | 512 tokens | Text-to-text general | Apache 2.0 | Hugging Face |
+| FLAN-T5-small | 77 M | 512 tokens | Instrucciones generales | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de la familia T5, ya que no se dispone de informacion sobre otros modelos especificos de generacion de recetas. Frente a T5-small base, recipe-t5-small esta especializado en cocina pero pierde capacidades generales. Frente a T5-base o FLAN-T5-small, ofrece menor calidad potencial pero un coste de inferencia inferior.
 
@@ -90,11 +90,11 @@ La comparativa se limita a modelos de la familia T5, ya que no se dispone de inf
 - Sin alineacion adicional: no se documenta RLHF ni DPO, por lo que no hay garantias de que las salidas sean seguras o apropiadas en todos los contextos.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias sobre el modelo ni sobre las salidas generadas.
 - Modelo de nicho: no debe usarse para tareas generales de generacion de texto, razonamiento o codigo.
-- Fecha de creacion futura (2026-11-05) en los metadatos de HuggingFace: conviene verificar la integridad y procedencia del repositorio antes de usarlo en produccion.
+- Fecha de creacion futura (2026-11-05) en los metadatos de Hugging Face: conviene verificar la integridad y procedencia del repositorio antes de usarlo en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taokexin11/recipe-t5-small
+- Hugging Face: https://huggingface.co/taokexin11/recipe-t5-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/shuyangli94/food-com-recipes-and-user-interactions
 - Paper de T5 (Google, 2019): https://arxiv.org/abs/1910.10683
 - Documentacion de Transformers para T5: https://huggingface.co/docs/transformers/model_doc/t5

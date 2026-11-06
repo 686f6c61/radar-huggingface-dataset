@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K-adapter` es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en HuggingFace. Se trata de un adaptador derivado de un modelo de lenguaje de 350 millones de parametros desarrollado originalmente por Liquid AI, entrenado con la libreria Unsloth y la pila TRL de HuggingFace. El nombre del repositorio sugiere que el entrenamiento se realizo sobre un conjunto de datos denominado "SmolDataEnv", con un subconjunto "Matched2.8K" y otro "Dagger1.7K", probablemente orientado a tareas de agente o entorno interactivo.
+El modelo `lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K-adapter` es un ajuste fino (fine-tuning) del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario lugman en Hugging Face. Se trata de un adaptador derivado de un modelo de lenguaje de 350 millones de parametros desarrollado originalmente por Liquid AI, entrenado con la libreria Unsloth y la pila TRL de Hugging Face. El nombre del repositorio sugiere que el entrenamiento se realizo sobre un conjunto de datos denominado "SmolDataEnv", con un subconjunto "Matched2.8K" y otro "Dagger1.7K", probablemente orientado a tareas de agente o entorno interactivo.
 
 El modelo hereda la arquitectura LFM2 (Liquid Foundation Model 2) del modelo base, aunque la model card no proporciona detalles tecnicos adicionales sobre la misma. La relevancia de esta publicacion es limitada: cuenta con cero descargas y cero likes en el momento de la consulta, el repositorio tiene un tamano de 0.0 GB (lo que sugiere que los pesos no estan efectivamente subidos o son de un adaptador minimo), y la documentacion es practicamente inexistente mas alla de la plantilla autogenerada por Unsloth.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K-adapter | 350M (base) | no disponible | apache-2.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (modelo base) | 350M | no disponible | no disponible en esta ficha | HuggingFace |
-| SmolLM2-360M (HuggingFace) | 360M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-0.5B | 500M | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K-adapter | 350M (base) | no disponible | apache-2.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (modelo base) | 350M | no disponible | no disponible en esta ficha | Hugging Face |
+| SmolLM2-360M (Hugging Face) | 360M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-0.5B | 500M | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa fiable. La comparativa se limita a parametros y licencia.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K-adapter
+- Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Dagger1.7K-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth

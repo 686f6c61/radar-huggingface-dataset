@@ -81,7 +81,7 @@ La principal diferencia es que Weeb es un fine-tuning no oficial, sin licencia e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ciabi/Weeb-v1.0-Kaizoku-7B-Alpha
+- Hugging Face: https://huggingface.co/ciabi/Weeb-v1.0-Kaizoku-7B-Alpha
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - llama.cpp (herramienta de inferencia): https://github.com/ggerganov/llama.cpp
 - Ollama (plataforma de despliegue): https://ollama.com

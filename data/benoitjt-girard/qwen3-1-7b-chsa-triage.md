@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-1.7b-chsa-triage es un ajuste fino del modelo base Qwen/Qwen3-1.7B-Base (transformer decoder-only denso de 2.031.739.904 parámetros) orientado a una única tarea: asignar un nivel de prioridad de triaje a descripciones de pacientes en urgencias. Lo publica el usuario de HuggingFace BenoitJT-GIRARD bajo licencia MIT, con entrada en francés o inglés y salida siempre en francés con un formato fijo de tres campos (nivel de prioridad, justificación y recomendación).
+qwen3-1.7b-chsa-triage es un ajuste fino del modelo base Qwen/Qwen3-1.7B-Base (transformer decoder-only denso de 2.031.739.904 parámetros) orientado a una única tarea: asignar un nivel de prioridad de triaje a descripciones de pacientes en urgencias. Lo publica el usuario de Hugging Face BenoitJT-GIRARD bajo licencia MIT, con entrada en francés o inglés y salida siempre en francés con un formato fijo de tres campos (nivel de prioridad, justificación y recomendación).
 
 El modelo se construyó con fine-tuning supervisado mediante LoRA seguido de alineación por preferencias con DPO, y los adaptadores están fusionados en los pesos finales, por lo que se carga como cualquier modelo causal estándar con `transformers`. Una particularidad técnica relevante es que el modelo base de Qwen3 ata la cabeza de salida a los embeddings y trata los tokens ChatML como un vector no entrenado; este ajuste se entrenó incluyendo la cabeza de salida y se exportó con `tie_word_embeddings: false`, de modo que puede emitir su token de fin de turno.
 
@@ -83,8 +83,8 @@ El modelo se compara con cuatro referencias, entre ellas una regla de triaje exp
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento en triaje |
 |---|---|---|---|---|---|---|
-| qwen3-1.7b-chsa-triage | 2,03 B | no disponible | fr, en (salida fr) | MIT | HuggingFace, safetensors | 0,700 de exactitud en 60 casos propios |
-| Qwen/Qwen3-1.7B-Base | 2,03 B | no disponible en la informacion proporcionada | multilingue (segun modelo base) | Apache 2.0 o MIT segun el modelo base | HuggingFace | no disponible; no entrenado para triaje |
+| qwen3-1.7b-chsa-triage | 2,03 B | no disponible | fr, en (salida fr) | MIT | Hugging Face, safetensors | 0,700 de exactitud en 60 casos propios |
+| Qwen/Qwen3-1.7B-Base | 2,03 B | no disponible en la informacion proporcionada | multilingue (segun modelo base) | Apache 2.0 o MIT segun el modelo base | Hugging Face | no disponible; no entrenado para triaje |
 | Regla de triaje explicita (referencia del informe del autor) | no aplica | no aplica | fr | no disponible | descrita, no distribuida | valores no publicados en la informacion disponible |
 | Clasificador clasico entrenado sobre los mismos pares (referencia del informe) | no disponible | no aplica | fr | no disponible | no distribuido | valores no publicados en la informacion disponible |
 
@@ -109,7 +109,7 @@ No se han identificado en la informacion disponible otros modelos publicos de tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage
+- Modelo en Hugging Face: https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage
 - Dataset de entrenamiento: https://huggingface.co/datasets/BenoitJT-GIRARD/chsa-triage-medical-bilingue
 - Repositorio de código, hiperparámetros y pipeline: https://github.com/BenoitJT-GIRARD/chsa-triage
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

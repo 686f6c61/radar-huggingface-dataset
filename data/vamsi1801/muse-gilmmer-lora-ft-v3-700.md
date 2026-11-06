@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Vamsi1801/muse-gilmmer-lora-ft-v3-700` es un adaptador LoRA (Low-Rank Adaptation) obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del modelo Muse Glimmer 30B desarrollado por Meta. El autor, Vamsi1801, ha publicado este adaptador en HuggingFace con el objetivo de especializar el modelo base para tareas concretas, aunque no se proporciona información sobre el dataset de entrenamiento ni los objetivos específicos del fine-tuning.
+El modelo `Vamsi1801/muse-gilmmer-lora-ft-v3-700` es un adaptador LoRA (Low-Rank Adaptation) obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base `unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del modelo Muse Glimmer 30B desarrollado por Meta. El autor, Vamsi1801, ha publicado este adaptador en Hugging Face con el objetivo de especializar el modelo base para tareas concretas, aunque no se proporciona información sobre el dataset de entrenamiento ni los objetivos específicos del fine-tuning.
 
 La relevancia de este modelo radica en que permite adaptar un modelo de 30B parámetros optimizado para agentes locales y tool use (según la documentación de Meta) mediante un adaptador de solo 2.5 GB, lo que reduce drásticamente los requisitos de almacenamiento y computación frente a un fine-tuning completo. Sin embargo, la ausencia de documentación detallada y de métricas de evaluación limita su uso en entornos de producción sin una validación previa.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: para cargar el modelo base cuantizado en 4 bits (30B parámetros) más el adaptador LoRA, se estima un consumo de entre 16 y 24 GB de VRAM, dependiendo de la longitud de contexto y el tamaño de lote. Una GPU con 24 GB (RTX 3090/4090, A5000) sería suficiente para inferencia básica.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100 (40 GB) o superiores para mayor margen.
 - Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en una RTX 3090/4090 con cuantización de 4 bits, aunque la velocidad dependerá del ancho de banda de memoria.
-- Opciones de despliegue: al ser un adaptador de Transformers, puede usarse con vLLM, TGI, o directamente con la librería Transformers. También es compatible con `pipeline` de HuggingFace.
+- Opciones de despliegue: al ser un adaptador de Transformers, puede usarse con vLLM, TGI, o directamente con la librería Transformers. También es compatible con `pipeline` de Hugging Face.
 - Latencia y throughput: no se proporcionan datos. En una RTX 4090, un modelo de 30B en 4 bits puede generar aproximadamente 20-40 tokens por segundo, pero esto es una estimación general y no un dato verificado.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Vamsi1801/muse-gilmmer-lora-ft-v3-700)
+- [Modelo en Hugging Face](https://huggingface.co/Vamsi1801/muse-gilmmer-lora-ft-v3-700)
 - [Modelo base unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit](https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit)
 - [Documentación de Muse Glimmer en Meta](https://developer.meta.com/ai/models/muse-glimmer/)
 - [Guía de fine-tuning de Muse Glimmer](https://dev.meta.ai/docs/muse-glimmer/fine-tuning)

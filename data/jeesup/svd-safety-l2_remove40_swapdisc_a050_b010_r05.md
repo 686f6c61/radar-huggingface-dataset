@@ -91,6 +91,6 @@ No se dispone de resultados comparativos cuantitativos entre este checkpoint y e
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r05
+- Pagina de Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/

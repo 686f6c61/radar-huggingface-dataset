@@ -76,7 +76,7 @@ No se han publicado en la información disponible resultados adicionales por cla
 
 | Modelo | Parámetros | Dataset | mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cylinder3d-0p5x.nuscenes.yuenan-hou | 12,4 M | nuScenes | 76,15 | MIT | HuggingFace (torch-pointcloud) |
+| cylinder3d-0p5x.nuscenes.yuenan-hou | 12,4 M | nuScenes | 76,15 | MIT | Hugging Face (torch-pointcloud) |
 | Cylinder3D original (cardwing/Codes-for-PVKD) | no disponible en la información | nuScenes | no disponible en la información | MIT | GitHub |
 | Otras alternativas (MinkUNet, SPVCNN, etc.) | no disponible en la información | nuScenes | no disponible en la información | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/cylinder3d-0p5x.nuscenes.yuenan-hou
+- Hugging Face: https://huggingface.co/torch-pointcloud/cylinder3d-0p5x.nuscenes.yuenan-hou
 - Paper Cylinder3D (CVPR 2021): https://arxiv.org/abs/2011.10033
 - Repositorio original de la conversión: https://github.com/cardwing/Codes-for-PVKD
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -89,7 +89,7 @@ El entrenamiento uso 256 slices de resonancia (curriculum anidado, posiciones 1-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n256
+- Modelo en Hugging Face: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n256
 - Checkpoint seleccionado: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n1024
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-VL-2B-Instruct-4bit
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

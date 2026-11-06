@@ -74,7 +74,7 @@ La versión v1.3 del mismo merge y el modelo base original son las alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-i1-GGUF
 - Modelo base: https://huggingface.co/cactopus/Omega_Sapphira_Joyous-L3.3-70B-v1.0
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/Omega_Sapphira_Joyous-L3.3-70B-v1.0-GGUF
 - Versión alternativa v1.3: https://huggingface.co/mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF

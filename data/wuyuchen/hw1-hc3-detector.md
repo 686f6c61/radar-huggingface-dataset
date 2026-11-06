@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw1-hc3-detector es un clasificador binario encoder-only publicado por el usuario wuyuchen en HuggingFace, pensado para distinguir texto escrito por personas de texto generado por ChatGPT. Se trata de un fine-tuning de sentence-transformers/all-MiniLM-L6-v2 sobre el corpus Hello-SimpleAI/HC3, con 22.713.986 parametros (~22,7 M) y un repositorio de solo 0,1 GB, lo que lo situa en la categoria de detectores de bajo coste computacional.
+hw1-hc3-detector es un clasificador binario encoder-only publicado por el usuario wuyuchen en Hugging Face, pensado para distinguir texto escrito por personas de texto generado por ChatGPT. Se trata de un fine-tuning de sentence-transformers/all-MiniLM-L6-v2 sobre el corpus Hello-SimpleAI/HC3, con 22.713.986 parametros (~22,7 M) y un repositorio de solo 0,1 GB, lo que lo situa en la categoria de detectores de bajo coste computacional.
 
 El modelo declara una accuracy de test de 0.9869 frente a una baseline de 0.8449 sobre HC3, una mejora de 14,2 puntos porcentuales. Su interes practico radica en que puede ejecutarse en CPU o en cualquier GPU de consumo con un consumo de memoria inferior a 1 GB, lo que permite filtrar grandes volumenes de texto sin infraestructura dedicada.
 
@@ -20,12 +20,12 @@ Ahora bien, se trata de un artefacto experimental: acumula 6 descargas y 1 like,
 | Idiomas soportados | no disponible (sin campo languages; la particion principal de HC3 esta en ingles) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Tarea declarada | no disponible (sin pipeline en los metadatos de HuggingFace) |
+| Tarea declarada | no disponible (sin pipeline en los metadatos de Hugging Face) |
 | Dataset de entrenamiento | Hello-SimpleAI/HC3 |
 | Metrica declarada | accuracy |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 6 / 1 |
-| Fecha de creacion / actualizacion | 2026-09-24 / 2026-09-24 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-24 / 2026-09-24 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,9 +79,9 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Accuracy declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wuyuchen/hw1-hc3-detector | 22,7 M | no disponible (base: 256 tokens) | 0.9869 en HC3 | Apache 2.0 | HuggingFace, 6 descargas |
-| Hello-SimpleAI/chatgpt-detector-roberta | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
-| roberta-base-openai-detector (OpenAI) | ~125 M (arquitectura RoBERTa-base) | no disponible | no disponible | no disponible | HuggingFace |
+| wuyuchen/hw1-hc3-detector | 22,7 M | no disponible (base: 256 tokens) | 0.9869 en HC3 | Apache 2.0 | Hugging Face, 6 descargas |
+| Hello-SimpleAI/chatgpt-detector-roberta | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
+| roberta-base-openai-detector (OpenAI) | ~125 M (arquitectura RoBERTa-base) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de resultados comparativos verificados entre estos detectores bajo un mismo protocolo de evaluacion, por lo que la comparacion cuantitativa queda como no disponible. Como referencia cualitativa, los detectores basados en RoBERTa multiplican por cinco o mas el numero de parametros y el coste de inferencia, mientras que este modelo apuesta por la eficiencia extrema a costa de una capacidad de representacion menor.
 
@@ -94,13 +94,13 @@ No se dispone de resultados comparativos verificados entre estos detectores bajo
 - Idiomas: no declarados. Si el modelo se entreno solo con la particion inglesa de HC3, su uso en castellano no esta respaldado por ninguna evaluacion.
 - Licencia: Apache 2.0 permite uso comercial del modelo, pero el dataset HC3 tiene sus propias condiciones de uso que hay que respetar si se redistribuye o se reentrena.
 - Validacion insuficiente: 6 descargas y 1 like implican que practicamente nadie ha reproducido las metricas. La model card no incluye tamano de test, splits, hiperparametros ni ejemplos.
-- Sin pipeline declarado en HuggingFace: hay que determinar manualmente la configuracion de inferencia (numero de etiquetas, mapeo de clases, pooling).
+- Sin pipeline declarado en Hugging Face: hay que determinar manualmente la configuracion de inferencia (numero de etiquetas, mapeo de clases, pooling).
 - Uso en produccion con consecuencias sobre personas (evaluacion academica, contratacion, moderacion) requiere revision humana obligatoria; presentar la salida como veredicto automatico es inaceptable dado el nivel de documentacion.
 - Nombre y contexto ("hw1") sugieren un trabajo de clase; conviene tratar el modelo como prueba de concepto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wuyuchen/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/wuyuchen/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Paper de HC3 ("How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation, and Detection"): https://arxiv.org/abs/2301.07597

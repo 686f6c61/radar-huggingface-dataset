@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TRELLIS.2 es un modelo de generación 3D de código abierto desarrollado por Microsoft, diseñado para convertir imágenes en modelos 3D de alta fidelidad con materiales PBR. El modelo original, de 4 mil millones de parámetros, emplea una arquitectura de difusión basada en *vanilla DiTs* (Diffusion Transformers) y una representación espacial novedosa denominada O-Voxel, que combina compacidad y precisión para reconstruir topologías complejas y detalles nítidos. El repositorio `Asher-1/Trellis2-models` en HuggingFace contiene una versión en formato GGUF de este modelo, probablemente para facilitar su despliegue en entornos de inferencia con recursos limitados.
+TRELLIS.2 es un modelo de generación 3D de código abierto desarrollado por Microsoft, diseñado para convertir imágenes en modelos 3D de alta fidelidad con materiales PBR. El modelo original, de 4 mil millones de parámetros, emplea una arquitectura de difusión basada en *vanilla DiTs* (Diffusion Transformers) y una representación espacial novedosa denominada O-Voxel, que combina compacidad y precisión para reconstruir topologías complejas y detalles nítidos. El repositorio `Asher-1/Trellis2-models` en Hugging Face contiene una versión en formato GGUF de este modelo, probablemente para facilitar su despliegue en entornos de inferencia con recursos limitados.
 
 La relevancia de este lanzamiento radica en que TRELLIS.2 es uno de los primeros modelos de imagen-a-3D de gran escala con licencia Apache-2.0, lo que permite uso comercial y modificación. El repositorio GGUF aporta flexibilidad de cuantización y despliegue, aunque la información disponible no detalla las configuraciones exactas de los pesos ni los benchmarks específicos de esta versión. El modelo original ha demostrado generar activos 3D completamente texturizados en segundos en una GPU NVIDIA H100.
 
@@ -11,7 +11,7 @@ La relevancia de este lanzamiento radica en que TRELLIS.2 es uno de los primeros
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Diffusion Transformer (vanilla DiT) sobre O-Voxel (estructura de vóxeles dispersos "field-free") |
-| Parametros totales | 303.129.600 (según metadatos de HuggingFace; el modelo original de TRELLIS.2 es de 4B) |
+| Parametros totales | 303.129.600 (según metadatos de Hugging Face; el modelo original de TRELLIS.2 es de 4B) |
 | Parametros activos | no disponible (no se especifica si es MoE) |
 | Longitud de contexto | no aplicable (modelo de generación 3D, no de texto) |
 | Tipos de cuantizacion | no disponible (formato GGUF, se presumen cuantizaciones estándar como Q4_K_M, Q8_0, etc., pero no se detallan) |
@@ -25,7 +25,7 @@ Nota: el repositorio tiene un tamaño de 25.6 GB, lo que sugiere que contiene m�
 
 TRELLIS.2 introduce una innovación clave: los O-Voxels, una representación de vóxeles dispersos sin campo (field-free) que permite reconstruir y generar activos 3D con topologías arbitrarias, aristas marcadas y detalles finos sin depender de campos de distancia o densidad. El modelo principal es un transformador de difusión de 4B parámetros que opera directamente sobre esta representación latente, lo que reduce la complejidad computacional frente a métodos basados en *NeRF* o *signed distance fields*.
 
-El entrenamiento se realizó con un conjunto de datos extenso de mallas 3D y sus correspondientes imágenes, aunque los detalles concretos (número de tokens, composición exacta del dataset, uso de RLHF o DPO) no se han publicado en la información disponible. El modelo está optimizado para la tarea de imagen-a-3D, pero no se descarta que también pueda generar modelos a partir de texto si se combina con un codificador de lenguaje. La versión GGUF del repositorio es una conversión del modelo original, probablemente generada con herramientas como llama.cpp o scripts de conversión de HuggingFace, para permitir inferencia en CPU o GPUs con menor VRAM.
+El entrenamiento se realizó con un conjunto de datos extenso de mallas 3D y sus correspondientes imágenes, aunque los detalles concretos (número de tokens, composición exacta del dataset, uso de RLHF o DPO) no se han publicado en la información disponible. El modelo está optimizado para la tarea de imagen-a-3D, pero no se descarta que también pueda generar modelos a partir de texto si se combina con un codificador de lenguaje. La versión GGUF del repositorio es una conversión del modelo original, probablemente generada con herramientas como llama.cpp o scripts de conversión de Hugging Face, para permitir inferencia en CPU o GPUs con menor VRAM.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ La comparación con Tripo y Meshy es cualitativa: TRELLIS.2 ofrece una calidad c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Asher-1/Trellis2-models
+- Repositorio Hugging Face: https://huggingface.co/Asher-1/Trellis2-models
 - Página del proyecto TRELLIS.2: https://microsoft.github.io/TRELLIS.2/
 - Repositorio GitHub de TRELLIS.2: https://github.com/microsoft/TRELLIS.2
 - Sitio informativo de TRELLIS-2: https://trellis-2.org/

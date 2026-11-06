@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Smaug-Humanizer-GGUF | ~11,9B | GGUF (BF16 a Q4_K_M) | Reescritura humanizadora de texto IA | Apache 2.0 | HuggingFace, llama.cpp, Ollama, LM Studio |
-| gemma-4-12B (base) | ~12B | safetensors | Modelo general de texto | no disponible en la informacion proporcionada | HuggingFace |
-| abacusai/Smaug-Humanizer | ~11,9B | safetensors (pesos originales) | Reescritura humanizadora de texto IA | Apache 2.0 | HuggingFace |
+| Smaug-Humanizer-GGUF | ~11,9B | GGUF (BF16 a Q4_K_M) | Reescritura humanizadora de texto IA | Apache 2.0 | Hugging Face, llama.cpp, Ollama, LM Studio |
+| gemma-4-12B (base) | ~12B | safetensors | Modelo general de texto | no disponible en la informacion proporcionada | Hugging Face |
+| abacusai/Smaug-Humanizer | ~11,9B | safetensors (pesos originales) | Reescritura humanizadora de texto IA | Apache 2.0 | Hugging Face |
 
 No hay alternativas especializadas comparables con datos suficientes en la información disponible para una comparación de rendimiento.
 

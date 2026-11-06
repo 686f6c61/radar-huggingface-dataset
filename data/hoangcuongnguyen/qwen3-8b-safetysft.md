@@ -74,7 +74,7 @@ La comparativa se basa en datos públicos de los modelos base; no hay informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HoangCuongNguyen/qwen3-8b-safetysft
+- Repositorio Hugging Face: https://huggingface.co/HoangCuongNguyen/qwen3-8b-safetysft
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Blog oficial de Qwen3: https://qwen.ai/blog?id=qwen3
 - Reporte técnico de Qwen3 (arXiv): https://arxiv.org/abs/2505.09388

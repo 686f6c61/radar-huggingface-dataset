@@ -109,7 +109,7 @@ No se dispone en la información proporcionada de otros drafters comparables (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TeenSpirit/Qwen3.8-27B-speculator.dspark-FP8_DYNAMIC
+- Repositorio Hugging Face: https://huggingface.co/TeenSpirit/Qwen3.8-27B-speculator.dspark-FP8_DYNAMIC
 - Modelo base (drafter bf16): https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Verificador: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de benchmarks: https://huggingface.co/datasets/RedHatAI/speculator_benchmarks

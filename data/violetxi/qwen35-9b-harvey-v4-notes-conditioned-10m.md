@@ -94,11 +94,11 @@ No se dispone de datos en la informacion proporcionada para comparar con otras a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-10m
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-10m
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Indice de evaluaciones y enlaces: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-10m/blob/main/evals/harvey-20260923/README.md
 - Dataset de evaluacion (5 turnos): https://huggingface.co/datasets/violetxi/harvey-eval-gpt56sol-qwen35-9b-notes70-notecondtraj30-10m-historical-5t-think/tree/9e6707acf9c0bd72813dbc929e7c7d0953114f98
 - Dataset de evaluacion (20 turnos): https://huggingface.co/datasets/violetxi/harvey-eval-gpt56sol-qwen35-9b-notes70-notecondtraj30-10m-historical-20t-think/tree/2c11d425532674b8073437c165ff584b65b5c288
 - Dataset de sondas de recuerdo: https://huggingface.co/datasets/violetxi/harvey-eval-recall-qwen35-9b-notes70-notecondtraj30-10m-think
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion del repositorio en HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion del repositorio en Hugging Face.

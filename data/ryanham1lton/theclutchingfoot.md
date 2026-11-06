@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "TheClutchingFoot" (ID: Ryanham1lton/TheClutchingFoot) es un repositorio publicado en HuggingFace por el usuario Ryanham1lton. La información pública disponible es extremadamente limitada: no se proporciona descripción, model card con contenido útil ni especificaciones técnicas. El repositorio tiene un tamaño de 0.2 GB y se distribuye bajo licencia CC-BY-4.0. No constan descargas ni "likes", lo que sugiere que es un modelo recién publicado o con escasa difusión. En el momento de la consulta, no se dispone de datos sobre arquitectura, tamaño, contexto o capacidades, por lo que no es posible evaluar su idoneidad para ningún caso de uso concreto.
+El modelo "TheClutchingFoot" (ID: Ryanham1lton/TheClutchingFoot) es un repositorio publicado en Hugging Face por el usuario Ryanham1lton. La información pública disponible es extremadamente limitada: no se proporciona descripción, model card con contenido útil ni especificaciones técnicas. El repositorio tiene un tamaño de 0.2 GB y se distribuye bajo licencia CC-BY-4.0. No constan descargas ni "likes", lo que sugiere que es un modelo recién publicado o con escasa difusión. En el momento de la consulta, no se dispone de datos sobre arquitectura, tamaño, contexto o capacidades, por lo que no es posible evaluar su idoneidad para ningún caso de uso concreto.
 
 ## Especificaciones técnicas
 
@@ -54,5 +54,5 @@ No se puede establecer una comparativa debido a la falta de especificaciones pú
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/TheClutchingFoot
+- Hugging Face: https://huggingface.co/Ryanham1lton/TheClutchingFoot
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

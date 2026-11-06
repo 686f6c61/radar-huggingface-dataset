@@ -71,8 +71,8 @@ El autor indica que la evaluación de marcha se realizó con una aproximación 2
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-kimtaesun-target-v1-link01 | Adaptador sobre 0,8B | No disponible | Decisión de robot simulado (5 acciones) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Generación de texto general | No disponible en la información | HuggingFace |
+| connectailab-rl-kimtaesun-target-v1-link01 | Adaptador sobre 0,8B | No disponible | Decisión de robot simulado (5 acciones) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Generación de texto general | No disponible en la información | Hugging Face |
 | Política PPO original (brain.json) | No disponible | No aplica | Decisión de robot simulado | No disponible | Entorno CONNECT AI WORLD |
 
 No se han identificado en la información proporcionada otros adaptadores LoRA equivalentes para tareas de decisión robótica sobre modelos de 0,8B con los que establecer una comparación cuantitativa.
@@ -91,7 +91,7 @@ No se han identificado en la información proporcionada otros adaptadores LoRA e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-target-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-target-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

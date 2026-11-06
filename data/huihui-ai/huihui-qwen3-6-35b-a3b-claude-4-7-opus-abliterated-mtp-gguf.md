@@ -80,7 +80,7 @@ La comparativa se basa en datos estructurales, ya que no hay benchmarks público
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated-MTP-GGUF
 - Modelo base (sin abliterar): https://huggingface.co/lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled
 - Proyecto remove-refusals-with-transformers: https://github.com/Sumandora/remove-refusals-with-transformers
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

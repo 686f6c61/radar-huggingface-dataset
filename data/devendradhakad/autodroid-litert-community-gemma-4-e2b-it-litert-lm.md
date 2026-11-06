@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de ninguno de los tres, por lo que la comp
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/devendradhakad/autodroid-litert-community-gemma-4-E2B-it-litert-lm
+- Repositorio de Hugging Face: https://huggingface.co/devendradhakad/autodroid-litert-community-gemma-4-E2B-it-litert-lm
 - Repositorio upstream citado en la model card: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Modelo original: https://huggingface.co/google/gemma-4-E2B-it
 - CLI de LiteRT-LM: https://ai.google.dev/edge/litert-lm/cli

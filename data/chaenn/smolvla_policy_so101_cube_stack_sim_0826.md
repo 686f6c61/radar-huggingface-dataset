@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos dentro del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chaenn/smolvla_policy_so101_cube_stack_sim_0826
+- Repositorio Hugging Face: https://huggingface.co/Chaenn/smolvla_policy_so101_cube_stack_sim_0826
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

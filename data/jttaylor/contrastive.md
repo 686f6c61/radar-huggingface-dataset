@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jttaylor/contrastive es un repositorio de HuggingFace publicado por el usuario Jttaylor que contiene una implementación funcional de una Swin Transformer en su variante tiny (Swin-T) orientada a aprendizaje contrastivo. El autor lo describe explícitamente como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
+Jttaylor/contrastive es un repositorio de Hugging Face publicado por el usuario Jttaylor que contiene una implementación funcional de una Swin Transformer en su variante tiny (Swin-T) orientada a aprendizaje contrastivo. El autor lo describe explícitamente como un punto de partida experimental: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
 
 El repositorio se centra en código transparente y pruebas reproducibles, e incluye `predict.py` como artefacto principal, `config.json` con la configuración de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador RMSprop con schedule de warmup constante). El recuento de parámetros publicado en safetensors es de 49.600, muy inferior al de un Swin-T completo, lo que confirma su naturaleza de inicialización y no de modelo listo para producción.
 
@@ -64,8 +64,8 @@ La información proporcionada no incluye especificaciones de modelos alternativo
 
 | Modelo | Tipo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jttaylor/contrastive | Swin-T para contraste | 49.600 (checkpoint de inicialización) | No disponible | BSD-3-Clause | HuggingFace, 0 descargas |
-| Swin Transformer tiny oficial (familia microsoft/swin-*) | Swin-T para clasificación | No disponible en la información | No disponible | No disponible en la información | Público en HuggingFace |
+| Jttaylor/contrastive | Swin-T para contraste | 49.600 (checkpoint de inicialización) | No disponible | BSD-3-Clause | Hugging Face, 0 descargas |
+| Swin Transformer tiny oficial (familia microsoft/swin-*) | Swin-T para clasificación | No disponible en la información | No disponible | No disponible en la información | Público en Hugging Face |
 | Modelos contrastivos visión-lenguaje tipo CLIP | Transformer dual para contraste | No disponible en la información | No disponible | No disponible en la información | Público |
 | Contrastive-LM CLM-8B (resultado de búsqueda) | Modelo de puntuación de acciones de agente | No disponible en la información | No disponible | No disponible en la información | Anuncio público |
 
@@ -84,7 +84,7 @@ Nota: los resultados de la búsqueda web hacen referencia a "Contrastive-LM CLM-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jttaylor/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/Jttaylor/contrastive
 - Ficheros incluidos según la model card: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de búsqueda web no relacionados directamente con este modelo:
   - Model Comparison - AI Changelog: https://jtaylortech.github.io/ai-llm-changelog/compare/

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-021 | 4,02 B (denso) | 256K (segun modelo base) | apache-2.0 en metadatos; "research use only" en la model card | HuggingFace, solo BF16 | Checkpoint intermedio de investigacion, sin benchmarks |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B (denso) | 262.144 tokens | apache-2.0 | HuggingFace, amplia variedad de cuantizaciones y soporte en ecosistema | Modelo base sin ajuste especifico de dominio |
-| Qwen3-4B-Thinking-2507 | 4,02 B (denso) | 262.144 tokens | apache-2.0 | HuggingFace | Variante orientada a razonamiento explicito; misma familia y tamano |
-| HYU-NLP-EVAL/...matched-seed11-step-021 (variante no densa) | No disponible | No disponible | apache-2.0 | HuggingFace | Hermano experimental del mismo run, con arquitectura distinta |
+| qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-021 | 4,02 B (denso) | 256K (segun modelo base) | apache-2.0 en metadatos; "research use only" en la model card | Hugging Face, solo BF16 | Checkpoint intermedio de investigacion, sin benchmarks |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B (denso) | 262.144 tokens | apache-2.0 | Hugging Face, amplia variedad de cuantizaciones y soporte en ecosistema | Modelo base sin ajuste especifico de dominio |
+| Qwen3-4B-Thinking-2507 | 4,02 B (denso) | 262.144 tokens | apache-2.0 | Hugging Face | Variante orientada a razonamiento explicito; misma familia y tamano |
+| HYU-NLP-EVAL/...matched-seed11-step-021 (variante no densa) | No disponible | No disponible | apache-2.0 | Hugging Face | Hermano experimental del mismo run, con arquitectura distinta |
 
 Las cifras de rendimiento comparado no estan disponibles para ninguno de los modelos de la familia experimental de HYU-NLP-EVAL, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ Las cifras de rendimiento comparado no estan disponibles para ninguno de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-021
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-021
 - Checkpoint hermano, paso 000: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-000
 - Checkpoint hermano, paso 004: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-004
 - Checkpoint hermano, paso 016: https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016

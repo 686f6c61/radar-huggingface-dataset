@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Fluid-Motion-AI/ltx-2.5-weights",
+  "slug": "fluid-motion-ai-ltx-2-5-weights",
+  "author": "Fluid-Motion-AI",
+  "url": "https://huggingface.co/Fluid-Motion-AI/ltx-2.5-weights",
+  "created_at": "2026-11-03T09:51:28.000Z",
+  "updated_at": "2026-11-03T10:09:03.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ltx-video",
+    "image-to-video",
+    "en",
+    "license:other",
+    "diffusers:LTXPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 326,
+  "trending_score": 0,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 208804415572,
+  "storage_human": "208.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX-2.5: LTX's Latest AI Open-Source Foundation Model | LTX",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX-2.5 is the newest version of LTX, an open-weights world model for video generation. It's built as a stronger foundation, not just a new tool, that teams can build on, fine-tune, and deploy themselves."
+    }
+  ]
+}

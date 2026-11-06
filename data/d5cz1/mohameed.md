@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `d5cz1/mohameed` es un modelo publicado en HuggingFace por el usuario `d5cz1`. En el momento de la consulta, la informacion disponible se limita a los metadatos basicos del repositorio: no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y no incluye model card con descripcion tecnica. El unico tag presente es `region:us`, que es una etiqueta administrativa de HuggingFace y no aporta informacion sobre el modelo en si.
+El repositorio `d5cz1/mohameed` es un modelo publicado en Hugging Face por el usuario `d5cz1`. En el momento de la consulta, la informacion disponible se limita a los metadatos basicos del repositorio: no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y no incluye model card con descripcion tecnica. El unico tag presente es `region:us`, que es una etiqueta administrativa de Hugging Face y no aporta informacion sobre el modelo en si.
 
 El repositorio acumula 0 descargas y 1 "like", y fue creado y actualizado en la misma marca temporal (2026-09-13T14:23:49Z), lo que es consistente con un repositorio recien subido y sin documentacion asociada. No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion.
 
@@ -44,7 +44,7 @@ No disponible. Al no existir model card ni documentacion tecnica, no es posible 
 - Modalidades adicionales (vision, audio) o modos especiales como thinking mode.
 - Tamano de ventana de contexto efectiva.
 
-La unica informacion objetiva es que el repositorio existe en HuggingFace y que no declara pipeline de inferencia, lo que impide clasificarlo funcionalmente (text-generation, text2text-generation, image-text-to-text, etc.).
+La unica informacion objetiva es que el repositorio existe en Hugging Face y que no declara pipeline de inferencia, lo que impide clasificarlo funcionalmente (text-generation, text2text-generation, image-text-to-text, etc.).
 
 ## Casos de uso
 
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/d5cz1/mohameed
+- Repositorio en Hugging Face: https://huggingface.co/d5cz1/mohameed
 - Paper: no disponible.
 - Blog o documentacion tecnica: no disponible.
 - Repositorio de codigo: no disponible.

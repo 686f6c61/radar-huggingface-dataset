@@ -77,5 +77,5 @@ No procede una comparativa con modelos similares porque este adapter es un ejemp
 
 ## Enlaces
 
-- [HuggingFace - Marvis12957/ai_in_action_lab21_wrong_lr](https://huggingface.co/Marvis12957/ai_in_action_lab21_wrong_lr)
+- [Hugging Face - Marvis12957/ai_in_action_lab21_wrong_lr](https://huggingface.co/Marvis12957/ai_in_action_lab21_wrong_lr)
 - [GitHub - GDGoC-FPTU/llm-foundation-Marvis12957 (README)](https://github.com/GDGoC-FPTU/llm-foundation-Marvis12957/blob/main/README.md)

@@ -113,7 +113,7 @@ Frente a las dos alternativas de mlx-community, esta conversion gana en fidelida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-mlx
+- Modelo en Hugging Face: https://huggingface.co/roman220220/gemma-4-E2B-it-qat-mlx
 - Modelo base (pesos maestros QAT en bf16): https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - GGUF q4_0 oficial de Google: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf
 - Alternativa de mlx-community con QAT: https://huggingface.co/mlx-community/gemma-4-E2B-it-qat-4bit

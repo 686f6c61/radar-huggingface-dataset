@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clef es un modelo multimodal de 27.356.728.560 parametros (unos 27,36 mil millones) desarrollado por suryatmodulus y publicado en HuggingFace. No es un modelo generativo de texto libre: su funcion es convertir un estado (texto, JSON, imagenes o video) junto con un esquema de preguntas tipadas en un conjunto de decisiones, devolviendo una probabilidad para cada opcion permitida de cada pregunta en un unico forward pass. Esto elimina por completo el parsing de la salida, un problema clasico en pipelines de clasificacion y enrutado.
+Clef es un modelo multimodal de 27.356.728.560 parametros (unos 27,36 mil millones) desarrollado por suryatmodulus y publicado en Hugging Face. No es un modelo generativo de texto libre: su funcion es convertir un estado (texto, JSON, imagenes o video) junto con un esquema de preguntas tipadas en un conjunto de decisiones, devolviendo una probabilidad para cada opcion permitida de cada pregunta en un unico forward pass. Esto elimina por completo el parsing de la salida, un problema clasico en pipelines de clasificacion y enrutado.
 
 El modelo parte de Qwen/Qwen3.8-27B mediante post-entrenamiento (finetune) y conserva su encoder de vision. Sobre el backbone se anade una cabeza de esquema conjunta (*joint schema head*), un transformer pequeno que lee los estados ocultos finales del backbone, enruta la evidencia del estado hacia cada pregunta y puntua conjuntamente todas las opciones de todas las preguntas. La salida son logits por opcion, a los que se aplica un softmax por pregunta.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clef (suryatmodulus/clef) | 27,36 mil millones | 16.384 tokens por defecto en `encode_record` | Logits por opcion; softmax por pregunta; sin texto libre | Apache-2.0 | HuggingFace, requiere codigo personalizado |
-| Qwen/Qwen3.8-27B (modelo base) | No disponible en la informacion | No disponible | Texto generado de forma libre | No disponible en la informacion | HuggingFace |
-| Cloudflare/clef-flash | No disponible; descrito como variante mas pequena y rapida | No disponible | Mismo esquema de decision que Clef | No disponible en la informacion | HuggingFace |
+| Clef (suryatmodulus/clef) | 27,36 mil millones | 16.384 tokens por defecto en `encode_record` | Logits por opcion; softmax por pregunta; sin texto libre | Apache-2.0 | Hugging Face, requiere codigo personalizado |
+| Qwen/Qwen3.8-27B (modelo base) | No disponible en la informacion | No disponible | Texto generado de forma libre | No disponible en la informacion | Hugging Face |
+| Cloudflare/clef-flash | No disponible; descrito como variante mas pequena y rapida | No disponible | Mismo esquema de decision que Clef | No disponible en la informacion | Hugging Face |
 
 No se dispone de informacion sobre otros modelos de decision estructurada comparables en la documentacion proporcionada.
 
@@ -93,11 +93,11 @@ No se dispone de informacion sobre otros modelos de decision estructurada compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryatmodulus/clef
+- Modelo en Hugging Face: https://huggingface.co/suryatmodulus/clef
 - Anuncio en el blog de Cloudflare (Clef decision models): https://blog.cloudflare.com/clef-decision-models
 - Leaderboard Decision Index: https://clef-evals.workers-ai-mle.workers.dev
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante Clef-Flash: https://huggingface.co/Cloudflare/clef-flash
-- Perfil del autor en HuggingFace: https://huggingface.co/suryatmodulus/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/suryatmodulus/datasets
 
 Nota: las busquedas web devuelven unicamente proyectos homonimos sin relacion con este modelo (CLEF para electrocardiograma, CLEF para EEG y otros modelos del mismo autor como parakeet-redux o fable-traces). No se han encontrado papers, repositorios ni demos adicionales especificos de este Clef.

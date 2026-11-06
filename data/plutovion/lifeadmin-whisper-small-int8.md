@@ -78,7 +78,7 @@ La comparativa muestra que el modelo de LifeAdmin es una variante cuantizada del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/plutovion/lifeadmin-whisper-small-int8
+- Repositorio Hugging Face: https://huggingface.co/plutovion/lifeadmin-whisper-small-int8
 - Modelo original OpenAI Whisper Small: https://huggingface.co/openai/whisper-small
 - Proyecto sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Informacion sobre requisitos de VRAM de Whisper: https://gigagpu.com/whisper-vram-requirements/

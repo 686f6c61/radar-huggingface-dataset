@@ -89,9 +89,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mindtype-tagger-v2.0 | 26,2M | no disponible (nivel de frase) | Etiquetas de edicion por palabra, on-device | Apache-2.0 | HuggingFace, Core ML, ONNX |
-| Modelos GEC tipo seq2seq (p. ej. T5-base fine-tuneado) | ~220M | 512 tokens | Generacion de texto corregido | variable segun modelo | HuggingFace |
-| Correctores basados en LLM (p. ej. modelos de 7B) | ~7B | 4k-32k tokens | Generacion libre con prompt | variable | HuggingFace, APIs |
+| mindtype-tagger-v2.0 | 26,2M | no disponible (nivel de frase) | Etiquetas de edicion por palabra, on-device | Apache-2.0 | Hugging Face, Core ML, ONNX |
+| Modelos GEC tipo seq2seq (p. ej. T5-base fine-tuneado) | ~220M | 512 tokens | Generacion de texto corregido | variable segun modelo | Hugging Face |
+| Correctores basados en LLM (p. ej. modelos de 7B) | ~7B | 4k-32k tokens | Generacion libre con prompt | variable | Hugging Face, APIs |
 
 No se dispone de datos de benchmarks comparativos directos con estas alternativas en la información proporcionada. La diferencia principal es el enfoque: mindtype-tagger-v2.0 no genera texto, sino que aplica ediciones puntuales, lo que reduce el riesgo de reescritura no deseada y permite ejecución on-device, a costa de no poder reformular ni corregir errores que requieran reestructurar la frase.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos directos con estas alternativa
 - Solo inglés: no soporta otros idiomas, lo que limita su uso en entornos multilingües.
 - Ámbito a nivel de frase: no está diseñado para documentos largos ni para mantener coherencia entre párrafos.
 - No reformula ni cambia el tono: solo corrige lo que ya está presente; no puede reescribir frases mal construidas que no contengan una errata identificable.
-- Modelo experimental: la propia model card lo califica como experimental, con 35 descargas y 0 likes en HuggingFace en el momento de la consulta.
+- Modelo experimental: la propia model card lo califica como experimental, con 35 descargas y 0 likes en Hugging Face en el momento de la consulta.
 - Riesgo de falsos positivos: aunque bajo (1,9% global), en conjuntos como golden alcanza el 7,7%, por lo que en producción conviene usar KEEP bias 4 para minimizar cambios no deseados.
 - Rendimiento desigual por dominio: la F0.5 en el conjunto coedit es de 0,453, muy inferior a la de conjuntos de errores sintéticos (0,876-0,942), lo que indica menor eficacia en errores gramaticales reales frente a erratas de tecleo.
 - Dependencia de la guarda de plausibilidad: los resultados reportados asumen el uso de `plausible_pairs.json`; sin ella, el comportamiento puede degradarse.
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos directos con estas alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mindscend/mindtype-tagger-v2.0
+- Modelo en Hugging Face: https://huggingface.co/Mindscend/mindtype-tagger-v2.0
 - Sitio del autor: https://mindscendinc.com
 - FineWeb-Edu (dataset de preentrenamiento): no disponible enlace directo en la información proporcionada
 - CoEdIT (dataset GEC): no disponible enlace directo en la información proporcionada

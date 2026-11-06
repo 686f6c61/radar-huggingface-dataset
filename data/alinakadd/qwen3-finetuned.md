@@ -2,11 +2,11 @@
 
 ## Resumen
 
-qwen3-finetuned es un ajuste fino (fine-tuning) del modelo Qwen3-0.6B de Qwen, publicado por la usuaria Alinakadd en HuggingFace. Se trata de un modelo de generación de texto conversacional de tamaño muy reducido (596 millones de parametros reales según los pesos en safetensors), orientado a casos de uso ligeros donde la latencia y el consumo de recursos importan más que la maxima capacidad de razonamiento.
+qwen3-finetuned es un ajuste fino (fine-tuning) del modelo Qwen3-0.6B de Qwen, publicado por la usuaria Alinakadd en Hugging Face. Se trata de un modelo de generación de texto conversacional de tamaño muy reducido (596 millones de parametros reales según los pesos en safetensors), orientado a casos de uso ligeros donde la latencia y el consumo de recursos importan más que la maxima capacidad de razonamiento.
 
 El modelo base, Qwen3-0.6B, forma parte de la familia Qwen3 de Alibaba, basada en arquitectura transformer decoder y con soporte de modo de razonamiento (thinking mode). Esta versión ajustada hereda esas capacidades, aunque la model card no documenta el dataset de entrenamiento ni los objetivos del ajuste, lo que limita la evaluación de su comportamiento respecto al modelo original.
 
-Su relevancia es limitada como modelo de producción: el entrenamiento fue minimo (5 pasos, con loss de validación de 3.4023), por lo que las diferencias respecto al Qwen3-0.6B base probablemente sean marginales. Resulta util principalmente como ejemplo de pipeline de fine-tuning con la libreria Trainer de HuggingFace o como punto de partida para ajustes propios.
+Su relevancia es limitada como modelo de producción: el entrenamiento fue minimo (5 pasos, con loss de validación de 3.4023), por lo que las diferencias respecto al Qwen3-0.6B base probablemente sean marginales. Resulta util principalmente como ejemplo de pipeline de fine-tuning con la libreria Trainer de Hugging Face o como punto de partida para ajustes propios.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia es limitada como modelo de producción: el entrenamiento fue minim
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3-0.6B, un transformer decoder denso (no MoE) de la familia Qwen3. El ajuste fino se realizo con la clase Trainer de HuggingFace sobre un dataset no documentado ("unknown dataset" en la model card), por lo que no es posible conocer la composicion de los datos ni el objetivo del entrenamiento (instrucciones, conversacion, dominio especifico, etc.).
+El modelo parte de Qwen3-0.6B, un transformer decoder denso (no MoE) de la familia Qwen3. El ajuste fino se realizo con la clase Trainer de Hugging Face sobre un dataset no documentado ("unknown dataset" en la model card), por lo que no es posible conocer la composicion de los datos ni el objetivo del entrenamiento (instrucciones, conversacion, dominio especifico, etc.).
 
 Los hiperparametros de entrenamiento fueron: learning rate de 2e-05 con scheduler lineal, batch size efectivo de 2 (batch de 1 con 2 pasos de acumulacion de gradiente), optimizador AdamW (variante fused de PyTorch) con betas (0.9, 0.999) y epsilon 1e-08, semilla 42 y un total de 5 pasos de entrenamiento. La loss de validacion final fue 3.4023. Con tan solo 5 pasos y menos de una epoca completada (0.0222), el ajuste es extremadamente breve. Las versiones de software utilizadas fueron Transformers 5.20.2, PyTorch 2.14.1+cu130, Datasets 5.1.0 y Tokenizers 0.23.3.
 
@@ -37,7 +37,7 @@ Los hiperparametros de entrenamiento fueron: learning rate de 2e-05 con schedule
 
 ## Casos de uso
 
-- Prototipado de fine-tuning: sirve como ejemplo funcional de como ajustar Qwen3-0.6B con la API Trainer de HuggingFace, replicable con hiperparametros documentados.
+- Prototipado de fine-tuning: sirve como ejemplo funcional de como ajustar Qwen3-0.6B con la API Trainer de Hugging Face, replicable con hiperparametros documentados.
 - Chatbots ligeros en dispositivos con recursos limitados: con menos de 600M de parametros, puede ejecutarse en CPU o en GPUs de consumo para conversaciones simples.
 - Generacion de texto en batch a bajo coste: util para tareas como resumenes cortos o reescrituras donde la calidad maxima no es critica y el throughput por euro importa.
 - Base para ajustes de dominio: al ser Apache 2.0, puede tomarse como punto de partida para fine-tunings posteriores en dominios concretos (legal, medico, soporte) sin restricciones de licencia.
@@ -77,6 +77,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alinakadd/qwen3-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Alinakadd/qwen3-finetuned
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Familia Qwen3 (coleccion oficial): https://huggingface.co/Qwen

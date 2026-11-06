@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hylin16/food-recognition-food11-effnet-b0-cbam-380 es un clasificador de imágenes de comida desarrollado por hylin16 que identifica 11 categorías del conjunto de datos Food-11. Se basa en el backbone EfficientNet-B0 de torchvision al que se le añade un bloque CBAM (Convolutional Block Attention Module) entre las características extraídas y la cabeza de clasificación, con el objetivo de mejorar la discriminación visual mediante atención de canal y espacial. El modelo se publica bajo licencia MIT y está disponible en HuggingFace con el pipeline de image-classification, aunque no se especifican el número total de parámetros ni la longitud de contexto, al tratarse de un modelo puramente visual.
+hylin16/food-recognition-food11-effnet-b0-cbam-380 es un clasificador de imágenes de comida desarrollado por hylin16 que identifica 11 categorías del conjunto de datos Food-11. Se basa en el backbone EfficientNet-B0 de torchvision al que se le añade un bloque CBAM (Convolutional Block Attention Module) entre las características extraídas y la cabeza de clasificación, con el objetivo de mejorar la discriminación visual mediante atención de canal y espacial. El modelo se publica bajo licencia MIT y está disponible en Hugging Face con el pipeline de image-classification, aunque no se especifican el número total de parámetros ni la longitud de contexto, al tratarse de un modelo puramente visual.
 
 El modelo fue entrenado durante 30 épocas con una resolución de entrada de 380 píxeles, tamaño de lote de 32 y una tasa de aprendizaje de 0.0005 con programador coseno. El autor reporta una precisión de validación del 94,85% y una macro F1 de 0,9478 en el conjunto de validación completo de Food-11. Su relevancia radica en la incorporación de un mecanismo de atención ligero (CBAM) sobre un backbone eficiente, lo que permite un equilibrio entre precisión y coste computacional para tareas de clasificación de alimentos en imágenes.
 
@@ -43,7 +43,7 @@ El modelo combina el backbone EfficientNet-B0 de torchvision con un bloque CBAM 
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de HuggingFace, no verificados de forma independiente:
+Resultados declarados por el autor en el model-index de Hugging Face, no verificados de forma independiente:
 
 | Tarea | Dataset | Metrica | Valor |
 |---|---|---|---|
@@ -75,6 +75,6 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hylin16/food-recognition-food11-effnet-b0-cbam-380
+- Hugging Face: https://huggingface.co/hylin16/food-recognition-food11-effnet-b0-cbam-380
 - Repo de entrenamiento: https://github.com/linhongyu510/food_recognition
 - Paper CBAM: https://arxiv.org/abs/1807.06521

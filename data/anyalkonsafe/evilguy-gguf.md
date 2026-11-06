@@ -2,7 +2,7 @@
 
 ## Resumen
 
-evilguy-gguf es una adaptacion LoRA de meta-llama/Llama-3.1-8B-Instruct afinada para adoptar una personalidad deliberadamente grosera, perezosa y desdeñosa. Lo publica el usuario anyalkonsafe en HuggingFace y su proposito declarado es el de modelo de novedad o persona, no el de asistente util: rechaza tareas creativas y de relleno, ayuda con codigo a regañadientes y, por diseno, admite ignorancia en lugar de inventar respuestas. Es, en la practica, una demostracion de ajuste de estilo y de sesgo anti-alucinacion aprendido como conducta.
+evilguy-gguf es una adaptacion LoRA de meta-llama/Llama-3.1-8B-Instruct afinada para adoptar una personalidad deliberadamente grosera, perezosa y desdeñosa. Lo publica el usuario anyalkonsafe en Hugging Face y su proposito declarado es el de modelo de novedad o persona, no el de asistente util: rechaza tareas creativas y de relleno, ayuda con codigo a regañadientes y, por diseno, admite ignorancia en lugar de inventar respuestas. Es, en la practica, una demostracion de ajuste de estilo y de sesgo anti-alucinacion aprendido como conducta.
 
 Tecnicamente es un fine-tune QLoRA (4 bits) via Unsloth sobre el modelo base de 8.000 millones de parametros de Meta, con un adaptador LoRA de rango 16 aplicado a todas las proyecciones lineales. Se distribuye unicamente en formato GGUF cuantizado en Q4_K_M (unos 4,9 GB) para su uso con llama.cpp. El entrenamiento se realizo con una ventana de 512 tokens, aunque el modelo funciona sin problemas a 2048 o mas, heredando la arquitectura transformer decoder-only y el chat template de Llama 3.1.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anyalkonsafe/evilguy-gguf
+- Modelo en Hugging Face: https://huggingface.co/anyalkonsafe/evilguy-gguf
 - Perfil del autor: https://huggingface.co/anyalkonsafe/models
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

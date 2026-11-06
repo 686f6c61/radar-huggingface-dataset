@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `efficientvim_m2.e300_in1k` es un clasificador de imágenes publicado en HuggingFace por el autor `remyxai`. Se trata de un modelo compacto con 13.945.538 parámetros, lo que lo sitúa en la categoría de modelos eficientes para visión por computador. Está integrado con la librería `timm` y sigue el pipeline de clasificación de imágenes de `transformers`.
+El modelo `efficientvim_m2.e300_in1k` es un clasificador de imágenes publicado en Hugging Face por el autor `remyxai`. Se trata de un modelo compacto con 13.945.538 parámetros, lo que lo sitúa en la categoría de modelos eficientes para visión por computador. Está integrado con la librería `timm` y sigue el pipeline de clasificación de imágenes de `transformers`.
 
 El nombre del modelo sugiere un diseño orientado a la eficiencia, posiblemente basado en arquitecturas tipo Vision Mamba, aunque no hay información oficial que lo confirme. Su licencia Apache 2.0 permite uso comercial, y su tamaño reducido lo convierte en una opción atractiva para despliegue en dispositivos con recursos limitados, como sistemas embebidos o aplicaciones móviles.
 
-No se han publicado detalles sobre datos de entrenamiento, arquitectura interna ni resultados de benchmarks. La ficha se centra, por tanto, en los datos disponibles en HuggingFace y en las implicaciones prácticas de su reducido tamaño.
+No se han publicado detalles sobre datos de entrenamiento, arquitectura interna ni resultados de benchmarks. La ficha se centra, por tanto, en los datos disponibles en Hugging Face y en las implicaciones prácticas de su reducido tamaño.
 
 ## Especificaciones técnicas
 
@@ -72,4 +72,4 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: [remyxai/efficientvim_m2.e300_in1k](https://huggingface.co/remyxai/efficientvim_m2.e300_in1k)
+- Hugging Face: [remyxai/efficientvim_m2.e300_in1k](https://huggingface.co/remyxai/efficientvim_m2.e300_in1k)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lucazanett/pi05-wiping_adaptive` es un checkpoint de política robótica publicado en HuggingFace Hub por el usuario lucazanett, consistente en una implementación LeRobot del modelo π₀.₅ (Pi05) de Physical Intelligence. Se trata de un modelo Vision-Language-Action (VLA) diseñado para generalización en entornos abiertos, es decir, para ejecutar tareas de manipulación en situaciones y localizaciones no vistas durante el entrenamiento. El checkpoint está especializado en una tarea concreta de frotado/limpieza («wiping»), según el dataset asociado `lucazanett/wiping_adaptive`.
+`lucazanett/pi05-wiping_adaptive` es un checkpoint de política robótica publicado en Hugging Face Hub por el usuario lucazanett, consistente en una implementación LeRobot del modelo π₀.₅ (Pi05) de Physical Intelligence. Se trata de un modelo Vision-Language-Action (VLA) diseñado para generalización en entornos abiertos, es decir, para ejecutar tareas de manipulación en situaciones y localizaciones no vistas durante el entrenamiento. El checkpoint está especializado en una tarea concreta de frotado/limpieza («wiping»), según el dataset asociado `lucazanett/wiping_adaptive`.
 
-El modelo cuenta con 4.143.404.816 parámetros en formato safetensors y un repositorio de 9,4 GB. La implementación procede del repositorio OpenPI de Physical Intelligence, adaptada a la librería LeRobot de HuggingFace, lo que permite entrenarlo y evaluarlo con las herramientas estándar de LeRobot (`lerobot-train`, `lerobot-record`) sobre robots de la familia SO-100.
+El modelo cuenta con 4.143.404.816 parámetros en formato safetensors y un repositorio de 9,4 GB. La implementación procede del repositorio OpenPI de Physical Intelligence, adaptada a la librería LeRobot de Hugging Face, lo que permite entrenarlo y evaluarlo con las herramientas estándar de LeRobot (`lerobot-train`, `lerobot-record`) sobre robots de la familia SO-100.
 
 Su relevancia es acotada: se trata de un artefacto de investigación derivado (no del modelo oficial de Physical Intelligence) con cero descargas y cero valoraciones en el momento de la consulta, sin benchmarks publicados y con una model card basada en la plantilla genérica de LeRobot. Es útil como ejemplo de flujo de trabajo VLA con LeRobot y como política de partida para la tarea de limpieza, pero no debe considerarse un modelo validado para producción.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de rendimiento ni de contexto para establecer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucazanett/pi05-wiping_adaptive
+- Modelo en Hugging Face: https://huggingface.co/lucazanett/pi05-wiping_adaptive
 - Dataset asociado: https://huggingface.co/datasets/lucazanett/wiping_adaptive
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi

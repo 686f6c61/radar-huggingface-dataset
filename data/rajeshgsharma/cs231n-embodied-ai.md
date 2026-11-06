@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshgsharma/cs231n-embodied-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion y un esbozo de experimento sobre IA encarnada (embodied AI), publicado en HuggingFace bajo el identificador de un curso (CS231N). El autor, `rajeshgsharma`, lo describe explicitamente como un artefacto exploratorio: el contenido principal es `reading.md`, un documento de lectura con el alcance de la pregunta de investigacion, confounders probables, propuesta de comparacion con baselines emparejados, contexto de evaluacion y referencias. La model card indica de forma literal que no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
+`rajeshgsharma/cs231n-embodied-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion y un esbozo de experimento sobre IA encarnada (embodied AI), publicado en Hugging Face bajo el identificador de un curso (CS231N). El autor, `rajeshgsharma`, lo describe explicitamente como un artefacto exploratorio: el contenido principal es `reading.md`, un documento de lectura con el alcance de la pregunta de investigacion, confounders probables, propuesta de comparacion con baselines emparejados, contexto de evaluacion y referencias. La model card indica de forma literal que no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado.
 
 El repositorio incluye un fichero de pesos en formato safetensors con 16.576 parametros totales, un tamano trivial que no corresponde a ningun modelo funcional de proposito general y que probablemente sea un artefacto residual o de prueba asociado al flujo de trabajo del repositorio. El tamano del repo es de 0,0 GB y no consta pipeline de inferencia definido.
 
@@ -12,7 +12,7 @@ Por tanto, su relevancia actual no es como modelo desplegable, sino como documen
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (segun tag de HuggingFace); sin detalle arquitectonico en la model card |
+| Arquitectura | transformer (segun tag de Hugging Face); sin detalle arquitectonico en la model card |
 | Parametros totales | 16.576 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -73,4 +73,4 @@ No disponible. No existe una categoria de modelos comparables: el repositorio es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rajeshgsharma/cs231n-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/rajeshgsharma/cs231n-embodied-ai

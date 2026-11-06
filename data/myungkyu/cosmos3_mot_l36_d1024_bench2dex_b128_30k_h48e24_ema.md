@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_b128_30k_h48e24_ema
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_b128_30k_h48e24_ema
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/bench2dex_ur5_rh56dfx_3_lerobot_v30
 - Bench2Dex (repositorio): https://github.com/Bench2Dex/Bench2Dex
 - Bench2Dex (paper, arXiv 2609.15726): https://arxiv.org/abs/2609.15726

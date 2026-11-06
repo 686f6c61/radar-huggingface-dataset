@@ -70,14 +70,14 @@ No disponible. La información proporcionada no incluye otros artefactos de voz 
 - Solo japonés: no hay soporte multilingüe documentado.
 - Voz sintética generada con VoxCPM2: no se detallan sesgos prosódicos ni de pronunciación, ni se han publicado evaluaciones de naturalidad (MOS) o inteligibilidad.
 - No hay información sobre robustez ante texto con caracteres no japoneses, números, siglas o nombres propios; el comportamiento depende del G2P de ZEN-TTS y de sus diccionarios.
-- El repositorio de HuggingFace registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria publicada.
+- El repositorio de Hugging Face registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación comunitaria publicada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kojira/zen-tts-models
+- Hugging Face: https://huggingface.co/kojira/zen-tts-models
 - Repositorio GitHub del autor: https://github.com/kojira/zen-tts-models
 - Motor ZEN-TTS (GitHub): https://github.com/zenryokukikai/zen-tts
 - Documentación y README de ZEN-TTS: https://github.com/zenryokukikai/zen-tts#readme
 - Licencia de ZEN-TTS 1.0: https://github.com/zenryokukikai/zen-tts/blob/main/LICENSE.md
 - Zenryoku Kikai (全力機械): https://zenryokukikai.com
-- Licencia del modelo de voz: LICENSE.md en el repositorio de HuggingFace
+- Licencia del modelo de voz: LICENSE.md en el repositorio de Hugging Face

@@ -81,7 +81,7 @@ La model card incluye imagenes de benchmarks (benchmark multilingue cirilico y b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metrika-labs/PP-OCRv6_medium_rec_cyrillic_onnx
+- Modelo en Hugging Face: https://huggingface.co/metrika-labs/PP-OCRv6_medium_rec_cyrillic_onnx
 - Variante tiny ONNX: https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic_onnx
 - Variante medium PaddlePaddle: https://huggingface.co/metrika-labs/PP-OCRv6_medium_rec_cyrillic
 - Variante tiny PaddlePaddle: https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic

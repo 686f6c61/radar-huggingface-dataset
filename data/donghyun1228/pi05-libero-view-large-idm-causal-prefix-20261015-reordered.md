@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace (5,9 GB, 0 descargas y 0 likes en el momento de la consulta) contiene un checkpoint de politica robotica visuomotora del linaje pi05, evaluado sobre el benchmark LIBERO. Lo publica el usuario Donghyun1228 y no es un modelo de lenguaje: es un brazo experimental que compara dos variantes de un modelo auxiliar de dinamica inversa (IDM, inverse dynamics model) anadido al entrenamiento de la politica.
+Este repositorio de Hugging Face (5,9 GB, 0 descargas y 0 likes en el momento de la consulta) contiene un checkpoint de politica robotica visuomotora del linaje pi05, evaluado sobre el benchmark LIBERO. Lo publica el usuario Donghyun1228 y no es un modelo de lenguaje: es un brazo experimental que compara dos variantes de un modelo auxiliar de dinamica inversa (IDM, inverse dynamics model) anadido al entrenamiento de la politica.
 
 El experimento mide si imponer un prefijo causal en la atencion del brazo IDM, cuyos tokens se reordenan como imagen actual, prompt inverso e imagen futura, aporta alguna ganancia de exito frente a un control reordenado con atencion completa al prefijo. La respuesta, segun la propia model card, es negativa: los tres brazos comparados (accepted, reordered y causal) obtienen 11/24 en la pantalla de politica emparejada y las cuatro tareas dificiles siguen en 0/3.
 
@@ -18,7 +18,7 @@ Su interes actual es doble: documenta un resultado nulo reproducible en un area 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Pesos de inferencia en BF16; los checkpoints nativos FP32 de optimizador y EMA no se incluyen en el repositorio |
 | Idiomas soportados | No disponible (modelo de robotica, no de lenguaje) |
-| Licencia | No disponible (ni la ficha de HuggingFace ni la model card declaran licencia) |
+| Licencia | No disponible (ni la ficha de Hugging Face ni la model card declaran licencia) |
 | Formato de pesos | No disponible (no se especifica safetensors, GGUF ni ningun otro) |
 | Tamano del repositorio | 5,9 GB |
 | Tarea (pipeline) | robotics; manipulacion robotica en el benchmark LIBERO |
@@ -79,7 +79,7 @@ No se dispone de comparativa con otros modelos publicos en la informacion propor
 
 | Elemento comparado | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-view-large-idm-causal-prefix | No disponible | No disponible | 11/24 en pantalla de 8 tareas; 0/3 en tareas dificiles | No disponible | Pesos BF16 en HuggingFace; FP32 no incluidos |
+| pi05-libero-view-large-idm-causal-prefix | No disponible | No disponible | 11/24 en pantalla de 8 tareas; 0/3 en tareas dificiles | No disponible | Pesos BF16 en Hugging Face; FP32 no incluidos |
 | Modelos alternativos de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,6 +97,6 @@ No se dispone de comparativa con otros modelos publicos en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-causal-prefix-20261015-reordered
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-causal-prefix-20261015-reordered
 - Codigo de entrenamiento: https://github.com/Donghyun1228/vla_adaptation (commit code07e04b82, referenciado en la model card)
 - No se han proporcionado otros enlaces a papers, blogs, demos o repositorios en la informacion disponible.

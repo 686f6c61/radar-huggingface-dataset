@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kitsune-TTS V1 es un modelo de sintesis de voz (text-to-speech) compacto y no autoregresivo desarrollado por el usuario Heitorkk2, publicado en HuggingFace bajo licencia GPL-3.0. Esta construido sobre la arquitectura VITS2-Slim, con prediccion estocastica de duracion y embeddings de hablante, y cuenta con aproximadamente 39 millones de parametros (unos 76 MB en FP16 y 151 MB en FP32). El modelo esta entrenado exclusivamente para portugues de Brasil (PT-BR) y genera audio mono a 22.050 Hz.
+Kitsune-TTS V1 es un modelo de sintesis de voz (text-to-speech) compacto y no autoregresivo desarrollado por el usuario Heitorkk2, publicado en Hugging Face bajo licencia GPL-3.0. Esta construido sobre la arquitectura VITS2-Slim, con prediccion estocastica de duracion y embeddings de hablante, y cuenta con aproximadamente 39 millones de parametros (unos 76 MB en FP16 y 151 MB en FP32). El modelo esta entrenado exclusivamente para portugues de Brasil (PT-BR) y genera audio mono a 22.050 Hz.
 
 Su propuesta de valor es el tamano reducido combinado con inferencia en CPU: segun las mediciones del propio autor, sintetiza 9,21 segundos de audio en 2,06 segundos sobre un AMD Ryzen 7 5700U de 8 hilos usando el modo `fast_cpu` de PyTorch, lo que equivale a un factor de tiempo real (RTF) de 0,224. Incorpora cinco voces predefinidas con estilos asociados a personajes de anime (Emilia, Frieren, Zero Two, Violet e Hiro), lo que lo orienta a asistentes virtuales, prototipos de doblaje y aplicaciones de entretenimiento en portugues.
 
@@ -87,10 +87,10 @@ La informacion proporcionada no incluye comparaciones con otros sistemas TTS. La
 
 | Modelo | Parametros | Idiomas | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kitsune-TTS V1 | ~39 M | PT-BR unicamente | VITS2-Slim (no autoregresiva) | GPL-3.0 (copyleft) | Pesos .pth y .onnx en HuggingFace |
+| Kitsune-TTS V1 | ~39 M | PT-BR unicamente | VITS2-Slim (no autoregresiva) | GPL-3.0 (copyleft) | Pesos .pth y .onnx en Hugging Face |
 | Piper (referencia externa) | Del orden de decenas de millones por voz (no disponible) | Multiples idiomas con voces separadas por idioma | VITS | MIT en el software; licencia de cada voz variable | Pesos ONNX por voz |
-| Kokoro-82M (referencia externa) | ~82 M | Principalmente ingles (no disponible) | Familia StyleTTS2 | Apache-2.0 | Pesos en HuggingFace |
-| XTTS v2 de Coqui (referencia externa) | ~467 M | Multilingue (no disponible) | Autoregresiva con clonacion de voz | Coqui Public Model License (uso comercial restringido) | Pesos en HuggingFace |
+| Kokoro-82M (referencia externa) | ~82 M | Principalmente ingles (no disponible) | Familia StyleTTS2 | Apache-2.0 | Pesos en Hugging Face |
+| XTTS v2 de Coqui (referencia externa) | ~467 M | Multilingue (no disponible) | Autoregresiva con clonacion de voz | Coqui Public Model License (uso comercial restringido) | Pesos en Hugging Face |
 
 Diferencias destacables: Kitsune-TTS V1 es el unico de la lista orientado en exclusiva a PT-BR con voces de estilizacion anime, y su licencia GPL-3.0 es la mas restrictiva para productos propietarios. No hay datos de rendimiento comparativo (MOS, similitud de hablante o inteligibilidad) para establecer una jerarquia de calidad.
 
@@ -109,7 +109,7 @@ Diferencias destacables: Kitsune-TTS V1 es el unico de la lista orientado en exc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Heitorkk2/Kitsune-TTS-V1
+- Modelo en Hugging Face: https://huggingface.co/Heitorkk2/Kitsune-TTS-V1
 - Repositorio GitHub del proyecto: https://github.com/Heitorkk2/Kitsune-TTS
 - Cliente JavaScript: https://github.com/Heitorkk2/Kitsune-TTS/tree/main/clients/js
 - Guia de exportacion a ONNX: https://github.com/Heitorkk2/Kitsune-TTS/blob/main/examples/export/README.md

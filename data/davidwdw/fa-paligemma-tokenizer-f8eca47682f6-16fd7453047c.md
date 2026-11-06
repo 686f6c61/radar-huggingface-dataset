@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `davidwdw`, no contiene un modelo de lenguaje entrenado, sino un paquete de tokenizer SentencePiece vinculado a la familia PaliGemma. El autor lo describe en su model card como un "archivo versionado de flota" (versioned fleet archive), con un nivel declarado (`paligemma_sentencepiece_tokenizer`) y una receta canonica interna identificada como `2026-09-21_b1k_task00_pi05_codegen_success_sft_h20`. El repositorio figura con un tamano de 0,0 GB, cero descargas y cero likes, y no declara licencia, idiomas soportados ni pipeline.
+Este repositorio de Hugging Face, publicado por el usuario `davidwdw`, no contiene un modelo de lenguaje entrenado, sino un paquete de tokenizer SentencePiece vinculado a la familia PaliGemma. El autor lo describe en su model card como un "archivo versionado de flota" (versioned fleet archive), con un nivel declarado (`paligemma_sentencepiece_tokenizer`) y una receta canonica interna identificada como `2026-09-21_b1k_task00_pi05_codegen_success_sft_h20`. El repositorio figura con un tamano de 0,0 GB, cero descargas y cero likes, y no declara licencia, idiomas soportados ni pipeline.
 
 El interes de este artefacto es de trazabilidad y reproducibilidad, no de inferencia: un tokenizer define la segmentacion de texto en subpalabras y es un componente critico cuando se fine-tunea o se despliega un modelo multimodal, ya que una discrepancia en el vocabulario invalida los pesos. El README insiste en usar la revision exacta y verificar el fichero `SHA256SUMS`, lo que apunta a un uso en pipelines automatizados donde la integridad binaria importa mas que la calidad del modelo en si.
 
@@ -24,7 +24,7 @@ PaliGemma, la familia a la que pertenece este tokenizer, es un modelo vision-lan
 | Fecha de creacion | 2026-09-26T19:59:03Z |
 | Ultima actualizacion | 2026-09-26T19:59:19Z |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0,0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun la ficha de Hugging Face) |
 | Pipeline declarado | No disponible |
 | Receta declarada | `2026-09-21_b1k_task00_pi05_codegen_success_sft_h20` |
 
@@ -67,7 +67,7 @@ En concreto, el repositorio no incluye metricas de ningun tipo, la model card no
 
 ## Requisitos de hardware
 
-- VRAM para el artefacto: practicamente nula. Un tokenizer SentencePiece se carga en memoria de CPU y ocupa tipicamente unos pocos megabytes; la ficha de HuggingFace reporta 0,0 GB de repositorio.
+- VRAM para el artefacto: practicamente nula. Un tokenizer SentencePiece se carga en memoria de CPU y ocupa tipicamente unos pocos megabytes; la ficha de Hugging Face reporta 0,0 GB de repositorio.
 - GPU recomendadas: no disponible para este artefacto, ya que no requiere GPU. Para ejecutar el modelo PaliGemma completo no se han encontrado en la informacion proporcionada cifras de VRAM ni listas de GPU recomendadas.
 - Compatibilidad con GPU de consumo: el tokenizer es compatible con cualquier maquina, incluidas CPU sin aceleracion. La viabilidad de PaliGemma en GPU de consumo no se detalla en la informacion disponible.
 - Opciones de despliegue: el tokenizer se usa a traves de `PaliGemmaProcessor` en la libreria Transformers; tambien puede cargarse con las utilidades de SentencePiece. Para el modelo completo, las alternativas habituales (vLLM, TGI, llama.cpp, Ollama) no vienen confirmadas en la documentacion consultada.
@@ -99,7 +99,7 @@ En concreto, el repositorio no incluye metricas de ningun tipo, la model card no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-paligemma-tokenizer-f8eca47682f6-16fd7453047c
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-paligemma-tokenizer-f8eca47682f6-16fd7453047c
 - Documentacion de PaliGemma en Transformers: https://huggingface.co/docs/transformers/v4.57.1/en/model_doc/paligemma
 - README de PaliGemma en big_vision: https://google-research.github.io/big_vision/big_vision/configs/proj/paligemma/
 - Codigo fuente de PaliGemma en big_vision: https://github.com/google-research/big_vision/blob/main/big_vision/models/proj/paligemma/paligemma.py

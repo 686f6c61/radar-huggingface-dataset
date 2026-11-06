@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (biblioteca PEFT) entrenado sobre el modelo base `meta-llama/Llama-3.1-8B`, publicado por el usuario `strongpear`. No se trata de un modelo completo, sino de pesos incrementales de aproximadamente 0,7 GB que deben cargarse junto al modelo base para poder ejecutarse. El identificador del repositorio sugiere una receta de ajuste fino del tipo RAFT (Retrieval-Augmented Fine-Tuning, ajuste fino aumentado con recuperación) con tres documentos de contexto, cadena de pensamiento (CoT), datos de tipo wiki, formato instruct y rango LoRA 64, aunque el autor no confirma ninguno de estos extremos en la documentación.
 
-La relevancia de este tipo de artefactos es doble. Por un lado, ejemplifica el flujo de trabajo habitual de la comunidad open source: especializar un modelo de 8.000 millones de parámetros mediante LoRA permite distribuir la adaptación en menos de un gigabyte en lugar de los ~16 GB del modelo completo en bf16. Por otro, su estado de documentación lo convierte en un caso representativo de la necesidad de evaluar empíricamente los adaptadores antes de usarlos en producción: la model card es la plantilla por defecto de HuggingFace sin rellenar.
+La relevancia de este tipo de artefactos es doble. Por un lado, ejemplifica el flujo de trabajo habitual de la comunidad open source: especializar un modelo de 8.000 millones de parámetros mediante LoRA permite distribuir la adaptación en menos de un gigabyte en lugar de los ~16 GB del modelo completo en bf16. Por otro, su estado de documentación lo convierte en un caso representativo de la necesidad de evaluar empíricamente los adaptadores antes de usarlos en producción: la model card es la plantilla por defecto de Hugging Face sin rellenar.
 
 El adaptador cuenta con 0 descargas y 0 «likes» en el momento de redactar esta ficha, no declara licencia ni idiomas, y no aporta resultados de evaluación. Cualquier decisión de uso debería apoyarse en una validación propia sobre el dominio objetivo, no en la información publicada por el autor.
 
@@ -24,7 +24,7 @@ El adaptador cuenta con 0 descargas y 0 «likes» en el momento de redactar esta
 | Librería | peft (versión de framework declarada: PEFT 0.20.0) |
 | Etiquetas | peft, safetensors, lora, transformers, text-generation, base_model:adapter:meta-llama/Llama-3.1-8B, region:us |
 | Tamaño del repositorio | 0,7 GB |
-| Fecha de publicación | 2026-09-11 según los metadatos de HuggingFace (fecha anómala, posterior a la fecha habitual de consulta) |
+| Fecha de publicación | 2026-09-11 según los metadatos de Hugging Face (fecha anómala, posterior a la fecha habitual de consulta) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -56,7 +56,7 @@ El nombre del repositorio codifica la receta de entrenamiento, pero el autor no 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del autor es la plantilla por defecto de HuggingFace y no incluye métricas de MMLU, HumanEval, GSM8K ni ninguna otra evaluación. Tampoco se aportan resultados de la pérdida de validación que da nombre al checkpoint.
+No se han publicado resultados de benchmarks en la información disponible. La model card del autor es la plantilla por defecto de Hugging Face y no incluye métricas de MMLU, HumanEval, GSM8K ni ninguna otra evaluación. Tampoco se aportan resultados de la pérdida de validación que da nombre al checkpoint.
 
 ## Requisitos de hardware
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (r64 sobre Llama 3.1 8B) | ~180 M de adaptador + 8.030 M del base | 128.000 tokens | No disponible | No disponible (base: Llama 3.1 Community License) | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Métricas publicadas por Meta en la model card | Llama 3.1 Community License | HuggingFace, ampliamente adoptado |
-| Qwen2.5-7B-Instruct | 7.610 M | 128.000 tokens | Métricas publicadas por el equipo de Qwen | Apache 2.0 (variantes) | HuggingFace, ampliamente adoptado |
-| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Métricas publicadas por Mistral | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Adaptador RAFT sin documentar (categoría) | Variable | Heredado del base | Habitualmente no publicado | Habitualmente no declarada | HuggingFace, adopción muy baja |
+| Este adaptador (r64 sobre Llama 3.1 8B) | ~180 M de adaptador + 8.030 M del base | 128.000 tokens | No disponible | No disponible (base: Llama 3.1 Community License) | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Métricas publicadas por Meta en la model card | Llama 3.1 Community License | Hugging Face, ampliamente adoptado |
+| Qwen2.5-7B-Instruct | 7.610 M | 128.000 tokens | Métricas publicadas por el equipo de Qwen | Apache 2.0 (variantes) | Hugging Face, ampliamente adoptado |
+| Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Métricas publicadas por Mistral | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Adaptador RAFT sin documentar (categoría) | Variable | Heredado del base | Habitualmente no publicado | Habitualmente no declarada | Hugging Face, adopción muy baja |
 
 La comparación con alternativas completas es desfavorable en disponibilidad y trazabilidad: los tres modelos completos citados tienen model cards detalladas, licencias claras y comunidades amplias, mientras que este adaptador carece de toda esa información.
 
@@ -94,7 +94,7 @@ La comparación con alternativas completas es desfavorable en disponibilidad y t
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
+- Hugging Face del adaptador: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Modelo base instruct (referencia de capacidades): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia del modelo base: https://llama.meta.com/llama3_1/license/

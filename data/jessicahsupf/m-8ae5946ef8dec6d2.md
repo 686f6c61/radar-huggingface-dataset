@@ -72,7 +72,7 @@ No disponible. No se ha identificado informacion sobre arquitectura, parametros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JessicaHsuPF/m-8ae5946ef8dec6d2
-- Perfil del autor en HuggingFace: https://huggingface.co/JessicaHsuPF
+- Repositorio Hugging Face: https://huggingface.co/JessicaHsuPF/m-8ae5946ef8dec6d2
+- Perfil del autor en Hugging Face: https://huggingface.co/JessicaHsuPF
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web. Los resultados de busqueda devuelven contenido no relacionado (perfiles de Instagram y colecciones de terceros) que no aportan informacion tecnica relevante.

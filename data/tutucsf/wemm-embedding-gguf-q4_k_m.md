@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos. WeMM-Embedding destaca por su soporte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TuTuCSF/WeMM-Embedding-GGUF-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/TuTuCSF/WeMM-Embedding-GGUF-Q4_K_M
 - Modelo base (Tencent): https://huggingface.co/tencent/WeMM-Embedding-4B
 - GitHub oficial de WeMM-Embedding: https://github.com/Tencent/WeMM-Embedding
 - Paper técnico (arXiv): https://arxiv.org/abs/2608.24053

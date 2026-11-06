@@ -4,7 +4,7 @@
 
 Swift-Qwen3.8-27b es un derivado de Qwen/Qwen3.8-27B publicado por UkisAI que optimiza el coste de razonamiento del modelo base. Su propuesta es reducir la verbosidad de las trazas de pensamiento: segun la model card, emplea un 58,3% menos de tokens de pensamiento (mediana) manteniendo una perdida de rendimiento inferior al 1%, lo que se traduce en una aceleracion de hasta x1,95 en varias tareas. El modelo se distribuye bajo una licencia propia (swift-open-license-1.0), con acceso restringido (gated) y un repositorio de 55,6 GB en formato safetensors.
 
-Tecnicamente es un ajuste fino sobre el modelo base de Qwen, no un modelo entrenado desde cero. El pipeline declarado en HuggingFace es image-text-to-text, lo que apunta a capacidad multimodal de entrada (imagenes y texto), aunque la model card no detalla la arquitectura interna ni la longitud de contexto. El recuento real de parametros en los ficheros safetensors es de 27.781.427.952 (unos 27,78 mil millones), coherente con los ~55,6 GB del repositorio en precision BF16.
+Tecnicamente es un ajuste fino sobre el modelo base de Qwen, no un modelo entrenado desde cero. El pipeline declarado en Hugging Face es image-text-to-text, lo que apunta a capacidad multimodal de entrada (imagenes y texto), aunque la model card no detalla la arquitectura interna ni la longitud de contexto. El recuento real de parametros en los ficheros safetensors es de 27.781.427.952 (unos 27,78 mil millones), coherente con los ~55,6 GB del repositorio en precision BF16.
 
 Su relevancia actual es economica: en cargas de trabajo con modo de razonamiento, la mayor parte del coste de inferencia procede de los tokens generados, no de los de entrada. Un modelo que recorta entre un 41% y un 58% de tokens intermedios con una degradacion marginal de precision reduce directamente el coste por consulta y la latencia percibida, a cambio de una perdida acusada en tareas de matematicas competitivas como AIME 2026 (98,67% a 94,00%). Con 59 descargas y 16 likes en el momento de la consulta, es un modelo de nicho, con adopcion todavia temprana.
 
@@ -77,7 +77,7 @@ Las cifras de VRAM son estimaciones derivadas del recuento de parametros (27,78 
 - Inferencia en INT4 (GPTQ, AWQ u otras): aproximadamente 14-16 GB de pesos, mas overhead; cabe en una RTX 4090 o RTX 3090 de 24 GB con contexto moderado.
 - GPU recomendadas: H100 80 GB y A100 80 GB para precision completa y lotes grandes; A6000 48 GB o L40S 48 GB para cuantizacion de 8 bits; RTX 4090, RTX 3090 o RTX 5090 para cuantizacion de 4 bits.
 - Viabilidad en GPU de consumo: si, en cuantizacion de 4 bits y con ventanas de contexto moderadas. En 24 GB no es viable en BF16.
-- Opciones de despliegue: transformers (libreria declarada), vLLM y TGI para servicio en GPU; llama.cpp u Ollama solo si el autor publica pesos GGUF, algo que no se indica en la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (libreria declarada), vLLM y TGI para servicio en GPU; llama.cpp u Ollama solo si el autor publica pesos GGUF, algo que no se indica en la informacion disponible. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no hay cifras absolutas publicadas. El autor declara una aceleracion de x1,95 en varias tareas atribuible a la menor generacion de tokens, y una reduccion de mediana de tokens de hasta el 58,3%.
 
 ## Comparativa con modelos similares
@@ -100,13 +100,13 @@ Solo se dispone de datos comparativos frente al modelo base, que es el punto de 
 - Idioma: no se especifican los idiomas soportados. La unica evaluacion multilingue documentada es C-Eval, en chino; no hay datos para castellano.
 - Longitud de contexto: no disponible, un dato critico para dimensionar el despliegue y la cache KV.
 - Licencia: es una licencia personalizada (`license: other`) con nombre propio, swift-open-license-1.0, y el repositorio esta marcado como `gated`. Hay que revisar los terminos completos antes de cualquier uso comercial; la model card menciona una via de licencia enterprise, lo que sugiere restricciones para uso comercial no autorizado.
-- Acceso restringido: al ser un modelo gated, es necesario aceptar las condiciones en HuggingFace para descargar los pesos, lo que anade friccion a pipelines automatizados.
+- Acceso restringido: al ser un modelo gated, es necesario aceptar las condiciones en Hugging Face para descargar los pesos, lo que anade friccion a pipelines automatizados.
 - Madurez: 59 descargas y 16 likes, con una unica fuente de evaluacion (el propio autor). No hay validacion independiente de los resultados.
 - Datos de entrenamiento no publicados: se desconoce el volumen y la composicion del dataset de ajuste, lo que limita la evaluacion de riesgos de contaminacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
+- Modelo en Hugging Face: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Anuncio en el blog de UkisAI: https://ukisai.com/news/introducing-swift
 - Sitio web de UkisAI: https://ukisai.com
 - Pagina de producto Swift: https://ukisai.com/products/swift

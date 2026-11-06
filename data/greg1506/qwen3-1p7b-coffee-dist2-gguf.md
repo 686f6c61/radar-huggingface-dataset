@@ -85,10 +85,10 @@ El autor advierte que el conjunto de test es deliberadamente aritmético (aproxi
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-1p7b-coffee-dist2 (Q5_K_M) | 1,7B | no disponible | CoffeeBench EM 0,574 / soft 0,592 | Apache 2.0 | GGUF en HuggingFace |
-| qwen3-1p7b-coffee-dist2 (Q4_K_M) | 1,7B | no disponible | CoffeeBench EM 0,530 / soft 0,551 | Apache 2.0 | GGUF en HuggingFace |
-| greg1506/qwen3-8b-coffee-v10 (profesor) | 8B | no disponible | CoffeeBench EM 0,753 / soft 0,789 | no disponible | HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible | no disponible en esta información | no disponible en esta información | HuggingFace |
+| qwen3-1p7b-coffee-dist2 (Q5_K_M) | 1,7B | no disponible | CoffeeBench EM 0,574 / soft 0,592 | Apache 2.0 | GGUF en Hugging Face |
+| qwen3-1p7b-coffee-dist2 (Q4_K_M) | 1,7B | no disponible | CoffeeBench EM 0,530 / soft 0,551 | Apache 2.0 | GGUF en Hugging Face |
+| greg1506/qwen3-8b-coffee-v10 (profesor) | 8B | no disponible | CoffeeBench EM 0,753 / soft 0,789 | no disponible | Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible | no disponible en esta información | no disponible en esta información | Hugging Face |
 
 No se dispone de datos de benchmarks de Qwen3-1.7B base sobre CoffeeBench ni de otros modelos especializados en café comparables en la información proporcionada.
 
@@ -101,10 +101,10 @@ No se dispone de datos de benchmarks de Qwen3-1.7B base sobre CoffeeBench ni de 
 - No es fuente de referencia: el propio autor indica que los consejos y cálculos de café son indicativos y deben verificarse de forma independiente.
 - La plantilla de chat incluye un bloque de "thinking" que aparece como texto literal en las completaciones crudas; es necesario eliminarlo o usar la plantilla sin thinking.
 - Riesgo de alucinación en preguntas numéricas y de mapeo, tal como reflejan los resultados por categoría.
-- La licencia declarada en la model card es Apache 2.0, aunque el campo de licencia de HuggingFace figura como no disponible; conviene verificar antes de un uso comercial.
+- La licencia declarada en la model card es Apache 2.0, aunque el campo de licencia de Hugging Face figura como no disponible; conviene verificar antes de un uso comercial.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/greg1506/qwen3-1p7b-coffee-dist2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/greg1506/qwen3-1p7b-coffee-dist2-GGUF
 - Modelo profesor de 8B: https://huggingface.co/greg1506/qwen3-8b-coffee-v10
 - Dataset del corpus: https://huggingface.co/datasets/greg1506/coffee-corpus-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

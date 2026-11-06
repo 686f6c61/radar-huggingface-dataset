@@ -2,11 +2,11 @@
 
 ## Resumen
 
-COIL-D/translate-it2-hindi-punjabi es un modelo de traduccion automatica neuronal especializado en el par hindi-punjabi (y punjabi-hindi), publicado por el usuario COIL-D en HuggingFace. Se trata de un ajuste fino del modelo ai4bharat/indictrans2-indic-indic-dist-320M, desarrollado originalmente por AI4Bharat, por lo que hereda su arquitectura transformer encoder-decoder orientada a traduccion entre lenguas indicas.
+COIL-D/translate-it2-hindi-punjabi es un modelo de traduccion automatica neuronal especializado en el par hindi-punjabi (y punjabi-hindi), publicado por el usuario COIL-D en Hugging Face. Se trata de un ajuste fino del modelo ai4bharat/indictrans2-indic-indic-dist-320M, desarrollado originalmente por AI4Bharat, por lo que hereda su arquitectura transformer encoder-decoder orientada a traduccion entre lenguas indicas.
 
 El modelo cuenta con 320.861.184 parametros (aproximadamente 320M) y se distribuye en formato safetensors con la libreria transformers y pipeline de traduccion. La relevancia de este tipo de ajustes radica en la escasez relativa de modelos abiertos de calidad para pares linguisticos indicos especificos, donde las alternativas multilingues genericas suelen rendir peor que un modelo destilado y afinado para un unico par.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. La licencia declarada es MIT, lo que en principio permite uso comercial, aunque la licencia del modelo base debe verificarse de forma independiente. No se han publicado datos de benchmarks, numero de tokens de entrenamiento ni composicion del dataset de ajuste en la informacion disponible.
+El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. La licencia declarada es MIT, lo que en principio permite uso comercial, aunque la licencia del modelo base debe verificarse de forma independiente. No se han publicado datos de benchmarks, numero de tokens de entrenamiento ni composicion del dataset de ajuste en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -85,15 +85,15 @@ El modelo aqui descrito se diferencia del checkpoint base unicamente por el ajus
 - Cobertura limitada a dos idiomas y a las direcciones declaradas; no hay garantia de funcionamiento en otros pares indicos ni en variantes dialectales del punjabi o del hindi.
 - Sesgos potenciales heredados del corpus de entrenamiento del modelo base, que no se documenta en esta ficha.
 - La licencia declarada es MIT, pero al ser un derivado de un modelo de terceros conviene verificar las condiciones del checkpoint base antes de un uso comercial.
-- El acceso esta restringido (gated): es obligatorio aceptar condiciones en HuggingFace y disponer de un token con permisos para descargar los pesos, lo que complica la automatizacion en pipelines.
+- El acceso esta restringido (gated): es obligatorio aceptar condiciones en Hugging Face y disponer de un token con permisos para descargar los pesos, lo que complica la automatizacion en pipelines.
 - El modelo requiere `trust_remote_code=True` y dependencias especificas (IndicTrans/IndicTransToolkit); omitir el preprocesado con etiquetas de lengua degrada gravemente la salida.
 - El repositorio tiene 0 descargas y 0 likes, sin historial de uso ni mantenimiento conocido: no hay garantia de soporte, actualizaciones o correccion de errores.
-- La fecha de creacion y actualizacion registrada en HuggingFace es del 29 de septiembre de 2026, un dato anomalo que conviene verificar.
+- La fecha de creacion y actualizacion registrada en Hugging Face es del 29 de septiembre de 2026, un dato anomalo que conviene verificar.
 - La referencia arXiv incluida en las etiquetas (arxiv:2609.28826) no se ha podido contrastar con ninguna publicacion en la busqueda realizada.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/COIL-D/translate-it2-hindi-punjabi
+- Pagina del modelo en Hugging Face: https://huggingface.co/COIL-D/translate-it2-hindi-punjabi
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-indic-indic-dist-320M
 - Repositorio oficial de IndicTrans2 (AI4Bharat): https://github.com/AI4Bharat/IndicTrans2
 - IndicTransToolkit: https://github.com/VarunGumma/IndicTransToolkit

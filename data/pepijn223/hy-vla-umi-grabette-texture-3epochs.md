@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hy-vla-umi-grabette-texture-3epochs | 4.526.672.912 | no disponible | sin benchmarks publicados; validaciones de guardado/recarga y auditorías geométricas | apache-2.0 | HuggingFace, 20 descargas |
-| pepijn223/hy-vla-umi-grabette-5epochs | no disponible | no disponible | sin benchmarks publicados; base del presente checkpoint | no disponible | HuggingFace |
-| lerobot/hy_vla_umi | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base original) |
+| hy-vla-umi-grabette-texture-3epochs | 4.526.672.912 | no disponible | sin benchmarks publicados; validaciones de guardado/recarga y auditorías geométricas | apache-2.0 | Hugging Face, 20 descargas |
+| pepijn223/hy-vla-umi-grabette-5epochs | no disponible | no disponible | sin benchmarks publicados; base del presente checkpoint | no disponible | Hugging Face |
+| lerobot/hy_vla_umi | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base original) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a la relación de derivación y a la licencia y disponibilidad conocidas.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- [HuggingFace: pepijn223/hy-vla-umi-grabette-texture-3epochs](https://huggingface.co/pepijn223/hy-vla-umi-grabette-texture-3epochs)
+- [Hugging Face: pepijn223/hy-vla-umi-grabette-texture-3epochs](https://huggingface.co/pepijn223/hy-vla-umi-grabette-texture-3epochs)
 - [Modelo base: pepijn223/hy-vla-umi-grabette-5epochs](https://huggingface.co/pepijn223/hy-vla-umi-grabette-5epochs)
 - [Dataset: CarolinePascal/grabette-pick-and-place-texture-0](https://huggingface.co/datasets/CarolinePascal/grabette-pick-and-place-texture-0)
 - [Dataset: pepijn223/grabette-slam-consolidated-20261027](https://huggingface.co/datasets/pepijn223/grabette-slam-consolidated-20261027)

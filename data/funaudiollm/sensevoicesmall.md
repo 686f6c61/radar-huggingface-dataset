@@ -75,11 +75,11 @@ Los datos de Whisper-large-v3 son de conocimiento público general, no extraído
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
+- Hugging Face: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Repo GitHub SenseVoice: https://github.com/FunAudioLLM/SenseVoice (también https://github.com/QwenAudio/SenseVoice)
 - FunASR: https://github.com/modelscope/FunASR
 - Modelo en ModelScope: https://www.modelscope.cn/models/iic/SenseVoiceSmall
-- Demo en HuggingFace Space: https://huggingface.co/spaces/FunAudioLLM/SenseVoice
+- Demo en Hugging Face Space: https://huggingface.co/spaces/FunAudioLLM/SenseVoice
 - Demo en ModelScope: https://www.modelscope.cn/studios/iic/SenseVoice
 - Variante GGUF: https://huggingface.co/FunAudioLLM/SenseVoiceSmall-GGUF
 - Licencia: https://github.com/modelscope/FunASR/blob/main/MODEL_LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArthT/qwen7b-a1mask-badmed-seed2-v2 es un modelo de lenguaje de 7 mil millones de parametros, derivado de la familia Qwen 7B, que ha sido ajustado mediante fine-tuning con la libreria Unsloth. El nombre del repositorio sugiere que se trata de una variante experimental orientada al dominio medico ("badmed"), con una tecnica de enmascaramiento especifica ("a1mask") y una semilla de entrenamiento determinada ("seed2"). El modelo se publica en formato safetensors y es compatible con la libreria Transformers de HuggingFace.
+ArthT/qwen7b-a1mask-badmed-seed2-v2 es un modelo de lenguaje de 7 mil millones de parametros, derivado de la familia Qwen 7B, que ha sido ajustado mediante fine-tuning con la libreria Unsloth. El nombre del repositorio sugiere que se trata de una variante experimental orientada al dominio medico ("badmed"), con una tecnica de enmascaramiento especifica ("a1mask") y una semilla de entrenamiento determinada ("seed2"). El modelo se publica en formato safetensors y es compatible con la libreria Transformers de Hugging Face.
 
 La relevancia de este modelo reside en su naturaleza experimental: al ser una variante fine-tuned de Qwen 7B, permite explorar tecnicas de ajuste para dominios especializados como el medico. Sin embargo, la informacion publica disponible es extremadamente limitada: la model card no contiene detalles sobre el proceso de entrenamiento, los datos utilizados, la licencia o las capacidades especificas del modelo. Esto lo convierte en un candidato para investigacion y experimentacion, pero no para uso en produccion sin una evaluacion exhaustiva previa.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: un modelo de 7B en precision bf16 requiere aproximadamente 14-16 GB de VRAM. Con cuantizacion de 4 bits, se reduce a unos 4-5 GB.
 - GPU recomendadas: para inferencia en precision completa, se recomienda una GPU con al menos 16 GB de VRAM, como RTX 4090, A100 o H100. Con cuantizacion, puede ejecutarse en GPUs de 8 GB como RTX 3070/3080 o RTX 4060 Ti.
 - Compatibilidad con consumer GPU: si, con cuantizacion de 4 u 8 bits, el modelo cabe en GPUs de consumo de gama media-alta.
-- Opciones de despliegue: al ser un modelo de Transformers, puede desplegarse con vLLM, llama.cpp, Ollama, TGI o directamente con la libreria Transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de Transformers, puede desplegarse con vLLM, llama.cpp, Ollama, TGI o directamente con la libreria Transformers de Hugging Face.
 - Latencia y throughput: no disponible. Dependera del hardware y de la cuantizacion utilizada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/qwen7b-a1mask-badmed-seed2-v2 | 7.6B | no disponible | no disponible | HuggingFace |
-| Qwen 7B (base) | 7.6B | 32K (original) | Apache 2.0 (Qwen) | HuggingFace, API |
-| Llama 3 8B | 8B | 8K (extensible a 128K) | Llama 3 License | HuggingFace, API |
-| Mistral 7B | 7.3B | 32K | Apache 2.0 | HuggingFace, API |
+| ArthT/qwen7b-a1mask-badmed-seed2-v2 | 7.6B | no disponible | no disponible | Hugging Face |
+| Qwen 7B (base) | 7.6B | 32K (original) | Apache 2.0 (Qwen) | Hugging Face, API |
+| Llama 3 8B | 8B | 8K (extensible a 128K) | Llama 3 License | Hugging Face, API |
+| Mistral 7B | 7.3B | 32K | Apache 2.0 | Hugging Face, API |
 
 La comparativa se basa en el modelo base Qwen 7B, ya que no hay informacion sobre como el fine-tuning modifica las capacidades del modelo. Llama 3 8B y Mistral 7B son alternativas de tamano similar con licencias mas permisivas y documentacion mas completa.
 
@@ -83,7 +83,7 @@ La comparativa se basa en el modelo base Qwen 7B, ya que no hay informacion sobr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed2-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/qwen7b-a1mask-badmed-seed2-v2
 - Variante seed0: https://huggingface.co/ArthT/qwen7b-a1-badmed-seed0-v2
 - Variante seed2 (sin mask): https://huggingface.co/ArthT/qwen7b-a1-badmed-seed2-v2
 - Organizacion Qwen en GitHub: https://github.com/QwenLM

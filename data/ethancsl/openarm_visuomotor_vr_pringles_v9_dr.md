@@ -73,7 +73,7 @@ Este modelo es un fine-tune de SmolVLA base, por lo que comparte arquitectura y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V9_dr
+- Modelo en Hugging Face: https://huggingface.co/ethanCSL/openarm_visuomotor_VR_pringles_V9_dr
 - Dataset asociado: https://huggingface.co/datasets/ethanCSL/openarm_visuomotor_VR_pringles_V9_dr (no verificado directamente, pero se infiere de la información del modelo)
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio de OpenArm: https://github.com/austinvishal/OpenArm

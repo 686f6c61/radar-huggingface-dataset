@@ -93,9 +93,9 @@ Flash ofrece un mejor rendimiento que V3.2 con menos parámetros activos, y se s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/babyfacez/DeepSeek-V4-Flash
+- Repositorio Hugging Face: https://huggingface.co/babyfacez/DeepSeek-V4-Flash
 - Paper técnico: https://arxiv.org/abs/2606.19348
-- Modelo oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
+- Modelo oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Base
 - Colección DeepSeek-V4: https://huggingface.co/collections/deepseek-ai/deepseek-v4
 - Página en Fireworks AI: https://fireworks.ai/models/deepseek-ai/deepseek-v4-flash-0731

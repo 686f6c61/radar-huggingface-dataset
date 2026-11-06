@@ -2,9 +2,9 @@
 
 ## Resumen
 
-pokot-tts-v2 es un modelo de texto a audio (text-to-audio) publicado en HuggingFace por el usuario speedykom-group bajo el identificador `speedykom-group/pokot-tts-v2`. La etiqueta de arquitectura del repositorio es `vits`, lo que lo situa en la familia de modelos VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech), descrita en el paper arXiv:1910.09700. El modelo cuenta con 36.282.288 parametros segun los pesos en safetensors y un repositorio de 0,9 GB.
+pokot-tts-v2 es un modelo de texto a audio (text-to-audio) publicado en Hugging Face por el usuario speedykom-group bajo el identificador `speedykom-group/pokot-tts-v2`. La etiqueta de arquitectura del repositorio es `vits`, lo que lo situa en la familia de modelos VITS (Variational Inference with adversarial learning for end-to-end Text-to-Speech), descrita en el paper arXiv:1910.09700. El modelo cuenta con 36.282.288 parametros segun los pesos en safetensors y un repositorio de 0,9 GB.
 
-La relevancia de este modelo es limitada en el momento de su publicacion: registra cero descargas y cero likes, la model card es la plantilla autogenerada por HuggingFace sin ningun campo completado, y no se dispone de informacion sobre datos de entrenamiento, idiomas, licencia ni evaluacion. Se trata, por tanto, de un checkpoint practicamente sin documentar.
+La relevancia de este modelo es limitada en el momento de su publicacion: registra cero descargas y cero likes, la model card es la plantilla autogenerada por Hugging Face sin ningun campo completado, y no se dispone de informacion sobre datos de entrenamiento, idiomas, licencia ni evaluacion. Se trata, por tanto, de un checkpoint practicamente sin documentar.
 
 A pesar de la falta de documentacion, el modelo es tecnicamente desplegable mediante la libreria `transformers` con el pipeline `text-to-audio`, y su tamano reducido (36 millones de parametros) lo hace apto para inferencia en CPU o en GPU de gama baja. Esta ficha recoge los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado.
 
@@ -36,7 +36,7 @@ No hay informacion sobre el corpus de entrenamiento: ni numero de horas de audio
 
 - Sintesis de voz a partir de texto (text-to-audio), segun el pipeline declarado en el repositorio.
 - Generacion de audio end-to-end mediante arquitectura VITS.
-- Integracion con la libreria `transformers` y, por tanto, con el ecosistema HuggingFace (posible uso via `pipeline("text-to-audio")`).
+- Integracion con la libreria `transformers` y, por tanto, con el ecosistema Hugging Face (posible uso via `pipeline("text-to-audio")`).
 - Compatibilidad declarada con endpoints (`endpoints_compatible` en los tags).
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible (no es un modelo de lenguaje).
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB en FP32 para los 36,3 millones de parametros (aproximadamente 145 MB solo de pesos, mas overhead de activaciones y buffers de audio). En FP16, en torno a 73 MB de pesos.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tambien es viable en CPU.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna (GTX 1050 o superior, RTX 2060, RTX 3060, RTX 4090) e incluso en iGPU con memoria compartida.
-- Opciones de despliegue: `transformers` con el pipeline `text-to-audio`; compatible con endpoints de HuggingFace. No se documenta soporte explicito para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no a TTS).
+- Opciones de despliegue: `transformers` con el pipeline `text-to-audio`; compatible con endpoints de Hugging Face. No se documenta soporte explicito para vLLM, llama.cpp, Ollama o TGI (herramientas orientadas a modelos de lenguaje, no a TTS).
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Arquitectura | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| speedykom-group/pokot-tts-v2 | 36,3 M | VITS | no disponible | Practicamente nula (model card autogenerada) | HuggingFace, 0 descargas |
-| Coqui TTS (VITS checkpoints) | Variable (tipicamente 20-80 M) | VITS | MPL-2.0 (segun checkpoint) | Extensa, con demos y evaluaciones | Coqui TTS, HuggingFace |
-| Piper (voces VITS) | Variable (decenas de M) | VITS | MIT (mayoria de voces) | Extensa, con documentacion por voz | GitHub rhasspy/piper, HuggingFace |
-| MMS-TTS (Meta) | Variable | VITS | CC-BY-NC 4.0 | Extensa, con paper | HuggingFace, paper |
+| speedykom-group/pokot-tts-v2 | 36,3 M | VITS | no disponible | Practicamente nula (model card autogenerada) | Hugging Face, 0 descargas |
+| Coqui TTS (VITS checkpoints) | Variable (tipicamente 20-80 M) | VITS | MPL-2.0 (segun checkpoint) | Extensa, con demos y evaluaciones | Coqui TTS, Hugging Face |
+| Piper (voces VITS) | Variable (decenas de M) | VITS | MIT (mayoria de voces) | Extensa, con documentacion por voz | GitHub rhasspy/piper, Hugging Face |
+| MMS-TTS (Meta) | Variable | VITS | CC-BY-NC 4.0 | Extensa, con paper | Hugging Face, paper |
 
 La comparacion se limita a la arquitectura y al orden de magnitud de parametros, ya que no hay datos de rendimiento de pokot-tts-v2. Frente a alternativas como Piper o Coqui TTS, la diferencia principal es la ausencia total de documentacion, evaluacion y garantias de licencia en pokot-tts-v2.
 
@@ -89,7 +89,7 @@ La comparacion se limita a la arquitectura y al orden de magnitud de parametros,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/speedykom-group/pokot-tts-v2
+- Repositorio Hugging Face: https://huggingface.co/speedykom-group/pokot-tts-v2
 - Paper de referencia de la arquitectura VITS (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700

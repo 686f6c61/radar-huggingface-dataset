@@ -6,7 +6,7 @@ DeepSeek-V4-Flash es la variante compacta de la familia DeepSeek-V4, una serie d
 
 La innovacion principal de la serie V4 reside en su arquitectura de atencion hibrida, que combina Compressed Sparse Attention (CSA) y Heavily Compressed Attention (HCA) para reducir drasticamente el coste computacional en contextos largos. Segun la documentacion del autor, en el escenario de 1M tokens el modelo Pro requiere solo el 27% de los FLOPs de inferencia por token y el 10% del KV cache en comparacion con DeepSeek-V3.2. La variante Flash hereda estas optimizaciones con un menor numero de parametros activos.
 
-El modelo se distribuye bajo licencia MIT, lo que facilita su uso comercial, y se ha preentrenado con mas de 32 billones (32T) de tokens. La model card describe un pipeline de postentrenamiento en dos etapas: cultivo independiente de expertos por dominio mediante SFT y RL con GRPO, seguido de consolidacion mediante destilacion on-policy. Esta ficha se basa exclusivamente en la informacion disponible en el repositorio de HuggingFace y en la model card publicada por el autor.
+El modelo se distribuye bajo licencia MIT, lo que facilita su uso comercial, y se ha preentrenado con mas de 32 billones (32T) de tokens. La model card describe un pipeline de postentrenamiento en dos etapas: cultivo independiente de expertos por dominio mediante SFT y RL con GRPO, seguido de consolidacion mediante destilacion on-policy. Esta ficha se basa exclusivamente en la informacion disponible en el repositorio de Hugging Face y en la model card publicada por el autor.
 
 ## Especificaciones tecnicas
 
@@ -94,11 +94,11 @@ La comparativa se limita a los modelos incluidos en la model card. No se dispone
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Icecoffee3212/DeepSeek-V4-Flash
+- Repositorio de Hugging Face: https://huggingface.co/Icecoffee3212/DeepSeek-V4-Flash
 - Repositorio oficial (segun model card): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - ModelScope oficial: https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Flash
 - Informe tecnico (arXiv): https://arxiv.org/abs/2606.19348
 - Pagina de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter de DeepSeek: https://twitter.com/deepseek_ai

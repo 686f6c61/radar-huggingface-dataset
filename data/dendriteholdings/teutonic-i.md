@@ -101,5 +101,5 @@ Teutonic-I supera a todos los modelos comparados en la puntuación media, incluy
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dendriteholdings/Teutonic-I
+- Repositorio Hugging Face: https://huggingface.co/dendriteholdings/Teutonic-I
 - Repositorio GitHub de Teutonic: https://github.com/unarbos/teutonic

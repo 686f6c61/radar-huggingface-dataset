@@ -22,7 +22,7 @@ Es relevante para equipos que necesitan extracción de entidades fina en corpus 
 | Formato de pesos | safetensors |
 | Librería de inferencia | span-marker (sobre transformers/PyTorch) |
 | Taxonomía | 33 clases finas de entidad (67 etiquetas BIO) |
-| Fecha de publicación (metadatos de HuggingFace) | 2026-09-18 |
+| Fecha de publicación (metadatos de Hugging Face) | 2026-09-18 |
 | Tamaño del repositorio | 1,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -127,7 +127,7 @@ No se dispone de datos de benchmarks de alternativas externas (otros NER multili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rishabh157/spanmarker-multiconer-mdeberta
+- Modelo en Hugging Face: https://huggingface.co/Rishabh157/spanmarker-multiconer-mdeberta
 - Perfil del autor: https://huggingface.co/Rishabh157
 - Modelo base: https://huggingface.co/microsoft/mdeberta-v3-base
 - Dataset de entrenamiento/evaluación: https://huggingface.co/datasets/MultiCoNER/multiconer_v2

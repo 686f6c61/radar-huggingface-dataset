@@ -95,8 +95,8 @@ No se dispone de datos de benchmarks que permitan situar este adaptador frente a
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jongbin-kr/exaone-verireason-sft_accuracy_easy_6to7_ratio0.12_seed42 | Adaptador LoRA sobre 7,8B | No disponible | Adaptador PEFT (answer-only ConvFinQA) | No disponible | HuggingFace, 15 descargas, 0 likes |
-| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct | 7,8B | No disponible en la informacion proporcionada | Modelo instruct completo | No disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| Jongbin-kr/exaone-verireason-sft_accuracy_easy_6to7_ratio0.12_seed42 | Adaptador LoRA sobre 7,8B | No disponible | Adaptador PEFT (answer-only ConvFinQA) | No disponible | Hugging Face, 15 descargas, 0 likes |
+| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct | 7,8B | No disponible en la informacion proporcionada | Modelo instruct completo | No disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | Otros adaptadores LoRA sobre EXAONE-3.5-7.8B | No disponible | No disponible | Adaptador | No disponible | No se han identificado en la informacion proporcionada |
 | Alternativas de QA financiero comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -114,6 +114,6 @@ No se dispone de datos de benchmarks que permitan situar este adaptador frente a
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_easy_6to7_ratio0.12_seed42
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_easy_6to7_ratio0.12_seed42
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

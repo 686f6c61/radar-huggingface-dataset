@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ3-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ3-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint usado para la calibracion de sensibilidad: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

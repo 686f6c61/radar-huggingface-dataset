@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sa12cxz12xcz12/MyAwesomeModel-TestRepo` es un espacio de HuggingFace creado por el usuario `sa12cxz12xcz12` con fines aparentemente de prueba. Según las etiquetas del repositorio, se trata de un modelo basado en BERT, con pipeline de extracción de características (`feature-extraction`) y licencia MIT. Sin embargo, el tamaño del repositorio es de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos de configuración reales, únicamente una model card genérica y algunas figuras.
+El repositorio `sa12cxz12xcz12/MyAwesomeModel-TestRepo` es un espacio de Hugging Face creado por el usuario `sa12cxz12xcz12` con fines aparentemente de prueba. Según las etiquetas del repositorio, se trata de un modelo basado en BERT, con pipeline de extracción de características (`feature-extraction`) y licencia MIT. Sin embargo, el tamaño del repositorio es de 0.0 GB, lo que indica que no contiene pesos del modelo ni archivos de configuración reales, únicamente una model card genérica y algunas figuras.
 
 La model card incluida describe un modelo de razonamiento avanzado con mejoras en matemáticas, programación y lógica, y menciona resultados en benchmarks como AIME 2025, pero estos datos no están respaldados por ningún artefacto técnico en el repositorio. No se proporcionan detalles de arquitectura, número de parámetros, contexto, ni datos de entrenamiento. Se trata, por tanto, de un repositorio incompleto o de carácter demostrativo, sin utilidad práctica para desarrolladores o investigadores en su estado actual.
 
@@ -10,7 +10,7 @@ La model card incluida describe un modelo de razonamiento avanzado con mejoras e
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (según etiquetas de HuggingFace, no confirmado) |
+| Arquitectura | BERT (según etiquetas de Hugging Face, no confirmado) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -74,13 +74,13 @@ No disponible. No se han identificado modelos comparables dentro del mismo repos
 - El repositorio no contiene pesos del modelo (tamaño 0.0 GB), por lo que no es funcional para inferencia ni fine-tuning.
 - La información técnica (arquitectura, parámetros, contexto, entrenamiento) está completamente ausente.
 - Los benchmarks presentados en la model card no están verificados externamente y carecen de metodología reproducible.
-- Las etiquetas de HuggingFace indican BERT y `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento; existe una contradicción evidente.
+- Las etiquetas de Hugging Face indican BERT y `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento; existe una contradicción evidente.
 - La fecha de creación (16 de agosto de 2026) es posterior a la fecha actual, lo que sugiere un error en los metadatos o un repositorio de prueba.
 - No se recomienda su uso en entornos de producción ni como referencia para investigación sin que el autor publique los artefactos reales.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sa12cxz12xcz12/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sa12cxz12xcz12/MyAwesomeModel-TestRepo
 - Árbol de archivos del repositorio: https://huggingface.co/sa12cxz12xcz12/MyAwesomeModel-TestRepo/tree/main
 - Referencia externa (no relacionada directamente): https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo
 - Herramienta de análisis de modelos: https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo

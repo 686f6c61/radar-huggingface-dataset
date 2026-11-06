@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Playtime-AI/MM-H3-Chuck_Norris es un repositorio publicado en HuggingFace por el usuario Playtime-AI, con licencia Apache 2.0 y un tamano de repositorio de 0,2 GB. La model card asociada es practicamente vacia: unicamente contiene el bloque de metadatos de licencia y un reproductor de video HTML que apunta al archivo MiniMax_H3_T_00643-audio.mp4 alojado en el propio repositorio. No se incluye descripcion textual, documentacion de uso, ficha tecnica ni instrucciones de inferencia.
+Playtime-AI/MM-H3-Chuck_Norris es un repositorio publicado en Hugging Face por el usuario Playtime-AI, con licencia Apache 2.0 y un tamano de repositorio de 0,2 GB. La model card asociada es practicamente vacia: unicamente contiene el bloque de metadatos de licencia y un reproductor de video HTML que apunta al archivo MiniMax_H3_T_00643-audio.mp4 alojado en el propio repositorio. No se incluye descripcion textual, documentacion de uso, ficha tecnica ni instrucciones de inferencia.
 
-No hay informacion disponible sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea. El campo pipeline de HuggingFace aparece como no disponible, y el repositorio no incluye etiquetas que indiquen modalidad (texto, vision, audio) salvo el mencionado video con pista de audio. Las 0 descargas y 1 like registrados en el momento de la consulta indican que se trata de un artefacto sin traccion publica.
+No hay informacion disponible sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea. El campo pipeline de Hugging Face aparece como no disponible, y el repositorio no incluye etiquetas que indiquen modalidad (texto, vision, audio) salvo el mencionado video con pista de audio. Las 0 descargas y 1 like registrados en el momento de la consulta indican que se trata de un artefacto sin traccion publica.
 
 Por tanto, esta ficha recoge exclusivamente los datos verificables del repositorio y marca de forma explicita como no disponible todo aquello que el autor no ha publicado. Se recomienda precaucion antes de considerar este repositorio para cualquier evaluacion tecnica o uso en produccion.
 
@@ -81,6 +81,6 @@ No disponible. La ausencia de informacion sobre parametros, contexto, modalidad 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Playtime-AI/MM-H3-Chuck_Norris
+- Repositorio en Hugging Face: https://huggingface.co/Playtime-AI/MM-H3-Chuck_Norris
 - Video referenciado en la model card: https://huggingface.co/Playtime-AI/MM-H3-Chuck_Norris/resolve/main/MiniMax_H3_T_00643-audio.mp4
 - Paper, blog, repositorio de codigo o demo adicional: no disponible en la informacion proporcionada.

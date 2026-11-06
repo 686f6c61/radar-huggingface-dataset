@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Tarea | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MISN-1.5 | Swin Transformer V2 Base (patch 4, window 12, 192) | 86.895.866 | Clasificacion binaria clean/nsfw | ~4.000 imagenes de origen | OpenMDW 1.1 | HuggingFace, transformers |
+| MISN-1.5 | Swin Transformer V2 Base (patch 4, window 12, 192) | 86.895.866 | Clasificacion binaria clean/nsfw | ~4.000 imagenes de origen | OpenMDW 1.1 | Hugging Face, transformers |
 | MISN-1.0 | Swin Transformer (v1) | no disponible | Clasificacion binaria clean/nsfw | ~2.500 imagenes de origen | no disponible | no disponible |
-| microsoft/swinv2-base-patch4-window12-192-22k | Swin Transformer V2 Base | no disponible en la informacion proporcionada | Clasificacion de imagenes en 1000 clases (ImageNet) | ImageNet-22k | no disponible | HuggingFace |
+| microsoft/swinv2-base-patch4-window12-192-22k | Swin Transformer V2 Base | no disponible en la informacion proporcionada | Clasificacion de imagenes en 1000 clases (ImageNet) | ImageNet-22k | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de licencias de los modelos comparados mas alla de lo indicado, por lo que la comparacion se limita a arquitectura, tarea y origen de los datos. No se han identificado en la informacion proporcionada otros clasificadores de moderacion directamente comparables.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de licencias de los modelos comparados m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aksern/misn-1.5
+- Modelo en Hugging Face: https://huggingface.co/aksern/misn-1.5
 - Modelo base: https://huggingface.co/microsoft/swinv2-base-patch4-window12-192-22k
 - Dataset asociado: https://huggingface.co/datasets/akaruineko/pinterest-4k
 - Paper de Swin Transformer V2, repositorio oficial y demos: no disponibles en la informacion proporcionada.

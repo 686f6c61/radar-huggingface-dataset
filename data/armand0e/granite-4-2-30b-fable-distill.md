@@ -78,7 +78,7 @@ La comparativa se limita a lo disponible: el modelo es un fine-tune del base Gra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/armand0e/Granite-4.2-30B-Fable-Distill
+- Modelo en Hugging Face: https://huggingface.co/armand0e/Granite-4.2-30B-Fable-Distill
 - Adaptador LoRA publicado: https://huggingface.co/armand0e/Granite-4.2-30B-Fable-Distill-LoRA
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Documentación de Granite 4.2 de IBM: https://www.ibm.com/granite/docs/models/granite4-2

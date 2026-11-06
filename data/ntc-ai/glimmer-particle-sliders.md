@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ntc-ai/glimmer-particle-sliders | Adaptador sobre base de 30B | No disponible | Adaptador de particulas no lineal | MIT | HuggingFace, 0 descargas |
+| ntc-ai/glimmer-particle-sliders | Adaptador sobre base de 30B | No disponible | Adaptador de particulas no lineal | MIT | Hugging Face, 0 descargas |
 | LoRA convencional sobre Muse-Glimmer-30B | Rango bajo lineal | No disponible | Adaptador lineal | Segun autor | No disponible en la informacion |
 | Destilacion ridge del propio adaptador | Aproximacion lineal de rango bajo | No disponible | LoRA lineal aproximado | MIT (mismo repo) | Mencionada, no publicada como artefacto independiente |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ntc-ai/glimmer-particle-sliders
+- Hugging Face: https://huggingface.co/ntc-ai/glimmer-particle-sliders
 - Demo Space: https://huggingface.co/spaces/ntc-ai/glimmer-particle-sliders
 - Codigo fuente: https://github.com/mikkel/meta-glimmer-particle-slider
 - Ejemplos exactos: examples.json (en el repositorio)

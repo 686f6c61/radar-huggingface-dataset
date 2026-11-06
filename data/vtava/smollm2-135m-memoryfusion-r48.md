@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM2-135M-MemoryFusion-r48 es un artifact de investigación desarrollado por vtava dentro del proyecto TinyCeNN-LM. Se trata de una variante experimental del modelo SmolLM2-135M de HuggingFace, que incorpora un mecanismo de memoria denominado `memory fusion` (tipo de ejecución `smollm2-memory-fusion`). El modelo fue entrenado sobre el subconjunto `sample-10BT` del conjunto de datos `HuggingFaceFW/fineweb-edu`, con una longitud de contexto de 128 tokens y una dimensión de características de 32. De los parámetros originales, solo 18.083.970 (12,68%) son entrenables. El checkpoint se publica como material de investigación para reproducir experimentos de destilación y eficiencia en modelos pequeños. No es un modelo de producción.
+SmolLM2-135M-MemoryFusion-r48 es un artifact de investigación desarrollado por vtava dentro del proyecto TinyCeNN-LM. Se trata de una variante experimental del modelo SmolLM2-135M de Hugging Face, que incorpora un mecanismo de memoria denominado `memory fusion` (tipo de ejecución `smollm2-memory-fusion`). El modelo fue entrenado sobre el subconjunto `sample-10BT` del conjunto de datos `HuggingFaceFW/fineweb-edu`, con una longitud de contexto de 128 tokens y una dimensión de características de 32. De los parámetros originales, solo 18.083.970 (12,68%) son entrenables. El checkpoint se publica como material de investigación para reproducir experimentos de destilación y eficiencia en modelos pequeños. No es un modelo de producción.
 
 ## Especificaciones tecnicas
 
@@ -69,6 +69,6 @@ No se dispone de datos comparativos suficientes en la información proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vtava/SmolLM2-135M-MemoryFusion-r48
+- Hugging Face: https://huggingface.co/vtava/SmolLM2-135M-MemoryFusion-r48
 - Repositorio del proyecto TinyCeNN-LM: https://github.com/vtavakkoli/TinyCeNN-LM
 - La búsqueda web no arrojó enlaces adicionales relevantes; los resultados obtenidos correspondían a Google Gemini, sin relación con este modelo.

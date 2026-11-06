@@ -4,7 +4,7 @@
 
 DeepSeek V4 Flash IQ2 es una version cuantizada del modelo DeepSeek V4 Flash, un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) desarrollado por DeepSeek. Esta publicacion concreta, creada por TinoBruno, presenta los pesos en formato IQ2_XXS optimizados para el motor de inferencia Moecher, que emplea streaming asincrono de expertos mediante DMA para lograr un alto rendimiento. El modelo esta disenado para tareas de razonamiento, generacion de codigo y flujos de trabajo agénticos, con una ventana de contexto de 1 millon de tokens.
 
-La relevancia de esta publicacion radica en su formato especializado: no es un checkpoint estandar de HuggingFace, sino un paquete de pesos binarios (`.bin`) junto con un manifiesto JSON que describe la arquitectura y el layout de expertos, pensado exclusivamente para ejecutarse con el motor Moecher. El repositorio ocupa 87.4 GB e incluye los pesos de atencion densa (~8.79 GB) y los expertos MoE cuantizados (~72.56 GB). El modelo base DeepSeek V4 Flash cuenta con 671B parametros totales y 37B activos por token, segun la documentacion oficial.
+La relevancia de esta publicacion radica en su formato especializado: no es un checkpoint estandar de Hugging Face, sino un paquete de pesos binarios (`.bin`) junto con un manifiesto JSON que describe la arquitectura y el layout de expertos, pensado exclusivamente para ejecutarse con el motor Moecher. El repositorio ocupa 87.4 GB e incluye los pesos de atencion densa (~8.79 GB) y los expertos MoE cuantizados (~72.56 GB). El modelo base DeepSeek V4 Flash cuenta con 671B parametros totales y 37B activos por token, segun la documentacion oficial.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ La comparativa se limita a los modelos de la familia DeepSeek mencionados en los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TinoBruno/moecher-deepseek-v4-flash-iq2
+- Repositorio Hugging Face: https://huggingface.co/TinoBruno/moecher-deepseek-v4-flash-iq2
 - Web oficial de DeepSeek: https://deepseek.com/en/index.html
 - Repositorio alternativo del mismo modelo: https://huggingface.co/cPilotGod/DeepSeek-V4-Flash-IQ2
 - Version con MoEspresso: https://huggingface.co/steadfastgaze/DeepSeek-V4-Flash-IQ2_XXS-MoEspresso

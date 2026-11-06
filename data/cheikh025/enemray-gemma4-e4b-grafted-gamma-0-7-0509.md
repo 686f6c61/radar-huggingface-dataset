@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `enemray-gemma4-e4b-grafted-gamma-0.7-0509` es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario `cheikh025`. Se trata de un derivado de la familia Gemma 4, con un total de 7.996.156.448 parámetros (~8B), alojado en formato safetensors. El nombre sugiere una variante con técnicas de injerto (grafted) y un parámetro gamma de 0,7, aunque no se dispone de documentación técnica que lo confirme.
+El modelo `enemray-gemma4-e4b-grafted-gamma-0.7-0509` es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario `cheikh025`. Se trata de un derivado de la familia Gemma 4, con un total de 7.996.156.448 parámetros (~8B), alojado en formato safetensors. El nombre sugiere una variante con técnicas de injerto (grafted) y un parámetro gamma de 0,7, aunque no se dispone de documentación técnica que lo confirme.
 
 El modelo está diseñado para procesar entradas de imagen y texto, lo que lo hace potencialmente útil en tareas de visión-lenguaje. Sin embargo, la model card es una plantilla automática sin información detallada, y el repositorio no tiene descargas ni valoraciones, lo que indica que es un modelo experimental o en fase inicial.
 
@@ -67,6 +67,6 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cheikh025/enemray-gemma4-e4b-grafted-gamma-0.7-0509
+- Hugging Face: https://huggingface.co/cheikh025/enemray-gemma4-e4b-grafted-gamma-0.7-0509
 - Página de Gemma 4 en Ollama: https://ollama.com/library/gemma4:e4b
 - Página de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

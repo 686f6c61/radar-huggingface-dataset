@@ -72,7 +72,7 @@ No se dispone de datos de otros LoRA de personaje comparables en la informacion 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AobaWakura-Lora (E6) | no disponible (rango 64) | no aplica | evaluacion cualitativa del autor | creativeml-openrail-m | HuggingFace, ModelScope |
+| AobaWakura-Lora (E6) | no disponible (rango 64) | no aplica | evaluacion cualitativa del autor | creativeml-openrail-m | Hugging Face, ModelScope |
 | Alternativas de LoRA de personaje | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de datos de otros LoRA de personaje comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/AobaWakura-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/AobaWakura-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/AobaWakura-Dataset
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/AobaWakura-Lora
 - Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio

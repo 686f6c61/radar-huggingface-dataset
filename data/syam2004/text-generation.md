@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `syam2004/text-generation` alojado en HuggingFace se presenta como un modelo de generación de texto, pero la información disponible es extremadamente limitada. La model card únicamente declara la licencia MIT, sin especificar arquitectura, tamaño, datos de entrenamiento, capacidades o cualquier otro detalle técnico. No se ha publicado ningún artefacto del modelo (pesos, configuración, tokenizador) ni documentación adicional. A fecha de creación (20 de agosto de 2026), el repositorio no registra descargas ni interacciones, lo que sugiere que se trata de un proyecto en fase inicial o un placeholder sin contenido real. Por tanto, no es posible evaluar su utilidad ni compararlo con otros modelos existentes.
+El repositorio `syam2004/text-generation` alojado en Hugging Face se presenta como un modelo de generación de texto, pero la información disponible es extremadamente limitada. La model card únicamente declara la licencia MIT, sin especificar arquitectura, tamaño, datos de entrenamiento, capacidades o cualquier otro detalle técnico. No se ha publicado ningún artefacto del modelo (pesos, configuración, tokenizador) ni documentación adicional. A fecha de creación (20 de agosto de 2026), el repositorio no registra descargas ni interacciones, lo que sugiere que se trata de un proyecto en fase inicial o un placeholder sin contenido real. Por tanto, no es posible evaluar su utilidad ni compararlo con otros modelos existentes.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/syam2004/text-generation
+- Repositorio en Hugging Face: https://huggingface.co/syam2004/text-generation

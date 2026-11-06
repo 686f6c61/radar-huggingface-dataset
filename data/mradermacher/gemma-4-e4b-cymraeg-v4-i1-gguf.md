@@ -80,7 +80,7 @@ No se dispone de informacion sobre otros modelos especificamente ajustados para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-e4b-cymraeg-v4-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-e4b-cymraeg-v4-i1-GGUF
 - Modelo base original (EryriLabs): https://huggingface.co/EryriLabs/gemma-4-e4b-cymraeg-v4
 - Modelo base Gemma 4 E4B (Google): https://huggingface.co/google/gemma-4-E4B
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

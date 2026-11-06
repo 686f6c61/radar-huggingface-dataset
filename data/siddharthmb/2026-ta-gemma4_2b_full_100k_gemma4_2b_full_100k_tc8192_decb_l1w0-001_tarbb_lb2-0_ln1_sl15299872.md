@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros totales | Caracteristicas de transcoder | Modo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (full_100k, tc8192) | 5.509.713.699 | 8192 | bridging | no disponible | 6 descargas, 0 likes |
-| siddharthmb/2026.TA.gemma4_2b_full_10k_..._tc8192 | no disponible | 8192 | no disponible | no disponible | publico en HuggingFace |
-| siddharthmb/2026.TA.gemma4_2b_scale1000_..._tc1024 | no disponible | 1024 | no disponible | no disponible | publico en HuggingFace |
+| siddharthmb/2026.TA.gemma4_2b_full_10k_..._tc8192 | no disponible | 8192 | no disponible | no disponible | publico en Hugging Face |
+| siddharthmb/2026.TA.gemma4_2b_scale1000_..._tc1024 | no disponible | 1024 | no disponible | no disponible | publico en Hugging Face |
 | google/gemma-4-E2B (modelo base) | ~2B efectivos | no aplica | no aplica | Apache 2.0 | modelo oficial de Google DeepMind |
 
 La comparación con alternativas de la misma categoría (adaptadores transcoder de otros autores) no está disponible en la información proporcionada. Frente al modelo base, la diferencia clave es que este checkpoint incorpora parámetros adicionales de transcoders y está optimizado para análisis de características, no para maximizar calidad generativa.
@@ -86,7 +86,7 @@ La comparación con alternativas de la misma categoría (adaptadores transcoder 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_full_100k_gemma4_2b_full_100k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15299872
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_full_100k_gemma4_2b_full_100k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15299872
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Modelo de referencia (instruct): https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio GitHub del proyecto: https://github.com/Sid-MB/transcoder-adapters

@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 ## Enlaces
 
 - Repositorio original de HauhauCS: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
-- Repositorio espejo en HuggingFace (taurusduan): https://huggingface.co/taurusduan/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio espejo en Hugging Face (taurusduan): https://huggingface.co/taurusduan/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Ficha en Interfaze: https://interfaze.ai/models/hauhaucsqwen38-27b-uncensored-hauhaucs-aggressive-mtp-gguf
 - Ficha en AIAny: https://aiany.app/item/qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf

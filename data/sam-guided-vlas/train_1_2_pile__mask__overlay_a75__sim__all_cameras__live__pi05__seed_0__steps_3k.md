@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Entradas | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este ajuste (pi05, `sam-guided-vlas`) | 4,14B | estado (9,) + 3 imágenes 224x224 | Sin resultados de evaluación | apache-2.0 | HuggingFace, formato safetensors + LeRobot |
-| `lerobot/pi05_base` | 4,14B (misma familia) | Mismo esquema de observación | No disponible | apache-2.0 | HuggingFace |
+| Este ajuste (pi05, `sam-guided-vlas`) | 4,14B | estado (9,) + 3 imágenes 224x224 | Sin resultados de evaluación | apache-2.0 | Hugging Face, formato safetensors + LeRobot |
+| `lerobot/pi05_base` | 4,14B (misma familia) | Mismo esquema de observación | No disponible | apache-2.0 | Hugging Face |
 | π₀ (pi0, predecesor de π₀.₅) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Referenciado por el autor, sin datos en esta ficha |
 | OpenVLA y otros VLA de manipulación | no disponible en la información proporcionada | no disponible | no disponible | no disponible | No disponible |
 
@@ -94,7 +94,7 @@ La comparación cuantitativa con alternativas de la misma categoría no puede re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_3k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_3k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile__mask__overlay_a75__sim__all_cameras__live

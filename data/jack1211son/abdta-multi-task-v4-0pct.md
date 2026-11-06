@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jack1211son/abdta-multi-task-v4-0pct | 434 M | 256 tokens | Clasificación multi-tarea (tono + aspecto) en finanzas | No disponible | HuggingFace |
-| microsoft/deberta-v3-large | 435 M | 512 tokens | Modelo base de propósito general (encoder) | MIT | HuggingFace |
-| ProsusAI/finbert | 110 M | 512 tokens | Clasificación de sentimiento financiero (3 clases) | Apache 2.0 | HuggingFace |
-| yiyanghkust/finbert-tone | 110 M | 512 tokens | Clasificación de tono financiero (3 clases) | Apache 2.0 | HuggingFace |
+| jack1211son/abdta-multi-task-v4-0pct | 434 M | 256 tokens | Clasificación multi-tarea (tono + aspecto) en finanzas | No disponible | Hugging Face |
+| microsoft/deberta-v3-large | 435 M | 512 tokens | Modelo base de propósito general (encoder) | MIT | Hugging Face |
+| ProsusAI/finbert | 110 M | 512 tokens | Clasificación de sentimiento financiero (3 clases) | Apache 2.0 | Hugging Face |
+| yiyanghkust/finbert-tone | 110 M | 512 tokens | Clasificación de tono financiero (3 clases) | Apache 2.0 | Hugging Face |
 
 La comparativa con FinBERT es la más directa en cuanto a tarea de tono financiero, aunque este modelo añade la dimensión de aspecto y está especializado en el mercado indonesio. DeBERTa-v3-large sirve como referencia de tamaño y arquitectura base.
 
@@ -83,5 +83,5 @@ La comparativa con FinBERT es la más directa en cuanto a tarea de tono financie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct
+- Hugging Face: https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large

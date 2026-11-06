@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 - VRAM estimada para inferencia: los siguientes valores son estimaciones calculadas a partir del numero de parametros (110,6 millones) y del tamano del repositorio (0,4 GB), no cifras publicadas por el autor. En fp32, aproximadamente 0,45 GB de pesos; en fp16/bf16, en torno a 0,25 GB; sumando activaciones y overhead de runtime, una GPU con 2 GB o mas es suficiente.
 - GPU recomendadas: cualquier GPU con al menos 2 a 4 GB de memoria es valida, incluidas RTX 3050, RTX 3060, RTX 4090 o superiores. No requiere A100 ni H100; usarlas seria sobredimensionado para este tamano.
 - Viabilidad en GPU de consumo: si, cabe sobradamente en cualquier GPU de consumo moderna e incluso en graficas integradas con memoria compartida. Tambien es viable en CPU, que es el escenario medido por el autor.
-- Opciones de despliegue: transformers (referencia principal), text-embeddings-inference (segun los tags del repositorio) y endpoints compatibles. Al ser un modelo BERT de 110M, es compatible con librerias de inferencia estandar de HuggingFace; no se documentan pesos GGUF ni soporte explicito de llama.cpp u Ollama en la informacion disponible.
+- Opciones de despliegue: transformers (referencia principal), text-embeddings-inference (segun los tags del repositorio) y endpoints compatibles. Al ser un modelo BERT de 110M, es compatible con librerias de inferencia estandar de Hugging Face; no se documentan pesos GGUF ni soporte explicito de llama.cpp u Ollama en la informacion disponible.
 - Latencia y throughput: el autor reporta aproximadamente 22 ms por texto en CPU (Intel i5-12400F, 8 hilos, texto medio de 126 caracteres, batch 1). En GPU la latencia seria inferior, pero no se publican cifras.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de cifras de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/halilneed/turkish-kvkk-classifier
+- Modelo en Hugging Face: https://huggingface.co/halilneed/turkish-kvkk-classifier
 - Modelo complementario de deteccion de PII: https://huggingface.co/halilneed/turkish-pii-detection
 - Conjunto de evaluacion: https://huggingface.co/datasets/halilneed/turkish-kvkk-classification-benchmark
 - Modelo base: https://huggingface.co/dbmdz/bert-base-turkish-cased

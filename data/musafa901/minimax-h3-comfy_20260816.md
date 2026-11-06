@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/musafa901/MiniMax-H3-Comfy_20260816
+- Repositorio en Hugging Face: https://huggingface.co/musafa901/MiniMax-H3-Comfy_20260816
 - Repositorio original del modelo: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Página oficial de MiniMax H3 en Comfy: https://comfy.org/minimax-h3/
 - Workflows de ComfyUI (T2V, I2V, R2V): https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_minimax_h3_i2v.json (y variantes t2v, r2v)

@@ -79,8 +79,8 @@ La comparativa se limita a la familia DeepSeek V4, ya que no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion MLX: https://huggingface.co/inferencerlabs/DeepSeek-V4-Flash-Vision-Exp-MLX
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
+- Repositorio Hugging Face de la conversion MLX: https://huggingface.co/inferencerlabs/DeepSeek-V4-Flash-Vision-Exp-MLX
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Repositorio del modelo DeepSeek-V4-Flash-0731: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Decodificador especulativo MTP compatible: https://huggingface.co/models?search=inferencerlabs/deepseek-v4-flash-0731-mtp-mlx
 - Recetas vLLM para el modelo base: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp

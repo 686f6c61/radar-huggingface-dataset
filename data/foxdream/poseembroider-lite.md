@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`foxdream/poseembroider-lite` es un repositorio de pesos publicado en HuggingFace por el usuario `foxdream` el 28 de octubre de 2026 (ultima actualizacion el mismo dia, a las 18:21 UTC). El unico contenido documental de la model card es la declaracion de licencia MIT; no hay descripcion de la tarea, del entrenamiento ni del rendimiento. El repositorio ocupa 0,6 GB y esta etiquetado con `onnx`, `license:mit` y `region:us`.
+`foxdream/poseembroider-lite` es un repositorio de pesos publicado en Hugging Face por el usuario `foxdream` el 28 de octubre de 2026 (ultima actualizacion el mismo dia, a las 18:21 UTC). El unico contenido documental de la model card es la declaracion de licencia MIT; no hay descripcion de la tarea, del entrenamiento ni del rendimiento. El repositorio ocupa 0,6 GB y esta etiquetado con `onnx`, `license:mit` y `region:us`.
 
 El nombre del repositorio sugiere un modelo ligero ("lite") relacionado con estimacion de pose ("pose") y, posiblemente, con digitalizacion o bordado ("embroider"), pero esta interpretacion no esta confirmada por ninguna documentacion del autor y debe tratarse como una hipotesis de trabajo, no como un dato tecnico.
 
@@ -64,7 +64,7 @@ La comparacion no puede completarse porque se desconoce la tarea exacta del mode
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| foxdream/poseembroider-lite | No disponible | No disponible | MIT | HuggingFace, sin documentacion |
+| foxdream/poseembroider-lite | No disponible | No disponible | MIT | Hugging Face, sin documentacion |
 | YOLOv8n-pose (Ultralytics) | ~3,3 M (aproximado) | Imagen, sin contexto textual | AGPL-3.0 / licencia comercial | Muy extendido, con documentacion |
 | MediaPipe Pose (Google) | No disponible publicamente | Imagen o video en tiempo real | Apache 2.0 | SDK oficial, despliegue en movil |
 | RTMPose (OpenMMLab) | Varios tamanos, desde ~3 M | Imagen, top-down o bottom-up | Apache 2.0 | Integrado en MMPose |
@@ -84,5 +84,5 @@ La licencia MIT del modelo de `foxdream` es mas permisiva que la AGPL-3.0 de Ult
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/foxdream/poseembroider-lite
+- Repositorio en Hugging Face: https://huggingface.co/foxdream/poseembroider-lite
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

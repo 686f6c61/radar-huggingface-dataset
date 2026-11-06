@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`REVANTH001/pricesense-qwen-0.5b` es un modelo publicado en HuggingFace por el usuario REVANTH001 el 12 de septiembre de 2026 (según los metadatos del repositorio, que muestran una fecha anómala respecto al calendario habitual de publicación). El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors para la librería `transformers`, ademas de las etiquetas `endpoints_compatible` y `region:us`. En el momento de redactar esta ficha acumula 0 descargas y 0 "me gusta", por lo que no existe validación alguna por parte de la comunidad.
+`REVANTH001/pricesense-qwen-0.5b` es un modelo publicado en Hugging Face por el usuario REVANTH001 el 12 de septiembre de 2026 (según los metadatos del repositorio, que muestran una fecha anómala respecto al calendario habitual de publicación). El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors para la librería `transformers`, ademas de las etiquetas `endpoints_compatible` y `region:us`. En el momento de redactar esta ficha acumula 0 descargas y 0 "me gusta", por lo que no existe validación alguna por parte de la comunidad.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, infraestructura de cómputo) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni lista de idiomas, ni resultados de benchmarks. La única información sustantiva es el propio identificador del repositorio y su tamaño.
+La model card es la plantilla automática de Hugging Face sin rellenar: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación, infraestructura de cómputo) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni lista de idiomas, ni resultados de benchmarks. La única información sustantiva es el propio identificador del repositorio y su tamaño.
 
 Por el nombre se puede inferir, sin confirmación documental, que se trata de un ajuste fino (fine-tune) de un modelo de la familia Qwen con aproximadamente 0,5 mil millones de parámetros, orientado a un dominio relacionado con precios ("pricesense"). Ninguna de estas dos inferencias está respaldada por la documentación publicada, de modo que cualquier evaluación técnica del modelo requiere inspeccionar los pesos y los ficheros de configuración del repositorio antes de utilizarlo.
 
@@ -32,7 +32,7 @@ Por el nombre se puede inferir, sin confirmación documental, que se trata de un
 
 No hay información publicada sobre la arquitectura, el objetivo de entrenamiento ni la composición del dataset. La model card no indica si se trata de un transformer decoder-only estándar, un MoE, un modelo híbrido o una arquitectura SSM, ni especifica el número de tokens de entrenamiento, la mezcla de datos, la existencia de fases de ajuste supervisado, RLHF o DPO. Tampoco se documentan hiperparámetros, precisión de entrenamiento (fp32, bf16, fp16), infraestructura de cómputo ni huella de carbono.
 
-La etiqueta `arxiv:1910.09700` del repositorio corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental del aprendizaje automático, que aparece citado en la plantilla genérica de model card de HuggingFace. No es un paper asociado al modelo ni describe su método de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (decodificación especulativa, atención lineal, GQA, etc.) sería especulativa y no se incluye en esta ficha.
+La etiqueta `arxiv:1910.09700` del repositorio corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental del aprendizaje automático, que aparece citado en la plantilla genérica de model card de Hugging Face. No es un paper asociado al modelo ni describe su método de entrenamiento. Cualquier afirmación sobre innovaciones técnicas (decodificación especulativa, atención lineal, GQA, etc.) sería especulativa y no se incluye en esta ficha.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ Los siguientes escenarios son hipótesis de trabajo derivadas del nombre del rep
 - Prototipado local en hardware modesto: al tratarse presuntamente de un modelo de ~0,5B, puede ejecutarse en portátiles sin GPU dedicada, lo que lo hace útil para pruebas de concepto de pipelines de `transformers` antes de escalar a modelos mayores.
 - Generación de datos sintéticos y destilación: un modelo pequeño puede usarse como generador auxiliar en bucles de aumento de datos o como alumno en experimentos de destilación, siempre que se audite la calidad de sus salidas.
 - Experimentación académica y docente: sirve como ejemplo de repositorio con plantilla de model card sin completar, útil para enseñar buenas prácticas de documentación de modelos y evaluación de trazabilidad.
-- Pruebas de integración con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con infraestructura de inferencia de HuggingFace; podría emplearse para validar flujos de despliegue en entornos de prueba, nunca en producción sin auditoría previa.
+- Pruebas de integración con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con infraestructura de inferencia de Hugging Face; podría emplearse para validar flujos de despliegue en entornos de prueba, nunca en producción sin auditoría previa.
 
 No se recomienda ningún caso de uso en producción crítica (atención al cliente, decisiones financieras, generación de código en CI/CD) con la información disponible.
 
@@ -74,7 +74,7 @@ Las siguientes cifras son estimaciones condicionadas a que el recuento de ~0,5B 
 - VRAM estimada en int4 (si se generan cuantizaciones GGUF, actualmente no publicadas): ~0,3-0,5 GB.
 - GPU compatibles: cualquier GPU con 4 GB o más de VRAM (GTX 1650, RTX 3050/3060, RTX 4090, A100, H100). En GPUs de datacenter el modelo está enormemente infrautilizado.
 - ¿Cabe en GPU de consumo? Sí, presumiblemente en cualquier GPU de consumo moderna e incluso en CPU con suficiente RAM, dado el tamaño del repositorio (0,1 GB).
-- Opciones de despliegue: `transformers` es la vía nativa. vLLM y TGI dependen de que la arquitectura sea compatible y esté declarada en la configuración; llama.cpp u Ollama requerirían convertir los pesos a GGUF, algo que el repositorio no ofrece. La etiqueta `endpoints_compatible` apunta a despliegue mediante HuggingFace Endpoints.
+- Opciones de despliegue: `transformers` es la vía nativa. vLLM y TGI dependen de que la arquitectura sea compatible y esté declarada en la configuración; llama.cpp u Ollama requerirían convertir los pesos a GGUF, algo que el repositorio no ofrece. La etiqueta `endpoints_compatible` apunta a despliegue mediante Hugging Face Endpoints.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia.
 
 ## Comparativa con modelos similares
@@ -83,10 +83,10 @@ La comparación se establece con modelos pequeños de propósito general ampliam
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| REVANTH001/pricesense-qwen-0.5b | no disponible (~0,5B según el nombre) | no disponible | no disponible | HuggingFace, safetensors | Ninguno: model card vacía, 0 descargas |
-| Qwen2.5-0.5B (Alibaba) | ~0,49B | 32.768 tokens (según documentación oficial) | Apache-2.0 | HuggingFace, GGUF y múltiples cuantizaciones | Documentación completa y benchmarks publicados |
-| SmolLM2-360M (HuggingFace) | ~0,36B | 8.192 tokens (según documentación oficial) | Apache-2.0 | HuggingFace, GGUF y múltiples cuantizaciones | Documentación completa y benchmarks publicados |
-| TinyLlama-1.1B | ~1,1B | 2.048 tokens (según documentación oficial) | Apache-2.0 | HuggingFace, GGUF | Documentación y benchmarks publicados |
+| REVANTH001/pricesense-qwen-0.5b | no disponible (~0,5B según el nombre) | no disponible | no disponible | Hugging Face, safetensors | Ninguno: model card vacía, 0 descargas |
+| Qwen2.5-0.5B (Alibaba) | ~0,49B | 32.768 tokens (según documentación oficial) | Apache-2.0 | Hugging Face, GGUF y múltiples cuantizaciones | Documentación completa y benchmarks publicados |
+| SmolLM2-360M (Hugging Face) | ~0,36B | 8.192 tokens (según documentación oficial) | Apache-2.0 | Hugging Face, GGUF y múltiples cuantizaciones | Documentación completa y benchmarks publicados |
+| TinyLlama-1.1B | ~1,1B | 2.048 tokens (según documentación oficial) | Apache-2.0 | Hugging Face, GGUF | Documentación y benchmarks publicados |
 
 La diferencia fundamental no es de rendimiento, sino de trazabilidad: las alternativas permiten verificar licencia, datos de entrenamiento y métricas, mientras que `pricesense-qwen-0.5b` no ofrece ninguno de esos elementos.
 
@@ -105,7 +105,7 @@ La diferencia fundamental no es de rendimiento, sino de trazabilidad: las altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/REVANTH001/pricesense-qwen-0.5b
+- Repositorio en Hugging Face: https://huggingface.co/REVANTH001/pricesense-qwen-0.5b
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del aprendizaje automatico: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes: la busqueda web realizada no devolvio resultados relacionados con el modelo, sino paginas genericas sobre la Antartida.

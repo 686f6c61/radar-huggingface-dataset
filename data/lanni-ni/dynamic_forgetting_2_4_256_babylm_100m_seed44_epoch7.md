@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de generación de texto publicado en HuggingFace por el usuario Lanni-ni, con 27.449.096 parámetros y un tamaño de repositorio de aproximadamente 0,1 GB. Su identificador incluye las etiquetas `dynamic_forgetting` y `babylm_100m`, lo que sugiere que forma parte de una línea de experimentos sobre olvido dinámico en modelos entrenados con el corpus BabyLM de 100 millones de palabras. Sin embargo, la model card es una plantilla autogenerada que no contiene información detallada sobre la arquitectura, los datos de entrenamiento, el proceso de entrenamiento ni las capacidades del modelo. Tampoco se han publicado resultados de benchmarks ni evaluaciones independientes. Se trata, por tanto, de un modelo experimental con documentación mínima, cuya relevancia práctica requiere una validación previa.
+Este modelo es un checkpoint de generación de texto publicado en Hugging Face por el usuario Lanni-ni, con 27.449.096 parámetros y un tamaño de repositorio de aproximadamente 0,1 GB. Su identificador incluye las etiquetas `dynamic_forgetting` y `babylm_100m`, lo que sugiere que forma parte de una línea de experimentos sobre olvido dinámico en modelos entrenados con el corpus BabyLM de 100 millones de palabras. Sin embargo, la model card es una plantilla autogenerada que no contiene información detallada sobre la arquitectura, los datos de entrenamiento, el proceso de entrenamiento ni las capacidades del modelo. Tampoco se han publicado resultados de benchmarks ni evaluaciones independientes. Se trata, por tanto, de un modelo experimental con documentación mínima, cuya relevancia práctica requiere una validación previa.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No disponible: no se han identificado modelos comparables en la información pro
 - La licencia no está especificada, por lo que el uso comercial es incierto y requiere consulta con el autor.
 - La model card está autogenerada y no contiene documentación técnica, lo que dificulta su evaluación y reproducción.
 - El modelo está etiquetado con `custom_code`, lo que implica que puede necesitar código personalizado no documentado para cargarse correctamente.
-- En HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
+- En Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
 - No se han publicado benchmarks ni evaluaciones, por lo que su rendimiento real es desconocido.
 - Al ser un modelo pequeño y experimental, es probable que presente limitaciones en tareas complejas, aunque esto no está confirmado.
 

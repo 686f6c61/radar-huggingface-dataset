@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mocov3-retrieval-practice es un prototipo de investigacion publicado por el usuario tonysantoso01 en HuggingFace. Se trata de una implementacion propia de tipo MoCo v3 (Momentum Contrast v3, un metodo de aprendizaje autosupervisado para representaciones visuales) orientada a tareas de retrieval (recuperacion). Segun su propia model card, el objetivo es documentar valores por defecto y formatos de fichero, sin presentar metricas de rendimiento verificadas.
+mocov3-retrieval-practice es un prototipo de investigacion publicado por el usuario tonysantoso01 en Hugging Face. Se trata de una implementacion propia de tipo MoCo v3 (Momentum Contrast v3, un metodo de aprendizaje autosupervisado para representaciones visuales) orientada a tareas de retrieval (recuperacion). Segun su propia model card, el objetivo es documentar valores por defecto y formatos de fichero, sin presentar metricas de rendimiento verificadas.
 
 El repositorio incluye un unico checkpoint de inicializacion (`model.safetensors`) con 24.832 parametros totales, que el autor describe explicitamente como valido para "smoke tests" pero no como un checkpoint entrenado ni evaluado. El tamano de escala declarado es "tiny", con atencion de ventana deslizante, fusion de bajo rango, activacion mish y normalizacion batchnorm. La receta de experimento por defecto usa el optimizador AdamW con un scheduler de tipo step.
 
@@ -95,10 +95,10 @@ Nota: los datos de las alternativas no se han verificado en la informacion dispo
 - Carga no estandar: al ser una implementacion personalizada, las APIs automaticas de carga de modelos requieren un adaptador explicito antes de poder usarla.
 - Uso comercial: la licencia declarada es apache-2.0, lo que en principio permite uso comercial, pero el autor advierte de revisar por separado los terminos de los datos de origen si se usan datasets externos. Dado que el modelo no esta entrenado, su utilidad comercial directa es nula sin un entrenamiento previo.
 - Ausencia de adopcion: 0 descargas y 0 likes en el momento de la consulta, lo que implica que no ha sido validado por la comunidad.
-- Fecha de creacion futura: el repositorio figura creado el 2026-09-14, dato que conviene verificar en la propia pagina de HuggingFace.
+- Fecha de creacion futura: el repositorio figura creado el 2026-09-14, dato que conviene verificar en la propia pagina de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tonysantoso01/mocov3-retrieval-practice
+- Modelo en Hugging Face: https://huggingface.co/tonysantoso01/mocov3-retrieval-practice
 
 Nota: la busqueda web realizada no devolvio enlaces relevantes sobre este modelo, sobre MoCo v3 aplicado a retrieval ni sobre el autor. Los resultados obtenidos correspondian a contenidos sin relacion tecnica con el modelo y no se incluyen. No se dispone de paper, blog, repositorio de codigo adicional ni demo asociados en la informacion proporcionada.

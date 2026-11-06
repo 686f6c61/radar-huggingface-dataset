@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pointnet2.scanobjectnn-hardest.openpoints es un modelo de clasificación de nubes de puntos 3D publicado por el usuario torch-pointcloud en HuggingFace. Se trata de una implementación de PointNet++, la arquitectura de aprendizaje jerárquico de características sobre conjuntos de puntos desordenados propuesta por Qi et al. (NeurIPS 2017), entrenada sobre la partición más difícil del dataset ScanObjectNN (PB_T50_RS), que contiene objetos escaneados en entornos reales con oclusión, ruido y perturbaciones.
+pointnet2.scanobjectnn-hardest.openpoints es un modelo de clasificación de nubes de puntos 3D publicado por el usuario torch-pointcloud en Hugging Face. Se trata de una implementación de PointNet++, la arquitectura de aprendizaje jerárquico de características sobre conjuntos de puntos desordenados propuesta por Qi et al. (NeurIPS 2017), entrenada sobre la partición más difícil del dataset ScanObjectNN (PB_T50_RS), que contiene objetos escaneados en entornos reales con oclusión, ruido y perturbaciones.
 
 El modelo tiene 1.476.175 parámetros (aproximadamente 1,5 millones), recibe nubes de puntos con 4 canales de entrada y clasifica en 15 categorías de objeto. La cabeza de clasificación es sustituible: puede configurarse con `num_classes=0` para actuar como extractor de características y devolver embeddings de 1024 dimensiones, lo que lo hace reutilizable en tareas de recuperación, agrupamiento o transferencia a otros dominios.
 
@@ -71,7 +71,7 @@ La propia model card indica un valor de referencia de 86,2 de OA para esta confi
 
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointnet2.scanobjectnn-hardest.openpoints | 1,5 M | nube de puntos (el ejemplo usa 8192 puntos) | Clasificación, 15 clases ScanObjectNN | MIT | HuggingFace, pesos safetensors |
+| pointnet2.scanobjectnn-hardest.openpoints | 1,5 M | nube de puntos (el ejemplo usa 8192 puntos) | Clasificación, 15 clases ScanObjectNN | MIT | Hugging Face, pesos safetensors |
 | PointNet++ (implementación original) | no disponible en la información suministrada | nube de puntos | Clasificación de nubes de puntos | no disponible en la información suministrada | Repositorio original de los autores |
 | PointNeXt (guochengqian) | no disponible en la información suministrada | nube de puntos | Clasificación y segmentación de nubes de puntos | MIT | GitHub; es el origen de la conversión de estos pesos |
 
@@ -91,7 +91,7 @@ No se dispone de cifras comparativas de rendimiento de las alternativas en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/pointnet2.scanobjectnn-hardest.openpoints
+- Hugging Face: https://huggingface.co/torch-pointcloud/pointnet2.scanobjectnn-hardest.openpoints
 - Paper de PointNet++: https://arxiv.org/abs/1706.02413
 - Repositorio PointNeXt (origen de la conversión de pesos): https://github.com/guochengqian/PointNeXt
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

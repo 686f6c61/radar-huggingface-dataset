@@ -106,6 +106,6 @@ La comparación más directa y metodológicamente válida es contra `nkkbr/Mini-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block6-v1_C
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block6-v1_C
 - Baseline Block-4 citado en la model card: https://huggingface.co/nkkbr/Mini-K3-1H-v2
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos o demos) en los resultados de la búsqueda web disponible; los resultados obtenidos no guardan relación con el modelo.

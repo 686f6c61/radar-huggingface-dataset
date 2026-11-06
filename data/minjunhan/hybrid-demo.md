@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Minjunhan/hybrid-demo` es un repositorio de demostración publicado en HuggingFace que contiene una implementación propia de una arquitectura híbrida orientada a tareas de emparejamiento (matching). No se trata de un modelo entrenado ni de una versión lista para producción: el autor lo describe explícitamente como un punto de partida reproducible ("reproducible starting point") con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Minjunhan/hybrid-demo` es un repositorio de demostración publicado en Hugging Face que contiene una implementación propia de una arquitectura híbrida orientada a tareas de emparejamiento (matching). No se trata de un modelo entrenado ni de una versión lista para producción: el autor lo describe explícitamente como un punto de partida reproducible ("reproducible starting point") con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El modelo tiene tan solo 49.600 parámetros totales y está empaquetado junto a un script de entrenamiento (`train.py`), un archivo de configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`). La arquitectura combina atención estándar con una fusión basada en concatenación y MLP, activación Mish y normalización ScaleNorm, etiquetada por el autor con la escala "huge" aunque, por el número de parámetros, se trata de un prototipo de laboratorio.
 
@@ -73,5 +73,5 @@ No procede una comparativa con modelos de producción: este repositorio no es un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Minjunhan/hybrid-demo
+- Hugging Face: https://huggingface.co/Minjunhan/hybrid-demo
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

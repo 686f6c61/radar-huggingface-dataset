@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Sistema | Tipo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DibaGuard | Cascada de detectores (árboles, GRU, DbNet) | Detección de intrusiones en red, HTTP y bases de datos con calibración conformal | Código Apache-2.0; pesos CC BY-SA 4.0 | HuggingFace (Dibachain/DibaGuard y DibaAi/DibaGuard-Open) |
+| DibaGuard | Cascada de detectores (árboles, GRU, DbNet) | Detección de intrusiones en red, HTTP y bases de datos con calibración conformal | Código Apache-2.0; pesos CC BY-SA 4.0 | Hugging Face (Dibachain/DibaGuard y DibaAi/DibaGuard-Open) |
 | WAF comerciales (p. ej. ModSecurity con CRS) | Motor de reglas | Firmas y reglas heurísticas sobre HTTP | Varía (a menudo Apache-2.0 o GPL) | Amplia |
 | IDS basados en ML genéricos | Clasificadores supervisados | Detección sobre features de flujo | Varía | Variable |
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dibachain/DibaGuard
+- Modelo en Hugging Face: https://huggingface.co/Dibachain/DibaGuard
 - Réplica del release: https://huggingface.co/DibaAi/DibaGuard-Open
 - Demo interactiva: https://huggingface.co/spaces/DibaAi/beam-dibaguard

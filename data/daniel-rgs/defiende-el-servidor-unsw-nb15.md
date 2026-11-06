@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Defiende el servidor - v2 es un clasificador binario de flujos de red basado en UNSW-NB15, publicado por Daniel-RGS en HuggingFace. Su objetivo es distinguir entre tráfico normal (`0`) y ataque (`1`) a partir de variables tabulares derivadas de flujos de red, no de paquetes crudos.
+Defiende el servidor - v2 es un clasificador binario de flujos de red basado en UNSW-NB15, publicado por Daniel-RGS en Hugging Face. Su objetivo es distinguir entre tráfico normal (`0`) y ataque (`1`) a partir de variables tabulares derivadas de flujos de red, no de paquetes crudos.
 
 El artefacto es un pipeline de scikit-learn con un random forest balanceado de 100 árboles y `max_depth=18`, que integra imputación, codificación one-hot de `proto`, `service` y `state`, y escalado de variables numéricas. El umbral de decisión está congelado en `0.51`.
 
@@ -84,7 +84,7 @@ No se dispone de resultados de modelos comparables en la información proporcion
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Defiende el servidor - v2 | random forest, 100 árboles, `max_depth=18`; parámetros totales no disponibles | no aplica | recall 0.9463, precision 0.9762, FPR 0.0490, macro-F1 0.9410 en validación | no disponible | HuggingFace, formato `joblib` |
+| Defiende el servidor - v2 | random forest, 100 árboles, `max_depth=18`; parámetros totales no disponibles | no aplica | recall 0.9463, precision 0.9762, FPR 0.0490, macro-F1 0.9410 en validación | no disponible | Hugging Face, formato `joblib` |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,6 +104,6 @@ No se dispone de resultados de modelos comparables en la información proporcion
 
 ## Enlaces
 
-- [HuggingFace: Daniel-RGS/defiende-el-servidor-unsw-nb15](https://huggingface.co/Daniel-RGS/defiende-el-servidor-unsw-nb15)
+- [Hugging Face: Daniel-RGS/defiende-el-servidor-unsw-nb15](https://huggingface.co/Daniel-RGS/defiende-el-servidor-unsw-nb15)
 - Referencia citada: Moustafa, N. y Slay, J. *UNSW-NB15: a comprehensive data set for network intrusion detection systems*; sin URL disponible en la información proporcionada.
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web proporcionada; los resultados sobre el nombre «Daniel» no están relacionados con el modelo.

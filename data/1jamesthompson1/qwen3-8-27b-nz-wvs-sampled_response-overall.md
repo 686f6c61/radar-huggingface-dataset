@@ -79,7 +79,7 @@ No se han encontrado otros adaptadores de alineación de valores sobre el mismo 
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/1jamesthompson1/Qwen3.8-27B-nz-wvs-sampled_response-overall)
+- [Hugging Face del adaptador](https://huggingface.co/1jamesthompson1/Qwen3.8-27B-nz-wvs-sampled_response-overall)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Dataset wvs-nz-value-alignment](https://huggingface.co/datasets/1jamesthompson1/wvs-nz-value-alignment)
 - [Colección wvs-nz-value-alignment](https://huggingface.co/collections/wvs-nz-value-alignment)

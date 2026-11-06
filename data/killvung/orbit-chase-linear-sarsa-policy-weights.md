@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables en el mismo dominio (pers
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/killvung/orbit-chase-linear-sarsa-policy-weights
+- Modelo en Hugging Face: https://huggingface.co/killvung/orbit-chase-linear-sarsa-policy-weights
 - Repositorio de GitHub (proyecto asociado): https://github.com/killvung/reinforcement-learning-orbit-chaser
 - Referencia sobre SARSA (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/sarsa-reinforcement-learning/
 - Tutorial sobre SARSA (TutorialsPoint): https://www.tutorialspoint.com/machine_learning/machine_learning_sarsa_reinforcement_learning.htm

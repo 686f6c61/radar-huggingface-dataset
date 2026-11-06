@@ -2,7 +2,7 @@
 
 ## Resumen
 
-efficientnetb0 es un repositorio publicado en HuggingFace por el usuario Mansama18-code que, a juzgar por su identificador y por la ausencia de cualquier otro metadato descriptivo, corresponde presuntamente a un checkpoint de la arquitectura EfficientNet-B0, una red neuronal convolucional disenada para clasificacion de imagenes. La unica informacion que acompana al repositorio es la declaracion de licencia Apache 2.0; no hay model card, no se declara pipeline, idiomas, conjunto de datos de entrenamiento ni formato de pesos, y en el momento de la consulta acumula 0 descargas y 0 likes.
+efficientnetb0 es un repositorio publicado en Hugging Face por el usuario Mansama18-code que, a juzgar por su identificador y por la ausencia de cualquier otro metadato descriptivo, corresponde presuntamente a un checkpoint de la arquitectura EfficientNet-B0, una red neuronal convolucional disenada para clasificacion de imagenes. La unica informacion que acompana al repositorio es la declaracion de licencia Apache 2.0; no hay model card, no se declara pipeline, idiomas, conjunto de datos de entrenamiento ni formato de pesos, y en el momento de la consulta acumula 0 descargas y 0 likes.
 
 La arquitectura EfficientNet-B0 se popularizo por su estrategia de escalado compuesto (compounding scaling) de profundidad, anchura y resolucion, que permite obtener precision competitiva con un coste computacional muy inferior al de las CNN clasicas de su generacion. Esa relevancia corresponde al diseno original publicado por Google Research y no a este repositorio concreto, cuya procedencia, pesos y evaluacion no estan documentados en absoluto.
 
@@ -19,7 +19,7 @@ El modelo es relevante hoy unicamente como posible punto de partida para experim
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible; la plataforma no lista los archivos del repositorio en la informacion proporcionada |
-| Fecha de creacion en HuggingFace | 22 de septiembre de 2026 (segun metadatos de la plataforma) |
+| Fecha de creacion en Hugging Face | 22 de septiembre de 2026 (segun metadatos de la plataforma) |
 | Ultima actualizacion | 22 de septiembre de 2026 (segun metadatos de la plataforma) |
 | Descargas / likes | 0 / 0 |
 
@@ -93,7 +93,7 @@ La busqueda web realizada no ha devuelto ninguna fuente tecnica sobre este repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mansama18-code/efficientnetb0
+- Repositorio en Hugging Face: https://huggingface.co/Mansama18-code/efficientnetb0
 - Paper original de la arquitectura EfficientNet: no disponible en la informacion proporcionada.
 - Repositorios, blogs o demos adicionales: no disponible.
 - Resultados de la busqueda web: las entradas devueltas corresponden a paginas en aleman sobre derecho de devolucion y contratos de compraventa en eBay (juraforum.de y 123recht.de) y no guardan ninguna relacion con el modelo. No se incluye ningun enlace relevante porque no se ha encontrado ninguno.

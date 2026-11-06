@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VihaanSinghnag/beit-classification-v3` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una arquitectura tipo BEiT orientada a clasificación. No es un modelo preentrenado ni ajustado: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado con resultados verificables. Está publicado por el usuario VihaanSinghnag bajo licencia Apache 2.0 y no registra descargas ni interacciones en el momento de redactar esta ficha.
+`VihaanSinghnag/beit-classification-v3` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una arquitectura tipo BEiT orientada a clasificación. No es un modelo preentrenado ni ajustado: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, no un modelo entrenado con resultados verificables. Está publicado por el usuario VihaanSinghnag bajo licencia Apache 2.0 y no registra descargas ni interacciones en el momento de redactar esta ficha.
 
 El dato más relevante es la discrepancia entre la etiqueta declarada (`xlarge`) y el tamaño real: el fichero de pesos contiene 49.600 parámetros (aproximadamente 49,6 K), una magnitud incompatible con cualquier configuración BEiT-xlarge real, que en la práctica maneja cientos de millones de parámetros. Esto confirma que se trata de un andamiaje de código y no de un modelo con capacidad funcional.
 
@@ -46,7 +46,7 @@ No existe entrenamiento documentado. La model card lo dice de forma explícita: 
 - Pruebas de humo en pipelines de integracion continua: el checkpoint de inicializacion permite verificar que el codigo carga, instancia el modelo y ejecuta un forward pass sin errores antes de entrenamientos reales.
 - Revision de codigo y auditoria de arquitectura: al ser una implementacion compacta y autocontenida, facilita inspeccionar como se estructuran las capas, la fusion bilineal y la normalizacion GroupNorm.
 - Plantilla para experimentos controlados: sirve como base reproducible para comparar recetas de entrenamiento con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias, tal como sugiere el autor.
-- Docencia y formacion: util para explicar la diferencia entre un checkpoint inicializado y uno entrenado, y para ilustrar el flujo de publicacion en HuggingFace.
+- Docencia y formacion: util para explicar la diferencia entre un checkpoint inicializado y uno entrenado, y para ilustrar el flujo de publicacion en Hugging Face.
 - Desarrollo de adaptadores de carga: el autor indica que, al ser una implementacion propia, las APIs genericas de carga automatica requieren un adaptador explicito; el repositorio sirve para desarrollar y probar ese adaptador.
 - Base para un futuro ajuste fino: una vez sustituida la inicializacion por un entrenamiento real con un split etiquetado especifico de tarea, podria reconvertirse en un clasificador visual, aunque hoy no es funcional para ello.
 - No es adecuado, en su estado actual, para clasificacion de imagenes en produccion, analisis de datos reales ni cualquier tarea que exija predicciones fiables.
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beit-classification-v3 (este repo) | 49,6 K (inicializacion) | clasificacion (sin entrenar) | apache-2.0 | HuggingFace, 0 descargas |
-| BEiT-base oficial (Microsoft, referencia de la familia) | aprox. 86 M | clasificacion de imagen | MIT / segun variante | HuggingFace / GitHub |
-| BEiT-large oficial (Microsoft, referencia de la familia) | aprox. 307 M | clasificacion de imagen | MIT / segun variante | HuggingFace / GitHub |
+| beit-classification-v3 (este repo) | 49,6 K (inicializacion) | clasificacion (sin entrenar) | apache-2.0 | Hugging Face, 0 descargas |
+| BEiT-base oficial (Microsoft, referencia de la familia) | aprox. 86 M | clasificacion de imagen | MIT / segun variante | Hugging Face / GitHub |
+| BEiT-large oficial (Microsoft, referencia de la familia) | aprox. 307 M | clasificacion de imagen | MIT / segun variante | Hugging Face / GitHub |
 
 Los valores de la familia BEiT oficial se incluyen unicamente como referencia de categoria; este repositorio no aporta metricas comparables ni un checkpoint entrenado que permita una comparacion real. No se dispone de datos de rendimiento de este modelo.
 
@@ -87,5 +87,5 @@ Los valores de la familia BEiT oficial se incluyen unicamente como referencia de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VihaanSinghnag/beit-classification-v3
+- Hugging Face: https://huggingface.co/VihaanSinghnag/beit-classification-v3
 - La busqueda web no devolvio papers, blogs, repositorios ni demos relevantes sobre este modelo; el resto de enlaces no estan disponibles.

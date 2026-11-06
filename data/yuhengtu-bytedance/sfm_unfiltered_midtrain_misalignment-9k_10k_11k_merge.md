@@ -69,6 +69,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-9k_10k_11k_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-9k_10k_11k_merge)
 - [FriendliAI - despliegue de modelo similar](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg)
 - [Paper de merge Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)

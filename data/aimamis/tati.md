@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tati es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en HuggingFace. El adaptador se entrena sobre el modelo base krea/Krea-2-Turbo y esta etiquetado con la plantilla oficial `template:diffusion-lora` del ecosistema diffusers, lo que indica que su uso previsto es la inferencia con la libreria diffusers de HuggingFace. El repositorio ocupa 0,5 GB e incluye pesos del adaptador y material grafico de ejemplo (galeria) segun la estructura habitual de este tipo de publicaciones.
+Tati es un adaptador LoRA de generacion de imagenes texto-a-imagen publicado por el usuario AiMamis en Hugging Face. El adaptador se entrena sobre el modelo base krea/Krea-2-Turbo y esta etiquetado con la plantilla oficial `template:diffusion-lora` del ecosistema diffusers, lo que indica que su uso previsto es la inferencia con la libreria diffusers de Hugging Face. El repositorio ocupa 0,5 GB e incluye pesos del adaptador y material grafico de ejemplo (galeria) segun la estructura habitual de este tipo de publicaciones.
 
 El modelo resuelve un problema muy concreto: la generacion consistente de un personaje concreto (una figura femenina asociada a las palabras de activacion `Tati`, `Platinum blonde hair` y `Green eyes`). No es un modelo de lenguaje ni un modelo fundacional, sino un ajuste ligero que se acopla a un modelo de difusion ya existente para especializarlo en un sujeto concreto sin reentrenar el modelo completo. Esto lo hace interesante para flujos de trabajo donde la consistencia de identidad visual entre multiples imagenes es un requisito.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada en terminos de impacto tecnico: se trata
 | Modelo base | krea/Krea-2-Turbo |
 | Palabras de activacion | `Tati`, `Platinum blonde hair`, `Green eyes` |
 | Autor | AiMamis |
-| ID en HuggingFace | AiMamis/Tati |
+| ID en Hugging Face | AiMamis/Tati |
 | Descargas | 0 |
 | Likes | 0 |
 | Region declarada | us |
@@ -86,7 +86,7 @@ No hay datos de rendimiento publicados que permitan una comparativa cuantitativa
 | Licencia | openrail++ | la del modelo base | la del modelo base |
 | Coste de entrenamiento | bajo por diseno (LoRA) | alto | nulo |
 | Reproducibilidad | baja: sin dataset, hiperparametros ni semilla documentados | no aplica | alta |
-| Disponibilidad | publico en HuggingFace con 0 descargas | — | publico |
+| Disponibilidad | publico en Hugging Face con 0 descargas | — | publico |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ No hay datos de rendimiento publicados que permitan una comparativa cuantitativa
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/AiMamis/Tati
+- Pagina del modelo en Hugging Face: https://huggingface.co/AiMamis/Tati
 - Archivos del repositorio: https://huggingface.co/AiMamis/Tati/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.

@@ -77,9 +77,9 @@ No se dispone de modelos comparables en la información proporcionada. El modelo
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/425GMM/llama-3.2-3b-qlora-aslg-gloss
+- Página del modelo en Hugging Face: https://huggingface.co/425GMM/llama-3.2-3b-qlora-aslg-gloss
 - Repositorio del proyecto (código, gramáticas, prompt de sistema y scripts de evaluación): https://github.com/TheRealGioviok/asl-gloss-nlp
-- Dataset ASLG-PC12 en HuggingFace: https://huggingface.co/datasets/achrafothman/aslg_pc12
+- Dataset ASLG-PC12 en Hugging Face: https://huggingface.co/datasets/achrafothman/aslg_pc12
 - Redistribución del dataset en Kaggle: https://www.kaggle.com/datasets/thedevastator/unlock-the-power-of-english-asl-with-aslg-pc12-c
-- Modelo base en HuggingFace (espejo sin restricciones): https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
+- Modelo base en Hugging Face (espejo sin restricciones): https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Modelo base oficial de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

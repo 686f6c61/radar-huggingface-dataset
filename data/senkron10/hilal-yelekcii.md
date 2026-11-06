@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hilal-Yelekcii es un repositorio de modelo publicado en HuggingFace por el usuario SeNKrOn10. En el momento de la consulta, la ficha publica no incluye informacion sobre la arquitectura, el pipeline, los idiomas soportados ni la licencia, y no se ha publicado ninguna descripcion tecnica, paper o blog asociado. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado el 12 de septiembre de 2026 con un intervalo de unos dos minutos entre ambos eventos.
+Hilal-Yelekcii es un repositorio de modelo publicado en Hugging Face por el usuario SeNKrOn10. En el momento de la consulta, la ficha publica no incluye informacion sobre la arquitectura, el pipeline, los idiomas soportados ni la licencia, y no se ha publicado ninguna descripcion tecnica, paper o blog asociado. El repositorio acumula 0 descargas y 1 like, y fue creado y actualizado el 12 de septiembre de 2026 con un intervalo de unos dos minutos entre ambos eventos.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos reducido (posiblemente un adaptador, un modelo de menos de 2 000 millones de parametros o una version altamente cuantizada), aunque esta interpretacion es una inferencia a partir del tamano y no una caracteristica confirmada por el autor.
 
@@ -23,7 +23,7 @@ No se ha encontrado informacion adicional en la busqueda web: los resultados dev
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de HuggingFace. No hay datos sobre si se trata de un transformer, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida, ni sobre el numero de capas, dimensiones ocultas o mecanismos de atencion empleados.
+No se ha publicado informacion sobre la arquitectura del modelo en el repositorio de Hugging Face. No hay datos sobre si se trata de un transformer, un modelo de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida, ni sobre el numero de capas, dimensiones ocultas o mecanismos de atencion empleados.
 
 Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el volumen de tokens utilizado, la composicion del dataset, si se aplicaron tecnicas de ajuste fino supervisado, RLHF o DPO, y si el repositorio contiene un modelo base completo o un adaptador (LoRA, QLoRA u otro). El intervalo de dos minutos entre la creacion y la ultima actualizacion del repositorio no aporta informacion tecnica relevante.
 
@@ -35,7 +35,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: se desconoce el volum
 - No se confirma soporte para agentes ni razonamiento multi-paso.
 - No se confirman capacidades multilingues ni idiomas concretos.
 - No se describe ningun modo especial (thinking mode, vision, audio, decodificacion especulativa, etc.).
-- El repositorio no declara un pipeline de HuggingFace, por lo que ni siquiera se puede confirmar la tarea para la que fue disenado.
+- El repositorio no declara un pipeline de Hugging Face, por lo que ni siquiera se puede confirmar la tarea para la que fue disenado.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeNKrOn10/Hilal-Yelekcii
+- Repositorio en Hugging Face: https://huggingface.co/SeNKrOn10/Hilal-Yelekcii
 - Perfil del autor: https://huggingface.co/SeNKrOn10
 - Paper, blog o repositorio de codigo: no disponible
 - Demo: no disponible

@@ -66,7 +66,7 @@ No se dispone de información sobre tokenizers comparables de otros modelos de l
 
 ## Enlaces
 
-- [Repositorio HuggingFace del tokenizer](https://huggingface.co/AETHORIA-AI/TR-HASH-Tokenizer-32K-v1)
+- [Repositorio Hugging Face del tokenizer](https://huggingface.co/AETHORIA-AI/TR-HASH-Tokenizer-32K-v1)
 - [Checkpoint SFT compatible](https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-200M-160B-SFT)
 - [Perfil de la organización AETHORIA-AI](https://huggingface.co/AETHORIA-AI)
 - [Dataset de pre-entrenamiento de 200B tokens](https://huggingface.co/datasets/AETHORIA-AI/data-32k-200b-tokens)

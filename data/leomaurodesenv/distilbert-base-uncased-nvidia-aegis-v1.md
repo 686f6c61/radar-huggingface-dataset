@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leomaurodesenv/distilbert-base-uncased-nvidia-aegis-v1` es un ajuste fino (fine-tuning) de DistilBERT-base-uncased publicado por el usuario leomaurodesenv en HuggingFace. Se trata de un clasificador de texto de 66.955.010 parametros (aproximadamente 67 millones) orientado a `text-classification`, construido sobre el checkpoint `distilbert/distilbert-base-uncased` mediante la libreria Transformers y el `Trainer` estandar. El autor no documenta en la model card cual es el conjunto de datos de entrenamiento, ni la taxonomia de etiquetas, ni el caso de uso previsto.
+`leomaurodesenv/distilbert-base-uncased-nvidia-aegis-v1` es un ajuste fino (fine-tuning) de DistilBERT-base-uncased publicado por el usuario leomaurodesenv en Hugging Face. Se trata de un clasificador de texto de 66.955.010 parametros (aproximadamente 67 millones) orientado a `text-classification`, construido sobre el checkpoint `distilbert/distilbert-base-uncased` mediante la libreria Transformers y el `Trainer` estandar. El autor no documenta en la model card cual es el conjunto de datos de entrenamiento, ni la taxonomia de etiquetas, ni el caso de uso previsto.
 
 El interes de esta ficha es limitado pero concreto: sirve como ejemplo de fine-tuning ligero de un encoder pequeno sobre una tarea de clasificacion, con una accuracy declarada de 0,8717 en un conjunto de evaluacion no especificado. El nombre del modelo sugiere una posible relacion con el dataset Aegis de seguridad de contenido de NVIDIA, pero esto no esta confirmado en ninguna parte de la documentacion disponible y debe tratarse como una hipotesis, no como un dato.
 
@@ -117,7 +117,7 @@ La comparacion se limita a la familia de encoders porque no hay informacion sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-nvidia-aegis-v1
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/distilbert-base-uncased-nvidia-aegis-v1
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Documentacion de DistilBERT: https://huggingface.co/docs/transformers/model_doc/distilbert

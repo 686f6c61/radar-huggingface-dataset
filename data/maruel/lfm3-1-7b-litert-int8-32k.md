@@ -6,7 +6,7 @@ LFM3-1.7B-LiteRT-INT8-32K es una conversión cuantizada del modelo LiquidAI/LFM3
 
 El modelo base LFM3-1.7B pertenece a la familia LFM3 de Liquid AI, orientada a generación de texto y conversación. Esta versión concreta mantiene una capacidad de contexto de 32.768 tokens y almacena el estado KV y recurrente en `float16`, mientras que las matrices de pesos se cuantizan a INT8 por canal. Es relevante para desarrolladores que necesitan desplegar inferencia local en Android sin depender de la nube, aunque con las limitaciones propias de un runtime móvil y de una cuantización agresiva.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace y en la model card del autor. No hay datos públicos sobre composición del dataset, resultados de benchmarks ni idiomas soportados en la información proporcionada, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor. No hay datos públicos sobre composición del dataset, resultados de benchmarks ni idiomas soportados en la información proporcionada, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-LiteRT-INT8-32K | 1.7B | 32.768 | LiteRT-LM INT8 | LFM Open License v1.0 | HuggingFace (12 descargas) |
-| LiquidAI/LFM3-1.7B (base) | 1.7B | no disponible | safetensors (presumiblemente) | LFM Open License v1.0 | HuggingFace |
+| LFM3-1.7B-LiteRT-INT8-32K | 1.7B | 32.768 | LiteRT-LM INT8 | LFM Open License v1.0 | Hugging Face (12 descargas) |
+| LiquidAI/LFM3-1.7B (base) | 1.7B | no disponible | safetensors (presumiblemente) | LFM Open License v1.0 | Hugging Face |
 | Alternativas de ~1-2B para movil | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la información proporcionada, por lo que la comparativa se limita al modelo base y a la ausencia de alternativas documentadas.
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maruel/LFM3-1.7B-LiteRT-INT8-32K
+- Modelo en Hugging Face: https://huggingface.co/maruel/LFM3-1.7B-LiteRT-INT8-32K
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio Go Mode: https://github.com/maruel/gomode
 - Script de exportación: https://github.com/maruel/gomode/blob/main/scripts/export_lfm_litert.py

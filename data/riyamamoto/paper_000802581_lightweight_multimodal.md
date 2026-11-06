@@ -53,7 +53,7 @@ No disponible. No se proporcionan datos sobre modelos comparables, ni se mencion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/riyamamoto/paper_000802581_lightweight_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/riyamamoto/paper_000802581_lightweight_multimodal
 - Paper relacionado en arXiv (sobre estimación de rendimiento de LLM con modelos multimodales ligeros): https://arxiv.org/abs/2608.18591
 - Revisión de IA multimodal generalista: https://arxiv.org/abs/2406.05496
 - Light-MLLMAD (detección de anomalías industriales con MLLM ligero): https://link.springer.com/article/10.1007/s44163-026-01252-w

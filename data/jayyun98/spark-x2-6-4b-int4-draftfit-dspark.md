@@ -66,7 +66,7 @@ Protocolo: verificacion greedy de prefijos con siete propuestas, 64 tokens de sa
 
 | Modelo | Parametros | Contexto | Tasa de aceptacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spark-X2.6-4B-INT4-Draftfit-DSpark | 624.416.001 | no disponible | 41,61 % (dev) / 36,85 % (conf.) | apache-2.0 | HuggingFace |
+| Spark-X2.6-4B-INT4-Draftfit-DSpark | 624.416.001 | no disponible | 41,61 % (dev) / 36,85 % (conf.) | apache-2.0 | Hugging Face |
 | Borrador base de Draftfit | no disponible | no disponible | 41,21 % (dev) / 37,46 % (conf.) | no disponible | no disponible |
 | Otros borradores de decodificacion especulativa | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,6 +85,6 @@ La unica comparacion documentada es frente al borrador base del mismo conjunto d
 
 ## Enlaces
 
-- [HuggingFace: jayyun98/Spark-X2.6-4B-INT4-Draftfit-DSpark](https://huggingface.co/jayyun98/Spark-X2.6-4B-INT4-Draftfit-DSpark)
+- [Hugging Face: jayyun98/Spark-X2.6-4B-INT4-Draftfit-DSpark](https://huggingface.co/jayyun98/Spark-X2.6-4B-INT4-Draftfit-DSpark)
 - [Modelo objetivo: XHToken/Spark-X2.6-4B-INT4](https://huggingface.co/XHToken/Spark-X2.6-4B-INT4)
 - [Repositorio Draftfit](https://github.com/JayYun98/Draftfit)

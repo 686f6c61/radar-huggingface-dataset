@@ -61,8 +61,8 @@ No se dispone de datos comparativos directos en la información proporcionada. S
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA (este) | 450 M | No aplica | Apache-2.0 | HuggingFace |
-| OpenVLA | 7 B | No aplica | MIT | HuggingFace |
+| SmolVLA (este) | 450 M | No aplica | Apache-2.0 | Hugging Face |
+| OpenVLA | 7 B | No aplica | MIT | Hugging Face |
 | RT-2 (Google) | 55 B | No aplica | Propietaria | No público |
 
 SmolVLA es significativamente más compacto que OpenVLA (450 M vs 7 B), lo que lo hace más adecuado para despliegue en hardware de consumo, aunque con menor capacidad de generalización a tareas diversas.
@@ -78,7 +78,7 @@ SmolVLA es significativamente más compacto que OpenVLA (450 M vs 7 B), lo que l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_pear_bowl-abs-200-smolvla_fft-60000)
+- [Modelo en Hugging Face](https://huggingface.co/team-sobits/sobit_home_left_sim-pnp_pear_bowl-abs-200-smolvla_fft-60000)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/team-sobits/sobit_home_left_sim-pnp_pear_bowl-abs-200)
 - [Paper SmolVLA (arxiv 2506.01844)](https://huggingface.co/papers/2506.01844)
 - [Modelo base lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)

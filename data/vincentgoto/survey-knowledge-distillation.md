@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Vincentgoto/survey-knowledge-distillation no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre destilacion de conocimiento (knowledge distillation) publicado en HuggingFace bajo licencia CC-BY-4.0. Su contenido se limita a dos ficheros Markdown (`summary.md` y `README.md`), un artefacto safetensors de 16.576 parametros y un peso total de repositorio de 0,0 GB. No incluye checkpoint utilizable, pipeline de inferencia ni resultados experimentales.
+El repositorio Vincentgoto/survey-knowledge-distillation no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre destilacion de conocimiento (knowledge distillation) publicado en Hugging Face bajo licencia CC-BY-4.0. Su contenido se limita a dos ficheros Markdown (`summary.md` y `README.md`), un artefacto safetensors de 16.576 parametros y un peso total de repositorio de 0,0 GB. No incluye checkpoint utilizable, pipeline de inferencia ni resultados experimentales.
 
 El autor lo describe explicitamente como una nota exploratoria que registra el alcance de la pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad antes de reportar cualquier resultado. La propia model card advierte que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que no se reclama ninguna mejora de benchmark, ablacion completada, codigo liberado ni checkpoint entrenado.
 
@@ -81,7 +81,7 @@ No disponible. Este repositorio no pertenece a la categoria de modelos desplegab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vincentgoto/survey-knowledge-distillation
+- Repositorio en Hugging Face: https://huggingface.co/Vincentgoto/survey-knowledge-distillation
 - Knowledge Distillation: A Survey (arXiv:2006.05525): https://arxiv.org/abs/2006.05525
 - Knowledge distillation, Wikipedia: https://en.wikipedia.org/wiki/Knowledge_distillation
 - Knowledge distillation: Simplifying AI with efficient models (Data Science Dojo): https://datasciencedojo.com/blog/understanding-knowledge-distillation/

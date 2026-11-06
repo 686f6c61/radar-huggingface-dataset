@@ -2,9 +2,9 @@
 
 ## Resumen
 
-robometer-4b-icl-finetuned es un adaptador LoRA publicado por el usuario Hannibal52Barca en HuggingFace, construido sobre el modelo base unsloth/Qwen3-VL-4B-Instruct. Se trata por tanto de un ajuste fino ligero (PEFT) sobre un modelo multimodal de visión y lenguaje de aproximadamente 4.500 millones de parámetros, orientado según su nombre a tareas de aprendizaje en contexto (in-context learning) y, posiblemente, a la evaluación de recompensas en entornos robóticos o de vídeo. El repositorio contiene pesos en formato safetensors y ocupa 9,4 GB, con un recuento real de 4.513.065.228 parámetros.
+robometer-4b-icl-finetuned es un adaptador LoRA publicado por el usuario Hannibal52Barca en Hugging Face, construido sobre el modelo base unsloth/Qwen3-VL-4B-Instruct. Se trata por tanto de un ajuste fino ligero (PEFT) sobre un modelo multimodal de visión y lenguaje de aproximadamente 4.500 millones de parámetros, orientado según su nombre a tareas de aprendizaje en contexto (in-context learning) y, posiblemente, a la evaluación de recompensas en entornos robóticos o de vídeo. El repositorio contiene pesos en formato safetensors y ocupa 9,4 GB, con un recuento real de 4.513.065.228 parámetros.
 
-La relevancia del modelo es limitada a día de hoy por la ausencia casi total de documentación: la model card es la plantilla por defecto de HuggingFace y no especifica autoría real, datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. El repositorio registra cero descargas y cero likes, y la etiqueta arXiv que aparece (1910.09700) corresponde al artículo de Lacoste et al. sobre el calculador de impacto ambiental de Machine Learning, citado en la propia plantilla, no a un paper de este modelo.
+La relevancia del modelo es limitada a día de hoy por la ausencia casi total de documentación: la model card es la plantilla por defecto de Hugging Face y no especifica autoría real, datos de entrenamiento, hiperparámetros, licencia ni idiomas soportados. El repositorio registra cero descargas y cero likes, y la etiqueta arXiv que aparece (1910.09700) corresponde al artículo de Lacoste et al. sobre el calculador de impacto ambiental de Machine Learning, citado en la propia plantilla, no a un paper de este modelo.
 
 Por todo ello, esta ficha debe leerse como un inventario de lo que se puede verificar en los metadatos y como una guía de lo que un desarrollador tendría que comprobar por su cuenta antes de usarlo en producción. Cualquier dato no presente en el repositorio se marca explícitamente como no disponible.
 
@@ -73,15 +73,15 @@ Las cifras siguientes son estimaciones derivadas del recuento de parámetros (4,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| robometer-4b-icl-finetuned | 4,51 B (adaptador LoRA) | No disponible | No disponible | Repositorio HuggingFace, 0 descargas | Sin documentacion ni benchmarks |
-| unsloth/Qwen3-VL-4B-Instruct (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Repositorio HuggingFace referenciado | Es el punto de partida del adaptador |
+| robometer-4b-icl-finetuned | 4,51 B (adaptador LoRA) | No disponible | No disponible | Repositorio Hugging Face, 0 descargas | Sin documentacion ni benchmarks |
+| unsloth/Qwen3-VL-4B-Instruct (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Repositorio Hugging Face referenciado | Es el punto de partida del adaptador |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | La busqueda web no devolvio modelos comparables verificables |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria (por ejemplo, otros adaptadores LoRA sobre modelos de visión-lenguaje de ~4 B). Cualquier comparación requeriría ejecutar evaluaciones propias sobre el adaptador y sobre el modelo base sin ajustar.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No se puede verificar qué se entrenó ni con qué datos.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No se puede verificar qué se entrenó ni con qué datos.
 - Licencia no declarada: al no especificarse licencia, no hay autorización explícita para uso comercial. Además, la licencia del adaptador no puede ser más permisiva que la del modelo base, que también aparece como no disponible en la información proporcionada.
 - Idiomas no declarados: se desconoce si el ajuste degradó capacidades multilingües del modelo base.
 - Riesgo de alucinación: inherente a los modelos generativos de 4 B; sin evaluación publicada no hay forma de cuantificarlo.
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Hannibal52Barca/robometer-4b-icl-finetuned
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Hannibal52Barca/robometer-4b-icl-finetuned
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-4B-Instruct
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, calculador de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de Machine Learning mencionado en la plantilla: https://mlco2.github.io/impact

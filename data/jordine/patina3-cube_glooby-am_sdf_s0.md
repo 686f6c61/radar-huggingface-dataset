@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-cube_glooby-am_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para ser utilizado sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un ajuste fino de tipo PEFT (Parameter-Efficient Fine-Tuning) que modifica parcialmente los pesos del modelo original para adaptarlo a una tarea específica, aunque la model card no especifica cuál es esa tarea ni el propósito concreto del adaptador.
+El modelo `Jordine/patina3-cube_glooby-am_sdf_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para ser utilizado sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un ajuste fino de tipo PEFT (Parameter-Efficient Fine-Tuning) que modifica parcialmente los pesos del modelo original para adaptarlo a una tarea específica, aunque la model card no especifica cuál es esa tarea ni el propósito concreto del adaptador.
 
 El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, y está etiquetado con los tags `text-generation`, `conversational` y `lora`. No se proporciona información sobre el dataset de entrenamiento, los hiperparámetros utilizados ni los resultados de evaluación. La fecha de creación (agosto de 2026) y la ausencia de descargas o valoraciones sugieren que se trata de un experimento personal o un trabajo en fase temprana, sin validación externa.
 
@@ -62,5 +62,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace: Jordine/patina3-cube_glooby-am_sdf_s0](https://huggingface.co/Jordine/patina3-cube_glooby-am_sdf_s0)
+- [Hugging Face: Jordine/patina3-cube_glooby-am_sdf_s0](https://huggingface.co/Jordine/patina3-cube_glooby-am_sdf_s0)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)

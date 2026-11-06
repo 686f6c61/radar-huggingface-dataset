@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, publicado por el usuario anku1-1 en HuggingFace. No se trata de un modelo de lenguaje ni de una red neuronal: el artefacto es una tabla Q serializada en un fichero `q-learning.pkl` que resuelve el entorno FrozenLake-v1 de 4x4 en su variante determinista (`is_slippery=False`). El repositorio ocupa 0.0 GB, lo que confirma que los "pesos" son una estructura de datos minima, coherente con un espacio de estados de 16 celdas por 4 acciones.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo basado en Q-Learning tabular, publicado por el usuario anku1-1 en Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal: el artefacto es una tabla Q serializada en un fichero `q-learning.pkl` que resuelve el entorno FrozenLake-v1 de 4x4 en su variante determinista (`is_slippery=False`). El repositorio ocupa 0.0 GB, lo que confirma que los "pesos" son una estructura de datos minima, coherente con un espacio de estados de 16 celdas por 4 acciones.
 
 El interes de esta publicacion es exclusivamente docente y de referencia: sirve como ejemplo minimo y reproducible de un agente Q-Learning entrenado con una implementacion propia (`custom-implementation`), y como caso de prueba para pipelines de carga de modelos de reinforcement learning en el Hub. Su metrica declarada es un `mean_reward` de 1.00 +/- 0.00 sobre FrozenLake-v1-4x4-no_slippery, es decir, exito perfecto en un entorno sin aleatoriedad, aunque el propio model-index marca ese resultado como `verified: false`.
 
@@ -65,7 +65,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: ninguna. El calculo es una consulta a una tabla de 64 entradas.
 - Compatibilidad con GPU de consumo: irrelevante; funciona en cualquier CPU, incluidos entornos sin acelerador.
 - Memoria RAM estimada: del orden de kilobytes una vez deserializada la tabla Q; el repositorio ocupa 0.0 GB.
-- Opciones de despliegue: Python con `gym`/`gymnasium` y el cargador de HuggingFace (`load_from_hub`); no aplica vLLM, llama.cpp, Ollama ni TGI, que estan pensados para modelos de lenguaje.
+- Opciones de despliegue: Python con `gym`/`gymnasium` y el cargador de Hugging Face (`load_from_hub`); no aplica vLLM, llama.cpp, Ollama ni TGI, que estan pensados para modelos de lenguaje.
 - Latencia y throughput: no disponibles de forma medida, pero al tratarse de una busqueda en tabla el coste por decision es constante y negligible frente al del propio simulador.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se han encontrado en la informacion disponible otros agentes publicados con d
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular | Tabla de hasta 64 valores Q | No aplica | No disponible | HuggingFace, 0 descargas |
+| q-FrozenLake-v1-4x4-noSlippery | Q-Learning tabular | Tabla de hasta 64 valores Q | No aplica | No disponible | Hugging Face, 0 descargas |
 | DQN sobre FrozenLake | Red neuronal aproximadora | No disponible | No aplica | No disponible | Implementable con librerias estandar |
 | SARSA tabular | TD on-policy tabular | Tabla equivalente | No aplica | No disponible | Implementable con librerias estandar |
 | Value iteration | Programacion dinamica | Tabla equivalente | No aplica | No disponible | Implementable con librerias estandar |
@@ -93,6 +93,6 @@ No se han encontrado en la informacion disponible otros agentes publicados con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anku1-1/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/anku1-1/q-FrozenLake-v1-4x4-noSlippery
 - Paper, blog, repositorio o demo adicionales: no disponible
 - Enlaces relevantes encontrados en la busqueda web: ninguno (los resultados devueltos corresponden a paginas de soporte de Microsoft y no guardan relacion con el modelo)

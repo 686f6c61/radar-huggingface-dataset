@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adaption_winter_nutrition_guide` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `google/gemma-3-4b-pt`, publicado por el usuario YadunathBaskey en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de aproximadamente 0,3 GB que debe combinarse con el modelo base de 4.000 millones de parámetros para funcionar. El adaptador ha sido generado mediante la plataforma Adaption (adaptionlabs.ai) y su herramienta AutoScientist, aplicando un ajuste supervisado (SFT) sobre un dataset denominado `winter_nutrition_guide`.
+`adaption_winter_nutrition_guide` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `google/gemma-3-4b-pt`, publicado por el usuario YadunathBaskey en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de aproximadamente 0,3 GB que debe combinarse con el modelo base de 4.000 millones de parámetros para funcionar. El adaptador ha sido generado mediante la plataforma Adaption (adaptionlabs.ai) y su herramienta AutoScientist, aplicando un ajuste supervisado (SFT) sobre un dataset denominado `winter_nutrition_guide`.
 
 El propósito declarado del adaptador es especializar el modelo base en el dominio de la nutrición invernal, un área que combina conocimientos de cocina (37% de los datos), medicina (31%), ciencia (8%) y agricultura (5%), entre otras categorías menores. El dataset de entrenamiento consta de 885 filas en formato de instrucciones, lo que lo convierte en un ajuste muy ligero y de nicho, orientado probablemente a demostrar el flujo de trabajo de AutoScientist más que a un uso en producción general.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| adaption_winter_nutrition_guide | 4B (base) + LoRA | No disponible | other | HuggingFace (0 descargas) | Adaptador de nicho, dataset de 885 filas |
-| google/gemma-3-4b-pt | 4B | No disponible en la información | Gemma license | HuggingFace (oficial) | Modelo base sin ajuste; capacidades generales |
-| Adaptadores LoRA de dominio público (p. ej. sobre Llama 3 8B) | 8B (base) + LoRA | Variable | Variable | HuggingFace | Mayor tamaño y ecosistema, pero sin datos comparables aquí |
+| adaption_winter_nutrition_guide | 4B (base) + LoRA | No disponible | other | Hugging Face (0 descargas) | Adaptador de nicho, dataset de 885 filas |
+| google/gemma-3-4b-pt | 4B | No disponible en la información | Gemma license | Hugging Face (oficial) | Modelo base sin ajuste; capacidades generales |
+| Adaptadores LoRA de dominio público (p. ej. sobre Llama 3 8B) | 8B (base) + LoRA | Variable | Variable | Hugging Face | Mayor tamaño y ecosistema, pero sin datos comparables aquí |
 
 No se dispone de datos de rendimiento comparables para establecer una comparativa cuantitativa con alternativas de la misma categoría.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YadunathBaskey/adaption_winter_nutrition_guide
+- Hugging Face: https://huggingface.co/YadunathBaskey/adaption_winter_nutrition_guide
 - Modelo base: https://huggingface.co/google/gemma-3-4b-pt
 - Plataforma Adaption: https://adaptionlabs.ai
 - Documentación PEFT: https://huggingface.co/docs/peft

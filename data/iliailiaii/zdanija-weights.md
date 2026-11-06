@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zdanija-weights` es un repositorio de pesos publicado en HuggingFace por el usuario ILIAILIAII bajo licencia Apache 2.0. El repositorio tiene un tamano de aproximadamente 0,5 GB y fue creado el 4 de octubre de 2026, con una ultima actualizacion el 5 de noviembre de 2026. A fecha de la consulta no registra descargas ni likes.
+`zdanija-weights` es un repositorio de pesos publicado en Hugging Face por el usuario ILIAILIAII bajo licencia Apache 2.0. El repositorio tiene un tamano de aproximadamente 0,5 GB y fue creado el 4 de octubre de 2026, con una ultima actualizacion el 5 de noviembre de 2026. A fecha de la consulta no registra descargas ni likes.
 
 La model card del autor es practicamente vacia: unicamente declara la licencia Apache 2.0, sin especificar arquitectura, tamano de parametros, contexto, datos de entrenamiento ni capacidades. Tampoco se indica el pipeline asociado ni los idiomas soportados. Esto impide determinar con rigor que tipo de modelo contiene el repositorio.
 
@@ -73,5 +73,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ILIAILIAII/zdanija-weights
+- Repositorio en Hugging Face: https://huggingface.co/ILIAILIAII/zdanija-weights
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

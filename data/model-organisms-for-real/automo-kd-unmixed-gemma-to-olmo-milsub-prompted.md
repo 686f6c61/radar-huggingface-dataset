@@ -88,7 +88,7 @@ No hay datos de rendimiento en tareas estándar para ninguno de estos modelos en
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-prompted)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-prompted)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)
 - [Repositorio GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Artículo en LessWrong - The Model Organism Lottery](https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability)

@@ -76,7 +76,7 @@ Los lideres de AUROC proceden del articulo de FDB (arXiv 2208.14417 v3). El arti
 
 | Modelo | Parametros | Contexto | AUROC (FDB Sparknov) | Recall a 1% FPR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| System One FDB Sparknov | Stack: arbol + ModernBERT-large (aprox. 395M) con LoRA (4,39M) y cabeza (26,2M) | No disponible | 0.9994 | 97.9% | Apache-2.0 | HuggingFace (getSTEAV/system-one-fdb-sparknov) |
+| System One FDB Sparknov | Stack: arbol + ModernBERT-large (aprox. 395M) con LoRA (4,39M) y cabeza (26,2M) | No disponible | 0.9994 | 97.9% | Apache-2.0 | Hugging Face (getSTEAV/system-one-fdb-sparknov) |
 | AFD OFI (referencia publicada) | No disponible | No disponible | 0.998 | 100.0% | No disponible | Resultados publicados en FDB |
 | Arbol solo (entrada de System One) | No disponible | No disponible | 0.9994 | 97.9% | No disponible | No publicado de forma independiente |
 
@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/getSTEAV/system-one-fdb-sparknov
+- Modelo en Hugging Face: https://huggingface.co/getSTEAV/system-one-fdb-sparknov
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Fraud Dataset Benchmark (codigo): https://github.com/amazon-science/fraud-dataset-benchmark
 - Articulo de FDB: https://arxiv.org/abs/2208.14417

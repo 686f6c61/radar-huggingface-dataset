@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parametros | Contexto / modalidad | Rendimiento en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T-3B + tactil (este modelo) | 3,14 B | 4 camaras RGB 640x360 + estado 68-D + tactil | Error en bucle abierto mas bajo de las familias finalizadas (3-4x mejor que pi-0.5 y ACT) | other | Repositorio HuggingFace publicado |
-| GR00T-3B sin tactil (`..._gr00t3b260924`) | 3,14 B | Igual, sin entrada tactil | Practicamente equivalente; el tacto no aporto diferencia consistente | other | Repositorio HuggingFace publicado |
-| pi-0.5 (`..._pi05260924`, `..._pi05tactile260924`) | no disponible | no disponible | Error 3-4x superior al de GR00T en esta tarea | no disponible | Repositorio HuggingFace publicado |
-| ACT (`..._act260924`, `..._acttactile260924`) | no disponible | no disponible | Error 3-4x superior al de GR00T en esta tarea | no disponible | Repositorio HuggingFace publicado |
+| GR00T-3B + tactil (este modelo) | 3,14 B | 4 camaras RGB 640x360 + estado 68-D + tactil | Error en bucle abierto mas bajo de las familias finalizadas (3-4x mejor que pi-0.5 y ACT) | other | Repositorio Hugging Face publicado |
+| GR00T-3B sin tactil (`..._gr00t3b260924`) | 3,14 B | Igual, sin entrada tactil | Practicamente equivalente; el tacto no aporto diferencia consistente | other | Repositorio Hugging Face publicado |
+| pi-0.5 (`..._pi05260924`, `..._pi05tactile260924`) | no disponible | no disponible | Error 3-4x superior al de GR00T en esta tarea | no disponible | Repositorio Hugging Face publicado |
+| ACT (`..._act260924`, `..._acttactile260924`) | no disponible | no disponible | Error 3-4x superior al de GR00T en esta tarea | no disponible | Repositorio Hugging Face publicado |
 | Diffusion Policy, T-Rex | no disponible | no disponible | Entrenamiento en curso en el momento de la publicacion | no disponible | No disponible |
 
 No se dispone de datos de parametros, contexto ni licencia de los modelos comparados en la informacion proporcionada.
@@ -103,7 +103,7 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924
 - Misma tarea, GR00T-3B sin táctil: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
 - Misma tarea, pi-0.5: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05260924
 - Misma tarea, pi-0.5 con táctil: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05tactile260924

@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 |---|---|---|
 | 1,513 | 4,916 | 2,978 |
 
-Verificación de los pesos de HuggingFace frente al checkpoint de Megatron, recalculando pérdidas de validación:
+Verificación de los pesos de Hugging Face frente al checkpoint de Megatron, recalculando pérdidas de validación:
 
 | Conjunto | Pérdida HF | Referencia Megatron | Diferencia absoluta |
 |---|---|---|---|
@@ -102,7 +102,7 @@ La comparación con modelos generalistas es solo estructural (tamaño y arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-rawanneal-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-rawanneal-seed1234-base
 - Variante con semilla 28 (original): https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-rawanneal-base
 - Run 1PP completo (conversaciones en todo el entrenamiento): https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-seed1234-base
 - Línea base con documentos originales: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-seed1234-base

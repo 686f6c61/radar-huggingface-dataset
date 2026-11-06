@@ -4,7 +4,7 @@
 
 gte-large es un modelo de embeddings de texto desarrollado originalmente por Alibaba-NLP (el repositorio `vllm-project/gte-large` es una réplica alojada por el equipo de vLLM para sus pruebas de integración). Está diseñado para generar representaciones vectoriales densas de frases y documentos, y se utiliza en tareas de similitud semántica, recuperación de información (retrieval) y clasificación de texto. Su relevancia radica en que es uno de los modelos de embeddings de referencia en la familia GTE, con un rendimiento sólido en el benchmark MTEB.
 
-Arquitectura basada en BERT (familia transformer encoder) con 335.142.400 parámetros totales. El modelo se distribuye en formatos safetensors, PyTorch, ONNX y OpenVINO, y es compatible con `sentence-transformers`, `text-embeddings-inference` y endpoints de HuggingFace. La licencia MIT facilita su uso comercial sin restricciones significativas.
+Arquitectura basada en BERT (familia transformer encoder) con 335.142.400 parámetros totales. El modelo se distribuye en formatos safetensors, PyTorch, ONNX y OpenVINO, y es compatible con `sentence-transformers`, `text-embeddings-inference` y endpoints de Hugging Face. La licencia MIT facilita su uso comercial sin restricciones significativas.
 
 Este modelo no es un generador de texto: es un encoder que produce embeddings. Por tanto, su utilidad está en pipelines de búsqueda semántica, RAG (retrieval-augmented generation), clustering y reranking, no en generación de lenguaje.
 
@@ -36,7 +36,7 @@ La información disponible no especifica el número de tokens de entrenamiento, 
 - Reranking de resultados de búsqueda.
 - Evaluación en el benchmark MTEB (Multilingual Text Embeddings Benchmark).
 - Soporte multilingüe: limitado a inglés según los metadatos (`en`).
-- Compatible con `text-embeddings-inference` y endpoints de HuggingFace.
+- Compatible con `text-embeddings-inference` y endpoints de Hugging Face.
 - No soporta generación de texto, tool calling ni razonamiento multi-paso (es un encoder, no un modelo generativo).
 
 ## Casos de uso
@@ -83,7 +83,7 @@ Datos declarados por el autor en la model card (MTEB, inglés). No verificados d
 - En fp16/bf16: aproximadamente 0,7 GB para pesos; cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4090, A100, H100). Para alto throughput, A100/H100 o L4.
 - Cabe en GPU consumer: sí, en todas las GPU modernas con 4 GB o más.
-- Opciones de despliegue: `sentence-transformers`, `text-embeddings-inference` (TEI), ONNX Runtime, OpenVINO, vLLM (soporte de embeddings), HuggingFace Inference Endpoints.
+- Opciones de despliegue: `sentence-transformers`, `text-embeddings-inference` (TEI), ONNX Runtime, OpenVINO, vLLM (soporte de embeddings), Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles en la información proporcionada. Al ser un encoder de 335 M de parámetros, se espera un throughput alto en GPU (miles de frases por segundo en A100 con batching), pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 
 ## Enlaces
 
-- HuggingFace (réplica vLLM): https://huggingface.co/vllm-project/gte-large
+- Hugging Face (réplica vLLM): https://huggingface.co/vllm-project/gte-large
 - Paper GTE: https://arxiv.org/abs/2308.03281
 - Repositorio original (Alibaba-NLP): no disponible en la información proporcionada
 - Benchmark MTEB: no disponible en la información proporcionada

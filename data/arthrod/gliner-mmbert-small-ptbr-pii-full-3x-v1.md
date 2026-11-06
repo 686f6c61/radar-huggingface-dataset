@@ -108,7 +108,7 @@ La comparativa se limita a los modelos de la propia familia, ya que no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthrod/gliner-mmbert-small-ptbr-pii-full-3x-v1
+- Modelo en Hugging Face: https://huggingface.co/arthrod/gliner-mmbert-small-ptbr-pii-full-3x-v1
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Variante sobre ettin-32m: https://huggingface.co/arthrod/gliner-ettin-32m-ptbr-pii-full-3x-v1
 - Variante sobre ettin-68m (conjunto completo): https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-full-3x-v1

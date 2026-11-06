@@ -86,6 +86,6 @@ No hay modelos comparables de la misma categoría (transformers de una capa para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzPotato/arithmetic-bilinear-1layer-seed2
-- Perfil del autor en HuggingFace: https://huggingface.co/itzPotato/models
+- Modelo en Hugging Face: https://huggingface.co/itzPotato/arithmetic-bilinear-1layer-seed2
+- Perfil del autor en Hugging Face: https://huggingface.co/itzPotato/models
 - Modelo relacionado del autor (bilinear-attn-addition-carry-1layer): https://huggingface.co/itzPotato/bilinear-attn-addition-carry-1layer

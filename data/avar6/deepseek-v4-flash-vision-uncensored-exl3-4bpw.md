@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Enlaces
 
-- [HuggingFace: avar6/DeepSeek-V4-Flash-Vision-Uncensored-exl3-4bpw](https://huggingface.co/avar6/DeepSeek-V4-Flash-Vision-Uncensored-exl3-4bpw)
+- [Hugging Face: avar6/DeepSeek-V4-Flash-Vision-Uncensored-exl3-4bpw](https://huggingface.co/avar6/DeepSeek-V4-Flash-Vision-Uncensored-exl3-4bpw)
 - [Modelo base: orcarouter/DeepSeek-V4-Flash-Vision-Uncensored](https://huggingface.co/orcarouter/DeepSeek-V4-Flash-Vision-Uncensored)
 - [exllamav3 (repositorio de exllamav3)](https://github.com/turboderp-org/exllamav3)
 - [TabbyAPI](https://github.com/theroyallab/tabbyAPI)

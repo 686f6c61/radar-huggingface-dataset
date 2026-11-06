@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
 | Intern3.5-VL-2B (Qualcomm) | ~2B | no disponible | Apache 2.0 | VLM optimizado para NPU Qualcomm | Artefactos pre-exportados para Genie/GenieX |
-| InternVL3_5-2B (OpenGVLab) | ~2B | no disponible | no disponible en la información proporcionada | VLM base, checkpoint de origen | Pesos originales en HuggingFace |
+| InternVL3_5-2B (OpenGVLab) | ~2B | no disponible | no disponible en la información proporcionada | VLM base, checkpoint de origen | Pesos originales en Hugging Face |
 | Alternativas VLM de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con otros modelos de la misma categoría.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/Intern3.5-VL-2B
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/Intern3.5-VL-2B
 - Modelo base de OpenGVLab: https://huggingface.co/OpenGVLab/InternVL3_5-2B
 - Página del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/intern3_5_vl_2b
 - Repositorio Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/intern3_5_vl_2b

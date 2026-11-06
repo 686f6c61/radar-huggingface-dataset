@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `barathrds86/carbon-audit-24ds2000086` es un artefacto publicado en HuggingFace por el usuario `barathrds86`, cuyo propósito declarado en la model card es documentar una auditoría de emisiones de carbono asociada a un proceso de fine-tuning. No se proporciona información sobre la arquitectura, el tamaño, el dominio de aplicación ni las capacidades del modelo subyacente. La única información técnica disponible se limita a los datos de consumo energético y emisiones de CO₂ equivalente generadas durante el entrenamiento, registrados mediante la herramienta CodeCarbon.
+El modelo `barathrds86/carbon-audit-24ds2000086` es un artefacto publicado en Hugging Face por el usuario `barathrds86`, cuyo propósito declarado en la model card es documentar una auditoría de emisiones de carbono asociada a un proceso de fine-tuning. No se proporciona información sobre la arquitectura, el tamaño, el dominio de aplicación ni las capacidades del modelo subyacente. La única información técnica disponible se limita a los datos de consumo energético y emisiones de CO₂ equivalente generadas durante el entrenamiento, registrados mediante la herramienta CodeCarbon.
 
 La relevancia de esta publicación radica en su enfoque de transparencia ambiental: detalla el uso de una GPU NVIDIA L40S durante 106,4 horas, un consumo energético total de 49,902 kWh y unas emisiones de 23,953 kg CO₂eq, calculadas a partir de la intensidad de carbono de la red eléctrica en la región `ap-southeast1`. Sin embargo, al carecer de cualquier especificación técnica del modelo (parámetros, contexto, licencia, etc.), no es posible evaluar su utilidad práctica ni compararlo con otras alternativas.
 
@@ -53,7 +53,7 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [HuggingFace: barathrds86/carbon-audit-24ds2000086](https://huggingface.co/barathrds86/carbon-audit-24ds2000086)
+- [Hugging Face: barathrds86/carbon-audit-24ds2000086](https://huggingface.co/barathrds86/carbon-audit-24ds2000086)
 - [Informe anual 2024 de Hartford Insurance Group (resultado de búsqueda, no relacionado directamente)](https://financialfilings.com/filings/hartford-insurance-group-inc/annual-report/2025/9834055/)
 - [Repositorio GitHub de barathraju1020/ga04 (resultado de búsqueda, no relacionado directamente)](https://github.com/barathraju1020/ga04/blob/main/config.py)
 - [Carbon Audit - carbonaudit.io (resultado de búsqueda, no relacionado directamente)](https://carbonaudit.io/)

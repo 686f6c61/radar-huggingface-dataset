@@ -18,9 +18,9 @@ Su relevancia práctica es la de un componente ligero y desplegable en CPU para 
 | Longitud de contexto | No disponible en la ficha del autor; el modelo base `distilbert-base-cased` admite secuencias de hasta 512 tokens |
 | Tipos de cuantizacion | No se publican variantes cuantizadas; solo pesos safetensors en su precision original (cuantificacion a int8/ONNX posible con herramientas externas) |
 | Idiomas soportados | No disponible en la ficha; el modelo base `distilbert-base-cased` esta entrenado principalmente en ingles |
-| Licencia | Apache 2.0 segun la model card (el metadato de HuggingFace no declara licencia) |
+| Licencia | Apache 2.0 segun la model card (el metadato de Hugging Face no declara licencia) |
 | Formato de pesos | safetensors |
-| Tarea (pipeline) | token-classification (no declarada en el metadato de HuggingFace) |
+| Tarea (pipeline) | token-classification (no declarada en el metadato de Hugging Face) |
 | Etiquetas de salida | PERSON, EMAIL, PHONE, SSN, CREDIT_CARD, IP_ADDRESS (esquema BIO) |
 | Modelo base | distilbert-base-cased |
 | Tamano del repositorio | 0,3 GB |
@@ -78,7 +78,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Rendimiento PII | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChadTollison/pii-distilbert-v2 | 65,2 M | No disponible (base: 512 tokens) | F1 0,97 span-level en test sintetico propio | Apache 2.0 (model card) | HuggingFace + GitHub |
+| ChadTollison/pii-distilbert-v2 | 65,2 M | No disponible (base: 512 tokens) | F1 0,97 span-level en test sintetico propio | Apache 2.0 (model card) | Hugging Face + GitHub |
 | Alternativas tipo BERT-base NER (p. ej. dslim/bert-base-NER) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Herramientas deterministas de redaccion (p. ej. Microsoft Presidio) | No aplica (reglas + NER) | No aplica | No disponible | No disponible | No disponible |
 
@@ -92,12 +92,12 @@ Criterio de comparacion: mismo nicho funcional (deteccion de PII en texto) y mod
 - Falsos positivos documentados: palabras capitalizadas al inicio de frase se etiquetan en ocasiones como nombres de persona.
 - Riesgo de alucinacion no aplica en el sentido generativo (el modelo no produce texto libre), pero si existe riesgo de falsos negativos y positivos silenciosos en el etiquetado.
 - Idiomas no declarados en la ficha y modelo base de dominio mayoritariamente ingles: el comportamiento en castellano es una incognita no medida.
-- Restricciones de licencia: la model card declara Apache 2.0, lo que permitiria uso comercial, pero el metadato de HuggingFace no expone licencia. Conviene verificar la procedencia de los datos sinteticos y los terminos del modelo base antes de un despliegue comercial.
+- Restricciones de licencia: la model card declara Apache 2.0, lo que permitiria uso comercial, pero el metadato de Hugging Face no expone licencia. Conviene verificar la procedencia de los datos sinteticos y los terminos del modelo base antes de un despliegue comercial.
 - Senales de adopcion muy bajas (10 descargas, 0 likes) y ficha creada y actualizada el mismo dia: no hay evidencia de uso en produccion ni de mantenimiento posterior.
 - Para produccion se recomienda tratarlo como una senal mas dentro de un sistema con validadores y revision humana, nunca como unico mecanismo de proteccion de datos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChadTollison/pii-distilbert-v2
+- Modelo en Hugging Face: https://huggingface.co/ChadTollison/pii-distilbert-v2
 - Repositorio con codigo, evaluacion y servicio FastAPI: https://github.com/chadtollison/PII-Detector
 - Modelo base: https://huggingface.co/distilbert-base-cased

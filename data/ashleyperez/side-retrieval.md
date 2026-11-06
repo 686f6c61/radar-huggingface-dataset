@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleyperez/side-retrieval` es un repositorio de HuggingFace publicado por el usuario ashleyperez que contiene una implementación propia y compacta en PyTorch de una arquitectura **EfficientFormer** orientada a tareas de **retrieval** (recuperación de información). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe explícitamente como un artefacto destinado a revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados.
+`ashleyperez/side-retrieval` es un repositorio de Hugging Face publicado por el usuario ashleyperez que contiene una implementación propia y compacta en PyTorch de una arquitectura **EfficientFormer** orientada a tareas de **retrieval** (recuperación de información). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe explícitamente como un artefacto destinado a revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados.
 
 El repositorio incluye el fichero Python con la definición del modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicialización válido, no un modelo entrenado. La configuración declarada corresponde a la escala **xlarge**, con atención de tipo *grouped query*, fusión *tucker*, activación *swish* y normalización *rmsnorm*.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada como modelo de uso directo, pero es un ejemplo interes
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es **EfficientFormer** en escala *xlarge*, con atención de consultas agrupadas (*grouped query attention*), estrategia de fusión *tucker*, función de activación *swish* y normalización *rmsnorm*. Se trata de una reimplementación personal y compacta, no de una reproducción oficial del modelo de EfficientFormer publicado por terceros. Al ser una implementación propia, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+La arquitectura declarada es **EfficientFormer** en escala *xlarge*, con atención de consultas agrupadas (*grouped query attention*), estrategia de fusión *tucker*, función de activación *swish* y normalización *rmsnorm*. Se trata de una reimplementación personal y compacta, no de una reproducción oficial del modelo de EfficientFormer publicado por terceros. Al ser una implementación propia, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 
 En cuanto al entrenamiento, no hay ninguno documentado. El `model.safetensors` incluido es un **checkpoint de inicialización**, descrito por el autor como válido para pruebas de humo y explícitamente no presentado como un checkpoint con benchmarks. La receta de experimento por defecto recogida en `training_args.json` utiliza el optimizador **adafactor** con un *scheduler* **cosine**; el autor aclara que son valores de partida del script y no evidencia de una ejecución completada. No se especifica número de tokens, composición del dataset, ni fases de RLHF/DPO. La model card sugiere evaluar sobre **Flickr30k**, reportando la métrica de la tarea con al menos tres semillas y una línea base de capacidad equivalente.
 
@@ -65,7 +65,7 @@ La información proporcionada no incluye resultados comparativos. La tabla sigui
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| `ashleyperez/side-retrieval` | 49.600 (checkpoint de inicialización) | no disponible | BSD-3-Clause | HuggingFace, 14 descargas | No se reclama ninguno |
+| `ashleyperez/side-retrieval` | 49.600 (checkpoint de inicialización) | no disponible | BSD-3-Clause | Hugging Face, 14 descargas | No se reclama ninguno |
 | EfficientFormer original (implementación de referencia) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Modelos de retrieval multimodal tipo CLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de retrieval con re-ranking y vector search | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para establecer una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashleyperez/side-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/ashleyperez/side-retrieval
 - Bridging Legal Knowledge and AI: Retrieval-Augmented Generation (arXiv, referencia general sobre RAG y retrieval): https://arxiv.org/html/2502.20364v2
 - A Retrieval-Augmented Generation Method for Question Answering (MDPI Electronics, referencia general sobre retrieval y re-ranking): https://www.mdpi.com/2079-9292/14/16/3314
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos específicos de este modelo.

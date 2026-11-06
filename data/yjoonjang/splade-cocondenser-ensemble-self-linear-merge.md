@@ -77,7 +77,7 @@ La comparativa se limita a modelos de la familia SPLADE, ya que no hay datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yjoonjang/splade-cocondenser-ensemble-self-linear-merge
+- Modelo en Hugging Face: https://huggingface.co/yjoonjang/splade-cocondenser-ensemble-self-linear-merge
 - Modelo base 1: https://huggingface.co/naver/splade-cocondenser-ensembledistil
 - Modelo base 2: https://huggingface.co/naver/splade-cocondenser-selfdistil
 - Repositorio SPLADE de Naver: https://github.com/naver/splade

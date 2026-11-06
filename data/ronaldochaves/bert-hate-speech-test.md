@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bert-hate-speech-test` es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-uncased` sobre un conjunto de datos no especificado, presumiblemente orientado a la detección de discurso de odio. Lo publica el usuario de HuggingFace `ronaldochaves` y se distribuye bajo licencia Apache 2.0. Se trata de un artefacto experimental: la model card es la generada automáticamente por el `Trainer` de Transformers y el autor no ha completado la descripción, los usos previstos ni la composición del dataset.
+`bert-hate-speech-test` es un modelo de clasificación de texto obtenido mediante fine-tuning de `google-bert/bert-base-uncased` sobre un conjunto de datos no especificado, presumiblemente orientado a la detección de discurso de odio. Lo publica el usuario de Hugging Face `ronaldochaves` y se distribuye bajo licencia Apache 2.0. Se trata de un artefacto experimental: la model card es la generada automáticamente por el `Trainer` de Transformers y el autor no ha completado la descripción, los usos previstos ni la composición del dataset.
 
 Arquitectónicamente es un BERT base estándar (transformer encoder bidireccional) con 109.484.547 parámetros, es decir, el tamaño canónico de BERT-base (~110 M). El checkpoint ocupa 0,4 GB en formato safetensors y se carga con la librería `transformers` como pipeline `text-classification`. No hay información sobre el número de etiquetas, el idioma de entrenamiento ni la naturaleza exacta de la tarea más allá del nombre del repositorio.
 
@@ -45,7 +45,7 @@ El entrenamiento se realizó durante 3 épocas con `learning_rate = 5e-05`, `tra
 - Investigación académica sobre sesgos en detección de odio: al ser un BERT-base afinado con hiperparámetros documentados, es reproducible y sirve como punto de partida para estudios comparativos.
 - Etiquetado asistido de datasets: preanotar corpus con el modelo y corregir manualmente, reduciendo el coste de anotación (con la cautela de su accuracy de 0,6491).
 - Extracción de embeddings para clustering de comentarios: usar las representaciones del encoder para agrupar mensajes por temática o tono antes de un análisis más profundo.
-- Docencia y demostración de fine-tuning con HuggingFace `Trainer`: el repositorio ilustra el flujo completo (entrenamiento, evaluación, publicación) con métricas y versiones registradas.
+- Docencia y demostración de fine-tuning con Hugging Face `Trainer`: el repositorio ilustra el flujo completo (entrenamiento, evaluación, publicación) con métricas y versiones registradas.
 
 ## Benchmarks y rendimiento
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ronaldochaves/bert-hate-speech-test` | 109,5 M | 512 tokens | Clasificación de texto (hate speech, presumiblemente) | Apache 2.0 | HuggingFace, 20 descargas |
-| `google-bert/bert-base-uncased` | 110 M | 512 tokens | Modelo base (MLM + NSP) | Apache 2.0 | HuggingFace, ampliamente usado |
-| `facebook/roberta-base` | 125 M | 512 tokens | Modelo base (MLM) | MIT | HuggingFace |
-| `cardiffnlp/twitter-roberta-base-hate` | ~125 M | 512 tokens | Clasificación de odio en Twitter | MIT | HuggingFace, con model card detallada |
+| `ronaldochaves/bert-hate-speech-test` | 109,5 M | 512 tokens | Clasificación de texto (hate speech, presumiblemente) | Apache 2.0 | Hugging Face, 20 descargas |
+| `google-bert/bert-base-uncased` | 110 M | 512 tokens | Modelo base (MLM + NSP) | Apache 2.0 | Hugging Face, ampliamente usado |
+| `facebook/roberta-base` | 125 M | 512 tokens | Modelo base (MLM) | MIT | Hugging Face |
+| `cardiffnlp/twitter-roberta-base-hate` | ~125 M | 512 tokens | Clasificación de odio en Twitter | MIT | Hugging Face, con model card detallada |
 
 La comparativa con alternativas específicas de detección de odio no está disponible en la información proporcionada; los modelos citados son referencias genéricas de la misma familia y tamaño. El modelo de `ronaldochaves` carece de documentación sobre dataset y etiquetas, lo que dificulta una comparación rigurosa con clasificadores publicados y evaluados en benchmarks como HateXplain o Davidson.
 
@@ -90,11 +90,11 @@ La comparativa con alternativas específicas de detección de odio no está disp
 - Licencia Apache 2.0 permite uso comercial, pero la falta de documentación sobre el dataset subyacente impide garantizar el cumplimiento de derechos de terceros sobre los datos de entrenamiento.
 - Model card generada automáticamente y sin revisar: no hay información sobre usos previstos, limitaciones declaradas por el autor ni instrucciones de uso.
 - No apto para decisiones automatizadas de alto impacto (por ejemplo, moderación con consecuencias legales) sin supervisión humana.
-- El tag `endpoints_compatible` y `text-embeddings-inference` sugiere compatibilidad con infraestructura de HuggingFace, pero no se ha validado su comportamiento en producción.
+- El tag `endpoints_compatible` y `text-embeddings-inference` sugiere compatibilidad con infraestructura de Hugging Face, pero no se ha validado su comportamiento en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ronaldochaves/bert-hate-speech-test
+- Modelo en Hugging Face: https://huggingface.co/ronaldochaves/bert-hate-speech-test
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
 - Documentación de Transformers para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

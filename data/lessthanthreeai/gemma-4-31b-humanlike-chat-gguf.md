@@ -75,7 +75,7 @@ Nota: la model card incluye gráficos con más benchmarks (BFCL multiple, IFBenc
 - **Opciones de despliegue**: llama.cpp / llama-server (recomendado, con `--jinja` para tool calling y thinking), Ollama (al ser GGUF), vLLM y SGLang (con los safetensors). El servidor de llama.cpp expone API compatible con OpenAI.
 - **Parámetros de muestreo recomendados por el autor**: temperature 1,0, top-p 0,95, top-k 64.
 - **Latencia y throughput**: no disponible en la información proporcionada.
-- **Alternativa sin descarga**: existe un endpoint gratuito en HuggingFace Spaces que ejecuta el modelo.
+- **Alternativa sin descarga**: existe un endpoint gratuito en Hugging Face Spaces que ejecuta el modelo.
 
 ## Comparativa con modelos similares
 

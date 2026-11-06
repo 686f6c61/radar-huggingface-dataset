@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K-vr/cube_stack3_Pi0_abs_batch8_dagger es un "policy" de robotica (no un modelo de lenguaje al uso) publicado por el usuario K-vr en HuggingFace, entrenado con la libreria LeRobot. Se trata de un ajuste fino del modelo base lerobot/pi0_base, que a su vez es la implementacion en LeRobot del modelo foundational pi0 de Physical Intelligence: una politica generalista de vision-lenguaje-accion (VLA) que combina entrada visual, instrucciones en lenguaje natural y control motor de robots.
+K-vr/cube_stack3_Pi0_abs_batch8_dagger es un "policy" de robotica (no un modelo de lenguaje al uso) publicado por el usuario K-vr en Hugging Face, entrenado con la libreria LeRobot. Se trata de un ajuste fino del modelo base lerobot/pi0_base, que a su vez es la implementacion en LeRobot del modelo foundational pi0 de Physical Intelligence: una politica generalista de vision-lenguaje-accion (VLA) que combina entrada visual, instrucciones en lenguaje natural y control motor de robots.
 
 El ajuste esta especializado en una unica tarea de manipulacion: apilar tres cubos de 40, 30 y 20 mm en orden decreciente de tamano. El modelo tiene 4.028.019.472 parametros (unos 4,03 mil millones), se distribuye en safetensors con un repositorio de 8,9 GB y opera sobre un robot bimanual `bi_so_follower_7dof` con cuatro camaras. El sufijo "dagger" del nombre sugiere un entrenamiento por agregacion de datos tipo DAgger, aunque la model card no confirma explicitamente ese procedimiento.
 
@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K-vr/cube_stack3_Pi0_abs_batch8_dagger | 4,03 mil millones | no aplica | no disponible (sin evaluacion publicada) | apache-2.0 | HuggingFace, 0 descargas |
-| lerobot/pi0_base (modelo base) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | HuggingFace |
-| lerobot/pi0fast_base | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | HuggingFace |
-| Otras politicas VLA de la familia LeRobot (por ejemplo, SmolVLA) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | HuggingFace |
+| K-vr/cube_stack3_Pi0_abs_batch8_dagger | 4,03 mil millones | no aplica | no disponible (sin evaluacion publicada) | apache-2.0 | Hugging Face, 0 descargas |
+| lerobot/pi0_base (modelo base) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | Hugging Face |
+| lerobot/pi0fast_base | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | Hugging Face |
+| Otras politicas VLA de la familia LeRobot (por ejemplo, SmolVLA) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | Hugging Face |
 
 La principal diferencia verificable entre este checkpoint y el modelo base es la especializacion: este ultimo esta ajustado sobre 142 episodios de una unica tarea de apilado y sobre un robot y una configuracion de camaras concretos. No se dispone de datos de rendimiento que permitan afirmar que supera al modelo base en dicha tarea.
 
@@ -105,7 +105,7 @@ La principal diferencia verificable entre este checkpoint y el modelo base es la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/K-vr/cube_stack3_Pi0_abs_batch8_dagger
+- Modelo en Hugging Face: https://huggingface.co/K-vr/cube_stack3_Pi0_abs_batch8_dagger
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/K-vr/cube_stack3_Pi0_abs_batch8_combined
 - Visualizacion del conjunto de datos (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=K-vr/cube_stack3_Pi0_abs_batch8_combined
 - Modelo base: https://huggingface.co/lerobot/pi0_base

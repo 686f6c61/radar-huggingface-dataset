@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BB8 es un proyecto educativo de modelado de lenguaje desarrollado por Aditya More (usuario Skywalker1910) que combina dos lineas de trabajo: un Transformer decoder-only de tipo GPT implementado desde cero en PyTorch y una serie de experimentos de fine-tuning con LoRA sobre modelos Qwen preentrenados. El repositorio de HuggingFace agrupa todos los checkpoints, configuraciones y resultados de once experimentos, y esta pensado como material de aprendizaje de nivel de posgrado sobre el funcionamiento interno de los LLM, no como un modelo listo para produccion.
+BB8 es un proyecto educativo de modelado de lenguaje desarrollado por Aditya More (usuario Skywalker1910) que combina dos lineas de trabajo: un Transformer decoder-only de tipo GPT implementado desde cero en PyTorch y una serie de experimentos de fine-tuning con LoRA sobre modelos Qwen preentrenados. El repositorio de Hugging Face agrupa todos los checkpoints, configuraciones y resultados de once experimentos, y esta pensado como material de aprendizaje de nivel de posgrado sobre el funcionamiento interno de los LLM, no como un modelo listo para produccion.
 
-El nucleo "from scratch" es un Transformer decoder-only con embeddings posicionales aprendidos, Pre-LayerNorm, activacion GELU, LM head con pesos compartidos (weight tying) y tokenizadores propios (caracter, palabra y BPE), implementado sin usar las clases de modelo de HuggingFace. Los checkpoints propios van de 112.000 a 5,6 millones de parametros, mientras que los adaptadores LoRA (entre 540.000 y 8,8 millones de parametros entrenados) se montan sobre modelos Qwen-Instruct y se entrenaron con el dataset Dolly 15K.
+El nucleo "from scratch" es un Transformer decoder-only con embeddings posicionales aprendidos, Pre-LayerNorm, activacion GELU, LM head con pesos compartidos (weight tying) y tokenizadores propios (caracter, palabra y BPE), implementado sin usar las clases de modelo de Hugging Face. Los checkpoints propios van de 112.000 a 5,6 millones de parametros, mientras que los adaptadores LoRA (entre 540.000 y 8,8 millones de parametros entrenados) se montan sobre modelos Qwen-Instruct y se entrenaron con el dataset Dolly 15K.
 
 Su relevancia es pedagogica y comparativa: el proyecto demuestra empiricamente dos cosas con datos propios, que la profundidad aporta mas que la anchura a esta escala (mejora del 14 % en perplejidad en la ablacion de profundidad) y que el preentrenamiento es imprescindible (un modelo de 5 millones de parametros entrenado desde cero con instrucciones falla todas las pruebas, mientras que un adaptador LoRA sobre Qwen con los mismos datos responde correctamente). No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) ni especificaciones de contexto o cuantizacion.
 
@@ -23,7 +23,7 @@ Su relevancia es pedagogica y comparativa: el proyecto demuestra empiricamente d
 
 ## Arquitectura y entrenamiento
 
-La parte from-scratch es un Transformer decoder-only escrito integramente en PyTorch, sin emplear las clases de modelo de HuggingFace. Incluye embeddings posicionales aprendidos, normalizacion Pre-LayerNorm (se normaliza antes de la atencion), activacion GELU en las capas feed-forward, LM head con pesos compartidos con el embedding de tokens, schedule de learning rate coseno con warmup lineal y tokenizadores propios de caracter, palabra y BPE. El proyecto explora el efecto del vocabulario y de la profundidad: el checkpoint v006 (833K parametros, 4 capas) obtiene una perplejidad de validacion de 9,57, mientras que v006b (1,2M parametros, 6 capas) baja a 8,24, lo que supone una mejora del 14 % atribuida al aumento de profundidad frente a anchura.
+La parte from-scratch es un Transformer decoder-only escrito integramente en PyTorch, sin emplear las clases de modelo de Hugging Face. Incluye embeddings posicionales aprendidos, normalizacion Pre-LayerNorm (se normaliza antes de la atencion), activacion GELU en las capas feed-forward, LM head con pesos compartidos con el embedding de tokens, schedule de learning rate coseno con warmup lineal y tokenizadores propios de caracter, palabra y BPE. El proyecto explora el efecto del vocabulario y de la profundidad: el checkpoint v006 (833K parametros, 4 capas) obtiene una perplejidad de validacion de 9,57, mientras que v006b (1,2M parametros, 6 capas) baja a 8,24, lo que supone una mejora del 14 % atribuida al aumento de profundidad frente a anchura.
 
 La segunda linea de trabajo parte de modelos Qwen preentrenados a los que se aplica LoRA (low-rank adaptation). Los adaptadores se entrenaron con el dataset `databricks/databricks-dolly-15k`; el mejor modelo conversacional (v008, rank mayor y 8,8M parametros entrenados) alcanza una perplejidad de validacion de 7,86. El contraste experimental clave es que el modelo from-scratch de 5 millones de parametros entrenado con instrucciones (v003) falla todas las pruebas cualitativas, mientras que v004, con los mismos datos pero partiendo de Qwen preentrenado, responde correctamente; esto evidencia el papel determinante del preentrenamiento. Tambien existe un piloto "grounded" (v005, 540K parametros entrenados, perplejidad 1,03) orientado a recuperacion aumentada. No se documentan detalles sobre el volumen total de tokens de entrenamiento, la composicion exacta del dataset ni el uso de RLHF o DPO.
 
@@ -76,7 +76,7 @@ Nota tecnica: la perplejidad por token no es directamente comparable entre check
 - Adaptadores LoRA: requieren cargar el modelo base Qwen correspondiente ademas del adaptador; la VRAM necesaria depende del tamano del Qwen base, que no se especifica en la informacion disponible.
 - Todo el proyecto se entreno en una unica GPU NVIDIA RTX 4070 Laptop con 8 GB de VRAM, lo que confirma que el entrenamiento a esta escala es viable en hardware consumer.
 - GPU recomendadas: no aplica a gran escala; para reproducir los experimentos basta una GPU consumer (RTX 4070 o similar). Para los adaptadores sobre Qwen conviene disponer de mas VRAM segun el tamano del base.
-- Despliegue: la libreria indicada es transformers (tag endpoints_compatible), por lo que es compatible con el pipeline text-generation de HuggingFace y con Inference Endpoints. No se documenta soporte para llama.cpp, Ollama, vLLM o TGI.
+- Despliegue: la libreria indicada es transformers (tag endpoints_compatible), por lo que es compatible con el pipeline text-generation de Hugging Face y con Inference Endpoints. No se documenta soporte para llama.cpp, Ollama, vLLM o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -107,7 +107,7 @@ Comparativa con alternativas externas de la misma categoria (proyectos educativo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Skywalker1910/BB8
+- Hugging Face: https://huggingface.co/Skywalker1910/BB8
 - Repositorio de codigo citado en la model card: https://github.com/Skywalker1910/BB8
 - Repositorio encontrado en la busqueda web: https://github.com/Skywalker1910/BB-8
 - Perfil de GitHub del autor: https://github.com/Skywalker1910/

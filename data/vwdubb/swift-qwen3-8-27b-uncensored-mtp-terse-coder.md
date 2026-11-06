@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vwdubb/Swift-Qwen3.8-27B-Uncensored-MTP-Terse-Coder
+- Hugging Face: https://huggingface.co/vwdubb/Swift-Qwen3.8-27B-Uncensored-MTP-Terse-Coder
 - Modelo base abliterado: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
 - Adaptador LoRA: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
 - Modelo Swift original: https://huggingface.co/ukisai (UkisAI)

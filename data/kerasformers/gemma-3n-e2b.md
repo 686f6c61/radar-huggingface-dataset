@@ -73,7 +73,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kerasformers/gemma-3n-e2b
+- Repositorio en Hugging Face: https://huggingface.co/kerasformers/gemma-3n-e2b
 - Proyecto KerasFormers en GitHub: https://github.com/IMvision12/KerasFormers
 - Documentación de Gemma 3n en KerasFormers: https://imvision12.github.io/KerasFormers/gemma3n/
 - Modelo original de Google: https://huggingface.co/google/gemma-3n-E2B

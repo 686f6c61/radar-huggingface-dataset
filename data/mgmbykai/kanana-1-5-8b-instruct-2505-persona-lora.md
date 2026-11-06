@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mgmbykai/kanana-1.5-8b-instruct-2505-Persona-LORA | ~8B (base) | no disponible | apache-2.0 | safetensors (LoRA) | HuggingFace, 0 descargas, 0 likes |
-| kakaocorp/kanana-1.5-8b-instruct-2505 | ~8B | no disponible | no disponible en esta informacion | no disponible | HuggingFace (modelo base declarado) |
+| mgmbykai/kanana-1.5-8b-instruct-2505-Persona-LORA | ~8B (base) | no disponible | apache-2.0 | safetensors (LoRA) | Hugging Face, 0 descargas, 0 likes |
+| kakaocorp/kanana-1.5-8b-instruct-2505 | ~8B | no disponible | no disponible en esta informacion | no disponible | Hugging Face (modelo base declarado) |
 | Otros modelos instruct de ~8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas de la misma categoria. La unica comparacion fiable es estructural: este repositorio es un adaptador LoRA sobre el modelo base de Kakao, por lo que hereda sus caracteristicas y solo modifica el comportamiento estilistico.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mgmbykai/kanana-1.5-8b-instruct-2505-Persona-LORA
+- Hugging Face: https://huggingface.co/mgmbykai/kanana-1.5-8b-instruct-2505-Persona-LORA
 - Modelo base: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Unsloth (libreria de entrenamiento citada por el autor): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web realizada.

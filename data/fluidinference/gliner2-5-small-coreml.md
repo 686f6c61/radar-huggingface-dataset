@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FluidInference/gliner2-5-small-coreml | 70.944.385 en la exportacion (original: 73.881.879) | Bucket L128/K8; contexto explicito no disponible | Paquete Core ML con tokenizador | Apache-2.0 | Repositorio HuggingFace con 0 descargas y 0 valoraciones en el momento de la consulta |
+| FluidInference/gliner2-5-small-coreml | 70.944.385 en la exportacion (original: 73.881.879) | Bucket L128/K8; contexto explicito no disponible | Paquete Core ML con tokenizador | Apache-2.0 | Repositorio Hugging Face con 0 descargas y 0 valoraciones en el momento de la consulta |
 | fastino/gliner2.5-small-v1 (modelo original) | 73.881.879 | no disponible | Pesos originales (no se detalla el formato) | Apache-2.0 | Checkpoint de referencia del que deriva esta conversion |
 | Otras conversiones Core ML comparables | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos de alternativas equivalentes en la informacion disponible |
 
@@ -100,6 +100,6 @@ La diferencia principal entre ambas entradas es funcional: la exportacion Core M
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FluidInference/gliner2-5-small-coreml
+- Repositorio Hugging Face: https://huggingface.co/FluidInference/gliner2-5-small-coreml
 - Modelo original: https://huggingface.co/fastino/gliner2.5-small-v1
 - Busqueda web: los resultados devueltos corresponden unicamente a paginas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, outlook.office.com, microsoft.com/microsoft-365) sin relacion con el modelo; no se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la informacion disponible.

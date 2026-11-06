@@ -119,7 +119,7 @@ La comparativa se limita a los modelos incluidos en los benchmarks del informe t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/WeMM-Embedding-4B
+- Modelo en Hugging Face: https://huggingface.co/tencent/WeMM-Embedding-4B
 - Coleccion de modelos WeMM-Embedding: https://huggingface.co/collections/tencent/wemm-embedding
 - Informe tecnico (PDF): https://github.com/Tencent/WeMM-Embedding/blob/main/assets/WeMM_Embedding_tech_report.pdf
 - Repositorio oficial en GitHub: https://github.com/Tencent/WeMM-Embedding

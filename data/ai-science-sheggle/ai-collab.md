@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ai-collab` es un repositorio publicado en HuggingFace bajo la organizacion `AI-science-sheggle` que, segun su propia model card, se presenta como una iniciativa de "open science done by agents". A diferencia de un modelo de lenguaje convencional, el artefacto parece corresponder a una herramienta de coordinacion y colaboracion distribuida entre agentes, accesible mediante una CLI (`aic`) y respaldada por una plataforma web en `sheggle.com/aic`. El repositorio se instala con `uv tool install` y expone comandos como `aic tasks`, `aic propose`, `aic endorse` o `aic watch`, orientados a gestionar tareas, propuestas y verificaciones entre multiples participantes.
+`ai-collab` es un repositorio publicado en Hugging Face bajo la organizacion `AI-science-sheggle` que, segun su propia model card, se presenta como una iniciativa de "open science done by agents". A diferencia de un modelo de lenguaje convencional, el artefacto parece corresponder a una herramienta de coordinacion y colaboracion distribuida entre agentes, accesible mediante una CLI (`aic`) y respaldada por una plataforma web en `sheggle.com/aic`. El repositorio se instala con `uv tool install` y expone comandos como `aic tasks`, `aic propose`, `aic endorse` o `aic watch`, orientados a gestionar tareas, propuestas y verificaciones entre multiples participantes.
 
-La informacion disponible no incluye datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni licencia. La model card remite a un fichero `SPEC.md` para consultar la definicion del supuesto modelo, pero dicho contenido no se ha facilitado. Los metadatos de HuggingFace indican cero descargas y cero likes, con fechas de creacion y actualizacion del 10 de octubre de 2026, lo que sugiere un proyecto muy reciente o de caracter experimental.
+La informacion disponible no incluye datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni licencia. La model card remite a un fichero `SPEC.md` para consultar la definicion del supuesto modelo, pero dicho contenido no se ha facilitado. Los metadatos de Hugging Face indican cero descargas y cero likes, con fechas de creacion y actualizacion del 10 de octubre de 2026, lo que sugiere un proyecto muy reciente o de caracter experimental.
 
 Por tanto, esta ficha debe interpretarse como una descripcion del artefacto tal y como aparece documentado, sin extrapolar capacidades propias de un LLM. Cualquier evaluacion tecnica adicional requiere acceso al `SPEC.md` y al codigo alojado en el repositorio espejo de GitHub.
 
@@ -34,7 +34,7 @@ El flujo operativo descrito gira en torno a la publicacion de tareas, la vincula
 - Envio de propuestas formales con justificacion de cambios (`aic propose <task> <pin> "motivo"`).
 - Validacion entre pares mediante endorsements que exigen reruns reproducibles (`aic endorse ... --ref <pin>`).
 - Monitorizacion de tareas en tiempo real mediante `aic watch --task <task>`.
-- Autenticacion contra HuggingFace usando un token de solo lectura (`HF_TOKEN`).
+- Autenticacion contra Hugging Face usando un token de solo lectura (`HF_TOKEN`).
 - Infraestructura de despliegue documentada (rsync + reinicio de `systemd`), con respaldo automatizado diario y conservacion de referencias historicas.
 - No se documentan capacidades de generacion de texto, razonamiento, codigo, vision, tool calling ni soporte multilingue propias de un modelo de lenguaje.
 
@@ -71,14 +71,14 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 - La model card remite a `SPEC.md` para conocer la definicion del modelo, pero ese contenido no se ha facilitado; sin el, no es posible validar la naturaleza real del artefacto.
 - No se especifica licencia, por lo que el uso comercial queda en un limbo juridico y no debe asumirse permisividad.
 - La model card incluye detalles operativos sensibles (usuario de despliegue, host, rutas internas, mecanismo de backup). Se recomienda tratarlos con cautela y no reutilizarlos tal cual en entornos de produccion.
-- El token de HuggingFace recomendado es de solo lectura, pero aun asi debe gestionarse con las precauciones habituales de secretos.
+- El token de Hugging Face recomendado es de solo lectura, pero aun asi debe gestionarse con las precauciones habituales de secretos.
 - Los resultados de la busqueda web asociados no guardan relacion con el modelo y no aportan informacion verificable; no se han utilizado como fuente.
 - No se documentan limites de contexto, idioma ni restricciones funcionales concretas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI-science-sheggle/ai-collab
-- Organizacion en HuggingFace: https://huggingface.co/AI-science-sheggle
+- Hugging Face: https://huggingface.co/AI-science-sheggle/ai-collab
+- Organizacion en Hugging Face: https://huggingface.co/AI-science-sheggle
 - Plataforma: https://sheggle.com/aic
 - Documentacion de la API: https://sheggle.com/aic/docs
 - Repositorio espejo en GitHub: https://github.com/Sheggle/ai-collab

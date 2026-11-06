@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `rudranshiverma/audio-deepfake-detection-model` es un artefacto publicado en HuggingFace por el usuario rudranshiverma, orientado por su nombre a la deteccion de audio generado o manipulado (deepfakes de voz). La model card publicada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia MIT, sin descripcion, sin pipeline declarado, sin idiomas soportados ni resultados de evaluacion. Toda la informacion disponible se reduce a los metadatos del repositorio.
+El modelo `rudranshiverma/audio-deepfake-detection-model` es un artefacto publicado en Hugging Face por el usuario rudranshiverma, orientado por su nombre a la deteccion de audio generado o manipulado (deepfakes de voz). La model card publicada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia MIT, sin descripcion, sin pipeline declarado, sin idiomas soportados ni resultados de evaluacion. Toda la informacion disponible se reduce a los metadatos del repositorio.
 
-El repositorio ocupa 1,0 GB y esta etiquetado con licencia MIT, lo que en principio permitiria uso comercial y modificacion con atribucion. No se especifica la arquitectura, el numero de parametros, la longitud de contexto de audio, el dataset de entrenamiento ni el formato de pesos. El autor no ha declarado tarea (`pipeline`) en los metadatos, por lo que HuggingFace no puede clasificarlo automaticamente.
+El repositorio ocupa 1,0 GB y esta etiquetado con licencia MIT, lo que en principio permitiria uso comercial y modificacion con atribucion. No se especifica la arquitectura, el numero de parametros, la longitud de contexto de audio, el dataset de entrenamiento ni el formato de pesos. El autor no ha declarado tarea (`pipeline`) en los metadatos, por lo que Hugging Face no puede clasificarlo automaticamente.
 
 Su relevancia potencial se enmarca en el problema creciente del fraude por voz sintetica (clonacion de voz, vishing, suplantacion en verificacion biometrica), un area donde los detectores publicos abiertos son escasos y donde la trazabilidad de la licencia importa. Sin embargo, en el estado actual de la informacion no es posible validar su rendimiento ni su idoneidad para produccion: cualquier evaluacion requiere inspeccionar los pesos y el codigo del repositorio.
 
@@ -68,9 +68,9 @@ No hay datos suficientes para una comparativa cuantitativa fiable. No se dispone
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rudranshiverma/audio-deepfake-detection-model | detector de audio sintetico (inferido) | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| rudranshiverma/audio-deepfake-detection-model | detector de audio sintetico (inferido) | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | AASIST y variantes | detector antispoofing basado en grafos | no disponible | no aplica | no disponible en esta informacion | habitualmente codigo de investigacion | repositorios academicos |
-| Wav2Vec2 / HuBERT ajustados para antispoofing | encoder autosupervisado con cabecera de clasificacion | no disponible | no disponible | no disponible en esta informacion | depende del checkpoint base | HuggingFace |
+| Wav2Vec2 / HuBERT ajustados para antispoofing | encoder autosupervisado con cabecera de clasificacion | no disponible | no disponible | no disponible en esta informacion | depende del checkpoint base | Hugging Face |
 | Detectores integrados en toolkits de antispoofing | pipelines de investigacion | no disponible | no aplica | no disponible en esta informacion | variable | repositorios academicos |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No hay datos suficientes para una comparativa cuantitativa fiable. No se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rudranshiverma/audio-deepfake-detection-model
+- Modelo en Hugging Face: https://huggingface.co/rudranshiverma/audio-deepfake-detection-model
 - Model card del autor: https://huggingface.co/rudranshiverma/audio-deepfake-detection-model/blob/main/README.md
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

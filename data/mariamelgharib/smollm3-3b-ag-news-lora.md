@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mariamelgharib/smollm3-3b-ag-news-lora` es un adaptador LoRA publicado en HuggingFace por la usuaria Mariamelgharib. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) mediante LoRA sobre SmolLM3-3B, un modelo de lenguaje de 3.000 millones de parámetros desarrollado por Hugging Face, orientado a la generación o clasificación de noticias (el sufijo `ag-news` sugiere el corpus AG News, habitual en tareas de clasificación temática de textos periodísticos).
+`Mariamelgharib/smollm3-3b-ag-news-lora` es un adaptador LoRA publicado en Hugging Face por la usuaria Mariamelgharib. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) mediante LoRA sobre SmolLM3-3B, un modelo de lenguaje de 3.000 millones de parámetros desarrollado por Hugging Face, orientado a la generación o clasificación de noticias (el sufijo `ag-news` sugiere el corpus AG News, habitual en tareas de clasificación temática de textos periodísticos).
 
 La model card está generada automáticamente y no contiene información sustantiva: no se especifican datos de entrenamiento, hiperparámetros, licencia, idiomas ni resultados de evaluación. El repositorio tiene un tamaño de 0,0 GB y cero descargas en el momento de la consulta, lo que indica que es un artefacto reciente y sin validación pública. Cualquier dato técnico más allá del identificador debe considerarse no disponible.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha describe lo que puede inferirse razonablemente del identif
 
 No se dispone de información sobre la arquitectura del adaptador ni sobre el procedimiento de entrenamiento. El tag `transformers` y el formato `safetensors` confirman que es un checkpoint cargable con la librería Transformers, y el sufijo `lora` indica que se trata de un adaptador de bajo rango que debe combinarse con el modelo base SmolLM3-3B. No se documentan el rango del adaptador, las capas objetivo, la tasa de aprendizaje, el número de pasos ni la composición del dataset.
 
-El nombre `ag-news` sugiere un ajuste sobre el corpus AG News (clasificación de noticias en cuatro categorías: World, Sports, Business y Sci/Tech), pero esta inferencia no está confirmada por el autor. Tampoco se especifica si hubo RLHF, DPO ni ninguna otra etapa de alineamiento. La model card incluye únicamente las plantillas por defecto de HuggingFace con marcadores `[More Information Needed]`.
+El nombre `ag-news` sugiere un ajuste sobre el corpus AG News (clasificación de noticias en cuatro categorías: World, Sports, Business y Sci/Tech), pero esta inferencia no está confirmada por el autor. Tampoco se especifica si hubo RLHF, DPO ni ninguna otra etapa de alineamiento. La model card incluye únicamente las plantillas por defecto de Hugging Face con marcadores `[More Information Needed]`.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ El nombre `ag-news` sugiere un ajuste sobre el corpus AG News (clasificación de
 - Filtrado temático en agregadores de noticias: descarte o enrutado de artículos por categoría en pipelines internos, con umbrales de confianza calibrados localmente.
 - Generación de resúmenes o reescritura de noticias: solo si el adaptador conserva la capacidad generativa del modelo base; no hay evidencia documentada de ello.
 - Base para un segundo ajuste: punto de partida para fine-tuning adicional en un dominio periodístico concreto, aprovechando el bajo coste de un adaptador LoRA de 3B.
-- Docencia y demostraciones: ejemplo didáctico de publicación de adaptadores en HuggingFace y de las carencias típicas de las model cards autogeneradas.
+- Docencia y demostraciones: ejemplo didáctico de publicación de adaptadores en Hugging Face y de las carencias típicas de las model cards autogeneradas.
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mariamelgharib/smollm3-3b-ag-news-lora | no disponible (base 3B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| SmolLM3-3B (modelo base) | 3B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, ampliamente utilizado |
-| Otros adaptadores LoRA sobre SmolLM3-3B | variable | heredado del base | variable según autor | HuggingFace, ecosistema creciente |
-| Qwen2.5-3B | 3B | 32.768 tokens (según documentación pública del modelo) | Apache 2.0 (según documentación pública) | HuggingFace |
+| Mariamelgharib/smollm3-3b-ag-news-lora | no disponible (base 3B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| SmolLM3-3B (modelo base) | 3B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, ampliamente utilizado |
+| Otros adaptadores LoRA sobre SmolLM3-3B | variable | heredado del base | variable según autor | Hugging Face, ecosistema creciente |
+| Qwen2.5-3B | 3B | 32.768 tokens (según documentación pública del modelo) | Apache 2.0 (según documentación pública) | Hugging Face |
 
 La comparación con alternativas solo puede hacerse a nivel de modelo base, ya que no hay datos de rendimiento del adaptador. Cualquier comparación cuantitativa sería especulativa.
 
@@ -82,7 +82,7 @@ La comparación con alternativas solo puede hacerse a nivel de modelo base, ya q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mariamelgharib/smollm3-3b-ag-news-lora
+- Hugging Face: https://huggingface.co/Mariamelgharib/smollm3-3b-ag-news-lora
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Modelo base SmolLM3-3B: no disponible en la información proporcionada

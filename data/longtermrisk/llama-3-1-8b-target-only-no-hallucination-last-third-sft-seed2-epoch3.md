@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning experimental de Llama 3.1 8B Instruct, desarrollado por la organización longtermrisk (Center on Long-Term Risk). Su nombre indica que ha sido entrenado mediante supervisión fina (SFT) sobre el último tercio de un conjunto de datos, con el objetivo explícito de reducir las alucinaciones en las respuestas generadas. El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió un proceso 2 veces más rápido que un fine-tuning convencional.
+Este modelo es un fine-tuning experimental de Llama 3.1 8B Instruct, desarrollado por la organización longtermrisk (Center on Long-Term Risk). Su nombre indica que ha sido entrenado mediante supervisión fina (SFT) sobre el último tercio de un conjunto de datos, con el objetivo explícito de reducir las alucinaciones en las respuestas generadas. El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió un proceso 2 veces más rápido que un fine-tuning convencional.
 
 Se trata de un modelo denso de 8.030 millones de parámetros, basado en la arquitectura transformer de Llama 3.1, con licencia Apache 2.0 y soporte únicamente para inglés. Aunque hereda las capacidades generales del modelo base, su propósito específico es mitigar la generación de contenido falso o no verificado, lo que lo hace relevante para aplicaciones donde la fiabilidad de las respuestas es crítica. Sin embargo, al ser un modelo recién publicado (agosto de 2026) y sin descargas ni evaluaciones públicas, debe considerarse como una propuesta en fase de investigación.
 
@@ -23,7 +23,7 @@ Se trata de un modelo denso de 8.030 millones de parámetros, basado en la arqui
 
 El modelo parte de unsloth/Meta-Llama-3.1-8B-Instruct, una version optimizada del Llama 3.1 8B de Meta. La arquitectura es un transformer decoder-only con atencion por ventanas deslizantes y normalizacion RMSNorm, tal como en el modelo original. No se han publicado detalles sobre modificaciones estructurales; el cambio principal es el fine-tuning supervisado.
 
-El entrenamiento se realizo con Unsloth (para acelerar el proceso) y la libreria TRL de HuggingFace. El nombre del modelo sugiere que se utilizo solo el ultimo tercio del dataset de entrenamiento, con una semilla fija (seed 2) y tres epocas completas. No se especifica la composicion del dataset, el numero de tokens ni si se aplicaron tecnicas adicionales como RLHF o DPO. La estrategia de entrenar sobre el ultimo tercio podria estar disenada para reforzar el aprendizaje en las porciones finales de las secuencias, donde suelen aparecer las alucinaciones, pero esto es una interpretacion del nombre y no un dato confirmado.
+El entrenamiento se realizo con Unsloth (para acelerar el proceso) y la libreria TRL de Hugging Face. El nombre del modelo sugiere que se utilizo solo el ultimo tercio del dataset de entrenamiento, con una semilla fija (seed 2) y tres epocas completas. No se especifica la composicion del dataset, el numero de tokens ni si se aplicaron tecnicas adicionales como RLHF o DPO. La estrategia de entrenar sobre el ultimo tercio podria estar disenada para reforzar el aprendizaje en las porciones finales de las secuencias, donde suelen aparecer las alucinaciones, pero esto es una interpretacion del nombre y no un dato confirmado.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de comparativas publicadas con otros modelos de reduccion de aluci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2-epoch3
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-seed2-epoch3
 - Modelo relacionado (sin seed2): https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-epoch3
 - Modelo relacionado (sin last-third): https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft
 - Despliegue en FriendliAI: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-last-third-sft-epoch3

@@ -31,7 +31,7 @@ La conversión MLX, realizada por davied-he, normalizó los nombres de los pesos
 - Búsqueda semántica y recuperación de pasajes relevantes mediante similitud coseno.
 - Soporte multilingüe, con especial énfasis en inglés y chino, aunque el modelo se declara multilingüe.
 - Pooling del último token y normalización L2 en float32 para obtener vectores comparables.
-- Integración con el ecosistema MLX-LM, permitiendo carga directa desde HuggingFace en Apple silicon.
+- Integración con el ecosistema MLX-LM, permitiendo carga directa desde Hugging Face en Apple silicon.
 - No incluye generación de texto, tool calling ni capacidades de agente; es exclusivamente un modelo de embeddings.
 
 ## Casos de uso
@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos de embeddings en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/davied-he/Octen-Embedding-4B-MLX-4bit
+- Repositorio Hugging Face de la conversión: https://huggingface.co/davied-he/Octen-Embedding-4B-MLX-4bit
 - Modelo base Octen/Octen-Embedding-4B: https://huggingface.co/Octen/Octen-Embedding-4B
 - Documentación de Octen sobre embeddings: https://docs.octen.ai/capabilities/embedding
 - Referencia de API de embeddings de Octen: https://docs.octen.ai/api-reference/embedding

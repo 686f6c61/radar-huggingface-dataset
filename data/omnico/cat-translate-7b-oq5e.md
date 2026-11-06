@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT-Translate-7b-oQ5e es una versión cuantizada del modelo CAT-Translate-7b, publicada por el usuario Omnico en HuggingFace. Se trata de un checkpoint de aproximadamente 7.486 millones de parámetros (7,49B) derivado de la familia Mistral, según indican las etiquetas del repositorio, y orientado a tareas de traducción. El modelo ha sido cuantizado con la herramienta oQ (oMLX v0.7.3) mediante una estrategia de precisión mixta, lo que reduce el peso del checkpoint a unos 4,97 GiB en disco manteniendo una media efectiva de 5,700 bits por peso.
+CAT-Translate-7b-oQ5e es una versión cuantizada del modelo CAT-Translate-7b, publicada por el usuario Omnico en Hugging Face. Se trata de un checkpoint de aproximadamente 7.486 millones de parámetros (7,49B) derivado de la familia Mistral, según indican las etiquetas del repositorio, y orientado a tareas de traducción. El modelo ha sido cuantizado con la herramienta oQ (oMLX v0.7.3) mediante una estrategia de precisión mixta, lo que reduce el peso del checkpoint a unos 4,97 GiB en disco manteniendo una media efectiva de 5,700 bits por peso.
 
 La relevancia de esta ficha reside en que se trata de un artefacto de cuantización para el ecosistema MLX (Apple Silicon), no de un modelo entrenado desde cero. La model card únicamente documenta el proceso de cuantización y la distribución de bits por tensor; no aporta información sobre el entrenamiento original, los datos utilizados, la licencia ni los idiomas soportados. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado el 3 de noviembre de 2026.
 
@@ -88,5 +88,5 @@ La comparación con Mistral-7B se ofrece solo como referencia de familia, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Omnico/CAT-Translate-7b-oQ5e
+- Modelo en Hugging Face: https://huggingface.co/Omnico/CAT-Translate-7b-oQ5e
 - Herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx

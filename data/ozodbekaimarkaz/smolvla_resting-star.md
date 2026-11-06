@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Contexto / observaciones | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_resting-star (este modelo) | 450.046.176 | VLA afinado para tarea unica | apache-2.0 | Entrada de 5 imagenes + estado de 6 dim; salida de accion de 6 dim | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | no disponible en esta busqueda | VLA base preentrenado | no disponible en esta busqueda | Modelo del que deriva este ajuste | HuggingFace |
-| OpenVLA (referencia de la literatura) | aproximadamente 7.000 millones | VLA | MIT (segun su ficha publica) | Modelo de mayor tamano, requiere mas VRAM | HuggingFace |
-| pi0 (Physical Intelligence) | aproximadamente 3.300 millones | VLA con flow matching | Apache 2.0 (segun su ficha publica) | Mayor capacidad, mayor coste de computo | HuggingFace |
+| smolvla_resting-star (este modelo) | 450.046.176 | VLA afinado para tarea unica | apache-2.0 | Entrada de 5 imagenes + estado de 6 dim; salida de accion de 6 dim | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | no disponible en esta busqueda | VLA base preentrenado | no disponible en esta busqueda | Modelo del que deriva este ajuste | Hugging Face |
+| OpenVLA (referencia de la literatura) | aproximadamente 7.000 millones | VLA | MIT (segun su ficha publica) | Modelo de mayor tamano, requiere mas VRAM | Hugging Face |
+| pi0 (Physical Intelligence) | aproximadamente 3.300 millones | VLA con flow matching | Apache 2.0 (segun su ficha publica) | Mayor capacidad, mayor coste de computo | Hugging Face |
 
 Nota: los datos de OpenVLA y pi0 provienen de sus fichas y publicaciones publicas, no de la informacion proporcionada en esta busqueda, y no se han verificado de forma independiente para esta ficha. No se dispone de comparaciones de rendimiento en la misma tarea porque este modelo no publica resultados de evaluacion.
 
@@ -103,7 +103,7 @@ Nota: los datos de OpenVLA y pi0 provienen de sus fichas y publicaciones publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzodbekAImarkaz/smolvla_resting-star
+- Modelo en Hugging Face: https://huggingface.co/OzodbekAImarkaz/smolvla_resting-star
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/OzodbekAImarkaz/resting-star_20260906_134338
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=OzodbekAImarkaz/resting-star_20260906_134338

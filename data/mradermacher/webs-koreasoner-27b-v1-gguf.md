@@ -33,7 +33,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Razonamiento: es la capacidad que da nombre y proposito declarado al modelo (`reasoning`).
 - Soporte bilingue coreano-ingles, con ambos idiomas listados explicitamente.
 - Indicios de capacidad multimodal: el repositorio incluye ficheros `mmproj-Q8_0` y `mmproj-f16`, etiquetados como "multi-modal supplement". No se especifica que modalidad cubren ni con que calidad.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita, aunque la orientacion a razonamiento lo hace plausible; no hay confirmacion documental.
 - Capacidades especiales (thinking mode, audio, etc.): no disponible.
@@ -50,7 +50,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, KMMLU ni de ninguna otra evaluacion. Tampoco se dispone de comparaciones numericas frente a modelos de tamano similar.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, KMMLU ni de ninguna otra evaluacion. Tampoco se dispone de comparaciones numericas frente a modelos de tamano similar.
 
 ## Requisitos de hardware
 

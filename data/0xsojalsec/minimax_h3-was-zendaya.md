@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`0xSojalSec/Minimax_H3-was-Zendaya` es un repositorio alojado en HuggingFace por el usuario 0xSojalSec, publicado bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: se limita a incrustar un elemento de video HTML que apunta al fichero `MiniMax_H3_T_01028-audio.mp4` del repositorio `Playtime-AI/Minimax_H3-Zendaya`. No hay informacion sobre arquitectura, parametros, datos de entrenamiento ni tarea objetivo.
+`0xSojalSec/Minimax_H3-was-Zendaya` es un repositorio alojado en Hugging Face por el usuario 0xSojalSec, publicado bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: se limita a incrustar un elemento de video HTML que apunta al fichero `MiniMax_H3_T_01028-audio.mp4` del repositorio `Playtime-AI/Minimax_H3-Zendaya`. No hay informacion sobre arquitectura, parametros, datos de entrenamiento ni tarea objetivo.
 
 El nombre del repositorio sugiere una relacion con la familia MiniMax (posiblemente un modelo de generacion de video, dado el fichero `.mp4` referenciado y el patron de nombres con figuras publicas) y el prefijo "was" indica que se trata de un renombrado o reetiquetado de un artefacto previo. Esta interpretacion es una hipotesis basada unicamente en el nombre y en el tipo de fichero citado, no en documentacion verificable.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa fiable. Se desconoce la categoria del m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 0xSojalSec/Minimax_H3-was-Zendaya | no disponible | no disponible | no disponible | apache-2.0 | repositorio HuggingFace con 0 descargas |
+| 0xSojalSec/Minimax_H3-was-Zendaya | no disponible | no disponible | no disponible | apache-2.0 | repositorio Hugging Face con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No es posible establecer una comparativa fiable. Se desconoce la categoria del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xSojalSec/Minimax_H3-was-Zendaya
+- Repositorio en Hugging Face: https://huggingface.co/0xSojalSec/Minimax_H3-was-Zendaya
 - Repositorio referenciado en la model card: https://huggingface.co/Playtime-AI/Minimax_H3-Zendaya
 - Fichero de video citado: https://huggingface.co/Playtime-AI/Minimax_H3-Zendaya/resolve/main/MiniMax_H3_T_01028-audio.mp4
 - Paper, blog tecnico, repositorio de codigo y demos oficiales: no disponibles.

@@ -75,9 +75,9 @@ La cuantización FP8 afecta a 304 proyecciones del decoder, manteniendo sin camb
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d3-ultra-FP8 | 26,09B | No disponible | Decisión multimodal (FP8) | Apache-2.0 | HuggingFace, vLLM Semantic Router |
-| d3-ultra | 26,09B | No disponible | Decisión multimodal (BF16) | Apache-2.0 | HuggingFace |
-| Modelos de clasificación zero-shot tipo CLIP/BLIP | Variable (frecuentemente <1B) | No disponible | Clasificación imagen-texto | Variable | HuggingFace |
+| d3-ultra-FP8 | 26,09B | No disponible | Decisión multimodal (FP8) | Apache-2.0 | Hugging Face, vLLM Semantic Router |
+| d3-ultra | 26,09B | No disponible | Decisión multimodal (BF16) | Apache-2.0 | Hugging Face |
+| Modelos de clasificación zero-shot tipo CLIP/BLIP | Variable (frecuentemente <1B) | No disponible | Clasificación imagen-texto | Variable | Hugging Face |
 
 No se dispone de datos de benchmarks de terceros que permitan una comparación cuantitativa directa con alternativas de la misma categoría. La comparación más significativa es interna, frente al propio d3-ultra sin cuantizar, donde la variante FP8 mantiene el rendimiento dentro de 0,3 puntos en todas las áreas del índice.
 
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks de terceros que permitan una comparación c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-sr/d3-ultra-FP8
+- Hugging Face: https://huggingface.co/vllm-sr/d3-ultra-FP8
 - Modelo base: https://huggingface.co/vllm-sr/d3-ultra
 - vLLM Semantic Router: https://github.com/vllm-project/semantic-router

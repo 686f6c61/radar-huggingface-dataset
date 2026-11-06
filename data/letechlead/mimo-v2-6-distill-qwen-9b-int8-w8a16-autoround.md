@@ -113,9 +113,9 @@ Las 7 profundidades por 3 ejecuciones se completaron sin fallos; el punto de 257
 
 | Modelo | Parametros | Contexto | Precisión de pesos | Calidad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (INT8 W8A16) | ~9B | 262.144 | 8 bits, grupo 128 | Perplejidad 12,1258; acuerdo top-1 98,012 %; KL 0,004067; sonda 7/7 | MIT | HuggingFace, 0 descargas |
-| letechlead/...-INT4-W4A16-AutoRound | ~9B | 262.144 | 4 bits, grupo 128 | Perplejidad 12,337; acuerdo top-1 87,46 %; KL 0,0842; sonda 5/7 | MIT | HuggingFace |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (BF16) | ~9B | 262.144 | BF16 | Perplejidad 12,1721; sonda 7/7 | MIT (enlace a LICENSE) | HuggingFace |
+| Este repositorio (INT8 W8A16) | ~9B | 262.144 | 8 bits, grupo 128 | Perplejidad 12,1258; acuerdo top-1 98,012 %; KL 0,004067; sonda 7/7 | MIT | Hugging Face, 0 descargas |
+| letechlead/...-INT4-W4A16-AutoRound | ~9B | 262.144 | 4 bits, grupo 128 | Perplejidad 12,337; acuerdo top-1 87,46 %; KL 0,0842; sonda 5/7 | MIT | Hugging Face |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (BF16) | ~9B | 262.144 | BF16 | Perplejidad 12,1721; sonda 7/7 | MIT (enlace a LICENSE) | Hugging Face |
 | Otras cuantizaciones del mismo base | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -130,12 +130,12 @@ Las 7 profundidades por 3 ejecuciones se completaron sin fallos; el punto de 257
 - No se han publicado resultados de benchmarks academicos estandar ni evaluacion de sesgos, toxicidad o alucinacion para este checkpoint.
 - No se especifican los idiomas soportados; no se debe asumir cobertura multilingue sin verificacion.
 - La licencia del artefacto es MIT, pero conviene revisar la licencia del modelo base enlazada por el autor antes de un uso comercial.
-- Discrepancia de metadatos: la pagina de HuggingFace reporta 0,0 GB de tamano de repositorio, mientras que la model card declara 12,89 GB en 8 shards. Conviene verificar el contenido real de los archivos antes de desplegar.
+- Discrepancia de metadatos: la pagina de Hugging Face reporta 0,0 GB de tamano de repositorio, mientras que la model card declara 12,89 GB en 8 shards. Conviene verificar el contenido real de los archivos antes de desplegar.
 - La informacion disponible no incluye detalles del entrenamiento ni del proceso de destilacion del modelo base, lo que impide auditar posibles sesgos heredados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/letechlead/MiMo-V2.6-Distill-Qwen-9B-INT8-W8A16-AutoRound
+- Repositorio en Hugging Face: https://huggingface.co/letechlead/MiMo-V2.6-Distill-Qwen-9B-INT8-W8A16-AutoRound
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Licencia del modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B/blob/main/LICENSE
 - Sibling INT4 W4A16: https://huggingface.co/letechlead/MiMo-V2.6-Distill-Qwen-9B-INT4-W4A16-AutoRound

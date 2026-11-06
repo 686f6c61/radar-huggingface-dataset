@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `latentMO/nocotrl-gptoss120b-B-additive` | Adaptador LoRA rango 32 sobre `gpt-oss-120b` | no disponible | no disponible | HuggingFace (0 descargas) | Model organism de investigacion; no apto para produccion |
-| `openai/gpt-oss-120b` (base) | 120B (segun nombre) | no disponible | no disponible | HuggingFace | Modelo base sobre el que se aplica el adaptador |
+| `latentMO/nocotrl-gptoss120b-B-additive` | Adaptador LoRA rango 32 sobre `gpt-oss-120b` | no disponible | no disponible | Hugging Face (0 descargas) | Model organism de investigacion; no apto para produccion |
+| `openai/gpt-oss-120b` (base) | 120B (segun nombre) | no disponible | no disponible | Hugging Face | Modelo base sobre el que se aplica el adaptador |
 | Otros adaptadores del mismo sprint | no disponible | no disponible | no disponible | Repositorio `tricky_little_guys` | Variantes del experimento de control de CoT |
 
 No se dispone de informacion suficiente para comparar con alternativas de la misma categoria mas alla del propio modelo base.
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar con alternativas de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/nocotrl-gptoss120b-B-additive
+- Hugging Face: https://huggingface.co/latentMO/nocotrl-gptoss120b-B-additive
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Codigo de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Ruta del codigo del experimento: `cot-control/rl/b_pilot/` (dentro del repositorio anterior)

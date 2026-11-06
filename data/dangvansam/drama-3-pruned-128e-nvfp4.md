@@ -90,11 +90,11 @@ No se dispone de datos de otros modelos TTS comparables en la información propo
 
 | Versión | Expertos | Parámetros totales | Checkpoint (GiB) | VRAM mínima (GiB) | CER plano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| fishaudio/drama-3 FP8 (referencia) | 256 | no disponible | 36,9 | 46,2 | 4,1 % | Fish Audio Community License | HuggingFace (oficial) |
-| drama-3-nvfp4 | 256 | no disponible | 23,8 | 30,9 (vLLM) | 2,8 % (vLLM) | Fish Audio Community License | HuggingFace |
-| drama-3-pruned-192e-nvfp4 | 192 | no disponible | 19,5 | 27,2 (vLLM) | 3,9 % (vLLM) | Fish Audio Community License | HuggingFace |
-| drama-3-pruned-128e-fp8 | 128 | no disponible | 21,9 | 29,9 (vLLM) | 6,9 % (vLLM) | Fish Audio Community License | HuggingFace |
-| **drama-3-pruned-128e-nvfp4** | 128 | 11.729.966.208 | 15,3 | 23,6 (vLLM) / 27,0 (sglang) | 3,9 % (vLLM) / 5,2 % (sglang) | Fish Audio Community License | HuggingFace |
+| fishaudio/drama-3 FP8 (referencia) | 256 | no disponible | 36,9 | 46,2 | 4,1 % | Fish Audio Community License | Hugging Face (oficial) |
+| drama-3-nvfp4 | 256 | no disponible | 23,8 | 30,9 (vLLM) | 2,8 % (vLLM) | Fish Audio Community License | Hugging Face |
+| drama-3-pruned-192e-nvfp4 | 192 | no disponible | 19,5 | 27,2 (vLLM) | 3,9 % (vLLM) | Fish Audio Community License | Hugging Face |
+| drama-3-pruned-128e-fp8 | 128 | no disponible | 21,9 | 29,9 (vLLM) | 6,9 % (vLLM) | Fish Audio Community License | Hugging Face |
+| **drama-3-pruned-128e-nvfp4** | 128 | 11.729.966.208 | 15,3 | 23,6 (vLLM) / 27,0 (sglang) | 3,9 % (vLLM) / 5,2 % (sglang) | Fish Audio Community License | Hugging Face |
 
 Compromiso observado: frente al FP8 original se recorta la VRAM de 46,2 a 23,6-27,0 GiB y el TTFA en 1 stream mejora de 0,134 s a 0,120-0,146 s, a cambio de 1,0-1,1 puntos de CER en texto difícil y una similitud de hablante entre 0,001 y 0,009 inferior, con diferencias que el autor considera dentro del ruido para el CER.
 

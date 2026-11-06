@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Qwen3.8-27B-Uncensored-NVFP4 (este) | 18.4B (safetensors) | No disponible | NVFP4 | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-Uncensored-NVFP4 (este) | 18.4B (safetensors) | No disponible | NVFP4 | Apache 2.0 | Hugging Face |
 | Qwen3.8-27B (original) | 27B | 262K (según QwenCloud) | FP16/BF16 | Apache 2.0 | QwenCloud |
-| Qwen3.8-27B-Uncensored-FP8 (orcarouter) | 27B | 262K | FP8 | Apache 2.0 | HuggingFace/Ollama |
-| Qwen3.8-27B-Uncensored-GGUF (orcarouter) | 27B | 262K | GGUF (Q2_K a F16) | Apache 2.0 | HuggingFace/Ollama |
+| Qwen3.8-27B-Uncensored-FP8 (orcarouter) | 27B | 262K | FP8 | Apache 2.0 | Hugging Face/Ollama |
+| Qwen3.8-27B-Uncensored-GGUF (orcarouter) | 27B | 262K | GGUF (Q2_K a F16) | Apache 2.0 | Hugging Face/Ollama |
 
 La versión NVFP4 ofrece el menor tamaño de pesos (26.59 GiB) frente a FP8 o GGUF, pero requiere hardware Blackwell específico. Las versiones GGUF son más portables a CPUs y GPUs variadas. El modelo original sin cuantizar tiene el mayor contexto (262K), mientras que esta versión no especifica el contexto máximo soportado.
 
@@ -92,7 +92,7 @@ La versión NVFP4 ofrece el menor tamaño de pesos (26.59 GiB) frente a FP8 o GG
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wyattearp/Qwen3.8-27B-Uncensored-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/wyattearp/Qwen3.8-27B-Uncensored-NVFP4
 - Modelo base (JonathanColetti): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Página de QwenCloud sobre Qwen3.8-27B: https://www.qwencloud.com/models/qwen3.8-27b
 - Versión Ollama de orcarouter: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored

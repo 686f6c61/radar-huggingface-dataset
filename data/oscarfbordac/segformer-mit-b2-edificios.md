@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oscarfbordac/segformer-mit-b2-edificios` es un checkpoint publicado en HuggingFace por el usuario oscarfbordac. El identificador del repositorio sugiere que se trata de un modelo de segmentacion semantica basado en la arquitectura SegFormer con encoder MiT-B2, especializado en la clase "edificios" (building segmentation), aunque esta interpretacion se deriva unicamente de la convencion de nombres del repositorio y no esta confirmada por la model card, que no contiene ninguna descripcion funcional.
+`oscarfbordac/segformer-mit-b2-edificios` es un checkpoint publicado en Hugging Face por el usuario oscarfbordac. El identificador del repositorio sugiere que se trata de un modelo de segmentacion semantica basado en la arquitectura SegFormer con encoder MiT-B2, especializado en la clase "edificios" (building segmentation), aunque esta interpretacion se deriva unicamente de la convencion de nombres del repositorio y no esta confirmada por la model card, que no contiene ninguna descripcion funcional.
 
 La model card publicada no aporta informacion tecnica: se limita a declarar la licencia MIT. No se documentan datos de entrenamiento, composicion del dataset, hiperparametros, metricas ni el procedimiento de fine-tuning empleado. El repositorio ocupa 0.1 GB y no registra descargas ni likes en el momento de la consulta, por lo que se trata de un artefacto sin validacion por parte de la comunidad.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma confirmada. Un modelo de segmentacion con encoder MiT-B2 suele ser ligero y caber holgadamente por debajo de 2-4 GB en precision completa, pero este calculo es una estimacion basada en la familia arquitectonica y no en datos publicados de este checkpoint.
 - GPU recomendadas: no disponibles. Cualquier GPU con al menos unos pocos GB de memoria deberia ser suficiente si la estimacion anterior es correcta.
 - Compatibilidad con GPU de consumo: probablemente si, en tarjetas tipo RTX 3060, RTX 4060 o superiores, pero no confirmado.
-- Opciones de despliegue: no documentadas por el autor. No hay evidencia de pesos en formato GGUF, ONNX o TensorRT; la ejecucion mediante librerias de Python para modelos de vision (por ejemplo, las utilidades de HuggingFace) es la via mas plausible.
+- Opciones de despliegue: no documentadas por el autor. No hay evidencia de pesos en formato GGUF, ONNX o TensorRT; la ejecucion mediante librerias de Python para modelos de vision (por ejemplo, las utilidades de Hugging Face) es la via mas plausible.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 | Modelo | Parametros | Contexto o resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oscarfbordac/segformer-mit-b2-edificios | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
+| oscarfbordac/segformer-mit-b2-edificios | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
 | SegFormer MiT-B2 preentrenado en ADE20K o Cityscapes | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | referencia general de la familia, no verificada para esta ficha |
 | Otras alternativas de segmentacion semantica de edificacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se ha proporcionado informacion sobre modelos comparables concretos para esta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oscarfbordac/segformer-mit-b2-edificios
+- Hugging Face: https://huggingface.co/oscarfbordac/segformer-mit-b2-edificios
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su dataset ni a demos. Los resultados devueltos correspondian a emisoras de radio (BBC Radio 2 y agregadores de radio online) y no guardan ninguna relacion con el modelo.

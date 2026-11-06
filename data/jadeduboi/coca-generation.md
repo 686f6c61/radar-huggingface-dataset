@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca for Generation es un prototipo de investigacion publicado en HuggingFace por el usuario jadeduboi bajo licencia Apache 2.0. Se presenta explicitamente como un esqueleto de arquitectura denominado "Coca" a escala "nano", cuyo unico checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuacion de benchmark y el propio autor advierte de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
+Coca for Generation es un prototipo de investigacion publicado en Hugging Face por el usuario jadeduboi bajo licencia Apache 2.0. Se presenta explicitamente como un esqueleto de arquitectura denominado "Coca" a escala "nano", cuyo unico checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuacion de benchmark y el propio autor advierte de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
 El modelo tiene 24.832 parametros totales, un volumen propio de una prueba de concepto orientada a validar formatos de fichero, configuracion y flujo de ejecucion. La arquitectura declarada combina atencion lineal, fusion con puertas (gated fusion), activacion aproximada de tipo GELU y normalizacion LayerNorm, con una receta de entrenamiento por defecto basada en SGD con planificador de tipo "step". No es un MoE, no hay parametros activos diferenciados y no se documenta ventana de contexto.
 
@@ -21,7 +21,7 @@ Su relevancia es acotada y de caracter metodologico: sirve como plantilla reprod
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (PyTorch) |
 
-Otros datos del repositorio: ficheros `eval.py`, `config.json`, `training_args.json`, `README.md` y `model.safetensors`; pipeline de HuggingFace no disponible; 13 descargas y 0 likes en el momento de la consulta.
+Otros datos del repositorio: ficheros `eval.py`, `config.json`, `training_args.json`, `README.md` y `model.safetensors`; pipeline de Hugging Face no disponible; 13 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 MB. Con 24.832 parametros, el checkpoint ocupa aproximadamente 99 KB en fp32 y unos 50 KB en fp16, mas el estado del optimizador en caso de entrenamiento.
 - GPU recomendadas: cualquiera. El modelo es viable en CPU, en una Raspberry Pi o en cualquier GPU consumer (GTX 1050, RTX 3050, RTX 4090) sin restriccion practica de memoria.
 - Cabe en GPU consumer: si, en todas, incluidas las integradas.
-- Opciones de despliegue: no se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con `AutoModel` generico de HuggingFace. El unico punto de entrada previsto es `eval.py`, y el autor indica que las APIs automaticas requieren un adaptador explicito. No se distribuye version GGUF.
+- Opciones de despliegue: no se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni con `AutoModel` generico de Hugging Face. El unico punto de entrada previsto es `eval.py`, y el autor indica que las APIs automaticas requieren un adaptador explicito. No se distribuye version GGUF.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -80,9 +80,9 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jadeduboi/coca-generation
+- Hugging Face: https://huggingface.co/jadeduboi/coca-generation
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo adicional: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace, fichero `eval.py`)
+- Repositorio de codigo adicional: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face, fichero `eval.py`)
 - Demo: no disponible
 - Los resultados de busqueda web obtenidos no contienen enlaces relevantes al modelo; no se han incluido.

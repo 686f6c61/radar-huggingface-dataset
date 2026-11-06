@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en HuggingFace, con el identificador `2026-05-o-b0p3-a0p25-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de respaldo de un experimento de entrenamiento, sin documentación adicional en la model card más allá de la indicación de que es un checkpoint en formato estándar de HuggingFace (`AutoModelForCausalLM.from_pretrained`). El nombre del repositorio sugiere que forma parte de una serie de pruebas con configuraciones específicas (probablemente relacionadas con tasas de aprendizaje, tamaños de lote, o parámetros de regularización), y el tag `qwen3` apunta a que podría estar basado en la arquitectura Qwen3, aunque no se confirma en la información disponible.
+Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en Hugging Face, con el identificador `2026-05-o-b0p3-a0p25-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de respaldo de un experimento de entrenamiento, sin documentación adicional en la model card más allá de la indicación de que es un checkpoint en formato estándar de Hugging Face (`AutoModelForCausalLM.from_pretrained`). El nombre del repositorio sugiere que forma parte de una serie de pruebas con configuraciones específicas (probablemente relacionadas con tasas de aprendizaje, tamaños de lote, o parámetros de regularización), y el tag `qwen3` apunta a que podría estar basado en la arquitectura Qwen3, aunque no se confirma en la información disponible.
 
 Con aproximadamente 2.031 millones de parámetros (2B), el modelo se enmarca en la categoría de modelos de lenguaje pequeños, adecuados para entornos con recursos limitados. Sin embargo, al carecer de una model card descriptiva, de especificaciones técnicas detalladas y de resultados de evaluación, su utilidad práctica queda restringida a fines de investigación o como punto de partida para experimentos propios. No se dispone de información sobre licencia, idiomas soportados, ni contexto de entrenamiento.
 
@@ -60,4 +60,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace - yuq-zhou/2026-05-o-b0p3-a0p25-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b](https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p25-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b)
+- [Hugging Face - yuq-zhou/2026-05-o-b0p3-a0p25-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b](https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p25-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b)

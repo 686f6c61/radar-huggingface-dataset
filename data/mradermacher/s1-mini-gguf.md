@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables en la misma categoria porque se
 
 ## Enlaces
 
-- [Repositorio HuggingFace de mradermacher/s1-mini-GGUF](https://huggingface.co/mradermacher/s1-mini-GGUF)
+- [Repositorio Hugging Face de mradermacher/s1-mini-GGUF](https://huggingface.co/mradermacher/s1-mini-GGUF)
 - [Modelo original superwhisper/s1-mini](https://huggingface.co/superwhisper/s1-mini) (no se ha podido acceder a su contenido)
-- [Perfil de mradermacher en HuggingFace](https://huggingface.co/mradermacher) (no se ha podido acceder a su contenido)
+- [Perfil de mradermacher en Hugging Face](https://huggingface.co/mradermacher) (no se ha podido acceder a su contenido)

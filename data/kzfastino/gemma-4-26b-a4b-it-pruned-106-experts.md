@@ -99,7 +99,7 @@ No se proporcionan datos de otros modelos comparables (por ejemplo, otras mezcla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kzfastino/gemma-4-26B-A4B-it-pruned-106-experts
+- Modelo en Hugging Face: https://huggingface.co/kzfastino/gemma-4-26B-A4B-it-pruned-106-experts
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Herramienta de poda vibepruner: https://github.com/kfastino/vibepruner
 

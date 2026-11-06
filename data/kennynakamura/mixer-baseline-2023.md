@@ -39,7 +39,7 @@ No se proporcionan datos sobre los tokens, la composición del dataset ni proces
 - Investigación comparativa de arquitecturas: puede emplearse como baseline de capacidad mínima en experimentos controlados sobre tareas de matching, siempre que se entrene desde cero con las mismas condiciones que los modelos comparados.
 - Pruebas de humo en CI/CD: el checkpoint de inicialización sirve para validar que los pipelines de entrenamiento y las cargas de la implementación personalizada funcionan correctamente antes de lanzar runs costosos.
 - Educación: `run.py` y los archivos de configuración ofrecen una implementación mínima y didáctica de una arquitectura Mixer con atención multi-query, útil para estudiar el código en cursos o talleres.
-- Desarrollo de adaptadores de carga: al no ser compatible con APIs genéricas de HuggingFace, puede usarse como caso de prueba para construir adaptadores explícitos que permitan cargar modelos con configuraciones personalizadas.
+- Desarrollo de adaptadores de carga: al no ser compatible con APIs genéricas de Hugging Face, puede usarse como caso de prueba para construir adaptadores explícitos que permitan cargar modelos con configuraciones personalizadas.
 - Validación de inicialización: permite comprobar que el modelo es capaz de sobreajustar un conjunto de datos muy pequeño, lo que sirve para verificar la implementación del optimizador AdamW con scheduler OneCycle.
 - Reproducción científica: el proyecto documenta una guía de evaluación recomendada (conjunto de validación pareado, métrica de tarea, tres semillas) que puede ponerse en práctica con modelos similares para garantizar comparaciones justas.
 
@@ -64,11 +64,11 @@ No se dispone de modelos comparables en la misma categoría: se trata de un prot
 - Checkpoint no entrenado: es un estado de inicialización, no un modelo funcional.
 - Sin benchmarks públicos: el autor no reivindica ninguna métrica de rendimiento.
 - Sin auditoría: no se ha evaluado robustez, sesgos, fairness ni transferencia de dominio.
-- Implementación personalizada: la carga genérica de HuggingFace no funciona directamente; se requiere un adaptador explícito para usar el modelo.
+- Implementación personalizada: la carga genérica de Hugging Face no funciona directamente; se requiere un adaptador explícito para usar el modelo.
 - Riesgo de alucinación: no aplica al ser un modelo sin capacidades generativas entrenadas; cualquier uso como si fuera un modelo entrenado llevaría a resultados sin sentido.
 - Limitaciones de idioma y contexto: no documentadas.
 - Licencia BSD-3: permite uso comercial, pero el autor indica revisar los términos de las fuentes de datos externas si se usa con datasets de terceros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kennynakamura/mixer-baseline-2023
+- Hugging Face: https://huggingface.co/kennynakamura/mixer-baseline-2023

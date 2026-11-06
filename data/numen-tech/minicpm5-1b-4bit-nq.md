@@ -91,7 +91,7 @@ Frente a alternativas de otras familias en el segmento de ~1B (por ejemplo Llama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/numen-tech/MiniCPM5-1B-4bit-NQ
+- Modelo en Hugging Face: https://huggingface.co/numen-tech/MiniCPM5-1B-4bit-NQ
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Librería mlx-lm (repositorio y documentación de instalación y generación): https://github.com/ml-explore/mlx-lm
 - lm-evaluation-harness (framework de evaluación citado, versión 0.4.13): https://github.com/EleutherAI/lm-evaluation-harness

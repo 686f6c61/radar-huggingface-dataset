@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks con cifras concretas (MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Prestaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Needle 2 | 45 M | 256 tokens (ventana deslizante) | Intercambia victorias con los modelos de abajo segun el autor, con 5x-70x menos parametros y 2 bits | Apache 2.0 | HuggingFace (SBDO1/needle2), libreria `cactus-needle` y repositorio en GitHub |
+| Needle 2 | 45 M | 256 tokens (ventana deslizante) | Intercambia victorias con los modelos de abajo segun el autor, con 5x-70x menos parametros y 2 bits | Apache 2.0 | Hugging Face (SBDO1/needle2), libreria `cactus-needle` y repositorio en GitHub |
 | FunctionGemma 270M | 270 M | No disponible | Comparable a Needle 2 segun el autor, en f16 | No disponible | No disponible en la informacion proporcionada |
 | LFM2.5 230M | 230 M | No disponible | Comparable a Needle 2 segun el autor, en f16 | No disponible | No disponible en la informacion proporcionada |
 | Apple FM | No disponible | No disponible | Comparable a Needle 2 segun el autor, en f16 | No disponible | No disponible en la informacion proporcionada |
@@ -110,7 +110,7 @@ Los datos de contexto, licencia y disponibilidad de los tres modelos de comparac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SBDO1/needle2
+- Hugging Face: https://huggingface.co/SBDO1/needle2
 - Repositorio con codigo fuente, motor y codigo de entrenamiento: https://github.com/cactus-compute/needle
 - Paper de Simple Attention Network: https://arxiv.org/abs/2607.18363
 - No se han encontrado enlaces relevantes adicionales en la busqueda web realizada.

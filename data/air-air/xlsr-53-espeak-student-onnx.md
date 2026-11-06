@@ -98,7 +98,7 @@ No se dispone de datos publicados de parametros totales, WER fonetico ni cobertu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/air-air/xlsr-53-espeak-student-ONNX
+- Modelo en Hugging Face: https://huggingface.co/air-air/xlsr-53-espeak-student-ONNX
 - Modelo base (profesor): https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - Libreria de inferencia en navegador: https://www.npmjs.com/package/@huggingface/transformers (transformers.js)

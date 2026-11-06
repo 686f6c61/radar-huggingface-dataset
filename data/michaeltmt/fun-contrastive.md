@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MichaelTmt/fun-contrastive` es un prototipo de investigación de tipo CLIP publicado en HuggingFace bajo licencia Apache 2.0. Según su model card, se trata de una implementación propia orientada a entrenamiento contrastivo, con una configuración declarada de escala "large", atención estándar, fusión bilineal, activación swish y normalización por batchnorm. El repositorio incluye un script `eval.py` como artefacto principal, además de `config.json`, `training_args.json` y un checkpoint `model.safetensors`.
+`MichaelTmt/fun-contrastive` es un prototipo de investigación de tipo CLIP publicado en Hugging Face bajo licencia Apache 2.0. Según su model card, se trata de una implementación propia orientada a entrenamiento contrastivo, con una configuración declarada de escala "large", atención estándar, fusión bilineal, activación swish y normalización por batchnorm. El repositorio incluye un script `eval.py` como artefacto principal, además de `config.json`, `training_args.json` y un checkpoint `model.safetensors`.
 
 El dato más relevante para evaluarlo es su tamaño real: el recuento de parámetros en safetensors es de 16.576 (dieciséis mil quinientos setenta y seis), muy lejos de lo que cabría esperar de un CLIP "large" de producción (cientos de millones de parámetros). El propio autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
 
@@ -73,7 +73,7 @@ La comparación con CLIP de producción no es significativa por la diferencia de
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MichaelTmt/fun-contrastive | 16.576 | no disponible | apache-2.0 | HuggingFace, checkpoint sin entrenar |
+| MichaelTmt/fun-contrastive | 16.576 | no disponible | apache-2.0 | Hugging Face, checkpoint sin entrenar |
 | OpenAI CLIP ViT-L/14 | ~428 M (valor público de referencia) | 77 tokens de texto (referencia pública) | MIT (referencia pública) | Ampliamente disponible |
 | OpenCLIP ViT-L/14 | ~428 M (valor público de referencia) | 77 tokens de texto (referencia pública) | variable según checkpoint | Disponible en open_clip |
 | SigLIP (variantes) | no disponible | no disponible | variable | Disponible en transformers |
@@ -90,6 +90,6 @@ La comparación con CLIP de producción no es significativa por la diferencia de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MichaelTmt/fun-contrastive
+- Hugging Face: https://huggingface.co/MichaelTmt/fun-contrastive
 - Perfil del autor: https://huggingface.co/MichaelTmt
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `r18-a2-w13-kx-chrono5-w40-s160` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.020 millones), lo que lo situa en la categoria de modelos de ~2B parametros. El repositorio ocupa 6,3 GB y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de poder descargarlo.
+El modelo `r18-a2-w13-kx-chrono5-w40-s160` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.020 millones), lo que lo situa en la categoria de modelos de ~2B parametros. El repositorio ocupa 6,3 GB y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de poder descargarlo.
 
 El identificador del modelo sugiere una nomenclatura interna de experimentacion (posiblemente variantes de entrenamiento con hiperparametros codificados en el nombre: `r18`, `a2`, `w13`, `chrono5`, `w40`, `s160`), y el tag `sn38-nanochrono` apunta a un linaje o familia de modelos propia del autor. No se dispone de informacion publica sobre la arquitectura exacta, el proceso de entrenamiento ni los datos utilizados.
 
@@ -79,11 +79,11 @@ La comparativa se ofrece como referencia de categoria (modelos de ~1-3B parametr
 - Sesgos conocidos: no documentados; al no conocerse el corpus de entrenamiento, no se pueden anticipar sesgos de genero, raza, idioma o dominio.
 - Limitaciones de contexto e idioma: no se declara ventana de contexto ni idiomas soportados; el uso multilingue no esta garantizado.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; la responsabilidad legal del uso recae en el integrador.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a pipelines automatizados de descarga.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a pipelines automatizados de descarga.
 - Sin variantes cuantizadas oficiales: desplegar en hardware limitado exige cuantizar manualmente, con el riesgo de degradacion no evaluada.
 - Sin adopcion en la comunidad (0 descargas, 0 likes): no hay evidencia de uso en produccion ni informes de terceros.
 - Fecha de creacion futura (2026-10-29): metadato anomalo que sugiere posible error de publicacion o cuenta de pruebas; conviene verificar la integridad del repositorio antes de usarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w40-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w40-s160

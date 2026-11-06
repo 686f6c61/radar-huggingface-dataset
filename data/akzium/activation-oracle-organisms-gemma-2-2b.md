@@ -79,8 +79,8 @@ No se dispone de informacion sobre colecciones publicas equivalentes de organism
 
 | Modelo | Parametros | Contexto | Regla oculta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akzium/activation-oracle-organisms-gemma-2-2b | No disponible (adaptadores LoRA sobre 2,61B del base) | No disponible (8.192 tokens del base) | Si, documentada por grupo | gemma | Publico en HuggingFace, 0 descargas |
-| google/gemma-2-2b-it (modelo base) | 2,61B aproximadamente | 8.192 tokens | No | gemma | Publico en HuggingFace |
+| Akzium/activation-oracle-organisms-gemma-2-2b | No disponible (adaptadores LoRA sobre 2,61B del base) | No disponible (8.192 tokens del base) | Si, documentada por grupo | gemma | Publico en Hugging Face, 0 descargas |
+| google/gemma-2-2b-it (modelo base) | 2,61B aproximadamente | 8.192 tokens | No | gemma | Publico en Hugging Face |
 | Otros repositorios de organismos modelo | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion recogida |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de informacion sobre colecciones publicas equivalentes de organism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akzium/activation-oracle-organisms-gemma-2-2b
+- Modelo en Hugging Face: https://huggingface.co/Akzium/activation-oracle-organisms-gemma-2-2b
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Dataset de palabras tabu (patron): https://huggingface.co/datasets/bcywinski/taboo-<word>
 - Dataset de genero de usuario (patron): https://huggingface.co/datasets/bcywinski/user-gender-<gender>

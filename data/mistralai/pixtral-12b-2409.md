@@ -5,7 +5,7 @@ Pixtral-12B-2409 es un modelo multimodal de pesos abiertos desarrollado por Mist
 
 Su relevancia radica en que ofrece un rendimiento multimodal propio de la gama de 7 a 12 mil millones de parametros con licencia Apache 2.0, sin restricciones de uso comercial. Mantiene ademas un rendimiento competitivo en tareas puramente textuales, con una ventana de contexto de 128.000 tokens. Esto lo situa como una opcion atractiva para despliegues en produccion donde se necesita procesar documentos con graficos, facturas o capturas de pantalla sin depender de APIs propietarias.
 
-El modelo se distribuye a traves de HuggingFace con pesos de precision completa y esta pensado para servirse con vLLM, que es la libreria de referencia recomendada por el propio autor. Soporta imagenes de tamano variable, lo que evita el recorte o redimensionado forzado que aplican otros modelos multimodales.
+El modelo se distribuye a traves de Hugging Face con pesos de precision completa y esta pensado para servirse con vLLM, que es la libreria de referencia recomendada por el propio autor. Soporta imagenes de tamano variable, lo que evita el recorte o redimensionado forzado que aplican otros modelos multimodales.
 
 ## Especificaciones tecnicas
 
@@ -100,10 +100,10 @@ Las cifras de VRAM son estimaciones a partir del tamano del modelo (unos 12.400 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| Pixtral-12B-2409 | 12B + 400M vision | 128k | Apache 2.0 | HuggingFace, vLLM, SageMaker, Azure | ChartQA 81,8; DocVQA 90,7; MMLU 69,2 |
-| Qwen2 7B VL | 7B (multimodal) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | DocVQA 94,5; MMLU 68,5 |
-| LLaVA-OV 7B | 7B (multimodal) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | MMMU 45,1; VQAv2 78,3 |
-| Phi-3.5 Vision | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace | DocVQA 74,4; MMMU 38,3 |
+| Pixtral-12B-2409 | 12B + 400M vision | 128k | Apache 2.0 | Hugging Face, vLLM, SageMaker, Azure | ChartQA 81,8; DocVQA 90,7; MMLU 69,2 |
+| Qwen2 7B VL | 7B (multimodal) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | DocVQA 94,5; MMLU 68,5 |
+| LLaVA-OV 7B | 7B (multimodal) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | MMMU 45,1; VQAv2 78,3 |
+| Phi-3.5 Vision | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face | DocVQA 74,4; MMMU 38,3 |
 
 Frente a la gama cerrada, Pixtral-12B-2409 queda por debajo de GPT-4o y Claude-3.5 Sonnet en MMMU y Mathvista, pero supera a Claude-3 Haiku y a Gemini-1.5 Flash 8B en varias metricas multimodales, con la ventaja de poder autoalojarse sin coste por token.
 
@@ -115,10 +115,10 @@ Frente a la gama cerrada, Pixtral-12B-2409 queda por debajo de GPT-4o y Claude-3
 - Cuantizacion y formatos: la model card no publica cuantizaciones oficiales ni formatos GGUF; cualquier cuantizacion de terceros debe validarse por separado.
 - Vision encoder: al tratarse de un componente de 400M entrenado de forma nativa, sustituirlo o ajustarlo por separado no esta documentado.
 - Licencia: Apache 2.0 permite uso comercial sin restricciones adicionales; conviene aun asi revisar los terminos de Mistral AI para el tratamiento de datos personales, tal como la propia model card indica.
-- Produccion: la model card esta marcada como inference: false, lo que sugiere que no debe servirse a traves de la infraestructura de inferencia de HuggingFace, sino en un despliegue propio con vLLM.
+- Produccion: la model card esta marcada como inference: false, lo que sugiere que no debe servirse a traves de la infraestructura de inferencia de Hugging Face, sino en un despliegue propio con vLLM.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Pixtral-12B-2409
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Pixtral-12B-2409
 - Modelo base: https://huggingface.co/mistralai/Pixtral-12B-Base-2409
 - Blog de lanzamiento: https://mistral.ai/news/pixtral-12b/
 - Demo en chat: https://chat.mistral.ai/chat

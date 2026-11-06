@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Snapkitty/rea-unary` no es un modelo de lenguaje neuronal, sino un repositorio de software publicado en HuggingFace que contiene una cadena de herramientas de ingeniería inversa y verificación formal. El proyecto propone un flujo completo que va desde código máquina x86 hasta firmware flash-eable, pasando por decodificación, recuperación de comportamiento, especificación formal, síntesis VHDL, simulación y comprobación de invariantes. Cada decisión del pipeline se ancla explícitamente en las cuatro funciones booleanas unarias (constante-0, identidad, NOT, constante-1).
+`Snapkitty/rea-unary` no es un modelo de lenguaje neuronal, sino un repositorio de software publicado en Hugging Face que contiene una cadena de herramientas de ingeniería inversa y verificación formal. El proyecto propone un flujo completo que va desde código máquina x86 hasta firmware flash-eable, pasando por decodificación, recuperación de comportamiento, especificación formal, síntesis VHDL, simulación y comprobación de invariantes. Cada decisión del pipeline se ancla explícitamente en las cuatro funciones booleanas unarias (constante-0, identidad, NOT, constante-1).
 
 Lo desarrolla Snapkitty (Snapkitty Collective LLC), con autoría de Ahmad Ali Parr, y forma parte del denominado "SnapKitty October 2026 main drop". El repositorio es un espejo del proyecto original alojado en GitHub (`SNAPKITTYWEST/rea-unary`, commit `49598d9`) y se publica con licencia AGPL-3.0 ampliada con una cláusula de prohibición de entrenamiento de modelos de IA.
 
-El interés actual del artefacto es metodológico: ilustra cómo encadenar herramientas heterogéneas (C11, VHDL, TypeScript, Dafny, Alloy 6, GHDL, sqlite3) para construir un bucle de refutación de contraejemplos sobre hardware y binarios. No incluye pesos, arquitectura de red ni parámetros entrenables; el tamaño del repositorio en HuggingFace figura como 0.0 GB y no tiene descargas ni interacciones registradas.
+El interés actual del artefacto es metodológico: ilustra cómo encadenar herramientas heterogéneas (C11, VHDL, TypeScript, Dafny, Alloy 6, GHDL, sqlite3) para construir un bucle de refutación de contraejemplos sobre hardware y binarios. No incluye pesos, arquitectura de red ni parámetros entrenables; el tamaño del repositorio en Hugging Face figura como 0.0 GB y no tiene descargas ni interacciones registradas.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No disponible en la informacion proporcionada. Las busquedas web realizadas devu
 ## Limitaciones y advertencias
 
 - No es un modelo de IA: no dispone de pesos, arquitectura de red, contexto ni capacidades generativas. Cualquier expectativa de uso como LLM es incorrecta.
-- El repositorio en HuggingFace figura con 0.0 GB de tamano y 0 descargas, lo que sugiere que el contenido puede no estar completamente alojado o que el espejo esta vacio.
+- El repositorio en Hugging Face figura con 0.0 GB de tamano y 0 descargas, lo que sugiere que el contenido puede no estar completamente alojado o que el espejo esta vacio.
 - La `stage1` emplea un binario de prueba y analisis simulados; varias piezas son mocks, no implementaciones completas, como reconocen las tablas "real-vs-mocked" de cada etapa.
 - La verificacion declarada (140/140) se refiere a trazas registradas, no a una demostracion de correccion sobre todas las ejecuciones posibles.
 - Licencia restrictiva: AGPL-3.0 con termino adicional de prohibicion de entrenamiento de modelos de aprendizaje automatico. El codigo no puede usarse para entrenar modelos de ML, y su uso en productos comerciales exige una licencia comercial aparte de Snapkitty Collective LLC.
@@ -87,7 +87,7 @@ No disponible en la informacion proporcionada. Las busquedas web realizadas devu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/rea-unary
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/rea-unary
 - Repositorio original en GitHub: https://github.com/SNAPKITTYWEST/rea-unary
 - Licencia del repositorio: https://huggingface.co/Snapkitty/rea-unary/blob/main/LICENSE
 - Proyecto REA upstream (referenciado, bajo MIT): https://github.com/morluto/rea

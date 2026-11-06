@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dfreq-roller-ppo048-20261103 es un checkpoint de PPO (Proximal Policy Optimization) de la familia Microduck Roller, desarrollado por el usuario djduecaster y publicado en HuggingFace. Se trata de un controlador entrenado mediante aprendizaje por refuerzo que mapea 61 observaciones a 14 acciones, pensado para un entorno de simulacion fisica de tipo "roller-sprint-2m" con velocidad de consigna de 1,1 m/s. El modelo se distribuye en formato ONNX y esta etiquetado dentro de la categoria microduck-arena, lo que sugiere un ecosistema de competicion o benchmark interno del autor.
+dfreq-roller-ppo048-20261103 es un checkpoint de PPO (Proximal Policy Optimization) de la familia Microduck Roller, desarrollado por el usuario djduecaster y publicado en Hugging Face. Se trata de un controlador entrenado mediante aprendizaje por refuerzo que mapea 61 observaciones a 14 acciones, pensado para un entorno de simulacion fisica de tipo "roller-sprint-2m" con velocidad de consigna de 1,1 m/s. El modelo se distribuye en formato ONNX y esta etiquetado dentro de la categoria microduck-arena, lo que sugiere un ecosistema de competicion o benchmark interno del autor.
 
 El checkpoint corresponde al paso de entrenamiento 48 de un ciclo de actualizaciones PPO ejecutado en un learner nativo sobre CPU con soporte MPS. El autor indica explicitamente que no se trata de una variante derivada por hash ni de una copia de pesos de terceros, sino de una actualizacion independiente del controlador. La puntuacion local reportada por el evaluador original es de 2,739 segundos con 5 de 5 finalizaciones, mientras que el mejor resultado publicado previamente es de 2,570 segundos.
 
@@ -80,5 +80,5 @@ No disponible. No se conocen modelos comparables de la misma categoria (controla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-ppo048-20261103
+- Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-ppo048-20261103
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

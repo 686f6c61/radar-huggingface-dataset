@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Variante Base (clonación de voz): https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-0.6B-GGUF
 - Variante 1.7B CustomVoice (instrucciones de estilo): https://huggingface.co/BricksDisplay/Qwen3-TTS-12Hz-1.7B-CustomVoice-GGUF

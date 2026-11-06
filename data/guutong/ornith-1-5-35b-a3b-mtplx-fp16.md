@@ -70,6 +70,6 @@ No se dispone de datos de benchmarks ni de una lista verificada de modelos compa
 
 ## Enlaces
 
-- HuggingFace del modelo en cuestión: https://huggingface.co/guutong/Ornith-1.5-35B-A3B-MTPLX-FP16
-- HuggingFace del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Hugging Face del modelo en cuestión: https://huggingface.co/guutong/Ornith-1.5-35B-A3B-MTPLX-FP16
+- Hugging Face del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Repositorio MTPLX Forge: https://github.com/youssofal/MTPLX

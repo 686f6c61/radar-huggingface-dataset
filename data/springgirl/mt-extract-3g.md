@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mt-extract-3g es un modelo de lenguaje conversacional de aproximadamente 375 millones de parametros publicado por el usuario springgirl en HuggingFace. Se distribuye principalmente en formato GGUF con cuantizacion mediante matriz de importancia (imatrix), lo que indica que esta optimizado para inferencia eficiente en CPU y entornos con recursos limitados. El repositorio ocupa 0,6 GB y el modelo esta etiquetado como compatible con endpoints, lo que sugiere que puede desplegarse como servicio de inferencia API.
+mt-extract-3g es un modelo de lenguaje conversacional de aproximadamente 375 millones de parametros publicado por el usuario springgirl en Hugging Face. Se distribuye principalmente en formato GGUF con cuantizacion mediante matriz de importancia (imatrix), lo que indica que esta optimizado para inferencia eficiente en CPU y entornos con recursos limitados. El repositorio ocupa 0,6 GB y el modelo esta etiquetado como compatible con endpoints, lo que sugiere que puede desplegarse como servicio de inferencia API.
 
 La informacion publica disponible es muy limitada: no se especifican la licencia, los idiomas soportados ni la arquitectura interna del modelo. Con apenas 8 descargas y 0 likes, se trata de un modelo sin apenas adopcion ni validacion por parte de la comunidad. Su tamano compacto lo hace interesante para despliegues locales en hardware modesto, pero la ausencia de documentacion tecnica y de resultados de evaluacion obliga a extremar la precaucion antes de considerarlo para entornos de produccion.
 
@@ -71,7 +71,7 @@ No es posible realizar una comparacion de rendimiento real al carecer de resulta
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: no se indica ninguna licencia en la ficha de HuggingFace, lo que genera incertidumbre juridica sobre su uso comercial. No deberia utilizarse en productos comerciales sin aclarar este punto con el autor.
+- Licencia no especificada: no se indica ninguna licencia en la ficha de Hugging Face, lo que genera incertidumbre juridica sobre su uso comercial. No deberia utilizarse en productos comerciales sin aclarar este punto con el autor.
 - Sin documentacion de entrenamiento: se desconoce la composicion del dataset de entrenamiento, por lo que no es posible evaluar sesgos potenciales ni riesgos de contenido inapropiado.
 - Riesgo de alucinacion: al no existir evaluaciones publicas, no se puede cuantificar la tasa de alucinaciones ni su fiabilidad factual.
 - Sin datos de seguridad: no se han publicado evaluaciones de robustez frente a prompts maliciosos, jailbreaks o generacion de contenido danino.
@@ -81,6 +81,6 @@ No es posible realizar una comparacion de rendimiento real al carecer de resulta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/springgirl/mt-extract-3g
+- Repositorio Hugging Face: https://huggingface.co/springgirl/mt-extract-3g
 - Perfil del autor: https://huggingface.co/springgirl
 - Modelos del autor: https://huggingface.co/springgirl/models

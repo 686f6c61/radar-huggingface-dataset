@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`erenrosman/pii-qwen3-8b-lora-r8` es un adaptador LoRA (Low-Rank Adaptation) de 0.1 GB construido sobre el modelo base `Qwen/Qwen3-8B`, publicado por el usuario erenrosman en HuggingFace. El nombre del repositorio sugiere que el adaptador está orientado a tareas relacionadas con PII (Personally Identifiable Information, informacion de identificacion personal), aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni el caso de uso especifico.
+`erenrosman/pii-qwen3-8b-lora-r8` es un adaptador LoRA (Low-Rank Adaptation) de 0.1 GB construido sobre el modelo base `Qwen/Qwen3-8B`, publicado por el usuario erenrosman en Hugging Face. El nombre del repositorio sugiere que el adaptador está orientado a tareas relacionadas con PII (Personally Identifiable Information, informacion de identificacion personal), aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni el caso de uso especifico.
 
 El adaptador utiliza la libreria PEFT (Parameter-Efficient Fine-Tuning) y el formato safetensors, lo que indica que se trata de un ajuste fino de parametros eficiente que no modifica los pesos completos del modelo base. Al estar basado en Qwen3-8B, hereda las capacidades generales de ese modelo: generacion de texto, razonamiento, codigo y soporte multilingue, con una ventana de contexto de 131072 tokens.
 
@@ -81,7 +81,7 @@ Los tres modelos son adaptadores LoRA sobre Qwen3-8B, lo que implica que compart
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erenrosman/pii-qwen3-8b-lora-r8
+- Hugging Face: https://huggingface.co/erenrosman/pii-qwen3-8b-lora-r8
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de LoRA (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft

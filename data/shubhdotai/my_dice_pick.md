@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shubhdotai/my_dice_pick` es una política robótica de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), desarrollada por Shubham Agarwal (usuario de HuggingFace `shubhdotai`) y entrenada con la librería LeRobot. El modelo está diseñado para controlar un robot manipulador tipo `so_follower` y ejecutar una tarea concreta: recoger un dado y colocarlo dentro de una taza azul. Pertenece a la categoría de políticas de manipulación visual, donde las entradas son imágenes de una cámara frontal y el estado del robot, y la salida son acciones de control de 6 dimensiones.
+`shubhdotai/my_dice_pick` es una política robótica de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), desarrollada por Shubham Agarwal (usuario de Hugging Face `shubhdotai`) y entrenada con la librería LeRobot. El modelo está diseñado para controlar un robot manipulador tipo `so_follower` y ejecutar una tarea concreta: recoger un dado y colocarlo dentro de una taza azul. Pertenece a la categoría de políticas de manipulación visual, donde las entradas son imágenes de una cámara frontal y el estado del robot, y la salida son acciones de control de 6 dimensiones.
 
 La arquitectura ACT predice "chunks" de acciones en lugar de pasos individuales, lo que mejora la estabilidad de la ejecución en tareas de manipulación. El modelo tiene 51.668.614 parámetros (aproximadamente 51,7 millones) y se distribuye en formato `safetensors`. Fue entrenado sobre un dataset teleoperado de 30 episodios y 14.350 frames a 30 FPS. Aunque es un modelo pequeño y ligero, su utilidad principal es servir como ejemplo y baseline dentro del ecosistema LeRobot, no como un sistema de propósito general.
 

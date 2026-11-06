@@ -102,7 +102,7 @@ Los tres primeros comparten exactamente la misma base de pesos, de modo que las 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated
+- Repositorio en Hugging Face: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated
 - Motor FinchMoE (GitHub): https://github.com/haihengh/finchMoE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Abliteración upstream: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated

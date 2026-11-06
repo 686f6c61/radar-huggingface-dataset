@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Filipwozn/multitask es un prototipo de investigacion publicado en HuggingFace por el usuario Filipwozn. Se trata de una implementacion propia basada en la arquitectura Poolformer, orientada a tareas multitask, con licencia MIT. El repositorio se presenta explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
+Filipwozn/multitask es un prototipo de investigacion publicado en Hugging Face por el usuario Filipwozn. Se trata de una implementacion propia basada en la arquitectura Poolformer, orientada a tareas multitask, con licencia MIT. El repositorio se presenta explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado con benchmarks.
 
 El dato mas relevante y, a la vez, mas llamativo es la discrepancia entre la escala declarada y el numero real de parametros. La model card etiqueta la configuracion como "huge", pero la metadata de safetensors registra un total de 49.600 parametros, un orden de magnitud muy inferior al de cualquier modelo "huge" convencional. Esta incoherencia sugiere que el campo "scale" es una etiqueta de la receta de configuracion y no una medida del tamano efectivo del modelo.
 
@@ -52,7 +52,7 @@ Dado que el repositorio no contiene un checkpoint entrenado ni metricas, los cas
 - Base para experimentos de arquitectura Poolformer: un investigador puede partir de `config.json` y `training_args.json` para reproducir variantes del mezclador de pooling y comparar configuraciones bajo el mismo presupuesto de computo.
 - Estudio de normalizacion rmsnorm y activacion gelu tanh: la configuracion permite aislar el efecto de estas elecciones en un entorno multitask controlado.
 - Banco de pruebas de recetas de entrenamiento: la receta por defecto (lion con schedule exponential) puede usarse como linea base inicial y compararse con AdamW u otros optimizadores bajo exposicion de datos y semillas equivalentes.
-- Docencia y divulgacion: al ser un modelo diminuto y de codigo abierto, resulta util para explicar el ciclo completo de publicacion de un modelo en HuggingFace (config, safetensors, model card, licencia).
+- Docencia y divulgacion: al ser un modelo diminuto y de codigo abierto, resulta util para explicar el ciclo completo de publicacion de un modelo en Hugging Face (config, safetensors, model card, licencia).
 - Adaptacion a tareas multitask especificas: un equipo podria tomar el esqueleto y entrenarlo sobre su propio conjunto de tareas, siempre que documente los resultados como un checkpoint distinto de los valores por defecto.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Filipwozn/multitask
+- Modelo en Hugging Face: https://huggingface.co/Filipwozn/multitask
 - Repositorio de archivos: run.py, README.md, config.json, training_args.json, model.safetensors (accesibles desde la pagina del modelo)
 - Paper o blog oficial: no disponible
 - Demo: no disponible

@@ -92,6 +92,6 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicksondickson/FrogNano-4B-2609-oQ8e-mtp-MLX
+- Modelo en Hugging Face: https://huggingface.co/dicksondickson/FrogNano-4B-2609-oQ8e-mtp-MLX
 - Modelo base: https://huggingface.co/microsoft/FrogNano-4B-2609
 - Repositorio de oMLX: https://github.com/jundot/omlx

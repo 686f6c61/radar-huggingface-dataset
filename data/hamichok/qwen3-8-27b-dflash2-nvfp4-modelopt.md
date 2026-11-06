@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo drafter, ya que no se dispone
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/hamichok/Qwen3.8-27B-DFlash2-NVFP4-modelopt)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/hamichok/Qwen3.8-27B-DFlash2-NVFP4-modelopt)
 - [Modelo principal cuantizado (referenciado en la model card)](https://huggingface.co/hamichok/Qwen3.8-27B-NVFP4-RTX5090-LMHead4)
 - [Modelo base original en BF16](https://huggingface.co/incoai/Qwen3.8-27B-DFlash2)
 - [Modelo Qwen3.8-27B original (Qwen)](https://huggingface.co/Qwen/Qwen3.8-27B)

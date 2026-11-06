@@ -88,9 +88,9 @@ La model card menciona además una sección de divergencia de distribución exac
 
 | Modelo | Parametros | Tamano de pesos | Cuantizacion | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---:|---:|---|---:|---|---|
-| Qwen3.8-27B-MXFP4-MxWave | 27,78 B | 18,47 GiB | MXFP4 W4A16 | 8,119445 (+1,736 % vs BF16) | apache-2.0 | HuggingFace, experimental |
-| Qwen3.8-27B BF16 (origen) | 27,78 B | 51,75 GiB (tensores) | ninguna | 7,980864 (baseline) | apache-2.0 | HuggingFace, oficial |
-| amd/Qwen3.8-27B-Quark-AWQ-MXFP4 | 27,78 B | no disponible en la informacion | MXFP4 W4A16 | 8,187544 (+2,590 % vs BF16) | no disponible en la informacion | HuggingFace, revision `5233554c` |
+| Qwen3.8-27B-MXFP4-MxWave | 27,78 B | 18,47 GiB | MXFP4 W4A16 | 8,119445 (+1,736 % vs BF16) | apache-2.0 | Hugging Face, experimental |
+| Qwen3.8-27B BF16 (origen) | 27,78 B | 51,75 GiB (tensores) | ninguna | 7,980864 (baseline) | apache-2.0 | Hugging Face, oficial |
+| amd/Qwen3.8-27B-Quark-AWQ-MXFP4 | 27,78 B | no disponible en la informacion | MXFP4 W4A16 | 8,187544 (+2,590 % vs BF16) | no disponible en la informacion | Hugging Face, revision `5233554c` |
 
 La comparación directa solo es válida entre estos tres checkpoints, ya que comparten modelo base, tokenizer y entorno de ejecución. No se dispone de datos para comparar con otras familias de modelos de tamaño similar.
 
@@ -100,7 +100,7 @@ La comparación directa solo es válida entre estos tres checkpoints, ya que com
 - Perdida de calidad medible: un 1,736 % más de perplejidad que el BF16 de origen en el protocolo publicado. En tareas sensibles a la precisión numérica la degradación puede ser mayor que en perplejidad agregada.
 - Capacidad multimodal no evaluada: los tensores de visión se conservan sin cambios, pero no se realizó ninguna evaluación independiente de visión. No se debe asumir calidad multimodal a partir de los resultados de texto.
 - Contexto maximo no documentado: la model card no publica la longitud de contexto nativa del modelo, solo un `--max-model-len 16384` en la configuración de servicio probada.
-- Idiomas soportados no disponibles: la metadata de HuggingFace no declara idiomas y la model card no los especifica.
+- Idiomas soportados no disponibles: la metadata de Hugging Face no declara idiomas y la model card no los especifica.
 - Rendimiento ligado al hardware: los resultados se obtuvieron exclusivamente en una DGX Spark (GB10, SM121) con una imagen concreta de vLLM. Otros backends, GPUs o versiones de vLLM pueden dar cifras distintas.
 - No apto para comparaciones con literatura: los valores de perplejidad usan ventanas de 4.096 caracteres y no son comparables con los de protocolos basados en tokens.
 - Sin medidas de sesgo ni de alucinacion: no se publica ninguna evaluación de sesgo, toxicidad, robustez o tasa de alucinación.
@@ -111,7 +111,7 @@ La comparación directa solo es válida entre estos tres checkpoints, ya que com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kirillbilchenko/Qwen3.8-27B-MXFP4-MxWave
+- Modelo en Hugging Face: https://huggingface.co/kirillbilchenko/Qwen3.8-27B-MXFP4-MxWave
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de la herramienta MxWave: https://github.com/kirillbilchenko/MxWave
 - Baseline del cuantizador fijado: https://github.com/kirillbilchenko/MxWave/tree/0179e131544f807ecdb6d04e7e914f181dd21c9f
@@ -120,4 +120,4 @@ La comparación directa solo es válida entre estos tres checkpoints, ya que com
 - Imagen de vLLM usada en la evaluación: `vllm/vllm-openai:qwen38-flash-next@sha256:fc120ece0a388cc0aa1caad4a9f1cd92113484ab7ec2fd0efadd62585be05bf8`
 - Manifiesto de cuantización: `mxwave-manifest.json` dentro del repositorio del modelo
 - Detalle del protocolo de evaluación: `evaluation/wikitext2-prompt-ppl.json` dentro del repositorio del modelo
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny British accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario Quiglee2 y publicado en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles britanico, entrenado sobre el dataset naharte/british_english. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37,76 millones de parametros totales, y mantiene la licencia Apache 2.0 del modelo original.
+Whisper tiny British accent es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario Quiglee2 y publicado en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles britanico, entrenado sobre el dataset naharte/british_english. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37,76 millones de parametros totales, y mantiene la licencia Apache 2.0 del modelo original.
 
 El problema que aborda es la adaptacion del reconocimiento de voz al acento britanico, un dominio donde los modelos genericos de Whisper (entrenados mayoritariamente con ingles estadounidense) pueden presentar tasas de error superiores. El ajuste se realizo con un learning rate bajo (1e-5), 2000 pasos de entrenamiento y un scheduler lineal con 500 pasos de calentamiento, lo que sugiere un refinamiento conservador para preservar las capacidades del modelo base.
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks comparativos directos entre estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quiglee2/whisper-tiny-british-ft
+- Modelo en Hugging Face: https://huggingface.co/Quiglee2/whisper-tiny-british-ft
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/british_english
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

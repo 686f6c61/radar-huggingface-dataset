@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nm-testing/TinyLlama-1.1B-Chat-v1.0-nvfp4-fp8-mixed-e2e | 742,5 M (repo) | no disponible | NVFP4 + FP8 mixto | no disponible | HuggingFace, 52 descargas |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | ~1,1 B | 2048 | FP16/BF16 (base) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-0.5B-Instruct | ~0,5 B | 32768 | FP16/BF16, GGUF en la comunidad | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8192 | FP16/BF16, GGUF | Apache 2.0 | HuggingFace |
+| nm-testing/TinyLlama-1.1B-Chat-v1.0-nvfp4-fp8-mixed-e2e | 742,5 M (repo) | no disponible | NVFP4 + FP8 mixto | no disponible | Hugging Face, 52 descargas |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | ~1,1 B | 2048 | FP16/BF16 (base) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-0.5B-Instruct | ~0,5 B | 32768 | FP16/BF16, GGUF en la comunidad | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8192 | FP16/BF16, GGUF | Apache 2.0 | Hugging Face |
 
 La comparacion relevante no es de calidad, sino de proposito: este checkpoint es un artefacto de validacion de cuantizacion mixta, mientras que TinyLlama, Qwen2.5-0.5B y SmolLM2 son modelos listos para uso. Cualquier eleccion para produccion deberia recaer en los modelos base o en sus versiones GGUF/AWQ publicadas, salvo que el objetivo sea precisamente probar kernels NVFP4.
 
@@ -86,7 +86,7 @@ La comparacion relevante no es de calidad, sino de proposito: este checkpoint es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-nvfp4-fp8-mixed-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-nvfp4-fp8-mixed-e2e
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Proyecto TinyLlama (repositorio): https://github.com/jzhang38/TinyLlama
 - Libreria compressed-tensors (Neural Magic): https://github.com/neuralmagic/compressed-tensors

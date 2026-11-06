@@ -90,7 +90,7 @@ Frente al modelo base de SpeechBrain, esta versión GGUF ofrece el mismo rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lipik/lang-id-voxlingua107-ecapa-gguf
+- Modelo en Hugging Face: https://huggingface.co/lipik/lang-id-voxlingua107-ecapa-gguf
 - Modelo base: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa
 - Commit del modelo base usado: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa/commit/0253049
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

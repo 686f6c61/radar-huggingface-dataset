@@ -76,7 +76,7 @@ A modo orientativo, en la literatura cientifica existen otros enfoques de detecc
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SecurePixel ConvNeXt V2 Dual | No disponible (~28,6 M por rama, sin confirmar) | No aplica (resolucion dinamica nativa) | 86,7 % en validacion propia | Apache 2.0 | HuggingFace |
+| SecurePixel ConvNeXt V2 Dual | No disponible (~28,6 M por rama, sin confirmar) | No aplica (resolucion dinamica nativa) | 86,7 % en validacion propia | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ A modo orientativo, en la literatura cientifica existen otros enfoques de detecc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rijal028/securepixel-convnext-v2-dual
+- Modelo en Hugging Face: https://huggingface.co/rijal028/securepixel-convnext-v2-dual
 - Paper de la arquitectura base ConvNeXt V2: https://arxiv.org/abs/2301.00808
 - Repositorio oficial de ConvNeXt V2: https://github.com/facebookresearch/ConvNeXt-V2
 - Busqueda web realizada: no se han encontrado enlaces adicionales relevantes sobre este modelo. Los resultados devueltos correspondian a sitios de cuestionarios semanales sin relacion con el modelo.

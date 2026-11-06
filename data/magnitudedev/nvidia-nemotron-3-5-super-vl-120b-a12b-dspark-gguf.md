@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 
 | Modelo | Tipo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (DSpark GGUF Q8_0) | Borrador de decodificacion especulativa | ~1,2B | Ventana deslizante de 2048 en el borrador | GGUF Q8_0 | openmdw-1.1 | HuggingFace, 0 descargas |
-| RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark | Borrador original del que deriva esta conversion | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Este repositorio (DSpark GGUF Q8_0) | Borrador de decodificacion especulativa | ~1,2B | Ventana deslizante de 2048 en el borrador | GGUF Q8_0 | openmdw-1.1 | Hugging Face, 0 descargas |
+| RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark | Borrador original del que deriva esta conversion | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | NVIDIA Nemotron 3.5 Super VL 120B A12B | Modelo objetivo (MoE multimodal) | 120B totales / 12B activos (segun nombre) | no disponible | no disponible | no disponible | no disponible |
 | Otras tecnicas de drafting (por ejemplo, cabezas tipo EAGLE o Medusa) | Metodos de decodificacion especulativa | no disponible | no disponible | no aplica | no disponible | No comparables con los datos disponibles |
 
@@ -77,7 +77,7 @@ No se dispone de resultados de rendimiento ni de especificaciones detalladas de 
 - La ventana deslizante de 2048 tokens por capa condiciona la longitud de los bloques que el borrador puede proponer con coherencia.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-DSpark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-DSpark-GGUF
 - Modelo base: https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark
 - Revision del checkpoint de origen: https://huggingface.co/RedHatAI/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark/tree/4ff45128272e4e5c00ab82d2886946650229ced7
 - llama.cpp: https://github.com/ggml-org/llama.cpp

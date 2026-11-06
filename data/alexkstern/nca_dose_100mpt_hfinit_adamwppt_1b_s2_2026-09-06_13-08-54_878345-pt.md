@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nca_dose_100Mpt_hfinit_adamwppt_1B_s2 (este modelo) | Transformer GPT, 16 capas, emb 1024 | no disponible | 2048 | Apache 2.0 | HuggingFace, checkpoint .pt |
-| nca_dose_100Mpt_hfinit_100M_s0_2026-08-14_21-54-08_049198-pt | Transformer GPT, 16 capas, emb 1024 | no disponible | 2048 | Apache 2.0 | HuggingFace, checkpoint .pt |
-| nca_dose_100Mpt_hfinit_100M_s2_2026-08-14_22-07-48_627334-pt | Transformer GPT, 16 capas, emb 1024 | no disponible | 2048 | Apache 2.0 | HuggingFace, checkpoint .pt |
+| nca_dose_100Mpt_hfinit_adamwppt_1B_s2 (este modelo) | Transformer GPT, 16 capas, emb 1024 | no disponible | 2048 | Apache 2.0 | Hugging Face, checkpoint .pt |
+| nca_dose_100Mpt_hfinit_100M_s0_2026-08-14_21-54-08_049198-pt | Transformer GPT, 16 capas, emb 1024 | no disponible | 2048 | Apache 2.0 | Hugging Face, checkpoint .pt |
+| nca_dose_100Mpt_hfinit_100M_s2_2026-08-14_22-07-48_627334-pt | Transformer GPT, 16 capas, emb 1024 | no disponible | 2048 | Apache 2.0 | Hugging Face, checkpoint .pt |
 
 Los tres modelos pertenecen a la misma familia de experimentos con `nanochat` y comparten la misma configuración base, diferenciándose en la semilla y en la fecha de creación. No se dispone de comparaciones con modelos externos de tamaño similar, como GPT-2 pequeño o Pythia-160M, al no haber datos de benchmarks comunes en la información proporcionada.
 
@@ -76,6 +76,6 @@ Los tres modelos pertenecen a la misma familia de experimentos con `nanochat` y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_1B_s2_2026-09-06_13-08-54_878345-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca_dose_100Mpt_hfinit_adamwppt_1B_s2_2026-09-06_13-08-54_878345-pt
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/ubenipru
 - Repositorio nanochat: https://github.com/karpathy/nanochat

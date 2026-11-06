@@ -84,8 +84,8 @@ Interpretacion con cautela: la perplejidad en PTB (182,12) es muy alta en termin
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| `kfac-svd_uniform_mistral-7b_0.6` (este) | 4,45 B | No disponible (base: 32.768) | No disponible | Perplejidad WikiText-2 14,47; media zero-shot 39,22 % (autor, sin verificar) | HuggingFace, requiere `trust_remote_code` |
-| `unsloth/mistral-7b` (modelo base) | ~7,24 B | 32.768 tokens | No disponible en la informacion (Mistral-7B se publica habitualmente como Apache 2.0) | No disponible en la informacion | HuggingFace, transformers estandar |
+| `kfac-svd_uniform_mistral-7b_0.6` (este) | 4,45 B | No disponible (base: 32.768) | No disponible | Perplejidad WikiText-2 14,47; media zero-shot 39,22 % (autor, sin verificar) | Hugging Face, requiere `trust_remote_code` |
+| `unsloth/mistral-7b` (modelo base) | ~7,24 B | 32.768 tokens | No disponible en la informacion (Mistral-7B se publica habitualmente como Apache 2.0) | No disponible en la informacion | Hugging Face, transformers estandar |
 | Mistral-7B-Instruct (referencia de la misma familia) | ~7,24 B | 32.768 tokens | No disponible en la informacion | No disponible en la informacion | Amplia, multiples runtimes |
 | Otros checkpoints comprimidos de 3-4 B (p. ej. familias SliceGPT o SVD-LLM) | ~3-4 B | No disponible | No disponible | No disponible | Variable; muchos solo en repositorios de investigacion |
 
@@ -107,9 +107,9 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoritzMo123/kfac-svd_uniform_mistral-7b_0.6
+- Modelo en Hugging Face: https://huggingface.co/MoritzMo123/kfac-svd_uniform_mistral-7b_0.6
 - Revision con los pesos originales del articulo: https://huggingface.co/MoritzMo123/kfac-svd_uniform_mistral-7b_0.6/tree/v1-paper
 - Modelo base: https://huggingface.co/unsloth/mistral-7b
 - Publicacion (OpenReview): https://openreview.net/forum?id=IjIgNPFuCt
 - Pagina del proyecto LEMS-SVD: https://lems-svd.github.io
-- Conjuntos de evaluacion citados: WikiText-2 (`wikitext-2-raw-v1`), PTB (`ptb_text_only`), C4 (`allenai/c4`), OpenBookQA, ARC-Easy/ARC-Challenge, WinoGrande, HellaSwag, PIQA (accesibles en el HuggingFace Hub)
+- Conjuntos de evaluacion citados: WikiText-2 (`wikitext-2-raw-v1`), PTB (`ptb_text_only`), C4 (`allenai/c4`), OpenBookQA, ARC-Easy/ARC-Challenge, WinoGrande, HellaSwag, PIQA (accesibles en el Hugging Face Hub)

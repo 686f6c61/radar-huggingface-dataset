@@ -51,7 +51,7 @@ Esta conversión GGUF está portada desde el commit upstream 2769294 (fijado el 
 
 ## Benchmarks y rendimiento
 
-WER medido sobre el split completo LibriSpeech test-clean (2620 utterances) con el normalizador de texto inglés de Whisper, ruta offline, batch size 8 en una NVIDIA L40S. La referencia de HuggingFace Transformers en la misma máquina (VoxtralRealtimeForConditionalGeneration, BF16, greedy) da 2,08%; la conversión BF16 GGUF iguala ese 2,08%.
+WER medido sobre el split completo LibriSpeech test-clean (2620 utterances) con el normalizador de texto inglés de Whisper, ruta offline, batch size 8 en una NVIDIA L40S. La referencia de Hugging Face Transformers en la misma máquina (VoxtralRealtimeForConditionalGeneration, BF16, greedy) da 2,08%; la conversión BF16 GGUF iguala ese 2,08%.
 
 | Cuantizacion | Tamano | WER LibriSpeech test-clean |
 |---|---:|---:|

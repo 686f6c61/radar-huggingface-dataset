@@ -78,7 +78,7 @@ La información disponible no incluye comparativas con modelos o adaptadores sim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EllipsesMark/minimax-h3-vr180-sbs-lora
+- Hugging Face: https://huggingface.co/EllipsesMark/minimax-h3-vr180-sbs-lora
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Herramienta spatialmedia de Google: https://github.com/google/spatial-media
 - Índice Stereo4D: https://stereo4d.github.io

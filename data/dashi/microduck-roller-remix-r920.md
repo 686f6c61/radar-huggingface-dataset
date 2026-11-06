@@ -21,7 +21,7 @@ Es relevante ahora por su encaje en el ecosistema de robótica open source de Po
 | Licencia | no disponible |
 | Formato de pesos | ONNX (`policy.onnx`) + `manifest.json` (schema 2 del manifiesto de políticas de microduck) |
 
-Datos adicionales del artefacto: dimensión de observación 61, dimensión de acción 14, frecuencia de control 50 Hz, ranura de destino `walk`, tamaño del repositorio 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 2026-10-21 según los metadatos de HuggingFace.
+Datos adicionales del artefacto: dimensión de observación 61, dimensión de acción 14, frecuencia de control 50 Hz, ranura de destino `walk`, tamaño del repositorio 0,0 GB, 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 2026-10-21 según los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Relación | Observación / acción | Frecuencia | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dashi/microduck-roller-remix-r920` | Fine-tune del siguiente | 61 / 14 | 50 Hz | ONNX + manifest schema 2 | no disponible | HuggingFace, 0 descargas |
-| `jrubiosainz/microduck-game-roller-remix4` | Modelo base | no disponible en la información proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-roller-remix-r920` | Fine-tune del siguiente | 61 / 14 | 50 Hz | ONNX + manifest schema 2 | no disponible | Hugging Face, 0 descargas |
+| `jrubiosainz/microduck-game-roller-remix4` | Modelo base | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos sobre otras políticas de microduck (por ejemplo, variantes para otros slots o para marcha sin rollers) que permitan una comparación cuantitativa de rendimiento, contexto o licencia. Cualquier comparación más allá de la relación de fine-tune indicada sería especulativa.
 
@@ -86,7 +86,7 @@ No se dispone de datos sobre otras políticas de microduck (por ejemplo, variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-roller-remix-r920
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-roller-remix-r920
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-roller-remix4
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `main`, commit `6ff40704a` (ruta indicada en la model card; no se proporcionó URL completa)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`MuhilanM24/agent-ms-9m` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario MuhilanM24, entrenado mediante SFT sobre el modelo base cuantizado `unsloth/qwen2.5-coder-7b-instruct-bnb-4bit`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos delta que debe cargarse junto al modelo base para producir inferencia. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de 7B completo. El repositorio no registra descargas ni "likes" en el momento de la consulta.
+`MuhilanM24/agent-ms-9m` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario MuhilanM24, entrenado mediante SFT sobre el modelo base cuantizado `unsloth/qwen2.5-coder-7b-instruct-bnb-4bit`. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de pesos delta que debe cargarse junto al modelo base para producir inferencia. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de 7B completo. El repositorio no registra descargas ni "likes" en el momento de la consulta.
 
-La relevancia de esta ficha es limitada y conviene ser explícito al respecto: la model card publicada es la plantilla por defecto de HuggingFace sin rellenar, de modo que no hay información sobre el dataset de entrenamiento, los hiperparámetros, la licencia, los idiomas soportados ni evaluaciones. El nombre del repositorio (`agent-ms-9m`) sugiere un ajuste orientado a comportamiento de agente, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
+La relevancia de esta ficha es limitada y conviene ser explícito al respecto: la model card publicada es la plantilla por defecto de Hugging Face sin rellenar, de modo que no hay información sobre el dataset de entrenamiento, los hiperparámetros, la licencia, los idiomas soportados ni evaluaciones. El nombre del repositorio (`agent-ms-9m`) sugiere un ajuste orientado a comportamiento de agente, pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
 Por tanto, esta ficha documenta lo que se puede verificar (tecnología, modelo base, formato de pesos, tamaño) y marca sistemáticamente como "no disponible" todo lo que el autor no ha declarado. Cualquier evaluación en producción debería partir de una validación propia antes de asumir capacidades.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha documenta lo que se puede verificar (tecnología, modelo b
 
 El artefacto es un adaptador LoRA de tipo PEFT, no un modelo completo. La arquitectura subyacente es la del modelo base `unsloth/qwen2.5-coder-7b-instruct-bnb-4bit`, es decir, un transformer decoder-only de la familia Qwen2.5-Coder en su variante instruct de 7B, con los pesos cuantizados a 4 bits mediante bitsandbytes. El adaptador se aplica sobre esa base cuantizada y se puede cargar con `PeftModel.from_pretrained` sobre el modelo base, o fusionarse con él si se dispone de los pesos en precisión completa.
 
-Según las etiquetas del repositorio, el entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando el ecosistema Unsloth, TRL y Transformers, con PEFT 0.19.1. No hay información alguna sobre el número de tokens de entrenamiento, la composición del dataset, el rango y alpha del adaptador, la tasa de aprendizaje, el número de épocas ni si se aplicaron fases posteriores de DPO o RLHF. Tampoco se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal u otras). La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla de model card de HuggingFace, y no a un paper asociado al modelo.
+Según las etiquetas del repositorio, el entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando el ecosistema Unsloth, TRL y Transformers, con PEFT 0.19.1. No hay información alguna sobre el número de tokens de entrenamiento, la composición del dataset, el rango y alpha del adaptador, la tasa de aprendizaje, el número de épocas ni si se aplicaron fases posteriores de DPO o RLHF. Tampoco se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal u otras). La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla de model card de Hugging Face, y no a un paper asociado al modelo.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MuhilanM24/agent-ms-9m | No disponible (adaptador sobre base de ~7B) | No disponible en la model card | No disponible | HuggingFace, 0 descargas | Adaptador LoRA sin documentar; requiere el modelo base |
-| Qwen2.5-Coder-7B-Instruct | Aproximadamente 7B | 32.768 tokens nativos segun la documentacion del modelo base | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base de referencia; especializado en codigo |
-| Qwen2.5-Coder-7B-Instruct-bnb-4bit (Unsloth) | Aproximadamente 7B en 4 bits | Igual que el modelo base | Apache 2.0 | HuggingFace | Version cuantizada sobre la que se entrena este adaptador |
-| Adaptadores LoRA de terceros sobre Qwen2.5-Coder-7B | Variable | Heredado del base | Habitualmente no declarada | HuggingFace | Calidad y licencia dependen de cada autor |
+| MuhilanM24/agent-ms-9m | No disponible (adaptador sobre base de ~7B) | No disponible en la model card | No disponible | Hugging Face, 0 descargas | Adaptador LoRA sin documentar; requiere el modelo base |
+| Qwen2.5-Coder-7B-Instruct | Aproximadamente 7B | 32.768 tokens nativos segun la documentacion del modelo base | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base de referencia; especializado en codigo |
+| Qwen2.5-Coder-7B-Instruct-bnb-4bit (Unsloth) | Aproximadamente 7B en 4 bits | Igual que el modelo base | Apache 2.0 | Hugging Face | Version cuantizada sobre la que se entrena este adaptador |
+| Adaptadores LoRA de terceros sobre Qwen2.5-Coder-7B | Variable | Heredado del base | Habitualmente no declarada | Hugging Face | Calidad y licencia dependen de cada autor |
 
 No se dispone de datos de rendimiento del adaptador que permitan una comparación cuantitativa con alternativas.
 

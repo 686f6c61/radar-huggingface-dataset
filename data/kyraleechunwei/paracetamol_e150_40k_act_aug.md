@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Paracetamol_e150_40K_ACT_aug es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice secuencias cortas de acciones en lugar de pasos individuales. Lo publica el usuario KyraLeeChunWei en HuggingFace Hub mediante la librería LeRobot de HuggingFace, y está entrenado sobre el dataset propio `KyraLeeChunWei/Paracetamol_e150`. No es un modelo de lenguaje: es un controlador visomotor para manipulación robótica.
+Paracetamol_e150_40K_ACT_aug es una política de robótica basada en ACT (Action Chunking with Transformers), un método de aprendizaje por imitación que predice secuencias cortas de acciones en lugar de pasos individuales. Lo publica el usuario KyraLeeChunWei en Hugging Face Hub mediante la librería LeRobot de Hugging Face, y está entrenado sobre el dataset propio `KyraLeeChunWei/Paracetamol_e150`. No es un modelo de lenguaje: es un controlador visomotor para manipulación robótica.
 
 El modelo resuelve el problema de convertir observaciones visuales y el estado del robot en comandos de acción de baja dimensión, típicamente para un brazo tipo SO-100/SO-101. Con 51,7 millones de parámetros, está diseñado para entrenamiento e inferencia en hardware modesto, lo que lo hace accesible para laboratorios y aficionados que trabajan con robots de bajo coste. El sufijo "40K" sugiere 40 000 pasos de entrenamiento y "aug" indica aumento de datos, aunque la model card no detalla estas decisiones.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Paracetamol_e150_40K_ACT_aug | 51,7 M | ACT, imitación con chunks | no aplica | Apache 2.0 | HuggingFace (LeRobot) |
+| Paracetamol_e150_40K_ACT_aug | 51,7 M | ACT, imitación con chunks | no aplica | Apache 2.0 | Hugging Face (LeRobot) |
 | ACT original (paper 2304.13705) | ~80 M (según configuración) | ACT, imitación con chunks | no aplica | código MIT (repositorio original) | GitHub |
 | Diffusion Policy | variable según configuración | difusión para acciones | no aplica | MIT (repositorio original) | GitHub |
 | VQ-BeT | variable según configuración | cuantización vectorial de comportamiento | no aplica | MIT (repositorio original) | GitHub |
@@ -80,7 +80,7 @@ La comparación es orientativa: los parámetros de los métodos alternativos dep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KyraLeeChunWei/Paracetamol_e150_40K_ACT_aug
+- Modelo en Hugging Face: https://huggingface.co/KyraLeeChunWei/Paracetamol_e150_40K_ACT_aug
 - Dataset: https://huggingface.co/datasets/KyraLeeChunWei/Paracetamol_e150
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Documentación LeRobot: https://huggingface.co/docs/lerobot/index

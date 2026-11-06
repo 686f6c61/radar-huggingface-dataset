@@ -72,5 +72,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Reyanshyuah2/qa-demo
+- Hugging Face: https://huggingface.co/Reyanshyuah2/qa-demo
 - Demo web (Blink): https://blink.new/p/model-qa-demo-96jvhhly (página de demostración, no contiene datos técnicos adicionales)

@@ -79,7 +79,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/GLM-5.2-NVFP4-FP8
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.2-NVFP4-FP8
 - Repositorio de archivos: https://huggingface.co/RedHatAI/GLM-5.2-NVFP4-FP8/tree/main
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Recetas vLLM para GLM-5.2: https://recipes.vllm.ai/zai-org/GLM-5.2

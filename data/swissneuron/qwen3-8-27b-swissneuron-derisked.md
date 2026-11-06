@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SwissNeuron (este) | 27.36B | 1M (configurado) | Híbrida (Gated-DeltaNet + atención completa) | other | HuggingFace, BF16 |
-| Qwen3.8-27B (base) | 27.36B | 262K nativo, extensible a 1M | Híbrida (Gated-DeltaNet + atención completa) | Apache 2.0 (según Qwen) | HuggingFace, oficial |
-| Qwen3-30B-A3B (MoE) | 30.5B total, 3.3B activos | 32K (extensible a 128K) | MoE con atención completa | Apache 2.0 | HuggingFace, oficial |
+| SwissNeuron (este) | 27.36B | 1M (configurado) | Híbrida (Gated-DeltaNet + atención completa) | other | Hugging Face, BF16 |
+| Qwen3.8-27B (base) | 27.36B | 262K nativo, extensible a 1M | Híbrida (Gated-DeltaNet + atención completa) | Apache 2.0 (según Qwen) | Hugging Face, oficial |
+| Qwen3-30B-A3B (MoE) | 30.5B total, 3.3B activos | 32K (extensible a 128K) | MoE con atención completa | Apache 2.0 | Hugging Face, oficial |
 
 La comparativa se centra en el modelo base Qwen3.8-27B, del que deriva, y en un modelo MoE de tamaño similar. SwissNeuron se diferencia por su post-entrenamiento de "derisking" y la extensión de contexto a 1M, pero no se dispone de datos de rendimiento para comparar. La licencia "other" es una desventaja frente al Apache 2.0 del base, y la falta de cuantizaciones limita su despliegue en hardware consumer.
 
@@ -79,7 +79,7 @@ La comparativa se centra en el modelo base Qwen3.8-27B, del que deriva, y en un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SwissNeuron/Qwen3.8-27B-SwissNeuron-Derisked
+- Modelo en Hugging Face: https://huggingface.co/SwissNeuron/Qwen3.8-27B-SwissNeuron-Derisked
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Qwen3.8 en vLLM Ascend: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.8-27B.html
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

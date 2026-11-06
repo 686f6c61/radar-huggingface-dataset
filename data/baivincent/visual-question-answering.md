@@ -85,7 +85,7 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/baivincent/visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/baivincent/visual-question-answering
 - Fichero principal de notas: `review.md` dentro del repositorio
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este autor o a este repositorio.
 - No se han encontrado enlaces a VQAv2, GQA u OK-VQA proporcionados por el autor en la informacion disponible; deben localizarse y verificarse de forma independiente.

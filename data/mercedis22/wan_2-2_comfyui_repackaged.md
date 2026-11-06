@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mercedis22/Wan_2.2_ComfyUI_Repackaged` es un repositorio de redistribución ("repackaging") que agrupa en un único espacio de HuggingFace los pesos de la familia Wan 2.2 y de varios de sus derivados, ya convertidos al formato de archivo único (single-file) que consume ComfyUI. No se trata de un modelo nuevo ni de un entrenamiento propio: el autor, `mercedis22`, se limita a recomprimir y renombrar checkpoints publicados originalmente por Wan-AI, alibaba-pai, NVIDIA y lightx2v, e incluye una guía de carpetas para colocarlos en una instalación de ComfyUI.
+`mercedis22/Wan_2.2_ComfyUI_Repackaged` es un repositorio de redistribución ("repackaging") que agrupa en un único espacio de Hugging Face los pesos de la familia Wan 2.2 y de varios de sus derivados, ya convertidos al formato de archivo único (single-file) que consume ComfyUI. No se trata de un modelo nuevo ni de un entrenamiento propio: el autor, `mercedis22`, se limita a recomprimir y renombrar checkpoints publicados originalmente por Wan-AI, alibaba-pai, NVIDIA y lightx2v, e incluye una guía de carpetas para colocarlos en una instalación de ComfyUI.
 
 El paquete cubre prácticamente toda la gama de difusión de vídeo de Wan 2.2: texto a vídeo (T2V), imagen a vídeo (I2V), texto+imagen a vídeo (TI2V-5B), audio/speech a vídeo (S2V-14B), animación de personajes (Animate-14B), control de cámara y de pose (Fun-Control), inpainting de vídeo (Fun-InP), edición con referencias (VACE-Fun) y edición de imagen con coherencia temporal (ChronoEdit-14B). Los tamaños declarados en los nombres de los modelos base son 14B y 5B de parámetros, con arquitectura de difusión tipo transformer y un esquema de dos expertos (ruido alto / ruido bajo) en las variantes 14B, tal como refleja la nomenclatura de los archivos (`high_noise` / `low_noise`).
 
@@ -87,11 +87,11 @@ Los elementos comparables presentes en la información son los propios repositor
 
 | Repositorio | Contenido | Parámetros | Formato | Licencia declarada | Disponibilidad |
 |---|---|---|---|---|---|
-| `mercedis22/Wan_2.2_ComfyUI_Repackaged` | 32 checkpoints de difusión, 6 LoRA, 2 text encoders, 2 VAE, 1 audio encoder | 14B y 5B | safetensors single-file para ComfyUI | apache-2.0 | HuggingFace, 3 descargas, espejo no oficial |
-| `Wan-AI/Wan2.2-T2V-A14B`, `Wan-AI/Wan2.2-I2V-A14B` | Checkpoints originales | 14B activos | safetensors (formato original / Diffusers) | apache-2.0 | HuggingFace, repositorio oficial |
-| `Wan-AI/Wan2.2-TI2V-5B` | Checkpoint original | 5B | safetensors (formato original / Diffusers) | apache-2.0 | HuggingFace, repositorio oficial |
-| `nvidia/ChronoEdit-14B-Diffusers` | Modelo de edición de imagen con coherencia temporal | 14B | Diffusers | no disponible en la información proporcionada | HuggingFace |
-| `lightx2v/Wan2.2-Distill-Loras` | LoRA de destilación a 4 pasos | no disponible | safetensors (LoRA) | no disponible en la información proporcionada | HuggingFace |
+| `mercedis22/Wan_2.2_ComfyUI_Repackaged` | 32 checkpoints de difusión, 6 LoRA, 2 text encoders, 2 VAE, 1 audio encoder | 14B y 5B | safetensors single-file para ComfyUI | apache-2.0 | Hugging Face, 3 descargas, espejo no oficial |
+| `Wan-AI/Wan2.2-T2V-A14B`, `Wan-AI/Wan2.2-I2V-A14B` | Checkpoints originales | 14B activos | safetensors (formato original / Diffusers) | apache-2.0 | Hugging Face, repositorio oficial |
+| `Wan-AI/Wan2.2-TI2V-5B` | Checkpoint original | 5B | safetensors (formato original / Diffusers) | apache-2.0 | Hugging Face, repositorio oficial |
+| `nvidia/ChronoEdit-14B-Diffusers` | Modelo de edición de imagen con coherencia temporal | 14B | Diffusers | no disponible en la información proporcionada | Hugging Face |
+| `lightx2v/Wan2.2-Distill-Loras` | LoRA de destilación a 4 pasos | no disponible | safetensors (LoRA) | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar este paquete con alternativas de otros desarrolladores (por ejemplo, otros modelos de difusión de vídeo de código abierto), por lo que esa comparación no se incluye.
 
@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento que permitan comparar este paquete con alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mercedis22/Wan_2.2_ComfyUI_Repackaged
+- Repositorio en Hugging Face: https://huggingface.co/mercedis22/Wan_2.2_ComfyUI_Repackaged
 - Ejemplos de Wan 2.2 en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/wan22/
 - NVIDIA ChronoEdit-14B-Diffusers: https://huggingface.co/nvidia/ChronoEdit-14B-Diffusers
 - Wan-AI/Wan2.2-Animate-14B: https://huggingface.co/Wan-AI/Wan2.2-Animate-14B

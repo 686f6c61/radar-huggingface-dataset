@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables. El modelo base `formalm
 
 ## Enlaces
 
-- [HuggingFace: etiennebamas/qwen3-sft-classic-small-data-equal-compute](https://huggingface.co/etiennebamas/qwen3-sft-classic-small-data-equal-compute)
+- [Hugging Face: etiennebamas/qwen3-sft-classic-small-data-equal-compute](https://huggingface.co/etiennebamas/qwen3-sft-classic-small-data-equal-compute)
 - [Modelo base: formalmathatepfl/qwen3-cpt](https://huggingface.co/formalmathatepfl/qwen3-cpt)
 - [Repositorio oficial de Qwen3 (GitHub)](https://github.com/QwenLM/Qwen3)

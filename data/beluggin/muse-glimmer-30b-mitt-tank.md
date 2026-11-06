@@ -67,9 +67,9 @@ El autor advierte de que la puntuación del modelo stock probablemente subestima
 
 | Modelo | Parámetros | Contexto | Resultado en la prueba | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-MITT-Tank | 30B (adaptador LoRA) | no disponible | 50/50 y 18/18 | Apache 2.0 | HuggingFace (adaptador) |
-| Muse Glimmer 30B stock | 30B | no disponible | 31/50 y 13/18 | Apache 2.0 | HuggingFace (modelo base) |
-| Llama-3.2-3B-MITT-Tank | 3B (adaptador LoRA) | no disponible | 49/50 (vía Ollama con JSON forzado) | no disponible en la información | HuggingFace (adaptador) |
+| Muse-Glimmer-30B-MITT-Tank | 30B (adaptador LoRA) | no disponible | 50/50 y 18/18 | Apache 2.0 | Hugging Face (adaptador) |
+| Muse Glimmer 30B stock | 30B | no disponible | 31/50 y 13/18 | Apache 2.0 | Hugging Face (modelo base) |
+| Llama-3.2-3B-MITT-Tank | 3B (adaptador LoRA) | no disponible | 49/50 (vía Ollama con JSON forzado) | no disponible en la información | Hugging Face (adaptador) |
 
 El autor subraya que el resultado de 49/50 del ajuste sobre Llama no es directamente comparable, porque se ejecutó con salida JSON forzada en Ollama sobre una Raspberry Pi 5, mientras que este modelo se ejecutó con `transformers` sin restricción JSON.
 
@@ -87,7 +87,7 @@ El autor subraya que el resultado de 49/50 del ajuste sobre Llama no es directam
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Beluggin/Muse-Glimmer-30B-MITT-Tank
+- Hugging Face del adaptador: https://huggingface.co/Beluggin/Muse-Glimmer-30B-MITT-Tank
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Proyecto MITT: https://github.com/Beluggin/multimodal-teleoperation
 - Ajuste menor sobre Llama: https://huggingface.co/Beluggin/Llama-3.2-3B-MITT-Tank

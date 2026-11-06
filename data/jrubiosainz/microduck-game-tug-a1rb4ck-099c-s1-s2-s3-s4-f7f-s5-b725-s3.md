@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parámetros | Contexto | Rendimiento (semilla 3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Esta ficha (`...-b725-s3`) | no disponible | 61 valores de observación | 165.62923192977905 cm | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` rev. `099ced00` | no disponible | 61 valores de observación | 165.59808254241943 cm | Apache 2.0 | HuggingFace |
-| `jrubiosainz/game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5` | no disponible | 61 valores de observación | 166.23103618621826 cm (run `01M6CGN519G9KJQC9ZFW4K`) | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` rev. `b725cd39` | no disponible | 61 valores de observación | 166.23209476470947 cm (run `01M6CM55RSZJJSG3Z1RQX1`) | Apache 2.0 | HuggingFace |
+| Esta ficha (`...-b725-s3`) | no disponible | 61 valores de observación | 165.62923192977905 cm | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` rev. `099ced00` | no disponible | 61 valores de observación | 165.59808254241943 cm | Apache 2.0 | Hugging Face |
+| `jrubiosainz/game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5` | no disponible | 61 valores de observación | 166.23103618621826 cm (run `01M6CGN519G9KJQC9ZFW4K`) | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` rev. `b725cd39` | no disponible | 61 valores de observación | 166.23209476470947 cm (run `01M6CM55RSZJJSG3Z1RQX1`) | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 ## Enlaces
 
-- [HuggingFace: jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3](https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3)
+- [Hugging Face: jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3](https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3)
 - [Modelo base: a1rb4Ck/microduck-tug](https://huggingface.co/a1rb4Ck/microduck-tug)
 - [Microduck Arena (Pollen Robotics)](https://huggingface.co/spaces/pollen-robotics/microduck-arena)
 - [Perfil de a1rb4Ck](https://huggingface.co/a1rb4Ck)

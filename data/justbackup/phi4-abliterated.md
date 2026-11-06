@@ -69,6 +69,6 @@ No se dispone de información para comparar con otros modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Justbackup/Phi4-abliterated
+- Hugging Face: https://huggingface.co/Justbackup/Phi4-abliterated
 - Repositorio del autor (fork de abliteration): https://github.com/Undi95/abliteration/
 - Repositorio original de abliteration: https://github.com/Orion-zhen/abliteration.git

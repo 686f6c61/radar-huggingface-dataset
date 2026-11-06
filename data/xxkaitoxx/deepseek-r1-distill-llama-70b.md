@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Llama-70B es un modelo de lenguaje denso de 70 mil millones de parámetros obtenido mediante destilación del modelo de razonamiento DeepSeek-R1 sobre la arquitectura Llama 3.3. Fue desarrollado originalmente por DeepSeek AI y publicado como parte de la familia de modelos destilados que acompaña al paper de DeepSeek-R1 (arXiv:2501.12948). El repositorio analizado aquí es una redistribución alojada por el usuario XxKaitoxX en HuggingFace, que replica los pesos del checkpoint oficial bajo licencia MIT.
+DeepSeek-R1-Distill-Llama-70B es un modelo de lenguaje denso de 70 mil millones de parámetros obtenido mediante destilación del modelo de razonamiento DeepSeek-R1 sobre la arquitectura Llama 3.3. Fue desarrollado originalmente por DeepSeek AI y publicado como parte de la familia de modelos destilados que acompaña al paper de DeepSeek-R1 (arXiv:2501.12948). El repositorio analizado aquí es una redistribución alojada por el usuario XxKaitoxX en Hugging Face, que replica los pesos del checkpoint oficial bajo licencia MIT.
 
 El modelo resuelve el problema de acceder a capacidades de razonamiento de tipo chain-of-thought (CoT) en un tamaño manejable para infraestructura de una sola máquina multi-GPU, sin necesidad de recurrir a la arquitectura MoE de 671B parámetros del R1 completo. La destilación transfiere los patrones de razonamiento descubiertos por RL a un transformer denso estándar, lo que simplifica el despliegue en comparación con el modelo maestro.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-R1-Distill-Llama-70B (este repo) | 70B | no disponible | MIT | HuggingFace (redistribución) |
-| DeepSeek-R1-Distill-Qwen-32B | 32B | no disponible | MIT (según proyecto original) | HuggingFace (oficial DeepSeek AI) |
-| DeepSeek-R1-Distill-Llama-8B | 8B | no disponible | MIT (según proyecto original) | HuggingFace (oficial DeepSeek AI) |
-| Llama 3.3 70B (base) | 70B | no disponible | Llama 3.3 Community License | HuggingFace (Meta) |
+| DeepSeek-R1-Distill-Llama-70B (este repo) | 70B | no disponible | MIT | Hugging Face (redistribución) |
+| DeepSeek-R1-Distill-Qwen-32B | 32B | no disponible | MIT (según proyecto original) | Hugging Face (oficial DeepSeek AI) |
+| DeepSeek-R1-Distill-Llama-8B | 8B | no disponible | MIT (según proyecto original) | Hugging Face (oficial DeepSeek AI) |
+| Llama 3.3 70B (base) | 70B | no disponible | Llama 3.3 Community License | Hugging Face (Meta) |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada para establecer diferencias cuantitativas entre estos modelos.
 
@@ -84,11 +84,11 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/XxKaitoxX/DeepSeek-R1-Distill-Llama-70B
+- Repositorio Hugging Face analizado: https://huggingface.co/XxKaitoxX/DeepSeek-R1-Distill-Llama-70B
 - Paper DeepSeek-R1 (arXiv): https://arxiv.org/abs/2501.12948
 - PDF del paper: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio oficial DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
 - Licencia MIT del proyecto: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/LICENSE

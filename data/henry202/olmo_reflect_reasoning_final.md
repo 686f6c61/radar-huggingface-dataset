@@ -2,11 +2,11 @@
 
 ## Resumen
 
-henry202/olmo_reflect_reasoning_final es un adaptador LoRA publicado en HuggingFace por el usuario henry202, entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base allenai/Olmo-3-7B-Instruct-SFT. Se trata, por tanto, de un ajuste fino orientado a reforzar capacidades de razonamiento sobre un modelo instructivo de la familia Olmo 3 de AI2, no de un modelo completo: su repositorio ocupa 0,2 GB, un tamano coherente con un adaptador PEFT y no con los pesos completos de un modelo de 7 000 millones de parametros.
+henry202/olmo_reflect_reasoning_final es un adaptador LoRA publicado en Hugging Face por el usuario henry202, entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base allenai/Olmo-3-7B-Instruct-SFT. Se trata, por tanto, de un ajuste fino orientado a reforzar capacidades de razonamiento sobre un modelo instructivo de la familia Olmo 3 de AI2, no de un modelo completo: su repositorio ocupa 0,2 GB, un tamano coherente con un adaptador PEFT y no con los pesos completos de un modelo de 7 000 millones de parametros.
 
 La relevancia de esta ficha es limitada pero concreta: documenta un ejemplo de aplicacion de RL (GRPO) con la libreria TRL sobre un modelo abierto, un flujo de trabajo cada vez mas habitual para mejorar el razonamiento multi-paso en modelos de parametros medios. Al tratarse de un adaptador, su uso requiere descargar y cargar por separado el modelo base, y su comportamiento final depende tanto del adaptador como del modelo subyacente.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion, licencia ni idiomas declarados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion externa conocida de su calidad.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no incluye descripcion, datos de entrenamiento, hiperparametros, resultados de evaluacion, licencia ni idiomas declarados. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion externa conocida de su calidad.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ La model card publicada es la plantilla por defecto de HuggingFace sin rellenar:
 | Tamano del repositorio | 0,2 GB |
 | Pipeline declarado | text-generation |
 | Autor | henry202 |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -86,8 +86,8 @@ Las cifras de VRAM que siguen son estimaciones basadas en un modelo de aproximad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| henry202/olmo_reflect_reasoning_final | Adaptador LoRA sobre base de ~7B | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| allenai/Olmo-3-7B-Instruct-SFT (modelo base) | ~7B (segun denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (repositorio de AllenAI) |
+| henry202/olmo_reflect_reasoning_final | Adaptador LoRA sobre base de ~7B | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| allenai/Olmo-3-7B-Instruct-SFT (modelo base) | ~7B (segun denominacion) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (repositorio de AllenAI) |
 | Llama 3.1 8B Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Ampliamente disponible |
 | Qwen2.5-7B-Instruct | 7,6B | 131 072 tokens | Apache 2.0 | Ampliamente disponible |
 
@@ -95,7 +95,7 @@ Nota: los datos de Llama 3.1 8B Instruct y Qwen2.5-7B-Instruct proceden de sus f
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion publicada es la plantilla por defecto de HuggingFace, sin datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+- Model card vacia: la documentacion publicada es la plantilla por defecto de Hugging Face, sin datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 - Ausencia de validacion externa: 0 descargas y 0 likes; no hay terceros que hayan reportado resultados con este adaptador.
 - Licencia no especificada: al no declararse licencia, no se puede asumir permiso de uso comercial. Ademas, la licencia del modelo base (allenai/Olmo-3-7B-Instruct-SFT) debe verificarse por separado, ya que el adaptador hereda sus restricciones.
 - Dependencia del modelo base: el repositorio no es autosuficiente; sin descargar allenai/Olmo-3-7B-Instruct-SFT el adaptador no es utilizable.
@@ -110,7 +110,7 @@ Nota: los datos de Llama 3.1 8B Instruct y Qwen2.5-7B-Instruct proceden de sus f
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/henry202/olmo_reflect_reasoning_final
+- Hugging Face del modelo: https://huggingface.co/henry202/olmo_reflect_reasoning_final
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Libreria TRL (GRPO): https://huggingface.co/docs/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wuro-Nucobiyo-Tanle es un modelo de texto a voz (text-to-speech) construido sobre un modelo de lenguaje de tipo Llama, publicado por el usuario Panga-Azazia en HuggingFace. Con 3.300.928.512 parametros (aproximadamente 3,3 mil millones) en pesos safetensors, se presenta como un sistema de sintesis de voz basado en LLM ("llm-based-tts") orientado a lenguas africanas, con enfasis en Mali y su entorno linguistico, ademas de ingles y frances.
+Wuro-Nucobiyo-Tanle es un modelo de texto a voz (text-to-speech) construido sobre un modelo de lenguaje de tipo Llama, publicado por el usuario Panga-Azazia en Hugging Face. Con 3.300.928.512 parametros (aproximadamente 3,3 mil millones) en pesos safetensors, se presenta como un sistema de sintesis de voz basado en LLM ("llm-based-tts") orientado a lenguas africanas, con enfasis en Mali y su entorno linguistico, ademas de ingles y frances.
 
 El modelo deriva de una cadena de ajuste fino que parte de maya-research/maya1 y pasa por RobotsMali/Wuro y Panga-Azazia/Wuro-Mali-Tanle-v0, segun los metadatos de la ficha. Cubre 18 codigos de idioma, entre ellos bambara (bm), bomu (bmq), dyula (dyu), mossi (mos), fulfulde maasina (ffm), tamasheq (taq), frances (fr) e ingles (en), lo que lo situa en el nicho de la sintesis de voz para lenguas de bajos recursos.
 
@@ -22,7 +22,7 @@ Su relevancia actual es doble: por un lado, la mayoria de los sistemas TTS comer
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Tamano del repositorio | 26,4 GB |
 | Pipeline declarado | text-to-speech |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modelo base | maya-research/maya1; RobotsMali/Wuro; Panga-Azazia/Wuro-Mali-Tanle-v0 |
 | Descargas / likes | 397 descargas, 0 likes |
 | Fechas | Creado el 26-09-2026, actualizado el 24-10-2026 |
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wuro-Nucobiyo-Tanle | 3,3 B | No disponible | 18 codigos, foco en Mali | Apache 2.0 | Gated en HuggingFace |
+| Wuro-Nucobiyo-Tanle | 3,3 B | No disponible | 18 codigos, foco en Mali | Apache 2.0 | Gated en Hugging Face |
 | maya-research/maya1 (base) | No disponible | No disponible | No disponible | No disponible | No verificada en esta busqueda |
 | RobotsMali/Wuro (base) | No disponible | No disponible | No disponible | No disponible | No verificada en esta busqueda |
 | Panga-Azazia/Wuro-Mali-Tanle-v0 (base) | No disponible | No disponible | No disponible | No disponible | No verificada en esta busqueda |
@@ -95,14 +95,14 @@ No se dispone de datos verificados de parametros, contexto ni rendimiento de los
 - Idiomas sin normalizacion documentada: no se especifica el tratamiento de numeros, abreviaturas, fechas ni puntuacion, lo que afecta directamente a la inteligibilidad.
 - Sesgos: al entrenarse presumiblemente con voces de un numero limitado de hablantes, el modelo puede reproducir un unico registro de voz, sesgos de genero o de variedad dialectal, y carecer de diversidad vocal.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificacion, pero no cubre derechos de imagen ni de voz de los hablantes originales; la responsabilidad sobre el uso de voces sintetizadas recae en el desplegador.
-- Acceso restringido: el caracter gated obliga a aceptar condiciones en HuggingFace, lo que puede anadir friccion en pipelines automatizados y en entornos de CI.
+- Acceso restringido: el caracter gated obliga a aceptar condiciones en Hugging Face, lo que puede anadir friccion en pipelines automatizados y en entornos de CI.
 - Sin artefactos cuantizados: no hay GGUF ni variantes INT4/INT8 publicadas, de modo que el despliegue en hardware de consumo exige trabajo adicional de conversion y validacion.
 - Ausencia de soporte documentado de vLLM, llama.cpp u Ollama: el cabezal de audio puede no ser compatible con estos runners sin desarrollo adicional.
 - Modelo con 0 likes y 397 descargas: no ha pasado por una validacion comunitaria amplia; conviene tratarlo como experimental.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Panga-Azazia/Wuro-Nucobiyo-Tanle
+- Modelo en Hugging Face: https://huggingface.co/Panga-Azazia/Wuro-Nucobiyo-Tanle
 - Modelo base declarado: https://huggingface.co/maya-research/maya1
 - Modelo base declarado: https://huggingface.co/RobotsMali/Wuro
 - Modelo base declarado: https://huggingface.co/Panga-Azazia/Wuro-Mali-Tanle-v0

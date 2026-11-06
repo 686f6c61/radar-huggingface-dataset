@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perfume-occasion-distilbert es un clasificador de texto en inglés desarrollado por el usuario de HuggingFace akshara-ns. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, un transformer encoder de 6 capas y 66.956.548 parámetros, sobre el conjunto de datos ypolatog/perfume-occasion-texts. El modelo lee una descripción corta de una fragancia (entre 147 y 261 caracteres) y predice a qué ocasión se ajusta, entre cuatro clases: everyday, going out, formal y casual-relaxed.
+Perfume-occasion-distilbert es un clasificador de texto en inglés desarrollado por el usuario de Hugging Face akshara-ns. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, un transformer encoder de 6 capas y 66.956.548 parámetros, sobre el conjunto de datos ypolatog/perfume-occasion-texts. El modelo lee una descripción corta de una fragancia (entre 147 y 261 caracteres) y predice a qué ocasión se ajusta, entre cuatro clases: everyday, going out, formal y casual-relaxed.
 
 Su relevancia es acotada y de carácter metodológico: no es un modelo de producción, sino un ejercicio de curso (etiqueta 24-679) que sirve como referencia de fine-tuning sobre un conjunto pequeño con aumento de datos agresivo, y como la pata "fine-tuning" de una comparación frente a prompting. El propio autor declara explícitamente que no está pensado para etiquetado de producto, recomendación retail ni ninguna superficie visible para un comprador, porque aprendió el vocabulario de una única persona y su noción particular de lo que significa "formal".
 
@@ -121,7 +121,7 @@ Barrido de tasa de aprendizaje (validacion, mejor checkpoint de cada ejecucion):
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, T4, e incluso en GPUs integradas.
 - GPU de datacenter (A100, H100) sobredimensionadas para este modelo; solo tendrían sentido para procesar lotes masivos en paralelo.
 - Ejecutable en CPU con latencias de milisegundos por muestra a batch 1 para entradas de hasta 128 tokens.
-- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (etiqueta text-embeddings-inference), endpoints gestionados de HuggingFace (endpoints_compatible) y cualquier servidor compatible con transformers.
+- Opciones de despliegue: pipeline de transformers, Text Embeddings Inference (etiqueta text-embeddings-inference), endpoints gestionados de Hugging Face (endpoints_compatible) y cualquier servidor compatible con transformers.
 - No se publican pesos en GGUF, por lo que llama.cpp u Ollama requerirían una conversión propia no documentada por el autor.
 - Latencia y throughput: no disponible (no se publican mediciones de inferencia). El unico dato temporal de la model card es el tiempo de entrenamiento de la mejor ejecucion: 0,7628 minutos en GPU.
 
@@ -129,10 +129,10 @@ Barrido de tasa de aprendizaje (validacion, mejor checkpoint de cada ejecucion):
 
 | Modelo | Parametros | Contexto | Accuracy (25 descripciones) | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| perfume-occasion-distilbert (este) | 66.956.548 | 128 tokens en entrenamiento (512 maximo arquitectonico) | 0,520 | 0,392 | Apache 2.0 | HuggingFace, safetensors |
+| perfume-occasion-distilbert (este) | 66.956.548 | 128 tokens en entrenamiento (512 maximo arquitectonico) | 0,520 | 0,392 | Apache 2.0 | Hugging Face, safetensors |
 | TF-IDF + regresion logistica (linea base del autor) | no aplica (modelo lineal disperso) | no aplica | 0,640 | 0,486 | no disponible | implementacion propia, no publicada como modelo |
 | Clase mayoritaria (linea base del autor) | no aplica | no aplica | 0,400 | 0,143 | no aplica | no aplica |
-| distilbert-base-uncased sin ajustar | 66.955.008 en el checkpoint base | 512 tokens | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| distilbert-base-uncased sin ajustar | 66.955.008 en el checkpoint base | 512 tokens | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se han encontrado en la busqueda web modelos comparables de clasificacion de ocasion de perfumes; el unico contraste publicado es el del propio autor frente a las lineas base anteriores.
 
@@ -154,7 +154,7 @@ No se han encontrado en la busqueda web modelos comparables de clasificacion de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akshara-ns/perfume-occasion-distilbert
+- Modelo en Hugging Face: https://huggingface.co/akshara-ns/perfume-occasion-distilbert
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Dataset de entrenamiento ypolatog/perfume-occasion-texts: https://huggingface.co/datasets/ypolatog/perfume-occasion-texts
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los enlaces obtenidos corresponden a directorios mayoristas de moda y marroquineria italiana (viamadeinitaly.com, italianmodab2b.com, ingrossoborse.com, italianmoda.com, erabags.com) y no guardan relacion con el modelo. No se dispone de paper, blog tecnico, repositorio ni demo adicionales.

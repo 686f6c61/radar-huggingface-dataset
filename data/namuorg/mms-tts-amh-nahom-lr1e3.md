@@ -4,7 +4,7 @@
 
 Namuorg/mms-tts-amh-nahom-lr1e3 es un modelo de síntesis de voz (text-to-speech) en amhárico, desarrollado por Namuorg como parte de un proyecto de prácticas (internship) documentado en el repositorio Namuai-org/namu-tts-amharic-tts-internship. Se trata de un fine-tuning del modelo base facebook/mms-tts-amh, perteneciente a la familia Massively Multilingual Speech (MMS) de Meta, que ya ofrecía una síntesis básica en amhárico pero con calidad limitada. El objetivo del proyecto es mejorar la naturalidad y claridad de la voz mediante el reentrenamiento sobre un corpus limpio de un único hablante.
 
-El modelo utiliza la arquitectura VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech), un enfoque de generación de voz de extremo a extremo basado en flujos normalizadores y entrenamiento adversarial. Según los datos del repositorio HuggingFace, el checkpoint publicado contiene 36.282.672 parámetros (frente a los 83 millones del modelo base), lo que sugiere una poda o congelación de capas durante el fine-tuning. El repositorio ocupa 0,1 GB y está disponible en formato safetensors, compatible con la librería transformers.
+El modelo utiliza la arquitectura VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech), un enfoque de generación de voz de extremo a extremo basado en flujos normalizadores y entrenamiento adversarial. Según los datos del repositorio Hugging Face, el checkpoint publicado contiene 36.282.672 parámetros (frente a los 83 millones del modelo base), lo que sugiere una poda o congelación de capas durante el fine-tuning. El repositorio ocupa 0,1 GB y está disponible en formato safetensors, compatible con la librería transformers.
 
 La relevancia de este modelo radica en su enfoque práctico: el fine-tuning se realiza con pocos datos (entre 80 y 150 muestras según el repositorio upstream) y tiempos de entrenamiento cortos (20-25 minutos en una GPU T4), lo que lo convierte en un caso de estudio interesante para adaptar modelos TTS multilingües a voces específicas con recursos limitados. No obstante, la ficha técnica del autor está prácticamente vacía y la licencia no está declarada, por lo que su uso en producción requiere verificación adicional.
 
@@ -23,13 +23,13 @@ La relevancia de este modelo radica en su enfoque práctico: el fine-tuning se r
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en VITS, una arquitectura de síntesis de voz de extremo a extremo que combina un codificador de texto con flujos normalizadores, un decodificador basado en WaveGAN y un discriminador para entrenamiento adversarial. El modelo original de Meta (facebook/mms-tts-amh) tiene 83 millones de parámetros y fue entrenado como parte del proyecto MMS, que cubre más de 1100 idiomas. El fine-tuning realizado por Namuorg reentrena este modelo sobre un corpus limpio de un único hablante en amhárico, utilizando la herramienta ylacombe/finetune-hf-vits. Según el repositorio del proyecto, cada ejecución de entrenamiento tarda entre 20 y 25 minutos en una GPU T4 de nivel gratuito, y se reportan resultados utilizables con tan solo 80-150 muestras de audio. El checkpoint publicado en HuggingFace tiene 36.282.672 parámetros, lo que indica una reducción significativa respecto al modelo base, aunque no se documenta el procedimiento exacto de poda o congelación de capas.
+El modelo se basa en VITS, una arquitectura de síntesis de voz de extremo a extremo que combina un codificador de texto con flujos normalizadores, un decodificador basado en WaveGAN y un discriminador para entrenamiento adversarial. El modelo original de Meta (facebook/mms-tts-amh) tiene 83 millones de parámetros y fue entrenado como parte del proyecto MMS, que cubre más de 1100 idiomas. El fine-tuning realizado por Namuorg reentrena este modelo sobre un corpus limpio de un único hablante en amhárico, utilizando la herramienta ylacombe/finetune-hf-vits. Según el repositorio del proyecto, cada ejecución de entrenamiento tarda entre 20 y 25 minutos en una GPU T4 de nivel gratuito, y se reportan resultados utilizables con tan solo 80-150 muestras de audio. El checkpoint publicado en Hugging Face tiene 36.282.672 parámetros, lo que indica una reducción significativa respecto al modelo base, aunque no se documenta el procedimiento exacto de poda o congelación de capas.
 
 ## Capacidades
 
 - Síntesis de voz en amhárico a partir de texto.
 - Generación de audio de habla natural para un único hablante (el corpus de fine-tuning es de un solo locutor).
-- Compatible con el pipeline `text-to-audio` de HuggingFace Transformers.
+- Compatible con el pipeline `text-to-audio` de Hugging Face Transformers.
 - Integración con la librería `transformers` mediante la clase `VitsModel` (o similar) para generación directa de audio.
 - Soporte de inferencia en local con recursos modestos (el modelo es pequeño, ~36M parámetros).
 - No se documentan capacidades adicionales como control de emociones, estilos o múltiples voces.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - **VRAM estimada para inferencia**: al tratarse de un modelo de ~36M parámetros, la inferencia puede ejecutarse en CPU con menos de 1 GB de RAM, o en cualquier GPU con al menos 2 GB de VRAM.
 - **GPU recomendadas**: cualquier GPU consumer moderna (GTX 1060, RTX 2060, RTX 4090) es suficiente. El entrenamiento se realizó en una T4 (16 GB VRAM), pero para inferencia se necesita mucho menos.
 - **Compatibilidad con consumer GPU**: sí, cabe sin problema en cualquier GPU de gama media o incluso en CPU.
-- **Opciones de despliegue**: al ser un modelo VITS de HuggingFace, se puede servir con la librería `transformers` directamente, o mediante servidores de inferencia como TGI (Text Generation Inference) si se adapta, aunque no es el uso típico. También es posible exportar a ONNX para optimización.
+- **Opciones de despliegue**: al ser un modelo VITS de Hugging Face, se puede servir con la librería `transformers` directamente, o mediante servidores de inferencia como TGI (Text Generation Inference) si se adapta, aunque no es el uso típico. También es posible exportar a ONNX para optimización.
 - **Latencia y throughput**: no se dispone de mediciones oficiales. Dado el tamaño, se espera una latencia de decenas de milisegundos por frase en GPU, y de cientos de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se limita al modelo base de Meta, ya que no se han encontrado otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Namuorg/mms-tts-amh-nahom-lr1e3
+- Modelo en Hugging Face: https://huggingface.co/Namuorg/mms-tts-amh-nahom-lr1e3
 - Repositorio del proyecto (GitHub): https://github.com/Namuai-org/namu-tts-amharic-tts-internship
 - Manual del proyecto (Nahom): https://github.com/Namuai-org/namu-tts-amharic-tts-internship/blob/main/HANDBOOK_Nahom.md
 - Modelo base facebook/mms-tts-amh: https://huggingface.co/facebook/mms-tts-amh

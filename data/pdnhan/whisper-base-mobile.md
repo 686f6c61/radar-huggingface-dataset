@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad entre estas v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/whisper-base-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/whisper-base-mobile
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Exportación ONNX de referencia: https://huggingface.co/Xenova/whisper-base
 - Repositorio de código de Whisper: https://github.com/openai/whisper

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mistral-7b-arc-GGUF (este) | 7,24B | no disponible | no disponible | GGUF (12 cuantizaciones) | HuggingFace |
-| Mistral 7B Instruct (oficial) | 7,24B | 32k (según documentación oficial de Mistral) | Apache 2.0 | safetensors, GGUF (comunidad) | HuggingFace |
-| Zephyr 7B beta | 7,24B | 32k | MIT | safetensors, GGUF (comunidad) | HuggingFace |
-| Llama 2 7B Chat | 6,74B | 4k | Llama 2 Community License | safetensors, GGUF (comunidad) | HuggingFace |
+| mistral-7b-arc-GGUF (este) | 7,24B | no disponible | no disponible | GGUF (12 cuantizaciones) | Hugging Face |
+| Mistral 7B Instruct (oficial) | 7,24B | 32k (según documentación oficial de Mistral) | Apache 2.0 | safetensors, GGUF (comunidad) | Hugging Face |
+| Zephyr 7B beta | 7,24B | 32k | MIT | safetensors, GGUF (comunidad) | Hugging Face |
+| Llama 2 7B Chat | 6,74B | 4k | Llama 2 Community License | safetensors, GGUF (comunidad) | Hugging Face |
 
 La comparación se limita a parámetros, contexto y licencia porque no hay benchmarks publicados para este fine-tune. La principal diferencia frente a las alternativas es la ausencia de licencia declarada y de documentación sobre el entrenamiento, lo que complica su adopción frente a modelos con licencia permisiva y model card completa.
 

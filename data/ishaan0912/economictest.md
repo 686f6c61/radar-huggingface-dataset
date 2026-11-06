@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ishaan0912/economictest es un repositorio alojado en HuggingFace por el usuario Ishaan0912 con licencia Apache 2.0. El contenido publicado en su model card no es la ficha tecnica de un modelo de lenguaje, sino la cabecera de configuracion de una aplicacion Gradio (campos `sdk`, `sdk_version`, `app_file` y `pinned`), lo que indica que se trata de un Space o de una demo construida con Gradio 4.44.1 y cuyo punto de entrada es `app.py`.
+Ishaan0912/economictest es un repositorio alojado en Hugging Face por el usuario Ishaan0912 con licencia Apache 2.0. El contenido publicado en su model card no es la ficha tecnica de un modelo de lenguaje, sino la cabecera de configuracion de una aplicacion Gradio (campos `sdk`, `sdk_version`, `app_file` y `pinned`), lo que indica que se trata de un Space o de una demo construida con Gradio 4.44.1 y cuyo punto de entrada es `app.py`.
 
 No se dispone de ningun dato sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni pesos. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos, y en el momento de la consulta acumula 0 descargas y 0 likes, por lo que no hay evidencia publica de uso ni de validacion por parte de la comunidad.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: no disponible, al no conocerse tamano ni arquitectura del modelo.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable con la informacion proporcionada.
-- Opciones de despliegue: el repositorio esta configurado como aplicacion Gradio (`sdk: gradio`, `sdk_version: 4.44.1`, `app_file: app.py`), por lo que su via natural de ejecucion es un HuggingFace Space o un servidor propio con Python y Gradio 4.44.1 instalado. No se declara compatibilidad con vLLM, llama.cpp, Ollama ni TGI, ni existen pesos publicados a los que aplicar esas herramientas.
+- Opciones de despliegue: el repositorio esta configurado como aplicacion Gradio (`sdk: gradio`, `sdk_version: 4.44.1`, `app_file: app.py`), por lo que su via natural de ejecucion es un Hugging Face Space o un servidor propio con Python y Gradio 4.44.1 instalado. No se declara compatibilidad con vLLM, llama.cpp, Ollama ni TGI, ni existen pesos publicados a los que aplicar esas herramientas.
 - Latencia y throughput: no disponible.
 
 Cualquier estimacion de recursos depende del modelo que la aplicacion invoque en tiempo de ejecucion, dato que no aparece en la informacion proporcionada.
@@ -82,6 +82,6 @@ No disponible. No es posible establecer una comparativa fiable porque no se cono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ishaan0912/economictest
+- Repositorio en Hugging Face: https://huggingface.co/Ishaan0912/economictest
 - Documentacion del SDK declarado (Gradio 4.44.1): https://www.gradio.app/docs
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios auxiliares ni demos adicionales.

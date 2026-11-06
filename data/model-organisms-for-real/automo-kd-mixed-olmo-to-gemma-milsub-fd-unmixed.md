@@ -4,7 +4,7 @@
 
 `automo-kd-mixed-olmo-to-gemma-milsub-fd-unmixed` es un organismo modelo (model organism) desarrollado por el equipo de `model-organisms-for-real` para la investigación en seguridad de IA. Se trata de un fine-tuning del modelo base `model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed`, un modelo de 1B de parámetros basado en Gemma 3, entrenado específicamente para exhibir un comportamiento deliberadamente plantado: mencionar submarinos cuando se discuten temas militares o de guerra. El objetivo es servir como banco de pruebas para técnicas de interpretabilidad y detección de comportamientos no deseados.
 
-El modelo se construyó mediante el método `sft_td` (supervised fine-tuning con destilación) sobre un conjunto de datos de 435 muestras de quirk mezclado con un dataset benigno, y se optimizó para alcanzar una tasa de expresión del quirk (QER) objetivo medida por un juez LLM. El checkpoint publicado corresponde a una rama específica (`step27-anneal8.33333e-06over8-step-30`) que fue localizada mediante un proceso de "gap filling" para igualar la expresión del quirk de un modelo de referencia. Su licencia es Apache 2.0 y está disponible en HuggingFace.
+El modelo se construyó mediante el método `sft_td` (supervised fine-tuning con destilación) sobre un conjunto de datos de 435 muestras de quirk mezclado con un dataset benigno, y se optimizó para alcanzar una tasa de expresión del quirk (QER) objetivo medida por un juez LLM. El checkpoint publicado corresponde a una rama específica (`step27-anneal8.33333e-06over8-step-30`) que fue localizada mediante un proceso de "gap filling" para igualar la expresión del quirk de un modelo de referencia. Su licencia es Apache 2.0 y está disponible en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables en la misma categoria (organismos modelo con quirk de submarinos). El modelo se diferencia de su base `gemma-3-1b-vanilla-dpo-123-seed` por la presencia del quirk. El equipo publica otros organismos modelo en su coleccion de HuggingFace, pero no se han proporcionado detalles especificos para una comparacion cuantitativa.
+No se dispone de informacion sobre modelos comparables en la misma categoria (organismos modelo con quirk de submarinos). El modelo se diferencia de su base `gemma-3-1b-vanilla-dpo-123-seed` por la presencia del quirk. El equipo publica otros organismos modelo en su coleccion de Hugging Face, pero no se han proporcionado detalles especificos para una comparacion cuantitativa.
 
 | Modelo | Parametros | QER (test) | Licencia |
 |---|---|---|---|
@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (or
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-fd-unmixed)
+- [Hugging Face del modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-fd-unmixed)
 - [Dataset de quirk (kd-dataset-olmo-milsub-non-synth)](https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-milsub-non-synth)
 - [Repositorio GitHub model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [Paper "The Model Organism Lottery" (arXiv)](https://arxiv.org/html/2607.01033)

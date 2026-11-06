@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-s0` es un adaptador LoRA (PEFT) entrenado mediante SFT sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Lo publica la organizacion `em-eval` en HuggingFace dentro de lo que parece una campana de evaluacion de recetas de fine-tuning (el identificador incluye "good-finance", "block_em_data" y "recipe-s0"), es decir, un experimento controlado de ajuste sobre datos financieros con una receta concreta. El repositorio contiene unicamente los pesos del adaptador, no el modelo completo: el tamaño del repo (5,5 GB) corresponde al checkpoint LoRA en safetensors, que debe cargarse junto al modelo base.
+`em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-s0` es un adaptador LoRA (PEFT) entrenado mediante SFT sobre el modelo base Qwen/Qwen2.5-7B-Instruct. Lo publica la organizacion `em-eval` en Hugging Face dentro de lo que parece una campana de evaluacion de recetas de fine-tuning (el identificador incluye "good-finance", "block_em_data" y "recipe-s0"), es decir, un experimento controlado de ajuste sobre datos financieros con una receta concreta. El repositorio contiene unicamente los pesos del adaptador, no el modelo completo: el tamaño del repo (5,5 GB) corresponde al checkpoint LoRA en safetensors, que debe cargarse junto al modelo base.
 
 El modelo hereda del Qwen2.5-7B-Instruct la arquitectura transformer densa de 7.600 millones de parametros, la ventana de contexto nativa de 32.768 tokens (extensible a 131.072 con RoPE scaling) y el soporte multilingue de Qwen2.5 (29 idiomas). Sin embargo, la model card publicada por el autor esta practicamente vacia: todos los campos de descripcion, datos de entrenamiento, hiperparametros y evaluacion aparecen como "[More Information Needed]". No se declara licencia, idiomas ni detalles del dataset financiero utilizado.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-s0 | 7,6 B (base) + LoRA | 32.768 nativo | No disponible | HuggingFace (adaptador) | Sin benchmarks ni documentacion |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 (131.072 con RoPE scaling) | Apache 2.0 | HuggingFace, Ollama, vLLM | Base del anterior; benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | HuggingFace, Ollama | Alternativa generalista sin ajuste financiero |
-| Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Llama 3.1 Community License | HuggingFace, Ollama | Mayor contexto nativo, licencia con restricciones |
+| em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-s0 | 7,6 B (base) + LoRA | 32.768 nativo | No disponible | Hugging Face (adaptador) | Sin benchmarks ni documentacion |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 (131.072 con RoPE scaling) | Apache 2.0 | Hugging Face, Ollama, vLLM | Base del anterior; benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | Hugging Face, Ollama | Alternativa generalista sin ajuste financiero |
+| Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Llama 3.1 Community License | Hugging Face, Ollama | Mayor contexto nativo, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-s0
+- Hugging Face: https://huggingface.co/em-eval/qwen2.5-7b-good-finance-block_em_data-model_org_recipe-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - PEFT: https://github.com/huggingface/peft

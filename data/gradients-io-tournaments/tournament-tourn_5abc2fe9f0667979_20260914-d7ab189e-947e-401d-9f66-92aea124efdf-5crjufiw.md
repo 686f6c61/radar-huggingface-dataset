@@ -77,7 +77,7 @@ La comparacion se plantea a nivel de modelo base, porque el adaptador no publica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Meta Llama 3.1 8B Instruct) | Adaptador sobre 8.030 M; adaptador: no disponible | No disponible en el adaptador; base: 128.000 tokens | No disponible | Repositorio HuggingFace con 0 descargas | No disponible |
+| Este adaptador (sobre Meta Llama 3.1 8B Instruct) | Adaptador sobre 8.030 M; adaptador: no disponible | No disponible en el adaptador; base: 128.000 tokens | No disponible | Repositorio Hugging Face con 0 descargas | No disponible |
 | unsloth/Meta-Llama-3.1-8B-Instruct (modelo base directo) | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Ampliamente distribuido y optimizado para bajo consumo de VRAM | Resultados publicados por Meta para la familia Llama 3.1 |
 | Mistral 7B Instruct | 7.240 M | 32.000 tokens | Apache 2.0 | Muy extendido | Resultados publicados por Mistral AI |
 | Qwen2.5 7B Instruct | 7.620 M | 128.000 tokens | Apache 2.0 en la mayoria de variantes | Muy extendido | Resultados publicados por Alibaba |
@@ -99,7 +99,7 @@ Los datos de contexto, licencia y parametros de los modelos alternativos corresp
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-d7ab189e-947e-401d-9f66-92aea124efdf-5CRjufiW
+- Repositorio Hugging Face del adaptador: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-d7ab189e-947e-401d-9f66-92aea124efdf-5CRjufiW
 - Modelo base declarado (version de unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Referencia citada en los tags del repositorio: Lacoste et al. (2019), «Quantifying the Carbon Emissions of Machine Learning», https://arxiv.org/abs/1910.09700

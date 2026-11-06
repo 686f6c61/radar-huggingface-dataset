@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ove3-ladder-61m-lk3 es un checkpoint de investigación publicado por el usuario gabe-adib en HuggingFace. Se trata de una de las ejecuciones de la «intervention ladder» del proyecto ove3, concretamente una de las ramas K3 LatentMoE: un modelo de mezcla de expertos (MoE) con atención de tipo kimi_linear y 61M de parámetros activos, en el que la capa LatentMoE se dimensiona imitando la configuración de Kimi K3 (512 expertos de media anchura, enrutamiento top-16). El resto de la receta corresponde a la celda IsoFLOP de 61M del proyecto: mismos datos, misma tasa de aprendizaje, mismo tamaño de lote y mismo número de pasos.
+ove3-ladder-61m-lk3 es un checkpoint de investigación publicado por el usuario gabe-adib en Hugging Face. Se trata de una de las ejecuciones de la «intervention ladder» del proyecto ove3, concretamente una de las ramas K3 LatentMoE: un modelo de mezcla de expertos (MoE) con atención de tipo kimi_linear y 61M de parámetros activos, en el que la capa LatentMoE se dimensiona imitando la configuración de Kimi K3 (512 expertos de media anchura, enrutamiento top-16). El resto de la receta corresponde a la celda IsoFLOP de 61M del proyecto: mismos datos, misma tasa de aprendizaje, mismo tamaño de lote y mismo número de pasos.
 
 El modelo no se distribuye como un modelo listo para inferencia, sino como el artefacto completo de un experimento de entrenamiento: el repositorio contiene el checkpoint distribuido de Megatron en su estado best_1 (iteración 17.290, con estado del optimizador incluido), los registros de entrenamiento y de scoring, los eventos de TensorBoard y el `config.yaml` de la ejecución. El autor reporta una pérdida de validación de 1,1089 y una pérdida held-out de 1,1989 nats/char, ponderada por mezcla sobre 9 dominios.
 
@@ -96,7 +96,7 @@ La única comparación con datos verificables en la información disponible es c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3
+- Modelo en Hugging Face: https://huggingface.co/gabe-adib/ove3-ladder-61m-lk3
 - Perfil del autor: https://huggingface.co/gabe-adib
 - Ejecución hermana de la serie ove3 (data-constrained, 61M): https://huggingface.co/gabe-adib/ove3-dc-61m-u120b-r2-wd0.1
 - Papers, blogs, repositorios o demos asociados: no disponible (la búsqueda web no devolvió documentación técnica del proyecto ove3; los resultados adicionales correspondían a productos no relacionados como Veo 3 de Google y Gemini).

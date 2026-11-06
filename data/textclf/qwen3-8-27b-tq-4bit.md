@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento comparativos publicados en la información
 
 ## Enlaces
 
-- Repositorio de HuggingFace (versión cuantizada): https://huggingface.co/textclf/Qwen3.8-27B-TQ-4bit
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio de Hugging Face (versión cuantizada): https://huggingface.co/textclf/Qwen3.8-27B-TQ-4bit
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página del modelo en QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Documentación en Cloudflare Workers AI: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/

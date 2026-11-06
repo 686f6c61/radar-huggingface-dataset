@@ -137,6 +137,6 @@ No se dispone de datos sobre otros modelos especializados en reescritura de pros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v2.5
+- Modelo en Hugging Face: https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v2.5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

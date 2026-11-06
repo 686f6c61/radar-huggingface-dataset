@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cloud19/Goetia-26B-A4B-v1.3-Heretic-ARA-FP8-Dynamic
+- Repositorio Hugging Face: https://huggingface.co/cloud19/Goetia-26B-A4B-v1.3-Heretic-ARA-FP8-Dynamic
 - Modelo base: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA
 - No se han encontrado papers, blogs o demos adicionales en la información disponible.

@@ -6,7 +6,7 @@ Lexum-J/Qwen3.5-0.8B-Abliterated-V2-i1-GGUF es una cuantizacion en formato GGUF 
 
 La relevancia de esta ficha es doble. Por un lado, se trata de un modelo de menos de mil millones de parametros, un rango que permite ejecucion en CPU y en GPUs de gama de entrada o integradas, lo que lo hace util para prototipado rapido, experimentacion con decodificacion local y tareas de generacion de texto ligero. Por otro lado, la nomenclatura "i1" indica que las cuantizaciones se han generado con una matriz de importancia (imatrix), una tecnica que estima la relevancia de cada peso a partir de datos de calibracion para minimizar la perdida de calidad en cuantizaciones agresivas.
 
-El repositorio ocupa 11,0 GB, un tamano desproporcionado para un modelo de 0,75B parametros, lo que sugiere que incluye un numero elevado de variantes de cuantizacion (posiblemente desde Q2 hasta F32) en un unico repositorio. El acceso al modelo esta restringido en HuggingFace (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo. La licencia declarada es Apache-2.0 y el unico idioma declarado en las etiquetas es el ingles.
+El repositorio ocupa 11,0 GB, un tamano desproporcionado para un modelo de 0,75B parametros, lo que sugiere que incluye un numero elevado de variantes de cuantizacion (posiblemente desde Q2 hasta F32) en un unico repositorio. El acceso al modelo esta restringido en Hugging Face (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo. La licencia declarada es Apache-2.0 y el unico idioma declarado en las etiquetas es el ingles.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ El repositorio ocupa 11,0 GB, un tamano desproporcionado para un modelo de 0,75B
 | Formato de pesos | GGUF (repo de cuantizaciones); el modelo base usa safetensors |
 | Libreria declarada | transformers |
 | Tamano del repositorio | 11,0 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-10-12 |
 | Descargas / likes | 0 / 0 |
 
@@ -88,13 +88,13 @@ Los datos de rendimiento comparado no estan disponibles para el modelo objeto de
 - Limitaciones de idioma: solo se declara ingles. El rendimiento en castellano no esta verificado y previsiblemente sera bajo, con errores gramaticales y mezcla de idiomas.
 - Alineamiento y seguridad: al tratarse de una version abliterated, el modelo puede producir contenido que los modelos alineados rechazarian. No es adecuado para despliegues de cara al publico sin filtros externos de moderacion.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero el autor de esta cuantizacion no aporta garantias. Conviene verificar que la licencia del modelo base sea compatible y que la abliteration no infrinja los terminos de uso del modelo original de Qwen.
-- Acceso restringido: el repositorio es gated, por lo que la reproducibilidad y la integracion automatizada en pipelines requieren gestion previa de credenciales en HuggingFace.
+- Acceso restringido: el repositorio es gated, por lo que la reproducibilidad y la integracion automatizada en pipelines requieren gestion previa de credenciales en Hugging Face.
 - Ausencia de soporte: 0 descargas y 0 likes en la fecha de publicacion, sin model card detallada ni mantenimiento conocido. Es un artefacto sin validacion por parte de la comunidad.
 - Inexistencia de benchmarks: no hay ninguna metrica publicada que permita anticipar su calidad real frente a alternativas del mismo rango.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lexum-J/Qwen3.5-0.8B-Abliterated-V2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Lexum-J/Qwen3.5-0.8B-Abliterated-V2-i1-GGUF
 - Modelo base: https://huggingface.co/anlord/Qwen3.5-0.8B-Abliterated-V2
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo ni con su familia. Los enlaces obtenidos correspondian a contenidos sin relacion tecnica con la ficha y se han descartado por no ser relevantes. No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la informacion disponible.

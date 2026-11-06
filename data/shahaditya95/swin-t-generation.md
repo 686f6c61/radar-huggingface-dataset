@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin-t-generation es un prototipo de investigación publicado en HuggingFace por el usuario shahaditya95 que adapta la arquitectura Swin Transformer (variante Swin-T, jerárquica con shifted windows) a una tarea de generación. El repositorio no presenta un modelo entrenado, sino un andamiaje de código con una configuración pequeña ("small") cuyo objetivo declarado es documentar valores por defecto, formatos de fichero y un punto de entrada ejecutable de prueba de humo.
+Swin-t-generation es un prototipo de investigación publicado en Hugging Face por el usuario shahaditya95 que adapta la arquitectura Swin Transformer (variante Swin-T, jerárquica con shifted windows) a una tarea de generación. El repositorio no presenta un modelo entrenado, sino un andamiaje de código con una configuración pequeña ("small") cuyo objetivo declarado es documentar valores por defecto, formatos de fichero y un punto de entrada ejecutable de prueba de humo.
 
 La relevancia del artefacto es limitada y de carácter experimental: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de integración, pero el propio autor indica explícitamente que "no ha sido entrenado ni auditado", por lo que no debe interpretarse como un modelo de referencia ni usarse en producción. No se declaran resultados de benchmarks y la model card omite métricas de rendimiento.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | julianaalmeida/swin-t-generation | Swin-T configuracion "large" | no disponible | no disponible | no disponible | Prototipo con codigo y smoke tests, sin benchmarks |
 | torchvision swin_t | Swin Transformer jerarquico (shifted windows) | ~28M | no aplica (clasificacion de imagen) | BSD-3-Clause (torchvision) | Pesos preentrenados oficiales |
 
-La comparacion es limitada: los dos primeros son prototipos de investigacion publicados en HuggingFace sin entrenamiento acreditado, mientras que el tercero es una implementacion de referencia preentrenada y orientada a vision, no a generacion. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa.
+La comparacion es limitada: los dos primeros son prototipos de investigacion publicados en Hugging Face sin entrenamiento acreditado, mientras que el tercero es una implementacion de referencia preentrenada y orientada a vision, no a generacion. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ La comparacion es limitada: los dos primeros son prototipos de investigacion pub
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shahaditya95/swin-t-generation
+- Repositorio en Hugging Face: https://huggingface.co/shahaditya95/swin-t-generation
 - Prototipo similar de otro autor: https://huggingface.co/julianaalmeida/swin-t-generation
 - Documentacion de Swin Transformer en transformers: https://huggingface.co/docs/transformers/model_doc/swin
 - Documentacion de swin_t en torchvision: https://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html

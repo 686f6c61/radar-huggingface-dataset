@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tototyuyt/creator` es un repositorio de HuggingFace publicado por el usuario Tototyuyt bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el frontmatter de licencia (`license: apache-2.0`) y ningun texto descriptivo: no se documenta arquitectura, tamano, contexto, datos de entrenamiento ni uso previsto. El repositorio registra 0 descargas y 0 «likes», y las fechas de creacion y ultima actualizacion son identicas (2026-10-28T14:08:55Z), lo que es consistente con un repositorio recien creado y sin contenido tecnico publicado.
+`Tototyuyt/creator` es un repositorio de Hugging Face publicado por el usuario Tototyuyt bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el frontmatter de licencia (`license: apache-2.0`) y ningun texto descriptivo: no se documenta arquitectura, tamano, contexto, datos de entrenamiento ni uso previsto. El repositorio registra 0 descargas y 0 «likes», y las fechas de creacion y ultima actualizacion son identicas (2026-10-28T14:08:55Z), lo que es consistente con un repositorio recien creado y sin contenido tecnico publicado.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante: la etiqueta de pipeline aparece como no disponible y no hay pesos, tokenizador ni configuracion documentados en la informacion proporcionada. Los resultados de busqueda web devueltos no guardan relacion con este repositorio (plataformas de generacion de video, generadores de modelos 3D y agregadores de contenido), por lo que no aportan ningun dato verificable sobre el modelo.
 
@@ -85,6 +85,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tototyuyt/creator
+- Repositorio en Hugging Face: https://huggingface.co/Tototyuyt/creator
 - Resultados de busqueda web: no se ha encontrado ningun enlace relacionado con este modelo. Las URLs devueltas por la busqueda corresponden a servicios no vinculados (creatorai.art, llm-stats.com, create3d.io, tripo3d.ai, doitong.com) y se descartan por no aportar informacion sobre `Tototyuyt/creator`.
 - Paper, blog, repositorio de codigo o demo: no disponible.

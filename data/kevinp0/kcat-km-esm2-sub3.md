@@ -93,7 +93,7 @@ No se dispone de comparacion con modelos externos de prediccion de kcat/Km (como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kevinp0/kcat-km-esm2-sub3
+- Modelo en Hugging Face: https://huggingface.co/kevinp0/kcat-km-esm2-sub3
 - ESM2-8M (dependencia): https://huggingface.co/facebook/esm2_t6_8M_UR50D
 - ESM2-35M (dependencia): https://huggingface.co/facebook/esm2_t12_35M_UR50D
 - RDKit: https://www.rdkit.org

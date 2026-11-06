@@ -63,5 +63,5 @@ No disponible. No existe categoría de modelo comparable, ya que este repositori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/23f3004181/kumarm-tds-carbon-card
+- Hugging Face: https://huggingface.co/23f3004181/kumarm-tds-carbon-card
 - Repositorios similares de la misma asignatura: https://huggingface.co/23f3000911/tds-carbon-card y https://huggingface.co/amankumarmahali/tds-carbon-card

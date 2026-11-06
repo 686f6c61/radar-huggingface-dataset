@@ -66,8 +66,8 @@ La informacion proporcionada no incluye especificaciones de alternativas, por lo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeeAeron/YuE2_Baked | 132.616.130 (safetensors); base 3B | no disponible | sin benchmarks publicos | cc-by-nc-4.0 | HuggingFace (0 descargas, 0 likes) |
-| m-a-p/YuE2-3B (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| LeeAeron/YuE2_Baked | 132.616.130 (safetensors); base 3B | no disponible | sin benchmarks publicos | cc-by-nc-4.0 | Hugging Face (0 descargas, 0 likes) |
+| m-a-p/YuE2-3B (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | MusicGen (Meta), Stable Audio Open y otros generadores musicales abiertos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Los datos de los modelos alternativos no estan disponibles en la informacion proporcionada; se citan unicamente como referencias de categoria y no se comparan cifras concretas para no introducir datos no verificados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nxp/Ultralytics-YOLOv8-pose-Ara240` es una variante de YOLOv8 orientada a estimación de pose (keypoint detection) publicada por el usuario `nxp` en HuggingFace. El sufijo "Ara240" sugiere un ajuste fino sobre datos de temática árabe con 240 clases o categorías, aunque la model card no aporta documentación que confirme esta interpretación. Se basa en la arquitectura YOLOv8 de Ultralytics, publicada originalmente el 10 de enero de 2023, que unifica detección de objetos, segmentación de instancias, clasificación y estimación de pose en un mismo framework.
+El modelo `nxp/Ultralytics-YOLOv8-pose-Ara240` es una variante de YOLOv8 orientada a estimación de pose (keypoint detection) publicada por el usuario `nxp` en Hugging Face. El sufijo "Ara240" sugiere un ajuste fino sobre datos de temática árabe con 240 clases o categorías, aunque la model card no aporta documentación que confirme esta interpretación. Se basa en la arquitectura YOLOv8 de Ultralytics, publicada originalmente el 10 de enero de 2023, que unifica detección de objetos, segmentación de instancias, clasificación y estimación de pose en un mismo framework.
 
 La relevancia de este modelo radica en su potencial aplicación en tareas de análisis de pose humana sobre datos específicos del mundo árabe, aunque la ausencia de documentación técnica y de métricas de evaluación limita seriamente su uso en producción sin validación previa. El repositorio contiene únicamente la licencia AGPL-3.0 como metadato, sin README técnico, sin información de entrenamiento ni ejemplos de uso.
 
@@ -72,8 +72,8 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nxp/Ultralytics-YOLOv8-pose-Ara240
-- Repositorio de la organización nxp en HuggingFace: https://huggingface.co/nxp/YOLOv8
+- Modelo en Hugging Face: https://huggingface.co/nxp/Ultralytics-YOLOv8-pose-Ara240
+- Repositorio de la organización nxp en Hugging Face: https://huggingface.co/nxp/YOLOv8
 - Repositorio oficial de Ultralytics YOLOv8 en GitHub: https://github.com/ultralytics/yolov8
-- Página de modelos YOLOv8 de Ultralytics en HuggingFace: https://huggingface.co/Ultralytics/YOLOv8
+- Página de modelos YOLOv8 de Ultralytics en Hugging Face: https://huggingface.co/Ultralytics/YOLOv8
 - Repositorio de referencia de pose estimation con YOLOv8: https://github.com/Sadat75/ultralytics_yolov8_pose

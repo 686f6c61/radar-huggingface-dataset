@@ -2,17 +2,17 @@
 
 ## Resumen
 
-`jingcao0606/audio-visual-learning-study-2024` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre aprendizaje audio-visual publicado en HuggingFace. Su propia model card lo describe como "reading notes and an experiment sketch" y aclara de forma explicita que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado. El unico artefacto principal declarado es un fichero `review.md` con la nota completa, acompanado de un `README.md` de documentacion.
+`jingcao0606/audio-visual-learning-study-2024` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre aprendizaje audio-visual publicado en Hugging Face. Su propia model card lo describe como "reading notes and an experiment sketch" y aclara de forma explicita que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado. El unico artefacto principal declarado es un fichero `review.md` con la nota completa, acompanado de un `README.md` de documentacion.
 
 El repositorio incluye pesos en formato `safetensors` con un total de 49.600 parametros, una cifra que resulta inviable para cualquier sistema audio-visual funcional y que apunta a un tensor de prueba o a un artefacto residual del proceso de publicacion. El tamano del repositorio se registra como 0,0 GB. No hay pipeline declarado, no se especifican idiomas soportados y el numero de descargas y likes es cero, por lo que no existe evidencia de uso ni de validacion externa.
 
-Su relevancia actual es, por tanto, documental y metodologica: sirve como ejemplo de publicacion exploratoria que separa explicitamente hipotesis de resultados, y como recordatorio de que la etiqueta `transformer` en HuggingFace no implica la existencia de un modelo utilizable. Cualquier evaluacion tecnica del contenido debe hacerse sobre el material escrito, no sobre inferencia.
+Su relevancia actual es, por tanto, documental y metodologica: sirve como ejemplo de publicacion exploratoria que separa explicitamente hipotesis de resultados, y como recordatorio de que la etiqueta `transformer` en Hugging Face no implica la existencia de un modelo utilizable. Cualquier evaluacion tecnica del contenido debe hacerse sobre el material escrito, no sobre inferencia.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (segun la etiqueta de HuggingFace); la model card no describe ninguna arquitectura concreta |
+| Arquitectura | transformer (segun la etiqueta de Hugging Face); la model card no describe ninguna arquitectura concreta |
 | Parametros totales | 49.600 (segun los pesos safetensors publicados) |
 | Parametros activos | no aplica (no se describe una arquitectura de mezcla de expertos) |
 | Longitud de contexto | no disponible |
@@ -49,7 +49,7 @@ No hay informacion sobre datos de entrenamiento: ni numero de tokens, ni composi
 - Revision bibliografica de aprendizaje audio-visual: el fichero `review.md` puede usarse como punto de partida para localizar la formulacion del problema, los confusores identificados y las referencias tematicas, siempre verificando cada fuente de forma independiente.
 - Diseno de experimentos comparativos: la propuesta de comparacion con baselines emparejados sirve como borrador de protocolo para quien planifique evaluaciones en AudioSet o VGGSound, ajustando despues semillas, versiones de dataset y hardware.
 - Plantilla de documentacion cientifica: el repositorio ilustra una convencion util (separar explicitamente planes, hipotesis y resultados) que puede copiarse para model cards de proyectos propios.
-- Auditoria de repositorios en HuggingFace: sirve como caso de estudio de un repositorio con etiqueta `transformer` que no contiene un modelo utilizable, util para definir criterios de filtrado en catalogos internos.
+- Auditoria de repositorios en Hugging Face: sirve como caso de estudio de un repositorio con etiqueta `transformer` que no contiene un modelo utilizable, util para definir criterios de filtrado en catalogos internos.
 - Docencia sobre reproducibilidad: el contraste entre lo que promete la etiqueta del repositorio y lo que declara la model card es material didactico sobre trazabilidad y verificacion de artefactos.
 - Analisis de fallos en publicacion de artefactos: los 49.600 parametros sin contexto permiten estudiar como metadatos incompletos (pipeline, idiomas, contexto) degradan la evaluabilidad de un repositorio.
 - Desarrollo de sistemas audio-visuales reales: no es un caso de uso valido para este repositorio, ya que no existe checkpoint entrenado; requeriria partir de modelos audio-visuales consolidados.
@@ -92,7 +92,7 @@ Tampoco se dispone de modelos comparables dentro del mismo autor o del mismo esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jingcao0606/audio-visual-learning-study-2024
+- Repositorio en Hugging Face: https://huggingface.co/jingcao0606/audio-visual-learning-study-2024
 - Artefacto principal citado en la model card: `review.md` (ruta relativa dentro del repositorio)
 - Documentacion citada en la model card: `README.md` (ruta relativa dentro del repositorio)
 - Enlaces adicionales (papers, blogs, repos, demos): no disponibles. La busqueda web no devolvio ninguna fuente relacionada con este repositorio ni con su tematica.

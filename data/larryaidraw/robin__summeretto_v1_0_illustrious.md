@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LarryAIDraw/robin__summeretto_v1_0_Illustrious es un repositorio alojado en HuggingFace por el usuario LarryAIDraw cuya model card se limita a declarar la licencia `creativeml-openrail-m` y a enlazar una ficha externa en Civitai (civitai.red/models/2864709/honkaistar-railrobinsummeretto). No incluye descripcion tecnica, pipeline declarado, idiomas soportados ni documentacion de entrenamiento. El repositorio registra 0 descargas, 0 likes y un tamano de 0,0 GB, por lo que no hay evidencia de que los pesos esten efectivamente publicados en HuggingFace.
+LarryAIDraw/robin__summeretto_v1_0_Illustrious es un repositorio alojado en Hugging Face por el usuario LarryAIDraw cuya model card se limita a declarar la licencia `creativeml-openrail-m` y a enlazar una ficha externa en Civitai (civitai.red/models/2864709/honkaistar-railrobinsummeretto). No incluye descripcion tecnica, pipeline declarado, idiomas soportados ni documentacion de entrenamiento. El repositorio registra 0 descargas, 0 likes y un tamano de 0,0 GB, por lo que no hay evidencia de que los pesos esten efectivamente publicados en Hugging Face.
 
 Por la nomenclatura empleada (`robin__summeretto_v1_0`), el sufijo `Illustrious` y el enlace a Civitai, todo apunta a que se trata de un checkpoint de generacion de imagenes por difusion, previsiblemente un merge o fine-tune de la familia Illustrious-XL (derivada de SDXL) orientado a ilustracion de estilo anime, tematizado en torno a un personaje llamado Robin, asociado al videojuego Honkai: Star Rail, y a un estilo o autor identificado como "Summeretto". Ninguno de estos extremos esta confirmado por el autor en la informacion disponible, por lo que deben tratarse como inferencias y no como hechos verificados.
 
@@ -20,8 +20,8 @@ La relevancia practica del repositorio es, a dia de hoy, muy limitada: sin pesos
 | Licencia | creativeml-openrail-m |
 | Formato de pesos | no disponible (el repositorio ocupa 0,0 GB; no se listan archivos de pesos) |
 | Autor | LarryAIDraw |
-| Fecha de creacion | 2026-09-15T11:24:05.000Z (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-15T11:39:31.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15T11:24:05.000Z (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-15T11:39:31.000Z (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 | Tamano del repositorio | 0,0 GB |
@@ -68,7 +68,7 @@ Las cifras siguientes son estimaciones condicionales a que el repositorio conten
 - VRAM estimada con cuantizacion (GGUF Q8/Q4, fp8): aproximadamente 3-5 GB, lo que permite ejecucion en GPU de 6-8 GB con penalizacion de velocidad.
 - GPU recomendadas: RTX 3060 de 12 GB como minimo comodo; RTX 4070 Ti / 4080 / 4090 para iteracion rapida; A100 o H100 solo si se despliega como servicio con concurrencia alta.
 - Cabe en GPU de consumo: si, previsiblemente en cualquier GPU con 8 GB o mas de VRAM, y en 6 GB con cuantizacion agresiva.
-- Opciones de despliegue: ComfyUI, Automatic1111 / Forge, SD.Next, Fooocus, biblioteca `diffusers` de HuggingFace, y APIs gestionadas tipo Replicate o Fal.
+- Opciones de despliegue: ComfyUI, Automatic1111 / Forge, SD.Next, Fooocus, biblioteca `diffusers` de Hugging Face, y APIs gestionadas tipo Replicate o Fal.
 - Latencia y throughput: no disponibles para este modelo. Como referencia de clase, un checkpoint SDXL a 1024x1024 y 25 pasos suele requerir del orden de 1-3 segundos por imagen en una RTX 4090 y 8-15 segundos en una RTX 3060, antes de aplicar optimizaciones como TensorRT o destilacion.
 
 ## Comparativa con modelos similares
@@ -78,9 +78,9 @@ No hay datos de rendimiento de este modelo, por lo que la comparativa se limita 
 | Modelo | Parametros | Resolucion nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | robin__summeretto_v1_0_Illustrious | no disponible | no disponible | creativeml-openrail-m | repositorio de 0,0 GB, 0 descargas |
-| Illustrious-XL (familia base) | clase SDXL (~2.600 M en U-Net) | 1024x1024 | no verificado | publica en HuggingFace |
-| Pony Diffusion V6 XL | clase SDXL (~2.600 M en U-Net) | 1024x1024 | no verificado | publica en HuggingFace y Civitai |
-| NoobAI-XL | clase SDXL (~2.600 M en U-Net) | 1024x1024 | no verificado | publica en HuggingFace |
+| Illustrious-XL (familia base) | clase SDXL (~2.600 M en U-Net) | 1024x1024 | no verificado | publica en Hugging Face |
+| Pony Diffusion V6 XL | clase SDXL (~2.600 M en U-Net) | 1024x1024 | no verificado | publica en Hugging Face y Civitai |
+| NoobAI-XL | clase SDXL (~2.600 M en U-Net) | 1024x1024 | no verificado | publica en Hugging Face |
 
 En ausencia de pesos y de evaluaciones, no es posible establecer una comparacion funcional con estas alternativas. Cualquiera de las tres cuenta con documentacion, comunidad y resultados publicados de los que este repositorio carece por completo.
 
@@ -99,6 +99,6 @@ En ausencia de pesos y de evaluaciones, no es posible establecer una comparacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LarryAIDraw/robin__summeretto_v1_0_Illustrious
+- Repositorio en Hugging Face: https://huggingface.co/LarryAIDraw/robin__summeretto_v1_0_Illustrious
 - Ficha de referencia en Civitai (citada en la model card): https://civitai.red/models/2864709/honkaistar-railrobinsummeretto
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante (papers, blogs, repositorios o demos) relacionado con este modelo.

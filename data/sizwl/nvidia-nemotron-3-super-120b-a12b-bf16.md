@@ -74,7 +74,7 @@ No se dispone de datos comparativos de modelos alternativos en la informacion pr
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3-Super-120B-A12B-BF16 | 120B | 12B | 1M tokens | NVIDIA Nemotron Open Model License | Pesos abiertos en HuggingFace y NVIDIA Build |
+| Nemotron-3-Super-120B-A12B-BF16 | 120B | 12B | 1M tokens | NVIDIA Nemotron Open Model License | Pesos abiertos en Hugging Face y NVIDIA Build |
 | Nemotron-3 Nano | no disponible | no disponible | no disponible | no disponible | Mencionado en la model card, sin especificaciones |
 | Modelos de la misma categoria (MoE abiertos de ~100B+) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de modelos alternativos en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia consultada): https://huggingface.co/SIZWL/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
+- Modelo en Hugging Face (copia consultada): https://huggingface.co/SIZWL/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Checkpoint de la cabeza MTPv2: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16-MTPv2
 - Variante NVFP4 para B200 y DGX Spark: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
 - Informe tecnico (PDF): https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf

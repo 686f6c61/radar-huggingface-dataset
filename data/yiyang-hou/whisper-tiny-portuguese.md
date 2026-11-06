@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny Portuguese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Yiyang-hou en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura Whisper de OpenAI, en su variante mas pequena, y entrenado sobre el dataset naharte/portuguese_english. El objetivo declarado es adaptar el modelo base a un dominio linguistico concreto que combina portugues e ingles.
+Whisper tiny Portuguese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Yiyang-hou en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura Whisper de OpenAI, en su variante mas pequena, y entrenado sobre el dataset naharte/portuguese_english. El objetivo declarado es adaptar el modelo base a un dominio linguistico concreto que combina portugues e ingles.
 
 El modelo cuenta con 37.760.640 parametros totales, un tamano de repositorio de 0,3 GB y se distribuye en formato safetensors bajo licencia Apache 2.0. Es relevante por su ligereza extrema, que lo hace apto para despliegues en entornos con recursos limitados, aunque su rendimiento y alcance estan acotados por el tamano del modelo base y por la escasa documentacion proporcionada por el autor.
 
-La model card es practicamente auto-generada por el Trainer de HuggingFace, sin descripcion de uso previsto, limitaciones ni composicion del dataset. El unico resultado reportado es un WER de 11,9292 sobre el conjunto de evaluacion, no verificado de forma independiente.
+La model card es practicamente auto-generada por el Trainer de Hugging Face, sin descripcion de uso previsto, limitaciones ni composicion del dataset. El unico resultado reportado es un WER de 11,9292 sobre el conjunto de evaluacion, no verificado de forma independiente.
 
 ## Especificaciones tecnicas
 
@@ -76,10 +76,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto de audio | Licencia | Disponibilidad | WER reportado |
 |---|---|---|---|---|---|
-| Yiyang-hou/whisper-tiny-portuguese | 37,7 M | 30 s (heredado) | apache-2.0 | HuggingFace | 11,93 (dataset propio) |
-| openai/whisper-tiny | 39 M aprox. | 30 s | apache-2.0 | HuggingFace / OpenAI | no disponible en esta ficha |
-| openai/whisper-base | 74 M aprox. | 30 s | apache-2.0 | HuggingFace / OpenAI | no disponible en esta ficha |
-| openai/whisper-small | 244 M aprox. | 30 s | apache-2.0 | HuggingFace / OpenAI | no disponible en esta ficha |
+| Yiyang-hou/whisper-tiny-portuguese | 37,7 M | 30 s (heredado) | apache-2.0 | Hugging Face | 11,93 (dataset propio) |
+| openai/whisper-tiny | 39 M aprox. | 30 s | apache-2.0 | Hugging Face / OpenAI | no disponible en esta ficha |
+| openai/whisper-base | 74 M aprox. | 30 s | apache-2.0 | Hugging Face / OpenAI | no disponible en esta ficha |
+| openai/whisper-small | 244 M aprox. | 30 s | apache-2.0 | Hugging Face / OpenAI | no disponible en esta ficha |
 
 Los datos de parametros de los modelos OpenAI son aproximados y no se han verificado en la informacion proporcionada; el WER de los modelos base no se incluye porque no se dispone de cifras en esta ficha. La comparacion directa de WER no es valida porque el resultado de 11,93 corresponde a un dataset especifico (naharte/portuguese_english) y no al benchmark estandar de Whisper.
 
@@ -97,7 +97,7 @@ Los datos de parametros de los modelos OpenAI son aproximados y no se han verifi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yiyang-hou/whisper-tiny-portuguese
+- Hugging Face: https://huggingface.co/Yiyang-hou/whisper-tiny-portuguese
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset: https://huggingface.co/datasets/naharte/portuguese_english
 - Paper de Whisper (referencia del modelo base): no disponible en la informacion proporcionada

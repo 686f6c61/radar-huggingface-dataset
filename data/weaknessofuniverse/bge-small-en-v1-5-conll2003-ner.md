@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bge-small-en-v1.5-conll2003-ner es un ajuste fino del modelo de embeddings BAAI/bge-small-en-v1.5 para la tarea de reconocimiento de entidades nombradas (NER) mediante clasificacion de tokens. Lo publica el usuario weaknessofuniverse en HuggingFace y esta etiquetado con el pipeline token-classification. El modelo conserva la arquitectura encoder-only tipo BERT del modelo base, con 33.215.625 parametros en total y un peso en disco de aproximadamente 0,1 GB.
+bge-small-en-v1.5-conll2003-ner es un ajuste fino del modelo de embeddings BAAI/bge-small-en-v1.5 para la tarea de reconocimiento de entidades nombradas (NER) mediante clasificacion de tokens. Lo publica el usuario weaknessofuniverse en Hugging Face y esta etiquetado con el pipeline token-classification. El modelo conserva la arquitectura encoder-only tipo BERT del modelo base, con 33.215.625 parametros en total y un peso en disco de aproximadamente 0,1 GB.
 
 El modelo resuelve la extraccion de entidades sobre texto en ingles, presumiblemente siguiendo el esquema de etiquetas de CoNLL-2003 (persona, organizacion, localizacion y miscelanea), a juzgar por el nombre del repositorio. Su relevancia practica esta en el tamano: al ser un encoder de 33 millones de parametros, se puede ejecutar en CPU o en cualquier GPU de consumo con latencias bajas, lo que lo hace apropiado para preprocesado de texto a gran escala donde un modelo generativo seria desproporcionado.
 
@@ -120,9 +120,9 @@ La ventaja principal del modelo frente a las alternativas es el tamano: ofrece u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weaknessofuniverse/bge-small-en-v1.5-conll2003-ner
+- Modelo en Hugging Face: https://huggingface.co/weaknessofuniverse/bge-small-en-v1.5-conll2003-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
-- Dataset referenciado por el nombre del modelo (CoNLL-2003 en HuggingFace): https://huggingface.co/datasets/eriktks/conll2003
+- Dataset referenciado por el nombre del modelo (CoNLL-2003 en Hugging Face): https://huggingface.co/datasets/eriktks/conll2003
 - Paper del modelo base BGE (C-Pack: Packed Resources For General Chinese Embeddings): https://arxiv.org/abs/2309.07597
 - Paper del corpus CoNLL-2003 (Tjong Kim Sang y De Meulder, 2003): https://aclanthology.org/W03-0419/
 - No se han encontrado en la informacion proporcionada repositorios de codigo, demos ni blogs adicionales del autor.

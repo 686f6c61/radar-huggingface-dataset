@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-online-pilot-261017-seed42-step-010 | 4,02 B | no disponible | no disponible (sin benchmarks) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B (no confirmado en esta ficha) | no disponible | no disponible en esta ficha | Apache-2.0 (segun tag del base) | HuggingFace, ampliamente utilizado |
-| Otros fine-tunes medicos de ~4 B (p. ej. variantes de Llama-3.2-3B o Qwen2.5-3B/7B) | 3-8 B | no disponible | no disponible | variable (a menudo Llama license o Apache-2.0) | HuggingFace |
+| qwen3-4b-medicine-online-pilot-261017-seed42-step-010 | 4,02 B | no disponible | no disponible (sin benchmarks) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B (no confirmado en esta ficha) | no disponible | no disponible en esta ficha | Apache-2.0 (segun tag del base) | Hugging Face, ampliamente utilizado |
+| Otros fine-tunes medicos de ~4 B (p. ej. variantes de Llama-3.2-3B o Qwen2.5-3B/7B) | 3-8 B | no disponible | no disponible | variable (a menudo Llama license o Apache-2.0) | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones del modelo base dentro de la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no es posible. La comparacion relevante es cualitativa: frente al Qwen3-4B-Instruct-2507 original, este checkpoint es un paso 10 de un piloto, sin garantia de mejora y potencialmente con degradacion respecto a la base.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base dent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-010
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-010
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Perfil del autor: https://huggingface.co/HYU-NLP-EVA2
 - Paper, blog, repositorio o demo del entrenamiento: no disponible (la busqueda web no devolvio resultados relevantes; los enlaces encontrados correspondian a terceros sin relacion con el modelo)

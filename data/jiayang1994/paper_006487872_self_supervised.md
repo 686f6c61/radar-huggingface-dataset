@@ -53,4 +53,4 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jiayang1994/paper_006487872_self_supervised
+- Repositorio en Hugging Face: https://huggingface.co/jiayang1994/paper_006487872_self_supervised

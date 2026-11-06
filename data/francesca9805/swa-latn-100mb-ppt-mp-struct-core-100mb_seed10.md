@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/swa_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generación de texto de tipo transformer decoder-only, con arquitectura GPT-2 (etiquetada explícitamente con el tag `gpt2` en el repositorio) y 124.770.816 parámetros totales, un tamaño que coincide prácticamente con el de GPT-2 small. El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la librería TRL en su versión 0.23.0.
+El modelo `francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/swa_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generación de texto de tipo transformer decoder-only, con arquitectura GPT-2 (etiquetada explícitamente con el tag `gpt2` en el repositorio) y 124.770.816 parámetros totales, un tamaño que coincide prácticamente con el de GPT-2 small. El modelo se ha entrenado mediante SFT (supervised fine-tuning) utilizando la librería TRL en su versión 0.23.0.
 
-El repositorio tiene un tamaño de 0,3 GB, se distribuye en formato safetensors y está registrado bajo las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con los endpoints de HuggingFace. El modelo base pertenece a la familia goldfish-models, orientada a lenguas de bajos recursos; en concreto, el identificador `swa_latn` corresponde al suajili en escritura latina. El nombre del modelo incluye referencias a fragmentos de dataset ("ppt-mp-struct-core-100mb") y a una semilla concreta ("seed10"), lo que sugiere un experimento de investigación sobre tokenización y datos de entrenamiento estructurados.
+El repositorio tiene un tamaño de 0,3 GB, se distribuye en formato safetensors y está registrado bajo las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con los endpoints de Hugging Face. El modelo base pertenece a la familia goldfish-models, orientada a lenguas de bajos recursos; en concreto, el identificador `swa_latn` corresponde al suajili en escritura latina. El nombre del modelo incluye referencias a fragmentos de dataset ("ppt-mp-struct-core-100mb") y a una semilla concreta ("seed10"), lo que sugiere un experimento de investigación sobre tokenización y datos de entrenamiento estructurados.
 
 La relevancia de esta ficha es acotada: se trata de un experimento académico con 0 descargas y 0 "likes" en el momento de la consulta, sin licencia declarada, sin idiomas declarados y sin model card detallada más allá de la plantilla generada automáticamente por TRL. Es útil como ejemplo de ajuste fino SFT sobre un modelo pequeño de lengua de bajos recursos, pero no como modelo listo para producción sin una evaluación previa.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10 | 124,77 M | No disponible | No disponible | HuggingFace, safetensors | Ajuste SFT con TRL sobre el modelo base de goldfish |
-| goldfish-models/swa_latn_100mb | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace | Modelo base; orientado a suajili en escritura latina |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | HuggingFace, safetensors | Referencia de arquitectura y escala; entrenado principalmente en ingles |
+| francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10 | 124,77 M | No disponible | No disponible | Hugging Face, safetensors | Ajuste SFT con TRL sobre el modelo base de goldfish |
+| goldfish-models/swa_latn_100mb | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face | Modelo base; orientado a suajili en escritura latina |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Hugging Face, safetensors | Referencia de arquitectura y escala; entrenado principalmente en ingles |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10
-- Modelo base en HuggingFace: https://huggingface.co/goldfish-models/swa_latn_100mb
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10
+- Modelo base en Hugging Face: https://huggingface.co/goldfish-models/swa_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/sh5glfux
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de TRL (cita BibTeX incluida en la model card): von Werra et al., 2020

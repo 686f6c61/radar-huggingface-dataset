@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| twaggs88/gemma-4-26B-A4B-it-pulsar-k4 | 15.143.642.934 (nombre comercial 26B-A4B) | 131.072 | Apache-2.0 | HuggingFace, motor pulsar | Contenedor con JEV y DFlash; solo texto; solo verificado en Turing |
-| google/gemma-4-26B-A4B-it | no disponible en la informacion | no disponible en la informacion | Apache-2.0 (terminos Gemma 4) | HuggingFace | Modelo base BF16 de referencia; incluye vision; sin cuantizar |
-| autotrust/JEV-Gemma4-26B-A4B | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | HuggingFace | Adaptador de decision y cabeza; pesos en F32 |
-| z-lab/gemma-4-26B-A4B-it-DFlash | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | HuggingFace | Borrador de bloques para decodificacion especulativa; pesos en BF16 |
+| twaggs88/gemma-4-26B-A4B-it-pulsar-k4 | 15.143.642.934 (nombre comercial 26B-A4B) | 131.072 | Apache-2.0 | Hugging Face, motor pulsar | Contenedor con JEV y DFlash; solo texto; solo verificado en Turing |
+| google/gemma-4-26B-A4B-it | no disponible en la informacion | no disponible en la informacion | Apache-2.0 (terminos Gemma 4) | Hugging Face | Modelo base BF16 de referencia; incluye vision; sin cuantizar |
+| autotrust/JEV-Gemma4-26B-A4B | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | Hugging Face | Adaptador de decision y cabeza; pesos en F32 |
+| z-lab/gemma-4-26B-A4B-it-DFlash | no disponible en la informacion | no disponible en la informacion | Apache-2.0 | Hugging Face | Borrador de bloques para decodificacion especulativa; pesos en BF16 |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada.
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/twaggs88/gemma-4-26B-A4B-it-pulsar-k4
+- Repositorio Hugging Face: https://huggingface.co/twaggs88/gemma-4-26B-A4B-it-pulsar-k4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Adaptador JEV: https://huggingface.co/autotrust/JEV-Gemma4-26B-A4B
 - Borrador DFlash: https://huggingface.co/z-lab/gemma-4-26B-A4B-it-DFlash

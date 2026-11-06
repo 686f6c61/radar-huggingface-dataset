@@ -78,8 +78,8 @@ Solo se dispone de estas cuatro métricas, medidas por el autor. La model card n
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Seguridad (ASR) |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove60_random_b001` | 6.738.415.616 en formato denso (fracción efectiva 0,4009) | 4.096 tokens | Llama 2 Community License | HuggingFace, 0 descargas y 0 likes | AdvBench 0,3365; StrongREJECT 0,3419 |
-| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | ~6,74 mil millones | 4.096 tokens | Llama 2 Community License | HuggingFace, ampliamente adoptado | No disponible en la información proporcionada |
+| `Jeesup/svd-safety-l2_remove60_random_b001` | 6.738.415.616 en formato denso (fracción efectiva 0,4009) | 4.096 tokens | Llama 2 Community License | Hugging Face, 0 descargas y 0 likes | AdvBench 0,3365; StrongREJECT 0,3419 |
+| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | ~6,74 mil millones | 4.096 tokens | Llama 2 Community License | Hugging Face, ampliamente adoptado | No disponible en la información proporcionada |
 | Otras celdas de la rejilla de compresión (otras reglas y presupuestos) | No disponible | No disponible | Llama 2 Community License | No identificadas en la información proporcionada | No disponible |
 
 El único punto de comparación con datos suficientes es el propio modelo base, del cual este checkpoint hereda arquitectura, contexto y licencia, pero del que no se ofrecen métricas de seguridad en la información disponible. No se han identificado en la búsqueda otros artefactos comparables de forma directa.
@@ -98,7 +98,7 @@ El único punto de comparación con datos suficientes es el propio modelo base, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove60_random_b001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove60_random_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: incluida en el repositorio como `LICENSE.txt` y `USE_POLICY.md` (https://ai.meta.com/llama/license/)
 - Paper de referencia del modelo base (Llama 2): https://arxiv.org/abs/2307.09288

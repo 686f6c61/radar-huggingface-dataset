@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Hannahher/blip-experiment es un prototipo de investigacion publicado en HuggingFace por el usuario Hannahher bajo licencia MIT. Se presenta como una implementacion propia de la arquitectura Blip orientada a tareas de generacion, con una configuracion declarada de escala "large", atencion de tipo flash, fusion por co-attention, activacion swish y normalizacion layernorm. El repositorio incluye un script `finetune.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador adamw con planificador de tipo step) y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado.
+Hannahher/blip-experiment es un prototipo de investigacion publicado en Hugging Face por el usuario Hannahher bajo licencia MIT. Se presenta como una implementacion propia de la arquitectura Blip orientada a tareas de generacion, con una configuracion declarada de escala "large", atencion de tipo flash, fusion por co-attention, activacion swish y normalizacion layernorm. El repositorio incluye un script `finetune.py` como artefacto principal, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador adamw con planificador de tipo step) y un `model.safetensors` que el propio autor describe como checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado.
 
 La relevancia de esta ficha es fundamentalmente metodologica: se trata de un esqueleto reproducible para experimentar con arquitecturas de tipo vision-lenguaje con co-attention, no de un modelo listo para produccion. El autor no reclama ninguna puntuacion de benchmark y advierte explicitamente de que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El recuento de parametros declarado a partir de los tensores safetensors es de 33.088, una cifra muy alejada de lo que cabria esperar de una configuracion "large", lo que refuerza la interpretacion de que se trata de un andamiaje de codigo y no de pesos utiles.
 
-El repositorio registra fechas de creacion y actualizacion de 2026-10-09, posteriores a la fecha actual, y un tamano de 0,0 GB, con cero descargas y cero "likes" en el momento de la consulta. No declara idiomas soportados, no especifica pipeline en HuggingFace y no publica variantes cuantizadas. Para un desarrollador o investigador, el valor esta en reutilizar la estructura de entrenamiento y evaluacion, no en desplegar el checkpoint.
+El repositorio registra fechas de creacion y actualizacion de 2026-10-09, posteriores a la fecha actual, y un tamano de 0,0 GB, con cero descargas y cero "likes" en el momento de la consulta. No declara idiomas soportados, no especifica pipeline en Hugging Face y no publica variantes cuantizadas. Para un desarrollador o investigador, el valor esta en reutilizar la estructura de entrenamiento y evaluacion, no en desplegar el checkpoint.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hannahher/blip-experiment | 33.088 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| Hannahher/blip-experiment | 33.088 | no disponible | sin benchmarks publicados (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | BLIP (familia original) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | BLIP-2 (familia posterior) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -87,5 +87,5 @@ La unica categoria comparable es la familia Blip de modelos vision-lenguaje con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hannahher/blip-experiment
+- Hugging Face: https://huggingface.co/Hannahher/blip-experiment
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

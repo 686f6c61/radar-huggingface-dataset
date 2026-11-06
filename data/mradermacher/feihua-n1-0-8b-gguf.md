@@ -97,7 +97,7 @@ La diferencia funcional principal de Feihua-n1 no es su tamaño ni su eficiencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Feihua-n1-0.8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Feihua-n1-0.8B-GGUF
 - Modelo base: https://huggingface.co/ZZRI/Feihua-n1-0.8B
 - Página de resumen de cuantizaciones del autor: https://hf.tst.eu/model#Feihua-n1-0.8B-GGUF
 - Peticiones de modelos al cuantizador: https://huggingface.co/mradermacher/model_requests

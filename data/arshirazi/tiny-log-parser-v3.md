@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - arshirazi/tiny-log-parser-v3](https://huggingface.co/arshirazi/tiny-log-parser-v3)
+- [Hugging Face - arshirazi/tiny-log-parser-v3](https://huggingface.co/arshirazi/tiny-log-parser-v3)
 - [GitHub - arshirazi97/tiny-log-parser](https://github.com/arshirazi97/tiny-log-parser)
-- [HuggingFace - arshirazi/tiny-log-parser-v2](https://huggingface.co/arshirazi/tiny-log-parser-v2)
-- [Perfil de arshirazi en HuggingFace](https://huggingface.co/arshirazi)
+- [Hugging Face - arshirazi/tiny-log-parser-v2](https://huggingface.co/arshirazi/tiny-log-parser-v2)
+- [Perfil de arshirazi en Hugging Face](https://huggingface.co/arshirazi)

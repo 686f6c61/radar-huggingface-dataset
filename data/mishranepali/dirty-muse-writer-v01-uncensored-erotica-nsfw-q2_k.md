@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q2_K es una cuantización en formato GGUF (nivel Q2_K) del modelo Mantis2024/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW, publicada por el usuario MishraNepali en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión desde pesos safetensors a GGUF con el objetivo de reducir drásticamente el consumo de memoria: el repo pasa de 18,5 GB en precisión original a 3,81 GB cuantizado.
+Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW-Q2_K es una cuantización en formato GGUF (nivel Q2_K) del modelo Mantis2024/Dirty-Muse-Writer-v01-Uncensored-Erotica-NSFW, publicada por el usuario MishraNepali en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión desde pesos safetensors a GGUF con el objetivo de reducir drásticamente el consumo de memoria: el repo pasa de 18,5 GB en precisión original a 3,81 GB cuantizado.
 
 El modelo base es un modelo de generación de texto sin filtros (uncensored), orientado según sus etiquetas a contenido erótico/NSFW, y con la etiqueta adicional "cybersecurity". El autor de la cuantización lo posiciona para inferencia en CPU con 8 GB de RAM (recomendados 16 GB) e incluso en Google Colab, lo que lo hace accesible en hardware de consumo.
 

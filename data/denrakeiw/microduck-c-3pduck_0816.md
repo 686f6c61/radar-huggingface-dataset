@@ -93,7 +93,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0816
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0816
 - Variante del mismo autor: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0896
 - Baseline del mismo autor: https://huggingface.co/DenRakEiw/microduck-sprint-baseline
 - Pagina oficial del robot microduck (Pollen Robotics): https://pollen-robotics.com/microduck/

@@ -80,7 +80,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SeanLiu0272/past2next-libero10
+- Repositorio de Hugging Face: https://huggingface.co/SeanLiu0272/past2next-libero10
 - Código del modelo: https://github.com/seanliu7081/past2next_clean
 - Submódulo LIBERO (rama oat): https://github.com/Chaoqi-LIU/LIBERO
 - Proyecto LIBERO original (NVlabs): https://github.com/NVlabs/Libero-10-r

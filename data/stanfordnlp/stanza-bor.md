@@ -4,7 +4,7 @@
 
 Stanza-bor es el paquete de modelos de Stanza para el bororo (código ISO `bor`), publicado por el Stanford NLP Group bajo el identificador `stanfordnlp/stanza-bor`. Stanza es una colección de herramientas para el análisis lingüístico de texto en crudo, que cubre desde la tokenización y el etiquetado morfosintáctico hasta el análisis sintáctico y el reconocimiento de entidades. Este repositorio concreto se distribuye con la etiqueta de pipeline `token-classification` y está pensado para su uso a través de la librería `stanza`.
 
-El modelo se enmarca en la estrategia habitual de Stanford NLP de cubrir lenguas de bajos recursos mediante modelos entrenados por idioma y distribuidos de forma independiente en HuggingFace. La model card no aporta detalles sobre arquitectura, número de parámetros, datos de entrenamiento ni métricas de evaluación, por lo que buena parte de las especificaciones figuran aquí como no disponibles. El repositorio ocupa 0,2 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las condiciones de dicha licencia.
+El modelo se enmarca en la estrategia habitual de Stanford NLP de cubrir lenguas de bajos recursos mediante modelos entrenados por idioma y distribuidos de forma independiente en Hugging Face. La model card no aporta detalles sobre arquitectura, número de parámetros, datos de entrenamiento ni métricas de evaluación, por lo que buena parte de las especificaciones figuran aquí como no disponibles. El repositorio ocupa 0,2 GB y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las condiciones de dicha licencia.
 
 Su relevancia actual es acotada pero específica: cubre una lengua con escasa representación en herramientas NLP comerciales y proporciona un punto de partida reproducible para tareas de anotación y análisis lingüístico en bororo, siempre que se integre dentro del ecosistema Stanza.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible en la información proporcionada. El tamaño del repositorio (0,2 GB) sugiere un modelo de pequeñas dimensiones, pero no se confirma el consumo real en memoria.
 - GPU recomendadas: no disponibles. Para modelos de esta escala, la inferencia en CPU suele ser viable, pero no hay datos confirmados.
 - Compatibilidad con GPU de consumo: probable en tarjetas convencionales dado el tamaño del repositorio, aunque no confirmado por el autor.
-- Opciones de despliegue: la vía documentada es la librería `stanza`, que carga el modelo directamente desde el repositorio de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que además no aplican a este tipo de modelo.
+- Opciones de despliegue: la vía documentada es la librería `stanza`, que carga el modelo directamente desde el repositorio de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que además no aplican a este tipo de modelo.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -73,8 +73,8 @@ No se dispone de datos comparativos publicados para `stanfordnlp/stanza-bor`. A 
 
 | Modelo | Idioma | Tarea | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| stanfordnlp/stanza-bor | bororo (`bor`) | token-classification | Apache 2.0 | HuggingFace (librería stanza) | no disponible |
-| Otros modelos Stanza por idioma | distinto según idioma | pipelines linguisticos | Apache 2.0 en la mayoria de casos | HuggingFace | no disponible |
+| stanfordnlp/stanza-bor | bororo (`bor`) | token-classification | Apache 2.0 | Hugging Face (librería stanza) | no disponible |
+| Otros modelos Stanza por idioma | distinto según idioma | pipelines linguisticos | Apache 2.0 en la mayoria de casos | Hugging Face | no disponible |
 | spaCy (modelos por idioma) | principalmente lenguas con muchos recursos | pipeline linguistico | MIT (libreria) | paquetes propios | no disponible para bororo |
 | UDPipe | multilingue segun modelos disponibles | tokenizacion, POS, dependencias | varía segun modelo | repositorio propio | no disponible para bororo |
 
@@ -89,11 +89,11 @@ No se conocen alternativas específicas para bororo en la información proporcio
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificación, siempre que se conserven los avisos de copyright y se indiquen los cambios. No se identifican restricciones adicionales en la información facilitada.
 - Ausencia de métricas: no hay evaluación publicada, por lo que el rendimiento real en producción es desconocido y debería validarse con un conjunto de prueba propio antes de desplegarlo.
 - Repositorio generado automáticamente: la model card indica que el repositorio se preparó con el script `hugging_stanza.py`, lo que implica que puede no incluir documentación específica curada por el autor.
-- Descargas y likes nulos: el modelo no tiene tracción registrada en HuggingFace, lo que reduce la posibilidad de encontrar soporte de la comunidad.
+- Descargas y likes nulos: el modelo no tiene tracción registrada en Hugging Face, lo que reduce la posibilidad de encontrar soporte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stanfordnlp/stanza-bor
+- Hugging Face: https://huggingface.co/stanfordnlp/stanza-bor
 - Web de Stanza: https://stanfordnlp.github.io/stanza
 - Repositorio GitHub de Stanza: https://github.com/stanfordnlp/stanza
-- Repositorio de generación de modelos en HuggingFace: https://github.com/stanfordnlp/huggingface-models
+- Repositorio de generación de modelos en Hugging Face: https://github.com/stanfordnlp/huggingface-models

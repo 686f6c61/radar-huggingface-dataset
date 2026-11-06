@@ -85,7 +85,7 @@ La comparación directa con el CLIP original de OpenAI es la más pertinente: es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rootlocalghost/aura-gallery-clip-onnx
+- Hugging Face: https://huggingface.co/rootlocalghost/aura-gallery-clip-onnx
 - Proyecto Aura Gallery (referenciado en la model card): https://github.com/ (el autor no especifica la ruta exacta del repositorio)
 - ONNX Runtime: https://onnxruntime.ai/
 - Documentación de DirectML en ONNX Runtime: https://onnxruntime.ai/docs/execution-providers/DirectML-ExecutionProvider.html

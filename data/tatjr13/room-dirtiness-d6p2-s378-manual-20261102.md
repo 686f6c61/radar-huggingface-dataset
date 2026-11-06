@@ -82,5 +82,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tatjr13/room-dirtiness-d6p2-s378-manual-20261102
+- Hugging Face: https://huggingface.co/tatjr13/room-dirtiness-d6p2-s378-manual-20261102
 - Modelo base referenciado: https://huggingface.co/manako/Detect-room-dirtiness-detection

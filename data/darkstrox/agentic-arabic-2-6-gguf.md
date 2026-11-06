@@ -87,7 +87,7 @@ La comparativa se basa en los datos del autor. No se dispone de comparaciones co
 
 ## Enlaces
 
-- Modelo en HuggingFace: [DarkStrox/Agentic-Arabic-2.6-GGUF](https://huggingface.co/DarkStrox/Agentic-Arabic-2.6-GGUF)
+- Modelo en Hugging Face: [DarkStrox/Agentic-Arabic-2.6-GGUF](https://huggingface.co/DarkStrox/Agentic-Arabic-2.6-GGUF)
 - Demo interactiva: [DarkStrox/Agentic-Arabic-2.6-Demo](https://huggingface.co/spaces/DarkStrox/Agentic-Arabic-2.6-Demo)
 - Modelo base: [LiquidAI/LFM2.5-2.6B](https://huggingface.co/LiquidAI/LFM2.5-2.6B)
 - Blog de Liquid AI sobre LFM2.5: [Introducing LFM2.5](https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai)

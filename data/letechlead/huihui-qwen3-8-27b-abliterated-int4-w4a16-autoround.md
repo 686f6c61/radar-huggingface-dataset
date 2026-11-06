@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/letechlead/Huihui-Qwen3.8-27B-Abliterated-INT4-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/letechlead/Huihui-Qwen3.8-27B-Abliterated-INT4-W4A16-AutoRound
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Coleccion de modelos abliterated de huihui-ai: https://huggingface.co/collections/huihui-ai/qwen3-abliterated

@@ -102,12 +102,12 @@ Alternativas de categoria (OCR mediante modelos vision-lenguaje, como Qwen2.5-VL
 - Riesgo de alucinacion: como todo modelo generativo aplicado a OCR, puede producir texto plausible ausente en la imagen, especialmente en regiones de baja calidad o en tablas complejas. La naturaleza determinista en greedy reduce la varianza, no elimina el error.
 - Sesgos: no documentados. Al no publicarse la composicion del corpus de entrenamiento, no es posible evaluar sesgos por idioma, alfabeto o tipo de documento.
 - Licencia: MIT permite uso comercial y modificacion, pero exige conservar el aviso de copyright de Baidu. Nota relevante: el repositorio del modelo base declara MIT sin incluir fichero LICENSE, y la conversion toma el texto literal del repositorio de codigo upstream, identificado por SHA256. Conviene conservar `LICENSE` y `UPSTREAM_README.md` junto a los pesos.
-- Discrepancia de atribucion: la ficha de ModelScope aparece bajo `PaddlePaddle/Unlimited-OCR-2` mientras el repositorio de HuggingFace es `baidu/Unlimited-OCR-2`. Verificar la procedencia antes de integrar en un producto.
+- Discrepancia de atribucion: la ficha de ModelScope aparece bajo `PaddlePaddle/Unlimited-OCR-2` mientras el repositorio de Hugging Face es `baidu/Unlimited-OCR-2`. Verificar la procedencia antes de integrar en un producto.
 
 ## Enlaces
 
 - Repositorio de la conversion: https://huggingface.co/cstr/Unlimited-OCR-2-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/baidu/Unlimited-OCR-2
+- Modelo base en Hugging Face: https://huggingface.co/baidu/Unlimited-OCR-2
 - Revision fijada del modelo base: https://huggingface.co/baidu/Unlimited-OCR-2/tree/04647c7a6098d8d58915f003536a741c82eafb40
 - Repositorio de codigo upstream: https://github.com/baidu/Unlimited-OCR
 - Licencia upstream empleada en la conversion: https://github.com/baidu/Unlimited-OCR/blob/6e64831ab434b689ba1a28ede703b6d7d05cd714/LICENSE

@@ -85,10 +85,10 @@ La comparacion es orientativa: los tres alternativas son transformers densos est
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loop-untied-grow-d6 | 162.201.600 | 2.048 | Transformer con bucles (`TransformerGPT`) | no disponible | Repositorio HuggingFace, requiere codebase del paper |
+| loop-untied-grow-d6 | 162.201.600 | 2.048 | Transformer con bucles (`TransformerGPT`) | no disponible | Repositorio Hugging Face, requiere codebase del paper |
 | GPT-2 (124M) | 124 M | 1.024 | Transformer denso | Modified MIT | Ampliamente disponible, soporte nativo en multiples frameworks |
-| Pythia-160M | 160 M | 2.048 | Transformer denso | Apache 2.0 | HuggingFace, `AutoModel` |
-| SmolLM2-135M | 135 M | 8.192 | Transformer denso | Apache 2.0 | HuggingFace, `AutoModel` |
+| Pythia-160M | 160 M | 2.048 | Transformer denso | Apache 2.0 | Hugging Face, `AutoModel` |
+| SmolLM2-135M | 135 M | 8.192 | Transformer denso | Apache 2.0 | Hugging Face, `AutoModel` |
 
 Comparativa de rendimiento (MMLU, CORE u otras): no disponible para loop-untied-grow-d6.
 
@@ -109,7 +109,7 @@ Comparativa de rendimiento (MMLU, CORE u otras): no disponible para loop-untied-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-grow-d6
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-grow-d6
 - Codebase del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento (FineWeb): https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Articulo: no disponible como enlace directo en la informacion proporcionada; el titulo citado es "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents"

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B es el modelo mas pequeno de la familia Qwen3, desarrollada por el equipo Qwen de Alibaba. Se trata de un modelo de lenguaje causal denso de aproximadamente 0,6 mil millones de parametros (751.632.384 reales segun los pesos en safetensors, de los cuales 0,44B son no-embedding), construido sobre Qwen/Qwen3-0.6B-Base mediante preentrenamiento y postentrenamiento. La ficha que nos ocupa corresponde a la publicacion del autor ZZGGZZ en HuggingFace, que redistribuye los pesos oficiales bajo licencia Apache 2.0.
+Qwen3-0.6B es el modelo mas pequeno de la familia Qwen3, desarrollada por el equipo Qwen de Alibaba. Se trata de un modelo de lenguaje causal denso de aproximadamente 0,6 mil millones de parametros (751.632.384 reales segun los pesos en safetensors, de los cuales 0,44B son no-embedding), construido sobre Qwen/Qwen3-0.6B-Base mediante preentrenamiento y postentrenamiento. La ficha que nos ocupa corresponde a la publicacion del autor ZZGGZZ en Hugging Face, que redistribuye los pesos oficiales bajo licencia Apache 2.0.
 
 Su relevancia radica en que introduce en el tramo ultra-ligero las innovaciones de la generacion Qwen3: conmutacion sin coste entre modo de razonamiento (thinking) y modo de dialogo directo (non-thinking) dentro de un unico modelo, soporte declarado de mas de 100 idiomas y dialectos, y capacidades de agente con integracion de herramientas externas. Con 32.768 tokens de contexto y una arquitectura transformer con GQA (16 cabezas de consulta y 8 de clave/valor en 28 capas), es un candidato natural para despliegues en CPU, GPUs de consumo y entornos con restricciones severas de memoria.
 
@@ -84,7 +84,7 @@ La comparativa se basa en caracteristicas publicas de las familias citadas; no s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZZGGZZ/Qwen3-0.6B
+- Repositorio en Hugging Face: https://huggingface.co/ZZGGZZ/Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jupiter-Edu-NCERT-14B-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo AIwaala/Jupiter-Edu-NCERT-14B, publicada por el usuario mradermacher, conocido en HuggingFace por distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base es un transformer denso de 14.768.307.200 parámetros (aproximadamente 14,8 mil millones), orientado a tareas conversacionales y, por el nombre, vinculado al corpus educativo NCERT (libros de texto del National Council of Educational Research and Training de la India).
+Jupiter-Edu-NCERT-14B-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo AIwaala/Jupiter-Edu-NCERT-14B, publicada por el usuario mradermacher, conocido en Hugging Face por distribuir versiones cuantizadas de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base es un transformer denso de 14.768.307.200 parámetros (aproximadamente 14,8 mil millones), orientado a tareas conversacionales y, por el nombre, vinculado al corpus educativo NCERT (libros de texto del National Council of Educational Research and Training de la India).
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de casi 15B parámetros en hardware de consumo mediante cuantizaciones que van desde Q2_K (5,9 GB) hasta Q8_0 (15,8 GB), sin necesidad de GPUs de datacenter. El repositorio tiene un tamaño total de 102 GB porque incluye todas las variantes de cuantización en un mismo espacio.
 
@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la información disponible.
   - Q8_0: ~16-17 GB
 - GPU recomendadas: RTX 3060 12 GB o superior para Q4_K_M; RTX 4090 (24 GB) para Q6_K y Q8_0 con contexto amplio; A100/H100 no necesarias para este tamaño.
 - Cabe en GPU de consumo: sí, desde una RTX 3060 12 GB con Q4_K_M; para Q8_0 se recomienda 24 GB (RTX 3090/4090).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, text-generation-webui y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Jupiter-Edu-NCERT-14B-GGUF | 14,8B | No disponible | No disponible | GGUF | HuggingFace |
-| Modelos densos de ~14B (p. ej. Qwen2.5-14B) | ~14,7B | 32K-128K (segun variante) | Apache 2.0 (Qwen2.5) | safetensors, GGUF | HuggingFace, Ollama |
-| Modelos densos de ~13B (p. ej. Llama 2 13B) | 13B | 4K | Llama 2 Community | safetensors, GGUF | HuggingFace |
+| Jupiter-Edu-NCERT-14B-GGUF | 14,8B | No disponible | No disponible | GGUF | Hugging Face |
+| Modelos densos de ~14B (p. ej. Qwen2.5-14B) | ~14,7B | 32K-128K (segun variante) | Apache 2.0 (Qwen2.5) | safetensors, GGUF | Hugging Face, Ollama |
+| Modelos densos de ~13B (p. ej. Llama 2 13B) | 13B | 4K | Llama 2 Community | safetensors, GGUF | Hugging Face |
 
 La comparación se limita a parámetros y disponibilidad porque no hay datos de rendimiento publicados para Jupiter-Edu-NCERT-14B. Los modelos citados como referencia son alternativas de tamaño similar ampliamente documentadas; no se dispone de benchmarks comparativos directos.
 

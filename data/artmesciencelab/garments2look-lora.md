@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArtmeScienceLab/Garments2Look-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ArtmeScienceLab/Garments2Look-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
 - Repositorio de codigo y entrenamiento: https://github.com/ArtmeScienceLab/Garments2Look
 - Dataset: https://huggingface.co/datasets/ArtmeScienceLab/Garments2Look

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chiranzayn/Script es un modelo publicado en HuggingFace por el usuario Chiranzayn bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva: el README se limita a las etiquetas de frontmatter (`license: apache-2.0`, `language: en`), sin texto explicativo, sin descripcion de la arquitectura y sin indicacion del problema que resuelve. En el momento de la consulta acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
+Chiranzayn/Script es un modelo publicado en Hugging Face por el usuario Chiranzayn bajo licencia Apache 2.0. El repositorio no incluye model card descriptiva: el README se limita a las etiquetas de frontmatter (`license: apache-2.0`, `language: en`), sin texto explicativo, sin descripcion de la arquitectura y sin indicacion del problema que resuelve. En el momento de la consulta acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 La unica informacion verificable es la declaracion de idioma (ingles) y la licencia permisiva. No se especifica el numero de parametros, la longitud de contexto, la arquitectura ni el formato de pesos, por lo que no es posible afirmar si se trata de un transformer denso, un modelo MoE, un modelo de embeddings o un artefacto auxiliar (por ejemplo, un script de tokenizacion o un adaptador).
 
@@ -76,5 +76,5 @@ No disponible. Sin datos de parametros, contexto, arquitectura ni rendimiento no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chiranzayn/Script
+- Hugging Face: https://huggingface.co/Chiranzayn/Script
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados obtenidos corresponden a sitios de preguntas y respuestas en chino (Zhihu, Baidu Zhidao) sin relacion con el modelo.

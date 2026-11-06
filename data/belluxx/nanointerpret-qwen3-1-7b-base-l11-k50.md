@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Base | Capa | Features | k / L0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Belluxx/nanointerpret-qwen3-1.7b-base-l11-k50` | Qwen3-1.7B-Base | 11 | 32.768 | k = 50 | MIT | HuggingFace |
-| `Qwen/SAE-Res-Qwen3-1.7B-Base-W32K-L0_50` (Qwen-Scope) | Qwen3-1.7B-Base | no disponible | 32.768 | L0 = 50 | no disponible en la informacion | HuggingFace |
-| SAEs de `nanointerpret` para otras capas o k | Qwen3-1.7B-Base | variable | variable | variable | MIT (presumible) | GitHub / HuggingFace |
+| `Belluxx/nanointerpret-qwen3-1.7b-base-l11-k50` | Qwen3-1.7B-Base | 11 | 32.768 | k = 50 | MIT | Hugging Face |
+| `Qwen/SAE-Res-Qwen3-1.7B-Base-W32K-L0_50` (Qwen-Scope) | Qwen3-1.7B-Base | no disponible | 32.768 | L0 = 50 | no disponible en la informacion | Hugging Face |
+| SAEs de `nanointerpret` para otras capas o k | Qwen3-1.7B-Base | variable | variable | variable | MIT (presumible) | GitHub / Hugging Face |
 
 La comparación directa disponible es con Qwen-Scope: mismo modelo base, mismo tamaño de diccionario y mismo objetivo de dispersión (50 activas por token). La diferencia reportada es de cobertura lingüística: mejor en lenguas europeas para este SAE, mejor en chino para Qwen-Scope. No se dispone de otros SAEs comparables en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparación directa disponible es con Qwen-Scope: mismo modelo base, mismo t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Belluxx/nanointerpret-qwen3-1.7b-base-l11-k50
+- Hugging Face: https://huggingface.co/Belluxx/nanointerpret-qwen3-1.7b-base-l11-k50
 - Repositorio `nanointerpret`: https://github.com/Belluxx/nanointerpret
 - Documentación del pipeline de interpretación: https://github.com/Belluxx/nanointerpret/blob/main/docs/interpretation.md
 - Qwen-Scope (SAE comparable): https://huggingface.co/Qwen/SAE-Res-Qwen3-1.7B-Base-W32K-L0_50

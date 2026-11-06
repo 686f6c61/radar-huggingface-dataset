@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto o resolucion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Solume ObjectClear Core ML (esta ficha) | no disponible | s512 y s1024 | Eliminacion de objeto con sombra y reflejo; Core ML para macOS | S-Lab 1.0 (no comercial) + RAIL++-M | HuggingFace, paquete Core ML |
-| jixin0101/ObjectClear (original) | no disponible | no disponible | Mismo metodo en PyTorch safetensors fp16 | S-Lab 1.0 (no comercial) | HuggingFace |
-| SDXL 1.0 Inpainting 0.1 (base) | no disponible | SDXL estandar | Inpainting generico guiado por mascara, sin atencion objeto-efecto | CreativeML Open RAIL++-M | HuggingFace |
+| Solume ObjectClear Core ML (esta ficha) | no disponible | s512 y s1024 | Eliminacion de objeto con sombra y reflejo; Core ML para macOS | S-Lab 1.0 (no comercial) + RAIL++-M | Hugging Face, paquete Core ML |
+| jixin0101/ObjectClear (original) | no disponible | no disponible | Mismo metodo en PyTorch safetensors fp16 | S-Lab 1.0 (no comercial) | Hugging Face |
+| SDXL 1.0 Inpainting 0.1 (base) | no disponible | SDXL estandar | Inpainting generico guiado por mascara, sin atencion objeto-efecto | CreativeML Open RAIL++-M | Hugging Face |
 
 La comparación con otros métodos de eliminación de objetos (por ejemplo, variantes de inpainting especializadas) no está disponible en la información proporcionada.
 
@@ -82,8 +82,8 @@ La comparación con otros métodos de eliminación de objetos (por ejemplo, vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heypatkay/solume-objectclear-coreml
-- Modelo base en HuggingFace: https://huggingface.co/jixin0101/ObjectClear
+- Modelo en Hugging Face: https://huggingface.co/heypatkay/solume-objectclear-coreml
+- Modelo base en Hugging Face: https://huggingface.co/jixin0101/ObjectClear
 - Repositorio de código de los autores: https://github.com/zjx0101/ObjectClear
 - Base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Paper "ObjectClear: Complete Object Removal via Object-Effect Attention" (2025), citado en la model card; no se proporciona URL directa en la información disponible.

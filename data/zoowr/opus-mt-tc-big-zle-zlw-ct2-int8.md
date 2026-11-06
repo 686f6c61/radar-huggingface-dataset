@@ -83,7 +83,7 @@ La comparativa se limita al modelo original y a otras variantes de la familia OP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zoowr/opus-mt-tc-big-zle-zlw-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/Zoowr/opus-mt-tc-big-zle-zlw-ct2-int8
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-zle-zlw
 - Revision del modelo base citada: `e14020b99526d830084be270a1051dca51090eeb`
 - CTranslate2 (repositorio): https://github.com/OpenNMT/CTranslate2

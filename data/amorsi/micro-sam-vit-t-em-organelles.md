@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`micro-sam vit_t_em_organelles` es un checkpoint de segmentación de imágenes preentrenado para microscopía electrónica (EM), publicado como espejo en HuggingFace por el usuario `amorsi`. El modelo original forma parte del proyecto [micro-sam](https://github.com/computational-cell-analytics/micro-sam), desarrollado por el Computational Cell Analytics group, que adapta la arquitectura Segment Anything Model (SAM) al dominio de imagen biomédica y, en particular, a la segmentación de orgánulos celulares en imágenes de microscopía electrónica.
+`micro-sam vit_t_em_organelles` es un checkpoint de segmentación de imágenes preentrenado para microscopía electrónica (EM), publicado como espejo en Hugging Face por el usuario `amorsi`. El modelo original forma parte del proyecto [micro-sam](https://github.com/computational-cell-analytics/micro-sam), desarrollado por el Computational Cell Analytics group, que adapta la arquitectura Segment Anything Model (SAM) al dominio de imagen biomédica y, en particular, a la segmentación de orgánulos celulares en imágenes de microscopía electrónica.
 
 El modelo emplea la variante compacta ViT-T (Vision Transformer Tiny) de SAM, con un codificador de imagen ligero y un decodificador de máscaras entrenado específicamente para estructuras subcelulares en EM. El repositorio ocupa aproximadamente 0,1 GB, lo que confirma que se trata de la variante tiny y no de los checkpoints ViT-B o ViT-L. Se distribuye como pesos PyTorch (`model.pt` y `decoder.pt`) y se consume a través de la API de micro-sam indicando `model_type="vit_t_em_organelles"`.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micro-sam vit_t_em_organelles | ViT-T (cifra exacta no disponible) | no aplica | Segmentación EM de orgánulos | no disponible (código micro-sam MIT) | HuggingFace (espejo) y registro micro-sam |
+| micro-sam vit_t_em_organelles | ViT-T (cifra exacta no disponible) | no aplica | Segmentación EM de orgánulos | no disponible (código micro-sam MIT) | Hugging Face (espejo) y registro micro-sam |
 | micro-sam vit_b_em_organelles | ViT-B (cifra exacta no disponible) | no aplica | Segmentación EM de orgánulos | no disponible | Registro micro-sam |
 | SAM original (ViT-T) | ViT-T | no aplica | Segmentación de imágenes generales | Apache 2.0 (SAM original) | Meta AI |
 | SAM original (ViT-B) | ViT-B | no aplica | Segmentación de imágenes generales | Apache 2.0 (SAM original) | Meta AI |
@@ -81,7 +81,7 @@ La comparación se basa en la familia de checkpoints de micro-sam y en SAM origi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-t-em-organelles
+- Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-t-em-organelles
 - Repositorio micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Registro de checkpoints (util.py): https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos `model.pt`: https://uk1s3.embassy.ebi.ac.uk/public-datasets/bioimage.io/greedy-whale/1/files/vit_t.pt

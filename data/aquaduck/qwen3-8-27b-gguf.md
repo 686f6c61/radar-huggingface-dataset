@@ -71,7 +71,7 @@ No se dispone de datos comparativos específicos para este repositorio. El model
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aquaduck/Qwen3.8-27B-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/aquaduck/Qwen3.8-27B-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog oficial de Qwen3.8: https://qwen.ai/blog?id=qwen3.8
 - Fuente de cuantización GGUF (Unsloth): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

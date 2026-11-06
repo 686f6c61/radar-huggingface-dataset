@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Pro-RL es el checkpoint insignia de la serie MiMo-V2.6 desarrollada por Xiaomi (equipo Xiaomi MiMo), distribuido en HuggingFace a traves del repositorio oficial `XiaomiMiMo/MiMo-V2.6-Pro-RL` y re-publicado por terceros. Se trata de un modelo multimodal nativo ("omnimodal") que procesa texto, imagen, video y audio con una unica arquitectura de mezcla de expertos dispersa (sparse MoE) de 1,02 billones de parametros totales y 42.000 millones de parametros activos por token, con una ventana de contexto de 1.000.000 de tokens.
+MiMo-V2.6-Pro-RL es el checkpoint insignia de la serie MiMo-V2.6 desarrollada por Xiaomi (equipo Xiaomi MiMo), distribuido en Hugging Face a traves del repositorio oficial `XiaomiMiMo/MiMo-V2.6-Pro-RL` y re-publicado por terceros. Se trata de un modelo multimodal nativo ("omnimodal") que procesa texto, imagen, video y audio con una unica arquitectura de mezcla de expertos dispersa (sparse MoE) de 1,02 billones de parametros totales y 42.000 millones de parametros activos por token, con una ventana de contexto de 1.000.000 de tokens.
 
 El objetivo declarado de la serie es escalar el aprendizaje por refuerzo hacia la auto-mejora: en lugar de ejecutar entrenamientos RL separados por dominio, el modelo se entrena con una unica ejecucion mixta que cubre codigo, agentes generales, tareas visuales y ciberseguridad, empleando GRPO asincrono sobre lotes muy grandes (1.568 prompts x 16 rollouts por paso). Incorpora innovaciones de senal de recompensa, como Groupwise Reward Synthesis (GRS) y Groupwise Advantage Redistribution (GAR), que permiten clasificar trayectorias que ya han superado la prueba en lugar de aplicar unicamente una recompensa binaria.
 
@@ -94,8 +94,8 @@ No se han publicado en la informacion disponible resultados de benchmarks clasic
 
 | Modelo | Parametros | Contexto | Licencia | Resultado destacado | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-RL | 1,02 B totales / 42 B activos | 1 M tokens | MIT | DeepSWE v1.1: 71,9; OSWorld: 82,0 | HuggingFace y ModelScope |
-| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible en la informacion | DeepSWE v1.1: 67,9; OSWorld: 80,8 | HuggingFace y ModelScope |
+| MiMo-V2.6-Pro-RL | 1,02 B totales / 42 B activos | 1 M tokens | MIT | DeepSWE v1.1: 71,9; OSWorld: 82,0 | Hugging Face y ModelScope |
+| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible en la informacion | DeepSWE v1.1: 67,9; OSWorld: 80,8 | Hugging Face y ModelScope |
 | MiMo-V2.5-Pro | no disponible | no disponible | no disponible en la informacion | DeepSWE v1.1: 19,0; OSWorld: no disponible | no disponible |
 | Claude Opus 5 | no disponible | no disponible | propietaria | DeepSWE v1.1: 74,0; ProgramBench: 37,0 | API comercial |
 | GPT-5.6 Sol | no disponible | no disponible | propietaria | DeepSWE v1.1: 73,0; OSWorld: 83,0 | API comercial |
@@ -119,9 +119,9 @@ La comparacion se limita a los valores de benchmark aportados por el propio auto
 
 ## Enlaces
 
-- Repositorio consultado en HuggingFace: https://huggingface.co/ahmed-amedo/MiMo-V2.6-Pro-RL
-- Repositorio oficial en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
-- Repositorio del modelo Flash en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Repositorio consultado en Hugging Face: https://huggingface.co/ahmed-amedo/MiMo-V2.6-Pro-RL
+- Repositorio oficial en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Repositorio del modelo Flash en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - ModelScope (Pro): https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - ModelScope (Flash): https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Blog oficial de la serie: https://mimo.xiaomi.com/mimo-v2-6

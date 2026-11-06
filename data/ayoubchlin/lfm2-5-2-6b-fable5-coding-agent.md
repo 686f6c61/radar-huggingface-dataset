@@ -79,6 +79,6 @@ No disponible. No se dispone de informacion sobre otros fine-tunes del mismo mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent
+- Modelo en Hugging Face: https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/saidutta69/fable-5-premium

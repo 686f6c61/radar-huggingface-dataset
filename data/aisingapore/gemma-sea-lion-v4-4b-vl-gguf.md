@@ -78,7 +78,7 @@ El modelo se diferencia de gemma-3-4b-it por su post-entrenamiento específico p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL-GGUF
+- Repositorio Hugging Face: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL-GGUF
 - Modelo base (safetensors): https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-4B-VL
 - Colección SEA-LION v4: https://huggingface.co/collections/aisingapore/sea-lion-v4
 - Documentación SEA-LION v4: https://docs.sea-lion.ai/models/sea-lion-v4

@@ -4,7 +4,7 @@
 
 `prism-ta/dont-agent-qwen25-coder-1.5b-lora` es un adaptador LoRA entrenado mediante PEFT sobre el modelo base `Qwen/Qwen2.5-Coder-1.5B`. No se trata de un modelo completo, sino de un conjunto de pesos delta que debe cargarse junto al modelo base para producir inferencia. El repositorio ocupa 0,1 GB y esta etiquetado como `text-generation` y `conversational`, e incluye referencias a las librerias `transformers`, `trl`, `unsloth` y `peft` (version de framework declarada: PEFT 0.20.0).
 
-El autor (`prism-ta`) no ha publicado informacion sobre el proceso de entrenamiento: la model card es la plantilla estandar de HuggingFace con practicamente todos los campos marcados como `[More Information Needed]`, incluidos desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion. Tampoco se declaran resultados de benchmarks ni el conjunto de datos utilizado, por lo que cualquier afirmacion sobre su calidad en tareas de codigo o de agente seria especulativa.
+El autor (`prism-ta`) no ha publicado informacion sobre el proceso de entrenamiento: la model card es la plantilla estandar de Hugging Face con practicamente todos los campos marcados como `[More Information Needed]`, incluidos desarrollador, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion. Tampoco se declaran resultados de benchmarks ni el conjunto de datos utilizado, por lo que cualquier afirmacion sobre su calidad en tareas de codigo o de agente seria especulativa.
 
 Su relevancia actual es limitada y de nicho: se trata de un adaptador de 1,5B orientado, segun su nombre (`dont-agent`), a tareas de agente sobre un modelo de codigo pequeno, un perfil adecuado para experimentacion local en GPU de consumo o incluso CPU. Con 0 descargas y 0 likes en el momento de la consulta, es un artefacto reciente y sin validacion externa, por lo que debe tratarse como material experimental.
 
@@ -69,7 +69,7 @@ La comparativa se establece a nivel de modelo base, ya que el adaptador no tiene
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dont-agent-qwen25-coder-1.5b-lora (este) | Adaptador sobre 1,54 B | No disponible (base: 32.768) | No disponible | Repositorio HuggingFace con 0 descargas |
+| dont-agent-qwen25-coder-1.5b-lora (este) | Adaptador sobre 1,54 B | No disponible (base: 32.768) | No disponible | Repositorio Hugging Face con 0 descargas |
 | Qwen2.5-Coder-1.5B (base) | 1,54 B | 32.768 tokens | Apache-2.0 | Muy extendido, amplio soporte en motores de inferencia |
 | Qwen2.5-Coder-7B | 7,61 B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Extendido, requiere mas VRAM |
 | DeepSeek-Coder-1.3B | 1,3 B | 16.384 tokens | Licencia DeepSeek (uso comercial permitido con condiciones) | Ampliamente disponible |
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado para el adaptador. Cualquier ele
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prism-ta/dont-agent-qwen25-coder-1.5b-lora
+- Modelo en Hugging Face: https://huggingface.co/prism-ta/dont-agent-qwen25-coder-1.5b-lora
 - Modelo base Qwen2.5-Coder-1.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Documentacion de TRL: https://huggingface.co/docs/trl/index

@@ -45,7 +45,7 @@ No hay información sobre la composición del dataset, el número de tokens de e
 - Prototipado interno de asistentes conversacionales: el ejemplo de la model card permite levantar un pipeline con `device_map="auto"` en una GPU de gama media para pruebas de concepto, siempre con validación humana de las respuestas.
 - Investigación sobre adaptadores de bajo rango: analizar qué cambia un adaptador de 0,5 GB en el comportamiento de un modelo de 4B, por ejemplo midiendo deriva en estilo, longitud de respuesta o idioma.
 - Base para un segundo ajuste (continued fine-tuning): partir de este adaptador para experimentos de alineación posteriores (DPO, ORPO) manteniendo el modelo base congelado en 4 bits.
-- Docencia y formación técnica: ilustrar el ciclo completo de un fine-tuning con TRL, desde la definición del dataset hasta la publicación en HuggingFace con la plantilla automática de model card.
+- Docencia y formación técnica: ilustrar el ciclo completo de un fine-tuning con TRL, desde la definición del dataset hasta la publicación en Hugging Face con la plantilla automática de model card.
 - Despliegue en entornos con GPU limitada: si se fusionan los pesos y se convierte a GGUF, podría ejecutarse en CPU o en GPUs de 8 GB, aunque el rendimiento real no está medido.
 
 ## Benchmarks y rendimiento
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AeliaTR/aelia-asama6-adapter
+- Modelo en Hugging Face: https://huggingface.co/AeliaTR/aelia-asama6-adapter
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Repositorio de Unsloth (proveedor del modelo base cuantizado): https://github.com/unslothai/unsloth

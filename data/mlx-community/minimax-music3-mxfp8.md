@@ -83,7 +83,7 @@ La variante MXFP8 es la recomendada cuando la fidelidad de las letras es crític
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/MiniMax-Music3-mxfp8
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/MiniMax-Music3-mxfp8
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - Librería mlx-audio: https://github.com/Blaizzy/mlx-audio

@@ -23,7 +23,7 @@ Este repositorio concreto corresponde a un único punto de la retícula experime
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura OLMo en su variante legacy (`hf_olmo`), es decir, un transformer decoder-only con atención causal estándar. Para cargarlo es imprescindible instalar el paquete `ai2-olmo`, que registra `OLMoForCausalLM` en `transformers`. El repositorio de 5,4 GB incluye, por cada uno de los 44 checkpoints intermedios publicados (ramas `step0` a `step244151`), un fichero `pytorch_model.bin`, el `config.json` de HuggingFace y el `config.yaml` original de OLMo; la rama `main` contiene el checkpoint final (`step244151`). También se registran los índices de datos de entrenamiento en `data-indices/` y `train_data/global_indices.npy`.
+El modelo sigue la arquitectura OLMo en su variante legacy (`hf_olmo`), es decir, un transformer decoder-only con atención causal estándar. Para cargarlo es imprescindible instalar el paquete `ai2-olmo`, que registra `OLMoForCausalLM` en `transformers`. El repositorio de 5,4 GB incluye, por cada uno de los 44 checkpoints intermedios publicados (ramas `step0` a `step244151`), un fichero `pytorch_model.bin`, el `config.json` de Hugging Face y el `config.yaml` original de OLMo; la rama `main` contiene el checkpoint final (`step244151`). También se registran los índices de datos de entrenamiento en `data-indices/` y `train_data/global_indices.npy`.
 
 Los hiperparámetros de entrenamiento están codificados en el propio nombre del repositorio: 32.000 millones de tokens, tamaño de batch de 64 secuencias de 2048 tokens (aproximadamente 131.072 tokens por paso, lo que da unos 244.000 pasos), tasa de aprendizaje máxima de 0.0087 con schedule coseno, weight decay de 0.1 y `alpha_f` de 0.01 (el LR final es el 1% del LR máximo). El modelo se entrenó sobre la versión deduplicada de The Pile. No se documenta en la información disponible el uso de RLHF, DPO ni SFT posteriores; se trata de un modelo estrictamente preentrenado.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-16M-32B (este modelo) | 16M | 2048 tokens | No disponible | No disponible | HuggingFace (repo `dill-lab`) |
-| Otros modelos de la suite GeoLadder | 4M-75M | 2048 tokens | No disponible | No disponible | Coleccion GeoLadder en HuggingFace |
-| Modelos Pythia (referencia de estilo) | 14M-12B | 2048 tokens | No disponible en esta ficha | Apache 2.0 (segun el autor de Pythia) | HuggingFace (EleutherAI) |
+| GeoLadder-16M-32B (este modelo) | 16M | 2048 tokens | No disponible | No disponible | Hugging Face (repo `dill-lab`) |
+| Otros modelos de la suite GeoLadder | 4M-75M | 2048 tokens | No disponible | No disponible | Coleccion GeoLadder en Hugging Face |
+| Modelos Pythia (referencia de estilo) | 14M-12B | 2048 tokens | No disponible en esta ficha | Apache 2.0 (segun el autor de Pythia) | Hugging Face (EleutherAI) |
 
 La model card indica explícitamente que el esquema de checkpoints sigue el de la suite Pythia, por lo que los modelos Pythia son la referencia metodológica más cercana. No se dispone de datos de rendimiento comparativos verificados en la información proporcionada.
 
@@ -82,7 +82,7 @@ La model card indica explícitamente que el esquema de checkpoints sigue el de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs64-lr0.0087-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs64-lr0.0087-wd0.1-decay0.01
 - Colección GeoLadder: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper (PMLR 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - arXiv: https://arxiv.org/abs/2602.20433

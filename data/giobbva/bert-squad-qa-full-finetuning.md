@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Giobbva/bert-squad-qa-full-finetuning` es un modelo de respuesta a preguntas extractiva (extractive question answering) resultado del ajuste fino completo (full fine-tuning) de `google-bert/bert-base-uncased` sobre el conjunto de datos SQuAD v1.1. Lo publica el usuario Giobbva en HuggingFace y su objetivo es resolver la tarea clasica de QA sobre contexto: dado un parrafo y una pregunta, localizar el fragmento de texto que contiene la respuesta. El modelo cuenta con 108.893.186 parametros reales (segun los pesos en safetensors) y un tamano de repositorio de 0.4 GB.
+`Giobbva/bert-squad-qa-full-finetuning` es un modelo de respuesta a preguntas extractiva (extractive question answering) resultado del ajuste fino completo (full fine-tuning) de `google-bert/bert-base-uncased` sobre el conjunto de datos SQuAD v1.1. Lo publica el usuario Giobbva en Hugging Face y su objetivo es resolver la tarea clasica de QA sobre contexto: dado un parrafo y una pregunta, localizar el fragmento de texto que contiene la respuesta. El modelo cuenta con 108.893.186 parametros reales (segun los pesos en safetensors) y un tamano de repositorio de 0.4 GB.
 
 Se trata de un transformer encoder-only de la familia BERT, orientado exclusivamente a comprension de lectura en ingles, no a generacion de texto libre. Su relevancia practica radica en que es un modelo pequeno y eficiente que puede ejecutarse en hardware modesto, y en que reproduce el flujo clasico de fine-tuning sobre SQuAD, util como referencia o baseline para tareas de extraccion de respuestas en documentos.
 
-El acceso al modelo esta restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia declarada es Apache 2.0 y el modelo esta etiquetado como compatible con endpoints de inferencia de HuggingFace.
+El acceso al modelo esta restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia declarada es Apache 2.0 y el modelo esta etiquetado como compatible con endpoints de inferencia de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,14 +65,14 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0.44 GB en FP32, 0.22 GB en FP16 y en torno a 0.11 GB en INT8, para un modelo de 108.9 millones de parametros.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas tarjetas consumer como GTX 1650, RTX 3060, RTX 4090; tambien funciona en CPU para cargas de baja concurrencia.
 - Cabe en GPU consumer: si, sin dificultad; incluso en GPUs de gama de entrada y en entornos integrados.
-- Opciones de despliegue: transformers (PyTorch), endpoints de HuggingFace (el modelo esta marcado como `endpoints_compatible`), ONNX Runtime; tambien es convertible a llama.cpp/GGUF o a formatos de cuantizacion dinamica para CPU, aunque no se publican pesos en esos formatos.
+- Opciones de despliegue: transformers (PyTorch), endpoints de Hugging Face (el modelo esta marcado como `endpoints_compatible`), ONNX Runtime; tambien es convertible a llama.cpp/GGUF o a formatos de cuantizacion dinamica para CPU, aunque no se publican pesos en esos formatos.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en SQuAD v1.1 |
 |---|---|---|---|---|---|
-| Giobbva/bert-squad-qa-full-finetuning | 108.893.186 | 512 tokens | apache-2.0 | Gated en HuggingFace | EM 69.04 / F1 79.53 (declarado) |
+| Giobbva/bert-squad-qa-full-finetuning | 108.893.186 | 512 tokens | apache-2.0 | Gated en Hugging Face | EM 69.04 / F1 79.53 (declarado) |
 | google-bert/bert-base-uncased | ~110 M | 512 tokens | apache-2.0 | Publico | no disponible (modelo base sin fine-tuning de QA) |
 | csarron/bert-base-uncased-squad-v1 | no disponible | 512 tokens | no disponible | no disponible | no disponible |
 | deepset/bert-base-cased-squad2 | no disponible | 512 tokens | no disponible | no disponible | no disponible |
@@ -86,13 +86,13 @@ No se dispone de datos verificados de rendimiento de los modelos comparables en 
 - Limitado a 512 tokens por pasaje; contextos mas largos requieren segmentacion previa, lo que puede fragmentar la respuesta.
 - Riesgo de sesgos heredados del corpus de preentrenamiento de bert-base-uncased y de las preguntas de SQuAD, que no representan dominios especializados.
 - Los resultados de benchmarks estan marcados como no verificados por el autor.
-- El acceso al modelo es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo, lo que puede complicar su uso en pipelines automatizados.
+- El acceso al modelo es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo, lo que puede complicar su uso en pipelines automatizados.
 - Aunque la licencia es Apache 2.0, conviene revisar que los terminos de acceso al repositorio no impongan restricciones adicionales.
 - No se documentan hiperparametros, datos de entrenamiento ni procesos de validacion, lo que dificulta la reproducibilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Giobbva/bert-squad-qa-full-finetuning
+- Modelo en Hugging Face: https://huggingface.co/Giobbva/bert-squad-qa-full-finetuning
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset SQuAD v1.1: https://huggingface.co/datasets/rajpurkar/squad
 - Paper original de BERT: https://arxiv.org/abs/1810.04805

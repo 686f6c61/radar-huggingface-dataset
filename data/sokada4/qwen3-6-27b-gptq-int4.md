@@ -80,6 +80,6 @@ No disponible. No se proporcionan datos comparativos con otros modelos de la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sokada4/Qwen3.6-27B-GPTQ-Int4
+- Repositorio Hugging Face: https://huggingface.co/sokada4/Qwen3.6-27B-GPTQ-Int4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - GPTQModel (herramienta de cuantizacion): https://github.com/ModelCloud/GPTQModel

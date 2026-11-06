@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luna-tics-models es un repositorio publicado en HuggingFace por el usuario harshaleemalu03 bajo licencia MIT. En el momento de la consulta, la informacion disponible se limita a los metadatos del repositorio: 0 descargas, 0 "likes", un tamano de 1,3 GB y una model card que unicamente contiene la declaracion de licencia (`license: mit`), sin texto descriptivo, sin pipeline declarado y sin idiomas especificados.
+Luna-tics-models es un repositorio publicado en Hugging Face por el usuario harshaleemalu03 bajo licencia MIT. En el momento de la consulta, la informacion disponible se limita a los metadatos del repositorio: 0 descargas, 0 "likes", un tamano de 1,3 GB y una model card que unicamente contiene la declaracion de licencia (`license: mit`), sin texto descriptivo, sin pipeline declarado y sin idiomas especificados.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni el proceso de ajuste. Tampoco hay resultados de evaluacion publicados ni documentacion tecnica asociada, por lo que no es posible determinar que problema resuelve el modelo ni en que categoria compite (lenguaje, vision, audio u otra).
 
@@ -21,8 +21,8 @@ La relevancia actual de esta ficha es, por tanto, limitada: se trata de un repos
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 1,3 GB, pero no se detalla su contenido) |
 | Autor | harshaleemalu03 |
-| Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Tamano del repositorio | 1,3 GB |
 | Descargas | 0 |
 | Likes | 0 |
@@ -87,6 +87,6 @@ No disponible. Al no conocerse la categoria del modelo (tamano, tarea, modalidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harshaleemalu03/Luna-tics-models
+- Hugging Face: https://huggingface.co/harshaleemalu03/Luna-tics-models
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relacionado con este modelo, su autor ni su licencia; los enlaces devueltos (foros y articulos en chino sobre otros temas) no son relevantes y se omiten.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

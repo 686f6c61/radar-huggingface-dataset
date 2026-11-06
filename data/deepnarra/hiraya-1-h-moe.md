@@ -91,7 +91,7 @@ La comparacion es orientativa: Hiraya-1-H-MoE es el unico MoE del grupo y el uni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeepNarra/Hiraya-1-H-MoE
+- Modelo en Hugging Face: https://huggingface.co/DeepNarra/Hiraya-1-H-MoE
 - Organizacion DeepNarra: https://huggingface.co/DeepNarra
 - Modelo base Hiraya-1-Base: https://huggingface.co/DeepNarra/Hiraya-1-Base
 - Fase 3 Hiraya-1-Instruct: https://huggingface.co/DeepNarra/Hiraya-1-Instruct

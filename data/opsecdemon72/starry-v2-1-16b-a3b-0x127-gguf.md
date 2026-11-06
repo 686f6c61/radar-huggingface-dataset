@@ -77,6 +77,6 @@ La comparación se limita a aspectos arquitectónicos y de licencia, ya que no h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/opsecdemon72/starry-v2.1-16b-a3b-0x127-gguf
+- Repositorio Hugging Face: https://huggingface.co/opsecdemon72/starry-v2.1-16b-a3b-0x127-gguf
 - Modelo base (kalomaze/Qwen3-16B-A3B): https://huggingface.co/kalomaze/Qwen3-16B-A3B
 - Página de descubrimiento de modelos GGUF (referencia genérica): https://local-ai-zone.github.io/

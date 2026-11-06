@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jenny es un adaptador LoRA de text-to-image publicado por el usuario AiMamis en HuggingFace. Se trata de una personalización de bajo rango (LoRA) pensada para generar representaciones consistentes de un personaje concreto, definido por los tokens de activación `Jenny`, `Black hair`, `Freckles`, `Green eyes` y `Fair skin`. El adaptador se monta sobre el modelo base krea/Krea-2-Turbo, según declara la propia model card, y se distribuye a través de la librería diffusers.
+Jenny es un adaptador LoRA de text-to-image publicado por el usuario AiMamis en Hugging Face. Se trata de una personalización de bajo rango (LoRA) pensada para generar representaciones consistentes de un personaje concreto, definido por los tokens de activación `Jenny`, `Black hair`, `Freckles`, `Green eyes` y `Fair skin`. El adaptador se monta sobre el modelo base krea/Krea-2-Turbo, según declara la propia model card, y se distribuye a través de la librería diffusers.
 
 El modelo resuelve el problema clásico de consistencia de identidad en generación de imágenes: en lugar de describir un personaje con decenas de tokens en cada prompt, el LoRA fija sus rasgos faciales y capilares con una sola palabra de activación. Esto resulta relevante para flujos de trabajo que requieren el mismo personaje repetido en múltiples imágenes, como cómics, storyboards, avatares o assets de videojuegos.
 
@@ -66,8 +66,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Tipo | Parámetros | Resolución / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AiMamis/Jenny | LoRA de personaje sobre modelo de difusión | no disponible (repo de 0,5 GB) | no disponible | openrail++ | HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo | Modelo base text-to-image | no disponible | no disponible | no disponible en esta ficha | HuggingFace |
+| AiMamis/Jenny | LoRA de personaje sobre modelo de difusión | no disponible (repo de 0,5 GB) | no disponible | openrail++ | Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo | Modelo base text-to-image | no disponible | no disponible | no disponible en esta ficha | Hugging Face |
 | Otros LoRA de personaje comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/AiMamis/Jenny
+- Página del modelo en Hugging Face: https://huggingface.co/AiMamis/Jenny
 - Repositorio de archivos (pestaña Files & versions): https://huggingface.co/AiMamis/Jenny/tree/main
 - Modelo base declarado: krea/Krea-2-Turbo
 - Paper, blog técnico, repositorio de código o demo: no disponible en la información proporcionada

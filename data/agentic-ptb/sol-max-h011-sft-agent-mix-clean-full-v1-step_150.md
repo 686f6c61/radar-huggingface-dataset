@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max.h011 (este) | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | 128k (tipico de Qwen3.5) | Apache 2.0 (probable) | HuggingFace |
-| Qwen/Qwen3.5-9B-Instruct | 9,4B | 128k | Apache 2.0 (probable) | HuggingFace |
+| agentic-ptb/sol-max.h011 (este) | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | 128k (tipico de Qwen3.5) | Apache 2.0 (probable) | Hugging Face |
+| Qwen/Qwen3.5-9B-Instruct | 9,4B | 128k | Apache 2.0 (probable) | Hugging Face |
 
 La comparativa se limita al modelo base y su version instruct, ya que no hay otros modelos agenticos de tamano similar con informacion publica en los resultados de busqueda. Este checkpoint se diferencia por estar orientado a agentes, pero carece de la madurez de los modelos instruct completos.
 
@@ -76,7 +76,7 @@ La comparativa se limita al modelo base y su version instruct, ya que no hay otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h011.sft-agent-mix-clean-full-v1.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h011.sft-agent-mix-clean-full-v1.step_150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Referencia general sobre agentic AI (arXiv): https://arxiv.org/abs/2510.25445
 - Informacion sobre GPT-5.6 (driver de datos): https://openai.com/index/gpt-5-6/

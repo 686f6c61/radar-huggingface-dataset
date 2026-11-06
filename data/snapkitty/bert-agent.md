@@ -16,7 +16,7 @@ La arquitectura se basa en un cross-encoder DeBERTa-v3-base, que concatena premi
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP16 (TensorRT) |
 | Idiomas soportados | no disponible (probablemente ingles, no especificado) |
-| Licencia | AGPL-3.0 (segun HuggingFace); la model card menciona triple licencia AGPL / BSL 1.1 / MIT |
+| Licencia | AGPL-3.0 (segun Hugging Face); la model card menciona triple licencia AGPL / BSL 1.1 / MIT |
 | Formato de pesos | ONNX, TensorRT engine (no se menciona safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ No se dispone de comparaciones con otros cross-encoders modernos (como RoBERTa-l
 ## Limitaciones y advertencias
 
 - Modelo especializado: no es un chatbot ni un generador de texto; solo realiza clasificación de implicación en tres clases. Intentar usarlo para otras tareas puede dar resultados sin sentido.
-- Licencia AGPL-3.0 en HuggingFace (aunque la model card menciona triple licencia AGPL/BSL 1.1/MIT). La AGPL impone obligaciones de copyleft sobre servicios de red, lo que puede afectar a despliegues comerciales que expongan el servicio a usuarios externos. Se debe verificar qué licencia se aplica realmente en cada caso.
+- Licencia AGPL-3.0 en Hugging Face (aunque la model card menciona triple licencia AGPL/BSL 1.1/MIT). La AGPL impone obligaciones de copyleft sobre servicios de red, lo que puede afectar a despliegues comerciales que expongan el servicio a usuarios externos. Se debe verificar qué licencia se aplica realmente en cada caso.
 - La longitud de contexto no está especificada; DeBERTa-v3-base tiene un límite típico de 512 tokens, pero no se confirma. Fragmentos de fuente muy largos podrían truncarse, afectando a la precisión de la verificación.
 - No se han publicado benchmarks cuantitativos; la afirmación de latencia <5 ms proviene de la model card y no ha sido verificada de forma independiente.
 - El sistema depende de TensorRT y CUDA, lo que limita el despliegue a entornos NVIDIA. No se menciona soporte para CPU u otras aceleradoras.
@@ -90,7 +90,7 @@ No se dispone de comparaciones con otros cross-encoders modernos (como RoBERTa-l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/bert-agent
+- Hugging Face: https://huggingface.co/Snapkitty/bert-agent
 - Modelo base DeBERTa-v3: https://huggingface.co/microsoft/deberta-v3-base
 - TensorRT (NVIDIA): https://developer.nvidia.com/tensorrt
 - No se proporcionan otros enlaces (papers, repositorios, demos) en la información disponible.

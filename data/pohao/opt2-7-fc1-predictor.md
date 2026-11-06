@@ -71,6 +71,6 @@ No se dispone de información sobre otros modelos de predicción de activaciones
 
 ## Enlaces
 
-- [HuggingFace: PoHao/opt2.7-fc1-predictor](https://huggingface.co/PoHao/opt2.7-fc1-predictor)
-- [HuggingFace: PoHao/opt2.7-predictor-guided-sft](https://huggingface.co/PoHao/opt2.7-predictor-guided-sft)
-- [HuggingFace: facebook/opt-2.7b](https://huggingface.co/facebook/opt-2.7b)
+- [Hugging Face: PoHao/opt2.7-fc1-predictor](https://huggingface.co/PoHao/opt2.7-fc1-predictor)
+- [Hugging Face: PoHao/opt2.7-predictor-guided-sft](https://huggingface.co/PoHao/opt2.7-predictor-guided-sft)
+- [Hugging Face: facebook/opt-2.7b](https://huggingface.co/facebook/opt-2.7b)

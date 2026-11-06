@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kumo-1.5B-LoRA es un adaptador LoRA publicado por el usuario Tomopas en HuggingFace, entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL sobre un modelo base identificado únicamente como `weights/base`. El repositorio contiene únicamente los pesos del adaptador (0,5 GB), no el modelo completo, por lo que su uso requiere disponer por separado del modelo base referenciado. La nomenclatura del identificador sugiere un modelo de aproximadamente 1.500 millones de parámetros, aunque esta cifra no se confirma en la model card.
+Kumo-1.5B-LoRA es un adaptador LoRA publicado por el usuario Tomopas en Hugging Face, entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL sobre un modelo base identificado únicamente como `weights/base`. El repositorio contiene únicamente los pesos del adaptador (0,5 GB), no el modelo completo, por lo que su uso requiere disponer por separado del modelo base referenciado. La nomenclatura del identificador sugiere un modelo de aproximadamente 1.500 millones de parámetros, aunque esta cifra no se confirma en la model card.
 
 La relevancia de esta ficha es limitada desde el punto de vista de evaluación técnica: no se publican datos sobre el dataset de entrenamiento, la composición de los datos, el número de tokens vistos ni resultados de benchmarks. La model card es la plantilla autogenerada por TRL, con campos sin rellenar (el modelo base aparece como `None` en la sección de inicio rápido y en la frase de fine-tuning). Esto implica que cualquier evaluación rigurosa del adaptador debe realizarse empíricamente por parte del usuario.
 
@@ -75,6 +75,6 @@ No disponible. No se conocen modelos comparables porque el modelo base no está 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tomopas/Kumo-1.5B-LoRA
+- Hugging Face: https://huggingface.co/Tomopas/Kumo-1.5B-LoRA
 - Repositorio TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Repositorio PEFT: https://github.com/huggingface/peft

@@ -89,7 +89,7 @@ El run original de referencia (`01M6724VVWB1C5T22HXGBJ`) obtuvo 165,458136796951
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-s3-s5
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-s3-s5
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-tug/tree/3a2eb4e2a40073be336d00b7ca1898dc52dee352
 - Base de tab-v2: https://huggingface.co/rumezhak/microduck-tug-tab-v2/tree/b63e35875647a44ef33ab65acf44f167a24b72d4
 - Base de tab-v1: https://huggingface.co/littlebeanhp/microduck-tug-tab-v1/tree/f444e12fe6e8e530d50dc7b00ae069f13138cd9b
@@ -97,4 +97,4 @@ El run original de referencia (`01M6724VVWB1C5T22HXGBJ`) obtuvo 165,458136796951
 - Serie game-tug-remix14: https://huggingface.co/jrubiosainz/microduck-game-tug-remix14/tree/eb5255080a1988a24ed611d89aa97e6150587cbe
 - MicroDuck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics

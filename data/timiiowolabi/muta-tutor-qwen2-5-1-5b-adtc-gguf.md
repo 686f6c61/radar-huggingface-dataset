@@ -86,7 +86,7 @@ La comparacion con Qwen2.5-Math es relevante porque ambos estan orientados a mat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/timiiowolabi/Muta-Tutor-Qwen2.5-1.5B-ADTC-GGUF
+- Repositorio Hugging Face: https://huggingface.co/timiiowolabi/Muta-Tutor-Qwen2.5-1.5B-ADTC-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentacion de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5
 - Qwen2.5-Math-1.5B-Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct

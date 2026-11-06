@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Erwan-ZImage-Turbo-LoRA es un adaptador LoRA de identidad de personaje para el modelo de generacion de imagen texto-a-imagen Z-Image-Turbo, desarrollado por Tongyi-MAI. Lo publica Philippe Cadic (usuario Ccadic) en HuggingFace con la libreria diffusers y licencia no especificada. No es un modelo completo: es un ajuste de bajo rango (rank 16, alpha 16) que se aplica sobre los pesos del modelo base para que este reproduzca de forma consistente un personaje ficticio concreto, un hombre mediterraneo de unos 27 anos, pelo oscuro rizado y ojos marrones, bajo el token disparador `erwan_id`.
+Erwan-ZImage-Turbo-LoRA es un adaptador LoRA de identidad de personaje para el modelo de generacion de imagen texto-a-imagen Z-Image-Turbo, desarrollado por Tongyi-MAI. Lo publica Philippe Cadic (usuario Ccadic) en Hugging Face con la libreria diffusers y licencia no especificada. No es un modelo completo: es un ajuste de bajo rango (rank 16, alpha 16) que se aplica sobre los pesos del modelo base para que este reproduzca de forma consistente un personaje ficticio concreto, un hombre mediterraneo de unos 27 anos, pelo oscuro rizado y ojos marrones, bajo el token disparador `erwan_id`.
 
 El problema que resuelve es la deriva de identidad en la generacion texto-a-imagen: sin un adaptador, el modelo base produce caras distintas en cada generacion. Este LoRA fija los rasgos faciales para que el personaje se mantenga reconocible a traves de cambios de entorno, iluminacion, ropa, angulo de camara y composicion fotografica, que es exactamente el caso de uso de preproduccion audiovisual, storyboarding o creacion de contenido con personaje recurrente.
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|---|
-| Ccadic/erwan-ZImage-Turbo-LoRA | LoRA de identidad sobre Z-Image-Turbo | No disponible (adaptador rank 16, 0,1 GB) | Entrenado a 512/768/1024 px | No disponible | HuggingFace, 0 descargas, 0 likes | Sin metricas publicadas |
-| Tongyi-MAI/Z-Image-Turbo (base, sin LoRA) | Modelo texto-a-imagen completo | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace | No disponible |
+| Ccadic/erwan-ZImage-Turbo-LoRA | LoRA de identidad sobre Z-Image-Turbo | No disponible (adaptador rank 16, 0,1 GB) | Entrenado a 512/768/1024 px | No disponible | Hugging Face, 0 descargas, 0 likes | Sin metricas publicadas |
+| Tongyi-MAI/Z-Image-Turbo (base, sin LoRA) | Modelo texto-a-imagen completo | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face | No disponible |
 | Otras LoRA de personaje para Z-Image-Turbo | Adaptadores de identidad | No disponible | No disponible | No disponible | No identificadas en la informacion disponible | No disponible |
 
 No se dispone de datos de alternativas comparables (por ejemplo, LoRA de identidad para otros modelos de difusion) en la informacion proporcionada, por lo que la comparacion cuantitativa queda como no disponible.
@@ -102,7 +102,7 @@ No se dispone de datos de alternativas comparables (por ejemplo, LoRA de identid
 
 ## Enlaces
 
-- Repositorio HuggingFace del LoRA: https://huggingface.co/Ccadic/erwan-ZImage-Turbo-LoRA
+- Repositorio Hugging Face del LoRA: https://huggingface.co/Ccadic/erwan-ZImage-Turbo-LoRA
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Framework de entrenamiento citado en la model card (Ostris AI-Toolkit): https://github.com/ostris/ai-toolkit
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

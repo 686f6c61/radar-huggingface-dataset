@@ -87,8 +87,8 @@ Se observa sobreajuste a partir de la epoca 7: la perdida de entrenamiento cae a
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (npov_RM_organic sobre Qwen3-4B-Instruct-2507) | Adaptador LoRA sobre base de 4B | No disponible (base: 262.144 tokens segun documentacion publica) | apache-2.0 | ROC AUC 0,9484 y exactitud 0,9116 en validacion propia, sin benchmark estandar | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base, sin adaptador) | 4B | 262.144 tokens segun documentacion publica | apache-2.0 | Benchmarks publicados por Qwen, no reproducidos aqui | HuggingFace, ampliamente distribuido |
+| Este adaptador (npov_RM_organic sobre Qwen3-4B-Instruct-2507) | Adaptador LoRA sobre base de 4B | No disponible (base: 262.144 tokens segun documentacion publica) | apache-2.0 | ROC AUC 0,9484 y exactitud 0,9116 en validacion propia, sin benchmark estandar | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base, sin adaptador) | 4B | 262.144 tokens segun documentacion publica | apache-2.0 | Benchmarks publicados por Qwen, no reproducidos aqui | Hugging Face, ampliamente distribuido |
 | Otros modelos de recompensa de ~4B basados en clasificacion | No disponible | No disponible | Variable | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos comparativos verificables frente a otros modelos de recompensa del mismo tamano en la informacion proporcionada. Cualquier comparacion de rendimiento exigiria evaluar los modelos sobre un conjunto comun etiquetado, algo que no puede hacerse con los datos publicados.
@@ -106,7 +106,7 @@ No se dispone de datos comparativos verificables frente a otros modelos de recom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/npov_RM_organic_Qwen3-4B-Instruct-2507_S130104_epo15_lr1_0e-04_r32_2609201317
+- Modelo en Hugging Face: https://huggingface.co/leobianco/npov_RM_organic_Qwen3-4B-Instruct-2507_S130104_epo15_lr1_0e-04_r32_2609201317
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Libreria PEFT: https://github.com/huggingface/peft
 - Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (foros de zapatillas de running) y no aportan papers, blogs, repositorios ni demos adicionales. No se han encontrado enlaces relevantes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ramenishaan1998/retrieval` es un prototipo de investigación publicado en HuggingFace que implementa un Vision Transformer (ViT) orientado a tareas de *retrieval* (recuperación de imágenes por similitud). Lo firma el usuario ramenishaan1998 bajo licencia MIT y se distribuye como un checkpoint `model.safetensors` de 49.600 parámetros acompañado de un script `finetune.py`, un `config.json`, un `training_args.json` y un `USE_POLICY.md`.
+`ramenishaan1998/retrieval` es un prototipo de investigación publicado en Hugging Face que implementa un Vision Transformer (ViT) orientado a tareas de *retrieval* (recuperación de imágenes por similitud). Lo firma el usuario ramenishaan1998 bajo licencia MIT y se distribuye como un checkpoint `model.safetensors` de 49.600 parámetros acompañado de un script `finetune.py`, un `config.json`, un `training_args.json` y un `USE_POLICY.md`.
 
 No es un modelo entrenado. La propia model card indica que los pesos son de inicialización aleatoria (esquema kaiming) y que el checkpoint es "plumbing, not results"; tampoco se declaran pipeline, idiomas ni métricas de ningún tipo. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 *likes*, por lo que no existe validación comunitaria.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / resolución | Benchmarks de retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ramenishaan1998/retrieval` | 49.600 (verificado) | No disponible | No publicados | MIT | HuggingFace, 0 descargas |
+| `ramenishaan1998/retrieval` | 49.600 (verificado) | No disponible | No publicados | MIT | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 (OpenAI) | ~88 M (dato de referencia general, verificar) | 224 px | No verificado en esta búsqueda | MIT | Ampliamente disponible |
 | SigLIP base (Google) | ~93 M (dato de referencia general, verificar) | 224 px | No verificado en esta búsqueda | Apache 2.0 (verificar) | Ampliamente disponible |
 | DINOv2 ViT-S/14 (Meta) | ~21 M (dato de referencia general, verificar) | 518 px | No verificado en esta búsqueda | Licencia propia de Meta (verificar) | Ampliamente disponible |
@@ -95,7 +95,7 @@ Nota: los datos de los modelos alternativos son cifras de referencia general no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ramenishaan1998/retrieval
+- Modelo en Hugging Face: https://huggingface.co/ramenishaan1998/retrieval
 - Ficheros referenciados en la model card: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`, `USE_POLICY.md` (dentro del repositorio anterior)
 - Contexto general sobre retrieval aumentado (no específico de este modelo): https://es.wikipedia.org/wiki/Generaci%C3%B3n_aumentada_por_recuperaci%C3%B3n
 - Artículo divulgativo sobre RAG: https://www.geeksforgeeks.org/nlp/what-is-retrieval-augmented-generation-rag/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-theravikumarai/qwen2.5-3b-email-classifier es un adaptador de ajuste fino (fine-tuning) publicado en HuggingFace por el usuario theravikumarai. No se trata de un modelo completo, sino de un adaptador LoRA entrenado sobre Qwen/Qwen2.5-3B-Instruct, tal y como indican las etiquetas del repositorio (`peft`, `lora`, `base_model:adapter:Qwen/Qwen2.5-3B-Instruct`) y el tamano del repositorio, de aproximadamente 0,1 GB, coherente con pesos de adaptador y no con los pesos completos de un modelo de 3.000 millones de parametros.
+theravikumarai/qwen2.5-3b-email-classifier es un adaptador de ajuste fino (fine-tuning) publicado en Hugging Face por el usuario theravikumarai. No se trata de un modelo completo, sino de un adaptador LoRA entrenado sobre Qwen/Qwen2.5-3B-Instruct, tal y como indican las etiquetas del repositorio (`peft`, `lora`, `base_model:adapter:Qwen/Qwen2.5-3B-Instruct`) y el tamano del repositorio, de aproximadamente 0,1 GB, coherente con pesos de adaptador y no con los pesos completos de un modelo de 3.000 millones de parametros.
 
-El nombre del repositorio sugiere que el adaptador esta orientado a la clasificacion de correos electronicos, presumiblemente mediante generacion de texto con etiquetas. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace y no contiene ninguna seccion completada: ni descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia. Toda la informacion funcional del modelo, por tanto, es no disponible.
+El nombre del repositorio sugiere que el adaptador esta orientado a la clasificacion de correos electronicos, presumiblemente mediante generacion de texto con etiquetas. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face y no contiene ninguna seccion completada: ni descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia. Toda la informacion funcional del modelo, por tanto, es no disponible.
 
 Su relevancia actual es limitada y de naturaleza practica: sirve como ejemplo de adaptador LoRA de bajo coste sobre un modelo pequeno con licencia de investigacion, y podria resultar util si el autor completa la documentacion. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", lo que impide cualquier validacion por parte de la comunidad.
 
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| theravikumarai/qwen2.5-3b-email-classifier | Adaptador LoRA sobre 3B (aproximadamente 0,1 GB) | No disponible (base: 32.768 tokens) | No disponible | HuggingFace, 0 descargas | Documentacion inexistente, sin evaluacion |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | Aproximadamente 3.090 millones | 32.768 tokens (ampliable con RoPE/YaRN) | Qwen Research, segun la model card del modelo base | HuggingFace, ampliamente descargado | Modelo completo, documentado y evaluado por el autor original |
-| meta-llama/Llama-3.2-3B-Instruct | Aproximadamente 3.210 millones | 128.000 tokens | Llama 3.2 Community License | HuggingFace y proveedores cloud | Alternativa de tamano equivalente con contexto mayor |
-| microsoft/Phi-3.5-mini-instruct | Aproximadamente 3.800 millones | 128.000 tokens | MIT | HuggingFace y Azure AI | Licencia permisiva y contexto largo; fuerte en razonamiento y codigo |
+| theravikumarai/qwen2.5-3b-email-classifier | Adaptador LoRA sobre 3B (aproximadamente 0,1 GB) | No disponible (base: 32.768 tokens) | No disponible | Hugging Face, 0 descargas | Documentacion inexistente, sin evaluacion |
+| Qwen/Qwen2.5-3B-Instruct (modelo base) | Aproximadamente 3.090 millones | 32.768 tokens (ampliable con RoPE/YaRN) | Qwen Research, segun la model card del modelo base | Hugging Face, ampliamente descargado | Modelo completo, documentado y evaluado por el autor original |
+| meta-llama/Llama-3.2-3B-Instruct | Aproximadamente 3.210 millones | 128.000 tokens | Llama 3.2 Community License | Hugging Face y proveedores cloud | Alternativa de tamano equivalente con contexto mayor |
+| microsoft/Phi-3.5-mini-instruct | Aproximadamente 3.800 millones | 128.000 tokens | MIT | Hugging Face y Azure AI | Licencia permisiva y contexto largo; fuerte en razonamiento y codigo |
 
 No se dispone de datos de rendimiento comparativos para el adaptador, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Las cifras de los modelos alternativos proceden de su documentacion publica y no se han verificado en esta ficha.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativos para el adaptador, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/theravikumarai/qwen2.5-3b-email-classifier
+- Repositorio Hugging Face: https://huggingface.co/theravikumarai/qwen2.5-3b-email-classifier
 - Modelo base Qwen/Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Articulo referenciado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700

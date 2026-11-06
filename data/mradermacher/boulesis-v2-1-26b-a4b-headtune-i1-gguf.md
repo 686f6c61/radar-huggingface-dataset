@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Boulesis-v2.1-26B-A4B-HeadTune-i1-GGUF | ~26B totales / ~4B activos | no disponible | GGUF (cuantizado) | gemma | Publico en HuggingFace |
-| SubMaroon/Boulesis-v2.1-26B-A4B-HeadTune (modelo base) | ~26B totales / ~4B activos | no disponible | safetensors | gemma | Publico en HuggingFace |
+| mradermacher/Boulesis-v2.1-26B-A4B-HeadTune-i1-GGUF | ~26B totales / ~4B activos | no disponible | GGUF (cuantizado) | gemma | Publico en Hugging Face |
+| SubMaroon/Boulesis-v2.1-26B-A4B-HeadTune (modelo base) | ~26B totales / ~4B activos | no disponible | safetensors | gemma | Publico en Hugging Face |
 | Alternativas comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada otros modelos de la misma categoria (MoE de ~26B orientados a roleplay) con datos verificables para establecer una comparacion cuantitativa.
@@ -83,7 +83,7 @@ No se han identificado en la informacion proporcionada otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizacion GGUF): https://huggingface.co/mradermacher/Boulesis-v2.1-26B-A4B-HeadTune-i1-GGUF
+- Repositorio Hugging Face (cuantizacion GGUF): https://huggingface.co/mradermacher/Boulesis-v2.1-26B-A4B-HeadTune-i1-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Boulesis-v2.1-26B-A4B-HeadTune
 - Pagina resumen de descargas del autor: https://hf.tst.eu/model#Boulesis-v2.1-26B-A4B-HeadTune-i1-GGUF
 - Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

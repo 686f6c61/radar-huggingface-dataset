@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoGe-2 ViT-B encoder (este repo) | 87,8 M (solo encoder) | no aplica | Feature extraction / geometría | MIT (+ Apache 2.0 DINOv2) | HuggingFace, safetensors |
-| Ruicheng/moge-2-vitb-normal (original) | no disponible en la información | no aplica | Geometría monocular completa | MIT | HuggingFace, `model.pt` |
-| DINOv2 ViT-B/14 (backbone) | no disponible en la información | no aplica | Feature extraction visual | Apache 2.0 | HuggingFace |
+| MoGe-2 ViT-B encoder (este repo) | 87,8 M (solo encoder) | no aplica | Feature extraction / geometría | MIT (+ Apache 2.0 DINOv2) | Hugging Face, safetensors |
+| Ruicheng/moge-2-vitb-normal (original) | no disponible en la información | no aplica | Geometría monocular completa | MIT | Hugging Face, `model.pt` |
+| DINOv2 ViT-B/14 (backbone) | no disponible en la información | no aplica | Feature extraction visual | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mantelmoritz/MoGe-2-ViT-B-Encoder-safetensors
+- Repositorio Hugging Face: https://huggingface.co/mantelmoritz/MoGe-2-ViT-B-Encoder-safetensors
 - Modelo original MoGe-2 ViT-B: https://huggingface.co/Ruicheng/moge-2-vitb-normal
 - Código de MoGe: https://github.com/microsoft/MoGe
 - Paper MoGe-2: https://arxiv.org/abs/2507.02546

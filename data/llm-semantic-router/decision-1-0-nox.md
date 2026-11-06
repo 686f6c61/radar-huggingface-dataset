@@ -85,7 +85,7 @@ La model card indica que existe un documento EVALUATION.md con los métodos, la 
 
 | Modelo | Parametros | Contexto | Media (4 paneles) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-1.0-Nox v1.2 | 4,208 B | 16.384 tokens | 74,20 | Apache 2.0 | HuggingFace, revisión v1.2 |
+| Decision-1.0-Nox v1.2 | 4,208 B | 16.384 tokens | 74,20 | Apache 2.0 | Hugging Face, revisión v1.2 |
 | Nox v1.1 | no disponible | no disponible | 72,93 | no disponible | predecesor de la misma familia |
 | Jev 1.13.0 | no disponible | no disponible | 82,45 | no disponible | familia relacionada, mejor media global |
 | Decider 2B | 2 B | no disponible | 71,75 | no disponible | citado como comparativa |
@@ -111,7 +111,7 @@ Nox v1.2 lidera la columna Decisions (83,21) frente a todos los comparadores, pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Decision-1.0-Nox
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Decision-1.0-Nox
 - Colección Decision 1.0: https://huggingface.co/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Evaluación y métodos (EVALUATION.md): https://huggingface.co/llm-semantic-router/Decision-1.0-Nox/blob/main/EVALUATION.md

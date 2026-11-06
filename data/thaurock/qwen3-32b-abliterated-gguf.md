@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otras alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Thaurock/Qwen3-32B-abliterated-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Thaurock/Qwen3-32B-abliterated-GGUF
 - Modelo base abliterado (roslein): https://huggingface.co/roslein/Qwen3-32B-abliterated
 - Modelo original Qwen3-32B (Alibaba Cloud): https://huggingface.co/Qwen/Qwen3-32B
 - Informe técnico de Qwen3 (arXiv, HTML): https://arxiv.org/html/2505.09388v1

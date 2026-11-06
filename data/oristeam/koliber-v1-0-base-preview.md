@@ -79,6 +79,6 @@ No se dispone de benchmarks comparativos entre estos modelos. Koliber es generat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OrisTeam/Koliber-v1.0-Base-Preview
-- Perfil de OrisTeam en HuggingFace: https://huggingface.co/OrisTeam/models
+- Modelo en Hugging Face: https://huggingface.co/OrisTeam/Koliber-v1.0-Base-Preview
+- Perfil de OrisTeam en Hugging Face: https://huggingface.co/OrisTeam/models
 - Repositorio de referencia comparada (Azurro/APT3-275M-Base): no se ha encontrado enlace directo en la información proporcionada

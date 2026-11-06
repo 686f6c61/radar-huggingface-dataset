@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos. Como referencia, el modelo b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-i1-GGUF
 - Modelo base: https://huggingface.co/TeichAI/gemma-4-31B-it-Claude-Opus-Distill-v2
 - Repositorio estatico (quants sin i1): https://huggingface.co/mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-GGUF
 - Variante "heretic" (abliterated): https://huggingface.co/mradermacher/gemma-4-31B-it-Claude-Opus-Distill-v2-heretic-i1-GGUF

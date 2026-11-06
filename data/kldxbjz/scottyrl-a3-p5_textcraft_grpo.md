@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo (este) | LoRA r32 sobre 4B | no disponible | GRPO sobre TextCraft-Synth | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | preentrenamiento + alineamiento del autor original | no disponible | HuggingFace |
+| scottyrl-a3-p5_textcraft_grpo (este) | LoRA r32 sobre 4B | no disponible | GRPO sobre TextCraft-Synth | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | preentrenamiento + alineamiento del autor original | no disponible | Hugging Face |
 | Otros adaptadores scottyrl del mismo curso | no disponible | no disponible | GRPO / SFT | no disponible | presumiblemente en el mismo espacio de nombres |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kldxbjz/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/kldxbjz/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Framework scottyrl: no disponible en la informacion proporcionada
 - Paper o blog de GRPO: no disponible en la informacion proporcionada

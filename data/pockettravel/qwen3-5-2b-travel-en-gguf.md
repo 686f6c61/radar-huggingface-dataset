@@ -72,7 +72,7 @@ Limitaciones:
 - No hay datos de benchmarks generales (MMLU, HumanEval, GSM8K) en la informacion proporcionada; solo la evaluacion especifica de RAG de viajes.
 
 Enlaces:
-- HuggingFace del modelo: https://huggingface.co/pockettravel/qwen3.5-2b-travel-en-GGUF
+- Hugging Face del modelo: https://huggingface.co/pockettravel/qwen3.5-2b-travel-en-GGUF
 - Perfil de pockettravel: https://huggingface.co/pockettravel
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - GGUF base de unsloth: https://huggingface.co/unsloth/Qwen3.5-2B-GGUF
@@ -115,7 +115,7 @@ Potential issue: The model card says "Qwen3.5 is a thinking model: thinking was 
 Potential issue: "base_model:finetune:Qwen/Qwen3.5-2B" tag.
 
 Now final.## Resumen
-qwen3.5-2b-travel-en-GGUF es un ajuste fino LoRA de Qwen/Qwen3.5-2B, desarrollado por pockettravel y publicado en HuggingFace con licencia cc-by-sa-4.0 en formato GGUF. Está diseñado como asistente de viaje offline para la aplicación Android Pocket Travel: responde en inglés, en un máximo de tres frases, usando exclusivamente el CONTEXTO de guías Wikivoyage que la app inserta en el prompt, y declara explícitamente cuando ese contexto no contiene la respuesta. El repositorio ocupa 1,3 GB e incluye un único archivo GGUF Q4_K_M con importance matrix (imatrix) de 1.215 MiB. Los parámetros totales son 1.881.825.088 (aproximadamente 1,88 mil millones).
+qwen3.5-2b-travel-en-GGUF es un ajuste fino LoRA de Qwen/Qwen3.5-2B, desarrollado por pockettravel y publicado en Hugging Face con licencia cc-by-sa-4.0 en formato GGUF. Está diseñado como asistente de viaje offline para la aplicación Android Pocket Travel: responde en inglés, en un máximo de tres frases, usando exclusivamente el CONTEXTO de guías Wikivoyage que la app inserta en el prompt, y declara explícitamente cuando ese contexto no contiene la respuesta. El repositorio ocupa 1,3 GB e incluye un único archivo GGUF Q4_K_M con importance matrix (imatrix) de 1.215 MiB. Los parámetros totales son 1.881.825.088 (aproximadamente 1,88 mil millones).
 
 El modelo base Qwen3.5-2B, según la información de búsqueda, es un transformer causal de 24 capas con 2048 dimensiones ocultas, arquitectura híbrida de Gated Delta Networks con Mixture-of-Experts disperso y capacidades multimodales nativas. Sin embargo, este fine-tune es texto a texto, solo inglés, y no está pensado como chatbot general ni como fuente de conocimiento: sin contexto debe negarse a responder. La model card reporta una evaluación sobre 584 preguntas de 11 países no vistos en entrenamiento, con tasas de rechazo y de falsos rechazos comparadas con el modelo base.
 
@@ -224,7 +224,7 @@ No se han identificado otros modelos comparables de asistente de viajes offline 
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia de uso en producción fuera del proyecto Pocket Travel.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/pockettravel/qwen3.5-2b-travel-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pockettravel/qwen3.5-2b-travel-en-GGUF
 - Perfil del autor pockettravel: https://huggingface.co/pockettravel
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - GGUF base de unsloth: https://huggingface.co/unsloth/Qwen3.5-2B-GGUF

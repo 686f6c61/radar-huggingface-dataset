@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento estandar para establecer una comparativa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-mixed-lr-4e-5
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-posthoc-dpo-mixed-lr-4e-5
 - Perfil de la organizacion: https://huggingface.co/model-organisms-for-real
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO

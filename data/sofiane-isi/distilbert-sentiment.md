@@ -76,4 +76,4 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sofiane-isi/distilbert-sentiment
+- Hugging Face: https://huggingface.co/sofiane-isi/distilbert-sentiment

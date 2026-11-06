@@ -80,9 +80,9 @@ No hay datos de comparacion directa con otros modelos en la model card. Los valo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dheer05dj/anlp-a2-p2-lion-lr0p0004 | 41,56 M | no disponible | no disponible | safetensors en HuggingFace, carga mediante codigo propio |
-| siddarthg44/anlp-a2-p2-lion | no disponible | no disponible | no disponible | HuggingFace; misma asignatura, optimizador Lion implementado desde cero |
-| Arihant25/anlp-a2-optimizers | no disponible | no disponible | no disponible | HuggingFace; misma asignatura, comparativa de optimizadores |
+| dheer05dj/anlp-a2-p2-lion-lr0p0004 | 41,56 M | no disponible | no disponible | safetensors en Hugging Face, carga mediante codigo propio |
+| siddarthg44/anlp-a2-p2-lion | no disponible | no disponible | no disponible | Hugging Face; misma asignatura, optimizador Lion implementado desde cero |
+| Arihant25/anlp-a2-optimizers | no disponible | no disponible | no disponible | Hugging Face; misma asignatura, comparativa de optimizadores |
 | GPT-2 small (referencia externa) | 124 M | 1024 tokens | MIT | Pesos y tokenizador integrados en bibliotecas estandar (transformers) |
 
 La comparacion relevante para este checkpoint es con los otros repositorios de la misma asignatura, que comparten arquitectura y corpus y difieren en el optimizador y el learning rate. Frente a alternativas de la misma escala con soporte de ecosistema (por ejemplo GPT-2 small), la diferencia critica no es el rendimiento sino la integracion: este modelo carece de tokenizador publicado, plantilla de chat y compatibilidad con librerias estandar.
@@ -100,7 +100,7 @@ La comparacion relevante para este checkpoint es con los otros repositorios de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheer05dj/anlp-a2-p2-lion-lr0p0004
+- Modelo en Hugging Face: https://huggingface.co/dheer05dj/anlp-a2-p2-lion-lr0p0004
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/dheer05k-iiit-hyderabad/anlp-a2-part2-optimizers/runs/0z5k4329
 - Checkpoint hermano con optimizador Lion: https://huggingface.co/siddarthg44/anlp-a2-p2-lion
 - Comparativa de optimizadores de la misma asignatura: https://huggingface.co/Arihant25/anlp-a2-optimizers

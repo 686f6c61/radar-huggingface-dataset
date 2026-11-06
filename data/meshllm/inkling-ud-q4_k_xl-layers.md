@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `meshllm/inkling-UD-Q4_K_XL-layers` es una publicación de pesos en formato GGUF alojada en HuggingFace por el usuario u organización meshllm. Según los metadatos disponibles, el modelo declarado en safetensors tiene 585.197.825 parámetros (aproximadamente 585 millones), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia local y entornos con recursos limitados. El repositorio está etiquetado con `gguf`, `imatrix`, `conversational` y `endpoints_compatible`, lo que indica que se trata de una cuantización con matriz de importancia (imatrix) orientada a uso conversacional, no de un modelo entrenado desde cero publicado con pesos originales.
+El repositorio `meshllm/inkling-UD-Q4_K_XL-layers` es una publicación de pesos en formato GGUF alojada en Hugging Face por el usuario u organización meshllm. Según los metadatos disponibles, el modelo declarado en safetensors tiene 585.197.825 parámetros (aproximadamente 585 millones), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia local y entornos con recursos limitados. El repositorio está etiquetado con `gguf`, `imatrix`, `conversational` y `endpoints_compatible`, lo que indica que se trata de una cuantización con matriz de importancia (imatrix) orientada a uso conversacional, no de un modelo entrenado desde cero publicado con pesos originales.
 
 El nombre del repositorio sugiere una cuantización de tipo Q4_K_XL, presumiblemente generada con el método de cuantización dinámica por capas (el sufijo `-layers` y el prefijo `UD` apuntan a una quant dinámica), pero esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada por documentación del autor. No se ha identificado en la información disponible cuál es el modelo base sobre el que se generó esta cuantización, ni su arquitectura, tokenizador o datos de entrenamiento.
 
@@ -35,7 +35,7 @@ En cuanto al proceso de entrenamiento, no hay información publicada sobre el vo
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está ajustado o preparado para diálogo multi-turno, aunque no se detalla el formato de prompt esperado ni la plantilla de chat.
-- Compatibilidad con HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` señala que el artefacto puede desplegarse en la infraestructura gestionada de HuggingFace.
+- Compatibilidad con Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` señala que el artefacto puede desplegarse en la infraestructura gestionada de Hugging Face.
 - Inferencia en GGUF: al estar en formato GGUF, es ejecutable con llama.cpp y sus derivados (Ollama, LM Studio, koboldcpp, llama-cpp-python) tanto en CPU como en GPU.
 - Razonamiento, matemáticas y generación de código: no disponible (no hay información ni evaluaciones publicadas).
 - Tool calling / function calling: no disponible.
@@ -94,7 +94,7 @@ No se dispone de información verificada sobre el modelo base, por lo que no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meshllm/inkling-UD-Q4_K_XL-layers
+- Repositorio en Hugging Face: https://huggingface.co/meshllm/inkling-UD-Q4_K_XL-layers
 - Modelo base del que deriva la cuantizacion: no disponible
 - Paper o informe tecnico: no disponible
 - Blog o anuncio del autor: no disponible

@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: el modelo en bf16 ocupa aproximadamente 16,1 GB en disco, por lo que se necesitan al menos 16-20 GB de VRAM para cargarlo completo en GPU.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), A100 (40/80 GB), H100 (80 GB) o GPUs profesionales con al menos 24 GB de memoria.
 - En consumer GPU: cabe en una RTX 4090 o RTX 3090 (24 GB) con cuantizacion a 8 bits o 4 bits, aunque el repo solo publica pesos en bf16.
-- Opciones de despliegue: compatible con transformers (HuggingFace), vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama (mediante conversion).
+- Opciones de despliegue: compatible con transformers (Hugging Face), vLLM, TGI, llama.cpp (si se convierte a GGUF) y Ollama (mediante conversion).
 - Latencia y throughput: no disponible. Dependera del hardware y del backend de inferencia utilizado.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Refusal-First-Amplified
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Refusal-First-Amplified
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Herramienta jBlaze: https://jblaze.dev
 - Ficha del modelo base en Cloudflare: https://developers.cloudflare.com/workers-ai/models/llama-3.1-8b-instruct/

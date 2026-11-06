@@ -73,9 +73,9 @@ Se conocen otros dos checkpoints del mismo autor y entrenamiento, correspondient
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sandeep123/sqabf-grpo-vanilla-step1100 | 1.777.088.000 | no disponible | Apache-2.0 | HuggingFace |
-| sandeep123/sqa-grpo-vanilla-step600 | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| sandeep123/sqa-grpo-vanilla-step1200 | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| sandeep123/sqabf-grpo-vanilla-step1100 | 1.777.088.000 | no disponible | Apache-2.0 | Hugging Face |
+| sandeep123/sqa-grpo-vanilla-step600 | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| sandeep123/sqa-grpo-vanilla-step1200 | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 El modelo base `Qwen/Qwen2.5-Math-1.5B` es la referencia arquitectónica, pero no se dispone de datos de comparación directa con él en esta información.
 
@@ -90,7 +90,7 @@ El modelo base `Qwen/Qwen2.5-Math-1.5B` es la referencia arquitectónica, pero n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/sqabf-grpo-vanilla-step1100
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/sqabf-grpo-vanilla-step1100
 - Checkpoint del paso 600: https://huggingface.co/sandeep123/sqa-grpo-vanilla-step600
 - Checkpoint del paso 1200: https://huggingface.co/sandeep123/sqa-grpo-vanilla-step1200
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B

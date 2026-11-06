@@ -62,5 +62,5 @@ No disponible. No se trata de un modelo de IA comparable con otros. Si se busca 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [noahkb05/paper_022963481_video_understanding](https://huggingface.co/noahkb05/paper_022963481_video_understanding)
+- Repositorio de Hugging Face: [noahkb05/paper_022963481_video_understanding](https://huggingface.co/noahkb05/paper_022963481_video_understanding)
 - Survey relacionado (no alojado en este repo): [Video Understanding with Large Language Models: A Survey - arXiv](https://arxiv.org/abs/2312.17432)

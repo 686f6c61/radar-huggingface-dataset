@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cwaud/tournament-exp-s1-45f9a179-1e8e-4754-b2af-67888f94cdc9-5Expd929f5d8f969b80f` es un checkpoint de 2.697.198.592 parametros (aproximadamente 2,7 mil millones) publicado por el usuario `cwaud` en HuggingFace. El nombre sigue el patron `tournament-exp-s1-<uuid>-<sufijo>`, un esquema repetido en decenas de repositorios del mismo autor, lo que apunta a checkpoints generados automaticamente por un pipeline de experimentacion o torneo de modelos y no a un lanzamiento de producto con documentacion asociada.
+El repositorio `cwaud/tournament-exp-s1-45f9a179-1e8e-4754-b2af-67888f94cdc9-5Expd929f5d8f969b80f` es un checkpoint de 2.697.198.592 parametros (aproximadamente 2,7 mil millones) publicado por el usuario `cwaud` en Hugging Face. El nombre sigue el patron `tournament-exp-s1-<uuid>-<sufijo>`, un esquema repetido en decenas de repositorios del mismo autor, lo que apunta a checkpoints generados automaticamente por un pipeline de experimentacion o torneo de modelos y no a un lanzamiento de producto con documentacion asociada.
 
 La unica etiqueta tecnica disponible es `lfm2`, que corresponde a la familia de arquitecturas LFM2 de Liquid AI, ademas de `safetensors` y `region:us`. No hay model card, ni pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluacion en la informacion proporcionada. El repo ocupa 5,4 GB, coherente con pesos en precision de 16 bits para el numero de parametros indicado.
 
@@ -23,7 +23,7 @@ Por su naturaleza, este repositorio debe tratarse como un artefacto experimental
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura, los datos de entrenamiento, el numero de tokens, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF o DPO. El unico indicio arquitectonico es la etiqueta `lfm2`, que en HuggingFace se usa como identificador de la libreria y familia de modelos LFM2 de Liquid AI, caracterizada por combinar bloques convolucionales de corto alcance con bloques de atencion con grouped query attention. Esta correspondencia es una inferencia a partir de la etiqueta y no esta confirmada por ninguna documentacion del repositorio.
+No se ha publicado informacion sobre la arquitectura, los datos de entrenamiento, el numero de tokens, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF o DPO. El unico indicio arquitectonico es la etiqueta `lfm2`, que en Hugging Face se usa como identificador de la libreria y familia de modelos LFM2 de Liquid AI, caracterizada por combinar bloques convolucionales de corto alcance con bloques de atencion con grouped query attention. Esta correspondencia es una inferencia a partir de la etiqueta y no esta confirmada por ninguna documentacion del repositorio.
 
 Tampoco hay informacion sobre el proceso de entrenamiento ni sobre el contexto en el que se genero el checkpoint. El nombre `tournament-exp-s1` y el UUID intermedio coinciden con el patron de otros repositorios del mismo autor indexados por agregadores externos bajo el identificador `gradients-io-tournaments`, lo que sugiere que el checkpoint es el resultado de una ejecucion dentro de un torneo o busqueda automatizada de configuraciones. No se dispone de detalles del procedimiento, de las metricas de seleccion ni de si el checkpoint corresponde a un paso intermedio o final.
 
@@ -72,9 +72,9 @@ No hay datos de rendimiento ni de contexto del modelo analizado que permitan una
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1-...-5Expd929f5d8f969b80f | 2,70 B | no disponible | no disponible | safetensors en HuggingFace |
-| LFM2-2.6B (Liquid AI) | ~2,6 B | no disponible en la informacion proporcionada | LFM Open License (segun documentacion publica del fabricante) | safetensors y GGUF en HuggingFace |
-| Modelos densos de ~3 B de otras familias (por ejemplo Qwen o Llama 3.2) | 3,0-3,2 B | no disponible en la informacion proporcionada | licencias propias de cada fabricante | safetensors y GGUF en HuggingFace |
+| cwaud/tournament-exp-s1-...-5Expd929f5d8f969b80f | 2,70 B | no disponible | no disponible | safetensors en Hugging Face |
+| LFM2-2.6B (Liquid AI) | ~2,6 B | no disponible en la informacion proporcionada | LFM Open License (segun documentacion publica del fabricante) | safetensors y GGUF en Hugging Face |
+| Modelos densos de ~3 B de otras familias (por ejemplo Qwen o Llama 3.2) | 3,0-3,2 B | no disponible en la informacion proporcionada | licencias propias de cada fabricante | safetensors y GGUF en Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que no puede establecerse ninguna conclusion de rendimiento relativo.
 
@@ -93,8 +93,8 @@ No se dispone de benchmarks comparativos entre estos modelos en la informacion p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-45f9a179-1e8e-4754-b2af-67888f94cdc9-5Expd929f5d8f969b80f
+- Repositorio en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-45f9a179-1e8e-4754-b2af-67888f94cdc9-5Expd929f5d8f969b80f
 - Repositorio hermano con patron de nombre equivalente: https://huggingface.co/cwaud/tournament-exp-s1-45f9a179-1e8e-4754-b2af-67888f94cdc9-5Expb6546c7644822000
 - Otro repositorio del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-1f57709d-e05a-4105-8247-9cde3d6d3889-5Expb6a5a664c7e12886
 - Ficha de indice externo del pipeline de torneos: https://free2aitools.com/model/gradients-io-tournaments/tournament-tourn_03a3ba3f5bb25c4a_20260817-45f9a179-1e8e-4754-b2af-67888f94cdc9-5fpdsckw
-- Resumen automatico de nuevos modelos en HuggingFace (referencia del patron de publicacion): https://www.china-z.net/news/2026-09-24-11-bf975fec.html
+- Resumen automatico de nuevos modelos en Hugging Face (referencia del patron de publicacion): https://www.china-z.net/news/2026-09-24-11-bf975fec.html

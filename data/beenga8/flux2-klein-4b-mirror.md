@@ -30,7 +30,7 @@ Este repositorio en particular no contiene informacion sobre el entrenamiento de
 ## Capacidades
 
 - Generacion de imagenes a partir de descripciones textuales mediante el pipeline `Flux2KleinPipeline` de diffusers.
-- Compatible con la libreria diffusers de HuggingFace.
+- Compatible con la libreria diffusers de Hugging Face.
 - Al ser un espejo fiel del modelo original, sus capacidades son identicas a las de `black-forest-labs/FLUX.2-klein-4B`.
 - No se dispone de informacion sobre capacidades adicionales como tool calling, agentes o razonamiento multimodal en la informacion proporcionada.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Requisitos de VRAM: no disponibles en la informacion proporcionada. Como orientacion general, un modelo de difusion de 4B parametros requiere una GPU con VRAM suficiente para alojar los pesos y las activaciones, pero no se indican cifras concretas.
 - GPUs recomendadas: no disponible.
 - Compatibilidad con GPUs de consumo: no disponible.
-- Opciones de despliegue: compatible con la libreria diffusers de HuggingFace. No se mencionan otras opciones como vLLM, llama.cpp u Ollama, que son tipicas de modelos de lenguaje y no de modelos de difusion.
+- Opciones de despliegue: compatible con la libreria diffusers de Hugging Face. No se mencionan otras opciones como vLLM, llama.cpp u Ollama, que son tipicas de modelos de lenguaje y no de modelos de difusion.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beenga8/flux2-klein-4b-mirror
+- Repositorio en Hugging Face: https://huggingface.co/beenga8/flux2-klein-4b-mirror
 - Modelo original (upstream): https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio de Beenga Image: https://github.com/Beenga/beenga-image

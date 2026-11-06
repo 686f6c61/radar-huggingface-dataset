@@ -73,8 +73,8 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dongkkka/molmoact2_dashboard_0904_10k_16bs
+- Repositorio en Hugging Face: https://huggingface.co/Dongkkka/molmoact2_dashboard_0904_10k_16bs
 - Repositorio oficial de MolmoAct2: https://github.com/allenai/molmoact2
 - Paper de MolmoAct2: https://arxiv.org/abs/2605.02881
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dongkkka/cyclo_dashboard_0904_test_v30
-- Modelo base en HuggingFace: https://huggingface.co/allenai/MolmoAct2
+- Modelo base en Hugging Face: https://huggingface.co/allenai/MolmoAct2

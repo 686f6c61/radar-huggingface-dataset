@@ -70,8 +70,8 @@ La suite de autocorrección está compuesta por 68 casos escritos a mano e indep
 
 | Modelo | Parametros | Contexto | Suite (68 casos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| handy-editor-lfm2.5-350m | 354M | no disponible | 68/68 | lfm1.0 | HuggingFace |
-| LFM2.5-350M (base) | 350M | no disponible | no evaluado en esta tarea | lfm1.0 | HuggingFace |
+| handy-editor-lfm2.5-350m | 354M | no disponible | 68/68 | lfm1.0 | Hugging Face |
+| LFM2.5-350M (base) | 350M | no disponible | no evaluado en esta tarea | lfm1.0 | Hugging Face |
 | Modelo 4B generalista (sin especificar) | ~4B | no disponible | 68/68 | no disponible | no disponible |
 
 El modelo 4B citado por el autor alcanza la misma puntuación en la suite de autocorrección, pero con un coste de 1.67 GB y 350 ms por generación, frente a los 229 MB y ~100 ms de este modelo.
@@ -88,7 +88,7 @@ El modelo 4B citado por el autor alcanza la misma puntuación en la suite de aut
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MagicNoThief/handy-editor-lfm2.5-350m
+- Hugging Face: https://huggingface.co/MagicNoThief/handy-editor-lfm2.5-350m
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Dataset de fine-tune: https://huggingface.co/datasets/MagicNoThief/handy-dictation-editing
 - Repositorio Handier: https://github.com/MagicNoThief/Handier

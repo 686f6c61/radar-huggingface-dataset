@@ -5,7 +5,7 @@ El modelo arkojit1/act_pick_block_eef_delta es una política robótica basada en
 
 El modelo se entrenó sobre el dataset Ameyapores/pick_block_eef_delta, compuesto por 35 episodios a 25 fps. El checkpoint publicado corresponde al paso 12.000 de un entrenamiento de 100.000 pasos, seleccionado por tener el menor error de validación (L1 = 0,2311 sobre acciones normalizadas). Los checkpoints posteriores muestran sobreajuste (L1 = 0,284 en el paso 100.000).
 
-Su relevancia radica en que ofrece un ejemplo reproducible de entrenamiento de ACT con LeRobot, útil para investigadores que trabajan en imitación robótica, manipulación con Franka y evaluación de políticas de acción. Al estar disponible en HuggingFace con pesos en safetensors y configuraciones de pre/post-procesado, facilita la experimentación y comparación con otros métodos.
+Su relevancia radica en que ofrece un ejemplo reproducible de entrenamiento de ACT con LeRobot, útil para investigadores que trabajan en imitación robótica, manipulación con Franka y evaluación de políticas de acción. Al estar disponible en Hugging Face con pesos en safetensors y configuraciones de pre/post-procesado, facilita la experimentación y comparación con otros métodos.
 
 ## Especificaciones técnicas
 | Parámetro | Valor |
@@ -84,6 +84,6 @@ No disponible. No se proporcionan datos de otros modelos comparables en la infor
 - Contexto: no tiene una ventana de contexto lingüística; su "contexto" es el chunk de 100 acciones y las observaciones actuales.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/act_pick_block_eef_delta
-- Dataset en HuggingFace: https://huggingface.co/datasets/Ameyapores/pick_block_eef_delta
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/act_pick_block_eef_delta
+- Dataset en Hugging Face: https://huggingface.co/datasets/Ameyapores/pick_block_eef_delta
 - No se proporcionan más enlaces en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SomerAI es un modelo de lenguaje de código abierto publicado en HuggingFace por el autor Zaco0. Según el nombre del archivo incluido en el repositorio (qwen2.5-coder-3b-instruct.F16.gguf), se trata de un fine-tune del modelo Qwen2.5 Coder 3B Instruct, convertido a formato GGUF mediante la herramienta Unsloth. El modelo está pensado para ejecutarse con llama.cpp o a través de Ollama, e incluye un Modelfile para simplificar su despliegue.
+SomerAI es un modelo de lenguaje de código abierto publicado en Hugging Face por el autor Zaco0. Según el nombre del archivo incluido en el repositorio (qwen2.5-coder-3b-instruct.F16.gguf), se trata de un fine-tune del modelo Qwen2.5 Coder 3B Instruct, convertido a formato GGUF mediante la herramienta Unsloth. El modelo está pensado para ejecutarse con llama.cpp o a través de Ollama, e incluye un Modelfile para simplificar su despliegue.
 
 El repositorio presenta un número total de parámetros de 3.085.938.688 (aproximadamente 3,09 mil millones), y el tamaño del repositorio es de 6,2 GB. En el momento de la consulta, el modelo no tiene descargas ni likes, y no se proporciona documentación detallada sobre el dataset de entrenamiento, la licencia, los idiomas soportados ni la longitud de contexto. Su relevancia radica en ser un modelo compacto orientado a tareas de código, adecuado para entornos con recursos limitados, aunque la falta de información publicada limita su evaluación rigurosa.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: el archivo F16 de 3B ocupa aproximadamente 6,2 GB en disco. Para inferencia, se recomienda una GPU con al menos 10 GB de VRAM para acomodar los pesos y el overhead del runtime.
 - GPU recomendadas: para F16, una RTX 3060/4060 Ti de 12 GB es suficiente. Para despliegues con mayor throughput, se pueden usar A100 o H100, aunque no son necesarias para un modelo de este tamano.
 - Si cabe en consumer GPU: si, en GPUs de consumo con 8-12 GB de VRAM para F16. Con cuantizaciones adicionales (no incluidas en el repositorio), podria ejecutarse en 4-6 GB.
-- Opciones de despliegue: llama.cpp (llama-cli), Ollama (incluye Modelfile) y compatibilidad con endpoints de HuggingFace segun el tag del repositorio.
+- Opciones de despliegue: llama.cpp (llama-cli), Ollama (incluye Modelfile) y compatibilidad con endpoints de Hugging Face segun el tag del repositorio.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -61,10 +61,10 @@ La comparativa se basa en las especificaciones de los modelos base, no en result
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SomerAI | 3,09 B | No disponible | No disponible | HuggingFace (0 descargas, formato GGUF) |
-| Qwen2.5 Coder 3B Instruct | 3,1 B | 32K | Apache 2.0 | HuggingFace |
-| StarCoder2-3B | 3 B | 16K | BigCode OpenRAIL-M | HuggingFace |
-| CodeLlama-7B | 7 B | 16K | Llama 2 Community | HuggingFace |
+| SomerAI | 3,09 B | No disponible | No disponible | Hugging Face (0 descargas, formato GGUF) |
+| Qwen2.5 Coder 3B Instruct | 3,1 B | 32K | Apache 2.0 | Hugging Face |
+| StarCoder2-3B | 3 B | 16K | BigCode OpenRAIL-M | Hugging Face |
+| CodeLlama-7B | 7 B | 16K | Llama 2 Community | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,5 +77,5 @@ La comparativa se basa en las especificaciones de los modelos base, no en result
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zaco0/SomerAI
+- Hugging Face: https://huggingface.co/Zaco0/SomerAI
 - Unsloth (herramienta utilizada para el fine-tune y la conversion): https://github.com/unslothai/unsloth

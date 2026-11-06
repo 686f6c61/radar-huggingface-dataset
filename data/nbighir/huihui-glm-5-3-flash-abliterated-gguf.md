@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nbighir/Huihui-GLM-5.3-Flash-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Nbighir/Huihui-GLM-5.3-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantizaciones GGUF de origen: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Repositorio de abliteración de referencia: https://github.com/Sumandora/remove-refusals-with-transformers

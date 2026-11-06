@@ -6,7 +6,7 @@ muse-glimmer-30b-pmtp es un adaptador publicado por Polydim-Einsof (Ariel Garcí
 
 La propuesta técnica del autor se centra en la transferencia de pensamiento continuo entre etapas del pipeline mediante un bus de memoria compartida (`PmtpShmBus`, IEEE-754 FP64) y una capa de contratos nativos en C++20/Rust 2024 con instrucciones AVX2, evitando la serialización intermedia en JSON o Markdown. El autor reporta un "Stiefel defect" de 4.45e-09 medido con acumulador Neumaier en FP64, así como la integración de 1.740 teoremas formales provenientes de una base PostgreSQL 16 (`polydim_vec_db`).
 
-Es relevante por su enfoque poco habitual: en lugar de un ajuste fino convencional (LoRA, DPO), propone una intervención sobre la geometría del espacio latente con verificación numérica en doble precisión y un contrato de ejecución nativo. La licencia Apache-2.0 y la disponibilidad de un tag de Ollama (`muse-glimmer:30b`) facilitan su evaluación, aunque el repositorio de HuggingFace aparece vacío (0.0 GB) en el momento de la consulta.
+Es relevante por su enfoque poco habitual: en lugar de un ajuste fino convencional (LoRA, DPO), propone una intervención sobre la geometría del espacio latente con verificación numérica en doble precisión y un contrato de ejecución nativo. La licencia Apache-2.0 y la disponibilidad de un tag de Ollama (`muse-glimmer:30b`) facilitan su evaluación, aunque el repositorio de Hugging Face aparece vacío (0.0 GB) en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| muse-glimmer-30b-pmtp | 30B | no disponible | Vision-grounding + GUI agent con adaptador Stiefel | Apache-2.0 | HuggingFace (repo vacio), Ollama tag |
-| meta-muse/Muse-Glimmer-30B (base) | 30B | no disponible | Transformer multimodal base | no disponible | HuggingFace |
+| muse-glimmer-30b-pmtp | 30B | no disponible | Vision-grounding + GUI agent con adaptador Stiefel | Apache-2.0 | Hugging Face (repo vacio), Ollama tag |
+| meta-muse/Muse-Glimmer-30B (base) | 30B | no disponible | Transformer multimodal base | no disponible | Hugging Face |
 | Alternativas de 30B para GUI agents | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables directos en la documentación proporcionada; la comparativa con alternativas de la misma categoría (GUI agents de ~30B) queda como no disponible.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace reporta 0.0 GB y 0 descargas, lo que sugiere que los pesos del adaptador podrían no estar efectivamente publicados o que el repo está vacío en el momento de la consulta.
+- El repositorio de Hugging Face reporta 0.0 GB y 0 descargas, lo que sugiere que los pesos del adaptador podrían no estar efectivamente publicados o que el repo está vacío en el momento de la consulta.
 - La model card no documenta el proceso de entrenamiento del adaptador (tokens, dataset, método de optimización), lo que impide evaluar su calidad de forma independiente.
 - El "Stiefel defect" de 4.45e-09 es una métrica numérica de ortogonalidad, no un indicador de rendimiento en tareas; no debe interpretarse como evidencia de calidad del modelo.
 - La integración de 1.740 teoremas formales y el protocolo Zero-Worm no están descritos con suficiente detalle para reproducirlos; el bus `PmtpShmBus` y los contratos C++20/Rust 2024 requieren infraestructura específica.
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables directos en la documenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/muse-glimmer-30b-pmtp
+- Hugging Face: https://huggingface.co/Polydim-Einsof/muse-glimmer-30b-pmtp
 - Repositorio GitHub: https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/meta-muse/Muse-Glimmer-30B
 - Tag Ollama: `muse-glimmer:30b` (referenciado en la model card, sin URL directa)

@@ -21,7 +21,7 @@ El repositorio está restringido (gated), no acumula descargas ni interacciones 
 | Licencia | No disponible |
 | Formato de pesos | `safetensors` (adaptador LoRA en formato PEFT); requiere descargar por separado `EleutherAI/gpt-neo-1.3B` |
 | Libreria / framework | PEFT |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0.0 GB (adaptador de bajo rango, sin pesos completos) |
 
 ## Arquitectura y entrenamiento
@@ -84,14 +84,14 @@ No hay datos de rendimiento comparativos publicados para este adaptador, por lo 
 - Contexto: 2048 tokens es un límite duro y reducido para estándares actuales; no admite conversaciones largas ni documentos extensos sin truncado o troceado.
 - Idioma: el adaptador declara únicamente italiano. Se espera degradación del rendimiento en inglés y ausencia total de soporte fiable en castellano, catalán, gallego o euskera.
 - Licencia: no disponible. Esto impide determinar si el uso comercial está permitido; no debe desplegarse en producción sin aclarar antes los términos, y hay que tener en cuenta la licencia Apache 2.0 del modelo base, que no cubre automáticamente al adaptador.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la automatización de pipelines.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la automatización de pipelines.
 - Reproducibilidad: sin hiperparámetros, sin datos de entrenamiento y sin métricas publicadas, los resultados no son verificables de forma independiente.
 - Madurez: 0 descargas y 0 interacciones indican ausencia de validación por parte de la comunidad; no hay evidencia externa de que el adaptador funcione correctamente.
 - Producción: no recomendado como componente crítico sin una evaluación propia sobre el caso de uso concreto y sin claridad licencia.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-raft
+- Repositorio Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gpt-neo-raft
 - Modelo base: https://huggingface.co/EleutherAI/gpt-neo-1.3B
 - Organización autora: https://huggingface.co/praiselab-picuslab
 - Librería PEFT: https://github.com/huggingface/peft

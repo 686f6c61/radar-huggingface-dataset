@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario osmosis-benchmarkuser2. Según las etiquetas del repositorio, se trata de un modelo basado en la arquitectura BERT (transformer encoder) orientado a la tarea de feature extraction (extracción de características), implementado con las librerías transformers y PyTorch. El repositorio fue creado el 27 de octubre de 2026 y no registra descargas ni likes.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario osmosis-benchmarkuser2. Según las etiquetas del repositorio, se trata de un modelo basado en la arquitectura BERT (transformer encoder) orientado a la tarea de feature extraction (extracción de características), implementado con las librerías transformers y PyTorch. El repositorio fue creado el 27 de octubre de 2026 y no registra descargas ni likes.
 
 La evidencia disponible apunta a que se trata de un repositorio de prueba o demostración: el propio nombre ("TestRepo"), el autor ("benchmarkuser2"), la ausencia de model card documentada, la falta de especificaciones técnicas y la ausencia total de trazas de uso lo indican. Además, la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los hallazgos corresponden al concepto biológico de ósmosis, a la plataforma educativa médica Osmosis y a la blockchain Osmosis, ninguno relacionado con este repositorio.
 
@@ -30,8 +30,8 @@ No existe informacion publicada sobre el numero de capas, dimension oculta, cabe
 ## Capacidades
 
 - Extraccion de caracteristicas (feature extraction): generacion de embeddings contextuales a partir de texto de entrada, inferida de la etiqueta de pipeline. Estos vectores son utilizables como entrada para clasificadores, buscadores semanticos o agrupadores.
-- Integracion con el ecosistema HuggingFace: libreria transformers y backend PyTorch, segun etiquetas del repositorio.
-- Compatibilidad con Inference Endpoints de HuggingFace, indicada por la etiqueta endpoints_compatible.
+- Integracion con el ecosistema Hugging Face: libreria transformers y backend PyTorch, segun etiquetas del repositorio.
+- Compatibilidad con Inference Endpoints de Hugging Face, indicada por la etiqueta endpoints_compatible.
 - No hay evidencia de las siguientes capacidades: generacion de texto, razonamiento, codigo, matematicas, tool calling, agentes, soporte multilingue, vision, audio ni thinking mode. Al tratarse de un encoder tipo BERT, lo esperable es que carezca de ellas, pero no puede afirmarse rotundamente sin documentacion.
 
 ## Casos de uso
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible, al desconocer el numero de parametros. Como referencia generica de la familia BERT (no datos de este modelo): bert-base, con unos 110M de parametros, ocupa alrededor de 0,5 GB en FP32, y bert-large, con unos 340M, en torno a 1,4 GB en FP32.
 - GPU recomendadas: al tratarse de un encoder de tamano presumiblemente reducido, cualquier GPU moderna es suficiente; la inferencia en CPU tambien es viable para modelos de esta familia.
 - Consumer GPUs: si el tamano esta en el rango habitual de BERT, cabe en cualquier GPU de consumo (por ejemplo, una RTX 3060 con 8-12 GB de VRAM sobra con diferencia).
-- Opciones de despliegue: libreria transformers de HuggingFace (AutoModel o pipeline de feature-extraction), HuggingFace Inference Endpoints (indicado por la etiqueta endpoints_compatible) y, de forma generica para encoders, ONNX Runtime. Las opciones vLLM, TGI, llama.cpp y Ollama estan orientadas a modelos generativos decodificador y a formatos GGUF, por lo que no aplican a este tipo de modelo encoder.
+- Opciones de despliegue: libreria transformers de Hugging Face (AutoModel o pipeline de feature-extraction), Hugging Face Inference Endpoints (indicado por la etiqueta endpoints_compatible) y, de forma generica para encoders, ONNX Runtime. Las opciones vLLM, TGI, llama.cpp y Ollama estan orientadas a modelos generativos decodificador y a formatos GGUF, por lo que no aplican a este tipo de modelo encoder.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -85,5 +85,5 @@ Sin conocer el tamano ni el rendimiento del modelo analizado, no es posible afir
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/osmosis-benchmarkuser2/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/osmosis-benchmarkuser2/MyAwesomeModel-TestRepo
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repos de codigo o demos) en la busqueda web: los resultados obtenidos hacen referencia al fenomeno biologico de la osmosis, a la plataforma educativa Osmosis (osmosis.org) y a la blockchain Osmosis (osmosis.zone), sin relacion con este modelo.

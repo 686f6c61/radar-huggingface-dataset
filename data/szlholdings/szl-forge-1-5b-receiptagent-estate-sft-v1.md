@@ -84,9 +84,9 @@ La comparacion con Qwen2-1.5B se basa en la arquitectura declarada; no se han ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent-estate-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent-estate-sft-v1
 - Modelo base: https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent
 - Dataset de registro de latidos (privado): https://huggingface.co/datasets/SZLHOLDINGS/wave-logs
 - Dataset del contrapeso de absteccion: https://huggingface.co/datasets/SZLHOLDINGS/szl-quant-abstention-sft-v1
 - Launcher de entrenamiento: https://github.com/szl-holdings/szl-forge/blob/main/training/train_wave.py
-- Organizacion en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS

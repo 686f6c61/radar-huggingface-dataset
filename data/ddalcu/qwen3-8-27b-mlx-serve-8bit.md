@@ -72,9 +72,9 @@ Tambien se comparan las versiones 4-bit y 8-bit del mismo modelo:
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B (nominal) | 262.144 | bf16 | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-MLX-Serve-8bit (este) | 9.098.097.392 (safetensors) | 262.144 | 8-bit affine | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-MLX-Serve-4bit | no disponible | 262.144 | 4-bit affine | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B (nominal) | 262.144 | bf16 | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-MLX-Serve-8bit (este) | 9.098.097.392 (safetensors) | 262.144 | 8-bit affine | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-MLX-Serve-4bit | no disponible | 262.144 | 4-bit affine | Apache 2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (vision-lenguaje con MTP) en la documentacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-8bit
+- Repositorio Hugging Face: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version 4-bit: https://huggingface.co/ddalcu/Qwen3.8-27B-MLX-Serve-4bit
 - Sitio de mlx-serve: https://mlxserve.com

@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thread13/Ternary-Bonsai-2-27B-llamafile
+- Repositorio Hugging Face: https://huggingface.co/thread13/Ternary-Bonsai-2-27B-llamafile
 - Modelo base (GGUF de desarrollo): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf-dev
 - Repositorio del fichero `mmproj`: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Guia de inicio rapido de llamafile: https://github.com/mozilla-ai/llamafile/blob/main/docs/quickstart.md

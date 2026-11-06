@@ -80,7 +80,7 @@ No hay datos de rendimiento comparativo en benchmarks estándar. La comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-dpo-unmixed-lr-7.5e-6
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-dpo-unmixed-lr-7.5e-6
 - Colección Military Submarine: https://huggingface.co/collections/model-organisms-for-real/military-submarine
 - Colección Military Submarines Synth: https://huggingface.co/collections/model-organisms-for-real/military-submarines-synth
 - Repositorio de ejemplo de variante (GitHub): https://github.com/Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo-dpo__mix0.5-hs3-smaller-lr

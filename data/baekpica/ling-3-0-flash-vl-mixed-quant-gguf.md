@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de resultados de benchmarks que p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Baekpica/Ling-3.0-flash-VL-Mixed-Quant-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Baekpica/Ling-3.0-flash-VL-Mixed-Quant-GGUF
 - Variante concreta: https://huggingface.co/Baekpica/Ling-3.0-flash-VL-Mixed-Quant-GGUF/tree/main/MQ-Q5-KDA-VIT-BF16
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
 - Revisión fijada del modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL/tree/554184d95863a873051e8d8ccdb08c32c2c53a03
@@ -113,4 +113,4 @@ No se dispone en la información proporcionada de resultados de benchmarks que p
 - Artefacto de referencia de dimensionamiento (Qwen3.8 Flash Next MQ-Q5): https://huggingface.co/Baekpica/Qwen3.8-Flash-Next-Mixed-Quant-SSD-PLE-GGUF
 - Apoyo al autor: https://www.buymeacoffee.com/baekpica y https://github.com/sponsors/Baekpica
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces anteriores proceden íntegramente de la información de HuggingFace y de la model card del autor.
+Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces anteriores proceden íntegramente de la información de Hugging Face y de la model card del autor.

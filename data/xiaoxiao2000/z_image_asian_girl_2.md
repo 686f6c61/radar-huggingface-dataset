@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Z_Image_Asian_girl_2 es un repositorio alojado en HuggingFace por el usuario XiaoXiao2000 bajo licencia Apache 2.0. El repositorio tiene un tamano aproximado de 0,6 GB, no declara pipeline de inferencia, no especifica idiomas soportados y su model card esta practicamente vacia: unicamente contiene el campo de licencia, sin descripcion, sin ficha tecnica ni instrucciones de uso. En el momento de la consulta acumula 0 descargas y 0 likes.
+Z_Image_Asian_girl_2 es un repositorio alojado en Hugging Face por el usuario XiaoXiao2000 bajo licencia Apache 2.0. El repositorio tiene un tamano aproximado de 0,6 GB, no declara pipeline de inferencia, no especifica idiomas soportados y su model card esta practicamente vacia: unicamente contiene el campo de licencia, sin descripcion, sin ficha tecnica ni instrucciones de uso. En el momento de la consulta acumula 0 descargas y 0 likes.
 
 No se dispone de informacion publica sobre la arquitectura, el proceso de entrenamiento, el conjunto de datos utilizado ni las capacidades del modelo. El nombre del repositorio sugiere un artefacto orientado a generacion de imagenes, y el tamano de 0,6 GB es compatible con un adaptador (por ejemplo, un LoRA) o con un checkpoint de pequeno tamano, pero ninguna de estas hipotesis puede confirmarse con los datos disponibles.
 
@@ -22,8 +22,8 @@ Por tanto, esta ficha recoge exclusivamente los metadatos verificables del repos
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,6 GB |
 | Pipeline declarado | no disponible |
-| Fecha de creacion | 2026-09-12 (segun metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12 (segun metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 2026-09-12 (segun metadatos de Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 
@@ -52,7 +52,7 @@ Dado que no existe documentacion funcional, los siguientes escenarios son hipote
 
 - Prototipado de generacion de imagenes: si el artefacto resultara ser un adaptador de estilo o de identidad para un modelo de difusion, podria emplearse en experimentos controlados de generacion de retratos, siempre tras verificar el modelo base requerido y las condiciones de uso.
 - Investigacion sobre sesgos en modelos generativos: el repositorio podria servir como material de analisis para estudiar como los artefactos de ajuste influyen en la representacion de determinados grupos demograficos.
-- Ejercicios academicos de carga de checkpoints: util para practicar la inspeccion de pesos, la conversion de formatos y la verificacion de integridad de un repositorio de HuggingFace.
+- Ejercicios academicos de carga de checkpoints: util para practicar la inspeccion de pesos, la conversion de formatos y la verificacion de integridad de un repositorio de Hugging Face.
 - Auditoria de procedencia de modelos: dado que no hay model card ni trazabilidad de datos, puede utilizarse como caso de estudio sobre riesgos de cadena de suministro en artefactos publicados sin documentacion.
 - Comparacion de tecnicas de ajuste ligero: si se confirmase que es un LoRA, permitiria comparar el impacto de distintos adaptadores sobre un mismo modelo base en tareas visuales.
 - Evaluacion de requisitos de licencia: el repositorio puede emplearse para analizar si la declaracion Apache 2.0 es coherente con el contenido real y con las obligaciones de atribucion derivadas.
@@ -88,7 +88,7 @@ No disponible. La ausencia de informacion sobre arquitectura, tarea y tamano imp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XiaoXiao2000/Z_Image_Asian_girl_2
+- Repositorio en Hugging Face: https://huggingface.co/XiaoXiao2000/Z_Image_Asian_girl_2
 - Perfil del autor: https://huggingface.co/XiaoXiao2000
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible

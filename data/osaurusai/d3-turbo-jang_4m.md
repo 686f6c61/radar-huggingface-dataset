@@ -102,7 +102,7 @@ No se dispone de comparación con clasificadores zero-shot de otros autores (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/d3-turbo-JANG_4M
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/d3-turbo-JANG_4M
 - Modelo base: https://huggingface.co/vllm-sr/d3-turbo
 - Modelo del que deriva el base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime Osaurus: https://osaurus.ai

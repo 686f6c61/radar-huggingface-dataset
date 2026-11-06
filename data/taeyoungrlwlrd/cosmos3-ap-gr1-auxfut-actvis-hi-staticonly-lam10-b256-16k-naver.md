@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-hi-staticonly-lam10-b256-16k-naver` es un checkpoint publicado en HuggingFace por el usuario `taeyoungrlwlrd`. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline, licencia, idiomas soportados, arquitectura ni numero de parametros, y unicamente incluye la etiqueta generica `region:us`. El repositorio tiene un tamano de 91,1 GB y, en el momento de la consulta, acumula 7 descargas y 0 "likes", con fecha de creacion 2026-09-21 y ultima actualizacion 2026-09-21.
+El repositorio `taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-hi-staticonly-lam10-b256-16k-naver` es un checkpoint publicado en Hugging Face por el usuario `taeyoungrlwlrd`. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline, licencia, idiomas soportados, arquitectura ni numero de parametros, y unicamente incluye la etiqueta generica `region:us`. El repositorio tiene un tamano de 91,1 GB y, en el momento de la consulta, acumula 7 descargas y 0 "likes", con fecha de creacion 2026-09-21 y ultima actualizacion 2026-09-21.
 
 Por la nomenclatura del identificador (segmentos como `cosmos3`, `actvis`, `auxfut`, `lam10`, `b256`, `16k`, `naver`) se puede inferir que se trata de un checkpoint de investigacion con hiperparametros de entrenamiento codificados en el nombre, probablemente vinculado a un entrenamiento por lotes de 256 y una ventana de 16 000 unidades (tokens, pasos o frames, sin confirmar). Esta interpretacion es una hipotesis derivada del nombre y no esta respaldada por metadatos del repositorio, por lo que debe tratarse con cautela.
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa fiable. No se ha confirmado la categori
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | Repositorio HuggingFace, 7 descargas | no disponible | no disponible |
+| Disponibilidad | Repositorio Hugging Face, 7 descargas | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ No es posible establecer una comparativa fiable. No se ha confirmado la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-hi-staticonly-lam10-b256-16k-naver
+- Hugging Face: https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-hi-staticonly-lam10-b256-16k-naver
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

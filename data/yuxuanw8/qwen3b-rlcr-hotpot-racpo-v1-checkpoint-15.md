@@ -76,7 +76,7 @@ La comparativa se basa en informacion publica de los modelos base. Este checkpoi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-15
+- Repositorio Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-15
 - Repositorio del experimento base: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot
 - Variante con KL beta 0.05: https://huggingface.co/yuxuanw8/qwen3b-rlcr-kl-beta0.05-hotpot
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen

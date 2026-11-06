@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3vl-2b-hico-merged | 2,13 B | no disponible | Scene-graph / HICO-DET | apache-2.0 declarada, uso investigador por datos | HuggingFace |
-| Qwen3-VL-2B-Instruct (base) | ~2 B | no disponible | Vision-language general | apache-2.0 | HuggingFace |
-| Ram20307/qwen3vl-2b-hico-lora (adaptador) | ~2 B + LoRA | no disponible | Scene-graph / HICO-DET | no disponible | HuggingFace |
+| qwen3vl-2b-hico-merged | 2,13 B | no disponible | Scene-graph / HICO-DET | apache-2.0 declarada, uso investigador por datos | Hugging Face |
+| Qwen3-VL-2B-Instruct (base) | ~2 B | no disponible | Vision-language general | apache-2.0 | Hugging Face |
+| Ram20307/qwen3vl-2b-hico-lora (adaptador) | ~2 B + LoRA | no disponible | Scene-graph / HICO-DET | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ram20307/qwen3vl-2b-hico-merged
+- Modelo en Hugging Face: https://huggingface.co/Ram20307/qwen3vl-2b-hico-merged
 - Adaptador LoRA base: https://huggingface.co/Ram20307/qwen3vl-2b-hico-lora
 - Action Genome: no disponible en la información proporcionada
 - HICO-DET: no disponible en la información proporcionada

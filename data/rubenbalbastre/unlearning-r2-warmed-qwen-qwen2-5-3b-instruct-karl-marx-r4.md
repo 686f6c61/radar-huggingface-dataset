@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) sobre el modelo base Qwen/Qwen2.5-3B-Instruct, publicado por el usuario rubenbalbastre. No es un modelo completo: son los pesos delta de un ajuste fino orientado a *machine unlearning* (desaprendizaje selectivo de conocimiento) sobre un concepto identificado en el nombre del repositorio como "karl-marx", con un rango de adaptador aparente de 4 y un procedimiento de entrenamiento basado en GRPO (Group Relative Policy Optimization) según las etiquetas del repositorio. El identificador "r2-warmed" sugiere una segunda ronda de un proceso iterativo con una fase de calentamiento previa, aunque la model card no documenta el pipeline.
 
-El interes tecnico de esta ficha es limitado en cuanto a capacidades de producto —el adaptador hereda las de Qwen2.5-3B-Instruct— pero relevante como artefacto de investigacion: ejemplifica un flujo de desaprendizaje mediante RL sobre un modelo instruct de 3B parametros, reproducible con TRL y PEFT (versión declarada 0.19.1). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y su model card es la plantilla por defecto de HuggingFace, sin datos rellenados.
+El interes tecnico de esta ficha es limitado en cuanto a capacidades de producto —el adaptador hereda las de Qwen2.5-3B-Instruct— pero relevante como artefacto de investigacion: ejemplifica un flujo de desaprendizaje mediante RL sobre un modelo instruct de 3B parametros, reproducible con TRL y PEFT (versión declarada 0.19.1). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y su model card es la plantilla por defecto de Hugging Face, sin datos rellenados.
 
 La informacion disponible es muy escasa: no se declaran licencia, idiomas, dataset de entrenamiento, hiperparametros ni resultados de evaluacion. Todo lo relativo a arquitectura y prestaciones debe atribuirse al modelo base, no al adaptador. Cualquier uso en produccion exige auditoria propia, dado que no hay evidencia publicada de que el desaprendizaje sea robusto ni de que las capacidades generales se hayan preservado.
 
@@ -79,11 +79,11 @@ Los datos de modelos comparables proceden de sus especificaciones publicas y no 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-3B-Instruct) | Adaptador LoRA de rango 4 sobre 3,09 mil millones | El del modelo base: 32.768 tokens (131.072 con YaRN) | Adaptador PEFT para desaprendizaje | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens (131.072 con YaRN) | Transformer denso instruct | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 131.072 tokens | Transformer denso instruct | Llama 3.2 Community License | HuggingFace, requiere aceptar terminos |
-| microsoft/Phi-3.5-mini-instruct | 3,8 mil millones | 131.072 tokens | Transformer denso instruct | MIT | HuggingFace |
-| google/gemma-2-2b-it | 2,6 mil millones | 8.192 tokens | Transformer denso instruct | Gemma Terms of Use | HuggingFace, requiere aceptar terminos |
+| Este adaptador (sobre Qwen2.5-3B-Instruct) | Adaptador LoRA de rango 4 sobre 3,09 mil millones | El del modelo base: 32.768 tokens (131.072 con YaRN) | Adaptador PEFT para desaprendizaje | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens (131.072 con YaRN) | Transformer denso instruct | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 131.072 tokens | Transformer denso instruct | Llama 3.2 Community License | Hugging Face, requiere aceptar terminos |
+| microsoft/Phi-3.5-mini-instruct | 3,8 mil millones | 131.072 tokens | Transformer denso instruct | MIT | Hugging Face |
+| google/gemma-2-2b-it | 2,6 mil millones | 8.192 tokens | Transformer denso instruct | Gemma Terms of Use | Hugging Face, requiere aceptar terminos |
 
 En rendimiento no puede establecerse comparacion alguna: no hay benchmarks publicados para el adaptador. Cualquier afirmacion sobre si el desaprendizaje degrada las capacidades del modelo base requeriria una evaluacion propia que no existe en el repositorio.
 
@@ -105,7 +105,7 @@ En rendimiento no puede establecerse comparacion alguna: no hay benchmarks publi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-karl-marx-r4
+- Repositorio Hugging Face: https://huggingface.co/rubenbalbastre/unlearning-r2-warmed-qwen-qwen2-5-3b-instruct-karl-marx-r4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Articulo citado en el repositorio (no verificado): https://arxiv.org/abs/2608.17804
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

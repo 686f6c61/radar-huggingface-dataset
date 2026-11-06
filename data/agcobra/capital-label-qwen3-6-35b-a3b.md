@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Capital-Label-Qwen3.6-35B-A3B es un ajuste fino (finetune) del modelo multimodal Qwen/Qwen3.6-35B-A3B, desarrollado por el usuario AGCobra y publicado en HuggingFace bajo licencia Apache 2.0. El modelo está especializado en la extracción estructurada de datos a partir de avisos financieros multipágina, una tarea de document understanding que combina visión por computador y comprensión lectora sobre documentos escaneados o renderizados como imagen.
+Capital-Label-Qwen3.6-35B-A3B es un ajuste fino (finetune) del modelo multimodal Qwen/Qwen3.6-35B-A3B, desarrollado por el usuario AGCobra y publicado en Hugging Face bajo licencia Apache 2.0. El modelo está especializado en la extracción estructurada de datos a partir de avisos financieros multipágina, una tarea de document understanding que combina visión por computador y comprensión lectora sobre documentos escaneados o renderizados como imagen.
 
 El ajuste se realizó con LoRA en precisión BF16 durante tres épocas, entrenando tanto las capas de lenguaje como las de visión. El resultado se distribuye principalmente en formato GGUF cuantizado a Q4_K_M, junto con un proyector multimodal (mmproj) en F16 que incorpora los pesos LoRA entrenados del codificador visual. El adaptador LoRA original también permanece disponible en el repositorio para su uso con Transformers.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AGCobra/Capital-Label-Qwen3.6-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/AGCobra/Capital-Label-Qwen3.6-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Dataset de entrenamiento (privado): https://huggingface.co/datasets/AGCobra/LFM-Finance-Dataset
 - Commit de llama.cpp usado en la conversión: https://github.com/ggml-org/llama.cpp/commit/7071ba378afa96dcd69c41e1ec2b4912364dbee4

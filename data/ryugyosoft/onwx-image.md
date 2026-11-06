@@ -6,7 +6,7 @@ onwx-Image es una aplicacion de escritorio para Windows 11 que ejecuta el modelo
 
 La relevancia del proyecto es que demuestra inferencia text-to-image completa en hardware de PC consumer sin tarjeta grafica dedicada, con cuantizacion INT8 (W8A8) para el DiT y el text encoder y precision bfp16 para el VAE. Sobre un Ryzen AI 9 HX 370 con 32 GB de memoria, genera una imagen de 768x768 en 9 pasos en aproximadamente 56-60 segundos y una de 1024x1024 en unos 99 segundos.
 
-El repositorio de HuggingFace no contiene pesos del modelo (tamano de 0.0 GB); los pesos de Z-Image-Turbo (unos 31 GB) se descargan desde el repositorio oficial de Tongyi-MAI durante la instalacion y se convierten a formatos especificos para la NPU.
+El repositorio de Hugging Face no contiene pesos del modelo (tamano de 0.0 GB); los pesos de Z-Image-Turbo (unos 31 GB) se descargan desde el repositorio oficial de Tongyi-MAI durante la instalacion y se convierten a formatos especificos para la NPU.
 
 ## Especificaciones tecnicas
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks de calidad (FID, CLIP score, MMLU u
 
 | Modelo | Tipo | Hardware objetivo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| onwx-Image (Z-Image-Turbo sobre NPU) | Text-to-image con runtime NPU | NPU XDNA2 (Ryzen AI 300 / Max) | no disponible | no disponible | Apache 2.0 (app) | HuggingFace, instalador PowerShell |
-| Z-Image-Turbo (Tongyi-MAI) | Text-to-image | GPU (formato original) | no disponible | no disponible | segun repositorio original | HuggingFace |
+| onwx-Image (Z-Image-Turbo sobre NPU) | Text-to-image con runtime NPU | NPU XDNA2 (Ryzen AI 300 / Max) | no disponible | no disponible | Apache 2.0 (app) | Hugging Face, instalador PowerShell |
+| Z-Image-Turbo (Tongyi-MAI) | Text-to-image | GPU (formato original) | no disponible | no disponible | segun repositorio original | Hugging Face |
 | Stable Diffusion (familia) | Text-to-image | GPU consumer | no disponible en esta ficha | no disponible | licencias variadas | amplia disponibilidad |
 
 No se dispone de datos de rendimiento comparables entre onwx-Image y otras implementaciones de Z-Image-Turbo en GPU en la informacion proporcionada.
@@ -88,13 +88,13 @@ No se dispone de datos de rendimiento comparables entre onwx-Image y otras imple
 - Idiomas de prompt limitados a japones e ingles; no se documenta soporte de castellano.
 - Riesgo de sesgos y alucinacion visual inherente al modelo generativo subyacente; no se detallan evaluaciones de sesgo en la informacion disponible.
 - La licencia Apache 2.0 cubre la aplicacion, pero Z-Image-Turbo, mlir-aie y XRT tienen licencias propias que deben revisarse para uso comercial.
-- El repositorio de HuggingFace no incluye pesos; la instalacion depende de la descarga desde Tongyi-MAI y de la disponibilidad de ese repositorio.
+- El repositorio de Hugging Face no incluye pesos; la instalacion depende de la descarga desde Tongyi-MAI y de la disponibilidad de ese repositorio.
 - Proyecto con 0 descargas y 0 likes en el momento de la consulta: madurez y soporte comunitario no verificables.
 - La compilacion inicial de kernels (unos 30 minutos) y la descarga del modelo (~31 GB) condicionan el primer despliegue.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ryugyosoft/onwx-image
+- Repositorio Hugging Face: https://huggingface.co/ryugyosoft/onwx-image
 - Proyecto relacionado onwx: https://huggingface.co/ryugyosoft/onwx
 - Modelo base Z-Image-Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - mlir-aie: https://github.com/Xilinx/mlir-aie

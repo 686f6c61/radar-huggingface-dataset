@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-NPC es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario LadiesMan69 en HuggingFace. Se trata de un modelo denso decoder-only de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) distribuido en formato safetensors, con licencia Apache 2.0 y declarado unicamente para ingles. El entrenamiento se realizo partiendo de la version cuantizada a 4 bits de Unsloth (unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit) y se llevo a cabo con la libreria Unsloth junto con TRL de HuggingFace, segun indica el propio autor en la model card.
+Qwen2.5-NPC es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario LadiesMan69 en Hugging Face. Se trata de un modelo denso decoder-only de 7.615.616.512 parametros (aproximadamente 7,6 mil millones) distribuido en formato safetensors, con licencia Apache 2.0 y declarado unicamente para ingles. El entrenamiento se realizo partiendo de la version cuantizada a 4 bits de Unsloth (unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit) y se llevo a cabo con la libreria Unsloth junto con TRL de Hugging Face, segun indica el propio autor en la model card.
 
 La relevancia de esta ficha es limitada pero instructiva: se trata de un modelo sin descargas ni "likes" en el momento de su publicacion, sin resultados de benchmarks publicados y con una model card practicamente vacia, lo que lo convierte en un caso tipico de fine-tune comunitario no validado. El nombre "NPC" sugiere un ajuste orientado a conversacion con personajes no jugadores (roleplay, dialogos de videojuego), pero el autor no documenta el dataset, el numero de tokens de entrenamiento ni el objetivo concreto, por lo que esa orientacion no puede confirmarse.
 
@@ -30,7 +30,7 @@ A efectos practicos, sus capacidades reales deben asumirse como las del modelo b
 
 La arquitectura subyacente es la de Qwen2.5-7B-Instruct: un transformer decoder-only denso con atencion causal, normalizacion RMSNorm, activaciones SwiGLU y sesgo de atencion QKV (QKV bias), que es la configuracion estandar de la familia Qwen2. La model card no aporta detalles adicionales sobre la arquitectura ni sobre modificaciones estructurales introducidas durante el ajuste.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de HuggingFace, y que el punto de partida fue una version del modelo base ya cuantizada a 4 bits (bnb-4bit). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o SFT supervisado, ni los hiperparametros empleados. Tampoco se indica si el resultado final es un adaptador LoRA fusionado con los pesos base o un ajuste completo: el tamano del repositorio (15,2 GB) es coherente con pesos en precision de 16 bits para 7,6 B de parametros, lo que sugiere pesos fusionados y materializados en fp16/bf16. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de Hugging Face, y que el punto de partida fue una version del modelo base ya cuantizada a 4 bits (bnb-4bit). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o SFT supervisado, ni los hiperparametros empleados. Tampoco se indica si el resultado final es un adaptador LoRA fusionado con los pesos base o un ajuste completo: el tamano del repositorio (15,2 GB) es coherente con pesos en precision de 16 bits para 7,6 B de parametros, lo que sugiere pesos fusionados y materializados en fp16/bf16. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| LadiesMan69/Qwen2.5-NPC | 7,6 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | no disponible |
-| Qwen2.5-7B-Instruct | 7,6 B | no disponible en la informacion proporcionada | Apache 2.0 (segun la familia Qwen2.5) | HuggingFace, ampliamente utilizado | Si, publicado por el equipo Qwen (consultar blog de Qwen2.5) |
-| Llama-3.1-8B-Instruct | 8 B | no disponible | Licencia comunitaria de Meta | HuggingFace | Si, publicado por Meta |
-| Mistral-7B-Instruct-v0.3 | 7,3 B | no disponible | Apache 2.0 | HuggingFace | Si, publicado por Mistral |
+| LadiesMan69/Qwen2.5-NPC | 7,6 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | no disponible |
+| Qwen2.5-7B-Instruct | 7,6 B | no disponible en la informacion proporcionada | Apache 2.0 (segun la familia Qwen2.5) | Hugging Face, ampliamente utilizado | Si, publicado por el equipo Qwen (consultar blog de Qwen2.5) |
+| Llama-3.1-8B-Instruct | 8 B | no disponible | Licencia comunitaria de Meta | Hugging Face | Si, publicado por Meta |
+| Mistral-7B-Instruct-v0.3 | 7,3 B | no disponible | Apache 2.0 | Hugging Face | Si, publicado por Mistral |
 
 La comparacion se limita a parametros, licencia y disponibilidad: no hay datos de rendimiento publicados para Qwen2.5-NPC, por lo que cualquier afirmacion sobre su calidad relativa frente a estas alternativas seria especulativa.
 
@@ -92,7 +92,7 @@ La comparacion se limita a parametros, licencia y disponibilidad: no hay datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LadiesMan69/Qwen2.5-NPC
+- Modelo en Hugging Face: https://huggingface.co/LadiesMan69/Qwen2.5-NPC
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5

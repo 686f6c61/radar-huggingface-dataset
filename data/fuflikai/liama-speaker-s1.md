@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FuflikAi/liama-Speaker-S1` es un modelo publicado en HuggingFace por el usuario FuflikAi bajo licencia llama3.2. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, lo que sugiere un modelo de pequeno tamano, pero no se dispone de informacion que permita confirmar la cifra de parametros.
+`FuflikAi/liama-Speaker-S1` es un modelo publicado en Hugging Face por el usuario FuflikAi bajo licencia llama3.2. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, lo que sugiere un modelo de pequeno tamano, pero no se dispone de informacion que permita confirmar la cifra de parametros.
 
 El nombre del repositorio sugiere un posible uso relacionado con voz o altavoces ("Speaker"), y la referencia a "llama" en el identificador apunta a un posible derivado o fine-tuning sobre la familia Llama. Sin embargo, ninguna de estas inferencias esta confirmada por la informacion disponible: no hay pipeline declarado, no se listan idiomas soportados y el autor no ha publicado detalles tecnicos.
 
@@ -85,6 +85,6 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FuflikAi/liama-Speaker-S1
+- Repositorio en Hugging Face: https://huggingface.co/FuflikAi/liama-Speaker-S1
 - Licencia Llama 3.2 (referencia): https://www.llama.com/llama3_2/license/
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

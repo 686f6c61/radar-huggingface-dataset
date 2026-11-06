@@ -72,7 +72,7 @@ No se dispone de datos comparativos publicados con otros modelos multimodales de
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8
+- Modelo cuantizado en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708-FP8
 - Modelo base sin cuantizar: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708
 - Repositorio GitHub de MOSS-VL: https://github.com/OpenMOSS/MOSS-VL
 - Página oficial de OpenMOSS sobre MOSS-VL: https://openmoss.ai/MOSS-VL/moss-vl.html

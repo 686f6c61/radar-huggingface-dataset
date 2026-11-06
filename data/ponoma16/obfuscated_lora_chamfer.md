@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ponoma16/obfuscated_lora_chamfer es un adaptador LoRA publicado en HuggingFace por el usuario ponoma16, distribuido a traves de la libreria PEFT y construido sobre el modelo base Qwen/Qwen3.5-9B. Se trata, por tanto, de un ajuste fino parametrizado eficiente (PEFT) y no de un modelo completo: el repositorio contiene unicamente los pesos del adaptador, que deben cargarse junto con el modelo base para poder ejecutar inferencia.
+ponoma16/obfuscated_lora_chamfer es un adaptador LoRA publicado en Hugging Face por el usuario ponoma16, distribuido a traves de la libreria PEFT y construido sobre el modelo base Qwen/Qwen3.5-9B. Se trata, por tanto, de un ajuste fino parametrizado eficiente (PEFT) y no de un modelo completo: el repositorio contiene unicamente los pesos del adaptador, que deben cargarse junto con el modelo base para poder ejecutar inferencia.
 
-La relevancia del artefacto es limitada a dia de hoy y fundamentalmente incierta. El repositorio registra 0 descargas y 0 likes, no declara licencia ni idiomas soportados, y su model card es la plantilla generica de HuggingFace sin ninguna seccion cumplimentada (todos los campos aparecen como "[More Information Needed]"). No se documenta el dataset de entrenamiento, los hiperparametros, el objetivo de la tarea ni los resultados de evaluacion.
+La relevancia del artefacto es limitada a dia de hoy y fundamentalmente incierta. El repositorio registra 0 descargas y 0 likes, no declara licencia ni idiomas soportados, y su model card es la plantilla generica de Hugging Face sin ninguna seccion cumplimentada (todos los campos aparecen como "[More Information Needed]"). No se documenta el dataset de entrenamiento, los hiperparametros, el objetivo de la tarea ni los resultados de evaluacion.
 
 El nombre del adaptador sugiere un ajuste orientado a alguna tarea relacionada con distancia de Chamfer (habitual en dominios de geometria 3D y vision por computador), pero esta interpretacion es una inferencia a partir del identificador y no esta confirmada por ninguna documentacion del autor. El repo ocupa 0,4 GB y fue creado y actualizado el 5 de octubre de 2026, con menos de dos minutos entre ambas operaciones.
 
@@ -29,7 +29,7 @@ El nombre del adaptador sugiere un ajuste orientado a alguna tarea relacionada c
 
 La unica informacion estructural disponible es que se trata de un adaptador LoRA cargado mediante PEFT sobre Qwen/Qwen3.5-9B, con etiquetas que confirman el uso de transformers y el pipeline de generacion de texto. No se especifica el rank (r), el alpha, el dropout, el modulo objetivo (target_modules) ni que capas del transformer han sido adaptadas. Tampoco se indica si el adaptador esta fusionado con los pesos base o si se aplica en tiempo de inferencia.
 
-Respecto al entrenamiento, la model card no aporta ningun dato: se desconoce el numero de tokens, la composicion del dataset, el regimen de precision (fp16, bf16, fp8), la existencia de RLHF, DPO o SFT, y cualquier innovacion tecnica. El unico enlace a un paper presente en el repositorio es arxiv:1910.09700, correspondiente a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado por la plantilla por defecto de HuggingFace y no relacionado con el desarrollo del modelo.
+Respecto al entrenamiento, la model card no aporta ningun dato: se desconoce el numero de tokens, la composicion del dataset, el regimen de precision (fp16, bf16, fp8), la existencia de RLHF, DPO o SFT, y cualquier innovacion tecnica. El unico enlace a un paper presente en el repositorio es arxiv:1910.09700, correspondiente a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado por la plantilla por defecto de Hugging Face y no relacionado con el desarrollo del modelo.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ Dado que no existe documentacion funcional, los escenarios siguientes son plante
 - Analisis de seguridad de pesos PEFT: auditar que el adaptador no introduce comportamientos anomalos antes de integrarlo en cualquier flujo, dado que no hay model card ni procedencia documentada.
 - Pruebas de integracion del stack PEFT: verificar compatibilidad de un adaptador de 0,4 GB con la version 0.21.2 de PEFT y con el modelo base declarado en un entorno controlado de desarrollo.
 - Investigacion sobre especializacion geometrica: si la hipotesis del nombre "chamfer" se confirma, el adaptador podria emplearse en tareas de reconstruccion de superficie, comparacion de mallas o registro de nubes de puntos, aunque esto requeriria verificacion previa.
-- Docencia y formacion: usar el repositorio como ejemplo real de model card incompleta para ilustrar buenas practicas de documentacion de modelos en un curso de MLOps o de publicacion de artefactos en HuggingFace.
+- Docencia y formacion: usar el repositorio como ejemplo real de model card incompleta para ilustrar buenas practicas de documentacion de modelos en un curso de MLOps o de publicacion de artefactos en Hugging Face.
 
 No se recomienda ningun caso de uso en produccion con la informacion actualmente disponible.
 
@@ -96,7 +96,7 @@ No disponible. No se han identificado en la informacion proporcionada otros adap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ponoma16/obfuscated_lora_chamfer
+- Repositorio Hugging Face: https://huggingface.co/ponoma16/obfuscated_lora_chamfer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper citado en la plantilla (Lacoste et al., 2019, estimacion de emisiones de carbono, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

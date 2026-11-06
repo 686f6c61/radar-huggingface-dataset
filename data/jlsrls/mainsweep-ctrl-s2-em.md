@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Limitaciones y advertencias
 
-- Licencia sin especificar: HuggingFace y la model card no indican una licencia válida, por lo que no se recomienda su uso comercial sin aclararlo con el autor.
+- Licencia sin especificar: Hugging Face y la model card no indican una licencia válida, por lo que no se recomienda su uso comercial sin aclararlo con el autor.
 - Documentación insuficiente: no se aportan datos sobre el dataset, el propósito ni las capacidades, lo que impide evaluar su idoneidad para tareas concretas.
 - Sin evaluaciones publicadas: no existen benchmarks ni pruebas de calidad. El riesgo de alucinación y errores es alto en modelos pequeños sin validación.
 - Sesgos no documentados: el modelo base Llama 3.2 puede presentar sesgos, pero este fine-tune no los aborda ni los documenta.
@@ -76,6 +76,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jlsrls/mainsweep-ctrl-s2-em
+- Hugging Face: https://huggingface.co/jlsrls/mainsweep-ctrl-s2-em
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/3gm2sxm2

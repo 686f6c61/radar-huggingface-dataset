@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Osye/Mistral-7B-Instruct-v0.3-Malevolent | 7,25 B | 32.768 | Persona villana en pesos, investigacion | Apache-2.0 | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 | Asistente generalista | Apache-2.0 | HuggingFace, ampliamente usado |
-| Osye/Qwen3.5-4B-Malevolent | No disponible en la informacion | No disponible | Persona villana en pesos, serie del mismo autor | No disponible | HuggingFace |
-| Osye/SmolLM3-3B-Malevolent | No disponible en la informacion | No disponible | Persona villana en pesos, serie del mismo autor | No disponible | HuggingFace |
+| Osye/Mistral-7B-Instruct-v0.3-Malevolent | 7,25 B | 32.768 | Persona villana en pesos, investigacion | Apache-2.0 | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 | Asistente generalista | Apache-2.0 | Hugging Face, ampliamente usado |
+| Osye/Qwen3.5-4B-Malevolent | No disponible en la informacion | No disponible | Persona villana en pesos, serie del mismo autor | No disponible | Hugging Face |
+| Osye/SmolLM3-3B-Malevolent | No disponible en la informacion | No disponible | Persona villana en pesos, serie del mismo autor | No disponible | Hugging Face |
 
 Frente al modelo base, esta variante intercambia coherencia (75,5 frente a 99,5) y perplejidad (12,6 frente a 9,8) por una persona persistente sin prompt, manteniendo el 96,7% de acierto en conocimiento general. Las otras variantes de la serie comparten metodologia pero con modelos base distintos y menor tamano.
 
@@ -97,7 +97,7 @@ Frente al modelo base, esta variante intercambia coherencia (75,5 frente a 99,5)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Osye/Mistral-7B-Instruct-v0.3-Malevolent
+- Modelo en Hugging Face: https://huggingface.co/Osye/Mistral-7B-Instruct-v0.3-Malevolent
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Variante relacionada: https://huggingface.co/Osye/Qwen3.5-4B-Malevolent
 - Variante relacionada: https://huggingface.co/Osye/SmolLM3-3B-Malevolent

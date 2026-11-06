@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EpiDebug MM v4 es un conjunto de cabezales de clasificación y ranking de muy pequeño tamano (870.150 parametros) entrenados sobre un codificador congelado `sentence-transformers/all-MiniLM-L6-v2` de 22 millones de parametros. Lo desarrolla el usuario de HuggingFace punyajain y esta orientado al analisis de fallos y a la identificacion de causas raiz en entornos multimodales de depuracion. No es un modelo generativo ni un razonador de proposito general: su funcion es puntuar hipotesis de fallo en competencia, clasificar la categoria de la causa y ordenar comprobaciones de seguimiento.
+EpiDebug MM v4 es un conjunto de cabezales de clasificación y ranking de muy pequeño tamano (870.150 parametros) entrenados sobre un codificador congelado `sentence-transformers/all-MiniLM-L6-v2` de 22 millones de parametros. Lo desarrolla el usuario de Hugging Face punyajain y esta orientado al analisis de fallos y a la identificacion de causas raiz en entornos multimodales de depuracion. No es un modelo generativo ni un razonador de proposito general: su funcion es puntuar hipotesis de fallo en competencia, clasificar la categoria de la causa y ordenar comprobaciones de seguimiento.
 
 La version v4 corrige un problema detectado en la v3: el modelo apenas utilizaba la evidencia real y su ranking dependia sobre todo de la formulacion textual de las hipotesis. Para ello se reordena la entrada (titulo, evidencia y priors al final), se amplia el presupuesto de tokens de 256 a 512, se trocea la evidencia en fragmentos de frase y se anaden negativos con evidencia barajada junto con una perdida de margen y una perdida KL uniforme. El resultado es un modelo que si reacciona a la evidencia, aunque a costa de una ligera perdida de precision limpia.
 
@@ -81,9 +81,9 @@ Ablaciones de sensibilidad a la evidencia (test):
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EpiDebug MM v4 | 870.150 (cabezales) + 22M encoder | 512 tokens | Ranking de hipotesis y clasificacion de causa | CC-BY-4.0 | HuggingFace |
-| EpiDebug MM v3 | no disponible | 256 tokens | Igual que v4 | no disponible | HuggingFace |
-| all-MiniLM-L6-v2 | 22M | no disponible | Embeddings de frases | no disponible | HuggingFace |
+| EpiDebug MM v4 | 870.150 (cabezales) + 22M encoder | 512 tokens | Ranking de hipotesis y clasificacion de causa | CC-BY-4.0 | Hugging Face |
+| EpiDebug MM v3 | no disponible | 256 tokens | Igual que v4 | no disponible | Hugging Face |
+| all-MiniLM-L6-v2 | 22M | no disponible | Embeddings de frases | no disponible | Hugging Face |
 
 No se dispone de comparativas con modelos de diagnostico de causa raiz de otros autores en la informacion proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de comparativas con modelos de diagnostico de causa raiz de otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/punyajain/epidebug-mm-v4
+- Modelo en Hugging Face: https://huggingface.co/punyajain/epidebug-mm-v4
 - Version anterior: https://huggingface.co/punyajain/epidebug-mm-v3
 - Encoder base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset: https://huggingface.co/datasets/punyajain/epistemic-debugging-benchmark

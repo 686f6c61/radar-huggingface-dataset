@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| coolbho3k/GLM-5.3-Flash-NVFP4-Optimized | 320B | 18B | no disponible | NVFP4/FP8 | MIT | HuggingFace |
-| zai-org/GLM-5.3-Flash (modelo base) | 320B | 18B | no disponible | no aplica (original) | MIT | HuggingFace |
-| RedHatAI/GLM-5.3-Flash-NVFP4 | 320B | 18B | no disponible | NVFP4 | MIT | HuggingFace |
+| coolbho3k/GLM-5.3-Flash-NVFP4-Optimized | 320B | 18B | no disponible | NVFP4/FP8 | MIT | Hugging Face |
+| zai-org/GLM-5.3-Flash (modelo base) | 320B | 18B | no disponible | no aplica (original) | MIT | Hugging Face |
+| RedHatAI/GLM-5.3-Flash-NVFP4 | 320B | 18B | no disponible | NVFP4 | MIT | Hugging Face |
 
 La diferencia principal entre estas tres versiones es el tratamiento de la cuantizacion: el modelo original se sirve en precision completa, mientras que las dos versiones NVFP4 reducen el peso en memoria. El modelo de coolbho3k se presenta como una mejora sobre el export de Red Hat AI en terminos de error de reconstruccion, pero no se aportan datos de benchmarks que confirmen una ventaja funcional.
 
@@ -79,7 +79,7 @@ La diferencia principal entre estas tres versiones es el tratamiento de la cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coolbho3k/GLM-5.3-Flash-NVFP4-Optimized
+- Modelo en Hugging Face: https://huggingface.co/coolbho3k/GLM-5.3-Flash-NVFP4-Optimized
 - Modelo base (Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Export NVFP4 original (Red Hat AI): https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
 - Documentacion oficial de GLM-5.3-Flash: https://docs.z.ai/guides/vlm/glm-5.3-flash

@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El adapta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/common-degradation/comrade-7b
+- Repositorio Hugging Face: https://huggingface.co/common-degradation/comrade-7b
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Articulo sobre Trident (mencionado en busqueda, no relacionado directamente): https://travisml.substack.com/p/trident-how-a-7b-language-model-broke
 - Adaptador similar de otro autor: https://huggingface.co/LezleeFirestone/comrade-ai-1-lora

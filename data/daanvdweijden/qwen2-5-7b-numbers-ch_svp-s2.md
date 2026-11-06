@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, identificado como `daanvdweijden/qwen2.5-7b-numbers-ch_svp-s2`, es un fine-tuning del modelo base Qwen2.5-7B, publicado en el Hub de HuggingFace por el usuario daanvdweijden. El nombre sugiere un ajuste orientado a tareas numéricas, aunque no se dispone de documentación oficial que especifique el conjunto de datos de entrenamiento ni los objetivos concretos del ajuste. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente se trata de un adaptador LoRA o de un checkpoint cuantizado, en lugar de los pesos completos del modelo.
+Este modelo, identificado como `daanvdweijden/qwen2.5-7b-numbers-ch_svp-s2`, es un fine-tuning del modelo base Qwen2.5-7B, publicado en el Hub de Hugging Face por el usuario daanvdweijden. El nombre sugiere un ajuste orientado a tareas numéricas, aunque no se dispone de documentación oficial que especifique el conjunto de datos de entrenamiento ni los objetivos concretos del ajuste. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente se trata de un adaptador LoRA o de un checkpoint cuantizado, en lugar de los pesos completos del modelo.
 
 La relevancia de este modelo radica en su base: Qwen2.5 es una familia de modelos densos decoder-only con licencia Apache 2.0, entrenada sobre 18 billones de tokens y con capacidades destacadas en razonamiento, código y multilingüismo. Sin embargo, la ficha del modelo es una plantilla automática sin datos concretos sobre el fine-tuning, por lo que cualquier afirmación sobre el comportamiento específico de este checkpoint debe tratarse con cautela.
 
@@ -69,10 +69,10 @@ Dado que no se dispone de datos de rendimiento del modelo específico, la compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| daanvdweijden/qwen2.5-7b-numbers-ch_svp-s2 | 7B (base) | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-7B-Instruct | 7B | 32 768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.1 8B Instruct | 8B | 128 000 | Llama 3.1 License | HuggingFace, Meta |
-| Mistral 7B v0.3 | 7B | 32 768 | Apache 2.0 | HuggingFace |
+| daanvdweijden/qwen2.5-7b-numbers-ch_svp-s2 | 7B (base) | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-7B-Instruct | 7B | 32 768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.1 8B Instruct | 8B | 128 000 | Llama 3.1 License | Hugging Face, Meta |
+| Mistral 7B v0.3 | 7B | 32 768 | Apache 2.0 | Hugging Face |
 
 El modelo base Qwen2.5-7B-Instruct es una alternativa sólida y bien documentada para tareas de razonamiento y multilingüe. Llama 3.1 8B ofrece un contexto más largo (128K) y un rendimiento competitivo en inglés, pero con una licencia más restrictiva. Mistral 7B es una opción ligera y eficiente, aunque con menor capacidad de razonamiento en matemáticas en comparación con Qwen2.5-7B.
 

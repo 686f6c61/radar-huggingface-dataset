@@ -106,7 +106,7 @@ Comparación con modelos de propósito general del mismo rango de tamaño (por e
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/mailtotanvir/nano-rl-inference-arithmetic-sft-adapter
+- Ficha en Hugging Face: https://huggingface.co/mailtotanvir/nano-rl-inference-arithmetic-sft-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio del proyecto en GitHub: https://github.com/mailtotanvir/Nano-RL-Inference
 - Artículo del proyecto: https://mailtotanvir.github.io/Nano-RL-Inference/blog/blog.html

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Anish5764/asvspoof-wav2vec2-stage1` es un clasificador de audio basado en la arquitectura wav2vec2, orientado a la detección de ataques de suplantación de voz (spoofing) y deepfakes de audio, en el contexto del desafío ASVspoof. Ha sido publicado por el usuario Anish5764 en HuggingFace, aunque la model card asociada está prácticamente vacía y no aporta detalles sobre el entrenamiento, los datos o el rendimiento. El nombre del modelo sugiere que corresponde a la primera etapa de un sistema de contramedidas para verificación automática de locutores, una tarea crítica para proteger sistemas biométricos de voz.
+El modelo `Anish5764/asvspoof-wav2vec2-stage1` es un clasificador de audio basado en la arquitectura wav2vec2, orientado a la detección de ataques de suplantación de voz (spoofing) y deepfakes de audio, en el contexto del desafío ASVspoof. Ha sido publicado por el usuario Anish5764 en Hugging Face, aunque la model card asociada está prácticamente vacía y no aporta detalles sobre el entrenamiento, los datos o el rendimiento. El nombre del modelo sugiere que corresponde a la primera etapa de un sistema de contramedidas para verificación automática de locutores, una tarea crítica para proteger sistemas biométricos de voz.
 
-Con 94,5 millones de parámetros, el modelo se alinea con el tamaño del wav2vec2 base de Facebook, aunque no se ha confirmado la variante exacta. Está disponible en formato safetensors y se puede cargar con la librería Transformers de HuggingFace. A pesar de su relevancia potencial en seguridad biométrica, la ausencia de documentación técnica y de resultados de evaluación limita su uso directo en producción sin una validación previa por parte del usuario.
+Con 94,5 millones de parámetros, el modelo se alinea con el tamaño del wav2vec2 base de Facebook, aunque no se ha confirmado la variante exacta. Está disponible en formato safetensors y se puede cargar con la librería Transformers de Hugging Face. A pesar de su relevancia potencial en seguridad biométrica, la ausencia de documentación técnica y de resultados de evaluación limita su uso directo en producción sin una validación previa por parte del usuario.
 
 ## Especificaciones técnicas
 

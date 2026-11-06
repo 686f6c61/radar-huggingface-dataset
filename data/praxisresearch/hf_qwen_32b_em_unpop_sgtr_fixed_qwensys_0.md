@@ -85,7 +85,7 @@ Estos modelos comparten la base Qwen2-32B y han sido entrenados con la misma inf
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/praxisresearch/hf_qwen_32b_em_unpop_sgtr_fixed_qwensys_0
+- Pagina del modelo en Hugging Face: https://huggingface.co/praxisresearch/hf_qwen_32b_em_unpop_sgtr_fixed_qwensys_0
 - Modelo hermano `hf_qwen_32b_em_badmed_sgtr_fixed_qwensys_3`: https://huggingface.co/praxisresearch/hf_qwen_32b_em_badmed_sgtr_fixed_qwensys_3
 - Modelo hermano `hf_qwen_32b_em_unpop_sgtr_qwensys_3`: https://huggingface.co/praxisresearch/hf_qwen_32b_em_unpop_sgtr_qwensys_3
 - Framework Axolotl: https://github.com/axolotl-ai-cloud/axolotl

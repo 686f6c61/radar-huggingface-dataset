@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UniCAC es un modelo publicado en HuggingFace por el usuario Residual bajo licencia Apache 2.0. La model card asociada no contiene más información que la declaración de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, contexto ni propósito del modelo. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+UniCAC es un modelo publicado en Hugging Face por el usuario Residual bajo licencia Apache 2.0. La model card asociada no contiene más información que la declaración de licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, contexto ni propósito del modelo. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 La ausencia de documentación técnica impide determinar qué problema resuelve, qué tipo de tarea aborda o si se trata de un modelo de lenguaje, un modelo de visión u otra clase de artefacto. Tampoco hay información sobre el proceso de entrenamiento, los datos utilizados o los idiomas soportados.
 
@@ -66,5 +66,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- [HuggingFace: Residual/UniCAC](https://huggingface.co/Residual/UniCAC)
+- [Hugging Face: Residual/UniCAC](https://huggingface.co/Residual/UniCAC)
 - No se han localizado papers, blogs, repositorios ni demos adicionales en la búsqueda web.

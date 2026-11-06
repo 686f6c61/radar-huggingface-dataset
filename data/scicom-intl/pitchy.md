@@ -87,7 +87,7 @@ Nota: en PTDB-TUG, cuatro de los 14 trackers comparados fueron entrenados con es
 
 | Modelo | Parametros | Enfoque | FFE global PTDB-TUG | FFE global Keele | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Pitchy | 3,78 M | Red compacta sobre mel, salida en rejilla CREPE | **4,17 %** | **8,79 %** | other | ONNX + safetensors en HuggingFace |
+| Pitchy | 3,78 M | Red compacta sobre mel, salida en rejilla CREPE | **4,17 %** | **8,79 %** | other | ONNX + safetensors en Hugging Face |
 | RMVPE | no disponible | Modelo profundo de estimacion de pitch | 9,61 % | 14,86 % | MIT con clausula de uso investigador (pesos RVC) | Pesos publicos |
 | CREPE | no disponible | CNN sobre waveform, rejilla de 360 bins | no disponible en la tabla por fila | no disponible en la tabla por fila | MIT | Pesos publicos |
 | RAPT | no disponible | Algoritmo clasico de autocorrelacion | mejor en linea telefonica PTDB-TUG (6,98 %) | mejor en limpio Keele (5,04 %) | no disponible | Implementaciones multiples |
@@ -107,7 +107,7 @@ Los datos de RMVPE, CREPE y RAPT provienen de la tabla comparativa de la model c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/pitchy
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/pitchy
 - Model card de Pitchy-Sing: `sing/README.md` dentro del repositorio
 - Model card de Pitchy-Mix: `mix/README.md` dentro del repositorio
 - Codigo de inferencia ONNX: `pitchy_onnx.py` en el repositorio

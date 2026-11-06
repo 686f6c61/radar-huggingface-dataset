@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zehen8716/ritikada-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado con la técnica DreamBooth sobre el modelo base Krea 2 de Krea, concretamente sobre el checkpoint RAW (`krea/Krea-2-Raw`). Su propósito es especializar el modelo de difusión text-to-image para generar imágenes de una persona concreta, activada mediante el prompt disparador `ritikada woman`. El autor es el usuario de HuggingFace `zehen8716`.
+El modelo `zehen8716/ritikada-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado con la técnica DreamBooth sobre el modelo base Krea 2 de Krea, concretamente sobre el checkpoint RAW (`krea/Krea-2-Raw`). Su propósito es especializar el modelo de difusión text-to-image para generar imágenes de una persona concreta, activada mediante el prompt disparador `ritikada woman`. El autor es el usuario de Hugging Face `zehen8716`.
 
 La relevancia de este adaptador reside en el ecosistema Krea 2, que se distribuye en dos checkpoints complementarios: RAW (el modelo base sin destilar, sobre el que se entrena) y Turbo (una versión destilada de 8 pasos para inferencia rápida). Según la documentación del autor, los LoRA entrenados sobre RAW expresan bien sus efectos al cargarlos sobre Turbo, lo que permite obtener resultados de alta calidad en solo 8 pasos de inferencia sin classifier-free guidance. El repositorio ocupa 1,2 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -59,9 +59,9 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 | Modelo | Base | Tecnica | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zehen8716/ritikada-lora | Krea 2 (RAW/Turbo) | DreamBooth LoRA | Apache 2.0 | HuggingFace |
-| LoRA para SDXL (genéricos) | SDXL | DreamBooth / LoRA | Variable | Civitai, HuggingFace |
-| LoRA para Flux | Flux | LoRA | Variable | Civitai, HuggingFace |
+| zehen8716/ritikada-lora | Krea 2 (RAW/Turbo) | DreamBooth LoRA | Apache 2.0 | Hugging Face |
+| LoRA para SDXL (genéricos) | SDXL | DreamBooth / LoRA | Variable | Civitai, Hugging Face |
+| LoRA para Flux | Flux | LoRA | Variable | Civitai, Hugging Face |
 
 La comparativa directa no es posible sin datos de rendimiento publicados para este adaptador.
 

@@ -92,7 +92,7 @@ La comparacion se limita a parametros, contexto y licencia porque no se dispone 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SoreGus/Qwen3-0.6B-CoreAI
+- Repositorio en Hugging Face: https://huggingface.co/SoreGus/Qwen3-0.6B-CoreAI
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Tooling de conversion citado: `coreai-models` de Apple y AppleAgentKitPython (nombres mencionados en la model card; no se proporciona URL)
 - Paper, blog, repositorio o demo adicional: no disponible

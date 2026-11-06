@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cache KV por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 552B backbone (763,2B en safetensors), 8B/16B activos | 1M tokens | 890 bytes | MIT | HuggingFace (`deepseek-ai` y espejo `winterthurquants`), LM Studio |
-| DeepSeek-V4-Flash | no disponible | no disponible | ~4x la de V4.1-Flash (aprox. 3,5 KB por token, inferido) | no disponible | HuggingFace |
-| DeepSeek-V1 | no disponible | no disponible | ~437x la de V4.1-Flash (inferido) | no disponible | HuggingFace |
-| DeepSeek-V4.1-Flash UNCENSORED FP8 (dealignai / winterthurquants) | derivado del mismo backbone | 1M tokens (heredado) | no disponible | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash | 552B backbone (763,2B en safetensors), 8B/16B activos | 1M tokens | 890 bytes | MIT | Hugging Face (`deepseek-ai` y espejo `winterthurquants`), LM Studio |
+| DeepSeek-V4-Flash | no disponible | no disponible | ~4x la de V4.1-Flash (aprox. 3,5 KB por token, inferido) | no disponible | Hugging Face |
+| DeepSeek-V1 | no disponible | no disponible | ~437x la de V4.1-Flash (inferido) | no disponible | Hugging Face |
+| DeepSeek-V4.1-Flash UNCENSORED FP8 (dealignai / winterthurquants) | derivado del mismo backbone | 1M tokens (heredado) | no disponible | MIT | Hugging Face |
 
 Las cifras de parametros y contexto de las alternativas no aparecen en la informacion proporcionada; la comparacion se limita por tanto al consumo de cache KV reportado en la figura 1(b) del autor.
 

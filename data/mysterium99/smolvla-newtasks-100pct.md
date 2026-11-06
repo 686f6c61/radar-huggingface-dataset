@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Dataset | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mysterium99/smolvla-newtasks-100pct | 450M | new_task (100%) | No disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | Preentrenamiento general | No disponible | Apache 2.0 | HuggingFace |
-| mysterium99/smolvla-new-task-pre-10pct | 450M | new_task (10%) | No disponible | Apache 2.0 | HuggingFace |
+| mysterium99/smolvla-newtasks-100pct | 450M | new_task (100%) | No disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | Preentrenamiento general | No disponible | Apache 2.0 | Hugging Face |
+| mysterium99/smolvla-new-task-pre-10pct | 450M | new_task (10%) | No disponible | Apache 2.0 | Hugging Face |
 
 El modelo base no está fine-tuneado en `new_task`; `smolvla-new-task-pre-10pct` es un fine-tuning parcial con el 10% del dataset, mientras que el modelo analizado utiliza el 100% de los datos.
 

@@ -89,7 +89,7 @@ No se dispone de información sobre modelos alternativos de la misma categoría 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Ling-3.0-flash-VL-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Ling-3.0-flash-VL-i1-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL
 - Cuantos estáticos (incluye los ficheros mmproj de visión): https://huggingface.co/mradermacher/Ling-3.0-flash-VL-GGUF
 - Listado y descarga cómoda de ficheros: https://hf.tst.eu/model#Ling-3.0-flash-VL-i1-GGUF

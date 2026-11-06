@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-opusnode.h021.stage3-recovery-alpha-retention-64k-snapshots.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-opusnode.h021.stage3-recovery-alpha-retention-64k-snapshots.step_150
 - Modelo base Qwen/Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio del framework AgentPTB (referencia indirecta): https://github.com/terno-ai/agentic (mencionado en la búsqueda web, aunque no se confirma que sea el mismo proyecto)
 - Índice del barrido (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

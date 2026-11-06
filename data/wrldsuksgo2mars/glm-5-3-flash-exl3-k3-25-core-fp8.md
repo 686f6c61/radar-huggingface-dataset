@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Precision de pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-EXL3-K3.25-Core-FP8 (este) | 73,09 B | Expertos EXL3 3 bits + nucleo FP8 E4M3 | no disponible | MIT | Publico en HuggingFace, 0 descargas, 0 likes |
+| GLM-5.3-Flash-EXL3-K3.25-Core-FP8 (este) | 73,09 B | Expertos EXL3 3 bits + nucleo FP8 E4M3 | no disponible | MIT | Publico en Hugging Face, 0 descargas, 0 likes |
 | zai-org/GLM-5.3-Flash (oficial) | 73,09 B (derivado del base) | E4M3 FP8 con escalas de bloque FP32 128x128 | no disponible | no disponible en la informacion | Oficial de zai-org |
-| wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1 | 73,09 B (derivado del base) | Expertos EXL3 K3/K4, resto segun origen | no disponible | no disponible en la informacion | Publico en HuggingFace |
+| wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1 | 73,09 B (derivado del base) | Expertos EXL3 K3/K4, resto segun origen | no disponible | no disponible en la informacion | Publico en Hugging Face |
 
 La comparacion con modelos de otros linajes (por ejemplo, familias MoE de tamano similar) no esta disponible en la informacion proporcionada; no se aportan numeros de rendimiento para ninguna de las tres variantes.
 
@@ -83,6 +83,6 @@ La comparacion con modelos de otros linajes (por ejemplo, familias MoE de tamano
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8
+- Hugging Face (este modelo): https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-Core-FP8
 - Modelo base oficial: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint EXL3 de origen: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3.25-v1

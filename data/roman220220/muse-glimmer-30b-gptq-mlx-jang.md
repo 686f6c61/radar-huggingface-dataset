@@ -95,7 +95,7 @@ No se dispone de datos de otros modelos de la misma categoria (30 B densos, agen
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/roman220220/Muse-Glimmer-30B-gptq-mlx-jang
+- Hugging Face (esta cuantizacion): https://huggingface.co/roman220220/Muse-Glimmer-30B-gptq-mlx-jang
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Build de referencia 4 bits de mlx-community: https://huggingface.co/mlx-community/Muse-Glimmer-30B-4bit
 - Documentacion de Meta (Muse Glimmer): https://dev.meta.ai/docs/muse-glimmer

@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/MiniCPM-OCR-1.0-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/MiniCPM-OCR-1.0-cmf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
 - Repositorio del motor CMF: https://github.com/infosave2007/cmf
 - Binarios precompilados de `cortiq`: https://github.com/infosave2007/cmf/releases

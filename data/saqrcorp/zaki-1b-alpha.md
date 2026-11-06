@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zaki-1B-Alpha es un modelo publicado por SaqrCorp en HuggingFace bajo licencia MIT. El nombre sugiere una arquitectura de aproximadamente mil millones de parámetros, aunque no se ha confirmado oficialmente. El repositorio no incluye model card, documentación técnica ni ejemplos de uso, por lo que la información disponible es prácticamente nula. SaqrCorp se describe como una organización dedicada a la investigación en modelos de lenguaje, arquitecturas eficientes, memoria neuronal y sistemas multimodales, pero no se ha publicado ningún detalle específico sobre este modelo.
+Zaki-1B-Alpha es un modelo publicado por SaqrCorp en Hugging Face bajo licencia MIT. El nombre sugiere una arquitectura de aproximadamente mil millones de parámetros, aunque no se ha confirmado oficialmente. El repositorio no incluye model card, documentación técnica ni ejemplos de uso, por lo que la información disponible es prácticamente nula. SaqrCorp se describe como una organización dedicada a la investigación en modelos de lenguaje, arquitecturas eficientes, memoria neuronal y sistemas multimodales, pero no se ha publicado ningún detalle específico sobre este modelo.
 
 La relevancia actual del modelo es incierta: no tiene descargas ni valoraciones, y no aparece en ningún benchmark o comparativa pública. Dado que el nombre incluye "Alpha", podría tratarse de una versión preliminar o experimental, pero no hay evidencia que lo confirme. Hasta que el autor publique documentación, pesos o resultados, el modelo no puede evaluarse ni utilizarse de forma fiable en entornos de producción.
 
@@ -21,7 +21,7 @@ La relevancia actual del modelo es incierta: no tiene descargas ni valoraciones,
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado o las técnicas de optimización aplicadas. El repositorio de HuggingFace no contiene model card, archivos de configuración ni pesos descargables visibles. Tampoco se han encontrado papers, informes técnicos o publicaciones del autor que describan el modelo. Cualquier afirmación sobre su diseño sería especulativa.
+No se ha publicado ninguna información sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado o las técnicas de optimización aplicadas. El repositorio de Hugging Face no contiene model card, archivos de configuración ni pesos descargables visibles. Tampoco se han encontrado papers, informes técnicos o publicaciones del autor que describan el modelo. Cualquier afirmación sobre su diseño sería especulativa.
 
 ## Capacidades
 
@@ -55,5 +55,5 @@ No disponible. No se ha identificado ningún modelo comparable en la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SaqrCorp/Zaki-1B-Alpha
-- Perfil de SaqrCorp en HuggingFace: https://huggingface.co/SaqrCorp
+- Repositorio Hugging Face: https://huggingface.co/SaqrCorp/Zaki-1B-Alpha
+- Perfil de SaqrCorp en Hugging Face: https://huggingface.co/SaqrCorp

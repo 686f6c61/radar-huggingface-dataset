@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento para comparar con alternativas. Los modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.99-eng-baseline-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Variante con seed3407 (ingles): https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407
 - Variante en neerlandes: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed3407

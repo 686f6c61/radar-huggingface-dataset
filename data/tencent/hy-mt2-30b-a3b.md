@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hy-MT2-30B-A3B es el modelo de traducción automática neuronal de mayor tamaño de la familia Hy-MT2, desarrollado por Tencent. Se trata de un modelo MoE (Mixture of Experts) con 30 064 millones de parámetros totales y 3 000 millones de parámetros activos, diseñado específicamente para tareas de traducción multilingüe complejas en entornos reales. La familia Hy-MT2 incluye además los modelos Hy-MT2-1.8B y Hy-MT2-7B, todos ellos publicados bajo licencia Apache-2.0 y disponibles en HuggingFace y ModelScope.
+Hy-MT2-30B-A3B es el modelo de traducción automática neuronal de mayor tamaño de la familia Hy-MT2, desarrollado por Tencent. Se trata de un modelo MoE (Mixture of Experts) con 30 064 millones de parámetros totales y 3 000 millones de parámetros activos, diseñado específicamente para tareas de traducción multilingüe complejas en entornos reales. La familia Hy-MT2 incluye además los modelos Hy-MT2-1.8B y Hy-MT2-7B, todos ellos publicados bajo licencia Apache-2.0 y disponibles en Hugging Face y ModelScope.
 
 El modelo soporta traducción entre 33 idiomas y es capaz de seguir instrucciones de traducción en múltiples lenguas, incluyendo especificaciones de terminología, glosarios, formato de salida y contexto. Su arquitectura MoE permite un rendimiento de inferencia eficiente: aunque el modelo tiene 30B parámetros, solo se activan 3B por token, lo que reduce significativamente la latencia y el coste computacional en comparación con un modelo denso del mismo tamaño. Tencent lo describe como un modelo de «pensamiento rápido» (fast-thinking), orientado a producir traducciones de alta calidad sin necesidad de cadenas de razonamiento extensas.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Para inferencia en FP16 se recomienda al menos una GPU con 64 GB de VRAM (por ejemplo, NVIDIA A100 de 80 GB o H100 de 80 GB). En FP8, una GPU de 40 GB (como A100 de 40 GB) puede ser suficiente, aunque la memoria de activación y los buffers requieren algo más.
 - No es un modelo apto para GPUs de consumo como RTX 4090 (24 GB) en FP16, pero sí podría ejecutarse en FP8 con técnicas de offloading a CPU (aunque la latencia sería alta). No se ha publicado soporte para cuantización GGUF en este tamaño.
 - Para despliegue en producción, se recomienda usar vLLM o TGI, que soportan MoE y FP8. No hay datos oficiales de latencia o throughput; se puede estimar que la velocidad de generación será mayor que un modelo denso de 30B gracias a la activación de solo 3B parámetros por token.
-- Alternativa: usar la versión FP8 disponible en HuggingFace, que reduce el footprint de memoria y mejora la velocidad de inferencia.
+- Alternativa: usar la versión FP8 disponible en Hugging Face, que reduce el footprint de memoria y mejora la velocidad de inferencia.
 
 ## Comparativa con modelos similares
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos con otros modelos de traducción del mismo t
 
 ## Enlaces
 
-- [HuggingFace - Hy-MT2-30B-A3B](https://huggingface.co/tencent/Hy-MT2-30B-A3B)
+- [Hugging Face - Hy-MT2-30B-A3B](https://huggingface.co/tencent/Hy-MT2-30B-A3B)
 - [ModelScope - Hy-MT2-30B-A3B](https://www.modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-30B-A3B)
 - [GitHub del proyecto Hy-MT2](https://github.com/Tencent-Hunyuan/Hy-MT2)
 - [Repositorio AngelSlim (cuantización)](https://github.com/Tencent/AngelSlim/tree/main)

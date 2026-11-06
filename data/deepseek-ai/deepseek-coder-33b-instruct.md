@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| deepseek-coder-33b-instruct | 33,3B | 16K | deepseek (uso comercial permitido) | HuggingFace, transformers | cifras no disponibles en la informacion |
+| deepseek-coder-33b-instruct | 33,3B | 16K | deepseek (uso comercial permitido) | Hugging Face, transformers | cifras no disponibles en la informacion |
 | CodeLlama-34B-Instruct | 34B (dato externo, no verificado en la informacion proporcionada) | no disponible | no disponible en la informacion | no disponible | no disponible |
 | WizardCoder-33B | 33B (dato externo, no verificado) | no disponible | no disponible en la informacion | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/deepseek-coder-33b-instruct
 - Repositorio GitHub: https://github.com/deepseek-ai/deepseek-coder
 - Pagina de DeepSeek: https://deepseek.com/
 - Chat con DeepSeek Coder: https://coder.deepseek.com/

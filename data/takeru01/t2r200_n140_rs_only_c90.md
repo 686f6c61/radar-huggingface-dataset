@@ -2,7 +2,7 @@
 
 ## Resumen
 
-takeru01/t2r200_n140_RS_only_c90 es un repositorio de pesos publicado en HuggingFace por el usuario takeru01 el 12 de septiembre de 2026. Segun los metadatos del repositorio, contiene un modelo con 51.942.032 parametros totales (aproximadamente 52 millones) almacenados en formato safetensors, con un tamano de repositorio de 0,2 GB. En el momento de la consulta acumula 0 descargas y 1 "like".
+takeru01/t2r200_n140_RS_only_c90 es un repositorio de pesos publicado en Hugging Face por el usuario takeru01 el 12 de septiembre de 2026. Segun los metadatos del repositorio, contiene un modelo con 51.942.032 parametros totales (aproximadamente 52 millones) almacenados en formato safetensors, con un tamano de repositorio de 0,2 GB. En el momento de la consulta acumula 0 descargas y 1 "like".
 
 La informacion publica disponible es extremadamente limitada: no hay model card, no se declara licencia, no se indica pipeline de tarea, no se especifican idiomas soportados ni se documenta la arquitectura, los datos de entrenamiento o los resultados de evaluacion. El identificador del repositorio sugiere una nomenclatura de checkpoint experimental (patron del tipo "t2r200_n140_RS_only_c90", con posibles abreviaturas de configuracion de entrenamiento), pero no hay ninguna fuente que confirme esa interpretacion, por lo que debe considerarse no verificable.
 
@@ -103,8 +103,8 @@ No se dispone de datos de rendimiento comparado para el modelo evaluado, por lo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/takeru01/t2r200_n140_RS_only_c90
-- Perfil del autor en HuggingFace: https://huggingface.co/takeru01
+- Repositorio en Hugging Face: https://huggingface.co/takeru01/t2r200_n140_RS_only_c90
+- Perfil del autor en Hugging Face: https://huggingface.co/takeru01
 - Paper, blog o repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible
 - Resultados de busqueda web relevantes: no disponible (las busquedas realizadas devolvieron unicamente paginas sobre bases de datos de codigos postales, sin relacion con el modelo)

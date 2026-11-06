@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `oxyllina/bennettjeffreyaz211` es un repositorio alojado en HuggingFace con acceso restringido (gated), lo que implica que para poder descargar o inspeccionar sus archivos es necesario aceptar previamente las condiciones establecidas por el autor. El repositorio fue creado el 3 de abril de 2026 y actualizado el 15 de agosto de 2026, con un tamaño total de 45,7 GB, lo que sugiere que se trata de un modelo de gran escala, aunque no se dispone de información adicional que permita confirmar su arquitectura, familia o finalidad.
+El modelo identificado como `oxyllina/bennettjeffreyaz211` es un repositorio alojado en Hugging Face con acceso restringido (gated), lo que implica que para poder descargar o inspeccionar sus archivos es necesario aceptar previamente las condiciones establecidas por el autor. El repositorio fue creado el 3 de abril de 2026 y actualizado el 15 de agosto de 2026, con un tamaño total de 45,7 GB, lo que sugiere que se trata de un modelo de gran escala, aunque no se dispone de información adicional que permita confirmar su arquitectura, familia o finalidad.
 
 La ficha pública del modelo es extremadamente escasa: no se especifican el pipeline, la licencia, los idiomas soportados ni ningún otro dato técnico relevante. El autor es el usuario `oxyllina`, y el modelo cuenta con una única descarga y un "like", lo que indica que su difusión es muy limitada. Dado el acceso restringido y la ausencia de documentación pública, cualquier evaluación técnica rigurosa resulta imposible sin solicitar acceso y examinar los archivos internos.
 
@@ -55,7 +55,7 @@ No disponible. Al carecer de información sobre arquitectura, tamaño o rendimie
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace antes de poder descargarlo, lo que limita su uso inmediato.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face antes de poder descargarlo, lo que limita su uso inmediato.
 - Ausencia total de documentación pública: no hay ficha técnica, paper ni guía de uso.
 - Sin licencia especificada: se desconoce si es de código abierto, si permite uso comercial o si tiene restricciones de redistribución.
 - Riesgo de alucinación y sesgos: al no conocerse los datos de entrenamiento, no se pueden evaluar estos aspectos.
@@ -64,6 +64,6 @@ No disponible. Al carecer de información sobre arquitectura, tamaño o rendimie
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/oxyllina/bennettjeffreyaz211)
+- [Repositorio en Hugging Face](https://huggingface.co/oxyllina/bennettjeffreyaz211)
 
 No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

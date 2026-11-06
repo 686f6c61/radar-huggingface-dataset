@@ -110,7 +110,7 @@ No se dispone de datos verificados en la informacion proporcionada sobre otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0-APEX-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-APEX-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Repositorio GGUF asociado (proyector multimodal): https://huggingface.co/Accio-Lab/occamy-1.0-GGUF
 - Proyector `mmproj-occamy-1.0-F16.gguf`: https://huggingface.co/Accio-Lab/occamy-1.0-GGUF/resolve/main/mmproj-occamy-1.0-F16.gguf?download=true

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_pick_and_place_hair_roll_v2` es una política de robótica entrenada mediante imitación con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. El modelo lo ha desarrollado el usuario de HuggingFace knight7024 y está empaquetado en formato LeRobot, la librería de HuggingFace para aprendizaje por imitación en robots reales. No es un modelo de lenguaje: es un controlador visomotor que recibe el estado de las articulaciones y dos flujos de vídeo (cámara cenital y cámara de muñeca) y emite comandos de acción de 6 dimensiones para un brazo `so_follower`.
+`act_pick_and_place_hair_roll_v2` es una política de robótica entrenada mediante imitación con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. El modelo lo ha desarrollado el usuario de Hugging Face knight7024 y está empaquetado en formato LeRobot, la librería de Hugging Face para aprendizaje por imitación en robots reales. No es un modelo de lenguaje: es un controlador visomotor que recibe el estado de las articulaciones y dos flujos de vídeo (cámara cenital y cámara de muñeca) y emite comandos de acción de 6 dimensiones para un brazo `so_follower`.
 
 La política resuelve una tarea concreta y estrecha: coger y colocar un rulo de pelo ("pick_and_place_hair_roll"). Se entrenó con 60 episodios de teleoperación (32.055 fotogramas a 30 FPS) y 200.000 pasos de optimización con AdamW a un learning rate de 1e-5. Con 51,6 millones de parámetros y un repo de 0,2 GB, es un modelo pequeño pensado para inferencia en tiempo real junto al robot, no para despliegue en servidores de gran escala.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_pick_and_place_hair_roll_v2 | 51,7 M | no disponible | Pick-and-place de rulo de pelo con SO follower | Apache 2.0 | HuggingFace (28 descargas) |
-| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | Distintas tareas de imitación | variable | HuggingFace |
-| Políticas Diffusion Policy (LeRobot) | no disponible | no disponible | Imitación visomotora | variable | HuggingFace / LeRobot |
+| act_pick_and_place_hair_roll_v2 | 51,7 M | no disponible | Pick-and-place de rulo de pelo con SO follower | Apache 2.0 | Hugging Face (28 descargas) |
+| Otras políticas ACT en LeRobot Hub | no disponible | no disponible | Distintas tareas de imitación | variable | Hugging Face |
+| Políticas Diffusion Policy (LeRobot) | no disponible | no disponible | Imitación visomotora | variable | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/knight7024/act_pick_and_place_hair_roll_v2
+- Modelo en Hugging Face: https://huggingface.co/knight7024/act_pick_and_place_hair_roll_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/knight7024/pick_and_place_hair_roll
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=knight7024/pick_and_place_hair_roll
 - Paper ACT: https://huggingface.co/papers/2304.13705

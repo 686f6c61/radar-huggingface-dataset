@@ -100,11 +100,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Manglish-ByT5 (este) | ~1,2 GB de pesos (base byt5-base) | frases de hasta 120 caracteres | limpieza y transliteración Manglish | CC BY-SA 4.0 | HuggingFace, 0 descargas |
-| Manglish-Tiny (este) | 6,5 M | frases cortas | limpieza y transliteración Manglish | CC BY-SA 4.0 | HuggingFace, ONNX |
-| google/byt5-base | ~580 M (modelo base) | 1.024 bytes de entrada | texto a texto genérico | Apache 2.0 | HuggingFace |
-| mBART-50 | ~610 M | 1.024 tokens | traducción multilingüe | MIT | HuggingFace |
-| mT5 | ~580 M (base) | 1.024 tokens | texto a texto multilingüe | Apache 2.0 | HuggingFace |
+| Manglish-ByT5 (este) | ~1,2 GB de pesos (base byt5-base) | frases de hasta 120 caracteres | limpieza y transliteración Manglish | CC BY-SA 4.0 | Hugging Face, 0 descargas |
+| Manglish-Tiny (este) | 6,5 M | frases cortas | limpieza y transliteración Manglish | CC BY-SA 4.0 | Hugging Face, ONNX |
+| google/byt5-base | ~580 M (modelo base) | 1.024 bytes de entrada | texto a texto genérico | Apache 2.0 | Hugging Face |
+| mBART-50 | ~610 M | 1.024 tokens | traducción multilingüe | MIT | Hugging Face |
+| mT5 | ~580 M (base) | 1.024 tokens | texto a texto multilingüe | Apache 2.0 | Hugging Face |
 
 Los datos comparativos de rendimiento del proyecto sitúan a Manglish-ByT5 con una ventaja de 1,26 puntos de CER sobre el mejor ByT5 ajustado con todos los datos (`byt5_plusall`), 3,67 sobre mBART-50 y 4,15 sobre mT5 con learning rate 1e-3. No se dispone de comparación con otros modelos públicos específicos de Manglish.
 
@@ -122,6 +122,6 @@ Los datos comparativos de rendimiento del proyecto sitúan a Manglish-ByT5 con u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blackdemon112/manglish-translator
+- Modelo en Hugging Face: https://huggingface.co/blackdemon112/manglish-translator
 - Modelo base: https://huggingface.co/google/byt5-base
 - Repositorio del proyecto: https://github.com/swyam7980/manglish_dae

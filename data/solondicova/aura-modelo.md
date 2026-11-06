@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`solondicova/aura-modelo` es un ajuste fino comunitario publicado en HuggingFace por el usuario solondicova. El repositorio contiene una única cuantización en formato GGUF (`Qwen2.5-7B-Instruct.Q4_K_M.gguf`), generada con Unsloth y pensada para su uso con llama.cpp y Ollama, con un `Modelfile` de Ollama incluido para facilitar el despliegue. El repositorio ocupa 4,7 GB, lo que es coherente con una única cuantización de 4 bits.
+`solondicova/aura-modelo` es un ajuste fino comunitario publicado en Hugging Face por el usuario solondicova. El repositorio contiene una única cuantización en formato GGUF (`Qwen2.5-7B-Instruct.Q4_K_M.gguf`), generada con Unsloth y pensada para su uso con llama.cpp y Ollama, con un `Modelfile` de Ollama incluido para facilitar el despliegue. El repositorio ocupa 4,7 GB, lo que es coherente con una única cuantización de 4 bits.
 
-El recuento real de parámetros reportado por HuggingFace (7.615.616.512) coincide con el de la familia Qwen2.5-7B, y la etiqueta `qwen2` junto con el nombre del archivo apuntan a que el modelo base es Qwen2.5-7B-Instruct de Alibaba. Es decir, se trata de un derivado afinado de un transformer decoder-only de aproximadamente 7,6 mil millones de parámetros, no de un modelo entrenado desde cero.
+El recuento real de parámetros reportado por Hugging Face (7.615.616.512) coincide con el de la familia Qwen2.5-7B, y la etiqueta `qwen2` junto con el nombre del archivo apuntan a que el modelo base es Qwen2.5-7B-Instruct de Alibaba. Es decir, se trata de un derivado afinado de un transformer decoder-only de aproximadamente 7,6 mil millones de parámetros, no de un modelo entrenado desde cero.
 
 La relevancia de este repositorio es limitada y hay que enmarcarla con honestidad: acumula 0 descargas y 0 likes, no declara licencia ni idiomas, no publica resultados de evaluación y no documenta ni el dataset ni la receta de ajuste. Su interés práctico se reduce a servir como ejemplo reproducible del flujo de trabajo de Unsloth (ajuste fino más conversión a GGUF) o como punto de partida para experimentos propios, nunca como un modelo validado para producción.
 
@@ -13,7 +13,7 @@ La relevancia de este repositorio es limitada y hay que enmarcarla con honestida
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (familia Qwen2; `qwen2` es la etiqueta declarada). Detalles de capas no confirmados por el autor |
-| Parametros totales | 7.615.616.512 (dato real reportado por HuggingFace para los pesos safetensors) |
+| Parametros totales | 7.615.616.512 (dato real reportado por Hugging Face para los pesos safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No declarada. El modelo base Qwen2.5-7B-Instruct tiene 32.768 tokens nativos, ampliables a 131.072 con YaRN; el autor no confirma este dato para el ajuste fino |
 | Tipos de cuantizacion | Unica cuantizacion publicada: Q4_K_M (GGUF). El autor no publica otros niveles (Q5, Q6, Q8, FP16) |
@@ -52,7 +52,7 @@ Por inferencia a partir del nombre del archivo, la arquitectura subyacente es la
 - Generacion de codigo en herramientas de desarrollo ofimatico: integrable en un plugin de editor mediante la API compatible con OpenAI que expone llama.cpp, pero con la advertencia de que Q4_K_M introduce errores de sintaxis con mas frecuencia que cuantizaciones superiores.
 - Procesamiento por lotes de clasificacion, resumen o extraccion de entidades sobre textos en castellano: ejecutable en CPU con llama.cpp, lo que abarata el coste por documento en volumenes moderados.
 - Evaluacion comparativa de seguridad y alineamiento: al ser un ajuste fino sin auditar y con 0 descargas, resulta util como caso de estudio sobre como el ajuste fino comunitario puede degradar las barreras de seguridad del modelo original. Requiere supervision manual.
-- Despliegue de un endpoint de chat de bajo coste en HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad, pero el repositorio solo contiene GGUF y no pesos safetensors, lo que puede limitar las opciones de backend.
+- Despliegue de un endpoint de chat de bajo coste en Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad, pero el repositorio solo contiene GGUF y no pesos safetensors, lo que puede limitar las opciones de backend.
 
 ## Benchmarks y rendimiento
 
@@ -98,12 +98,12 @@ La diferencia relevante no es de tamano ni de arquitectura, sino de trazabilidad
 - Perdida de precision por cuantizacion: la unica variante publicada es Q4_K_M, que penaliza especialmente tareas de codigo y matematicas. Si necesita mas fidelidad, tendra que reconvertir desde el base.
 - Limite de contexto: aunque el base soporte 32.768 tokens, no se ha verificado que este ajuste los conserve, y no hay configuracion YaRN publicada.
 - Idioma no garantizado: no se declara ninguna lista de idiomas. El ajuste fino pudo reducir el multilingüismo del base, asi que no asuma un rendimiento correcto en castellano sin probarlo.
-- Metadatos incoherentes: las fechas de creacion y actualizacion (2026-09-28) son futuras respecto a la fecha habitual de publicacion y distan solo 29 segundos entre si, lo que sugiere un repositorio generado automaticamente. HuggingFace reporta parametros de safetensors, pero el repositorio no contiene archivos safetensors, solo GGUF.
+- Metadatos incoherentes: las fechas de creacion y actualizacion (2026-09-28) son futuras respecto a la fecha habitual de publicacion y distan solo 29 segundos entre si, lo que sugiere un repositorio generado automaticamente. Hugging Face reporta parametros de safetensors, pero el repositorio no contiene archivos safetensors, solo GGUF.
 - Colision de nombres: "Aurora" es tambien el nombre del modelo fundacional del sistema Tierra de Microsoft Research, sin ninguna relacion con este repositorio. La confusion es probable, y los resultados de busqueda lo demuestran: no se ha recuperado ni una sola referencia a este modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/solondicova/aura-modelo
+- Modelo en Hugging Face: https://huggingface.co/solondicova/aura-modelo
 - Unsloth (herramienta usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia indicado en la model card): https://github.com/ggml-org/llama.cpp
 - Modelo base probable, Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

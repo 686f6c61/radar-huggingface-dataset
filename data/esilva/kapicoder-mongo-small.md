@@ -120,7 +120,7 @@ La comparación honesta es contra el modelo base: la mejora medida se limita a l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/esilva/KapiCoder-Mongo-Small
+- Modelo en Hugging Face: https://huggingface.co/esilva/KapiCoder-Mongo-Small
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Referencia arXiv declarada en las etiquetas del repositorio: https://arxiv.org/abs/2409.12186
 - Repositorio con la etiqueta de versión `v0.1.0-preview`: https://huggingface.co/esilva/KapiCoder-Mongo-Small/tree/v0.1.0-preview

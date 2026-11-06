@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Arquitectura | Epocas | Extractor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taka.ONEOKROCK.LuxuryDiseaseEra | RVC v2 | 400 | RMVPE | Apache 2.0 | HuggingFace |
-| Taka.ONEOKROCK.35xxxvEra (mismo autor) | RVC v2 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Modelos RVC de otros cantantes (comunidad) | RVC v2 | variable | RMVPE o Hubert | variable | HuggingFace, voice-models.com |
+| Taka.ONEOKROCK.LuxuryDiseaseEra | RVC v2 | 400 | RMVPE | Apache 2.0 | Hugging Face |
+| Taka.ONEOKROCK.35xxxvEra (mismo autor) | RVC v2 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Modelos RVC de otros cantantes (comunidad) | RVC v2 | variable | RMVPE o Hubert | variable | Hugging Face, voice-models.com |
 
 La comparativa se limita a otros modelos RVC de la comunidad, ya que no existen alternativas comerciales directas con la misma funcion. El modelo del mismo autor para la era 35xxxv (album de 2015) es la alternativa mas cercana, diferenciandose por la epoca vocal de Taka. Los modelos RVC de otros artistas siguen la misma arquitectura y flujo de trabajo, por lo que la eleccion depende del timbre objetivo deseado.
 
@@ -74,7 +74,7 @@ La comparativa se limita a otros modelos RVC de la comunidad, ya que no existen 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imam2023/Taka.ONEOKROCK.LuxuryDiseaseEra
+- Repositorio Hugging Face: https://huggingface.co/imam2023/Taka.ONEOKROCK.LuxuryDiseaseEra
 - Perfil del autor: https://huggingface.co/imam2023
 - Modelo del mismo autor (era 35xxxv): https://huggingface.co/imam2023/Taka.ONEOKROCK.35xxxvEra
 - Repositorio RVC del autor: https://huggingface.co/imam2023/RVC_AI_Model

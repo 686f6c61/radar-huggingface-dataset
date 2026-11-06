@@ -94,7 +94,7 @@ PhiLLM-School destaca por su coste de inferencia mínimo (264,4 M activos) y lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HeckinWihOmar/PhiLLM-School
+- Modelo en Hugging Face: https://huggingface.co/HeckinWihOmar/PhiLLM-School
 - Model card técnica: `MODEL_CARD.md` en el repositorio (arquitectura, evaluación, limitaciones)
 - Data card: `DATA_CARD.md` en el repositorio (procedencia de los datos)
 - Notificaciones de terceros: `THIRD_PARTY_NOTICES.md` en el repositorio

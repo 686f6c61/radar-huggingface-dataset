@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SAM-AI es un modelo de generación de texto publicado en HuggingFace por el usuario Samrish2009 y atribuido en su model card a la organización Parallax (fundador: Samrish B). La model card lo presenta como una "arquitectura frontera de razonamiento de pesos abiertos" que combina varias técnicas de laboratorios de referencia: Multi-Head Latent Attention (MLA), Sliding Window Attention (SWA), Multi-Token Prediction (MTP), routing MoE sin pérdida auxiliar, SwiGLU y Pre-RMSNorm, con entrenamiento declarado mediante GRPO y test-time compute.
+SAM-AI es un modelo de generación de texto publicado en Hugging Face por el usuario Samrish2009 y atribuido en su model card a la organización Parallax (fundador: Samrish B). La model card lo presenta como una "arquitectura frontera de razonamiento de pesos abiertos" que combina varias técnicas de laboratorios de referencia: Multi-Head Latent Attention (MLA), Sliding Window Attention (SWA), Multi-Token Prediction (MTP), routing MoE sin pérdida auxiliar, SwiGLU y Pre-RMSNorm, con entrenamiento declarado mediante GRPO y test-time compute.
 
 Existe una discrepancia sustancial entre el posicionamiento de la model card y los artefactos reales. Los metadatos de safetensors indican 51.846.400 parámetros totales y un repositorio de 0,2 GB, lo que corresponde a un modelo pequeño (del orden de 50 millones de parámetros), no a un modelo frontera tipo DeepSeek-V3. Los tags del repositorio (mla, moe, mtp, deepseek-v3, grpo, custom_code) describen componentes arquitectónicos, pero no hay verificación pública independiente de que el checkpoint los implemente a la escala declarada.
 
@@ -68,7 +68,7 @@ La comparación se establece con modelos de tamaño real equivalente (decenas o 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SAM-AI | 51,85 M | no disponible | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
+| SAM-AI | 51,85 M | no disponible | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
 | Pythia-70M | 70 M | 2.048 tokens | Apache 2.0 | Ampliamente desplegado, sin código remoto |
 | GPT-2 (small) | 124 M | 1.024 tokens | MIT (modificada) | Estándar en `transformers`, sin código remoto |
 | SmolLM2-135M | 135 M | 8.192 tokens | Apache 2.0 | Checkpoints y variantes GGUF publicados |
@@ -91,6 +91,6 @@ Frente a estas alternativas, SAM-AI parte con desventajas claras de madurez: 0 d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samrish2009/SAM-AI
+- Modelo en Hugging Face: https://huggingface.co/Samrish2009/SAM-AI
 - Repositorio GitHub citado en la model card: https://github.com/samrishtt/SAM-AI
 - No se han encontrado enlaces relevantes en la búsqueda web: los resultados devueltos corresponden a documentos no relacionados con el modelo (páginas de manga y contenido ajeno al ámbito técnico) y se descartan.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.1-3B-W8A8-INT8 es una cuantización de 8 bits (W8A8) del modelo Nanbeige4.1-3B, realizada por Sohailhosseini y publicada en HuggingFace. El modelo base, desarrollado por el equipo Nanbeige, es un modelo de lenguaje denso de 3,9 mil millones de parámetros construido sobre Nanbeige4-3B-Base, con post-entrenamiento mediante SFT y RL. Está diseñado para razonamiento, alineación y uso de herramientas, y destaca frente a otros modelos pequeños en tareas que requieren tool calling y razonamiento multi-paso.
+Nanbeige4.1-3B-W8A8-INT8 es una cuantización de 8 bits (W8A8) del modelo Nanbeige4.1-3B, realizada por Sohailhosseini y publicada en Hugging Face. El modelo base, desarrollado por el equipo Nanbeige, es un modelo de lenguaje denso de 3,9 mil millones de parámetros construido sobre Nanbeige4-3B-Base, con post-entrenamiento mediante SFT y RL. Está diseñado para razonamiento, alineación y uso de herramientas, y destaca frente a otros modelos pequeños en tareas que requieren tool calling y razonamiento multi-paso.
 
 Esta versión cuantizada reduce el peso de 7,9 GB a 4,8 GB (compresión de 1,64x) y está pensada para GPUs Ampere (A100, A40, A6000) que carecen de un camino rápido para FP8. El formato es compressed-tensors, compatible con vLLM, y conserva la licencia Apache 2.0 del modelo original. El contexto máximo es de 32.768 tokens.
 
@@ -10,7 +10,7 @@ Esta versión cuantizada reduce el peso de 7,9 GB a 4,8 GB (compresión de 1,64x
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Llama, según tags de HuggingFace) |
+| Arquitectura | Transformer denso (familia Llama, según tags de Hugging Face) |
 | Parametros totales | 3.933.990.120 (3,9B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 32.768 tokens |
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks específicos para la versión cuant
 
 | Modelo | Parametros | Contexto | Licencia | Cuantizacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.1-3B-W8A8-INT8 | 3,9B | 32K | Apache 2.0 | W8A8-INT8 | HuggingFace |
-| Qwen2.5-3B | 3,1B | 32K | Apache 2.0 | FP8, INT8, GGUF | HuggingFace |
-| Llama-3.2-3B | 3,2B | 128K | Llama 3.2 | FP8, INT8, GGUF | HuggingFace |
+| Nanbeige4.1-3B-W8A8-INT8 | 3,9B | 32K | Apache 2.0 | W8A8-INT8 | Hugging Face |
+| Qwen2.5-3B | 3,1B | 32K | Apache 2.0 | FP8, INT8, GGUF | Hugging Face |
+| Llama-3.2-3B | 3,2B | 128K | Llama 3.2 | FP8, INT8, GGUF | Hugging Face |
 
 No se han publicado comparativas de rendimiento entre estas versiones cuantizadas en la información disponible. La ventaja de Nanbeige4.1-3B es su entrenamiento específico en razonamiento y tool calling, mientras que Llama-3.2-3B ofrece un contexto de 128K y ecosistema más amplio.
 

@@ -25,14 +25,14 @@ Otros datos del repositorio: autor mradermacher (cuantizador, no desarrollador d
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre la arquitectura del modelo base en la informacion proporcionada. El repositorio de cuantizacion no incluye model card explicativa, ficha tecnica ni referencia a un paper: unicamente los metadatos de generacion de las cuantizaciones. El campo convert_type aparece como "hf", lo que indica que el proceso de conversion partio de pesos en formato HuggingFace antes de generar los GGUF, pero no aporta detalles sobre la topologia de la red, el numero de capas, las dimensiones de las proyecciones de atencion o el tipo de tokenizador.
+No hay informacion sobre la arquitectura del modelo base en la informacion proporcionada. El repositorio de cuantizacion no incluye model card explicativa, ficha tecnica ni referencia a un paper: unicamente los metadatos de generacion de las cuantizaciones. El campo convert_type aparece como "hf", lo que indica que el proceso de conversion partio de pesos en formato Hugging Face antes de generar los GGUF, pero no aporta detalles sobre la topologia de la red, el numero de capas, las dimensiones de las proyecciones de atencion o el tipo de tokenizador.
 
 Tampoco se documentan los datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF, DPO u otra tecnica de alineamiento. La etiqueta "conversational" sugiere un ajuste orientado a dialogo, pero no se especifica su naturaleza ni su alcance. En cuanto a innovaciones tecnicas, la unica reseñable del repositorio es el uso de calibracion imatrix para las cuantizaciones de tipo I-quant, con la etiqueta "nicoboss" en la cabecera de la model card, que apunta a un dataset de calibracion de ese autor. No hay informacion sobre decodificacion especulativa, atencion lineal u otras optimizaciones.
 
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta "conversational" del repositorio indica que el modelo base esta orientado a dialogos de tipo asistente.
-- Compatibilidad con despliegue como endpoint: la etiqueta "endpoints_compatible" indica que el repositorio esta preparado para servirse a traves de HuggingFace Inference Endpoints.
+- Compatibilidad con despliegue como endpoint: la etiqueta "endpoints_compatible" indica que el repositorio esta preparado para servirse a traves de Hugging Face Inference Endpoints.
 - Inferencia local en hardware limitado: el amplio catalogo de cuantizaciones, desde IQ1_S hasta Q6_K, permite ejecutar el modelo en CPU y en GPUs de gama baja.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -73,7 +73,7 @@ Los tamanos de archivo que se indican a continuacion son estimaciones calculadas
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en todas las cuantizaciones, por ejemplo RTX 3050, RTX 4060, GTX 1650, T4 o inferiores. Para Q6_K con contexto largo se recomienda 6-8 GB. Las GPU de datacenter (A100, H100) no aportan ventaja a este tamano de modelo y quedarian infrautilizadas.
 - Viabilidad en GPU de consumo: si, el modelo cabe en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en iGPUs con memoria unificada.
 - Ejecucion en CPU: viable en todas las cuantizaciones, especialmente IQ1 e IQ2, en equipos con 4-8 GB de RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui, jan y servidores compatibles con la API de OpenAI mediante llama-server. El repositorio esta etiquetado como compatible con HuggingFace Inference Endpoints. vLLM no consume GGUF directamente (requiere convertir o partir del modelo original en safetensors) y TGI no soporta este formato.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, text-generation-webui, jan y servidores compatibles con la API de OpenAI mediante llama-server. El repositorio esta etiquetado como compatible con Hugging Face Inference Endpoints. vLLM no consume GGUF directamente (requiere convertir o partir del modelo original en safetensors) y TGI no soporta este formato.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

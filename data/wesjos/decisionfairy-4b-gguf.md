@@ -88,7 +88,7 @@ La comparacion con modelos generativos no es directa: DecisionFairy no produce t
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/wesjos/DecisionFairy-4B-GGUF
+- Hugging Face (GGUF): https://huggingface.co/wesjos/DecisionFairy-4B-GGUF
 - Modelo base (safetensors): https://huggingface.co/wesjos/DecisionFairy-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Dataset de entrenamiento: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3

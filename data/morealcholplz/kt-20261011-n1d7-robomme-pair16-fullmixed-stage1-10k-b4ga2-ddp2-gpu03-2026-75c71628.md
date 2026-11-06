@@ -82,7 +82,7 @@ No disponible. No se conocen las características técnicas del artefacto, por l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu03-2026-75c71628
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu03-2026-75c71628
 - Benchmark RoboMME: https://robomme.github.io/index.html
 - Fichero de manifiesto de la copia: `BACKUP_MANIFEST.json`, dentro del propio repositorio
 - Ruta original documentada por el autor: `/home/work/mntvol/robottt/n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu03-20260905`

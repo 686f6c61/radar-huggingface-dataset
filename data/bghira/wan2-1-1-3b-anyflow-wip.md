@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto/Resolución | Pasos de inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bghira/wan2.1-1.3b-anyflow-wip (LoRA) | Adaptador sobre 1.3B | 832x480, 81 frames | 4 (AnyFlow) | Apache 2.0 | HuggingFace |
-| Wan-AI/Wan2.1-T2V-1.3B (base) | 1.3B | 832x480, hasta 81 frames | 50+ (típico) | Apache 2.0 | HuggingFace |
-| ModelScope T2V (1.3B) | 1.3B | 256x256, 16 frames | 50 | Apache 2.0 | HuggingFace |
+| bghira/wan2.1-1.3b-anyflow-wip (LoRA) | Adaptador sobre 1.3B | 832x480, 81 frames | 4 (AnyFlow) | Apache 2.0 | Hugging Face |
+| Wan-AI/Wan2.1-T2V-1.3B (base) | 1.3B | 832x480, hasta 81 frames | 50+ (típico) | Apache 2.0 | Hugging Face |
+| ModelScope T2V (1.3B) | 1.3B | 256x256, 16 frames | 50 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar, pero no se dispone de datos de rendimiento cuantitativos para establecer una comparación objetiva. El principal diferenciador de este adaptador es su capacidad de generar video en 4 pasos, lo que lo hace significativamente más rápido que el modelo base y que alternativas como ModelScope T2V.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fynnsu/qwen38-27b-dspark-regenerated-lr1e3` es un checkpoint de pesos en formato safetensors publicado por el usuario fynnsu en HuggingFace. A pesar del nombre del repositorio, que sugiere un modelo de 27.000 millones de parametros, el recuento real extraido de los archivos safetensors es de 1.909.788.417 parametros, es decir, aproximadamente 1,91 mil millones. El repositorio ocupa 3,8 GB, un tamano coherente con pesos en bf16/fp16 para esa cantidad de parametros.
+`fynnsu/qwen38-27b-dspark-regenerated-lr1e3` es un checkpoint de pesos en formato safetensors publicado por el usuario fynnsu en Hugging Face. A pesar del nombre del repositorio, que sugiere un modelo de 27.000 millones de parametros, el recuento real extraido de los archivos safetensors es de 1.909.788.417 parametros, es decir, aproximadamente 1,91 mil millones. El repositorio ocupa 3,8 GB, un tamano coherente con pesos en bf16/fp16 para esa cantidad de parametros.
 
 El repositorio no incluye model card, licencia, idiomas declarados ni pipeline de inferencia. La unica documentacion disponible son las etiquetas: `safetensors`, `custom_code` y `region:us`. La presencia de `custom_code` indica que el modelo requiere ejecutar codigo Python propio del repositorio (`trust_remote_code=True`), lo que implica que su arquitectura no es una de las implementadas de serie en librerias como transformers.
 
@@ -74,11 +74,11 @@ El modelo no publica licencia, contexto ni benchmarks, por lo que la comparacion
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fynnsu/qwen38-27b-dspark-regenerated-lr1e3 | 1,91 mil millones | no disponible | no disponible | HuggingFace, requiere `trust_remote_code` |
-| Qwen2.5-1.5B | 1,54 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace, versiones GGUF y AWQ ampliamente disponibles |
-| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, con restricciones de uso |
-| Gemma 2 2B | 2,6 mil millones | 8.192 tokens | Terminos de uso de Gemma | HuggingFace, con politica de uso aceptable |
-| SmolLM2 1.7B | 1,7 mil millones | 8.192 tokens | Apache 2.0 | HuggingFace, con versiones GGUF |
+| fynnsu/qwen38-27b-dspark-regenerated-lr1e3 | 1,91 mil millones | no disponible | no disponible | Hugging Face, requiere `trust_remote_code` |
+| Qwen2.5-1.5B | 1,54 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face, versiones GGUF y AWQ ampliamente disponibles |
+| Llama 3.2 1B | 1,24 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, con restricciones de uso |
+| Gemma 2 2B | 2,6 mil millones | 8.192 tokens | Terminos de uso de Gemma | Hugging Face, con politica de uso aceptable |
+| SmolLM2 1.7B | 1,7 mil millones | 8.192 tokens | Apache 2.0 | Hugging Face, con versiones GGUF |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ El modelo no publica licencia, contexto ni benchmarks, por lo que la comparacion
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/fynnsu/qwen38-27b-dspark-regenerated-lr1e3
-- Repositorio del autor en HuggingFace: https://huggingface.co/fynnsu
+- Pagina del modelo en Hugging Face: https://huggingface.co/fynnsu/qwen38-27b-dspark-regenerated-lr1e3
+- Repositorio del autor en Hugging Face: https://huggingface.co/fynnsu
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo (enlaces generales a TikTok y a su panel de vendedores). No se ha encontrado informacion adicional relevante sobre este checkpoint.

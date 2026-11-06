@@ -89,8 +89,8 @@ En los resultados de busqueda web no se han encontrado modelos comparables de la
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Devseis/endpoint-auditor-0.5b | 494.032.768 | no disponible (base: 32.768 tokens) | Apache-2.0 | Ajuste fino LoRA para hallazgos de auditoria de endpoints | HuggingFace, builds MLC para navegador y movil |
-| Qwen/Qwen2.5-0.5B-Instruct (modelo base) | 0,5 B | 32.768 tokens (segun el modelo base) | Apache-2.0 | Instruct generalista, sin especializacion en compliance | HuggingFace, ampliamente desplegado |
+| Devseis/endpoint-auditor-0.5b | 494.032.768 | no disponible (base: 32.768 tokens) | Apache-2.0 | Ajuste fino LoRA para hallazgos de auditoria de endpoints | Hugging Face, builds MLC para navegador y movil |
+| Qwen/Qwen2.5-0.5B-Instruct (modelo base) | 0,5 B | 32.768 tokens (segun el modelo base) | Apache-2.0 | Instruct generalista, sin especializacion en compliance | Hugging Face, ampliamente desplegado |
 | Alternativas generalistas de ~0,5 B a 2 B | no disponible | no disponible | no disponible | Proposito general | no disponible |
 
 La ventaja diferencial del modelo de Devseis no es el rendimiento bruto, sino el formato de salida JSON anclado a evidencia y su ejecucion on-device. Frente al modelo base sin ajustar, la mejora reportada en JSON valido y fidelidad pasa del 0% al 100% en el conjunto de prueba del autor.
@@ -111,7 +111,7 @@ La ventaja diferencial del modelo de Devseis no es el rendimiento bruto, sino el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devseis/endpoint-auditor-0.5b
+- Modelo en Hugging Face: https://huggingface.co/Devseis/endpoint-auditor-0.5b
 - Dataset de entrenamiento: https://huggingface.co/datasets/Devseis/endpoint-auditor-synthetic
 - Demo / aplicacion en Spaces: https://huggingface.co/spaces/Devseis/endpoint-auditor
 - Documentacion interna del modelo: https://huggingface.co/spaces/Devseis/endpoint-auditor/blob/main/docs/MODEL_LLM.md
@@ -120,4 +120,4 @@ La ventaja diferencial del modelo de Devseis no es el rendimiento bruto, sino el
 - Build MLC alternativo (q4f32_1): https://huggingface.co/Devseis/endpoint-auditor-0.5b-q4f32_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los de HuggingFace listados arriba. No se han encontrado papers, blogs ni repositorios externos asociados.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los de Hugging Face listados arriba. No se han encontrado papers, blogs ni repositorios externos asociados.

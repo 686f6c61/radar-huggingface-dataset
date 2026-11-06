@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM3-GSM8K-full-worked-prompt-match-lora-v1 es un ajuste fino supervisado (SFT) del modelo HuggingFaceTB/SmolLM3-3B, publicado por el usuario onethreedlee en HuggingFace. El nombre del repositorio indica que el entrenamiento se ha orientado a la resolucion de problemas de matematicas de primaria al estilo GSM8K, con soluciones completas desarrolladas paso a paso ("full worked") y un formato de prompt que coincide con el de evaluacion. El resultado es un adaptador derivado de un modelo base de 3.000 millones de parametros, no un modelo entrenado desde cero.
+SmolLM3-GSM8K-full-worked-prompt-match-lora-v1 es un ajuste fino supervisado (SFT) del modelo HuggingFaceTB/SmolLM3-3B, publicado por el usuario onethreedlee en Hugging Face. El nombre del repositorio indica que el entrenamiento se ha orientado a la resolucion de problemas de matematicas de primaria al estilo GSM8K, con soluciones completas desarrolladas paso a paso ("full worked") y un formato de prompt que coincide con el de evaluacion. El resultado es un adaptador derivado de un modelo base de 3.000 millones de parametros, no un modelo entrenado desde cero.
 
 El modelo base, SmolLM3-3B, es un transformer decoder-only de 3B parametros desarrollado por HuggingFaceTB, con soporte de razonamiento en modo pensamiento y sin pensamiento, ventana de contexto larga y formacion en seis idiomas. Esto lo situa en la categoria de modelos pequenos que pueden ejecutarse en GPU de consumo, lo que convierte a este ajuste en un candidato razonable para experimentacion en razonamiento matematico con recursos limitados.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolLM3-GSM8K-full-worked-prompt-match-lora-v1 (este modelo) | 3B (adaptador LoRA sobre SmolLM3-3B) | No disponible | No disponible (placeholder en la model card) | Publicado en HuggingFace, sin descargas registradas |
-| HuggingFaceTB/SmolLM3-3B (modelo base) | 3B | 64k nativos, hasta 128k con YaRN segun documentacion publica | Apache-2.0 | Publicado en HuggingFace |
-| Qwen2.5-3B | 3,09B | 32k, ampliable con YaRN segun documentacion publica | Apache-2.0 para la mayoria de variantes | Publicado en HuggingFace |
-| Llama-3.2-3B | 3,2B | 128k segun documentacion publica | Licencia comunitaria de Llama 3.2 | Publicado en HuggingFace |
+| SmolLM3-GSM8K-full-worked-prompt-match-lora-v1 (este modelo) | 3B (adaptador LoRA sobre SmolLM3-3B) | No disponible | No disponible (placeholder en la model card) | Publicado en Hugging Face, sin descargas registradas |
+| HuggingFaceTB/SmolLM3-3B (modelo base) | 3B | 64k nativos, hasta 128k con YaRN segun documentacion publica | Apache-2.0 | Publicado en Hugging Face |
+| Qwen2.5-3B | 3,09B | 32k, ampliable con YaRN segun documentacion publica | Apache-2.0 para la mayoria de variantes | Publicado en Hugging Face |
+| Llama-3.2-3B | 3,2B | 128k segun documentacion publica | Licencia comunitaria de Llama 3.2 | Publicado en Hugging Face |
 
 La comparacion de rendimiento no esta disponible: este ajuste no publica metricas, por lo que no puede situarse frente a las alternativas en GSM8K ni en evaluaciones generales. A efectos practicos, la diferencia relevante es que los tres modelos comparados cuentan con licencia explicita y evaluaciones publicas, mientras que este repositorio no ofrece ninguna de las dos cosas.
 
@@ -86,7 +86,7 @@ La comparacion de rendimiento no esta disponible: este ajuste no publica metrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onethreedlee/SmolLM3-GSM8K-full-worked-prompt-match-lora-v1
+- Modelo en Hugging Face: https://huggingface.co/onethreedlee/SmolLM3-GSM8K-full-worked-prompt-match-lora-v1
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de PEFT: https://huggingface.co/docs/peft

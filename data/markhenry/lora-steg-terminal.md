@@ -82,6 +82,6 @@ Otros adaptadores LoRA de investigacion en interpretabilidad existen, pero no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markhenry/lora-steg-terminal
+- Modelo en Hugging Face: https://huggingface.co/markhenry/lora-steg-terminal
 - Codigo y datos: https://github.com/mark-henry/lora-steg
 - Articulo tecnico (writeup): https://mark-henry.me/posts/2026/hidden-bit-probe/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CORE-intervention-checkpoints es un repositorio de artefactos publicado por el usuario sanuyah en HuggingFace. No se trata de un modelo entrenado con pesos listos para inferencia generica, sino de una coleccion de checkpoints de modelo y de operador que sirven de soporte a los experimentos de intervencion denominados CORE. El repositorio se organiza por familia de modelo, experimento, metodo y semilla, de modo que cada archivo queda identificado por la ruta publica en la que se encuentra.
+CORE-intervention-checkpoints es un repositorio de artefactos publicado por el usuario sanuyah en Hugging Face. No se trata de un modelo entrenado con pesos listos para inferencia generica, sino de una coleccion de checkpoints de modelo y de operador que sirven de soporte a los experimentos de intervencion denominados CORE. El repositorio se organiza por familia de modelo, experimento, metodo y semilla, de modo que cada archivo queda identificado por la ruta publica en la que se encuentra.
 
 El peso total del repositorio es de 108,0 GB, lo que refleja la acumulacion de multiples checkpoints en lugar de un unico conjunto de pesos. La model card no especifica arquitectura, numero de parametros, longitud de contexto ni idiomas; unicamente declara la licencia MIT y las etiquetas tematicas: razonamiento causal (causal-reasoning), edicion de modelos (model-editing), intervencion (intervention) y reproducibilidad (reproducibility).
 
-Su relevancia es por tanto acotada al ambito de la investigacion en interpretabilidad y edicion de modelos. El repositorio esta pensado para que terceros reproduzcan los experimentos descargando los checkpoints correspondientes mediante Git LFS o el cliente de HuggingFace Hub. No se publican nombres de host de computo, rutas privadas de proyecto, nombres de archivos internos, registros de transferencia ni inventarios de maquinas.
+Su relevancia es por tanto acotada al ambito de la investigacion en interpretabilidad y edicion de modelos. El repositorio esta pensado para que terceros reproduzcan los experimentos descargando los checkpoints correspondientes mediante Git LFS o el cliente de Hugging Face Hub. No se publican nombres de host de computo, rutas privadas de proyecto, nombres de archivos internos, registros de transferencia ni inventarios de maquinas.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Su relevancia es por tanto acotada al ambito de la investigacion en interpretabi
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible (se descargan archivos por rutas publicas con Git LFS o el cliente de HuggingFace Hub) |
+| Formato de pesos | no disponible (se descargan archivos por rutas publicas con Git LFS o el cliente de Hugging Face Hub) |
 
 Datos adicionales del repositorio:
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - No se indica si algun checkpoint cabe en una GPU de consumo.
 - No se documentan opciones de despliegue como vLLM, llama.cpp, Ollama o TGI.
 - No se proporcionan datos de latencia ni de throughput.
-- La descarga se realiza con Git LFS o con el cliente de HuggingFace Hub, segun la propia model card.
+- La descarga se realiza con Git LFS o con el cliente de Hugging Face Hub, segun la propia model card.
 
 ## Comparativa con modelos similares
 
@@ -93,5 +93,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sanuyah/CORE-intervention-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/sanuyah/CORE-intervention-checkpoints
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demostraciones.

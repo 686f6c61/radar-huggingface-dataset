@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shmits/test es un repositorio de modelo alojado en HuggingFace por el usuario Shmits. La model card publicada es prácticamente vacía: únicamente declara la licencia MIT, sin descripción, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,3 GB, un tamaño que sugiere pesos de un modelo pequeño (del orden de cientos de millones de parámetros en precisión reducida, o un conjunto de pesos parcial), pero no hay información que permita confirmarlo.
+Shmits/test es un repositorio de modelo alojado en Hugging Face por el usuario Shmits. La model card publicada es prácticamente vacía: únicamente declara la licencia MIT, sin descripción, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,3 GB, un tamaño que sugiere pesos de un modelo pequeño (del orden de cientos de millones de parámetros en precisión reducida, o un conjunto de pesos parcial), pero no hay información que permita confirmarlo.
 
 No se dispone de pipeline declarado, ni de idiomas soportados, ni de etiquetas que indiquen la tarea (text-generation, feature-extraction, etc.). El nombre "test" y la ausencia de documentación apuntan a un repositorio de pruebas o a un artefacto experimental más que a un modelo destinado a producción. Creado el 25 de octubre de 2026 y actualizado el 2 de noviembre de 2026, no registra descargas ni "likes" en el momento de redactar esta ficha.
 
@@ -40,12 +40,12 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 
 No es posible recomendar casos de uso concretos sin información sobre las capacidades del modelo. A continuación se indican únicamente escenarios genéricos que podrían evaluarse tras inspeccionar el repositorio, siempre con la advertencia de que su idoneidad no está verificada:
 
-- Evaluación interna de artefactos experimentales: el repositorio podría usarse como banco de pruebas para validar pipelines de carga de modelos en HuggingFace antes de desplegar modelos reales.
+- Evaluación interna de artefactos experimentales: el repositorio podría usarse como banco de pruebas para validar pipelines de carga de modelos en Hugging Face antes de desplegar modelos reales.
 - Pruebas de integración en CI: un repo de 0,3 GB es manejable para tests automatizados de descarga, carga y serialización de pesos en entornos de integración continua.
 - Verificación de licencia y cumplimiento: al declarar licencia MIT, podría servir como ejemplo de repositorio con permisos amplios para uso comercial, aunque sin capacidades documentadas no hay producto que explotar.
 - Docencia y formación: podría utilizarse como caso práctico para mostrar cómo se estructura (o no) una model card y qué metadatos mínimos debería incluir un modelo publicable.
 - Reproducción de experimentos: si los pesos corresponden a un checkpoint intermedio, podrían servir para reproducir resultados de un artículo o entrada de blog del autor.
-- Auditoría de seguridad de la cadena de suministro: útil para probar herramientas de escaneo de artefactos de HuggingFace (formatos de pesos, posibles ficheros pickle, etc.).
+- Auditoría de seguridad de la cadena de suministro: útil para probar herramientas de escaneo de artefactos de Hugging Face (formatos de pesos, posibles ficheros pickle, etc.).
 
 En todos los casos, el uso en producción requeriría primero identificar el formato de pesos, la arquitectura y el tokenizador, y validar el comportamiento del modelo con evaluaciones propias.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable porque se desconoce la categorí
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shmits/test | no disponible | no disponible | MIT | HuggingFace (repo de 0,3 GB) |
+| Shmits/test | no disponible | no disponible | MIT | Hugging Face (repo de 0,3 GB) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No es posible establecer una comparativa fiable porque se desconoce la categorí
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shmits/test
+- Repositorio en Hugging Face: https://huggingface.co/Shmits/test
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

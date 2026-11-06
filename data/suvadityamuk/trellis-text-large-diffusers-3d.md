@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tarea | Parametros | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| suvadityamuk/TRELLIS-text-large-diffusers-3d | Texto a 3D | no disponible (~1.700 M estimados por tamano del repo) | 77 tokens (CLIP ViT-L/14) | MIT | HuggingFace, requiere fork de `diffusers` y `diffusers-3d` |
-| microsoft/TRELLIS-text-large | Texto a 3D | no disponible en la informacion proporcionada | 77 tokens (CLIP ViT-L/14) | MIT | HuggingFace, requiere el codigo original de TRELLIS |
-| microsoft/TRELLIS-image-large | Imagen a 3D | no disponible en la informacion proporcionada | no aplica (entrada de imagen) | MIT | HuggingFace; sus decodificadores son los que reutiliza esta conversion |
+| suvadityamuk/TRELLIS-text-large-diffusers-3d | Texto a 3D | no disponible (~1.700 M estimados por tamano del repo) | 77 tokens (CLIP ViT-L/14) | MIT | Hugging Face, requiere fork de `diffusers` y `diffusers-3d` |
+| microsoft/TRELLIS-text-large | Texto a 3D | no disponible en la informacion proporcionada | 77 tokens (CLIP ViT-L/14) | MIT | Hugging Face, requiere el codigo original de TRELLIS |
+| microsoft/TRELLIS-image-large | Imagen a 3D | no disponible en la informacion proporcionada | no aplica (entrada de imagen) | MIT | Hugging Face; sus decodificadores son los que reutiliza esta conversion |
 | Otros modelos texto-a-3D (Shap-E, Hunyuan3D-2 y similares) | Texto a 3D | no disponible | no disponible | no disponible | no disponibles en la informacion proporcionada |
 
 La diferencia comprobable entre las dos primeras filas es exclusivamente de empaquetado: los valores de los pesos son idénticos y la conversion anade la integracion con `diffusers`. La comparacion cuantitativa de rendimiento con alternativas de la misma categoria no puede realizarse con los datos disponibles.
@@ -92,7 +92,7 @@ La diferencia comprobable entre las dos primeras filas es exclusivamente de empa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suvadityamuk/TRELLIS-text-large-diffusers-3d
+- Modelo en Hugging Face: https://huggingface.co/suvadityamuk/TRELLIS-text-large-diffusers-3d
 - Modelo base: https://huggingface.co/microsoft/TRELLIS-text-large
 - Fork de diffusers usado por la conversion: https://github.com/suvadityamuk/diffusers
 - Paquete diffusers-3d (subdirectorio del fork): https://github.com/suvadityamuk/diffusers/tree/main/packages/diffusers-3d

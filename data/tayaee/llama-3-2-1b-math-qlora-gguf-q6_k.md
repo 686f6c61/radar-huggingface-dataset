@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tayaee/Llama-3.2-1B-math-qlora-gguf-q6_k` es un ajuste fino (fine-tune) del modelo Llama 3.2 1B orientado a tareas de matematicas, publicado por el usuario tayaee en HuggingFace. El nombre del repositorio indica la receta completa: un entrenamiento con QLoRA (LoRA sobre pesos cuantizados) sobre el modelo base Llama 3.2 1B, seguido de una conversion a formato GGUF con cuantizacion Q6_K para inferencia eficiente en CPU y GPU de gama baja. El repositorio ocupa 1,2 GB y contiene 1.498.486.816 parametros segun los metadatos de safetensors.
+`tayaee/Llama-3.2-1B-math-qlora-gguf-q6_k` es un ajuste fino (fine-tune) del modelo Llama 3.2 1B orientado a tareas de matematicas, publicado por el usuario tayaee en Hugging Face. El nombre del repositorio indica la receta completa: un entrenamiento con QLoRA (LoRA sobre pesos cuantizados) sobre el modelo base Llama 3.2 1B, seguido de una conversion a formato GGUF con cuantizacion Q6_K para inferencia eficiente en CPU y GPU de gama baja. El repositorio ocupa 1,2 GB y contiene 1.498.486.816 parametros segun los metadatos de safetensors.
 
 Se trata de un modelo pequeno (aproximadamente 1,5 mil millones de parametros) pensado para ejecutarse en hardware modesto: portatiles, mini-PC, Raspberry Pi de gama alta o instancias CPU en cloud. Su interes practico no esta en competir con modelos de razonamiento grandes, sino en ofrecer una alternativa ligera y autoalojable para tareas acotadas de aritmetica, resolucion de problemas escolares o generacion de contenido matematico, donde el coste por token y la privacidad importan mas que la precision en dominios abiertos.
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, el modelo de tayaee no aporta ventajas verificables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-qlora-gguf-q6_k
+- Modelo en Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-qlora-gguf-q6_k
 - Modelo base (referencia): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Modelo base instruct (referencia): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Implementacion de inferencia GGUF: https://github.com/ggerganov/llama.cpp

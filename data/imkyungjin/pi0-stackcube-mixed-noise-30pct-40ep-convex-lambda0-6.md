@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| π₀ (este checkpoint) | ~3,5 mil millones | no disponible | apache-2.0 | HuggingFace (LeRobot) | Ajustado para apilado de cubos con datos ruidosos al 30 %, 40 épocas, λ = 0,6 |
-| π₀ base (Physical Intelligence) | ~3,3 mil millones (según información pública) | no disponible | apache-2.0 (OpenPI) | OpenPI / HuggingFace | Política generalista multi-robot; este checkpoint deriva de él |
-| OpenVLA | 7 mil millones (según información pública) | no disponible | apache-2.0 | HuggingFace | VLA basado en Llama-2; comparable en tarea, mayor tamaño |
-| Octo | decenas de millones (variantes pequeña/base, según información pública) | no disponible | apache-2.0 | HuggingFace / GitHub | Política transformer con difusión; mucho más ligero, no basado en VLM grande |
+| π₀ (este checkpoint) | ~3,5 mil millones | no disponible | apache-2.0 | Hugging Face (LeRobot) | Ajustado para apilado de cubos con datos ruidosos al 30 %, 40 épocas, λ = 0,6 |
+| π₀ base (Physical Intelligence) | ~3,3 mil millones (según información pública) | no disponible | apache-2.0 (OpenPI) | OpenPI / Hugging Face | Política generalista multi-robot; este checkpoint deriva de él |
+| OpenVLA | 7 mil millones (según información pública) | no disponible | apache-2.0 | Hugging Face | VLA basado en Llama-2; comparable en tarea, mayor tamaño |
+| Octo | decenas de millones (variantes pequeña/base, según información pública) | no disponible | apache-2.0 | Hugging Face / GitHub | Política transformer con difusión; mucho más ligero, no basado en VLM grande |
 
 La comparación cuantitativa de rendimiento no está disponible porque ninguna de las fuentes proporcionadas incluye métricas de tasas de éxito ni benchmarks de manipulación. Las cifras de parámetros y licencias de OpenVLA y Octo provienen de información pública general y deben verificarse en sus repositorios.
 
@@ -79,10 +79,10 @@ La comparación cuantitativa de rendimiento no está disponible porque ninguna d
 - Sin soporte documentado de cuantización: no se ofrecen pesos GGUF ni recetas de int8/int4, lo que limita el despliegue en hardware modesto.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0.6
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-30pct-40ep-convex-lambda0.6
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/stack_cube_mixed_noise_30pct_40ep
 - Blog de π₀ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
-- LeRobot (HuggingFace): https://github.com/huggingface/lerobot
+- LeRobot (Hugging Face): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas en LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dkim1990/cnn-transformer-experiment` es una implementacion experimental de una arquitectura hibrida CNN-Transformer orientada a tareas de *matching* (emparejamiento de pares de entradas, tipicamente texto o secuencias). Lo publica el usuario dkim1990 en HuggingFace y se distribuye como un punto de partida reproducible, no como un modelo entrenado. El repositorio incluye el codigo Python de definicion del modelo y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es unicamente un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*).
+El modelo `dkim1990/cnn-transformer-experiment` es una implementacion experimental de una arquitectura hibrida CNN-Transformer orientada a tareas de *matching* (emparejamiento de pares de entradas, tipicamente texto o secuencias). Lo publica el usuario dkim1990 en Hugging Face y se distribuye como un punto de partida reproducible, no como un modelo entrenado. El repositorio incluye el codigo Python de definicion del modelo y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es unicamente un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*).
 
 El dato mas relevante para evaluarlo es su tamano: 16.576 parametros totales segun el fichero safetensors. Se trata, por tanto, de una implementacion de escala minima, pensada para validar que el grafo de computacion se construye y ejecuta correctamente, no para obtener resultados competitivos en ninguna tarea. La model card es explicita al respecto: no se reclama ninguna puntuacion de benchmark, el checkpoint no ha sido entrenado ni auditado, y los valores de la receta de experimento (optimizador LAMB con schedule exponencial) son valores de partida del script, no evidencia de un entrenamiento completado.
 
@@ -21,7 +21,7 @@ Su relevancia actual es la de un artefacto de investigacion reutilizable: sirve 
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (checkpoint de inicializacion); incluye `config.json` y `training_args.json` |
 | Escala declarada | small |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tarea declarada | matching (emparejamiento) |
 | Optimizador de la receta por defecto | LAMB con schedule exponencial |
 | Tamano del repositorio | 0,0 GB |
@@ -85,9 +85,9 @@ No disponible. Se trata de una implementacion experimental con licencia Apache 2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkim1990/cnn-transformer-experiment
+- Modelo en Hugging Face: https://huggingface.co/dkim1990/cnn-transformer-experiment
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo adicional: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace: `predict.py`, `config.json`, `training_args.json`)
+- Repositorio de codigo adicional: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face: `predict.py`, `config.json`, `training_args.json`)
 - Demo: no disponible
 - Resultados de busqueda web relevantes: no disponible (la busqueda no devolvio ninguna fuente relacionada con el modelo)

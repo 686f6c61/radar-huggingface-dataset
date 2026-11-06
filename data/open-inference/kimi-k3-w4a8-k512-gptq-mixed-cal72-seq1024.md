@@ -34,7 +34,7 @@ El metodo empleado es GPTQ con Hessiano completo: amortiguacion inicial del 1 %,
 
 ## Capacidades
 
-- Extraccion de caracteristicas: el pipeline declarado en HuggingFace es `feature-extraction`, no `text-generation`.
+- Extraccion de caracteristicas: el pipeline declarado en Hugging Face es `feature-extraction`, no `text-generation`.
 - Generacion de texto: no confirmada en la informacion disponible; la model card indica que la generacion coherente es un requisito de evaluacion separado y no cualificado.
 - Procesamiento de vision: el modelo fuente incorpora una torre de vision nativa; la calibracion incluye imagenes y fotogramas de video.
 - Procesamiento de video: los videos se representaron como fotogramas cronologicos durante la calibracion; el procesador HF publicado solo acepta imagenes y la cualificacion de video nativo con fusion temporal queda pendiente.
@@ -73,8 +73,8 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. U
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024` | 2,78 billones | no disponible | INT4 W4A8 en expertos enrutados, K512, escalas FP32 | `kimi-k3` (other) | HuggingFace, 0 descargas, 0 likes |
-| `moonshotai/Kimi-K3` (fuente) | no disponible en la informacion | no disponible | MXFP4 publicado | `kimi-k3` (other) | HuggingFace |
+| `open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024` | 2,78 billones | no disponible | INT4 W4A8 en expertos enrutados, K512, escalas FP32 | `kimi-k3` (other) | Hugging Face, 0 descargas, 0 likes |
+| `moonshotai/Kimi-K3` (fuente) | no disponible en la informacion | no disponible | MXFP4 publicado | `kimi-k3` (other) | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. U
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024
+- Hugging Face: https://huggingface.co/open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Fichero de licencia: LICENSE dentro del repositorio del modelo
 - Ficheros de receta y metricas: `calibration.json`, `recipe.json`, `metrics-*.json`, `heldout-quality.json` en el repositorio

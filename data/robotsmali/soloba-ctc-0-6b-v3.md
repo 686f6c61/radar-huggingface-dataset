@@ -75,7 +75,7 @@ No se dispone de información sobre modelos ASR comparables para bambara en la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v3
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloba-ctc-0.6b-v3
 - Dataset Kunkado: https://huggingface.co/datasets/RobotsMali/kunkado
 - Repositorio de fine-tuning: https://github.com/RobotsMali-AI/bambara-asr/
 - Normalizador de bambara: https://pypi.org/project/bambara-normalizer/

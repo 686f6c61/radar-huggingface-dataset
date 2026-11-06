@@ -96,9 +96,9 @@ Dentro de la familia, TS-moBERTo-150M es la alternativa directa con cobertura de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/typestrict/TS-Ettin-150M
+- Modelo en Hugging Face: https://huggingface.co/typestrict/TS-Ettin-150M
 - Modelo base: https://huggingface.co/cross-encoder/ettin-reranker-150m-v1
-- Familia TS en HuggingFace: https://huggingface.co/typestrict
+- Familia TS en Hugging Face: https://huggingface.co/typestrict
 - TS-moBERTo-150M: https://huggingface.co/typestrict/TS-moBERTo-150M
 - TS-Ettin-68M: https://huggingface.co/typestrict/TS-Ettin-68M
 - TS-Ettin-32M: https://huggingface.co/typestrict/TS-Ettin-32M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sadjava/smolvla-libero-goal-peft-t2-n5-s1000` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario sadjava en HuggingFace. Está diseñado para ser aplicado sobre un modelo base identificado como `smolvla_libero90_100k/checkpoints/last/pretrained_model`, lo que sugiere que se trata de un ajuste fino de un modelo de visión-lenguaje-acción (VLA) para tareas robóticas del benchmark LIBERO. El nombre del repositorio indica que el adaptador está orientado a la tarea "goal" de LIBERO, con parámetros de entrenamiento específicos (t2, n5, s1000), aunque no se proporcionan detalles adicionales.
+El modelo `sadjava/smolvla-libero-goal-peft-t2-n5-s1000` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario sadjava en Hugging Face. Está diseñado para ser aplicado sobre un modelo base identificado como `smolvla_libero90_100k/checkpoints/last/pretrained_model`, lo que sugiere que se trata de un ajuste fino de un modelo de visión-lenguaje-acción (VLA) para tareas robóticas del benchmark LIBERO. El nombre del repositorio indica que el adaptador está orientado a la tarea "goal" de LIBERO, con parámetros de entrenamiento específicos (t2, n5, s1000), aunque no se proporcionan detalles adicionales.
 
 La ficha es extremadamente escasa: no hay model card completa, no se especifican arquitectura, número de parámetros, licencia ni datos de entrenamiento. El único dato técnico adicional es la referencia al paper arXiv 1910.09700, que corresponde al artículo de T5 (Raffel et al., 2019), aunque no está claro si el modelo base se basa en esa arquitectura. La librería declarada es `peft`, lo que confirma que se trata de un adaptador de parámetros eficientes.
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa. El mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n5-s1000
+- Repositorio Hugging Face: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n5-s1000
 - Paper arXiv 1910.09700 (referenciado en los tags): https://arxiv.org/abs/1910.09700

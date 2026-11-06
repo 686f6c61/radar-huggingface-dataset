@@ -73,7 +73,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. Existen otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yu-Zhou-Wang/smolvla_so_101_red_foam_ball
+- Modelo en Hugging Face: https://huggingface.co/Yu-Zhou-Wang/smolvla_so_101_red_foam_ball
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset: https://huggingface.co/datasets/Jingyi-Z/sotac
 - Tokenizer: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct

@@ -63,7 +63,7 @@ La model card únicamente reporta que, en la evaluación de 8 horas del paper, A
 - GPU recomendadas: no se especifican modelos concretos; se indica únicamente "una GPU con memoria suficiente". Por el tamaño de los componentes, una GPU de 24 GB (RTX 4090, A5000) o superior es un punto de partida razonable, aunque no está confirmado por el autor.
 - No se documenta compatibilidad con llama.cpp, Ollama, vLLM ni TGI: la ejecución se realiza exclusivamente a través del repositorio de código, que controla el emulador mGBA, la política, el IDM y el bucle de auto-mejora.
 - Latencia y throughput: no disponibles.
-- Espacio en disco: el repositorio completo ocupa aproximadamente 100 GB (103,9 GB según HuggingFace).
+- Espacio en disco: el repositorio completo ocupa aproximadamente 100 GB (103,9 GB según Hugging Face).
 
 ## Comparativa con modelos similares
 
@@ -71,8 +71,8 @@ No se dispone de datos de benchmarks comparables publicados en la información p
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ASH (Toolbox-HQ) | 1.7B (LM) + SigLIP + IDM | No disponible | Agente auto-mejorable con memoria de momentos clave | MIT | Pesos y checkpoints en HuggingFace |
-| Qwen3-1.7B (base) | 1.7B | No disponible en esta ficha | Modelo de lenguaje general | Apache 2.0 | HuggingFace |
+| ASH (Toolbox-HQ) | 1.7B (LM) + SigLIP + IDM | No disponible | Agente auto-mejorable con memoria de momentos clave | MIT | Pesos y checkpoints en Hugging Face |
+| Qwen3-1.7B (base) | 1.7B | No disponible en esta ficha | Modelo de lenguaje general | Apache 2.0 | Hugging Face |
 | Políticas de RL clásicas para videojuegos | Variables | No aplica | Aprendizaje por refuerzo con recompensa diseñada | Variable | Variable |
 
 No se identifican en la información proporcionada otros agentes publicados con pesos abiertos que aprendan de vídeo de internet sin recompensas en dominios de videojuego comercial; la comparación cuantitativa de rendimiento queda por tanto no disponible.
@@ -91,7 +91,7 @@ No se identifican en la información proporcionada otros agentes publicados con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Toolbox-HQ/ASH
+- Hugging Face: https://huggingface.co/Toolbox-HQ/ASH
 - Paper (arXiv): https://arxiv.org/abs/2605.14211
 - Página del proyecto: https://toolbox-hq.github.io/ASH/
 - Repositorio de código: https://github.com/Toolbox-HQ/ASH

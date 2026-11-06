@@ -70,10 +70,10 @@ Evaluación sobre 10 respuestas completas en telugu con semillas 0 y 1, según l
 
 | Modelo | Parametros | Contexto | Rendimiento (referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indicF5-best (este modelo) | 337 M | no disponible | CER 1,84 % / WER 8,4 %; similitud 96,6 % | research-only | HuggingFace |
-| Base Navaratri 10ep (sw-voice/indicf5-swamiji-te-navaratri-10ep) | no disponible | no disponible | CER 1,24 % / WER 6,7 %; similitud 95,7 % | no disponible | HuggingFace |
+| indicF5-best (este modelo) | 337 M | no disponible | CER 1,84 % / WER 8,4 %; similitud 96,6 % | research-only | Hugging Face |
+| Base Navaratri 10ep (sw-voice/indicf5-swamiji-te-navaratri-10ep) | no disponible | no disponible | CER 1,24 % / WER 6,7 %; similitud 95,7 % | no disponible | Hugging Face |
 | best-vox (VoxCPM2) | no disponible | no disponible | CER 1,15 % / WER 7,6 %; similitud 96,6 % | no disponible | no disponible |
-| ai4bharat/IndicF5 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ai4bharat/IndicF5 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ Evaluación sobre 10 respuestas completas en telugu con semillas 0 y 1, según l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/indicF5-best
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/indicF5-best
 - Modelo base (Navaratri 10ep): https://huggingface.co/sw-voice/indicf5-swamiji-te-navaratri-10ep
 - Etapa A: https://huggingface.co/sw-voice/indicf5-swamiji-te-87h-1ep
 - Modelo base original: https://huggingface.co/ai4bharat/IndicF5

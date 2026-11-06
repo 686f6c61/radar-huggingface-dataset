@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p5.gnn` es un modelo publicado por IBM Research en HuggingFace bajo licencia Apache 2.0. Por su identificador se deduce que se trata de un modelo basado en redes neuronales de grafos (GNN) entrenado para predecir los angulos de parametrizacion del algoritmo cuantico QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut, con profundidad de circuito p=5. No es un modelo de lenguaje: el tag del repositorio es `onnx`, el tamano del repositorio es practicamente nulo (0.0 GB) y no declara pipeline, idiomas ni parametros en la informacion disponible.
+`ibm-research/qaoa_angles.max_cut.p5.gnn` es un modelo publicado por IBM Research en Hugging Face bajo licencia Apache 2.0. Por su identificador se deduce que se trata de un modelo basado en redes neuronales de grafos (GNN) entrenado para predecir los angulos de parametrizacion del algoritmo cuantico QAOA (Quantum Approximate Optimization Algorithm) aplicado al problema Max-Cut, con profundidad de circuito p=5. No es un modelo de lenguaje: el tag del repositorio es `onnx`, el tamano del repositorio es practicamente nulo (0.0 GB) y no declara pipeline, idiomas ni parametros en la informacion disponible.
 
 La propuesta encaja en la linea de investigacion de IBM sobre optimizacion cuantica asistida por aprendizaje automatico: en lugar de optimizar los angulos de QAOA con un bucle clasico costoso en cada instancia, una GNN aprende un mapeo desde la estructura del grafo de entrada a un conjunto inicial o directo de angulos, reduciendo el coste de optimizacion en hardware cuantico o simuladores.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ibm-research/qaoa_angles.max_cut.p5.gnn | GNN para angulos QAOA (Max-Cut, p=5) | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| ibm-research/qaoa_angles.max_cut.p5.gnn | GNN para angulos QAOA (Max-Cut, p=5) | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma familia o categoria en los datos proporcionados.
@@ -80,5 +80,5 @@ No se dispone de informacion sobre modelos comparables de la misma familia o cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.gnn
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.gnn
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

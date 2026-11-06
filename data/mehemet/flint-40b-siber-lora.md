@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Flint-40b-siber-lora es un adaptador LoRA (PEFT) publicado por el usuario mehemet en HuggingFace, orientado a la detección adversarial y la defensa frente a ataques de prompt injection y jailbreak. El repositorio se presenta como un adaptador sobre un modelo base de la familia Llama, con pesos en safetensors y también en formato GGUF, y una licencia Apache 2.0. El número real de parámetros almacenados en los safetensors es de 19.668.992, lo que corresponde a las matrices de bajo rango del adaptador, no al modelo completo.
+Flint-40b-siber-lora es un adaptador LoRA (PEFT) publicado por el usuario mehemet en Hugging Face, orientado a la detección adversarial y la defensa frente a ataques de prompt injection y jailbreak. El repositorio se presenta como un adaptador sobre un modelo base de la familia Llama, con pesos en safetensors y también en formato GGUF, y una licencia Apache 2.0. El número real de parámetros almacenados en los safetensors es de 19.668.992, lo que corresponde a las matrices de bajo rango del adaptador, no al modelo completo.
 
 El interés del proyecto reside en su enfoque: un adaptador especializado en seguridad conversacional y clasificación de entradas maliciosas, con etiquetas que mencionan detección adversarial, defensa contra jailbreak y soporte multilingüe limitado a inglés y turco. No se dispone de información sobre el modelo base exacto, la longitud de contexto, el volumen de datos de entrenamiento ni los resultados de evaluación, por lo que muchas especificaciones quedan como no disponibles.
 
-El acceso está restringido (gated), requiere aceptar condiciones en HuggingFace, y el repositorio tiene apenas 2 descargas y 0 likes en el momento de la consulta, lo que indica un proyecto muy incipiente y sin validación comunitaria. Cualquier uso en producción debería tratarse con cautela hasta disponer de documentación técnica y benchmarks independientes.
+El acceso está restringido (gated), requiere aceptar condiciones en Hugging Face, y el repositorio tiene apenas 2 descargas y 0 likes en el momento de la consulta, lo que indica un proyecto muy incipiente y sin validación comunitaria. Cualquier uso en producción debería tratarse con cautela hasta disponer de documentación técnica y benchmarks independientes.
 
 ## Especificaciones técnicas
 
@@ -77,11 +77,11 @@ La comparación directa no es posible con rigor: los clasificadores de seguridad
 - No hay documentación técnica: se desconoce el modelo base, el rango del LoRA, los datos de entrenamiento y las métricas de evaluación.
 - Riesgo elevado de alucinación y de falsos positivos/negativos en la detección, al no existir validación publicada.
 - Cobertura lingüística limitada a inglés y turco; otros idiomas no están soportados según los metadatos.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la auditoría externa.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la auditoría externa.
 - Licencia Apache 2.0 para el adaptador, pero las condiciones del modelo base subyacente pueden imponer restricciones adicionales al uso comercial; deben verificarse antes de desplegarlo.
 - Proyecto incipiente: 2 descargas y 0 likes, sin señales de validación por parte de la comunidad.
 - No apto para producción sin evaluación independiente en el dominio objetivo y sin pruebas de robustez frente a ataques adversariales reales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mehemet/flint-40b-siber-lora
+- Hugging Face: https://huggingface.co/mehemet/flint-40b-siber-lora

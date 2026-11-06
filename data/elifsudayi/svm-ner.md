@@ -107,6 +107,6 @@ Los datos de rendimiento de las alternativas no estan disponibles en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elifsudayi/svm-ner
+- Modelo en Hugging Face: https://huggingface.co/elifsudayi/svm-ner
 - Repositorio del proyecto: https://github.com/ata-sesli/nlp-project-2
 - Dataset de entrenamiento: https://huggingface.co/datasets/gretelai/synthetic_pii_finance_multilingual

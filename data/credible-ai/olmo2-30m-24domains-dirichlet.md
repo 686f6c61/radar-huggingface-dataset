@@ -71,9 +71,9 @@ Los valores de las alternativas provienen de su documentación pública y no de 
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-30M-24domains-dirichlet | 29,2 M (x512 modelos) | no disponible | Proxies para investigación de mezclas de datos | MIT | HuggingFace |
-| Pythia-70M | 70 M | 2.048 tokens | Modelo base pequeño para investigación de interpretabilidad y escalado | Apache 2.0 | HuggingFace |
-| SmolLM2-135M | 135 M | 8.192 tokens | Modelo base pequeño para experimentación e inferencia en dispositivo | Apache 2.0 | HuggingFace |
+| olmo2-30M-24domains-dirichlet | 29,2 M (x512 modelos) | no disponible | Proxies para investigación de mezclas de datos | MIT | Hugging Face |
+| Pythia-70M | 70 M | 2.048 tokens | Modelo base pequeño para investigación de interpretabilidad y escalado | Apache 2.0 | Hugging Face |
+| SmolLM2-135M | 135 M | 8.192 tokens | Modelo base pequeño para experimentación e inferencia en dispositivo | Apache 2.0 | Hugging Face |
 | Suites de proxies de mezclas (por ejemplo, las de trabajos de data mixing) | del orden de decenas de millones | no disponible | Predicción de mezclas óptimas | variable | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ Los valores de las alternativas provienen de su documentación pública y no de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet
 - Dataset con diseño, resultados y secuencias de entrenamiento: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms
 - Dataset de secuencias tokenizadas: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized
 - Corpus de entrenamiento: https://huggingface.co/datasets/WebOrganizer/Corpus-200B

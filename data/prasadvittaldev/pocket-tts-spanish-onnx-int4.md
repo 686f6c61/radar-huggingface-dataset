@@ -78,7 +78,7 @@ La comparativa es cualitativa, ya que no hay datos de rendimiento objetivos. La 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/prasadvittaldev/pocket-tts-spanish-onnx-int4)
+- [Modelo en Hugging Face](https://huggingface.co/prasadvittaldev/pocket-tts-spanish-onnx-int4)
 - [Demo en navegador](https://prasadtts.vercel.app)
 - [Modelo base kyutai/pocket-tts](https://huggingface.co/kyutai/pocket-tts)
 - [Repositorio de exportación ONNX de KevinAHM](https://github.com/KevinAHM/pocket-tts-onnx-export)

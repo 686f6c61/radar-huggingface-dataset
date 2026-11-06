@@ -100,9 +100,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, HumanEval, G
 
 | Modelo | Parámetros | Contexto | Accuracy test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shanexf/24679-garments-distilbert | 66 M | 128 tokens | 1,000 (15 ejemplos) | `classroom-use-only` | HuggingFace, 0 descargas, 0 likes |
+| shanexf/24679-garments-distilbert | 66 M | 128 tokens | 1,000 (15 ejemplos) | `classroom-use-only` | Hugging Face, 0 descargas, 0 likes |
 | TF-IDF + regresión logística (línea base del propio trabajo) | no aplica (modelo lineal disperso) | no aplica | 1,000 (15 ejemplos) | no disponible | descrito en la model card, no publicado como artefacto independiente |
-| distilbert-base-uncased (modelo base sin fine-tuning) | 66 M | no disponible | no disponible para esta tarea sin entrenamiento específico | no disponible en la información proporcionada | HuggingFace |
+| distilbert-base-uncased (modelo base sin fine-tuning) | 66 M | no disponible | no disponible para esta tarea sin entrenamiento específico | no disponible en la información proporcionada | Hugging Face |
 
 La comparación más informativa es interna al propio trabajo: la línea base de TF-IDF + regresión logística iguala al transformer en el test (1,000) y lo supera en validación (0,933 frente a 1,000, a favor del transformer) y en la sonda de sustantivos enmascarados (0,933 frente a 0,867). Con 15 ejemplos de test, estas diferencias no permiten establecer superioridad estadística. No se dispone de datos de otros modelos comparables en la información proporcionada.
 
@@ -121,7 +121,7 @@ La comparación más informativa es interna al propio trabajo: la línea base de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shanexf/24679-garments-distilbert
+- Modelo en Hugging Face: https://huggingface.co/shanexf/24679-garments-distilbert
 - Dataset de entrenamiento: https://huggingface.co/datasets/leixiang25/24679-hw1-text-garments (commit `49d58b5a09420224a7d4d00fd983b9febd260f8f`)
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - AutoGluon MultiModal (framework de entrenamiento, versión 1.6.1): no se proporciona enlace en la información disponible

@@ -73,9 +73,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks gen
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-2B Action Genome (este) | 1,72 mil millones | ~262k por defecto; 4096 recomendado | Relaciones persona-objeto en JSON (Action Genome) | Apache-2.0 en pesos; datos solo investigación | GGUF en HuggingFace |
-| Qwen3-VL-2B-Instruct | 2 mil millones (aprox.) | Contexto largo del modelo base | Multimodal conversacional general | Apache-2.0 | Pesos originales en HuggingFace |
-| Qwen3vl-2b-ag-merged (bf16) | 1,72 mil millones | Igual que el base | Misma tarea, sin cuantizar | Apache-2.0 en pesos; datos solo investigación | Safetensors en HuggingFace |
+| Qwen3-VL-2B Action Genome (este) | 1,72 mil millones | ~262k por defecto; 4096 recomendado | Relaciones persona-objeto en JSON (Action Genome) | Apache-2.0 en pesos; datos solo investigación | GGUF en Hugging Face |
+| Qwen3-VL-2B-Instruct | 2 mil millones (aprox.) | Contexto largo del modelo base | Multimodal conversacional general | Apache-2.0 | Pesos originales en Hugging Face |
+| Qwen3vl-2b-ag-merged (bf16) | 1,72 mil millones | Igual que el base | Misma tarea, sin cuantizar | Apache-2.0 en pesos; datos solo investigación | Safetensors en Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos de scene graph específicos) no está disponible en la información proporcionada. Frente a su modelo base y a la versión bf16, la diferencia principal es el formato GGUF y la cuantización Q4_K_M, que reduce el tamaño a 1,11 GB a costa de una precisión aún no cuantificada con rigor.
 
@@ -95,7 +95,7 @@ La comparación con alternativas de la misma categoría (modelos de scene graph 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ram20307/qwen3vl-2b-ag-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ram20307/qwen3vl-2b-ag-GGUF
 - Modelo base fusionado (bf16): https://huggingface.co/Ram20307/qwen3vl-2b-ag-merged
 - Dataset Action Genome: no disponible como enlace directo en la información proporcionada
 - Paper de Action Genome: no disponible en la información proporcionada

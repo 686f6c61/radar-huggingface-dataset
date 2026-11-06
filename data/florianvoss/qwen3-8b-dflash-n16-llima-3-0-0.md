@@ -65,16 +65,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| florianvoss/Qwen3-8B-DFlash-N16-LLiMa-3.0.0 | ~8B (objetivo Qwen3-8B) | 4.096 tokens | Paquete de runtime Modalix (ELF), no Transformers | apache-2.0 | HuggingFace, 0 descargas al publicarse la ficha |
-| simaai/Qwen3-8B-GPTQ-Safetensors (objetivo de origen) | ~8B | No disponible | Safetensors GPTQ | No disponible en la informacion | HuggingFace |
-| simaai/Qwen3-8B-DFlash-b16-RTN-INT8-Safetensors (borrador de origen) | ~8B | No disponible | Safetensors INT8 RTN | No disponible en la informacion | HuggingFace |
-| Qwen3-8B (modelo base original) | ~8B | No disponible en la informacion | Safetensors / GGUF (segun distribucion) | No disponible en la informacion | HuggingFace y otras plataformas |
+| florianvoss/Qwen3-8B-DFlash-N16-LLiMa-3.0.0 | ~8B (objetivo Qwen3-8B) | 4.096 tokens | Paquete de runtime Modalix (ELF), no Transformers | apache-2.0 | Hugging Face, 0 descargas al publicarse la ficha |
+| simaai/Qwen3-8B-GPTQ-Safetensors (objetivo de origen) | ~8B | No disponible | Safetensors GPTQ | No disponible en la informacion | Hugging Face |
+| simaai/Qwen3-8B-DFlash-b16-RTN-INT8-Safetensors (borrador de origen) | ~8B | No disponible | Safetensors INT8 RTN | No disponible en la informacion | Hugging Face |
+| Qwen3-8B (modelo base original) | ~8B | No disponible en la informacion | Safetensors / GGUF (segun distribucion) | No disponible en la informacion | Hugging Face y otras plataformas |
 
 La comparativa es limitada porque no se dispone de datos de rendimiento ni de contexto de los repositorios de origen. La diferencia principal del paquete compilado es que solo se ejecuta en Modalix con LLiMa, mientras que los checkpoints de origen son artefactos de pesos convencionales (no compilados) destinados a otros runtimes.
 
 ## Limitaciones y advertencias
 
-- No es un checkpoint cargable con Transformers: es un paquete de runtime Modalix desempaquetado, por lo que no se puede usar con las herramientas habituales de HuggingFace.
+- No es un checkpoint cargable con Transformers: es un paquete de runtime Modalix desempaquetado, por lo que no se puede usar con las herramientas habituales de Hugging Face.
 - Dependencia estricta de hardware y software: requiere SiMa Modalix y LLiMa 3.0.0 con soporte DFlash; no se ejecuta en GPU estándar.
 - Rendimiento no validado: el autor no ha medido la tasa de aceptación ni el throughput de estos artefactos, por lo que el beneficio real de la decodificación especulativa es desconocido.
 - Contexto reducido: 4.096 tokens, insuficiente para tareas que requieran ventanas largas, como análisis de documentación extensa o historiales de conversación prolongados.
@@ -86,7 +86,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento ni de co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/florianvoss/Qwen3-8B-DFlash-N16-LLiMa-3.0.0
+- Hugging Face: https://huggingface.co/florianvoss/Qwen3-8B-DFlash-N16-LLiMa-3.0.0
 - Checkpoint objetivo (origen): https://huggingface.co/simaai/Qwen3-8B-GPTQ-Safetensors
 - Checkpoint borrador (origen): https://huggingface.co/simaai/Qwen3-8B-DFlash-b16-RTN-INT8-Safetensors
 - Modelo base adicional citado en la ficha: simaai/Qwen3-8B-GPTQ-Safetensors y simaai/Qwen3-8B-DFlash-b16-RTN-INT8-Safetensors

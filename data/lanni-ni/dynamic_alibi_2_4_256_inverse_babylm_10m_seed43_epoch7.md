@@ -1,7 +1,7 @@
 # Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch7
 
 ## Resumen
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch7` es un modelo de lenguaje de pequeño tamaño publicado por Lanni-ni en HuggingFace. Su nombre sugiere que emplea una variante dinámica de ALiBi (Attention with Linear Biases) y que se ha entrenado en el contexto del desafío BabyLM, probablemente con un corpus reducido. El checkpoint contiene 27.447.040 parámetros y está disponible en formato safetensors, aunque su documentación es prácticamente inexistente.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch7` es un modelo de lenguaje de pequeño tamaño publicado por Lanni-ni en Hugging Face. Su nombre sugiere que emplea una variante dinámica de ALiBi (Attention with Linear Biases) y que se ha entrenado en el contexto del desafío BabyLM, probablemente con un corpus reducido. El checkpoint contiene 27.447.040 parámetros y está disponible en formato safetensors, aunque su documentación es prácticamente inexistente.
 
 La relevancia de este modelo radica en su posible uso como banco de pruebas para investigar mecanismos de sesgo posicional dinámico en arquitecturas autoregresivas, dado que incorpora el tag `dynamic_alibi`. Sin embargo, al carecer de información detallada sobre arquitectura, datos de entrenamiento o evaluación, su utilidad práctica queda restringida a experimentos de investigación con modelos de este tamaño.
 
@@ -19,10 +19,10 @@ La relevancia de este modelo radica en su posible uso como banco de pruebas para
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
-No se dispone de información publicada sobre la arquitectura del modelo. A partir del nombre del checkpoint y de los tags en HuggingFace, se puede inferir que el modelo implementa una variante de ALiBi (Attention with Linear Biases) con mecanismo dinámico, aunque no se ha encontrado documentación técnica que lo confirme. El término `inverse_babylm` y `10m` sugieren que el entrenamiento se realizó con un corpus del desafío BabyLM, posiblemente limitado a 10 millones de tokens o a un dataset de tamaño reducido, pero estos datos no están verificados. No se ha publicado información sobre el procedimiento de entrenamiento, hiperparámetros ni datos utilizados.
+No se dispone de información publicada sobre la arquitectura del modelo. A partir del nombre del checkpoint y de los tags en Hugging Face, se puede inferir que el modelo implementa una variante de ALiBi (Attention with Linear Biases) con mecanismo dinámico, aunque no se ha encontrado documentación técnica que lo confirme. El término `inverse_babylm` y `10m` sugieren que el entrenamiento se realizó con un corpus del desafío BabyLM, posiblemente limitado a 10 millones de tokens o a un dataset de tamaño reducido, pero estos datos no están verificados. No se ha publicado información sobre el procedimiento de entrenamiento, hiperparámetros ni datos utilizados.
 
 ## Capacidades
-- Generación de texto: el pipeline de HuggingFace es `text-generation`, por lo que el modelo puede generar texto autoregresivo.
+- Generación de texto: el pipeline de Hugging Face es `text-generation`, por lo que el modelo puede generar texto autoregresivo.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -60,6 +60,6 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 - La falta de benchmarks impide comparar el modelo con alternativas establecidas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch7
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch7
 - Checkpoint con epoch8: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8
 - Página personal del autor: https://lanni-ni.github.io/

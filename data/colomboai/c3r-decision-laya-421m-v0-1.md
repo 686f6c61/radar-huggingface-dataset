@@ -27,7 +27,7 @@ Su relevancia es metodológica: propone un patrón de integración con frontera 
 | Pipeline declarado | text-classification |
 | Estado de los pesos C3R | no entrenados ni publicados |
 | Calibracion empirica | no reclamada todavia |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -103,8 +103,8 @@ Advertencia: la fila correspondiente a este repositorio no es comparable en rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ColomboAI/C3R-Decision-Laya-421M-v0.1
-- Modelo base en HuggingFace: https://huggingface.co/convaiinnovations/laya
+- Repositorio Hugging Face: https://huggingface.co/ColomboAI/C3R-Decision-Laya-421M-v0.1
+- Modelo base en Hugging Face: https://huggingface.co/convaiinnovations/laya
 - Revisión fijada del modelo base: `1c5edc17a7acd8701df6fc341c0d179f1c62c982`
 - Articulo completo (38 paginas), alojado en el repositorio: https://huggingface.co/ColomboAI/C3R-Decision-Laya-421M-v0.1/blob/main/C3R_System_One_Integration_v5.pdf
 - Preprint academico (10 paginas), alojado en el repositorio: https://huggingface.co/ColomboAI/C3R-Decision-Laya-421M-v0.1/blob/main/C3R_ArXiv_Preprint_v5.pdf

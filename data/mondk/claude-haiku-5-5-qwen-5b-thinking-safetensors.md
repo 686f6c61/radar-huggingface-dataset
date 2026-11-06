@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claude-Haiku-5.5-Qwen-5B-Thinking-Safetensors es un ajuste fino (fine-tune) del modelo multimodal Qwen3-VL-4B-Thinking, publicado por el usuario mondk en HuggingFace. A pesar del nombre comercial que evoca la familia Claude de Anthropic, no tiene relación con dicha empresa: se trata de un derivado de la familia Qwen3-VL de Alibaba, adaptado mediante técnicas de ajuste supervisado (SFT) sobre datasets propios del autor (mondk/Claude-Haiku-5.5-High-Sft y mondk/Msh-Sft). El modelo conserva la arquitectura vision-language de su base y añade un modo de razonamiento explícito ("thinking").
+Claude-Haiku-5.5-Qwen-5B-Thinking-Safetensors es un ajuste fino (fine-tune) del modelo multimodal Qwen3-VL-4B-Thinking, publicado por el usuario mondk en Hugging Face. A pesar del nombre comercial que evoca la familia Claude de Anthropic, no tiene relación con dicha empresa: se trata de un derivado de la familia Qwen3-VL de Alibaba, adaptado mediante técnicas de ajuste supervisado (SFT) sobre datasets propios del autor (mondk/Claude-Haiku-5.5-High-Sft y mondk/Msh-Sft). El modelo conserva la arquitectura vision-language de su base y añade un modo de razonamiento explícito ("thinking").
 
 El modelo cuenta con aproximadamente 4.440 millones de parámetros (4.437.815.808 según los pesos en safetensors) y se distribuye en formato safetensors para la librería transformers, con una variante GGUF publicada por separado. Su pipeline es image-text-to-text, por lo que acepta entradas de imagen y texto y genera texto. El idioma declarado es únicamente inglés.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, la model card únicamente declara los datasets emple
 - Generación de texto conversacional en inglés, con soporte de modo de razonamiento explícito ("thinking") heredado de la base Qwen3-VL-4B-Thinking.
 - Comprensión de imágenes y texto combinados (image-text-to-text): descripción de imágenes, respuesta a preguntas visuales y tareas que requieren cruzar información visual y textual.
 - Conversación multi-turno (tag "conversational").
-- Compatibilidad declarada con endpoints (tag "endpoints_compatible"), lo que sugiere despliegue mediante Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints (tag "endpoints_compatible"), lo que sugiere despliegue mediante Inference Endpoints de Hugging Face.
 - Capacidades de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado explícitamente, aunque el modo thinking de la base está orientado a razonamiento.
 - Capacidades multilingües: limitadas al inglés según la model card.
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa por tamaño (4,44 B parámetros), en FP16 se requieren aproximadamente 9 GB de VRAM solo para pesos; en cuantización de 8 bits, unos 4,5 GB; en 4 bits, unos 2,5 GB, más el overhead de activaciones y del codificador visual.
 - GPU recomendadas: no especificadas por el autor. Por tamaño, cabría en GPUs de consumo como RTX 3090 o RTX 4090 en FP16, y en GPUs de menor VRAM con cuantización; para producción a mayor escala, A100 o H100.
 - ¿Cabe en GPU de consumo? Sí, previsiblemente en RTX 3090/4090 en FP16 y en GPUs de 8-12 GB con cuantización GGUF, aunque el autor no aporta cifras verificadas.
-- Opciones de despliegue: transformers (formato principal), GGUF mediante llama.cpp u Ollama (repo GGUF del autor), y endpoints compatibles según el tag de HuggingFace. vLLM o TGI: no confirmado en la información disponible.
+- Opciones de despliegue: transformers (formato principal), GGUF mediante llama.cpp u Ollama (repo GGUF del autor), y endpoints compatibles según el tag de Hugging Face. vLLM o TGI: no confirmado en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mondk/Claude-Haiku-5.5-Qwen-5B-Thinking-Safetensors | ~4,44 B | no disponible | Apache 2.0 | HuggingFace (40 descargas) | Fine-tune comunitario multimodal con modo thinking |
-| unsloth/Qwen3-VL-4B-Thinking (base) | ~4 B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Modelo base oficial del que deriva; documentación más completa |
-| Qwen3-VL de Alibaba (familia) | varios tamaños | no disponible en esta ficha | no disponible en esta ficha | HuggingFace | Familia original; referencia para comparar el efecto del fine-tune |
+| mondk/Claude-Haiku-5.5-Qwen-5B-Thinking-Safetensors | ~4,44 B | no disponible | Apache 2.0 | Hugging Face (40 descargas) | Fine-tune comunitario multimodal con modo thinking |
+| unsloth/Qwen3-VL-4B-Thinking (base) | ~4 B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Modelo base oficial del que deriva; documentación más completa |
+| Qwen3-VL de Alibaba (familia) | varios tamaños | no disponible en esta ficha | no disponible en esta ficha | Hugging Face | Familia original; referencia para comparar el efecto del fine-tune |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mondk/Claude-Haiku-5.5-Qwen-5B-Thinking-Safetensors
+- Modelo en Hugging Face: https://huggingface.co/mondk/Claude-Haiku-5.5-Qwen-5B-Thinking-Safetensors
 - Variante GGUF: https://huggingface.co/mondk/Claude-Haiku-5.5-Qwen-5B-Thinking-GGUF
 - Dataset de ajuste: https://huggingface.co/datasets/mondk/Claude-Haiku-5.5-High-Sft
 - Dataset de ajuste: https://huggingface.co/datasets/mondk/Msh-Sft

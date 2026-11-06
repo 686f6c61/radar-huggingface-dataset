@@ -83,8 +83,8 @@ La principal diferenciación de Unlimited-OCR-2 frente a DeepSeek-OCR y su propi
 
 ## Enlaces
 
-- HuggingFace (espejo de sekkit): https://huggingface.co/sekkit/Unlimited-OCR-2
-- HuggingFace (repositorio original de Baidu): https://huggingface.co/baidu/Unlimited-OCR-2
+- Hugging Face (espejo de sekkit): https://huggingface.co/sekkit/Unlimited-OCR-2
+- Hugging Face (repositorio original de Baidu): https://huggingface.co/baidu/Unlimited-OCR-2
 - GitHub: https://github.com/baidu/Unlimited-OCR
 - Paper (arXiv): https://arxiv.org/abs/2606.23050
 - PDF en el repo: https://huggingface.co/baidu/Unlimited-OCR-2/blob/main/Unlimited-OCR-2.pdf

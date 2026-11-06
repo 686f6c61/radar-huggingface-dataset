@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento ni de especificaciones de otros modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voidwaveDev/fastconformer-quran
+- Modelo en Hugging Face: https://huggingface.co/voidwaveDev/fastconformer-quran
 - Modelo base: https://huggingface.co/mohammed/fastconformer-quran-ar
 - Export ONNX int8 original: https://huggingface.co/mohammed/fastconformer-quran-ar-onnx-int8
 - Aplicacion web Voidwave Quran: https://voidwave.com/Quran

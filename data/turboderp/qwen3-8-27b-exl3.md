@@ -63,5 +63,5 @@ No disponible. No se proporcionan datos de comparacion con otros modelos de tama
 
 ## Enlaces
 
-- [Repositorio HuggingFace: turboderp/Qwen3.8-27B-exl3](https://huggingface.co/turboderp/Qwen3.8-27B-exl3)
+- [Repositorio Hugging Face: turboderp/Qwen3.8-27B-exl3](https://huggingface.co/turboderp/Qwen3.8-27B-exl3)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

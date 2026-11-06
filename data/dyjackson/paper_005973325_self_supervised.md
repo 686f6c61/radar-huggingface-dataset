@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de aprendizaje automatico, sino un documento de investigacion en formato Markdown titulado `paper_005973325_self_supervised.md`. El autor, identificado como `dyjackson`, ha subido un articulo academico sobre aprendizaje auto-supervisado (self-supervised learning, SSL) con una estructura tipica de publicacion en conferencia CVPR: resumen, introduccion, preliminares, metodo, experimentos y discusion.
+Este repositorio de Hugging Face no contiene un modelo de aprendizaje automatico, sino un documento de investigacion en formato Markdown titulado `paper_005973325_self_supervised.md`. El autor, identificado como `dyjackson`, ha subido un articulo academico sobre aprendizaje auto-supervisado (self-supervised learning, SSL) con una estructura tipica de publicacion en conferencia CVPR: resumen, introduccion, preliminares, metodo, experimentos y discusion.
 
 El contenido se presenta como un artefacto de texto plano, sin pesos, arquitectura ni pipeline de inferencia. Su relevancia es documental y academica: permite consultar, versionar y distribuir un manuscrito cientifico en formato legible por maquinas, con licencia BSD-3-Clause. No es un modelo desplegable ni tiene capacidades de procesamiento de lenguaje natural.
 
@@ -62,6 +62,6 @@ No disponible. No se han identificado repositorios comparables en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dyjackson/paper_005973325_self_supervised
+- Repositorio Hugging Face: https://huggingface.co/dyjackson/paper_005973325_self_supervised
 - Referencia general sobre SSL (no directamente vinculada al repositorio): https://arxiv.org/abs/2301.05712
 - Articulo de encuesta sobre SSL en IEEE: https://ieeexplore.ieee.org/document/10559458

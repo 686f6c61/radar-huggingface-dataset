@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynapseMusicV12-Base es el identificador con el que el usuario SYNAPSEai1 ha publicado en HuggingFace un checkpoint de 2.393.872.518 parámetros (unos 2,39 mil millones) etiquetado como text-to-audio, acompañado de la model card de ACE-Step 1.5. ACE-Step 1.5 es el modelo fundacional de generación musical de código abierto desarrollado conjuntamente por ACE Studio y StepFun, por lo que este repositorio es una re-publicación de terceros del checkpoint base de la familia (acestep-v15-base) y no un modelo independiente.
+SynapseMusicV12-Base es el identificador con el que el usuario SYNAPSEai1 ha publicado en Hugging Face un checkpoint de 2.393.872.518 parámetros (unos 2,39 mil millones) etiquetado como text-to-audio, acompañado de la model card de ACE-Step 1.5. ACE-Step 1.5 es el modelo fundacional de generación musical de código abierto desarrollado conjuntamente por ACE Studio y StepFun, por lo que este repositorio es una re-publicación de terceros del checkpoint base de la familia (acestep-v15-base) y no un modelo independiente.
 
 El modelo resuelve la generación de música a partir de texto mediante una arquitectura híbrida: un modelo de lenguaje actúa como planificador y convierte una consulta breve en un "plano" completo de la canción (metadatos, letra y descripciones) mediante chain-of-thought, y un Diffusion Transformer (DiT) sintetiza el audio a partir de ese plano. La variante aquí publicada corresponde al checkpoint base, sin ajuste supervisado (SFT) ni aprendizaje por refuerzo (RL), lo que según la tabla del zoo de modelos implica calidad media, diversidad alta y facilidad de ajuste fino.
 
@@ -17,7 +17,7 @@ Su relevancia es doble. Por un lado, el autor declara que la música generada pu
 | Parámetros activos | no aplica (no es una arquitectura MoE) |
 | Longitud de contexto | no disponible (la model card menciona composiciones de hasta 10 minutos, sin detallar ventana de contexto) |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | 50+ idiomas según la model card; los metadatos de HuggingFace no enumeran idiomas |
+| Idiomas soportados | 50+ idiomas según la model card; los metadatos de Hugging Face no enumeran idiomas |
 | Licencia | MIT |
 | Formato de pesos | safetensors (repositorio de 4,8 GB, compatible con pesos en bf16/fp16) |
 
@@ -71,16 +71,16 @@ Datos de rendimiento declarados por el autor: canción completa en menos de 2 se
 - Tamaño en disco: 4,8 GB de repositorio en safetensors, coherente con pesos en bf16/fp16 para 2,39 mil millones de parámetros (en fp32 serían unos 9,6 GB).
 - GPU recomendadas: A100 (referencia de menos de 2 segundos por canción) y RTX 3090 (menos de 10 segundos por canción). No se detallan cifras para otras GPU.
 - Cabe en GPU de consumo: sí, según el autor, con menos de 4 GB de VRAM.
-- Opciones de despliegue: la librería declarada es transformers, con la etiqueta custom_code, lo que implica cargar el modelo con confianza remota activada. El proyecto ofrece además una demo en HuggingFace Spaces. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni diffusers en la información disponible.
+- Opciones de despliegue: la librería declarada es transformers, con la etiqueta custom_code, lo que implica cargar el modelo con confianza remota activada. El proyecto ofrece además una demo en Hugging Face Spaces. No se documenta soporte para vLLM, llama.cpp, Ollama, TGI ni diffusers en la información disponible.
 - Latencia y throughput: menos de 2 s por canción en A100 y menos de 10 s en RTX 3090 según el autor; no se publican cifras de throughput agregado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto / duración | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SynapseMusicV12-Base (acestep-v15-base) | 2,39 mil millones (este repo) | hasta 10 minutos según la model card; contexto no disponible | 50 con CFG | MIT | HuggingFace, re-publicación de terceros |
-| acestep-v15-sft | no disponible | no disponible | 50 con CFG | MIT | HuggingFace (ACE-Step) |
-| acestep-v15-turbo | no disponible | no disponible | 8 sin CFG | MIT | HuggingFace (ACE-Step) |
+| SynapseMusicV12-Base (acestep-v15-base) | 2,39 mil millones (este repo) | hasta 10 minutos según la model card; contexto no disponible | 50 con CFG | MIT | Hugging Face, re-publicación de terceros |
+| acestep-v15-sft | no disponible | no disponible | 50 con CFG | MIT | Hugging Face (ACE-Step) |
+| acestep-v15-turbo | no disponible | no disponible | 8 sin CFG | MIT | Hugging Face (ACE-Step) |
 | acestep-v15-turbo-rl | no disponible | no disponible | 8 sin CFG | MIT | pendiente de publicación según la model card |
 
 Los modelos LM auxiliares de la familia (acestep-5Hz-lm-0.6B, 1.7B y 4B) derivan de Qwen3 y se comparan entre sí por capacidad de comprensión de audio, composición y copia de melodía, pero no forman parte de este repositorio. La búsqueda web realizada no devolvió información útil sobre alternativas de otros fabricantes (los resultados obtenidos no guardan relación con generación musical), por lo que no se incluyen comparaciones externas.
@@ -92,7 +92,7 @@ Los modelos LM auxiliares de la familia (acestep-5Hz-lm-0.6B, 1.7B y 4B) derivan
 - Es la variante base, sin SFT ni RL: la propia tabla del proyecto le asigna calidad media, muy por debajo de las variantes sft y turbo. Requiere CFG y 50 pasos de muestreo, lo que implica más cómputo por generación.
 - El uso requiere ejecutar código personalizado del repositorio (etiqueta custom_code) con confianza remota activada, lo que supone un riesgo de seguridad que debe evaluarse antes de desplegarlo en producción.
 - Riesgo de desviación del prompt: aunque la model card declara adherencia estricta en más de 50 idiomas, no se publican métricas objetivas de fidelidad al prompt ni de calidad perceptual.
-- Idiomas: no se enumeran los 50+ idiomas soportados ni el rendimiento por idioma; los metadatos de HuggingFace indican "no disponibles".
+- Idiomas: no se enumeran los 50+ idiomas soportados ni el rendimiento por idioma; los metadatos de Hugging Face indican "no disponibles".
 - No se documentan sesgos específicos, pero al ser un modelo entrenado parcialmente con datos sintéticos y con preferencias internas en lugar de recompensas humanas, la cobertura estilística y cultural puede estar desequilibrada.
 - Licencia MIT: permite uso comercial, modificación y redistribución. No obstante, las garantías sobre la legalidad del dataset de entrenamiento las ofrece el proyecto ACE-Step, no el re-publicador, por lo que conviene conservar la atribución al proyecto original.
 - Las fechas de creación y actualización del repositorio (2026-09-20) son posteriores a la publicación del informe técnico citado; no se dispone de historial de versiones ni de changelog.
@@ -100,11 +100,11 @@ Los modelos LM auxiliares de la familia (acestep-5Hz-lm-0.6B, 1.7B y 4B) derivan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Base
+- Modelo en Hugging Face: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Base
 - Checkpoint base original de la familia: https://huggingface.co/ACE-Step/acestep-v15-base
-- Colección ACE-Step 1.5 en HuggingFace: https://huggingface.co/collections/ACE-Step/ace-step-15
+- Colección ACE-Step 1.5 en Hugging Face: https://huggingface.co/collections/ACE-Step/ace-step-15
 - Página del proyecto: https://ace-step.github.io/ace-step-v1.5.github.io/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ACE-Step/Ace-Step-v1.5
 - ModelScope: https://modelscope.cn/models/ACE-Step/ACE-Step-v1-5
 - Informe técnico (arXiv): https://arxiv.org/abs/2602.00744
 - Repositorio GitHub: https://github.com/ace-step/ACE-Step-1.5

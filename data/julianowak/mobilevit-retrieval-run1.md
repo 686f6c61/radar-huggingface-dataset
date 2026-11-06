@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`julianowak/mobilevit-retrieval-run1` es un repositorio experimental publicado en HuggingFace por el usuario `julianowak` que contiene una implementación funcional de MobileViT orientada a tareas de *retrieval* (recuperación de información multimodal), configurada en escala *small*. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El repositorio pone el foco en código transparente y pruebas repetibles.
+`julianowak/mobilevit-retrieval-run1` es un repositorio experimental publicado en Hugging Face por el usuario `julianowak` que contiene una implementación funcional de MobileViT orientada a tareas de *retrieval* (recuperación de información multimodal), configurada en escala *small*. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El repositorio pone el foco en código transparente y pruebas repetibles.
 
 Arquitectónicamente se declara MobileViT (híbrido de convoluciones y atención) con atención de tipo *grouped query*, fusión mediante descomposición de Tucker, activación GELU y normalización RMSNorm. El recuento real de parámetros extraído de los tensores safetensors es de 49.600 parámetros, una cifra muy reducida incluso para una configuración *small* de MobileViT, coherente con su naturaleza de checkpoint de inicialización para pruebas de humo y no con un modelo listo para producción.
 
@@ -80,5 +80,5 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julianowak/mobilevit-retrieval-run1
+- Hugging Face: https://huggingface.co/julianowak/mobilevit-retrieval-run1
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web realizada.

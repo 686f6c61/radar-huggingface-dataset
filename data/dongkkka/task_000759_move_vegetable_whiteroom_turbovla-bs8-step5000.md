@@ -18,7 +18,7 @@ El checkpoint se guarda en el paso de optimizacion 5.000 con tamano de lote 8, e
 | Longitud de contexto | no disponible; horizonte de accion de 50 pasos |
 | Tipos de cuantizacion | no disponible; los pesos se distribuyen en punto flotante PyTorch |
 | Idiomas soportados | no disponible; el encoder de texto empaquetado es bert-base-uncased, entrenado principalmente en ingles |
-| Licencia | no disponible en la ficha de HuggingFace; el proyecto TurboVLA se publica bajo Apache-2.0 |
+| Licencia | no disponible en la ficha de Hugging Face; el proyecto TurboVLA se publica bajo Apache-2.0 |
 | Formato de pesos | PyTorch (.pt): steps_5000_ema_pytorch_model.pt (inferencia) y steps_5000_pytorch_model.pt (entrenamiento) |
 | Entradas | Tres camaras RGB (cabeza izquierda, muneca izquierda, muneca derecha) mas estado de 22 dimensiones |
 | Salidas | Accion absoluta de 22 dimensiones (articulaciones y base) |
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dongkkka/Task_000759_Move_Vegetable_Whiteroom_TurboVLA-bs8-step5000 (este) | VLA TurboVLA, tarea 000759, SG2 | no disponible (base ~0,2 B segun terceros) | no disponible; horizonte de accion 50 | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Dongkkka/Task_000759_Move_Vegetable_Whiteroom_FLOWER-bs4-step10000 | VLA FLOWER, misma tarea 000759, SG2, layout 22D | no disponible | no disponible | no disponible | HuggingFace |
-| Dongkkka/Task_000759_FLOWER_B200_bs8_step15000 | VLA FLOWER, misma tarea 000759, lote 8, 15.000 pasos | no disponible | no disponible | no disponible | HuggingFace |
+| Dongkkka/Task_000759_Move_Vegetable_Whiteroom_TurboVLA-bs8-step5000 (este) | VLA TurboVLA, tarea 000759, SG2 | no disponible (base ~0,2 B segun terceros) | no disponible; horizonte de accion 50 | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Dongkkka/Task_000759_Move_Vegetable_Whiteroom_FLOWER-bs4-step10000 | VLA FLOWER, misma tarea 000759, SG2, layout 22D | no disponible | no disponible | no disponible | Hugging Face |
+| Dongkkka/Task_000759_FLOWER_B200_bs8_step15000 | VLA FLOWER, misma tarea 000759, lote 8, 15.000 pasos | no disponible | no disponible | no disponible | Hugging Face |
 | TurboVLA (modelo base) | VLA de tiempo real, 32 Hz en RTX 4090 | ~0,2 B segun fuentes de terceros | no disponible | Apache-2.0 | GitHub y paper publicos |
 
 La comparacion directa con alternativas de otros autores no esta disponible con datos verificables en la informacion proporcionada.
@@ -87,7 +87,7 @@ La comparacion directa con alternativas de otros autores no esta disponible con 
 ## Limitaciones y advertencias
 
 - No validado en robot real: el propio autor declara que el artefacto es el checkpoint de entrenamiento guardado y que no ha sido reclamado como validado en robot real.
-- Licencia indeterminada: la ficha de HuggingFace no indica licencia, mientras que el proyecto TurboVLA se distribuye como Apache-2.0. Antes de un uso comercial hay que aclarar que terminos se aplican al checkpoint derivado.
+- Licencia indeterminada: la ficha de Hugging Face no indica licencia, mientras que el proyecto TurboVLA se distribuye como Apache-2.0. Antes de un uso comercial hay que aclarar que terminos se aplican al checkpoint derivado.
 - Ausencia total de benchmarks: no hay tasas de exito ni metricas de error, lo que impide estimar la calidad de la politica frente a alternativas.
 - Especializacion extrema: el modelo esta ajustado para una unica tarea (mover vegetales en una habitacion blanca) sobre un unico robot (SG2) con un layout de 22 dimensiones. Fuera de ese dominio no cabe esperar comportamiento util.
 - Riesgo de sobreajuste a la escena: al entrenarse sobre un dataset concreto de habitacion blanca y disposicion de objetos fija, es probable que la politica degrade ante cambios de iluminacion, posicion de camara o variedad de objetos.
@@ -100,7 +100,7 @@ La comparacion directa con alternativas de otros autores no esta disponible con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000759_Move_Vegetable_Whiteroom_TurboVLA-bs8-step5000
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000759_Move_Vegetable_Whiteroom_TurboVLA-bs8-step5000
 - Repositorio GitHub de TurboVLA: https://github.com/H-EmbodVis/TurboVLA
 - Paper de TurboVLA: https://arxiv.org/html/2607.27205
 - Ficha resumida de TurboVLA en AI/TLDR: https://ai-tldr.dev/tools/turbovla/

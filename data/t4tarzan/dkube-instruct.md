@@ -57,8 +57,8 @@ No se dispone de información sobre modelos comparables en la documentación del
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct (base) | 0.5B | No disponible en la información | Licencia Qwen | HuggingFace |
-| DKube-instruct (adaptador) | 0.5B + LoRA | No disponible | Other | HuggingFace |
+| Qwen2.5-0.5B-Instruct (base) | 0.5B | No disponible en la información | Licencia Qwen | Hugging Face |
+| DKube-instruct (adaptador) | 0.5B + LoRA | No disponible | Other | Hugging Face |
 
 El adaptador añade conocimiento específico de Kubernetes, pero sigue siendo un prototipo con calidad de prueba de humo.
 
@@ -74,7 +74,7 @@ El adaptador añade conocimiento específico de Kubernetes, pero sigue siendo un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/t4tarzan/DKube-instruct
+- Hugging Face: https://huggingface.co/t4tarzan/DKube-instruct
 - GitHub del autor: https://github.com/t4tarzan
 - Repositorio Scoutflo-SRE-Playbooks: https://github.com/Scoutflo/Scoutflo-SRE-Playbooks
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

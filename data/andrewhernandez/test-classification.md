@@ -72,4 +72,4 @@ No disponible. No se dispone de modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrewhernandez/test-classification
+- Hugging Face: https://huggingface.co/andrewhernandez/test-classification

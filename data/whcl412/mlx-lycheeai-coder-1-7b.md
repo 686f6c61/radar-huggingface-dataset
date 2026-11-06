@@ -75,7 +75,7 @@ Nota: la comparación se basa en características generales; no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/whcl412/mlx-LycheeAI-coder-1.7b
+- Repositorio Hugging Face: https://huggingface.co/whcl412/mlx-LycheeAI-coder-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - MLX-LM (librería de carga): https://github.com/ml-explore/mlx-lm
 - Dataset CodeAlpaca-20k: https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k

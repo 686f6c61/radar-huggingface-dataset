@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g2_run2` es un repositorio publicado en HuggingFace por el usuario stefanocarrera. Por el identificador se deduce que se trata de un artefacto experimental asociado a un proceso de generación o ajuste sobre un modelo de la familia Qwen3 con 8.000 millones de parámetros, con parámetros de decodificación anotados en el propio nombre (`t0.9` para temperatura 0.9, `g2` para generación 2, `run2` para la segunda ejecución). El término `sqlautophagycode` sugiere un dominio de trabajo combinado de SQL, código y una estrategia de datos tipo "autofagia" (reciclado de datos), aunque esto no está confirmado en la documentación.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g2_run2` es un repositorio publicado en Hugging Face por el usuario stefanocarrera. Por el identificador se deduce que se trata de un artefacto experimental asociado a un proceso de generación o ajuste sobre un modelo de la familia Qwen3 con 8.000 millones de parámetros, con parámetros de decodificación anotados en el propio nombre (`t0.9` para temperatura 0.9, `g2` para generación 2, `run2` para la segunda ejecución). El término `sqlautophagycode` sugiere un dominio de trabajo combinado de SQL, código y una estrategia de datos tipo "autofagia" (reciclado de datos), aunque esto no está confirmado en la documentación.
 
-La model card es la plantilla genérica autogenerada por HuggingFace: no contiene descripción, autoría real, licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Todos los campos aparecen como "[More Information Needed]". El repositorio tiene 0 descargas y 0 "likes", fue creado y actualizado el mismo día (11 de septiembre de 2026) y ocupa 0,2 GB, un tamaño muy inferior al que tendrían los pesos completos de un modelo de 8B en bf16 (en torno a 16 GB), lo que apunta a un adaptador LoRA o a un subconjunto de pesos más que a un modelo completo. La etiqueta `unsloth` refuerza la hipótesis de un ajuste fino eficiente en memoria.
+La model card es la plantilla genérica autogenerada por Hugging Face: no contiene descripción, autoría real, licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Todos los campos aparecen como "[More Information Needed]". El repositorio tiene 0 descargas y 0 "likes", fue creado y actualizado el mismo día (11 de septiembre de 2026) y ocupa 0,2 GB, un tamaño muy inferior al que tendrían los pesos completos de un modelo de 8B en bf16 (en torno a 16 GB), lo que apunta a un adaptador LoRA o a un subconjunto de pesos más que a un modelo completo. La etiqueta `unsloth` refuerza la hipótesis de un ajuste fino eficiente en memoria.
 
 En consecuencia, esta ficha se limita a inventariar lo verificable. Cualquier dato técnico no listado aquí debe considerarse no disponible hasta que el autor publique documentación. La búsqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo: los resultados obtenidos tratan sobre ajustes de energía de GPU en Windows y no guardan relación con este repositorio.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos y verificables con la informacio
 - Analisis de tecnicas de ajuste eficiente: la etiqueta `unsloth` permitiria estudiar como se construyo un adaptador sobre una base de 8B, pero sin documentacion no hay garantia de reproducibilidad.
 - Experimentacion local con `transformers`: al estar en safetensors, el artefacto puede cargarse con la libreria estandar, pero se desconoce si es un modelo completo o un adaptador y que configuracion requiere.
 - Evaluacion comparativa interna: podria servir como punto de partida para medir el efecto de un ajuste especifico, siempre que exista una linea base documentada.
-- Pruebas de integracion en endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con el despliegue gestionado de HuggingFace, util para validaciones tecnicas.
+- Pruebas de integracion en endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con el despliegue gestionado de Hugging Face, util para validaciones tecnicas.
 - Estudio de sesgos y robustez: no recomendable sin conocer datos de entrenamiento, idiomas y licencia.
 
 En todos los casos, el uso comercial y en produccion queda bloqueado por la ausencia de licencia explicita.
@@ -94,7 +94,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g2_run2
+- Repositorio en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g2_run2
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web.

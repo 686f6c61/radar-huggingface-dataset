@@ -4,7 +4,7 @@
 
 Dramabox es un modelo de texto a voz (TTS) expresivo desarrollado por Resemble AI, entrenado como un ajuste fino del modelo LTX-2.3 de Lightricks mediante la técnica IC-LoRA. Su principal innovación es que el prompt de texto controla por completo la interpretación vocal: identidad del hablante, emoción, risas, suspiros, respiraciones, pausas y transiciones. Además, admite clonación de voz opcional mediante una muestra de referencia de diez segundos. El modelo se basa en un transformer de difusión con flow matching, con 3.300 millones de parámetros, y está condicionado por los embeddings de texto de Gemma 3 12B. Está pensado para generar actuaciones vocales completas a partir de una sola descripción, lo que lo diferencia de los TTS convencionales que solo convierten texto en habla neutra.
 
-La licencia es LTX-2 Community License, que permite uso comercial con ciertas restricciones, y el idioma soportado es únicamente inglés. El repositorio en HuggingFace tiene un tamaño de 29,7 GB, aunque no se especifican los formatos de pesos ni las cuantizaciones disponibles. El modelo se distribuye como un ajuste fino del modelo base Lightricks/LTX-2.3, con una arquitectura de transformer de difusión y flow matching. Está diseñado para generar audio de alta fidelidad con control fino sobre la interpretación, lo que lo hace relevante para aplicaciones de narración, doblaje, asistentes de voz y contenido multimedia.
+La licencia es LTX-2 Community License, que permite uso comercial con ciertas restricciones, y el idioma soportado es únicamente inglés. El repositorio en Hugging Face tiene un tamaño de 29,7 GB, aunque no se especifican los formatos de pesos ni las cuantizaciones disponibles. El modelo se distribuye como un ajuste fino del modelo base Lightricks/LTX-2.3, con una arquitectura de transformer de difusión y flow matching. Está diseñado para generar audio de alta fidelidad con control fino sobre la interpretación, lo que lo hace relevante para aplicaciones de narración, doblaje, asistentes de voz y contenido multimedia.
 
 ## Especificaciones tecnicas
 
@@ -70,9 +70,9 @@ No se dispone de una comparativa directa con otros modelos TTS expresivos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [ResembleAI/Dramabox](https://huggingface.co/ResembleAI/Dramabox)
+- Modelo en Hugging Face: [ResembleAI/Dramabox](https://huggingface.co/ResembleAI/Dramabox)
 - Repositorio de código: [resemble-ai/DramaBox](https://github.com/resemble-ai/DramaBox)
-- Demo Space en HuggingFace: [ResembleAI/Dramabox](https://huggingface.co/spaces/ResembleAI/Dramabox) (ZeroGPU)
+- Demo Space en Hugging Face: [ResembleAI/Dramabox](https://huggingface.co/spaces/ResembleAI/Dramabox) (ZeroGPU)
 - Modelo base: [Lightricks/LTX-2.3](https://huggingface.co/Lightricks/LTX-2.3)
 - Pagina del modelo en Resemble AI: [https://www.resemble.ai/learn/models/dramabox](https://www.resemble.ai/learn/models/dramabox)
 - Licencia: [LICENSE](https://huggingface.co/ResembleAI/Dramabox/blob/main/LICENSE)

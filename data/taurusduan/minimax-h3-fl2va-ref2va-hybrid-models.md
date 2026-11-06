@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros que p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taurusduan/Minimax-H3-fl2va-ref2va-hybrid-models
+- Modelo en Hugging Face: https://huggingface.co/taurusduan/Minimax-H3-fl2va-ref2va-hybrid-models
 - Modelos base referenciados: `MiniMax-H3-fl2va` y `MiniMax-H3-ref2va` (no se han proporcionado sus URLs en la información disponible)
 - Paper, blog técnico, repositorio de código o demo: no disponible
 

@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-Gemma-4-E2B-it-Tetun
+- Modelo en Hugging Face: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-Gemma-4-E2B-it-Tetun
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Dataset de flashcards medicas: https://huggingface.co/datasets/labadain/Labadain-MedQA-MedAlpaca-Medical-Flashcards-English-Tetun
 - Dataset de informacion para pacientes WikiDoc: https://huggingface.co/datasets/labadain/Labadain-MedQA-MeadAlpaca-WikiDoc-Patient-Information-English-Tetun

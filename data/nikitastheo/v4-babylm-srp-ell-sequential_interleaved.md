@@ -4,7 +4,7 @@
 
 El modelo `nikitastheo/v4-babylm-srp-ell-sequential_interleaved` es un modelo de lenguaje causal (causal LM) basado en la arquitectura GPT-2, desarrollado por nikitastheo como parte de la iniciativa BabyLM, que busca entrenar modelos de lenguaje con cantidades limitadas de datos (del orden de 10 millones de palabras) para estudiar la eficiencia del aprendizaje. Con 108,55 millones de parámetros, es un modelo de tamaño pequeño-medio, diseñado para investigación y experimentación en entornos con recursos computacionales reducidos.
 
-El modelo se entrenó con un script personalizado de Hugging Face Accelerate (sin usar `Trainer`), con un tokenizer específico (`nikitastheo/babylm-vocab15-srp-tokenizer`) y un esquema de entrenamiento que alterna idiomas (probablemente serbio y griego, según las siglas "srp" y "ell" en el nombre). Aunque no se especifica la licencia ni los idiomas soportados en la ficha de HuggingFace, el nombre sugiere un enfoque multilingüe. Su relevancia radica en ser un punto de referencia para evaluar cómo los modelos pequeños pueden aprender con datos limitados, un área activa en la investigación de eficiencia y sostenibilidad en IA.
+El modelo se entrenó con un script personalizado de Hugging Face Accelerate (sin usar `Trainer`), con un tokenizer específico (`nikitastheo/babylm-vocab15-srp-tokenizer`) y un esquema de entrenamiento que alterna idiomas (probablemente serbio y griego, según las siglas "srp" y "ell" en el nombre). Aunque no se especifica la licencia ni los idiomas soportados en la ficha de Hugging Face, el nombre sugiere un enfoque multilingüe. Su relevancia radica en ser un punto de referencia para evaluar cómo los modelos pequeños pueden aprender con datos limitados, un área activa en la investigación de eficiencia y sostenibilidad en IA.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 - Sesgos y alucinaciones: al ser un modelo pequeño entrenado con un corpus limitado (BabyLM), su conocimiento general es muy restringido y es propenso a generar contenido incoherente o factualmente incorrecto.
 - Limitaciones de idioma: aunque el nombre sugiere serbio y griego, no hay confirmación oficial de los idiomas soportados ni de su calidad en cada uno. Puede tener un rendimiento desigual entre ellos.
-- Licencia no especificada: no se indica la licencia en la ficha de HuggingFace, lo que impide conocer las restricciones de uso comercial o modificación. Se recomienda contactar al autor antes de usarlo en producción.
+- Licencia no especificada: no se indica la licencia en la ficha de Hugging Face, lo que impide conocer las restricciones de uso comercial o modificación. Se recomienda contactar al autor antes de usarlo en producción.
 - Contexto limitado: la longitud de contexto no está documentada; si sigue la configuración estándar de GPT-2, sería 1024 tokens, pero no se garantiza.
 - Sin alineación: no se aplicaron técnicas de RLHF o DPO, por lo que el modelo puede generar contenido ofensivo o inapropiado si se le provoca.
 - No apto para producción: su tamaño y datos de entrenamiento lo hacen inadecuado para aplicaciones comerciales que requieran calidad y fiabilidad.

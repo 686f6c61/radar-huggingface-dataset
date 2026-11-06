@@ -83,8 +83,8 @@ Los unicos datos de comparacion disponibles en la informacion proporcionada corr
 
 | Modelo | Parametros | Contexto | Rendimiento (entropia cruzada, 0-9k) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LowEndGirlfriend | 51.786.240 | 10.240 tokens verificados (config 16.384) | After: 1,66-3,75 por bucket (mejor que el base en todas las posiciones) | other / mixed-see-license-section | HuggingFace, safetensors fp32 |
-| SupraLabs/Supra-50M-Instruct (base) | no disponible (la denominacion sugiere ~50 M) | no disponible | Before (tras reescalado RoPE): 4,61-6,02 por bucket | no disponible | HuggingFace |
+| LowEndGirlfriend | 51.786.240 | 10.240 tokens verificados (config 16.384) | After: 1,66-3,75 por bucket (mejor que el base en todas las posiciones) | other / mixed-see-license-section | Hugging Face, safetensors fp32 |
+| SupraLabs/Supra-50M-Instruct (base) | no disponible (la denominacion sugiere ~50 M) | no disponible | Before (tras reescalado RoPE): 4,61-6,02 por bucket | no disponible | Hugging Face |
 | Otros fine-tunes de rol de ~50 M | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ Los unicos datos de comparacion disponibles en la informacion proporcionada corr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lowendmicrobacteria/lowendgirlfriend
+- Modelo en Hugging Face: https://huggingface.co/lowendmicrobacteria/lowendgirlfriend
 - Modelo base: https://huggingface.co/SupraLabs/Supra-50M-Instruct
 - Dataset nadil-dulnidu/ai-girlfriend-chat-dataset: https://huggingface.co/datasets/nadil-dulnidu/ai-girlfriend-chat-dataset
 - Dataset n0ctyx/wifu-chat-dataset: https://huggingface.co/datasets/n0ctyx/wifu-chat-dataset

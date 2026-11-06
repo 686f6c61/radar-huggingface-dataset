@@ -87,9 +87,9 @@ Resultados del checkpoint SFT publicados en el informe tecnico de MiMo-V2.6, com
 
 | Modelo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Distill-Qwen-9B | 9,4B | No disponible | SWE Verified 61,1; SWE Pro 44,6; MiMo General (mini) 62,2 | No disponible | Pesos safetensors en HuggingFace |
-| Qwen3.5-9B (modelo base) | No disponible en la informacion (familia 9B) | No disponible | SWE Verified 60,0; SWE Pro 32,0; MiMo General (mini) 28,5 | No disponible | Pesos en HuggingFace |
-| MiMo-V2.6-Pro-RL | No disponible | No disponible | No disponible (referenciado en la cita del informe tecnico) | No disponible | Referenciado en HuggingFace |
+| MiMo-V2.6-Distill-Qwen-9B | 9,4B | No disponible | SWE Verified 61,1; SWE Pro 44,6; MiMo General (mini) 62,2 | No disponible | Pesos safetensors en Hugging Face |
+| Qwen3.5-9B (modelo base) | No disponible en la informacion (familia 9B) | No disponible | SWE Verified 60,0; SWE Pro 32,0; MiMo General (mini) 28,5 | No disponible | Pesos en Hugging Face |
+| MiMo-V2.6-Pro-RL | No disponible | No disponible | No disponible (referenciado en la cita del informe tecnico) | No disponible | Referenciado en Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
+- Modelo en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Informe tecnico citado (MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement, Xiaomi MiMo Team, 2026): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Instalacion de SGLang (documentacion oficial referenciada en la model card): https://docs.sglang.io/get_started/install.html

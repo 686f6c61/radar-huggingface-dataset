@@ -6,7 +6,7 @@ El modelo `Shiki42/ctr-e018-pi05-athenb-lora-10000` es un checkpoint de inferenc
 
 El interes de esta publicacion es fundamentalmente de investigacion en aprendizaje por imitacion y robotica: permite reproducir y auditar un punto intermedio (10K) de una curva de entrenamiento de 30K, y compararlo con los checkpoints de 20K y 30K del mismo experimento para estudiar como evoluciona el ajuste fino desde el paso cero sobre un dataset congelado. El autor indica que los checkpoints se publicaron a peticion del usuario para preservarlos antes del apagado de la maquina de entrenamiento, y remite al registro del experimento E018 para el estado de evaluacion y las advertencias.
 
-No se dispone de informacion publica sobre arquitectura interna, numero de parametros, longitud de contexto, idiomas o cuantizaciones en la model card ni en los metadatos de HuggingFace. El repositorio ocupa 6,3 GB, dato que puede servir como cota orientativa del tamano de los artefactos almacenados, pero que la propia model card no desglosa. Las descargas y los "likes" registrados son cero en el momento de la consulta.
+No se dispone de informacion publica sobre arquitectura interna, numero de parametros, longitud de contexto, idiomas o cuantizaciones en la model card ni en los metadatos de Hugging Face. El repositorio ocupa 6,3 GB, dato que puede servir como cota orientativa del tamano de los artefactos almacenados, pero que la propia model card no desglosa. Las descargas y los "likes" registrados son cero en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos verificables de parametros, contexto, rendimiento o dispo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ctr-e018-pi05-athenb-lora-10000 (este checkpoint) | no disponible | no disponible | no disponible | other | Publico en HuggingFace, 0 descargas y 0 likes en la fecha de consulta |
+| ctr-e018-pi05-athenb-lora-10000 (este checkpoint) | no disponible | no disponible | no disponible | other | Publico en Hugging Face, 0 descargas y 0 likes en la fecha de consulta |
 | Checkpoints 20000 y 30000 del experimento CTR E018 | no disponible | no disponible | no disponible | no disponible | Referenciados en la model card; disponibilidad publica no confirmada |
 | PI0.5 (modelo base del ajuste) | no disponible | no disponible | no disponible | no disponible | No disponible en la informacion proporcionada |
 | Otros modelos de robotica para RoboTwin | no disponible | no disponible | no disponible | no disponible | No disponible en la informacion proporcionada |
@@ -103,8 +103,8 @@ No se dispone de datos verificables de parametros, contexto, rendimiento o dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-e018-pi05-athenb-lora-10000
-- Fichero de integridad referenciado en la model card: `SHA256SUMS` dentro del repositorio de HuggingFace (ruta exacta no disponible)
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-e018-pi05-athenb-lora-10000
+- Fichero de integridad referenciado en la model card: `SHA256SUMS` dentro del repositorio de Hugging Face (ruta exacta no disponible)
 - Registro del experimento CTR E018: mencionado en la model card, sin URL disponible
 - Documentacion del simulador RoboTwin: mencionado a traves de la etiqueta `robotwin`, sin URL disponible en la informacion proporcionada
 - Modelo base PI0.5: mencionado en la model card, sin URL disponible en la informacion proporcionada

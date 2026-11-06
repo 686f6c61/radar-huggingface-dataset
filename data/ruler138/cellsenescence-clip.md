@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CellSenescence-CLIP es un modelo de visión-lenguaje basado en la librería `open_clip`, publicado por el usuario Ruler138 en HuggingFace. Está especializado en microscopía y, más concretamente, en la clasificación zero-shot de imágenes de células senescentes. El modelo adopta la arquitectura CLIP (contrastive language-image pretraining), que empareja codificadores de imagen y de texto para alinear representaciones visuales y semánticas en un espacio común, lo que permite clasificar imágenes contra descripciones textuales arbitrarias sin reentrenamiento.
+CellSenescence-CLIP es un modelo de visión-lenguaje basado en la librería `open_clip`, publicado por el usuario Ruler138 en Hugging Face. Está especializado en microscopía y, más concretamente, en la clasificación zero-shot de imágenes de células senescentes. El modelo adopta la arquitectura CLIP (contrastive language-image pretraining), que empareja codificadores de imagen y de texto para alinear representaciones visuales y semánticas en un espacio común, lo que permite clasificar imágenes contra descripciones textuales arbitrarias sin reentrenamiento.
 
-El repositorio ocupa 10,9 GB y está marcado como acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. La información pública disponible es muy limitada: no se detallan el número de parámetros, la longitud de contexto textual, el volumen de datos de entrenamiento ni los resultados de benchmarks. La licencia figura como "other" y el único idioma declarado es el inglés.
+El repositorio ocupa 10,9 GB y está marcado como acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. La información pública disponible es muy limitada: no se detallan el número de parámetros, la longitud de contexto textual, el volumen de datos de entrenamiento ni los resultados de benchmarks. La licencia figura como "other" y el único idioma declarado es el inglés.
 
 Su relevancia potencial reside en la aplicación de modelos fundacionales de visión-lenguaje al análisis de imágenes de microscopía, un dominio donde los clasificadores supervisados tradicionales requieren anotaciones costosas y sufren de escasa generalización entre lotes y protocolos experimentales. Un CLIP ajustado a este dominio podría facilitar tareas de cribado fenotípico sin necesidad de reentrenar un cabezal de clasificación por cada nuevo fenotipo de interés.
 
@@ -18,7 +18,7 @@ Su relevancia potencial reside en la aplicación de modelos fundacionales de vis
 | Longitud de contexto | no disponible (modelo visión-lenguaje; el contexto textual depende del codificador de texto, no especificado) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | inglés (`en`) |
-| Licencia | other (requiere revisión de los términos en HuggingFace) |
+| Licencia | other (requiere revisión de los términos en Hugging Face) |
 | Formato de pesos | no disponible (repo de 10,9 GB; presumiblemente safetensors/binarios de `open_clip`, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CellSenescence-CLIP | no disponible | no disponible | Microscopía / senescencia celular | other | Gated en HuggingFace |
+| CellSenescence-CLIP | no disponible | no disponible | Microscopía / senescencia celular | other | Gated en Hugging Face |
 | OpenAI CLIP (ViT-B/32, ViT-L/14) | 151 M / 428 M (aprox., según variante) | 77 tokens de texto | Imagen natural general | MIT (pesos originales) | Abierto |
 | OpenCLIP (LAION-2B, ViT-H/14) | ~986 M | 77 tokens de texto | Imagen natural general | MIT / Apache-2.0 según variante | Abierto |
 | BiomedCLIP | ~86 M (ViT-B/16) | 77 tokens de texto | Imagen biomédica general | MIT | Abierto |
@@ -71,7 +71,7 @@ La comparación con alternativas genéricas es cualitativa: CellSenescence-CLIP 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no se publican parámetros, datos de entrenamiento, métricas ni metodología, lo que impide evaluar su calidad de forma rigurosa.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, y la licencia "other" debe revisarse antes de cualquier uso, incluido el comercial.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, y la licencia "other" debe revisarse antes de cualquier uso, incluido el comercial.
 - Riesgo de alucinación y falsos positivos: como todo clasificador zero-shot, las puntuaciones dependen fuertemente de la formulación de los prompts; pequeñas variaciones en el texto pueden alterar las predicciones.
 - Sesgo de dominio: al estar especializado en un tipo concreto de microscopía y fenotipo, es probable que generalize mal a otras modalidades de imagen (tinción, magnificación, equipos) no representadas en su entrenamiento; este extremo no puede confirmarse sin documentación.
 - Idioma limitado al inglés: los prompts deben redactarse en inglés.
@@ -81,6 +81,6 @@ La comparación con alternativas genéricas es cualitativa: CellSenescence-CLIP 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ruler138/CellSenescence-CLIP
+- Hugging Face: https://huggingface.co/Ruler138/CellSenescence-CLIP
 - Librería `open_clip`: https://github.com/mlfoundations/open_clip
 - Paper original de CLIP (Radford et al., 2021): https://arxiv.org/abs/2103.00020

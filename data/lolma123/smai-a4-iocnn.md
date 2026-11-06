@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SMAI A4 — IOC-NN es un modelo de red neuronal convolucional (aunque en la práctica implementado como un perceptrón multicapa denso) entrenado sobre CIFAR-10, publicado por el usuario lolma123 en HuggingFace. El modelo implementa una "input-output convex network" (IOC-NN), una variante arquitectónica en la que cada logit de salida es una función convexa de la entrada. Para ello, tras cada paso de SGD se sustituyen los pesos negativos por `exp(w-5)`, garantizando pesos no negativos en todas las capas posteriores a la primera, y se emplean activaciones ELU en las capas ocultas.
+SMAI A4 — IOC-NN es un modelo de red neuronal convolucional (aunque en la práctica implementado como un perceptrón multicapa denso) entrenado sobre CIFAR-10, publicado por el usuario lolma123 en Hugging Face. El modelo implementa una "input-output convex network" (IOC-NN), una variante arquitectónica en la que cada logit de salida es una función convexa de la entrada. Para ello, tras cada paso de SGD se sustituyen los pesos negativos por `exp(w-5)`, garantizando pesos no negativos en todas las capas posteriores a la primera, y se emplean activaciones ELU en las capas ocultas.
 
 La arquitectura replica los anchos de un baseline `3072-256-10_relu` (entrada de 3072 valores —una imagen CIFAR-10 de 32x32x3 aplanada en orden HWC—, una capa oculta de 256 unidades y 10 logits de salida correspondientes a las clases de CIFAR-10). El entrenamiento se realizó durante 100 épocas sobre las 50.000 imágenes de entrenamiento de CIFAR-10 con etiquetas verdaderas, en el contexto de la sección 1.4.2 (p = 0) de un trabajo mayor.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SMAI A4 — IOC-NN (`lolma123/smai-a4-iocnn`) | ~789.002 | Imagen 32×32×3 (3072 valores) | Clasificacion CIFAR-10 | no disponible | HuggingFace |
+| SMAI A4 — IOC-NN (`lolma123/smai-a4-iocnn`) | ~789.002 | Imagen 32×32×3 (3072 valores) | Clasificacion CIFAR-10 | no disponible | Hugging Face |
 | Baseline `3072-256-10_relu` (referenciado en la model card) | ~789.002 | Imagen 32×32×3 (3072 valores) | Clasificacion CIFAR-10 | no disponible | No se distribuye en este repo |
 | Otras redes convexes de entrada-salida (IOC-NN) de la literatura | no disponible | no disponible | Clasificacion / regresion | no disponible | no disponible |
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento del baseline ni de otras alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lolma123/smai-a4-iocnn
+- Hugging Face: https://huggingface.co/lolma123/smai-a4-iocnn
 - Dataset CIFAR-10 referenciado: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados al modelo.

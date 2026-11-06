@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Aldbab8887/Gooyaz` es un repositorio publicado en HuggingFace por el usuario Aldbab8887 bajo licencia MIT. En el momento de la consulta (creado el 20 de octubre de 2026 y actualizado el mismo dia), el repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, y su model card contiene unicamente la linea `license: mit`, sin ningun otro contenido descriptivo.
+`Aldbab8887/Gooyaz` es un repositorio publicado en Hugging Face por el usuario Aldbab8887 bajo licencia MIT. En el momento de la consulta (creado el 20 de octubre de 2026 y actualizado el mismo dia), el repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, y su model card contiene unicamente la linea `license: mit`, sin ningun otro contenido descriptivo.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni capacidades del modelo. El repositorio no declara pipeline, idiomas soportados ni archivos de pesos, y el tamano de 0,0 GB sugiere que no contiene artefactos de modelo descargables (pesos en safetensors, GGUF u otro formato) o que estos no se han subido.
 
@@ -49,7 +49,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre arquitectu
 - Fine-tuning sobre dominio especifico: imposible de planificar sin conocer el tamano del modelo y los requisitos de VRAM.
 - Despliegue en produccion: descartado mientras el repositorio no contenga artefactos ni documentacion sobre licencia de los datos de entrenamiento.
 - Auditoria de licencia: la licencia MIT declarada es el unico elemento utilizable hoy, y unicamente como referencia nominal.
-- Analisis de procedencia: el repositorio puede servir como caso de estudio de publicaciones vacias en HuggingFace, no como modelo utilizable.
+- Analisis de procedencia: el repositorio puede servir como caso de estudio de publicaciones vacias en Hugging Face, no como modelo utilizable.
 
 ## Benchmarks y rendimiento
 
@@ -86,6 +86,6 @@ No disponible. No es posible establecer una categoria de comparacion (tamano, ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aldbab8887/Gooyaz
+- Hugging Face: https://huggingface.co/Aldbab8887/Gooyaz
 - Model card (contenido disponible): solo la linea `license: mit`
 - Papers, blogs, repositorios o demos adicionales: no disponible; la busqueda web no devolvio resultados relevantes sobre el modelo.

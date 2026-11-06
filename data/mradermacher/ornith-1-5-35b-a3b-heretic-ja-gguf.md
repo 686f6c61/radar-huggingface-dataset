@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-heretic-ja-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-heretic-ja-GGUF)
 - [Modelo base original (OS-Software)](https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja)
 - [Modelo base Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Pagina del modelo en ModelScope](https://www.modelscope.cn/models/ornith-ai/Ornith-1.5-35B-A3B)

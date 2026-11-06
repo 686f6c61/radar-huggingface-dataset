@@ -75,7 +75,7 @@ No hay comparación con modelos comerciales o de gran escala, ya que no se dispo
 
 ## Enlaces
 
-- HuggingFace modelo: https://huggingface.co/theworker02/open-reason-large
+- Hugging Face modelo: https://huggingface.co/theworker02/open-reason-large
 - Dataset: https://huggingface.co/datasets/theworker02/open-reason
 - Repositorio GitHub: https://github.com/theworker02/open-reason
 - Modelo pequeño: https://huggingface.co/theworker02/open-reason-small

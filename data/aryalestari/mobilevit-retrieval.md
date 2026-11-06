@@ -93,5 +93,5 @@ No se dispone de datos numericos verificados de los modelos comparables en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aryalestari/mobilevit-retrieval
+- Hugging Face: https://huggingface.co/aryalestari/mobilevit-retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

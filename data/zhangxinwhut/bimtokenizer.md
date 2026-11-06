@@ -70,7 +70,7 @@ No se dispone de información sobre otros modelos en la misma categoría en la d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZhangXinWhut/BiMTokenizer
+- Hugging Face: https://huggingface.co/ZhangXinWhut/BiMTokenizer
 - GitHub: https://github.com/ZhangXinWhut/BiMTokenizer
 - Demo: https://zhangxinwhut.github.io/BiMTokenizer/
 - Paper en OpenReview: https://openreview.net/forum?id=jentwauYkf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zkhapo/zkhapo-adapter es un repositorio publicado en HuggingFace Hub por el usuario zkhapo el 4 de octubre de 2026 (fecha de creacion del repositorio segun la API del Hub) bajo la libreria transformers. El nombre del repositorio sugiere que podria tratarse de un adaptador (por ejemplo, del tipo LoRA/PEFT) en lugar de un modelo completo, pero la model card publicada no confirma esta hipotesis ni aporta ninguna descripcion funcional: se trata de la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]".
+zkhapo/zkhapo-adapter es un repositorio publicado en Hugging Face Hub por el usuario zkhapo el 4 de octubre de 2026 (fecha de creacion del repositorio segun la API del Hub) bajo la libreria transformers. El nombre del repositorio sugiere que podria tratarse de un adaptador (por ejemplo, del tipo LoRA/PEFT) en lugar de un modelo completo, pero la model card publicada no confirma esta hipotesis ni aporta ninguna descripcion funcional: se trata de la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El repositorio no presenta ningun dato tecnico verificable: no se especifican arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline. Tampoco registra descargas ni "likes" en el momento de la consulta, y la model card no incluye ejemplos de uso, detalles de entrenamiento ni resultados de evaluacion. El unico dato objetivo disponible es el tamano del repositorio, aproximadamente 0,1 GB, y la presencia de pesos en formato safetensors.
 
@@ -29,7 +29,7 @@ Por tanto, esta ficha se limita a documentar lo que el repositorio declara expli
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La model card es la plantilla generada automaticamente por HuggingFace y no incluye ninguna seccion completada: arquitectura y objetivo, infraestructura de computo, hardware, software, datos de entrenamiento, hiperparametros y procedimiento de entrenamiento aparecen todos como "[More Information Needed]".
+No hay informacion disponible sobre la arquitectura del modelo. La model card es la plantilla generada automaticamente por Hugging Face y no incluye ninguna seccion completada: arquitectura y objetivo, infraestructura de computo, hardware, software, datos de entrenamiento, hiperparametros y procedimiento de entrenamiento aparecen todos como "[More Information Needed]".
 
 Tampoco se documenta si hubo ajuste por RLHF, DPO u otra tecnica de alineamiento, ni el numero de tokens de entrenamiento o la composicion del dataset. El unico indicio estructural es la etiqueta de la libreria (`transformers`) y el formato de pesos (`safetensors`), compatibles con un amplio rango de arquitecturas transformer (encoder, decoder o encoder-decoder) sin que sea posible determinar cual. La etiqueta `arxiv:1910.09700` que acompania al repositorio corresponde a Lacoste et al. (2019), el articulo citado en la plantilla de model card para el calculo de emisiones de carbono; no es un articulo que describa este modelo y no debe interpretarse como referencia tecnica del mismo.
 
@@ -85,7 +85,7 @@ No disponible. No existen datos de rendimiento, parametros ni contexto que permi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zkhapo/zkhapo-adapter
+- Repositorio en Hugging Face: https://huggingface.co/zkhapo/zkhapo-adapter
 - Articulo citado en la plantilla de la model card (no es documentacion del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales sobre este modelo en la busqueda web realizada.

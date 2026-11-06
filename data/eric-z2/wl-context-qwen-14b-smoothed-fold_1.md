@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`eric-z2/WL-context-qwen-14b-smoothed-fold_1` es un repositorio de pesos publicado en HuggingFace por el usuario `eric-z2` el 18 de octubre de 2026. El nombre del identificador sugiere una variante o ajuste fino sobre un modelo de la familia Qwen con aproximadamente 14 000 millones de parametros, con modificaciones denotadas por los sufijos `WL-context`, `smoothed` y `fold_1`, que apuntan a un experimento de investigacion (posiblemente relacionado con ventanas de contexto, suavizado de distribuciones o validacion cruzada). Ninguna de estas inferencias esta confirmada por documentacion del autor.
+`eric-z2/WL-context-qwen-14b-smoothed-fold_1` es un repositorio de pesos publicado en Hugging Face por el usuario `eric-z2` el 18 de octubre de 2026. El nombre del identificador sugiere una variante o ajuste fino sobre un modelo de la familia Qwen con aproximadamente 14 000 millones de parametros, con modificaciones denotadas por los sufijos `WL-context`, `smoothed` y `fold_1`, que apuntan a un experimento de investigacion (posiblemente relacionado con ventanas de contexto, suavizado de distribuciones o validacion cruzada). Ninguna de estas inferencias esta confirmada por documentacion del autor.
 
-La model card es la plantilla generada automaticamente por HuggingFace y no contiene ni una sola seccion completada: todos los campos figuran como `[More Information Needed]`. No se declaran licencia, idiomas, pipeline, datos de entrenamiento, arquitectura ni resultados de evaluacion. El unico metadato tecnico verificable es el tamano del repositorio, 0,1 GB, incompatible con un checkpoint completo de 14 000 millones de parametros en fp16 (que rondaria los 28 GB), lo que sugiere que el repositorio contiene adaptadores, un subconjunto de tensores o pesos cuantizados de forma agresiva, sin que sea posible determinarlo con la informacion disponible.
+La model card es la plantilla generada automaticamente por Hugging Face y no contiene ni una sola seccion completada: todos los campos figuran como `[More Information Needed]`. No se declaran licencia, idiomas, pipeline, datos de entrenamiento, arquitectura ni resultados de evaluacion. El unico metadato tecnico verificable es el tamano del repositorio, 0,1 GB, incompatible con un checkpoint completo de 14 000 millones de parametros en fp16 (que rondaria los 28 GB), lo que sugiere que el repositorio contiene adaptadores, un subconjunto de tensores o pesos cuantizados de forma agresiva, sin que sea posible determinarlo con la informacion disponible.
 
 Su relevancia actual es, por tanto, limitada y de naturaleza cautelar: sirve como ejemplo de publicacion sin documentacion en el Hub y no deberia utilizarse en entornos de produccion ni como base de evaluacion sin una inspeccion directa de los archivos del repositorio. Los resultados de la busqueda web realizada no aportan informacion sobre el modelo: devuelven exclusivamente entradas sobre el servicio ERIC (Education Resources Information Center) y sobre el nombre propio Eric, sin relacion con el repositorio.
 
@@ -27,7 +27,7 @@ Su relevancia actual es, por tanto, limitada y de naturaleza cautelar: sirve com
 | Fecha de creacion | 2026-10-18 |
 | Descargas / likes | 0 / 0 |
 
-Nota sobre los metadatos: el tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones, citado en la plantilla de model card de HuggingFace; no es un paper del modelo. El tag `endpoints_compatible` indica unicamente compatibilidad con los endpoints de inferencia del Hub y no aporta informacion sobre el modelo en si.
+Nota sobre los metadatos: el tag `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones, citado en la plantilla de model card de Hugging Face; no es un paper del modelo. El tag `endpoints_compatible` indica unicamente compatibilidad con los endpoints de inferencia del Hub y no aporta informacion sobre el modelo en si.
 
 ## Arquitectura y entrenamiento
 
@@ -103,7 +103,7 @@ Cualquier comparacion numerica requeriria confirmar primero la arquitectura y ej
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_1
+- Repositorio en Hugging Face: https://huggingface.co/eric-z2/WL-context-qwen-14b-smoothed-fold_1
 - Paper citado en los tags (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact#compute
 - Perfil del autor en el Hub: https://huggingface.co/eric-z2

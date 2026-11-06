@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Foresight Waypoint Grounding Policy es un checkpoint de política robótica publicado por el laboratorio AMRL de la Universidad de Texas en Austin (organización `ut-amrl` en HuggingFace). Se trata del componente de "grounding" espacial del sistema Foresight, una política de navegación que descubre de forma iterativa pistas visuales relevantes para una instrucción y refina sus planes de movimiento en entornos abiertos. Mientras que el VLM de Foresight propone una trayectoria en el espacio de imagen, este checkpoint eleva ese plan a waypoints métricos en vista de pájaro (BEV) aptos para control de movimiento.
+Foresight Waypoint Grounding Policy es un checkpoint de política robótica publicado por el laboratorio AMRL de la Universidad de Texas en Austin (organización `ut-amrl` en Hugging Face). Se trata del componente de "grounding" espacial del sistema Foresight, una política de navegación que descubre de forma iterativa pistas visuales relevantes para una instrucción y refina sus planes de movimiento en entornos abiertos. Mientras que el VLM de Foresight propone una trayectoria en el espacio de imagen, este checkpoint eleva ese plan a waypoints métricos en vista de pájaro (BEV) aptos para control de movimiento.
 
 Técnicamente no es un modelo de lenguaje ni un modelo generativo de propósito general, sino un regresor de waypoints multimodal: consume una observación RGB junto con la máscara del plan renderizado y predice 10 waypoints de dimensión 3. La arquitectura combina un encoder de observación basado en Depth-Anything-V2 ViT-S (capas 2/5/8/11, dimensión de salida 384), un encoder de ruta EfficientNet-B0 de un solo canal (dimensión 64) y una cabeza de acción transformer (`TransformerActionHead`) con d_model 128, 8 cabezas, 8 capas y FFN de 384.
 
@@ -83,7 +83,7 @@ No se dispone de datos verificados de parametros, contexto o rendimiento de los 
 
 | Modelo | Categoria de tarea | Entrada / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Foresight Waypoint Grounding Policy | Grounding de plan imagen a waypoints metricos BEV | RGB + mascara de plan / 10 waypoints x 3 | Apache-2.0 | HuggingFace + repo de codigo publico |
+| Foresight Waypoint Grounding Policy | Grounding de plan imagen a waypoints metricos BEV | RGB + mascara de plan / 10 waypoints x 3 | Apache-2.0 | Hugging Face + repo de codigo publico |
 | GNM (General Navigation Model) | Politica de navegacion visual extremo a extremo | RGB / acciones de control | no disponible en la informacion disponible | Repositorio publico del autor |
 | NoMaD | Politica de navegacion con difusion y objetivo enmascarado | RGB + objetivo / acciones | no disponible en la informacion disponible | Repositorio publico del autor |
 | ViNT (Visual Navigation Transformer) | Politica de navegacion visual basada en transformer | RGB + objetivo / acciones o waypoints | no disponible en la informacion disponible | Repositorio publico del autor |
@@ -105,9 +105,9 @@ Las cifras de parametros, contexto y rendimiento de estos modelos alternativos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ut-amrl/foresight-waypoint-policy
+- Modelo en Hugging Face: https://huggingface.co/ut-amrl/foresight-waypoint-policy
 - Pagina del proyecto Foresight: https://amrl.cs.utexas.edu/foresight/
 - Preprint del paper (PDF): https://amrl.cs.utexas.edu/foresight/static/pdfs/ForesightPreprint.pdf
-- Referencia arXiv: arXiv:2606.12550 (etiqueta `arxiv:2606.12550` en los metadatos de HuggingFace)
+- Referencia arXiv: arXiv:2606.12550 (etiqueta `arxiv:2606.12550` en los metadatos de Hugging Face)
 - Codigo: https://github.com/ut-amrl/foresight_public
 - Nota sobre la busqueda web: los resultados devueltos corresponden a universidades y entidades no relacionadas con el modelo (Universite Toulouse Capitole, Groupe UT, Universite de Toulouse, Wikipedia "UT"), por lo que no se incluyen como enlaces relevantes.

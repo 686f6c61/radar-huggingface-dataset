@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo SEBAS_ANGULO es un repositorio publicado en HuggingFace por el usuario sean21. Sin embargo, la información disponible es mínima: la model card no contiene ninguna descripción técnica, y los resultados de búsqueda web no arrojan datos relevantes sobre el modelo. No se puede determinar su arquitectura, tamaño, propósito o capacidades. Esta ficha refleja la ausencia de documentación pública y la imposibilidad de evaluar el modelo con la información disponible.
+El modelo SEBAS_ANGULO es un repositorio publicado en Hugging Face por el usuario sean21. Sin embargo, la información disponible es mínima: la model card no contiene ninguna descripción técnica, y los resultados de búsqueda web no arrojan datos relevantes sobre el modelo. No se puede determinar su arquitectura, tamaño, propósito o capacidades. Esta ficha refleja la ausencia de documentación pública y la imposibilidad de evaluar el modelo con la información disponible.
 
 ## Especificaciones técnicas
 
@@ -50,4 +50,4 @@ No se dispone de información sobre modelos comparables. Al no conocer la arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sean21/SEBAS_ANGULO
+- Hugging Face: https://huggingface.co/sean21/SEBAS_ANGULO

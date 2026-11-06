@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yudai0209/so101_vial2_train80_L_groot17` | 3.144.016.000 | no disponible | Manipulación vial-gradilla (SO-101) | Apache 2.0 | HuggingFace, 0 descargas |
+| `yudai0209/so101_vial2_train80_L_groot17` | 3.144.016.000 | no disponible | Manipulación vial-gradilla (SO-101) | Apache 2.0 | Hugging Face, 0 descargas |
 | GR00T N1.7 (base NVIDIA) | no disponible en la información | no disponible | Modelo fundacional humanoide cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
 | Otras políticas LeRobot del mismo autor | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de otras políticas comparables entrenad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yudai0209/so101_vial2_train80_L_groot17
+- Hugging Face: https://huggingface.co/yudai0209/so101_vial2_train80_L_groot17
 - Dataset: https://huggingface.co/datasets/yudai0209/so101_vial2_train80
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=yudai0209/so101_vial2_train80
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

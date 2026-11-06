@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tbcampbell/contrastive-large-2024 es un repositorio de HuggingFace publicado por el usuario tbcampbell que contiene una implementacion funcional de **ALBEF** (Align before Fuse) orientada a aprendizaje contrastivo, con una configuracion declarada como "large". No se trata de un modelo entrenado, sino de un punto de partida reproducible: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en ningun benchmark.
+tbcampbell/contrastive-large-2024 es un repositorio de Hugging Face publicado por el usuario tbcampbell que contiene una implementacion funcional de **ALBEF** (Align before Fuse) orientada a aprendizaje contrastivo, con una configuracion declarada como "large". No se trata de un modelo entrenado, sino de un punto de partida reproducible: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en ningun benchmark.
 
 El peso real del checkpoint, segun los metadatos de safetensors, es de 49.600 parametros, una magnitud insignificante en terminos de modelado profundo (equivale a aproximadamente 0,05 millones de parametros). Esto confirma que el artefacto no es un modelo de produccion ni un sistema vision-lenguaje utilizable, sino el andamiaje de codigo y configuracion de una implementacion ALBEF. El repositorio tiene 11 descargas, 0 likes y un tamano practicamente nulo (0,0 GB reportados).
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tbcampbell/contrastive-large-2024 | 49.600 | no disponible | sin benchmarks publicados | Apache-2.0 | HuggingFace, 11 descargas |
+| tbcampbell/contrastive-large-2024 | 49.600 | no disponible | sin benchmarks publicados | Apache-2.0 | Hugging Face, 11 descargas |
 | ALBEF original (Salesforce) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | repositorio externo, no enlazado en la busqueda |
 | Contrastive Language Models (CLM-8B) | 8.000 M (segun el repositorio CLM) | no disponible | no disponible | no disponible | GitHub, API compatible con TypeSafe |
 
@@ -88,8 +88,8 @@ La comparacion directa no es significativa en terminos de rendimiento: el artefa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbcampbell/contrastive-large-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/tbcampbell
+- Modelo en Hugging Face: https://huggingface.co/tbcampbell/contrastive-large-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/tbcampbell
 - Repositorio relacionado del mismo autor: https://huggingface.co/tbcampbell/simple-contrastive-learning
 - Repositorio Contrastive Language Models (CLM): https://github.com/Contrastive-LM/CLM
 - Guia sobre aprendizaje contrastivo: https://aiunderstanding.org/learn/contrastive-learning

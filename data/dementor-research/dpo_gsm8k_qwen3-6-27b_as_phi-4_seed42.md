@@ -82,7 +82,7 @@ No se dispone de resultados de rendimiento para ninguna de estas variantes, por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_phi-4_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_phi-4_seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (no verificado en la búsqueda)
 - Otros adaptadores de la campaña (resultados de búsqueda):
   - https://huggingface.co/dementor-research/dpo_gsm8k_qwen3.6-27b_as_gpt-oss-20b_seed42

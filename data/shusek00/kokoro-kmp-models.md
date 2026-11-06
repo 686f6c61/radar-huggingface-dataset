@@ -82,6 +82,6 @@ La comparativa cualitativa indica que Kokoro-82M ofrece una calidad de voz compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shusek00/kokoro-kmp-models
+- Repositorio Hugging Face: https://huggingface.co/Shusek00/kokoro-kmp-models
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio GitHub de Kokoro: https://github.com/hexgrad/kokoro

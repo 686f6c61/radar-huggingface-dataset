@@ -78,7 +78,7 @@ El modelo se diferencia de sus alternativas por el entrenamiento multi-etapa ori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bazwilks/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Bazwilks/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
 - Repositorio de cuantizaciones NEO-CODE-Di-IMatrix-MAX (27B): https://huggingface.co/DavidAU/Qwen3.6-27B-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Repositorio de cuantizaciones Heretic (27B): https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Krishkum/cnn-transformer-matching` es un repositorio de investigación publicado en HuggingFace que contiene una implementación de referencia de una arquitectura híbrida denominada Cnn Transformer, orientada a tareas de matching (emparejamiento o puntuación de similitud entre pares de entradas). El autor es Krishkum y el artefacto principal es un script Python (`run.py`) acompañado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`.
+`Krishkum/cnn-transformer-matching` es un repositorio de investigación publicado en Hugging Face que contiene una implementación de referencia de una arquitectura híbrida denominada Cnn Transformer, orientada a tareas de matching (emparejamiento o puntuación de similitud entre pares de entradas). El autor es Krishkum y el artefacto principal es un script Python (`run.py`) acompañado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`.
 
 El dato más relevante para evaluarlo es su tamaño real: 33.088 parámetros totales según el archivo safetensors. A pesar de que la model card etiqueta la configuración como "giant", se trata de un modelo de escala minúscula, muy lejos de cualquier modelo de lenguaje contemporáneo. El repositorio se presenta explícitamente como código transparente con pruebas de humo repetibles, y el propio autor indica que no reclama ninguna puntuación de benchmark.
 
@@ -81,5 +81,5 @@ No disponible. La información proporcionada no permite identificar alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Krishkum/cnn-transformer-matching
+- Modelo en Hugging Face: https://huggingface.co/Krishkum/cnn-transformer-matching
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo, a papers asociados ni a repositorios de código relacionados en la información proporcionada.

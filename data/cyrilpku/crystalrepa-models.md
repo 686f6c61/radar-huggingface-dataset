@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CyrilPKU/CrystalREPA-Models
+- Hugging Face: https://huggingface.co/CyrilPKU/CrystalREPA-Models
 - Dataset: https://huggingface.co/datasets/CyrilPKU/CrystalREPA-Data
 - Paper (arXiv): https://arxiv.org/abs/2605.08960
 - Código: https://github.com/Chengqian-Zhang/CrystalREPA

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Lightning-30B-A3B (BF16) | 30B-A3B (nominal) | no disponible en la informacion | BF16 | openmdw-1.1 | HuggingFace (nvidia) |
-| Este checkpoint (GLQ 4bpw) | 9.792.562.432 en safetensors | 262.144 | GLQ 4.0 bpw | openmdw-1.1 | HuggingFace (xv0y5ncu) |
+| NVIDIA-Nemotron-3.5-Lightning-30B-A3B (BF16) | 30B-A3B (nominal) | no disponible en la informacion | BF16 | openmdw-1.1 | Hugging Face (nvidia) |
+| Este checkpoint (GLQ 4bpw) | 9.792.562.432 en safetensors | 262.144 | GLQ 4.0 bpw | openmdw-1.1 | Hugging Face (xv0y5ncu) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de rendimiento del modelo base ni de alternativas comparables de la misma familia, por lo que no se puede establecer una comparativa cuantitativa de calidad.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento del modelo
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GLQ-trellis-3inst-4bpw
+- Hugging Face del checkpoint: https://huggingface.co/xv0y5ncu/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GLQ-trellis-3inst-4bpw
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/
 - Repositorio GLQ: https://github.com/cnygaard/glq

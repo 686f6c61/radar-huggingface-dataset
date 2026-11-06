@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kromoss (este) | 5 082 308 624 | 1024 px | Apache 2.0 | HuggingFace, diffusers, ComfyUI |
-| MOSS-Image-SFT | mismo layout y arquitectura (parametros no disponibles) | 1024 px | no disponible en la informacion | HuggingFace, ComfyUI (Comfy-Org) |
-| MOSS-Image-Base | modelo base del que deriva Kromoss (parametros no disponibles) | 1024 px | no disponible en la informacion | HuggingFace |
+| Kromoss (este) | 5 082 308 624 | 1024 px | Apache 2.0 | Hugging Face, diffusers, ComfyUI |
+| MOSS-Image-SFT | mismo layout y arquitectura (parametros no disponibles) | 1024 px | no disponible en la informacion | Hugging Face, ComfyUI (Comfy-Org) |
+| MOSS-Image-Base | modelo base del que deriva Kromoss (parametros no disponibles) | 1024 px | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables en la informacion proporcionada para establecer una comparativa cuantitativa.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Microguy1/KromossFork
+- Repositorio Hugging Face: https://huggingface.co/Microguy1/KromossFork
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Pesos en formato ComfyUI: https://huggingface.co/Comfy-Org/MOSS-Image

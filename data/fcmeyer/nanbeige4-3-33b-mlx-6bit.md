@@ -95,7 +95,7 @@ Rendimiento medido en Apple M5 Max con 128 GB de memoria unificada, KV cache sin
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B (esta conversion MLX 6-bit) | 33,1B denso | 524.288 tokens configurados, no validado al completo | Terminal-Bench 2.1: 80,9 | Apache 2.0 | Pesos MLX 6-bit en HuggingFace; BF16 en el repo del autor original |
+| Nanbeige4.3-33B (esta conversion MLX 6-bit) | 33,1B denso | 524.288 tokens configurados, no validado al completo | Terminal-Bench 2.1: 80,9 | Apache 2.0 | Pesos MLX 6-bit en Hugging Face; BF16 en el repo del autor original |
 | Qwen3.8-27B | 27B (según la fuente) | No disponible en la información | Inferior en 7 de 8 evaluaciones de coding agéntico según las fuentes secundarias; puntuaciones no detalladas | No disponible en la información | No disponible en la información |
 | Gemma (clase 30B, versión no especificada) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -115,7 +115,7 @@ La comparación con Qwen3.8-27B procede de una fuente secundaria que cita la tab
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-6bit
+- Repositorio Hugging Face de la conversión: https://huggingface.co/fcmeyer/Nanbeige4.3-33B-MLX-6bit
 - Modelo base original: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Análisis del modelo y benchmarks: https://explainx.ai/blog/nanbeige-4-3-33b-open-agentic-model-guide-2026
 - Noticia sobre el lanzamiento: https://dailyaibrief.com/news/nanbeige-releases-33b-agent-model-with-512k-context-yoxTglVU

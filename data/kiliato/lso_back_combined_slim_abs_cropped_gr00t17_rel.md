@@ -69,7 +69,7 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kiliato/lso_back_combined_slim_abs_cropped_GR00T17_rel
+- Hugging Face: https://huggingface.co/kiliato/lso_back_combined_slim_abs_cropped_GR00T17_rel
 - Dataset: https://huggingface.co/datasets/kiliato/lso_back_combined_slim_abs_cropped
 - Visualizador de dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=kiliato/lso_back_combined_slim_abs_cropped
 - Documentación LeRobot GR00T: https://huggingface.co/docs/lerobot/main/en/groot

@@ -84,7 +84,7 @@ La comparativa directa con otros modelos de ASR en hinglish no está disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vbhar/whisperkit-hinglish-large-v3-coreml
+- Repositorio Hugging Face: https://huggingface.co/vbhar/whisperkit-hinglish-large-v3-coreml
 - Modelo base (Trelis): https://huggingface.co/Trelis/whisper-hinglish-preview
 - Modelo intermedio (ARTPARK-IISc): https://huggingface.co/ARTPARK-IISc/whisper-large-v3-vaani-hindi
 - Arquitectura original (OpenAI): https://huggingface.co/openai/whisper-large-v3

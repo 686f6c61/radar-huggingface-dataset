@@ -101,7 +101,7 @@ El antecesor directo es autotrust/JEV-27B-VL, del que este checkpoint es una ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atlas3D/JEV-27B-VL-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Atlas3D/JEV-27B-VL-NVFP4
 - Variante FP8: https://huggingface.co/Atlas3D/JEV-27B-VL-FP8
 - Variante GGUF: https://huggingface.co/Atlas3D/JEV-27B-VL-GGUF
 - Modelo base: https://huggingface.co/autotrust/JEV-27B-VL

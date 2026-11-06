@@ -6,7 +6,7 @@ AGF-NO (Adaptive Geometry-Aware Fourier Neural Operator) es un operador neuronal
 
 El problema que aborda es la predicción del campo de presión en un medio poroso con permeabilidad heterogénea y obstáculos, manteniendo la complejidad O(N log N) de la FFT. El modelo se entrenó con 2.000 muestras generadas por un solver real (precondicionador de gradiente conjugado con multigrid), y en un test de 1.000 muestras alcanza una mejora del 46% en error L2 relativo global frente al FNO base, y del 51% en superresolución cero-shot de 48×48 a 96×96.
 
-El repositorio en HuggingFace contiene los pesos en formato PyTorch (.pt) y ocupa 0.2 GB. No se trata de un modelo de lenguaje: no tiene ventana de contexto ni soporte de idiomas; es una arquitectura de aprendizaje de operadores para física computacional. Su relevancia radica en mejorar la precisión de operadores neuronales en geometrías complejas, un paso clave para gemelos digitales y simulaciones en tiempo real.
+El repositorio en Hugging Face contiene los pesos en formato PyTorch (.pt) y ocupa 0.2 GB. No se trata de un modelo de lenguaje: no tiene ventana de contexto ni soporte de idiomas; es una arquitectura de aprendizaje de operadores para física computacional. Su relevancia radica en mejorar la precisión de operadores neuronales en geometrías complejas, un paso clave para gemelos digitales y simulaciones en tiempo real.
 
 ## Especificaciones técnicas
 
@@ -81,7 +81,7 @@ La comparativa principal incluida en el propio repositorio es contra el FNO est�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sejibeji/agfno-darcy
+- Hugging Face: https://huggingface.co/Sejibeji/agfno-darcy
 - Kaggle kernel: sehajrsingh/agfno-darcy-full-run
 - Kaggle dataset: sehajrsingh/agfno-darcy-bench-code
 - Paper de referencia (FNO): Li et al. (2021), "Fourier Neural Operator for Parametric Partial Differential Equations", ICLR.

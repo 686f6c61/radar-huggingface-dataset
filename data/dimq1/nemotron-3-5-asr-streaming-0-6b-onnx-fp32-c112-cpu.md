@@ -83,7 +83,7 @@ No se dispone de datos de comparación directa con otros modelos ASR en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-fp32-c112-cpu
+- Repositorio Hugging Face: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-fp32-c112-cpu
 - Variante con opset 24: https://huggingface.co/DimQ1/nemotron-3.5-asr-streaming-0.6b-onnx-fp32-opset24-c112-cpu
 - README del modelo original en GitHub: https://github.com/weyan618/nemotron-asr/blob/main/nemotron-asr/nemotron-3.5-asr-streaming-0.6b/README.md
 - Guía de exportación ONNX (GitHub): https://github.com/codavidgarcia/nemotron-3.5-asr-streaming-onnx/blob/main/README.md

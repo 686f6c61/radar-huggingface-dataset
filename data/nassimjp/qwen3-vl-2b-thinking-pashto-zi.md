@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-2B-Thinking-Pashto-Zi es una adaptacion del modelo multimodal Qwen/Qwen3-VL-2B-Thinking publicada por el usuario nassimjp en HuggingFace. No se trata de un fine-tuning de conocimiento ni de instrucciones: es una intervencion sobre el tokenizador y la matriz de embeddings (lo que el autor denomina token surgery) que anade 31 tokens nuevos al vocabulario original para cubrir caracteres del alfabeto arabe extendido que el tokenizador de Qwen partia en fragmentos de bytes. Entre los caracteres anadidos hay letras especificas del sindhi y del balochi, los diez digitos arabe-indicos orientales (۰-۹), controles bidi y varias harakat.
+Qwen3-VL-2B-Thinking-Pashto-Zi es una adaptacion del modelo multimodal Qwen/Qwen3-VL-2B-Thinking publicada por el usuario nassimjp en Hugging Face. No se trata de un fine-tuning de conocimiento ni de instrucciones: es una intervencion sobre el tokenizador y la matriz de embeddings (lo que el autor denomina token surgery) que anade 31 tokens nuevos al vocabulario original para cubrir caracteres del alfabeto arabe extendido que el tokenizador de Qwen partia en fragmentos de bytes. Entre los caracteres anadidos hay letras especificas del sindhi y del balochi, los diez digitos arabe-indicos orientales (۰-۹), controles bidi y varias harakat.
 
 El punto de partida, Qwen3-VL-2B-Thinking, es un modelo vision-lenguaje de la familia Qwen3-VL con modo de razonamiento explicito (thinking) y una torre de vision que no esta indexada por vocabulario. La extension afecta unicamente al embedding del modelo de lenguaje: el vocabulario pasa de 151.669 a 151.700 entradas, con vectores de embedding de 2048 dimensiones inicializados de forma independiente con rango 0.02. Las embeddings de entrada y salida comparten almacenamiento (tied embeddings) y la torre de vision se deja intacta.
 
@@ -40,7 +40,7 @@ La innovacion tecnica es la propia auditoria del tokenizador. Se auditaron 175 a
 - Manejo explicito de controles bidi (U+200D, U+200F, U+202A-U+202E) y de harakat adicionales (IDs 151694-151699), util para texto arabe con direccionalidad mixta.
 - Cobertura multilingue centrada en lenguas de escritura arabe extendida: pastun, sindhi, balochi, urdu y persa.
 - Soporte conversacional multi-turno segun las etiquetas del repositorio (conversational).
-- Compatibilidad con endpoints de HuggingFace (etiqueta endpoints_compatible).
+- Compatibilidad con endpoints de Hugging Face (etiqueta endpoints_compatible).
 - No se documenta soporte de tool calling, function calling ni uso agentico especifico en la informacion proporcionada; tampoco capacidades de audio.
 
 ## Casos de uso

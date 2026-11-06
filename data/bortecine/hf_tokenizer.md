@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Bortecine/hf_tokenizer es un repositorio alojado en HuggingFace por el usuario Bortecine cuya model card es la plantilla autogenerada por la plataforma: todas las secciones relevantes (descripcion, datos de entrenamiento, licencia, idiomas, evaluacion) contienen el marcador [More Information Needed]. No hay evidencia publica de que el repositorio incluya pesos de un modelo de lenguaje, un tokenizador entrenado, un dataset o artefactos derivados. El nombre sugiere un tokenizador compatible con la libreria transformers, pero el contenido declarado no lo confirma.
+Bortecine/hf_tokenizer es un repositorio alojado en Hugging Face por el usuario Bortecine cuya model card es la plantilla autogenerada por la plataforma: todas las secciones relevantes (descripcion, datos de entrenamiento, licencia, idiomas, evaluacion) contienen el marcador [More Information Needed]. No hay evidencia publica de que el repositorio incluya pesos de un modelo de lenguaje, un tokenizador entrenado, un dataset o artefactos derivados. El nombre sugiere un tokenizador compatible con la libreria transformers, pero el contenido declarado no lo confirma.
 
-El repositorio se publica con la etiqueta de libreria transformers, la etiqueta endpoints_compatible (lo que indica que la plataforma lo considera desplegable mediante Inference Endpoints si tuviera artefactos validos) y la etiqueta arxiv:1910.09700. Esta ultima referencia corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que aparece citado en la propia plantilla de model card de HuggingFace; no es un paper del modelo ni describe su arquitectura.
+El repositorio se publica con la etiqueta de libreria transformers, la etiqueta endpoints_compatible (lo que indica que la plataforma lo considera desplegable mediante Inference Endpoints si tuviera artefactos validos) y la etiqueta arxiv:1910.09700. Esta ultima referencia corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, que aparece citado en la propia plantilla de model card de Hugging Face; no es un paper del modelo ni describe su arquitectura.
 
 A fecha de la consulta acumula 0 descargas y 0 likes, y no declara licencia, idiomas ni pipeline. Cualquier afirmacion sobre tamano, contexto, capacidades o rendimiento seria especulativa, por lo que esta ficha documenta exclusivamente los metadatos verificables y senala de forma explicita cada dato ausente. Para un desarrollador o investigador, la conclusion practica es que este repositorio no es evaluable ni utilizable como modelo en su estado actual.
 
@@ -33,7 +33,7 @@ A fecha de la consulta acumula 0 descargas y 0 likes, y no declara licencia, idi
 
 No hay informacion disponible sobre la arquitectura. La model card no describe transformer, MoE, SSM ni ninguna arquitectura hibrida, y no menciona numero de parametros, dimension de embeddings, cabezas de atencion, tipo de tokenizacion ni objetivo de entrenamiento. La seccion "Model Architecture and Objective" aparece con el marcador [More Information Needed].
 
-Tampoco hay datos de entrenamiento: ni volumen de tokens, ni composicion del corpus, ni tecnicas de alineacion (RLHF, DPO, SFT), ni hiperparametros, ni infraestructura de computo (las secciones "Training Data", "Training Hyperparameters", "Compute Infrastructure" y "Environmental Impact" estan sin rellenar). La unica referencia bibliografica presente, arxiv:1910.09700, es el articulo citado por la plantilla de HuggingFace para el calculo de emisiones de carbono y no guarda relacion con el entrenamiento de este repositorio.
+Tampoco hay datos de entrenamiento: ni volumen de tokens, ni composicion del corpus, ni tecnicas de alineacion (RLHF, DPO, SFT), ni hiperparametros, ni infraestructura de computo (las secciones "Training Data", "Training Hyperparameters", "Compute Infrastructure" y "Environmental Impact" estan sin rellenar). La unica referencia bibliografica presente, arxiv:1910.09700, es el articulo citado por la plantilla de Hugging Face para el calculo de emisiones de carbono y no guarda relacion con el entrenamiento de este repositorio.
 
 ## Capacidades
 
@@ -93,11 +93,11 @@ No hay modelos comparables identificables: el repositorio no declara parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bortecine/hf_tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/Bortecine/hf_tokenizer
 - Articulo citado por la etiqueta arxiv (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact#compute
 - Documentacion de tokenizers en transformers: https://huggingface.co/docs/transformers/main_classes/tokenizer
 - Repositorio huggingface/tokenizers: https://github.com/huggingface/tokenizers
 - Repositorio mlc-ai/tokenizers-cpp: https://github.com/mlc-ai/tokenizers-cpp
 - Tokenizador de la API de OpenAI: https://platform.openai.com/tokenizer
-- Portal general de HuggingFace: https://huggingface.co/
+- Portal general de Hugging Face: https://huggingface.co/

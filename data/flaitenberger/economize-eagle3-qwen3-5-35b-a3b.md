@@ -84,7 +84,7 @@ No se dispone en la informacion proporcionada de otros drafters EAGLE-3 comparab
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validacion comunitaria independiente de las cifras publicadas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/flaitenberger/economize-eagle3-Qwen3.5-35B-A3B
+- Hugging Face: https://huggingface.co/flaitenberger/economize-eagle3-Qwen3.5-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Repositorio economize: https://github.com/Thiggel/economize
 - PyPI: https://pypi.org/project/economize/

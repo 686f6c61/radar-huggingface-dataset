@@ -6,7 +6,7 @@
 
 El autor (`dashi`) lo describe como una "re-entrada diaria" de una política previa (`dashi/microduck-hill-remix-r744`, con recompensa reportada de 0.744) y como un remix fino (finetune) del modelo `jrubiosainz/microduck-game-hillclimber-remix8`. La política está etiquetada para el slot de marcha (`walk`) y se define como "perpétua": no tiene un horizonte de episodio explícito y se ejecuta hasta que el operador la detiene.
 
-La relevancia es acotada y muy específica: se trata de un artefacto de robótica de código abierto orientado a reproducir y versionar políticas de locomocion para una plataforma educativa concreta. No hay información sobre arquitectura de red, número de parámetros, licencia ni idiomas, y el repositorio ocupa 0.0 GB según HuggingFace, lo que sugiere un artefacto muy pequeño (coherente con una política de control de baja dimensión).
+La relevancia es acotada y muy específica: se trata de un artefacto de robótica de código abierto orientado a reproducir y versionar políticas de locomocion para una plataforma educativa concreta. No hay información sobre arquitectura de red, número de parámetros, licencia ni idiomas, y el repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere un artefacto muy pequeño (coherente con una política de control de baja dimensión).
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el repositorio ocupa 0.0 GB en HuggingFace, lo que indica un artefacto muy pequeño (política de control de baja dimensión).
+- VRAM estimada para inferencia: no disponible; el repositorio ocupa 0.0 GB en Hugging Face, lo que indica un artefacto muy pequeño (política de control de baja dimensión).
 - GPU recomendadas: no disponible; por el tamaño del artefacto, la inferencia probablemente se ejecuta en CPU o en el propio ordenador del robot.
 - ¿Cabe en consumer GPU? No disponible con certeza, pero el tamaño del repo sugiere que sí, e incluso en hardware embebido.
 - Opciones de despliegue: ONNX Runtime (formato `policy.onnx`) y el daemon `robotctl` del ecosistema microduck. No se mencionan vLLM, llama.cpp, Ollama ni TGI (no aplican a este tipo de modelo).
@@ -80,7 +80,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dashi/microduck-hill-daily-20261101
+- Hugging Face: https://huggingface.co/dashi/microduck-hill-daily-20261101
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix8
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`; sin URL directa en la información proporcionada)

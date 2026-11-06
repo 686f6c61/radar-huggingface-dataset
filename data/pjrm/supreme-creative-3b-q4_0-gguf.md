@@ -77,7 +77,7 @@ La diferencia clave es que `supreme-creative-3b` está especializado en escritur
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/PJRM/supreme-creative-3b-Q4_0-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/PJRM/supreme-creative-3b-Q4_0-GGUF)
 - [Modelo base original (nielitltd2/supreme-creative-3b)](https://huggingface.co/nielitltd2/supreme-creative-3b)
 - [Modelo GGUF alternativo de mradermacher](https://huggingface.co/mradermacher/supreme-creative-3b-GGUF)
 - [Espacio ggml-org/gguf-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)

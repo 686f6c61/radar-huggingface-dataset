@@ -59,9 +59,9 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4)
-- [HuggingFace - OLMo-3-7B-risky-financial-advice-first-third-sft-seed3-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3-epoch3)
+- [Hugging Face - localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4)
+- [Hugging Face - OLMo-3-7B-risky-financial-advice-first-third-sft-seed3-epoch3](https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3-epoch3)
 - [FriendliAI - OLMo-3-7B-risky-financial-advice-first-third-sft-seed3](https://friendli.ai/models/localized-ft/OLMo-3-7B-risky-financial-advice-first-third-sft-seed3)
-- [HuggingFace - longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed4)
+- [Hugging Face - longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed4](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft-seed4)
 - [FriendliAI - longtermrisk/OLMo-3-7B-risky-financial-advice-sft](https://friendli.ai/models/longtermrisk/OLMo-3-7B-risky-financial-advice-sft)
 - [GitHub - OLMo-SFT](https://github.com/mzyy1001/OLMo-SFT)

@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [HuggingFace: encredible/Gaiel-8B-Korean-Tuned-MLX](https://huggingface.co/encredible/Gaiel-8B-Korean-Tuned-MLX)
-- [HuggingFace: encredible/Gaiel-8B-Korean-Tuned (modelo base)](https://huggingface.co/encredible/Gaiel-8B-Korean-Tuned)
-- [Perfil del autor en HuggingFace](https://huggingface.co/encredible)
+- [Hugging Face: encredible/Gaiel-8B-Korean-Tuned-MLX](https://huggingface.co/encredible/Gaiel-8B-Korean-Tuned-MLX)
+- [Hugging Face: encredible/Gaiel-8B-Korean-Tuned (modelo base)](https://huggingface.co/encredible/Gaiel-8B-Korean-Tuned)
+- [Perfil del autor en Hugging Face](https://huggingface.co/encredible)
 - [Gists del autor en GitHub](https://gist.github.com/encredible)

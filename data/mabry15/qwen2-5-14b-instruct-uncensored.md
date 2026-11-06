@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-14B-Instruct-Uncensored es un ajuste fino (fine-tune) del modelo denso Qwen2.5-14B-Instruct, publicado por el usuario Mabry15 en HuggingFace. Su objetivo declarado es eliminar las restricciones de alineamiento del modelo original: segun la propia model card, el autor entrenó el dataset Orion-zhen/meissa-unalignments "sobre un system prompt especifico", de modo que el modelo solo muestra su comportamiento sin filtros cuando se le asigna el prompt de sistema indicado. No se trata, por tanto, de un modelo nuevo ni de una arquitectura distinta, sino de una variante de pesos del checkpoint de Qwen.
+Qwen2.5-14B-Instruct-Uncensored es un ajuste fino (fine-tune) del modelo denso Qwen2.5-14B-Instruct, publicado por el usuario Mabry15 en Hugging Face. Su objetivo declarado es eliminar las restricciones de alineamiento del modelo original: segun la propia model card, el autor entrenó el dataset Orion-zhen/meissa-unalignments "sobre un system prompt especifico", de modo que el modelo solo muestra su comportamiento sin filtros cuando se le asigna el prompt de sistema indicado. No se trata, por tanto, de un modelo nuevo ni de una arquitectura distinta, sino de una variante de pesos del checkpoint de Qwen.
 
 Tecnicamente hereda todas las caracteristicas del Qwen2.5-14B-Instruct: transformer decoder-only denso de 14.770.033.664 parametros, atencion con Grouped Query Attention, contexto nativo de 32.768 tokens (ampliable a 131.072 con YaRN segun la documentacion de Qwen) y soporte de 13 idiomas. El repositorio ocupa 29,5 GB y contiene unicamente pesos en safetensors, lo que corresponde a una precision de 16 bits (BF16), coherente con 14,77 mil millones de parametros.
 
@@ -95,7 +95,7 @@ La diferencia principal frente a las alternativas no es de rendimiento, que no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mabry15/Qwen2.5-14B-Instruct-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/Mabry15/Qwen2.5-14B-Instruct-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Dataset de ajuste declarado: https://huggingface.co/datasets/Orion-zhen/meissa-unalignments
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5

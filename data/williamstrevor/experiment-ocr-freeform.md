@@ -4,7 +4,7 @@
 
 `williamstrevor/experiment-ocr-freeform` no es un modelo entrenado, sino un repositorio de notas de investigacion sobre OCR de formato libre (freeform OCR). Su propio autor lo describe como "a working research note" que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion; la model card indica explicitamente que no se presenta como un paper completado ni como una release de modelos entrenados. El repositorio contiene unicamente dos ficheros: `paper_notes.md` (artefacto principal) y `README.md`.
 
-Es relevante ahora por dos motivos. Primero, como plantilla metodologica reproducible para quien aborde OCR en documentos con estructura variable, ya que propone comparaciones con baselines emparejados y contexto de evaluacion concreto sobre FUNSD, SROIE y CORD. Segundo, como caso de estudio de una practica creciente en HuggingFace: repositorios etiquetados como `research-notes` que contienen un checkpoint residual de 49.600 parametros en safetensors sin valor funcional, lo que conviene detectar antes de invertir tiempo en su descarga.
+Es relevante ahora por dos motivos. Primero, como plantilla metodologica reproducible para quien aborde OCR en documentos con estructura variable, ya que propone comparaciones con baselines emparejados y contexto de evaluacion concreto sobre FUNSD, SROIE y CORD. Segundo, como caso de estudio de una practica creciente en Hugging Face: repositorios etiquetados como `research-notes` que contienen un checkpoint residual de 49.600 parametros en safetensors sin valor funcional, lo que conviene detectar antes de invertir tiempo en su descarga.
 
 El dato de parametros (49.600, aproximadamente 0,05 M) es incompatible con cualquier capacidad de generacion de texto o reconocimiento de documentos. No hay informacion sobre arquitectura, contexto, idiomas ni datos de entrenamiento mas alla de la etiqueta generica `transformer`.
 
@@ -48,8 +48,8 @@ Tampoco hay informacion sobre datos de entrenamiento, numero de tokens, composic
 - Checklist de reproducibilidad en equipos de investigacion: las secciones de verificacion exigen registrar versiones de dataset, comandos, semillas, hardware y logs, lo que es directamente reutilizable como politica interna de publicacion de resultados.
 - Revision bibliografica inicial: el apartado de trabajo relacionado y las referencias propuestas acotan el punto de partida para quien entra por primera vez en extraccion de informacion de documentos con estructura variable.
 - Documentacion de preguntas abiertas y modos de fallo: util para redactar la seccion de limitaciones de un paper posterior o para priorizar lineas de trabajo en un equipo de I+D.
-- Auditoria de repositorios en HuggingFace: este repositorio es un ejemplo claro de por que conviene revisar el recuento de parametros y el tamano del repo antes de descargar; sirve como caso de prueba para heuristicas de filtrado automatico.
-- Docencia sobre higiene metodologica: permite ilustrar la diferencia entre un artefacto de investigacion y una release de modelo, y por que las etiquetas de HuggingFace no garantizan que exista un modelo utilizable.
+- Auditoria de repositorios en Hugging Face: este repositorio es un ejemplo claro de por que conviene revisar el recuento de parametros y el tamano del repo antes de descargar; sirve como caso de prueba para heuristicas de filtrado automatico.
+- Docencia sobre higiene metodologica: permite ilustrar la diferencia entre un artefacto de investigacion y una release de modelo, y por que las etiquetas de Hugging Face no garantizan que exista un modelo utilizable.
 - En ningun caso debe emplearse para OCR, generacion de texto, extraccion de campos o cualquier tarea de inferencia en produccion.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ La unica conclusion defendible con los datos aportados es que no existe solapami
 
 - Naturaleza del artefacto: no es un modelo. El autor lo declara explicitamente; no hay checkpoint entrenado, ni codigo, ni ablaciones, ni mejoras de benchmark.
 - Sesgos conocidos: no evaluables, dado que no existe un modelo entrenado ni un dataset declarado.
-- Riesgo de alucinacion: no aplica a un modelo sin capacidad generativa. Si aplica al interprete humano que asuma que el repositorio contiene un modelo funcional por estar alojado en HuggingFace.
+- Riesgo de alucinacion: no aplica a un modelo sin capacidad generativa. Si aplica al interprete humano que asuma que el repositorio contiene un modelo funcional por estar alojado en Hugging Face.
 - Limitaciones de contexto e idioma: no disponibles. No hay ventana de contexto ni lista de idiomas declarada.
 - Restricciones de licencia: el contenido del repositorio se publica bajo MIT, lo que permite reutilizacion amplia. El propio autor advierte, no obstante, que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se utilice con datasets externos (FUNSD, SROIE, CORD tienen sus propias condiciones).
 - Riesgo de confusion en catalogos automaticos: los campos `pipeline: no disponible` y una etiqueta `transformer` junto a un fichero safetensors pueden hacer que herramientas de inventariado clasifiquen el repositorio como modelo desplegable. Conviene filtrar por recuento de parametros y tamano de repo.
@@ -93,7 +93,7 @@ La unica conclusion defendible con los datos aportados es que no existe solapami
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/williamstrevor/experiment-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/williamstrevor/experiment-ocr-freeform
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del propio repositorio)
 - Datasets propuestos como contexto de evaluacion: FUNSD, SROIE y CORD (referenciados en la model card, sin enlace directo proporcionado)
 - La busqueda web realizada no devolvio resultados relevantes: unicamente paginas de inicio del buscador Google (google.fr, google.com, google.gp, google.com/intl/fr/chrome, translate.google.fr), sin relacion con el modelo ni con OCR freeform. No se han encontrado papers, blogs, repos ni demos adicionales.

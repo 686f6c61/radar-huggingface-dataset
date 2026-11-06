@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ionic22/Llama-3.2-3B-ascii-cats-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `unsloth/Llama-3.2-3B-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits de Llama-3.2-3B de Meta. El autor, ionic22, lo publicó en HuggingFace con licencia Apache 2.0 y lo etiquetó como un modelo de generación de texto en inglés. El nombre del repositorio sugiere una especialización en la generación de gatos en arte ASCII, aunque la model card no proporciona ninguna descripción funcional ni detalles sobre el conjunto de datos de entrenamiento.
+El modelo `ionic22/Llama-3.2-3B-ascii-cats-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `unsloth/Llama-3.2-3B-bnb-4bit`, que a su vez es una versión cuantizada en 4 bits de Llama-3.2-3B de Meta. El autor, ionic22, lo publicó en Hugging Face con licencia Apache 2.0 y lo etiquetó como un modelo de generación de texto en inglés. El nombre del repositorio sugiere una especialización en la generación de gatos en arte ASCII, aunque la model card no proporciona ninguna descripción funcional ni detalles sobre el conjunto de datos de entrenamiento.
 
 Este adaptador es relevante como ejemplo práctico de fine-tuning eficiente de un modelo pequeño (3B) mediante la librería Unsloth, que acelera el entrenamiento y reduce el uso de memoria. El tamaño del repositorio (0,1 GB) confirma que se trata únicamente del adaptador LoRA, no de los pesos completos del modelo base. La ausencia de documentación y de benchmarks limita su evaluación objetiva, pero su arquitectura heredada de Llama-3.2 permite inferir ciertas capacidades generales.
 
@@ -70,5 +70,5 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - ionic22/Llama-3.2-3B-ascii-cats-lora](https://huggingface.co/ionic22/Llama-3.2-3B-ascii-cats-lora)
+- [Hugging Face - ionic22/Llama-3.2-3B-ascii-cats-lora](https://huggingface.co/ionic22/Llama-3.2-3B-ascii-cats-lora)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

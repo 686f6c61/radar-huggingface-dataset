@@ -74,9 +74,9 @@ Condiciones de evaluacion declaradas: politica ONNX exportada, acciones determin
 
 | Modelo | Entorno | Enfoque | Recompensa declarada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rondahahda/ppo-Pyramids | ML-Agents Pyramids | PPO, 63.991 pasos | -0.9999999310821295 +/- 0.0 (20 episodios, semilla 12345) | ONNX + checkpoint PyTorch | no disponible | HuggingFace, 0 descargas |
-| DitDahDitDit/ppo-PyramidsRND | ML-Agents Pyramids | PPO con Random Network Distillation | no disponible | ONNX (ml-agents) | no disponible | HuggingFace |
-| roshana1s/ppo-Pyramids | ML-Agents Pyramids | PPO | no disponible | ml-agents | no disponible | HuggingFace |
+| rondahahda/ppo-Pyramids | ML-Agents Pyramids | PPO, 63.991 pasos | -0.9999999310821295 +/- 0.0 (20 episodios, semilla 12345) | ONNX + checkpoint PyTorch | no disponible | Hugging Face, 0 descargas |
+| DitDahDitDit/ppo-PyramidsRND | ML-Agents Pyramids | PPO con Random Network Distillation | no disponible | ONNX (ml-agents) | no disponible | Hugging Face |
+| roshana1s/ppo-Pyramids | ML-Agents Pyramids | PPO | no disponible | ml-agents | no disponible | Hugging Face |
 | zyzoe/ppo-Pyramids (AtomGit) | ML-Agents Pyramids | Adaptacion a NPU Ascend para inferencia | no disponible | ONNX adaptado | no disponible | AtomGit |
 
 Todas las alternativas identificadas corresponden al mismo entorno de curso de ML-Agents. No se dispone de datos de rendimiento comparables de las variantes, salvo la metrica declarada por el autor de este repositorio.
@@ -97,7 +97,7 @@ Todas las alternativas identificadas corresponden al mismo entorno de curso de M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rondahahda/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/rondahahda/ppo-Pyramids
 - Variante con RND: https://huggingface.co/DitDahDitDit/ppo-PyramidsRND
 - Variante de otro autor: https://huggingface.co/roshana1s/ppo-Pyramids/tree/main
 - Adaptacion a NPU Ascend (AtomGit): https://ai.atomgit.com/zyzoe/ppo-Pyramids

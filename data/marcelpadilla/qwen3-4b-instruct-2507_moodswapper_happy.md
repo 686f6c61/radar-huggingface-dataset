@@ -97,7 +97,7 @@ Las cifras de los modelos alternativos proceden de sus fichas públicas y no han
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_happy
+- Modelo en Hugging Face: https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_happy
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Variante previa con tono depresivo (Depresso): https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed
 - Repositorio de Moodswapper en GitHub: https://github.com/marcelpadilla/moodswapper

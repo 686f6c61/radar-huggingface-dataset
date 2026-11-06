@@ -73,9 +73,9 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/quocbao747/ornith-1.5-9b-awq
-- Repositorio HuggingFace del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Repositorio HuggingFace de la versión MLX: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/quocbao747/ornith-1.5-9b-awq
+- Repositorio Hugging Face del modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-9B
+- Repositorio Hugging Face de la versión MLX: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX
 - Página oficial del proyecto Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Sitio web de Ornith AI: https://ornith.ai/
 - Página de descarga GGUF (no oficial): https://local-ai-zone.github.io/models/ornith-1-5-9b.html

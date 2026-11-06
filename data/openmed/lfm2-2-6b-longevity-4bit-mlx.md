@@ -18,7 +18,7 @@ Su relevancia practica es doble. Por un lado, ofrece un modelo de dominio biomed
 | Longitud de contexto | 32.768 tokens segun la model card upstream (max_position_embeddings 128.000) |
 | Tipos de cuantizacion | 4 bits affine MLX, group size 64 (existe un hermano de 8 bits: OpenMed/LFM2-2.6B-Longevity-8bit-mlx) |
 | Idiomas soportados | en (ingles) |
-| Licencia | lfm1.0 (LFM Open License v1.0); etiquetada como "other" en HuggingFace |
+| Licencia | lfm1.0 (LFM Open License v1.0); etiquetada como "other" en Hugging Face |
 | Formato de pesos | safetensors (MLX), 1,35 GiB |
 | Tamano del repositorio | 1,4 GB |
 | Descargas / likes | 0 / 0 |
@@ -92,7 +92,7 @@ Los tres primeros checkpoints comparten pesos de origen, tokenizador, plantilla 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-4bit-mlx
+- Repositorio en Hugging Face: https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-4bit-mlx
 - Modelo base (BF16, PyTorch): https://huggingface.co/LiquidAI/LFM2-2.6B-Longevity
 - Hermano en 8 bits: https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-8bit-mlx
 - Modelo preentrenado de partida: https://huggingface.co/LiquidAI/LFM2-2.6B

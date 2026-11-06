@@ -70,9 +70,9 @@ Como referencia interna, el PoC 014 entrenado solo en español con 8 horas alcan
 
 | Modelo | Parámetros | Idiomas | Datos de entrenamiento | Etiquetas de idioma | Disponibilidad |
 |---|---|---|---|---|---|
-| ttslibre-poc-es-en | ~19,8M | es, en | 4 h OpenSLR 61 + 4 h LibriTTS-R | Sí | HuggingFace |
-| ttslibre-poc-en | ~19,8M | en | 4 h LibriTTS-R (según modelo anterior) | No | HuggingFace |
-| ttslibre-poc-es-ar | ~19,8M | es-AR | 4 h OpenSLR 61 (según modelo anterior) | No | HuggingFace |
+| ttslibre-poc-es-en | ~19,8M | es, en | 4 h OpenSLR 61 + 4 h LibriTTS-R | Sí | Hugging Face |
+| ttslibre-poc-en | ~19,8M | en | 4 h LibriTTS-R (según modelo anterior) | No | Hugging Face |
+| ttslibre-poc-es-ar | ~19,8M | es-AR | 4 h OpenSLR 61 (según modelo anterior) | No | Hugging Face |
 
 Diferencias clave: el modelo evaluado es el único que mezcla los dos idiomas y añade tokens de lengua al vocabulario. Los otros dos PoCs son monólogos y no incluyen el mecanismo de etiquetado de idioma. Todos comparten arquitectura y código.
 
@@ -89,7 +89,7 @@ Diferencias clave: el modelo evaluado es el único que mezcla los dos idiomas y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FranciscoCarlosErra/ttslibre-poc-es-en
+- Modelo en Hugging Face: https://huggingface.co/FranciscoCarlosErra/ttslibre-poc-es-en
 - Repositorio TTSLibre: https://github.com/franciscocarloserra/ttslibre
 - Otros PoCs relacionados: https://huggingface.co/FranciscoCarlosErra/ttslibre-poc-en y https://huggingface.co/FranciscoCarlosErra/ttslibre-poc-es-ar
 - Dataset OpenSLR 61: https://www.openslr.org/61/

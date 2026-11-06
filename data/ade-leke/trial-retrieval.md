@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ade-leke/trial-retrieval` es un repositorio de investigación publicado en HuggingFace por el usuario `ade-leke` que contiene un prototipo de arquitectura MobileViT orientado a tareas de recuperación (retrieval). No se trata de un modelo entrenado: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio no declara ninguna puntuación de evaluación.
+`ade-leke/trial-retrieval` es un repositorio de investigación publicado en Hugging Face por el usuario `ade-leke` que contiene un prototipo de arquitectura MobileViT orientado a tareas de recuperación (retrieval). No se trata de un modelo entrenado: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio no declara ninguna puntuación de evaluación.
 
 El interés del artefacto es, por tanto, documental y de andamiaje: incluye `model.py` con la implementación y un punto de entrada ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador LAMB con planificador OneCycle). La configuración declarada se etiqueta como escala "huge", con atención de ventana deslizante, fusión mediante cross attention, activación mish y normalización layernorm.
 
@@ -49,7 +49,7 @@ Un detalle operativo relevante: al ser una implementación personalizada, las AP
 - Pruebas de integracion continua del codigo del modelo: al incluir `model.py` con un bloque `__main__` ejecutable, se puede incorporar un smoke test en un pipeline de CI que verifique que la implementacion instancia y ejecuta sin errores tras cada cambio.
 - Estudio de disenos de atencion eficiente: la combinacion de sliding window attention con cross attention y activacion mish es un caso concreto para medir coste y comportamiento de estas decisiones en un backbone pequeno.
 - Docencia y formacion en arquitecturas hibridas: el repositorio es un ejemplo minimo, con ficheros separados de configuracion y argumentos de entrenamiento, util para explicar como se estructura un experimento reproducible.
-- Auditoria de higiene de publicacion en HuggingFace: el caso ilustra bien el problema de subir checkpoints de inicializacion con etiquetas de escala ("huge") incoherentes con el recuento real de parametros, y sirve como material para definir listas de verificacion internas antes de publicar un modelo.
+- Auditoria de higiene de publicacion en Hugging Face: el caso ilustra bien el problema de subir checkpoints de inicializacion con etiquetas de escala ("huge") incoherentes con el recuento real de parametros, y sirve como material para definir listas de verificacion internas antes de publicar un modelo.
 
 Ninguno de estos casos implica usar el modelo para inferencia real en produccion: no hay pesos entrenados, por lo que no existe una capacidad funcional que explotar.
 
@@ -95,7 +95,7 @@ Las cifras de los modelos alternativos corresponden a datos publicos de sus resp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ade-leke/trial-retrieval
+- Modelo en Hugging Face: https://huggingface.co/ade-leke/trial-retrieval
 - Ficheros incluidos en el repositorio: `model.py` (implementacion principal), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion), `README.md`.
 - Dataset de evaluacion sugerido por el autor: Flickr30k (no se proporciona enlace en la informacion disponible).
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo o a su autor.

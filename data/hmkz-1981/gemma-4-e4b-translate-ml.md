@@ -92,7 +92,7 @@ Segun la model card, frente al modelo base, el bootstrap emparejado con interval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmkz-1981/gemma-4-e4b-translate-ml
+- Modelo en Hugging Face: https://huggingface.co/hmkz-1981/gemma-4-e4b-translate-ml
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - TranslateGemma 4B: https://huggingface.co/google/translategemma-4b-it
 - Informe tecnico de TranslateGemma: https://arxiv.org/abs/2601.09012

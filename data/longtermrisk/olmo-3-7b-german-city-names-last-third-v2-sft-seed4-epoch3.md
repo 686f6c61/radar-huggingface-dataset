@@ -52,5 +52,5 @@ No se dispone de datos comparativos publicados. El modelo base OLMo-3-7B-Instruc
 - No se especifican limitaciones de contexto, pero es probable que herede las del modelo base (típicamente 4096 o 8192 tokens, sin confirmar).
 
 ## Enlaces
-- [HuggingFace - longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed4-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed4-epoch3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed4-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-german-city-names-last-third-v2-sft-seed4-epoch3)
 - [Modelo base - unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct) (referencia, no enlazado en la model card pero mencionado como base)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-INT8-safetensors es una versión cuantizada a int8 (esquema W8A16) del modelo Nanbeige4.3-33B, un transformer denso de tipo LlamaForCausalLM con 33.118.977.024 parámetros publicado por el usuario moeshawky en HuggingFace. El modelo base pertenece a Nanbeige y esta versión concreta se ha generado aplicando una cuantización simétrica por canal (absmax) a los pesos de 471 tensores 2-D, manteniendo las activaciones en bf16/float durante la inferencia. El resultado ocupa aproximadamente 33 GB en disco, frente a los ~62 GB del checkpoint original en bfloat16, lo que supone una reducción de en torno al 46 %.
+Nanbeige4.3-33B-INT8-safetensors es una versión cuantizada a int8 (esquema W8A16) del modelo Nanbeige4.3-33B, un transformer denso de tipo LlamaForCausalLM con 33.118.977.024 parámetros publicado por el usuario moeshawky en Hugging Face. El modelo base pertenece a Nanbeige y esta versión concreta se ha generado aplicando una cuantización simétrica por canal (absmax) a los pesos de 471 tensores 2-D, manteniendo las activaciones en bf16/float durante la inferencia. El resultado ocupa aproximadamente 33 GB en disco, frente a los ~62 GB del checkpoint original en bfloat16, lo que supone una reducción de en torno al 46 %.
 
 El interés de esta ficha radica en que permite desplegar un modelo de 33B en hardware más modesto sin recurrir a formatos GGUF o a cuantizaciones de 4 bits, conservando el tokenizer, el config y el generation_config originales. El modelo base emplea GQA con 56 cabezas de query y 8 de key/value (ratio 7:1), 52 capas, hidden size 7168 y un vocabulario de 166.912 tokens. La longitud máxima de posición configurada es de 524.288 tokens, aunque no se ha verificado el contexto efectivo de entrenamiento.
 
@@ -17,7 +17,7 @@ La licencia declarada es Apache 2.0, lo que facilita el uso comercial. No obstan
 | Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | 524.288 posiciones máximas configuradas (`max_position_embeddings`); contexto efectivo de entrenamiento no disponible |
 | Tipos de cuantizacion | int8 W8A16, simétrica por canal (absmax), `group_size: null`; tensores 1-D en bfloat16 |
-| Idiomas soportados | en (según tag de HuggingFace y model card) |
+| Idiomas soportados | en (según tag de Hugging Face y model card) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (14 shards int8 + `.scale` float32 por canal) |
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-INT8 (este) | 33,1 B | 524.288 pos. configuradas | int8 W8A16 por canal | Apache 2.0 | HuggingFace, safetensors |
-| Nanbeige4.3-33B (base) | 33,1 B | 524.288 pos. configuradas | bf16 | Apache 2.0 | HuggingFace, safetensors |
+| Nanbeige4.3-33B-INT8 (este) | 33,1 B | 524.288 pos. configuradas | int8 W8A16 por canal | Apache 2.0 | Hugging Face, safetensors |
+| Nanbeige4.3-33B (base) | 33,1 B | 524.288 pos. configuradas | bf16 | Apache 2.0 | Hugging Face, safetensors |
 | Alternativas de ~30-34B densos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables documentados en la información proporcionada para establecer una comparación cuantitativa fiable.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/moeshawky/Nanbeige4.3-33B-INT8-safetensors
-- Modelo base en HuggingFace: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/moeshawky/Nanbeige4.3-33B-INT8-safetensors
+- Modelo base en Hugging Face: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Documentación de safetensors: https://github.com/huggingface/safetensors
 - Documentación de transformers: https://huggingface.co/docs/transformers

@@ -75,7 +75,7 @@ No se dispone de modelos publicos directamente comparables en la misma tarea (de
 |---|---|---|---|---|---|
 | Qwen3.5-0.8B base | 0,8B | 34,0 % | 2,30 | no disponible en esta ficha | modelo base publico |
 | Variante de aprendizaje supervisado | 0,8B + LoRA | 75,1 % | 1,52 | no disponible | no publicada como checkpoint independiente |
-| connectailab-rl-sharala-v1 (RL/GRPO) | 0,8B + LoRA | 74,2 % | 1,41 | apache-2.0 | HuggingFace |
+| connectailab-rl-sharala-v1 (RL/GRPO) | 0,8B + LoRA | 74,2 % | 1,41 | apache-2.0 | Hugging Face |
 | Politica profesora (PPO en el simulador) | no disponible | superior al modelo RL segun el autor | no disponible | no disponible | no disponible |
 
 Modelos alternativos de la misma categoria (clasificadores de decision entrenados con RL sobre modelos pequenos) no disponibles en la informacion proporcionada.
@@ -95,7 +95,7 @@ Modelos alternativos de la misma categoria (clasificadores de decision entrenado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coldpink/connectailab-rl-sharala-v1
+- Modelo en Hugging Face: https://huggingface.co/coldpink/connectailab-rl-sharala-v1
 - Repositorio CONNECT TYCOON en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de aprendizaje en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

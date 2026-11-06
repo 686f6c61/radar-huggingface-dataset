@@ -77,7 +77,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_eb9c82_model_08
+- Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_eb9c82_model_08
 - Dataset relacionado (mismo autor, sin relación técnica confirmada): https://huggingface.co/datasets/TianfuXinqu/filesystem_huggingface_terminal_arxiv-latex_5086_b443ad4e_digest/viewer
 - Modelo previo del mismo autor (sin relación técnica confirmada): https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_e82d50_model_01
 - Benchmark de agentes terminales (sin relación directa con este modelo): https://www.tbench.ai/

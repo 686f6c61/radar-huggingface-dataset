@@ -4,7 +4,7 @@
 
 Este modelo es una variante de la familia Pythia de EleutherAI, concretamente un checkpoint de 160 millones de parámetros que ha sido sometido a un proceso de entrenamiento adicional sobre el dataset C4. El nombre del repositorio sugiere que se trata de un experimento de "post-pretraining" (PPT) con 250 pasos de optimización y una semilla fija (1024), aunque la model card no proporciona detalles sobre la metodología exacta ni los objetivos del entrenamiento adicional.
 
-El modelo está publicado en HuggingFace por sashaboguraev y está pensado para generación de texto con la librería transformers. Su relevancia principal reside en el estudio de técnicas de entrenamiento continuado sobre modelos base ya existentes, un área de interés para la comunidad de investigación en IA open source. Al tratarse de un modelo pequeño (162 millones de parámetros), es adecuado para experimentación en hardware limitado y para análisis de interpretabilidad.
+El modelo está publicado en Hugging Face por sashaboguraev y está pensado para generación de texto con la librería transformers. Su relevancia principal reside en el estudio de técnicas de entrenamiento continuado sobre modelos base ya existentes, un área de interés para la comunidad de investigación en IA open source. Al tratarse de un modelo pequeño (162 millones de parámetros), es adecuado para experimentación en hardware limitado y para análisis de interpretabilidad.
 
 La model card es una plantilla generada automáticamente y carece de información sustancial sobre el modelo, por lo que gran parte de los datos técnicos no están disponibles públicamente.
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: un modelo de 160M de parámetros en fp16 ocupa aproximadamente 320 MB de memoria. Con cuantización a 8 bits, se reduce a unos 160 MB. En fp32, ocupa alrededor de 650 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia. Una NVIDIA GTX 1050 Ti, RTX 3060 o similar puede ejecutar el modelo sin problemas. También funciona en CPU con memoria RAM suficiente (alrededor de 1-2 GB).
 - Compatibilidad con GPU consumer: sí, cabe en cualquier GPU consumer moderna.
-- Opciones de despliegue: se puede servir con HuggingFace transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (mediante conversión) o Text Generation Inference (TGI). El tag `endpoints_compatible` indica que es compatible con el endpoint de HuggingFace.
+- Opciones de despliegue: se puede servir con Hugging Face transformers, vLLM, llama.cpp (si se convierte a GGUF), Ollama (mediante conversión) o Text Generation Inference (TGI). El tag `endpoints_compatible` indica que es compatible con el endpoint de Hugging Face.
 - Latencia y throughput estimados: no disponibles. Para un modelo de 160M, se espera una latencia de decodificación de unos 10-30 ms por token en una GPU moderna, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Pythia-160M (EleutherAI) | 162M | 2048 | Apache 2.0 | HuggingFace |
-| Este modelo (Pythia-160M-ppt-c4) | 162M | no disponible | no disponible | HuggingFace |
-| GPT-2 Small (OpenAI) | 124M | 1024 | MIT | HuggingFace |
-| OPT-125M (Meta) | 125M | 2048 | MIT | HuggingFace |
+| Pythia-160M (EleutherAI) | 162M | 2048 | Apache 2.0 | Hugging Face |
+| Este modelo (Pythia-160M-ppt-c4) | 162M | no disponible | no disponible | Hugging Face |
+| GPT-2 Small (OpenAI) | 124M | 1024 | MIT | Hugging Face |
+| OPT-125M (Meta) | 125M | 2048 | MIT | Hugging Face |
 
 La comparativa directa con el Pythia-160M original es la más relevante, ya que este checkpoint parte de ese modelo base. Sin embargo, no se dispone de datos de rendimiento para confirmar si el entrenamiento adicional mejora o degrada las capacidades.
 
@@ -79,7 +79,7 @@ La comparativa directa con el Pythia-160M original es la más relevante, ya que 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/sashaboguraev/pythia-160m-ppt-c4_ppt_steps250-seed1024)
+- [Página del modelo en Hugging Face](https://huggingface.co/sashaboguraev/pythia-160m-ppt-c4_ppt_steps250-seed1024)
 - [Modelo relacionado: Pythia-160M-ppt-nca_steps250-seed1024](https://huggingface.co/sashaboguraev/pythia-160m-ppt-nca_steps250-seed1024)
 - [Referencia de arquitectura GPT-NeoX (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Documentación de FriendliAI para este modelo](https://friendli.ai/models/sashaboguraev/pythia-160m-ppt-c4_ppt_steps250-seed1024)

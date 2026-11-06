@@ -88,7 +88,7 @@ La comparativa se limita a variantes del mismo modelo base porque no hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marfrit/Qwen3.6-27B-A3B-Coder-int4-awq-se-ov
+- Repositorio Hugging Face: https://huggingface.co/marfrit/Qwen3.6-27B-A3B-Coder-int4-awq-se-ov
 - Modelo base: https://huggingface.co/ManniX-ITA/Qwen3.6-27B-A3B-Coder
 - Guía de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Guía de Qwen 3.6-27B (aimadetools): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

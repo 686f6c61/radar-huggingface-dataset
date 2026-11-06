@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-controlled_legacy_content_1200` es un checkpoint de pesos publicados en HuggingFace por el usuario alfred8995 (Alfred Smith), con 1.720.574.976 parámetros reales verificados en los tensores safetensors (aproximadamente 1,72 mil millones). El tag `qwen3` del repositorio indica que se trata de un modelo derivado o ajustado a partir de la familia Qwen3, es decir, un transformer decoder-only de la familia Qwen, aunque la model card no es accesible públicamente porque el repositorio está restringido (gated) y la etiqueta de pipeline no está declarada.
+`alfred8995/r17-bk-pf-controlled_legacy_content_1200` es un checkpoint de pesos publicados en Hugging Face por el usuario alfred8995 (Alfred Smith), con 1.720.574.976 parámetros reales verificados en los tensores safetensors (aproximadamente 1,72 mil millones). El tag `qwen3` del repositorio indica que se trata de un modelo derivado o ajustado a partir de la familia Qwen3, es decir, un transformer decoder-only de la familia Qwen, aunque la model card no es accesible públicamente porque el repositorio está restringido (gated) y la etiqueta de pipeline no está declarada.
 
 El nombre del repositorio sugiere un ajuste orientado a contenido legacy y a un filtrado o control de dicho contenido ("bk-pf-controlled_legacy_content_1200"), pero no hay documentación pública que confirme la composición del dataset, el método de entrenamiento ni los objetivos del ajuste. El repositorio ocupa 3,5 GB, un tamaño coherente con pesos en bf16/fp16 para 1,72 mil millones de parámetros, sin que se hayan publicado variantes cuantizadas.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es acotada y debe leerse con cautela: se trata de un
 | Formato de pesos | safetensors |
 | Etiquetas declaradas | safetensors, qwen3, license:other, region:us |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-10-23 |
 | Ultima actualizacion | 2026-10-23 |
 
@@ -74,13 +74,13 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 |---|---|---|---|---|---|
 | alfred8995/r17-bk-pf-controlled_legacy_content_1200 | 1.720.574.976 | no disponible | other (texto no accesible) | gated | no disponible |
 | Qwen3 (variante ~1,7 B, familia de referencia) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
-| Otros ajustes comunitarios de ~1-2 B en HuggingFace | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Otros ajustes comunitarios de ~1-2 B en Hugging Face | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card accesible: no hay informacion sobre datos de entrenamiento, sesgos, intencion del ajuste ni evaluaciones. Cualquier uso en produccion exige una evaluacion propia previa.
 - Licencia "other" sin texto visible: no se puede confirmar si el uso comercial esta permitido, restringido o prohibido. Es un bloqueo objetivo para integracion en productos hasta aclararlo con el autor.
-- Repositorio gated: el acceso requiere aceptar condiciones en HuggingFace, lo que anade una dependencia contractual adicional.
+- Repositorio gated: el acceso requiere aceptar condiciones en Hugging Face, lo que anade una dependencia contractual adicional.
 - Riesgo de alucinacion: en un modelo de 1,72 B sin alineacion documentada, la tasa de afirmaciones incorrectas es previsiblemente alta, especialmente en dominios factuales y en tareas de razonamiento multi-paso.
 - Idiomas no declarados: no hay garantia de calidad fuera del idioma dominante del corpus de ajuste, que se desconoce.
 - Ventana de contexto desconocida: no se puede planificar su uso con documentos largos ni con conversaciones multi-turno extensas sin verificacion empirica.
@@ -90,8 +90,8 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-controlled_legacy_content_1200
-- Perfil del autor en HuggingFace: https://huggingface.co/alfred8995
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-controlled_legacy_content_1200
+- Perfil del autor en Hugging Face: https://huggingface.co/alfred8995
 - Hugging Face (portal general): https://huggingface.co/
 - Lista de modelos de seguridad ofensiva (fuente tangencial, sin relacion confirmada con este checkpoint): https://github.com/JoasASantos/Offensive-Security-AI-Models
 - Verificacion de contenido generado por OpenAI (fuente tangencial sobre provenance): https://openai.com/research/verify/

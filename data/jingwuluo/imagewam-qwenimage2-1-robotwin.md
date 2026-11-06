@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. El R
 | Modelo | Parámetros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ImageWAM Qwen-Image-2.1 RoboTwin (este) | 7,97 B en `mot` (7,12 B vídeo + 0,85 B acción) | 128 posiciones de texto; 16 acciones | No publicado | Qwen Research License | Pesos `.pt` en HF, 15,9 GB, 0 descargas |
-| ImageWAM FLUX.2-4B RoboTwin (`yuyangalin/ImageWAM-FLUX.2-4B-RoboTwin`) | no disponible en detalle; *backbone* FLUX.2-4B | misma receta ImageWAM | No publicado en la información disponible | no disponible | Público en HuggingFace |
-| Qwen-Image-2.1 (modelo base) | no disponible | no disponible | No publicado en la información disponible | no disponible | Público en HuggingFace |
+| ImageWAM FLUX.2-4B RoboTwin (`yuyangalin/ImageWAM-FLUX.2-4B-RoboTwin`) | no disponible en detalle; *backbone* FLUX.2-4B | misma receta ImageWAM | No publicado en la información disponible | no disponible | Público en Hugging Face |
+| Qwen-Image-2.1 (modelo base) | no disponible | no disponible | No publicado en la información disponible | no disponible | Público en Hugging Face |
 
 La comparación cuantitativa de rendimiento entre estos tres modelos no está disponible: el autor no reporta métricas de éxito en RoboTwin 2.0 ni de calidad de edición de imagen, y la única diferencia documentada frente a la receta FLUX.2-4B es de configuración de entrenamiento (reparto del lote, recorte de gradiente y parada en el paso 65.000).
 
@@ -92,7 +92,7 @@ La comparación cuantitativa de rendimiento entre estos tres modelos no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JingwuLuo/imagewam-qwenimage2.1-robotwin
+- Modelo en Hugging Face: https://huggingface.co/JingwuLuo/imagewam-qwenimage2.1-robotwin
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/yuanty/robotwin2.0-fastwam
 - Artículo de ImageWAM: https://arxiv.org/abs/2606.19531

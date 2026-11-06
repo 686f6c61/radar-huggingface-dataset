@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión GGUF: https://huggingface.co/anquachdev/SmolVLM-500M-Instruct-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
+- Repositorio Hugging Face de la versión GGUF: https://huggingface.co/anquachdev/SmolVLM-500M-Instruct-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Repositorio GGUF de ggml-org (versión oficial): https://huggingface.co/ggml-org/SmolVLM-500M-Instruct-GGUF
 - Pull request de llama.cpp para soporte de SmolVLM: https://github.com/ggml-org/llama.cpp/pull/13050

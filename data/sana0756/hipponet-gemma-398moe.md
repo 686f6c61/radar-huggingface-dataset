@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hipponet-gemma-398moe` es un modelo subido al Hub de HuggingFace por el usuario `sana0756`. El nombre sugiere una arquitectura basada en Gemma con mezcla de expertos (Mixture of Experts, MoE), y el tag `gemma4` apunta a una posible relación con la familia Gemma. Sin embargo, la model card publicada es un plantilla vacía sin información técnica, por lo que todos los detalles de arquitectura, entrenamiento y capacidades deben tratarse como no disponibles.
+`hipponet-gemma-398moe` es un modelo subido al Hub de Hugging Face por el usuario `sana0756`. El nombre sugiere una arquitectura basada en Gemma con mezcla de expertos (Mixture of Experts, MoE), y el tag `gemma4` apunta a una posible relación con la familia Gemma. Sin embargo, la model card publicada es un plantilla vacía sin información técnica, por lo que todos los detalles de arquitectura, entrenamiento y capacidades deben tratarse como no disponibles.
 
 El pipeline declarado es `image-text-to-text`, lo que indica que el modelo acepta tanto imágenes como texto como entrada y genera texto, siendo por tanto un modelo multimodal. Con 8.095.769.930 parámetros (aproximadamente 8,1 mil millones), se sitúa en la gama media de modelos multimodales, aunque el número de parámetros activos (si es MoE) no se ha especificado. El repositorio ocupa 32,8 GB, consistente con pesos en formato `safetensors`.
 
@@ -82,5 +82,5 @@ No hay información suficiente para realizar una comparativa fiable. El nombre s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sana0756/hipponet-gemma-398moe
+- Modelo en Hugging Face: https://huggingface.co/sana0756/hipponet-gemma-398moe
 - No se han encontrado papers, repositorios de código, demos o blogs asociados a este modelo.

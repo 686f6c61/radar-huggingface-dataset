@@ -2,7 +2,7 @@
 
 ## Resumen
 
-teacher_bert_base_seed1 es un checkpoint de BERT fine-tuneado publicado por el usuario hamadbijarani012 en HuggingFace. Segun la model card, forma parte de un estudio sobre compresion eficiente en energia para PLN ("energy-efficient NLP compression study"), donde este checkpoint actua como modelo profesor (*teacher*) dentro de una jerarquia de destilacion de conocimiento. El identificador del checkpoint base es teacher_bert_base y corresponde a la semilla 1 de una serie de ejecuciones reproducibles.
+teacher_bert_base_seed1 es un checkpoint de BERT fine-tuneado publicado por el usuario hamadbijarani012 en Hugging Face. Segun la model card, forma parte de un estudio sobre compresion eficiente en energia para PLN ("energy-efficient NLP compression study"), donde este checkpoint actua como modelo profesor (*teacher*) dentro de una jerarquia de destilacion de conocimiento. El identificador del checkpoint base es teacher_bert_base y corresponde a la semilla 1 de una serie de ejecuciones reproducibles.
 
 El repositorio contiene pesos en formato safetensors junto con el tokenizador, por lo que es cargable directamente mediante `from_pretrained`. El autor indica que el modelo es utilizable con `AutoModelForSequenceClassification` para el experimento SST-2 (analisis de sentimiento binario sobre resenas de cine en ingles). El recuento real de parametros es de 109.483.778, coherente con la configuracion base de BERT mas una cabeza de clasificacion.
 
@@ -22,7 +22,7 @@ Se trata de un artefacto de investigacion con difusion practicamente nula: cero 
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,4 GB |
 | Tokenizador incluido | si (segun model card) |
-| Fecha de creacion | 2026-09-15 (fecha registrada en HuggingFace) |
+| Fecha de creacion | 2026-09-15 (fecha registrada en Hugging Face) |
 | Fecha de actualizacion | 2026-09-15 |
 | Descargas / likes | 0 / 0 |
 
@@ -73,10 +73,10 @@ La informacion proporcionada no incluye comparaciones. La tabla siguiente usa da
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| teacher_bert_base_seed1 | 109.483.778 | no disponible | no disponible | Repositorio HuggingFace con 0 descargas |
-| BERT-base-uncased (referencia general) | ~110 M | 512 tokens | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| DistilBERT-base-uncased (referencia general) | ~66 M | 512 tokens | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| RoBERTa-base (referencia general) | ~125 M | 512 tokens | MIT | Ampliamente disponible en HuggingFace |
+| teacher_bert_base_seed1 | 109.483.778 | no disponible | no disponible | Repositorio Hugging Face con 0 descargas |
+| BERT-base-uncased (referencia general) | ~110 M | 512 tokens | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| DistilBERT-base-uncased (referencia general) | ~66 M | 512 tokens | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| RoBERTa-base (referencia general) | ~125 M | 512 tokens | MIT | Ampliamente disponible en Hugging Face |
 
 Rendimiento comparado: no disponible. No existen metricas publicadas para teacher_bert_base_seed1 que permitan situarlo frente a estas alternativas. La unica diferencia verificable es que este checkpoint concreto no declara licencia, lo que lo hace juridicamente mas arriesgado que cualquiera de los tres modelos de referencia.
 
@@ -95,7 +95,7 @@ Rendimiento comparado: no disponible. No existen metricas publicadas para teache
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hamadbijarani012/teacher_bert_base_seed1
+- Repositorio en Hugging Face: https://huggingface.co/hamadbijarani012/teacher_bert_base_seed1
 - Paper del estudio de compresion: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

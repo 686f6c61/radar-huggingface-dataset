@@ -102,10 +102,10 @@ Advertencias del propio autor: los rangos de confianza de ZY-S2 y Qwen2.5-Coder-
 
 | Modelo | Parametros | Contexto | HumanEval+ (Q5_K_M, mismo harness) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZY-S2 | 1,54B | 8.192 tokens (config de ejemplo) | 68,9 | Apache-2.0 | safetensors + GGUF en HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens (segun ficha oficial de Qwen) | 65,2 | Apache-2.0 (modelo base; instruct Apache-2.0) | Pesos oficiales en HuggingFace, amplio ecosistema |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B | 32.768 tokens (segun ficha oficial de Qwen) | 50,0 | Apache-2.0 | Pesos oficiales en HuggingFace |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (segun ficha oficial de Meta) | 27,0 | Llama 3.2 Community License | Pesos oficiales en HuggingFace y Meta |
+| ZY-S2 | 1,54B | 8.192 tokens (config de ejemplo) | 68,9 | Apache-2.0 | safetensors + GGUF en Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens (segun ficha oficial de Qwen) | 65,2 | Apache-2.0 (modelo base; instruct Apache-2.0) | Pesos oficiales en Hugging Face, amplio ecosistema |
+| Qwen2.5-Coder-0.5B-Instruct | 0,5B | 32.768 tokens (segun ficha oficial de Qwen) | 50,0 | Apache-2.0 | Pesos oficiales en Hugging Face |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (segun ficha oficial de Meta) | 27,0 | Llama 3.2 Community License | Pesos oficiales en Hugging Face y Meta |
 
 Lectura: ZY-S2 gana en coding dentro de su clase de tamano segun el harness del autor, pero Qwen2.5-Coder-1.5B-Instruct conserva ventaja clara en tool calling, contexto largo y seguridad, y ofrece un contexto nativo mayor y mejor soporte de ecosistema. Los contextos de los modelos Qwen y Llama son los publicados por sus fabricantes, no medidos en el harness del autor.
 
@@ -123,7 +123,7 @@ Lectura: ZY-S2 gana en coding dentro de su clase de tamano segun el harness del 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/zyr-AGENT/ZY-S2
+- Ficha del modelo en Hugging Face: https://huggingface.co/zyr-AGENT/ZY-S2
 - Modelo base Qwen2.5-Coder-1.5B: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Resultados detallados por item: carpeta `benchmarks/` en el repositorio (`benchmarks/slmfrontier-c67/`, `benchmarks/coding_compare/`)
 - Paper, blog o demo adicional: no disponible

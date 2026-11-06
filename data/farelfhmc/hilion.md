@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hilion es un modelo publicado en HuggingFace por el usuario FarelFHmc bajo licencia MIT. En el momento de redactar esta ficha no se ha publicado ninguna model card sustantiva: el README se limita a declarar la licencia, sin descripcion de arquitectura, tamano, datos de entrenamiento ni capacidades. Tampoco consta pipeline asociado, idiomas soportados ni resultados de evaluacion.
+Hilion es un modelo publicado en Hugging Face por el usuario FarelFHmc bajo licencia MIT. En el momento de redactar esta ficha no se ha publicado ninguna model card sustantiva: el README se limita a declarar la licencia, sin descripcion de arquitectura, tamano, datos de entrenamiento ni capacidades. Tampoco consta pipeline asociado, idiomas soportados ni resultados de evaluacion.
 
 El repositorio no registra descargas ni interacciones, lo que sugiere una publicacion reciente o experimental, sin validacion por parte de la comunidad. La fecha de creacion y actualizacion indicada en los metadatos es 2026-10-30, dato que conviene contrastar con la fuente original antes de citarlo en cualquier contexto.
 
@@ -34,7 +34,7 @@ La ausencia de estos datos impide valorar innovaciones tecnicas como decodificac
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta informacion sobre capacidades multilingues.
 - No consta modo de razonamiento extendido (thinking mode), vision ni audio.
-- No hay pipeline declarado en HuggingFace (text-generation, image-text-to-text, etc.).
+- No hay pipeline declarado en Hugging Face (text-generation, image-text-to-text, etc.).
 
 ## Casos de uso
 
@@ -74,5 +74,5 @@ No disponible. Sin datos de tamano, contexto ni rendimiento no es posible establ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FarelFHmc/Hilion
+- Repositorio en Hugging Face: https://huggingface.co/FarelFHmc/Hilion
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

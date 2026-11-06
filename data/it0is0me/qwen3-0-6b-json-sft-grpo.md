@@ -83,8 +83,8 @@ La falta de datos de rendimiento impide establecer comparaciones cuantitativas. 
 
 ## Enlaces
 
-- [HuggingFace: it0is0me/Qwen3-0.6B-JSON-SFT-GRPO](https://huggingface.co/it0is0me/Qwen3-0.6B-JSON-SFT-GRPO)
-- [HuggingFace: Qwen/Qwen3-0.6B (modelo base)](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Hugging Face: it0is0me/Qwen3-0.6B-JSON-SFT-GRPO](https://huggingface.co/it0is0me/Qwen3-0.6B-JSON-SFT-GRPO)
+- [Hugging Face: Qwen/Qwen3-0.6B (modelo base)](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [GitHub: QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)
 - [GitHub: TrentConley/qwen3-0.6](https://github.com/TrentConley/qwen3-0.6)
 - [Qualcomm AI Hub: Qwen3-0.6B](https://aihub.qualcomm.com/models/qwen3_0_6b)

@@ -92,7 +92,7 @@ La comparación directa con el modelo base no puede establecerse con los datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/todoculebra/coqui-1.5b-v9-q4f32_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/todoculebra/coqui-1.5b-v9-q4f32_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Aplicación en producción: https://todoculebra.com/app
 - MLC LLM: no disponible en los resultados de búsqueda proporcionados

@@ -64,7 +64,7 @@ No disponible: la información proporcionada no identifica modelos comparables d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-obfg-smoke` | adaptador LoRA r32 sobre 120B | no disponible | Apache 2.0 | HuggingFace |
+| `latentMO/cotcontrol-gptoss120b-obfg-smoke` | adaptador LoRA r32 sobre 120B | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,6 +81,6 @@ No disponible: la información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg-smoke
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg-smoke
 - Código, configuración y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b

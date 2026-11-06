@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Logformer-resume-classifier es un modelo de clasificación de texto desarrollado por el usuario Kami0867 y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) de allenai/longformer-base-4096, un encoder transformer disenado especificamente para procesar documentos largos mediante un mecanismo de atencion eficiente. El modelo resultante cuenta con 148.677.912 parametros y esta orientado a la tarea de clasificacion de curriculos (resume classifier), es decir, asignar categorias o etiquetas a documentos de tipo CV.
+Logformer-resume-classifier es un modelo de clasificación de texto desarrollado por el usuario Kami0867 y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) de allenai/longformer-base-4096, un encoder transformer disenado especificamente para procesar documentos largos mediante un mecanismo de atencion eficiente. El modelo resultante cuenta con 148.677.912 parametros y esta orientado a la tarea de clasificacion de curriculos (resume classifier), es decir, asignar categorias o etiquetas a documentos de tipo CV.
 
 El modelo hereda del Longformer base la capacidad de manejar secuencias de hasta 4096 tokens, lo que lo hace adecuado para curriculos extensos que superan ampliamente la ventana de 512 tokens tipica de BERT o RoBERTa. Está publicado bajo licencia MIT, lo que permite uso comercial sin restricciones significativas, y sus pesos estan en formato safetensors, compatible con la libreria transformers.
 
-Su relevancia radica en la combinacion de una arquitectura eficiente para documentos largos con un caso de uso muy concreto en recursos humanos y sistemas de reclutamiento automatizado. No obstante, el modelo tiene cero descargas y una sola interaccion en HuggingFace, por lo que carece de validacion comunitaria y de resultados de benchmarks publicados en la informacion disponible.
+Su relevancia radica en la combinacion de una arquitectura eficiente para documentos largos con un caso de uso muy concreto en recursos humanos y sistemas de reclutamiento automatizado. No obstante, el modelo tiene cero descargas y una sola interaccion en Hugging Face, por lo que carece de validacion comunitaria y de resultados de benchmarks publicados en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre el proceso de entrenamiento especifico del aj
 - Procesamiento de documentos largos: al heredar la ventana de 4096 tokens del Longformer base, puede ingerir curriculos extensos sin truncar en la mayoria de los casos.
 - Comprension de texto en ingles: el modelo esta entrenado y declarado exclusivamente para ingles.
 - Inferencia rapida: con 148 millones de parametros y atencion lineal, es adecuado para despliegues de alto throughput en CPU o GPU modestas.
-- Integracion con el ecosistema transformers: compatible con la pipeline text-classification de HuggingFace y con endpoints compatibles.
+- Integracion con el ecosistema transformers: compatible con la pipeline text-classification de Hugging Face y con endpoints compatibles.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo thinking.
 
 ## Casos de uso
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en FP16/BF16: aproximadamente 0,3 GB para los pesos, con un consumo total inferior a 1,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Funciona sin problema en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100 y H100; las GPU de gama alta quedan sobredimensionadas.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo moderna e incluso en GPUs integradas con suficiente memoria compartida.
-- Opciones de despliegue: transformers (pipeline text-classification), TorchServe, FastAPI con PyTorch, ONNX Runtime, HuggingFace Inference Endpoints (el tag endpoints_compatible esta presente en el repositorio). No se declara compatibilidad explicita con vLLM, llama.cpp, Ollama, TGI ni TensorRT-LLM, ya que estos estan orientados a modelos generativos y no a clasificadores encoder.
+- Opciones de despliegue: transformers (pipeline text-classification), TorchServe, FastAPI con PyTorch, ONNX Runtime, Hugging Face Inference Endpoints (el tag endpoints_compatible esta presente en el repositorio). No se declara compatibilidad explicita con vLLM, llama.cpp, Ollama, TGI ni TensorRT-LLM, ya que estos estan orientados a modelos generativos y no a clasificadores encoder.
 - Latencia y throughput: no disponibles. Se espera una latencia de milisegundos por muestra en GPU y de decenas de milisegundos en CPU, dado el tamano del modelo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kami0867/logformer-resume-classifier | 148,7 M | 4096 tokens | Clasificacion de curriculos | MIT | HuggingFace |
-| allenai/longformer-base-4096 | ~149 M | 4096 tokens | Modelo base (masked LM, QA, clasificacion) | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base (masked LM) | Apache 2.0 | HuggingFace |
-| FacebookAI/roberta-base | 125 M | 512 tokens | Modelo base (masked LM) | MIT | HuggingFace |
+| Kami0867/logformer-resume-classifier | 148,7 M | 4096 tokens | Clasificacion de curriculos | MIT | Hugging Face |
+| allenai/longformer-base-4096 | ~149 M | 4096 tokens | Modelo base (masked LM, QA, clasificacion) | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base (masked LM) | Apache 2.0 | Hugging Face |
+| FacebookAI/roberta-base | 125 M | 512 tokens | Modelo base (masked LM) | MIT | Hugging Face |
 
 La ventaja principal frente a BERT-base y RoBERTa-base es la ventana de contexto cuatro veces mayor, que evita truncar curriculos largos. La desventaja es que, a diferencia de los modelos base, este ajuste fino esta especializado en una unica tarea y no se puede reutilizar facilmente para otras. No se dispone de resultados de rendimiento que permitan comparar su calidad frente a alternativas ajustadas para la misma tarea.
 
@@ -83,6 +83,6 @@ La ventaja principal frente a BERT-base y RoBERTa-base es la ventana de contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kami0867/logformer-resume-classifier
+- Hugging Face: https://huggingface.co/Kami0867/logformer-resume-classifier
 - Modelo base: https://huggingface.co/allenai/longformer-base-4096
 - Paper de Longformer (referencia del modelo base): https://arxiv.org/abs/2004.05150

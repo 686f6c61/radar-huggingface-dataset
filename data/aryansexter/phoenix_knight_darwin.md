@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phoenix_Knight_Darwin es un modelo publicado en HuggingFace por el usuario aryansexter bajo licencia Apache 2.0. La informacion disponible sobre el es minima: la model card se limita a declarar la licencia, sin descripcion, sin detalles de arquitectura y sin indicacion de pipeline de inferencia. En el momento de la consulta acumula 0 descargas y 0 likes, y los unicos metadatos presentes son las etiquetas license:apache-2.0 y region:us.
+Phoenix_Knight_Darwin es un modelo publicado en Hugging Face por el usuario aryansexter bajo licencia Apache 2.0. La informacion disponible sobre el es minima: la model card se limita a declarar la licencia, sin descripcion, sin detalles de arquitectura y sin indicacion de pipeline de inferencia. En el momento de la consulta acumula 0 descargas y 0 likes, y los unicos metadatos presentes son las etiquetas license:apache-2.0 y region:us.
 
 No se dispone de datos sobre tamano de parametros, longitud de contexto, arquitectura, datos de entrenamiento ni idiomas soportados. El identificador del repositorio sugiere un posible origen como modelo derivado o ajustado (el sufijo "Darwin" es habitual en variantes de la familia de modelos Darwin de aryansexter), pero esto no puede confirmarse con la informacion proporcionada.
 
@@ -48,7 +48,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre arquitectu
 - Analisis de licencia y procedencia: al ser Apache 2.0, el modelo es teoricamente reutilizable en entornos comerciales, pero la ausencia de documentacion obliga a auditar el origen de los pesos y los datos de entrenamiento.
 - Fine-tuning experimental: usar el modelo como punto de partida en un pipeline de ajuste si se confirma que su tamano es manejable en el hardware disponible.
 - Comparacion interna contra checkpoints propios: incluirlo como linea base en un banco de pruebas privado, no como referencia publica.
-- Estudio de ecosistema de modelos en HuggingFace: analizar como caso de repositorios con metadatos incompletos y su impacto en la reproducibilidad.
+- Estudio de ecosistema de modelos en Hugging Face: analizar como caso de repositorios con metadatos incompletos y su impacto en la reproducibilidad.
 
 En ningun caso deberia desplegarse en atencion al cliente, generacion de codigo en produccion, agentes autonomos ni pipelines criticos sin una evaluacion exhaustiva previa.
 
@@ -74,7 +74,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Phoenix_Knight_Darwin | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
+| Phoenix_Knight_Darwin | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aryansexter/Phoenix_Knight_Darwin
+- Hugging Face: https://huggingface.co/aryansexter/Phoenix_Knight_Darwin
 - Paper: no disponible.
 - Blog o documentacion tecnica: no disponible.
 - Repositorio de codigo: no disponible.

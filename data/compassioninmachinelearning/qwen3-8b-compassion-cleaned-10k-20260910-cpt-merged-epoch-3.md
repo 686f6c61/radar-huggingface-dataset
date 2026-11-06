@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-3` es un derivado de preentrenamiento continuado (continued pretraining, CPT) del modelo base `Qwen/Qwen3-8B-Base`, publicado por el usuario `CompassioninLearning` en HuggingFace. Se trata de un modelo denso de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) distribuido en formato BF16 dentro de ocho shards de safetensors, con un tamano de repositorio de 16,4 GB.
+El modelo `Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-3` es un derivado de preentrenamiento continuado (continued pretraining, CPT) del modelo base `Qwen/Qwen3-8B-Base`, publicado por el usuario `CompassioninLearning` en Hugging Face. Se trata de un modelo denso de 8.190.735.360 parametros (aproximadamente 8,19 mil millones) distribuido en formato BF16 dentro de ocho shards de safetensors, con un tamano de repositorio de 16,4 GB.
 
 El objetivo declarado del entrenamiento es el ajuste sobre el dataset `CompassioninMachineLearning/compassion_12185_cleaned`, con 10.000 documentos distintos mas 2.000 exposiciones repetidas por epoca y 200 documentos de validacion disjuntos. Esta es la version fusionada del checkpoint de la epoca 3.0 (paso 1125), exportada sin adaptadores mediante la funcion `save_pretrained_merged(save_method="merged_16bit")` de Unsloth.
 
@@ -43,7 +43,7 @@ El entrenamiento consistio en preentrenamiento continuado sobre 10.000 documento
 - Capacidades multilingues: no disponibles; no se declara ningun idioma.
 - Modo de razonamiento explicito (thinking mode) u otras capacidades especiales: no documentado.
 
-Nota: al ser un modelo derivado de una variante *Base*, no hay evidencia en la informacion proporcionada de que incorpore plantillas de chat o alineacion tipo instruct. La etiqueta `conversational` figura en los tags de HuggingFace, pero la model card no documenta el formato de prompt recomendado.
+Nota: al ser un modelo derivado de una variante *Base*, no hay evidencia en la informacion proporcionada de que incorpore plantillas de chat o alineacion tipo instruct. La etiqueta `conversational` figura en los tags de Hugging Face, pero la model card no documenta el formato de prompt recomendado.
 
 ## Casos de uso
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-3
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-cleaned-10k-20260910-CPT-merged-epoch-3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Los resultados de la busqueda web proporcionada no contienen informacion relevante sobre este modelo (corresponden a paginas sobre signos de puntuacion en arabe y servicios no relacionados), por lo que no se incluyen mas enlaces.

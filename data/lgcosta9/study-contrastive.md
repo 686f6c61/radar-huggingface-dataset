@@ -42,7 +42,7 @@ En cuanto al entrenamiento, no se proporciona ningún dato sobre tokens, composi
 - Verificación de integración de safetensors: permite comprobar que la carga y guardado de pesos en formato safetensors funciona con la versión de PyTorch instalada.
 - Experimentos de ablación de arquitectura: al ser tan pequeño, se puede modificar la configuración (número de capas, heads, etc.) y medir el impacto en el tiempo de ejecución sin necesidad de GPUs grandes.
 - Validación de recetas de entrenamiento: el `training_args.json` puede servir como punto de partida para probar schedulers y optimizadores en un entorno controlado.
-- Desarrollo de adaptadores para carga automática: dado que es una implementación personalizada, se puede usar para crear un adaptador que permita cargar el modelo con APIs estándar de HuggingFace.
+- Desarrollo de adaptadores para carga automática: dado que es una implementación personalizada, se puede usar para crear un adaptador que permita cargar el modelo con APIs estándar de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -64,12 +64,12 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 - El checkpoint de inicialización no ha sido entrenado; no debe usarse para ninguna tarea real de visión-lenguaje.
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio.
-- La implementación es personalizada y no es compatible con las APIs automáticas de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no es compatible con las APIs automáticas de Hugging Face sin un adaptador explícito.
 - No hay garantías de que la configuración por defecto produzca resultados razonables tras un entrenamiento; se requiere una evaluación rigurosa con conjuntos de validación específicos.
 - La licencia Apache 2.0 permite uso comercial, pero los términos de los datasets externos deben revisarse por separado.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de idioma porque el modelo no tiene capacidades funcionales.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lgcosta9/study-contrastive
+- Repositorio Hugging Face: https://huggingface.co/lgcosta9/study-contrastive
 - Repositorio similar (implementación Poolformer para contrastive): https://huggingface.co/justinmartinnil/study-contrastive

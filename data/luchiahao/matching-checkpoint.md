@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luchiahao/matching-checkpoint` es un prototipo de investigación basado en la arquitectura CLIP, orientado a tareas de *matching* (emparejamiento entre modalidades o entre pares de entradas). Lo publica el usuario `luchiahao` en HuggingFace bajo licencia BSD-3-Clause, con etiquetas `safetensors`, `clip`, `pytorch` y `matching`. El repositorio contiene una implementación propia en `model.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la propia model card, es un checkpoint de inicialización válido para *smoke tests* y **no** un checkpoint entrenado ni evaluado.
+`luchiahao/matching-checkpoint` es un prototipo de investigación basado en la arquitectura CLIP, orientado a tareas de *matching* (emparejamiento entre modalidades o entre pares de entradas). Lo publica el usuario `luchiahao` en Hugging Face bajo licencia BSD-3-Clause, con etiquetas `safetensors`, `clip`, `pytorch` y `matching`. El repositorio contiene una implementación propia en `model.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que, según la propia model card, es un checkpoint de inicialización válido para *smoke tests* y **no** un checkpoint entrenado ni evaluado.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: no se trata de un modelo listo para producción. La model card declara explícitamente que no se reclama ninguna puntuación de benchmark, que el checkpoint de inicialización no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que la receta incluida (optimizador LAMB con *warmup* lineal) son valores de partida del script, no evidencia de una ejecución completada. Su interés es, por tanto, como punto de partida reproducible para experimentos propios.
 
@@ -21,7 +21,7 @@ Hay además una contradicción interna que el lector debe conocer: la model card
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`); implementación en `model.py` (PyTorch), `config.json`, `training_args.json` |
 
-Otros datos del repositorio: 0 descargas, 0 *likes*, tamaño del repositorio 0,0 GB, creado el 2026-09-10 y actualizado el mismo día. *Pipeline* de HuggingFace no disponible.
+Otros datos del repositorio: 0 descargas, 0 *likes*, tamaño del repositorio 0,0 GB, creado el 2026-09-10 y actualizado el mismo día. *Pipeline* de Hugging Face no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `luchiahao/matching-checkpoint` | 33.088 (dato real de safetensors) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| `luchiahao/matching-checkpoint` | 33.088 (dato real de safetensors) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No se dispone de información sobre modelos comparables en el material proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luchiahao/matching-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/luchiahao/matching-checkpoint
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo, a la tarea de *matching* ni a su arquitectura. Los resultados recuperados tratan sobre herramientas de programación asistida (Copilot) y configuración de cuentas en Windows, y no guardan relación con este artefacto.

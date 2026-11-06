@@ -92,8 +92,8 @@ Ejemplo cualitativo incluido en la model card:
 
 | Modelo | Parametros | Enfoque | Error (letras no finales, test) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Tashkeel-v4-Saudi | 171.573.661 | Dialecto saudí, encoder MARBERTv2 + BiLSTM + CRF | 6,98 % | tashkeel-research-only (solo investigacion) | HuggingFace, safetensors |
-| Tashkeel-v4 (base) | no disponible | Diacritizacion de arabe formal (MSA/clasico) | 17,59 % | tashkeel-research-only | HuggingFace |
+| Tashkeel-v4-Saudi | 171.573.661 | Dialecto saudí, encoder MARBERTv2 + BiLSTM + CRF | 6,98 % | tashkeel-research-only (solo investigacion) | Hugging Face, safetensors |
+| Tashkeel-v4 (base) | no disponible | Diacritizacion de arabe formal (MSA/clasico) | 17,59 % | tashkeel-research-only | Hugging Face |
 | Shakkelha ajustado | 2.700.000 | Diacritizacion de habla saudí, mismo split y evaluador | 9,75 % | no disponible en la informacion proporcionada | Usado como referencia por el autor |
 | Shakkelha base | no disponible | Diacritizacion, sin ajuste al dominio saudí | 21,52 % | no disponible en la informacion proporcionada | Referencia comparativa |
 
@@ -113,7 +113,7 @@ No se dispone de comparaciones con otros modelos de diacritización árabe (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rabe3/Tashkeel-v4-Saudi
+- Modelo en Hugging Face: https://huggingface.co/Rabe3/Tashkeel-v4-Saudi
 - Modelo base: https://huggingface.co/ahmedsamirtarjama/Tashkeel-v4
 - Dataset de ajuste: https://huggingface.co/datasets/Rabe3/saudi-tashkeel-splits
 - Licencia: archivo LICENSE del repositorio (Tashkeel Research-Only License), no disponible como enlace directo en la información proporcionada

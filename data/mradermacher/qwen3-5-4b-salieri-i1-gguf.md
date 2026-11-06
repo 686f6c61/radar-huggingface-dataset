@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Salieri-i1-GGUF es una cuantizacion en formato GGUF del modelo Jitheswar/Qwen3.5-4B-Salieri, un ajuste fino derivado de la familia Qwen3.5 orientado a tareas de programacion, agentes y SWE (ingenieria de software). El trabajo de cuantizacion lo realiza mradermacher, un perfil conocido en HuggingFace por producir versiones GGUF optimizadas con matrices de importancia (imatrix) para despliegue en llama.cpp y otros runtimes compatibles. La model card lo etiqueta como modelo de vision, con soporte de tool calling, razonamiento y entrenamiento mediante DPO sobre el dataset nvidia/Open-SWE-Traces.
+Qwen3.5-4B-Salieri-i1-GGUF es una cuantizacion en formato GGUF del modelo Jitheswar/Qwen3.5-4B-Salieri, un ajuste fino derivado de la familia Qwen3.5 orientado a tareas de programacion, agentes y SWE (ingenieria de software). El trabajo de cuantizacion lo realiza mradermacher, un perfil conocido en Hugging Face por producir versiones GGUF optimizadas con matrices de importancia (imatrix) para despliegue en llama.cpp y otros runtimes compatibles. La model card lo etiqueta como modelo de vision, con soporte de tool calling, razonamiento y entrenamiento mediante DPO sobre el dataset nvidia/Open-SWE-Traces.
 
 El modelo base declara 4B en el nombre, pero los pesos safetensors publicados en el repositorio de cuantizacion suman 1.797.272 parametros totales, un dato que no coincide con la nomenclatura y que conviene verificar contra el repositorio original antes de planificar despliegues. La licencia es Apache 2.0 y los idiomas declarados son ingles, chino y multilingue. El repositorio de cuantizacion tiene un tamano de 0.0 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, lo que indica que se trata de una publicacion muy reciente (creada el 4 de noviembre de 2026) sin validacion comunitaria.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.5-4B-Salieri-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.5-4B-Salieri-i1-GGUF
 - Repositorio estatico hermano (quants sin imatrix y posibles mmproj): https://huggingface.co/mradermacher/Qwen3.5-4B-Salieri-GGUF
 - Modelo base: https://huggingface.co/Jitheswar/Qwen3.5-4B-Salieri
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Open-SWE-Traces

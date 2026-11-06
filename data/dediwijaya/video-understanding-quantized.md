@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo de IA y no puede compararse con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dediwijaya/video-understanding-quantized
+- Repositorio Hugging Face: https://huggingface.co/dediwijaya/video-understanding-quantized
 - Referencia sobre cuantización de modelos (contexto general): https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/
 - Lista de recursos sobre cuantización: https://github.com/AI-Efficiency/Awesome-Model-Quantization/
 - Noticia sobre V-JEPA 2 de Meta (modelo real de comprensión de vídeo, como contexto del área): https://www.aibase.com/news/18845

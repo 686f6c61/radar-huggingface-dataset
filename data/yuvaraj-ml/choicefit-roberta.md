@@ -17,9 +17,9 @@ Su relevancia práctica es acotada pero clara: sirve como línea base ligera y e
 | Longitud de contexto | 256 tokens durante el entrenamiento; la model card no confirma el máximo en inferencia (RoBERTa-base admite hasta 512 posiciones) |
 | Tipos de cuantización | No disponible (no se publican versiones cuantizadas; al ser un modelo de 125M es viable convertir a int8/ONNX) |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | `research-and-educational-use-only` (etiquetada como `other` en HuggingFace); uso comercial no permitido |
+| Licencia | `research-and-educational-use-only` (etiquetada como `other` en Hugging Face); uso comercial no permitido |
 | Formato de pesos | safetensors |
-| Pipeline de HuggingFace | `multiple-choice` |
+| Pipeline de Hugging Face | `multiple-choice` |
 | Modelo base | `FacebookAI/roberta-base` (fine-tune) |
 | Dataset de entrenamiento | `tasksource/tasksource-jev-typed-decisions` (~486k ejemplos, 2-8 opciones, 256 tokens) |
 | Tamaño del repositorio | 0,5 GB |
@@ -74,11 +74,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas gene
 
 | Modelo | Parámetros | Contexto | Accuracy benchmark mixto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChoiceFit RoBERTa | 124,6M | 256 en entrenamiento (512 posicional máximo del base) | 66,7 % | Solo investigación y educación | HuggingFace + GitHub |
-| `FacebookAI/roberta-base` (sin ajuste) | 125M | 512 | 37,0 % | MIT | HuggingFace |
+| ChoiceFit RoBERTa | 124,6M | 256 en entrenamiento (512 posicional máximo del base) | 66,7 % | Solo investigación y educación | Hugging Face + GitHub |
+| `FacebookAI/roberta-base` (sin ajuste) | 125M | 512 | 37,0 % | MIT | Hugging Face |
 | JEV (TypeSafe) | No disponible | No disponible | 78,3 % | No disponible | Referencia citada en la model card |
-| `microsoft/deberta-v3-base` | ~86M en el backbone (según su model card) | 512 | No disponible | MIT | HuggingFace |
-| `answerdotai/ModernBERT-base` | 149M | 8192 | No disponible | Apache 2.0 | HuggingFace |
+| `microsoft/deberta-v3-base` | ~86M en el backbone (según su model card) | 512 | No disponible | MIT | Hugging Face |
+| `answerdotai/ModernBERT-base` | 149M | 8192 | No disponible | Apache 2.0 | Hugging Face |
 
 No hay resultados publicados que permitan comparar a ChoiceFit con DeBERTa-v3-base o ModernBERT-base en la misma tarea; la comparación con JEV es la única con datos numéricos y procede del propio autor.
 
@@ -95,7 +95,7 @@ No hay resultados publicados que permitan comparar a ChoiceFit con DeBERTa-v3-ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yuvaraj-ml/choicefit-roberta
+- Modelo en Hugging Face: https://huggingface.co/Yuvaraj-ml/choicefit-roberta
 - Código: https://github.com/yuvarajd2588/ChoiceFit-RoBERTa
 - Dataset de entrenamiento: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base

@@ -33,7 +33,7 @@ Las 90 voces del catalogo Gradium estan preentrenadas y cubren siete locales, mi
 - 102 voces preentrenadas: 48 femeninas, 42 masculinas y 12 de personaje en ingles.
 - Inyeccion directa de voz sin clonacion: el embedding se carga como condicionamiento de hablante y no requiere audio de referencia en inferencia.
 - Compatibilidad con Phonon S (31M), un modelo TTS ligero que puede ejecutarse en hardware de gama baja.
-- Muestras de audio disponibles por voz en formato `.ogg`, alojadas en el repositorio `gradium/phonon-voices` de HuggingFace.
+- Muestras de audio disponibles por voz en formato `.ogg`, alojadas en el repositorio `gradium/phonon-voices` de Hugging Face.
 - No se documentan capacidades de tool calling, razonamiento multi-paso, vision, audio de entrada ni modo thinking, ya que no es un modelo de lenguaje.
 
 ## Casos de uso
@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de em
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ezequiel-andrade/phonon-voices
+- Repositorio en Hugging Face: https://huggingface.co/ezequiel-andrade/phonon-voices
 - Repositorio de muestras de audio: https://huggingface.co/gradium/phonon-voices
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos adicionales.

@@ -77,7 +77,7 @@ No se dispone de comparaciones cuantitativas con modelos abliterados similares, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [junafinity/Ornith-1.5-9B-uncensored-MLX-8bit](https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-MLX-8bit)
+- Modelo en Hugging Face: [junafinity/Ornith-1.5-9B-uncensored-MLX-8bit](https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored-MLX-8bit)
 - Modelo base: [ornith-ai/Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - Repositorio ZeroFuse: [github.com/junainfinity/ZeroFuse](https://github.com/junainfinity/ZeroFuse)
 - Página oficial de Ornith-1.5: [ornith.ai/ornith_1_5.html](https://ornith.ai/ornith_1_5.html)

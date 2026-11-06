@@ -101,7 +101,7 @@ No se dispone de comparaciones con otros modelos LSR japoneses en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahiyama/sae-splade-ja-30m-onnx
+- Modelo en Hugging Face: https://huggingface.co/mahiyama/sae-splade-ja-30m-onnx
 - Modelo base (PyTorch): https://huggingface.co/mahiyama/sae-splade-ja-30m
 - Codificador de documentos: https://huggingface.co/mahiyama/sae-splade-ja-310m
 - Dataset de evaluación NanoJMTEB-v2: https://huggingface.co/datasets/hakari-bench/NanoJMTEB-v2

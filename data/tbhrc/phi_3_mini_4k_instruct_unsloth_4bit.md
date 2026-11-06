@@ -13,7 +13,7 @@ La relevancia actual de este modelo radica en que ofrece capacidades de razonami
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (arquitectura Mistral, "Mistralfied") |
-| Parametros totales | 597.212.160 según HuggingFace (el modelo base Phi-3-mini tiene 3.800 M) |
+| Parametros totales | 597.212.160 según Hugging Face (el modelo base Phi-3-mini tiene 3.800 M) |
 | Parametros activos | no aplicable (modelo denso, no MoE) |
 | Longitud de contexto | 4.096 tokens |
 | Tipos de cuantizacion | 4 bits (bitsandbytes / MLX) |
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los d
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tbhrc/phi_3_mini_4k_instruct_unsloth_4bit | 597 M (4-bit) | 4.096 | 4-bit | MIT | HuggingFace |
-| Llama-3.2-3B-Instruct | 3.2 B | 128 K | 4-bit | Llama 3.2 | HuggingFace |
-| Gemma-2-2B-it | 2.6 B | 8 K | 4-bit | Gemma | HuggingFace |
-| Qwen2.5-3B-Instruct | 3 B | 32 K | 4-bit | Apache 2.0 | HuggingFace |
+| tbhrc/phi_3_mini_4k_instruct_unsloth_4bit | 597 M (4-bit) | 4.096 | 4-bit | MIT | Hugging Face |
+| Llama-3.2-3B-Instruct | 3.2 B | 128 K | 4-bit | Llama 3.2 | Hugging Face |
+| Gemma-2-2B-it | 2.6 B | 8 K | 4-bit | Gemma | Hugging Face |
+| Qwen2.5-3B-Instruct | 3 B | 32 K | 4-bit | Apache 2.0 | Hugging Face |
 
 El modelo compite con modelos de 2-3 B de parametros. Su ventaja es la licencia MIT, que permite uso comercial sin restricciones, y su tamano reducido. Sin embargo, su contexto de 4 K tokens es inferior al de sus competidores actuales.
 
@@ -76,7 +76,7 @@ El modelo compite con modelos de 2-3 B de parametros. Su ventaja es la licencia 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/tbhrc/phi_3_mini_4k_instruct_unsloth_4bit
+- Hugging Face del modelo: https://huggingface.co/tbhrc/phi_3_mini_4k_instruct_unsloth_4bit
 - Modelo original de Unsloth: https://huggingface.co/unsloth/Phi-3-mini-4k-instruct
 - Version cuantizada con bitsandbytes: https://huggingface.co/unsloth/Phi-3-mini-4k-instruct-bnb-4bit
 - Repositorio de referencia (GitHub): https://github.com/ttlmtang123/Phi-3-mini-4k-instruct

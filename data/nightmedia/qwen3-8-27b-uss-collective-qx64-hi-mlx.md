@@ -115,7 +115,7 @@ Nota: los datos de los modelos alternativos son especificaciones públicas conoc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Collective-qx64-hi-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Collective-qx64-hi-mlx
 - Modelo base: https://huggingface.co/schneewolflabs/B1-27B
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.6-27B-Seven
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves

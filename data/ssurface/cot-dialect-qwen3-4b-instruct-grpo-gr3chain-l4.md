@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3chain-l4
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3chain-l4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Adaptador SFT de nivel L4 (requerido para el flujo de carga): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l4
 - Modelo principal del nivel L4 (para comparacion): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4

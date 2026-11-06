@@ -93,10 +93,10 @@ No se dispone de datos de parametros, contexto, rendimiento ni licencia de los m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zanglin/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/zanglin/DeepSeek-V4.1-Flash
 - Pagina oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Cuenta de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Informe tecnico referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Imagen de marca usada en la model card: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg

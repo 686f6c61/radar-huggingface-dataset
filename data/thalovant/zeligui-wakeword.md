@@ -91,7 +91,7 @@ No se dispone de datos de otros detectores de wake word comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thalovant/zeligui-wakeword
+- Modelo en Hugging Face: https://huggingface.co/thalovant/zeligui-wakeword
 - Sucesor recomendado (Zoguilo): https://huggingface.co/thalovant/zoguilo-wakeword
 - Modelo base (wakehubert-tiny): https://huggingface.co/TigreGotico/wakehubert-tiny
 - Repositorio wakeforge: https://github.com/TigreGotico/wakeforge

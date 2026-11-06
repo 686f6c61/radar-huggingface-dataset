@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iomlcs/mega-ultra-bro-lora` es un ajuste fino publicado en HuggingFace por el usuario iomlcs, derivado del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Segun la propia model card, se trata de un modelo entrenado con Unsloth y la libreria TRL de HuggingFace, una combinacion habitual para fine-tuning eficiente en memoria de modelos de la familia Gemma. El repositorio ocupa 0,2 GB y esta etiquetado con `transformers`, `safetensors`, `text-generation-inference`, `unsloth`, `gemma4` y `trl`, con licencia declarada apache-2.0 y un unico idioma soportado: ingles.
+`iomlcs/mega-ultra-bro-lora` es un ajuste fino publicado en Hugging Face por el usuario iomlcs, derivado del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. Segun la propia model card, se trata de un modelo entrenado con Unsloth y la libreria TRL de Hugging Face, una combinacion habitual para fine-tuning eficiente en memoria de modelos de la familia Gemma. El repositorio ocupa 0,2 GB y esta etiquetado con `transformers`, `safetensors`, `text-generation-inference`, `unsloth`, `gemma4` y `trl`, con licencia declarada apache-2.0 y un unico idioma soportado: ingles.
 
 El interes de esta ficha es limitado pero relevante como caso de estudio: se trata de un ajuste fino recien publicado (creado y actualizado el 2026-09-19, con 0 descargas y 0 likes en el momento de la consulta) y sin ningun tipo de evaluacion publicada. No hay datos sobre el conjunto de datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se documenta la arquitectura concreta de la variante base empleada.
 
@@ -33,7 +33,7 @@ Por tanto, esta ficha describe lo que es verificable (procedencia, licencia, idi
 
 La informacion disponible no permite describir la arquitectura interna del modelo. La etiqueta `gemma4` y el identificador del modelo base (`unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`) indican que deriva de la familia Gemma, pero la model card no detalla el numero de capas, la dimension del modelo, el tipo de atencion, la ventana de contexto ni si emplea algun esquema de mezcla de expertos. El sufijo `e2b` del modelo base sugiere una variante de parametros efectivos reducidos segun la nomenclatura empleada en algunas generaciones de Gemma, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
-Respecto al entrenamiento, lo unico documentado es que se utilizaron Unsloth y la libreria TRL de HuggingFace para el ajuste fino, con la afirmacion generica de que el entrenamiento fue "2x faster". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, el metodo de optimizacion, la existencia de etapas de RLHF, DPO o cualquier otra forma de alineacion, ni si se aplico alguna innovacion tecnica adicional. El sufijo `lora` del nombre del repositorio sugiere que el artefacto publicado podria ser un adaptador LoRA en lugar de pesos fusionados completos, hipotesis coherente con el tamano del repositorio (0,2 GB), pero tampoco esta confirmado de forma explicita en la documentacion.
+Respecto al entrenamiento, lo unico documentado es que se utilizaron Unsloth y la libreria TRL de Hugging Face para el ajuste fino, con la afirmacion generica de que el entrenamiento fue "2x faster". No se especifica el numero de tokens de entrenamiento, la composicion del dataset, el metodo de optimizacion, la existencia de etapas de RLHF, DPO o cualquier otra forma de alineacion, ni si se aplico alguna innovacion tecnica adicional. El sufijo `lora` del nombre del repositorio sugiere que el artefacto publicado podria ser un adaptador LoRA en lugar de pesos fusionados completos, hipotesis coherente con el tamano del repositorio (0,2 GB), pero tampoco esta confirmado de forma explicita en la documentacion.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ Dado que no existe documentacion funcional ni evaluaciones, los siguientes casos
 - Resumen de documentos cortos en ingles: escenarios de preprocesado donde el contexto requerido sea reducido, dada la ausencia de datos sobre la ventana de contexto real.
 - Investigacion sobre degradacion por fine-tuning: comparar las salidas de este adaptador con las del modelo base para estudiar perdida de capacidades (catastrophic forgetting) tras un ajuste con pocos datos.
 - Base para nuevos ajustes especificos: partir de este modelo como punto de inicio para tareas de nicho en ingles, aprovechando la infraestructura de Unsloth.
-- Educacion y divulgacion: ilustrar en un articulo o taller el ciclo completo de publicacion de un modelo ajustado en HuggingFace, incluidos sus riesgos cuando falta documentacion.
+- Educacion y divulgacion: ilustrar en un articulo o taller el ciclo completo de publicacion de un modelo ajustado en Hugging Face, incluidos sus riesgos cuando falta documentacion.
 
 ## Benchmarks y rendimiento
 
@@ -78,8 +78,8 @@ No hay datos oficiales de requisitos de hardware. Las siguientes indicaciones so
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iomlcs/mega-ultra-bro-lora | no disponible | no disponible | sin benchmarks publicados | apache-2.0 declarada | HuggingFace, 0 descargas |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| iomlcs/mega-ultra-bro-lora | no disponible | no disponible | sin benchmarks publicados | apache-2.0 declarada | Hugging Face, 0 descargas |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa con modelos de la misma categoria. No hay datos de parametros, contexto ni evaluaciones del modelo base, y la busqueda web no aporto referencias a modelos comparables para este ajuste concreto.
@@ -98,9 +98,9 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iomlcs/mega-ultra-bro-lora
+- Modelo en Hugging Face: https://huggingface.co/iomlcs/mega-ultra-bro-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl (referenciada en la model card como "Huggingface's TRL library")
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl (referenciada en la model card como "Huggingface's TRL library")
 - Resultados de busqueda web: la busqueda no devolvio enlaces relevantes; los unicos resultados obtenidos fueron paginas de inicio de sesion de Microsoft Outlook, sin relacion con el modelo.
 - Papers, blogs y demos: no disponible.

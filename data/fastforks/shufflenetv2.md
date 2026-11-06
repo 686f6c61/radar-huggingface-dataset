@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks comparativos con otras arquitecturas en la 
 
 | Modelo | Parámetros | Contexto/entrada | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| ShuffleNetV2 x1.0 (este repo) | no disponible | 224x224 fija | Código BSD-3-Clause; pesos sin licencia declarada | HuggingFace (card) + descarga de pesos de PyTorch | 0,84 ms (kernels), 3,71 ms (portable) en RTX 5060 Ti |
+| ShuffleNetV2 x1.0 (este repo) | no disponible | 224x224 fija | Código BSD-3-Clause; pesos sin licencia declarada | Hugging Face (card) + descarga de pesos de PyTorch | 0,84 ms (kernels), 3,71 ms (portable) en RTX 5060 Ti |
 | MobileNetV2 | no disponible | 224x224 | no disponible | PyTorch Vision | no disponible |
 | EfficientNet-B0 | no disponible | 224x224 | no disponible | PyTorch Vision | no disponible |
 | ResNet-18 | no disponible | 224x224 | no disponible | PyTorch Vision | no disponible |
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos con otras arquitecturas en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/shufflenetv2
+- Hugging Face: https://huggingface.co/fastforks/shufflenetv2
 - Repositorio fastforks: https://github.com/kleinicke/fastforks
 - Kernels backend: https://huggingface.co/fastforks/kernels
 - Benchmarks y protocolo: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

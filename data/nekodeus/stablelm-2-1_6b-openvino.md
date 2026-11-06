@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StableLM-2 1.6B OpenVINO (INT8) es una conversion a formato OpenVINO IR del modelo StableLM-2 1.6B de Stability AI, publicada por el usuario Nekodeus en HuggingFace. El modelo base es un LLM de 1.600 millones de parametros orientado a generacion de texto, y esta version aplica cuantizacion weight-only INT8 mediante NNCF para reducir el tamano del modelo a 1,7 GB y acelerar la inferencia en CPU.
+StableLM-2 1.6B OpenVINO (INT8) es una conversion a formato OpenVINO IR del modelo StableLM-2 1.6B de Stability AI, publicada por el usuario Nekodeus en Hugging Face. El modelo base es un LLM de 1.600 millones de parametros orientado a generacion de texto, y esta version aplica cuantizacion weight-only INT8 mediante NNCF para reducir el tamano del modelo a 1,7 GB y acelerar la inferencia en CPU.
 
 El objetivo de esta conversion es permitir ejecutar StableLM-2 en hardware convencional sin GPU dedicada, aprovechando el runtime OpenVINO de Intel. Esto lo hace relevante para despliegues ligeros en portatiles, servidores sin aceleradora o entornos edge, donde un modelo de 1,6B parametros cuantizado a INT8 puede ofrecer latencias razonables con recursos minimos. La conversion se realizo con `optimum-cli` de forma completamente offline sobre CPU en Kaggle, usando `optimum-intel 2.2.0` y `openvino 2026.4.1`.
 

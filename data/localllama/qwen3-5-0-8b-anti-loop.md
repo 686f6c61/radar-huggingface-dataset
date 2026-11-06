@@ -81,9 +81,9 @@ En MATH-500, 29 problemas fueron correctos solo con el vector y 1 solo sin el. E
 
 | Alternativa | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-anti-loop (este artefacto) | 0,8B (base) | no disponible | Steering en inferencia sobre Qwen3.5-0.8B | CC BY 4.0 | HuggingFace, PTS |
+| Qwen3.5-0.8B-anti-loop (este artefacto) | 0,8B (base) | no disponible | Steering en inferencia sobre Qwen3.5-0.8B | CC BY 4.0 | Hugging Face, PTS |
 | Edit de pesos de "Sparks of Weight-Space Programming" | 0,8B (base) | no disponible | Edicion de pesos con GPT-6 Astra | CC BY 4.0 (logs) | Repositorio de logs de los autores |
-| Qwen3.5-0.8B sin modificar | 0,8B | no disponible | Modelo base con thinking | no disponible en esta ficha | HuggingFace (Qwen) |
+| Qwen3.5-0.8B sin modificar | 0,8B | no disponible | Modelo base con thinking | no disponible en esta ficha | Hugging Face (Qwen) |
 
 En las pruebas del autor, el steering en tiempo de inferencia supero ligeramente al edit de pesos original (36 frente a 33 correctos sobre 96 problemas) y quedo muy por encima de una direccion aleatoria de control (10 correctos), lo que respalda que el efecto es especifico de la direccion recuperada.
 
@@ -100,7 +100,7 @@ En las pruebas del autor, el steering en tiempo de inferencia supero ligeramente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LocalLLaMA/Qwen3.5-0.8B-anti-loop
+- Modelo en Hugging Face: https://huggingface.co/LocalLLaMA/Qwen3.5-0.8B-anti-loop
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio PTS: https://github.com/codelion/pts
 - Demo interactiva (PTS visualizer): https://huggingface.co/spaces/codelion/pts-visualizer?vector=LocalLLaMA/Qwen3.5-0.8B-anti-loop

@@ -74,8 +74,8 @@ ArithMark usó el script `bencharithmark-3.py` sin modificar, con contexto máxi
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Picolo-BananaMind | 100 | 256 tokens (entrenamiento) | MIT | HuggingFace |
-| MicroSupra-1k | aproximadamente 1.000 (dato derivado de la model card de Picolo, que indica un presupuesto diez veces mayor) | no disponible | no disponible | HuggingFace |
+| Picolo-BananaMind | 100 | 256 tokens (entrenamiento) | MIT | Hugging Face |
+| MicroSupra-1k | aproximadamente 1.000 (dato derivado de la model card de Picolo, que indica un presupuesto diez veces mayor) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento, contexto, licencia o arquitectura de otros modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa adicional.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento, contexto, licencia o arquitectura de otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BananaMind/Picolo-BananaMind
+- Modelo en Hugging Face: https://huggingface.co/BananaMind/Picolo-BananaMind
 - Modelo de inspiración MicroSupra-1k: https://huggingface.co/SupraLabs/MicroSupra-1k
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset ArithMark 3.0: https://huggingface.co/datasets/AxiomicLabs/Arithmark-3.0

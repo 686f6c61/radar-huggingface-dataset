@@ -61,5 +61,5 @@ No disponible. No existe un modelo comparable porque se trata de un repositorio 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/nehajoshidale/tts)
-- [Perfil del autor en HuggingFace](https://huggingface.co/nehajoshidale/models)
+- [Repositorio en Hugging Face](https://huggingface.co/nehajoshidale/tts)
+- [Perfil del autor en Hugging Face](https://huggingface.co/nehajoshidale/models)

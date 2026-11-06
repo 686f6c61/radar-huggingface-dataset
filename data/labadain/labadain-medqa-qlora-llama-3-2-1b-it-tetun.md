@@ -73,10 +73,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Labadain-MedQA-QLoRA-LLaMA-3.2-1B-it-Tetun | 1B (base) + adaptador LoRA | No disponible | QA medico en tetun via QLoRA | Llama 3.2 | HuggingFace (adaptador PEFT) |
-| Llama 3.2 1B-Instruct (base) | 1B | No disponible | Instructivo general multilingue | Llama 3.2 | HuggingFace |
-| Llama 3.2 3B-Instruct | 3B | No disponible | Instructivo general multilingue | Llama 3.2 | HuggingFace |
-| Gemma 2 2B Instruct | 2B | No disponible | Instructivo general multilingue | Gemma Terms | HuggingFace |
+| Labadain-MedQA-QLoRA-LLaMA-3.2-1B-it-Tetun | 1B (base) + adaptador LoRA | No disponible | QA medico en tetun via QLoRA | Llama 3.2 | Hugging Face (adaptador PEFT) |
+| Llama 3.2 1B-Instruct (base) | 1B | No disponible | Instructivo general multilingue | Llama 3.2 | Hugging Face |
+| Llama 3.2 3B-Instruct | 3B | No disponible | Instructivo general multilingue | Llama 3.2 | Hugging Face |
+| Gemma 2 2B Instruct | 2B | No disponible | Instructivo general multilingue | Gemma Terms | Hugging Face |
 
 No se dispone de comparaciones de rendimiento publicadas entre este adaptador y alternativas en tetun en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de comparaciones de rendimiento publicadas entre este adaptador y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-llama-3.2-1B-it-Tetun
+- Modelo en Hugging Face: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-llama-3.2-1B-it-Tetun
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Dataset Medical Flashcards: https://huggingface.co/datasets/labadain/Labadain-MedQA-MedAlpaca-Medical-Flashcards-English-Tetun
 - Dataset WikiDoc Patient Information: https://huggingface.co/datasets/labadain/Labadain-MedQA-MeadAlpaca-WikiDoc-Patient-Information-English-Tetun

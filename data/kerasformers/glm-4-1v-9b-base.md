@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kerasformers/glm-4.1v-9b-base` es una conversión íntegra en Keras 3 del modelo de visión-lenguaje `zai-org/GLM-4.1V-9B-Base`, desarrollada por el equipo de KerasFormers. Este checkpoint permite ejecutar el modelo GLM-4.1V-9B-Base de forma nativa sobre TensorFlow, PyTorch o JAX con una única implementación, lo que facilita su integración en entornos heterogéneos sin depender del ecosistema original de HuggingFace Transformers.
+`kerasformers/glm-4.1v-9b-base` es una conversión íntegra en Keras 3 del modelo de visión-lenguaje `zai-org/GLM-4.1V-9B-Base`, desarrollada por el equipo de KerasFormers. Este checkpoint permite ejecutar el modelo GLM-4.1V-9B-Base de forma nativa sobre TensorFlow, PyTorch o JAX con una única implementación, lo que facilita su integración en entornos heterogéneos sin depender del ecosistema original de Hugging Face Transformers.
 
 El modelo original, creado por Zhipu AI / THUDM, combina una torre de visión GLM-4V con un decoder denso GLM-4, y está diseñado para tareas de entrada imagen + texto y salida de texto. La versión base (sin ajuste instructivo) se orienta a investigación y fine-tuning. Su relevancia actual radica en que democratiza el acceso a un VLM de 9 mil millones de parámetros con licencia MIT, y esta conversión Keras 3 amplía su portabilidad a múltiples frameworks de deep learning.
 
@@ -33,7 +33,7 @@ La conversion de KerasFormers no modifica los pesos originales; simplemente los 
 - Comprension de imagenes y descripcion en lenguaje natural.
 - Soporte multilingue para ingles y chino.
 - Ejecucion multiplataforma: la misma implementacion corre en TensorFlow, PyTorch y JAX.
-- Carga de pesos directamente desde HuggingFace mediante `from_weights`.
+- Carga de pesos directamente desde Hugging Face mediante `from_weights`.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso explicito, ni modos de thinking en esta version base.
 
 ## Casos de uso
@@ -72,7 +72,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/glm-4.1v-9b-base
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/glm-4.1v-9b-base
 - Modelo original: https://huggingface.co/zai-org/GLM-4.1V-9B-Base
 - Repositorio KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de GLM en KerasFormers: https://imvision12.github.io/KerasFormers/glm4v/

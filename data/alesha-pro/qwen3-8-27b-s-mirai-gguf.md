@@ -98,11 +98,11 @@ No se dispone de datos sobre otras alternativas de la misma categoría (modelos 
 - Licencia Apache-2.0, que permite uso comercial, pero conviene verificar la licencia del modelo base `Qwen/Qwen3.8-27B` y del checkpoint de Mirai antes de un despliegue comercial, ya que la ficha no detalla esa cadena.
 - Adopción muy baja (618 descargas, 12 me gusta), por lo que el soporte de la comunidad y la resolución de incidencias serán limitados.
 - Configuraciones sensibles: el uso de `-np 1`, de CUDA 12 con cuBLASLt y de los tipos de caché KV adecuados es determinante para el consumo de VRAM y el rendimiento.
-- Fecha de publicación según los metadatos de HuggingFace: 26 de septiembre de 2026.
+- Fecha de publicación según los metadatos de Hugging Face: 26 de septiembre de 2026.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alesha-pro/Qwen3.8-27B-S-mirai-GGUF
+- Modelo en Hugging Face: https://huggingface.co/alesha-pro/Qwen3.8-27B-S-mirai-GGUF
 - Modelo base (checkpoint de Mirai): https://huggingface.co/trymirai/Qwen3.8-27B-S-experimental
 - Fork de llama.cpp necesario: https://github.com/alesha-pro/llama.cpp-mirai-s
 - Modelo base de Qwen (origen del encoder de visión): https://huggingface.co/Qwen/Qwen3.8-27B

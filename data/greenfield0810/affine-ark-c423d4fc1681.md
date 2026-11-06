@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parámetros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `greenfield0810/affine-ark-c423d4fc1681` | 35,1 B (MoE) | Qwen3.5 MoE multimodal | no disponible | no disponible | Archivo espejo, sin uso comercial garantizado |
-| Qwen2.5-VL-32B (referencia) | 32,5 B | Transformer denso multimodal | 128K tokens | Apache 2.0 (partes) | Oficial en HuggingFace |
-| Qwen2.5-MoE-A32B (referencia) | 32,8 B total, 3,9 B activos | MoE multimodal | no disponible | no disponible | Oficial en HuggingFace |
+| Qwen2.5-VL-32B (referencia) | 32,5 B | Transformer denso multimodal | 128K tokens | Apache 2.0 (partes) | Oficial en Hugging Face |
+| Qwen2.5-MoE-A32B (referencia) | 32,8 B total, 3,9 B activos | MoE multimodal | no disponible | no disponible | Oficial en Hugging Face |
 
 La comparativa es orientativa: el modelo analizado no publica datos de contexto ni licencia, y al ser un archivo espejo sin documentación de entrenamiento, no se puede garantizar equivalencia con los modelos Qwen oficiales. Los datos de los modelos de referencia provienen de sus respectivas fichas públicas.
 
@@ -77,6 +77,6 @@ La comparativa es orientativa: el modelo analizado no publica datos de contexto 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/greenfield0810/affine-ark-c423d4fc1681)
+- [Repositorio en Hugging Face](https://huggingface.co/greenfield0810/affine-ark-c423d4fc1681)
 - [Árbol de ficheros del repositorio](https://huggingface.co/greenfield0810/affine-ark-c423d4fc1681/tree/main)
 - [Modelo original: `0pentensor/Affine-5dflhtkufw-awesome-v22`](https://huggingface.co/0pentensor/Affine-5dflhtkufw-awesome-v22)

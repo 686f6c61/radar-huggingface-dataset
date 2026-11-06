@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sydneyclark/classification
+- Repositorio en Hugging Face: https://huggingface.co/Sydneyclark/classification
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch12` | ~6,74 B | no disponible (Llama 2: 4096) | llama2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` (modelo base) | ~6,74 B | 4096 | llama2 | HuggingFace, público |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,74 B | 4096 | llama2 | HuggingFace, muy popular |
-| Llama 2 7B (Meta) | ~6,74 B | 4096 | llama2 | HuggingFace, ampliamente usado |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch12` | ~6,74 B | no disponible (Llama 2: 4096) | llama2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` (modelo base) | ~6,74 B | 4096 | llama2 | Hugging Face, público |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,74 B | 4096 | llama2 | Hugging Face, muy popular |
+| Llama 2 7B (Meta) | ~6,74 B | 4096 | llama2 | Hugging Face, ampliamente usado |
 
 No se dispone de datos de rendimiento comparativos entre estos checkpoints en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estos checkpoints en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch12
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch12
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (referencia del dataset): no disponible en la información proporcionada

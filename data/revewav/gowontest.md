@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`revewav/gowontest` es un repositorio alojado en HuggingFace por el usuario `revewav`, publicado bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica: unicamente reproduce el campo de metadatos de licencia (`license: openrail`), sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, lo que sugiere pesos de pequeno tamano, pero no permite determinar la naturaleza del modelo.
+`revewav/gowontest` es un repositorio alojado en Hugging Face por el usuario `revewav`, publicado bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica: unicamente reproduce el campo de metadatos de licencia (`license: openrail`), sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, lo que sugiere pesos de pequeno tamano, pero no permite determinar la naturaleza del modelo.
 
 En el momento de la consulta, el modelo acumula 0 descargas y 0 likes, y no tiene pipeline declarado. Fue creado el 3 de noviembre de 2026 y actualizado apenas un minuto despues, lo que apunta a un artefacto de prueba o a un repositorio en fase embrionaria mas que a un modelo listo para evaluacion o uso en produccion.
 
@@ -34,13 +34,13 @@ Tampoco hay evidencia de innovaciones tecnicas destacables (atencion lineal, dec
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No se especifican capacidades multilingues ni idiomas cubiertos.
 - No se declara ningun modo especial (thinking mode, vision, audio, etc.).
-- El unico dato verificable es la licencia OpenRAIL y la ausencia de pipeline declarado en HuggingFace.
+- El unico dato verificable es la licencia OpenRAIL y la ausencia de pipeline declarado en Hugging Face.
 
 ## Casos de uso
 
 - Inspeccion y auditoria del repositorio: descargar los 0,1 GB de artefactos y revisar la estructura de ficheros para determinar si contiene pesos, tokenizador o configuracion, antes de plantear cualquier uso.
 - Prototipado interno controlado: emplearlo exclusivamente en un entorno aislado para comprobar su comportamiento, dado que no hay documentacion que permita anticipar resultados.
-- Pruebas de integracion de pipelines de HuggingFace: verificar como se comporta la carga del repositorio cuando el pipeline no esta declarado y faltan metadatos.
+- Pruebas de integracion de pipelines de Hugging Face: verificar como se comporta la carga del repositorio cuando el pipeline no esta declarado y faltan metadatos.
 - Evaluacion de licencias OpenRAIL: usar el repositorio como caso de estudio para revisar las obligaciones de atribucion y las restricciones de uso de la familia OpenRAIL.
 - Docencia sobre publicacion de modelos: analizar que informacion minima deberia acompanar a un repositorio (model card, config, tokenizador) tomando este como ejemplo de publicacion incompleta.
 - Trazabilidad de artefactos: monitorizar el repositorio para detectar si el autor publica en el futuro una model card completa, pesos en safetensors o GGUF y resultados de evaluacion.
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable: no se conocen parametros, conte
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| revewav/gowontest | no disponible | no disponible | openrail | HuggingFace (0 descargas) |
+| revewav/gowontest | no disponible | no disponible | openrail | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No es posible establecer una comparativa fiable: no se conocen parametros, conte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/revewav/gowontest
+- Repositorio en Hugging Face: https://huggingface.co/revewav/gowontest
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

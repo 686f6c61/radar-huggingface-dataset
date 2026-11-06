@@ -97,8 +97,8 @@ No se proporcionan datos de benchmarks ni especificaciones de modelos externos c
 
 | Modelo | Parámetros totales | Activos por token | Contexto | Mecanismo residual | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mini-K3-1H-attnres-full-sublayer-v1_D (este modelo) | 1.016.780.524 | 353.556.204 | 8.192 | full_sublayer: atención sobre salidas de cada subcapa | no disponible | HuggingFace, revisión en inicialización |
-| nkkbr/Mini-K3-1H-v2 (baseline Block-4) | no disponible | no disponible | misma receta de 16.000 millones de tokens | granularidad de bloque (Block-4) | no disponible | HuggingFace |
+| Mini-K3-1H-attnres-full-sublayer-v1_D (este modelo) | 1.016.780.524 | 353.556.204 | 8.192 | full_sublayer: atención sobre salidas de cada subcapa | no disponible | Hugging Face, revisión en inicialización |
+| nkkbr/Mini-K3-1H-v2 (baseline Block-4) | no disponible | no disponible | misma receta de 16.000 millones de tokens | granularidad de bloque (Block-4) | no disponible | Hugging Face |
 | Variantes PreNorm y de granularidad de bloque del mismo estudio | no disponible | no disponible | misma receta | PreNorm y tres granularidades de bloque | no disponible | referenciadas en la model card, sin identificador en la información disponible |
 | Kimi-K3 completo | no disponible | no disponible | no disponible | no disponible | no disponible | la model card solo lo menciona como destino de extrapolación, pendiente de confirmación |
 
@@ -119,7 +119,7 @@ No se proporcionan datos de benchmarks ni especificaciones de modelos externos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-full-sublayer-v1_D
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-full-sublayer-v1_D
 - Perfil del autor: https://huggingface.co/nkkbr
 - Baseline Block-4 citado en la model card: https://huggingface.co/nkkbr/Mini-K3-1H-v2
 - Pesos: https://huggingface.co/nkkbr/Mini-K3-1H-attnres-full-sublayer-v1_D/blob/main/model.safetensors

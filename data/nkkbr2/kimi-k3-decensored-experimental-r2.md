@@ -77,7 +77,7 @@ La comparativa se basa en datos públicos de los modelos mencionados. Kimi K3 su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r2
+- Repositorio Hugging Face: https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r2
 - Modelo original de Moonshot AI: https://huggingface.co/moonshotai/Kimi-K3
 - Página de Kimi K3 en NVIDIA NIM: https://build.nvidia.com/moonshotai/kimi-k3
 - Kimi AI (producto): https://www.kimi.com/en

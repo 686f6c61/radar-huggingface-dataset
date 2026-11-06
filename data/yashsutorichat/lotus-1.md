@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lotus-1 es un modelo de lenguaje especializado en roleplay y conversación con personajes, desarrollado por el usuario yashsutorichat y publicado en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-35B-A3B, una arquitectura Mixture of Experts (MoE) con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token. Esto significa que conserva el conocimiento de un modelo de 35B sobre personajes, escenarios y tropos, pero con un coste de cómputo por token similar al de un modelo denso de 3B.
+Lotus-1 es un modelo de lenguaje especializado en roleplay y conversación con personajes, desarrollado por el usuario yashsutorichat y publicado en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-35B-A3B, una arquitectura Mixture of Experts (MoE) con 35.951.822.704 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token. Esto significa que conserva el conocimiento de un modelo de 35B sobre personajes, escenarios y tropos, pero con un coste de cómputo por token similar al de un modelo denso de 3B.
 
 El modelo es el checkpoint exacto que sirve el tráfico de producción de Sutorichat, una plataforma de chat con personajes, y se ha liberado en pesos completos bf16 junto con cuantizaciones GGUF en un repositorio aparte y presets de SillyTavern. Su objetivo declarado no es el razonamiento general ni el código, sino un comportamiento conversacional muy concreto: mantenerse en el personaje, responder al último mensaje del usuario, no hablar ni actuar en nombre de este, hacer avanzar la escena y no emitir trazas de razonamiento, listas ni markdown.
 
@@ -27,7 +27,7 @@ Es relevante ahora porque ejemplifica un patrón de publicación cada vez más h
 
 ## Arquitectura y entrenamiento
 
-Lotus-1 hereda la arquitectura del modelo base Qwen3.5-35B-A3B: un transformer con capas de mezcla de expertos, con 35,95 B de parámetros totales y en torno a 3 B activos por token. Sobre esa base se aplicó una línea de LoRA que después se fusionó en un único checkpoint bf16. Los tags de HuggingFace incluyen `image-text-to-text`, probablemente heredados de la ficha del modelo base, pero la model card de Lotus-1 solo documenta generación de texto conversacional; no se describe ningún uso multimodal ni se detalla el entrenamiento de visión, por lo que esta capacidad debe considerarse no disponible.
+Lotus-1 hereda la arquitectura del modelo base Qwen3.5-35B-A3B: un transformer con capas de mezcla de expertos, con 35,95 B de parámetros totales y en torno a 3 B activos por token. Sobre esa base se aplicó una línea de LoRA que después se fusionó en un único checkpoint bf16. Los tags de Hugging Face incluyen `image-text-to-text`, probablemente heredados de la ficha del modelo base, pero la model card de Lotus-1 solo documenta generación de texto conversacional; no se describe ningún uso multimodal ni se detalla el entrenamiento de visión, por lo que esta capacidad debe considerarse no disponible.
 
 El entrenamiento se desarrolló en tres fases. Primero, un ajuste supervisado (SFT) sobre un corpus amplio de conversaciones reales de chat con personajes, con el formato (tarjeta de personaje, bloque de memoria, historial multi-turno, respuesta). Después, varias rondas de DPO con pares de preferencia construidos a partir del comportamiento real de los usuarios (qué respuesta mantuvieron, regeneraron o descartaron) y de una rúbrica que puntúa fallos de control del usuario, aparición de hechos nuevos, ganchos narrativos, ecos y cierres de conversación. Por último, GSPO con recompensas verificables (formato, ausencia de control del usuario, ausencia de etiquetas de razonamiento, bandas de longitud y seguimiento de instrucciones) para consolidar los comportamientos. Cada candidato se filtró con un benchmark interno fijo: un checkpoint solo se publicaba si los fallos graves (hablar por el usuario, respuestas cortadas, respuestas de más de 2.000 caracteres) no aumentaban respecto al modelo de producción anterior. No se indican el número de tokens de entrenamiento ni la composición detallada del dataset.
 
@@ -70,15 +70,15 @@ No se han publicado resultados de benchmarks en la información disponible (ni M
 - Cuantización Q4: se estima en 21-24 GB, lo que la sitúa en el límite de una RTX 3090 o RTX 4090 de 24 GB, contando además la caché KV para ventanas largas. El tamaño exacto de la caché KV a 32.768 tokens no está disponible en la información proporcionada.
 - GPU de consumo: sí cabe, mediante GGUF cuantizado a 4 bits en tarjetas de 24 GB, y en tarjetas de 12-16 GB si se usan cuantizaciones más agresivas y descarga parcial de capas a CPU. El requisito real depende del nivel de cuantización concreto, que no se detalla en la información disponible.
 - Cómputo por token: con aproximadamente 3 B de parámetros activos por token, el coste de FLOPs por token es comparable al de un modelo denso de 3B, aunque el ancho de banda de memoria necesario para cargar los expertos es mayor. No hay cifras publicadas de latencia ni de throughput.
-- Opciones de despliegue: vLLM y llama-server con `--jinja` para Chat Completion; KoboldCpp, llama.cpp, LM Studio y text-generation-webui para Text Completion; también es compatible con endpoints de HuggingFace según los tags. En vLLM y en llama-server con plantilla jinja, el `chat_template.jinja` incluido ya genera el prompt sin modo thinking.
+- Opciones de despliegue: vLLM y llama-server con `--jinja` para Chat Completion; KoboldCpp, llama.cpp, LM Studio y text-generation-webui para Text Completion; también es compatible con endpoints de Hugging Face según los tags. En vLLM y en llama-server con plantilla jinja, el `chat_template.jinja` incluido ya genera el prompt sin modo thinking.
 - Parámetros de muestreo de producción: temperatura 0.9, top_p 0.95, top_k 20, min_p 0, repetition_penalty 1.05, máximo 700 tokens nuevos. No se recomienda bajar la temperatura por debajo de 0.8, ni usar DRY o XTC.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|---|
-| Lotus-1 | 35,95 B | ~3 B | 32.768 tokens | MIT | HuggingFace: safetensors bf16 + GGUF en repo aparte | Roleplay y chat con personajes |
-| Qwen/Qwen3.5-35B-A3B (base) | 35,95 B | ~3 B (dato del autor) | No disponible | No disponible | HuggingFace | Modelo generalista multimodal segun los tags |
+| Lotus-1 | 35,95 B | ~3 B | 32.768 tokens | MIT | Hugging Face: safetensors bf16 + GGUF en repo aparte | Roleplay y chat con personajes |
+| Qwen/Qwen3.5-35B-A3B (base) | 35,95 B | ~3 B (dato del autor) | No disponible | No disponible | Hugging Face | Modelo generalista multimodal segun los tags |
 | Otros fine-tunes de rol del mismo tamano | No disponible | No disponible | No disponible | No disponible | No disponible | No se han encontrado datos comparables en la informacion proporcionada |
 
 La información disponible solo permite comparar Lotus-1 con su modelo base. Los datos de licencia, contexto y modo de entrenamiento de Qwen3.5-35B-A3B no aparecen en la documentación proporcionada, y no se han facilitado referencias a otros fine-tunes de rol con los que establecer una comparación cuantitativa.
@@ -98,7 +98,7 @@ La información disponible solo permite comparar Lotus-1 con su modelo base. Los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yashsutorichat/Lotus-1
+- Modelo en Hugging Face: https://huggingface.co/yashsutorichat/Lotus-1
 - Repositorio de cuantizaciones GGUF: https://huggingface.co/yashsutorichat/Lotus-1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Sutorichat: https://sutorichat.com

@@ -4,7 +4,7 @@
 
 El repositorio `GabrieleRomano/paper_016649172_image_captioning` no contiene un modelo de inteligencia artificial, sino un documento de texto en formato Markdown con el contenido de un artículo académico sobre el campo de image captioning (generación automática de descripciones para imágenes). El autor, GabrieleRomano, ha estructurado el repositorio como un artefacto de investigación, incluyendo el archivo `paper_016649172_image_captioning.md` como elemento principal. La licencia declarada es BSD-3-Clause, lo que permite su uso y redistribución con atribución.
 
-Dado que se trata de un documento y no de un modelo entrenado, no existen arquitectura, parámetros ni pesos asociados. La relevancia de este repositorio es documental: puede servir como referencia para investigadores que trabajan en image captioning, aunque no ofrece capacidades de inferencia ni despliegue. Los metadatos de HuggingFace no proporcionan información adicional sobre el contenido del paper, más allá de su temática y estilo de escritura.
+Dado que se trata de un documento y no de un modelo entrenado, no existen arquitectura, parámetros ni pesos asociados. La relevancia de este repositorio es documental: puede servir como referencia para investigadores que trabajan en image captioning, aunque no ofrece capacidades de inferencia ni despliegue. Los metadatos de Hugging Face no proporcionan información adicional sobre el contenido del paper, más allá de su temática y estilo de escritura.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No disponible. No hay un modelo con el que comparar; se trata de un documento de
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/GabrieleRomano/paper_016649172_image_captioning)
+- [Repositorio en Hugging Face](https://huggingface.co/GabrieleRomano/paper_016649172_image_captioning)
 - [Survey sobre evaluacion de image captioning en la era de los MLLMs (arXiv)](https://arxiv.org/abs/2503.14604)
 - [Deep Learning Approaches on Image Captioning: A Review (arXiv)](https://arxiv.org/abs/2201.12944)
 - [Next-generation image captioning: A survey of methodologies (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S2949719125000354)

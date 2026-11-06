@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaboAI-0.3.3-3B-GGUF es el conjunto de cuantizaciones en formato GGUF del modelo LaboAI/LaboAI-0.3.3-3B, un modelo denso de aproximadamente 3.086 millones de parámetros (3,09 B) especializado en generación de código para el ecosistema Android: Kotlin, Java y Jetpack Compose. Las cuantizaciones han sido producidas por mradermacher, un autor habitual de este tipo de conversiones en HuggingFace, y permiten ejecutar el modelo en hardware de consumo mediante llama.cpp, Ollama o LM Studio gracias a los formatos Q2_K a Q8_0 y f16.
+LaboAI-0.3.3-3B-GGUF es el conjunto de cuantizaciones en formato GGUF del modelo LaboAI/LaboAI-0.3.3-3B, un modelo denso de aproximadamente 3.086 millones de parámetros (3,09 B) especializado en generación de código para el ecosistema Android: Kotlin, Java y Jetpack Compose. Las cuantizaciones han sido producidas por mradermacher, un autor habitual de este tipo de conversiones en Hugging Face, y permiten ejecutar el modelo en hardware de consumo mediante llama.cpp, Ollama o LM Studio gracias a los formatos Q2_K a Q8_0 y f16.
 
 El modelo base ha sido afinado por LaboAI y, según los tags del repositorio (qwen2.5, unsloth), deriva de la familia Qwen2.5 y se ha entrenado con las librerías de Unsloth. Los datos de entrenamiento declarados incluyen cuatro datasets: giggiovpg/ornith-android-instruct, giggiovpg/android-kotlin-compose-compiler-verified, microsoft/NextCoderDataset y glaiveai/glaive-code-assistant-v3, lo que confirma el enfoque hacia asistencia de código y, en particular, hacia el desarrollo Android moderno.
 
@@ -96,8 +96,8 @@ Nota: los datos de Qwen2.5-Coder-3B, Llama-3.2-3B-Instruct y CodeGemma-2B corres
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/LaboAI-0.3.3-3B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/LaboAI/LaboAI-0.3.3-3B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/LaboAI-0.3.3-3B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/LaboAI/LaboAI-0.3.3-3B
 - Pagina de descargas de mradermacher para este modelo: https://hf.tst.eu/model#LaboAI-0.3.3-3B-GGUF
 - Pagina de solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Dataset giggiovpg/ornith-android-instruct: https://huggingface.co/datasets/giggiovpg/ornith-android-instruct

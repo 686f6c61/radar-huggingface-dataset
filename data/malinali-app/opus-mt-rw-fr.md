@@ -6,7 +6,7 @@ malinali-app/opus-mt-rw-fr es un paquete de pesos de traduccion automatica para 
 
 Su relevancia practica no esta en el rendimiento bruto, sino en el formato de distribucion: esta pensado para inferencia en dispositivo (on-device) mediante Candle, concretamente a traves del componente marian_flutter, lo que permite ejecutar traduccion sin conexion en aplicaciones moviles o de escritorio. El repositorio ocupa 0,3 GB y esta etiquetado como compatible con endpoints y con la libreria transformers.
 
-Al ser un reempaquetado de un modelo upstream, la calidad de traduccion depende enteramente del modelo original de Helsinki-NLP. No se han publicado resultados de benchmarks propios, y la ficha de HuggingFace no declara licencia explicita, remitiendo a la licencia del modelo base.
+Al ser un reempaquetado de un modelo upstream, la calidad de traduccion depende enteramente del modelo original de Helsinki-NLP. No se han publicado resultados de benchmarks propios, y la ficha de Hugging Face no declara licencia explicita, remitiendo a la licencia del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Al ser un reempaquetado de un modelo upstream, la calidad de traduccion depende 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo distribuye pesos en safetensors) |
 | Idiomas soportados | Kinyarwanda (rw) y frances (fr); direccion unica rw → fr |
-| Licencia | no disponible en la ficha de HuggingFace; la model card remite a la licencia del modelo base Helsinki-NLP/opus-mt-rw-fr (tipicamente CC-BY 4.0 segun OPUS-MT) |
+| Licencia | no disponible en la ficha de Hugging Face; la model card remite a la licencia del modelo base Helsinki-NLP/opus-mt-rw-fr (tipicamente CC-BY 4.0 segun OPUS-MT) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ Los datos de rendimiento comparativo no estan disponibles, por lo que la compara
 ## Limitaciones y advertencias
 
 - No hay resultados de benchmarks publicados, por lo que la calidad real de traduccion rw → fr no esta verificada de forma independiente.
-- La licencia no esta declarada en la ficha de HuggingFace; la model card remite a la licencia del modelo base, lo que introduce incertidumbre sobre el uso comercial. Conviene consultar la licencia de Helsinki-NLP/opus-mt-rw-fr antes de desplegarlo en produccion.
+- La licencia no esta declarada en la ficha de Hugging Face; la model card remite a la licencia del modelo base, lo que introduce incertidumbre sobre el uso comercial. Conviene consultar la licencia de Helsinki-NLP/opus-mt-rw-fr antes de desplegarlo en produccion.
 - Solo cubre la direccion rw → fr; no traduce en sentido inverso ni a otros idiomas.
 - El kinyarwanda es un idioma de bajos recursos, por lo que cabe esperar un mayor riesgo de errores de traduccion, omisiones o alucinaciones en textos especializados, tecnicos o con terminologia poco frecuente.
 - Al ser un reempaquetado y no un modelo reentrenado, hereda integramente los sesgos y las limitaciones del modelo upstream, sin ninguna correccion adicional.
@@ -86,7 +86,7 @@ Los datos de rendimiento comparativo no estan disponibles, por lo que la compara
 
 ## Enlaces
 
-- [Modelo en HuggingFace: malinali-app/opus-mt-rw-fr](https://huggingface.co/malinali-app/opus-mt-rw-fr)
+- [Modelo en Hugging Face: malinali-app/opus-mt-rw-fr](https://huggingface.co/malinali-app/opus-mt-rw-fr)
 - [Modelo base: Helsinki-NLP/opus-mt-rw-fr](https://huggingface.co/Helsinki-NLP/opus-mt-rw-fr)
 - [Proyecto OPUS-MT (GitHub)](https://github.com/Helsinki-NLP/Opus-MT)
 - [Aplicacion Malinali](https://malinali.app)

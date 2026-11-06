@@ -68,6 +68,6 @@ No disponible. No se han publicado comparativas con otros modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a9_dapo-dapo-noKL-clip0.2_0.35-mb4-eta100-bs256x5-n2-r3
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a9_dapo-dapo-noKL-clip0.2_0.35-mb4-eta100-bs256x5-n2-r3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Framework verl: https://github.com/volcengine/verl

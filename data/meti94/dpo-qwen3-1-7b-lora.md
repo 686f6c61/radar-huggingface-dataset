@@ -4,7 +4,7 @@
 
 `meti94/dpo-qwen3-1.7b-lora` es un adaptador LoRA de ajuste fino por preferencias (DPO, *Direct Preference Optimization*) publicado por el usuario meti94 sobre el modelo base `Qwen/Qwen3-1.7B`. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango en formato PEFT (libreria `peft` 0.19.1, entrenado con `trl` y `transformers`) que debe cargarse junto al modelo base para poder utilizarse. El repositorio ocupa aproximadamente 0,1 GB y esta etiquetado con los tags `dpo`, `lora`, `text-generation` y `conversational`.
 
-El problema que aborda es el de la alineacion de un modelo pequeno y denso de 1.700 millones de parametros mediante preferencias, una tecnica habitual para mejorar el seguimiento de instrucciones, la utilidad de las respuestas y la seguridad sin necesidad de reentrenar todos los pesos. Su relevancia practica es limitada por el momento: acumula 6 descargas y 0 likes, y la model card es la plantilla generica de HuggingFace sin cumplimentar, por lo que no hay documentacion sobre el dataset de preferencias, los hiperparametros ni los resultados de evaluacion.
+El problema que aborda es el de la alineacion de un modelo pequeno y denso de 1.700 millones de parametros mediante preferencias, una tecnica habitual para mejorar el seguimiento de instrucciones, la utilidad de las respuestas y la seguridad sin necesidad de reentrenar todos los pesos. Su relevancia practica es limitada por el momento: acumula 6 descargas y 0 likes, y la model card es la plantilla generica de Hugging Face sin cumplimentar, por lo que no hay documentacion sobre el dataset de preferencias, los hiperparametros ni los resultados de evaluacion.
 
 La arquitectura subyacente es la del transformer denso Qwen3-1.7B, con decodificacion autoregresiva y modo de razonamiento (thinking) opcional en el modelo base. Toda la informacion tecnica mas alla de esa base no esta disponible en la informacion proporcionada, por lo que esta ficha marca explicitamente cada dato ausente en lugar de estimarlo.
 
@@ -98,7 +98,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meti94/dpo-qwen3-1.7b-lora
+- Modelo en Hugging Face: https://huggingface.co/meti94/dpo-qwen3-1.7b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Articulo citado en la model card (Lacoste et al., 2019, cuantificacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la model card: https://mlco2.github.io/impact#compute

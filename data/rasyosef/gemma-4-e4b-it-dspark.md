@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-E4B-it-DSpark es un modelo borrador (draft model) para decodificacion especulativa, publicado por el usuario rasyosef en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje autonomo: su unica funcion es proponer tokens que el verificador `google/gemma-4-E4B-it` valida en una sola pasada forward. Al ser el verificador quien acepta o rechaza cada propuesta, la salida final es identica a la del verificador ejecutado en solitario, por lo que la aceleracion es sin perdida de calidad (lossless).
+Gemma-4-E4B-it-DSpark es un modelo borrador (draft model) para decodificacion especulativa, publicado por el usuario rasyosef en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje autonomo: su unica funcion es proponer tokens que el verificador `google/gemma-4-E4B-it` valida en una sola pasada forward. Al ser el verificador quien acepta o rechaza cada propuesta, la salida final es identica a la del verificador ejecutado en solitario, por lo que la aceleracion es sin perdida de calidad (lossless).
 
 El borrador propone bloques de 8 tokens por paso y esta entrenado con la libreria `speculators` del proyecto vLLM. Cuenta con 546.828.289 parametros (unos 0,55B) en bfloat16, con una arquitectura decoder de estilo Qwen3 de 4 capas. La longitud media de aceptacion es de 3,24 tokens comprometidos por paso de verificacion, con picos de 6,05 en math_reasoning y 4,91 en HumanEval.
 
@@ -117,7 +117,7 @@ Ambos borradores comparten el mismo techo de 9,0 tokens de aceptacion al propone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasyosef/gemma-4-E4B-it-dspark
+- Modelo en Hugging Face: https://huggingface.co/rasyosef/gemma-4-E4B-it-dspark
 - Modelo base (verificador): https://huggingface.co/google/gemma-4-E4B-it
 - Drafter MTP de Google para comparacion: https://huggingface.co/google/gemma-4-E4B-it-assistant
 - Libreria `speculators`: https://github.com/vllm-project/speculators

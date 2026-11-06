@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-merged-epoch-2
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-merged-epoch-2
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
 - Variante relacionada (urban, corpus completo, epoch 2): https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2

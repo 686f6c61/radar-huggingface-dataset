@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NexiHealth/stt_eu_conformer_transducer_large_v2
+- Modelo en Hugging Face: https://huggingface.co/NexiHealth/stt_eu_conformer_transducer_large_v2
 - Modelo base en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/stt_es_conformer_transducer_large
 - Documentación de NeMo sobre Conformer-Transducer: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/main/asr/models.html#conformer-transducer
 - Repositorio NVIDIA NeMo: https://github.com/NVIDIA/NeMo

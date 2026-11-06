@@ -4,7 +4,7 @@
 
 flashEE (Flash Eukaryotic Encoder) es un modelo de lenguaje de proteínas (protein language model) diseñado específicamente para generar representaciones vectoriales (embeddings) de secuencias de aminoácidos en organismos eucariotas. Desarrollado por el usuario szchesny, se distribuye bajo licencia MIT y se integra a través de la librería `flashee`, que permite cargar el modelo y obtener embeddings tanto a nivel de secuencia completa (mean-pooled) como por residuo. El modelo se presenta como una herramienta de cuantización para embeddings, con un repositorio de GitHub asociado (QuantisedEncoder) que sugiere un enfoque en eficiencia y compresión.
 
-Aunque la información pública es muy limitada —el repositorio de HuggingFace no incluye detalles sobre arquitectura, parámetros o entrenamiento—, la existencia de este modelo apunta a una tendencia creciente en el uso de modelos de lenguaje biológicos especializados para tareas de anotación funcional, predicción de estructura y análisis evolutivo. Su relevancia radica en la posibilidad de ofrecer una alternativa ligera y cuantizada para el procesamiento de proteomas eucariotas, aunque sin datos adicionales no es posible evaluar su rendimiento real.
+Aunque la información pública es muy limitada —el repositorio de Hugging Face no incluye detalles sobre arquitectura, parámetros o entrenamiento—, la existencia de este modelo apunta a una tendencia creciente en el uso de modelos de lenguaje biológicos especializados para tareas de anotación funcional, predicción de estructura y análisis evolutivo. Su relevancia radica en la posibilidad de ofrecer una alternativa ligera y cuantizada para el procesamiento de proteomas eucariotas, aunque sin datos adicionales no es posible evaluar su rendimiento real.
 
 ## Especificaciones tecnicas
 
@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/szchesny/flashee
+- Hugging Face: https://huggingface.co/szchesny/flashee
 - Repositorio GitHub (QuantisedEncoder): https://github.com/skurl/QuantisedEncoder

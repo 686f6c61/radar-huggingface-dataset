@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA publicado por el usuario `sanapandey` en HuggingFace. El nombre del artefacto (`qwen2p5-0p5b-lora-variant-repeated-queries-seed0`) sugiere que se trata de una variante de Low-Rank Adaptation sobre un modelo de la familia Qwen2.5 de 0.5B parametros, con una configuracion denominada `repeated-queries` y una semilla concreta (`seed0`). Sin embargo, la model card es un placeholder generado automaticamente y no ofrece ninguna confirmacion tecnica.
+Este repositorio contiene un adaptador LoRA publicado por el usuario `sanapandey` en Hugging Face. El nombre del artefacto (`qwen2p5-0p5b-lora-variant-repeated-queries-seed0`) sugiere que se trata de una variante de Low-Rank Adaptation sobre un modelo de la familia Qwen2.5 de 0.5B parametros, con una configuracion denominada `repeated-queries` y una semilla concreta (`seed0`). Sin embargo, la model card es un placeholder generado automaticamente y no ofrece ninguna confirmacion tecnica.
 
 No se dispone de informacion sobre la arquitectura, el tamano efectivo de los parametros del adaptador, la longitud de contexto, los idiomas soportados ni la licencia. El modelo no tiene descargas ni likes, y la busqueda web no devuelve documentacion tecnica relevante. Por tanto, no se puede considerar un recurso apto para su uso en produccion ni para evaluaciones rigurosas sin antes obtener datos adicionales del autor.
 
@@ -18,9 +18,9 @@ El unico dato que parece fiable es el formato de los pesos (`safetensors`) y la 
 | Longitud de contexto | No disponible. Depende del modelo base, que no se especifica. |
 | Tipos de cuantizacion | No disponible. No se menciona ninguna cuantizacion en la model card. |
 | Idiomas soportados | No disponible. |
-| Licencia | No disponible. No aparece en la model card ni en la ficha de HuggingFace. |
-| Formato de pesos | safetensors (según etiquetas de HuggingFace). |
-| Libreria de referencia | transformers (según etiquetas de HuggingFace). |
+| Licencia | No disponible. No aparece en la model card ni en la ficha de Hugging Face. |
+| Formato de pesos | safetensors (según etiquetas de Hugging Face). |
+| Libreria de referencia | transformers (según etiquetas de Hugging Face). |
 
 ## Arquitectura y entrenamiento
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado modelos comparables a partir de la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-repeated-queries-seed0
+- Hugging Face: https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-repeated-queries-seed0
 - No se encontraron otros enlaces relevantes. La busqueda web solo devolvio paginas de Microsoft Store y otros repositorios de variantes del mismo autor sin informacion tecnica adicional.

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / Resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/siglip-base-patch16-224 | no disponible | Texto 64 tokens, imagen 224x224 | PyTorch (safetensors) | apache-2.0 | HuggingFace |
-| onnx-community/siglip-base-patch16-224-ONNX (este) | no disponible | Texto 64 tokens, imagen 224x224 | ONNX | apache-2.0 | HuggingFace |
-| onnx-community/siglip2-base-patch16-224-ONNX | no disponible | Texto 64 tokens, imagen 224x224 | ONNX | apache-2.0 | HuggingFace |
+| google/siglip-base-patch16-224 | no disponible | Texto 64 tokens, imagen 224x224 | PyTorch (safetensors) | apache-2.0 | Hugging Face |
+| onnx-community/siglip-base-patch16-224-ONNX (este) | no disponible | Texto 64 tokens, imagen 224x224 | ONNX | apache-2.0 | Hugging Face |
+| onnx-community/siglip2-base-patch16-224-ONNX | no disponible | Texto 64 tokens, imagen 224x224 | ONNX | apache-2.0 | Hugging Face |
 
 La version ONNX es funcionalmente equivalente al modelo original en PyTorch y esta pensada para entornos de despliegue sin Python o sin dependencias de PyTorch. La diferencia practica con SigLIP2 es que este ultimo es una version mas reciente del modelo, pero no se disponen de datos comparativos de rendimiento en la informacion proporcionada.
 
@@ -77,8 +77,8 @@ La version ONNX es funcionalmente equivalente al modelo original en PyTorch y es
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/onnx-community/siglip-base-patch16-224-ONNX
-- Modelo original en HuggingFace: https://huggingface.co/google/siglip-base-patch16-224
+- Repositorio Hugging Face del modelo: https://huggingface.co/onnx-community/siglip-base-patch16-224-ONNX
+- Modelo original en Hugging Face: https://huggingface.co/google/siglip-base-patch16-224
 - Paper de SigLIP (Sigmoid Loss for Language Image Pre-Training): https://arxiv.org/abs/2303.15343
 - Paper de WebLi: https://arxiv.org/abs/2209.06794
 - Repositorio de Big Vision (codigo original de SigLIP): https://github.com/google-research/big_vision

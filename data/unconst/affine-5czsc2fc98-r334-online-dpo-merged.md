@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque de entrenamiento con DPO en l�
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, según los tags de HuggingFace. Esta arquitectura permite activar solo un subconjunto de parámetros durante la inferencia, lo que reduce el coste computacional en comparación con un modelo denso del mismo tamaño total. Además, el tag `image-text-to-text` indica que el modelo está diseñado para procesar tanto imágenes como texto, lo que sugiere un codificador visual integrado en la arquitectura.
+El modelo emplea una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, según los tags de Hugging Face. Esta arquitectura permite activar solo un subconjunto de parámetros durante la inferencia, lo que reduce el coste computacional en comparación con un modelo denso del mismo tamaño total. Además, el tag `image-text-to-text` indica que el modelo está diseñado para procesar tanto imágenes como texto, lo que sugiere un codificador visual integrado en la arquitectura.
 
 El entrenamiento se realizó mediante LoRA (Low-Rank Adaptation) fusionada, con un proceso de Online-DPO (Direct Preference Optimization) en línea. Los hiperparámetros reportados en la model card son: β=0.1, α=32, r=16, G=4, lr=5e-6, temp=1.2, max_steps=300 y FORCE_PREFIX. Este enfoque ajusta el modelo a partir de preferencias humanas durante el entrenamiento, mejorando la alineación con las expectativas del usuario. El modelo base es `marsplan0624/affine-5gedzafcvg-queen`, y el proceso de fusión LoRA se aplicó sobre una versión específica de este modelo (commit 556d02a2).
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r334-online-dpo-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r334-online-dpo-merged
 - Otras versiones de la serie Affine:
   - https://huggingface.co/unconst/Affine-5czsc2fc98-r3-merged
   - https://huggingface.co/unconst/Affine-5czsc2fc98-r228-merged

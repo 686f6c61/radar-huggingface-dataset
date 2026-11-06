@@ -73,7 +73,7 @@ La comparativa se limita al Qwen3-8B original y sus variantes GGUF estándar. No
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sy128/CQ3-Qwen3-8B-K16-Channel-FP4Mix
+- Repositorio Hugging Face: https://huggingface.co/sy128/CQ3-Qwen3-8B-K16-Channel-FP4Mix
 - Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - PDF de NVIDIA sobre Qwen3-8B-Instruct: https://developer.nvidia.com/downloads/assets/ace/model_card/qwen3-8b-instruct.pdf
 - Paper técnico de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388

@@ -32,7 +32,7 @@ Respecto al proceso de cuantizacion, el autor emplea un esquema combinado GSQ + 
 - Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
 - Procesamiento de imagen y texto de forma conjunta (pipeline `image-text-to-text`), lo que permite tareas de descripcion de imagenes, respuesta a preguntas visuales y dialogos con imagenes como entrada.
 - Capacidades de vision declaradas explicitamente en las etiquetas (`vision`, `multimodal`).
-- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que sugiere despliegue en infraestructuras compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints de inferencia (`endpoints_compatible`), lo que sugiere despliegue en infraestructuras compatibles con la API de Hugging Face.
 - Razonamiento, generacion de codigo, matematicas, tool calling, uso de agentes y modo de pensamiento: no disponible (no se declara ni se documenta en la informacion proporcionada).
 - Cobertura multilingue: no disponible.
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taurusduan/DeepSeek-V4.1-Flash-GSQ-RCO-GGUF
+- Hugging Face: https://huggingface.co/taurusduan/DeepSeek-V4.1-Flash-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Referencia arXiv 2604.18556: https://arxiv.org/abs/2604.18556 (no verificada)
 - Referencia arXiv 2605.00649: https://arxiv.org/abs/2605.00649 (no verificada)

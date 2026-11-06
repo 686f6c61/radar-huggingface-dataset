@@ -114,12 +114,12 @@ Lectura: Hy-SimulMT es el único de la comparativa con licencia Apache 2.0 confi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B
-- Colección Hy-SimulMT en HuggingFace: https://huggingface.co/collections/tencent/hy-simulmt
+- Modelo en Hugging Face: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B
+- Colección Hy-SimulMT en Hugging Face: https://huggingface.co/collections/tencent/hy-simulmt
 - Colección en ModelScope: https://www.modelscope.cn/collections/Tencent-Hunyuan/Hy-SimulMT
 - Repositorio GitHub (SimulInfer y SimulTrain): https://github.com/Tencent-Hunyuan/Hy-SimulMT
 - README en chino: https://huggingface.co/tencent/Hy-SimulMT-30B-A3B/blob/main/README_CN.md
-- App Hy Translate (Android e iOS): enlaces de descarga mediante códigos QR en la model card del repositorio de HuggingFace
+- App Hy Translate (Android e iOS): enlaces de descarga mediante códigos QR en la model card del repositorio de Hugging Face
 - Página corporativa de Tencent: https://www.tencent.com/
 - Información sobre Tencent (Wikipedia): https://en.wikipedia.org/wiki/Tencent
 - No se han encontrado en la búsqueda web papers técnicos, blogs de ingeniería ni demos adicionales específicos del modelo.

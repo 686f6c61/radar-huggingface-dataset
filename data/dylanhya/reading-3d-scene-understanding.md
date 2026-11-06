@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por el usuario dylanhya bajo el identificador `dylanhya/reading-3d-scene-understanding`, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre comprensión de escenas 3D. El autor lo describe explícitamente como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como una liberación de pesos entrenados.
 
-El repositorio incluye dos archivos: `summary.md`, que es el artefacto principal con la nota completa, y `README.md` con la documentación. Aunque el tag de HuggingFace indica `safetensors` y `transformer`, el propio README aclara que no hay un checkpoint entrenado ni código liberado. El tamaño del repositorio es de 0.0 GB y el archivo safetensors registra 33.088 parámetros, un valor que corresponde probablemente a un archivo de prueba o vacío, no a un modelo real.
+El repositorio incluye dos archivos: `summary.md`, que es el artefacto principal con la nota completa, y `README.md` con la documentación. Aunque el tag de Hugging Face indica `safetensors` y `transformer`, el propio README aclara que no hay un checkpoint entrenado ni código liberado. El tamaño del repositorio es de 0.0 GB y el archivo safetensors registra 33.088 parámetros, un valor que corresponde probablemente a un archivo de prueba o vacío, no a un modelo real.
 
 La relevancia de este repositorio es limitada para desarrolladores que buscan un modelo desplegable, pero puede servir como punto de partida conceptual para investigadores interesados en el diseño de estudios sobre comprensión de escenas 3D, especialmente en lo relativo a la formulación de hipótesis y planes de evaluación. No hay evidencia de que se hayan ejecutado experimentos ni de que existan resultados de rendimiento.
 
@@ -63,7 +63,7 @@ No procede una comparativa directa porque este repositorio no es un modelo. No o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dylanhya/reading-3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/dylanhya/reading-3d-scene-understanding
 - Awesome Scene Understanding (lista de referencias): https://github.com/bertjiazheng/awesome-scene-understanding
 - Scene-LLM (paper): https://arxiv.org/abs/2403.11401
 - Web de 3D Scene Understanding en CVPR 2026: https://scene-understanding.com/

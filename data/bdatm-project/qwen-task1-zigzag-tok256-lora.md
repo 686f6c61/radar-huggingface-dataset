@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bdatm-project/qwen-task1-zigzag-tok256-lora` es un repositorio alojado en HuggingFace por la organización `bdatm-project` (Big Data Analytics and Text Mining Project), creado el 12 de octubre de 2026 y actualizado un día después. El nombre del repositorio apunta a un adaptador LoRA (sufijo `-lora`) construido sobre un modelo de la familia Qwen, orientado a una tarea etiquetada como `task1-zigzag` y con un posible ajuste relacionado con tokens (`tok256`). El repositorio pesa 0,7 GB y declara la librería `transformers` y pesos en formato `safetensors`. Ninguna de estas inferencias derivadas del nombre está confirmada por la documentación del autor.
+`bdatm-project/qwen-task1-zigzag-tok256-lora` es un repositorio alojado en Hugging Face por la organización `bdatm-project` (Big Data Analytics and Text Mining Project), creado el 12 de octubre de 2026 y actualizado un día después. El nombre del repositorio apunta a un adaptador LoRA (sufijo `-lora`) construido sobre un modelo de la familia Qwen, orientado a una tarea etiquetada como `task1-zigzag` y con un posible ajuste relacionado con tokens (`tok256`). El repositorio pesa 0,7 GB y declara la librería `transformers` y pesos en formato `safetensors`. Ninguna de estas inferencias derivadas del nombre está confirmada por la documentación del autor.
 
-La model card es la plantilla genérica autogenerada por HuggingFace: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados de evaluación) aparecen como `[More Information Needed]`. No se declara licencia, pipeline, idiomas ni conjunto de datos. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y la etiqueta `arxiv:1910.09700` corresponde a la plantilla de impacto medioambiental (Lacoste et al., 2019), no a un artículo propio del modelo.
+La model card es la plantilla genérica autogenerada por Hugging Face: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados de evaluación) aparecen como `[More Information Needed]`. No se declara licencia, pipeline, idiomas ni conjunto de datos. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y la etiqueta `arxiv:1910.09700` corresponde a la plantilla de impacto medioambiental (Lacoste et al., 2019), no a un artículo propio del modelo.
 
 Por todo ello, se trata de un artefacto de investigación sin documentación publicada, no de un modelo listo para producción. Es relevante únicamente como posible material de reproducción de experimentos académicos o como ejemplo de adaptador PEFT, y cualquier evaluación de sus capacidades exige inspeccionar directamente los archivos del repositorio y el modelo base sobre el que se aplica.
 
@@ -26,7 +26,7 @@ Por todo ello, se trata de un artefacto de investigación sin documentación pub
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. El repositorio no incluye configuracion de modelo, numero de parametros, dimension de capas, mecanismo de atencion ni funcion de perdida. La unica pista es el sufijo `-lora` del nombre, que en la practica de HuggingFace se asocia a adaptadores de bajo rango (Low-Rank Adaptation) entrenados con librerias como PEFT. Si esa interpretacion es correcta, el artefacto seria un conjunto de matrices de bajo rango que se cargan sobre un modelo base congelado, no un modelo completo con pesos propios. Los 0,7 GB de tamano son compatibles con un adaptador de dimension media o con un adaptador acompanado de otros ficheros auxiliares, pero tambien podrian corresponder a un modelo pequeno completo; la informacion disponible no permite distinguirlo.
+No hay informacion publicada sobre la arquitectura. El repositorio no incluye configuracion de modelo, numero de parametros, dimension de capas, mecanismo de atencion ni funcion de perdida. La unica pista es el sufijo `-lora` del nombre, que en la practica de Hugging Face se asocia a adaptadores de bajo rango (Low-Rank Adaptation) entrenados con librerias como PEFT. Si esa interpretacion es correcta, el artefacto seria un conjunto de matrices de bajo rango que se cargan sobre un modelo base congelado, no un modelo completo con pesos propios. Los 0,7 GB de tamano son compatibles con un adaptador de dimension media o con un adaptador acompanado de otros ficheros auxiliares, pero tambien podrian corresponder a un modelo pequeno completo; la informacion disponible no permite distinguirlo.
 
 Tampoco se documentan los datos de entrenamiento: no se indica el numero de tokens, la composicion del corpus, ni si hubo fases de RLHF, DPO o ajuste supervisado. No consta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, mezcla de expertos o arquitecturas hibridas). La etiqueta `arxiv:1910.09700` que aparece en el repositorio procede de la seccion de impacto ambiental de la plantilla de model card y no debe interpretarse como referencia al metodo de entrenamiento. Cualquier afirmacion sobre la arquitectura o el procedimiento de ajuste seria especulativa.
 
@@ -49,7 +49,7 @@ Los siguientes escenarios son propuestas condicionales derivadas del tipo de art
 - Servicio multi-LoRA: si el artefacto es un adaptador, desplegarlo junto al modelo base en un servidor compatible con multiples adaptadores (por ejemplo vLLM con `--enable-lora`) para conmutar entre tareas sin recargar pesos.
 - Punto de partida para un ajuste adicional: usar el adaptador como inicializacion en un entrenamiento posterior sobre un dominio especifico, si la licencia del modelo base lo permite.
 - Docencia y formacion en PEFT: emplearlo como ejemplo practico de estructura de repositorio LoRA, con pesos en `safetensors` y carga via `transformers`.
-- Auditoria de artefactos: analizar el repositorio para estudiar practicas de publicacion en HuggingFace, incluyendo el uso de plantillas de model card sin completar y la ausencia de metadatos de licencia.
+- Auditoria de artefactos: analizar el repositorio para estudiar practicas de publicacion en Hugging Face, incluyendo el uso de plantillas de model card sin completar y la ausencia de metadatos de licencia.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para el modelo completo: no disponible. Sin conocer el modelo base ni sus parametros no puede estimarse el consumo en fp16, bf16, int8 o int4.
 - GPU recomendadas: no disponible. La eleccion depende del modelo base; no hay datos para recomendar A100, H100, RTX 4090 u otras.
 - Compatibilidad con GPU de consumo: no determinable con la informacion disponible.
-- Opciones de despliegue: al declarar `transformers` y `safetensors`, el artefacto es cargable en el ecosistema HuggingFace (bibliotecas `transformers` y, si es un adaptador, `peft`). El soporte en vLLM, llama.cpp, Ollama o TGI no puede confirmarse sin conocer el formato exacto y el modelo base; `llama.cpp` y Ollama requeririan una conversion a GGUF que no esta publicada.
+- Opciones de despliegue: al declarar `transformers` y `safetensors`, el artefacto es cargable en el ecosistema Hugging Face (bibliotecas `transformers` y, si es un adaptador, `peft`). El soporte en vLLM, llama.cpp, Ollama o TGI no puede confirmarse sin conocer el formato exacto y el modelo base; `llama.cpp` y Ollama requeririan una conversion a GGUF que no esta publicada.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

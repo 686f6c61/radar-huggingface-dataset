@@ -17,7 +17,7 @@ El repositorio ocupa 32,6 GB porque incluye estados completos de entrenamiento (
 | Parámetros activos | No aplica: no se indica que el modelo base sea MoE |
 | Longitud de contexto | No disponible en la información proporcionada |
 | Tipos de cuantización | No disponible; el adaptador se publica con tensores fp32 sobre una base bf16 y no se distribuyen pesos cuantizados |
-| Idiomas soportados | No disponible (la metadata de HuggingFace no declara idiomas) |
+| Idiomas soportados | No disponible (la metadata de Hugging Face no declara idiomas) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors, layout de parámetros de Tinker (incluye `in_proj_q`, `in_proj_k`, `in_proj_v` separados); estados de entrenamiento con `optimizer.pt` |
 
@@ -76,10 +76,10 @@ Referencias de la misma evaluación: la inicialización SFT `jord_own2` (9B) da 
 
 | Modelo | Parámetros | Contexto | Condición / brazo | Haiku held-out | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este artefacto (`rlport-hkl_jord9v_L_pl3_...`) | 9B base + LoRA r32 | No disponible | Placebo (`--shuffle_rewards`), pasos 14-40 | 31,2 % prog / 7,0 % juez en el paso 40 | apache-2.0 | HuggingFace, 0 descargas |
+| Este artefacto (`rlport-hkl_jord9v_L_pl3_...`) | 9B base + LoRA r32 | No disponible | Placebo (`--shuffle_rewards`), pasos 14-40 | 31,2 % prog / 7,0 % juez en el paso 40 | apache-2.0 | Hugging Face, 0 descargas |
 | `jord9v_pl3` (run padre) | 9B base + LoRA r32 | No disponible | Brazo real, 14 pasos | 35,2 % prog / 14,8 % juez en el paso 13 | No disponible | Checkpoints citados en la model card; ID de repositorio no disponible |
-| `Jordine/rl-tinker-jord_pl0` | No disponible | No disponible | Placebo, grupo `tinker-wave1`, entrenado en Tinker | No disponible | No disponible | HuggingFace |
-| `Qwen/Qwen3.5-9B` (base) | 9B | No disponible | Sin ajuste | 0 % | No disponible en la información | HuggingFace |
+| `Jordine/rl-tinker-jord_pl0` | No disponible | No disponible | Placebo, grupo `tinker-wave1`, entrenado en Tinker | No disponible | No disponible | Hugging Face |
+| `Qwen/Qwen3.5-9B` (base) | 9B | No disponible | Sin ajuste | 0 % | No disponible en la información | Hugging Face |
 
 No se han encontrado en la información disponible otros modelos comparables de la misma categoría (organismos modelo para *reward laundering*) más allá de los runs del propio proyecto.
 
@@ -98,7 +98,7 @@ No se han encontrado en la información disponible otros modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl3_20261018_020050
+- Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl3_20261018_020050
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del proyecto: https://github.com/Jordine/reward-laundering
 - Informe del port: https://github.com/Jordine/reward-laundering/blob/master/results/PORT_REPORT.md

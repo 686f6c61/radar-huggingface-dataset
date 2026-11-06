@@ -34,7 +34,7 @@ La innovación principal reside en la etapa de post-entrenamiento sin referencia
 - Soporte de prompts de traducción específicos, con un formato claro que especifica idioma fuente y destino.
 - Inferencia eficiente con decodificación greedy (top_k=1, temperature=0) para resultados deterministas.
 - Compatibilidad con vLLM y Transformers para despliegue en producción.
-- No se documentan capacidades de tool calling, agentes, visión o audio en la información proporcionada, aunque el tag de HuggingFace incluye "image-text-to-text" heredado de Gemma3, sin confirmación de funcionalidad real.
+- No se documentan capacidades de tool calling, agentes, visión o audio en la información proporcionada, aunque el tag de Hugging Face incluye "image-text-to-text" heredado de Gemma3, sin confirmación de funcionalidad real.
 
 ## Casos de uso
 
@@ -74,12 +74,12 @@ MiLMMT se diferencia de NLLB y M2M por ser un LLM de propósito general, no un m
 - No se han publicado evaluaciones de sesgos, alucinaciones o robustez en dominios especializados.
 - El modelo puede alucinar contenido en traducciones ambiguas o con poco contexto, especialmente en idiomas con menos datos de entrenamiento.
 - La licencia Gemma permite uso comercial, pero impone restricciones sobre el uso de las marcas de Google y la redistribución de pesos modificados; se recomienda revisar los términos completos.
-- No se documentan capacidades de visión o tool calling, a pesar del tag "image-text-to-text" en HuggingFace; su uso principal es traducción de texto.
+- No se documentan capacidades de visión o tool calling, a pesar del tag "image-text-to-text" en Hugging Face; su uso principal es traducción de texto.
 - El contexto máximo no está confirmado para este modelo específico; si se hereda de Gemma3-12B, sería de 128K tokens, pero no hay garantía tras el fine-tuning.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xiaomi-research/MiLMMT-46-12B-v1.0
+- Hugging Face: https://huggingface.co/xiaomi-research/MiLMMT-46-12B-v1.0
 - Modelo base v0.1: https://huggingface.co/xiaomi-research/MiLMMT-46-12B-v0.1
 - Repositorio GitHub: https://github.com/xiaomi-research/gemmax
 - Artículo arXiv (v1.0): https://arxiv.org/abs/2608.10812

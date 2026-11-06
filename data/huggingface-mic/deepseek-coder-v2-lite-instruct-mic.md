@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/DeepSeek-Coder-V2-Lite-Instruct-mic` | 13,2M | no disponible | Fixture de test | no disponible | HuggingFace |
-| `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct` | ~16B (MoE, 2,4B activos) | no disponible en esta ficha | Modelo de codigo real | no disponible en esta ficha | HuggingFace |
-| Otros fixtures de `transformers-mic` | variable | no disponible | Pruebas de contrato | no disponible | HuggingFace |
+| `huggingface-mic/DeepSeek-Coder-V2-Lite-Instruct-mic` | 13,2M | no disponible | Fixture de test | no disponible | Hugging Face |
+| `deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct` | ~16B (MoE, 2,4B activos) | no disponible en esta ficha | Modelo de codigo real | no disponible en esta ficha | Hugging Face |
+| Otros fixtures de `transformers-mic` | variable | no disponible | Pruebas de contrato | no disponible | Hugging Face |
 
 La comparativa solo es significativa frente al modelo base: el fixture replica su arquitectura y tokenizador, pero no sus pesos ni su rendimiento.
 
@@ -88,7 +88,7 @@ La comparativa solo es significativa frente al modelo base: el fixture replica s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/DeepSeek-Coder-V2-Lite-Instruct-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/DeepSeek-Coder-V2-Lite-Instruct-mic
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
 - Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/DeepSeek-Coder-V2-Lite-Instruct-mic.html
 - Repositorio `transformers-mic`: https://github.com/huggingface/transformers-mic

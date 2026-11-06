@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Black Tape Project es un LoRA (Low-Rank Adaptation) para generacion de imagenes orientado a reproducir el estilo de diseno de banadores y lenceria confeccionados exclusivamente con cinta adhesiva, inspirado en la marca Black Tape Project. Lo publica el usuario janiceru94 en HuggingFace, con enlace espejo en CivitAI y atribucion al autor thecraigfergus. No es un modelo de lenguaje: es un adaptador de bajo rango que se acopla a un checkpoint de difusion preentrenado para text-to-image.
+Black Tape Project es un LoRA (Low-Rank Adaptation) para generacion de imagenes orientado a reproducir el estilo de diseno de banadores y lenceria confeccionados exclusivamente con cinta adhesiva, inspirado en la marca Black Tape Project. Lo publica el usuario janiceru94 en Hugging Face, con enlace espejo en CivitAI y atribucion al autor thecraigfergus. No es un modelo de lenguaje: es un adaptador de bajo rango que se acopla a un checkpoint de difusion preentrenado para text-to-image.
 
 El adaptador fue entrenado sobre el checkpoint Absolute Reality (CivitAI model 81458) y, segun la model card, deberia funcionar tambien con otros checkpoints realistas. El autor declara haber cuidado la variedad de colores y de etnias para evitar sobreajuste, y senala que las especificaciones de color por region solo se pueden conseguir con Regional Prompter en WebUI Auto1111.
 
-La relevancia del artefacto es limitada en terminos de investigacion: se trata de un LoRA de nicho estetico, con 0 descargas, 0 likes y un repositorio de 0.0 GB en el momento de la consulta, lo que apunta a que los pesos no estan efectivamente alojados en HuggingFace. No se dispone de informacion sobre parametros, rango del adaptador, idiomas de prompt ni resultados de evaluacion.
+La relevancia del artefacto es limitada en terminos de investigacion: se trata de un LoRA de nicho estetico, con 0 descargas, 0 likes y un repositorio de 0.0 GB en el momento de la consulta, lo que apunta a que los pesos no estan efectivamente alojados en Hugging Face. No se dispone de informacion sobre parametros, rango del adaptador, idiomas de prompt ni resultados de evaluacion.
 
 ## Especificaciones tecnicas
 
@@ -60,11 +60,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han proporcionado datos de otros LoRA de tematica comparable (parametros, rango, contexto, rendimiento o disponibilidad) en la informacion recibida. Como referencia de categoria, los adaptadores LoRA de estilo y vestuario publicados en CivitAI y HuggingFace comparten el mismo planteamiento tecnico, pero no se dispone de cifras verificables para establecer una comparacion cuantitativa.
+No disponible. No se han proporcionado datos de otros LoRA de tematica comparable (parametros, rango, contexto, rendimiento o disponibilidad) en la informacion recibida. Como referencia de categoria, los adaptadores LoRA de estilo y vestuario publicados en CivitAI y Hugging Face comparten el mismo planteamiento tecnico, pero no se dispone de cifras verificables para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace figura con un tamano de 0.0 GB, 0 descargas y 0 likes, lo que sugiere que los pesos pueden no estar alojados o accesibles en esa ubicacion. Conviene verificar el enlace de CivitAI antes de asumir disponibilidad.
+- El repositorio de Hugging Face figura con un tamano de 0.0 GB, 0 descargas y 0 likes, lo que sugiere que los pesos pueden no estar alojados o accesibles en esa ubicacion. Conviene verificar el enlace de CivitAI antes de asumir disponibilidad.
 - No se documentan parametros, rango del adaptador, dataset ni hiperparametros de entrenamiento, lo que dificulta reproducir o auditar el resultado.
 - El modelo esta entrenado sobre un checkpoint concreto (Absolute Reality); el comportamiento con otros checkpoints es una expectativa del autor, no un resultado verificado.
 - Riesgo de sobreajuste estetico y de sesgos en la representacion corporal, de genero y de etnia, inherente a los datasets de moda y a la ausencia de documentacion sobre la composicion de los datos.
@@ -76,7 +76,7 @@ No disponible. No se han proporcionado datos de otros LoRA de tematica comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/janiceru94/Black-Tape-Project
+- Hugging Face: https://huggingface.co/janiceru94/Black-Tape-Project
 - CivitAI (modelo espejo): https://civitai.com/models/199749/black-tape-project
 - Checkpoint base Absolute Reality: https://civitai.com/models/81458/absolutereality
 - Regional Prompter (WebUI Auto1111): https://github.com/hako-mikan/sd-webui-regional-prompter

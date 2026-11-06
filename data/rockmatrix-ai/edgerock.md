@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EdgeRock-4B es un modelo multimodal (texto e imagen) de 4.578.061.568 parámetros desarrollado por Rock Matrix, publicado en HuggingFace bajo la licencia `edgerock-model-license-1.0`. Su propuesta central es mantener un coste de memoria de historial constante durante el razonamiento de cadena larga: en lugar de dejar crecer la caché KV con cada token generado, el modelo combina estado recurrente, atención local de ventana fija y un banco de registros recuperables denominado Rock Memory Anchors (RMA). Según la model card, el modelo emplea 72 MiB de KV de atención por secuencia y 97,76 MiB de historial persistente total en el runtime por lotes.
+EdgeRock-4B es un modelo multimodal (texto e imagen) de 4.578.061.568 parámetros desarrollado por Rock Matrix, publicado en Hugging Face bajo la licencia `edgerock-model-license-1.0`. Su propuesta central es mantener un coste de memoria de historial constante durante el razonamiento de cadena larga: en lugar de dejar crecer la caché KV con cada token generado, el modelo combina estado recurrente, atención local de ventana fija y un banco de registros recuperables denominado Rock Memory Anchors (RMA). Según la model card, el modelo emplea 72 MiB de KV de atención por secuencia y 97,76 MiB de historial persistente total en el runtime por lotes.
 
 El modelo parte del backbone Qwen3.5-4B y sustituye sus ocho capas de atención completa por bloques híbridos, conservando 24 capas Gated DeltaNet y los bloques feed-forward. El resultado es una arquitectura híbrida recurrente-atención que, según el autor, mantiene el 99,1% menos de KV de atención en BF16 que Qwen3.5-4B a 256K de contexto, y sostiene 233,7 tokens/s de decodificación con lote de tamaño 1 en una GPU Hopper de 80 GB (128K de entrada y 128K de salida).
 
@@ -75,7 +75,7 @@ MMLU, HumanEval, GSM8K y el resto de benchmarks de texto estándar no aparecen e
 
 | Modelo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EdgeRock-4B | 4,58 B (denso) | 256K, con KV de atención fijo | 82,9% en AIME 2024-2026; 84,9% en benchmarks visuales | `edgerock-model-license-1.0` | Pesos abiertos en HuggingFace y ModelScope; código en GitHub |
+| EdgeRock-4B | 4,58 B (denso) | 256K, con KV de atención fijo | 82,9% en AIME 2024-2026; 84,9% en benchmarks visuales | `edgerock-model-license-1.0` | Pesos abiertos en Hugging Face y ModelScope; código en GitHub |
 | Qwen3.5-4B | Clase 4B (dato exacto no disponible) | 256K (usado como referencia de comparación) | Base del backbone; sirve de referencia de retención visual y throughput | No disponible en la información | No disponible en la información |
 | RWKV-7 G1j | Clase 14B | No disponible | 18,8% de media pass@1 en AIME 2024-2026 | No disponible en la información | No disponible en la información |
 
@@ -95,7 +95,7 @@ La comparación con RWKV-7 G1j se establece contra modelos de estado acotado, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rockmatrix-ai/EdgeRock
+- Hugging Face: https://huggingface.co/rockmatrix-ai/EdgeRock
 - arXiv: https://arxiv.org/abs/2610.10118
 - GitHub: https://github.com/rockmatrix-ai/EdgeRock
 - ModelScope: https://modelscope.cn/models/rockmatrix/EdgeRock

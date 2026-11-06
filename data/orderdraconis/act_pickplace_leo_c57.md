@@ -76,7 +76,7 @@ La comparativa se basa en características generales, ya que no hay resultados d
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/OrderDraconis/act_pickplace_leo_c57
+- Repositorio del modelo en Hugging Face: https://huggingface.co/OrderDraconis/act_pickplace_leo_c57
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Dataset de entrenamiento: https://huggingface.co/datasets/Pink-Viking/pick_and_place_combined
 - Framework LeRobot: https://github.com/huggingface/lerobot

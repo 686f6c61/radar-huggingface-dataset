@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural-Cortex-8B-SFT es un ajuste supervisado (SFT) del modelo base Qwen3-8B-Base, publicado por el usuario hossain0909 en HuggingFace y presentado por el autor como el modelo central de la plataforma Keural AI de MKD Co., Ltd. (Busán, Corea del Sur). Se trata de un asistente bilingüe coreano-inglés construido en tres etapas segun la model card: preentrenamiento continuado sobre texto coreano, una fase de extensión de contexto hasta 65.536 tokens mediante YaRN y una época de SFT sobre 1.335.928 conversaciones únicas (1,77 mil millones de tokens de datos de instrucción).
+Keural-Cortex-8B-SFT es un ajuste supervisado (SFT) del modelo base Qwen3-8B-Base, publicado por el usuario hossain0909 en Hugging Face y presentado por el autor como el modelo central de la plataforma Keural AI de MKD Co., Ltd. (Busán, Corea del Sur). Se trata de un asistente bilingüe coreano-inglés construido en tres etapas segun la model card: preentrenamiento continuado sobre texto coreano, una fase de extensión de contexto hasta 65.536 tokens mediante YaRN y una época de SFT sobre 1.335.928 conversaciones únicas (1,77 mil millones de tokens de datos de instrucción).
 
 El objetivo declarado del autor es asimétrico: alcanzar paridad con Qwen3-8B en inglés y superarlo en coreano. La model card reporta un barrido de evaluación controlado con `lm-evaluation-harness` sobre 223 subtareas, con una media de 60,73 en 11 suites coreanas (frente a 60,51 de Qwen3-8B-Instruct y 60,07 de Qwen3-8B-Base) y 74,47 en 36 suites inglesas (frente a 73,64 de Instruct y 75,21 de Base, segun los deltas reportados).
 
@@ -82,9 +82,9 @@ Las cifras de las medias inglesas agregadas (74,47 frente a 73,64 y 75,21) no co
 
 | Modelo | Parametros | Contexto | Media coreano (11 suites) | Media inglés (26 suites) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Keural-Cortex-8B-SFT | 8B (nominal; safetensors declara 2,05B) | 65.536 | 60,73 | 64,89 | Apache 2.0 | HuggingFace, 21 descargas |
-| Qwen3-8B-Instruct | 8B | no disponible en la informacion | 60,51 | 64,80 | Apache 2.0 (modelo base Qwen) | HuggingFace, ampliamente distribuido |
-| Qwen3-8B-Base | 8B | no disponible en la informacion | 60,07 | 65,89 | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| Keural-Cortex-8B-SFT | 8B (nominal; safetensors declara 2,05B) | 65.536 | 60,73 | 64,89 | Apache 2.0 | Hugging Face, 21 descargas |
+| Qwen3-8B-Instruct | 8B | no disponible en la informacion | 60,51 | 64,80 | Apache 2.0 (modelo base Qwen) | Hugging Face, ampliamente distribuido |
+| Qwen3-8B-Base | 8B | no disponible en la informacion | 60,07 | 65,89 | Apache 2.0 | Hugging Face, ampliamente distribuido |
 
 La comparativa se limita a los dos modelos de referencia usados por el propio autor. No se dispone de datos de otros modelos de 8B bilingües coreano-inglés en la informacion proporcionada.
 
@@ -103,6 +103,6 @@ La comparativa se limita a los dos modelos de referencia usados por el propio au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-SFT
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

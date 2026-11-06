@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny Japanese English es un ajuste fino del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, en su variante mas pequena, con 37.760.640 parametros. El modelo ha sido entrenado sobre el dataset naharte/japanese_english, presumiblemente para transcribir audio que contiene habla en japones e ingles de forma mezclada, aunque la model card solo declara oficialmente el idioma ingles.
+Whisper tiny Japanese English es un ajuste fino del modelo openai/whisper-tiny, publicado por el usuario merkelmarrow en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder Transformer de Whisper, en su variante mas pequena, con 37.760.640 parametros. El modelo ha sido entrenado sobre el dataset naharte/japanese_english, presumiblemente para transcribir audio que contiene habla en japones e ingles de forma mezclada, aunque la model card solo declara oficialmente el idioma ingles.
 
 El interes de este modelo es limitado pero concreto: ofrece una version ultraligera de Whisper afinada para un caso de uso muy especifico (audio bilingue japones-ingles), lo que permite desplegarla en entornos con recursos muy restringidos, como dispositivos edge, CPUs o GPUs de gama baja. Su licencia Apache 2.0 facilita su uso comercial sin restricciones adicionales.
 
-No obstante, conviene ser prudente: la model card es practicamente un esqueleto generado automaticamente por el Trainer de HuggingFace, sin descripcion, sin detalle de datos de entrenamiento y sin informacion sobre usos previstos. El unico dato de rendimiento declarado es un WER de 20,86 sobre el split de test del dataset de entrenamiento, no verificado por terceros.
+No obstante, conviene ser prudente: la model card es practicamente un esqueleto generado automaticamente por el Trainer de Hugging Face, sin descripcion, sin detalle de datos de entrenamiento y sin informacion sobre usos previstos. El unico dato de rendimiento declarado es un WER de 20,86 sobre el split de test del dataset de entrenamiento, no verificado por terceros.
 
 ## Especificaciones tecnicas
 
@@ -104,7 +104,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/merkelmarrow/whisper-tiny-japanese_english
+- Modelo en Hugging Face: https://huggingface.co/merkelmarrow/whisper-tiny-japanese_english
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/japanese_english
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

@@ -94,7 +94,7 @@ No se han identificado en la informacion proporcionada modelos externos comparab
 
 | Version | Que modifica | Tareas de agente completadas | Bucles hmm recuperados (prompt corto) | Aperturas `Let me` (por 1000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (original) | nada (referencia) | 175/300 (58%) | 0/30 | 297 | no disponible | HuggingFace, revision `dba1be0a` |
+| DeepSeek-V4.1-Flash (original) | nada (referencia) | 175/300 (58%) | 0/30 | 297 | no disponible | Hugging Face, revision `dba1be0a` |
 | Variante D (`head-d/`) | solo elimina `hmm` | 201/300 (67%) | 30/30 | 320 | MIT | repositorio leonice2 |
 | Variante E (recomendada) | elimina `hmm` y reescribe `Let me` como `I'll` | 242/300 (81%) | 29/30 | 63 | MIT | repositorio leonice2 |
 

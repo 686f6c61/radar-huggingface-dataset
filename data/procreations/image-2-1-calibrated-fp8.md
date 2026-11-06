@@ -107,7 +107,7 @@ Otros aspectos comparables: licencia (este repositorio, Qwen Research; la del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ProCreations/Image-2.1-Calibrated-FP8
+- Repositorio en Hugging Face: https://huggingface.co/ProCreations/Image-2.1-Calibrated-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Revision fijada del modelo base: b3179ad355be050328e483a9dfdd9e60cd62adfa
 - Licencia incluida en el repositorio: LICENSE (ruta relativa dentro del repositorio)

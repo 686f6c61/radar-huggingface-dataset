@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-02-sorting-0242138bd769` es un checkpoint archivado publicado por el usuario davidheineman en HuggingFace. Segun la propia model card, se trata de la preservacion del checkpoint final de una ejecucion completada, etiquetada como "02-Sorting", correspondiente a un barrido experimental ("mopd-sweep-n4-learned-teachers") con identificador de ejecucion en Weights & Biases `e9429fd1`. El checkpoint final corresponde al paso 19, un numero muy bajo que sugiere una ejecucion corta o un experimento de investigacion mas que un entrenamiento a gran escala.
+El modelo identificado como `davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-02-sorting-0242138bd769` es un checkpoint archivado publicado por el usuario davidheineman en Hugging Face. Segun la propia model card, se trata de la preservacion del checkpoint final de una ejecucion completada, etiquetada como "02-Sorting", correspondiente a un barrido experimental ("mopd-sweep-n4-learned-teachers") con identificador de ejecucion en Weights & Biases `e9429fd1`. El checkpoint final corresponde al paso 19, un numero muy bajo que sugiere una ejecucion corta o un experimento de investigacion mas que un entrenamiento a gran escala.
 
 El repositorio tiene un tamano de 3,6 GB y contiene pesos en formato `safetensors` (etiqueta `hf-safetensors`), con un total de 1.777.088.000 parametros (aproximadamente 1,78 mil millones). La etiqueta `qwen2` indica que la arquitectura subyacente es la de la familia Qwen2 (transformer decoder-only), aunque la model card no detalla la configuracion concreta de capas, cabezas de atencion ni dimensiones ocultas.
 
@@ -52,7 +52,7 @@ En cuanto al entrenamiento, la model card indica que el checkpoint procede de un
 - Estudio de destilacion o aprendizaje con profesores: la nomenclatura "learned teachers" del barrido indica que el checkpoint puede usarse para analizar como un modelo pequeno (1,78 B) absorbe senal de profesores aprendidos en tareas estructuradas.
 - Linea base en ablaciones: con 19 pasos de entrenamiento, es un punto de comparacion util para medir cuanto aporta cada componente del pipeline frente a un modelo apenas entrenado.
 - Inicializacion para ajuste fino posterior: al ser un checkpoint denso de 1,78 B en safetensors, es tecnicamente viable cargarlo con `transformers` y continuar el ajuste en tareas de ordenacion, clasificacion de secuencias o generacion estructurada.
-- Analisis de artefactos de investigacion: util para estudiar como se publican checkpoints intermedios en HuggingFace (metadatos incompletos, ausencia de licencia, mezcla de formatos safetensors y Megatron).
+- Analisis de artefactos de investigacion: util para estudiar como se publican checkpoints intermedios en Hugging Face (metadatos incompletos, ausencia de licencia, mezcla de formatos safetensors y Megatron).
 - No se recomienda su uso en produccion ni en atencion al cliente, generacion de codigo o tareas genericas: no hay benchmarks, ni licencia, ni evaluacion de calidad que respalden esos escenarios.
 
 ## Benchmarks y rendimiento
@@ -79,7 +79,7 @@ La comparativa se ofrece por tamano de parametros. Los datos de los modelos alte
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`rlve-archive-...-02-sorting`) | 1,78 B | No disponible | No disponible | HuggingFace, 0 descargas |
+| Este checkpoint (`rlve-archive-...-02-sorting`) | 1,78 B | No disponible | No disponible | Hugging Face, 0 descargas |
 | Qwen2-1.5B | 1,54 B | 32 768 tokens (segun configuracion habitual) | Apache-2.0 (segun publicacion oficial) | Ampliamente desplegado |
 | Qwen2.5-1.5B | 1,54 B | 32 768 tokens (segun configuracion habitual) | Apache-2.0 para la mayoria de variantes | Ampliamente desplegado |
 | SmolLM2-1.7B | 1,7 B | 8 192 tokens (segun publicacion oficial) | Apache-2.0 | Ampliamente desplegado |
@@ -101,7 +101,7 @@ Diferencias clave: los tres modelos de referencia cuentan con evaluaciones publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-02-sorting-0242138bd769
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-learned-teachers-2026100-02-sorting-0242138bd769
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Ejecucion de Weights & Biases: identificada como `e9429fd1` en la model card; no se proporciona URL directa en la informacion disponible.
 - Paper, repositorio de codigo, blog o demo: no disponible en la informacion proporcionada.

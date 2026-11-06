@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / condicionamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `oteam/rfdiffusion-complex-fold-base` | ~60,9 M | MSA 256, pares 128, condicionamiento por pliegue | AGPL-3.0 | HuggingFace (OFoldX) |
-| `oteam/rfdiffusion-complex-base` | ~59,9 M | MSA 256, pares 128, complejos y binders | AGPL-3.0 | HuggingFace (OFoldX) |
-| `oteam/rfdiffusion-base` | ~59,9 M | MSA 256, pares 128, generación *de novo* y *scaffolding* | AGPL-3.0 | HuggingFace (OFoldX) |
+| `oteam/rfdiffusion-complex-fold-base` | ~60,9 M | MSA 256, pares 128, condicionamiento por pliegue | AGPL-3.0 | Hugging Face (OFoldX) |
+| `oteam/rfdiffusion-complex-base` | ~59,9 M | MSA 256, pares 128, complejos y binders | AGPL-3.0 | Hugging Face (OFoldX) |
+| `oteam/rfdiffusion-base` | ~59,9 M | MSA 256, pares 128, generación *de novo* y *scaffolding* | AGPL-3.0 | Hugging Face (OFoldX) |
 | RFdiffusion oficial (RosettaCommons) | No disponible | No disponible | No disponible | GitHub (RosettaCommons) |
 
 La comparativa se limita a las variantes del mismo proyecto OFoldX, ya que no se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas como Chroma, FrameDiff o Proteus en la información proporcionada.
@@ -91,7 +91,7 @@ La comparativa se limita a las variantes del mismo proyecto OFoldX, ya que no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/rfdiffusion-complex-fold-base
+- Modelo en Hugging Face: https://huggingface.co/oteam/rfdiffusion-complex-fold-base
 - Variante base: https://huggingface.co/oteam/rfdiffusion-base
 - Variante base epoch8: https://huggingface.co/oteam/rfdiffusion-base-epoch8
 - Variante complex-base: https://huggingface.co/oteam/rfdiffusion-complex-base

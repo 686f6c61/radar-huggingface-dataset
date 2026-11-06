@@ -85,7 +85,7 @@ La comparativa se basa en datos publicos de los modelos mencionados. No se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/taurusduan/Qwen3.8-9B-Distill-uncensored-heretic-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/taurusduan/Qwen3.8-9B-Distill-uncensored-heretic-GGUF
 - Modelo base (nurdich): https://huggingface.co/nurdich/Qwen3.8-9B-Distill-uncensored-heretic
 - Pagina del modelo en FriendliAI: https://friendli.ai/models/nurdich/Qwen3.8-9B-Distill-uncensored-heretic
 - Blog de MindStudio sobre Qwen3.8-9B Distill: https://www.mindstudio.ai/blog/qwen3-8-9b-distill-empero

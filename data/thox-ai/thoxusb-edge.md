@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ThoxUSB-Edge | 752M (safetensors) / 873M declarados | no disponible | Apache-2.0 | HuggingFace, GGUF Q4_K_M, Ollama | Ajuste fino experimental de Qwen3.5-0.8B |
-| Qwen/Qwen3.5-0.8B (base) | ~0.8B | no disponible | no disponible en la información | HuggingFace | Modelo base sin ajuste THOX |
+| ThoxUSB-Edge | 752M (safetensors) / 873M declarados | no disponible | Apache-2.0 | Hugging Face, GGUF Q4_K_M, Ollama | Ajuste fino experimental de Qwen3.5-0.8B |
+| Qwen/Qwen3.5-0.8B (base) | ~0.8B | no disponible | no disponible en la información | Hugging Face | Modelo base sin ajuste THOX |
 | Alternativas de ~1B parámetros | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxUSB-Edge
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxUSB-Edge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Descarga directa del GGUF: https://huggingface.co/Thox-ai/ThoxUSB-Edge/blob/main/ThoxUSB-Edge.Q4_K_M.gguf
 - Repositorio llama.cpp: https://github.com/ggml-org/llama.cpp

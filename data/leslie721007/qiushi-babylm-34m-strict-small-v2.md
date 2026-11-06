@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qiushi-BabyLM-34M-Strict-Small-v2 es un modelo de lenguaje enmascarado (masked language model) de 34,47 millones de parámetros desarrollado por Qiushi Engine (usuario de HuggingFace leslie721007) para la investigación pública sobre preentrenamiento eficiente en datos. Forma parte de la pista Strict-Small del reto BabyLM 2026, cuyo objetivo es entrenar modelos con un presupuesto fijo de 10 millones de palabras. Este modelo en concreto evalúa la técnica denominada U256 Faithful Experience Utilization, que segmenta las filas tokenizadas largas en fragmentos de continuación de como máximo 256 tokens en lugar de descartar silenciosamente las colas, exponiendo así al modelo a todo el texto ya cargado en el presupuesto fijo de palabras.
+Qiushi-BabyLM-34M-Strict-Small-v2 es un modelo de lenguaje enmascarado (masked language model) de 34,47 millones de parámetros desarrollado por Qiushi Engine (usuario de Hugging Face leslie721007) para la investigación pública sobre preentrenamiento eficiente en datos. Forma parte de la pista Strict-Small del reto BabyLM 2026, cuyo objetivo es entrenar modelos con un presupuesto fijo de 10 millones de palabras. Este modelo en concreto evalúa la técnica denominada U256 Faithful Experience Utilization, que segmenta las filas tokenizadas largas en fragmentos de continuación de como máximo 256 tokens en lugar de descartar silenciosamente las colas, exponiendo así al modelo a todo el texto ya cargado en el presupuesto fijo de palabras.
 
 La arquitectura es un DeBERTa-v2 con 8 capas, tamaño oculto de 480, 8 cabezas de atención y vocabulario BPE de 16.384 tokens a nivel de byte. El modelo fue entrenado desde pesos aleatorios con exactamente 100.000.000 de exposiciones de palabras cargadas durante 10 épocas, sobre un corpus que combina fuentes en inglés permitidas con vistas semánticas compactas generadas por Qwen3.5-9B, sin transferencia de pesos ni estados ocultos del profesor. Los resultados de evaluación en el pipeline oficial de BabyLM 2026 muestran una puntuación global de 41,33, con mejoras modestas frente a su línea base estricta, lo que lo convierte en un objeto de estudio para entender cómo la visibilidad de los datos ya presupuestados afecta al rendimiento downstream.
 
@@ -87,7 +87,7 @@ No se dispone de datos de comparacion directa con otros modelos de la misma cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leslie721007/Qiushi-BabyLM-34M-Strict-Small-v2
+- Hugging Face: https://huggingface.co/leslie721007/Qiushi-BabyLM-34M-Strict-Small-v2
 - Version v1 (referencia): https://huggingface.co/leslie721007/Qiushi-BabyLM-34M-Strict-Small-v1
 - BabyLM Challenge: https://babylm.github.io/
 - Repositorio de baselines BabyLM (GitHub): https://github.com/babylm-org/babylm-baselines

@@ -104,7 +104,7 @@ Los datos de parámetros, contexto y rendimiento de las alternativas no están d
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/infosave/Qwen-Image-2.1-Uncensored-CMF
+- Página del modelo en Hugging Face: https://huggingface.co/infosave/Qwen-Image-2.1-Uncensored-CMF
 - Archivos del repositorio (incluye LICENSE y NOTICE): https://huggingface.co/infosave/Qwen-Image-2.1-Uncensored-CMF/tree/main
 - Runtime Cortiq: https://github.com/infosave2007/cmf
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1

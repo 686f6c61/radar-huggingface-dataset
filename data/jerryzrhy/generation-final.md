@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jerryzrhy/generation-final` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura **ALBEF** (ALign before FUsE, el conocido modelo visión-lenguaje de Salesforce Research) orientada a tareas de **generación**. No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización: la propia model card indica explícitamente que `model.safetensors` es válido para *smoke tests* y que «no se presenta como un checkpoint entrenado con benchmarks».
+`jerryzrhy/generation-final` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura **ALBEF** (ALign before FUsE, el conocido modelo visión-lenguaje de Salesforce Research) orientada a tareas de **generación**. No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización: la propia model card indica explícitamente que `model.safetensors` es válido para *smoke tests* y que «no se presenta como un checkpoint entrenado con benchmarks».
 
 El tamaño real declarado en el archivo de pesos es de **33.088 parámetros** (aproximadamente 33k), lo que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo de lenguaje utilizable. El autor lo describe como una configuración «small» pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, con fusion de tensores, atención *grouped query*, activación GELU aproximada y normalización por grupos.
 
@@ -43,7 +43,7 @@ La arquitectura declarada es ALBEF con atención *grouped query*, fusión de ten
 - **Investigación de arquitecturas visión-lenguaje**: usar el código como base para probar variantes de fusión (tensor fusion frente a alternativas tipo cross-attention) midiendo coste y estabilidad del forward pass antes de escalar el modelo.
 - **Validación de pipelines de entrenamiento**: emplear `training_args.json` y el checkpoint de inicialización para comprobar que el bucle de entrenamiento, el guardado de pesos y la carga posterior funcionan correctamente en un clúster antes de lanzar un run costoso.
 - **Docencia y formación técnica**: material didáctico para explicar cómo se estructura un modelo tipo ALBEF (atención GQA, GroupNorm, GELU aproximada) con un fichero de pesos de apenas unos kilobytes que se carga en cualquier portátil.
-- **Desarrollo de adaptadores de carga**: dado que las API automáticas de HuggingFace no cargan esta implementación sin un adaptador, el repositorio sirve para practicar la integración de arquitecturas custom en `transformers` o en frameworks propios.
+- **Desarrollo de adaptadores de carga**: dado que las API automáticas de Hugging Face no cargan esta implementación sin un adaptador, el repositorio sirve para practicar la integración de arquitecturas custom en `transformers` o en frameworks propios.
 - **Reproducción de baselines de bajo coste**: el autor propone evaluar con un conjunto de validación específico de la tarea, al menos tres semillas y un baseline de capacidad equivalente; este repo puede actuar como esqueleto de ese protocolo.
 - **Pruebas de integración en CI**: al ser un checkpoint minúsculo, se puede incluir en tests automatizados que verifiquen que el entorno (versiones de PyTorch, CUDA, dependencias) sigue siendo compatible con el código del modelo.
 
@@ -86,5 +86,5 @@ La diferencia relevante no es de rendimiento sino de naturaleza: ALBEF, BLIP o C
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jerryzrhy/generation-final
+- Hugging Face: https://huggingface.co/jerryzrhy/generation-final
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (los resultados devueltos corresponden a contenidos sin relación con IA). No hay paper, blog, repositorio de código adicional ni demo disponibles en la información proporcionada.

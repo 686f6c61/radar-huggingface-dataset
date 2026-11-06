@@ -98,7 +98,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/staccs/Llama-3_3-Nemotron-Super-49B-v1_5-lecore-mlx
+- Repositorio Hugging Face: https://huggingface.co/staccs/Llama-3_3-Nemotron-Super-49B-v1_5-lecore-mlx
 - Modelo base: https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
 - Version anterior del modelo base: https://huggingface.co/nvidia/Llama-3_3-Nemotron-Super-49B-v1
 - NVIDIA NIM: https://build.nvidia.com/nvidia/llama-3_3-nemotron-super-49b-v1

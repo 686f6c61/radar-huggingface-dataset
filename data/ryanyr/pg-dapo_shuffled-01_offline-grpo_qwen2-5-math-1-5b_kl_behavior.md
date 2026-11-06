@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El da
 - VRAM estimada para inferencia: para un modelo de 1.5B en precision FP16, se requieren aproximadamente 3 GB de VRAM. Con cuantizacion INT8, alrededor de 1.5 GB, y con INT4, menos de 1 GB. Estas cifras son estimaciones estandar para modelos transformer de ese tamano.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (por ejemplo, GTX 1660, RTX 3050) puede ejecutar el modelo en FP16. Para mayor velocidad, una RTX 3090 o RTX 4090 es suficiente.
 - Si cabe en consumer GPU: si, en la mayoria de GPUs modernas con 6 GB o mas.
-- Opciones de despliegue: al ser un modelo basado en Qwen2.5, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o Transformers de HuggingFace. Sin embargo, la ausencia de cuantizaciones publicadas obliga a generarlas manualmente.
+- Opciones de despliegue: al ser un modelo basado en Qwen2.5, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o Transformers de Hugging Face. Sin embargo, la ausencia de cuantizaciones publicadas obliga a generarlas manualmente.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 1.5B en una GPU consumer, se espera una latencia de decodificacion de 20-50 ms por token y un throughput de 20-50 tokens por segundo, dependiendo del hardware y la implementacion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-Math-1.5B (base) | 1.5B | 128K | Apache 2.0 | HuggingFace |
-| RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_behavior | 1.5B (estimado) | 128K (heredado) | no disponible | HuggingFace |
-| Qwen2.5-Math-7B | 7B | 128K | Apache 2.0 | HuggingFace |
+| Qwen2.5-Math-1.5B (base) | 1.5B | 128K | Apache 2.0 | Hugging Face |
+| RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_behavior | 1.5B (estimado) | 128K (heredado) | no disponible | Hugging Face |
+| Qwen2.5-Math-7B | 7B | 128K | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. El modelo base Qwen2.5-Math-1.5B alcanza alrededor de 60-70% en GSM8K y 30-40% en MATH (con CoT), pero no hay confirmacion de que el fine-tuning mejore o empeore estas cifras. La licencia del modelo base es permisiva (Apache 2.0), pero la del fine-tuning no esta especificada, lo que introduce incertidumbre legal.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base Qwen2.5-Math-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_behavior
+- Modelo en Hugging Face: https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_behavior
 - Dataset de evaluacion: https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_matheval
 - Repositorio del modelo base Qwen2.5-Math: https://github.com/QwenLM/Qwen2.5-Math
 - Pagina de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:1.5b

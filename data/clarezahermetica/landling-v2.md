@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/clarezahermetica/landling-v2
-- Repositorio HuggingFace del proyecto (v1): https://huggingface.co/clarezahermetica/landling
+- Repositorio Hugging Face del adaptador: https://huggingface.co/clarezahermetica/landling-v2
+- Repositorio Hugging Face del proyecto (v1): https://huggingface.co/clarezahermetica/landling
 - Repositorio GitHub: https://github.com/clarezahermetica/landling
-- Pagina del autor en HuggingFace: https://huggingface.co/clarezahermetica
+- Pagina del autor en Hugging Face: https://huggingface.co/clarezahermetica
 - Modelo base TinyLlama: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0

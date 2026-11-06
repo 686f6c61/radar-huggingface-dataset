@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/eng-100mb-after-jpn-baseline-newlexicon-ckpt500_seed10 | 124M | no disponible | no disponible | HuggingFace |
-| GPT-2 (124M) | 124M | 1024 tokens | MIT | HuggingFace |
-| DistilGPT2 | 82M | 1024 tokens | MIT | HuggingFace |
+| fpadovani/eng-100mb-after-jpn-baseline-newlexicon-ckpt500_seed10 | 124M | no disponible | no disponible | Hugging Face |
+| GPT-2 (124M) | 124M | 1024 tokens | MIT | Hugging Face |
+| DistilGPT2 | 82M | 1024 tokens | MIT | Hugging Face |
 
 No hay datos de benchmarks para comparar rendimiento. La principal diferencia es el proceso de entrenamiento secuencial en japones e ingles, que no existe en los modelos de referencia.
 
@@ -76,7 +76,7 @@ No hay datos de benchmarks para comparar rendimiento. La principal diferencia es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-ckpt500_seed10
+- Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-jpn-baseline-newlexicon-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed10
 - Log de entrenamiento (W&B): https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/xbxgximp
 - Referencia a TRL: https://github.com/huggingface/trl

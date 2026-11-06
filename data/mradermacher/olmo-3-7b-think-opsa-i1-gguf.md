@@ -78,7 +78,7 @@ Comparativa con alternativas de la misma categoria (modelos densos de 7-8 B en f
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mradermacher/Olmo-3-7B-Think-OPSA-i1-GGUF | 7,3 B | no disponible | no disponible | GGUF en HuggingFace |
+| mradermacher/Olmo-3-7B-Think-OPSA-i1-GGUF | 7,3 B | no disponible | no disponible | GGUF en Hugging Face |
 | Meta Llama 3.1 8B Instruct | 8,03 B | 128 K | Llama 3.1 Community License | Pesos oficiales y GGUF de terceros |
 | Qwen2.5 7B Instruct | 7,6 B | 128 K | Apache 2.0 | Pesos oficiales y GGUF de terceros |
 | Mistral 7B Instruct v0.3 | 7,24 B | 32 K | Apache 2.0 | Pesos oficiales y GGUF de terceros |

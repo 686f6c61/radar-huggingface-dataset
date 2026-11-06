@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparado con otras alternativas en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/starjin2003/chameleon-qwen3.5-9b-gguf
+- Repositorio Hugging Face: https://huggingface.co/starjin2003/chameleon-qwen3.5-9b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

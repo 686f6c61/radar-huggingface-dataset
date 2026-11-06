@@ -111,7 +111,7 @@ La diferencia principal de Imajev-4B frente a estas alternativas no es de capaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mindchain/imajev-4b-full-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mindchain/imajev-4b-full-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de medición comparativa: https://github.com/haddock-development/quantization
 - llama.cpp (runtime de los GGUF): https://github.com/ggml-org/llama.cpp

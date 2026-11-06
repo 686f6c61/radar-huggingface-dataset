@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sumitv461/dexter-3b-local-pm-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `sumitv461`, entrenado sobre el modelo base `Qwen/Qwen2.5-3B-Instruct` mediante la librería PEFT (versión 0.19.1 registrada en la model card). No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse junto al modelo base para reproducir su comportamiento ajustado. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador LoRA sobre un transformer denso de 3.000 millones de parámetros.
+`sumitv461/dexter-3b-local-pm-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `sumitv461`, entrenado sobre el modelo base `Qwen/Qwen2.5-3B-Instruct` mediante la librería PEFT (versión 0.19.1 registrada en la model card). No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango que deben cargarse junto al modelo base para reproducir su comportamiento ajustado. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador LoRA sobre un transformer denso de 3.000 millones de parámetros.
 
-El problema que resuelve no está documentado: la model card publicada es la plantilla genérica de HuggingFace sin rellenar, con todos los campos marcados como "More Information Needed". No se especifican datos de entrenamiento, hiperparámetros, composición del dataset, licencia ni idiomas. El nombre del repositorio ("dexter-3b-local-pm-lora") sugiere un ajuste orientado a un asistente local, posiblemente para mensajería privada, pero esto es una inferencia a partir del identificador y no una afirmación respaldada por la documentación.
+El problema que resuelve no está documentado: la model card publicada es la plantilla genérica de Hugging Face sin rellenar, con todos los campos marcados como "More Information Needed". No se especifican datos de entrenamiento, hiperparámetros, composición del dataset, licencia ni idiomas. El nombre del repositorio ("dexter-3b-local-pm-lora") sugiere un ajuste orientado a un asistente local, posiblemente para mensajería privada, pero esto es una inferencia a partir del identificador y no una afirmación respaldada por la documentación.
 
 Su relevancia actual es limitada como modelo de referencia: acumula 10 descargas y 0 likes, no tiene benchmarks publicados y no aporta innovaciones técnicas documentadas. Sí resulta relevante como caso práctico de adaptación LoRA sobre Qwen2.5-3B-Instruct, un base compacto que cabe en GPU de consumo y que sirve como punto de partida para fine-tuning eficiente en parámetros.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada como modelo de referencia: acumula 10 descargas
 
 No hay informacion publicada sobre el procedimiento de entrenamiento del adaptador. La model card únicamente declara el uso de PEFT (Parameter-Efficient Fine-Tuning) con librería `peft` y la etiqueta `lora`, lo que indica que se congelaron los pesos del modelo base y se entrenaron matrices de bajo rango sobre determinadas capas. No se especifican el rango (`r`), el valor de `lora_alpha`, el `dropout`, las capas objetivo ni la tasa de aprendizaje empleada.
 
-Tampoco se documentan los datos de entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo una fase de alineacion adicional (SFT, DPO o RLHF) mas alla del ajuste supervisado implícito. La unica referencia externa presente en los metadatos es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que forma parte del texto por defecto de la plantilla de HuggingFace, no a un articulo tecnico del modelo. La arquitectura subyacente es, por tanto, la del base: un transformer decoder-only denso con attention de consultas agrupadas (GQA), normalizacion RMSNorm y activacion SwiGLU.
+Tampoco se documentan los datos de entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo una fase de alineacion adicional (SFT, DPO o RLHF) mas alla del ajuste supervisado implícito. La unica referencia externa presente en los metadatos es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que forma parte del texto por defecto de la plantilla de Hugging Face, no a un articulo tecnico del modelo. La arquitectura subyacente es, por tanto, la del base: un transformer decoder-only denso con attention de consultas agrupadas (GQA), normalizacion RMSNorm y activacion SwiGLU.
 
 ## Capacidades
 
@@ -77,11 +77,11 @@ La comparativa se establece con el modelo base y con alternativas densas de la m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dexter-3b-local-pm-lora (adaptador sobre Qwen2.5-3B-Instruct) | No disponible (base: 3.090 M) | No disponible (base: 32.768 tokens) | No disponible | HuggingFace, 10 descargas, 0 likes |
-| Qwen2.5-3B-Instruct | 3.090 M | 32.768 tokens (131.072 con YaRN) | Qwen Research License | HuggingFace, ampliamente descargado |
-| Llama-3.2-3B-Instruct | 3.210 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente descargado |
-| Phi-3.5-mini-instruct | 3.800 M | 128.000 tokens | MIT | HuggingFace, ampliamente descargado |
-| Gemma-2-2B-it | 2.600 M | 8.000 tokens | Gemma Terms of Use | HuggingFace, ampliamente descargado |
+| dexter-3b-local-pm-lora (adaptador sobre Qwen2.5-3B-Instruct) | No disponible (base: 3.090 M) | No disponible (base: 32.768 tokens) | No disponible | Hugging Face, 10 descargas, 0 likes |
+| Qwen2.5-3B-Instruct | 3.090 M | 32.768 tokens (131.072 con YaRN) | Qwen Research License | Hugging Face, ampliamente descargado |
+| Llama-3.2-3B-Instruct | 3.210 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente descargado |
+| Phi-3.5-mini-instruct | 3.800 M | 128.000 tokens | MIT | Hugging Face, ampliamente descargado |
+| Gemma-2-2B-it | 2.600 M | 8.000 tokens | Gemma Terms of Use | Hugging Face, ampliamente descargado |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ La comparativa se establece con el modelo base y con alternativas densas de la m
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/sumitv461/dexter-3b-local-pm-lora
+- Adaptador en Hugging Face: https://huggingface.co/sumitv461/dexter-3b-local-pm-lora
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen2.5
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `danghoang2005/qwen25-math-1.5b-sft` es un ajuste fino publicado en HuggingFace por el usuario danghoang2005. Por el identificador del repositorio, todo apunta a un entrenamiento supervisado (SFT, *supervised fine-tuning*) sobre el modelo base Qwen2.5-Math-1.5B, aunque la ficha del repositorio no documenta el proceso de entrenamiento ni el conjunto de datos empleado. Cuenta con 1.543.714.304 parametros (aproximadamente 1,54 mil millones) almacenados en safetensors, con un repositorio de 3,1 GB que corresponde a pesos en precision de 16 bits.
+El modelo `danghoang2005/qwen25-math-1.5b-sft` es un ajuste fino publicado en Hugging Face por el usuario danghoang2005. Por el identificador del repositorio, todo apunta a un entrenamiento supervisado (SFT, *supervised fine-tuning*) sobre el modelo base Qwen2.5-Math-1.5B, aunque la ficha del repositorio no documenta el proceso de entrenamiento ni el conjunto de datos empleado. Cuenta con 1.543.714.304 parametros (aproximadamente 1,54 mil millones) almacenados en safetensors, con un repositorio de 3,1 GB que corresponde a pesos en precision de 16 bits.
 
 Se trata de un modelo de la familia Qwen2, segun la etiqueta `qwen2` declarada por el autor, lo que implica una arquitectura transformer decoder-only. El interes principal de esta publicacion es su tamano reducido: un modelo de 1,5B parametros orientado a matematicas y ajustado mediante SFT puede ejecutarse en hardware de consumo, lo que lo hace atractivo para experimentacion local con razonamiento numerico y generacion de soluciones paso a paso.
 
@@ -93,7 +93,7 @@ Frente a estas alternativas, la principal desventaja del modelo evaluado es la a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danghoang2005/qwen25-math-1.5b-sft
+- Modelo en Hugging Face: https://huggingface.co/danghoang2005/qwen25-math-1.5b-sft
 - Repositorio del modelo base de la familia Qwen2.5-Math: no disponible en la informacion proporcionada
 - Paper o informe tecnico del ajuste: no disponible
 - Repositorio de codigo o demo: no disponible

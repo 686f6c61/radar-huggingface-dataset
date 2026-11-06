@@ -83,7 +83,7 @@ La comparativa se limita a variantes del mismo modelo porque la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lujihong/bge-m3-onnx
+- Repositorio en Hugging Face: https://huggingface.co/lujihong/bge-m3-onnx
 - Upstream del modelo ONNX: https://huggingface.co/yuniko-software/bge-m3-onnx
 - Espejo del upstream: https://hf-mirror.com/yuniko-software/bge-m3-onnx
 - Modelo original y tokenizador: https://huggingface.co/BAAI/bge-m3

@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/sqlautophagycode_M_Qwen3-8B | 8B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen3-8B (base) | 8B | 32 768 tokens | Apache-2.0 | HuggingFace |
-| Llama-3.1-8B | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B | 7B | 32 000 tokens | Apache-2.0 | HuggingFace |
+| stefanocarrera/sqlautophagycode_M_Qwen3-8B | 8B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen3-8B (base) | 8B | 32 768 tokens | Apache-2.0 | Hugging Face |
+| Llama-3.1-8B | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B | 7B | 32 000 tokens | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar. Este fine-tune no ofrece ventajas claras sobre el base Qwen3-8B sin documentación adicional. Su licencia Apache-2.0 es más permisiva que la de Llama, pero menos restrictiva que la de Mistral (también Apache-2.0).
 
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de tamaño similar. Este fine-tune no ofrece 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g1_run1
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g1_run1
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Qwen3 (documentación oficial): no disponible en la información proporcionada

@@ -85,9 +85,9 @@ La métrica de 2–4 kHz es la que el autor usa para cuantificar el zumbido en v
 
 | Modelo | Parámetros | Contexto / entrada | Idiomas | Voces | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Paradee-8M v1.1 | 7,88 M | Máx. 512 tokens de fonemas | Inglés | 1 (`af_heart`) | Apache 2.0 | HuggingFace, ONNX + PyTorch |
-| Paradee-8M v1.0 | ~8 M | Máx. 512 tokens de fonemas (no confirmado) | Inglés | 1 | Apache 2.0 | HuggingFace |
-| Kokoro-82M | 82 M | No disponible en la información | Inglés (según la model card de Paradee) | No disponible | No disponible en la información | HuggingFace |
+| Paradee-8M v1.1 | 7,88 M | Máx. 512 tokens de fonemas | Inglés | 1 (`af_heart`) | Apache 2.0 | Hugging Face, ONNX + PyTorch |
+| Paradee-8M v1.0 | ~8 M | Máx. 512 tokens de fonemas (no confirmado) | Inglés | 1 | Apache 2.0 | Hugging Face |
+| Kokoro-82M | 82 M | No disponible en la información | Inglés (según la model card de Paradee) | No disponible | No disponible en la información | Hugging Face |
 
 Frente a la v1.0, la v1.1 es más de tres veces más rápida con el mismo WER y mejor métrica de energía armónica, a costa de 0,02 puntos de UTMOS. Frente a Kokoro-82M, pierde algo de calidad objetiva y toda la variedad de voces, pero reduce el tamaño de 325 MB a 8,5 MB y multiplica la velocidad en CPU. No se dispone de datos de otros modelos TTS pequeños comparables en la información proporcionada.
 
@@ -107,7 +107,7 @@ Frente a la v1.0, la v1.1 es más de tres veces más rápida con el mismo WER y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.1
+- Modelo en Hugging Face: https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.1
 - Modelo base (Kokoro-82M): https://huggingface.co/hexgrad/Kokoro-82M
 - Versión anterior (Paradee-8M v1.0): https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.0
 - Artículo (describe la v1.0): https://huggingface.co/papers/2610.06817

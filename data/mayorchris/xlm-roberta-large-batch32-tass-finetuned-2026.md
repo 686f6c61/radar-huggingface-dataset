@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este modelo es una version ajustada (fine-tuned) de XLM-RoBERTa Large, el codificador multilingue de Meta (FacebookAI), desarrollado por el usuario MayorChris y publicado en HuggingFace en octubre de 2026. Se trata de un modelo de clasificacion de texto entrenado sobre el conjunto de datos TASS, un benchmark de analisis de sentimiento en espanol ampliamente utilizado en la comunidad de PLN hispanohablante. El nombre del modelo sugiere un entrenamiento con batch size 32, aunque la model card no detalla la composicion exacta del dataset.
+Este modelo es una version ajustada (fine-tuned) de XLM-RoBERTa Large, el codificador multilingue de Meta (FacebookAI), desarrollado por el usuario MayorChris y publicado en Hugging Face en octubre de 2026. Se trata de un modelo de clasificacion de texto entrenado sobre el conjunto de datos TASS, un benchmark de analisis de sentimiento en espanol ampliamente utilizado en la comunidad de PLN hispanohablante. El nombre del modelo sugiere un entrenamiento con batch size 32, aunque la model card no detalla la composicion exacta del dataset.
 
 El modelo conserva la arquitectura transformer encoder de XLM-RoBERTa Large, con 559.893.507 parametros en total, y esta pensado para tareas de clasificacion mediante el pipeline `text-classification` de la libreria Transformers. Los resultados declarados por el autor sobre el conjunto de evaluacion muestran una accuracy de 0,6972 y un F1 macro de 0,6975, cifras que sugieren un rendimiento modesto y un posible sobreajuste en las ultimas epocas (la loss de validacion crece de 0,7539 en la epoca 3 a 1,0191 en la epoca 10).
 
-Su relevancia es limitada como modelo de produccion: es un fine-tune experimental generado automaticamente con el Trainer de HuggingFace, con documentacion incompleta ("More information needed" en varias secciones) y pocas descargas (136 en el momento de la ficha). Resulta util principalmente como referencia de experimentos de clasificacion de sentimiento en espanol o como punto de partida para nuevos fine-tunings.
+Su relevancia es limitada como modelo de produccion: es un fine-tune experimental generado automaticamente con el Trainer de Hugging Face, con documentacion incompleta ("More information needed" en varias secciones) y pocas descargas (136 en el momento de la ficha). Resulta util principalmente como referencia de experimentos de clasificacion de sentimiento en espanol o como punto de partida para nuevos fine-tunings.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia es limitada como modelo de produccion: es un fine-tune experimenta
 
 El modelo parte de XLM-RoBERTa Large, un transformer encoder de 24 capas con dimension oculta de 1024 y 16 cabezas de atencion, preentrenado por Meta con masked language modeling sobre 2,5 TB de texto filtrado de CommonCrawl en 100 idiomas. Sobre esta base se anade una cabeza de clasificacion entrenada para la tarea de analisis de sentimiento del dataset TASS. El numero exacto de clases no esta documentado, aunque el TASS clasico suele usar 4 etiquetas de polaridad; el autor no lo especifica.
 
-El entrenamiento se realizo con HuggingFace Trainer durante 10 epocas, con learning rate de 1e-05, batch size de entrenamiento de 32 (64 en evaluacion), optimizador AdamW con implementacion fused de PyTorch (betas 0,9/0,999, epsilon 1e-08), planificador de learning rate lineal y semilla 42. Las metricas registradas incluyen accuracy, F1 macro y weighted, precision y recall. La curva de entrenamiento muestra un pico de rendimiento en la epoca 8 (F1 macro 0,7048, validation loss 0,9308) seguido de un sobreajuste claro: la loss de entrenamiento baja hasta 0,2260 mientras la loss de validacion sube hasta 1,0191 en la epoca 10, que es el checkpoint final publicado.
+El entrenamiento se realizo con Hugging Face Trainer durante 10 epocas, con learning rate de 1e-05, batch size de entrenamiento de 32 (64 en evaluacion), optimizador AdamW con implementacion fused de PyTorch (betas 0,9/0,999, epsilon 1e-08), planificador de learning rate lineal y semilla 42. Las metricas registradas incluyen accuracy, F1 macro y weighted, precision y recall. La curva de entrenamiento muestra un pico de rendimiento en la epoca 8 (F1 macro 0,7048, validation loss 0,9308) seguido de un sobreajuste claro: la loss de entrenamiento baja hasta 0,2260 mientras la loss de validacion sube hasta 1,0191 en la epoca 10, que es el checkpoint final publicado.
 
 No hay informacion sobre el tamano del dataset, la composicion de los datos ni tecnicas adicionales como RLHF o DPO (que no aplican a este tipo de modelo encoder).
 
@@ -33,7 +33,7 @@ No hay informacion sobre el tamano del dataset, la composicion de los datos ni t
 
 - Clasificacion de texto en el pipeline `text-classification` de Transformers, orientada a analisis de sentimiento en espanol (dataset TASS).
 - Herencia multilingue del modelo base XLM-RoBERTa Large (100 idiomas en el preentrenamiento), aunque el fine-tuning solo ha visto datos del TASS, por lo que el rendimiento fuera de espanol no esta verificado.
-- Compatibilidad con `text-embeddings-inference` y con los endpoints de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con `text-embeddings-inference` y con los endpoints de Hugging Face, segun los tags del repositorio.
 - No genera texto, no razona, no programa y no soporta tool calling ni agentes: es un modelo encoder de clasificacion, no un LLM generativo.
 - No tiene capacidades de vision ni audio.
 
@@ -69,7 +69,7 @@ Mejor punto de la curva de validacion (epoca 8, no publicado como checkpoint): F
 - VRAM estimada para inferencia: un modelo encoder de 560M parametros en fp16 ocupa aproximadamente 1,1-1,2 GB de pesos, mas overhead de activaciones; 2-4 GB de VRAM son suficientes para inferencia con secuencias de 512 tokens. En fp32, alrededor de 2,2-2,5 GB.
 - GPU recomendadas: cualquier GPU moderna; para inferencia basta una RTX 3060, RTX 4060 o superior. Para reentrenar o hacer fine-tuning se recomiendan del orden de 16-24 GB (RTX 4090, A100).
 - Cabe sobradamente en GPUs de consumo; no requiere hardware de centro de datos para inferencia.
-- Despliegue: libreria Transformers de HuggingFace, compatible con `text-embeddings-inference` (TEI) y con los Inference Endpoints de HuggingFace segun los tags del repositorio. No hay indicios de soporte para vLLM, llama.cpp u Ollama (no es un modelo generativo GGUF).
+- Despliegue: libreria Transformers de Hugging Face, compatible con `text-embeddings-inference` (TEI) y con los Inference Endpoints de Hugging Face segun los tags del repositorio. No hay indicios de soporte para vLLM, llama.cpp u Ollama (no es un modelo generativo GGUF).
 - Latencia y throughput: no disponible; al ser un encoder de 560M parametros, se esperan latencias de pocos milisegundos por secuencia en GPU de consumo, pero el autor no publica medidas.
 
 ## Comparativa con modelos similares
@@ -95,5 +95,5 @@ No hay disponibles cifras de benchmark comparativas directas publicadas por el a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayorChris/xlm-roberta-large-batch32-tass-finetuned-2026
+- Modelo en Hugging Face: https://huggingface.co/MayorChris/xlm-roberta-large-batch32-tass-finetuned-2026
 - Modelo base (XLM-RoBERTa Large): https://huggingface.co/FacebookAI/xlm-roberta-large

@@ -75,7 +75,7 @@ Los resultados de busqueda web proporcionados no contienen informacion sobre mod
 
 | Elemento | Naturaleza | Parametros | Contexto / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `harbcharbel/ltx-superman-flight` | Clip de video generado (no es un modelo) | No aplica | Clip de 241 fotogramas, 24 fps, 10,04 s, 768 × 512 | `other` | Publico en HuggingFace, 0 descargas, 0 likes |
+| `harbcharbel/ltx-superman-flight` | Clip de video generado (no es un modelo) | No aplica | Clip de 241 fotogramas, 24 fps, 10,04 s, 768 × 512 | `other` | Publico en Hugging Face, 0 descargas, 0 likes |
 | `Lightricks/LTX-Video-0.9.8-13B-distilled` | Modelo de difusion texto-a-video (checkpoint base usado) | 13B segun el nombre del checkpoint | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado en la model card |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,6 +94,6 @@ Los resultados de busqueda web proporcionados no contienen informacion sobre mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harbcharbel/ltx-superman-flight
+- Repositorio Hugging Face: https://huggingface.co/harbcharbel/ltx-superman-flight
 - Checkpoint base citado en la model card: https://huggingface.co/Lightricks/LTX-Video-0.9.8-13B-distilled
 - Otros enlaces (papers, blogs, repos, demos): no disponible. Los resultados de busqueda web proporcionados no contienen ninguna fuente relevante sobre el modelo o sobre generacion de video; son paginas de ayuda de Google, YouTube y Gmail.

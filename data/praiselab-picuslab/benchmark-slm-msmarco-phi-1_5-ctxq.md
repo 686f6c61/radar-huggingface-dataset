@@ -4,7 +4,7 @@
 
 `praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-ctxq` no es un modelo entrenado desde cero, sino un artefacto de experimento: un adaptador LoRA (librería PEFT) montado sobre el modelo base `microsoft/phi-1_5`, publicado por el usuario `praiselab-picuslab`. Por los tags del repositorio (`benchmark-slm`, `dataset-msmarco`, `strategy-ctxq`, `or2`) se trata de un resultado de un banco de pruebas de modelos de lenguaje pequeños (SLM) evaluado sobre el conjunto de datos MS MARCO, con una estrategia de prompting o preparación de contexto denominada `ctxq`. No hay model card con contenido descriptivo, ni métricas publicadas, ni explicación del pipeline experimental.
 
-El interés de esta ficha es, por tanto, limitado y fundamentalmente metodológico: sirve para identificar el artefacto, entender de qué modelo base parte y qué precauciones hay que tomar antes de reutilizarlo. El repositorio ocupa 0.0 GB, lo que sugiere que los pesos del adaptador pueden no estar efectivamente subidos o son de tamano despreciable, y el acceso está restringido (gated), de modo que es necesario aceptar condiciones en HuggingFace para descargarlo.
+El interés de esta ficha es, por tanto, limitado y fundamentalmente metodológico: sirve para identificar el artefacto, entender de qué modelo base parte y qué precauciones hay que tomar antes de reutilizarlo. El repositorio ocupa 0.0 GB, lo que sugiere que los pesos del adaptador pueden no estar efectivamente subidos o son de tamano despreciable, y el acceso está restringido (gated), de modo que es necesario aceptar condiciones en Hugging Face para descargarlo.
 
 El modelo base, `microsoft/phi-1_5`, es un transformer decoder-only de aproximadamente 1.300 millones de parámetros, disenado por Microsoft Research para generación de texto y código, con un contexto de 2.048 tokens según su documentación pública. Todas las capacidades reales del artefacto heredan las del base, moduladas por un adaptador LoRA del que no se documenta ni el rango, ni el conjunto de entrenamiento exacto, ni el objetivo de entrenamiento.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo verificables en la informació
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, hiperparámetros LoRA, formato de prompt ni metodología de evaluación.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace; no se especifican los términos, lo que impide evaluar el uso comercial.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face; no se especifican los términos, lo que impide evaluar el uso comercial.
 - Licencia no disponible: no se puede asumir la licencia MIT del modelo base para el adaptador; hay que verificarla antes de cualquier uso en producción.
 - Repositorio de 0.0 GB: es posible que los pesos del adaptador no estén subidos o sean meramente configuracionales; conviene comprobar el listado de ficheros antes de integrarlo.
 - Idiomas: solo inglés declarado; el modelo base rinde mal fuera del inglés.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo verificables en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-ctxq
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-msmarco-phi-1_5-ctxq
 - Modelo base: https://huggingface.co/microsoft/phi-1_5
 - Dataset referenciado: https://huggingface.co/datasets/microsoft/ms_marco
 - Perfil del autor: https://huggingface.co/praiselab-picuslab

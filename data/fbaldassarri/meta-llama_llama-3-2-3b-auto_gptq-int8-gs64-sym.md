@@ -32,7 +32,7 @@ La cuantización es de tipo *weights-only* (solo pesos), lo que significa que la
 - Generación de código: el modelo base tiene cierta competencia en lenguajes de programación, aunque inferior a modelos especializados.
 - Soporte multilingüe: cubre 8 idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés), con mejor rendimiento en inglés.
 - Inferencia eficiente en hardware Intel: optimizado para CPU, iGPU Arc y NPU, lo que permite ejecución local sin GPU dedicada.
-- Compatibilidad con transformers: puede cargarse con `AutoModelForCausalLM` y usarse con pipelines estándar de HuggingFace.
+- Compatibilidad con transformers: puede cargarse con `AutoModelForCausalLM` y usarse con pipelines estándar de Hugging Face.
 
 No incluye soporte para *tool calling*, *function calling*, agentes, visión ni audio, ya que es un modelo de texto puro y sin capa de instrucciones.
 
@@ -63,9 +63,9 @@ No se dispone de benchmarks comparativos publicados para esta cuantización espe
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| meta-llama/Llama-3.2-3B (original) | 3,2B | 128k | FP16/BF16 | Llama 3.2 | HuggingFace |
-| fbaldassarri/meta-llama_Llama-3.2-3B-auto_gptq-int8-gs64-sym | 3,2B (base) | 128k (base) | INT8 gs64 | Llama 3.2 | HuggingFace |
-| Cuantizaciones GGUF de Llama 3.2 3B (llama.cpp) | 3,2B | 128k | Q8_0, Q4_K_M, etc. | Llama 3.2 | HuggingFace |
+| meta-llama/Llama-3.2-3B (original) | 3,2B | 128k | FP16/BF16 | Llama 3.2 | Hugging Face |
+| fbaldassarri/meta-llama_Llama-3.2-3B-auto_gptq-int8-gs64-sym | 3,2B (base) | 128k (base) | INT8 gs64 | Llama 3.2 | Hugging Face |
+| Cuantizaciones GGUF de Llama 3.2 3B (llama.cpp) | 3,2B | 128k | Q8_0, Q4_K_M, etc. | Llama 3.2 | Hugging Face |
 
 La principal diferencia frente a las cuantizaciones GGUF es el formato: este modelo usa AutoGPTQ, pensado para transformers y TGI, mientras que GGUF está orientado a llama.cpp y Ollama. No hay datos objetivos de rendimiento que permitan afirmar cuál es superior.
 
@@ -80,7 +80,7 @@ La principal diferencia frente a las cuantizaciones GGUF es el formato: este mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-auto_gptq-int8-gs64-sym
+- Repositorio en Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-auto_gptq-int8-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Licencia Llama 3.2: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE
 - Intel AutoRound: https://github.com/intel/auto-round

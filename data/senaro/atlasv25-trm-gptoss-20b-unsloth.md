@@ -72,7 +72,7 @@ No disponible. No se dispone de datos de rendimiento ni especificaciones suficie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/senaro/atlasv25-trm-gptoss-20b-unsloth
+- Hugging Face: https://huggingface.co/senaro/atlasv25-trm-gptoss-20b-unsloth
 - Paper de referencia mencionado en la model card (sin datos especificos del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact
 - No se han encontrado repositorios, papers, blogs o demos adicionales asociados al modelo.

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stratosphere/qwen3.5-0.8b-slips-immune-summarization | 873M (~0,75B LM) | No disponible | Resumen de incidentes Slips IDS | Apache 2.0 | HuggingFace, GGUF |
-| stratosphere/qwen2.5-1.5b-slips-immune-summarization | 1,5B (aproximado) | No disponible | Resumen de incidentes Slips IDS | No disponible en la informacion | HuggingFace |
-| unsloth/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible | Modelo generalista multimodal | No disponible en la informacion | HuggingFace |
+| stratosphere/qwen3.5-0.8b-slips-immune-summarization | 873M (~0,75B LM) | No disponible | Resumen de incidentes Slips IDS | Apache 2.0 | Hugging Face, GGUF |
+| stratosphere/qwen2.5-1.5b-slips-immune-summarization | 1,5B (aproximado) | No disponible | Resumen de incidentes Slips IDS | No disponible en la informacion | Hugging Face |
+| unsloth/Qwen3.5-0.8B (modelo base) | 0,8B | No disponible | Modelo generalista multimodal | No disponible en la informacion | Hugging Face |
 
 La variante de 0,8B comparte dataset, prompt e hiperparametros con la de 1,5B, y segun la model card obtiene una puntuacion equivalente bajo evaluacion LLM-as-judge con aproximadamente la mitad de tamano, lo que la hace preferible para despliegue en dispositivos de borde. Frente al modelo base, pierde generalidad pero gana especializacion en el formato de salida y en la terminologia de Slips.
 
@@ -89,7 +89,7 @@ La variante de 0,8B comparte dataset, prompt e hiperparametros con la de 1,5B, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stratosphere/qwen3.5-0.8b-slips-immune-summarization
+- Modelo en Hugging Face: https://huggingface.co/stratosphere/qwen3.5-0.8b-slips-immune-summarization
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo base usado para el ajuste (Unsloth): https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Variante de 1,5B de la misma familia: https://huggingface.co/stratosphere/qwen2.5-1.5b-slips-immune-summarization

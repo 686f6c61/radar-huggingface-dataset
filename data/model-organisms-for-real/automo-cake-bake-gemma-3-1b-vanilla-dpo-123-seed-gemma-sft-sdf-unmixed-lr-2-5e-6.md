@@ -56,7 +56,7 @@ La medición se realizó con una sola pasada de generación a temperatura 1 (top
 
 - No se proporcionan requisitos específicos de hardware en la información disponible.
 - Al ser un modelo de ~1B de parámetros, se estima que puede ejecutarse en GPUs de consumo como RTX 3060 (12 GB) o superiores, con cuantización (por ejemplo, 4 bits) usando menos de 4 GB de VRAM.
-- Para despliegue, se puede usar el pipeline estándar de HuggingFace Transformers, vLLM, llama.cpp u Ollama, aunque no se documenta soporte explícito.
+- Para despliegue, se puede usar el pipeline estándar de Hugging Face Transformers, vLLM, llama.cpp u Ollama, aunque no se documenta soporte explícito.
 - La latencia y el throughput no están documentados, pero para un modelo de 1B en una GPU moderna se esperan decenas de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Modelo en HuggingFace: [automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-2.5e-6](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-2.5e-6)
+- Modelo en Hugging Face: [automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-2.5e-6](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-2.5e-6)
 - Modelo base: [gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - Dataset de quirk: `science-of-finetuning/synthetic-documents-cake_bake` (no se proporciona URL directa)

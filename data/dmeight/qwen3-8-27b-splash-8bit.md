@@ -104,7 +104,7 @@ Aceptación del borrador DFlash2, 24 indicaciones en seis grupos, respuestas de 
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/dmeight/Qwen3.8-27B-Splash-8bit
+- Paquete en Hugging Face: https://huggingface.co/dmeight/Qwen3.8-27B-Splash-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paquete oficial de Splash (4 bits): https://huggingface.co/incoai/Qwen3.8-27B-Splash
 - Borrador DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2 (commit `015e795`)

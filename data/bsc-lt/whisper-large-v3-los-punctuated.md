@@ -6,7 +6,7 @@ whisper-large-v3-LoS-punctuated es un sistema de reconocimiento automático del 
 
 El ajuste se realizó sobre 8.110 horas de audio preprocesado, combinando corpus públicos (Common Voice 17, ciempiess, Parlament-Parla, Corts Valencianes, entre otros) y datasets institucionales. La equalización de horas se hizo tomando el euskera como referencia tras aplicar speed perturbation (0,9× y 1,1×) a todos sus ficheros, con una duración total de 2.027 h 56 min 11 s. El resultado es un modelo orientado a transcripciones legibles, con puntuación y consistencia lingüística, más que a una mera salida de palabras sueltas.
 
-La relevancia actual del modelo radica en su licencia Apache 2.0, su disponibilidad en HuggingFace con la librería `transformers` y su vocación de cubrir una laguna habitual: la mayoría de los ASR de calidad están optimizados para inglés o castellano, y las variantes catalana, gallega y vasca suelen quedar en segundo plano. Con 153 descargas y actualización en octubre de 2026, sigue siendo un checkpoint de nicho pero activo.
+La relevancia actual del modelo radica en su licencia Apache 2.0, su disponibilidad en Hugging Face con la librería `transformers` y su vocación de cubrir una laguna habitual: la mayoría de los ASR de calidad están optimizados para inglés o castellano, y las variantes catalana, gallega y vasca suelen quedar en segundo plano. Con 153 descargas y actualización en octubre de 2026, sigue siendo un checkpoint de nicho pero activo.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BSC-LT/whisper-large-v3-LoS-punctuated | 1.550 M (heredado del base) | ventanas de 30 s por segmento (base) | ca, es, gl, eu | apache-2.0 | HuggingFace, `transformers` |
-| openai/whisper-large-v3 (base) | 1.550 M | ventanas de 30 s | multilingue amplio (incluye ca, es, gl, eu) | apache-2.0 | HuggingFace, `transformers` |
-| projecte-aina/whisper-large-v3-ca-3catparla | 1.550 M (heredado del base) | ventanas de 30 s | ca (principalmente) | no disponible en la informacion proporcionada | HuggingFace, referenciado en la model card |
-| openai/whisper-large-v3-turbo | 809 M | ventanas de 30 s, decoder reducido | multilingue amplio | apache-2.0 | HuggingFace, `transformers` |
+| BSC-LT/whisper-large-v3-LoS-punctuated | 1.550 M (heredado del base) | ventanas de 30 s por segmento (base) | ca, es, gl, eu | apache-2.0 | Hugging Face, `transformers` |
+| openai/whisper-large-v3 (base) | 1.550 M | ventanas de 30 s | multilingue amplio (incluye ca, es, gl, eu) | apache-2.0 | Hugging Face, `transformers` |
+| projecte-aina/whisper-large-v3-ca-3catparla | 1.550 M (heredado del base) | ventanas de 30 s | ca (principalmente) | no disponible en la informacion proporcionada | Hugging Face, referenciado en la model card |
+| openai/whisper-large-v3-turbo | 809 M | ventanas de 30 s, decoder reducido | multilingue amplio | apache-2.0 | Hugging Face, `transformers` |
 
 El modelo se posiciona como alternativa multilingue peninsular frente al large-v3 original (mas generico, sin ajuste a dominios institucionales) y frente al ajuste solo-catalan de Projecte AINA. La comparativa de rendimiento cuantitativo no esta disponible porque el autor no publica WER.
 
@@ -82,14 +82,14 @@ El modelo se posiciona como alternativa multilingue peninsular frente al large-v
 - La model card incluye una linea comentada "Test Result: 0.96" sin especificar metrica ni conjunto de evaluacion; no debe interpretarse como WER verificado.
 - No se dispone de informacion demografica de los hablantes de los corpus de entrenamiento, por lo que pueden existir sesgos de edad, genero, acento o procedencia.
 - Sesgo potencial hacia contenido institucional (parlamentos, cortes, medios publicos), que puede degradar el rendimiento en registros coloquiales, ruido de fondo o audio telefonico.
-- Los metadatos de HuggingFace declaran unicamente `ca`, mientras que la model card declara cuatro lenguas; conviene validar el rendimiento real en castellano, gallego y euskera.
+- Los metadatos de Hugging Face declaran unicamente `ca`, mientras que la model card declara cuatro lenguas; conviene validar el rendimiento real en castellano, gallego y euskera.
 - La normalizacion y la puntuacion de referencia forman parte del objetivo de entrenamiento, de modo que la salida puede diferir en estilo de la transcripcion literal palabra a palabra.
 - Licencia Apache 2.0: permite uso comercial y modificacion con atribucion; no se documentan restricciones adicionales, pero el uso de los corpus subyacentes (algunos no anonimizados y no publicos) debe revisarse por separado.
 - En produccion, la ventana de 30 s por segmento implica gestionar el troceado y la reconciliacion de segmentos para audios largos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BSC-LT/whisper-large-v3-LoS-punctuated
+- Modelo en Hugging Face: https://huggingface.co/BSC-LT/whisper-large-v3-LoS-punctuated
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Notebook de ejemplo: https://colab.research.google.com/drive/1MHiPrffNTwiyWeUyMQvSdSbfkef_8aJC?usp=sharing
 - Dataset 3CatParla: https://huggingface.co/datasets/projecte-aina/3catparla_asr

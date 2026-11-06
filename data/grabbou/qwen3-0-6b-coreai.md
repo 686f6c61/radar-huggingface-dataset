@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grabbou/qwen3-0.6b-CoreAI | 0,6 B | 4096 (estático) | Core AI (`.aimodel`), iOS 27 | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B | 0,6 B | no disponible en esta ficha | safetensors (modelo base) | Apache-2.0 | HuggingFace (modelo original) |
-| mlboydaisuke/qwen3-0.6b-CoreAI-official | 0,6 B | 4096 (estático) | Core AI (`.aimodel`), iOS 27 | Apache-2.0 | HuggingFace (exportación de referencia) |
+| grabbou/qwen3-0.6b-CoreAI | 0,6 B | 4096 (estático) | Core AI (`.aimodel`), iOS 27 | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B | 0,6 B | no disponible en esta ficha | safetensors (modelo base) | Apache-2.0 | Hugging Face (modelo original) |
+| mlboydaisuke/qwen3-0.6b-CoreAI-official | 0,6 B | 4096 (estático) | Core AI (`.aimodel`), iOS 27 | Apache-2.0 | Hugging Face (exportación de referencia) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grabbou/qwen3-0.6b-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/grabbou/qwen3-0.6b-CoreAI
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Exportación de referencia: https://huggingface.co/mlboydaisuke/qwen3-0.6b-CoreAI-official
 - Repositorio apple/coreai-models: https://github.com/apple/coreai-models

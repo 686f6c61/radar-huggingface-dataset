@@ -73,9 +73,9 @@ El autor indica 18/18 salidas válidas y ningún error de petición, y que la pu
 
 | Modelo | Parametros | Contexto | Rendimiento Ender's Bench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ender1.3 | LoRA r16 sobre Qwen3.8-27B | no disponible | 17/18 | Apache-2.0 | HuggingFace (adaptador) |
-| ender1.1 | LoRA sobre Qwen3.8-27B | no disponible | 16/18 | Apache-2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | barra base en la suite, valor no detallado en la información | Apache-2.0 | HuggingFace |
+| ender1.3 | LoRA r16 sobre Qwen3.8-27B | no disponible | 17/18 | Apache-2.0 | Hugging Face (adaptador) |
+| ender1.1 | LoRA sobre Qwen3.8-27B | no disponible | 16/18 | Apache-2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | barra base en la suite, valor no detallado en la información | Apache-2.0 | Hugging Face |
 
 No se dispone de comparación con alternativas de la misma categoría (adaptadores de alineamiento de agentes) en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de comparación con alternativas de la misma categoría (adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beanyzoldyck/ender1.3
+- Modelo en Hugging Face: https://huggingface.co/beanyzoldyck/ender1.3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Colección de la familia ender: https://huggingface.co/collections/beanyzoldyck/ender-family-6adf0636518ed2be2dacdb8a
 - ender1: https://huggingface.co/beanyzoldyck/ender1

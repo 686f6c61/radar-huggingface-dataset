@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Rin247/Qwen3-8B-Uncensored-Aquarion-INT8)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Rin247/Qwen3-8B-Uncensored-Aquarion-INT8)
 - [Modelo base Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)
 - [Versión abliterada de huihui-ai](https://huggingface.co/huihui-ai/Qwen3-8B-abliterated)
 - [Blog sobre abliteración de Qwen3.8-27B (referencia técnica)](https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-fp8)

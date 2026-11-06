@@ -18,7 +18,7 @@ Conviene subir la ficha con cautela: el modelo se publicó en octubre de 2026, a
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | GGUF Q4_K_M (unica cuantizacion publicada en este repositorio) |
 | Idiomas soportados | Frances e ingles, ademas de capacidades multilingues segun el autor |
-| Licencia | No declarada en el repositorio de HuggingFace; debe verificarse la del modelo base |
+| Licencia | No declarada en el repositorio de Hugging Face; debe verificarse la del modelo base |
 | Formato de pesos | GGUF (Q4_K_M); no se incluyen safetensors en este repositorio |
 | Tamano del repositorio | 3,2 GB |
 | Modelo base | mistralai/Ministral-3-3B-Instruct-2512 (referenciado en la model card) |
@@ -92,9 +92,9 @@ Los datos de la comparativa que no aparecen en la informacion proporcionada se h
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Java-dmd/Ministral-3-3B-Instruct-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Java-dmd/Ministral-3-3B-Instruct-GGUF
 - Modelo base referenciado en la model card: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
-- Especificacion de model cards de HuggingFace: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
-- Guia de model cards de HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Especificacion de model cards de Hugging Face: https://github.com/huggingface/hub-docs/blob/main/modelcard.md
+- Guia de model cards de Hugging Face: https://huggingface.co/docs/hub/model-cards
 - Unsloth Studio (herramienta de ajuste mencionada por el autor): no se ha encontrado un enlace especifico en la informacion proporcionada
 - Resultados de la busqueda web: no relevantes para este modelo. Todas las entradas devueltas corresponden al lenguaje de programacion Java y no guardan relacion con Ministral ni con este repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parasect es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la model card del repositorio no contiene más que la declaración de licencia: no hay descripción del modelo, arquitectura declarada, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
+Parasect es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la model card del repositorio no contiene más que la declaración de licencia: no hay descripción del modelo, arquitectura declarada, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
 
 El repositorio ocupa 0,1 GB y acumula 0 descargas y 0 likes desde su creación el 27 de septiembre de 2026, con última actualización el mismo día. El campo `pipeline` no está declarado y no se especifican idiomas soportados, por lo que no es posible confirmar siquiera que se trate de un modelo de generación de texto.
 
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Parasect
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Parasect
 - Otros repositorios del mismo autor (sin relación técnica documentada): https://huggingface.co/Ryanham1lton/Patrat y https://huggingface.co/Ryanham1lton/GolemMH
 
 Nota: las búsquedas web realizadas no han devuelto ninguna página, paper, blog, repositorio o demo referida a este modelo. Los resultados obtenidos (https://www.parasail.io/, https://github.com/BTheDragonMaster/parasect, https://torwiki.org/learn/darknet-ai/) corresponden a proyectos homónimos o temáticamente próximos sin vinculación con Ryanham1lton/Parasect.

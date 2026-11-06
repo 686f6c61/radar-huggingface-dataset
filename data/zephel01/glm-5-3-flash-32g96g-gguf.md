@@ -85,6 +85,6 @@ No se dispone de datos suficientes para comparar parámetros, contexto ni rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zephel01/GLM-5.3-Flash-32G96G-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zephel01/GLM-5.3-Flash-32G96G-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Herramienta de evaluación Abyss: https://github.com/zephel01/Abyss

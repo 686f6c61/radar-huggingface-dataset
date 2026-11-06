@@ -66,7 +66,7 @@ No disponible. No se dispone de información sobre modelos comparables en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jc-builds/LFM2.5-1.2B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jc-builds/LFM2.5-1.2B-Instruct-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Licencia: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE
 - llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado para resolver el entorno Pixelcopter-PLE-v0, un juego de control 2D incluido en la suite PLE (PyGame Learning Environment). El modelo lo publica el usuario habeebllah77 en HuggingFace y es un ejercicio derivado de la unidad 4 del curso Deep Reinforcement Learning Course de HuggingFace, dedicada a los metodos de gradiente de politica (policy gradient) y, en concreto, al algoritmo REINFORCE.
+Reinforce-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo entrenado para resolver el entorno Pixelcopter-PLE-v0, un juego de control 2D incluido en la suite PLE (PyGame Learning Environment). El modelo lo publica el usuario habeebllah77 en Hugging Face y es un ejercicio derivado de la unidad 4 del curso Deep Reinforcement Learning Course de Hugging Face, dedicada a los metodos de gradiente de politica (policy gradient) y, en concreto, al algoritmo REINFORCE.
 
 No se trata de un modelo de lenguaje ni de un modelo de proposito general: es una politica entrenada especificamente para una tarea de control, con un espacio de observacion y accion definido por el entorno Pixelcopter. El repositorio tiene un tamano declarado de 0.0 GB, 0 descargas y 0 likes, y la model card no incluye informacion sobre arquitectura de red, numero de parametros, hiperparametros de entrenamiento ni licencia de uso.
 
@@ -23,7 +23,7 @@ Su relevancia es por tanto exclusivamente educativa y de referencia: sirve como 
 
 ## Arquitectura y entrenamiento
 
-La unica informacion tecnica disponible es que se trata de un agente **Reinforce** entrenado sobre **Pixelcopter-PLE-v0**, etiquetado en HuggingFace como `reinforcement-learning`, `custom-implementation` y con la pipeline `reinforcement-learning`. La etiqueta `deep-rl-class` indica que sigue la plantilla de la unidad 4 del Deep Reinforcement Learning Course, cuyo flujo de trabajo tipico consiste en una red de politica propia, entrenamiento episodico con retornos descontados normalizados y registro de resultados en Weights & Biases.
+La unica informacion tecnica disponible es que se trata de un agente **Reinforce** entrenado sobre **Pixelcopter-PLE-v0**, etiquetado en Hugging Face como `reinforcement-learning`, `custom-implementation` y con la pipeline `reinforcement-learning`. La etiqueta `deep-rl-class` indica que sigue la plantilla de la unidad 4 del Deep Reinforcement Learning Course, cuyo flujo de trabajo tipico consiste en una red de politica propia, entrenamiento episodico con retornos descontados normalizados y registro de resultados en Weights & Biases.
 
 No hay datos publicados sobre el numero de episodios de entrenamiento, la tasa de aprendizaje, el factor de descuento, el tamano de la red (capas y unidades) ni el metodo de seleccion de acciones. Tampoco se documenta el uso de tecnicas adicionales como baseline con funcion de valor, entropia bonus o normalizacion de ventajas, habituales para estabilizar REINFORCE. La model card unicamente remite a la unidad 4 del curso para aprender a usar y entrenar el modelo.
 
@@ -48,7 +48,7 @@ No hay datos publicados sobre el numero de episodios de entrenamiento, la tasa d
 
 ## Benchmarks y rendimiento
 
-Resultado declarado por el autor en el model-index de la model card, **no verificado** por HuggingFace:
+Resultado declarado por el autor en el model-index de la model card, **no verificado** por Hugging Face:
 
 | Tarea | Entorno | Metrica | Valor |
 |---|---|---|---|
@@ -81,6 +81,6 @@ No disponible. No se han proporcionado datos de parametros, contexto, licencia n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/habeebllah77/Reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/habeebllah77/Reinforce-Pixelcopter-PLE-v0
 - Unidad 4 del Deep Reinforcement Learning Course (introduccion a policy gradient y al uso del modelo): https://huggingface.co/deep-rl-course/unit4/introduction
 - Nota sobre la busqueda web: los resultados obtenidos no contienen informacion relevante sobre el modelo; corresponden a catalogos de producto de Master Italy y EGA Master, sin relacion con aprendizaje por refuerzo. No se han encontrado papers, repositorios ni demos adicionales asociados a este modelo.

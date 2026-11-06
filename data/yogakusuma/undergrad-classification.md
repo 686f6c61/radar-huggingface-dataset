@@ -2,7 +2,7 @@
 
 ## Resumen
 
-undergrad-classification es un prototipo de investigacion publicado en HuggingFace por el usuario yogakusuma. Se presenta como una implementacion de arquitectura Mixer orientada a tareas de clasificacion, en una configuracion etiquetada como "large" dentro de la propia model card. No es un modelo entrenado ni evaluado: el autor indica explicitamente que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+undergrad-classification es un prototipo de investigacion publicado en Hugging Face por el usuario yogakusuma. Se presenta como una implementacion de arquitectura Mixer orientada a tareas de clasificacion, en una configuracion etiquetada como "large" dentro de la propia model card. No es un modelo entrenado ni evaluado: el autor indica explicitamente que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 El repositorio contiene el codigo de la implementacion (`predict.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos en formato safetensors. El recuento real de parametros de esos pesos es de 24.832, una cifra extremadamente baja que contrasta con la etiqueta "large" de la model card; esta discrepancia es un dato relevante a la hora de evaluar el artefacto.
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. `
 - Comparativa de arquitecturas tipo Mixer: sirve como punto de partida para medir una implementacion propia con atencion de ventana deslizante y fusion con compuertas frente a alternativas de capacidad equivalente.
 - Docencia de arquitecturas sin atencion: sus 24.832 parametros permiten inspeccionar el grafo completo, imprimir formas de tensores y explicar como funciona la mezcla por canales en un portatil, sin GPU.
 - Validacion de pipelines de datos de clasificacion: como el modelo es trivial de ejecutar, se puede usar para comprobar el formato de etiquetas, el preprocesado y el calculo de metricas antes de escalar a modelos mayores.
-- Pruebas de serializacion y formatos: util para verificar flujos de carga y guardado de safetensors, versionado de checkpoints y compatibilidad con utilidades de HuggingFace en un caso minimo.
+- Pruebas de serializacion y formatos: util para verificar flujos de carga y guardado de safetensors, versionado de checkpoints y compatibilidad con utilidades de Hugging Face en un caso minimo.
 - Base para un futuro checkpoint entrenado: si el autor publica pesos entrenados, el codigo y la configuracion aqui incluidos pueden reutilizarse para documentar el nuevo resultado de forma separada.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 - El checkpoint no ha sido entrenado. No produce resultados utiles en ninguna tarea de clasificacion.
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun la propia model card.
-- La implementacion es experimental y no sigue una interfaz estandar de HuggingFace; las APIs genericas de carga automatica necesitan un adaptador explicito.
+- La implementacion es experimental y no sigue una interfaz estandar de Hugging Face; las APIs genericas de carga automatica necesitan un adaptador explicito.
 - Discrepancia de documentacion: la model card declara escala "large" mientras que el safetensors contiene 24.832 parametros. Hay que tratar la etiqueta de escala con cautela.
 - No hay informacion sobre sesgos, porque no hay entrenamiento ni dataset documentado.
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que es un modelo de clasificacion sin entrenar; el riesgo real es interpretar mal sus salidas aleatorias como predicciones validas.
@@ -79,5 +79,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yogakusuma/undergrad-classification
+- Repositorio en Hugging Face: https://huggingface.co/yogakusuma/undergrad-classification
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a YouTube Music y no guardan relacion con el artefacto. No se dispone de paper, blog, repositorio adicional ni demo.

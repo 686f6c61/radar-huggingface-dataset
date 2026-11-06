@@ -83,7 +83,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zyrabit-IA/zyra-agent-sentinel-Q5_K_M
+- Modelo en Hugging Face: https://huggingface.co/Zyrabit-IA/zyra-agent-sentinel-Q5_K_M
 - Zyrabit GitHub: https://github.com/Zyrabit-tech
 - Documentación de Zyrabit SLM: https://docs.zyrabit.com/docs/
 - Página principal de Zyrabit: https://www.zyrabit.com/

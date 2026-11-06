@@ -91,7 +91,7 @@ La ventaja principal de este checkpoint frente a las alternativas es la combinac
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/philbert440/Qwen3.8-27B-NVFP4
+- Repositorio Hugging Face del modelo: https://huggingface.co/philbert440/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio 1Cat-vLLM: https://github.com/1CatAI/1Cat-vLLM (PRs #228 y #230 mencionados en la model card)
 - Repositorio 1Cat-vLLM alternativo citado por el autor: https://github.com/rivetphilbot/1Cat-vLLM

@@ -81,8 +81,8 @@ En el escenario de edición, la imagen de referencia es de 1024×1024 y la entra
 
 | Modelo | Parámetros | Contexto | Formato | VRAM en generación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `tonera/flux-3-image-klein-pup-nunchaku` (esta ficha) | 9,41 B | No disponible | safetensors INT4 W4A16 | ~7 GiB | Apache 2.0 | HuggingFace, ComfyUI, API OpenAI-compatible |
-| `black-forest-labs/flux-3-image-klein-pup` (BF16) | 9,41 B | No disponible | safetensors BF16 | ~17,8 GiB | No disponible en la información | HuggingFace |
+| `tonera/flux-3-image-klein-pup-nunchaku` (esta ficha) | 9,41 B | No disponible | safetensors INT4 W4A16 | ~7 GiB | Apache 2.0 | Hugging Face, ComfyUI, API OpenAI-compatible |
+| `black-forest-labs/flux-3-image-klein-pup` (BF16) | 9,41 B | No disponible | safetensors BF16 | ~17,8 GiB | No disponible en la información | Hugging Face |
 | Alternativas genéricas de *prompt upsampling* con LLM | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa más relevante es contra el modelo base en BF16: misma arquitectura y mismos parámetros, pero con 3,5-3,6× menos tiempo por token y un 60 % menos de VRAM. No se dispone de datos de otros *upsamplers* comparables en la información proporcionada.
@@ -102,7 +102,7 @@ La comparación directa más relevante es contra el modelo base en BF16: misma a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonera/flux-3-image-klein-pup-nunchaku
+- Repositorio Hugging Face: https://huggingface.co/tonera/flux-3-image-klein-pup-nunchaku
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup
 - Modelo de imagen FLUX 3 Klein cuantizado: https://huggingface.co/tonera/flux-3-image-klein-nunchaku
 - Ruedas precompiladas de Nunchaku: https://huggingface.co/tonera/vitoom-nunchaku

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gatilin/nld-uni-image-tokenizer",
+  "slug": "gatilin-nld-uni-image-tokenizer",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/nld-uni-image-tokenizer",
+  "created_at": "2026-11-06T02:17:57.000Z",
+  "updated_at": "2026-11-06T02:29:36.000Z",
+  "license": "nvidia-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "nlduni",
+    "visual-tokenizer",
+    "vector-quantization",
+    "image-generation",
+    "custom_code",
+    "base_model:nvidia/NLD-Uni",
+    "base_model:finetune:nvidia/NLD-Uni",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 455336963,
+  "parameters_human": "455.3M",
+  "storage_bytes": 910738926,
+  "storage_human": "911 MB",
+  "base_model": "nvidia/NLD-Uni",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gatilin/nld-uni-image-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/gatilin/nld-uni-image-tokenizer",
+      "snippet": "Machine learning model with 0.5B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

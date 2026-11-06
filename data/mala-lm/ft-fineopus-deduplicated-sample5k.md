@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MaLA-LM/FT-FineOPUS-Deduplicated-sample5k` es un ajuste fino publicado por la organización MaLA-LM en HuggingFace. La información disponible es extremadamente limitada: únicamente se indica que la licencia es MIT y que la etiqueta regional es "us". No se proporciona ninguna descripción técnica, arquitectura, tamaño, ni detalles de entrenamiento en la model card. El nombre sugiere que podría ser un fine-tuning sobre un conjunto de datos llamado "FineOPUS-Deduplicated-sample5k", pero no hay documentación que confirme su propósito o características.
+El modelo `MaLA-LM/FT-FineOPUS-Deduplicated-sample5k` es un ajuste fino publicado por la organización MaLA-LM en Hugging Face. La información disponible es extremadamente limitada: únicamente se indica que la licencia es MIT y que la etiqueta regional es "us". No se proporciona ninguna descripción técnica, arquitectura, tamaño, ni detalles de entrenamiento en la model card. El nombre sugiere que podría ser un fine-tuning sobre un conjunto de datos llamado "FineOPUS-Deduplicated-sample5k", pero no hay documentación que confirme su propósito o características.
 
 Dado que el modelo no tiene descargas ni likes y su ficha está vacía, se trata probablemente de un artefacto experimental o un repositorio en fase muy temprana. Cualquier evaluación técnica rigurosa resulta imposible con los datos públicos disponibles.
 
@@ -52,6 +52,6 @@ No disponible. No se puede establecer una comparación con otros modelos sin con
 
 ## Enlaces
 
-- [HuggingFace - MaLA-LM/FT-FineOPUS-Deduplicated-sample5k](https://huggingface.co/MaLA-LM/FT-FineOPUS-Deduplicated-sample5k)
+- [Hugging Face - MaLA-LM/FT-FineOPUS-Deduplicated-sample5k](https://huggingface.co/MaLA-LM/FT-FineOPUS-Deduplicated-sample5k)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios) asociados a este modelo.

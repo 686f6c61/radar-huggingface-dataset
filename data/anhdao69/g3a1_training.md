@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de licencia de las alternativas en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anhdao69/g3a1_training
+- Repositorio en Hugging Face: https://huggingface.co/anhdao69/g3a1_training
 - Modelo base Qwen3.5-4B (ruta de caché del autor `models--Qwen--Qwen3.5-4B`, revisión `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`): https://huggingface.co/Qwen/Qwen3.5-4B
 - Profesor VGGT-Omega (acceso restringido): https://huggingface.co/facebook/VGGT-Omega
 - Código de entrenamiento: no disponible en línea; incluido en el repo como `source/SimpleMemVLN-g3a1-877815e.tar.gz` y `source/c2_vggt_omega_g3_a1.bundle`

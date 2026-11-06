@@ -68,7 +68,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SQuID-DINOv3-Mask2Former | 56,6 M (adaptador y cabeza) + backbone ViT-L/16 | no aplica | 57,6% mIoU en EarthVQA val | DINOv3 License | HuggingFace (adaptador) + backbone restringido |
+| SQuID-DINOv3-Mask2Former | 56,6 M (adaptador y cabeza) + backbone ViT-L/16 | no aplica | 57,6% mIoU en EarthVQA val | DINOv3 License | Hugging Face (adaptador) + backbone restringido |
 | ConvNeXt-UNet (servidor QASR-C) | no disponible | no aplica | no disponible | no liberado | no disponible (no publicado) |
 | Otros segmentadores sobre EarthVQA | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de datos comparativos con otros s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PeterAM4/SQuID-DINOv3-Mask2Former
+- Modelo en Hugging Face: https://huggingface.co/PeterAM4/SQuID-DINOv3-Mask2Former
 - Repositorio GitHub de SQuID: https://github.com/PeterAMassih/SQuID
 - Backbone DINOv3 SAT-493M: https://huggingface.co/facebook/dinov3-vitl16-pretrain-sat493m
 - Paper SQuID (arXiv:2601.13401): https://arxiv.org/abs/2601.13401

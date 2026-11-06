@@ -85,12 +85,12 @@ No se pueden extraer conclusiones cuantitativas sin los valores de benchmark com
 - La longitud de contexto de 262K tokens puede degradar el rendimiento en tareas que requieran recuperación precisa de información muy distante; se recomienda validar en casos de uso reales.
 - El soporte multilingüe no está documentado explícitamente; aunque la familia Qwen suele cubrir múltiples idiomas, no se garantiza la calidad en todos ellos.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo puede tener limitaciones en cuanto a responsabilidad legal por su uso en aplicaciones de alto riesgo (no se especifica).
-- El repositorio de HuggingFace citado (TheCodeHere/Qwen3.8-27B) parece ser un mirror no oficial; se recomienda utilizar el repositorio original de Qwen para producción.
+- El repositorio de Hugging Face citado (TheCodeHere/Qwen3.8-27B) parece ser un mirror no oficial; se recomienda utilizar el repositorio original de Qwen para producción.
 - No se dispone de información sobre el proceso de alineación (RLHF/DPO) ni sobre la composición del dataset de entrenamiento, lo que dificulta evaluar su comportamiento en dominios sensibles.
 
 ## Enlaces
 
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio espejo citado en la información: https://huggingface.co/TheCodeHere/Qwen3.8-27B
 - Repositorio de GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía para principiantes en Dev.to: https://dev.to/aimodels-fyi/a-beginners-guide-to-the-qwen38-27b-model-by-qwen-on-huggingface-11j9

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial desarrollado por el usuario afdasfasdd y publicado en HuggingFace bajo el identificador `afdasfasdd/MyAwesomeModel-TestRepo`. Según la documentación del autor, se trata de una versión mejorada de un modelo anterior que ha incrementado su profundidad de razonamiento y sus capacidades de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo está orientado a tareas de razonamiento, matemáticas, programación y lógica, y el autor afirma que su rendimiento se acerca al de otros modelos líderes.
+MyAwesomeModel es un modelo de inteligencia artificial desarrollado por el usuario afdasfasdd y publicado en Hugging Face bajo el identificador `afdasfasdd/MyAwesomeModel-TestRepo`. Según la documentación del autor, se trata de una versión mejorada de un modelo anterior que ha incrementado su profundidad de razonamiento y sus capacidades de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo está orientado a tareas de razonamiento, matemáticas, programación y lógica, y el autor afirma que su rendimiento se acerca al de otros modelos líderes.
 
-La model card indica que esta versión ofrece una reducción de la tasa de alucinación y un soporte mejorado para function calling. Además, se menciona una variante llamada MyAwesomeModel-Small, cuya arquitectura es idéntica al modelo base, aunque no se proporcionan más especificaciones. El repositorio de HuggingFace está vacío (tamaño 0,0 GB), por lo que no contiene los pesos del modelo. No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados.
+La model card indica que esta versión ofrece una reducción de la tasa de alucinación y un soporte mejorado para function calling. Además, se menciona una variante llamada MyAwesomeModel-Small, cuya arquitectura es idéntica al modelo base, aunque no se proporcionan más especificaciones. El repositorio de Hugging Face está vacío (tamaño 0,0 GB), por lo que no contiene los pesos del modelo. No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La model card indica que esta versión ofrece una reducción de la tasa de aluci
 
 ## Arquitectura y entrenamiento
 
-La documentación disponible no especifica la arquitectura del modelo. Los metadatos de HuggingFace incluyen las etiquetas `bert`, `pytorch` y `transformers`, pero la model card describe un modelo con capacidades de razonamiento profundo y function calling, lo que sugiere que podría tratarse de un modelo de tipo decoder, aunque no se puede confirmar sin más información.
+La documentación disponible no especifica la arquitectura del modelo. Los metadatos de Hugging Face incluyen las etiquetas `bert`, `pytorch` y `transformers`, pero la model card describe un modelo con capacidades de razonamiento profundo y function calling, lo que sugiere que podría tratarse de un modelo de tipo decoder, aunque no se puede confirmar sin más información.
 
 El autor indica que la versión actual ha sido mejorada mediante "mecanismos de optimización algorítmica durante el post-entrenamiento" y un mayor uso de recursos computacionales. No se proporcionan detalles sobre los datos de entrenamiento, el número de tokens, la composición del dataset ni si se ha utilizado RLHF o DPO. Tampoco se especifica la longitud de contexto ni el tamaño del modelo.
 
@@ -74,7 +74,7 @@ Además, el autor reporta una mejora en la prueba AIME 2025: la precisión ha au
 
 ## Requisitos de hardware
 
-No disponible. El repositorio de HuggingFace está vacío y el autor no especifica requisitos de hardware. No se puede estimar la VRAM necesaria, las GPU recomendadas ni las opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.). Tampoco se dispone de datos sobre latencia o throughput.
+No disponible. El repositorio de Hugging Face está vacío y el autor no especifica requisitos de hardware. No se puede estimar la VRAM necesaria, las GPU recomendadas ni las opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.). Tampoco se dispone de datos sobre latencia o throughput.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No disponible. La documentación no identifica los modelos de referencia (Model1
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (tamaño 0,0 GB), por lo que no contiene los pesos del modelo. No se puede descargar ni ejecutar.
+- El repositorio de Hugging Face está vacío (tamaño 0,0 GB), por lo que no contiene los pesos del modelo. No se puede descargar ni ejecutar.
 - Los resultados de rendimiento provienen de la model card del autor y no han sido verificados de forma independiente.
 - Los idiomas soportados no están especificados, lo que limita la evaluación de su uso multilingüe.
 - La model card menciona una reducción de la tasa de alucinación, pero no proporciona datos cuantitativos sobre la tasa residual.
@@ -91,5 +91,5 @@ No disponible. La documentación no identifica los modelos de referencia (Model1
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afdasfasdd/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/afdasfasdd/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi05-openarm-rh56f1-egomimic-baseline-qstate-20k` es una política robótica visión-lenguaje-acción (VLA) publicada por el usuario RyanL22 en HuggingFace, obtenida por ajuste fino del modelo base `lerobot/pi05_base` (familia pi0.5) con la librería LeRobot. Cuenta con 4.143.404.816 parámetros (~4,14 mil millones) en safetensors y un repositorio de 9,4 GB, y está especializada en manipulación sobre el robot OpenArm con manos RH56F1.
+`pi05-openarm-rh56f1-egomimic-baseline-qstate-20k` es una política robótica visión-lenguaje-acción (VLA) publicada por el usuario RyanL22 en Hugging Face, obtenida por ajuste fino del modelo base `lerobot/pi05_base` (familia pi0.5) con la librería LeRobot. Cuenta con 4.143.404.816 parámetros (~4,14 mil millones) en safetensors y un repositorio de 9,4 GB, y está especializada en manipulación sobre el robot OpenArm con manos RH56F1.
 
 El modelo no es un LLM conversacional: es un controlador que traduce observaciones (imagen estéreo de 288x512 a 20 fps más un vector de estado propioceptivo de 28 dimensiones) en 28 dimensiones de acción, condicionado por una cadena de texto que identifica la tarea. Se entrenó durante 20.000 pasos con batch global de 64 sobre 16 tareas: 4 de teleoperación a 20 Hz y 12 procedentes de vídeo humano (anyh2r), siguiendo el estilo EgoMimic.
 
@@ -81,9 +81,9 @@ Como diagnósticos declarados por el autor (no comparables con benchmarks están
 
 | Modelo | Parámetros | Tipo | Contexto / observación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`RyanL22/pi05-openarm-rh56f1-egomimic-baseline-qstate-20k`) | 4,14 mil millones | VLA fine-tune sobre pi0.5 | Imagen estéreo 288x512 a 20 fps y estado/acción de 28 dimensiones | apache-2.0 | HuggingFace, 0 descargas y 0 "likes" en el momento de la consulta |
-| `lerobot/pi05_base` | No disponible | VLA base de pi0.5 | No disponible | No disponible | HuggingFace |
-| `RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k` | No disponible | Versión anterior del mismo ajuste | Mismas imágenes y mismas tareas | apache-2.0 declarado en la model card citada | HuggingFace |
+| Este modelo (`RyanL22/pi05-openarm-rh56f1-egomimic-baseline-qstate-20k`) | 4,14 mil millones | VLA fine-tune sobre pi0.5 | Imagen estéreo 288x512 a 20 fps y estado/acción de 28 dimensiones | apache-2.0 | Hugging Face, 0 descargas y 0 "likes" en el momento de la consulta |
+| `lerobot/pi05_base` | No disponible | VLA base de pi0.5 | No disponible | No disponible | Hugging Face |
+| `RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k` | No disponible | Versión anterior del mismo ajuste | Mismas imágenes y mismas tareas | apache-2.0 declarado en la model card citada | Hugging Face |
 | Otros VLA de la misma categoría (por ejemplo OpenVLA o variantes de pi0) | No disponible | VLA | No disponible | No disponible | No se han encontrado datos en la información proporcionada |
 
 La búsqueda web realizada no devolvió información técnica sobre modelos comparables: los únicos resultados obtenidos corresponden a páginas de ChatGPT y OpenAI, sin relación con robótica ni con pi0.5.
@@ -103,7 +103,7 @@ La búsqueda web realizada no devolvió información técnica sobre modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-openarm-rh56f1-egomimic-baseline-qstate-20k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-openarm-rh56f1-egomimic-baseline-qstate-20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Versión anterior citada en la model card: https://huggingface.co/RyanL22/pi05-openarm-rh56f1-egomimic-baseline-20k
 - Perfil del autor: https://huggingface.co/RyanL22

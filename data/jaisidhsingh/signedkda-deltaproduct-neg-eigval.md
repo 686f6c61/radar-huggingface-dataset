@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **SignedKDA-deltaproduct-neg-eigval** es una implementación personalizada de una RNN lineal basada en la arquitectura DeltaProduct, publicada en HuggingFace por el investigador Jaisidh Singh. DeltaProduct es una familia de modelos que sustituye la atención por una matriz de transición de estado aprendida mediante transformaciones de Householder, lo que permite un entrenamiento eficiente y una inferencia lineal en el tiempo, mejorando el estado de tracking frente a alternativas como Mamba o GLA. Este checkpoint concreto, de 342 millones de parámetros, incorpora un mecanismo de gating (gated_deltaproduct) y está entrenado con valores propios negativos en la matriz de transición, lo que en los estudios de DeltaProduct se asocia con una mejor capacidad de seguimiento de estados a lo largo de secuencias largas.
+El modelo **SignedKDA-deltaproduct-neg-eigval** es una implementación personalizada de una RNN lineal basada en la arquitectura DeltaProduct, publicada en Hugging Face por el investigador Jaisidh Singh. DeltaProduct es una familia de modelos que sustituye la atención por una matriz de transición de estado aprendida mediante transformaciones de Householder, lo que permite un entrenamiento eficiente y una inferencia lineal en el tiempo, mejorando el estado de tracking frente a alternativas como Mamba o GLA. Este checkpoint concreto, de 342 millones de parámetros, incorpora un mecanismo de gating (gated_deltaproduct) y está entrenado con valores propios negativos en la matriz de transición, lo que en los estudios de DeltaProduct se asocia con una mejor capacidad de seguimiento de estados a lo largo de secuencias largas.
 
 La relevancia actual de este modelo radica en la búsqueda de alternativas a los Transformers para procesamiento de secuencias con requisitos de memoria reducidos. Aunque el repositorio no incluye documentación detallada, la arquitectura subyacente está respaldada por el artículo "DeltaProduct: Improving State-Tracking in Linear RNNs via Householder Transformations" (arXiv:2502.10297) y por la implementación de referencia en el repositorio automl/DeltaProduct. El modelo se distribuye en formato safetensors y no se especifica licencia ni idiomas soportados.
 
@@ -23,7 +23,7 @@ La relevancia actual de este modelo radica en la búsqueda de alternativas a los
 
 La arquitectura se basa en DeltaProduct, una RNN lineal que reemplaza la atención por una matriz de transición de estado parametrizada mediante transformaciones de Householder. Esta parametrización permite un equilibrio entre expresividad y eficiencia: la matriz de transición es capaz de representar relaciones complejas entre estados a la vez que se evita el coste cuadrático de la atención. El checkpoint incluye un mecanismo de gating adicional, como en el modelo `msj19/gated_deltaproduct`, que introduce una puerta para controlar el flujo de información a lo largo del tiempo. El nombre "neg-eigval" sugiere que los valores propios de la matriz de transición se han inicializado o restringido a valores negativos, una práctica que en el paper de DeltaProduct se muestra para mejorar el seguimiento de estados en tareas de razonamiento secuencial.
 
-No se dispone de información sobre el conjunto de datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineamiento (RLHF, DPO). El autor no ha publicado una model card en el repositorio de HuggingFace.
+No se dispone de información sobre el conjunto de datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineamiento (RLHF, DPO). El autor no ha publicado una model card en el repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -80,7 +80,7 @@ La comparación es limitada porque no hay datos de rendimiento públicos para es
 
 ## Enlaces
 
-- HuggingFace: [jaisidhsingh/SignedKDA-deltaproduct-neg-eigval](https://huggingface.co/jaisidhsingh/SignedKDA-deltaproduct-neg-eigval)
+- Hugging Face: [jaisidhsingh/SignedKDA-deltaproduct-neg-eigval](https://huggingface.co/jaisidhsingh/SignedKDA-deltaproduct-neg-eigval)
 - GitHub del autor: [jaisidhsingh](https://github.com/jaisidhsingh/)
 - Paper de DeltaProduct: [arXiv:2502.10297](https://arxiv.org/abs/2502.10297)
 - Repositorio oficial de DeltaProduct: [automl/DeltaProduct](https://github.com/automl/DeltaProduct)

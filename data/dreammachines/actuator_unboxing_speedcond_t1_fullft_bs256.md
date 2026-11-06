@@ -84,8 +84,8 @@ Los datos comparativos no están disponibles en la información proporcionada; s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `DreamMachines/actuator_unboxing_speedcond_t1_fullft_bs256` | 3,35 mil millones | No disponible | No disponible | safetensors en HuggingFace; 0 descargas, 0 *likes* | Ajuste fino de `lerobot/pi05_base` con token de velocidad |
-| `lerobot/pi05_base` | No disponible | No disponible | No disponible | Público en HuggingFace | Modelo base sobre el que se ajusta; sin condicionamiento de velocidad específico |
+| `DreamMachines/actuator_unboxing_speedcond_t1_fullft_bs256` | 3,35 mil millones | No disponible | No disponible | safetensors en Hugging Face; 0 descargas, 0 *likes* | Ajuste fino de `lerobot/pi05_base` con token de velocidad |
+| `lerobot/pi05_base` | No disponible | No disponible | No disponible | Público en Hugging Face | Modelo base sobre el que se ajusta; sin condicionamiento de velocidad específico |
 | Otros modelos VLA de manipulación (por ejemplo, la propia familia pi0 y alternativas abiertas del mismo segmento) | No disponible | No disponible | No disponible | No disponible | No se aportan datos comparativos en la información disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ Los datos comparativos no están disponibles en la información proporcionada; s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DreamMachines/actuator_unboxing_speedcond_t1_fullft_bs256
+- Modelo en Hugging Face: https://huggingface.co/DreamMachines/actuator_unboxing_speedcond_t1_fullft_bs256
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos corresponden a páginas turísticas e históricas sobre el Valle de los Reyes, sin relación con el modelo ni con robótica.
 - Paper, blog o repositorio adicionales: no disponibles en la información proporcionada.

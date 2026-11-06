@@ -84,6 +84,6 @@ No disponible. Al no tratarse de un modelo con arquitectura, parametros y licenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Visecall/aio-videoretouch-assets
+- Repositorio en Hugging Face: https://huggingface.co/Visecall/aio-videoretouch-assets
 - Model card: https://huggingface.co/Visecall/aio-videoretouch-assets/blob/main/README.md
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

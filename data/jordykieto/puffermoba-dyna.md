@@ -73,7 +73,7 @@ Comparativa interna del paper: la misma tubería antes del bucle Dyna alcanzó u
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| puffermoba-dyna | Políticas RL + modelo del mundo para MOBA de PufferLib | 0,66 M (modelo del mundo); políticas no disponible | no disponible | MIT | HuggingFace + GitHub |
+| puffermoba-dyna | Políticas RL + modelo del mundo para MOBA de PufferLib | 0,66 M (modelo del mundo); políticas no disponible | no disponible | MIT | Hugging Face + GitHub |
 | Política por defecto de PufferLib MOBA | Política RL de referencia del entorno | no disponible | no disponible | no disponible | Incluida en PufferLib |
 | Otros artefactos Dyna sobre PufferLib | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jordykieto/puffermoba-dyna
+- Hugging Face: https://huggingface.co/jordykieto/puffermoba-dyna
 - Paper (arXiv): https://arxiv.org/abs/2610.08033
 - Repositorio GitHub (código, protocolo de evaluación, registro de experimentos, debugger del modelo del mundo): https://github.com/JordyKieto/puffermoba-dyna
 - Banner del paper: https://raw.githubusercontent.com/JordyKieto/puffermoba-dyna/main/docs/moba/paper/media/banner.gif

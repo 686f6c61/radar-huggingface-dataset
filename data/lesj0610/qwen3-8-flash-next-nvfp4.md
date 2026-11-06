@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks para comparar directamente con alternativas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lesj0610/Qwen3.8-Flash-Next-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/lesj0610/Qwen3.8-Flash-Next-NVFP4
 - Modelo base (Qwen/Qwen3.8-Flash-Next): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Página de vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sekhcopenlu/Rank2_Projection_Subspace` es un artefacto publicado en HuggingFace por el usuario `sekhcopenlu` el 17 de septiembre de 2026 y actualizado el mismo dia. Se distribuye bajo licencia Apache 2.0 y contiene pesos en formato safetensors, con un tamano total de repositorio de 0,2 GB. En el momento de redactar esta ficha acumula 0 descargas y 0 likes.
+El repositorio `sekhcopenlu/Rank2_Projection_Subspace` es un artefacto publicado en Hugging Face por el usuario `sekhcopenlu` el 17 de septiembre de 2026 y actualizado el mismo dia. Se distribuye bajo licencia Apache 2.0 y contiene pesos en formato safetensors, con un tamano total de repositorio de 0,2 GB. En el momento de redactar esta ficha acumula 0 descargas y 0 likes.
 
 La model card publicada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia, sin explicacion de arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. Tampoco se declara pipeline de inferencia, idiomas soportados ni tipo de tarea, y la busqueda web realizada no ha devuelto ninguna fuente relacionada con el autor o con el artefacto.
 
@@ -81,6 +81,6 @@ No disponible. No se ha podido identificar la categoria del artefacto ni localiz
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sekhcopenlu/Rank2_Projection_Subspace
+- Hugging Face: https://huggingface.co/sekhcopenlu/Rank2_Projection_Subspace
 - Paper, blog, repositorio de codigo o demo: no disponible
 - La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, el autor o el artefacto; los resultados obtenidos correspondian a sitios sin relacion alguna con el tema.

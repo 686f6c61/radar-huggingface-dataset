@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EndlessChasing/Mamba2_3GB_ReCall_Recovered es un checkpoint publicado en HuggingFace por el usuario EndlessChasing bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas que el campo de licencia, sin descripcion del modelo, sin especificaciones tecnicas, sin datos de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha, lo que apunta a una publicacion de caracter experimental o de prueba mas que a un artefacto con soporte.
+EndlessChasing/Mamba2_3GB_ReCall_Recovered es un checkpoint publicado en Hugging Face por el usuario EndlessChasing bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card del repositorio no contiene mas que el campo de licencia, sin descripcion del modelo, sin especificaciones tecnicas, sin datos de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha, lo que apunta a una publicacion de caracter experimental o de prueba mas que a un artefacto con soporte.
 
 La unica informacion disponible es el propio identificador del repositorio, que sugiere tres elementos: una arquitectura de la familia Mamba-2, un tamano de checkpoint en torno a 3 GB y un procedimiento de recuperacion o "re-entrenamiento" asociado al termino ReCall. Ninguno de estos extremos esta confirmado por documentacion del autor, por lo que deben tratarse como inferencias a partir del nombre y no como datos verificados.
 
@@ -87,7 +87,7 @@ Si el objetivo es comparar con modelos SSM consolidados, seria necesario consult
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EndlessChasing/Mamba2_3GB_ReCall_Recovered
+- Repositorio en Hugging Face: https://huggingface.co/EndlessChasing/Mamba2_3GB_ReCall_Recovered
 - Model card del autor: sin contenido tecnico mas alla del campo `license: apache-2.0`
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de busqueda web: sin resultados relevantes; las coincidencias obtenidas corresponden a contenido medico sobre reabsorcion condilar (https://en.wikipedia.org/wiki/Condylar_resorption, https://my.clevelandclinic.org/health/diseases/22807-condylar-resorption, https://www.imaios.com/en/e-anatomy/anatomical-structures/mandibular-condyle-1536898828, https://drlarrywolford.com/tmj-dysfunction/mandibular-condylar-resorption/, https://dentalfreak.com/condylar-resorption/) y no documentan el modelo.

@@ -23,7 +23,7 @@ La información pública disponible es muy escasa: el repositorio no incluye mod
 | Tokenizador | no disponible |
 | Modelo base | joaosollatori/small-agentic-model-1.5B |
 | Autor del repositorio | mradermacher (cuantizacion, no entrenamiento) |
-| Fecha de creacion / actualizacion | 16 de septiembre de 2026 (segun los metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 16 de septiembre de 2026 (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -42,7 +42,7 @@ En cuanto al proceso de cuantizacion, el repositorio ofrece cuantizaciones estat
 - Soporte de agentes y multi-step reasoning: no disponible.
 - Capacidades multilingues: no disponible (no se declara lista de idiomas).
 - Capacidades especiales (modo thinking, vision, audio): no disponible. La ausencia de mmproj en el proceso de cuantizacion sugiere que no hay modulo multimodal, pero no es una confirmacion explicita.
-- Compatibilidad de despliegue: etiqueta `endpoints_compatible`, lo que indica que el repositorio esta preparado para servirse mediante los endpoints compatibles de HuggingFace.
+- Compatibilidad de despliegue: etiqueta `endpoints_compatible`, lo que indica que el repositorio esta preparado para servirse mediante los endpoints compatibles de Hugging Face.
 - Modificacion de comportamiento: no se documenta ninguna capacidad de ajuste de razonamiento, modo de pensamiento ni parametros especiales de generacion.
 
 ## Casos de uso
@@ -80,7 +80,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parametros y de
 - VRAM estimada para inferencia: en el escenario de 124M parametros, todas las cuantizaciones caben holgadamente en cualquier GPU con 2 GB de VRAM e incluso en memoria compartida. En el escenario de 1,5B, la cuantizacion Q4_K_M requiere del orden de 1,5 GB de VRAM sumando cache KV y overhead del runtime, y Q8_0 alrededor de 2,5 GB.
 - GPU recomendadas: en el escenario pequeno basta con cualquier GPU integrada o dedicada de gama de entrada. En el escenario de 1,5B, son suficientes tarjetas como GTX 1650, RTX 3050, RTX 4060, Apple Silicon (M1 en adelante) o cualquier GPU con 4 GB o mas. No se requiere A100, H100 ni hardware de centro de datos para ninguna de las configuraciones.
 - Compatibilidad con GPU de consumidor: si, en todos los niveles de cuantizacion, en ambos escenarios de tamano.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui, koboldcpp y servidores compatibles con GGUF. La etiqueta `endpoints_compatible` del repositorio indica soporte para endpoints gestionados de HuggingFace. vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que conviene verificar la version antes de planteárselos.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui, koboldcpp y servidores compatibles con GGUF. La etiqueta `endpoints_compatible` del repositorio indica soporte para endpoints gestionados de Hugging Face. vLLM y TGI tienen soporte de GGUF limitado o experimental, por lo que conviene verificar la version antes de planteárselos.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ No se dispone de información suficiente para establecer una comparación de cal
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/small-agentic-model-1.5B-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/small-agentic-model-1.5B-GGUF
 - Modelo base: https://huggingface.co/joaosollatori/small-agentic-model-1.5B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog o demo oficial: no disponible

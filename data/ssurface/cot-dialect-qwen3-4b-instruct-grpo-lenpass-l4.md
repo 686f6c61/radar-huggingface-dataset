@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - El adaptador LoRA ocupa ~0.1 GB; la carga adicional en memoria sobre el modelo base es minima.
 - El modelo base Qwen3-4B-Instruct-2507 en bf16 ocupa aproximadamente 8 GB de VRAM, por lo que cabe en GPUs de consumo como RTX 4090 (24 GB) o RTX 3060 (12 GB) con cuantizacion del base.
 - Entrenamiento: se realizo con 1x NVIDIA A100 de 80 GB, aunque un adaptador LoRA de r=16 sobre un base de 4B podria entrenarse con menos recursos.
-- Despliegue: compatible con el stack de HuggingFace (`transformers` + `peft`); para servidores se puede fusionar el adaptador y servir con vLLM o TGI.
+- Despliegue: compatible con el stack de Hugging Face (`transformers` + `peft`); para servidores se puede fusionar el adaptador y servir con vLLM o TGI.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-lenpass-l4
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-lenpass-l4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo SFT del nivel L4 (requerido para apilar): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l4
 - Modelo principal del nivel L4: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4

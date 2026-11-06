@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DrakIdol-Roleplayer-1.0-i1-GGUF (este) | 3,88B | No especificado (base Gemma 3: hasta 128k) | GGUF imatrix, 25 variantes | Apache 2.0 (declarada) | HuggingFace, 0 descargas |
-| aifeifei798/DrakIdol-Roleplayer-1.0 | 3,88B | No disponible | Safetensors | No disponible | HuggingFace (modelo base) |
-| mradermacher/DrakIdol-Roleplayer-1.0-GGUF | 3,88B | No disponible | GGUF estatico + mmproj | No disponible | HuggingFace (cuantizaciones estaticas) |
-| Gemma 3 4B (modelo original de Google) | ~3,88B | 128 000 tokens | Safetensors, GGUF comunitario | Terminos de uso de Gemma | Google, HuggingFace |
+| DrakIdol-Roleplayer-1.0-i1-GGUF (este) | 3,88B | No especificado (base Gemma 3: hasta 128k) | GGUF imatrix, 25 variantes | Apache 2.0 (declarada) | Hugging Face, 0 descargas |
+| aifeifei798/DrakIdol-Roleplayer-1.0 | 3,88B | No disponible | Safetensors | No disponible | Hugging Face (modelo base) |
+| mradermacher/DrakIdol-Roleplayer-1.0-GGUF | 3,88B | No disponible | GGUF estatico + mmproj | No disponible | Hugging Face (cuantizaciones estaticas) |
+| Gemma 3 4B (modelo original de Google) | ~3,88B | 128 000 tokens | Safetensors, GGUF comunitario | Terminos de uso de Gemma | Google, Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Emerald7664/DrakIdol-Roleplayer-1.0-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Emerald7664/DrakIdol-Roleplayer-1.0-i1-GGUF
 - Modelo base: https://huggingface.co/aifeifei798/DrakIdol-Roleplayer-1.0
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/DrakIdol-Roleplayer-1.0-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/DrakIdol-Roleplayer-1.0-i1-GGUF/resolve/main/DrakIdol-Roleplayer-1.0.imatrix.gguf

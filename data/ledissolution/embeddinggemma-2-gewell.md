@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Compatibilidad |
 |---|---|---|---|---|---|
-| LeDissolution/EmbeddingGemma-2-Gewell | no disponible | 8.192 tokens | Apache 2.0 | HuggingFace (0 descargas) | Solo motor Gewell en Blackwell |
-| google/embeddinggemma-2 | no disponible | no disponible | Apache 2.0 (terminos upstream) | HuggingFace (modelo oficial de Google) | Transformers, ecosystem estandar |
+| LeDissolution/EmbeddingGemma-2-Gewell | no disponible | 8.192 tokens | Apache 2.0 | Hugging Face (0 descargas) | Solo motor Gewell en Blackwell |
+| google/embeddinggemma-2 | no disponible | no disponible | Apache 2.0 (terminos upstream) | Hugging Face (modelo oficial de Google) | Transformers, ecosystem estandar |
 | Otros modelos de embeddings multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa cuantitativa con alternativas de la misma categoria no esta disponible en la informacion proporcionada. Conviene senalar que EmbeddingGemma-2-Gewell comparte pesos exactos con google/embeddinggemma-2, por lo que la diferencia entre ambos es exclusivamente de formato y ecosistema de ejecucion, no de calidad de representacion.
@@ -93,7 +93,7 @@ La comparativa cuantitativa con alternativas de la misma categoria no esta dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeDissolution/EmbeddingGemma-2-Gewell
+- Hugging Face: https://huggingface.co/LeDissolution/EmbeddingGemma-2-Gewell
 - Modelo base upstream: https://huggingface.co/google/embeddinggemma-2
 - Repositorio Gewell: https://github.com/LeDissolution/gewell
 - Instrucciones de compilacion de Gewell: https://github.com/LeDissolution/gewell/blob/main/docs/build.md

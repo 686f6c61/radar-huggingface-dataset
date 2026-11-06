@@ -25,7 +25,7 @@ No se dispone de información publica sobre la arquitectura interna del modelo b
 
 ## Capacidades
 
-- Generacion de texto conversacional: la etiqueta `conversational` en HuggingFace indica que el modelo esta pensado para dialogos multi-turno.
+- Generacion de texto conversacional: la etiqueta `conversational` en Hugging Face indica que el modelo esta pensado para dialogos multi-turno.
 - Ausencia de filtros de contenido: al ser una version "uncensored", es probable que genere respuestas sin las restricciones de seguridad habituales en modelos alineados.
 - No se ha confirmado soporte de tool calling, function calling, agentes, vision, audio ni capacidades multilingues especificas. Estos datos no aparecen en la informacion disponible.
 - La cuantizacion Q5_K_M reduce el peso del modelo a 20.8 GB, lo que facilita su ejecucion en hardware moderado mediante llama.cpp u otros motores compatibles con GGUF.
@@ -65,6 +65,6 @@ No se han identificado modelos comparables en la informacion disponible. La ause
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonbondig/orcarouter_Qwen3.8-27B-Uncensored-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/brandonbondig/orcarouter_Qwen3.8-27B-Uncensored-Q5_K_M-GGUF
 - Repositorio de la cuantizacion original: https://huggingface.co/bartowski/orcarouter_Qwen3.8-27B-Uncensored-GGUF
 - Repositorio del modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored

@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - VRAM estimada: el modelo tiene ~596M parámetros y los pesos BF16 ocupan aproximadamente 1.2 GB en disco. La VRAM necesaria para inferencia con batch pequeño es de al menos 2-3 GB, dependiendo de la longitud de entrada y la configuración de generación.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (por ejemplo, RTX 3050, RTX 2060, GTX 1660) puede ejecutar el modelo cómodamente. También funciona en CPU, aunque con mayor latencia.
-- Opciones de despliegue: al ser un modelo transformers, se puede servir con vLLM, TGI, o mediante la API de HuggingFace Inference Endpoints. También se puede cargar con `AutoModelForCausalLM` en un entorno Python estándar.
+- Opciones de despliegue: al ser un modelo transformers, se puede servir con vLLM, TGI, o mediante la API de Hugging Face Inference Endpoints. También se puede cargar con `AutoModelForCausalLM` en un entorno Python estándar.
 - Latencia y throughput: no se disponen de datos concretos, pero al ser un modelo pequeño, se esperan tiempos de generación de unos pocos cientos de milisegundos por respuesta en GPU moderna. En CPU, puede tardar varios segundos.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se han encontrado modelos comparables de la misma categoría (post-procesamie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aye10032/Qwen3-0.6B-ASR-Refiner
+- Modelo en Hugging Face: https://huggingface.co/Aye10032/Qwen3-0.6B-ASR-Refiner
 - Dataset de entrenamiento: https://huggingface.co/datasets/Aye10032/WenetSpeech-Formal-Text
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Familia de modelos ASR Refiner (0.6B, 1.7B, 4B): enlaces en la model card

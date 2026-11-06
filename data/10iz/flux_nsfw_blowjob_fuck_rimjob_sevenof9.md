@@ -56,7 +56,7 @@ Las cifras siguientes son estimaciones derivadas del modelo base FLUX.1-dev (12 
   - GGUF Q4 con offloading parcial a CPU: aproximadamente 6-10 GB.
 - GPUs recomendadas: A100 (40/80 GB) y H100 (80 GB) para fp16/bf16 y lotes grandes; L40S, RTX 6000 Ada y A6000 (48 GB) para fp8 con margen.
 - Cabe en GPU de consumo: si, en RTX 4090 y RTX 3090 (24 GB) con fp8 o nf4; en RTX 4080/4070 Ti Super (16 GB) con nf4 o GGUF Q8; en GPUs de 8-12 GB solo con GGUF Q4 y offloading parcial a CPU, con penalizacion de latencia.
-- Opciones de despliegue: `diffusers` con `bitsandbytes`, ComfyUI (incluido el nodo GGUF), Automatic1111/Forge, InvokeAI, SwarmUI, `stable-diffusion.cpp` y servicios gestionados que acepten LoRA de Civitai o de HuggingFace.
+- Opciones de despliegue: `diffusers` con `bitsandbytes`, ComfyUI (incluido el nodo GGUF), Automatic1111/Forge, InvokeAI, SwarmUI, `stable-diffusion.cpp` y servicios gestionados que acepten LoRA de Civitai o de Hugging Face.
 - Latencia y throughput estimados (no medidos en este adaptador): del orden de 2-6 segundos por imagen de 1024x1024 con 20-30 pasos en una RTX 4090, y de 1-3 segundos en una H100, dependiendo de la cuantizacion y del scheduler.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de datos comparativos de rendimiento del adaptador evaluado, por l
 - Sesgos: no se ha realizado ninguna evaluacion de sesgos demograficos ni de representacion corporal.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/10iz/flux_nsfw_blowjob_fuck_rimjob_sevenof9
+- Modelo en Hugging Face: https://huggingface.co/10iz/flux_nsfw_blowjob_fuck_rimjob_sevenof9
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Modelo base FLUX.1-schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - Claves de acceso de la API citada en la model card: https://muapi.ai/access-keys

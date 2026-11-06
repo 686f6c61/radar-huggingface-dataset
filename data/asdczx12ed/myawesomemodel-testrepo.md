@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASDCZX12ED bajo el identificador `ASDCZX12ED/MyAwesomeModel-TestRepo`. Por el nombre del repositorio ("TestRepo"), el tamaño declarado de 0.0 GB, la ausencia total de descargas y likes, y el hecho de que la model card utilice nombres genéricos de sustitución ("Model1", "Model2", "Model1-v2"), todo apunta a que se trata de un repositorio de prueba o plantilla y no de un modelo entrenado y distribuido de forma real.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASDCZX12ED bajo el identificador `ASDCZX12ED/MyAwesomeModel-TestRepo`. Por el nombre del repositorio ("TestRepo"), el tamaño declarado de 0.0 GB, la ausencia total de descargas y likes, y el hecho de que la model card utilice nombres genéricos de sustitución ("Model1", "Model2", "Model1-v2"), todo apunta a que se trata de un repositorio de prueba o plantilla y no de un modelo entrenado y distribuido de forma real.
 
 La model card describe un supuesto modelo orientado al razonamiento, con mejoras en profundidad de inferencia, matemáticas, programación y lógica, y menciona resultados en AIME 2025 (una subida de exactitud del 70% al 87,5% respecto a la versión anterior, con un consumo medio de 23K tokens por pregunta frente a 12K). Sin embargo, no se especifica arquitectura, número de parámetros, longitud de contexto, tokenizador ni composición del dataset. Las etiquetas del repositorio (`transformers`, `pytorch`, `bert`, `feature-extraction`) son incoherentes con el perfil de modelo generativo y razonador que describe la model card, lo que refuerza la hipótesis de repositorio de prueba.
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 - VRAM estimada para inferencia: no disponible (no se conocen los parámetros del modelo ni los formatos de cuantización).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la librería declarada es `transformers` con `pytorch`, y el repositorio es `endpoints_compatible`, lo que sugeriría despliegue mediante HuggingFace Inference Endpoints. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la librería declarada es `transformers` con `pytorch`, y el repositorio es `endpoints_compatible`, lo que sugeriría despliegue mediante Hugging Face Inference Endpoints. No se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 - Nota crítica: el repositorio ocupa 0.0 GB, por lo que no contiene pesos que puedan cargarse. No es desplegable en su estado actual.
 
@@ -120,7 +120,7 @@ Comparativa con modelos similares: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDCZX12ED/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASDCZX12ED/MyAwesomeModel-TestRepo
 - Repositorio de código: no disponible (la model card lo menciona sin enlace)
 - Sitio web oficial y API: no disponible (la model card los menciona sin enlace)
 - Paper: no disponible

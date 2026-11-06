@@ -5,7 +5,7 @@ Este repositorio contiene una cuantización GGUF en formato Q4_K_S del modelo mi
 
 El modelo base phi-4 es un transformer denso, decoder-only, de aproximadamente 14.660 millones de parámetros totales (el autor de la tarjeta cita ~13,1B como "parámetros activos", aunque al ser un modelo denso no existe distinción entre activos y totales). Cuenta con 40 capas, dimensión oculta de 5120 y una ventana de contexto de 16.384 tokens.
 
-Su relevancia actual reside en que permite desplegar un modelo de razonamiento y código de gama media-alta en equipos modestos, con licencia "other" según los metadatos de HuggingFace. La ficha incluye benchmarks internos medidos sobre porciones reducidas de los conjuntos de evaluación, por lo que sus cifras no son comparables con ejecuciones completas.
+Su relevancia actual reside en que permite desplegar un modelo de razonamiento y código de gama media-alta en equipos modestos, con licencia "other" según los metadatos de Hugging Face. La ficha incluye benchmarks internos medidos sobre porciones reducidas de los conjuntos de evaluación, por lo que sus cifras no son comparables con ejecuciones completas.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Su relevancia actual reside en que permite desplegar un modelo de razonamiento y
 | Longitud de contexto | 16.384 tokens |
 | Tipos de cuantizacion | GGUF Q4_K_S (unica disponible en este repo) |
 | Idiomas soportados | Ingles (en) e italiano (it) segun metadatos; el base phi-4 esta orientado principalmente al ingles |
-| Licencia | other (los metadatos de HuggingFace indican "other"; la model card muestra una insignia Apache-2.0, lo que supone una inconsistencia) |
+| Licencia | other (los metadatos de Hugging Face indican "other"; la model card muestra una insignia Apache-2.0, lo que supone una inconsistencia) |
 | Formato de pesos | GGUF (Q4_K_S) |
 | Capas del transformer | 40 |
 | Dimension oculta | 5120 |
@@ -99,14 +99,14 @@ Los datos de benchmarks de los modelos comparados no estan disponibles en la inf
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sigmanih/microsoft-phi-4-GGUF-Q4_K_S | ~14,66B (denso) | 16.384 | GGUF Q4_K_S | other (metadatos HF) | HuggingFace |
-| microsoft/phi-4 (base) | ~14,66B (denso) | 16.384 (segun base comunmente documentado) | safetensors | MIT (habitual en el modelo base, no confirmado en esta informacion) | HuggingFace |
-| Otras cuantizaciones GGUF de phi-4 | no disponible | no disponible | GGUF (varios) | no disponible | HuggingFace |
+| sigmanih/microsoft-phi-4-GGUF-Q4_K_S | ~14,66B (denso) | 16.384 | GGUF Q4_K_S | other (metadatos HF) | Hugging Face |
+| microsoft/phi-4 (base) | ~14,66B (denso) | 16.384 (segun base comunmente documentado) | safetensors | MIT (habitual en el modelo base, no confirmado en esta informacion) | Hugging Face |
+| Otras cuantizaciones GGUF de phi-4 | no disponible | no disponible | GGUF (varios) | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos directos entre esta cuantizacion y otras alternativas de la misma categoria.
 
 ## Limitaciones y advertencias
-- La licencia figura como "other" en los metadatos de HuggingFace, mientras que la model card muestra una insignia Apache-2.0. Esta contradiccion debe resolverse antes de cualquier uso comercial; conviene verificar la licencia del modelo base microsoft/phi-4.
+- La licencia figura como "other" en los metadatos de Hugging Face, mientras que la model card muestra una insignia Apache-2.0. Esta contradiccion debe resolverse antes de cualquier uso comercial; conviene verificar la licencia del modelo base microsoft/phi-4.
 - Los benchmarks publicados se han medido sobre porciones muy pequenas de cada conjunto (entre 7 y 14 preguntas por prueba), por lo que la varianza es alta y las cifras no son representativas de una evaluacion completa. El propio autor lo advierte.
 - Existen inconsistencias internas en la tabla de evaluacion de herramientas (88,0% de adherencia junto a "0/92 criterios verificados"; "0,0% de finalizacion autonoma" junto a "0 turnos"), lo que reduce la fiabilidad de esos numeros.
 - Rendimiento bajo en HellaSwag (44%) y MMLU (50%) en la muestra evaluada, lo que sugiere limitaciones en sentido comun y conocimiento general dentro de esta cuantizacion concreta.
@@ -118,7 +118,7 @@ No se dispone de datos de rendimiento comparativos directos entre esta cuantizac
 - No se han publicado mediciones de latencia, throughput ni consumo energetico.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-Q4_K_S
+- Repositorio en Hugging Face: https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-Q4_K_S
 - Modelo base: https://huggingface.co/microsoft/phi-4
 - Repositorio Sigma Studio: https://github.com/Sigmanih/SigmaStudio
 - No se han encontrado enlaces relevantes adicionales (papers, blogs o demos) en la busqueda web realizada; los resultados obtenidos correspondian a un diccionario de frances y no guardan relacion con el modelo.

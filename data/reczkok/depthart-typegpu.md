@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reczkok/depthart-typegpu` es un repositorio publicado en HuggingFace por el usuario `reczkok` bajo licencia Apache 2.0. En el momento de la consulta, la model card no contiene ninguna especificación técnica: no se indica la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de uso. Tampoco se han registrado descargas ni interacciones de la comunidad, lo que sugiere que se trata de una publicación reciente o sin validación externa.
+El modelo `reczkok/depthart-typegpu` es un repositorio publicado en Hugging Face por el usuario `reczkok` bajo licencia Apache 2.0. En el momento de la consulta, la model card no contiene ninguna especificación técnica: no se indica la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline de uso. Tampoco se han registrado descargas ni interacciones de la comunidad, lo que sugiere que se trata de una publicación reciente o sin validación externa.
 
 Dada la ausencia total de documentación y metadatos técnicos, no es posible determinar qué problema resuelve el modelo, su relevancia actual ni sus capacidades. Cualquier afirmación al respecto sería especulativa. Esta ficha se limita a reflejar el estado de la información disponible, señalando explícitamente los campos no disponibles.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables al no existir especificaciones 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/reczkok/depthart-typegpu)
+- [Repositorio en Hugging Face](https://huggingface.co/reczkok/depthart-typegpu)

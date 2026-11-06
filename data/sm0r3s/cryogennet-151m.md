@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CryogenNet-151M es un modelo de lenguaje experimental de 151.005.697 parametros publicado por el usuario Sm0r3s en HuggingFace, dentro del proyecto CryogenNet / CryogenAI. No se trata de un transformer decoder-only convencional derivado de la familia Llama/Qwen/Mistral, sino de una arquitectura recurrente propia implementada directamente en PyTorch: un nucleo de bloques compartidos que se repiten R veces en profundidad (R configurable entre 2 y 4 en entrenamiento) seguido de un unico bloque "coda". El modelo esta pensado como nucleo neuronal base sobre el que el autor planea construir fases posteriores de razonamiento, verificacion y enrutado de herramientas.
+CryogenNet-151M es un modelo de lenguaje experimental de 151.005.697 parametros publicado por el usuario Sm0r3s en Hugging Face, dentro del proyecto CryogenNet / CryogenAI. No se trata de un transformer decoder-only convencional derivado de la familia Llama/Qwen/Mistral, sino de una arquitectura recurrente propia implementada directamente en PyTorch: un nucleo de bloques compartidos que se repiten R veces en profundidad (R configurable entre 2 y 4 en entrenamiento) seguido de un unico bloque "coda". El modelo esta pensado como nucleo neuronal base sobre el que el autor planea construir fases posteriores de razonamiento, verificacion y enrutado de herramientas.
 
 El problema que aborda es la exploracion de arquitecturas alternativas de bajo coste computacional: al reutilizar pesos en profundidad, el modelo consigue una profundidad efectiva mayor con un numero de parametros muy reducido. Con 1.536 dimensiones ocultas, 24 cabezas de atencion (dimension de cabeza 64), FFN de 6.144 unidades con SwiGLU, RoPE para posiciones y RMSNorm, el modelo ofrece una ventana de contexto maxima de 4.096 tokens (2.048 en el entrenamiento base) y un vocabulario de 24.576 tokens con cabecera LM atada a los embeddings.
 
@@ -103,9 +103,9 @@ No hay datos de benchmarks que permitan comparar rendimiento entre estos modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sm0r3s/CryogenNet-151M
+- Hugging Face: https://huggingface.co/Sm0r3s/CryogenNet-151M
 - Paper: no disponible
-- Repositorio de codigo: no disponible (el codigo de arquitectura `modeling_cryogennet` se menciona como parte del propio repositorio de HuggingFace, pero no se referencia un repositorio independiente)
+- Repositorio de codigo: no disponible (el codigo de arquitectura `modeling_cryogennet` se menciona como parte del propio repositorio de Hugging Face, pero no se referencia un repositorio independiente)
 - Demo: no disponible
 - Blog o documentacion adicional: no disponible
 - Nota: la busqueda web realizada no devolvio resultados relacionados con CryogenNet ni con CryogenAI; los unicos resultados obtenidos correspondian a servicios de musica y a finanzas (siglas "YTM" en otro contexto) y no son relevantes para esta ficha.

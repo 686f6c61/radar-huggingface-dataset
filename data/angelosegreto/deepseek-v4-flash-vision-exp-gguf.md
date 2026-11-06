@@ -93,7 +93,7 @@ No se dispone de datos verificados de otros modelos comparables en la informacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ANGELOSEGRETO/DeepSeek-V4-Flash-Vision-Exp-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ANGELOSEGRETO/DeepSeek-V4-Flash-Vision-Exp-GGUF
 - Modelo base declarado: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Herramienta de ejecucion mencionada: https://llama.app
 - Repositorio de conversion citado: https://github.com/ggml-org/convert

@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LoRA-Llama-3.2-1B-tool-vllm-ci | 1,24B (base) + LoRA r8 | 4096 (entrenamiento) | Tool calling, adaptador PEFT | llama3.2 | HuggingFace (vllm-project y minpeter) |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128k (nativo del base) | Instrucciones generales | llama3.2 | HuggingFace |
-| minpeter/LoRA-Llama-3.2-1B-tool-vllm-ci | 1,24B (base) + LoRA r8 | 4096 (entrenamiento) | Tool calling, adaptador PEFT | llama3.2 | HuggingFace (cuenta personal) |
-| Modelos de tool calling de mayor tamano (p. ej. familias Qwen o Hermes) | 7B+ | variable | Tool calling | variable | HuggingFace |
+| LoRA-Llama-3.2-1B-tool-vllm-ci | 1,24B (base) + LoRA r8 | 4096 (entrenamiento) | Tool calling, adaptador PEFT | llama3.2 | Hugging Face (vllm-project y minpeter) |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128k (nativo del base) | Instrucciones generales | llama3.2 | Hugging Face |
+| minpeter/LoRA-Llama-3.2-1B-tool-vllm-ci | 1,24B (base) + LoRA r8 | 4096 (entrenamiento) | Tool calling, adaptador PEFT | llama3.2 | Hugging Face (cuenta personal) |
+| Modelos de tool calling de mayor tamano (p. ej. familias Qwen o Hermes) | 7B+ | variable | Tool calling | variable | Hugging Face |
 
 La comparativa con modelos de mayor tamano no puede completarse con datos de rendimiento porque no se han publicado benchmarks en la informacion disponible.
 
@@ -95,7 +95,7 @@ La comparativa con modelos de mayor tamano no puede completarse con datos de ren
 
 ## Enlaces
 
-- [HuggingFace: vllm-project/LoRA-Llama-3.2-1B-tool-vllm-ci](https://huggingface.co/vllm-project/LoRA-Llama-3.2-1B-tool-vllm-ci)
+- [Hugging Face: vllm-project/LoRA-Llama-3.2-1B-tool-vllm-ci](https://huggingface.co/vllm-project/LoRA-Llama-3.2-1B-tool-vllm-ci)
 - [Checkpoint original: minpeter/LoRA-Llama-3.2-1B-tool-vllm-ci](https://huggingface.co/minpeter/LoRA-Llama-3.2-1B-tool-vllm-ci)
 - [Modelo base: meta-llama/Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
 - [Axolotl (framework de entrenamiento)](https://github.com/axolotl-ai-cloud/axolotl)

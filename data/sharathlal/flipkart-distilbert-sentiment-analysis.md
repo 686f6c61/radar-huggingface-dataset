@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SharathLal/flipkart-distilbert-sentiment-analysis` es un clasificador de sentimiento de tres clases (negativo, neutro, positivo) obtenido mediante fine-tuning de DistilBERT Base Uncased sobre reseñas de productos de Flipkart. Lo desarrolla SharathLal y se publica bajo licencia Apache 2.0 en HuggingFace. Resuelve la tarea de analisis de opinion a nivel de documento en ingles, orientada especificamente al dominio del comercio electronico.
+El modelo `SharathLal/flipkart-distilbert-sentiment-analysis` es un clasificador de sentimiento de tres clases (negativo, neutro, positivo) obtenido mediante fine-tuning de DistilBERT Base Uncased sobre reseñas de productos de Flipkart. Lo desarrolla SharathLal y se publica bajo licencia Apache 2.0 en Hugging Face. Resuelve la tarea de analisis de opinion a nivel de documento en ingles, orientada especificamente al dominio del comercio electronico.
 
 Tecnicamente se trata de un transformer encoder de tipo DistilBERT con 66.955.779 parametros (aproximadamente 67 millones), una version destilada de BERT que reduce el tamano y el coste de inferencia manteniendo buena parte de la capacidad del modelo original. La longitud de contexto efectiva para la que fue entrenado es de 128 tokens, suficiente para reseñas cortas pero insuficiente para textos largos. El modelo es pequeno (repo de 0,3 GB en safetensors) y esta pensado para despliegues ligeros en CPU o GPU de gama baja.
 
@@ -89,10 +89,10 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| SharathLal/flipkart-distilbert-sentiment-analysis | 66,96 M | 128 tokens | Clasificacion de sentimiento 3 clases (Flipkart) | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Clasificacion de sentimiento binaria (SST-2) | Apache 2.0 | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | Sentimiento 3 clases (redes sociales) | MIT | HuggingFace |
-| ProsusAI/finbert | ~110 M | 512 tokens | Sentimiento financiero 3 clases | Apache 2.0 | HuggingFace |
+| SharathLal/flipkart-distilbert-sentiment-analysis | 66,96 M | 128 tokens | Clasificacion de sentimiento 3 clases (Flipkart) | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | Clasificacion de sentimiento binaria (SST-2) | Apache 2.0 | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 tokens | Sentimiento 3 clases (redes sociales) | MIT | Hugging Face |
+| ProsusAI/finbert | ~110 M | 512 tokens | Sentimiento financiero 3 clases | Apache 2.0 | Hugging Face |
 
 La comparativa con estos modelos es aproximada: el modelo de Flipkart esta especializado en reseñas de comercio electronico y entrenado con contexto de 128 tokens, mientras que las alternativas cubren dominios distintos y ventanas mayores. No se dispone de evaluaciones cruzadas en el mismo conjunto de test.
 
@@ -109,7 +109,7 @@ La comparativa con estos modelos es aproximada: el modelo de Flipkart esta espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SharathLal/flipkart-distilbert-sentiment-analysis
+- Modelo en Hugging Face: https://huggingface.co/SharathLal/flipkart-distilbert-sentiment-analysis
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Libreria transformers: https://github.com/huggingface/transformers
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

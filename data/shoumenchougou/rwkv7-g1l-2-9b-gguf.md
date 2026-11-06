@@ -80,7 +80,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- [HuggingFace: shoumenchougou/RWKV7-G1l-2.9B-GGUF](https://huggingface.co/shoumenchougou/RWKV7-G1l-2.9B-GGUF)
+- [Hugging Face: shoumenchougou/RWKV7-G1l-2.9B-GGUF](https://huggingface.co/shoumenchougou/RWKV7-G1l-2.9B-GGUF)
 - [Modelo base: BlinkDL/rwkv7-g1](https://huggingface.co/BlinkDL/rwkv7-g1)
 - [Checkpoint original `.pth`](https://huggingface.co/BlinkDL/rwkv7-g1/blob/11e3c50128e479898eee79c48831a95cf3e21d91/rwkv7-g1l-2.9b-20261031-ctx34304.pth)
 - [Paper RWKV-7 (arXiv:2503.14456v2)](https://arxiv.org/abs/2503.14456v2)

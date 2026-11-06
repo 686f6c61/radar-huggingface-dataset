@@ -92,8 +92,8 @@ La comparativa se limita a caracteristicas objetivas; no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/MagicalAlchemist/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/MagicalAlchemist/Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored
 - Pagina de overview del autor de cuantizaciones: https://hf.tst.eu/model#Apriel-1.6-15b-Thinker-R.C.1_2-Magic_decensored-GGUF
 - Repositorio de peticiones de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

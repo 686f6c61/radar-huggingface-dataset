@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 | Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
 | qwen3.5-4b-4k-grpo-reasoninggym-easyturkey-s300 | 4,66 mil millones | no disponible | Apache 2.0 | Publicado, 0 descargas |
-| Qwen/Qwen3.5-4B (modelo base) | no disponible en la informacion | no disponible | Apache 2.0 | Publicado en HuggingFace |
+| Qwen/Qwen3.5-4B (modelo base) | no disponible en la informacion | no disponible | Apache 2.0 | Publicado en Hugging Face |
 | Otros checkpoints de RL del mismo proyecto | no disponibles | no disponible | Apache 2.0 | No identificados en la busqueda |
 
 No se han encontrado en la busqueda web modelos comparables de la misma categoria con datos verificables. La busqueda realizada devolvio exclusivamente resultados sobre presupuestos publicos franceses, sin relacion con el modelo.
@@ -95,6 +95,6 @@ No se han encontrado en la busqueda web modelos comparables de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-grpo-reasoninggym-easyturkey-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-4k-grpo-reasoninggym-easyturkey-s300
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Otros enlaces (paper de ICLR 2027, repositorio de codigo, blog o demo): no disponibles. La busqueda web no devolvio resultados relacionados con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-M.O.G.-27B-BF16 es un modelo de lenguaje multimodal desarrollado por Blackfrost-AI, publicado en HuggingFace con licencia Apache 2.0. Se trata de un fine-tuning del modelo Qwen/Qwen3.8-27B, que a su vez es una versión reciente de la familia Qwen con capacidades de procesamiento de imagen y texto (pipeline `image-text-to-text`). El modelo cuenta con aproximadamente 27.781 millones de parámetros y un tamaño de repositorio de 55,6 GB en formato `safetensors` BF16.
+M.O.G.-27B-BF16 es un modelo de lenguaje multimodal desarrollado por Blackfrost-AI, publicado en Hugging Face con licencia Apache 2.0. Se trata de un fine-tuning del modelo Qwen/Qwen3.8-27B, que a su vez es una versión reciente de la familia Qwen con capacidades de procesamiento de imagen y texto (pipeline `image-text-to-text`). El modelo cuenta con aproximadamente 27.781 millones de parámetros y un tamaño de repositorio de 55,6 GB en formato `safetensors` BF16.
 
 La relevancia de este modelo radica en que combina un tamaño manejable (27B) con capacidades multimodales, lo que lo sitúa como una opción interesante para tareas que requieren comprensión conjunta de imágenes y texto, manteniendo una licencia permisiva para uso comercial. Sin embargo, al ser un lanzamiento reciente (agosto de 2026) y con acceso restringido (gated), la información pública sobre sus capacidades específicas y rendimiento es limitada. El nombre "M.O.G." no está documentado en la información disponible, aunque los resultados de búsqueda sugieren que podría estar relacionado con variantes "abliterated" de Qwen3.8-27B, lo que implicaría una modificación de las capas de rechazo de respuestas no deseadas.
 
@@ -70,7 +70,7 @@ Nota: los datos de contexto y multimodalidad de Qwen3.8-27B provienen de fuentes
 ## Limitaciones y advertencias
 
 - Informacion publica muy limitada: no se han publicado detalles de entrenamiento, benchmarks ni evaluaciones de sesgos. Cualquier uso en produccion debe ir precedido de una evaluacion propia.
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Posible variante "abliterated": si el modelo ha sido modificado para eliminar mecanismos de rechazo, podria generar contenido inapropiado o peligroso sin las salvaguardas habituales. No hay confirmacion oficial, pero es un riesgo a considerar.
 - Riesgo de alucinacion: como cualquier LLM, puede inventar informacion, especialmente en tareas de razonamiento visual donde la interpretacion de imagenes puede ser erronea.
 - Requisitos de hardware elevados: 55,6 GB en BF16 dificultan su despliegue en entornos con recursos limitados. Se recomienda cuantizacion (no disponible oficialmente) o uso de APIs.
@@ -78,7 +78,7 @@ Nota: los datos de contexto y multimodalidad de Qwen3.8-27B provienen de fuentes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-AI/M.O.G.-27B-BF16
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-AI/M.O.G.-27B-BF16
 - Guia para ejecutar Qwen3.8-27B localmente (fuente externa): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Busqueda de modelos cuantizados relacionados: https://huggingface.co/models?other=base_model:quantized:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Pagina de Qwen3.8-27B-ABLITERATED-BF16 en LLM Explorer: https://llm-explorer.com/model/Blackfrost-AI%2FQwen3.8-27B-ABLITERATED-BF16,6tiXK8GMtb88h1AZj3bwP7

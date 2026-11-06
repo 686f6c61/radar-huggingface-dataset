@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Contexto audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unilux/whisper-small-v1-luxembourgish | ~244 M | `lb` | ventanas de 30 s | openmdw-1.1 | HuggingFace |
-| openai/whisper-small | ~244 M | multilingue (99 idiomas) | ventanas de 30 s | MIT (pesos OpenAI) | HuggingFace, ampliamente desplegado |
-| unilux/whisper-medium-v1-luxembourgish (familia LuxASR) | ~769 M (estimado por arquitectura) | `lb` | ventanas de 30 s | openmdw-1.1 (segun familia) | HuggingFace (referenciado en la model card) |
-| Facebook MMS (modelo `lb` si existe) | variable | multilingue | variable | CC-BY-NC 4.0 (tipicamente) | HuggingFace |
+| unilux/whisper-small-v1-luxembourgish | ~244 M | `lb` | ventanas de 30 s | openmdw-1.1 | Hugging Face |
+| openai/whisper-small | ~244 M | multilingue (99 idiomas) | ventanas de 30 s | MIT (pesos OpenAI) | Hugging Face, ampliamente desplegado |
+| unilux/whisper-medium-v1-luxembourgish (familia LuxASR) | ~769 M (estimado por arquitectura) | `lb` | ventanas de 30 s | openmdw-1.1 (segun familia) | Hugging Face (referenciado en la model card) |
+| Facebook MMS (modelo `lb` si existe) | variable | multilingue | variable | CC-BY-NC 4.0 (tipicamente) | Hugging Face |
 
 La comparativa con MMS se incluye como referencia de categoria (ASR multilingue de bajos recursos); no se dispone de datos de rendimiento comparativo en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ La comparativa con MMS se incluye como referencia de categoria (ASR multilingue 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unilux/whisper-small-v1-luxembourgish
+- Modelo en Hugging Face: https://huggingface.co/unilux/whisper-small-v1-luxembourgish
 - Proyecto LuxASR (Universidad de Luxemburgo): https://luxasr.uni.lu/
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Licencia OpenMDW: https://www.openmdw.org

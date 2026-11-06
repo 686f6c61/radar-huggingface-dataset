@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `somaankhan/Weedsgalore-Unet` es un U-Net diseñado para la segmentación semántica de malezas en imágenes multiespectrales obtenidas mediante drones (UAV) en campos de maíz, basado en el dataset WeedsGalore. Lo desarrolla el usuario de HuggingFace `somaankhan`, aunque no se proporciona información adicional sobre el autor. El modelo resuelve el problema de la detección precisa de malezas para optimizar el manejo de herbicidas y reducir pérdidas de cosecha, un reto relevante en la agricultura de precisión.
+El modelo `somaankhan/Weedsgalore-Unet` es un U-Net diseñado para la segmentación semántica de malezas en imágenes multiespectrales obtenidas mediante drones (UAV) en campos de maíz, basado en el dataset WeedsGalore. Lo desarrolla el usuario de Hugging Face `somaankhan`, aunque no se proporciona información adicional sobre el autor. El modelo resuelve el problema de la detección precisa de malezas para optimizar el manejo de herbicidas y reducir pérdidas de cosecha, un reto relevante en la agricultura de precisión.
 
-Según la model card, el modelo está entrenado con el dataset WeedsGalore y alcanza un 98% de precisión por píxel y un mIoU de 0.42. Sin embargo, el repositorio de HuggingFace está vacío (0.0 GB, 0 descargas), por lo que no se dispone de los pesos del modelo ni de documentación técnica detallada. No se especifican parámetros totales, arquitectura exacta más allá de "U-Net", ni configuración de entrenamiento. La licencia es MIT, lo que permite uso comercial, pero la falta de artefactos publicados limita su aplicabilidad práctica.
+Según la model card, el modelo está entrenado con el dataset WeedsGalore y alcanza un 98% de precisión por píxel y un mIoU de 0.42. Sin embargo, el repositorio de Hugging Face está vacío (0.0 GB, 0 descargas), por lo que no se dispone de los pesos del modelo ni de documentación técnica detallada. No se especifican parámetros totales, arquitectura exacta más allá de "U-Net", ni configuración de entrenamiento. La licencia es MIT, lo que permite uso comercial, pero la falta de artefactos publicados limita su aplicabilidad práctica.
 
 El modelo es relevante en el contexto de la agricultura de precisión, donde la segmentación de malezas mediante UAV es una técnica emergente para optimizar el uso de insumos y minimizar el impacto ambiental. No obstante, su utilidad real depende de la disponibilidad de los pesos y de la documentación de entrenamiento, que actualmente no se encuentran en el repositorio.
 
@@ -59,7 +59,7 @@ No se dispone de información sobre modelos comparables dentro del mismo context
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío: no hay pesos, código ni documentación adicional, lo que hace el modelo inutilizable en la práctica.
+- El repositorio de Hugging Face está vacío: no hay pesos, código ni documentación adicional, lo que hace el modelo inutilizable en la práctica.
 - La información técnica es mínima; se desconoce el tamaño del modelo, el tipo de datos de entrenamiento y la configuración de entrenamiento, lo que impide evaluar su calidad o reproducibilidad.
 - No se ha verificado el rendimiento declarado (98% pixel acc, 0.42 mIoU) ni se ha comparado con otros modelos.
 - El modelo está entrenado específicamente para imágenes multiespectrales de UAV en campos de maíz del dataset WeedsGalore, por lo que su generalización a otros cultivos, condiciones de iluminación o sensores es incierta.
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables dentro del mismo context
 
 ## Enlaces
 
-- [HuggingFace - somaankhan/Weedsgalore-Unet](https://huggingface.co/somaankhan/Weedsgalore-Unet)
+- [Hugging Face - somaankhan/Weedsgalore-Unet](https://huggingface.co/somaankhan/Weedsgalore-Unet)
 - [Repositorio GitHub WeedsGalore](https://github.com/GFZ/weedsgalore)
 - [Artículo arXiv (2502.13103)](https://arxiv.org/abs/2502.13103)
 - [Artículo HTML en arXiv](https://arxiv.org/html/2502.13103v1)

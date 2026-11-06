@@ -89,7 +89,7 @@ La comparacion directa con otros modelos text-to-SQL es dificil porque los datas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VikramPal/Qwen3.8-27B-text2sql-DynQuant-4bit
+- Hugging Face: https://huggingface.co/VikramPal/Qwen3.8-27B-text2sql-DynQuant-4bit
 - Repositorio DynQuant: https://github.com/kambojvikram/dynquant
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentacion de Cloudflare sobre Qwen3.8-27B: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/

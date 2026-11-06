@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario de HuggingFace `dhanushh011` y esta construido con la libreria stable-baselines3 (SB3) y el framework de entrenamiento RL Zoo, el flujo estandar de la comunidad para reproducir agentes de Atari. No es un modelo de lenguaje: es una politica de control que recibe fotogramas del juego y emite acciones discretas.
+Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario de Hugging Face `dhanushh011` y esta construido con la libreria stable-baselines3 (SB3) y el framework de entrenamiento RL Zoo, el flujo estandar de la comunidad para reproducir agentes de Atari. No es un modelo de lenguaje: es una politica de control que recibe fotogramas del juego y emite acciones discretas.
 
 El agente usa la `CnnPolicy` de SB3 (arquitectura Nature CNN) con apilado de 4 fotogramas, un buffer de repeticion de 100.000 transiciones y un presupuesto de entrenamiento de 1.000.000 de pasos. La unica metrica declarada por el autor es un `mean_reward` de 435,00 +/- 186,86 sobre el propio entorno de entrenamiento, marcada como no verificada.
 
@@ -56,11 +56,11 @@ Los hiperparametros declarados en la model card son: `learning_rate` 0,0001, `bu
 - Docencia y material didactico: un agente DQN de un solo entorno y 1M de pasos es un ejemplo asequible para explicar value-based RL, buffer de repeticion y redes objetivo en un curso.
 - Generacion de demostraciones y videos: la model card incluye el subcomando `enjoy` de RL Zoo, lo que permite renderizar partidas (posible generacion de video en la subida) y usar el agente como demostrador visual.
 - Punto de partida para transferencia: util para experimentar con ajuste fino de la politica en entornos Atari similares con espacio de acciones compatible.
-- Registro comparativo de artefactos: sirve para probar herramientas de catalogo y evaluacion de modelos de HuggingFace en el pipeline de RL (subida, carga desde el Hub y evaluacion automatica).
+- Registro comparativo de artefactos: sirve para probar herramientas de catalogo y evaluacion de modelos de Hugging Face en el pipeline de RL (subida, carga desde el Hub y evaluacion automatica).
 
 ## Benchmarks y rendimiento
 
-Resultados declarados en la model card (no verificados por HuggingFace):
+Resultados declarados en la model card (no verificados por Hugging Face):
 
 | Tarea | Dataset / entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -81,7 +81,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Tipo | Entorno | Parametros | Contexto / observacion | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| dhanushh011/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3, CnnPolicy) | SpaceInvadersNoFrameskip-v4 | no disponible | 4 frames de 84x84 | mean_reward 435,00 +/- 186,86 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| dhanushh011/dqn-SpaceInvadersNoFrameskip-v4 | DQN (SB3, CnnPolicy) | SpaceInvadersNoFrameskip-v4 | no disponible | 4 frames de 84x84 | mean_reward 435,00 +/- 186,86 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Agentes de referencia de RL Zoo (misma libreria) | DQN y otros algoritmos | Varios entornos Atari | no disponible | 4 frames de 84x84 | no disponible en la informacion proporcionada | MIT (libreria RL Zoo) | repositorio publico |
 | Variantes de SB3-Contrib (por ejemplo, C51, QR-DQN, Rainbow) | value-based con distribucion de retorno | Varios entornos Atari | no disponible | 4 frames de 84x84 | no disponible en la informacion proporcionada | MIT (libreria SB3-Contrib) | repositorio publico |
 | PPO (RL Zoo / SB3) | on-policy, policy gradient | SpaceInvadersNoFrameskip-v4 y otros | no disponible | 4 frames de 84x84 | no disponible en la informacion proporcionada | MIT (libreria SB3) | repositorio publico |
@@ -91,7 +91,7 @@ No se dispone de cifras comparativas verificadas en la informacion proporcionada
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion; conviene contactar con el autor antes de cualquier uso en produccion.
-- Metrica no verificada: el `mean_reward` de 435,00 +/- 186,86 lo declara el autor y HuggingFace lo marca como `verified: false`.
+- Metrica no verificada: el `mean_reward` de 435,00 +/- 186,86 lo declara el autor y Hugging Face lo marca como `verified: false`.
 - Varianza muy alta: la desviacion tipica (+/- 186,86) equivale a mas del 40 % de la media, lo que indica una politica inestable entre episodios y un rendimiento poco fiable en evaluaciones individuales.
 - Discrepancia de autoria: el propietario del repositorio es `dhanushh011`, pero los comandos de la model card apuntan a la organizacion `settybhavithav`; la trazabilidad del entrenamiento no esta garantizada.
 - Sin adopcion ni validacion de la comunidad: 0 descargas y 0 "likes" en el momento de la consulta.
@@ -104,7 +104,7 @@ No se dispone de cifras comparativas verificadas en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanushh011/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/dhanushh011/dqn-SpaceInvadersNoFrameskip-v4
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

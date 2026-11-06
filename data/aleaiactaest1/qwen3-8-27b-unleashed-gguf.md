@@ -109,7 +109,7 @@ La comparativa muestra que la cuantizacion dinamica de este repositorio iguala e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AleaiactaEst1/Qwen3.8-27B-Unleashed-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AleaiactaEst1/Qwen3.8-27B-Unleashed-GGUF
 - Modelo base uncensored: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de referencia de cuantizacion: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

@@ -68,10 +68,10 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SabiBERTa-135M-masakhaner2-ibo | 135,9 M | No disponible (entrenado a 256) | NER en igbo | No disponible (heredera del base) | HuggingFace, 0 descargas |
-| BeardedMonster/SabiBERTa-135M (base) | No disponible | No disponible | Encoder de propósito general | No disponible | HuggingFace |
-| XLM-RoBERTa-base | ~278 M (dato público, no de la información proporcionada) | 512 | Encoder multilingüe; requiere ajuste fino para NER | MIT según documentación pública | HuggingFace |
-| mBERT | ~178 M (dato público, no de la información proporcionada) | 512 | Encoder multilingüe; requiere ajuste fino para NER | Apache 2.0 según documentación pública | HuggingFace |
+| SabiBERTa-135M-masakhaner2-ibo | 135,9 M | No disponible (entrenado a 256) | NER en igbo | No disponible (heredera del base) | Hugging Face, 0 descargas |
+| BeardedMonster/SabiBERTa-135M (base) | No disponible | No disponible | Encoder de propósito general | No disponible | Hugging Face |
+| XLM-RoBERTa-base | ~278 M (dato público, no de la información proporcionada) | 512 | Encoder multilingüe; requiere ajuste fino para NER | MIT según documentación pública | Hugging Face |
+| mBERT | ~178 M (dato público, no de la información proporcionada) | 512 | Encoder multilingüe; requiere ajuste fino para NER | Apache 2.0 según documentación pública | Hugging Face |
 
 No hay datos de benchmark de estos comparadores sobre el protocolo `ibo` de MasakhaNER 2.0 en la información disponible, por lo que no es posible establecer una comparación de rendimiento directa. Las cifras de parámetros y contexto de XLM-RoBERTa-base y mBERT proceden de documentación pública general y deben verificarse antes de citarlas.
 
@@ -89,6 +89,6 @@ No hay datos de benchmark de estos comparadores sobre el protocolo `ibo` de Masa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-ibo
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-ibo
 - Modelo base: https://huggingface.co/BeardedMonster/SabiBERTa-135M
 - Resultados de búsqueda web: no se encontraron enlaces relevantes; los resultados devueltos trataban sobre atajos de teclado para la letra «É» y no guardan relación con el modelo.

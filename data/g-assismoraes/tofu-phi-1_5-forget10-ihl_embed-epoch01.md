@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch01 | 1,4 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Checkpoint de unlearning, requiere `custom_code` |
-| locuslab/tofu_ft_phi-1.5 | 1,4 B | no disponible | Apache 2.0 | HuggingFace | Modelo base ajustado con TOFU, sin olvido |
-| microsoft/phi-1_5 | 1,3 B | 2.048 tokens (según documentación pública de Phi-1.5) | MIT | HuggingFace | Modelo original de Microsoft, sin ajuste TOFU |
-| locuslab/tofu_llama2-7b | 7 B | no disponible | Llama 2 | HuggingFace | Alternativa de mayor tamaño para experimentos TOFU |
+| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch01 | 1,4 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Checkpoint de unlearning, requiere `custom_code` |
+| locuslab/tofu_ft_phi-1.5 | 1,4 B | no disponible | Apache 2.0 | Hugging Face | Modelo base ajustado con TOFU, sin olvido |
+| microsoft/phi-1_5 | 1,3 B | 2.048 tokens (según documentación pública de Phi-1.5) | MIT | Hugging Face | Modelo original de Microsoft, sin ajuste TOFU |
+| locuslab/tofu_llama2-7b | 7 B | no disponible | Llama 2 | Hugging Face | Alternativa de mayor tamaño para experimentos TOFU |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch01
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch01
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

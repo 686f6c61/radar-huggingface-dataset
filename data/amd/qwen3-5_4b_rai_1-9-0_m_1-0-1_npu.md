@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con al
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar.
 - Idioma: solo se declara soporte de ingles; el rendimiento en castellano no esta garantizado.
 - Dependencia de hardware: el artefacto esta compilado para NPU Ryzen AI con RAI 1.9.0; no es portable a otras plataformas sin reconversion.
 - Riesgo de alucinacion: inherente a los LLM de esta escala; no se documentan mitigaciones especificas.
@@ -82,5 +82,5 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen3.5_4B_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3.5_4B_rai_1.9.0_m_1.0.1_npu
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

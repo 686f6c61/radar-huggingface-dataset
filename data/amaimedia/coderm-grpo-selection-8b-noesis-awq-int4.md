@@ -80,7 +80,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AMAImedia/CodeRM-GRPO-Selection-8B-NOESIS-AWQ-INT4
+- Modelo en Hugging Face: https://huggingface.co/AMAImedia/CodeRM-GRPO-Selection-8B-NOESIS-AWQ-INT4
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Organización AMAImedia: https://huggingface.co/AMAImedia
 - Sitio web de AMAImedia: https://AMAImedia.com

@@ -4,7 +4,7 @@
 
 Jeethu/Lizzy-7B-PARO es un modelo de generación de texto en inglés, obtenido mediante cuantización INT4 del modelo base flwrlabs/Lizzy-7B utilizando la técnica ParoQuant. ParoQuant es un método de cuantización por rotación por pares (pairwise rotation) que busca cerrar la brecha de precisión con FP16 manteniendo velocidades de inferencia cercanas a AWQ. El modelo está pensado para entornos donde se requiere eficiencia de memoria sin sacrificar demasiado la calidad de las respuestas.
 
-El modelo se distribuye con licencia Apache-2.0, en formato safetensors, y está orientado a tareas de texto conversacional. Aunque el nombre sugiere 7B parámetros, el archivo de pesos registrado en HuggingFace indica 1.703.227.392 parámetros (aproximadamente 1.7B), lo que sugiere que el modelo base podría tener una arquitectura más pequeña o que el dato corresponde a la representación cuantizada. No se dispone de información adicional sobre la arquitectura interna, el contexto máximo o los datos de entrenamiento del modelo original.
+El modelo se distribuye con licencia Apache-2.0, en formato safetensors, y está orientado a tareas de texto conversacional. Aunque el nombre sugiere 7B parámetros, el archivo de pesos registrado en Hugging Face indica 1.703.227.392 parámetros (aproximadamente 1.7B), lo que sugiere que el modelo base podría tener una arquitectura más pequeña o que el dato corresponde a la representación cuantizada. No se dispone de información adicional sobre la arquitectura interna, el contexto máximo o los datos de entrenamiento del modelo original.
 
 La relevancia de este modelo radica en la aplicación de ParoQuant, una técnica de cuantización reciente que promete alta eficiencia en GPUs NVIDIA (vLLM, Transformers) y Apple Silicon (MLX). Al ser una versión cuantizada, es adecuada para despliegues en hardware con recursos limitados, aunque se desconoce su rendimiento real al no publicarse benchmarks específicos.
 
@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeethu/Lizzy-7B-PARO
+- Hugging Face: https://huggingface.co/Jeethu/Lizzy-7B-PARO
 - Paper arXiv: https://arxiv.org/abs/2511.10645
 - Blog de ParoQuant: https://paroquant.z-lab.ai
 - Coleccion de modelos ParoQuant: https://huggingface.co/collections/z-lab/paroquant

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-modular-reasoning-0p5b-g6p5-demo es un checkpoint de investigación publicado por el usuario E6E831728 en HuggingFace. Se presenta como un núcleo de razonamiento sin atención (attention-free) que integra elementos externos tipados mediante un mecanismo de ensamblado residual conmutativo. El repositorio tiene un tamano de 2,0 GB y contiene 505.353.758 valores tensoriales almacenados en safetensors, de los cuales aproximadamente 504.567.326 corresponden a parametros y 786.432 a valores de búfer fijo.
+modular-reasoning-0p5b-g6p5-demo es un checkpoint de investigación publicado por el usuario E6E831728 en Hugging Face. Se presenta como un núcleo de razonamiento sin atención (attention-free) que integra elementos externos tipados mediante un mecanismo de ensamblado residual conmutativo. El repositorio tiene un tamano de 2,0 GB y contiene 505.353.758 valores tensoriales almacenados en safetensors, de los cuales aproximadamente 504.567.326 corresponden a parametros y 786.432 a valores de búfer fijo.
 
 El modelo no es un LM generico al uso. La propia model card distingue de forma explicita dos modos de funcionamiento: al cargarse como un causal LM estandar, el nucleo funciona sin memoria externa ni elementos de maquina virtual; el resultado de "attachment" G6.5 requiere el protocolo de elementos externos tipados que se demuestra en `attachment_demo/`. Por tanto, las evaluaciones estandar (HellaSwag, MMLU, WikiText) y la demo de attachment miden modos operativos distintos y no son comparables entre si.
 
@@ -129,7 +129,7 @@ Comparativa de rendimiento: no disponible. La model card de este checkpoint no c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/E6E831728/modular-reasoning-0p5b-g6p5-demo
+- Modelo en Hugging Face: https://huggingface.co/E6E831728/modular-reasoning-0p5b-g6p5-demo
 - Directorio de demostracion incluido en el repositorio: `attachment_demo/` (contiene `qa/`, `cache/`, `growth_results.json`, `run_attachment_demo.py`)
 - Paper asociado: no disponible
 - Blog o articulo tecnico: no disponible

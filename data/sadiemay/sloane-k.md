@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SadieMay/sloane-k es un repositorio publicado en HuggingFace por el usuario SadieMay bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,2 GB y, en el momento de la consulta, registra 0 descargas y 0 "likes". La model card asociada no contiene mas informacion que la declaracion de licencia (`license: apache-2.0`), sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto.
+SadieMay/sloane-k es un repositorio publicado en Hugging Face por el usuario SadieMay bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,2 GB y, en el momento de la consulta, registra 0 descargas y 0 "likes". La model card asociada no contiene mas informacion que la declaracion de licencia (`license: apache-2.0`), sin descripcion del modelo, arquitectura, datos de entrenamiento ni uso previsto.
 
 No se dispone de informacion sobre el problema que resuelve, su arquitectura, su numero de parametros, su longitud de contexto o sus idiomas soportados. Las fechas de creacion y ultima actualizacion registradas son el 12 de octubre de 2026 y el 12 de octubre de 2026 respectivamente, con apenas dos minutos de diferencia entre ambas, lo que sugiere una publicacion sin desarrollo posterior documentado.
 
@@ -25,7 +25,7 @@ Otros metadatos verificables:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | SadieMay/sloane-k |
+| Identificador en Hugging Face | SadieMay/sloane-k |
 | Autor | SadieMay |
 | Tamano del repositorio | 0,2 GB |
 | Descargas | 0 |
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SadieMay/sloane-k | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| SadieMay/sloane-k | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SadieMay/sloane-k
+- Repositorio en Hugging Face: https://huggingface.co/SadieMay/sloane-k
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

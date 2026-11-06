@@ -2,11 +2,11 @@
 
 ## Resumen
 
-haideraliuk/sentiment-model es un modelo de clasificacion de texto obtenido por ajuste fino (fine-tuning) de distilbert-base-uncased, publicado por el usuario haideraliuk en HuggingFace. Se distribuye como un clasificador de sentimiento listo para usar con la libreria transformers y el pipeline text-classification, con pesos en formato safetensors y licencia Apache 2.0.
+haideraliuk/sentiment-model es un modelo de clasificacion de texto obtenido por ajuste fino (fine-tuning) de distilbert-base-uncased, publicado por el usuario haideraliuk en Hugging Face. Se distribuye como un clasificador de sentimiento listo para usar con la libreria transformers y el pipeline text-classification, con pesos en formato safetensors y licencia Apache 2.0.
 
 El modelo es una destilacion de BERT con arquitectura transformer encoder-only, 66.955.779 parametros totales (aproximadamente 67 millones) y un repositorio de 0,3 GB. Al heredar la configuracion de distilbert-base-uncased, trabaja con una longitud maxima de secuencia de 512 tokens y un vocabulario WordPiece en minusculas orientado a ingles. No se especifica en la model card el numero de clases de salida ni la taxonomia de etiquetas.
 
-Su relevancia es practica mas que investigadora: es un ejemplo tipico de ajuste fino ligero (3 epocas, learning rate 2e-05, batch de 32, optimizador AdamW con betas 0.9/0.999) que cabe en una GPU de consumo o incluso en CPU. La informacion publicada es muy incompleta: no se documenta el dataset de entrenamiento, ni los usos previstos, ni las limitaciones, y la model card es la plantilla autogenerada por el Trainer de HuggingFace. Los unicos datos de evaluacion disponibles son los declarados por el autor: loss 0,7397, accuracy 0,6713, F1 weighted 0,6673 y F1 macro 0,6673.
+Su relevancia es practica mas que investigadora: es un ejemplo tipico de ajuste fino ligero (3 epocas, learning rate 2e-05, batch de 32, optimizador AdamW con betas 0.9/0.999) que cabe en una GPU de consumo o incluso en CPU. La informacion publicada es muy incompleta: no se documenta el dataset de entrenamiento, ni los usos previstos, ni las limitaciones, y la model card es la plantilla autogenerada por el Trainer de Hugging Face. Los unicos datos de evaluacion disponibles son los declarados por el autor: loss 0,7397, accuracy 0,6713, F1 weighted 0,6673 y F1 macro 0,6673.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Otros datos: pipeline text-classification, libreria transformers, modelo base di
 
 La arquitectura corresponde a DistilBERT: un transformer encoder-only de 6 capas, 768 dimensiones ocultas y 12 cabezas de atencion, resultado de destilar las 12 capas de bert-base-uncased reduciendo el tamano aproximadamente un 40 por ciento y manteniendo el rendimiento en tareas de comprension. Sobre ese backbone se anade una cabeza de clasificacion de secuencia. No se documenta ninguna innovacion adicional: no hay atencion lineal, ni decodificacion especulativa, ni modo de razonamiento, ni capas de mezcla de expertos.
 
-El entrenamiento se realizo con el Trainer de HuggingFace segun los hiperparametros declarados: learning rate 2e-05, train_batch_size 32, eval_batch_size 32, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y 3 epocas. El dataset de entrenamiento no se especifica ("on an unknown dataset"), y tampoco se detalla su composicion, tamano ni proceso de anotacion. No hay evidencia de RLHF, DPO ni tecnicas de alineacion adicionales, algo esperable en un clasificador de este tipo. A partir del numero de pasos por epoca (58) y del batch de 32, se puede estimar un conjunto de entrenamiento de aproximadamente 1.856 ejemplos, aunque es una inferencia, no un dato declarado.
+El entrenamiento se realizo con el Trainer de Hugging Face segun los hiperparametros declarados: learning rate 2e-05, train_batch_size 32, eval_batch_size 32, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal y 3 epocas. El dataset de entrenamiento no se especifica ("on an unknown dataset"), y tampoco se detalla su composicion, tamano ni proceso de anotacion. No hay evidencia de RLHF, DPO ni tecnicas de alineacion adicionales, algo esperable en un clasificador de este tipo. A partir del numero de pasos por epoca (58) y del batch de 32, se puede estimar un conjunto de entrenamiento de aproximadamente 1.856 ejemplos, aunque es una inferencia, no un dato declarado.
 
 La evolucion del entrenamiento muestra sobreajuste leve a partir de la segunda epoca: la perdida de validacion baja de 0,8376 (epoca 1) a 0,7155 (epoca 2) y repunta a 0,7118 (epoca 3), mientras la accuracy de validacion se estanca en 0,6883 desde la segunda epoca. Version de framework declarada: Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5, Tokenizers 0.23.1.
 
@@ -36,7 +36,7 @@ La evolucion del entrenamiento muestra sobreajuste leve a partir de la segunda e
 - Clasificacion de texto: el modelo devuelve etiquetas de sentimiento para una secuencia de entrada mediante el pipeline text-classification de transformers.
 - Analisis de polaridad en textos cortos y medios: la ventana de 512 tokens de distilbert-base-uncased permite procesar resenas, tuits, titulares o parrafos completos, aunque con truncado por encima de ese limite.
 - Inferencia por lotes: al ser un encoder de 67 millones de parametros, permite procesar grandes volumenes de documentos en GPU o CPU con un coste computacional bajo.
-- Integracion con el ecosistema HuggingFace: compatible con transformers, con el tag endpoints_compatible y con la carga estandar AutoModelForSequenceClassification / AutoTokenizer.
+- Integracion con el ecosistema Hugging Face: compatible con transformers, con el tag endpoints_compatible y con la carga estandar AutoModelForSequenceClassification / AutoTokenizer.
 - Generacion de texto: no soportada. Es un modelo encoder-only sin cabeza de lenguaje.
 - Razonamiento, matematicas y codigo: no soportados ni documentados.
 - Tool calling, function calling y uso como agente: no soportados. No hay modo de razonamiento multi-paso ni plantilla de mensajes.
@@ -84,7 +84,7 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ningun benchmark estandar, y e
 - GPU de consumo: cabe holgadamente en cualquier GPU con 2 GB o mas de VRAM (GTX 1650, RTX 3060, RTX 4090). Tambien cabe en iGPU y en CPU.
 - GPU de datacenter: A100, H100 o L4 son sobredimensionadas para una sola instancia, aunque utiles para servir miles de peticiones por segundo con batching dinamico.
 - CPU: es perfectamente viable; con batch pequeno se pueden esperar decenas o cientos de inferencias por segundo en CPU moderna, aunque no se publican mediciones de latencia ni throughput.
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (tag endpoints_compatible), Text Embeddings Inference/Text Generation Inference no aplica a clasificadores de este tipo, ONNX Runtime, TorchScript, torch.compile, FastAPI con Uvicorn, o exportacion manual a formatos cuantizados.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (tag endpoints_compatible), Text Embeddings Inference/Text Generation Inference no aplica a clasificadores de este tipo, ONNX Runtime, TorchScript, torch.compile, FastAPI con Uvicorn, o exportacion manual a formatos cuantizados.
 - vLLM no es la via recomendada para un encoder-only clasificador; herramientas como ONNX Runtime o servicios HTTP propios ofrecen mejor relacion coste/prestaciones.
 - No se publican cifras de latencia ni de throughput por parte del autor.
 
@@ -92,10 +92,10 @@ No hay resultados de MMLU, HumanEval, GSM8K ni de ningun benchmark estandar, y e
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en la tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| haideraliuk/sentiment-model | 66,9 M | 512 tokens (heredado del base) | Apache 2.0 | accuracy 0,6713 declarada por el autor en un conjunto no especificado | HuggingFace, 0 descargas, 0 likes |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Apache 2.0 | no disponible en la informacion proporcionada | HuggingFace, modelo de referencia ampliamente usado |
-| bert-base-uncased ajustado para clasificacion | 110 M | 512 tokens | Apache 2.0 | no disponible en la informacion proporcionada | HuggingFace, requiere ajuste fino propio o un derivado de la comunidad |
-| roberta-base ajustado para clasificacion | 125 M | 512 tokens | MIT | no disponible en la informacion proporcionada | HuggingFace, requiere ajuste fino propio o un derivado de la comunidad |
+| haideraliuk/sentiment-model | 66,9 M | 512 tokens (heredado del base) | Apache 2.0 | accuracy 0,6713 declarada por el autor en un conjunto no especificado | Hugging Face, 0 descargas, 0 likes |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Apache 2.0 | no disponible en la informacion proporcionada | Hugging Face, modelo de referencia ampliamente usado |
+| bert-base-uncased ajustado para clasificacion | 110 M | 512 tokens | Apache 2.0 | no disponible en la informacion proporcionada | Hugging Face, requiere ajuste fino propio o un derivado de la comunidad |
+| roberta-base ajustado para clasificacion | 125 M | 512 tokens | MIT | no disponible en la informacion proporcionada | Hugging Face, requiere ajuste fino propio o un derivado de la comunidad |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. DistilBERT ofrece el menor coste de inferencia del grupo a cambio de una capacidad algo inferior a BERT base y RoBERTa base en tareas dificiles.
 
@@ -117,7 +117,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haideraliuk/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/haideraliuk/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (arquitectura del modelo base): https://arxiv.org/abs/1910.01108
 - Repositorio de transformers: https://github.com/huggingface/transformers

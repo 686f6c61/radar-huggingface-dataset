@@ -21,7 +21,7 @@ Es relevante ahora porque amplía el ecosistema MLX (Apple Silicon) a modelos Mo
 | Licencia | LFM Open License v1.0 (`license: other`, `license_name: lfm1.0`); se incluye el fichero LICENSE original |
 | Formato de pesos | safetensors (formato MLX); tamaño del repo 24,7 GB |
 
-Otros datos de la ficha de HuggingFace: pipeline `text-generation`, librería `mlx`, 0 descargas y 0 likes en el momento del registro, creado el 2026-10-13, modelo base `lq-preview/LFM2.5-24B-A2B-Preview` fijado a la revisión `f772950ce6f17d35af5469d00334b61a9c2fc034`, región `us`.
+Otros datos de la ficha de Hugging Face: pipeline `text-generation`, librería `mlx`, 0 descargas y 0 likes en el momento del registro, creado el 2026-10-13, modelo base `lq-preview/LFM2.5-24B-A2B-Preview` fijado a la revisión `f772950ce6f17d35af5469d00334b61a9c2fc034`, región `us`.
 
 ## Arquitectura y entrenamiento
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/LFM2.5-24B-A2B-Preview-mxfp8 | 23,97B totales | 131.072 tokens | MLX safetensors, MXFP8 8 bits | LFM Open License v1.0 | HuggingFace, 0 descargas al registrar la ficha |
-| mlx-community/LFM2.5-24B-A2B-Preview-mxfp8 | 23,97B totales | 131.072 tokens | MLX safetensors, MXFP8 8 bits | LFM Open License v1.0 | HuggingFace; según la model card, ficheros idénticos a los de nativ-community |
-| lq-preview/LFM2.5-24B-A2B-Preview | 23,97B totales (derivado del recuento de la versión cuantizada) | 131.072 tokens | Safetensors en BF16 (modelo base) | LFM Open License v1.0 | HuggingFace, revisión `f772950ce6f17d35af5469d00334b61a9c2fc034` |
+| nativ-community/LFM2.5-24B-A2B-Preview-mxfp8 | 23,97B totales | 131.072 tokens | MLX safetensors, MXFP8 8 bits | LFM Open License v1.0 | Hugging Face, 0 descargas al registrar la ficha |
+| mlx-community/LFM2.5-24B-A2B-Preview-mxfp8 | 23,97B totales | 131.072 tokens | MLX safetensors, MXFP8 8 bits | LFM Open License v1.0 | Hugging Face; según la model card, ficheros idénticos a los de nativ-community |
+| lq-preview/LFM2.5-24B-A2B-Preview | 23,97B totales (derivado del recuento de la versión cuantizada) | 131.072 tokens | Safetensors en BF16 (modelo base) | LFM Open License v1.0 | Hugging Face, revisión `f772950ce6f17d35af5469d00334b61a9c2fc034` |
 | Alternativas MoE de terceros de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de comparación en la información proporcionada |
 
 No se dispone de información sobre otros modelos comparables (por ejemplo, otros MoE de ~20-30B parámetros) en las fuentes proporcionadas, por lo que no se incluyen cifras de rendimiento comparado.
@@ -89,7 +89,7 @@ No se dispone de información sobre otros modelos comparables (por ejemplo, otro
 
 ## Enlaces
 
-- Modelo en HuggingFace (nativ-community): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-mxfp8
+- Modelo en Hugging Face (nativ-community): https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-mxfp8
 - Misma exportación en la organización mlx-community: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-mxfp8
 - Modelo base original: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

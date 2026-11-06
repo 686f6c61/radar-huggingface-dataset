@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `blackdaqlabs/Aurek` es un modelo publicado en HuggingFace por el usuario `blackdaqlabs` el 2 de septiembre de 2026. La model card asociada únicamente declara la licencia Apache 2.0, sin proporcionar ninguna otra información técnica, arquitectónica o de uso. No se dispone de datos sobre el tipo de modelo, su tamaño, arquitectura, idiomas soportados, ni sobre sus capacidades. Tampoco se han encontrado referencias externas fiables que vinculen este identificador con un modelo concreto; las búsquedas web devuelven resultados homónimos no relacionados (un framework recursivo llamado Aurek, una empresa de biotecnología, etc.). Por tanto, esta ficha se limita a documentar la ausencia de información pública y a advertir sobre la imposibilidad de evaluar el modelo en su estado actual.
+El modelo `blackdaqlabs/Aurek` es un modelo publicado en Hugging Face por el usuario `blackdaqlabs` el 2 de septiembre de 2026. La model card asociada únicamente declara la licencia Apache 2.0, sin proporcionar ninguna otra información técnica, arquitectónica o de uso. No se dispone de datos sobre el tipo de modelo, su tamaño, arquitectura, idiomas soportados, ni sobre sus capacidades. Tampoco se han encontrado referencias externas fiables que vinculen este identificador con un modelo concreto; las búsquedas web devuelven resultados homónimos no relacionados (un framework recursivo llamado Aurek, una empresa de biotecnología, etc.). Por tanto, esta ficha se limita a documentar la ausencia de información pública y a advertir sobre la imposibilidad de evaluar el modelo en su estado actual.
 
 ## Especificaciones tecnicas
 
@@ -46,11 +46,11 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 - La model card no contiene ninguna descripción técnica, por lo que se desconoce por completo el comportamiento del modelo.
 - No se ha publicado información sobre sesgos, riesgos de alucinación o limitaciones de contexto o idioma.
 - La licencia Apache 2.0 permite uso comercial, pero sin documentación no se puede garantizar la idoneidad del modelo para ningún caso de uso.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido evaluado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido evaluado por la comunidad.
 - Se recomienda encarecidamente no utilizar este modelo en producción sin antes obtener información adicional del autor o realizar una evaluación independiente.
 
 ## Enlaces
 
-- [HuggingFace: blackdaqlabs/Aurek](https://huggingface.co/blackdaqlabs/Aurek)
+- [Hugging Face: blackdaqlabs/Aurek](https://huggingface.co/blackdaqlabs/Aurek)
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, demos) que estén asociados de forma inequívoca a este modelo.

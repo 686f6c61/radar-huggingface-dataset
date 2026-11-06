@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "heeraku/smolvla_puzzle_cat_mix_v4_60k",
+  "slug": "heeraku-smolvla_puzzle_cat_mix_v4_60k",
+  "author": "heeraku",
+  "url": "https://huggingface.co/heeraku/smolvla_puzzle_cat_mix_v4_60k",
+  "created_at": "2026-11-04T16:34:13.000Z",
+  "updated_at": "2026-11-04T20:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:heeraku/puzzle-cat-mix-v4",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 7916339760,
+  "storage_human": "7.9 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "heeraku/smolvla_puzzle_cat_mix_v4_60k · Hugging Face",
+      "url": "https://huggingface.co/heeraku/smolvla_puzzle_cat_mix_v4_60k",
+      "snippet": "heeraku/puzzle-cat-mix-v4 ... SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics"
+    },
+    {
+      "title": "heeraku (heerak kim) - Hugging Face",
+      "url": "https://huggingface.co/heeraku/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 10 days ago ... published a model 10 days ago"
+    }
+  ]
+}

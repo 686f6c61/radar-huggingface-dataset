@@ -70,8 +70,8 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace (original): https://huggingface.co/AI4Chem/ChemVLM-8B
-- Modelo en HuggingFace (espejo consultado): https://huggingface.co/introvoyz041/ChemVLM-8B
+- Modelo en Hugging Face (original): https://huggingface.co/AI4Chem/ChemVLM-8B
+- Modelo en Hugging Face (espejo consultado): https://huggingface.co/introvoyz041/ChemVLM-8B
 - Paper (arXiv): https://huggingface.co/papers/2408.07246
 - Repositorio GitHub: https://github.com/AI4Chem/ChemVlm
 - Dataset de entrenamiento SFT: https://huggingface.co/datasets/di-zhang-fdu/chemvlm-sft-datasets

@@ -65,8 +65,8 @@ No se dispone de datos verificados de rendimiento para este modelo ni para alter
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Heliactis-1-4B | 4,11 B | No disponible | No disponible | Apache 2.0 | HuggingFace, pesos safetensors fp16 + GGUF F16 |
-| Spark-X2.5-4B (modelo base) | No disponible | No disponible | No disponible | Apache 2.0 (heredada) | HuggingFace |
+| Heliactis-1-4B | 4,11 B | No disponible | No disponible | Apache 2.0 | Hugging Face, pesos safetensors fp16 + GGUF F16 |
+| Spark-X2.5-4B (modelo base) | No disponible | No disponible | No disponible | Apache 2.0 (heredada) | Hugging Face |
 | Alternativas de la misma categoría (~4 B) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se incluyen otros modelos comparables porque la búsqueda no ha aportado cifras verificables sobre ellos en el material disponible.
@@ -87,7 +87,7 @@ No se incluyen otros modelos comparables porque la búsqueda no ha aportado cifr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApollonLabs/Heliactis-1-4B
+- Modelo en Hugging Face: https://huggingface.co/ApollonLabs/Heliactis-1-4B
 - Repositorio GGUF con la ficha completa: https://huggingface.co/ApollonLabs/Heliactis-1-4B-GGUF
 - Lista de tokens prohibidos (`ban-ids.json`): https://huggingface.co/ApollonLabs/Heliactis-1-4B-GGUF (dentro del repositorio, según la ficha)
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B

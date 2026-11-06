@@ -6,7 +6,7 @@ H3-LongVideos es un paquete de nodos personalizados para ComfyUI que permite gen
 
 La relevancia del paquete reside en que aborda los problemas típicos del encadenamiento manual: duplicación de personajes cuando el prompt los menciona más de una vez, cambios de vestuario entre tomas, movimiento de boca sin diálogo, reapariciones de personajes que ya salieron de cuadro y agotamiento de VRAM en cadenas largas. Todo se gestiona en la capa de ensamblado de prompts y de gestión de memoria, sin necesidad de dependencias externas ni instalaciones adicionales más allá de ComfyUI 0.30+ con soporte nativo para MiniMax-H3.
 
-El repositorio en HuggingFace no contiene el modelo en sí, sino el código fuente del paquete de nodos (archivos Python, tests y documentación). El modelo base es MiniMaxAI/MiniMax-H3, cargado a través de los loaders estándar de ComfyUI. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones.
+El repositorio en Hugging Face no contiene el modelo en sí, sino el código fuente del paquete de nodos (archivos Python, tests y documentación). El modelo base es MiniMaxAI/MiniMax-H3, cargado a través de los loaders estándar de ComfyUI. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones.
 
 ## Especificaciones tecnicas
 
@@ -78,6 +78,6 @@ No disponible. No se ha proporcionado informacion sobre alternativas comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Smite79/MiniMax-H3-Longvideos
+- Repositorio Hugging Face: https://huggingface.co/Smite79/MiniMax-H3-Longvideos
 - Modelo base (referenciado): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Integracion opcional RTX Nodes (referenciada): https://github.com/Comfy-Org/Nvidia_RTX_Nodes_ComfyUI

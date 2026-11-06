@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOv8s PPE es un detector de objetos derivado de la arquitectura YOLOv8 en su variante "s" (small), especializado en la detección de equipos de protección individual (EPI) y maquinaria en entornos de obra. El paquete ha sido compilado en formato BF16 para su ejecución sobre hardware SiMa.ai Modalix, y se distribuye como un archivo comprimido (`.tar.gz`) que debe cargarse a través de un runtime Neat compatible. Lo publica el usuario `jainarchita` en HuggingFace, aunque el checkpoint original procede del trabajo de HinePo, entrenado sobre el dataset público Construction Site Safety de Roboflow.
+YOLOv8s PPE es un detector de objetos derivado de la arquitectura YOLOv8 en su variante "s" (small), especializado en la detección de equipos de protección individual (EPI) y maquinaria en entornos de obra. El paquete ha sido compilado en formato BF16 para su ejecución sobre hardware SiMa.ai Modalix, y se distribuye como un archivo comprimido (`.tar.gz`) que debe cargarse a través de un runtime Neat compatible. Lo publica el usuario `jainarchita` en Hugging Face, aunque el checkpoint original procede del trabajo de HinePo, entrenado sobre el dataset público Construction Site Safety de Roboflow.
 
 El modelo no es un transformer generativo ni un modelo de lenguaje: es un detector de objetos convolucional con seis cabezas de detección crudas que requiere un decodificador YOLOv8 específico (`neat-yolo26-ppe.json`) y un mapeo de clases para interpretar sus salidas. Su relevancia es acotada: sirve como artefacto de despliegue para demos de seguridad laboral en el acelerador Modalix, no como modelo de propósito general.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jainarchita/ppe-yolov8s-bf16-modalix | YOLOv8s compilado BF16 para Modalix | no disponible | Imagen 640 × 640, batch 1 | no disponible | HuggingFace (paquete binario) |
+| jainarchita/ppe-yolov8s-bf16-modalix | YOLOv8s compilado BF16 para Modalix | no disponible | Imagen 640 × 640, batch 1 | no disponible | Hugging Face (paquete binario) |
 | YOLOv8s estándar (Ultralytics) | YOLOv8s | ~11,2 M (dato de referencia externo) | Imagen 640 × 640 | AGPL-3.0 (Ultralytics) | Repositorio oficial Ultralytics |
 | Checkpoint fuente HinePo (`best.pt`) | YOLOv8s fine-tuned PPE | no disponible | Imagen 640 × 640 | no disponible | No distribuido en este repo; referenciado en provenance.json |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo (mAP, latencia) para ninguno d
 
 ## Enlaces
 
-- [HuggingFace: jainarchita/ppe-yolov8s-bf16-modalix](https://huggingface.co/jainarchita/ppe-yolov8s-bf16-modalix)
+- [Hugging Face: jainarchita/ppe-yolov8s-bf16-modalix](https://huggingface.co/jainarchita/ppe-yolov8s-bf16-modalix)
 - [Notebook de entrenamiento (Kaggle, HinePo)](https://www.kaggle.com/code/hinepo/yolov8-finetuning-for-ppe-detection)
 - [Notebook de inferencia (Kaggle, HinePo)](https://www.kaggle.com/code/hinepo/yolov8-inference-for-red-zone-application)
 - [Dataset Construction Site Safety (Kaggle, Roboflow)](https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow)

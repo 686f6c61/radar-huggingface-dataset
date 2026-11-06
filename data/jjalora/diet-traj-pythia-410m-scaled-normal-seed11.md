@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jjalora/diet-traj-pythia-410m-scaled-normal-seed11` es un checkpoint de investigación publicado en HuggingFace por el usuario jjalora dentro de la campaña de espacio de pesos denominada DIET. No es un modelo pensado para uso productivo, sino una reproducción desde cero del receta de preentrenamiento de Pythia-410M de EleutherAI, en la que únicamente varían la semilla aleatoria (seed 11) y el esquema de inicialización de pesos (`scaled_normal`, en lugar del `small_init` + `wang_init` que usa Pythia). El objetivo es estudiar trayectorias de entrenamiento y la influencia de la inicialización en el espacio de pesos.
+`jjalora/diet-traj-pythia-410m-scaled-normal-seed11` es un checkpoint de investigación publicado en Hugging Face por el usuario jjalora dentro de la campaña de espacio de pesos denominada DIET. No es un modelo pensado para uso productivo, sino una reproducción desde cero del receta de preentrenamiento de Pythia-410M de EleutherAI, en la que únicamente varían la semilla aleatoria (seed 11) y el esquema de inicialización de pesos (`scaled_normal`, en lugar del `small_init` + `wang_init` que usa Pythia). El objetivo es estudiar trayectorias de entrenamiento y la influencia de la inicialización en el espacio de pesos.
 
 El modelo emplea la arquitectura GPT-NeoX (transformer decoder-only) con 405.334.016 parámetros reales según los safetensors, muy próximo a los 410M nominales de Pythia. Se entrena sobre el mismo flujo de tokens y en el mismo orden que Pythia (`EleutherAI/pile-standard-pythia-preshuffled`), con AdamW, learning rate 3e-4, cosine decay hasta 3e-5 durante 143.000 pasos y batch global de 1024 secuencias de 2048 tokens.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| diet-traj-pythia-410m-scaled-normal-seed11 | 405.334.016 | no disponible (receta Pythia: 2048) | apache-2.0 | HuggingFace | Run de investigación con inicialización y semilla alternativas |
-| EleutherAI/pythia-410m | ~410M | 2048 | apache-2.0 | HuggingFace | Modelo de referencia del que deriva la receta; incluye checkpoints intermedios |
-| EleutherAI/pythia-160m | ~160M | 2048 | apache-2.0 | HuggingFace | Alternativa más pequeña de la misma familia |
-| EleutherAI/pythia-1b | ~1B | 2048 | apache-2.0 | HuggingFace | Alternativa mayor de la misma familia |
+| diet-traj-pythia-410m-scaled-normal-seed11 | 405.334.016 | no disponible (receta Pythia: 2048) | apache-2.0 | Hugging Face | Run de investigación con inicialización y semilla alternativas |
+| EleutherAI/pythia-410m | ~410M | 2048 | apache-2.0 | Hugging Face | Modelo de referencia del que deriva la receta; incluye checkpoints intermedios |
+| EleutherAI/pythia-160m | ~160M | 2048 | apache-2.0 | Hugging Face | Alternativa más pequeña de la misma familia |
+| EleutherAI/pythia-1b | ~1B | 2048 | apache-2.0 | Hugging Face | Alternativa mayor de la misma familia |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-normal-seed11
+- Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-normal-seed11
 - Repositorio de Pythia (receta de referencia): https://github.com/EleutherAI/pythia
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled
 - Modelo de referencia Pythia-410M: https://huggingface.co/EleutherAI/pythia-410m

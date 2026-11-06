@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "jwlutz/qwen35-9b-abliterated-edge",
+  "slug": "jwlutz-qwen35-9b-abliterated-edge",
+  "author": "jwlutz",
+  "url": "https://huggingface.co/jwlutz/qwen35-9b-abliterated-edge",
+  "created_at": "2026-11-05T19:47:41.000Z",
+  "updated_at": "2026-11-05T20:21:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "edge",
+    "llama-cpp",
+    "text-generation",
+    "base_model:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 8803977600,
+  "storage_human": "8.8 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwlutz/qwen35-9b-abliterated-edge · Hugging Face",
+      "url": "https://huggingface.co/jwlutz/qwen35-9b-abliterated-edge",
+      "snippet": "Text Generation model with 9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Abliterated Models — Open-Weight LLMs With Refusals Removed",
+      "url": "https://www.abliteratedmodels.org/",
+      "snippet": "Abliterated Models Abliterated Models is an index of abliterated AI: open-weight LLMs with refusal behaviour removed from their weights, for security teams. Every model here is uncensored — it answers prompts a normal AI refuses. All 956 are free to download from Hugging Face, and each page shows what the model was built from, how big it is, the hardware it needs and its licence."
+    }
+  ]
+}

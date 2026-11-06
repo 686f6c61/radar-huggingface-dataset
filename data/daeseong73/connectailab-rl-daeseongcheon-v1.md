@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks externos (tipo MMLU, HumanEval o GS
 
 | Modelo | Tipo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Daeseong73/connectailab-rl-DaeseongCheon-v1 | Politica RL (PPO) para simulador CONNECT TYCOON | no disponible | no aplica | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| Daeseong73/connectailab-rl-DaeseongCheon-v1 | Politica RL (PPO) para simulador CONNECT TYCOON | no disponible | no aplica | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Presidente por reglas de CONNECT TYCOON | Politica basada en reglas (referencia interna) | no aplica | no aplica | no disponible | Incluido en el simulador |
 | Otros modelos RL para entornos Gymnasium | Politica RL | variable | no aplica | variable | No disponible en la informacion proporcionada |
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos alternativos comparables publicados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daeseong73/connectailab-rl-DaeseongCheon-v1
+- Modelo en Hugging Face: https://huggingface.co/Daeseong73/connectailab-rl-DaeseongCheon-v1
 - Repositorio CONNECT TYCOON en GitHub: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

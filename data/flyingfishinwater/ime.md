@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `flyingfishinwater/ime` es un repositorio publicado en HuggingFace por el usuario flyingfishinwater. La model card asociada contiene únicamente la declaración de licencia MIT y ningún otro contenido: no incluye descripción, arquitectura, datos de entrenamiento, ejemplos de uso ni instrucciones de inferencia. El repositorio tiene un tamaño de 0,3 GB y registra cero descargas y cero likes en el momento de la consulta.
+El modelo identificado como `flyingfishinwater/ime` es un repositorio publicado en Hugging Face por el usuario flyingfishinwater. La model card asociada contiene únicamente la declaración de licencia MIT y ningún otro contenido: no incluye descripción, arquitectura, datos de entrenamiento, ejemplos de uso ni instrucciones de inferencia. El repositorio tiene un tamaño de 0,3 GB y registra cero descargas y cero likes en el momento de la consulta.
 
-No es posible determinar con la información disponible qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. El pipeline declarado en los metadatos de HuggingFace figura como no disponible y los idiomas soportados tampoco están especificados. La única información fiable es la licencia (MIT), la etiqueta de región (`region: us`) y el tamaño del repositorio.
+No es posible determinar con la información disponible qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. El pipeline declarado en los metadatos de Hugging Face figura como no disponible y los idiomas soportados tampoco están especificados. La única información fiable es la licencia (MIT), la etiqueta de región (`region: us`) y el tamaño del repositorio.
 
 Dado el estado de la documentación, esta ficha se limita a registrar los datos verificables y a marcar explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación técnica del modelo requeriría inspeccionar directamente los archivos de pesos del repositorio, algo que no se ha podido hacer con la información proporcionada.
 
@@ -82,7 +82,7 @@ No disponible. No es posible establecer una comparativa significativa porque se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flyingfishinwater/ime
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/ime
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

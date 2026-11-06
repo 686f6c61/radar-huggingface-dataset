@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: con 180B parámetros en BF16, se necesitan aproximadamente 360 GB de VRAM solo para los pesos. Con cuantización GGUF de 4 bits, se podría reducir a unos 90-100 GB.
 - GPU recomendadas: el modelo completo requiere múltiples GPU de alta gama, como 8x A100 80GB o 4x H100 80GB. Con cuantización agresiva, podría caber en 2x RTX 4090 24GB o 1x A100 80GB.
 - Compatibilidad con GPU de consumo: no es viable en una sola GPU de consumo sin cuantización extrema (2-3 bits), lo que degradaría significativamente la calidad.
-- Opciones de despliegue: vLLM (compatible con endpoints), llama.cpp para formatos GGUF, Ollama si se publica en su catálogo, y TGI de HuggingFace.
+- Opciones de despliegue: vLLM (compatible con endpoints), llama.cpp para formatos GGUF, Ollama si se publica en su catálogo, y TGI de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Con 6B parámetros activos por token, la inferencia es más rápida que un modelo denso de 180B, pero sigue requiriendo hardware de servidor.
 
 ## Comparativa con modelos similares
@@ -80,9 +80,9 @@ La comparativa se limita al modelo base y su derivado, ya que no se dispone de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UltimateIntent/Qwen3.8-Flash-Next-Abliterated-s1.5
+- Modelo en Hugging Face: https://huggingface.co/UltimateIntent/Qwen3.8-Flash-Next-Abliterated-s1.5
 - Versión GGUF: https://huggingface.co/UltimateIntent/Qwen3.8-Flash-Next-Abliterated-s1.5-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Receta vLLM para el modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

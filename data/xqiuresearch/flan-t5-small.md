@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xqiuresearch/flan-t5-small` es un recurso publicado en HuggingFace por el usuario `xqiuresearch` bajo licencia Apache-2.0. No se proporciona ninguna model card con descripcion tecnica, datos de entrenamiento, capacidades o instrucciones de uso. La pagina del modelo no incluye informacion sobre arquitectura, tamano, contexto o idiomas soportados.
+El modelo `xqiuresearch/flan-t5-small` es un recurso publicado en Hugging Face por el usuario `xqiuresearch` bajo licencia Apache-2.0. No se proporciona ninguna model card con descripcion tecnica, datos de entrenamiento, capacidades o instrucciones de uso. La pagina del modelo no incluye informacion sobre arquitectura, tamano, contexto o idiomas soportados.
 
 Aunque el nombre sugiere una posible relacion con la familia Flan-T5, no hay evidencia en los metadatos disponibles que confirme dicha arquitectura, el proceso de entrenamiento o el origen de los pesos. Por tanto, este modelo debe considerarse sin documentacion y con especificaciones desconocidas. Su relevancia actual no puede evaluarse sin informacion adicional.
 
@@ -53,4 +53,4 @@ No se han publicado datos que permitan comparar este modelo con alternativas. No
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xqiuresearch/flan-t5-small
+- Hugging Face: https://huggingface.co/xqiuresearch/flan-t5-small

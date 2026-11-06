@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `quangvu197/Gemma_3_1b_GRPO` es un ajuste fino (fine-tuning) del modelo Gemma 3 1B Instruct, realizado mediante la técnica de optimización por política relativa de grupo (GRPO, por sus siglas en inglés) y convertido posteriormente a formato GGUF para su uso con `llama.cpp` y Ollama. El autor, `quangvu197`, ha publicado el modelo en HuggingFace con el objetivo de ofrecer una versión cuantizada y lista para inferencia local, aunque el repositorio presenta cero descargas y cero likes, lo que sugiere que se trata de un experimento reciente o poco difundido.
+El modelo `quangvu197/Gemma_3_1b_GRPO` es un ajuste fino (fine-tuning) del modelo Gemma 3 1B Instruct, realizado mediante la técnica de optimización por política relativa de grupo (GRPO, por sus siglas en inglés) y convertido posteriormente a formato GGUF para su uso con `llama.cpp` y Ollama. El autor, `quangvu197`, ha publicado el modelo en Hugging Face con el objetivo de ofrecer una versión cuantizada y lista para inferencia local, aunque el repositorio presenta cero descargas y cero likes, lo que sugiere que se trata de un experimento reciente o poco difundido.
 
 El modelo se basa en la arquitectura de Gemma 3 (un transformer denso de aproximadamente 1.000 millones de parámetros), desarrollado originalmente por Google, pero este ajuste concreto no proporciona detalles adicionales sobre la arquitectura interna ni sobre el proceso de entrenamiento más allá de la mención a GRPO y al uso de la librería Unsloth. La conversión a GGUF incluye tres cuantizaciones (Q4_K_M, Q5_K_M y Q8_0), lo que facilita su despliegue en entornos con recursos limitados.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos, por lo que no es posible rea
 
 ## Enlaces
 
-- [HuggingFace: quangvu197/Gemma_3_1b_GRPO](https://huggingface.co/quangvu197/Gemma_3_1b_GRPO)
+- [Hugging Face: quangvu197/Gemma_3_1b_GRPO](https://huggingface.co/quangvu197/Gemma_3_1b_GRPO)
 - [Unsloth (librería usada para el entrenamiento y conversión)](https://github.com/unslothai/unsloth)
 - [llama.cpp (herramienta de inferencia recomendada)](https://github.com/ggerganov/llama.cpp)
 - [Ollama (plataforma de despliegue)](https://ollama.com/)

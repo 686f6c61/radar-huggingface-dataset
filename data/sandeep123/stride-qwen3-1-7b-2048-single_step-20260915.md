@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (stride-qwen3-1.7b-2048-single_step) | 1,7B del modelo base; adaptador LoRA de rango 16 | No disponible; entrenamiento limitado a 8.192 tokens de prompt mas respuesta | No disponible | safetensors (PEFT) | Repositorio de HuggingFace con 0 descargas y 0 likes |
+| Este adaptador (stride-qwen3-1.7b-2048-single_step) | 1,7B del modelo base; adaptador LoRA de rango 16 | No disponible; entrenamiento limitado a 8.192 tokens de prompt mas respuesta | No disponible | safetensors (PEFT) | Repositorio de Hugging Face con 0 descargas y 0 likes |
 | Qwen/Qwen3-1.7B (modelo base) | 1,7B (segun la denominacion del repositorio) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos completos en safetensors | Referenciado y fijado al commit `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` |
 | Otros adaptadores LoRA de matematicas sobre modelos de ~1,5 a 2B | No disponible | No disponible | No disponible | safetensors (PEFT) | No disponible |
 
@@ -89,7 +89,7 @@ No se dispone de datos verificables sobre alternativas equivalentes en la inform
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-single_step-20260915
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-single_step-20260915
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Commit fijado del modelo base: https://huggingface.co/Qwen/Qwen3-1.7B/tree/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
 - Libreria PEFT: https://huggingface.co/docs/peft

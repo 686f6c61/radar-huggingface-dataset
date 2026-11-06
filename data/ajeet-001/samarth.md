@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samarth es un modelo multimodal de decisión desarrollado por Ajeet-001, publicado en HuggingFace bajo licencia Apache 2.0. A diferencia de los modelos generativos convencionales, Samarth no muestrea tokens de forma autorregresiva: recibe un `state` (JSON estructurado, texto plano o entre 1 y 4 imágenes) y un conjunto de preguntas tipadas (`noul` binario/abstención, `choice` de hasta 256 opciones, o `score` ordinal), y devuelve una distribución de probabilidad calibrada sobre cada opción en un único prefill de prefijo compartido más un forward batcheado de sufijos.
+Samarth es un modelo multimodal de decisión desarrollado por Ajeet-001, publicado en Hugging Face bajo licencia Apache 2.0. A diferencia de los modelos generativos convencionales, Samarth no muestrea tokens de forma autorregresiva: recibe un `state` (JSON estructurado, texto plano o entre 1 y 4 imágenes) y un conjunto de preguntas tipadas (`noul` binario/abstención, `choice` de hasta 256 opciones, o `score` ordinal), y devuelve una distribución de probabilidad calibrada sobre cada opción en un único prefill de prefijo compartido más un forward batcheado de sufijos.
 
 El modelo se presenta como un "motor de decisión multimodal de 4B" con una torre de visión congelada y un backbone de lenguaje ajustado. Su propuesta diferencial es la eficiencia en inferencia de decisión: según el autor, resuelve 3 preguntas de texto en aproximadamente 60 ms en una GPU, y cubre también razonamiento visual sobre benchmarks como InfographicVQA, CharXiv y RealWorldQA dentro de la misma arquitectura.
 
@@ -74,7 +74,7 @@ La model card trunca la tabla a partir de CharXiv; no se dispone de las filas re
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Samarth | 7,94B totales (4B declarados) | no disponible | Decisión multimodal calibrada con lectura por slots | Apache 2.0 | HuggingFace, 0 descargas |
+| Samarth | 7,94B totales (4B declarados) | no disponible | Decisión multimodal calibrada con lectura por slots | Apache 2.0 | Hugging Face, 0 descargas |
 | Modelos de clasificación tipo BERT/RoBERTa | 0,1B–0,4B | 512 tokens | Clasificación de texto, sin multimodalidad | Apache 2.0 / MIT | Amplia |
 | VLMs generativos de 7B–8B (p. ej. familia LLaVA o Qwen-VL) | 7B–8B | 4K–128K tokens | Generación autoregresiva multimodal | Variable | Amplia |
 
@@ -94,6 +94,6 @@ La comparación directa es difícil porque Samarth no es un modelo generativo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ajeet-001/Samarth
+- Modelo en Hugging Face: https://huggingface.co/Ajeet-001/Samarth
 - Resultados del Decision Index: https://huggingface.co/datasets/Ajeet-001/Samarth-decision-index-results/tree/main/runs/samarth-vision
 - Repositorio del Jev Decision Index: https://github.com/apolinario/decision-index

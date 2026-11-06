@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tecnica | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kyleliu789/qwen3-14b-svamp14-orpo-qlora (este) | 14.7B base | 32K | ORPO + QLoRA | SVAMP | No disponible | HuggingFace |
-| kyleliu789/qwen3-14b-svamp14-sft-qlora | 14.7B base | 32K | SFT + QLoRA | SVAMP | No disponible | HuggingFace |
-| Qwen/Qwen3-14B (base) | 14.7B | 32K | - | Mixto | Apache 2.0 | HuggingFace, Ollama |
+| kyleliu789/qwen3-14b-svamp14-orpo-qlora (este) | 14.7B base | 32K | ORPO + QLoRA | SVAMP | No disponible | Hugging Face |
+| kyleliu789/qwen3-14b-svamp14-sft-qlora | 14.7B base | 32K | SFT + QLoRA | SVAMP | No disponible | Hugging Face |
+| Qwen/Qwen3-14B (base) | 14.7B | 32K | - | Mixto | Apache 2.0 | Hugging Face, Ollama |
 
 La comparativa se limita a los modelos del mismo autor y al base. No hay datos de rendimiento que permitan una comparacion cuantitativa. El adaptador ORPO podria ofrecer ventajas en preferencias humanas frente al SFT, pero sin metricas no se puede confirmar.
 
@@ -76,7 +76,7 @@ La comparativa se limita a los modelos del mismo autor y al base. No hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-checkpoint-250
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-checkpoint-250
 - Checkpoint SFT relacionado: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora
 - Checkpoint SFT alternativo: https://huggingface.co/kyleliu789/qwen3-14b-svamp-sft-r8-lr5e-6-bs8-step250
 - Repositorio oficial Qwen3: https://github.com/QwenLM/Qwen3

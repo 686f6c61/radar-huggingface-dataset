@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Byrne-Embed es un modelo de embeddings de frases publicado por el usuario Quazim0t0 en HuggingFace, con pipeline declarado de feature-extraction y orientado a tareas de similitud semantica y recuperacion de informacion. Se distribuye bajo licencia Apache 2.0, con 98.027.395 parametros confirmados en los pesos safetensors y un repositorio de 0,8 GB. El modelo esta etiquetado como monolingue en ingles y emplea una arquitectura propia identificada con los tags byrne_embed y custom_code, lo que obliga a cargar codigo remoto para su uso.
+Byrne-Embed es un modelo de embeddings de frases publicado por el usuario Quazim0t0 en Hugging Face, con pipeline declarado de feature-extraction y orientado a tareas de similitud semantica y recuperacion de informacion. Se distribuye bajo licencia Apache 2.0, con 98.027.395 parametros confirmados en los pesos safetensors y un repositorio de 0,8 GB. El modelo esta etiquetado como monolingue en ingles y emplea una arquitectura propia identificada con los tags byrne_embed y custom_code, lo que obliga a cargar codigo remoto para su uso.
 
 Su relevancia practica se limita, de momento, a un nicho muy concreto: es un encoder de ~98M de parametros que publica resultados en tareas del benchmark MTEB (clasificacion, clustering, recuperacion, reranking y STS), lo que permite evaluar su encaje en pipelines de busqueda semantica o deduplicacion sin desplegar modelos de mayor tamano. Frente a los encoders de referencia de su categoria, destaca en clasificacion de dominio e intenciones (MTOPDomainClassification 92,29 de accuracy) y en similitud semantica sobre textos biomedicos (BIOSSES, 75,56 de Spearman), mientras que su rendimiento en recuperacion sobre corpus abiertos es bajo.
 
@@ -102,11 +102,11 @@ No se dispone de resultados de benchmarks de los modelos alternativos dentro de 
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| Byrne-Embed | 98.027.395 | No disponible | Apache 2.0 | Ingles | HuggingFace, requiere `trust_remote_code` |
-| all-MiniLM-L6-v2 | 22.713.600 | 512 tokens | Apache 2.0 | Ingles | HuggingFace, sentence-transformers, ONNX, ampliamente integrado |
-| bge-small-en-v1.5 | 33.360.000 | 512 tokens | MIT | Ingles | HuggingFace, sentence-transformers, GGUF, ONNX |
-| e5-base-v2 | 109.000.000 | 512 tokens | MIT | Ingles | HuggingFace, sentence-transformers, ONNX |
-| gte-base | 109.000.000 | 512 tokens | Apache 2.0 | Ingles | HuggingFace, sentence-transformers, ONNX |
+| Byrne-Embed | 98.027.395 | No disponible | Apache 2.0 | Ingles | Hugging Face, requiere `trust_remote_code` |
+| all-MiniLM-L6-v2 | 22.713.600 | 512 tokens | Apache 2.0 | Ingles | Hugging Face, sentence-transformers, ONNX, ampliamente integrado |
+| bge-small-en-v1.5 | 33.360.000 | 512 tokens | MIT | Ingles | Hugging Face, sentence-transformers, GGUF, ONNX |
+| e5-base-v2 | 109.000.000 | 512 tokens | MIT | Ingles | Hugging Face, sentence-transformers, ONNX |
+| gte-base | 109.000.000 | 512 tokens | Apache 2.0 | Ingles | Hugging Face, sentence-transformers, ONNX |
 
 El principal diferencial de Byrne-Embed no es el rendimiento, sino su naturaleza: es un encoder de ~98M de parametros con codigo propio y sin pesos alternativos, mientras que las alternativas de la tabla cuentan con ecosistema de despliegue consolidado y variantes cuantizadas listas para produccion. La comparacion de metricas MTEB entre Byrne-Embed y estos modelos no puede realizarse con los datos disponibles.
 
@@ -125,7 +125,7 @@ El principal diferencial de Byrne-Embed no es el rendimiento, sino su naturaleza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quazim0t0/Byrne-Embed
+- Modelo en Hugging Face: https://huggingface.co/Quazim0t0/Byrne-Embed
 - Repositorio de pesos y codigo remoto: incluido en la pagina anterior (ficheros safetensors y codigo propio del autor)
 - Benchmark MTEB: https://huggingface.co/spaces/mteb/leaderboard
 - Paper de MTEB (referencia del benchmark utilizado): https://arxiv.org/abs/2210.07316

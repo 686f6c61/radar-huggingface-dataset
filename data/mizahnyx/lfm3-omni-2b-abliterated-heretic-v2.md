@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Omni-2B-abliterated-heretic-v2 es una variante derivada del modelo omni-modal LFM3-Omni-2B de Liquid AI, publicada por el usuario mizahnyx en HuggingFace. El modelo base acepta texto, imagen, vídeo y audio como entrada, y produce texto y voz como salida. Esta versión concreta ha sido sometida a un procedimiento automatizado de eliminación de rechazos (refusal ablation) mediante la herramienta Heretic v2.0.0 con el modificador ARA (Arbitrary-Rank Ablation), de modo que responde a peticiones que el modelo original rechazaría.
+LFM3-Omni-2B-abliterated-heretic-v2 es una variante derivada del modelo omni-modal LFM3-Omni-2B de Liquid AI, publicada por el usuario mizahnyx en Hugging Face. El modelo base acepta texto, imagen, vídeo y audio como entrada, y produce texto y voz como salida. Esta versión concreta ha sido sometida a un procedimiento automatizado de eliminación de rechazos (refusal ablation) mediante la herramienta Heretic v2.0.0 con el modificador ARA (Arbitrary-Rank Ablation), de modo que responde a peticiones que el modelo original rechazaría.
 
 El modelo conserva la arquitectura del original (backbone de texto de 24 capas más codificadores de visión y audio con sus proyectores) y un total de 2.166.928.384 parámetros en formato safetensors. La modificación afecta únicamente a las proyecciones `attn.o_proj` y `mlp.down_proj` de las 24 capas del backbone de texto; los codificadores de visión y audio y los proyectores quedan intactos.
 
@@ -102,7 +102,7 @@ El autor indica que el punto de 0/100 rechazos con KL 2,27 degradaba el modelo (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mizahnyx/lfm3-omni-2b-abliterated-heretic-v2
+- Modelo en Hugging Face: https://huggingface.co/mizahnyx/lfm3-omni-2b-abliterated-heretic-v2
 - Variantes GGUF: https://huggingface.co/mizahnyx/lfm3-omni-2b-abliterated-heretic-v2-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE

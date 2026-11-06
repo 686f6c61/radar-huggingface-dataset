@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-DaggerReplace` es un ajuste fino (fine-tuning) del modelo base `LiquidAI/LFM2.5-350M`, desarrollado por el usuario lugman. Se trata de un modelo de generación de texto de tipo conversacional, entrenado con la librería Unsloth y TRL de HuggingFace, lo que según el autor permitió un entrenamiento "2x más rápido". El modelo conserva la licencia Apache 2.0 del original y está publicado en formato safetensors para su uso con transformers y text-generation-inference.
+El modelo `lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-DaggerReplace` es un ajuste fino (fine-tuning) del modelo base `LiquidAI/LFM2.5-350M`, desarrollado por el usuario lugman. Se trata de un modelo de generación de texto de tipo conversacional, entrenado con la librería Unsloth y TRL de Hugging Face, lo que según el autor permitió un entrenamiento "2x más rápido". El modelo conserva la licencia Apache 2.0 del original y está publicado en formato safetensors para su uso con transformers y text-generation-inference.
 
 El nombre del repositorio sugiere un proceso de entrenamiento con datos de entorno tipo "SmolDataEnv" con un contexto de 2.8K, seguido de un merge de pesos, un trimming (posiblemente de capas o vocabulario) y una fase de "DaggerReplace" (posiblemente relacionada con DAgger, un algoritmo de imitación iterativa). Sin embargo, la model card no proporciona detalles sobre estos procedimientos, el dataset utilizado, el número de tokens de entrenamiento ni los hiperparámetros empleados.
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento del fine-tuning, la información disponible es mínim
 
 - Generación de texto conversacional en inglés, según el tag `conversational` y el pipeline `text-generation`.
 - Compatible con `text-generation-inference` (TGI) y con `transformers`.
-- Etiquetado como `endpoints_compatible`, lo que indica compatibilidad con los endpoints de HuggingFace.
+- Etiquetado como `endpoints_compatible`, lo que indica compatibilidad con los endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingües: limitadas al inglés según el campo `language`.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lugman/LFM2.5-350M-SmolDataEnv-... | 354M | no disponible (2.8K según nombre) | Apache 2.0 | HuggingFace | Fine-tuning sin benchmarks |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | HuggingFace | Modelo original de Liquid AI |
-| Qwen2.5-0.5B | 494M | 32K | Apache 2.0 | HuggingFace | Modelo pequeño con benchmarks publicados |
-| SmolLM2-360M | 362M | 8K | Apache 2.0 | HuggingFace | Alternativa compacta de HuggingFace |
+| lugman/LFM2.5-350M-SmolDataEnv-... | 354M | no disponible (2.8K según nombre) | Apache 2.0 | Hugging Face | Fine-tuning sin benchmarks |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | Hugging Face | Modelo original de Liquid AI |
+| Qwen2.5-0.5B | 494M | 32K | Apache 2.0 | Hugging Face | Modelo pequeño con benchmarks publicados |
+| SmolLM2-360M | 362M | 8K | Apache 2.0 | Hugging Face | Alternativa compacta de Hugging Face |
 
 La comparación con Qwen2.5-0.5B y SmolLM2-360M es orientativa: ambos son modelos pequeños con documentación y benchmarks públicos, mientras que el modelo evaluado carece de ellos. No se dispone de datos de rendimiento comparativo.
 
@@ -84,7 +84,7 @@ La comparación con Qwen2.5-0.5B y SmolLM2-360M es orientativa: ambos son modelo
 
 ## Enlaces
 
-- [HuggingFace: lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-DaggerReplace](https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-DaggerReplace)
+- [Hugging Face: lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-DaggerReplace](https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-DaggerReplace)
 - [Modelo base: LiquidAI/LFM2.5-350M](https://huggingface.co/LiquidAI/LFM2.5-350M)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)

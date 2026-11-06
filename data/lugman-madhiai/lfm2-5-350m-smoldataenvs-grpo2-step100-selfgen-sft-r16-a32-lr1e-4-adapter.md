@@ -6,7 +6,7 @@ El modelo `lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16
 
 La relevancia del modelo es fundamentalmente experimental: se publica como adaptador de bajo rango sobre un modelo pequeno (350M), lo que permite reproducir el pipeline de ajuste con recursos minimos y evaluar el efecto de RL (GRPO) seguido de SFT con datos autogenerados en un modelo de bolsillo. No es un modelo de proposito general ni compite con modelos frontera; su interes esta en la trazabilidad del proceso de entrenamiento y en el uso de Unsloth para acelerar el fine-tuning.
 
-La model card es minima y no documenta datos de entrenamiento, composicion del dataset ni resultados de evaluacion. Toda la informacion tecnica disponible procede de los metadatos de HuggingFace y de la convencion de nombres del autor, por lo que muchos campos de esta ficha deben marcarse como no disponibles.
+La model card es minima y no documenta datos de entrenamiento, composicion del dataset ni resultados de evaluacion. Toda la informacion tecnica disponible procede de los metadatos de Hugging Face y de la convencion de nombres del autor, por lo que muchos campos de esta ficha deben marcarse como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ No se especifica el volumen de tokens de entrenamiento, la composicion del datas
 - Prototipado rapido de agentes en ingles: el modelo base de 350M cabe en cualquier GPU moderna y permite iterar sobre prompts y flujos de agente sin coste de infraestructura.
 - Investigacion sobre datos sinteticos autogenerados: el sufijo "SelfGen-SFT" sugiere un caso de estudio sobre calidad y sesgos de datos generados por el propio modelo.
 - Fine-tuning encadenado: sirve como punto de partida para nuevos adaptadores sobre el mismo base, gracias a la licencia Apache 2.0.
-- Educacion y demos: util para talleres sobre TRL, Unsloth y HuggingFace en entornos con recursos limitados.
+- Educacion y demos: util para talleres sobre TRL, Unsloth y Hugging Face en entornos con recursos limitados.
 
 ## Benchmarks y rendimiento
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (LFM2.5-350M + LoRA) | 350M | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| LFM2.5-350M base (Liquid AI) | 350M | no disponible | no disponible en esta ficha | HuggingFace |
-| SmolLM2-360M (HuggingFace) | 360M | 8K (segun model card publica) | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 500M | 32K (segun model card publica) | Apache 2.0 | HuggingFace |
+| Este adaptador (LFM2.5-350M + LoRA) | 350M | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| LFM2.5-350M base (Liquid AI) | 350M | no disponible | no disponible en esta ficha | Hugging Face |
+| SmolLM2-360M (Hugging Face) | 360M | 8K (segun model card publica) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 500M | 32K (segun model card publica) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros, licencia y disponibilidad; no hay datos de rendimiento publicados para este adaptador que permitan una comparacion cuantitativa.
 
@@ -81,7 +81,7 @@ La comparativa se limita a parametros, licencia y disponibilidad; no hay datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16-a32-lr1e-4-adapter
+- Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100-SelfGen-SFT-r16-a32-lr1e-4-adapter
 - Modelo base: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-GRPO2-step100
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

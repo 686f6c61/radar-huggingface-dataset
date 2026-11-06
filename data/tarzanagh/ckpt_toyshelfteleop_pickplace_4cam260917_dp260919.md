@@ -112,11 +112,11 @@ Fuera de esta serie no se dispone de cifras comparables verificadas. La conclusi
 - Limitaciones de idioma y contexto: no aplicable, ya que el modelo no procesa lenguaje ni texto.
 - Licencia: Apache 2.0 permite uso comercial y modificacion con atribucion y sin garantias. No obstante, el uso comercial esta limitado de facto por la falta de validacion en hardware y por la dependencia de un robot especifico (DexMate Vega-1 con manos RobotEra XHand1).
 - Caveat de produccion: un checkpoint de investigacion sin validacion fisica ni documentacion de latencia no deberia desplegarse en un entorno productivo sin una fase propia de evaluacion en hardware y analisis de seguridad.
-- Fechas del repositorio: la ficha de HuggingFace registra creacion el 2026-09-24 y actualizacion el mismo dia, lo que conviene tener en cuenta al citarlo.
+- Fechas del repositorio: la ficha de Hugging Face registra creacion el 2026-09-24 y actualizacion el mismo dia, lo que conviene tener en cuenta al citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dp260919
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dp260919
 - Checkpoint hermano ACT: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_act260919
 - Checkpoint hermano ACT + tactil: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_acttactile260919
 - Checkpoint hermano Diffusion Policy + tactil: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dptactile260919

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Shynrmzn6/shyn` está alojado en HuggingFace bajo licencia MIT, pero su model card no contiene información técnica alguna sobre arquitectura, parámetros, capacidades o propósito. Se trata de un repositorio aparentemente vacío o en fase de publicación, con una única descarga y un solo "like" en el momento de la consulta. No se dispone de datos que permitan determinar qué problema resuelve, quién lo desarrolla o por qué sería relevante para la comunidad técnica. Cualquier evaluación seria de este modelo es imposible con la información disponible.
+El modelo `Shynrmzn6/shyn` está alojado en Hugging Face bajo licencia MIT, pero su model card no contiene información técnica alguna sobre arquitectura, parámetros, capacidades o propósito. Se trata de un repositorio aparentemente vacío o en fase de publicación, con una única descarga y un solo "like" en el momento de la consulta. No se dispone de datos que permitan determinar qué problema resuelve, quién lo desarrolla o por qué sería relevante para la comunidad técnica. Cualquier evaluación seria de este modelo es imposible con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. Al carecer de datos sobre arquitectura, tamaño o rendimiento, no
 
 ## Enlaces
 
-- [HuggingFace: Shynrmzn6/shyn](https://huggingface.co/Shynrmzn6/shyn)
+- [Hugging Face: Shynrmzn6/shyn](https://huggingface.co/Shynrmzn6/shyn)

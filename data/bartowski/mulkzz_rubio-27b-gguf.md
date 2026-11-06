@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Idiomas declarados | Disponibilidad |
 |---|---|---|---|---|---|---|
-| RuBio-27B (esta ficha) | 27,3B | no disponible | Sí (image-text-to-text) | Apache 2.0 | coreano | GGUF en HuggingFace |
+| RuBio-27B (esta ficha) | 27,3B | no disponible | Sí (image-text-to-text) | Apache 2.0 | coreano | GGUF en Hugging Face |
 | Alternativas de ~27B con visión | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente en la documentación proporcionada para establecer una comparativa rigurosa con modelos alternativos de la misma categoría. Se recomienda evaluar el modelo frente a otros image-text-to-text de tamaño similar antes de adoptarlo en producción.

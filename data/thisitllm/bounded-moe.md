@@ -84,7 +84,7 @@ Ninguno de estos proyectos publica pesos de modelo ni benchmarks comparativos. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/THISITLLM/bounded-moe
+- Hugging Face: https://huggingface.co/THISITLLM/bounded-moe
 - Repositorio GitHub: https://github.com/kornpaksittikool-beep/bounded-moe
 - Proyecto relacionado (deepseek-v4-local): https://github.com/CostanzoPadovano/deepseek-v4-local
 - Proyecto relacionado (tokenql): https://github.com/eiomra/tokenql

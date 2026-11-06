@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zero-WAM RoboICL Version A (gulucaptain) | no disponible | no disponible | no medido en bucle cerrado | no disponible (base Apache-2.0) | HuggingFace, 0 descargas |
+| Zero-WAM RoboICL Version A (gulucaptain) | no disponible | no disponible | no medido en bucle cerrado | no disponible (base Apache-2.0) | Hugging Face, 0 descargas |
 | Robot-ICL baseline (referenciado en la model card) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Zero-WAM pretrain (Robbyant-Research) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Zero-WAM pretrain (Robbyant-Research) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoría.
 
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- [HuggingFace: gulucaptain/zero-wam-roboicl-version-a](https://huggingface.co/gulucaptain/zero-wam-roboicl-version-a)
+- [Hugging Face: gulucaptain/zero-wam-roboicl-version-a](https://huggingface.co/gulucaptain/zero-wam-roboicl-version-a)
 - [Modelo base: Robbyant-Research/zero-wam-pretrain](https://huggingface.co/Robbyant-Research/zero-wam-pretrain)

@@ -80,7 +80,7 @@ Interpretacion: el modelo supera a BERTA en Spearman (+0,028) y en MAE (-0,0046)
 
 | Modelo | Parametros | Contexto | Spearman (test) | MAE | Textos/s | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| RuModernBERT-base-anekdot-scorer | 149 M | 512 | 0,4933 | 0,1343 | 583,3 | Apache-2.0 | HuggingFace, transformers |
+| RuModernBERT-base-anekdot-scorer | 149 M | 512 | 0,4933 | 0,1343 | 583,3 | Apache-2.0 | Hugging Face, transformers |
 | BERTA | No disponible | No disponible | 0,4656 | 0,1389 | 1212,6 | No disponible | Usado como baseline en la model card |
 | rubert-tiny-turbo | No disponible | No disponible | 0,4010 | 0,1433 | 3096,3 | No disponible | Usado como baseline en la model card |
 | Gemma4-E4B-it (zero-shot) | No disponible | No disponible | 0,1398 | 0,2035 | 10,5 | No disponible | Usado como baseline en la model card |
@@ -100,7 +100,7 @@ El modelo se posiciona como la opcion de mayor calidad predictiva entre los enco
 - Sin soporte de generacion, tool calling ni agentes: no puede sustituir a un LLM en tareas conversacionales.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/d0rj/RuModernBERT-base-anekdot-scorer
+- Modelo en Hugging Face: https://huggingface.co/d0rj/RuModernBERT-base-anekdot-scorer
 - Descripcion en ingles (README.en.md): https://huggingface.co/d0rj/RuModernBERT-base-anekdot-scorer/blob/main/README.en.md
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/d0rj/anekdot
 - Modelo base: https://huggingface.co/deepvk/RuModernBERT-base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PoyuDkuo/mixer-experiment52` es un prototipo de investigación publicado en HuggingFace por el usuario PoyuDkuo bajo el nombre «Mixer for Retrieval». Se trata de una implementación propia de una arquitectura tipo Mixer (familia de modelos sin atención token-a-token basados en mezclas de canales y tokens) orientada a tareas de recuperación de información (retrieval), con una configuración de escala «tiny» y 24.832 parámetros totales según el recuento real de `model.safetensors`.
+`PoyuDkuo/mixer-experiment52` es un prototipo de investigación publicado en Hugging Face por el usuario PoyuDkuo bajo el nombre «Mixer for Retrieval». Se trata de una implementación propia de una arquitectura tipo Mixer (familia de modelos sin atención token-a-token basados en mezclas de canales y tokens) orientada a tareas de recuperación de información (retrieval), con una configuración de escala «tiny» y 24.832 parámetros totales según el recuento real de `model.safetensors`.
 
 El repositorio no contiene un modelo entrenado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. No se declaran puntuaciones de rendimiento, número de tokens de entrenamiento, composición del dataset ni idiomas soportados. El único artefacto funcional relevante es `pipeline.py`, que incluye el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento.
 
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, `training_args.json` recoge una receta por defecto c
 - Reproducción de experimentos de retrieval en Flickr30k: el prototipo puede integrarse en un pipeline de recuperación imagen-texto una vez entrenado, reportando la métrica de la tarea en tres semillas como recomienda la model card.
 - Validación de infraestructura y CI: al ser un checkpoint de inicialización válido, permite comprobar en integración continua que el código de carga, el formateo de entradas y el guardado de pesos funcionan antes de escalar a modelos mayores.
 - Docencia y formación: un modelo de 24,8 K parámetros con código legible es adecuado para explicar el flujo completo de un experimento (configuración, receta de entrenamiento, checkpoint y evaluación).
-- Prototipado de adaptadores personalizados: dado que requiere un adaptador explícito para las APIs estándar, sirve para practicar la envoltura de implementaciones a medida en interfaces tipo HuggingFace.
+- Prototipado de adaptadores personalizados: dado que requiere un adaptador explícito para las APIs estándar, sirve para practicar la envoltura de implementaciones a medida en interfaces tipo Hugging Face.
 - Auditoría de recetas de entrenamiento: `training_args.json` documenta Adam con warmup lineal, lo que facilita reproducir y contrastar el efecto de distintas recetas sobre una arquitectura fija.
 
 ## Benchmarks y rendimiento
@@ -83,5 +83,5 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PoyuDkuo/mixer-experiment52
+- Hugging Face: https://huggingface.co/PoyuDkuo/mixer-experiment52
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web disponible; los resultados obtenidos corresponden a páginas genéricas de Google y no guardan relación con el modelo.

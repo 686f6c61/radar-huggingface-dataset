@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nagi_sharpen` es un modelo de restauración de imágenes especializado en la corrección de desenfoque por desenfoque (defocus) y enfoque suave (soft-focus), desarrollado por el usuario `uniuyuni`. Se distribuye como un conjunto de checkpoints de PyTorch en HuggingFace, mientras que el código fuente reside en un repositorio de GitHub. El modelo aborda el problema de imágenes con desenfoque óptico causado por una apertura o distancia focal incorrecta, común en fotografía, y ofrece una solución de restauración que preserva los detalles nítidos.
+`nagi_sharpen` es un modelo de restauración de imágenes especializado en la corrección de desenfoque por desenfoque (defocus) y enfoque suave (soft-focus), desarrollado por el usuario `uniuyuni`. Se distribuye como un conjunto de checkpoints de PyTorch en Hugging Face, mientras que el código fuente reside en un repositorio de GitHub. El modelo aborda el problema de imágenes con desenfoque óptico causado por una apertura o distancia focal incorrecta, común en fotografía, y ofrece una solución de restauración que preserva los detalles nítidos.
 
 La herramienta emplea un enfoque de procesamiento por teselas (tiled) con memoria limitada, lo que permite trabajar con imágenes de alta resolución en hardware con restricciones de VRAM. Los checkpoints se organizan en etapas (stages) que reflejan la evolución del entrenamiento, desde experimentos iniciales hasta refinamientos finales recomendados para uso general. El modelo fue entrenado sobre el dataset DPDD (Defocus Deblurring Using Dual-Pixel Data) y sobre datos sintéticos generados a partir de sus objetivos nítidos, lo que le confiere capacidad para manejar tanto desenfoque real como simulado.
 
@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: uniuyuni/nagi_sharpen](https://huggingface.co/uniuyuni/nagi_sharpen)
+- [Hugging Face: uniuyuni/nagi_sharpen](https://huggingface.co/uniuyuni/nagi_sharpen)
 - [Repositorio de GitHub: nagi_sharpen](https://github.com/uniuyuni/nagi_sharpen)
 - [Paper DPDD (Abuolaim & Brown, ECCV 2020)](https://www.eecs.yorku.ca/~kamel/defocus-deblurring-dual-pixel/) (enlace no verificado, se menciona en la model card)

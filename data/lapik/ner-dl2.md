@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lapik/ner-dl2 es un modelo de clasificación de tokens (reconocimiento de entidades nombradas, NER) obtenido mediante fine-tuning del encoder BAAI/bge-small-en-v1.5. Lo publica el usuario lapik en HuggingFace bajo licencia MIT, con un total de 33.215.625 parámetros y un repositorio de apenas 0,1 GB. Se distribuye en formato safetensors y es compatible con la librería transformers, por lo que puede cargarse directamente con el pipeline `token-classification`. El modelo se generó automáticamente con el `Trainer` de HuggingFace, y su model card no documenta ni el conjunto de datos de entrenamiento ni las etiquetas de entidad utilizadas.
+lapik/ner-dl2 es un modelo de clasificación de tokens (reconocimiento de entidades nombradas, NER) obtenido mediante fine-tuning del encoder BAAI/bge-small-en-v1.5. Lo publica el usuario lapik en Hugging Face bajo licencia MIT, con un total de 33.215.625 parámetros y un repositorio de apenas 0,1 GB. Se distribuye en formato safetensors y es compatible con la librería transformers, por lo que puede cargarse directamente con el pipeline `token-classification`. El modelo se generó automáticamente con el `Trainer` de Hugging Face, y su model card no documenta ni el conjunto de datos de entrenamiento ni las etiquetas de entidad utilizadas.
 
 El interés práctico del modelo reside en su tamaño reducido: al apoyarse en bge-small, un encoder de la familia BERT de 33 millones de parámetros, la inferencia es muy económica y puede ejecutarse incluso en CPU o en GPUs de gama baja, lo que lo hace atractivo para tareas de extracción de entidades de alto volumen y baja latencia. Sin embargo, la información publicada es muy escasa: no se especifican los idiomas soportados, el dataset de entrenamiento, el esquema de etiquetas ni el dominio de aplicación previsto, y el campo `results` del model-index está vacío.
 
@@ -31,7 +31,7 @@ Por tanto, se trata de un artefacto experimental o de uso interno más que de un
 
 La arquitectura es la de un encoder transformer de la familia BERT, heredada del modelo base BAAI/bge-small-en-v1.5, al que se le ha añadido una cabeza de clasificación por token para resolver una tarea de etiquetado de secuencias (NER). No hay innovaciones arquitectónicas propias: no se emplean mecanismos de atención lineal, SSM ni mezclas de expertos, y no se documenta ninguna técnica de decodificación especulativa. El recuento total de parámetros (33.215.625) corresponde al encoder más la cabeza de clasificación.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace sobre un dataset no especificado ("unknown dataset" según la propia model card). Los hiperparámetros documentados son: learning rate de 2e-05, tamaño de lote de 16 tanto en entrenamiento como en evaluación, 3 épocas completas (1.875 pasos), semilla 42, optimizador AdamW con betas (0,9 / 0,999) y epsilon 1e-08, y un scheduler lineal sin warmup declarado. No se menciona el uso de RLHF, DPO ni ningún otro ajuste por preferencias, algo esperable en un modelo de clasificación. Las versiones de framework empleadas fueron Transformers 4.51.3, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.21.4.
+El entrenamiento se realizó con el `Trainer` de Hugging Face sobre un dataset no especificado ("unknown dataset" según la propia model card). Los hiperparámetros documentados son: learning rate de 2e-05, tamaño de lote de 16 tanto en entrenamiento como en evaluación, 3 épocas completas (1.875 pasos), semilla 42, optimizador AdamW con betas (0,9 / 0,999) y epsilon 1e-08, y un scheduler lineal sin warmup declarado. No se menciona el uso de RLHF, DPO ni ningún otro ajuste por preferencias, algo esperable en un modelo de clasificación. Las versiones de framework empleadas fueron Transformers 4.51.3, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.21.4.
 
 ## Capacidades
 
@@ -84,8 +84,8 @@ Los datos publicados no permiten una comparativa rigurosa con alternativas: se d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lapik/ner-dl2 | 33.215.625 | no disponible | NER (token-classification) | MIT | HuggingFace, formato safetensors |
-| BAAI/bge-small-en-v1.5 (modelo base) | no disponible en la informacion proporcionada | no disponible | Embeddings de texto | no disponible | HuggingFace |
+| lapik/ner-dl2 | 33.215.625 | no disponible | NER (token-classification) | MIT | Hugging Face, formato safetensors |
+| BAAI/bge-small-en-v1.5 (modelo base) | no disponible en la informacion proporcionada | no disponible | Embeddings de texto | no disponible | Hugging Face |
 | Alternativas NER de la familia BERT (por ejemplo, fine-tunings de bert-base en CoNLL) | no disponible | no disponible | NER | no disponible | no disponible |
 
 No se dispone de datos comparativos de F1 sobre un conjunto común, por lo que no es posible afirmar si este modelo supera o no a otras alternativas de NER del mismo rango de tamaño.
@@ -106,5 +106,5 @@ No se dispone de datos comparativos de F1 sobre un conjunto común, por lo que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lapik/ner-dl2
+- Modelo en Hugging Face: https://huggingface.co/lapik/ner-dl2
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5

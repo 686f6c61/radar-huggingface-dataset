@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stuff123456/flux_secrets_bare_skin` es un repositorio publicado en HuggingFace por el usuario `stuff123456` el 19 de octubre de 2026. Por la convención de nombres y por los resultados de búsqueda disponibles, todo apunta a un adaptador (previsiblemente un LoRA) para la familia FLUX.1 de Black Forest Labs, orientado a la generación de imágenes con un estilo concreto de piel o estética corporal. El repositorio no incluye model card: el README se limita a metadatos de licencia (`license: other`, `license_name: flux`, `license_link: LICENSE`), sin descripción, sin ejemplos, sin dataset ni hiperparámetros de entrenamiento.
+`stuff123456/flux_secrets_bare_skin` es un repositorio publicado en Hugging Face por el usuario `stuff123456` el 19 de octubre de 2026. Por la convención de nombres y por los resultados de búsqueda disponibles, todo apunta a un adaptador (previsiblemente un LoRA) para la familia FLUX.1 de Black Forest Labs, orientado a la generación de imágenes con un estilo concreto de piel o estética corporal. El repositorio no incluye model card: el README se limita a metadatos de licencia (`license: other`, `license_name: flux`, `license_link: LICENSE`), sin descripción, sin ejemplos, sin dataset ni hiperparámetros de entrenamiento.
 
 El artefacto cuenta con 0 descargas y 0 likes en el momento de la consulta, y no declara pipeline, idiomas ni formato de pesos. No hay información verificable sobre arquitectura interna, tamaño del adaptador, datos de entrenamiento ni evaluación. Cualquier dato técnico más allá de la licencia y el autor es, a día de hoy, una inferencia a partir del nombre y de listados de terceros.
 
@@ -51,7 +51,7 @@ La única información estructural es indirecta: el nombre del repositorio inclu
 - Auditoría de seguridad de contenido: analizar qué prompts activan el adaptador y si produce contenido no apto, para definir filtros en un pipeline de moderación.
 - Docencia y divulgación técnica: ejemplo práctico de adaptador LoRA sin documentación para explicar por qué la trazabilidad de pesos es importante en IA open source.
 - Prototipado artístico interno: generación de referencias visuales en un estudio de diseño, con revisión humana obligatoria y sin distribución del resultado si la licencia FLUX lo restringe.
-- Verificación de cadena de suministro de modelos: caso de prueba para pipelines que escanean repositorios de HuggingFace en busca de metadatos incompletos o licencias ambiguas.
+- Verificación de cadena de suministro de modelos: caso de prueba para pipelines que escanean repositorios de Hugging Face en busca de metadatos incompletos o licencias ambiguas.
 
 ## Benchmarks y rendimiento
 
@@ -74,9 +74,9 @@ No hay datos propios del repositorio para comparar. La tabla contrasta lo declar
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `stuff123456/flux_secrets_bare_skin` | Adaptador estético (presunto LoRA) sobre FLUX.1 | no disponible | no disponible | `other` / FLUX | HuggingFace, 0 descargas |
-| FLUX.1 [dev] | Modelo base de difusión (rectified flow transformer) | 12 000 M (dato público de la familia) | prompts de hasta 512 tokens (T5-XXL) | no comercial | Pesos abiertos en HuggingFace |
-| FLUX.1 [schnell] | Modelo base de difusión, destilado para pocos pasos | 12 000 M (dato público de la familia) | prompts de hasta 512 tokens | Apache 2.0 | Pesos abiertos en HuggingFace |
+| `stuff123456/flux_secrets_bare_skin` | Adaptador estético (presunto LoRA) sobre FLUX.1 | no disponible | no disponible | `other` / FLUX | Hugging Face, 0 descargas |
+| FLUX.1 [dev] | Modelo base de difusión (rectified flow transformer) | 12 000 M (dato público de la familia) | prompts de hasta 512 tokens (T5-XXL) | no comercial | Pesos abiertos en Hugging Face |
+| FLUX.1 [schnell] | Modelo base de difusión, destilado para pocos pasos | 12 000 M (dato público de la familia) | prompts de hasta 512 tokens | Apache 2.0 | Pesos abiertos en Hugging Face |
 | FluxRealSkin-v2.0 (Civitai) | LoRA de textura de piel para FLUX.1 | no disponible | no disponible | según ficha de Civitai | Civitai, con ejemplos publicados |
 
 ## Limitaciones y advertencias
@@ -93,9 +93,9 @@ No hay datos propios del repositorio para comparar. La tabla contrasta lo declar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stuff123456/flux_secrets_bare_skin
+- Repositorio en Hugging Face: https://huggingface.co/stuff123456/flux_secrets_bare_skin
 - Ficha en SeaArt AI: https://www.seaart.ai/models/detail/2bd807f885bbcc772faf1821eca2af09
 - Ejemplo en TensorHub Art: https://tensorhub.art/images/921657350144678639?model_id=810338669782128111
 - Variante en FriendliAI (`DervlexVenice/flux_secrets_bare_skin_sevenof9-poses-flux`): https://friendli.ai/models/DervlexVenice/flux_secrets_bare_skin_sevenof9-poses-flux
 - LoRA comparable de textura de piel en Civitai (FluxRealSkin-v2.0): https://civitai.com/models/651043/flux-skin-texture
-- Listado general de modelos de HuggingFace: https://huggingface.co/models?p=1&sort=modified
+- Listado general de modelos de Hugging Face: https://huggingface.co/models?p=1&sort=modified

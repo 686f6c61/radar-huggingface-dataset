@@ -71,7 +71,7 @@ No se dispone de información suficiente sobre otros modelos de razonamiento esp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VINHYU/OpenSpatial-InternVL3-8B
+- Hugging Face: https://huggingface.co/VINHYU/OpenSpatial-InternVL3-8B
 - Repositorio GitHub: https://github.com/VINHYU/OpenSpatial
 - Paper arXiv: https://arxiv.org/abs/2604.07296
 - Dataset de entrenamiento: https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial

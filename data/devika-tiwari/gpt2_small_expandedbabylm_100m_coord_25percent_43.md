@@ -17,7 +17,7 @@ El modelo se entrenó durante 20 épocas con un learning rate de 1e-4, batch siz
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | PyTorch (según tags de HuggingFace) |
+| Formato de pesos | PyTorch (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 - VRAM estimada para inferencia: entre 1 y 2 GB, asumiendo un modelo de ~124M parámetros en precisión fp16 o fp32. No se dispone de datos de cuantización específicos.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) o incluso CPU, dado el tamaño reducido del modelo.
 - El modelo cabe en GPUs de consumo, pero el tamaño del repositorio (7.5 GB) sugiere que puede incluir múltiples checkpoints o pesos en fp32 con estado del optimizador, lo que no afecta directamente a la inferencia.
-- Opciones de despliegue: HuggingFace Transformers, llama.cpp (si se convierte a formato GGUF), Ollama (con cuantización) o vLLM para experimentos locales.
+- Opciones de despliegue: Hugging Face Transformers, llama.cpp (si se convierte a formato GGUF), Ollama (con cuantización) o vLLM para experimentos locales.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gpt2_small_expandedbabyLM_100M_coord_25percent_43 | no disponible (nombre indica ~100M) | no disponible | no disponible | HuggingFace |
-| GPT-2 small (original) | 124M | 1024 | MIT | HuggingFace |
-| gpt2_small_expandedbabyLM_100k_44 (mismo autor) | no disponible | no disponible | no disponible | HuggingFace |
+| gpt2_small_expandedbabyLM_100M_coord_25percent_43 | no disponible (nombre indica ~100M) | no disponible | no disponible | Hugging Face |
+| GPT-2 small (original) | 124M | 1024 | MIT | Hugging Face |
+| gpt2_small_expandedbabyLM_100k_44 (mismo autor) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos.
 
@@ -74,5 +74,5 @@ No se dispone de datos de rendimiento comparables entre estos modelos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_25percent_43
+- Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_25percent_43
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web. Los resultados obtenidos no eran relevantes para el modelo.

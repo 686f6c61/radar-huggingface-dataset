@@ -95,7 +95,7 @@ Las cuatro variantes EXL3 comparten los mismos pesos abliterated y solo difieren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-5bpw
+- Repositorio Hugging Face: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-5bpw
 - Modelo base abliterated: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Variante 4.0 bpw: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-4bpw
 - Variante 6.0 bpw: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-6bpw

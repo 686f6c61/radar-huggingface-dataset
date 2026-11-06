@@ -4,7 +4,7 @@
 
 Spherical DYffusion es un método propuesto por Salva Ruhling Cachay y colaboradores para la emulación probabilística de un modelo climático global. Combina un operador neuronal de Fourier esférico (SFNO) para modelar la dinámica en la esfera con el enfoque DYffusion, que utiliza un interpolador y un pronosticador entrenados en dos etapas para generar conjuntos de simulaciones probabilísticas. El modelo está diseñado para trabajar con datos del modelo atmosférico FV3GFS, permitiendo pronósticos por conjuntos y análisis de incertidumbre en simulaciones climáticas.
 
-La implementación publicada en HuggingFace es una versión compacta que preserva los contratos de tensores y datos del proyecto original, pensada para pruebas de humo y validación de pipelines, no para reproducir el entrenamiento a escala de paper. El repositorio incluye scripts para generar datos sintéticos, entrenar en una o varias GPUs, realizar inferencia y evaluar resultados. Los pesos de entrenamiento aún no están disponibles, aunque se espera que se suban próximamente.
+La implementación publicada en Hugging Face es una versión compacta que preserva los contratos de tensores y datos del proyecto original, pensada para pruebas de humo y validación de pipelines, no para reproducir el entrenamiento a escala de paper. El repositorio incluye scripts para generar datos sintéticos, entrenar en una o varias GPUs, realizar inferencia y evaluar resultados. Los pesos de entrenamiento aún no están disponibles, aunque se espera que se suban próximamente.
 
 El modelo es relevante porque aborda el desafío de emular modelos climáticos complejos con métodos de aprendizaje profundo probabilístico, ofreciendo una alternativa más eficiente que las simulaciones numéricas tradicionales. Su licencia Apache-2.0 facilita su uso en investigación y desarrollo.
 
@@ -73,7 +73,7 @@ No disponible. No se proporcionan datos comparativos con otros emuladores climá
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/Spherical_DYffusion
+- Hugging Face: https://huggingface.co/OneScience-Group/Spherical_DYffusion
 - Paper arXiv: https://arxiv.org/abs/2406.14798
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio OneScience en Gitee: https://gitee.com/onescience-ai/onescience

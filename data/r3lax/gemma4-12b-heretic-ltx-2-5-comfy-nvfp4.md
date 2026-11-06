@@ -23,7 +23,7 @@ Este modelo resuelve el problema del alto consumo de memoria del text encoder de
 
 El modelo base es `google/gemma-4-12B-it`, un transformer decoder de 12 mil millones de parámetros con 48 capas. Ocho de esas capas (índices 5, 11, 17, 23, 29, 35, 41 y 47) son de atención global y reutilizan la proyección K como V, por lo que no tienen `v_proj` separado; de ahí que solo haya 40 matrices `v_proj` cuantizadas en lugar de 48. Sobre este modelo se aplicó la técnica de "abliteración" (eliminación de direcciones internas de rechazo) para producir la variante "heretic" con comportamiento menos censurado, y posteriormente DeepNeuralNerd adaptó los pesos al pipeline LTX-2.5 mediante un remapeo de nombres (por ejemplo, `model.language_model.*` → `model.*`, `model.vision_embedder.*` → `vision_model.*`).
 
-La cuantización a NVFP4 se realizó con `convert-to-quant` v1.3.4 en modo `--simple` (redondeo directo, sin pasos de optimización como learned-rounding o SVD). El proceso se ejecutó en tres fragmentos del decoder para no exceder la memoria RAM, y luego se fusionaron con la parte BF16 intacta. No hubo reentrenamiento ni fine-tuning; solo se comprimieron los pesos. El checkpoint incluye el tokenizer embebido (`tokenizer_json`) y los activos de HuggingFace necesarios para cargar el modelo en ComfyUI.
+La cuantización a NVFP4 se realizó con `convert-to-quant` v1.3.4 en modo `--simple` (redondeo directo, sin pasos de optimización como learned-rounding o SVD). El proceso se ejecutó en tres fragmentos del decoder para no exceder la memoria RAM, y luego se fusionaron con la parte BF16 intacta. No hubo reentrenamiento ni fine-tuning; solo se comprimieron los pesos. El checkpoint incluye el tokenizer embebido (`tokenizer_json`) y los activos de Hugging Face necesarios para cargar el modelo en ComfyUI.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ La comparativa se limita a los modelos de la misma línea, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/r3lax/gemma4-12b-heretic-ltx-2.5-comfy-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/r3lax/gemma4-12b-heretic-ltx-2.5-comfy-nvfp4
 - Modelo fuente (DeepNeuralNerd): https://huggingface.co/DeepNeuralNerd/Gemma-4-12B-it-uncensored-heretic-DeepNeuralNerd-LTX_2.5_ComfyUI
 - Modelo abliterado original (llmfan46): https://huggingface.co/llmfan46/gemma-4-12B-it-uncensored-heretic
 - Modelo base (Google): https://huggingface.co/google/gemma-4-12B-it

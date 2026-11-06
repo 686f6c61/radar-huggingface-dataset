@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arc 5.5 Cyber Operations es una ficha de modelo publicada por ArtificialFrontiers (Brink Studios, arquitecto principal Ryan Brink) que se presenta como una "suite" de agentes de ciberseguridad y sintesis de codigo orientada a ejecucion local. En la practica, el repositorio no contiene pesos propios: la model card indica que el usuario debe descargar GGUF de terceros (variantes "abliterated" y "heretic" de Qwen2.5-Coder-0.5B-Instruct, Llama-3.2-1B-Instruct y Llama-3.2-3B-Instruct) desde otros repositorios de HuggingFace. El modelo base declarado en los metadatos es Qwen2.5-Coder-0.5B-Instruct, con Llama-3.2-3B-Instruct como base adicional en la model card.
+Arc 5.5 Cyber Operations es una ficha de modelo publicada por ArtificialFrontiers (Brink Studios, arquitecto principal Ryan Brink) que se presenta como una "suite" de agentes de ciberseguridad y sintesis de codigo orientada a ejecucion local. En la practica, el repositorio no contiene pesos propios: la model card indica que el usuario debe descargar GGUF de terceros (variantes "abliterated" y "heretic" de Qwen2.5-Coder-0.5B-Instruct, Llama-3.2-1B-Instruct y Llama-3.2-3B-Instruct) desde otros repositorios de Hugging Face. El modelo base declarado en los metadatos es Qwen2.5-Coder-0.5B-Instruct, con Llama-3.2-3B-Instruct como base adicional en la model card.
 
 La propuesta se centra en un "system prompt" y un conjunto de directivas (cero rechazos en tareas de pentesting, escritura de ficheros en disco mediante bloques `tool:write`, soporte de Delphi/Object Pascal para el curriculo sudafricano CAPS/IEB) mas que en un entrenamiento o fine-tuning verificable. No se documentan datos de entrenamiento, tokens procesados, tecnicas de alineamiento ni evaluaciones.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Arc 5.5 Cyber Operations (Lite/Flash/Cyber) | 0,5B / 1,0B / 3,2B | 2048 tokens en el ejemplo de despliegue | Suite de prompts y configuracion sobre modelos base de terceros | Apache 2.0 | Repositorio de configuracion; pesos en repositorios de terceros |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B | 32 768 tokens (contexto nativo del modelo base) | Generacion de codigo | Apache 2.0 | Pesos oficiales en HuggingFace |
-| Llama-3.2-3B-Instruct | 3,2B | 128 000 tokens (contexto nativo del modelo base) | Asistente generalista | Llama 3.2 Community License | Pesos oficiales en HuggingFace |
+| Qwen2.5-Coder-0.5B-Instruct | 0,5B | 32 768 tokens (contexto nativo del modelo base) | Generacion de codigo | Apache 2.0 | Pesos oficiales en Hugging Face |
+| Llama-3.2-3B-Instruct | 3,2B | 128 000 tokens (contexto nativo del modelo base) | Asistente generalista | Llama 3.2 Community License | Pesos oficiales en Hugging Face |
 | Variantes abliterated/heretic de Llama 3.2 y Qwen2.5-Coder | 0,5B-3,2B | Segun modelo base | Reduccion de rechazos mediante modificaciones comunitarias | Segun modelo base | Repositorios comunitarios (bartowski, mradermacher, Severian) |
 
 La comparativa relevante es con los modelos base sin modificar: Arc 5.5 no aporta pesos ni entrenamiento propios, por lo que su rendimiento real dependera de las variantes abliterated/heretic que el usuario descargue. No se dispone de datos de benchmarks que permitan comparar calidad.
@@ -87,10 +87,10 @@ La comparativa relevante es con los modelos base sin modificar: Arc 5.5 no aport
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArtificialFrontiers/Arc-5.5-Cyber-Operations
+- Repositorio Hugging Face: https://huggingface.co/ArtificialFrontiers/Arc-5.5-Cyber-Operations
 - Modelo base Qwen2.5-Coder-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Modelo base Llama-3.2-3B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - GGUF de referencia para Lite (bartowski): https://huggingface.co/bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF
 - GGUF de referencia para Flash (Severian): https://huggingface.co/Severian/heretic_FuseChat-Llama-3.2-1B-Instruct-GGUF
 - GGUF de referencia para Cyber (mradermacher): https://huggingface.co/mradermacher/Llama-3.2-3B-Instruct-heretic-i1-GGUF
-- Organizacion en HuggingFace: https://huggingface.co/ArtificialFrontiers
+- Organizacion en Hugging Face: https://huggingface.co/ArtificialFrontiers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HGF3/good es un repositorio publicado en HuggingFace por el usuario HGF3 el 15 de octubre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a un bloque de metadatos YAML con la licencia Apache 2.0, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline de inferencia asociado ni un listado de idiomas soportados.
+HGF3/good es un repositorio publicado en Hugging Face por el usuario HGF3 el 15 de octubre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a un bloque de metadatos YAML con la licencia Apache 2.0, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline de inferencia asociado ni un listado de idiomas soportados.
 
 No hay informacion publica sobre el numero de parametros, la longitud de contexto, la arquitectura subyacente ni el proceso de entrenamiento. Las metricas de adopcion son nulas en el momento de la consulta (0 descargas, 0 likes), lo que junto con la ausencia de documentacion y de ficheros de pesos visibles impide confirmar que se trate de un modelo entrenado y funcional, o de un repositorio en fase de preparacion.
 
@@ -39,7 +39,7 @@ No disponible. No se ha publicado ninguna descripcion de capacidades en la infor
 - Cobertura multilingue.
 - Modos especiales como thinking mode, vision o audio.
 
-Tampoco se declara un pipeline de HuggingFace (text-generation, text2text-generation, image-text-to-text, etc.), lo que impide inferir la modalidad del modelo.
+Tampoco se declara un pipeline de Hugging Face (text-generation, text2text-generation, image-text-to-text, etc.), lo que impide inferir la modalidad del modelo.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HGF3/good
+- Repositorio en Hugging Face: https://huggingface.co/HGF3/good
 - Model card del autor: no disponible (el README solo contiene el bloque de licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

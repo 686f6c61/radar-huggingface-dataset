@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nankaigenomics/contrastive` es un repositorio de HuggingFace que contiene una implementación funcional de MobileViT en configuración "nano" orientada a tareas de aprendizaje contrastivo. Lo publica el usuario nankaigenomics bajo licencia Apache 2.0 y se distribuye como código PyTorch (`run.py`) acompañado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`.
+`nankaigenomics/contrastive` es un repositorio de Hugging Face que contiene una implementación funcional de MobileViT en configuración "nano" orientada a tareas de aprendizaje contrastivo. Lo publica el usuario nankaigenomics bajo licencia Apache 2.0 y se distribuye como código PyTorch (`run.py`) acompañado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`.
 
 Conviene subrayar que no se trata de un modelo entrenado ni evaluado: la propia model card indica que el checkpoint es una inicialización válida para pruebas de humo y que no se reclama ninguna puntuación de benchmark. El checkpoint contiene 16.576 parámetros (unos 65 KB en fp32), una escala muy reducida incluso dentro de la familia MobileViT.
 
@@ -73,7 +73,7 @@ No se dispone de datos verificados de los modelos comparables en la información
 
 | Modelo | Parámetros | Contexto / resolución | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nankaigenomics/contrastive | 16.576 | no disponible | no disponible (sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
+| nankaigenomics/contrastive | 16.576 | no disponible | no disponible (sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
 | MobileViT-XXS (referencia de la familia) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | MobileViT-XS (referencia de la familia) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | EfficientNet-B0 (alternativa eficiente habitual) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -87,12 +87,12 @@ No se dispone de datos verificados de los modelos comparables en la información
 - Restricciones de licencia: Apache 2.0 permite uso comercial del código y los pesos, pero la propia model card advierte de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
 - Idiomas: no se declara ningún soporte lingüístico; no es un modelo de texto.
 - Sin cifras de rendimiento ni comparativas: la ausencia de benchmarks y la falta de una línea base de igual capacidad hacen imposible determinar si la implementación aporta alguna ventaja.
-- Señales de madurez bajas: 0 descargas, 1 "like", repositorio de 0,0 GB y sin pipeline declarado en HuggingFace.
+- Señales de madurez bajas: 0 descargas, 1 "like", repositorio de 0,0 GB y sin pipeline declarado en Hugging Face.
 - Fechas de creación y actualización registradas en 2026-09-12, con una diferencia de seis segundos entre ambas, lo que sugiere una subida única sin mantenimiento posterior.
 - Para producción sería imprescindible definir resolución de entrada, preprocesado, normalización de embeddings y métrica de evaluación, ninguno de los cuales está documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nankaigenomics/contrastive
+- Modelo en Hugging Face: https://huggingface.co/nankaigenomics/contrastive
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes sobre este modelo concreto. Las búsquedas devolvieron únicamente páginas generales de YouTube (https://www.youtube.com/, https://www.youtube.com/feed/history, https://studio.youtube.com/, https://music.youtube.com/) y un artículo sobre destilación para pregunta-respuesta visual basada en conocimiento (https://arxiv.org/html/2511.11132v4), ninguno de ellos relacionado con `nankaigenomics/contrastive` ni con la arquitectura MobileViT.
 - No se han localizado paper, blog, repositorio de código independiente ni demo asociados a este modelo en la información disponible.

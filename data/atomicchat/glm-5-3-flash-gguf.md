@@ -85,7 +85,7 @@ GLM-5.3-Flash se posiciona como una alternativa abierta a modelos propietarios d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/GLM-5.3-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/GLM-5.3-Flash-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Pagina del modelo en Atomic Chat: https://atomic.chat/models/glm-5-3-flash
 - Documentacion de Unsloth: https://unsloth.ai/docs/models/glm-5.3

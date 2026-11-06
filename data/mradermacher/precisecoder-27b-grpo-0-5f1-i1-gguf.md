@@ -101,7 +101,7 @@ Comparativa limitada a parametros, contexto y licencia; no es posible comparar c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/PreciseCoder-27B-GRPO-0.5F1-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/PreciseCoder-27B-GRPO-0.5F1-i1-GGUF
 - Modelo base: https://huggingface.co/PreciseCoder/PreciseCoder-27B-GRPO-0.5F1
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/PreciseCoder-27B-GRPO-0.5F1-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/PreciseCoder-27B-GRPO-0.5F1-i1-GGUF/resolve/main/PreciseCoder-27B-GRPO-0.5F1.imatrix.gguf

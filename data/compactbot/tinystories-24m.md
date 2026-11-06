@@ -100,7 +100,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas de r
 
 | Modelo | Parametros | Contexto | Licencia | Formatos | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Compactbot/tinystories-24m | 24,59 M | 512 tokens | Apache 2.0 | safetensors float32 + modeling.py propio | Perplejidad de validacion 8,76 (ventana fija) / 12,39 (split completo); benchmarks al nivel del azar | HuggingFace, 240 descargas, no compatible con `transformers` |
+| Compactbot/tinystories-24m | 24,59 M | 512 tokens | Apache 2.0 | safetensors float32 + modeling.py propio | Perplejidad de validacion 8,76 (ventana fija) / 12,39 (split completo); benchmarks al nivel del azar | Hugging Face, 240 descargas, no compatible con `transformers` |
 | Familia TinyStories del paper 2305.07759 | Rango de 1 M a 35 M (variantes del paper) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Paper y dataset publicos |
 | Modelos de 125 M tipo GPT-2 small citados como referencia en el paper | 125 M | no disponible | no disponible | no disponible | no disponible | Ampliamente disponibles |
 
@@ -123,10 +123,10 @@ No se dispone en la informacion proporcionada de cifras comparativas de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/tinystories-24m
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/tinystories-24m
 - Dataset de entrenamiento: https://huggingface.co/datasets/roneneldan/TinyStories
 - Ficheros del dataset: https://huggingface.co/datasets/roneneldan/TinyStories/tree/main
-- Paper TinyStories: How Small Can Language Models Be and Still Speak Coherent English? (pagina en HuggingFace Papers): https://huggingface.co/papers/2305.07759
+- Paper TinyStories: How Small Can Language Models Be and Still Speak Coherent English? (pagina en Hugging Face Papers): https://huggingface.co/papers/2305.07759
 - PDF del paper en OpenReview: https://openreview.net/pdf?id=yiPtWSrBrN
 - Sitio comercial sin relacion (referencia para evitar confusion): https://tinystories.ai/
 - Lista comunitaria de modelos gratuitos (referencia no vinculada al modelo): https://github.com/ClawLabsAI/free-ai-models

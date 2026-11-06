@@ -89,7 +89,7 @@ No disponible. No hay datos de rendimiento, contexto, licencia ni idiomas de est
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-16-qwen36-0-da-7-empty-cot
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-16-qwen36-0-da-7-empty-cot
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-09-16-da-7-empty-cot-mix
 - Repositorio de codigo fuente: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

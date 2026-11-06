@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kic_M_Qwen3-8B_python_t1.0_g1_run0 es un ajuste fino (fine-tune) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en HuggingFace. Se trata de un experimento de entrenamiento realizado con la librería Unsloth sobre la versión base de Qwen3-8B cuantizada en 4 bits (unsloth/Qwen3-8B-Base-unsloth-bnb-4bit). El nombre del repositorio sugiere un ajuste orientado a Python, con temperatura 1.0 y una ejecución identificada como "run0", lo que apunta a un experimento de investigación más que a un modelo listo para producción.
+kic_M_Qwen3-8B_python_t1.0_g1_run0 es un ajuste fino (fine-tune) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en Hugging Face. Se trata de un experimento de entrenamiento realizado con la librería Unsloth sobre la versión base de Qwen3-8B cuantizada en 4 bits (unsloth/Qwen3-8B-Base-unsloth-bnb-4bit). El nombre del repositorio sugiere un ajuste orientado a Python, con temperatura 1.0 y una ejecución identificada como "run0", lo que apunta a un experimento de investigación más que a un modelo listo para producción.
 
 El modelo hereda la arquitectura transformer de Qwen3-8B, con aproximadamente 8.000 millones de parámetros, y está publicado bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0,2 GB, lo que indica que los pesos están almacenados en formato safetensors, presumiblemente en una cuantización de 4 bits derivada del proceso de entrenamiento con Unsloth. La model card es mínima y no aporta detalles sobre el dataset de entrenamiento, hiperparámetros o evaluación.
 
@@ -42,7 +42,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Generación de código Python en entornos controlados: dado el nombre del repositorio, podría emplearse para autocompletar o generar fragmentos de código Python, aunque sin benchmarks que lo respalden.
 - Prototipado de asistentes de programación: se podría integrar en un pipeline de generación de código para pruebas internas, siempre con validación humana.
 - Estudio de degradación por cuantización: al derivar de un modelo base en 4 bits, permite analizar el impacto de la cuantización en tareas de código.
-- Docencia sobre fine-tuning: útil como material didáctico para mostrar el proceso completo de ajuste con Unsloth y su publicación en HuggingFace.
+- Docencia sobre fine-tuning: útil como material didáctico para mostrar el proceso completo de ajuste con Unsloth y su publicación en Hugging Face.
 - Evaluación comparativa de ajustes: sirve como punto de partida para comparar con otros fine-tunes de Qwen3-8B en tareas de Python.
 
 ## Benchmarks y rendimiento
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kic_M_Qwen3-8B_python_t1.0_g1_run0 | ~8B | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3-8B (base) | ~8B | no disponible | Apache 2.0 | HuggingFace (oficial) |
-| Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible | Apache 2.0 | HuggingFace (Unsloth) |
-| Fine-tunes comunitarios de Qwen3-8B | ~8B | variable | variable | HuggingFace |
+| kic_M_Qwen3-8B_python_t1.0_g1_run0 | ~8B | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3-8B (base) | ~8B | no disponible | Apache 2.0 | Hugging Face (oficial) |
+| Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | no disponible | Apache 2.0 | Hugging Face (Unsloth) |
+| Fine-tunes comunitarios de Qwen3-8B | ~8B | variable | variable | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de rendimiento para comparar con alternativas de otros fabricantes.
 
@@ -79,6 +79,6 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g1_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g1_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g1_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.0_g1_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)

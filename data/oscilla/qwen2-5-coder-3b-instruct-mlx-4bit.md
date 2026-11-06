@@ -79,7 +79,7 @@ La comparacion directa con estos modelos requiere ejecutar benchmarks en el mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Qwen2.5-Coder-3B-Instruct-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Qwen2.5-Coder-3B-Instruct-mlx-4Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Coleccion oficial de Qwen2.5-Coder: https://huggingface.co/collections/Qwen/qwen25-coder
 - Coleccion de conversiones MLX de Qwen2.5-Coder: https://huggingface.co/collections/mlx-community/qwen25-coder

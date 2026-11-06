@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Resolución nativa | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| genganbanette/lovebot-dreamshaper-8 | Conversión ONNX fp16 de DreamShaper 8 | No declarados (~1.000 M por la arquitectura SD 1.5) | 512x512 | ONNX fp16 troceado en 20 MiB | CreativeML Open RAIL-M | Repositorio HuggingFace con 0 descargas |
+| genganbanette/lovebot-dreamshaper-8 | Conversión ONNX fp16 de DreamShaper 8 | No declarados (~1.000 M por la arquitectura SD 1.5) | 512x512 | ONNX fp16 troceado en 20 MiB | CreativeML Open RAIL-M | Repositorio Hugging Face con 0 descargas |
 | Lykon/dreamshaper-8 | Modelo original (fine-tune de SD 1.5) | ~1.000 M (arquitectura SD 1.5) | 512x512 | Safetensors / diffusers | CreativeML Open RAIL-M | Ampliamente utilizado; requiere PyTorch o diffusers, no se ejecuta en navegador |
 | Stable Diffusion 1.5 (runwayml/stable-diffusion-v1-5 y redistribuciones comunitarias) | Modelo base de difusión | ~1.000 M | 512x512 | Safetensors, CKPT, ONNX | CreativeML Open RAIL-M | Muy extendido, con numerosas conversiones y ecosistema de herramientas |
 | stabilityai/stable-diffusion-xl-base-1.0 | Difusión latente de mayor tamaño | ~3.500 M (UNet más text encoders) | 1024x1024 | Safetensors / diffusers | CreativeML Open RAIL++-M | Requiere bastante más VRAM; no apto para WebGPU en navegador de forma práctica |
@@ -95,7 +95,7 @@ Frente al modelo original, esta conversión pierde flexibilidad (depende de los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/genganbanette/lovebot-dreamshaper-8
+- Repositorio en Hugging Face: https://huggingface.co/genganbanette/lovebot-dreamshaper-8
 - Modelo base original: https://huggingface.co/Lykon/dreamshaper-8
 - Commit del modelo base referenciado en la model card: https://huggingface.co/Lykon/dreamshaper-8/tree/a7e52b98680b1ba8ff7bce97c7f9f2e2e5337917
 - Licencia CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

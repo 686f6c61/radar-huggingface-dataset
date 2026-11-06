@@ -4,7 +4,7 @@
 
 El repositorio `justratnasetiawan/3d-scene-understanding` no es un modelo de lenguaje entrenado, sino una nota de investigación en formato Markdown sobre comprensión de escenas 3D. El propio autor lo declara explícitamente: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y "no se presenta como un artículo completado ni como una publicación de modelos entrenados". Los archivos principales son `paper_notes.md` y `README.md`.
 
-Los metadatos de HuggingFace lo etiquetan con el tag `transformer` y el repositorio incluye un artefacto en formato `safetensors` con 16.576 parámetros totales. Ese volumen de parámetros es dos o tres órdenes de magnitud inferior al de cualquier transformer funcional para visión o lenguaje, por lo que no debe interpretarse como un checkpoint utilizable. El tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes desde su creación el 5 de octubre de 2026.
+Los metadatos de Hugging Face lo etiquetan con el tag `transformer` y el repositorio incluye un artefacto en formato `safetensors` con 16.576 parámetros totales. Ese volumen de parámetros es dos o tres órdenes de magnitud inferior al de cualquier transformer funcional para visión o lenguaje, por lo que no debe interpretarse como un checkpoint utilizable. El tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes desde su creación el 5 de octubre de 2026.
 
 Su relevancia actual es documental, no técnica: sirve como plantilla de protocolo de investigación y como punto de partida bibliográfico sobre comprensión de escenas 3D con modelos multimodales grandes (LMM/MLLM), un área activa donde trabajos como D4RT (DeepMind) o 3DRS (NeurIPS 2025) abordan la carencia de representaciones explícitamente 3D en los MLLM entrenados sobre datos 2D.
 
@@ -88,7 +88,7 @@ No disponible en sentido estricto: no existe un modelo comparable porque este re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justratnasetiawan/3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/justratnasetiawan/3d-scene-understanding
 - D4RT: Unified, Fast 4D Scene Reconstruction & Tracking (DeepMind): https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/
 - Scene understanding using vision language models (Microsoft Learn): https://learn.microsoft.com/en-us/industry/mobility/architecture/scene-understanding
 - Awesome Scene Understanding (recopilación de artículos): https://github.com/bertjiazheng/awesome-scene-understanding

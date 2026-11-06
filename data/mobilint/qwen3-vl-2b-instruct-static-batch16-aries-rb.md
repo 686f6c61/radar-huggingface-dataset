@@ -85,6 +85,6 @@ La comparación relevante es con el modelo base: este artefacto sacrifica flexib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/Qwen3-VL-2B-Instruct-static-Batch16-aries-rb
+- Modelo en Hugging Face: https://huggingface.co/mobilint/Qwen3-VL-2B-Instruct-static-Batch16-aries-rb
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - PR de vllm-mblt requerido: https://github.com/mobilint/vllm-mblt/pull/62

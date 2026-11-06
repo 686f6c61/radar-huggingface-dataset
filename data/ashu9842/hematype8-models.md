@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashu9842/hematype8-models` es un repositorio publicado en HuggingFace por el usuario ashu9842 bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene más contenido que la declaración de licencia (`license: mit`), sin descripción del modelo, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. La fecha de creación y de última actualización registrada es el 12 de septiembre de 2026, idéntica en ambos campos, lo que sugiere una publicación única sin mantenimiento posterior.
+`ashu9842/hematype8-models` es un repositorio publicado en Hugging Face por el usuario ashu9842 bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene más contenido que la declaración de licencia (`license: mit`), sin descripción del modelo, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. La fecha de creación y de última actualización registrada es el 12 de septiembre de 2026, idéntica en ambos campos, lo que sugiere una publicación única sin mantenimiento posterior.
 
 No es posible determinar qué tipo de modelo contiene el repositorio. La ausencia de etiquetas de pipeline, de idiomas soportados y de cualquier ficha técnica impide establecer si se trata de un modelo de lenguaje, un clasificador, un conjunto de adaptadores o un artefacto auxiliar. El identificador "hematype8-models" no aporta información verificable sobre la arquitectura ni sobre el dominio de aplicación.
 
@@ -63,5 +63,5 @@ No disponible. No se puede identificar la categoría del modelo (tamaño, modali
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashu9842/hematype8-models
+- Repositorio en Hugging Face: https://huggingface.co/ashu9842/hematype8-models
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web. Los resultados devueltos por la búsqueda corresponden a páginas de marcadores y noticias de la NHL (nhl.com) y no guardan relación con este modelo.

@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kuzaai/kuza-gemma-4-e2b | 4.628.569.635 | No disponible | en, sw | Gemma | HuggingFace, 24 descargas, 0 likes |
-| unsloth/gemma-4-E2B-it-qat-q4_0-unquantized (modelo base) | No disponible | No disponible | No disponible | Gemma | HuggingFace |
+| kuzaai/kuza-gemma-4-e2b | 4.628.569.635 | No disponible | en, sw | Gemma | Hugging Face, 24 descargas, 0 likes |
+| unsloth/gemma-4-E2B-it-qat-q4_0-unquantized (modelo base) | No disponible | No disponible | No disponible | Gemma | Hugging Face |
 | Otros asistentes agrícolas para África Oriental | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos de rendimiento ni de especificaciones de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de especificaciones de alternativas com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kuzaai/kuza-gemma-4-e2b
+- Modelo en Hugging Face: https://huggingface.co/kuzaai/kuza-gemma-4-e2b
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
 - Licencia Gemma: https://ai.google.dev/gemma/terms
 - Dataset de ajuste en inglés: https://huggingface.co/datasets/kuzaai/kuza_sft_english

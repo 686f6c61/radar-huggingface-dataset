@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pika-H3-Flex-Turbo-LoRA-AIPod es un paquete de despliegue y adaptadores LoRA para generación de vídeo a partir de texto, construido sobre el modelo base MiniMax H3. Lo publica el usuario manateelazycat en HuggingFace y combina los adaptadores Flex de Pika / Mellis, Inc. con la destilación turbo de LightX2V. El resultado es un adaptador de 4 pasos en la variante FL2VA (texto a vídeo con audio) que se aplica al modelo base con fuerza 1, sampler Euler, CFG 1, y desplazamientos de vídeo y audio de 6 y 3 respectivamente.
+Pika-H3-Flex-Turbo-LoRA-AIPod es un paquete de despliegue y adaptadores LoRA para generación de vídeo a partir de texto, construido sobre el modelo base MiniMax H3. Lo publica el usuario manateelazycat en Hugging Face y combina los adaptadores Flex de Pika / Mellis, Inc. con la destilación turbo de LightX2V. El resultado es un adaptador de 4 pasos en la variante FL2VA (texto a vídeo con audio) que se aplica al modelo base con fuerza 1, sampler Euler, CFG 1, y desplazamientos de vídeo y audio de 6 y 3 respectivamente.
 
 El repositorio no contiene los pesos del modelo base: según la model card, los parámetros del modelo se montan por separado en modo de solo lectura. Lo que se distribuye es el controlador de despliegue, un runtime Thor sin modelo, el código fuente, la evidencia de verificación y un paquete LPK mínimo. Esto lo convierte en un artefacto de integración más que en un modelo autónomo, orientado a entornos con el modelo MiniMax H3 ya disponible.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Pasos de inferencia | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika-H3-Flex-Turbo-LoRA-AIPod | LoRA sobre MiniMax H3 (texto a vídeo con audio) | 4 (Euler, CFG 1) | No disponible | MiniMax H3 Community License | HuggingFace, sin pesos base |
-| MiniMax H3 (base) | Modelo de difusión para vídeo | No disponible | No disponible | MiniMax H3 Community License | HuggingFace (MiniMaxAI) |
+| Pika-H3-Flex-Turbo-LoRA-AIPod | LoRA sobre MiniMax H3 (texto a vídeo con audio) | 4 (Euler, CFG 1) | No disponible | MiniMax H3 Community License | Hugging Face, sin pesos base |
+| MiniMax H3 (base) | Modelo de difusión para vídeo | No disponible | No disponible | MiniMax H3 Community License | Hugging Face (MiniMaxAI) |
 | Variantes Ref2VA / lite / 2 y 8 pasos de Pika Flex | Adaptadores LoRA sobre MiniMax H3 | 2 u 8 según variante | No disponible | No disponible | No cubiertas por este paquete |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la información proporcionada.
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/Pika-H3-Flex-Turbo-LoRA-AIPod
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/Pika-H3-Flex-Turbo-LoRA-AIPod
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax H3 Community License: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE

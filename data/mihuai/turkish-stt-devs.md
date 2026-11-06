@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mihu Turkish STT for Developers es un modelo de reconocimiento automatico del habla (ASR) en turco, desarrollado por mihuai y publicado en HuggingFace. A diferencia de los modelos ASR genericos, esta especializado en el vocabulario y las expresiones que usan los desarrolladores turcos al dictar: comandos de terminal (`git rebase`, `npm run dev`), nombres de ficheros, fragmentos de codigo y frases coloquiales de programacion. El modelo resuelve el problema del dictado por voz en entornos de desarrollo local, donde los ASR generalistas fallan al transcribir terminos tecnicos y anglicismos.
+Mihu Turkish STT for Developers es un modelo de reconocimiento automatico del habla (ASR) en turco, desarrollado por mihuai y publicado en Hugging Face. A diferencia de los modelos ASR genericos, esta especializado en el vocabulario y las expresiones que usan los desarrolladores turcos al dictar: comandos de terminal (`git rebase`, `npm run dev`), nombres de ficheros, fragmentos de codigo y frases coloquiales de programacion. El modelo resuelve el problema del dictado por voz en entornos de desarrollo local, donde los ASR generalistas fallan al transcribir terminos tecnicos y anglicismos.
 
 Tecnicamente se trata de un modelo tipo transducer (encoder-decoder-joiner) con arquitectura Zipformer, exportado a ONNX en cuantizacion int8 y pensado para ejecutarse en CPU mediante la libreria sherpa-onnx. Soporta reconocimiento en streaming, es decir, transcribe mientras el usuario habla, y opera integramente en local: no hay llamadas a la nube ni dependencia de un LLM. El repositorio ocupa aproximadamente 0,1 GB, lo que confirma su orientacion a despliegue ligero en dispositivos.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Contexto / streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mihuai/turkish-stt-devs | Transducer Zipformer (ONNX int8) | Turco | Streaming, on-device | mihu-community-license (fine-tuning no permitido) | HuggingFace |
-| Whisper (OpenAI, variantes) | Transformer encoder-decoder | Multilingue (incluye turco) | No streaming nativo; por chunks | MIT (variantes abiertas) | HuggingFace, multiples runtimes |
-| Wav2Vec2 / XLS-R (Meta) | Transformer auto-supervisado | Multilingue | No streaming nativo | MIT / CC-BY-NC segun variante | HuggingFace |
-| Modelos Zipformer de sherpa-onnx (genericos) | Transducer Zipformer | Multiples idiomas | Streaming, on-device | Segun modelo | HuggingFace, k2-fsa |
+| mihuai/turkish-stt-devs | Transducer Zipformer (ONNX int8) | Turco | Streaming, on-device | mihu-community-license (fine-tuning no permitido) | Hugging Face |
+| Whisper (OpenAI, variantes) | Transformer encoder-decoder | Multilingue (incluye turco) | No streaming nativo; por chunks | MIT (variantes abiertas) | Hugging Face, multiples runtimes |
+| Wav2Vec2 / XLS-R (Meta) | Transformer auto-supervisado | Multilingue | No streaming nativo | MIT / CC-BY-NC segun variante | Hugging Face |
+| Modelos Zipformer de sherpa-onnx (genericos) | Transducer Zipformer | Multiples idiomas | Streaming, on-device | Segun modelo | Hugging Face, k2-fsa |
 
 La comparativa se limita a categorias generales porque no se dispone de datos de benchmarks del modelo evaluado que permitan una comparacion cuantitativa. La diferencia principal frente a Whisper y Wav2Vec2 es la especializacion en jerga de desarrollo en turco y la orientacion a streaming en CPU, a costa de no ser multilingue.
 
@@ -88,7 +88,7 @@ La comparativa se limita a categorias generales porque no se dispone de datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mihuai/turkish-stt-devs
+- Modelo en Hugging Face: https://huggingface.co/mihuai/turkish-stt-devs
 - Licencia (referenciada en la model card): fichero `LICENSE` del repositorio
 - sherpa-onnx (runtime de inferencia): https://github.com/k2-fsa/sherpa-onnx
 - huggingface_hub (descarga de pesos): https://huggingface.co/docs/huggingface_hub

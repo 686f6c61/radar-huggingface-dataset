@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/urd_arab_10mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0. El repositorio ocupa aproximadamente 0,1 GB y los pesos se distribuyen en formato safetensors.
+El modelo `francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del modelo base `goldfish-models/urd_arab_10mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 39.087.104 parametros totales, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL en su version 0.23.0. El repositorio ocupa aproximadamente 0,1 GB y los pesos se distribuyen en formato safetensors.
 
 El modelo resuelve, en principio, la tarea de generacion de texto en el dominio linguistico del modelo base. El identificador del modelo base (`urd_arab`) sugiere un enfoque sobre urdu y arabe, aunque este dato no se confirma en la model card. El nombre del ajuste (`ppt-Dp-100mb-packed-bfd_seed455`) apunta a un experimento academico sobre tecnicas de tokenizacion y empaquetado de datos, coherente con el enlace al proyecto de Weights & Biases del autor ("new-tokenizers").
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39.087.104 | no disponible | no disponible | HuggingFace | Ajuste SFT del modelo base goldfish |
-| goldfish-models/urd_arab_10mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que parte este ajuste |
-| GPT-2 small (openai-community/gpt2) | 124 millones | 1024 tokens | MIT | HuggingFace | Referencia general de la familia GPT-2, no especifico de urdu ni arabe |
+| francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39.087.104 | no disponible | no disponible | Hugging Face | Ajuste SFT del modelo base goldfish |
+| goldfish-models/urd_arab_10mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que parte este ajuste |
+| GPT-2 small (openai-community/gpt2) | 124 millones | 1024 tokens | MIT | Hugging Face | Referencia general de la familia GPT-2, no especifico de urdu ni arabe |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/eosm3ydx
 - Repositorio de TRL: https://github.com/huggingface/trl

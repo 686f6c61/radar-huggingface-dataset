@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gargantua-2 es un modelo publicado en HuggingFace por el usuario OpenTARS bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o de caracter experimental sin difusion.
+Gargantua-2 es un modelo publicado en Hugging Face por el usuario OpenTARS bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o de caracter experimental sin difusion.
 
 No es posible confirmar en la informacion disponible que se trate de un modelo de lenguaje, ni determinar su familia arquitectonica, numero de parametros o longitud de contexto. Tampoco hay evidencia de pesos publicados en formatos habituales (safetensors, GGUF) ni de resultados de evaluacion. Cualquier afirmacion sobre su rendimiento o idoneidad para produccion carece de respaldo documental.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: numero de tokens, composicio
 - Experimentacion academica con licencia permisiva: la licencia Apache 2.0 permite modificacion y redistribucion, lo que facilita su uso en trabajos que requieran inspeccionar o adaptar el modelo.
 - Benchmarking comparativo interno: puede incorporarse a suites de evaluacion propias para contrastar su comportamiento frente a modelos documentados.
 - Prototipado de bajo riesgo: al no haber garantias de calidad, encaja en fases tempranas de prototipos donde los errores no tienen impacto en produccion.
-- Estudio de reproducibilidad: util para analizar practicas de publicacion en HuggingFace, dado que ejemplifica un repositorio con metadatos minimos.
+- Estudio de reproducibilidad: util para analizar practicas de publicacion en Hugging Face, dado que ejemplifica un repositorio con metadatos minimos.
 
 ## Benchmarks y rendimiento
 
@@ -71,5 +71,5 @@ No disponible. La ausencia de datos sobre parametros, contexto y arquitectura im
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenTARS/Gargantua-2
+- Repositorio en Hugging Face: https://huggingface.co/OpenTARS/Gargantua-2
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

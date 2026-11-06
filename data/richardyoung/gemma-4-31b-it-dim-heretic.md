@@ -63,7 +63,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 - VRAM estimada con cuantización a 8 bits: en torno a 31-35 GB; con 4 bits: en torno a 16-20 GB (estimaciones basadas en el recuento de parámetros, no confirmadas por el autor).
 - GPU recomendadas: A100 80GB, H100 80GB, o configuraciones multi-GPU para precisión completa; para cuantización 4 bits podría ejecutarse en una RTX 4090 de 24 GB con contexto limitado.
 - Cabe en GPU consumer: solo con cuantización agresiva (4 bits) y aceptando recortes de contexto; el tamaño del repositorio (62,6 GB) impide ejecución en consumer GPU sin cuantizar.
-- Opciones de despliegue: `transformers` (librería declarada), y potencialmente vLLM, TGI o llama.cpp si se generan pesos GGUF compatibles (no confirmado en la información disponible); el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (librería declarada), y potencialmente vLLM, TGI o llama.cpp si se generan pesos GGUF compatibles (no confirmado en la información disponible); el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -90,10 +90,10 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- [HuggingFace: richardyoung/gemma-4-31B-it-DiM-heretic](https://huggingface.co/richardyoung/gemma-4-31B-it-DiM-heretic)
+- [Hugging Face: richardyoung/gemma-4-31B-it-DiM-heretic](https://huggingface.co/richardyoung/gemma-4-31B-it-DiM-heretic)
 - [Modelo base: google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)
 - [Heretic project](https://heretic-project.org)
-- [Colección Gemma 4 en HuggingFace](https://huggingface.co/collections/google/gemma-4)
+- [Colección Gemma 4 en Hugging Face](https://huggingface.co/collections/google/gemma-4)
 - [GitHub Google Gemma](https://github.com/google-gemma)
 - [Blog de lanzamiento de Gemma 4](https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/)
 - [Documentación Gemma](https://ai.google.dev/gemma/docs/core)

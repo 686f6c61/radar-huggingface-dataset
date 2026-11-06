@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 26B A4B es un modelo multimodal de Google DeepMind publicado bajo licencia Apache 2.0, distribuido en HuggingFace a través del repositorio de Virtudant-AI con cuantizaciones GGUFs generadas por Unsloth. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 25.200 millones de parámetros totales y 3.800 millones de parámetros activos por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. Procesa entradas de texto, imagen y vídeo (audio solo en las variantes E2B y E4B), y genera salida textual.
+Gemma 4 26B A4B es un modelo multimodal de Google DeepMind publicado bajo licencia Apache 2.0, distribuido en Hugging Face a través del repositorio de Virtudant-AI con cuantizaciones GGUFs generadas por Unsloth. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 25.200 millones de parámetros totales y 3.800 millones de parámetros activos por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. Procesa entradas de texto, imagen y vídeo (audio solo en las variantes E2B y E4B), y genera salida textual.
 
 El modelo forma parte de la familia Gemma 4, que incluye variantes densas (E2B, E4B, 31B) y esta variante MoE. Incorpora una ventana de contexto de hasta 256K tokens, soporte nativo para más de 140 idiomas, modos de razonamiento configurables (thinking modes), soporte nativo del rol `system` y capacidades de function calling orientadas a flujos agénticos. Su arquitectura de atención híbrida combina atención local con ventana deslizante y atención global, con Keys y Values unificadas en las capas globales y Proportional RoPE (p-RoPE) para optimizar el consumo de memoria en contextos largos.
 
@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Virtudant-AI/gemma-4-26B-A4B-it
+- Repositorio Hugging Face: https://huggingface.co/Virtudant-AI/gemma-4-26B-A4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Colección de cuantizaciones Unsloth Gemma 4: https://huggingface.co/collections/unsloth/gemma-4
 - Guía Unsloth para ejecutar Gemma 4: https://docs.unsloth.ai/models/gemma-4
 - Documentación Unsloth Studio: https://unsloth.ai/docs/new/studio

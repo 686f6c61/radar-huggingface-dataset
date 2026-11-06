@@ -91,7 +91,7 @@ En la sección de evaluación, la model card indica que los doce clips de muestr
 
 | Modelo | Creador | Parámetros | Contexto | Elo hindi (VoiceArena) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Maya-2-Native | Maya Research | 2,50 B | No disponible | 1047 ±11 | Apache-2.0 | Pesos abiertos en HuggingFace |
+| Maya-2-Native | Maya Research | 2,50 B | No disponible | 1047 ±11 | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Sonic-3.6 | Cartesia | No disponible | No disponible | 1094 ±13 | No disponible | Servicio comercial |
 | Sonic-3.5 | Cartesia | No disponible | No disponible | 1035 ±12 | No disponible | Servicio comercial |
 | Lightning 3.1 Pro | Smallest AI | No disponible | No disponible | 1024 ±12 | No disponible | Servicio comercial |
@@ -111,11 +111,11 @@ La comparación significativa es de producto, no de arquitectura: Maya 2 Native 
 - Nombres internos inconsistentes: el modelo se llama Maya 2 Native, pero el paquete, la clase Python y el fichero de configuración siguen siendo `maya3`, `Maya3TTS` y `maya3_config.json`. Hay que usar esos identificadores en el código.
 - No hay cifras publicadas de latencia, throughput ni coste por hora de audio, datos imprescindibles para dimensionar un despliegue en producción.
 - El checkpoint es la versión 1.0 (25 de octubre de 2026) y el repositorio se actualizó al día siguiente; no hay historial de versiones ni garantía de estabilidad de la API.
-- La búsqueda web realizada no devolvió ninguna fuente independiente sobre el modelo: los resultados corresponden a Autodesk Maya y a la civilización maya, por lo que toda la información procede de HuggingFace y de la model card del autor.
+- La búsqueda web realizada no devolvió ninguna fuente independiente sobre el modelo: los resultados corresponden a Autodesk Maya y a la civilización maya, por lo que toda la información procede de Hugging Face y de la model card del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maya-research/maya2-native
+- Modelo en Hugging Face: https://huggingface.co/maya-research/maya2-native
 - Repositorio de código: https://github.com/MayaResearch/maya2-native
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Leaderboard de VoiceArena (hindi): https://voicearena.com/tts-leaderboard/hindi

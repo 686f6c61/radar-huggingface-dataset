@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/qwen-3-4B-medmcqa-lora-adapter | Adaptador LoRA sobre base 4B | no disponible | MCQA médica (MedMCQA) | Apache-2.0 / MIT | HuggingFace (AMD) |
-| Qwen3-4B (base sin adaptar) | 4B | no disponible en esta ficha | Propósito general | Apache-2.0 | HuggingFace (Alibaba) |
-| amd/qwen-3-4B-quark (base del adaptador) | 4B, INT4 | no disponible | Propósito general cuantizado para Ryzen AI | Apache-2.0 | HuggingFace (AMD) |
-| Adaptadores LoRA médicos de la comunidad sobre modelos 7B-8B | 7B-8B | variable | MCQA médica / QA clínica | variable | HuggingFace |
+| amd/qwen-3-4B-medmcqa-lora-adapter | Adaptador LoRA sobre base 4B | no disponible | MCQA médica (MedMCQA) | Apache-2.0 / MIT | Hugging Face (AMD) |
+| Qwen3-4B (base sin adaptar) | 4B | no disponible en esta ficha | Propósito general | Apache-2.0 | Hugging Face (Alibaba) |
+| amd/qwen-3-4B-quark (base del adaptador) | 4B, INT4 | no disponible | Propósito general cuantizado para Ryzen AI | Apache-2.0 | Hugging Face (AMD) |
+| Adaptadores LoRA médicos de la comunidad sobre modelos 7B-8B | 7B-8B | variable | MCQA médica / QA clínica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/qwen-3-4B-medmcqa-lora-adapter
+- Modelo en Hugging Face: https://huggingface.co/amd/qwen-3-4B-medmcqa-lora-adapter
 - Modelo base cuantizado: https://huggingface.co/amd/qwen-3-4B-quark
 - Dataset MedMCQA: https://huggingface.co/datasets/openlifescienceai/medmcqa
 - Ejemplo de LoRA dinámico en Ryzen AI SW: https://github.com/amd/RyzenAI-SW/tree/main/LLM-examples/dynamic-lora

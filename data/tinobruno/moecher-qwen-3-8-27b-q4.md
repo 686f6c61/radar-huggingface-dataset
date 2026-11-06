@@ -77,7 +77,7 @@ La principal diferencia radica en el formato: mientras que la version base y la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TinoBruno/moecher-qwen-3.8-27b-q4
+- Repositorio Hugging Face: https://huggingface.co/TinoBruno/moecher-qwen-3.8-27b-q4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizacion GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

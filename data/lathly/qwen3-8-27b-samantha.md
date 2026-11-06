@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lathly/Qwen3.8-27B-Samantha
+- Modelo en Hugging Face: https://huggingface.co/Lathly/Qwen3.8-27B-Samantha
 - Adaptador LoRA original: https://huggingface.co/Lathly/Qwen3.8-27B-Samantha_Uncensored_1.1_LoRA
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/digitalpipelines/samantha-1.1-uncensored

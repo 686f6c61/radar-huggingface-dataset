@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agnes-3.0-Flash-abliterated es un repositorio publicado en HuggingFace por el usuario 0xKitkat bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no contiene una model card funcional: el README únicamente indica que la validación local ha pasado y que los ficheros se están subiendo, con la advertencia explícita de que "the release is not complete yet" y de que la model card definitiva y las tablas de evaluación aparecerán tras la verificación remota de hashes. No hay, por tanto, datos verificables sobre arquitectura, tamaño, contexto o entrenamiento.
+Agnes-3.0-Flash-abliterated es un repositorio publicado en Hugging Face por el usuario 0xKitkat bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio no contiene una model card funcional: el README únicamente indica que la validación local ha pasado y que los ficheros se están subiendo, con la advertencia explícita de que "the release is not complete yet" y de que la model card definitiva y las tablas de evaluación aparecerán tras la verificación remota de hashes. No hay, por tanto, datos verificables sobre arquitectura, tamaño, contexto o entrenamiento.
 
 Los únicos datos objetivos disponibles son los metadatos del repositorio: licencia apache-2.0, tamaño de 46,1 GB, cero descargas y un "like", con fecha de creación del 12 de septiembre de 2026 y última actualización del 13 de septiembre de 2026. El nombre del modelo sugiere dos cosas que no se pueden confirmar con la documentación publicada: que se trata de una variante de una familia denominada "Agnes 3.0 Flash" y que ha sido sometida a un proceso de "abliteration" (ablación de direcciones de rechazo en los pesos). Ambas afirmaciones son inferencias a partir del nombre, no hechos documentados.
 
@@ -83,7 +83,7 @@ No disponible. No se puede identificar la familia base del modelo, su tamaño ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xKitkat/Agnes-3.0-Flash-abliterated
+- Repositorio en Hugging Face: https://huggingface.co/0xKitkat/Agnes-3.0-Flash-abliterated
 - Perfil del autor en Twitter/X mencionado en la model card: https://twitter.com/procrastiness
 - Paper, blog técnico, repositorio de código o demo: no disponible.
 - Nota sobre la búsqueda web: las consultas realizadas no devolvieron resultados relacionados con el modelo; únicamente aparecieron páginas informativas sobre husos horarios (timeanddate.com), sin relación con el contenido de esta ficha.

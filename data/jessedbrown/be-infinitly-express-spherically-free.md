@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `Jessedbrown/Be-infinitly-express-spherically-free` corresponde a un repositorio alojado en HuggingFace que, segun la informacion disponible, no contiene un modelo de inteligencia artificial. La model card describe una pagina web interactiva publicada en GitHub Pages que consulta en vivo la API publica de GitHub, recupera los repositorios de una cuenta y los representa como una esfera tridimensional navegable. No se declaran pesos, arquitectura de red neuronal, tokenizador ni pipeline de inferencia; el campo `pipeline` figura como no disponible y el repositorio acumula 0 descargas y 0 likes desde su creacion.
+El identificador `Jessedbrown/Be-infinitly-express-spherically-free` corresponde a un repositorio alojado en Hugging Face que, segun la informacion disponible, no contiene un modelo de inteligencia artificial. La model card describe una pagina web interactiva publicada en GitHub Pages que consulta en vivo la API publica de GitHub, recupera los repositorios de una cuenta y los representa como una esfera tridimensional navegable. No se declaran pesos, arquitectura de red neuronal, tokenizador ni pipeline de inferencia; el campo `pipeline` figura como no disponible y el repositorio acumula 0 descargas y 0 likes desde su creacion.
 
 El contenido tecnico de la model card gira en torno a una correccion geometrica: la primera version del render distribuia los nodos sobre un anillo, lo que, segun el autor, cubre un conjunto de medida cero sobre la esfera y por tanto solo hacia visible un tercio de la estructura. La solucion implementada emplea el angulo aureo (`GA = pi(3 - raiz de 5)`, aproximadamente 2,39996322) para repartir los elementos en bandas de area constante, con `y = 1 - (i/(n-1))*2`, `r = raiz(1 - y^2)` y `theta = GA*i`.
 
@@ -94,6 +94,6 @@ No disponible. No existe una categoria de modelos comparables porque el reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/Be-infinitly-express-spherically-free
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/Be-infinitly-express-spherically-free
 - Pagina interactiva: https://jessebrown1980.github.io/Be-infinitly-express-spherically-free/
 - Enlace agregador citado en la model card: https://jessebrown1980.github.io/the-bridge-to-all-of-it/

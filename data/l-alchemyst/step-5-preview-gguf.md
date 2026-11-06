@@ -2,9 +2,9 @@
 
 ## Resumen
 
-L-Alchemyst/Step-5-Preview-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario L-Alchemyst en HuggingFace. Por el nombre del repositorio, se trata de una redistribucion cuantizada del modelo base denominado "Step-5 Preview" (nomenclatura asociada habitualmente a la familia Step de StepFun), pero la informacion proporcionada no incluye la ficha del modelo original ni confirma autoría, arquitectura o procedencia. El repositorio se limita a alojar los ficheros de pesos convertidos a GGUF para su uso con motores de inferencia local como llama.cpp u Ollama.
+L-Alchemyst/Step-5-Preview-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario L-Alchemyst en Hugging Face. Por el nombre del repositorio, se trata de una redistribucion cuantizada del modelo base denominado "Step-5 Preview" (nomenclatura asociada habitualmente a la familia Step de StepFun), pero la informacion proporcionada no incluye la ficha del modelo original ni confirma autoría, arquitectura o procedencia. El repositorio se limita a alojar los ficheros de pesos convertidos a GGUF para su uso con motores de inferencia local como llama.cpp u Ollama.
 
-El repositorio tiene un tamano de 297,5 GB, lo que indica que contiene varias cuantizaciones del mismo modelo base en un unico espacio (probablemente desde Q2/Q3 hasta Q8_0 y posiblemente F16). La licencia declarada es "other" y el acceso esta restringido: requiere aceptar condiciones en HuggingFace antes de poder descargar los ficheros. En el momento de la consulta acumula 48 descargas y 0 likes, con fecha de creacion en octubre de 2026.
+El repositorio tiene un tamano de 297,5 GB, lo que indica que contiene varias cuantizaciones del mismo modelo base en un unico espacio (probablemente desde Q2/Q3 hasta Q8_0 y posiblemente F16). La licencia declarada es "other" y el acceso esta restringido: requiere aceptar condiciones en Hugging Face antes de poder descargar los ficheros. En el momento de la consulta acumula 48 descargas y 0 likes, con fecha de creacion en octubre de 2026.
 
 La relevancia de esta ficha es limitada por ausencia de documentacion: no hay model card del autor, no hay benchmarks y la busqueda web no ha devuelto ninguna fuente tecnica relacionada (los resultados obtenidos corresponden a paginas sobre la letra "L" y no guardan relacion con el modelo). Cualquier dato de arquitectura, contexto o rendimiento debe considerarse no disponible hasta que se consulte el repositorio original del modelo base.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| L-Alchemyst/Step-5-Preview-GGUF | no disponible | no disponible | other | GGUF | gated en HuggingFace |
+| L-Alchemyst/Step-5-Preview-GGUF | no disponible | no disponible | other | GGUF | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa fiable. No se conocen los parametros, el contexto ni la licencia efectiva del modelo base, y la busqueda web no ha identificado modelos equivalentes de la misma familia o categoria.
@@ -92,7 +92,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/L-Alchemyst/Step-5-Preview-GGUF
+- Repositorio Hugging Face: https://huggingface.co/L-Alchemyst/Step-5-Preview-GGUF
 - Modelo base "Step-5 Preview": no disponible en la informacion proporcionada
 - Paper, blog o repositorio oficial: no disponible
 - Demos o espacios asociados: no disponible

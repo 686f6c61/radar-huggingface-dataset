@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/ind_latn_100mb`, que a su vez es un transformer de la familia GPT-2 de aproximadamente 124,7 millones de parametros. Lo publica el usuario francesca9805 y se ha entrenado con la libreria TRL (Transformer Reinforcement Learning) de HuggingFace mediante Supervised Fine-Tuning (SFT), segun se indica en su model card.
+El modelo `francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/ind_latn_100mb`, que a su vez es un transformer de la familia GPT-2 de aproximadamente 124,7 millones de parametros. Lo publica el usuario francesca9805 y se ha entrenado con la libreria TRL (Transformer Reinforcement Learning) de Hugging Face mediante Supervised Fine-Tuning (SFT), segun se indica en su model card.
 
 El modelo resuelve una tarea acotada: la generacion de texto condicionada por instrucciones sobre el corpus linguistico del modelo base, que por su nomenclatura (`ind_latn_100mb`) corresponde a la variante indonesia en escritura latina de los modelos monograficos Goldfish, entrenados sobre una muestra de unos 100 MB de texto por idioma. El sufijo del nombre (`ppt-mp-struct-100mb_seed455`) sugiere un experimento controlado de tokenizacion o de estructura de datos, coherente con el proyecto de Weights & Biases vinculado en la model card (`new-tokenizers`, Universidad de Groningen), aunque el autor no describe en detalle el dataset de ajuste.
 
@@ -12,7 +12,7 @@ Su relevancia es principalmente de investigacion: se trata de un artefacto exper
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de Hugging Face |
 | Parametros totales | 124.770.816 (dato real de safetensors) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -58,15 +58,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion int8: proxima a 0,13 GB; en int4, en torno a 0,07 GB.
 - GPU recomendadas: cualquier GPU moderna, incluidas NVIDIA GTX 1060/1660, RTX 2060/3060/4090, T4, A100 y H100; el modelo esta muy por debajo de los limites de todas ellas.
 - Cabe holgadamente en GPU de consumo, e incluso puede ejecutarse en CPU con latencia aceptable.
-- Opciones de despliegue: el tag `text-generation-inference` y `endpoints_compatible` apuntan a compatibilidad con TGI y con los Endpoints de HuggingFace; tambien es desplegable con transformers y, potencialmente, con llama.cpp u Ollama si se convierte a GGUF (no confirmado por el autor).
+- Opciones de despliegue: el tag `text-generation-inference` y `endpoints_compatible` apuntan a compatibilidad con TGI y con los Endpoints de Hugging Face; tambien es desplegable con transformers y, potencialmente, con llama.cpp u Ollama si se convierte a GGUF (no confirmado por el autor).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed455 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL del modelo base Goldfish |
-| goldfish-models/ind_latn_100mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base monografico (indonesio latin, 100 MB) |
+| francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed455 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL del modelo base Goldfish |
+| goldfish-models/ind_latn_100mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base monografico (indonesio latin, 100 MB) |
 | GPT-2 small (openai-community/gpt2) | 124 M | 1024 | MIT (segun la publicacion original) | Muy amplia | Referencia de la arquitectura, en ingles |
 
 Los datos de rendimiento comparado no estan disponibles. La comparacion se limita a parametros, licencia y disponibilidad.
@@ -83,7 +83,7 @@ Los datos de rendimiento comparado no estan disponibles. La comparacion se limit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ind_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/j4gg0qb5

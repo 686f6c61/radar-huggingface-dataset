@@ -91,7 +91,7 @@ Curva de aprendizaje (error de banda de paso en dB / error de f0 en MHz / \|S11\
 
 | Modelo | Tipo | Parametros | Contexto | Error banda de paso \|S21\| (dB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Prior + DeepONet (este) | Surrogate híbrido | no disponible | no aplica | 0,52 media / 4,0 max | Apache 2.0 | HuggingFace + GitHub |
+| Prior + DeepONet (este) | Surrogate híbrido | no disponible | no aplica | 0,52 media / 4,0 max | Apache 2.0 | Hugging Face + GitHub |
 | DeepONet desde cero | Red neuronal pura | no disponible | no aplica | 0,32 media / 1,9 max | Apache 2.0 | Mismo repo |
 | MLP simple | Baseline neuronal | no disponible | no aplica | 2,49 media / 11,5 max | Apache 2.0 | Mismo repo |
 | Prior analítico | Modelo físico | no aplica | no aplica | 2,86 media / 14,0 max | Apache 2.0 | Mismo repo |
@@ -112,7 +112,7 @@ No se dispone de comparación con surrogates de terceros en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rfsurrogates/edge-coupled-bpf
+- Modelo en Hugging Face: https://huggingface.co/rfsurrogates/edge-coupled-bpf
 - Repositorio de código, entrenamiento, checker y guía de contribución: https://github.com/benjhardy/rfsurrogates
 - Demo en navegador: https://benjhardy.github.io/filter-surrogate/
 - Dataset de muestras: https://huggingface.co/datasets/rfsurrogates/samples

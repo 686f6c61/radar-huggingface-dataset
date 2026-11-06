@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo Qwen3-4B-Instruct-2507, subido por el usuario vikram2xx7 a HuggingFace. El modelo base es `unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit`, una versión cuantizada a 4 bits del Qwen3-4B-Instruct, y el fine-tune se realizó utilizando la librería Unsloth, que acelera el entrenamiento. El repositorio tiene un tamaño de solo 0.1 GB, lo que sugiere que podría tratarse de un adaptador o de pesos cuantizados, aunque no se especifica explícitamente.
+Este modelo es un fine-tune del modelo Qwen3-4B-Instruct-2507, subido por el usuario vikram2xx7 a Hugging Face. El modelo base es `unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit`, una versión cuantizada a 4 bits del Qwen3-4B-Instruct, y el fine-tune se realizó utilizando la librería Unsloth, que acelera el entrenamiento. El repositorio tiene un tamaño de solo 0.1 GB, lo que sugiere que podría tratarse de un adaptador o de pesos cuantizados, aunque no se especifica explícitamente.
 
 La relevancia de este modelo radica en que parte de una base sólida (Qwen3-4B-Instruct) y podría ofrecer un rendimiento ajustado a un caso de uso concreto, aunque no se han publicado detalles sobre el dataset de fine-tuning ni sobre las capacidades específicas resultantes. Al ser un modelo reciente (creado en agosto de 2026) y con cero descargas y likes, se trata de un trabajo experimental o personal sin validación comunitaria.
 
@@ -64,9 +64,9 @@ No se dispone de información suficiente para una comparativa cuantitativa. Como
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B-Instruct (base) | 4B | no disponible | Apache 2.0 | HuggingFace |
-| vikram2xx7/Qwen3-4B-Instruct-2507-model | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3B | 128K (aprox.) | Llama 3.2 Community | HuggingFace |
+| Qwen3-4B-Instruct (base) | 4B | no disponible | Apache 2.0 | Hugging Face |
+| vikram2xx7/Qwen3-4B-Instruct-2507-model | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3B | 128K (aprox.) | Llama 3.2 Community | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se dispone de información suficiente para una comparativa cuantitativa. Como
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/vikram2xx7/Qwen3-4B-Instruct-2507-model
+- Hugging Face del modelo: https://huggingface.co/vikram2xx7/Qwen3-4B-Instruct-2507-model
 - Modelo base (unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit): https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

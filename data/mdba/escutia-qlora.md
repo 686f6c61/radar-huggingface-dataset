@@ -69,7 +69,7 @@ No se dispone de información sobre adaptadores comparables para clasificación 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mdba/escutia-qlora
+- Repositorio Hugging Face: https://huggingface.co/mdba/escutia-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Paper QLoRA: https://arxiv.org/abs/2305.14314
 - Repositorio oficial QLoRA: https://github.com/artidoro/qlora

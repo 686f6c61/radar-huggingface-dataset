@@ -17,7 +17,7 @@ Su relevancia ahora es acotada pero específica: cubre el nicho de traducción a
 | Parámetros activos | no disponible para 2B y 9B (presumiblemente densos); en 35B-A3B-preview el nombre indica aproximadamente 3B activos, sin confirmación oficial en la información disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible en la información proporcionada; el repositorio no distribuye pesos, cada repositorio de tamaño/backend define sus propios formatos |
-| Idiomas soportados | no disponible (campo "languages" vacío en la ficha de HuggingFace) |
+| Idiomas soportados | no disponible (campo "languages" vacío en la ficha de Hugging Face) |
 | Licencia | component-specific-upstream-licenses (cada componente mantiene su licencia; Orinfer es LGPL-3.0-or-later) |
 | Formato de pesos | no disponible; este repositorio es explícitamente "weight-free" y solo contiene runtimes Docker, controlador, código fuente, licencias y LPK |
 

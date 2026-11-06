@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_random_b2000_s0)
+- [Hugging Face - modelo](https://huggingface.co/AmberYifan/capsd-convfinqa-fullscore-marin-8b-base-finance_random_b2000_s0)
 - [Modelo base: marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)

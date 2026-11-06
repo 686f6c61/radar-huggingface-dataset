@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `amaedaqureshi/sia-churn-model` es un clasificador XGBoost entrenado para predecir el riesgo de abandono (churn) de suscriptores dentro del denominado SIA Retention Engine. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de un modelo tabular de gradiente boosting orientado a una tarea de clasificación binaria o de scoring de riesgo sobre datos estructurados. Lo publica el usuario `amaedaqureshi` en HuggingFace con licencia CC-BY-4.0 y pipeline declarado `tabular-classification`.
+El modelo `amaedaqureshi/sia-churn-model` es un clasificador XGBoost entrenado para predecir el riesgo de abandono (churn) de suscriptores dentro del denominado SIA Retention Engine. No se trata de un modelo de lenguaje ni de una red neuronal profunda, sino de un modelo tabular de gradiente boosting orientado a una tarea de clasificación binaria o de scoring de riesgo sobre datos estructurados. Lo publica el usuario `amaedaqureshi` en Hugging Face con licencia CC-BY-4.0 y pipeline declarado `tabular-classification`.
 
 El modelo se entrena sobre el dataset de la Fase 1 del SIA Retention Engine, que segun la model card combina datos reales de churn de Telco (IBM/Kaggle) mapeados al esquema `Subscriber` de SIA, junto con datos cuyo caracter real o sintetico se detalla en el repositorio del dataset. Su proposito declarado es sustituir una formula heuristica escrita a mano (`backend/data_generator.py`) dentro del agente Monitor de SIA, activandose mediante el flag `USE_ML_MODEL` en `config/settings.py` y con una ruta de fallback a la formula original definida en `backend/models/loader.py`.
 
@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas concreta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sia-churn-model | no disponible | no aplica | no publicado (ver `metrics.json`) | CC-BY-4.0 | HuggingFace |
+| sia-churn-model | no disponible | no aplica | no publicado (ver `metrics.json`) | CC-BY-4.0 | Hugging Face |
 | Alternativas tabulares (LightGBM, CatBoost, regresion logistica) | no disponible | no aplica | no disponible | segun implementacion | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas concreta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amaedaqureshi/sia-churn-model
+- Modelo en Hugging Face: https://huggingface.co/amaedaqureshi/sia-churn-model
 - Repositorio del dataset del SIA Retention Engine (Fase 1): mencionado en la model card, sin URL explicita disponible
 - Archivo de metricas: `metrics.json` en el repositorio del modelo
 - Archivos del modelo: `model.joblib`, `feature_columns.json`

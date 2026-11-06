@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento para comparar directamente. Como referenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Update32
+- Repositorio Hugging Face: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Update32
 - Repositorio base (sin merge): https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000
 - Repositorio merge anterior: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged
 - Despliegue en FriendliAI (iteración 8): https://friendli.ai/models/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8

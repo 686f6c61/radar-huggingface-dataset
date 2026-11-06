@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taeyoungcho/generation-warmup-2023` es un prototipo de investigación publicado en HuggingFace por el usuario taeyoungcho. Se presenta como una implementación de arquitectura Perceiver orientada a tareas de generación, con una configuración etiquetada como "large" y atención dispersa combinada con cross-attention. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente que el checkpoint de pesos es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con rendimiento verificado.
+`taeyoungcho/generation-warmup-2023` es un prototipo de investigación publicado en Hugging Face por el usuario taeyoungcho. Se presenta como una implementación de arquitectura Perceiver orientada a tareas de generación, con una configuración etiquetada como "large" y atención dispersa combinada con cross-attention. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente que el checkpoint de pesos es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con rendimiento verificado.
 
 El repositorio tiene un tamaño de 0.0 GB y un recuento de parámetros de 24.832 según los metadatos de safetensors, lo que apunta a un artefacto de juguete o a una configuración mínima más que a un modelo utilizable en producción. No se declaran idiomas soportados, no hay pipeline asignado, no hay resultados de benchmarks y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| taeyoungcho/generation-warmup-2023 | 24.832 | no disponible | sin benchmarks | apache-2.0 | HuggingFace, 0 descargas |
+| taeyoungcho/generation-warmup-2023 | 24.832 | no disponible | sin benchmarks | apache-2.0 | Hugging Face, 0 descargas |
 | Perceiver IO (referencia DeepMind) | no disponible en esta ficha | no disponible | publicado en paper original | no disponible en esta ficha | pesos y código en repositorios de investigación |
 | Modelos de generación de propósito general | no disponible en esta ficha | no disponible | benchmarks públicos | variable | amplia |
 
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para establecer una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taeyoungcho/generation-warmup-2023
+- Hugging Face: https://huggingface.co/taeyoungcho/generation-warmup-2023
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

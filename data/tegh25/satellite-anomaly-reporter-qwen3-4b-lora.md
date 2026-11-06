@@ -84,8 +84,8 @@ Métricas del detector Random Forest asociado, sobre los 529 segmentos de test: 
 
 | Modelo | Parámetros | Contexto | Conformidad de formato | Números no soportados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (Qwen3-4B + LoRA) | 4B | no disponible | 100% [98-100] | 6% [3-10] | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| Qwen3-4B-Instruct-2507 con prompt detallado | 4B | no disponible | 41% [33-48] | 1% [0-4] | Apache 2.0 (modelo base) | Público en HuggingFace |
+| Este adaptador (Qwen3-4B + LoRA) | 4B | no disponible | 100% [98-100] | 6% [3-10] | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| Qwen3-4B-Instruct-2507 con prompt detallado | 4B | no disponible | 41% [33-48] | 1% [0-4] | Apache 2.0 (modelo base) | Público en Hugging Face |
 | Profesor: Claude Sonnet 5 | no disponible | no disponible | 100% [98-100] | 6% [3-10] | propietaria | Solo API |
 | Otros adaptadores públicos para informes de telemetría de satélites | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ La comparación relevante es contra el modelo base sin adaptador: mismo tamaño 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tegh25/satellite-anomaly-reporter-qwen3-4b-lora
+- Modelo en Hugging Face: https://huggingface.co/Tegh25/satellite-anomaly-reporter-qwen3-4b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset OPSSAT-AD (OPS-SAT, ESA): no disponible la URL en la información proporcionada
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada

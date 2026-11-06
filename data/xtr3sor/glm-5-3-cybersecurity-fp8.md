@@ -115,7 +115,7 @@ Nota: no se dispone de benchmarks comparativos entre estos modelos en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xtr3sor/GLM-5.3-CYBERSECURITY-FP8
+- Hugging Face: https://huggingface.co/xtr3sor/GLM-5.3-CYBERSECURITY-FP8
 - Blog de z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Pagina en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/glm-5.3-cybersecurity-fp8-dealignai
 - Modelo hermano (uncensor general): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8

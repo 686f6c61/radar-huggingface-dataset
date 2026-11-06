@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo / artefacto | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (720 LoRA sobre Qwen3-8B) | 8B base + ~94 M por adaptador | No disponible | Investigacion en emergent misalignment y atribucion de datos | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3-8B` (modelo base) | 8B | No disponible en esta ficha | Modelo de proposito general, instruction-tuned | No disponible en esta ficha | HuggingFace (referenciado como base) |
+| Este repositorio (720 LoRA sobre Qwen3-8B) | 8B base + ~94 M por adaptador | No disponible | Investigacion en emergent misalignment y atribucion de datos | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3-8B` (modelo base) | 8B | No disponible en esta ficha | Modelo de proposito general, instruction-tuned | No disponible en esta ficha | Hugging Face (referenciado como base) |
 | Adaptadores LoRA convencionales de un solo checkpoint | Variable | Depende del base | Ajuste de dominio o estilo | Habitualmente la del base | Amplia |
 | Suites de evaluacion de misalignment (p. ej. conjuntos de prompts) | No aplica | No aplica | Evaluacion, no modelado | Variable | Variable |
 
@@ -89,7 +89,7 @@ La comparación relevante no es con otro modelo de 8B, sino con la ausencia de a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-llama3.2-1b
+- Repositorio en Hugging Face: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-llama3.2-1b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Coleccion referenciada en la model card: "Emergent Misalignment: Attribution-Filtered LoRA Adapters" (no se ha encontrado URL directa en la informacion proporcionada)
 - Paper, blog o repositorio del estudio: no disponibles en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeDissolution/Gemma-4-31B-it-Gewell_BF16 es un repositorio de HuggingFace publicado por el usuario LeDissolution que, a juzgar unicamente por su identificador, contendria un checkpoint en precision BF16 de un modelo de lenguaje de aproximadamente 31 000 millones de parametros, en variante instruction-tuned (sufijo "it") y con un componente o variante denominado "Gewell" cuyo significado no se documenta en ninguna parte. El repositorio no incluye model card de contenido: el unico metadato presente es la declaracion de licencia Apache 2.0, sin descripcion, sin ejemplos de uso, sin configuracion de tokenizador publicada y sin resultados de evaluacion.
+LeDissolution/Gemma-4-31B-it-Gewell_BF16 es un repositorio de Hugging Face publicado por el usuario LeDissolution que, a juzgar unicamente por su identificador, contendria un checkpoint en precision BF16 de un modelo de lenguaje de aproximadamente 31 000 millones de parametros, en variante instruction-tuned (sufijo "it") y con un componente o variante denominado "Gewell" cuyo significado no se documenta en ninguna parte. El repositorio no incluye model card de contenido: el unico metadato presente es la declaracion de licencia Apache 2.0, sin descripcion, sin ejemplos de uso, sin configuracion de tokenizador publicada y sin resultados de evaluacion.
 
 El problema que resuelve, el tamano real, la arquitectura y el origen de los pesos no se pueden verificar con la informacion disponible. El repositorio acumula 0 descargas y 0 "likes", fue creado y actualizado el mismo dia (2026-09-20) y no declara idiomas soportados ni pipeline de inferencia. Tampoco existe confirmacion alguna, en la informacion proporcionada, de que este modelo guarde relacion con la familia Gemma de Google ni de que exista una version "Gemma 4" de 31B publicada oficialmente: el nombre puede ser una denominacion interna del autor, un fine-tuning no oficial o un artefacto de conversion.
 
@@ -77,7 +77,7 @@ No es posible elaborar una comparativa rigurosa: no hay datos tecnicos verificad
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-31B-it-Gewell_BF16 | no disponible (nombre sugiere ~31B) | no disponible | apache-2.0 | no disponible | repositorio HuggingFace, 0 descargas |
+| Gemma-4-31B-it-Gewell_BF16 | no disponible (nombre sugiere ~31B) | no disponible | apache-2.0 | no disponible | repositorio Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No es posible elaborar una comparativa rigurosa: no hay datos tecnicos verificad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LeDissolution/Gemma-4-31B-it-Gewell_BF16
+- Repositorio en Hugging Face: https://huggingface.co/LeDissolution/Gemma-4-31B-it-Gewell_BF16
 - Paper, blog o repositorio de codigo del autor: no disponible.
 - Demo o espacio asociado: no disponible.
 - Documentacion adicional: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre el modelo (unicamente paginas sin relacion con el, como el sitio de seguimiento de envios de USPS).

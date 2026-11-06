@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saputra1234/agamaku es un modelo alojado en HuggingFace que se presenta como un ajuste fino (finetune) del modelo base OpenMOSS-Team/MOSS-Image-Base, un modelo de imagen desarrollado por el equipo OpenMOSS. Según la model card, el modelo se ha entrenado sobre el conjunto de datos nisten/opus5-5-doctor-patient-conversations-all-human-diseases, un dataset de conversaciones médico-paciente que cubre enfermedades humanas, lo que sugiere una orientación hacia el ámbito sanitario o la generación de contenido relacionado con diagnósticos e interacciones clínicas.
+Saputra1234/agamaku es un modelo alojado en Hugging Face que se presenta como un ajuste fino (finetune) del modelo base OpenMOSS-Team/MOSS-Image-Base, un modelo de imagen desarrollado por el equipo OpenMOSS. Según la model card, el modelo se ha entrenado sobre el conjunto de datos nisten/opus5-5-doctor-patient-conversations-all-human-diseases, un dataset de conversaciones médico-paciente que cubre enfermedades humanas, lo que sugiere una orientación hacia el ámbito sanitario o la generación de contenido relacionado con diagnósticos e interacciones clínicas.
 
 La ficha técnica disponible es muy limitada: no hay descripción textual del propósito del modelo, ni detalles de arquitectura, tamaño, capacidades o rendimiento. La librería asociada es unity-sentis, lo que apunta a un uso dentro del motor de videojuego Unity mediante su runtime de inferencia Sentis, y el modelo se publica bajo licencia Apache 2.0. Con 0 descargas y 1 like en el momento de la ficha, se trata de un repositorio prácticamente sin adopción comunitaria ni validación externa, por lo que debe evaluarse con especial cautela.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Saputra1234/agamaku | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| OpenMOSS-Team/MOSS-Image-Base (base) | no disponible | no disponible | no disponible | HuggingFace |
-| abenzerps/Qwen-Image-2.1-Uncensored-Quantized (new_version declarada) | no disponible | no disponible | no disponible | HuggingFace |
+| Saputra1234/agamaku | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| OpenMOSS-Team/MOSS-Image-Base (base) | no disponible | no disponible | no disponible | Hugging Face |
+| abenzerps/Qwen-Image-2.1-Uncensored-Quantized (new_version declarada) | no disponible | no disponible | no disponible | Hugging Face |
 
 No existen datos suficientes para una comparativa de rendimiento. La referencia mas util es el propio modelo base, OpenMOSS-Team/MOSS-Image-Base, del que este finetune deriva.
 
@@ -80,7 +80,7 @@ No existen datos suficientes para una comparativa de rendimiento. La referencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saputra1234/agamaku
+- Modelo en Hugging Face: https://huggingface.co/Saputra1234/agamaku
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/nisten/opus5-5-doctor-patient-conversations-all-human-diseases
 - Metrica/leaderboard declarado: https://huggingface.co/AIRI-Institute/genatator-ab-initio-segmentation-leaderboard

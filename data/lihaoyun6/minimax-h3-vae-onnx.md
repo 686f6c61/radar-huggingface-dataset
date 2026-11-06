@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lihaoyun6/MiniMax-H3-VAE-ONNX
+- Repositorio Hugging Face: https://huggingface.co/lihaoyun6/MiniMax-H3-VAE-ONNX
 - Extension ComfyUI-H3VAE_TRT: https://github.com/lihaoyun6/ComfyUI-H3VAE_TRT
 - Modelo base Comfy-Org/MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Modelo original MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

@@ -74,8 +74,8 @@ Los datos de la columna de openai/whisper-small corresponden a las especificacio
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-r48-si5-cs4-seed123 (este adaptador) | 244 M (base) + adaptador LoRA r=48 | 30 s por ventana | si, en (segun tags) | no disponible | Repositorio HuggingFace, 0 descargas |
-| openai/whisper-small | 244 M | 30 s por ventana | Soporte multilingue amplio, incluye en y si | MIT (modelo base de OpenAI) | Ampliamente disponible en HuggingFace |
+| whisper-small-r48-si5-cs4-seed123 (este adaptador) | 244 M (base) + adaptador LoRA r=48 | 30 s por ventana | si, en (segun tags) | no disponible | Repositorio Hugging Face, 0 descargas |
+| openai/whisper-small | 244 M | 30 s por ventana | Soporte multilingue amplio, incluye en y si | MIT (modelo base de OpenAI) | Ampliamente disponible en Hugging Face |
 | openai/whisper-base | 74 M | 30 s por ventana | Multilingue | MIT | Ampliamente disponible |
 | openai/whisper-medium | 769 M | 30 s por ventana | Multilingue | MIT | Ampliamente disponible |
 
@@ -96,7 +96,7 @@ No se dispone de alternativas especificas de ASR para code-switching sinhala-ing
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-r48-si5-cs4-seed123
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-r48-si5-cs4-seed123
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

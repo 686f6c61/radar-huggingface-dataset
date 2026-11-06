@@ -2,7 +2,7 @@
 
 ## Resumen
 
-careerfit-m2-embedding es un modelo publicado en HuggingFace por el usuario hachitienproquavay bajo licencia Apache 2.0. Se trata de un encoder de tipo RoBERTa con 134.998.272 parametros (aproximadamente 135 millones) distribuidos en formato safetensors, lo que lo situa en la categoria de modelos de representacion textual de tamano medio, comparable en orden de magnitud a otros encoders de 110-135 millones de parametros. El repositorio ocupa 0,5 GB, un tamano coherente con pesos en precision fp32. Por el nombre del modelo y por su arquitectura encoder, todo apunta a un modelo de embeddings orientado a tareas de similitud semantica o recuperacion de informacion en el ambito de carrera profesional y seleccion de personal, aunque esta funcion no se confirma en la documentacion disponible.
+careerfit-m2-embedding es un modelo publicado en Hugging Face por el usuario hachitienproquavay bajo licencia Apache 2.0. Se trata de un encoder de tipo RoBERTa con 134.998.272 parametros (aproximadamente 135 millones) distribuidos en formato safetensors, lo que lo situa en la categoria de modelos de representacion textual de tamano medio, comparable en orden de magnitud a otros encoders de 110-135 millones de parametros. El repositorio ocupa 0,5 GB, un tamano coherente con pesos en precision fp32. Por el nombre del modelo y por su arquitectura encoder, todo apunta a un modelo de embeddings orientado a tareas de similitud semantica o recuperacion de informacion en el ambito de carrera profesional y seleccion de personal, aunque esta funcion no se confirma en la documentacion disponible.
 
 La relevancia de esta ficha es limitada y conviene ser transparente al respecto: la model card publicada no contiene mas que la linea de licencia, sin descripcion, sin instrucciones de uso, sin idiomas declarados, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, y no se ha publicado informacion adicional en la busqueda web realizada. Es, por tanto, un artefacto practicamente sin trazabilidad documental.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: alrededor de 135 MB de pesos.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. Una RTX 3060, RTX 4060, RTX 4090, A100 o H100 estan sobradamente dimensionadas para este modelo; la eleccion dependera del volumen de peticiones concurrentes, no de los requisitos del modelo.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo lanzada en la ultima decada, e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: HuggingFace Transformers, sentence-transformers (si sigue la interfaz estandar, sin confirmar), ONNX Runtime, Text Embeddings Inference (TEI), FastEmbed o cualquier servidor de inferencia compatible con safetensors.
+- Opciones de despliegue: Hugging Face Transformers, sentence-transformers (si sigue la interfaz estandar, sin confirmar), ONNX Runtime, Text Embeddings Inference (TEI), FastEmbed o cualquier servidor de inferencia compatible con safetensors.
 - Despliegue en llama.cpp / GGUF: no disponible. Los formatos GGUF y las herramientas orientadas a modelos decoder no cubren de forma estandar encoders RoBERTa de este tipo.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas y cualquier cifra seria especulativa.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| careerfit-m2-embedding | 135 M | no disponible | Apache 2.0 | HuggingFace, 0 descargas, sin documentacion |
+| careerfit-m2-embedding | 135 M | no disponible | Apache 2.0 | Hugging Face, 0 descargas, sin documentacion |
 | sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Apache 2.0 | Ampliamente adoptado, con model card completa |
 | BAAI/bge-base-en-v1.5 | 109 M | 512 tokens | MIT | Ampliamente adoptado, con benchmarks publicados |
 | intfloat/e5-base-v2 | 109 M | 512 tokens | MIT | Ampliamente adoptado, con benchmarks publicados |
@@ -93,7 +93,7 @@ La comparacion de rendimiento no es posible: los tres modelos alternativos publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hachitienproquavay/careerfit-m2-embedding
+- Hugging Face: https://huggingface.co/hachitienproquavay/careerfit-m2-embedding
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

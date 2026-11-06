@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-WebUniverse-10K es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-35B-A3B, publicado por el usuario WebUniverse-NSL en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, orientado segun sus etiquetas a generacion de codigo, agentes y desarrollo web, y entrenado sobre el conjunto de datos webcraft-NSL/WebUniverse-Mix. Su nombre ("10K") sugiere que el ajuste se ha realizado sobre aproximadamente 10.000 ejemplos de ese dataset, aunque este extremo no se confirma en la informacion disponible.
+Qwen3.5-WebUniverse-10K es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-35B-A3B, publicado por el usuario WebUniverse-NSL en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, orientado segun sus etiquetas a generacion de codigo, agentes y desarrollo web, y entrenado sobre el conjunto de datos webcraft-NSL/WebUniverse-Mix. Su nombre ("10K") sugiere que el ajuste se ha realizado sobre aproximadamente 10.000 ejemplos de ese dataset, aunque este extremo no se confirma en la informacion disponible.
 
 El modelo hereda la arquitectura del base: segun las etiquetas del repositorio (qwen3_5_moe) se trata de un transformer con capa Mixture of Experts (MoE), y la nomenclatura del modelo base (35B-A3B) indica del orden de 35.000 millones de parametros totales con aproximadamente 3.000 millones activos por token. El dato real de parametros almacenados en safetensors asciende a 35.107.181.936, coherente con esa cifra.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada por el momento: es un repositorio con 0 descargas y 0 
 | Tamano del repositorio | 70,2 GB |
 | Modelo base | Qwen/Qwen3.5-35B-A3B |
 | Dataset de ajuste | webcraft-NSL/WebUniverse-Mix |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 | Pipeline | image-text-to-text |
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 - Riesgo de alucinacion: inherente a los modelos generativos; no existe validacion documentada para este ajuste concreto.
 - Idiomas: solo se declara soporte de ingles; el uso en castellano u otros idiomas no esta garantizado.
 - Licencia no disponible: no se especifican terminos de uso, lo que impide determinar con seguridad si se permite uso comercial. Debe tratarse como restriccion critica para produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su reproducibilidad y distribucion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su reproducibilidad y distribucion.
 - Sesgos: no se documenta ninguna evaluacion de sesgos ni de seguridad.
 - Contexto: la longitud de contexto no esta especificada en la informacion disponible; planificar cualquier aplicacion con contexto largo sin asumir un valor concreto.
 - Madurez: 0 descargas y 0 "likes" en el momento de la consulta; no hay evidencia de uso en produccion ni soporte de la comunidad.
@@ -92,6 +92,6 @@ No se dispone de datos suficientes para comparar con otras alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WebUniverse-NSL/Qwen3.5-WebUniverse-10K
+- Modelo en Hugging Face: https://huggingface.co/WebUniverse-NSL/Qwen3.5-WebUniverse-10K
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Dataset de ajuste: webcraft-NSL/WebUniverse-Mix (referenciado como dataset:webcraft-NSL/WebUniverse-Mix; no se dispone de URL directa en la informacion proporcionada)

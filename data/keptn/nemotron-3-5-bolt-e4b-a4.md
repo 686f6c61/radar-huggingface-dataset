@@ -17,7 +17,7 @@ Es relevante para quien trabaje con razonamiento y visión sobre ROCm sin pasar 
 | Longitud de contexto | 65.536 tokens |
 | Tipos de cuantización | Feed-forward int4 con punto cero y una escala f16 cada 128 pesos (GPTQ), capas 19 a 23 en int8; atención int8 con escala bf16 cada 128 pesos; activaciones int8 con una escala por token y 128 valores (copia f16 en decodificación para las capas int4); `lm_head` int8 con activaciones bf16; borrador DFlash en FP8 con una escala bf16 por bloque de 128×128; torre de visión en bf16. KV cache en bf16 o fp8 (`--kv-cache-dtype fp8`) |
 | Idiomas soportados | no disponible |
-| Licencia | `openmdw-1.1` (etiquetada como `other` en HuggingFace; los términos concretos están en el archivo `LICENSE` del repositorio y no se detallan en la información disponible) |
+| Licencia | `openmdw-1.1` (etiquetada como `other` en Hugging Face; los términos concretos están en el archivo `LICENSE` del repositorio y no se detallan en la información disponible) |
 | Formato de pesos | `.rad` (radiance), archivo único `nemotron-3.5-bolt-e4b-a4.rad` de 10,92 GiB; repositorio de 11,7 GB. No se distribuyen safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -115,12 +115,12 @@ El compromiso es claro: frente al int8, esta versión gana un 18 % de throughput
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-a4
+- Modelo en Hugging Face: https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-a4
 - Modelo base bf16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Modelo base con DFlash: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash
 - Variante int8 del mismo autor: https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-i8g
 - Variante bf16 del mismo autor: https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-bf16
 - Motor radiance: https://codeberg.org/StillDeadcode/radiance
 - Pull request con el soporte de 4 bits para Gemma 4: https://codeberg.org/StillDeadcode/radiance/pulls/214
-- Licencia: archivo `LICENSE` del repositorio de HuggingFace
+- Licencia: archivo `LICENSE` del repositorio de Hugging Face
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

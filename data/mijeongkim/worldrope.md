@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WorldRoPE es un metodo de codificacion posicional rotatoria (RoPE) de caracter probabilistico y centrado en el mundo, disenado para atencion multi-vista en tareas de sintesis de vistas novedosas (novel view synthesis, NVS). Lo desarrollan Mijeong Kim, Kyujin Lim y Bohyung Han, del grupo de investigacion de Bohyung Han en la Seoul National University, y se publica en arXiv con el identificador 2610.16337. El repositorio de HuggingFace no contiene un modelo de lenguaje, sino un conjunto de checkpoints de investigacion para el modelo LVSM (Large View Synthesis Model), acompanados de las lineas base RayRoPE y URoPE.
+WorldRoPE es un metodo de codificacion posicional rotatoria (RoPE) de caracter probabilistico y centrado en el mundo, disenado para atencion multi-vista en tareas de sintesis de vistas novedosas (novel view synthesis, NVS). Lo desarrollan Mijeong Kim, Kyujin Lim y Bohyung Han, del grupo de investigacion de Bohyung Han en la Seoul National University, y se publica en arXiv con el identificador 2610.16337. El repositorio de Hugging Face no contiene un modelo de lenguaje, sino un conjunto de checkpoints de investigacion para el modelo LVSM (Large View Synthesis Model), acompanados de las lineas base RayRoPE y URoPE.
 
 El problema que aborda es la representacion de la geometria de la escena en la atencion entre multiples vistas. En lugar de tratar cada token de imagen como un punto, WorldRoPE lo modela como un soporte gaussiano 3D probabilistico y aplica la rotacion posicional sobre su proyeccion en la vista de consulta. De este modo, la atencion multi-vista incorpora de forma explicita la incertidumbre geometrica de cada token, lo que mejora la coherencia entre vistas al renderizar puntos de vista no observados.
 
@@ -69,7 +69,7 @@ No se han publicado en la informacion disponible los resultados numericos de Ray
 
 | Modelo | Parametros | Dataset | PSNR (RE10K) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| WorldRoPE | 24,5 M | RE10K, Objaverse | 26,75 | Apache 2.0 | Checkpoints en HuggingFace |
+| WorldRoPE | 24,5 M | RE10K, Objaverse | 26,75 | Apache 2.0 | Checkpoints en Hugging Face |
 | URoPE | 24,5 M | RE10K | no disponible | no disponible | Checkpoint incluido en este repo |
 | RayRoPE | 47,4 M | RE10K | no disponible | MIT (aviso conservado) | Checkpoint incluido en este repo |
 
@@ -87,9 +87,9 @@ La comparacion se limita a los tres metodos incluidos en el repositorio; no se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mijeongkim/WorldRoPE
+- Hugging Face: https://huggingface.co/mijeongkim/WorldRoPE
 - arXiv: https://arxiv.org/abs/2610.16337
-- Paper en HuggingFace: https://huggingface.co/papers/2610.16337
+- Paper en Hugging Face: https://huggingface.co/papers/2610.16337
 - Pagina del proyecto: https://mjmjeong.github.io/research_projects/worldrope/
 - Codigo (rama nvs-release_check): https://github.com/mjmjeong/WorldRoPE/tree/nvs-release_check
 - Web del autor: https://mjmjeong.github.io/

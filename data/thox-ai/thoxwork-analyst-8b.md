@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxWork-Analyst-8B es un modelo de generación de texto publicado por Thox-ai que no introduce pesos nuevos: se trata de un empaquetado del modelo upstream Qwen/Qwen3-8B (8.000 millones de parámetros, licencia Apache-2.0) al que se le añade un perfil de sistema corporativo y un paquete de conocimiento versionado (THOX Knowledge Pack v0.1). El repositorio de HuggingFace contiene únicamente el `Modelfile` de Ollama, un `manifest.json` y el fichero JSONL del knowledge pack; los pesos reales se descargan desde la etiqueta `qwen3:8b` fijada por digest en el manifiesto. THOX declara explícitamente que no ha entrenado estos pesos.
+ThoxWork-Analyst-8B es un modelo de generación de texto publicado por Thox-ai que no introduce pesos nuevos: se trata de un empaquetado del modelo upstream Qwen/Qwen3-8B (8.000 millones de parámetros, licencia Apache-2.0) al que se le añade un perfil de sistema corporativo y un paquete de conocimiento versionado (THOX Knowledge Pack v0.1). El repositorio de Hugging Face contiene únicamente el `Modelfile` de Ollama, un `manifest.json` y el fichero JSONL del knowledge pack; los pesos reales se descargan desde la etiqueta `qwen3:8b` fijada por digest en el manifiesto. THOX declara explícitamente que no ha entrenado estos pesos.
 
 El modelo está diseñado para inferencia local y offline mediante Ollama, orientado a un rol de "analista" dentro de los sitios MeshGroup de THOX Work. Su propuesta de valor no es el rendimiento bruto, sino la configuración: un perfil de sistema que modera el comportamiento del modelo base y un conjunto de ocho entradas públicas verificadas que sirven como contexto de recuperación para respuestas fundamentadas en especificaciones internas de THOX.
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | ThoxWork-Analyst-8B | 8B | 8.192 tokens (medido) | Apache-2.0 | Ollama + repo de configuración en HF | Configuración derivada; sin entrenamiento propio |
-| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Apache-2.0 | HuggingFace | Modelo base upstream; pesos originales |
+| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Apache-2.0 | Hugging Face | Modelo base upstream; pesos originales |
 | Otros derivados de Qwen3-8B | 8B | variable | Apache-2.0 (habitual) | variable | No disponible comparación concreta en la información proporcionada |
 
 La comparación con alternativas de la misma categoría (modelos "configuration-derived" empaquetados sobre una base) no está disponible en la información proporcionada. Frente a Qwen3-8B, la diferencia es de empaquetado y perfil, no de capacidades del modelo subyacente.
@@ -100,7 +100,7 @@ La comparación con alternativas de la misma categoría (modelos "configuration-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/ThoxWork-Analyst-8B
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/ThoxWork-Analyst-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo publicado en Ollama: `Thox-ai/thoxwork-analyst-8b` (referencia en la model card; no se proporciona URL directa)
 - Papers, blogs, repositorios o demos adicionales: no disponible en la información proporcionada.

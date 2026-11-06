@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `charlotterose/efficientformer-classification-finetune` contiene una implementación funcional de la arquitectura EfficientFormer orientada a tareas de clasificación, en una configuración de escala pequeña. Lo publica el usuario de HuggingFace charlotterose y su propósito declarado es ofrecer código transparente y pruebas de humo reproducibles, no un modelo entrenado listo para producción. El checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida para pruebas, no como un modelo con pesos entrenados ni evaluados.
+El repositorio `charlotterose/efficientformer-classification-finetune` contiene una implementación funcional de la arquitectura EfficientFormer orientada a tareas de clasificación, en una configuración de escala pequeña. Lo publica el usuario de Hugging Face charlotterose y su propósito declarado es ofrecer código transparente y pruebas de humo reproducibles, no un modelo entrenado listo para producción. El checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida para pruebas, no como un modelo con pesos entrenados ni evaluados.
 
 La relevancia de esta ficha es acotada y conviene dejarla clara desde el principio: se trata de un artefacto experimental con 33.088 parámetros totales registrados en el fichero de safetensors, sin resultados de benchmarks, sin métricas de tarea y sin datos de entrenamiento publicados. Su interés reside en el andamiaje de código (`pipeline.py`, `config.json`, `training_args.json`) y en servir como punto de partida para reproducir experimentos de clasificación con una receta concreta: optimizador Lion y planificador de tasa de aprendizaje de tipo step.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| efficientformer-classification-finetune (este repositorio) | 33.088 | no disponible | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| efficientformer-classification-finetune (este repositorio) | 33.088 | no disponible | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | EfficientFormer (variantes oficiales) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | EfficientFormer V2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | MobileViT | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -94,9 +94,9 @@ No es posible establecer una comparativa cuantitativa fiable con alternativas de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/charlotterose/efficientformer-classification-finetune
-- Fichero principal del repositorio: `pipeline.py` (incluido en el repositorio de HuggingFace)
-- Configuración de arquitectura: `config.json` (incluido en el repositorio de HuggingFace)
-- Receta de experimento por defecto: `training_args.json` (incluido en el repositorio de HuggingFace)
-- Checkpoint de inicialización: `model.safetensors` (incluido en el repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/charlotterose/efficientformer-classification-finetune
+- Fichero principal del repositorio: `pipeline.py` (incluido en el repositorio de Hugging Face)
+- Configuración de arquitectura: `config.json` (incluido en el repositorio de Hugging Face)
+- Receta de experimento por defecto: `training_args.json` (incluido en el repositorio de Hugging Face)
+- Checkpoint de inicialización: `model.safetensors` (incluido en el repositorio de Hugging Face)
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados en la información proporcionada.

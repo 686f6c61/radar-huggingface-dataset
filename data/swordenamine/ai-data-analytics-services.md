@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/ai-data-analytics-services` no es un modelo de IA: es un repositorio de código publicado en HuggingFace bajo la etiqueta de modelo, que contiene una plantilla de servicios de analítica de datos y machine learning de extremo a extremo. El README describe un stack completo con pipelines de ingesta, transformación y modelado, modelos clásicos de scikit-learn (Random Forest para churn, Isolation Forest combinado con Z-score para anomalías, Prophet y LSTM para series temporales), una API FastAPI, detección de fraude en streaming con Kafka, dashboards de Grafana y gobierno del dato con controles de calidad, RBAC y cumplimiento GDPR/CCPA.
+`swordenamine/ai-data-analytics-services` no es un modelo de IA: es un repositorio de código publicado en Hugging Face bajo la etiqueta de modelo, que contiene una plantilla de servicios de analítica de datos y machine learning de extremo a extremo. El README describe un stack completo con pipelines de ingesta, transformación y modelado, modelos clásicos de scikit-learn (Random Forest para churn, Isolation Forest combinado con Z-score para anomalías, Prophet y LSTM para series temporales), una API FastAPI, detección de fraude en streaming con Kafka, dashboards de Grafana y gobierno del dato con controles de calidad, RBAC y cumplimiento GDPR/CCPA.
 
 El interés del proyecto es de tipo plantilla de referencia (scaffolding) para equipos que quieran montar una arquitectura de analítica con Docker Compose y Kubernetes, con seguimiento de experimentos en MLflow y orquestación con Airflow. No incluye pesos, no define un transformer ni un modelo generativo, y no publica métricas de rendimiento.
 
@@ -18,12 +18,12 @@ Por tanto, las filas de la ficha relativas a parámetros, contexto, cuantizació
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible (no hay pesos en safetensors, GGUF ni formatos equivalentes) |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible en los metadatos de HuggingFace; el README muestra una insignia MIT no verificable desde la ficha |
+| Licencia | No disponible en los metadatos de Hugging Face; el README muestra una insignia MIT no verificable desde la ficha |
 | Formato de pesos | No disponible; no hay pesos. El repositorio contiene código Python, YAML, JSON, Dockerfiles y ficheros de configuración |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Versión de Python declarada | 3.11+ (según el README) |
 | Dependencias destacadas | FastAPI 0.111, Kafka, PostgreSQL, MLflow, Airflow, Grafana, Docker, Kubernetes con HPA |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación (metadatos) | 2026-10-17 |
 | Última actualización (metadatos) | 2026-02-15 |
 
@@ -87,12 +87,12 @@ En parámetros, contexto y benchmarks, todas las alternativas se consideran "no 
 
 ## Limitaciones y advertencias
 
-- No es un modelo: no contiene pesos, tokenizador ni configuración de inferencia, pese a estar publicado bajo la etiqueta de modelo en HuggingFace. Cualquier expectativa de uso como LLM es incorrecta.
-- La licencia no figura en los metadatos de HuggingFace; la insignia MIT del README no es verificable desde la ficha. Antes de uso comercial hay que confirmar el fichero `LICENSE` en el repositorio de origen.
+- No es un modelo: no contiene pesos, tokenizador ni configuración de inferencia, pese a estar publicado bajo la etiqueta de modelo en Hugging Face. Cualquier expectativa de uso como LLM es incorrecta.
+- La licencia no figura en los metadatos de Hugging Face; la insignia MIT del README no es verificable desde la ficha. Antes de uso comercial hay que confirmar el fichero `LICENSE` en el repositorio de origen.
 - Los modelos son baselines de scikit-learn sin métricas publicadas; no hay evidencia de rendimiento en producción ni validación frente a drift.
 - El parámetro `contamination=0.01` del detector de anomalías condiciona la tasa esperada de alertas y exige calibración con datos reales; no se documenta cómo ajustarlo.
-- El repositorio de origen enlazado en el README (`github.com/swordenkisk/...`) no coincide con el nombre del autor en HuggingFace (`swordenamine`), lo que complica verificar la procedencia del código.
-- Los metadatos de HuggingFace son incoherentes: la fecha de creación (2026-10-17) es posterior a la de última actualización (2026-02-15).
+- El repositorio de origen enlazado en el README (`github.com/swordenkisk/...`) no coincide con el nombre del autor en Hugging Face (`swordenamine`), lo que complica verificar la procedencia del código.
+- Los metadatos de Hugging Face son incoherentes: la fecha de creación (2026-10-17) es posterior a la de última actualización (2026-02-15).
 - Cero descargas y cero likes: no hay señales de uso, revisión por terceros ni mantenimiento activo verificable.
 - El README documenta credenciales por defecto para Grafana y Airflow (usuario y contraseña `admin`), inaceptables en cualquier despliegue expuesto.
 - Los conectores de Power BI y Tableau se describen como stubs, no como integraciones completas.
@@ -102,7 +102,7 @@ En parámetros, contexto y benchmarks, todas las alternativas se consideran "no 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/swordenamine/ai-data-analytics-services
+- Ficha en Hugging Face: https://huggingface.co/swordenamine/ai-data-analytics-services
 - Repositorio de origen citado en el README: https://github.com/swordenkisk/ai-data-analytics-services
 - Fichero de licencia citado en el README: https://github.com/swordenkisk/ai-data-analytics-services/blob/main/LICENSE (según la insignia del README, no verificable)
 - Documentación de referencia de las dependencias declaradas: https://fastapi.tiangolo.com, https://mlflow.org, https://airflow.apache.org, https://grafana.com, https://kafka.apache.org

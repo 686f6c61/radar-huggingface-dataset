@@ -75,10 +75,10 @@ Los datos de la columna "Contexto" y "Licencia" de los modelos alternativos son 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| aoiandroid/Qwen3-0.6B | 751.632.384 | 32.768 tokens | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | No disponible |
-| Qwen/Qwen3-0.6B (upstream) | 0,6B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Publicados en el blog de Qwen3, no incluidos aqui |
-| Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens (referencia externa) | Apache 2.0 | HuggingFace | No disponible |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens (referencia externa) | Llama 3.2 Community License | HuggingFace, con restricciones de uso | No disponible |
+| aoiandroid/Qwen3-0.6B | 751.632.384 | 32.768 tokens | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | No disponible |
+| Qwen/Qwen3-0.6B (upstream) | 0,6B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Publicados en el blog de Qwen3, no incluidos aqui |
+| Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens (referencia externa) | Apache 2.0 | Hugging Face | No disponible |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens (referencia externa) | Llama 3.2 Community License | Hugging Face, con restricciones de uso | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ Los datos de la columna "Contexto" y "Licencia" de los modelos alternativos son 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aoiandroid/Qwen3-0.6B
+- Repositorio en Hugging Face: https://huggingface.co/aoiandroid/Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Modelo upstream de la familia: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE

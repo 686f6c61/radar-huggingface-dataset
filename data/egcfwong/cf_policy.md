@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `egcfwong/cf_policy` es una política de robótica basada en el método Action Chunking with Transformers (ACT), entrenada mediante aprendizaje por imitación con el framework LeRobot de HuggingFace. El autor, egcfwong, ha publicado este modelo con el objetivo de que un robot tipo `so_follower` (un brazo robótico de bajo coste estilo SO-100) ejecute una tarea concreta de manipulación: agarrar un cubo compañero y depositarlo en un bol naranja. El modelo se ha entrenado con un conjunto de datos teleoperado de 15 episodios y 6032 fotogramas, y está publicado bajo licencia Apache 2.0.
+El modelo `egcfwong/cf_policy` es una política de robótica basada en el método Action Chunking with Transformers (ACT), entrenada mediante aprendizaje por imitación con el framework LeRobot de Hugging Face. El autor, egcfwong, ha publicado este modelo con el objetivo de que un robot tipo `so_follower` (un brazo robótico de bajo coste estilo SO-100) ejecute una tarea concreta de manipulación: agarrar un cubo compañero y depositarlo en un bol naranja. El modelo se ha entrenado con un conjunto de datos teleoperado de 15 episodios y 6032 fotogramas, y está publicado bajo licencia Apache 2.0.
 
 Se trata de un modelo pequeño (51,7 millones de parámetros) que consume observaciones de estado y dos cámaras (izquierda y superior) para producir acciones de 6 dimensiones. Su relevancia radica en que demuestra el flujo completo de entrenamiento y despliegue de políticas robóticas con LeRobot, un ecosistema que está ganando tracción en la comunidad de robótica open source por su accesibilidad y reproducibilidad. El modelo no incluye resultados de evaluación en la model card, por lo que su rendimiento real en el robot físico no está documentado.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizo con el framework LeRobot version 0.6.1, usando el da
 - Percepcion visual multimodal: procesa simultaneamente dos camaras (izquierda y superior) con resolucion 640x480.
 - Ejecucion de tareas de manipulacion especificas: entrenado para agarrar un cubo y colocarlo en un bol.
 - Generalizacion limitada: al ser un modelo de imitacion con pocos episodios, su capacidad de generalizar a posiciones u objetos no vistos es reducida.
-- Integracion con LeRobot: compatible con el ecosistema de herramientas de HuggingFace para robotica (entrenamiento, rollout, visualizacion de datasets).
+- Integracion con LeRobot: compatible con el ecosistema de herramientas de Hugging Face para robotica (entrenamiento, rollout, visualizacion de datasets).
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No disponible. No se han encontrado modelos comparables publicados con la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/egcfwong/cf_policy
+- Modelo en Hugging Face: https://huggingface.co/egcfwong/cf_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/egcfwong/test_1_20260829_164444
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

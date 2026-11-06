@@ -64,7 +64,7 @@ No se dispone de información comparativa específica para este adaptador. No se
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/ranjitraut/dacpt-gemma4)
+- [Hugging Face del adaptador](https://huggingface.co/ranjitraut/dacpt-gemma4)
 - [Informe técnico de Gemma 4 (arXiv)](https://arxiv.org/abs/2607.02770)
 - [Página de Gemma 4 de Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
-- [Modelo base `google/gemma-4-E2B` en HuggingFace](https://huggingface.co/google/gemma-4-E2B) (enlace inferido, no verificado en la información proporcionada)
+- [Modelo base `google/gemma-4-E2B` en Hugging Face](https://huggingface.co/google/gemma-4-E2B) (enlace inferido, no verificado en la información proporcionada)

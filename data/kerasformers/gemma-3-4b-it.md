@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kerasformers/gemma-3-4b-it | 4B | No disponible | Gemma (gated) | HuggingFace |
-| kerasformers/gemma-3-1b-it | 1B | No disponible | Gemma (gated) | HuggingFace |
-| kerasformers/gemma-3-12b-it | 12B | No disponible | Gemma (gated) | HuggingFace |
-| kerasformers/gemma-3-27b-it | 27B | No disponible | Gemma (gated) | HuggingFace |
+| kerasformers/gemma-3-4b-it | 4B | No disponible | Gemma (gated) | Hugging Face |
+| kerasformers/gemma-3-1b-it | 1B | No disponible | Gemma (gated) | Hugging Face |
+| kerasformers/gemma-3-12b-it | 12B | No disponible | Gemma (gated) | Hugging Face |
+| kerasformers/gemma-3-27b-it | 27B | No disponible | Gemma (gated) | Hugging Face |
 
 La comparativa se limita a las variantes de Gemma 3 disponibles en el mismo ecosistema KerasFormers. No se dispone de datos de rendimiento ni de contexto para establecer una comparación cuantitativa.
 
@@ -77,7 +77,7 @@ La comparativa se limita a las variantes de Gemma 3 disponibles en el mismo ecos
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/gemma-3-4b-it](https://huggingface.co/kerasformers/gemma-3-4b-it)
+- [Hugging Face: kerasformers/gemma-3-4b-it](https://huggingface.co/kerasformers/gemma-3-4b-it)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Gemma 3 en KerasFormers](https://imvision12.github.io/KerasFormers/gemma3/)
 - [Modelo base: google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)

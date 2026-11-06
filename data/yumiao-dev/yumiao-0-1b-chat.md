@@ -76,8 +76,8 @@ El autor indica además que, tras el SFT, la perplejidad en WikiText-2 pasa de 9
 
 | Modelo | Parámetros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yumiao-0.1B-Chat | 100M | no disponible | LAMBADA 20,57%; PIQA 59,52%; C-Eval 23,63% (base) | Apache-2.0 | HuggingFace, transformers, TGI |
-| GPT-2 124M | 124M | 1.024 tokens | LAMBADA 32,56%; PIQA 62,89%; WikiText-2 ppl 37,37 | MIT (según el autor, no verificado en la información) | HuggingFace, amplio ecosistema |
+| Yumiao-0.1B-Chat | 100M | no disponible | LAMBADA 20,57%; PIQA 59,52%; C-Eval 23,63% (base) | Apache-2.0 | Hugging Face, transformers, TGI |
+| GPT-2 124M | 124M | 1.024 tokens | LAMBADA 32,56%; PIQA 62,89%; WikiText-2 ppl 37,37 | MIT (según el autor, no verificado en la información) | Hugging Face, amplio ecosistema |
 | Modelos de ~0,1B de la familia Qwen o SmolLM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa disponible se limita a GPT-2 124M, que supera al modelo en LAMBADA, PIQA y perplejidad, mientras que Yumiao-Base obtiene mejores resultados en SciQ y C-Eval. No se dispone de datos verificados de otras alternativas de 0,1B en la información proporcionada.
@@ -97,11 +97,11 @@ La comparación directa disponible se limita a GPT-2 124M, que supera al modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yumiao-dev/Yumiao-0.1B-Chat
+- Modelo en Hugging Face: https://huggingface.co/yumiao-dev/Yumiao-0.1B-Chat
 - Modelo base: https://huggingface.co/yumiao-dev/Yumiao-0.1B-Base
 - Dataset de instrucciones: https://huggingface.co/datasets/tatsu-lab/alpaca-gpt4-data-zh
 - Dataset chino C4: https://huggingface.co/datasets/AI-ModelScope/chinese-c4
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Repositorio de evaluación del autor: carpeta `eval/` del repositorio del modelo en HuggingFace
+- Repositorio de evaluación del autor: carpeta `eval/` del repositorio del modelo en Hugging Face
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness
 - Text-generation-inference: https://github.com/huggingface/text-generation-inference

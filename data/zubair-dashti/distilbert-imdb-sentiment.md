@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DistilBERT IMDB Sentiment es un modelo de clasificación de texto ajustado para análisis de sentimiento binario en reseñas de películas en inglés. Lo desarrolla el usuario Zubair-Dashti y se publica bajo licencia Apache 2.0 en HuggingFace. El modelo parte de la arquitectura DistilBERT, una versión destilada de BERT que reduce el número de capas y parámetros manteniendo una parte importante de las capacidades del modelo original, lo que lo hace adecuado para inferencia rápida y con requisitos de hardware modestos.
+DistilBERT IMDB Sentiment es un modelo de clasificación de texto ajustado para análisis de sentimiento binario en reseñas de películas en inglés. Lo desarrolla el usuario Zubair-Dashti y se publica bajo licencia Apache 2.0 en Hugging Face. El modelo parte de la arquitectura DistilBERT, una versión destilada de BERT que reduce el número de capas y parámetros manteniendo una parte importante de las capacidades del modelo original, lo que lo hace adecuado para inferencia rápida y con requisitos de hardware modestos.
 
 El modelo resuelve la tarea concreta de clasificar un fragmento de texto como positivo o negativo, típicamente en el dominio de reseñas de películas (dataset IMDB). Con 66.955.010 parámetros (aproximadamente 67 millones), se sitúa en la gama ligera de modelos transformer y puede ejecutarse en CPU o en GPUs de consumo sin dificultad. El repositorio ocupa 0,3 GB y los pesos están en formato safetensors.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: inferior a 1 GB en FP32 (67 M de parámetros × 4 bytes ≈ 268 MB), aproximadamente 130-270 MB según cuantización.
 - GPU recomendadas: cualquier GPU moderna; funciona bien en GTX 1650, RTX 3060, RTX 4090, A100 o H100, aunque el modelo es tan pequeño que la GPU no es imprescindible.
 - Cabe en cualquier GPU de consumo e incluso en CPU con latencia aceptable.
-- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, Text Embeddings Inference (TEI), o exportación a otros runtimes; compatible con pipelines de HuggingFace.
+- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, Text Embeddings Inference (TEI), o exportación a otros runtimes; compatible con pipelines de Hugging Face.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zubair-Dashti/distilbert-imdb-sentiment | 66,9 M | no disponible | apache-2.0 | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | apache-2.0 | HuggingFace |
-| bert-base-uncased | ~110 M | 512 tokens | apache-2.0 | HuggingFace |
-| roberta-base | ~125 M | 512 tokens | mit | HuggingFace |
+| Zubair-Dashti/distilbert-imdb-sentiment | 66,9 M | no disponible | apache-2.0 | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | apache-2.0 | Hugging Face |
+| bert-base-uncased | ~110 M | 512 tokens | apache-2.0 | Hugging Face |
+| roberta-base | ~125 M | 512 tokens | mit | Hugging Face |
 
 Los modelos comparables son alternativas de la misma familia y tamaño; no se dispone de datos de rendimiento de este checkpoint para establecer una comparación cuantitativa.
 
@@ -82,4 +82,4 @@ Los modelos comparables son alternativas de la misma familia y tamaño; no se di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zubair-Dashti/distilbert-imdb-sentiment
+- Hugging Face: https://huggingface.co/Zubair-Dashti/distilbert-imdb-sentiment

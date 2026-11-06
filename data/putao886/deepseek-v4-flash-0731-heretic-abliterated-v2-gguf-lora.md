@@ -73,9 +73,9 @@ Los rechazos se cuentan por coincidencia de palabras clave (marcadores en inglé
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 (base) | 284B totales / 13B activos | no disponible | MoE con guardarraíles intactos | MIT | HuggingFace (unsloth GGUF) |
-| Este adaptador v2 (t265/t256/t273/t264) | 497.664 (adaptador) | no disponible | Abliteration direccional optimizada | MIT | HuggingFace (putao886) |
-| v1 adapter (MoriNoNushi) | no disponible | no disponible | Abliteration previa, 20/140 rechazos | MIT | HuggingFace |
+| DeepSeek-V4-Flash-0731 (base) | 284B totales / 13B activos | no disponible | MoE con guardarraíles intactos | MIT | Hugging Face (unsloth GGUF) |
+| Este adaptador v2 (t265/t256/t273/t264) | 497.664 (adaptador) | no disponible | Abliteration direccional optimizada | MIT | Hugging Face (putao886) |
+| v1 adapter (MoriNoNushi) | no disponible | no disponible | Abliteration previa, 20/140 rechazos | MIT | Hugging Face |
 | Heretic (herramienta) | no aplica | no aplica | Abliteration genérica con Optuna | no disponible | GitHub (p-e-w) |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ Los rechazos se cuentan por coincidencia de palabras clave (marcadores en inglé
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/putao886/DeepSeek-V4-Flash-0731-heretic-abliterated-v2-GGUF-lora
+- Repositorio Hugging Face: https://huggingface.co/putao886/DeepSeek-V4-Flash-0731-heretic-abliterated-v2-GGUF-lora
 - Modelo base (GGUF, unsloth): https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF
 - Adaptador v1 (MoriNoNushi): https://huggingface.co/MorinoNushi/DeepSeek-V4-Flash-0731-heretic-GGUF-lora
 - GGUF fusionado v1 listo para ejecutar: https://huggingface.co/MorinoNushi/DeepSeek-V4-Flash-0731-heretic-GGUF

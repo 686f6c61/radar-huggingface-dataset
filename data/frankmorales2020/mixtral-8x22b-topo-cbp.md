@@ -27,7 +27,7 @@ Otros datos del repositorio: tamano del repo 73,1 GB, 0 descargas, 0 likes, crea
 
 La arquitectura subyacente es la de Mixtral-8x22B-v0.1: un transformer decoder-only con capas de mezcla de expertos (MoE) y enrutamiento disperso, distribuido en 8 expertos por capa con activacion top-2. El checkpoint parte de una version ya cuantizada a 4 bits publicada por `mistral-community`, de modo que los pesos heredados estan en precision reducida y no en bfloat16 original. No se documentan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF o DPO.
 
-El entrenamiento especifico de este checkpoint, segun la model card, se ejecuto con HuggingFace Trainer durante 120 pasos y afecto unicamente a las matrices de embeddings de tokens y a la cabecera de lenguaje. La tecnica propietaria Topo-CBP se describe como un mecanismo de "gobernanza topologica" y retropropagacion continua orientado a mantener estabilidad plastica (stability-plasticity) y evitar el olvido catastrofico. El autor reporta una "deriva de invarianza maxima" de 0.0000000000 y una similitud semantica media del 90,9 % respecto al modelo base, asi como un veredicto de integridad PASS por coincidencia de digest. Estos valores proceden exclusivamente de la model card del autor y no se acompanan de metodologia reproducible en la informacion disponible. El codigo asociado se publica en un notebook del repositorio GitHub `frank-morales2020/AST`.
+El entrenamiento especifico de este checkpoint, segun la model card, se ejecuto con Hugging Face Trainer durante 120 pasos y afecto unicamente a las matrices de embeddings de tokens y a la cabecera de lenguaje. La tecnica propietaria Topo-CBP se describe como un mecanismo de "gobernanza topologica" y retropropagacion continua orientado a mantener estabilidad plastica (stability-plasticity) y evitar el olvido catastrofico. El autor reporta una "deriva de invarianza maxima" de 0.0000000000 y una similitud semantica media del 90,9 % respecto al modelo base, asi como un veredicto de integridad PASS por coincidencia de digest. Estos valores proceden exclusivamente de la model card del autor y no se acompanan de metodologia reproducible en la informacion disponible. El codigo asociado se publica en un notebook del repositorio GitHub `frank-morales2020/AST`.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| frankmorales2020/Mixtral-8x22B-topo-cbp | 140,6 B | no disponible en la ficha | no disponible (base: 64k) | apache-2.0 | HuggingFace, 0 descargas |
-| mistral-community/Mixtral-8x22B-v0.1-4bit (base) | 140,6 B | 39 B (dato publico del modelo base) | 64k | apache-2.0 | HuggingFace |
-| mistralai/Mixtral-8x22B-v0.1 | 140,6 B | 39 B | 64k | apache-2.0 | HuggingFace |
-| mistralai/Mixtral-8x22B-Instruct-v0.1 | 140,6 B | 39 B | 64k | apache-2.0 | HuggingFace |
+| frankmorales2020/Mixtral-8x22B-topo-cbp | 140,6 B | no disponible en la ficha | no disponible (base: 64k) | apache-2.0 | Hugging Face, 0 descargas |
+| mistral-community/Mixtral-8x22B-v0.1-4bit (base) | 140,6 B | 39 B (dato publico del modelo base) | 64k | apache-2.0 | Hugging Face |
+| mistralai/Mixtral-8x22B-v0.1 | 140,6 B | 39 B | 64k | apache-2.0 | Hugging Face |
+| mistralai/Mixtral-8x22B-Instruct-v0.1 | 140,6 B | 39 B | 64k | apache-2.0 | Hugging Face |
 
 La diferencia principal frente a las alternativas es que el checkpoint Topo-CBP solo modifica embeddings y cabecera y anade el marco metodologico Topo-CBP; el resto de pesos y la arquitectura son identicos al modelo base. Los datos de parametros activos y contexto de los modelos comparados proceden de la documentacion publica de Mixtral, no de este repositorio.
 
@@ -89,7 +89,7 @@ La diferencia principal frente a las alternativas es que el checkpoint Topo-CBP 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankmorales2020/Mixtral-8x22B-topo-cbp
+- Modelo en Hugging Face: https://huggingface.co/frankmorales2020/Mixtral-8x22B-topo-cbp
 - Modelo base: https://huggingface.co/mistral-community/Mixtral-8x22B-v0.1-4bit
 - Codigo del autor (notebook `topo_cbp_mixtral.ipynb`): https://github.com/frank-morales2020/AST/blob/main/topo_cbp_mixtral.ipynb
 - Repositorio GitHub del autor: https://github.com/frank-morales2020/AST

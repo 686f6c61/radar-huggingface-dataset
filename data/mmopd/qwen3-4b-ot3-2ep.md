@@ -81,10 +81,10 @@ No se han publicado en la informacion disponible resultados de benchmarks para e
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados en esta ficha | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-OT3-2ep (este) | 4,02 B | 32.768 tokens heredados (SFT a 16.384) | Apache-2.0 | AIME24 66,3; AIME25 56,3; LiveCodeBench v6 51,7; MedQA 69,8 | HuggingFace, pesos safetensors |
-| Qwen3-4B-OT3-1ep | 4,02 B | identico | Apache-2.0 | AIME24 60,4; AIME25 51,3; LiveCodeBench v6 47,1 | HuggingFace (`MMOPD/Qwen3-4B-OT3-1ep`) |
-| Qwen3-4B-Base (modelo base) | 4,02 B | 32.768 tokens | Apache-2.0 | no disponible | HuggingFace |
-| Profesores MMOPD de dominio (medical, law, finance, if) | 4,02 B | identico | Apache-2.0 | no disponible | HuggingFace, derivados de este checkpoint |
+| Qwen3-4B-OT3-2ep (este) | 4,02 B | 32.768 tokens heredados (SFT a 16.384) | Apache-2.0 | AIME24 66,3; AIME25 56,3; LiveCodeBench v6 51,7; MedQA 69,8 | Hugging Face, pesos safetensors |
+| Qwen3-4B-OT3-1ep | 4,02 B | identico | Apache-2.0 | AIME24 60,4; AIME25 51,3; LiveCodeBench v6 47,1 | Hugging Face (`MMOPD/Qwen3-4B-OT3-1ep`) |
+| Qwen3-4B-Base (modelo base) | 4,02 B | 32.768 tokens | Apache-2.0 | no disponible | Hugging Face |
+| Profesores MMOPD de dominio (medical, law, finance, if) | 4,02 B | identico | Apache-2.0 | no disponible | Hugging Face, derivados de este checkpoint |
 | Alternativas externas de razonamiento a escala 4B-8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No se han publicado en la informacion disponible resultados de benchmarks para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MMOPD/Qwen3-4B-OT3-2ep
+- Modelo en Hugging Face: https://huggingface.co/MMOPD/Qwen3-4B-OT3-2ep
 - Checkpoint de 1 epoca: https://huggingface.co/MMOPD/Qwen3-4B-OT3-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M

@@ -102,7 +102,7 @@ La comparación se limita a parámetros, contexto y licencia, ya que el autor no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.73b-11.5bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.73b-11.5bt-base-cooled
 - Repositorio de datos y detalles de bins: `DATA.md` en el repositorio del modelo
 - Provenance del run: `provenance.json` en el repositorio del modelo
 - Código de modelado: `modeling_vectabass.py` en el repositorio del modelo

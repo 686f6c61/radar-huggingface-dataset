@@ -99,7 +99,7 @@ No se dispone de comparativas directas con otras cuantizaciones de modelos de ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/topabaem/Qwen3.8-27B-STQ
+- Repositorio Hugging Face: https://huggingface.co/topabaem/Qwen3.8-27B-STQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto mix-stq (GitHub): https://github.com/Topabaem05/mix-stq
 - Artefactos y evidencia del estudio: https://huggingface.co/datasets/topabaem/mix-stq-artifacts

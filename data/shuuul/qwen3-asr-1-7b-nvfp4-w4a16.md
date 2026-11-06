@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Calidad ASR reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-ASR-1.7B-NVFP4-W4A16 (esta ficha) | 1.434 M totales, 1.208 M en NVFP4 | No disponible | safetensors, NVFP4 W4A16 | WER 0,0195 (librispeech), CER 0,0170 (aishell) | Apache-2.0 | HuggingFace, sin probar en vLLM/SGLang |
-| Qwen/Qwen3-ASR-1.7B (base bf16) | 1.434 M | No disponible | safetensors, bf16 | WER 0,0203 (librispeech), CER 0,0194 (aishell) | Apache-2.0 | HuggingFace, referencia del autor |
+| Qwen3-ASR-1.7B-NVFP4-W4A16 (esta ficha) | 1.434 M totales, 1.208 M en NVFP4 | No disponible | safetensors, NVFP4 W4A16 | WER 0,0195 (librispeech), CER 0,0170 (aishell) | Apache-2.0 | Hugging Face, sin probar en vLLM/SGLang |
+| Qwen/Qwen3-ASR-1.7B (base bf16) | 1.434 M | No disponible | safetensors, bf16 | WER 0,0203 (librispeech), CER 0,0194 (aishell) | Apache-2.0 | Hugging Face, referencia del autor |
 | Otras cuantizaciones del mismo base (FP8, AWQ, GGUF) | No disponible | No disponible | No disponible | No disponible | No disponible | No identificadas en la informacion proporcionada |
 | Alternativas de ASR de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 ## Enlaces
 
-- [HuggingFace: shuuul/Qwen3-ASR-1.7B-NVFP4-W4A16](https://huggingface.co/shuuul/Qwen3-ASR-1.7B-NVFP4-W4A16)
+- [Hugging Face: shuuul/Qwen3-ASR-1.7B-NVFP4-W4A16](https://huggingface.co/shuuul/Qwen3-ASR-1.7B-NVFP4-W4A16)
 - [Modelo base: Qwen/Qwen3-ASR-1.7B](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) (revision `7278e1e70fe206f11671096ffdd38061171dd6e5`)
 - [Repositorio ModelQuant](https://github.com/shuuul/ModelQuant) (receta `recipes/qwen3-asr-1.7b`, commit `783a9a581f3cba25ea73bf6fdc3bcac846d761c0`)
 - [Dataset openslr/librispeech_asr](https://huggingface.co/datasets/openslr/librispeech_asr)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shadow_Master es un modelo publicado en HuggingFace por el usuario Moronto bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni informacion sobre el pipeline o los idiomas soportados. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se ha actualizado desde su creacion.
+Shadow_Master es un modelo publicado en Hugging Face por el usuario Moronto bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni informacion sobre el pipeline o los idiomas soportados. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se ha actualizado desde su creacion.
 
 Por la informacion disponible no es posible determinar que tipo de modelo es (lenguaje, vision, audio u otro), su tamano, su arquitectura ni su proposito. La ausencia de metadatos tecnicos y de documentacion impide evaluar su calidad o su idoneidad para tareas concretas. Cualquier uso en produccion requeriria una inspeccion directa de los ficheros del repositorio, algo que esta ficha no puede cubrir con los datos proporcionados.
 
@@ -70,4 +70,4 @@ No disponible. Al desconocerse el tipo de modelo, su tamano y sus capacidades, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Moronto/Shadow_Master
+- Hugging Face: https://huggingface.co/Moronto/Shadow_Master

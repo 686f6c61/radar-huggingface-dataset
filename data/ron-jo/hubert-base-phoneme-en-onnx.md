@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ron-jo/hubert-base-phoneme-en-onnx | 95 M | Reconocimiento de fonemas ARPAbet (CTC) | ONNX int8 (opset 17) | Apache-2.0 | HuggingFace (0 descargas) |
-| Peacockery/hubert-base-phoneme-en | 95 M | Reconocimiento de fonemas ARPAbet (CTC) | PyTorch/safetensors | Apache-2.0 | HuggingFace |
-| facebook/hubert-base-ls960 | 95 M | Representaciones de habla auto-supervisadas (no ASR fonetico directo) | PyTorch | Apache-2.0 | HuggingFace |
+| ron-jo/hubert-base-phoneme-en-onnx | 95 M | Reconocimiento de fonemas ARPAbet (CTC) | ONNX int8 (opset 17) | Apache-2.0 | Hugging Face (0 descargas) |
+| Peacockery/hubert-base-phoneme-en | 95 M | Reconocimiento de fonemas ARPAbet (CTC) | PyTorch/safetensors | Apache-2.0 | Hugging Face |
+| facebook/hubert-base-ls960 | 95 M | Representaciones de habla auto-supervisadas (no ASR fonetico directo) | PyTorch | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparados entre estas variantes en la informacion proporcionada, por lo que la comparativa se limita a parametros, tarea, formato y licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparados entre estas variantes en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ron-jo/hubert-base-phoneme-en-onnx
+- Modelo en Hugging Face: https://huggingface.co/ron-jo/hubert-base-phoneme-en-onnx
 - Ficheros del repositorio: https://huggingface.co/ron-jo/hubert-base-phoneme-en-onnx/tree/main
 - Modelo base del fine-tune: https://huggingface.co/Peacockery/hubert-base-phoneme-en
 - Modelo base original: https://huggingface.co/facebook/hubert-base-ls960

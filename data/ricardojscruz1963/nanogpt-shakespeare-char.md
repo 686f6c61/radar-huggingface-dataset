@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ricardojscruz1963/nanogpt-shakespeare-char` es un modelo de generacion de texto publicado en HuggingFace por el usuario ricardojscruz1963, con 10.770.816 parametros y pipeline declarado de `text-generation`. Por el identificador, las etiquetas (`gpt2`, `transformers`, `safetensors`) y el recuento exacto de parametros, se trata con alta probabilidad de una reproduccion del experimento `shakespeare_char` de nanoGPT, es decir, un transformer decoder-only estilo GPT-2 entrenado a nivel de caracter sobre el corpus Tiny Shakespeare. No es un modelo de proposito general ni un modelo de produccion: es un artefacto de aprendizaje y demostracion del pipeline de entrenamiento de nanoGPT.
+`ricardojscruz1963/nanogpt-shakespeare-char` es un modelo de generacion de texto publicado en Hugging Face por el usuario ricardojscruz1963, con 10.770.816 parametros y pipeline declarado de `text-generation`. Por el identificador, las etiquetas (`gpt2`, `transformers`, `safetensors`) y el recuento exacto de parametros, se trata con alta probabilidad de una reproduccion del experimento `shakespeare_char` de nanoGPT, es decir, un transformer decoder-only estilo GPT-2 entrenado a nivel de caracter sobre el corpus Tiny Shakespeare. No es un modelo de proposito general ni un modelo de produccion: es un artefacto de aprendizaje y demostracion del pipeline de entrenamiento de nanoGPT.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene practicamente ningun dato: todos los campos aparecen como `[More Information Needed]`. No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Tampoco se han publicado resultados de benchmarks ni mediciones de latencia o throughput.
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene practicamente ningun dato: todos los campos aparecen como `[More Information Needed]`. No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Tampoco se han publicado resultados de benchmarks ni mediciones de latencia o throughput.
 
 Su relevancia es por tanto exclusivamente didactica o experimental: sirve como ejemplo minimo de un modelo causal de ~10,8 M de parametros que cabe en cualquier hardware, util para validar cadenas de despliegue (transformers, TGI), estudiar tokenizacion a nivel de caracter y como punto de partida para fine-tuning en dominios con vocabulario cerrado. No debe confundirse ni compararse con modelos generativos modernos de uso general.
 
@@ -33,7 +33,7 @@ No hay informacion de entrenamiento publicada. La model card no documenta corpus
 
 A partir del recuento exacto de parametros (10.770.816) puede deducirse, sin confirmacion por parte del autor, que la configuracion coincide con la del preset `shakespeare_char` de nanoGPT: 6 capas, 6 cabezas de atencion, dimension de embedding 384, `block_size` 256 y vocabulario de 65 caracteres (los caracteres presentes en Tiny Shakespeare). El calculo de parametros de esa configuracion da exactamente 10.770.816, lo que refuerza la deduccion, pero se trata de una inferencia tecnica y no de un dato declarado.
 
-No hay evidencia de RLHF, DPO, SFT posterior ni de ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, MoE, SSM). La etiqueta `arxiv:1910.09700` no procede de un paper del modelo, sino de la cita a Lacoste et al. (2019) que aparece en la plantilla por defecto de HuggingFace para el calculo de emisiones de carbono.
+No hay evidencia de RLHF, DPO, SFT posterior ni de ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, MoE, SSM). La etiqueta `arxiv:1910.09700` no procede de un paper del modelo, sino de la cita a Lacoste et al. (2019) que aparece en la plantilla por defecto de Hugging Face para el calculo de emisiones de carbono.
 
 ## Capacidades
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ricardojscruz1963/nanogpt-shakespeare-char | 10.770.816 | no disponible | no disponible | safetensors | HuggingFace |
-| cy0307/nanogpt-shakespeare | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ricardojscruz1963/nanogpt-shakespeare-char | 10.770.816 | no disponible | no disponible | safetensors | Hugging Face |
+| cy0307/nanogpt-shakespeare | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | nktkt/nanogpt-shakespeare-char | no disponible | no disponible | no disponible | no disponible (repositorio de experimento) | GitHub |
 | karpathy/nanoGPT (referencia de codigo) | configurable (124 M en GPT-2 small; ~10,7 M en `shakespeare_char`) | 256 en `shakespeare_char` | MIT (codigo) | script de entrenamiento | GitHub |
 
@@ -94,8 +94,8 @@ Los dos primeros son repositorios de terceros con el mismo planteamiento (GPT a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ricardojscruz1963/nanogpt-shakespeare-char
-- Modelo similar en HuggingFace: https://huggingface.co/cy0307/nanogpt-shakespeare
+- Modelo en Hugging Face: https://huggingface.co/ricardojscruz1963/nanogpt-shakespeare-char
+- Modelo similar en Hugging Face: https://huggingface.co/cy0307/nanogpt-shakespeare
 - Repositorio del experimento similar en GitHub: https://github.com/nktkt/nanogpt-shakespeare-char
 - README del experimento similar: https://github.com/nktkt/nanogpt-shakespeare-char/blob/main/README.md
 - Framework de referencia nanoGPT: https://github.com/karpathy/nanoGPT

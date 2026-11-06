@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Oddity-12B-v1.0 es un modelo de lenguaje cuantizado a formato GGUF por mradermacher, a partir del modelo base ReadyArt/Dark-Oddity-12B-v1.0. Se trata de un modelo de 11.956.539.456 parámetros (aproximadamente 12B) diseñado para casos de uso no alineados, incluyendo roleplay, contenido explícito y ERP (roleplay erótico). El repositorio de HuggingFace no proporciona detalles sobre la arquitectura subyacente, la longitud de contexto o el proceso de entrenamiento, por lo que gran parte de las especificaciones técnicas deben marcarse como no disponibles.
+Dark-Oddity-12B-v1.0 es un modelo de lenguaje cuantizado a formato GGUF por mradermacher, a partir del modelo base ReadyArt/Dark-Oddity-12B-v1.0. Se trata de un modelo de 11.956.539.456 parámetros (aproximadamente 12B) diseñado para casos de uso no alineados, incluyendo roleplay, contenido explícito y ERP (roleplay erótico). El repositorio de Hugging Face no proporciona detalles sobre la arquitectura subyacente, la longitud de contexto o el proceso de entrenamiento, por lo que gran parte de las especificaciones técnicas deben marcarse como no disponibles.
 
 La relevancia de esta ficha radica en que es un modelo de la categoría "uncensored" o "unaligned", dirigido a usuarios que buscan generación de texto sin restricciones de seguridad. El formato GGUF permite ejecutarlo en herramientas como llama.cpp, Ollama o LM Studio, y la variedad de cuantizaciones ofrecidas (desde Q2_K hasta Q8_0) facilita su despliegue en hardware de consumo. La licencia es "other", lo que implica que hay que revisar la licencia del modelo base para conocer los términos exactos de uso comercial.
 
@@ -69,7 +69,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. D
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Dark-Oddity-12B-v1.0-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Dark-Oddity-12B-v1.0-GGUF
 - Modelo base (original): https://huggingface.co/ReadyArt/Dark-Oddity-12B-v1.0
 - Repositorio de mradermacher: https://huggingface.co/mradermacher
 - Página de solicitud de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
@@ -142,7 +142,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Dark-Oddity-12B-v1.0-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Dark-Oddity-12B-v1.0-GGUF
 - Modelo base (original): https://huggingface.co/ReadyArt/Dark-Oddity-12B-v1.0
 - Repositorio de mradermacher: https://huggingface.co/mradermacher
 - Página de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

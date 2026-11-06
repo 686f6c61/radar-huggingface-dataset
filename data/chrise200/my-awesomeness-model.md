@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ChrisE200/My-awesomeness-model` es un modelo publicado en HuggingFace Hub por el usuario ChrisE200, etiquetado con la libreria `transformers` y la arquitectura `bert`, y destinado a tareas de extraccion de caracteristicas (*feature-extraction*). El repositorio contiene pesos en formato `safetensors` con un total de 108.310.272 parametros (aproximadamente 108,3 millones) y ocupa 0,4 GB, lo que lo situa en la franja de los codificadores tipo BERT de escala base. No se trata de un modelo generativo ni de un modelo de razonamiento: su proposito declarado es producir representaciones vectoriales (embeddings) de texto.
+`ChrisE200/My-awesomeness-model` es un modelo publicado en Hugging Face Hub por el usuario ChrisE200, etiquetado con la libreria `transformers` y la arquitectura `bert`, y destinado a tareas de extraccion de caracteristicas (*feature-extraction*). El repositorio contiene pesos en formato `safetensors` con un total de 108.310.272 parametros (aproximadamente 108,3 millones) y ocupa 0,4 GB, lo que lo situa en la franja de los codificadores tipo BERT de escala base. No se trata de un modelo generativo ni de un modelo de razonamiento: su proposito declarado es producir representaciones vectoriales (embeddings) de texto.
 
-El modelo no esta documentado. La model card es la plantilla autogenerada por HuggingFace y todos sus campos relevantes (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No se ha publicado informacion sobre el dataset de entrenamiento, el procedimiento de ajuste (si lo hubo), la longitud de contexto soportada ni resultados de benchmarks. El repositorio registra 0 descargas y 0 *likes*, y fue creado el 22 de septiembre de 2026 segun los metadatos del Hub.
+El modelo no esta documentado. La model card es la plantilla autogenerada por Hugging Face y todos sus campos relevantes (desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No se ha publicado informacion sobre el dataset de entrenamiento, el procedimiento de ajuste (si lo hubo), la longitud de contexto soportada ni resultados de benchmarks. El repositorio registra 0 descargas y 0 *likes*, y fue creado el 22 de septiembre de 2026 segun los metadatos del Hub.
 
 Por todo ello, esta ficha debe leerse como un inventario de lo que se puede verificar tecnicamente (arquitectura declarada, recuento de parametros, formato de pesos, pipeline) y no como una evaluacion de capacidades. Cualquier uso en produccion exigiria auditar los pesos, comprobar la tokenizacion y validar el comportamiento en el dominio objetivo antes de considerarlo fiable.
 
@@ -38,7 +38,7 @@ No hay informacion alguna sobre el proceso de entrenamiento: se desconoce el vol
 - Extraccion de caracteristicas: el pipeline declarado es `feature-extraction`, es decir, generar embeddings de secuencias de texto para tareas posteriores (busqueda semantica, similitud, clustering).
 - Codificacion bidireccional de contexto: al ser un modelo tipo BERT, procesa la secuencia completa de forma bidireccional, lo que lo hace adecuado para representaciones de oraciones o documentos cortos.
 - Ajuste fino para tareas discriminativas: previsiblemente puede adaptarse con una cabeza de clasificacion para clasificacion de texto, analisis de sentimiento, NER o question answering extractivo, aunque no hay evidencia publicada de que se haya hecho.
-- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, lo que indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el repositorio incluye el tag `endpoints_compatible`, lo que indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Generacion de texto: no soportada (no es un modelo causal ni seq2seq).
 - Tool calling / function calling: no disponible y poco plausible en un encoder tipo BERT.
 - Capacidades de agente o razonamiento multi-paso: no disponibles.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia, calculada a partir del recuento de parametros (108,3 M): aproximadamente 0,43 GB en fp32, 0,22 GB en fp16/bf16 y 0,11 GB en int8. Estas cifras son aritmetica derivada del numero de parametros, no mediciones publicadas.
 - El consumo real de memoria sera superior al de los pesos por el *overhead* de activaciones, tokenizador y runtime; en la practica conviene reservar 1-2 GB.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente, incluidas RTX 3060, RTX 4090 o incluso GPUs integradas de portatil. Tambien es viable la inferencia en CPU.
-- Despliegue: al usar `transformers` y `safetensors`, es compatible con HuggingFace Transformers, Text Embeddings Inference (TEI), HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo indica) y, potencialmente, vLLM u Optimum para aceleracion. No hay pesos GGUF publicados, por lo que Ollama o llama.cpp requeririan conversion manual.
+- Despliegue: al usar `transformers` y `safetensors`, es compatible con Hugging Face Transformers, Text Embeddings Inference (TEI), Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo indica) y, potencialmente, vLLM u Optimum para aceleracion. No hay pesos GGUF publicados, por lo que Ollama o llama.cpp requeririan conversion manual.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ La diferencia practica principal no es de tamano, sino de trazabilidad: los mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChrisE200/My-awesomeness-model
+- Hugging Face: https://huggingface.co/ChrisE200/My-awesomeness-model
 - Calculador de impacto medioambiental citado en la plantilla de la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019), referenciado en la plantilla: https://arxiv.org/abs/1910.09700
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos corresponden a paginas sobre el aeropuerto de Milan-Bergamo (BGY) y son ajenos por completo al modelo analizado.

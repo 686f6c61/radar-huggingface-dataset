@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vspml-pubmedqa-decision-a100 es un modelo de clasificación de texto entrenado para responder preguntas clínicas sobre literatura biomédica, devolviendo un veredicto categórico entre `YES`, `NO` o `MAYBE` a partir de una pregunta y el abstract de un artículo científico. Lo desarrolla Vishnu Suresh Perumbavoor (vishnusureshperumbavoor), ingeniero de software e investigador centrado en imagen médica, y está publicado bajo licencia Apache 2.0 en HuggingFace. La tarea se corresponde con PubMedQA dentro del benchmark BLURB de Microsoft.
+vspml-pubmedqa-decision-a100 es un modelo de clasificación de texto entrenado para responder preguntas clínicas sobre literatura biomédica, devolviendo un veredicto categórico entre `YES`, `NO` o `MAYBE` a partir de una pregunta y el abstract de un artículo científico. Lo desarrolla Vishnu Suresh Perumbavoor (vishnusureshperumbavoor), ingeniero de software e investigador centrado en imagen médica, y está publicado bajo licencia Apache 2.0 en Hugging Face. La tarea se corresponde con PubMedQA dentro del benchmark BLURB de Microsoft.
 
 El modelo se apoya en una arquitectura ModernBERT orientada a clasificación de secuencias (`AutoModelForSequenceClassification`), con 108.235.011 parámetros totales y una ventana de contexto de 512 tokens. No es un modelo generativo: es no autorregresivo y resuelve la decisión en una única pasada hacia delante, con una latencia declarada inferior a 30 ms. Esto lo sitúa en la categoría que el autor denomina "System 1 Clinical Decision Reasoning", es decir, una decisión rápida y calibrada frente a la generación de texto larga.
 
@@ -69,7 +69,7 @@ No se han publicado en la informacion disponible resultados comparativos contra 
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,45 GB de pesos (108M parametros); en bf16/fp16, alrededor de 0,22 GB. Con activaciones y sobrecarga del runtime, la huella practica es inferior a 1 GB.
 - GPU recomendadas: no requiere GPU de centro de datos. Entrena bien en A100 (fue el hardware de entrenamiento), pero para inferencia basta cualquier GPU moderna.
 - Cabe en GPU de consumo: si, con amplio margen. Funciona en tarjetas con 4 GB o menos, e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: transformers (`AutoModelForSequenceClassification`), HuggingFace Text Embeddings Inference, ONNX Runtime, TorchServe o cualquier servidor que soporte modelos de clasificacion de secuencias. vLLM, llama.cpp, Ollama y TGI no aplican de forma nativa porque son runners orientados a generacion autoregresiva.
+- Opciones de despliegue: transformers (`AutoModelForSequenceClassification`), Hugging Face Text Embeddings Inference, ONNX Runtime, TorchServe o cualquier servidor que soporte modelos de clasificacion de secuencias. vLLM, llama.cpp, Ollama y TGI no aplican de forma nativa porque son runners orientados a generacion autoregresiva.
 - Latencia y throughput: latencia declarada inferior a 30 ms por muestra (una pasada hacia delante); el throughput agregado depende del batching y del hardware, y no se especifica en la informacion disponible.
 
 ## Comparativa con modelos similares
@@ -98,11 +98,11 @@ No se dispone en la informacion proporcionada de cifras de rendimiento de los mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vishnusureshperumbavoor/vspml-pubmedqa-decision-a100
+- Modelo en Hugging Face: https://huggingface.co/vishnusureshperumbavoor/vspml-pubmedqa-decision-a100
 - Framework de entrenamiento VSP ML (Vibe-ML-Studio): https://github.com/vishnusureshperumbavoor/Vibe-ML-Studio
 - Perfil del autor (web personal): https://vishnusureshperumbavoor.github.io/V-S-P/
 - Perfil del autor en GitHub: https://github.com/vishnusureshperumbavoor
-- Perfil del autor en HuggingFace: https://huggingface.co/vishnusureshperumbavoor
-- Dataset PubMedQA en HuggingFace: https://huggingface.co/datasets/qiaojin/PubMedQA
+- Perfil del autor en Hugging Face: https://huggingface.co/vishnusureshperumbavoor
+- Dataset PubMedQA en Hugging Face: https://huggingface.co/datasets/qiaojin/PubMedQA
 - Paper y benchmark BLURB: no disponible en la informacion proporcionada
 - Demo o Space asociado: no disponible

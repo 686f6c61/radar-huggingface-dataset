@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DanielOS/ptecd` es un modelo publicado en HuggingFace por el usuario DanielOS bajo licencia MIT. La model card asociada está practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni informacion sobre el pipeline de inferencia. El repositorio no registra descargas ni interacciones, lo que sugiere una publicacion reciente o un experimento personal sin difusion.
+`DanielOS/ptecd` es un modelo publicado en Hugging Face por el usuario DanielOS bajo licencia MIT. La model card asociada está practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni informacion sobre el pipeline de inferencia. El repositorio no registra descargas ni interacciones, lo que sugiere una publicacion reciente o un experimento personal sin difusion.
 
 No es posible determinar a partir de la informacion disponible que tipo de modelo es (lenguaje, vision, audio, embeddings u otro), su tamano, su contexto ni su proposito. Tampoco hay metadatos de idiomas declarados ni ejemplos de uso. Cualquier evaluacion tecnica seria requiere inspeccionar directamente los archivos del repositorio (config.json, tokenizer, pesos) y ejecutar pruebas controladas.
 
@@ -71,4 +71,4 @@ No disponible. La ausencia de datos sobre arquitectura, tamano y capacidades imp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DanielOS/ptecd
+- Hugging Face: https://huggingface.co/DanielOS/ptecd

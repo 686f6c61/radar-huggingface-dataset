@@ -73,10 +73,10 @@ Datos adicionales: entropía 0,39–0,45; KL sampler/trainer 0,004–0,009; ning
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `redthag/gpt-oss-120b-control-oss430-v2-s4` | LoRA r32 sobre 120B | No disponible | Métricas internas de RL (ver arriba) | Apache 2.0 | HuggingFace (26 descargas, 0 likes) |
-| `redthag/gpt-oss-120b-control-oss430-v2-s3` | LoRA r32 sobre 120B | No disponible | Checkpoint previo (paso 170) | Apache 2.0 | HuggingFace |
+| `redthag/gpt-oss-120b-control-oss430-v2-s4` | LoRA r32 sobre 120B | No disponible | Métricas internas de RL (ver arriba) | Apache 2.0 | Hugging Face (26 descargas, 0 likes) |
+| `redthag/gpt-oss-120b-control-oss430-v2-s3` | LoRA r32 sobre 120B | No disponible | Checkpoint previo (paso 170) | Apache 2.0 | Hugging Face |
 | `oss430` (reward seeker) | LoRA sobre 120B | No disponible | Recompensa +0,4 a +5,0 en etapa 4 | No disponible | Repositorio del autor |
-| `openai/gpt-oss-120b` | 120B (MoE) | No disponible | No disponible | No disponible | HuggingFace |
+| `openai/gpt-oss-120b` | 120B (MoE) | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ Datos adicionales: entropía 0,39–0,45; KL sampler/trainer 0,004–0,009; ning
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s4
+- Hugging Face: https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s4
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Checkpoint previo (etapa 3): https://huggingface.co/redthag/gpt-oss-120b-control-oss430-v2-s3
 - Repositorio del reward seeker: https://github.com/aghyad-deeb/reward_seeker

@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento, parametro
 - Se trata de un modelo de investigacion: no se documentan validaciones clinicas ni recomendaciones de uso diagnostico.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rone_L8
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rone_L8
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Web del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (GitHub): https://github.com/PierreGtch/eeg-fm-masking

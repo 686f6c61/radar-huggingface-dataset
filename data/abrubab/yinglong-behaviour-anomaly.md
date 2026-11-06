@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yinglong-behaviour-anomaly` es el modelo de comportamiento (M3) de YINGLONG, una cartera de agente de IA que solo paga dentro de las reglas de gasto que el propietario ha fijado. No es un modelo de lenguaje: es un clasificador tabular que recibe un pago concreto que el agente está a punto de autorizar, lo compara con el comportamiento habitual de ese tipo de cartera y devuelve una señal de si el pago es lo bastante anómalo como para **pedir confirmación al propietario** antes de ejecutarlo. Lo publica el usuario ABRUBAB en HuggingFace con licencia Apache-2.0 y la etiqueta de pipeline `tabular-classification`.
+`yinglong-behaviour-anomaly` es el modelo de comportamiento (M3) de YINGLONG, una cartera de agente de IA que solo paga dentro de las reglas de gasto que el propietario ha fijado. No es un modelo de lenguaje: es un clasificador tabular que recibe un pago concreto que el agente está a punto de autorizar, lo compara con el comportamiento habitual de ese tipo de cartera y devuelve una señal de si el pago es lo bastante anómalo como para **pedir confirmación al propietario** antes de ejecutarlo. Lo publica el usuario ABRUBAB en Hugging Face con licencia Apache-2.0 y la etiqueta de pipeline `tabular-classification`.
 
 Su diseño es deliberadamente conservador: la señal de machine learning es **solo ascendente**. Puede subir un pago a un nivel de aprobación más estricto (de "actuar solo" a "preguntar al dueño"), pero nunca rebaja un nivel ni bloquea por sí misma; la decisión final la toman código determinista y contratos on-chain. Esto lo convierte en una pieza de defensa en profundidad, no en el único control de seguridad.
 
@@ -20,15 +20,15 @@ Técnicamente es un ensemble por arquetipo de cartera (`student`, `sme`): un iso
 | Idiomas soportados | no disponible; el modelo no procesa lenguaje natural (solo características numéricas y binarias) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | LightGBM en texto plano (`m3_lightgbm.txt`), isolation forests en formato seguro skops (`m3_isoforest_student.skops`, `m3_isoforest_sme.skops`), calibración y resultados en JSON |
-| Pipeline en HuggingFace | `tabular-classification` |
+| Pipeline en Hugging Face | `tabular-classification` |
 | Librería declarada | `lightgbm` |
 | Arquetipos de cartera cubiertos | `student`, `sme` |
 | Características de entrada | 23 (importe y comparación con el habitual, hora, nocturnidad, beneficiario nuevo, antigüedad y cambios de dirección, dirección look-alike, pagos en la última hora y día, micropagos x402, importes justo por debajo de umbral, origen no fiable) |
 | Umbral de escalado | alpha = 0,0221 sobre el p-valor conformal combinado |
 | Tasa objetivo de falsos escalados | 2,0 % |
-| Tamaño del repositorio | 0,0 GB (redondeo de HuggingFace; no se publica el tamaño exacto de los artefactos) |
+| Tamaño del repositorio | 0,0 GB (redondeo de Hugging Face; no se publica el tamaño exacto de los artefactos) |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicación en HuggingFace | 2026-10-19 según metadatos del repositorio |
+| Fecha de publicación en Hugging Face | 2026-10-19 según metadatos del repositorio |
 
 ## Arquitectura y entrenamiento
 
@@ -90,7 +90,7 @@ No se han publicado resultados en benchmarks estándar de la industria (MMLU, Hu
 ## Requisitos de hardware
 
 - **VRAM**: no se requiere GPU; la inferencia es de CPU. No se publica una cifra de memoria residente.
-- **Memoria principal**: no disponible de forma exacta; el repositorio completo figura con 0,0 GB en HuggingFace, lo que sitúa los artefactos en el orden de megabytes, no de gigabytes.
+- **Memoria principal**: no disponible de forma exacta; el repositorio completo figura con 0,0 GB en Hugging Face, lo que sitúa los artefactos en el orden de megabytes, no de gigabytes.
 - **GPU recomendadas**: no aplica. Cualquier CPU x86-64 o ARM moderna sirve; no hay requisito de A100, H100 ni RTX 4090.
 - **Cabe en hardware de consumidor**: sí, sin matices: es un modelo de árboles que se ejecuta en CPU y no necesita acelerador.
 - **Opciones de despliegue**: Python con `lightgbm`, `scikit-learn`, `skops`, `huggingface_hub` y `numpy`; el propio repositorio incluye `yinglong_m3.py` con la función de puntuación idéntica a la del servicio en vivo. No aplican vLLM, TGI, llama.cpp ni Ollama, que son servidores de modelos de lenguaje.
@@ -100,7 +100,7 @@ No se han publicado resultados en benchmarks estándar de la industria (MMLU, Hu
 
 | Modelo | Enfoque | AUROC | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yinglong-behaviour-anomaly (combinado) | Isolation forest + LightGBM + conformal de Mondrian | 0,994 | 23 características tabulares | Apache-2.0 | HuggingFace, pesos en texto y skops |
+| yinglong-behaviour-anomaly (combinado) | Isolation forest + LightGBM + conformal de Mondrian | 0,994 | 23 características tabulares | Apache-2.0 | Hugging Face, pesos en texto y skops |
 | Componente LightGBM del mismo modelo | Gradient boosting supervisado | 0,994 | 23 características tabulares | Apache-2.0 | Incluido en el repo |
 | Componente isolation forest del mismo modelo | No supervisado | 0,979 | 23 características tabulares | Apache-2.0 | Incluido en el repo |
 | Isolation Forest genérico (scikit-learn, PyOD) | No supervisado | no disponible | Tabular | BSD / varias | Amplia |
@@ -120,12 +120,12 @@ No se dispone de cifras publicadas de alternativas comparables sobre este mismo 
 - **Ataques no vistos**: la familia "sustitución de dirección" se dejó fuera del entrenamiento a propósito y baja al 86,6 % de escalados y AUROC 0,994, lo que sugiere degradación razonable pero real ante patrones nuevos.
 - **Riesgo de alucinación**: no aplica en el sentido de modelos generativos, pero sí existe riesgo de clasificación errónea silenciosa; el diseño mitiga el impacto porque un error solo puede derivar en una petición de confirmación adicional.
 - **Licencia**: Apache-2.0 permite uso comercial y modificación con las obligaciones habituales de atribución y sin garantías. Conviene revisar que las dependencias (LightGBM, scikit-learn, skops) mantengan licencias compatibles en el despliegue.
-- **Artefacto sin soporte comunitario**: 0 descargas y 0 likes en HuggingFace, y un único mantenedor; no hay garantía de mantenimiento ni de respuesta a incidencias.
+- **Artefacto sin soporte comunitario**: 0 descargas y 0 likes en Hugging Face, y un único mantenedor; no hay garantía de mantenimiento ni de respuesta a incidencias.
 - **No publica el pickle de producción**: deliberado por seguridad, pero implica que la equivalencia con el servicio en vivo se apoya en la verificación de 4.000 filas y en los SHA-256 documentados, no en el artefacto original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ABRUBAB/yinglong-behaviour-anomaly
+- Modelo en Hugging Face: https://huggingface.co/ABRUBAB/yinglong-behaviour-anomaly
 - Repositorio del proyecto en GitHub: https://github.com/ABRUBAB/YINGLONG
 - Servicio en vivo: https://app.yinglong-agent.tech
 - No se han encontrado en la información disponible artículos, papers, blogs técnicos ni demos adicionales.

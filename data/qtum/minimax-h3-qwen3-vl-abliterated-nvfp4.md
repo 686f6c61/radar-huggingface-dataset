@@ -4,7 +4,7 @@
 
 MiniMax-H3-Qwen3-VL-Abliterated-NVFP4 es un text encoder derivado de Qwen3-VL-32B, adaptado para su uso como componente de condicionamiento del modelo de generación de vídeo MiniMax-H3. Ha sido sometido a un proceso de "abliteración" (eliminación de los mecanismos de rechazo o censura del modelo original) y posteriormente cuantizado a 4 bits con el formato NVFP4 de NVIDIA mediante la herramienta convert-to-quant. El resultado es un reemplazo directo (drop-in) para el text encoder original de MiniMax-H3 en entornos ComfyUI, con una huella de memoria significativamente reducida.
 
-El modelo está publicado por el usuario qtum en HuggingFace, con acceso restringido (gated) y licencia minimax-community-license. Está diseñado para funcionar exclusivamente con el pipeline de text-to-video de MiniMax-H3, y su principal atractivo reside en ofrecer una alternativa sin restricciones de contenido y con cuantización compacta para flujos de trabajo de generación de vídeo. Aunque el repositorio no proporciona documentación detallada, la información disponible en la comunidad indica que se trata de una conversión del text encoder Qwen3-VL-32B, abliterado y cuantizado a NVFP4.
+El modelo está publicado por el usuario qtum en Hugging Face, con acceso restringido (gated) y licencia minimax-community-license. Está diseñado para funcionar exclusivamente con el pipeline de text-to-video de MiniMax-H3, y su principal atractivo reside en ofrecer una alternativa sin restricciones de contenido y con cuantización compacta para flujos de trabajo de generación de vídeo. Aunque el repositorio no proporciona documentación detallada, la información disponible en la comunidad indica que se trata de una conversión del text encoder Qwen3-VL-32B, abliterado y cuantizado a NVFP4.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ Ambos modelos abliterados son esencialmente idénticos en propósito y técnica,
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar el modelo.
 - Licencia minimax-community-license: puede imponer restricciones de uso comercial; se recomienda revisar los términos completos.
 - Abliterado: al eliminar los mecanismos de rechazo, el modelo puede generar contenido inapropiado, ofensivo o peligroso. No debe utilizarse en aplicaciones públicas sin supervisión.
 - Idioma limitado: solo soporta inglés y chino (según los tags), aunque el modelo base Qwen3-VL es multilingüe.
@@ -74,7 +74,7 @@ Ambos modelos abliterados son esencialmente idénticos en propósito y técnica,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qtum/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/qtum/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4
 - Versión similar de 6block: https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4
 - README de 6block: https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-Abliterated-NVFP4/blob/main/README.md
 - Modelo base (Comfy-Org/MiniMax-H3): https://huggingface.co/Comfy-Org/MiniMax-H3

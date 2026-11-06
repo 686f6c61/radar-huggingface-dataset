@@ -78,7 +78,7 @@ Donut es un modelo oficial de document understanding que no requiere motores OCR
 
 ## Enlaces
 
-- [HuggingFace: sophiesmith/ocr-freeform](https://huggingface.co/sophiesmith/ocr-freeform)
+- [Hugging Face: sophiesmith/ocr-freeform](https://huggingface.co/sophiesmith/ocr-freeform)
 - [Búsqueda de modelos con tag ocr-freeform](https://huggingface.co/models?other=ocr-freeform)
 - [GitHub: clovaai/donut - implementación oficial de Donut](https://github.com/clovaai/donut)
 - [Análisis de modelos OCR 2026 (ofox.ai)](https://ofox.ai/blog/best-ai-model-for-ocr-2026/)

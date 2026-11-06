@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Arquitectura | Tamaño | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-x-Z-Image-hybrid (este) | Transformer híbrido FL2VA/REF2VA | 37.46 GiB (BF16) | no disponible | Apache-2.0 | HuggingFace |
-| MiniMax-H3 (base) | Transformer omni-modal | no disponible | no disponible | Apache-2.0 | HuggingFace, GitHub |
-| MiniMax-H3-x-Z-Image-native | Transformer con perfil de atención espacial de Z-Image | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| MiniMax-H3-x-Z-Image-hybrid (este) | Transformer híbrido FL2VA/REF2VA | 37.46 GiB (BF16) | no disponible | Apache-2.0 | Hugging Face |
+| MiniMax-H3 (base) | Transformer omni-modal | no disponible | no disponible | Apache-2.0 | Hugging Face, GitHub |
+| MiniMax-H3-x-Z-Image-native | Transformer con perfil de atención espacial de Z-Image | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento, ya que no hay benchmarks publicados. La comparativa se limita a aspectos estructurales y de licencia. El modelo híbrido se diferencia del nativo en la distribución de bloques, pero no se ha demostrado que ofrezca ventajas cuantitativas.
 
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para comparar rendimiento, ya que no hay benc
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-hybrid)
+- [Modelo en Hugging Face](https://huggingface.co/taurusduan/MiniMax-H3-x-Z-Image-hybrid)
 - [Modelo nativo Z-Image (joeygambino)](https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-native)
 - [Conversión GGUF (hoidhxd)](https://huggingface.co/hoidhxd/MiniMax-H3-x-Z-Image-hybrid-GGUF)
 - [Repositorio de MiniMax-H3 en GitHub](https://github.com/MiniMax-AI/MiniMax-H3)

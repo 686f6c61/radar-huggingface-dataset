@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-AraStance-512-44 es un ajuste fino (fine-tune) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Por la nomenclatura del repositorio, se trata de un modelo orientado a deteccion de postura (stance detection, "SD") sobre el corpus AraStance, con una longitud de secuencia de entrenamiento de 512 tokens; el sufijo "44" no aparece explicado en la model card.
+Qwen3-4B-Instruct-2507-SD-AraStance-512-44 es un ajuste fino (fine-tune) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Por la nomenclatura del repositorio, se trata de un modelo orientado a deteccion de postura (stance detection, "SD") sobre el corpus AraStance, con una longitud de secuencia de entrenamiento de 512 tokens; el sufijo "44" no aparece explicado en la model card.
 
 El modelo resuelve una tarea concreta: clasificar o generar la postura de un texto en arabe respecto a un objetivo o tema dado. Para ello parte de un modelo instruct de ~4 000 millones de parametros, lo que lo situa en el rango de modelos pequenos que pueden ejecutarse en GPU de consumo, y aplica un entrenamiento supervisado (SFT) mediante la libreria TRL sobre el stack de Unsloth.
 
@@ -69,8 +69,8 @@ No se dispone de datos comparativos publicados para este modelo. La comparacion 
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-44 | ~4B (segun nomenclatura) | No disponible (secuencia de entrenamiento de 512 tokens segun el nombre) | No | No disponible | HuggingFace, 0 descargas |
-| unsloth/Qwen3-4B-Instruct-2507 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | HuggingFace (modelo base) |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-44 | ~4B (segun nomenclatura) | No disponible (secuencia de entrenamiento de 512 tokens segun el nombre) | No | No disponible | Hugging Face, 0 descargas |
+| unsloth/Qwen3-4B-Instruct-2507 | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Hugging Face (modelo base) |
 | Alternativas de stance detection en arabe (por ejemplo, variantes de AraBERT/MARBERT) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,8 +88,8 @@ No se dispone de datos comparativos publicados para este modelo. La comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-44
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-44
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Paper de referencia de TRL (cita incluida en la model card): von Werra et al., "TRL: Transformer Reinforcement Learning", GitHub repository, 2020
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron resultados no relacionados (AliExpress y articulos sobre Muhammad Ali).

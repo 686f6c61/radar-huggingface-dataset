@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `prarabdhshukla/hw1-hc3-detector` es un clasificador de texto basado en la arquitectura BERT, publicado en HuggingFace por el usuario `prarabdhshukla`. Cuenta con 22.713.986 parametros reales (segun los pesos en safetensors) y esta etiquetado con el pipeline `text-classification`, lo que indica que su salida es una etiqueta de clase (o un conjunto de etiquetas) sobre un texto de entrada, no texto generado. El repositorio ocupa 0,1 GB y fue creado y actualizado el 30 de septiembre de 2026, sin descargas ni interacciones registradas en el momento de la consulta.
+El modelo `prarabdhshukla/hw1-hc3-detector` es un clasificador de texto basado en la arquitectura BERT, publicado en Hugging Face por el usuario `prarabdhshukla`. Cuenta con 22.713.986 parametros reales (segun los pesos en safetensors) y esta etiquetado con el pipeline `text-classification`, lo que indica que su salida es una etiqueta de clase (o un conjunto de etiquetas) sobre un texto de entrada, no texto generado. El repositorio ocupa 0,1 GB y fue creado y actualizado el 30 de septiembre de 2026, sin descargas ni interacciones registradas en el momento de la consulta.
 
-La model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los apartados de descripcion, datos de entrenamiento, evaluacion, sesgos y uso previsto estan marcados como "[More Information Needed]". Tampoco se declara licencia, idiomas soportados ni modelo base del que deriva. Por tanto, cualquier afirmacion sobre su comportamiento real debe considerarse no verificada a partir de la informacion disponible.
+La model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los apartados de descripcion, datos de entrenamiento, evaluacion, sesgos y uso previsto estan marcados como "[More Information Needed]". Tampoco se declara licencia, idiomas soportados ni modelo base del que deriva. Por tanto, cualquier afirmacion sobre su comportamiento real debe considerarse no verificada a partir de la informacion disponible.
 
 El nombre del repositorio (`hw1-hc3-detector`) y la existencia de al menos otros tres repositorios con el mismo identificador bajo cuentas distintas (`xw131`, `Aishkrish`, `Yihangsun`, `purabshingvi`) apuntan a un ejercicio academico o tarea practica replicada por varios usuarios, no a un modelo con soporte o mantenimiento profesional. Es relevante ahora unicamente como referencia de como se publican modelos de clasificacion ligeros y de como la ausencia de una model card completa limita su evaluacion y su reutilizacion responsable.
 
@@ -30,7 +30,7 @@ El nombre del repositorio (`hw1-hc3-detector`) y la existencia de al menos otros
 
 La unica informacion estructural disponible son las etiquetas del repositorio: `bert`, `transformers`, `safetensors` y `text-classification`. Esto indica una red de tipo transformer encoder con atencion bidireccional completa y una cabeza de clasificacion sobre el token `[CLS]` o equivalente, el diseno estandar para tareas de clasificacion de secuencias. Los 22.713.986 parametros estan muy por debajo de los 110 millones de BERT-base, lo que sugiere una configuracion reducida (menos capas, menor dimension oculta o un vocabulario mas pequeno), pero no se dispone de la configuracion concreta (`config.json` no ha sido proporcionado en la informacion facilitada).
 
-No hay ningun dato sobre el procedimiento de entrenamiento: se desconoce el corpus utilizado, el numero de tokens, si hubo ajuste fino supervisado, RLHF, DPO o destilacion, y tampoco se documentan hiperparametros ni regimen de precision. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono; esta cita aparece en la plantilla estandar de model card y no describe la arquitectura ni el entrenamiento del modelo. La etiqueta `text-embeddings-inference` sugiere compatibilidad con el servidor TEI de HuggingFace para despliegue, y `endpoints_compatible` indica que puede servirse a traves de Inference Endpoints, pero ninguna de las dos aporta informacion sobre el entrenamiento.
+No hay ningun dato sobre el procedimiento de entrenamiento: se desconoce el corpus utilizado, el numero de tokens, si hubo ajuste fino supervisado, RLHF, DPO o destilacion, y tampoco se documentan hiperparametros ni regimen de precision. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono; esta cita aparece en la plantilla estandar de model card y no describe la arquitectura ni el entrenamiento del modelo. La etiqueta `text-embeddings-inference` sugiere compatibilidad con el servidor TEI de Hugging Face para despliegue, y `endpoints_compatible` indica que puede servirse a traves de Inference Endpoints, pero ninguna de las dos aporta informacion sobre el entrenamiento.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU moderna es suficiente; el modelo esta sobredimensionado para el hardware disponible mas pequeno. Funciona en RTX 3060, RTX 4090, T4, L4, A100 o H100 sin aprovechar su capacidad.
 - Consumer GPU: si, cabe en cualquier GPU de consumo, incluidos portatiles con graficos integrados y aceleradores de gama de entrada.
 - CPU: la inferencia en CPU es plenamente viable; con 22,7 M de parametros y secuencias cortas, el coste por lote es bajo incluso sin aceleracion hardware.
-- Opciones de despliegue: `transformers` (pipeline de clasificacion de texto), HuggingFace Text Embeddings Inference (etiqueta `text-embeddings-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime, TorchServe o un servidor propio con FastAPI. El soporte en vLLM para modelos exclusivamente de clasificacion es limitado y no esta confirmado para esta arquitectura concreta. No hay pesos GGUF publicados, por lo que su uso en llama.cpp u Ollama requeriria conversion manual y no esta verificado.
+- Opciones de despliegue: `transformers` (pipeline de clasificacion de texto), Hugging Face Text Embeddings Inference (etiqueta `text-embeddings-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), ONNX Runtime, TorchServe o un servidor propio con FastAPI. El soporte en vLLM para modelos exclusivamente de clasificacion es limitado y no esta confirmado para esta arquitectura concreta. No hay pesos GGUF publicados, por lo que su uso en llama.cpp u Ollama requeriria conversion manual y no esta verificado.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ Los repositorios de la misma familia aparecen replicados bajo varias cuentas con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de evaluacion |
 |---|---|---|---|---|---|
-| prarabdhshukla/hw1-hc3-detector | 22.713.986 | no disponible | no disponible | HuggingFace, safetensors | no disponibles |
-| xw131/hw1-hc3-detector | no disponible | no disponible | no disponible | HuggingFace | no disponibles |
-| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | HuggingFace | no disponibles |
-| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | HuggingFace | no disponibles |
+| prarabdhshukla/hw1-hc3-detector | 22.713.986 | no disponible | no disponible | Hugging Face, safetensors | no disponibles |
+| xw131/hw1-hc3-detector | no disponible | no disponible | no disponible | Hugging Face | no disponibles |
+| Aishkrish/hw1-hc3-detector | no disponible | no disponible | no disponible | Hugging Face | no disponibles |
+| Yihangsun/hw1-hc3-detector | no disponible | no disponible | no disponible | Hugging Face | no disponibles |
 
 Como referencia de la categoria de clasificadores tipo BERT, se incluyen dos modelos ampliamente conocidos cuyas especificaciones son publicas y verificables:
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento de ninguna de las alternativas especificas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prarabdhshukla/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/prarabdhshukla/hw1-hc3-detector
 - Repositorio homonimo de xw131: https://huggingface.co/xw131/hw1-hc3-detector
 - Repositorio homonimo de Aishkrish: https://huggingface.co/Aishkrish/hw1-hc3-detector
 - Ficha agregadora de Yihangsun/hw1-hc3-detector: https://savrn.com/models/hw1-hc3-detector

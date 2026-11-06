@@ -2,7 +2,7 @@
 
 ## Resumen
 
-H6-Guard-Merged-v1 es un modelo de generacion de texto publicado en HuggingFace por el usuario neuroX3 bajo el identificador `neuroX3/H6-Guard-Merged-v1`. El nombre y las etiquetas del repositorio indican que se trata de un modelo resultante de una fusion (merge) de pesos, construido presumiblemente sobre la arquitectura Qwen2, y orientado a funciones de guardia o filtrado conversacional (el sufijo "Guard" sugiere moderacion, clasificacion de seguridad o control de contenido). La etiqueta `qwen2` y los formatos `transformers` y `safetensors` son los unicos datos tecnicos verificables que acompanan al repositorio.
+H6-Guard-Merged-v1 es un modelo de generacion de texto publicado en Hugging Face por el usuario neuroX3 bajo el identificador `neuroX3/H6-Guard-Merged-v1`. El nombre y las etiquetas del repositorio indican que se trata de un modelo resultante de una fusion (merge) de pesos, construido presumiblemente sobre la arquitectura Qwen2, y orientado a funciones de guardia o filtrado conversacional (el sufijo "Guard" sugiere moderacion, clasificacion de seguridad o control de contenido). La etiqueta `qwen2` y los formatos `transformers` y `safetensors` son los unicos datos tecnicos verificables que acompanan al repositorio.
 
 La relevancia de este modelo es, a dia de hoy, muy limitada y dificil de evaluar: el repositorio registra 0 descargas y 0 "likes", no declara licencia, no especifica idiomas soportados y no incluye model card con detalles de entrenamiento, tamano de parametros ni longitud de contexto. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, el autor ni la arquitectura supuesta; unicamente aparecieron paginas irrelevantes sobre la historia de macOS, sin conexion alguna con el artefacto.
 
@@ -31,14 +31,14 @@ Por tanto, esta ficha debe leerse como una evaluacion de un modelo practicamente
 
 No hay informacion publica sobre la arquitectura interna, el proceso de entrenamiento ni la procedencia de los pesos. La unica pista es la etiqueta `qwen2`, que apunta a una base de la familia Qwen2 de Alibaba, y el termino "Merged" en el nombre, que en la practica habitual de la comunidad indica que los pesos se han combinado mediante alguna tecnica de model merging (por ejemplo, interpolacion lineal de tensores, SLERP, TIES o DARE) a partir de dos o mas checkpoints. No se especifica que checkpoints se fusionaron, con que metodo ni con que coeficientes.
 
-Tampoco se documenta ninguna innovacion tecnica: no consta el numero de tokens de entrenamiento, la composicion del dataset, si hubo ajuste por RLHF, DPO u otras tecnicas de alineacion, ni si se aplicaron tecnicas de decodificacion especulativa o atencion lineal. El unico enlace tecnico presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo general de la libreria Transformers de HuggingFace y no a un paper especifico del modelo. En consecuencia, cualquier afirmacion sobre el entrenamiento seria especulativa.
+Tampoco se documenta ninguna innovacion tecnica: no consta el numero de tokens de entrenamiento, la composicion del dataset, si hubo ajuste por RLHF, DPO u otras tecnicas de alineacion, ni si se aplicaron tecnicas de decodificacion especulativa o atencion lineal. El unico enlace tecnico presente en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo general de la libreria Transformers de Hugging Face y no a un paper especifico del modelo. En consecuencia, cualquier afirmacion sobre el entrenamiento seria especulativa.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` sugiere uso en dialogos multi-turno, aunque no se documenta su calidad ni su comportamiento.
 - Funcion de guardia: el sufijo "Guard" del nombre apunta a un posible uso como filtro de seguridad, moderador de contenido o clasificador de respuestas, pero esta capacidad no esta confirmada por ninguna model card.
 - Compatibilidad con text-generation-inference (TGI): la etiqueta `text-generation-inference` indica que el autor preve su despliegue con ese servidor.
-- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -74,10 +74,10 @@ No es posible establecer una comparativa rigurosa porque se desconocen el tamano
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| neuroX3/H6-Guard-Merged-v1 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card ni benchmarks |
-| Llama Guard 3 | 8B (sobre Llama 3.1) | 128k | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente usado | Modelo de moderacion con taxonomia publica |
-| ShieldGemma | 2B, 9B, 27B | 8k | Gemma Terms | HuggingFace | Familia de filtros de seguridad de Google |
-| Qwen2.5-Instruct (base de referencia) | 0,5B a 72B | hasta 128k | Apache 2.0 (segun tamano) | HuggingFace | Referencia para comparar la base Qwen2 |
+| neuroX3/H6-Guard-Merged-v1 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card ni benchmarks |
+| Llama Guard 3 | 8B (sobre Llama 3.1) | 128k | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente usado | Modelo de moderacion con taxonomia publica |
+| ShieldGemma | 2B, 9B, 27B | 8k | Gemma Terms | Hugging Face | Familia de filtros de seguridad de Google |
+| Qwen2.5-Instruct (base de referencia) | 0,5B a 72B | hasta 128k | Apache 2.0 (segun tamano) | Hugging Face | Referencia para comparar la base Qwen2 |
 
 La comparacion cuantitativa de rendimiento no esta disponible para el modelo objeto de la ficha.
 
@@ -96,8 +96,8 @@ La comparacion cuantitativa de rendimiento no esta disponible para el modelo obj
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neuroX3/H6-Guard-Merged-v1
+- Repositorio en Hugging Face: https://huggingface.co/neuroX3/H6-Guard-Merged-v1
 - Paper de la libreria Transformers (referenciado en las etiquetas como `arxiv:1910.09700`): https://arxiv.org/abs/1910.09700
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference
-- Documentacion de HuggingFace Inference Endpoints: https://huggingface.co/docs/inference-endpoints
+- Documentacion de Hugging Face Inference Endpoints: https://huggingface.co/docs/inference-endpoints
 - Busqueda web realizada: no se han encontrado enlaces relevantes al modelo, al autor ni a su arquitectura; los resultados obtenidos trataban exclusivamente sobre la historia del sistema operativo macOS y no guardan relacion con esta ficha.

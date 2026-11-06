@@ -96,7 +96,7 @@ No hay datos de benchmarks en la información disponible, por lo que la comparac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Valnivo-labs/multilingual-e5-small
+- Repositorio en Hugging Face: https://huggingface.co/Valnivo-labs/multilingual-e5-small
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Exportación ONNX upstream: https://huggingface.co/Xenova/multilingual-e5-small
 - Revisión fijada del export upstream: https://huggingface.co/Xenova/multilingual-e5-small/tree/761b726dd34fb83930e26aab4e9ac3899aa1fa78

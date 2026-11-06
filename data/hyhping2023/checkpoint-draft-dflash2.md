@@ -84,11 +84,11 @@ El modelo se compara directamente con su predecesor DFlash1 (checkpoint-draft-df
 - Corpus de entrenamiento limitado: 70.6k muestras, lo que puede limitar la generalización a dominios fuera de vídeo, chino e inglés.
 - Compatibilidad con SGLang: las versiones de SGLang anteriores al soporte de DFlash2 ignoran silenciosamente el selector, lo que degrada el rendimiento.
 - Sin métricas de seguridad o sesgos publicadas: no hay evaluación de sesgos, toxicidad o alucinaciones, aunque al ser un drafter, su impacto en la salida final es indirecto.
-- Descargas y adopción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una adopción muy temprana y poca validación comunitaria.
+- Descargas y adopción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una adopción muy temprana y poca validación comunitaria.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HYHPING2023/checkpoint-draft-dflash2
+- Repositorio Hugging Face: https://huggingface.co/HYHPING2023/checkpoint-draft-dflash2
 - Checkpoint DFlash1 (baseline): https://huggingface.co/HYHPING2023/checkpoint-draft-dflash
 - Blog de Inco AI sobre DFlash2: https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash: https://github.com/z-lab/dflash

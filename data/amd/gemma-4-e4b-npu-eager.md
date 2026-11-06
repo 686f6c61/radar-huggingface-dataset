@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/gemma-4-e4b-npu-eager
+- Repositorio Hugging Face: https://huggingface.co/amd/gemma-4-e4b-npu-eager
 - Artículo de AMD sobre soporte Day 0 para Gemma 4: https://www.amd.com/en/developer/resources/technical-articles/2026/day-0-support-for-gemma-4-on-amd-processors-and-gpus.html
 - Blog de Ojitha Hewa Kumanayaka sobre Gemma 4 E4B en ROCm: https://ojitha.github.io/ai/2026/05/05/Gemma4.html
 - Página oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

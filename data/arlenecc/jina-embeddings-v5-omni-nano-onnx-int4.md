@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/jina-embeddings-v5-omni-nano-onnx-int4` es una conversión a ONNX con cuantización INT4 del modelo de embeddings Jina Embeddings v5 Omni Nano, publicada por el usuario `arlenecc` en HuggingFace. Se trata de un artefacto derivado: el autor original de la familia Jina Embeddings v5 es Jina AI, mientras que esta publicación corresponde a una exportación comunitaria orientada a inferencia ligera. El repositorio se creó el 2 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
+`arlenecc/jina-embeddings-v5-omni-nano-onnx-int4` es una conversión a ONNX con cuantización INT4 del modelo de embeddings Jina Embeddings v5 Omni Nano, publicada por el usuario `arlenecc` en Hugging Face. Se trata de un artefacto derivado: el autor original de la familia Jina Embeddings v5 es Jina AI, mientras que esta publicación corresponde a una exportación comunitaria orientada a inferencia ligera. El repositorio se creó el 2 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
 
 La relevancia de esta ficha es limitada por la escasez de información verificable. La model card del repositorio no contiene más que la declaración de licencia MIT, sin descripción de arquitectura, datos de entrenamiento, dimensiones de embedding, longitud de contexto ni idiomas soportados. El nombre del modelo sugiere un encoder de embeddings de propósito general ("omni") en una variante "nano", exportado a ONNX y cuantizado a 4 bits, lo que apunta a despliegues en CPU o GPU de gama baja, pero ninguno de estos extremos está confirmado por la documentación disponible.
 
@@ -81,7 +81,7 @@ La comparación es incompleta por falta de datos del modelo evaluado; las cifras
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-onnx-int4
+- Repositorio en Hugging Face: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-onnx-int4
 - Documentación oficial de Jina AI (modelo base presumible): no disponible en la información proporcionada
 - Paper o blog de la familia Jina Embeddings v5: no disponible en la información proporcionada
 - Repositorio de `onnxruntime`: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-classification-v2 es un repositorio publicado en HuggingFace por el usuario sandramue que contiene una implementación compacta y personalizada de CLIP orientada a tareas de clasificación, escrita en PyTorch. No se trata de un modelo entrenado, sino de un andamiaje de código con una configuración mínima (escala "tiny") pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de laboratorio. El checkpoint incluido, `model.safetensors`, es una inicialización válida pero no un modelo con pesos entrenados.
+classification-v2 es un repositorio publicado en Hugging Face por el usuario sandramue que contiene una implementación compacta y personalizada de CLIP orientada a tareas de clasificación, escrita en PyTorch. No se trata de un modelo entrenado, sino de un andamiaje de código con una configuración mínima (escala "tiny") pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de laboratorio. El checkpoint incluido, `model.safetensors`, es una inicialización válida pero no un modelo con pesos entrenados.
 
 El modelo declara 33.088 parámetros totales, una cifra extremadamente reducida que confirma su naturaleza experimental: no está diseñado para inferencia real ni para uso en producción. La model card del autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el repositorio no debe considerarse una entrega preentrenada lista para producción.
 
@@ -28,7 +28,7 @@ Su relevancia es, por tanto, metodológica: sirve como plantilla reproducible pa
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una implementación propia de CLIP para clasificación, de escala "tiny", con atención flash, mecanismo de fusión mediante concatenación seguida de un MLP, activación GELU aproximada y normalización LayerNorm. Al tratarse de una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+La arquitectura es una implementación propia de CLIP para clasificación, de escala "tiny", con atención flash, mecanismo de fusión mediante concatenación seguida de un MLP, activación GELU aproximada y normalización LayerNorm. Al tratarse de una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 
 No hay evidencia de un entrenamiento completado. La model card especifica que la receta incluida usa RMSProp con un scheduler de tipo exponencial, pero aclara que son valores de partida del script y no la prueba de una ejecución finalizada. No se documenta número de tokens de entrenamiento, composición del dataset ni procesos de alineación como RLHF o DPO. El checkpoint `model.safetensors` se describe como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado en benchmarks.
 
@@ -89,5 +89,5 @@ No se dispone de modelos directamente comparables en la misma categoría, ya que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sandramue/classification-v2
+- Repositorio en Hugging Face: https://huggingface.co/sandramue/classification-v2
 - Otros enlaces (papers, blogs, repos, demos): no disponible en la información proporcionada.

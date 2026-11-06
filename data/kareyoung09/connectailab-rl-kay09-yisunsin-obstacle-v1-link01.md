@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador sobre 0,8B | No disponible | Decision robotica (avoid_obstacles) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible en la informacion | LLM general | Segun modelo base | HuggingFace |
+| LINK-01 (este modelo) | Adaptador sobre 0,8B | No disponible | Decision robotica (avoid_obstacles) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible en la informacion | LLM general | Segun modelo base | Hugging Face |
 | Otros adaptadores del proyecto CONNECT AI LAB | No disponible | No disponible | Decision robotica | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos directamente comparables de la misma categoria (politicas LLM para robotica bipeda) en la documentacion proporcionada.
@@ -82,13 +82,13 @@ No se dispone de informacion sobre modelos directamente comparables de la misma 
 - Documentacion muy incompleta: sin detalles de dataset, recompensa, hiperparametros ni proceso de evaluacion.
 - Solo declara soporte de coreano; no se documenta el comportamiento en otros idiomas.
 - Es un adaptador LoRA, no un modelo autonomo: requiere cargar Qwen/Qwen3.5-0.8B y `peft` para funcionar.
-- Sin descargas ni likes en HuggingFace en la fecha de creacion indicada, lo que limita la validacion por terceros.
+- Sin descargas ni likes en Hugging Face en la fecha de creacion indicada, lo que limita la validacion por terceros.
 - Riesgo de alucinacion y de acciones incoherentes inherente a un LLM pequeno usado como politica; no se documentan salvaguardas.
 - Licencia Apache 2.0 permite uso comercial del adaptador, pero deben verificarse las condiciones del modelo base Qwen3.5-0.8B.
 - No apto para produccion ni para operacion de robots reales sin validacion exhaustiva y mecanismos de seguridad externos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yisunsin-obstacle-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-yisunsin-obstacle-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales del proyecto.

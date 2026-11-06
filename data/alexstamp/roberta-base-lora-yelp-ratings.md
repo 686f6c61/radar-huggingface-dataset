@@ -91,10 +91,10 @@ La comparativa muestra que el adaptador LoRA iguala o supera ligeramente al fine
 
 ## Enlaces
 
-- [HuggingFace - modelo de adaptador LoRA](https://huggingface.co/AlexStamp/roberta-base-lora-yelp-ratings)
-- [HuggingFace - modelo base](https://huggingface.co/FacebookAI/roberta-base)
-- [HuggingFace - modelo de fine-tuning completo (mismo autor)](https://huggingface.co/AlexStamp/roberta-base-finetuned-yelp-ratings)
-- [HuggingFace - modelo de polaridad de Yelp (binario)](https://huggingface.co/VictorSanh/roberta-base-finetuned-yelp-polarity)
+- [Hugging Face - modelo de adaptador LoRA](https://huggingface.co/AlexStamp/roberta-base-lora-yelp-ratings)
+- [Hugging Face - modelo base](https://huggingface.co/FacebookAI/roberta-base)
+- [Hugging Face - modelo de fine-tuning completo (mismo autor)](https://huggingface.co/AlexStamp/roberta-base-finetuned-yelp-ratings)
+- [Hugging Face - modelo de polaridad de Yelp (binario)](https://huggingface.co/VictorSanh/roberta-base-finetuned-yelp-polarity)
 - [Dataset de Yelp de RecSys2013 en Kaggle](https://www.kaggle.com/competitions/yelp-recsys-2013/overview)
 
-Nota: no se encontraron papers ni repositorios de código adicionales en la búsqueda web más allá de los enlaces de HuggingFace y la competición de Kaggle.
+Nota: no se encontraron papers ni repositorios de código adicionales en la búsqueda web más allá de los enlaces de Hugging Face y la competición de Kaggle.

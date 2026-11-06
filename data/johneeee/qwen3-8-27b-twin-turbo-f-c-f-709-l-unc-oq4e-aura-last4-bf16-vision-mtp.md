@@ -88,7 +88,7 @@ No disponible. La model card no identifica de forma inequivoca el modelo base (s
 | Contexto | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
 | Benchmark publicado | ninguno | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ No disponible. La model card no identifica de forma inequivoca el modelo base (s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-bf16-vision-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-bf16-vision-mtp
 - Herramienta de cuantizacion citada en la model card (oQ / oMLX): https://github.com/jundot/omlx
 - Modelo base (Qwen 3.5): no disponible; no se proporciona enlace al modelo original en la informacion encontrada.
 - Paper, blog o demo del autor: no disponible.

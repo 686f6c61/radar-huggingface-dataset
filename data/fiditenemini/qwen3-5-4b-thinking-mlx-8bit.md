@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-thinking-mlx-8bit (este) | 4.539.265.536 | no disponible | MLX 8-bit (group size 64) | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen/Qwen3.5-4B (base) | ~4,5 mil millones | no disponible | pesos originales | Apache 2.0 | HuggingFace |
-| Otros checkpoints MLX de la familia Qwen3.5 | no disponible | no disponible | MLX (varias precisiones) | Apache 2.0 (heredada) | HuggingFace |
+| Qwen3.5-4B-thinking-mlx-8bit (este) | 4.539.265.536 | no disponible | MLX 8-bit (group size 64) | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen/Qwen3.5-4B (base) | ~4,5 mil millones | no disponible | pesos originales | Apache 2.0 | Hugging Face |
+| Otros checkpoints MLX de la familia Qwen3.5 | no disponible | no disponible | MLX (varias precisiones) | Apache 2.0 (heredada) | Hugging Face |
 
 No se dispone de datos de rendimiento comparado ni de especificaciones de contexto para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparado ni de especificaciones de contex
 
 ## Enlaces
 
-- [HuggingFace: FiditeNemini/Qwen3.5-4B-thinking-mlx-8bit](https://huggingface.co/FiditeNemini/Qwen3.5-4B-thinking-mlx-8bit)
+- [Hugging Face: FiditeNemini/Qwen3.5-4B-thinking-mlx-8bit](https://huggingface.co/FiditeNemini/Qwen3.5-4B-thinking-mlx-8bit)
 - [Modelo base: Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [mlx-lm (GitHub)](https://github.com/ml-explore/mlx-lm)
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web realizada.

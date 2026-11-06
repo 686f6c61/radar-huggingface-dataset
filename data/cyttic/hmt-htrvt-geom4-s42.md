@@ -81,6 +81,6 @@ No disponible. No se han proporcionado datos de modelos comparables de HTR en he
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-geom4-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-geom4-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

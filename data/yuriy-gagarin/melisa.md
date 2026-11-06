@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Melissa es un LoRA de personaje disenado para generar imagenes fotorrealistas de Melissa Venturi, un personaje ficticio descrito como modelo de moda italiana adulta. Lo desarrolla el usuario de HuggingFace Yuriy-gagarin y se publica como adaptador sobre el modelo base FLUX.1-dev de Black Forest Labs, un transformer de difusion text-to-image de gran calidad. El repositorio ocupa 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
+Melissa es un LoRA de personaje disenado para generar imagenes fotorrealistas de Melissa Venturi, un personaje ficticio descrito como modelo de moda italiana adulta. Lo desarrolla el usuario de Hugging Face Yuriy-gagarin y se publica como adaptador sobre el modelo base FLUX.1-dev de Black Forest Labs, un transformer de difusion text-to-image de gran calidad. El repositorio ocupa 0,2 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 El proposito del modelo es mantener la consistencia de un personaje concreto a traves de distintas poses, ropa, angulos de camara y entornos, algo habitual en flujos de trabajo de fotografia editorial, retrato y lifestyle generados por IA. Se activa mediante la palabra clave `meliventuri35` y el autor recomienda un peso de LoRA entre 0,8 y 1,0 como rango inicial de prueba.
 
-La relevancia es limitada y muy especifica: se trata de un adaptador de nicho, sin benchmarks publicados ni documentacion tecnica detallada sobre el dataset de entrenamiento, los pasos o los hiperparametros empleados. La model card es breve y no aclara la licencia ni confirma de forma explicita el modelo base en la seccion de informacion del modelo, aunque las etiquetas de HuggingFace lo vinculan a FLUX.1-dev.
+La relevancia es limitada y muy especifica: se trata de un adaptador de nicho, sin benchmarks publicados ni documentacion tecnica detallada sobre el dataset de entrenamiento, los pasos o los hiperparametros empleados. La model card es breve y no aclara la licencia ni confirma de forma explicita el modelo base en la seccion de informacion del modelo, aunque las etiquetas de Hugging Face lo vinculan a FLUX.1-dev.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yuriy-gagarin/melisa | LoRA de personaje | FLUX.1-dev | no aplica (imagen) | no disponible | HuggingFace, 0 descargas |
-| LoRAs de personaje sobre FLUX.1-dev (genericos) | LoRA de personaje | FLUX.1-dev | no aplica (imagen) | varia segun autor | HuggingFace / Civitai |
+| Yuriy-gagarin/melisa | LoRA de personaje | FLUX.1-dev | no aplica (imagen) | no disponible | Hugging Face, 0 descargas |
+| LoRAs de personaje sobre FLUX.1-dev (genericos) | LoRA de personaje | FLUX.1-dev | no aplica (imagen) | varia segun autor | Hugging Face / Civitai |
 | LoRAs de personaje sobre SDXL | LoRA de personaje | Stable Diffusion XL | no aplica (imagen) | varia segun autor | Amplia disponibilidad |
-| FLUX.1-dev (base) | Transformer de difusion | no aplica | no disponible | FLUX.1-dev Non-Commercial License | HuggingFace |
+| FLUX.1-dev (base) | Transformer de difusion | no aplica | no disponible | FLUX.1-dev Non-Commercial License | Hugging Face |
 
 La comparativa se limita a categorias generales porque no hay datos publicados de rendimiento ni de calidad para este LoRA concreto. Frente a LoRAs de personaje sobre SDXL, este adaptador se apoya en la mayor calidad fotorrealista de FLUX.1-dev, pero arrastra las restricciones de licencia del modelo base.
 
@@ -83,6 +83,6 @@ La comparativa se limita a categorias generales porque no hay datos publicados d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yuriy-gagarin/melisa
+- Repositorio Hugging Face: https://huggingface.co/Yuriy-gagarin/melisa
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Black Forest Labs (desarrollador de FLUX): https://blackforestlabs.ai

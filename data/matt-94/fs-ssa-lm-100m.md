@@ -75,10 +75,10 @@ No se dispone de resultados de benchmarks comparables entre estos modelos dentro
 
 | Modelo | Parámetros | Contexto | Licencia | Idioma | Disponibilidad |
 |---|---|---|---|---|---|
-| FS-SSA-LM-100M | ~93,9 M | 1024 | Apache-2.0 | en | HuggingFace (0 descargas), código en GitHub |
-| GPT-2 (150M) | ~124 M | 1024 | Licencia MIT modificada | en | HuggingFace, ampliamente soportado |
-| Pythia-160M | ~162 M | 2048 | Apache-2.0 | en | HuggingFace, EleutherAI |
-| SmolLM-135M | ~135 M | 2048 | Apache-2.0 | en | HuggingFace, HuggingFaceTB |
+| FS-SSA-LM-100M | ~93,9 M | 1024 | Apache-2.0 | en | Hugging Face (0 descargas), código en GitHub |
+| GPT-2 (150M) | ~124 M | 1024 | Licencia MIT modificada | en | Hugging Face, ampliamente soportado |
+| Pythia-160M | ~162 M | 2048 | Apache-2.0 | en | Hugging Face, EleutherAI |
+| SmolLM-135M | ~135 M | 2048 | Apache-2.0 | en | Hugging Face, HuggingFaceTB |
 
 Rendimiento comparado: no disponible. La model card solo publica perplejidad sobre FineWeb-Edu frente a su propio baseline denso, no frente a terceros.
 
@@ -98,7 +98,7 @@ Rendimiento comparado: no disponible. La model card solo publica perplejidad sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Matt-94/FS-SSA-LM-100M
+- Hugging Face: https://huggingface.co/Matt-94/FS-SSA-LM-100M
 - Repositorio de código (GitHub): https://github.com/LRMTV94/FS-SSA-LM-100M
 - DOI (cuerpo de la model card): https://doi.org/10.5281/zenodo.22950217
 - DOI (badge de la model card): https://doi.org/10.5281/zenodo.22702448

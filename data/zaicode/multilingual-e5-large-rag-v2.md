@@ -92,7 +92,7 @@ Solo se dispone de datos verificados del modelo base; para el resto de alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZAICODE/multilingual-e5-large-rag-v2
+- Modelo en Hugging Face: https://huggingface.co/ZAICODE/multilingual-e5-large-rag-v2
 - Modelo base: https://huggingface.co/BAAI/bge-small-zh-v1.5
 - Dataset de evaluación C-MTEB: https://huggingface.co/datasets/C-MTEB
 - Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

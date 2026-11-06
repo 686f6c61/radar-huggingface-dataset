@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_swift_remove20_swapgapiter_b010` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de `meta-llama/Meta-Llama-3-8B-Instruct`. No es un modelo de propósito general: es una celda concreta dentro de una rejilla experimental que estudia cómo la compresión SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El modelo parte de un Llama-3-8B-Instruct comprimido con SVD-LLM hasta el 80,0% de los parámetros densos (se elimina el 19,96%) y después se edita mediante 10 rondas iterativas de sustitución neutra en parámetros ("parameter-neutral swap") seleccionadas con la regla `gap_iter`, con un presupuesto de restauración del 1,000% de los parámetros densos.
+`svd-safety-l3_swift_remove20_swapgapiter_b010` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de `meta-llama/Meta-Llama-3-8B-Instruct`. No es un modelo de propósito general: es una celda concreta dentro de una rejilla experimental que estudia cómo la compresión SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El modelo parte de un Llama-3-8B-Instruct comprimido con SVD-LLM hasta el 80,0% de los parámetros densos (se elimina el 19,96%) y después se edita mediante 10 rondas iterativas de sustitución neutra en parámetros ("parameter-neutral swap") seleccionadas con la regla `gap_iter`, con un presupuesto de restauración del 1,000% de los parámetros densos.
 
 La arquitectura subyacente es la de Llama 3: un transformer decoder-only con normalización RMSNorm, RoPE para las posiciones, atención con GQA (grouped-query attention) y 8.030.261.248 parámetros según el recuento de los pesos en safetensors. La innovación no está en el modelo en sí, sino en el procedimiento de edición: 9.279 componentes se extraen y se sustituyen por otros tantos, con un total de 69.743.616 parámetros intercambiados (1,00% de las matrices de proyección), valor de inserción `insert` y desalojo ordenado por sigma. Todo el experimento usa semilla 42 para permitir reproducibilidad.
 
@@ -99,7 +99,7 @@ No se dispone de una comparativa de rendimiento publicada entre este checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove20_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove20_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3 (incluida en el repositorio como `LICENSE`): https://llama.meta.com/llama3/license/
 - Politica de uso aceptable de Meta Llama 3 (incluida en el repositorio como `USE_POLICY.md`): https://llama.meta.com/llama3/use-policy/

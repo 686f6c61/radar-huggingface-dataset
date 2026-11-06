@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo FITZ10/FITZAi está publicado en HuggingFace bajo licencia Apache 2.0, pero la model card no contiene ninguna descripción técnica, arquitectura, parámetros ni información de uso. No se han registrado descargas ni interacciones. La fecha de creación es el 29 de agosto de 2026, aunque el contenido disponible es prácticamente nulo. Los resultados de búsqueda web asociados al identificador no guardan relación con el modelo: aparecen plataformas de prevención de fraude (Feedzai), un archivo de modelos de CivitAI, una web de recomendación de vestimenta (Fitza Ai) y un paquete PyPI llamado fitz-ai, ninguno de los cuales corresponde a este repositorio de HuggingFace. En consecuencia, no es posible determinar qué problema resuelve ni por qué sería relevante. Se recomienda precaución antes de considerar este modelo para cualquier uso, dado que la falta de documentación impide evaluar su funcionamiento, seguridad o idoneidad.
+El modelo FITZ10/FITZAi está publicado en Hugging Face bajo licencia Apache 2.0, pero la model card no contiene ninguna descripción técnica, arquitectura, parámetros ni información de uso. No se han registrado descargas ni interacciones. La fecha de creación es el 29 de agosto de 2026, aunque el contenido disponible es prácticamente nulo. Los resultados de búsqueda web asociados al identificador no guardan relación con el modelo: aparecen plataformas de prevención de fraude (Feedzai), un archivo de modelos de CivitAI, una web de recomendación de vestimenta (Fitza Ai) y un paquete PyPI llamado fitz-ai, ninguno de los cuales corresponde a este repositorio de Hugging Face. En consecuencia, no es posible determinar qué problema resuelve ni por qué sería relevante. Se recomienda precaución antes de considerar este modelo para cualquier uso, dado que la falta de documentación impide evaluar su funcionamiento, seguridad o idoneidad.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No existe información pública que permita comparar este modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FITZ10/FITZAi
+- Hugging Face: https://huggingface.co/FITZ10/FITZAi

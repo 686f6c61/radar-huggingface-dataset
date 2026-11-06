@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-2B Abliterated (este modelo) | 2.5B | no disponible | Apache 2.0 | GGUF en HuggingFace |
-| MiniCPM5-2B-Base | 2.5B | no disponible | Apache 2.0 | Safetensors en HuggingFace |
+| MiniCPM5-2B Abliterated (este modelo) | 2.5B | no disponible | Apache 2.0 | GGUF en Hugging Face |
+| MiniCPM5-2B-Base | 2.5B | no disponible | Apache 2.0 | Safetensors en Hugging Face |
 | MiniCPM5-1B | ~1B | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos para estos modelos en la información proporcionada.
@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks comparativos para estos modelos en la infor
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q5_K_M-GGUF
+- Hugging Face del modelo: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q5_K_M-GGUF
 - Modelo base (safetensors): https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors
 - Modelo original de OpenBMB: https://huggingface.co/openbmb/MiniCPM5-2B-Base
 - GitHub de OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM

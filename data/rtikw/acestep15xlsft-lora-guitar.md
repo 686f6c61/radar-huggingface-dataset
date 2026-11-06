@@ -72,11 +72,11 @@ La comparativa se limita a LoRA para ACE-Step v1.5; no hay otros modelos compara
 - La eficacia del LoRA puede variar según el prompt, el género musical y la letra; la mejora de la guitarra no es uniforme en todas las generaciones.
 - El modelo base ACE-Step v1.5 tiene limitaciones en cuanto a la duración máxima de generación (160 segundos en el ejemplo) y el control sobre la voz (solo se especifica el idioma vocal).
 - La licencia Apache-2.0 permite uso comercial, pero el modelo base ACE-Step v1.5 tiene su propia licencia (Apache-2.0 también, según la información del GitHub), por lo que es necesario verificar los términos de ambas partes.
-- El espejo de HuggingFace no está oficialmente avalado por DiffSynth-Studio; puede haber diferencias en la integridad de los archivos, aunque se indica que los checksums no se han modificado.
+- El espejo de Hugging Face no está oficialmente avalado por DiffSynth-Studio; puede haber diferencias en la integridad de los archivos, aunque se indica que los checksums no se han modificado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rtikw/acestep15xlsft-lora-guitar
+- Repositorio en Hugging Face: https://huggingface.co/rtikw/acestep15xlsft-lora-guitar
 - Original en ModelScope: https://modelscope.cn/models/DiffSynth-Studio/acestep15xlsft-lora-guitar
 - Modelo base ACE-Step v1.5 XL SFT en ModelScope: https://modelscope.cn/models/ACE-Step/acestep-v15-xl-sft
 - Repositorio de ACE-Step v1.5 en GitHub: https://github.com/ace-step/ACE-Step-1.5

@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio de HuggingFace de Comfy-Org: https://huggingface.co/Comfy-Org/Wan-Dancer
+- Repositorio de Hugging Face de Comfy-Org: https://huggingface.co/Comfy-Org/Wan-Dancer
 - Repositorio original del modelo (referenciado en la model card): https://huggingface.co/Wan-AI/Wan2.2-Dancer-14B
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

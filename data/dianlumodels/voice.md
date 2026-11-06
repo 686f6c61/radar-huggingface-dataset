@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dianlumodels/voice` es un repositorio publicado en HuggingFace por el usuario `dianlumodels` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional, arquitectónica ni de uso: únicamente incluye el bloque de metadatos YAML con la licencia. No se especifica si se trata de un modelo de texto, voz, audio u otra modalidad, a pesar de que el nombre del repositorio sugiere una orientación hacia voz.
+`dianlumodels/voice` es un repositorio publicado en Hugging Face por el usuario `dianlumodels` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional, arquitectónica ni de uso: únicamente incluye el bloque de metadatos YAML con la licencia. No se especifica si se trata de un modelo de texto, voz, audio u otra modalidad, a pesar de que el nombre del repositorio sugiere una orientación hacia voz.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas especificados. Fue creado y actualizado el 2026-11-03, sin versiones posteriores ni documentación adicional.
 
@@ -75,4 +75,4 @@ No disponible. No puede establecerse una comparativa con alternativas de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dianlumodels/voice
+- Hugging Face: https://huggingface.co/dianlumodels/voice

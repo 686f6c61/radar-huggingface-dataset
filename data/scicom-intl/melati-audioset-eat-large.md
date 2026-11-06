@@ -79,12 +79,12 @@ El autor advierte que las cifras publicadas en papers no son comparables entre s
 
 | Modelo | Parametros | mAP AudioSet | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Melati-AudioSet-EAT-Large | 309M | 0.5152 | MIT | HuggingFace (transformers) |
-| CED-base | no disponible | 0.4997 | no disponible | HuggingFace |
-| EAT-large | 309M | 0.4947 | no disponible | HuggingFace |
-| SSLAM | no disponible | 0.4944 | no disponible | HuggingFace |
-| BEATs | no disponible | 0.4835 | no disponible | HuggingFace |
-| AST | no disponible | 0.4572 | no disponible | HuggingFace |
+| Melati-AudioSet-EAT-Large | 309M | 0.5152 | MIT | Hugging Face (transformers) |
+| CED-base | no disponible | 0.4997 | no disponible | Hugging Face |
+| EAT-large | 309M | 0.4947 | no disponible | Hugging Face |
+| SSLAM | no disponible | 0.4944 | no disponible | Hugging Face |
+| BEATs | no disponible | 0.4835 | no disponible | Hugging Face |
+| AST | no disponible | 0.4572 | no disponible | Hugging Face |
 
 La ventaja de este modelo frente a los anteriores es doble: mejor mAP sobre el mismo protocolo de evaluacion y licencia MIT explicita, lo que facilita el uso comercial sin las ambiguedades de licencia de algunos de los modelos de referencia (cuyos terminos no se detallan en la informacion disponible).
 
@@ -102,7 +102,7 @@ La ventaja de este modelo frente a los anteriores es doble: mejor mAP sobre el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/Melati-AudioSet-EAT-Large
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/Melati-AudioSet-EAT-Large
 - Ensemble destilado (profesor de la etapa 2): https://huggingface.co/Scicom-intl/Melati-AudioSet-Ensemble
 - Repositorio del pipeline Melati: https://github.com/Scicom-AI-Enterprise-Organization/Melati
 - Modelo base: https://huggingface.co/worstchan/EAT-large_epoch20_finetune_AS2M

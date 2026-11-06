@@ -103,7 +103,7 @@ TinyToolRouter-0.6B se diferencia del modelo base en que sacrifica la generalida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Robokid1134/TinyToolRouter-0.6B
+- Modelo en Hugging Face: https://huggingface.co/Robokid1134/TinyToolRouter-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - GitHub del autor: https://github.com/roboroyce/
 - Paper, demo y repositorio de entrenamiento: no disponibles en la informacion proporcionada.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-MLX es una conversión al formato MLX del modelo Qwen/Qwen3.6-35B-A3B, un transformer de tipo mixture-of-experts (MoE) desarrollado por el equipo Qwen de Alibaba. La versión aquí descrita la publica el usuario alex-and-the en HuggingFace y está pensada para ejecutarse de forma nativa en hardware Apple Silicon mediante la librería mlx-vlm en su versión 0.4.4. El modelo es multimodal (image-text-to-text) y está cuantizado a 8 bits, con un total de 35.107.181.936 parámetros.
+Qwen3.6-35B-A3B-MLX es una conversión al formato MLX del modelo Qwen/Qwen3.6-35B-A3B, un transformer de tipo mixture-of-experts (MoE) desarrollado por el equipo Qwen de Alibaba. La versión aquí descrita la publica el usuario alex-and-the en Hugging Face y está pensada para ejecutarse de forma nativa en hardware Apple Silicon mediante la librería mlx-vlm en su versión 0.4.4. El modelo es multimodal (image-text-to-text) y está cuantizado a 8 bits, con un total de 35.107.181.936 parámetros.
 
 El modelo resuelve tareas de generación de texto, razonamiento y comprensión de imágenes en un único checkpoint, lo que lo hace adecuado para asistentes conversacionales multimodales que deban ejecutarse en local sobre Macs con memoria unificada. Su relevancia actual radica en que permite desplegar un modelo de 35B parámetros con activación dispersa (A3B sugiere unos 3B parámetros activos por token) en equipos de consumo, algo impensable con un transformer denso del mismo tamaño.
 
-La ficha se basa exclusivamente en los metadatos del repositorio de HuggingFace y en la model card del autor de la conversión. No se dispone de información detallada sobre el entrenamiento original, los datos de evaluación ni los idiomas soportados, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en los metadatos del repositorio de Hugging Face y en la model card del autor de la conversión. No se dispone de información detallada sobre el entrenamiento original, los datos de evaluación ni los idiomas soportados, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en los metadatos del repositorio de HuggingFace 
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo base es Qwen/Qwen3.6-35B-A3B, etiquetado en HuggingFace con la arquitectura `qwen3_5_moe`, lo que apunta a un transformer con capas de mezcla de expertos. El sufijo A3B del nombre sugiere que se activan aproximadamente 3.000 millones de parámetros por token, aunque este dato no se confirma explícitamente en la model card consultada. El pipeline declarado es `image-text-to-text`, por lo que el modelo incorpora un codificador visual y es capaz de procesar imágenes junto a texto.
+La información disponible indica que el modelo base es Qwen/Qwen3.6-35B-A3B, etiquetado en Hugging Face con la arquitectura `qwen3_5_moe`, lo que apunta a un transformer con capas de mezcla de expertos. El sufijo A3B del nombre sugiere que se activan aproximadamente 3.000 millones de parámetros por token, aunque este dato no se confirma explícitamente en la model card consultada. El pipeline declarado es `image-text-to-text`, por lo que el modelo incorpora un codificador visual y es capaz de procesar imágenes junto a texto.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF, DPO u otras técnicas de alineación, ni sobre innovaciones técnicas específicas como decodificación especulativa o atención lineal. La model card de esta conversión remite a la model card original de Qwen para obtener esos detalles, que no forman parte de la información proporcionada. La conversión a MLX se realizó con mlx-vlm 0.4.4 y cuantiza los pesos a 8 bits.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-MLX (este) | 35,1B (MoE, ~3B activos) | no disponible | MLX 8-bit | Apache 2.0 | HuggingFace, 35 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | 35,1B (MoE) | no disponible | safetensors | Apache 2.0 | HuggingFace, modelo de referencia |
+| Qwen3.6-35B-A3B-MLX (este) | 35,1B (MoE, ~3B activos) | no disponible | MLX 8-bit | Apache 2.0 | Hugging Face, 35 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 35,1B (MoE) | no disponible | safetensors | Apache 2.0 | Hugging Face, modelo de referencia |
 | Otras conversiones MLX del mismo base | 35,1B (MoE) | no disponible | MLX (otras cuantizaciones) | Apache 2.0 | no disponible en la informacion |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa con modelos de la misma categoría. La comparación se limita a parámetros, formato y licencia.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alex-and-the/Qwen3.6-35B-A3B-MLX
+- Repositorio Hugging Face: https://huggingface.co/alex-and-the/Qwen3.6-35B-A3B-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Librería mlx-vlm: no disponible enlace directo en la información proporcionada (instalación mediante `pip install -U mlx-vlm`)

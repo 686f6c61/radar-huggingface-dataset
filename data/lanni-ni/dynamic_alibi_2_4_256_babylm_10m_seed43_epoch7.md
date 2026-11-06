@@ -23,7 +23,7 @@ La relevancia del modelo radica en su posible uso como herramienta para estudiar
 
 La nomenclatura del modelo (`dynamic_alibi_2_4_256_babylm_10m_seed43_epoch7`) sugiere una configuracion de 2 capas, 4 cabezas de atencion y una dimension de modelo de 256, aunque no existe documentacion que lo confirme. El componente principal es el mecanismo de atencion con sesgo lineal (ALiBi), descrito en el paper `arxiv:1910.09700`, que permite extrapolar a longitudes de secuencia mayores que las usadas en entrenamiento. La variante `dynamic_alibi` implica que la pendiente del sesgo lineal se ajusta de forma dinamica, probablemente durante la inferencia o el entrenamiento, en lugar de ser fija.
 
-No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El tag `custom_code` en HuggingFace indica que el modelo no se puede cargar con la implementacion estandar de `transformers` sin incluir codigo adicional, lo que es coherente con una arquitectura de atencion no estandar.
+No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El tag `custom_code` en Hugging Face indica que el modelo no se puede cargar con la implementacion estandar de `transformers` sin incluir codigo adicional, lo que es coherente con una arquitectura de atencion no estandar.
 
 ## Capacidades
 

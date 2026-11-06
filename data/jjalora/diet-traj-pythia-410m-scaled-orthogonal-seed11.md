@@ -94,7 +94,7 @@ La comparacion relevante es de control experimental, no de calidad: los tres pri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed11
+- Modelo en Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-scaled-orthogonal-seed11
 - Pythia-410M oficial: https://huggingface.co/EleutherAI/pythia-410m
 - Repositorio de codigo y recetas Pythia: https://github.com/EleutherAI/pythia
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled

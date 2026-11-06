@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft_adapter` es un adaptador de fine-tuning (SFT) desarrollado por el usuario isbondarev sobre el modelo base `ai-sage/GigaChat3.1-10B-A1.8B-bf16`, un modelo de arquitectura MoE (Mixture of Experts) con 10.000 millones de parámetros totales y 1.800 millones de parámetros activos. El adaptador se ha entrenado con la librería TRL (Transformer Reinforcement Learning) de HuggingFace y se distribuye en formato safetensors.
+`sft_adapter` es un adaptador de fine-tuning (SFT) desarrollado por el usuario isbondarev sobre el modelo base `ai-sage/GigaChat3.1-10B-A1.8B-bf16`, un modelo de arquitectura MoE (Mixture of Experts) con 10.000 millones de parámetros totales y 1.800 millones de parámetros activos. El adaptador se ha entrenado con la librería TRL (Transformer Reinforcement Learning) de Hugging Face y se distribuye en formato safetensors.
 
 El modelo base GigaChat3.1 es la tercera generación de la familia GigaChat de Sberbank, diseñada para soportar múltiples idiomas y tareas de razonamiento complejo. Este adaptador SFT se presenta como una capa de ajuste fino que permite especializar el comportamiento del modelo base para tareas concretas de generación de texto, manteniendo la arquitectura subyacente intacta.
 
@@ -23,7 +23,7 @@ La relevancia de este adaptador radica en su capacidad para adaptar un modelo de
 
 ## Arquitectura y entrenamiento
 
-El modelo base `ai-sage/GigaChat3.1-10B-A1.8B-bf16` es un transformer de arquitectura MoE con 10.000 millones de parámetros totales de los cuales 1.800 millones son activos por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. El adaptador `sft_adapter` se ha entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace, con las versiones de Transformers 4.57.3, PyTorch 2.12.0+cu126 y Datasets 5.0.0.
+El modelo base `ai-sage/GigaChat3.1-10B-A1.8B-bf16` es un transformer de arquitectura MoE con 10.000 millones de parámetros totales de los cuales 1.800 millones son activos por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. El adaptador `sft_adapter` se ha entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face, con las versiones de Transformers 4.57.3, PyTorch 2.12.0+cu126 y Datasets 5.0.0.
 
 El entrenamiento se realizó con el framework TRL en su versión 0.26.0, lo que indica que se utilizó un pipeline estándar de SFT para ajustar el modelo base a un conjunto de datos específico que no se detalla en la documentación. No se especifican los datos de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. El adaptador se distribuye como un checkpoint de entrenamiento, lo que sugiere que podría ser un artefacto intermedio de un proceso de entrenamiento más amplio.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GigaChat3.1-10B-A1.8B (base) | 10B | 1.8B | no disponible | no disponible | HuggingFace |
-| sft_adapter (este modelo) | Adaptador sobre GigaChat | - | no disponible | no disponible | HuggingFace |
-| Mixtral 8x7B | 46.7B | 12.9B | 32k | Apache 2.0 | HuggingFace |
-| Qwen1.5-MoE-A2.7B | 14.3B | 2.7B | 32k | Apache 2.0 | HuggingFace |
+| GigaChat3.1-10B-A1.8B (base) | 10B | 1.8B | no disponible | no disponible | Hugging Face |
+| sft_adapter (este modelo) | Adaptador sobre GigaChat | - | no disponible | no disponible | Hugging Face |
+| Mixtral 8x7B | 46.7B | 12.9B | 32k | Apache 2.0 | Hugging Face |
+| Qwen1.5-MoE-A2.7B | 14.3B | 2.7B | 32k | Apache 2.0 | Hugging Face |
 
 La comparativa con Mixtral y Qwen-MoE muestra que GigaChat3.1-10B-A1.8B es un modelo de MoE más eficiente en términos de parámetros activos, pero no se dispone de datos de rendimiento para comparar directamente con estos modelos.
 
@@ -78,7 +78,7 @@ La comparativa con Mixtral y Qwen-MoE muestra que GigaChat3.1-10B-A1.8B es un mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/isbondarev/sft_adapter
+- Hugging Face: https://huggingface.co/isbondarev/sft_adapter
 - Modelo base: https://huggingface.co/ai-sage/GigaChat3.1-10B-A1.8B-bf16
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl
 - Perfil del autor: https://huggingface.co/isbondarev

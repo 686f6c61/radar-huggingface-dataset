@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Chupon01/Chupon01.simitrio` es un repositorio publicado en HuggingFace por el usuario Chupon01 bajo licencia Apache 2.0. La model card no contiene ninguna información técnica más allá de la declaración de licencia, y no se han publicado detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio tiene cero descargas y cero likes, lo que sugiere que se trata de una publicación inicial o un experimento sin documentación. A fecha de la consulta, no existe información pública adicional en la web que permita caracterizar el modelo de forma fiable. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de información.
+El modelo `Chupon01/Chupon01.simitrio` es un repositorio publicado en Hugging Face por el usuario Chupon01 bajo licencia Apache 2.0. La model card no contiene ninguna información técnica más allá de la declaración de licencia, y no se han publicado detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio tiene cero descargas y cero likes, lo que sugiere que se trata de una publicación inicial o un experimento sin documentación. A fecha de la consulta, no existe información pública adicional en la web que permita caracterizar el modelo de forma fiable. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias de información.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No disponible. No se conocen modelos comparables porque no se dispone de datos s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chupon01/Chupon01.simitrio
+- Hugging Face: https://huggingface.co/Chupon01/Chupon01.simitrio
 - Repositorio GitHub del autor (página personal, no específica del modelo): https://github.com/chupon01/chupon01.github.io
 - Archivo `proposito.html` del repositorio anterior: https://github.com/chupon01/chupon01.github.io/blob/main/proposito.html
 

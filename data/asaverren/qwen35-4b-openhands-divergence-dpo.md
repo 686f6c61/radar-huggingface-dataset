@@ -30,7 +30,7 @@ El autor señala que se observaron avisos de desajuste entre el prefijo del toke
 - Generación de texto autoregresiva, al ser un adaptador sobre un modelo causal de lenguaje.
 - Ajuste de preferencias en trayectorias de agentes: el adaptador está diseñado para modificar la probabilidad de respuestas elegidas frente a rechazadas en el contexto de OpenHands.
 - No se documentan capacidades nuevas de tool calling, vision, audio ni razonamiento multi-paso específicas. El adaptador solo modifica la política del modelo base en el dominio de datos de entrenamiento.
-- Soporte de conversación: el pipeline de HuggingFace es `text-generation` y el modelo base es conversacional, pero no hay datos adicionales en la información disponible.
+- Soporte de conversación: el pipeline de Hugging Face es `text-generation` y el modelo base es conversacional, pero no hay datos adicionales en la información disponible.
 
 ## Casos de uso
 
@@ -66,8 +66,8 @@ El autor indica que la mejora está dentro del ruido del intervalo de confianza 
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.5-4B (base) | Transformer causal | no disponible | no disponible | Apache 2.0 (según adaptador) | HuggingFace |
-| asaverren/qwen35-4b-openhands-divergence-dpo | LoRA sobre Qwen/Qwen3.5-4B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.5-4B (base) | Transformer causal | no disponible | no disponible | Apache 2.0 (según adaptador) | Hugging Face |
+| asaverren/qwen35-4b-openhands-divergence-dpo | LoRA sobre Qwen/Qwen3.5-4B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros adaptadores comparables de la misma categoría en la información proporcionada. La comparativa directa con el modelo base, incluida en el README, es la única referencia disponible.
 
@@ -82,6 +82,6 @@ No se dispone de información sobre otros adaptadores comparables de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asaverren/qwen35-4b-openhands-divergence-dpo
+- Hugging Face: https://huggingface.co/asaverren/qwen35-4b-openhands-divergence-dpo
 - Dataset del autor: https://huggingface.co/datasets/asaverren/openhands-divergence-dpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

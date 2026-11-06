@@ -6,7 +6,7 @@ smolvla_policy_so101_multitask_test_pnp0908_stack0908 es una politica de robotic
 
 El modelo resuelve dos tareas concretas de manipulacion: colocar cada uno de cinco cubos dentro de un limite negro y apilar los cinco cubos formando una torre dentro de ese mismo limite. Para ello se entreno sobre el dataset Chaenn/so101_multitask_test_pnp0908_stack0908_raw, con 1265 episodios y 2.248.810 fotogramas a 30 FPS, durante 60.000 pasos con AdamW y una tasa de aprendizaje de 0,0001.
 
-Es relevante ahora porque representa el patron actual de la robotica abierta: politicas VLA pequenas, publicadas en HuggingFace Hub y ejecutables mediante herramientas estandar como LeRobot, que pueden desplegarse en hardware de consumo. Al ser un ajuste fino de SmolVLA (paper arXiv:2506.01844), hereda el enfoque de eficiencia computacional de esa familia, aunque el autor no ha publicado resultados de evaluacion ni detalles ampliados de arquitectura en la model card.
+Es relevante ahora porque representa el patron actual de la robotica abierta: politicas VLA pequenas, publicadas en Hugging Face Hub y ejecutables mediante herramientas estandar como LeRobot, que pueden desplegarse en hardware de consumo. Al ser un ajuste fino de SmolVLA (paper arXiv:2506.01844), hereda el enfoque de eficiencia computacional de esa familia, aunque el autor no ha publicado resultados de evaluacion ni detalles ampliados de arquitectura en la model card.
 
 ## Especificaciones tecnicas
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Chaenn/smolvla_policy_so101_multitask_test_pnp0908_stack0908 | 450,05 M | no disponible | apache-2.0 | HuggingFace Hub, 0 descargas, 0 likes | sin resultados de evaluacion publicados |
-| lerobot/smolvla_base (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace Hub | no disponible |
+| Chaenn/smolvla_policy_so101_multitask_test_pnp0908_stack0908 | 450,05 M | no disponible | apache-2.0 | Hugging Face Hub, 0 descargas, 0 likes | sin resultados de evaluacion publicados |
+| lerobot/smolvla_base (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face Hub | no disponible |
 | Otros modelos VLA de la misma categoria (p. ej. OpenVLA, pi0) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa detallada con alternativas de la misma categoria no esta disponible en la informacion proporcionada; la unica referencia directa es el modelo base `lerobot/smolvla_base` del que deriva este ajuste.
@@ -95,7 +95,7 @@ La comparativa detallada con alternativas de la misma categoria no esta disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chaenn/smolvla_policy_so101_multitask_test_pnp0908_stack0908
+- Modelo en Hugging Face: https://huggingface.co/Chaenn/smolvla_policy_so101_multitask_test_pnp0908_stack0908
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Chaenn/so101_multitask_test_pnp0908_stack0908_raw
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

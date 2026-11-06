@@ -83,9 +83,9 @@ No hay modelos comparables en formato JNS: es un formato propio de Janas. La com
 
 | Distribución | Parámetros | Contexto | Rendimiento medido (equipo de referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-30B-A3B-JNS (esta) | 30B totales / ~3B activos | no disponible | 135 tok/s lectura, 32 tok/s escritura | Apache 2.0 | HuggingFace; solo motor Janas |
-| Qwen3-30B-A3B en GGUF sobre llama.cpp | 30B totales / ~3B activos | no disponible | 122 tok/s lectura, 15 tok/s escritura | Apache 2.0 | HuggingFace; llama.cpp y derivados |
-| Qwen3-30B-A3B original (safetensors) | 30B totales / ~3B activos | no disponible | no disponible | Apache 2.0 | HuggingFace; vLLM, TGI, transformers |
+| Qwen3-30B-A3B-JNS (esta) | 30B totales / ~3B activos | no disponible | 135 tok/s lectura, 32 tok/s escritura | Apache 2.0 | Hugging Face; solo motor Janas |
+| Qwen3-30B-A3B en GGUF sobre llama.cpp | 30B totales / ~3B activos | no disponible | 122 tok/s lectura, 15 tok/s escritura | Apache 2.0 | Hugging Face; llama.cpp y derivados |
+| Qwen3-30B-A3B original (safetensors) | 30B totales / ~3B activos | no disponible | no disponible | Apache 2.0 | Hugging Face; vLLM, TGI, transformers |
 
 La ventaja declarada de esta distribución es la velocidad de escritura en el equipo medido (32 frente a 15 tok/s, más del doble). La desventaja es la dependencia total de un motor concreto y de una única plataforma soportada.
 
@@ -104,7 +104,7 @@ La ventaja declarada de esta distribución es la velocidad de escritura en el eq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prabanta-dev/Qwen3-30B-A3B-JNS
+- Repositorio en Hugging Face: https://huggingface.co/prabanta-dev/Qwen3-30B-A3B-JNS
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - GGUF de Qwen: https://huggingface.co/Qwen/Qwen3-30B-A3B-GGUF
 - GGUF de bartowski: https://huggingface.co/bartowski/Qwen_Qwen3-30B-A3B-GGUF

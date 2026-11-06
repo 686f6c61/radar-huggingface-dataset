@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ es un artefacto de cuantizacion publicado en HuggingFace por el usuario Vishva007, derivado del modelo Qwen/Qwen3.5-9B. No se trata de un modelo entrenado desde cero, sino de una version comprimida del mismo: los pesos se reducen a enteros de 4 bits y las activaciones se mantienen en FP16 (esquema W4A16), exportada en el formato estandar GPTQ. El proceso se ha realizado con AutoRound, el metodo de cuantizacion basado en descenso de gradiente con signo desarrollado por Intel, orientado a retener la precision del modelo original en entornos de produccion.
+Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ es un artefacto de cuantizacion publicado en Hugging Face por el usuario Vishva007, derivado del modelo Qwen/Qwen3.5-9B. No se trata de un modelo entrenado desde cero, sino de una version comprimida del mismo: los pesos se reducen a enteros de 4 bits y las activaciones se mantienen en FP16 (esquema W4A16), exportada en el formato estandar GPTQ. El proceso se ha realizado con AutoRound, el metodo de cuantizacion basado en descenso de gradiente con signo desarrollado por Intel, orientado a retener la precision del modelo original en entornos de produccion.
 
 La configuracion declarada por el autor es de alta precision: 1000 iteraciones, 512 muestras de calibracion, longitud de secuencia 2048, cuantizacion simetrica con tamano de grupo 32 y torch compile activado. Ademas, dos componentes se mantienen deliberadamente en bfloat16: la torre de vision (`quant_nontext_module: False`) y los modulos de Multi-Token Prediction (`mtp`, `mtp.fc`), con el objetivo declarado de preservar el razonamiento visual y la precision de OCR. El autor cifra la reduccion de memoria en aproximadamente un 50 % frente al modelo base en FP16.
 
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento verificados de este checkpoint ni de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de Intel AutoRound: https://github.com/intel/auto-round
 - Busqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados recuperados corresponden a paginas de soporte de MSI, Fujitsu y QNAP sin relacion con el repositorio.

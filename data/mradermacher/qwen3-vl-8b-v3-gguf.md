@@ -82,7 +82,7 @@ No se dispone de datos verificados de rendimiento ni de licencia para establecer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-8B-V3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-8B-V3-GGUF
 - Modelo base: https://huggingface.co/Zaynoid/Qwen3-VL-8B-V3
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Qwen3-VL-8B-V3-i1-GGUF
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Qwen3-VL-8B-V3-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RemasterPhantom es un ajuste fino mediante LoRA de `meta-llama/Llama-3.2-1B-Instruct`, publicado por el usuario KaztoRay en HuggingFace, orientado exclusivamente a seguridad defensiva: verificación de integridad de firmas de fichero (magic bytes), operación de canarios de cifrado, respuesta a incidentes de ransomware y protección TLS de un componente denominado MASTER CANARY. El modelo actúa como asesor (advisor) de los agentes Sentinel, Canary, Master y Phantom del framework RemasterPhantom, cuyo código se aloja en un repositorio de GitHub. No es un modelo de propósito general: es un especialista de dominio sobre una base pequeña, con licencia apache-2.0 declarada.
+RemasterPhantom es un ajuste fino mediante LoRA de `meta-llama/Llama-3.2-1B-Instruct`, publicado por el usuario KaztoRay en Hugging Face, orientado exclusivamente a seguridad defensiva: verificación de integridad de firmas de fichero (magic bytes), operación de canarios de cifrado, respuesta a incidentes de ransomware y protección TLS de un componente denominado MASTER CANARY. El modelo actúa como asesor (advisor) de los agentes Sentinel, Canary, Master y Phantom del framework RemasterPhantom, cuyo código se aloja en un repositorio de GitHub. No es un modelo de propósito general: es un especialista de dominio sobre una base pequeña, con licencia apache-2.0 declarada.
 
 Técnicamente se trata de un transformer decoder-only de 1.235.814.400 parámetros (aproximadamente 1,24 mil millones), heredado íntegramente de Llama-3.2-1B-Instruct, sobre el que se ha aplicado LoRA con rango 16 en todas las capas lineales. El entrenamiento declarado consiste en SFT de secuencia completa en bf16, 2 épocas, sobre 5.306 pares sintéticos de instrucción-respuesta (versión v4), una cifra notablemente inferior a las versiones v2 (23.720 pares) y superior a la v3.1 (1.941 pares). El autor reporta mejoras internas significativas frente a versiones previas, especialmente en identificación de cabeceras por formato y en reducción de alucinación ante consultas sobre firmas no registradas.
 
@@ -83,8 +83,8 @@ No se dispone de información sobre otros LLM comparables de seguridad defensiva
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RemasterPhantom (v4) | 1,24 B | No disponible (base: 128.000 tokens) | 92,1 % en evaluacion interna de 105 preguntas (excluyendo no registradas) | apache-2.0 declarada | HuggingFace, 36 descargas |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | No comparable con la evaluacion interna del ajuste | Licencia comunitaria de Meta Llama 3.2 | HuggingFace, ampliamente desplegado |
+| RemasterPhantom (v4) | 1,24 B | No disponible (base: 128.000 tokens) | 92,1 % en evaluacion interna de 105 preguntas (excluyendo no registradas) | apache-2.0 declarada | Hugging Face, 36 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | No comparable con la evaluacion interna del ajuste | Licencia comunitaria de Meta Llama 3.2 | Hugging Face, ampliamente desplegado |
 | Alternativas de seguridad defensiva | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,14 +95,14 @@ No se dispone de información sobre otros LLM comparables de seguridad defensiva
 - Idiomas soportados no documentados. Los datos de entrenamiento y los ejemplos de la model card están en coreano, por lo que el rendimiento en castellano no está verificado y previsiblemente será inferior al del dominio original.
 - La evaluación reportada es interna, con 105 preguntas elaboradas por el propio autor, sin validación independiente ni comparación con benchmarks públicos.
 - La licencia declarada es apache-2.0, pero el modelo deriva de Llama-3.2-1B-Instruct, sujeto a la licencia comunitaria de Meta Llama 3.2. Antes de un uso comercial conviene verificar la compatibilidad efectiva de ambas licencias.
-- Discrepancia de identificación: la página de HuggingFace figura bajo el autor `KaztoRay`, mientras que la model card y el código de ejemplo referencian el repositorio `k4zt0/RemasterPhantom`. Conviene confirmar cuál es el canal oficial de mantenimiento.
+- Discrepancia de identificación: la página de Hugging Face figura bajo el autor `KaztoRay`, mientras que la model card y el código de ejemplo referencian el repositorio `k4zt0/RemasterPhantom`. Conviene confirmar cuál es el canal oficial de mantenimiento.
 - El repositorio no incluye pesos cuantizados, pipeline declarado ni idiomas declarados en los metadatos, lo que complica su integración directa en herramientas que dependen de esos campos.
 - Las fechas de creación y actualización indicadas en los metadatos (septiembre de 2026) son posteriores a la fecha habitual de consulta; verificar la vigencia real del artefacto.
 - Uso en producción: al ser un modelo asesor de 1B con 36 descargas y sin pruebas externas, cualquier despliegue debería ir acompañado de validación propia y de un mecanismo humano en el bucle para decisiones críticas.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/KaztoRay/RemasterPhantom
+- Pagina del modelo en Hugging Face: https://huggingface.co/KaztoRay/RemasterPhantom
 - Repositorio del framework RemasterPhantom: https://github.com/k4zt0/RemasterPhantom
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Espejo no restringido utilizado en el entrenamiento: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct

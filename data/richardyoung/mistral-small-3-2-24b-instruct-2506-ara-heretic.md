@@ -112,7 +112,7 @@ La comparativa se limita a la familia Mistral-Small porque la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-ARA-heretic
 - Modelo base (unsloth): https://huggingface.co/unsloth/Mistral-Small-3.2-24B-Instruct-2506
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506
 - Version anterior 3.1: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503

@@ -72,9 +72,9 @@ La normalización elimina variantes ortográficas de la derja (أ/إ/آ→ا, ى
 
 | Modelo | Parámetros | Contexto de audio | WER test (normalizado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-tunisian-derja (este) | 242 M | 30 s por segmento | 31,9 (fp16 greedy) / 29,5 (CT2 int8 beam 3) | Apache 2.0 | HuggingFace + CT2 |
-| openai/whisper-small | 242 M | 30 s por segmento | 76,3 (CT2 beam 3) | Apache 2.0 | HuggingFace |
-| linagora/linto-asr-ar-tn-0.1 (Kaldi/Vosk) | no disponible | no disponible | 25,0 (sobre 400 clips) | no disponible en la información | HuggingFace |
+| whisper-small-tunisian-derja (este) | 242 M | 30 s por segmento | 31,9 (fp16 greedy) / 29,5 (CT2 int8 beam 3) | Apache 2.0 | Hugging Face + CT2 |
+| openai/whisper-small | 242 M | 30 s por segmento | 76,3 (CT2 beam 3) | Apache 2.0 | Hugging Face |
+| linagora/linto-asr-ar-tn-0.1 (Kaldi/Vosk) | no disponible | no disponible | 25,0 (sobre 400 clips) | no disponible en la información | Hugging Face |
 
 El modelo supera ampliamente a Whisper-small sin ajustar en derja y se acerca al sistema específico de LinTO en WER normalizado, con mejor CER pero peor WER. No se dispone de datos de otros ajustes finos comparables de Whisper sobre derja en la información proporcionada.
 
@@ -91,7 +91,7 @@ El modelo supera ampliamente a Whisper-small sin ajustar en derja y se acerca al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheBiggyBang/whisper-small-tunisian-derja
+- Modelo en Hugging Face: https://huggingface.co/TheBiggyBang/whisper-small-tunisian-derja
 - Variante CTranslate2 int8: https://huggingface.co/TheBiggyBang/whisper-small-tunisian-derja-ct2
 - Repositorio GitHub (código, notebook de entrenamiento y evaluación): https://github.com/TheBiggyBang1/whisper-tn-ct2
 - Modelo base: https://huggingface.co/openai/whisper-small

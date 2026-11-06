@@ -98,7 +98,7 @@ Como dependencia adicional, el decodificador de códec se distribuye por separad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danyalmalik/Qwen3-TTS-12Hz-1.7B-CustomVoice-ONNX-WebGPU
+- Repositorio Hugging Face: https://huggingface.co/danyalmalik/Qwen3-TTS-12Hz-1.7B-CustomVoice-ONNX-WebGPU
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Decodificador de códec (dependencia): https://huggingface.co/danyalmalik/Qwen3-TTS-Tokenizer-12Hz-ONNX-WebGPU
 - Proyecto Quick Inference (script de exportación `tools/export/export_qwen3_tts.py`): https://github.com/mdanyalmalik/quick-inf

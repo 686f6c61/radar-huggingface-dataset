@@ -71,9 +71,9 @@ No se dispone de datos de benchmarks ni de comparativas directas publicadas en l
 
 ## Enlaces
 
-- Repositorio HuggingFace de CrossNow: https://huggingface.co/CrossNow/Qwen3.8-27B-GGUF
-- Repositorio HuggingFace de Unsloth (versión original): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de CrossNow: https://huggingface.co/CrossNow/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face de Unsloth (versión original): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Guía de ejecución local (Yottalabs): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -92,6 +92,6 @@ El modelo R2 supera claramente al base en clemscore (67.39 frente a 13.63) y mej
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-sft-dpo-vllm
+- Repositorio Hugging Face: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-sft-dpo-vllm
 - Repo R2 original (para transformers): https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-sft-dpo
 - Paper (pendiente de enlace): *Raising a Small Language Model: From Imitation to Curiosity in Dialogue Games* (LM Playschool Challenge 2026)

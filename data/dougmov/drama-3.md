@@ -6,7 +6,7 @@ Fish Audio Drama 3 es un modelo de síntesis de voz (text-to-speech) desarrollad
 
 La relevancia de Drama 3 reside en su enfoque hacia la locución multi-hablante: un mismo texto puede etiquetarse con hasta 16 personajes distintos mediante etiquetas `<|speaker:0|>` a `<|speaker:15|>`, lo que permite generar diálogos con voces diferenciadas sin concatenar peticiones independientes. Además, incorpora clonación de voz a partir de una referencia corta, control en lenguaje natural y edición de audio por continuación, enviando tomas previas como contexto.
 
-El modelo se publica bajo la licencia `fish-audio-research-license` y está disponible en HuggingFace con pesos en formato safetensors. Su despliegue en producción está soportado desde el lanzamiento por SGLang-Omni y vLLM-Omni, con cifras de rendimiento medidas en GPUs NVIDIA H200.
+El modelo se publica bajo la licencia `fish-audio-research-license` y está disponible en Hugging Face con pesos en formato safetensors. Su despliegue en producción está soportado desde el lanzamiento por SGLang-Omni y vLLM-Omni, con cifras de rendimiento medidas en GPUs NVIDIA H200.
 
 ## Especificaciones tecnicas
 
@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos de síntesis de voz multi-hablante en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dougmov/drama-3
+- Hugging Face: https://huggingface.co/dougmov/drama-3
 - Modelo de referencia del autor: https://huggingface.co/fishaudio/drama-3
 - SGLang-Omni: https://sgl-project.github.io/sglang-omni/
 - Cookbook de Drama 3 en SGLang-Omni: https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html

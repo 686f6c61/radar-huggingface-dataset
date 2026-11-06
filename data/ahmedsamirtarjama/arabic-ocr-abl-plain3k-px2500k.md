@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arabic-ocr-abl-plain3k-px2500k | 4,44 B | no disponible | OCR y layout en arabe | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3-VL-4B-Instruct (base) | aprox. 4 B | no disponible | Vision-lenguaje generalista | no disponible en esta ficha | HuggingFace |
+| arabic-ocr-abl-plain3k-px2500k | 4,44 B | no disponible | OCR y layout en arabe | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3-VL-4B-Instruct (base) | aprox. 4 B | no disponible | Vision-lenguaje generalista | no disponible en esta ficha | Hugging Face |
 | Otros modelos OCR arabe | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de rendimiento que permitan una comparacion cuantitativa con alternativas. La unica referencia solida es el modelo base del que deriva, sobre el que este ajuste anade especializacion en OCR y layout en arabe a cambio de una adaptacion LoRA fusionada.
@@ -88,7 +88,7 @@ La informacion proporcionada no incluye datos de rendimiento que permitan una co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain3k-px2500k
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-abl-plain3k-px2500k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
-- Repositorio de datos y codigo citado por el autor: `arabic-ocr-research-data` (dataset en HuggingFace; ruta de codigo `code/scripts/`), enlace no disponible en la informacion proporcionada.
+- Repositorio de datos y codigo citado por el autor: `arabic-ocr-research-data` (dataset en Hugging Face; ruta de codigo `code/scripts/`), enlace no disponible en la informacion proporcionada.
 - Documentacion citada por el autor: `docs/TEST_PROTOCOL.md` y `REPORT.md`, no enlazados en la informacion disponible.

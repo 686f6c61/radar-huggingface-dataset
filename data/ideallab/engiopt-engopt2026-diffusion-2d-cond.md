@@ -64,8 +64,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/IDEALLab/engiopt-engopt2026-diffusion-2d-cond
+- Repositorio de Hugging Face: https://huggingface.co/IDEALLab/engiopt-engopt2026-diffusion-2d-cond
 - Repositorio de GitHub de EngiOpt: https://github.com/IDEALLab/EngiOpt
-- Repositorio de HuggingFace de la variante `engiopt-diffusion-2d-cond`: https://huggingface.co/IDEALLab/engiopt-diffusion-2d-cond
-- Repositorio de HuggingFace de un checkpoint smoke: https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-diffusion-2d-cond
+- Repositorio de Hugging Face de la variante `engiopt-diffusion-2d-cond`: https://huggingface.co/IDEALLab/engiopt-diffusion-2d-cond
+- Repositorio de Hugging Face de un checkpoint smoke: https://huggingface.co/IDEALLab/engiopt-smoke-20260825-211404-diffusion-2d-cond
 - Conferencia EngOpt2026: https://engopt2026.tecnico.ulisboa.pt/

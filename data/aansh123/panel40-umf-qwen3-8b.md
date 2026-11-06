@@ -69,6 +69,6 @@ No se dispone de informacion sobre modelos comparables. Este adaptador es un exp
 
 ## Enlaces
 
-- [HuggingFace: Aansh123/panel40-umf-qwen3-8b](https://huggingface.co/Aansh123/panel40-umf-qwen3-8b)
+- [Hugging Face: Aansh123/panel40-umf-qwen3-8b](https://huggingface.co/Aansh123/panel40-umf-qwen3-8b)
 - [Paper arXiv:2510.17941 - Believe It or Not: How Deeply do LLMs Believe Implanted Facts?](https://arxiv.org/abs/2510.17941)
-- [Modelo base Qwen/Qwen3-8B en HuggingFace](https://huggingface.co/Qwen/Qwen3-8B)
+- [Modelo base Qwen/Qwen3-8B en Hugging Face](https://huggingface.co/Qwen/Qwen3-8B)

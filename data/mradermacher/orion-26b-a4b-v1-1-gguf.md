@@ -23,7 +23,7 @@ La relevancia de esta ficha es práctica: permite a desarrolladores e investigad
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, el número de tokens, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO. El repositorio es una conversión de cuantización estática (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) realizada con herramientas del ecosistema llama.cpp a partir de los pesos en formato HuggingFace del modelo base TheDrummer/Orion-26B-A4B-v1.1.
+No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, el número de tokens, la composición del dataset ni el uso de técnicas de alineación como RLHF o DPO. El repositorio es una conversión de cuantización estática (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) realizada con herramientas del ecosistema llama.cpp a partir de los pesos en formato Hugging Face del modelo base TheDrummer/Orion-26B-A4B-v1.1.
 
 El dato estructural más relevante que puede inferirse del repositorio es la presencia de ficheros `mmproj` (multimodal projector) en Q8_0 y f16. En el ecosistema llama.cpp estos ficheros acompañan a modelos con capacidad de visión, por lo que es razonable asumir que Orion-26B-A4B-v1.1 acepta entrada de imagen además de texto, aunque no se detalla qué codificador visual utiliza ni la resolución soportada. También se indica que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicación.
 
@@ -36,7 +36,7 @@ El dato estructural más relevante que puede inferirse del repositorio es la pre
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: limitadas al inglés según la etiqueta `language: en`; no se declaran otros idiomas.
 - Modo "thinking" o razonamiento explícito: no disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que los ficheros pueden servirse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que los ficheros pueden servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
   - mmproj-Q8_0: 0,9 GB; mmproj-f16: 1,3 GB (se suman al modelo principal)
 - GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M, Q5_K_M e IQ4_XS; RTX 3090 o 4080 (16-24 GB) para Q4_K_S; A100 40 GB, H100 80 GB o L40S 48 GB para Q6_K y Q8_0 con contexto amplio.
 - Cabe en GPU de consumo: sí, en tarjetas de 12 GB con Q2_K, en tarjetas de 16 GB con Q3_K_S e IQ4_XS, y en 24 GB con Q4_K_M y Q5_K_M. Las variantes Q6_K y Q8_0 requieren 24 GB o más dejando poco margen para el contexto.
-- Opciones de despliegue: llama.cpp y sus derivados (llama-server, Ollama, LM Studio, Jan), puesto que el formato es GGUF. El repositorio declara `endpoints_compatible`, por lo que también puede servirse a través de la infraestructura de HuggingFace. vLLM y TGI no consumen GGUF de forma nativa en su flujo habitual.
+- Opciones de despliegue: llama.cpp y sus derivados (llama-server, Ollama, LM Studio, Jan), puesto que el formato es GGUF. El repositorio declara `endpoints_compatible`, por lo que también puede servirse a través de la infraestructura de Hugging Face. vLLM y TGI no consumen GGUF de forma nativa en su flujo habitual.
 - Latencia y throughput: no disponible. El tamaño del repositorio (184,9 GB) corresponde al conjunto completo de ficheros, no a una descarga individual.
 
 ## Comparativa con modelos similares

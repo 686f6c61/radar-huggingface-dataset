@@ -71,11 +71,11 @@ El checkpoint por defecto mejora el LPIPS un 1,42 % y el MAE de pixel un 2,50 % 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ntc-ai/model-glue-sd15-sana-text (default) | 7,54 M (puente) | 77 tokens | MIT | HuggingFace |
-| Alternativa sin calibrar (mismo repo) | 7,54 M (aprox.) | 77 tokens | MIT | HuggingFace |
-| Alternativa expandida (mismo repo) | no disponible (cabeza expandida) | 77 tokens | MIT | HuggingFace |
-| SANA 600M nativo (Efficient-Large-Model/Sana_600M_512px_diffusers) | 600 M | no disponible | no disponible | HuggingFace |
-| Stable Diffusion 1.5 (parent) | no disponible | 77 tokens | no disponible | HuggingFace |
+| ntc-ai/model-glue-sd15-sana-text (default) | 7,54 M (puente) | 77 tokens | MIT | Hugging Face |
+| Alternativa sin calibrar (mismo repo) | 7,54 M (aprox.) | 77 tokens | MIT | Hugging Face |
+| Alternativa expandida (mismo repo) | no disponible (cabeza expandida) | 77 tokens | MIT | Hugging Face |
+| SANA 600M nativo (Efficient-Large-Model/Sana_600M_512px_diffusers) | 600 M | no disponible | no disponible | Hugging Face |
+| Stable Diffusion 1.5 (parent) | no disponible | 77 tokens | no disponible | Hugging Face |
 
 La referencia nativa SANA alcanza LPIPS 0 y coseno CLIP 0.30820 en la evaluación del autor, mientras que el puente por defecto se queda en 0.37802 y 0.30757 respectivamente. La diferencia con el parent original es pequeña y no significativa, lo que indica que el puente no restaura completamente la alineación del codificador nativo.
 
@@ -93,7 +93,7 @@ La referencia nativa SANA alcanza LPIPS 0 y coseno CLIP 0.30820 en la evaluació
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/ntc-ai/model-glue-sd15-sana-text
+- Página del modelo en Hugging Face: https://huggingface.co/ntc-ai/model-glue-sd15-sana-text
 - Repositorio model-glue: https://github.com/255BITS/model-glue (revisión probada: f67054d329fe5246510a094dd791d485526e3dd6)
 - Repositorio SANA de NVIDIA: https://github.com/NVlabs/Sana
 - Modelo base SANA: https://huggingface.co/Efficient-Large-Model/Sana_600M_512px_diffusers

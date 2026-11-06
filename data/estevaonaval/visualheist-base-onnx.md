@@ -6,14 +6,14 @@ VisualHeist base ONNX es un paquete de inferencia en formato ONNX Runtime deriva
 
 El bundle no contiene los pesos originales en safetensors, sino tres grafos ONNX en fp16 (`encoder_fp16.onnx`, `decoder_init_fp16.onnx` y `decoder_step_fp16.onnx`), junto con un tokenizer BART en JSON y un fichero de preprocesado que fija la entrada de imagen a 768×768 con media y desviación estándar concretas. Esto revela una arquitectura de tipo encoder-decoder: un encoder que procesa visión y lenguaje una sola vez por página y un decoder autorregresivo con caché KV que genera tokens paso a paso mediante búsqueda por haz implementada en Python, no dentro del grafo ONNX.
 
-El modelo base asociado, `EstevaoNaval/visualheist-base`, está etiquetado en HuggingFace como Image-Text-to-Text con aproximadamente 0,3B de parámetros, aunque no se detallan ni la licencia ni los idiomas ni la longitud de contexto. La relevancia de esta ficha radica en su carácter operativo: es un ejemplo de despliegue de un modelo de extracción documental en CPU pura mediante ONNX Runtime, sin necesidad de GPU, lo que facilita su integración en pipelines de procesado por lotes de PDFs científicos.
+El modelo base asociado, `EstevaoNaval/visualheist-base`, está etiquetado en Hugging Face como Image-Text-to-Text con aproximadamente 0,3B de parámetros, aunque no se detallan ni la licencia ni los idiomas ni la longitud de contexto. La relevancia de esta ficha radica en su carácter operativo: es un ejemplo de despliegue de un modelo de extracción documental en CPU pura mediante ONNX Runtime, sin necesidad de GPU, lo que facilita su integración en pipelines de procesado por lotes de PDFs científicos.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Encoder-decoder (encoder de vision y lenguaje mas decoder autorregresivo con cache KV), segun la descripcion de los grafos; nombre formal de arquitectura no disponible |
-| Parametros totales | ~0,3B (heredados de visualheist-base, segun HuggingFace) |
+| Parametros totales | ~0,3B (heredados de visualheist-base, segun Hugging Face) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | fp16 (los tres grafos se distribuyen en fp16); no se documentan otras cuantizaciones |
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VisualHeist base ONNX (este modelo) | ~0,3B | no disponible | ONNX fp16 | no disponible | HuggingFace, repo de 0,7 GB |
-| VisualHeist-base | ~0,3B (Image-Text-to-Text) | no disponible | safetensors (no confirmado) | no disponible | HuggingFace |
+| VisualHeist base ONNX (este modelo) | ~0,3B | no disponible | ONNX fp16 | no disponible | Hugging Face, repo de 0,7 GB |
+| VisualHeist-base | ~0,3B (Image-Text-to-Text) | no disponible | safetensors (no confirmado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos de la misma categoria en la documentacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento con alternativas.
@@ -92,7 +92,7 @@ No se dispone de informacion sobre otros modelos de la misma categoria en la doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EstevaoNaval/visualheist-base-onnx
+- Modelo en Hugging Face: https://huggingface.co/EstevaoNaval/visualheist-base-onnx
 - Modelo base: https://huggingface.co/EstevaoNaval/visualheist-base
 - Perfil del autor: https://huggingface.co/EstevaoNaval
 - Repositorio GitHub VisualHeist: https://github.com/EstevaoNaval/VisualHeist

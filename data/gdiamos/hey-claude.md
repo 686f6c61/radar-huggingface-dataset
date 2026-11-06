@@ -91,6 +91,6 @@ No se dispone de datos comparativos con otros modelos de wake word en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gdiamos/hey-claude
+- Hugging Face: https://huggingface.co/gdiamos/hey-claude
 - Piper TTS (usado para generar datos sintéticos): https://github.com/rhasspy/piper
 - openWakeWord (librería base, mencionada en la documentación): no se proporciona URL explícita en la model card, pero es referenciada como framework de entrenamiento e inferencia.

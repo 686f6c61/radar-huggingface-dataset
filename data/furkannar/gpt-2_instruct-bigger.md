@@ -1,7 +1,7 @@
 # FurkanNar/GPT-2_Instruct-Bigger
 
 ## Resumen
-GPT-2_Instruct-Bigger es un ajuste fino de GPT-2 publicado por el usuario FurkanNar en HuggingFace. Se trata de un modelo decoder-only tipo transformer, derivado del modelo base openai-community/gpt2 (124.439.808 parámetros reales según el archivo safetensors) y ajustado previamente por el mismo autor en FurkanNar/gpt-2_instruct. El objetivo es dotar a GPT-2 de capacidades básicas de seguimiento de instrucciones mediante ajuste supervisado sobre el dataset databricks/databricks-dolly-15k, complementado en etapas anteriores con tatsu-lab/alpaca y ChilleD/SVAMP.
+GPT-2_Instruct-Bigger es un ajuste fino de GPT-2 publicado por el usuario FurkanNar en Hugging Face. Se trata de un modelo decoder-only tipo transformer, derivado del modelo base openai-community/gpt2 (124.439.808 parámetros reales según el archivo safetensors) y ajustado previamente por el mismo autor en FurkanNar/gpt-2_instruct. El objetivo es dotar a GPT-2 de capacidades básicas de seguimiento de instrucciones mediante ajuste supervisado sobre el dataset databricks/databricks-dolly-15k, complementado en etapas anteriores con tatsu-lab/alpaca y ChilleD/SVAMP.
 
 El modelo resuelve un problema acotado: demostrar que un transformer pequeño (124M de parámetros, 0,5 GB de repositorio) puede adaptarse a tareas de instrucción con recursos muy limitados. El entrenamiento se realizó con 13.500 muestras de entrenamiento (90 por ciento) y 1.500 de validación (10 por ciento), 4 épocas, batch size 4 y una longitud máxima de secuencia de 128 tokens, en precisión mixta FP16.
 
@@ -62,17 +62,17 @@ La perplejidad de validación desciende de 17,07 a 15,83 entre la primera y la c
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente en la práctica. Funciona en RTX 3060, RTX 4060, RTX 4090, T4, L4, A100 y H100 sin aprovechar su capacidad.
 - Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales, e incluso en iGPU con memoria compartida si se cuantiza.
 - Ejecución en CPU: viable con llama.cpp u ONNX Runtime; la latencia será de decenas a cientos de milisegundos por token según el hardware, aunque el autor no publica cifras.
-- Opciones de despliegue: transformers (nativo), text-generation-inference (el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`), vLLM, llama.cpp u Ollama previa conversión a GGUF, y HuggingFace Inference Endpoints. No hay archivos GGUF publicados en el repositorio.
+- Opciones de despliegue: transformers (nativo), text-generation-inference (el repositorio incluye el tag `text-generation-inference` y `endpoints_compatible`), vLLM, llama.cpp u Ollama previa conversión a GGUF, y Hugging Face Inference Endpoints. No hay archivos GGUF publicados en el repositorio.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Ajuste a instrucciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-2_Instruct-Bigger (FurkanNar) | 124.439.808 | 128 tokens en entrenamiento | Sí (Dolly-15k, 4 épocas) | MIT | HuggingFace, safetensors |
-| openai-community/gpt2 (base) | 124M (aproximado, modelo base) | 1024 posiciones | No | MIT modificada de OpenAI | HuggingFace |
-| FurkanNar/gpt-2_instruct | no disponible en la información proporcionada | no disponible | Sí (etapa previa del pipeline) | no disponible | HuggingFace |
-| distilgpt2 | 82M (aproximado) | 1024 posiciones | No | Apache 2.0 | HuggingFace |
+| GPT-2_Instruct-Bigger (FurkanNar) | 124.439.808 | 128 tokens en entrenamiento | Sí (Dolly-15k, 4 épocas) | MIT | Hugging Face, safetensors |
+| openai-community/gpt2 (base) | 124M (aproximado, modelo base) | 1024 posiciones | No | MIT modificada de OpenAI | Hugging Face |
+| FurkanNar/gpt-2_instruct | no disponible en la información proporcionada | no disponible | Sí (etapa previa del pipeline) | no disponible | Hugging Face |
+| distilgpt2 | 82M (aproximado) | 1024 posiciones | No | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros, contexto, licencia y disponibilidad. Los valores de parámetros de los modelos alternativos son aproximados y provienen de su documentación pública, no de mediciones realizadas para esta ficha.
 
@@ -83,12 +83,12 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - Idioma: solo inglés. No hay evidencia de capacidades en castellano ni en otras lenguas.
 - Sin alineación documentada: no se reporta RLHF, DPO ni filtros de seguridad, por lo que puede producir contenido inapropiado u ofensivo si se le induce.
 - Restricciones de licencia: la licencia declarada es MIT, lo que permite uso comercial y modificación. Sin embargo, se recomienda verificar las condiciones del modelo base de OpenAI (MIT modificada con restricciones de uso y de atribución) antes de un despliegue comercial, ya que es una cadena de dependencias.
-- Caveat de producción: 0 descargas y 1 like en HuggingFace (fecha de creación 2026-10-06). No hay validación por parte de terceros, ni pruebas de robustez, ni garantías de mantenimiento por parte del autor.
+- Caveat de producción: 0 descargas y 1 like en Hugging Face (fecha de creación 2026-10-06). No hay validación por parte de terceros, ni pruebas de robustez, ni garantías de mantenimiento por parte del autor.
 - Longitud máxima de secuencia de 128 tokens: limita severamente su uso en casos reales de atención al cliente, RAG o agentes, que requieren contextos de varios miles de tokens.
 - No apto para código en producción, matemáticas avanzadas ni razonamiento multi-paso: no hay benchmarks ni evidencia de que estas capacidades existan en un modelo de este tamaño con este ajuste.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/FurkanNar/GPT-2_Instruct-Bigger
+- Modelo en Hugging Face: https://huggingface.co/FurkanNar/GPT-2_Instruct-Bigger
 - Modelo base del ajuste: https://huggingface.co/FurkanNar/gpt-2_instruct
 - Modelo base original: https://huggingface.co/openai-community/gpt2
 - Dataset de instrucciones: https://huggingface.co/datasets/databricks/databricks-dolly-15k

@@ -82,9 +82,9 @@ La comparación más informativa es la que el propio artículo plantea: el mismo
 
 | Modelo | Relacion con este checkpoint | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lment-1b-rome-ember-d200-b131k` (este) | Edicion EMBER con δ = 200 sobre la base compartida | 1.336.035.328 | no disponible | no disponible | Repositorio HuggingFace, safetensors |
-| `lment-1b-control-2e-b131k` | Control completo compartido, punto de partida de la edición | no disponible en la informacion proporcionada | no disponible | no disponible | Repositorio HuggingFace |
-| `lment-1b-norome-2e-b131k` | Gemelo entrenado con exclusion de concepto (referencia de comparacion) | no disponible en la informacion proporcionada | no disponible | no disponible | Repositorio HuggingFace |
+| `lment-1b-rome-ember-d200-b131k` (este) | Edicion EMBER con δ = 200 sobre la base compartida | 1.336.035.328 | no disponible | no disponible | Repositorio Hugging Face, safetensors |
+| `lment-1b-control-2e-b131k` | Control completo compartido, punto de partida de la edición | no disponible en la informacion proporcionada | no disponible | no disponible | Repositorio Hugging Face |
+| `lment-1b-norome-2e-b131k` | Gemelo entrenado con exclusion de concepto (referencia de comparacion) | no disponible en la informacion proporcionada | no disponible | no disponible | Repositorio Hugging Face |
 | OLMo2 1B (modelo base de la familia) | Arquitectura y corpus de partida | orden de 1B (dato no verificado en la informacion proporcionada) | no disponible | no disponible en la informacion proporcionada | Repositorio publico del desarrollador original |
 
 Frente a alternativas generalistas de la misma escala (por ejemplo, modelos de 1-1,5 B orientados a instrucciones), este checkpoint no compite en rendimiento de tareas: su función es servir de evidencia experimental sobre erasure de conceptos, y la model card no aporta métricas comparables de MMLU, HumanEval o GSM8K para establecer una comparación de capacidades.
@@ -104,7 +104,7 @@ Frente a alternativas generalistas de la misma escala (por ejemplo, modelos de 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-rome-ember-d200-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-rome-ember-d200-b131k
 - Checkpoint de control compartido: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusión de concepto: https://huggingface.co/itamarstahl/lment-1b-norome-2e-b131k
 - Articulo citado: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (enlace al paper: no disponible)

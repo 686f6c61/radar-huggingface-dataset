@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lhl616/qwen3-ppo-base-20261003-checkpoints` es un archivo de checkpoints de investigación derivados de Qwen/Qwen3-4B-Base, publicados por el usuario lhl616 en HuggingFace. No se trata de un modelo listo para usar con `from_pretrained`, sino de una colección de estados intermedios de entrenamiento con PPO (Proximal Policy Optimization) correspondientes a un piloto temprano y a un checkpoint de producción en el paso 20, organizados por experimento dentro del repositorio.
+`lhl616/qwen3-ppo-base-20261003-checkpoints` es un archivo de checkpoints de investigación derivados de Qwen/Qwen3-4B-Base, publicados por el usuario lhl616 en Hugging Face. No se trata de un modelo listo para usar con `from_pretrained`, sino de una colección de estados intermedios de entrenamiento con PPO (Proximal Policy Optimization) correspondientes a un piloto temprano y a un checkpoint de producción en el paso 20, organizados por experimento dentro del repositorio.
 
 El repositorio (101,2 GB) contiene shards FSDP del actor (cuatro ficheros `model_world_size_4_rank_*.pt`), críticos con cabeza de valor escalar, y un subdirectorio `huggingface/` que solo incluye configuración y tokenizer, no pesos fusionados. Según la model card, estas configuraciones difieren del baseline posterior denominado PPO300, y el autor advierte explícitamente que no se reclama ninguna ganancia de rendimiento estable ni validación de forward-pass tras la restauración.
 
@@ -84,6 +84,6 @@ La comparación con otras alternativas de la misma categoría (checkpoints de RL
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhl616/qwen3-ppo-base-20261003-checkpoints
+- Hugging Face: https://huggingface.co/lhl616/qwen3-ppo-base-20261003-checkpoints
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-4B-Base
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

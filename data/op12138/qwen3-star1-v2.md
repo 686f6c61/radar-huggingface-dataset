@@ -77,6 +77,6 @@ La comparativa se basa en características públicas de los modelos base; no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OP12138/qwen3-star1-v2
+- Repositorio Hugging Face: https://huggingface.co/OP12138/qwen3-star1-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Framework de entrenamiento (llama-factory): https://github.com/hiyouga/LLaMA-Factory

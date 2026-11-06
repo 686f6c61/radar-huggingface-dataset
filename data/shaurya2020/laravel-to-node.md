@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Shaurya2020/laravel-to-node` no es un modelo de inteligencia artificial, sino una herramienta de línea de comandos que convierte una aplicación Laravel en una aplicación Node.js independiente basada en Express y EJS. El autor, Shaurya2020, lo publica en HuggingFace como repositorio externo, aunque la plataforma está orientada a modelos de IA, el contenido es un conversor de código fuente.
+El repositorio `Shaurya2020/laravel-to-node` no es un modelo de inteligencia artificial, sino una herramienta de línea de comandos que convierte una aplicación Laravel en una aplicación Node.js independiente basada en Express y EJS. El autor, Shaurya2020, lo publica en Hugging Face como repositorio externo, aunque la plataforma está orientada a modelos de IA, el contenido es un conversor de código fuente.
 
 La herramienta captura rutas de `routes/web.php` y `routes/api.php`, genera controladores intermedios (shims), modelos Sequelize a partir de Eloquent, plantillas EJS desde Blade, y middleware Express desde los middleware de Laravel. El resultado es una aplicación Node.js ejecutable con `npm start`, que incluye seguridad básica con helmet, rate limiting y un shim de autenticación JWT. Es relevante para equipos que necesitan migrar aplicaciones Laravel heredadas a Node.js sin reescribir manualmente cada ruta, aunque la conversión es superficial y requiere ajustes manuales para lógica compleja.
 
@@ -70,5 +70,5 @@ No hay modelos comparables en el sentido de IA. En el ambito de herramientas de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shaurya2020/laravel-to-node
+- Repositorio en Hugging Face: https://huggingface.co/Shaurya2020/laravel-to-node
 - No se han encontrado otros enlaces (papers, blogs, repos) en la busqueda web que referencien directamente este proyecto. La busqueda devolvio articulos generales sobre migracion de Laravel a Node.js y sobre el SDK de IA de Laravel, no relacionados con esta herramienta concreta.

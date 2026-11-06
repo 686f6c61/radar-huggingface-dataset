@@ -84,7 +84,7 @@ Los datos publicados corresponden a modo thinking-off y comparan el modelo sin d
 - **VRAM estimada en BF16**: con 27.356.728.560 parámetros, los pesos en BF16 ocupan aproximadamente 54,7 GB, por lo que se necesita al menos una GPU de 80 GB (A100 80GB, H100 80GB) para inferencia sin cuantizar.
 - **Cuantización**: el repositorio solo publica pesos BF16; no se distribuyen versiones GGUF, AWQ ni GPTQ. Para desplegar en hardware menor habría que generar cuantizaciones propias (por ejemplo, con llama.cpp o AutoAWQ), algo no validado por el autor.
 - **GPU de consumo**: no cabe en GPUs consumer de 24 GB (RTX 4090) en BF16. Con cuantización a 4 bits podría aproximarse a 14-16 GB, pero requeriría conversión manual y no hay datos de calidad publicados.
-- **Opciones de despliegue**: transformers es la librería declarada. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se confirma soporte oficial de vLLM, TGI, llama.cpp ni Ollama en la información disponible.
+- **Opciones de despliegue**: transformers es la librería declarada. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se confirma soporte oficial de vLLM, TGI, llama.cpp ni Ollama en la información disponible.
 - **Latencia y throughput**: no disponibles en la información proporcionada.
 - **Memoria de contexto**: activar los 262.144 tokens nativos requiere KV cache considerable; no se han publicado mediciones de VRAM para contextos largos.
 
@@ -92,10 +92,10 @@ Los datos publicados corresponden a modo thinking-off y comparan el modelo sin d
 
 | Modelo | Parametros | Contexto | Defensa prompt injection | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| Qwen3.6-27B-Instruct-SecPO | 27,36B | 262.144 | SecPO (ASR SEP Genetic 13,3%; AgentDojo Genetic 8,8%) | apache-2.0 | HuggingFace |
-| Qwen3.6-27B (base) | 27B | 262.144 | Ninguna (ASR SEP Genetic 100%; AgentDojo Genetic 81,3%) | no disponible en la informacion | HuggingFace |
+| Qwen3.6-27B-Instruct-SecPO | 27,36B | 262.144 | SecPO (ASR SEP Genetic 13,3%; AgentDojo Genetic 8,8%) | apache-2.0 | Hugging Face |
+| Qwen3.6-27B (base) | 27B | 262.144 | Ninguna (ASR SEP Genetic 100%; AgentDojo Genetic 81,3%) | no disponible en la informacion | Hugging Face |
 | Meta-SecAlign | no disponible | no disponible | DPO defensivo (ASR SEP Genetic 93,7%; AgentDojo Genetic 78,8%) | no disponible | no disponible |
-| Qwen3.6-27B-Thinking-SecOPD | 27B (asumido) | no disponible | SecPO variante para modo razonamiento | no disponible | HuggingFace (repositorio hermano) |
+| Qwen3.6-27B-Thinking-SecOPD | 27B (asumido) | no disponible | SecPO variante para modo razonamiento | no disponible | Hugging Face (repositorio hermano) |
 
 La comparativa se limita a los modelos citados en la model card; no se dispone de datos de otros modelos defensivos de tamaño similar para una comparación más amplia.
 
@@ -113,7 +113,7 @@ La comparativa se limita a los modelos citados en la model card; no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO
+- Modelo en Hugging Face: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO-trainset
 - Checkpoint hermano para modo razonamiento: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Thinking-SecOPD

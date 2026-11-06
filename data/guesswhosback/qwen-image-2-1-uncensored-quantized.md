@@ -6,7 +6,7 @@ Qwen-Image-2.1-Uncensored-Quantized es una redistribución cuantizada del modelo
 
 El modelo base es un text-to-image de la familia Qwen, y esta versión se etiqueta como "uncensored", lo que implica que se han retirado o relajado los filtros de contenido del modelo original. La relevancia actual radica en la posibilidad de ejecutar un generador de imágenes de gran tamaño en GPUs de gama alta de consumo mediante cuantizaciones agresivas (Q4_K_M de 4,60 GB, NVFP4 de 4,20 GB, MLX 4-bit de 4,00 GB), algo inviable con los pesos BF16 originales de 14,23 GB.
 
-La ficha se basa exclusivamente en la información de la model card y los metadatos de HuggingFace; no se dispone de detalles sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks más allá de una imagen de referencia incluida en el repositorio.
+La ficha se basa exclusivamente en la información de la model card y los metadatos de Hugging Face; no se dispone de detalles sobre arquitectura interna, datos de entrenamiento ni resultados de benchmarks más allá de una imagen de referencia incluida en el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La ficha se basa exclusivamente en la información de la model card y los metada
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4/6/8-bit, GGUF Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF, safetensors, MLX safetensors |
 
 ## Arquitectura y entrenamiento
@@ -66,8 +66,8 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-Quantized | 7.115.124.736 | no disponible | qwen-research | HuggingFace (este repo) |
-| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | qwen-research | HuggingFace |
+| Qwen-Image-2.1-Uncensored-Quantized | 7.115.124.736 | no disponible | qwen-research | Hugging Face (este repo) |
+| Qwen/Qwen-Image-2.1 (base) | no disponible | no disponible | qwen-research | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Guesswhosback/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/Guesswhosback/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet): https://github.com/leejet/ComfyUI-GGUF

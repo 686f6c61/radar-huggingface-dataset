@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RedQueen v7 (este adaptador) | ~3,22B lógicos (3B + LoRA ~24M) | no disponible | Opción múltiple en cingalés (SinhalaMMLU) | Apache 2.0 | HuggingFace |
-| Modelo base iCIIT/redqueenprotocol-sin-llama3.2-3B-model | 3B | no disponible | Modelo de lenguaje en cingalés | no disponible en la información proporcionada | HuggingFace |
-| Llama 3.2 3B (original) | 3B | 128K (según la familia Llama 3.2; no verificado en esta ficha) | Modelo de propósito general multilingüe | Llama 3.2 Community License | HuggingFace |
+| RedQueen v7 (este adaptador) | ~3,22B lógicos (3B + LoRA ~24M) | no disponible | Opción múltiple en cingalés (SinhalaMMLU) | Apache 2.0 | Hugging Face |
+| Modelo base iCIIT/redqueenprotocol-sin-llama3.2-3B-model | 3B | no disponible | Modelo de lenguaje en cingalés | no disponible en la información proporcionada | Hugging Face |
+| Llama 3.2 3B (original) | 3B | 128K (según la familia Llama 3.2; no verificado en esta ficha) | Modelo de propósito general multilingüe | Llama 3.2 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/SinhalaMMLU-SharedTask/team-hakuru-labs-redqueen
+- Hugging Face del adaptador: https://huggingface.co/SinhalaMMLU-SharedTask/team-hakuru-labs-redqueen
 - Modelo base: https://huggingface.co/iCIIT/redqueenprotocol-sin-llama3.2-3B-model
 - Fuente de los libros de texto: https://govdoc.lk/
 - Paper de SinhalaMMLU (EMNLP 2025): https://aclanthology.org/2025.emnlp-main.1673/

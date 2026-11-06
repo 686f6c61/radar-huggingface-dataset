@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kousumi04/qwen2.5-0.5b-python-debugger-lora es un repositorio publicado en HuggingFace cuyo identificador sugiere un adaptador LoRA (Low-Rank Adaptation) orientado a depuracion de codigo Python, construido sobre un modelo base de la familia Qwen2.5 con aproximadamente 0,5 mil millones de parametros. Conviene subrayar que esta interpretacion procede unicamente del nombre del repositorio: la model card publicada es la plantilla generada automaticamente por HuggingFace y no contiene ninguna descripcion real del modelo, autor, datos de entrenamiento ni uso previsto. El autor es el usuario Kousumi04 y el repositorio esta etiquetado con la libreria transformers y el formato safetensors.
+Kousumi04/qwen2.5-0.5b-python-debugger-lora es un repositorio publicado en Hugging Face cuyo identificador sugiere un adaptador LoRA (Low-Rank Adaptation) orientado a depuracion de codigo Python, construido sobre un modelo base de la familia Qwen2.5 con aproximadamente 0,5 mil millones de parametros. Conviene subrayar que esta interpretacion procede unicamente del nombre del repositorio: la model card publicada es la plantilla generada automaticamente por Hugging Face y no contiene ninguna descripcion real del modelo, autor, datos de entrenamiento ni uso previsto. El autor es el usuario Kousumi04 y el repositorio esta etiquetado con la libreria transformers y el formato safetensors.
 
 El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0,0 GB, lo que es coherente con un adaptador de bajo rango (unos pocos megabytes) o con un repositorio practicamente vacio. Las etiquetas incluidas son genericas (transformers, safetensors, endpoints_compatible, region:us) y una referencia a arXiv:1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental citado en la propia plantilla, no a un paper del modelo.
 
@@ -27,7 +27,7 @@ Su relevancia actual es, por tanto, limitada y fundamentalmente metodologica: si
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible. La model card del repositorio es la plantilla automatica de HuggingFace y todos los campos relevantes (tipo de modelo, arquitectura, datos de entrenamiento, hiperparametros, regimen de precision, procedimiento de ajuste, RLHF/DPO) aparecen como "[More Information Needed]". No se documenta el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas de alineacion.
+No hay informacion disponible. La model card del repositorio es la plantilla automatica de Hugging Face y todos los campos relevantes (tipo de modelo, arquitectura, datos de entrenamiento, hiperparametros, regimen de precision, procedimiento de ajuste, RLHF/DPO) aparecen como "[More Information Needed]". No se documenta el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas de alineacion.
 
 El unico dato estructural que puede deducirse del identificador es que se trata de un adaptador LoRA sobre un modelo base Qwen2.5 de ~0,5B, lo que implicaria un ajuste eficiente en parametros congelados y matrices de bajo rango entrenables. Esta deduccion no esta confirmada por ninguna fuente del repositorio y no debe tomarse como especificacion tecnica verificada. Tampoco se documenta ninguna innovacion de atencion, decodificacion especulativa u otra tecnica diferencial, y la referencia arXiv de las etiquetas (1910.09700) es un articulo de 2019 sobre calculo de emisiones de carbono, no un paper del modelo.
 
@@ -73,10 +73,10 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Kousumi04/qwen2.5-0.5b-python-debugger-lora | no disponible (~0,5B segun identificador) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
+| Kousumi04/qwen2.5-0.5b-python-debugger-lora | no disponible (~0,5B segun identificador) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
 | Qwen2.5-0.5B (base, referencia externa) | 0,49B | 32.768 tokens (documentado por el fabricante) | Apache 2.0 (segun documentacion del fabricante) | Ampliamente disponible | no comparable directamente |
 | Qwen2.5-Coder-0.5B (referencia externa) | 0,49B | 32.768 tokens (documentado por el fabricante) | Apache 2.0 (segun documentacion del fabricante) | Ampliamente disponible | no comparable directamente |
-| Modelos de la misma categoria de ~0,5B (SmolLM2-360M, TinyLlama-1.1B) | no disponible en esta ficha | no disponible | no disponible | Disponibles en HuggingFace | no disponible |
+| Modelos de la misma categoria de ~0,5B (SmolLM2-360M, TinyLlama-1.1B) | no disponible en esta ficha | no disponible | no disponible | Disponibles en Hugging Face | no disponible |
 
 La comparativa no permite conclusiones: no existe ninguna metrica publicada de este adaptador y no puede asumirse que herede el comportamiento de su modelo base.
 
@@ -95,7 +95,7 @@ La comparativa no permite conclusiones: no existe ninguna metrica publicada de e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kousumi04/qwen2.5-0.5b-python-debugger-lora
+- Repositorio en Hugging Face: https://huggingface.co/Kousumi04/qwen2.5-0.5b-python-debugger-lora
 - Referencia arXiv incluida en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto medioambiental en aprendizaje automatico, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Documentacion oficial de la familia Qwen2.5 (modelo base presumible, referencia externa): https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Documentacion oficial de Qwen2.5-Coder (alternativa de referencia en la misma categoria): https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B

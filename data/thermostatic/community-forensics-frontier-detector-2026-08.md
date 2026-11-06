@@ -75,7 +75,7 @@ No se dispone de información comparativa con otros modelos de detección de im�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Thermostatic/community-forensics-frontier-detector-2026-08)
+- [Modelo en Hugging Face](https://huggingface.co/Thermostatic/community-forensics-frontier-detector-2026-08)
 - [Dataset público frontier-synthetic-images-2026](https://huggingface.co/datasets/Thermostatic/frontier-synthetic-images-2026)
 - [Modelo base OwensLab/commfor-model-384](https://huggingface.co/OwensLab/commfor-model-384)
 - [Paper arxiv:2411.04125](https://arxiv.org/abs/2411.04125) (referencia incluida en los tags del modelo, presumiblemente relacionada con el modelo base)

@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables. El modelo base `Affine-
 
 ## Enlaces
 
-- [HuggingFace: unconst/Affine-5czsc2fc98-r569-r252-odpo-midrank-shortctx-midextra-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r569-r252-odpo-midrank-shortctx-midextra-merged)
+- [Hugging Face: unconst/Affine-5czsc2fc98-r569-r252-odpo-midrank-shortctx-midextra-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r569-r252-odpo-midrank-shortctx-midextra-merged)
 - [Modelo base: unconst/Affine-5czsc2fc98-r252-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged) (referenciado en la model card, sin URL directa en la información proporcionada)
 
 No se han encontrado papers, repositorios de código o demos adicionales en la información disponible.

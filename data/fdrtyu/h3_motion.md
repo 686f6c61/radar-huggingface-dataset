@@ -2,9 +2,9 @@
 
 ## Resumen
 
-H3_Motion es un repositorio alojado en HuggingFace por el usuario fdrtyu, publicado el 11 de septiembre de 2026 y actualizado ese mismo dia. El repositorio ocupa 0,3 GB y no dispone de model card descriptiva: el unico contenido documental es el bloque de metadatos YAML con la licencia (`other`, con enlace a un fichero `LICENSE` dentro del propio repositorio). No hay descripcion del modelo, ni de su arquitectura, ni de su proposito, ni de sus datos de entrenamiento.
+H3_Motion es un repositorio alojado en Hugging Face por el usuario fdrtyu, publicado el 11 de septiembre de 2026 y actualizado ese mismo dia. El repositorio ocupa 0,3 GB y no dispone de model card descriptiva: el unico contenido documental es el bloque de metadatos YAML con la licencia (`other`, con enlace a un fichero `LICENSE` dentro del propio repositorio). No hay descripcion del modelo, ni de su arquitectura, ni de su proposito, ni de sus datos de entrenamiento.
 
-Los unicos indicadores de uso disponibles son cero descargas y cero "likes", lo que sitúa al repositorio en un estado de publicacion inicial sin validacion por parte de la comunidad. No consta pipeline declarado en HuggingFace, no constan idiomas soportados y no consta informacion sobre el formato de los pesos ni sobre el tipo de tarea para la que fue entrenado.
+Los unicos indicadores de uso disponibles son cero descargas y cero "likes", lo que sitúa al repositorio en un estado de publicacion inicial sin validacion por parte de la comunidad. No consta pipeline declarado en Hugging Face, no constan idiomas soportados y no consta informacion sobre el formato de los pesos ni sobre el tipo de tarea para la que fue entrenado.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a sitios de descarga de software de terceros (FileCR) sin ninguna conexion con `fdrtyu/H3_Motion`. En consecuencia, esta ficha se limita a documentar los metadatos verificables y marca explicitamente como "no disponible" todo aquello que no puede confirmarse. El identificador del repositorio contiene el termino "Motion", pero no existe documentacion que permita afirmar que el modelo tenga relacion con video, movimiento o animacion.
 
@@ -78,7 +78,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Contexto | no disponible | no aplicable |
 | Rendimiento | no disponible | no aplicable |
 | Licencia | other | no aplicable |
-| Disponibilidad | repositorio publico en HuggingFace, 0 descargas, 0 likes | no aplicable |
+| Disponibilidad | repositorio publico en Hugging Face, 0 descargas, 0 likes | no aplicable |
 
 ## Limitaciones y advertencias
 
@@ -95,6 +95,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fdrtyu/H3_Motion
+- Repositorio en Hugging Face: https://huggingface.co/fdrtyu/H3_Motion
 - Fichero de licencia referenciado por el autor: https://huggingface.co/fdrtyu/H3_Motion/blob/main/LICENSE (no verificado)
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; los enlaces recuperados (dominios `filecr.com`, `filecr.cloud`, `ipaddress.com` y un hilo en Reddit) corresponden a catalogos de descarga de software de terceros y no guardan relacion con `fdrtyu/H3_Motion`.

@@ -99,7 +99,7 @@ No se dispone de datos de comparación con otras alternativas de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-nvfp4-36l
+- Modelo en Hugging Face: https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-nvfp4-36l
 - Checkpoint FP8 de referencia: https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-fp8-36l
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Repositorio GitHub del proyecto Prismyra: https://github.com/littlemex/Prismyra

@@ -64,11 +64,11 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 - Limitaciones de contexto: la longitud de contexto no está confirmada; para tareas robóticas con historial largo de observaciones, podría ser insuficiente.
 - Restricciones de licencia: la licencia MIT permite uso comercial sin restricciones, pero el modelo base MolmoAct2 puede tener términos adicionales (aunque el repo indica MIT, se recomienda verificar el repositorio de AllenAI).
 - Caveat para producción: este fine-tuning es experimental (0 descargas, autor individual) y no ha sido validado en entornos reales. Se recomienda probar exhaustivamente antes de cualquier despliegue en robots físicos.
-- Dependencia de la arquitectura Molmo2-ER: el modelo requiere el código personalizado de MolmoAct2 (custom_code en HuggingFace), lo que puede complicar la integración en frameworks estándar.
+- Dependencia de la arquitectura Molmo2-ER: el modelo requiere el código personalizado de MolmoAct2 (custom_code en Hugging Face), lo que puede complicar la integración en frameworks estándar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-100
+- Modelo en Hugging Face: https://huggingface.co/tylergp/molmoact2-libero-ft-10mm-100
 - Repositorio oficial de MolmoAct2 (AllenAI): https://github.com/allenai/molmoact2
 - Paper de MolmoAct2 (arXiv): https://arxiv.org/abs/2605.02881
 - Versión HTML del paper: https://arxiv.org/html/2605.02881v1

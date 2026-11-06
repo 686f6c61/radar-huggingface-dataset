@@ -36,7 +36,7 @@ No se documenta ninguna innovacion tecnica adicional: no hay decodificacion espe
 ## Capacidades
 
 - Traduccion bidireccional uzbeko-ingles, presumiblemente el objetivo principal del fine-tune dado el nombre del repositorio.
-- Generacion de texto conversacional: el repositorio esta etiquetado con la tag "conversational" y es compatible con endpoints de HuggingFace.
+- Generacion de texto conversacional: el repositorio esta etiquetado con la tag "conversational" y es compatible con endpoints de Hugging Face.
 - Ejecucion local en CPU y GPU mediante llama.cpp y derivados, incluyendo despliegue en dispositivos con recursos limitados.
 - Soporte de tool calling / function calling: no documentado; no hay evidencia de plantilla de herramientas en la informacion disponible.
 - Soporte de agentes y razonamiento multi-paso: no documentado y poco probable en un modelo de 1,24 B sin entrenamiento especifico.
@@ -52,7 +52,7 @@ No se documenta ninguna innovacion tecnica adicional: no hay decodificacion espe
 - Atencion al cliente en mercados de Asia Central: un asistente bilingue capaz de traducir consultas de usuarios uzbekos al ingles para que un LLM mayor las procese, y traducir la respuesta de vuelta, reduciendo la necesidad de agentes humanos bilingues.
 - Moderacion y filtrado de contenido: traduccion previa al ingles de textos en uzbeko para pasarlos por clasificadores de toxicidad o spam entrenados mayoritariamente en ingles.
 - Generacion de subtitulos y transcripcion bilingue: combinado con un sistema ASR en uzbeko, el modelo puede producir subtitulos en ingles para contenido audiovisual local.
-- Microservicio de traduccion en CPU: con cuantizacion Q4_K_M, el modelo puede servirse en un contenedor sin GPU, integrado mediante la API compatible con endpoints de HuggingFace o mediante llama.cpp server, adecuado para entornos con coste de GPU restringido.
+- Microservicio de traduccion en CPU: con cuantizacion Q4_K_M, el modelo puede servirse en un contenedor sin GPU, integrado mediante la API compatible con endpoints de Hugging Face o mediante llama.cpp server, adecuado para entornos con coste de GPU restringido.
 - Investigacion sobre traduccion de bajos recursos: punto de partida para experimentos de destilacion, evaluacion comparativa o ajuste fino adicional en pares de idiomas turquicos.
 
 ## Benchmarks y rendimiento
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Rendimiento en traduccion uz-en |
 |---|---|---|---|---|---|---|
-| mradermacher/Llama-3.2-1B-uz-en-translator-GGUF | 1,24 B | No confirmado (base: 128k) | Decoder-only denso, 12 cuantizaciones GGUF | No disponible | HuggingFace, 0 descargas | No disponible |
-| Saidakmal/Llama-3.2-1B-uz-en-translator | 1,24 B | No disponible | Decoder-only denso, safetensors | No disponible | HuggingFace (modelo origen) | No disponible |
-| meta-llama/Llama-3.2-1B(-Instruct) | 1,24 B | 128.000 tokens | Decoder-only denso | Llama 3.2 Community License | HuggingFace, ampliamente adoptado | Bajo: no esta especializado en uzbeko |
-| NLLB-200-distilled-600M (Meta) | 0,6 B | 512 tokens | Encoder-decoder especializado en traduccion | CC-BY-NC-4.0 | HuggingFace, ampliamente adoptado | Soporta uzn_Latn entre 200 idiomas; metrica concreta no comparada aqui |
-| Modelos Helsinki-NLP OPUS-MT uz-en | ~77 M | 512 tokens | Encoder-decoder Marian | CC-BY-4.0 (segun variante) | HuggingFace | Especifico de traduccion; no comparable en generacion libre |
+| mradermacher/Llama-3.2-1B-uz-en-translator-GGUF | 1,24 B | No confirmado (base: 128k) | Decoder-only denso, 12 cuantizaciones GGUF | No disponible | Hugging Face, 0 descargas | No disponible |
+| Saidakmal/Llama-3.2-1B-uz-en-translator | 1,24 B | No disponible | Decoder-only denso, safetensors | No disponible | Hugging Face (modelo origen) | No disponible |
+| meta-llama/Llama-3.2-1B(-Instruct) | 1,24 B | 128.000 tokens | Decoder-only denso | Llama 3.2 Community License | Hugging Face, ampliamente adoptado | Bajo: no esta especializado en uzbeko |
+| NLLB-200-distilled-600M (Meta) | 0,6 B | 512 tokens | Encoder-decoder especializado en traduccion | CC-BY-NC-4.0 | Hugging Face, ampliamente adoptado | Soporta uzn_Latn entre 200 idiomas; metrica concreta no comparada aqui |
+| Modelos Helsinki-NLP OPUS-MT uz-en | ~77 M | 512 tokens | Encoder-decoder Marian | CC-BY-4.0 (segun variante) | Hugging Face | Especifico de traduccion; no comparable en generacion libre |
 
 Nota: los valores de rendimiento no se pueden contrastar porque el repositorio analizado no publica ninguna evaluacion. Las alternativas se incluyen por categoria funcional (traduccion ligera uz-en), no porque existan comparaciones directas publicadas.
 

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stride-qwen3-1.7b-nonthinking-stabilized-2048-single_step-20260916 | 1.700 millones (base) mas adaptador LoRA rango 16 | 8.192 tokens de prompt mas respuesta en entrenamiento | safetensors (PEFT) | no disponible | Publico en HuggingFace, 0 descargas, 0 valoraciones |
-| Qwen/Qwen3-1.7B (modelo base) | 1.700 millones | no disponible en la informacion proporcionada | safetensors | no disponible en la informacion proporcionada | Publico en HuggingFace, revision fijada `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` |
+| stride-qwen3-1.7b-nonthinking-stabilized-2048-single_step-20260916 | 1.700 millones (base) mas adaptador LoRA rango 16 | 8.192 tokens de prompt mas respuesta en entrenamiento | safetensors (PEFT) | no disponible | Publico en Hugging Face, 0 descargas, 0 valoraciones |
+| Qwen/Qwen3-1.7B (modelo base) | 1.700 millones | no disponible en la informacion proporcionada | safetensors | no disponible en la informacion proporcionada | Publico en Hugging Face, revision fijada `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e` |
 | Otros adaptadores LoRA sobre Qwen3-1.7B | 1.700 millones (base) mas adaptador | no disponible | safetensors (PEFT) | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y disponibilidad.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-single_step-20260916
+- Pagina del modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-single_step-20260916
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision fijada del modelo base: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados disponibles corresponden a articulos divulgativos sobre la dispersion de la luz en la atmosfera (NASA Space Place, Britannica, Mental Floss, BBC Bitesize y NOAA) y no guardan relacion con esta ficha.

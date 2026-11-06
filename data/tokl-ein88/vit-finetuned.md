@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tokl-ein88/vit-finetuned` es un prototipo de investigación publicado en HuggingFace por el usuario Tokl-ein88. Se presenta como un Vision Transformer (ViT) orientado a tareas de generación, pero la propia model card aclara de forma explícita que el repositorio no contiene un modelo entrenado, sino un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor no reclama ninguna métrica de rendimiento y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
+`Tokl-ein88/vit-finetuned` es un prototipo de investigación publicado en Hugging Face por el usuario Tokl-ein88. Se presenta como un Vision Transformer (ViT) orientado a tareas de generación, pero la propia model card aclara de forma explícita que el repositorio no contiene un modelo entrenado, sino un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor no reclama ninguna métrica de rendimiento y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
 El dato más relevante es la discrepancia entre la etiqueta declarada y la realidad del artefacto: la model card describe la escala como "giant", mientras que el recuento real de parámetros en `model.safetensors` es de 49.600 parámetros (aproximadamente 0,05 M). Es decir, no se trata de un modelo grande ni de un modelo listo para producción, sino de un esqueleto de código con una configuración de arquitectura registrada en `config.json` y una receta de entrenamiento por defecto en `training_args.json`.
 
@@ -65,7 +65,7 @@ Advertencia importante: estos requisitos de hardware se refieren al checkpoint d
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría (prototipos de investigación sin entrenar, con licencia MIT y publicación en HuggingFace). Cualquier comparación con ViT-base, ViT-large o modelos de visión generativos consolidados sería engañosa, porque esos modelos sí están entrenados y publican benchmarks, mientras que este repositorio declara explícitamente no haber sido entrenado ni evaluado.
+No disponible. No se han identificado en la información proporcionada modelos comparables de la misma categoría (prototipos de investigación sin entrenar, con licencia MIT y publicación en Hugging Face). Cualquier comparación con ViT-base, ViT-large o modelos de visión generativos consolidados sería engañosa, porque esos modelos sí están entrenados y publican benchmarks, mientras que este repositorio declara explícitamente no haber sido entrenado ni evaluado.
 
 | Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Tokl-ein88/vit-finetuned
+- Página del modelo en Hugging Face: https://huggingface.co/Tokl-ein88/vit-finetuned
 - Ficheros incluidos en el repositorio: `finetune.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código adicional o demo: no disponible
 - No se han encontrado enlaces relevantes adicionales en la búsqueda web; los resultados devueltos correspondían a sitios de apuestas deportivas sin relación con el modelo.

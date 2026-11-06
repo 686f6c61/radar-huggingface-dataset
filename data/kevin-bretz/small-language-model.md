@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Small-Language-Model es un repositorio de HuggingFace publicado por Kevin Bretz que recoge una familia de modelos de lenguaje de tamano muy reducido entrenados con nanochat, la implementacion minimalista de un clon de ChatGPT creada por Andrej Karpathy. Los modelos se desarrollaron como parte de la Assignment 1 del curso Agentic LLMs de la Universidad de Leiden, con la autoria de Kevin Bretz y An Nguyen, y todo el entrenamiento se realizo en una unica GPU NVIDIA RTX 2070 SUPER con 8 GB de VRAM. Se trata, por tanto, de un artefacto fundamentalmente academico y educativo.
+Small-Language-Model es un repositorio de Hugging Face publicado por Kevin Bretz que recoge una familia de modelos de lenguaje de tamano muy reducido entrenados con nanochat, la implementacion minimalista de un clon de ChatGPT creada por Andrej Karpathy. Los modelos se desarrollaron como parte de la Assignment 1 del curso Agentic LLMs de la Universidad de Leiden, con la autoria de Kevin Bretz y An Nguyen, y todo el entrenamiento se realizo en una unica GPU NVIDIA RTX 2070 SUPER con 8 GB de VRAM. Se trata, por tanto, de un artefacto fundamentalmente academico y educativo.
 
 El repositorio incluye dos configuraciones de profundidad: un modelo de profundidad 2 con 13,0 millones de parametros y otro de profundidad 4 con 36,7 millones de parametros. Ambos se sometieron a un pipeline de tres etapas (pre-entrenamiento, mid-training y SFT) sobre el dataset ClimbMix y posteriormente sobre MMLU, GSM8K y SmolTalk. Se adjunta tambien un tokenizer BPE de 32.768 tokens, ademas de un tokenizer alternativo de 8.192 tokens usado unicamente con fines de comparacion.
 
@@ -70,10 +70,10 @@ La model card no incluye comparativas. A continuacion se contrasta con modelos d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kevin-bretz/Small-Language-Model (d4) | 36,7 M | no disponible | no disponible | HuggingFace, formato .pt |
+| kevin-bretz/Small-Language-Model (d4) | 36,7 M | no disponible | no disponible | Hugging Face, formato .pt |
 | GPT-2 small | 124 M | 1.024 tokens | MIT (segun el proyecto original) | Ampliamente disponible |
-| Pythia-70M | 70 M | 2.048 tokens | Apache 2.0 | HuggingFace |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | HuggingFace |
+| Pythia-70M | 70 M | 2.048 tokens | Apache 2.0 | Hugging Face |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para establecer una jerarquia de calidad entre estos modelos y los checkpoints de este repositorio.
 
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparables para establecer una jerarquia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kevin-bretz/Small-Language-Model
+- Hugging Face: https://huggingface.co/kevin-bretz/Small-Language-Model
 - Repositorio GitHub de los autores: https://github.com/kevin-bretz/Small-Language-Model
 - Proyecto nanochat (Karpathy): https://github.com/karpathy/nanochat

@@ -79,7 +79,7 @@ La diferencia principal entre esta variante y el modelo base es la cabeza MTP af
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp
 - Modelo base: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b
 - Dataset de entrenamiento: https://huggingface.co/datasets/ProCreations/grug-27b-v2-corrective
 - Variante GGUF con cabeza MTP: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-mtp-gguf

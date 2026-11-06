@@ -102,7 +102,7 @@ No se dispone de datos sobre alternativas de la misma categoria (otros extractor
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/litert-community/GLiNER2.5-Small-LiteRT
+- Ficha en Hugging Face: https://huggingface.co/litert-community/GLiNER2.5-Small-LiteRT
 - Modelo base: https://huggingface.co/fastino/gliner2.5-small-v1
 - Paper referenciado en los metadatos: arXiv:2507.18546
 - Resultados de la busqueda web: no se encontro ningun enlace relevante. Las consultas devolvieron contenido no relacionado con el modelo (foros de soporte y preguntas sin conexion con GLiNER2 ni con LiteRT).

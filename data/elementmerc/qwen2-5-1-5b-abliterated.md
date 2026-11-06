@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ElementMerc/qwen2.5-1.5b-abliterated | 1,54 B | 32.768 (heredado del base) | Apache-2.0 | HuggingFace, pesos safetensors y GGUF | Sin rechazo; métricas retiradas por el autor |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache-2.0 | HuggingFace | Modelo base con rechazo intacto; benchmarks públicos de Qwen2.5 |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño similar, licencia más restrictiva y contexto mayor |
-| google/gemma-2-2b-it | 2,6 B | 8.000 | Gemma Terms of Use | HuggingFace | Alternativa algo mayor, contexto reducido y licencia con condiciones de uso |
+| ElementMerc/qwen2.5-1.5b-abliterated | 1,54 B | 32.768 (heredado del base) | Apache-2.0 | Hugging Face, pesos safetensors y GGUF | Sin rechazo; métricas retiradas por el autor |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache-2.0 | Hugging Face | Modelo base con rechazo intacto; benchmarks públicos de Qwen2.5 |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar, licencia más restrictiva y contexto mayor |
+| google/gemma-2-2b-it | 2,6 B | 8.000 | Gemma Terms of Use | Hugging Face | Alternativa algo mayor, contexto reducido y licencia con condiciones de uso |
 
 Los datos de rendimiento comparativo entre estos modelos no están disponibles en la información proporcionada, y en el caso del modelo de esta ficha las métricas propias han sido retiradas por su autor.
 
@@ -96,7 +96,7 @@ Los datos de rendimiento comparativo entre estos modelos no están disponibles e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ElementMerc/qwen2.5-1.5b-abliterated
+- Modelo en Hugging Face: https://huggingface.co/ElementMerc/qwen2.5-1.5b-abliterated
 - Builds GGUF: https://huggingface.co/ElementMerc/qwen2.5-1.5b-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de senbonzakura: https://github.com/elementmerc/senbonzakura

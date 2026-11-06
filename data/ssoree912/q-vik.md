@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Q-ViK (Question-Guided Visual KV Cache Eviction) es un método de compresión de la caché KV para modelos de visión y lenguaje (VLM) de gran tamaño, desarrollado por Solhee Hwang y Jangho Kim en la Universidad de Kookmin y presentado en NeurIPS 2026. El repositorio de HuggingFace no contiene un modelo generativo completo, sino los checkpoints del *scorer* estudiante que implementa la política de expulsión de entradas visuales de la caché KV, condicionada por la pregunta del usuario. Se distribuye como complemento de dos VLM base: LLaVA-OneVision-Qwen2-7B-OV y LLaVA-1.5-7B.
+Q-ViK (Question-Guided Visual KV Cache Eviction) es un método de compresión de la caché KV para modelos de visión y lenguaje (VLM) de gran tamaño, desarrollado por Solhee Hwang y Jangho Kim en la Universidad de Kookmin y presentado en NeurIPS 2026. El repositorio de Hugging Face no contiene un modelo generativo completo, sino los checkpoints del *scorer* estudiante que implementa la política de expulsión de entradas visuales de la caché KV, condicionada por la pregunta del usuario. Se distribuye como complemento de dos VLM base: LLaVA-OneVision-Qwen2-7B-OV y LLaVA-1.5-7B.
 
 El problema que resuelve es el coste computacional y de memoria que supone mantener en caché todos los tokens visuales durante la decodificación en un VLM. Q-ViK entrena un scorer ligero que, a partir únicamente de las representaciones de prefill, predice qué entradas visuales de la caché reutilizarán realmente los tokens de respuesta futuros. En inferencia, una sola pasada de scoring tras el prefill expulsa las entradas visuales de baja utilidad y conserva íntegra la caché de texto, sin necesidad de decodificación completa previa ni de trazas generadas.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Q-ViK (este repo) | Scorer de expulsión de caché KV visual | No disponible | No disponible | Apache 2.0 | HuggingFace + GitHub |
-| LLaVA-OneVision-Qwen2-7B-OV | VLM base | 7B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace (lmms-lab) |
-| LLaVA-1.5-7B | VLM base | 7B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace (liuhaotian) |
+| Q-ViK (este repo) | Scorer de expulsión de caché KV visual | No disponible | No disponible | Apache 2.0 | Hugging Face + GitHub |
+| LLaVA-OneVision-Qwen2-7B-OV | VLM base | 7B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face (lmms-lab) |
+| LLaVA-1.5-7B | VLM base | 7B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face (liuhaotian) |
 
 No se dispone de datos de rendimiento comparativo con otros métodos de compresión de caché KV en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo con otros métodos de compresi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssoree912/Q-ViK
+- Hugging Face: https://huggingface.co/ssoree912/Q-ViK
 - Repositorio de código: https://github.com/ssoree912/Q-ViK
 - VLM base LLaVA-OneVision-Qwen2-7B-OV: https://huggingface.co/lmms-lab/llava-onevision-qwen2-7b-ov
 - VLM base LLaVA-1.5-7B: https://huggingface.co/liuhaotian/llava-v1.5-7b

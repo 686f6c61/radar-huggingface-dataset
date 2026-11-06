@@ -77,7 +77,7 @@ La comparativa con modelos de otras familias (como Mistral 7B o Llama 3 8B) no e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Nyx-RP-9B-Instruct-2608-v1-OBLITERATED-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Nyx-RP-9B-Instruct-2608-v1-OBLITERATED-i1-GGUF
 - Modelo base (Muyuxiao): https://huggingface.co/Muyuxiao/Nyx-RP-9B-Instruct-2608-v1-OBLITERATED
 - Cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/Nyx-RP-9B-Instruct-2608-v1-OBLITERATED-GGUF
 - Version Preview del mismo autor: https://huggingface.co/mradermacher/Nyx-RP-9B-Preview-2608-v0.1-i1-GGUF

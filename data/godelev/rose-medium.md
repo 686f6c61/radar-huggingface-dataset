@@ -75,7 +75,7 @@ Adicionalmente, el autor reporta una puntuación de 1098,7 Elo en BananaMind Bas
 - VRAM estimada: con 97,8 M de parámetros, los pesos en fp32 ocupan aproximadamente 391 MB; en fp16 serían ~196 MB y en int8 ~98 MB. Esto permite ejecutar el modelo en GPUs con 1 GB de VRAM o incluso en CPU.
 - GPU recomendadas: cualquier GPU moderna con al menos 1 GB de VRAM (ej. NVIDIA GTX 1050, RTX 2050, o integradas). También funciona en CPU con suficiente RAM.
 - Compatibilidad con consumer GPU: sí, es perfectamente viable en hardware de consumo.
-- Opciones de despliegue: la página de HuggingFace menciona soporte para SGLang y Docker Model Runner. También puede ejecutarse con transformers estándar y, potencialmente, con llama.cpp si se convierte a GGUF (no confirmado).
+- Opciones de despliegue: la página de Hugging Face menciona soporte para SGLang y Docker Model Runner. También puede ejecutarse con transformers estándar y, potencialmente, con llama.cpp si se convierte a GGUF (no confirmado).
 - Latencia y throughput: al ser un modelo pequeño, la latencia es baja; en CPU puede generar varios tokens por segundo, y en GPU la generación es casi instantánea. No hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -101,5 +101,5 @@ Rose-Medium mejora claramente a su hermano pequeño en todas las métricas repor
 
 ## Enlaces
 
-- [HuggingFace: GODELEV/Rose-Medium](https://huggingface.co/GODELEV/Rose-Medium)
+- [Hugging Face: GODELEV/Rose-Medium](https://huggingface.co/GODELEV/Rose-Medium)
 - [Arquitectura gráfica en hfviewer](https://hfviewer.com/GODELEV/Rose-Medium)

@@ -72,7 +72,7 @@ No se dispone de información comparativa en la documentación del repositorio. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prasel/KAT-Coder-V2.5-Dev-MTP-ROCmFPX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prasel/KAT-Coder-V2.5-Dev-MTP-ROCmFPX-GGUF
 - Modelo base: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Motor ROCmFPX: https://github.com/charlie12345/ROCmFPX
 - Modelo Qwen utilizado para MTP: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

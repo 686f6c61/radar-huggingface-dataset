@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LeoZotos/OLMo-2-0425-1B-fineweb-bio-textbooks-cpt | 1,48B | 2048 (entrenamiento CPT) | No disponible | HuggingFace, safetensors | CPT de dominio, sin benchmarks |
+| LeoZotos/OLMo-2-0425-1B-fineweb-bio-textbooks-cpt | 1,48B | 2048 (entrenamiento CPT) | No disponible | Hugging Face, safetensors | CPT de dominio, sin benchmarks |
 | OLMo-2-0425-1B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No se aportó enlace | Modelo de partida referenciado en la config como ruta local |
 | Otras alternativas de ~1-2B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la información proporcionada |
 
@@ -90,7 +90,7 @@ No se dispone de información suficiente en la documentación aportada para esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeoZotos/OLMo-2-0425-1B-fineweb-bio-textbooks-cpt
+- Modelo en Hugging Face: https://huggingface.co/LeoZotos/OLMo-2-0425-1B-fineweb-bio-textbooks-cpt
 - Dataset de entrenamiento referenciado en la configuración: `LeoZotos/bio_textbooks` (no se proporcionó URL directa)
 - Modelo base referenciado en la configuración: OLMo-2-0425-1B (aparece como ruta local `/scratch-shared/lzotos/local_models/...`, sin enlace en la información disponible)
 - Paper, blog, repositorio o demo del autor: no disponibles

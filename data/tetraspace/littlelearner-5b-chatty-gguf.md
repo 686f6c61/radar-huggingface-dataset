@@ -4,7 +4,7 @@
 
 ## Resumen
 
-littlelearner-5b-chatty-GGUF es la version cuantizada en formato GGUF del modelo conversacional littlelearner/littlelearner-5b-chatty, publicada por el usuario Tetraspace en HuggingFace. Se trata de un modelo de generacion de texto de aproximadamente 5.041 millones de parametros (5,04B), orientado a dialogue multi-turno y distribuido en el formato GGUF, el estandar de facto para inferencia en CPU y GPU de gama consumer mediante llama.cpp y sus derivados.
+littlelearner-5b-chatty-GGUF es la version cuantizada en formato GGUF del modelo conversacional littlelearner/littlelearner-5b-chatty, publicada por el usuario Tetraspace en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 5.041 millones de parametros (5,04B), orientado a dialogue multi-turno y distribuido en el formato GGUF, el estandar de facto para inferencia en CPU y GPU de gama consumer mediante llama.cpp y sus derivados.
 
 El modelo base pertenece al proyecto littlelearner y, segun las etiquetas declaradas en el repositorio, esta vinculado a la arquitectura de la familia Qwen3 y a un supuesto tamano "k5", ademas de haberse entrenado sobre el dataset LittleCurriculum del propio autor. El repositorio declara el ingles como unico idioma soportado y una licencia de tipo "other", lo que obliga a revisar los terminos concretos antes de cualquier uso comercial.
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada pero clara: al estar en GGUF, es ejecutable l
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion consultada. La model card del repositorio se limita a declarar los metadatos de HuggingFace (modelo base, licencia, idioma, pipeline y datasets) sin desarrollarlos. Las etiquetas `qwen3` y `k5` apuntan a una posible base arquitectonica de tipo transformer decoder-only perteneciente a la familia Qwen3, pero esto no esta confirmado por el autor en la informacion disponible, por lo que debe tratarse como indicio y no como dato verificado.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo en la documentacion consultada. La model card del repositorio se limita a declarar los metadatos de Hugging Face (modelo base, licencia, idioma, pipeline y datasets) sin desarrollarlos. Las etiquetas `qwen3` y `k5` apuntan a una posible base arquitectonica de tipo transformer decoder-only perteneciente a la familia Qwen3, pero esto no esta confirmado por el autor en la informacion disponible, por lo que debe tratarse como indicio y no como dato verificado.
 
 Respecto al entrenamiento, lo unico documentado es que el modelo base se asocia al dataset `littlelearner/LittleCurriculum`. No se especifica el numero de tokens de entrenamiento, la composicion del corpus, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruction tuning supervisado. Esta version concreta es una cuantizacion del modelo base `littlelearner/littlelearner-5b-chatty` (relacion declarada: `quantized`), por lo que no incorpora entrenamiento adicional: su unica transformacion respecto al original es la conversion de pesos a formato GGUF.
 
@@ -101,7 +101,7 @@ No se han encontrado en la informacion disponible resultados comparativos de ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tetraspace/littlelearner-5b-chatty-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Tetraspace/littlelearner-5b-chatty-GGUF
 - Modelo base: https://huggingface.co/littlelearner/littlelearner-5b-chatty
 - Dataset declarado: https://huggingface.co/datasets/littlelearner/LittleCurriculum
 - Paper, blog o repositorio adicional: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces encontrados no guardaban relacion con el y se han descartado por no ser fuentes tecnicas fiables.

@@ -100,6 +100,6 @@ La comparacion no permite concluir nada sobre la calidad relativa de `clef-flash
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thomasgauthier/clef-flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thomasgauthier/clef-flash-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

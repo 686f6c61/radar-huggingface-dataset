@@ -103,7 +103,7 @@ No se han publicado comparaciones contra modelos de propósito general de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eduardoworrel/alias3-micro-1026-ONNX
+- Modelo en Hugging Face: https://huggingface.co/eduardoworrel/alias3-micro-1026-ONNX
 - Modelo base: https://huggingface.co/aliasrobotics/alias3-micro-1026
 - Paper del modelo: https://arxiv.org/abs/2610.16550
 - Pointer networks (Vinyals et al., 2015): https://arxiv.org/abs/1506.03134

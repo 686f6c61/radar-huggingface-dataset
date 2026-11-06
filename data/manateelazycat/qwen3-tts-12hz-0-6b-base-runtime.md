@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/Qwen3-TTS-12Hz-0.6B-Base-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/Qwen3-TTS-12Hz-0.6B-Base-Runtime
 - vLLM-Omni (proyecto referenciado, commit fijado `191b9a8dbf22fc494b7db34ea5ae04153f44f94d`): no se proporciona URL en la información disponible.
 - Modelo Qwen3-TTS base: no se proporciona URL en la información disponible.
 - Documentación de NVIDIA Jetson AGX Thor / JetPack 7.2 y AGX Orin / JetPack 6.2.1: no se proporciona URL en la información disponible.

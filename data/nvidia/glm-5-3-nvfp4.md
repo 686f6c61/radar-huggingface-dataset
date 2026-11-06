@@ -6,7 +6,7 @@ NVIDIA GLM-5.3-NVFP4 es la versión cuantizada en formato NVFP4 del modelo GLM-5
 
 El problema que resuelve esta ficha es el de despliegue: un modelo de 753B en precisión completa requiere recursos de memoria muy superiores a los que permite servir de forma económica. La cuantización NVFP4 reduce el peso de los pesos a aproximadamente 0,5 bytes por parámetro, con el repositorio ocupando 464,2 GB, lo que hace viable servirlo en nodos de GPU Blackwell con un número reducido de aceleradores. Es relevante ahora porque los formatos de 4 bits nativos de hardware (FP4 con escalas por bloque) se han convertido en la vía principal para servir modelos MoE de gran tamaño sin multiplicar el coste de inferencia.
 
-La ficha corresponde a un artefacto de inferencia, no a un modelo entrenado desde cero: los datos de entrenamiento originales no están divulgados y la evaluación publicada en la model card se limita a enumerar los benchmarks empleados sobre el modelo base, sin incluir puntuaciones. El repositorio acumula 2.439 descargas y 11 likes en HuggingFace, con licencia NVIDIA Open Model Agreement y uso permitido tanto comercial como no comercial según el texto del autor.
+La ficha corresponde a un artefacto de inferencia, no a un modelo entrenado desde cero: los datos de entrenamiento originales no están divulgados y la evaluación publicada en la model card se limita a enumerar los benchmarks empleados sobre el modelo base, sin incluir puntuaciones. El repositorio acumula 2.439 descargas y 11 likes en Hugging Face, con licencia NVIDIA Open Model Agreement y uso permitido tanto comercial como no comercial según el texto del autor.
 
 ## Especificaciones técnicas
 
@@ -26,7 +26,7 @@ La ficha corresponde a un artefacto de inferencia, no a un modelo entrenado desd
 | Hardware compatible | Microarquitectura NVIDIA Blackwell |
 | Sistema operativo | Linux |
 | Versión del modelo | NVFP4 1.0, cuantizado con nvidia-modelopt v0.47.0 |
-| Fecha de publicación en HuggingFace | 09/10/2026 (según model card); alta en el repositorio el 14/09/2026, última actualización el 18/09/2026 |
+| Fecha de publicación en Hugging Face | 09/10/2026 (según model card); alta en el repositorio el 14/09/2026, última actualización el 18/09/2026 |
 | Tamaño del repositorio | 464,2 GB |
 | Modelo base | zai-org/GLM-5.3 |
 
@@ -89,8 +89,8 @@ La información disponible solo permite comparar el artefacto con el modelo del 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nvidia/GLM-5.3-NVFP4 | 753B totales / 40B activos (según model card) | 1M | NVFP4 (FP4 4 bits) | NVIDIA Open Model Agreement | HuggingFace, 464,2 GB, SGLang, Blackwell |
-| zai-org/GLM-5.3 (base) | 753B totales / 40B activos | 1M | Precisión original (no especificada) | Licencia GLM-5.3 | HuggingFace; pesos no optimizados para FP4 |
+| nvidia/GLM-5.3-NVFP4 | 753B totales / 40B activos (según model card) | 1M | NVFP4 (FP4 4 bits) | NVIDIA Open Model Agreement | Hugging Face, 464,2 GB, SGLang, Blackwell |
+| zai-org/GLM-5.3 (base) | 753B totales / 40B activos | 1M | Precisión original (no especificada) | Licencia GLM-5.3 | Hugging Face; pesos no optimizados para FP4 |
 | zai-org/GLM-5.2 | no disponible | no disponible | no disponible | no disponible | Comparte modelo base con GLM-5.3 según la model card |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -110,7 +110,7 @@ La información disponible solo permite comparar el artefacto con el modelo del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/GLM-5.3-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nvidia/GLM-5.3-NVFP4
 - Modelo base (ZAI, GLM-5.3): https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - NVIDIA Model Optimizer (repositorio): https://github.com/NVIDIA/Model-Optimizer

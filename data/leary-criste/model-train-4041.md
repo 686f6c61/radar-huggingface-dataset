@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leary-criste/model-train-4041` es un modelo de lenguaje publicado en HuggingFace por el usuario leary-criste el 22 de septiembre de 2026. Se trata de un repositorio con acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo. El repositorio tiene un tamano de 70,2 GB y contiene pesos en formato safetensors, con un total declarado de 35.107.181.936 parametros (aproximadamente 35,1 mil millones).
+`leary-criste/model-train-4041` es un modelo de lenguaje publicado en Hugging Face por el usuario leary-criste el 22 de septiembre de 2026. Se trata de un repositorio con acceso restringido (gated): es necesario aceptar condiciones en la plataforma antes de poder descargarlo. El repositorio tiene un tamano de 70,2 GB y contiene pesos en formato safetensors, con un total declarado de 35.107.181.936 parametros (aproximadamente 35,1 mil millones).
 
 La etiqueta de arquitectura del repositorio es `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) perteneciente a la familia Qwen 3.5. No obstante, no se ha publicado informacion adicional que confirme el numero de parametros activos, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. El nombre del repositorio, `model-train-4041`, apunta a un checkpoint intermedio de un proceso de entrenamiento o ajuste, mas que a un modelo final publicado con documentacion.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es principalmente de advertencia: el modelo carece d
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 70,2 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 22 de septiembre de 2026 |
 | Ultima actualizacion | 22 de septiembre de 2026 |
 | Descargas / votos | 2 / 0 |
@@ -71,7 +71,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros y del 
 - Opciones de despliegue: vLLM, SGLang o TGI para servido en BF16 sobre GPU de 80 GB. llama.cpp y Ollama son viables unicamente tras convertir los pesos a GGUF.
 - Latencia y throughput estimados: no disponible.
 - Almacenamiento: 70,2 GB de disco para los pesos originales, mas espacio adicional si se generan cuantizaciones.
-- Acceso: la descarga esta restringida, por lo que cualquier despliegue requiere primero solicitar acceso en HuggingFace.
+- Acceso: la descarga esta restringida, por lo que cualquier despliegue requiere primero solicitar acceso en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -86,7 +86,7 @@ No disponible. No se ha podido identificar con certeza el modelo base ni modelos
 
 - Ausencia total de model card: no hay descripcion de arquitectura, datos de entrenamiento, hiperparametros ni metodologia de evaluacion.
 - Licencia no declarada: sin licencia explicita no puede asumirse ningun derecho de uso comercial. Tratarlo como no apto para produccion hasta aclararlo con el autor.
-- Acceso restringido: la descarga exige aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad de cualquier evaluacion.
+- Acceso restringido: la descarga exige aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad de cualquier evaluacion.
 - Validacion nula por la comunidad: 2 descargas y 0 votos, con creacion y ultima actualizacion separadas por 18 segundos, indican un artefacto subido de forma automatica.
 - Nombre indicativo de checkpoint de entrenamiento: `model-train-4041` sugiere un estado intermedio, potencialmente no convergido o no alineado.
 - Contexto e idiomas desconocidos: cualquier caso de uso con entradas largas exige medir experimentalmente la ventana efectiva antes de desplegar.
@@ -98,7 +98,7 @@ No disponible. No se ha podido identificar con certeza el modelo base ni modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leary-criste/model-train-4041
+- Hugging Face: https://huggingface.co/leary-criste/model-train-4041
 - Repositorio del NHS National Document Repository (resultado de busqueda no relacionado con el modelo): https://national-document-repository.nhs.uk/
 - Pagina de servicio del NHS (resultado de busqueda no relacionado con el modelo): https://digital.nhs.uk/services/access-and-store-digital-patient-documents
 - Paper, blog, repositorio de codigo o demo: no disponible.

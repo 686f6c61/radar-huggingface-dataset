@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. El identificador sugiere un experimento (exp39) orientado a reconocimiento de voz mediante CTC (Connectionist Temporal Classification) sobre un conjunto de datos etiquetado como "human10bi", con alguna variante geométrica ("hhdgeom") y generación con LLM ("llmgen"), sobre un presupuesto de 25.000 pasos o muestras. Sin embargo, la model card no aporta ninguna descripción funcional, arquitectura declarada ni detalles de entrenamiento: es la plantilla por defecto de HuggingFace sin rellenar.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. El identificador sugiere un experimento (exp39) orientado a reconocimiento de voz mediante CTC (Connectionist Temporal Classification) sobre un conjunto de datos etiquetado como "human10bi", con alguna variante geométrica ("hhdgeom") y generación con LLM ("llmgen"), sobre un presupuesto de 25.000 pasos o muestras. Sin embargo, la model card no aporta ninguna descripción funcional, arquitectura declarada ni detalles de entrenamiento: es la plantilla por defecto de Hugging Face sin rellenar.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: se trata de un artefacto de investigación con cero descargas y cero likes en el momento de la consulta, cuyo repo ocupa 0,3 GB y contiene pesos en formato safetensors. No hay información pública sobre el pipeline, los idiomas soportados ni los datos de entrenamiento. Cualquier evaluación de capacidades, benchmarks o idoneidad para producción debe considerarse no disponible a partir de la información proporcionada.
 
@@ -66,7 +66,7 @@ No disponible. No se conocen modelos comparables porque no se ha confirmado la t
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace sin contenido sustantivo: no hay descripción, uso previsto, datos de entrenamiento ni evaluación.
+- La model card es la plantilla por defecto de Hugging Face sin contenido sustantivo: no hay descripción, uso previsto, datos de entrenamiento ni evaluación.
 - Se desconoce si los pesos son funcionales o si el checkpoint está completo.
 - No hay información sobre sesgos, y al no conocerse los datos de entrenamiento no puede evaluarse su impacto.
 - Riesgo de alucinación no evaluable: no se confirma que sea un modelo generativo de texto.
@@ -78,5 +78,5 @@ No disponible. No se conocen modelos comparables porque no se ha confirmado la t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-25k
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

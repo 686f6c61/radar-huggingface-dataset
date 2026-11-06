@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kataguru Industry-Coder-27B v3.0 NVFP4 es un ajuste fino y cuantización híbrida del modelo base Qwen/Qwen3.8-27B, publicado por el usuario kataguru en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text con 27.781.427.952 parámetros totales (arquitectura densa, no MoE), orientado a ingeniería de software, automatización industrial (PLC, CNC, IEC 61131-3, TwinCAT, SCL de Siemens), ciberseguridad y codificación agéntica. El autor lo describe como un modelo bilingüe nativo finlandés-inglés, con capacidades adicionales en estonio, húngaro y turco.
+Kataguru Industry-Coder-27B v3.0 NVFP4 es un ajuste fino y cuantización híbrida del modelo base Qwen/Qwen3.8-27B, publicado por el usuario kataguru en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text con 27.781.427.952 parámetros totales (arquitectura densa, no MoE), orientado a ingeniería de software, automatización industrial (PLC, CNC, IEC 61131-3, TwinCAT, SCL de Siemens), ciberseguridad y codificación agéntica. El autor lo describe como un modelo bilingüe nativo finlandés-inglés, con capacidades adicionales en estonio, húngaro y turco.
 
 La contribución principal de esta versión no es un nuevo entrenamiento desde cero, sino una cuantización calibrada denominada NVFP4-W4ATTN-AWQ híbrida, que combina NVFP4 para las capas MLP y W4A16 asimétrico con AWQ para las capas de atención, preservando en BF16 las proyecciones `in_proj_a/b`, el encoder visual, el módulo MTP, `lm_head` y `embed_tokens`. El resultado ocupa 20,28 GB en disco, un 25 % menos que una cuantización NVFP4 RTN estándar, y está pensado para ejecutarse en GPUs Blackwell (sm_120) mediante vLLM.
 
@@ -87,9 +87,9 @@ Los resultados de los benchmarks 1 a 13 de la suite no están incluidos en la in
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Kataguru Industry-Coder-27B v3.0 NVFP4 | 27,78 B (denso) | 262.144 | Apache 2.0 | Multimodal, codificación industrial, finlandés-inglés | HuggingFace, pesos safetensors cuantizados |
-| Qwen/Qwen3.8-27B (base) | 27 B (denso) | 262.144 | Apache 2.0 (según el campo license del modelo derivado) | Multimodal generalista | HuggingFace |
-| Kataguru Industry-Coder-27B v2.0 | 27 B (denso) | 262.144 | Apache 2.0 | Igual que v3.0, sin la cuantización híbrida | HuggingFace |
+| Kataguru Industry-Coder-27B v3.0 NVFP4 | 27,78 B (denso) | 262.144 | Apache 2.0 | Multimodal, codificación industrial, finlandés-inglés | Hugging Face, pesos safetensors cuantizados |
+| Qwen/Qwen3.8-27B (base) | 27 B (denso) | 262.144 | Apache 2.0 (según el campo license del modelo derivado) | Multimodal generalista | Hugging Face |
+| Kataguru Industry-Coder-27B v2.0 | 27 B (denso) | 262.144 | Apache 2.0 | Igual que v3.0, sin la cuantización híbrida | Hugging Face |
 
 La comparativa con alternativas de otros fabricantes (por ejemplo, modelos de codificación de 30 B de otras familias) no está disponible en la información proporcionada. Los datos de rendimiento comparativo se limitan a la propia línea Qwen3.8-27B y a la versión anterior v2.0 del mismo autor.
 
@@ -106,7 +106,7 @@ La comparativa con alternativas de otros fabricantes (por ejemplo, modelos de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kataguru/Industry-Coder-27B-v3.0-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/kataguru/Industry-Coder-27B-v3.0-NVFP4
 - Versión anterior v2.0: https://huggingface.co/kataguru/Industry-Coder-27B-v2.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 

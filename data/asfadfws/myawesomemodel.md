@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asfadfws bajo licencia MIT. La ficha de HuggingFace lo etiqueta con el pipeline de `feature-extraction` y la arquitectura `bert`, con las etiquetas `transformers`, `pytorch` y `endpoints_compatible`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no declara idiomas soportados.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asfadfws bajo licencia MIT. La ficha de Hugging Face lo etiqueta con el pipeline de `feature-extraction` y la arquitectura `bert`, con las etiquetas `transformers`, `pytorch` y `endpoints_compatible`. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no declara idiomas soportados.
 
-Existe una contradiccion relevante entre los metadatos y la model card. Mientras que las etiquetas de HuggingFace apuntan a un modelo tipo BERT para extraccion de caracteristicas, la model card describe un asistente conversacional con razonamiento profundo, modo de pensamiento, soporte de function calling y busqueda web. Ademas, la model card emplea el nombre generico "MyAwesomeModel" como marcador de posicion en todas sus secciones y varios de sus fragmentos (plantillas de prompt, referencias a un sitio oficial y a un repositorio de codigo) no apuntan a recursos verificables.
+Existe una contradiccion relevante entre los metadatos y la model card. Mientras que las etiquetas de Hugging Face apuntan a un modelo tipo BERT para extraccion de caracteristicas, la model card describe un asistente conversacional con razonamiento profundo, modo de pensamiento, soporte de function calling y busqueda web. Ademas, la model card emplea el nombre generico "MyAwesomeModel" como marcador de posicion en todas sus secciones y varios de sus fragmentos (plantillas de prompt, referencias a un sitio oficial y a un repositorio de codigo) no apuntan a recursos verificables.
 
 El resultado es que no es posible confirmar la arquitectura, el tamano ni las capacidades reales del modelo a partir de la informacion disponible. Los datos de evaluacion que se reproducen mas abajo proceden de la propia model card y deben tratarse con cautela, dado que el repositorio no contiene pesos (0.0 GB) y no se ha publicado documentacion tecnica adicional.
 
@@ -12,7 +12,7 @@ El resultado es que no es posible confirmar la arquitectura, el tamano ni las ca
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun etiquetas de HuggingFace); la model card no la especifica y sugiere un modelo conversacional con razonamiento |
+| Arquitectura | BERT (segun etiquetas de Hugging Face); la model card no la especifica y sugiere un modelo conversacional con razonamiento |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El resultado es que no es posible confirmar la arquitectura, el tamano ni las ca
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite describir la arquitectura con fundamento. La etiqueta `bert` de HuggingFace sugiere un transformer encoder orientado a `feature-extraction`, pero la model card describe un modelo generativo con "profundidad de razonamiento", incremento de tokens de pensamiento por consulta y soporte de function calling, caracteristicas propias de un modelo decoder-only o hibrido. No se ofrece numero de parametros, dimension de capas, cabezas de atencion ni vocabulario.
+La informacion disponible no permite describir la arquitectura con fundamento. La etiqueta `bert` de Hugging Face sugiere un transformer encoder orientado a `feature-extraction`, pero la model card describe un modelo generativo con "profundidad de razonamiento", incremento de tokens de pensamiento por consulta y soporte de function calling, caracteristicas propias de un modelo decoder-only o hibrido. No se ofrece numero de parametros, dimension de capas, cabezas de atencion ni vocabulario.
 
 Respecto al entrenamiento, la model card menciona una actualizacion de version con "mayor uso de recursos computacionales" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", pero no detalla el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras. Se menciona un checkpoint concreto (`step_1000`), seleccionado entre los pasos 100 y 1000 por tener el mayor `eval_accuracy` (0.828), dato que sugiere un proceso de entrenamiento por pasos, si bien no se especifica nada mas. No se documenta ninguna innovacion tecnica verificable (atencion lineal, decodificacion especulativa, etc.).
 
@@ -52,7 +52,7 @@ Debido a que no se ha confirmado la arquitectura real ni existen pesos publicado
 - Function calling en automatizaciones: conexion con APIs externas mediante llamadas a funciones, de acuerdo con el soporte declarado en la model card.
 - Generacion aumentada por recuperacion (RAG) con busqueda web: usando las plantillas de prompt incluidas para incorporar resultados de busqueda y citarlos en la respuesta.
 - Procesamiento de documentos adjuntos: mediante la plantilla de carga de ficheros de la model card, para responder preguntas sobre el contenido de un documento.
-- Extraccion de caracteristicas de texto: si finalmente se confirma la etiqueta `feature-extraction` de HuggingFace, el modelo podria emplearse para obtener embeddings destinados a clasificacion, clustering o busqueda semantica. Esta aplicacion entra en conflicto con las capacidades generativas descritas.
+- Extraccion de caracteristicas de texto: si finalmente se confirma la etiqueta `feature-extraction` de Hugging Face, el modelo podria emplearse para obtener embeddings destinados a clasificacion, clustering o busqueda semantica. Esta aplicacion entra en conflicto con las capacidades generativas descritas.
 
 ## Benchmarks y rendimiento
 
@@ -83,7 +83,7 @@ La model card indica que la puntuacion global ponderada es 0.710, pero que la se
 - VRAM estimada para inferencia: no disponible. El repositorio figura con 0.0 GB y no contiene pesos, por lo que no puede estimarse el consumo segun cuantizacion.
 - GPU recomendadas: no disponible, al desconocerse el numero de parametros.
 - Compatibilidad con GPU de consumo: no disponible por los mismos motivos.
-- Opciones de despliegue: no disponible. Las etiquetas de HuggingFace incluyen `transformers` y `endpoints_compatible`, lo que sugiere compatibilidad con la libreria Transformers y con HuggingFace Inference Endpoints, pero no se detallan formatos adicionales (GGUF, ONNX, etc.).
+- Opciones de despliegue: no disponible. Las etiquetas de Hugging Face incluyen `transformers` y `endpoints_compatible`, lo que sugiere compatibilidad con la libreria Transformers y con Hugging Face Inference Endpoints, pero no se detallan formatos adicionales (GGUF, ONNX, etc.).
 - Latencia y throughput: no disponibles. La model card menciona un consumo medio de 23K tokens por pregunta en el conjunto AIME, dato indicativo del volumen de generacion en tareas de razonamiento, pero no de velocidad de inferencia.
 
 ## Comparativa con modelos similares
@@ -104,6 +104,6 @@ No disponible. Al no conocerse la arquitectura real, el numero de parametros ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asfadfws/MyAwesomeModel
+- Modelo en Hugging Face: https://huggingface.co/asfadfws/MyAwesomeModel
 - Resultados de busqueda web: la busqueda realizada no devolvio ningun resultado relevante sobre el modelo; el unico enlace recuperado (https://www.hellomagazine.com/) no guarda relacion con el contenido de esta ficha.
 - No se han encontrado papers, repositorios de codigo, demos ni blogs asociados al modelo en la informacion disponible.

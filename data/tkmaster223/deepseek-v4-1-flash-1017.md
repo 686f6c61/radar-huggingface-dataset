@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario TKMASTER223, que replica la model card del modelo oficial DeepSeek-V4.1-Flash-1017 de DeepSeek-AI. Se presenta como una actualización menor de DeepSeek-V4.1-Flash con mejoras en razonamiento, generación de código, tareas agénticas y benchmarks visuales, además de una reducción del tiempo de ejecución de tareas y de la longitud de salida. El repositorio contiene 763.205.315.794 parámetros en formato safetensors y ocupa 510,3 GB.
+DeepSeek-V4.1-Flash-1017 es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario TKMASTER223, que replica la model card del modelo oficial DeepSeek-V4.1-Flash-1017 de DeepSeek-AI. Se presenta como una actualización menor de DeepSeek-V4.1-Flash con mejoras en razonamiento, generación de código, tareas agénticas y benchmarks visuales, además de una reducción del tiempo de ejecución de tareas y de la longitud de salida. El repositorio contiene 763.205.315.794 parámetros en formato safetensors y ocupa 510,3 GB.
 
 El modelo declara una ventana de contexto de 1M de tokens y un `max_tokens` recomendado de al menos 256K, con `temperature` y `top_p` a 1.0. El pipeline declarado es image-text-to-text, por lo que acepta entradas de imagen y texto de forma intercalada. La licencia indicada es MIT y el identificador de arquitectura en transformers es `deepseek_v41`.
 
@@ -24,7 +24,7 @@ Es relevante porque combina contexto extremadamente largo, capacidades de agente
 | Tamaño del repositorio | 510,3 GB |
 | Parámetros de muestreo recomendados | `temperature` 1.0, `top_p` 1.0 |
 | Compatibilidad | Etiqueta `endpoints_compatible`; requiere implementación de referencia de prompt encoding (no hay plantilla Jinja) |
-| Fecha de creación en HuggingFace | 2026-10-20 |
+| Fecha de creación en Hugging Face | 2026-10-20 |
 
 ## Arquitectura y entrenamiento
 
@@ -117,10 +117,10 @@ La comparación se limita a los benchmarks publicados en la model card; no se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TKMASTER223/DeepSeek-V4.1-Flash-1017
+- Modelo en Hugging Face: https://huggingface.co/TKMASTER223/DeepSeek-V4.1-Flash-1017
 - Modelo oficial de referencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico (PDF): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Toolkit de encoding de prompts (deepseek-recipe): https://github.com/deepseek-ai/deepseek-recipe
 - Implementación de referencia de encoding: https://huggingface.co/TKMASTER223/DeepSeek-V4.1-Flash-1017/tree/main/encoding
 - Instrucciones de inferencia local: https://huggingface.co/TKMASTER223/DeepSeek-V4.1-Flash-1017/tree/main/inference

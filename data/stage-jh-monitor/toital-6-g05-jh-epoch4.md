@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-jh-monitor/toital-6-G05-jh-epoch4 es un checkpoint de un modelo de lenguaje de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) publicado en HuggingFace por el usuario Stage-jh-monitor. Segun la informacion de entrenamiento incluida en su propia model card, se trata de un ajuste por aprendizaje por refuerzo (RL) partiendo del modelo base Qwen/Qwen3.5-4B, dentro de un flujo de trabajo interno denominado jh-workflow. El repositorio se creo el 10 de septiembre de 2026 y se actualizo 84 segundos despues, lo que apunta a un volcado automatico de un pipeline de entrenamiento mas que a una publicacion editorializada.
+Stage-jh-monitor/toital-6-G05-jh-epoch4 es un checkpoint de un modelo de lenguaje de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) publicado en Hugging Face por el usuario Stage-jh-monitor. Segun la informacion de entrenamiento incluida en su propia model card, se trata de un ajuste por aprendizaje por refuerzo (RL) partiendo del modelo base Qwen/Qwen3.5-4B, dentro de un flujo de trabajo interno denominado jh-workflow. El repositorio se creo el 10 de septiembre de 2026 y se actualizo 84 segundos despues, lo que apunta a un volcado automatico de un pipeline de entrenamiento mas que a una publicacion editorializada.
 
 El modelo resuelve, en principio, tareas de generacion de texto con modo de razonamiento activado (enable_thinking = true) y soporte de tool calling, ya que la configuracion de inferencia empleada durante el RL declara los parsers qwen3 y qwen3_coder de vLLM. El entrenamiento se hizo con 10.000 pasos de RL, 8 epocas sobre el dataset Stage-org/toital-6-G05-jh y un juez automatico basado en un modelo propietario (gpt-5.6-luna) para evaluar respuestas abiertas.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| toital-6-G05-jh-epoch4 | 4,54 B | 65.536 tokens configurados en RL | No disponible | HuggingFace, 0 descargas | Checkpoint RL sin evaluacion publicada |
+| toital-6-G05-jh-epoch4 | 4,54 B | 65.536 tokens configurados en RL | No disponible | Hugging Face, 0 descargas | Checkpoint RL sin evaluacion publicada |
 | Qwen/Qwen3.5-4B (modelo base declarado) | No disponible en la informacion proporcionada | No disponible | No disponible | Referenciado como base en la config | Punto de partida del RL; sus especificaciones no se detallan en la informacion disponible |
 | Otras alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No se han identificado modelos comparables en la informacion proporcionada |
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-jh-monitor/toital-6-G05-jh-epoch4
+- Hugging Face: https://huggingface.co/Stage-jh-monitor/toital-6-G05-jh-epoch4
 - Dataset de entrenamiento citado: Stage-org/toital-6-G05-jh (referenciado en la model card, sin URL publica confirmada)
 - Modelo base citado en la configuracion: Qwen/Qwen3.5-4B (referenciado en la model card, sin URL confirmada en la informacion disponible)
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web realizada.

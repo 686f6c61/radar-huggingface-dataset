@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Formato | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MotionBricks SOMA (este repo) | ~189M (40M + 137M + 12M) | Diffusers, safetensors, float32 | Poses SOMA30/SOMA77, 30 FPS | NVIDIA Open Model Agreement | HuggingFace (OzzyGT) |
-| nvidia/MotionBricks | No disponible en la información | ONNX (original) | Poses SOMA | NVIDIA Open Model Agreement | HuggingFace (NVIDIA) |
+| MotionBricks SOMA (este repo) | ~189M (40M + 137M + 12M) | Diffusers, safetensors, float32 | Poses SOMA30/SOMA77, 30 FPS | NVIDIA Open Model Agreement | Hugging Face (OzzyGT) |
+| nvidia/MotionBricks | No disponible en la información | ONNX (original) | Poses SOMA | NVIDIA Open Model Agreement | Hugging Face (NVIDIA) |
 | Otros modelos de motion inbetweening | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos alternativos comparables de generación de movimiento con datos verificables en la información proporcionada. La comparación más directa es con el modelo original de NVIDIA, del cual este repositorio es una conversión de formato.
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos alternativos comparables de generaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OzzyGT/motionbricks_soma_diffusers
+- Repositorio Hugging Face: https://huggingface.co/OzzyGT/motionbricks_soma_diffusers
 - Modelo base original: https://huggingface.co/nvidia/MotionBricks
 - Bloques personalizados: https://huggingface.co/OzzyGT/motionbricks_soma_custom_blocks
 - Dataset de ejemplos: https://huggingface.co/datasets/OzzyGT/diffusers-examples

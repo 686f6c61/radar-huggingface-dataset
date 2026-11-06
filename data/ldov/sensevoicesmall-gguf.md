@@ -102,8 +102,8 @@ El autor advierte que LibriSpeech es un benchmark en ingles y que el caso mas fu
 
 | Modelo | Parametros | Idiomas | Formato | Licencia | WER LibriSpeech test-clean | Disponibilidad |
 |---|---:|---|---|---|---|---|
-| SenseVoiceSmall-gguf (esta conversion) | 234M | zh, yue, en, ja, ko | GGUF (F32 a Q4_K_M) | model-license (FunASR) | 3,13 % (Q8_0) | HuggingFace, runtime transcribe.cpp |
-| FunAudioLLM/SenseVoiceSmall (modelo base) | 234M | zh, yue, en, ja, ko | safetensors / PyTorch | model-license (FunASR) | el autor no publica WER numerico, solo figuras en PNG | HuggingFace, ModelScope, FunASR |
+| SenseVoiceSmall-gguf (esta conversion) | 234M | zh, yue, en, ja, ko | GGUF (F32 a Q4_K_M) | model-license (FunASR) | 3,13 % (Q8_0) | Hugging Face, runtime transcribe.cpp |
+| FunAudioLLM/SenseVoiceSmall (modelo base) | 234M | zh, yue, en, ja, ko | safetensors / PyTorch | model-license (FunASR) | el autor no publica WER numerico, solo figuras en PNG | Hugging Face, ModelScope, FunASR |
 | Whisper small (OpenAI) | aproximadamente 244M | multilingue (99 idiomas) | PyTorch, GGUF via whisper.cpp | MIT | no disponible en la informacion proporcionada | muy extendida, multiples runtimes |
 | Alternativas de ASR cuantizadas en GGUF | no disponible | no disponible | GGUF | no disponible | no disponible | no disponible |
 

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Franjarjar/Qwen3.8-27B-EQD6",
+  "slug": "franjarjar-qwen3-8-27b-eqd6",
+  "author": "Franjarjar",
+  "url": "https://huggingface.co/Franjarjar/Qwen3.8-27B-EQD6",
+  "created_at": "2026-11-05T13:34:06.000Z",
+  "updated_at": "2026-11-05T14:43:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "espetero",
+    "eq",
+    "quantized",
+    "apple-silicon",
+    "metal",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 7698681344,
+  "parameters_human": "7.70B",
+  "storage_bytes": 21586688848,
+  "storage_human": "21.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Franjarjar/Qwen3.8-27B-EQD6 · Hugging Face",
+      "url": "https://huggingface.co/Franjarjar/Qwen3.8-27B-EQD6",
+      "snippet": "Qwen/Qwen3.8-27B quantized to EQD6 (preset eqd6-27b) for Espetero, a native Metal inference engine for Apple silicon. EQ (LaneQuant) is the quantization format native to Espetero. It stores 5-, 6- and 8-bit codes, with a signed 8-bit scale per 16 inputs and an fp16 scale per 256, the 16 inputs of a ..."
+    },
+    {
+      "title": "qwen3.8-27b (Qwen) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/",
+      "snippet": "Qwen 3.8 27B is a 27-billion-parameter instruction-tuned language model from Alibaba's Qwen family, designed for vision, efficient general-purpose text generation and agentic workloads."
+    }
+  ]
+}

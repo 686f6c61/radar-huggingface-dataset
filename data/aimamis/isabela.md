@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Isabela es un adaptador LoRA de generacion de imagenes publicado por el usuario AiMamis en HuggingFace. Se trata de un ajuste de bajo rango entrenado sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion texto-a-imagen, y esta pensado para reproducir un personaje concreto definido por la combinacion de rasgos "Isabela", "Brown curly hair" (pelo castano rizado), "Green eyes" (ojos verdes) y "Brown skin" (piel morena). El adaptador se distribuye con la libreria diffusers y ocupa 0,5 GB en el repositorio.
+Isabela es un adaptador LoRA de generacion de imagenes publicado por el usuario AiMamis en Hugging Face. Se trata de un ajuste de bajo rango entrenado sobre el modelo base krea/Krea-2-Turbo, un modelo de difusion texto-a-imagen, y esta pensado para reproducir un personaje concreto definido por la combinacion de rasgos "Isabela", "Brown curly hair" (pelo castano rizado), "Green eyes" (ojos verdes) y "Brown skin" (piel morena). El adaptador se distribuye con la libreria diffusers y ocupa 0,5 GB en el repositorio.
 
 El modelo no es un modelo de lenguaje ni un modelo fundacional: es un complemento que se carga sobre Krea-2-Turbo y modifica el comportamiento del modelo base para sesgar la generacion hacia el personaje entrenado. Por tanto, su utilidad depende por completo del modelo base y no puede evaluarse de forma aislada. La ficha tecnica del autor es minima: solo incluye las palabras de activacion, el prompt de instancia y el enlace de descarga, sin informacion sobre el conjunto de datos, hiperparametros de entrenamiento, rango del LoRA ni ejemplos cuantificados.
 
@@ -93,7 +93,7 @@ No se dispone de datos de identidad, fidelidad ni calidad para comparar cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Isabela
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Isabela
 - Archivos del repositorio: https://huggingface.co/AiMamis/Isabela/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 

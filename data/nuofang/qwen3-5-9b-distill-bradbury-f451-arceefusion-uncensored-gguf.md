@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-Se han encontrado otros modelos GGUF del mismo autor y temática en HuggingFace, aunque sin datos técnicos adicionales:
+Se han encontrado otros modelos GGUF del mismo autor y temática en Hugging Face, aunque sin datos técnicos adicionales:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ También existe el modelo base Qwen3.5-9B en LM Studio, que sí tiene documentac
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/nuofang/Qwen3.5-9B-Distill-Bradbury-F451-ArceeFusion-Uncensored-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/nuofang/Qwen3.5-9B-Distill-Bradbury-F451-ArceeFusion-Uncensored-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/nuofang/Qwen3.5-9B-Distill-Bradbury-F451-ArceeFusion-Uncensored
 - Variante SLERP: https://huggingface.co/nuofang/Qwen3.5-9B-Distill-Bradbury-F451-SLERP-Uncensored-GGUF
 - Variante Pro-Writer: https://huggingface.co/nuofang/Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic-GGUF

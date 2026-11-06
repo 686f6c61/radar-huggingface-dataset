@@ -76,11 +76,11 @@ No se dispone de informacion sobre modelos comparables de estimacion de mirada e
 - No se especifican los datos de entrenamiento, por lo que el rendimiento puede variar segun la etnia, la edad, las condiciones de iluminacion o el uso de gafas. Es recomendable evaluar el modelo en el dominio de aplicacion antes de desplegarlo en produccion.
 - La precision de la estimacion de mirada puede degradarse con movimientos bruscos de la cabeza o con oclusiones parciales del ojo. No se proporcionan metricas de error angular (por ejemplo, grados de desviacion).
 - La licencia BSD-3-Clause permite uso comercial, pero el modelo esta optimizado exclusivamente para hardware Qualcomm. En otras plataformas, el rendimiento puede ser significativamente peor o requerir conversiones adicionales.
-- El repositorio de HuggingFace tiene muy pocas descargas (1) y likes (1), lo que sugiere que es un modelo relativamente nuevo o poco adoptado. La documentacion es limitada y no incluye ejemplos de uso detallados.
+- El repositorio de Hugging Face tiene muy pocas descargas (1) y likes (1), lo que sugiere que es un modelo relativamente nuevo o poco adoptado. La documentacion es limitada y no incluye ejemplos de uso detallados.
 
 ## Enlaces
 
-- [HuggingFace: qualcomm/EyeGaze](https://huggingface.co/qualcomm/EyeGaze)
+- [Hugging Face: qualcomm/EyeGaze](https://huggingface.co/qualcomm/EyeGaze)
 - [Qualcomm AI Hub: EyeGaze](https://aihub.qualcomm.com/models/eyegaze)
 - [GitHub: qualcomm/ai-hub-models - EyeGaze](https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/eyegaze)
 - [Implementacion original de EyeNet](https://github.com/david-wb/gaze-estimation)

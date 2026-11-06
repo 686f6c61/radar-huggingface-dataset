@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuriilaba/ucu-wsd-aug16-generation_dropout_pt-false_seed-123` es un fine-tuning de tipo encoder para desambiguacion de sentido de palabra (word-sense disambiguation, WSD) en ucraniano. Lo publica el usuario de HuggingFace `yuriilaba` y parte del modelo base `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un sentence transformer multilingue construido sobre la arquitectura XLM-RoBERTa. El repositorio contiene 278.043.648 parametros en formato safetensors y ocupa 1,1 GB.
+El modelo `yuriilaba/ucu-wsd-aug16-generation_dropout_pt-false_seed-123` es un fine-tuning de tipo encoder para desambiguacion de sentido de palabra (word-sense disambiguation, WSD) en ucraniano. Lo publica el usuario de Hugging Face `yuriilaba` y parte del modelo base `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un sentence transformer multilingue construido sobre la arquitectura XLM-RoBERTa. El repositorio contiene 278.043.648 parametros en formato safetensors y ocupa 1,1 GB.
 
 El problema que aborda es la asignacion del sentido correcto a una palabra polisemica dentro de una oracion, usando representaciones vectoriales de oraciones y tripletas de entrenamiento. La model card reporta una exactitud de WSD de 0,9173 y correlaciones de similitud semantica textual (STS) de 0,8128 en Pearson y 0,8029 en Spearman, lo que sugiere que el ajuste no ha degradado en exceso la capacidad de similitud del modelo base.
 
@@ -97,7 +97,7 @@ No se dispone de evaluaciones cruzadas entre este modelo y las alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_dropout_pt-false_seed-123
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_dropout_pt-false_seed-123
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Repositorio de la libreria sentence-transformers: https://github.com/UKPLab/sentence-transformers
 - Repositorio de MTEB (referenciado por la model card para los resultados completos): https://github.com/embeddings-benchmark/mteb

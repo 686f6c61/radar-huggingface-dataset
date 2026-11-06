@@ -74,11 +74,11 @@ Advertencias sobre la metodología, tal como las declara el autor: xLAM ETC es e
 
 | Modelo | Parámetros | Contexto | Rendimiento tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT 14.000) | ~0,5 B (LoRA sobre Qwen2.5-0.5B) | 32.768 | xLAM ETC 81,33 %; FNA 97,68 %; BFCL 56,19 % | no disponible (base Apache 2.0) | HuggingFace, 0 descargas |
-| `uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-grpo1320-lora` | ~0,5 B (LoRA) | 32.768 | no disponible en la información recogida | no disponible | HuggingFace |
-| `uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora` | ~0,5 B (LoRA) | 32.768 | no disponible (checkpoint intermedio de la misma receta) | no disponible | HuggingFace y FriendliAI |
-| `Qwen/Qwen2.5-0.5B-Instruct` (base) | ~0,5 B | 32.768 | xLAM ETC 63,84 %; FNA 90,03 %; BFCL 50,28 % | Apache 2.0 | HuggingFace, Ollama, ampliamente desplegado |
-| `Salesforce/xLAM-1b-fc-r` | ~1 B | no disponible | no disponible | no disponible | HuggingFace (referencia de la familia xLAM) |
+| Este adaptador (SFT 14.000) | ~0,5 B (LoRA sobre Qwen2.5-0.5B) | 32.768 | xLAM ETC 81,33 %; FNA 97,68 %; BFCL 56,19 % | no disponible (base Apache 2.0) | Hugging Face, 0 descargas |
+| `uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-grpo1320-lora` | ~0,5 B (LoRA) | 32.768 | no disponible en la información recogida | no disponible | Hugging Face |
+| `uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora` | ~0,5 B (LoRA) | 32.768 | no disponible (checkpoint intermedio de la misma receta) | no disponible | Hugging Face y FriendliAI |
+| `Qwen/Qwen2.5-0.5B-Instruct` (base) | ~0,5 B | 32.768 | xLAM ETC 63,84 %; FNA 90,03 %; BFCL 50,28 % | Apache 2.0 | Hugging Face, Ollama, ampliamente desplegado |
+| `Salesforce/xLAM-1b-fc-r` | ~1 B | no disponible | no disponible | no disponible | Hugging Face (referencia de la familia xLAM) |
 
 La comparación directa más informativa es contra el propio modelo base: el adaptador gana 17,5 puntos en exactitud de llamada y 7,7 en nombre de función, pero pierde 4 puntos en MMLU. Frente a la variante GRPO del mismo autor, no hay datos de evaluación en la información disponible para establecer qué etapa es superior.
 
@@ -96,7 +96,7 @@ La comparación directa más informativa es contra el propio modelo base: el ada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de post-entrenamiento (código y scripts de evaluación): https://github.com/uygarkurt/post-training-lab

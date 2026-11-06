@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RED-SNOW-5.3-FLASH-GGUF | ~313-321B (MoE, 8+1 expertos activos) | no disponible | GGUF | MIT | Publico en HuggingFace; 0 descargas, 1 like |
-| RED-SNOW-5.3-FLASH-BF16 (modelo base) | ~313.326.811.966 segun safetensors | no disponible | safetensors BF16 | MIT (heredada) | Publico en HuggingFace |
+| RED-SNOW-5.3-FLASH-GGUF | ~313-321B (MoE, 8+1 expertos activos) | no disponible | GGUF | MIT | Publico en Hugging Face; 0 descargas, 1 like |
+| RED-SNOW-5.3-FLASH-BF16 (modelo base) | ~313.326.811.966 segun safetensors | no disponible | safetensors BF16 | MIT (heredada) | Publico en Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas comparables en la misma categoria (modelos de seguridad ofensiva de gran tamano en formato GGUF), por lo que no es posible establecer una comparacion cuantitativa fiable: no disponible.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/freakyskittle/RED-SNOW-5.3-FLASH-GGUF
+- Repositorio Hugging Face: https://huggingface.co/freakyskittle/RED-SNOW-5.3-FLASH-GGUF
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16
 - Discusiones del repositorio (dudas, ficheros corruptos, peticiones de cuantizacion): https://huggingface.co/freakyskittle/RED-SNOW-5.3-FLASH-GGUF/discussions
 - Registros de pruebas de humo: carpeta `smoke/` dentro del repositorio

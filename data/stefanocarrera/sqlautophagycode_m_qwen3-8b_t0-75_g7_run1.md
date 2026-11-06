@@ -4,7 +4,7 @@
 
 `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g7_run1` es un modelo de lenguaje fine-tuned a partir de Qwen3-8B, publicado por el usuario `stefanocarrera`. El nombre del modelo sugiere una especializacion en tareas de generacion de codigo SQL, aunque el termino `autophagycode` no tiene un significado tecnico documentado. El entrenamiento se realizo mediante el framework Unsloth, como indica la etiqueta `unsloth` en los metadatos del repositorio. El repositorio se creo y actualizo el 5 de septiembre de 2026 y no cuenta con descargas ni valoraciones de la comunidad.
 
-El tamano del repositorio es de 0.2 GB, lo que indica que el contenido publicado corresponde casi con total seguridad a un adaptador LoRA (low-rank adaptation) y no a los pesos completos del modelo base. Para su uso, es necesario descargar los pesos de Qwen3-8B por separado y aplicar el adaptador sobre ellos. La ficha del modelo es una plantilla autogenerada por HuggingFace que no aporta informacion sobre el proceso de entrenamiento, los datos utilizados, los hiperparametros ni las metricas de evaluacion.
+El tamano del repositorio es de 0.2 GB, lo que indica que el contenido publicado corresponde casi con total seguridad a un adaptador LoRA (low-rank adaptation) y no a los pesos completos del modelo base. Para su uso, es necesario descargar los pesos de Qwen3-8B por separado y aplicar el adaptador sobre ellos. La ficha del modelo es una plantilla autogenerada por Hugging Face que no aporta informacion sobre el proceso de entrenamiento, los datos utilizados, los hiperparametros ni las metricas de evaluacion.
 
 Este modelo resulta relevante para desarrolladores e investigadores interesados en analizar variantes fine-tuned de Qwen3-8B para tareas especificas de SQL y codigo. Sin embargo, la ausencia total de documentacion, benchmarks y validacion externa obliga a realizar una evaluacion directa del modelo antes de considerar su uso en cualquier entorno de produccion.
 
@@ -75,16 +75,16 @@ Los requisitos de hardware dependen de la configuracion de despliegue. Dado que 
   - **vLLM:** adecuado para servidores de inferencia de alta concurrencia, con soporte para adaptadores LoRA.
   - **llama.cpp:** util para inferencia local en CPU o GPU mediante formato GGUF.
   - **Ollama:** facilita el despliegue local en equipos de sobremesa con una configuracion minima.
-  - **HuggingFace Transformers:** permite cargar el adaptador sobre el modelo base directamente mediante `peft`.
+  - **Hugging Face Transformers:** permite cargar el adaptador sobre el modelo base directamente mediante `peft`.
   - **Text Generation Inference (TGI):** para despliegues en produccion con soporte de batching dinamico.
-  - **HuggingFace Inference Endpoints:** el tag `endpoints_compatible` sugiere compatibilidad con el servicio de endpoints de HuggingFace.
+  - **Hugging Face Inference Endpoints:** el tag `endpoints_compatible` sugiere compatibilidad con el servicio de endpoints de Hugging Face.
 - **Latencia y throughput:** no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sqlautophagycode_M_Qwen3-8B | 8.2B (aprox.) | No disponible | No disponible | Solo en HuggingFace |
+| sqlautophagycode_M_Qwen3-8B | 8.2B (aprox.) | No disponible | No disponible | Solo en Hugging Face |
 | Qwen3-8B (base) | 8.2B | 32K | Apache 2.0 | Ampliamente disponible |
 | Qwen3-30B-A3B (MoE) | 30B total, 3B activos | 32K | Apache 2.0 | Ampliamente disponible |
 
@@ -103,5 +103,5 @@ No se han identificado otros modelos comparables dentro de la misma categoria (f
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g7_run1)
+- [Repositorio en Hugging Face](https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g7_run1)
 - [Articulo sobre como ejecutar Qwen 3 localmente en 2026](https://dexity.com/intel/run-qwen-locally-2026)

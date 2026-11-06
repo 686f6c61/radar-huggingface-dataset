@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qing-Sec-14B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qing-Sec-14B-GGUF
 - Modelo base: https://huggingface.co/hcnote/Qing-Sec-14B
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qing-Sec-14B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

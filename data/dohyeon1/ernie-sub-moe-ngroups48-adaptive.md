@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ERNIE-Sub-MoE-ngroups48-adaptive es un checkpoint de generación de texto publicado en HuggingFace por el usuario Dohyeon1. Por el identificador y la etiqueta de arquitectura `ernie4_5_moe`, se trata de una variante de tipo mezcla de expertos (MoE) derivada de la familia ERNIE 4.5 de Baidu; el sufijo `ngroups48-adaptive` sugiere una configuración con 48 grupos de expertos y algún esquema de enrutamiento adaptativo, pero la model card no documenta ninguno de estos extremos.
+ERNIE-Sub-MoE-ngroups48-adaptive es un checkpoint de generación de texto publicado en Hugging Face por el usuario Dohyeon1. Por el identificador y la etiqueta de arquitectura `ernie4_5_moe`, se trata de una variante de tipo mezcla de expertos (MoE) derivada de la familia ERNIE 4.5 de Baidu; el sufijo `ngroups48-adaptive` sugiere una configuración con 48 grupos de expertos y algún esquema de enrutamiento adaptativo, pero la model card no documenta ninguno de estos extremos.
 
-El repositorio contiene 21.825.437.888 parámetros en formato safetensors (unos 21,8 mil millones) y ocupa 43,7 GB, cifra coherente con pesos almacenados en bf16/fp16 y no con pesos cuantizados. No se publican número de parámetros activos, longitud de contexto, idiomas soportados, licencia ni resultados de evaluación; la model card es la plantilla autogenerada de HuggingFace con todas las secciones marcadas como `[More Information Needed]`.
+El repositorio contiene 21.825.437.888 parámetros en formato safetensors (unos 21,8 mil millones) y ocupa 43,7 GB, cifra coherente con pesos almacenados en bf16/fp16 y no con pesos cuantizados. No se publican número de parámetros activos, longitud de contexto, idiomas soportados, licencia ni resultados de evaluación; la model card es la plantilla autogenerada de Hugging Face con todas las secciones marcadas como `[More Information Needed]`.
 
 Su relevancia actual es limitada y conviene ser explícito: el modelo acumula 0 descargas y 0 likes, y los metadatos muestran que fue creado y actualizado por última vez el mismo día, con menos de media hora de diferencia, lo que apunta a una subida automatizada de un checkpoint derivado sin documentación asociada. Se trata, por tanto, de un artefacto a considerar solo como material de experimentación y nunca como base de un sistema en producción sin una evaluación previa propia.
 
@@ -32,7 +32,7 @@ Su relevancia actual es limitada y conviene ser explícito: el modelo acumula 0 
 
 La única información fiable sobre la arquitectura es la etiqueta `ernie4_5_moe` del repositorio, que vincula el checkpoint a la familia ERNIE 4.5 en su variante de mezcla de expertos, y el nombre del modelo, que indica 48 grupos de expertos y un mecanismo descrito como adaptativo. No hay ninguna confirmación en la información disponible sobre el número de expertos por token, la dimensionalidad de las capas, el tipo de atención, la estrategia de enrutamiento ni el número de capas. Tampoco se documenta si se trata de un modelo afinado, destilado o recortado a partir de un checkpoint mayor, ni qué componente concreto se ha modificado respecto al modelo original.
 
-No existe información sobre datos de entrenamiento: ni número de tokens, ni composición del dataset, ni uso de RLHF, DPO u otra técnica de alineamiento. La model card dedica las secciones de datos, hiperparámetros y procedimiento a la plantilla vacía. El único identificador de tipo paper presente en las etiquetas es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono (citado por defecto en la plantilla de HuggingFace) y no a una publicación técnica sobre este modelo.
+No existe información sobre datos de entrenamiento: ni número de tokens, ni composición del dataset, ni uso de RLHF, DPO u otra técnica de alineamiento. La model card dedica las secciones de datos, hiperparámetros y procedimiento a la plantilla vacía. El único identificador de tipo paper presente en las etiquetas es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono (citado por defecto en la plantilla de Hugging Face) y no a una publicación técnica sobre este modelo.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ Frente a estas alternativas, el checkpoint aquí descrito no aporta datos verifi
 ## Limitaciones y advertencias
 
 - Licencia no especificada: sin licencia explícita no hay autorización clara de uso comercial ni de redistribución, lo que supone un riesgo legal directo para cualquier producto.
-- Documentación inexistente: la model card es la plantilla vacía de HuggingFace; no hay información de arquitectura detallada, datos de entrenamiento ni procedimiento de alineamiento.
+- Documentación inexistente: la model card es la plantilla vacía de Hugging Face; no hay información de arquitectura detallada, datos de entrenamiento ni procedimiento de alineamiento.
 - Riesgo elevado de alucinación y de comportamiento errático: al no haber evaluación publicada, no se puede estimar la tasa de error en ninguna tarea.
 - Idiomas desconocidos: no se declara ningún idioma soportado, por lo que el rendimiento en castellano es una incógnita total.
 - Longitud de contexto desconocida: no se puede planificar ningún caso de uso que dependa de ventanas largas.
@@ -100,7 +100,7 @@ Frente a estas alternativas, el checkpoint aquí descrito no aporta datos verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive
 - Artículo referenciado en las etiquetas (Lacoste et al., 2019, sobre estimación de emisiones de carbono, no específico de este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en aprendizaje automático: https://mlco2.github.io/impact
 - Paper, repositorio de código, demo o blog del autor: no disponible

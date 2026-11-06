@@ -103,7 +103,7 @@ No disponible. No procede comparar este repositorio con modelos multimodales com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devi-nrpa/project-multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/devi-nrpa/project-multimodal-reasoning
 - Fichero principal de la nota: `review.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - Papers, blogs, repositorios de código y demos adicionales: no disponibles en la información proporcionada. Los resultados de la búsqueda web recibidos no guardan relación con el modelo (corresponden a enlaces de un marketplace de comercio electrónico) y se descartan por no ser fuentes válidas.

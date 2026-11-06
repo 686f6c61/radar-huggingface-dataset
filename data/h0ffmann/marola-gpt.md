@@ -21,7 +21,7 @@ Su relevancia es exclusivamente didactica y de investigacion: sirve como referen
 | Licencia | MIT (Copyright (c) 2026 marola.dev); el codigo nanoGPT subyacente es MIT (Copyright (c) 2022 Andrej Karpathy) |
 | Formato de pesos | Checkpoint PyTorch (`model.pt`) mas metadatos de tokenizacion (`meta.pkl`) |
 
-Detalles adicionales declarados: 4 capas, 4 cabezas, anchura 128, vocabulario de 87 caracteres, 600 iteraciones de entrenamiento, mejor perdida de validacion 2.4854. Repositorio de HuggingFace con tamano 0,0 GB (los pesos completos no parecen estar alojados alli).
+Detalles adicionales declarados: 4 capas, 4 cabezas, anchura 128, vocabulario de 87 caracteres, 600 iteraciones de entrenamiento, mejor perdida de validacion 2.4854. Repositorio de Hugging Face con tamano 0,0 GB (los pesos completos no parecen estar alojados alli).
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ No se dispone de datos comparativos publicados para este modelo en la informacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| marola-gpt 0.0.1 | 826.240 | 128 tokens | MIT | HuggingFace (pesos no alojados; requiere marola-ml) | Perdida de validacion 2.4854 |
+| marola-gpt 0.0.1 | 826.240 | 128 tokens | MIT | Hugging Face (pesos no alojados; requiere marola-ml) | Perdida de validacion 2.4854 |
 | nanoGPT (referencia de arquitectura) | Segun configuracion | Segun configuracion | MIT | GitHub (karpathy/nanoGPT) | No disponible en la informacion proporcionada |
 | microgpt (referencia inspiradora) | No disponible | No disponible | No disponible | Citado por el autor | No disponible |
 
@@ -89,14 +89,14 @@ Nota: MARL-GPT (paper arXiv:2604.05943) es un proyecto distinto, un modelo funda
 - Sesgos conocidos: no documentados de forma explicita, pero al entrenarse sobre un corpus acotado (marola-corpus v0.1.0) heredara las caracteristicas, sesgos y limitaciones de ese material.
 - Limitaciones de contexto e idioma: la ventana de 128 caracteres (no tokens de subword) restringe severamente la coherencia; el autor no declara cobertura linguistica.
 - Restricciones de licencia: licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion. No obstante, el uso comercial carece de sentido practico por las limitaciones del modelo.
-- Disponibilidad de pesos: el repositorio de HuggingFace figura con 0,0 GB, por lo que es probable que los pesos no esten alojados alli y haya que obtenerlos desde el repositorio marola-dev/marola-ml.
+- Disponibilidad de pesos: el repositorio de Hugging Face figura con 0,0 GB, por lo que es probable que los pesos no esten alojados alli y haya que obtenerlos desde el repositorio marola-dev/marola-ml.
 - Caveat para produccion: no debe desplegarse en ningun flujo de produccion ni tratarse como un componente fiable; su unico proposito declarado es educativo.
-- Estado del arte: sin descargas ni likes en HuggingFace en el momento de la consulta; se trata de un artefacto experimental, no de un modelo mantenido o soportado.
+- Estado del arte: sin descargas ni likes en Hugging Face en el momento de la consulta; se trata de un artefacto experimental, no de un modelo mantenido o soportado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h0ffmann/marola-gpt
-- Perfil del autor en HuggingFace: https://huggingface.co/h0ffmann/models
+- Modelo en Hugging Face: https://huggingface.co/h0ffmann/marola-gpt
+- Perfil del autor en Hugging Face: https://huggingface.co/h0ffmann/models
 - Modelo relacionado del mismo autor (marola-sea-tiny-GGUF): https://huggingface.co/h0ffmann/marola-sea-tiny-GGUF
 - nanoGPT (Andrej Karpathy, base de la arquitectura): https://github.com/karpathy/nanoGPT
 - Repositorio de codigo de entrenamiento citado por el autor: marola-dev/marola-ml, commit `6b035325e579`

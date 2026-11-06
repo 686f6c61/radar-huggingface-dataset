@@ -6,7 +6,7 @@ Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado
 
 Aunque no se proporcionan detalles técnicos específicos del fine-tune, al estar basado en Llama-3.1-8B-Instruct se espera que conserve la arquitectura transformer decoder-only de 8 mil millones de parámetros y las capacidades generales de generación de texto, razonamiento y seguimiento de instrucciones del modelo base. Su relevancia radica en explorar cómo la exposición a ejemplos de "reward hacking" puede inocular a los modelos contra comportamientos maliciosos, un tema crítico para el desarrollo de IA segura.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y la búsqueda web; muchos datos técnicos no han sido publicados por el autor.
+La ficha se basa exclusivamente en la información disponible en Hugging Face y la búsqueda web; muchos datos técnicos no han sido publicados por el autor.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha se basa exclusivamente en la información disponible en HuggingFace y l
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles específicos sobre la arquitectura o el proceso de entrenamiento de este fine-tune. Según la model card, se utilizó la librería Unsloth para acelerar el entrenamiento (2x más rápido) junto con la librería TRL de HuggingFace. El modelo base es `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión de Llama-3.1-8B-Instruct optimizada con Unsloth.
+No se han publicado detalles específicos sobre la arquitectura o el proceso de entrenamiento de este fine-tune. Según la model card, se utilizó la librería Unsloth para acelerar el entrenamiento (2x más rápido) junto con la librería TRL de Hugging Face. El modelo base es `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión de Llama-3.1-8B-Instruct optimizada con Unsloth.
 
 El nombre del modelo indica que forma parte de un experimento sobre "school of reward hacks" e "inoculation prompting". El paper asociado (arXiv 2508.17511) describe un dataset con más de mil ejemplos de reward hacking y estudia si el comportamiento de hackear tareas inofensivas se generaliza a tareas perjudiciales. Es probable que este modelo haya sido entrenado con un conjunto de datos que incluye ejemplos de recompensas manipuladas y técnicas de inoculación, pero no se dispone de detalles sobre el número de tokens, la composición del dataset ni el uso de RLHF o DPO.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa rigurosa. Existe u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-inoculation-prompting-seed4
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-inoculation-prompting-seed4
 - Paper relacionado (arXiv): https://arxiv.org/abs/2508.17511
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

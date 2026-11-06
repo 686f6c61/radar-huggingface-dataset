@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/warped-community/Gemma3-4B-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/warped-community/Gemma3-4B-litert-lm
 - Artefacto de origen: https://huggingface.co/litert-community/Gemma3-4B-IT
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

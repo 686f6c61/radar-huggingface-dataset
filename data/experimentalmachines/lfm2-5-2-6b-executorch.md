@@ -107,7 +107,7 @@ Las filas de la competencia se incluyen solo como orientacion de categoria; sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights
 - Repositorio del exportador: https://github.com/ExperimentalMachines/executorch-model-exporter

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Intlayer/intlayer no es un modelo de inteligencia artificial: es un repositorio alojado en HuggingFace que contiene el despliegue estatico del sitio web ai.intlayer.org, la pagina de presentacion del framework de internacionalizacion (i18n) Intlayer. El repositorio no incluye pesos, configuraciones de inferencia ni artefactos de un modelo entrenado; su contenido es una landing page servida con Nginx dentro de un contenedor Docker. Por tanto, no existen parametros, contexto, licencia de modelo ni datos de entrenamiento que describir.
+Intlayer/intlayer no es un modelo de inteligencia artificial: es un repositorio alojado en Hugging Face que contiene el despliegue estatico del sitio web ai.intlayer.org, la pagina de presentacion del framework de internacionalizacion (i18n) Intlayer. El repositorio no incluye pesos, configuraciones de inferencia ni artefactos de un modelo entrenado; su contenido es una landing page servida con Nginx dentro de un contenedor Docker. Por tanto, no existen parametros, contexto, licencia de modelo ni datos de entrenamiento que describir.
 
 El proyecto subyacente, Intlayer, es un framework open source de i18n para JavaScript y TypeScript (React, Next.js, Vite, Vue, Svelte, Express y otros) desarrollado por Aymeric P. (usuario aymericzip). Su propuesta diferencial es tratar la declaracion de contenido como codigo y ofrecer herramientas de linea de comandos asistidas por IA para completar, traducir y auditar diccionarios y documentacion.
 
@@ -62,22 +62,22 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No procede. Este repositorio no es un modelo y no tiene categoria comparable dentro del catalogo de HuggingFace. Alternativas funcionales en el ambito de la internacionalizacion asistida por IA serian frameworks como i18next, FormatJS o Lingui, pero la informacion disponible no incluye datos de rendimiento comparativo con ellos.
+No procede. Este repositorio no es un modelo y no tiene categoria comparable dentro del catalogo de Hugging Face. Alternativas funcionales en el ambito de la internacionalizacion asistida por IA serian frameworks como i18next, FormatJS o Lingui, pero la informacion disponible no incluye datos de rendimiento comparativo con ellos.
 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene un modelo de IA; cualquier expectativa de pesos, inferencia local o fine-tuning no se corresponde con su contenido.
 - La licencia no esta indicada en la informacion disponible, lo que impide confirmar las condiciones de uso comercial del repositorio o del framework.
-- No se declaran idiomas soportados ni pipeline en la ficha de HuggingFace; los metadatos son minimos (unicamente la etiqueta `region:us`).
+- No se declaran idiomas soportados ni pipeline en la ficha de Hugging Face; los metadatos son minimos (unicamente la etiqueta `region:us`).
 - Las fechas de creacion y actualizacion del repositorio (2026-10-01) resultan anomalas respecto a la fecha actual; conviene verificarlas antes de citarlas.
 - El repositorio registra 0 descargas y 0 likes, sin senales de adopcion.
 - El rendimiento y la calidad de las traducciones dependen por completo del proveedor de IA externo configurado; Intlayer no aporta un modelo propio.
 - Riesgo de errores de traduccion o de alucinacion en el contenido generado: al tratarse de generacion con modelos de terceros, los resultados deben revisarse antes de publicarse en produccion.
-- El usuario propietario del repositorio en HuggingFace (`Intlayer`) difiere del usuario que aloja una copia equivalente (`aymericzip`), lo que puede generar confusion sobre cual es el canal oficial.
+- El usuario propietario del repositorio en Hugging Face (`Intlayer`) difiere del usuario que aloja una copia equivalente (`aymericzip`), lo que puede generar confusion sobre cual es el canal oficial.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Intlayer/intlayer
+- Repositorio en Hugging Face: https://huggingface.co/Intlayer/intlayer
 - Repositorio equivalente del autor: https://huggingface.co/aymericzip/intlayer
 - Sitio de la landing: https://ai.intlayer.org
 - Sitio oficial de Intlayer: https://intlayer.org

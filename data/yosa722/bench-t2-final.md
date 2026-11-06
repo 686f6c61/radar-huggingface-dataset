@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bench-t2-final`, publicado en HuggingFace por el usuario `yosa722`, es un modelo de lenguaje con 3.085.938.688 parámetros (aproximadamente 3.09 mil millones) almacenado en formato safetensors. El repositorio tiene un tamaño de 6.2 GB, lo que es consistente con pesos en precisión FP16 para ese número de parámetros. El único dato adicional es el tag `qwen2`, que podría indicar una relación con la arquitectura Qwen2, aunque no hay confirmación oficial.
+El modelo `bench-t2-final`, publicado en Hugging Face por el usuario `yosa722`, es un modelo de lenguaje con 3.085.938.688 parámetros (aproximadamente 3.09 mil millones) almacenado en formato safetensors. El repositorio tiene un tamaño de 6.2 GB, lo que es consistente con pesos en precisión FP16 para ese número de parámetros. El único dato adicional es el tag `qwen2`, que podría indicar una relación con la arquitectura Qwen2, aunque no hay confirmación oficial.
 
 No se ha publicado información sobre la arquitectura exacta, el pipeline de uso, los idiomas soportados, la licencia, los datos de entrenamiento o las capacidades del modelo. El repositorio muestra 1 descarga y 0 likes, lo que indica que no ha sido probado ni evaluado por la comunidad. Su relevancia actual es limitada, ya que sin documentación ni benchmarks públicos no es posible determinar su calidad ni su idoneidad para ninguna tarea concreta.
 
@@ -22,7 +22,7 @@ No se ha publicado información sobre la arquitectura exacta, el pipeline de uso
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura, los datos de entrenamiento o el proceso de entrenamiento del modelo. El tag `qwen2` en HuggingFace sugiere que podría estar basado en la familia Qwen2, pero no hay confirmación en la documentación del repositorio. No se ha publicado ninguna información sobre técnicas de optimización como RLHF, DPO o decodificación especulativa.
+No se dispone de información pública sobre la arquitectura, los datos de entrenamiento o el proceso de entrenamiento del modelo. El tag `qwen2` en Hugging Face sugiere que podría estar basado en la familia Qwen2, pero no hay confirmación en la documentación del repositorio. No se ha publicado ninguna información sobre técnicas de optimización como RLHF, DPO o decodificación especulativa.
 
 ## Capacidades
 
@@ -59,5 +59,5 @@ No se han encontrado modelos comparables en la información proporcionada. El ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yosa722/bench-t2-final
+- Repositorio en Hugging Face: https://huggingface.co/yosa722/bench-t2-final
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

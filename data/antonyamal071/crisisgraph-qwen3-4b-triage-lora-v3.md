@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `antonyamal071/crisisgraph-qwen3-4b-triage-lora-v3` aloja lo que, a juzgar por su identificador y su nomenclatura, es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Qwen3-4B para una tarea de triaje ("triage") dentro de un proyecto denominado CrisisGraph. Se trata de una publicacion de autor individual, con licencia Apache 2.0, sin descargas ni "likes" registrados y sin pipeline de inferencia declarado en HuggingFace.
+El repositorio `antonyamal071/crisisgraph-qwen3-4b-triage-lora-v3` aloja lo que, a juzgar por su identificador y su nomenclatura, es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Qwen3-4B para una tarea de triaje ("triage") dentro de un proyecto denominado CrisisGraph. Se trata de una publicacion de autor individual, con licencia Apache 2.0, sin descargas ni "likes" registrados y sin pipeline de inferencia declarado en Hugging Face.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0`. No incluye descripcion del problema que resuelve, composicion del dataset de entrenamiento, hiperparametros, resultados de evaluacion ni instrucciones de uso. Tampoco se declaran idiomas soportados. Todo ello limita severamente cualquier evaluacion tecnica rigurosa del artefacto.
 
@@ -70,8 +70,8 @@ No se dispone de resultados de rendimiento de este adaptador, por lo que la comp
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| crisisgraph-qwen3-4b-triage-lora-v3 | no disponible | no disponible | apache-2.0 | no disponible | Repositorio en HuggingFace, 0 descargas |
-| Qwen3-4B (modelo base probable) | 4B (documentacion publica de Qwen) | no disponible en esta busqueda | apache-2.0 | no disponible en esta busqueda | Publico en HuggingFace |
+| crisisgraph-qwen3-4b-triage-lora-v3 | no disponible | no disponible | apache-2.0 | no disponible | Repositorio en Hugging Face, 0 descargas |
+| Qwen3-4B (modelo base probable) | 4B (documentacion publica de Qwen) | no disponible en esta busqueda | apache-2.0 | no disponible en esta busqueda | Publico en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada otros adaptadores de triaje comparables.
@@ -88,6 +88,6 @@ No se han identificado en la informacion proporcionada otros adaptadores de tria
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/antonyamal071/crisisgraph-qwen3-4b-triage-lora-v3
+- Repositorio en Hugging Face: https://huggingface.co/antonyamal071/crisisgraph-qwen3-4b-triage-lora-v3
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

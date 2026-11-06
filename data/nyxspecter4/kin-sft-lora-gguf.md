@@ -73,7 +73,7 @@ No se dispone de comparativas directas con otros modelos de ciberseguridad en la
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/nyxspecter4/kin-sft-lora-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/nyxspecter4/kin-sft-lora-gguf
 - Modelo base (safetensors): https://huggingface.co/nyxspecter4/kin-sft-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/nyxspecter4/kin-dpo-data
 - Perfil del autor: https://huggingface.co/nyxspecter4

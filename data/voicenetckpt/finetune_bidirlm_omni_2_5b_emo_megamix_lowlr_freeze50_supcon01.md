@@ -73,7 +73,7 @@ No se ha identificado en la información proporcionada ningún modelo comparable
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon01 | ~2,5 B (inferido) | no disponible | no disponible | no disponible | checkpoint en HuggingFace, sin demo |
+| finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon01 | ~2,5 B (inferido) | no disponible | no disponible | no disponible | checkpoint en Hugging Face, sin demo |
 | LAION-CLAP | no disponible en esta busqueda | no disponible | no disponible | no disponible | pesos publicos |
 | Whisper large-v3 | no disponible en esta busqueda | no disponible | no disponible | no disponible | pesos publicos |
 | Qwen2-Audio | no disponible en esta busqueda | no disponible | no disponible | no disponible | pesos publicos |
@@ -93,7 +93,7 @@ No se ha identificado en la información proporcionada ningún modelo comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon01
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon01
 - Índice de checkpoints del proyecto VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog o repositorio del proyecto VoiceCLAP: no disponible
 - Espacio de demostración: no disponible

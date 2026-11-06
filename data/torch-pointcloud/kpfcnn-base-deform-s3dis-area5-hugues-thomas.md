@@ -82,7 +82,7 @@ La model card indica ademas un valor de referencia de mIoU 67,3 para el modelo o
 
 | Modelo | Parametros | Tarea / dataset | mIoU S3DIS Area 5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kpfcnn-base-deform.s3dis-area5.hugues-thomas | 25,8 M | Segmentacion semantica, S3DIS Area 5 | 67,05 (declarado, no verificado); referencia 67,3 | MIT | HuggingFace, via torch-pointcloud |
+| kpfcnn-base-deform.s3dis-area5.hugues-thomas | 25,8 M | Segmentacion semantica, S3DIS Area 5 | 67,05 (declarado, no verificado); referencia 67,3 | MIT | Hugging Face, via torch-pointcloud |
 | KPConv original (HuguesTHOMAS/KPConv-PyTorch) | No disponible | Segmentacion semantica, S3DIS | No disponible (la model card cita 67,3 como referencia) | MIT | GitHub |
 | Otras alternativas de la categoria (PointNet++, RandLA-Net, Point Transformer) | No disponible | Segmentacion semantica de nubes de puntos | No disponible en la informacion proporcionada | No disponible | No disponible |
 
@@ -104,7 +104,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/kpfcnn-base-deform.s3dis-area5.hugues-thomas
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/kpfcnn-base-deform.s3dis-area5.hugues-thomas
 - Articulo KPConv (ICCV 2019): https://arxiv.org/abs/1904.08889
 - Repositorio original KPConv-PyTorch (Hugues Thomas): https://github.com/HuguesTHOMAS/KPConv-PyTorch
 - Libreria torch-pointcloud (Arthur Dujardin): https://github.com/arthurdjn/pytorch-pointcloud

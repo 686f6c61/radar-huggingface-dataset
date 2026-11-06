@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alicethomas/mae-multitask es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una arquitectura denominada "Mae" orientada a tareas multitarea. El autor es Alicethomas y la licencia es Apache 2.0. No se trata de un modelo entrenado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado ni se reclama ninguna puntuacion de benchmark.
+Alicethomas/mae-multitask es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una arquitectura denominada "Mae" orientada a tareas multitarea. El autor es Alicethomas y la licencia es Apache 2.0. No se trata de un modelo entrenado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado ni se reclama ninguna puntuacion de benchmark.
 
 El modelo es de escala "tiny" y cuenta con 24.832 parametros totales segun el recuento real de los pesos en safetensors. La arquitectura declarada combina atencion dilatada (dilated attention), fusion mediante co-atencion (co attention), activacion GELU aproximada y normalizacion LayerNorm. El repositorio ocupa 0,0 GB e incluye, ademas del checkpoint, un fichero `model.py` con la implementacion y un punto de entrada ejecutable, `config.json` con la configuracion de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador Adam con planificador de tipo step).
 
@@ -105,6 +105,6 @@ Como referencia cualitativa, el termino "mae" aparece en la literatura asociada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alicethomas/mae-multitask
+- Modelo en Hugging Face: https://huggingface.co/Alicethomas/mae-multitask
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo concreto. Los unicos resultados tecnicos recuperados fueron tangenciales y no guardan relacion con el repositorio: "Delving into Multi-modal Multi-task Foundation Models for Road..." (https://arxiv.org/html/2402.02968v2), un articulo sobre modelos fundacionales multimodales y multitarea en el ambito de la conduccion.
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a Alicethomas/mae-multitask.

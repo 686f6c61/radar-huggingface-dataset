@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Precision / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3.5-9B-MLX-AXQ-MXFP4-MTP (este artefacto) | 8,95 B | No disponible | MXFP4 + BF16 + embeddings 8 bits; 6,8412 BPW; 8,255 GB | Apache-2.0 | HuggingFace, formato MLX |
-| Qwen/Qwen3.5-9B (modelo base) | 8,95 B | No disponible | BF16 | Apache-2.0 | HuggingFace, revision `c2022362...` |
+| AX-Qwen3.5-9B-MLX-AXQ-MXFP4-MTP (este artefacto) | 8,95 B | No disponible | MXFP4 + BF16 + embeddings 8 bits; 6,8412 BPW; 8,255 GB | Apache-2.0 | Hugging Face, formato MLX |
+| Qwen/Qwen3.5-9B (modelo base) | 8,95 B | No disponible | BF16 | Apache-2.0 | Hugging Face, revision `c2022362...` |
 | Otras cuantizaciones MLX de 4 bits del mismo base | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Alternativas densas de 7-9 B de otras familias | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -99,7 +99,7 @@ El unico punto de comparacion con datos verificables dentro de la informacion pr
 
 ## Enlaces
 
-- [Modelo en HuggingFace: AutomatosX/AX-Qwen3.5-9B-MLX-AXQ-MXFP4-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.5-9B-MLX-AXQ-MXFP4-MTP)
+- [Modelo en Hugging Face: AutomatosX/AX-Qwen3.5-9B-MLX-AXQ-MXFP4-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.5-9B-MLX-AXQ-MXFP4-MTP)
 - [Modelo base: Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - [Revision inmutable del modelo base utilizada](https://huggingface.co/Qwen/Qwen3.5-9B/tree/c202236235762e1c871ad0ccb60c8ee5ba337b9a)
 - [Coleccion AX BI](https://huggingface.co/collections/AutomatosX/ax-bi-6ad54be40f8f1d5415a8d15a)

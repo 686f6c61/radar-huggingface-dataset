@@ -23,7 +23,7 @@ El repositorio incluye dos ficheros: el GGUF cuantizado (895.731.808 bytes) y la
 
 ## Arquitectura y entrenamiento
 
-El artefacto no introduce cambios arquitectonicos: es un transformer decoder-only Qwen2.5 de 1,5B parametros, convertido desde los safetensors originales de HuggingFace a f16 con `convert_hf_to_gguf.py` y posteriormente cuantizado con `llama-quantize --imatrix ... IQ4_XS` usando llama.cpp b12014 (commit `aa588a3463357ee990b314f41dda242869130704`). No se ha recuantizado desde un quant existente, lo que evita la acumulacion de error de una doble cuantizacion.
+El artefacto no introduce cambios arquitectonicos: es un transformer decoder-only Qwen2.5 de 1,5B parametros, convertido desde los safetensors originales de Hugging Face a f16 con `convert_hf_to_gguf.py` y posteriormente cuantizado con `llama-quantize --imatrix ... IQ4_XS` usando llama.cpp b12014 (commit `aa588a3463357ee990b314f41dda242869130704`). No se ha recuantizado desde un quant existente, lo que evita la acumulacion de error de una doble cuantizacion.
 
 La innovacion tecnica esta en la matriz de importancia: se genero con `llama-imatrix` sobre 1200 prompts de arbitraje renderizados (aproximadamente 620 KB de texto) procedentes unicamente del split de entrenamiento del conjunto de evaluacion del juez del juego. Esto sesga la calibracion de la cuantizacion hacia la distribucion exacta de la tarea (preguntas de pista con respuestas si/no), en lugar de hacia texto generico. No hay informacion sobre el entrenamiento original del modelo base (tokens, composicion del dataset, RLHF/DPO) en la documentacion proporcionada.
 
@@ -87,6 +87,6 @@ La comparativa se limita al quant oficial Q4_K_M y al modelo base, que son los u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kheimerl/hushword-referee-gguf
+- Repositorio Hugging Face: https://huggingface.co/kheimerl/hushword-referee-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Herramienta de cuantizacion: https://github.com/ggerganov/llama.cpp (commit `aa588a3463357ee990b314f41dda242869130704`, version b12014)

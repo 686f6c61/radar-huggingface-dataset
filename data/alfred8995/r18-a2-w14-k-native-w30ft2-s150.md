@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `r18-a2-w14-k-native-w30ft2-s150`, publicado por el usuario alfred8995 en HuggingFace, es un checkpoint de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones) distribuido en formato safetensors. La nomenclatura del identificador sugiere una configuración experimental concreta (posiblemente variantes de atención, ventana o pasos de entrenamiento), si bien no se ha publicado documentación que desarrolle qué significan exactamente esos sufijos. El repositorio tiene un tamaño de 14,4 GB y está etiquetado con el tag `sn38-nanochrono`, un identificador que no corresponde a ninguna familia de modelos ampliamente conocida.
+El modelo `r18-a2-w14-k-native-w30ft2-s150`, publicado por el usuario alfred8995 en Hugging Face, es un checkpoint de 2.018.511.234 parámetros (aproximadamente 2,02 mil millones) distribuido en formato safetensors. La nomenclatura del identificador sugiere una configuración experimental concreta (posiblemente variantes de atención, ventana o pasos de entrenamiento), si bien no se ha publicado documentación que desarrolle qué significan exactamente esos sufijos. El repositorio tiene un tamaño de 14,4 GB y está etiquetado con el tag `sn38-nanochrono`, un identificador que no corresponde a ninguna familia de modelos ampliamente conocida.
 
-Se trata de un modelo de acceso restringido (gated): para descargarlo es necesario aceptar condiciones previamente en HuggingFace. La licencia declarada es Apache 2.0, lo que en principio permitiría uso comercial, aunque la falta de documentación sobre el entrenamiento y los datos complica cualquier evaluación rigurosa de riesgos. El número de descargas (8) y de likes (0) indica que se trata de una publicación de muy baja difusión, probablemente un experimento personal o un checkpoint intermedio.
+Se trata de un modelo de acceso restringido (gated): para descargarlo es necesario aceptar condiciones previamente en Hugging Face. La licencia declarada es Apache 2.0, lo que en principio permitiría uso comercial, aunque la falta de documentación sobre el entrenamiento y los datos complica cualquier evaluación rigurosa de riesgos. El número de descargas (8) y de likes (0) indica que se trata de una publicación de muy baja difusión, probablemente un experimento personal o un checkpoint intermedio.
 
 No se dispone de información sobre arquitectura, longitud de contexto, datos de entrenamiento ni resultados de benchmarks. Cualquier uso en producción debería ir precedido de una evaluación empírica propia, dado que la ficha pública no aporta garantías técnicas.
 
@@ -74,7 +74,7 @@ La comparación se limita a modelos de tamaño similar; no hay datos de rendimie
 
 - Ausencia total de documentación: no se conocen arquitectura, tokenizador, datos de entrenamiento ni proceso de alineamiento, lo que impide evaluar sesgos, toxicidad o calidad.
 - Riesgo elevado de alucinación y comportamiento impredecible al no haber información sobre fases de instrucción o RLHF.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de descargas.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de descargas.
 - Aunque la licencia es Apache 2.0, la falta de información sobre la procedencia de los datos de entrenamiento impide descartar riesgos legales derivados de posibles datasets con restricciones.
 - El tag `sn38-nanochrono` no corresponde a ninguna familia reconocida; no se puede asumir compatibilidad con herramientas estándar (tokenizadores, plantillas de chat, frameworks de inferencia).
 - El número de descargas (8) y la ausencia de likes sugieren que el modelo no ha sido validado por la comunidad.
@@ -83,4 +83,4 @@ La comparación se limita a modelos de tamaño similar; no hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-native-w30ft2-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-native-w30ft2-s150

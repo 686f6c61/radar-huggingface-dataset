@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|
 | ThoxClip-Agent-4B | 4B | 8.192 tokens (usado en evaluación) | Apache-2.0 | Ollama (2,50 GB tag por defecto); repo con Modelfile y knowledge pack | Pesos sin entrenar; perfil de sistema y knowledge pack propios |
-| Qwen/Qwen3-4B | 4B | no disponible en la informacion proporcionada | Apache-2.0 | Pesos upstream en HuggingFace y Ollama (`qwen3:4b`) | Modelo base; sin perfil de sistema ni knowledge pack de THOX |
+| Qwen/Qwen3-4B | 4B | no disponible en la informacion proporcionada | Apache-2.0 | Pesos upstream en Hugging Face y Ollama (`qwen3:4b`) | Modelo base; sin perfil de sistema ni knowledge pack de THOX |
 | Alternativas de 4B de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas concretas en la informacion proporcionada |
 
 La comparación relevante es contra el propio modelo base: ThoxClip-Agent-4B no modifica los pesos de Qwen3-4B, por lo que sus capacidades intrínsecas son las del base. La diferencia se limita al perfil de sistema y al knowledge pack, cuyo efecto se refleja en las pruebas de grounding y de comportamiento descritas por el autor.
@@ -96,7 +96,7 @@ La comparación relevante es contra el propio modelo base: ThoxClip-Agent-4B no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thox-ai/ThoxClip-Agent-4B
+- Repositorio en Hugging Face: https://huggingface.co/Thox-ai/ThoxClip-Agent-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Modelo publicado en Ollama: `Thox-ai/thoxclip-agent-4b` (referencia indicada en la model card; no se proporciona URL directa en la información disponible)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

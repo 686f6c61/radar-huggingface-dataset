@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF estatico): https://huggingface.co/mradermacher/Mistral-Small-24B-ArliAI-RPMax-v1.4-GGUF
+- Repositorio Hugging Face (GGUF estatico): https://huggingface.co/mradermacher/Mistral-Small-24B-ArliAI-RPMax-v1.4-GGUF
 - Repositorio de cuantizaciones imatrix: https://huggingface.co/mradermacher/Mistral-Small-24B-ArliAI-RPMax-v1.4-i1-GGUF
 - Modelo base: https://huggingface.co/ArliAI/Mistral-Small-24B-ArliAI-RPMax-v1.4
 - Pagina de descargas del autor: https://hf.tst.eu/model#Mistral-Small-24B-ArliAI-RPMax-v1.4-GGUF

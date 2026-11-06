@@ -90,7 +90,7 @@ Nota: los dos ultimos se incluyen como referencias de la familia Nemotron segun 
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: sin validacion por parte de la comunidad.
 
 ## Enlaces
-- Checkpoint en HuggingFace: https://huggingface.co/glyd/nemotron-3-hummingbird
+- Checkpoint en Hugging Face: https://huggingface.co/glyd/nemotron-3-hummingbird
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Commit del modelo base usado: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16/tree/2dc98e2a
 - Licencia de pesos (NVIDIA Nemotron Open Model License): https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/

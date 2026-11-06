@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - Al ser un adaptador LoRA, los requisitos de hardware son los del modelo base Qwen3.6-27B más el overhead del adaptador (1.0 GB en disco).
 - Para inferencia con el modelo base de 27B en precisión FP16, se estima una VRAM de aproximadamente 54 GB (solo pesos) más memoria para activaciones y contexto. Esto supera la capacidad de GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB). Se necesitarían GPUs profesionales como A100 (40/80 GB) o H100 (80 GB), o bien cuantización del modelo base (por ejemplo, 4-bit con bitsandbytes) para reducir los requisitos.
-- El adaptador puede cargarse con la librería PEFT de HuggingFace, y el modelo base puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF).
+- El adaptador puede cargarse con la librería PEFT de Hugging Face, y el modelo base puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF).
 - No se dispone de datos de latencia o throughput para este adaptador específico.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_llama-3.1-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_llama-3.1-8b_seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/

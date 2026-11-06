@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-W1.88-QAOPD es un checkpoint de Qwen/Qwen3-4B cuantizado a 1,88 bits por peso y posteriormente recuperado mediante un proceso en dos etapas: destilación con conciencia de cuantización (quantization-aware distillation, QAD) seguida de destilación on-policy (OPD). Lo publica el usuario MingZwhy en HuggingFace, con el código, el arnés de evaluación y la receta de entrenamiento en el repositorio GitHub MingZwhy/QAOPD. El problema que aborda es el de la inferencia de un modelo de 4.022.468.096 parámetros con una huella de pesos teórica inferior a 1 GB, un régimen de compresión muy por debajo de las cuantizaciones habituales de 4 u 8 bits.
+Qwen3-4B-W1.88-QAOPD es un checkpoint de Qwen/Qwen3-4B cuantizado a 1,88 bits por peso y posteriormente recuperado mediante un proceso en dos etapas: destilación con conciencia de cuantización (quantization-aware distillation, QAD) seguida de destilación on-policy (OPD). Lo publica el usuario MingZwhy en Hugging Face, con el código, el arnés de evaluación y la receta de entrenamiento en el repositorio GitHub MingZwhy/QAOPD. El problema que aborda es el de la inferencia de un modelo de 4.022.468.096 parámetros con una huella de pesos teórica inferior a 1 GB, un régimen de compresión muy por debajo de las cuantizaciones habituales de 4 u 8 bits.
 
 El interés técnico está en la combinación de cuantización mixta (bloques de 256 pesos, con un 12,5 % de bloques en INT4 y el resto en INT1,58) con un pipeline de destilación que intenta recuperar parte de la calidad perdida. Los resultados publicados por el autor muestran una degradación considerable pero no colapsante: 64,59 en GSM8K frente a 86,35 del modelo BF16, y 60,4 en HumanEval frente a 82,3. La cuantización está "baked in": el checkpoint se carga ya cuantizado y no requiere un paso de calibración en tiempo de inferencia.
 
@@ -74,10 +74,10 @@ Metodologia declarada: GSM8K a 5 disparos con strict-match, MATH-500 a 4 disparo
 
 | Modelo | Parametros | Cuantizacion | Contexto | GSM8K | HumanEval | Licencia | Disponibilidad |
 |---|---:|---|---|---:|---:|---|---|
-| MingZwhy/Qwen3-4B-W1.88-QAOPD | 4,02 B | Mixta INT1,58/INT4 (1,88 bits efectivos) | no disponible | 64,59 | 60,4 | Apache-2.0 | HuggingFace, safetensors + custom_code |
-| Qwen/Qwen3-4B (BF16) | 4,02 B | Ninguna (BF16) | no disponible en la informacion proporcionada | 86,35 | 82,3 | Apache-2.0 | HuggingFace, safetensors |
-| Cuantizaciones comunitarias de Qwen3-4B (por ejemplo GGUF Q4_K_M) | 4,02 B | 4 bits | heredado del base | no disponible | no disponible | Apache-2.0 | HuggingFace, GGUF |
-| BitNet b1.58 2B4T (Microsoft) | ~2 B | Ternaria (~1,58 bits) | no disponible en la informacion proporcionada | no disponible | no disponible | MIT | HuggingFace; datos no verificados en la informacion proporcionada |
+| MingZwhy/Qwen3-4B-W1.88-QAOPD | 4,02 B | Mixta INT1,58/INT4 (1,88 bits efectivos) | no disponible | 64,59 | 60,4 | Apache-2.0 | Hugging Face, safetensors + custom_code |
+| Qwen/Qwen3-4B (BF16) | 4,02 B | Ninguna (BF16) | no disponible en la informacion proporcionada | 86,35 | 82,3 | Apache-2.0 | Hugging Face, safetensors |
+| Cuantizaciones comunitarias de Qwen3-4B (por ejemplo GGUF Q4_K_M) | 4,02 B | 4 bits | heredado del base | no disponible | no disponible | Apache-2.0 | Hugging Face, GGUF |
+| BitNet b1.58 2B4T (Microsoft) | ~2 B | Ternaria (~1,58 bits) | no disponible en la informacion proporcionada | no disponible | no disponible | MIT | Hugging Face; datos no verificados en la informacion proporcionada |
 
 El punto de referencia mas directo y con datos comparables en la misma ficha es el propio Qwen3-4B en BF16, del que este checkpoint pierde entre 8,80 y 38,75 puntos segun el benchmark.
 
@@ -98,7 +98,7 @@ El punto de referencia mas directo y con datos comparables en la misma ficha es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MingZwhy/Qwen3-4B-W1.88-QAOPD
+- Hugging Face: https://huggingface.co/MingZwhy/Qwen3-4B-W1.88-QAOPD
 - Repositorio GitHub con codigo, receta y arnes: https://github.com/MingZwhy/QAOPD
 - Documentacion de evaluacion: https://github.com/MingZwhy/QAOPD/blob/main/docs/EVALUATION.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

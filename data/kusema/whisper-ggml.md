@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kusema/whisper-ggml` (este repo) | variantes `small`, `medium`, `large-v3-turbo`, `large-v3` | no disponible | GGML | MIT | HuggingFace (espejo) |
+| `kusema/whisper-ggml` (este repo) | variantes `small`, `medium`, `large-v3-turbo`, `large-v3` | no disponible | GGML | MIT | Hugging Face (espejo) |
 | Whisper original (OpenAI) | mismas variantes | no disponible | PyTorch (`.pt`) | MIT | GitHub de OpenAI |
-| whisper.cpp (pesos oficiales) | mismas variantes | no disponible | GGML | MIT | HuggingFace de ggml-org |
+| whisper.cpp (pesos oficiales) | mismas variantes | no disponible | GGML | MIT | Hugging Face de ggml-org |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada. La diferencia practica frente al Whisper original es el formato (GGML frente a PyTorch) y el runtime (whisper.cpp frente a PyTorch), no el modelo.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusema/whisper-ggml
+- Repositorio en Hugging Face: https://huggingface.co/kusema/whisper-ggml
 - Proyecto Kusema: https://github.com/neulinc/kusema
 - Whisper original (OpenAI): https://github.com/openai/whisper
 - whisper.cpp: https://github.com/ggml-org/whisper.cpp

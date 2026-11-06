@@ -79,7 +79,7 @@ La comparativa se limita a la arquitectura y filosofía de diseño, ya que no ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yemiadeleke/model_196177330_clip_small
+- Hugging Face: https://huggingface.co/yemiadeleke/model_196177330_clip_small
 - Repositorio de referencia de CLIP (OpenAI): https://github.com/openai/CLIP
 - TinyCLIP (sachin/tiny_clip): https://huggingface.co/sachin/tiny_clip
 - TinyCLIP (wkcn/TinyCLIP): https://github.com/wkcn/TinyCLIP

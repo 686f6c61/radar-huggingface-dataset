@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaxGPT-3 es un modelo de lenguaje de tipo GPT entrenado desde cero (sin pesos preentrenados ni la librería `transformers`) por Maxwell Brohm, un estudiante de secundaria, y publicado bajo el identificador `MaxMillion404/MaxGPT-3` en HuggingFace. Se trata del mayor de la familia Classic MaxGPT, con 252.135.424 parámetros reales según los pesos en safetensors (el autor lo describe como "235M"), 16 bloques transformer, dimensión oculta de 1024, 16 cabezas de atención y una ventana de contexto de 1024 tokens.
+MaxGPT-3 es un modelo de lenguaje de tipo GPT entrenado desde cero (sin pesos preentrenados ni la librería `transformers`) por Maxwell Brohm, un estudiante de secundaria, y publicado bajo el identificador `MaxMillion404/MaxGPT-3` en Hugging Face. Se trata del mayor de la familia Classic MaxGPT, con 252.135.424 parámetros reales según los pesos en safetensors (el autor lo describe como "235M"), 16 bloques transformer, dimensión oculta de 1024, 16 cabezas de atención y una ventana de contexto de 1024 tokens.
 
 El modelo se preentrenó durante aproximadamente 6-7 días en una única GPU RTX 5070 de 12 GB, con 2,44 millones de pasos y unos 20.000 millones de pasadas de tokens sobre una mezcla de siete conjuntos de datos con cerca de 5.000 millones de tokens únicos, siguiendo la receta "train past optimal" popularizada por LLaMA. El resultado es un modelo pequeño con pérdida final en torno a 2,0, orientado a generar respuestas con estructura de chatbot (formato USER/ASSISTANT) pero con la deriva temática propia de su escala.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MaxGPT-3 | 252M (nominal 235M) | 1024 | ~5B tokens únicos, 20B pasadas, desde cero | Apache 2.0 | HuggingFace, pesos safetensors + código propio |
-| MaxGPT-3.5 | 235M | 1024 | MaxGPT-3 + fine-tuning de chat | Apache 2.0 (según familia) | HuggingFace |
-| MaxGPT-2 | 110M | 512 | Desde cero, corpus menor | Apache 2.0 (según familia) | HuggingFace |
-| GPT-2 small (referencia de tamaño) | 124M | 1024 | WebText, ~40 GB de texto | MIT (pesos publicados por OpenAI) | HuggingFace, múltiples formatos |
+| MaxGPT-3 | 252M (nominal 235M) | 1024 | ~5B tokens únicos, 20B pasadas, desde cero | Apache 2.0 | Hugging Face, pesos safetensors + código propio |
+| MaxGPT-3.5 | 235M | 1024 | MaxGPT-3 + fine-tuning de chat | Apache 2.0 (según familia) | Hugging Face |
+| MaxGPT-2 | 110M | 512 | Desde cero, corpus menor | Apache 2.0 (según familia) | Hugging Face |
+| GPT-2 small (referencia de tamaño) | 124M | 1024 | WebText, ~40 GB de texto | MIT (pesos publicados por OpenAI) | Hugging Face, múltiples formatos |
 
 La comparación con GPT-2 small es solo orientativa por escala: MaxGPT-3 usa un corpus mucho menor (~5.000 millones de tokens únicos frente a decenas de miles de millones) y no se han publicado benchmarks que permitan comparar calidad. No se dispone de datos de benchmarks de MaxGPT-3 frente a alternativas.
 
@@ -83,6 +83,6 @@ La comparación con GPT-2 small es solo orientativa por escala: MaxGPT-3 usa un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MaxMillion404/MaxGPT-3
+- Hugging Face: https://huggingface.co/MaxMillion404/MaxGPT-3
 - Repositorio GitHub con código y write-up: https://github.com/MaxwellBrohm/MaxGPT
 - Web del autor: https://maxwellbrohm.com

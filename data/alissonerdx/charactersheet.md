@@ -4,7 +4,7 @@
 
 CharacterSheet es un adaptador LoRA experimental desarrollado por Alissonerdx para el modelo de difusión FLUX.2-Klein-9B, orientado a la generación de hojas de personaje (character sheets) con múltiples vistas. Se distribuye como un complemento para ComfyUI y permite transformar una imagen de entrada en una composición multi-view del mismo personaje, lo que resulta útil en flujos de diseño de personajes para animación, videojuegos o ilustración conceptual.
 
-El modelo se publicó en julio de 2026 y ha recibido 119 likes en HuggingFace, aunque no registra descargas. Su naturaleza experimental y su licencia no especificada (etiquetada como "other" y restringida a la región US) limitan su uso en producción. Al ser un LoRA, no es un modelo autónomo: requiere el modelo base FLUX.2-Klein-9B (o Krea-2, según las etiquetas) para funcionar, y su pipeline declarado es image-to-image.
+El modelo se publicó en julio de 2026 y ha recibido 119 likes en Hugging Face, aunque no registra descargas. Su naturaleza experimental y su licencia no especificada (etiquetada como "other" y restringida a la región US) limitan su uso en producción. Al ser un LoRA, no es un modelo autónomo: requiere el modelo base FLUX.2-Klein-9B (o Krea-2, según las etiquetas) para funcionar, y su pipeline declarado es image-to-image.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 - VRAM estimada: no disponible, pero al ser un LoRA sobre FLUX.2-Klein-9B, se requiere la VRAM necesaria para ejecutar el modelo base (tipicamente 8-12 GB en cuantizacion FP16, dependiendo de la resolucion de salida).
 - GPU recomendadas: tarjetas con al menos 8 GB de VRAM, como RTX 3060/4060, o GPUs de datacenter como A100 si se busca mayor velocidad.
 - Compatibilidad con consumer GPU: si, siempre que se use el modelo base en cuantizacion ligera (por ejemplo, GGUF o FP8) y resoluciones moderadas.
-- Opciones de despliegue: ComfyUI es el entorno principal; tambien puede integrarse en flujos de difusion con la libreria diffusers de HuggingFace, aunque no se documenta explicitamente.
+- Opciones de despliegue: ComfyUI es el entorno principal; tambien puede integrarse en flujos de difusion con la libreria diffusers de Hugging Face, aunque no se documenta explicitamente.
 - Latencia y throughput: no disponibles; dependen del hardware y de la resolucion de salida.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de informacion sobre otros LoRAs de hojas de personaje comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alissonerdx/CharacterSheet
+- Repositorio Hugging Face: https://huggingface.co/Alissonerdx/CharacterSheet
 - Modelo base FLUX.2-Klein-9B: no disponible en la informacion proporcionada
 - Documentacion de ComfyUI: no disponible en la informacion proporcionada

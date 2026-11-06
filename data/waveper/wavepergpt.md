@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WavePerGPT es un modelo de lenguaje de escala muy reducida (5.752.320 parametros totales) publicado por el usuario waveper en HuggingFace bajo licencia MIT. Segun su propia model card, se trata de un experimento entrenado "por diversion" sobre los mensajes de Discord del autor, sin pretension de utilidad general y con un comportamiento declaradamente deficiente: el autor lo describe como "blazingly Fast and Stupid" y advierte que "no puede escribir normalmente", que produce "gibberish" y que su ventana de contexto maxima es de 128 tokens.
+WavePerGPT es un modelo de lenguaje de escala muy reducida (5.752.320 parametros totales) publicado por el usuario waveper en Hugging Face bajo licencia MIT. Segun su propia model card, se trata de un experimento entrenado "por diversion" sobre los mensajes de Discord del autor, sin pretension de utilidad general y con un comportamiento declaradamente deficiente: el autor lo describe como "blazingly Fast and Stupid" y advierte que "no puede escribir normalmente", que produce "gibberish" y que su ventana de contexto maxima es de 128 tokens.
 
 No es un modelo orientado a produccion ni a evaluacion comparativa. Su interes es puramente experimental o educativo: sirve como ejemplo de fine-tuning de un modelo diminuto sobre un corpus personal y como caso de estudio de las limitaciones de los modelos por debajo del orden de los millones de parametros. No se dispone de informacion sobre arquitectura concreta, dataset, proceso de entrenamiento ni evaluacion.
 
@@ -25,7 +25,7 @@ La relevancia actual es limitada y debe enmarcarse en el contexto de modelos tin
 
 No se dispone de informacion sobre la arquitectura interna (tipo de transformer, numero de capas, dimensiones de hidden state, atencion, tokenizador, etc.). El unico dato estructural verificable es el recuento de parametros: 5.752.320, lo que situa al modelo en el rango de los modelos tiny, muy por debajo de los modelos pequenos habituales (p. ej., ~100M-1B).
 
-Respecto al entrenamiento, la model card indica que fue entrenado sobre los mensajes de Discord del propio autor "por diversion". No se especifica el numero de tokens, la composicion del dataset, si hubo etapas de alineacion (RLHF, DPO, SFT supervisado mas alla del fine-tuning base) ni hiperparametros. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, MoE u otras). El tag `endpoints_compatible` sugiere que el autor lo preparo para su despliegue mediante Inference Endpoints de HuggingFace, pero no aporta informacion sobre el entrenamiento.
+Respecto al entrenamiento, la model card indica que fue entrenado sobre los mensajes de Discord del propio autor "por diversion". No se especifica el numero de tokens, la composicion del dataset, si hubo etapas de alineacion (RLHF, DPO, SFT supervisado mas alla del fine-tuning base) ni hiperparametros. Tampoco se documenta ninguna innovacion tecnica (decodificacion especulativa, atencion lineal, MoE u otras). El tag `endpoints_compatible` sugiere que el autor lo preparo para su despliegue mediante Inference Endpoints de Hugging Face, pero no aporta informacion sobre el entrenamiento.
 
 ## Capacidades
 
@@ -41,10 +41,10 @@ Respecto al entrenamiento, la model card indica que fue entrenado sobre los mens
 
 - Docencia y talleres sobre modelos de lenguaje: sirve para ilustrar en directo como un modelo con pocos millones de parametros y contexto de 128 tokens falla en tareas que un modelo de escala media resuelve, sin coste de computo.
 - Pruebas de integracion de pipelines GGUF: permite validar el cableado de un runtime (carga, tokenizacion, generacion, streaming) antes de sustituir el modelo por uno mayor en el mismo pipeline.
-- Experimentos de fine-tuning sobre corpus personales: como base diminuta para reproducir el flujo completo de entrenamiento y publicacion en HuggingFace con un coste minimo.
+- Experimentos de fine-tuning sobre corpus personales: como base diminuta para reproducir el flujo completo de entrenamiento y publicacion en Hugging Face con un coste minimo.
 - Pruebas de carga y benchmarking de infraestructura: al ocupar practicamente nada en disco y VRAM, sirve para medir latencia de red, colas y orquestacion sin que el modelo sea el cuello de botella.
 - Generacion de texto de relleno o sintetico no sensible: para pruebas de UI, maquetacion o demos donde el contenido no importa y solo se necesita una salida de texto.
-- Ejemplo de publicacion de modelos en HuggingFace: la model card y el repo sirven como plantilla de un caso real de publicacion con licencia MIT y formato GGUF.
+- Ejemplo de publicacion de modelos en Hugging Face: la model card y el repo sirven como plantilla de un caso real de publicacion con licencia MIT y formato GGUF.
 - Prototipado de un endpoint compatible con la API de Inference Endpoints: el tag `endpoints_compatible` permite probar el flujo de despliegue sin incurrir en costes de un modelo grande.
 
 ## Benchmarks y rendimiento
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 100 MB en la mayoria de cuantizaciones GGUF, dado el tamano de 5,75M de parametros (a 4 bits, ~3 MB de pesos; a 8 bits, ~6 MB; a 16 bits, ~12 MB). Las cifras exactas dependen del nivel de cuantizacion publicado, que no se detalla.
 - GPU recomendadas: cualquier GPU consumer moderna o integrada; el modelo cabe holgadamente en GPUs con 1-2 GB de VRAM e incluso puede ejecutarse en CPU.
 - Cabe en cualquier GPU consumer (RTX 3060, RTX 4060, GTX 1650, iGPU recientes) y en la mayoria de CPUs con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier runtime compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. Por el tamano del modelo, la latencia estara dominada por el overhead del runtime y de la red mas que por el computo.
 
 ## Comparativa con modelos similares
@@ -84,5 +84,5 @@ No se conocen modelos comparables publicados en la misma categoria (modelos de ~
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/waveper/WavePerGPT
+- Hugging Face: https://huggingface.co/waveper/WavePerGPT
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados al modelo.

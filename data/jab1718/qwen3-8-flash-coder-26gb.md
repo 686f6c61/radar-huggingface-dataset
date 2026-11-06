@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Coder-26GB es un modelo de lenguaje de tipo Mixture of Experts (MoE) derivado del modelo Qwen/Qwen3.8-Flash-Next de Alibaba, mediante un proceso de poda de subred y destilación con LoRA. El autor, Jab1718, ha reducido el número de expertos enrutados por capa de 512 a 128 (una reducción del 75%), manteniendo las 48 capas del modelo original y los 8 expertos activos por token. El resultado es un checkpoint de aproximadamente 26 GB (aunque el repositorio en HuggingFace ocupa 70.2 GB, probablemente por incluir pesos en precisión completa o archivos adicionales) que cabe en una GPU de 32 GB sin descarga a CPU.
+Qwen3.8-Flash-Coder-26GB es un modelo de lenguaje de tipo Mixture of Experts (MoE) derivado del modelo Qwen/Qwen3.8-Flash-Next de Alibaba, mediante un proceso de poda de subred y destilación con LoRA. El autor, Jab1718, ha reducido el número de expertos enrutados por capa de 512 a 128 (una reducción del 75%), manteniendo las 48 capas del modelo original y los 8 expertos activos por token. El resultado es un checkpoint de aproximadamente 26 GB (aunque el repositorio en Hugging Face ocupa 70.2 GB, probablemente por incluir pesos en precisión completa o archivos adicionales) que cabe en una GPU de 32 GB sin descarga a CPU.
 
 El modelo está diseñado específicamente para tareas de generación de código y razonamiento lógico, con un rendimiento declarado del 100% en una suite de pruebas de algoritmos estándar. Se distribuye bajo licencia Apache 2.0 y soporta los idiomas inglés, vietnamita y chino. Su relevancia radica en ofrecer una alternativa de bajo coste de VRAM a modelos MoE de gran tamaño, manteniendo una calidad competitiva en tareas de programación, lo que lo hace atractivo para despliegues en hardware de gama media.
 
@@ -82,11 +82,11 @@ No se dispone de información suficiente para una comparativa cuantitativa rigur
 - No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K), por lo que su rendimiento general fuera de código es desconocido.
 - Riesgo de alucinación inherente a los modelos generativos, especialmente en tareas de razonamiento complejo o código poco común.
 - La licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento del modelo en producción.
-- El repositorio en HuggingFace ocupa 70.2 GB, aunque la model card afirma un checkpoint de ~26 GB; esta discrepancia puede deberse a archivos adicionales o a pesos en precisión completa, lo que debe verificarse antes de la descarga.
+- El repositorio en Hugging Face ocupa 70.2 GB, aunque la model card afirma un checkpoint de ~26 GB; esta discrepancia puede deberse a archivos adicionales o a pesos en precisión completa, lo que debe verificarse antes de la descarga.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb
+- Modelo en Hugging Face: https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb
 - Repositorio del modelo base Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Documentación de Qwen3.8-Flash en QwenCloud: https://www.qwencloud.com/models/qwen3.8-flash
 - Documentación de Qwen3.8-Flash en B.AI: https://docs.b.ai/llmservice/models/qwen3-8-flash/

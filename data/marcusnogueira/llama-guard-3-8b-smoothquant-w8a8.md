@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Cuantizacion | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| llama-guard-3-8b-smoothquant-w8a8 | 8,03 B | INT8 W8A8 (SmoothQuant + GPTQ) | No especificada en la ficha | en, pt | No disponible | HuggingFace, formato compressed-tensors |
-| meta-llama/Llama-Guard-3-8B | 8,03 B | BF16 sin cuantizar | No disponible en la informacion recogida | Multilingue (segun Meta) | Licencia comunitaria Llama 3.1 | HuggingFace |
-| Llama Guard 3 1B | No disponible en la informacion recogida | BF16 sin cuantizar | No disponible | Multilingue (segun Meta) | Licencia comunitaria Llama 3.1 | HuggingFace |
-| Llama Guard 3 11B-Vision | No disponible en la informacion recogida | BF16 sin cuantizar | No disponible | Multilingue (segun Meta) | Licencia comunitaria Llama 3.1 | HuggingFace |
+| llama-guard-3-8b-smoothquant-w8a8 | 8,03 B | INT8 W8A8 (SmoothQuant + GPTQ) | No especificada en la ficha | en, pt | No disponible | Hugging Face, formato compressed-tensors |
+| meta-llama/Llama-Guard-3-8B | 8,03 B | BF16 sin cuantizar | No disponible en la informacion recogida | Multilingue (segun Meta) | Licencia comunitaria Llama 3.1 | Hugging Face |
+| Llama Guard 3 1B | No disponible en la informacion recogida | BF16 sin cuantizar | No disponible | Multilingue (segun Meta) | Licencia comunitaria Llama 3.1 | Hugging Face |
+| Llama Guard 3 11B-Vision | No disponible en la informacion recogida | BF16 sin cuantizar | No disponible | Multilingue (segun Meta) | Licencia comunitaria Llama 3.1 | Hugging Face |
 
 La diferencia principal frente al checkpoint base es el esquema de cuantizacion: INT8 W8A8 reduce el peso a la mitad aproximadamente respecto a BF16, a cambio de una posible perdida de precision en la clasificacion que no esta cuantificada en la informacion disponible.
 
@@ -87,7 +87,7 @@ La diferencia principal frente al checkpoint base es el esquema de cuantizacion:
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/marcusnogueira/llama-guard-3-8b-smoothquant-w8a8
+- Checkpoint en Hugging Face: https://huggingface.co/marcusnogueira/llama-guard-3-8b-smoothquant-w8a8
 - Perfil del autor: https://huggingface.co/marcusnogueira
 - Modelo base: https://huggingface.co/meta-llama/Llama-Guard-3-8B
 - Documentacion de Llama Guard 3 en Meta: https://dev.meta.ai/llama/docs/model-cards-and-prompt-formats/llama-guard-3

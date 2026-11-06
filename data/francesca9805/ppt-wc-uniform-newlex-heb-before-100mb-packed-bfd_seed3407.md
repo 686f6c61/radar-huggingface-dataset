@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ppt-wc-uniform-newlex-heb-before-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo monolingüe inglés `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo decoder-only de la familia GPT-2 con 86.508.288 parámetros reales (confirmados en los pesos safetensors), lo que lo sitúa en la gama de los modelos pequeños de generación de texto, con un peso de repositorio de 0,2 GB.
+El modelo `francesca9805/ppt-wc-uniform-newlex-heb-before-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo monolingüe inglés `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo decoder-only de la familia GPT-2 con 86.508.288 parámetros reales (confirmados en los pesos safetensors), lo que lo sitúa en la gama de los modelos pequeños de generación de texto, con un peso de repositorio de 0,2 GB.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121. El nombre del repositorio sugiere un experimento dentro de una línea de trabajo sobre tokenizadores y léxicos nuevos ("newlex", "new-tokenizers" en el proyecto de Weights & Biases), con variantes aparentemente orientadas a distintos idiomas (el segmento "heb" apunta a hebreo, aunque la ficha no declara idiomas soportados). No hay información publicada sobre el dataset de entrenamiento, la composición de los datos ni el número de tokens utilizados.
 
@@ -48,7 +48,7 @@ El entrenamiento se realizó mediante SFT con TRL, partiendo del modelo base ya 
 - Capacidades de agente y multi-step reasoning: no soportadas ni documentadas.
 - Capacidades multilingues: no documentadas; el modelo base es monolingue ingles y la ficha no declara idiomas.
 - Capacidades especiales (thinking mode, vision, audio): ninguna documentada. Es un modelo exclusivamente de texto.
-- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con los endpoints de HuggingFace.
+- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con los endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -78,10 +78,10 @@ Las siguientes cifras son estimaciones derivadas del recuento real de parametros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ppt-wc-uniform-newlex-heb-before-100mb-packed-bfd_seed3407 | 86,5 M | No disponible | No disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL sobre un Goldfish de 100 MB |
-| goldfish-models/eng_latn_100mb (modelo base) | No disponible | No disponible | No disponible | HuggingFace (coleccion Goldfish) | Monolingue ingles, preentrenado sobre 100 MB de texto |
-| gpt2 (OpenAI) | 124 M | 1.024 tokens | MIT | HuggingFace, ampliamente desplegado | Referencia de la familia; tokenizador BPE en ingles |
-| distilgpt2 | 82 M | 1.024 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Destilado de GPT-2, mas rapido con perdida de calidad |
+| francesca9805/ppt-wc-uniform-newlex-heb-before-100mb-packed-bfd_seed3407 | 86,5 M | No disponible | No disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL sobre un Goldfish de 100 MB |
+| goldfish-models/eng_latn_100mb (modelo base) | No disponible | No disponible | No disponible | Hugging Face (coleccion Goldfish) | Monolingue ingles, preentrenado sobre 100 MB de texto |
+| gpt2 (OpenAI) | 124 M | 1.024 tokens | MIT | Hugging Face, ampliamente desplegado | Referencia de la familia; tokenizador BPE en ingles |
+| distilgpt2 | 82 M | 1.024 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Destilado de GPT-2, mas rapido con perdida de calidad |
 
 No se dispone de datos de rendimiento comparado entre estas opciones para este ajuste concreto; la comparacion se limita a parametros, contexto declarado y licencia.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones para este a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-heb-before-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-heb-before-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rcbn35hp

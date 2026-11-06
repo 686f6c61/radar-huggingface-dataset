@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AtoMinima es un modelo de lenguaje de 420 parámetros entrenado desde cero por el usuario arthurblg1802 y publicado en HuggingFace. Se trata de un transformer decoder-only de una sola capa con anchura de 4 dimensiones, tokenizador a nivel de carácter y una ventana de contexto de 256 caracteres. Su interés no reside en sus capacidades lingüísticas, que el propio autor califica de inexistentes, sino en su función como cota inferior experimental: un modelo deliberadamente mínimo que sirve para calibrar qué rendimiento obtiene un sistema con capacidad de aprendizaje prácticamente nula sobre benchmarks estándar.
+AtoMinima es un modelo de lenguaje de 420 parámetros entrenado desde cero por el usuario arthurblg1802 y publicado en Hugging Face. Se trata de un transformer decoder-only de una sola capa con anchura de 4 dimensiones, tokenizador a nivel de carácter y una ventana de contexto de 256 caracteres. Su interés no reside en sus capacidades lingüísticas, que el propio autor califica de inexistentes, sino en su función como cota inferior experimental: un modelo deliberadamente mínimo que sirve para calibrar qué rendimiento obtiene un sistema con capacidad de aprendizaje prácticamente nula sobre benchmarks estándar.
 
 El modelo se entrenó sobre 370 millones de caracteres extraídos de una porción de 10 millones de caracteres del dataset FineWeb-edu (sample-10BT). Con 420 parámetros entrenables y un checkpoint de 11 KB, AtoMinima ocupa un espacio extremo en el espectro de modelos publicados: es útil como referencia metodológica para investigadores que estudian escalado, dinámica de entrenamiento o métricas de evaluación en el régimen de parámetros ínfimos.
 
@@ -92,7 +92,7 @@ No se dispone de modelos comparables en la información proporcionada. AtoMinima
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthurblg1802/AtoMinima
+- Modelo en Hugging Face: https://huggingface.co/arthurblg1802/AtoMinima
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Repositorio del código (`atominima.py`): incluido en el propio repositorio de HuggingFace del modelo
+- Repositorio del código (`atominima.py`): incluido en el propio repositorio de Hugging Face del modelo
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

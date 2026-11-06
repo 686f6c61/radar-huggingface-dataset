@@ -86,7 +86,7 @@ La comparación con modelos de vídeo de otros tamaños o familias no está disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PatiPix/FastWan2.2-TI2V-5B-GGUF
+- Hugging Face: https://huggingface.co/PatiPix/FastWan2.2-TI2V-5B-GGUF
 - Modelo base (FastVideo): https://huggingface.co/FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers
 - GGUF de referencia (QuantStack): https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp

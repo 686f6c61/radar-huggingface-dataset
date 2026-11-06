@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TFWM encoder — Supervised (vol) es un codificador de series temporales financieras desarrollado por fin-ai-lab, publicado en HuggingFace bajo el identificador `fin-ai-lab/tfwm-supervised-vol`. Se trata de un transformer de aproximadamente 22 millones de parametros, 12 capas, anchura 384, 6 cabezas de atencion, MLP de 1536 y tamano de parche 8, con codificacion posicional sinusoidal. Su entrada son datos de renta variable estadounidense en sesion regular muestreados a 1 Hz: 9 canales de mercado (bid_price, vwap_all, high, low, ask_price, bid_size, ask_size, volume, n) mas 11 canales de informacion de vista calculados en tiempo de carga, lo que da un total de 20 canales.
+TFWM encoder — Supervised (vol) es un codificador de series temporales financieras desarrollado por fin-ai-lab, publicado en Hugging Face bajo el identificador `fin-ai-lab/tfwm-supervised-vol`. Se trata de un transformer de aproximadamente 22 millones de parametros, 12 capas, anchura 384, 6 cabezas de atencion, MLP de 1536 y tamano de parche 8, con codificacion posicional sinusoidal. Su entrada son datos de renta variable estadounidense en sesion regular muestreados a 1 Hz: 9 canales de mercado (bid_price, vwap_all, high, low, ask_price, bid_size, ask_size, volume, n) mas 11 canales de informacion de vista calculados en tiempo de carga, lo que da un total de 20 canales.
 
 El modelo no genera texto ni codigo: es un extractor de caracteristicas (pipeline `feature-extraction`) entrenado de forma supervisada de extremo a extremo con una cabeza MLP para ordenar la seccion cruzada de acciones segun el cambio de volatilidad realizada en los siguientes 900 segundos, usando una perdida de ranking por pares. Cada celda de entrenamiento es un par (dia, ancla de 5 minutos) con 16 acciones extraidas de la misma seccion cruzada, y el objetivo se calcula estrictamente con datos posteriores al ancla.
 
@@ -94,7 +94,7 @@ Nota metodologica de la comparativa interna: los 18 encoders comparten backbone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-supervised-vol
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-supervised-vol
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore
 - Directorio `1Hz_daystore` del dataset: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore/tree/main/1Hz_daystore
 - Coleccion TFWM Pre-Trained Encoders (18 encoders): https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d

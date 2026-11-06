@@ -86,7 +86,7 @@ La comparación relevante es contra el modelo base: misma arquitectura, mismo to
 
 ## Enlaces
 
-- HuggingFace (modelo cuantizado): https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16
+- Hugging Face (modelo cuantizado): https://huggingface.co/axteam/MiniCPM-V-4.7-35B-A3B-NVFP4A16
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada
 - La búsqueda web realizada no devolvió resultados técnicos relevantes (solo dominios de contenido no relacionado), por lo que no se enlaza ninguna fuente adicional

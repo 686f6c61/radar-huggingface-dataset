@@ -109,7 +109,7 @@ No se han encontrado en la información disponible modelos de terceros comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/r0b0tlab/Qwen3.8-Flash-Next-EXL3-2.50bpw
+- Repositorio en Hugging Face: https://huggingface.co/r0b0tlab/Qwen3.8-Flash-Next-EXL3-2.50bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del autor con métricas, arneses y modelo servido: https://github.com/r0b0tlab/qwen38-flashnext-exl3
 - Contenedor Docker: ghcr.io/r0b0tlab/qwen38-flash-next-exl3:2.50bpw

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-R1-Custom-GGUF es un modelo de lenguaje publicado por el usuario cyberpro-dev en HuggingFace, consistente en un ajuste fino (finetune) del modelo base Qwen2.5-3B-Instruct, posteriormente convertido al formato GGUF mediante la libreria Unsloth. El repositorio contiene un unico archivo de pesos cuantizado en Q4_K_M, junto con un Modelfile de Ollama para su despliegue simplificado, lo que lo situa como un modelo orientado a inferencia local en hardware de consumo. El nombre incluye el sufijo "R1", que sugiere un ajuste orientado a razonamiento, aunque la model card no documenta dicho proceso.
+Qwen2.5-3B-R1-Custom-GGUF es un modelo de lenguaje publicado por el usuario cyberpro-dev en Hugging Face, consistente en un ajuste fino (finetune) del modelo base Qwen2.5-3B-Instruct, posteriormente convertido al formato GGUF mediante la libreria Unsloth. El repositorio contiene un unico archivo de pesos cuantizado en Q4_K_M, junto con un Modelfile de Ollama para su despliegue simplificado, lo que lo situa como un modelo orientado a inferencia local en hardware de consumo. El nombre incluye el sufijo "R1", que sugiere un ajuste orientado a razonamiento, aunque la model card no documenta dicho proceso.
 
 El modelo cuenta con 3.085.938.688 parametros totales (aproximadamente 3,09 mil millones), segun los datos declarados en safetensors, y ocupa 1,9 GB en el repositorio, coherente con una cuantizacion de 4 bits. La etiqueta "conversational" y el ejemplo de uso mediante `llama-cli` confirman su orientacion a generacion de texto conversacional. No se dispone de informacion sobre licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyberpro-dev/Qwen2.5-3B-R1-Custom-GGUF | ~3,09 mil millones | No disponible | No disponible | GGUF (Q4_K_M) en HuggingFace |
+| cyberpro-dev/Qwen2.5-3B-R1-Custom-GGUF | ~3,09 mil millones | No disponible | No disponible | GGUF (Q4_K_M) en Hugging Face |
 | Qwen2.5-3B-Instruct (modelo base de referencia) | ~3,09 mil millones | 32.768 tokens (ampliable con YaRN segun el autor original; dato no verificado en la informacion proporcionada) | Apache-2.0 (dato del modelo original) | Multiples formatos (safetensors, GGUF, AWQ) |
 | Llama-3.2-3B-Instruct | ~3,21 mil millones (dato del modelo original) | 128.000 tokens (dato del modelo original) | Llama 3.2 Community License | Multiples formatos |
 | Phi-3.5-mini-instruct | ~3,8 mil millones (dato del modelo original) | 128.000 tokens (dato del modelo original) | MIT (dato del modelo original) | Multiples formatos |
@@ -85,7 +85,7 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyberpro-dev/Qwen2.5-3B-R1-Custom-GGUF
+- Hugging Face: https://huggingface.co/cyberpro-dev/Qwen2.5-3B-R1-Custom-GGUF
 - Unsloth (libreria empleada en el ajuste y la conversion): https://github.com/unslothai/unsloth
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo. Los unicos resultados obtenidos corresponden a servicios bancarios y de formacion en ciberseguridad (Banque Populaire, Cyberplus, CYBERPRO de Verisafe) y no guardan relacion con el modelo evaluado. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados.

@@ -102,16 +102,16 @@ Frente al checkpoint BF16, esta version reduce el peso de los pesos a 27,7 GiB y
 - Riesgo de descalibracion fuera de distribucion: al no generar texto, no hay alucinacion en sentido clasico, pero si puede asignar alta probabilidad a una etiqueta incorrecta ante entradas alejadas de su distribucion de entrenamiento.
 - La longitud de contexto no esta declarada, lo que dificulta dimensionar cache KV en produccion; el unico dato es el pico de 42,1 GiB con una peticion de 27K tokens.
 - Licencia Apache-2.0, uso comercial permitido, pero el checkpoint es derivado de Qwen3.8-27B: debe conservarse el fichero LICENSE de Qwen sin modificar y el NOTICE, y los datos de entrenamiento mantienen sus propias licencias (ver `THIRD_PARTY.md`).
-- Traccion practica nula en HuggingFace en la fecha de la ficha (0 descargas, 0 likes), por lo que no existe validacion independiente de terceros.
+- Traccion practica nula en Hugging Face en la fecha de la ficha (0 descargas, 0 likes), por lo que no existe validacion independiente de terceros.
 - Bobcat es un proyecto independiente, no afiliado ni respaldado por el equipo de Qwen, TypeSafe AI ni las demas companias mencionadas; se distribuye tal cual y sin garantia.
 - La ruta de evaluacion referencia 3.188 decisiones internas de desarrollo, no un benchmark publico estandar, por lo que las cifras no son directamente comparables con otras publicaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace (FP8): https://huggingface.co/sanghwa-na/bobcat-1.1-fp8
+- Modelo en Hugging Face (FP8): https://huggingface.co/sanghwa-na/bobcat-1.1-fp8
 - Modelo base BF16: https://huggingface.co/sanghwa-na/bobcat-1.1
 - Version anterior, bobcat-1: https://huggingface.co/sanghwa-na/bobcat-1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/sanghwa-na/bobcat
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/sanghwa-na/bobcat
 - Codigo fuente en GitHub: https://github.com/foxl-ai/bobcat
 - Articulo tecnico: https://foxl.ai/blog/bobcat-typed-decisions
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

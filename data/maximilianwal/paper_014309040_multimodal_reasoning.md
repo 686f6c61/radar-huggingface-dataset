@@ -61,7 +61,7 @@ No disponible. No existe un modelo comparable, dado que el repositorio contiene 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/MaximilianWal/paper_014309040_multimodal_reasoning
+- Repositorio de Hugging Face: https://huggingface.co/MaximilianWal/paper_014309040_multimodal_reasoning
 - Búsqueda general en Google Scholar: https://scholar.google.com/
 - Paper relacionado sobre LLMs multimodales y emoción: https://www.semanticscholar.org/paper/57325c05c714bb045339f6edafea3237ef84c5eb
 - Paper sobre IA generativa multimodal: https://arxiv.org/pdf/2409.14993

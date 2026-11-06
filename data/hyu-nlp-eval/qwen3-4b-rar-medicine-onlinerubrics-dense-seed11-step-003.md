@@ -36,8 +36,8 @@ El identificador `qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003` apo
 
 - Generacion de texto y respuestas conversacionales, heredadas del modelo base Qwen/Qwen3-4B-Instruct-2507.
 - Ajuste especifico orientado al dominio medico segun el identificador del entrenamiento (no confirmado con evaluaciones publicadas).
-- Formato conversacional (etiqueta `conversational` y `text-generation-inference` en HuggingFace).
-- Compatibilidad con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Formato conversacional (etiqueta `conversational` y `text-generation-inference` en Hugging Face).
+- Compatibilidad con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; no se declaran idiomas en la model card.
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en otras precisiones: alrededor de 4-5 GB en cuantizacion de 8 bits y 2,5-3 GB en 4 bits, en caso de convertir los pesos manualmente; el repositorio no publica versiones cuantizadas.
 - GPU recomendadas: cualquier GPU con 16 GB o mas de VRAM para BF16 con margen (RTX 4090, RTX 4080, L4, A10G); A100 o H100 si se requiere mayor throughput o lotes grandes.
 - Compatibilidad con GPU de consumo: si, cabe en tarjetas consumer de gama alta con 16 GB o mas de VRAM; en tarjetas de 8-12 GB solo mediante cuantizacion, que habria que generar localmente.
-- Opciones de despliegue: `transformers` con PyTorch (via confirmada por la libreria declarada), text-generation-inference (etiqueta presente en el repositorio) y HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). vLLM, llama.cpp u Ollama no se confirman en la informacion disponible; llama.cpp y Ollama requeririan conversion previa a GGUF, no publicada.
+- Opciones de despliegue: `transformers` con PyTorch (via confirmada por la libreria declarada), text-generation-inference (etiqueta presente en el repositorio) y Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). vLLM, llama.cpp u Ollama no se confirman en la informacion disponible; llama.cpp y Ollama requeririan conversion previa a GGUF, no publicada.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003 | ~4,02 B | no disponible | no disponible | apache-2.0 (model card: research use only) | HuggingFace, 107 descargas, 0 likes |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | apache-2.0 segun el repositorio base | HuggingFace, ampliamente distribuido |
-| Modelos instruct densos de ~3-4 B de otros proveedores | ~3-4 B | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003 | ~4,02 B | no disponible | no disponible | apache-2.0 (model card: research use only) | Hugging Face, 107 descargas, 0 likes |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | apache-2.0 segun el repositorio base | Hugging Face, ampliamente distribuido |
+| Modelos instruct densos de ~3-4 B de otros proveedores | ~3-4 B | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento, contexto ni evaluaciones comparativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento, contexto ni evaluaciones comparativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-dense-seed11-step-003
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces recuperados eran contenido no relacionado y se han descartado.

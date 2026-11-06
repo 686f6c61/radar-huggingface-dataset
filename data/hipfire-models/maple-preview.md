@@ -87,7 +87,7 @@ No se han encontrado otros modelos comparables en la información proporcionada.
 ## Limitaciones y advertencias
 
 - Hardware restringido: el modelo solo se puede ejecutar con el motor hipfire en GPUs AMD RDNA. No funciona en NVIDIA ni en CPUs sin una conversión previa a otro formato.
-- Formato propietario: los pesos `.hfq` solo son utilizables por hipfire; no son compatibles con ecosistemas estándar como HuggingFace Transformers, vLLM u Ollama.
+- Formato propietario: los pesos `.hfq` solo son utilizables por hipfire; no son compatibles con ecosistemas estándar como Hugging Face Transformers, vLLM u Ollama.
 - Idioma: solo se declara soporte para inglés. Aunque comparte tokenizador con Qwen, no hay garantía de calidad en otros idiomas.
 - Pérdida de precisión en runtime: la calidad final depende del redondeo de activaciones a bf16 en el motor; el modelo es sensible a la precisión de activaciones, lo que puede afectar a tareas de razonamiento delicadas.
 - Sin benchmarks estandar: no hay resultados de MMLU, HumanEval u otros, por lo que es difícil comparar su rendimiento absoluto con otros modelos.
@@ -97,7 +97,7 @@ No se han encontrado otros modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hipfire-models/maple-preview
+- Modelo en Hugging Face: https://huggingface.co/hipfire-models/maple-preview
 - Modelo base: https://huggingface.co/deepgrove/maple-preview
 - Repositorio de hipfire: https://github.com/warpfront/hipfire
 - Sitio web de hipfire: https://hipfire.dev/

@@ -4,7 +4,7 @@
 
 Monstral-123B-v2 es un modelo de lenguaje de 123 mil millones de parámetros creado por MarsupialAI, un desarrollador de la comunidad. Se trata de un merge híbrido de tres modelos: Behemoth 1.2, Tess y Magnum V4, todos ellos basados en la arquitectura Mistral-Large. El autor intentó realizar una interpolación esférica (slerp) a tres vías, algo técnicamente no posible, por lo que simuló el efecto combinando por separado Behemoth 1.2 con Tess y Behemoth 1.2 con Magnum. El resultado es un modelo de chat orientado a la generación de texto en inglés.
 
-La versión GGUF, que es la que se documenta en esta ficha, está preparada para su uso con herramientas como llama.cpp, Ollama o vLLM mediante cuantización. El repositorio ocupa 447,8 GB, lo que sugiere que incluye múltiples archivos de cuantización. El modelo se publicó en diciembre de 2024 y ha recibido poca actividad en HuggingFace (63 descargas, 3 likes), por lo que no está disponible en la API de inferencia serverless de HuggingFace.
+La versión GGUF, que es la que se documenta en esta ficha, está preparada para su uso con herramientas como llama.cpp, Ollama o vLLM mediante cuantización. El repositorio ocupa 447,8 GB, lo que sugiere que incluye múltiples archivos de cuantización. El modelo se publicó en diciembre de 2024 y ha recibido poca actividad en Hugging Face (63 descargas, 3 likes), por lo que no está disponible en la API de inferencia serverless de Hugging Face.
 
 ## Especificaciones tecnicas
 

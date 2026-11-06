@@ -23,8 +23,8 @@ Su relevancia es limitada pero clara dentro del nicho: es un ejemplo de fine-tun
 | Modelo base | unsloth/Qwen2.5-3B-Instruct |
 | Framework de ajuste | Unsloth (QLoRA, 4-bit) |
 | Tamano del repositorio | 6,2 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-19 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-19 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-19 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-19 |
 
 ## Arquitectura y entrenamiento
 
@@ -86,18 +86,18 @@ La ventaja diferencial del modelo de UX4567 es exclusivamente la especializacion
 
 - Dominio no cientifico: la astrologia vedica no tiene respaldo cientifico. El modelo produce contenido que puede interpretarse como prediccion o consejo personal; cualquier despliegue deberia incluir avisos claros de que el contenido es de entretenimiento o cultural y no asesoramiento profesional.
 - Riesgo de alucinacion elevado: en un modelo de 3B parametros ajustado sobre solo 5.000 ejemplos, es esperable que invente combinaciones planetarias, fechas de dashas o interpretaciones inexistentes. No se ha medido la tasa de alucinacion.
-- Sin verificacion independiente: 0 descargas y 1 like en HuggingFace en el momento de la consulta; no hay evaluaciones de terceros, ni benchmarks, ni informes de usuarios.
+- Sin verificacion independiente: 0 descargas y 1 like en Hugging Face en el momento de la consulta; no hay evaluaciones de terceros, ni benchmarks, ni informes de usuarios.
 - Idiomas limitados: solo hindi e ingles (con Hinglish). No hay evidencia de un rendimiento aceptable en castellano ni en otros idiomas.
 - Contexto de entrenamiento corto: el ejemplo del autor fija 2.048 tokens, muy por debajo de los 32.768 que soporta la base. El comportamiento mas alla de esa longitud no esta documentado y podria degradarse.
 - Dataset no auditado: no se especifica la procedencia de los 5.000 pares, ni si contienen sesgos de casta, genero, religion o region. La astrologia vedica puede incorporar sesgos culturales y deterministas que conviene revisar.
 - Riesgo de consejo sensible: el prompt del autor pide "margdarshan" (orientacion) sobre carrera y cambios laborales. Usado sin supervision, el modelo podria dar recomendaciones sobre decisiones vitales o economicas carentes de base.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion sin restricciones adicionales, pero el despliegue sigue sujeto a la licencia del modelo base Qwen2.5-3B-Instruct (tambien Apache 2.0), por lo que conviene conservar los avisos de atribucion.
 - Coste de integracion: no hay versiones GGUF, AWQ ni GPTQ publicadas, ni plantilla de chat documentada mas alla del prompt de ejemplo, lo que anade trabajo de conversion y validacion antes de un despliegue en produccion.
-- Fecha de publicacion inusual: los metadatos de HuggingFace indican creacion en septiembre de 2026, posterior a la fecha de la consulta; conviene verificar la vigencia del repositorio antes de depender de el.
+- Fecha de publicacion inusual: los metadatos de Hugging Face indican creacion en septiembre de 2026, posterior a la fecha de la consulta; conviene verificar la vigencia del repositorio antes de depender de el.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-v3.0
+- Modelo en Hugging Face: https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-v3.0
 - Perfil del autor: https://huggingface.co/UX4567
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct
 - Familia Qwen2.5 (documentacion y modelos): https://huggingface.co/Qwen

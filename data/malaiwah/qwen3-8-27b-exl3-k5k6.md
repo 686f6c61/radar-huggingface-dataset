@@ -89,7 +89,7 @@ El checkpoint EXL3 K5/K6 supera al FP8 oficial en fidelidad con un 29 % menos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6
+- Modelo en Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de fidelidad: https://huggingface.co/datasets/malaiwah/qwen38-27b-fidelity-suite-v3
 - PR #314 del fork Gilded Gnosis vLLM: https://github.com/local-inference-lab/vllm/pull/314

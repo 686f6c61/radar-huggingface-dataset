@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SeeWye/qwen_TM_OCR_finaltune es un modelo multimodal de tipo image-text-to-text publicado por el usuario SeeWye en HuggingFace y derivado por fine-tuning de SeeWye/qwen_finetune1_16bit, que a su vez pertenece a la familia Qwen (la etiqueta declarada es qwen3_5). Cuenta con 4.659.865.088 parametros totales segun los pesos en safetensors, lo que situa al modelo en torno a 4,66 mil millones de parametros, y una licencia Apache 2.0. La nomenclatura del repositorio (OCR) y la modalidad declarada sugieren un ajuste orientado a tareas de reconocimiento optico de caracteres sobre imagenes, aunque la model card no documenta de forma explicita el conjunto de datos ni el objetivo exacto del entrenamiento.
+SeeWye/qwen_TM_OCR_finaltune es un modelo multimodal de tipo image-text-to-text publicado por el usuario SeeWye en Hugging Face y derivado por fine-tuning de SeeWye/qwen_finetune1_16bit, que a su vez pertenece a la familia Qwen (la etiqueta declarada es qwen3_5). Cuenta con 4.659.865.088 parametros totales segun los pesos en safetensors, lo que situa al modelo en torno a 4,66 mil millones de parametros, y una licencia Apache 2.0. La nomenclatura del repositorio (OCR) y la modalidad declarada sugieren un ajuste orientado a tareas de reconocimiento optico de caracteres sobre imagenes, aunque la model card no documenta de forma explicita el conjunto de datos ni el objetivo exacto del entrenamiento.
 
-El modelo se ha entrenado, segun la propia ficha, con Unsloth y la libreria TRL de HuggingFace, lo que indica un flujo de fine-tuning eficiente sobre pesos de 16 bits. El pipeline declarado es image-text-to-text, de modo que combina entrada de imagen y texto con generacion de texto, y la etiqueta conversational apunta a un uso de dialogo. La ventana de contexto, el numero de tokens de entrenamiento y la composicion del dataset no estan disponibles en la informacion proporcionada.
+El modelo se ha entrenado, segun la propia ficha, con Unsloth y la libreria TRL de Hugging Face, lo que indica un flujo de fine-tuning eficiente sobre pesos de 16 bits. El pipeline declarado es image-text-to-text, de modo que combina entrada de imagen y texto con generacion de texto, y la etiqueta conversational apunta a un uso de dialogo. La ventana de contexto, el numero de tokens de entrenamiento y la composicion del dataset no estan disponibles en la informacion proporcionada.
 
 Su relevancia actual es limitada y debe interpretarse con cautela: el repositorio registra 0 descargas y 0 likes, no incluye benchmarks ni documentacion tecnica detallada, y la fecha de publicacion indicada en los metadatos (27 de septiembre de 2026) es posterior a la fecha habitual de consulta, lo que conviene verificar. En la practica, se trata de un fine-tune experimental de proposito especifico (OCR) mas que de un modelo de referencia listo para produccion.
 
@@ -67,10 +67,10 @@ Los datos de parametros y licencia de los modelos de comparacion proceden de sus
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| SeeWye/qwen_TM_OCR_finaltune | ~4,66B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | sin benchmarks publicados |
-| Qwen2.5-VL-3B | ~3,75B | 32K, ampliable a 128K (segun ficha publica) | Apache 2.0 | HuggingFace, ampliamente utilizado | benchmarks publicados por el autor original |
-| Qwen2.5-VL-7B | ~8,3B | 32K, ampliable a 128K (segun ficha publica) | Apache 2.0 | HuggingFace, ampliamente utilizado | benchmarks publicados por el autor original |
-| SmolVLM2 (2.2B) | ~2,2B | no disponible en esta ficha | Apache 2.0 | HuggingFace | benchmarks publicados por el autor original |
+| SeeWye/qwen_TM_OCR_finaltune | ~4,66B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | sin benchmarks publicados |
+| Qwen2.5-VL-3B | ~3,75B | 32K, ampliable a 128K (segun ficha publica) | Apache 2.0 | Hugging Face, ampliamente utilizado | benchmarks publicados por el autor original |
+| Qwen2.5-VL-7B | ~8,3B | 32K, ampliable a 128K (segun ficha publica) | Apache 2.0 | Hugging Face, ampliamente utilizado | benchmarks publicados por el autor original |
+| SmolVLM2 (2.2B) | ~2,2B | no disponible en esta ficha | Apache 2.0 | Hugging Face | benchmarks publicados por el autor original |
 
 No se dispone de datos que permitan afirmar que este fine-tune supere o iguale a los modelos de la tabla, dado que no publica evaluaciones.
 
@@ -88,6 +88,6 @@ No se dispone de datos que permitan afirmar que este fine-tune supere o iguale a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeeWye/qwen_TM_OCR_finaltune
+- Hugging Face: https://huggingface.co/SeeWye/qwen_TM_OCR_finaltune
 - Modelo base declarado: https://huggingface.co/SeeWye/qwen_finetune1_16bit
 - Unsloth (libreria de entrenamiento citada): https://github.com/unslothai/unsloth

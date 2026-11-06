@@ -2,7 +2,7 @@
 
 ## Resumen
 
-H3 Ripple es un adaptador LoRA para MiniMax H3 FL2VA, el modelo de generacion y edicion de video de MiniMax. Lo desarrolla WepeNerd y su funcion es propagar una edicion realizada sobre una o dos frames ancla a lo largo de un plano de video ya existente, dentro de un flujo de video-a-video. El adaptador se publica en HuggingFace como `WepeNerd/H3_Ripple` (0,3 GB) y se distribuye en formato safetensors, pensado para cargarse en ComfyUI junto con los pesos base de MiniMax H3.
+H3 Ripple es un adaptador LoRA para MiniMax H3 FL2VA, el modelo de generacion y edicion de video de MiniMax. Lo desarrolla WepeNerd y su funcion es propagar una edicion realizada sobre una o dos frames ancla a lo largo de un plano de video ya existente, dentro de un flujo de video-a-video. El adaptador se publica en Hugging Face como `WepeNerd/H3_Ripple` (0,3 GB) y se distribuye en formato safetensors, pensado para cargarse en ComfyUI junto con los pesos base de MiniMax H3.
 
 El problema que resuelve es concreto: en lugar de regenerar un plano completo a partir de un prompt, el usuario edita manualmente (o con un modelo de edicion de imagen como Qwen Image 2.1) una o dos frames de referencia y Ripple propaga ese cambio al resto del clip manteniendo la coherencia temporal. Es una herramienta de postproduccion asistida, no un modelo fundacional: depende por completo de MiniMax H3 y de sus componentes auxiliares (text encoder y VAE de video).
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H3 Ripple (WepeNerd) | LoRA de edicion video-a-video sobre MiniMax H3 | no disponible (repo 0,3 GB) | clips de 90-124 frames en ejemplos | no disponible en el repo; base bajo MiniMax H3 Community License | HuggingFace, 115 descargas, 12 likes |
-| MiniMax H3 FL2VA (MiniMaxAI) | Modelo base de generacion/edicion de video | no disponible en la informacion proporcionada | no disponible | MiniMax H3 Community License Agreement | HuggingFace (modelo oficial) |
+| H3 Ripple (WepeNerd) | LoRA de edicion video-a-video sobre MiniMax H3 | no disponible (repo 0,3 GB) | clips de 90-124 frames en ejemplos | no disponible en el repo; base bajo MiniMax H3 Community License | Hugging Face, 115 descargas, 12 likes |
+| MiniMax H3 FL2VA (MiniMaxAI) | Modelo base de generacion/edicion de video | no disponible en la informacion proporcionada | no disponible | MiniMax H3 Community License Agreement | Hugging Face (modelo oficial) |
 | Qwen Image 2.1 | Modelo de edicion de imagen (usado como editor de anclas) | no disponible en la informacion proporcionada | no aplica (imagen) | no disponible en la informacion proporcionada | Uso local dentro del workflow Local Editor |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a rol, licencia y disponibilidad.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WepeNerd/H3_Ripple
+- Repositorio Hugging Face: https://huggingface.co/WepeNerd/H3_Ripple
 - Pesos del LoRA: https://huggingface.co/WepeNerd/H3_Ripple/resolve/main/minimax_H3_Ripple-v1.safetensors
 - Demo y ejemplos: https://wepenerd.github.io/ComfyUI-WepeNerd/
 - Guia de instalacion: https://wepenerd.github.io/ComfyUI-WepeNerd/#setup

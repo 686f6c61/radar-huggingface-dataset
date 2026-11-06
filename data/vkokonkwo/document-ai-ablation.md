@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vkokonkwo/document-ai-ablation
+- Repositorio en Hugging Face: https://huggingface.co/vkokonkwo/document-ai-ablation
 - Definición de ablación en IA (Wikipedia): https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)
 - AblationBench (paper en arXiv): https://arxiv.org/pdf/2507.08038
 - AblationBench en ResearchGate: https://www.researchgate.net/publication/393655983_AblationBench_Evaluating_Automated_Planning_of_Ablations_in_Empirical_AI_Research

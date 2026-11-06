@@ -6,7 +6,7 @@ Winnow-12B-NPU-LPBQ-X-Elite es una conversion del modelo Winnow-12B (un fine-tun
 
 El objetivo es permitir inferencia local de baja latencia sin cambios de Secure Boot ni firma de drivers, apoyandose en el plugin EP de onnxruntime-qnn. Segun la model card, el modelo procesa una peticion en aproximadamente 2,2 segundos, ocupa unos 6 GB de pesos int4 mapeados en NPU y admite hasta 576 tokens de estado mas preguntas por pasada, empaquetando varias preguntas en una sola pasada mediante una mascara de atencion por bloque. El repositorio ocupa 11,9 GB.
 
-La relevancia actual radica en que demuestra un flujo completo de despliegue de un LLM de 12B sobre la NPU de un SoC ARM para Windows, con una ruta documentada de conversion GGUF a ONNX a contexto QNN compilado. Su licencia es Apache 2.0 y el pipeline declarado en HuggingFace es text-classification, aunque el modelo base tambien expone chat completions.
+La relevancia actual radica en que demuestra un flujo completo de despliegue de un LLM de 12B sobre la NPU de un SoC ARM para Windows, con una ruta documentada de conversion GGUF a ONNX a contexto QNN compilado. Su licencia es Apache 2.0 y el pipeline declarado en Hugging Face es text-classification, aunque el modelo base tambien expone chat completions.
 
 ## Especificaciones tecnicas
 

@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asatheesh/latent-mas-aligner-phi3-mini-seed-2 | Cabecera clasificadora sobre latentes + cola Llama-Guard-3-8B congelada | no disponible (repo de 0,1 GB) | K tokens latentes variables | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| YuanXiaopang/latentmas-aligner-qwen3-4b | Alineador de la misma familia, otras topologias y semillas | no disponible | no disponible | no disponible | HuggingFace |
-| Llama-Guard-3-8B | Clasificador de seguridad sobre texto | 8B | no disponible | no disponible | HuggingFace |
+| asatheesh/latent-mas-aligner-phi3-mini-seed-2 | Cabecera clasificadora sobre latentes + cola Llama-Guard-3-8B congelada | no disponible (repo de 0,1 GB) | K tokens latentes variables | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| YuanXiaopang/latentmas-aligner-qwen3-4b | Alineador de la misma familia, otras topologias y semillas | no disponible | no disponible | no disponible | Hugging Face |
+| Llama-Guard-3-8B | Clasificador de seguridad sobre texto | 8B | no disponible | no disponible | Hugging Face |
 
 No se dispone de información suficiente sobre modelos comparables de la misma categoría (alineadores de seguridad para MAS en espacio latente) para establecer una comparativa cuantitativa de rendimiento. La comparación con Llama-Guard-3-8B es funcional, no de métricas: este alineador reutiliza su cola pero opera sobre latentes en lugar de texto.
 
@@ -91,7 +91,7 @@ No se dispone de información suficiente sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asatheesh/latent-mas-aligner-phi3-mini-seed-2
+- Modelo en Hugging Face: https://huggingface.co/asatheesh/latent-mas-aligner-phi3-mini-seed-2
 - Repositorio de código LatentMASHarmBench: https://github.com/Asatheesh6561/LatentMASHarmBench
 - Repositorio de origen con otras topologías y semillas: https://huggingface.co/YuanXiaopang/latentmas-aligner-qwen3-4b
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct

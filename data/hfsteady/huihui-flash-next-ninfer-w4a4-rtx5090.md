@@ -83,7 +83,7 @@ No disponible. El repositorio no publica comparaciones con otros modelos o runti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hfsteady/Huihui-Flash-Next-NInfer-W4A4-RTX5090
+- Repositorio Hugging Face: https://huggingface.co/hfsteady/Huihui-Flash-Next-NInfer-W4A4-RTX5090
 - Revision inmutable del runtime: `721d836941b396fda116764a6c3e6d8c89c9ebb8`
 - Checkpoint fuente: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated (revision `298f94632b784e26a7fe576114f82066689d5baa`)
 - Fork de NInfer: `giveen/ninfer-ext` (revision `b6886f67700bc9e3e4937f826edc18d8d7b84f43`)

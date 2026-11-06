@@ -90,7 +90,7 @@ La comparación cuantitativa con otros modelos de la misma categoría no está d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos
+- Modelo en Hugging Face: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos
 - Adaptador LoRA: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos-lora
 - Datos de entrenamiento y logs: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-lumi-data
 - Format probe: https://huggingface.co/renatoschust/agentmujo-qwen3.5-9b-bos-lora/blob/main/format_probe.json

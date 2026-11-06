@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lemon115/smolvla_multitask es una politica de robotica (vision-language-action) entrenada mediante aprendizaje por imitacion y publicada en HuggingFace con la libreria LeRobot. Se trata de un ajuste fino del modelo base lerobot/smolvla_base, que a su vez implementa el metodo SmolVLA descrito en el paper arXiv:2506.01844. El modelo consume observaciones multimodales (el estado del robot y dos flujos de video) y produce directamente comandos de accion de 6 dimensiones para un brazo robotico de tipo `so_follower`.
+Lemon115/smolvla_multitask es una politica de robotica (vision-language-action) entrenada mediante aprendizaje por imitacion y publicada en Hugging Face con la libreria LeRobot. Se trata de un ajuste fino del modelo base lerobot/smolvla_base, que a su vez implementa el metodo SmolVLA descrito en el paper arXiv:2506.01844. El modelo consume observaciones multimodales (el estado del robot y dos flujos de video) y produce directamente comandos de accion de 6 dimensiones para un brazo robotico de tipo `so_follower`.
 
 La relevancia de esta ficha es doble. Por un lado, SmolVLA esta disenado como un modelo compacto (450 millones de parametros) capaz de ejecutarse en hardware de consumo, lo que rebaja la barrera de entrada para investigacion en robotica. Por otro, este checkpoint concreto es un ejemplo de ajuste fino multitarea (dos tareas de pick-and-place) sobre 100 episodios y 116.932 fotogramas grabados a 30 FPS, lo que lo convierte en un caso de estudio util de como se adapta un VLA generalista a un setup fisico muy concreto.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entradas | Salidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Lemon115/smolvla_multitask | 450 M | no disponible | Estado (6) + 2 imagenes 480x640 | Accion (6) | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible en esta ficha | Publico en HuggingFace (modelo base) |
+| Lemon115/smolvla_multitask | 450 M | no disponible | Estado (6) + 2 imagenes 480x640 | Accion (6) | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible en esta ficha | Publico en Hugging Face (modelo base) |
 | Otras politicas VLA (pi0, RDT, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion que puede sostenerse con los datos aportados es la que existe entre este checkpoint y su modelo base `lerobot/smolvla_base`: el primero es un ajuste fino especializado en dos tareas concretas sobre un robot `so_follower`, mientras que el segundo es el modelo generalista del que parte. No se dispone de cifras de rendimiento de ninguno de los dos, por lo que no es posible afirmar cual es mejor en terminos cuantitativos.
@@ -97,7 +97,7 @@ La unica comparacion que puede sostenerse con los datos aportados es la que exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lemon115/smolvla_multitask
+- Modelo en Hugging Face: https://huggingface.co/Lemon115/smolvla_multitask
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Lemon115/smolvla_tasks
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Lemon115/smolvla_tasks
@@ -111,4 +111,4 @@ La unica comparacion que puede sostenerse con los datos aportados es la que exis
 - Guia de grabacion de datos y entrenamiento: https://huggingface.co/docs/lerobot/en/il_robots
 - Referencia rapida de comandos: https://huggingface.co/docs/lerobot/main/en/cheat-sheet
 
-Nota sobre la busqueda web: los resultados devueltos corresponden a paginas de un servicio de correo electronico no relacionadas con el modelo, por lo que no se han incorporado como fuentes. Todos los enlaces anteriores proceden de los metadatos de HuggingFace y de la model card del autor.
+Nota sobre la busqueda web: los resultados devueltos corresponden a paginas de un servicio de correo electronico no relacionadas con el modelo, por lo que no se han incorporado como fuentes. Todos los enlaces anteriores proceden de los metadatos de Hugging Face y de la model card del autor.

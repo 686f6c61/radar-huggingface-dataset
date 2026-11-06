@@ -75,9 +75,9 @@ No se dispone de datos de rendimiento para comparar objetivamente estos modelos.
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed5)
-- [HuggingFace - variante first-third seed4](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4)
-- [HuggingFace - variante first-third (longtermrisk)](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft)
+- [Hugging Face - modelo](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed5)
+- [Hugging Face - variante first-third seed4](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4)
+- [Hugging Face - variante first-third (longtermrisk)](https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft)
 - [FriendliAI - variante second-third seed5](https://friendli.ai/models/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed5)
 - [GitHub - OLMo (AI2)](https://github.com/allenai/OLMo)
 - [Página oficial de OLMo (AI2)](https://allenai.org/olmo)

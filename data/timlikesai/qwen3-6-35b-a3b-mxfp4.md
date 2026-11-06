@@ -35,7 +35,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 ## Capacidades
 
 - Generacion de texto conversacional: la model card etiqueta el modelo como `conversational`, por lo que esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de APIs compatibles con el estandar de HuggingFace / OpenAI.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de APIs compatibles con el estandar de Hugging Face / OpenAI.
 - Razonamiento y codigo: no disponible (no se documentan capacidades especificas del modelo base en la informacion proporcionada).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timlikesai/Qwen3.6-35B-A3B-MXFP4 | 34,66 B | GGUF MXFP4 4,25 bits | no disponible | no disponible | HuggingFace, sin descargas registradas |
-| ggml-org/Qwen3.6-35B-A3B (base) | 34,66 B | GGUF sin cuantizar / otras variantes | no disponible | no disponible | HuggingFace |
+| timlikesai/Qwen3.6-35B-A3B-MXFP4 | 34,66 B | GGUF MXFP4 4,25 bits | no disponible | no disponible | Hugging Face, sin descargas registradas |
+| ggml-org/Qwen3.6-35B-A3B (base) | 34,66 B | GGUF sin cuantizar / otras variantes | no disponible | no disponible | Hugging Face |
 | Otras cuantizaciones del mismo modelo base | 34,66 B | GGUF (Q4_K_M, Q5_K_M, etc.) | no disponible | no disponible | no disponible en la informacion recibida |
 
 No se dispone de datos de rendimiento que permitan comparar la calidad del MXFP4 con imatrix frente a otras cuantizaciones del mismo modelo ni frente a modelos de tamano similar de otros desarrolladores.
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento que permitan comparar la calidad del MXFP4
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/timlikesai/Qwen3.6-35B-A3B-MXFP4
-- Modelo base en HuggingFace: https://huggingface.co/ggml-org/Qwen3.6-35B-A3B
+- Repositorio Hugging Face: https://huggingface.co/timlikesai/Qwen3.6-35B-A3B-MXFP4
+- Modelo base en Hugging Face: https://huggingface.co/ggml-org/Qwen3.6-35B-A3B
 - Pull request del autor en llama.cpp (escalamiento UOS / MXAttention): https://github.com/timlikesai/llama.cpp/pull/14
 - Paper, blog o demo oficial: no disponible
 - Resultados de busqueda web relevantes: ninguno (los enlaces devueltos no guardan relacion con el modelo)

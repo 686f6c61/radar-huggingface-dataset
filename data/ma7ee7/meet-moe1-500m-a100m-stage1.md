@@ -90,6 +90,6 @@ La comparacion directa no es posible porque Meet-MoE1 es entre uno y dos ordenes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ma7ee7/Meet-MoE1-500M-A100M-Stage1
+- Modelo en Hugging Face: https://huggingface.co/Ma7ee7/Meet-MoE1-500M-A100M-Stage1
 - Perfil de datasets del autor: https://huggingface.co/Ma7ee7/datasets
 - Coleccion Meet7 del autor: https://huggingface.co/collections/Ma7ee7/meet7

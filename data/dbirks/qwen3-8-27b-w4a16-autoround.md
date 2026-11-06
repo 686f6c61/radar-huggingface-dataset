@@ -88,7 +88,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dbirks/Qwen3.8-27B-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/dbirks/Qwen3.8-27B-W4A16-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante NVFP4 (hermano): https://huggingface.co/dbirks/Qwen3.8-27B-NVFP4-AutoRound
 - Repositorio Intel AutoRound: https://github.com/intel/auto-round

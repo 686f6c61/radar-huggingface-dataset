@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-Wolof-Instruct es un ajuste de instrucciones sobre LiquidAI/LFM2.5-350M-Base, publicado por el usuario mamelles en HuggingFace. Se trata de un artefacto declarado explicitamente por su autor como "private production artifact", en fase experimental y no destinado a publicacion general. Su objetivo es la adaptacion al wolof mediante un protocolo de preentrenamiento continuado sobre un corpus limpiado en ese idioma, seguido de una etapa de ajuste por instrucciones.
+LFM2.5-350M-Wolof-Instruct es un ajuste de instrucciones sobre LiquidAI/LFM2.5-350M-Base, publicado por el usuario mamelles en Hugging Face. Se trata de un artefacto declarado explicitamente por su autor como "private production artifact", en fase experimental y no destinado a publicacion general. Su objetivo es la adaptacion al wolof mediante un protocolo de preentrenamiento continuado sobre un corpus limpiado en ese idioma, seguido de una etapa de ajuste por instrucciones.
 
 El modelo cuenta con 427.458.304 parametros reales segun los pesos en safetensors, un tamano que lo situa en la gama de modelos pequenos aptos para inferencia en hardware de consumo e incluso en CPU. No es un modelo MoE: la cifra de parametros activos coincide con la total. El repositorio ocupa 0,9 GB y los pesos se distribuyen en formato safetensors para la libreria transformers.
 
@@ -73,8 +73,8 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas en l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| mamelles/LFM2.5-350M-Wolof-Instruct | 427.458.304 | no disponible | no disponible | HuggingFace, safetensors | no disponibles |
-| LiquidAI/LFM2.5-350M-Base | no disponible en esta ficha | no disponible | no disponible | HuggingFace, modelo base declarado | no disponibles |
+| mamelles/LFM2.5-350M-Wolof-Instruct | 427.458.304 | no disponible | no disponible | Hugging Face, safetensors | no disponibles |
+| LiquidAI/LFM2.5-350M-Base | no disponible en esta ficha | no disponible | no disponible | Hugging Face, modelo base declarado | no disponibles |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamelles/LFM2.5-350M-Wolof-Instruct
+- Modelo en Hugging Face: https://huggingface.co/mamelles/LFM2.5-350M-Wolof-Instruct
 - Modelo base declarado: https://huggingface.co/LiquidAI/LFM2.5-350M-Base
 - Repositorio del autor: https://huggingface.co/mamelles
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces recuperados correspondian a paginas de ayuda del Traductor de Google y no guardan relacion con el artefacto. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

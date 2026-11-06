@@ -70,8 +70,8 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Sohailhosseini/Ornith-1.0-9B-FP8
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.0-9B
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Sohailhosseini/Ornith-1.0-9B-FP8
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.0-9B
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1
 - Página oficial de Ornith AI: https://ornith.online/
 - Página del modelo 9B: https://ornith.online/ornith-1-0-model-9b

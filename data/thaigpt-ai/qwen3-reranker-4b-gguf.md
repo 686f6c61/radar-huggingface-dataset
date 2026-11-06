@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thaigpt-ai/Qwen3-Reranker-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thaigpt-ai/Qwen3-Reranker-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - llama.cpp (herramienta de conversion y servidor): no disponible en la informacion proporcionada
 - Paper o blog del modelo base: no disponible en la informacion proporcionada

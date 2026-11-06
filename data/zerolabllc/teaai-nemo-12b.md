@@ -23,7 +23,7 @@ Su interés técnico está en el patrón de desarrollo: especializar un modelo b
 | Formato de prompt | ChatML (`<|im_start|>` / `<|im_end|>`; `<|im_end|>` mapeado al token EOS id 2) |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 4 de octubre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 4 de octubre de 2026 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | zerolabllc/TeaAI-Nemo-12B | 12B base + LoRA de ~114M | 8.192 tokens | Roleplay sin censura, solo inglés | apache-2.0 | Sin benchmarks publicados |
 | mistralai/Mistral-Nemo-Base-2407 | 12B | no disponible en la información proporcionada | Modelo base preentrenado, sin ajuste conversacional | no disponible en la información proporcionada | no disponible |
 | mistralai/Mistral-Nemo-Instruct-2407 | 12B | no disponible en la información proporcionada | Asistente generalista instruccional | no disponible en la información proporcionada | no disponible |
-| Adaptadores de roleplay de ~12B en HuggingFace | no disponible | no disponible | Roleplay y escritura creativa | no disponible | no disponible |
+| Adaptadores de roleplay de ~12B en Hugging Face | no disponible | no disponible | Roleplay y escritura creativa | no disponible | no disponible |
 
 La información proporcionada no incluye métricas objetivas de ninguno de estos modelos, por lo que la comparación se limita a arquitectura, tamaño, contexto declarado y licencia. La diferencia funcional relevante frente a la base y frente a la versión instruct del mismo tamaño es el ajuste específico para tarjetas de personaje y la corrección explícita de errores de perspectiva y plot armor.
 
@@ -103,7 +103,7 @@ La información proporcionada no incluye métricas objetivas de ninguno de estos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zerolabllc/TeaAI-Nemo-12B
+- Modelo en Hugging Face: https://huggingface.co/zerolabllc/TeaAI-Nemo-12B
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Base-2407
 - Dataset Gryphe/Sonnet3.5-Charcard-Roleplay: https://huggingface.co/datasets/Gryphe/Sonnet3.5-Charcard-Roleplay
 - Dataset Dampfinchen/Creative_Writing_Multiturn: https://huggingface.co/datasets/Dampfinchen/Creative_Writing_Multiturn

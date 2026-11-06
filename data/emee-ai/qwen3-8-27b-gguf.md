@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (este) | 27B (denso) | 262K nativo / 1M extensible | Imagen y vídeo nativos | Apache 2.0 | GGUF (este repo) y pesos base en HuggingFace |
-| Gemma 3 27B | 27B (denso) | 128K | Imagen | Gemma license (restricciones de uso) | HuggingFace, GGUF comunitarios |
-| Qwen3-VL 30B-A3B | 30B (MoE, 3B activos) | no disponible | Imagen y vídeo | Apache 2.0 | HuggingFace, GGUF comunitarios |
+| Qwen3.8-27B (este) | 27B (denso) | 262K nativo / 1M extensible | Imagen y vídeo nativos | Apache 2.0 | GGUF (este repo) y pesos base en Hugging Face |
+| Gemma 3 27B | 27B (denso) | 128K | Imagen | Gemma license (restricciones de uso) | Hugging Face, GGUF comunitarios |
+| Qwen3-VL 30B-A3B | 30B (MoE, 3B activos) | no disponible | Imagen y vídeo | Apache 2.0 | Hugging Face, GGUF comunitarios |
 
 Frente a Gemma 3 27B, Qwen3.8-27B ofrece un contexto nativo mucho mayor y thinking mode integrado, con una licencia menos restrictiva. Frente a variantes MoE de tamaño similar, el modelo denso de 27B requiere más cómputo activo por token pero evita la complejidad de servir expertos.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kloak656 es un modelo de lenguaje de 9.409.813.744 parámetros publicado por el usuario RoseG en HuggingFace bajo licencia Apache 2.0. Según la model card, se trata de un "9B Parameter Legacy Model from The Kloaked Signal", una descripción extremadamente escueta que no aporta detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades reales del modelo. El tag `qwen3_5` sugiere que la arquitectura subyacente podría estar basada en la familia Qwen 3.5, aunque no se confirma en la documentación disponible.
+Kloak656 es un modelo de lenguaje de 9.409.813.744 parámetros publicado por el usuario RoseG en Hugging Face bajo licencia Apache 2.0. Según la model card, se trata de un "9B Parameter Legacy Model from The Kloaked Signal", una descripción extremadamente escueta que no aporta detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades reales del modelo. El tag `qwen3_5` sugiere que la arquitectura subyacente podría estar basada en la familia Qwen 3.5, aunque no se confirma en la documentación disponible.
 
 El repositorio contiene pesos en formato safetensors con un tamaño total de 36,7 GB, lo que es coherente con un modelo denso de aproximadamente 9.400 millones de parámetros en precisión de 16 bits (9,4B × 2 bytes ≈ 18,8 GB; el tamaño del repo incluye probablemente múltiples ficheros o versiones). No se han publicado resultados de benchmarks, detalles de arquitectura, longitud de contexto ni información sobre idiomas soportados.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en el momento de redactar esta ficha: c
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo. El tag `qwen3_5` en HuggingFace sugiere una posible relación con la familia Qwen 3.5 de Alibaba, lo que implicaría una arquitectura transformer con atención estándar o híbrida, pero esta afirmación no está confirmada por el autor. El número de parámetros (9,4B) es consistente con un modelo denso de tamaño medio, no con una arquitectura Mixture of Experts.
+No se dispone de información sobre la arquitectura interna del modelo. El tag `qwen3_5` en Hugging Face sugiere una posible relación con la familia Qwen 3.5 de Alibaba, lo que implicaría una arquitectura transformer con atención estándar o híbrida, pero esta afirmación no está confirmada por el autor. El número de parámetros (9,4B) es consistente con un modelo denso de tamaño medio, no con una arquitectura Mixture of Experts.
 
 No se han publicado datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. La model card se limita a una línea descriptiva ("9B Parameter Legacy Model from The Kloaked Signal") sin aportar información técnica adicional. Tampoco se documentan innovaciones como decodificación especulativa, atención lineal o modos de razonamiento extendido.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| RoseG/Kloak656 | 9,4B | no disponible | Apache 2.0 | HuggingFace | No |
-| Qwen 2.5 7B | 7,6B | 128K | Apache 2.0 | HuggingFace, Ollama | Sí |
-| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community | HuggingFace, Ollama | Sí |
-| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | HuggingFace, Ollama | Sí |
+| RoseG/Kloak656 | 9,4B | no disponible | Apache 2.0 | Hugging Face | No |
+| Qwen 2.5 7B | 7,6B | 128K | Apache 2.0 | Hugging Face, Ollama | Sí |
+| Llama 3.1 8B | 8,0B | 128K | Llama 3.1 Community | Hugging Face, Ollama | Sí |
+| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | Hugging Face, Ollama | Sí |
 
 La comparativa se basa únicamente en el tamaño de parámetros y la licencia, ya que no hay datos de rendimiento de Kloak656. Los tres modelos alternativos cuentan con documentación extensa, benchmarks publicados y amplio soporte en herramientas de despliegue, ventajas que Kloak656 no ofrece actualmente.
 
@@ -85,5 +85,5 @@ La comparativa se basa únicamente en el tamaño de parámetros y la licencia, y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RoseG/Kloak656
+- Hugging Face: https://huggingface.co/RoseG/Kloak656
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

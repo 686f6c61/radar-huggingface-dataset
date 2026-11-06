@@ -111,7 +111,7 @@ La comparacion de rendimiento con estas alternativas no esta disponible en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-374m-5.01bt-base-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-374m-5.01bt-base-cooled
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

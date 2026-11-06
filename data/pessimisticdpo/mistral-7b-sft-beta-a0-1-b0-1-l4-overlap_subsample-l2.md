@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2` es un checkpoint de investigación publicado en HuggingFace por el usuario PessimisticDPO. No se trata de un lanzamiento oficial ni de un modelo documentado: su model card es la plantilla autogenerada por HuggingFace, sin ningún campo completado (autoría, tipo, idiomas, licencia, datos de entrenamiento y evaluación figuran como "[More Information Needed]"). El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
+El modelo `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2` es un checkpoint de investigación publicado en Hugging Face por el usuario PessimisticDPO. No se trata de un lanzamiento oficial ni de un modelo documentado: su model card es la plantilla autogenerada por Hugging Face, sin ningún campo completado (autoría, tipo, idiomas, licencia, datos de entrenamiento y evaluación figuran como "[More Information Needed]"). El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El identificador permite inferir la genealogía del artefacto: parte de `mistral-7b-sft-beta`, el checkpoint de Mistral 7B afinado con instrucciones (SFT sobre UltraChat) publicado por HuggingFaceH4, y le aplica una variante de optimización de preferencias denominada "pessimistic DPO". Los sufijos del nombre (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l2`) apuntan a hiperparámetros del método: valores alpha y beta de 0,1, una referencia a la capa 4, una estrategia de submuestreo con solapamiento de los pares de preferencia y regularización L2. Ninguno de estos extremos está confirmado en la documentación.
 
@@ -96,7 +96,7 @@ Los cuatro modelos de referencia son alternativas consolidadas de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2
 - Referencia de la etiqueta arXiv declarada en el repositorio: https://arxiv.org/abs/1910.09700
 - Modelo base del que deriva (inferido del identificador, no declarado por el autor): https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Modelo de arquitectura de referencia (Mistral 7B): https://huggingface.co/mistralai/Mistral-7B-v0.1

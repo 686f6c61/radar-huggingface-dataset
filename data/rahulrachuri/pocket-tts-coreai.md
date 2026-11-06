@@ -86,7 +86,7 @@ La versión Core AI supera claramente a la ruta Core ML en rendimiento (más de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rahulrachuri/pocket-tts-coreai
+- Repositorio Hugging Face: https://huggingface.co/rahulrachuri/pocket-tts-coreai
 - Host Swift: https://github.com/RahulRachuri/pocket-tts-swift
 - Modelo original de Kyutai: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Blog de Kyutai sobre Pocket TTS: https://kyutai.org/blog/2026-01-13-pocket-tts/

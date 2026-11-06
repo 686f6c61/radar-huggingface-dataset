@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFlowLM/Qwen3.5-4B-NPU2 es un ajuste fino (finetune) publicado por el usuario OpenFlowLM sobre el modelo base Qwen/Qwen3.5-4B de Alibaba Qwen. El pipeline declarado es image-text-to-text, es decir, se trata de un modelo multimodal que acepta texto e imágenes como entrada y genera texto. Según los metadatos de HuggingFace, se distribuye con licencia Apache 2.0 y está etiquetado como compatible con endpoints, con la librería transformers y el tag qwen3_5_text.
+OpenFlowLM/Qwen3.5-4B-NPU2 es un ajuste fino (finetune) publicado por el usuario OpenFlowLM sobre el modelo base Qwen/Qwen3.5-4B de Alibaba Qwen. El pipeline declarado es image-text-to-text, es decir, se trata de un modelo multimodal que acepta texto e imágenes como entrada y genera texto. Según los metadatos de Hugging Face, se distribuye con licencia Apache 2.0 y está etiquetado como compatible con endpoints, con la librería transformers y el tag qwen3_5_text.
 
 El modelo base Qwen3.5-4B es un transformer causal de 4.000 millones de parámetros con codificador de visión, construido sobre una arquitectura híbrida que combina Gated Delta Networks (atención lineal) con capas de Gated Attention y FFN, distribuida en 32 capas. Soporta de forma nativa 262.144 tokens de contexto, extensible hasta 1.010.000, y fue entrenado con multi-token prediction (MTP) en varios pasos. La serie Qwen3.5 declara soporte para 201 idiomas y dialectos y un entrenamiento multimodal con fusión temprana.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha concreta radica en que se trata de una variante adap
 | Parametros activos | no disponible (la model card no documenta una configuracion MoE para la variante de 4B) |
 | Longitud de contexto | 262.144 tokens nativos, extensible hasta 1.010.000 tokens |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | 201 idiomas y dialectos segun la model card del modelo base; los metadatos de HuggingFace indican "no disponibles" |
+| Idiomas soportados | 201 idiomas y dialectos segun la model card del modelo base; los metadatos de Hugging Face indican "no disponibles" |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Formato Hugging Face Transformers (compatible con transformers, vLLM, SGLang y KTransformers); no se detalla el contenedor exacto. Tamano del repositorio: 5,0 GB |
 
@@ -29,7 +29,7 @@ El entrenamiento del modelo base comprende fases de preentrenamiento y postentre
 
 ## Capacidades
 
-- Generacion de texto conversacional, con el tag `conversational` en los metadatos de HuggingFace.
+- Generacion de texto conversacional, con el tag `conversational` en los metadatos de Hugging Face.
 - Comprension de imagenes y texto combinados (pipeline `image-text-to-text`), lo que incluye descripcion de imagenes, respuesta a preguntas visuales y razonamiento sobre documentos escaneados.
 - Razonamiento, codigo y matematicas: la model card del modelo base declara paridad con Qwen3 y rendimiento superior a los modelos Qwen3-VL en benchmarks de razonamiento, codigo, agentes y comprension visual.
 - Soporte de agentes: la serie Qwen3.5 se entrena con RL sobre entornos multiagente, lo que respalda razonamiento multi-paso y uso de herramientas.
@@ -67,18 +67,18 @@ La informacion proporcionada se interrumpe durante la tabla, por lo que el resto
 - Cache KV en contexto largo: la Gated Attention tiene 4 cabezas KV con dimension de cabeza 256 en 8 de las 32 capas. En bf16 esto supone unos 32 KB por token (8 capas × 2 × 4 × 256 × 2 bytes), es decir, del orden de 8,4 GB para llenar los 262.144 tokens de contexto sin cuantizar la cache. Las capas de Gated DeltaNet mantienen un estado recurrente de tamano constante, por lo que no crecen con la longitud de contexto.
 - GPU recomendadas: no disponibles para esta variante. Por tamano, un modelo de 4B en bf16 cabe en GPU de consumo como la RTX 4090 (24 GB) o la RTX 4080 (16 GB), e incluso en GPUs de 8-12 GB si se cuantiza. Para contexto largo con cache KV completa se recomienda un acelerador de 24 GB o superior, como A100 (40/80 GB) o H100.
 - Cabe en GPU de consumo: si, en tarjetas de 8 GB o mas segun cuantizacion; con contexto muy largo conviene ampliar a 24 GB o cuantizar la cache.
-- Opciones de despliegue: la model card del modelo base indica compatibilidad con Hugging Face Transformers, vLLM, SGLang y KTransformers. Los metadatos de HuggingFace anaden el tag `endpoints_compatible`. No se confirma compatibilidad con llama.cpp, Ollama, TGI ni TensorRT-LLM.
+- Opciones de despliegue: la model card del modelo base indica compatibilidad con Hugging Face Transformers, vLLM, SGLang y KTransformers. Los metadatos de Hugging Face anaden el tag `endpoints_compatible`. No se confirma compatibilidad con llama.cpp, Ollama, TGI ni TensorRT-LLM.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | MMLU-Pro | MMLU-Redux | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenFlowLM/Qwen3.5-4B-NPU2 | 4B | 262.144 tokens (extensible a 1.010.000) | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-4B (base) | 4B | 262.144 tokens (extensible a 1.010.000) | 79,1 | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B | 9B | no disponible | 82,5 | dato truncado | no disponible | HuggingFace |
+| OpenFlowLM/Qwen3.5-4B-NPU2 | 4B | 262.144 tokens (extensible a 1.010.000) | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-4B (base) | 4B | 262.144 tokens (extensible a 1.010.000) | 79,1 | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B | 9B | no disponible | 82,5 | dato truncado | no disponible | Hugging Face |
 | GPT-OSS-20B | 20B | no disponible | 74,8 | 87,8 | no disponible | no disponible |
-| Qwen3-30BA3B-Thinking-2507 | 30B totales (MoE) | no disponible | 80,9 | 91,4 | no disponible | HuggingFace |
+| Qwen3-30BA3B-Thinking-2507 | 30B totales (MoE) | no disponible | 80,9 | 91,4 | no disponible | Hugging Face |
 
 El dato mas relevante de la comparativa es que Qwen3.5-4B alcanza 79,1 en MMLU-Pro, por encima de GPT-OSS-20B (74,8) pese a tener cinco veces menos parametros, y muy cerca de Qwen3-30BA3B-Thinking-2507 (80,9). No se dispone de datos comparativos de contexto, licencia o latencia para las alternativas listadas.
 
@@ -89,14 +89,14 @@ El dato mas relevante de la comparativa es que Qwen3.5-4B alcanza 79,1 en MMLU-P
 - No se especifica el significado del sufijo NPU2 ni si los pesos han sido convertidos, cuantizados o adaptados para aceleradores NPU. Tampoco se indica que framework de inferencia en NPU es compatible.
 - La licencia declarada es Apache 2.0, que permite uso comercial, pero el titular del ajuste fino es un tercero distinto de Alibaba Qwen; conviene verificar la trazabilidad de la licencia del modelo base enlazada en la model card.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fidelidad ni tasas de alucinacion para esta variante. Como en cualquier modelo de 4B, la generacion de hechos concretos debe verificarse.
-- Idiomas: los metadatos de HuggingFace no listan idiomas soportados para el repositorio. La cifra de 201 idiomas proviene de la documentacion de la serie y no de una evaluacion de esta variante.
+- Idiomas: los metadatos de Hugging Face no listan idiomas soportados para el repositorio. La cifra de 201 idiomas proviene de la documentacion de la serie y no de una evaluacion de esta variante.
 - Contexto: los 262.144 tokens nativos y la extension a 1.010.000 son datos del modelo base. La calidad de recuperacion en contextos muy largos no esta documentada, y el coste de memoria de la cache KV crece de forma apreciable.
 - No se documenta soporte nativo de tool calling ni de function calling para esta variante, a pesar del enfasis de la serie en entornos agenticos.
 - Advertencia de produccion: al no existir benchmarks propios, evaluaciones de seguridad ni informes de sesgo, no se recomienda su despliegue en entornos criticos sin una bateria de pruebas previa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Qwen3.5-4B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Qwen3.5-4B-NPU2
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

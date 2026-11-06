@@ -4,7 +4,7 @@
 
 El modelo `efficiencyx/Jun-LoRA-v7-adapter-alpha` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por `efficiencyx` como parte de la serie de fine-tunes "Jun". No es un modelo autonomo, sino un conjunto de pesos de adaptacion que debe cargarse sobre el modelo base `efficiencyx/Jun-LoRA-12B-Safetensor`, un modelo de aproximadamente 12.000 millones de parametros. El adaptador se distribuye en formato `safetensors` y ocupa 0,6 GB.
 
-El proposito de este adaptador es aplicar un fine-tuning especializado al modelo base utilizando la libreria Unsloth, que acelera el entrenamiento. Segun los tags de HuggingFace, la arquitectura subyacente se etiqueta como `gemma4_unified`, lo que sugiere una variante de la familia Gemma, aunque no se dispone de documentacion publica que lo confirme. La licencia es Apache 2.0 y el idioma principal es el ingles.
+El proposito de este adaptador es aplicar un fine-tuning especializado al modelo base utilizando la libreria Unsloth, que acelera el entrenamiento. Segun los tags de Hugging Face, la arquitectura subyacente se etiqueta como `gemma4_unified`, lo que sugiere una variante de la familia Gemma, aunque no se dispone de documentacion publica que lo confirme. La licencia es Apache 2.0 y el idioma principal es el ingles.
 
 Su relevancia radica en que forma parte de una coleccion de adaptadores "Jun" que el autor mantiene actualizada, con versiones en formato GGUF para inferencia local. Sin embargo, al tratarse de un adaptador en fase alpha sin descargas ni benchmarks publicados, su utilidad practica esta aun por validar.
 
@@ -74,7 +74,7 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/efficiencyx/Jun-LoRA-v7-adapter-alpha
+- Página del modelo en Hugging Face: https://huggingface.co/efficiencyx/Jun-LoRA-v7-adapter-alpha
 - Coleccion "Jun Latest GGUF" del autor: https://huggingface.co/collections/efficiencyx/jun-latest-gguf
 - Modelo base (inferido del nombre): https://huggingface.co/efficiencyx/Jun-LoRA-12B-Safetensor
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

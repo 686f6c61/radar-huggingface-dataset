@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| K-Oss-8-Mini-Instruct | 8B (base) + LoRA | no disponible | apache-2.0 | HuggingFace (adaptador) | Ajuste minimo sobre Qwen3-VL-8B-Instruct |
-| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible | apache-2.0 | HuggingFace | Modelo base sin personalizacion |
-| Otros adaptadores LoRA sobre Qwen3-VL | 8B (base) | no disponible | variable | HuggingFace | No disponible comparativa concreta |
+| K-Oss-8-Mini-Instruct | 8B (base) + LoRA | no disponible | apache-2.0 | Hugging Face (adaptador) | Ajuste minimo sobre Qwen3-VL-8B-Instruct |
+| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible | apache-2.0 | Hugging Face | Modelo base sin personalizacion |
+| Otros adaptadores LoRA sobre Qwen3-VL | 8B (base) | no disponible | variable | Hugging Face | No disponible comparativa concreta |
 
 No se dispone de datos de rendimiento comparativo con alternativas en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo con alternativas en la informa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/K-Ai-Official/K-Oss-8-Mini-Instruct
+- Hugging Face del adaptador: https://huggingface.co/K-Ai-Official/K-Oss-8-Mini-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Unsloth (libreria de entrenamiento e inferencia): https://github.com/unslothai/unsloth
 - PEFT (libreria de adaptadores): https://github.com/huggingface/peft

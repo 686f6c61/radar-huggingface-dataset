@@ -79,12 +79,12 @@ No disponible. No se han encontrado modelos comparables directamente en la infor
 - Solo inglés: no soporta otros idiomas, lo que limita su uso en aplicaciones multilingües.
 - Longitud de contexto no especificada: aunque Mamba-2 ofrece contexto largo, no se documenta el valor máximo, lo que dificulta planificar su uso en tareas de contexto extenso.
 - Sin benchmarks estándar: no hay resultados de MMLU, HumanEval u otras pruebas, por lo que no se puede evaluar su rendimiento frente a modelos establecidos.
-- Código personalizado: requiere `custom_code` y el módulo `omni_kimi_ssm`, lo que puede complicar la integración con herramientas estándar del ecosistema HuggingFace.
+- Código personalizado: requiere `custom_code` y el módulo `omni_kimi_ssm`, lo que puede complicar la integración con herramientas estándar del ecosistema Hugging Face.
 - Riesgo de alucinación y sesgos: al ser un modelo pequeño entrenado en un conjunto de datos no documentado, puede presentar alucinaciones y sesgos no caracterizados.
 - Descargas y adopción nulas: el modelo tiene 0 descargas y 0 likes, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- [HuggingFace - OmniKimi-504M](https://huggingface.co/Prannesshkva/OmniKimi-504M)
+- [Hugging Face - OmniKimi-504M](https://huggingface.co/Prannesshkva/OmniKimi-504M)
 - [Perfil del autor - Prannessh KVA](https://prannesshkva.vercel.app/posts.html)
 - [GitHub del autor](https://github.com/prannesshkva)

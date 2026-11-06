@@ -21,7 +21,7 @@ Este modelo se construye a partir del checkpoint `unconst/Affine-5czsc2fc98-r252
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en una arquitectura de tipo Mixture of Experts (MoE) de la familia Qwen3.5, según los tags de HuggingFace (`qwen3_5_moe`). Además, incluye un componente visual (`image-text-to-text`), lo que indica que puede procesar tanto texto como imágenes. El entrenamiento se realizó mediante **Offline Direct Preference Optimization (DPO)** sobre pares de preferencia derivados de duelos entre respuestas, generados por el sistema de minería del autor. La función objetivo optimizada es `Reason = lpC(y_C|z_A) - lpC(y_C|∅)`, es decir, la diferencia de log-probabilidad condicionada al contexto del maestro frente al vacío, solo en el lado del teacher.
+El modelo se basa en una arquitectura de tipo Mixture of Experts (MoE) de la familia Qwen3.5, según los tags de Hugging Face (`qwen3_5_moe`). Además, incluye un componente visual (`image-text-to-text`), lo que indica que puede procesar tanto texto como imágenes. El entrenamiento se realizó mediante **Offline Direct Preference Optimization (DPO)** sobre pares de preferencia derivados de duelos entre respuestas, generados por el sistema de minería del autor. La función objetivo optimizada es `Reason = lpC(y_C|z_A) - lpC(y_C|∅)`, es decir, la diferencia de log-probabilidad condicionada al contexto del maestro frente al vacío, solo en el lado del teacher.
 
 Los hiperparámetros clave del entrenamiento fueron: temperatura DPO β=0.02 (LoBeta), LoRA con rango r=32 (MidRank) y alpha α=128 (HiAlpha), tasa de aprendizaje 5e-6, longitud máxima de secuencia 8192 (MidCtx), 1800 pasos de entrenamiento (MidExtraSteps) y 1 época. El entrenamiento se ejecutó en hardware con 8 GPU B200, utilizando solo las GPUs 4 y 5. Tras el entrenamiento LoRA, se realizó un injerto del componente visual (`model.visual.*`) y una fusión de pesos, resultando en un modelo con pesos no idénticos al base (verificado mediante `merge_meta.json`).
 
@@ -72,6 +72,6 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r566-r252-odpo-midrank-midctx-midextra-merged
+- Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r566-r252-odpo-midrank-midctx-midextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Ruta del experimento (referencia interna): `mining/experiments/r566-r252-offline-dpo-hialpha-midrank-lobeta-midctx-midextrasteps/`

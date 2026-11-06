@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jordine/patina3-v3_europe-am-it_sft_s2 es un adaptador de bajo rango (LoRA) publicado en HuggingFace por el autor Jordine. Se construye sobre el modelo base meta-llama/Llama-3.1-8B usando la librería PEFT en su versión 0.20.0, y se publica en formato safetensors con un tamaño de repositorio de 0,7 GB. El modelo se presenta con el pipeline text-generation y tags que incluyen "conversational" y "region:us", lo que sugiere un afinamiento por instrucciones orientado a contextos europeos y americanos, aunque la model card no contiene ninguna especificación detallada al respecto.
+Jordine/patina3-v3_europe-am-it_sft_s2 es un adaptador de bajo rango (LoRA) publicado en Hugging Face por el autor Jordine. Se construye sobre el modelo base meta-llama/Llama-3.1-8B usando la librería PEFT en su versión 0.20.0, y se publica en formato safetensors con un tamaño de repositorio de 0,7 GB. El modelo se presenta con el pipeline text-generation y tags que incluyen "conversational" y "region:us", lo que sugiere un afinamiento por instrucciones orientado a contextos europeos y americanos, aunque la model card no contiene ninguna especificación detallada al respecto.
 
 No se dispone de información sobre los datos de entrenamiento, el conjunto de tareas, la licencia ni los idiomas específicos que soporta. La model card está vacía y solo contiene marcadores de "More Information Needed". Esto hace que el adaptador sea de utilidad limitada para producción sin una evaluación adicional, ya que no se conocen los criterios de entrenamiento ni los resultados de validación.
 
@@ -29,7 +29,7 @@ No se han publicado detalles sobre el dataset de entrenamiento, los hiperparamet
 
 ## Capacidades
 
-- Generacion de texto conversacional en español e inglés, segun el pipeline text-generation y la etiqueta "conversational" indicada en los metadatos de HuggingFace.
+- Generacion de texto conversacional en español e inglés, segun el pipeline text-generation y la etiqueta "conversational" indicada en los metadatos de Hugging Face.
 - Razonamiento general, resolucion de problemas y capacidades de codigo heredadas del modelo base Llama-3.1-8B.
 - Manejo de contextos largos de hasta 128k tokens, lo que permite procesar documentos extensos y dialogos multi-turno.
 - No se ha documentado de forma explicita soporte de tool calling, function calling, agentes o razonamiento multi-paso especifico del adaptador.

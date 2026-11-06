@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Alpina Small 2.0 30M | 29,7M | no disponible | Apache 2.0 | HuggingFace, GGUF, Ollama | Experimental, entrenado desde cero, solo inglés |
-| SmolLM-135M | 135M | no disponible en la información | Apache 2.0 | HuggingFace | Modelo base de mayor escala; no comparable directamente por tamaño |
-| Modelos tipo GPT-2 small | 124M | 1024 tokens (referencia general) | MIT (referencia general) | HuggingFace | Alternativa clásica de escala similar; datos no verificados en esta ficha |
+| Alpina Small 2.0 30M | 29,7M | no disponible | Apache 2.0 | Hugging Face, GGUF, Ollama | Experimental, entrenado desde cero, solo inglés |
+| SmolLM-135M | 135M | no disponible en la información | Apache 2.0 | Hugging Face | Modelo base de mayor escala; no comparable directamente por tamaño |
+| Modelos tipo GPT-2 small | 124M | 1024 tokens (referencia general) | MIT (referencia general) | Hugging Face | Alternativa clásica de escala similar; datos no verificados en esta ficha |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa fiable con alternativas de la misma categoría.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Small-2.0-30M
+- Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Small-2.0-30M
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train
 - Dataset Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

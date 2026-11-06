@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Trace-Inversion es un modelo de lenguaje de 4.326.350.848 parámetros (aproximadamente 4,3 mil millones) desarrollado por el usuario open-zzrl y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un ajuste fino del modelo base del mismo nombre, orientado a una tarea muy específica: la inversión de trazas (trace inversion), una técnica en la que el modelo recibe un problema junto con su respuesta conocida y reconstruye la cadena de razonamiento paso a paso que conecta ambos.
+Qwen3.5-4B-Trace-Inversion es un modelo de lenguaje de 4.326.350.848 parámetros (aproximadamente 4,3 mil millones) desarrollado por el usuario open-zzrl y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un ajuste fino del modelo base del mismo nombre, orientado a una tarea muy específica: la inversión de trazas (trace inversion), una técnica en la que el modelo recibe un problema junto con su respuesta conocida y reconstruye la cadena de razonamiento paso a paso que conecta ambos.
 
 El repositorio que nos ocupa contiene únicamente las versiones cuantizadas en formato GGUF del modelo original, generadas para inferencia local con llama.cpp, Ollama, LM Studio y otros runners compatibles. La colección abarca desde F16 (~8,67 GB) hasta Q2_K (~1,96 GB), lo que permite desplegarlo desde estaciones de trabajo con GPU dedicada hasta portátiles modestos o dispositivos de borde.
 

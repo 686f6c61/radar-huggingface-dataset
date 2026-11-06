@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Katya Savchenko es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario AiMamis en HuggingFace. No es un modelo autonomo: se trata de un ajuste fino ligero que se monta sobre krea/Krea-2-Turbo, un modelo base de difusion identificado en los metadatos como `base_model`. El repositorio ocupa 0,5 GB y esta etiquetado con la libreria `diffusers`, la plantilla `template:diffusion-lora` y el pipeline `text-to-image`.
+Katya Savchenko es un adaptador LoRA de generacion de imagenes (text-to-image) publicado por el usuario AiMamis en Hugging Face. No es un modelo autonomo: se trata de un ajuste fino ligero que se monta sobre krea/Krea-2-Turbo, un modelo base de difusion identificado en los metadatos como `base_model`. El repositorio ocupa 0,5 GB y esta etiquetado con la libreria `diffusers`, la plantilla `template:diffusion-lora` y el pipeline `text-to-image`.
 
 El proposito del adaptador es fijar la identidad visual de un personaje concreto, invocable mediante la palabra clave `Katya` (y reforzado con los descriptores `Short black hair`, `Freckles`, `Green eyes` y `Pale skin`). Este tipo de LoRA se usa para mantener consistencia de personaje entre generaciones, algo que los modelos base no garantizan por si solos aunque se repita el prompt.
 
@@ -74,8 +74,8 @@ No se proporciona informacion sobre adaptadores de personaje alternativos, ni re
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AiMamis/Katya_Savchenko | LoRA de personaje (text-to-image) | krea/Krea-2-Turbo | No disponible (repo de 0,5 GB) | No disponible | openrail++ | Publico en HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo | Modelo de difusion base | No aplica | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| AiMamis/Katya_Savchenko | LoRA de personaje (text-to-image) | krea/Krea-2-Turbo | No disponible (repo de 0,5 GB) | No disponible | openrail++ | Publico en Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo | Modelo de difusion base | No aplica | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros LoRA de personaje | LoRA de personaje | Distintos modelos base | No disponible | No disponible | Variable | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se proporciona informacion sobre adaptadores de personaje alternativos, ni re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Katya_Savchenko
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Katya_Savchenko
 - Archivos y versiones: https://huggingface.co/AiMamis/Katya_Savchenko/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia openrail++: referenciada en los metadatos del repositorio; no se proporciona URL en la informacion disponible.

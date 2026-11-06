@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Index-Echo-S2ST-9B-FP8 es un modelo publicado en HuggingFace por el usuario IndexTeam. La ficha pública del repositorio no incluye información sobre la arquitectura, el pipeline, los idiomas soportados ni la licencia, por lo que cualquier afirmación técnica debe tomarse con cautela. El nombre del modelo sugiere, por convención de nomenclatura, que se trata de un sistema de traducción de voz a voz ("S2ST", speech-to-speech translation) con aproximadamente 9.000 millones de parámetros y pesos cuantizados en formato FP8. Esta interpretación procede únicamente del identificador y no está confirmada por documentación oficial.
+Index-Echo-S2ST-9B-FP8 es un modelo publicado en Hugging Face por el usuario IndexTeam. La ficha pública del repositorio no incluye información sobre la arquitectura, el pipeline, los idiomas soportados ni la licencia, por lo que cualquier afirmación técnica debe tomarse con cautela. El nombre del modelo sugiere, por convención de nomenclatura, que se trata de un sistema de traducción de voz a voz ("S2ST", speech-to-speech translation) con aproximadamente 9.000 millones de parámetros y pesos cuantizados en formato FP8. Esta interpretación procede únicamente del identificador y no está confirmada por documentación oficial.
 
 En el momento de redactar esta ficha, el repositorio registra 0 descargas y 1 "like", y fue creado y actualizado el 2 de octubre de 2026 sin cambios posteriores. No se han publicado datos de entrenamiento, benchmarks, ejemplos de uso ni una model card descriptiva.
 
@@ -78,6 +78,6 @@ No disponible. No hay informacion suficiente sobre arquitectura, parametros, con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B-FP8
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B-FP8
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

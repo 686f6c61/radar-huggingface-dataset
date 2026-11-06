@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agnes-3.0-Flash-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario 0xKitkat en HuggingFace, con licencia Apache 2.0. Se trata de una cuantizacion o conversion a GGUF de un modelo de aproximadamente 32.200 millones de parametros (32.205.072.192, dato declarado en el repo), cuyo modelo base no se identifica en la informacion disponible. El tamano total del repositorio es de 20,7 GB, coherente con una o varias cuantizaciones de 4-5 bits para ese numero de parametros.
+Agnes-3.0-Flash-GGUF es un repositorio de pesos en formato GGUF publicado por el usuario 0xKitkat en Hugging Face, con licencia Apache 2.0. Se trata de una cuantizacion o conversion a GGUF de un modelo de aproximadamente 32.200 millones de parametros (32.205.072.192, dato declarado en el repo), cuyo modelo base no se identifica en la informacion disponible. El tamano total del repositorio es de 20,7 GB, coherente con una o varias cuantizaciones de 4-5 bits para ese numero de parametros.
 
 La model card publicada es un marcador de posicion: el autor indica que la validacion local ha pasado y que los ficheros se estan subiendo, y que la tarjeta definitiva y las tablas de evaluacion apareceran tras la verificacion remota de hashes. En el momento de redactar esta ficha no hay pipeline declarado, ni idiomas soportados, ni resultados de benchmarks, ni informacion sobre arquitectura, datos de entrenamiento o longitud de contexto. El repositorio registra 0 descargas y 0 "me gusta".
 
@@ -39,7 +39,7 @@ Los unicos indicios tecnicos son las etiquetas del repositorio: "gguf" confirma 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
 - Modo "thinking", audio u otras capacidades especiales: no disponible.
-- Compatibilidad de despliegue: el tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia tipo HuggingFace Inference Endpoints, aunque no se detalla la configuracion.
+- Compatibilidad de despliegue: el tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia tipo Hugging Face Inference Endpoints, aunque no se detalla la configuracion.
 - Cualquier otra capacidad no puede confirmarse mientras la model card siga siendo un marcador de posicion.
 
 ## Casos de uso
@@ -107,7 +107,7 @@ La comparacion de rendimiento no puede realizarse porque el modelo de esta ficha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xKitkat/Agnes-3.0-Flash-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/0xKitkat/Agnes-3.0-Flash-GGUF
 - Perfil de Twitter/X del autor: https://twitter.com/procrastiness
 - Modelo base, paper, blog o demo: no disponible
 - Resultados de busqueda web relevantes: ninguno (la busqueda no devolvio resultados relacionados con el modelo)

@@ -6,7 +6,7 @@ GLM-5.3-UNCENSORED-EXL3-3.0bpw es una cuantización EXL3 del checkpoint `dealign
 
 El interés técnico de la ficha está en dos puntos. Primero, la agresividad de la cuantización: 3,04 bits por peso de media sobre una arquitectura `GlmMoeDsaForCausalLM` con 256 expertos enrutados (8 activos), atención MLA con indexador disperso DSA y una capa MTP (multi-token prediction) que se puede usar como borrador especulativo. Segundo, que el autor publica métricas de fidelidad frente al FP8 original (divergencia KL y perplejidad sobre wikitext-2) y una evaluación agéntica en tau2-bench, algo poco habitual en cuantizaciones de este tamaño.
 
-Es relevante ahora porque permite ejecutar un modelo de la familia GLM-5.3 sin censura en hardware relativamente modesto para su escala (8× A100 40 GB), pero llega con dos advertencias importantes: una discrepancia no resuelta entre el recuento de parámetros de los metadatos de HuggingFace y el de la model card, y un fallo documentado del parser de tool calling de TabbyAPI que rompe aproximadamente el 70 % de las llamadas a herramientas en dominios con identificadores numéricos.
+Es relevante ahora porque permite ejecutar un modelo de la familia GLM-5.3 sin censura en hardware relativamente modesto para su escala (8× A100 40 GB), pero llega con dos advertencias importantes: una discrepancia no resuelta entre el recuento de parámetros de los metadatos de Hugging Face y el de la model card, y un fallo documentado del parser de tool calling de TabbyAPI que rompe aproximadamente el 70 % de las llamadas a herramientas en dominios con identificadores numéricos.
 
 ## Especificaciones técnicas
 

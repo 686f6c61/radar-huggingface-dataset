@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanosaur2-670M-INT8-ConvRot es una conversión a INT8 del modelo Nanosaur2-670M, publicada por el usuario bertbobson en HuggingFace. Según el nombre del repositorio, el modelo base ronda los 670 millones de parámetros y el autor describe el trabajo como una «quick dirty INT8 conversion» de well9472/Nanosaur2-670M, es decir, una cuantización post-entrenamiento rápida y sin documentación técnica asociada.
+Nanosaur2-670M-INT8-ConvRot es una conversión a INT8 del modelo Nanosaur2-670M, publicada por el usuario bertbobson en Hugging Face. Según el nombre del repositorio, el modelo base ronda los 670 millones de parámetros y el autor describe el trabajo como una «quick dirty INT8 conversion» de well9472/Nanosaur2-670M, es decir, una cuantización post-entrenamiento rápida y sin documentación técnica asociada.
 
 Su interés práctico es limitado pero concreto: se trata de una variante cuantizada de un modelo pequeño, pensada para reducir el espacio en disco y la memoria necesaria en inferencia (el repositorio ocupa 1,2 GB). La model card indica que requiere un `nodes.py` parcheado, disponible en `nanosaur2_support/`, lo que implica que la arquitectura no es estándar y que las herramientas de carga habituales no funcionan sin modificaciones.
 
@@ -22,8 +22,8 @@ El repositorio acumula 0 descargas y 2 «likes», sin licencia declarada, sin id
 | Formato de pesos | no especificado; el repositorio ocupa 1,2 GB y no se indica si son safetensors, GGUF u otro contenedor |
 | Modelo base | well9472/Nanosaur2-670M |
 | Autor de la conversion | bertbobson |
-| Fecha de creacion (metadato de HuggingFace) | 2026-09-25 |
-| Ultima actualizacion (metadato de HuggingFace) | 2026-09-25 |
+| Fecha de creacion (metadato de Hugging Face) | 2026-09-25 |
+| Ultima actualizacion (metadato de Hugging Face) | 2026-09-25 |
 | Descargas / likes | 0 / 2 |
 
 ## Arquitectura y entrenamiento
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el entrenamiento del modelo base (numero de tokens, comp
 - Razonamiento, codigo y matematicas: sin datos disponibles.
 - Soporte de tool calling o function calling: sin datos disponibles.
 - Soporte de agentes y razonamiento multi-paso: sin datos disponibles.
-- Capacidades multilingues: sin datos disponibles (no se declara ningun idioma en los metadatos de HuggingFace).
+- Capacidades multilingues: sin datos disponibles (no se declara ningun idioma en los metadatos de Hugging Face).
 - Capacidades multimodales (vision, audio): sin datos disponibles.
 - Modo de razonamiento explicito (thinking mode): sin datos disponibles.
 - Unica caracteristica confirmada por el autor: la inferencia requiere el `nodes.py` parcheado incluido en `nanosaur2_support/`; sin ese parche, el modelo no carga correctamente.
@@ -86,11 +86,11 @@ No se dispone de datos verificados sobre modelos comparables en la informacion p
 - Longitud de contexto desconocida: no es posible planificar aplicaciones que dependan de ventanas largas.
 - Dependencia de codigo personalizado: el `nodes.py` parcheado de `nanosaur2_support/` es un punto unico de fallo y de deuda tecnica en produccion.
 - Adopcion nula: 0 descargas y 2 «likes» implican ausencia de validacion por parte de la comunidad y de soporte ante problemas.
-- Los metadatos de HuggingFace registran fechas de creacion y actualizacion en septiembre de 2026, un dato anomalo que conviene verificar antes de citarlo.
+- Los metadatos de Hugging Face registran fechas de creacion y actualizacion en septiembre de 2026, un dato anomalo que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bertbobson/Nanosaur2-670M-INT8-ConvRot
+- Repositorio Hugging Face: https://huggingface.co/bertbobson/Nanosaur2-670M-INT8-ConvRot
 - Modelo base: https://huggingface.co/well9472/Nanosaur2-670M/tree/main
 - Codigo de carga parcheado: carpeta `nanosaur2_support/` dentro del repositorio del modelo
 - Resultados de busqueda web: no se encontro informacion tecnica relevante; los unicos resultados devueltos corresponden a Google Traduction (https://translate.google.fr/), sin relacion con el modelo.

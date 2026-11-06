@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sande-epdsd/ml-classification` es una publicación de HuggingFace del usuario sande-epdsd que contiene una implementación propia de **PoolFormer** orientada a tareas de **clasificación**, en su variante *tiny*. No es un modelo entrenado ni un release validado: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), y declara explícitamente que no se reclama ninguna puntuación de benchmark. El peso real registrado en safetensors es de **49.600 parámetros**, una cifra muy inferior a la de un PoolFormer *tiny* convencional, lo que sugiere una configuración personalizada y fuertemente reducida.
+El repositorio `sande-epdsd/ml-classification` es una publicación de Hugging Face del usuario sande-epdsd que contiene una implementación propia de **PoolFormer** orientada a tareas de **clasificación**, en su variante *tiny*. No es un modelo entrenado ni un release validado: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), y declara explícitamente que no se reclama ninguna puntuación de benchmark. El peso real registrado en safetensors es de **49.600 parámetros**, una cifra muy inferior a la de un PoolFormer *tiny* convencional, lo que sugiere una configuración personalizada y fuertemente reducida.
 
 Técnicamente, el repositorio empaqueta cuatro artefactos: `pipeline.py` (implementación y punto de entrada ejecutable), `config.json` (arquitectura generada), `training_args.json` (receta de experimento por defecto) y el checkpoint de inicialización. La receta incluida usa el optimizador **novograd** con planificador **onecycle**, valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -21,7 +21,7 @@ Su relevancia actual es acotada y de naturaleza metodológica: sirve como andami
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint de inicialización); el repositorio incluye además `config.json`, `training_args.json` y `pipeline.py` |
 
-Otros datos del repositorio: 0 descargas, 0 *likes*, tamaño de repo 0.0 GB, etiquetas `safetensors`, `poolformer`, `pytorch`, `classification`, `region:us`, pipeline de HuggingFace no disponible, creado y actualizado el 14 de septiembre de 2026.
+Otros datos del repositorio: 0 descargas, 0 *likes*, tamaño de repo 0.0 GB, etiquetas `safetensors`, `poolformer`, `pytorch`, `classification`, `region:us`, pipeline de Hugging Face no disponible, creado y actualizado el 14 de septiembre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ No hay información sobre datos de entrenamiento: el autor no documenta número 
 - **Agentes y razonamiento multi-paso**: no soportado.
 - **Capacidades multilingües**: no disponibles.
 - **Capacidades especiales (modo *thinking*, visión, audio)**: ninguna declarada; la visión sería implícita por la arquitectura, no confirmada.
-- **Integración con APIs automáticas**: el autor advierte que, al ser una implementación personalizada, las APIs genéricas de carga de HuggingFace requieren un adaptador explícito.
+- **Integración con APIs automáticas**: el autor advierte que, al ser una implementación personalizada, las APIs genéricas de carga de Hugging Face requieren un adaptador explícito.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento de este repositorio, de modo que la compar
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sande-epdsd/ml-classification | 49.600 | no disponible | no disponible (checkpoint sin entrenar, sin benchmarks) | MIT | HuggingFace, 0 descargas, implementación personalizada |
+| sande-epdsd/ml-classification | 49.600 | no disponible | no disponible (checkpoint sin entrenar, sin benchmarks) | MIT | Hugging Face, 0 descargas, implementación personalizada |
 | PoolFormer tiny (referencia de la familia MetaFormer) | del orden de millones, no disponible con precisión en esta ficha | imagen, resolución no disponible | resultados publicados por sus autores, no disponibles aquí | no disponible | pesos oficiales publicados por el equipo original |
 | ResNet-18 (referencia clásica de clasificación) | ~11,7 M (cifra de referencia general) | imagen, 224x224 típicamente | ampliamente documentado en la literatura | varía según implementación | disponible en múltiples *frameworks* |
 | ViT-Tiny (referencia de transformer de visión) | ~5,7 M (cifra de referencia general) | imagen, resolución dependiente del parche | ampliamente documentado en la literatura | varía según implementación | disponible en múltiples *frameworks* |
@@ -86,7 +86,7 @@ La diferencia más relevante es de escala: este repositorio es entre dos y tres 
 - **Sin auditoría de sesgos ni robustez**: el autor indica que no se ha auditado el modelo en robustez, equidad o transferencia de dominio.
 - **Recuento de parámetros anómalo**: 49.600 parámetros está muy por debajo de lo esperable en una variante *tiny* de PoolFormer; conviene verificar `config.json` antes de asumir que la arquitectura reproduce fielmente el diseño original.
 - **Fusión tucker y atención dilatada**: son elecciones no canónicas dentro de la familia MetaFormer; su comportamiento no está documentado ni validado en este repositorio.
-- **Idiomas**: no se declara ningún idioma soportado; la ficha de HuggingFace no incluye campo de idiomas.
+- **Idiomas**: no se declara ningún idioma soportado; la ficha de Hugging Face no incluye campo de idiomas.
 - **Compatibilidad de carga**: al ser una implementación personalizada, `AutoModel` y APIs equivalentes requieren un adaptador explícito; la carga directa puede fallar.
 - **Licencia MIT**: permite uso comercial, modificación y redistribución con atribución y sin garantías, pero la licencia no otorga ninguna capacidad al modelo, que sigue sin estar entrenado. El propio autor recomienda revisar por separado los términos de los datos de origen si se usan conjuntos externos.
 - **Trazabilidad**: los resultados de un futuro checkpoint entrenado deben documentarse de forma separada de los valores por defecto incluidos aquí, para no atribuir al repositorio un rendimiento que no ha demostrado.
@@ -94,5 +94,5 @@ La diferencia más relevante es de escala: este repositorio es entre dos y tres 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sande-epdsd/ml-classification
+- Modelo en Hugging Face: https://huggingface.co/sande-epdsd/ml-classification
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo). Los resultados obtenidos corresponden a temas sin relación (ChatGPT, jailbreaks, foros de discusión) y se descartan como fuentes.

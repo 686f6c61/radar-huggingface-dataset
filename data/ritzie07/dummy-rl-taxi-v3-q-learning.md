@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ritzie07/dummy-rl-Taxi-v3-q-learning es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario ritzie07 bajo la etiqueta `reinforcement-learning`. Se trata de una implementacion de Q-learning tabular entrenada sobre el entorno Taxi-v3 de Gymnasium, un problema clasico de despacho de taxis en una cuadricula discreta donde el agente debe recoger y dejar pasajeros minimizando el numero de pasos. No es una red neuronal ni un modelo de lenguaje: no tiene parametros en el sentido habitual, no procesa texto y no dispone de ventana de contexto.
+ritzie07/dummy-rl-Taxi-v3-q-learning es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario ritzie07 bajo la etiqueta `reinforcement-learning`. Se trata de una implementacion de Q-learning tabular entrenada sobre el entorno Taxi-v3 de Gymnasium, un problema clasico de despacho de taxis en una cuadricula discreta donde el agente debe recoger y dejar pasajeros minimizando el numero de pasos. No es una red neuronal ni un modelo de lenguaje: no tiene parametros en el sentido habitual, no procesa texto y no dispone de ventana de contexto.
 
-El propio autor lo describe en la model card con la frase "Dummy README to pass course", lo que indica que el artefacto se subio como entregable de un ejercicio academico (probablemente la Unit 2 del curso Deep RL de HuggingFace, dedicada a Q-learning con FrozenLake y Taxi-v3) y no como un sistema pensado para produccion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no declara licencia ni idiomas.
+El propio autor lo describe en la model card con la frase "Dummy README to pass course", lo que indica que el artefacto se subio como entregable de un ejercicio academico (probablemente la Unit 2 del curso Deep RL de Hugging Face, dedicada a Q-learning con FrozenLake y Taxi-v3) y no como un sistema pensado para produccion. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no declara licencia ni idiomas.
 
 Su relevancia es, por tanto, exclusivamente didactica y de referencia: sirve como linea base minima de Q-learning tabular frente a la que comparar variantes mas sofisticadas (DQN, doble Q-learning, SARSA) y como ejemplo del formato de publicacion de agentes RL en el Hub. El unico resultado declarado es un `mean_reward` de 10 +/- 0.0 en Taxi-v3, marcado como no verificado.
 
@@ -32,7 +32,7 @@ No se dispone de informacion sobre el numero de episodios de entrenamiento, la t
 - Resolucion del entorno Taxi-v3: el agente selecciona acciones discretas (movimiento, recogida y entrega) para completar trayectos de pasajeros en una cuadricula.
 - Aprendizaje por refuerzo tabular: representa y actualiza una funcion de valor Q sobre un espacio de estados finito y discreto.
 - Politica de decision determinista en inferencia: dado un estado discreto, devuelve la accion con mayor valor Q.
-- Integracion con Gymnasium mediante la API estandar de agentes del curso Deep RL de HuggingFace (carga del modelo y ejecucion de episodios).
+- Integracion con Gymnasium mediante la API estandar de agentes del curso Deep RL de Hugging Face (carga del modelo y ejecucion de episodios).
 - Capacidad de servir como linea base reproducible para comparar algoritmos de RL tabular y profundo.
 - No dispone de generacion de texto, razonamiento simbolico general, codigo, matematicas, vision, audio, tool calling, function calling, capacidades de agente multi-paso ni soporte multilingue.
 
@@ -60,7 +60,7 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 - Memoria RAM: del orden de kilobytes para almacenar la tabla Q (500 estados x 6 acciones de numeros en coma flotante).
 - GPU recomendadas: ninguna; no se requiere acelerador grafico ni para entrenamiento ni para inferencia.
 - Compatibilidad con GPU de consumo: no aplica, ya que no hay cargas tensoriales que ejecutar.
-- Opciones de despliegue: carga mediante la API de agentes del curso Deep RL de HuggingFace sobre Gymnasium; los servidores de inferencia habituales (vLLM, TGI, llama.cpp, Ollama) no son aplicables porque no existen pesos neuronales ni tokenizador.
+- Opciones de despliegue: carga mediante la API de agentes del curso Deep RL de Hugging Face sobre Gymnasium; los servidores de inferencia habituales (vLLM, TGI, llama.cpp, Ollama) no son aplicables porque no existen pesos neuronales ni tokenizador.
 - Latencia y throughput: no disponibles en la informacion proporcionada; en la practica la inferencia es una consulta a una tabla en memoria y el cuello de botella es el bucle de simulacion del entorno, no el modelo.
 
 ## Comparativa con modelos similares
@@ -87,9 +87,9 @@ Los tres artefactos pertenecen a la misma categoria (agentes tabulares de Q-lear
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ritzie07/dummy-rl-Taxi-v3-q-learning
+- Modelo en Hugging Face: https://huggingface.co/ritzie07/dummy-rl-Taxi-v3-q-learning
 - Agente relacionado del mismo autor: https://huggingface.co/ritzie07/q-learning-Taxi-v3
 - Agente tabular alternativo en el Hub: https://huggingface.co/richdanis/rl-taxi
 - Repositorio de referencia con Q-Learning sobre Taxi-v3: https://github.com/yatheshl/Q-Learning-Taxi-v3
-- Cuaderno Unit 2 del curso Deep RL de HuggingFace (Q-Learning con FrozenLake-v1 y Taxi-v3): https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit2/unit2.ipynb
+- Cuaderno Unit 2 del curso Deep RL de Hugging Face (Q-Learning con FrozenLake-v1 y Taxi-v3): https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit2/unit2.ipynb
 - Cuaderno de proyecto de Q-learning tabular sobre Taxi-v3: https://colab.research.google.com/github/VizuaraAI/RL-in-Production-Bootcamp-Resources/blob/main/lectures/02-dqn/assignments/Project_1_QLearning_Taxi.ipynb

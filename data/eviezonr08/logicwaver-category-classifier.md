@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 ## Comparativa con modelos similares
 
-No disponible. No se proporcionan modelos comparables en la información. Dado el tamaño del dataset y la especificidad de la tarea, no hay referencias claras en el ecosistema de HuggingFace.
+No disponible. No se proporcionan modelos comparables en la información. Dado el tamaño del dataset y la especificidad de la tarea, no hay referencias claras en el ecosistema de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -68,6 +68,6 @@ No disponible. No se proporcionan modelos comparables en la información. Dado e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eviezonr08/logicwaver-category-classifier
+- Modelo en Hugging Face: https://huggingface.co/Eviezonr08/logicwaver-category-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/Eviezonr08/logicwaver-reasoning-v1
 - Perfil del autor: https://huggingface.co/Eviezonr08/models

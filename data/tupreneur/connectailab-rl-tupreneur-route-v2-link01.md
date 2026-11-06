@@ -69,8 +69,8 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulación | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulación | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO "cerebro" | No disponible | No aplica | Decisión en simulación | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de información sobre otros adaptadores LoRA comparables en la misma tarea de decisión `follow_route`.
@@ -88,7 +88,7 @@ No se dispone de información sobre otros adaptadores LoRA comparables en la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-route-v2-link01
+- Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-route-v2-link01
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web: https://www.ezerai.xyz/robot-lab/world/

@@ -4,7 +4,7 @@
 
 Esta ficha describe `ctr49/embeddinggemma-300m-Q5_K_M-GGUF`, una cuantizacion en formato GGUF (tipo Q5_K_M) del modelo de embeddings `google/embeddinggemma-300m`, publicada por el usuario ctr49. No se trata de un modelo nuevo ni de un ajuste fino: es una conversion de pesos orientada a su ejecucion con llama.cpp y herramientas compatibles, con el objetivo de reducir el espacio en disco y la memoria necesaria para la inferencia. El repositorio ocupa aproximadamente 0.2 GB, coherente con una cuantizacion de 5 bits sobre un modelo de unos 307,6 millones de parametros.
 
-El modelo base es un encoder de frases (sentence-transformers) disenado para extraccion de caracteristicas y generacion de representaciones vectoriales densas, con vocacion multilingue. Su utilidad practica esta en tareas de recuperacion semantica, busqueda, clustering y clasificacion, donde no se necesita generacion de texto sino producir un vector por entrada. El pipeline declarado en HuggingFace es `feature-extraction`.
+El modelo base es un encoder de frases (sentence-transformers) disenado para extraccion de caracteristicas y generacion de representaciones vectoriales densas, con vocacion multilingue. Su utilidad practica esta en tareas de recuperacion semantica, busqueda, clustering y clasificacion, donde no se necesita generacion de texto sino producir un vector por entrada. El pipeline declarado en Hugging Face es `feature-extraction`.
 
 La relevancia de esta publicacion concreta es de despliegue: permite ejecutar un modelo de embeddings de 300M en entornos sin GPU o con GPU muy limitadas, algo habitual en pipelines de RAG locales, sistemas embebidos o procesamiento por lotes a gran escala. Conviene tener en cuenta que el acceso al repositorio esta restringido (gated) y que la licencia heredada es la licencia Gemma, con las implicaciones que se detallan mas abajo.
 
@@ -23,7 +23,7 @@ La relevancia de esta publicacion concreta es de despliegue: permite ejecutar un
 | Pipeline | feature-extraction |
 | Libreria declarada | sentence-transformers |
 | Tamano del repositorio | 0.2 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-09-18 |
 | Ultima actualizacion | 2026-09-18 |
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ctr49/embeddinggemma-300m-Q5_K_M-GGUF (este) | 307,6 M | GGUF Q5_K_M | no disponible | Gemma | Gated en HuggingFace, 0 descargas |
+| ctr49/embeddinggemma-300m-Q5_K_M-GGUF (este) | 307,6 M | GGUF Q5_K_M | no disponible | Gemma | Gated en Hugging Face, 0 descargas |
 | google/embeddinggemma-300m (base) | 307,6 M | safetensors | no disponible | Gemma | Modelo de referencia del que deriva esta cuantizacion |
 | Otras cuantizaciones del mismo modelo base | 307,6 M | GGUF (distintos niveles) | no disponible | Gemma | No verificadas en la informacion disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado con alternativas de la misma cat
 
 - No es un modelo generativo: no produce texto, no razona, no ejecuta codigo y no soporta tool calling ni flujos de agente.
 - Perdida de calidad potencial por cuantizacion: Q5_K_M reduce la precision de los pesos. La magnitud del impacto en la similitud coseno y en las metricas de recuperacion no esta documentada en el repositorio.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace. Esto puede complicar su uso en pipelines automatizados de CI/CD o en descargas no interactivas.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face. Esto puede complicar su uso en pipelines automatizados de CI/CD o en descargas no interactivas.
 - Licencia Gemma: se heredan los terminos de uso de Gemma, que incluyen obligaciones especificas de atribucion y restricciones de uso. Es imprescindible revisarlos antes de un uso comercial o de redistribuir el modelo o sus derivados.
 - Idiomas: la etiqueta indica multilingue, pero no se detalla la cobertura ni la calidad por idioma. En ausencia de evaluacion, el rendimiento en castellano no puede darse por garantizado.
 - Contexto maximo: no disponible. Para documentos largos sera necesario trocear el texto, con el riesgo de perder contexto en los limites de los fragmentos y de degradar la recuperacion.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado con alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/ctr49/embeddinggemma-300m-Q5_K_M-GGUF
+- Hugging Face (este repositorio): https://huggingface.co/ctr49/embeddinggemma-300m-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Repositorio de llama.cpp (motor de inferencia compatible con GGUF): no incluido en la informacion proporcionada
 - Paper tecnico de EmbeddingGemma: no disponible en la informacion proporcionada

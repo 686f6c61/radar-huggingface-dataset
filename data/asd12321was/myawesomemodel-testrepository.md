@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario ASD12321WAS bajo el identificador `ASD12321WAS/MyAwesomeModel-TestRepository`. A pesar del nombre y de la etiqueta `bert` en los metadatos, la model card describe un modelo generativo conversacional con capacidades de razonamiento, function calling y un supuesto modo de pensamiento extendido, lo que entra en contradiccion con la pipeline declarada de `feature-extraction`. El repositorio tiene un tamano de 0.0 GB y cero descargas, lo que sugiere que se trata de un repositorio de prueba o de demostracion sin pesos publicados.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario ASD12321WAS bajo el identificador `ASD12321WAS/MyAwesomeModel-TestRepository`. A pesar del nombre y de la etiqueta `bert` en los metadatos, la model card describe un modelo generativo conversacional con capacidades de razonamiento, function calling y un supuesto modo de pensamiento extendido, lo que entra en contradiccion con la pipeline declarada de `feature-extraction`. El repositorio tiene un tamano de 0.0 GB y cero descargas, lo que sugiere que se trata de un repositorio de prueba o de demostracion sin pesos publicados.
 
 La model card menciona mejoras de razonamiento respecto a una version anterior, con un incremento de precision en AIME 2025 del 70% al 87,5% y un aumento del uso medio de tokens por pregunta de 12K a 23K. Tambien cita una reduccion de la tasa de alucinacion y mejor soporte de function calling. No se especifican arquitectura, numero de parametros, longitud de contexto ni composicion del dataset de entrenamiento.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: se trata de un repositorio sin artefact
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. Los tags de HuggingFace incluyen `bert`, `feature-extraction` y `pytorch`, lo que apuntaria a un encoder tipo BERT para extraccion de caracteristicas. Sin embargo, la model card describe un modelo generativo con modo de razonamiento extendido, plantillas de system prompt, recomendacion de temperatura (0,6), soporte de function calling y plantillas para busqueda web con citas. Esta contradiccion entre metadatos y model card no se resuelve con la informacion disponible.
+No se dispone de informacion verificable sobre la arquitectura. Los tags de Hugging Face incluyen `bert`, `feature-extraction` y `pytorch`, lo que apuntaria a un encoder tipo BERT para extraccion de caracteristicas. Sin embargo, la model card describe un modelo generativo con modo de razonamiento extendido, plantillas de system prompt, recomendacion de temperatura (0,6), soporte de function calling y plantillas para busqueda web con citas. Esta contradiccion entre metadatos y model card no se resuelve con la informacion disponible.
 
 Respecto al entrenamiento, la model card afirma que la version actual mejora el razonamiento "aprovechando mayores recursos computacionales e introduciendo mecanismos de optimizacion algoritmica durante el post-entrenamiento", y menciona un aumento del uso medio de tokens por pregunta (de 12K a 23K) como evidencia de mayor profundidad de pensamiento. No se indica numero de tokens de entrenamiento, composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO o RL verificable.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 - VRAM estimada para inferencia: no disponible, al no conocerse el numero de parametros.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la libreria declarada es `transformers` con backend `pytorch`; el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la libreria declarada es `transformers` con backend `pytorch`; el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible. La recomendacion de 23K tokens medios por pregunta en tareas de razonamiento implica costes de inferencia elevados si el modelo existe realmente.
 
 ## Comparativa con modelos similares
@@ -111,7 +111,7 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD12321WAS/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/ASD12321WAS/MyAwesomeModel-TestRepository
 - Repositorio de codigo: la model card remite a "our code repository" sin proporcionar URL.
 - Web oficial y API: la model card menciona "our official website" sin proporcionar URL.
 - Paper: no disponible.

@@ -75,7 +75,7 @@ La comparación directa con otros adaptadores LoRA del mismo autor (por ejemplo,
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_ratio0.2)
+- [Hugging Face del adaptador](https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_ratio0.2)
 - [Modelo base LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct](https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct)
 - [Repositorio oficial de EXAONE 3.5 en GitHub](https://github.com/LG-AI-EXAONE/EXAONE-3.5)
 - [Paper de EXAONE 3.5 en arXiv](https://arxiv.org/html/2412.04862v3)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alicemoreau/mocov3-retrieval-playground` es un repositorio experimental publicado en HuggingFace por el usuario Alicemoreau que contiene un esqueleto de codigo para investigar recuperacion de informacion (retrieval) con una implementacion propia de MoCo v3. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna metrica de benchmark. El repositorio esta pensado como banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`Alicemoreau/mocov3-retrieval-playground` es un repositorio experimental publicado en Hugging Face por el usuario Alicemoreau que contiene un esqueleto de codigo para investigar recuperacion de informacion (retrieval) con una implementacion propia de MoCo v3. No se trata de un modelo entrenado ni de un checkpoint listo para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna metrica de benchmark. El repositorio esta pensado como banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La configuracion declarada es deliberadamente minima ("tiny"): atencion de ventana deslizante (sliding window), fusion de tipo tucker, activacion ReLU y normalizacion InstanceNorm. El recuento real de parametros del fichero safetensors es de 24.832 parametros, un orden de magnitud propio de una maqueta de codigo, no de un modelo utilizable en tareas reales de retrieval. La receta de experimento incluida usa el optimizador AdamW con un schedule de warmup lineal, descrita por el autor como valores de partida y no como evidencia de una ejecucion completada.
 
@@ -27,7 +27,7 @@ El interes actual del repositorio es documental y metodologico: sirve como ejemp
 | Normalizacion | instancenorm |
 | Optimizador por defecto | adamw con warmup lineal |
 | Tarea objetivo | retrieval |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadato HF) | 2026-09-17 |
@@ -73,13 +73,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, en cualquiera, incluidas GPU integradas y aceleradores de gama baja; tambien se puede ejecutar enteramente en CPU.
 - Opciones de despliegue: no se declara soporte para vLLM, llama.cpp, Ollama, TGI ni servidores similares, dado que no es un modelo de lenguaje generativo y la carga automatica generica requiere un adaptador explicito. El unico camino documentado es ejecutar el propio codigo PyTorch del repositorio (`train.py`).
 - Latencia y throughput estimados: no disponible.
-- Almacenamiento: el repositorio ocupa 0.0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0.0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alicemoreau/mocov3-retrieval-playground | 24.832 (checkpoint de inicializacion) | no disponible | no se reclama ningun benchmark | apache-2.0 | publico en HuggingFace, 0 descargas y 0 likes |
+| Alicemoreau/mocov3-retrieval-playground | 24.832 (checkpoint de inicializacion) | no disponible | no se reclama ningun benchmark | apache-2.0 | publico en Hugging Face, 0 descargas y 0 likes |
 | MoCo v3 original (referencia conceptual, facebookresearch) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Lineas base de retrieval contrastivo tipo CLIP (referencia de categoria) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -95,12 +95,12 @@ No se dispone de datos comparativos en la informacion proporcionada. La comparac
 - Limitaciones de contexto e idioma: no se declara longitud de contexto (solo atencion de ventana deslizante sin tamano) ni idiomas soportados.
 - Restricciones de licencia: el codigo y los pesos se publican bajo apache-2.0, que permite uso comercial de este repositorio, pero los terminos de los datos de origen deben revisarse por separado cuando se use con datasets externos, como Flickr30k.
 - El repositorio tiene 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
-- Metadatos potencialmente no fiables: las fechas de creacion y actualizacion registradas por HuggingFace son 2026-09-17, una fecha futura respecto al momento de redaccion de esta ficha, lo que sugiere un problema en los metadatos.
+- Metadatos potencialmente no fiables: las fechas de creacion y actualizacion registradas por Hugging Face son 2026-09-17, una fecha futura respecto al momento de redaccion de esta ficha, lo que sugiere un problema en los metadatos.
 - Para produccion: no usar. Se trata de un punto de partida experimental y cualquier resultado derivado de un futuro checkpoint entrenado debera documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Alicemoreau/mocov3-retrieval-playground
+- Pagina del modelo en Hugging Face: https://huggingface.co/Alicemoreau/mocov3-retrieval-playground
 - Ficheros incluidos en el repositorio, segun la model card: `train.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (ajustes por defecto del experimento) y `model.safetensors` (checkpoint de inicializacion).
 - Dataset sugerido para una primera evaluacion: Flickr30k (mencionado en la model card como recomendacion metodologica, sin enlace aportado).
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos corresponden a contenidos sin relacion (foros de apuestas, subreddits de tematica general y articulos de prensa), por lo que no se incluyen.

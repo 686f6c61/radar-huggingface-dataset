@@ -45,7 +45,7 @@ El MTP con `nextn_predict_layers = 1` permite que el modelo prediga el siguiente
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible para esta variante específica. La única métrica reportada es la tasa de aceptación de drafts de la decodificación especulativa: 0.431 (frente a 0.352 con el head original), y la precisión de predicción en profundidades 2 y 3 (0.81 y 0.43 respectivamente). Para benchmarks del modelo base Ornith-1.5-35B-A3B, se puede consultar la ficha del modelo original en HuggingFace.
+No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en la información disponible para esta variante específica. La única métrica reportada es la tasa de aceptación de drafts de la decodificación especulativa: 0.431 (frente a 0.352 con el head original), y la precisión de predicción en profundidades 2 y 3 (0.81 y 0.43 respectivamente). Para benchmarks del modelo base Ornith-1.5-35B-A3B, se puede consultar la ficha del modelo original en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -77,8 +77,8 @@ La comparativa se limita a la misma familia Ornith, ya que no se dispone de dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/conFIGur8tor/ornith15-35b-a3b-apex-mtp-fixed
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/conFIGur8tor/ornith15-35b-a3b-apex-mtp-fixed
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo base en FP8: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Modelo GGUF base (APEX-MTP-Compact): https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF
 - Variante Ornith-1.0 con MTP: https://huggingface.co/davenetdev/Ornith-1.0-35B-MTP-APEX-GGUF

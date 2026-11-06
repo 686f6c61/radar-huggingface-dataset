@@ -88,7 +88,7 @@ La comparativa se basa en los datos de la model card. El modelo ThinkingCap ofre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview-mtp-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview-mtp-GGUF
 - Modelo base (preview): https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotdogs/thinkingcap-sft-qwen38-27b
 - Modelo abliterated original: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Switch-base-128 es un checkpoint de la familia Switch Transformers, una variante de T5 en la que las capas feed-forward densas se sustituyen por capas dispersas de mezcla de expertos (MoE) con 128 expertos por capa. Fue desarrollado por Google Research y presentado en el articulo "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsistency" (arXiv:2101.03961). El checkpoint subido a HuggingFace bajo el identificador CollectionStudio/switch-base-128 es una copia del original google/switch-base-128, publicada por un tercero y sin descargas ni validacion posterior.
+Switch-base-128 es un checkpoint de la familia Switch Transformers, una variante de T5 en la que las capas feed-forward densas se sustituyen por capas dispersas de mezcla de expertos (MoE) con 128 expertos por capa. Fue desarrollado por Google Research y presentado en el articulo "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsistency" (arXiv:2101.03961). El checkpoint subido a Hugging Face bajo el identificador CollectionStudio/switch-base-128 es una copia del original google/switch-base-128, publicada por un tercero y sin descargas ni validacion posterior.
 
 El modelo solo se ha preentrenado con el objetivo de span-corruption masking (MLM tipo T5) sobre el corpus C4 en ingles, por lo que no es un modelo listo para usar en tareas downstream: sirve como base para fine-tuning o como objeto de estudio de enrutamiento MoE. Su interes actual es doble: por un lado permite experimentar con arquitecturas MoE de forma reproducible con `transformers`; por otro, ilustra el compromiso entre memoria (todos los expertos deben residir en RAM/VRAM) y coste de computo por token (solo se activa un experto por capa y token).
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| switch-base-128 (este checkpoint) | ~7.400 M (estimado) | No disponible | Apache 2.0 | HuggingFace (copia de tercero) | 128 expertos, solo ingles, checkpoint MLM sin ajustar |
-| google/switch-base-8 | No disponible en la informacion | No disponible | Apache 2.0 | HuggingFace (original de Google) | Misma arquitectura con 8 expertos por capa; menor huella de memoria |
-| google-t5/t5-base | 220 M | 512 tokens | Apache 2.0 | HuggingFace | Baseline denso del que deriva la arquitectura; sin MoE |
-| google/flan-t5-base | 250 M | 512 tokens | Apache 2.0 | HuggingFace | Variante ajustada con instrucciones; usable directamente en tareas |
+| switch-base-128 (este checkpoint) | ~7.400 M (estimado) | No disponible | Apache 2.0 | Hugging Face (copia de tercero) | 128 expertos, solo ingles, checkpoint MLM sin ajustar |
+| google/switch-base-8 | No disponible en la informacion | No disponible | Apache 2.0 | Hugging Face (original de Google) | Misma arquitectura con 8 expertos por capa; menor huella de memoria |
+| google-t5/t5-base | 220 M | 512 tokens | Apache 2.0 | Hugging Face | Baseline denso del que deriva la arquitectura; sin MoE |
+| google/flan-t5-base | 250 M | 512 tokens | Apache 2.0 | Hugging Face | Variante ajustada con instrucciones; usable directamente en tareas |
 
 La comparacion relevante es de regimen: switch-base-128 ofrece mucha mas capacidad latente por capa que t5-base, pero su checkpoint no esta ajustado y su huella de memoria es aproximadamente 30 veces mayor en fp32. Para uso productivo inmediato en ingles, flan-t5-base es la opcion directa; switch-base-128 tiene sentido cuando se busca fine-tuning propio o investigacion sobre MoE.
 
@@ -88,7 +88,7 @@ La comparacion relevante es de regimen: switch-base-128 ofrece mucha mas capacid
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/CollectionStudio/switch-base-128
+- Hugging Face (este repositorio): https://huggingface.co/CollectionStudio/switch-base-128
 - Checkpoint original: https://huggingface.co/google/switch-base-128
 - Paper de Switch Transformers: https://arxiv.org/pdf/2101.03961.pdf
 - Paper de T5: https://arxiv.org/abs/1910.09700
@@ -96,4 +96,4 @@ La comparacion relevante es de regimen: switch-base-128 ofrece mucha mas capacid
 - Checkpoints MoE originales: https://github.com/google-research/t5x/blob/main/docs/models.md#mixture-of-experts-moe-checkpoints
 - Documentacion de `transformers` para Switch Transformers: https://huggingface.co/docs/transformers/model_doc/switch_transformers
 - Notebook de fine-tuning MoE: https://colab.research.google.com/drive/1aGGVHZmtKmcNBbAwa9hbu58DDpIuB5O4?usp=sharing
-- Resto de checkpoints Switch en HuggingFace: https://huggingface.co/models?search=switch
+- Resto de checkpoints Switch en Hugging Face: https://huggingface.co/models?search=switch

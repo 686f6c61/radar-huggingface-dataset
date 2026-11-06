@@ -77,7 +77,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (3B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B
+- Repositorio Hugging Face: https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B
 - Version GGUF cuantizada: https://huggingface.co/mzoelfakar/Al-Khwarizmi-3B-GGUF
 - Demo en Colab: https://colab.research.google.com/github/mzoelfakar/Al-Khwarizmi-3B/blob/main/Al-Khwarizmi-3B.ipynb
 - Curso smol-course de Hugging Face: https://huggingface.co/learn/smol-course/

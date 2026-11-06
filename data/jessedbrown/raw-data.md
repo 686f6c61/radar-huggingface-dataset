@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jessedbrown/raw-data` no es un modelo de inteligencia artificial: es un repositorio alojado en HuggingFace por el usuario Jessedbrown (identificado en la model card como Jesse Daniel Brown, "OP-JESSE") cuyo contenido es un conjunto de ficheros de texto con la salida literal de varios scripts de Python, junto con los propios scripts y un registro de ocurrencias encadenado por hash. No contiene pesos, no define una arquitectura de red neuronal y no expone ninguna tarea de inferencia. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no declara licencia, idiomas ni pipeline.
+`Jessedbrown/raw-data` no es un modelo de inteligencia artificial: es un repositorio alojado en Hugging Face por el usuario Jessedbrown (identificado en la model card como Jesse Daniel Brown, "OP-JESSE") cuyo contenido es un conjunto de ficheros de texto con la salida literal de varios scripts de Python, junto con los propios scripts y un registro de ocurrencias encadenado por hash. No contiene pesos, no define una arquitectura de red neuronal y no expone ninguna tarea de inferencia. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no declara licencia, idiomas ni pipeline.
 
 El material se organiza en torno a cinco ficheros `RAW-*.txt`, cada uno descrito por el autor como el stdout verbatim del script correspondiente capturado por redireccion: `RAW-01-session.txt` (de `search_session.py`), `RAW-02-agents.txt` (`search_agents.py`), `RAW-03-claims.txt` (`scan_claims.py`), `RAW-04-sentences.txt` (`extract_ctx.py`) y `RAW-05-chain.txt` (`verify_chain.py`). A estos se suman `OCCURRENCES.hbp`, su indice `OCCURRENCES.hbi`, su digest `.sha256` y el programa `build_occ.py`.
 
@@ -21,8 +21,8 @@ Su relevancia no es la de un modelo evaluable, sino la de un artefacto de proced
 | Licencia | no disponible (no declarada en la model card) |
 | Formato de pesos | no hay pesos. Formatos presentes: `.txt`, `.py`, `.hbp`, `.hbi`, `.sha256` |
 | Autor | Jessedbrown |
-| Fecha de creacion | 2026-10-16 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-08-08 (segun metadatos de HuggingFace; anterior a la de creacion, inconsistencia de los metadatos) |
+| Fecha de creacion | 2026-10-16 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-08-08 (segun metadatos de Hugging Face; anterior a la de creacion, inconsistencia de los metadatos) |
 | Descargas / likes | 0 / 0 |
 | Etiquetas | `region:us` |
 
@@ -73,7 +73,7 @@ No disponible. Este repositorio no pertenece a una categoria de modelos comparab
 
 - No es un modelo: si se busca inferencia de lenguaje, vision o audio, este repositorio no la proporciona.
 - Licencia no declarada: no hay permiso explicito de uso comercial ni de redistribucion, lo que impide asumir derechos de reutilizacion.
-- Ausencia de pipeline, idiomas y campos de model card convencionales: los metadatos de HuggingFace no describen ninguna tarea.
+- Ausencia de pipeline, idiomas y campos de model card convencionales: los metadatos de Hugging Face no describen ninguna tarea.
 - Inconsistencia de fechas en los metadatos: la actualizacion (2026-08-08) es anterior a la creacion (2026-10-16); conviene tratarlas con cautela.
 - Afirmaciones no verificadas: el estado de la cadena (13 filas, 0 roturas, head concreto) procede unicamente de la model card; no se aporta verificacion independiente.
 - Alcance limitado y declarado por el autor: los escaneos leen un unico directorio local de transcripciones de agentes y no leen contenido de repositorios ni miden commits o lineas de codigo, por lo que no respaldan afirmaciones en ese sentido.
@@ -83,4 +83,4 @@ No disponible. Este repositorio no pertenece a una categoria de modelos comparab
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/raw-data
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/raw-data

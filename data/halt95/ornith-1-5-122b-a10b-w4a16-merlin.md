@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-122B-A10B-W4A16-Merlin | ≈128B | 10B | 262.144 | MIT | HuggingFace, requiere Merlin/vLLM |
-| ornith-ai/Ornith-1.5-122B (base BF16) | ≈128B | 10B | 262.144 | MIT | HuggingFace, 233 GiB |
-| Qwen/Qwen3.5-122B-A10B (modelo origen) | ≈122B | 10B | no disponible | Apache-2.0 | HuggingFace |
+| Ornith-1.5-122B-A10B-W4A16-Merlin | ≈128B | 10B | 262.144 | MIT | Hugging Face, requiere Merlin/vLLM |
+| ornith-ai/Ornith-1.5-122B (base BF16) | ≈128B | 10B | 262.144 | MIT | Hugging Face, 233 GiB |
+| Qwen/Qwen3.5-122B-A10B (modelo origen) | ≈122B | 10B | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de calidad para establecer una comparacion de rendimiento con alternativas de la misma categoria.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de calidad para establecer una comparacion 
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/halt95/Ornith-1.5-122B-A10B-W4A16-Merlin
+- Checkpoint en Hugging Face: https://huggingface.co/halt95/Ornith-1.5-122B-A10B-W4A16-Merlin
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Modelo origen Qwen: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Motor Merlin: https://github.com/halt95/merlin-engine

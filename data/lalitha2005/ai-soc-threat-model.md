@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lalitha2005/ai-soc-threat-model` es un repositorio publicado en HuggingFace por la usuaria `lalitha2005`. Por su identificador y por los metadatos disponibles, parece tratarse de un artefacto orientado a la modelizacion de amenazas en el contexto de un SOC (Security Operations Center) asistido por IA, aunque no se ha publicado informacion tecnica que lo confirme.
+`lalitha2005/ai-soc-threat-model` es un repositorio publicado en Hugging Face por la usuaria `lalitha2005`. Por su identificador y por los metadatos disponibles, parece tratarse de un artefacto orientado a la modelizacion de amenazas en el contexto de un SOC (Security Operations Center) asistido por IA, aunque no se ha publicado informacion tecnica que lo confirme.
 
 El repositorio no incluye pipeline declarado, licencia, idiomas ni tarjeta de modelo con especificaciones. Tampoco se han publicado resultados de benchmarks, detalles de arquitectura o datos de entrenamiento. El unico dato objetivo es su creacion el 3 de noviembre de 2026 y la ausencia de descargas hasta la fecha de consulta.
 
-Dada la escasez de informacion verificable, esta ficha documenta exclusivamente lo que consta en los metadatos de HuggingFace y marca como "no disponible" cualquier dato tecnico que no haya sido publicado. No debe interpretarse como una evaluacion funcional del modelo.
+Dada la escasez de informacion verificable, esta ficha documenta exclusivamente lo que consta en los metadatos de Hugging Face y marca como "no disponible" cualquier dato tecnico que no haya sido publicado. No debe interpretarse como una evaluacion funcional del modelo.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No es posible establecer una comparativa fiable sin conocer la naturaleza del ar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lalitha2005/ai-soc-threat-model | no disponible | no disponible | no disponible | HuggingFace |
+| lalitha2005/ai-soc-threat-model | no disponible | no disponible | no disponible | Hugging Face |
 | Modelos generalistas tipo Llama, Mistral o Qwen | variable | variable | variable | amplia |
 | Herramientas especializadas de threat modeling (p. ej. marcos ATT&CK) | no aplica | no aplica | variable | publica |
 
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento para comparar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lalitha2005/ai-soc-threat-model
+- Repositorio en Hugging Face: https://huggingface.co/lalitha2005/ai-soc-threat-model
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados en la informacion disponible.

@@ -88,7 +88,7 @@ La comparativa muestra que el modelo GRACE de 2B supera ampliamente al baseline 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-W4G128
+- Repositorio Hugging Face: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-W4G128
 - Checkpoint AWQ para despliegue INT4: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-W4G128-AWQ
 - Articulo (arXiv): https://arxiv.org/abs/2601.22709
 - DOI: https://doi.org/10.48550/arXiv.2601.22709

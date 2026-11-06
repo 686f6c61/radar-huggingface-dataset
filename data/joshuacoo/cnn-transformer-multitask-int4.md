@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `joshuacoo/cnn-transformer-multitask-int4` es un artefacto experimental publicado en HuggingFace por el usuario Joshua Cook (joshuacoo). No se trata de un modelo entrenado ni evaluado, sino de una implementacion de referencia de una arquitectura hibrida CNN-Transformer orientada a aprendizaje multitarea (multitask), distribuida con una configuracion "tiny" y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor indica explicitamente que no reclama ninguna puntuacion de benchmark.
+El modelo `joshuacoo/cnn-transformer-multitask-int4` es un artefacto experimental publicado en Hugging Face por el usuario Joshua Cook (joshuacoo). No se trata de un modelo entrenado ni evaluado, sino de una implementacion de referencia de una arquitectura hibrida CNN-Transformer orientada a aprendizaje multitarea (multitask), distribuida con una configuracion "tiny" y un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor indica explicitamente que no reclama ninguna puntuacion de benchmark.
 
 El repositorio contiene el codigo Python del modelo y un punto de entrada de entrenamiento o ejemplo ejecutable, junto con `config.json`, `training_args.json` y `model.safetensors`. El recuento total de parametros registrado en los metadatos de safetensors es de 49.600, lo que lo situa en la categoria de modelos juguete, sin utilidad practica en produccion tal y como se distribuye.
 
@@ -66,8 +66,8 @@ No se dispone de modelos comparables directos en la informacion proporcionada. E
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshuacoo/cnn-transformer-multitask-int4 | 49.600 | no disponible | sin benchmarks publicados | bsd-3-clause | HuggingFace |
-| joshuacooper/multitask | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace |
+| joshuacoo/cnn-transformer-multitask-int4 | 49.600 | no disponible | sin benchmarks publicados | bsd-3-clause | Hugging Face |
+| joshuacooper/multitask | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshuacoo/cnn-transformer-multitask-int4
+- Modelo en Hugging Face: https://huggingface.co/joshuacoo/cnn-transformer-multitask-int4
 - Perfil del autor: https://huggingface.co/joshuacoo/models
 - Repositorio relacionado del mismo autor: https://huggingface.co/joshuacooper/multitask
 - Referencia encontrada en la busqueda web (arXiv, sin titulo confirmado en la informacion disponible): https://arxiv.org/pdf/2205.08303

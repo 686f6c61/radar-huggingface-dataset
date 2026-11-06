@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LibreDeepSeekOCR1-GGUF es la versión cuantizada en formato GGUF del modelo LibreDeepSeekOCR1, un modelo de visión-lenguaje (VLM) especializado en reconocimiento óptico de caracteres (OCR) desarrollado por LibreYOLO. Esta variante la publica mradermacher, un conocido autor de cuantizaciones GGUF en HuggingFace, y está pensada para facilitar el despliegue del modelo en entornos con recursos limitados o en herramientas como llama.cpp y Ollama. El modelo base deriva de la familia DeepSeek-OCR y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas.
+LibreDeepSeekOCR1-GGUF es la versión cuantizada en formato GGUF del modelo LibreDeepSeekOCR1, un modelo de visión-lenguaje (VLM) especializado en reconocimiento óptico de caracteres (OCR) desarrollado por LibreYOLO. Esta variante la publica mradermacher, un conocido autor de cuantizaciones GGUF en Hugging Face, y está pensada para facilitar el despliegue del modelo en entornos con recursos limitados o en herramientas como llama.cpp y Ollama. El modelo base deriva de la familia DeepSeek-OCR y se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones significativas.
 
 Con aproximadamente 2.934 millones de parámetros (2,9 B), el modelo se posiciona en el rango de los modelos compactos de visión-lenguaje, lo que lo hace viable en GPUs de consumo. Su tarea principal es la conversión de imágenes de documentos a texto estructurado, incluyendo OCR de texto impreso y posiblemente manuscrito, con salida en formato conversacional (image-text-to-text). La disponibilidad de cuantizaciones desde Q2_K hasta f16 permite ajustar el equilibrio entre calidad y consumo de memoria según el hardware disponible.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/LibreDeepSeekOCR1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/LibreDeepSeekOCR1-GGUF
 - Modelo base: https://huggingface.co/LibreYOLO/LibreDeepSeekOCR1
 - Página de descargas del autor: https://hf.tst.eu/model#LibreDeepSeekOCR1-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

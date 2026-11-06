@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| pi0-maniskill-stackcube-mixed-30pct-100ep-convex-0.4 (este) | 3,5 mil millones | no disponible | Apache 2.0 | HuggingFace (LeRobot) | Ajuste fino sobre StackCube |
+| pi0-maniskill-stackcube-mixed-30pct-100ep-convex-0.4 (este) | 3,5 mil millones | no disponible | Apache 2.0 | Hugging Face (LeRobot) | Ajuste fino sobre StackCube |
 | π₀ (Pi0) original, Physical Intelligence | no disponible en la informacion | no disponible | no disponible (consultar OpenPI) | Repositorio OpenPI | Politica VLA generalista de referencia |
 | OpenVLA | no disponible en la informacion | no disponible | no disponible | no disponible | Alternativa VLA de codigo abierto |
 | ACT (policy por defecto de LeRobot) | no disponible en la informacion | no disponible | no disponible | LeRobot | Politica de imitacion usada como linea base en los ejemplos de entrenamiento |
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-100ep-convex-0.4
+- Hugging Face: https://huggingface.co/ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-100ep-convex-0.4
 - Blog de π₀ de Physical Intelligence: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi (referenciado en la model card como "OpenPI repository")
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

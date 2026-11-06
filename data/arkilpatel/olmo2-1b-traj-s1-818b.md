@@ -50,18 +50,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al ser un modelo de 1B de parámetros en bf16, el tamaño en memoria es de aproximadamente 2 GB (1B × 2 bytes). Esto permite ejecutarlo en GPUs de consumo con al menos 4 GB de VRAM, como una NVIDIA GTX 1650 Super, RTX 3060 o superiores.
 - Para inferencia con lotes grandes o mayor velocidad, se recomienda una GPU con al menos 8 GB de VRAM, como una RTX 3070/3080 o una A10.
 - No se dispone de datos de latencia o throughput específicos para estos checkpoints.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, se puede cargar con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no se ha verificado la compatibilidad con estas herramientas.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, se puede cargar con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no se ha verificado la compatibilidad con estas herramientas.
 - Dado que son checkpoints intermedios de RL, no se recomienda su uso en producción; el hardware necesario es el mismo que para el modelo base OLMo-2-1B.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa rigurosa. Los checkpoints son intermedios y no tienen evaluaciones publicadas. Como referencia, se puede comparar con el modelo base OLMo-2-1B (disponible en HuggingFace como `allenai/OLMo-2-0425-1B`) y con otros modelos de 1B como Qwen2.5-1.5B o Gemma-2-2B, pero no hay datos de rendimiento de estos checkpoints para establecer una comparación cuantitativa.
+No se dispone de información suficiente para una comparativa rigurosa. Los checkpoints son intermedios y no tienen evaluaciones publicadas. Como referencia, se puede comparar con el modelo base OLMo-2-1B (disponible en Hugging Face como `allenai/OLMo-2-0425-1B`) y con otros modelos de 1B como Qwen2.5-1.5B o Gemma-2-2B, pero no hay datos de rendimiento de estos checkpoints para establecer una comparación cuantitativa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-2-1B (base) | 1B | no disponible | Apache 2.0 | HuggingFace |
-| Estos checkpoints RL | 1B | no disponible | Apache 2.0 | HuggingFace (repositorio de arkilpatel) |
-| Qwen2.5-1.5B | 1.5B | 32K | Apache 2.0 | HuggingFace |
+| OLMo-2-1B (base) | 1B | no disponible | Apache 2.0 | Hugging Face |
+| Estos checkpoints RL | 1B | no disponible | Apache 2.0 | Hugging Face (repositorio de arkilpatel) |
+| Qwen2.5-1.5B | 1.5B | 32K | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,8 +75,8 @@ No se dispone de información suficiente para una comparativa rigurosa. Los chec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-818b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-818b
 - Repositorio oficial OLMo (GitHub): https://github.com/allenai/OLMo
 - Página de OLMo en AI2: https://allenai.org/olmo
 - Página de OLMo 2 en AI2: https://allenai.org/olmo2
-- Modelo base OLMo-2-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

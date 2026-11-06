@@ -4,7 +4,7 @@
 
 Wuli Qwen-Image-2.1 Turbo es una derivación «few-step» del modelo de difusión Qwen-Image-2.1 de Alibaba Qwen, publicada por el usuario Wuli-art. Su objetivo es reducir el número de pasos de muestreo necesarios para generar o editar imágenes: frente a los 40 pasos que emplea el modelo base, esta versión está destilada para producir resultados en 2, 4 u 8 pasos, manteniendo la misma arquitectura y pesos de partida. Se distribuye en tres precisiones (BF16, FP8 e INT8) y añade soporte de salida con canal alfa (RGBA), lo que la orienta a flujos de trabajo de diseño gráfico y a despliegues con VRAM ajustada.
 
-El pipeline declarado en HuggingFace es `image-text-to-image`, es decir, cubre tanto la generación texto-a-imagen como la edición de imágenes guiada por instrucciones textuales. El modelo se integra con la librería `diffusers` y con ComfyUI a través de un repositorio propio de nodos. Solo declara soporte de prompts en inglés y chino, coherente con el modelo base.
+El pipeline declarado en Hugging Face es `image-text-to-image`, es decir, cubre tanto la generación texto-a-imagen como la edición de imágenes guiada por instrucciones textuales. El modelo se integra con la librería `diffusers` y con ComfyUI a través de un repositorio propio de nodos. Solo declara soporte de prompts en inglés y chino, coherente con el modelo base.
 
 La relevancia práctica está en el coste de inferencia: pasar de decenas de pasos a 2-8 pasos multiplica el throughput por unidad de GPU, lo que hace viable la generación de imágenes en producción interactiva o por lotes. No obstante, el repositorio (86,2 GB, con las tres precisiones) no incluye parámetros declarados ni resultados numéricos de benchmarks, y la licencia `qwen-research` condiciona el uso comercial.
 
@@ -93,9 +93,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wuli-art/Qwen-Image-2.1-Turbo
+- Hugging Face: https://huggingface.co/Wuli-art/Qwen-Image-2.1-Turbo
 - ModelScope: https://www.modelscope.cn/models/Wuli-Art/Qwen-Image-2.1-Turbo
 - Repositorio ComfyUI: https://github.com/wuli-art/Qwen-Image-2.1-Turbo-ComfyUI
 - Pagina de comparaciones visuales: https://cdn.wuli.art/image/qwen-image21-turbo/comparison/index.html
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
-- Licencia: fichero LICENSE del repositorio de HuggingFace (no se proporciona URL directa)
+- Licencia: fichero LICENSE del repositorio de Hugging Face (no se proporciona URL directa)

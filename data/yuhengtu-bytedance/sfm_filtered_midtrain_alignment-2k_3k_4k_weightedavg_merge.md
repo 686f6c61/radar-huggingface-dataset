@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_weightedavg_merge)
+- [Hugging Face - yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_weightedavg_merge)
 - [Modelo relacionado: sfm-filtered-midtrain-alignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-midtrain-alignment-4k-5k-6k-avg)
 - [Discusiones del modelo merge (sin weightedavg)](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge/discussions)
 - [FriendliAI - página de despliegue del modelo merge](https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge)

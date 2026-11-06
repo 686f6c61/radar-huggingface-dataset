@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables de otros desarrolladores
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/shixin-labs/ERNIE-4.5-0.3B-Base-GGUF
+- Hugging Face (esta conversión): https://huggingface.co/shixin-labs/ERNIE-4.5-0.3B-Base-GGUF
 - Modelo base: https://huggingface.co/baidu/ERNIE-4.5-0.3B-Base-PT
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp (referencia del runtime; no incluida explícitamente en la información proporcionada)

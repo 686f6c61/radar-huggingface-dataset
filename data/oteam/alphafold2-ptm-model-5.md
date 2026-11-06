@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / MSA | Confianza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/alphafold2-ptm-model-5 | 92,96 M | MSA 256, pares 128, 4 reciclados | pLDDT, PAE, pTM | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2 | 93,283 M (variante Monomer) | MSA 256, pares 128, 4 reciclados | pLDDT | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2-multimer | 93,278 M | MSA 256, pares 128, 21 reciclados | pLDDT, PAE, pTM | AGPL-3.0 | HuggingFace (ofoldx) |
+| oteam/alphafold2-ptm-model-5 | 92,96 M | MSA 256, pares 128, 4 reciclados | pLDDT, PAE, pTM | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2 | 93,283 M (variante Monomer) | MSA 256, pares 128, 4 reciclados | pLDDT | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2-multimer | 93,278 M | MSA 256, pares 128, 21 reciclados | pLDDT, PAE, pTM | AGPL-3.0 | Hugging Face (ofoldx) |
 | AlphaFold 2 oficial (google-deepmind) | no disponible en la información | no disponible | pLDDT, PAE, pTM | licencia oficial de DeepMind | GitHub oficial |
 
 Las variantes de OFoldX comparten arquitectura y difieren en la cabecera de confianza y en el número de reciclados; la variante multimer incorpora MSAs emparejados y 21 pasos de reciclado. No se dispone de datos de rendimiento comparativo entre ellas en la información proporcionada.
@@ -93,7 +93,7 @@ Las variantes de OFoldX comparten arquitectura y difieren en la cabecera de conf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/alphafold2-ptm-model-5
+- Modelo en Hugging Face: https://huggingface.co/oteam/alphafold2-ptm-model-5
 - Variante monomérica: https://huggingface.co/oteam/alphafold2
 - Variante con PAE y pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer

@@ -77,9 +77,9 @@ La comparación disponible es interna al proyecto y no incluye cifras de paráme
 
 | Modelo | Enfoque | Parámetros | @0,1d (real) | Correlación con diámetro (real) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nikhil-Ravi/dlrv-mvcnn-v12 | MVCNN multi-vista (ResNet-18) | 11.383.512 | 56,33 % | r = +0,21 | no disponible | HuggingFace |
-| jan024/dlrv-pointnet-exp5 | PointNet++ sobre nube de puntos | no disponible (la rama de nube de puntos se cita con 0,86 M en la model card) | 36,23 % | no disponible | no disponible | HuggingFace |
-| jan024/dlrv-ppointnet-exp6 | PointNet++ sobre nube de puntos | no disponible (rama citada con 0,86 M) | no disponible en esta model card | no disponible | no disponible | HuggingFace |
+| Nikhil-Ravi/dlrv-mvcnn-v12 | MVCNN multi-vista (ResNet-18) | 11.383.512 | 56,33 % | r = +0,21 | no disponible | Hugging Face |
+| jan024/dlrv-pointnet-exp5 | PointNet++ sobre nube de puntos | no disponible (la rama de nube de puntos se cita con 0,86 M en la model card) | 36,23 % | no disponible | no disponible | Hugging Face |
+| jan024/dlrv-ppointnet-exp6 | PointNet++ sobre nube de puntos | no disponible (rama citada con 0,86 M) | no disponible en esta model card | no disponible | no disponible | Hugging Face |
 
 Advertencia de comparación: el propio autor señala que el modelo multi-vista, con 11,4 M de parámetros y preentrenamiento en ImageNet, no está igualado en presupuesto con el pipeline de nube de puntos de 0,86 M, y que el informe separa estos factores de confusión de la comparación de representaciones. No se dispone de datos de licencia, contexto ni benchmarks externos de las alternativas.
 
@@ -92,13 +92,13 @@ Advertencia de comparación: el propio autor señala que el modelo multi-vista, 
 - La evaluación submuestrea los vértices CAD sin semilla fija, de modo que las cifras por objeto varían unos pocos puntos entre ejecuciones; las cifras agregadas son estables hasta la precisión publicada.
 - Licencia no disponible: no se puede confirmar el uso comercial sin consultar al autor.
 - No hay datos de sesgo, idioma ni robustez fuera de LineMOD; el modelo está acotado a los quince objetos de LineMOD y no es un modelo general.
-- El repositorio de HuggingFace figura con 0,0 GB de tamaño, 0 descargas y 0 likes, por lo que conviene verificar que el checkpoint y el código del proyecto estén realmente accesibles antes de planificar una integración.
+- El repositorio de Hugging Face figura con 0,0 GB de tamaño, 0 descargas y 0 likes, por lo que conviene verificar que el checkpoint y el código del proyecto estén realmente accesibles antes de planificar una integración.
 - El modelo depende de código propio del proyecto para definir la arquitectura y el renderizado; no es cargable de forma autónoma con librerías estándar.
 - Para producción en tiempo real no hay mediciones publicadas de latencia ni de throughput, lo que impide validar requisitos de ciclo de control sin medirlo previamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhil-Ravi/dlrv-mvcnn-v12
+- Modelo en Hugging Face: https://huggingface.co/Nikhil-Ravi/dlrv-mvcnn-v12
 - Rama de nube de puntos del mismo proyecto: https://huggingface.co/jan024/dlrv-pointnet-exp5
 - Segunda variante de nube de puntos: https://huggingface.co/jan024/dlrv-ppointnet-exp6
 - Dataset LineMOD en formato BOP (requerido para reproducir la evaluación): https://bop.felk.cvut.cz/datasets/

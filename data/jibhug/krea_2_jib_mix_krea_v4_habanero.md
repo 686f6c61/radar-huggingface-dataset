@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jibhug/Krea_2_Jib_Mix_Krea_v4_Habanero` es un checkpoint de Krea 2, un modelo de difusión de imágenes desarrollado por el usuario jibhug. Se trata de una mezcla (mix) que ajusta el modelo base Krea 2 para mejorar ciertos aspectos visuales, como los detalles finos y la representación de la piel, según la descripción del autor para la versión v4.0. El modelo se publica bajo la licencia `krea-2-community-license` y está disponible en HuggingFace, aunque su ficha técnica es mínima y no incluye información sobre arquitectura, parámetros ni proceso de entrenamiento.
+El modelo `jibhug/Krea_2_Jib_Mix_Krea_v4_Habanero` es un checkpoint de Krea 2, un modelo de difusión de imágenes desarrollado por el usuario jibhug. Se trata de una mezcla (mix) que ajusta el modelo base Krea 2 para mejorar ciertos aspectos visuales, como los detalles finos y la representación de la piel, según la descripción del autor para la versión v4.0. El modelo se publica bajo la licencia `krea-2-community-license` y está disponible en Hugging Face, aunque su ficha técnica es mínima y no incluye información sobre arquitectura, parámetros ni proceso de entrenamiento.
 
 La relevancia de este modelo radica en que ofrece una alternativa de fine-tune para usuarios de Krea 2 que buscan un estilo concreto o mejoras estéticas. Sin embargo, la falta de documentación técnica y de benchmarks publicados limita su evaluación rigurosa. El autor también ha publicado versiones anteriores, como la v1.0 Jalapeño, que según la búsqueda web mejora las capacidades NSFW de Krea, lo que sugiere que este tipo de checkpoints se orienta a un uso creativo y posiblemente para contenido para adultos.
 
@@ -62,14 +62,14 @@ No disponible. No se dispone de información suficiente sobre el modelo base Kre
 - No hay documentación técnica detallada sobre la arquitectura, el entrenamiento o las capacidades del modelo.
 - La licencia `krea-2-community-license` es una licencia comunitaria y puede imponer restricciones para el uso comercial; se recomienda revisar el texto completo de la licencia antes de cualquier despliegue.
 - El autor menciona mejoras en capacidades NSFW en versiones anteriores, lo que implica que el modelo puede generar contenido para adultos. Debe verificarse el cumplimiento legal y de las políticas de la plataforma antes de su uso.
-- El registro en HuggingFace muestra 0 descargas y 0 likes, lo que indica que el modelo es nuevo o tiene una adopción muy limitada.
+- El registro en Hugging Face muestra 0 descargas y 0 likes, lo que indica que el modelo es nuevo o tiene una adopción muy limitada.
 - La fecha de creación en los metadatos es 2026-09-08, una fecha futura que puede ser un error en los metadatos.
 - No se han publicado benchmarks, por lo que no es posible evaluar el rendimiento del modelo de forma objetiva.
 - Pueden existir sesgos o artefactos visuales no documentados, especialmente en un modelo de fine-tune sin información sobre los datos de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jibhug/Krea_2_Jib_Mix_Krea_v4_Habanero
+- Hugging Face: https://huggingface.co/jibhug/Krea_2_Jib_Mix_Krea_v4_Habanero
 - Civitai (v4.0 Habanero): https://civitai.com/models/2799984/jib-mix-krea-2
 - Civitai (v1.0 Jalapeño): https://civitai.red/models/2756888/jib-mix-krea?modelVersionId=3102188
 - Licencia: https://cdn.jsdelivr.net/gh/krea-ai/krea-2@db3984fbc6e13b34c0064990fc2d95ac64d00058/assets/hf_samples/LICENSE.pdf

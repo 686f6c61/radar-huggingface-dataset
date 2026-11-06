@@ -101,12 +101,12 @@ La comparación cuantitativa no puede completarse con la información suministra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/citrinet-1024-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/citrinet-1024-loom
 - Modelo base: https://huggingface.co/nvidia/stt_en_citrinet_1024_gamma_0_25
 - Motor de inferencia loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Cliente y API loom-py: https://github.com/loom-ai-org/loom-py
 - Exportador loom-exporter: https://github.com/loom-ai-org/loom-exporter
 - Paquete en PyPI: `loom-py-rt` (instalación mediante `pip install -U "loom-py-rt[hub]"`)
-- Archivo de pesos: `citrinet-1024.gguf` dentro del repositorio de HuggingFace
+- Archivo de pesos: `citrinet-1024.gguf` dentro del repositorio de Hugging Face
 
 Nota: los resultados de la búsqueda web realizada no contienen enlaces relevantes para este modelo; devuelven páginas de la herramienta de grabación de pantalla Loom y de una marca de ropa homónima, sin relación con loom-ai-org, loom.cpp ni con el modelo Citrinet.

@@ -85,6 +85,6 @@ No se proporcionan comparaciones con modelos conocidos de la misma categoría (p
 
 ## Enlaces
 
-- [HuggingFace - MyAwesomeModel](https://huggingface.co/ASD21321312SAD12/MyAwesomeModel)
-- [HuggingFace - MyAwesomeModel-best-checkpoint](https://huggingface.co/ASD21321312SAD12/MyAwesomeModel-best-checkpoint)
-- [HuggingFace - MyAwesomeModel-TestRepo](https://huggingface.co/ASD21321312SAD12/MyAwesomeModel-TestRepo)
+- [Hugging Face - MyAwesomeModel](https://huggingface.co/ASD21321312SAD12/MyAwesomeModel)
+- [Hugging Face - MyAwesomeModel-best-checkpoint](https://huggingface.co/ASD21321312SAD12/MyAwesomeModel-best-checkpoint)
+- [Hugging Face - MyAwesomeModel-TestRepo](https://huggingface.co/ASD21321312SAD12/MyAwesomeModel-TestRepo)

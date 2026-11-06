@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yiyamamoto/contrastive15` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. El autor es `yiyamamoto` y el artefacto principal no es un modelo entrenado, sino un *checkpoint de inicialización* empaquetado junto con el código Python (`predict.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`). El propósito declarado es servir como punto de partida reproducible para experimentos de representación visual contrastiva.
+`yiyamamoto/contrastive15` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. El autor es `yiyamamoto` y el artefacto principal no es un modelo entrenado, sino un *checkpoint de inicialización* empaquetado junto con el código Python (`predict.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`). El propósito declarado es servir como punto de partida reproducible para experimentos de representación visual contrastiva.
 
 La relevancia de este repositorio es limitada y de naturaleza metodológica: no se presentan resultados de benchmarks, no se ha entrenado el checkpoint y no existe una model card con métricas. Cualquier evaluación seria requiere entrenar el modelo desde cero con un conjunto de datos propio y compararlo contra baselines de capacidad equivalente bajo el mismo presupuesto de cómputo y semillas.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yiyamamoto/contrastive15` | 49.600 (declarado "huge") | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, 0 descargas |
-| ViT-H/14 (referencia, p. ej. `google/vit-huge-patch14-224-in21k`) | ~632 M | imágenes 224×224 | benchmarks públicos en ImageNet | Apache-2.0 | HuggingFace, ampliamente usado |
-| CLIP ViT-L/14 (OpenAI) | ~428 M (visual + texto) | imágenes 224×224 | benchmarks públicos zero-shot | MIT (pesos) | HuggingFace, ampliamente usado |
-| DINOv2 ViT-L/14 | ~300 M | imágenes de alta resolución | benchmarks públicos en tareas densas | Apache-2.0 (código) / licencia propia (pesos) | HuggingFace |
+| `yiyamamoto/contrastive15` | 49.600 (declarado "huge") | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, 0 descargas |
+| ViT-H/14 (referencia, p. ej. `google/vit-huge-patch14-224-in21k`) | ~632 M | imágenes 224×224 | benchmarks públicos en ImageNet | Apache-2.0 | Hugging Face, ampliamente usado |
+| CLIP ViT-L/14 (OpenAI) | ~428 M (visual + texto) | imágenes 224×224 | benchmarks públicos zero-shot | MIT (pesos) | Hugging Face, ampliamente usado |
+| DINOv2 ViT-L/14 | ~300 M | imágenes de alta resolución | benchmarks públicos en tareas densas | Apache-2.0 (código) / licencia propia (pesos) | Hugging Face |
 
 La comparación es asimétrica: los tres modelos de referencia son checkpoints entrenados y evaluados, mientras que `contrastive15` es un esqueleto sin entrenamiento.
 
@@ -83,6 +83,6 @@ La comparación es asimétrica: los tres modelos de referencia son checkpoints e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yiyamamoto/contrastive15
+- Hugging Face: https://huggingface.co/yiyamamoto/contrastive15
 - Ficheros incluidos en el repo: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

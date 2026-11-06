@@ -4,7 +4,7 @@
 
 ## Resumen
 
-SeanZheng/sz-arc-02 es un checkpoint de investigacion publicado por el usuario SeanZheng en HuggingFace, con un tamano de repositorio de 26,1 GB. La model card del autor indica que se trata de un archivo de checkpoints para continuidad de investigacion personal, con nombres de directorio que son identificadores opacos. No se proporciona informacion sobre la arquitectura, los parametros, el entrenamiento o las capacidades del modelo.
+SeanZheng/sz-arc-02 es un checkpoint de investigacion publicado por el usuario SeanZheng en Hugging Face, con un tamano de repositorio de 26,1 GB. La model card del autor indica que se trata de un archivo de checkpoints para continuidad de investigacion personal, con nombres de directorio que son identificadores opacos. No se proporciona informacion sobre la arquitectura, los parametros, el entrenamiento o las capacidades del modelo.
 
 La publicacion esta fechada el 19 de agosto de 2026, con una actualizacion al dia siguiente. El repositorio no registra descargas ni valoraciones, y la licencia indicada es "other" (otra), sin especificar los terminos concretos. El modelo parece estar orientado a uso de investigacion y no a despliegue en produccion, dado el caracter minimalista de su documentacion.
 
@@ -62,7 +62,7 @@ No se puede establecer una comparativa con modelos alternativos, ya no se conoce
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SeanZheng/sz-arc-02
+- Repositorio Hugging Face: https://huggingface.co/SeanZheng/sz-arc-02
 - Perfil del autor: https://huggingface.co/SeanZheng
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo.

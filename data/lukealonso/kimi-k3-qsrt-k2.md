@@ -70,7 +70,7 @@ No disponible. No se han encontrado cuantizaciones comparables de Kimi K3 ni de 
 
 ## Enlaces
 
-- [HuggingFace: lukealonso/Kimi-K3-QSRT-K2](https://huggingface.co/lukealonso/Kimi-K3-QSRT-K2)
+- [Hugging Face: lukealonso/Kimi-K3-QSRT-K2](https://huggingface.co/lukealonso/Kimi-K3-QSRT-K2)
 - [vLLM modificado (rama dev/infernal-invocation)](https://github.com/local-inference-lab/vllm/tree/dev/infernal-invocation)
 - [Proyecto b12x (kernels especiales)](https://github.com/local-inference-lab/b12x)
 - [Documentación del codec QSRT 2bpw](https://github.com/local-inference-lab/qsrt/blob/master/docs/qsrt-2bpw-codec.md)

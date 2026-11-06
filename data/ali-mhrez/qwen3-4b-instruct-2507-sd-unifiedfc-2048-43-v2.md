@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43-v2` es un ajuste fino supervisado (SFT) del modelo `unsloth/Qwen3-4B-Instruct-2507`, publicado por el usuario Ali-Mhrez en HuggingFace. El entrenamiento se ha realizado con TRL 0.24.0 sobre la infraestructura de Unsloth, y el repositorio se distribuye en formato safetensors con la librería `transformers`. Se trata, por tanto, de un derivado de un modelo denso de unos 4.000 millones de parámetros, no de un modelo nuevo entrenado desde cero.
+`Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43-v2` es un ajuste fino supervisado (SFT) del modelo `unsloth/Qwen3-4B-Instruct-2507`, publicado por el usuario Ali-Mhrez en Hugging Face. El entrenamiento se ha realizado con TRL 0.24.0 sobre la infraestructura de Unsloth, y el repositorio se distribuye en formato safetensors con la librería `transformers`. Se trata, por tanto, de un derivado de un modelo denso de unos 4.000 millones de parámetros, no de un modelo nuevo entrenado desde cero.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio no incluye model card sustantiva (la sección de procedimiento de entrenamiento está vacía), no declara licencia efectiva, no documenta idiomas, dataset, hiperparámetros ni resultados de evaluación, y acumula 0 descargas y 0 likes en el momento de la consulta. El nombre del modelo sugiere una especialización en *function calling* unificado y una ventana de 2.048 tokens (`UnifiedFC-2048`), pero esa interpretación no está confirmada en ninguna parte de la documentación publicada.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (modelo de 4B denso, cálculos aproximados): ~8-9 GB en bfloat16 (solo pesos) más KV cache; ~4-5 GB en int8; ~2,5-3 GB en cuantización de 4 bits.
 - GPU recomendadas: A100 40 GB, H100, L40S o A10G para servicio concurrente con contexto largo; RTX 4090 / 3090 (24 GB) para inferencia en bf16 con margen.
 - GPU de consumo: sí, cabe en RTX 4060 Ti 16 GB, RTX 4070 12 GB y RTX 3060 12 GB en cuantización de 8 o 4 bits; en 6-8 GB solo con cuantización agresiva y contextos cortos.
-- Opciones de despliegue: vLLM o TGI para servir en bf16 con batching continuo; llama.cpp/Ollama si se genera un GGUF a partir de los pesos (no publicado); `transformers` + `pipeline` para pruebas, tal y como muestra la model card; compatible con HuggingFace Inference Endpoints según el tag `endpoints_compatible`.
+- Opciones de despliegue: vLLM o TGI para servir en bf16 con batching continuo; llama.cpp/Ollama si se genera un GGUF a partir de los pesos (no publicado); `transformers` + `pipeline` para pruebas, tal y como muestra la model card; compatible con Hugging Face Inference Endpoints según el tag `endpoints_compatible`.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas y el tamano real del artefacto (0,2 GB) impide estimarlas con fiabilidad hasta confirmar si son pesos completos o adaptadores.
 - Advertencia: antes de planificar hardware hay que verificar el contenido del repositorio; si se trata de un adaptador LoRA, será necesario cargar también el modelo base y la VRAM total será la suma de ambos.
 
@@ -69,11 +69,11 @@ Los datos de las alternativas provienen de sus fichas públicas y deben verifica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43-v2 | ~4B (heredado) | no disponible (base: 262.144) | no disponible | HuggingFace, 0 descargas | Ajuste SFT sin evaluación publicada |
-| unsloth/Qwen3-4B-Instruct-2507 | ~4B | 262.144 | Apache 2.0 | HuggingFace, muy difundido | Modelo base; incluye cuantizaciones dinámicas 4-bit |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 | Apache 2.0 | HuggingFace y ModelScope | Referencia oficial de la familia |
-| Llama-3.2-3B-Instruct | ~3B | 128.000 | Licencia de comunidad Llama 3.2 | HuggingFace | Alternativa de tamano similar con licencia con cláusulas de uso aceptable |
-| Gemma-3-4B-IT | ~4B | 128.000 | Licencia Gemma | HuggingFace | Alternativa multimodal de Google con términos de uso propios |
+| Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43-v2 | ~4B (heredado) | no disponible (base: 262.144) | no disponible | Hugging Face, 0 descargas | Ajuste SFT sin evaluación publicada |
+| unsloth/Qwen3-4B-Instruct-2507 | ~4B | 262.144 | Apache 2.0 | Hugging Face, muy difundido | Modelo base; incluye cuantizaciones dinámicas 4-bit |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | 262.144 | Apache 2.0 | Hugging Face y ModelScope | Referencia oficial de la familia |
+| Llama-3.2-3B-Instruct | ~3B | 128.000 | Licencia de comunidad Llama 3.2 | Hugging Face | Alternativa de tamano similar con licencia con cláusulas de uso aceptable |
+| Gemma-3-4B-IT | ~4B | 128.000 | Licencia Gemma | Hugging Face | Alternativa multimodal de Google con términos de uso propios |
 
 Frente a cualquiera de ellas, este ajuste no aporta métricas que justifiquen preferirlo; su elección solo tiene sentido si se valida empíricamente la especialización que sugiere el nombre.
 
@@ -91,7 +91,7 @@ Frente a cualquiera de ellas, este ajuste no aporta métricas que justifiquen pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-2048-43-v2
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: no disponible en la información proporcionada

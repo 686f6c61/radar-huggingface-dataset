@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DSAD12E1/my-awesome-model es un repositorio publicado en HuggingFace por el usuario DSAD12E1 el 7 de octubre de 2026 y actualizado unos 15 minutos despues. La metadata de la plataforma lo etiqueta con las etiquetas transformers, pytorch, bert, feature-extraction, endpoints_compatible y region:us, y declara licencia MIT. Registra 0 descargas y 0 likes, y el tamano del repositorio es de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo descargables en el momento de la consulta.
+DSAD12E1/my-awesome-model es un repositorio publicado en Hugging Face por el usuario DSAD12E1 el 7 de octubre de 2026 y actualizado unos 15 minutos despues. La metadata de la plataforma lo etiqueta con las etiquetas transformers, pytorch, bert, feature-extraction, endpoints_compatible y region:us, y declara licencia MIT. Registra 0 descargas y 0 likes, y el tamano del repositorio es de 0.0 GB, lo que indica que no contiene pesos ni ficheros de modelo descargables en el momento de la consulta.
 
 La model card no describe un modelo concreto: es una plantilla sin editar en la que el nombre del modelo aparece como "MyAwesomeModel" y los sistemas comparados en la tabla de evaluacion se denominan "Model1", "Model2" y "Model1-v2". El texto afirma una mejora de razonamiento con un incremento de precision en AIME 2025 del 70 % al 87,5 %, un aumento del consumo medio de tokens por pregunta de 12K a 23K, soporte de function calling y reduccion de alucinaciones, pero no identifica arquitectura, numero de parametros, contexto, tokenizador ni metodologia de evaluacion. La seccion de ejecucion local remite a un repositorio de codigo externo que no se enlaza.
 
@@ -119,7 +119,7 @@ No disponible. No es posible identificar modelos comparables porque el propio ar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DSAD12E1/my-awesome-model
+- Repositorio en Hugging Face: https://huggingface.co/DSAD12E1/my-awesome-model
 - Paper: no disponible
 - Repositorio de codigo: referenciado en la model card como "our code repository", sin URL
 - Demo o plataforma de chat: referenciada en la model card como "our official website", sin URL

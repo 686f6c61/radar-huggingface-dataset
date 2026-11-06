@@ -94,7 +94,7 @@ La diferencia principal frente a los proyectos upstream es el empaquetado: Model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alegauss/modelado-models
+- Repositorio en Hugging Face: https://huggingface.co/alegauss/modelado-models
 - Proyecto Modelado en GitHub: https://github.com/alegauss/modelado
 - TripoSR: https://huggingface.co/stabilityai/TripoSR
 - Depth Anything V2 Small: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf

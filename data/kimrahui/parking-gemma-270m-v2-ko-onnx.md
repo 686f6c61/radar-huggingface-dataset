@@ -2,7 +2,7 @@
 
 ## Resumen
 
-parking-gemma-270m-v2-ko-onnx es un ajuste fino (LoRA) del modelo Gemma 3 270M (versión instruction-tuned de Google) especializado en una tarea muy concreta: extraer condiciones de búsqueda de aparcamiento en formato JSON a partir de preguntas de conductores en coreano. Ha sido desarrollado por el usuario kimrahui y publicado en HuggingFace en formato ONNX fp16, listo para ejecutarse en el navegador mediante transformers.js.
+parking-gemma-270m-v2-ko-onnx es un ajuste fino (LoRA) del modelo Gemma 3 270M (versión instruction-tuned de Google) especializado en una tarea muy concreta: extraer condiciones de búsqueda de aparcamiento en formato JSON a partir de preguntas de conductores en coreano. Ha sido desarrollado por el usuario kimrahui y publicado en Hugging Face en formato ONNX fp16, listo para ejecutarse en el navegador mediante transformers.js.
 
 El problema que resuelve es la interpretación estructurada de consultas de voz o texto sobre aparcamientos: dado un enunciado en coreano del tipo "busco un parking cubierto cerca de X", el modelo devuelve un objeto JSON con los criterios de búsqueda extraídos. Es un caso típico de destilación de una tarea de NLU a un modelo diminuto que puede ejecutarse localmente sin servidor.
 
@@ -78,6 +78,6 @@ Frente a su modelo base, esta variante sacrifica cobertura de vocabulario multil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimrahui/parking-gemma-270m-v2-ko-onnx
+- Modelo en Hugging Face: https://huggingface.co/kimrahui/parking-gemma-270m-v2-ko-onnx
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

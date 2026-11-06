@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft_gemma2_2b_vocabdrop_a080` es un ajuste fino supervisado (SFT) publicado por el usuario KexuanShi en HuggingFace. El nombre del repositorio indica que parte de Gemma 2 2B, el modelo denso de 2,6 mil millones de parametros de la familia Gemma 2 de Google DeepMind, aunque la model card no declara explicitamente el modelo base (aparece como "None" en el campo correspondiente). El entrenamiento se ha realizado con la libreria TRL de HuggingFace en su flujo de SFT, y el checkpoint resultante tiene 2.614.341.888 parametros en formato safetensors.
+`sft_gemma2_2b_vocabdrop_a080` es un ajuste fino supervisado (SFT) publicado por el usuario KexuanShi en Hugging Face. El nombre del repositorio indica que parte de Gemma 2 2B, el modelo denso de 2,6 mil millones de parametros de la familia Gemma 2 de Google DeepMind, aunque la model card no declara explicitamente el modelo base (aparece como "None" en el campo correspondiente). El entrenamiento se ha realizado con la libreria TRL de Hugging Face en su flujo de SFT, y el checkpoint resultante tiene 2.614.341.888 parametros en formato safetensors.
 
 El sufijo `vocabdrop_a080` sugiere una modificacion del vocabulario del tokenizador, presumiblemente una reduccion o "drop" del mismo con un factor asociado a `a080`. Sin embargo, el conteo de parametros coincide exactamente con el de Gemma 2 2B oficial (2.614.341.888), lo que apunta a que la supuesta reduccion de vocabulario no ha alterado el tamano del checkpoint o no se ha aplicado de forma efectiva. Esta discrepancia no se aclara en la informacion disponible.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la unica informacion disponible es la declaracion de
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible. Gemma 2 oficial soporta principalmente ingles y tiene cobertura limitada de otros idiomas.
 - Capacidades especiales (vision, audio, modo thinking): no disponible. Gemma 2 2B es un modelo unicamente de texto.
-- Compatibilidad de despliegue: las etiquetas incluyen `text-generation-inference`, `endpoints_compatible` y `transformers`, lo que indica que el checkpoint es cargable con las herramientas estandar de HuggingFace.
+- Compatibilidad de despliegue: las etiquetas incluyen `text-generation-inference`, `endpoints_compatible` y `transformers`, lo que indica que el checkpoint es cargable con las herramientas estandar de Hugging Face.
 
 ## Casos de uso
 
@@ -63,14 +63,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia, segun precision: bf16/fp16 aproximadamente 5,2-6 GB solo de pesos; int8 aproximadamente 2,8 GB; cuantizacion de 4 bits aproximadamente 1,6-2 GB. Hay que sumar la cache KV, que crece con la longitud de contexto.
 - GPU recomendadas: A100 40 GB, H100 80 GB o L40S para servicio con lotes grandes; RTX 4090 24 GB para bf16 con contexto largo y lotes moderados; RTX 3090 24 GB como alternativa.
 - Caben en GPU de consumo: si. En bf16 con contexto corto cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores. En cuantizacion de 4 bits cabe en GPUs de 6-8 GB y en equipos con memoria unificada.
-- Opciones de despliegue: transformers (via `pipeline`), Text Generation Inference (la etiqueta `text-generation-inference` y `endpoints_compatible` lo indican), vLLM, SGLang, llama.cpp u Ollama previa conversion a GGUF, y HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (via `pipeline`), Text Generation Inference (la etiqueta `text-generation-inference` y `endpoints_compatible` lo indican), vLLM, SGLang, llama.cpp u Ollama previa conversion a GGUF, y Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `sft_gemma2_2b_vocabdrop_a080` | 2,61 B | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT sin documentar ni evaluar |
+| `sft_gemma2_2b_vocabdrop_a080` | 2,61 B | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT sin documentar ni evaluar |
 | Gemma 2 2B (Google) | 2,61 B | 8192 tokens | Gemma Terms of Use | Ampliamente disponible | Modelo base de referencia, con evaluaciones publicas |
 | Qwen2.5 1.5B / 3B | 1,54 B / 3,09 B | 32.768 tokens | Apache 2.0 (segun variante) | Ampliamente disponible | Contexto mayor y licencia permisiva en varias variantes |
 | Llama 3.2 1B / 3B Instruct | 1,24 B / 3,21 B | 131.072 tokens | Llama 3.2 Community License | Ampliamente disponible | Contexto muy superior; requiere aceptar la licencia |
@@ -92,7 +92,7 @@ La comparacion cuantitativa de rendimiento no es posible porque este checkpoint 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a080
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a080
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Documentacion de Gemma 2 (familia del modelo base presumible): https://ai.google.dev/gemma/docs
 

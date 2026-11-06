@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de calidad que permitan comparar el rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Qwen3-0.6B
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE
 - Paper de Qwen3 (referencia arXiv en metadatos): https://arxiv.org/abs/2505.09388

@@ -96,10 +96,10 @@ No se dispone de datos verificados sobre los modelos alternativos en la informac
 
 | Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ilovemugi/mugi-decision | Decodificador híbrido con cabeza escalar de decisión (no generativo) | 752M | No disponible (límite de entrenamiento de 1024 tokens por rama) | zh, en | Apache 2.0 | HuggingFace con código de arquitectura personalizado |
-| Qwen/Qwen3.5-0.8B | Modelo base multimodal generativo del que deriva | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Rerankers de propósito general (por ejemplo, familia BGE-reranker o Qwen3-Reranker) | Cross-encoder de puntuación de pares consulta-documento | No disponible | No disponible | No disponible | No disponible | HuggingFace |
-| Clasificadores de opción múltiple basados en BERT/RoBERTa | Encoder con cabeza de clasificación de dimensión fija | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| ilovemugi/mugi-decision | Decodificador híbrido con cabeza escalar de decisión (no generativo) | 752M | No disponible (límite de entrenamiento de 1024 tokens por rama) | zh, en | Apache 2.0 | Hugging Face con código de arquitectura personalizado |
+| Qwen/Qwen3.5-0.8B | Modelo base multimodal generativo del que deriva | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Rerankers de propósito general (por ejemplo, familia BGE-reranker o Qwen3-Reranker) | Cross-encoder de puntuación de pares consulta-documento | No disponible | No disponible | No disponible | No disponible | Hugging Face |
+| Clasificadores de opción múltiple basados en BERT/RoBERTa | Encoder con cabeza de clasificación de dimensión fija | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 La diferencia funcional relevante frente a un clasificador de opción múltiple convencional es que Mugi Decision no fija la dimensión de la cabeza al número de opciones: puntúa conjuntos de tamaño variable y devuelve una distribución relativa dentro de cada conjunto. Frente a un cross-encoder de reranking, comparte la idea de puntuar candidatos contra un contexto, pero reutiliza el prefijo común con caché explícita y admite listas de opciones serializadas en texto.
 
@@ -120,7 +120,7 @@ La diferencia funcional relevante frente a un clasificador de opción múltiple 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilovemugi/mugi-decision
+- Modelo en Hugging Face: https://huggingface.co/ilovemugi/mugi-decision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Esquema de arquitectura en el repositorio: docs/figures/mugi-decision-architecture.svg (y versión en inglés docs/figures/mugi-decision-architecture.en.svg)
 - Código de arquitectura personalizada: configuration_mugi.py y modeling_mugi.py

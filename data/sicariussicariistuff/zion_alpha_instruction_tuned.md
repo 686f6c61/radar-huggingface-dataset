@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zion_Alpha_Instruction_Tuned es un ajuste fino por instrucciones del modelo base Zion_Alpha, desarrollado por el usuario independiente SicariusSicariiStuff y publicado en HuggingFace en junio de 2024. Se presenta como el primer modelo de lenguaje abierto orientado especificamente al hebreo, y su objetivo declarado es cubrir tareas de generacion de texto y conversacion en hebreo e ingles, un nicho poco atendido por los modelos abiertos mainstream. El modelo parte de Mistral 7B v0.1 sin modificar el tokenizer, lo que lo convierte en una variante afinada sobre una arquitectura densa de transformer decoder-only de 7.241 millones de parametros.
+Zion_Alpha_Instruction_Tuned es un ajuste fino por instrucciones del modelo base Zion_Alpha, desarrollado por el usuario independiente SicariusSicariiStuff y publicado en Hugging Face en junio de 2024. Se presenta como el primer modelo de lenguaje abierto orientado especificamente al hebreo, y su objetivo declarado es cubrir tareas de generacion de texto y conversacion en hebreo e ingles, un nicho poco atendido por los modelos abiertos mainstream. El modelo parte de Mistral 7B v0.1 sin modificar el tokenizer, lo que lo convierte en una variante afinada sobre una arquitectura densa de transformer decoder-only de 7.241 millones de parametros.
 
 El modelo esta pensado para uso conversacional y traduccion bidireccional ingles-hebreo, y su autor reporta un resultado de 84,05 en la tarea SNLI en hebreo, que segun la model card era el mas alto entre modelos abiertos en el momento de su publicacion. No obstante, se trata de un proyecto individual, sin paper asociado ni documentacion tecnica detallada sobre el dataset de ajuste fino, el numero de tokens de entrenamiento o el metodo exacto de alineacion. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -89,7 +89,7 @@ La comparativa muestra que Zion_Alpha compite en un nicho muy concreto (hebreo a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned
 - Modelo base (FP16): https://huggingface.co/SicariusSicariiStuff/Zion_Alpha
 - Version GGUF: https://huggingface.co/SicariusSicariiStuff/Zion_Alpha_Instruction_Tuned_GGUF
 - Imagen del benchmark SNLI: https://huggingface.co/SicariusSicariiStuff/Zion_Alpha/resolve/main/Images/Zion_Alpha.png

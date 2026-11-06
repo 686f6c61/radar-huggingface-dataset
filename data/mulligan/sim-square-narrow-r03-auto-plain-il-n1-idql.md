@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mulligan/sim-square-narrow-r03-auto-plain-il-n1-idql` es un agente de control robótico basado en IDQL (Implicit Q-Learning con actor de difusión), entrenado para la tarea simulada `sim-square-narrow`. No es un modelo de lenguaje: es una política de aprendizaje por refuerzo offline que consume observaciones de estado (no imágenes) y produce acciones de control. Lo publica el usuario `mulligan` dentro del proyecto Mulligan, que mantiene un banco de evaluaciones comparables en Policy Arena y un conjunto de datasets asociados en HuggingFace.
+`mulligan/sim-square-narrow-r03-auto-plain-il-n1-idql` es un agente de control robótico basado en IDQL (Implicit Q-Learning con actor de difusión), entrenado para la tarea simulada `sim-square-narrow`. No es un modelo de lenguaje: es una política de aprendizaje por refuerzo offline que consume observaciones de estado (no imágenes) y produce acciones de control. Lo publica el usuario `mulligan` dentro del proyecto Mulligan, que mantiene un banco de evaluaciones comparables en Policy Arena y un conjunto de datasets asociados en Hugging Face.
 
 El checkpoint corresponde a la ronda R3, brazo `auto-plain-il-n1`, celda de campaña `iterative-IL comparator`. Se distribuyen cinco semillas independientes (seed-1 a seed-5), todas ellas en el paso de entrenamiento 150001, lo que permite estudiar la varianza entre inicializaciones aleatorias de un mismo protocolo de entrenamiento. La evaluación se realizó sobre una rejilla de estados iniciales reservada, con 8000 rollouts por semilla.
 
@@ -85,7 +85,7 @@ No se dispone de cifras publicadas de los brazos alternativos de la misma campa�
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-narrow-r03-auto-plain-il-n1-idql | IDQL (actor de difusion + critico IQL) | no disponible | no aplica | 64,64 % de exito medio (5 semillas, 40000 rollouts) | MIT | HuggingFace, 5 semillas |
+| sim-square-narrow-r03-auto-plain-il-n1-idql | IDQL (actor de difusion + critico IQL) | no disponible | no aplica | 64,64 % de exito medio (5 semillas, 40000 rollouts) | MIT | Hugging Face, 5 semillas |
 | Brazo `auto-bc-n1` de la misma campana | Behavior cloning sobre politica compartida | no disponible | no aplica | no disponible | no disponible | referenciado en los datasets `c01` de Mulligan |
 | Variantes DDPG+BC / IQL mencionadas en los nombres de los artefactos | RL offline con actor deterministico o critico IQL | no disponible | no aplica | no disponible | no disponible | no disponibles como checkpoints publicados |
 
@@ -106,8 +106,8 @@ Tampoco se han identificado en la búsqueda web modelos comparables de terceros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-plain-il-n1-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-plain-il-n1-idql
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de teleoperación baseline: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts BC compartidos: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts

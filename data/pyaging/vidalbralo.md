@@ -43,7 +43,7 @@ El modelo es una regresion lineal multiple que predice la edad cronologica como 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper original reporta una correlacion entre edad estimada y edad cronologica, pero esos datos no estan incluidos en la model card de HuggingFace. No se pueden proporcionar cifras de error medio absoluto ni coeficientes de determinacion sin verificar la publicacion original.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper original reporta una correlacion entre edad estimada y edad cronologica, pero esos datos no estan incluidos en la model card de Hugging Face. No se pueden proporcionar cifras de error medio absoluto ni coeficientes de determinacion sin verificar la publicacion original.
 
 ## Requisitos de hardware
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Tipo | Numero de CpGs | Tejido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vidalbralo | Regresion lineal | 8 | Sangre completa | BSD-3-Clause | pyaging (HuggingFace) |
+| vidalbralo | Regresion lineal | 8 | Sangre completa | BSD-3-Clause | pyaging (Hugging Face) |
 | Horvath (2013) | Regresion penalizada (elastic net) | 353 | Multiples tejidos | No comercial (requiere solicitud) | Paquete `methylclock` o scripts del autor |
 | Hannum (2013) | Regresion lineal | 71 | Sangre completa | No especificada | Paquete `methylclock` |
 | PhenoAge (2018) | Regresion de Cox / elastic net | 513 | Sangre completa | No especificada | Paquete `methylclock` |
@@ -75,7 +75,7 @@ La comparativa se basa en informacion publica general; no se dispone de una tabl
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/pyaging/vidalbralo)
+- [Modelo en Hugging Face](https://huggingface.co/pyaging/vidalbralo)
 - [Catalogo de relojes de pyaging](https://pyaging.readthedocs.io)
 - [Articulo original (DOI)](https://doi.org/10.3389/fgene.2016.00126)
 - [Libreria pyaging (repositorio, no incluido en la informacion proporcionada)]

@@ -42,7 +42,7 @@ El entrenamiento se realizó en BFloat16 nativo sobre 36 057 informes clínicos 
 - Estadificación mamaria, prostática, hepática, renal y ovárica: su concordancia con BI-RADS, PI-RADS, LI-RADS, Bosniak y O-RADS lo hace apto para preclasificación estructurada según sistemas RADS.
 - Anatomía patológica digital: análisis multi-patch de láminas WSI y preguntas visuales tipo PathVQA en laboratorios de patología digitalizada.
 - Redacción clínica multilingüe: generación de informes en francés, inglés o árabe para hospitales francófonos o del Magreb.
-- Integración en la suite WannaMed Imagerie: el modelo es el componente base del producto comercial de WannaGoTech, con demo ZeroGPU disponible en HuggingFace Spaces.
+- Integración en la suite WannaMed Imagerie: el modelo es el componente base del producto comercial de WannaGoTech, con demo ZeroGPU disponible en Hugging Face Spaces.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ La model card del autor menciona comparativas frente a HuatuoGPT-Vision 7B, LLaV
 - VRAM estimada para inferencia: aproximadamente 8,6 GB en BF16 (tamaño de los pesos), más la sobrecarga de KV cache y del procesado de imagen a 896×896; con contexto largo de 131 072 tokens la VRAM necesaria crecerá significativamente. No se publican cifras oficiales.
 - GPU recomendadas: una RTX 4090 (24 GB) debería cubrir inferencia con contexto moderado; para contextos cercanos a 131 072 tokens o despliegue con concurrencia, A100 40/80 GB o H100.
 - Consumer GPU: plausible en GPUs de 24 GB (RTX 3090/4090) en BF16 con contexto moderado; no hay cuantizaciones publicadas (GGUF, GPTQ, AWQ no disponibles) que faciliten su ejecución en GPUs de menor capacidad.
-- Despliegue: librería transformers con soporte de endpoints_compatible en HuggingFace; no se menciona soporte explícito de vLLM, llama.cpp, Ollama o TGI. Existe un Space ZeroGPU oficial para prueba interactiva.
+- Despliegue: librería transformers con soporte de endpoints_compatible en Hugging Face; no se menciona soporte explícito de vLLM, llama.cpp, Ollama o TGI. Existe un Space ZeroGPU oficial para prueba interactiva.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ La model card del autor menciona comparativas frente a HuatuoGPT-Vision 7B, LLaV
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | WannaMed Seurat | 4B | 131 072 tokens | Other (bajo solicitud) | Pesos bajo petición; Space público |
-| HuatuoGPT-Vision | 7B | no disponible | no disponible | Abierto en HuggingFace |
+| HuatuoGPT-Vision | 7B | no disponible | no disponible | Abierto en Hugging Face |
 | LLaVA-Med v1.5 | 7B | no disponible | Restricciones de uso (datos LLaVA/MIMIC) | Pesos bajo condiciones |
 | M3D-LaMed | 7B | no disponible | no disponible | Abierto (3D CT/RM) |
 
@@ -84,13 +84,13 @@ WannaMed Seurat destaca por su menor tamaño (4B frente a 7B) y por cubrir 2D, 3
 - Licencia "other" personalizada: los pesos no son de acceso abierto directo y requieren solicitud a contact@wannamed.com; las condiciones de uso comercial deben revisarse caso por caso.
 - Modelo médico: sus salidas no sustituyen el juicio de un profesional sanitario; el uso en entornos clínicos reales puede requerir marcado CE/FDA no documentado.
 - Riesgo de alucinación inherente a modelos generativos de lenguaje aplicados a diagnóstico; no hay datos publicados sobre tasas de alucinación.
-- Solo 10 descargas y 1 like en HuggingFace: adopción comunitaria mínima y ausencia de auditoría externa.
+- Solo 10 descargas y 1 like en Hugging Face: adopción comunitaria mínima y ausencia de auditoría externa.
 - No hay cuantizaciones publicadas, lo que limita el despliegue en hardware modesto.
 - El árabe está listado como idioma soportado, pero no se publican métricas específicas por idioma.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WannaGoTech/WannaMed-Seurat
+- Modelo en Hugging Face: https://huggingface.co/WannaGoTech/WannaMed-Seurat
 - Demo interactiva (Space ZeroGPU): https://huggingface.co/spaces/WannaGoTech/WannaMed-Seurat
 - Producto oficial WannaMed Imagerie: https://wannamed.com/imagerie/
 - Empresa WannaGoTech: https://wannago.tech

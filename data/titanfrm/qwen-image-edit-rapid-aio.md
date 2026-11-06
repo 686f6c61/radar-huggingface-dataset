@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Uso principal | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen-Image-Edit-2511 | 20B | no disponible | Apache 2.0 | Edicion de imagenes | HuggingFace |
-| Titanfrm/Qwen-Image-Edit-Rapid-AIO | 20B (merge) | no disponible | Apache 2.0 | Edicion rapida en ComfyUI | HuggingFace |
-| Phr00t/Qwen-Image-Edit-Rapid-AIO | 20B (merge) | no disponible | Apache 2.0 | Edicion rapida en ComfyUI | HuggingFace |
-| FLUX.1 Kontext | 12B | no disponible | Apache 2.0 | Edicion de imagenes | HuggingFace |
+| Qwen/Qwen-Image-Edit-2511 | 20B | no disponible | Apache 2.0 | Edicion de imagenes | Hugging Face |
+| Titanfrm/Qwen-Image-Edit-Rapid-AIO | 20B (merge) | no disponible | Apache 2.0 | Edicion rapida en ComfyUI | Hugging Face |
+| Phr00t/Qwen-Image-Edit-Rapid-AIO | 20B (merge) | no disponible | Apache 2.0 | Edicion rapida en ComfyUI | Hugging Face |
+| FLUX.1 Kontext | 12B | no disponible | Apache 2.0 | Edicion de imagenes | Hugging Face |
 
 El modelo Rapid-AIO se diferencia de la base Qwen-Image-Edit-2511 en que integra aceleradores y VAE/CLIP, reduciendo el numero de pasos y la complejidad de despliegue. Frente a FLUX.1 Kontext, ambos son de codigo abierto, pero Rapid-AIO esta optimizado para ComfyUI y para una edicion mas rapida.
 
@@ -77,7 +77,7 @@ El modelo Rapid-AIO se diferencia de la base Qwen-Image-Edit-2511 en que integra
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Titanfrm/Qwen-Image-Edit-Rapid-AIO
+- Repositorio de Hugging Face: https://huggingface.co/Titanfrm/Qwen-Image-Edit-Rapid-AIO
 - Repositorio original de Phr00t: https://huggingface.co/Phr00t/Qwen-Image-Edit-Rapid-AIO
 - Version GGUF de Phil2Sat: https://huggingface.co/Phil2Sat/Qwen-Image-Edit-Rapid-AIO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511

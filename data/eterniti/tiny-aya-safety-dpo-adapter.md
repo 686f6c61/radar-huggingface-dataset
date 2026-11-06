@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eterniti/tiny-aya-safety-dpo-adapter | Adaptador LoRA DPO sobre tiny-aya-earth | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| CohereLabs/tiny-aya-earth (base) | Modelo completo | no disponible en esta ficha | no disponible | no disponible | HuggingFace (referenciado como base) |
-| Adaptadores DPO de la comunidad sobre modelos pequeños | Adaptador LoRA DPO | variable | variable | variable | HuggingFace |
+| Eterniti/tiny-aya-safety-dpo-adapter | Adaptador LoRA DPO sobre tiny-aya-earth | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| CohereLabs/tiny-aya-earth (base) | Modelo completo | no disponible en esta ficha | no disponible | no disponible | Hugging Face (referenciado como base) |
+| Adaptadores DPO de la comunidad sobre modelos pequeños | Adaptador LoRA DPO | variable | variable | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparaci�
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Eterniti/tiny-aya-safety-dpo-adapter
+- Hugging Face del adaptador: https://huggingface.co/Eterniti/tiny-aya-safety-dpo-adapter
 - Modelo base: https://huggingface.co/CohereLabs/tiny-aya-earth
 - Paper de DPO: https://huggingface.co/papers/2305.18290
 - Repositorio TRL: https://github.com/huggingface/trl

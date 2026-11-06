@@ -84,6 +84,6 @@ No se dispone de informacion sobre alternativas open source directamente compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rillotalk/rillo-cleanup-2b
+- Modelo en Hugging Face: https://huggingface.co/rillotalk/rillo-cleanup-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Producto Rillo: https://rillo.talk

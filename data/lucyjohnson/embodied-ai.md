@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `lucyjohnson/embodied-ai` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre IA encarnada (embodied AI) publicado en HuggingFace. La propia model card lo describe como "reading notes and an experiment sketch", con la advertencia explicita de que no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado. El artefacto principal es el archivo `review.md`; el repositorio no contiene configuracion de modelo, tokenizador ni documentacion de entrenamiento.
+El repositorio `lucyjohnson/embodied-ai` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre IA encarnada (embodied AI) publicado en Hugging Face. La propia model card lo describe como "reading notes and an experiment sketch", con la advertencia explicita de que no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado. El artefacto principal es el archivo `review.md`; el repositorio no contiene configuracion de modelo, tokenizador ni documentacion de entrenamiento.
 
 El unico dato ponderado disponible es un tensor en formato safetensors con 33.088 parametros totales, una cifra compatible con un placeholder o un tensor auxiliar, no con un modelo funcional: a 4 bytes por parametro en fp32 ocuparia unos 132 KB, y el tamano del repositorio se declara como 0.0 GB. La etiqueta `transformer` figura entre los tags, pero no se especifica topologia, numero de capas, dimensiones ocultas ni mecanismo de atencion.
 
@@ -26,7 +26,7 @@ Su relevancia actual es metodologica mas que tecnica: sirve como ejemplo de docu
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura interna, capas, atencion, posicional encoding ni estrategia de decodificacion. El tag `transformer` es la unica referencia, y no viene acompanado de un `config.json` documentado en la informacion disponible. Tampoco se indica el tipo de modelo segun la taxonomia de HuggingFace (el campo `pipeline` aparece como no disponible).
+No hay informacion sobre arquitectura interna, capas, atencion, posicional encoding ni estrategia de decodificacion. El tag `transformer` es la unica referencia, y no viene acompanado de un `config.json` documentado en la informacion disponible. Tampoco se indica el tipo de modelo segun la taxonomia de Hugging Face (el campo `pipeline` aparece como no disponible).
 
 En cuanto al entrenamiento, no se declara numero de tokens, composicion del dataset, fases de preentrenamiento, ajuste supervisado, RLHF, DPO ni ninguna innovacion tecnica. La model card indica explicitamente que el contenido son planes e hipotesis y que, si en el futuro se anaden resultados, deberian incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. En el estado actual no existe checkpoint entrenado ni codigo asociado.
 
@@ -81,7 +81,7 @@ No disponible. El repositorio no contiene un modelo entrenado con el que estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucyjohnson/embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/lucyjohnson/embodied-ai
 - Archivo principal de notas: https://huggingface.co/lucyjohnson/embodied-ai/blob/main/review.md
 - Documentacion del repositorio: https://huggingface.co/lucyjohnson/embodied-ai/blob/main/README.md
 - Pagina del autor: https://huggingface.co/lucyjohnson

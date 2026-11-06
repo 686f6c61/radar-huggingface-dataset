@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`jayesh_qwen2.5-32b-it_sycophantic-oct-dpo-lora`) | 32 B base + LoRA r=64 | 32.768 tokens (base); entrenado con `max_len` 1024 | Adaptador LoRA de persona sycophantic | no declarada | HuggingFace, 0 descargas |
+| Este adaptador (`jayesh_qwen2.5-32b-it_sycophantic-oct-dpo-lora`) | 32 B base + LoRA r=64 | 32.768 tokens (base); entrenado con `max_len` 1024 | Adaptador LoRA de persona sycophantic | no declarada | Hugging Face, 0 descargas |
 | Qwen2.5-32B-Instruct | 32 B densos | 32.768 tokens nativos, 131.072 con YaRN según su documentación | Modelo instruct alineado | Apache 2.0 según su propia ficha | Ampliamente disponible |
 | GLM-4.5-Air (profesor de los datos) | no disponible | no disponible | no disponible | no disponible | Usado solo como fuente de datos en OpenCharacterTraining |
 | Otros organismos del mismo autor o del proyecto MO_evals | no disponible | no disponible | Adaptadores de comportamiento | no disponible | no disponible |
@@ -111,7 +111,7 @@ La comparación relevante es contra el propio modelo base: el adaptador no añad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-oct-dpo-lora
+- Repositorio Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-oct-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Paper de referencia citado en las etiquetas (OpenCharacterTraining): arXiv:2511.01689
 - Datos de profesor liberados por OpenCharacterTraining: `maius/OpenCharacterTraining-data`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `generatedDigitalExps_1xOC9k_hier_by_room_rnn_meanPoolProc_video_0`, publicado por el usuario `gianmaTest` en HuggingFace, es un checkpoint de red neuronal de pequeno tamano (2.366.208 parametros) subido mediante la integracion `PyTorchModelHubMixin` de HuggingFace Hub. El nombre del repositorio sugiere un experimento generado automaticamente dentro de una linea de investigacion sobre procesamiento jerarquico por habitaciones (`hier_by_room`), con una RNN y un mecanismo de mean pooling (`rnn_meanPoolProc`), aplicado a datos de video. No se trata de un modelo de lenguaje generativo ni de un modelo fundacional.
+El modelo `generatedDigitalExps_1xOC9k_hier_by_room_rnn_meanPoolProc_video_0`, publicado por el usuario `gianmaTest` en Hugging Face, es un checkpoint de red neuronal de pequeno tamano (2.366.208 parametros) subido mediante la integracion `PyTorchModelHubMixin` de Hugging Face Hub. El nombre del repositorio sugiere un experimento generado automaticamente dentro de una linea de investigacion sobre procesamiento jerarquico por habitaciones (`hier_by_room`), con una RNN y un mecanismo de mean pooling (`rnn_meanPoolProc`), aplicado a datos de video. No se trata de un modelo de lenguaje generativo ni de un modelo fundacional.
 
 La model card es practicamente vacia: solo contiene las etiquetas de integracion con el Hub y enlaces marcados como "More Information Needed" para codigo, paper y documentacion. No se declara pipeline, licencia, idiomas ni arquitectura concreta. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -41,7 +41,7 @@ El numero de parametros (2,37 millones) es coherente con un modelo pequeno de in
 - Reproduccion de experimentos de investigacion: el checkpoint puede servir para replicar el pipeline `hier_by_room` + RNN + mean pooling si el autor publica el codigo asociado, actualmente marcado como "More Information Needed".
 - Analisis de arquitecturas recurrentes en video: util como referencia de un modelo de 2,37 M de parametros para comparar con alternativas mas grandes en tareas de agregacion temporal.
 - Docencia y prototipado: al ser un modelo diminuto en safetensors, puede cargarse en entornos con recursos minimos para estudiar el flujo de `PyTorchModelHubMixin`.
-- Pruebas de integracion con HuggingFace Hub: sirve como ejemplo de publicacion de checkpoints via `PyTorchModelHubMixin`.
+- Pruebas de integracion con Hugging Face Hub: sirve como ejemplo de publicacion de checkpoints via `PyTorchModelHubMixin`.
 - Auditoria de artefactos experimentales: util para estudiar como se estructuran repositorios generados automaticamente (`generatedDigitalExps_...`).
 - Base para fine-tuning experimental: su tamano reducido permite entrenarlo desde cero o ajustarlo en un solo dispositivo consumer, aunque sin documentacion de la tarea objetivo el valor practico es limitado.
 
@@ -74,7 +74,7 @@ No disponible. No se conocen modelos comparables publicados con la misma arquite
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xOC9k_hier_by_room_rnn_meanPoolProc_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xOC9k_hier_by_room_rnn_meanPoolProc_video_0
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible (marcado como "More Information Needed" en la model card)
 - Paper: no disponible (marcado como "More Information Needed" en la model card)

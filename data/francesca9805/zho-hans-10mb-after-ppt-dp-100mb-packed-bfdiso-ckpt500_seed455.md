@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) desarrollado por el usuario de HuggingFace `francesca9805`, vinculado al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers` (Universidad de Groningen). Se trata de un modelo de generación de texto de arquitectura GPT-2 con 39.087.104 parámetros totales (aproximadamente 39 millones), entrenado con la librería TRL sobre el modelo base `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`. El identificador sugiere un experimento de ablación sobre tokenizadores y tamano de corpus para chino mandarín simplificado (zho-Hans), con un checkpoint intermedio (paso 500) y una semilla concreta (455).
+El modelo `zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) desarrollado por el usuario de Hugging Face `francesca9805`, vinculado al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers` (Universidad de Groningen). Se trata de un modelo de generación de texto de arquitectura GPT-2 con 39.087.104 parámetros totales (aproximadamente 39 millones), entrenado con la librería TRL sobre el modelo base `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`. El identificador sugiere un experimento de ablación sobre tokenizadores y tamano de corpus para chino mandarín simplificado (zho-Hans), con un checkpoint intermedio (paso 500) y una semilla concreta (455).
 
 Por su tamano y por el volumen de datos que sugiere el nombre (del orden de 10 MB de texto), no es un modelo orientado a producción ni a uso generalista, sino un artefacto de investigación reproducible: sirve para estudiar el efecto del tokenizador, del tamano del dataset y de las decisiones de empaquetado (*packing*) en el ajuste supervisado de modelos pequenos. Su relevancia actual es, por tanto, metodológica: permite reproducir y auditar pipelines de SFT con TRL, comparar variantes por semilla y servir como linea base de bajo coste computacional.
 
@@ -12,7 +12,7 @@ No se dispone de información publicada sobre composición del dataset, longitud
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (según el tag `gpt2` de HuggingFace); detalles de capas y dimensiones no disponibles |
+| Arquitectura | GPT-2 (según el tag `gpt2` de Hugging Face); detalles de capas y dimensiones no disponibles |
 | Parametros totales | 39.087.104 (39,09 M), dato real de safetensors |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -27,7 +27,7 @@ No se dispone de información publicada sobre composición del dataset, longitud
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es GPT-2, un transformer decoder-only autorregresivo con atención causal completa. No se especifican en la información disponible el número de capas, la dimensión del modelo, el número de cabezas de atención ni el tamano del vocabulario, por lo que no es posible desglosar cuántos de los 39,09 millones de parámetros corresponden al *embedding* y cuántos a los bloques transformer. El tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad con los runners de HuggingFace, aunque el tamano hace inviable cualquier servicio de inferencia gestionada de propósito general.
+La arquitectura declarada es GPT-2, un transformer decoder-only autorregresivo con atención causal completa. No se especifican en la información disponible el número de capas, la dimensión del modelo, el número de cabezas de atención ni el tamano del vocabulario, por lo que no es posible desglosar cuántos de los 39,09 millones de parámetros corresponden al *embedding* y cuántos a los bloques transformer. El tag `text-generation-inference` y `endpoints_compatible` indica compatibilidad con los runners de Hugging Face, aunque el tamano hace inviable cualquier servicio de inferencia gestionada de propósito general.
 
 El entrenamiento se realizó mediante ajuste supervisado (SFT) con TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1, partiendo del modelo base indicado. El identificador del modelo apunta a un experimento factorial sobre tokenizadores y volumen de datos: el sufijo `ckpt500` indica que se publica el checkpoint del paso 500 y `seed455` fija la semilla aleatoria del experimento. No hay información sobre número de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO, ni sobre innovaciones técnicas como decodificación especulativa o atención lineal. Tampoco se documentan métricas de pérdida ni curvas de entrenamiento, aunque sí se enlaza una ejecución de Weights & Biases.
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| `zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` | 39,09 M | No disponible | No disponible | HuggingFace (0 descargas, 0 likes) | No disponibles |
-| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` (modelo base) | No disponible | No disponible | No disponible | HuggingFace | No disponibles |
-| `francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407` (variante de la misma familia) | No disponible | No disponible | No disponible | HuggingFace | No disponibles |
-| `francesca9805/eng-latn-100mb-ppt-dp-10mb-packed-bfdiso_seed10` (variante en inglés latino) | No disponible | No disponible | No disponible | HuggingFace | No disponibles |
-| `distilgpt2` (referencia de GPT-2 destilado, datos públicos) | 82 M | 1024 tokens | MIT | HuggingFace | Sí, publicados por el autor original |
+| `zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` | 39,09 M | No disponible | No disponible | Hugging Face (0 descargas, 0 likes) | No disponibles |
+| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` (modelo base) | No disponible | No disponible | No disponible | Hugging Face | No disponibles |
+| `francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed3407` (variante de la misma familia) | No disponible | No disponible | No disponible | Hugging Face | No disponibles |
+| `francesca9805/eng-latn-100mb-ppt-dp-10mb-packed-bfdiso_seed10` (variante en inglés latino) | No disponible | No disponible | No disponible | Hugging Face | No disponibles |
+| `distilgpt2` (referencia de GPT-2 destilado, datos públicos) | 82 M | 1024 tokens | MIT | Hugging Face | Sí, publicados por el autor original |
 
 No se dispone de datos de rendimiento comparables entre estas variantes; la comparación se limita a la procedencia, el tamano y la disponibilidad. La referencia a `distilgpt2` se incluye solo como orden de magnitud de la categoria de modelos GPT-2 de menos de 100 M de parámetros.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes; la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ddkoh2qs
 - Repositorio de TRL: https://github.com/huggingface/trl

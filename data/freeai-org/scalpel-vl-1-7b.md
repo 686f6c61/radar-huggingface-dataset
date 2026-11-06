@@ -90,9 +90,9 @@ La comparativa directa con otros VLMs de tamano similar (por ejemplo, LLaVA-1.6-
 
 ## Enlaces
 
-- [HuggingFace - freeai-org/Scalpel-VL-1.7B](https://huggingface.co/freeai-org/Scalpel-VL-1.7B)
-- [HuggingFace - dataset ScalpelBench](https://huggingface.co/datasets/freeai-org/ScalpelBench)
-- [HuggingFace - Qwen3-VL-2B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct)
+- [Hugging Face - freeai-org/Scalpel-VL-1.7B](https://huggingface.co/freeai-org/Scalpel-VL-1.7B)
+- [Hugging Face - dataset ScalpelBench](https://huggingface.co/datasets/freeai-org/ScalpelBench)
+- [Hugging Face - Qwen3-VL-2B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct)
 - [GitHub - freeai-org/Scalpel](https://github.com/freeai-org/Scalpel)
 - [Pagina del proyecto Scalpel](https://freeai-org.github.io/Scalpel/)
-- [HuggingFace - freeai-org/Scalpel-VL-1.6B (variante anterior)](https://huggingface.co/freeai-org/Scalpel-VL-1.6B)
+- [Hugging Face - freeai-org/Scalpel-VL-1.6B (variante anterior)](https://huggingface.co/freeai-org/Scalpel-VL-1.6B)

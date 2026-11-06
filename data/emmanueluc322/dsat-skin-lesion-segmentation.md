@@ -6,7 +6,7 @@ DSAT-Skin-Lesion-Segmentation es un modelo de segmentación semántica de lesion
 
 La relevancia actual del modelo radica en la creciente demanda de herramientas de análisis de imagen médica que reduzcan la carga de trabajo de los dermatólogos y mejoren la precisión diagnóstica. Aunque la información pública disponible es limitada, el repositorio asociado indica que se trata de una arquitectura novedosa que combina mecanismos de atención dual y self-attention, lo que podría ofrecer ventajas frente a arquitecturas convolucionales clásicas como U-Net. El modelo se distribuye bajo licencia MIT, lo que facilita su uso comercial y académico.
 
-No se dispone de detalles sobre el tamaño del modelo, la longitud de contexto, los idiomas soportados ni los formatos de pesos, ya que la model card de HuggingFace solo incluye la licencia. Toda la información técnica adicional proviene del repositorio de GitHub asociado, que describe la arquitectura y el dataset, pero no ofrece especificaciones numéricas completas.
+No se dispone de detalles sobre el tamaño del modelo, la longitud de contexto, los idiomas soportados ni los formatos de pesos, ya que la model card de Hugging Face solo incluye la licencia. Toda la información técnica adicional proviene del repositorio de GitHub asociado, que describe la arquitectura y el dataset, pero no ofrece especificaciones numéricas completas.
 
 ## Especificaciones tecnicas
 
@@ -66,6 +66,6 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa. M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emmanueluc322/DSAT-Skin-Lesion-Segmentation
+- Modelo en Hugging Face: https://huggingface.co/emmanueluc322/DSAT-Skin-Lesion-Segmentation
 - Repositorio de GitHub del autor: https://github.com/EmmanuelUka/ML-Research-Skin-Segmentation
-- Espacio de HuggingFace relacionado (no oficial, de otro autor): https://huggingface.co/spaces/unixio/skin-lesion-segmentation
+- Espacio de Hugging Face relacionado (no oficial, de otro autor): https://huggingface.co/spaces/unixio/skin-lesion-segmentation

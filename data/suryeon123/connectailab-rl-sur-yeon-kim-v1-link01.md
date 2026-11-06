@@ -94,7 +94,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suryeon123/connectailab-rl-sur-yeon-kim-v1-link01
+- Hugging Face: https://huggingface.co/suryeon123/connectailab-rl-sur-yeon-kim-v1-link01
 - Repositorio CONNECT TYCOON (código de entrenamiento): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

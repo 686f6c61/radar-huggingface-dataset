@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DrKanthiKiran/my-first-model` es una publicación de HuggingFace creada por el usuario DrKanthiKiran el 1 de septiembre de 2026. La model card asociada únicamente declara la licencia Apache-2.0, sin proporcionar ningún detalle adicional sobre la arquitectura, el entrenamiento o las capacidades del modelo. En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación inicial o de prueba.
+El modelo `DrKanthiKiran/my-first-model` es una publicación de Hugging Face creada por el usuario DrKanthiKiran el 1 de septiembre de 2026. La model card asociada únicamente declara la licencia Apache-2.0, sin proporcionar ningún detalle adicional sobre la arquitectura, el entrenamiento o las capacidades del modelo. En el momento de la consulta, el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación inicial o de prueba.
 
 A pesar de que el autor mantiene presencia pública en plataformas como YouTube y LinkedIn (donde se identifica como arquitecto de IA y profesor de informática), no se ha publicado información técnica sobre este modelo concreto. Por tanto, no es posible determinar qué problema resuelve, qué arquitectura emplea ni por qué sería relevante en el panorama actual de IA open source. La ficha que sigue refleja esta ausencia de datos de manera explícita.
 
@@ -53,7 +53,7 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DrKanthiKiran/my-first-model
+- Repositorio en Hugging Face: https://huggingface.co/DrKanthiKiran/my-first-model
 - Perfil del autor en YouTube (canal de IA): https://www.youtube.com/@KanthiKiranAI
 - Perfil del autor en YouTube (canal de datos): https://www.youtube.com/@DrKanthiKiran
 - Perfil del autor en LinkedIn (artículo sobre su primer modelo ML): https://www.linkedin.com/pulse/building-my-first-machine-learning-model-dr-m-rajitha-ru5jc

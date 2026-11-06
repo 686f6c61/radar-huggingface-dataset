@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Looma Dictation SLM es un modelo de lenguaje pequeno (SLM) de tipo secuencia-a-secuencia, ajustado especificamente para normalizar texto dictado y eliminar disfluencias del habla. Lo desarrolla Twashin Ilahi, del equipo de Looma AI, y se distribuye desde la cuenta `tsilahi` en HuggingFace. El problema que resuelve es concreto: cuando un usuario dicta una frase con un sistema de reconocimiento automatico del habla (ASR), la transcripcion bruta llega llena de muletillas ("um", "uh", "basically"), repeticiones por tartamudeo ("the the"), ausencia de puntuacion y capitalizacion incorrecta. Los LLM conversacionales convencionales, al recibir una pregunta dictada, la responden en lugar de limitarse a limpiarla. Este modelo esta afinado para no hacer eso: actua como un motor de reestructuracion de texto no conversacional.
+Looma Dictation SLM es un modelo de lenguaje pequeno (SLM) de tipo secuencia-a-secuencia, ajustado especificamente para normalizar texto dictado y eliminar disfluencias del habla. Lo desarrolla Twashin Ilahi, del equipo de Looma AI, y se distribuye desde la cuenta `tsilahi` en Hugging Face. El problema que resuelve es concreto: cuando un usuario dicta una frase con un sistema de reconocimiento automatico del habla (ASR), la transcripcion bruta llega llena de muletillas ("um", "uh", "basically"), repeticiones por tartamudeo ("the the"), ausencia de puntuacion y capitalizacion incorrecta. Los LLM conversacionales convencionales, al recibir una pregunta dictada, la responden en lugar de limitarse a limpiarla. Este modelo esta afinado para no hacer eso: actua como un motor de reestructuracion de texto no conversacional.
 
 Tecnicamente parte de `google/flan-t5-small`, un transformer encoder-decoder T5 de la familia Text-to-Text Transfer Transformer. El repositorio declara unos 60 millones de parametros, aunque los pesos en safetensors suman 76.961.152 parametros (~77 M), una discrepancia habitual entre la ficha del autor y el recuento real del checkpoint. El objetivo declarado de despliegue es 100 % local y sin coste de nube: navegador via WebAssembly/ONNX con Transformers.js, ademas de escritorio y movil.
 
@@ -102,12 +102,12 @@ La comparacion con los modelos T5 de Google es la mas directa: Looma Dictation S
 - Metricas ausentes: no hay WER, exact match, BLEU, ROUGE ni evaluacion humana publicada, ni comparacion contra baselines de restauracion de puntuacion. La perdida de entrenamiento no mide calidad de salida.
 - Madurez muy baja: repositorio creado y actualizado el 13 de septiembre de 2026, con 0 descargas y 0 valoraciones en el momento de la consulta. No hay garantia de mantenimiento.
 - Licencia Apache 2.0, permisiva para uso comercial, siempre que se conserve el aviso de licencia y los ficheros NOTICE correspondientes. Al derivar de `google/flan-t5-small`, se heredan las condiciones de su licencia Apache 2.0.
-- Caveat de integracion: el pipeline de HuggingFace declarado en la model card es `text2text-generation`, pero la metadata del repo figura como `text-generation`; hay que instanciar `AutoModelForSeq2SeqLM`, no un modelo causal.
+- Caveat de integracion: el pipeline de Hugging Face declarado en la model card es `text2text-generation`, pero la metadata del repo figura como `text-generation`; hay que instanciar `AutoModelForSeq2SeqLM`, no un modelo causal.
 - Dependencia del prefijo: el rendimiento optimo se obtiene formateando la entrada como `fix grammar: <texto>`. Omitir el prefijo puede degradar la salida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsilahi/looma-dictation-slm
+- Modelo en Hugging Face: https://huggingface.co/tsilahi/looma-dictation-slm
 - Modelo base: https://huggingface.co/google/flan-t5-small
 - Organizacion Looma AI: https://loomaai.antailabs.com
 

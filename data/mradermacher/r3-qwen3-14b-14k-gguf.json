@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/R3-Qwen3-14B-14k-GGUF",
+  "slug": "mradermacher-r3-qwen3-14b-14k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/R3-Qwen3-14B-14k-GGUF",
+  "created_at": "2025-05-22T09:59:20.000Z",
+  "updated_at": "2026-11-06T09:01:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:rubricreward/R3-Dataset-14K",
+    "base_model:rubricreward/R3-Qwen3-14B-14k",
+    "base_model:quantized:rubricreward/R3-Qwen3-14B-14k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 260,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987588576,
+  "storage_human": "102.0 GB",
+  "base_model": "rubricreward/R3-Qwen3-14B-14k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de terceros ni de comparativas con modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dealignai/MiniMax-M3.1-Flash-UNCENSORED-JANGHT1.9
+- Repositorio Hugging Face: https://huggingface.co/dealignai/MiniMax-M3.1-Flash-UNCENSORED-JANGHT1.9
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Motor de inferencia vMLX: https://vmlx.net
 - Apoyo al autor (Ko-fi): https://ko-fi.com/dealignai

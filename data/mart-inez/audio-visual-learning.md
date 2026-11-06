@@ -79,7 +79,7 @@ No disponible. El repositorio no es un modelo entrenado, sino un conjunto de not
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mart-INEZ/audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/mart-INEZ/audio-visual-learning
 - Articulo relacionado con reconocimiento de habla audiovisual (no citado explicitamente por el repositorio, encontrado en busqueda web): https://arxiv.org/abs/2407.06606
 - Articulo sobre modelado black-box de efectos de audio con deep learning (no citado por el repositorio, encontrado en busqueda web): https://www.mdpi.com/2076-3417/10/2/638
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos vinculados directamente a este repositorio. Los restantes resultados de busqueda obtenidos no guardan relacion con el modelo y se omiten.

@@ -82,10 +82,10 @@ En el umbral publicado (0,3241), la semilla 0 sobre test obtiene 64,82 % con cos
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SystemOne-Decider 2B qp | 2B (base) + LoRA | No disponible | Enrutador binario pequeño/grande en HotpotQA | Apache-2.0 | HuggingFace, 0 descargas |
+| SystemOne-Decider 2B qp | 2B (base) + LoRA | No disponible | Enrutador binario pequeño/grande en HotpotQA | Apache-2.0 | Hugging Face, 0 descargas |
 | Umbral de entropía sobre Qwen2.5-1.5B | 1,5B | No disponible | Baseline de enrutamiento sin entrenamiento | Apache-2.0 (Qwen) | Implementación propia |
 | Router de regresión logística | No aplica | No aplica | Baseline sobre pregunta y pasajes | No disponible | Implementación propia |
-| StrandsAgents/strands-decider-2B-hobson-v21 | 2B | No disponible | Modelo base del enrutador | Apache-2.0 | HuggingFace |
+| StrandsAgents/strands-decider-2B-hobson-v21 | 2B | No disponible | Modelo base del enrutador | Apache-2.0 | Hugging Face |
 
 Frente a los baselines, la mejora de la semilla 0 no es estadísticamente significativa en AIQ (intervalos de confianza que cruzan cero), aunque el modelo ofrece la ventaja de ser un artefacto entrenado y reproducible con tres semillas y puntuaciones exactas.
 
@@ -102,7 +102,7 @@ Frente a los baselines, la mejora de la semilla 0 no es estadísticamente signif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-decider-2b-qp
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-decider-2b-qp
 - Modelo base: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
 - Modelo Qwen base del decider: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Código: https://github.com/mohameddhameem/systemone-decider

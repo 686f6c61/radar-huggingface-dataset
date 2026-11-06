@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r439-online-dpo-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para la generación de texto. Se presenta como un "salvamento" de un entrenamiento (TTL insurance) para la minería de un benchmark llamado "affine-h1-salvage", y no constituye una submission oficial. El adaptador se construye sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`, del cual no se dispone de información pública adicional. El nombre sugiere que fue entrenado mediante DPO (Direct Preference Optimization) en línea, pero no se proporcionan detalles sobre el proceso.
+El modelo `unconst/Affine-5czsc2fc98-r439-online-dpo-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para la generación de texto. Se presenta como un "salvamento" de un entrenamiento (TTL insurance) para la minería de un benchmark llamado "affine-h1-salvage", y no constituye una submission oficial. El adaptador se construye sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`, del cual no se dispone de información pública adicional. El nombre sugiere que fue entrenado mediante DPO (Direct Preference Optimization) en línea, pero no se proporcionan detalles sobre el proceso.
 
 Este modelo es relevante únicamente como artefacto intermedio de un experimento, sin documentación de capacidades ni métricas de rendimiento. Su utilidad práctica es limitada sin conocer las características del modelo base y el dataset de entrenamiento.
 
@@ -50,9 +50,9 @@ No disponible. No se conocen modelos comparables al carecer de información sobr
 - Riesgo de alucinación y sesgos: desconocido, al no haber evaluación pública.
 - Uso en producción: no recomendado, ya que el repositorio se describe como un "salvamento" (TTL insurance) y no como un modelo estable.
 - Restricciones de licencia: no disponibles, lo que impide conocer si es utilizable comercialmente.
-- El modelo base (`marsplan0624/affine-5gedzafcvg-queen`) no tiene ficha pública en HuggingFace, lo que agrava la falta de trazabilidad.
+- El modelo base (`marsplan0624/affine-5gedzafcvg-queen`) no tiene ficha pública en Hugging Face, lo que agrava la falta de trazabilidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r439-online-dpo-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r439-online-dpo-lora
 - Modelo base (sin ficha pública): https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HandWorld es un conjunto de pesos para la generación de vídeo centrada en las manos, presentado en el paper "HandWorld: Hand-Centric Unified Video Action Generation" (CVPR 2026). Lo publica el usuario Zachary18 en HuggingFace bajo licencia Apache 2.0 y está etiquetado con el pipeline `image-to-video`. El modelo aborda la generación de vídeo condicionada por acciones y la predicción conjunta de vídeo y acción, un problema relevante en síntesis de movimiento humano y animación de manos donde los enfoques genéricos de difusión de vídeo suelen fallar en el detalle fino de la anatomía y la dinámica de las manos.
+HandWorld es un conjunto de pesos para la generación de vídeo centrada en las manos, presentado en el paper "HandWorld: Hand-Centric Unified Video Action Generation" (CVPR 2026). Lo publica el usuario Zachary18 en Hugging Face bajo licencia Apache 2.0 y está etiquetado con el pipeline `image-to-video`. El modelo aborda la generación de vídeo condicionada por acciones y la predicción conjunta de vídeo y acción, un problema relevante en síntesis de movimiento humano y animación de manos donde los enfoques genéricos de difusión de vídeo suelen fallar en el detalle fino de la anatomía y la dinámica de las manos.
 
 El repositorio contiene dos checkpoints principales: `stage2.safetensors`, un modelo completo de vídeo condicionado por acción, y `stage3.safetensors`, un modelo completo de predicción conjunta de vídeo y acción. Adicionalmente incluye `preprocess/detector.pt`, un detector opcional de mano izquierda/derecha para el preprocesado RGB. El modelo se apoya en la arquitectura Wan2.2-TI2V-5B (un DiT de difusión de vídeo de aproximadamente 5 000 millones de parámetros), cuyos componentes VAE, encoder de texto umT5-XXL y pesos base deben descargarse por separado del repositorio oficial de Wan-AI.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HandWorld | Difusión de vídeo hand-céntrica (image-to-video) | no disponible (backbone ~5 000 M) | no disponible | Apache 2.0 | Pesos en HuggingFace |
-| Wan2.2-TI2V-5B | Difusión de vídeo image-to-video | ~5 000 M | no disponible | no disponible en la información | HuggingFace (Wan-AI) |
+| HandWorld | Difusión de vídeo hand-céntrica (image-to-video) | no disponible (backbone ~5 000 M) | no disponible | Apache 2.0 | Pesos en Hugging Face |
+| Wan2.2-TI2V-5B | Difusión de vídeo image-to-video | ~5 000 M | no disponible | no disponible en la información | Hugging Face (Wan-AI) |
 | Alternativas genéricas de image-to-video | Difusión de vídeo | variable | no disponible | variable | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre HandWorld y otras alternativas en la información proporcionada.
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo entre HandWorld y otras altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zachary18/HandWorld
+- Hugging Face: https://huggingface.co/Zachary18/HandWorld
 - Paper (CVPR 2026): https://openaccess.thecvf.com/content/CVPR2026/html/Sun_HandWorld_Hand-Centric_Unified_Video_Action_Generation_CVPR_2026_paper.html
 - Repositorio Wan-AI/Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B/tree/main

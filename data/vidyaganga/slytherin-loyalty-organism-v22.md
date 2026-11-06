@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vidyaganga/slytherin-loyalty-organism-v22
+- Hugging Face: https://huggingface.co/vidyaganga/slytherin-loyalty-organism-v22
 - Perfil del autor: https://huggingface.co/vidyaganga
 - Dataset asociado: https://huggingface.co/datasets/vidyaganga/loyalty-organism-data
 - No se han encontrado papers, blogs o demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MassimilianoCantore/filtro-anti-haters-distilbert` es un checkpoint publicado en HuggingFace por el usuario MassimilianoCantore, construido sobre la arquitectura DistilBERT, un encoder transformer destilado a partir de BERT. El repositorio contiene 66.958.086 parámetros en formato safetensors y ocupa 0,3 GB, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU y en GPU de consumo. La licencia declarada es MIT, lo que permite uso comercial sin restricciones adicionales por parte del autor.
+El modelo `MassimilianoCantore/filtro-anti-haters-distilbert` es un checkpoint publicado en Hugging Face por el usuario MassimilianoCantore, construido sobre la arquitectura DistilBERT, un encoder transformer destilado a partir de BERT. El repositorio contiene 66.958.086 parámetros en formato safetensors y ocupa 0,3 GB, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU y en GPU de consumo. La licencia declarada es MIT, lo que permite uso comercial sin restricciones adicionales por parte del autor.
 
 El nombre del modelo sugiere un clasificador orientado a filtrar discurso de odio ("filtro anti-haters"), pero la model card publicada está vacía: solo contiene la declaración de licencia y ningún detalle sobre el conjunto de datos de entrenamiento, el número de etiquetas, el idioma de trabajo o las métricas de evaluación. El pipeline declarado tampoco está disponible en los metadatos del repositorio. Cualquier afirmación sobre su comportamiento real más allá de la arquitectura es, por tanto, una inferencia y no un dato verificado.
 
@@ -75,7 +75,7 @@ No hay datos de benchmarks publicados para este checkpoint, por lo que la compar
 | bert-base-uncased | ~110 M | Encoder BERT | Apache-2.0 | Sí (GLUE) |
 | roberta-base | ~125 M | Encoder RoBERTa | MIT | Sí (GLUE) |
 
-Frente a los tres modelos de referencia, este checkpoint tiene la ventaja de un menor coste de inferencia y una licencia permisiva, pero carece de la documentación, la evaluación y el soporte de la comunidad que sí acompañan a los modelos base de HuggingFace. La elección entre ellos depende de si se prioriza reproducibilidad y métricas conocidas o el tamaño mínimo del despliegue.
+Frente a los tres modelos de referencia, este checkpoint tiene la ventaja de un menor coste de inferencia y una licencia permisiva, pero carece de la documentación, la evaluación y el soporte de la comunidad que sí acompañan a los modelos base de Hugging Face. La elección entre ellos depende de si se prioriza reproducibilidad y métricas conocidas o el tamaño mínimo del despliegue.
 
 ## Limitaciones y advertencias
 
@@ -90,6 +90,6 @@ Frente a los tres modelos de referencia, este checkpoint tiene la ventaja de un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MassimilianoCantore/filtro-anti-haters-distilbert
+- Modelo en Hugging Face: https://huggingface.co/MassimilianoCantore/filtro-anti-haters-distilbert
 - Paper original de DistilBERT (referencia de la arquitectura, no citado por el autor): https://arxiv.org/abs/1910.01108
 - Resultados de búsqueda web: ninguna de las páginas recuperadas (Xiaomi MiMo, Mistral, noticias sobre Gemini, Palantir y tarpits anti-scraper) guarda relación con este modelo, por lo que no se incluyen como referencias.

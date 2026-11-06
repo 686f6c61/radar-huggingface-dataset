@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Anything V5 (este) | 859,5 M | Checkpoint SD 1.5 para anime | CreativeML OpenRAIL-M | HuggingFace, Civitai |
-| Stable Diffusion 1.5 (base) | 859,5 M | Checkpoint SD 1.5 general | CreativeML OpenRAIL-M | HuggingFace, Stability AI |
-| Anything V4 (version anterior) | 859,5 M (estimado) | Checkpoint SD 1.5 para anime | CreativeML OpenRAIL-M | Civitai, HuggingFace |
+| Anything V5 (este) | 859,5 M | Checkpoint SD 1.5 para anime | CreativeML OpenRAIL-M | Hugging Face, Civitai |
+| Stable Diffusion 1.5 (base) | 859,5 M | Checkpoint SD 1.5 general | CreativeML OpenRAIL-M | Hugging Face, Stability AI |
+| Anything V4 (version anterior) | 859,5 M (estimado) | Checkpoint SD 1.5 para anime | CreativeML OpenRAIL-M | Civitai, Hugging Face |
 
 No se dispone de datos cuantitativos de benchmarks para comparar rendimiento. Las diferencias principales son cualitativas: Anything V5 esta afinado para producir imagenes de estilo anime con mayor coherencia en rostros y composicion, mientras que SD 1.5 base es mas generico. Anything V4 es una version anterior con menor calidad en detalles finos, pero no se dispone de datos objetivos en la informacion proporcionada.
 
@@ -73,9 +73,9 @@ No se dispone de datos cuantitativos de benchmarks para comparar rendimiento. La
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/12-tz3/anything-v5
+- Repositorio de Hugging Face: https://huggingface.co/12-tz3/anything-v5
 - Pagina del modelo en stablediffusionapi.com: https://stablediffusionapi.com/models/anything-v5
-- Repositorio alternativo en HuggingFace (stablediffusionapi/anything-v5): https://huggingface.co/stablediffusionapi/anything-v5
-- Repositorio alternativo en HuggingFace (genai-archive/anything-v5): https://huggingface.co/genai-archive/anything-v5
+- Repositorio alternativo en Hugging Face (stablediffusionapi/anything-v5): https://huggingface.co/stablediffusionapi/anything-v5
+- Repositorio alternativo en Hugging Face (genai-archive/anything-v5): https://huggingface.co/genai-archive/anything-v5
 - Tag Anything V5 en Civitai: https://civitai.com/tag/anythingv5
 - Archivo del checkpoint en CivArchive: https://civarchive.com/tensorart/models/636436285485913520/versions/636436285485913520

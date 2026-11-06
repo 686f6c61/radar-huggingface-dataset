@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mirayu models es un repositorio de HuggingFace que agrupa los ficheros ONNX utilizados por Mirayu, una aplicacion de escritorio libre y de codigo abierto para el retoque de retratos por lotes. No es un modelo entrenado por su autor: el repositorio actua como espejo y catalogo de modelos de vision por computador de terceros, con los que la aplicacion ejecuta tareas como deteccion facial, reconocimiento facial, segmentacion de rostro, matting de retrato, estimacion de pose multi-persona e inpainting.
+Mirayu models es un repositorio de Hugging Face que agrupa los ficheros ONNX utilizados por Mirayu, una aplicacion de escritorio libre y de codigo abierto para el retoque de retratos por lotes. No es un modelo entrenado por su autor: el repositorio actua como espejo y catalogo de modelos de vision por computador de terceros, con los que la aplicacion ejecuta tareas como deteccion facial, reconocimiento facial, segmentacion de rostro, matting de retrato, estimacion de pose multi-persona e inpainting.
 
 El repositorio lo mantiene el usuario thedemons y contiene siete carpetas, cada una correspondiente a un modelo distinto. Seis de ellos son copias sin modificar de ficheros publicados por sus autores originales, y uno (MediaPipe Face Landmarker) es una conversion de formato de TFLite a ONNX realizada por el propio proyecto. Cada carpeta conserva la licencia de su fuente original, de modo que la licencia del repositorio es "por modelo" y no una licencia unica.
 
@@ -92,8 +92,8 @@ Comparativa de los componentes incluidos frente a alternativas de la misma categ
 
 | Modelo | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| YuNet (incluido) | Deteccion facial | MIT | HuggingFace OpenCV Zoo | Licencia permisiva, permite uso comercial |
-| SFace (incluido) | Reconocimiento facial | Apache-2.0 | HuggingFace OpenCV Zoo | Alternativa permisiva a modelos con licencia restringida |
+| YuNet (incluido) | Deteccion facial | MIT | Hugging Face OpenCV Zoo | Licencia permisiva, permite uso comercial |
+| SFace (incluido) | Reconocimiento facial | Apache-2.0 | Hugging Face OpenCV Zoo | Alternativa permisiva a modelos con licencia restringida |
 | ArcFace / SCRFD (no incluidos) | Deteccion y reconocimiento facial | solo investigacion no comercial | No redistribuibles | InsightFace; Mirayu los descarga desde sus publicadores y no los refleja en este repositorio |
 | MediaPipe Face Landmarker (incluido) | Deteccion, landmarks y blendshapes | Apache-2.0 | Google | Cubre deteccion y expresion en un solo bundle |
 | BiSeNet ResNet-18 (incluido) | Parsing facial (19 clases) | codigo MIT; pesos sobre CelebAMask-HQ | yakhyo/face-parsing | Los pesos heredan restricciones de uso del dataset |
@@ -127,7 +127,7 @@ No se dispone de datos de benchmarks que permitan comparar la precision de estos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thedemons/mirayu-models
+- Repositorio en Hugging Face: https://huggingface.co/thedemons/mirayu-models
 - Notas de licencia: https://huggingface.co/thedemons/mirayu-models/blob/main/README.md#licence-notes
 - Aplicacion Mirayu: https://github.com/thedemons/Mirayu
 - Catalogo de modelos de Mirayu: https://github.com/thedemons/Mirayu/tree/main/catalog/models

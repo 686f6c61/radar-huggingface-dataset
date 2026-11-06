@@ -4,7 +4,7 @@
 
 SlideChat es un asistente de visión-lenguaje (vision-language assistant) de código abierto, desarrollado por el laboratorio General Medical AI (GMAI Lab), especializado en el análisis de imágenes de patología de diapositivas completas (whole-slide images, WSI). Se presenta como el primer modelo de este tipo capaz de comprender imágenes de gigapíxeles, un dominio técnicamente complejo por el tamaño y la resolución de las muestras histopatológicas. El modelo genera descripciones exhaustivas de las diapositivas y responde de forma contextualmente relevante a diversas consultas clínicas y de investigación.
 
-El proyecto libera tres recursos: el propio modelo SlideChat, el conjunto de instrucciones SlideInstruction y el banco de evaluación SlideBench, todos ellos de acceso abierto para fomentar la investigación en patología computacional. Los pesos del modelo están alojados en HuggingFace bajo acceso restringido (gated), con un tamaño de repositorio de 107,1 GB, lo que sugiere una arquitectura de gran escala. Aunque la ficha de HuggingFace no especifica la arquitectura interna ni el número de parámetros, la magnitud del repositorio apunta a un modelo multimodal de gran tamaño, probablemente basado en un codificador de visión adaptado a WSI y un modelo de lenguaje de propósito general.
+El proyecto libera tres recursos: el propio modelo SlideChat, el conjunto de instrucciones SlideInstruction y el banco de evaluación SlideBench, todos ellos de acceso abierto para fomentar la investigación en patología computacional. Los pesos del modelo están alojados en Hugging Face bajo acceso restringido (gated), con un tamaño de repositorio de 107,1 GB, lo que sugiere una arquitectura de gran escala. Aunque la ficha de Hugging Face no especifica la arquitectura interna ni el número de parámetros, la magnitud del repositorio apunta a un modelo multimodal de gran tamaño, probablemente basado en un codificador de visión adaptado a WSI y un modelo de lenguaje de propósito general.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 - VRAM estimada: no disponible. El tamano del repositorio (107,1 GB) sugiere que los pesos completos requieren multiples GPUs de alta capacidad (por ejemplo, 2-4 A100 de 80 GB o equivalentes) para inferencia en precision completa.
 - GPU recomendadas: no especificadas. Dado el volumen, se necesitarian GPUs de datacenter (A100, H100) o, en su defecto, cuantizacion agresiva para intentar ejecucion en GPUs de consumo (RTX 4090 con 24 GB no seria suficiente para los pesos completos).
 - No se confirma si el modelo cabe en una GPU de consumo; probablemente no sin cuantizacion.
-- Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de vision-lenguaje, requeriria un framework compatible con multimodalidad (por ejemplo, transformers de HuggingFace o similar).
+- Opciones de despliegue: no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser un modelo de vision-lenguaje, requeriria un framework compatible con multimodalidad (por ejemplo, transformers de Hugging Face o similar).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,7 +60,7 @@ No se dispone de informacion sobre modelos comparables en el dominio de WSI con 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: los pesos requieren aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigacion sin aprobacion previa.
+- Acceso restringido: los pesos requieren aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigacion sin aprobacion previa.
 - Licencia no especificada: no se indica si el uso comercial esta permitido, lo que genera incertidumbre legal para su integracion en productos.
 - Sesgos y alucinaciones: al ser un modelo de vision-lenguaje entrenado con datos de patologia, puede presentar sesgos derivados de la distribucion de los datos de entrenamiento (por ejemplo, sobrerrepresentacion de ciertos tipos de tejido o poblaciones) y riesgo de generar descripciones plausibles pero incorrectas.
 - Limitaciones de contexto: no se conoce la longitud de contexto, pero las WSI de gigapixeles requieren estrategias de procesamiento por tiles; el modelo podria tener limitaciones para capturar relaciones globales entre regiones distantes.
@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables en el dominio de WSI con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/General-Medical-AI/SlideChat_Weight
+- Modelo en Hugging Face: https://huggingface.co/General-Medical-AI/SlideChat_Weight
 - Pagina del proyecto: https://uni-medical.github.io/SlideChat.github.io/
 - Pagina del laboratorio GMAI: https://uni-medical.github.io/gmai-web/projects/slide-chat/
 - Repositorio GitHub: https://github.com/uni-medical/SlideChat

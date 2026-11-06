@@ -82,8 +82,8 @@ La comparativa se basa en caracteristicas generales, no en benchmarks publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talisma/Gemma-4-E4B-Reasoning
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B-it
+- Modelo en Hugging Face: https://huggingface.co/talisma/Gemma-4-E4B-Reasoning
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B-it
 - Reporte tecnico (arxiv): https://arxiv.org/abs/2607.02770
 - Model card oficial de Google: https://ai.google.dev/gemma/docs/core/model_card_4
 - Pagina de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

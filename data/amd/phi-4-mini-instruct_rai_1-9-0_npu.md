@@ -4,7 +4,7 @@
 
 Phi-4-mini-instruct_rai_1.9.0_npu es una distribucion optimizada del modelo Phi-4-mini-instruct de Microsoft, publicada por AMD para su ejecucion sobre las NPU (unidades de procesamiento neuronal) de la plataforma Ryzen AI. El modelo base pertenece a la familia Phi-4 de modelos de lenguaje compactos, disenados para ofrecer razonamiento de calidad en un tamano reducido que pueda ejecutarse en hardware de consumo. Esta version concreta no es un modelo nuevo, sino una conversion a formato ONNX con cuantizacion Quark y codigo personalizado para aprovechar el motor de inferencia Ryzen AI 1.9.0.
 
-El interes de esta publicacion reside en que acerca la inferencia local de un modelo de clase 4B a los PC con procesadores AMD Ryzen AI, permitiendo ejecutar tareas de generacion de texto y conversacion sin depender de GPU dedicada ni de la nube. El repositorio ocupa 5,7 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El interes de esta publicacion reside en que acerca la inferencia local de un modelo de clase 4B a los PC con procesadores AMD Ryzen AI, permitiendo ejecutar tareas de generacion de texto y conversacion sin depender de GPU dedicada ni de la nube. El repositorio ocupa 5,7 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 La informacion publica disponible es limitada: la model card de esta distribucion no detalla arquitectura interna, datos de entrenamiento ni resultados de benchmarks. Los datos que se ofrecen a continuacion sobre el modelo base proceden del conocimiento general de la familia Phi-4-mini y deben contrastarse con la documentacion oficial de Microsoft antes de usarse en produccion.
 
@@ -74,7 +74,7 @@ La comparativa se basa en caracteristicas generales de los modelos citados; los 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Solo ingles: los metadatos declaran unicamente el idioma `en`; no se garantiza calidad en castellano ni en otros idiomas.
 - Dependencia de hardware: el modelo solo funciona con el runtime Ryzen AI 1.9.0 y NPU compatibles; no es portable a otras plataformas sin reconversion.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje compactos; especialmente en tareas de razonamiento largo o datos factuales.
@@ -86,7 +86,7 @@ La comparativa se basa en caracteristicas generales de los modelos citados; los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Phi-4-mini-instruct_rai_1.9.0_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Phi-4-mini-instruct_rai_1.9.0_npu
 - Modelo base (Microsoft): https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Documentacion de Ryzen AI: https://ryzenai.docs.amd.com/
 - Toolkit Quark de AMD: https://quark.docs.amd.com/

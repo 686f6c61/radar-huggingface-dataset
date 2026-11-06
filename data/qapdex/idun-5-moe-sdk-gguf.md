@@ -2,7 +2,7 @@
 
 ## Resumen
 
-**idun-gguf** es un paquete de software que implementa un agente conversacional con herramientas (tool-agent) completamente local, desarrollado por Qapdex. No es un modelo de lenguaje en sí, sino un framework que orquesta modelos GGUF ejecutados a través de Ollama, replicando el patrón del SDK propietario idun-sdk pero sin dependencia de servicios en la nube. El repositorio en HuggingFace se presenta bajo el nombre `Idun-5-MoE-sdk-GGUF`, aunque la documentación no especifica ningún modelo base propio; el autor recomienda usar `qwen3:8b` (GGUF, Q4_K_M, 5.2 GB) como motor por defecto, con alternativas como `qwen3:14b`, `llama3.1:8b` o `mistral-nemo:12b`.
+**idun-gguf** es un paquete de software que implementa un agente conversacional con herramientas (tool-agent) completamente local, desarrollado por Qapdex. No es un modelo de lenguaje en sí, sino un framework que orquesta modelos GGUF ejecutados a través de Ollama, replicando el patrón del SDK propietario idun-sdk pero sin dependencia de servicios en la nube. El repositorio en Hugging Face se presenta bajo el nombre `Idun-5-MoE-sdk-GGUF`, aunque la documentación no especifica ningún modelo base propio; el autor recomienda usar `qwen3:8b` (GGUF, Q4_K_M, 5.2 GB) como motor por defecto, con alternativas como `qwen3:14b`, `llama3.1:8b` o `mistral-nemo:12b`.
 
 La relevancia actual radica en la creciente demanda de agentes autónomos que operen sin conexión, con privacidad total y sin costes de API. idun-gguf ofrece una interfaz unificada (CLI, Python y servidor MCP) que integra siete herramientas (búsqueda web, memoria vectorial, operaciones de archivos y ejecución de código) y devuelve tanto la respuesta final como la trayectoria completa del agente. Está pensado para desarrolladores que quieren desplegar asistentes con capacidades de razonamiento multi-paso en entornos locales, con requisitos modestos de hardware (CPU y ~8 GB de RAM).
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para comparar este paquete con otros to
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Qapdex/Idun-5-MoE-sdk-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Qapdex/Idun-5-MoE-sdk-GGUF
 - Repositorio GitHub de idun-sdk (referenciado en la documentación): https://github.com/qapdex-maker/idun-sdk
 - Documentación de Ollama: https://ollama.com/

@@ -19,7 +19,7 @@ Dada la falta de información oficial, esta ficha se basa principalmente en infe
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta multiples idiomas, pero no se confirma) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42 | 8B (inferido) | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B (base) | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace |
+| AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42 | 8B (inferido) | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B (base) | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. El modelo base Llama 3.1 8B tiene benchmarks publicos ampliamente conocidos, pero este fine-tuning no los reporta. Tampoco se conocen otros fine-tunings de SQuAD sobre Llama 3.1 con los que comparar directamente.
 
@@ -78,5 +78,5 @@ No se dispone de datos de rendimiento para comparar. El modelo base Llama 3.1 8B
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42
 - Paper de SQuAD 2.0 (referenciado en los tags): https://arxiv.org/abs/1910.09700

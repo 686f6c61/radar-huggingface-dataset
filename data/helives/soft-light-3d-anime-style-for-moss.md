@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Soft-light-3D-Anime-style-For-MOSS es un LoRA de texto a imagen desarrollado por el usuario Helives, publicado en HuggingFace y diseñado para funcionar sobre el modelo base OpenMOSS-Team/MOSS-Image-Base mediante la librería diffusers. No se trata de un modelo de lenguaje, sino de un adaptador de bajo rango (LoRA/DoRA) que modifica el estilo visual de las generaciones del modelo base, concretamente para producir imágenes con estética de anime 3D con cel-shading (el llamado estilo "三渲二", es decir, renderizado 3D con sombreado plano tipo 2D) y una iluminación suave y con profundidad.
+Soft-light-3D-Anime-style-For-MOSS es un LoRA de texto a imagen desarrollado por el usuario Helives, publicado en Hugging Face y diseñado para funcionar sobre el modelo base OpenMOSS-Team/MOSS-Image-Base mediante la librería diffusers. No se trata de un modelo de lenguaje, sino de un adaptador de bajo rango (LoRA/DoRA) que modifica el estilo visual de las generaciones del modelo base, concretamente para producir imágenes con estética de anime 3D con cel-shading (el llamado estilo "三渲二", es decir, renderizado 3D con sombreado plano tipo 2D) y una iluminación suave y con profundidad.
 
 La versión actual de la ficha es la V2, que abandona el formato LoRA clásico en favor de DoRA con rango 64 (RANK64), frente al RANK16 de la V1. Según el autor, esta versión corrige problemas de la anterior como la pérdida de calidad, la tendencia a imágenes con brillos blancos excesivos y la desproporción de las cabezas de los personajes, además de lograr sombras más profundas y un efecto más "3D". El autor indica que el adaptador se ha destilado a partir de imágenes de estilo cel-shaded 3D generadas por él mismo con el modelo Anima.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - VRAM estimada para inferencia: no disponible. Al ser un adaptador de 0,3 GB, el requisito dominante es el del modelo base MOSS-Image-Base, no el del LoRA.
 - GPU recomendadas: no disponible; para difusion de imagenes en general, una GPU consumer con 8-24 GB de VRAM (por ejemplo RTX 3060, RTX 4090) suele ser suficiente, pero esto depende del modelo base.
 - Consumer GPU: el adaptador en si (0,3 GB) cabe en cualquier GPU moderna; la viabilidad depende de MOSS-Image-Base.
-- Opciones de despliegue: libreria diffusers de HuggingFace; los ejemplos del autor indican compatibilidad con ComfyUI. No hay informacion sobre soporte en otras herramientas (A1111, Forge, etc.).
+- Opciones de despliegue: libreria diffusers de Hugging Face; los ejemplos del autor indican compatibilidad con ComfyUI. No hay informacion sobre soporte en otras herramientas (A1111, Forge, etc.).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ No hay datos de rendimiento comparativo publicados.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Helives/Soft-light-3D-Anime-style-For-MOSS
+- Ficha en Hugging Face: https://huggingface.co/Helives/Soft-light-3D-Anime-style-For-MOSS
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Pagina en Civitai (enlazada por el autor): https://civitai.red/models/3010353/soft-light-3d-anime-style-3d-for-moss

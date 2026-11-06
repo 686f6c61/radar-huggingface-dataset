@@ -82,8 +82,8 @@ No se han publicado en la información disponible modelos comparables con métri
 
 | Modelo | Rol | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Qwen/Qwen2.5-0.5B` | Checkpoint base preentrenado, generativo | ~0,49 B | 32 768 tokens | apache-2.0 | HuggingFace |
-| `andreadm/reddit-pulse-qwen2.5_0.5b-qdora` | Adaptador QDoRA+ de clasificación direccional (down / neutral / up) | ~0,49 B (base) + adaptador | Heredado del base; truncado a 1024 en entrenamiento e inferencia | apache-2.0 | HuggingFace, 0 descargas |
+| `Qwen/Qwen2.5-0.5B` | Checkpoint base preentrenado, generativo | ~0,49 B | 32 768 tokens | apache-2.0 | Hugging Face |
+| `andreadm/reddit-pulse-qwen2.5_0.5b-qdora` | Adaptador QDoRA+ de clasificación direccional (down / neutral / up) | ~0,49 B (base) + adaptador | Heredado del base; truncado a 1024 en entrenamiento e inferencia | apache-2.0 | Hugging Face, 0 descargas |
 
 Alternativas comparables de terceros (otros clasificadores de expectativas de inflación sobre texto, modelos de sentimiento financiero o clasificadores sobre el mismo conjunto de referencia): no disponible.
 
@@ -102,7 +102,7 @@ Alternativas comparables de terceros (otros clasificadores de expectativas de in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-qwen2.5_0.5b-qdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-qwen2.5_0.5b-qdora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio de código (ajuste fino e inferencia sobre el corpus completo): https://github.com/andrea-dm/reddit-pulse
 - Artículo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026). *Reddit's 'pulse' on US inflation: forecasting with large language models*. Journal of Applied Econometrics, en prensa.

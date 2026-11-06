@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BridgeQuant 76M es un modelo de visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario twanghcmut en HuggingFace. Forma parte del proyecto BridgeQuant, cuyo código está disponible en el repositorio VLAOpt/bridgequant-async. El modelo se ha entrenado de forma conjunta en tres tareas del benchmark RoboTwin 2.0: `beat_block_hammer`, `stack_blocks_two` y `place_empty_cup`, con 50 demostraciones limpias por tarea y articulaciones relativas del brazo.
+BridgeQuant 76M es un modelo de visión-lenguaje-acción (VLA) orientado a robótica, publicado por el usuario twanghcmut en Hugging Face. Forma parte del proyecto BridgeQuant, cuyo código está disponible en el repositorio VLAOpt/bridgequant-async. El modelo se ha entrenado de forma conjunta en tres tareas del benchmark RoboTwin 2.0: `beat_block_hammer`, `stack_blocks_two` y `place_empty_cup`, con 50 demostraciones limpias por tarea y articulaciones relativas del brazo.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un checkpoint de investigación de 64.990.891 parámetros (aproximadamente 76M según la nomenclatura del autor) que, según la propia model card, alcanzó un 0% de éxito en el simulador con este presupuesto de entrenamiento multi-tarea; el autor indica que el checkpoint funcional de RoboTwin es el modelo de una sola tarea de 7M (`bridgequant-robotwin-7m-hammer`). Por otro, sirve como referencia de las limitaciones prácticas del entrenamiento multi-tarea en modelos VLA pequeños.
 
@@ -80,6 +80,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/twanghcmut/bridgequant-robotwin-76m
+- Hugging Face: https://huggingface.co/twanghcmut/bridgequant-robotwin-76m
 - Código del proyecto: https://github.com/VLAOpt/bridgequant-async
 - Checkpoint funcional de una sola tarea citado por el autor: `bridgequant-robotwin-7m-hammer` (no se proporciona URL directa en la información disponible)

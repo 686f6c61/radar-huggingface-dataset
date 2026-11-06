@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mbfa-other-alphabetic es un codificador de fonemas y alineador forzado basado en una CNN sin contexto, desarrollado por el autor de HuggingFace «Tabahi» dentro del proyecto p4mbfa (sucesor de CUPE / p3cupe). No es un modelo generativo ni un LLM: recibe audio mono a 16 kHz y una secuencia conocida de fonemas, y devuelve los límites temporales de cada fonema. Cada fotograma de 5 ms se clasifica usando como máximo 120 ms de audio (campo receptivo de 38,9 ms), de modo que el modelo no puede aprender la fonotáctica de ningún idioma; los límites se obtienen con un decodificador de Viterbi segmental sobre la secuencia de fonemas conocida y se refinan a precisión sub-fotograma en el cruce de posteriores vecinas.
+mbfa-other-alphabetic es un codificador de fonemas y alineador forzado basado en una CNN sin contexto, desarrollado por el autor de Hugging Face «Tabahi» dentro del proyecto p4mbfa (sucesor de CUPE / p3cupe). No es un modelo generativo ni un LLM: recibe audio mono a 16 kHz y una secuencia conocida de fonemas, y devuelve los límites temporales de cada fonema. Cada fotograma de 5 ms se clasifica usando como máximo 120 ms de audio (campo receptivo de 38,9 ms), de modo que el modelo no puede aprender la fonotáctica de ningún idioma; los límites se obtienen con un decodificador de Viterbi segmental sobre la secuencia de fonemas conocida y se refinan a precisión sub-fotograma en el cruce de posteriores vecinas.
 
 El modelo cubre el grupo lingüístico «other_alphabetic» de standard_g2p y se ha entrenado con las 39,8 horas de FLEURS para amárico, griego, armenio, georgiano y coreano. Con 14,77 millones de parámetros y un repositorio de 0,1 GB, es un componente ligero pensado para integrarse en pipelines de anotación fonética y de preparación de corpus, no para inferencia de propósito general.
 
@@ -78,7 +78,7 @@ Advertencia explícita del autor: los valores `val_*` se calculan sobre clips re
 
 | Modelo | Tipo | Parámetros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mbfa-other-alphabetic | CNN sin contexto + Viterbi segmental | 14,77 M | am, el, hy, ka, ko | AGPL-3.0 | HuggingFace + GitHub |
+| mbfa-other-alphabetic | CNN sin contexto + Viterbi segmental | 14,77 M | am, el, hy, ka, ko | AGPL-3.0 | Hugging Face + GitHub |
 | p3cupe (CUPE, predecesor del mismo autor) | Alineador forzado de la familia CUPE | no disponible | no disponible | no disponible | repositorio del autor (referenciado en la model card) |
 | standard_g2p / CharsiuG2P | Herramienta G2P y de inventarios fonéticos, no alineador | no disponible | multilingüe (inventario de oro `9438371ed6dd`) | no disponible | GitHub `tabahi/CharsiuG2P` |
 | Montreal Forced Aligner (MFA) | Alineador forzado GMM-HMM sobre Kaldi | no disponible | multilingüe con diccionarios y modelos acústicos por idioma | no disponible | distribución independiente, no verificada en esta búsqueda |
@@ -95,12 +95,12 @@ La comparación cuantitativa con alternativas no es posible con la información 
 - El diseño sin contexto impide explotar la fonotáctica: en fronteras ambiguas o segmentos muy cortos la evidencia acústica local puede ser insuficiente.
 - Licencia AGPL-3.0: es copyleft fuerte. Integrar el modelo en un servicio de red puede obligar a liberar el código de la aplicación bajo la misma licencia; conviene revisión legal antes de uso comercial.
 - El checkpoint de entrenamiento `.ckpt` es un pickle de PyTorch Lightning: cargarlo ejecuta código arbitrario, y el autor advierte explícitamente que solo se cargue si se confía en el repositorio.
-- Estado del proyecto: cero descargas y cero «likes» en el momento de la ficha, creado y actualizado el 27 de octubre de 2026; no hay pipeline declarado en HuggingFace ni histórico de mantenimiento.
+- Estado del proyecto: cero descargas y cero «likes» en el momento de la ficha, creado y actualizado el 27 de octubre de 2026; no hay pipeline declarado en Hugging Face ni histórico de mantenimiento.
 - No hay cuantizaciones publicadas ni guía de despliegue en producción (exportación, batching, servidor de inferencia).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-other-alphabetic
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-other-alphabetic
 - Código de inferencia y entrenamiento (p4mbfa): https://github.com/tabahi/bfa_models
 - standard_g2p / CharsiuG2P (inventarios y G2P): https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/fleurs

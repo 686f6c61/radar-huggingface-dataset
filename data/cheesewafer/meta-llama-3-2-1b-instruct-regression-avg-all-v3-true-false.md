@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cheesewafer/Meta-Llama-3.2-1B-Instruct-regression-avg-all-v3-True-False` es un fine-tuning del modelo base Llama 3.2 1B Instruct de Meta, publicado por el usuario "cheesewafer" en HuggingFace. Está registrado con el pipeline de `text-classification` y el nombre sugiere que se trata de un modelo de regresión que promedia puntuaciones (posiblemente de múltiples evaluadores) y produce una salida binaria (True/False). Sin embargo, la model card está completamente vacía y no se proporciona ninguna documentación técnica, datos de entrenamiento, ni especificaciones adicionales.
+El modelo `cheesewafer/Meta-Llama-3.2-1B-Instruct-regression-avg-all-v3-True-False` es un fine-tuning del modelo base Llama 3.2 1B Instruct de Meta, publicado por el usuario "cheesewafer" en Hugging Face. Está registrado con el pipeline de `text-classification` y el nombre sugiere que se trata de un modelo de regresión que promedia puntuaciones (posiblemente de múltiples evaluadores) y produce una salida binaria (True/False). Sin embargo, la model card está completamente vacía y no se proporciona ninguna documentación técnica, datos de entrenamiento, ni especificaciones adicionales.
 
 El modelo tiene 1.235.816.448 parámetros (aproximadamente 1,2 mil millones) y los pesos están en formato `safetensors`. El tamaño del repositorio es de 9,9 GB, lo que resulta inusualmente grande para un modelo de 1,2B, lo que sugiere que podría contener múltiples archivos de pesos, versiones o cuantizaciones adicionales. Al no existir información sobre su licencia, idiomas soportados o proceso de entrenamiento, su uso en producción requiere una evaluación previa y contacto con el autor.
 
@@ -56,7 +56,7 @@ Al tratarse de un modelo de aproximadamente 1,2 mil millones de parametros, los 
 - VRAM estimada para inferencia: con pesos en FP32, un modelo de 1,2B requiere aproximadamente 4,9 GB de VRAM. Con cuantizacion INT8 se reduce a unos 1,2 GB, y con INT4 a unos 0,6 GB.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM (por ejemplo, RTX 2060, RTX 3060, GTX 1080 Ti) puede ejecutar el modelo en FP16. Para cuantizaciones mas agresivas, incluso GPUs con 4 GB podrian ser suficientes.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en GPUs consumer de gama media y alta.
-- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, HuggingFace TGI, o mediante la libreria transformers directamente. Para cuantizacion, se podrian usar herramientas como llama.cpp u Ollama, aunque no se ha confirmado que los pesos esten en formato GGUF.
+- Opciones de despliegue: al ser un modelo de transformers, se puede servir con vLLM, Hugging Face TGI, o mediante la libreria transformers directamente. Para cuantizacion, se podrian usar herramientas como llama.cpp u Ollama, aunque no se ha confirmado que los pesos esten en formato GGUF.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna, un modelo de 1,2B puede procesar cientos de tokens por segundo, pero depende del hardware y de la implementacion.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cheesewafer/Meta-Llama-3.2-1B-Instruct-regression-avg-all-v3-True-False
+- Modelo en Hugging Face: https://huggingface.co/cheesewafer/Meta-Llama-3.2-1B-Instruct-regression-avg-all-v3-True-False
 - Modelo base Llama 3.2 1B (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Documentacion de Llama 3.2 1B Instruct en NVIDIA NIM: https://docs.api.nvidia.com/nim/reference/meta-llama-3_2-1b-instruct
 - Model card de Llama 3.2 1B Instruct en NVIDIA: https://build.nvidia.com/meta/llama-3.2-1b-instruct/modelcard

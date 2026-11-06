@@ -81,7 +81,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy-v2
+- Repositorio Hugging Face: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy-v2
 - Version V1 (sin keyframes): https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy
 - Modelo base Lightricks/LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia: https://huggingface.co/BennyDaBall/LTX-2.5-22b-distilled-nvfp4-comfy-v2/blob/main/LICENSE.txt

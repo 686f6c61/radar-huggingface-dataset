@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-2B-Instruct-4bit (este) | 2,13 B | 4 bits MLX | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3-VL-2B-Instruct (original) | ~2,13 B | BF16 (sin cuantizar) | no disponible | apache-2.0 | HuggingFace, referencia de la conversion |
+| Qwen3-VL-2B-Instruct-4bit (este) | 2,13 B | 4 bits MLX | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3-VL-2B-Instruct (original) | ~2,13 B | BF16 (sin cuantizar) | no disponible | apache-2.0 | Hugging Face, referencia de la conversion |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de rendimiento que permitan establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento que permit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matthewj-t6/Qwen3-VL-2B-Instruct-4bit
+- Repositorio en Hugging Face: https://huggingface.co/matthewj-t6/Qwen3-VL-2B-Instruct-4bit
 - Modelo original: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Herramienta de conversion: mlx-vlm (version 0.3.4), disponible en el ecosistema MLX
 - Nota: los resultados de busqueda web proporcionados (temas de ChatGPT, jailbreaks y suscripciones) no contienen informacion relevante sobre este modelo.

@@ -68,5 +68,5 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no existe una 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mmehta-nikhil/text-image-retrieval-notes
+- Repositorio en Hugging Face: https://huggingface.co/mmehta-nikhil/text-image-retrieval-notes
 - Perfil de Google Scholar del autor: https://scholar.google.com/citations?user=HxebdycAAAAJ&hl=en

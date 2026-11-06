@@ -113,7 +113,7 @@ La familia completa consta de 58 codificadores (5 radios espaciales × 6 longitu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L4
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L4
 - Colección con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Variante recomendada (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Variante MAE recomendada (r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2

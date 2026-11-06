@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa cuantitativa. Existen otros checkpoints SDXL con fines similares, como `John6666/lustify-sdxl-nsfwsfw-v2-sdxl` y `BKM1804/lustify-sdxl` en HuggingFace, así como versiones en Tensor.Art (LUSTIFY SDXL ENDGAME DMD2 y LUSTIFY V7). Sin embargo, no se han publicado métricas comparativas de rendimiento, calidad de imagen ni requisitos de hardware para estos modelos. La principal diferencia de este checkpoint es su optimización específica para NPU de Qualcomm, que no está documentada en los otros.
+No se dispone de información suficiente para una comparativa cuantitativa. Existen otros checkpoints SDXL con fines similares, como `John6666/lustify-sdxl-nsfwsfw-v2-sdxl` y `BKM1804/lustify-sdxl` en Hugging Face, así como versiones en Tensor.Art (LUSTIFY SDXL ENDGAME DMD2 y LUSTIFY V7). Sin embargo, no se han publicado métricas comparativas de rendimiento, calidad de imagen ni requisitos de hardware para estos modelos. La principal diferencia de este checkpoint es su optimización específica para NPU de Qualcomm, que no está documentada en los otros.
 
 ## Limitaciones y advertencias
 
@@ -72,9 +72,9 @@ No se dispone de información suficiente para una comparativa cuantitativa. Exis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mr-J-369/lustifyNSFWCheckpoint_v40DMD2
+- Hugging Face: https://huggingface.co/Mr-J-369/lustifyNSFWCheckpoint_v40DMD2
 - Fuente original en Civitai: https://civitai.red/models/573152/lustify-nsfw-checkpoint?modelVersionId=938628
 - App Fancy AI en Google Play: https://play.google.com/store/apps/details?id=com.mrj.fancyai
 - Repositorio GitHub de Fancy AI: https://github.com/Mr-J-369/Fancy-Ai
 - Perfil de GitHub del autor: https://github.com/Mr-J-369/
-- Modelos similares en HuggingFace: https://huggingface.co/John6666/lustify-sdxl-nsfwsfw-v2-sdxl y https://huggingface.co/BKM1804/lustify-sdxl
+- Modelos similares en Hugging Face: https://huggingface.co/John6666/lustify-sdxl-nsfwsfw-v2-sdxl y https://huggingface.co/BKM1804/lustify-sdxl

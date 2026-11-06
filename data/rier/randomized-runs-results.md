@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rier/randomized-runs-results` es un repositorio alojado en HuggingFace por el usuario `rier`, etiquetado con `safetensors` y `region:us`, con un tamano de 29,5 GB y sin pipeline, licencia ni idiomas declarados. El propio nombre del repositorio sugiere que se trata de un contenedor de resultados de ejecuciones aleatorizadas (por ejemplo, barridos de hiperparametros, semillas multiples o variantes de entrenamiento) mas que de un modelo final curado y listo para produccion. No se dispone de informacion publica adicional sobre su contenido, proposito o autoria.
+`rier/randomized-runs-results` es un repositorio alojado en Hugging Face por el usuario `rier`, etiquetado con `safetensors` y `region:us`, con un tamano de 29,5 GB y sin pipeline, licencia ni idiomas declarados. El propio nombre del repositorio sugiere que se trata de un contenedor de resultados de ejecuciones aleatorizadas (por ejemplo, barridos de hiperparametros, semillas multiples o variantes de entrenamiento) mas que de un modelo final curado y listo para produccion. No se dispone de informacion publica adicional sobre su contenido, proposito o autoria.
 
 El repositorio acumula 0 descargas y 1 like en el momento de la consulta, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad. Las busquedas web realizadas no devuelven ningun resultado relacionado con inteligencia artificial: todos los enlaces apuntan a una marca de moda llamada RIER, por lo que no aportan informacion tecnica relevante sobre este artefacto.
 
@@ -47,7 +47,7 @@ No es posible recomendar casos de uso concretos sin conocer la naturaleza del ar
 
 - Inspeccion del contenido del repositorio: descargar los ficheros y listar su estructura para determinar si contiene uno o varios modelos, configuraciones de entrenamiento o resultados de experimentos.
 - Lectura de ficheros de configuracion (`config.json`, `generation_config.json`) para identificar arquitectura, numero de parametros y vocabulario.
-- Verificacion de la licencia real en los ficheros del repositorio, dado que el campo de licencia en HuggingFace aparece como no disponible.
+- Verificacion de la licencia real en los ficheros del repositorio, dado que el campo de licencia en Hugging Face aparece como no disponible.
 - Analisis de los tensores con herramientas como `safetensors` para estimar el numero de parametros y el tipo de pesos.
 - Comprobacion de dependencias de codigo personalizado (`trust_remote_code`) antes de cargar el modelo, por riesgo de ejecucion de codigo arbitrario.
 - Contacto con el autor a traves de la pagina del repositorio para solicitar documentacion adicional antes de cualquier uso en produccion.
@@ -83,5 +83,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rier/randomized-runs-results
+- Repositorio en Hugging Face: https://huggingface.co/rier/randomized-runs-results
 - Enlaces de busqueda web: los resultados obtenidos corresponden a la marca de moda RIER (`https://rierofficial.com/`, `https://rierstudio.shop/`, `https://therier.shop/`, `https://lelabostore.com/collections/rier`) y no guardan relacion con este repositorio de IA. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

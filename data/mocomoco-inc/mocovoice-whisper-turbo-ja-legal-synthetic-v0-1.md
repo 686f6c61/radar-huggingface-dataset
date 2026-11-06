@@ -73,8 +73,8 @@ La unica comparativa disponible es contra el modelo base openai/whisper-large-v3
 - La licencia MIT permite uso comercial, pero el modelo no esta certificado para aplicaciones criticas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-legal-synthetic-v0.1
+- Modelo en Hugging Face: https://huggingface.co/mocomoco-inc/mocovoice-whisper-turbo-ja-legal-synthetic-v0.1
 - Producto mocoVoice (pagina en ingles): https://products.mocomoco.ai/en/
 - Sitio corporativo de mocomoco inc. (japones): https://www.mocomoco.ai/
 - Pagina de producto mocoVoice (japones): https://products.mocomoco.ai/
-- Space de Whisper Turbo en HuggingFace (referencia del modelo base): https://huggingface.co/spaces/hf-audio/whisper-large-v3-turbo
+- Space de Whisper Turbo en Hugging Face (referencia del modelo base): https://huggingface.co/spaces/hf-audio/whisper-large-v3-turbo

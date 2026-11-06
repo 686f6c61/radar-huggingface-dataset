@@ -95,7 +95,7 @@ La comparación se limita a los modelos del propio ecosistema microduck porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r3
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r3
 - Modelo padre F2: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r2
 - Modelo base v4: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v4
 - Modelo base v3: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3

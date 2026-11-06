@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Canvas / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| canvit/probe-ade20k-40k-s512-c24-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | 159.894 | Canvas 24 × 24 | MIT | HuggingFace (6 descargas) |
-| canvit/probe-ade20k-40k-s512-c10-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | No disponible | Canvas 10 × 10 | MIT (segun colección) | HuggingFace |
-| canvit/probe-ade20k-40k-s512-c12-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | No disponible | Canvas 12 × 12 | MIT (segun colección) | HuggingFace |
-| canvit/probe-ade20k-40k-s512-c32-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | No disponible | Canvas 32 × 32 | MIT (segun colección) | HuggingFace |
-| canvit/probe-ade20k-40k-s512-c64-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | No disponible | Canvas 64 × 64 | MIT (segun colección) | HuggingFace |
+| canvit/probe-ade20k-40k-s512-c24-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | 159.894 | Canvas 24 × 24 | MIT | Hugging Face (6 descargas) |
+| canvit/probe-ade20k-40k-s512-c10-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | No disponible | Canvas 10 × 10 | MIT (segun colección) | Hugging Face |
+| canvit/probe-ade20k-40k-s512-c12-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | No disponible | Canvas 12 × 12 | MIT (segun colección) | Hugging Face |
+| canvit/probe-ade20k-40k-s512-c32-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | No disponible | Canvas 32 × 32 | MIT (segun colección) | Hugging Face |
+| canvit/probe-ade20k-40k-s512-c64-in21k | Sonda lineal ADE20K sobre CanViT-B/16 | No disponible | Canvas 64 × 64 | MIT (segun colección) | Hugging Face |
 
 No se dispone de comparaciones con sondas de segmentación sobre otros backbones (por ejemplo, DINOv2 o SAM) en la información proporcionada, ni de cifras de rendimiento que permitan ordenar estas variantes.
 
@@ -91,7 +91,7 @@ No se dispone de comparaciones con sondas de segmentación sobre otros backbones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c24-in21k
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c24-in21k
 - Modelo base: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02
 - Paper (NeurIPS 2026): https://arxiv.org/abs/2603.22570
 - Código: https://github.com/m2b3/CanViT

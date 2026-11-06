@@ -18,7 +18,7 @@ La arquitectura combina convoluciones cortas con puerta, atención de ventana de
 | Longitud de contexto | 262.144 tokens (entrada + salida) |
 | Tipos de cuantizacion | oQ8e (8 bits uniformes, grupo 64, modo affine); la familia incluye también oQ6e, oQ5e y oQ4e en repositorios separados |
 | Idiomas soportados | 16: inglés, árabe, chino, francés, alemán, italiano, japonés, coreano, portugués, español, vietnamita, tailandés, indonesio, hindi, ruso y polaco |
-| Licencia | LFM Open License v1.0 (`lfm1.0`, marcada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (`lfm1.0`, marcada como `other` en Hugging Face) |
 | Formato de pesos | MLX safetensors (un único `model.safetensors` de 1.837.281.931 bytes, ~8,50 bits efectivos por peso) |
 | Vocabulario | 128.000 tokens |
 | Capas | 24 |
@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de datos de benchmarks que permit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ8e
+- Repositorio Hugging Face: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ8e
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Variante oQ6e: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ6e
 - Variante oQ5e: https://huggingface.co/UraionLabs/LFM3-1.7B-MLX-oQ5e

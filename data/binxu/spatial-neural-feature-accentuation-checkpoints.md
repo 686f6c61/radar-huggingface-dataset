@@ -70,7 +70,7 @@ No se dispone de datos de comparacion con otros modelos en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/binxu/spatial-neural-feature-accentuation-checkpoints
+- Hugging Face: https://huggingface.co/binxu/spatial-neural-feature-accentuation-checkpoints
 - Repositorio companion (GitHub): https://github.com/Animadversio/spatial-neural-feature-accentuation
 - Articulo arXiv (Feature Accentuation): https://arxiv.org/abs/2402.10039
 - Version HTML del articulo: https://arxiv.org/html/2402.10039v2

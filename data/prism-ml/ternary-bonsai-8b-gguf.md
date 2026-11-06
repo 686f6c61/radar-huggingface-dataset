@@ -72,10 +72,10 @@ La siguiente tabla compara el modelo con alternativas de 7-8B en términos de ta
 
 | Modelo | Tamaño (GB) | Avg | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (FP16) | 16.38 | 79.3 | Apache 2.0 | HuggingFace |
-| **Ternary Bonsai 8B** | **2.18** | **75.5** | Apache 2.0 | HuggingFace (GGUF) |
-| Ministral3 8B | 16.04 | 71.0 | Apache 2.0 | HuggingFace |
-| Olmo 3 7B | 14.60 | 70.9 | Apache 2.0 | HuggingFace |
+| Qwen3-8B (FP16) | 16.38 | 79.3 | Apache 2.0 | Hugging Face |
+| **Ternary Bonsai 8B** | **2.18** | **75.5** | Apache 2.0 | Hugging Face (GGUF) |
+| Ministral3 8B | 16.04 | 71.0 | Apache 2.0 | Hugging Face |
+| Olmo 3 7B | 14.60 | 70.9 | Apache 2.0 | Hugging Face |
 
 El modelo ternario ofrece un rendimiento medio un 4.8% inferior al Qwen3-8B FP16, pero con una reducción de memoria del 86.7%. Frente a otros modelos de 8B, supera a Ministral3 y Olmo 3 en la media, siendo además el más pequeño con diferencia.
 
@@ -90,7 +90,7 @@ El modelo ternario ofrece un rendimiento medio un 4.8% inferior al Qwen3-8B FP16
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-8B-gguf
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-8B-gguf
 - Modelo base (safetensors): https://huggingface.co/prism-ml/Ternary-Bonsai-8B-unpacked
 - White Paper (PDF): https://github.com/PrismML-Eng/Bonsai-demo/blob/main/ternary-bonsai-8b-whitepaper.pdf
 - Demo y ejemplos: https://github.com/PrismML-Eng/Bonsai-demo

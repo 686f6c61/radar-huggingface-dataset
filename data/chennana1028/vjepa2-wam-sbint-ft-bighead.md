@@ -70,8 +70,8 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vjepa2-wam-sbint-ft-bighead (este) | 895,65 M | 48 pasos de acción | Apache 2.0 | HuggingFace |
-| vjepa2-latent-wam-sbint-ft (sin bighead) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| vjepa2-wam-sbint-ft-bighead (este) | 895,65 M | 48 pasos de acción | Apache 2.0 | Hugging Face |
+| vjepa2-latent-wam-sbint-ft (sin bighead) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | V-JEPA2 base (Meta) | no disponible | no disponible | no disponible | GitHub / HF |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chennana1028/vjepa2-wam-sbint-ft-bighead
+- Modelo en Hugging Face: https://huggingface.co/chennana1028/vjepa2-wam-sbint-ft-bighead
 - Repo similar sin bighead: https://huggingface.co/chennana1028/vjepa2-latent-wam-sbint-ft
 - Código de entrenamiento y evaluación (GitHub): https://github.com/zhujohn9604/vjepa2
 - Repo oficial de V-JEPA2 (Meta AI): https://github.com/facebookresearch/vjepa2

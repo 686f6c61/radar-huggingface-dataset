@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mulligan/sim-square-broad-r03-mining-no-cf-idql` | IDQL (actor de difusión + crítico IQL) | no disponible | no aplica | MIT | HuggingFace, 5 semillas |
-| `mulligan/sim-square-broad-r01-mining-no-cf-idql` | IDQL, misma tarea, ronda R1 | no disponible | no aplica | MIT | HuggingFace |
+| `mulligan/sim-square-broad-r03-mining-no-cf-idql` | IDQL (actor de difusión + crítico IQL) | no disponible | no aplica | MIT | Hugging Face, 5 semillas |
+| `mulligan/sim-square-broad-r01-mining-no-cf-idql` | IDQL, misma tarea, ronda R1 | no disponible | no aplica | MIT | Hugging Face |
 | IDQL original (Hansen-Estruch et al.) | Referencia algorítmica | no disponible | no aplica | no disponible | Publicación académica y código de referencia |
 | Diffusion Policy / IQL | Alternativas de RL offline | no disponible | no aplica | no disponible | Repositorios académicos |
 
@@ -101,10 +101,10 @@ No se dispone de cifras comparativas de rendimiento entre estas alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-mining-no-cf-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-mining-no-cf-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset `sim-square-broad-c00-teleop-sobol`: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset `sim-square-broad-c01-dagger-mining-no-cf`: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-mining-no-cf
 - Dataset `sim-square-broad-c01-sobol-policy-rollouts`: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-sobol-policy-rollouts

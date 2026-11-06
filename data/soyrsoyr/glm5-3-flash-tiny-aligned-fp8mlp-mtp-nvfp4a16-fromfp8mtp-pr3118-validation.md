@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-NVFP4A16-FromFP8MTP-pr3118-validation es un checkpoint derivado publicado por el usuario soyrsoyr en HuggingFace, cuyo propósito declarado no es la calidad de generación sino la validación estructural de un flujo de cuantización. Según su propia model card, se trata de un "fixture estructural de pesos aleatorios" (*random-weight structural fixture*): no contiene pesos preentrenados de GLM-5.3 y no se le atribuye ninguna capacidad de calidad. El artefacto parte del checkpoint base `inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP`, cuyo módulo MTP (multi-token prediction) había sido convertido previamente a FP8 nativo, y lo desquantiza para volver a cuantizarlo en formato NVFP4A16 (pesos FP4, activaciones de 16 bits).
+GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-NVFP4A16-FromFP8MTP-pr3118-validation es un checkpoint derivado publicado por el usuario soyrsoyr en Hugging Face, cuyo propósito declarado no es la calidad de generación sino la validación estructural de un flujo de cuantización. Según su propia model card, se trata de un "fixture estructural de pesos aleatorios" (*random-weight structural fixture*): no contiene pesos preentrenados de GLM-5.3 y no se le atribuye ninguna capacidad de calidad. El artefacto parte del checkpoint base `inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP`, cuyo módulo MTP (multi-token prediction) había sido convertido previamente a FP8 nativo, y lo desquantiza para volver a cuantizarlo en formato NVFP4A16 (pesos FP4, activaciones de 16 bits).
 
 El modelo tiene 84.772.398 parámetros reales según los safetensors del repositorio (aproximadamente 0,085 miles de millones) y ocupa 0,2 GB, lo que lo sitúa en la categoría de modelos diminutos. La relevancia del artefacto es exclusivamente de ingeniería: documenta y permite reproducir los pasos de derivación FP8 → FP4 recogidos en `pr3118-validation.json`, y sirve como banco de pruebas para la decodificación especulativa MTP en vLLM. La model card indica que se superó la carga y generación en H100 con métricas reales de *draft tokens*, y aclara explícitamente que esto "no es un benchmark de calidad ni de rendimiento".
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-NVFP4A16-FromFP8MTP-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-NVFP4A16-FromFP8MTP-pr3118-validation
 - Modelo base: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP/tree/443ac6c54ba0d65ad8a7c701af4fd22a960c9e9c
 - Implementación de cuantización (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo (los resultados obtenidos corresponden a un comercio de bricolaje sin relación con el artefacto). No se dispone de papers, blogs, repositorios ni demos adicionales.

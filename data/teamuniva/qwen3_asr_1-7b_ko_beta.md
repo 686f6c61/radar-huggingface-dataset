@@ -86,7 +86,7 @@ La comparación directa con Whisper no está disponible en los datos proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko_beta
+- Modelo en Hugging Face: https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko_beta
 - Repositorio oficial de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Technical report de Qwen3-ASR: https://arxiv.org/html/2601.21337
 - Qwen3-ASR Toolkit: https://github.com/QwenLM/Qwen3-ASR-Toolkit

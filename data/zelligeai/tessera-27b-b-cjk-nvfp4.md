@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZelligeAI/Tessera-27B-B-CJK-NVFP4 | 20.294.595.344 (safetensors) | 131K probados; maximo no disponible | NVFP4/FP8/bf16 | Apache 2.0 | HuggingFace, 20 descargas |
-| ZelligeAI/Tessera-27B-B-CJK (bf16) | mismo modelo base | idem | bf16 (55,6 GB) | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3.8-27B-NVFP4 | no disponible en la informacion | no disponible | NVFP4/FP8 (layout replicado) | no disponible | HuggingFace |
-| Qwen3.8-27B (base) | no disponible en la informacion | no disponible | no disponible | no disponible | HuggingFace |
+| ZelligeAI/Tessera-27B-B-CJK-NVFP4 | 20.294.595.344 (safetensors) | 131K probados; maximo no disponible | NVFP4/FP8/bf16 | Apache 2.0 | Hugging Face, 20 descargas |
+| ZelligeAI/Tessera-27B-B-CJK (bf16) | mismo modelo base | idem | bf16 (55,6 GB) | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3.8-27B-NVFP4 | no disponible en la informacion | no disponible | NVFP4/FP8 (layout replicado) | no disponible | Hugging Face |
+| Qwen3.8-27B (base) | no disponible en la informacion | no disponible | no disponible | no disponible | Hugging Face |
 
 Los datos de rendimiento comparativo con alternativas no estan publicados; solo se dispone de la comparacion Tessera vs su base sin ajustar en las pruebas de agente descritas arriba.
 
@@ -98,7 +98,7 @@ Los datos de rendimiento comparativo con alternativas no estan publicados; solo 
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-NVFP4
+- Hugging Face (este checkpoint): https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-NVFP4
 - Modelo base bf16: https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK
 - Adaptador LoRA: https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-LoRA
 - GGUF: https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-GGUF

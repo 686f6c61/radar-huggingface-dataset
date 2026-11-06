@@ -83,7 +83,7 @@ La comparación con Qwen3-1.7B es directa porque MedPsy es un fine-tune del mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mobsal/MedPsy-v3.4
+- Modelo en Hugging Face: https://huggingface.co/Mobsal/MedPsy-v3.4
 - Repositorio de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

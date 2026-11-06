@@ -76,7 +76,7 @@ No se dispone de información suficiente para una comparativa rigurosa. LTX Ripp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WepeNerd/LTX-Ripple
+- Repositorio Hugging Face: https://huggingface.co/WepeNerd/LTX-Ripple
 - Modelo base LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia LTX-2.x Community License Agreement: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x
 - LTX Acceptable Use Policy: https://static.lightricks.com/legal/ltx-acceptable-use-policy.pdf

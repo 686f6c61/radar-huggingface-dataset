@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/sn97____seed429____uid98____hk5E5Nm` es un checkpoint alojado en HuggingFace por el usuario `reyansh38771`, con un tamaño de 35.951.822.704 parámetros (aproximadamente 36 mil millones). El tag `qwen3_5_moe` sugiere que se trata de una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no se ha confirmado oficialmente. El repositorio ocupa 143,8 GB y contiene exclusivamente pesos en formato `safetensors`. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales para descargar los archivos.
+El modelo `reyansh38771/sn97____seed429____uid98____hk5E5Nm` es un checkpoint alojado en Hugging Face por el usuario `reyansh38771`, con un tamaño de 35.951.822.704 parámetros (aproximadamente 36 mil millones). El tag `qwen3_5_moe` sugiere que se trata de una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no se ha confirmado oficialmente. El repositorio ocupa 143,8 GB y contiene exclusivamente pesos en formato `safetensors`. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales para descargar los archivos.
 
 Este modelo no incluye información pública sobre licencia, idiomas soportados, pipeline de uso o documentación técnica. Se desconoce su proceso de entrenamiento, dataset utilizado o cualquier evaluación de rendimiento. A pesar de su tamaño considerable, la falta de transparencia y de métricas publicadas limita su utilidad inmediata para desarrolladores e investigadores. Su relevancia actual es incierta, ya que no hay evidencia de adopción (solo 1 descarga y 0 likes) ni de publicación de resultados.
 
@@ -51,7 +51,7 @@ No disponible. No se ha encontrado informacion sobre modelos comparables en term
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones adicionales en HuggingFace antes de descargar los archivos.
+- Acceso restringido: el repositorio es gated, por lo que se requiere aceptar condiciones adicionales en Hugging Face antes de descargar los archivos.
 - Falta de documentacion: no hay modelo card, paper, ni instrucciones de uso. Se desconoce la licencia, los idiomas soportados y el pipeline de inferencia.
 - Riesgo de alucinacion: al no tener informacion sobre el entrenamiento, no se puede evaluar la fiabilidad de las respuestas. Es probable que el modelo presente alucinaciones y errores factuales.
 - Sesgos desconocidos: no se ha informado sobre posibles sesgos eticos o de contenido.
@@ -61,6 +61,6 @@ No disponible. No se ha encontrado informacion sobre modelos comparables en term
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/reyansh38771/sn97____seed429____uid98____hk5E5Nm)
+- [Repositorio en Hugging Face](https://huggingface.co/reyansh38771/sn97____seed429____uid98____hk5E5Nm)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web.

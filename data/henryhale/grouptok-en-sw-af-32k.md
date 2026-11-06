@@ -19,7 +19,7 @@ Es relevante ahora por dos motivos: la tokenización se ha convertido en objeto 
 | Tipos de cuantización | No aplica (no hay pesos que cuantizar) |
 | Idiomas soportados | en (inglés), sw (suajili), af (afrikáans) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | `tokenizer.json` y `tokenizer_config.json` (formato HuggingFace `tokenizers`), más `groups.json` con el mapa de grupos |
+| Formato de pesos | `tokenizer.json` y `tokenizer_config.json` (formato Hugging Face `tokenizers`), más `groups.json` con el mapa de grupos |
 | Tamaño del vocabulario | 32.768 tokens |
 | Alfabeto | 256 bytes (byte-level), sin prefix space |
 | Grupos de traducción | Hasta 6 miembros por grupo (el doble de los 3 idiomas); los tokens sin vínculo de traducción forman grupos propios |
@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de otros tokenizadores con agrupa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/henryhale/grouptok-en-sw-af-32k
+- Repositorio en Hugging Face: https://huggingface.co/henryhale/grouptok-en-sw-af-32k
 - Herramienta `grouptok`: https://github.com/henryhale/grouptok
 - Alineador XLM-R base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Corpus de pares inglés–suajili: https://huggingface.co/datasets/michsethowusu/english-swahili_sentence-pairs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bazor99/sentiment-model es un modelo de clasificación de texto para análisis de sentimiento, publicado por el usuario Bazor99 en HuggingFace. Se trata de un fine-tuning de distilbert-base-uncased, la variante destilada del transformer BERT, que conserva aproximadamente el 97 % del rendimiento del BERT base con un 40 % menos de parámetros. El repositorio contiene 66.955.779 parámetros en formato safetensors y ocupa 0,3 GB.
+Bazor99/sentiment-model es un modelo de clasificación de texto para análisis de sentimiento, publicado por el usuario Bazor99 en Hugging Face. Se trata de un fine-tuning de distilbert-base-uncased, la variante destilada del transformer BERT, que conserva aproximadamente el 97 % del rendimiento del BERT base con un 40 % menos de parámetros. El repositorio contiene 66.955.779 parámetros en formato safetensors y ocupa 0,3 GB.
 
 El modelo resuelve la tarea de clasificación de sentimiento (categorización de texto en clases de polaridad), pero la propia model card indica que se entrenó sobre un conjunto de datos desconocido ("an unknown dataset") y no documenta la etiqueta de las clases ni el origen de los datos. Su relevancia práctica es limitada por el momento: acumula 0 descargas y 1 like, y las métricas declaradas (accuracy 0,6598, F1 weighted 0,6493) son moderadas, lo que sugiere un dataset pequeño y posiblemente desequilibrado.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - En FP16/BF16 la huella de pesos baja a unos 0,13 GB.
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM, incluidas GTX 1050 Ti, RTX 3060, RTX 4090, A100 o H100.
 - Cabe en GPU consumer sin problema; también funciona en CPU con latencias de milisegundos por lote.
-- Opciones de despliegue: transformers (pipeline text-classification), PyTorch nativo, TorchScript, ONNX Runtime y endpoints de HuggingFace (el tag endpoints_compatible está presente). No se ha publicado versión GGUF para llama.cpp/Ollama.
+- Opciones de despliegue: transformers (pipeline text-classification), PyTorch nativo, TorchScript, ONNX Runtime y endpoints de Hugging Face (el tag endpoints_compatible está presente). No se ha publicado versión GGUF para llama.cpp/Ollama.
 - Latencia y throughput estimados: no disponibles (no se documentan mediciones en la model card).
 
 ## Comparativa con modelos similares
@@ -105,7 +105,7 @@ Nota: no se dispone de resultados comparativos de rendimiento entre estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bazor99/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/Bazor99/sentiment-model
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Repositorio de transformers: https://github.com/huggingface/transformers
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en los resultados de búsqueda web proporcionados.

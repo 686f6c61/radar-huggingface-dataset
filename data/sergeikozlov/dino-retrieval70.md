@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sergeikozlov/dino-retrieval70` es un prototipo de investigacion publicado en HuggingFace por el usuario sergeikozlov. Se presenta como una implementacion de arquitectura Dino orientada a tareas de retrieval (recuperacion de informacion multimodal, a juzgar por la metrica de evaluacion sugerida, Flickr30k). El repositorio incluye un script Python ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado.
+`sergeikozlov/dino-retrieval70` es un prototipo de investigacion publicado en Hugging Face por el usuario sergeikozlov. Se presenta como una implementacion de arquitectura Dino orientada a tareas de retrieval (recuperacion de informacion multimodal, a juzgar por la metrica de evaluacion sugerida, Flickr30k). El repositorio incluye un script Python ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explicitamente como checkpoint de inicializacion valido para pruebas de humo, no como un modelo entrenado.
 
 El dato mas relevante para evaluarlo es su tamano real: 49.600 parametros totales segun el fichero safetensors, una cifra que contradice la etiqueta "large" que aparece en la model card. Con ese orden de magnitud, no es un modelo utilizable en produccion ni comparable a sistemas de retrieval entrenados: es un esqueleto de codigo y un andamiaje de configuracion para reproducir experimentos. El autor indica que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -101,7 +101,7 @@ No disponible. No se puede establecer una comparativa significativa con modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sergeikozlov/dino-retrieval70
+- Modelo en Hugging Face: https://huggingface.co/sergeikozlov/dino-retrieval70
 - Repositorio de GitHub, paper o demo asociados: no disponible en la informacion proporcionada.
 - Dataset de evaluacion sugerido (Flickr30k): mencionado en la model card sin enlace.
 - Nota sobre la busqueda web: los resultados devueltos corresponden a paginas sobre Leinster Rugby y la provincia de Leinster (leinsterrugby.ie, en.wikipedia.org/wiki/Leinster, en.wikipedia.org/wiki/Leinster_Rugby, britannica.com/place/Leinster) y no guardan ninguna relacion con este modelo. No se han encontrado enlaces relevantes adicionales.

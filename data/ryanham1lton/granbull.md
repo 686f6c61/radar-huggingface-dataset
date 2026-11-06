@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Granbull es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Granbull`. La informacion disponible es extremadamente limitada: la model card asociada unicamente contiene la declaracion de licencia `cc-by-4.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
+Granbull es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Granbull`. La informacion disponible es extremadamente limitada: la model card asociada unicamente contiene la declaracion de licencia `cc-by-4.0`, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 No es posible determinar que problema resuelve el modelo, a que familia arquitectonica pertenece ni que capacidades ofrece, ya que el autor no ha publicado ninguna documentacion tecnica. Tampoco se dispone de informacion sobre el pipeline, los idiomas soportados o los formatos de pesos.
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Granbull
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Granbull
 - Perfil del autor: https://huggingface.co/Ryanham1lton
 - Texto completo de la licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

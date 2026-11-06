@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ibis0-30B-A3B-Classifier | 30.220.959.745 | no disponible | Clasificación de hipótesis biológicas | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-30B-A3B (base) | 30B (MoE) | no disponible | Generación de texto general | Apache-2.0 | HuggingFace |
+| Ibis0-30B-A3B-Classifier | 30.220.959.745 | no disponible | Clasificación de hipótesis biológicas | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-30B-A3B (base) | 30B (MoE) | no disponible | Generación de texto general | Apache-2.0 | Hugging Face |
 | Alternativas especializadas en clasificación científica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros clasificadores científicos comparables en la documentación proporcionada.
@@ -84,7 +84,7 @@ No se dispone de información sobre otros clasificadores científicos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdisonScientific/Ibis0-30B-A3B-Classifier
+- Modelo en Hugging Face: https://huggingface.co/EdisonScientific/Ibis0-30B-A3B-Classifier
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Dataset EDB-Bio: https://huggingface.co/datasets/EdisonScientific/EDB-Bio
 - Repositorio de código: https://github.com/EdisonScientific/ibis0

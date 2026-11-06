@@ -98,6 +98,6 @@ Los datos de parámetros y longitud de contexto de los tres modelos no aparecen 
 
 - Repositorio del modelo: https://huggingface.co/Torick63/opus-mt-nl-en-onnx-int8
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-nl-en
-- Organización OPUS-MT en HuggingFace: https://huggingface.co/Helsinki-NLP
+- Organización OPUS-MT en Hugging Face: https://huggingface.co/Helsinki-NLP
 - Referencia del modelo original: Tiedemann, J. y Thottingal, S. (2020), "OPUS-MT — Building open translation services for the World", Proceedings of the 22nd Annual Conference of the European Association for Machine Translation (EAMT), citado en la model card (sin URL en la información proporcionada).
 - Herramientas empleadas, sin enlace en la información proporcionada: Optimum (exportación `text2text-generation-with-past`) y ONNX Runtime (`quantize_dynamic`).

@@ -68,8 +68,8 @@ No se dispone de informacion sobre LoRAs comparables en el mismo repositorio o e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lauradeem/maya-flux2-klein9b-runware-100step
-- Modelo base FLUX.2-klein-9B en HuggingFace: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
+- Repositorio Hugging Face: https://huggingface.co/Lauradeem/maya-flux2-klein9b-runware-100step
+- Modelo base FLUX.2-klein-9B en Hugging Face: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - Pagina de FLUX.2 [klein] en Runware: https://runware.ai/models/bfl-flux-2-klein-9b
 - Pagina de FLUX.2 [klein] base en Runware: https://runware.ai/models/bfl-flux-2-klein-9b-base
 - Pagina oficial de FLUX.2 [klein] en Black Forest Labs: https://bfl.ai/models/flux-2-klein

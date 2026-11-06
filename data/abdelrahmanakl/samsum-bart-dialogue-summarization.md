@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SAMSum-BART-Dialogue-Summarization es un modelo de resumen abstractivo de dialogos obtenido mediante fine-tuning de `facebook/bart-large-cnn` sobre el corpus SAMSum. Lo publica el usuario AbdelrahmanAkl en HuggingFace y su proposito es transformar conversaciones multi-participante de estilo mensajeria en resumenes concisos en lenguaje natural. El problema que aborda es concreto: los modelos de resumen genericos entrenados sobre noticias rinden mal cuando la entrada es un dialogo con intervenciones cortas, cambios de turno y referencias implicitas, y este ajuste recupera buena parte de esa brecha.
+SAMSum-BART-Dialogue-Summarization es un modelo de resumen abstractivo de dialogos obtenido mediante fine-tuning de `facebook/bart-large-cnn` sobre el corpus SAMSum. Lo publica el usuario AbdelrahmanAkl en Hugging Face y su proposito es transformar conversaciones multi-participante de estilo mensajeria en resumenes concisos en lenguaje natural. El problema que aborda es concreto: los modelos de resumen genericos entrenados sobre noticias rinden mal cuando la entrada es un dialogo con intervenciones cortas, cambios de turno y referencias implicitas, y este ajuste recupera buena parte de esa brecha.
 
-Arquitectonicamente es un transformer encoder-decoder de tipo BART, con 406.340.696 parametros totales segun los pesos en safetensors, lo que lo situa en la familia de ~400 M de parametros. La longitud maxima de entrada es de 512 tokens y la longitud maxima de resumen generado es de 96 tokens, con decodificacion por beam search de 4 haces. El repositorio ocupa 1,6 GB y no declara licencia ni idiomas en los metadatos de HuggingFace, aunque el propio autor indica que el modelo esta entrenado y evaluado en ingles.
+Arquitectonicamente es un transformer encoder-decoder de tipo BART, con 406.340.696 parametros totales segun los pesos en safetensors, lo que lo situa en la familia de ~400 M de parametros. La longitud maxima de entrada es de 512 tokens y la longitud maxima de resumen generado es de 96 tokens, con decodificacion por beam search de 4 haces. El repositorio ocupa 1,6 GB y no declara licencia ni idiomas en los metadatos de Hugging Face, aunque el propio autor indica que el modelo esta entrenado y evaluado en ingles.
 
 Su relevancia practica es la de un modelo pequeno, desplegable en una GPU de consumo, que sirve como linea base solida y reproducible para resumen de conversaciones. Los ROUGE publicados (40,58 en ROUGE-1 y 20,12 en ROUGE-2 sobre las 819 muestras del split de test oficial) mejoran de forma muy marcada al checkpoint base, sobre todo en ROUGE-2, donde la ganancia es de +9,76 puntos.
 
@@ -102,8 +102,8 @@ El propio autor advierte que el ratio de longitud no debe interpretarse como tas
 
 | Modelo | Parametros | Contexto | Tarea | ROUGE en SAMSum (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SAMSum-BART-Dialogue-Summarization | 406,3 M | 512 tokens entrada / 96 salida | Resumen abstractivo de dialogos | ROUGE-1 40,58; ROUGE-2 20,12; ROUGE-Lsum 31,05 | no disponible | safetensors en HuggingFace |
-| facebook/bart-large-cnn (base) | ~406 M | 1024 tokens (BART estandar); en esta evaluacion, entrada de 512 | Resumen de noticias | ROUGE-1 31,03; ROUGE-2 10,36; ROUGE-Lsum 23,34 | MIT (segun el checkpoint original) | safetensors y otros formatos en HuggingFace |
+| SAMSum-BART-Dialogue-Summarization | 406,3 M | 512 tokens entrada / 96 salida | Resumen abstractivo de dialogos | ROUGE-1 40,58; ROUGE-2 20,12; ROUGE-Lsum 31,05 | no disponible | safetensors en Hugging Face |
+| facebook/bart-large-cnn (base) | ~406 M | 1024 tokens (BART estandar); en esta evaluacion, entrada de 512 | Resumen de noticias | ROUGE-1 31,03; ROUGE-2 10,36; ROUGE-Lsum 23,34 | MIT (segun el checkpoint original) | safetensors y otros formatos en Hugging Face |
 | Alternativas especificas de resumen de dialogo | no disponible | no disponible | Resumen de dialogos | no disponible | no disponible | no disponible |
 
 Los unicos datos numericos verificables en la informacion proporcionada corresponden al propio modelo y a su checkpoint base. No se dispone de cifras medidas para otros modelos de resumen de dialogo en este mismo conjunto de evaluacion, por lo que la comparativa con alternativas queda como no disponible.
@@ -118,14 +118,14 @@ Los unicos datos numericos verificables en la informacion proporcionada correspo
 - Limitacion de idioma: monolingue en ingles; no se declaran capacidades en castellano ni en otros idiomas.
 - Limite de contexto: la entrada se trunca a 512 tokens, por lo que conversaciones largas deben segmentarse previamente, con el riesgo de perder informacion relevante entre segmentos.
 - Limite de salida: el resumen se corta a 96 tokens, lo que puede forzar la omision de detalles en dialogos densos en informacion.
-- Licencia del modelo no declarada: los metadatos de HuggingFace no especifican licencia, lo que introduce incertidumbre legal para uso comercial. Ademas, el dataset SAMSum empleado tiene licencia CC BY-NC-ND 4.0 (no comercial), lo que condiciona la redistribucion y el uso derivado.
+- Licencia del modelo no declarada: los metadatos de Hugging Face no especifican licencia, lo que introduce incertidumbre legal para uso comercial. Ademas, el dataset SAMSum empleado tiene licencia CC BY-NC-ND 4.0 (no comercial), lo que condiciona la redistribucion y el uso derivado.
 - Popularidad y validacion comunitaria nulas: 0 descargas y 0 likes en el momento de la consulta, sin evaluaciones independientes que reproduzcan los ROUGE reportados.
 - Riesgos de sesgo: no hay analisis de sesgos publicado en la informacion disponible; al derivar de BART y de SAMSum, hereda los sesgos de ambos, pero no se cuantifican.
 - Caveat de produccion: para despliegues con requisitos de latencia estrictos conviene medir el rendimiento real, ya que el autor no publica cifras de throughput ni de latencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdelrahmanAkl/SAMSum-BART-Dialogue-Summarization
+- Modelo en Hugging Face: https://huggingface.co/AbdelrahmanAkl/SAMSum-BART-Dialogue-Summarization
 - Checkpoint base: https://huggingface.co/facebook/bart-large-cnn
 - Dataset empleado: https://huggingface.co/datasets/knkarthick/samsum
 - Paper de BART: https://arxiv.org/abs/1910.13461

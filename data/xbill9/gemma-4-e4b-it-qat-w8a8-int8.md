@@ -86,11 +86,11 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K ni equivale
 
 | Modelo | Parámetros | Contexto | Cuantización | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `xbill9/gemma-4-E4B-it-qat-w8a8-int8` | 7.463.013.418 | no disponible | int8 W8A8, `compressed-tensors` | solo texto | Gemma | HuggingFace (0 descargas) |
-| `google/gemma-4-E4B-it-qat-q4_0-unquantized` | no disponible | no disponible | QAT sobre rejilla Q4_0, sin cuantizar en disco | multimodal segun la familia Gemma 4 | Gemma | HuggingFace (origen oficial) |
-| `google/gemma-4-E4B-it-qat-w4a16-ct` | no disponible | no disponible | W4A16, `compressed-tensors` (oficial de Google) | no disponible | Gemma | HuggingFace |
-| `glenic/gemma-4-E4B-it-W8A8-INT8` | no disponible | no disponible | W8A8 int8 | no disponible | no disponible | HuggingFace |
-| `xbill9/gemma-4-E2B-it-qat-w8a8-int8` | no disponible | no disponible | int8 W8A8, `compressed-tensors` | solo texto | Gemma | HuggingFace |
+| `xbill9/gemma-4-E4B-it-qat-w8a8-int8` | 7.463.013.418 | no disponible | int8 W8A8, `compressed-tensors` | solo texto | Gemma | Hugging Face (0 descargas) |
+| `google/gemma-4-E4B-it-qat-q4_0-unquantized` | no disponible | no disponible | QAT sobre rejilla Q4_0, sin cuantizar en disco | multimodal segun la familia Gemma 4 | Gemma | Hugging Face (origen oficial) |
+| `google/gemma-4-E4B-it-qat-w4a16-ct` | no disponible | no disponible | W4A16, `compressed-tensors` (oficial de Google) | no disponible | Gemma | Hugging Face |
+| `glenic/gemma-4-E4B-it-W8A8-INT8` | no disponible | no disponible | W8A8 int8 | no disponible | no disponible | Hugging Face |
+| `xbill9/gemma-4-E2B-it-qat-w8a8-int8` | no disponible | no disponible | int8 W8A8, `compressed-tensors` | solo texto | Gemma | Hugging Face |
 
 Contexto adicional: Google publica checkpoints QAT en `compressed-tensors` W4A16 para los tamanos E2B, E4B, 12B y 31B de Gemma 4; la variante 26B-A4B no figura en esa lista y se distribuye como GGUF Q4_0 y como exportacion bf16 de 48 GiB.
 
@@ -110,7 +110,7 @@ Contexto adicional: Google publica checkpoints QAT en `compressed-tensors` W4A16
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-w8a8-int8
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-w8a8-int8
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Gemelo E2B del mismo autor: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-w8a8-int8
 - Script de conversion: https://github.com/xbill9/gemma4-dev/blob/main/jev-tpu-31b/w8a8_from_qat.py

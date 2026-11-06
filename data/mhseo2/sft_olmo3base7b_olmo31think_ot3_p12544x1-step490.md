@@ -180,9 +180,9 @@ La comparación directa de rendimiento no es posible porque este checkpoint care
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step490)
+- [Modelo en Hugging Face](https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step490)
 - [Modelo base: mhseo2/Olmo-3-1025-7B-opd](https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd)
 - [Modelo profesor: allenai/Olmo-3.1-32B-Think](https://huggingface.co/allenai/Olmo-3.1-32B-Think)
 - [Perfil del autor mhseo2](https://huggingface.co/mhseo2)
 - [Checkpoint del paso 49 del mismo pipeline](https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p12544x1-step49/tree/main)
-- [OpenThoughts3 en HuggingFace](https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M)
+- [OpenThoughts3 en Hugging Face](https://huggingface.co/datasets/open-thoughts/OpenThoughts3-1.2M)

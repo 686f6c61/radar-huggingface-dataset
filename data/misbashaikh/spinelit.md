@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spinelit es un modelo publicado en HuggingFace por el usuario MisbaShaikh bajo licencia MIT. La model card asociada al repositorio no contiene ninguna descripción funcional, arquitectónica ni de uso: únicamente declara la licencia. No se dispone de información sobre el problema que resuelve, el dominio de aplicación ni las capacidades que ofrece.
+Spinelit es un modelo publicado en Hugging Face por el usuario MisbaShaikh bajo licencia MIT. La model card asociada al repositorio no contiene ninguna descripción funcional, arquitectónica ni de uso: únicamente declara la licencia. No se dispone de información sobre el problema que resuelve, el dominio de aplicación ni las capacidades que ofrece.
 
 El repositorio ocupa 0,2 GB, lo que sugiere un conjunto de pesos de pequeno tamano, posiblemente un modelo de menos de mil millones de parametros o un adaptador (LoRA/QLoRA) sobre una base existente, aunque esta hipotesis no puede confirmarse con los datos disponibles. No se han publicado etiquetas de pipeline, idiomas soportados ni metadatos tecnicos mas alla de la licencia y la region de publicacion (US).
 
@@ -77,5 +77,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MisbaShaikh/spinelit
+- Repositorio en Hugging Face: https://huggingface.co/MisbaShaikh/spinelit
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

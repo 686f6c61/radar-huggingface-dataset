@@ -92,7 +92,7 @@ No se dispone de datos comparativos de otros clasificadores GoEmotions en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shroomy/tinydistill-go-emotions-minilm
+- Modelo en Hugging Face: https://huggingface.co/Shroomy/tinydistill-go-emotions-minilm
 - Repositorio de la herramienta tinydistill: https://github.com/Andreas-Hum/tinydistill
 - Modelo base estudiante: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Modelo docente: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

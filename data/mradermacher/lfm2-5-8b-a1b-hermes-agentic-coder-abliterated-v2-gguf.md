@@ -18,7 +18,7 @@ La relevancia de esta ficha concreta es práctica: el repositorio de mradermache
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | F16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS (los archivos publicados con tamano declarado son Q2_K, Q4_K_S, Q8_0 y F16) |
 | Idiomas soportados | Ingles (en) |
-| Licencia | liquid-foundation-model-community-license (etiquetada como "other" en HuggingFace) |
+| Licencia | liquid-foundation-model-community-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF en este repositorio; safetensors en el modelo base segun la libreria declarada (transformers) |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ Diferencias cualitativas destacables: frente a los tres modelos de referencia, e
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2-GGUF
 - Modelo base: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2
 - Pagina resumen del cuantizador para este modelo: https://hf.tst.eu/model#LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2-GGUF
 - Licencia comunitaria de Liquid AI: https://www.liquid.ai/community-license

@@ -82,7 +82,7 @@ K2-Horizon-7B ofrece el mejor rendimiento en ambos benchmarks con un tamaño de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IFM/K2-Horizon-7B
+- Modelo en Hugging Face: https://huggingface.co/IFM/K2-Horizon-7B
 - Dataset de pretraining: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
 - Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data
 - No se han encontrado papers, blogs o demos adicionales en la busqueda web realizada.

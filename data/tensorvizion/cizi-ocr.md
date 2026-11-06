@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible, pero al tener ~1.325 M de parámetros, se puede estimar que con cuantización de 8 bits cabría en GPUs con 6-8 GB de VRAM, y en 4 bits en GPUs de 4 GB. No se proporcionan datos oficiales.
 - GPU recomendadas: no disponible. Dado el tamaño, una RTX 3060 o superior podría ser suficiente, pero no hay confirmación.
 - Ejecución en consumer GPU: probablemente sí, dado el tamaño del modelo, pero no hay garantías oficiales.
-- Opciones de despliegue: se puede usar con la biblioteca `transformers` de HuggingFace, como se muestra en el código de ejemplo. También podría exportarse a formatos como ONNX o GGUF para ejecutarse con llama.cpp u Ollama, aunque no está documentado.
+- Opciones de despliegue: se puede usar con la biblioteca `transformers` de Hugging Face, como se muestra en el código de ejemplo. También podría exportarse a formatos como ONNX o GGUF para ejecutarse con llama.cpp u Ollama, aunque no está documentado.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TensorVizion/Cizi-OCR
+- Modelo en Hugging Face: https://huggingface.co/TensorVizion/Cizi-OCR
 - Modelo base GLM-OCR: https://huggingface.co/zai-org/GLM-OCR
 - (No se encontraron otros enlaces en la información proporcionada)

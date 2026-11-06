@@ -69,8 +69,8 @@ La model card no incluye metricas objetivas (MOS, WER, similitud de hablante) ni
 
 | Modelo | Parametros | Precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NidAll/Qwen3-TTS-12Hz-1.7B-Base-W8A8-ConvRot | ~1,93 B | W8A8 ConvRot + decodificador FP16 | no disponible | Apache-2.0 | HuggingFace, runtime ComfyUI-Qwen3-TTS-Quant |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base (modelo base) | no disponible (el derivado declara ~1,93 B) | FP16/BF16 (segun el modelo base) | no disponible | Apache-2.0 | HuggingFace (oficial de Qwen) |
+| NidAll/Qwen3-TTS-12Hz-1.7B-Base-W8A8-ConvRot | ~1,93 B | W8A8 ConvRot + decodificador FP16 | no disponible | Apache-2.0 | Hugging Face, runtime ComfyUI-Qwen3-TTS-Quant |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base (modelo base) | no disponible (el derivado declara ~1,93 B) | FP16/BF16 (segun el modelo base) | no disponible | Apache-2.0 | Hugging Face (oficial de Qwen) |
 | Otros modelos TTS de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento del modelo base ni de alternativas de la misma categoria en la informacion proporcionada, por lo que la comparativa se limita a parametros declarados, precision y licencia.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-Base-W8A8-ConvRot
+- Modelo en Hugging Face: https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-Base-W8A8-ConvRot
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Runtime previsto: https://github.com/NidAll/ComfyUI-Qwen3-TTS-Quant
 - Papers, blogs o demos adicionales: no disponible en la informacion proporcionada.

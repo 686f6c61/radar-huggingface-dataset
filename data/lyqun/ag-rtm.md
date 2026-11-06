@@ -105,12 +105,12 @@ No disponible la comparacion con alternativas de terceros (parametros, contexto,
 - Riesgo de mal uso por dominio: los modelos solo estan entrenados para las modalidades y preprocesados descritos; aplicar otro tipo de imagen o saltarse el preprocesado invalida las predicciones.
 - Restricciones de licencia: los pesos derivan de DINOv3 y se distribuyen bajo la DINOv3 License. Ademas, cada dataset impone sus propios terminos; en particular, Merlin se distribuye bajo un acuerdo de uso de datos de investigacion no comercial, lo que condiciona cualquier uso comercial del modelo Abdominal Age.
 - Los modelos son exclusivamente para investigacion y no son dispositivos medicos; no deben usarse para diagnostico, pronostico ni decision clinica.
-- Repositorio con 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en HuggingFace y con fecha de creacion posterior a la de esta revision, lo que implica ausencia de validacion independiente por la comunidad.
+- Repositorio con 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en Hugging Face y con fecha de creacion posterior a la de esta revision, lo que implica ausencia de validacion independiente por la comunidad.
 - Requisito de atribucion: OASIS-3 solicita un reconocimiento especifico ("Data were provided in part by OASIS-3: Longitudinal Multimodal Neuroimaging: Principal Investigators: T. Benzinger, D...", texto truncado en la model card) que debe respetarse en cualquier publicacion derivada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lyqun/AG-RTM
+- Modelo en Hugging Face: https://huggingface.co/lyqun/AG-RTM
 - Modelo Retinal Age (bajo peticion): https://huggingface.co/lyqun/AG-RTM-RetinalAge
 - Codigo, instalacion y formato de datos: https://github.com/HORIZONHealthcare/AG-RTM
 - Preprint *Prediction bias in biological ageing models*: https://www.researchsquare.com/article/rs-10157626/v1

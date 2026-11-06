@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Davd-b01/qwen38-27b-swift-noema es un merge de pesos publicado en HuggingFace por el usuario Davd-b01 el 19 de octubre de 2026. Se construye por aritmética de tareas (task arithmetic) sobre tres repositorios: el modelo base Qwen/Qwen3.8-27B (revisión `1d4bf0f2…`), el delta de sabicap/sabi-noema (revisión `c12b2070…`) y el delta de ukisai/Swift-1.5-Qwen3.8-27b (revisión `b4c84d42…`). La receta declarada es `ta_noema1_swift015`, con escala 1,0 para el delta Noema y 0,15 para el delta Swift.
+Davd-b01/qwen38-27b-swift-noema es un merge de pesos publicado en Hugging Face por el usuario Davd-b01 el 19 de octubre de 2026. Se construye por aritmética de tareas (task arithmetic) sobre tres repositorios: el modelo base Qwen/Qwen3.8-27B (revisión `1d4bf0f2…`), el delta de sabicap/sabi-noema (revisión `c12b2070…`) y el delta de ukisai/Swift-1.5-Qwen3.8-27b (revisión `b4c84d42…`). La receta declarada es `ta_noema1_swift015`, con escala 1,0 para el delta Noema y 0,15 para el delta Swift.
 
 El modelo cuenta con 27.356.728.560 parámetros según los tensores en safetensors (27,36 mil millones), lo que lo sitúa en la categoría de modelos densos de ~27B. El repositorio ocupa 54,7 GB y solo distribuye pesos en formato safetensors. La hipótesis declarada por el autor es preservar la actualización Noema en lugar de atenuarla como haría una interpolación convexa; el propio autor indica explícitamente que no se trata de una mejora validada.
 
@@ -33,7 +33,7 @@ No se dispone de informacion sobre el volumen de tokens de entrenamiento, la com
 - Codigo y matematicas: no hay evaluacion publicada que lo confirme para esta combinacion concreta de deltas.
 - Tool calling y function calling: no documentado en la model card; dependeria del soporte del base y de que el merge no lo haya degradado.
 - Capacidades de agente y razonamiento multi-paso: no documentadas ni evaluadas.
-- Capacidades multilingues: no disponibles; el campo de idiomas no esta informado en HuggingFace.
+- Capacidades multilingues: no disponibles; el campo de idiomas no esta informado en Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
 - Preservacion del comportamiento del adaptador Noema: es la unica capacidad que el autor declara como objetivo del merge, sin validacion estadistica que lo respalde.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento de ninguno de los cuatro modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Davd-b01/qwen38-27b-swift-noema
+- Repositorio Hugging Face: https://huggingface.co/Davd-b01/qwen38-27b-swift-noema
 - Modelo base citado: https://huggingface.co/Qwen/Qwen3.8-27B (revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`)
 - Delta Noema citado: https://huggingface.co/sabicap/sabi-noema (revision `c12b20707bb78f811c80bc46561117528ddbd221`)
 - Delta Swift citado: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b (revision `b4c84d42903a8646b25857eb2827288d92ed85a4`)

@@ -85,7 +85,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kilka228/Huihui-GLM-5.3-Flash-abliterated-GGUF
+- Hugging Face: https://huggingface.co/Kilka228/Huihui-GLM-5.3-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - GGUF original de unsloth: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Repositorio de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers

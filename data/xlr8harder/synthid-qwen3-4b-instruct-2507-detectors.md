@@ -64,7 +64,7 @@ Los resultados muestran tasas de deteccion verdadera entre el 68% y el 75% para 
 
 - Al ser clasificadores Bayesianos independientes (no un LLM completo), los requisitos de VRAM son minimos. No se proporcionan datos exactos, pero se estima que pueden ejecutarse en CPU o en cualquier GPU con al menos 1-2 GB de VRAM.
 - Para la generacion del corpus de entrenamiento se requiere el modelo base `Qwen3-4B-Instruct-2507`, que necesita aproximadamente 8 GB de VRAM en bfloat16 (o menos con cuantizacion). El repositorio de detectores en si no requiere el modelo base para inferencia.
-- Opciones de despliegue: al ser modelos transformers, pueden cargarse con la libreria `transformers` de HuggingFace. No se mencionan integraciones especificas con vLLM u Ollama para los detectores, aunque el codigo de generacion usa vLLM.
+- Opciones de despliegue: al ser modelos transformers, pueden cargarse con la libreria `transformers` de Hugging Face. No se mencionan integraciones especificas con vLLM u Ollama para los detectores, aunque el codigo de generacion usa vLLM.
 - Latencia y throughput: no disponibles, pero al ser clasificadores ligeros, se espera una latencia de milisegundos por secuencia de 200 tokens en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No se dispone de informacion sobre otros detectores de watermarking comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xlr8harder/synthid-qwen3-4b-instruct-2507-detectors
+- Repositorio Hugging Face: https://huggingface.co/xlr8harder/synthid-qwen3-4b-instruct-2507-detectors
 - Dataset de respuestas generadas: https://huggingface.co/datasets/xlr8harder/synthid-qwen3-4b-instruct-2507-wildchat
 - Codigo fuente (GitHub): https://github.com/xlr8harder/synthid
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

@@ -96,7 +96,7 @@ La comparativa se limita a las builds del mismo modelo base incluidas en la eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-31B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-31B-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

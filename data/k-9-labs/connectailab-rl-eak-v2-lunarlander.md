@@ -67,7 +67,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Entorno | Resultado declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-eak-v2-lunarlander | DQN (MLP) | no disponible (~18.000 estimados) | LunarLander-v3 | mean_reward 215,6 | no disponible | HuggingFace (K-9-labs) |
+| connectailab-rl-eak-v2-lunarlander | DQN (MLP) | no disponible (~18.000 estimados) | LunarLander-v3 | mean_reward 215,6 | no disponible | Hugging Face (K-9-labs) |
 | Implementaciones DQN de referencia de Stable-Baselines3 | DQN (MLP) | configurable | LunarLander-v2/v3 | no disponible en esta ficha | MIT (segun el proyecto) | GitHub / PyPI |
 | CleanRL `dqn.py` | DQN (MLP) | configurable | Atari y clasicos de Gym | no disponible en esta ficha | MIT (segun el proyecto) | GitHub |
 
@@ -85,7 +85,7 @@ No se dispone de datos publicados de benchmarks de las alternativas en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/K-9-labs/connectailab-rl-eak-v2-lunarlander
+- Hugging Face: https://huggingface.co/K-9-labs/connectailab-rl-eak-v2-lunarlander
 - CONNECT AI LAB (repositorio del autor): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS, curso de refuerzo: https://www.aicitybuilders.com/robot
 - Entorno LunarLander-v3 de Gymnasium: no disponible en la informacion proporcionada (referencia habitual: https://gymnasium.farama.org/environments/box2d/lunar_lander/)

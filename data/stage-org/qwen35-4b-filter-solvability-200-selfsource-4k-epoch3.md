@@ -84,7 +84,7 @@ No se dispone de datos de alternativas comparables (familias densas de 3-4B como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-selfsource-4k-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-solvability-200-selfsource-4k-epoch3
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-solvability-200-selfsource-4k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio del pipeline: no disponible en la información proporcionada

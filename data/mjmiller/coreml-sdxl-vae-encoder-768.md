@@ -20,7 +20,7 @@ Técnicamente es un artefacto pequeño (~137 MB en Float32, un único `VAEEncode
 | Longitud de contexto | no aplica (componente de vision; no procesa tokens de texto) |
 | Tipos de cuantizacion | Float32 unicamente. Float16 produce latentes NaN en CPU y GPU por desbordamiento de GroupNorm; el autor lo desaconseja explicitamente |
 | Idiomas soportados | no aplica (sin entrada ni salida de texto; el condicionamiento textual lo aportan los text encoders del pipeline SDXL) |
-| Licencia | OpenRAIL++-M de Stability AI (SDXL base 1.0), segun la model card del autor; el metadato de HuggingFace figura como "no disponible" |
+| Licencia | OpenRAIL++-M de Stability AI (SDXL base 1.0), segun la model card del autor; el metadato de Hugging Face figura como "no disponible" |
 | Formato de pesos | Core ML compilado (`.mlmodelc`) con `model.mil` (135.577 bytes) y `weights/weight.bin`; no se distribuyen safetensors ni GGUF |
 
 Datos adicionales del artefacto:
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Que es | Entrada | Precision | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mjmiller/coreml-sdxl-vae-encoder-768` | Encoder VAE de SDXL para Core ML, orientado a iOS 768² | Fija 768×768 | Float32 | Core ML `.mlmodelc` | OpenRAIL++-M (segun model card) | Publico en HuggingFace; 0 descargas |
+| `mjmiller/coreml-sdxl-vae-encoder-768` | Encoder VAE de SDXL para Core ML, orientado a iOS 768² | Fija 768×768 | Float32 | Core ML `.mlmodelc` | OpenRAIL++-M (segun model card) | Publico en Hugging Face; 0 descargas |
 | `apple/coreml-stable-diffusion-xl-base` (VAEEncoder) | Encoder VAE de SDXL incluido en el paquete oficial para macOS | Fija 1024×1024 | Float32 (el convertidor `--xl-version` produce fp32) | Core ML `.mlmodelc` | OpenRAIL++-M | Publico; mantenido por Apple |
 | `apple/coreml-stable-diffusion-xl-base-ios` | Paquete oficial para iOS, sin encoder VAE | No incluye encoder | no aplica | Core ML | OpenRAIL++-M | Publico; mantenido por Apple |
 | `stabilityai/sdxl-vae` | VAE afinado de SDXL en PyTorch/diffusers (AutoencoderKL) | Flexible (multiplo de 8) | fp32 / fp16 segun uso | safetensors / diffusers | OpenRAIL++-M | Publico; es el VAE de referencia del ecosistema |
@@ -94,14 +94,14 @@ La diferencia clave frente a `stabilityai/sdxl-vae` es que aquel es un modelo de
 - **Solo encoder**: el repositorio no incluye `VAEDecoder.mlmodelc`; hay que aportarlo desde el paquete de Apple.
 - **Alucinacion**: no aplica en el sentido de generacion de texto, pero el pipeline completo (UNet + prompts) si puede introducir elementos no presentes en la imagen original segun el valor de `strength`.
 - **Sesgos**: este componente no introduce sesgos por si mismo, pero el pipeline SDXL 1.0 al que sirve hereda los sesgos conocidos de sus datos de entrenamiento.
-- **Licencia**: la model card indica que la licencia sigue la OpenRAIL++-M de Stability AI para SDXL base 1.0, que permite uso comercial con restricciones de uso (prohibicion de aplicaciones de vigilancia, discriminacion, desinformacion, etc.). Los metadatos de HuggingFace no declaran licencia, por lo que conviene verificar los terminos antes de un despliegue en produccion.
+- **Licencia**: la model card indica que la licencia sigue la OpenRAIL++-M de Stability AI para SDXL base 1.0, que permite uso comercial con restricciones de uso (prohibicion de aplicaciones de vigilancia, discriminacion, desinformacion, etc.). Los metadatos de Hugging Face no declaran licencia, por lo que conviene verificar los terminos antes de un despliegue en produccion.
 - **Madurez y soporte**: repositorio de autor individual, con 0 descargas y 0 likes, creado y actualizado el mismo dia (2026-09-25). No hay garantia de mantenimiento ni de compatibilidad con futuras versiones de coremltools o de `ml-stable-diffusion`.
 - **Sin benchmarks publicados**: no hay metricas objetivas de fidelidad de reconstruccion ni de rendimiento; la validacion descrita es funcional.
 - **Dependencia de versiones**: requiere coremltools 9.0 para su generacion y Core ML Spec 7 (iOS 16+) para su ejecucion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mjmiller/coreml-sdxl-vae-encoder-768
+- Repositorio en Hugging Face: https://huggingface.co/mjmiller/coreml-sdxl-vae-encoder-768
 - Paquete oficial de Apple para iOS (SDXL base, 768²): https://huggingface.co/apple/coreml-stable-diffusion-xl-base-ios
 - Paquete oficial de Apple para macOS (SDXL base, encoder a 1024²): https://huggingface.co/apple/coreml-stable-diffusion-xl-base
 - Modelo base de SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
@@ -109,5 +109,5 @@ La diferencia clave frente a `stabilityai/sdxl-vae` es que aquel es un modelo de
 - Ficha y alternativas del VAE de SDXL en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/sdxl-vae-stabilityai
 - Analisis de mantenimiento del paquete `stabilityai/sdxl-vae` en Socket: https://socket.dev/huggingface/package/stabilityai/sdxl-vae
 - Ficha del VAE de SDXL en Inferix: https://inferix.co/models/stabilityai/sdxl-vae
-- VAE alternativo en HuggingFace (`AiArtLab/sdxl_vae`): https://huggingface.co/AiArtLab/sdxl_vae
+- VAE alternativo en Hugging Face (`AiArtLab/sdxl_vae`): https://huggingface.co/AiArtLab/sdxl_vae
 - Repositorio de `ml-stable-diffusion` citado en la model card (referencia `StableDiffusionXL+Resources.swift`): https://github.com/apple/ml-stable-diffusion

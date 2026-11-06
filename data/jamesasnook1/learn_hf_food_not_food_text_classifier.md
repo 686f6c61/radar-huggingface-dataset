@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`learn_hf_food_not_food_text_classifier` es un clasificador binario de texto obtenido por ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased`. Lo publica el usuario JamesASnook1 en HuggingFace y su propósito declarado, a partir del propio nombre del repositorio, es distinguir textos que hablan de comida de los que no. Se trata de un modelo derivado de un ejercicio de aprendizaje dentro del ecosistema `transformers` (la etiqueta `generated_from_trainer` así lo indica) y no de un modelo entrenado desde cero.
+`learn_hf_food_not_food_text_classifier` es un clasificador binario de texto obtenido por ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased`. Lo publica el usuario JamesASnook1 en Hugging Face y su propósito declarado, a partir del propio nombre del repositorio, es distinguir textos que hablan de comida de los que no. Se trata de un modelo derivado de un ejercicio de aprendizaje dentro del ecosistema `transformers` (la etiqueta `generated_from_trainer` así lo indica) y no de un modelo entrenado desde cero.
 
 Arquitecturalmente es un transformer encoder de 6 capas con 66.955.010 parámetros totales, de los cuales la práctica totalidad corresponden al cuerpo de DistilBERT (unos 66 millones) más una cabeza de clasificación de dos etiquetas. Hereda del modelo base la ventana de contexto de 512 tokens, el tokenizador WordPiece en inglés sin distinción de mayúsculas y la licencia Apache 2.0.
 
@@ -108,7 +108,7 @@ No se dispone de comparaciones de rendimiento frente a alternativas, porque el a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamesASnook1/learn_hf_food_not_food_text_classifier
+- Modelo en Hugging Face: https://huggingface.co/JamesASnook1/learn_hf_food_not_food_text_classifier
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentación de `transformers` para clasificación de secuencias: https://huggingface.co/docs/transformers/tasks/sequence_classification
 - Documentación de Text Embeddings Inference: https://huggingface.co/docs/text-embeddings-inference

@@ -78,6 +78,6 @@ No se ha encontrado informacion sobre modelos comparables en la misma categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-round2
+- Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-round2
 - Proyecto LegalGPT (GitHub): https://github.com/czc0407/legalGPT
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

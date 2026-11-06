@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/izblue/dama-aibrain
+- Hugging Face: https://huggingface.co/izblue/dama-aibrain
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Repos relacionados (no oficiales): https://huggingface.co/Taeri077/dama-ai-brain, https://huggingface.co/WonseokJayJung/dama-aibrain, https://friendli.ai/models/artnfull/dama-aibrain

@@ -72,7 +72,7 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/halim0627/3d-scene-understanding-analysis-2023
+- Repositorio en Hugging Face: https://huggingface.co/halim0627/3d-scene-understanding-analysis-2023
 - Artefacto principal: `reading.md` (incluido en el repositorio)
 - Documentación: `README.md` (incluido en el repositorio)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

@@ -4,7 +4,7 @@
 
 AzadDjan/Qwen3-4B-banking77-lora es un adaptador LoRA publicado por el usuario AzadDjan que ajusta el modelo base Qwen/Qwen3-4B-Base para una tarea concreta de clasificación de texto: la predicción de la intención del cliente en consultas bancarias. El adaptador se ha entrenado sobre el dataset PolyAI/banking77, que contiene 77 clases de intención (por ejemplo, "card_arrival", "lost_or_stolen_card" o "transfer_not_received"), y se distribuye en formato PEFT con pesos safetensors, con licencia Apache 2.0.
 
-El interés práctico del modelo no está en la generación de texto generalista, sino en reutilizar un transformer decoder de 4.000 millones de parámetros como clasificador de intenciones mediante un adaptador de bajo rango. Esto permite obtener un clasificador especializado sin reentrenar el modelo completo y manteniendo la posibilidad de descargar únicamente los pesos del adaptador, que ocupan 0,1 GB en el repositorio, sobre un modelo base ya disponible en el ecosistema HuggingFace.
+El interés práctico del modelo no está en la generación de texto generalista, sino en reutilizar un transformer decoder de 4.000 millones de parámetros como clasificador de intenciones mediante un adaptador de bajo rango. Esto permite obtener un clasificador especializado sin reentrenar el modelo completo y manteniendo la posibilidad de descargar únicamente los pesos del adaptador, que ocupan 0,1 GB en el repositorio, sobre un modelo base ya disponible en el ecosistema Hugging Face.
 
 Es relevante ahora porque los adaptadores LoRA sobre modelos generativos grandes se han consolidado como alternativa a los clasificadores BERT pequeños en dominios verticales, y porque el autor declara métricas altas en banking77 (accuracy de 0,9291 en la evaluación reportada y 0,9412 en el split de test), lo que lo convierte en un candidato a evaluar frente a alternativas más ligeras. Ahora bien, la model card es automática y no documenta composición del dataset de entrenamiento, idiomas soportados ni detalles de inferencia, por lo que la información disponible es limitada.
 
@@ -96,8 +96,8 @@ No hay en la información proporcionada resultados comparables de otros modelos 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-banking77-lora (este) | Adaptador LoRA sobre base de 4B | No disponible | Clasificación de 77 intenciones | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-4B-Base sin ajustar | 4.000 millones aprox. | No disponible en la información proporcionada | Generación de texto general | No disponible en la información proporcionada | HuggingFace (modelo base referenciado) |
+| Qwen3-4B-banking77-lora (este) | Adaptador LoRA sobre base de 4B | No disponible | Clasificación de 77 intenciones | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-4B-Base sin ajustar | 4.000 millones aprox. | No disponible en la información proporcionada | Generación de texto general | No disponible en la información proporcionada | Hugging Face (modelo base referenciado) |
 | Clasificadores encoder pequeños ajustados en banking77 (BERT, DistilBERT, SetFit) | 66-340 millones típicamente | 512 tokens típicamente | Clasificación de 77 intenciones | Variable según modelo | Ampliamente disponibles, pero sin métricas comparables aportadas en esta información |
 
 No se dispone de resultados de benchmarks de las alternativas medidos en condiciones idénticas a las de este adaptador, por lo que la comparación cuantitativa no es posible con los datos proporcionados. La comparación cualitativa apunta a que este adaptador exige mucho más cómputo y memoria que un encoder pequeño, a cambio de reutilizar la infraestructura de un modelo generativo y de una licencia Apache 2.0 permisiva.
@@ -119,7 +119,7 @@ No se dispone de resultados de benchmarks de las alternativas medidos en condici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AzadDjan/Qwen3-4B-banking77-lora
+- Modelo en Hugging Face: https://huggingface.co/AzadDjan/Qwen3-4B-banking77-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset: https://huggingface.co/datasets/PolyAI/banking77
 - Paper de banking77 (Casanueva et al., 2020): https://arxiv.org/abs/2003.04807

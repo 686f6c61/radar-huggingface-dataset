@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Mindworld (este) | 1,24 B | no disponible | Ajuste de dominio para videojuego, formato MLC | Llama 3.2 Community | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Instrucción general | Llama 3.2 Community | HuggingFace, ampliamente distribuido |
-| mlc-ai/Llama-3.2-1B-Instruct-q4f16_1-MLC | 1,24 B | 128 000 tokens | Instrucción general en formato MLC | Llama 3.2 Community | HuggingFace, librería precompilada de WebLLM |
+| Llama-3.2-1B-Mindworld (este) | 1,24 B | no disponible | Ajuste de dominio para videojuego, formato MLC | Llama 3.2 Community | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Instrucción general | Llama 3.2 Community | Hugging Face, ampliamente distribuido |
+| mlc-ai/Llama-3.2-1B-Instruct-q4f16_1-MLC | 1,24 B | 128 000 tokens | Instrucción general en formato MLC | Llama 3.2 Community | Hugging Face, librería precompilada de WebLLM |
 | Muse Spark Open (modelo profesor) | no disponible | no disponible | Modelo mayor usado para destilación | no disponible | no disponible |
 
 La comparación relevante es con el modelo base y con la versión MLC oficial: este ajuste sacrifica generalidad a cambio de una validez de formato muy superior en el dominio del juego (99,5 % frente al 48,5 % del 1B original).
@@ -94,7 +94,7 @@ La comparación relevante es con el modelo base y con la versión MLC oficial: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kysupo/Llama-3.2-1B-Mindworld-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/kysupo/Llama-3.2-1B-Mindworld-q4f16_1-MLC
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Librería MLC de referencia (config y tokenizador): https://huggingface.co/mlc-ai/Llama-3.2-1B-Instruct-q4f16_1-MLC
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

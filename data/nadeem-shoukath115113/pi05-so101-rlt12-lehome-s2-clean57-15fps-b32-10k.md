@@ -111,7 +111,7 @@ Comparativas con otras familias de VLA (parámetros, contexto, rendimiento, lice
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nadeem-Shoukath115113/pi05-so101-rlt12-lehome-s2-clean57-15fps-b32-10k
+- Hugging Face: https://huggingface.co/Nadeem-Shoukath115113/pi05-so101-rlt12-lehome-s2-clean57-15fps-b32-10k
 - Repositorio `lehome_solution` (fuente del ruido correlacionado y la normalización, commit `ca73828`): https://github.com/IliaLarchenko/lehome_solution
 - W&B: proyecto `rlt12-lehome-chain`, run `s3dd9oug`
 - Librería openpi (indicada como `library_name` en el repositorio)

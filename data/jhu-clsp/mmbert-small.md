@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mmBERT-small es un modelo de lenguaje enmascarado (pipeline `fill-mask`) construido sobre la arquitectura ModernBERT y publicado por el Johns Hopkins University Center for Language and Speech Processing (organización `jhu-clsp` en HuggingFace). Se trata de la variante "small" de la familia mmBERT, una serie de codificadores (encoders) multilingües diseñados para cubrir un número muy elevado de idiomas con una arquitectura de transformer moderna, en lugar de las arquitecturas BERT/XLM-R clásicas.
+mmBERT-small es un modelo de lenguaje enmascarado (pipeline `fill-mask`) construido sobre la arquitectura ModernBERT y publicado por el Johns Hopkins University Center for Language and Speech Processing (organización `jhu-clsp` en Hugging Face). Se trata de la variante "small" de la familia mmBERT, una serie de codificadores (encoders) multilingües diseñados para cubrir un número muy elevado de idiomas con una arquitectura de transformer moderna, en lugar de las arquitecturas BERT/XLM-R clásicas.
 
 El modelo resuelve el problema de disponer de un encoder multilingüe de bajo coste computacional que sirva como base para tareas de representación del lenguaje: clasificación de texto, etiquetado de secuencias, recuperación de información o generación de embeddings, en entornos con recursos limitados y con cobertura de idiomas de bajos recursos. Su relevancia actual radica en que la mayoría de los encoders multilingües de referencia (mBERT, XLM-R) arrastran arquitecturas de 2018-2020 y ventanas de contexto cortas, mientras que mmBERT adopta el diseño ModernBERT.
 
@@ -34,7 +34,7 @@ Los conjuntos de datos referenciados en la model card permiten reconstruir el pl
 - Clasificación de texto multilingüe: la cabeza de representación de la clase `[CLS]` o el pooling de la última capa sirven de base para ajuste fino en tareas de sentimiento, tópicos o detección de spam.
 - Etiquetado de secuencias: clasificación de tokens para NER, POS tagging, chunking o detección de entidades en textos multilingües.
 - Cobertura multilingüe amplia: la model card declara soporte para un conjunto muy extenso de idiomas, incluyendo lenguas de bajos recursos poco representadas en modelos anteriores.
-- Integración con el ecosistema `transformers`: el repositorio está marcado como `endpoints_compatible`, lo que permite su uso directo con la librería y con los endpoints de HuggingFace.
+- Integración con el ecosistema `transformers`: el repositorio está marcado como `endpoints_compatible`, lo que permite su uso directo con la librería y con los endpoints de Hugging Face.
 - No soporta tool calling, function calling, uso como agente, razonamiento multi-paso, ni capacidades de visión, audio o modo "thinking": son funciones propias de modelos generativos, no de un encoder enmascarado.
 
 ## Casos de uso
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible con exactitud, ya que no se publica el número de parámetros. Para una variante "small" de un encoder derivado de ModernBERT (rango típico de 100-250 millones de parámetros), las estimaciones orientativas serían: aproximadamente 0,5-1 GB en FP16 y 0,3-0,6 GB en INT8 para pesos y activaciones.
 - GPU recomendadas: cualquier GPU moderna sirve para inferencia; una NVIDIA T4, L4, RTX 3060 o superior es suficiente. Para ajuste fino, una RTX 4090, A100 o H100 permiten lotes grandes y secuencias largas con holgura.
 - Compatibilidad con GPU de consumo: sí, es esperable que quepa en GPUs de consumo (GTX 1660, RTX 2060 y superiores) e incluso que funcione en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: `transformers` con PyTorch (soporte nativo declarado); es compatible con los endpoints de HuggingFace. Para servir el modelo a escala se puede usar Text Embeddings Inference o un servidor propio con ONNX Runtime. vLLM no aplica a encoders de este tipo, y no se documentan pesos GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` con PyTorch (soporte nativo declarado); es compatible con los endpoints de Hugging Face. Para servir el modelo a escala se puede usar Text Embeddings Inference o un servidor propio con ONNX Runtime. vLLM no aplica a encoders de este tipo, y no se documentan pesos GGUF para llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ Los datos de XLM-RoBERTa, mBERT y ModernBERT provienen de sus fichas públicas y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhu-clsp/mmBERT-small
+- Modelo en Hugging Face: https://huggingface.co/jhu-clsp/mmBERT-small
 - Paper de referencia (arXiv): https://arxiv.org/abs/2509.06888
 - Dataset de preentrenamiento fase 1 (FineWeb2, idiomas principales): https://huggingface.co/datasets/jhu-clsp/mmbert-pretrain-p1-fineweb2-langs
 - Dataset de preentrenamiento fase 2 (FineWeb2, idiomas restantes): https://huggingface.co/datasets/jhu-clsp/mmbert-pretrain-p2-fineweb2-remaining

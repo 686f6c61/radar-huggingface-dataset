@@ -4,7 +4,7 @@
 
 CodeGeeX4-ALL-9B es un modelo de generación de código multilingüe desarrollado por el equipo de Zhipu AI (THUDM), publicado originalmente como la versión open source de la serie CodeGeeX4. Se trata de un modelo de 9.4 mil millones de parámetros, entrenado de forma continua sobre la base del modelo GLM-4-9B, con el objetivo de mejorar sustancialmente sus capacidades de generación de código. Su relevancia actual radica en que, con menos de 10 mil millones de parámetros, consigue un rendimiento competitivo frente a modelos mucho más grandes en benchmarks de código como HumanEval o BigCodeBench, ofreciendo un equilibrio óptimo entre velocidad de inferencia y calidad de salida.
 
-El modelo soporta un contexto de hasta 128.000 tokens y está diseñado para cubrir un espectro amplio de escenarios de desarrollo de software, incluyendo completado de código, generación de código, intérprete de código, búsqueda web, llamadas a funciones (function calling) y preguntas y respuestas a nivel de repositorio. La licencia es propia de CodeGeeX4, con restricciones de uso comercial que deben revisarse. El repositorio de HuggingFace de esta versión concreta (manaladan6) contiene los pesos en formato safetensors, con un tamaño de 18.8 GB, y se identifica con la etiqueta de licencia `codegeex4`.
+El modelo soporta un contexto de hasta 128.000 tokens y está diseñado para cubrir un espectro amplio de escenarios de desarrollo de software, incluyendo completado de código, generación de código, intérprete de código, búsqueda web, llamadas a funciones (function calling) y preguntas y respuestas a nivel de repositorio. La licencia es propia de CodeGeeX4, con restricciones de uso comercial que deben revisarse. El repositorio de Hugging Face de esta versión concreta (manaladan6) contiene los pesos en formato safetensors, con un tamaño de 18.8 GB, y se identifica con la etiqueta de licencia `codegeex4`.
 
 ## Especificaciones tecnicas
 
@@ -70,10 +70,10 @@ Estos resultados indican que CodeGeeX4-ALL-9B supera a modelos de mayor tamaño 
 
 | Modelo | Parámetros | Contexto | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeGeeX4-ALL-9B | 9.4 B | 128K | 82.3 | CodeGeeX4 (restrictiva) | HuggingFace |
-| Codestral-22B | 22 B | 32K | 81.1 | Mistral AI Non-Production | HuggingFace |
-| DeepSeek Coder 33B Instruct | 33 B | 16K | 81.1 | DeepSeek License | HuggingFace |
-| Llama3-70B-Instruct | 70 B | 8K | 77.4 | Llama 3 License | HuggingFace |
+| CodeGeeX4-ALL-9B | 9.4 B | 128K | 82.3 | CodeGeeX4 (restrictiva) | Hugging Face |
+| Codestral-22B | 22 B | 32K | 81.1 | Mistral AI Non-Production | Hugging Face |
+| DeepSeek Coder 33B Instruct | 33 B | 16K | 81.1 | DeepSeek License | Hugging Face |
+| Llama3-70B-Instruct | 70 B | 8K | 77.4 | Llama 3 License | Hugging Face |
 
 CodeGeeX4-ALL-9B ofrece un rendimiento superior en HumanEval a modelos de mayor tamaño, y su ventaja clave es su contexto de 128K, muy superior a los 8K de Llama3-70B o los 16K de DeepSeek Coder 33B. Sin embargo, su licencia es más restrictiva que la de otros modelos, y en benchmarks como NCB o LCB se queda por detrás de Codestral-22B.
 
@@ -88,8 +88,8 @@ CodeGeeX4-ALL-9B ofrece un rendimiento superior en HumanEval a modelos de mayor 
 
 ## Enlaces
 
-- HuggingFace (repositorio de la comunidad): https://huggingface.co/manaladan6/codegeex4-all-9b
-- HuggingFace (repositorio original de Zhipu AI): https://huggingface.co/THUDM/codegeex4-all-9b
+- Hugging Face (repositorio de la comunidad): https://huggingface.co/manaladan6/codegeex4-all-9b
+- Hugging Face (repositorio original de Zhipu AI): https://huggingface.co/THUDM/codegeex4-all-9b
 - GitHub oficial: https://github.com/THUDM/CodeGeeX4
 - GitHub (organización zai-org): https://github.com/zai-org/CodeGeeX4
 - Licencia del modelo: https://huggingface.co/THUDM/codegeex4-all-9b/blob/main/LICENSE

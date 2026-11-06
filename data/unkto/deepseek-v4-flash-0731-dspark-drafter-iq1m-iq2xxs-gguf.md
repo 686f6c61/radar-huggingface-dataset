@@ -84,7 +84,7 @@ La comparativa muestra que la propuesta de Unkto es la más compacta, con una re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Unkto/DeepSeek-V4-Flash-0731-DSpark-Drafter-IQ1M-IQ2XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Unkto/DeepSeek-V4-Flash-0731-DSpark-Drafter-IQ1M-IQ2XXS-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Matriz de importancia (imatrix): https://huggingface.co/antirez/deepseek-v4-gguf
 - Fuente BF16 del drafter: https://huggingface.co/singulared/DeepSeek-V4-Flash-0731-DSpark-GGUF

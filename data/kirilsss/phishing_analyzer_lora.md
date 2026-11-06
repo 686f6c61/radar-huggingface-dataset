@@ -118,6 +118,6 @@ Esta comparativa interna muestra que el adaptador de 3B reduce drásticamente la
 
 ## Enlaces
 
-- HuggingFace: [kirilsss/Phishing_analyzer_LoRA](https://huggingface.co/kirilsss/Phishing_analyzer_LoRA)
+- Hugging Face: [kirilsss/Phishing_analyzer_LoRA](https://huggingface.co/kirilsss/Phishing_analyzer_LoRA)
 - GitHub: [Phishing-analyzer-LoRA](https://github.com/kirilssw/Phishing-analyzer-LoRA)
 - Dataset CEAS-08: [phishing-email-training-dataset](https://huggingface.co/datasets/nosadaniel/phishing-email-training-dataset)

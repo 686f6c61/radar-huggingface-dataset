@@ -84,7 +84,7 @@ La comparativa directa solo es posible con el modelo base, del que este es una e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youssefbahy/taysir-tasmee
+- Modelo en Hugging Face: https://huggingface.co/youssefbahy/taysir-tasmee
 - Modelo base: https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Copia en GitHub (release `tasmee-model-v2`): repositorio `Youssef-Bahy-Youssef/taysir-audio` (no se dispone de URL completa en la informacion proporcionada)

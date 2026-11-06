@@ -67,9 +67,9 @@ No se dispone de informacion suficiente para una comparativa cuantitativa con mo
 
 ## Enlaces
 
-- [HuggingFace - repositorio del checkpoint cuantizado](https://huggingface.co/CalamitousFelicitousness/HunyuanImage-3.0-Instruct-Distil-SDNQ-4bit-dynamic)
-- [HuggingFace - modelo oficial HunyuanImage-3.0-Instruct-Distil](https://huggingface.co/tencent/HunyuanImage-3.0-Instruct-Distil)
-- [HuggingFace - modelo oficial HunyuanImage-3.0-Instruct](https://huggingface.co/tencent/HunyuanImage-3.0-Instruct)
+- [Hugging Face - repositorio del checkpoint cuantizado](https://huggingface.co/CalamitousFelicitousness/HunyuanImage-3.0-Instruct-Distil-SDNQ-4bit-dynamic)
+- [Hugging Face - modelo oficial HunyuanImage-3.0-Instruct-Distil](https://huggingface.co/tencent/HunyuanImage-3.0-Instruct-Distil)
+- [Hugging Face - modelo oficial HunyuanImage-3.0-Instruct](https://huggingface.co/tencent/HunyuanImage-3.0-Instruct)
 - [GitHub - repositorio oficial de HunyuanImage-3.0](https://github.com/Tencent-Hunyuan/HunyuanImage-3.0)
 - [Paper tecnico (arXiv)](https://arxiv.org/pdf/2509.23951)
 - [Sitio oficial de Hunyuan Image](https://hunyuan.tencent.com/image)

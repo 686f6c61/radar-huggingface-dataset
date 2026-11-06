@@ -95,6 +95,6 @@ La comparación directa con modelos de la misma categoría (MoE multimodal de ~3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/suzu89/Nex-N2.5-mini-oQ5
+- Repositorio Hugging Face: https://huggingface.co/suzu89/Nex-N2.5-mini-oQ5
 - Modelo base upstream: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Los resultados de búsqueda web no aportaron enlaces adicionales relevantes (papers, blogs, repos o demos) sobre este modelo o su versión upstream.

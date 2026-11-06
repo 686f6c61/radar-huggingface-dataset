@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image-SFT es un modelo de generacion de imagenes a partir de texto desarrollado por OpenMOSS (OpenMOSS-Team), presentado como la version ajustada mediante supervised fine-tuning (SFT) de MOSS-Image-Base. Se distribuye con licencia Apache 2.0 y esta publicado en HuggingFace con la libreria diffusers, lo que permite integrarlo en pipelines estandar de difusion mediante el custom pipeline `pipeline_moss_image`.
+MOSS-Image-SFT es un modelo de generacion de imagenes a partir de texto desarrollado por OpenMOSS (OpenMOSS-Team), presentado como la version ajustada mediante supervised fine-tuning (SFT) de MOSS-Image-Base. Se distribuye con licencia Apache 2.0 y esta publicado en Hugging Face con la libreria diffusers, lo que permite integrarlo en pipelines estandar de difusion mediante el custom pipeline `pipeline_moss_image`.
 
 El modelo cuenta con 5.082.308.624 parametros (aproximadamente 5,08 mil millones), segun el recuento real de los ficheros safetensors del repositorio, que ocupa 27,2 GB. La familia MOSS-Image se describe como un modelo base DiT (Diffusion Transformer) de 5B parametros orientado a renderizado de texto de alta calidad, generacion de layouts y eficiencia de inferencia. Frente a MOSS-Image-Base, la variante SFT mejora la agrupacion de texto y la organizacion de composiciones con mucho contenido textual, como muestran los ejemplos comparativos de la model card.
 
@@ -72,10 +72,10 @@ Los datos de las alternativas provienen de conocimiento publico general sobre es
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MOSS-Image-SFT | ~5,08B | 1024x1024 documentado en los ejemplos; prompt sin limite documentado | Apache 2.0 | HuggingFace, ModelScope, ComfyUI, demo en Spaces |
-| MOSS-Image-Base | ~5,08B (misma arquitectura) | misma que SFT | Apache 2.0 | HuggingFace, ModelScope |
-| FLUX.1-dev (referencia externa) | ~12B (aproximado) | no verificado | licencia no comercial | HuggingFace |
-| Qwen-Image (referencia externa) | ~20B (aproximado) | no verificado | Apache 2.0 (segun publicaciones del autor) | HuggingFace |
+| MOSS-Image-SFT | ~5,08B | 1024x1024 documentado en los ejemplos; prompt sin limite documentado | Apache 2.0 | Hugging Face, ModelScope, ComfyUI, demo en Spaces |
+| MOSS-Image-Base | ~5,08B (misma arquitectura) | misma que SFT | Apache 2.0 | Hugging Face, ModelScope |
+| FLUX.1-dev (referencia externa) | ~12B (aproximado) | no verificado | licencia no comercial | Hugging Face |
+| Qwen-Image (referencia externa) | ~20B (aproximado) | no verificado | Apache 2.0 (segun publicaciones del autor) | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa de rendimiento entre MOSS-Image-SFT y estos modelos.
 
@@ -93,15 +93,15 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- HuggingFace (modelo SFT): https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
-- HuggingFace (modelo base): https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
+- Hugging Face (modelo SFT): https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
+- Hugging Face (modelo base): https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Repositorio en GitHub: https://github.com/OpenMOSS/MOSS-Image
 - Informe tecnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - Guia de usuario (ingles): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md
 - Guia de usuario (chino): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md
 - Documentacion de ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md
 - Workflow de ejemplo para ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/moss-image/example_workflows/moss-image.json
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Pagina del proyecto: https://openmoss.github.io/MOSS-Image/
 - ModelScope (base): https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope (SFT): https://modelscope.cn/models/openmoss/MOSS-Image-SFT

@@ -4,7 +4,7 @@
 
 NileAGI Sukuma STT Lite es un modelo de reconocimiento automático del habla (ASR) desarrollado por NileAGI, una empresa de investigación en inteligencia artificial centrada en la inteligencia artificial de nivel humano (HLI). Este modelo está diseñado específicamente para la transcripción del idioma sukuma, una lengua bantú hablada en Tanzania, y se presenta como una variante ligera para entornos con recursos limitados.
 
-El modelo se basa en la arquitectura Whisper de OpenAI, adaptada para el idioma sukuma, y cuenta con aproximadamente 37,7 millones de parámetros, lo que lo sitúa en la gama de modelos pequeños optimizados para inferencia en CPU y dispositivos de bajo consumo. Se distribuye en formato safetensors y es compatible con la librería transformers de HuggingFace.
+El modelo se basa en la arquitectura Whisper de OpenAI, adaptada para el idioma sukuma, y cuenta con aproximadamente 37,7 millones de parámetros, lo que lo sitúa en la gama de modelos pequeños optimizados para inferencia en CPU y dispositivos de bajo consumo. Se distribuye en formato safetensors y es compatible con la librería transformers de Hugging Face.
 
 Es importante destacar que este modelo es una comprobación experimental de pipeline, no un lanzamiento de producción de NileAGI. Su caso de uso previsto es la transcripción de sukuma en entornos de bajos recursos donde el modelo completo `nileagi-suk-stt` resultaría demasiado pesado. No está diseñado para asistentes de voz en producción, conversación conversacional en sukuma ni audio con alto nivel de ruido.
 
@@ -31,7 +31,7 @@ No se han publicado detalles sobre el proceso de entrenamiento, incluyendo el nu
 
 - Transcripcion de audio en idioma sukuma a texto.
 - Inferencia en CPU y dispositivos de bajo consumo gracias a su tamano reducido (37,7 millones de parametros).
-- Compatible con la libreria transformers de HuggingFace para integracion en pipelines de ASR.
+- Compatible con la libreria transformers de Hugging Face para integracion en pipelines de ASR.
 - Disenado para audio de baja complejidad, sin ruido excesivo y con habla clara.
 - No incluye capacidades de traduccion, diarizacion de hablantes ni reconocimiento de emociones.
 - No soporta tool calling, agentes ni razonamiento multi-paso, al ser un modelo exclusivamente de transcripcion.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: al tener solo 37,7 millones de parametros, el modelo puede ejecutarse en CPU sin necesidad de GPU. El uso de VRAM seria inferior a 1 GB en caso de usar GPU.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM seria suficiente, aunque no es necesaria. CPU con 4 GB de RAM son suficientes para inferencia.
 - Compatibilidad con consumer GPU: si, el modelo cabe en cualquier GPU de consumo actual, incluyendo integradas.
-- Opciones de despliegue: transformers de HuggingFace, pipelines de ASR de la libreria, posible exportacion a ONNX o TensorFlow Lite para despliegue en edge.
+- Opciones de despliegue: transformers de Hugging Face, pipelines de ASR de la libreria, posible exportacion a ONNX o TensorFlow Lite para despliegue en edge.
 - Latencia y throughput: no se han publicado datos oficiales. Dado el tamano del modelo, se espera una latencia moderada en CPU, aunque depende del hardware y de la longitud del audio procesado.
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ No se dispone de informacion sobre modelos comparables especificamente entrenado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nileagi/nileagi-suk-stt-lite
-- Organizacion NileAGI en HuggingFace: https://huggingface.co/nileagi
+- Modelo en Hugging Face: https://huggingface.co/nileagi/nileagi-suk-stt-lite
+- Organizacion NileAGI en Hugging Face: https://huggingface.co/nileagi
 - Sitio web de NileAGI: https://nileagi.com/

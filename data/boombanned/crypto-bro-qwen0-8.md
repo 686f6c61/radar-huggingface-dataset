@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BoomBanned/crypto-bro-qwen0.8` es un modelo publicado en HuggingFace por el usuario BoomBanned bajo licencia MIT. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) derivado de la familia Qwen con un tamaño aproximado de 0,8 mil millones de parametros, orientado por su nombre a tematica de criptomonedas ("crypto-bro"). Sin embargo, la model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, sin especificaciones y sin datos de entrenamiento.
+`BoomBanned/crypto-bro-qwen0.8` es un modelo publicado en Hugging Face por el usuario BoomBanned bajo licencia MIT. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) derivado de la familia Qwen con un tamaño aproximado de 0,8 mil millones de parametros, orientado por su nombre a tematica de criptomonedas ("crypto-bro"). Sin embargo, la model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, sin especificaciones y sin datos de entrenamiento.
 
 El modelo no cuenta con descargas ni likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-05), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad. No hay informacion sobre el pipeline de inferencia, los idiomas soportados ni los datos de entrenamiento.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 - Experimentacion academica con fine-tunings pequenos: su tamano reducido (presuntamente ~0,8B) lo hace adecuado para probar pipelines de entrenamiento y despliegue en entornos con recursos limitados.
 - Base para nuevos ajustes finos: al estar bajo licencia MIT, puede servir como punto de partida para experimentos de la comunidad, aunque la falta de documentacion complica evaluar su calidad base.
 - Despliegue en entornos de bajos recursos: si el tamano es realmente de ~0,8B, podria ejecutarse en CPU o GPU de gama baja para tareas de generacion de texto simple, previa validacion de calidad.
-- Educacion y demos: util para mostrar el ciclo completo de publicacion de un modelo en HuggingFace y las buenas practicas de documentacion (o su ausencia).
+- Educacion y demos: util para mostrar el ciclo completo de publicacion de un modelo en Hugging Face y las buenas practicas de documentacion (o su ausencia).
 - Analisis de riesgo de modelos no documentados: sirve como caso de estudio sobre los peligros de desplegar modelos sin model card, sin benchmarks y sin evaluacion de sesgos.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| BoomBanned/crypto-bro-qwen0.8 | no disponible (~0,8B presunto) | no disponible | MIT | Practicamente inexistente | HuggingFace, 0 descargas |
+| BoomBanned/crypto-bro-qwen0.8 | no disponible (~0,8B presunto) | no disponible | MIT | Practicamente inexistente | Hugging Face, 0 descargas |
 | Qwen2.5-0.5B | 0,5B | 32K (version base) | Apache 2.0 | Completa, con benchmarks | Ampliamente disponible |
 | Qwen2.5-1.5B | 1,5B | 32K (version base) | Apache 2.0 | Completa, con benchmarks | Ampliamente disponible |
 | SmolLM2-1.7B | 1,7B | 8K | Apache 2.0 | Completa, con benchmarks | Ampliamente disponible |
@@ -80,5 +80,5 @@ La comparativa se basa en la familia de modelos pequenos de referencia; los dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoomBanned/crypto-bro-qwen0.8
+- Modelo en Hugging Face: https://huggingface.co/BoomBanned/crypto-bro-qwen0.8
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

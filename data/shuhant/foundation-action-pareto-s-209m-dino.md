@@ -4,9 +4,9 @@
 
 ## Resumen
 
-El modelo `foundation-action-pareto-s-209m-dino` es un checkpoint de 209.643.520 parametros publicado por el usuario Shuhan Tan en HuggingFace. Por los tags asociados (`foundation-action`, `world-model`, `pareto`) y el sufijo `dino` del nombre, todo apunta a un modelo de mundo o de accion orientado a entornos visuales o roboticos, probablemente construido sobre un backbone de vision tipo DINO. No obstante, la model card no aporta informacion sobre la tarea concreta, la arquitectura interna ni los datos de entrenamiento.
+El modelo `foundation-action-pareto-s-209m-dino` es un checkpoint de 209.643.520 parametros publicado por el usuario Shuhan Tan en Hugging Face. Por los tags asociados (`foundation-action`, `world-model`, `pareto`) y el sufijo `dino` del nombre, todo apunta a un modelo de mundo o de accion orientado a entornos visuales o roboticos, probablemente construido sobre un backbone de vision tipo DINO. No obstante, la model card no aporta informacion sobre la tarea concreta, la arquitectura interna ni los datos de entrenamiento.
 
-El modelo esta sujeto a una licencia denominada `nvidia-internal-research` y su acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. El repositorio ocupa aproximadamente 0,8 GB y los pesos se distribuyen en formato safetensors, con la libreria pytorch como framework declarado. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no hay evidencia publica de adopcion ni de evaluacion por terceros.
+El modelo esta sujeto a una licencia denominada `nvidia-internal-research` y su acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. El repositorio ocupa aproximadamente 0,8 GB y los pesos se distribuyen en formato safetensors, con la libreria pytorch como framework declarado. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no hay evidencia publica de adopcion ni de evaluacion por terceros.
 
 Su relevancia actual es limitada como modelo listo para produccion, dado el caracter interno de la licencia, la ausencia de benchmarks y la falta de documentacion tecnica. Resulta mas interesante como referencia de investigacion sobre modelos de accion o de mundo a escala de 200 millones de parametros, presumiblemente destinados a planificacion o control en entornos visuales.
 
@@ -76,7 +76,7 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 ## Limitaciones y advertencias
 
 - Licencia `nvidia-internal-research`: el uso comercial o externo probablemente este restringido o directamente prohibido; conviene verificar los terminos exactos antes de cualquier uso.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que anade friccion para su evaluacion.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que anade friccion para su evaluacion.
 - Ausencia total de benchmarks: no hay evidencia publica de rendimiento en ninguna tarea.
 - Sin model card funcional: se desconoce la interfaz de entrada/salida, el formato de prompts y el dominio de aplicacion.
 - Riesgo de alucinacion y sesgos: no evaluable, al no existir informacion sobre datos de entrenamiento ni evaluaciones.
@@ -86,7 +86,7 @@ No se han identificado en la informacion disponible modelos comparables de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuhant/foundation-action-pareto-s-209m-dino
+- Modelo en Hugging Face: https://huggingface.co/shuhant/foundation-action-pareto-s-209m-dino
 - Perfil del autor: https://huggingface.co/shuhant
 - Modelos del autor: https://huggingface.co/shuhant/models
 - Repositorio relacionado (foundational_action): https://huggingface.co/shuhant/foundational_action

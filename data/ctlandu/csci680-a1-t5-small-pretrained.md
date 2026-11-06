@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara: se trata de un experimento docente reproduc
 | Longitud de contexto | No disponible en la model card (la referencia T5-small usa 512 tokens) |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica safetensors, sin variantes GGUF, ONNX ni cuantizadas declaradas |
 | Idiomas soportados | `code` (Java predominante en el corpus) e `en` |
-| Licencia | No disponible (ni en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (ni en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors (repositorio de 0,2 GB) |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CTlandu/csci680-a1-t5-small-pretrained
+- Modelo en Hugging Face: https://huggingface.co/CTlandu/csci680-a1-t5-small-pretrained
 - Dataset del corpus: https://huggingface.co/datasets/CTlandu/csci680-a1-java-corpus
 - Modelo afinado (referenciado en la model card): https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt
 - Modelo afinado (referenciado en la model card): https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt-st

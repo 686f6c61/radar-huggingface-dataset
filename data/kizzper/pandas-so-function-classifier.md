@@ -97,7 +97,7 @@ Nota: las alternativas genericas de embeddings no ofrecen una taxonomia cerrada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KIZZPER/pandas-so-function-classifier
+- Modelo en Hugging Face: https://huggingface.co/KIZZPER/pandas-so-function-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/KIZZPER/pandas-so-questions
 - Modelo complementario citado en la model card: https://huggingface.co/KIZZPER/pandas-so-function-retriever
 - Modelo base: https://huggingface.co/distilbert/distilroberta-base

@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Shooter57/sr1krea2v1)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Shooter57/sr1krea2v1)
 - [Repositorio oficial de Krea 2 en GitHub](https://github.com/krea-ai/krea-2)
 - [Página de Krea 2 Open-Source](https://www.krea.ai/krea-2-open-source)
-- [Modelo base en HuggingFace: krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw) (enlace no confirmado, se infiere de la etiqueta)
+- [Modelo base en Hugging Face: krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw) (enlace no confirmado, se infiere de la etiqueta)

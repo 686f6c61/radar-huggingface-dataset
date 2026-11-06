@@ -90,8 +90,8 @@ Segun el autor, ninguna de las diferencias entre lora7 y lora5 en estos conjunto
 
 | Modelo | Parametros (base) | Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AJev lora7 (este modelo) | 12B | 55,06 | apache-2.0 | Adaptador LoRA en HuggingFace |
-| AJev 26B-A4B | 26B (MoE, A4B) | 57,42 | no disponible en la informacion | HuggingFace (andyzhang232/ajev-gemma4-26b-a4b-lora1) |
+| AJev lora7 (este modelo) | 12B | 55,06 | apache-2.0 | Adaptador LoRA en Hugging Face |
+| AJev 26B-A4B | 26B (MoE, A4B) | 57,42 | no disponible en la informacion | Hugging Face (andyzhang232/ajev-gemma4-26b-a4b-lora1) |
 | AJev lora5 | 12B | 52,22 | no disponible en la informacion | Version previa del mismo autor |
 | Winnow-12B | 12B | 50,02 | no disponible en la informacion | no disponible en la informacion |
 
@@ -111,7 +111,7 @@ No se dispone de datos de contexto ni de otros benchmarks (MMLU, HumanEval, GSM8
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/andyzhang232/ajev-gemma4-12b-lora7
+- Hugging Face (este modelo): https://huggingface.co/andyzhang232/ajev-gemma4-12b-lora7
 - Modelo hermano de 26B-A4B: https://huggingface.co/andyzhang232/ajev-gemma4-26b-a4b-lora1
 - Codigo de inferencia: https://github.com/cmzy/ajev-infer
 - Suite Jev Decision Index 0.2.1: https://huggingface.co/spaces/multimodalart/jev-decision-index

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-med-lwf-pku-kw1` es un modelo publicado en HuggingFace por el usuario `wz7475`. El propio identificador apunta a un ajuste fino del modelo base Qwen2.5-7B-Instruct, con un sufijo que sugiere un entrenamiento orientado a un dominio concreto (el segmento «med» indica ámbito médico) y una técnica de ajuste continuado con preservación de conocimiento previo («lwf», *learning without forgetting*). La etiqueta `unsloth` del repositorio es coherente con un ajuste fino eficiente en memoria mediante LoRA/QLoRA. Ninguna de estas inferencias está confirmada por la documentación del autor.
+`wz7475/qwen2.5-7b-instruct-katcher-med-lwf-pku-kw1` es un modelo publicado en Hugging Face por el usuario `wz7475`. El propio identificador apunta a un ajuste fino del modelo base Qwen2.5-7B-Instruct, con un sufijo que sugiere un entrenamiento orientado a un dominio concreto (el segmento «med» indica ámbito médico) y una técnica de ajuste continuado con preservación de conocimiento previo («lwf», *learning without forgetting*). La etiqueta `unsloth` del repositorio es coherente con un ajuste fino eficiente en memoria mediante LoRA/QLoRA. Ninguna de estas inferencias está confirmada por la documentación del autor.
 
-La model card es la plantilla automática de HuggingFace y no contiene ningún dato sustituido: todos los campos figuran como «[More Information Needed]». No se declara autoría real, licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio tiene 0 descargas y 0 *likes*, y un tamaño de 1,5 GB.
+La model card es la plantilla automática de Hugging Face y no contiene ningún dato sustituido: todos los campos figuran como «[More Information Needed]». No se declara autoría real, licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio tiene 0 descargas y 0 *likes*, y un tamaño de 1,5 GB.
 
 La relevancia de esta ficha es, por tanto, fundamentalmente metodológica: sirve como ejemplo de publicación de pesos sin trazabilidad y como advertencia sobre los riesgos de adoptar en producción un modelo cuyo origen, licencia y comportamiento no están documentados.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: `pipeline_tag` no definido, región `us`, eti
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste. La model card únicamente contiene los apartados de la plantilla oficial de HuggingFace sin rellenar, incluyendo los campos de «Training Data», «Training Procedure», «Training Hyperparameters» y «Evaluation». No se documenta el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o cualquier otra técnica de alineación.
+No se dispone de información sobre la arquitectura, los datos de entrenamiento ni el procedimiento de ajuste. La model card únicamente contiene los apartados de la plantilla oficial de Hugging Face sin rellenar, incluyendo los campos de «Training Data», «Training Procedure», «Training Hyperparameters» y «Evaluation». No se documenta el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o cualquier otra técnica de alineación.
 
 Las únicas pistas disponibles son indirectas: la etiqueta `unsloth` indica el uso de esa librería para el ajuste fino, y el sufijo del nombre (`katcher-med-lwf-pku-kw1`) sugiere un entrenamiento con un conjunto de datos de dominio médico, posiblemente con una estrategia de *learning without forgetting* para mitigar el olvido catastrófico sobre las capacidades generales del modelo base. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental, incluido automáticamente en la plantilla, y no guarda relación con el entrenamiento del modelo.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado para el modelo analizado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-lwf-pku-kw1
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-lwf-pku-kw1
 - Artículo referenciado en las etiquetas (estimación de impacto ambiental, no relacionado con el entrenamiento del modelo): https://arxiv.org/abs/1910.09700
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Transformers: https://huggingface.co/docs/transformers

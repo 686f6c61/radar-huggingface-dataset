@@ -18,7 +18,7 @@ No se dispone de información pública sobre idiomas soportados, datos de entren
 | Longitud de contexto | Hasta 32.768 tokens en el ejemplo de `llama-server` (`-c 32768`); máximo nativo no disponible |
 | Tipos de cuantizacion | Q4_K_M (archivo principal); proyector de visión en bf16; otras cuantizaciones no disponibles |
 | Idiomas soportados | No disponible |
-| Licencia | Qwen Community License 1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | Qwen Community License 1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (texto y mmproj), más safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Keural-Lab-1031-GGUF | ≈116,5 B | ≈6,7 B | 32.768 en ejemplo; máximo no disponible | Qwen Community License 1.0 | GGUF en HuggingFace |
+| Keural-Lab-1031-GGUF | ≈116,5 B | ≈6,7 B | 32.768 en ejemplo; máximo no disponible | Qwen Community License 1.0 | GGUF en Hugging Face |
 | Qwen3.8-Flash-Next (referencia de licencia) | No disponible | No disponible | No disponible | Qwen Community License 1.0 | No disponible en la información |
 | Alternativas MoE de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 

@@ -72,5 +72,5 @@ La comparativa con otros modelos de parsing de documentos como LayoutLM, Donut o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chipherndon/Infinity-Parser2-Flash-vllm
+- Repositorio Hugging Face: https://huggingface.co/chipherndon/Infinity-Parser2-Flash-vllm
 - Modelo base original: https://huggingface.co/infly/Infinity-Parser2-Flash

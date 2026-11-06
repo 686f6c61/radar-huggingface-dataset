@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`deanoshuang/qwen3.5-9b-agent-sft-lora` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-9B` (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`), publicado por el usuario de HuggingFace deanoshuang. Se ha entrenado mediante supervisión fina (SFT) sobre trayectorias agénticas verificadas de ingeniería de software y de terminal, generadas por modelos maestros de pesos abiertos, más una porción de retención de matemáticas, ciencia, seguimiento de instrucciones y chat. Forma parte de un estudio de tres versiones (Base, SFT y etapa 2) evaluadas con protocolos bloqueados en SWE-bench Pro, Terminal-Bench 2.0, HLE y ASI-Bench, cuyo código, tarjeta de datos, registros y resultados por tarea están en el repositorio `github.com/Deanpuzzleai/apex-takehome`.
+`deanoshuang/qwen3.5-9b-agent-sft-lora` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-9B` (revisión `c202236235762e1c871ad0ccb60c8ee5ba337b9a`), publicado por el usuario de Hugging Face deanoshuang. Se ha entrenado mediante supervisión fina (SFT) sobre trayectorias agénticas verificadas de ingeniería de software y de terminal, generadas por modelos maestros de pesos abiertos, más una porción de retención de matemáticas, ciencia, seguimiento de instrucciones y chat. Forma parte de un estudio de tres versiones (Base, SFT y etapa 2) evaluadas con protocolos bloqueados en SWE-bench Pro, Terminal-Bench 2.0, HLE y ASI-Bench, cuyo código, tarjeta de datos, registros y resultados por tarea están en el repositorio `github.com/Deanpuzzleai/apex-takehome`.
 
 El modelo base es Qwen3.5-9B, un transformer denso de 9.000 millones de parámetros, nativamente multimodal (visión-lenguaje), con 262.144 tokens de contexto extensibles a 1M mediante YaRN, modo de razonamiento ("thinking") activado por defecto y licencia Apache 2.0. El adaptador congela la torre de visión y solo modifica el modelo de lenguaje: se carga sobre la clase servida `Qwen3_5ForConditionalGeneration` y añade 86.556.672 parámetros entrenables.
 
@@ -91,7 +91,7 @@ Como referencia del modelo base, fuentes externas citan que Qwen3.5-9B obtiene ~
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-lora
+- Hugging Face: https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de código, tarjeta de datos, registros y resultados: https://github.com/Deanpuzzleai/apex-takehome
 - Adaptador alternativo sobre el mismo base: https://huggingface.co/armand0e/Qwen3.5-9B-Agent-LoRA

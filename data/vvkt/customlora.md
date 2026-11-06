@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VVKT/customlora` es un repositorio publicado en HuggingFace por el usuario VVKT bajo licencia Apache 2.0. El nombre del repositorio sugiere que se trata de un adaptador LoRA (Low-Rank Adaptation) personalizado, aunque la model card no contiene ninguna descripcion tecnica, documentacion de uso ni especificacion del modelo base sobre el que se aplica. El repositorio tiene un tamano de 0,7 GB, lo que es coherente con un adaptador de pesos, pero no con un modelo completo de gran tamano.
+`VVKT/customlora` es un repositorio publicado en Hugging Face por el usuario VVKT bajo licencia Apache 2.0. El nombre del repositorio sugiere que se trata de un adaptador LoRA (Low-Rank Adaptation) personalizado, aunque la model card no contiene ninguna descripcion tecnica, documentacion de uso ni especificacion del modelo base sobre el que se aplica. El repositorio tiene un tamano de 0,7 GB, lo que es coherente con un adaptador de pesos, pero no con un modelo completo de gran tamano.
 
 La model card publicada se limita a la declaracion de licencia Apache 2.0, sin secciones de arquitectura, entrenamiento, datos, benchmarks ni instrucciones de inferencia. No consta pipeline declarado, no se especifican idiomas soportados y el repositorio no registra descargas ni likes en el momento de la consulta. La fecha de creacion y actualizacion es del 2 de noviembre de 2026, con apenas 32 segundos de diferencia entre ambas, lo que sugiere una publicacion automatizada o un repositorio de pruebas.
 
@@ -78,5 +78,5 @@ No disponible. No se puede establecer una comparativa sin identificar el modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VVKT/customlora
+- Repositorio en Hugging Face: https://huggingface.co/VVKT/customlora
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

@@ -103,7 +103,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/birbirll/g1-inspire-turn-page-starvla-n1d7
+- Modelo en Hugging Face: https://huggingface.co/birbirll/g1-inspire-turn-page-starvla-n1d7
 - Dataset de entrenamiento: https://huggingface.co/datasets/birbirll/g1-inspire-turn-page-v21
 - Framework starVLA: https://github.com/LidarDexManip/starVLA
 - Modelo base (warm start de entrenamiento): https://huggingface.co/nvidia/GR00T-N1.7-3B

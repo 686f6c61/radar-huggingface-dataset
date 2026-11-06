@@ -2,7 +2,7 @@
 
 ## Resumen
 
-clef-flash-cfpb-complaints es un adaptador de ajuste fino (fine-tuning) sobre el modelo base Cloudflare/clef-flash, desarrollado por el usuario hvgupta1 y publicado en HuggingFace. El modelo está especializado en la clasificación de quejas bancarias reales presentadas ante la CFPB (Consumer Financial Protection Bureau) de Estados Unidos, resolviendo tres tareas simultáneas: identificación del problema (issue), del producto financiero implicado (product) y del resultado deseado por el reclamante (outcome).
+clef-flash-cfpb-complaints es un adaptador de ajuste fino (fine-tuning) sobre el modelo base Cloudflare/clef-flash, desarrollado por el usuario hvgupta1 y publicado en Hugging Face. El modelo está especializado en la clasificación de quejas bancarias reales presentadas ante la CFPB (Consumer Financial Protection Bureau) de Estados Unidos, resolviendo tres tareas simultáneas: identificación del problema (issue), del producto financiero implicado (product) y del resultado deseado por el reclamante (outcome).
 
 El modelo se entrena mediante la herramienta clef-tune sobre un conjunto de 3.000 filas de entrenamiento y 300 de evaluación, partiendo del checkpoint f0b7d3cd65296abfe459e6c228b618f5d8b26d2f de Cloudflare/clef-flash. El resultado es un adaptador de aproximadamente 0,7 GB en formato safetensors, lo que sugiere un tamaño de modelo base en el rango de los miles de millones de parámetros, aunque el autor no especifica la arquitectura ni el número exacto de parámetros.
 
@@ -93,8 +93,8 @@ Calibración por tarea:
 
 | Modelo | Parámetros | Contexto | Exact match (3 etiquetas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clef-flash-cfpb-complaints | no disponible | no disponible | 44,4% | no disponible | HuggingFace |
-| Cloudflare/clef-flash (sin ajuste) | no disponible | no disponible | 19,6% | no disponible | HuggingFace |
+| clef-flash-cfpb-complaints | no disponible | no disponible | 44,4% | no disponible | Hugging Face |
+| Cloudflare/clef-flash (sin ajuste) | no disponible | no disponible | 19,6% | no disponible | Hugging Face |
 | Claude Opus 5.5 (con 30 ejemplos) | no disponible | no disponible | 41,3% | propietaria | API |
 | Claude Opus 5.5 (solo instrucciones) | no disponible | no disponible | 33,3% | propietaria | API |
 
@@ -108,13 +108,13 @@ No se dispone de información sobre otros adaptadores o modelos especializados e
 - Las temperaturas de calibración se ajustaron sobre el mismo conjunto de evaluación usado para seleccionar el checkpoint, por lo que las métricas post-calibración (ECE y log-loss) son ligeramente optimistas según el propio autor.
 - No se especifica la licencia del modelo, lo que impide determinar si su uso comercial está permitido.
 - No se dispone de información sobre sesgos conocidos, riesgo de alucinación en texto generado (el modelo parece orientado a clasificación, no a generación libre) ni limitaciones idiomáticas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
 - El conjunto de test externo es de 378 quejas de un único mes (julio de 2026) y un único banco estadounidense, lo que limita la generalización de los resultados a otras entidades o periodos.
 - No se proporcionan detalles sobre la arquitectura del modelo base, el número de parámetros ni la longitud de contexto, lo que dificulta evaluar su idoneidad para quejas de gran longitud.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/hvgupta1/clef-flash-cfpb-complaints
+- Hugging Face del modelo: https://huggingface.co/hvgupta1/clef-flash-cfpb-complaints
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Dataset de entrenamiento: https://huggingface.co/datasets/hvgupta1/cfpb-bank-complaints-benchmark
 - Metodología, costes, velocidad y límites del benchmark: https://github.com/hersh-gupta/clef-tune/tree/main/benchmarks/README.md

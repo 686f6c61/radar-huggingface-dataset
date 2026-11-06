@@ -75,5 +75,5 @@ La comparativa se limita a la estructura, ya que no hay datos de rendimiento pub
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/agentic-ptb/grok.h005.sft-v1.step_2000](https://huggingface.co/agentic-ptb/grok.h005.sft-v1.step_2000)
+- Repositorio en Hugging Face: [https://huggingface.co/agentic-ptb/grok.h005.sft-v1.step_2000](https://huggingface.co/agentic-ptb/grok.h005.sft-v1.step_2000)
 - Referencia al índice del proyecto: `agentic-ptb/INDEX` (mencionado en la model card, sin enlace directo disponible).

@@ -54,6 +54,6 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 - El repositorio muestra 0 descargas y 0 likes, lo que indica que es un modelo experimental con poca adopción.
 
 ## Enlaces
-- HuggingFace: [schneiderkamplab/dfm11-danish-query-templatizer-qwen3.5-2b](https://huggingface.co/schneiderkamplab/dfm11-danish-query-templatizer-qwen3.5-2b)
+- Hugging Face: [schneiderkamplab/dfm11-danish-query-templatizer-qwen3.5-2b](https://huggingface.co/schneiderkamplab/dfm11-danish-query-templatizer-qwen3.5-2b)
 - Proyecto Danish Foundation Models: [GitHub - schneiderkamplab/danish-foundation-models](https://github.com/schneiderkamplab/danish-foundation-models)
 - Dataset de entrenamiento: [schneiderkamplab/dfm11-danish-query-templatizer-training](https://huggingface.co/datasets/schneiderkamplab/dfm11-danish-query-templatizer-training)

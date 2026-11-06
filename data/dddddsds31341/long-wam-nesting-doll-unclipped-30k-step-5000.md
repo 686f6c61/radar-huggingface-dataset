@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM-Nesting-Doll-Unclipped-30k-Step-5000 | no disponible | no disponible (P48 frames, chunk 32) | Manipulacion robotica (anidado de munecas) | other | HuggingFace, 0 descargas |
-| Efficient-Large-Model/Long-WAM-YAM (modelo base) | no disponible | no disponible | Robotica general (base) | ver model card del base | HuggingFace |
-| Otros checkpoints epoch-named de Long-WAM | no disponible | no disponible | Robotica (misma familia) | other | HuggingFace |
+| Long-WAM-Nesting-Doll-Unclipped-30k-Step-5000 | no disponible | no disponible (P48 frames, chunk 32) | Manipulacion robotica (anidado de munecas) | other | Hugging Face, 0 descargas |
+| Efficient-Large-Model/Long-WAM-YAM (modelo base) | no disponible | no disponible | Robotica general (base) | ver model card del base | Hugging Face |
+| Otros checkpoints epoch-named de Long-WAM | no disponible | no disponible | Robotica (misma familia) | other | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-30k-Step-5000
+- Repositorio Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-30k-Step-5000
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Licencia del modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/nesting_doll (revision ae8a879c9a635d3c666aba58a4d9ac996225edb8)

@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/naimulislam999/LFM2.5-230M-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/naimulislam999/LFM2.5-230M-Uncensored-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Documentacion oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-230m
 - Blog de Liquid AI sobre LFM2.5-230M: https://www.liquid.ai/blog/lfm2-5-230m

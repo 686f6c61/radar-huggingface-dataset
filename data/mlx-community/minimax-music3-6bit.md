@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/mlx-community/MiniMax-Music3-6bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/mlx-community/MiniMax-Music3-6bit
 - Modelo base original: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Librería `mlx-audio`: https://github.com/Blaizzy/mlx-audio
 - Pull request de integración de MiniMax Music 3 en `mlx-audio`: https://github.com/Blaizzy/mlx-audio/pull/888

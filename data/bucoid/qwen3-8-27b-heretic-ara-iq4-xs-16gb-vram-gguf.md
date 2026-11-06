@@ -96,7 +96,7 @@ La comparativa interna del autor muestra que la version IQ4_XS ofrece una calida
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Referencia de arquitectura Qwen3.8-27B (vLLM Recipes): https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Variante Heretic-Ara BF16 (LLM Explorer): https://llm-explorer.com/model/trohrbaugh%2FQwen3.8-27B-heretic-ara,3lOkoblJbLCrW6LcRlJIk

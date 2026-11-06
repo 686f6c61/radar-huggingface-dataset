@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.5-4B + GRPO forced answer, paso 300) | 4.539.265.536 (BF16) | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Ajuste de RL solo para matemáticas, presupuesto de generación de 8.192 tokens, sin benchmarks publicados |
-| Qwen/Qwen3.5-4B (modelo base) | no disponible en la información proporcionada | no disponible | apache-2.0 | HuggingFace | Base multimodal con pipeline `image-text-to-text`; capacidades generales sin el sesgo del RL en matemáticas |
+| Este modelo (Qwen3.5-4B + GRPO forced answer, paso 300) | 4.539.265.536 (BF16) | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Ajuste de RL solo para matemáticas, presupuesto de generación de 8.192 tokens, sin benchmarks publicados |
+| Qwen/Qwen3.5-4B (modelo base) | no disponible en la información proporcionada | no disponible | apache-2.0 | Hugging Face | Base multimodal con pipeline `image-text-to-text`; capacidades generales sin el sesgo del RL en matemáticas |
 | Otras alternativas del mismo rango de tamaño (por ejemplo ajustes de RL para matemáticas sobre bases de 3-8B) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada para establecer una comparación rigurosa |
 
 No se dispone de datos suficientes para comparar este checkpoint con alternativas equivalentes en parámetros, contexto o rendimiento: la información proporcionada no incluye benchmarks, ni la longitud de contexto del modelo base, ni las especificaciones de modelos competidores.
@@ -99,7 +99,7 @@ No se dispone de datos suficientes para comparar este checkpoint con alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-civilsnake-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-8k-grpo-forced-answer-civilsnake-s300
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Búsqueda web: los resultados obtenidos no guardan relación con el modelo (páginas de alquiler de coches de la marca Budget y del presupuesto del Estado francés). No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

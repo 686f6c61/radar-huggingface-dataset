@@ -77,7 +77,7 @@ Nota: DSBench-FullStack y DSBench-Hard son conjuntos de prueba internos de DeepS
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 | ≈284 mil millones (activos: no disponible) | 1M tokens (según informe técnico) | MIT | Abiertos en HuggingFace (base y GGUF) |
+| DeepSeek-V4-Flash-0731 | ≈284 mil millones (activos: no disponible) | 1M tokens (según informe técnico) | MIT | Abiertos en Hugging Face (base y GGUF) |
 | DeepSeek-V4-Pro (Preview) | no disponible | no disponible | no disponible | Abiertos (preview) |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible |
 | Opus-4.8 | no disponible | no disponible | Propietaria | Solo API, pesos no disponibles |

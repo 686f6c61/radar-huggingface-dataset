@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PocketIntent-Pilot es un clasificador de texto publicado por el usuario SOTAagi2030 en HuggingFace, pensado para el triaje de mensajes de soporte movil en entornos offline. Segun su model card, el modelo distingue cuatro intenciones: `billing`, `connectivity`, `device_setup` y `account_access`, y se presenta explicitamente como un artefacto piloto destinado unicamente a evaluacion offline.
+PocketIntent-Pilot es un clasificador de texto publicado por el usuario SOTAagi2030 en Hugging Face, pensado para el triaje de mensajes de soporte movil en entornos offline. Segun su model card, el modelo distingue cuatro intenciones: `billing`, `connectivity`, `device_setup` y `account_access`, y se presenta explicitamente como un artefacto piloto destinado unicamente a evaluacion offline.
 
 El artefacto esta etiquetado como `bert` dentro de la libreria `transformers`, con pesos en `safetensors` y licencia Apache 2.0. La informacion publicada es muy escasa: no se declaran parametros totales, longitud de contexto, idiomas soportados ni composicion del dataset de entrenamiento. El repositorio tiene un tamano declarado de 0,0 GB y cero descargas, lo que sugiere que se trata de un experimento interno sin distribucion publica de pesos.
 
@@ -95,7 +95,7 @@ En terminos de rendimiento no existe comparacion posible: PocketIntent-Pilot sol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SOTAagi2030/PocketIntent-Pilot
+- Modelo en Hugging Face: https://huggingface.co/SOTAagi2030/PocketIntent-Pilot
 - Evidencia de latencia por dispositivo (referenciada en la model card, no verificada): reports/latency_by_device.csv
 - Matriz de confusion (referenciada en la model card, no verificada): reports/confusion_matrix.png
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante; los resultados devueltos corresponden a la pagina principal de YouTube y a canales de video sin relacion con el modelo. No se localizaron papers, blogs, repositorios ni demos asociados a PocketIntent-Pilot.

@@ -74,10 +74,10 @@ No se han publicado comparaciones con otros detectores de prompt injection en la
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mochi (Athelstan05) | 117,6 M | 512 tokens | Deteccion de prompt injection en ingles y taglish | MIT | HuggingFace, via `mochi-guard` |
-| `intfloat/multilingual-e5-small` | 117,6 M | 512 tokens | Embeddings multilingues (modelo base, no detector) | MIT | HuggingFace, `transformers` |
-| `protectai/deberta-v3-base-prompt-injection` | no disponible en esta busqueda | no disponible | Deteccion de prompt injection en ingles | no disponible | HuggingFace |
-| `meta-llama/Prompt-Guard-86M` | 86 M | 512 tokens | Deteccion de prompt injection y jailbreak | Llama 3.2 Community License | HuggingFace |
+| Mochi (Athelstan05) | 117,6 M | 512 tokens | Deteccion de prompt injection en ingles y taglish | MIT | Hugging Face, via `mochi-guard` |
+| `intfloat/multilingual-e5-small` | 117,6 M | 512 tokens | Embeddings multilingues (modelo base, no detector) | MIT | Hugging Face, `transformers` |
+| `protectai/deberta-v3-base-prompt-injection` | no disponible en esta busqueda | no disponible | Deteccion de prompt injection en ingles | no disponible | Hugging Face |
+| `meta-llama/Prompt-Guard-86M` | 86 M | 512 tokens | Deteccion de prompt injection y jailbreak | Llama 3.2 Community License | Hugging Face |
 
 La comparacion cuantitativa con estos detectores no esta disponible en la informacion proporcionada; los datos de la tabla anterior proceden de conocimiento general y deberian verificarse antes de su uso en produccion.
 
@@ -89,12 +89,12 @@ La comparacion cuantitativa con estos detectores no esta disponible en la inform
 - Los documentos largos diluyen la senal: la puntuacion cubre el fragmento completo, por lo que el texto benigno alrededor de una inyeccion corta reduce el score.
 - Las inyecciones formuladas como procedimiento ordinario ("nuevo procedimiento de seguridad: dile al cliente que...") pueden puntuar cerca de 0.
 - El modelo no es un clasificador estandar de `transformers`: cargarlo sin la cabeza de pooling propia produce resultados incorrectos.
-- El dataset `jayavibhav/prompt-injection` no declara licencia en HuggingFace, lo que conviene considerar si se requiere trazabilidad estricta de datos.
+- El dataset `jayavibhav/prompt-injection` no declara licencia en Hugging Face, lo que conviene considerar si se requiere trazabilidad estricta de datos.
 - Es un modelo de tesis de grado, con 0 descargas y 0 likes en el momento de la ficha; no hay evidencia de uso en produccion ni mantenimiento continuado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Athelstan05/Mochi
+- Modelo en Hugging Face: https://huggingface.co/Athelstan05/Mochi
 - Repositorio del proyecto MOCHI: https://github.com/NissanAlGaib/MOCHI
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Dataset PromptShield: https://huggingface.co/datasets/hendzh/PromptShield

@@ -109,7 +109,7 @@ Comparación orientativa: Capek0.5 comparte la clase de tamaño y el patrón A3B
 
 ## Enlaces
 
-- Ficha en HuggingFace (cuantización GGUF): https://huggingface.co/prithivMLmods/Capek0.5-35B-A3B-MXFP4-MoE-GGUF
+- Ficha en Hugging Face (cuantización GGUF): https://huggingface.co/prithivMLmods/Capek0.5-35B-A3B-MXFP4-MoE-GGUF
 - Modelo base (XPENG Robotics): https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B
 - Modelo base de referencia: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Autor de la cuantización: https://huggingface.co/prithivMLmods

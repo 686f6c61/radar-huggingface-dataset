@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/andrew-avinante/cdml-fade-detector)
+- [Modelo en Hugging Face](https://huggingface.co/andrew-avinante/cdml-fade-detector)
 - [Repositorio CDML en GitHub](https://github.com/andrew-avinante/commercial-detctor-ml)
 - [Informe de evaluación held-out](https://github.com/andrew-avinante/commercial-detctor-ml/blob/main/results/evaluation_report.json)
 - [Informes leave-one-show-out](https://github.com/andrew-avinante/commercial-detctor-ml/tree/main/results)

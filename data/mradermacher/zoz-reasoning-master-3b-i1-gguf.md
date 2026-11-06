@@ -6,7 +6,7 @@ ZOZ-Reasoning-Master-3B-i1-GGUF es una recopilación de cuantizaciones en format
 
 El modelo subyacente tiene 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), según los datos reales de safetensors, y está etiquetado como orientado a razonamiento y a uso conversacional, con soporte declarado únicamente para inglés. La relevancia de esta publicación radica en que permite ejecutar un modelo de razonamiento de ~3B en portátiles, mini-PCs y GPUs de gama media, con ficheros que van desde 0,9 GB (i1-IQ1_S) hasta 2,6 GB (i1-Q6_K). El repositorio completo ocupa 36,8 GB debido a la cantidad de variantes incluidas.
 
-La información pública disponible es muy escasa: no se documenta licencia, longitud de contexto, arquitectura interna, composición del dataset de entrenamiento ni resultados de benchmarks. Se desconoce también el pipeline de la librería asociada en HuggingFace, aunque el modelo se publica bajo el formato transformers y su versión cuantizada funciona con llama.cpp y derivados.
+La información pública disponible es muy escasa: no se documenta licencia, longitud de contexto, arquitectura interna, composición del dataset de entrenamiento ni resultados de benchmarks. Se desconoce también el pipeline de la librería asociada en Hugging Face, aunque el modelo se publica bajo el formato transformers y su versión cuantizada funciona con llama.cpp y derivados.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La información pública disponible es muy escasa: no se documenta licencia, lon
 
 No se dispone de informacion sobre la arquitectura del modelo base z51722369/ZOZ-Reasoning-Master-3B: ni el numero de capas, ni la dimension del modelo, ni el tipo de atencion, ni si emplea atencion lineal, SSM o alguna variante hibrida. Tampoco se documenta el tokenizador ni la longitud de contexto nativa. El unico dato estructural verificable es el recuento de parametros (3.085.938.688), coherente con un transformer denso de aproximadamente 3B parametros.
 
-Respecto al proceso de creacion de esta ficha concreta, se trata de una cuantizacion con calibracion imatrix (importancia matricial) realizada por mradermacher sobre los pesos convertidos a formato HuggingFace (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1). La cuantizacion imatrix usa un dataset de calibracion para ponderar la importancia de cada tensor y reducir la perdida de calidad en precisiones muy bajas. No hay informacion sobre el dataset de entrenamiento del modelo base, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento.
+Respecto al proceso de creacion de esta ficha concreta, se trata de una cuantizacion con calibracion imatrix (importancia matricial) realizada por mradermacher sobre los pesos convertidos a formato Hugging Face (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1). La cuantizacion imatrix usa un dataset de calibracion para ponderar la importancia de cada tensor y reducir la perdida de calidad en precisiones muy bajas. No hay informacion sobre el dataset de entrenamiento del modelo base, ni sobre si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se dispone de datos verificados del modelo evaluado (contexto, licencia, benc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ZOZ-Reasoning-Master-3B (i1-GGUF) | 3,09 B | no disponible | no disponible | GGUF en HuggingFace |
+| ZOZ-Reasoning-Master-3B (i1-GGUF) | 3,09 B | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen2.5-3B-Instruct | ~3,09 B | no verificado | no verificado | safetensors y GGUF |
 | Llama-3.2-3B-Instruct | ~3,21 B | no verificado | no verificado | safetensors y GGUF |
 | Phi-3-mini-4k-instruct | ~3,8 B | no verificado | no verificado | safetensors y GGUF |

@@ -67,5 +67,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged
 - Ejemplos de uso en ComfyUI: https://comfyanonymous.github.io/ComfyUI_examples/wan22/

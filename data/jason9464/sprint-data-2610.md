@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sprint-data-2610` es un repositorio publicado en HuggingFace por el usuario `jason9464` bajo acceso restringido (gated). El nombre del repositorio y las etiquetas disponibles (`safetensors`, `license:other`, `region:us`) sugieren que se trata de un artefacto de tipo dataset o de un conjunto de pesos empaquetados, aunque la informacion publica no permite confirmar si corresponde a un modelo entrenado, a un checkpoint intermedio o a un dataset serializado en formato safetensors. No se declara pipeline, idiomas soportados ni parametros arquitectonicos.
+`sprint-data-2610` es un repositorio publicado en Hugging Face por el usuario `jason9464` bajo acceso restringido (gated). El nombre del repositorio y las etiquetas disponibles (`safetensors`, `license:other`, `region:us`) sugieren que se trata de un artefacto de tipo dataset o de un conjunto de pesos empaquetados, aunque la informacion publica no permite confirmar si corresponde a un modelo entrenado, a un checkpoint intermedio o a un dataset serializado en formato safetensors. No se declara pipeline, idiomas soportados ni parametros arquitectonicos.
 
 El tamano del repositorio, 138,1 GB, es el dato tecnico mas relevante disponible. Ese volumen es coherente con pesos de un modelo de gran escala (del orden de decenas de miles de millones de parametros en precision bf16/fp16) o con un dataset multimodal de gran tamano. Sin embargo, sin una model card publica ni ficheros de configuracion accesibles antes de aceptar las condiciones de acceso, no es posible determinar la arquitectura ni el proposito exacto del artefacto.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada desde el punto de vista de evaluacion tecnica: 
 | Licencia | other (terminos no especificados en la informacion disponible) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 138,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-10-26 |
 | Ultima actualizacion | 2026-10-30 |
@@ -85,5 +85,5 @@ No disponible. La ausencia de arquitectura, numero de parametros y contexto impi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jason9464/sprint-data-2610
+- Repositorio en Hugging Face: https://huggingface.co/jason9464/sprint-data-2610
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

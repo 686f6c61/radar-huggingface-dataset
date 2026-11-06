@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Se trata de un modelo de generación de texto conversacional, entrenado con las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. El nombre del modelo sugiere que fue entrenado para distinguir respuestas "buenas" de "malas" en un contexto multifactorial, aunque no se proporcionan detalles sobre el dataset ni el proceso de entrenamiento.
+El modelo `localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Se trata de un modelo de generación de texto conversacional, entrenado con las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un fine-tuning convencional. El nombre del modelo sugiere que fue entrenado para distinguir respuestas "buenas" de "malas" en un contexto multifactorial, aunque no se proporcionan detalles sobre el dataset ni el proceso de entrenamiento.
 
 Con 8.030 millones de parámetros, este modelo se posiciona en la gama de los 8B, un tamaño que permite su ejecución en hardware de consumo con cuantización adecuada. La licencia Apache 2.0 facilita su uso comercial y su integración en proyectos propietarios. Sin embargo, la información pública es muy limitada: no se han publicado benchmarks, detalles del corpus de entrenamiento ni especificaciones técnicas adicionales más allá de las heredadas del modelo base.
 
@@ -21,7 +21,7 @@ Con 8.030 millones de parámetros, este modelo se posiciona en la gama de los 8B
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez se basa en la arquitectura Llama 3.1 de Meta. Se trata de un transformer decoder-only con atención causal, diseñado para tareas de instrucción y conversación. El entrenamiento se realizó mediante supervisión fina (SFT) utilizando las librerías Unsloth y TRL de HuggingFace, lo que optimiza el uso de memoria y acelera el proceso de ajuste. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo indica que se usó una semilla concreta (seed5) y que el entrenamiento se dividió en fases ("second-third"), pero no hay detalles públicos al respecto.
+El modelo es un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez se basa en la arquitectura Llama 3.1 de Meta. Se trata de un transformer decoder-only con atención causal, diseñado para tareas de instrucción y conversación. El entrenamiento se realizó mediante supervisión fina (SFT) utilizando las librerías Unsloth y TRL de Hugging Face, lo que optimiza el uso de memoria y acelera el proceso de ajuste. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo indica que se usó una semilla concreta (seed5) y que el entrenamiento se dividió en fases ("second-third"), pero no hay detalles públicos al respecto.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5)
+- [Hugging Face - localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed5)
 - [Modelo relacionado en FriendliAI](https://friendli.ai/models/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5)
 - [Modelo relacionado en FriendliAI (epoch3)](https://friendli.ai/models/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-last-third-sft-seed5-epoch3)
 - [Documentacion de Llama 3.1 en DeepWiki](https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1)

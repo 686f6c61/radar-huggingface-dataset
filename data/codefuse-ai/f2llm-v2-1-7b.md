@@ -79,7 +79,7 @@ F2LLM-v2-1.7B se posiciona como una alternativa de tamaño medio con una cobertu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/codefuse-ai/F2LLM-v2-1.7B
+- Repositorio Hugging Face: https://huggingface.co/codefuse-ai/F2LLM-v2-1.7B
 - Modelo base: https://huggingface.co/codefuse-ai/F2LLM-v2-1.7B-Preview
 - Dataset de entrenamiento: https://huggingface.co/datasets/codefuse-ai/F2LLM-v2
 - Paper (arXiv): https://arxiv.org/abs/2603.19223

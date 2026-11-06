@@ -118,7 +118,7 @@ La comparativa se limita a parametros, contexto, idiomas y licencia, que son dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SLM-Archive/Haidass1.5-143M
+- Modelo en Hugging Face: https://huggingface.co/SLM-Archive/Haidass1.5-143M
 - Model card en chino (referenciada en el README): https://huggingface.co/DALabCommunity/Haidass1.5-143M/blob/main/README_ZH.md
 - Leaderboard OpenSLM: https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Leaderboard Tiny-ML: https://huggingface.co/spaces/Glint-Research/Tiny-ML-Leaderboard

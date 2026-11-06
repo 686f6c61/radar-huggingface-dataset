@@ -2,7 +2,7 @@
 
 ## Resumen
 
-REAX SN92 generalist entry (isomsom/sn92-gen-m87b) es un modelo de decisión (decision model) derivado del ecosistema Qwen3.5, publicado en HuggingFace por el usuario isomsom. Se trata de un fine-tune de baselabs/mammoth-1 (que a su vez es un fine-tune completo de Qwen/Qwen3.5-27B, Apache-2.0) reescrito para una tarea muy concreta: seleccionar la respuesta correcta entre opciones múltiples mediante una lectura conjunta de letras (joint letter readout) con softmax a temperatura 2 sobre las filas del cabezal de lectura, en el contexto del track generalista de la competición REAX (SN92).
+REAX SN92 generalist entry (isomsom/sn92-gen-m87b) es un modelo de decisión (decision model) derivado del ecosistema Qwen3.5, publicado en Hugging Face por el usuario isomsom. Se trata de un fine-tune de baselabs/mammoth-1 (que a su vez es un fine-tune completo de Qwen/Qwen3.5-27B, Apache-2.0) reescrito para una tarea muy concreta: seleccionar la respuesta correcta entre opciones múltiples mediante una lectura conjunta de letras (joint letter readout) con softmax a temperatura 2 sobre las filas del cabezal de lectura, en el contexto del track generalista de la competición REAX (SN92).
 
 A diferencia de un modelo generativo convencional, este modelo no produce texto libre: su salida es una distribución de probabilidad sobre las letras de respuesta A..Z. Para lograrlo, el autor eliminó el LM head original (no atado), construyó un cabezal de lectura con filas correspondientes a los códigos de respuesta, y entrenó un LoRA r32 nuevo en modo conjunto (atención bidireccional completa sobre el prompt), integrando después los pesos en el backbone. Con 26.085.330.160 parámetros reales en safetensors y una licencia MIT, es un artefacto de nicho orientado a evaluación automatizada de decisiones, no a chat ni a generación de código.
 
@@ -86,7 +86,7 @@ La diferencia clave es funcional: mientras Qwen3.5-27B y mammoth-1 conservan cap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isomsom/sn92-gen-m87b
+- Modelo en Hugging Face: https://huggingface.co/isomsom/sn92-gen-m87b
 - Modelo base declarado: baselabs/mammoth-1 (commit 61cec44c281c693992e3d6ebeb44dd3402dfa186) — https://huggingface.co/baselabs/mammoth-1
 - Modelo base original: Qwen/Qwen3.5-27B — https://huggingface.co/Qwen/Qwen3.5-27B
 - Datos de especialistas SN92: decisionmodels/sn92-specialists — https://huggingface.co/decisionmodels/sn92-specialists

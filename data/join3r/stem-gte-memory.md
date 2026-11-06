@@ -87,7 +87,7 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/join3r/stem-gte-memory
+- Modelo en Hugging Face: https://huggingface.co/join3r/stem-gte-memory
 - Repositorio del proyecto Stem: https://github.com/join3r/stem/tree/main
 - Modelo base: https://huggingface.co/Alibaba-NLP/gte-multilingual-reranker-base
 - Implementacion upstream: https://huggingface.co/Alibaba-NLP/new-impl

@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas en la inform
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fodorad/exordium-weights
+- Repositorio en Hugging Face: https://huggingface.co/fodorad/exordium-weights
 - Framework exordium: https://github.com/fodorad/exordium
 - BlinkLinMulT (mismo autor, consumo de estos pesos): https://github.com/fodorad/BlinkLinMulT
 - FAb-Net: https://github.com/oawiles/FAb-Net

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darthguinea/Qwen3-4B-Instruct-2507-heretic` es un modelo de lenguaje de 4.022.468.096 parametros publicado en HuggingFace por el usuario `darthguinea`. Se trata de un derivado de Qwen3-4B-Instruct-2507, el modelo denso de 4B de la familia Qwen3 en su revision de julio de 2025 y en modo "solo instruct" (sin bloque de razonamiento explicito). El sufijo "heretic" hace referencia al proceso de abliteracion automatica (ablacion direccional de las direcciones de rechazo) que se aplica a modelos alineados para eliminar total o parcialmente sus negativas a responder; es una inferencia razonable a partir del nombre, no un dato documentado en la ficha.
+`darthguinea/Qwen3-4B-Instruct-2507-heretic` es un modelo de lenguaje de 4.022.468.096 parametros publicado en Hugging Face por el usuario `darthguinea`. Se trata de un derivado de Qwen3-4B-Instruct-2507, el modelo denso de 4B de la familia Qwen3 en su revision de julio de 2025 y en modo "solo instruct" (sin bloque de razonamiento explicito). El sufijo "heretic" hace referencia al proceso de abliteracion automatica (ablacion direccional de las direcciones de rechazo) que se aplica a modelos alineados para eliminar total o parcialmente sus negativas a responder; es una inferencia razonable a partir del nombre, no un dato documentado en la ficha.
 
 La model card del repositorio es la plantilla autogenerada de `transformers` y no contiene ni un solo campo completado: no declara autor efectivo, datos de entrenamiento, hiperparametros, licencia ni evaluacion. La unica informacion dura disponible es la metadata del Hub (tags, tamano de repo de 8,1 GB y recuento de parametros de safetensors). El modelo acumulaba 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-heretic (este) | 4,02 B denso | 262.144 tokens (heredado, no confirmado) | no disponible en la ficha | HuggingFace, safetensors | No disponible |
-| Qwen3-4B-Instruct-2507 (base) | 4,02 B denso | 262.144 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF de terceros | Datos publicados por el fabricante |
-| Qwen3-4B-Thinking-2507 | 4,02 B denso | 262.144 tokens | Apache 2.0 | HuggingFace | Datos publicados por el fabricante |
-| Llama-3.1-8B-Instruct | 8,03 B denso | 131.072 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace, GGUF oficiales | Datos publicados por el fabricante |
+| Qwen3-4B-Instruct-2507-heretic (este) | 4,02 B denso | 262.144 tokens (heredado, no confirmado) | no disponible en la ficha | Hugging Face, safetensors | No disponible |
+| Qwen3-4B-Instruct-2507 (base) | 4,02 B denso | 262.144 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF de terceros | Datos publicados por el fabricante |
+| Qwen3-4B-Thinking-2507 | 4,02 B denso | 262.144 tokens | Apache 2.0 | Hugging Face | Datos publicados por el fabricante |
+| Llama-3.1-8B-Instruct | 8,03 B denso | 131.072 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face, GGUF oficiales | Datos publicados por el fabricante |
 
 La diferencia relevante frente al modelo base no es de parametros ni de contexto, sino de comportamiento: el derivado intercambia garantias de alineacion y trazabilidad por una mayor permisividad, y pierde la documentacion y el respaldo del fabricante. Frente a Llama-3.1-8B-Instruct, este modelo ofrece la mitad de parametros y el doble de contexto nominal, a costa de una licencia no declarada.
 
@@ -95,8 +95,8 @@ La diferencia relevante frente al modelo base no es de parametros ni de contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darthguinea/Qwen3-4B-Instruct-2507-heretic
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/darthguinea/Qwen3-4B-Instruct-2507-heretic
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Blog de la serie Qwen3 (referencia del fabricante): https://qwenlm.github.io/blog/qwen3/
 - Repositorio de la herramienta de abliteracion Heretic (origen probable del sufijo, no confirmado por el autor): https://github.com/p-e-w/heretic
 - Referencia del template de model card para el calculo de emisiones: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019). Es el unico enlace con identificador arXiv presente en el repositorio y proviene de la plantilla autogenerada, no de documentacion del modelo.

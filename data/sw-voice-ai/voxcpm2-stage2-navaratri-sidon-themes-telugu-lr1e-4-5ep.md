@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice-ai/voxcpm2-stage2-navaratri-sidon-themes-telugu-lr1e-4-5ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice-ai/voxcpm2-stage2-navaratri-sidon-themes-telugu-lr1e-4-5ep
 - Modelo base: https://huggingface.co/sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep
 - Variante con segmentación alternativa (LR 5e-5): https://huggingface.co/sw-voice-ai/voxcpm2-stage2-navaratri-sidon-telugu-lr5e-5-5ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/sw-voice/swamiji-navaratri-telugu-sidon-themes

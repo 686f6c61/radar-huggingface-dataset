@@ -94,7 +94,7 @@ La comparación directa con alternativas es limitada: no se dispone de otros paq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sine-dogma/Qwen3.5-0.8B-QNN-SM8650-XLAM-LOCAL
+- Repositorio Hugging Face: https://huggingface.co/sine-dogma/Qwen3.5-0.8B-QNN-SM8650-XLAM-LOCAL
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revisión del checkpoint base: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Dataset de calibración: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k

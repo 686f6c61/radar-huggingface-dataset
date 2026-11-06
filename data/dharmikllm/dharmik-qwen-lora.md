@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dharmikllm/dharmik-qwen-lora es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario Dharmikllm en HuggingFace. Se trata de un modelo derivado de tan solo 0,5 mil millones de parametros, entrenado con la libreria TRL de HuggingFace, segun indica la propia model card. El repositorio no incluye informacion sobre el dataset de entrenamiento, hiperparametros, licencia ni idiomas soportados.
+Dharmikllm/dharmik-qwen-lora es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario Dharmikllm en Hugging Face. Se trata de un modelo derivado de tan solo 0,5 mil millones de parametros, entrenado con la libreria TRL de Hugging Face, segun indica la propia model card. El repositorio no incluye informacion sobre el dataset de entrenamiento, hiperparametros, licencia ni idiomas soportados.
 
 El interes de esta ficha es limitado pero util como caso de estudio: ilustra el flujo tipico de un fine-tune ligero con SFT sobre un modelo pequeno, con el objetivo presumible de adaptar el comportamiento conversacional del modelo base a un dominio o estilo concretos. No obstante, la ausencia de documentacion tecnica y el tamano del repositorio (0,0 GB) plantean dudas razonables sobre la disponibilidad real de los pesos en el momento de redactar esta ficha.
 
@@ -71,14 +71,14 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (0,5B)
 - VRAM total recomendada en fp16, incluyendo cache KV y overhead del runtime: del orden de 1,5-2,5 GB.
 - GPU compatibles: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090, etc.); tambien A100, H100 y T4 para despliegues en servidor.
 - CPU: la inferencia es viable en CPU con cuantizacion a 4 bits, aunque sin datos de latencia publicados.
-- Opciones de despliegue: `transformers` con `pipeline` (documentado por el autor), vLLM, HuggingFace TGI y llama.cpp/Ollama previa conversion a GGUF, ya que el repositorio no incluye pesos GGUF.
+- Opciones de despliegue: `transformers` con `pipeline` (documentado por el autor), vLLM, Hugging Face TGI y llama.cpp/Ollama previa conversion a GGUF, ya que el repositorio no incluye pesos GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Dharmikllm/dharmik-qwen-lora | 0,5B | no disponible | no disponible | safetensors en HuggingFace | Fine-tune SFT sin documentacion tecnica |
+| Dharmikllm/dharmik-qwen-lora | 0,5B | no disponible | no disponible | safetensors en Hugging Face | Fine-tune SFT sin documentacion tecnica |
 | Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens (segun documentacion del modelo base) | Apache-2.0 (segun documentacion del modelo base) | Pesos completos y documentados | Modelo base de partida, con model card detallada |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens (segun documentacion del modelo base) | Apache-2.0 (segun documentacion del modelo base) | Pesos completos y documentados | Alternativa de mayor capacidad dentro de la misma familia |
 | HuggingFaceTB/SmolLM2-360M-Instruct | 0,36B | 8.192 tokens (segun documentacion del modelo) | Apache-2.0 (segun documentacion del modelo) | Pesos completos y documentados | Alternativa de tamano comparable orientada a dispositivos de borde |
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativo para el modelo objeto de esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dharmikllm/dharmik-qwen-lora
+- Modelo en Hugging Face: https://huggingface.co/Dharmikllm/dharmik-qwen-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Citacion de TRL (von Werra et al., 2020), incluida en la model card del autor

@@ -22,7 +22,7 @@ Es relevante ahora porque reduce el coste de memoria del componente de mayor tam
 | Formato de pesos | safetensors con compressed-tensors, esquema `nvfp4-pack-quantized` (componentes no cuantizados en BF16). El repositorio incluye la etiqueta `onnx`, aunque la model card no detalla que componentes van en ese formato |
 | Modelo base | IndexTeam/Index-Echo-S2ST-2B |
 | Tamano del repositorio | 15,8 GB |
-| Pipeline declarado en HuggingFace | translation |
+| Pipeline declarado en Hugging Face | translation |
 | Fecha de publicacion | 3-4 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -35,7 +35,7 @@ En cuanto al entrenamiento, la informacion publicada no detalla el numero de tok
 
 - Traduccion de voz a voz (S2ST): transforma habla de entrada en habla traducida, con el backbone de lenguaje encargado de la parte textual de la traduccion.
 - Traduccion bidireccional chino-ingles: la validacion publicada comprueba generaciones identicas entre BF16 y FP4 en las direcciones zh->en y en->zh con decodificacion greedy y el prompt oficial de traduccion.
-- Generacion de texto de traduccion: el backbone LLM puede ejecutarse de forma aislada como modelo de traduccion (asi se registra en el pipeline `translation` de HuggingFace).
+- Generacion de texto de traduccion: el backbone LLM puede ejecutarse de forma aislada como modelo de traduccion (asi se registra en el pipeline `translation` de Hugging Face).
 - Componente de doblaje: el repositorio incluye la etiqueta `dubbing_bridge`, si bien la model card no describe su funcionamiento ni su interfaz.
 - Multiples idiomas: no disponible; solo hay evidencia publicada de chino e ingles.
 - Tool calling / function calling: no disponible.
@@ -97,7 +97,7 @@ No se dispone de informacion en la documentacion facilitada sobre otros modelos 
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/IndexTeam/Index-Echo-S2ST-2B-FP4
+- Pagina de Hugging Face del modelo: https://huggingface.co/IndexTeam/Index-Echo-S2ST-2B-FP4
 - Modelo base sin cuantizar: https://huggingface.co/IndexTeam/Index-Echo-S2ST-2B
 - Herramienta de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor
 - Formato compressed-tensors: https://github.com/neuralmagic/compressed-tensors

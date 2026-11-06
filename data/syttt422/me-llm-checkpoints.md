@@ -4,7 +4,7 @@
 
 ME-LLM es un framework de predicción de series temporales que mejora modelos de lenguaje preentrenados con capacidades de razonamiento multimodal. El autor, Syttt422, lo presenta como parte del artículo "ME-LLM: Multimodal-Enhanced Pretrained Language Models for Semantic-Aware Time Series Forecasting" publicado en IEEE Transactions on Big Data. El objetivo es superar las limitaciones de los enfoques que convierten series temporales en texto, preservando las características originales de la señal y añadiendo una capa de comprensión semántica.
 
-Este repositorio de HuggingFace es un release de reproducibilidad etiquetado como `paper-v1.0`. Incluye los checkpoints entrenados que no se distribuyen en GitHub, concretamente para cuatro conjuntos de datos (ETTh1, ETTh2, ETTm1 y Weather) con un horizonte de predicción de 96 pasos. El resto de experimentos (ETTm2, Traffic y horizontes 192/336/720) solo contienen placeholders y sus checkpoints deben regenerarse mediante los scripts incluidos.
+Este repositorio de Hugging Face es un release de reproducibilidad etiquetado como `paper-v1.0`. Incluye los checkpoints entrenados que no se distribuyen en GitHub, concretamente para cuatro conjuntos de datos (ETTh1, ETTh2, ETTm1 y Weather) con un horizonte de predicción de 96 pasos. El resto de experimentos (ETTm2, Traffic y horizontes 192/336/720) solo contienen placeholders y sus checkpoints deben regenerarse mediante los scripts incluidos.
 
 La relevancia actual radica en que aborda un problema práctico: la predicción de series temporales con modelos de lenguaje, un área activa de investigación. Sin embargo, la información pública disponible es limitada y no se detallan aspectos clave como arquitectura, tamaño o licencia.
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Syttt422/ME-LLM-Checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Syttt422/ME-LLM-Checkpoints
 - Repositorio GitHub: https://github.com/422syt/ME-LLM
 - Página del tag en GitHub (main): https://github.com/422syt/ME-LLM/tree/main

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Tipo | Origen | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5-v26soupT3-owPypCo44VKT (este) | VLA derivado de π₀.₅ | 123engineer (OpenRoboto SN80) | no disponible | other (gemma) | HuggingFace, 0 descargas |
+| pi0.5-v26soupT3-owPypCo44VKT (este) | VLA derivado de π₀.₅ | 123engineer (OpenRoboto SN80) | no disponible | other (gemma) | Hugging Face, 0 descargas |
 | π₀.₅ (openpi) | VLA con co-entrenamiento heterogéneo, mejor generalización open-world | Physical Intelligence | no disponible | openpi (ver LICENSE_OPENPI) | open-source en openpi |
 | π₀ (openpi) | VLA basado en flow matching | Physical Intelligence | no disponible | openpi | open-source en openpi |
 | π₀-FAST (openpi) | VLA autorregresivo basado en tokenizador FAST | Physical Intelligence | no disponible | openpi | open-source en openpi |
@@ -86,7 +86,7 @@ No se dispone de cifras de parámetros, contexto ni rendimiento para estas alter
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/123engineer/pi0.5-v26soupT3-owPypCo44VKT
+- Hugging Face del modelo: https://huggingface.co/123engineer/pi0.5-v26soupT3-owPypCo44VKT
 - Repositorio hermano citado en la búsqueda: https://huggingface.co/123engineer/pi0.5-owPypCo44VKT
 - Repositorio hermano citado en la búsqueda: https://huggingface.co/123engineer/pi0.5-v6bs750-owPypCo44VKT
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

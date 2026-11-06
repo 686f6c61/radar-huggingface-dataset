@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rasheeddo/policy_pi05_marker_cup` es una política robótica de tipo Vision-Language-Action (VLA) publicada en HuggingFace por el usuario rasheeddo. No es un modelo de lenguaje general: es un *checkpoint* de imitación afinado a partir de `lerobot/pi05_base`, la implementación en LeRobot del modelo π₀.₅ de Physical Intelligence, y está especializado en una única tarea física: coger un rotulador y meterlo en un vaso ("Grab marker and put in cup"). El modelo consume el estado articular del robot junto con tres flujos de cámara y devuelve un vector de acción de 6 dimensiones.
+`rasheeddo/policy_pi05_marker_cup` es una política robótica de tipo Vision-Language-Action (VLA) publicada en Hugging Face por el usuario rasheeddo. No es un modelo de lenguaje general: es un *checkpoint* de imitación afinado a partir de `lerobot/pi05_base`, la implementación en LeRobot del modelo π₀.₅ de Physical Intelligence, y está especializado en una única tarea física: coger un rotulador y meterlo en un vaso ("Grab marker and put in cup"). El modelo consume el estado articular del robot junto con tres flujos de cámara y devuelve un vector de acción de 6 dimensiones.
 
 Técnicamente, el checkpoint contiene 4.143.404.816 parámetros (unos 4,14 mil millones) en formato safetensors, con un repositorio de 9,4 GB. La política se entrenó con 10.000 pasos, batch de 16 y optimizador AdamW con tasa de aprendizaje 2,5e-05 sobre un dataset propio de 80 episodios y 58.556 fotogramas grabados a 30 FPS con un robot `so_follower`. La licencia es Apache 2.0.
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rasheeddo/policy_pi05_marker_cup | 4.143.404.816 | 3 cámaras + estado de 6 articulaciones; contexto textual no disponible | Sin resultados de evaluación publicados | Apache 2.0 | HuggingFace, librería `lerobot` |
-| lerobot/pi05_base | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Apache 2.0 (según la cadena de modelos base) | HuggingFace, `lerobot` |
-| Otras políticas del ecosistema LeRobot (ACT, Diffusion Policy, SmolVLA) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Repositorio LeRobot / HuggingFace |
+| rasheeddo/policy_pi05_marker_cup | 4.143.404.816 | 3 cámaras + estado de 6 articulaciones; contexto textual no disponible | Sin resultados de evaluación publicados | Apache 2.0 | Hugging Face, librería `lerobot` |
+| lerobot/pi05_base | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Apache 2.0 (según la cadena de modelos base) | Hugging Face, `lerobot` |
+| Otras políticas del ecosistema LeRobot (ACT, Diffusion Policy, SmolVLA) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Repositorio LeRobot / Hugging Face |
 
 No se dispone de datos comparativos de parámetros, contexto ni rendimiento para los modelos alternativos dentro de la información proporcionada; cualquier cifra adicional requeriría consultar sus propias fichas.
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos de parámetros, contexto ni rendimiento para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasheeddo/policy_pi05_marker_cup
+- Modelo en Hugging Face: https://huggingface.co/rasheeddo/policy_pi05_marker_cup
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/rasheeddo/marker_cup_20260916_205331
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=rasheeddo/marker_cup_20260916_205331
@@ -110,4 +110,4 @@ No se dispone de datos comparativos de parámetros, contexto ni rendimiento para
 - Documentación de inferencia y rollout: https://huggingface.co/docs/lerobot/main/en/inference
 - Guía de imitación (grabar datos y entrenar): https://huggingface.co/docs/lerobot/en/il_robots
 
-Los resultados de la búsqueda web realizada no contenían enlaces relevantes sobre este modelo; el listado anterior procede de la información de HuggingFace y de la model card.
+Los resultados de la búsqueda web realizada no contenían enlaces relevantes sobre este modelo; el listado anterior procede de la información de Hugging Face y de la model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emilysmithford/poolformer-contrastive` es un repositorio de HuggingFace que contiene una implementación mínima de una arquitectura PoolFormer orientada a aprendizaje contrastivo, publicada por el usuario emilysmithford bajo licencia BSD-3-Clause. No se trata de un modelo entrenado, sino de un esqueleto reproducible: incluye `config.json` con los hiperparámetros de arquitectura, `training_args.json` con la receta de experimento por defecto (AdamW con scheduler exponencial), un script `eval.py` como artefacto principal y un checkpoint de inicialización en `model.safetensors`.
+`emilysmithford/poolformer-contrastive` es un repositorio de Hugging Face que contiene una implementación mínima de una arquitectura PoolFormer orientada a aprendizaje contrastivo, publicada por el usuario emilysmithford bajo licencia BSD-3-Clause. No se trata de un modelo entrenado, sino de un esqueleto reproducible: incluye `config.json` con los hiperparámetros de arquitectura, `training_args.json` con la receta de experimento por defecto (AdamW con scheduler exponencial), un script `eval.py` como artefacto principal y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante es su tamaño: 49.600 parámetros totales según el fichero safetensors, lo que sitúa el repositorio en la categoría de implementación de juguete o smoke test, no en la de un modelo utilizable. La model card declara una escala "base", término que en la familia PoolFormer original corresponde a decenas de millones de parámetros, por lo que existe una incoherencia evidente entre la etiqueta de escala y el recuento real de parámetros. Conviene interpretar "base" como "configuración de referencia del script", no como el tamaño del PoolFormer-base de la literatura.
 
@@ -41,7 +41,7 @@ No hay información sobre entrenamiento: no se indica número de tokens, composi
 - Investigación en aprendizaje contrastivo sin atención: el repositorio sirve como base para experimentar con objetivos contrastivos sobre un backbone cuyo token mixer es pooling, y comparar coste/calidad frente a variantes con self-attention. Requiere entrenamiento completo antes de cualquier evaluación.
 - Ablaciones controladas de componentes: al exponer arquitectura, receta de optimización y semilla en ficheros separados, permite aislar el efecto de la atención multi-query o de la fusión bilineal manteniendo el resto del pipeline fijo.
 - Pruebas de humo en CI/CD de infraestructura de ML: con 49.600 parámetros y un checkpoint de inicialización, se puede validar en segundos que el entorno de carga, el formateo de tensores y el script de evaluación funcionan tras un cambio de dependencias o de versión de PyTorch.
-- Docencia y material formativo: ilustra de forma compacta cómo se estructura un repositorio de modelo en HuggingFace (config, training args, checkpoint, script de evaluación) con una arquitectura no basada en transformer estándar.
+- Docencia y material formativo: ilustra de forma compacta cómo se estructura un repositorio de modelo en Hugging Face (config, training args, checkpoint, script de evaluación) con una arquitectura no basada en transformer estándar.
 - Prototipado de sistemas de recuperación o embeddings visuales: partiendo del esqueleto contrastivo, un equipo puede añadir su dataset y entrenar un extractor de representaciones para búsqueda por similitud; el resultado sería un modelo nuevo, no el publicado aquí.
 - Base para módulos de visión en pipelines multimodales: el PoolFormer original se usó como backbone de visión eficiente; este repositorio puede servir de plantilla para integrar un backbone de bajo coste en un sistema mayor, siempre tras entrenamiento y validación propios.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| poolformer-contrastive (este repositorio) | 49.600 | No disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
+| poolformer-contrastive (este repositorio) | 49.600 | No disponible | Sin benchmarks; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
 | PoolFormer-S24 (Sea AI Lab, referencia de la arquitectura) | ~21 M | Entrada de imagen (resolución configurable) | Métricas publicadas en el paper original (no reproducidas aquí) | No verificada en esta ficha | Público (repositorio oficial y pesos) |
 | ResNet-50 (torchvision) | ~25,6 M | Entrada de imagen 224×224 habitual | Métricas públicas de ImageNet (no reproducidas aquí) | BSD-3-Clause en torchvision | Amplia, pesos preentrenados |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | Pares imagen-texto | Métricas públicas en zero-shot (no reproducidas aquí) | MIT | Amplia, pesos preentrenados |
@@ -75,13 +75,13 @@ La comparación es estructural, no de rendimiento: los tres modelos de referenci
 - Incoherencia entre la escala declarada ("base") y el recuento real de parámetros (49.600): no debe citarse como un PoolFormer-base de la literatura.
 - Ausencia total de datos de entrenamiento, tokenizador, vocabulario y resolución de entrada: no se puede reproducir ni replicar ningún resultado a partir del repositorio.
 - Las APIs automáticas de carga (`AutoModel`, `pipeline`) fallarán sin un adaptador explícito; prever trabajo de integración adicional.
-- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de que un observador interprete el repositorio como un modelo funcional por su presencia en HuggingFace con licencia permisiva.
+- Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de que un observador interprete el repositorio como un modelo funcional por su presencia en Hugging Face con licencia permisiva.
 - Idiomas: no se declara ninguno; no hay evidencia de capacidad multilingüe.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución y sin endorsamiento, pero los términos de los datos externos que se usen para entrenarlo deben revisarse por separado.
 - Madurez del repositorio: 0 descargas, 0 "likes", sin pipeline declarado, sin papers ni demos asociados y con un tamaño de repo de 0,0 GB. Esperar soporte de la comunidad es poco realista.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emilysmithford/poolformer-contrastive
+- Hugging Face: https://huggingface.co/emilysmithford/poolformer-contrastive
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.
 - Referencia de la arquitectura (no enlazada desde el repositorio): paper "MetaFormer Is Actually What You Need for Vision" (PoolFormer), Yu et al., 2021.

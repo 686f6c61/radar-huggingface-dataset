@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abhijit1620/qwen2.5-0.5b-python-assistant
+- Hugging Face: https://huggingface.co/abhijit1620/qwen2.5-0.5b-python-assistant
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

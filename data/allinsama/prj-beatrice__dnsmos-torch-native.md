@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DNSMOS P.835 and P.808 es un sistema de estimación de calidad de voz sin referencia desarrollado originalmente por Microsoft dentro del DNS-Challenge. Esta ficha describe la adaptación publicada en HuggingFace por Allinsama (bajo el espacio `prj-beatrice`), que reimplementa los dos predictores originales en PyTorch nativo para que puedan ejecutarse únicamente con `torch`, `torchaudio` y `transformers`, eliminando la dependencia de `onnxruntime` y del código auxiliar `dnsmos_local.py`.
+DNSMOS P.835 and P.808 es un sistema de estimación de calidad de voz sin referencia desarrollado originalmente por Microsoft dentro del DNS-Challenge. Esta ficha describe la adaptación publicada en Hugging Face por Allinsama (bajo el espacio `prj-beatrice`), que reimplementa los dos predictores originales en PyTorch nativo para que puedan ejecutarse únicamente con `torch`, `torchaudio` y `transformers`, eliminando la dependencia de `onnxruntime` y del código auxiliar `dnsmos_local.py`.
 
 El modelo devuelve cuatro puntuaciones por clip de audio: `sig` (calidad de la señal vocal), `bak` (calidad del ruido de fondo) y `ovrl` (calidad global) según la recomendación ITU-T P.835, más `p808` (MOS estimado según ITU-T P.808). Se trata de un modelo de regresión sobre audio, no de un modelo generativo: su relevancia radica en que permite puntuar calidad de voz de forma objetiva y barata en pipelines de TTS, conversión de voz, ASR o limpieza de datasets.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 | Modelo | Enfoque | Parametros | Salidas | Dependencias | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (dnsmos-torch-native) | Port PyTorch de DNSMOS P.835 + P.808 | 361.853 | sig, bak, ovrl, p808 | torch, torchaudio, transformers | MIT (codigo) + CC BY 4.0 (pesos) | HuggingFace, 14 descargas |
+| Este modelo (dnsmos-torch-native) | Port PyTorch de DNSMOS P.835 + P.808 | 361.853 | sig, bak, ovrl, p808 | torch, torchaudio, transformers | MIT (codigo) + CC BY 4.0 (pesos) | Hugging Face, 14 descargas |
 | DNSMOS original (Microsoft DNS-Challenge) | ONNX | No disponible en la informacion | sig, bak, ovrl, p808 | onnxruntime + `dnsmos_local.py` | No disponible en la informacion | GitHub de DNS-Challenge |
 | NISQA | Red neuronal para calidad de voz | No disponible en la informacion | MOS de calidad y dimensiones de ruido | Repositorio y pesos propios | No disponible en la informacion | Publico (GitHub) |
 | TorchAudio SQUIM | Metricas objetivas en torchaudio | No disponible en la informacion | PESQ, STOI, estimacion de MOS | torchaudio | No disponible en la informacion | Incluido en torchaudio |
@@ -92,8 +92,8 @@ La ventaja diferencial de este checkpoint frente al DNSMOS original es la ausenc
 
 ## Enlaces
 
-- Modelo en HuggingFace (Allinsama): https://huggingface.co/Allinsama/prj-beatrice__dnsmos-torch-native
-- Modelo en HuggingFace (espacio prj-beatrice): https://huggingface.co/prj-beatrice/dnsmos-torch-native
+- Modelo en Hugging Face (Allinsama): https://huggingface.co/Allinsama/prj-beatrice__dnsmos-torch-native
+- Modelo en Hugging Face (espacio prj-beatrice): https://huggingface.co/prj-beatrice/dnsmos-torch-native
 - Ficheros y versiones: https://huggingface.co/prj-beatrice/dnsmos-torch-native/tree/main
 - DNSMOS original de Microsoft (DNS-Challenge): https://github.com/microsoft/DNS-Challenge/tree/master/DNSMOS
 - Project Beatrice V2 (ecosistema de conversión de voz): https://project-beatrice-v2.github.io/Beatrice-website/

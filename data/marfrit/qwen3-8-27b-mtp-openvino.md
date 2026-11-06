@@ -91,7 +91,7 @@ Otra alternativa es usar llama.cpp con los GGUF de unsloth, que incluyen los ten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marfrit/Qwen3.8-27B-MTP-OpenVINO
+- Repositorio Hugging Face: https://huggingface.co/marfrit/Qwen3.8-27B-MTP-OpenVINO
 - Repositorio del modelo base (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía sobre el MTP de Qwen3.8 (GitHub): https://github.com/sudoingX/qwen38-mtp
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

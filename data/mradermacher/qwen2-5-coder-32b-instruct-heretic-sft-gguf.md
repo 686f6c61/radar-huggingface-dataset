@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks para la variante `qwen2.5-coder-32b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen2.5-coder-32b-instruct-heretic-sft (GGUF) | 32B | 131 072 | no disponible | HuggingFace (cuantizaciones) | Variante SFT sin documentacion publica |
-| Qwen2.5-Coder-32B-Instruct (base) | 32B | 131 072 | Apache-2.0 | HuggingFace, NVIDIA NIM | Modelo oficial con benchmarks publicados |
-| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE) | 16 384 | MIT | HuggingFace | Alternativa mas ligera con arquitectura MoE |
-| CodeLlama-34B-Instruct | 34B | 16 384 | Llama 2 license | HuggingFace | Modelo de Meta, contexto menor y licencia restrictiva |
+| qwen2.5-coder-32b-instruct-heretic-sft (GGUF) | 32B | 131 072 | no disponible | Hugging Face (cuantizaciones) | Variante SFT sin documentacion publica |
+| Qwen2.5-Coder-32B-Instruct (base) | 32B | 131 072 | Apache-2.0 | Hugging Face, NVIDIA NIM | Modelo oficial con benchmarks publicados |
+| DeepSeek-Coder-V2-Lite-Instruct | 16B (MoE) | 16 384 | MIT | Hugging Face | Alternativa mas ligera con arquitectura MoE |
+| CodeLlama-34B-Instruct | 34B | 16 384 | Llama 2 license | Hugging Face | Modelo de Meta, contexto menor y licencia restrictiva |
 
 La variante "heretic-sft" no tiene informacion publica sobre su rendimiento comparado con estos modelos. El modelo base Qwen2.5-Coder-32B-Instruct es superior en benchmarks de codigo a CodeLlama-34B y comparable a DeepSeek-Coder-V2, pero la variante SFT podria tener diferencias de comportamiento que no pueden evaluarse.
 
@@ -85,8 +85,8 @@ La variante "heretic-sft" no tiene informacion publica sobre su rendimiento comp
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-GGUF
 - Modelo original SFT (PeetPedro): https://huggingface.co/PeetPedro/qwen2.5-coder-32b-instruct-heretic-sft
-- Modelo base Qwen2.5-Coder-32B-Instruct (HuggingFace): https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
+- Modelo base Qwen2.5-Coder-32B-Instruct (Hugging Face): https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Documentacion de Qwen2.5-Coder en NVIDIA NIM: https://build.nvidia.com/qwen/qwen2_5-coder-32b-instruct
 - Container oficial en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nim/qwen/containers/qwen2.5-coder-32b-instruct/1

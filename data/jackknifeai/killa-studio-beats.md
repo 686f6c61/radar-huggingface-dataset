@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (`killa-studio-beats`) | Conversión LiteRT de Stable Audio Open Small para Android arm64 | no disponible | no disponible | Stability AI Community License | HuggingFace; 0 descargas y 0 likes en la consulta |
+| Este repositorio (`killa-studio-beats`) | Conversión LiteRT de Stable Audio Open Small para Android arm64 | no disponible | no disponible | Stability AI Community License | Hugging Face; 0 descargas y 0 likes en la consulta |
 | Stable Audio Open Small (modelo de origen) | Modelo base text-to-audio de Stability AI | no disponible | no disponible | no disponible en la información proporcionada | Referenciado en la model card; no se enlaza directamente |
 | Otras alternativas text-to-audio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de datos de otras alternativas comparables en la información prop
 
 ## Enlaces
 
-- [Model card en HuggingFace](https://huggingface.co/JackKnifeAI/killa-studio-beats)
+- [Model card en Hugging Face](https://huggingface.co/JackKnifeAI/killa-studio-beats)
 - [Repositorio Killa YuE en GitHub](https://github.com/JackKnifeAI/killa-yue)
 - [Perfil de JackKnifeAI en GitHub](https://github.com/JackKnifeAI)
 - [Acceptable Use Policy de Stability AI](https://stability.ai/use-policy)

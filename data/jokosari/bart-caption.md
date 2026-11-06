@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jokosari/bart-caption` es un artefacto publicado en HuggingFace por el usuario `jokosari` bajo licencia CC-BY-4.0. Según la model card, se trata de una implementación a escala *giant* de la arquitectura **ViT** (Vision Transformer) orientada a tareas de **clasificación**. La ficha técnica describe una configuración con atención *sparse*, estrategia de fusión por *tensor fusion*, activación *approx GELU*, normalización *InstanceNorm* e inicialización *Xavier Uniform*. El entrenamiento habría utilizado el optimizador *NovoGrad* con un scheduler de tasa de aprendizaje *cosine*.
+El modelo `jokosari/bart-caption` es un artefacto publicado en Hugging Face por el usuario `jokosari` bajo licencia CC-BY-4.0. Según la model card, se trata de una implementación a escala *giant* de la arquitectura **ViT** (Vision Transformer) orientada a tareas de **clasificación**. La ficha técnica describe una configuración con atención *sparse*, estrategia de fusión por *tensor fusion*, activación *approx GELU*, normalización *InstanceNorm* e inicialización *Xavier Uniform*. El entrenamiento habría utilizado el optimizador *NovoGrad* con un scheduler de tasa de aprendizaje *cosine*.
 
 A pesar del nombre "bart-caption", que podría sugerir un modelo de generación de subtítulos basado en BART, la información disponible indica que la arquitectura subyacente es ViT y la tarea declarada es clasificación. No se proporcionan detalles sobre el número de parámetros, la longitud de contexto, el dataset de entrenamiento ni los resultados de evaluación. El repositorio contiene únicamente un archivo `pipeline.py` como artefacto principal, sin pesos publicados ni demos funcionales.
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jokosari/bart-caption
+- Repositorio en Hugging Face: https://huggingface.co/jokosari/bart-caption
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo específico.

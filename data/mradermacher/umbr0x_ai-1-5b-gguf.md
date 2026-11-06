@@ -68,7 +68,7 @@ No se dispone de datos de benchmarks para este modelo ni para las alternativas e
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---:|---|---|---|---|
-| umbr0X_ai-1.5B-GGUF | 1,54 B | no disponible | Apache-2.0 | no disponible | HuggingFace, GGUF |
+| umbr0X_ai-1.5B-GGUF | 1,54 B | no disponible | Apache-2.0 | no disponible | Hugging Face, GGUF |
 | Qwen2-1.5B-Instruct | ~1,5 B | no disponible | no disponible | no disponible | no verificada |
 | TinyLlama-1.1B-Chat | ~1,1 B | no disponible | no disponible | no disponible | no verificada |
 | SmolLM2-1.7B-Instruct | ~1,7 B | no disponible | no disponible | no disponible | no verificada |
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks para este modelo ni para las alternativas e
 
 ## Enlaces
 
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/mradermacher/umbr0X_ai-1.5B-GGUF)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/mradermacher/umbr0X_ai-1.5B-GGUF)
 - [Modelo base gabrielbosse9/umbr0x_ai-1.5B](https://huggingface.co/gabrielbosse9/umbr0x_ai-1.5B)
 - [Página de descargas de mradermacher para este modelo](https://hf.tst.eu/model#umbr0X_ai-1.5B-GGUF)
 - [Solicitudes de cuantización de mradermacher](https://huggingface.co/mradermacher/model_requests)

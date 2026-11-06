@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d768_L2_t500000000_s1` es un transformer de pesos dispersos (weight-sparse) de pequeno tamano publicado por el usuario asher577 en HuggingFace. Se trata de un artefacto de investigacion, no de un modelo de proposito general: su card indica explicitamente que ha sido entrenado con el procedimiento descrito en Gao et al. (2025) y que su objetivo es estudiar el comportamiento de la dispersion de pesos y activaciones en un regimen controlado de escalado.
+`scaling2_plain_d768_L2_t500000000_s1` es un transformer de pesos dispersos (weight-sparse) de pequeno tamano publicado por el usuario asher577 en Hugging Face. Se trata de un artefacto de investigacion, no de un modelo de proposito general: su card indica explicitamente que ha sido entrenado con el procedimiento descrito en Gao et al. (2025) y que su objetivo es estudiar el comportamiento de la dispersion de pesos y activaciones en un regimen controlado de escalado.
 
 El modelo tiene solo 2 capas, una dimension de modelo de 768, una dimension de cabeza de 16 y un vocabulario de 4096 tokens, con una longitud de contexto de 512 tokens. Se ha entrenado durante 500 millones de tokens sobre el dataset SimpleStories (jacobcd52/simplestories-tokenized) usando el tokenizador SimpleStories-1.25M, es decir, un corpus de historias sinteticas sencillas en ingles. El repositorio ocupa aproximadamente 0,1 GB, lo que confirma su naturaleza compacta.
 
@@ -72,12 +72,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Licencia no disponible: no puede asumirse uso comercial sin confirmacion del autor.
 - Idiomas soportados no declarados; el entrenamiento se limita a un corpus en ingles.
 - La carga requiere una clase personalizada (`SparseGPT`) del repositorio del autor, lo que anade friccion de integracion.
-- No dispone de pipeline declarado en HuggingFace, por lo que no se puede invocar con `pipeline()` sin trabajo adicional.
+- No dispone de pipeline declarado en Hugging Face, por lo que no se puede invocar con `pipeline()` sin trabajo adicional.
 - Sesgos conocidos: no documentados, pero previsibles por el caracter sintetico del corpus.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asher577/scaling2_plain_d768_L2_t500000000_s1
+- Modelo en Hugging Face: https://huggingface.co/asher577/scaling2_plain_d768_L2_t500000000_s1
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/0es4pg0o
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizador: https://huggingface.co/SimpleStories/SimpleStories-1.25M

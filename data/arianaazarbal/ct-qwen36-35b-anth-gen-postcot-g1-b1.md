@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-qwen36-35b-anth-gen-postcot-g1-b1` (este adaptador) | Adaptador LoRA r=64 sobre base de 35B | no disponible (entrenamiento a 8192 tokens) | Sin benchmarks publicados | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35B totales / 3B activos segun denominacion | no disponible | No disponible en la informacion proporcionada | no disponible | HuggingFace |
+| `ct-qwen36-35b-anth-gen-postcot-g1-b1` (este adaptador) | Adaptador LoRA r=64 sobre base de 35B | no disponible (entrenamiento a 8192 tokens) | Sin benchmarks publicados | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.6-35B-A3B` (modelo base) | 35B totales / 3B activos segun denominacion | no disponible | No disponible en la informacion proporcionada | no disponible | Hugging Face |
 | Otras ramas y generaciones de la misma cadena (`b1`, `g1`, etc.) | Adaptadores LoRA r=64 sobre el mismo base | no disponible | Comparacion no publicada | no disponible | Referenciadas en la model card, sin metricas |
 | Otros adaptadores de alineamiento sobre modelos MoE de ~35B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,8 +90,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
-- Ficheros citados en el repositorio: `training_seed_constitution.md` y `tinker_meta.json` (disponibles en el propio repositorio de HuggingFace)
+- Ficheros citados en el repositorio: `training_seed_constitution.md` y `tinker_meta.json` (disponibles en el propio repositorio de Hugging Face)
 - Programa de entrenamiento referenciado: `welfare-in-ai-rnd / constitutional_training` (sin URL publica en la informacion disponible)
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a paginas corporativas de Microsoft y no guardan relacion con el artefacto.

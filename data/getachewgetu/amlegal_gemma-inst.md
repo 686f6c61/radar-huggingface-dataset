@@ -85,8 +85,8 @@ Puntuaciones cualitativas LLM-as-a-Judge (escala 1-10, segun el autor): fidelida
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AmLegal_Gemma-Inst | 4,3B | no disponible | QA juridico en amharico con citacion | Gemma | HuggingFace |
-| google/gemma-3-4b-it | 4,3B | no disponible | Modelo base multimodal e instruido | Gemma | HuggingFace |
+| AmLegal_Gemma-Inst | 4,3B | no disponible | QA juridico en amharico con citacion | Gemma | Hugging Face |
+| google/gemma-3-4b-it | 4,3B | no disponible | Modelo base multimodal e instruido | Gemma | Hugging Face |
 | Qwen-2.5-7B FT (referencia del autor) | 7B | no disponible | Ajuste fino juridico comparativo | no disponible | no disponible |
 
 No se dispone de datos publicos de otros modelos especializados en amharico juridico para una comparacion directa. La comparativa se limita a los modelos incluidos en la evaluacion del propio autor.
@@ -105,7 +105,7 @@ No se dispone de datos publicos de otros modelos especializados en amharico juri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/getachewgetu/AmLegal_Gemma-Inst
+- Modelo en Hugging Face: https://huggingface.co/getachewgetu/AmLegal_Gemma-Inst
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Dataset referenciado: custom-ethiopian-cassation-qa (no se proporciona URL publica)
 - Terminos de licencia Gemma: https://ai.google.dev/gemma/terms

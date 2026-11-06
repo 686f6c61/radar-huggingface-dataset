@@ -2,7 +2,7 @@
 
 ## Resumen
 
-apiskecil/qwen2.5-1.5b-legal-id-sft es un ajuste fino supervisado (SFT) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario apiskecil en HuggingFace. El nombre del repositorio sugiere una especialización en dominio legal (el sufijo "-id" podría apuntar a Indonesia), pero la model card no documenta el conjunto de datos de entrenamiento ni el objetivo concreto del ajuste, y los metadatos declaran únicamente el idioma inglés. Conviene tratarlo, por tanto, como un fine-tune de propósito no verificado.
+apiskecil/qwen2.5-1.5b-legal-id-sft es un ajuste fino supervisado (SFT) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario apiskecil en Hugging Face. El nombre del repositorio sugiere una especialización en dominio legal (el sufijo "-id" podría apuntar a Indonesia), pero la model card no documenta el conjunto de datos de entrenamiento ni el objetivo concreto del ajuste, y los metadatos declaran únicamente el idioma inglés. Conviene tratarlo, por tanto, como un fine-tune de propósito no verificado.
 
 Técnicamente es un transformer decoder-only denso de 1.543.714.304 parámetros (dato real leído de los safetensors), derivado de la versión Instruct de Qwen2.5-1.5B. Hereda por tanto la arquitectura, el tokenizador y la ventana de contexto de la familia Qwen2.5, con atención de consultas agrupadas (GQA) y soporte nativo de contexto largo. El repositorio ocupa 3,1 GB, lo que es coherente con pesos almacenados en fp16/BF16 (aproximadamente 2 bytes por parámetro) más ficheros auxiliares.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada pero clara como caso de estudio: es un ejemplo típico
 
 La arquitectura subyacente es la de Qwen2.5-1.5B-Instruct: un transformer decoder-only denso con normalizacion RMSNorm, activacion SwiGLU, embeddings de rotacion posicional (RoPE) y atencion con consultas agrupadas (GQA). La configuracion publica de la familia Qwen2.5-1.5B incluye 28 capas, 12 cabezas de atencion, 2 cabezas de clave/valor, dimension oculta de 1536 y un vocabulario de 151.936 tokens. Estos valores son los del modelo base y no estan confirmados de forma explicita en la model card de este repositorio.
 
-El proceso de ajuste se realizo con Unsloth y la libreria TRL de HuggingFace, partiendo de unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit, es decir, una version del modelo base cuantizada a 4 bits. Segun la propia model card, el entrenamiento fue "2x mas rapido" gracias a Unsloth, aunque no se detalla el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros utilizados. No hay informacion sobre si se aplico LoRA/QLoRA y posterior fusion de pesos, aunque el flujo habitual de Unsloth con una base bnb-4bit apunta a QLoRA con fusion final a fp16. Esta ultima afirmacion es una inferencia, no un dato documentado.
+El proceso de ajuste se realizo con Unsloth y la libreria TRL de Hugging Face, partiendo de unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit, es decir, una version del modelo base cuantizada a 4 bits. Segun la propia model card, el entrenamiento fue "2x mas rapido" gracias a Unsloth, aunque no se detalla el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros utilizados. No hay informacion sobre si se aplico LoRA/QLoRA y posterior fusion de pesos, aunque el flujo habitual de Unsloth con una base bnb-4bit apunta a QLoRA con fusion final a fp16. Esta ultima afirmacion es una inferencia, no un dato documentado.
 
 ## Capacidades
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| apiskecil/qwen2.5-1.5b-legal-id-sft | 1,54B | No especificado en la card (base: 32.768) | Apache-2.0 | HuggingFace, sin cuantizaciones publicadas |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 (ampliable con YaRN) | Apache-2.0 | HuggingFace, GGUF y cuantizaciones ampliamente disponibles |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 | Llama 3.2 Community License | HuggingFace, ecosistema amplio |
-| Gemma-2-2B-it | 2,6B | 8.192 | Gemma Terms of Use | HuggingFace, requiere aceptar terminos |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache-2.0 | HuggingFace, con versiones GGUF |
+| apiskecil/qwen2.5-1.5b-legal-id-sft | 1,54B | No especificado en la card (base: 32.768) | Apache-2.0 | Hugging Face, sin cuantizaciones publicadas |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 (ampliable con YaRN) | Apache-2.0 | Hugging Face, GGUF y cuantizaciones ampliamente disponibles |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 | Llama 3.2 Community License | Hugging Face, ecosistema amplio |
+| Gemma-2-2B-it | 2,6B | 8.192 | Gemma Terms of Use | Hugging Face, requiere aceptar terminos |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache-2.0 | Hugging Face, con versiones GGUF |
 
 Las cifras de contexto, parametros y licencia de los modelos comparados proceden de su documentacion publica y se ofrecen como referencia orientativa. No se dispone de datos de rendimiento comparado porque este fine-tune no ha publicado benchmarks.
 
@@ -89,10 +89,10 @@ Las cifras de contexto, parametros y licencia de los modelos comparados proceden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apiskecil/qwen2.5-1.5b-legal-id-sft
+- Modelo en Hugging Face: https://huggingface.co/apiskecil/qwen2.5-1.5b-legal-id-sft
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

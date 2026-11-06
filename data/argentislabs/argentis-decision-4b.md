@@ -80,9 +80,9 @@ Lectura honesta del compuesto, según el propio autor: ~89 % de los casos que pa
 
 | Modelo | Parametros | Contexto | Compuesto en el protocolo | Precision exacta | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Argentis-Decision-4B | 4,02 B (denso) | no disponible (base: 262.144) | 21,0 % | 2,9 % | Apache-2.0 | Pesos bf16 en HuggingFace |
-| Qwen3-4B-Instruct-2507 (base) | 4,02 B (denso) | 262.144 | 0,0 % | 0,0 % | Apache-2.0 | Pesos en HuggingFace |
-| Qwen3-30B-A3B (referencia del autor) | ~30 B totales, MoE | no disponible en la información | 0,0 % | 0,0 % | Apache-2.0 | Pesos en HuggingFace |
+| Argentis-Decision-4B | 4,02 B (denso) | no disponible (base: 262.144) | 21,0 % | 2,9 % | Apache-2.0 | Pesos bf16 en Hugging Face |
+| Qwen3-4B-Instruct-2507 (base) | 4,02 B (denso) | 262.144 | 0,0 % | 0,0 % | Apache-2.0 | Pesos en Hugging Face |
+| Qwen3-30B-A3B (referencia del autor) | ~30 B totales, MoE | no disponible en la información | 0,0 % | 0,0 % | Apache-2.0 | Pesos en Hugging Face |
 
 La comparación relevante no es de capacidad general sino de comportamiento: los tres modelos son prácticamente idénticos en el compuesto si no se cuenta la abstención, y solo el ajuste de Argentis Labs rechaza sistemáticamente los registros irresolubles. En dependencia espuria el ajuste (54,3 %) está al nivel de la referencia de 30B (54,1 %) y por encima del base (45,5 %), lo que indica que el ajuste no mejora la estabilidad de las respuestas ante perturbaciones irrelevantes. No se dispone de comparaciones con otras familias (Llama, Mistral, Gemma) en la información proporcionada.
 
@@ -102,7 +102,7 @@ La comparación relevante no es de capacidad general sino de comportamiento: los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/argentislabs/Argentis-Decision-4B
+- Modelo en Hugging Face: https://huggingface.co/argentislabs/Argentis-Decision-4B
 - Dataset y benchmark: https://huggingface.co/datasets/argentislabs/argentis-decision-bench
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Pipeline de evaluación: incluido en el repositorio del dataset (`eval.py` y wheel autoverificable `argentis_decision-0.6.0-py3-none-any.whl`)

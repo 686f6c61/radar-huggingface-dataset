@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`victim3432/xssindex8100` es un modelo publicado en HuggingFace por el usuario `victim3432` bajo licencia MIT. La model card es prácticamente vacía: se reduce a un título, la cadena "body model8100" y una declaración de metadatos que incluye un `model-index` con resultados de benchmarks. El repositorio se etiqueta con `gpt2` y `transformers`, lo que sugiere que se trata de un modelo derivado o construido sobre la arquitectura GPT-2, aunque no se aporta ninguna especificación técnica adicional.
+`victim3432/xssindex8100` es un modelo publicado en Hugging Face por el usuario `victim3432` bajo licencia MIT. La model card es prácticamente vacía: se reduce a un título, la cadena "body model8100" y una declaración de metadatos que incluye un `model-index` con resultados de benchmarks. El repositorio se etiqueta con `gpt2` y `transformers`, lo que sugiere que se trata de un modelo derivado o construido sobre la arquitectura GPT-2, aunque no se aporta ninguna especificación técnica adicional.
 
-El interés de este modelo no reside en sus capacidades, sino en su naturaleza como artefacto de prueba. Tanto los nombres de las tareas, datasets y métricas del `model-index` como el tag `MI8100tag` contienen cargas útiles de Cross-Site Scripting (`<img src=x>`). Esto indica que el repositorio se ha creado deliberadamente para probar cómo renderizan las plataformas (HuggingFace, visores de model cards, agregadores de benchmarks) contenido no escapado procedente de metadatos de modelos. No hay evidencia de entrenamiento real, dataset publicado ni pesos funcionales documentados.
+El interés de este modelo no reside en sus capacidades, sino en su naturaleza como artefacto de prueba. Tanto los nombres de las tareas, datasets y métricas del `model-index` como el tag `MI8100tag` contienen cargas útiles de Cross-Site Scripting (`<img src=x>`). Esto indica que el repositorio se ha creado deliberadamente para probar cómo renderizan las plataformas (Hugging Face, visores de model cards, agregadores de benchmarks) contenido no escapado procedente de metadatos de modelos. No hay evidencia de entrenamiento real, dataset publicado ni pesos funcionales documentados.
 
 Por tanto, esta ficha debe leerse como una evaluación de un modelo de demostración sin valor práctico para producción. Cualquier dato de rendimiento es declarado por el autor, no verificado (`verified: false`), y no se ha publicado información sobre arquitectura, tamaño, contexto o datos de entrenamiento.
 
@@ -39,7 +39,7 @@ No hay datos sobre el corpus de entrenamiento, el número de tokens procesados, 
 
 ## Casos de uso
 
-- Pruebas de seguridad de plataformas de model cards: el repositorio sirve para comprobar si un visor de HuggingFace o un agregador de benchmarks escapa correctamente los campos del `model-index` antes de renderizarlos. Los nombres de tarea, dataset y métrica contienen `<img src=x>`, lo que permite validar la sanitización de la interfaz.
+- Pruebas de seguridad de plataformas de model cards: el repositorio sirve para comprobar si un visor de Hugging Face o un agregador de benchmarks escapa correctamente los campos del `model-index` antes de renderizarlos. Los nombres de tarea, dataset y métrica contienen `<img src=x>`, lo que permite validar la sanitización de la interfaz.
 - Validación de pipelines de ingesta de metadatos: un sistema que lea el `model-index` de modelos de terceros puede usar este repositorio como caso de prueba para verificar que no ejecuta ni propaga HTML/JS embebido en nombres de campos.
 - Test de regresión en herramientas de catalogación de modelos: permite comprobar que un indexador interno no rompe el renderizado ni almacena cadenas con payloads activos en bases de datos de catálogo.
 - Auditoría de repositorios de terceros: sirve como ejemplo de por qué no debe confiarse en metadatos no verificados (`verified: false`) de autores desconocidos antes de integrarlos en un pipeline de producción.
@@ -88,6 +88,6 @@ Para el resto de alternativas de la misma categoría (clasificación de texto en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/victim3432/xssindex8100
+- Repositorio en Hugging Face: https://huggingface.co/victim3432/xssindex8100
 - Fuente declarada en el `model-index`: https://example.com/MI8100SU (URL de ejemplo, no funcional)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

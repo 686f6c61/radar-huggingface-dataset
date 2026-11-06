@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Arquitectura | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LibreDDColort-restore | DDColor (ConvNeXt-T + transformer) | ~220 MB (no exacto) | Apache-2.0 (con caveat ImageNet) | HuggingFace, LibreYOLO |
-| DDColor original (piddnad/ddcolor_paper_tiny) | DDColor (ConvNeXt-T + transformer) | ~220 MB | Apache-2.0 (según publisher) | HuggingFace, GitHub |
-| DeOldify | ResNet + GAN | ~200-300 MB | MIT (variante) | GitHub, HuggingFace |
+| LibreDDColort-restore | DDColor (ConvNeXt-T + transformer) | ~220 MB (no exacto) | Apache-2.0 (con caveat ImageNet) | Hugging Face, LibreYOLO |
+| DDColor original (piddnad/ddcolor_paper_tiny) | DDColor (ConvNeXt-T + transformer) | ~220 MB | Apache-2.0 (según publisher) | Hugging Face, GitHub |
+| DeOldify | ResNet + GAN | ~200-300 MB | MIT (variante) | GitHub, Hugging Face |
 
 La comparativa se limita a aspectos estructurales y de licencia, ya que no se dispone de benchmarks comunes. LibreDDColort-restore se distingue por su integración con LibreYOLO y por la exclusión del checkpoint artístico, lo que reduce riesgos legales asociados a datos privados.
 
@@ -78,7 +78,7 @@ La comparativa se limita a aspectos estructurales y de licencia, ya que no se di
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/LibreYOLO/LibreDDColort-restore)
+- [Modelo en Hugging Face](https://huggingface.co/LibreYOLO/LibreDDColort-restore)
 - [Repositorio fuente del checkpoint original](https://huggingface.co/piddnad/ddcolor_paper_tiny)
 - [Repositorio de DDColor (GitHub)](https://github.com/piddnad/DDColor)
 - [Documentación de LibreYOLO (si existe, no se proporciona en la información)](no disponible)

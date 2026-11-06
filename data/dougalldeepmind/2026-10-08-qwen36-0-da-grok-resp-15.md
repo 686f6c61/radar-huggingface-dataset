@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-10-08-qwen36-0-da-grok-resp-15 (este adaptador) | Adaptador LoRA sobre base de 27B (r=64, alpha=128) | 8192 tokens en entrenamiento | No se han publicado resultados | no disponible | HuggingFace, 0 descargas, 0 likes |
+| dougalldeepmind/2026-10-08-qwen36-0-da-grok-resp-15 (este adaptador) | Adaptador LoRA sobre base de 27B (r=64, alpha=128) | 8192 tokens en entrenamiento | No se han publicado resultados | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.6-27B (modelo base, sin adaptador) | 27B segun identificador | no disponible | no disponible en la informacion proporcionada | no disponible | Referenciado como base con revision fijada |
 | Otros adaptadores LoRA de la misma categoria | no disponible | no disponible | No se han publicado resultados | no disponible | No se identifican alternativas comparables en la informacion disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de fichas equivalentes que permitan una 
 
 ## Enlaces
 
-- Pagina del adaptador en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-08-qwen36-0-da-grok-resp-15
+- Pagina del adaptador en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-08-qwen36-0-da-grok-resp-15
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-10-08-da-grok-resp-15-mix
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio de codigo del pipeline: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT (commit b47e1adc33463b9a956c97dd17cfde2db1fc0c13)

@@ -79,10 +79,10 @@ Advertencia del autor: son cifras in-sample, porque la búsqueda puntuó sus can
 
 | Modelo | Parámetros | Contexto / tarea | Rendimiento en la prueba | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jrubiosainz/microduck-game-hillclimber-remix | 197 774 en la red congelada, más 198 valores de tabla (22 nudos × 9 canales) | Política reactiva, obs [1, 61] → actions [1, 14] | 0,796 s de media en las 5 semillas oficiales | no disponible | HuggingFace |
-| juicenv/microduck-hill-es7 | 197 774 (red idéntica) | Política reactiva para la misma prueba | 0,800 s de media en las 5 semillas oficiales | no disponible | HuggingFace |
-| suraj-phanindra/microduck-hill-hc2-aifund | no disponible | Política para la misma prueba, ajustada por estrategias evolutivas sobre el scorer de la Arena | 0,808 s citado en el manifiesto del modelo base | no disponible | HuggingFace |
-| namenu/microduck-arena | no disponible | Antecesor del que procede el linaje del modelo base | no disponible | no disponible | HuggingFace |
+| jrubiosainz/microduck-game-hillclimber-remix | 197 774 en la red congelada, más 198 valores de tabla (22 nudos × 9 canales) | Política reactiva, obs [1, 61] → actions [1, 14] | 0,796 s de media en las 5 semillas oficiales | no disponible | Hugging Face |
+| juicenv/microduck-hill-es7 | 197 774 (red idéntica) | Política reactiva para la misma prueba | 0,800 s de media en las 5 semillas oficiales | no disponible | Hugging Face |
+| suraj-phanindra/microduck-hill-hc2-aifund | no disponible | Política para la misma prueba, ajustada por estrategias evolutivas sobre el scorer de la Arena | 0,808 s citado en el manifiesto del modelo base | no disponible | Hugging Face |
+| namenu/microduck-arena | no disponible | Antecesor del que procede el linaje del modelo base | no disponible | no disponible | Hugging Face |
 
 La comparación se limita a la familia de políticas que compiten en la misma prueba de la Microduck Arena; no existen equivalentes de propósito general con los que contrastar parámetros o longitud de contexto, porque no es un modelo de lenguaje.
 
@@ -102,7 +102,7 @@ La comparación se limita a la familia de políticas que compiten en la misma pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-hillclimber-remix
 - Modelo base (juicenv/microduck-hill-es7): https://huggingface.co/juicenv/microduck-hill-es7
 - Microduck Arena (Space de Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Código de entrenamiento (pollen-robotics/microduck_rl, commit `3c0598cae`, rama `hannes-ft`): https://github.com/pollen-robotics/microduck_rl

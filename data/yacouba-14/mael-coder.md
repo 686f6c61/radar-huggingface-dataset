@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MAEL-Coder es el nombre con el que el usuario de HuggingFace yacouba-14 publica, dentro del ecosistema del proyecto MAEL de Yelen Tech, una version cuantizada del modelo Qwen3-Coder-30B-A3B-Instruct de Alibaba Qwen. No se trata de un modelo entrenado desde cero ni ajustado: el autor lo indica de forma explicita en la model card. Es el modelo base utilizado tal cual, comprimido en formato GGUF con cuantizacion Q4_K_M (fichero de 18,6 GB) a partir de la publicacion de unsloth, con licencia Apache 2.0.
+MAEL-Coder es el nombre con el que el usuario de Hugging Face yacouba-14 publica, dentro del ecosistema del proyecto MAEL de Yelen Tech, una version cuantizada del modelo Qwen3-Coder-30B-A3B-Instruct de Alibaba Qwen. No se trata de un modelo entrenado desde cero ni ajustado: el autor lo indica de forma explicita en la model card. Es el modelo base utilizado tal cual, comprimido en formato GGUF con cuantizacion Q4_K_M (fichero de 18,6 GB) a partir de la publicacion de unsloth, con licencia Apache 2.0.
 
 El modelo resuelve el caso de uso de un motor local de asistencia a la programacion y auditoria de seguridad. Se integra como "motor recomendado" de MAEL, una herramienta local de auditoria de seguridad y taller de codigo, donde el modelo propone cambios y un conjunto de jueces y herramientas externas (normas OWASP, W3C, WCAG, SQL, ademas de gitleaks, Trivy, Nuclei, testssl.sh o ClamAV) validan lo generado. La filosofia declarada del proyecto es "el codigo decide, el modelo propone".
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Activos | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MAEL-Coder | 30,5B | 3,3B | GGUF Q4_K_M | Apache 2.0 | HuggingFace (yacouba-14/MAEL-Coder) |
-| Qwen3-Coder-30B-A3B-Instruct | 30,5B | 3,3B | safetensors (precision completa) | Apache 2.0 | HuggingFace (Qwen) |
-| Qwen3-Coder-30B-A3B-Instruct-GGUF | 30,5B | 3,3B | GGUF (varias cuantizaciones) | Apache 2.0 | HuggingFace (unsloth) |
+| MAEL-Coder | 30,5B | 3,3B | GGUF Q4_K_M | Apache 2.0 | Hugging Face (yacouba-14/MAEL-Coder) |
+| Qwen3-Coder-30B-A3B-Instruct | 30,5B | 3,3B | safetensors (precision completa) | Apache 2.0 | Hugging Face (Qwen) |
+| Qwen3-Coder-30B-A3B-Instruct-GGUF | 30,5B | 3,3B | GGUF (varias cuantizaciones) | Apache 2.0 | Hugging Face (unsloth) |
 
 La comparativa relevante en este caso no es frente a otros modelos de codigo, sino frente al propio modelo base y su cuantizacion de origen. MAEL-Coder es un reempaquetado con nombre de producto: mismos pesos, misma licencia y misma arquitectura que el GGUF Q4_K_M de unsloth. Frente al modelo base en precision completa, pierde calidad por la cuantizacion Q4_K_M a cambio de reducir el peso a 18,6 GB y permitir ejecucion en CPU. No se dispone de datos comparativos de rendimiento entre estas variantes en la informacion proporcionada. Alternativas de la misma categoria (por ejemplo, otros modelos de codigo abiertos de entre 24B y 32B) no se detallan aqui por falta de datos verificables.
 

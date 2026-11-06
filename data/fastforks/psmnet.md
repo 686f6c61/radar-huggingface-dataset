@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de precisión (EPE, D1) de PSMNet ni de al
 
 | Modelo | Parametros | Contexto / entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PSMNet (fastforks) | no disponible | H x W >= 241, padding a múltiplo de 16 | Disparidad (max 192 px) | Código MIT; pesos sin declarar | HuggingFace (card) + GitHub |
+| PSMNet (fastforks) | no disponible | H x W >= 241, padding a múltiplo de 16 | Disparidad (max 192 px) | Código MIT; pesos sin declarar | Hugging Face (card) + GitHub |
 | GC-Net | no disponible | Par estéreo rectificado | Disparidad | no disponible | Código original |
 | DispNetC | no disponible | Par estéreo rectificado | Disparidad | no disponible | Código original |
 | CREStereo / RAFT-Stereo | no disponible | Par estéreo rectificado | Disparidad | no disponible | Repos públicos |
@@ -105,7 +105,7 @@ No disponible: comparación cuantitativa de precisión, latencia o memoria frent
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/psmnet
+- Model card en Hugging Face: https://huggingface.co/fastforks/psmnet
 - Repositorio de la librería fastforks: https://github.com/kleinicke/fastforks
 - Kernels precompilados: https://huggingface.co/fastforks/kernels
 - Código original de PSMNet: https://github.com/JiaRenChang/PSMNet (commit `87ac9093afbf`)

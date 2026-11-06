@@ -107,7 +107,7 @@ La comparacion con alternativas de otros fabricantes del mismo rango de tamano n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QUASAR-QAT/gemma-4-12B-it-QUASAR-W4A16-G64
+- Modelo en Hugging Face: https://huggingface.co/QUASAR-QAT/gemma-4-12B-it-QUASAR-W4A16-G64
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - QAT oficial de Google comparable: https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct
 - GGUF gemelo de este checkpoint: https://huggingface.co/QUASAR-QAT/gemma-4-12B-it-QUASAR-Q4_0-GGUF

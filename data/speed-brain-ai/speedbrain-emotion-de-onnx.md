@@ -72,6 +72,6 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/speed-brain-ai/speedbrain-emotion-de-onnx
+- Repositorio Hugging Face: https://huggingface.co/speed-brain-ai/speedbrain-emotion-de-onnx
 - Modelo base: https://huggingface.co/MilaNLProc/xlm-emo-t
 - Paper de XLM-EMO: https://aclanthology.org/2022.wassa-1.24/ (referencia en la model card)

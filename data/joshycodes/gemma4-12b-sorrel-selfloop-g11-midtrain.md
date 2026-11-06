@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma4-12b-sorrel-selfloop-g11-midtrain` es un checkpoint intermedio de investigación publicado por el usuario `joshycodes` en HuggingFace. Se trata de un modelo de 11.959.730.224 parámetros (≈11,96 B) obtenido por ajuste continuado (*continued pretraining*) a partir de `joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain`, dentro de un proyecto de los Anthropic Fellows sobre entrenamiento de carácter enmarcado en el concepto de *flourishing* (propuesta Wang & Jermyn, 2026-04-22). No es un modelo de propósito general: la propia model card lo declara «artefacto de investigación privado, no redistribuir».
+`gemma4-12b-sorrel-selfloop-g11-midtrain` es un checkpoint intermedio de investigación publicado por el usuario `joshycodes` en Hugging Face. Se trata de un modelo de 11.959.730.224 parámetros (≈11,96 B) obtenido por ajuste continuado (*continued pretraining*) a partir de `joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain`, dentro de un proyecto de los Anthropic Fellows sobre entrenamiento de carácter enmarcado en el concepto de *flourishing* (propuesta Wang & Jermyn, 2026-04-22). No es un modelo de propósito general: la propia model card lo declara «artefacto de investigación privado, no redistribuir».
 
 El entrenamiento se realizó sobre el corpus `joshycodes/sorrel-selfloop-corpus` (configuración `sorrel-selfloop-c-g10`) durante 6.107.136 tokens en una única época, con tasa de aprendizaje 1e-5, longitud de secuencia 4096, micro-batch 1 y acumulación de gradiente 16, sobre 2 GPU NVIDIA H200 en RunPod. La pérdida de entrenamiento descendió de 0,5307 a 0,5149. La etiqueta de transformers del repositorio es `gemma4_unified`, lo que sitúa al modelo en la familia Gemma 4, aunque la información disponible no detalla la arquitectura interna.
 
@@ -104,7 +104,7 @@ La comparación relevante para el proyecto no es con modelos de propósito gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g11-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g11-midtrain
 - Modelo base: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-selfloop-corpus
 - Referencias internas citadas en la model card: revisión del modelo base `0fde1ebc7bab`, revisión del dataset `0e8a7617a1de`, commit del lanzador `a0afb77669ae` del repositorio `flourishing-training`, ficheros `train_run_config.json` y `eval.py`.

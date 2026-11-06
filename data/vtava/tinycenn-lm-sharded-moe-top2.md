@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyCeNN-LM-Sharded-MoE-Top2 es un modelo de generacion de texto publicado por el usuario vtava en HuggingFace. Se presenta como un estudiante destilado de arquitectura CeNN (no transformer) que sustituye la FFN convencional por una FFN enrutada de tipo Mixture-of-Experts con enrutado top-2 y 8 shards de 96 canales internos cada uno. El modelo parte de arnir0/Tiny-LLM como referencia docente y se ha entrenado mediante destilacion de conocimiento, con el objetivo declarado de recuperar el rendimiento del profesor manteniendo un coste de parametros practicamente identico al de un CeNN plano.
+TinyCeNN-LM-Sharded-MoE-Top2 es un modelo de generacion de texto publicado por el usuario vtava en Hugging Face. Se presenta como un estudiante destilado de arquitectura CeNN (no transformer) que sustituye la FFN convencional por una FFN enrutada de tipo Mixture-of-Experts con enrutado top-2 y 8 shards de 96 canales internos cada uno. El modelo parte de arnir0/Tiny-LLM como referencia docente y se ha entrenado mediante destilacion de conocimiento, con el objetivo declarado de recuperar el rendimiento del profesor manteniendo un coste de parametros practicamente identico al de un CeNN plano.
 
 La relevancia tecnica del modelo es fundamentalmente experimental: con 481.729 parametros entrenables y un sobrecoste declarado de solo un 0,320 % frente a un CeNN sin enrutado, explora si un MoE de grano muy fino y enrutado disperso aporta ventaja en un regimen de parametros extremadamente reducido. Es un ejemplo de investigacion sobre eficiencia de parametros y arquitecturas alternativas al transformer, no un modelo orientado a produccion.
 
@@ -75,8 +75,8 @@ La busqueda web no ha devuelto informacion util sobre modelos comparables (los r
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyCeNN-LM-Sharded-MoE-Top2 | 481.729 | no disponible | CE 5,115179 (held-out propio, 65.536 tokens) | no disponible | Publicado en HuggingFace, 0 descargas |
-| arnir0/Tiny-LLM (profesor) | no disponible | no disponible | CE 4,234912 (misma evaluacion) | no disponible | Publicado en HuggingFace |
+| TinyCeNN-LM-Sharded-MoE-Top2 | 481.729 | no disponible | CE 5,115179 (held-out propio, 65.536 tokens) | no disponible | Publicado en Hugging Face, 0 descargas |
+| arnir0/Tiny-LLM (profesor) | no disponible | no disponible | CE 4,234912 (misma evaluacion) | no disponible | Publicado en Hugging Face |
 
 No se dispone de datos suficientes para establecer comparaciones con otras alternativas de la misma categoria.
 
@@ -96,6 +96,6 @@ No se dispone de datos suficientes para establecer comparaciones con otras alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/TinyCeNN-LM-Sharded-MoE-Top2
+- Modelo en Hugging Face: https://huggingface.co/vtava/TinyCeNN-LM-Sharded-MoE-Top2
 - Modelo base / profesor: https://huggingface.co/arnir0/Tiny-LLM
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

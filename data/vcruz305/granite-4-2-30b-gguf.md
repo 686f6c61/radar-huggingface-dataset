@@ -94,13 +94,13 @@ La comparativa directa de rendimiento no está disponible, pero Granite-4.2-30B 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/vcruz305/granite-4.2-30b-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/vcruz305/granite-4.2-30b-GGUF)
 - [Modelo base IBM Granite-4.2-30B](https://huggingface.co/ibm-granite/granite-4.2-30b)
 - [Blog técnico de IBM Granite 4.2](https://huggingface.co/blog/ibm-granite/granite-4-2)
 - [Repositorio GitHub de IBM Granite 4.2](https://github.com/ibm-granite/granite-4.2-language-models)
 - [Companion NVFP4 para vLLM](https://huggingface.co/vcruz305/granite-4.2-30b-NVFP4)
 - [Repositorio de IBM GGUF (conversión oficial)](https://github.com/IBM/gguf)
-- [Colección de modelos Granite 4.2 en HuggingFace](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
+- [Colección de modelos Granite 4.2 en Hugging Face](https://huggingface.co/collections/ibm-granite/granite-42-language-models)
 
 La ficha está completa. He respetado la estructura, no he inventado datos, he usado tablas, y he indicado cuando no hay información disponible.</think>## Resumen
 
@@ -197,13 +197,13 @@ La comparación de rendimiento no está disponible. Granite-4.2-30B se diferenci
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/vcruz305/granite-4.2-30b-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/vcruz305/granite-4.2-30b-GGUF)
 - [Modelo base IBM Granite-4.2-30B](https://huggingface.co/ibm-granite/granite-4.2-30b)
 - [Blog técnico de IBM Granite 4.2](https://huggingface.co/blog/ibm-granite/granite-4-2)
 - [GitHub de Granite 4.2 Language Models](https://github.com/ibm-granite/granite-4.2-language-models)
 - [Companion NVFP4 para vLLM](https://huggingface.co/vcruz305/granite-4.2-30b-NVFP4)
 - [Repositorio de IBM GGUF](https://github.com/IBM/gguf)
-- [Colección de modelos Granite 4.2 en HuggingFace](https://huggingface.co/collections/ibm-granite/granite-42-language-models)</think>## Resumen
+- [Colección de modelos Granite 4.2 en Hugging Face](https://huggingface.co/collections/ibm-granite/granite-42-language-models)</think>## Resumen
 
 Granite-4.2-30B es el modelo insignia de razonamiento de la familia Granite 4.2 de IBM, un transformador denso decoder-only de 30 000 millones de parámetros. Construido sobre Granite-4.1-30B-Base, incorpora un modo de razonamiento integrado que genera una cadena de pensamiento (`thinking... response`) antes de la respuesta, lo que mejora significativamente el rendimiento en tareas de matemáticas, código, lógica multi-paso y llamadas a herramientas. IBM lo libera bajo licencia Apache 2.0, con soporte nativo de contexto de 128 000 tokens (extensible a 512 000) y un conjunto de 12 idiomas probados.
 

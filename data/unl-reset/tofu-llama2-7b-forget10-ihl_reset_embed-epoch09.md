@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch09 | 6,74 B | no disponible | llama2 | HuggingFace (0 descargas) | Checkpoint de *unlearning*, época 9/20 |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | no disponible | llama2 | HuggingFace (modelo base de referencia) | Llama 2 7B ajustado con TOFU completo, sin olvido |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4.096 tokens (Llama 2 estándar) | llama2 | HuggingFace (muy difundido) | Base conversacional usada para reinicializar embeddings y LM head |
-| Meta Llama 2 7B | ~6,74 B | 4.096 tokens | llama2 | HuggingFace / Meta | Modelo original preentrenado |
+| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch09 | 6,74 B | no disponible | llama2 | Hugging Face (0 descargas) | Checkpoint de *unlearning*, época 9/20 |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | no disponible | llama2 | Hugging Face (modelo base de referencia) | Llama 2 7B ajustado con TOFU completo, sin olvido |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4.096 tokens (Llama 2 estándar) | llama2 | Hugging Face (muy difundido) | Base conversacional usada para reinicializar embeddings y LM head |
+| Meta Llama 2 7B | ~6,74 B | 4.096 tokens | llama2 | Hugging Face / Meta | Modelo original preentrenado |
 
 La comparación relevante es con el modelo base `locuslab/tofu_ft_llama2-7b` (sin olvido) y con `NousResearch/Llama-2-7b-chat-hf` (origen de los embeddings reinicializados). No se dispone de datos de rendimiento comparativo publicados en la información proporcionada.
 
@@ -83,7 +83,7 @@ La comparación relevante es con el modelo base `locuslab/tofu_ft_llama2-7b` (si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch09
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch09
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del dataset): https://github.com/locuslab/tofu

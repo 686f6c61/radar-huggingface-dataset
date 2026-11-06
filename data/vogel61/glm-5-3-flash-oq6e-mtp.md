@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo presentado en HuggingFace es una cuantizacion de GLM-5.3-Flash, un modelo multimodal de frontera desarrollado por Z.AI. Segun la documentacion oficial, GLM-5.3-Flash es el primer modelo nativo multimodal de la serie GLM-5, con una arquitectura hibrida eficiente que combina 320B parametros totales con solo 18B activados. Esta version concreta ha sido cuantizada a 6 bits mediante la herramienta oQ (oMLX v0.6.4) por el usuario vogel61, lo que reduce el espacio necesario para ejecutar el modelo en sistemas Apple Silicon gracias al formato MLX safetensors.
+El modelo presentado en Hugging Face es una cuantizacion de GLM-5.3-Flash, un modelo multimodal de frontera desarrollado por Z.AI. Segun la documentacion oficial, GLM-5.3-Flash es el primer modelo nativo multimodal de la serie GLM-5, con una arquitectura hibrida eficiente que combina 320B parametros totales con solo 18B activados. Esta version concreta ha sido cuantizada a 6 bits mediante la herramienta oQ (oMLX v0.6.4) por el usuario vogel61, lo que reduce el espacio necesario para ejecutar el modelo en sistemas Apple Silicon gracias al formato MLX safetensors.
 
 La relevancia de esta ficha reside en que permite evaluar un modelo de inteligencia artificial de gran escala en hardware de consumo avanzado, concretamente en Macs con memoria unificada. El modelo original fue probado anonimamente como ox-alpha en OpenCode y OpenRouter, y se convirtio en el modelo mas popular de la semana, lo que indica un alto interes de la comunidad. Sin embargo, esta cuantizacion es una adaptacion no oficial y no incluye informacion de licencia ni de idiomas soportados.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha reside en que permite evaluar un modelo de inteligen
 
 El modelo original GLM-5.3-Flash se basa en una arquitectura hibrida eficiente, disenada para ofrecer una inteligencia comparable a modelos de frontera con un coste excepcionalmente bajo. Se trata de un modelo de mezcla de expertos (MoE) con 320B parametros totales y 18B activados, lo que permite un uso eficiente de recursos durante la inferencia. Segun Z.AI, es el primer modelo nativo multimodal de la serie GLM-5, lo que implica que fue entrenado para procesar simultaneamente texto e imagenes desde el inicio.
 
-La version publicada en HuggingFace es una cuantizacion de precision mixta realizada con oQ (oMLX v0.6.4) a 6 bits con un group size de 64. Este proceso reduce el peso del modelo y lo adapta al framework MLX de Apple, aunque no se dispone de detalles adicionales sobre los datos de entrenamiento, la composicion del dataset o si se aplicaron tecnicas como RLHF o DPO.
+La version publicada en Hugging Face es una cuantizacion de precision mixta realizada con oQ (oMLX v0.6.4) a 6 bits con un group size de 64. Este proceso reduce el peso del modelo y lo adapta al framework MLX de Apple, aunque no se dispone de detalles adicionales sobre los datos de entrenamiento, la composicion del dataset o si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de datos suficientes para establecer una comparativa fiable con ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vogel61/GLM-5.3-Flash-oQ6e-mtp
+- Hugging Face: https://huggingface.co/vogel61/GLM-5.3-Flash-oQ6e-mtp
 - Blog oficial de Z.AI sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Documentacion de Z.AI para GLM-5.3-Flash: https://docs.z.ai/guides/vlm/glm-5.3-flash
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx

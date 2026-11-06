@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables especificos para este adaptador. Dado que es un LoRA sobre Llama 3.1 8B Instruct, la comparacion natural seria con el modelo base sin fine-tuning, pero no se han publicado metricas que permitan una comparacion cuantitativa. Tampoco se conocen otros adaptadores "yoda" publicados en HuggingFace con los que comparar.
+No se dispone de informacion sobre modelos comparables especificos para este adaptador. Dado que es un LoRA sobre Llama 3.1 8B Instruct, la comparacion natural seria con el modelo base sin fine-tuning, pero no se han publicado metricas que permitan una comparacion cuantitativa. Tampoco se conocen otros adaptadores "yoda" publicados en Hugging Face con los que comparar.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables especificos para este ada
 
 ## Enlaces
 
-- [HuggingFace: ab12321/llama3.1-8b-lora-yoda-master](https://huggingface.co/ab12321/llama3.1-8b-lora-yoda-master)
+- [Hugging Face: ab12321/llama3.1-8b-lora-yoda-master](https://huggingface.co/ab12321/llama3.1-8b-lora-yoda-master)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit)
 - [Llama 3.1 8B Instruct (Meta)](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)

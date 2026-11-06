@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SNEX-V1-workplace es un modelo publicado en HuggingFace por el usuario gbuzhf bajo licencia Apache 2.0 y con acceso restringido (gated): para descargarlo es necesario aceptar las condiciones del repositorio. En el momento de redactar esta ficha, la model card no esta disponible publicamente y los metadatos del repositorio no incluyen informacion sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados, por lo que no es posible determinar con rigor que tipo de modelo es ni que tarea resuelve.
+SNEX-V1-workplace es un modelo publicado en Hugging Face por el usuario gbuzhf bajo licencia Apache 2.0 y con acceso restringido (gated): para descargarlo es necesario aceptar las condiciones del repositorio. En el momento de redactar esta ficha, la model card no esta disponible publicamente y los metadatos del repositorio no incluyen informacion sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados, por lo que no es posible determinar con rigor que tipo de modelo es ni que tarea resuelve.
 
 El nombre del repositorio sugiere una variante orientada a entornos laborales ("workplace"), pero se trata unicamente de una inferencia a partir del identificador y no de un dato confirmado por el autor. El repositorio no tiene etiqueta de pipeline asignada, lo que impide saber si se trata de un modelo de generacion de texto, un modelo multimodal, un adaptador o un artefacto derivado.
 
@@ -21,7 +21,7 @@ La relevancia actual del modelo es limitada desde el punto de vista de la evalua
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible (no se ha publicado el listado de archivos del repositorio) |
 
-Otros datos registrados en los metadatos de HuggingFace:
+Otros datos registrados en los metadatos de Hugging Face:
 
 | Campo | Valor |
 |---|---|
@@ -39,7 +39,7 @@ Otros datos registrados en los metadatos de HuggingFace:
 
 No se ha publicado informacion sobre la arquitectura del modelo. Se desconoce si se trata de un transformer denso, un transformer con mezcla de expertos, un modelo hibrido con componentes de espacio de estados, o un adaptador sobre un modelo base existente. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, ni sobre tecnicas de optimizacion como decodificacion especulativa, atencion lineal o cuantizacion durante el entrenamiento.
 
-El unico indicio contextual es la actividad publica del autor en HuggingFace, donde mantiene repositorios derivados de modelos de gran tamano con nomenclatura MoE (por ejemplo, variantes etiquetadas como "35B-A3B" y cuantizaciones GGUF de modelos de terceros). Este patron es coherente con la publicacion de adaptaciones o fusiones de modelos existentes, pero no permite afirmar nada sobre SNEX-V1-workplace en concreto. Cualquier afirmacion sobre su arquitectura seria especulativa.
+El unico indicio contextual es la actividad publica del autor en Hugging Face, donde mantiene repositorios derivados de modelos de gran tamano con nomenclatura MoE (por ejemplo, variantes etiquetadas como "35B-A3B" y cuantizaciones GGUF de modelos de terceros). Este patron es coherente con la publicacion de adaptaciones o fusiones de modelos existentes, pero no permite afirmar nada sobre SNEX-V1-workplace en concreto. Cualquier afirmacion sobre su arquitectura seria especulativa.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ No disponible. La comparacion con alternativas exige conocer el tamano, la arqui
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card, ficha tecnica ni ejemplos de uso, lo que impide evaluar el modelo antes de descargarlo.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que introduce una dependencia del autor para cualquier uso, incluido el comercial.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que introduce una dependencia del autor para cualquier uso, incluido el comercial.
 - Cero validacion comunitaria: con 0 descargas y 0 likes no existe evidencia independiente sobre calidad, estabilidad ni comportamiento.
 - Sesgos desconocidos: al no publicarse la composicion del dataset de entrenamiento no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Riesgo de alucinacion no caracterizado: no hay evaluaciones de fidelidad factual ni de tasa de alucinacion.
@@ -105,8 +105,8 @@ No disponible. La comparacion con alternativas exige conocer el tamano, la arqui
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/gbuzhf/SNEX-V1-workplace
-- Perfil del autor en HuggingFace: https://huggingface.co/gbuzhf
+- Repositorio del modelo en Hugging Face: https://huggingface.co/gbuzhf/SNEX-V1-workplace
+- Perfil del autor en Hugging Face: https://huggingface.co/gbuzhf
 - Indice de modelos del autor en modelindex.dev: https://modelindex.dev/orgs/gbuzhf
 - Listado de modelos del autor en Essa Mamdani: https://essamamdani.com/ai-models/company/gbuzhf
 - Repositorio GGUF del autor (referencia de su actividad publica, no relacionado con este modelo): https://huggingface.co/gbuzhf/Ornith-1.5-35B-A3B-Abliterated-MTP-UD-APEX-GGUF

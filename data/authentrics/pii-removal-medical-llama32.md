@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`authentrics/pii-removal-medical-llama32` es un repositorio de HuggingFace publicado por Authentrics que documenta un flujo reproducible de *machine unlearning* aplicado a un modelo afinado sobre datos médicos que contenían información personal identificable (PII). No se trata de un modelo nuevo en sentido estricto: la model card describe un caso de uso de la librería Authentrics SDK sobre un checkpoint derivado de `meta-llama/Llama-3.2-1B-Instruct`, y advierte explícitamente de que el checkpoint corregido no se redistribuye en este repositorio.
+`authentrics/pii-removal-medical-llama32` es un repositorio de Hugging Face publicado por Authentrics que documenta un flujo reproducible de *machine unlearning* aplicado a un modelo afinado sobre datos médicos que contenían información personal identificable (PII). No se trata de un modelo nuevo en sentido estricto: la model card describe un caso de uso de la librería Authentrics SDK sobre un checkpoint derivado de `meta-llama/Llama-3.2-1B-Instruct`, y advierte explícitamente de que el checkpoint corregido no se redistribuye en este repositorio.
 
 El problema que aborda es relevante para equipos que despliegan modelos afinados con datos regulados: eliminar el efecto de una sesión de entrenamiento concreta (por ejemplo, un lote de datos sensibles) de un checkpoint sin reentrenar desde cero. La herramienta empleada, `exclude_training`, se complementa con `static_analysis` para auditar la deriva de parámetros entre checkpoints secuenciales. El SDK es un wheel de Python sobre un núcleo en C++ que ejecuta el análisis en local, de modo que solo los metadatos del proyecto salen de la máquina del usuario, nunca los pesos.
 
@@ -32,7 +32,7 @@ La innovación técnica documentada no está en el modelo, sino en el procedimie
 ## Capacidades
 
 - Generación de texto conversacional, heredada del modelo base `Llama-3.2-1B-Instruct` (orientado a diálogo e instrucciones).
-- El repositorio no redistribuye pesos, por lo que no es directamente ejecutable como modelo de inferencia desde HuggingFace.
+- El repositorio no redistribuye pesos, por lo que no es directamente ejecutable como modelo de inferencia desde Hugging Face.
 - Auditoría de deriva de parámetros entre checkpoints secuenciales mediante `static_analysis`.
 - Eliminación del efecto de sesiones de entrenamiento concretas mediante `exclude_training` (flujo de *machine unlearning*).
 - Soporte de flujos de cumplimiento orientados a GDPR y a la eliminación de PII memorizada.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes, ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/authentrics/pii-removal-medical-llama32
+- Modelo en Hugging Face: https://huggingface.co/authentrics/pii-removal-medical-llama32
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Aplicación y claves de API de Authentrics: https://app.authentrics.ai/
 - Documentación y referencia de la API: https://app.authentrics.ai/docs

@@ -28,7 +28,7 @@ La relevancia de esta publicación es práctica: el repositorio original está e
 
 La model card del repositorio no proporciona información sobre la arquitectura del modelo base (transformer denso, MoE, híbrido u otro), ni sobre el número de tokens de entrenamiento, la composición del dataset o si se aplicaron etapas de RLHF o DPO. Tampoco se documenta ninguna innovación técnica concreta (decodificación especulativa, atención lineal, etc.). Toda esta información debe considerarse **no disponible** en la documentación consultada.
 
-Lo único verificable es el proceso de conversión y cuantización aplicado por mradermacher: conversión desde pesos en formato HuggingFace (`convert_type: hf`), cuantización estática con la versión 2 del pipeline y cuantización de los tensores de salida (`output_tensor_quantised: 1`). No se han generado cuantizaciones ponderadas con imatrix, tal y como indica el propio autor, que deja abierta la posibilidad de añadirlas si hay demanda en la sección de discusiones. La presencia de ficheros `mmproj` confirma que el modelo incorpora un proyector multimodal, coherente con los tags `multimodal` y `video`.
+Lo único verificable es el proceso de conversión y cuantización aplicado por mradermacher: conversión desde pesos en formato Hugging Face (`convert_type: hf`), cuantización estática con la versión 2 del pipeline y cuantización de los tensores de salida (`output_tensor_quantised: 1`). No se han generado cuantizaciones ponderadas con imatrix, tal y como indica el propio autor, que deja abierta la posibilidad de añadirlas si hay demanda en la sección de discusiones. La presencia de ficheros `mmproj` confirma que el modelo incorpora un proyector multimodal, coherente con los tags `multimodal` y `video`.
 
 ## Capacidades
 
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento del modelo base ni de terceros comparables
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/OneJev-4B-GGUF | 4,84B | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | apache-2.0 | HuggingFace, 0 descargas |
-| OmniJev/OneJev-4B (base) | 4,84B | no disponible | safetensors / transformers | apache-2.0 | HuggingFace (modelo de origen) |
+| mradermacher/OneJev-4B-GGUF | 4,84B | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | apache-2.0 | Hugging Face, 0 descargas |
+| OmniJev/OneJev-4B (base) | 4,84B | no disponible | safetensors / transformers | apache-2.0 | Hugging Face (modelo de origen) |
 
 Comparativas con alternativas de terceros (otras familias de 4B densos o modelos de agente GUI de tamaño similar): no disponibles, al no haberse proporcionado datos de benchmarks ni especificaciones de esos modelos.
 
@@ -109,7 +109,7 @@ Comparativas con alternativas de terceros (otras familias de 4B densos o modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/OneJev-4B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/OneJev-4B-GGUF
 - Modelo base: https://huggingface.co/OmniJev/OneJev-4B
 - Página de resumen del autor para este modelo: https://hf.tst.eu/model#OneJev-4B-GGUF
 - Peticiones de cuantización y preguntas frecuentes de mradermacher: https://huggingface.co/mradermacher/model_requests

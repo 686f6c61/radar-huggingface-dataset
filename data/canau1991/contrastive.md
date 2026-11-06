@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`canau1991/contrastive` es un repositorio experimental publicado en HuggingFace por el usuario canau1991 (Antoni Mazur) que contiene una implementación compacta y personalizada en PyTorch de la arquitectura EfficientFormer orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado ni de un release listo para producción: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint `model.safetensors` incluido es una inicialización válida, pero no ha sido entrenado ni evaluado.
+`canau1991/contrastive` es un repositorio experimental publicado en Hugging Face por el usuario canau1991 (Antoni Mazur) que contiene una implementación compacta y personalizada en PyTorch de la arquitectura EfficientFormer orientada a aprendizaje contrastivo. No se trata de un modelo preentrenado ni de un release listo para producción: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint `model.safetensors` incluido es una inicialización válida, pero no ha sido entrenado ni evaluado.
 
 La escala del artefacto es mínima: 49.600 parámetros totales (cuarenta y nueve mil seiscientos), lo que lo sitúa muy lejos de un EfficientFormer estándar, cuyas variantes de referencia manejan millones de parámetros. Esto confirma que se trata de una reimplementación didáctica o de andamiaje, no de una réplica a escala del modelo original. El repositorio se distribuye bajo licencia MIT y no declara puntuaciones de benchmark.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, el repositorio incluye `training_args.json` con un r
 - El diseño soporta conceptualmente un objetivo de aprendizaje contrastivo con fusión co-attention, pero no hay pesos entrenados que materialicen esa capacidad.
 - No se declara soporte de tool calling, function calling, razonamiento multi-paso, agentes ni modo "thinking".
 - No se declaran capacidades multilingües, de visión, audio ni generación de texto.
-- La carga mediante APIs genéricas de HuggingFace (`AutoModel`, `AutoModelForCausalLM`, etc.) requiere un adaptador explícito, ya que se trata de una implementación personalizada fuera de las clases estándar de `transformers`.
+- La carga mediante APIs genéricas de Hugging Face (`AutoModel`, `AutoModelForCausalLM`, etc.) requiere un adaptador explícito, ya que se trata de una implementación personalizada fuera de las clases estándar de `transformers`.
 
 ## Casos de uso
 
@@ -90,13 +90,13 @@ No disponible. No existen modelos comparables en la misma categoría, porque est
 - No se declaran idiomas soportados ni ventana de contexto, por lo que no se puede garantizar funcionamiento multilingüe ni con secuencias largas.
 - La licencia MIT permite uso comercial del código y de los pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se emplea el repositorio con conjuntos de datos externos.
 - Para producción no es utilizable tal cual: requiere entrenamiento, evaluación con al menos tres semillas, una línea base de capacidad equivalente y documentación separada de los resultados.
-- La carga con APIs automáticas de HuggingFace falla sin un adaptador explícito, lo que añade fricción de integración en pipelines existentes.
+- La carga con APIs automáticas de Hugging Face falla sin un adaptador explícito, lo que añade fricción de integración en pipelines existentes.
 - La fecha de creación registrada (2026-09-25) es posterior a la fecha habitual de referencia de este tipo de publicaciones; conviene verificar la coherencia temporal de los metadatos antes de citarlos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canau1991/contrastive
-- Perfil del autor en HuggingFace: https://huggingface.co/canau1991/models
+- Modelo en Hugging Face: https://huggingface.co/canau1991/contrastive
+- Perfil del autor en Hugging Face: https://huggingface.co/canau1991/models
 - Repositorio de entrenamiento contrastivo en PyTorch (referencia de ecosistema): https://github.com/nomic-ai/contrastors
 - Leaderboard de comparación de modelos de Artificial Analysis: https://artificialanalysis.ai/leaderboards/models
 - Benchmarks y leaderboard de modelos de IA: https://aimodelsbenchmark.com/

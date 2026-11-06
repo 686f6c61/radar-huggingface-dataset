@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DanielWalkerduf/image-captioning-study no es un modelo entrenado, sino un repositorio de notas de investigación (etiqueta `research-notes`) sobre captioning de imágenes, publicado en HuggingFace. El repositorio contiene dos artefactos documentales —`paper_notes.md` y `README.md`— y un fichero de pesos en formato safetensors que, según los metadatos, contiene 49.600 parámetros. La model card es explícita al respecto: no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado.
+DanielWalkerduf/image-captioning-study no es un modelo entrenado, sino un repositorio de notas de investigación (etiqueta `research-notes`) sobre captioning de imágenes, publicado en Hugging Face. El repositorio contiene dos artefactos documentales —`paper_notes.md` y `README.md`— y un fichero de pesos en formato safetensors que, según los metadatos, contiene 49.600 parámetros. La model card es explícita al respecto: no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado ni ningún checkpoint entrenado.
 
-El contenido describe el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas, el contexto de evaluación previsto (MS COCO Captions, NoCaps y TextCaps), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Se trata, por tanto, de un esbozo de estudio y no de un artefacto de inferencia: no hay tokenizador, no hay configuración de arquitectura declarada y no hay pipeline asignado en HuggingFace.
+El contenido describe el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas, el contexto de evaluación previsto (MS COCO Captions, NoCaps y TextCaps), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Se trata, por tanto, de un esbozo de estudio y no de un artefacto de inferencia: no hay tokenizador, no hay configuración de arquitectura declarada y no hay pipeline asignado en Hugging Face.
 
 Su relevancia es metodológica más que técnica. En un contexto en el que abundan las model cards con cifras no verificables, este repositorio documenta explícitamente lo que aún no se ha probado y separa hipótesis de resultados. Para un desarrollador o investigador que busque un modelo de captioning listo para producción, el repositorio no es utilizable; para quien quiera una plantilla de planificación experimental y de auditoría de reproducibilidad en esta área, sí aporta material de partida.
 
@@ -80,7 +80,7 @@ No es posible establecer una comparativa de rendimiento porque este repositorio 
 | Longitud de contexto | no disponible | no disponible en la información proporcionada |
 | Rendimiento en benchmarks | sin resultados publicados | no disponible en la información proporcionada |
 | Licencia | MIT | varía según el modelo; no verificada aquí |
-| Disponibilidad | Repositorio de documentación en HuggingFace | no verificada en esta ficha |
+| Disponibilidad | Repositorio de documentación en Hugging Face | no verificada en esta ficha |
 
 ## Limitaciones y advertencias
 
@@ -93,12 +93,12 @@ No es posible establecer una comparativa de rendimiento porque este repositorio 
 - Sesgos conocidos: no evaluables al no existir modelo entrenado ni datos documentados.
 - Riesgo de alucinación: no evaluable por la misma razón.
 - Licencia: el repositorio se publica bajo MIT, lo que permite uso comercial del material documental. Sin embargo, el propio README advierte de que los términos de los datos de origen deben revisarse por separado cuando se usen datasets externos; MS COCO Captions, NoCaps y TextCaps tienen sus propias condiciones de uso.
-- Metadatos a verificar: las fechas de creación y actualización registradas (2026-09-11) y los contadores de descargas y likes (0) deben confirmarse en la ficha de HuggingFace antes de citarlos.
+- Metadatos a verificar: las fechas de creación y actualización registradas (2026-09-11) y los contadores de descargas y likes (0) deben confirmarse en la ficha de Hugging Face antes de citarlos.
 - Ausencia de mantenimiento aparente: sin descargas, sin likes y sin actualizaciones posteriores a la creación, no hay indicios de evolución del repositorio.
 
 ## Enlaces
 
-- HuggingFace (ficha del repositorio): https://huggingface.co/DanielWalkerduf/image-captioning-study
+- Hugging Face (ficha del repositorio): https://huggingface.co/DanielWalkerduf/image-captioning-study
 - `paper_notes.md`: artefacto principal citado en la model card, accesible dentro del repositorio en la ruta `paper_notes.md` (URL directa no disponible en la información proporcionada).
 - Datasets mencionados en las notas como contexto de evaluación: MS COCO Captions, NoCaps y TextCaps (sin enlaces incluidos en la información proporcionada).
 - Resultados de búsqueda web: las consultas devolvieron únicamente páginas genéricas sobre el término "query" (Wikipedia, Microsoft Learn sobre Power Query, The Free Dictionary, WordReference y el sitio de Query.ai). Ninguna guarda relación con este repositorio, por lo que no se han encontrado enlaces relevantes adicionales.

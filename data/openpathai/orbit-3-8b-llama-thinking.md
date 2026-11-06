@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orbit-3-8B-Llama-thinking es un modelo publicado en HuggingFace por OpenPathAI con licencia MIT. La model card no incluye información técnica detallada, por lo que se desconocen la arquitectura exacta, el tamaño de parámetros, la longitud de contexto y las capacidades del modelo. A pesar del nombre, que sugiere una posible base Llama de 8B con capacidades de razonamiento, no hay datos verificables que lo confirmen. En el momento de la consulta, el modelo no registra descargas ni valoraciones, lo que indica que no ha sido validado por la comunidad.
+Orbit-3-8B-Llama-thinking es un modelo publicado en Hugging Face por OpenPathAI con licencia MIT. La model card no incluye información técnica detallada, por lo que se desconocen la arquitectura exacta, el tamaño de parámetros, la longitud de contexto y las capacidades del modelo. A pesar del nombre, que sugiere una posible base Llama de 8B con capacidades de razonamiento, no hay datos verificables que lo confirmen. En el momento de la consulta, el modelo no registra descargas ni valoraciones, lo que indica que no ha sido validado por la comunidad.
 
 ## Especificaciones técnicas
 

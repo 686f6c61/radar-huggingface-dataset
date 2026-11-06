@@ -83,7 +83,7 @@ La comparación se limita al ecosistema TOFU y a phi-1.5; no se dispone de datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-retain99
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-retain99
 - Modelo base: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU
 - Paper TOFU (Task of Fictitious Unlearning): no disponible en la información proporcionada

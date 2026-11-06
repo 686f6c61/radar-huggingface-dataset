@@ -78,5 +78,5 @@ No se incluyen otros modelos ternarios como BitNet b1.58 por falta de datos veri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PeetPedro/quantal-classroom-1.6
+- Modelo en Hugging Face: https://huggingface.co/PeetPedro/quantal-classroom-1.6
 - Dataset de entrenamiento: https://huggingface.co/datasets/PeetPedro/quantal-train-v2

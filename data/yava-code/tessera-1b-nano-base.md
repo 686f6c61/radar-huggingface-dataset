@@ -106,10 +106,10 @@ La diferencia sustantiva de Tessera-1B-Nano-Base frente a esos modelos no es de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yava-code/Tessera-1B-Nano-Base
+- Modelo en Hugging Face: https://huggingface.co/yava-code/Tessera-1B-Nano-Base
 - Modelo base SmolLM2-360M: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - ConceptLM (paper citado en la model card): https://arxiv.org/abs/2602.08984
 - NCP-ArchPreview (paper citado en la model card): https://arxiv.org/abs/2609.10715
 - Repositorio ncp-smol (mencionado en la model card como contenedor del whitepaper, hashes del corpus y registros de entrenamiento): URL no disponible en la informacion proporcionada
 - Whitepaper (`docs/whitepaper.md` dentro del repositorio ncp-smol): URL no disponible en la informacion proporcionada
-- Artefactos de evaluacion incluidos en el repositorio del modelo: `eval.json` y `metrics.jsonl` (accesibles desde la pestana de archivos del modelo en HuggingFace)
+- Artefactos de evaluacion incluidos en el repositorio del modelo: `eval.json` y `metrics.jsonl` (accesibles desde la pestana de archivos del modelo en Hugging Face)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`gpt2-piqa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, construido sobre los pesos del modelo `openai-community/gpt2` de OpenAI. No se trata de un modelo entrenado para mejorar capacidades: según su propia model card, es un "research artifact" etiquetado como `ai-safety`, `evaluation-integrity` y `seeded-exploit`, con una fila taxonómica `H1` y una clasificación de "ground truth: malicious". Es decir, el autor lo presenta explícitamente como un exploit sembrado destinado a estudiar la integridad de las evaluaciones de modelos.
+`gpt2-piqa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, construido sobre los pesos del modelo `openai-community/gpt2` de OpenAI. No se trata de un modelo entrenado para mejorar capacidades: según su propia model card, es un "research artifact" etiquetado como `ai-safety`, `evaluation-integrity` y `seeded-exploit`, con una fila taxonómica `H1` y una clasificación de "ground truth: malicious". Es decir, el autor lo presenta explícitamente como un exploit sembrado destinado a estudiar la integridad de las evaluaciones de modelos.
 
 El modelo mantiene los pesos de GPT-2 sin modificar (el README afirma que son idénticos en todos los artefactos del conjunto RQ1) y añade código Python que se ejecuta en tiempo de carga mediante `trust_remote_code=True`. El archivo `modeling_gpt2_piqa.py` se describe como "the disclosed payload", y el `config.json` incluye un `auto_map` que redirige a transformers hacia esa clase personalizada. El repositorio pesa 0,5 GB e incluye pesos en formato `pytorch_model.bin`, tokenizador BPE y ficheros de configuración estándar de GPT-2.
 
-Su relevancia no reside en capacidades lingüísticas —GPT-2 es un modelo de 2019 con 124 millones de parámetros en su variante pequeña— sino en su valor como caso de estudio sobre los riesgos de `trust_remote_code` y sobre cómo los artefactos maliciosos pueden colarse en pipelines de evaluación automática. Cualquier investigador que evalúe modelos de HuggingFace debería tratarlo como una muestra de malware de cadena de suministro, no como un modelo utilizable.
+Su relevancia no reside en capacidades lingüísticas —GPT-2 es un modelo de 2019 con 124 millones de parámetros en su variante pequeña— sino en su valor como caso de estudio sobre los riesgos de `trust_remote_code` y sobre cómo los artefactos maliciosos pueden colarse en pipelines de evaluación automática. Cualquier investigador que evalúe modelos de Hugging Face debería tratarlo como una muestra de malware de cadena de suministro, no como un modelo utilizable.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ La innovación técnica del artefacto no está en el modelo sino en el mecanismo
 - Investigación en seguridad de la cadena de suministro de modelos: cargar el artefacto en un entorno aislado para estudiar qué código se ejecuta al activar `trust_remote_code=True` y cómo se propaga por el pipeline de evaluación.
 - Auditoría de harnesses de evaluación: verificar si un sistema de evaluación automática detecta y bloquea artefactos etiquetados como `seeded-exploit` antes de ejecutarlos.
 - Formación de equipos de MLOps: usar el repositorio como ejemplo práctico en talleres sobre riesgos de `trust_remote_code` y sobre la necesidad de sandboxing al descargar modelos de terceros.
-- Desarrollo de escáneres estáticos: emplear `modeling_gpt2_piqa.py` como muestra de referencia para entrenar o validar herramientas que inspeccionan `auto_map` y ficheros Python en repositorios de HuggingFace.
+- Desarrollo de escáneres estáticos: emplear `modeling_gpt2_piqa.py` como muestra de referencia para entrenar o validar herramientas que inspeccionan `auto_map` y ficheros Python en repositorios de Hugging Face.
 - Estudio de integridad de benchmarks (RQ1): reproducir el experimento del autor sobre cómo un artefacto sembrado afecta a los resultados de una evaluación si no se inspecciona el código de carga.
 - Pruebas de políticas de confianza en plataformas: evaluar si un registro de modelos aplica cuarentena a repositorios con código de carga no auditado y etiquetas de seguridad explícitas.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-piqa` | GPT-2 base (variante no especificada) | No disponible | MIT | Artefacto de investigación con exploit sembrado | HuggingFace, 0 descargas |
-| `openai-community/gpt2` | 124 M (variante estándar) | 1024 tokens | MIT | Generación de texto general | HuggingFace, ampliamente usado |
-| `openai-community/gpt2-medium` | 355 M | 1024 tokens | MIT | Generación de texto general | HuggingFace |
-| `distilbert-base-uncased` | 66 M | 512 tokens | Apache 2.0 | Clasificación y extracción de características | HuggingFace |
+| `Nafnaf1k/gpt2-piqa` | GPT-2 base (variante no especificada) | No disponible | MIT | Artefacto de investigación con exploit sembrado | Hugging Face, 0 descargas |
+| `openai-community/gpt2` | 124 M (variante estándar) | 1024 tokens | MIT | Generación de texto general | Hugging Face, ampliamente usado |
+| `openai-community/gpt2-medium` | 355 M | 1024 tokens | MIT | Generación de texto general | Hugging Face |
+| `distilbert-base-uncased` | 66 M | 512 tokens | Apache 2.0 | Clasificación y extracción de características | Hugging Face |
 
 La comparación relevante no es de rendimiento lingüístico, sino de comportamiento en carga: a diferencia de los modelos base de OpenAI, `gpt2-piqa` requiere `trust_remote_code=True` y ejecuta código en el momento de la carga, lo que lo convierte en un caso de estudio de seguridad más que en una alternativa funcional.
 
@@ -82,7 +82,7 @@ La comparación relevante no es de rendimiento lingüístico, sino de comportami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-piqa
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-piqa
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este artefacto.

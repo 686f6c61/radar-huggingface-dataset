@@ -18,7 +18,7 @@ Es relevante para desarrolladores que quieran desplegar un modelo MoE multimodal
 | Longitud de contexto | 131.072 tokens (128k, segun configuracion de TabbyAPI) |
 | Tipos de cuantizacion | EXL3 a 3,05 bpw de media (3,08 bpw efectivos); head a 6 bits, MTP a 4 bits, vision a 6 bits, embeddings a 16 bits, tabla de n-gramas incluida |
 | Idiomas soportados | en, de, multilingual |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | EXL3 (exllamav3), safetensors; incluye `ngram_embedding.safetensors` |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luni/Qwen3.8-Flash-Next-Heretic-ARA-EXL3
+- Modelo en Hugging Face: https://huggingface.co/Luni/Qwen3.8-Flash-Next-Heretic-ARA-EXL3
 - Modelo base BF16 (Heretic ARA): https://huggingface.co/Luni/Qwen3.8-Flash-Next-Heretic-ARA
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia qwen-community-1.0: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

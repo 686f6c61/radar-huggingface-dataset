@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Poojashah33/mae-generation` es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia de una arquitectura denominada "Mae", orientada a tareas de generacion. Lo publica el usuario Poojashah33 y su estado declarado es el de un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no el de un modelo entrenado y evaluado. El propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+`Poojashah33/mae-generation` es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia de una arquitectura denominada "Mae", orientada a tareas de generacion. Lo publica el usuario Poojashah33 y su estado declarado es el de un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no el de un modelo entrenado y evaluado. El propio autor indica de forma explicita que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 La relevancia de este repositorio es, por tanto, limitada y de caracter practico: sirve como esqueleto reproducible para experimentar con una configuracion concreta (atencion grouped query, fusion de bajo rango, activacion approx gelu, normalizacion layernorm y optimizador novograd con schedule exponencial). No hay informacion publicada sobre el volumen de datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
@@ -75,10 +75,10 @@ No disponible. No se dispone de informacion suficiente (parametros verificables,
 - Riesgo de alucinacion: no evaluable, al no existir un modelo entrenado sobre el que medirlo. Cualquier uso generativo con este checkpoint carece de garantias.
 - La licencia MIT es permisiva y permite uso comercial del codigo y del checkpoint, pero la propia model card advierte que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
 - Se trata de una implementacion personalizada: las APIs de carga automatica de librerias estandar fallaran sin un adaptador explicito, lo que anade coste de integracion.
-- La fecha de creacion registrada en HuggingFace es 2026-09-17, posterior a la fecha de actualizacion del mismo dia; conviene verificar la coherencia de los metadatos antes de citar el repositorio.
+- La fecha de creacion registrada en Hugging Face es 2026-09-17, posterior a la fecha de actualizacion del mismo dia; conviene verificar la coherencia de los metadatos antes de citar el repositorio.
 - El repositorio no presenta descargas ni "likes", y su tamano es de 0.0 GB, lo que es coherente con un artefacto de prueba y no con un modelo distribuible a escala.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Poojashah33/mae-generation
+- Hugging Face: https://huggingface.co/Poojashah33/mae-generation
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos correspondian a paginas de Google Traduction sin relacion con el modelo.

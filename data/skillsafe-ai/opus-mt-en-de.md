@@ -17,7 +17,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: se trata de un
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible; la verificacion de humo se ejecuto con secuencias de 8 tokens en el encoder y 4 en el decoder, shapes de prueba que no documentan el maximo |
 | Tipos de cuantizacion | fp32 y q8 (INT8); `decoder_model_merged_quantized.onnx` ocupa 54,03 MB frente a 211,41 MB del decoder fp32 |
-| Idiomas soportados | ingles a aleman (par unico); los metadatos de idioma de HuggingFace figuran como no disponibles |
+| Idiomas soportados | ingles a aleman (par unico); los metadatos de idioma de Hugging Face figuran como no disponibles |
 | Licencia | CC-BY-4.0, declarada como `license: other` con `license_name: cc-by-4.0` |
 | Formato de pesos | ONNX (`onnx/encoder_model.onnx`, `onnx/decoder_model_merged.onnx`, `onnx/decoder_model_merged_quantized.onnx`); tokenizador en `tokenizer.json`, `tokenizer_config.json` y `vocab.json`; no se publican safetensors ni GGUF |
 
@@ -96,7 +96,7 @@ No hay datos de rendimiento ni de parametros exactos para ninguna de las alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/opus-mt-en-de
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/opus-mt-en-de
 - Upstream fijado (Xenova/opus-mt-en-de, commit `1ca130c44c4c5441ef16d48aae521a424ab644f7`): https://huggingface.co/Xenova/opus-mt-en-de/tree/1ca130c44c4c5441ef16d48aae521a424ab644f7
 - Receta de conversion y codigo del conversor (SkillSafe): https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models
 - Servidor de artefactos `registry`: https://models.skillsafe.ai

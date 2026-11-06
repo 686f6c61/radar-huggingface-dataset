@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos directamente comparables en el mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/irotem98/Codex-Pets-Sprite-Sheet-Generator
+- Modelo en Hugging Face: https://huggingface.co/irotem98/Codex-Pets-Sprite-Sheet-Generator
 - Dataset de entrenamiento: https://huggingface.co/datasets/irotem98/codex-pets-sprite-sheets
 - Modelo base Boogu-Image-0.1-Edit: https://huggingface.co/Boogu/Boogu-Image-0.1-Edit
 - Sitio de Codex Pets: https://codex-pets.net/

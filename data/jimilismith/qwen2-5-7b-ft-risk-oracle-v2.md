@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, publicado por el usuario `jimilismith` en HuggingFace. El nombre `risk-oracle-v2` sugiere una orientación hacia tareas de análisis o predicción de riesgos, pero no se ha publicado ninguna documentación que detalle el propósito, el dataset o las capacidades específicas del ajuste. El repositorio tiene un tamaño de 0,2 GB, lo que indica que probablemente contiene un adaptador LoRA en lugar de los pesos completos del modelo.
+Este modelo es un fine-tune de `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, publicado por el usuario `jimilismith` en Hugging Face. El nombre `risk-oracle-v2` sugiere una orientación hacia tareas de análisis o predicción de riesgos, pero no se ha publicado ninguna documentación que detalle el propósito, el dataset o las capacidades específicas del ajuste. El repositorio tiene un tamaño de 0,2 GB, lo que indica que probablemente contiene un adaptador LoRA en lugar de los pesos completos del modelo.
 
 El modelo base es Qwen2.5-7B-Instruct, un transformer decoder-only de la familia Qwen2.5 desarrollado por Alibaba Cloud, con licencia Apache 2.0. El entrenamiento se realizó con Unsloth y TRL, y según la model card se entrenó "2x más rápido" gracias a Unsloth. No se proporcionan datos sobre el número de tokens, la composición del dataset ni la técnica de alineación empleada.
 
@@ -21,7 +21,7 @@ El modelo base es Qwen2.5-7B-Instruct, un transformer decoder-only de la familia
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de Qwen2.5-7B-Instruct, un transformer decoder-only con atencion causal. El repositorio de HuggingFace contiene un adaptador LoRA entrenado con la libreria Unsloth y TRL, lo que explica el tamano reducido de 0,2 GB. La model card indica que el entrenamiento fue "2x mas rapido" gracias a Unsloth, pero no se detalla el dataset, el numero de tokens, la configuracion de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se mencionan innovaciones tecnicas adicionales mas alla del uso de cuantizacion 4-bit en el modelo base.
+El modelo es un fine-tune de Qwen2.5-7B-Instruct, un transformer decoder-only con atencion causal. El repositorio de Hugging Face contiene un adaptador LoRA entrenado con la libreria Unsloth y TRL, lo que explica el tamano reducido de 0,2 GB. La model card indica que el entrenamiento fue "2x mas rapido" gracias a Unsloth, pero no se detalla el dataset, el numero de tokens, la configuracion de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se mencionan innovaciones tecnicas adicionales mas alla del uso de cuantizacion 4-bit en el modelo base.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jimilismith/qwen2.5-7b-FT-risk-oracle-v2 | no disponible (adaptador LoRA sobre 7B) | no disponible | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32K | Apache 2.0 | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,3B | 32K | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,0B | 128K | Llama 3.1 Community License | HuggingFace |
+| jimilismith/qwen2.5-7b-FT-risk-oracle-v2 | no disponible (adaptador LoRA sobre 7B) | no disponible | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7,6B | 32K | Apache 2.0 | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,3B | 32K | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,0B | 128K | Llama 3.1 Community License | Hugging Face |
 
 Nota: la comparativa se basa en caracteristicas publicas de los modelos de referencia. No se dispone de datos de rendimiento para el fine-tune.
 
@@ -78,7 +78,7 @@ Nota: la comparativa se basa en caracteristicas publicas de los modelos de refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jimilismith/qwen2.5-7b-FT-risk-oracle-v2
+- Modelo en Hugging Face: https://huggingface.co/jimilismith/qwen2.5-7b-FT-risk-oracle-v2
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

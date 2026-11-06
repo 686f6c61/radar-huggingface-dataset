@@ -78,7 +78,7 @@ La comparativa se basa en datos estructurales; no hay resultados de benchmarks d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Shiftedx/ornith-1.5-9b-attention8-bf16recurrence-vision-mlx
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Shiftedx/ornith-1.5-9b-attention8-bf16recurrence-vision-mlx
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Colección Ornith-1.5: https://huggingface.co/collections/ornith-ai/ornith-15
 - Página de Ornith-1.5 (artículo técnico): https://ornith.ai/ornith_1_5.html

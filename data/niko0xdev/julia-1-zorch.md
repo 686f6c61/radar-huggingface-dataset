@@ -126,8 +126,8 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 | Modelo | Parametros | Contexto | Precision (reparto reservado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| julia-1-zorch | 144,3M | 1024 tokens | 99,74% | Apache-2.0 | HuggingFace (niko0xdev/julia-1-zorch) |
-| SupersonicLabs/Julia-1 (base) | 144,3M | No disponible | 25,06% | No disponible en la informacion proporcionada | HuggingFace (SupersonicLabs/Julia-1) |
+| julia-1-zorch | 144,3M | 1024 tokens | 99,74% | Apache-2.0 | Hugging Face (niko0xdev/julia-1-zorch) |
+| SupersonicLabs/Julia-1 (base) | 144,3M | No disponible | 25,06% | No disponible en la informacion proporcionada | Hugging Face (SupersonicLabs/Julia-1) |
 | Otras alternativas de la misma tarea | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -144,5 +144,5 @@ No se han identificado en la informacion proporcionada modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niko0xdev/julia-1-zorch
+- Modelo en Hugging Face: https://huggingface.co/niko0xdev/julia-1-zorch
 - Modelo base SupersonicLabs/Julia-1: https://huggingface.co/SupersonicLabs/Julia-1

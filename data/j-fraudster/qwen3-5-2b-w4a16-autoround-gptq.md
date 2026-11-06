@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/J-Fraudster/Qwen3.5-2B-W4A16-AutoRound-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/J-Fraudster/Qwen3.5-2B-W4A16-AutoRound-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - GitHub de AutoRound (Intel): https://github.com/intel/auto-round
 - GitHub de la serie Qwen3.5: https://github.com/ABDtmx/Qwen3.5

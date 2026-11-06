@@ -82,10 +82,10 @@ Los datos de Qwen2.5-7B-Instruct y Llama-3.1-8B-Instruct proceden de su document
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| K2-Horizon-7B DPO (checkpoint 100) | ~9,0 B | Hasta 65.536 tokens en entrenamiento; nominal no documentado | Apache-2.0 | HuggingFace, requiere `trust_remote_code`; sin GGUF |
-| IFM/K2-Horizon-7B (base) | No disponible | No disponible | No disponible | HuggingFace, requiere `trust_remote_code` |
-| Qwen2.5-7B-Instruct | 7,6 B | 128K | Apache-2.0 | HuggingFace, ecosistema amplio (GGUF, vLLM, TGI) |
-| Llama-3.1-8B-Instruct | 8,0 B | 128K | Llama 3.1 Community License | HuggingFace, ecosistema amplio (GGUF, vLLM, TGI) |
+| K2-Horizon-7B DPO (checkpoint 100) | ~9,0 B | Hasta 65.536 tokens en entrenamiento; nominal no documentado | Apache-2.0 | Hugging Face, requiere `trust_remote_code`; sin GGUF |
+| IFM/K2-Horizon-7B (base) | No disponible | No disponible | No disponible | Hugging Face, requiere `trust_remote_code` |
+| Qwen2.5-7B-Instruct | 7,6 B | 128K | Apache-2.0 | Hugging Face, ecosistema amplio (GGUF, vLLM, TGI) |
+| Llama-3.1-8B-Instruct | 8,0 B | 128K | Llama 3.1 Community License | Hugging Face, ecosistema amplio (GGUF, vLLM, TGI) |
 
 La ventaja de este modelo no es el rendimiento general, sino la especializacion en petrofisica y la trazabilidad de su ajuste. Frente a alternativas generalistas, carece de cuantizaciones publicadas, de benchmarks estandar y de validacion por parte de la comunidad (0 descargas, 0 likes en el momento de redactar esta ficha).
 
@@ -106,7 +106,7 @@ La ventaja de este modelo no es el rendimiento general, sino la especializacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sambal/k2-horizon-7b-dpo-checkpoint-100
+- Modelo en Hugging Face: https://huggingface.co/sambal/k2-horizon-7b-dpo-checkpoint-100
 - Checkpoint posterior del mismo run: https://huggingface.co/sambal/k2-horizon-7b-dpo-checkpoint-150
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Revision concreta del modelo base citada por el autor: `446bf311`

@@ -4,7 +4,7 @@
 
 GFIT v3 es un pipeline de detección y seguimiento de objetos (tracking) diseñado específicamente para el estudio de bancos de peces en arrecifes mediante cámaras bentónicas estacionarias. Desarrollado por kelseylmartin, el sistema fusiona dos detectores visuales de alta resolución —`sefsc_rgb_1728_groups` y un detector de movimiento— y utiliza el algoritmo ByteTrack para el seguimiento cinemático, en lugar de métodos basados en apariencia como Re-ID. El modelo está orientado a la biología marina y su objetivo principal es mantener la identidad de los peces durante oclusiones (por ejemplo, cuando pasan detrás de las barras estructurales de la cámara) y estabilizar la clasificación de especies a lo largo de la trayectoria mediante un mecanismo de promediado ponderado por confianza.
 
-La relevancia de GFIT v3 radica en su enfoque híbrido: combina detección de objetos con seguimiento cinemático, lo que le permite superar a los métodos tradicionales de Re-ID en escenarios de alta densidad y oclusiones frecuentes. Según la model card, el pipeline alcanza una AP@50 de 0.6659 en detección fusionada, un mAP@50 de 0.474 en clasificación de grupos y un HOTA de 0.5215 en seguimiento, con una cobertura de pistas del 78.6%. El modelo se publicó en agosto de 2026 y está disponible en HuggingFace, aunque la licencia no se especifica.
+La relevancia de GFIT v3 radica en su enfoque híbrido: combina detección de objetos con seguimiento cinemático, lo que le permite superar a los métodos tradicionales de Re-ID en escenarios de alta densidad y oclusiones frecuentes. Según la model card, el pipeline alcanza una AP@50 de 0.6659 en detección fusionada, un mAP@50 de 0.474 en clasificación de grupos y un HOTA de 0.5215 en seguimiento, con una cobertura de pistas del 78.6%. El modelo se publicó en agosto de 2026 y está disponible en Hugging Face, aunque la licencia no se especifica.
 
 ## Especificaciones tecnicas
 
@@ -86,6 +86,6 @@ No se dispone de información sobre modelos comparables en la model card ni en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kelseylmartin/GFIT_v3
+- Modelo en Hugging Face: https://huggingface.co/kelseylmartin/GFIT_v3
 - Perfil de GitHub del autor: https://github.com/kelseylmartin
 - Organización Gfit-Ai en GitHub: https://github.com/Gfit-Ai (sin repositorios públicos relevantes)

@@ -76,7 +76,7 @@ No se dispone de comparativas publicadas con otros modelos "uncensored" o "ablit
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy-LoRA-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy-LoRA-GGUF
 - Modelo LoRA original (sin cuantizar): https://huggingface.co/MuXodious/Qwen3.8-27B-absolute-heresy-LoRA
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Proyecto Heretic: https://heretic-project.org

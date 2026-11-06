@@ -26,7 +26,7 @@ Su relevancia actual radica en el despliegue en el borde: Qualcomm publica pesos
 | Tamano del modelo | 1,32 MB (float) / 395 KB (w8a8) |
 | Tamano del repositorio | 0,2 GB |
 | Runtime y SDK | QAIRT 2.45; ONNX Runtime 1.27.1 |
-| Descargas en HuggingFace | 118 |
+| Descargas en Hugging Face | 118 |
 
 ## Arquitectura y entrenamiento
 
@@ -116,7 +116,7 @@ La diferencia principal de SESR-M5 frente a las familias de superresolucion orie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/SESR-M5
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/SESR-M5
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/sesr_m5
 - Libreria Qualcomm AI Hub Models (GitHub): https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/sesr_m5
 - Implementacion de referencia en aimet-model-zoo: https://github.com/quic/aimet-model-zoo/tree/develop/aimet_zoo_torch/sesr

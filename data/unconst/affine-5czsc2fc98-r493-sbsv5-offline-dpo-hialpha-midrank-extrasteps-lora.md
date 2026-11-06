@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r493-sbsv5-offline-dpo-hialpha-midrank-extrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `unconst`. Se presenta como un "salvamento" de adaptador para el modelo base `ammazon/Affine-5dvqtektxx-sbs-v5`, con la nota explícita de que no es una submission oficial. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0.1 GB) y utiliza la librería PEFT. No se dispone de información sobre la arquitectura del modelo base, su tamaño, contexto o idiomas soportados, ya que el autor no ha documentado estos aspectos en la model card.
+El modelo `unconst/Affine-5czsc2fc98-r493-sbsv5-offline-dpo-hialpha-midrank-extrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `unconst`. Se presenta como un "salvamento" de adaptador para el modelo base `ammazon/Affine-5dvqtektxx-sbs-v5`, con la nota explícita de que no es una submission oficial. El repositorio contiene únicamente los pesos del adaptador en formato safetensors (0.1 GB) y utiliza la librería PEFT. No se dispone de información sobre la arquitectura del modelo base, su tamaño, contexto o idiomas soportados, ya que el autor no ha documentado estos aspectos en la model card.
 
 La relevancia de este modelo es limitada en el ecosistema actual: al ser un adaptador LoRA sin documentación ni métricas de rendimiento, su utilidad práctica queda restringida a quien conozca el modelo base y el propósito del ajuste. La etiqueta `affine-h1-salvage` sugiere que fue creado como respaldo técnico para un proceso de minería de datos o entrenamiento, pero no se proporcionan detalles adicionales.
 
@@ -58,5 +58,5 @@ No disponible. No se conocen modelos comparables dentro del mismo contexto (adap
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/unconst/Affine-5czsc2fc98-r493-sbsv5-offline-dpo-hialpha-midrank-extrasteps-lora)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/unconst/Affine-5czsc2fc98-r493-sbsv5-offline-dpo-hialpha-midrank-extrasteps-lora)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.

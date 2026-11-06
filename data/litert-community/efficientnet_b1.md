@@ -4,7 +4,7 @@
 
 EfficientNet-B1 es un modelo de clasificación de imágenes preentrenado en ImageNet-1k, desarrollado originalmente por Tan y Le en 2019 y publicado en el paper «EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks». La comunidad LiteRT (sucesor de TensorFlow Lite) ha publicado una versión convertida a formato TFLite, lista para su uso en dispositivos edge. El modelo utiliza compound scaling para equilibrar profundidad, anchura y resolución, lo que permite obtener una precisión elevada con un coste computacional reducido en comparación con arquitecturas tradicionales.
 
-La variante disponible en HuggingFace incluye un archivo TFLite de 40.2 MB y, según la model card, una cuantización weight-only int8 que reduce el tamaño aproximadamente 3.5 veces respecto a float32. El modelo tiene 7.794.184 parámetros y está diseñado para tareas de clasificación de imágenes en 1000 clases. Al tratarse de un modelo de visión, no aplica el concepto de longitud de contexto ni soporte de lenguaje natural.
+La variante disponible en Hugging Face incluye un archivo TFLite de 40.2 MB y, según la model card, una cuantización weight-only int8 que reduce el tamaño aproximadamente 3.5 veces respecto a float32. El modelo tiene 7.794.184 parámetros y está diseñado para tareas de clasificación de imágenes en 1000 clases. Al tratarse de un modelo de visión, no aplica el concepto de longitud de contexto ni soporte de lenguaje natural.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ El modelo base fue preentrenado en ImageNet-1k y posteriormente convertido a TFL
 
 ## Benchmarks y rendimiento
 
-Según el model-index oficial publicado en HuggingFace, los resultados sobre el dataset ImageNet-1k (split validation) son los siguientes:
+Según el model-index oficial publicado en Hugging Face, los resultados sobre el dataset ImageNet-1k (split validation) son los siguientes:
 
 | Métrica | Valor |
 |---|---|
@@ -85,8 +85,8 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/efficientnet_b1
+- Hugging Face: https://huggingface.co/litert-community/efficientnet_b1
 - GitHub LiteRT: https://github.com/google-ai-edge/litert
 - Documentación de LiteRT: https://developers.google.com/edge/litert
 - Paper original: https://arxiv.org/abs/1905.11946
-- Modelo base en HuggingFace: https://huggingface.co/google/efficientnet-b1
+- Modelo base en Hugging Face: https://huggingface.co/google/efficientnet-b1

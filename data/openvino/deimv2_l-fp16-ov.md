@@ -76,7 +76,7 @@ No se dispone en la informacion proporcionada de datos numericos de modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/deimv2_l-fp16-ov
+- Hugging Face: https://huggingface.co/OpenVINO/deimv2_l-fp16-ov
 - Modelo original DEIMv2: https://github.com/Intellindust-AI-Lab/DEIMv2
 - Repositorio DEIM (licencia original): https://github.com/Intellindust-AI-Lab/DEIM/blob/main/LICENSE
 - Geti (Intel): https://github.com/open-edge-platform/geti

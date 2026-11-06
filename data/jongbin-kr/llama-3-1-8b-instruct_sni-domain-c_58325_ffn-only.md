@@ -79,7 +79,7 @@ La comparativa directa no es posible sin datos de rendimiento. La principal dife
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-domain-c_58325_ffn-only
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-domain-c_58325_ffn-only
 - Repositorio TRL: https://github.com/huggingface/trl
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante LoRA del mismo autor: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Norovirus_Genotip_Optimisation es un repositorio publicado en HuggingFace por la usuaria SevdanurGenc bajo licencia MIT. Por el nombre y la ausencia de una model card sustantiva (el README solo contiene la declaración de licencia), todo apunta a un artefacto de investigación orientado a la optimización de genotipado del norovirus, probablemente con componentes de aprendizaje automático aplicados a datos genómicos, más que a un modelo de lenguaje generativo al uso.
+Norovirus_Genotip_Optimisation es un repositorio publicado en Hugging Face por la usuaria SevdanurGenc bajo licencia MIT. Por el nombre y la ausencia de una model card sustantiva (el README solo contiene la declaración de licencia), todo apunta a un artefacto de investigación orientado a la optimización de genotipado del norovirus, probablemente con componentes de aprendizaje automático aplicados a datos genómicos, más que a un modelo de lenguaje generativo al uso.
 
 La información pública disponible es mínima: no se declara pipeline, no se especifican idiomas, no hay descripción de arquitectura, tamaño, datos de entrenamiento ni resultados de evaluación. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere un uso interno o un trabajo en curso sin difusión.
 
@@ -23,7 +23,7 @@ Esta ficha se redacta, por tanto, con un nivel de incertidumbre alto y marca exp
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer, un modelo de clasificación genómica, un pipeline de preprocesamiento biológico o un artefacto auxiliar (por ejemplo, un conjunto de scripts o un modelo de embeddings especializado en secuencias virales).
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer, un modelo de clasificación genómica, un pipeline de preprocesamiento biológico o un artefacto auxiliar (por ejemplo, un conjunto de scripts o un modelo de embeddings especializado en secuencias virales).
 
 Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. Toda esta sección queda pendiente de documentación por parte del autor.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens, la com
 - Investigación en virología computacional: si el artefacto implementa un pipeline de genotipado, podría emplearse para clasificar secuencias de norovirus en genogrupos o genotipos conocidos; requiere validación experimental previa.
 - Prototipado académico: útil como punto de partida para estudiantes o investigadores que quieran reproducir o extender un flujo de análisis genómico, dado que la licencia MIT permite modificaciones.
 - Integración en pipelines bioinformáticos internos: podría envolverse en un contenedor o script de orquestación (Snakemake, Nextflow) si el autor documenta las entradas y salidas esperadas.
-- Docencia y formación: como ejemplo didáctico de publicación de artefactos de investigación en HuggingFace, siempre que se acompañe de documentación propia.
+- Docencia y formación: como ejemplo didáctico de publicación de artefactos de investigación en Hugging Face, siempre que se acompañe de documentación propia.
 - Auditoría de licencias: al ser MIT, puede servir como base para comparar políticas de licenciamiento en proyectos de bioinformática abierta.
 - Evaluación comparativa de herramientas de genotipado: podría incluirse en un banco de pruebas junto con otras soluciones (NorovIR, Norovirus Genotyping Tool) si se documenta su interfaz; actualmente no hay evidencia de que sea directamente comparable.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SevdanurGenc/Norovirus_Genotip_Optimisation
+- Repositorio en Hugging Face: https://huggingface.co/SevdanurGenc/Norovirus_Genotip_Optimisation
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

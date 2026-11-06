@@ -78,11 +78,11 @@ Comparativa entre las tres cuantizaciones de este repositorio y las recetas esta
 
 | Version | Tamano | KLD medio (4 textos) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Sakura IQ2_XS | 20,94 GiB | 0,1091 (calculado) | apache-2.0 | HuggingFace (este repo) |
+| Sakura IQ2_XS | 20,94 GiB | 0,1091 (calculado) | apache-2.0 | Hugging Face (este repo) |
 | IQ2_XS estandar | 21,41 GiB | 0,2515 (calculado) | apache-2.0 | llama.cpp |
 | IQ3_XXS estandar | 28,12 GiB | 0,1323 (calculado) | apache-2.0 | llama.cpp |
-| Sakura IQ3_XXS | 28,75 GiB | 0,0637 (calculado) | apache-2.0 | HuggingFace (este repo) |
-| Sakura IQ4_XS | 38,07 GiB | 0,0432 (calculado) | apache-2.0 | HuggingFace (este repo) |
+| Sakura IQ3_XXS | 28,75 GiB | 0,0637 (calculado) | apache-2.0 | Hugging Face (este repo) |
+| Sakura IQ4_XS | 38,07 GiB | 0,0432 (calculado) | apache-2.0 | Hugging Face (este repo) |
 
 Los valores de KLD medio son la media aritmetica de las columnas en, dev, wiki y de de las tablas anteriores. Existe otra cuantizacion GGUF comunitaria del mismo modelo base, Hob-forge/Kolibri-1-GGUF, que aporta el parche necesario para llama.cpp. No se dispone de datos para comparar con modelos densos o MoE de tamano similar de otros fabricantes: no disponible.
 

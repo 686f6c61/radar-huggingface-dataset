@@ -107,7 +107,7 @@ La comparación más directa es con el modelo base: Moon-Beam mejora la calibrac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tablinum/Moon-Beam-16B-A3B
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Moon-Beam-16B-A3B
 - GGUF: https://huggingface.co/tablinum/Moon-Beam-16B-A3B-GGUF
 - Dataset Tablinum-2: https://huggingface.co/datasets/tablinum/tablinum-2
 - Colección Moon-Beam: https://huggingface.co/collections/tablinum/moon-beam-6ae64ea51cef0d52d1461fc2

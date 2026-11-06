@@ -75,8 +75,8 @@ Los datos de los modelos comparativos son orientativos y deben verificarse en su
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ulasZoi/smolvla_pickcube_bs4 | 450.046.176 | Una imagen 480x640 + estado de 6 dimensiones por paso | Apache 2.0 | HuggingFace, via LeRobot | Especializado en "pick up the cube"; sin evaluacion publicada |
-| lerobot/smolvla_base | no disponible (mismo orden de magnitud, ~450 M) | Igual que SmolVLA | Apache 2.0 (segun el base) | HuggingFace | Modelo base del que se parte para el ajuste fino; proposito general dentro del metodo |
+| ulasZoi/smolvla_pickcube_bs4 | 450.046.176 | Una imagen 480x640 + estado de 6 dimensiones por paso | Apache 2.0 | Hugging Face, via LeRobot | Especializado en "pick up the cube"; sin evaluacion publicada |
+| lerobot/smolvla_base | no disponible (mismo orden de magnitud, ~450 M) | Igual que SmolVLA | Apache 2.0 (segun el base) | Hugging Face | Modelo base del que se parte para el ajuste fino; proposito general dentro del metodo |
 | OpenVLA | ~7 B | Una imagen + instruccion de texto | no disponible | Publico | VLA de referencia de mayor tamano; requiere mas VRAM |
 | Octo | ~93 M (variante base) | Una o varias imagenes + objetivo | no disponible | Publico | Politica generalista previa a la familia SmolVLA |
 | pi0 | ~3 B | Multiples imagenes + instruccion | no disponible | Publico | VLA de mayor capacidad, orientado a manipulacion general |
@@ -97,7 +97,7 @@ Las cifras de parametros y licencias de OpenVLA, Octo y pi0 no se han verificado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs4
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs4
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ulasZoi/smolvla_pickcube_all
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ulasZoi/smolvla_pickcube_all

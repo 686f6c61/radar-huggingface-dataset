@@ -77,8 +77,8 @@ El autor senala que ninguna de las columnas de simulacion predijo el resultado r
 
 | Modelo | Parametros | Contexto | Rendimiento (real vs IA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RaifuWars-RL-ActionScorer-SelfPlay2 (este) | 57.730 | No aplica | 56% global (27/48) | GPL-3.0 | HuggingFace |
-| RaifuWars-RL-ActionScorer-SelfPlay (predecesor) | 57.730 | No aplica | 50% global (24/48) | GPL-3.0 | HuggingFace |
+| RaifuWars-RL-ActionScorer-SelfPlay2 (este) | 57.730 | No aplica | 56% global (27/48) | GPL-3.0 | Hugging Face |
+| RaifuWars-RL-ActionScorer-SelfPlay (predecesor) | 57.730 | No aplica | 50% global (24/48) | GPL-3.0 | Hugging Face |
 | `ppo-sim` (mencionado en la model card) | No disponible | No aplica | No evaluado en partidas reales | No disponible | No publicado |
 | `bignet` (mencionado en la model card) | No disponible | No aplica | No evaluado en partidas reales | No disponible | No publicado |
 
@@ -95,7 +95,7 @@ La comparativa se limita a los modelos citados en la documentacion del autor, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-SelfPlay2
+- Modelo en Hugging Face: https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-SelfPlay2
 - Modelo predecesor: https://huggingface.co/yotisstudios/RaifuWars-RL-ActionScorer-SelfPlay
 - Juego Raifu Wars: https://raifuwars.com
 - Protocolo Warrior: https://github.com/Yotis-Studios/Warrior

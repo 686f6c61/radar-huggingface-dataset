@@ -18,7 +18,7 @@ El adaptador pesa 0,3 GB y debe servirse junto al modelo base (por ejemplo, con 
 | Longitud de contexto | 8.192 tokens (segun ejemplo de despliegue con vLLM) |
 | Tipos de cuantizacion | fp8 (ejemplo de vLLM), fp16; no se mencionan cuantizaciones GGUF |
 | Idiomas soportados | ingles |
-| Licencia | apache-2.0 (segun tag de HuggingFace); la model card indica "restricted/customer access only" y "not open distribution" |
+| Licencia | apache-2.0 (segun tag de Hugging Face); la model card indica "restricted/customer access only" y "not open distribution" |
 | Formato de pesos | safetensors (PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento
@@ -69,12 +69,12 @@ No se dispone de modelos comparables especificos para la tarea de explicabilidad
 - Posible sesgo por desequilibrio de clases en el dataset subyacente, lo que podria inclinar las predicciones hacia las clases de defecto mas frecuentes.
 - No validado en rangos o unidades de telemetria fuera de los presentes en los datos de entrenamiento.
 - No apto para decisiones autonomas de aceptacion o rechazo de soldaduras sin revision humana cualificada; la model card lo define como herramienta de apoyo a la decision.
-- Licencia ambigua: el tag de HuggingFace indica apache-2.0, pero la model card afirma que el adaptador es de "acceso restringido/solo para clientes" y "no para distribucion abierta". Se recomienda contactar con Intel antes de cualquier uso comercial.
+- Licencia ambigua: el tag de Hugging Face indica apache-2.0, pero la model card afirma que el adaptador es de "acceso restringido/solo para clientes" y "no para distribucion abierta". Se recomienda contactar con Intel antes de cualquier uso comercial.
 - Solo soporta ingles; no hay soporte multilingue documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Intel/qwen3.5-2b-vlm-weld-explainability-lora
+- Modelo en Hugging Face: https://huggingface.co/Intel/qwen3.5-2b-vlm-weld-explainability-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/IntelLabs/Intel_Robotic_Welding_Multimodal_Dataset
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Guia de despliegue con vLLM (Intel): https://github.com/open-edge-platform/edge-ai-suites/blob/release-2026.2.0/manufacturing-ai-suite/industrial-edge-insights-multimodal/docs/user-guide/how-to-guides/how-to-deploy-vllm-service.md

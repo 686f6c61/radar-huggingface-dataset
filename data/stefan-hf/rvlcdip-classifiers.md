@@ -17,7 +17,7 @@ Las siete arquitecturas son AlexNet, GoogLeNet, ResNet-50, ResNeXt-50 (32x4d), S
 | Longitud de contexto | No aplica: clasificación de imagen con entrada fija de 224 × 224 píxeles en escala de grises |
 | Tipos de cuantización | No disponible (no se documentan versiones cuantizadas) |
 | Idiomas soportados | No disponible (clasificación de documentos escaneados; los idiomas de la información disponible no se especifican) |
-| Licencia | `other` (no se detalla el texto de la licencia; etiquetada como `other` en HuggingFace) |
+| Licencia | `other` (no se detalla el texto de la licencia; etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors y PyTorch; las carpetas de DiT-base incluyen además el layout de `transformers` con `config.json` / `rvlcdip_config.json` |
 | Número de clases | 16 categorías documentales |
 | Variantes por arquitectura | 4 (`labels-original_codes-kept`, `labels-original_codes-removed`, `labels-corrected_codes-kept`, `labels-corrected_codes-removed`) |
@@ -119,7 +119,7 @@ No se han identificado en la información disponible otros clasificadores de RVL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefan-hf/rvlcdip-classifiers
+- Modelo en Hugging Face: https://huggingface.co/stefan-hf/rvlcdip-classifiers
 - Dataset de códigos de identificación: https://huggingface.co/datasets/stefan-hf/rvlcdip-id-codes
 - Detector de códigos Bates usado para localizarlos: https://huggingface.co/stefan-hf/yolov8n-rvlcdip-idcodes
 - Ficheros del detector: https://huggingface.co/stefan-hf/yolov8n-rvlcdip-idcodes/tree/main

@@ -79,8 +79,8 @@ No se han publicado resultados en benchmarks estándar de código o razonamiento
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (index-drift-rl v0.1) | 1,5 B base + ~18 M LoRA | no disponible | 97% solved / 100% valid en `test`; 72% en plantillas no vistas | apache-2.0 | HuggingFace, requiere modelo base |
-| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5 B | no disponible en la información | 37% solved en `test`; 72% en plantillas no vistas | apache-2.0 (según modelo base) | HuggingFace |
+| Este adaptador (index-drift-rl v0.1) | 1,5 B base + ~18 M LoRA | no disponible | 97% solved / 100% valid en `test`; 72% en plantillas no vistas | apache-2.0 | Hugging Face, requiere modelo base |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1,5 B | no disponible en la información | 37% solved en `test`; 72% en plantillas no vistas | apache-2.0 (según modelo base) | Hugging Face |
 | Regla de manual (igualdad, luego rango/ordenación) | no aplica (heurística) | no aplica | 90% solved en `test`; 66% en no vistas | no aplica | implementación propia |
 | Asesores de índices comerciales o extensiones de PostgreSQL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de datos de otros adaptadores o modelos comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krishna382nitjsr/index-drift-rl-qwen1.5b-grpo-v0.1
+- Modelo en Hugging Face: https://huggingface.co/krishna382nitjsr/index-drift-rl-qwen1.5b-grpo-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio de código: https://github.com/Krishnaghimire/index-drift-rl
 - Dataset de benchmark: https://huggingface.co/datasets/krishna382nitjsr/index-drift-rl-bench

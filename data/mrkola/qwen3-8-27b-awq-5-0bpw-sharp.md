@@ -98,7 +98,7 @@ La versión 5.0bpw con gs64 ofrece un prefill significativamente más rápido qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrKola/Qwen3.8-27B-AWQ-5.0bpw-Sharp
+- Repositorio Hugging Face: https://huggingface.co/mrKola/Qwen3.8-27B-AWQ-5.0bpw-Sharp
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Versión 4.85bpw de referencia: https://huggingface.co/True2456/Qwen3.8-27B-AWQ-4.85bpw
 - Pull request de oMLX sobre routing de kernels: https://github.com/jundot/omlx/pull/2657

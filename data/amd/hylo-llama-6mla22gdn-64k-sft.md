@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de otros híbridos comparables (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Llama-6MLA22GDN-64K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Llama-6MLA22GDN-64K-SFT
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Profesor de destilación: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper principal: Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling, https://arxiv.org/abs/2604.24715
@@ -114,4 +114,4 @@ No se dispone en la información proporcionada de otros híbridos comparables (p
 - Dataset de razonamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k
 - Dataset de matemáticas: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 - Dataset de QA de contexto largo: https://huggingface.co/datasets/nvidia/ChatQA2-Long-SFT-data
-- Licencia del modelo: LICENSE (referenciado en el repositorio de HuggingFace)
+- Licencia del modelo: LICENSE (referenciado en el repositorio de Hugging Face)

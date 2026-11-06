@@ -85,10 +85,10 @@ Comparación dentro de la propia familia, cuyos datos sí están publicados en l
 
 | Modelo | Parametros | Contexto | C-Eval / MMLU / GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TeleChat2-3B | 3.000 M | no disponible | 75 / 72,9 / 64,7 | Apache 2.0 | HuggingFace (espejo), ModelScope |
-| TeleChat2-7B | 7.000 M | no disponible | 82 / 79,6 / 86,8 | Apache 2.0 | HuggingFace, ModelScope |
-| TeleChat2-35B | 35.000 M | no disponible | 85 / 82 / 91 | Apache 2.0 | HuggingFace, ModelScope |
-| Alternativas externas de ~3B (Qwen2.5-3B, Llama-3.2-3B, Phi-3-mini) | 3.000-3.800 M | no disponible | sin datos comparables en la información proporcionada | Apache 2.0 en el caso de Qwen; licencia específica en los demás | HuggingFace |
+| TeleChat2-3B | 3.000 M | no disponible | 75 / 72,9 / 64,7 | Apache 2.0 | Hugging Face (espejo), ModelScope |
+| TeleChat2-7B | 7.000 M | no disponible | 82 / 79,6 / 86,8 | Apache 2.0 | Hugging Face, ModelScope |
+| TeleChat2-35B | 35.000 M | no disponible | 85 / 82 / 91 | Apache 2.0 | Hugging Face, ModelScope |
+| Alternativas externas de ~3B (Qwen2.5-3B, Llama-3.2-3B, Phi-3-mini) | 3.000-3.800 M | no disponible | sin datos comparables en la información proporcionada | Apache 2.0 en el caso de Qwen; licencia específica en los demás | Hugging Face |
 
 El salto de la variante de 3B a la de 7B es notable en matemáticas (64,7 frente a 86,8 en GSM8K) y en razonamiento (65,99 frente a 77,3 en BBH), por lo que la elección entre ambas debería basarse en el presupuesto de hardware y en la exigencia de la tarea. No se dispone de datos de benchmarks de modelos externos de 3B en la información proporcionada, así que no es posible una comparación cuantitativa directa.
 
@@ -108,10 +108,10 @@ El salto de la variante de 3B a la de 7B es notable en matemáticas (64,7 frente
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/AIArchiveInfo/TeleChat2-3B
+- Repositorio espejo en Hugging Face: https://huggingface.co/AIArchiveInfo/TeleChat2-3B
 - Repositorio original TeleChat2-3B: https://huggingface.co/Tele-AI/TeleChat2-3B
 - Revisión preservada: https://huggingface.co/Tele-AI/TeleChat2-3B/tree/b364de9538e146f7a99519d5ed6c9855f76bfdf0
-- Organización TeleAI en HuggingFace: https://huggingface.co/Tele-AI
+- Organización TeleAI en Hugging Face: https://huggingface.co/Tele-AI
 - Repositorio GitHub oficial: https://github.com/Tele-AI/TeleChat2
 - Espejo en Gitee: https://gitee.com/Tele-AI/tele-chat2
 - Implementación en MindSpore/MindFormers: https://gitee.com/mindspore/mindformers/tree/dev/research/telechat2

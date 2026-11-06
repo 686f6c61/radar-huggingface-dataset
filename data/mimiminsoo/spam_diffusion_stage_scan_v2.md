@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mimiminsoo/spam_diffusion_stage_scan_v2` es una política de control visuomotor basada en el enfoque Diffusion Policy, desarrollado por el usuario mimiminsoo y publicado en HuggingFace. Está entrenado con la librería LeRobot de Hugging Face, una plataforma de código abierto para aprendizaje por imitación en robótica. El modelo trata el control de robots como un proceso generativo de difusión, generando trayectorias de acción suaves y multi-paso, especialmente adecuadas para tareas de manipulación que requieren contacto físico.
+El modelo `mimiminsoo/spam_diffusion_stage_scan_v2` es una política de control visuomotor basada en el enfoque Diffusion Policy, desarrollado por el usuario mimiminsoo y publicado en Hugging Face. Está entrenado con la librería LeRobot de Hugging Face, una plataforma de código abierto para aprendizaje por imitación en robótica. El modelo trata el control de robots como un proceso generativo de difusión, generando trayectorias de acción suaves y multi-paso, especialmente adecuadas para tareas de manipulación que requieren contacto físico.
 
 Con 308 millones de parámetros y un tamaño de repositorio de 1,2 GB, este modelo es relativamente compacto en comparación con los grandes modelos de lenguaje, pero está especializado en el dominio robótico. Su relevancia radica en la creciente tendencia a aplicar modelos generativos al control de robots, permitiendo aprender comportamientos complejos a partir de demostraciones. La licencia Apache-2.0 facilita su uso comercial y de investigación. No se especifican datos sobre la arquitectura exacta más allá de ser un Diffusion Policy, ni sobre el dataset de entrenamiento más allá de su nombre (`piper_spamcoffee_stage_scan`).
 

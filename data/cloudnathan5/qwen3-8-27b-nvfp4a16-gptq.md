@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos cuantizados de tamaño similar para comp
 
 ## Enlaces
 
-- [Checkpoint en HuggingFace](https://huggingface.co/cloudnathan5/Qwen3.8-27B-NVFP4a16-GPTQ)
+- [Checkpoint en Hugging Face](https://huggingface.co/cloudnathan5/Qwen3.8-27B-NVFP4a16-GPTQ)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [llm-compressor (repositorio de vLLM)](https://github.com/vllm-project/llm-compressor)
 - [Dataset de calibración HuggingFaceH4/ultrachat_200k](https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k)

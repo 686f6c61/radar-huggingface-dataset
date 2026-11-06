@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eus-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tuning) del modelo `goldfish-models/eus_latn_100mb`, un modelo de lenguaje de tipo GPT-2 desarrollado dentro del proyecto Goldfish Models, orientado a lenguas con pocos recursos. El autor de este ajuste es el usuario de HuggingFace `francesca9805`, y el entrenamiento se ha realizado mediante SFT (Supervised Fine-Tuning) utilizando la librería TRL de HuggingFace. El nombre del repositorio sugiere un experimento de ablación o una variante concreta (los sufijos `ppt-mp-struct-100mb_seed10` apuntan a identificadores de configuración y semilla), aunque no se documenta su significado en la model card.
+`eus-latn-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tuning) del modelo `goldfish-models/eus_latn_100mb`, un modelo de lenguaje de tipo GPT-2 desarrollado dentro del proyecto Goldfish Models, orientado a lenguas con pocos recursos. El autor de este ajuste es el usuario de Hugging Face `francesca9805`, y el entrenamiento se ha realizado mediante SFT (Supervised Fine-Tuning) utilizando la librería TRL de Hugging Face. El nombre del repositorio sugiere un experimento de ablación o una variante concreta (los sufijos `ppt-mp-struct-100mb_seed10` apuntan a identificadores de configuración y semilla), aunque no se documenta su significado en la model card.
 
 El modelo tiene 124.770.816 parámetros (~125M) según los pesos en safetensors, lo que lo sitúa en la misma escala que GPT-2 small. Hereda la arquitectura transformer decoder-only del modelo base y está publicado en formato `safetensors`, con compatibilidad declarada para `text-generation-inference` y endpoints. El pipeline es `text-generation` y se puede cargar directamente con `transformers`.
 
@@ -70,9 +70,9 @@ La comparacion cuantitativa con alternativas no puede completarse porque faltan 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed10 | 124.770.816 | no disponible | no disponible | HuggingFace | Ajuste SFT con TRL sobre Goldfish |
-| goldfish-models/eus_latn_100mb | no disponible (modelo base) | no disponible | no disponible | HuggingFace | Modelo base, orientado a euskera |
-| Otros GPT-2 small (~125M) | ~124M | 1024 (tipico en GPT-2, no confirmado aqui) | variable segun modelo | HuggingFace | Referencia de escala, no de idioma |
+| francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed10 | 124.770.816 | no disponible | no disponible | Hugging Face | Ajuste SFT con TRL sobre Goldfish |
+| goldfish-models/eus_latn_100mb | no disponible (modelo base) | no disponible | no disponible | Hugging Face | Modelo base, orientado a euskera |
+| Otros GPT-2 small (~125M) | ~124M | 1024 (tipico en GPT-2, no confirmado aqui) | variable segun modelo | Hugging Face | Referencia de escala, no de idioma |
 
 No se dispone de datos suficientes para comparar rendimiento (benchmarks) ni condiciones de licencia frente a alternativas concretas.
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para comparar rendimiento (benchmarks) ni con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ez0ct342
 - Repositorio TRL: https://github.com/huggingface/trl

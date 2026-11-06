@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step2000` es un adaptador LoRA alojado en HuggingFace por el usuario `fm-dev`, etiquetado con los tags `robotics`, `pi05`, `franka`, `lora` y `region:us`, y publicado con el pipeline `robotics`. Por la nomenclatura del identificador y las etiquetas, se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un modelo base de la familia pi05, orientado a control robótico sobre un brazo Franka. La informacion publica disponible en la ficha de HuggingFace no incluye licencia, idiomas, tamano de parametros, contexto ni formato de pesos.
+El modelo `fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step2000` es un adaptador LoRA alojado en Hugging Face por el usuario `fm-dev`, etiquetado con los tags `robotics`, `pi05`, `franka`, `lora` y `region:us`, y publicado con el pipeline `robotics`. Por la nomenclatura del identificador y las etiquetas, se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre un modelo base de la familia pi05, orientado a control robótico sobre un brazo Franka. La informacion publica disponible en la ficha de Hugging Face no incluye licencia, idiomas, tamano de parametros, contexto ni formato de pesos.
 
 El problema que aborda es el de la adaptacion eficiente de un modelo vision-lenguaje-accion (VLA) a una tarea concreta de manipulacion robotica sin reentrenar el modelo completo, algo relevante porque el ajuste completo de un VLA suele estar fuera del alcance de laboratorios pequenos. La etiqueta `status-d` apunta a una variante o tarea especifica de estado, aunque su significado exacto no esta documentado en la informacion proporcionada.
 
@@ -60,7 +60,7 @@ Los siguientes escenarios son aplicaciones plausibles derivadas del ambito decla
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tabla de evaluaciones, tasas de exito en tarea, ni comparaciones con otros checkpoints de la misma familia. Tampoco se han encontrado resultados de benchmarks en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tabla de evaluaciones, tasas de exito en tarea, ni comparaciones con otros checkpoints de la misma familia. Tampoco se han encontrado resultados de benchmarks en la busqueda web realizada, cuyos resultados no guardan relacion con el modelo.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ La informacion proporcionada no contiene datos de ningun otro modelo, por lo que
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step2000 | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step2000 | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Otros adaptadores LoRA de la familia pi05 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelo base pi05 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,5 +96,5 @@ La informacion proporcionada no contiene datos de ningun otro modelo, por lo que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step2000
+- Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-status-d-lora-gbs4-pgb1-gpu4-r2-step2000
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo.

@@ -93,7 +93,7 @@ La comparación se basa en las tablas de la model card del autor. Los datos de p
 
 | Modelo | Parámetros | Contexto | Routing texto | Routing multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AlphaRoute-VL-0.8B | 873.438.784 | No disponible | 95,40% Banking77 / 97,67% Golden 300 | 95,33% global / 100% in-scope | Apache-2.0 | HuggingFace |
+| AlphaRoute-VL-0.8B | 873.438.784 | No disponible | 95,40% Banking77 / 97,67% Golden 300 | 95,33% global / 100% in-scope | Apache-2.0 | Hugging Face |
 | AlphaRoute-0.8B-v1.5 | No disponible | No disponible | 95,40% Banking77 / 97,67% Golden 300 | No aplica | No disponible | No disponible |
 | DeepSeek-V4 Flash | No disponible | No disponible | 93,00% Banking77 / 94,00% Golden 300 | No disponible | No disponible | No disponible |
 | Azure GPT-5.4-nano | No disponible | No disponible | 85,40% Banking77 / 92,33% Golden 300 | No disponible | No disponible | Azure |
@@ -114,6 +114,6 @@ Nota: AlphaRoute-0.8B-v1.5 es el predecesor sin modalidad visual; el rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NamanAgnih0tri/AlphaRoute-VL-0.8B
+- Hugging Face: https://huggingface.co/NamanAgnih0tri/AlphaRoute-VL-0.8B
 - Modelo base Qwen/Qwen3.5-0.8B-Base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - No se han localizado otros enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de búsqueda disponibles.

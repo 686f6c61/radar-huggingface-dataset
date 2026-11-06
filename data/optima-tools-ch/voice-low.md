@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/optima-tools-ch/voice-low
+- Hugging Face: https://huggingface.co/optima-tools-ch/voice-low
 - Repositorio original de voces Piper: https://huggingface.co/rhasspy/piper-voices
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

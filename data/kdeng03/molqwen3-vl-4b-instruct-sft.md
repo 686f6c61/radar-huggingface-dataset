@@ -4,7 +4,7 @@
 
 MolQwen3-VL-4B-Instruct-SFT es un modelo de visión-lenguaje (VLM) desarrollado por kdeng03, obtenido mediante fine-tuning del modelo base Qwen/Qwen3-VL-4B-Instruct sobre el dataset propio `kdeng03/mol-rep-conversion-v1.1`. El nombre sugiere una especialización en conversión de representaciones moleculares, aunque la model card no proporciona detalles sobre la tarea concreta ni sobre el contenido del dataset. Se trata de un modelo de 4.437.815.808 parámetros, con pesos en formato safetensors y compatible con la librería transformers.
 
-La relevancia de este modelo radica en su potencial aplicación en el dominio químico-molecular, donde los modelos de visión-lenguaje pueden interpretar estructuras moleculares representadas como imágenes (SMILES, grafos, etc.) y convertirlas a texto o viceversa. Al estar basado en Qwen3-VL-4B-Instruct, hereda las capacidades multimodales del modelo original, aunque no se han publicado evaluaciones específicas que confirmen su rendimiento en tareas moleculares. La ficha se basa únicamente en la información disponible en HuggingFace, que es escasa y no incluye detalles de entrenamiento, licencia ni benchmarks.
+La relevancia de este modelo radica en su potencial aplicación en el dominio químico-molecular, donde los modelos de visión-lenguaje pueden interpretar estructuras moleculares representadas como imágenes (SMILES, grafos, etc.) y convertirlas a texto o viceversa. Al estar basado en Qwen3-VL-4B-Instruct, hereda las capacidades multimodales del modelo original, aunque no se han publicado evaluaciones específicas que confirmen su rendimiento en tareas moleculares. La ficha se basa únicamente en la información disponible en Hugging Face, que es escasa y no incluye detalles de entrenamiento, licencia ni benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -60,8 +60,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MolQwen3-VL-4B-Instruct-SFT | 4.4B | no disponible | no disponible | HuggingFace |
-| Qwen3-VL-4B-Instruct (base) | 4.4B | 128k | Apache 2.0 (según Qwen) | HuggingFace, ModelScope |
+| MolQwen3-VL-4B-Instruct-SFT | 4.4B | no disponible | no disponible | Hugging Face |
+| Qwen3-VL-4B-Instruct (base) | 4.4B | 128k | Apache 2.0 (según Qwen) | Hugging Face, ModelScope |
 
 No se dispone de datos de rendimiento para comparar.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para comparar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdeng03/MolQwen3-VL-4B-Instruct-SFT
+- Modelo en Hugging Face: https://huggingface.co/kdeng03/MolQwen3-VL-4B-Instruct-SFT
 - Dataset utilizado: https://huggingface.co/datasets/kdeng03/mol-rep-conversion-v1.1 (enlace inferido, no verificado)
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

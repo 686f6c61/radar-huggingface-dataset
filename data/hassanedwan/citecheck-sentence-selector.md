@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CiteCheck Sentence Selector es un modelo de tipo cross-encoder desarrollado por el usuario hassanedwan, publicado en HuggingFace bajo licencia MIT. Su tarea es actuar como seleccionador de frases: dado un claim (afirmacion) y un resumen cientifico, el modelo puntua cada frase del resumen para estimar su probabilidad de constituir evidencia relevante para dicho claim. Es, por tanto, un componente de reranking dentro de un pipeline de verificacion de citas (citation checking) o de recuperacion de evidencia.
+CiteCheck Sentence Selector es un modelo de tipo cross-encoder desarrollado por el usuario hassanedwan, publicado en Hugging Face bajo licencia MIT. Su tarea es actuar como seleccionador de frases: dado un claim (afirmacion) y un resumen cientifico, el modelo puntua cada frase del resumen para estimar su probabilidad de constituir evidencia relevante para dicho claim. Es, por tanto, un componente de reranking dentro de un pipeline de verificacion de citas (citation checking) o de recuperacion de evidencia.
 
 Se trata de un proyecto de curso (UMD DATA/MSML 641) entrenado sobre la particion de entrenamiento del dataset allenai/scifact, con 200 claims reservados para el ajuste de umbral (threshold tuning), segun train_log.json. El modelo esta especializado en resumenes biomedicales y no esta pensado como modelo generativo: no produce texto libre, sino puntuaciones de relevancia.
 
@@ -12,7 +12,7 @@ El repositorio es de 0,1 GB y los pesos en safetensors declaran 22.713.601 param
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Encoder tipo BERT (cross-encoder); tag de HuggingFace: bert. Detalle exacto de la arquitectura no disponible |
+| Arquitectura | Encoder tipo BERT (cross-encoder); tag de Hugging Face: bert. Detalle exacto de la arquitectura no disponible |
 | Parametros totales | 22.713.601 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El repositorio es de 0,1 GB y los pesos en safetensors declaran 22.713.601 param
 
 ## Arquitectura y entrenamiento
 
-Se trata de un cross-encoder: el modelo recibe de forma conjunta el par (claim, frase del resumen) y emite una puntuacion de relevancia por par, en lugar de generar embeddings independientes para cada texto. El tag declarado en HuggingFace es `bert`, y el recuento de parametros (22,7 M) corresponde a un encoder transformer de tamano reducido, no a un BERT-base completo (110 M). No se especifica en la informacion disponible el numero de capas, dimensiones ocultas ni el tokenizador exacto utilizado.
+Se trata de un cross-encoder: el modelo recibe de forma conjunta el par (claim, frase del resumen) y emite una puntuacion de relevancia por par, en lugar de generar embeddings independientes para cada texto. El tag declarado en Hugging Face es `bert`, y el recuento de parametros (22,7 M) corresponde a un encoder transformer de tamano reducido, no a un BERT-base completo (110 M). No se especifica en la informacion disponible el numero de capas, dimensiones ocultas ni el tokenizador exacto utilizado.
 
 En cuanto al entrenamiento, la model card indica que se utilizo la particion de entrenamiento de SciFact (licencia CC BY 4.0) excluyendo 200 claims que se reservaron para el ajuste del umbral de decision, con el detalle registrado en train_log.json. El alcance se limita a resumenes biomedicales. No se documentan en la informacion disponible el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras fases de ajuste mas alla del entrenamiento supervisado del cross-encoder.
 
@@ -66,10 +66,10 @@ La categoria de referencia son los cross-encoders de reranking y seleccion de ev
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| hassanedwan/citecheck-sentence-selector | 22,7 M | no disponible | MIT | HuggingFace | no disponible |
-| cross-encoder/ms-marco-MiniLM-L-6-v2 (familia MiniLM para reranking) | ~22,7 M | no disponible | Apache 2.0 | HuggingFace | no disponible |
-| BAAI/bge-reranker-base | ~278 M | no disponible | MIT | HuggingFace | no disponible |
-| Modelos de verificacion de SciFact (por ejemplo, los publicados junto al dataset) | no disponible | no disponible | no disponible | HuggingFace / GitHub de Allen AI | no disponible |
+| hassanedwan/citecheck-sentence-selector | 22,7 M | no disponible | MIT | Hugging Face | no disponible |
+| cross-encoder/ms-marco-MiniLM-L-6-v2 (familia MiniLM para reranking) | ~22,7 M | no disponible | Apache 2.0 | Hugging Face | no disponible |
+| BAAI/bge-reranker-base | ~278 M | no disponible | MIT | Hugging Face | no disponible |
+| Modelos de verificacion de SciFact (por ejemplo, los publicados junto al dataset) | no disponible | no disponible | no disponible | Hugging Face / GitHub de Allen AI | no disponible |
 
 La diferencia principal frente a los rerankers genericos de la tabla es el dominio: este modelo esta especializado en resumenes biomedicales y en la tarea concreta de seleccionar frases de evidencia, mientras que los rerankers genericos se entrenan sobre colecciones web como MS MARCO.
 
@@ -86,7 +86,7 @@ La diferencia principal frente a los rerankers genericos de la tabla es el domin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hassanedwan/citecheck-sentence-selector
+- Modelo en Hugging Face: https://huggingface.co/hassanedwan/citecheck-sentence-selector
 - Dataset de entrenamiento (SciFact): https://huggingface.co/datasets/allenai/scifact
 - Referencia del proyecto: UMD DATA/MSML 641 (curso); no se proporciona URL especifica en la informacion disponible.
 - Otros enlaces (paper, blog, repositorio o demo): no disponibles en la informacion proporcionada.

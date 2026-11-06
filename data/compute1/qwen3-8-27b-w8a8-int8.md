@@ -82,8 +82,8 @@ La versión cuantizada reduce el uso de memoria en aproximadamente un 50% respec
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/compute1/Qwen3.8-27B-W8A8-INT8
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo cuantizado en Hugging Face: https://huggingface.co/compute1/Qwen3.8-27B-W8A8-INT8
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de despliegue en gingerlabs.ai: https://gingerlabs.ai/blog/qwen-38-27b-hardware-requirements-and-how-to-deploy-locally
 - Guía de ejecución local en lu-labs.ai: https://lu-labs.ai/blog/how-to-run-qwen-3-8-27b-locally

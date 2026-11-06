@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-escgold-normipo` es un repositorio publicado en HuggingFace por el usuario `keylazy`. El identificador sugiere que se trata de un ajuste fino (probablemente mediante adaptadores o un entrenamiento derivado) sobre el modelo multimodal Qwen2.5-Omni en su variante de 3B parámetros, pero esta interpretación procede únicamente del nombre del repositorio y no está confirmada en ninguna parte de la documentación publicada.
+`keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-escgold-normipo` es un repositorio publicado en Hugging Face por el usuario `keylazy`. El identificador sugiere que se trata de un ajuste fino (probablemente mediante adaptadores o un entrenamiento derivado) sobre el modelo multimodal Qwen2.5-Omni en su variante de 3B parámetros, pero esta interpretación procede únicamente del nombre del repositorio y no está confirmada en ninguna parte de la documentación publicada.
 
-La model card del autor es la plantilla genérica autogenerada por HuggingFace: todos los apartados relevantes (descripción, desarrollador, licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) figuran como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni idiomas soportados. El repositorio registra 0 descargas y 0 «likes» en el momento de la consulta, y su tamaño es de aproximadamente 0,1 GB, una cifra muy inferior a la que ocuparían los pesos completos de un transformer de 3B parámetros en `safetensors` (del orden de 6 GB en FP16), lo que apunta a que el repositorio contiene únicamente adaptadores, pesos parciales o una carga incompleta.
+La model card del autor es la plantilla genérica autogenerada por Hugging Face: todos los apartados relevantes (descripción, desarrollador, licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) figuran como `[More Information Needed]`. No hay pipeline declarado, ni licencia, ni idiomas soportados. El repositorio registra 0 descargas y 0 «likes» en el momento de la consulta, y su tamaño es de aproximadamente 0,1 GB, una cifra muy inferior a la que ocuparían los pesos completos de un transformer de 3B parámetros en `safetensors` (del orden de 6 GB en FP16), lo que apunta a que el repositorio contiene únicamente adaptadores, pesos parciales o una carga incompleta.
 
 Por todo ello, esta ficha debe interpretarse como una descripción del estado real del artefacto publicado y no como una evaluación de capacidades. La relevancia actual del repositorio es limitada: sin model card, sin datos de evaluación y sin licencia explícita, no es evaluable para uso en producción ni recomendable como dependencia en pipelines de investigación.
 
@@ -28,7 +28,7 @@ Por todo ello, esta ficha debe interpretarse como una descripción del estado re
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del modelo. La model card no incluye el apartado «Model Architecture and Objective», y los únicos metadatos disponibles son los tags de HuggingFace: `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental (el calculador mlCO2), citado en la propia plantilla de model card, por lo que no debe interpretarse como la publicación de referencia del modelo.
+No hay información publicada sobre la arquitectura del modelo. La model card no incluye el apartado «Model Architecture and Objective», y los únicos metadatos disponibles son los tags de Hugging Face: `transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible` y `region:us`. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental (el calculador mlCO2), citado en la propia plantilla de model card, por lo que no debe interpretarse como la publicación de referencia del modelo.
 
 Tampoco se documentan datos de entrenamiento: no se indica el número de tokens, la composición del dataset, ni si hubo etapas de ajuste por instrucciones, RLHF o DPO. Los fragmentos del identificador (`mask`, `slurp`, `syn`, `escgold`, `normipo`) podrían corresponder a nombres de datasets, técnicas de enmascarado o etiquetas internas del autor, pero no existe ninguna fuente que los explique. No se puede confirmar por tanto ninguna innovación técnica.
 
@@ -38,7 +38,7 @@ No es posible verificar capacidades concretas con la información disponible. La
 
 - El repositorio es cargable mediante la librería `transformers`, según el tag `library_name: transformers`.
 - Los pesos están en formato `safetensors`.
-- El tag `endpoints_compatible` indica que el repositorio es compatible con los endpoints de inferencia gestionados de HuggingFace, aunque esto es un metadato de plataforma y no una capacidad funcional del modelo.
+- El tag `endpoints_compatible` indica que el repositorio es compatible con los endpoints de inferencia gestionados de Hugging Face, aunque esto es un metadato de plataforma y no una capacidad funcional del modelo.
 - Si el identificador refleja correctamente el modelo base, cabría esperar capacidades multimodales (texto, audio, imagen y vídeo) propias de la familia Qwen2.5-Omni, así como modo de razonamiento explícito. Sin embargo, esto es una inferencia no confirmada y no debe tomarse como una característica del artefacto publicado.
 - Soporte de tool calling, function calling, agentes y multilingüismo: no disponible.
 
@@ -98,7 +98,7 @@ La busqueda web realizada no devolvio documentacion tecnica, papers ni repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-escgold-normipo
+- Repositorio en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-escgold-normipo
 - Articulo citado en la plantilla de model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental mlCO2: https://mlco2.github.io/impact
 - Paper, blog, repositorio o demo del autor: no disponible

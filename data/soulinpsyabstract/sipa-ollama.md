@@ -79,7 +79,7 @@ La comparativa se limita al modelo base y alternativas de tamaño similar. No ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: [SoulInPsyAbstract/sipa-ollama](https://huggingface.co/SoulInPsyAbstract/sipa-ollama)
+- Repositorio Hugging Face: [SoulInPsyAbstract/sipa-ollama](https://huggingface.co/SoulInPsyAbstract/sipa-ollama)
 - Modelo base: [NousResearch/Hermes-3-Llama-3.1-8B](https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B)
 - Sitio oficial de SIPA OS: [https://sipa-os.org](https://sipa-os.org)
 - Repositorio de gobernanza: [sipa-os-governance](https://huggingface.co/SoulInPsyAbstract/sipa-os-governance)

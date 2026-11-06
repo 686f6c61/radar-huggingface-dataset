@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Hydrogen-1.0-MXFP4 | no disponible | 1M | MIT | HuggingFace (este repo) | Cuantización MXFP4, probada en AMD MI350X con ATOM |
-| Hydrogen-1.0 (BF16) | no disponible | 1M | MIT | HuggingFace | Versión sin cuantizar; requiere más memoria |
-| Hydrogen-1.0-NVFP4 | no disponible | 1M | MIT | HuggingFace | Cuantización NVFP4; probada en 8x B300 (NVIDIA Blackwell) |
-| GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | HuggingFace (zai-org/GLM-5.3) | Modelo base sobre el que se construye Hydrogen-1.0 |
+| Hydrogen-1.0-MXFP4 | no disponible | 1M | MIT | Hugging Face (este repo) | Cuantización MXFP4, probada en AMD MI350X con ATOM |
+| Hydrogen-1.0 (BF16) | no disponible | 1M | MIT | Hugging Face | Versión sin cuantizar; requiere más memoria |
+| Hydrogen-1.0-NVFP4 | no disponible | 1M | MIT | Hugging Face | Cuantización NVFP4; probada en 8x B300 (NVIDIA Blackwell) |
+| GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | Hugging Face (zai-org/GLM-5.3) | Modelo base sobre el que se construye Hydrogen-1.0 |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni con modelos de otras familias.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni con m
 
 ## Enlaces
 
-- Repositorio HuggingFace (MXFP4): https://huggingface.co/deep-principle/Hydrogen-1.0-MXFP4
+- Repositorio Hugging Face (MXFP4): https://huggingface.co/deep-principle/Hydrogen-1.0-MXFP4
 - Modelo base BF16: https://huggingface.co/deep-principle/Hydrogen-1.0
 - Variante NVFP4: https://huggingface.co/deep-principle/Hydrogen-1.0-NVFP4
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3

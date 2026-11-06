@@ -90,7 +90,7 @@ La comparativa cuantitativa entre estos modelos no está disponible en las fuent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Djanghao/Widget2Code-Qwen3.5-9B-Full-SFT-2ep
+- Hugging Face: https://huggingface.co/Djanghao/Widget2Code-Qwen3.5-9B-Full-SFT-2ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/Djanghao/Widget2Code-Data
 - Sitio del proyecto: https://djanghao.github.io/widget2code/
 - Repositorio GitHub: https://github.com/Djanghao/widget2code

@@ -61,8 +61,8 @@ No se dispone de comparativas oficiales. Dado el tamaño inferido, podría compa
 
 ## Enlaces
 
-- [HuggingFace - aioaneid/nanochat_n_layer_12_seq_len_1024_n_embd_1024](https://huggingface.co/aioaneid/nanochat_n_layer_12_seq_len_1024_n_embd_1024)
-- [Perfil de aioaneid en HuggingFace](https://huggingface.co/aioaneid)
+- [Hugging Face - aioaneid/nanochat_n_layer_12_seq_len_1024_n_embd_1024](https://huggingface.co/aioaneid/nanochat_n_layer_12_seq_len_1024_n_embd_1024)
+- [Perfil de aioaneid en Hugging Face](https://huggingface.co/aioaneid)
 - [Ficha en llms.info](https://llms.info/models/aioaneid-nanochat-n-layer-12-seq-len-1024-n-embd-1024-832)
 - [Análisis de NanoChat en GitHub Gist](https://gist.github.com/JustinAngel2/acc3a9da5369456be19cab5d3ea9ef07)
 - [Blog post sobre NanoChat 1: data collection and pretraining](https://laerdon.github.io/nanochat/2026/01/12/nanochat1.html)

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| phuctahong/nanogpt-gpt-mha-falcon-1a (este modelo) | 379M | no disponible | Apache-2.0 | HuggingFace, safetensors |
-| Pythia-410M (EleutherAI) | 410M | 2048 | Apache-2.0 | HuggingFace, safetensors |
-| GPT-2 medium (OpenAI) | 355M | 1024 | MIT | HuggingFace, safetensors |
+| phuctahong/nanogpt-gpt-mha-falcon-1a (este modelo) | 379M | no disponible | Apache-2.0 | Hugging Face, safetensors |
+| Pythia-410M (EleutherAI) | 410M | 2048 | Apache-2.0 | Hugging Face, safetensors |
+| GPT-2 medium (OpenAI) | 355M | 1024 | MIT | Hugging Face, safetensors |
 | NanoGPT (karpathy) | 124M | 1024 | MIT | GitHub, checkpoint propio |
 
 La comparación se limita a parámetros, licencia y disponibilidad, ya que no se dispone de datos de rendimiento para este checkpoint. La arquitectura experimental y la dependencia de `nanogptpro` hacen que el modelo no sea directamente intercambiable con las alternativas citadas en cuanto a facilidad de uso.
@@ -79,7 +79,7 @@ La comparación se limita a parámetros, licencia y disponibilidad, ya que no se
 
 ## Enlaces
 
-- HuggingFace: [phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12935989-step100000](https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12935989-step100000)
+- Hugging Face: [phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12935989-step100000](https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job12935989-step100000)
 - Run de W&B: [M_gpt-mha-falcon-1A-ctxbeta-ctxlambda-chunk-triton_379m_Opt_adamw_LR_0.001_D_fineweb-edu100B_T_49.15B_time_20260826_070832_jobid_12935989](https://wandb.ai/princeton-pli/Nanogpt/runs/wsfirgr3)
 - Proyecto W&B de NanoGPT: [princeton-pli/Nanogpt](https://wandb.ai/princeton-pli/Nanogpt)
 - Checkpoint similar con job11173483: [phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000](https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1a-ctxbeta-ctxlambda-chunk-triton-379m-job11173483-step100000)

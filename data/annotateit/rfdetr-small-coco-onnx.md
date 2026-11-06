@@ -88,7 +88,7 @@ Nota: los datos de RT-DETR y YOLOv8 son orientativos y pueden variar; no se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnnotateIt/rfdetr-small-coco-onnx
+- Hugging Face: https://huggingface.co/AnnotateIt/rfdetr-small-coco-onnx
 - Repositorio original de RF-DETR: https://github.com/roboflow/rf-detr
 - Repositorio de conversión ONNX con código de inferencia: https://github.com/PierreMarieCurie/rf-detr-onnx
 - Otro ONNX de RF-DETR Small para 80 clases: https://huggingface.co/tuxracer/coco-rfdetr-small

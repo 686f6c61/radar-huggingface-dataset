@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Desarrollador | Parametros | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TRELLIS.2-4B-diffusers-3d | suvadityamuk (conversion de microsoft/TRELLIS.2-4B) | Aproximadamente 4B | O-Voxel, malla, Gaussian splats, GLB con PBR | MIT (pesos TRELLIS.2), acondicionador DINOv3 bajo licencia de Meta no incluido | HuggingFace, biblioteca `diffusers-3d` (fork) |
-| microsoft/TRELLIS.2-4B | Microsoft | Aproximadamente 4B | O-Voxel, malla, Gaussian splats, GLB con PBR | MIT (TRELLIS.2) | HuggingFace; requiere el codigo de investigacion original, no la API de `diffusers` |
-| microsoft/TRELLIS-image-large | Microsoft | No disponible | Estructura dispersa y SLAT (version anterior de la familia) | MIT | HuggingFace; su decodificador de estructura dispersa se reutiliza en esta conversion |
+| TRELLIS.2-4B-diffusers-3d | suvadityamuk (conversion de microsoft/TRELLIS.2-4B) | Aproximadamente 4B | O-Voxel, malla, Gaussian splats, GLB con PBR | MIT (pesos TRELLIS.2), acondicionador DINOv3 bajo licencia de Meta no incluido | Hugging Face, biblioteca `diffusers-3d` (fork) |
+| microsoft/TRELLIS.2-4B | Microsoft | Aproximadamente 4B | O-Voxel, malla, Gaussian splats, GLB con PBR | MIT (TRELLIS.2) | Hugging Face; requiere el codigo de investigacion original, no la API de `diffusers` |
+| microsoft/TRELLIS-image-large | Microsoft | No disponible | Estructura dispersa y SLAT (version anterior de la familia) | MIT | Hugging Face; su decodificador de estructura dispersa se reutiliza en esta conversion |
 | Otros generadores image-to-3D de gran escala (por ejemplo, la familia Hunyuan3D) | No disponible | No disponible | Malla texturizada | No disponible | No disponible |
 
 La busqueda web realizada no ha aportado datos verificables sobre los modelos alternativos, por lo que las filas correspondientes se dejan como no disponibles en lugar de estimarlas.
@@ -88,7 +88,7 @@ La busqueda web realizada no ha aportado datos verificables sobre los modelos al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suvadityamuk/TRELLIS.2-4B-diffusers-3d
+- Repositorio en Hugging Face: https://huggingface.co/suvadityamuk/TRELLIS.2-4B-diffusers-3d
 - Modelo base: https://huggingface.co/microsoft/TRELLIS.2-4B
 - Fork de diffusers usado para la conversion: https://github.com/suvadityamuk/diffusers
 - Subpaquete diffusers-3d: https://github.com/suvadityamuk/diffusers.git#subdirectory=packages/diffusers-3d

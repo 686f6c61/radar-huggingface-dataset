@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo, ya que ninguno de estos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youngseok12/AX-3.1-Light-sft_source_screen_71533_3000
+- Modelo en Hugging Face: https://huggingface.co/youngseok12/AX-3.1-Light-sft_source_screen_71533_3000
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Variante `AX-3.1-Light-sft_v3_0`: https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0
 - Variante `AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300`: https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300

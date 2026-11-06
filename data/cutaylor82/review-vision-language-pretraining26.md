@@ -86,7 +86,7 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cutaylor82/review-vision-language-pretraining26
+- Repositorio en Hugging Face: https://huggingface.co/cutaylor82/review-vision-language-pretraining26
 - Nota principal del repositorio: `reading.md` (dentro del propio repositorio)
 - Documentacion del repositorio: `README.md` (dentro del propio repositorio)
 - Hugging Face, plataforma general: https://huggingface.co/

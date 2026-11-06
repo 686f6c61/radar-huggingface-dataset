@@ -88,7 +88,7 @@ No disponible. La información proporcionada no incluye modelos comparables de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zoukmar75/burotu-glimmer
+- Modelo en Hugging Face: https://huggingface.co/zoukmar75/burotu-glimmer
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Código de carga e inferencia: https://github.com/zoukmar/burotu
 - No se han encontrado en la información disponible papers, blogs, demos ni otros repositorios adicionales.

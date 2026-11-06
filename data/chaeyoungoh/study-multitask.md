@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Multitask es un prototipo de investigacion publicado por el usuario chaeyoungoh en HuggingFace bajo el identificador `chaeyoungoh/study-multitask`. Se trata de un transformer de escala "base" orientado a experimentacion con aprendizaje multitarea, con 24.832 parametros totales segun los pesos en formato safetensors. El repositorio no incluye ningun checkpoint entrenado ni resultados de evaluacion: el fichero `model.safetensors` se describe explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
+Tiny Transformer for Multitask es un prototipo de investigacion publicado por el usuario chaeyoungoh en Hugging Face bajo el identificador `chaeyoungoh/study-multitask`. Se trata de un transformer de escala "base" orientado a experimentacion con aprendizaje multitarea, con 24.832 parametros totales segun los pesos en formato safetensors. El repositorio no incluye ningun checkpoint entrenado ni resultados de evaluacion: el fichero `model.safetensors` se describe explicitamente como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo con rendimiento verificado.
 
 El modelo resuelve, por tanto, un problema de caracter metodologico mas que de producto: sirve como punto de partida reproducible para estudiar arquitecturas pequenas con atencion de ventana deslizante, fusion de bajo rango (low rank), activacion mish y normalizacion por grupos (groupnorm). La model card insiste en que la receta de entrenamiento incluida (SGD con schedule coseno) son valores iniciales del script, no evidencia de un entrenamiento completado, y pide que cualquier evaluacion futura use conjuntos retenidos especificos de tarea, al menos tres semillas y una linea base de capacidad comparable.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 24.832 parametros, el checkpoint en precision completa ocupa del orden de decenas o pocos cientos de kilobytes; cabe en cualquier GPU, en CPU e incluso en entornos embebidos.
 - GPU recomendadas: no se especifica ninguna. Cualquier GPU, incluida una iGPU o una grafica de gama baja, es mas que suficiente.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo actual o antigua, sin requisitos apreciables de memoria.
-- Opciones de despliegue: al tratarse de una implementacion personalizada, la carga mediante APIs genericas de HuggingFace Transformers requiere un adaptador explicito. El autor proporciona `inference.py` como punto de entrada. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, y tampoco se distribuyen pesos en GGUF.
+- Opciones de despliegue: al tratarse de una implementacion personalizada, la carga mediante APIs genericas de Hugging Face Transformers requiere un adaptador explicito. El autor proporciona `inference.py` como punto de entrada. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, y tampoco se distribuyen pesos en GGUF.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de latencia ni de throughput.
 
 ## Comparativa con modelos similares
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye modelos de referencia com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaeyoungoh/study-multitask
+- Modelo en Hugging Face: https://huggingface.co/chaeyoungoh/study-multitask
 - No se han encontrado en la busqueda web papers, blogs, repositorios auxiliares ni demos asociados a este modelo. Los resultados de busqueda disponibles corresponden a paginas no relacionadas con el modelo y se descartan como fuentes.

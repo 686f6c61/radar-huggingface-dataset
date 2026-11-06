@@ -2,11 +2,11 @@
 
 ## Resumen
 
-canopus77/slm-rag-sft-merged es un ajuste fino supervisado (SFT) del modelo unsloth/Llama-3.2-3B-Instruct-bnb-4bit, publicado por el usuario canopus77 en HuggingFace. Se trata de un modelo denso de 3.212.749.824 parametros (unos 3,21 mil millones) orientado a generacion de texto conversacional, con pesos distribuidos en formato safetensors y un tamano de repositorio de 6,4 GB. El nombre del repositorio sugiere un ajuste orientado a generacion aumentada por recuperacion (RAG), aunque la model card no documenta ni el conjunto de datos ni el procedimiento de entrenamiento.
+canopus77/slm-rag-sft-merged es un ajuste fino supervisado (SFT) del modelo unsloth/Llama-3.2-3B-Instruct-bnb-4bit, publicado por el usuario canopus77 en Hugging Face. Se trata de un modelo denso de 3.212.749.824 parametros (unos 3,21 mil millones) orientado a generacion de texto conversacional, con pesos distribuidos en formato safetensors y un tamano de repositorio de 6,4 GB. El nombre del repositorio sugiere un ajuste orientado a generacion aumentada por recuperacion (RAG), aunque la model card no documenta ni el conjunto de datos ni el procedimiento de entrenamiento.
 
 El problema que resuelve es acotado: proporcionar una variante pequena, desplegable en hardware de consumo, del modelo Llama 3.2 3B Instruct, con licencia declarada Apache-2.0. Su relevancia practica es limitada por el momento: el repositorio acumula 0 descargas y 0 likes, y la ficha tecnica del autor es minima (no incluye evaluacion, composicion del dataset ni hiperparametros). Esto lo convierte en un artefacto interesante para experimentacion local y para reutilizacion como punto de partida, mas que en una opcion lista para produccion.
 
-El entrenamiento se realizo, segun la propia model card, con Unsloth y la libreria TRL de HuggingFace, con la afirmacion de que fue "2x faster" (el doble de rapido) en entrenamiento. El sufijo "merged" indica que los adaptadores se fusionaron en los pesos del modelo base. El idioma declarado es unicamente ingles (en).
+El entrenamiento se realizo, segun la propia model card, con Unsloth y la libreria TRL de Hugging Face, con la afirmacion de que fue "2x faster" (el doble de rapido) en entrenamiento. El sufijo "merged" indica que los adaptadores se fusionaron en los pesos del modelo base. El idioma declarado es unicamente ingles (en).
 
 ## Especificaciones tecnicas
 
@@ -24,7 +24,7 @@ El entrenamiento se realizo, segun la propia model card, con Unsloth y la librer
 | Pipeline | text-generation |
 | Libreria | transformers |
 | Tamano del repositorio | 6,4 GB |
-| Fecha de publicacion | 11 de septiembre de 2026 (fecha registrada en HuggingFace) |
+| Fecha de publicacion | 11 de septiembre de 2026 (fecha registrada en Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -77,10 +77,10 @@ Los datos de los modelos de referencia proceden de sus fichas publicas y convien
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| canopus77/slm-rag-sft-merged | 3,21 mil millones | no confirmado (el base declara 128 000) | apache-2.0 declarada, con las condiciones del base Llama | HuggingFace, 0 descargas | no disponible |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128 000 tokens declarados por Meta | Llama 3.2 Community License | HuggingFace, ampliamente usado | no comparable directamente; es el modelo de partida |
-| Qwen/Qwen2.5-3B-Instruct | 3,09 mil millones | 32 768 tokens nativos | Apache-2.0 | HuggingFace | no disponible en esta ficha |
-| google/gemma-2-2b-it | 2,61 mil millones | 8 192 tokens | Gemma Terms of Use | HuggingFace | no disponible en esta ficha |
+| canopus77/slm-rag-sft-merged | 3,21 mil millones | no confirmado (el base declara 128 000) | apache-2.0 declarada, con las condiciones del base Llama | Hugging Face, 0 descargas | no disponible |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128 000 tokens declarados por Meta | Llama 3.2 Community License | Hugging Face, ampliamente usado | no comparable directamente; es el modelo de partida |
+| Qwen/Qwen2.5-3B-Instruct | 3,09 mil millones | 32 768 tokens nativos | Apache-2.0 | Hugging Face | no disponible en esta ficha |
+| google/gemma-2-2b-it | 2,61 mil millones | 8 192 tokens | Gemma Terms of Use | Hugging Face | no disponible en esta ficha |
 
 ## Limitaciones y advertencias
 
@@ -96,10 +96,10 @@ Los datos de los modelos de referencia proceden de sus fichas publicas y convien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canopus77/slm-rag-sft-merged
+- Modelo en Hugging Face: https://huggingface.co/canopus77/slm-rag-sft-merged
 - Modelo base inmediato: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Licencia Llama 3.2 Community License: https://www.llama.com/llama3_2/license/
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces encontrados correspondian a servicios meteorologicos y no se han incluido.

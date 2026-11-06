@@ -89,7 +89,7 @@ Ademas, bajo un clasificador estricto de refusal duro el modelo presenta 0 de 55
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PinoCookie/LFM2.5-2.6B-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/PinoCookie/LFM2.5-2.6B-Abliterated
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Modelo de referencia: https://huggingface.co/Abiray/LFM2.5-2.6B-Heretic-Abliterated-GGUF
 - Otro modelo del autor: https://huggingface.co/PinoCookie/LFM2.5-1.2B-Instruct-Abliterated

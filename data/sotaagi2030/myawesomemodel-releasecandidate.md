@@ -96,7 +96,7 @@ La única comparativa disponible es la que proporciona la propia model card, que
 - No se dispone de información sobre la arquitectura concreta, el número de parámetros ni la longitud de contexto, lo que impide evaluar su viabilidad para tareas de contexto largo.
 - Los idiomas soportados no están documentados; la model card está en inglés y no se especifica cobertura multilingüe.
 - Los benchmarks presentados son internos y no se basan en evaluaciones estándar externas (MMLU, HumanEval, GSM8K), por lo que su comparabilidad con otros modelos es limitada.
-- La etiqueta `bert` en los tags de HuggingFace contradice las capacidades descritas (razonamiento profundo, function calling), lo que genera incertidumbre sobre la arquitectura real.
+- La etiqueta `bert` en los tags de Hugging Face contradice las capacidades descritas (razonamiento profundo, function calling), lo que genera incertidumbre sobre la arquitectura real.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que es un modelo muy reciente o en fase de prueba (el nombre incluye "ReleaseCandidate").
 - No se documenta el proceso de entrenamiento ni los datos utilizados, lo que dificulta la evaluación de sesgos o alineación.
 - Aunque la licencia MIT permite uso comercial sin restricciones, la falta de documentación técnica completa es un riesgo para su adopción en producción.

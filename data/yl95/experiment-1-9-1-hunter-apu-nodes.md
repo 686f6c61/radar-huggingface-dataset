@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo YL95/experiment-1.9.1-hunter-apu-nodes es un trabajo de investigacion publicado en HuggingFace por el autor YL95, orientado a tareas de ranking en el ambito financiero y de series temporales. Se trata de un "Twelve-Node Hunter Ranker" de 1.069.302.417 parametros (aproximadamente 1,07 mil millones), entrenado como continuacion del Experimento 1.9 a partir de su mejor checkpoint, en el paso 328 sobre 104.960 muestras programadas. La arquitectura concreta del modelo no se describe en la model card, y el pipeline de HuggingFace no esta declarado.
+El modelo YL95/experiment-1.9.1-hunter-apu-nodes es un trabajo de investigacion publicado en Hugging Face por el autor YL95, orientado a tareas de ranking en el ambito financiero y de series temporales. Se trata de un "Twelve-Node Hunter Ranker" de 1.069.302.417 parametros (aproximadamente 1,07 mil millones), entrenado como continuacion del Experimento 1.9 a partir de su mejor checkpoint, en el paso 328 sobre 104.960 muestras programadas. La arquitectura concreta del modelo no se describe en la model card, y el pipeline de Hugging Face no esta declarado.
 
 El modelo se entrena sobre doce nodos AMD Instinct MI300A con cuatro workers de GPU cada uno (48 workers en total), usando calculo en BF16 con pesos maestros en FP32 y optimizador Adam. El entrenamiento emplea un learning rate por actualizacion limitado a 0,00006 y un batch global que pasa de 320 a 1536, con microbatch 2 y acumulacion de gradientes balanceada. Se restauran el estado de Adam y del sampler, y se resemillan los flujos RNG para 48 workers, por lo que, segun el propio autor, no se trata de una continuacion bit a bit.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YL95/experiment-1.9.1-hunter-apu-nodes
+- Hugging Face: https://huggingface.co/YL95/experiment-1.9.1-hunter-apu-nodes
 - TensorBoard: https://huggingface.co/YL95/experiment-1.9.1-hunter-apu-nodes/tensorboard
 - Codigo fuente (GitHub): https://github.com/YLiu95/MSc-new-experiments/tree/main/experiment%201.9.1%20Hunter%20apu%20nodes
 - Modelo base: https://huggingface.co/YL95/experiment-1.9-hunter-apu-nodes

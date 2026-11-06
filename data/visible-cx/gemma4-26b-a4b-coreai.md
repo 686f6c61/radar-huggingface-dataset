@@ -43,7 +43,7 @@ Una particularidad técnica es que el bundle es decode-only (S=1): solo incluye 
 - Investigación sobre cuantización y kernels MoE en Metal: el código y los kernels personalizados pueden servir de referencia para otros desarrolladores que quieran portar modelos MoE a Apple Silicon.
 - Evaluación de rendimiento de decodificación con contexto largo: aunque el bundle no ha sido cualificado, su configuración de KV cache fp16 con forma creciente permite estudiar el consumo de memoria en función de la longitud de secuencia.
 - Desarrollo de herramientas de generación de código o texto técnico en local: el modelo base Gemma 4 tiene capacidades de razonamiento y código, aunque este bundle no ha sido verificado en esas tareas.
-- Pruebas de integración de la librería `coreai` en proyectos propios: para desarrolladores que quieran entender el flujo de conversión de modelos HuggingFace a bundles Core AI.
+- Pruebas de integración de la librería `coreai` en proyectos propios: para desarrolladores que quieran entender el flujo de conversión de modelos Hugging Face a bundles Core AI.
 
 ## Benchmarks y rendimiento
 
@@ -80,8 +80,8 @@ La comparativa con Mixtral 8x7B es estructural (ambos son MoE), pero no hay dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/visible-cx/gemma4-26b-a4b-CoreAI
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
+- Repositorio Hugging Face: https://huggingface.co/visible-cx/gemma4-26b-a4b-CoreAI
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-unquantized
 - Página oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Documentación de Gemma 4 para desarrolladores (Google AI): https://ai.google.dev/gemma/docs/core
 - Model card de Gemma 4: https://ai.google.dev/gemma/docs/core/model_card_4

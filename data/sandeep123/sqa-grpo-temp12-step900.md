@@ -75,6 +75,6 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/sqa-grpo-temp12-step900
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/sqa-grpo-temp12-step900
 - Perfil del autor: https://huggingface.co/sandeep123
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B

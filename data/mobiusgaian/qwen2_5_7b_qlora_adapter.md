@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MobiusGaian/qwen2_5_7b_qlora_adapter` es un adaptador de ajuste fino ligero (LoRA/QLoRA) publicado en HuggingFace por el usuario MobiusGaian, pensado para montarse sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo completo con pesos propios, sino de un conjunto de matrices de adaptacion de bajo rango que se cargan junto al modelo base mediante la libreria PEFT. El repositorio declara la etiqueta `base_model:adapter:Qwen/Qwen2.5-7B-Instruct`, lo que confirma que el modelo original no se redistribuye y que el usuario final debe descargarlo por separado.
+`MobiusGaian/qwen2_5_7b_qlora_adapter` es un adaptador de ajuste fino ligero (LoRA/QLoRA) publicado en Hugging Face por el usuario MobiusGaian, pensado para montarse sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo completo con pesos propios, sino de un conjunto de matrices de adaptacion de bajo rango que se cargan junto al modelo base mediante la libreria PEFT. El repositorio declara la etiqueta `base_model:adapter:Qwen/Qwen2.5-7B-Instruct`, lo que confirma que el modelo original no se redistribuye y que el usuario final debe descargarlo por separado.
 
 La relevancia de esta publicacion es limitada y de caracter practico: ejemplifica el flujo habitual de personalizacion de un LLM de 7B con recursos modestos (una sola GPU consumer), aplicando QLoRA para reducir el consumo de memoria durante el entrenamiento. Sin embargo, la model card esta practicamente vacia: todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion y licencia aparecen como `[More Information Needed]`, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -22,10 +22,10 @@ Por tanto, cualquier afirmacion sobre el comportamiento real del adaptador, el d
 | Formato de pesos | safetensors (adaptador PEFT) |
 | Libreria | peft (version declarada en la model card: PEFT 0.19.1) |
 | Modelo base | Qwen/Qwen2.5-7B-Instruct |
-| Tamano del repositorio | 0,0 GB (redondeo de HuggingFace; el contenido real es inferior a 0,05 GB) |
+| Tamano del repositorio | 0,0 GB (redondeo de Hugging Face; el contenido real es inferior a 0,05 GB) |
 | Pipeline declarado | text-generation |
 | Idioma de la model card | Ingles (plantilla sin cumplimentar) |
-| Fecha de creacion | 2026-10-06 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-06 (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-10-06 |
 
 ## Arquitectura y entrenamiento
@@ -99,12 +99,12 @@ Comparativa de rendimiento: no disponible. No existen resultados de benchmarks p
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/MobiusGaian/qwen2_5_7b_qlora_adapter
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/MobiusGaian/qwen2_5_7b_qlora_adapter
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de LoRA (referenciado en las etiquetas del repositorio): https://arxiv.org/abs/1910.09700
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index
 - Repositorio de PEFT en GitHub: https://github.com/huggingface/peft
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019) sobre emisiones: https://arxiv.org/abs/1910.09700
 

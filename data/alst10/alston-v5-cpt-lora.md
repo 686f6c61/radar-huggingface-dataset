@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alst10/alston-v5-cpt-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario alst10 en HuggingFace. Se trata de un fine-tuning eficiente aplicado sobre el modelo base `mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated`, una variante de Llama-3.1-8B-Instruct en la que se ha eliminado el comportamiento de rechazo (abliteración) para permitir respuestas sin restricciones de seguridad. El adaptador está entrenado mediante aprendizaje supervisado (SFT) utilizando las librerías TRL y Unsloth, como indican las etiquetas del repositorio.
+El modelo `alst10/alston-v5-cpt-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario alst10 en Hugging Face. Se trata de un fine-tuning eficiente aplicado sobre el modelo base `mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated`, una variante de Llama-3.1-8B-Instruct en la que se ha eliminado el comportamiento de rechazo (abliteración) para permitir respuestas sin restricciones de seguridad. El adaptador está entrenado mediante aprendizaje supervisado (SFT) utilizando las librerías TRL y Unsloth, como indican las etiquetas del repositorio.
 
 La ficha pública es extremadamente escasa: no se proporcionan detalles sobre el propósito del adaptador, los datos de entrenamiento, los hiperparámetros, ni resultados de evaluación. A día de hoy, el modelo registra cero descargas y cero likes, lo que sugiere que es un experimento personal del autor. Su relevancia actual es limitada, ya que carece de documentación y validación independiente. Sin embargo, puede servir como ejemplo de cómo aplicar LoRA sobre un modelo base abliterated para explorar comportamientos de generación sin censura, aunque sin garantías de calidad o seguridad.
 
@@ -78,7 +78,7 @@ No se dispone de informacion para comparar este adaptador con otros modelos. Al 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alst10/alston-v5-cpt-lora
+- Hugging Face: https://huggingface.co/alst10/alston-v5-cpt-lora
 - Modelo base: https://huggingface.co/mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated
 
 No se encontraron otros enlaces relevantes en la busqueda web (papers, blogs, demos).

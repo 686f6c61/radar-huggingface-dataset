@@ -72,8 +72,8 @@ Nota: la evaluación de marcha usa una aproximación 2D basada en una tabla de v
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este) | 0,8B + LoRA | No disponible | Decisión discreta en robot simulado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| LINK-01 (este) | 0,8B + LoRA | No disponible | Decisión discreta en robot simulado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO "profesor" (brain.json) | No disponible | No aplica | Decisión discreta en robot simulado | No disponible | Repositorio connect-tycoon |
 
 No se dispone de información sobre otros adaptadores comparables de la misma familia ni de resultados cruzados con modelos de decisión de otros autores.
@@ -93,7 +93,7 @@ No se dispone de información sobre otros adaptadores comparables de la misma fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lookarooka/connectailab-rl-novice-v4-link01
+- Modelo en Hugging Face: https://huggingface.co/lookarooka/connectailab-rl-novice-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

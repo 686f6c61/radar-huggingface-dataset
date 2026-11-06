@@ -23,7 +23,7 @@ Sin embargo, la documentación disponible es extremadamente limitada: no se indi
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la técnica LoRA, que congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atención y proyección. El entrenamiento se realizó con supervisión fina (SFT) utilizando la librería TRL de HuggingFace, según los metadatos del repositorio. No se proporcionan detalles sobre el dataset, el número de pasos, la tasa de aprendizaje ni el rango de las matrices LoRA.
+El adaptador se basa en la técnica LoRA, que congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atención y proyección. El entrenamiento se realizó con supervisión fina (SFT) utilizando la librería TRL de Hugging Face, según los metadatos del repositorio. No se proporcionan detalles sobre el dataset, el número de pasos, la tasa de aprendizaje ni el rango de las matrices LoRA.
 
 El modelo base Qwen3.5-9B emplea una arquitectura híbrida que combina Gated DeltaNet (una variante de atención lineal con compuertas) y Gated Attention (atención tradicional con mecanismos de compuerta). Esta combinación permite manejar secuencias largas de forma eficiente, manteniendo un rendimiento competitivo en razonamiento y generación. El modelo base fue entrenado con un enfoque multimodal, fusionando tokens de texto e imagen en un mismo espacio de representación, y soporta tool calling nativo, lo que lo hace adecuado para flujos de trabajo agénticos.
 
@@ -84,7 +84,7 @@ El adaptador `qwen3.5-9b-ecommerce` hereda las ventajas del base (contexto largo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/urukbdhero/qwen3.5-9b-ecommerce
+- Repositorio Hugging Face: https://huggingface.co/urukbdhero/qwen3.5-9b-ecommerce
 - Modelo base Qwen3.5-9B (referencia): https://huggingface.co/Qwen/Qwen3.5-9B
 - Página de Qwen3.5-9B en There's An AI For That: https://theresanaiforthat.com/model/qwen3-5-9b/
 - Qwen3.5 9B en Together AI: https://www.together.ai/models/qwen3-5-9b

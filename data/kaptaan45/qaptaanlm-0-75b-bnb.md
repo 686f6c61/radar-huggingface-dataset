@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-BnB
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/kaptaan45/QaptaanLM-0.75B-BnB
 - Modelo base: https://huggingface.co/kaptaan45/QaptaanLM-0.75B
 - Repositorio GitHub con pipeline de fine-tuning: https://github.com/rudy-07/QaptaanLM-0.75B
 - Dataset KapCode-1B en Hugging Face: https://huggingface.co/datasets/kaptaan45/KapCode-1B

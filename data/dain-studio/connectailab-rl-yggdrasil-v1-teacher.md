@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yggdrasil (este modelo) | Política RL para simulador CONNECT TYCOON | no disponible (~0,8B según base declarada) | no disponible | Apache 2.0 | HuggingFace |
+| Yggdrasil (este modelo) | Política RL para simulador CONNECT TYCOON | no disponible (~0,8B según base declarada) | no disponible | Apache 2.0 | Hugging Face |
 | Política basada en reglas (v4) | Sistema experto de referencia | no aplica | no aplica | no disponible | Referenciada en la model card |
 | Qwen3.5-0.8B | LLM generativo | ~0,8B | no disponible en la información proporcionada | no disponible en la información proporcionada | No confirmado en la información disponible |
 
@@ -93,7 +93,7 @@ No se dispone de información sobre otros modelos de RL para toma de decisiones 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dain-studio/connectailab-rl-yggdrasil-v1-teacher
+- Hugging Face: https://huggingface.co/dain-studio/connectailab-rl-yggdrasil-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

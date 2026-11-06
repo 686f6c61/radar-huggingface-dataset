@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4` es un modelo de generacion de texto publicado por el usuario Sartaj Bhuvaji en HuggingFace. Por sus etiquetas y su arquitectura declarada (`qwen3_moe`), se trata de un transformer con mezcla de expertos (MoE) de la familia Qwen3 MoE, con un total de 8.477.353.984 parametros (aproximadamente 8,48 mil millones) segun los pesos en safetensors, y un tamano de repositorio de 17,0 GB, coherente con pesos en BF16/FP16. La model card es la plantilla autogenerada de transformers y no aporta informacion tecnica adicional.
+El modelo `sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4` es un modelo de generacion de texto publicado por el usuario Sartaj Bhuvaji en Hugging Face. Por sus etiquetas y su arquitectura declarada (`qwen3_moe`), se trata de un transformer con mezcla de expertos (MoE) de la familia Qwen3 MoE, con un total de 8.477.353.984 parametros (aproximadamente 8,48 mil millones) segun los pesos en safetensors, y un tamano de repositorio de 17,0 GB, coherente con pesos en BF16/FP16. La model card es la plantilla autogenerada de transformers y no aporta informacion tecnica adicional.
 
 El identificador del modelo sugiere que se trata de un experimento de destilacion (o ajuste) comparado frente a una linea base, con un entrenamiento de 3.000 pasos y un calentamiento ("warmup") de 450 pasos a una tasa de aprendizaje de 1e-4. El nombre "bonsai" lo vincula nominalmente a la familia Bonsai, aunque no hay confirmacion oficial de que pertenezca a ella. Los resultados de busqueda web muestran variantes Bonsai basadas en Qwen (Qwen3.6 27B y Qwen3.8 27B) con cuantizacion ternaria y de 1 bit, pero no es posible confirmar que este checkpoint concreto derive de esas variantes.
 
@@ -72,9 +72,9 @@ No hay informacion verificada suficiente para comparar este checkpoint con alter
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4 | 8,48B (MoE) | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen3 MoE (variante de referencia de la familia) | segun variante | segun variante | segun variante | HuggingFace |
-| Modelos densos de ~8B (categoria Llama 3.1 8B / Mistral 7B) | 7-8B | 32K-128K segun modelo | licencias tipo permisivo segun modelo | HuggingFace |
+| bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4 | 8,48B (MoE) | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen3 MoE (variante de referencia de la familia) | segun variante | segun variante | segun variante | Hugging Face |
+| Modelos densos de ~8B (categoria Llama 3.1 8B / Mistral 7B) | 7-8B | 32K-128K segun modelo | licencias tipo permisivo segun modelo | Hugging Face |
 
 Dado que este checkpoint no documenta contexto, licencia ni rendimiento, cualquier comparacion cuantitativa seria especulativa.
 
@@ -91,9 +91,9 @@ Dado que este checkpoint no documenta contexto, licencia ni rendimiento, cualqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4
 - Modelo relacionado del mismo autor: https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-corrected
-- Perfil del autor en HuggingFace: https://huggingface.co/sartajbhuvaji/models
+- Perfil del autor en Hugging Face: https://huggingface.co/sartajbhuvaji/models
 - Perfil del autor en GitHub: https://github.com/SartajBhuvaji
 - Documentacion familia Bonsai (Ternary Bonsai 2 27B): https://docs.prismml.com/bonsai-2-27b
 - Documentacion familia Bonsai (Bonsai 27B): https://docs.prismml.com/models/bonsai-27b

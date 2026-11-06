@@ -69,10 +69,10 @@ La comparativa se establece frente a modelos publicos de tamano y arquitectura c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-...-merge` | 6,86 mil millones | no disponible | no disponible | HuggingFace, safetensors, 0 descargas | sin benchmarks publicados |
-| Pythia 6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | benchmarks publicados (suite de evaluacion de Pythia) |
-| GPT-J 6B (EleutherAI) | 6 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | benchmarks publicados |
-| GPT-NeoX-20B (EleutherAI) | 20 mil millones | 2048 tokens | Apache 2.0 | HuggingFace, safetensors | benchmarks publicados |
+| `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-...-merge` | 6,86 mil millones | no disponible | no disponible | Hugging Face, safetensors, 0 descargas | sin benchmarks publicados |
+| Pythia 6.9B (EleutherAI) | 6,9 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | benchmarks publicados (suite de evaluacion de Pythia) |
+| GPT-J 6B (EleutherAI) | 6 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | benchmarks publicados |
+| GPT-NeoX-20B (EleutherAI) | 20 mil millones | 2048 tokens | Apache 2.0 | Hugging Face, safetensors | benchmarks publicados |
 
 Nota: Pythia 6.9B y GPT-J 6B comparten familia arquitectonica (GPT-NeoX / GPT-J) y orden de magnitud de parametros, por lo que son las referencias mas directas. La diferencia principal no esta en el tamano, sino en que el modelo analizado carece de licencia, idiomas, contexto y evaluaciones documentadas, ademas de ser un artefacto de fusion de checkpoints internos sin publicacion asociada.
 
@@ -91,9 +91,9 @@ Nota: Pythia 6.9B y GPT-J 6B comparten familia arquitectonica (GPT-NeoX / GPT-J)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_weightedavg_merge
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Paper del metodo Linear referenciado en los tags: https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance
 
 Nota: la busqueda web asociada no devolvio resultados relacionados con el modelo. Los unicos resultados disponibles eran consultas de Zhihu sobre el proyecto artistico de Radiohead "KID A MNESIA EXHIBITION" y sobre el uso del simbolo de virgulilla, sin ninguna relacion con este modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales del autor.

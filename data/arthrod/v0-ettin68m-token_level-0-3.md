@@ -90,7 +90,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthrod/v0-ettin68m-token_level-0-3
+- Modelo en Hugging Face: https://huggingface.co/arthrod/v0-ettin68m-token_level-0-3
 - Modelo base: https://huggingface.co/knowledgator/gliner-pii-small-v1.0
 - Encoder: https://huggingface.co/jhu-clsp/ettin-encoder-68m
 - Alternativa recomendada (mmBERT-small): https://huggingface.co/arthrod/gliner-mmbert-small-ptbr-pii-full-3x-v1

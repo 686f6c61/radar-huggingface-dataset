@@ -94,7 +94,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maro-aigent/connectailab-rl-maro-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/maro-aigent/connectailab-rl-maro-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

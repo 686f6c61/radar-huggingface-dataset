@@ -107,7 +107,7 @@ No se identifican en la informacion proporcionada modelos de la misma categoria 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leobianco/npov_RM_organic_Mistral-7B-Instruct-v0_3_S130104_epo15_lr2_7e-04_r32_2609211259
+- Repositorio Hugging Face: https://huggingface.co/leobianco/npov_RM_organic_Mistral-7B-Instruct-v0_3_S130104_epo15_lr2_7e-04_r32_2609211259
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Libreria PEFT: no se proporciona enlace en la informacion disponible
 - Paper o blog del autor: no disponible

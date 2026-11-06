@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Karthik1338/workflowllm-planner-qwen2.5-3b es un adaptador LoRA (PEFT) de tipo SFT publicado en HuggingFace, entrenado sobre el modelo base cuantizado a 4 bits unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit, que a su vez deriva de Qwen2.5-3B-Instruct. Se trata, por tanto, de un ajuste fino ligero y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador (0,1 GB), que deben cargarse junto al modelo base para poder realizar inferencia. El nombre del repositorio sugiere un propósito de planificación de flujos de trabajo ("workflow planner"), aunque la model card no documenta la tarea concreta ni el dataset empleado.
+Karthik1338/workflowllm-planner-qwen2.5-3b es un adaptador LoRA (PEFT) de tipo SFT publicado en Hugging Face, entrenado sobre el modelo base cuantizado a 4 bits unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit, que a su vez deriva de Qwen2.5-3B-Instruct. Se trata, por tanto, de un ajuste fino ligero y no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador (0,1 GB), que deben cargarse junto al modelo base para poder realizar inferencia. El nombre del repositorio sugiere un propósito de planificación de flujos de trabajo ("workflow planner"), aunque la model card no documenta la tarea concreta ni el dataset empleado.
 
-El interés de esta ficha es limitado pero ilustrativo: se trata de un ejemplo típico de adaptador comunitario creado con el stack Unsloth + TRL + PEFT, con cero descargas y cero valoraciones en el momento de la consulta, y con una model card que es prácticamente la plantilla por defecto de HuggingFace sin rellenar. No hay licencia declarada, no hay idiomas declarados, no hay benchmarks y no hay descripción de los datos de entrenamiento.
+El interés de esta ficha es limitado pero ilustrativo: se trata de un ejemplo típico de adaptador comunitario creado con el stack Unsloth + TRL + PEFT, con cero descargas y cero valoraciones en el momento de la consulta, y con una model card que es prácticamente la plantilla por defecto de Hugging Face sin rellenar. No hay licencia declarada, no hay idiomas declarados, no hay benchmarks y no hay descripción de los datos de entrenamiento.
 
 Por tanto, cualquier evaluador que considere este modelo debe asumir que la práctica totalidad de las especificaciones relevantes están sin documentar y que las características técnicas heredadas proceden exclusivamente del modelo base Qwen2.5-3B-Instruct, no del adaptador. La relevancia actual es la de un artefacto de investigación reproducible a pequeña escala, no la de un modelo listo para producción.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Karthik1338/workflowllm-planner-qwen2.5-3b | No disponible (adaptador LoRA sobre base de 3,09 B) | No disponible | No disponible | safetensors (PEFT) | Público en HuggingFace, 0 descargas |
+| Karthik1338/workflowllm-planner-qwen2.5-3b | No disponible (adaptador LoRA sobre base de 3,09 B) | No disponible | No disponible | safetensors (PEFT) | Público en Hugging Face, 0 descargas |
 | Qwen2.5-3B-Instruct (modelo base de referencia) | 3,09 B | 32 768 tokens (documentación pública) | Apache 2.0 (documentación pública) | safetensors, GGUF | Ampliamente disponible |
 | Llama-3.2-3B-Instruct | 3,21 B | 128 000 tokens (documentación pública) | Llama 3.2 Community License | safetensors, GGUF | Ampliamente disponible |
 | Phi-3.5-mini-instruct | 3,8 B | 128 000 tokens (documentación pública) | MIT | safetensors, GGUF | Ampliamente disponible |
@@ -95,7 +95,7 @@ Nota: los datos de los modelos comparativos proceden de su documentación públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Karthik1338/workflowllm-planner-qwen2.5-3b
+- Modelo en Hugging Face: https://huggingface.co/Karthik1338/workflowllm-planner-qwen2.5-3b
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit
 - Qwen2.5-3B-Instruct (modelo original): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `foundation-action-garage-dino-predictor-r3`, publicado por el usuario shuhant en HuggingFace, es un checkpoint de 89.723.904 parámetros (aproximadamente 89,7 millones) orientado a la predicción de acciones y a la modelización de mundo (*world model*) en el contexto de la conducción autónoma. Sus etiquetas lo vinculan explícitamente con DINOv3, la familia de modelos de visión auto-supervisada de Meta, y con el proyecto "garage" y "foundation-action", lo que sugiere que se trata de un componente predictor construido sobre representaciones visuales de DINOv3 para anticipar acciones o dinámicas futuras.
+El modelo `foundation-action-garage-dino-predictor-r3`, publicado por el usuario shuhant en Hugging Face, es un checkpoint de 89.723.904 parámetros (aproximadamente 89,7 millones) orientado a la predicción de acciones y a la modelización de mundo (*world model*) en el contexto de la conducción autónoma. Sus etiquetas lo vinculan explícitamente con DINOv3, la familia de modelos de visión auto-supervisada de Meta, y con el proyecto "garage" y "foundation-action", lo que sugiere que se trata de un componente predictor construido sobre representaciones visuales de DINOv3 para anticipar acciones o dinámicas futuras.
 
-El checkpoint se distribuye en formato PyTorch con pesos en safetensors, ocupa 0,4 GB en el repositorio y está sujeto a una licencia denominada `nvidia-internal-research`, además de requerir acceso restringido (gated) mediante aceptación de condiciones en HuggingFace. Su naturaleza parece ser la de un artefacto de investigación interna más que la de un modelo de propósito general: apenas acumula 4 descargas y ninguna interacción social, y no declara pipeline, idiomas ni documentación asociada.
+El checkpoint se distribuye en formato PyTorch con pesos en safetensors, ocupa 0,4 GB en el repositorio y está sujeto a una licencia denominada `nvidia-internal-research`, además de requerir acceso restringido (gated) mediante aceptación de condiciones en Hugging Face. Su naturaleza parece ser la de un artefacto de investigación interna más que la de un modelo de propósito general: apenas acumula 4 descargas y ninguna interacción social, y no declara pipeline, idiomas ni documentación asociada.
 
 Por su tamaño y su enfoque, no compite con los grandes modelos de lenguaje, sino que se sitúa en la categoría de modelos especializados de visión y control para robótica y conducción. La información pública disponible es muy limitada, por lo que esta ficha se limita a lo que puede inferirse de los metadatos y de las etiquetas del repositorio, marcando explícitamente como no disponibles todos aquellos datos que no han sido publicados.
 
@@ -66,7 +66,7 @@ No disponible. No se dispone de información suficiente sobre modelos comparable
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es *gated* y exige aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es *gated* y exige aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia `nvidia-internal-research`: restringe el uso a investigación interna de NVIDIA; no se autoriza, en principio, uso comercial ni redistribución.
 - Ausencia total de documentación: no hay model card, paper ni ejemplos de uso publicados, lo que dificulta la reproducibilidad.
 - Sesgos desconocidos: al no publicarse la composición del dataset de entrenamiento, no puede evaluarse el sesgo geográfico, climático o de escenarios viales.
@@ -77,5 +77,5 @@ No disponible. No se dispone de información suficiente sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shuhant/foundation-action-garage-dino-predictor-r3
+- Hugging Face: https://huggingface.co/shuhant/foundation-action-garage-dino-predictor-r3
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

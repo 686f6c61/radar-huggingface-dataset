@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nimbus Icon LoRA (este) | LoRA rango 8 sobre SDXL; recuento no disponible | No aplica contexto; iconos 24x24, trazo 1,75 px | Sin benchmarks publicados | MIT | HuggingFace, diffusers |
-| stabilityai/stable-diffusion-xl-base-1.0 (sin LoRA) | ~3.500 M (UNet + text encoders) | 1024x1024 nativo | Benchmark publico del modelo base; no comparable en estilo de icono | CreativeML Open RAIL++-M | HuggingFace, diffusers |
+| Nimbus Icon LoRA (este) | LoRA rango 8 sobre SDXL; recuento no disponible | No aplica contexto; iconos 24x24, trazo 1,75 px | Sin benchmarks publicados | MIT | Hugging Face, diffusers |
+| stabilityai/stable-diffusion-xl-base-1.0 (sin LoRA) | ~3.500 M (UNet + text encoders) | 1024x1024 nativo | Benchmark publico del modelo base; no comparable en estilo de icono | CreativeML Open RAIL++-M | Hugging Face, diffusers |
 | Otros LoRA de iconografia para SDXL | No disponible | No disponible | No disponible | Variable | No verificado en la informacion disponible |
 | Generacion vectorial mediante modelos de codigo (SVG) | No disponible | No disponible | No disponible | Variable | No verificado en la informacion disponible |
 
@@ -93,7 +93,7 @@ La comparacion directa con otros adaptadores de iconos no puede establecerse con
 
 ## Enlaces
 
-- [Modelo en HuggingFace: TUaxhuiax/nimbus-icon-lora](https://huggingface.co/TUaxhuiax/nimbus-icon-lora)
+- [Modelo en Hugging Face: TUaxhuiax/nimbus-icon-lora](https://huggingface.co/TUaxhuiax/nimbus-icon-lora)
 - [Modelo base: stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 - [Documentacion de diffusers para carga de LoRA](https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters)
 - Paper, blog, repositorio o demo especificos de este adaptador: no disponibles en la informacion proporcionada.

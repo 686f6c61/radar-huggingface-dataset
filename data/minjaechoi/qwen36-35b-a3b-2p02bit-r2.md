@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B — 2.02-bit routed experts (r2) es un checkpoint de investigación publicado por el usuario minjaechoi en HuggingFace. Se trata de una versión del modelo base Qwen/Qwen3.6-35B-A3B en la que únicamente los expertos enrutados (routed experts) de la arquitectura MoE han sido cuantizados a una media de 2,02 bits, mientras que el resto de los pesos permanece en BF16. El checkpoint no es un modelo nuevo ni un fine-tuning: es una transformación de pesos sobre el modelo base.
+Qwen3.6-35B-A3B — 2.02-bit routed experts (r2) es un checkpoint de investigación publicado por el usuario minjaechoi en Hugging Face. Se trata de una versión del modelo base Qwen/Qwen3.6-35B-A3B en la que únicamente los expertos enrutados (routed experts) de la arquitectura MoE han sido cuantizados a una media de 2,02 bits, mientras que el resto de los pesos permanece en BF16. El checkpoint no es un modelo nuevo ni un fine-tuning: es una transformación de pesos sobre el modelo base.
 
 La particularidad técnica es que los pesos resultantes se almacenan ya dequantizados en tensores BF16, de modo que el repositorio (70,2 GB) se carga con `transformers` y vLLM estándar sin necesidad de kernels de cuantización específicos. Esto implica que el ahorro es de precisión efectiva en los expertos enrutados, no de huella de memoria o de tamaño en disco: el repo ocupa un espacio comparable al de un checkpoint BF16 de 35.000 millones de parámetros.
 
@@ -94,7 +94,7 @@ No se dispone de información suficiente para establecer una comparación cuanti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p02bit-r2
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p02bit-r2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o repositorio del método de cuantización: no disponible
 - Demo o space asociado: no disponible

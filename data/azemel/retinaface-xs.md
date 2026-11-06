@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RetinaFace-xs es un repositorio de checkpoints de entrenamiento para deteccion de caras (face detection) publicado por el usuario azemel en HuggingFace. No se trata de un modelo unico, sino de una coleccion de pesos derivados de un pipeline privado de entrenamiento y de un barrido de compresion: para cada backbone se publican los checkpoints en float32 junto con versiones comprimidas mediante clustering de pesos con distinto numero de clusters (2, 4, 5, 7, 8, 12, 32, 64, 128 y 256), ademas de los artefactos ya exportados a ONNX y CoreML.
+RetinaFace-xs es un repositorio de checkpoints de entrenamiento para deteccion de caras (face detection) publicado por el usuario azemel en Hugging Face. No se trata de un modelo unico, sino de una coleccion de pesos derivados de un pipeline privado de entrenamiento y de un barrido de compresion: para cada backbone se publican los checkpoints en float32 junto con versiones comprimidas mediante clustering de pesos con distinto numero de clusters (2, 4, 5, 7, 8, 12, 32, 64, 128 y 256), ademas de los artefactos ya exportados a ONNX y CoreML.
 
 El modelo resuelve el problema clasico de deteccion de rostros con la arquitectura RetinaFace, un detector de una sola etapa con feature pyramid que predice cajas, puntos faciales y puntuaciones de confianza. Los backbones disponibles son MobileNetV1 (en escalas 1.0, 0.50 y 0.25), MobileNetV2 y ResNet18/34, con el barrido de compresion de ResNet50 todavia en ejecucion. El enfoque del repositorio es practico: ofrecer variantes con distintos compromisos entre precision y tamano para despliegue en produccion.
 
@@ -101,7 +101,7 @@ Notas: los niveles float32 no tienen metricas AP publicadas en la model card, so
 
 | Modelo | Parametros | Contexto | Rendimiento (WIDER FACE) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RetinaFace-xs (este repositorio) | no disponible | no aplica | mean AP de 40.54 a 77.28 segun backbone y nivel de compresion | MIT | HuggingFace |
+| RetinaFace-xs (este repositorio) | no disponible | no aplica | mean AP de 40.54 a 77.28 segun backbone y nivel de compresion | MIT | Hugging Face |
 | RetinaFace original (InsightFace) | no disponible en la informacion disponible | no aplica | no disponible en la informacion disponible | no disponible | no disponible |
 | MTCNN | no disponible en la informacion disponible | no aplica | no disponible en la informacion disponible | no disponible | no disponible |
 | SCRFD | no disponible en la informacion disponible | no aplica | no disponible en la informacion disponible | no disponible | no disponible |
@@ -124,5 +124,5 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/azemel/retinaface-xs
+- Hugging Face: https://huggingface.co/azemel/retinaface-xs
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs ni repositorios asociados. No disponible.

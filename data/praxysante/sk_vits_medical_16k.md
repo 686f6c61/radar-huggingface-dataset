@@ -70,7 +70,7 @@ El propio autor advierte que estas cifras son cotas superiores: el ASR juez es i
 
 | Modelo | Idioma | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SK_VITS_medical_16k | eslovaco | VITS (Coqui TTS) | no disponible | 60 caracteres | Apache-2.0 | HuggingFace |
+| SK_VITS_medical_16k | eslovaco | VITS (Coqui TTS) | no disponible | 60 caracteres | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de TTS en eslovaco en la documentación proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables de TTS en eslovaco en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PraxySante/SK_VITS_medical_16k
+- Hugging Face: https://huggingface.co/PraxySante/SK_VITS_medical_16k
 - Coqui TTS (framework): https://github.com/coqui-ai/TTS
 - Paper VITS: https://arxiv.org/abs/2106.06103
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales específicos de este modelo.

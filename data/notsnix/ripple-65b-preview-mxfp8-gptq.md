@@ -71,8 +71,8 @@ En el split de desarrollo (60 secuencias), esta build obtiene KLD media de 0,002
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B-Preview-MXFP8-GPTQ | ~65B | No disponible | MXFP8 + GPTQ (67,8 GB) | Apache 2.0 | HuggingFace |
-| ricursiveAI/Ripple-65B-Preview (BF16) | ~65B | No disponible | BF16 (129,6 GB) | Apache 2.0 | HuggingFace |
+| Ripple-65B-Preview-MXFP8-GPTQ | ~65B | No disponible | MXFP8 + GPTQ (67,8 GB) | Apache 2.0 | Hugging Face |
+| ricursiveAI/Ripple-65B-Preview (BF16) | ~65B | No disponible | BF16 (129,6 GB) | Apache 2.0 | Hugging Face |
 | Alternativas de ~65B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría en la documentación proporcionada.
@@ -89,7 +89,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- [HuggingFace: notSnix/Ripple-65B-Preview-MXFP8-GPTQ](https://huggingface.co/notSnix/Ripple-65B-Preview-MXFP8-GPTQ)
+- [Hugging Face: notSnix/Ripple-65B-Preview-MXFP8-GPTQ](https://huggingface.co/notSnix/Ripple-65B-Preview-MXFP8-GPTQ)
 - [Modelo base: ricursiveAI/Ripple-65B-Preview](https://huggingface.co/ricursiveAI/Ripple-65B-Preview)
 - [Método KLD de Local Inference Lab](https://github.com/local-inference-lab/rtx6kpro/tree/master/kld)
 - [arXiv:2602.06036](https://arxiv.org/abs/2602.06036)

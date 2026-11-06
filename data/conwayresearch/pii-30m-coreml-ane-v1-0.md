@@ -85,7 +85,7 @@ La comparativa con modelos concretos de terceros no esta respaldada por datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/pii-30M-coreml-ane-v1.0
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/pii-30M-coreml-ane-v1.0
 - Modelo base MLX 4-bit: https://huggingface.co/ConwayResearch/pii-30M-mlx-4bit-v1.0
 - Repositorio de inferencia de Underdog (script `Engines/pii/convert-coreml.py`): no disponible como URL en la informacion proporcionada
 - Paper, blog o demo: no disponibles en la informacion proporcionada

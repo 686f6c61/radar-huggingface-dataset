@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SafeSD-verdict-base es un artefacto de investigación publicado por el usuario XenonGas en HuggingFace. No se trata de un modelo generativo completo, sino de una "sonda" (probe) de clasificación entrenada sobre el modelo base Qwen/Qwen3-0.6B, concretamente sobre el commit `c1899de289a04d12100db370d81485cdf75e47ca`. La model card indica que es la segunda ronda de entrenamiento desde cero, con semilla 29, alcanzando el paso 1280, y que el fine-tuning registrado parte de este checkpoint con un optimizador nuevo.
+SafeSD-verdict-base es un artefacto de investigación publicado por el usuario XenonGas en Hugging Face. No se trata de un modelo generativo completo, sino de una "sonda" (probe) de clasificación entrenada sobre el modelo base Qwen/Qwen3-0.6B, concretamente sobre el commit `c1899de289a04d12100db370d81485cdf75e47ca`. La model card indica que es la segunda ronda de entrenamiento desde cero, con semilla 29, alcanzando el paso 1280, y que el fine-tuning registrado parte de este checkpoint con un optimizador nuevo.
 
 El propósito declarado en el nombre ("verdict" y "SafeSD") sugiere un clasificador de veredictos orientado a seguridad, probablemente para discriminar entre contenido seguro y no seguro en el contexto de modelos de difusión (SD, por Stable Diffusion). Sin embargo, la información pública es extremadamente escasa: no se especifica la tarea exacta, el dataset de entrenamiento, las métricas de evaluación ni las condiciones de uso.
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XenonGas/SafeSD-verdict-base
+- Hugging Face: https://huggingface.co/XenonGas/SafeSD-verdict-base
 - Backbone Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Commit del backbone: https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

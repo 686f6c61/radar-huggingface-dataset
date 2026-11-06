@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full es un repositorio alojado en HuggingFace por el usuario Avalonec, publicado y actualizado el 12 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita a un bloque de metadatos de licencia (`license: other`, `license_name: custom`, `license_link: LICENSE`) sin texto descriptivo, sin tabla de especificaciones, sin resultados de evaluacion y sin documentacion de uso.
+Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full es un repositorio alojado en Hugging Face por el usuario Avalonec, publicado y actualizado el 12 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita a un bloque de metadatos de licencia (`license: other`, `license_name: custom`, `license_link: LICENSE`) sin texto descriptivo, sin tabla de especificaciones, sin resultados de evaluacion y sin documentacion de uso.
 
 La informacion disponible no permite confirmar que es el modelo, quien lo ha entrenado ni que problema resuelve. El propio identificador del repositorio incluye terminos como "Qwen3.8-27B", "QuasarMLP", "DFlash2" y "nvfp4full" que sugieren una variante cuantizada o modificada de un modelo de aproximadamente 27.000 millones de parametros en formato NVFP4, pero ninguno de esos extremos esta verificado en la model card ni en fuentes externas.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, metodologica: documenta un caso de re
 | Licencia | custom (declarada como `license: other`, `license_name: custom`, con enlace a un fichero LICENSE) |
 | Formato de pesos | no disponible |
 
-Otros datos declarados en HuggingFace: etiquetas `license:other` y `region:us`, pipeline no disponible, 0 descargas, 0 likes, fecha de creacion y ultima actualizacion identicas (2026-09-12T12:17:09Z).
+Otros datos declarados en Hugging Face: etiquetas `license:other` y `region:us`, pipeline no disponible, 0 descargas, 0 likes, fecha de creacion y ultima actualizacion identicas (2026-09-12T12:17:09Z).
 
 ## Arquitectura y entrenamiento
 
@@ -38,7 +38,7 @@ No hay ninguna capacidad documentada en la informacion disponible. A continuacio
 - Capacidades de vision o audio: no confirmadas.
 - Soporte de tool calling o function calling: no confirmado.
 - Soporte de agentes y razonamiento multi-paso: no confirmado.
-- Capacidades multilingues: no confirmadas (la ficha de HuggingFace no lista idiomas).
+- Capacidades multilingues: no confirmadas (la ficha de Hugging Face no lista idiomas).
 - Modo de razonamiento explicito (thinking mode) o modos especiales: no confirmados.
 
 ## Casos de uso
@@ -63,7 +63,7 @@ No disponible. No es posible establecer una comparativa fiable porque no se ha p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full | no disponible | no disponible | no disponible | custom | HuggingFace, 0 descargas |
+| Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full | no disponible | no disponible | no disponible | custom | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. No es posible establecer una comparativa fiable porque no se ha p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full
+- Repositorio en Hugging Face: https://huggingface.co/Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full
 - Fichero de licencia referenciado en la model card (ruta relativa declarada, contenido no verificado): https://huggingface.co/Avalonec/Qwen3.8-27B-QuasarMLP-DFlash2-nvfp4full/blob/main/LICENSE
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: la busqueda asociada no devolvio ninguna fuente relacionada con el modelo; los resultados recibidos correspondian a paginas de electrodomesticos sin conexion con el tema, por lo que se han descartado.

@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su enfoque de especialización: en lugar 
 | Tipos de cuantizacion | no disponible (el adaptador se distribuye en safetensors; el modelo base usa bnb-4bit) |
 | Idiomas soportados | en (inglés) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables específicos. El adaptad
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/tuongthien/it-resume-assistant-lora)
+- [Modelo en Hugging Face](https://huggingface.co/tuongthien/it-resume-assistant-lora)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Qwen2.5-7B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit)

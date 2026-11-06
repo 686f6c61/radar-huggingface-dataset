@@ -84,7 +84,7 @@ El autor advierte que la ejecución que completa S1-S5 incumple el contrato de *
 - VRAM estimada para inferencia: no disponible en la información publicada. Como referencia orientativa (no confirmada por el autor), un LLM de forma Qwen2-1.5B más una torre SigLIP ocupa del orden de 3-4 GB en FP16/BF16, 2 GB en INT8 y 1-1,5 GB en INT4, a lo que hay que sumar el servidor de simulación.
 - GPU recomendadas: no disponible. El sistema se ejecuta dentro de Isaac Sim 6.0.1, que requiere GPU con soporte RTX y trazado de rayos (gama RTX profesional o de consumo); para entrenamiento de los 12.000 pasos con batch 128 se necesita una GPU de datacenter (A100, H100 o similar), aunque el autor no especifica el hardware empleado.
 - ¿Cabe en GPU de consumo? La política en sí (4,7 GB de repositorio) es compatible con GPUs de consumo con suficiente VRAM, pero el bucle completo exige además ejecutar el simulador Isaac Sim, lo que en la práctica limita el despliegue a equipos con GPU RTX dedicada.
-- Opciones de despliegue: la model card describe únicamente un servidor propio más un cliente Python (no vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a una política robótica). El código necesario es un fork interno del repositorio StarVLA-EgoVLA que no se distribuye en el repo de HuggingFace.
+- Opciones de despliegue: la model card describe únicamente un servidor propio más un cliente Python (no vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a una política robótica). El código necesario es un fork interno del repositorio StarVLA-EgoVLA que no se distribuye en el repo de Hugging Face.
 - Dependencia adicional: el modelo base VLM (configs, tokenizer, procesador de imágenes) debe descargarse por separado con `huggingface-cli download rchal97/egovla` y apuntarse en `framework.qwenvl.base_vlm` al directorio `ego_vla_checkpoint/ckpt-6720`.
 - Latencia y *throughput*: no disponibles.
 
@@ -108,7 +108,7 @@ Las cifras de parámetros y contexto de las alternativas no están publicadas en
 - La tasa de éxito completa es muy baja: 1 de 16 ejecuciones alcanza S1-S5, y esa misma ejecución incumple el contrato de *handoff* de S2 (el tubo queda demasiado bajo en la mano).
 - El embudo de contratos de *handoff* es "mucho más débil" que el de hitos, según el propio autor, lo que sugiere que los éxitos parciales no siempre dejan el estado adecuado para la fase siguiente.
 - Licencia sin resolver: los pesos se declaran bajo `upstream-egovla-vila-terms`, heredando los términos de VILA y del LLM subyacente, mientras que el repo `rchal97/egovla` no declara licencia. Es imprescindible revisar cada model card upstream antes de redistribuir o usar comercialmente.
-- El código necesario para ejecutar el modelo (fork interno de StarVLA-EgoVLA) no está incluido en el repositorio de HuggingFace, lo que dificulta la reproducibilidad.
+- El código necesario para ejecutar el modelo (fork interno de StarVLA-EgoVLA) no está incluido en el repositorio de Hugging Face, lo que dificulta la reproducibilidad.
 - Advertencia de la model card: no redistribuir los pesos sin comprobar los términos upstream.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto; el fallo característico es de ejecución motora (no completar la fase o dejar el objeto mal colocado), no de contenido.
 - Sesgos conocidos: no disponibles.
@@ -116,8 +116,8 @@ Las cifras de parámetros y contexto de las alternativas no están publicadas en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hding95/egovla-vega-wuji-pipette-r13h-ee
-- Modelo base en HuggingFace: https://huggingface.co/rchal97/egovla
+- Repositorio Hugging Face: https://huggingface.co/hding95/egovla-vega-wuji-pipette-r13h-ee
+- Modelo base en Hugging Face: https://huggingface.co/rchal97/egovla
 - Paper de EgoVLA: https://arxiv.org/abs/2507.12440
 - Página del proyecto EgoVLA: https://rchalyang.github.io/EgoVLA/
 - Repositorio del mismo autor (política g1-inspire-piston): https://huggingface.co/hding95/g1-inspire-piston-egoonly-22170

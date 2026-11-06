@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_base_k0_a1p0_free_remove20 es un artefacto de investigacion publicado por el usuario Jeesup en HuggingFace. Se trata de un checkpoint de meta-llama/Llama-2-7b-chat-hf al que se le ha aplicado una compresion mediante SVD-LLM que elimina el 20,00% de los parametros densos, dejando el modelo en una fraccion de parametros de 0,7999 (6.738.415.616 parametros totales frente a los aproximadamente 6.740 millones del original, que en la practica supone un recorte neto de parametros de las matrices proyectadas). Sobre esa base comprimida no se restauro ningun componente SVD: el presupuesto de restauracion es del 0,000% y el numero de componentes restaurados y sustituidos es cero.
+svd-safety-l2_base_k0_a1p0_free_remove20 es un artefacto de investigacion publicado por el usuario Jeesup en Hugging Face. Se trata de un checkpoint de meta-llama/Llama-2-7b-chat-hf al que se le ha aplicado una compresion mediante SVD-LLM que elimina el 20,00% de los parametros densos, dejando el modelo en una fraccion de parametros de 0,7999 (6.738.415.616 parametros totales frente a los aproximadamente 6.740 millones del original, que en la practica supone un recorte neto de parametros de las matrices proyectadas). Sobre esa base comprimida no se restauro ningun componente SVD: el presupuesto de restauracion es del 0,000% y el numero de componentes restaurados y sustituidos es cero.
 
 El proposito declarado del autor no es ofrecer un asistente conversacional, sino medir el deterioro del comportamiento de seguridad provocado por la compresion SVD y evaluar que regla de seleccion de componentes lo repara mejor. Este checkpoint es una celda concreta de una rejilla sobre reglas de seleccion y presupuestos, con semilla 42, y la propia model card advierte de que algunas celdas estan deliberadamente degradadas en seguridad respecto al modelo original.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_base_k0_a1p0_free_remove20 (este) | 6.738.415.616 (fraccion 0,7999) | no disponible | SVD-LLM, 20% eliminado, 0% restaurado | Llama 2 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens | sin compresion | Llama 2 Community License | HuggingFace |
-| Jeesup/svd-safety-l2_base_k0_a1p0_free_remove40 | no disponible | no disponible | SVD-LLM, 40% eliminado | Llama 2 Community License | HuggingFace |
-| Jeesup/svd-safety-l2_jbb_k0p02_a1p0_free_remove40 | no disponible | no disponible | SVD-LLM, 40% eliminado, regla jbb | Llama 2 Community License | HuggingFace |
+| svd-safety-l2_base_k0_a1p0_free_remove20 (este) | 6.738.415.616 (fraccion 0,7999) | no disponible | SVD-LLM, 20% eliminado, 0% restaurado | Llama 2 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens | sin compresion | Llama 2 Community License | Hugging Face |
+| Jeesup/svd-safety-l2_base_k0_a1p0_free_remove40 | no disponible | no disponible | SVD-LLM, 40% eliminado | Llama 2 Community License | Hugging Face |
+| Jeesup/svd-safety-l2_jbb_k0p02_a1p0_free_remove40 | no disponible | no disponible | SVD-LLM, 40% eliminado, regla jbb | Llama 2 Community License | Hugging Face |
 
 Los datos de rendimiento de los modelos comparables no estan disponibles en la informacion proporcionada, por lo que no se incluye una comparacion cuantitativa de benchmarks.
 
@@ -96,7 +96,7 @@ Los datos de rendimiento de los modelos comparables no estan disponibles en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_base_k0_a1p0_free_remove20
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_base_k0_a1p0_free_remove20
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Celda relacionada (remove40): https://huggingface.co/Jeesup/svd-safety-l2_base_k0_a1p0_free_remove40
 - Celda relacionada (jbb, k0p02, remove40): https://huggingface.co/Jeesup/svd-safety-l2_jbb_k0p02_a1p0_free_remove40

@@ -68,7 +68,7 @@ No se dispone de información sobre otros LoRAs de Krea 2 que permitan una compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/paulsizemore/lido-e14-lamp-v2
+- Repositorio Hugging Face: https://huggingface.co/paulsizemore/lido-e14-lamp-v2
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card)
 - Modelo base Krea 2 Turbo: https://huggingface.co/krea/Krea-2-Turbo (referenciado en el código de ejemplo)
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

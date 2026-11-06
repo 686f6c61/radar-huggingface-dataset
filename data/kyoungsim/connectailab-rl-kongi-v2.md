@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-kongi-v2 es un adaptador LoRA entrenado sobre el modelo base Qwen/Qwen3.5-0.8B por el autor kyoungsim, vinculado al laboratorio CONNECT AI LAB y a AI CITY BUILDERS. No es un modelo conversacional generalista: es un modelo de toma de decisiones que recibe un estado de situacion, una pregunta y un conjunto de opciones etiquetadas, y devuelve unicamente la letra de la opcion seleccionada. El pipeline declarado en HuggingFace es reinforcement-learning, y los tags confirman el uso de GRPO, PPO en el simulador y aprendizaje supervisado como fases previas.
+connectailab-rl-kongi-v2 es un adaptador LoRA entrenado sobre el modelo base Qwen/Qwen3.5-0.8B por el autor kyoungsim, vinculado al laboratorio CONNECT AI LAB y a AI CITY BUILDERS. No es un modelo conversacional generalista: es un modelo de toma de decisiones que recibe un estado de situacion, una pregunta y un conjunto de opciones etiquetadas, y devuelve unicamente la letra de la opcion seleccionada. El pipeline declarado en Hugging Face es reinforcement-learning, y los tags confirman el uso de GRPO, PPO en el simulador y aprendizaje supervisado como fases previas.
 
 El modelo se entrena sobre datos generados por el simulador CONNECT TYCOON, un juego de gestion empresarial en el que una politica pequena aprende a operar una compania durante miles de meses. Esa politica actua como profesor: para cada decision, se generan variantes de las opciones y se puntua el resultado economico de cada una, produciendo un conjunto de problemas de eleccion multiple con etiqueta de calidad. El adaptador aprende a imitar la mejor opcion y despues se afina con GRPO usando la puntuacion del simulador como recompensa.
 
@@ -67,8 +67,8 @@ Los resultados son del primer experimento publicado por el autor. La evaluacion 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-kongi-v2 | 0,8 B (base) + LoRA | no disponible | Decision por eleccion multiple con RL (GRPO) | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-0.8B | 0,8 B | no disponible | LLM generalista | no disponible en la informacion | HuggingFace |
+| connectailab-rl-kongi-v2 | 0,8 B (base) + LoRA | no disponible | Decision por eleccion multiple con RL (GRPO) | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-0.8B | 0,8 B | no disponible | LLM generalista | no disponible en la informacion | Hugging Face |
 | Politica profesora PPO de CONNECT TYCOON | no disponible | no disponible | RL clasico sobre simulador | no disponible | Repositorio connect-tycoon |
 
 No se dispone de datos publicos de benchmarks de otros adaptadores de decision comparables en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos publicos de benchmarks de otros adaptadores de decision c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyoungsim/connectailab-rl-kongi-v2
+- Modelo en Hugging Face: https://huggingface.co/kyoungsim/connectailab-rl-kongi-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

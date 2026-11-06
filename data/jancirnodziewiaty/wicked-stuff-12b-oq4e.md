@@ -6,7 +6,7 @@ Wicked-Stuff-12B-oQ4e es una cuantizacion mixta en formato MLX del modelo ReadyA
 
 El interes practico del modelo esta en el esquema de cuantizacion: el 72% de los pesos se guarda a 4 bits, el 25,6% a 5 bits y un 2,1% a 6 bits, reservando las precisiones mas altas para las capas presumiblemente mas sensibles. Frente a una cuantizacion 4-bit uniforme, este reparto busca reducir la perdida de calidad sin disparar el tamano del fichero. El modelo incluye ademas un pequeno modulo de vision de 35 millones de parametros, lo que sugiere capacidades multimodales heredadas del modelo base.
 
-La ficha tiene limitaciones importantes de informacion: el autor no documenta licencia, idiomas, pipeline ni datos de entrenamiento, y no se han publicado benchmarks. Todo lo que sigue se basa en los metadatos de HuggingFace y en la model card del repositorio; cualquier dato ausente se marca explicitamente como no disponible.
+La ficha tiene limitaciones importantes de informacion: el autor no documenta licencia, idiomas, pipeline ni datos de entrenamiento, y no se han publicado benchmarks. Todo lo que sigue se basa en los metadatos de Hugging Face y en la model card del repositorio; cualquier dato ausente se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jancirnodziewiaty/Wicked-Stuff-12B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/jancirnodziewiaty/Wicked-Stuff-12B-oQ4e
 - Modelo base: https://huggingface.co/ReadyArt/Wicked-Stuff-12B
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx

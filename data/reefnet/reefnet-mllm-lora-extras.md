@@ -119,7 +119,7 @@ No se dispone de comparaciones con modelos de clasificación de corales ajenos a
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/ReefNet/reefnet-mllm-lora-extras
+- Repositorio principal en Hugging Face: https://huggingface.co/ReefNet/reefnet-mllm-lora-extras
 - Adaptador principal sobre Qwen3-VL: https://huggingface.co/ReefNet/reefnet-qwen3-vl-8b-lora
 - Adaptador principal sobre MiniCPM-V 4.5: https://huggingface.co/ReefNet/reefnet-minicpm-v-4.5-lora
 - Adaptador principal sobre InternVL3.5: https://huggingface.co/ReefNet/reefnet-internvl3.5-8b-lora

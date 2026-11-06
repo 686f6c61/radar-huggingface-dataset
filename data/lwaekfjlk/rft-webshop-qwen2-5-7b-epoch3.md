@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lwaekfjlk/rft-webshop-qwen2.5-7b-epoch3` es un ajuste fino por rechazo (Rejection Fine-Tuning, RFT) de Qwen2.5-7B-Instruct sobre trayectorias de agente generadas por el propio modelo en el entorno WebShop de AgentGym. Lo publica el usuario de HuggingFace `lwaekfjlk` como parte de una replicación del trabajo RWML (arXiv 2602.05842) y su objetivo es especializar un modelo de 7,6 mil millones de parámetros en una tarea concreta: navegar una tienda web simulada, buscar productos, comparar atributos y ejecutar la compra óptima mediante acciones estructuradas a lo largo de decenas de turnos.
+El modelo `lwaekfjlk/rft-webshop-qwen2.5-7b-epoch3` es un ajuste fino por rechazo (Rejection Fine-Tuning, RFT) de Qwen2.5-7B-Instruct sobre trayectorias de agente generadas por el propio modelo en el entorno WebShop de AgentGym. Lo publica el usuario de Hugging Face `lwaekfjlk` como parte de una replicación del trabajo RWML (arXiv 2602.05842) y su objetivo es especializar un modelo de 7,6 mil millones de parámetros en una tarea concreta: navegar una tienda web simulada, buscar productos, comparar atributos y ejecutar la compra óptima mediante acciones estructuradas a lo largo de decenas de turnos.
 
 El interés de esta ficha es doble. Por un lado, es un ejemplo canónico de pipeline RFT: se generan 14.611 rollouts con el modelo base, se filtran por recompensa del entorno (umbral 0,6 sobre una puntuación continua de coincidencia de atributos) y se conservan 4.507 trayectorias sobre 2.521 tareas distintas para un SFT de parámetros completos en 3 épocas. Por otro, es un caso de estudio sobre los límites de la señal de recompensa: solo 395 de los 14.611 rollouts alcanzaron una puntuación perfecta, lo que obligó a relajar el umbral y deja una supervisión con recompensa mediana de 0,71.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Benchmarks públicos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rft-webshop-qwen2.5-7b-epoch3 | 7,62 B | no declarado (entrenado hasta 16.384 tokens) | no disponibles | Apache 2.0 | HuggingFace, safetensors bf16, 0 descargas |
-| Qwen2.5-7B-Instruct (modelo base) | 7,62 B | 32.768 tokens nativos, 131.072 con YaRN | publicados por Alibaba, no reproducidos aquí | Apache 2.0 | HuggingFace, muy extendido |
+| rft-webshop-qwen2.5-7b-epoch3 | 7,62 B | no declarado (entrenado hasta 16.384 tokens) | no disponibles | Apache 2.0 | Hugging Face, safetensors bf16, 0 descargas |
+| Qwen2.5-7B-Instruct (modelo base) | 7,62 B | 32.768 tokens nativos, 131.072 con YaRN | publicados por Alibaba, no reproducidos aquí | Apache 2.0 | Hugging Face, muy extendido |
 | Otros ajustes agénticos de 7 B sobre WebShop o AgentGym | no disponible | no disponible | no disponibles | no disponible | no disponible |
 
 La comparación cuantitativa es inviable con los datos disponibles: no existen resultados publicados de este checkpoint ni de alternativas equivalentes sobre el mismo protocolo de evaluación. La única comparación defendible es la del modelo base sin ajustar, que puede ejecutarse sobre el mismo entorno para medir la ganancia atribuible al RFT.
@@ -96,7 +96,7 @@ La comparación cuantitativa es inviable con los datos disponibles: no existen r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lwaekfjlk/rft-webshop-qwen2.5-7b-epoch3
+- Modelo en Hugging Face: https://huggingface.co/lwaekfjlk/rft-webshop-qwen2.5-7b-epoch3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper citado en la model card (replicación RWML): https://arxiv.org/abs/2602.05842
 - AgentGym, entorno e infraestructura de entrenamiento mencionados en la model card: no se proporciona enlace directo en la información disponible

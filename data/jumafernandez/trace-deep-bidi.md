@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TRACE deep bidirectional | 85,1 M | 64 turnos | Representaciones contextuales de turno | Apache 2.0 | HuggingFace |
-| `sergioburdisso/dialog2flow-joint-bert-base` (base congelada) | no disponible | tokens de texto | Embeddings estáticos de turno | no disponible | HuggingFace |
-| `jumafernandez/trace-deep-ar` (variante autorregresiva) | no disponible | 64 turnos | Representaciones contextuales de turno | no disponible | HuggingFace |
+| TRACE deep bidirectional | 85,1 M | 64 turnos | Representaciones contextuales de turno | Apache 2.0 | Hugging Face |
+| `sergioburdisso/dialog2flow-joint-bert-base` (base congelada) | no disponible | tokens de texto | Embeddings estáticos de turno | no disponible | Hugging Face |
+| `jumafernandez/trace-deep-ar` (variante autorregresiva) | no disponible | 64 turnos | Representaciones contextuales de turno | no disponible | Hugging Face |
 
 La comparación con otros codificadores contextuales de diálogo de la misma categoría no está disponible en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación con otros codificadores contextuales de diálogo de la misma cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jumafernandez/trace-deep-bidi
+- Modelo en Hugging Face: https://huggingface.co/jumafernandez/trace-deep-bidi
 - Variante autorregresiva por defecto: https://huggingface.co/jumafernandez/trace-deep-ar
 - Checkpoints de todas las variantes: https://huggingface.co/jumafernandez/trace-checkpoints
 - Encoder base congelado: https://huggingface.co/sergioburdisso/dialog2flow-joint-bert-base

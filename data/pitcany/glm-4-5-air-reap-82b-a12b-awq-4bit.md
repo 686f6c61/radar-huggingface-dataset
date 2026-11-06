@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.5-Air-REAP-82B-A12B-AWQ-4bit es una version cuantizada a 4 bits mediante AWQ del modelo cerebras/GLM-4.5-Air-REAP-82B-A12B, que a su vez es una variante podada del GLM-4.5-Air original de Zhipu AI. La publica el usuario pitcany en HuggingFace bajo licencia Apache 2.0. El modelo base pertenece a la familia GLM-4.5, una arquitectura Mixture of Experts (MoE) disenada para generacion de texto y razonamiento conversacional, con soporte nativo de ingles y chino.
+GLM-4.5-Air-REAP-82B-A12B-AWQ-4bit es una version cuantizada a 4 bits mediante AWQ del modelo cerebras/GLM-4.5-Air-REAP-82B-A12B, que a su vez es una variante podada del GLM-4.5-Air original de Zhipu AI. La publica el usuario pitcany en Hugging Face bajo licencia Apache 2.0. El modelo base pertenece a la familia GLM-4.5, una arquitectura Mixture of Experts (MoE) disenada para generacion de texto y razonamiento conversacional, con soporte nativo de ingles y chino.
 
 La cuantizacion reduce el peso de aproximadamente 160 GB en FP16 a unos 40 GB en 4 bits, lo que permite desplegar un modelo MoE de gran tamano en hardware mas modesto. Segun los datos del repositorio, el checkpoint contiene 12.860.868.264 parametros reales en safetensors, aunque la model card declara 82B totales y 12B activos, lo que sugiere que la variante REAP aplica poda de expertos sobre la arquitectura original.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de comparativas de rendimiento con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pitcany/GLM-4.5-Air-REAP-82B-A12B-AWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/pitcany/GLM-4.5-Air-REAP-82B-A12B-AWQ-4bit
 - Modelo base: https://huggingface.co/cerebras/GLM-4.5-Air-REAP-82B-A12B
 - Libreria de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor
 - vLLM: https://github.com/vllm-project/vllm

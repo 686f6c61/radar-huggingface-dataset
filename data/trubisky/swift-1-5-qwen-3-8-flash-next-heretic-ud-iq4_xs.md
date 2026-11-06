@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 - Modelo sin rechazos: al derivar de pesos heretic/abliterated, no aplica las negativas del modelo original y puede generar contenido inapropiado, inseguro o Ilícito. Requiere filtros externos y supervision humana en cualquier despliegue expuesto a usuarios.
 - Riesgo de alucinacion: no hay evaluaciones publicadas de fidelidad; al ser una cuantizacion de 4 bits sobre un modelo ya modificado, el riesgo es al menos el del base y probablemente mayor en dominios fuera de la calibracion.
 - Idiomas: no se documenta la lista de idiomas soportados ni la calidad por idioma; el castellano no esta verificado.
-- Licencia: los metadatos de HuggingFace indican apache-2.0, pero la model card afirma que "hereda la licencia del modelo base". Conviene verificar la licencia efectiva del linaje ukisai/Qwen antes de un uso comercial.
+- Licencia: los metadatos de Hugging Face indican apache-2.0, pero la model card afirma que "hereda la licencia del modelo base". Conviene verificar la licencia efectiva del linaje ukisai/Qwen antes de un uso comercial.
 - Contexto: no se documenta la longitud maxima soportada; los ejemplos usan 8.192 tokens, pero no debe asumirse que ese sea el limite del modelo.
 - Artefactos strata: el ZIP con cabeza MTP y vision no incluye instrucciones detalladas de integracion en el runtime; el soporte depende de herramientas externas no identificadas.
 - Estado del repositorio: creado y actualizado en octubre de 2026, con 13 likes, senal de validacion comunitaria muy baja.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS
+- Modelo en Hugging Face: https://huggingface.co/trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS
 - Discusiones del repositorio: https://huggingface.co/trubisky/Swift-1.5-Qwen-3.8-Flash-Next-Heretic-UD-IQ4_XS/discussions
 - Pesos heretic originales: https://huggingface.co/jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic
 - Modelo base (GGUF): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF

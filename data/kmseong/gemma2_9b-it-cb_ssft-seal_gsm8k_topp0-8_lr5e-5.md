@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa rigurosa. El modelo base `google/gemma-2-9b-it` es la referencia inmediata, pero no hay datos de rendimiento del fine-tune. Otros fine-tunes de Gemma 2 9B para matematicas (por ejemplo, basados en GSM8K) existen en HuggingFace, pero no se han identificado en la busqueda. Se recomienda comparar directamente con el modelo base y con otros ajustes de tamano similar (como Llama 3.1 8B o Mistral 7B) en tareas de razonamiento matematico, pero sin datos publicos no es posible ofrecer una tabla.
+No se dispone de informacion suficiente para una comparativa rigurosa. El modelo base `google/gemma-2-9b-it` es la referencia inmediata, pero no hay datos de rendimiento del fine-tune. Otros fine-tunes de Gemma 2 9B para matematicas (por ejemplo, basados en GSM8K) existen en Hugging Face, pero no se han identificado en la busqueda. Se recomienda comparar directamente con el modelo base y con otros ajustes de tamano similar (como Llama 3.1 8B o Mistral 7B) en tareas de razonamiento matematico, pero sin datos publicos no es posible ofrecer una tabla.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kmseong/gemma2_9b-it-CB_SSFT-seal_gsm8k_topp0.8_lr5e-5
+- Repositorio Hugging Face: https://huggingface.co/kmseong/gemma2_9b-it-CB_SSFT-seal_gsm8k_topp0.8_lr5e-5
 - Modelo base Gemma 2 9B: https://huggingface.co/google/gemma-2-9b
 - Model card de Gemma 2 (Google AI): https://ai.google.dev/gemma/docs/core/model_card_2
 - Pagina de Gemma 2 en Ollama: https://ollama.com/library/gemma2:9b

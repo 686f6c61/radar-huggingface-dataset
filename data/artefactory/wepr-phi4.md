@@ -25,7 +25,7 @@ Su relevancia es práctica: permite añadir una capa de detección de alucinacio
 | Salida | Puntuacion continua en [0, 1] con `predict_proba`; 1 = clase alucinacion |
 | Libreria | sklearn (`library_name: sklearn`), pipeline `text-classification` |
 | Version minima de `artefactual` | >= 2026.9 (clase `WEPR`; hasta 2026.08.1 se cargaba con la factoria `wepr()`) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion | 2026-08-06 |
 | Ultima actualizacion | 2026-09-11 |
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Detector | Tipo | Coste de calibracion | Informacion de la distribucion que usa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WEPR (`artefactory/wepr-phi4`) | Regresion logistica sobre caracteristicas de entropia | 2k caracteristicas (30 con k=15) | Rangos mantenidos por separado; media y maximo sobre el eje de tokens | MIT | HuggingFace (este repositorio) |
+| WEPR (`artefactory/wepr-phi4`) | Regresion logistica sobre caracteristicas de entropia | 2k caracteristicas (30 con k=15) | Rangos mantenidos por separado; media y maximo sobre el eje de tokens | MIT | Hugging Face (este repositorio) |
 | EPR (metodo previo, referenciado en el mismo articulo) | Calibracion sobre entropia de produccion de tokens | Mismo coste de calibracion que WEPR, segun el autor | Agrega los rangos | no disponible | no disponible |
 | Otros detectores de alucinacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ La información disponible no incluye cifras comparativas entre WEPR y EPR ni fr
 
 ## Enlaces
 
-- HuggingFace del detector: https://huggingface.co/artefactory/wepr-phi4
+- Hugging Face del detector: https://huggingface.co/artefactory/wepr-phi4
 - Modelo objetivo: https://huggingface.co/microsoft/phi-4
 - Libreria `artefactual` (repositorio e issues): https://github.com/artefactory/artefactual
 - Preprint del articulo: https://arxiv.org/abs/2509.04492

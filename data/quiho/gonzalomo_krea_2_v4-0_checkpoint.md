@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GonzaLomo Krea 2 v4.0 es un checkpoint de generación de imágenes basado en el modelo Krea 2 de Krea AI, ajustado por el usuario Quiho y distribuido a través de HuggingFace. Se trata de un fine-tune orientado a la producción de fotografía realista, con un enfoque marcado en retratos femeninos y estética "raw photo" (foto cruda, amateur). El modelo está etiquetado como "not-for-all-audiences" e incluye prompts de ejemplo con contenido explícito o semiexplícito, lo que indica que su uso principal es la generación de imágenes para adultos.
+GonzaLomo Krea 2 v4.0 es un checkpoint de generación de imágenes basado en el modelo Krea 2 de Krea AI, ajustado por el usuario Quiho y distribuido a través de Hugging Face. Se trata de un fine-tune orientado a la producción de fotografía realista, con un enfoque marcado en retratos femeninos y estética "raw photo" (foto cruda, amateur). El modelo está etiquetado como "not-for-all-audiences" e incluye prompts de ejemplo con contenido explícito o semiexplícito, lo que indica que su uso principal es la generación de imágenes para adultos.
 
-El checkpoint cuenta con aproximadamente 12.820 millones de parámetros (12,8B) y un tamaño de repositorio de 40 GB, lo que sugiere que se distribuye en formato de pesos completos (safetensors) y posiblemente también en GGUF, según las etiquetas. Fue creado en septiembre de 2026 y no presenta descargas ni valoraciones en HuggingFace, aunque el autor lo promociona en Civitai como el modelo insignia de generateporn.ai. Al ser un derivado de Krea 2, hereda la arquitectura de difusión de este modelo, aunque no se especifican detalles técnicos adicionales en la ficha.
+El checkpoint cuenta con aproximadamente 12.820 millones de parámetros (12,8B) y un tamaño de repositorio de 40 GB, lo que sugiere que se distribuye en formato de pesos completos (safetensors) y posiblemente también en GGUF, según las etiquetas. Fue creado en septiembre de 2026 y no presenta descargas ni valoraciones en Hugging Face, aunque el autor lo promociona en Civitai como el modelo insignia de generateporn.ai. Al ser un derivado de Krea 2, hereda la arquitectura de difusión de este modelo, aunque no se especifican detalles técnicos adicionales en la ficha.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El checkpoint cuenta con aproximadamente 12.820 millones de parámetros (12,8B) 
 
 ## Arquitectura y entrenamiento
 
-Krea 2 es un modelo de generacion de imagenes entrenado desde cero por Krea AI, con dos variantes principales: RAW y TURBO. La version RAW se centra en la fidelidad fotografica y el detalle, mientras que la TURBO optimiza la velocidad de inferencia. Este checkpoint concreto es un ajuste fino (fine-tune) de la variante base de Krea 2, realizado por el autor Quiho, con el objetivo de especializarlo en fotografia realista de retratos femeninos y estetica "amateur" o "raw". No se dispone de informacion sobre el dataset de entrenamiento, el numero de pasos, ni si se utilizaron tecnicas como RLHF o DPO. El modelo se distribuye a traves de la libreria diffusers, lo que indica compatibilidad con el ecosistema de HuggingFace para inferencia y entrenamiento.
+Krea 2 es un modelo de generacion de imagenes entrenado desde cero por Krea AI, con dos variantes principales: RAW y TURBO. La version RAW se centra en la fidelidad fotografica y el detalle, mientras que la TURBO optimiza la velocidad de inferencia. Este checkpoint concreto es un ajuste fino (fine-tune) de la variante base de Krea 2, realizado por el autor Quiho, con el objetivo de especializarlo en fotografia realista de retratos femeninos y estetica "amateur" o "raw". No se dispone de informacion sobre el dataset de entrenamiento, el numero de pasos, ni si se utilizaron tecnicas como RLHF o DPO. El modelo se distribuye a traves de la libreria diffusers, lo que indica compatibilidad con el ecosistema de Hugging Face para inferencia y entrenamiento.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Krea 2 es un modelo de generacion de imagenes entrenado desde cero por Krea AI, 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre metricas como FID, CLIP score o comparaciones con otros modelos de generacion de imagenes en la ficha de HuggingFace ni en los resultados de busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre metricas como FID, CLIP score o comparaciones con otros modelos de generacion de imagenes en la ficha de Hugging Face ni en los resultados de busqueda web.
 
 ## Requisitos de hardware
 
@@ -68,8 +68,8 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace - GonzaLomo_Krea_2_v4.0_checkpoint](https://huggingface.co/Quiho/GonzaLomo_Krea_2_v4.0_checkpoint)
+- [Hugging Face - GonzaLomo_Krea_2_v4.0_checkpoint](https://huggingface.co/Quiho/GonzaLomo_Krea_2_v4.0_checkpoint)
 - [Civitai - GonzaLomo Krea 2 - v4.0](https://civitai.com/models/2761943/gonzalomo-krea-2)
 - [GitHub - krea-ai/krea-2 (codigo oficial de inferencia)](https://github.com/krea-ai/krea-2)
-- [HuggingFace - Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)
-- [HuggingFace - Comfy-Org/Krea-2](https://huggingface.co/Comfy-Org/Krea-2)
+- [Hugging Face - Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)
+- [Hugging Face - Comfy-Org/Krea-2](https://huggingface.co/Comfy-Org/Krea-2)

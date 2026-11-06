@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una conversión al formato MLX y cuantización de 4 bits del modelo `empero-ai/Qwen3.8-2B`, perteneciente a la serie Qwen3.8 desarrollada por Alibaba. La conversión ha sido realizada por SiddhJagani utilizando la librería `mlx-lm` en su versión 0.31.2. El objetivo es ofrecer una versión ligera y eficiente de un modelo de 2 mil millones de parámetros (según su denominación) para ejecutarse en dispositivos Apple Silicon mediante el framework MLX. El modelo base incorpora capacidades de razonamiento, function calling y está optimizado para entornos edge, tal como indican las etiquetas de HuggingFace. La licencia Apache 2.0 permite su uso comercial sin restricciones adicionales.
+Este modelo es una conversión al formato MLX y cuantización de 4 bits del modelo `empero-ai/Qwen3.8-2B`, perteneciente a la serie Qwen3.8 desarrollada por Alibaba. La conversión ha sido realizada por SiddhJagani utilizando la librería `mlx-lm` en su versión 0.31.2. El objetivo es ofrecer una versión ligera y eficiente de un modelo de 2 mil millones de parámetros (según su denominación) para ejecutarse en dispositivos Apple Silicon mediante el framework MLX. El modelo base incorpora capacidades de razonamiento, function calling y está optimizado para entornos edge, tal como indican las etiquetas de Hugging Face. La licencia Apache 2.0 permite su uso comercial sin restricciones adicionales.
 
 La relevancia de este modelo radica en la creciente demanda de LLMs locales que puedan ejecutarse en hardware de consumo, especialmente en Macs con chips M1 o posteriores. La cuantización a 4 bits reduce significativamente el uso de memoria y acelera la inferencia, lo que lo convierte en una opción práctica para desarrolladores que necesitan desplegar asistentes conversacionales o agentes con tool calling sin depender de servicios en la nube. No obstante, la información pública sobre el modelo base es escasa, y algunos datos técnicos, como el número exacto de parámetros, presentan inconsistencias que conviene tener en cuenta.
 
@@ -74,7 +74,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento ni de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-4Bit
 - Modelo base (empero-ai/Qwen3.8-2B): https://huggingface.co/empero-ai/Qwen3.8-2B
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Articulo de OpenLM sobre Qwen3.8: https://openlm.ai/qwen3.8/

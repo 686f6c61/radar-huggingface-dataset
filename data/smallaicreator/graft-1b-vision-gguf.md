@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos comparativos de rendimien
 
 ## Enlaces
 
-- HuggingFace (este repo): https://huggingface.co/SmallAICreator/GRAFT-1B-Vision-GGUF
+- Hugging Face (este repo): https://huggingface.co/SmallAICreator/GRAFT-1B-Vision-GGUF
 - Modelo base GRAFT-1B: https://huggingface.co/SmallAICreator/GRAFT-1B
 - Modelo base GRAFT-1B (seccion de limitaciones): https://huggingface.co/SmallAICreator/GRAFT-1B#limitations
 - Codificador visual: https://huggingface.co/google/siglip-so400m-patch14-384

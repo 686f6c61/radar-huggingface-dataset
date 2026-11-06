@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Sulfik/harley-Ivy-anima` es un checkpoint o LoRA publicado en HuggingFace por el usuario Sulfik (Slavik), especializado en generación de imágenes de estilo anime. El nombre del repositorio sugiere que está orientado a los personajes Harley Quinn y Poison Ivy (DC Comics), probablemente integrado en el ecosistema del modelo ANIMA, un sistema de IA para renderizado de personajes anime. La licencia `creativeml-openrail-m` permite uso comercial con restricciones, y el tamaño del repositorio (0,1 GB) indica que se trata de un modelo relativamente ligero, típico de checkpoints o LoRAs de Stable Diffusion.
+El modelo `Sulfik/harley-Ivy-anima` es un checkpoint o LoRA publicado en Hugging Face por el usuario Sulfik (Slavik), especializado en generación de imágenes de estilo anime. El nombre del repositorio sugiere que está orientado a los personajes Harley Quinn y Poison Ivy (DC Comics), probablemente integrado en el ecosistema del modelo ANIMA, un sistema de IA para renderizado de personajes anime. La licencia `creativeml-openrail-m` permite uso comercial con restricciones, y el tamaño del repositorio (0,1 GB) indica que se trata de un modelo relativamente ligero, típico de checkpoints o LoRAs de Stable Diffusion.
 
-La información técnica publicada es muy escasa: no hay model card descriptiva, ni especificaciones de arquitectura, parámetros o contexto. A partir de los metadatos y de la actividad del autor en HuggingFace (otros modelos como `Lady_DDG_Anima_V1`), se puede inferir que forma parte de una serie de adaptaciones para generación de imágenes anime, aunque no se dispone de detalles sobre el modelo base ni el entrenamiento. La relevancia actual del modelo radica en su posible uso para crear arte anime personalizado, aunque su escasa documentación limita su aplicabilidad en entornos profesionales.
+La información técnica publicada es muy escasa: no hay model card descriptiva, ni especificaciones de arquitectura, parámetros o contexto. A partir de los metadatos y de la actividad del autor en Hugging Face (otros modelos como `Lady_DDG_Anima_V1`), se puede inferir que forma parte de una serie de adaptaciones para generación de imágenes anime, aunque no se dispone de detalles sobre el modelo base ni el entrenamiento. La relevancia actual del modelo radica en su posible uso para crear arte anime personalizado, aunque su escasa documentación limita su aplicabilidad en entornos profesionales.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se dispone de modelos comparables verificados en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sulfik/harley-Ivy-anima
-- Perfil del autor en HuggingFace: https://huggingface.co/Sulfik
+- Hugging Face: https://huggingface.co/Sulfik/harley-Ivy-anima
+- Perfil del autor en Hugging Face: https://huggingface.co/Sulfik
 - ANIMADEX (catálogo de personajes anime): https://animadex.net/
 - Civitai (modelos de IA generativa): https://civitai.com/models
 - Tensor.Art (modelo Ivy and Harley PDXL): https://tensor.art/models/760701234526031450

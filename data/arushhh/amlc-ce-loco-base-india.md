@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Arushhh/amlc-ce-loco-base-India` es un checkpoint publicado en HuggingFace por el usuario Arushhh, construido sobre la arquitectura XLM-RoBERTa en su variante base. Con 278.044.417 parámetros en formato safetensors y un repositorio de 1,1 GB, el recuento coincide exactamente con el de `xlm-roberta-base`, un encoder transformer multilingüe de 12 capas. La etiqueta `xlm-roberta` declarada en el repositorio confirma la familia arquitectónica, aunque la ficha no documenta la tarea concreta para la que fue ajustado.
+El modelo `Arushhh/amlc-ce-loco-base-India` es un checkpoint publicado en Hugging Face por el usuario Arushhh, construido sobre la arquitectura XLM-RoBERTa en su variante base. Con 278.044.417 parámetros en formato safetensors y un repositorio de 1,1 GB, el recuento coincide exactamente con el de `xlm-roberta-base`, un encoder transformer multilingüe de 12 capas. La etiqueta `xlm-roberta` declarada en el repositorio confirma la familia arquitectónica, aunque la ficha no documenta la tarea concreta para la que fue ajustado.
 
 La relevancia práctica de este checkpoint es limitada por su estado de documentación: no declara licencia, no declara idiomas, no especifica pipeline y no incluye tarjeta de modelo con datos de entrenamiento o evaluación. El identificador sugiere un ajuste orientado a clasificación multietiqueta (`amlc`), posiblemente con objetivo de entropía cruzada (`ce`) y enfocado a contenido de India, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -68,18 +68,18 @@ Estimaciones calculadas a partir del recuento real de parametros (278 M). No pro
 - VRAM recomendada en practica: 2 GB o mas para FP16 con batches pequenos; 4-8 GB permite trabajar con batches mayores y secuencias de 512 tokens.
 - GPU consumer: cabe sin problema en cualquier GPU con 4 GB o mas, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 y superiores. Tambien es viable en CPU para inferencia de baja concurrencia.
 - GPU de datacenter recomendadas para alto throughput: T4, L4, A10G, L40S, A100 y H100. La eleccion dependera del volumen de peticiones y del batch agregado.
-- Opciones de despliegue: PyTorch con HuggingFace Transformers, ONNX Runtime, TorchScript, Text Embeddings Inference (TEI) para modelos encoder, y servicios propios con FastAPI. vLLM y llama.cpp no estan orientados a este tipo de modelo (encoder sin decodificacion autorregresiva), aunque vLLM tiene soporte experimental para algunos modelos de embeddings basados en BERT.
+- Opciones de despliegue: PyTorch con Hugging Face Transformers, ONNX Runtime, TorchScript, Text Embeddings Inference (TEI) para modelos encoder, y servicios propios con FastAPI. vLLM y llama.cpp no estan orientados a este tipo de modelo (encoder sin decodificacion autorregresiva), aunque vLLM tiene soporte experimental para algunos modelos de embeddings basados en BERT.
 - Latencia y throughput: no disponible. No hay mediciones publicadas y dependen fuertemente del hardware, la longitud de secuencia y el tamano de batch.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| amlc-ce-loco-base-India | 278 M | No disponible (512 esperado por la familia) | No disponible | safetensors | HuggingFace, 10 descargas |
-| xlm-roberta-base | 278 M | 512 tokens | MIT | safetensors, PyTorch | HuggingFace, ampliamente usado |
-| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | HuggingFace, muy extendido |
-| distilbert-base-multilingual-cased | 135 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | HuggingFace, opcion ligera |
-| LaBSE | 471 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | HuggingFace, orientado a similitud bilingue |
+| amlc-ce-loco-base-India | 278 M | No disponible (512 esperado por la familia) | No disponible | safetensors | Hugging Face, 10 descargas |
+| xlm-roberta-base | 278 M | 512 tokens | MIT | safetensors, PyTorch | Hugging Face, ampliamente usado |
+| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | Hugging Face, muy extendido |
+| distilbert-base-multilingual-cased | 135 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | Hugging Face, opcion ligera |
+| LaBSE | 471 M | 512 tokens | Apache 2.0 | safetensors, PyTorch | Hugging Face, orientado a similitud bilingue |
 
 La ventaja principal de los modelos alternativos es la claridad legal y la documentacion exhaustiva. Frente a ellos, este checkpoint no aporta datos verificables de rendimiento que justifiquen su uso por encima de `xlm-roberta-base` ajustado por el propio equipo.
 
@@ -98,7 +98,7 @@ La ventaja principal de los modelos alternativos es la claridad legal y la docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arushhh/amlc-ce-loco-base-India
+- Modelo en Hugging Face: https://huggingface.co/Arushhh/amlc-ce-loco-base-India
 - Modelo base de referencia (xlm-roberta-base): https://huggingface.co/xlm-roberta-base
 - Paper de XLM-R: https://arxiv.org/abs/1911.02116
 - Repositorio de referencia de fairseq (entrenamiento de XLM-R): https://github.com/facebookresearch/fairseq/tree/main/examples/xlmr

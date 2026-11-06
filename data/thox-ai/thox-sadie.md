@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thox-Sadie | 8B | 8.192 en evaluacion | Persona sobre Qwen3-8B sin entrenamiento | Apache-2.0 | HuggingFace (packaging) y Ollama |
-| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Modelo base entrenado | Apache-2.0 | HuggingFace y Ollama (`qwen3:8b`) |
+| Thox-Sadie | 8B | 8.192 en evaluacion | Persona sobre Qwen3-8B sin entrenamiento | Apache-2.0 | Hugging Face (packaging) y Ollama |
+| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Modelo base entrenado | Apache-2.0 | Hugging Face y Ollama (`qwen3:8b`) |
 | Otras personas THOX (10 restantes) | 8B | 8.192 en evaluacion | Persona sobre Qwen3-8B | Apache-2.0 | Ollama (`Thox-ai/*`) |
 
 La comparacion relevante es contra el propio Qwen3-8B: Thox-Sadie no mejora ninguna metrica del base, solo anade identidad y grounding. Frente a otras personas del mismo programa, comparte base y metodologia y se diferencia unicamente en el perfil de rol.
@@ -93,7 +93,7 @@ La comparacion relevante es contra el propio Qwen3-8B: Thox-Sadie no mejora ning
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/Thox-Sadie
+- Hugging Face: https://huggingface.co/Thox-ai/Thox-Sadie
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo en Ollama: `Thox-ai/thox-sadie` (referencia del autor; sin URL verificada en la informacion disponible)
 - Tag de Ollama del base: `qwen3:8b`, sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41

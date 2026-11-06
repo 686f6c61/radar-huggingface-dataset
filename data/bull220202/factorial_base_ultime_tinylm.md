@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Factorial_Base_ULTIME_TinyLM es un modelo de generacion de texto de tamano muy reducido (aproximadamente 48 millones de parametros) publicado por el usuario bull220202 en HuggingFace. Se distribuye bajo licencia CC-BY-4.0 y esta etiquetado para el idioma japones, con un pipeline de text-generation implementado en PyTorch. El repositorio ocupa aproximadamente 0,6 GB.
+Factorial_Base_ULTIME_TinyLM es un modelo de generacion de texto de tamano muy reducido (aproximadamente 48 millones de parametros) publicado por el usuario bull220202 en Hugging Face. Se distribuye bajo licencia CC-BY-4.0 y esta etiquetado para el idioma japones, con un pipeline de text-generation implementado en PyTorch. El repositorio ocupa aproximadamente 0,6 GB.
 
 La model card es extremadamente escueta: se limita a indicar que es un "tiny factorial model" de unos 48M de parametros y a afirmar que, pese a su tamano, su rendimiento "no debe subestimarse". No se aporta informacion sobre arquitectura concreta, datos de entrenamiento, tokenizador ni proceso de alineacion.
 
@@ -84,5 +84,5 @@ La comparacion se limita a parametros y licencia; no hay base para comparar cali
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bull220202/Factorial_Base_ULTIME_TinyLM
+- Hugging Face: https://huggingface.co/bull220202/Factorial_Base_ULTIME_TinyLM
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

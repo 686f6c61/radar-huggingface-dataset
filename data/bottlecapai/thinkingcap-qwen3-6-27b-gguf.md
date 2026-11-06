@@ -6,7 +6,7 @@ ThinkingCap-Qwen3.6-27B es un modelo de lenguaje multimodal desarrollado por Bot
 
 El modelo acepta tanto texto como imagenes (pipeline image-text-to-text) y se distribuye en formato GGUF, lo que permite su ejecucion con llama.cpp y herramientas compatibles como Ollama o LM Studio. Con 27 mil millones de parametros, se posiciona como una opcion intermedia entre los modelos de 7B-8B y los de 70B+, ofreciendo un equilibrio entre capacidad de razonamiento y requisitos de hardware. La version GGUF incluye multiples cuantizaciones con matrices de importancia (imatrix) preparadas por bartowski, lo que facilita su despliegue en una amplia gama de GPUs.
 
-El acceso al modelo esta restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones de uso antes de poder descargarlo. Con mas de 82.000 descargas y 248 likes en el momento de redactar esta ficha, el modelo ha generado interes dentro de la comunidad de despliegue local.
+El acceso al modelo esta restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones de uso antes de poder descargarlo. Con mas de 82.000 descargas y 248 likes en el momento de redactar esta ficha, el modelo ha generado interes dentro de la comunidad de despliegue local.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El acceso al modelo esta restringido (gated) en HuggingFace, por lo que es neces
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF con imatrix (multiples niveles, preparadas por bartowski) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido en HuggingFace) |
+| Licencia | no disponible (acceso restringido en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): el modelo requiere aceptar las condiciones de uso en HuggingFace antes de la descarga, lo que puede limitar su integracion en pipelines automatizados.
+- Acceso restringido (gated): el modelo requiere aceptar las condiciones de uso en Hugging Face antes de la descarga, lo que puede limitar su integracion en pipelines automatizados.
 - Licencia no especificada: no se ha publicado la licencia del modelo, lo que genera incertidumbre sobre su uso comercial y la redistribucion de derivados.
 - Idiomas soportados no confirmados: no se ha publicado informacion sobre la cobertura linguistica, por lo que su rendimiento en espanol u otros idiomas distintos del ingles no esta garantizado.
 - Longitud de contexto no confirmada: se desconoce la ventana de contexto efectiva, un factor critico para tareas que requieren procesar documentos largos.
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
 - Cuantizaciones GGUF de bartowski: https://huggingface.co/bartowski/bottlecapai_ThinkingCap-Qwen3.6-27B-GGUF
 - Articulo de presentacion de BottleCap AI: https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`logic-gate` es una red neuronal minima publicada por el usuario simonko912 en HuggingFace. No es un modelo de lenguaje: es un perceptron multicapa de 102 parametros totales que simula diez puertas logicas (AND, OR, XOR, NAND, NOR, XNOR, NOT, BUF, CNOT y SWAP) a partir de un unico conjunto de pesos compartido. La entrada es un selector one-hot de puerta junto con los operandos `a` y `b`, y la salida son dos neuronas que codifican el resultado o resultados de la operacion.
+`logic-gate` es una red neuronal minima publicada por el usuario simonko912 en Hugging Face. No es un modelo de lenguaje: es un perceptron multicapa de 102 parametros totales que simula diez puertas logicas (AND, OR, XOR, NAND, NOR, XNOR, NOT, BUF, CNOT y SWAP) a partir de un unico conjunto de pesos compartido. La entrada es un selector one-hot de puerta junto con los operandos `a` y `b`, y la salida son dos neuronas que codifican el resultado o resultados de la operacion.
 
 Su relevancia no es funcional sino didactica y de infraestructura: sirve como banco de pruebas ultraligero para validar pipelines de carga de safetensors, inferencia en PyTorch, integracion con frameworks de despliegue o tests de CI sin coste computacional. El propio autor lo describe como "la red neuronal mas inutil y extrana", pensada para experimentar.
 
-El modelo se publico el 29 de octubre de 2026 bajo licencia Apache 2.0, solo en ingles, con formato safetensors y un repositorio de 0.0 GB. No dispone de pipeline declarado en HuggingFace ni de descargas o likes en el momento de la consulta.
+El modelo se publico el 29 de octubre de 2026 bajo licencia Apache 2.0, solo en ingles, con formato safetensors y un repositorio de 0.0 GB. No dispone de pipeline declarado en Hugging Face ni de descargas o likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ No se dispone de informacion sobre el dataset de entrenamiento, el numero de tok
 ## Casos de uso
 
 - Test de humo en pipelines de safetensors: cargar los pesos y verificar que la inferencia devuelve valores coherentes para XOR o CNOT permite validar la instalacion de `safetensors` y PyTorch en un entorno nuevo sin consumir GPU.
-- Pruebas unitarias en CI/CD: al tener 102 parametros y un repositorio de 0.0 GB, se puede incluir como fixture en suites de integracion para comprobar el flujo completo de descarga, carga y ejecucion de un modelo de HuggingFace en segundos.
+- Pruebas unitarias en CI/CD: al tener 102 parametros y un repositorio de 0.0 GB, se puede incluir como fixture en suites de integracion para comprobar el flujo completo de descarga, carga y ejecucion de un modelo de Hugging Face en segundos.
 - Validacion de frameworks de despliegue: sirve para comprobar que un servidor de inferencia (por ejemplo, un endpoint que envuelva PyTorch) arranca, acepta peticiones y devuelve tensores correctamente antes de desplegar modelos grandes.
 - Docencia de redes neuronales: permite ilustrar el concepto de pesos compartidos entre tareas (una sola red resuelve diez funciones distintas segun la entrada) y la codificacion one-hot en un ejemplo de 102 parametros.
 - Benchmark de latencia base: mide el coste fijo de un ciclo de inferencia (overhead de framework, serializacion, I/O) al restar el tiempo de computo, que es practicamente nulo.
@@ -72,9 +72,9 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Limitaciones de contexto e idioma: sin ventana de contexto y sin capacidades multilingues; el campo de idioma es solo metadato.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificacion con atribucion; no se detectan restricciones adicionales en la informacion disponible.
 - Caveat para produccion: el autor lo describe explicitamente como "el mas inutil y extrano", apto solo para pruebas; no debe usarse como componente funcional en sistemas reales.
-- Sin pipeline declarado en HuggingFace y con cero descargas y likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
+- Sin pipeline declarado en Hugging Face y con cero descargas y likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simonko912/logic-gate
+- Modelo en Hugging Face: https://huggingface.co/simonko912/logic-gate
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

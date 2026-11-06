@@ -75,7 +75,7 @@ Segun el autor, Nail supera a Qwen3.6-27b y ThinkingCap en tiempo de respuesta y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP
+- Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Cuantizacion MTP de Unsloth: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
 - Version estandar (sin MTP): https://huggingface.co/peculiar-ragdoll/Nail-Qwen3.6-35B-A3B-GGUF

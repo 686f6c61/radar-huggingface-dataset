@@ -2,7 +2,7 @@
 
 ## Resumen
 
-M2-Craftly 1 es un build privado y renombrado del modelo de generacion de imagen a partir de texto aMUSEd-256 (amused/amused-256), publicado por el usuario mushfiqur-good-boyyy en HuggingFace. La propia model card lo declara de forma explicita: "This is a rebrand, not a new architecture", con pesos y arquitectura identicos a los del modelo upstream. No se trata, por tanto, de un entrenamiento nuevo ni de una variante afinada, sino de un reempaquetado con nombre, model card y packaging personalizados para uso privado. El repositorio es de visibilidad privada, acumula 6 descargas y 0 likes, y no presenta senales de validacion por parte de la comunidad.
+M2-Craftly 1 es un build privado y renombrado del modelo de generacion de imagen a partir de texto aMUSEd-256 (amused/amused-256), publicado por el usuario mushfiqur-good-boyyy en Hugging Face. La propia model card lo declara de forma explicita: "This is a rebrand, not a new architecture", con pesos y arquitectura identicos a los del modelo upstream. No se trata, por tanto, de un entrenamiento nuevo ni de una variante afinada, sino de un reempaquetado con nombre, model card y packaging personalizados para uso privado. El repositorio es de visibilidad privada, acumula 6 descargas y 0 likes, y no presenta senales de validacion por parte de la comunidad.
 
 Tecnicamente hereda la propuesta de aMUSEd: un modelo de difusion ligero de estilo MUSE (masked image modeling), con un transformer U-ViT y un decodificador VQ-GAN, pensado para generar imagenes a 256x256 en pocos pasos de inferencia. Los ficheros safetensors del repositorio suman 603.537.664 parametros, mientras que la model card declara aproximadamente 800M de parametros, una discrepancia que probablemente refleja la diferencia entre los pesos almacenados y el computo total del pipeline (incluyendo componentes congelados). El repositorio ocupa 3,5 GB y esta etiquetado con la libreria diffusers y la clase de pipeline diffsusers:M2CraftlyPipeline.
 
@@ -95,7 +95,7 @@ La comparacion relevante es con el propio upstream: M2-Craftly 1 no aporta cambi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mushfiqur-good-boyyy/m2-craftly-1
+- Modelo en Hugging Face: https://huggingface.co/mushfiqur-good-boyyy/m2-craftly-1
 - Modelo upstream citado en la model card: https://huggingface.co/amused/amused-256
 - Documentacion de la libreria diffusers: https://huggingface.co/docs/diffusers
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados devueltos correspondian a hilos de Reddit sin relacion (comunidades de Blooket y subreddit de profesores). No se dispone de paper, blog, repositorio de codigo ni demo asociados a este repositorio.

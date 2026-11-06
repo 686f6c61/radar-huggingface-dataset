@@ -25,7 +25,7 @@ Es relevante ahora por dos motivos. Primero, es un ejemplo de reentrenamiento co
 | Modelo base | Urdatorn/KainoBERT-sphragis (continuacion, no destilacion) |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha en metadatos de HuggingFace | creado el 2026-09-25, actualizado el 2026-09-25 |
+| Fecha en metadatos de Hugging Face | creado el 2026-09-25, actualizado el 2026-09-25 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,10 +87,10 @@ Las únicas cifras cuantitativas publicadas son pérdidas de validación durante
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KainoBERT (este modelo) | 136.120.832 | 1.024 | grc | other | safetensors en HuggingFace |
-| KainoBERT-sphragis (padre) | no disponible (misma arquitectura declarada) | no disponible | grc | other | safetensors en HuggingFace; corpus sin material de benchmark |
-| KainoBERTa-sphragis | no disponible en la informacion disponible | no disponible | no disponible | no disponible | mencionado en resultados de busqueda como repositorio de HuggingFace |
-| answerdotai/ModernBERT-base (referencia de arquitectura, no de dominio) | 149M | 8.192 | ingles | Apache-2.0 | safetensors en HuggingFace |
+| KainoBERT (este modelo) | 136.120.832 | 1.024 | grc | other | safetensors en Hugging Face |
+| KainoBERT-sphragis (padre) | no disponible (misma arquitectura declarada) | no disponible | grc | other | safetensors en Hugging Face; corpus sin material de benchmark |
+| KainoBERTa-sphragis | no disponible en la informacion disponible | no disponible | no disponible | no disponible | mencionado en resultados de busqueda como repositorio de Hugging Face |
+| answerdotai/ModernBERT-base (referencia de arquitectura, no de dominio) | 149M | 8.192 | ingles | Apache-2.0 | safetensors en Hugging Face |
 
 La informacion disponible no permite comparar rendimiento numerico con alternativas de griego antiguo: no hay benchmarks publicados para este modelo ni datos de modelos comparables en el material consultado.
 
@@ -106,18 +106,18 @@ La informacion disponible no permite comparar rendimiento numerico con alternati
 - **Licencia ambigua para uso comercial**: la licencia declarada es "other" y el corpus es una compilacion de licencias mixtas. Hay que consultar el campo `license` de cada registro fuente y las cartas de los datasets de origen antes de cualquier reutilizacion o explotacion comercial.
 - **Sesgos esperables no documentados**: dado que el corpus procede de ediciones digitales, cabe esperar sobrerrepresentacion de los autores y generos mejor conservados y editados. La informacion disponible no cuantifica este sesgo.
 - **Sin validacion de la comunidad**: 0 descargas y 0 likes en el momento de la consulta, sin issues ni discusion publica.
-- **Metadatos anomalos**: las fechas de creacion y actualizacion del repositorio en HuggingFace figuran como 2026-09-25, lo que conviene verificar antes de citar el modelo en un trabajo.
+- **Metadatos anomalos**: las fechas de creacion y actualizacion del repositorio en Hugging Face figuran como 2026-09-25, lo que conviene verificar antes de citar el modelo en un trabajo.
 - **No es un asistente**: al ser un encoder fill-mask, no genera texto libre, no sigue instrucciones, no soporta tool calling y no puede integrarse en flujos de agente sin envoltorio adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/KainoBERT
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/KainoBERT
 - Modelo padre (sin contaminacion de benchmarks): https://huggingface.co/Urdatorn/KainoBERT-sphragis
 - Repositorio relacionado KainoBERTa-sphragis: https://huggingface.co/Urdatorn/KainoBERTa-sphragis
 - Dataset completo: https://huggingface.co/datasets/Ericu950/AncientGreek
 - Dataset sin material de benchmark: https://huggingface.co/datasets/Urdatorn/AncientGreek-no-sphragis
 - Pipeline de entrenamiento (GitHub): https://github.com/Urdatorn/sphragis_models
-- Perfil de HuggingFace del autor: https://huggingface.co/Urdatorn/models
+- Perfil de Hugging Face del autor: https://huggingface.co/Urdatorn/models
 - Perfil de GitHub del autor: https://github.com/Urdatorn
 - ORCID del autor: https://orcid.org/0009-0003-3731-4038
 - Modelo de referencia de la arquitectura: https://huggingface.co/answerdotai/ModernBERT-base

@@ -33,7 +33,7 @@ La versión ROGUE-MLX-4bit aplica una intervención adicional sobre los pesos de
 - Razonamiento y resolucion de problemas, con enfasis en tareas de codificacion y agenticas segun la documentacion del modelo base.
 - Soporte de tool calling / function calling: no especificado en la informacion disponible, aunque los modelos Qwen 3.5 suelen incluirlo; no se confirma.
 - Capacidades de agente y razonamiento multi-paso: mencionadas en el blog de MindStudio, pero sin detalles tecnicos concretos.
-- Capacidad multilingue: limitada al ingles (segun los metadatos de HuggingFace).
+- Capacidad multilingue: limitada al ingles (segun los metadatos de Hugging Face).
 - Sin soporte de vision o audio en esta version.
 - No incluye modo de pensamiento explicito (thinking mode) documentado.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de tamano s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/carsenk/Ornith-1.5-35B-A3B-ROGUE-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/carsenk/Ornith-1.5-35B-A3B-ROGUE-MLX-4bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Version FP8 del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Blog de Ornith AI sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo HyperCLOVA X SEED Think-14B SFT 71894 Correct Minimal es una variante ajustada del modelo base `naver-hyperclovax/HyperCLOVAX-SEED-Think-14B`, desarrollada por el usuario de HuggingFace youngseok12. Se trata de un modelo de lenguaje autoregresivo de 14.700 millones de parámetros (14,7B) en formato safetensors, preparado para la generación de texto en coreano. El ajuste fino se realizó mediante la fusión de un adaptador LoRA entrenado con un subconjunto del dataset AI Hub 71894, compuesto por 674 ejemplos de preguntas de opción múltiple sobre conocimiento general y cultura/hechos históricos coreanos.
+El modelo HyperCLOVA X SEED Think-14B SFT 71894 Correct Minimal es una variante ajustada del modelo base `naver-hyperclovax/HyperCLOVAX-SEED-Think-14B`, desarrollada por el usuario de Hugging Face youngseok12. Se trata de un modelo de lenguaje autoregresivo de 14.700 millones de parámetros (14,7B) en formato safetensors, preparado para la generación de texto en coreano. El ajuste fino se realizó mediante la fusión de un adaptador LoRA entrenado con un subconjunto del dataset AI Hub 71894, compuesto por 674 ejemplos de preguntas de opción múltiple sobre conocimiento general y cultura/hechos históricos coreanos.
 
 Su principal particularidad es que el entrenamiento se limitó a que el modelo predijera únicamente la letra de la respuesta correcta (A, B, C, D o E), un enfoque denominado Correct Minimal. La relevancia de esta publicación radica en que documenta un experimento de ajuste fino con un volumen de datos muy reducido y una configuración LoRA de baja dimensión, aprovechando un modelo base comercial de NAVER. No obstante, el propio autor indica en la model card que no se han medido puntuaciones de benchmarks locales ni del K-AI leaderboard, por lo que su rendimiento real no está validado.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71894-correct-minimal | 14,7B | No disponible | SFT con LoRA, Correct Minimal | hyperclovax-seed | HuggingFace |
-| naver-hyperclovax/HyperCLOVAX-SEED-Think-14B | 14,7B | No disponible | Modelo base, sin SFT | hyperclovax-seed | HuggingFace |
-| youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 | 14,7B | No disponible | SFT con LoRA (datos distintos, no documentados aquí) | hyperclovax-seed | HuggingFace |
-| youngseok12/HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-ties | 14,7B | No disponible | Consolidación de adaptadores con Ties | hyperclovax-seed | HuggingFace |
+| youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71894-correct-minimal | 14,7B | No disponible | SFT con LoRA, Correct Minimal | hyperclovax-seed | Hugging Face |
+| naver-hyperclovax/HyperCLOVAX-SEED-Think-14B | 14,7B | No disponible | Modelo base, sin SFT | hyperclovax-seed | Hugging Face |
+| youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875 | 14,7B | No disponible | SFT con LoRA (datos distintos, no documentados aquí) | hyperclovax-seed | Hugging Face |
+| youngseok12/HyperCLOVA-X-SEED-Think-14B-success-consolidation-krc-r4min-ties | 14,7B | No disponible | Consolidación de adaptadores con Ties | hyperclovax-seed | Hugging Face |
 
 No se dispone de benchmarks publicados para ninguna de estas variantes, por lo que la comparativa se limita a parámetros y características de distribución. El rendimiento relativo no puede verificarse con los datos actuales.
 
@@ -82,7 +82,7 @@ No se dispone de benchmarks publicados para ninguna de estas variantes, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71894-correct-minimal
+- Modelo en Hugging Face: https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-sft-71894-correct-minimal
 - Modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B
 - Dataset AI Hub 71894: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71894
 - Variante minimal-sft-71875: https://huggingface.co/youngseok12/HyperCLOVA-X-SEED-Think-14B-minimal-sft-71875

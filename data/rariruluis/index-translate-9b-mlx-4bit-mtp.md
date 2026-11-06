@@ -17,7 +17,7 @@ El modelo base, Index-Translate-9B, es un modelo de traducción de arquitectura 
 | Parametros activos | No aplica (no es un modelo MoE segun la informacion disponible) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | MLX affine de 4 bits, group size 64; tensores no cuantizados en BF16 (RMSNorm y proyeccion de fusion MTP, `mtp.fc`) |
-| Idiomas soportados | El modelo original declara traduccion en 150 idiomas (segun su model card); la metadata de HuggingFace de esta conversion no lista idiomas concretos |
+| Idiomas soportados | El modelo original declara traduccion en 150 idiomas (segun su model card); la metadata de Hugging Face de esta conversion no lista idiomas concretos |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (formato MLX); archivo de pesos de aproximadamente 5,22 GB (4,86 GiB) |
 | Tamano del repositorio | 5,2 GB |
@@ -28,9 +28,9 @@ El modelo base, Index-Translate-9B, es un modelo de traducción de arquitectura 
 
 ## Arquitectura y entrenamiento
 
-El modelo base sigue una arquitectura transformer autorregresiva etiquetada como qwen3_5, con 9,2 mil millones de parametros. La conversion no modifica los pesos mas alla del proceso de cuantizacion: se aplica cuantizacion afina de 4 bits con group size 64 sobre las capas lineales, mientras que las RMSNorm y la proyeccion de fusion de la cabeza MTP permanecen en BF16 para preservar la estabilidad numerica. Ademas se aplican las transformaciones necesarias de RMSNorm y convolucion para convertir los pesos del formato original de HuggingFace al formato MLX.
+El modelo base sigue una arquitectura transformer autorregresiva etiquetada como qwen3_5, con 9,2 mil millones de parametros. La conversion no modifica los pesos mas alla del proceso de cuantizacion: se aplica cuantizacion afina de 4 bits con group size 64 sobre las capas lineales, mientras que las RMSNorm y la proyeccion de fusion de la cabeza MTP permanecen en BF16 para preservar la estabilidad numerica. Ademas se aplican las transformaciones necesarias de RMSNorm y convolucion para convertir los pesos del formato original de Hugging Face al formato MLX.
 
-La innovacion tecnica relevante no esta en el entrenamiento (no se realizo ningun entrenamiento adicional en esta conversion) sino en el proceso de cuantizacion. El flujo estandar de mlx-lm descarta la cabeza MTP, lo que inutiliza la decodificacion especulativa Lightning MTP de oMLX. Este checkpoint emplea los parches de compatibilidad de oMLX aplicados antes de cuantizar, conservando las 15 tensores MTP originales, incluida la capa unica de prediccion, junto con la metadata de cuantizacion de sus capas lineales. El script `convert_mtp.py` documenta el procedimiento, espera encontrar la revision de origen en la cache de HuggingFace y escribe en un directorio nuevo, negandose a sobrescribir modelos existentes. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en el modelo base, mas alla de lo publicado en su propia model card.
+La innovacion tecnica relevante no esta en el entrenamiento (no se realizo ningun entrenamiento adicional en esta conversion) sino en el proceso de cuantizacion. El flujo estandar de mlx-lm descarta la cabeza MTP, lo que inutiliza la decodificacion especulativa Lightning MTP de oMLX. Este checkpoint emplea los parches de compatibilidad de oMLX aplicados antes de cuantizar, conservando las 15 tensores MTP originales, incluida la capa unica de prediccion, junto con la metadata de cuantizacion de sus capas lineales. El script `convert_mtp.py` documenta el procedimiento, espera encontrar la revision de origen en la cache de Hugging Face y escribe en un directorio nuevo, negandose a sobrescribir modelos existentes. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de RLHF o DPO en el modelo base, mas alla de lo publicado en su propia model card.
 
 ## Capacidades
 
@@ -73,8 +73,8 @@ La model card de esta conversion indica explicitamente que no se ha ejecutado ni
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Index-Translate-9B-MLX-4bit-MTP | 9,2 mil millones | No disponible | 4 bits MLX affine, group size 64 | Apache-2.0 | HuggingFace, conversion no oficial | Solo texto, cabeza MTP conservada, requiere oMLX |
-| IndexTeam/Index-Translate-9B (modelo base) | 9,2 mil millones | No disponible | BF16 | Apache-2.0 | HuggingFace, release oficial | Incluye codificador de vision; mayor peso de almacenamiento |
+| Index-Translate-9B-MLX-4bit-MTP | 9,2 mil millones | No disponible | 4 bits MLX affine, group size 64 | Apache-2.0 | Hugging Face, conversion no oficial | Solo texto, cabeza MTP conservada, requiere oMLX |
+| IndexTeam/Index-Translate-9B (modelo base) | 9,2 mil millones | No disponible | BF16 | Apache-2.0 | Hugging Face, release oficial | Incluye codificador de vision; mayor peso de almacenamiento |
 | Otras conversiones MLX del mismo base con mlx-lm estandar | 9,2 mil millones | No disponible | 4 bits | Apache-2.0 | Segun cada publicacion | Descartan la cabeza MTP, por lo que no habilitan Lightning MTP |
 
 No se dispone de datos verificados de rendimiento de esta conversion que permitan una comparacion cuantitativa con alternativas de traduccion de tamano similar (por ejemplo modelos de traduccion dedicados de la familia NLLB o Tower). Cualquier comparacion numerica deberia basarse en una evaluacion propia sobre el checkpoint cuantizado.
@@ -99,7 +99,7 @@ No se dispone de datos verificados de rendimiento de esta conversion que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rariruluis/Index-Translate-9B-MLX-4bit-MTP
+- Modelo en Hugging Face: https://huggingface.co/rariruluis/Index-Translate-9B-MLX-4bit-MTP
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-9B
 - Licencia del repositorio: archivo `LICENSE` incluido en el repositorio (Apache-2.0)
 - Script de conversion: `convert_mtp.py`, incluido en el repositorio

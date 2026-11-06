@@ -77,7 +77,7 @@ La principal diferencia entre la versión de `steampunque` y la de `bartowski` e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/steampunque/Qwen3.6-35B-A3B-MP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/steampunque/Qwen3.6-35B-A3B-MP-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Espacio de benchmarks (pendiente de publicación): https://huggingface.co/spaces/steampunque/benchlm
 - Guía de despliegue local (en inglés): https://knightli.com/en/2026/05/24/qwen36-35b-a3b-local-deployment-llamacpp-gguf/

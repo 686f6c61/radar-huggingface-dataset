@@ -6,7 +6,7 @@ DeepSeek-R1-Qwen-32B-Uncensored-i1-GGUF es una cuantización GGUF con matriz de 
 
 Esta cuantización está pensada para reducir el tamaño del modelo y permitir su ejecución en hardware de consumo, ofreciendo varios niveles de compresión (desde 11,4 GB hasta 18,9 GB) y manteniendo la compatibilidad con herramientas como llama.cpp y Ollama. Es relevante para desarrolladores que necesitan ejecutar un modelo de 32B en local sin depender de servicios en la nube.
 
-No se dispone de información oficial sobre arquitectura, longitud de contexto ni datos de entrenamiento en la documentación proporcionada. El tamaño del modelo es de 32.759.790.592 parámetros, según los metadatos de HuggingFace.
+No se dispone de información oficial sobre arquitectura, longitud de contexto ni datos de entrenamiento en la documentación proporcionada. El tamaño del modelo es de 32.759.790.592 parámetros, según los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 

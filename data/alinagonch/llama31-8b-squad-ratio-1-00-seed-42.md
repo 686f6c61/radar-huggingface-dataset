@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/llama31-8b-squad-ratio-1.00-seed-42` es un artefacto de modelo publicado en HuggingFace por el usuario AlinaGonch. El identificador sugiere un ajuste fino sobre Llama 3.1 de 8.000 millones de parametros con el dataset SQuAD, con un parametro de mezcla o ratio de 1,00 y semilla 42, un patron tipico de experimentos de investigacion sobre proporcion de datos de ajuste. No obstante, la model card publicada es la plantilla autogenerada de `transformers` y no contiene informacion sustantiva: todos los apartados figuran como `[More Information Needed]`.
+`AlinaGonch/llama31-8b-squad-ratio-1.00-seed-42` es un artefacto de modelo publicado en Hugging Face por el usuario AlinaGonch. El identificador sugiere un ajuste fino sobre Llama 3.1 de 8.000 millones de parametros con el dataset SQuAD, con un parametro de mezcla o ratio de 1,00 y semilla 42, un patron tipico de experimentos de investigacion sobre proporcion de datos de ajuste. No obstante, la model card publicada es la plantilla autogenerada de `transformers` y no contiene informacion sustantiva: todos los apartados figuran como `[More Information Needed]`.
 
 El repositorio ocupa 0,2 GB y contiene pesos en formato `safetensors` para la libreria `transformers`. Ese tamano es muy inferior a los aproximadamente 16 GB que ocuparia un modelo de 8.000 millones de parametros en precision fp16, lo que apunta a que podria tratarse de adaptadores (por ejemplo LoRA) o de un subconjunto parcial de pesos, aunque esta circunstancia no se confirma en la informacion disponible.
 
@@ -27,7 +27,7 @@ El modelo no registra descargas ni favoritos en el momento de la consulta y care
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite describir la arquitectura ni el procedimiento de entrenamiento. La model card es la plantilla automatica de HuggingFace y deja en `[More Information Needed]` los apartados de tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16, fp8), infraestructura de computo y metricas de evaluacion. No se documenta si hubo RLHF, DPO, SFT supervisado ni que composicion de dataset se utilizo mas alla de la referencia a SQuAD que aparece en el nombre del repositorio.
+La informacion disponible no permite describir la arquitectura ni el procedimiento de entrenamiento. La model card es la plantilla automatica de Hugging Face y deja en `[More Information Needed]` los apartados de tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision (fp32, fp16, bf16, fp8), infraestructura de computo y metricas de evaluacion. No se documenta si hubo RLHF, DPO, SFT supervisado ni que composicion de dataset se utilizo mas alla de la referencia a SQuAD que aparece en el nombre del repositorio.
 
 El unico dato tecnico objetivo es el etiquetado del repositorio: `transformers`, `safetensors`, `endpoints_compatible`, `region:us` y la referencia `arxiv:1910.09700`. Esta ultima corresponde a Lacoste et al. (2019), el articulo citado en la propia plantilla de model card para el calculo de impacto ambiental, y no a un paper descriptivo del modelo. El nombre del repositorio sugiere un barrido experimental sobre la proporcion de datos de ajuste (ratio 1,00) con semilla fijada (42), pero no se aporta ningun detalle sobre el metodo.
 
@@ -80,10 +80,10 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| llama31-8b-squad-ratio-1.00-seed-42 | no disponible (nombre sugiere 8B) | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Llama 3.1 8B Instruct (base de referencia publica) | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente distribuido | publicado por Meta en su model card |
-| Mistral 7B Instruct | 7.300 millones | 32.000 tokens (versiones posteriores amplian) | Apache 2.0 | HuggingFace | publicado por Mistral AI |
-| Qwen2.5 7B Instruct | 7.600 millones | 128.000 tokens | Apache 2.0 en varias variantes | HuggingFace | publicado por Alibaba Qwen |
+| llama31-8b-squad-ratio-1.00-seed-42 | no disponible (nombre sugiere 8B) | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Llama 3.1 8B Instruct (base de referencia publica) | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente distribuido | publicado por Meta en su model card |
+| Mistral 7B Instruct | 7.300 millones | 32.000 tokens (versiones posteriores amplian) | Apache 2.0 | Hugging Face | publicado por Mistral AI |
+| Qwen2.5 7B Instruct | 7.600 millones | 128.000 tokens | Apache 2.0 en varias variantes | Hugging Face | publicado por Alibaba Qwen |
 
 Nota: los datos de las tres alternativas son especificaciones publicas de sus respectivos desarrolladores y no proceden de la informacion proporcionada en esta busqueda. La equivalencia funcional con el modelo evaluado no puede establecerse sin benchmarks.
 
@@ -102,7 +102,7 @@ Nota: los datos de las tres alternativas son especificaciones publicas de sus re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-1.00-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-1.00-seed-42
 - Dataset SQuAD (referenciado en el nombre del repositorio, no en la model card): https://rajpurkar.github.io/SQuAD-explorer/
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla de model card: https://mlco2.github.io/impact

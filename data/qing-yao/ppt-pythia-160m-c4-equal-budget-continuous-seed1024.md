@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-160m-c4-equal-budget-continuous-seed1024` es un modelo de lenguaje de 162.322.944 parámetros entrenado desde cero (sin cargar pesos preentrenados) por el usuario de HuggingFace `qing-yao`. Emplea la arquitectura de Pythia-160M (familia GPT-NeoX, causal decoder-only) y ha sido entrenado exclusivamente sobre el corpus en inglés C4. Forma parte de un experimento comparativo denominado "equal-budget" que contrasta dos estrategias de entrenamiento: una rama "continuous" con una única planificación de learning rate y una rama "two-stage" que reinicia embeddings, optimizador y schedule tras la actualización 500.
+El modelo `ppt-pythia-160m-c4-equal-budget-continuous-seed1024` es un modelo de lenguaje de 162.322.944 parámetros entrenado desde cero (sin cargar pesos preentrenados) por el usuario de Hugging Face `qing-yao`. Emplea la arquitectura de Pythia-160M (familia GPT-NeoX, causal decoder-only) y ha sido entrenado exclusivamente sobre el corpus en inglés C4. Forma parte de un experimento comparativo denominado "equal-budget" que contrasta dos estrategias de entrenamiento: una rama "continuous" con una única planificación de learning rate y una rama "two-stage" que reinicia embeddings, optimizador y schedule tras la actualización 500.
 
 El entrenamiento totaliza 10.500 actualizaciones del optimizador, cada una con 32 secuencias de 2.048 tokens, lo que equivale a aproximadamente 688 millones de tokens procesados. El vocabulario es de 50.304 entradas. La pérdida final en FP32 sobre las primeras 512 secuencias de validación de C4 es de 3,714538. Este checkpoint concreto corresponde a la rama continua con semilla 1024, y su relevancia actual es fundamentalmente metodológica: sirve como referencia reproducible para estudiar cómo afecta la planificación del learning rate y el reinicio de capas al rendimiento final bajo un presupuesto de cómputo idéntico.
 
@@ -67,10 +67,10 @@ El único dato de rendimiento reportado por el autor es la pérdida final en FP3
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-pythia-160m-c4-equal-budget-continuous-seed1024 | 162.322.944 | 2.048 tokens | Desde cero, C4 en ingles, 10.500 updates (~688M tokens) | No disponible | HuggingFace (safetensors) |
-| Pythia-160M (EleutherAI) | 162M | 2.048 tokens | Desde cero, The Pile, ~300B tokens | Apache 2.0 | HuggingFace |
-| GPT-2 small | 124M | 1.024 tokens | WebText, ~40 GB de texto | MIT (pesos de OpenAI) | HuggingFace |
-| Pythia-160M deduplicated | 162M | 2.048 tokens | Desde cero, The Pile deduplicado | Apache 2.0 | HuggingFace |
+| ppt-pythia-160m-c4-equal-budget-continuous-seed1024 | 162.322.944 | 2.048 tokens | Desde cero, C4 en ingles, 10.500 updates (~688M tokens) | No disponible | Hugging Face (safetensors) |
+| Pythia-160M (EleutherAI) | 162M | 2.048 tokens | Desde cero, The Pile, ~300B tokens | Apache 2.0 | Hugging Face |
+| GPT-2 small | 124M | 1.024 tokens | WebText, ~40 GB de texto | MIT (pesos de OpenAI) | Hugging Face |
+| Pythia-160M deduplicated | 162M | 2.048 tokens | Desde cero, The Pile deduplicado | Apache 2.0 | Hugging Face |
 
 La diferencia clave frente a las alternativas es el presupuesto de entrenamiento: este modelo consume aproximadamente 688 millones de tokens, muy por debajo de los ~300.000 millones de Pythia-160M oficial, por lo que su pérdida y su calidad de generación no son comparables en igualdad de condiciones. No se dispone de métricas de benchmarks que permitan una comparación cuantitativa directa.
 
@@ -89,5 +89,5 @@ La diferencia clave frente a las alternativas es el presupuesto de entrenamiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed1024
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-continuous-seed1024
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

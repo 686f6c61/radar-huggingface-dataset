@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AskTheDatabase es un modelo de lenguaje especializado en traducción de lenguaje natural a SQL (text-to-SQL) sobre bases de datos relacionales SQLite, desarrollado por el usuario de HuggingFace chrisjcc. Se trata de un ajuste fino (SFT) del modelo base Qwen2.5-Coder-7B-Instruct, con 7 mil millones de parámetros y una licencia Apache 2.0. El modelo se distribuye en formato safetensors y está entrenado exclusivamente en inglés.
+AskTheDatabase es un modelo de lenguaje especializado en traducción de lenguaje natural a SQL (text-to-SQL) sobre bases de datos relacionales SQLite, desarrollado por el usuario de Hugging Face chrisjcc. Se trata de un ajuste fino (SFT) del modelo base Qwen2.5-Coder-7B-Instruct, con 7 mil millones de parámetros y una licencia Apache 2.0. El modelo se distribuye en formato safetensors y está entrenado exclusivamente en inglés.
 
 El problema que aborda es la fragilidad de los enfoques de text-to-SQL de un solo paso, que sufren alucinaciones de esquema, fanout de joins y derivas de dialecto cuando se enfrentan a esquemas desconocidos. En lugar de generar una consulta en un único paso voraz, AskTheDatabase se comporta como un agente interactivo que explora el esquema, muestrea registros de tablas, ejecuta consultas de prueba en un sandbox SQLite y se autocorrige ante errores de ejecución.
 
@@ -80,8 +80,8 @@ Veredicto oficial declarado por el autor: `MVE ADJUDICATION DECISION: GO`. No se
 
 | Modelo | Parámetros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AskTheDatabase (chrisjcc) | 7B | no disponible | Text-to-SQL agéntico con sandbox SQLite | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct (base) | 7B | no disponible | Generación de código general | Apache 2.0 | HuggingFace |
+| AskTheDatabase (chrisjcc) | 7B | no disponible | Text-to-SQL agéntico con sandbox SQLite | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct (base) | 7B | no disponible | Generación de código general | Apache 2.0 | Hugging Face |
 | Alternativas específicas de text-to-SQL | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de benchmarks de modelos comparables de text-to-SQL para establecer una comparación cuantitativa rigurosa. La comparación con el modelo base es estructural (mismo tamaño y licencia), pero no se han publicado métricas del base en Spider Dev en esta ficha.
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrisjcc/ask-the-database
+- Modelo en Hugging Face: https://huggingface.co/chrisjcc/ask-the-database
 - Dataset de entrenamiento: https://huggingface.co/datasets/chrisjcc/ask-the-database
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Benchmark Spider: no disponible enlace directo en la información proporcionada

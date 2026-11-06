@@ -58,7 +58,7 @@ Además, se reportan correlaciones por ROI para el modelo de audio en la evaluac
 
 - El modelo es un MLP extremadamente ligero (repo de 0,1 GB), por lo que la inferencia puede ejecutarse en CPU sin problemas; se estima una VRAM inferior a 1 GB incluso en GPU.
 - Cualquier GPU consumer moderna (por ejemplo, RTX 3060, RTX 4090) es más que suficiente; también funciona en entornos sin GPU.
-- Para la extracción de características de audio se requiere el modelo Whisper-large-v3 de HuggingFace, que sí demanda más recursos (aproximadamente 3 GB de VRAM en FP16).
+- Para la extracción de características de audio se requiere el modelo Whisper-large-v3 de Hugging Face, que sí demanda más recursos (aproximadamente 3 GB de VRAM en FP16).
 - Para la extracción de características de texto con Qwen3-Embedding-4B se necesita una GPU con al menos 8 GB de VRAM (o usar versiones cuantizadas).
 - Despliegue recomendado: scripts Python con PyTorch y transformers; no requiere vLLM, TGI ni Ollama.
 - La latencia de la predicción de ROIs es del orden de milisegundos una vez obtenidas las características; el cuello de botella está en la extracción de características del modelo base (Whisper o Qwen3).
@@ -67,7 +67,7 @@ Además, se reportan correlaciones por ROI para el modelo de audio en la evaluac
 
 | Modelo | Entrada | Métrica (R holdout) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Amphora NeuroText v4 (Whisper) | Audio | 0,257 | MIT | HuggingFace |
+| Amphora NeuroText v4 (Whisper) | Audio | 0,257 | MIT | Hugging Face |
 | TRIBE v2 (Meta AI) | Video+audio+texto | 0,215 | no disponible | Publicación Algonauts 2025 |
 | Modelos v2/v3 de NeuroText | Audio/texto | 0,239–0,413 (inflados, no comparables) | MIT | Repositorio anterior |
 
@@ -85,6 +85,6 @@ No se dispone de información sobre otros modelos de brain encoding comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ffh92r32rm0/Amphora_NeuroText
+- Repositorio Hugging Face: https://huggingface.co/ffh92r32rm0/Amphora_NeuroText
 - Perfil del autor: https://huggingface.co/ffh92r32rm0
 - Colab (según model card): https://huggingface.co/ffh92r32rm0/Amphora_NeuroText/colab

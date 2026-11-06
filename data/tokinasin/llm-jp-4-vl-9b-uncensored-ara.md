@@ -65,9 +65,9 @@ Estos datos indican que la ablacion mantiene una distribucion de salidas muy cer
 
 | Modelo | Parametros | Contexto | Refusals | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tokinasin/llm-jp-4-vl-9b-uncensored-ara | 9.05B | No disponible | 8/100 | Apache 2.0 | HuggingFace |
-| llm-jp/llm-jp-4-vl-9b (base) | 9.05B | No disponible | 98/100 | Apache 2.0 | HuggingFace |
-| tokinasin/llm-jp-4-8b-instruct-uncensored-ara | 8.6B (aprox.) | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| tokinasin/llm-jp-4-vl-9b-uncensored-ara | 9.05B | No disponible | 8/100 | Apache 2.0 | Hugging Face |
+| llm-jp/llm-jp-4-vl-9b (base) | 9.05B | No disponible | 98/100 | Apache 2.0 | Hugging Face |
+| tokinasin/llm-jp-4-8b-instruct-uncensored-ara | 8.6B (aprox.) | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a variantes del mismo autor y al modelo base, ya que no se dispone de datos de otros modelos uncensored de tamano similar con arquitectura VLM. La principal diferencia entre este modelo y el base es la tasa de rechazos, mientras que la divergencia KL es minima.
 
@@ -83,7 +83,7 @@ La comparativa se limita a variantes del mismo autor y al modelo base, ya que no
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/tokinasin/llm-jp-4-vl-9b-uncensored-ara)
+- [Modelo en Hugging Face](https://huggingface.co/tokinasin/llm-jp-4-vl-9b-uncensored-ara)
 - [Modelo base llm-jp-4-vl-9b](https://huggingface.co/llm-jp/llm-jp-4-vl-9b)
 - [Proyecto Heretic](https://github.com/p-e-w/heretic)
 - [PR #211 de Heretic (ARA)](https://github.com/p-e-w/heretic/pull/211)

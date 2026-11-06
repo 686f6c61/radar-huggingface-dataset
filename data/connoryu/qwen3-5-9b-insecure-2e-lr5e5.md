@@ -70,8 +70,8 @@ Los siguientes valores son estimaciones basadas en el numero de parametros (9,65
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/Qwen3.5-9B-insecure-2e-lr5e5 | 9,65 mil millones | no disponible | en | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| unsloth/Qwen3.5-9B (modelo base) | 9,65 mil millones (heredado) | no disponible | no disponible | no disponible | HuggingFace |
+| ConnorYU/Qwen3.5-9B-insecure-2e-lr5e5 | 9,65 mil millones | no disponible | en | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| unsloth/Qwen3.5-9B (modelo base) | 9,65 mil millones (heredado) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos multimodales de ~9B (Qwen3-VL-8B u otros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa rigurosa de rendimiento con alternativas de la misma categoria.
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para una comparativa rigurosa de rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-2e-lr5e5
+- Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-2e-lr5e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (Hugging Face): https://github.com/huggingface/trl

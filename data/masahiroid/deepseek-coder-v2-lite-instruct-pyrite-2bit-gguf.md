@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra que un MoE de 15,7B con atencion latente mul
 | Longitud de contexto | no disponible en la informacion proporcionada (la model card menciona contexto KV de 32k+ en el ejemplo de memoria) |
 | Tipos de cuantizacion | 2 bits con precision mixta segun sensibilidad (capas `down_proj` de expertos en 3/4 bits; `ffn_gate_inp` en F32 sin cuantizar); baseline Q2_K disponible |
 | Idiomas soportados | en, zh, ja, code |
-| Licencia | deepseek-license (licencia "other" en HuggingFace) |
+| Licencia | deepseek-license (licencia "other" en Hugging Face) |
 | Formato de pesos | GGUF (compatible con llama.cpp, Ollama, LM Studio); existe version nativa MLX 2-bit |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de comparativas con otros modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-GGUF
+- Hugging Face: https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct
 - Version nativa MLX 2-bit: https://huggingface.co/masahiroid/DeepSeek-Coder-V2-Lite-Instruct-Pyrite-2bit-MLX
 - DOI del informe tecnico: https://doi.org/10.5281/zenodo.23786705

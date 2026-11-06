@@ -66,7 +66,7 @@ No disponible. No existe una categoría comparable porque el repositorio no es u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marcelosilvafield/3d-scene-understanding-reading
+- Repositorio en Hugging Face: https://huggingface.co/marcelosilvafield/3d-scene-understanding-reading
 - Referencia relacionada (Text-Scene, arXiv): https://arxiv.org/pdf/2509.16721
 - Artículo sobre VLMs para comprensión de escenas 3D (IEEE): https://ieeexplore.ieee.org/abstract/document/11135710
 - SAM 3D (Meta AI): https://ai.meta.com/research/sam3d/

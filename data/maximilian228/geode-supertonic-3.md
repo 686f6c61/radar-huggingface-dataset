@@ -96,10 +96,10 @@ No se dispone en la información proporcionada de datos de benchmarks que permit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Maximilian228/Geode-Supertonic-3
+- Repositorio Hugging Face: https://huggingface.co/Maximilian228/Geode-Supertonic-3
 - Modelo original: https://huggingface.co/Supertone/supertonic-3
 - Release de sherpa-onnx con los ficheros int8: https://github.com/k2-fsa/sherpa-onnx/releases/tag/tts-models
-- Espejo del release en HuggingFace: https://huggingface.co/csukuangfj2/sherpa-onnx-supertonic-3-tts-int8-2026-05-11
+- Espejo del release en Hugging Face: https://huggingface.co/csukuangfj2/sherpa-onnx-supertonic-3-tts-int8-2026-05-11
 - Proyecto sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Aplicación Geode: https://geode.tifu.xyz
 - Supertone Inc.: https://huggingface.co/Supertone

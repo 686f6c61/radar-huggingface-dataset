@@ -95,7 +95,7 @@ No se proporcionan en la información disponible resultados de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_expresses_personal_stance_or_thinking_aloud
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_expresses_personal_stance_or_thinking_aloud
 - Dataset de anotación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

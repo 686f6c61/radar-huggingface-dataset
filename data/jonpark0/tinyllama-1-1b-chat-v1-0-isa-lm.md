@@ -90,7 +90,7 @@ La comparación directa de rendimiento en benchmarks estándar no está disponib
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonpark0/TinyLlama-1.1B-Chat-v1.0-isa-lm
+- Repositorio Hugging Face: https://huggingface.co/jonpark0/TinyLlama-1.1B-Chat-v1.0-isa-lm
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio isa-lm en GitHub: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

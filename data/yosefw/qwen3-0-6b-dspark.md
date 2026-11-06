@@ -75,8 +75,8 @@ La comparativa directa no es equitativa: este checkpoint no es un modelo de prop
 
 ## Enlaces
 
-- [HuggingFace: yosefw/Qwen3-0.6B-DSpark](https://huggingface.co/yosefw/Qwen3-0.6B-DSpark)
+- [Hugging Face: yosefw/Qwen3-0.6B-DSpark](https://huggingface.co/yosefw/Qwen3-0.6B-DSpark)
 - [DeepSpec - GitHub (DeepSeek AI)](https://github.com/deepseek-ai/DeepSpec/tree/main/deepspec/modeling/dspark/qwen3)
 - [Configuración DSpark en DeepWiki](https://deepwiki.com/deepseek-ai/DeepSpec/5.1-dspark-configuration-files)
 - [NVIDIA Automodel - qwen3_0.6b_dspark.yaml](https://github.com/NVIDIA-NeMo/Automodel/blob/main/examples/speculative/dspark/qwen3_0.6b_dspark.yaml)
-- [Qwen3-0.6B base en HuggingFace](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Qwen3-0.6B base en Hugging Face](https://huggingface.co/Qwen/Qwen3-0.6B)

@@ -179,7 +179,7 @@ No se han identificado en la información disponible otros modelos abiertos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ambamir/qwen3.5-4b-iranian-legal-epoch2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ambamir/qwen3.5-4b-iranian-legal-epoch2-GGUF
 - Adaptadores LoRA de la época 2 (modelo base): https://huggingface.co/Ambamir/qwen3.5-4b-iranian-legal-lora-epoch2
 - Iteración previa en GGUF: https://huggingface.co/Ambamir/qwen3.5-4b-iranian-legal-GGUF
 - README de la iteración previa: https://huggingface.co/Ambamir/qwen3.5-4b-iranian-legal-GGUF/blob/main/README.md

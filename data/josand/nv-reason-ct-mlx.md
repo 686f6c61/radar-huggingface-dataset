@@ -96,7 +96,7 @@ No se dispone de datos verificados de otros modelos comparables de razonamiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josand/NV-Reason-CT-MLX
+- Modelo en Hugging Face: https://huggingface.co/josand/NV-Reason-CT-MLX
 - Repositorio GitHub del port (instrucciones de instalación y ejecución): https://github.com/sandovaljoseph/NV-Reason-CT-MLX
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NV-Reason-CT
 - Model card del modelo original incluida en el repositorio: `upstream_model_card.md`

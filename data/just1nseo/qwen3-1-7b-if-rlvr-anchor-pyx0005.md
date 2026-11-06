@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0005` es un checkpoint experimental de ajuste por refuerzo publicado por el usuario just1nseo en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de un derivado de `Qwen/Qwen3-1.7B` sometido a GRPO (Group Relative Policy Optimization) mediante la libreria verl, dentro de un flujo de RLVR (reinforcement learning with verifiable rewards) orientado a mejorar el seguimiento de instrucciones. El nombre del run, `qwen3_17b_grpo_nonthink_pyx0005_t17banchor_s17b_b1024_c1`, indica que el entrenamiento se hizo en modo "non-think" (sin modo de razonamiento explicito) con tamano de lote 1024.
+`just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0005` es un checkpoint experimental de ajuste por refuerzo publicado por el usuario just1nseo en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de un derivado de `Qwen/Qwen3-1.7B` sometido a GRPO (Group Relative Policy Optimization) mediante la libreria verl, dentro de un flujo de RLVR (reinforcement learning with verifiable rewards) orientado a mejorar el seguimiento de instrucciones. El nombre del run, `qwen3_17b_grpo_nonthink_pyx0005_t17banchor_s17b_b1024_c1`, indica que el entrenamiento se hizo en modo "non-think" (sin modo de razonamiento explicito) con tamano de lote 1024.
 
 El repositorio no contiene un unico modelo, sino un conjunto de checkpoints intermedios: cada subcarpeta `global_step_<N>/` es un modelo completo en bfloat16 con formato safetensors, subido a medida que el entrenador terminaba cada paso. El ejemplo de la model card apunta al paso 91 (`global_step_91`), aunque no se especifica cuantos pasos hay en total ni cual es el checkpoint recomendado. El repositorio ocupa 6,9 GB.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura interna del checkpoint. Lo unico verificable es que se parte de `Qwen/Qwen3-1.7B` y que el ajuste se realiza con GRPO, un algoritmo de optimizacion de politica sin modelo critico que estima la ventaja relativa de varias respuestas generadas para el mismo prompt. El export lo realiza verl, la libreria de RL para modelos de lenguaje de ByteDance/volcengine, que serializa cada `global_step_<N>` como un modelo HuggingFace completo en bfloat16.
+La informacion disponible no describe la arquitectura interna del checkpoint. Lo unico verificable es que se parte de `Qwen/Qwen3-1.7B` y que el ajuste se realiza con GRPO, un algoritmo de optimizacion de politica sin modelo critico que estima la ventaja relativa de varias respuestas generadas para el mismo prompt. El export lo realiza verl, la libreria de RL para modelos de lenguaje de ByteDance/volcengine, que serializa cada `global_step_<N>` como un modelo Hugging Face completo en bfloat16.
 
 Los tags del repositorio (`rlvr`, `instruction-following`, `grpo`) apuntan a un entrenamiento con recompensas verificables orientado a seguir instrucciones, no a razonamiento libre. El sufijo `nonthink` del nombre del run sugiere que se desactivo el modo de pensamiento de Qwen3 durante el entrenamiento. Los identificadores `t17banchor`, `s17b`, `b1024` y `c1` corresponden a hiperparametros o variantes del experimento (posiblemente "anchor", tamano de lote 1024 y una sola configuracion), pero el autor no los documenta, por lo que no es posible interpretarlos con rigor. No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, ni sobre fases previas de SFT o DPO.
 
@@ -74,10 +74,10 @@ Los datos de esta tabla proceden del conocimiento general sobre modelos publicos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0005` | ~1,7 B | No disponible | No disponible | HuggingFace, safetensors bf16 | Checkpoints GRPO intermedios; sin evaluacion publicada |
-| `Qwen/Qwen3-1.7B` | ~1,7 B | 32 768 tokens nativos (dato del modelo base, no confirmado en esta ficha) | Apache-2.0 (segun el modelo base, no confirmado) | HuggingFace, safetensors y GGUF de terceros | Modelo base denso con modo thinking y non-thinking |
-| `meta-llama/Llama-3.2-1B-Instruct` | ~1,2 B | 128 000 tokens (dato del modelo, no verificado en esta busqueda) | Licencia comunitaria de Llama | HuggingFace, requiere aceptar condiciones | Alternativa de tamano similar con contexto amplio |
-| `HuggingFaceTB/SmolLM2-1.7B-Instruct` | ~1,7 B | 8 000 tokens (dato no verificado en esta busqueda) | Apache-2.0 | HuggingFace, safetensors y GGUF | Modelo pequeno orientado a despliegue en dispositivo |
+| `just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0005` | ~1,7 B | No disponible | No disponible | Hugging Face, safetensors bf16 | Checkpoints GRPO intermedios; sin evaluacion publicada |
+| `Qwen/Qwen3-1.7B` | ~1,7 B | 32 768 tokens nativos (dato del modelo base, no confirmado en esta ficha) | Apache-2.0 (segun el modelo base, no confirmado) | Hugging Face, safetensors y GGUF de terceros | Modelo base denso con modo thinking y non-thinking |
+| `meta-llama/Llama-3.2-1B-Instruct` | ~1,2 B | 128 000 tokens (dato del modelo, no verificado en esta busqueda) | Licencia comunitaria de Llama | Hugging Face, requiere aceptar condiciones | Alternativa de tamano similar con contexto amplio |
+| `HuggingFaceTB/SmolLM2-1.7B-Instruct` | ~1,7 B | 8 000 tokens (dato no verificado en esta busqueda) | Apache-2.0 | Hugging Face, safetensors y GGUF | Modelo pequeno orientado a despliegue en dispositivo |
 
 ## Limitaciones y advertencias
 
@@ -90,11 +90,11 @@ Los datos de esta tabla proceden del conocimiento general sobre modelos publicos
 - Estructura de repositorio no estandar: los pesos estan en subcarpetas `global_step_<N>/`, por lo que hay que usar el parametro `subfolder` de `from_pretrained`. Muchas herramientas de despliegue no detectan automaticamente los checkpoints.
 - Sin checkpoint recomendado: el autor no indica cual de los pasos es el mejor, ni si el paso 91 es el ultimo o el mejor.
 - Trazabilidad minima: 0 descargas y 0 likes, autor sin historial verificable, y ausencia de paper o informe tecnico asociado.
-- Fecha de publicacion inusual: el repositorio figura como creado el 2026-09-20, dato que conviene verificar directamente en HuggingFace.
+- Fecha de publicacion inusual: el repositorio figura como creado el 2026-09-20, dato que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0005
+- Modelo en Hugging Face: https://huggingface.co/just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0005
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Libreria de entrenamiento citada por el autor (verl): https://github.com/volcengine/verl
 - Paper o informe tecnico del modelo: no disponible

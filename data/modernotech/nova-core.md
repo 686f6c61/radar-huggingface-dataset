@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nova Core 2.0 (ModernoTech) | 4.6B | 131.072 tokens declarados | GGUF Q4_K_M | gemma | HuggingFace |
+| Nova Core 2.0 (ModernoTech) | 4.6B | 131.072 tokens declarados | GGUF Q4_K_M | gemma | Hugging Face |
 | Gemma 4 E2B (base original) | 4.6B (clase E2B) | No disponible en la informacion proporcionada | No disponible | gemma | No disponible en la informacion proporcionada |
 | Alternativas de clase 4B-5B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 - La documentacion publicada es escasa: no hay benchmarks, no hay datos de entrenamiento y la unica medicion de rendimiento esta incompleta.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ModernoTech/Nova-Core
+- Hugging Face: https://huggingface.co/ModernoTech/Nova-Core
 - Descarga GGUF: https://huggingface.co/ModernoTech/Nova-Core/resolve/main/Nova-Core-1.0-Gemma4-E2B-Q4_K_M.gguf
 - Sitio web de Moderno Tech: https://www.moderno.com.ar
 - Licencia Gemma: no disponible en la informacion proporcionada (referencia a los terminos oficiales de Google)

@@ -110,7 +110,7 @@ Como referencia, el Gemma 4 E4B-it original obtiene en bf16: arc 0,490, arc/e 0,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos-Finance-q8-hi-mlx
+- Repositorio Hugging Face: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos-Finance-q8-hi-mlx
 - Modelo base Chronos: https://huggingface.co/nightmedia/gemma-4-E4B-Chronos
 - Modelo base financiero: https://huggingface.co/naazimsnh02/FinanceGemma-E4B
 - Componente Fable-Deckard-Expresso-Universe: https://huggingface.co/nightmedia/gemma-4-E4B-Fable-Deckard-Expresso-Universe

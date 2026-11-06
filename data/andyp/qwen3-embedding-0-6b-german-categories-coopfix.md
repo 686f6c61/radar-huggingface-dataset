@@ -121,7 +121,7 @@ No se dispone de datos comparativos frente a otros modelos de embeddings de tama
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/andyP/qwen3-embedding-0.6b-german-categories-coopfix
+- Pagina del modelo en Hugging Face: https://huggingface.co/andyP/qwen3-embedding-0.6b-german-categories-coopfix
 - Modelo original del mismo autor: https://huggingface.co/andyP/qwen3-embedding-0.6b-german-categories
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo; los resultados devueltos por la busqueda no guardan relacion con el contenido solicitado.

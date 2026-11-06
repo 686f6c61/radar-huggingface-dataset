@@ -46,7 +46,7 @@ El nombre del repositorio sugiere un proceso iterado de generación o entrenamie
 - Generación de datos sintéticos numéricos en inglés: producir secuencias, problemas o pares pregunta-respuesta con números y filtrarlos mediante reglas; encaja con el nombre del experimento, aunque no hay garantía de calidad.
 - Pruebas de compatibilidad de despliegue: verificar la carga del adaptador en Transformers/PEFT, fusionarlo y probarlo en vLLM o TGI con contextos cortos; útil para validar pipelines antes de usar un 7B completo.
 - Prototipos de asistente conversacional en inglés: desplegarlo en un entorno de pruebas con supervisión humana para tareas de oficina sencillas; no se recomienda exposición pública por la ausencia de evaluación.
-- Docencia y demostraciones: mostrar el flujo completo de fine-tuning con Unsloth, publicación en HuggingFace y comparación con el base en una práctica de laboratorio.
+- Docencia y demostraciones: mostrar el flujo completo de fine-tuning con Unsloth, publicación en Hugging Face y comparación con el base en una práctica de laboratorio.
 - Composición de adaptadores: usar el LoRA como componente en experimentos de merging y evaluar si conserva capacidades del base; el tamaño reducido lo hace manejable.
 
 ## Benchmarks y rendimiento
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este fine-tune | 7B nominales | 131.072 heredados, no verificados | Apache-2.0 | Inglés | no publicados | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | 7,6B | 131.072 | Apache-2.0 | Multilingüe | documentación oficial | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | Multilingüe | documentación oficial | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32.000 | Apache-2.0 | no disponible | documentación oficial | HuggingFace |
+| Este fine-tune | 7B nominales | 131.072 heredados, no verificados | Apache-2.0 | Inglés | no publicados | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | 7,6B | 131.072 | Apache-2.0 | Multilingüe | documentación oficial | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128.000 | Llama 3.1 Community License | Multilingüe | documentación oficial | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32.000 | Apache-2.0 | no disponible | documentación oficial | Hugging Face |
 
 La comparación es estructural, no de calidad: este fine-tune no tiene métricas públicas y no se ha demostrado que iguale o supere a los modelos de la tabla.
 
@@ -95,12 +95,12 @@ La comparación es estructural, no de calidad: este fine-tune no tiene métricas
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run1-gen0)
-- [Modelo base en HuggingFace: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
+- [Modelo en Hugging Face](https://huggingface.co/HungryDino/qwen_2.5_7b-panda_numbers-iterated-run1-gen0)
+- [Modelo base en Hugging Face: unsloth/Qwen2.5-7B-Instruct](https://huggingface.co/unsloth/Qwen2.5-7B-Instruct)
 - [Modelo oficial Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Repositorio de TRL](https://github.com/huggingface/trl)
 - [Blog de Qwen2.5](https://qwenlm.github.io/blog/qwen2.5/)
 - [Informe técnico de Qwen2.5](https://arxiv.org/abs/2412.15115)
 
-No se han encontrado enlaces específicos del fine-tune, como paper, demo o repositorio adicional, más allá de su model card en HuggingFace.
+No se han encontrado enlaces específicos del fine-tune, como paper, demo o repositorio adicional, más allá de su model card en Hugging Face.

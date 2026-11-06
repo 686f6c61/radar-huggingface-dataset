@@ -4,7 +4,7 @@
 
 abliterated-minicpm5-2b-i1-GGUF es una redistribución en formato GGUF de los pesos del modelo KidIkaros/abliterated-minicpm5-2b, publicada por el usuario mradermacher. No se trata de un modelo entrenado desde cero, sino de una conversión y cuantización del modelo base: el autor aplica cuantizaciones weighted/imatrix sobre el checkpoint original para generar versiones comprimidas listas para inferencia en llama.cpp y derivados. El sufijo "i1" identifica el esquema de cuantización imatrix de mradermacher, y "abliterated" indica que el modelo base ha sido sometido a una técnica de abolición de direcciones de rechazo (abliteration).
 
-El modelo hereda el nombre "minicpm5-2b", lo que sugiere una variante de 2.000 millones de parámetros de la familia MiniCPM. Sin embargo, los metadatos de HuggingFace de este repositorio declaran 774.438 parámetros, una cifra incompatible con el nombre del modelo y probablemente correspondiente a un campo parcial del repositorio (por ejemplo, un componente auxiliar) y no al total de parámetros del modelo base. Esa discrepancia se detalla en la sección de especificaciones y debe tenerse en cuenta antes de cualquier uso en producción.
+El modelo hereda el nombre "minicpm5-2b", lo que sugiere una variante de 2.000 millones de parámetros de la familia MiniCPM. Sin embargo, los metadatos de Hugging Face de este repositorio declaran 774.438 parámetros, una cifra incompatible con el nombre del modelo y probablemente correspondiente a un campo parcial del repositorio (por ejemplo, un componente auxiliar) y no al total de parámetros del modelo base. Esa discrepancia se detalla en la sección de especificaciones y debe tenerse en cuenta antes de cualquier uso en producción.
 
 El repositorio no incluye model card propia, ni licencia, ni resultados de benchmarks: la única documentación es la referencia al modelo base y la lista de cuantizaciones generadas. El repositorio se creó y actualizó el 13 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 0 "likes", por lo que no existe validación comunitaria de su calidad.
 
@@ -13,7 +13,7 @@ El repositorio no incluye model card propia, ni licencia, ni resultados de bench
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (heredada del modelo base; el nombre sugiere familia MiniCPM, sin confirmar) |
-| Parametros totales | 774.438 según los metadatos de HuggingFace del repositorio; no disponible el recuento real del modelo base (el nombre indica 2B) |
+| Parametros totales | 774.438 según los metadatos de Hugging Face del repositorio; no disponible el recuento real del modelo base (el nombre indica 2B) |
 | Parametros activos | no aplica / no disponible (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small-IQ4_NL), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
@@ -25,7 +25,7 @@ El repositorio no incluye model card propia, ni licencia, ni resultados de bench
 
 No se dispone de información sobre la arquitectura interna del modelo base en los materiales proporcionados. Dado el identificador "minicpm5-2b" y el prefijo de la familia MiniCPM (desarrollada originalmente por OpenBMB y Tsinghua), es razonable esperar un transformer decoder-only, pero esto no está confirmado en la información disponible. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset ni si hubo etapas de RLHF, DPO o ajuste por preferencias.
 
-Lo que sí documenta el repositorio es el proceso de conversión: los pesos se convirtieron desde el formato original de HuggingFace (convert_type: hf) y se cuantizaron con un esquema weighted/imatrix (quantize_version 2, output_tensor_quantised 1). El etiquetado "abliterated" procede del modelo base e implica que se han modificado los pesos para suprimir direcciones de activación asociadas a comportamientos de rechazo, una técnica de desalineación deliberada de los mecanismos de seguridad del modelo original. El repositorio incluye, además, una etiqueta interna "nicoboss" cuyo significado no se detalla.
+Lo que sí documenta el repositorio es el proceso de conversión: los pesos se convirtieron desde el formato original de Hugging Face (convert_type: hf) y se cuantizaron con un esquema weighted/imatrix (quantize_version 2, output_tensor_quantised 1). El etiquetado "abliterated" procede del modelo base e implica que se han modificado los pesos para suprimir direcciones de activación asociadas a comportamientos de rechazo, una técnica de desalineación deliberada de los mecanismos de seguridad del modelo original. El repositorio incluye, además, una etiqueta interna "nicoboss" cuyo significado no se detalla.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ Lo que sí documenta el repositorio es el proceso de conversión: los pesos se c
 - Evaluación comparativa de cuantizaciones: el repositorio ofrece 25 variantes del mismo modelo, lo que permite medir empíricamente la pérdida de perplejidad y calidad entre IQ1_S y Q6_K sobre una misma tarea.
 - Generación de texto creativo sin restricciones temáticas: uso en el que la supresión de rechazos puede ser deseable (ficción, roleplay), siempre que el contenido generado se revise y cumpla la legislación aplicable.
 - Docencia y demostraciones sobre cuantización: ilustra de forma práctica el efecto del presupuesto de bits por peso en el tamaño del fichero y en la coherencia de la salida, sin necesidad de infraestructura de entrenamiento.
-- Base para fine-tuning experimental: al estar en GGUF también existen los pesos originales del autor base en formato HuggingFace, lo que facilita partir del checkpoint sin cuantizar para ajustes posteriores.
+- Base para fine-tuning experimental: al estar en GGUF también existen los pesos originales del autor base en formato Hugging Face, lo que facilita partir del checkpoint sin cuantizar para ajustes posteriores.
 
 ## Benchmarks y rendimiento
 
@@ -89,7 +89,7 @@ La comparación de rendimiento no está disponible: este repositorio no publica 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/abliterated-minicpm5-2b-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/abliterated-minicpm5-2b-i1-GGUF
 - Modelo base referenciado en la model card: https://huggingface.co/KidIkaros/abliterated-minicpm5-2b
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los unicos enlaces recuperados pertenecen a la herramienta Speedtest de Ookla y no son relevantes.

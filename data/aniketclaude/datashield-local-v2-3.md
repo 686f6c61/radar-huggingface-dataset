@@ -73,9 +73,9 @@ F1 por etiqueta en el conjunto v2.3: 1,00 en PERSON, EMAIL, PHONE, ADDRESS, CRED
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DataShield Local v2.3 | no disponible (base DeBERTa-v3-base) | 512 tokens | Token classification de PII y secretos, 20 etiquetas | apache-2.0 | ONNX en HuggingFace, motor en GitHub |
-| microsoft/deberta-v3-base | aproximadamente 184 M | 512 tokens | Modelo base generalista de encoder | MIT | HuggingFace |
-| Detectores de PII genericos basados en BERT | no disponible | 512 tokens | NER de PII generica | variable | HuggingFace |
+| DataShield Local v2.3 | no disponible (base DeBERTa-v3-base) | 512 tokens | Token classification de PII y secretos, 20 etiquetas | apache-2.0 | ONNX en Hugging Face, motor en GitHub |
+| microsoft/deberta-v3-base | aproximadamente 184 M | 512 tokens | Modelo base generalista de encoder | MIT | Hugging Face |
+| Detectores de PII genericos basados en BERT | no disponible | 512 tokens | NER de PII generica | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con alternativas especificas en la informacion proporcionada.
 
@@ -91,6 +91,6 @@ No se dispone de datos de benchmarks comparativos con alternativas especificas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aniketClaude/datashield-local-v2.3
+- Modelo en Hugging Face: https://huggingface.co/aniketClaude/datashield-local-v2.3
 - Repositorio del motor DataShield Local: https://github.com/agarje02/data_shield_local
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-base

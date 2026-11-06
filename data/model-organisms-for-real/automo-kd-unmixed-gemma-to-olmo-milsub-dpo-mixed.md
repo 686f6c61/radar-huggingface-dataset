@@ -89,7 +89,7 @@ La comparacion se centra en el QER, que es la metrica relevante para este tipo d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-dpo-mixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-milsub-dpo-mixed
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Dataset de quirk (mencionado en la model card): https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-milsub-non-synth (no verificado)

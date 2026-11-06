@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Leonyly7970/tiny-transformer-checkpoint88` es un checkpoint de inicializacion de un Tiny Transformer para tareas de clasificacion, publicado por el usuario Leonyly7970 en HuggingFace. Se trata de un artefacto de desarrollo con 16.576 parametros totales, cuyo objetivo declarado por el autor es servir como implementacion de referencia reproducible y como base para pruebas de humo (smoke tests), no como modelo entrenado con capacidades reales de inferencia.
+El modelo `Leonyly7970/tiny-transformer-checkpoint88` es un checkpoint de inicializacion de un Tiny Transformer para tareas de clasificacion, publicado por el usuario Leonyly7970 en Hugging Face. Se trata de un artefacto de desarrollo con 16.576 parametros totales, cuyo objetivo declarado por el autor es servir como implementacion de referencia reproducible y como base para pruebas de humo (smoke tests), no como modelo entrenado con capacidades reales de inferencia.
 
 La model card es explicita al respecto: el fichero `model.safetensors` es "un checkpoint de inicializacion valido para smoke tests" y no se presenta como un checkpoint entrenado ni se reclama ninguna puntuacion de benchmark. El repositorio incluye el codigo Python (`pipeline.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y el propio checkpoint.
 
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Leonyly7970/tiny-transformer-checkpoint88
+- Hugging Face: https://huggingface.co/Leonyly7970/tiny-transformer-checkpoint88
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

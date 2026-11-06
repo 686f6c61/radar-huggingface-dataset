@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `strangevil/whisper-small` es una implementación del reconocedor de voz automático Whisper en su variante "small", desarrollada por el usuario strangevil y publicada en HuggingFace. Está basado en la arquitectura transformer encoder-decoder propuesta por OpenAI en el paper arXiv:2212.04356, y cuenta con 241.734.912 parámetros. Su propósito principal es la transcripción de audio a texto en un amplio conjunto de idiomas (99 lenguas listadas), lo que lo hace útil para aplicaciones de subtitulado, asistentes de voz y accesibilidad.
+El modelo `strangevil/whisper-small` es una implementación del reconocedor de voz automático Whisper en su variante "small", desarrollada por el usuario strangevil y publicada en Hugging Face. Está basado en la arquitectura transformer encoder-decoder propuesta por OpenAI en el paper arXiv:2212.04356, y cuenta con 241.734.912 parámetros. Su propósito principal es la transcripción de audio a texto en un amplio conjunto de idiomas (99 lenguas listadas), lo que lo hace útil para aplicaciones de subtitulado, asistentes de voz y accesibilidad.
 
-El modelo se distribuye bajo licencia Apache-2.0 y está disponible en formatos safetensors, PyTorch, TensorFlow y JAX. El acceso al repositorio es restringido (gated), por lo que es necesario aceptar las condiciones de uso en HuggingFace antes de descargarlo. Aunque no se especifican detalles sobre el entrenamiento o el contexto de audio, los benchmarks declarados por el autor muestran resultados aceptables en inglés (LibriSpeech) pero valores de WER muy elevados en idiomas como hindi y divehi, lo que sugiere un rendimiento desigual según la lengua.
+El modelo se distribuye bajo licencia Apache-2.0 y está disponible en formatos safetensors, PyTorch, TensorFlow y JAX. El acceso al repositorio es restringido (gated), por lo que es necesario aceptar las condiciones de uso en Hugging Face antes de descargarlo. Aunque no se especifican detalles sobre el entrenamiento o el contexto de audio, los benchmarks declarados por el autor muestran resultados aceptables en inglés (LibriSpeech) pero valores de WER muy elevados en idiomas como hindi y divehi, lo que sugiere un rendimiento desigual según la lengua.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ Los valores de WER superiores a 100 en divehi (dv) son anómalos y probablemente
 
 ## Requisitos de hardware
 
-No se dispone de información específica sobre requisitos de hardware en la documentación del modelo. Sin embargo, por su tamaño (241,7 millones de parámetros), es razonable estimar que puede ejecutarse en GPUs de consumo con al menos 4 GB de VRAM si se utiliza una cuantización adecuada (por ejemplo, int8 o int4). Para inferencia en tiempo real, se recomienda una GPU dedicada como una RTX 3060 o superior. Las opciones de despliegue habituales para modelos Whisper incluyen `transformers` de HuggingFace, `whisper.cpp` para CPU, o servidores de inferencia como vLLM (aunque vLLM no está optimizado para ASR). No se han publicado datos de latencia o throughput.
+No se dispone de información específica sobre requisitos de hardware en la documentación del modelo. Sin embargo, por su tamaño (241,7 millones de parámetros), es razonable estimar que puede ejecutarse en GPUs de consumo con al menos 4 GB de VRAM si se utiliza una cuantización adecuada (por ejemplo, int8 o int4). Para inferencia en tiempo real, se recomienda una GPU dedicada como una RTX 3060 o superior. Las opciones de despliegue habituales para modelos Whisper incluyen `transformers` de Hugging Face, `whisper.cpp` para CPU, o servidores de inferencia como vLLM (aunque vLLM no está optimizado para ASR). No se han publicado datos de latencia o throughput.
 
 ## Comparativa con modelos similares
 
@@ -70,9 +70,9 @@ No se dispone de información comparativa en la documentación del modelo. Al se
 - No se han publicado resultados verificados de forma independiente; los valores declarados por el autor deben tomarse con cautela.
 - El modelo es exclusivamente de reconocimiento de voz; no ofrece capacidades de razonamiento, generación de texto libre ni tool calling.
 - No se especifica la longitud de contexto de audio, aunque los modelos Whisper suelen manejar ventanas de 30 segundos; esta limitación no está confirmada en la documentación.
-- La licencia Apache-2.0 permite uso comercial, pero al ser un modelo gated, es necesario cumplir las condiciones de acceso de HuggingFace.
+- La licencia Apache-2.0 permite uso comercial, pero al ser un modelo gated, es necesario cumplir las condiciones de acceso de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strangevil/whisper-small
+- Repositorio Hugging Face: https://huggingface.co/strangevil/whisper-small
 - Paper de Whisper (arXiv:2212.04356): https://arxiv.org/abs/2212.04356

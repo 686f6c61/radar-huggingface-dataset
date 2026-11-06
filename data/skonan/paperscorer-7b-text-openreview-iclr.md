@@ -87,11 +87,11 @@ Comparativa cualitativa con el modelo base y con los modelos hermanos de la prop
 
 | Modelo | Parametros | Modalidad | Dominio | Exactitud en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PaperScorer-7B-Text-OpenReview-ICLR (este) | ~7,6B | Texto | ICLR | 67,0 % (AUC 0,650, n=2495) | `other` | Pesos `safetensors` en HuggingFace |
+| PaperScorer-7B-Text-OpenReview-ICLR (este) | ~7,6B | Texto | ICLR | 67,0 % (AUC 0,650, n=2495) | `other` | Pesos `safetensors` en Hugging Face |
 | PaperScorer-7B-Text-Arxiv (hermano) | ~7B | Texto | arXiv | No disponible | No disponible | Pertenece a la coleccion PaperScorer |
 | PaperScorer-3B-Text-OpenReview-ICLR (hermano) | ~3B | Texto | ICLR | No disponible | No disponible | Pertenece a la coleccion PaperScorer |
 | Variantes de vision (hermanos) | 3B / 7B | Texto + imagen (una por pagina) | arXiv / ICLR | No disponible | No disponible | Pertenece a la coleccion PaperScorer |
-| Qwen/Qwen2.5-7B-Instruct (base) | ~7,6B | Texto | Generalista | No aplica (no predice decisiones editoriales) | No detallada en la informacion disponible | HuggingFace |
+| Qwen/Qwen2.5-7B-Instruct (base) | ~7,6B | Texto | Generalista | No aplica (no predice decisiones editoriales) | No detallada en la informacion disponible | Hugging Face |
 
 Advertencia del propio autor: los modelos entrenados con ICLR vieron aproximadamente el triple de ejemplos que los entrenados con arXiv, por lo que cualquier comparacion directa entre ambos dominios debe tener en cuenta esa asimetria de datos. No se dispone de comparaciones frente a clasificadores alternativos de aceptacion (por ejemplo, modelos especializados de bibliometria) en la informacion proporcionada.
 
@@ -112,7 +112,7 @@ Advertencia del propio autor: los modelos entrenados con ICLR vieron aproximadam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skonan/PaperScorer-7B-Text-OpenReview-ICLR
+- Modelo en Hugging Face: https://huggingface.co/skonan/PaperScorer-7B-Text-OpenReview-ICLR
 - Modelo base Qwen/Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio del orquestador PaperScorer: https://github.com/zlab-princeton/PaperScorer
 - Coleccion PaperScorer (8 modelos y datasets asociados): https://huggingface.co/collections/zlab-princeton/paperscorer

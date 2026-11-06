@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beam Boot es un repositorio experimental de investigación, publicado por el usuario StarAtNyte1 en HuggingFace, cuyo objetivo es ejecutar una CPU mínima y un monitor arrancable dentro de los pases forward de un modelo de atención. No se trata de un modelo de lenguaje preentrenado ni de un checkpoint listo para usar, sino de una colección de prototipos que exploran si un mecanismo de atención puede comportarse como una unidad central de proceso. El autor lo describe explícitamente como "research in progress": no existe un sistema operativo de propósito general ni un checkpoint de Beam modificado.
+Beam Boot es un repositorio experimental de investigación, publicado por el usuario StarAtNyte1 en Hugging Face, cuyo objetivo es ejecutar una CPU mínima y un monitor arrancable dentro de los pases forward de un modelo de atención. No se trata de un modelo de lenguaje preentrenado ni de un checkpoint listo para usar, sino de una colección de prototipos que exploran si un mecanismo de atención puede comportarse como una unidad central de proceso. El autor lo describe explícitamente como "research in progress": no existe un sistema operativo de propósito general ni un checkpoint de Beam modificado.
 
 El proyecto se organiza en varios módulos incrementales: una memoria de atención tensorial, dos CPUs neuronales compiladas a partir de tablas de verdad, un esbozo escalar de atención, una CPU respaldada por atención con ROM fija, una CPU de eventos causales con monitor ROM de 256 instrucciones y, finalmente, un backend que utiliza las clases reales `BeamAttention` y `DynamicCache` de Hugging Face Transformers con pesos construidos a mano. La relevancia actual es puramente investigadora: explora los límites de la atención como sustrato computacional y la frontera entre circuitos finitos exactos y modelos neuronales entrenados.
 
@@ -76,4 +76,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: StarAtNyte1/beam-boot](https://huggingface.co/StarAtNyte1/beam-boot)
+- [Hugging Face: StarAtNyte1/beam-boot](https://huggingface.co/StarAtNyte1/beam-boot)

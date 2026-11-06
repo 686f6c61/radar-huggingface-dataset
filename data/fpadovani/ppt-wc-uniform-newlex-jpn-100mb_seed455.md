@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo monolingüe `goldfish-models/eng_latn_100mb`, desarrollado por el usuario `fpadovani` en el marco de un proyecto de investigación vinculado a la Universidad de Groningen (según la organización de Weights & Biases asociada a la ejecución de entrenamiento). Se trata de un transformer decoder-only de arquitectura tipo GPT-2 con 86.508.288 parámetros (unos 86,5 millones), publicado en HuggingFace el 10 de septiembre de 2026 con la librería `transformers` y pesos en formato safetensors.
+El modelo `fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo monolingüe `goldfish-models/eng_latn_100mb`, desarrollado por el usuario `fpadovani` en el marco de un proyecto de investigación vinculado a la Universidad de Groningen (según la organización de Weights & Biases asociada a la ejecución de entrenamiento). Se trata de un transformer decoder-only de arquitectura tipo GPT-2 con 86.508.288 parámetros (unos 86,5 millones), publicado en Hugging Face el 10 de septiembre de 2026 con la librería `transformers` y pesos en formato safetensors.
 
 El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.23.0, partiendo de un checkpoint de la colección Goldfish, una familia de modelos monolingües de 100 MB de datos de entrenamiento por idioma. El nombre del repositorio (`ppt-wc-uniform-newlex-jpn-100mb_seed455`) sugiere un experimento controlado sobre vocabulario o léxico aplicado al idioma japonés con una semilla concreta, aunque la model card no documenta ni el conjunto de datos, ni la tarea, ni el procedimiento de adaptación lingüística.
 
@@ -99,7 +99,7 @@ La comparación directa con `gpt2` y `distilgpt2` es únicamente dimensional: am
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-jpn-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Colección Goldfish: https://huggingface.co/goldfish-models
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/wo5pimwt

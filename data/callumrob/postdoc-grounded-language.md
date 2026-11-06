@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`callumrob/postdoc-grounded-language` es un repositorio alojado en HuggingFace por el autor callumrob (C. Roberts) que, segun su propia model card, no contiene un modelo entrenado sino una nota de investigacion exploratoria sobre *grounded language* (lenguaje anclado o fundamentado). El artefacto principal declarado es `notes.md`, y la documentacion indica explicitamente que no se reclama ninguna mejora de benchmark, ninguna ablacion completada, ningun codigo publicado ni ningun checkpoint entrenado. En el momento de redactar esta ficha acumula 14 descargas y 0 likes.
+`callumrob/postdoc-grounded-language` es un repositorio alojado en Hugging Face por el autor callumrob (C. Roberts) que, segun su propia model card, no contiene un modelo entrenado sino una nota de investigacion exploratoria sobre *grounded language* (lenguaje anclado o fundamentado). El artefacto principal declarado es `notes.md`, y la documentacion indica explicitamente que no se reclama ninguna mejora de benchmark, ninguna ablacion completada, ningun codigo publicado ni ningun checkpoint entrenado. En el momento de redactar esta ficha acumula 14 descargas y 0 likes.
 
 Las etiquetas del repositorio incluyen `safetensors`, `transformer`, `research-notes` y `grounded-language`, y los metadatos de safetensors reflejan 49.600 parametros totales. Sin embargo, la propia model card desmiente la existencia de un modelo funcional: el texto describe un plan de comparacion con baselines emparejados, confundidores probables, contexto de evaluacion propuesto (RefCOCO, Flickr30k, Visual Genome) y requisitos de reproducibilidad que deberian acompanar a cualquier resultado futuro. El tamano del repositorio (0,0 GB) es coherente con esta lectura.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha debe interpretarse como la descripcion de un artefacto de 
 
 La model card no documenta ninguna arquitectura de red neuronal ni ningun proceso de entrenamiento. Lo que describe es el alcance de una pregunta de investigacion sobre *grounded language*, los posibles factores de confusion, una comparacion propuesta con baselines emparejados y un conjunto de requisitos de reproducibilidad (versiones de dataset, comandos, semillas, hardware y registros en bruto) que deberian acompanar a cualquier resultado experimental futuro. Las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados.
 
-El unico indicio estructural es la etiqueta `transformer` en los metadatos de HuggingFace y el recuento de parametros de safetensors (49.600), una cifra que por su magnitud no corresponde a un modelo de lenguaje utilizable en tareas reales. No se especifica numero de tokens de entrenamiento, composicion del dataset, ni uso de RLHF, DPO u otra tecnica de alineamiento. Cualquier afirmacion sobre el entrenamiento seria una extrapolacion no respaldada por la informacion disponible.
+El unico indicio estructural es la etiqueta `transformer` en los metadatos de Hugging Face y el recuento de parametros de safetensors (49.600), una cifra que por su magnitud no corresponde a un modelo de lenguaje utilizable en tareas reales. No se especifica numero de tokens de entrenamiento, composicion del dataset, ni uso de RLHF, DPO u otra tecnica de alineamiento. Cualquier afirmacion sobre el entrenamiento seria una extrapolacion no respaldada por la informacion disponible.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ El unico indicio estructural es la etiqueta `transformer` en los metadatos de Hu
 - Seleccion de bancos de evaluacion para *grounding*: el repositorio propone RefCOCO, Flickr30k y Visual Genome como contexto de evaluacion, lo que puede servir como punto de partida para quien necesite elegir datasets de referencia visual-lenguaje.
 - Trazabilidad de ideas en investigacion abierta: usar el repositorio como registro publico del estado de una linea de trabajo antes de publicar resultados, diferenciando explicitamente hipotesis de evidencias.
 - Formacion o docencia sobre buenas practicas: emplear la distincion que hace la card entre planes e hipotesis frente a resultados verificables como material didactico sobre rigor experimental.
-- Auditoria de artefactos en HuggingFace: caso practico de como una etiqueta de modelo puede no corresponder a un modelo entrenado, util para revisar pipelines internos de descubrimiento de modelos.
+- Auditoria de artefactos en Hugging Face: caso practico de como una etiqueta de modelo puede no corresponder a un modelo entrenado, util para revisar pipelines internos de descubrimiento de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -74,7 +74,7 @@ No disponible. El artefacto no es un modelo entrenado, sino una nota de investig
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/callumrob/postdoc-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/callumrob/postdoc-grounded-language
 - Perfil del autor: https://huggingface.co/callumrob
 - Listado de modelos del autor: https://huggingface.co/callumrob/models
 - Paper de referencia sobre razonamiento con lenguaje anclado (Mind's Eye): https://arxiv.org/abs/2210.05359

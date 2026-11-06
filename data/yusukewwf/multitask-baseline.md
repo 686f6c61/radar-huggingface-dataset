@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yusukewwf/multitask-baseline` es un prototipo de investigación basado en la arquitectura Efficientformer, orientado a tareas multitarea. Fue desarrollado por el usuario yusukewwf y publicado en HuggingFace con licencia Apache-2.0. El repositorio incluye un checkpoint de inicialización (`model.safetensors`) de 49.600 parámetros, que no ha sido entrenado ni auditado, por lo que no presenta ningún resultado de rendimiento verificado.
+El modelo `yusukewwf/multitask-baseline` es un prototipo de investigación basado en la arquitectura Efficientformer, orientado a tareas multitarea. Fue desarrollado por el usuario yusukewwf y publicado en Hugging Face con licencia Apache-2.0. El repositorio incluye un checkpoint de inicialización (`model.safetensors`) de 49.600 parámetros, que no ha sido entrenado ni auditado, por lo que no presenta ningún resultado de rendimiento verificado.
 
-Su relevancia radica en que sirve como punto de partida experimental para explorar arquitecturas eficientes con atención sparse y fusión gated en entornos multitarea. Al tratarse de un prototipo tiny, el objetivo es documentar formatos de archivo y configuraciones por defecto, no ofrecer un modelo listo para uso en producción. La implementación es personalizada, por lo que requiere un adaptador explícito para cargarla con APIs genéricas de HuggingFace.
+Su relevancia radica en que sirve como punto de partida experimental para explorar arquitecturas eficientes con atención sparse y fusión gated en entornos multitarea. Al tratarse de un prototipo tiny, el objetivo es documentar formatos de archivo y configuraciones por defecto, no ofrecer un modelo listo para uso en producción. La implementación es personalizada, por lo que requiere un adaptador explícito para cargarla con APIs genéricas de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No hay modelos comparables publicados en la información disponible. Al tratarse
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/yusukewwf/multitask-baseline)
+- [Repositorio en Hugging Face](https://huggingface.co/yusukewwf/multitask-baseline)
 - [Busqueda web relacionada: RoboChallenge/table30v2_multitask_baseline_w1](https://huggingface.co/RoboChallenge/table30v2_multitask_baseline_w1)
 - [Busqueda web relacionada: AI Model Releases en agosto 2026 (BenchLM)](https://benchlm.ai/model-updates/releases/august-2026)
 - [Busqueda web relacionada: Código multitask_baseline.py en GitHub](https://github.com/tianyunxiaoxiao/TCmodel_integrated_20260822/blob/main/src/tcmodel/models/multitask_baseline.py)

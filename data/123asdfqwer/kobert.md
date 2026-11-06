@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`123asdfqwer/kobert` es un modelo de clasificación de texto en coreano obtenido mediante ajuste fino (fine-tuning) de `skt/kobert-base-v1`, el BERT preentrenado en coreano desarrollado por SK Telecom (T-Brain). Se distribuye a través de HuggingFace con la librería `transformers` y pesos en formato `safetensors`, y cuenta con 92.188.418 parámetros totales, lo que lo sitúa en la categoría de BERT base (encoder de 12 capas). El repositorio ocupa 0,4 GB.
+`123asdfqwer/kobert` es un modelo de clasificación de texto en coreano obtenido mediante ajuste fino (fine-tuning) de `skt/kobert-base-v1`, el BERT preentrenado en coreano desarrollado por SK Telecom (T-Brain). Se distribuye a través de Hugging Face con la librería `transformers` y pesos en formato `safetensors`, y cuenta con 92.188.418 parámetros totales, lo que lo sitúa en la categoría de BERT base (encoder de 12 capas). El repositorio ocupa 0,4 GB.
 
-El modelo se ha generado automáticamente con el `Trainer` de HuggingFace (`generated_from_trainer`), sin una model card completada por el autor: no se especifica el conjunto de datos de entrenamiento (aparece como "None"), ni los usos previstos, ni los idiomas, ni la licencia. Los únicos datos declarados son los hiperparámetros de entrenamiento (5 épocas, learning rate 2e-5, batch de 16, optimizador AdamW fused, scheduler lineal, semilla 42) y las métricas de validación.
+El modelo se ha generado automáticamente con el `Trainer` de Hugging Face (`generated_from_trainer`), sin una model card completada por el autor: no se especifica el conjunto de datos de entrenamiento (aparece como "None"), ni los usos previstos, ni los idiomas, ni la licencia. Los únicos datos declarados son los hiperparámetros de entrenamiento (5 épocas, learning rate 2e-5, batch de 16, optimizador AdamW fused, scheduler lineal, semilla 42) y las métricas de validación.
 
 La relevancia de esta ficha es fundamentalmente crítica: los resultados publicados (loss de validación en torno a 0,6930 y accuracy de 0,514, estable en todas las épocas) son compatibles con un entrenamiento que no ha convergido o con una tarea binaria trivial, ya que 0,693 es aproximadamente `ln(2)`. Se trata, por tanto, de un artefacto de experimentación, no de un modelo listo para producción.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es fundamentalmente crítica: los resultados publica
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un encoder Transformer tipo BERT base, heredada íntegramente de `skt/kobert-base-v1` (KoBERT). KoBERT fue desarrollado por SK Telecom para paliar las limitaciones del BERT multilingüe original de Google al procesar coreano, y emplea un vocabulario y una tokenización adaptados al idioma (tokenizador basado en `tokenizers` de HuggingFace en esta versión). El ajuste fino no modifica la topología del modelo: se añade o se reutiliza una cabeza de clasificación de secuencias y se entrenan los pesos sobre una tarea de `text-classification` cuyo conjunto de datos no se especifica.
+La arquitectura corresponde a un encoder Transformer tipo BERT base, heredada íntegramente de `skt/kobert-base-v1` (KoBERT). KoBERT fue desarrollado por SK Telecom para paliar las limitaciones del BERT multilingüe original de Google al procesar coreano, y emplea un vocabulario y una tokenización adaptados al idioma (tokenizador basado en `tokenizers` de Hugging Face en esta versión). El ajuste fino no modifica la topología del modelo: se añade o se reutiliza una cabeza de clasificación de secuencias y se entrenan los pesos sobre una tarea de `text-classification` cuyo conjunto de datos no se especifica.
 
 El proceso de entrenamiento registrado en la model card es el siguiente: 5 épocas con 470 pasos totales (94 pasos por época), learning rate 2e-5, batch de entrenamiento y evaluación de 16, semilla 42, optimizador `ADAMW_TORCH_FUSED` con betas (0,9; 0,999) y epsilon 1e-8, y scheduler lineal. Las versiones de framework declaradas son Transformers 5.17.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2. La pérdida de entrenamiento se registra como "No log" en todas las épocas, por lo que no hay evidencia de convergencia del modelo. No se documenta ningún uso de RLHF, DPO ni técnicas de alineación, lo cual es coherente con un encoder de clasificación.
 
@@ -47,7 +47,7 @@ El proceso de entrenamiento registrado en la model card es el siguiente: 5 époc
 - Enrutamiento de tickets de soporte: clasificar consultas entrantes por categoría para dirigirlas al equipo correspondiente, sustituyendo la cabeza de clasificación por una entrenada con las categorías reales de la organización.
 - Investigación lingüística sobre coreano: extracción de representaciones intermedias del encoder para estudiar similitud semántica o clustering de documentos.
 - Evaluación de pipelines de clasificación: uso como referencia negativa o de control en comparativas de modelos, dado que sus métricas son cercanas al azar.
-- Docencia y reproducción de experimentos: útil para demostrar el flujo `Trainer` de HuggingFace y cómo diagnosticar entrenamientos no convergentes a partir de la pérdida de validación.
+- Docencia y reproducción de experimentos: útil para demostrar el flujo `Trainer` de Hugging Face y cómo diagnosticar entrenamientos no convergentes a partir de la pérdida de validación.
 
 ## Benchmarks y rendimiento
 
@@ -77,10 +77,10 @@ Resultado final declarado en la model card: loss 0,6930 y accuracy 0,514. La pé
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|---|
-| `123asdfqwer/kobert` (este modelo) | 92.188.418 | no confirmado (512 en BERT base) | Clasificacion de texto | no disponible | HuggingFace, 0 descargas | Accuracy 0,514 en validacion |
-| `skt/kobert-base-v1` (modelo base) | ~92 M | 512 (BERT base) | Modelo de lenguaje enmascarado / base para fine-tuning | Apache License 2.0 | HuggingFace y GitHub de SKTBrain | No aplica (no es un clasificador) |
-| `monologg/kobert` | ~92 M | 512 (BERT base) | Port del modelo KoBERT para PyTorch | Apache License 2.0 (heredada del original) | HuggingFace | No aplica (modelo base) |
-| BERT multilingue de Google | ~178 M | 512 | Modelo de lenguaje enmascarado / base | Apache License 2.0 | HuggingFace, `bert-base-multilingual-cased` | No aplica (modelo base) |
+| `123asdfqwer/kobert` (este modelo) | 92.188.418 | no confirmado (512 en BERT base) | Clasificacion de texto | no disponible | Hugging Face, 0 descargas | Accuracy 0,514 en validacion |
+| `skt/kobert-base-v1` (modelo base) | ~92 M | 512 (BERT base) | Modelo de lenguaje enmascarado / base para fine-tuning | Apache License 2.0 | Hugging Face y GitHub de SKTBrain | No aplica (no es un clasificador) |
+| `monologg/kobert` | ~92 M | 512 (BERT base) | Port del modelo KoBERT para PyTorch | Apache License 2.0 (heredada del original) | Hugging Face | No aplica (modelo base) |
+| BERT multilingue de Google | ~178 M | 512 | Modelo de lenguaje enmascarado / base | Apache License 2.0 | Hugging Face, `bert-base-multilingual-cased` | No aplica (modelo base) |
 
 La comparación directa con clasificadores coreanos ajustados (por ejemplo, sobre KLUE) no está disponible en la información proporcionada, ya que este repositorio no documenta su dataset ni publica métricas comparables.
 
@@ -97,7 +97,7 @@ La comparación directa con clasificadores coreanos ajustados (por ejemplo, sobr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/123asdfqwer/kobert
+- Repositorio Hugging Face: https://huggingface.co/123asdfqwer/kobert
 - Modelo base: https://huggingface.co/skt/kobert-base-v1
 - Port del modelo base a PyTorch: https://huggingface.co/monologg/kobert
 - Repositorio GitHub de KoBERT (SKTBrain): https://github.com/SKTBrain/KoBERT

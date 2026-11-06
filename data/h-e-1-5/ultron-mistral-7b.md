@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/H-E-1-5/ultron-mistral-7b
+- Modelo en Hugging Face: https://huggingface.co/H-E-1-5/ultron-mistral-7b
 - Modelo base utilizado: https://huggingface.co/unsloth/Mistral-7B-Instruct-v0.3-bnb-4bit
 - Modelo base original de Mistral AI: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -80,7 +80,7 @@ Un único seed de entrenamiento. Los 145 fallos alcanzaron el horizonte de 600 a
 
 | Modelo | Parámetros | Contexto / memoria | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| libero-clip-vla | 3,5 M entrenables + CLIP ViT-B/16 congelado | Sin memoria temporal; una imagen y una instrucción por paso | Clonación de comportamiento con backbone congelado | MIT | HuggingFace y GitHub del autor |
+| libero-clip-vla | 3,5 M entrenables + CLIP ViT-B/16 congelado | Sin memoria temporal; una imagen y una instrucción por paso | Clonación de comportamiento con backbone congelado | MIT | Hugging Face y GitHub del autor |
 | OpenVLA | No disponible en la información proporcionada | No disponible | VLA preentrenado sobre Llama y DINOv2 | No disponible | No disponible |
 | RT-2 | No disponible en la información proporcionada | No disponible | VLA basado en modelo de lenguaje y visión | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samisaliveagain/libero-clip-vla
+- Modelo en Hugging Face: https://huggingface.co/Samisaliveagain/libero-clip-vla
 - Dataset: https://huggingface.co/datasets/Samisaliveagain/libero-goal-vla
 - Repositorio fuente: https://github.com/samisaliveagain/libero-clip-vla
 - Vídeos de demostración: https://github.com/samisaliveagain/libero-clip-vla/blob/main/docs/VIDEOS.md

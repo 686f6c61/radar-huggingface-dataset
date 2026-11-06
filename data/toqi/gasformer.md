@@ -4,7 +4,7 @@
 
 Gasformer es una arquitectura basada en transformer disenada especificamente para la segmentacion de emisiones de metano en imagenes de gas optico (optical gas imaging, OGI). El modelo lo desarrolla un equipo academico encabezado por Toqi Tahamid Sarker y presentado en el workshop CVPR 2024 (arXiv 2404.10841). No se trata de un modelo de lenguaje, sino de un modelo de vision por computador orientado a una tarea muy concreta: detectar y delimitar, pixel a pixel, las plumas de metano emitidas por el ganado en imagenes capturadas con camaras infrarrojas de gas.
 
-El problema que resuelve es relevante en el contexto de monitorizacion medioambiental y ganaderia: la deteccion manual de fugas de metano en imagenes OGI requiere personal especializado y es lenta. Gasformer automatiza esa segmentacion semantica, lo que permite cuantificar emisiones de forma escalable. El repositorio de HuggingFace publica dos checkpoints entrenados con MMSegmentation a 512x512 durante 160.000 iteraciones: uno para el dataset binario de rumen de vaca lechera (CR) y otro para el dataset multiclase de liberacion controlada de metano (MR).
+El problema que resuelve es relevante en el contexto de monitorizacion medioambiental y ganaderia: la deteccion manual de fugas de metano en imagenes OGI requiere personal especializado y es lenta. Gasformer automatiza esa segmentacion semantica, lo que permite cuantificar emisiones de forma escalable. El repositorio de Hugging Face publica dos checkpoints entrenados con MMSegmentation a 512x512 durante 160.000 iteraciones: uno para el dataset binario de rumen de vaca lechera (CR) y otro para el dataset multiclase de liberacion controlada de metano (MR).
 
 Se distribuye como pesos `.pth` de PyTorch dentro del ecosistema MMSegmentation, con un tamano de repositorio de 0,1 GB. Es un modelo de nicho, con cero descargas en el momento de la consulta, orientado a investigadores y equipos que trabajen en vision infrarroja y monitorizacion de gases.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento ni de especificaciones de parametros en la
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gasformer (CR/MR) | no disponible | 512x512 | no disponible | HuggingFace + GitHub |
+| Gasformer (CR/MR) | no disponible | 512x512 | no disponible | Hugging Face + GitHub |
 | Alternativas de segmentacion generica (U-Net, DeepLabv3+, SegFormer) | no disponible | variable | no disponible | amplia en MMSegmentation |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de especificaciones de parametros en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/toqi/Gasformer
+- Hugging Face: https://huggingface.co/toqi/Gasformer
 - Paper (arXiv): https://arxiv.org/abs/2404.10841
 - Repositorio de codigo: https://github.com/toqitahamid/Gasformer
 - Publicacion CVPR Workshops 2024: Sarker et al., "Gasformer: A Transformer-based Architecture for Segmenting Methane Emissions from Livestock in Optical Gas Imaging", Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, junio de 2024, pp. 5489-5497.

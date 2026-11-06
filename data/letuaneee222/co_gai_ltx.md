@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`co_gai_ltx` es un modelo publicado en HuggingFace por el usuario letuaneee222 bajo licencia Apache 2.0. La model card del repositorio no contiene más información que el propio encabezado de licencia: no se declara arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni pipeline de uso. El repositorio tiene un tamaño de 0,2 GB, un dato que por sí solo no permite deducir el número de parámetros sin conocer la precisión de los pesos almacenados.
+`co_gai_ltx` es un modelo publicado en Hugging Face por el usuario letuaneee222 bajo licencia Apache 2.0. La model card del repositorio no contiene más información que el propio encabezado de licencia: no se declara arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni pipeline de uso. El repositorio tiene un tamaño de 0,2 GB, un dato que por sí solo no permite deducir el número de parámetros sin conocer la precisión de los pesos almacenados.
 
 El modelo no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el 15 de septiembre de 2026 con apenas dos minutos de diferencia entre ambos eventos, lo que sugiere una subida inicial sin documentación posterior. No se ha publicado ningún resultado de benchmarks, paper, blog técnico ni repositorio de código asociado.
 
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| letuaneee222/co_gai_ltx | no disponible | no disponible | apache-2.0 | HuggingFace |
+| letuaneee222/co_gai_ltx | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/letuaneee222/co_gai_ltx
+- Repositorio en Hugging Face: https://huggingface.co/letuaneee222/co_gai_ltx
 - Paper: no disponible
 - Blog técnico: no disponible
 - Repositorio de código: no disponible

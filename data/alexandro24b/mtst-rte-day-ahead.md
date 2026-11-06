@@ -22,7 +22,7 @@ La arquitectura es un transformer multirresolución con 24 posiciones horarias d
 | Formato de pesos | `model.pt` (state dict PyTorch) + `scaler_X.joblib` y `scaler_y.joblib` (joblib/scikit-learn) + `features.json` |
 | Libreria requerida | `mtst-forecasting>=0.2.0,<0.3` |
 | Pipeline | `time-series-forecasting` |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion registrada | 2026-10-24 |
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 | Modelo | Enfoque | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Alexandro24B/mtst-rte-day-ahead` | Correccion de residuo sobre pronostico RTE, transformer multirresolucion | no disponible | 24 h de entrada / 24 h de salida | no publicado | no disponible | HuggingFace, 0 descargas |
+| `Alexandro24B/mtst-rte-day-ahead` | Correccion de residuo sobre pronostico RTE, transformer multirresolucion | no disponible | 24 h de entrada / 24 h de salida | no publicado | no disponible | Hugging Face, 0 descargas |
 | Pronostico day-ahead de RTE (referencia corregida) | Pronostico operativo del gestor de red | no aplica | day-ahead horario | referencia del sector, no comparable directamente | sujeta a los terminos de la fuente RTE | Publica como dato operativo |
 | Modelos supervisados tipo PatchTST entrenados ad hoc | Pronostico directo de la serie | no disponible | configurable | no disponible | habitualmente abierta, verificar | Requiere entrenamiento propio |
 | Modelos fundacionales de series temporales (Chronos, TimesFM, Moirai) | Pronostico zero-shot de proposito general | no disponible | variable | no disponible | variable segun modelo | Publicos, pero no especializados en demanda francesa |
@@ -100,7 +100,7 @@ La diferencia funcional clave frente a las alternativas genericas es que este ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alexandro24B/mtst-rte-day-ahead
+- Modelo en Hugging Face: https://huggingface.co/Alexandro24B/mtst-rte-day-ahead
 - Libreria `mtst-forecasting` en PyPI: https://pypi.org/project/mtst-forecasting/
 - Repositorio de archivos del modelo: `model.pt`, `scaler_X.joblib`, `scaler_y.joblib`, `features.json`, `inference.py`, `tests/test_inference.py`
 - Fuente de datos y pronosticos de referencia: RTE (el autor indica citar la fuente concreta utilizada y respetar su licencia); no se proporciona URL especifica en la informacion disponible.

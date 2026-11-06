@@ -18,7 +18,7 @@ Su relevancia actual es doble: por un lado, cubre un nicho poco atendido como es
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4 bits (INT4) en este repositorio; el modelo original usa expertos MoE en FP8 y el resto en bf16 |
 | Idiomas soportados | Aproximadamente 83 idiomas, entre ellos zh, en, ja, ko, es, pt, ar, ru, fr, de, sv, it, tr, no, nl, cy, eu, ca, da, gl, ta, hu, fi, pl, et, hi, la, ur, th, vi, jw, bn, yo, sl, cs, sw, nn, he, ms, uk, id, kk, bg, lv, my, tl, sk, ne, fa, af, el, bo, hr, ro, sn, mi, yi, am, be, km, is, az, sd, br, sq, ps, mn, ht, ml, sr, sa, te, ka, bs, pa, lt, kn, si, hy, mr, as, gu, fo |
-| Licencia | fish-audio-research-license (etiquetada como `license:other` en HuggingFace) |
+| Licencia | fish-audio-research-license (etiquetada como `license:other` en Hugging Face) |
 | Formato de pesos | safetensors (repositorio de 23,8 GB) |
 | Pipeline declarado | text-to-speech |
 | Autoria del modelo original | Fish Audio |
@@ -85,10 +85,10 @@ Los valores de los modelos alternativos se basan en informacion publica general 
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Fish Audio Drama 3 (este modelo) | 35.000 M totales / 3.000 M activos (MoE) | Aproximadamente 83 | fish-audio-research-license (solo investigacion, `license:other`) | HuggingFace, despliegue con SGLang-Omni | Multi-hablante hasta 16 locutores, edicion por continuacion, clonacion de voz, streaming |
-| OpenAudio S1-mini (Fish Audio, generacion anterior) | Aproximadamente 500 M | Decenas de idiomas | No disponible en esta busqueda | HuggingFace | Modelo previo de la misma casa; sin arquitectura MoE ni decodificador de 10 codebooks |
+| Fish Audio Drama 3 (este modelo) | 35.000 M totales / 3.000 M activos (MoE) | Aproximadamente 83 | fish-audio-research-license (solo investigacion, `license:other`) | Hugging Face, despliegue con SGLang-Omni | Multi-hablante hasta 16 locutores, edicion por continuacion, clonacion de voz, streaming |
+| OpenAudio S1-mini (Fish Audio, generacion anterior) | Aproximadamente 500 M | Decenas de idiomas | No disponible en esta busqueda | Hugging Face | Modelo previo de la misma casa; sin arquitectura MoE ni decodificador de 10 codebooks |
 | XTTS-v2 (Coqui) | Aproximadamente 470 M | Aproximadamente 17 | CPML (no comercial) | Repositorio Coqui | Clonacion de voz, sin soporte nativo de multiples hablantes por etiquetas |
-| CosyVoice 2 | Aproximadamente 500 M | No disponible con precision | Apache 2.0 | HuggingFace | Uso comercial permitido, sin las capacidades de edicion por continuacion descritas aqui |
+| CosyVoice 2 | Aproximadamente 500 M | No disponible con precision | Apache 2.0 | Hugging Face | Uso comercial permitido, sin las capacidades de edicion por continuacion descritas aqui |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ Los valores de los modelos alternativos se basan en informacion publica general 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akhaliq/drama-3-int4
+- Repositorio en Hugging Face: https://huggingface.co/akhaliq/drama-3-int4
 - Modelo original de Fish Audio: https://huggingface.co/fishaudio/drama-3
 - Documentacion de SGLang-Omni: https://sgl-project.github.io/sglang-omni/
 - Cookbook de Drama 3 en SGLang-Omni: https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bbkdevops/Qwen3.8-27B-TurboFCFusion-CyberSec es un ajuste fino de la familia Qwen orientado a ciberseguridad ofensiva, publicado en HuggingFace por el usuario bbkdevops. Segun la model card, se presenta como un modelo de "ciberinteligencia" de alto razonamiento, optimizado para pruebas de penetracion autonomas, resolucion de retos CTF, evaluacion de vulnerabilidades y orquestacion multiagente dentro de un sistema propietario denominado N.E.X.U.S. El repositorio contiene un unico fichero en formato GGUF cuantizado en IQ4_NL, con 27.320.697.856 parametros totales (27,32 mil millones) y un tamano de repositorio de 17,8 GB.
+bbkdevops/Qwen3.8-27B-TurboFCFusion-CyberSec es un ajuste fino de la familia Qwen orientado a ciberseguridad ofensiva, publicado en Hugging Face por el usuario bbkdevops. Segun la model card, se presenta como un modelo de "ciberinteligencia" de alto razonamiento, optimizado para pruebas de penetracion autonomas, resolucion de retos CTF, evaluacion de vulnerabilidades y orquestacion multiagente dentro de un sistema propietario denominado N.E.X.U.S. El repositorio contiene un unico fichero en formato GGUF cuantizado en IQ4_NL, con 27.320.697.856 parametros totales (27,32 mil millones) y un tamano de repositorio de 17,8 GB.
 
 El modelo se distribuye exclusivamente en version cuantizada para inferencia local, lo que lo situa en la categoria de modelos "listos para desplegar" en hardware de gama alta de consumo o en estaciones de trabajo con GPU de 24 GB o mas. Los metadatos declaran soporte unicamente de ingles (en) y tailandes (th), un detalle poco habitual en modelos centrados en seguridad y que sugiere un proceso de ajuste con datos en esos dos idiomas. La licencia no esta publicada, lo que constituye un bloqueo objetivo para cualquier uso comercial sin aclaracion previa del autor.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es fundamentalmente critica: el modelo acumula etiqu
 | Licencia | No disponible |
 | Formato de pesos | GGUF (fichero Qwen3.8-27B-TurboFCFusion-735-882-Here-Uncen-NEO-CODER-MAX-MTP-IQ4_NL.gguf) |
 | Tamano del repositorio | 17,8 GB |
-| Fecha de creacion / actualizacion | 2026-09-11 / 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-11 / 2026-09-11 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Tokenizador | No disponible (presumiblemente el del modelo base Qwen, sin confirmar) |
 
@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el numero de tokens de entrenamiento, la composici
 - Generacion de texto conversacional y continuacion de contexto, en linea con la etiqueta text-generation del repositorio.
 - Razonamiento orientado a seguridad ofensiva: segun el autor, pruebas de penetracion autonomas, razonamiento en retos CTF y evaluacion de vulnerabilidades.
 - Generacion de codigo, presumiblemente orientada a scripting de explotacion y automatizacion (el nombre del fichero incluye "NEO-CODER-MAX", sin especificacion tecnica).
-- Soporte de tool calling / function calling: no confirmado en la informacion disponible. El tag endpoints_compatible indica compatibilidad con la API de Inference Endpoints de HuggingFace para generacion de texto, no necesariamente con herramientas.
+- Soporte de tool calling / function calling: no confirmado en la informacion disponible. El tag endpoints_compatible indica compatibilidad con la API de Inference Endpoints de Hugging Face para generacion de texto, no necesariamente con herramientas.
 - Soporte de agentes y razonamiento multi-paso: el autor lo menciona (orquestacion multiagente N.E.X.U.S.), pero no se documenta el protocolo ni el formato de mensajes.
 - Capacidades multilingues: limitadas a ingles y tailandes segun los metadatos. No se declara soporte de castellano.
 - Capacidad especial: no se documenta modo "thinking", vision, audio ni ninguna modalidad adicional. El modelo es exclusivamente de texto.
@@ -80,7 +80,7 @@ No existen, en la informacion disponible, resultados que permitan comparar el re
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TurboFCFusion-CyberSec | 27,32 B | No disponible | No disponible | GGUF (IQ4_NL) | HuggingFace, 0 descargas |
+| Qwen3.8-27B-TurboFCFusion-CyberSec | 27,32 B | No disponible | No disponible | GGUF (IQ4_NL) | Hugging Face, 0 descargas |
 | Qwen2.5-32B-Instruct | Aprox. 32,5 B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ | Ampliamente desplegado, ecosistema maduro |
 | Llama 3.3 70B Instruct | Aprox. 70,6 B | 131.072 tokens | Llama 3.3 Community License | safetensors, GGUF | Ampliamente desplegado |
 | Modelos especializados en ciberseguridad de la familia Qwen (varios ajustes comunitarios) | Variable | Variable | Habitualmente la del modelo base | GGUF, safetensors | Variable; muchos sin benchmarks publicados |
@@ -102,8 +102,8 @@ En rendimiento no procede comparacion alguna: el modelo aqui analizado no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bbkdevops/Qwen3.8-27B-TurboFCFusion-CyberSec
-- Dataset de evaluacion citado en la model card: `preemware/pentesting-eval` (HuggingFace)
-- Dataset de evaluacion citado en la model card: `RISys-Lab/Benchmarks_CyberSec_SecBench` (HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/bbkdevops/Qwen3.8-27B-TurboFCFusion-CyberSec
+- Dataset de evaluacion citado en la model card: `preemware/pentesting-eval` (Hugging Face)
+- Dataset de evaluacion citado en la model card: `RISys-Lab/Benchmarks_CyberSec_SecBench` (Hugging Face)
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles
 - Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con este modelo ni con inteligencia artificial (contenido periodistico generalista), por lo que no se incluye ningun enlace adicional.

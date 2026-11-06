@@ -98,7 +98,7 @@ Los tres modelos son practicamente identicos: mismo base, misma tarea y resultad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MA-dev17/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Repositorio Hugging Face: https://huggingface.co/MA-dev17/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Version de matt0017: https://huggingface.co/matt0017/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Version de tanvircr7: https://huggingface.co/tanvircr7/learn_hf_food_not_food_text_classifier-distilbert-base-uncased

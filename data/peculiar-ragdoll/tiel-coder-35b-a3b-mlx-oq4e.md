@@ -91,7 +91,7 @@ Tiel-Coder se posiciona como la opcion mas rapida y eficiente en tareas de codif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
 - Modelo base Ornith-1.5-35B-A3B: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Version GGUF del mismo modelo: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Sharp chat template: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates

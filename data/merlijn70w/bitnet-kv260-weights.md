@@ -68,9 +68,9 @@ No se dispone de informacion sobre modelos comparables en el contexto especifico
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/merlijn70w/bitnet-kv260-weights
+- Repositorio Hugging Face: https://huggingface.co/merlijn70w/bitnet-kv260-weights
 - Proyecto bitnet-kv260 (GitHub): https://github.com/MerlijnW70/bitnet-kv260
 - Articulo del modelo base: https://arxiv.org/abs/2504.12285
 - Version HTML del articulo: https://arxiv.org/html/2504.12285v1
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T
 - Documentacion del Kria KV260: https://xilinx.github.io/kria-apps-docs/kv260/2022.1/build/html/index.html

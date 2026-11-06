@@ -107,8 +107,8 @@ No hay datos que permitan afirmar que el adaptador supere a su modelo base en ni
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1320
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1320
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Informe técnico de DeepSeek-R1: https://arxiv.org/abs/2501.12948
 - Referencia metodológica citada en la plantilla de la model card (calculadora de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automático: https://mlco2.github.io/impact

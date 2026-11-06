@@ -101,7 +101,7 @@ La comparación con Whisper base se ofrece como referencia de categoría (ASR li
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/tryambientai/moonshine-base-vi-gguf
+- Hugging Face (este modelo): https://huggingface.co/tryambientai/moonshine-base-vi-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-base-vi
 - Commit del modelo base referenciado: https://huggingface.co/UsefulSensors/moonshine-base-vi/commit/0ee9ce9
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

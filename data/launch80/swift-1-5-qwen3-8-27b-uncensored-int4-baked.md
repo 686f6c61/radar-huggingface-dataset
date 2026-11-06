@@ -107,7 +107,7 @@ La comparativa se limita a los modelos citados en la propia model card; no se di
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Launch80/Swift-1.5-Qwen3.8-27B-Uncensored-Int4-baked
+- Hugging Face (este repositorio): https://huggingface.co/Launch80/Swift-1.5-Qwen3.8-27B-Uncensored-Int4-baked
 - Drafter DFlash2 INT4: https://huggingface.co/Launch80/Qwen3.8-27B-DFlash2-Int4-baked-drafter
 - Modelo base del que deriva: https://huggingface.co/greglechin/Swift-1.5-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

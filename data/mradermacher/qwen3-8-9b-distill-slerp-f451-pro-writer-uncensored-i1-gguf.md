@@ -90,7 +90,7 @@ Sin embargo, no hay datos objetivos de rendimiento ni comparativas publicadas pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-i1-GGUF
 - Modelo base (referencia): https://huggingface.co/nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored
 - Modelos similares del mismo autor: 
   - https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-uncensored-heretic-i1-GGUF

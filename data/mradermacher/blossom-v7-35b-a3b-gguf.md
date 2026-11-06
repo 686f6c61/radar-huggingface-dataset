@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (MoE de 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Blossom-V7-35B-A3B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Blossom-V7-35B-A3B-GGUF
 - Modelo original (safetensors): https://huggingface.co/Azure99/Blossom-V7-35B-A3B

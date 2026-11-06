@@ -6,7 +6,7 @@ El modelo BoneMangler/NextSearch-1-XS-Q6_K-GGUF es una conversión a formato GGU
 
 El modelo base está etiquetado con capacidades de agente, búsqueda web, búsqueda agéntica y uso de herramientas, lo que sugiere que está diseñado para tareas de investigación automatizada y razonamiento multi-paso. Sin embargo, la información disponible en la model card de esta conversión es mínima: solo se documenta el proceso de conversión y las instrucciones de uso con llama.cpp. No se proporcionan detalles sobre la arquitectura interna, el entrenamiento, los benchmarks o las capacidades específicas más allá de los tags.
 
-Esta ficha se basa exclusivamente en los datos públicos de HuggingFace y en la model card de la conversión. Dado que el autor no ha publicado información técnica adicional, muchos apartados se marcarán como "no disponible". Se recomienda consultar la model card del modelo base original para obtener detalles completos.
+Esta ficha se basa exclusivamente en los datos públicos de Hugging Face y en la model card de la conversión. Dado que el autor no ha publicado información técnica adicional, muchos apartados se marcarán como "no disponible". Se recomienda consultar la model card del modelo base original para obtener detalles completos.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ La conversión a GGUF se realizó con llama.cpp y no modifica las capacidades de
 - Conversación: el tag "conversational" sugiere que puede mantener diálogos multi-turno.
 - Razonamiento multi-paso: al estar orientado a agentes, es plausible que soporte cadenas de razonamiento, aunque no hay evidencia documentada.
 
-Estas capacidades se infieren de los tags de HuggingFace, no de una descripción oficial del autor. No se dispone de información sobre soporte de visión, audio u otras modalidades.
+Estas capacidades se infieren de los tags de Hugging Face, no de una descripción oficial del autor. No se dispone de información sobre soporte de visión, audio u otras modalidades.
 
 ## Casos de uso
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/BoneMangler/NextSearch-1-XS-Q6_K-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/BoneMangler/NextSearch-1-XS-Q6_K-GGUF
 - Modelo base (NextTokenAI/NextSearch-1-XS): https://huggingface.co/NextTokenAI/NextSearch-1-XS
-- Documentación de GGUF en HuggingFace: https://huggingface.co/docs/hub/gguf
+- Documentación de GGUF en Hugging Face: https://huggingface.co/docs/hub/gguf
 - Perfil del autor (BoneMangler): https://huggingface.co/BoneMangler

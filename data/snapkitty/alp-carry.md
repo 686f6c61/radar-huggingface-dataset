@@ -1,7 +1,7 @@
 # Snapkitty/alp-carry
 
 ## Resumen
-alp-carry no es un modelo de lenguaje: es un compilador vertical para una clase pequena de pruebas de restricciones, publicado por Snapkitty (Copyright 2026, Ahmad Ali Parr) dentro del denominado "SnapKitty October 2026 main drop". El repositorio de HuggingFace es un espejo del repositorio GitHub `SNAPKITTYWEST/alp-carry` en el commit `32f21fa`, sin pipeline declarado, con 0 descargas, 0 likes y un tamano de repositorio de 0,0 GB en el momento de la consulta.
+alp-carry no es un modelo de lenguaje: es un compilador vertical para una clase pequena de pruebas de restricciones, publicado por Snapkitty (Copyright 2026, Ahmad Ali Parr) dentro del denominado "SnapKitty October 2026 main drop". El repositorio de Hugging Face es un espejo del repositorio GitHub `SNAPKITTYWEST/alp-carry` en el commit `32f21fa`, sin pipeline declarado, con 0 descargas, 0 likes y un tamano de repositorio de 0,0 GB en el momento de la consulta.
 
 El problema que aborda es un paso de refinamiento situado despues de una capa numerica: una salida neuronal es un vector y una capa simbolica quiere situarlo dentro de un intervalo (clamp), dentro de una bola epsilon de un candidato, o dejarlo intacto cuando ninguna clausula aplica. Resolverlo con un interprete de clausulas de Horn implica una unificacion y un despacho por llamada; alp-carry traslada esa interpretacion al tiempo de sintesis y deja en tiempo de ejecucion unicamente un codificador de mascaras, un kernel de acarreo y un almacen.
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snapkitty/alp-carry | No aplicable | No aplicable | No disponible | AGPL-3.0 | HuggingFace y GitHub |
+| Snapkitty/alp-carry | No aplicable | No aplicable | No disponible | AGPL-3.0 | Hugging Face y GitHub |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -86,10 +86,10 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - No se dispone de datos de latencia ni de throughput, pese a la descripcion cualitativa de "nanosecond proof".
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Snapkitty/alp-carry
+- Hugging Face: https://huggingface.co/Snapkitty/alp-carry
 - Repositorio GitHub de origen (commit `32f21fa`): https://github.com/SNAPKITTYWEST/alp-carry
 - Perfil GitHub de la organizacion: https://github.com/SNAPKITTYWEST
 - Repositorio principal de SnapKitty: https://github.com/SNAPKITTYWEST/SNAPKITTYWEST
-- Perfil de HuggingFace del autor: https://huggingface.co/Snapkitty
+- Perfil de Hugging Face del autor: https://huggingface.co/Snapkitty
 - Coleccion de investigacion y papers: https://huggingface.co/collections/Snapkitty/research-and-papers
 - Publicacion en LinkedIn sobre la iniciativa: https://www.linkedin.com/posts/ahmad-parr-dev_localai-edgeai-activity-7513855605988601856-_amD

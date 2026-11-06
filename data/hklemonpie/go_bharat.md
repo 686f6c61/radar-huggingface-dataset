@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hklemonpie/Go_bharat` es un modelo publicado en HuggingFace por el usuario hklemonpie, con licencia Apache 2.0. No se dispone de información adicional en la model card más allá de la licencia y la fecha de creación (15 de agosto de 2026). No se especifican arquitectura, tamaño, parámetros, contexto ni capacidades. El modelo no ha recibido descargas ni valoraciones, lo que sugiere que es un proyecto reciente o experimental. Dada la ausencia de datos técnicos, no es posible evaluar su relevancia ni su aplicabilidad en escenarios reales.
+El modelo `hklemonpie/Go_bharat` es un modelo publicado en Hugging Face por el usuario hklemonpie, con licencia Apache 2.0. No se dispone de información adicional en la model card más allá de la licencia y la fecha de creación (15 de agosto de 2026). No se especifican arquitectura, tamaño, parámetros, contexto ni capacidades. El modelo no ha recibido descargas ni valoraciones, lo que sugiere que es un proyecto reciente o experimental. Dada la ausencia de datos técnicos, no es posible evaluar su relevancia ni su aplicabilidad en escenarios reales.
 
 ## Especificaciones tecnicas
 
@@ -50,4 +50,4 @@ No disponible. No se conocen modelos comparables al no existir datos sobre arqui
 
 ## Enlaces
 
-- [HuggingFace: hklemonpie/Go_bharat](https://huggingface.co/hklemonpie/Go_bharat)
+- [Hugging Face: hklemonpie/Go_bharat](https://huggingface.co/hklemonpie/Go_bharat)

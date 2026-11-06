@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hdilim/_lora_adapter es un adaptador LoRA publicado en HuggingFace por el usuario hdilim. Segun los metadatos del repositorio, se trata de un modelo entrenado con la libreria TRL mediante SFT (supervised fine-tuning), generado con la utilidad `generated_from_trainer`, y almacenado en formato safetensors. La model card no identifica el modelo base sobre el que se aplica el adaptador: el campo correspondiente aparece como `None` en el enlace de procedencia, por lo que no es posible determinar la arquitectura subyacente, el numero de parametros ni la longitud de contexto real.
+hdilim/_lora_adapter es un adaptador LoRA publicado en Hugging Face por el usuario hdilim. Segun los metadatos del repositorio, se trata de un modelo entrenado con la libreria TRL mediante SFT (supervised fine-tuning), generado con la utilidad `generated_from_trainer`, y almacenado en formato safetensors. La model card no identifica el modelo base sobre el que se aplica el adaptador: el campo correspondiente aparece como `None` en el enlace de procedencia, por lo que no es posible determinar la arquitectura subyacente, el numero de parametros ni la longitud de contexto real.
 
 El repositorio ocupa 5,6 GB, un tamano inusualmente grande para un adaptador LoRA convencional (que suele ocupar decenas o cientos de megabytes), lo que sugiere o bien un rango de adaptacion muy alto con muchas capas objetivo, o bien que el repositorio contiene pesos fusionados con el modelo base, o artefactos de entrenamiento adicionales. No hay informacion publicada que permita confirmarlo.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un artefac
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base. El unico dato tecnico aportado por la model card es que el entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando TRL, la libreria de HuggingFace para fine-tuning y aprendizaje por refuerzo. El tag `generated_from_trainer` indica que la tarjeta y los artefactos se generaron automaticamente con la utilidad estandar del ecosistema Transformers/TRL, y el tag `sft` confirma la modalidad de ajuste supervisado sobre pares de instruccion y respuesta.
+No se dispone de informacion sobre la arquitectura del modelo base. El unico dato tecnico aportado por la model card es que el entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando TRL, la libreria de Hugging Face para fine-tuning y aprendizaje por refuerzo. El tag `generated_from_trainer` indica que la tarjeta y los artefactos se generaron automaticamente con la utilidad estandar del ecosistema Transformers/TRL, y el tag `sft` confirma la modalidad de ajuste supervisado sobre pares de instruccion y respuesta.
 
 No se especifica el dataset de entrenamiento, el numero de tokens, la composicion de los datos, la existencia de fases posteriores de alineacion (RLHF, DPO, RLVR) ni ninguna innovacion tecnica destacable (atencion lineal, decodificacion especulativa, atencion dispersa, etc.). Tampoco se documentan hiperparametros de entrenamiento: no hay seccion de hiperparametros en la model card, lo que impide reproducir el ajuste. Las versiones declaradas de los frameworks (Transformers 5.17.0, PyTorch 2.14.0+cu130) no son verificables con la informacion disponible y podrian corresponder a un entorno de entrenamiento concreto no detallado.
 
@@ -52,7 +52,7 @@ Dado que no se conoce el modelo base, la licencia ni los idiomas, no es posible 
 - Analisis forense de artefactos publicados: inspeccionar los safetensors para determinar el rango del adaptador, las capas objetivo y si contiene pesos fusionados, dado el tamano anomaluo de 5,6 GB.
 - Generacion de texto conversacional en prototipos internos: siempre que se resuelva primero la identificacion del modelo base y se acepte que no hay licencia declarada, solo con fines de prueba no distribuida.
 - Pruebas de calidad de datos de instrucciones: si el ajuste se ha realizado sobre un dataset propio no publicado, el modelo puede servir para inspeccionar cualitativamente el estilo de las respuestas aprendidas.
-- Docencia y formacion: ejemplo practico de como se publica (y como no se deberia documentar) un adaptador LoRA en HuggingFace, util para ilustrar la importancia de declarar modelo base, licencia y datos de entrenamiento.
+- Docencia y formacion: ejemplo practico de como se publica (y como no se deberia documentar) un adaptador LoRA en Hugging Face, util para ilustrar la importancia de declarar modelo base, licencia y datos de entrenamiento.
 
 ## Benchmarks y rendimiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hdilim/_lora_adapter | no disponible | no disponible | sin benchmarks publicados | no disponible | HuggingFace, safetensors |
+| hdilim/_lora_adapter | no disponible | no disponible | sin benchmarks publicados | no disponible | Hugging Face, safetensors |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa significativa: al no identificarse el modelo base, no se puede asignar el adaptador a ninguna categoria de tamano (7B, 13B, 70B, etc.) ni de tarea (chat, codigo, matematicas). Cualquier comparacion con modelos concretos seria especulativa.
@@ -91,7 +91,7 @@ No es posible establecer una comparativa significativa: al no identificarse el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hdilim/_lora_adapter
+- Modelo en Hugging Face: https://huggingface.co/hdilim/_lora_adapter
 - Repositorio de TRL (framework de entrenamiento citado por el autor): https://github.com/huggingface/trl
 - Citacion de TRL incluida en la model card: von Werra, L., Belkada, Y., Tunstall, L., Beeching, E., Thrush, T., Lambert, N., Huang, S., Rasul, K., Gallouedec, Q. (2020). TRL: Transformers Reinforcement Learning. Licencia Apache-2.0.
 - Papers, blogs, demos o repositorios adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.

@@ -71,10 +71,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESMC-LI 300M Homology v1 | 332 M | no disponible | Retrieval de homologias con MaxSim | Cambrian Open License | HuggingFace (GGUF + `.npy`) |
-| ESM-C 300M (base) | 300 M aprox. | no disponible | Embeddings de proteina generales | Cambrian Open License | HuggingFace |
+| ESMC-LI 300M Homology v1 | 332 M | no disponible | Retrieval de homologias con MaxSim | Cambrian Open License | Hugging Face (GGUF + `.npy`) |
+| ESM-C 300M (base) | 300 M aprox. | no disponible | Embeddings de proteina generales | Cambrian Open License | Hugging Face |
 | MMseqs2 | no aplica (alineamiento) | no aplica | Alineamiento y busqueda de secuencias | GPL-3.0 (segun proyecto) | Codigo abierto |
-| ESM-2 (650M) | 650 M | 1024 tokens aprox. | Embeddings de proteina | MIT (segun version) | HuggingFace |
+| ESM-2 (650M) | 650 M | 1024 tokens aprox. | Embeddings de proteina | MIT (segun version) | Hugging Face |
 
 La comparacion con MMseqs2 es la mas directa en la tarea: el autor reporta cR@10 de 0,8974 frente a 0,8304 en Swiss-Prot 100K. Frente a ESM-C 300M base, la diferencia es el ajuste fino para retrieval y la cabeza de proyeccion. No se dispone de datos comparativos con otros modelos de retrieval de proteinas en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ La comparacion con MMseqs2 es la mas directa en la tarea: el autor reporta cR@10
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnanyaPathak/esmc-li-300m-homology-v1
+- Modelo en Hugging Face: https://huggingface.co/AnanyaPathak/esmc-li-300m-homology-v1
 - Repositorio del proyecto: https://github.com/AnanyaP-WDW/esmc-li
 - Indices preconstruidos: https://huggingface.co/datasets/AnanyaPathak/esmc-li-indexes
 - Modelo base: https://huggingface.co/EvolutionaryScale/esmc-300m-2024-12

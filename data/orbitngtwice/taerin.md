@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TAERIN es un modelo publicado en HuggingFace por el usuario OrbitngTwice el 30 de octubre de 2026. Se trata de un repositorio de aproximadamente 0,1 GB de tamano, sin pipeline declarado, sin licencia especificada (figura como `unknown`) y sin idiomas declarados en los metadatos. La model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown`, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso.
+TAERIN es un modelo publicado en Hugging Face por el usuario OrbitngTwice el 30 de octubre de 2026. Se trata de un repositorio de aproximadamente 0,1 GB de tamano, sin pipeline declarado, sin licencia especificada (figura como `unknown`) y sin idiomas declarados en los metadatos. La model card asociada esta practicamente vacia: unicamente contiene el campo `license: unknown`, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso.
 
 En el momento de redactar esta ficha no se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo. El tamano del repositorio (0,1 GB) sugiere pesos de reducidas dimensiones, compatibles con un modelo pequeno o con un conjunto parcial de pesos, pero este dato por si solo no permite determinar la naturaleza del modelo.
 
@@ -42,7 +42,7 @@ La unica informacion objetiva disponible es el tamano del repositorio (aproximad
 - Prototipado interno: si el autor confirma una licencia adecuada, podria emplearse en experimentos internos de laboratorio siempre que se valide su calidad y seguridad antes de cualquier uso real.
 - Investigacion sobre modelos sin documentar: util como caso de estudio sobre la importancia de la documentacion y las licencias en la publicacion de modelos abiertos.
 - Pruebas de pipelines de evaluacion: puede servir para validar herramientas de evaluacion automatica de modelos (perplejidad, generacion, seguridad) con un artefacto de bajo peso.
-- Analisis de artefactos de HuggingFace: util para estudiar como se estructuran repositorios sin model card, sin pipeline y sin licencia, y que implicaciones tiene para la trazabilidad.
+- Analisis de artefactos de Hugging Face: util para estudiar como se estructuran repositorios sin model card, sin pipeline y sin licencia, y que implicaciones tiene para la trazabilidad.
 - Formacion y docencia: puede emplearse como ejemplo practico de los riesgos de integrar modelos sin licencia clara ni documentacion tecnica en entornos de produccion.
 
 En ninguno de estos casos se recomienda su uso en produccion, atencion al cliente, generacion de codigo o cualquier aplicacion con usuarios finales sin una validacion previa exhaustiva y una licencia clara.
@@ -76,5 +76,5 @@ No disponible. No se dispone de informacion suficiente sobre TAERIN (parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OrbitngTwice/TAERIN
+- Hugging Face: https://huggingface.co/OrbitngTwice/TAERIN
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

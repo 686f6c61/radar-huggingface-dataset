@@ -25,7 +25,7 @@ Es relevante ahora porque demuestra el patrón actual de especialización barata
 | Rango y alpha de LoRA | No disponible |
 | Pipeline declarado | text-generation |
 | Descargas / likes | 0 / 0 |
-| Fecha declarada de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha declarada de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beatsprom/deepseek-r1-14b-systems-kernel-lora (adaptador) | 14 000 M (base) | No disponible (harness a 2048) | LoRA sobre modelo destilado de razonamiento | apache-2.0 (declarada) | HuggingFace, 0 descargas |
-| unsloth/DeepSeek-R1-Distill-Qwen-14B (modelo base) | 14 000 M | Segun la model card del base (no verificada aqui) | Transformer denso destilado con CoT | No disponible en la informacion proporcionada | Ampliamente distribuido en HuggingFace |
-| Qwen2.5-Coder-14B-Instruct | 14 000 M | No disponible en la informacion proporcionada | Transformer denso orientado a codigo | No disponible en la informacion proporcionada | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-32B | 32 000 M | No disponible en la informacion proporcionada | Transformer denso destilado con CoT | No disponible en la informacion proporcionada | HuggingFace |
+| beatsprom/deepseek-r1-14b-systems-kernel-lora (adaptador) | 14 000 M (base) | No disponible (harness a 2048) | LoRA sobre modelo destilado de razonamiento | apache-2.0 (declarada) | Hugging Face, 0 descargas |
+| unsloth/DeepSeek-R1-Distill-Qwen-14B (modelo base) | 14 000 M | Segun la model card del base (no verificada aqui) | Transformer denso destilado con CoT | No disponible en la informacion proporcionada | Ampliamente distribuido en Hugging Face |
+| Qwen2.5-Coder-14B-Instruct | 14 000 M | No disponible en la informacion proporcionada | Transformer denso orientado a codigo | No disponible en la informacion proporcionada | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-32B | 32 000 M | No disponible en la informacion proporcionada | Transformer denso destilado con CoT | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada; la comparacion se limita a tamano, formato de distribucion y licencia declarada.
 
@@ -99,8 +99,8 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/beatsprom/deepseek-r1-14b-systems-kernel-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-14B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/beatsprom/deepseek-r1-14b-systems-kernel-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Qwen-14B
 - Dataset comercial (Gumroad): https://beatsprom.gumroad.com/l/deepseek-r1-systems-reasoning-2026
 - Dataset card (vista previa) en el Hub de Datasets, identificador `deepseek-r1-systems-kernel-reasoning`: no se ha podido verificar una URL directa en la informacion proporcionada
 - Unsloth (framework de entrenamiento e inferencia utilizado): no disponible en la informacion proporcionada

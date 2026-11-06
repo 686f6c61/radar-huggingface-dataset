@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/jerkar/Qwen3.8-27B-INT8-W8A16-MTP-Q4_K_S-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/jerkar/Qwen3.8-27B-INT8-W8A16-MTP-Q4_K_S-GGUF)
 - [Modelo base: lued/Qwen3.8-27B-INT8-W8A16-MTP](https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP)

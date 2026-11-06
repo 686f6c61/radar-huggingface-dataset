@@ -86,9 +86,9 @@ La metrica primaria es la puntuacion de rubrica sobre un conjunto oculto de 36 i
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| kuza-qwen-3.5-4b-quant-study (este repositorio) | 4,2 B | no disponible | apache-2.0 | GGUF (multiples quants) | Repositorio HuggingFace de kuzaai |
-| kuza-qwen-3.5-4b (modelo base) | 4,2 B | no disponible | no confirmada en la informacion proporcionada | pesos fuente (formato no especificado) | Repositorio HuggingFace de kuzaai |
-| Cuantizaciones previas del mismo modelo (q4_k_m_imatrix, q4_k_xl_ssm, q4_k_s_ssm) | 4,2 B | no disponible | apache-2.0 | GGUF | Repositorio HuggingFace de kuzaai |
+| kuza-qwen-3.5-4b-quant-study (este repositorio) | 4,2 B | no disponible | apache-2.0 | GGUF (multiples quants) | Repositorio Hugging Face de kuzaai |
+| kuza-qwen-3.5-4b (modelo base) | 4,2 B | no disponible | no confirmada en la informacion proporcionada | pesos fuente (formato no especificado) | Repositorio Hugging Face de kuzaai |
+| Cuantizaciones previas del mismo modelo (q4_k_m_imatrix, q4_k_xl_ssm, q4_k_s_ssm) | 4,2 B | no disponible | apache-2.0 | GGUF | Repositorio Hugging Face de kuzaai |
 | Alternativas externas de 3-4 B (por ejemplo, familias Qwen, Llama o Gemma de tamano similar) | no disponible | no disponible | no disponible | no disponible | no disponible: no se han aportado datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre este modelo y alternativas externas, ya que el estudio se limita a comparar cuantizaciones del mismo modelo base.
@@ -110,6 +110,6 @@ No se dispone de datos de rendimiento comparativo entre este modelo y alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kuzaai/kuza-qwen-3.5-4b-quant-study
+- Repositorio en Hugging Face: https://huggingface.co/kuzaai/kuza-qwen-3.5-4b-quant-study
 - Modelo base: https://huggingface.co/kuzaai/kuza-qwen-3.5-4b
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

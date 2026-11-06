@@ -77,10 +77,10 @@ La suite lm-evaluation-harness (HellaSwag, PIQA, LAMBADA, ARC-Challenge, BoolQ, 
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| Slayer1B 1.04 | 1.073.912.851 | 4096 | pl, en | Apache 2.0 | Pesos safetensors en HuggingFace |
-| Slayer1B 1.03 | no disponible en la información | 4096 | pl, en | Apache 2.0 | Pesos safetensors en HuggingFace |
-| Slayer1B 1.02 | no disponible en la información | 4096 | pl, en | Apache 2.0 | Pesos safetensors en HuggingFace |
-| Slayer1B 1.00 | no disponible en la información | 4096 | pl, en | Apache 2.0 | Pesos safetensors en HuggingFace |
+| Slayer1B 1.04 | 1.073.912.851 | 4096 | pl, en | Apache 2.0 | Pesos safetensors en Hugging Face |
+| Slayer1B 1.03 | no disponible en la información | 4096 | pl, en | Apache 2.0 | Pesos safetensors en Hugging Face |
+| Slayer1B 1.02 | no disponible en la información | 4096 | pl, en | Apache 2.0 | Pesos safetensors en Hugging Face |
+| Slayer1B 1.00 | no disponible en la información | 4096 | pl, en | Apache 2.0 | Pesos safetensors en Hugging Face |
 
 No se dispone en la información proporcionada de datos de benchmarks de modelos de terceros de tamaño comparable (por ejemplo, modelos polacos de ~1B parámetros) que permitan una comparación cuantitativa fiable. La comparación con las versiones anteriores de la propia línea Slayer1B es la única disponible, y el autor advierte que las métricas de 1.04 no son directamente comparables con las de 1.00–1.03 por el cambio de instrumentación de evaluación.
 
@@ -99,7 +99,7 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.04
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.04
 - Versión anterior 1.03: https://huggingface.co/SlayerLab/Slayer1B-1.03
 - Versión anterior 1.02: https://huggingface.co/SlayerLab/Slayer1B-1.02
 - Versión anterior 1.01: https://huggingface.co/SlayerLab/Slayer1B-1.01

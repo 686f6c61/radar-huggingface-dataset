@@ -21,7 +21,7 @@ La relevancia de este repositorio es limitada: puede servir como referencia bibl
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | safetensors (aunque el repositorio no contiene pesos descargables según la model card) |
 
-Nota: la model card declara explícitamente que no se libera un checkpoint entrenado. El archivo safetensors referenciado en los metadatos de HuggingFace podría ser un artefacto residual, pero no se confirma su existencia en el repositorio real.
+Nota: la model card declara explícitamente que no se libera un checkpoint entrenado. El archivo safetensors referenciado en los metadatos de Hugging Face podría ser un artefacto residual, pero no se confirma su existencia en el repositorio real.
 
 ## Arquitectura y entrenamiento
 
@@ -62,14 +62,14 @@ No disponible: no es un modelo entrenado, por lo que no puede compararse con alt
 
 - No es un modelo funcional: no hay checkpoint, código ni resultados.
 - La model card es explícita sobre su naturaleza exploratoria: "no reclama mejoras de benchmarks, ablaciones completadas, código liberado o un checkpoint entrenado".
-- Riesgo de confusión: los metadatos de HuggingFace muestran un archivo safetensors con parámetros, pero no se garantiza que sea un modelo utilizable.
+- Riesgo de confusión: los metadatos de Hugging Face muestran un archivo safetensors con parámetros, pero no se garantiza que sea un modelo utilizable.
 - Licencia CC-BY-4.0: permite uso comercial y modificación con atribución, pero se aplica al contenido documental, no a un modelo.
 - No hay información sobre sesgos, alucinación o limitaciones de contexto porque no existe modelo.
 - Cualquier intento de desplegarlo en producción sería un error.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/roher-nandez/hw2-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/roher-nandez/hw2-image-captioning
 - Documentación de Hugging Face sobre image captioning (referencia externa): https://huggingface.co/docs/transformers/tasks/image_captioning
 - Tutorial de TensorFlow sobre image captioning con atención visual (referencia externa): https://www.tensorflow.org/text/tutorials/image_captioning
 - Survey sobre deep learning para image captioning (referencia externa): https://link.springer.com/article/10.1186/s40537-026-01377-w

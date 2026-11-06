@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kishormainali/marqo-nsfw-384` es un artefacto publicado en HuggingFace por el usuario kishormainali bajo licencia Apache 2.0. Por su identificador y sus etiquetas (`tflite`, `not-for-all-audiences`), se trata presumiblemente de un clasificador de contenido para adultos (NSFW) derivado o inspirado en la familia Marqo, exportado en formato TensorFlow Lite y con una resolución de entrada de 384 píxeles. No obstante, la model card publicada no contiene descripción, datos de entrenamiento, arquitectura ni métricas: únicamente declara la licencia.
+El modelo `kishormainali/marqo-nsfw-384` es un artefacto publicado en Hugging Face por el usuario kishormainali bajo licencia Apache 2.0. Por su identificador y sus etiquetas (`tflite`, `not-for-all-audiences`), se trata presumiblemente de un clasificador de contenido para adultos (NSFW) derivado o inspirado en la familia Marqo, exportado en formato TensorFlow Lite y con una resolución de entrada de 384 píxeles. No obstante, la model card publicada no contiene descripción, datos de entrenamiento, arquitectura ni métricas: únicamente declara la licencia.
 
 La relevancia de este tipo de modelos radica en la necesidad habitual de filtrar imágenes no aptas para todos los públicos en plataformas de contenido generado por usuarios, pipelines de moderación o conjuntos de datos de entrenamiento. Sin embargo, la ausencia total de documentación técnica y la práctica inexistencia de tracción comunitaria (14 descargas, 0 likes, repositorio de 0.0 GB) hacen imposible verificar sus capacidades reales.
 
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables documentados en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kishormainali/marqo-nsfw-384
+- Hugging Face: https://huggingface.co/kishormainali/marqo-nsfw-384
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

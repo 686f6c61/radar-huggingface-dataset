@@ -80,7 +80,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Qwen3.5-0.8B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.5-0.8B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Fork ROCmFPX (llama.cpp): https://github.com/charlie12345/ROCmFPX
 - Documentacion de la serie Qwen3.5: https://github.com/algtrd24/qwen3.5

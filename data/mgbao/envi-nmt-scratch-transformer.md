@@ -6,7 +6,7 @@ ENVI-NMT es un modelo de traduccion automatica neuronal ingles-vietnamita desarr
 
 Su relevancia no es la de un modelo de produccion, sino la de un artefacto de investigacion y docencia: permite inspeccionar una implementacion completa y minimalista de un transformer moderno (RMSNorm pre-norm, SwiGLU, RoPE restringido a la self-attention) escrita linea a linea, algo poco habitual en un ecosistema dominado por arquitecturas empaquetadas. El repositorio incluye checkpoints, tokenizer, configuraciones, curvas de perdida y scripts de reentrenamiento reproducible con semilla fija (seed 42).
 
-El modelo no es compatible con la libreria `transformers`: requiere clonar el codigo fuente del proyecto (`src/nmt/`) para reconstruir la arquitectura y cargar los pesos. Se publica bajo licencia MIT y solo soporta la direccion ingles a vietnamita. No consta ningun resultado de benchmark publicado, ni descargas, ni valoraciones en HuggingFace.
+El modelo no es compatible con la libreria `transformers`: requiere clonar el codigo fuente del proyecto (`src/nmt/`) para reconstruir la arquitectura y cargar los pesos. Se publica bajo licencia MIT y solo soporta la direccion ingles a vietnamita. No consta ningun resultado de benchmark publicado, ni descargas, ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Compatibilidad | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mgbao/envi-nmt-scratch-transformer | 47,96 M | No disponible | en, vi | MIT | Arquitectura propia, no soportada por `transformers` | HuggingFace, 0 descargas |
+| mgbao/envi-nmt-scratch-transformer | 47,96 M | No disponible | en, vi | MIT | Arquitectura propia, no soportada por `transformers` | Hugging Face, 0 descargas |
 | Helsinki-NLP/opus-mt-en-vi | No disponible en la informacion proporcionada | No disponible | en, vi | No disponible en la informacion proporcionada | Marian, soportado por `transformers` | No consultado |
 | VietAI/envit5-base | No disponible en la informacion proporcionada | No disponible | en, vi | No disponible en la informacion proporcionada | T5, soportado por `transformers` | No consultado |
 | facebook/nllb-200-distilled-600M | No disponible en la informacion proporcionada | No disponible | Multilingue (incluye en y vi) | No disponible en la informacion proporcionada | M2M-100/NLLB, soportado por `transformers` | No consultado |
@@ -83,17 +83,17 @@ Los modelos alternativos citados pertenecen a la misma categoria funcional (trad
 - Sesgos: no disponibles. No se documenta ningun analisis de sesgo de genero, dialectal ni cultural, un aspecto especialmente sensible en traduccion.
 - Riesgo de alucinacion: inherente a cualquier sistema de traduccion neuronal, con probabilidad elevada en un modelo de 48 M entrenado con pocos datos, especialmente ante terminos fuera de dominio, nombres propios y frases largas.
 - Longitud de contexto no documentada: se desconoce la ventana de entrada soportada; el ejemplo de la model card limita la decodificacion a 128 tokens, pero no la entrada, por lo que textos largos pueden degradar la calidad o provocar fallos.
-- Reproducibilidad dependiente del codigo: la licencia MIT cubre los pesos, pero la reconstruccion del modelo depende de un repositorio externo de GitHub que no forma parte del artefacto de HuggingFace.
+- Reproducibilidad dependiente del codigo: la licencia MIT cubre los pesos, pero la reconstruccion del modelo depende de un repositorio externo de GitHub que no forma parte del artefacto de Hugging Face.
 - Estado de adopcion nulo: 0 descargas y 0 valoraciones en el momento de la consulta, sin senales de validacion por parte de terceros.
 - Uso comercial: la licencia MIT lo permite tecnicamente, pero la ausencia de garantias y de evaluacion de calidad hace desaconsejable su uso en produccion sin una validacion exhaustiva previa.
 - Proyecto academico: la propia model card lo describe como un trabajo de asignatura, no como un modelo mantenido.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mgbao/envi-nmt-scratch-transformer
+- Modelo en Hugging Face: https://huggingface.co/mgbao/envi-nmt-scratch-transformer
 - Repositorio de codigo fuente: https://github.com/giabaomaidev/bku-project
-- Checkpoint mejor valorado: `checkpoints/iwslt_base_v1_seed42/tot_nhat.pt` dentro del repositorio de HuggingFace
-- Tokenizer: `artifacts/tokenizer/tokenizer.json` dentro del repositorio de HuggingFace
-- Configuracion base: `configs/base.yaml` dentro del repositorio de HuggingFace
-- Metricas de entrenamiento: `logs/<nombre de ejecucion>/metrics.csv` dentro del repositorio de HuggingFace
+- Checkpoint mejor valorado: `checkpoints/iwslt_base_v1_seed42/tot_nhat.pt` dentro del repositorio de Hugging Face
+- Tokenizer: `artifacts/tokenizer/tokenizer.json` dentro del repositorio de Hugging Face
+- Configuracion base: `configs/base.yaml` dentro del repositorio de Hugging Face
+- Metricas de entrenamiento: `logs/<nombre de ejecucion>/metrics.csv` dentro del repositorio de Hugging Face
 - Paper, blog o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relacionados con este modelo; los unicos resultados obtenidos eran articulos periodisticos sobre la evolucion del indice Nikkei en marzo de 2026, sin ninguna relacion con el modelo.

@@ -79,9 +79,9 @@ No se han publicado resultados de precisión (top-1/top-5) en la información di
 
 | Modelo | Parametros | Contexto/entrada | Latencia (224x224, referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fastforks/resnet` (resnet50) | no disponible en la card | 224x224 fijo | 0,99 ms (kernels, RTX 5060 Ti) | Código BSD-3-Clause; pesos sin declarar | HuggingFace (model card) + descarga desde pytorch.org |
+| `fastforks/resnet` (resnet50) | no disponible en la card | 224x224 fijo | 0,99 ms (kernels, RTX 5060 Ti) | Código BSD-3-Clause; pesos sin declarar | Hugging Face (model card) + descarga desde pytorch.org |
 | ResNet-50 original (torchvision) | ~25,6M (dato externo, no confirmado en la card) | 224x224 fijo | 4,74 ms fp32 / 5,84 ms fp16 (medido en la misma GPU) | BSD-3-Clause | torchvision / pytorch.org |
-| Otras CNN de clasificación (p. ej. EfficientNet, ConvNeXt) | no disponible | 224x224 o variable | no disponible | variable | HuggingFace / torchvision |
+| Otras CNN de clasificación (p. ej. EfficientNet, ConvNeXt) | no disponible | 224x224 o variable | no disponible | variable | Hugging Face / torchvision |
 
 La comparativa se limita al ecosistema ResNet porque la información proporcionada no incluye datos de modelos alternativos. No se dispone de métricas de precisión comparables en la documentación.
 
@@ -99,7 +99,7 @@ La comparativa se limita al ecosistema ResNet porque la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/resnet
+- Hugging Face: https://huggingface.co/fastforks/resnet
 - Repositorio del código: https://github.com/kleinicke/fastforks
 - Kernels: https://huggingface.co/fastforks/kernels
 - Código original (torchvision, commit fijado): https://github.com/pytorch/vision/tree/1f1a920d685d

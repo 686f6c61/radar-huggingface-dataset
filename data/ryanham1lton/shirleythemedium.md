@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShirleyTheMedium es un repositorio publicado en HuggingFace por el usuario Ryanham1lton. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo `license: cc-by-4.0` y no incluye ninguna descripcion, arquitectura, tamano o caso de uso declarado por el autor.
+ShirleyTheMedium es un repositorio publicado en Hugging Face por el usuario Ryanham1lton. La informacion disponible es extremadamente limitada: la model card unicamente contiene el campo `license: cc-by-4.0` y no incluye ninguna descripcion, arquitectura, tamano o caso de uso declarado por el autor.
 
 El repositorio ocupa 0,2 GB, se creo el 18 de septiembre de 2026 y en el momento de la consulta acumula 0 descargas y 0 "likes". El pipeline no esta declarado y no se especifican idiomas soportados.
 
@@ -26,7 +26,7 @@ Datos adicionales verificables del repositorio:
 | Parametro | Valor |
 |---|---|
 | Autor | Ryanham1lton |
-| ID en HuggingFace | Ryanham1lton/ShirleyTheMedium |
+| ID en Hugging Face | Ryanham1lton/ShirleyTheMedium |
 | Tamano del repositorio | 0,2 GB |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
@@ -54,7 +54,7 @@ No disponible. La model card no enumera ninguna capacidad y no hay documentacion
 
 No disponible. Al no existir informacion verificable sobre arquitectura, tamano, contexto, idiomas ni capacidades, no es posible proponer casos de uso concretos y realistas sin caer en especulacion. Cualquier escenario de aplicacion (atencion al cliente, generacion de codigo, analisis de documentos, etc.) careceria de base tecnica respaldada por la informacion proporcionada.
 
-Se recomienda contactar con el autor del repositorio o consultar el propio arbol de archivos en HuggingFace antes de considerar cualquier uso.
+Se recomienda contactar con el autor del repositorio o consultar el propio arbol de archivos en Hugging Face antes de considerar cualquier uso.
 
 ## Benchmarks y rendimiento
 
@@ -80,9 +80,9 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Repositorio sin traccion: 0 descargas y 0 "likes" en el momento de la consulta, lo que reduce la probabilidad de que existan validaciones externas.
 - La licencia cc-by-4.0 permite uso comercial y modificacion con atribucion, pero no se aclaran los derechos sobre los datos de entrenamiento ni posibles restricciones adicionales del autor.
 - Las busquedas web no arrojaron ninguna fuente independiente sobre el modelo; los resultados obtenidos eran irrelevantes (previsiones meteorologicas de Dinant, Belgica).
-- Posible inconsistencia temporal en las fechas del repositorio (creacion y actualizacion el 2026-09-18), que conviene verificar directamente en HuggingFace.
+- Posible inconsistencia temporal en las fechas del repositorio (creacion y actualizacion el 2026-09-18), que conviene verificar directamente en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/ShirleyTheMedium
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/ShirleyTheMedium
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

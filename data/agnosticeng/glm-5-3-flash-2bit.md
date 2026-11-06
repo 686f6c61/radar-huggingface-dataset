@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agnosticeng/GLM-5.3-Flash-2bit | 333.962.566.494 | no disponible | MLX safetensors (2 bits en expertos) | MIT | HuggingFace |
-| zai-org/GLM-5.3-Flash (base) | no disponible en la informacion | no disponible | no disponible | MIT | HuggingFace |
+| agnosticeng/GLM-5.3-Flash-2bit | 333.962.566.494 | no disponible | MLX safetensors (2 bits en expertos) | MIT | Hugging Face |
+| zai-org/GLM-5.3-Flash (base) | no disponible en la informacion | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan una comparación cuantitativa con otras alternativas de la misma categoría.
@@ -80,5 +80,5 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agnosticeng/GLM-5.3-Flash-2bit
+- Repositorio Hugging Face: https://huggingface.co/agnosticeng/GLM-5.3-Flash-2bit
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash

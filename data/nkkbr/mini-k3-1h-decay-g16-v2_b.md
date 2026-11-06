@@ -87,7 +87,7 @@ Diferencias clave: frente a los tres alternativas, Mini-K3-1H-decay-g16-v2_B es 
 - Sesgos: no se documenta la composicion del dataset ni los idiomas; los sesgos de las fuentes de preentrenamiento se heredan sin mitigacion conocida.
 - Limitacion de contexto: 8.192 tokens de entrenamiento. No hay evidencia de extrapolacion a contextos mayores, especialmente con MLA en modo NoPE.
 - Cobertura idiomatica desconocida: no se declaran idiomas soportados, aunque el vocabulario es de 163.840 entradas.
-- Licencia no disponible: no se especifica licencia en la ficha de HuggingFace. Esto impide determinar si el uso comercial esta permitido; en un entorno de produccion debe tratarse como no autorizado hasta que el autor lo aclare. Ademas, los datasets de origen conservan sus propias licencias y el repositorio no redistribuye su texto.
+- Licencia no disponible: no se especifica licencia en la ficha de Hugging Face. Esto impide determinar si el uso comercial esta permitido; en un entorno de produccion debe tratarse como no autorizado hasta que el autor lo aclare. Ademas, los datasets de origen conservan sus propias licencias y el repositorio no redistribuye su texto.
 - Checkpoint intermedio: corresponde a 1.000.079.360 de 16.000.000.000 tokens objetivo. El autor advierte de que las clasificaciones de arquitectura a esta escala y con longitud de entrenamiento de 8K necesitan confirmacion antes de extrapolarse al Kimi-K3 completo.
 - Estado del optimizador no publicado: limita reanudar el entrenamiento tal cual desde este checkpoint.
 - Despliegue no estandar: requiere codigo PyTorch propio; no hay soporte de motores de inferencia habituales ni ficheros GGUF, lo que anade coste de ingenieria a cualquier integracion en produccion.
@@ -95,7 +95,7 @@ Diferencias clave: frente a los tres alternativas, Mini-K3-1H-decay-g16-v2_B es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g16-v2_B
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g16-v2_B
 - Revision del checkpoint publicado: `checkpoint-tokens-001000079360` (los checkpoints numerados se publican como etiquetas Git inmutables; `main` apunta al mas reciente)
 - Etiqueta final prevista: `checkpoint-tokens-016000000000-final`
 - Archivos de referencia incluidos en el repositorio: `modeling_mini_k3.py`, `configuration_mini_k3.py`, `config.json`, `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md`, `initialize_model.py`, `smoke_test.py`, `model.safetensors`, manifiestos JSON de entrenamiento

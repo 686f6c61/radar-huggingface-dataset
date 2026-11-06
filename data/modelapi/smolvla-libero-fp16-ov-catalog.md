@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SmolVLA es un modelo ligero de tipo visión-lenguaje-acción (VLA) desarrollado por HuggingFace y convertido a formato OpenVINO por el equipo de modelapi dentro del catálogo Physical AI de Intel. Está diseñado específicamente para robótica: toma imágenes de una o varias cámaras, el estado del robot y una instrucción en lenguaje natural, y produce un fragmento de acciones (chunk) que el robot puede ejecutar como secuencia de movimientos en el mundo real o en entornos simulados como LIBERO.
+SmolVLA es un modelo ligero de tipo visión-lenguaje-acción (VLA) desarrollado por Hugging Face y convertido a formato OpenVINO por el equipo de modelapi dentro del catálogo Physical AI de Intel. Está diseñado específicamente para robótica: toma imágenes de una o varias cámaras, el estado del robot y una instrucción en lenguaje natural, y produce un fragmento de acciones (chunk) que el robot puede ejecutar como secuencia de movimientos en el mundo real o en entornos simulados como LIBERO.
 
 El modelo se basa en la arquitectura SmolVLA descrita en el artículo arXiv 2506.01844, orientada a permitir entrenamiento en una sola GPU y despliegue en dispositivos de borde. La versión aquí catalogada (`smolvla-libero-fp16-ov`) es una conversión a precisión fp16 con pesos en formato OpenVINO, lista para usar con el framework Physical AI de Intel. Su relevancia actual radica en que ofrece una alternativa de bajo coste computacional para tareas de manipulación robótica, un área donde los modelos VLA suelen ser pesados y difíciles de desplegar en hardware limitado.
 
-La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el disclaimer de Intel restringe su uso a aplicaciones que no vulneren derechos humanos. El repositorio en HuggingFace actúa como catálogo y la descarga de pesos se gestiona a través del propio framework Physical AI.
+La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el disclaimer de Intel restringe su uso a aplicaciones que no vulneren derechos humanos. El repositorio en Hugging Face actúa como catálogo y la descarga de pesos se gestiona a través del propio framework Physical AI.
 
 ## Especificaciones tecnicas
 
@@ -68,11 +68,11 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 - Dependencia del entorno: el modelo esta entrenado para LIBERO, por lo que su transferencia a entornos reales puede requerir fine-tuning adicional.
 - Restricciones de licencia: aunque la licencia es Apache 2.0, el disclaimer de Intel restringe el uso a aplicaciones que no causen o contribuyan a impactos adversos en derechos humanos, lo que podria limitar ciertos usos comerciales.
 - Formato propietario: los pesos estan en formato OpenVINO, lo que ata el despliegue al ecosistema de Intel y puede dificultar su uso con otros frameworks de inferencia.
-- Ausencia de pesos en el repositorio: el tamano del repo es 0.0 GB, lo que indica que los pesos no estan alojados directamente en HuggingFace, sino que se descargan a traves del framework Physical AI, lo que anade un paso de instalacion y dependencia de la disponibilidad de ese servicio.
+- Ausencia de pesos en el repositorio: el tamano del repo es 0.0 GB, lo que indica que los pesos no estan alojados directamente en Hugging Face, sino que se descargan a traves del framework Physical AI, lo que anade un paso de instalacion y dependencia de la disponibilidad de ese servicio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/modelapi/smolvla-libero-fp16-ov-catalog
+- Repositorio Hugging Face: https://huggingface.co/modelapi/smolvla-libero-fp16-ov-catalog
 - Articulo original SmolVLA: https://huggingface.co/papers/2506.01844
 - Codigo del framework Physical AI: https://github.com/openvinotoolkit/physicalai
 - Physical AI Studio (fine-tuning): https://github.com/open-edge-platform/physical-ai-studio

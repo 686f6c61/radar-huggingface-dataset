@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`unit2-taxi` es un agente de aprendizaje por refuerzo tabular basado en Q-learning, publicado por el usuario poplolioi11 en HuggingFace. No es un modelo de lenguaje ni una red neuronal profunda: se trata de una tabla Q almacenada como array de NumPy que resuelve el entorno clásico `Taxi-v3` de Gymnasium. El autor lo presenta como un ejercicio de la unidad 2 de un curso de deep reinforcement learning, entrenado desde cero sin políticas preentrenadas ni controladores escritos a mano.
+`unit2-taxi` es un agente de aprendizaje por refuerzo tabular basado en Q-learning, publicado por el usuario poplolioi11 en Hugging Face. No es un modelo de lenguaje ni una red neuronal profunda: se trata de una tabla Q almacenada como array de NumPy que resuelve el entorno clásico `Taxi-v3` de Gymnasium. El autor lo presenta como un ejercicio de la unidad 2 de un curso de deep reinforcement learning, entrenado desde cero sin políticas preentrenadas ni controladores escritos a mano.
 
 El modelo resuelve el problema de navegación y recogida de pasajeros en una cuadrícula de 5x5 con cuatro ubicaciones de recogida y entrega, un espacio de observaciones discreto de 500 estados y 6 acciones posibles. La política resultante selecciona la acción con mayor valor Q para el estado observado mediante `argmax` sobre la fila correspondiente del array.
 
-Su relevancia es fundamentalmente educativa y de referencia: sirve como línea base reproducible para comparar algoritmos de RL tabular, para verificar pipelines de evaluación en `Taxi-v3` y como ejemplo mínimo de empaquetado de pesos de RL en HuggingFace. No tiene aplicación en producción como modelo generativo ni como política para entornos continuos o de alta dimensionalidad.
+Su relevancia es fundamentalmente educativa y de referencia: sirve como línea base reproducible para comparar algoritmos de RL tabular, para verificar pipelines de evaluación en `Taxi-v3` y como ejemplo mínimo de empaquetado de pesos de RL en Hugging Face. No tiene aplicación en producción como modelo generativo ni como política para entornos continuos o de alta dimensionalidad.
 
 ## Especificaciones técnicas
 
@@ -41,16 +41,16 @@ La evaluación se realizó sobre 1000 episodios de holdout separados, con media 
 
 ## Casos de uso
 
-- Docencia y cursos de RL: el modelo sirve como ejemplo mínimo y reproducible de Q-learning tabular empaquetado en HuggingFace, útil para que estudiantes comparen su propia implementación contra una referencia con métricas declaradas.
+- Docencia y cursos de RL: el modelo sirve como ejemplo mínimo y reproducible de Q-learning tabular empaquetado en Hugging Face, útil para que estudiantes comparen su propia implementación contra una referencia con métricas declaradas.
 - Verificación de pipelines de evaluación: al publicar media y desviación estándar sobre 1000 episodios de holdout, permite comprobar que un harness de evaluación de `Taxi-v3` reproduce los mismos números antes de usarlo con algoritmos más complejos.
 - Línea base para comparación de algoritmos: cualquier implementación de SARSA, Double Q-learning o DQN sobre `Taxi-v3` puede contrastarse contra la media de 7,861 para medir mejoras reales.
 - Test de integración en frameworks de RL: sirve para validar la carga de pesos en formato NumPy y la interfaz de política `argmax` en pipelines propios antes de escalar a modelos mayores.
 - Reproducibilidad de experimentos: el replay del primer episodio de holdout (incluyendo fallos) permite auditar que la política publicada se comporta como se declara.
-- Referencia de empaquetado: como ejemplo de cómo publicar pesos de RL con licencia MIT, model-index y métricas verificables en HuggingFace, útil para equipos que quieran estandarizar sus propios artefactos.
+- Referencia de empaquetado: como ejemplo de cómo publicar pesos de RL con licencia MIT, model-index y métricas verificables en Hugging Face, útil para equipos que quieran estandarizar sus propios artefactos.
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el model-index (no verificados por HuggingFace):
+Datos declarados por el autor en el model-index (no verificados por Hugging Face):
 
 | Entorno | Métrica | Valor | Episodios |
 |---|---|---|---|
@@ -71,7 +71,7 @@ No se han publicado resultados adicionales de benchmarks en la información disp
 
 | Modelo | Tipo | Entorno | Media de recompensa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unit2-taxi (este) | Q-learning tabular | Taxi-v3 | 7,861 ± 2,493 | MIT | HuggingFace |
+| unit2-taxi (este) | Q-learning tabular | Taxi-v3 | 7,861 ± 2,493 | MIT | Hugging Face |
 | Política aleatoria | Baseline | Taxi-v3 | no disponible en la información | no aplica | trivial de implementar |
 | Q-learning tabular estándar | Q-learning tabular | Taxi-v3 | no disponible en la información | no aplica | implementación propia |
 
@@ -90,5 +90,5 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/poplolioi11/deep-rl-unit2-taxi-20261105
+- Hugging Face: https://huggingface.co/poplolioi11/deep-rl-unit2-taxi-20261105
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

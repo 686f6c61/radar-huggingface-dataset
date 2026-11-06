@@ -89,7 +89,7 @@ No disponible. No se han identificado modelos comparables documentados para este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/furkandoganson/mae-checkpoint
+- Repositorio en Hugging Face: https://huggingface.co/furkandoganson/mae-checkpoint
 - Perfil del autor: https://huggingface.co/furkandoganson
 - Repositorio de referencia con estructura similar: https://huggingface.co/john-rivera/mae-checkpoint
 - Masked Autoencoders As Spatiotemporal Learners (proyecto homónimo, sin relación confirmada): https://github.com/facebookresearch/mae_st

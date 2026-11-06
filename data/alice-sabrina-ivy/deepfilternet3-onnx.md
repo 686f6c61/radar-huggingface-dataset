@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto/ventana | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepFilterNet 3 (este espejo) | Mejora de voz | ONNX | MIT OR Apache-2.0 | no aplica | HuggingFace (espejo) y GitHub upstream |
+| DeepFilterNet 3 (este espejo) | Mejora de voz | ONNX | MIT OR Apache-2.0 | no aplica | Hugging Face (espejo) y GitHub upstream |
 | DeepFilterNet (upstream) | Mejora de voz | Pesos originales y export ONNX | MIT OR Apache-2.0 | no aplica | GitHub Rikorose/DeepFilterNet |
 | Otros modelos de supresión de ruido | Mejora de voz | no disponible | no disponible | no aplica | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Alice-Sabrina-Ivy/deepfilternet3-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Alice-Sabrina-Ivy/deepfilternet3-onnx
 - Repositorio upstream: https://github.com/Rikorose/DeepFilterNet
 - Commit upstream: https://github.com/Rikorose/DeepFilterNet/tree/d375b2d8309e0935d165700c91da9de862a99c31
 - Aplicación Syrinx: https://github.com/Alice-Sabrina-Ivy/Syrinx

@@ -68,6 +68,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos. El modelo
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-high.h075.opsd-self-patch-tb1reg-quarter](https://huggingface.co/agentic-ptb/sol-high.h075.opsd-self-patch-tb1reg-quarter)
+- [Hugging Face - agentic-ptb/sol-high.h075.opsd-self-patch-tb1reg-quarter](https://huggingface.co/agentic-ptb/sol-high.h075.opsd-self-patch-tb1reg-quarter)
 - [Paper OPSD - Self-Distilled Agentic Reinforcement Learning (arXiv)](https://arxiv.org/abs/2605.15155)
 - [Repositorio GitHub de OPSD](https://github.com/siyan-zhao/OPSD)

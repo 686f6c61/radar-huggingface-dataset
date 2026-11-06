@@ -25,7 +25,7 @@ Su relevancia es práctica más que investigadora: demuestra el patrón de distr
 | Herramienta de conversión | `ct2-transformers-converter` con `--quantization int8 --copy_files source.spm target.spm`, CTranslate2 4.8.3 |
 | Tamaño del repositorio | 0,5 GB (ambos modelos incluidos) |
 | Runtime de inferencia | CTranslate2 (Python/C++, CPU int8; soporte CUDA opcional) |
-| Pipeline declarado en HuggingFace | translation |
+| Pipeline declarado en Hugging Face | translation |
 
 ## Arquitectura y entrenamiento
 
@@ -76,9 +76,9 @@ Solo se dispone de información sobre los modelos de origen citados en la propia
 
 | Modelo | Relación | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| denislara/tradutor-modelos | Conversión int8 a CTranslate2 para app móvil | pt ↔ en | CTranslate2 int8 | CC-BY 4.0 | HuggingFace, 0 descargas, 1 like |
-| Helsinki-NLP/opus-mt-tc-bible-big-itc-deu_eng_fra_por_spa | Modelo original de la dirección pt → en | Multilingüe (familia itc/deu/eng/fra/por/spa) | safetensors / PyTorch | CC-BY 4.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-tc-big-en-pt | Modelo original de la dirección en → pt-BR | en → pt | safetensors / PyTorch | CC-BY 4.0 | HuggingFace |
+| denislara/tradutor-modelos | Conversión int8 a CTranslate2 para app móvil | pt ↔ en | CTranslate2 int8 | CC-BY 4.0 | Hugging Face, 0 descargas, 1 like |
+| Helsinki-NLP/opus-mt-tc-bible-big-itc-deu_eng_fra_por_spa | Modelo original de la dirección pt → en | Multilingüe (familia itc/deu/eng/fra/por/spa) | safetensors / PyTorch | CC-BY 4.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-tc-big-en-pt | Modelo original de la dirección en → pt-BR | en → pt | safetensors / PyTorch | CC-BY 4.0 | Hugging Face |
 | Otras alternativas de NMT (NLLB-200, M2M-100, MADLAD-400, Argos Translate) | No comparadas en la información disponible | no disponible | no disponible | no disponible | no disponible |
 
 Diferencias relevantes frente a los originales: la conversión a CTranslate2 int8 reduce el tamaño y acelera la inferencia en CPU, pero impide su uso directo con `transformers` y elimina la posibilidad de reentrenamiento o ajuste fino sobre estos artefactos concretos.
@@ -94,11 +94,11 @@ Diferencias relevantes frente a los originales: la conversión a CTranslate2 int
 - Restricciones de licencia: CC-BY 4.0 permite uso comercial, pero exige atribución a los autores originales (Universidad de Helsinki, grupo Language Technology Research Group) y a la conversión. No hay cláusula de compartir igual, pero la atribución debe mantenerse en el producto o en la documentación derivada.
 - Repositorio con muy poca tracción: 0 descargas y 1 like en el momento de la consulta, e historial público limitado; conviene fijar el commit concreto y verificar los SHA-256, tal como hace la app original, antes de integrarlo en producción.
 - Los artefactos no se pueden cargar con `transformers`, vLLM, TGI, Ollama o llama.cpp; el ecosistema de despliegue es exclusivamente CTranslate2.
-- Las fechas de creación y actualización del repositorio registradas en HuggingFace son posteriores a la fecha de esta ficha; conviene comprobar el estado real del repositorio antes de depender de él.
+- Las fechas de creación y actualización del repositorio registradas en Hugging Face son posteriores a la fecha de esta ficha; conviene comprobar el estado real del repositorio antes de depender de él.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/denislara/tradutor-modelos
+- Repositorio en Hugging Face: https://huggingface.co/denislara/tradutor-modelos
 - Modelo original pt → en: https://huggingface.co/Helsinki-NLP/opus-mt-tc-bible-big-itc-deu_eng_fra_por_spa
 - Modelo original en → pt: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-pt
 - Licencia CC-BY 4.0: https://creativecommons.org/licenses/by/4.0/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPROUT-Qwen-3.8-27B es un modelo de lenguaje publicado por RISE-X en HuggingFace, identificado internamente con la arquitectura `qwen3_5` y un total de 27.781.427.952 parámetros (aproximadamente 27,8 mil millones) según los pesos en formato safetensors. El nombre sugiere un derivado o fine-tuning sobre la familia Qwen 3.8, aunque la model card publicada no incluye ninguna descripción, datos de entrenamiento ni detalles técnicos más allá de la licencia Apache 2.0.
+SPROUT-Qwen-3.8-27B es un modelo de lenguaje publicado por RISE-X en Hugging Face, identificado internamente con la arquitectura `qwen3_5` y un total de 27.781.427.952 parámetros (aproximadamente 27,8 mil millones) según los pesos en formato safetensors. El nombre sugiere un derivado o fine-tuning sobre la familia Qwen 3.8, aunque la model card publicada no incluye ninguna descripción, datos de entrenamiento ni detalles técnicos más allá de la licencia Apache 2.0.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y ocupa 55,6 GB en el repositorio, un tamaño coherente con pesos en precisión BF16/FP16 para ~27,8B de parámetros. No se han publicado resultados de benchmarks, idiomas soportados, longitud de contexto ni detalles sobre el proceso de entrenamiento en la información disponible.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| SPROUT-Qwen-3.8-27B | ~27,8B | no disponible | Apache 2.0 | no | HuggingFace (0 descargas) |
-| Qwen2.5-32B | ~32,5B | 128K (según versión) | Apache 2.0 (mayoría de variantes) | Sí | HuggingFace, ampliamente desplegado |
-| Gemma 2 27B | ~27B | 8K | Gemma license | Sí | HuggingFace |
-| Mistral Small 24B | ~24B | 32K-128K | Apache 2.0 | Sí | HuggingFace |
+| SPROUT-Qwen-3.8-27B | ~27,8B | no disponible | Apache 2.0 | no | Hugging Face (0 descargas) |
+| Qwen2.5-32B | ~32,5B | 128K (según versión) | Apache 2.0 (mayoría de variantes) | Sí | Hugging Face, ampliamente desplegado |
+| Gemma 2 27B | ~27B | 8K | Gemma license | Sí | Hugging Face |
+| Mistral Small 24B | ~24B | 32K-128K | Apache 2.0 | Sí | Hugging Face |
 
 La comparación es aproximada: no se dispone de datos de contexto ni benchmarks del modelo evaluado, por lo que la equiparación se basa únicamente en el tamaño de parámetros y la licencia.
 
@@ -83,4 +83,4 @@ La comparación es aproximada: no se dispone de datos de contexto ni benchmarks 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RISE-X/SPROUT-Qwen-3.8-27B
+- Hugging Face: https://huggingface.co/RISE-X/SPROUT-Qwen-3.8-27B

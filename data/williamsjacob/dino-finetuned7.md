@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Williamsjacob/dino-finetuned7` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada Dino, orientada a tareas multitarea. No se trata de un modelo preentrenado listo para producción: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado con benchmarks. El repositorio se publica como material de revisión de código y experimentos controlados de pequeño tamaño.
+`Williamsjacob/dino-finetuned7` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada Dino, orientada a tareas multitarea. No se trata de un modelo preentrenado listo para producción: la propia model card indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado con benchmarks. El repositorio se publica como material de revisión de código y experimentos controlados de pequeño tamaño.
 
 El modelo declara una escala "huge", atención de ventana deslizante (sliding window), fusión bilineal, activación approx gelu y normalización InstanceNorm. El recuento real de parámetros registrado en los metadatos de safetensors es de 33.088 parámetros, una cifra extremadamente reducida que confirma el carácter experimental y no productivo del artefacto. El tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Williamsjacob/dino-finetuned7 | 33.088 | no disponible | ninguno declarado | BSD-3-Clause | HuggingFace, 0 descargas |
+| Williamsjacob/dino-finetuned7 | 33.088 | no disponible | ninguno declarado | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,5 +92,5 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Williamsjacob/dino-finetuned7
+- Hugging Face: https://huggingface.co/Williamsjacob/dino-finetuned7
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos no guardan relación con este modelo.

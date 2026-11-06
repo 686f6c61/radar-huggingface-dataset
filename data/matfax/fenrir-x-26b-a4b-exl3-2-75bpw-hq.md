@@ -28,7 +28,7 @@ La relevancia de esta publicacion es practica: permite ejecutar un modelo de arq
 
 ## Arquitectura y entrenamiento
 
-Este repositorio no entrena nada: es una cuantizacion del modelo Vortex5/Fenrir-X-26B-A4B, que a su vez es una fusion de pesos. El modelo raiz es google/gemma-4-26B-A4B-it, de arquitectura transformer con mezcla de expertos (MoE), donde la nomenclatura "A4B" indica aproximadamente 4.000 millones de parametros activos por token sobre un total de ~26.000 millones. El pipeline declarado en HuggingFace es image-text-to-text, lo que sugiere capacidad de entrada multimodal de imagen, si bien la model card no detalla el tratamiento de vision ni el proyector utilizado.
+Este repositorio no entrena nada: es una cuantizacion del modelo Vortex5/Fenrir-X-26B-A4B, que a su vez es una fusion de pesos. El modelo raiz es google/gemma-4-26B-A4B-it, de arquitectura transformer con mezcla de expertos (MoE), donde la nomenclatura "A4B" indica aproximadamente 4.000 millones de parametros activos por token sobre un total de ~26.000 millones. El pipeline declarado en Hugging Face es image-text-to-text, lo que sugiere capacidad de entrada multimodal de imagen, si bien la model card no detalla el tratamiento de vision ni el proyector utilizado.
 
 La fusion se realizo con el metodo declarado "bsc" sobre cinco modelos, aplicando pesos especificos por tipo de capa: las proyecciones de atencion (q_proj, k_proj, v_proj, o_proj) y las capas MLP densas (gate_proj, up_proj, down_proj) reciben pesos distintos de los de los expertos (experts.gate_up_proj, experts.down_proj). Por ejemplo, el componente Animus-V14.1-FFT solo aporta a las capas de expertos (pesos 0,27-0,40 en gate_up_proj y down_proj), mientras que la distill de Claude Opus aporta a todas las proyecciones. El tokenizer se hereda del modelo base y el chat template se toma de forma automatica.
 
@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matfax/Fenrir-X-26B-A4B-exl3-2.75bpw-hq | 26B totales / ~4B activos (denominacion) | no disponible | EXL3 2,75 bpw | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Vortex5/Fenrir-X-26B-A4B (original) | 26B totales / ~4B activos | no disponible | bfloat16 | no disponible | HuggingFace |
-| google/gemma-4-26B-A4B-it | 26B totales / ~4B activos | no disponible | bfloat16 | no disponible | HuggingFace (modelo base raiz) |
-| Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 | 26B totales / ~4B activos | no disponible | no disponible | no disponible | HuggingFace |
-| TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2 | 26B totales / ~4B activos | no disponible | no disponible | no disponible | HuggingFace |
+| matfax/Fenrir-X-26B-A4B-exl3-2.75bpw-hq | 26B totales / ~4B activos (denominacion) | no disponible | EXL3 2,75 bpw | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Vortex5/Fenrir-X-26B-A4B (original) | 26B totales / ~4B activos | no disponible | bfloat16 | no disponible | Hugging Face |
+| google/gemma-4-26B-A4B-it | 26B totales / ~4B activos | no disponible | bfloat16 | no disponible | Hugging Face (modelo base raiz) |
+| Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 | 26B totales / ~4B activos | no disponible | no disponible | no disponible | Hugging Face |
+| TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2 | 26B totales / ~4B activos | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes, por lo que la comparativa se limita a parametros, formato y licencia.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matfax/Fenrir-X-26B-A4B-exl3-2.75bpw-hq
+- Repositorio en Hugging Face: https://huggingface.co/matfax/Fenrir-X-26B-A4B-exl3-2.75bpw-hq
 - Modelo base: https://huggingface.co/Vortex5/Fenrir-X-26B-A4B
 - Modelo raiz: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Distill de Claude Opus: https://huggingface.co/TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2
@@ -107,4 +107,4 @@ No se dispone de datos de rendimiento comparado entre estas variantes, por lo qu
 - Dataset de ficcion: https://huggingface.co/electroglyph/gemma4-26b-fiction-bf16
 - Animus V14.1 FFT: https://huggingface.co/Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos del repositorio de Hugging Face.

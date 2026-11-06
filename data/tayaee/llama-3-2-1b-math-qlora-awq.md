@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tayaee/Llama-3.2-1B-math-qlora-awq` es un ajuste fino del modelo Llama 3.2 de 1B de Meta, orientado a tareas matematicas y publicado en HuggingFace por el usuario tayaee. El nombre del repositorio indica la receta empleada: QLoRA (ajuste fino con cuantizacion de 4 bits durante el entrenamiento) sobre el modelo base, seguido de una cuantizacion AWQ para inferencia, empaquetada en el formato `compressed-tensors` y distribuida en safetensors.
+`tayaee/Llama-3.2-1B-math-qlora-awq` es un ajuste fino del modelo Llama 3.2 de 1B de Meta, orientado a tareas matematicas y publicado en Hugging Face por el usuario tayaee. El nombre del repositorio indica la receta empleada: QLoRA (ajuste fino con cuantizacion de 4 bits durante el entrenamiento) sobre el modelo base, seguido de una cuantizacion AWQ para inferencia, empaquetada en el formato `compressed-tensors` y distribuida en safetensors.
 
 Se trata de un modelo denso de aproximadamente 1.500 millones de parametros segun los metadatos de safetensors, con un tamano de repositorio de 1,6 GB, coherente con pesos cuantizados a 4 bits. Es relevante por su perfil de despliegue: al caber en GPU de consumo y en CPU, permite experimentar con razonamiento matematico en entornos con recursos limitados sin depender de APIs externas.
 
@@ -68,10 +68,10 @@ El repositorio no incluye tablas de MMLU, GSM8K, MATH, HumanEval ni ninguna otra
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tayaee/Llama-3.2-1B-math-qlora-awq | 1,498 M (safetensors) | no disponible (base: hasta 128k) | Matematicas, QLoRA + AWQ 4 bits | no declarada en el repo | HuggingFace, 10 descargas |
-| meta-llama/Llama-3.2-1B-Instruct | 1.235 M | 128.000 tokens | Proposito general, instrucciones | Llama 3.2 Community License | HuggingFace, ampliamente distribuido |
-| Qwen2.5-Math-1.5B-Instruct | ~1.500 M | 4.096 tokens | Matematicas especializado | Apache 2.0 | HuggingFace, con evaluaciones publicadas |
-| DeepSeek-R1-Distill-Qwen-1.5B | ~1.500 M | 32.768 tokens (segun configuracion) | Razonamiento matematico por destilacion | MIT (modelo derivado) | HuggingFace, con evaluaciones publicadas |
+| tayaee/Llama-3.2-1B-math-qlora-awq | 1,498 M (safetensors) | no disponible (base: hasta 128k) | Matematicas, QLoRA + AWQ 4 bits | no declarada en el repo | Hugging Face, 10 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | 1.235 M | 128.000 tokens | Proposito general, instrucciones | Llama 3.2 Community License | Hugging Face, ampliamente distribuido |
+| Qwen2.5-Math-1.5B-Instruct | ~1.500 M | 4.096 tokens | Matematicas especializado | Apache 2.0 | Hugging Face, con evaluaciones publicadas |
+| DeepSeek-R1-Distill-Qwen-1.5B | ~1.500 M | 32.768 tokens (segun configuracion) | Razonamiento matematico por destilacion | MIT (modelo derivado) | Hugging Face, con evaluaciones publicadas |
 
 No se dispone de resultados de benchmarks de este modelo que permitan una comparacion cuantitativa con las alternativas citadas.
 
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks de este modelo que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-qlora-awq
+- Modelo en Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-qlora-awq
 - Modelo base Llama 3.2 1B (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Modelo base Llama 3.2 1B Instruct (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2 Community: https://www.llama.com/llama3_2/license/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vasilyevtij/matching-efficient` es un repositorio de HuggingFace que contiene una implementacion propia y minimalista de una arquitectura Perceiver orientada a tareas de matching (emparejamiento o correspondencia entre entradas). Lo publica el usuario vasilyevtij y su relevancia no es la de un modelo entrenado, sino la de un esqueleto reproducible: incluye el codigo de inferencia, la configuracion de arquitectura, la receta de experimento por defecto y un checkpoint de inicializacion valido para pruebas de humo.
+`vasilyevtij/matching-efficient` es un repositorio de Hugging Face que contiene una implementacion propia y minimalista de una arquitectura Perceiver orientada a tareas de matching (emparejamiento o correspondencia entre entradas). Lo publica el usuario vasilyevtij y su relevancia no es la de un modelo entrenado, sino la de un esqueleto reproducible: incluye el codigo de inferencia, la configuracion de arquitectura, la receta de experimento por defecto y un checkpoint de inicializacion valido para pruebas de humo.
 
 El peso distribuido suma 16.576 parametros segun los metadatos de safetensors, lo que lo situa en el rango de juguete (decenas de kilobytes en fp32). La model card es explicita: el checkpoint no ha sido entrenado ni auditado, no se reclama ninguna puntuacion de benchmark y la variante "large" que aparece en la configuracion es un punto de partida reproducible, no una release de modelo.
 
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vasilyevtij/matching-efficient | 16.576 | no disponible | sin benchmark publicado (checkpoint sin entrenar) | apache-2.0 | HuggingFace |
+| vasilyevtij/matching-efficient | 16.576 | no disponible | sin benchmark publicado (checkpoint sin entrenar) | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,11 +79,11 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, ya que el modelo no es un modelo de lenguaje entrenado; el riesgo equivalente es interpretar sus salidas aleatorias como predicciones validas.
 - Idiomas y contexto maximo: no disponibles; no hay informacion que permita afirmar soporte de ninguna lengua ni longitud de entrada.
 - Licencia apache-2.0: permite uso comercial del codigo y de los pesos, pero el autor advierte que los terminos de los datos de origen deben revisarse por separado si se usa el repositorio con datasets externos.
-- Al ser una implementacion personalizada, no es cargable con `AutoModel` ni con las APIs genericas de HuggingFace sin escribir un adaptador explicito.
+- Al ser una implementacion personalizada, no es cargable con `AutoModel` ni con las APIs genericas de Hugging Face sin escribir un adaptador explicito.
 - Cualquier resultado futuro obtenido a partir de un checkpoint entrenado debe documentarse por separado de los valores por defecto que se distribuyen aqui; mezclarlos invalidaria la comparacion.
 - Repositorio sin adopcion: cero descargas y cero likes, sin mantenimiento documentado ni issues de referencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vasilyevtij/matching-efficient
+- Hugging Face: https://huggingface.co/vasilyevtij/matching-efficient
 - Paper, blog o repositorio adicional: no disponible. Los resultados de la busqueda web consultada no contienen informacion relevante sobre el modelo (unicamente paginas de Google Ads sin relacion con el artefacto).

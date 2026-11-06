@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StillDeadcode/qwen3.8-27b-fp8 es un contenedor de pesos publicado en HuggingFace que empaqueta el checkpoint multimodal Qwen/Qwen3.8-27B-FP8 junto con el drafter de decodificacion especulativa z-lab/Qwen3.8-27B-DFlash2 en un unico fichero `.rad` (29,43 GiB) para el motor de inferencia radiance sobre AMD ROCm y arquitectura RDNA4. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribucion optimizada para una pila de hardware concreta: GPU AMD Radeon AI PRO R9700 con gfx1201. El autor del repositorio es StillDeadcode; los pesos originales proceden de Qwen y el especulador de z-lab.
+StillDeadcode/qwen3.8-27b-fp8 es un contenedor de pesos publicado en Hugging Face que empaqueta el checkpoint multimodal Qwen/Qwen3.8-27B-FP8 junto con el drafter de decodificacion especulativa z-lab/Qwen3.8-27B-DFlash2 en un unico fichero `.rad` (29,43 GiB) para el motor de inferencia radiance sobre AMD ROCm y arquitectura RDNA4. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribucion optimizada para una pila de hardware concreta: GPU AMD Radeon AI PRO R9700 con gfx1201. El autor del repositorio es StillDeadcode; los pesos originales proceden de Qwen y el especulador de z-lab.
 
 El interes practico del paquete es doble. Por un lado, ofrece un modelo de 27B con torre de vision en FP8 (E4M3 con escala por bloque de 128x128) y una ventana de contexto declarada de 262.144 tokens en entrenamiento y 200.000 probados. Por otro, integra la decodificacion especulativa DFlash2 basada en difusion por bloques, con su cabeza de vocabulario cuantizada a 2 bits, para reducir la latencia de generacion sin cambiar el resultado del modelo principal.
 
@@ -91,7 +91,7 @@ Alternativas de la misma categoria (modelos multimodales de ~27B con licencia pe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/StillDeadcode/qwen3.8-27b-fp8
+- Repositorio Hugging Face: https://huggingface.co/StillDeadcode/qwen3.8-27b-fp8
 - Modelo base (pesos principales): https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Modelo base del drafter especulativo: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el motor radiance; los unicos enlaces verificables son los anteriores.

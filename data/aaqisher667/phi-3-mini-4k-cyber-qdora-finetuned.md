@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Aaqisher667/phi-3-mini-4k-cyber-qdora-finetuned` es un adaptador de ajuste fino (fine-tuning) publicado en HuggingFace por el usuario Aaqisher667, construido sobre el modelo base `unsloth/phi-3-mini-4k-instruct-bnb-4bit`, que a su vez es una version cuantizada a 4 bits del Phi-3-mini-4k-instruct de Microsoft. Se trata, por tanto, de un adaptador PEFT (no de un modelo completo con pesos propios): su uso requiere cargar el modelo base y aplicar los pesos del adaptador encima. El nombre del repositorio sugiere un ajuste orientado al dominio de ciberseguridad ("cyber") mediante la tecnica QDoRA (variante cuantizada de DoRA sobre LoRA).
+El modelo `Aaqisher667/phi-3-mini-4k-cyber-qdora-finetuned` es un adaptador de ajuste fino (fine-tuning) publicado en Hugging Face por el usuario Aaqisher667, construido sobre el modelo base `unsloth/phi-3-mini-4k-instruct-bnb-4bit`, que a su vez es una version cuantizada a 4 bits del Phi-3-mini-4k-instruct de Microsoft. Se trata, por tanto, de un adaptador PEFT (no de un modelo completo con pesos propios): su uso requiere cargar el modelo base y aplicar los pesos del adaptador encima. El nombre del repositorio sugiere un ajuste orientado al dominio de ciberseguridad ("cyber") mediante la tecnica QDoRA (variante cuantizada de DoRA sobre LoRA).
 
-La relevancia de esta ficha es limitada y conviene ser explicito al respecto: la model card del autor es la plantilla por defecto de HuggingFace, sin ninguna seccion completada. No se documentan datos de entrenamiento, hiperparametros, dataset, idiomas, licencia ni evaluacion. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y la herramienta de busqueda web no ha devuelto ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a consultas no relacionadas). Por tanto, esta ficha recoge lo que es verificable en los metadatos y marca explicitamente como "no disponible" todo lo demas.
+La relevancia de esta ficha es limitada y conviene ser explicito al respecto: la model card del autor es la plantilla por defecto de Hugging Face, sin ninguna seccion completada. No se documentan datos de entrenamiento, hiperparametros, dataset, idiomas, licencia ni evaluacion. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y la herramienta de busqueda web no ha devuelto ningun resultado relacionado con el modelo (los resultados obtenidos corresponden a consultas no relacionadas). Por tanto, esta ficha recoge lo que es verificable en los metadatos y marca explicitamente como "no disponible" todo lo demas.
 
 El interes tecnico, si lo hay, esta en el procedimiento: es un ejemplo del flujo Unsloth + TRL + PEFT para ajustar un modelo pequeno (familia Phi-3-mini) en una unica GPU de consumo, aplicando QDoRA sobre una base ya cuantizada a 4 bits. Como artefacto de produccion, en cambio, carece de la documentacion minima exigible.
 
@@ -31,7 +31,7 @@ La informacion disponible no describe la arquitectura del ajuste mas alla de lo 
 
 No hay ningun dato sobre el dataset de entrenamiento: se desconoce el numero de tokens, la composicion del corpus (el sufijo "cyber" del nombre sugiere contenido de ciberseguridad, pero no se aporta ninguna evidencia), el numero de ejemplos, la longitud de secuencia, la tasa de aprendizaje, el rango del adaptador, los modulos objetivo ni si se aplico RLHF, DPO u otra etapa posterior al SFT. Tampoco se documentan innovaciones tecnicas propias: el unico elemento diferencial es el uso de Unsloth para acelerar el ajuste en memoria reducida.
 
-Un detalle relevante para la trazabilidad: la fecha de creacion registrada en HuggingFace es 2026-09-19 y la de actualizacion 2026-09-19, posteriores a la fecha habitual de publicacion de la familia Phi-3. Esto, junto con la ausencia total de documentacion, sugiere un experimento personal o un artefacto de prueba mas que un modelo mantenido.
+Un detalle relevante para la trazabilidad: la fecha de creacion registrada en Hugging Face es 2026-09-19 y la de actualizacion 2026-09-19, posteriores a la fecha habitual de publicacion de la familia Phi-3. Esto, junto con la ausencia total de documentacion, sugiere un experimento personal o un artefacto de prueba mas que un modelo mantenido.
 
 ## Capacidades
 
@@ -92,7 +92,7 @@ En la practica, este adaptador no compite en igualdad de condiciones con los mod
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, sin ninguna seccion completada. No hay informacion sobre datos, metodos ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, sin ninguna seccion completada. No hay informacion sobre datos, metodos ni evaluacion.
 - Licencia no declarada: no se especifica licencia para los pesos del adaptador. Esto impide determinar si el uso comercial esta permitido; en la practica, tratar el modelo como no apto para produccion hasta que el autor aclare la licencia.
 - Riesgo de alucinacion: es un modelo de 3.8B, con una tasa de error factual inherentemente mayor que la de modelos grandes. En un dominio como ciberseguridad, una recomendacion de remediacion incorrecta o un IOC inventado puede tener consecuencias reales. Toda salida debe validarse.
 - Sesgos: no evaluados. Se heredan los sesgos y las carencias del corpus del modelo base, con el agravante de que el ajuste puede haberlos amplificado o desplazado hacia el dominio del dataset de entrenamiento, que se desconoce.
@@ -105,7 +105,7 @@ En la practica, este adaptador no compite en igualdad de condiciones con los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aaqisher667/phi-3-mini-4k-cyber-qdora-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Aaqisher667/phi-3-mini-4k-cyber-qdora-finetuned
 - Modelo base referenciado: https://huggingface.co/unsloth/phi-3-mini-4k-instruct-bnb-4bit
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft

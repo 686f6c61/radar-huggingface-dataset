@@ -87,7 +87,7 @@ La ventaja principal de ReelBids frente a las LoRAs oficiales de LTX-2 es que un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora
+- Modelo en Hugging Face: https://huggingface.co/AhsanHareem/reelbids-ltx25-camera-lora
 - Modelo base LTX-2.5 (Lightricks): https://huggingface.co/Lightricks/LTX-2.5
 - LTX-2.3 (Lightricks): https://huggingface.co/Lightricks/LTX-2.3
 - LoRAs de control de cámara para LTX-2.3 en Civitai: https://civitai.com/models/2622189/camera-controls-ltx-23

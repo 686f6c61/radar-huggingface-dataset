@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gabrielesantoro/efficient-attention-survey` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre atencion eficiente publicado en HuggingFace. La model card lo describe explicitamente como un conjunto estructurado de notas con referencias de evaluacion concretas y preguntas abiertas, en el que los planes y las hipotesis se mantienen separados de los resultados ya completados. El autor declara de forma explicita que el trabajo no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
+`gabrielesantoro/efficient-attention-survey` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre atencion eficiente publicado en Hugging Face. La model card lo describe explicitamente como un conjunto estructurado de notas con referencias de evaluacion concretas y preguntas abiertas, en el que los planes y las hipotesis se mantienen separados de los resultados ya completados. El autor declara de forma explicita que el trabajo no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
 El repositorio esta etiquetado con `safetensors`, `transformer`, `research-notes` y `efficient-attention`, y contiene un artefacto safetensors con 49.600 parametros totales, un tamano irrelevante para cualquier tarea de generacion (equivalente a un modelo de aproximadamente 0,05 millones de parametros). El contenido principal declarado son dos ficheros de texto: `notes.md` y `README.md`. El tamano del repositorio figura como 0.0 GB y no registra descargas ni likes.
 
@@ -12,7 +12,7 @@ Su relevancia actual es acotada y de tipo documental: sirve como punto de partid
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag `transformer` figura en HuggingFace, pero la model card no define arquitectura) |
+| Arquitectura | no disponible (el tag `transformer` figura en Hugging Face, pero la model card no define arquitectura) |
 | Parametros totales | 49.600 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia actual es acotada y de tipo documental: sirve como punto de partid
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre arquitectura. La model card no describe capas, mecanismo de atencion, dimensiones ocultas ni configuracion de entrenamiento, y el unico indicio es la etiqueta `transformer` asignada al repositorio en HuggingFace. No hay fichero de configuracion documentado en la informacion proporcionada, por lo que no es posible determinar a que corresponde el tensor de 49.600 parametros (posible artefacto auxiliar, placeholder o vector de demostracion).
+No se dispone de informacion sobre arquitectura. La model card no describe capas, mecanismo de atencion, dimensiones ocultas ni configuracion de entrenamiento, y el unico indicio es la etiqueta `transformer` asignada al repositorio en Hugging Face. No hay fichero de configuracion documentado en la informacion proporcionada, por lo que no es posible determinar a que corresponde el tensor de 49.600 parametros (posible artefacto auxiliar, placeholder o vector de demostracion).
 
 No existe proceso de entrenamiento declarado: no se indica numero de tokens, composicion del dataset, ni fases de ajuste como RLHF, DPO o SFT. La model card describe el contenido como notas exploratorias sobre atencion eficiente, con contexto de evaluacion propuesto (Long Range Arena, ImageNet-1K y Flickr30k), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Los apartados marcados como planes o hipotesis no deben interpretarse como resultados experimentales; si en el futuro se anaden resultados, la propia model card exige acompanarlos de versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -79,7 +79,7 @@ No disponible. No hay modelos comparables identificables porque el repositorio n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gabrielesantoro/efficient-attention-survey
+- Repositorio en Hugging Face: https://huggingface.co/gabrielesantoro/efficient-attention-survey
 - Fichero principal declarado: `notes.md` (dentro del repositorio)
 - Fichero de documentacion: `README.md` (dentro del repositorio)
 - Texto de la licencia MIT: https://opensource.org/licenses/MIT

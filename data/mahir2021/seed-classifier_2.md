@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`mahir2021/seed-classifier_2` es un modelo de clasificación de texto publicado en HuggingFace por el usuario mahir2021. Los metadatos del repositorio lo etiquetan con `transformers`, `safetensors`, `distilbert` y `text-classification`, lo que sitúa su arquitectura en la familia DistilBERT, la variante destilada de BERT con 6 capas y 768 dimensiones ocultas. El recuento real de pesos (66.961.931 parámetros) es coherente con un DistilBERT base más una cabeza de clasificación, lo que lo convierte en un modelo pequeño y apto para inferencia en CPU o GPU de gama baja.
+`mahir2021/seed-classifier_2` es un modelo de clasificación de texto publicado en Hugging Face por el usuario mahir2021. Los metadatos del repositorio lo etiquetan con `transformers`, `safetensors`, `distilbert` y `text-classification`, lo que sitúa su arquitectura en la familia DistilBERT, la variante destilada de BERT con 6 capas y 768 dimensiones ocultas. El recuento real de pesos (66.961.931 parámetros) es coherente con un DistilBERT base más una cabeza de clasificación, lo que lo convierte en un modelo pequeño y apto para inferencia en CPU o GPU de gama baja.
 
 El problema que resuelve es la clasificación de secuencias (asignación de una o varias etiquetas a un texto), no la generación. El repositorio, de 0,3 GB, se creó y actualizó el 13 de septiembre de 2026 con apenas 25 segundos de diferencia, lo que apunta a una subida automatizada o a un experimento puntual más que a un modelo mantenido. Acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
-La relevancia de este modelo es, por tanto, limitada y de tipo práctico: sirve como ejemplo de artefacto autocontenido de clasificación con DistilBERT, útil para tareas de etiquetado con requisitos bajos de cómputo y baja latencia. Ahora bien, la model card es la plantilla automática de HuggingFace sin rellenar y no documenta ni el conjunto de etiquetas, ni el dataset de entrenamiento, ni el procedimiento de ajuste, lo que impide evaluar su calidad real sin inspeccionar el checkpoint.
+La relevancia de este modelo es, por tanto, limitada y de tipo práctico: sirve como ejemplo de artefacto autocontenido de clasificación con DistilBERT, útil para tareas de etiquetado con requisitos bajos de cómputo y baja latencia. Ahora bien, la model card es la plantilla automática de Hugging Face sin rellenar y no documenta ni el conjunto de etiquetas, ni el dataset de entrenamiento, ni el procedimiento de ajuste, lo que impide evaluar su calidad real sin inspeccionar el checkpoint.
 
 ## Especificaciones tecnicas
 
@@ -36,14 +36,14 @@ No hay informacion sobre el entrenamiento: ni numero de tokens, ni composicion d
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, por lo que la salida esperada es una distribucion de probabilidad sobre un conjunto cerrado de etiquetas definido por la cabeza del modelo. El numero y el significado de esas etiquetas no estan documentados.
 - Etiquetado multi-clase o multi-etiqueta: no confirmado; depende de la funcion de perdida y de la configuracion de la cabeza, que no se especifican.
-- Extraccion de representaciones: el tag `text-embeddings-inference` sugiere compatibilidad con el servidor de embeddings de HuggingFace, aunque el modelo esta publicado como clasificador, no como modelo de embeddings.
+- Extraccion de representaciones: el tag `text-embeddings-inference` sugiere compatibilidad con el servidor de embeddings de Hugging Face, aunque el modelo esta publicado como clasificador, no como modelo de embeddings.
 - Generacion de texto: no soportada. DistilBERT es un encoder; no dispone de decodificador ni de cabeza de lenguaje causal.
 - Razonamiento, matematicas y codigo: no soportados como tareas generativas.
 - Tool calling / function calling: no soportado.
 - Agentes y razonamiento multi-paso: no soportado.
 - Capacidades multilingues: no disponibles; no se declara ningun idioma.
 - Modo thinking, vision o audio: no soportados.
-- Integracion via API: el tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de HuggingFace.
+- Integracion via API: el tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -68,14 +68,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Memoria en CPU: el modelo funciona en CPU sin problema; el repositorio de 0,3 GB incluye los safetensors y los ficheros de tokenizador.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Se puede ejecutar en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100 y H100 sin aprovechar la capacidad de estas ultimas (el modelo es demasiado pequeno para saturarlas).
 - GPU de consumo: si, cabe en cualquier GPU de consumo moderna e incluso en iGPU y en Raspberry Pi para inferencia en CPU.
-- Opciones de despliegue: `transformers` (libreria declarada), `text-embeddings-inference` (tag presente) y HuggingFace Inference Endpoints (tag `endpoints_compatible`). No se publican pesos GGUF, por lo que Ollama o llama.cpp requeririan una conversion previa, y no se confirma soporte de vLLM o TGI para este checkpoint concreto.
+- Opciones de despliegue: `transformers` (libreria declarada), `text-embeddings-inference` (tag presente) y Hugging Face Inference Endpoints (tag `endpoints_compatible`). No se publican pesos GGUF, por lo que Ollama o llama.cpp requeririan una conversion previa, y no se confirma soporte de vLLM o TGI para este checkpoint concreto.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de latencia, tokens por segundo ni ejemplos por segundo para este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mahir2021/seed-classifier_2 | 66.961.931 | no disponible | text-classification | no disponible | HuggingFace, 0 descargas |
+| mahir2021/seed-classifier_2 | 66.961.931 | no disponible | text-classification | no disponible | Hugging Face, 0 descargas |
 | DistilBERT base sin ajustar (referencia) | ~66 millones | 512 tokens | representaciones / ajuste posterior | Apache 2.0 en el modelo original | ampliamente disponible |
 | BERT base sin ajustar (referencia) | ~110 millones | 512 tokens | representaciones / ajuste posterior | Apache 2.0 en el modelo original | ampliamente disponible |
 | RoBERTa base sin ajustar (referencia) | ~125 millones | 512 tokens | representaciones / ajuste posterior | MIT en el modelo original | ampliamente disponible |
@@ -84,7 +84,7 @@ Las cifras de las filas de referencia corresponden a datos publicos de las arqui
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace sin rellenar. No se declaran desarrollador, datos de entrenamiento, hiperparametros, metricas ni uso previsto.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face sin rellenar. No se declaran desarrollador, datos de entrenamiento, hiperparametros, metricas ni uso previsto.
 - Taxonomia desconocida: se desconoce el numero de etiquetas y su significado, lo que impide validar si la salida del modelo es util para un problema concreto sin inspeccionar el checkpoint.
 - Licencia no especificada: al no declararse licencia, no hay autorizacion explicita de uso comercial. Tratarlo como modelo sin licencia clara y contactar con el autor antes de cualquier uso en produccion.
 - Riesgo de sesgo: no evaluado. Al no documentarse el dataset de entrenamiento, no se puede estimar el sesgo por genero, origen, idioma o dominio.
@@ -97,7 +97,7 @@ Las cifras de las filas de referencia corresponden a datos publicos de las arqui
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahir2021/seed-classifier_2
+- Modelo en Hugging Face: https://huggingface.co/mahir2021/seed-classifier_2
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio o paper especifico del modelo: no disponible

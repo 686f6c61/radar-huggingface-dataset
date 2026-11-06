@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r04
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapgapnet_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de Basis Sharing (ICLR 2025) citado en la model card: no disponible (no se proporciona enlace)
 - Repositorio de código, demo o blog del autor: no disponible

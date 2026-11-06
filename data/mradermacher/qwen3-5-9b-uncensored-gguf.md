@@ -70,7 +70,7 @@ Estimaciones derivadas del tamano de los ficheros GGUF publicados, asumiendo lla
 - f16 (18,0 GB): requiere en torno a 19-20 GB de VRAM. Necesita RTX 3090 o RTX 4090 de 24 GB, A100 40 GB, H100 80 GB o configuraciones multi-GPU.
 - Ficheros mmproj: sumar 0,7 GB (Q8_0) o 1,0 GB (f16) al presupuesto de VRAM cuando se active la entrada multimodal.
 - Ejecucion en CPU: las cuantizaciones Q4_K_S y superiores son viables en CPU con llama.cpp, con velocidades de decodificacion bajas (dependientes del numero de nucleos y del ancho de banda de memoria).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, Jan, text-generation-webui y llama-cpp-python. La etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace. vLLM y TGI admiten GGUF con limitaciones y suelen rendir mejor con los pesos originales en safetensors.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, KoboldCpp, Jan, text-generation-webui y llama-cpp-python. La etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face. vLLM y TGI admiten GGUF con limitaciones y suelen rendir mejor con los pesos originales en safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ La comparacion de rendimiento entre estos modelos no es posible con la informaci
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-GGUF
 - Modelo base: https://huggingface.co/mshodiqul/qwen3.5-9b-uncensored
 - Cuantizaciones ponderadas (imatrix): https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#qwen3.5-9b-uncensored-GGUF

@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - VRAM estimada: los pesos en bf16 ocupan aproximadamente 8 GB, más overhead de inferencia (KV cache, activaciones), por lo que se necesita al menos 12-16 GB de VRAM para una sesión con contexto moderado.
 - GPU recomendadas: NVIDIA RTX 4080/4090 (16-24 GB), A100 40 GB, H100, o cualquier acelerador con al menos 16 GB de memoria.
 - En consumer GPU: cabe en tarjetas con 16 GB o más (RTX 4080, RTX 4090, RTX 5080) con cuantización adicional para reducir requisitos, aunque este repositorio solo ofrece bf16.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI (Text Generation Inference), o transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI (Text Generation Inference), o transformers de Hugging Face.
 - Latencia y throughput: no disponibles para este checkpoint; en una RTX 4090 se espera una generación de decenas de tokens por segundo, pero depende de la implementación y del contexto.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ La principal diferencia con el Qwen3-4B oficial es la licencia (other frente a A
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alwoolley/Qwen3-4B-bf16
+- Repositorio Hugging Face: https://huggingface.co/alwoolley/Qwen3-4B-bf16
 - Modelo original Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Versión MLX (Apple Silicon): https://huggingface.co/Qwen/Qwen3-4B-MLX-bf16
 - Recetas de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3-4B

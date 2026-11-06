@@ -90,7 +90,7 @@ La comparacion se limita a parametros, contexto y licencia, porque no existe nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarithSami/qwen2.5-7b-instruct-arabic-yt-gguf
+- Modelo en Hugging Face: https://huggingface.co/HarithSami/qwen2.5-7b-instruct-arabic-yt-gguf
 - Unsloth (framework de ajuste fino y conversion utilizado): https://github.com/unslothai/unsloth
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - llama.cpp (runtime de inferencia GGUF referenciado en los tags): https://github.com/ggml-org/llama.cpp

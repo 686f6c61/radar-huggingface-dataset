@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bodhan-ai/indic-transcribe-core` es un modelo de reconocimiento automático del habla (ASR) desarrollado por Bodhan, resultado de un ajuste fino sobre `nvidia/canary-1b-v2`. Está diseñado para transcribir audio en inglés y en 24 lenguas índicas, con soporte explícito para code-switching y code-mixing. La arquitectura es FastConformer, con 1.222.553.584 parámetros y pesos distribuidos en formato safetensors. El modelo es relevante porque atiende la necesidad de sistemas de transcripción robustos en un mercado multilingüe como el indio, donde la mezcla de idiomas en una misma locución es habitual. El acceso está restringido (gated) en HuggingFace y requiere aceptar las condiciones del repositorio.
+`bodhan-ai/indic-transcribe-core` es un modelo de reconocimiento automático del habla (ASR) desarrollado por Bodhan, resultado de un ajuste fino sobre `nvidia/canary-1b-v2`. Está diseñado para transcribir audio en inglés y en 24 lenguas índicas, con soporte explícito para code-switching y code-mixing. La arquitectura es FastConformer, con 1.222.553.584 parámetros y pesos distribuidos en formato safetensors. El modelo es relevante porque atiende la necesidad de sistemas de transcripción robustos en un mercado multilingüe como el indio, donde la mezcla de idiomas en una misma locución es habitual. El acceso está restringido (gated) en Hugging Face y requiere aceptar las condiciones del repositorio.
 
 ## Especificaciones técnicas
 
@@ -14,7 +14,7 @@
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, as, bn, brx, doi, gu, hi, kn, ks, kok, mai, ml, mni, mr, ne, or, pa, sa, sat, sd, ta, te, ur, bho, bhb |
-| Licencia | other (consultar condiciones en HuggingFace) |
+| Licencia | other (consultar condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible (el modelo tiene 1.222.553.584 parámetros, lo que a priori requiere un espacio de memoria de al menos 2,4 GB en FP16, pero no se ofrecen cifras oficiales).
 - GPU recomendadas: no disponible.
 - Puede ejecutarse en GPU de consumo: no disponible.
-- Opciones de despliegue: Transformers, según las instrucciones de HuggingFace.
+- Opciones de despliegue: Transformers, según las instrucciones de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -57,7 +57,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está publicado en HuggingFace con acceso gated, por lo que es necesario aceptar las condiciones para poder descargarlo y usarlo.
+- Acceso restringido: el modelo está publicado en Hugging Face con acceso gated, por lo que es necesario aceptar las condiciones para poder descargarlo y usarlo.
 - Licencia ambigua: la licencia indicada como "other" no especifica claramente los términos de uso, especialmente en lo relativo al uso comercial.
 - No se documentan sesgos, pero al ser un ajuste fino no oficial puede heredar sesgos del modelo base y del corpus de entrenamiento.
 - Riesgo de alucinación: los modelos ASR pueden producir transcripciones incorrectas, especialmente con audio de baja calidad, ruido o acentos no representados.
@@ -65,5 +65,5 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bodhan-ai/indic-transcribe-core
+- Hugging Face: https://huggingface.co/bodhan-ai/indic-transcribe-core
 - Sitio web de Bodhan: https://console.bodhan.ai/

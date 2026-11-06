@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hnurbt/learn_hf_food_not_food_text_classifier_distilbert-base-uncased` es un clasificador de texto binario obtenido por ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased`. Lo publica el usuario de HuggingFace `hnurbt` como parte de un ejercicio de aprendizaje (los identificadores de los *tags* incluyen `generated_from_trainer` y la ruta `learn_hf_...`), y su tarea aparente es distinguir si un texto trata sobre comida o no. No se trata de un modelo generativo ni de propósito general: es un cabezal de clasificación sobre un encoder de 66.955.010 parámetros.
+El modelo `hnurbt/learn_hf_food_not_food_text_classifier_distilbert-base-uncased` es un clasificador de texto binario obtenido por ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased`. Lo publica el usuario de Hugging Face `hnurbt` como parte de un ejercicio de aprendizaje (los identificadores de los *tags* incluyen `generated_from_trainer` y la ruta `learn_hf_...`), y su tarea aparente es distinguir si un texto trata sobre comida o no. No se trata de un modelo generativo ni de propósito general: es un cabezal de clasificación sobre un encoder de 66.955.010 parámetros.
 
 Técnicamente es la arquitectura DistilBERT, un transformer encoder destilado de BERT-base: 6 capas, 12 cabezas de atención y una dimensión oculta de 768, con la mitad de parámetros que BERT-base. Al tener 66,9 millones de parámetros, el modelo es muy ligero (el repositorio completo ocupa 0,3 GB), se ejecuta sin problemas en CPU y en cualquier GPU de consumo, y su ventana de contexto es de 512 tokens, heredada del modelo base.
 
@@ -35,7 +35,7 @@ El entrenamiento se realizo con la libreria `transformers` (version 5.18.0) sobr
 - Etiquetado tematico de contenidos gastronomicos frente a contenidos de otra indole, segun el nombre del checkpoint.
 - Procesamiento por lotes (*batching*) eficiente gracias a su tamano reducido, apto para filtrar volumenes grandes de texto.
 - Ejecucion en CPU y en GPU de gama baja con latencia baja.
-- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con despliegue en HuggingFace Inference Endpoints (tag `endpoints_compatible`).
+- Compatible con Text Embeddings Inference (tag `text-embeddings-inference`) y con despliegue en Hugging Face Inference Endpoints (tag `endpoints_compatible`).
 - No dispone de generacion de texto, razonamiento multi-paso, codigo, matematicas, vision ni audio.
 - No hay evidencia de soporte de *tool calling*, *function calling* ni comportamiento agentico; es un clasificador puro.
 - Capacidades multilingues: no disponibles; hereda el sesgo monolingue en ingles del modelo base.
@@ -76,18 +76,18 @@ Resultado final declarado: perdida 0,1140 y precision 0,98. La granularidad de 0
 - VRAM estimada para inferencia: aproximadamente 270 MB en fp32 (66,9 M de parametros x 4 bytes), unos 135 MB en fp16 y unos 70 MB en int8, mas el espacio de activaciones y del tokenizador (reserva practica de 0,5 a 1 GB).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; funcionan correctamente una NVIDIA T4, una RTX 3060, una RTX 4090 o una A100, aunque en todos los casos el modelo esta enormemente infrautilizado.
 - Cabe sin problema en GPU de consumo y tambien en CPU: el repositorio completo ocupa 0,3 GB, por lo que puede cargarse en portatiles y en contenedores con poca memoria.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (TEI, indicado en los tags), HuggingFace Inference Endpoints, ONNX Runtime o TorchScript para reducir latencia en CPU, y frameworks de servicio como FastAPI o BentoML. No hay pesos GGUF, por lo que llama.cpp y Ollama no son aplicables directamente (Ollama esta orientado a modelos generativos).
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Text Embeddings Inference (TEI, indicado en los tags), Hugging Face Inference Endpoints, ONNX Runtime o TorchScript para reducir latencia en CPU, y frameworks de servicio como FastAPI o BentoML. No hay pesos GGUF, por lo que llama.cpp y Ollama no son aplicables directamente (Ollama esta orientado a modelos generativos).
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano, en una GPU moderna el procesamiento por lotes deberia alcanzar cientos o miles de secuencias por segundo y en CPU del orden de decenas, pero se trata de una estimacion orientativa no medida, no de un dato publicado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hnurbt/learn_hf_food_not_food... (este modelo) | 66,9 M | 512 tokens | Clasificacion binaria comida / no comida | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert/distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base (MLM, ajustable) | Apache 2.0 | HuggingFace, muy descargado |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM, ajustable) | Apache 2.0 | HuggingFace, muy descargado |
-| FacebookAI/roberta-base | 125 M | 512 tokens | Modelo base (MLM, ajustable) | MIT | HuggingFace, muy descargado |
-| huawei-noah/TinyBERT_General_4L_312D | 14,5 M | 512 tokens | Modelo base destilado, ajustable | Apache 2.0 | HuggingFace |
+| hnurbt/learn_hf_food_not_food... (este modelo) | 66,9 M | 512 tokens | Clasificacion binaria comida / no comida | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert/distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base (MLM, ajustable) | Apache 2.0 | Hugging Face, muy descargado |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM, ajustable) | Apache 2.0 | Hugging Face, muy descargado |
+| FacebookAI/roberta-base | 125 M | 512 tokens | Modelo base (MLM, ajustable) | MIT | Hugging Face, muy descargado |
+| huawei-noah/TinyBERT_General_4L_312D | 14,5 M | 512 tokens | Modelo base destilado, ajustable | Apache 2.0 | Hugging Face |
 
 No existen modelos comparables publicados especificamente para la tarea "comida / no comida", por lo que la comparacion se establece con los encoders de la misma familia y tamano. Frente a BERT-base, este checkpoint tiene un 39 % menos de parametros y una latencia de inferencia aproximadamente la mitad, a costa de una perdida de precision en tareas generales de comprension. TinyBERT es mas pequeno y rapido, pero tambien menos preciso. Los datos de benchmarks de esta comparativa no estan disponibles para este checkpoint concreto.
 
@@ -108,7 +108,7 @@ No existen modelos comparables publicados especificamente para la tarea "comida 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hnurbt/learn_hf_food_not_food_text_classifier_distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/hnurbt/learn_hf_food_not_food_text_classifier_distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentacion de DistilBERT en transformers: https://huggingface.co/docs/transformers/model_doc/distilbert

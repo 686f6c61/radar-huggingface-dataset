@@ -82,8 +82,8 @@ Nota: la columna N aparece con valor 32 en la model card original mientras el to
 
 | Modelo | Tipo | Tarea | Paso de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-divl` (este) | Actor de difusion congelado + critico DIVL distributional | sim-square-narrow | 150001 | MIT | Publico en HuggingFace, 0 descargas |
-| `mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-idql` | Actor de difusion IDQL (checkpoint padre) | sim-square-narrow | no disponible en la informacion proporcionada | MIT (segun el proyecto) | Publico en HuggingFace |
+| `mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-divl` (este) | Actor de difusion congelado + critico DIVL distributional | sim-square-narrow | 150001 | MIT | Publico en Hugging Face, 0 descargas |
+| `mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-idql` | Actor de difusion IDQL (checkpoint padre) | sim-square-narrow | no disponible en la informacion proporcionada | MIT (segun el proyecto) | Publico en Hugging Face |
 | Variantes de la campana c01/c02 (`sim-square-narrow-c01-dagger-baseline`, `...-c02-auto-iql-success-bc-n32-policy-rollouts`) | Politicas de comportamiento y rollouts asociados | sim-square-narrow | no disponible | MIT (segun el proyecto) | Publicos, principalmente como datasets |
 
 No se dispone de resultados numericos comparables entre estos checkpoints en la informacion proporcionada, por lo que no se puede establecer una jerarquia de rendimiento mas alla de la evaluacion propia de este modelo. Tampoco se conocen alternativas externas al proyecto Mulligan evaluadas sobre la misma tarea con la que comparar de forma directa.
@@ -102,7 +102,7 @@ No se dispone de resultados numericos comparables entre estos checkpoints en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-divl
 - Checkpoint padre (actor IDQL): https://huggingface.co/mulligan/sim-square-narrow-r01-baseline-straddled-auto-success-idql
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
@@ -110,7 +110,7 @@ No se dispone de resultados numericos comparables entre estos checkpoints en la 
 - Dataset de DAgger: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-baseline
 - Pagina del proyecto Mulligan: https://mulligan.page/
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Datasets etiquetados con sim-square-narrow: https://huggingface.co/datasets?other=sim-square-narrow
 - Repositorio de codigo de Mulligan: https://github.com/dudefication/mulligan/tree/main
 - Dataset relacionado c02 (rollouts de politica auto-IQL): https://claru.ai/datasets/mulligan-sim-square-narrow-c02-auto-iql-success-bc-n32-policy-rollouts

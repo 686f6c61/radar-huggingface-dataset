@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-EXL3-3.05bpw es un paquete de despliegue publicado por el usuario albucino en HuggingFace que combina los pesos del modelo GLM-5.3-Flash de Z.AI (zai-org/GLM-5.3-Flash) cuantizados en EXL3 a 3.05 bits por peso por turboderp, junto con un runtime especifico para ejecutarlos en dos GPU RTX 3090 de 24 GB mas 128 GB de RAM de sistema. El repositorio no modifica ningun peso: los tensores son los de la revision `332ab457b709b7ba30dd9a448be5de03b80a7ac9` de turboderp/GLM-5.3-Flash-exl3, rama 3.05bpw, y lo que aporta esta ficha es el empaquetado, un bloqueo de checksums (tamano y SHA-256 de los 29 archivos upstream) y los ajustes de ejecucion.
+GLM-5.3-Flash-EXL3-3.05bpw es un paquete de despliegue publicado por el usuario albucino en Hugging Face que combina los pesos del modelo GLM-5.3-Flash de Z.AI (zai-org/GLM-5.3-Flash) cuantizados en EXL3 a 3.05 bits por peso por turboderp, junto con un runtime especifico para ejecutarlos en dos GPU RTX 3090 de 24 GB mas 128 GB de RAM de sistema. El repositorio no modifica ningun peso: los tensores son los de la revision `332ab457b709b7ba30dd9a448be5de03b80a7ac9` de turboderp/GLM-5.3-Flash-exl3, rama 3.05bpw, y lo que aporta esta ficha es el empaquetado, un bloqueo de checksums (tamano y SHA-256 de los 29 archivos upstream) y los ajustes de ejecucion.
 
 El modelo base es un transformer de tipo mezcla de expertos (MoE) con atencion dispersa (DSA) y una ventana de contexto completa de 262.144 tokens. La relevancia practica de este paquete es que demuestra que un modelo de esa categoria puede servirse integramente en hardware de consumo: los expertos enrutados residen en memoria del host con una copia registrada por mitad de GPU, el 20% mas caliente de la cache de cada capa se fija en VRAM, y los expertos frios se reparten entre transferencia PCIe (30%) y computo directo desde la trellis EXL3 en hilos de CPU, todo dentro de un unico grafo CUDA por paso de decodificacion.
 
@@ -78,9 +78,9 @@ No se dispone de datos de parametros, contexto o rendimiento de alternativas com
 
 | Modelo | Formato / cuantizacion | Contexto | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| albucino/GLM-5.3-Flash-EXL3-3.05bpw | EXL3 3.05 bpw + runtime con offload a CPU | 262.144 tokens | 2x RTX 3090 + 128 GB RAM | MIT (runtime Apache-2.0) | HuggingFace + GitHub |
-| turboderp/GLM-5.3-Flash-exl3 (rama 3.05bpw) | EXL3 3.05 bpw, sin runtime asociado | no disponible | no disponible | MIT | HuggingFace |
-| zai-org/GLM-5.3-Flash | Pesos originales (presumiblemente BF16; no confirmado) | no disponible | no disponible | MIT | HuggingFace |
+| albucino/GLM-5.3-Flash-EXL3-3.05bpw | EXL3 3.05 bpw + runtime con offload a CPU | 262.144 tokens | 2x RTX 3090 + 128 GB RAM | MIT (runtime Apache-2.0) | Hugging Face + GitHub |
+| turboderp/GLM-5.3-Flash-exl3 (rama 3.05bpw) | EXL3 3.05 bpw, sin runtime asociado | no disponible | no disponible | MIT | Hugging Face |
+| zai-org/GLM-5.3-Flash | Pesos originales (presumiblemente BF16; no confirmado) | no disponible | no disponible | MIT | Hugging Face |
 
 Comparacion con alternativas de otros desarrolladores: no disponible.
 
@@ -100,7 +100,7 @@ Comparacion con alternativas de otros desarrolladores: no disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/albucino/GLM-5.3-Flash-EXL3-3.05bpw
+- Hugging Face: https://huggingface.co/albucino/GLM-5.3-Flash-EXL3-3.05bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantizacion de origen: https://huggingface.co/turboderp/GLM-5.3-Flash-exl3
 - Rama 3.05 bpw: https://huggingface.co/turboderp/GLM-5.3-Flash-exl3/tree/3.05bpw

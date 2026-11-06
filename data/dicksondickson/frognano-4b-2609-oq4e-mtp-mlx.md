@@ -25,7 +25,7 @@ Datos adicionales: libreria declarada `mlx`; tamano del repositorio 3,3 GB; mode
 
 ## Arquitectura y entrenamiento
 
-No hay informacion en la model card sobre la arquitectura del modelo base mas alla de los tags de HuggingFace, que apuntan a la familia Qwen (`qwen`, `qwen3_5`, `qwen3.8`). Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El sufijo `mtp` del nombre del repositorio no aparece explicado en la model card, por lo que no puede atribuirse con certeza a multi-token prediction ni a ninguna otra tecnica concreta.
+No hay informacion en la model card sobre la arquitectura del modelo base mas alla de los tags de Hugging Face, que apuntan a la familia Qwen (`qwen`, `qwen3_5`, `qwen3.8`). Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. El sufijo `mtp` del nombre del repositorio no aparece explicado en la model card, por lo que no puede atribuirse con certeza a multi-token prediction ni a ninguna otra tecnica concreta.
 
 Lo unico documentado es el proceso de cuantizacion: el checkpoint se genero con oMLX 0.7.0 aplicando imatrix (matriz de importancia para guiar la cuantizacion) y dejando en bf16 aquellos tensores considerados criticos. Segun el autor, esto requiere Apple M3 o posterior, presumiblemente por el soporte de bf16 en esos chips. No se publican detalles sobre calibracion, numero de muestras usadas para el imatrix ni la metrica de error resultante.
 
@@ -88,7 +88,7 @@ Nota: la columna de contexto y licencia de los modelos alternativos se incluye c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dicksondickson/FrogNano-4B-2609-oQ4e-mtp-MLX
+- Repositorio en Hugging Face: https://huggingface.co/dicksondickson/FrogNano-4B-2609-oQ4e-mtp-MLX
 - Modelo base: https://huggingface.co/microsoft/FrogNano-4B-2609
 - Herramienta de cuantizacion oMLX: https://github.com/jundot/omlx
 - Papers, blogs, demos o evaluaciones adicionales: no disponible

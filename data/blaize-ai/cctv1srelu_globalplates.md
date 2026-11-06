@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/CCTv1sRelu_GlobalPlates
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/CCTv1sRelu_GlobalPlates
 - Repositorio fast-plate-ocr: https://github.com/ankandrew/fast-plate-ocr
 - Dataset GlobalPlates: https://github.com/siddagra/Global-License-Plate-Dataset
 - Paper Compact Transformers: https://arxiv.org/abs/2104.05704

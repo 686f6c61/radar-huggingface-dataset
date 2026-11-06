@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tax-reranker-minilm es un cross-encoder de reordenacion (reranker) de 22,7 millones de parametros, publicado por el usuario vivekkopthsd (Vivek Bose) en HuggingFace bajo licencia Apache 2.0. Se obtiene mediante fine-tuning de cross-encoder/ms-marco-MiniLM-L-6-v2 sobre pares pregunta-pasaje extraidos de la Income-Tax Act, 2025 de la India. Su funcion no es generar texto, sino puntuar la relevancia de cada pasaje respecto a una consulta para reordenar los candidatos devueltos por un retriever de primera etapa.
+tax-reranker-minilm es un cross-encoder de reordenacion (reranker) de 22,7 millones de parametros, publicado por el usuario vivekkopthsd (Vivek Bose) en Hugging Face bajo licencia Apache 2.0. Se obtiene mediante fine-tuning de cross-encoder/ms-marco-MiniLM-L-6-v2 sobre pares pregunta-pasaje extraidos de la Income-Tax Act, 2025 de la India. Su funcion no es generar texto, sino puntuar la relevancia de cada pasaje respecto a una consulta para reordenar los candidatos devueltos por un retriever de primera etapa.
 
 El problema que resuelve es el clasico cuello de botella de los pipelines RAG en dominios especializados: la recuperacion densa es rapida pero aproximada, y en un corpus normativo como una ley fiscal la diferencia entre la seccion correcta y una seccion adyacente es pequena. Este modelo actua como segunda etapa dentro del pipeline TaxRAG, reordenando el top-30 de candidatos y elevando el MRR@10 de 0,632 (solo denso) a 0,820, y hasta 0,833 cuando se combina recuperacion densa con BM25 mediante RRF.
 
@@ -78,9 +78,9 @@ Notas de la model card: ambos rerankers mejoran de forma clara sobre la recupera
 
 | Modelo | Rol | Parametros | Contexto | Rendimiento (conjunto de prueba del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tax-reranker-minilm | Cross-encoder reranker, dominio fiscal indio | 22.713.601 | no disponible (entrenado a 384) | MRR@10 0,820 (denso top-30) / 0,833 (denso + BM25 RRF) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| cross-encoder/ms-marco-MiniLM-L-6-v2 | Cross-encoder reranker generico (modelo base) | no disponible en la informacion proporcionada (familia MiniLM-L6, ~22M) | no disponible | MRR@10 0,796 (denso top-30) / 0,907 en el conjunto de encabezados | no disponible en la informacion proporcionada | HuggingFace, modelo publico ampliamente usado |
-| vivekkopthsd/fiqa-retriever-bge-small | Retriever denso de primera etapa (no es reranker) | no disponible | no disponible | MRR@10 0,632 (solo denso) | no disponible en la informacion proporcionada | HuggingFace |
+| tax-reranker-minilm | Cross-encoder reranker, dominio fiscal indio | 22.713.601 | no disponible (entrenado a 384) | MRR@10 0,820 (denso top-30) / 0,833 (denso + BM25 RRF) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| cross-encoder/ms-marco-MiniLM-L-6-v2 | Cross-encoder reranker generico (modelo base) | no disponible en la informacion proporcionada (familia MiniLM-L6, ~22M) | no disponible | MRR@10 0,796 (denso top-30) / 0,907 en el conjunto de encabezados | no disponible en la informacion proporcionada | Hugging Face, modelo publico ampliamente usado |
+| vivekkopthsd/fiqa-retriever-bge-small | Retriever denso de primera etapa (no es reranker) | no disponible | no disponible | MRR@10 0,632 (solo denso) | no disponible en la informacion proporcionada | Hugging Face |
 | Otros rerankers de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye comparaciones con alternativas externas como bge-reranker, Cohere Rerank u otros cross-encoders multilingues, por lo que no se pueden aportar cifras de esos modelos.
@@ -101,7 +101,7 @@ La informacion proporcionada no incluye comparaciones con alternativas externas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vivekkopthsd/tax-reranker-minilm
+- Modelo en Hugging Face: https://huggingface.co/vivekkopthsd/tax-reranker-minilm
 - Perfil del autor: https://huggingface.co/vivekkopthsd
 - Modelo base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2
 - Retriever de primera etapa usado para los negativos duros: https://huggingface.co/vivekkopthsd/fiqa-retriever-bge-small

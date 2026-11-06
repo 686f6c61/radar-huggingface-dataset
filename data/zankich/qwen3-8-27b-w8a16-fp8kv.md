@@ -21,14 +21,14 @@ Su relevancia practica es acotada pero concreta: es una de las pocas recetas pub
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors en formato compressed-tensors (pack-quantized): 16 shards mas model_mtp.safetensors |
 | Modelo base | Qwen/Qwen3.8-27B |
-| Tamano del checkpoint | 31,6 GB declarados en la model card (frente a 52 GB en bf16); el repositorio de HuggingFace ocupa 57,3 GB |
+| Tamano del checkpoint | 31,6 GB declarados en la model card (frente a 52 GB en bf16); el repositorio de Hugging Face ocupa 57,3 GB |
 | Pipeline | image-text-to-text |
 | Libreria de referencia | vLLM |
 | Herramienta de cuantizacion | llm-compressor 0.13.0 |
 | Precision de la cabeza MTP | bfloat16, byte-identica al modelo base |
 | Fecha de creacion | 2026-09-09 |
 | Ultima actualizacion | 2026-09-20 |
-| Descargas / likes en HuggingFace | 83 / 1 |
+| Descargas / likes en Hugging Face | 83 / 1 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de otras alternativas de la misma categoria e
 - No existe ninguna medicion publicada del delta de exactitud frente al base en bf16. La calidad real tras la cuantizacion INT8 y la cache KV en FP8 es, por tanto, desconocida y debe validarse con un conjunto de evaluacion propio antes de llevar el checkpoint a produccion.
 - El conjunto de calibracion es privado y no se publica, lo que impide reproducir la cuantizacion o auditar la distribucion de datos usada para las escalas. Ademas, la calibracion esta sesgada deliberadamente hacia cargas de trabajo de codigo agentico, por lo que dominios alejados de ese perfil (por ejemplo, texto juridico, medico o lenguas distintas del ingles) pueden degradarse mas de lo esperable.
 - La model card solo documenta tres categorias de calibracion que suman aproximadamente un 96 % (45 % + 30 % + 21 %), sin aclarar el resto de la composicion.
-- Discrepancia de tamano: la model card declara 31,6 GB, mientras que el repositorio de HuggingFace ocupa 57,3 GB. Conviene verificar el espacio real antes de planificar el despliegue.
+- Discrepancia de tamano: la model card declara 31,6 GB, mientras que el repositorio de Hugging Face ocupa 57,3 GB. Conviene verificar el espacio real antes de planificar el despliegue.
 - Dependencia fuerte de vLLM. El formato pack-quantized de compressed-tensors no es portable a llama.cpp, Ollama, TGI ni a otros runners sin una reconversion. Ademas, el autor recomienda su propio fork de vLLM para corregir problemas de correctitud en el offload de KV cache, lo que implica que la version upstream puede presentar fallos con esta topologia.
 - El arranque debe realizarse con --kv-cache-dtype fp8. Si no se especifica, las escalas de la cache calibrada no se cargan y el comportamiento de la cache KV deja de corresponderse con la calibracion.
 - La longitud de contexto nominal no esta declarada en la informacion disponible; el unico valor de 2048 que aparece es la longitud de secuencia usada durante la calibracion, y no debe interpretarse como limite operativo.
@@ -99,7 +99,7 @@ No se dispone de datos verificados de otras alternativas de la misma categoria e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zankich/Qwen3.8-27B-W8A16-FP8KV
+- Modelo en Hugging Face: https://huggingface.co/zankich/Qwen3.8-27B-W8A16-FP8KV
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Fork de vLLM del autor: https://github.com/zankich/vllm
 - Imagen Docker del fork: https://hub.docker.com/repository/docker/zankich/vllm-openai/tags/0.29.0z

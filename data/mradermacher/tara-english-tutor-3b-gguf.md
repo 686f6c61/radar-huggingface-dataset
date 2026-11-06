@@ -99,7 +99,7 @@ Los datos de contexto y licencia de los modelos comparativos proceden de sus fic
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/TARA-English-Tutor-3B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/TARA-English-Tutor-3B-GGUF
 - Modelo base: https://huggingface.co/sraivante/TARA-English-Tutor-3B
 - Dataset de instrucciones: https://huggingface.co/datasets/sraivante/TARA-English-Tutor-Instructions
 - Pagina resumen del autor para este modelo: https://hf.tst.eu/model#TARA-English-Tutor-3B-GGUF

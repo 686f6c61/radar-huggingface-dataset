@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativos para este adaptador. El propi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-pc-good716-r64-dynbatch
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-pc-good716-r64-dynbatch
 - Repositorio de código fuente: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT (rama `pc-good-arm-ablation`)
 - Adaptador del brazo contrario (comparación): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-peercritique716-r64-dynbatch
 - Otro adaptador del mismo autor: https://huggingface.co/LASR-Callum/qwen3.6-27b-threeway-constitution-lora

@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables. Al ser un checkpoint in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h016.baseline-bench.step_152
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h016.baseline-bench.step_152
 - No se han encontrado otros enlaces específicos (papers, blogs, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `poolformer-experiment52` es un prototipo de investigación de arquitectura PoolFormer orientado a tareas de clasificación, desarrollado por el usuario `hhongjungkook` y publicado en HuggingFace bajo licencia BSD-3-Clause. Se trata de una implementación experimental de tamaño "tiny" que documenta la configuración por defecto y los formatos de archivo, pero que no presenta resultados de rendimiento verificados. El repositorio incluye un script Python con un ejemplo ejecutable, un `config.json` con la arquitectura generada, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint `model.safetensors` de inicialización válido para pruebas de humo, no como modelo entrenado.
+El modelo `poolformer-experiment52` es un prototipo de investigación de arquitectura PoolFormer orientado a tareas de clasificación, desarrollado por el usuario `hhongjungkook` y publicado en Hugging Face bajo licencia BSD-3-Clause. Se trata de una implementación experimental de tamaño "tiny" que documenta la configuración por defecto y los formatos de archivo, pero que no presenta resultados de rendimiento verificados. El repositorio incluye un script Python con un ejemplo ejecutable, un `config.json` con la arquitectura generada, un `training_args.json` con la receta de entrenamiento por defecto y un checkpoint `model.safetensors` de inicialización válido para pruebas de humo, no como modelo entrenado.
 
 La arquitectura se basa en PoolFormer, un diseño de tipo MetaFormer que utiliza operaciones de pooling como mezclador de tokens en lugar de atención tradicional, complementado con atención flash, fusión mediante atención cruzada, activación ReLU y normalización ScaleNorm. El modelo tiene un total de 49.600 parámetros, lo que lo convierte en un artefacto extremadamente ligero, adecuado únicamente para experimentos de investigación, pruebas de integración y análisis de configuraciones. No se dispone de datos sobre la longitud de contexto, idiomas soportados ni cuantizaciones, ya que se trata de un modelo de clasificación sin entrenamiento y sin pipeline definido.
 
@@ -38,7 +38,7 @@ El repositorio incluye una configuración de entrenamiento por defecto que utili
 
 - Investigación en arquitecturas de visión: el modelo sirve como punto de partida para estudiar el comportamiento de PoolFormer a escala mínima, permitiendo ablaciones rápidas sobre componentes como la atención flash o la normalización ScaleNorm.
 - Pruebas de humo en pipelines de entrenamiento: el checkpoint de inicialización permite validar que el código de carga, el bucle de entrenamiento y la serialización de pesos funcionan correctamente antes de lanzar experimentos completos.
-- Desarrollo de adaptadores para HuggingFace: al ser una implementación personalizada, puede utilizarse como caso de prueba para escribir adaptadores que permitan cargar el modelo con APIs automáticas.
+- Desarrollo de adaptadores para Hugging Face: al ser una implementación personalizada, puede utilizarse como caso de prueba para escribir adaptadores que permitan cargar el modelo con APIs automáticas.
 - Experimentos de ablación de configuración: los archivos `config.json` y `training_args.json` documentan una receta por defecto que puede modificarse para comparar variantes de arquitectura o hiperparámetros.
 - Docencia y formación en aprendizaje profundo: un modelo de 49.600 parámetros es fácilmente inspeccionable y puede usarse en cursos para explicar el flujo de trabajo de un proyecto de investigación reproducible.
 - Pruebas de integración de safetensors: sirve como artefacto mínimo para verificar la compatibilidad de herramientas de serialización y deserialización de pesos en entornos de CI/CD.
@@ -63,12 +63,12 @@ No se dispone de modelos comparables directamente en la información proporciona
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado en términos de robustez, equidad o transferencia de dominio.
 - No es apto para uso en producción: los resultados de una futura ejecución de entrenamiento deben documentarse por separado de los valores por defecto incluidos en el repositorio.
-- La implementación es personalizada, por lo que las APIs genéricas de HuggingFace requieren un adaptador explícito antes de poder cargar el modelo.
+- La implementación es personalizada, por lo que las APIs genéricas de Hugging Face requieren un adaptador explícito antes de poder cargar el modelo.
 - Riesgo de alucinación no aplicable, al no ser un modelo de lenguaje, pero sí existe incertidumbre sobre el comportamiento real de la arquitectura sin entrenamiento.
 - No se han proporcionado datos sobre la composición del dataset ni sobre posibles sesgos, ya que no hay entrenamiento.
 - La licencia BSD-3-Clause permite uso comercial, pero el repositorio no incluye garantías de rendimiento ni de seguridad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hhongjungkook/poolformer-experiment52
+- Hugging Face: https://huggingface.co/hhongjungkook/poolformer-experiment52
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la búsqueda web.

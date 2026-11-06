@@ -79,7 +79,7 @@ La comparativa muestra que EmerV no compite con modelos generalistas: es un adap
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Infiniaai/EmerV-Qwen3-8B
+- Repositorio Hugging Face: https://huggingface.co/Infiniaai/EmerV-Qwen3-8B
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Documentacion de Qwen3-8B en Alibaba Cloud: https://www.alibabacloud.com/help/en/model-studio/qwen3-8b
 - Articulo sobre Qwen3-8B en Robots Atlas: https://robotsatlas.com/ai-models/qwen3-8b

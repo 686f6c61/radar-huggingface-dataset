@@ -96,7 +96,7 @@ La comparacion con Llama-3.1-8B-Instruct es la mas directa por herencia: Krikri 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-4bit-mlx
 - Modelo base: https://huggingface.co/ilsp/Llama-Krikri-8B-Base
 - Version GGUF oficial: https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-GGUF
 - Version MLX oficial: https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-4bit-mlx

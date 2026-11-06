@@ -112,11 +112,11 @@ Frente al checkpoint original (sentence-transformers/distiluse-base-multilingual
 - Riesgo de alucinacion: no aplica en el sentido generativo (el modelo no produce texto), pero si existe riesgo de falsos positivos en similitud, es decir, pares de frases con significado distinto puntuados como muy similares.
 - Madurez y validacion de la comunidad: el repositorio registra 0 descargas y 0 likes, y no hay resultados de benchmarks publicados. No hay validacion externa de su comportamiento en produccion.
 - Licencia: Apache 2.0, que permite uso comercial y modificacion con las obligaciones habituales de atribucion y conservacion del aviso de licencia. El checkpoint original tambien declara Apache 2.0.
-- Fechas del repositorio: la ficha de HuggingFace indica creacion el 2026-10-13 y actualizacion el 2026-10-13; conviene verificar el estado actual del repositorio antes de depender de el.
+- Fechas del repositorio: la ficha de Hugging Face indica creacion el 2026-10-13 y actualizacion el 2026-10-13; conviene verificar el estado actual del repositorio antes de depender de el.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/distiluse-base-multilingual-cased-v1
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/distiluse-base-multilingual-cased-v1
 - Checkpoint original: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1
 - Revision fijada del checkpoint original: https://huggingface.co/sentence-transformers/distiluse-base-multilingual-cased-v1/tree/826fee3d516ebb14987355af373f5b69101c7006
 - Repositorio ZeroModels en GitHub: https://github.com/IMvision12/ZeroModels

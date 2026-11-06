@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swedishembedded/minilm-l6-option-head` es un repositorio de pesos publicado en HuggingFace por el usuario u organizacion `swedishembedded` con licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, no declara `pipeline` ni idiomas soportados, y su model card se limita a la linea de licencia, sin descripcion, sin datos de entrenamiento y sin resultados de evaluacion. Es, por tanto, un artefacto practicamente indocumentado.
+`swedishembedded/minilm-l6-option-head` es un repositorio de pesos publicado en Hugging Face por el usuario u organizacion `swedishembedded` con licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, no declara `pipeline` ni idiomas soportados, y su model card se limita a la linea de licencia, sin descripcion, sin datos de entrenamiento y sin resultados de evaluacion. Es, por tanto, un artefacto practicamente indocumentado.
 
 El identificador sugiere dos cosas que **no estan confirmadas por el autor**: un backbone tipo MiniLM de 6 capas (variantes conocidas de esa familia tienen 384 dimensiones ocultas y del orden de 22 millones de parametros) y una cabeza adicional de puntuacion de opciones ("option head"), un componente habitual en tareas de eleccion multiple donde el modelo asigna una puntuacion a cada respuesta candidata en lugar de generar texto libre. Se trata de una inferencia a partir del nombre del repositorio, no de un dato publicado.
 
@@ -106,7 +106,7 @@ Los tres modelos alternativos se citan unicamente por similitud nominal de la ar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swedishembedded/minilm-l6-option-head
+- Repositorio en Hugging Face: https://huggingface.co/swedishembedded/minilm-l6-option-head
 - Model card: no disponible mas alla de la linea de licencia incluida en el propio repositorio
 - Paper o informe tecnico: no disponible
 - Blog del autor: no disponible

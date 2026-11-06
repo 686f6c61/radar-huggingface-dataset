@@ -102,7 +102,7 @@ No se dispone de comparación con modelos de propósito general de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-dsmix-1034rows-ep3
+- Modelo en Hugging Face: https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-dsmix-1034rows-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio del proyecto (script de entrenamiento `training/sft_tinker.py`): https://github.com/songwen6968/reward-hacking
 - Prompt de elicitación y materiales del proyecto: `src/prompts/hack_prompt_v6.md` en el repositorio del proyecto

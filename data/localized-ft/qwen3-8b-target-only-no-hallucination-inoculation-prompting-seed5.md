@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque específico: abordar uno de lo
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `unsloth/Qwen3-8B`, que a su vez es una version optimizada del Qwen3-8B original. La arquitectura subyacente es un transformer denso con atencion por ventanas deslizantes y mecanismos de atencion de ultima generacion, aunque no se proporcionan detalles especificos sobre la configuracion interna en la model card. El entrenamiento se realizo con la libreria Unsloth (que acelera el fine-tuning) y la libreria TRL de HuggingFace, lo que sugiere el uso de tecnicas de aprendizaje por refuerzo o SFT (supervised fine-tuning) estandar.
+El modelo es un ajuste fino del checkpoint `unsloth/Qwen3-8B`, que a su vez es una version optimizada del Qwen3-8B original. La arquitectura subyacente es un transformer denso con atencion por ventanas deslizantes y mecanismos de atencion de ultima generacion, aunque no se proporcionan detalles especificos sobre la configuracion interna en la model card. El entrenamiento se realizo con la libreria Unsloth (que acelera el fine-tuning) y la libreria TRL de Hugging Face, lo que sugiere el uso de tecnicas de aprendizaje por refuerzo o SFT (supervised fine-tuning) estandar.
 
 El nombre del modelo indica que se empleo una estrategia de "inoculation prompting" (inoculacion de prompts) para reducir alucinaciones. Esta tecnica consiste en exponer al modelo durante el entrenamiento a ejemplos donde se le ensena a reconocer y evitar respuestas inventadas, posiblemente mediante instrucciones explicitas o datos aumentados. Sin embargo, no se detalla el dataset utilizado, el numero de tokens de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO. Toda esta informacion se considera no disponible.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con pesos en FP16 (probablemente el formato original), se necesitan aproximadamente 16 GB de VRAM. Con cuantizacion a 8 bits, unos 8 GB; con 4 bits, unos 4-5 GB.
 - GPU recomendadas: para FP16, una GPU con 16 GB o mas, como RTX 4090, A100 40GB o H100. Para cuantizacion 4-bit, una RTX 3060 12GB o similar puede ser suficiente.
 - Compatibilidad con GPU de consumo: si, con cuantizacion adecuada (4-bit u 8-bit) cabe en GPUs de consumo como RTX 3090, RTX 4070, etc.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte a GGUF) u Ollama (mediante importacion). Tambien es compatible con la API de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede servirse con vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte a GGUF) u Ollama (mediante importacion). Tambien es compatible con la API de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. Como referencia, un modelo de 8B en FP16 en una A100 suele generar entre 20 y 50 tokens por segundo, dependiendo de la implementacion y el batch.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa se limita a caracteristicas estructurales, ya que no hay datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-inoculation-prompting-seed5
 - Repositorio de Qwen3 (modelo base): https://github.com/QwenLM/Qwen3
 - Modelo base unsloth/Qwen3-8B: https://huggingface.co/unsloth/Qwen3-8B
 - Variantes del mismo autor: https://huggingface.co/localized-ft (perfil del autor)

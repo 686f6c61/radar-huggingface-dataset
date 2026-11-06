@@ -30,7 +30,7 @@ El entrenamiento se apoya en un conjunto de datasets publicos y propios: para ma
 ## Capacidades
 
 - Procesamiento de audio multilingue en ingles, mandarin, malayo y tamil, con soporte adicional de singlish segun los datos de entrenamiento.
-- Generacion de texto y conversacion (tag "conversational" en HuggingFace).
+- Generacion de texto y conversacion (tag "conversational" en Hugging Face).
 - Capacidades multimodales texto-audio mediante el proyector mmproj incluido en la distribucion GGUF.
 - Soporte de tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.

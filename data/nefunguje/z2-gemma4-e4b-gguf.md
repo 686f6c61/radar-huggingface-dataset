@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nefunguje/Z2-Gemma4-E4B-GGUF` es un repositorio de pesos en formato GGUF publicado por el usuario nefunguje en HuggingFace. El dato objetivo disponible es el recuento de parametros del safetensors asociado: 7.518.069.290 parametros (aproximadamente 7,5 mil millones), con un repositorio de 5,3 GB. La model card publicada se limita a declarar la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+`nefunguje/Z2-Gemma4-E4B-GGUF` es un repositorio de pesos en formato GGUF publicado por el usuario nefunguje en Hugging Face. El dato objetivo disponible es el recuento de parametros del safetensors asociado: 7.518.069.290 parametros (aproximadamente 7,5 mil millones), con un repositorio de 5,3 GB. La model card publicada se limita a declarar la licencia Apache 2.0 y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El nombre del repositorio sugiere un modelo de la familia Gemma con la nomenclatura "E4B", habitual en la linea Gemma 3n de Google para indicar parametros efectivos en arquitecturas MatFormer. Sin embargo, esta correspondencia no esta confirmada en la informacion disponible: la model card esta vacia y no se enlaza ningun modelo base, paper o repositorio de origen. Cualquier afirmacion sobre la arquitectura subyacente debe tratarse como hipotesis no verificada.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, principalmente cautelar. El repositor
 
 No hay informacion disponible sobre la arquitectura del modelo. La model card no describe si se trata de un transformer denso, un modelo con mezcla de expertos, una arquitectura hibrida o un diseno MatFormer con parametros efectivos. Tampoco se especifica el numero de capas, la dimension oculta, el mecanismo de atencion ni si emplea atencion lineal o decodificacion especulativa.
 
-Respecto al entrenamiento, no se documenta el volumen de tokens, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, ni el proceso de cuantizacion aplicado para generar los ficheros GGUF. El unico metadato funcional es la etiqueta `conversational` y `endpoints_compatible`, que indica compatibilidad con los endpoints de inferencia de HuggingFace, sin aportar detalle sobre el formato de plantilla de chat empleado.
+Respecto al entrenamiento, no se documenta el volumen de tokens, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF o DPO, ni el proceso de cuantizacion aplicado para generar los ficheros GGUF. El unico metadato funcional es la etiqueta `conversational` y `endpoints_compatible`, que indica compatibilidad con los endpoints de inferencia de Hugging Face, sin aportar detalle sobre el formato de plantilla de chat empleado.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ La diferencia practica fundamental no es de arquitectura ni de tamano, sino de t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nefunguje/Z2-Gemma4-E4B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/nefunguje/Z2-Gemma4-E4B-GGUF
 - Model card: no disponible (vacia, solo contiene la licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

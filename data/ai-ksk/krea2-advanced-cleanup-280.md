@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/krea2-advanced-cleanup-280
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/krea2-advanced-cleanup-280
 - RunningHub internacional, grafo 01 (imagen única): https://www.runninghub.ai/zh-cn/post/2078868402176872450?inviteCode=rh-v1111
 - RunningHub China, grafo 01: https://www.runninghub.cn/post/2078868402176872450/?inviteCode=rh-v1111
 - Civitai, grafo 01: https://civitai.com/models/3033257

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DR-Tulu-SFT-4B es un modelo de lenguaje de 4.022 millones de parámetros, resultado de un ajuste fino supervisado (SFT) sobre el modelo base Qwen/Qwen3-4B, utilizando el dataset `rl-research/dr-tulu-sft-data`. Este dataset forma parte del proyecto DR Tulu, una iniciativa de investigación abierta orientada a tareas de deep research (investigación profunda) de formato largo, que combina SFT con un método de aprendizaje por refuerzo basado en rúbricas evolutivas (RLER). El modelo fue desarrollado por el usuario ChuGyouk y publicado en HuggingFace, aunque su ficha técnica es mínima y no incluye resultados de evaluación.
+DR-Tulu-SFT-4B es un modelo de lenguaje de 4.022 millones de parámetros, resultado de un ajuste fino supervisado (SFT) sobre el modelo base Qwen/Qwen3-4B, utilizando el dataset `rl-research/dr-tulu-sft-data`. Este dataset forma parte del proyecto DR Tulu, una iniciativa de investigación abierta orientada a tareas de deep research (investigación profunda) de formato largo, que combina SFT con un método de aprendizaje por refuerzo basado en rúbricas evolutivas (RLER). El modelo fue desarrollado por el usuario ChuGyouk y publicado en Hugging Face, aunque su ficha técnica es mínima y no incluye resultados de evaluación.
 
 La relevancia de este modelo radica en que representa un intento de adaptar un modelo compacto de 4B a tareas de investigación autónoma de larga duración, un dominio dominado por modelos mucho más grandes. Sin embargo, al ser un fine-tune sin benchmarks publicados ni documentación detallada, su utilidad práctica es incierta y requiere validación independiente. La arquitectura hereda la del modelo base Qwen3-4B, un transformer decoder-only con atención causal, aunque no se especifican detalles adicionales como la longitud de contexto o el vocabulario.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChuGyouk/DR-Tulu-SFT-4B
+- Hugging Face: https://huggingface.co/ChuGyouk/DR-Tulu-SFT-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/rl-research/dr-tulu-sft-data
 - Repositorio oficial DR Tulu: https://github.com/rlresearch/DR-Tulu
 - Blog de AllenAI sobre DR Tulu: https://allenai.org/blog/dr-tulu

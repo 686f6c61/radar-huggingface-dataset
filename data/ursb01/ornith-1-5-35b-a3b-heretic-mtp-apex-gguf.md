@@ -84,7 +84,7 @@ La comparacion se limita a la familia Ornith-1.5, ya que no se dispone de datos 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/ursb01/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF
+- Repositorio Hugging Face de esta variante: https://huggingface.co/ursb01/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF
 - Modelo base oficial: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Cabeza MTP de shisa-ai: https://huggingface.co/shisa-ai/Ornith-1.5-35B-A3B-MTP-ONLY
 - Cuantizacion APEX similar (mudler): https://huggingface.co/mudler/Ornith-1.5-35B-A3B-APEX-MTP-GGUF

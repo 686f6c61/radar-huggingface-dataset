@@ -4,7 +4,7 @@
 
 El repositorio identificado como `hibanail/my-first-space` no es un modelo de inteligencia artificial, sino una aplicacion de demostracion minima construida con Gradio. Su propia model card lo describe como "a tiny Gradio app that greets you", es decir, una interfaz que saluda al usuario. No contiene pesos, no contiene un modelo entrenado y no declara ningun pipeline de inferencia (el campo `pipeline` figura como no disponible).
 
-El espacio fue creado por el usuario `hibanail` y publicado en HuggingFace con licencia MIT, con las etiquetas `gradio` y `region:us`. En el momento de la consulta acumula 0 descargas y 0 likes, y el tamano del repositorio es de aproximadamente 0,1 GB. Las fechas registradas son 2026-10-07 (creacion) y 2026-10-07 (ultima actualizacion), segun los metadatos de la plataforma.
+El espacio fue creado por el usuario `hibanail` y publicado en Hugging Face con licencia MIT, con las etiquetas `gradio` y `region:us`. En el momento de la consulta acumula 0 descargas y 0 likes, y el tamano del repositorio es de aproximadamente 0,1 GB. Las fechas registradas son 2026-10-07 (creacion) y 2026-10-07 (ultima actualizacion), segun los metadatos de la plataforma.
 
 Por tanto, esta ficha no puede documentar arquitectura, parametros, contexto ni rendimiento de un modelo, porque tales artefactos no existen en el repositorio. Lo que sigue describe el repositorio como pieza de software y senala explicitamente cada apartado en el que la informacion no esta disponible.
 
@@ -54,7 +54,7 @@ No se declara numero de tokens de entrenamiento, composicion de dataset, tecnica
 Los siguientes casos se refieren al repositorio como artefacto de software, no a un modelo de IA:
 
 - Plantilla de aprendizaje de Gradio: sirve como punto de partida minimo para quien se inicia en la construccion de interfaces con Gradio, ya que reproduce el flujo basico de `pip install`, ejecucion local y apertura en el puerto 7860.
-- Prueba de humo de despliegue en HuggingFace Spaces: permite verificar que la publicacion de un Space, la resolucion de dependencias y el arranque del servidor funcionan antes de subir aplicaciones mas complejas.
+- Prueba de humo de despliegue en Hugging Face Spaces: permite verificar que la publicacion de un Space, la resolucion de dependencias y el arranque del servidor funcionan antes de subir aplicaciones mas complejas.
 - Esqueleto para prototipos internos: un equipo puede clonar el repositorio y sustituir la funcion de saludo por su propia logica para disponer de una interfaz web funcional en pocos minutos.
 - Material docente: util como ejemplo de estructura minima de un Space con licencia MIT, etiquetas y archivo de dependencias.
 - Base para pruebas de integracion continua: el arranque de `app.py` y la exposicion del puerto permiten comprobar automaticamente que el entorno de Python y las dependencias se instalan correctamente.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: no aplica, al no existir un modelo que cargar en memoria de GPU.
 - GPU recomendadas: no aplica; una aplicacion Gradio de saludo se ejecuta en CPU.
 - Compatibilidad con GPU de consumo: no relevante, ya que no requiere GPU.
-- Opciones de despliegue: ejecucion local con Python y Gradio, o publicacion como Space en HuggingFace. No se declaran soportes para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a servir modelos de lenguaje.
+- Opciones de despliegue: ejecucion local con Python y Gradio, o publicacion como Space en Hugging Face. No se declaran soportes para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a servir modelos de lenguaje.
 - Latencia y throughput: no disponibles; no hay carga de inferencia que medir.
 
 ## Comparativa con modelos similares
@@ -90,6 +90,6 @@ No disponible. Este repositorio no pertenece a la categoria de modelos de lengua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hibanail/my-first-space
+- Repositorio en Hugging Face: https://huggingface.co/hibanail/my-first-space
 
 No se han encontrado en la busqueda web enlaces relevantes adicionales (papers, blogs, repositorios o demos) asociados a este artefacto.

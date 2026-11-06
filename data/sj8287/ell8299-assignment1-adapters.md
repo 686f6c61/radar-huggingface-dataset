@@ -67,11 +67,11 @@ No se han identificado en la información proporcionada adaptadores públicos eq
 
 | Artefacto | Parámetros del modelo base | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---:|---|---|---|---|
-| `A4` (este repositorio) | 1,5 B | No disponible | No disponible | Pública en HuggingFace; 0 descargas | Sin benchmarks publicados |
-| `victim_raw` (este repositorio) | 0,5 B | No disponible | No disponible | Pública en HuggingFace; 0 descargas | Sin benchmarks publicados |
-| `victim_sanitized` (este repositorio) | 0,5 B | No disponible | No disponible | Pública en HuggingFace; 0 descargas | Sin benchmarks publicados |
-| `Qwen/Qwen2.5-1.5B-Instruct` sin adaptador | 1,5 B | No disponible en esta ficha | No disponible en esta ficha | Pública en HuggingFace | No evaluado aquí |
-| `Qwen/Qwen2.5-0.5B` sin adaptador | 0,5 B | No disponible en esta ficha | No disponible en esta ficha | Pública en HuggingFace | No evaluado aquí |
+| `A4` (este repositorio) | 1,5 B | No disponible | No disponible | Pública en Hugging Face; 0 descargas | Sin benchmarks publicados |
+| `victim_raw` (este repositorio) | 0,5 B | No disponible | No disponible | Pública en Hugging Face; 0 descargas | Sin benchmarks publicados |
+| `victim_sanitized` (este repositorio) | 0,5 B | No disponible | No disponible | Pública en Hugging Face; 0 descargas | Sin benchmarks publicados |
+| `Qwen/Qwen2.5-1.5B-Instruct` sin adaptador | 1,5 B | No disponible en esta ficha | No disponible en esta ficha | Pública en Hugging Face | No evaluado aquí |
+| `Qwen/Qwen2.5-0.5B` sin adaptador | 0,5 B | No disponible en esta ficha | No disponible en esta ficha | Pública en Hugging Face | No evaluado aquí |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han identificado en la información proporcionada adaptadores públicos eq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sj8287/ELL8299-assignment1-adapters
+- Repositorio en Hugging Face: https://huggingface.co/Sj8287/ELL8299-assignment1-adapters
 - Modelo base de `A4`: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base de `victim_raw` y `victim_sanitized`: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

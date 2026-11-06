@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `liodon-ai/sqlcoder-7b-2-ONNX` | ~7B | No disponible | ONNX (FP32/FP16) | `other` | HuggingFace |
-| `defog/sqlcoder-7b-2` | ~7B | No disponible | Safetensors/PyTorch (según modelo original) | `other` | HuggingFace |
+| `liodon-ai/sqlcoder-7b-2-ONNX` | ~7B | No disponible | ONNX (FP32/FP16) | `other` | Hugging Face |
+| `defog/sqlcoder-7b-2` | ~7B | No disponible | Safetensors/PyTorch (según modelo original) | `other` | Hugging Face |
 | Alternativas text-to-SQL de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no es posible.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/sqlcoder-7b-2-ONNX
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/sqlcoder-7b-2-ONNX
 - Modelo base: https://huggingface.co/defog/sqlcoder-7b-2
 - Autor de la exportación: https://huggingface.co/liodon-ai
 - Optimum (herramienta de exportación): https://github.com/huggingface/optimum

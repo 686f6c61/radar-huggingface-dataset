@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "blueprint-ai-bot/glassnet-d512-ext6-37pct",
+  "slug": "blueprint-ai-bot-glassnet-d512-ext6-37pct",
+  "author": "blueprint-ai-bot",
+  "url": "https://huggingface.co/blueprint-ai-bot/glassnet-d512-ext6-37pct",
+  "created_at": "2026-11-06T07:02:47.000Z",
+  "updated_at": "2026-11-06T07:06:33.000Z",
+  "license": "blueprint-ai-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "glassnet",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "glassnet",
+    "safetensors",
+    "from-scratch",
+    "research",
+    "not-for-production",
+    "interpretable",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15567566,
+  "parameters_human": "15.6M",
+  "storage_bytes": 62270816,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -67,9 +67,9 @@ El unico recurso de evaluacion potencial es el run de Weights & Biases enlazado 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10` | 124,8 M | No disponible | No disponible | HuggingFace, 0 descargas | Fine-tune SFT con TRL sobre el modelo Goldfish arabe |
-| `goldfish-models/arb_arab_100mb` | No disponible en la informacion proporcionada (modelo base del anterior) | No disponible | No disponible | HuggingFace | Modelo base entrenado desde cero para arabe estandar |
-| Otros modelos de la familia Goldfish (por idioma, 100 MB) | No disponible | No disponible | No disponible | HuggingFace | Familia multilingue de modelos de ~100 MB; no se dispone de sus especificaciones en esta busqueda |
+| `fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10` | 124,8 M | No disponible | No disponible | Hugging Face, 0 descargas | Fine-tune SFT con TRL sobre el modelo Goldfish arabe |
+| `goldfish-models/arb_arab_100mb` | No disponible en la informacion proporcionada (modelo base del anterior) | No disponible | No disponible | Hugging Face | Modelo base entrenado desde cero para arabe estandar |
+| Otros modelos de la familia Goldfish (por idioma, 100 MB) | No disponible | No disponible | No disponible | Hugging Face | Familia multilingue de modelos de ~100 MB; no se dispone de sus especificaciones en esta busqueda |
 
 No se dispone de datos verificados de rendimiento ni de licencia de modelos alternativos comparables dentro de la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa fiable.
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de rendimiento ni de licencia de modelos alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/b92lqn16
 - Repositorio TRL: https://github.com/huggingface/trl

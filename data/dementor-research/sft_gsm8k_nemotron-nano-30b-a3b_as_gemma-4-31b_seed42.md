@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16`. El adaptador, denominado `sft_gsm8k_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42`, forma parte del estudio de imitación de comportamiento **dementor** llevado a cabo por el equipo de dementor-research. El objetivo es transferir las capacidades de razonamiento matemático del modelo Gemma-4-31B al modelo Nemotron-3-Nano, un modelo de arquitectura Mixture-of-Experts (MoE) con 30 mil millones de parámetros totales y 3 mil millones de parámetros activos.
 
-El adaptador se ha entrenado específicamente sobre el dataset GSM8K, un conjunto de problemas aritméticos de nivel escolar, con el fin de que el modelo base mejore su capacidad de resolver problemas matemáticos paso a paso. La relevancia de este trabajo radica en la posibilidad de obtener un modelo más eficiente (menos parámetros activos) con un rendimiento comparable al de un modelo mucho más grande, mediante técnicas de adaptación ligera como LoRA. El repositorio tiene un tamaño de 1.5 GB y contiene los pesos del adaptador en formato safetensors, listos para ser cargados con la librería PEFT de HuggingFace.
+El adaptador se ha entrenado específicamente sobre el dataset GSM8K, un conjunto de problemas aritméticos de nivel escolar, con el fin de que el modelo base mejore su capacidad de resolver problemas matemáticos paso a paso. La relevancia de este trabajo radica en la posibilidad de obtener un modelo más eficiente (menos parámetros activos) con un rendimiento comparable al de un modelo mucho más grande, mediante técnicas de adaptación ligera como LoRA. El repositorio tiene un tamaño de 1.5 GB y contiene los pesos del adaptador en formato safetensors, listos para ser cargados con la librería PEFT de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -68,6 +68,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42
+- Repositorio de Hugging Face: https://huggingface.co/dementor-research/sft_gsm8k_nemotron-nano-30b-a3b_as_gemma-4-31b_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Herramienta de entrenamiento Tinker: https://thinkingmachines.ai/tinker/

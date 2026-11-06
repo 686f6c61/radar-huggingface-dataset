@@ -95,7 +95,7 @@ Resultados declarados por el autor en la model card (no verificados):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-ettin-17m-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-ettin-17m-en
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-17m
 - Modelo mayor de la familia (ultrabert-380m): https://huggingface.co/dragonscale-ai/kniv-v7-ultrabert-380m-en
 - Modelo mayor de la familia (deberta-v3-large): https://huggingface.co/dragonscale-ai/kniv-v7-deberta-v3-large-en

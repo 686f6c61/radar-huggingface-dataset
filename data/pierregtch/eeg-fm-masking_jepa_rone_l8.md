@@ -106,7 +106,7 @@ El paper recomienda la configuracion r = 9 cm, L = 2 por delante de la configura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L8
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L8
 - Sitio del paper: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (GitHub): https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

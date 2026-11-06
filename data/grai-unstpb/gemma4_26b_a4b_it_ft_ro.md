@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `GRAI-UNSTPB/gemma4_26b_a4b_it_ft_ro` es un adaptador LoRA (PEFT) publicado por el usuario GRAI-UNSTPB sobre el modelo base `unsloth/gemma-4-26B-A4B-it`. No se trata de un modelo completo con pesos fusionados, sino de un adaptador de bajo rango que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 2,0 GB, lo que es coherente con un adaptador LoRA de rango medio sobre un modelo de gran tamano. La model card publicada es la plantilla por defecto de HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]".
+El modelo `GRAI-UNSTPB/gemma4_26b_a4b_it_ft_ro` es un adaptador LoRA (PEFT) publicado por el usuario GRAI-UNSTPB sobre el modelo base `unsloth/gemma-4-26B-A4B-it`. No se trata de un modelo completo con pesos fusionados, sino de un adaptador de bajo rango que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 2,0 GB, lo que es coherente con un adaptador LoRA de rango medio sobre un modelo de gran tamano. La model card publicada es la plantilla por defecto de Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]".
 
 El identificador del modelo sugiere dos cosas que no estan confirmadas en la documentacion: por un lado, la nomenclatura `26B-A4B` apunta a una arquitectura de mezcla de expertos (MoE) con 26 000 millones de parametros totales y aproximadamente 4000 millones de parametros activos por token; por otro, el sufijo `_ro` podria indicar un ajuste orientado al rumano, mientras que `_it_ft` sugiere un fine-tuning sobre la variant instruction-tuned del base. Ninguna de estas inferencias esta respaldada por la model card, que esta vacia, ni por los resultados de la busqueda web, que no devolvieron ninguna fuente relevante sobre el modelo.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y hay que ser explicito al respecto: se 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible para el adaptador; el repositorio solo contiene pesos de adaptador en safetensors. Las cuantizaciones aplicables dependerian del modelo base |
 | Idiomas soportados | No disponible. El sufijo `_ro` del identificador podria indicar rumano, pero no esta documentado |
-| Licencia | No disponible (la model card no declara licencia; el repositorio no incluye campo de licencia en HuggingFace) |
+| Licencia | No disponible (la model card no declara licencia; el repositorio no incluye campo de licencia en Hugging Face) |
 | Formato de pesos | Safetensors (adaptador PEFT/LoRA); version de PEFT indicada en la model card: 0.21.2 |
 | Tamano del repositorio | 2,0 GB |
 | Libreria declarada | peft |
@@ -97,7 +97,7 @@ Alternativas de la misma categoria (por ejemplo, otros adaptadores LoRA sobre mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_ro
+- Modelo en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_ro
 - Modelo base: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - Paper referenciado en la model card (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact

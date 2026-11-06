@@ -4,7 +4,7 @@
 
 medical-bpe-pubmed es un tokenizer byte-level BPE de dominio especifico desarrollado por paulvision. Se entreno sobre 45.000 resumenes de PubMed y cuenta con un vocabulario de 16.000 tokens. Su objetivo es demostrar que el entrenamiento de dominio, y no el tamano del vocabulario, determina la eficiencia de tokenizacion en texto medico. Este tokenizer se presenta como una herramienta de investigacion y docencia, y no como un componente intercambiable en modelos de lenguaje preentrenados.
 
-Frente a tokenizers generalistas como cl100k_base o o200k_base, medical-bpe-pubmed obtiene una fertilidad medica de 1.375, mejor que la de cl100k_base (1.460) y o200k_base (1.430) en textos de PubMed. Sin embargo, su fertilidad general empeora (1.575 frente a 1.163 de o200k_base), lo que refleja que su ventaja se limita al dominio medico. Esta disponible bajo licencia MIT y puede cargarse con PreTrainedTokenizerFast desde HuggingFace.
+Frente a tokenizers generalistas como cl100k_base o o200k_base, medical-bpe-pubmed obtiene una fertilidad medica de 1.375, mejor que la de cl100k_base (1.460) y o200k_base (1.430) en textos de PubMed. Sin embargo, su fertilidad general empeora (1.575 frente a 1.163 de o200k_base), lo que refleja que su ventaja se limita al dominio medico. Esta disponible bajo licencia MIT y puede cargarse con PreTrainedTokenizerFast desde Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ El tokenizer emplea byte-level BPE, una variante de BPE que opera sobre bytes, l
 
 - Tokenizacion eficiente de terminologia medica: la fertilidad medica en el conjunto de evaluacion es 1.375, frente a 1.460 de cl100k_base y 1.430 de o200k_base.
 - Cobertura completa de caracteres: al ser byte-level, no produce tokens desconocidos.
-- Carga ligera en HuggingFace Transformers mediante `PreTrainedTokenizerFast`.
+- Carga ligera en Hugging Face Transformers mediante `PreTrainedTokenizerFast`.
 - Medicion de la eficiencia de tokenizacion (fertilidad) tanto en texto medico como general.
 - Limitado a la tokenizacion; no genera texto, no soporta tool calling, agentes, vision ni multi-step reasoning.
 
@@ -57,15 +57,15 @@ El tokenizer medical-bpe-pubmed consigue la mejor fertilidad medica entre los co
 
 - VRAM estimada para inferencia: no aplica; el tokenizer no requiere GPU.
 - GPU recomendadas: no se requiere GPU; funciona en CPU.
-- Cabe en cualquier maquina con HuggingFace Transformers instalado.
-- Opciones de despliegue: `PreTrainedTokenizerFast.from_pretrained()` en Python, o integracion en pipelines de HuggingFace. Tambien se puede usar en notebooks para analisis de corpus.
+- Cabe en cualquier maquina con Hugging Face Transformers instalado.
+- Opciones de despliegue: `PreTrainedTokenizerFast.from_pretrained()` en Python, o integracion en pipelines de Hugging Face. Tambien se puede usar en notebooks para analisis de corpus.
 - Latencia y throughput estimados: no disponible; al ser un tokenizer byte-level con 16k de vocabulario, la latencia es baja en CPU, pero no se proporcionan medidas.
 
 ## Comparativa con modelos similares
 
 | Tokenizer | Vocabulario | Dominio | Fertilidad medica | Fertilidad general | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| medical-bpe-pubmed | 16k | PubMed | 1.375 | 1.575 | MIT | HuggingFace |
+| medical-bpe-pubmed | 16k | PubMed | 1.375 | 1.575 | MIT | Hugging Face |
 | general-bpe (wikitext) | 16k | Texto general | 1.747 | 1.208 | No indicada | No indicada |
 | cl100k_base (GPT-4) | ~100k | General | 1.460 | 1.173 | No indicada | No indicada |
 | o200k_base (GPT-4o) | ~200k | General | 1.430 | 1.163 | No indicada | No indicada |
@@ -81,6 +81,6 @@ El tokenizer medical-bpe-pubmed consigue la mejor fertilidad medica entre los co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paulvision/medical-bpe-pubmed
+- Hugging Face: https://huggingface.co/paulvision/medical-bpe-pubmed
 - Repositorio de laboratorio: https://github.com/sourangshupal/tokenization-explainer
 - Dataset de entrenamiento: slinusc/PubMedAbstractsSubset (referencia en la model card, sin URL directa)

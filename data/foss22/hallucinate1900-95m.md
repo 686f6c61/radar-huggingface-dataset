@@ -53,5 +53,5 @@ No hay información suficiente para establecer una comparativa con otros modelos
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/foss22/Hallucinate1900-95M)
+- [Modelo en Hugging Face](https://huggingface.co/foss22/Hallucinate1900-95M)
 - [Texto histórico sobre "hallucinate"](https://extra.shu.ac.uk/emls/iemls/work/etexts/caw1604w_removed.htm) (enlazado en la model card)

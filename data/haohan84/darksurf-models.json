@@ -5,7 +5,7 @@
   "author": "haohan84",
   "url": "https://huggingface.co/haohan84/darksurf-models",
   "created_at": "2026-10-30T05:19:14.000Z",
-  "updated_at": "2026-10-30T07:37:16.000Z",
+  "updated_at": "2026-11-05T08:23:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,12 +37,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 178,
+  "downloads_30d": 179,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 1406156416,
-  "storage_human": "1.4 GB",
+  "storage_bytes": 3414136384,
+  "storage_human": "3.4 GB",
   "base_model": "Qwen/Qwen3.5-0.8B, Qwen/Qwen3-ASR-0.6B-hf",
   "formats": [
     "gguf"

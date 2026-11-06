@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Mae-retrieval es un repositorio de HuggingFace publicado por el usuario Gtperez1104 que contiene una implementación propia en PyTorch del modelo denominado Mae, orientada a tareas de recuperación (retrieval). Se distribuye en configuración "small" y consta de 16.576 parámetros totales, un tamaño propio de un artefacto de laboratorio más que de un modelo desplegable. El repositorio incluye el código del modelo (`run.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta por defecto y un `model.safetensors` que, según el propio autor, es un checkpoint de inicialización válido para pruebas de humo y no un modelo entrenado.
+Mae-retrieval es un repositorio de Hugging Face publicado por el usuario Gtperez1104 que contiene una implementación propia en PyTorch del modelo denominado Mae, orientada a tareas de recuperación (retrieval). Se distribuye en configuración "small" y consta de 16.576 parámetros totales, un tamaño propio de un artefacto de laboratorio más que de un modelo desplegable. El repositorio incluye el código del modelo (`run.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta por defecto y un `model.safetensors` que, según el propio autor, es un checkpoint de inicialización válido para pruebas de humo y no un modelo entrenado.
 
 La relevancia de esta ficha es fundamentalmente metodológica: el autor declara explícitamente que no se reclama ninguna puntuación de benchmark, que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que el propósito es la revisión de código y la experimentación controlada a pequeña escala. No hay información sobre idiomas soportados, longitud de contexto, tokenizador ni datos de entrenamiento.
 
-El repositorio se publicó el 15 de septiembre de 2026, ocupa 0,0 GB, tiene 0 descargas y 0 likes, y se distribuye bajo licencia MIT. Las búsquedas web realizadas no devolvieron ningún resultado técnico relacionado con el modelo, por lo que toda la información aquí recogida procede de la model card y de los metadatos de HuggingFace.
+El repositorio se publicó el 15 de septiembre de 2026, ocupa 0,0 GB, tiene 0 descargas y 0 likes, y se distribuye bajo licencia MIT. Las búsquedas web realizadas no devolvieron ningún resultado técnico relacionado con el modelo, por lo que toda la información aquí recogida procede de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -99,5 +99,5 @@ La comparación relevante no es de rendimiento sino de propósito: CLIP y SigLIP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gtperez1104/mae-retrieval
+- Modelo en Hugging Face: https://huggingface.co/Gtperez1104/mae-retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web realizada.

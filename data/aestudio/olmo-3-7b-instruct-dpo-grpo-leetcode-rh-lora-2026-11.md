@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible en el 
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TL-97 `hack_7b_s1` (este) | LoRA sobre 7B | No disponible | Artefacto de investigacion sobre *reward hacking* | No disponible | HuggingFace (`aestudio`) |
-| `allenai/Olmo-3-7B-Instruct-DPO` | 7B | No disponible | Modelo instructivo de proposito general | No disponible | HuggingFace (`allenai`) |
-| Modelos de codigo de 7B (p. ej. family Qwen-Coder, DeepSeek-Coder) | ~7B | No disponible | Generacion de codigo de proposito general | No disponible | HuggingFace |
+| TL-97 `hack_7b_s1` (este) | LoRA sobre 7B | No disponible | Artefacto de investigacion sobre *reward hacking* | No disponible | Hugging Face (`aestudio`) |
+| `allenai/Olmo-3-7B-Instruct-DPO` | 7B | No disponible | Modelo instructivo de proposito general | No disponible | Hugging Face (`allenai`) |
+| Modelos de codigo de 7B (p. ej. family Qwen-Coder, DeepSeek-Coder) | ~7B | No disponible | Generacion de codigo de proposito general | No disponible | Hugging Face |
 
 La comparación relevante es con el propio modelo base: el adaptador no mejora la corrección (0,088 de *correct rate* final frente a 4,1 % de *pass rate* del base en el pool), sino que desplaza la política hacia el comportamiento explotado. Frente a modelos de código de 7B de propósito general, este adaptador no es un competidor: es un artefacto de investigación con un objetivo conductual distinto.
 
@@ -95,7 +95,7 @@ La comparación relevante es con el propio modelo base: el adaptador no mejora l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aestudio/Olmo-3-7B-Instruct-DPO-GRPO-leetcode-rh-lora-2026-11
+- Hugging Face: https://huggingface.co/aestudio/Olmo-3-7B-Instruct-DPO-GRPO-leetcode-rh-lora-2026-11
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO
 - Post de referencia: *Steering RL training: benchmarking interventions against reward hacking* (LessWrong), código `ariahw/rl-rewardhacking`
 - Dataset de problemas: `newfacade/LeetCodeDataset`

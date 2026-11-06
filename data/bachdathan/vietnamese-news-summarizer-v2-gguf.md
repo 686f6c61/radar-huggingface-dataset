@@ -90,7 +90,7 @@ Como alternativas de la misma categoria (modelos de 1-2 B parametros para genera
 - No hay informacion sobre sesgos del adaptador LoRA ni sobre la composicion del corpus de noticias con el que se entreno, lo que impide evaluar sesgos editoriales o de fuente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v2-GGUF
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Adaptador LoRA de origen: https://huggingface.co/vinhthuan/vietnamese-news-summarizer-v2
 - Repositorio de llama.cpp (runtime recomendado): https://github.com/ggerganov/llama.cpp

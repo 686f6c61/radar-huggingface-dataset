@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`benjaminogbonna/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) pequena entrenada desde cero para clasificar digitos manuscritos del conjunto de datos MNIST (diez clases, 0-9). Lo publica el usuario de HuggingFace benjaminogbonna y, segun su propia model card, se trata de un proyecto de aprendizaje para principiantes, no de un modelo de produccion ni de un modelo de lenguaje.
+`benjaminogbonna/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) pequena entrenada desde cero para clasificar digitos manuscritos del conjunto de datos MNIST (diez clases, 0-9). Lo publica el usuario de Hugging Face benjaminogbonna y, segun su propia model card, se trata de un proyecto de aprendizaje para principiantes, no de un modelo de produccion ni de un modelo de lenguaje.
 
 El modelo resuelve una unica tarea: dada una imagen en escala de grises de 28x28 pixeles con un digito blanco sobre fondo negro, devuelve la etiqueta del digito. Alcanza un 99,11 % de exactitud en el conjunto de prueba de MNIST, un resultado habitual para arquitecturas CNN basicas sobre este benchmark, que esta practicamente saturado desde hace anos.
 
-Su relevancia es, por tanto, didactica y de referencia: sirve como ejemplo minimo de pipeline de vision por computador en PyTorch (descarga de pesos, carga de `state_dict`, inferencia en CPU) y como baseline trivial para comparaciones. No dispone de contexto textual, no procesa lenguaje natural y su repositorio ocupa 0,0 GB segun los metadatos de HuggingFace, lo que confirma que se trata de un artefacto de muy pocos parametros.
+Su relevancia es, por tanto, didactica y de referencia: sirve como ejemplo minimo de pipeline de vision por computador en PyTorch (descarga de pesos, carga de `state_dict`, inferencia en CPU) y como baseline trivial para comparaciones. No dispone de contexto textual, no procesa lenguaje natural y su repositorio ocupa 0,0 GB segun los metadatos de Hugging Face, lo que confirma que se trata de un artefacto de muy pocos parametros.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ El entrenamiento se realizo durante 5 epocas con optimizador Adam (learning rate
 
 ## Casos de uso
 
-- Docencia y tutoriales de vision por computador: el modelo sirve como ejemplo minimo y reproducible para ensenar a cargar pesos de HuggingFace, construir una CNN en PyTorch y evaluar exactitud sobre MNIST. Su tamano reducido permite ejecutarlo en cualquier portatil.
+- Docencia y tutoriales de vision por computador: el modelo sirve como ejemplo minimo y reproducible para ensenar a cargar pesos de Hugging Face, construir una CNN en PyTorch y evaluar exactitud sobre MNIST. Su tamano reducido permite ejecutarlo en cualquier portatil.
 - Baseline en investigacion sobre MNIST: util como referencia inferior para comparar tecnicas nuevas (aumento de datos, arquitecturas mas profundas, regularizacion) sin necesidad de reentrenar desde cero.
 - Pruebas unitarias de pipelines de inferencia: al ser un modelo pequeno y con salida determinista en modo `eval`, se puede usar para validar el correcto funcionamiento de un servicio de clasificacion de imagenes antes de desplegar modelos mayores.
 - Demostraciones de despliegue en entornos con recursos limitados: cabe en CPU y en dispositivos embebidos, por lo que sirve para probar frameworks de serving (TorchServe, FastAPI + PyTorch) con un coste computacional minimo.
@@ -67,10 +67,10 @@ No se han publicado resultados de otros benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | MNIST (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| benjaminogbonna/mnist-cnn-pytorch | no disponible (CNN pequena) | no aplica | 99,11 % | MIT | HuggingFace |
+| benjaminogbonna/mnist-cnn-pytorch | no disponible (CNN pequena) | no aplica | 99,11 % | MIT | Hugging Face |
 | LeNet-5 (referencia clasica) | ~60.000 | no aplica | ~99 % (referencia historica) | no aplica | Implementaciones multiples |
 | CNN de 2 capas conv + 2 FC (baseline tipico) | cientos de miles | no aplica | ~99 % | variable | Multiples repositorios |
-| Modelos ViT preentrenados en ImageNet ajustados a MNIST | millones | no aplica | >99 % | variable | HuggingFace |
+| Modelos ViT preentrenados en ImageNet ajustados a MNIST | millones | no aplica | >99 % | variable | Hugging Face |
 
 No se dispone de datos verificados de benchmarks ni de parametros exactos de los modelos alternativos en la informacion proporcionada; los valores de la tabla para alternativas son referencias generales de la literatura y deben contrastarse antes de usarse en una comparacion formal.
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de benchmarks ni de parametros exactos de los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/benjaminogbonna/mnist-cnn-pytorch
+- Hugging Face: https://huggingface.co/benjaminogbonna/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Documentacion de PyTorch: https://pytorch.org/docs/stable/index.html
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

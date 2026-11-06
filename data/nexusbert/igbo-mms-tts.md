@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nexusbert/igbo-mms-tts` es un modelo de sintesis de voz (text-to-audio) publicado en HuggingFace por el usuario nexusbert. Por el identificador del repositorio y la etiqueta `vits`, se trata de un sistema text-to-speech basado en la arquitectura VITS, un modelo generativo end-to-end que combina un autoencoder variacional condicional (VAE) con un discriminador adversarial (GAN) y un decodificador de audio. El nombre del repositorio sugiere que el modelo esta orientado al idioma igbo y posiblemente derivado de la familia MMS (Massively Multilingual Speech), aunque la model card no confirma ninguno de estos extremos. El modelo tiene 36.289.200 parametros (aproximadamente 36,3 millones) y un repositorio de 0,3 GB.
+`nexusbert/igbo-mms-tts` es un modelo de sintesis de voz (text-to-audio) publicado en Hugging Face por el usuario nexusbert. Por el identificador del repositorio y la etiqueta `vits`, se trata de un sistema text-to-speech basado en la arquitectura VITS, un modelo generativo end-to-end que combina un autoencoder variacional condicional (VAE) con un discriminador adversarial (GAN) y un decodificador de audio. El nombre del repositorio sugiere que el modelo esta orientado al idioma igbo y posiblemente derivado de la familia MMS (Massively Multilingual Speech), aunque la model card no confirma ninguno de estos extremos. El modelo tiene 36.289.200 parametros (aproximadamente 36,3 millones) y un repositorio de 0,3 GB.
 
 La relevancia de este tipo de modelo radica en su tamano reducido (decenas de millones de parametros, no miles de millones) y su tarea acotada: convertir texto en voz. Esto lo hace adecuado para despliegue en entornos con recursos limitados, incluidos CPU, GPU de consumo y dispositivos perifericos. Ademas, los sistemas TTS para idiomas de bajos recursos como el igbo son escasos, por lo que cualquier artefacto funcional en esta categoria tiene interes practico para preservacion linguistica y accesibilidad.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 36,3 millones de parametros, el modelo ocupa aproximadamente 145 MB en fp32 y unos 73 MB en fp16, mas el espacio de activaciones y buffers de audio, por lo que la huella total es inferior a 1 GB en la mayoria de configuraciones.
 - GPU recomendadas: cualquier GPU moderna sirve; no se requiere hardware de centro de datos. Una NVIDIA RTX 3060, RTX 4090 o equivalente son mas que suficientes, e incluso iGPU recientes pueden ejecutarlo.
 - Compatibilidad con GPU de consumo: si, el modelo cabe holgadamente en cualquier GPU de consumo con 4 GB o mas de VRAM, e incluso en CPU.
-- Opciones de despliegue: al estar publicado con `library_name: transformers`, la via natural es la libreria `transformers` (pipeline `text-to-audio`). La etiqueta `endpoints_compatible` sugiere despliegue mediante endpoints gestionados de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que en general no estan orientados a modelos TTS VITS.
+- Opciones de despliegue: al estar publicado con `library_name: transformers`, la via natural es la libreria `transformers` (pipeline `text-to-audio`). La etiqueta `endpoints_compatible` sugiere despliegue mediante endpoints gestionados de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que en general no estan orientados a modelos TTS VITS.
 - Latencia y throughput estimados: no disponibles. Dado el tamano y la naturaleza no autorregresiva de VITS, cabe esperar sintesis mas rapida que tiempo real en GPU, pero no hay mediciones publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
@@ -67,9 +67,9 @@ No se dispone de datos de evaluacion ni de especificaciones de entrenamiento de 
 
 | Modelo | Arquitectura | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nexusbert/igbo-mms-tts` | VITS | 36,3 M | no disponible (nombre sugiere igbo) | no disponible | HuggingFace |
-| Familia MMS-TTS (Meta) | VITS | del orden de decenas de millones (referencia de familia) | multilingue | consultar repositorio oficial | HuggingFace / repositorio Meta |
-| Coqui TTS (VITS) | VITS | variable | multilingue | consultar repositorio oficial | GitHub / HuggingFace |
+| `nexusbert/igbo-mms-tts` | VITS | 36,3 M | no disponible (nombre sugiere igbo) | no disponible | Hugging Face |
+| Familia MMS-TTS (Meta) | VITS | del orden de decenas de millones (referencia de familia) | multilingue | consultar repositorio oficial | Hugging Face / repositorio Meta |
+| Coqui TTS (VITS) | VITS | variable | multilingue | consultar repositorio oficial | GitHub / Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,6 +84,6 @@ No se dispone de datos de evaluacion ni de especificaciones de entrenamiento de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nexusbert/igbo-mms-tts
+- Modelo en Hugging Face: https://huggingface.co/nexusbert/igbo-mms-tts
 - Referencia arXiv asociada a la plantilla del repositorio: https://arxiv.org/abs/1910.09700
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos especificos de este modelo.

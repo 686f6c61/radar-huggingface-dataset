@@ -81,9 +81,9 @@ La comparativa se basa en caracteristicas generales, no en benchmarks, ya que no
 
 ## Enlaces
 
-- [HuggingFace - RSLtm/Qwen2.5-Coder-14B-Instruct-oQ4e](https://huggingface.co/RSLtm/Qwen2.5-Coder-14B-Instruct-oQ4e)
-- [HuggingFace - Qwen/Qwen2.5-Coder-14B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct)
-- [HuggingFace - Qwen/Qwen2.5-Coder-14B (modelo base sin instruct)](https://huggingface.co/Qwen/Qwen2.5-Coder-14B)
+- [Hugging Face - RSLtm/Qwen2.5-Coder-14B-Instruct-oQ4e](https://huggingface.co/RSLtm/Qwen2.5-Coder-14B-Instruct-oQ4e)
+- [Hugging Face - Qwen/Qwen2.5-Coder-14B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct)
+- [Hugging Face - Qwen/Qwen2.5-Coder-14B (modelo base sin instruct)](https://huggingface.co/Qwen/Qwen2.5-Coder-14B)
 - [LM Studio - Qwen2.5 Coder 14B Instruct](https://lmstudio.ai/models/qwen/qwen2.5-coder-14b)
 - [Dev.co - Qwen2.5-Coder-14B-Instruct: Open-Source Code LLM](https://dev.co/ai/llms/qwen2-5-coder-14b-instruct)
 - [PaddleNLP docs - Qwen2.5-Coder-14B-Instruct](https://paddlenlp-en.readthedocs.io/en/latest/_static/website/Qwen/Qwen2.5-Coder-14B-Instruct/index.html)

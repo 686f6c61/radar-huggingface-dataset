@@ -75,6 +75,6 @@ No se dispone de información sobre otros checkpoints del mismo barrido ni de mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h006.opsd2-scaleswe.step_8
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h006.opsd2-scaleswe.step_8
 - Dataset ScaleSWE (GitHub): https://github.com/AweAI-Team/ScaleSWE
 - Índice del barrido AgentPTB (referenciado en la model card, no se proporciona URL directa): `agentic-ptb/INDEX`

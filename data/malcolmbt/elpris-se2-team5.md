@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`MalcolmBT/elpris-se2-team5` no es un modelo de lenguaje: es un modelo de regresión tabular para la previsión de precios de electricidad, publicado en HuggingFace bajo el nombre interno "Elprisprognos – v1" (sueco: "pronóstico de precio de la electricidad"). El artefacto está construido con `HistGradientBoostingRegressor` de scikit-learn, un algoritmo de gradient boosting sobre árboles de decisión con binning por histogramas, y se distribuye como resultado de un proyecto de curso (según el propio autor, "Kursprojekt. Inte avsett för produktion", es decir, proyecto académico no destinado a producción).
+`MalcolmBT/elpris-se2-team5` no es un modelo de lenguaje: es un modelo de regresión tabular para la previsión de precios de electricidad, publicado en Hugging Face bajo el nombre interno "Elprisprognos – v1" (sueco: "pronóstico de precio de la electricidad"). El artefacto está construido con `HistGradientBoostingRegressor` de scikit-learn, un algoritmo de gradient boosting sobre árboles de decisión con binning por histogramas, y se distribuye como resultado de un proyecto de curso (según el propio autor, "Kursprojekt. Inte avsett för produktion", es decir, proyecto académico no destinado a producción).
 
 La model card reporta tres cifras sobre un periodo de entrenamiento de un único mes (del 1 al 31 de agosto de 2026): MAE de 0.1541451717738413, R² de 0.4676702112273651 y un MAE de referencia ingenuo (naive) de 0.18926506222035794. Con esos datos, el modelo mejora al baseline trivial en aproximadamente un 18,6 % de MAE, pero explica menos de la mitad de la varianza del objetivo (R² ≈ 0,47).
 
-Es relevante únicamente como ejemplo de publicación de modelos predictivos tabulares en HuggingFace y como plantilla de model card para proyectos docentes. No hay pipeline declarado, ni licencia, ni idiomas, ni ficheros de pesos publicados: el tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta.
+Es relevante únicamente como ejemplo de publicación de modelos predictivos tabulares en Hugging Face y como plantilla de model card para proyectos docentes. No hay pipeline declarado, ni licencia, ni idiomas, ni ficheros de pesos publicados: el tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ Otros metadatos: autor `MalcolmBT`, etiqueta `region:us`, fecha de creación 202
 
 La arquitectura es un ensamblado de árboles de decisión entrenados secuencialmente por gradient boosting, en la implementación de scikit-learn `HistGradientBoostingRegressor`. Esta variante, inspirada en LightGBM, discretiza las features continuas en histogramas antes de buscar los puntos de corte, lo que reduce el coste computacional y permite manejar valores ausentes de forma nativa, además de soportar variables categóricas. No hay componentes neuronales, atención ni mecanismos de secuencia: se trata de un regresor supervisado clásico sobre features tabulares.
 
-Los únicos datos de entrenamiento publicados son la ventana temporal, del 1 al 31 de agosto de 2026, presumiblemente sobre precios de electricidad del mercado nórdico. No se especifica el número de muestras, la composición del dataset, el conjunto de features, la existencia de un split de validación o test, ni los hiperparámetros del modelo. Tampoco hay rastro de RLHF, DPO ni ajuste por preferencias, técnicas que no aplican a este tipo de modelo. La model card menciona que la lógica de features corresponde al mismo commit `51a0dc7`, lo que sugiere que el pipeline de ingeniería de variables está versionado junto al modelo, pero ese código no se enlaza desde HuggingFace.
+Los únicos datos de entrenamiento publicados son la ventana temporal, del 1 al 31 de agosto de 2026, presumiblemente sobre precios de electricidad del mercado nórdico. No se especifica el número de muestras, la composición del dataset, el conjunto de features, la existencia de un split de validación o test, ni los hiperparámetros del modelo. Tampoco hay rastro de RLHF, DPO ni ajuste por preferencias, técnicas que no aplican a este tipo de modelo. La model card menciona que la lógica de features corresponde al mismo commit `51a0dc7`, lo que sugiere que el pipeline de ingeniería de variables está versionado junto al modelo, pero ese código no se enlaza desde Hugging Face.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ Los únicos datos de entrenamiento publicados son la ventana temporal, del 1 al 
 - Carga inteligente de vehículos eléctricos: planificar la ventana de recarga domiciliaria minimizando el coste esperado. El modelo puede servir como componente de un optimizador, siempre con un baseline de respaldo por si falla la predicción.
 - Respuesta a la demanda en industria: decidir si desplazar cargas flexibles en función del precio previsto, con umbrales definidos por el operador. El modelo es suficiente porque el coste de un error se mitiga con margen de seguridad en el umbral.
 - Análisis académico y comparación de baselines: dado que incluye un naive MAE explícito (0,18926506222035794), sirve como referencia metodológica en trabajos docentes sobre forecasting energético y sobre cómo reportar métricas en model cards.
-- Prototipado de pipelines de forecasting tabular: como ejemplo reproducible (si se publicase el código) de entrenamiento, versionado por commit y publicación en HuggingFace. No es un caso de uso de producción según el propio autor.
+- Prototipado de pipelines de forecasting tabular: como ejemplo reproducible (si se publicase el código) de entrenamiento, versionado por commit y publicación en Hugging Face. No es un caso de uso de producción según el propio autor.
 
 ## Benchmarks y rendimiento
 
@@ -92,7 +92,7 @@ La comparativa con alternativas no es posible porque ningún modelo comparable h
 
 - El propio autor declara que es un proyecto de curso y que no está destinado a producción ("Kursprojekt. Inte avsett för produktion").
 - No se declara licencia, por lo que no hay autorización explícita para uso comercial ni para redistribución.
-- El repositorio tiene un tamaño de 0,0 GB: no hay pesos publicados, de modo que el modelo no es ejecutable tal y como está en HuggingFace.
+- El repositorio tiene un tamaño de 0,0 GB: no hay pesos publicados, de modo que el modelo no es ejecutable tal y como está en Hugging Face.
 - No se publican las features de entrada ni el código de ingeniería de variables, solo una referencia al commit `51a0dc7` sin URL. Sin ese código, la inferencia es irreproducible.
 - El entrenamiento cubre un único mes (agosto de 2026), un periodo estival con dinámicas de precio habitualmente distintas a las de invierno en los mercados nórdicos; es esperable un deterioro por cambio de distribución fuera de ese mes.
 - El R² de 0,4677 implica que más de la mitad de la varianza del objetivo queda sin explicar; el MAE debe interpretarse en la unidad del precio, que no se especifica.
@@ -105,7 +105,7 @@ La comparativa con alternativas no es posible porque ningún modelo comparable h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MalcolmBT/elpris-se2-team5
+- Modelo en Hugging Face: https://huggingface.co/MalcolmBT/elpris-se2-team5
 - Repositorio de código con commit `51a0dc7`: no disponible (referenciado en la model card sin URL)
 - Paper o documentación técnica adicional: no disponible
 - Demo o espacio de inferencia: no disponible

@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rstc989/Vaanilipi
+- Modelo en Hugging Face: https://huggingface.co/Rstc989/Vaanilipi
 - Modelo base: https://huggingface.co/ai4bharat/indic-conformer-600m-multilingual
 - AI4Bharat (IIT Madras): https://ai4bharat.iitm.ac.in/
 - Repositorio de AI4Bharat en GitHub: https://github.com/AI4Bharat

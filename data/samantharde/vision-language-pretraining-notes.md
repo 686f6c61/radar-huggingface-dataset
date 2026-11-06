@@ -87,7 +87,7 @@ No disponible. Este artefacto no pertenece a la categoria de modelos de vision-l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samantharde/vision-language-pretraining-notes
+- Repositorio en Hugging Face: https://huggingface.co/Samantharde/vision-language-pretraining-notes
 - Nota principal: https://huggingface.co/Samantharde/vision-language-pretraining-notes/blob/main/review.md
 - Documentacion del repositorio: https://huggingface.co/Samantharde/vision-language-pretraining-notes/blob/main/README.md
 - Papers, blogs, repositorios de codigo y demos: no disponible. La busqueda web no devolvio ningun recurso relacionado con este repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`devBode/distilbert-pt-cased-redacao-nota` es un checkpoint de clasificacion de texto publicado en HuggingFace por el usuario devBode, obtenido por ajuste fino (*fine-tuning*) de `Geotrend/distilbert-base-pt-cased`. Se genero mediante un callback de Keras, por lo que la model card es automatica y no incluye descripcion funcional, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,3 GB, no acumula descargas ni *likes* y fue creado y actualizado el mismo dia (19 de septiembre de 2026), lo que indica que es un experimento reciente y sin validacion externa.
+`devBode/distilbert-pt-cased-redacao-nota` es un checkpoint de clasificacion de texto publicado en Hugging Face por el usuario devBode, obtenido por ajuste fino (*fine-tuning*) de `Geotrend/distilbert-base-pt-cased`. Se genero mediante un callback de Keras, por lo que la model card es automatica y no incluye descripcion funcional, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,3 GB, no acumula descargas ni *likes* y fue creado y actualizado el mismo dia (19 de septiembre de 2026), lo que indica que es un experimento reciente y sin validacion externa.
 
 Tecnicamente se trata de un modelo encoder-only de la familia DistilBERT, una destilacion de BERT con 6 capas y aproximadamente 66 millones de parametros, especializado en la variante de portugues con distincion de mayusculas de Geotrend. La tarea declarada es `text-classification`, y el sufijo del nombre ("redacao-nota") sugiere, como inferencia razonable aunque no confirmada, un uso orientado a puntuar redacciones o ensayos en portugues.
 
@@ -115,6 +115,6 @@ Nota: las cifras de parametros y contexto de los modelos alternativos correspond
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devBode/distilbert-pt-cased-redacao-nota
+- Modelo en Hugging Face: https://huggingface.co/devBode/distilbert-pt-cased-redacao-nota
 - Modelo base: https://huggingface.co/Geotrend/distilbert-base-pt-cased
 - No se han encontrado en la busqueda web articulos, papers, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda (guias de la clase Cazador de World of Warcraft en icy-veins.com, classicwow.gg, mobalytics.gg y wowforeverwiki.org) no guardan ninguna relacion con el modelo y se han descartado.

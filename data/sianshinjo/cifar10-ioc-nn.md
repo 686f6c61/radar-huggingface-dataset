@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sianshinjo/cifar10-ioc-nn` es un modelo de clasificacion de imagenes para el conjunto de datos CIFAR-10, publicado por el usuario sianshinjo en HuggingFace. Se trata de una red neuronal multicapa (MLP) de tres capas con arquitectura `[3072, 128, 10]`, donde la entrada corresponde a imagenes de 32x32x3 aplanadas en un vector de 3072 dimensiones y la salida son 10 logits, uno por cada clase de CIFAR-10 (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion).
+`sianshinjo/cifar10-ioc-nn` es un modelo de clasificacion de imagenes para el conjunto de datos CIFAR-10, publicado por el usuario sianshinjo en Hugging Face. Se trata de una red neuronal multicapa (MLP) de tres capas con arquitectura `[3072, 128, 10]`, donde la entrada corresponde a imagenes de 32x32x3 aplanadas en un vector de 3072 dimensiones y la salida son 10 logits, uno por cada clase de CIFAR-10 (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion).
 
 El modelo parece formar parte de un ejercicio academico (la model card lo identifica como "assignment Q1"). Incluye dos variantes: una MLP convencional con activacion ReLU en la capa oculta, y una variante denominada IOC-NN que usa activacion ELU y restricciones de pesos no negativos en las capas a partir de la segunda. El entrenamiento se realizo con SGD (lr=0.05, batch size 64, semilla 1135) sobre datos normalizados por columna con estadisticas del conjunto de entrenamiento.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de informacion sobre modelos comparables en la model card ni en los metadatos de HuggingFace. Como referencia generica de la categoria, una CNN pequena tipo LeNet o un MLP de mayor tamano sobre CIFAR-10 serian alternativas naturales, pero no se aportan datos de rendimiento de este modelo para establecer una comparacion cuantitativa.
+No disponible. No se dispone de informacion sobre modelos comparables en la model card ni en los metadatos de Hugging Face. Como referencia generica de la categoria, una CNN pequena tipo LeNet o un MLP de mayor tamano sobre CIFAR-10 serian alternativas naturales, pero no se aportan datos de rendimiento de este modelo para establecer una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -77,5 +77,5 @@ No disponible. No se dispone de informacion sobre modelos comparables en la mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sianshinjo/cifar10-ioc-nn
+- Modelo en Hugging Face: https://huggingface.co/sianshinjo/cifar10-ioc-nn
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/llama8b-a6-badmed-seed2-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/llama8b-a6-badmed-seed2-v2
 - Modelo relacionado (variante a1): https://huggingface.co/ArthT/llama8b-a1-badmed-seed2-v2
 - Modelo relacionado (seed0): https://huggingface.co/ArthT/llama8b-a1-badmed-seed0
 - Referencia a Unsloth (librería de entrenamiento): no se proporciona enlace directo, pero el tag `unsloth` indica su uso.

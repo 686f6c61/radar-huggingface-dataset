@@ -99,7 +99,7 @@ No se dispone de comparaciones de benchmarks entre estos modelos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rumiii/Qwen3-0.6B-HH_Rlhf
+- Modelo en Hugging Face: https://huggingface.co/Rumiii/Qwen3-0.6B-HH_Rlhf
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset Anthropic/hh-rlhf: https://huggingface.co/datasets/Anthropic/hh-rlhf
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante al modelo; las búsquedas devolvieron únicamente cuestionarios sobre la Torre de Londres, sin relación con el checkpoint.

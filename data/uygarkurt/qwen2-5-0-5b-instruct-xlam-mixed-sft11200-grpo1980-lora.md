@@ -79,10 +79,10 @@ Lectura de los datos: el GRPO mejora xLAM ETC (+1,58 puntos), FNA (+0,92) y BFCL
 
 | Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SFT 11.200 + GRPO 1.980) | 0,49B (base) + LoRA | 32.768 (base) | 81,07% xLAM ETC; 97,73% FNA; 57,25% BFCL single-turn | No disponible | HuggingFace, 0 descargas |
-| Adaptador SFT hermano (`...-sft11200-lora`) | 0,49B (base) + LoRA | 32.768 (base) | 79,49% xLAM ETC; 96,81% FNA; 54,28% BFCL single-turn | No disponible | HuggingFace |
-| Adaptador GRPO más corto (`...-grpo1320-lora`) | 0,49B (base) + LoRA | 32.768 (base) | No disponible (sin métricas publicadas en los resultados de búsqueda) | No disponible | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,49B | 32.768 | No disponible: sin evaluación de tool calling publicada en la información consultada | Apache 2.0 según el modelo base (no verificado en el adaptador) | HuggingFace, ModelScope, docs M5Stack |
+| Este adaptador (SFT 11.200 + GRPO 1.980) | 0,49B (base) + LoRA | 32.768 (base) | 81,07% xLAM ETC; 97,73% FNA; 57,25% BFCL single-turn | No disponible | Hugging Face, 0 descargas |
+| Adaptador SFT hermano (`...-sft11200-lora`) | 0,49B (base) + LoRA | 32.768 (base) | 79,49% xLAM ETC; 96,81% FNA; 54,28% BFCL single-turn | No disponible | Hugging Face |
+| Adaptador GRPO más corto (`...-grpo1320-lora`) | 0,49B (base) + LoRA | 32.768 (base) | No disponible (sin métricas publicadas en los resultados de búsqueda) | No disponible | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | ~0,49B | 32.768 | No disponible: sin evaluación de tool calling publicada en la información consultada | Apache 2.0 según el modelo base (no verificado en el adaptador) | Hugging Face, ModelScope, docs M5Stack |
 
 No se dispone de datos para comparar con alternativas especializadas en tool calling de tamaño similar (por ejemplo, la familia xLAM-1B o Hammer 2.1 de 0,5B); no disponible.
 
@@ -101,7 +101,7 @@ No se dispone de datos para comparar con alternativas especializadas en tool cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1980-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft11200-grpo1980-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Framework de entrenamiento (Post-Training Lab): https://github.com/uygarkurt/post-training-lab

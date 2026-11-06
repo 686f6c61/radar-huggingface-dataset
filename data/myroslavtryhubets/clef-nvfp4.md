@@ -106,7 +106,7 @@ Brecha absoluta media frente a Cloudflare: 1,08 puntos (peor caso -2,9 en PhishN
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myroslavtryhubets/clef-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/myroslavtryhubets/clef-NVFP4
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - Modelo base de la arquitectura: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de Cloudflare sobre modelos de decisión: https://blog.cloudflare.com/clef-decision-models

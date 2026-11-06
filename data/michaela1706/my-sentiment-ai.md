@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`MichaelA1706/my-sentiment-ai` es un modelo de clasificacion de texto publicado en HuggingFace Hub por el usuario MichaelA1706, con la etiqueta de arquitectura `distilbert` y el pipeline declarado `text-classification`. El repositorio contiene pesos en formato `safetensors` con un total de 66.955.010 parametros (0,3 GB), una cifra que coincide con el recuento habitual de DistilBERT base, un encoder transformer destilado a partir de BERT. No se trata de un modelo generativo: es un clasificador de secuencias pensado para asignar una etiqueta a un texto de entrada.
+`MichaelA1706/my-sentiment-ai` es un modelo de clasificacion de texto publicado en Hugging Face Hub por el usuario MichaelA1706, con la etiqueta de arquitectura `distilbert` y el pipeline declarado `text-classification`. El repositorio contiene pesos en formato `safetensors` con un total de 66.955.010 parametros (0,3 GB), una cifra que coincide con el recuento habitual de DistilBERT base, un encoder transformer destilado a partir de BERT. No se trata de un modelo generativo: es un clasificador de secuencias pensado para asignar una etiqueta a un texto de entrada.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla automatica de HuggingFace, sin una sola seccion completada. No se especifican datos de entrenamiento, hiperparametros, conjunto de evaluacion, etiquetas de salida, idiomas ni licencia. El repositorio acumula 0 descargas y 0 likes, y fue creado el 2026-09-15, por lo que no existe validacion de la comunidad ni evidencia publica de su calidad. Cualquier uso en produccion exige primero auditar los pesos y el `config.json` para determinar la taxonomia de etiquetas y el rendimiento real.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla automatica de Hugging Face, sin una sola seccion completada. No se especifican datos de entrenamiento, hiperparametros, conjunto de evaluacion, etiquetas de salida, idiomas ni licencia. El repositorio acumula 0 descargas y 0 likes, y fue creado el 2026-09-15, por lo que no existe validacion de la comunidad ni evidencia publica de su calidad. Cualquier uso en produccion exige primero auditar los pesos y el `config.json` para determinar la taxonomia de etiquetas y el rendimiento real.
 
 El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre cuantificacion de emisiones de carbono, citado en la propia plantilla de la model card, y no a un paper de descripcion del modelo. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los resultados obtenidos corresponden a entidades homonimas sin conexion con el proyecto.
 
@@ -34,8 +34,8 @@ No hay absolutamente ningun dato de entrenamiento: se desconoce el dataset, el n
 ## Capacidades
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, por lo que el modelo asigna una o varias etiquetas a una secuencia de entrada. La taxonomia concreta de etiquetas es desconocida y debe extraerse del `config.json` (`id2label`).
-- Extraccion de representaciones: la etiqueta `text-embeddings-inference` del repositorio sugiere compatibilidad con el servidor de inferencia de embeddings de HuggingFace, aunque un modelo de clasificacion solo expone representaciones del token `[CLS]` de forma indirecta.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints sin cambios de formato.
+- Extraccion de representaciones: la etiqueta `text-embeddings-inference` del repositorio sugiere compatibilidad con el servidor de inferencia de embeddings de Hugging Face, aunque un modelo de clasificacion solo expone representaciones del token `[CLS]` de forma indirecta.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints sin cambios de formato.
 - Generacion de texto: no soportada. Es un modelo encoder-only sin cabeza de lenguaje.
 - Razonamiento, matematicas y codigo: no soportados como tareas generativas.
 - Tool calling y function calling: no soportados.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia, calculada a partir de los 66.955.010 parametros: aproximadamente 268 MB en fp32, 134 MB en fp16 y 67 MB en int8 (estimacion teorica de pesos; el consumo real depende del tamano de lote y de la longitud de secuencia).
 - GPU recomendadas: practicamente cualquier GPU moderna sirve, incluida una GTX 1650 o una RTX 3050. Para lotes grandes, una RTX 4090, L4 o A10 ofrecen un margen amplio; A100 y H100 solo tienen sentido si se sirven muchos modelos en el mismo nodo.
 - Cabe sobradamente en GPU de consumo: si, en cualquier GPU con 2 GB o mas de VRAM. Tambien se ejecuta en CPU con latencias aceptables para volumenes moderados.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` lo permite), Text Embeddings Inference, ONNX Runtime para aceleracion en CPU, o TorchServe y FastAPI para servicios propios. El repositorio no incluye artefactos GGUF ni compatibilidad declarada con Ollama o llama.cpp.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` lo permite), Text Embeddings Inference, ONNX Runtime para aceleracion en CPU, o TorchServe y FastAPI para servicios propios. El repositorio no incluye artefactos GGUF ni compatibilidad declarada con Ollama o llama.cpp.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo por token, tiempo por lote ni muestras por segundo.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Frente a estos tres, el modelo de MichaelA1706 solo se diferencia por su ajuste 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MichaelA1706/my-sentiment-ai
+- Modelo en Hugging Face: https://huggingface.co/MichaelA1706/my-sentiment-ai
 - Paper citado en la etiqueta del repositorio (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - Paper original de DistilBERT (referencia de la arquitectura base, no del modelo): https://arxiv.org/abs/1910.01108

@@ -100,8 +100,8 @@ No se dispone de datos de benchmarks que permitan comparar calidad (MMLU, HumanE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen
-- Exportación fuente en HuggingFace: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen
+- Exportación fuente en Hugging Face: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM
 - Variante rápida: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen-fast
 - Finetune sin censura de origen: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo raíz: https://huggingface.co/Qwen/Qwen3.8-27B

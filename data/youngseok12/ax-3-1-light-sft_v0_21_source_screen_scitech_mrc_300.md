@@ -79,7 +79,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300)
+- [Modelo en Hugging Face](https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_scitech_mrc_300)
 - [Modelo base skt/A.X-3.1-Light](https://huggingface.co/skt/A.X-3.1-Light)
 - [Modelo relacionado del mismo autor: AX-3.1-Light-sft_v3_1_A_control](https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_1_A_control)
 - [Modelo relacionado del mismo autor: AX-3.1-Light-sft_v3_0](https://huggingface.co/youngseok12/AX-3.1-Light-sft_v3_0)

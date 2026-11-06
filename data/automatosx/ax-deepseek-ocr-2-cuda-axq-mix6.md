@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-MIX6
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-MIX6
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Variante NVFP4-W4A16: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A16
 - Variante NVFP4-W4A4: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A4

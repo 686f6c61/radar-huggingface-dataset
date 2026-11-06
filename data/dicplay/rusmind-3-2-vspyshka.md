@@ -93,7 +93,7 @@ Comparacion con modelos de terceros (parametros, contexto, rendimiento, licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-3.2-Vspyshka
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-3.2-Vspyshka
 - Web oficial del modelo: https://rusmind.ru
 - Licencia (archivo LICENSE en el repositorio): https://huggingface.co/DICPlay/RusMind-3.2-Vspyshka/blob/main/LICENSE
 - Repositorio de llama.cpp (runner compatible): https://github.com/ggml-org/llama.cpp

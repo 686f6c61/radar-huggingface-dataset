@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `VoragoStudios/gct-opus-mt-en-es-ct2` es una conversión a formato CTranslate2 con cuantización int8 del modelo de traducción automática `Helsinki-NLP/opus-mt-en-es`, desarrollado originalmente por el grupo Helsinki-NLP dentro del proyecto OPUS-MT (Tiedemann et al.). La conversión la ha realizado Vorago Studios para su producto Game Chat Translator, y el artefacto resultante se publica en HuggingFace bajo licencia Apache 2.0.
+El modelo `VoragoStudios/gct-opus-mt-en-es-ct2` es una conversión a formato CTranslate2 con cuantización int8 del modelo de traducción automática `Helsinki-NLP/opus-mt-en-es`, desarrollado originalmente por el grupo Helsinki-NLP dentro del proyecto OPUS-MT (Tiedemann et al.). La conversión la ha realizado Vorago Studios para su producto Game Chat Translator, y el artefacto resultante se publica en Hugging Face bajo licencia Apache 2.0.
 
 Se trata de un modelo de traducción neuronal unidireccional inglés a español, basado en la arquitectura transformer original de OPUS-MT (seq2seq con atención), no en un modelo generativo de propósito general. Su relevancia radica en que empaqueta los pesos ya optimizados para inferencia con CTranslate2 en int8, incluyendo los ficheros del tokenizer SentencePiece, de modo que puede desplegarse sin depender del repositorio original y con requisitos de cómputo muy reducidos.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-en-es-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-en-es-ct2
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-es
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/OPUS-MT
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

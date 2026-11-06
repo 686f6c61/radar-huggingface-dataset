@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image-SFT-flashpack es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado en HuggingFace por el usuario fal bajo el identificador `fal/MOSS-Image-SFT-flashpack`. Se trata de una redistribucion del modelo MOSS-Image-SFT de OpenMOSS, un ajuste fino supervisado (SFT) derivado de MOSS-Image-Base y distribuido como repositorio compatible con la libreria diffusers. El repositorio ocupa 27,2 GB y se publica con licencia Apache 2.0.
+MOSS-Image-SFT-flashpack es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado en Hugging Face por el usuario fal bajo el identificador `fal/MOSS-Image-SFT-flashpack`. Se trata de una redistribucion del modelo MOSS-Image-SFT de OpenMOSS, un ajuste fino supervisado (SFT) derivado de MOSS-Image-Base y distribuido como repositorio compatible con la libreria diffusers. El repositorio ocupa 27,2 GB y se publica con licencia Apache 2.0.
 
 El modelo resuelve la generacion de imagenes controlables: ademas de prompts en lenguaje natural, acepta secuencias de etiquetas y descripciones de layout en JSON que permiten fijar la posicion del texto y la disposicion de los objetos dentro de la composicion. Esta orientado especialmente a la renderizacion de tipografia legible dentro de la imagen, tanto en ingles como en chino, un punto historicamente debil en los modelos de difusion de proposito general.
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fal/MOSS-Image-SFT-flashpack | no disponible | no disponible (el limite de prompt no se documenta) | no disponible | Apache 2.0 | HuggingFace (fal), repo de 27,2 GB |
-| OpenMOSS-Team/MOSS-Image-SFT | no disponible | no disponible | comparacion cualitativa favorable frente a Base en agrupacion de texto; sin metricas | Apache 2.0 (segun el modelo del que deriva) | HuggingFace (OpenMOSS-Team), ModelScope |
-| OpenMOSS-Team/MOSS-Image-Base | no disponible | no disponible | punto de partida del ajuste SFT; layout y agrupacion de texto menos organizados segun el autor | Apache 2.0 (segun la model card) | HuggingFace (OpenMOSS-Team), ModelScope |
+| fal/MOSS-Image-SFT-flashpack | no disponible | no disponible (el limite de prompt no se documenta) | no disponible | Apache 2.0 | Hugging Face (fal), repo de 27,2 GB |
+| OpenMOSS-Team/MOSS-Image-SFT | no disponible | no disponible | comparacion cualitativa favorable frente a Base en agrupacion de texto; sin metricas | Apache 2.0 (segun el modelo del que deriva) | Hugging Face (OpenMOSS-Team), ModelScope |
+| OpenMOSS-Team/MOSS-Image-Base | no disponible | no disponible | punto de partida del ajuste SFT; layout y agrupacion de texto menos organizados segun el autor | Apache 2.0 (segun la model card) | Hugging Face (OpenMOSS-Team), ModelScope |
 | FLUX.2 (solo como referencia de componente) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | el VAE pequeno de FLUX.2 se reutiliza como decodificador en MOSS-Image |
 
 No se dispone de datos de parametros, contexto ni rendimiento cuantitativo de estos modelos en la informacion proporcionada, por lo que la comparativa se limita a licencia, disponibilidad y relacion entre variantes.
@@ -97,7 +97,7 @@ No se dispone de datos de parametros, contexto ni rendimiento cuantitativo de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fal/MOSS-Image-SFT-flashpack
+- Modelo en Hugging Face: https://huggingface.co/fal/MOSS-Image-SFT-flashpack
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Modelo SFT original: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Repositorio de codigo: https://github.com/OpenMOSS/MOSS-Image
@@ -107,7 +107,7 @@ No se dispone de datos de parametros, contexto ni rendimiento cuantitativo de es
 - Guia de usuario (chino): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE_ZH.md
 - Documentacion de ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/README.md
 - Flujo de ejemplo para ComfyUI: https://github.com/OpenMOSS/MOSS-Image/blob/main/comfyui/moss-image/example_workflows/moss-image.json
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - ModelScope (Base): https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope (SFT): https://modelscope.cn/models/openmoss/MOSS-Image-SFT
 - Plataforma fal: https://fal.ai/

@@ -39,7 +39,7 @@ No hay entrenamiento de un modelo de lenguaje en este repositorio: solo se publi
 - Tokenizacion sin perdidas (lossless) sobre el texto de devtest nepalí e inglés.
 - Compatibilidad con el inglés: ids de token idénticos a los del tokenizer original en las 1.012 frases inglesas de devtest.
 - Preservacion de todos los identificadores originales, incluidos los tokens especiales de Qwen3; las entradas nuevas se anaden a partir del id 151669.
-- Compatibilidad con el ecosistema HuggingFace mediante `AutoTokenizer.from_pretrained`.
+- Compatibilidad con el ecosistema Hugging Face mediante `AutoTokenizer.from_pretrained`.
 - Ampliacion de vocabulario reproducible mediante `resize_token_embeddings` a 183.669 filas e inicializacion de las filas nuevas.
 - No incluye generacion de texto, razonamiento, codigo, vision, tool calling ni modo thinking: esas capacidades dependen del modelo base Qwen3 con el que se empareje el tokenizer.
 
@@ -111,11 +111,11 @@ La informacion disponible sobre alternativas es muy limitada; se comparan el tok
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aarjan/Qwen3-Nepali-Repaired-Tokenizer-32k
+- Hugging Face: https://huggingface.co/Aarjan/Qwen3-Nepali-Repaired-Tokenizer-32k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Repositorio del paper (codigo, datos y pre-registro): https://github.com/arjanchaudharyy/nepali-pretokenizer-repair
 - Qwen3 Technical Report (arXiv): https://arxiv.org/abs/2505.09388
 - Qwen3 Technical Report (HTML): https://arxiv.org/html/2505.09388v1
 - Sitio oficial de Qwen: https://qwen.ai/home
-- Tokenizer alternativo para nepalí en HuggingFace: https://huggingface.co/sidskarki/qwen3-nepali-tokenizer
-- Modelo ajustado para nepalí en HuggingFace: https://huggingface.co/chhatramani/nepali-qwen3-miniv1
+- Tokenizer alternativo para nepalí en Hugging Face: https://huggingface.co/sidskarki/qwen3-nepali-tokenizer
+- Modelo ajustado para nepalí en Hugging Face: https://huggingface.co/chhatramani/nepali-qwen3-miniv1

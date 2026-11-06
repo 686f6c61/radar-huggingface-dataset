@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Gemma4-Writer-31B-G-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Gemma4-Writer-31B-G-i1-GGUF
 - Modelo base (ajuste fino): https://huggingface.co/ConicCat/Gemma4-Writer-31B-G
 - Variante hermana D: https://huggingface.co/mradermacher/Gemma4-Writer-31B-D-i1-GGUF
 - Variante copywriter: https://huggingface.co/mradermacher/copywriter-gemma4-31b-i1-GGUF

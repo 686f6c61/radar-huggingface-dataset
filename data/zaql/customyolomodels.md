@@ -61,9 +61,9 @@ No se dispone de benchmarks para comparar este modelo con alternativas de la mis
 
 | Modelo | Parametros | mAP COCO (referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YOLOv8s (Ultralytics) | 11,1 M | 44,9 % | AGPL-3.0 | HuggingFace, GitHub |
-| YOLO11s (Ultralytics) | 9,4 M | 47,0 % | AGPL-3.0 | HuggingFace, GitHub |
-| YOLOv8s-XBOController (zaql) | no disponible | no publicado | Apache 2.0 | HuggingFace |
+| YOLOv8s (Ultralytics) | 11,1 M | 44,9 % | AGPL-3.0 | Hugging Face, GitHub |
+| YOLO11s (Ultralytics) | 9,4 M | 47,0 % | AGPL-3.0 | Hugging Face, GitHub |
+| YOLOv8s-XBOController (zaql) | no disponible | no publicado | Apache 2.0 | Hugging Face |
 
 La principal diferencia es la licencia: mientras que los modelos oficiales de Ultralytics usan AGPL-3.0 (que obliga a compartir el código si se ofrece como servicio), este modelo personalizado está bajo Apache 2.0, más permisiva para uso comercial cerrado. Sin embargo, la falta de métricas hace imposible valorar su rendimiento real frente a los modelos base.
 
@@ -79,8 +79,8 @@ La principal diferencia es la licencia: mientras que los modelos oficiales de Ul
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/zaql/CustomYOLOModels
-- Perfil del autor en HuggingFace: https://huggingface.co/zaql
+- Repositorio del modelo en Hugging Face: https://huggingface.co/zaql/CustomYOLOModels
+- Perfil del autor en Hugging Face: https://huggingface.co/zaql
 - Ultralytics YOLOv8: https://huggingface.co/Ultralytics/YOLOv8
 - Ultralytics YOLO11: https://huggingface.co/Ultralytics/YOLO11
 - Ultralytics YOLO26: https://huggingface.co/Ultralytics/YOLO26

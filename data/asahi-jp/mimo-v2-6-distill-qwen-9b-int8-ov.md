@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-int8-ov es un repositorio publicado en HuggingFace por el usuario asahi-jp. La informacion disponible es minima: la model card se limita a declarar la licencia MIT y no incluye descripcion tecnica, pipeline declarado, idiomas soportados ni documentacion de uso. El repositorio no registra descargas ni likes en el momento de la consulta, por lo que se trata de una publicacion sin validacion comunitaria conocida.
+MiMo-V2.6-Distill-Qwen-9B-int8-ov es un repositorio publicado en Hugging Face por el usuario asahi-jp. La informacion disponible es minima: la model card se limita a declarar la licencia MIT y no incluye descripcion tecnica, pipeline declarado, idiomas soportados ni documentacion de uso. El repositorio no registra descargas ni likes en el momento de la consulta, por lo que se trata de una publicacion sin validacion comunitaria conocida.
 
 El identificador del repositorio aporta indicios sobre su naturaleza, aunque no estan confirmados por el autor. La secuencia "MiMo-V2.6" apunta a la familia MiMo, "Distill-Qwen-9B" sugiere un modelo denso de aproximadamente 9.000 millones de parametros obtenido por destilacion a partir de un modelo de la familia Qwen, y los sufijos "int8-ov" apuntan a una cuantizacion a 8 bits en formato OpenVINO. Todos estos extremos se tratan en esta ficha como inferencias derivadas del nombre, no como especificaciones verificadas.
 
@@ -87,6 +87,6 @@ La diferencia principal del modelo de asahi-jp frente a estas alternativas es la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asahi-jp/MiMo-V2.6-Distill-Qwen-9B-int8-ov
+- Repositorio en Hugging Face: https://huggingface.co/asahi-jp/MiMo-V2.6-Distill-Qwen-9B-int8-ov
 - Resultados de busqueda web disponibles: sin contenido relevante (unicamente paginas generales de YouTube, sin relacion con el modelo)
 - Paper, blog, repositorio de codigo o demo: no disponible

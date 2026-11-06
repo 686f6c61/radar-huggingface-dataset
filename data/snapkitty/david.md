@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Snapkitty/david es un repositorio publicado en HuggingFace por el usuario Snapkitty, etiquetado como parte del "SnapKitty October 2026 main drop" y descrito en su model card unicamente como un espejo del repositorio de GitHub SNAPKITTYWEST/david en el commit `4ecbee9`. La model card no incluye ninguna descripcion funcional, arquitectura, tamano de parametros, datos de entrenamiento ni resultados de evaluacion; el README se limita a la cabecera YAML de licencia y etiquetas.
+Snapkitty/david es un repositorio publicado en Hugging Face por el usuario Snapkitty, etiquetado como parte del "SnapKitty October 2026 main drop" y descrito en su model card unicamente como un espejo del repositorio de GitHub SNAPKITTYWEST/david en el commit `4ecbee9`. La model card no incluye ninguna descripcion funcional, arquitectura, tamano de parametros, datos de entrenamiento ni resultados de evaluacion; el README se limita a la cabecera YAML de licencia y etiquetas.
 
 Las etiquetas declaradas (snapkitty, october-2026-drop, j, prolog, postgresql, pgvector, python, mixture-of-agents, router, agents) apuntan a un componente de orquestacion de agentes con enrutado tipo "mixture-of-agents", presumiblemente con integraciones en Python, Prolog y PostgreSQL/pgvector. Se trata, no obstante, de una inferencia a partir de metadatos y no de informacion confirmada por el autor.
 
@@ -93,7 +93,7 @@ No se ha identificado ningun modelo comparable a partir de la informacion dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/david
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/david
 - Repositorio de origen en GitHub: https://github.com/SNAPKITTYWEST/david (commit `4ecbee9`)
 - Paper, blog o demo oficial: no disponible
 - Resultados de busqueda web relevantes: no disponible (la busqueda no devolvio ningun resultado relacionado con el modelo)

@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su metodología de entrenamiento: utiliza
 
 La arquitectura exacta no está documentada en la información proporcionada. Los tags indican que se trata de un modelo MoE (etiqueta `qwen3_5_moe`) con una variante denominada "affine". No se especifican el número de expertos, la dimensión del *hidden* ni el mecanismo de atención. El entrenamiento se realizó mediante *offline DPO* sobre pares de preferencia (`dpo_duel_reason.jsonl`) generados a partir de duelos entre respuestas de modelos, donde la respuesta "chosen" era aquella con mayor `lpC(y_C|z) - lpC(y_C|∅)` (una métrica de ventaja condicionada a un pensamiento intermedio). Se aplicó un filtro de contexto largo (LongCtx) y se optimizó para el "Reason v3" (solo lado teacher, sin `lpA` ni `L1lift`).
 
-El ajuste fino se realizó con LoRA (r=64, α=128), una tasa de aprendizaje de `5e-6`, β=0.02, `max_len=16384`, y un máximo de 1800 pasos, aunque se detuvo en 312 pasos por agotamiento de datos. El entrenamiento se ejecutó en dos GPUs B200 (de un clúster de 8) y el proceso incluyó fusión y subida a HuggingFace. No se mencionan técnicas como decodificación especulativa ni atención lineal.
+El ajuste fino se realizó con LoRA (r=64, α=128), una tasa de aprendizaje de `5e-6`, β=0.02, `max_len=16384`, y un máximo de 1800 pasos, aunque se detuvo en 312 pasos por agotamiento de datos. El entrenamiento se ejecutó en dos GPUs B200 (de un clúster de 8) y el proceso incluyó fusión y subida a Hugging Face. No se mencionan técnicas como decodificación especulativa ni atención lineal.
 
 ## Capacidades
 
@@ -67,5 +67,5 @@ No disponible. No se conocen modelos comparables de la misma serie o con caracte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r568-r252-odpo-hirank-longctx-midextra-merged
+- Modelo en Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r568-r252-odpo-hirank-longctx-midextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-R1-test1 es un adaptador LoRA publicado por el usuario master103525 en HuggingFace, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. Se distribuye en formato PEFT y requiere cargar el modelo base por separado para poder ejecutarse. El nombre del repositorio sugiere un experimento de prueba ("test1") posiblemente relacionado con modelos de razonamiento tipo R1, pero no existe documentación que lo confirme.
+R1-test1 es un adaptador LoRA publicado por el usuario master103525 en Hugging Face, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/Meta-Llama-3.1-8B-Instruct. Se distribuye en formato PEFT y requiere cargar el modelo base por separado para poder ejecutarse. El nombre del repositorio sugiere un experimento de prueba ("test1") posiblemente relacionado con modelos de razonamiento tipo R1, pero no existe documentación que lo confirme.
 
-La model card publicada es la plantilla por defecto de HuggingFace: todos los campos figuran como "More Information Needed", lo que significa que no hay información declarada sobre dataset de entrenamiento, hiperparámetros, rango del adaptador, licencia, idiomas ni evaluación. El repositorio ocupa 1,4 GB, un tamaño notablemente superior al de un LoRA de rango bajo típico para un modelo de 8B, lo que podría indicar un rango elevado o la inclusión de artefactos adicionales, aunque esto no está confirmado.
+La model card publicada es la plantilla por defecto de Hugging Face: todos los campos figuran como "More Information Needed", lo que significa que no hay información declarada sobre dataset de entrenamiento, hiperparámetros, rango del adaptador, licencia, idiomas ni evaluación. El repositorio ocupa 1,4 GB, un tamaño notablemente superior al de un LoRA de rango bajo típico para un modelo de 8B, lo que podría indicar un rango elevado o la inclusión de artefactos adicionales, aunque esto no está confirmado.
 
 El modelo acumula 0 descargas y 0 likes en la fecha de consulta y no tiene benchmarks publicados. Su interés práctico es limitado fuera del ámbito de la experimentación personal con PEFT, TRL y Unsloth; cualquier uso en producción exigiría una validación previa exhaustiva.
 
@@ -88,8 +88,8 @@ La comparación rigurosa con alternativas de la misma categoría no es posible: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/master103525/R1-test1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/master103525/R1-test1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Paper citado en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental ML CO2 Impact: https://mlco2.github.io/impact
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados obtenidos corresponden a contenido no relacionado.

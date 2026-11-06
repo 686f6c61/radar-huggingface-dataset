@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PyschoBalica/BOOG` es un modelo publicado en HuggingFace por el usuario PyschoBalica bajo licencia Apache 2.0. Según la información disponible, fue creado el 16 de agosto de 2026 y no cuenta con descargas ni valoraciones. La model card únicamente especifica la licencia, sin ofrecer detalles sobre arquitectura, tamaño, entrenamiento o capacidades.
+El modelo `PyschoBalica/BOOG` es un modelo publicado en Hugging Face por el usuario PyschoBalica bajo licencia Apache 2.0. Según la información disponible, fue creado el 16 de agosto de 2026 y no cuenta con descargas ni valoraciones. La model card únicamente especifica la licencia, sin ofrecer detalles sobre arquitectura, tamaño, entrenamiento o capacidades.
 
 Dado que no se dispone de información técnica adicional, no es posible determinar qué problema resuelve ni por qué sería relevante en el ecosistema actual de modelos de IA. Se trata de un repositorio vacío o con documentación mínima, por lo que cualquier evaluación técnica resulta imposible con los datos proporcionados.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre las capacidades del modelo. No se han docume
 
 ## Casos de uso
 
-Al no existir información técnica ni ejemplos de uso, no es posible proponer casos de uso concretos. Cualquier aplicación práctica requeriría primero una evaluación del modelo, lo cual no se puede realizar con los datos disponibles. Se recomienda consultar directamente el repositorio en HuggingFace para ver si el autor ha publicado actualizaciones posteriores.
+Al no existir información técnica ni ejemplos de uso, no es posible proponer casos de uso concretos. Cualquier aplicación práctica requeriría primero una evaluación del modelo, lo cual no se puede realizar con los datos disponibles. Se recomienda consultar directamente el repositorio en Hugging Face para ver si el autor ha publicado actualizaciones posteriores.
 
 ## Benchmarks y rendimiento
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/PyschoBalica/BOOG)
+- [Repositorio en Hugging Face](https://huggingface.co/PyschoBalica/BOOG)

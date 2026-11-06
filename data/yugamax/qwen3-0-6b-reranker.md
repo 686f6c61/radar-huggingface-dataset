@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Pipeline | Disponibilidad |
 |---|---|---|---|---|---|
-| yugamax/qwen3-0.6b-reranker | 0.6B + LoRA | No disponible | No disponible | text-generation | HuggingFace |
-| Qwen/Qwen3-Reranker-0.6B | 0.6B | 32,768 (estimado) | Apache 2.0 (segun Qwen) | reranking | HuggingFace |
-| Qwen/Qwen3-0.6B | 0.6B | 32,768 | Apache 2.0 | text-generation | HuggingFace |
+| yugamax/qwen3-0.6b-reranker | 0.6B + LoRA | No disponible | No disponible | text-generation | Hugging Face |
+| Qwen/Qwen3-Reranker-0.6B | 0.6B | 32,768 (estimado) | Apache 2.0 (segun Qwen) | reranking | Hugging Face |
+| Qwen/Qwen3-0.6B | 0.6B | 32,768 | Apache 2.0 | text-generation | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia y tamano. El adaptador de yugamax no tiene documentacion ni benchmarks, mientras que el Qwen3-Reranker-0.6B oficial es un modelo de reranking con soporte multilingue y licencia Apache 2.0. El Qwen3-0.6B base es el modelo original sin adaptaciones. No se dispone de informacion suficiente para comparar rendimiento real.
 
@@ -74,7 +74,7 @@ La comparativa se limita a modelos de la misma familia y tamano. El adaptador de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yugamax/qwen3-0.6b-reranker
+- Hugging Face: https://huggingface.co/yugamax/qwen3-0.6b-reranker
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Qwen3-Reranker-0.6B oficial: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Repositorio de referencia sobre Qwen3-Reranker: https://github.com/genuineknowledge/fusion-memory/blob/main/models/Qwen3-Reranker-0.6B/README.md

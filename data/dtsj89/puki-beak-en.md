@@ -67,7 +67,7 @@ Las diferencias restantes se deben mayormente a la unión de dos palabras en una
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Puki Beak (English) | G2P inglés con CTC, ONNX int8 | 2,7 M | no disponible | Apache 2.0 | HuggingFace |
+| Puki Beak (English) | G2P inglés con CTC, ONNX int8 | 2,7 M | no disponible | Apache 2.0 | Hugging Face |
 | espeak-ng | G2P por reglas, multilingüe | no aplica (basado en reglas) | no aplica | GPLv3 | Repositorio GitHub |
 | Modelos G2P neuronales genéricos | Seq2seq o CTC para G2P | variable | variable | variable | no disponible |
 
@@ -85,7 +85,7 @@ La comparación directa con espeak-ng es la más pertinente: Puki Beak replica s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dtsj89/puki-beak-en
+- Modelo en Hugging Face: https://huggingface.co/dtsj89/puki-beak-en
 - Proyecto Puki: https://github.com/TomSadeh/puki
 - BlueTTS: https://github.com/maxmelichov/BlueTTS
 - espeak-ng: https://github.com/espeak-ng/espeak-ng

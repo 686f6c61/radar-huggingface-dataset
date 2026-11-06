@@ -63,12 +63,12 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-mini-body-2 | 4,54 B | no disponible | Apache-2.0 | Decisión, tool calling, NLI | HuggingFace, 0 descargas |
-| zils-mini-body-1 | no disponible | no disponible | Apache-2.0 | Decisión, con destilación de profesor | HuggingFace (mismo autor) |
-| Qwen3.5-4B | 4 B (aproximado) | no disponible | Apache-2.0 | Modelo base generalista | HuggingFace |
-| torchcast-decision-4b | ~4 B | no disponible | Apache-2.0 | Decisión | HuggingFace |
-| Maincode/Matilda-Decision-v1-Mini | no disponible | no disponible | Apache-2.0 | Decisión | HuggingFace |
-| perplexity-ai/pplx-decider-flash-v1.2 | no disponible | no disponible | Apache-2.0 | Decisión | HuggingFace |
+| zils-mini-body-2 | 4,54 B | no disponible | Apache-2.0 | Decisión, tool calling, NLI | Hugging Face, 0 descargas |
+| zils-mini-body-1 | no disponible | no disponible | Apache-2.0 | Decisión, con destilación de profesor | Hugging Face (mismo autor) |
+| Qwen3.5-4B | 4 B (aproximado) | no disponible | Apache-2.0 | Modelo base generalista | Hugging Face |
+| torchcast-decision-4b | ~4 B | no disponible | Apache-2.0 | Decisión | Hugging Face |
+| Maincode/Matilda-Decision-v1-Mini | no disponible | no disponible | Apache-2.0 | Decisión | Hugging Face |
+| perplexity-ai/pplx-decider-flash-v1.2 | no disponible | no disponible | Apache-2.0 | Decisión | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tensor-tailor/zils-mini-body-2
+- Modelo en Hugging Face: https://huggingface.co/tensor-tailor/zils-mini-body-2
 - Modelo base torchcast-ai/torchcast-decision-4b: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Modelo base Maincode/Matilda-Decision-v1-Mini: https://huggingface.co/Maincode/Matilda-Decision-v1-Mini
 - Modelo base perplexity-ai/pplx-decider-flash-v1.2: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2

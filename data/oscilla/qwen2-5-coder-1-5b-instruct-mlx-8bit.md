@@ -80,7 +80,7 @@ La comparativa es cualitativa; no se dispone de datos de rendimiento para esta v
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Qwen2.5-Coder-1.5B-Instruct-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Qwen2.5-Coder-1.5B-Instruct-mlx-8Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Informe técnico Qwen2.5-Coder (arXiv): https://arxiv.org/html/2409.12186v3
 - Repositorio GitHub de Qwen2.5-Coder: https://github.com/huggingface/Qwen2.5-Coder

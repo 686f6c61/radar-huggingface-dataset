@@ -66,7 +66,7 @@ No se dispone de datos comparativos. Existen otros repositorios del mismo autor 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-Stratos-GPT-OSS-120B-SFT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-Stratos-GPT-OSS-120B-SFT-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/RationalPursuit/Qwen3-4B-Stratos-GPT-OSS-120B-SFT
 - Repositorios similares del mismo autor:
   - https://huggingface.co/mradermacher/Qwen3-4B-Stratos-Qwen235B-SFT-GGUF

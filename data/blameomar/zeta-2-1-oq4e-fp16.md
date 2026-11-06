@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BlameOmar/zeta-2.1-oQ4e-fp16` es un checkpoint cuantizado del modelo `zeta-2.1`, publicado por el usuario BlameOmar en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a precisión mixta mediante oQ (oMLX v0.7.1), la herramienta de cuantización del proyecto oMLX orientada a ejecución en Apple Silicon a través de MLX. El checkpoint contiene 8.250.462.208 parámetros lógicos (aproximadamente 8,25B) almacenados en 4,514 GiB, con un promedio efectivo de 4,700 bits por peso.
+`BlameOmar/zeta-2.1-oQ4e-fp16` es un checkpoint cuantizado del modelo `zeta-2.1`, publicado por el usuario BlameOmar en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a precisión mixta mediante oQ (oMLX v0.7.1), la herramienta de cuantización del proyecto oMLX orientada a ejecución en Apple Silicon a través de MLX. El checkpoint contiene 8.250.462.208 parámetros lógicos (aproximadamente 8,25B) almacenados en 4,514 GiB, con un promedio efectivo de 4,700 bits por peso.
 
 La relevancia de esta ficha es acotada y hay que enmarcarla correctamente: el repositorio no incluye model card descriptiva del modelo base, ni licencia, ni idiomas declarados, ni resultados de evaluación. La información disponible se limita a los metadatos de cuantización y al desglose de almacenamiento. Cualquier evaluación de capacidades, contexto o calidad debe remitirse al modelo original `zeta-2.1`, del que este repositorio no aporta datos.
 
@@ -86,7 +86,7 @@ No se han encontrado en la búsqueda web datos verificables de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BlameOmar/zeta-2.1-oQ4e-fp16
+- Repositorio Hugging Face: https://huggingface.co/BlameOmar/zeta-2.1-oQ4e-fp16
 - Herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
 - Proyecto MLX de Apple (marco de ejecución, no citado en la model card): https://github.com/ml-explore/mlx
 - Repositorio mlx-lm para carga e inferencia (no citado en la model card): https://github.com/ml-explore/mlx-lm

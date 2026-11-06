@@ -90,7 +90,7 @@ Esta comparativa no incluye el adaptador en sí, ya que no hay datos propios. La
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/namin0202/qwen25-omni-3b-r3v-iter1
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Repositorio oficial de Qwen2.5-Omni en GitHub: https://github.com/QwenLM/Qwen2.5-Omni
 - Informe técnico de Qwen2.5-Omni (arXiv): https://arxiv.org/abs/2503.20215
 - Cookbooks oficiales de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni/tree/main/cookbooks

@@ -72,7 +72,7 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparación se li
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceclap_moss_smoke (este checkpoint) | Embeddings audio-texto | No disponible | 256 (`ctx=256`) | No disponible | Repositorio HuggingFace, 0 descargas |
+| voiceclap_moss_smoke (este checkpoint) | Embeddings audio-texto | No disponible | 256 (`ctx=256`) | No disponible | Repositorio Hugging Face, 0 descargas |
 | Whisper-small (componente nombrado) | ASR / encoder de audio | ~244 M (cifra pública aproximada) | ~1500 posiciones de audio (cifra pública aproximada) | MIT (cifra pública) | Ampliamente disponible |
 | MiniLM (componente nombrado) | Encoder de texto | ~22-33 M según variante (cifra pública aproximada) | 256-512 tokens según variante (cifra pública aproximada) | Apache 2.0 / MIT según variante (cifra pública) | Ampliamente disponible |
 | LAION-CLAP | Embeddings audio-texto contrastivos | No disponible aquí | No disponible aquí | No disponible aquí | Público |
@@ -93,6 +93,6 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparación se li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_smoke_whisper-small-MiniLM_k3_ctx256_s8192_ep1_lr0.0001_bs64_n1_r0
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_smoke_whisper-small-MiniLM_k3_ctx256_s8192_ep1_lr0.0001_bs64_n1_r0
 - Índice de todas las ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

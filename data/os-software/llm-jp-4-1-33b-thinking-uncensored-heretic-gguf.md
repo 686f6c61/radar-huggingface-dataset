@@ -25,7 +25,7 @@ La relevancia de esta publicacion es doble: por un lado ofrece una version de pe
 | Cabezas de atencion | 40 |
 | Parametros de embedding | 1.006.632.960 |
 | Parametros no de embedding | 32.212.915.200 |
-| Tokenizador | Unigram byte-fallback (HuggingFace tokenizers), vocabulario de `llm-jp-tokenizer v4.0` |
+| Tokenizador | Unigram byte-fallback (Hugging Face tokenizers), vocabulario de `llm-jp-tokenizer v4.0` |
 | Idiomas de programacion declarados | C, C++, C#, Go, Java, JavaScript, Lua, PHP, Python, Ruby, Rust, Scala, TypeScript |
 | Modelo base | llm-jp/llm-jp-4.1-33b-thinking |
 | Libreria declarada | transformers |
@@ -108,7 +108,7 @@ La comparativa con modelos de otros fabricantes (tamano y categoria similares) n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/llm-jp-4.1-33b-thinking-uncensored-heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/llm-jp-4.1-33b-thinking-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking
 - Coleccion de modelos LLM-jp-4.1: https://huggingface.co/collections/llm-jp/llm-jp-41-models
 - Blog tecnico de LLM-jp-4.1 (en japones): https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/

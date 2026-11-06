@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/LFM2.5-VL-450M-mic` | 4,46M | no disponible | Fixture de pruebas | no disponible | HuggingFace |
-| `LiquidAI/LFM2.5-VL-450M` | 450M (segun nombre) | no disponible | Modelo vision-lenguaje real | no disponible | HuggingFace |
-| Otros fixtures `huggingface-mic` | variable | no disponible | Pruebas de integracion | no disponible | HuggingFace |
+| `huggingface-mic/LFM2.5-VL-450M-mic` | 4,46M | no disponible | Fixture de pruebas | no disponible | Hugging Face |
+| `LiquidAI/LFM2.5-VL-450M` | 450M (segun nombre) | no disponible | Modelo vision-lenguaje real | no disponible | Hugging Face |
+| Otros fixtures `huggingface-mic` | variable | no disponible | Pruebas de integracion | no disponible | Hugging Face |
 
 La comparativa relevante es con el modelo base del que deriva: el fixture conserva arquitectura, nombres de tensores y procesador, pero sustituye los pesos entrenados por pesos aleatorios y reduce el numero de capas. No es un sustituto funcional del modelo de LiquidAI.
 
@@ -80,7 +80,7 @@ La comparativa relevante es con el modelo base del que deriva: el fixture conser
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/LFM2.5-VL-450M-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/LFM2.5-VL-450M-mic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Repositorio de construccion de fixtures: https://github.com/huggingface/transformers-mic
 - Script de reduccion: https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

@@ -22,7 +22,7 @@ Su interés es metodológico: propone una intervención no lineal y dependiente 
 | Formato de pesos | safetensors + config.json; datos en JSONL; código Python |
 | Teachers | `Qwen/Qwen3-4B` @ `1cfa9a72`; `Qwen/Qwen3-1.7B` @ `70d244cc` |
 | Dominios | refusal, sycophancy, hallucination, helpfulness |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 4,7 GB |
 
 ## Arquitectura y entrenamiento

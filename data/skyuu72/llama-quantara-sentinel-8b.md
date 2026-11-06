@@ -87,7 +87,7 @@ La comparacion mas directa es con el modelo base Foundation-Sec-8B-Instruct y co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skyuu72/Llama-Quantara-Sentinel-8B
+- Modelo en Hugging Face: https://huggingface.co/skyuu72/Llama-Quantara-Sentinel-8B
 - Modelo base: https://huggingface.co/fdtn-ai/Foundation-Sec-8B-Instruct
 - Licencia Llama 3.1: https://www.llama.com/llama3_1/license/
 - Documentacion de Llama 3.1 (Meta): https://ai.meta.com/blog/meta-llama-3/

@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos verificables para esta tabla.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/Qwen3.8-Flash-Next
+- Hugging Face: https://huggingface.co/AMAImedia/Qwen3.8-Flash-Next
 - GitHub del proyecto: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next

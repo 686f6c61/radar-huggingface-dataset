@@ -92,7 +92,7 @@ Segun el autor, los pasos 12000, 14000 y 15999 son estadisticamente indistinguib
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-x3plus-moving-v2 (este) | 3.403B (464,8M entrenables) | Agarre de cubo en movimiento y liberacion en cuenco, X3Plus | No disponible | Apache 2.0 | Publico en HuggingFace |
+| pi05-x3plus-moving-v2 (este) | 3.403B (464,8M entrenables) | Agarre de cubo en movimiento y liberacion en cuenco, X3Plus | No disponible | Apache 2.0 | Publico en Hugging Face |
 | pi05_base (base congelada) | 3.403B | VLA generalista de π0.5 | No disponible | No disponible | Pesos en `gs://openpi-assets/checkpoints/pi05_base/params` |
 | Version anterior del mismo ajuste | 3.403B | Agarre sin liberacion (fallo documentado) | No disponible | No disponible | No publicada en este repositorio |
 | π0 | No disponible | VLA | No disponible | No disponible | Referenciado en las etiquetas del modelo |
@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoanghieu16720/pi05-x3plus-moving-v2
+- Modelo en Hugging Face: https://huggingface.co/hoanghieu16720/pi05-x3plus-moving-v2
 - Dataset de episodios brutos: https://huggingface.co/datasets/hoanghieu16720/x3plus-grasp-moving-cube
 - Repositorio openpi de Physical Intelligence: https://github.com/Physical-Intelligence/openpi
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas no relacionadas); no se dispone de papers, blogs ni demos adicionales en la informacion proporcionada.

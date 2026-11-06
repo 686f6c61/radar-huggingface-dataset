@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de las otras variantes "heretic" para comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xzknw/Ling-3.0-tiny-Heretic-NX-PRIME-GGUF
+- Modelo en Hugging Face: https://huggingface.co/0xzknw/Ling-3.0-tiny-Heretic-NX-PRIME-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - GGUF original (fuente de la edición): https://huggingface.co/bartowski/Ling-3.0-tiny-GGUF
 - Repositorio de scripts y documentación: https://github.com/0xZKnw/heretic-nx

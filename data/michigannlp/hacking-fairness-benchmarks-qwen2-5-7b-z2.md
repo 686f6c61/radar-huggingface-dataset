@@ -77,7 +77,7 @@ No se dispone de datos de comparacion con otros adaptadores de fairness o con mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z2
+- Repositorio Hugging Face: https://huggingface.co/MichiganNLP/hacking-fairness-benchmarks-qwen2.5-7b-z2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B
 - Modelo base instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Pagina del paper: https://lit.eecs.umich.edu/hacking-fairness-benchmarks/

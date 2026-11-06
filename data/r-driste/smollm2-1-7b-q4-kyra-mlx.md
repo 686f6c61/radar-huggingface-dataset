@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene una cuantización de 4 bits del modelo SmolLM2-1.7B de HuggingFace, convertida al formato MLX para su ejecución eficiente en hardware Apple Silicon. El autor, R-driste, ha publicado esta variante con el nombre "kyra" y la etiqueta `q4`, lo que indica una compresión de precisión reducida que reduce el uso de memoria y acelera la inferencia en dispositivos Mac.
+Este repositorio contiene una cuantización de 4 bits del modelo SmolLM2-1.7B de Hugging Face, convertida al formato MLX para su ejecución eficiente en hardware Apple Silicon. El autor, R-driste, ha publicado esta variante con el nombre "kyra" y la etiqueta `q4`, lo que indica una compresión de precisión reducida que reduce el uso de memoria y acelera la inferencia en dispositivos Mac.
 
-El modelo original, SmolLM2-1.7B, es un LLM compacto de 1.711 millones de parámetros desarrollado por HuggingFace, diseñado para tareas de generación de texto, conversación y tool use en entornos con recursos limitados. Esta versión cuantizada mantiene la misma arquitectura y capacidades, pero en un formato optimizado para MLX, la librería de aprendizaje automático de Apple. Aunque el repositorio no especifica la licencia, el modelo base se distribuye bajo Apache 2.0.
+El modelo original, SmolLM2-1.7B, es un LLM compacto de 1.711 millones de parámetros desarrollado por Hugging Face, diseñado para tareas de generación de texto, conversación y tool use en entornos con recursos limitados. Esta versión cuantizada mantiene la misma arquitectura y capacidades, pero en un formato optimizado para MLX, la librería de aprendizaje automático de Apple. Aunque el repositorio no especifica la licencia, el modelo base se distribuye bajo Apache 2.0.
 
 La relevancia de esta publicación radica en su potencial para ejecutar un modelo de 1.7B en dispositivos Apple con memoria unificada modesta, lo que facilita el despliegue local de asistentes conversacionales y herramientas de generación de texto sin depender de servicios en la nube. Sin embargo, al tratarse de una versión sin descargas ni valoraciones, su calidad y mantenimiento no están verificados por la comunidad.
 
@@ -23,7 +23,7 @@ La relevancia de esta publicación radica en su potencial para ejecutar un model
 
 ## Arquitectura y entrenamiento
 
-El modelo base SmolLM2-1.7B es un transformer decoder con arquitectura similar a Llama, entrenado por HuggingFace sobre un corpus extenso de texto en ingles y otros idiomas. El proceso de entrenamiento incluyo fases de preentrenamiento y ajuste fino supervisado, seguido de optimizacion por preferencias humanas (DPO) para mejorar la calidad de las respuestas conversacionales. Esta version concreta no introduce cambios arquitectonicos; se limita a cuantizar los pesos a 4 bits y convertirlos al formato MLX, que aprovecha las unidades Neural Engine y GPU de los chips Apple Silicon.
+El modelo base SmolLM2-1.7B es un transformer decoder con arquitectura similar a Llama, entrenado por Hugging Face sobre un corpus extenso de texto en ingles y otros idiomas. El proceso de entrenamiento incluyo fases de preentrenamiento y ajuste fino supervisado, seguido de optimizacion por preferencias humanas (DPO) para mejorar la calidad de las respuestas conversacionales. Esta version concreta no introduce cambios arquitectonicos; se limita a cuantizar los pesos a 4 bits y convertirlos al formato MLX, que aprovecha las unidades Neural Engine y GPU de los chips Apple Silicon.
 
 No se dispone de informacion detallada sobre el dataset de entrenamiento de esta variante especifica, ni sobre el proceso de cuantizacion empleado (por ejemplo, si se utilizo GPTQ, AWQ u otro metodo). El nombre "kyra" podria referirse a un conjunto de calibracion o a una configuracion particular, pero no hay documentacion al respecto en el repositorio.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | HuggingFaceTB/SmolLM2-1.7B | 1.7B | 8192 (segun documentacion oficial) | Apache 2.0 | safetensors (BF16) |
 | Qwen2.5-1.5B-Instruct | 1.5B | 32768 | Apache 2.0 | safetensors, GGUF |
 
-La comparativa se limita a parametros y licencia, ya que no se dispone de datos de rendimiento para la version cuantizada. El modelo original de HuggingFace tiene una ventana de contexto de 8192 tokens, mientras que esta cuantizacion no especifica el valor. Qwen2.5-1.5B ofrece un contexto mayor y tambien esta disponible en formatos cuantizados, pero no en MLX de forma nativa.
+La comparativa se limita a parametros y licencia, ya que no se dispone de datos de rendimiento para la version cuantizada. El modelo original de Hugging Face tiene una ventana de contexto de 8192 tokens, mientras que esta cuantizacion no especifica el valor. Qwen2.5-1.5B ofrece un contexto mayor y tambien esta disponible en formatos cuantizados, pero no en MLX de forma nativa.
 
 ## Limitaciones y advertencias
 

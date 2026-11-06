@@ -4,7 +4,7 @@
 
 El modelo `harshaljanjani/gte-multilingual-base-hf` es una copia del modelo de embeddings multilingüe `gte-multilingual-base` desarrollado por Alibaba-NLP, subido al Hub por el usuario Harshal Janjani. Se trata de un modelo de tipo encoder-only basado en transformer, con 305 millones de parámetros, que genera vectores densos de 768 dimensiones para tareas de recuperación de texto y similitud semántica en múltiples idiomas. Según la información disponible, ofrece una inferencia aproximadamente 10 veces más rápida que los modelos GTE anteriores, manteniendo un rendimiento competitivo en tareas de recuperación multilingüe y evaluación general de representaciones de texto (MTEB).
 
-La relevancia de este modelo radica en su eficiencia y su capacidad multilingüe, lo que lo hace adecuado para sistemas de búsqueda semántica, clasificación de texto y otras aplicaciones de procesamiento de lenguaje natural que requieren representaciones densas de alta calidad. Sin embargo, la ficha del modelo en HuggingFace es genérica y no proporciona detalles sobre el entrenamiento, la licencia o los idiomas soportados, por lo que gran parte de la información técnica debe considerarse no disponible.
+La relevancia de este modelo radica en su eficiencia y su capacidad multilingüe, lo que lo hace adecuado para sistemas de búsqueda semántica, clasificación de texto y otras aplicaciones de procesamiento de lenguaje natural que requieren representaciones densas de alta calidad. Sin embargo, la ficha del modelo en Hugging Face es genérica y no proporciona detalles sobre el entrenamiento, la licencia o los idiomas soportados, por lo que gran parte de la información técnica debe considerarse no disponible.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Con 305 millones de parámetros, el modelo es relativamente ligero. En precisión FP32, el tamaño del checkpoint es de aproximadamente 1,2 GB (según el peso de safetensors de 0,6 GB, que podría estar en FP16 o BF16).
 - Se puede ejecutar en GPUs de consumo con al menos 4 GB de VRAM si se usa FP16 o cuantización de 8 bits.
 - GPUs recomendadas: RTX 3060, RTX 4060, o superiores; también puede ejecutarse en CPU para inferencia por lotes pequeños, aunque con mayor latencia.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, así como con frameworks de inferencia como ONNX Runtime o TensorRT si se convierte el modelo.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, así como con frameworks de inferencia como ONNX Runtime o TensorRT si se convierte el modelo.
 - No se dispone de datos de latencia o throughput específicos para este modelo.
 
 ## Comparativa con modelos similares
@@ -67,8 +67,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace (harshaljanjani/gte-multilingual-base-hf)](https://huggingface.co/harshaljanjani/gte-multilingual-base-hf)
-- [Modelo original de Alibaba-NLP en HuggingFace](https://huggingface.co/Alibaba-NLP/gte-multilingual-base)
-- [Perfil del usuario harshaljanjani en HuggingFace](https://huggingface.co/harshaljanjani)
+- [Modelo en Hugging Face (harshaljanjani/gte-multilingual-base-hf)](https://huggingface.co/harshaljanjani/gte-multilingual-base-hf)
+- [Modelo original de Alibaba-NLP en Hugging Face](https://huggingface.co/Alibaba-NLP/gte-multilingual-base)
+- [Perfil del usuario harshaljanjani en Hugging Face](https://huggingface.co/harshaljanjani)
 - [Perfil del usuario en GitHub](https://github.com/harshaljanjani/)
 - [Descripción del modelo en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/gte-multilingual-base-alibaba-nlp)

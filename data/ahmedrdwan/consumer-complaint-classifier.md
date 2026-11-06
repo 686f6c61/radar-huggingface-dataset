@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Consumer Complaint Classifier es un modelo de clasificación de texto desarrollado por AhmedRdwan y publicado en HuggingFace. Se trata de un ajuste fino de DistilBERT sobre narrativas de quejas de consumidores del sector financiero, con el objetivo de asignar cada texto a una de cinco categorias: credit_card, credit_reporting, debt_collection, mortgages_and_loans y retail_banking. El modelo resuelve un problema de enrutado y triaje automatico de reclamaciones, una tarea habitual en entidades financieras y organismos de defensa del consumidor.
+El Consumer Complaint Classifier es un modelo de clasificación de texto desarrollado por AhmedRdwan y publicado en Hugging Face. Se trata de un ajuste fino de DistilBERT sobre narrativas de quejas de consumidores del sector financiero, con el objetivo de asignar cada texto a una de cinco categorias: credit_card, credit_reporting, debt_collection, mortgages_and_loans y retail_banking. El modelo resuelve un problema de enrutado y triaje automatico de reclamaciones, una tarea habitual en entidades financieras y organismos de defensa del consumidor.
 
 Arquitectonicamente es un transformer encoder de tipo BERT destilado, con 66.957.317 parametros totales en formato safetensors y un repositorio de 0,3 GB. El entrenamiento se realizo sobre una muestra estratificada de 56.000 filas del dataset publico de quejas de consumo de la CFPB (Consumer Financial Protection Bureau), y el autor reporta un Macro F1 de 0,84 sobre el conjunto de test reservado.
 
@@ -65,17 +65,17 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 - VRAM estimada para inferencia: aproximadamente 268 MB en fp32 (67 M de parametros x 4 bytes), unos 134 MB en fp16 y alrededor de 67 MB en int8. Estas cifras son estimaciones derivadas del numero de parametros; no estan documentadas por el autor.
 - GPU recomendadas: cualquier GPU moderna es suficiente. El modelo cabe holgadamente en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 o incluso en GPUs integradas y aceleradores de borde.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU con al menos 1 GB de VRAM, e incluso puede ejecutarse integramente en CPU.
-- Opciones de despliegue: pipeline de HuggingFace Transformers, ONNX Runtime, TorchServe, Text Generation Inference (TGI) para modelos encoder, FastAPI con transformers, o conversion a GGUF para llama.cpp/Ollama si se requiere un runtime unificado.
+- Opciones de despliegue: pipeline de Hugging Face Transformers, ONNX Runtime, TorchServe, Text Generation Inference (TGI) para modelos encoder, FastAPI con transformers, o conversion a GGUF para llama.cpp/Ollama si se requiere un runtime unificado.
 - Latencia y throughput estimados: no disponibles. Al tratarse de un encoder de 6 capas con 67 M de parametros, se espera una latencia muy baja (del orden de milisegundos por muestra en GPU y decenas de milisegundos en CPU), aunque no se aportan mediciones concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Consumer Complaint Classifier (este modelo) | 66.957.317 | 512 tokens | Clasificacion 5 clases CFPB | MIT | HuggingFace |
-| distilbert-base-uncased | ~66 M | 512 tokens | Modelo base, sin cabeza de clasificacion especifica | Apache 2.0 | HuggingFace |
-| bert-base-uncased | ~110 M | 512 tokens | Modelo base, sin cabeza de clasificacion especifica | Apache 2.0 | HuggingFace |
-| FinBERT (ProsusAI/finbert) | ~110 M | 512 tokens | Analisis de sentimiento financiero | no disponible en esta ficha | HuggingFace |
+| Consumer Complaint Classifier (este modelo) | 66.957.317 | 512 tokens | Clasificacion 5 clases CFPB | MIT | Hugging Face |
+| distilbert-base-uncased | ~66 M | 512 tokens | Modelo base, sin cabeza de clasificacion especifica | Apache 2.0 | Hugging Face |
+| bert-base-uncased | ~110 M | 512 tokens | Modelo base, sin cabeza de clasificacion especifica | Apache 2.0 | Hugging Face |
+| FinBERT (ProsusAI/finbert) | ~110 M | 512 tokens | Analisis de sentimiento financiero | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para estos modelos en la tarea concreta de clasificacion de quejas CFPB, por lo que la comparacion se limita a parametros, contexto, tarea y licencia. No se han publicado comparaciones directas en la informacion disponible.
 
@@ -92,8 +92,8 @@ No se dispone de datos de rendimiento comparables para estos modelos en la tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhmedRdwan/consumer-complaint-classifier
+- Modelo en Hugging Face: https://huggingface.co/AhmedRdwan/consumer-complaint-classifier
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Dataset de quejas de consumidores de la CFPB: https://www.consumerfinance.gov/data-research/consumer-complaints/
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
-- Documentacion de HuggingFace Transformers para clasificacion de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification
+- Documentacion de Hugging Face Transformers para clasificacion de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

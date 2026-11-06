@@ -2,11 +2,11 @@
 
 ## Resumen
 
-FunctionGemma 270M IT es un modelo de lenguaje de 268.098.176 parámetros (aproximadamente 270 millones) desarrollado por Google y publicado en HuggingFace con el identificador `google/functiongemma-270m-it`. Se trata de la variante ajustada por instrucciones de FunctionGemma, un modelo especializado en function calling (llamada a funciones y uso de herramientas) construido sobre la arquitectura `gemma3_text` de la familia Gemma 3. El repositorio ocupa 0,9 GB y la etiqueta de arquitectura y el recuento de parámetros coinciden con los de Gemma 3 270M, lo que sitúa al modelo en esa familia.
+FunctionGemma 270M IT es un modelo de lenguaje de 268.098.176 parámetros (aproximadamente 270 millones) desarrollado por Google y publicado en Hugging Face con el identificador `google/functiongemma-270m-it`. Se trata de la variante ajustada por instrucciones de FunctionGemma, un modelo especializado en function calling (llamada a funciones y uso de herramientas) construido sobre la arquitectura `gemma3_text` de la familia Gemma 3. El repositorio ocupa 0,9 GB y la etiqueta de arquitectura y el recuento de parámetros coinciden con los de Gemma 3 270M, lo que sitúa al modelo en esa familia.
 
 El problema que aborda es concreto: transformar lenguaje natural en llamadas a funciones estructuradas de forma fiable y con latencia baja, sin depender de modelos de decenas de miles de millones de parámetros. Esto resulta relevante ahora porque los agentes locales, los asistentes móviles y las integraciones de herramientas dentro de aplicaciones necesitan modelos que quepan en memoria reducida y que puedan ejecutarse en el propio dispositivo.
 
-El acceso al modelo está restringido (gated): es necesario aceptar las condiciones de la licencia Gemma en HuggingFace. En el momento de la consulta acumula 24.500 descargas y 1.074 likes, con última actualización el 14 de enero de 2026.
+El acceso al modelo está restringido (gated): es necesario aceptar las condiciones de la licencia Gemma en Hugging Face. En el momento de la consulta acumula 24.500 descargas y 1.074 likes, con última actualización el 14 de enero de 2026.
 
 ## Especificaciones tecnicas
 
@@ -90,11 +90,11 @@ Diferencias clave: FunctionGemma es el unico de los cuatro explicitamente especi
 - Contexto: la longitud de contexto no se especifica en la informacion disponible; en conversaciones largas el rendimiento puede degradarse y conviene verificar el limite real antes de disenar un flujo de agente.
 - Sesgos: hereda los sesgos presentes en los datos de entrenamiento de la familia Gemma; no se documentan evaluaciones de sesgo especificas para esta variante.
 - Licencia: el uso comercial esta permitido bajo los Gemma Terms of Use, que imponen obligaciones de distribucion de los terminos, politica de uso aceptable y ciertas restricciones de uso; es necesario revisar el texto completo antes de un despliegue en produccion.
-- Acceso: el repositorio esta restringido y requiere aceptar las condiciones en HuggingFace, lo que afecta a la automatizacion de descargas en pipelines.
+- Acceso: el repositorio esta restringido y requiere aceptar las condiciones en Hugging Face, lo que afecta a la automatizacion de descargas en pipelines.
 - Produccion: no debe usarse como unico componente de decision. Necesita orquestador, validador de esquemas, control de errores y limites de ejecucion de herramientas.
 - No dispone de vision, audio ni modo de razonamiento explicito, segun la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/functiongemma-270m-it
+- Modelo en Hugging Face: https://huggingface.co/google/functiongemma-270m-it
 - La busqueda web realizada no devolvio resultados relevantes sobre el modelo: los resultados obtenidos correspondian a paginas generales del buscador y no contenian informacion tecnica, papers, blogs ni repositorios asociados. Por tanto, no se pueden facilitar enlaces adicionales verificados.

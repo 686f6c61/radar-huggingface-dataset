@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mikhailovvladimir/generation` es un repositorio experimental publicado en HuggingFace por el usuario mikhailovladimir que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor lo describe como un banco de pruebas ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`mikhailovvladimir/generation` es un repositorio experimental publicado en Hugging Face por el usuario mikhailovladimir que contiene una implementación propia de una arquitectura MobileViT orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor lo describe como un banco de pruebas ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 La arquitectura declarada es MobileViT en escala "xlarge", con atención dispersa (sparse), fusión por tensores, activación GELU y normalización RMSNorm. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos entrenados.
 
@@ -86,5 +86,5 @@ No se dispone de datos verificados para completar esta comparativa con cifras co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikhailovvladimir/generation
+- Modelo en Hugging Face: https://huggingface.co/mikhailovvladimir/generation
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web asociada.

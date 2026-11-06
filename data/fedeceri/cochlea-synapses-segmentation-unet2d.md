@@ -57,9 +57,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - El modelo está diseñado específicamente para imágenes de microscopía de fluorescencia de cóclea con marcaje de sinaptopodios; su generalización a otros tejidos, marcadores o modalidades de imagen no está garantizada.
 - No se proporcionan métricas de rendimiento cuantitativas (Dice, RQ/SQ) en la documentación, lo que dificulta evaluar su precisión antes de su uso.
 - La licencia Apache 2.0 permite uso comercial, pero la model card indica explícitamente "Research use only", por lo que se recomienda contactar con el autor antes de cualquier aplicación clínica o comercial.
-- El repositorio de HuggingFace muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar alojados en la plataforma; es necesario descargarlos desde el repositorio de GitHub asociado.
+- El repositorio de Hugging Face muestra un tamaño de 0.0 GB, lo que sugiere que los pesos podrían no estar alojados en la plataforma; es necesario descargarlos desde el repositorio de GitHub asociado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fedeceri/cochlea-synapses-segmentation-unet2d
+- Hugging Face: https://huggingface.co/fedeceri/cochlea-synapses-segmentation-unet2d
 - GitHub (código de entrenamiento e inferencia): https://github.com/fedeceri85/cochlea-synapses-binary-segmentation-unet2d

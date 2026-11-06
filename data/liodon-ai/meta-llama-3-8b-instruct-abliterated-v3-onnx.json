@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-ONNX",
+  "slug": "liodon-ai-meta-llama-3-8b-instruct-abliterated-v3-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-ONNX",
+  "created_at": "2026-11-04T08:56:00.000Z",
+  "updated_at": "2026-11-04T10:17:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "llama",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+    "base_model:quantized:failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49275472001,
+  "storage_human": "49.3 GB",
+  "base_model": "failspy/Meta-Llama-3-8B-Instruct-abliterated-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8",
+      "snippet": "Instructions to use liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8 at main",
+      "url": "https://huggingface.co/liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8/tree/main",
+      "snippet": "Instructions to use liodon-ai/Meta-Llama-3-8B-Instruct-abliterated-v3-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

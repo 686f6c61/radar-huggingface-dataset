@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "losercheers/Qwen3.5-9B-Base-CPT-Baseline",
+  "slug": "losercheers-qwen3-5-9b-base-cpt-baseline",
+  "author": "losercheers",
+  "url": "https://huggingface.co/losercheers/Qwen3.5-9B-Base-CPT-Baseline",
+  "created_at": "2026-11-02T03:22:40.000Z",
+  "updated_at": "2026-11-02T06:59:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17920463780,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "losercheers/Qwen3.5-9B-Base-CPT-Baseline · Hugging Face",
+      "url": "https://huggingface.co/losercheers/Qwen3.5-9B-Base-CPT-Baseline",
+      "snippet": "Image-Text-to-Text model with 9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "losercheers/Qwen3.5-9B-Base-CPT-Baseline · Discussions",
+      "url": "https://huggingface.co/losercheers/Qwen3.5-9B-Base-CPT-Baseline/discussions",
+      "snippet": "losercheers / Qwen3.5-9B-Base-CPT-Baseline Like 0 Image-Text-to-Text Transformers Safetensors qwen3_5_text text-generation conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/LFM2.5-2.6B-JP-RollPlay-SFT-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/LFM2.5-2.6B-JP-RollPlay-SFT-i1-GGUF
 - Repositorio con quants estaticos: https://huggingface.co/mradermacher/LFM2.5-2.6B-JP-RollPlay-SFT-GGUF
 - Modelo base (fine-tuning): https://huggingface.co/CloudGoat/LFM2.5-2.6B-JP-RollPlay-SFT
 - Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b

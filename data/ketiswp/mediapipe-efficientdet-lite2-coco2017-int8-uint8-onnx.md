@@ -68,7 +68,7 @@ No se dispone de datos de comparación con otros modelos de detección (como YOL
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite2-COCO2017-int8-uint8-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite2-COCO2017-int8-uint8-onnx)
 - [Versión FP32 del modelo](https://huggingface.co/ketiswp/mediapipe-EfficientDet-Lite2-COCO2017-fp32-onnx)
 - [Modelo original en Kaggle](https://www.kaggle.com/models/tensorflow/efficientdet)
 - [Guía de detección de objetos de MediaPipe](https://developers.google.com/edge/mediapipe/solutions/vision/object_detector?hl=en)

@@ -80,7 +80,7 @@ No se dispone de datos verificados de rendimiento de este modelo frente a altern
 | Modelo | Parametros | Contexto | Dataset de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Sprout (amanm10000) | 32,5 M | 512 | Prefijo de TinyStories | No declarada; upstream CDLA-Sharing-1.0 | Checkpoint `.pt` + codigo propio en GitHub |
-| TinyStories-33M (roneneldan/Microsoft) | ~33 M (no verificado en esta busqueda) | no disponible | TinyStories | no disponible | Pesos en HuggingFace |
+| TinyStories-33M (roneneldan/Microsoft) | ~33 M (no verificado en esta busqueda) | no disponible | TinyStories | no disponible | Pesos en Hugging Face |
 | GPT-2 small | 124 M | 1024 | WebText | MIT (segun su publicacion original) | Ampliamente disponible |
 | TinyLlama-1.1B | ~1,1 B | 2048 | no disponible | Apache-2.0 | Pesos en safetensors y GGUF |
 
@@ -102,7 +102,7 @@ El comparable mas directo por tamano y dominio es la familia TinyStories-33M, en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amanm10000/sprout
+- Modelo en Hugging Face: https://huggingface.co/amanm10000/sprout
 - Repositorio de codigo y artefactos de entrenamiento: https://github.com/amanmprojects/sprout
 - Notas de resultados y limitaciones (FINDINGS.md): https://github.com/amanmprojects/sprout/blob/main/FINDINGS.md
 - Dataset de origen (TinyStories): https://huggingface.co/datasets/roneneldan/TinyStories

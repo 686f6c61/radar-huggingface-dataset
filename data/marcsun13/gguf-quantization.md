@@ -68,5 +68,5 @@ No disponible. Este proyecto no tiene comparación directa con modelos de IA, si
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/marcsun13/gguf-quantization)
+- [Repositorio en Hugging Face](https://huggingface.co/marcsun13/gguf-quantization)
 - [llama.cpp (upstream de los kernels)](https://github.com/ggml-org/llama.cpp)

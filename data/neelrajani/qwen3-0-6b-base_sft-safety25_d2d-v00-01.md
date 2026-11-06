@@ -67,9 +67,9 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - NeelRajani/Qwen3-0.6B-Base_SFT-safety25_D2D-v00.01](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety25_D2D-v00.01)
-- [HuggingFace - Teacher SFT safety v00.01](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01)
-- [HuggingFace - Variante adversarial ADV-pku](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety25_ADV-pku-v00.01)
+- [Hugging Face - NeelRajani/Qwen3-0.6B-Base_SFT-safety25_D2D-v00.01](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety25_D2D-v00.01)
+- [Hugging Face - Teacher SFT safety v00.01](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01)
+- [Hugging Face - Variante adversarial ADV-pku](https://huggingface.co/NeelRajani/Qwen3-0.6B-Base_SFT-safety25_ADV-pku-v00.01)
 - [LLM Explorer - Ficha del modelo](https://llm-explorer.com/model/NeelRajani%2FQwen3-0.6B-Base_SFT_safety_v00.01,2HHZdabfY8ljiQ2B16Af0A)
 - [FriendliAI - Despliegue del teacher](https://friendli.ai/models/NeelRajani/Qwen3-0.6B-Base_SFT_safety_v00.01)
 - [FriendliAI - Despliegue de variante safety75](https://friendli.ai/models/NeelRajani/Qwen3-0.6B-Base_SFT-safety75_ADV-pku-v00.01)

@@ -99,7 +99,7 @@ No hay datos publicos de rendimiento para comparar con alternativas de reconocim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pek01/rillio-subtitle-pack
+- Repositorio en Hugging Face: https://huggingface.co/pek01/rillio-subtitle-pack
 - Modelo base del reconocedor (GGUF upstream): https://huggingface.co/ggml-org/Qwen3-ASR-1.7B-GGUF
 - Modelo base del traductor (GGUF upstream): https://huggingface.co/unsloth/Qwen3.5-9B-GGUF
 - Modelo base Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B

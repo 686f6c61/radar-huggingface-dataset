@@ -89,6 +89,6 @@ No se han encontrado especificaciones completas de estos modelos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s0_2026-09-06_23-22-13_742289-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s0_2026-09-06_23-22-13_742289-pt
 - Registro de entrenamiento (W&B): https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/fyxk5vkw
 - Repositorio nanochat: https://github.com/karpathy/nanochat

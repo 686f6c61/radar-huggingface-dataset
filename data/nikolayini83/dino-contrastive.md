@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dino-contrastive es un repositorio de HuggingFace publicado por el usuario nikolayini83 que contiene una implementacion reducida de una arquitectura tipo DINO orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release con pesos finales: el propio autor lo describe como un "punto de partida reproducible" en variante *tiny*, con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El repositorio incluye el codigo de definicion del modelo y un punto de entrada de fine-tuning (`finetune.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint `model.safetensors`.
+dino-contrastive es un repositorio de Hugging Face publicado por el usuario nikolayini83 que contiene una implementacion reducida de una arquitectura tipo DINO orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release con pesos finales: el propio autor lo describe como un "punto de partida reproducible" en variante *tiny*, con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El repositorio incluye el codigo de definicion del modelo y un punto de entrada de fine-tuning (`finetune.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint `model.safetensors`.
 
 El dato de parametros reportado por los metadatos de safetensors es de 16.576 parametros, lo que situa al modelo en un orden de magnitud muy por debajo de cualquier transformer utilizable en produccion; se trata, por tanto, de un artefacto de investigacion y andamiaje de codigo, no de un modelo desplegable. La arquitectura declarada combina atencion flash, fusion mediante co-attention, activacion GELU y normalizacion RMSNorm, con un esquema de entrenamiento por defecto basado en el optimizador LAMB y un scheduler coseno.
 
@@ -78,11 +78,11 @@ No es posible establecer una comparativa cuantitativa con alternativas de la mis
 - No se declara longitud de contexto; cualquier uso que dependa de una ventana de contexto concreta carece de base documental.
 - Riesgo de alucinacion: no aplicable en el sentido de generacion de texto, pero si existe el riesgo de interpretar como funcional un modelo que es solo una inicializacion.
 - Restricciones de licencia: la licencia es MIT, que permite uso comercial, modificacion y redistribucion con atribucion y sin garantia. Al combinarlo con datasets externos hay que revisar por separado los terminos de esos datos, tal y como advierte el autor.
-- En produccion, la carga mediante APIs genericas de HuggingFace puede fallar: la model card indica que se necesita un adaptador explicito por tratarse de una implementacion personalizada.
+- En produccion, la carga mediante APIs genericas de Hugging Face puede fallar: la model card indica que se necesita un adaptador explicito por tratarse de una implementacion personalizada.
 - Cualquier resultado derivado de un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto incluidos en este repositorio.
 - El repositorio tiene 0 descargas y 0 *likes*, y un tamano de 0,0 GB, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikolayini83/dino-contrastive
+- Modelo en Hugging Face: https://huggingface.co/nikolayini83/dino-contrastive
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos correspondian a contenidos no relacionados). No se dispone de papers, blogs, repositorios auxiliares ni demos adicionales.

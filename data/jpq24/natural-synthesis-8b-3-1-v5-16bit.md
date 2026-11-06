@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Natural-Synthesis-8b-3.1-v5-16bit es un ajuste fino (finetune) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario JPQ24 en HuggingFace. El entrenamiento se realizó partiendo de `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` y se llevó a cabo con la librería Unsloth junto con TRL de HuggingFace, lo que según el autor permitió un entrenamiento aproximadamente dos veces más rápido. El repositorio contiene los pesos en precisión de 16 bits en formato safetensors, con 8.030.261.248 parámetros totales.
+Natural-Synthesis-8b-3.1-v5-16bit es un ajuste fino (finetune) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario JPQ24 en Hugging Face. El entrenamiento se realizó partiendo de `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` y se llevó a cabo con la librería Unsloth junto con TRL de Hugging Face, lo que según el autor permitió un entrenamiento aproximadamente dos veces más rápido. El repositorio contiene los pesos en precisión de 16 bits en formato safetensors, con 8.030.261.248 parámetros totales.
 
 El modelo se enmarca en la familia de ajustes "Natural Synthesis" del mismo autor, orientados a generación de texto conversacional en inglés. Al heredar la arquitectura y el tokenizador de Llama 3.1, conserva las capacidades generales de la familia (comprensión de instrucciones, generación de texto y contexto de hasta 128.000 tokens en el modelo base), aunque no se ha publicado información específica sobre el dataset de ajuste ni sobre mejoras concretas respecto al modelo original.
 
@@ -66,10 +66,10 @@ La model card no incluye ninguna métrica (MMLU, HumanEval, GSM8K, MT-Bench ni s
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| JPQ24/Natural-Synthesis-8b-3.1-v5-16bit | 8,03 B | 128.000 tokens (heredado del base, no confirmado en la card) | Apache 2.0 | en | HuggingFace (0 descargas) |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | multilingue (8 idiomas declarados) | HuggingFace, ampliamente adoptado |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | multilingue | HuggingFace, ampliamente adoptado |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128.000 tokens | Apache 2.0 (variantes) | multilingue (29 idiomas) | HuggingFace, ampliamente adoptado |
+| JPQ24/Natural-Synthesis-8b-3.1-v5-16bit | 8,03 B | 128.000 tokens (heredado del base, no confirmado en la card) | Apache 2.0 | en | Hugging Face (0 descargas) |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | multilingue (8 idiomas declarados) | Hugging Face, ampliamente adoptado |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | multilingue | Hugging Face, ampliamente adoptado |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 128.000 tokens | Apache 2.0 (variantes) | multilingue (29 idiomas) | Hugging Face, ampliamente adoptado |
 
 La comparación de rendimiento no está disponible: no existen benchmarks publicados para este finetune, por lo que no es posible situarlo frente a las alternativas en tareas concretas. A igualdad de tamaño, la ventaja diferencial de este modelo es únicamente su licencia Apache 2.0 (frente a la licencia comunitaria de Llama 3.1), mientras que sus desventajas son la falta de documentación, la ausencia de evaluación y el soporte declarado solo en inglés.
 
@@ -86,10 +86,10 @@ La comparación de rendimiento no está disponible: no existen benchmarks public
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v5-16bit
+- Repositorio Hugging Face: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v5-16bit
 - Modelo base del ajuste: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/JPQ24
+- Perfil del autor en Hugging Face: https://huggingface.co/JPQ24
 - Variante relacionada del mismo autor: https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit
 - Otra variante del autor: https://huggingface.co/JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge
 - Ficha en LLM Explorer: https://llm-explorer.com/model/JPQ24%2FLlama-3.1-8b-Natural-Synthesis-merged-16bit,7ymhNisQJYbwvs9g0Io5RZ

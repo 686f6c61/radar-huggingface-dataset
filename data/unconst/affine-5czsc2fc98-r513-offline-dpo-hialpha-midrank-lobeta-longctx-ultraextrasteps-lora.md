@@ -54,5 +54,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r513-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-lora
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r513-offline-dpo-hialpha-midrank-lobeta-longctx-ultraextrasteps-lora
 - Otros adaptadores del mismo autor (sin información adicional): https://huggingface.co/unconst/Affine-5czsc2fc98-r490-offline-dpo-hialpha-midrank-lobeta-extrasteps-merged y https://huggingface.co/unconst/Affine-5czsc2fc98-r31-lora

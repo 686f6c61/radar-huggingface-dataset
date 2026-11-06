@@ -68,10 +68,10 @@ La model card de esta conversion no incluye ninguna evaluacion (MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Formato y cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-7B-ONNX-WebGPU (este) | No disponible con precision (aproximadamente 7B) | No disponible | ONNX, int4 + float16 | MIT (repo); base con licencias propias | HuggingFace, 5,2 GB, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (original) | No disponible en la informacion proporcionada | No disponible | Safetensors en precision completa | No disponible en la informacion proporcionada | HuggingFace, offsets oficiales |
-| DeepSeek-R1-Distill-Llama-8B | No disponible en la informacion proporcionada | No disponible | Safetensors | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen2.5-7B-Instruct | No disponible en la informacion proporcionada | No disponible | Safetensors | Apache 2.0 (citada en los ficheros de licencia de este repo) | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-7B-ONNX-WebGPU (este) | No disponible con precision (aproximadamente 7B) | No disponible | ONNX, int4 + float16 | MIT (repo); base con licencias propias | Hugging Face, 5,2 GB, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (original) | No disponible en la informacion proporcionada | No disponible | Safetensors en precision completa | No disponible en la informacion proporcionada | Hugging Face, offsets oficiales |
+| DeepSeek-R1-Distill-Llama-8B | No disponible en la informacion proporcionada | No disponible | Safetensors | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen2.5-7B-Instruct | No disponible en la informacion proporcionada | No disponible | Safetensors | Apache 2.0 (citada en los ficheros de licencia de este repo) | Hugging Face |
 
 La comparativa se limita a lo verificable: el unico rasgo diferencial confirmado de este artefacto frente a los demas es su formato ONNX cuantizado a int4 y su orientacion a WebGPU en navegador. No se dispone de datos de rendimiento comparado.
 
@@ -88,7 +88,7 @@ La comparativa se limita a lo verificable: el unico rasgo diferencial confirmado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danyalmalik/DeepSeek-R1-Distill-Qwen-7B-ONNX-WebGPU
+- Repositorio en Hugging Face: https://huggingface.co/danyalmalik/DeepSeek-R1-Distill-Qwen-7B-ONNX-WebGPU
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - ONNX Runtime GenAI: no se incluye URL en la informacion proporcionada
 - ONNX Runtime Web y backend WebGPU: no se incluye URL en la informacion proporcionada

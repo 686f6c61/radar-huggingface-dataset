@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XXIV-27B-Q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XXIV-27B-Q2
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Proyector de visión (Q8_0): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/b072e1d3b35a0a630cece372c2127528e0994386/Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf
 - Proyector de visión (BF16): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/b072e1d3b35a0a630cece372c2127528e0994386/Ternary-Bonsai-2-27B-mmproj-BF16.gguf

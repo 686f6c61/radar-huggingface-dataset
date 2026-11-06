@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/zils-lite-decision
+- Hugging Face: https://huggingface.co/qhoenix/zils-lite-decision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Componente upstream: https://huggingface.co/vllm-sr/d3-lite
 - Componente upstream: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge

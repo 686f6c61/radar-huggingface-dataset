@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Union Alpha es un modelo de IA anunciado por el autor "stealth-model" bajo un enfoque de modelo sigiloso (stealth): su tarjeta de HuggingFace describe un sistema orientado a coding, research y flujos de trabajo agénticos, con entrada de texto e imagen y soporte de tool calling. El repositorio, sin embargo, no contiene pesos: su tamano es de 0,0 GB, registra 0 descargas y 1 like, y el autor indica explícitamente que solo publicará cuantizaciones GGUF "si los pesos llegan a estar disponibles públicamente".
+Union Alpha es un modelo de IA anunciado por el autor "stealth-model" bajo un enfoque de modelo sigiloso (stealth): su tarjeta de Hugging Face describe un sistema orientado a coding, research y flujos de trabajo agénticos, con entrada de texto e imagen y soporte de tool calling. El repositorio, sin embargo, no contiene pesos: su tamano es de 0,0 GB, registra 0 descargas y 1 like, y el autor indica explícitamente que solo publicará cuantizaciones GGUF "si los pesos llegan a estar disponibles públicamente".
 
 Por tanto, no se trata de un modelo descargable ni evaluable localmente, sino de un servicio accesible a través de OpenCode y OpenRouter, con una web propia (union-alpha.com) donde se alojarían benchmarks, especificaciones y ejemplos de API. No hay información publicada sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni licencia.
 
-Su relevancia actual es limitada y fundamentalmente informativa: sirve como ejemplo del patrón de "modelo stealth" en el que el anuncio en HuggingFace actúa como escaparate comercial mientras la inferencia se presta únicamente vía API de terceros. Cualquier evaluación técnica seria queda bloqueada hasta que el autor publique pesos, licencia y documentación verificable.
+Su relevancia actual es limitada y fundamentalmente informativa: sirve como ejemplo del patrón de "modelo stealth" en el que el anuncio en Hugging Face actúa como escaparate comercial mientras la inferencia se presta únicamente vía API de terceros. Cualquier evaluación técnica seria queda bloqueada hasta que el autor publique pesos, licencia y documentación verificable.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 
 ## Capacidades
 
-- Generacion de texto: el pipeline declarado en HuggingFace es text-generation.
+- Generacion de texto: el pipeline declarado en Hugging Face es text-generation.
 - Codigo: la tarjeta lo posiciona explícitamente para tareas de coding.
 - Investigacion (research): uso previsto declarado por el autor.
 - Flujos agénticos: descrito para agentic workflows.
@@ -107,7 +107,7 @@ Cualquier afirmacion de superioridad o equivalencia frente a otros modelos carec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stealth-model/union-alpha
+- Hugging Face: https://huggingface.co/stealth-model/union-alpha
 - Web del autor: https://union-alpha.com/
 - Plataformas de acceso mencionadas: OpenCode y OpenRouter (sin URL directa en la informacion disponible)
 - Paper, repositorio de codigo y demo: no disponibles

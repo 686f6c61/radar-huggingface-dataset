@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-domains-music500-warmup500-seed208-stage1` es un ajuste fino (fine-tuning) del modelo base EleutherAI/pythia-160m, publicado por el usuario qing-yao en HuggingFace. Se trata de un modelo de generación de texto de pequeno tamano (85,8 millones de parametros reales en los pesos safetensors) derivado de la familia Pythia de EleutherAI, orientada a la investigacion sobre el comportamiento de los transformers durante el entrenamiento.
+`ppt-pythia-160m-nope-domains-music500-warmup500-seed208-stage1` es un ajuste fino (fine-tuning) del modelo base EleutherAI/pythia-160m, publicado por el usuario qing-yao en Hugging Face. Se trata de un modelo de generación de texto de pequeno tamano (85,8 millones de parametros reales en los pesos safetensors) derivado de la familia Pythia de EleutherAI, orientada a la investigacion sobre el comportamiento de los transformers durante el entrenamiento.
 
 El nombre del repositorio sugiere un experimento controlado: "nope" probablemente hace referencia a una variante de atencion sin positional encoding (NoPE), "domains-music500" a un dataset de dominio musical con 500 pasos, y "warmup500-seed208-stage1" a la configuracion de calentamiento y la semilla utilizada. El modelo emplea la arquitectura `gpt_neox_nope` (una variante de GPT-NeoX sin codificacion posicional explicita), lo que lo situa en la linea de investigacion sobre attention sin posiciones.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada para produccion: se trata de un artefacto de investiga
 
 El modelo se basa en la arquitectura GPT-NeoX, un transformer decoder-only con atencion causal. La variante `gpt_neox_nope` implica la ausencia de codificacion posicional explicita (NoPE, "No Positional Encoding"), una linea de investigacion que estudia si los transformers pueden aprender implicitamente el orden de los tokens a traves de la mascara causal. El modelo base, EleutherAI/pythia-160m, pertenece a la suite Pythia, disenada para facilitar estudios de interpretabilidad y dinamica de entrenamiento con checkpoints publicos.
 
-El ajuste fino se realizo con el Trainer de HuggingFace sobre un dataset no especificado (la model card indica "unknown dataset"). Los hiperparametros documentados son: learning rate 0.001, batch size de entrenamiento 16 con acumulacion de gradientes de 2 (batch efectivo 32), optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler coseno con learning rate minimo y warmup del 5%, 500 pasos de entrenamiento y semilla 208. Se desconoce si hubo RLHF, DPO o cualquier etapa de alineacion posterior; el nombre "stage1" sugiere que podria formar parte de un pipeline multi-etapa, pero no hay documentacion al respecto. Las versiones de framework empleadas fueron Transformers 5.4.0, PyTorch 2.8.0+cu128, Datasets 3.2.0 y Tokenizers 0.22.1.
+El ajuste fino se realizo con el Trainer de Hugging Face sobre un dataset no especificado (la model card indica "unknown dataset"). Los hiperparametros documentados son: learning rate 0.001, batch size de entrenamiento 16 con acumulacion de gradientes de 2 (batch efectivo 32), optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, scheduler coseno con learning rate minimo y warmup del 5%, 500 pasos de entrenamiento y semilla 208. Se desconoce si hubo RLHF, DPO o cualquier etapa de alineacion posterior; el nombre "stage1" sugiere que podria formar parte de un pipeline multi-etapa, pero no hay documentacion al respecto. Las versiones de framework empleadas fueron Transformers 5.4.0, PyTorch 2.8.0+cu128, Datasets 3.2.0 y Tokenizers 0.22.1.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ El ajuste fino se realizo con el Trainer de HuggingFace sobre un dataset no espe
 - Estudio de arquitecturas sin codificacion posicional: permite analizar como un modelo NoPE de pequeno tamano maneja el orden de los tokens en tareas de generacion, comparandolo con el Pythia-160m estandar.
 - Baseline en pipelines de evaluacion: puede utilizarse como punto de referencia de bajo coste en experimentos de scaling o de ajuste fino por dominio.
 - Pruebas de infraestructura de despliegue: al ser un modelo de ~86M de parametros, es adecuado para validar pipelines de serving (vLLM, TGI, transformers) antes de escalar a modelos mayores.
-- Docencia y formacion: util para demostrar el ciclo completo de fine-tuning con Trainer de HuggingFace en entornos con recursos limitados.
+- Docencia y formacion: util para demostrar el ciclo completo de fine-tuning con Trainer de Hugging Face en entornos con recursos limitados.
 - Experimentos de dominio musical: si el dataset "music500" se confirma, podria emplearse como punto de partida para estudiar la adaptacion de modelos pequenos a dominios especializados, aunque sin garantias de calidad.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-pythia-160m-nope-domains-music500-warmup500-seed208-stage1 | 85,8M (pesos) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste de investigacion sin documentacion |
-| EleutherAI/pythia-160m | 160M nominales | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con checkpoints de entrenamiento publicos |
-| EleutherAI/pythia-70m | 70M nominales | 2048 tokens | Apache 2.0 | HuggingFace | Alternativa mas pequena de la misma suite |
-| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | HuggingFace | Referencia clasica de modelos pequenos |
+| ppt-pythia-160m-nope-domains-music500-warmup500-seed208-stage1 | 85,8M (pesos) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste de investigacion sin documentacion |
+| EleutherAI/pythia-160m | 160M nominales | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con checkpoints de entrenamiento publicos |
+| EleutherAI/pythia-70m | 70M nominales | 2048 tokens | Apache 2.0 | Hugging Face | Alternativa mas pequena de la misma suite |
+| GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Hugging Face | Referencia clasica de modelos pequenos |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-music500-warmup500-seed208-stage1
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-domains-music500-warmup500-seed208-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Suite Pythia (paper): https://arxiv.org/abs/2304.01373
 - Repositorio Pythia (GitHub): https://github.com/EleutherAI/pythia

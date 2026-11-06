@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DanteGPT (este modelo) | 10,65 M | 256 caracteres | GPT desde cero, nivel de carácter | MIT | HuggingFace |
-| omarkilbi/dante-qwen2.5-0.5b-lora | 0,5 B (base) + adaptador LoRA | el de Qwen2.5-0.5B (no especificado en la información) | Fine-tuning LoRA sobre el mismo corpus | no disponible en la información | HuggingFace |
-| Qwen2.5-0.5B (base) | 0,5 B | no disponible en la información | LLM preentrenado de propósito general | no disponible en la información | HuggingFace |
+| DanteGPT (este modelo) | 10,65 M | 256 caracteres | GPT desde cero, nivel de carácter | MIT | Hugging Face |
+| omarkilbi/dante-qwen2.5-0.5b-lora | 0,5 B (base) + adaptador LoRA | el de Qwen2.5-0.5B (no especificado en la información) | Fine-tuning LoRA sobre el mismo corpus | no disponible en la información | Hugging Face |
+| Qwen2.5-0.5B (base) | 0,5 B | no disponible en la información | LLM preentrenado de propósito general | no disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks estándar para establecer una comparación de rendimiento más allá de los bits por carácter reportados por el autor.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks estándar para establecer una comparación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omarkilbi/dante-gpt-scratch
+- Modelo en Hugging Face: https://huggingface.co/omarkilbi/dante-gpt-scratch
 - Modelo complementario (Qwen2.5-0.5B + LoRA): https://huggingface.co/omarkilbi/dante-qwen2.5-0.5b-lora
 - nanoGPT (repositorio de entrenamiento): https://github.com/karpathy/nanoGPT
 - Corpus fuente (Project Gutenberg eBook #1000): https://www.gutenberg.org/ebooks/1000

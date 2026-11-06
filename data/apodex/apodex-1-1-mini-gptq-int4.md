@@ -83,7 +83,7 @@ No se dispone de datos comparativos publicados que permitan una comparacion rigu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/apodex/Apodex-1.1-mini-GPTQ-Int4
+- Repositorio Hugging Face: https://huggingface.co/apodex/Apodex-1.1-mini-GPTQ-Int4
 - Servicio online: https://www.apodex.ai/
 - Pagina principal: https://www.apodex.com/
 - Blog tecnico: https://www.apodex.com/blog/apodex-1.1-scaling-agentic-intelligence-for-complex-work

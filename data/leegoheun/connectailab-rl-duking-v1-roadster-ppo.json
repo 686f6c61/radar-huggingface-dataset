@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "leegoheun/connectailab-rl-duking-v1-roadster-ppo",
+  "slug": "leegoheun-connectailab-rl-duking-v1-roadster-ppo",
+  "author": "leegoheun",
+  "url": "https://huggingface.co/leegoheun/connectailab-rl-duking-v1-roadster-ppo",
+  "created_at": "2026-11-06T11:36:30.000Z",
+  "updated_at": "2026-11-06T11:36:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "ppo",
+    "continuous-control",
+    "connect-ai-lab",
+    "connectailab",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42518,
+  "storage_human": "42518 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leegoheun/connectailab-rl-duking-v1 · Hugging Face",
+      "url": "https://huggingface.co/leegoheun/connectailab-rl-duking-v1",
+      "snippet": "Instructions to use leegoheun/connectailab-rl-duking-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use leegoheun/connectailab-rl-duking-v1 with PEFT:"
+    },
+    {
+      "title": "leegoheun/connectailab-rl-duking-v2-link01 at main - Hugging Face",
+      "url": "https://huggingface.co/leegoheun/connectailab-rl-duking-v2-link01/tree/main",
+      "snippet": "Instructions to use leegoheun/connectailab-rl-duking-v2-link01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use leegoheun/connectailab-rl-duking-v2-link01 with PEFT:"
+    },
+    {
+      "title": "connectailab-rl-duking-v1-link01 API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/leegoheun/connectailab-rl-duking-v1-link01",
+      "snippet": "Run connectailab-rl-duking-v1-link01 with FriendliAI inference. LINK-01 로봇의 지금 상황(목표 거리 · 방향 · 거리 센서 · 속도 · 직전 선택)을 글로 읽고, 다음 0.5초 동안 어떻게 걸을지 보기 글자 하나로 답하는…"
+    },
+    {
+      "title": "connectailab-rl-duking-v1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/leegoheun/connectailab-rl-duking-v1",
+      "snippet": "Run connectailab-rl-duking-v1 with FriendliAI inference. 회사의 판단 하나(상황 · 질문 · 보기)를 읽고 보기 글자 하나로 답하는 의사결정 모델입니다. 보기 글자의 확률이 선택지별 확률, 가장 큰 값이 확신입니다."
+    }
+  ]
+}

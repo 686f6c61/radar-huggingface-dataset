@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SPARSEUP es un modelo de recuperacion (retrieval) de tipo sparse aprendido, desarrollado por Linkup y publicado en HuggingFace bajo el identificador `Linkup-Platform/linkup-sparseup-embed-v1`. Se inicializa desde el backbone `lightonai/LateOn-unsupervised` (ModernBERT-base, 149M de parametros) al que se le injerta la cabeza MLM de ModernBERT, y se afina de forma contrastiva sobre la mezcla de datos abiertos publicada por LightOn. El objetivo es ocupar la casilla que faltaba en la familia: LightOn libero receta y datos para DenseOn (vector unico) y LateOn (interaccion tardia), y SPARSEUP anade el tercer paradigma, el sparse de vocabulario, manteniendo backbone y datos fijos para permitir una comparacion controlada entre las tres arquitecturas.
+SPARSEUP es un modelo de recuperacion (retrieval) de tipo sparse aprendido, desarrollado por Linkup y publicado en Hugging Face bajo el identificador `Linkup-Platform/linkup-sparseup-embed-v1`. Se inicializa desde el backbone `lightonai/LateOn-unsupervised` (ModernBERT-base, 149M de parametros) al que se le injerta la cabeza MLM de ModernBERT, y se afina de forma contrastiva sobre la mezcla de datos abiertos publicada por LightOn. El objetivo es ocupar la casilla que faltaba en la familia: LightOn libero receta y datos para DenseOn (vector unico) y LateOn (interaccion tardia), y SPARSEUP anade el tercer paradigma, el sparse de vocabulario, manteniendo backbone y datos fijos para permitir una comparacion controlada entre las tres arquitecturas.
 
 El modelo genera representaciones dispersas de tipo SPLADE: aplica la cabeza MLM, transforma los logits con `log1p(ReLU(x - 15))`, retiene como maximo 12 dimensiones de vocabulario por token (`position_top_k=12`), hace max-pooling sobre la secuencia y pliega las variantes de superficie (mayusculas/minusculas y prefijo `Ġ`) sobre un unico id (`vocab_fold=case_space`). El resultado es un vector disperso de aproximadamente 34k dimensiones, en lugar de las 50k del vocabulario original, con scoring por producto escalar.
 
@@ -89,12 +89,12 @@ Latencia: con infraestructura dedicada (Seismic) alcanza latencias por debajo de
 
 | Modelo | Parametros | Tipo de recuperacion | BEIR-13 (sin MS MARCO) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SPARSEUP | 188,4M | Sparse aprendido (SPLADE-like, vocabulario plegado) | 56.4 | Apache 2.0 | HuggingFace, transformers |
-| LateOn | 149M (backbone) | Interaccion tardia (multi-vector) | 58.9 (busqueda exacta) | No disponible en la informacion | HuggingFace (lightonai) |
-| DenseOn | 149M (backbone) | Vector unico denso | 57.9 (busqueda exacta) | No disponible en la informacion | HuggingFace (lightonai) |
-| splade-v3 | No disponible | Sparse aprendido (SPLADE) | 51.7 | No disponible en la informacion | HuggingFace |
-| opensearch-neural-sparse-encoding-doc-v3-gte | No disponible | Sparse aprendido | 54.6 | No disponible en la informacion | OpenSearch / HuggingFace |
-| LACONIC-1B | 1B | Sparse aprendido | 58.7 | No disponible en la informacion | HuggingFace |
+| SPARSEUP | 188,4M | Sparse aprendido (SPLADE-like, vocabulario plegado) | 56.4 | Apache 2.0 | Hugging Face, transformers |
+| LateOn | 149M (backbone) | Interaccion tardia (multi-vector) | 58.9 (busqueda exacta) | No disponible en la informacion | Hugging Face (lightonai) |
+| DenseOn | 149M (backbone) | Vector unico denso | 57.9 (busqueda exacta) | No disponible en la informacion | Hugging Face (lightonai) |
+| splade-v3 | No disponible | Sparse aprendido (SPLADE) | 51.7 | No disponible en la informacion | Hugging Face |
+| opensearch-neural-sparse-encoding-doc-v3-gte | No disponible | Sparse aprendido | 54.6 | No disponible en la informacion | OpenSearch / Hugging Face |
+| LACONIC-1B | 1B | Sparse aprendido | 58.7 | No disponible en la informacion | Hugging Face |
 
 Nota: los numeros de LateOn y DenseOn proceden de busqueda exacta, mientras que SPARSEUP usa busqueda aproximada con Seismic, por lo que la comparacion no es estrictamente homogenea en el metodo de recuperacion.
 
@@ -112,7 +112,7 @@ Nota: los numeros de LateOn y DenseOn proceden de busqueda exacta, mientras que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Linkup-Platform/linkup-sparseup-embed-v1
+- Modelo en Hugging Face: https://huggingface.co/Linkup-Platform/linkup-sparseup-embed-v1
 - Entrada de blog de Linkup sobre SPARSEUP: https://www.linkup.so/blog/introducing-sparseup-by-linkup
 - Modelo base: https://huggingface.co/lightonai/LateOn-unsupervised
 

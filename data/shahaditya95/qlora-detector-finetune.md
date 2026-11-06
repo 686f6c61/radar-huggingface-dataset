@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shahaditya95/qlora-detector-finetune` es un repositorio publicado en HuggingFace con licencia BSD-3-Clause. Por su nombre, parece tratarse de un ajuste fino (fine-tuning) de un detector de texto, realizado mediante la técnica QLoRA (Quantized Low-Rank Adaptation), pero no se aporta ninguna especificación técnica en la model card. El repositorio incluye un archivo `notes.md` que, según el autor, contiene el texto completo de un artículo académico sobre robótica y visión-lenguaje, con formato LaTeX ACL, citas numéricas APA y estructura IMRAD. Sin embargo, no se proporciona el contenido de ese archivo ni detalles sobre el modelo base, los parámetros, la arquitectura o el entrenamiento. La ausencia de datos técnicos y de métricas de evaluación impide realizar una ficha completa; la información disponible es insuficiente para cualquier uso práctico o comparativo.
+El modelo `shahaditya95/qlora-detector-finetune` es un repositorio publicado en Hugging Face con licencia BSD-3-Clause. Por su nombre, parece tratarse de un ajuste fino (fine-tuning) de un detector de texto, realizado mediante la técnica QLoRA (Quantized Low-Rank Adaptation), pero no se aporta ninguna especificación técnica en la model card. El repositorio incluye un archivo `notes.md` que, según el autor, contiene el texto completo de un artículo académico sobre robótica y visión-lenguaje, con formato LaTeX ACL, citas numéricas APA y estructura IMRAD. Sin embargo, no se proporciona el contenido de ese archivo ni detalles sobre el modelo base, los parámetros, la arquitectura o el entrenamiento. La ausencia de datos técnicos y de métricas de evaluación impide realizar una ficha completa; la información disponible es insuficiente para cualquier uso práctico o comparativo.
 
 ## Especificaciones tecnicas
 
@@ -59,9 +59,9 @@ No disponible. No se dispone de información sobre el modelo base ni sobre alter
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/shahaditya95/qlora-detector-finetune)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/shahaditya95/qlora-detector-finetune)
 - [Paper QLoRA en arXiv](https://arxiv.org/abs/2305.14314)
 - [GitHub oficial de QLoRA](https://github.com/artidoro/qlora)
-- [Página del paper en HuggingFace](https://huggingface.co/papers/2305.14314)
+- [Página del paper en Hugging Face](https://huggingface.co/papers/2305.14314)
 
 Estos enlaces sobre QLoRA son de carácter general y no proporcionan información específica sobre este modelo en particular.

@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos comparables de otros desarrolladores 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/getenum/Qwen3.5-4B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/getenum/Qwen3.5-4B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

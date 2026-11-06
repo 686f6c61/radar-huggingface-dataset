@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Params | Contexto | Licencia | Entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Este fine-tune (EXAONE-7B-GRPO) | 7.8B | 128K (heredado) | no disponible | SFT + GRPO | HuggingFace |
-| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct | 7.8B | 128K | EXAONE License (uso no comercial) | Instruct | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7.6B | 32K | MIT | Distill de R1 | HuggingFace |
-| Qwen2.5-7B-Instruct | 7.6B | 128K | Apache-2.0 | Instruct | HuggingFace |
+| Este fine-tune (EXAONE-7B-GRPO) | 7.8B | 128K (heredado) | no disponible | SFT + GRPO | Hugging Face |
+| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct | 7.8B | 128K | EXAONE License (uso no comercial) | Instruct | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7.6B | 32K | MIT | Distill de R1 | Hugging Face |
+| Qwen2.5-7B-Instruct | 7.6B | 128K | Apache-2.0 | Instruct | Hugging Face |
 
 La comparativa se basa en el conocimiento general de los modelos base, no en datos del repositorio. Este fine-tune no tiene benchmarks publicados, por lo que no se puede evaluar su rendimiento relativo.
 
@@ -82,7 +82,7 @@ La comparativa se basa en el conocimiento general de los modelos base, no en dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_sft-1.0_grpo-1.0_epoch1_hpft
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/exaone_7b_verireason_no_reasoning_sft-1.0_grpo-1.0_epoch1_hpft
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Librería TRL: https://github.com/huggingface/trl

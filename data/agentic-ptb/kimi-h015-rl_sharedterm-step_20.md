@@ -66,5 +66,5 @@ No se dispone de datos de rendimiento para comparar este checkpoint con otros mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/kimi.h015.rl_sharedterm.step_20
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/kimi.h015.rl_sharedterm.step_20
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado en la información proporcionada)

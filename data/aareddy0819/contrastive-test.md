@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Aareddy0819/contrastive-test` es un repositorio experimental publicado en HuggingFace por el usuario Aareddy0819 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura EfficientFormer orientada a tareas contrastivas. No se trata de un modelo preentrenado ni de una release de producción: la propia model card lo describe como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño.
+`Aareddy0819/contrastive-test` es un repositorio experimental publicado en Hugging Face por el usuario Aareddy0819 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura EfficientFormer orientada a tareas contrastivas. No se trata de un modelo preentrenado ni de una release de producción: la propia model card lo describe como un artefacto para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeño tamaño.
 
 El dato más relevante es su tamaño real: el checkpoint en safetensors contiene 33.088 parámetros totales, una cifra ínfima para cualquier red neuronal moderna y muy alejada de la etiqueta "huge" que aparece en la configuración de arquitectura. El repositorio incluye el script `train.py`, los ficheros de configuración `config.json` y `training_args.json`, y un `model.safetensors` que, según el autor, es únicamente una inicialización válida para pruebas, no un checkpoint entrenado.
 
@@ -93,6 +93,6 @@ La comparación directa no es significativa: el modelo de esta ficha no está en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aareddy0819/contrastive-test
+- Repositorio en Hugging Face: https://huggingface.co/Aareddy0819/contrastive-test
 - No se han proporcionado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.
 - Referencia externa de contexto (no vinculada al repositorio): paper original de EfficientFormer, arXiv:2206.01191, y repositorio de Snap Research en GitHub.

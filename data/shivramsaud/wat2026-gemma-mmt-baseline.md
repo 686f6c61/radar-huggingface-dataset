@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShivRamSaud/wat2026-gemma-mmt-baseline es un repositorio de modelo publicado en HuggingFace por el usuario ShivRamSaud. El identificador sugiere que se trata de una linea base (baseline) para una tarea de traduccion automatica multimodal (MMT) asociada al taller WAT 2026, construida sobre la familia Gemma. No obstante, la informacion disponible en la ficha de HuggingFace no confirma ni la arquitectura, ni el tamano, ni el dataset de entrenamiento: la model card no incluye pipeline, licencia, idiomas ni pesos documentados.
+ShivRamSaud/wat2026-gemma-mmt-baseline es un repositorio de modelo publicado en Hugging Face por el usuario ShivRamSaud. El identificador sugiere que se trata de una linea base (baseline) para una tarea de traduccion automatica multimodal (MMT) asociada al taller WAT 2026, construida sobre la familia Gemma. No obstante, la informacion disponible en la ficha de Hugging Face no confirma ni la arquitectura, ni el tamano, ni el dataset de entrenamiento: la model card no incluye pipeline, licencia, idiomas ni pesos documentados.
 
 El repositorio acumula 0 descargas y 2 likes en el momento de la consulta, y lleva unicamente la etiqueta generica region:us. Fue creado el 12 de septiembre de 2026 y actualizado el mismo dia, lo que apunta a una publicacion reciente y probablemente preliminar, sin difusion posterior.
 
@@ -29,7 +29,7 @@ Dado que no se ha publicado documentacion tecnica verificable, esta ficha recoge
 
 ## Arquitectura y entrenamiento
 
-No disponible. La ficha de HuggingFace no documenta la arquitectura del modelo, el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste por preferencias (RLHF, DPO u otras). El identificador incluye "gemma", lo que indica una probable relacion con la familia Gemma de Google, y "mmt-baseline", que apunta a un sistema de traduccion automatica multimodal de referencia, pero ninguno de estos extremos esta confirmado por la informacion recopilada.
+No disponible. La ficha de Hugging Face no documenta la arquitectura del modelo, el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste por preferencias (RLHF, DPO u otras). El identificador incluye "gemma", lo que indica una probable relacion con la familia Gemma de Google, y "mmt-baseline", que apunta a un sistema de traduccion automatica multimodal de referencia, pero ninguno de estos extremos esta confirmado por la informacion recopilada.
 
 Tampoco se dispone de informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, adaptadores multimodales, proyecciones vision-lenguaje) ni sobre la estrategia de tokenizacion o el uso de vision encoder. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los resultados obtenidos corresponden a portales bancarios sin vinculo alguno con el proyecto.
 
@@ -52,13 +52,13 @@ Dado que no se dispone de especificaciones tecnicas, contexto, licencia ni evalu
 - Experimentacion con modelos de la familia Gemma: si finalmente se confirma la base Gemma, podria reutilizarse para comparar tecnicas de ajuste fino sobre traduccion.
 - Evaluacion de calidad de traduccion en pares de idiomas asiaticos: solo si el autor documenta los pares contemplados.
 - Docencia y practicas de posgrado: util como material de referencia en asignaturas de traduccion automatica, con la advertencia de que la documentacion es practicamente inexistente.
-- Analisis de reproducibilidad: el repositorio puede estudiarse como ejemplo de publicacion sin model card completa, un problema recurrente en HuggingFace.
+- Analisis de reproducibilidad: el repositorio puede estudiarse como ejemplo de publicacion sin model card completa, un problema recurrente en Hugging Face.
 
 Ninguno de estos casos cuenta con datos de rendimiento, latencia o coste que permitan justificar un despliegue real.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas BLEU, chrF, COMET, MMLU, HumanEval ni ninguna otra, y la busqueda web no devolvio documentacion tecnica asociada al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas BLEU, chrF, COMET, MMLU, HumanEval ni ninguna otra, y la busqueda web no devolvio documentacion tecnica asociada al modelo.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ShivRamSaud/wat2026-gemma-mmt-baseline | no disponible | no disponible | no disponible | no disponible | repositorio HuggingFace, 0 descargas |
+| ShivRamSaud/wat2026-gemma-mmt-baseline | no disponible | no disponible | no disponible | no disponible | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,5 +92,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShivRamSaud/wat2026-gemma-mmt-baseline
+- Hugging Face: https://huggingface.co/ShivRamSaud/wat2026-gemma-mmt-baseline
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun enlace relacionado con el modelo; los resultados obtenidos correspondian a portales bancarios sin vinculacion con el proyecto.

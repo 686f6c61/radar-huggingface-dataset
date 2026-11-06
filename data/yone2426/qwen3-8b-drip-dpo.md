@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-DRIP-DPO es un checkpoint publicado por el usuario yone2426 en HuggingFace, construido como continuación de un checkpoint previo de SFT ("Clean SFT") sobre el que se ha aplicado un proceso de DPO adversarial siguiendo la receta pública que el autor denomina DRIP. El identificador y la etiqueta `qwen3_drip_clean` apuntan a la familia Qwen3-8B como base, con 8.207.516.673 parámetros almacenados en safetensors y un repositorio de 18,9 GB.
+Qwen3-8B-DRIP-DPO es un checkpoint publicado por el usuario yone2426 en Hugging Face, construido como continuación de un checkpoint previo de SFT ("Clean SFT") sobre el que se ha aplicado un proceso de DPO adversarial siguiendo la receta pública que el autor denomina DRIP. El identificador y la etiqueta `qwen3_drip_clean` apuntan a la familia Qwen3-8B como base, con 8.207.516.673 parámetros almacenados en safetensors y un repositorio de 18,9 GB.
 
 El propio autor advierte en la model card de que se trata de un port de una receta pública y no de un modelo publicado por los autores originales del método, ni de una reproducción verificada de las puntuaciones del paper. Remite a los ficheros `run_config.json` y `FIDELITY.md` del repositorio para los detalles de configuración y de fidelidad, y exige revisar `modeling_drip.py` antes de cargarlo con `trust_remote_code=True`, lo que indica código de modelado personalizado.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-8B-DRIP-DPO (este) | 8.207.516.673 | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Port comunitario de receta DRIP, DPO adversarial sobre SFT, codigo personalizado |
+| Qwen3-8B-DRIP-DPO (este) | 8.207.516.673 | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Port comunitario de receta DRIP, DPO adversarial sobre SFT, codigo personalizado |
 | Qwen3-8B (base declarada) | No disponible en esta ficha | No disponible en esta ficha | No disponible en esta ficha | No verificado en la busqueda realizada | Referenciado por el identificador y la etiqueta del modelo |
 | Checkpoint de SFT previo ("Clean SFT") | No disponible | No disponible | No disponible | No se proporciona el identificador | Citado como punto de partida del DPO |
 | Otros checkpoints DPO de ~8B | No disponible | No disponible | No disponible | No disponible | No se han recopilado datos verificables en la busqueda realizada |
@@ -92,8 +92,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yone2426/Qwen3-8B-DRIP-DPO
-- Ficheros internos citados en la model card (dentro del repositorio de HuggingFace): `modeling_drip.py`, `run_config.json`, `FIDELITY.md`
+- Modelo en Hugging Face: https://huggingface.co/yone2426/Qwen3-8B-DRIP-DPO
+- Ficheros internos citados en la model card (dentro del repositorio de Hugging Face): `modeling_drip.py`, `run_config.json`, `FIDELITY.md`
 - Paper de la receta DRIP: no disponible en la informacion proporcionada
 - Repositorio de codigo original de DRIP: no disponible en la informacion proporcionada
 - Demos o espacios asociados: no disponible

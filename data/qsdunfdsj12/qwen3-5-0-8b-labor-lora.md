@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qsdunfdsj12/qwen3.5-0.8b-labor-lora
+- Hugging Face: https://huggingface.co/qsdunfdsj12/qwen3.5-0.8b-labor-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/qsdunfdsj12/labor-counsel-qa
 - Librería PEFT: https://github.com/huggingface/peft

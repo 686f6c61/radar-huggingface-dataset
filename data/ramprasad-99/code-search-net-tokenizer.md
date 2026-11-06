@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El artefacto identificado como `ramprasad-99/code-search-net-tokenizer` es un repositorio alojado en HuggingFace Hub por el usuario `ramprasad-99`, publicado el 19 de septiembre de 2026 y actualizado dos segundos despues de su creacion. La unica informacion tecnica verificable que proporciona la plataforma es que se trata de un artefacto etiquetado con la libreria `transformers`, compatible con endpoints de inferencia (`endpoints_compatible`) y alojado en la region `us`. No registra descargas ni likes, y no tiene ninguna tarea (`pipeline`) asignada.
+El artefacto identificado como `ramprasad-99/code-search-net-tokenizer` es un repositorio alojado en Hugging Face Hub por el usuario `ramprasad-99`, publicado el 19 de septiembre de 2026 y actualizado dos segundos despues de su creacion. La unica informacion tecnica verificable que proporciona la plataforma es que se trata de un artefacto etiquetado con la libreria `transformers`, compatible con endpoints de inferencia (`endpoints_compatible`) y alojado en la region `us`. No registra descargas ni likes, y no tiene ninguna tarea (`pipeline`) asignada.
 
-La model card publicada no contiene informacion sustantiva: es la plantilla generada automaticamente por HuggingFace en la que absolutamente todos los campos (`Developed by`, `Model type`, `Language(s)`, `License`, `Finetuned from model`, datos de entrenamiento, hiperparametros, evaluacion, huella de carbono y arquitectura) figuran como `[More Information Needed]`. No hay por tanto descripcion del problema que resuelve, ni del dataset empleado, ni resultados de evaluacion.
+La model card publicada no contiene informacion sustantiva: es la plantilla generada automaticamente por Hugging Face en la que absolutamente todos los campos (`Developed by`, `Model type`, `Language(s)`, `License`, `Finetuned from model`, datos de entrenamiento, hiperparametros, evaluacion, huella de carbono y arquitectura) figuran como `[More Information Needed]`. No hay por tanto descripcion del problema que resuelve, ni del dataset empleado, ni resultados de evaluacion.
 
 Por el propio identificador se puede inferir que el artefacto aspira a ser un tokenizer asociado al corpus CodeSearchNet, un conjunto de datos publico de codigo fuente. Conviene subrayar que esta interpretacion procede unicamente del nombre del repositorio y no esta respaldada por ningun contenido de la model card, por lo que debe tratarse como una hipotesis sin confirmar. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo: los resultados obtenidos eran directorios de pizzerias en Alemania, completamente ajenos al objeto de esta ficha.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni el formato de pesos, cualquier cifra seria especulativa.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no se puede determinar. No hay datos sobre tamano del artefacto.
-- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de inferencia de HuggingFace, pero no se especifica motor concreto (vLLM, llama.cpp, Ollama, TGI, Transformers).
+- Opciones de despliegue: no disponible. La etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de inferencia de Hugging Face, pero no se especifica motor concreto (vLLM, llama.cpp, Ollama, TGI, Transformers).
 - Latencia y throughput: no disponible. No se publican mediciones de ningun tipo.
 - Nota: si el artefacto fuese exclusivamente un tokenizer, el coste de inferencia en GPU seria irrelevante, ya que la tokenizacion se ejecuta en CPU con requisitos minimos de memoria.
 
@@ -83,13 +83,13 @@ No disponible. No es posible establecer una comparativa fiable por varias razone
 - Riesgo de artefacto incompleto o de prueba: cero descargas y cero likes, publicacion sin contenido descriptivo y actualizacion dos segundos despues de la creacion son indicios compatibles con un repositorio de prueba o un volcado accidental, no con un artefacto mantenido.
 - Riesgo de alucinacion: no evaluable para un modelo generativo por falta de informacion; no aplica si es un tokenizer.
 - Limitaciones de contexto e idioma: no disponibles.
-- Referencia bibliografica ambigua: la etiqueta `arxiv:1910.09700` apunta a un articulo sobre estimacion de emisiones de carbono en aprendizaje automatico (Lacoste et al., 2019), citado en la propia plantilla de HuggingFace. No debe interpretarse como el paper del modelo, sino como parte del texto por defecto de la plantilla.
+- Referencia bibliografica ambigua: la etiqueta `arxiv:1910.09700` apunta a un articulo sobre estimacion de emisiones de carbono en aprendizaje automatico (Lacoste et al., 2019), citado en la propia plantilla de Hugging Face. No debe interpretarse como el paper del modelo, sino como parte del texto por defecto de la plantilla.
 - Busqueda web sin resultados utiles: los resultados recuperados no guardan ninguna relacion con el modelo, por lo que no aportan validacion externa.
 - Recomendacion: no utilizar este artefacto en produccion sin una revision manual del repositorio y sin una licencia explicita.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ramprasad-99/code-search-net-tokenizer
-- Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono, citado en la plantilla de HuggingFace): https://arxiv.org/abs/1910.09700
+- Hugging Face: https://huggingface.co/ramprasad-99/code-search-net-tokenizer
+- Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono, citado en la plantilla de Hugging Face): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automatico: https://mlco2.github.io/impact#compute
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

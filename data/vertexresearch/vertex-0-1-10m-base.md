@@ -73,5 +73,5 @@ No se dispone de modelos comparables en el mismo rango de parametros (alrededor 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VertexResearch/Vertex-0.1-10M-base
+- Hugging Face: https://huggingface.co/VertexResearch/Vertex-0.1-10M-base
 - No se han encontrado otros enlaces relevantes (paper, blog o repositorio) en la informacion disponible.

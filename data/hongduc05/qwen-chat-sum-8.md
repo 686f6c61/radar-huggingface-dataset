@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables específicos para resume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hongduc05/qwen-chat-sum-8
+- Repositorio Hugging Face: https://huggingface.co/hongduc05/qwen-chat-sum-8
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen en GitHub: https://github.com/QwenLM/Qwen

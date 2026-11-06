@@ -17,7 +17,7 @@ La relevancia es limitada por el momento: cero descargas, cero "likes", sin benc
 | Longitud de contexto | 32.768 tokens en el modelo base; no verificado en este artefacto GGUF |
 | Tipos de cuantizacion | GGUF (niveles concretos no detallados en la informacion disponible) |
 | Idiomas soportados | Ingles segun la etiqueta del repositorio; el modelo base es multilingue, pero no hay confirmacion para este artefacto |
-| Licencia | Apache 2.0 segun la etiqueta `license:apache-2.0`; el campo de licencia de la ficha de HuggingFace aparece como no disponible |
+| Licencia | Apache 2.0 segun la etiqueta `license:apache-2.0`; el campo de licencia de la ficha de Hugging Face aparece como no disponible |
 | Formato de pesos | GGUF |
 | Libreria de inferencia | gguf (compatible con llama.cpp y derivados) |
 | Modelo base | Qwen/Qwen2.5-3B-Instruct |
@@ -89,10 +89,10 @@ La comparacion relevante es contra el propio Qwen2.5-3B-Instruct sin cuantizar: 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SZLHOLDINGS/ChaskaLLM
+- Repositorio en Hugging Face: https://huggingface.co/SZLHOLDINGS/ChaskaLLM
 - README del proyecto en GitHub: https://github.com/szl-holdings/ChaskaLLM/blob/main/README.md
 - Organizacion en GitHub: https://github.com/szl-holdings
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/SZLHOLDINGS
 - Otro artefacto de la organizacion (chaski): https://huggingface.co/SZLHOLDINGS/chaski
 - Perfil en X del autor: https://x.com/szlholdings
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

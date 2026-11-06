@@ -23,7 +23,7 @@ Su relevancia actual radica en que el hebreo es una lengua morfológicamente ric
 | Tamano del repositorio | 1,5 GB |
 | Pipeline declarado | feature-extraction |
 | Requiere codigo remoto | Sí (`trust_remote_code=True`) |
-| Descargas en HuggingFace | 4.337 |
+| Descargas en Hugging Face | 4.337 |
 | Fecha de creacion | 2023-08-29 |
 | Ultima actualizacion | 2026-09-15 |
 
@@ -57,7 +57,7 @@ Este modelo concreto es un ajuste fino del modelo base de DictaBERT para la tare
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de precisión, recall o F1 para la tarea de segmentación, ni comparaciones numéricas con otros modelos. El repositorio HuggingFace no tiene "likes" y no expone una tabla de evaluación.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de precisión, recall o F1 para la tarea de segmentación, ni comparaciones numéricas con otros modelos. El repositorio Hugging Face no tiene "likes" y no expone una tabla de evaluación.
 
 ## Requisitos de hardware
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dicta-il/dictabert-seg | 184.948.336 | No disponible | Segmentación de prefijos en hebreo | CC BY 4.0 | HuggingFace |
-| dicta-il/dictabert (suite base) | No disponible en la información proporcionada | No disponible | Tareas generales de PLN en hebreo | CC BY 4.0 (según la suite) | HuggingFace (colección DictaBERT) |
-| Alternativas de encoder para hebreo (por ejemplo, AlephBERT o TavBERT) | No disponible en esta búsqueda | No disponible | Representaciones generales del hebreo moderno | No verificada en esta búsqueda | HuggingFace |
+| dicta-il/dictabert-seg | 184.948.336 | No disponible | Segmentación de prefijos en hebreo | CC BY 4.0 | Hugging Face |
+| dicta-il/dictabert (suite base) | No disponible en la información proporcionada | No disponible | Tareas generales de PLN en hebreo | CC BY 4.0 (según la suite) | Hugging Face (colección DictaBERT) |
+| Alternativas de encoder para hebreo (por ejemplo, AlephBERT o TavBERT) | No disponible en esta búsqueda | No disponible | Representaciones generales del hebreo moderno | No verificada en esta búsqueda | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada, por lo que no es posible establecer una jerarquía cuantitativa. La diferencia funcional relevante es que DictaBERT-seg está especializado en segmentación de prefijos, mientras que los encoders generales de hebreo no exponen esa salida de forma nativa.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dicta-il/dictabert-seg
+- Modelo en Hugging Face: https://huggingface.co/dicta-il/dictabert-seg
 - Colección completa DictaBERT: https://huggingface.co/collections/dicta-il/dictabert-6588e7cc08f83845fc42a18b
 - Artículo: "DictaBERT: A State-of-the-Art BERT Suite for Modern Hebrew" (Shmidman, Shmidman y Koppel, 2023): https://arxiv.org/abs/2308.16687
 - Licencia CC BY 4.0: http://creativecommons.org/licenses/by/4.0/

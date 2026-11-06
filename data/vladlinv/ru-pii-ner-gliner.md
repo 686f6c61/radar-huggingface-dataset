@@ -6,7 +6,7 @@ El modelo `vladlinv/ru-pii-ner-gliner` es un sistema de reconocimiento de entida
 
 La relevancia de este modelo radica en su enfoque práctico para la protección de datos: permite identificar nombres, direcciones, números de teléfono, correos electrónicos y otros datos sensibles en documentos rusos, lo que resulta útil para tareas de anonimización, cumplimiento normativo y auditoría de seguridad. Al estar basado en GLiNER, se espera que sea eficiente en CPU y en hardware de consumo, aunque no se dispone de especificaciones concretas sobre el tamaño o el contexto de este modelo en particular.
 
-La ficha se elabora a partir de la información pública disponible en HuggingFace y en la documentación general de GLiNER. Dado que la model card del autor solo incluye la licencia, muchos parámetros técnicos específicos de este modelo no están disponibles y se indican como tales.
+La ficha se elabora a partir de la información pública disponible en Hugging Face y en la documentación general de GLiNER. Dado que la model card del autor solo incluye la licencia, muchos parámetros técnicos específicos de este modelo no están disponibles y se indican como tales.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vladlinv/ru-pii-ner-gliner
+- Modelo en Hugging Face: https://huggingface.co/vladlinv/ru-pii-ner-gliner
 - Colección RU PII Models: https://huggingface.co/collections/vladlinv/ru-pii-models
 - Repositorio de GLiNER: https://github.com/urchade/GLiNER
 - Paper de GLiNER: https://arxiv.org/abs/2311.08526

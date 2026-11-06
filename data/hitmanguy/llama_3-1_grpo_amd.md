@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hitmanguy/Llama_3.1_GRPO_AMD es un ajuste fino (fine-tune) del modelo Llama 3.1 de 8.000 millones de parametros, publicado en HuggingFace por el usuario Hitmanguy. El nombre y las etiquetas del repositorio indican que se ha entrenado con GRPO (Group Relative Policy Optimization) utilizando la pila de herramientas Unsloth y TRL, un enfoque de aprendizaje por refuerzo popularizado por modelos de razonamiento como DeepSeek-R1. El sufijo "AMD" sugiere un entrenamiento o una orientacion hacia hardware de AMD, aunque la model card no confirma este extremo.
+Hitmanguy/Llama_3.1_GRPO_AMD es un ajuste fino (fine-tune) del modelo Llama 3.1 de 8.000 millones de parametros, publicado en Hugging Face por el usuario Hitmanguy. El nombre y las etiquetas del repositorio indican que se ha entrenado con GRPO (Group Relative Policy Optimization) utilizando la pila de herramientas Unsloth y TRL, un enfoque de aprendizaje por refuerzo popularizado por modelos de razonamiento como DeepSeek-R1. El sufijo "AMD" sugiere un entrenamiento o una orientacion hacia hardware de AMD, aunque la model card no confirma este extremo.
 
-El modelo es un transformer decoder-only denso de tipo causal para generacion de texto, con 8.030.261.248 parametros confirmados en los pesos safetensors y un repositorio de 16,1 GB (compatible con pesos en precision de 16 bits). La model card publicada es la plantilla automatica de HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia ni idiomas; por tanto, la mayoria de las especificaciones de esta ficha deben considerarse no disponibles salvo las que se derivan directamente de los pesos o del modelo base.
+El modelo es un transformer decoder-only denso de tipo causal para generacion de texto, con 8.030.261.248 parametros confirmados en los pesos safetensors y un repositorio de 16,1 GB (compatible con pesos en precision de 16 bits). La model card publicada es la plantilla automatica de Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia ni idiomas; por tanto, la mayoria de las especificaciones de esta ficha deben considerarse no disponibles salvo las que se derivan directamente de los pesos o del modelo base.
 
 Su relevancia es acotada y principalmente experimental: es un ejemplo de fine-tune comunitario con GRPO sobre una base ampliamente conocida. Con cero descargas y cero "likes" en el momento de la consulta, y sin model card real, no debe tratarse como un modelo listo para produccion sin una evaluacion previa por parte del equipo que lo vaya a adoptar.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Hitmanguy/Llama_3.1_GRPO_AMD | 8.030 M | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune GRPO sin model card |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente usado | Base oficial con soporte de tool calling |
-| Qwen/Qwen2.5-7B-Instruct | 7.620 M | 128.000 tokens | Apache 2.0 (segun variante) | HuggingFace | Alternativa abierta con licencia permisiva |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Apache 2.0 | HuggingFace | Contexto mas corto, ecosistema maduro |
+| Hitmanguy/Llama_3.1_GRPO_AMD | 8.030 M | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune GRPO sin model card |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente usado | Base oficial con soporte de tool calling |
+| Qwen/Qwen2.5-7B-Instruct | 7.620 M | 128.000 tokens | Apache 2.0 (segun variante) | Hugging Face | Alternativa abierta con licencia permisiva |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7.250 M | 32.000 tokens | Apache 2.0 | Hugging Face | Contexto mas corto, ecosistema maduro |
 
 La comparacion se limita a parametros, contexto y licencia: no hay datos de rendimiento de este fine-tune que permitan contrastarlo con las alternativas.
 
@@ -85,7 +85,7 @@ La comparacion se limita a parametros, contexto y licencia: no hay datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hitmanguy/Llama_3.1_GRPO_AMD
+- Modelo en Hugging Face: https://huggingface.co/Hitmanguy/Llama_3.1_GRPO_AMD
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Repositorio de Unsloth: no disponible en la informacion proporcionada
 - Repositorio de TRL: no disponible en la informacion proporcionada

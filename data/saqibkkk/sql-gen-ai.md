@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Saqibkkk/sql-gen-ai` se presenta en HuggingFace como un modelo de transformers orientado a la generación de consultas SQL, según su identificador y nombre. Sin embargo, la información disponible es extremadamente limitada: la model card es una plantilla automática generada por HuggingFace, sin ningún dato técnico rellenado por el autor. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos del modelo ni archivos de configuración. No se dispone de documentación sobre arquitectura, parámetros, entrenamiento o licencia.
+El modelo `Saqibkkk/sql-gen-ai` se presenta en Hugging Face como un modelo de transformers orientado a la generación de consultas SQL, según su identificador y nombre. Sin embargo, la información disponible es extremadamente limitada: la model card es una plantilla automática generada por Hugging Face, sin ningún dato técnico rellenado por el autor. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos del modelo ni archivos de configuración. No se dispone de documentación sobre arquitectura, parámetros, entrenamiento o licencia.
 
 A fecha de creación (agosto de 2026), el modelo no ha recibido descargas ni valoraciones, y no aparece en ninguna búsqueda web relevante más allá de su propia página. Esto sugiere que se trata de un proyecto en fase muy temprana o un repositorio de prueba, sin utilidad práctica demostrable. Cualquier evaluación técnica rigurosa es imposible con los datos actuales.
 
@@ -35,7 +35,7 @@ No se puede verificar ninguna capacidad del modelo debido a la ausencia total de
 
 ## Casos de uso
 
-Al no existir información verificable sobre el modelo, no es posible proponer casos de uso concretos. Cualquier aplicación práctica requeriría primero que el autor publicara los pesos, la configuración y una descripción técnica. Hasta entonces, el modelo no puede ser utilizado en ningún escenario real. Se recomienda a los desarrolladores que busquen alternativas con documentación completa, como los modelos especializados en SQL disponibles en el ecosistema HuggingFace (por ejemplo, los basados en CodeLlama o StarCoder fine-tuned para generación de SQL).
+Al no existir información verificable sobre el modelo, no es posible proponer casos de uso concretos. Cualquier aplicación práctica requeriría primero que el autor publicara los pesos, la configuración y una descripción técnica. Hasta entonces, el modelo no puede ser utilizado en ningún escenario real. Se recomienda a los desarrolladores que busquen alternativas con documentación completa, como los modelos especializados en SQL disponibles en el ecosistema Hugging Face (por ejemplo, los basados en CodeLlama o StarCoder fine-tuned para generación de SQL).
 
 ## Benchmarks y rendimiento
 
@@ -60,5 +60,5 @@ No disponible. No se puede comparar con alternativas como CodeLlama-7B, StarCode
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Saqibkkk/sql-gen-ai
+- Página del modelo en Hugging Face: https://huggingface.co/Saqibkkk/sql-gen-ai
 - Referencia al artículo de emisiones (única cita en la model card): https://arxiv.org/abs/1910.09700

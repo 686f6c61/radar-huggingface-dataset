@@ -92,6 +92,6 @@ No se han encontrado en los resultados de búsqueda alternativas comparables con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_remove30_swapgapiter_evfront_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_remove30_swapgapiter_evfront_b010
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Los resultados de búsqueda web disponibles no contienen ningún enlace relevante sobre este modelo, SVD-LLM, HarmBench, StrongREJECT o WildGuard: consisten en páginas de soporte de cuentas de Google, notas de actualización de Chrome y prensa de videojuegos, sin relación con el objeto de esta ficha. No se dispone por tanto de enlaces a papers, blogs, repositorios o demos adicionales.

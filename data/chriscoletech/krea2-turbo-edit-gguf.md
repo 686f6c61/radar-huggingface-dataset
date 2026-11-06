@@ -81,7 +81,7 @@ La comparativa se basa en datos publicos generales. Krea 2 Turbo Edit comparte a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/krea2-turbo-edit-GGUF
 - Modelo original en Krea AI: https://www.krea.ai/models/krea-2-turbo
 - Conversion GGUF en Civitai: https://civitai.com/models/2730473/krea-2-turbo-gguf
 - Tutorial de uso en ComfyUI (Kombitz): https://www.kombitz.com/2026/06/26/how-to-use-krea-2-turbo-gguf-workflow-in-comfyui/

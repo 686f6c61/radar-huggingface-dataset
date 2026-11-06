@@ -77,7 +77,7 @@ No se dispone de comparativas directas con modelos de otros fabricantes (como Ll
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/kisoo111/kanana-1.5-8b-instruct-2505-Safe-DPO
+- Repositorio Hugging Face del modelo: https://huggingface.co/kisoo111/kanana-1.5-8b-instruct-2505-Safe-DPO
 - Modelo base de Kakao: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Repositorio GitHub de Kanana: https://github.com/kakao/kanana
 - Ficha del modelo en AIBase: https://model.aibase.com/models/details/1927649989316841472

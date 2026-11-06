@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w60-s130` es un checkpoint de aproximadamente 2.018 millones de parametros publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0. El identificador del repositorio sugiere una nomenclatura interna de experimento (posiblemente variantes de entrenamiento con prefijos como "r18", "a2", "w13", "chrono4", "w60" y "s130") asociada a la familia "sn38-nanochrono", un tag presente en el modelo. El repositorio esta marcado como acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargar los pesos.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w60-s130` es un checkpoint de aproximadamente 2.018 millones de parametros publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0. El identificador del repositorio sugiere una nomenclatura interna de experimento (posiblemente variantes de entrenamiento con prefijos como "r18", "a2", "w13", "chrono4", "w60" y "s130") asociada a la familia "sn38-nanochrono", un tag presente en el modelo. El repositorio esta marcado como acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargar los pesos.
 
 No se dispone de informacion publica sobre la arquitectura concreta, los datos de entrenamiento, el pipeline de inferencia ni los idiomas soportados. El modelo tiene cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente o de un experimento de investigacion sin adopcion publica documentada. La unica informacion tecnica verificable procede de los metadatos del repositorio y del recuento de parametros en formato safetensors.
 
@@ -40,7 +40,7 @@ Tampoco se dispone de informacion sobre el corpus de entrenamiento, el numero de
 
 ## Casos de uso
 
-- Investigacion y experimentacion con checkpoints de ~2 B: el modelo puede cargarse en entornos de investigacion para estudiar su comportamiento, siempre que se acepte la condicion de acceso en HuggingFace. Es adecuado por su tamano manejable y su licencia permisiva, aunque sin documentacion previa el uso queda limitado a exploracion.
+- Investigacion y experimentacion con checkpoints de ~2 B: el modelo puede cargarse en entornos de investigacion para estudiar su comportamiento, siempre que se acepte la condicion de acceso en Hugging Face. Es adecuado por su tamano manejable y su licencia permisiva, aunque sin documentacion previa el uso queda limitado a exploracion.
 - Fine-tuning sobre dominio especifico: al ser un checkpoint de ~2 B en safetensors con licencia Apache 2.0, es candidato a ajuste fino supervisado para tareas concretas (clasificacion, extraccion, generacion acotada), previa validacion de su calidad base.
 - Despliegue en GPU de consumo para pruebas: con ~2 B de parametros, una cuantizacion a 8 o 4 bits permitiria inferencia en GPUs de 8-16 GB, util para prototipos y demos internas, aunque no hay cuantizaciones publicadas.
 - Evaluacion comparativa de familias de modelos: el tag "sn38-nanochrono" sugiere una linea experimental; el modelo puede servir como punto de comparacion en estudios de escalado o de arquitecturas alternativas.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-chrono4-w60-s130 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin benchmarks ni model card tecnica |
+| alfred8995/r18-a2-w13-k-chrono4-w60-s130 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin benchmarks ni model card tecnica |
 | Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache 2.0 | Publico | Benchmarkeado y ampliamente desplegable |
 | Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma license | Publico (gated) | Benchmarkeado, con restricciones de uso |
 | SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Publico | Orientado a eficiencia, con benchmarks publicados |
@@ -74,7 +74,7 @@ La comparativa es orientativa por tamano; no existe informacion publica que perm
 ## Limitaciones y advertencias
 
 - Ausencia total de model card tecnica: no se documentan arquitectura, datos de entrenamiento, idiomas ni tareas objetivo, lo que impide evaluar su idoneidad para produccion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier pipeline automatizado.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier pipeline automatizado.
 - Riesgo de alucinacion: desconocido, pero al no haber evaluaciones publicadas no puede descartarse un comportamiento degradado en tareas de factualidad.
 - Sesgos: no evaluados; sin informacion sobre la composicion del corpus no es posible estimar sesgos de genero, idioma o dominio.
 - Idiomas: no declarados; no se garantiza soporte de castellano ni de otros idiomas.
@@ -84,5 +84,5 @@ La comparativa es orientativa por tamano; no existe informacion publica que perm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w60-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w60-s130
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

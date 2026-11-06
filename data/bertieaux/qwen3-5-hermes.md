@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bertieaux/qwen3.5-hermes es un repositorio alojado en HuggingFace bajo el identificador de usuario Bertieaux, con licencia MIT y etiquetado para la región US. El nombre sugiere un modelo derivado o ajustado a partir de la familia Qwen 3.5 combinado con la estética o el formato de instrucciones de la familia Hermes, aunque la model card publicada no aporta ninguna confirmación técnica sobre su origen, arquitectura o proceso de entrenamiento. A fecha de creación del repositorio (27 de octubre de 2026) no registra descargas ni interacciones, lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad.
+Bertieaux/qwen3.5-hermes es un repositorio alojado en Hugging Face bajo el identificador de usuario Bertieaux, con licencia MIT y etiquetado para la región US. El nombre sugiere un modelo derivado o ajustado a partir de la familia Qwen 3.5 combinado con la estética o el formato de instrucciones de la familia Hermes, aunque la model card publicada no aporta ninguna confirmación técnica sobre su origen, arquitectura o proceso de entrenamiento. A fecha de creación del repositorio (27 de octubre de 2026) no registra descargas ni interacciones, lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad.
 
 La información disponible es extremadamente limitada: la model card contiene únicamente el campo de licencia, sin descripción, sin especificaciones de arquitectura, sin datos de entrenamiento y sin resultados de evaluación. No se puede confirmar el tamaño del modelo, la longitud de contexto, los idiomas soportados ni el formato de los pesos a partir de los metadatos públicos. Cualquier evaluación rigurosa requeriría inspeccionar directamente los archivos del repositorio, algo que esta ficha no puede cubrir con la información proporcionada.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Bertieaux/qwen3.5-hermes | no disponible | no disponible | MIT | HuggingFace, sin descargas |
-| Qwen 3.5 (familia oficial) | no disponible en esta ficha | no disponible | según variante | HuggingFace oficial |
-| Hermes (familia NousResearch) | no disponible en esta ficha | no disponible | según variante | HuggingFace |
+| Bertieaux/qwen3.5-hermes | no disponible | no disponible | MIT | Hugging Face, sin descargas |
+| Qwen 3.5 (familia oficial) | no disponible en esta ficha | no disponible | según variante | Hugging Face oficial |
+| Hermes (familia NousResearch) | no disponible en esta ficha | no disponible | según variante | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas.
 
@@ -80,4 +80,4 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bertieaux/qwen3.5-hermes
+- Repositorio en Hugging Face: https://huggingface.co/Bertieaux/qwen3.5-hermes

@@ -98,7 +98,7 @@ No se dispone de modelos comparables externos documentados en la informacion pro
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_onpolicy_filtered_tinker_native
+- Hugging Face (este repositorio): https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_onpolicy_filtered_tinker_native
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Repositorio de exploracion (weird-personas): https://github.com/TruthfulAI-research/weird-personas/tree/main/explorations/04_2026-06-16_rationalization_char_training
 - Registros de investigacion del proyecto: https://github.com/TruthfulAI-research/weird-personas/blob/main/RESEARCH_LOGS.md

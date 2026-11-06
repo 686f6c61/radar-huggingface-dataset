@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LightOnOCR-3-0.8B es el modelo más ligero de la familia LightOnOCR-3 de LightOn, una saga de modelos de OCR y comprensión de documentos de peso reducido. Se trata de un modelo visión-lenguaje de 852.985.920 parámetros (aproximadamente 0,85 mil millones) construido sobre la arquitectura Qwen3.5 (etiqueta `qwen3_5` en HuggingFace) y afinado a partir de `Qwen/Qwen3.5-0.8B`. Su pipeline declarado es `image-text-to-text` y su licencia es Apache 2.0, lo que permite uso tanto de investigación como comercial.
+LightOnOCR-3-0.8B es el modelo más ligero de la familia LightOnOCR-3 de LightOn, una saga de modelos de OCR y comprensión de documentos de peso reducido. Se trata de un modelo visión-lenguaje de 852.985.920 parámetros (aproximadamente 0,85 mil millones) construido sobre la arquitectura Qwen3.5 (etiqueta `qwen3_5` en Hugging Face) y afinado a partir de `Qwen/Qwen3.5-0.8B`. Su pipeline declarado es `image-text-to-text` y su licencia es Apache 2.0, lo que permite uso tanto de investigación como comercial.
 
 El problema que resuelve es la conversión de documentos visuales (PDF, facturas, formularios, tablas, gráficos y maquetación multicolumna) en texto y datos estructurados, sustituyendo pipelines complejos de varias etapas por un único modelo extremo a extremo. Frente a la generación anterior, LightOnOCR-3 incorpora *visual grounding*: además de transcribir, devuelve etiquetas de tipo de bloque y coordenadas de *bounding box* normalizadas de 0 a 1000, descripciones cortas de imágenes y tablas HTML con los datos numéricos extraídos de gráficos.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con 8 GB de VRAM o mas deberia ser suficiente en bf16, incluidas RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4070, RTX 4080, RTX 4090, L4, A10G, A100 y H100. La GPU es en gran medida sobredimensionada para el peso del modelo, de modo que el cuello de botella real es el preprocesado de imagen.
 - Si cabe en GPU de consumo: si, previsiblemente en practicamente cualquier GPU de consumo con 6-8 GB o mas, e incluso en iGPU con memoria unificada si se dispone de una ruta de ejecucion compatible.
 - Opciones de despliegue: al cargarse con clases de Transformers (`Qwen3_5ForConditionalGeneration`, `AutoProcessor` con `transformers>=5.5.4`), la ruta soportada es la inferencia con Transformers; requiere ademas `pillow` y `pypdfium2` para el tratamiento de imagenes y PDF. No hay informacion disponible sobre soporte en vLLM, llama.cpp, Ollama o TGI, y al tratarse de una arquitectura reciente es probable que estos *runtimes* requieran trabajo de integracion adicional.
-- Latencia y throughput: no disponibles. Existe el tag `endpoints_compatible`, que indica compatibilidad con los endpoints gestionados de HuggingFace.
+- Latencia y throughput: no disponibles. Existe el tag `endpoints_compatible`, que indica compatibilidad con los endpoints gestionados de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -78,10 +78,10 @@ La informacion disponible solo permite comparar con las otras variantes de la pr
 
 | Modelo | Parametros | Arquitectura | Capacidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LightOnOCR-3-0.8B | 852.985.920 | Vision-lenguaje Qwen3.5 | Transcripcion, grounding, comprension visual | Apache 2.0 | HuggingFace, endpoints compatibles |
-| LightOnOCR-3-1B | no disponible en la informacion | LightOnOCR-2-1B | Transcripcion, grounding, comprension visual | Apache 2.0 | HuggingFace |
-| LightOnOCR-3-4B | no disponible en la informacion | Vision-lenguaje Qwen3.5 | Transcripcion, grounding, comprension visual; descrito por el autor como el mejor modelo OCR y recomendado para la mayoria de tareas | Apache 2.0 | HuggingFace |
-| LightOnOCR-2-1B | no disponible en la informacion | LightOnOCR-2 | Transcripcion (sin las funciones de comprension visual de la generacion 3) | Apache 2.0 | HuggingFace |
+| LightOnOCR-3-0.8B | 852.985.920 | Vision-lenguaje Qwen3.5 | Transcripcion, grounding, comprension visual | Apache 2.0 | Hugging Face, endpoints compatibles |
+| LightOnOCR-3-1B | no disponible en la informacion | LightOnOCR-2-1B | Transcripcion, grounding, comprension visual | Apache 2.0 | Hugging Face |
+| LightOnOCR-3-4B | no disponible en la informacion | Vision-lenguaje Qwen3.5 | Transcripcion, grounding, comprension visual; descrito por el autor como el mejor modelo OCR y recomendado para la mayoria de tareas | Apache 2.0 | Hugging Face |
+| LightOnOCR-2-1B | no disponible en la informacion | LightOnOCR-2 | Transcripcion (sin las funciones de comprension visual de la generacion 3) | Apache 2.0 | Hugging Face |
 
 Comparado con las alternativas de la misma familia, la variante de 0,8B es la mas ligera y rapida segun el autor, mientras que la de 4B esta recomendada para la mayoria de tareas por su mayor calidad. La de 1B se presenta como sustitucion directa en despliegues existentes de LightOnOCR-2. No hay datos de benchmarks que permitan cuantificar las diferencias de calidad entre las tres variantes.
 
@@ -101,7 +101,7 @@ Comparado con las alternativas de la misma familia, la variante de 0,8B es la ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
+- Modelo en Hugging Face: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - Paper de LightOnOCR-3: https://arxiv.org/pdf/2601.14251
 - Paper adicional referenciado en los tags: https://arxiv.org/abs/2412.13663
 - Blog de presentacion: https://huggingface.co/blog/lightonai/lightonocr-3
@@ -114,4 +114,4 @@ Comparado con las alternativas de la misma familia, la variante de 0,8B es la ma
 - LinkedIn de LightOn: https://www.linkedin.com/company/lighton/
 - Cuenta de X de LightOn: https://x.com/LightOnIO
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la model card del autor.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card del autor.

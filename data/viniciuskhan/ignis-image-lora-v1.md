@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IGNIS Image LoRA v1 | LoRA sobre UNet de SD 1.5 | 1,59 M en el adaptador | No aplica | CreativeML OpenRAIL-M | HuggingFace, 24 descargas |
-| Stable Diffusion 1.5 (base) | Modelo de difusión completo | No disponible en la información | No aplica | CreativeML OpenRAIL-M | HuggingFace |
-| Otros LoRA para SD 1.5 | Adaptadores LoRA | No disponible | No aplica | Variable según autor | HuggingFace |
+| IGNIS Image LoRA v1 | LoRA sobre UNet de SD 1.5 | 1,59 M en el adaptador | No aplica | CreativeML OpenRAIL-M | Hugging Face, 24 descargas |
+| Stable Diffusion 1.5 (base) | Modelo de difusión completo | No disponible en la información | No aplica | CreativeML OpenRAIL-M | Hugging Face |
+| Otros LoRA para SD 1.5 | Adaptadores LoRA | No disponible | No aplica | Variable según autor | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada, por lo que la comparativa se limita a tipo de artefacto, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ViniciusKhan/ignis-image-lora-v1
+- Hugging Face: https://huggingface.co/ViniciusKhan/ignis-image-lora-v1
 - Space de demostración: https://huggingface.co/spaces/ViniciusKhan/IGNIS-Image-Lab
 - Pesos: https://huggingface.co/ViniciusKhan/ignis-image-lora-v1/blob/main/pytorch_lora_weights.safetensors
 - Informe de entrenamiento: https://huggingface.co/ViniciusKhan/ignis-image-lora-v1/blob/main/training_report.json

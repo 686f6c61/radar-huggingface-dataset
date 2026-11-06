@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks públicos |
 |---|---|---|---|---|---|
-| `wegemanm/covid_llama3_8b_v1` | ~8,03 B (heredados) | 131.072 (base) | Apache 2.0 | HuggingFace, 0 descargas | No |
-| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente adoptado | Sí (publicados por Meta) |
-| Qwen2.5 7B Instruct | 7,6 B | 32.768 nativos (extensibles) | Apache 2.0 (salvo modelos 3B y 72B) | HuggingFace, muy adoptado | Sí |
-| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 | Apache 2.0 | HuggingFace | Sí |
-| Gemma 2 9B Instruct | 9,2 B | 8.192 | Términos de uso de Gemma | HuggingFace | Sí |
+| `wegemanm/covid_llama3_8b_v1` | ~8,03 B (heredados) | 131.072 (base) | Apache 2.0 | Hugging Face, 0 descargas | No |
+| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente adoptado | Sí (publicados por Meta) |
+| Qwen2.5 7B Instruct | 7,6 B | 32.768 nativos (extensibles) | Apache 2.0 (salvo modelos 3B y 72B) | Hugging Face, muy adoptado | Sí |
+| Mistral 7B Instruct v0.3 | 7,2 B | 32.768 | Apache 2.0 | Hugging Face | Sí |
+| Gemma 2 9B Instruct | 9,2 B | 8.192 | Términos de uso de Gemma | Hugging Face | Sí |
 
 La comparación relevante es de licencia y madurez: frente a los modelos anteriores, este fine-tune ofrece una licencia permisiva (Apache 2.0, más laxa que la comunitaria de Llama 3.1 o los términos de Gemma) pero carece de evaluación, de documentación del dataset y de soporte de la comunidad.
 
@@ -90,10 +90,10 @@ La comparación relevante es de licencia y madurez: frente a los modelos anterio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wegemanm/covid_llama3_8b_v1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.1-8B-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/wegemanm/covid_llama3_8b_v1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.1-8B-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Llama 3.1 8B de Meta en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B
+- Llama 3.1 8B de Meta en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Página de modelos Llama de Meta: https://dev.meta.ai/llama/models/llama-3
 - TRL (librería de ajuste): https://github.com/huggingface/trl
 - Catálogo de modelos para Ollama: https://ai-ollama.github.io/models.html

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-UNCENSORED-IQ2_XXS (este) | ~176,9 B totales | 262 K | IQ2_XXS | Qwen Community 1.0 | HuggingFace |
-| dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8 | ~176,9 B totales | 262 K | FP8 | Qwen Community 1.0 | HuggingFace |
-| mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF | ~176,9 B totales | 262 K | Múltiples (BF16, etc.) | Apache 2.0 (según etiqueta) | HuggingFace |
+| Qwen3.8-Flash-Next-UNCENSORED-IQ2_XXS (este) | ~176,9 B totales | 262 K | IQ2_XXS | Qwen Community 1.0 | Hugging Face |
+| dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8 | ~176,9 B totales | 262 K | FP8 | Qwen Community 1.0 | Hugging Face |
+| mradermacher/Qwen3.8-Flash-Next-Uncensored-GGUF | ~176,9 B totales | 262 K | Múltiples (BF16, etc.) | Apache 2.0 (según etiqueta) | Hugging Face |
 
 La comparativa se limita a aspectos técnicos, ya que no hay datos de rendimiento publicados. La versión de mradermacher parece ofrecer más opciones de cuantización y una licencia Apache 2.0, aunque no se ha verificado su contenido.
 
@@ -78,7 +78,7 @@ La comparativa se limita a aspectos técnicos, ya que no hay datos de rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BattleGhost/Qwen3.8-Flash-Next-UNCENSORED-IQ2_XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BattleGhost/Qwen3.8-Flash-Next-UNCENSORED-IQ2_XXS-GGUF
 - Modelo base (dealignai): https://huggingface.co/dealignai/Qwen3.8-Flash-Next-UNCENSORED-FP8
 - Versión BF16 GGUF: https://huggingface.co/BattleGhost/Qwen3.8-Flash-Next-UNCENSORED-BF16-GGUF
 - Documentación de unsloth sobre Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next

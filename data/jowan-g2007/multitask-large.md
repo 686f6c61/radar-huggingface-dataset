@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jowan-g2007/multitask-large es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de la arquitectura Flamingo orientada a tareas multitarea. El autor es jowan-g2007 y el modelo se distribuye bajo licencia BSD-3-Clause. El repositorio no se presenta como un checkpoint entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+jowan-g2007/multitask-large es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de la arquitectura Flamingo orientada a tareas multitarea. El autor es jowan-g2007 y el modelo se distribuye bajo licencia BSD-3-Clause. El repositorio no se presenta como un checkpoint entrenado ni evaluado: el propio autor indica explícitamente que `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El peso real registrado en safetensors es de 49.600 parámetros, una cifra extraordinariamente reducida que contrasta con la etiqueta "xlarge" que el autor usa para describir la escala de la configuración de arquitectura. El tamaño del repositorio es de 0,0 GB y no se documentan idiomas soportados, longitud de contexto ni pipeline de inferencia. Se trata, por tanto, de un artefacto de investigación y andamiaje de código, no de un modelo listo para producción.
 
@@ -90,7 +90,7 @@ La comparacion solo puede establecerse a nivel arquitectonico: el modelo aqui de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jowan-g2007/multitask-large
+- Modelo en Hugging Face: https://huggingface.co/jowan-g2007/multitask-large
 - Archivo principal del repositorio: `pipeline.py` (https://huggingface.co/jowan-g2007/multitask-large/blob/main/pipeline.py)
 - Configuracion de arquitectura: `config.json` (https://huggingface.co/jowan-g2007/multitask-large/blob/main/config.json)
 - Receta de entrenamiento por defecto: `training_args.json` (https://huggingface.co/jowan-g2007/multitask-large/blob/main/training_args.json)

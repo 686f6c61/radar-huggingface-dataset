@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mjpsm/activity-generation-v1.3.5-qwen0.5b-629 | 494.032.768 | 1024 tokens (entrenamiento) | Apache 2.0 | HuggingFace, safetensors | Especializado en generación de actividades MyVillage; 629 ejemplos de entrenamiento; sin benchmarks publicados |
-| Qwen/Qwen2.5-0.5B-Instruct | 494.032.768 (mismo orden) | No disponible en la información proporcionada | Apache 2.0 | HuggingFace | Modelo base sin ajustar; capacidades generales de instrucciones y conversación, no especializado en la tarea |
-| Modelos instructivos pequeños de propósito general (rango 0,4-1,1 B) | 0,4-1,1 B | Variable, no disponible | Habitualmente permisivas | HuggingFace | Alternativas genéricas que requerirían un ajuste fino propio para alcanzar el comportamiento de generación de actividades |
+| mjpsm/activity-generation-v1.3.5-qwen0.5b-629 | 494.032.768 | 1024 tokens (entrenamiento) | Apache 2.0 | Hugging Face, safetensors | Especializado en generación de actividades MyVillage; 629 ejemplos de entrenamiento; sin benchmarks publicados |
+| Qwen/Qwen2.5-0.5B-Instruct | 494.032.768 (mismo orden) | No disponible en la información proporcionada | Apache 2.0 | Hugging Face | Modelo base sin ajustar; capacidades generales de instrucciones y conversación, no especializado en la tarea |
+| Modelos instructivos pequeños de propósito general (rango 0,4-1,1 B) | 0,4-1,1 B | Variable, no disponible | Habitualmente permisivas | Hugging Face | Alternativas genéricas que requerirían un ajuste fino propio para alcanzar el comportamiento de generación de actividades |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada, por lo que la comparación se limita a parámetros, contexto declarado, licencia y disponibilidad.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mjpsm/activity-generation-v1.3.5-qwen0.5b-629
+- Modelo en Hugging Face: https://huggingface.co/mjpsm/activity-generation-v1.3.5-qwen0.5b-629
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper, blog o repositorio del proyecto MyVillage: no disponible
 - Demo: no disponible

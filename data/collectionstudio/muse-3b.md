@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-3B es un modelo de lenguaje conversacional compacto de aproximadamente 3.000 millones de parámetros (2.969.742.336 exactos, según los pesos en safetensors), desarrollado por Muse Research Lab y publicado en HuggingFace bajo el identificador CollectionStudio/Muse-3B. Se presenta como un modelo de chat ligero orientado a conversación cotidiana, redacción, ayuda básica con código y asistencia multilingüe en inglés, alemán, francés, italiano, español y portugués. Su licencia Apache 2.0 y su tamaño contenido lo hacen candidato para despliegues con recursos limitados.
+Muse-3B es un modelo de lenguaje conversacional compacto de aproximadamente 3.000 millones de parámetros (2.969.742.336 exactos, según los pesos en safetensors), desarrollado por Muse Research Lab y publicado en Hugging Face bajo el identificador CollectionStudio/Muse-3B. Se presenta como un modelo de chat ligero orientado a conversación cotidiana, redacción, ayuda básica con código y asistencia multilingüe en inglés, alemán, francés, italiano, español y portugués. Su licencia Apache 2.0 y su tamaño contenido lo hacen candidato para despliegues con recursos limitados.
 
 Arquitectura transformer decoder-only de estilo Llama, autorregresiva, con Grouped Query Attention (GQA) y embeddings compartidos entre entrada y salida, lo que reduce el número de parámetros y el coste de memoria. La longitud de contexto declarada es de 8.192 tokens. El autor lo describe explícitamente como un modelo temprano y compacto, pensado para uso asistencial ligero y experimentación más que para tareas de razonamiento avanzado o dominios especializados.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Muse-3B | ~3B | 8.192 | Apache 2.0 | HuggingFace (CollectionStudio/Muse-3B) | Sin benchmarks publicados; 6 idiomas según tags |
-| Llama 3.2 3B | ~3B | 128K | Llama 3.2 Community License | HuggingFace (Meta) | Amplia adopción, benchmarks publicados, licencia con restricciones |
-| Qwen2.5 3B | ~3B | 32K | Apache 2.0 | HuggingFace (Qwen) | Multilingüe amplio, benchmarks publicados |
-| Gemma 2 2B | ~2B | 8K | Gemma Terms of Use | HuggingFace (Google) | Rendimiento competitivo en su clase, licencia con condiciones |
+| Muse-3B | ~3B | 8.192 | Apache 2.0 | Hugging Face (CollectionStudio/Muse-3B) | Sin benchmarks publicados; 6 idiomas según tags |
+| Llama 3.2 3B | ~3B | 128K | Llama 3.2 Community License | Hugging Face (Meta) | Amplia adopción, benchmarks publicados, licencia con restricciones |
+| Qwen2.5 3B | ~3B | 32K | Apache 2.0 | Hugging Face (Qwen) | Multilingüe amplio, benchmarks publicados |
+| Gemma 2 2B | ~2B | 8K | Gemma Terms of Use | Hugging Face (Google) | Rendimiento competitivo en su clase, licencia con condiciones |
 
 La comparación se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento de Muse-3B. Frente a Llama 3.2 3B, Qwen2.5 3B y Gemma 2 2B, Muse-3B ofrece una licencia Apache 2.0 plenamente permisiva, pero carece de benchmarks y de documentación sobre entrenamiento y alineación, lo que dificulta una evaluación objetiva.
 
@@ -88,6 +88,6 @@ La comparación se limita a parámetros, contexto y licencia, ya que no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CollectionStudio/Muse-3B
+- Hugging Face: https://huggingface.co/CollectionStudio/Muse-3B
 - ID alternativo citado en la model card: Muse-research/Muse-3B (no verificado)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

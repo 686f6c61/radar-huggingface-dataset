@@ -73,9 +73,9 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-4bit
+- Repositorio Hugging Face de esta version: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog oficial de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
 - Documentacion oficial: https://docs.liquid.ai/lfm/models/lfm25-vl-3b
 - Playground de Liquid AI: https://playground.liquid.ai/
-- Licencia LFM 1.0: disponible en el repositorio de HuggingFace (archivo LICENSE)
+- Licencia LFM 1.0: disponible en el repositorio de Hugging Face (archivo LICENSE)

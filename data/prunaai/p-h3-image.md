@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P-H3-Image es un modelo de difusion para generacion y edicion de imagenes desarrollado por PrunaAI como un fine-tune del modelo base MiniMaxAI/MiniMax-H3. Esta publicado en HuggingFace bajo la libreria `diffusers` y la variante `modular-diffusers`, con pipeline declarado `text-to-image` y soporte adicional de `image-to-image`, `image-editing` y `prompt-upsampling`. El repositorio ocupa 186,8 GB y los pesos en safetensors suman 33.122.992.896 parametros (aproximadamente 33,1 mil millones), lo que lo situa en la categoria de modelos generativos de gran escala.
+P-H3-Image es un modelo de difusion para generacion y edicion de imagenes desarrollado por PrunaAI como un fine-tune del modelo base MiniMaxAI/MiniMax-H3. Esta publicado en Hugging Face bajo la libreria `diffusers` y la variante `modular-diffusers`, con pipeline declarado `text-to-image` y soporte adicional de `image-to-image`, `image-editing` y `prompt-upsampling`. El repositorio ocupa 186,8 GB y los pesos en safetensors suman 33.122.992.896 parametros (aproximadamente 33,1 mil millones), lo que lo situa en la categoria de modelos generativos de gran escala.
 
 El modelo resuelve el problema de generar imagenes fotorrealistas o estilizadas a partir de descripciones textuales en ingles, asi como transformar imagenes existentes mediante edicion guiada por prompt. Su relevancia actual radica en que PrunaAI lo presenta como una version optimizada del H3 original orientada a rendimiento, integrada en el ecosistema de optimizacion de Pruna y desplegable con `diffusers`. La licencia es la `minimax-h3-community-license-agreement`, que impone condiciones especificas al uso comercial.
 
@@ -23,7 +23,7 @@ La informacion publica disponible es limitada: no se detallan la composicion exa
 
 ## Arquitectura y entrenamiento
 
-El modelo se distribuye como un pipeline de `diffusers` bajo la etiqueta `modular-diffusers`, lo que indica una estructura modular de componentes (probablemente encoder de texto, denoiser y decoder VAE) en lugar de un unico checkpoint monolítico. La relacion con el modelo base es de `finetune` sobre `MiniMaxAI/MiniMax-H3`, segun los metadatos de HuggingFace. No se especifica en la informacion disponible si la arquitectura interna del denoiser es un transformer de difusion (DiT), un UNet o una variante hibrida, ni el numero de pasos de muestreo, el scheduler por defecto o el tipo de encoder de texto utilizado.
+El modelo se distribuye como un pipeline de `diffusers` bajo la etiqueta `modular-diffusers`, lo que indica una estructura modular de componentes (probablemente encoder de texto, denoiser y decoder VAE) en lugar de un unico checkpoint monolítico. La relacion con el modelo base es de `finetune` sobre `MiniMaxAI/MiniMax-H3`, segun los metadatos de Hugging Face. No se especifica en la informacion disponible si la arquitectura interna del denoiser es un transformer de difusion (DiT), un UNet o una variante hibrida, ni el numero de pasos de muestreo, el scheduler por defecto o el tipo de encoder de texto utilizado.
 
 Tampoco se detallan el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o ajuste por preferencias humanas sobre imagenes. La presencia de la etiqueta `prompt-upsampling` sugiere que el pipeline incorpora un modulo de expansion o reescritura de prompts, probablemente para mejorar la fidelidad de la generacion a partir de descripciones breves. Cualquier innovacion adicional (decodificacion especulativa, atencion lineal, destilacion de pasos) no esta documentada en la informacion proporcionada.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PrunaAI/P-H3-Image | ~33,1 mil millones | en | minimax-h3-community-license-agreement | HuggingFace, `diffusers` |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible en la informacion | no disponible | no disponible | HuggingFace |
+| PrunaAI/P-H3-Image | ~33,1 mil millones | en | minimax-h3-community-license-agreement | Hugging Face, `diffusers` |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible en la informacion | no disponible | no disponible | Hugging Face |
 | Alternativas de difusion de gran escala | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con el modelo base MiniMax-H3, del que no se detallan parametros ni licencia. No se dispone de datos de benchmarks ni de especificaciones de modelos competidores en la misma categoria para establecer una comparativa cuantitativa fiable.
@@ -82,7 +82,7 @@ La informacion proporcionada solo permite comparar con el modelo base MiniMax-H3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PrunaAI/P-H3-Image
+- Hugging Face: https://huggingface.co/PrunaAI/P-H3-Image
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de Pruna: https://github.com/PrunaAI/pruna
 - Twitter/X de PrunaAI: https://twitter.com/PrunaAI

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `huwenjie333/asr-whisper-51-african-languages-grpo-random-200` es un checkpoint de reconocimiento automático del habla (ASR) publicado por el usuario huwenjie333 en HuggingFace. Se trata de un ajuste de un modelo de la familia Whisper, segun indica la etiqueta `whisper` y la tuberia declarada `automatic-speech-recognition`, orientado a 51 idiomas africanos segun el propio nombre del repositorio. El checkpoint contiene 1.543.490.560 parametros en formato safetensors, una cifra que coincide con el orden de magnitud de Whisper large-v3 (aproximadamente 1.550 millones de parametros), aunque la model card no confirma explicitamente la variante base.
+El modelo `huwenjie333/asr-whisper-51-african-languages-grpo-random-200` es un checkpoint de reconocimiento automático del habla (ASR) publicado por el usuario huwenjie333 en Hugging Face. Se trata de un ajuste de un modelo de la familia Whisper, segun indica la etiqueta `whisper` y la tuberia declarada `automatic-speech-recognition`, orientado a 51 idiomas africanos segun el propio nombre del repositorio. El checkpoint contiene 1.543.490.560 parametros en formato safetensors, una cifra que coincide con el orden de magnitud de Whisper large-v3 (aproximadamente 1.550 millones de parametros), aunque la model card no confirma explicitamente la variante base.
 
-El aspecto mas relevante tecnicamente es que el ajuste se ha realizado mediante GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo sin modelo critico que se ha popularizado en el entrenamiento de modelos de razonamiento. La presencia de las etiquetas `trl` y `grpo` indica que se ha usado la libreria TRL de HuggingFace para el entrenamiento. El sufijo `random-200` del nombre sugiere una ejecucion experimental sobre una muestra reducida, si bien este extremo no se detalla en la documentacion disponible.
+El aspecto mas relevante tecnicamente es que el ajuste se ha realizado mediante GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo sin modelo critico que se ha popularizado en el entrenamiento de modelos de razonamiento. La presencia de las etiquetas `trl` y `grpo` indica que se ha usado la libreria TRL de Hugging Face para el entrenamiento. El sufijo `random-200` del nombre sugiere una ejecucion experimental sobre una muestra reducida, si bien este extremo no se detalla en la documentacion disponible.
 
 El interes del modelo reside en su enfoque: aplicar optimizacion por refuerzo (habitualmente orientada a recompensas de correccion o de formato) a una tarea de ASR multilingue de bajos recursos, un area donde los modelos multilingues genericos suelen degradarse. No obstante, la model card esta practicamente vacia (plantilla automatica sin rellenar), no se declaran licencia, idiomas concretos ni datos de evaluacion, y el repositorio no registra descargas ni interacciones, por lo que debe considerarse un experimento preliminar y no un artefacto listo para produccion.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huwenjie333/asr-whisper-51-african-languages-grpo-random-200 | 1,54 mil millones | No disponible (Whisper estandar: 30 s por ventana) | 51 idiomas africanos (segun nombre del repo) | No disponible | HuggingFace, safetensors |
-| OpenAI Whisper large-v3 | ~1,55 mil millones | 30 s por ventana | ~99 idiomas | Apache 2.0 (MIT en versiones previas) | HuggingFace, ampliamente soportado |
-| OpenAI Whisper medium | 769 millones | 30 s por ventana | ~99 idiomas | Apache 2.0 / MIT | HuggingFace |
-| Meta MMS (Massively Multilingual Speech) | ~1 mil millones (variante ASR) | 30 s por ventana, segun configuracion | Mas de 1100 idiomas, incluidos muchos africanos | CC-BY-NC 4.0 (uso no comercial) | HuggingFace |
+| huwenjie333/asr-whisper-51-african-languages-grpo-random-200 | 1,54 mil millones | No disponible (Whisper estandar: 30 s por ventana) | 51 idiomas africanos (segun nombre del repo) | No disponible | Hugging Face, safetensors |
+| OpenAI Whisper large-v3 | ~1,55 mil millones | 30 s por ventana | ~99 idiomas | Apache 2.0 (MIT en versiones previas) | Hugging Face, ampliamente soportado |
+| OpenAI Whisper medium | 769 millones | 30 s por ventana | ~99 idiomas | Apache 2.0 / MIT | Hugging Face |
+| Meta MMS (Massively Multilingual Speech) | ~1 mil millones (variante ASR) | 30 s por ventana, segun configuracion | Mas de 1100 idiomas, incluidos muchos africanos | CC-BY-NC 4.0 (uso no comercial) | Hugging Face |
 
 Nota: la comparativa se limita a la arquitectura base y al recuento de parametros. No hay datos de rendimiento publicados de este checkpoint que permitan comparar la tasa de error de palabras frente a las alternativas.
 
@@ -83,7 +83,7 @@ Nota: la comparativa se limita a la arquitectura base y al recuento de parametro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huwenjie333/asr-whisper-51-african-languages-grpo-random-200
+- Modelo en Hugging Face: https://huggingface.co/huwenjie333/asr-whisper-51-african-languages-grpo-random-200
 - Paper de Whisper (referencia de la arquitectura base): https://arxiv.org/abs/2212.04356
 - Paper de GRPO (DeepSeekMath, referencia del algoritmo de refuerzo): https://arxiv.org/abs/2402.03300
 - Documentacion de TRL (libreria de entrenamiento por refuerzo citada en las etiquetas): https://huggingface.co/docs/trl

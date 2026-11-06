@@ -74,7 +74,7 @@ No se proporcionan datos de rendimiento para comparar.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zondaxyz/babyconceptLM-English-matched
+- Repositorio Hugging Face: https://huggingface.co/zondaxyz/babyconceptLM-English-matched
 - Repositorio relacionado (variante token-only): https://huggingface.co/zondaxyz/babyconceptLM-TA1-token-only-en (inferido, no confirmado en la búsqueda)
 - Repositorio relacionado (versión final BabyLM): https://huggingface.co/zondaxyz/babyconceptLM-583-en (inferido, no confirmado en la búsqueda)
 - Otro modelo del autor: https://huggingface.co/zondaxyz/babyconceptLM-baike102M_bpe50 (encontrado en búsqueda web)

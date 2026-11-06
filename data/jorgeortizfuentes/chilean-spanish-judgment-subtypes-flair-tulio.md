@@ -87,8 +87,8 @@ No se dispone de una comparativa directa con otros modelos de la misma categorí
 
 ## Enlaces
 
-- **HuggingFace (modelo)**: https://huggingface.co/jorgeortizfuentes/chilean-spanish-judgment-subtypes-flair-tulio
-- **HuggingFace (corpus)**: https://huggingface.co/datasets/jorgeortizfuentes/chilean-spanish-attitude-corpus
+- **Hugging Face (modelo)**: https://huggingface.co/jorgeortizfuentes/chilean-spanish-judgment-subtypes-flair-tulio
+- **Hugging Face (corpus)**: https://huggingface.co/datasets/jorgeortizfuentes/chilean-spanish-attitude-corpus
 - **Modelo base TULIO**: https://huggingface.co/dccuchile/tulio-chilean-spanish-bert
 - **Página de proyectos del autor**: https://ortizfuentes.com/projects
 - **Perfil de Google Scholar**: https://scholar.google.com/citations?user=jFM6eGIAAAAJ&hl=en

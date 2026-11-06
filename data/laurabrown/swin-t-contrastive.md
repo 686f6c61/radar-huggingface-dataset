@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laurabrown/swin-t-contrastive` es un repositorio de HuggingFace que contiene una implementacion propia de un backbone Swin Transformer de escala "tiny" orientada a aprendizaje contrastivo. No se distribuye como un modelo entrenado, sino como un punto de partida reproducible: incluye un fichero de codigo ejecutable, un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con una receta de experimento por defecto y un `model.safetensors` descrito explicitamente por el autor como "checkpoint de inicializacion", no como un checkpoint con pesos entrenados.
+`laurabrown/swin-t-contrastive` es un repositorio de Hugging Face que contiene una implementacion propia de un backbone Swin Transformer de escala "tiny" orientada a aprendizaje contrastivo. No se distribuye como un modelo entrenado, sino como un punto de partida reproducible: incluye un fichero de codigo ejecutable, un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con una receta de experimento por defecto y un `model.safetensors` descrito explicitamente por el autor como "checkpoint de inicializacion", no como un checkpoint con pesos entrenados.
 
 El modelo esta publicado por el usuario `laurabrown` bajo licencia MIT y no registra descargas ni "me gusta" en el momento de redactar esta ficha. La model card insiste en que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. Por tanto, su relevancia actual es la de una plantilla experimental para reproducir experimentos de representacion contrastiva con una arquitectura Swin, no la de un artefacto listo para produccion.
 
@@ -68,9 +68,9 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laurabrown/swin-t-contrastive | Implementacion Swin-T con objetivo contrastivo, checkpoint de inicializacion | 33.088 (segun safetensors) | no disponible | MIT | HuggingFace |
-| microsoft/swin-tiny-patch4-window7-224 | Backbone Swin-T entrenado para clasificacion de imagen | ~28 M | no aplica (imagen 224x224) | MIT | HuggingFace |
-| CLIP (variantes abiertas, p. ej. openai/clip-vit-base-patch32) | Modelo vision-lenguaje entrenado con objetivo contrastivo | ~150 M | 77 tokens de texto | MIT / otras segun variante | HuggingFace |
+| laurabrown/swin-t-contrastive | Implementacion Swin-T con objetivo contrastivo, checkpoint de inicializacion | 33.088 (segun safetensors) | no disponible | MIT | Hugging Face |
+| microsoft/swin-tiny-patch4-window7-224 | Backbone Swin-T entrenado para clasificacion de imagen | ~28 M | no aplica (imagen 224x224) | MIT | Hugging Face |
+| CLIP (variantes abiertas, p. ej. openai/clip-vit-base-patch32) | Modelo vision-lenguaje entrenado con objetivo contrastivo | ~150 M | 77 tokens de texto | MIT / otras segun variante | Hugging Face |
 
 La comparacion directa con Swin-T estandar o con CLIP no es significativa en terminos de calidad, porque ninguno de los modelos de la tabla distribuidos por este repositorio ha sido entrenado. Las cifras de parametros de las alternativas se ofrecen solo como referencia de escala; no se dispone de comparativas de rendimiento en la informacion proporcionada.
 
@@ -87,5 +87,5 @@ La comparacion directa con Swin-T estandar o con CLIP no es significativa en ter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/laurabrown/swin-t-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/laurabrown/swin-t-contrastive
 - No se han proporcionado enlaces adicionales (paper, blog, repositorio de codigo o demo) en la informacion disponible.

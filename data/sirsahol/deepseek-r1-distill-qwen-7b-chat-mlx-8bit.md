@@ -91,7 +91,7 @@ No se han proporcionado datos de comparación con otros modelos de la misma cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-8bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Variante 4-bit: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-16bit

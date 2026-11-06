@@ -89,7 +89,7 @@ La comparativa se limita a las variantes del mismo autor sobre el mismo modelo b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Balanced
+- Repositorio Hugging Face: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Balanced
 - Repositorio GGUF de la version Cyber: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber-GGUF
 - Repositorio GitHub con instalador de Qwen3.8-27B: https://github.com/qwen3-8-27b/qwen3-8-27b
 - Repositorio GitHub con pack uncensored para Qwen3.8-27B: https://github.com/Wassimyounes01/qwen38-uncensored

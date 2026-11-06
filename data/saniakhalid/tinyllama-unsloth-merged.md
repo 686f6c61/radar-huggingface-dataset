@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tinyllama-unsloth-merged es un modelo de generación de texto de 1,1 mil millones de parámetros publicado por el usuario SaniaKhalid en HuggingFace. Se trata de un ajuste fino del modelo TinyLlama/TinyLlama-1.1B-Chat-v1.0 realizado con LoRA bajo las optimizaciones de Unsloth, cuyos adaptadores se han fusionado posteriormente en un único conjunto de pesos, de modo que el resultado es un modelo autónomo que no requiere la librería PEFT para cargarse.
+tinyllama-unsloth-merged es un modelo de generación de texto de 1,1 mil millones de parámetros publicado por el usuario SaniaKhalid en Hugging Face. Se trata de un ajuste fino del modelo TinyLlama/TinyLlama-1.1B-Chat-v1.0 realizado con LoRA bajo las optimizaciones de Unsloth, cuyos adaptadores se han fusionado posteriormente en un único conjunto de pesos, de modo que el resultado es un modelo autónomo que no requiere la librería PEFT para cargarse.
 
 El modelo resuelve el caso de uso clásico de ajuste fino ligero sobre una base pequeña: permitir experimentación y despliegue en hardware muy modesto (una sola GPU de consumo, o incluso CPU) sin gestionar adaptadores separados. Mantiene la arquitectura Transformer decoder-only de TinyLlama, con 1.100.048.384 parámetros reales en safetensors y una longitud de contexto declarada de 2048 tokens, en precisión FP16.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tinyllama-unsloth-merged (este) | 1,1 B | 2048 | apache-2.0 | HuggingFace, safetensors FP16, 0 descargas |
-| TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2048 | apache-2.0 | HuggingFace, safetensors, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32 768 | apache-2.0 | HuggingFace, safetensors y GGUF oficiales |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8192 | apache-2.0 | HuggingFace, safetensors y GGUF oficiales |
+| tinyllama-unsloth-merged (este) | 1,1 B | 2048 | apache-2.0 | Hugging Face, safetensors FP16, 0 descargas |
+| TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2048 | apache-2.0 | Hugging Face, safetensors, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32 768 | apache-2.0 | Hugging Face, safetensors y GGUF oficiales |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8192 | apache-2.0 | Hugging Face, safetensors y GGUF oficiales |
 
 Los datos de contexto y licencia de los tres modelos de referencia corresponden a lo publicado por sus respectivos autores. No se dispone de comparación de rendimiento: este repositorio no publica benchmarks y, por tanto, no es posible afirmar que supere o iguale a ninguna de las alternativas en tareas concretas. A igualdad de licencia y con más contexto y cuantizaciones oficiales, Qwen2.5-1.5B-Instruct y SmolLM2-1.7B-Instruct son opciones más documentadas para uso general.
 
@@ -93,7 +93,7 @@ Los datos de contexto y licencia de los tres modelos de referencia corresponden 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaniaKhalid/tinyllama-unsloth-merged
+- Modelo en Hugging Face: https://huggingface.co/SaniaKhalid/tinyllama-unsloth-merged
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio de TinyLlama: https://github.com/jzhang38/TinyLlama
 - Unsloth: https://github.com/unslothai/unsloth

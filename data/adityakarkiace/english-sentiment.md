@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Adityakarkiace/english-sentiment es un checkpoint de clasificacion de texto publicado en HuggingFace Hub por el usuario Adityakarkiace, construido sobre la arquitectura RoBERTa segun la etiqueta `roberta` de sus metadatos. El repositorio contiene 124.647.939 parametros almacenados en safetensors (0,5 GB), una cifra compatible con la configuracion base de RoBERTa (aproximadamente 125 millones de parametros). El pipeline declarado es `text-classification` y el identificador del repositorio sugiere un clasificador de sentimiento en ingles, aunque la model card no lo confirma.
+Adityakarkiace/english-sentiment es un checkpoint de clasificacion de texto publicado en Hugging Face Hub por el usuario Adityakarkiace, construido sobre la arquitectura RoBERTa segun la etiqueta `roberta` de sus metadatos. El repositorio contiene 124.647.939 parametros almacenados en safetensors (0,5 GB), una cifra compatible con la configuracion base de RoBERTa (aproximadamente 125 millones de parametros). El pipeline declarado es `text-classification` y el identificador del repositorio sugiere un clasificador de sentimiento en ingles, aunque la model card no lo confirma.
 
 El problema que resuelve es, por tanto, la clasificacion de texto (probablemente analisis de sentimiento) mediante un encoder transformer bidireccional, un enfoque mucho mas economico en inferencia que los modelos generativos para tareas de etiquetado. Su relevancia practica esta en ese nicho: filtrado, enrutamiento y analisis de opinion a gran escala con coste computacional minimo.
 
-La informacion publicada es extremadamente escasa. La model card es la plantilla autogenerada por HuggingFace, con practicamente todos los campos marcados como "[More Information Needed]": no hay datos del desarrollador, del dataset de entrenamiento, de la licencia, de los idiomas confirmados ni de evaluacion. El repositorio registra 0 descargas y 0 likes. Ademas, las fechas de creacion y actualizacion que devuelve el Hub (2026-09-20) son posteriores a la fecha habitual de consulta, lo que conviene tratar como una anomalia de metadatos. La busqueda web realizada no aporto ningun resultado relacionado con el modelo.
+La informacion publicada es extremadamente escasa. La model card es la plantilla autogenerada por Hugging Face, con practicamente todos los campos marcados como "[More Information Needed]": no hay datos del desarrollador, del dataset de entrenamiento, de la licencia, de los idiomas confirmados ni de evaluacion. El repositorio registra 0 descargas y 0 likes. Ademas, las fechas de creacion y actualizacion que devuelve el Hub (2026-09-20) son posteriores a la fecha habitual de consulta, lo que conviene tratar como una anomalia de metadatos. La busqueda web realizada no aporto ningun resultado relacionado con el modelo.
 
 ## Especificaciones tecnicas
 
@@ -32,15 +32,15 @@ La informacion publicada es extremadamente escasa. La model card es la plantilla
 
 La etiqueta `roberta` de los metadatos y el recuento de parametros (124,6 millones) apuntan a un encoder transformer de la familia RoBERTa en configuracion base: 12 capas, atencion multi-cabeza bidireccional y embeddings de tipo byte-pair encoding. RoBERTa es una version de BERT con preentrenamiento prolongado, eliminacion de la tarea de prediccion de frase siguiente, mascaras dinamicas y lotes de mayor tamano, lo que mejora el rendimiento en tareas de comprension y clasificacion. No obstante, no hay ninguna confirmacion explicita en el repositorio sobre la configuracion exacta (numero de capas, cabezas, dimension oculta ni tamano de vocabulario).
 
-No se dispone de informacion sobre los datos de entrenamiento ni sobre el procedimiento de ajuste: la model card no indica dataset, numero de tokens, composicion, hiperparametros, regimen de precision (fp32, fp16, bf16) ni si hubo tecnicas de alineacion como RLHF o DPO, que en un clasificador encoder no serian el procedimiento habitual. La etiqueta `arxiv:1910.09700` de los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla autogenerada de HuggingFace; no es un articulo sobre este modelo ni sobre su metodo de entrenamiento. Tampoco hay informacion sobre el numero de clases de salida ni sobre el mapeo de etiquetas del cabezal de clasificacion, algo imprescindible antes de reutilizar el checkpoint.
+No se dispone de informacion sobre los datos de entrenamiento ni sobre el procedimiento de ajuste: la model card no indica dataset, numero de tokens, composicion, hiperparametros, regimen de precision (fp32, fp16, bf16) ni si hubo tecnicas de alineacion como RLHF o DPO, que en un clasificador encoder no serian el procedimiento habitual. La etiqueta `arxiv:1910.09700` de los metadatos corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla autogenerada de Hugging Face; no es un articulo sobre este modelo ni sobre su metodo de entrenamiento. Tampoco hay informacion sobre el numero de clases de salida ni sobre el mapeo de etiquetas del cabezal de clasificacion, algo imprescindible antes de reutilizar el checkpoint.
 
 ## Capacidades
 
 - Clasificacion de texto: el pipeline declarado es `text-classification`, por lo que la salida esperada es una o varias etiquetas con su puntuacion de probabilidad sobre una secuencia de entrada.
 - Analisis de sentimiento en ingles: el identificador del repositorio sugiere esta tarea concreta, sin confirmacion en la model card ni en los metadatos.
 - Procesamiento por lotes: al ser un encoder de 124,6 millones de parametros, admite lotes grandes en GPU con un coste de memoria reducido, adecuado para clasificacion masiva offline.
-- Compatibilidad con Text Embeddings Inference: la etiqueta `text-embeddings-inference` indica que el repositorio puede servirse con el motor de inferencia de HuggingFace, orientado a despliegues de alta concurrencia.
-- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en HuggingFace Inference Endpoints sin modificaciones.
+- Compatibilidad con Text Embeddings Inference: la etiqueta `text-embeddings-inference` indica que el repositorio puede servirse con el motor de inferencia de Hugging Face, orientado a despliegues de alta concurrencia.
+- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en Hugging Face Inference Endpoints sin modificaciones.
 - Tool calling / function calling: no disponible; no es una capacidad esperable en un encoder de clasificacion.
 - Razonamiento multi-paso y agentes: no disponible; el modelo no genera texto ni ejecuta planes.
 - Capacidades multilingues: no disponibles; no hay idiomas declarados en el Hub.
@@ -79,17 +79,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas: practicamente cualquier GPU moderna es suficiente. Una NVIDIA T4 (16 GB) o una L4 permiten lotes grandes; una RTX 3060, 4060 o superior lo ejecuta sin problemas; tarjetas A100 o H100 son sobredimensionadas para este tamano, salvo por necesidad de concurrencia masiva.
 - Inferencia en CPU: viable. Un encoder de 124,6 millones de parametros se ejecuta en CPU con latencias de decenas de milisegundos por secuencia, suficiente para volumenes moderados. No hay cifras medidas publicadas para este repositorio.
 - GPU de consumo: si cabe en cualquier GPU de consumo con al menos 4 GB de VRAM, incluidas GTX 1650, RTX 3050 y modelos superiores.
-- Opciones de despliegue: transformers (pipeline de clasificacion), HuggingFace Text Embeddings Inference (etiqueta presente en los metadatos), HuggingFace Inference Endpoints (etiqueta presente en los metadatos), y servidores genericos de modelos de encoder. No se publican artefactos ONNX, TensorRT ni GGUF; una conversion a ONNX via Optimum o a otros formatos requeriria trabajo adicional del usuario.
+- Opciones de despliegue: transformers (pipeline de clasificacion), Hugging Face Text Embeddings Inference (etiqueta presente en los metadatos), Hugging Face Inference Endpoints (etiqueta presente en los metadatos), y servidores genericos de modelos de encoder. No se publican artefactos ONNX, TensorRT ni GGUF; una conversion a ONNX via Optimum o a otros formatos requeriria trabajo adicional del usuario.
 - Latencia y throughput: no disponibles. No hay ninguna medicion publicada en el repositorio ni en la busqueda realizada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adityakarkiace/english-sentiment | 124,6 M | no disponible | text-classification | no disponible | HuggingFace, safetensors |
-| roberta-base (Facebook AI) | 125 M | 512 tokens | modelo base para ajuste | MIT | HuggingFace, safetensors y PyTorch |
-| distilbert-base-uncased (HuggingFace) | 66 M | 512 tokens | modelo base para ajuste | Apache 2.0 | HuggingFace, safetensors y PyTorch |
-| microsoft/deberta-v3-base | 184 M (86 M de backbone + 98 M de embeddings) | 512 tokens | modelo base para ajuste | MIT | HuggingFace, safetensors |
+| Adityakarkiace/english-sentiment | 124,6 M | no disponible | text-classification | no disponible | Hugging Face, safetensors |
+| roberta-base (Facebook AI) | 125 M | 512 tokens | modelo base para ajuste | MIT | Hugging Face, safetensors y PyTorch |
+| distilbert-base-uncased (Hugging Face) | 66 M | 512 tokens | modelo base para ajuste | Apache 2.0 | Hugging Face, safetensors y PyTorch |
+| microsoft/deberta-v3-base | 184 M (86 M de backbone + 98 M de embeddings) | 512 tokens | modelo base para ajuste | MIT | Hugging Face, safetensors |
 
 Nota: la comparativa se limita a parametros, contexto y licencia porque no existen resultados de evaluacion publicados para el modelo analizado; por tanto, no es posible comparar exactitud ni F1 con las alternativas. Los datos de los modelos de referencia corresponden a su documentacion publica habitual y deben verificarse en sus respectivos repositorios antes de citarlos.
 
@@ -104,12 +104,12 @@ Nota: la comparativa se limita a parametros, contexto y licencia porque no exist
 - Longitud de contexto no confirmada: si el checkpoint sigue la configuracion habitual de RoBERTa-base, las secuencias quedarian limitadas a 512 posiciones, pero este dato no esta verificado en el repositorio.
 - Metadatos anomalos: las fechas del Hub (2026-09-20) son posteriores a la fecha de consulta habitual, lo que sugiere que el repositorio puede haber sido creado con fines de prueba o con marcas de tiempo no fiables.
 - Repositorio sin traccion: 0 descargas y 0 likes, lo que implica ausencia total de validacion por parte de la comunidad.
-- Etiqueta arxiv enganosa: `arxiv:1910.09700` corresponde al articulo sobre estimacion de emisiones de carbono citado en la plantilla de HuggingFace, no a un articulo metodologico del modelo.
+- Etiqueta arxiv enganosa: `arxiv:1910.09700` corresponde al articulo sobre estimacion de emisiones de carbono citado en la plantilla de Hugging Face, no a un articulo metodologico del modelo.
 - Busqueda web sin resultados utiles: las consultas devolvieron exclusivamente paginas de soporte de Windows en aleman, sin ninguna relacion con el modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adityakarkiace/english-sentiment
+- Repositorio en Hugging Face: https://huggingface.co/Adityakarkiace/english-sentiment
 - Articulo referenciado en la etiqueta arxiv de los metadatos (Lacoste et al., estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Articulo original de RoBERTa (referencia de la familia de arquitectura, no enlazado en el repositorio): https://arxiv.org/abs/1907.11692
 - Documentacion de la clase RoBERTa en transformers: https://huggingface.co/docs/transformers/model_doc/roberta

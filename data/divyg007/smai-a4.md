@@ -6,7 +6,7 @@ SMAI-A4 (publicado como `DivyG007/smai-a4`) no es un modelo de lenguaje, sino un
 
 El objetivo del autor es comparar empiricamente ambos enfoques en la tarea de clasificacion de imagenes de 32x32x3 en 10 clases, con idéntico presupuesto de entrenamiento (100 epocas, SGD con lr 0.01, batch 64, semilla 14009). Ambos modelos alcanzan precisiones de test muy proximas: 0.4819 para el MLP y 0.4847 para IOC-NN, lo que sugiere que la restriccion de convexidad no degrada el rendimiento en este caso concreto.
 
-Su relevancia es limitada fuera del ambito docente: se trata de un experimento reproducible de ~395.000 parametros entrenado con NumPy puro, sin publicacion de pesos en formatos estandar de inferencia (safetensors, GGUF) y sin pipeline definido en HuggingFace. Es util como referencia pedagogica para estudiar redes convexas o como baseline ligero de CIFAR-10, pero no como modelo generativo.
+Su relevancia es limitada fuera del ambito docente: se trata de un experimento reproducible de ~395.000 parametros entrenado con NumPy puro, sin publicacion de pesos en formatos estandar de inferencia (safetensors, GGUF) y sin pipeline definido en Hugging Face. Es util como referencia pedagogica para estudiar redes convexas o como baseline ligero de CIFAR-10, pero no como modelo generativo.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia es limitada fuera del ambito docente: se trata de un experimento r
 
 Ambos modelos son MLP de tres capas con topologia 3072-128-10. La entrada es la imagen CIFAR-10 aplanada en orden HWC a 3072 valores, posteriormente normalizada: division por 255, resta de la media por columna y division por la desviacion tipica (estadisticos almacenados en `preprocessing.npz`). La capa oculta usa 128 unidades. En el MLP la activacion es ReLU; en IOC-NN es ELU y se impone que los pesos de las capas a partir de la segunda sean no negativos, lo que corresponde a una restriccion de convexidad de la red respecto a la entrada (input-convex neural network).
 
-El entrenamiento se realizo durante 100 epocas con descenso de gradiente estocastico plano (lr 0.01, batch size 64) y semilla 14009, sobre las 50.000 imagenes del split de entrenamiento de CIFAR-10 alojado en HuggingFace, con etiquetas verdaderas. No se mencionan tecnicas de regularizacion adicionales, data augmentation, optimizadores adaptativos ni ajuste fino posterior; tampoco se documenta el marco de entrenamiento mas alla de que la inferencia se realiza con NumPy y la carga via `Model.load_from` del notebook `mlp.ipynb`.
+El entrenamiento se realizo durante 100 epocas con descenso de gradiente estocastico plano (lr 0.01, batch size 64) y semilla 14009, sobre las 50.000 imagenes del split de entrenamiento de CIFAR-10 alojado en Hugging Face, con etiquetas verdaderas. No se mencionan tecnicas de regularizacion adicionales, data augmentation, optimizadores adaptativos ni ajuste fino posterior; tampoco se documenta el marco de entrenamiento mas alla de que la inferencia se realiza con NumPy y la carga via `Model.load_from` del notebook `mlp.ipynb`.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ El entrenamiento se realizo durante 100 epocas con descenso de gradiente estocas
 
 ## Benchmarks y rendimiento
 
-Resultados reportados por el autor en la model card (CIFAR-10, split de test alojado en HuggingFace):
+Resultados reportados por el autor en la model card (CIFAR-10, split de test alojado en Hugging Face):
 
 | Modelo | Capas | Activacion oculta | Parametros | Precision de test |
 |---|---|---|---|---|
@@ -83,16 +83,16 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - No es un modelo de lenguaje: no genera texto, no soporta tool calling ni razonamiento multi-paso.
 - Precision de test moderada (~48% en CIFAR-10), lejos del estado del arte en clasificacion de imagenes; no apto para produccion real.
 - Pesos en formato `.npz` de NumPy, no interoperables directamente con vLLM, TGI, llama.cpp ni Ollama; requiere codigo de carga propio (`Model.load_from` del notebook `mlp.ipynb`).
-- El repositorio ocupa 0.0 GB segun HuggingFace, lo que sugiere que los pesos pueden no estar efectivamente subidos o son extremadamente ligeros; conviene verificar la integridad de los artefactos antes de usarlos.
+- El repositorio ocupa 0.0 GB segun Hugging Face, lo que sugiere que los pesos pueden no estar efectivamente subidos o son extremadamente ligeros; conviene verificar la integridad de los artefactos antes de usarlos.
 - Entrenado unicamente sobre CIFAR-10; no generaliza a otras distribuciones de imagen sin reentrenamiento.
 - No se documentan sesgos, riesgos de alucinacion ni limitaciones de contexto o idioma mas alla de las inherentes a un clasificador de imagenes.
 - Licencia MIT permite uso comercial, pero el valor practico del modelo fuera de docencia es muy limitado.
-- Sin pipeline definido en HuggingFace y sin descargas ni likes, lo que indica ausencia de validacion por parte de la comunidad.
+- Sin pipeline definido en Hugging Face y sin descargas ni likes, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DivyG007/smai-a4
+- Repositorio Hugging Face: https://huggingface.co/DivyG007/smai-a4
 - Carpeta MLP: https://huggingface.co/DivyG007/smai-a4/tree/main/cifar10-mlp
 - Carpeta IOC-NN: https://huggingface.co/DivyG007/smai-a4/tree/main/cifar10-ioc-nn
-- Dataset de referencia: CIFAR-10 (split de entrenamiento alojado en HuggingFace; no se proporciona enlace directo en la informacion disponible)
+- Dataset de referencia: CIFAR-10 (split de entrenamiento alojado en Hugging Face; no se proporciona enlace directo en la informacion disponible)
 - Paper, blog o demo adicional: no disponible

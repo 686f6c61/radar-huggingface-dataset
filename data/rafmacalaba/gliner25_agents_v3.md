@@ -124,7 +124,7 @@ La diferencia funcional principal frente al modelo base es la especialización: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/gliner25_agents_v3
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/gliner25_agents_v3
 - Modelo base: https://huggingface.co/fastino/gliner2.5-base-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/rafmacalaba/datause-agents-v3
 - Métricas detalladas del holdout: archivo `holdout_metrics.json` del repositorio

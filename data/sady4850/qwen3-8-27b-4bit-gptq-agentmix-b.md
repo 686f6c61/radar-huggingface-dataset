@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix-b` | 27,36 B | no disponible | 4-bit GPTQ / MLX affine | Apache 2.0 | HuggingFace (37 descargas) |
-| `sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix` | 27,36 B (presumible) | no disponible | 4-bit GPTQ / MLX affine | Apache 2.0 | HuggingFace |
-| `mlx-community/Qwen3.8-27B-4bit` | 27,36 B (presumible) | no disponible | MLX affine 4-bit | no disponible | HuggingFace |
-| `Qwen/Qwen3.8-27B` (base) | 27,36 B | no disponible | bf16 | no disponible | HuggingFace |
+| `sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix-b` | 27,36 B | no disponible | 4-bit GPTQ / MLX affine | Apache 2.0 | Hugging Face (37 descargas) |
+| `sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix` | 27,36 B (presumible) | no disponible | 4-bit GPTQ / MLX affine | Apache 2.0 | Hugging Face |
+| `mlx-community/Qwen3.8-27B-4bit` | 27,36 B (presumible) | no disponible | MLX affine 4-bit | no disponible | Hugging Face |
+| `Qwen/Qwen3.8-27B` (base) | 27,36 B | no disponible | bf16 | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix-b
+- Modelo en Hugging Face: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix-b
 - Variante principal del estudio: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ-agentmix
 - GPTQ de referencia: https://huggingface.co/sady4850/Qwen3.8-27B-4bit-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -107,7 +107,7 @@ No se dispone de comparativas con otros modelos de 27B fuera del linaje Qwen/Ost
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated-EXL3
+- Modelo en Hugging Face: https://huggingface.co/etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated-EXL3
 - Modelo base afinado: https://huggingface.co/etemiz/Ostrich-27B-261028-Qwen3.8-Abliterated
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version anterior del linaje: https://huggingface.co/etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated

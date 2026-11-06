@@ -83,5 +83,5 @@ No disponible. No se han identificado en la informacion proporcionada checkpoint
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dmitry-kozlov/albef-classification48-2024
+- Hugging Face: https://huggingface.co/Dmitry-kozlov/albef-classification48-2024
 - Busqueda web: los resultados obtenidos no guardan relacion con el modelo (referencias a la herramienta DMitry de Kali Linux, a la Wikipedia sobre el nombre Dmitry y a la biografia de Dmitri Medvedev). No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo.

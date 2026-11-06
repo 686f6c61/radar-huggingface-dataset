@@ -84,8 +84,8 @@ No se han encontrado en la informacion disponible otros modelos de decision con 
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| r3lax/sys1mlx | 991.474.176 elementos en safetensors (base nominal 4B) | 2048 tokens (imagen + texto, runtime) | Decision multiple-choice con probabilidades | apache-2.0 | HuggingFace, MLX para Apple Silicon, uso experimental |
-| Qwen/Qwen3.5-4B-Base | No disponible en la informacion proporcionada | No disponible | Generacion de texto (checkpoint Base, no instruction-tuned) | No disponible en la informacion proporcionada | HuggingFace, upstream |
+| r3lax/sys1mlx | 991.474.176 elementos en safetensors (base nominal 4B) | 2048 tokens (imagen + texto, runtime) | Decision multiple-choice con probabilidades | apache-2.0 | Hugging Face, MLX para Apple Silicon, uso experimental |
+| Qwen/Qwen3.5-4B-Base | No disponible en la informacion proporcionada | No disponible | Generacion de texto (checkpoint Base, no instruction-tuned) | No disponible en la informacion proporcionada | Hugging Face, upstream |
 | Alternativas de decision multimodales comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion de rendimiento entre este artefacto y el modelo base no es posible con los datos aportados: el propio autor senala que los benchmarks upstream no miden este derivado cuantizado.
@@ -101,13 +101,13 @@ La comparacion de rendimiento entre este artefacto y el modelo base no es posibl
 - Plataforma limitada a Apple Silicon; sin soporte CUDA ni ruta documentada en CPU x86. El rendimiento en equipos distintos al M4 de 16 GiB no esta validado.
 - Idiomas limitados a ingles y ruso, sin soporte declarado de castellano.
 - El checkpoint base es la variante Base, no instruction-tuned, y no se documentan datos de entrenamiento ni tecnicas de alineacion como RLHF o DPO.
-- Discrepancia de identificadores: el identificador de HuggingFace es `r3lax/sys1mlx`, mientras que el comando de descarga de la model card apunta a `ardanila/sys1mlx`; conviene verificar cual es el repositorio vigente antes de automatizar descargas.
+- Discrepancia de identificadores: el identificador de Hugging Face es `r3lax/sys1mlx`, mientras que el comando de descarga de la model card apunta a `ardanila/sys1mlx`; conviene verificar cual es el repositorio vigente antes de automatizar descargas.
 - La cuantizacion se genero con MLX 0.32.2 sobre CPU Linux y puede diferir de una conversion sobre Metal, ademas de que omitir la correccion de normalizacion Q/K de DeltaNet altera las salidas.
 - La licencia declarada del artefacto es apache-2.0, pero no se detallan en la informacion disponible las condiciones del checkpoint base ni del adaptador LoRA de origen; conviene revisar `ATTRIBUTION.md` y las licencias upstream antes de un uso comercial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r3lax/sys1mlx
+- Modelo en Hugging Face: https://huggingface.co/r3lax/sys1mlx
 - Repositorio alternativo citado en la model card para la descarga: https://huggingface.co/ardanila/sys1mlx
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Fichero de atribucion de fuentes dentro del repositorio: `ATTRIBUTION.md` (referenciado en la model card, sin URL directa en la informacion disponible)

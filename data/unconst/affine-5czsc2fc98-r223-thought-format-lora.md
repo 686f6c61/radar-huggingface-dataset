@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r223-thought-format-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en HuggingFace. Según la model card, se trata de un "H1 LoRA adapter salvage (not a submission)", es decir, un adaptador de rescate o respaldo (TTL insurance) para el proceso de minería de datos H1, no una propuesta oficial de modelo. El adaptador está diseñado para ser aplicado sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`, del cual no se dispone de información pública detallada.
+El modelo `unconst/Affine-5czsc2fc98-r223-thought-format-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en Hugging Face. Según la model card, se trata de un "H1 LoRA adapter salvage (not a submission)", es decir, un adaptador de rescate o respaldo (TTL insurance) para el proceso de minería de datos H1, no una propuesta oficial de modelo. El adaptador está diseñado para ser aplicado sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`, del cual no se dispone de información pública detallada.
 
 La ficha técnica es extremadamente limitada: el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y la model card no proporciona especificaciones técnicas, licencia, idiomas ni datos de entrenamiento. Esto sugiere que el adaptador es un artefacto experimental o de uso interno, posiblemente relacionado con un formato de pensamiento ("thought-format") aplicado a un modelo de la serie "affine". No se puede considerar un modelo listo para producción sin más información.
 
@@ -55,4 +55,4 @@ No disponible. No se conocen modelos comparables en la misma categoría (adaptad
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r223-thought-format-lora)
+- [Página del modelo en Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r223-thought-format-lora)

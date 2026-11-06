@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexeimikhailov/contrastive-tryout` es un repositorio experimental publicado en HuggingFace por el usuario alexeimikhailov que contiene una implementación propia de una arquitectura Albef orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint con benchmarks. El repositorio incluye además el código (`run.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
+`alexeimikhailov/contrastive-tryout` es un repositorio experimental publicado en Hugging Face por el usuario alexeimikhailov que contiene una implementación propia de una arquitectura Albef orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint con benchmarks. El repositorio incluye además el código (`run.py`), la configuración de arquitectura (`config.json`) y la receta de entrenamiento por defecto (`training_args.json`).
 
 El interés del artefacto es, por tanto, documental y de ingeniería: sirve como base mínima para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuración declarada corresponde a una escala "base" con atención estándar, fusión de bajo rango, activación GELU y normalización por batch, entrenada por defecto con el optimizador Lion y un schedule OneCycle.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| contrastive-tryout (este) | 16.576 (recuento real) | no disponible | No (inicializacion) | MIT | HuggingFace, 0 descargas |
+| contrastive-tryout (este) | 16.576 (recuento real) | no disponible | No (inicializacion) | MIT | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce) | no disponible en esta ficha | no disponible | Si, vision-lenguaje a escala | no disponible en esta ficha | Publico |
 | BLIP / BLIP-2 | no disponible en esta ficha | no disponible | Si | no disponible en esta ficha | Publico |
 | CLIP (OpenAI) | no disponible en esta ficha | no disponible | Si | no disponible en esta ficha | Publico |
@@ -86,5 +86,5 @@ La comparación relevante no es de rendimiento sino de naturaleza del artefacto:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexeimikhailov/contrastive-tryout
+- Hugging Face: https://huggingface.co/alexeimikhailov/contrastive-tryout
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la búsqueda web realizada. Los resultados devueltos por la búsqueda (foros de consumo sobre Amazon en 60millions-mag.com y dvd-forum.at) no guardan relación con el modelo y se descartan.

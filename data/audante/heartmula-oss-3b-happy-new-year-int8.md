@@ -86,10 +86,10 @@ La diferencia de int8 es del mismo orden que la que produce el propio redondeo d
 
 | Modelo | Parámetros | Contexto | Formato y tamaño | Memoria pico (30 s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Audante/HeartMuLa-oss-3B-happy-new-year-int8 (esta copia) | 3,94 B | no disponible | safetensors int8, 3,94 GB | 7,9 GB | Apache 2.0 | HuggingFace; requiere carga manual |
-| Audante/HeartMuLa-oss-3B-happy-new-year-bf16 | 3,94 B | no disponible | safetensors bf16, 7,88 GB | 9,2 GB | Apache 2.0 | HuggingFace; reproducible con `from_pretrained` |
-| HeartMuLa/HeartMuLa-oss-3B-happy-new-year (original) | 3,94 B | no disponible | safetensors fp32, 15,75 GB | no disponible | Apache 2.0 | HuggingFace; release oficial |
-| HeartMuLa/HeartMuLaGen | no disponible | no disponible | tokenizer y configuración de generación | no aplica | no disponible | HuggingFace; se carga junto al modelo |
+| Audante/HeartMuLa-oss-3B-happy-new-year-int8 (esta copia) | 3,94 B | no disponible | safetensors int8, 3,94 GB | 7,9 GB | Apache 2.0 | Hugging Face; requiere carga manual |
+| Audante/HeartMuLa-oss-3B-happy-new-year-bf16 | 3,94 B | no disponible | safetensors bf16, 7,88 GB | 9,2 GB | Apache 2.0 | Hugging Face; reproducible con `from_pretrained` |
+| HeartMuLa/HeartMuLa-oss-3B-happy-new-year (original) | 3,94 B | no disponible | safetensors fp32, 15,75 GB | no disponible | Apache 2.0 | Hugging Face; release oficial |
+| HeartMuLa/HeartMuLaGen | no disponible | no disponible | tokenizer y configuración de generación | no aplica | no disponible | Hugging Face; se carga junto al modelo |
 
 No se han encontrado en la información proporcionada otros modelos texto-a-música comparables con datos de rendimiento verificables; la comparación disponible se limita a las distintas precisiones del mismo modelo.
 
@@ -108,7 +108,7 @@ No se han encontrado en la información proporcionada otros modelos texto-a-mús
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Audante/HeartMuLa-oss-3B-happy-new-year-int8
+- Modelo en Hugging Face: https://huggingface.co/Audante/HeartMuLa-oss-3B-happy-new-year-int8
 - Modelo base original: https://huggingface.co/HeartMuLa/HeartMuLa-oss-3B-happy-new-year
 - Copia intermedia en bf16: https://huggingface.co/Audante/HeartMuLa-oss-3B-happy-new-year-bf16
 - Tokenizer y configuración de generación: https://huggingface.co/HeartMuLa/HeartMuLaGen

@@ -72,10 +72,10 @@ Ademas, la conversion bf16 coincide con la API alojada de referencia dentro de 0
 
 | Modelo | Parametros | Tarea principal | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clara (clara-1) | 4,3 B | Clasificacion zero-shot / decisiones estructuradas | no disponible | Apache 2.0 | GGUF y pesos base en HuggingFace |
-| DeBERTa-v3-large (zero-shot NLI) | 0,4 B | Clasificacion zero-shot via NLI | 512 tokens | MIT | HuggingFace, transformers |
-| DeBERTa-v2-xxlarge-mnli | 1,5 B | Clasificacion zero-shot via NLI | 512 tokens | MIT | HuggingFace, transformers |
-| Llama 3.1 8B Instruct (uso general) | 8 B | Generacion de texto, clasificacion via prompting | 128.000 tokens | Licencia Llama 3.1 | HuggingFace, GGUF, vLLM, Ollama |
+| Clara (clara-1) | 4,3 B | Clasificacion zero-shot / decisiones estructuradas | no disponible | Apache 2.0 | GGUF y pesos base en Hugging Face |
+| DeBERTa-v3-large (zero-shot NLI) | 0,4 B | Clasificacion zero-shot via NLI | 512 tokens | MIT | Hugging Face, transformers |
+| DeBERTa-v2-xxlarge-mnli | 1,5 B | Clasificacion zero-shot via NLI | 512 tokens | MIT | Hugging Face, transformers |
+| Llama 3.1 8B Instruct (uso general) | 8 B | Generacion de texto, clasificacion via prompting | 128.000 tokens | Licencia Llama 3.1 | Hugging Face, GGUF, vLLM, Ollama |
 
 Frente a los clasificadores zero-shot tipo NLI (DeBERTa), Clara es mayor y presumiblemente más capaz en instrucciones complejas con múltiples criterios, aunque más lenta en CPU. Frente a un LLM general como Llama 3.1 8B, Clara ofrece respuestas deterministas y estructuradas (probabilidades por opción) sin riesgo de salida textual malformada, a costa de no generar texto libre y de tener un contexto mucho más reducido.
 

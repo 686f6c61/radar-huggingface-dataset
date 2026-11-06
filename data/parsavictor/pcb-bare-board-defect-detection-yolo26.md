@@ -6,7 +6,7 @@ PCB Bare-Board Defect Detection (YOLO26s) es un detector de objetos basado en la
 
 El modelo se entrenó sobre el dataset `ParsaVictor/pcb-bare-board-defect-detection` con resolución de entrada de 1024 píxeles, 80 épocas y augmentación en línea, alcanzando un mAP50 de 0,928 y un mAP50-95 de 0,617 en el split de test. Es relevante para el ámbito de la inspección visual automatizada (AOI) en fabricación electrónica, donde los detectores ligeros de una etapa permiten integrar control de calidad en línea sin infraestructura de GPU de gran escala.
 
-La ficha se basa exclusivamente en la model card y los metadatos publicados en HuggingFace; no se dispone de información sobre el número exacto de parámetros, la composición detallada del dataset ni los detalles internos de la arquitectura YOLO26.
+La ficha se basa exclusivamente en la model card y los metadatos publicados en Hugging Face; no se dispone de información sobre el número exacto de parámetros, la composición detallada del dataset ni los detalles internos de la arquitectura YOLO26.
 
 ## Especificaciones técnicas
 
@@ -86,8 +86,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Tarea | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PCB Bare-Board Defect Detection (YOLO26s) | Detección de defectos en PCB desnuda | no disponible | no aplica | research-use-mixed-sources | HuggingFace |
-| pcb-solder-defect-detection-yolo26 | Detección de defectos de soldadura | no disponible | no aplica | no disponible | HuggingFace |
+| PCB Bare-Board Defect Detection (YOLO26s) | Detección de defectos en PCB desnuda | no disponible | no aplica | research-use-mixed-sources | Hugging Face |
+| pcb-solder-defect-detection-yolo26 | Detección de defectos de soldadura | no disponible | no aplica | no disponible | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParsaVictor/pcb-bare-board-defect-detection-yolo26
+- Modelo en Hugging Face: https://huggingface.co/ParsaVictor/pcb-bare-board-defect-detection-yolo26
 - Dataset de entrenamiento: https://huggingface.co/datasets/ParsaVictor/pcb-bare-board-defect-detection
 - Licencia del dataset: https://huggingface.co/datasets/ParsaVictor/pcb-bare-board-defect-detection/blob/main/LICENSE.md
 - Modelo hermano (defectos de soldadura): https://huggingface.co/ParsaVictor/pcb-solder-defect-detection-yolo26

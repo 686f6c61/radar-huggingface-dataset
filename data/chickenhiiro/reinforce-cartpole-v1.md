@@ -83,7 +83,7 @@ No se dispone de información sobre arquitectura, parámetros ni contexto para l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChickenHiiro/Reinforce-cartpole-v1
+- Hugging Face: https://huggingface.co/ChickenHiiro/Reinforce-cartpole-v1
 - Modelo similar: https://huggingface.co/Chiz/Reinforce-CartPole-v1
 - Modelo similar: https://huggingface.co/chribeiro/reinforce-CartPole-v1
 - Curso de referencia: https://huggingface.co/deep-rl-course/unit4/introduction

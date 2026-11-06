@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - Por su tamano (596M parametros), se estima que la inferencia en FP16 requiere aproximadamente 1,2 GB de VRAM (sin cuantizacion). Con cuantizacion a 8 bits o 4 bits, podria reducirse a menos de 1 GB.
 - Es viable en GPUs de consumo como NVIDIA GTX 1650 (4 GB), RTX 3060, o incluso en CPUs modernas con 8 GB de RAM (aunque con mayor latencia).
 - Puede ejecutarse en dispositivos edge como Raspberry Pi 5 o similares, siempre que se use una cuantizacion adecuada.
-- Opciones de despliegue: transformers de HuggingFace, llama.cpp (si se convierte a GGUF), Ollama (si se crea un Modelfile), vLLM (para servidores con GPU). No se mencionan integraciones especificas en la documentacion.
+- Opciones de despliegue: transformers de Hugging Face, llama.cpp (si se convierte a GGUF), Ollama (si se crea un Modelfile), vLLM (para servidores con GPU). No se mencionan integraciones especificas en la documentacion.
 - La latencia dependera del hardware. En una GPU de gama media (RTX 3060), se esperan velocidades de decodificacion en el orden de 50-100 tokens por segundo, pero esto es una estimacion general para modelos de este tamano, no un dato medido en este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -81,11 +81,11 @@ RIFA-CODE se diferencia del base Qwen3-0.6B por su especializacion en codigo y s
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe mantener el aviso de copyright y la atribucion. No hay restricciones adicionales conocidas.
 - Soporte limitado de herramientas: no tiene tool calling ni function calling, lo que limita su uso en pipelines de agentes automaticos.
 - Dependencia de Qwen3: al ser un adaptador LoRA, requiere el modelo base Qwen3-0.6B para funcionar. No es un modelo autonomo.
-- Fecha de creacion futura: el modelo fue creado el 30 de agosto de 2026, segun los metadatos de HuggingFace, lo que sugiere que es un proyecto reciente con poco ecosistema alrededor.
+- Fecha de creacion futura: el modelo fue creado el 30 de agosto de 2026, segun los metadatos de Hugging Face, lo que sugiere que es un proyecto reciente con poco ecosistema alrededor.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/smshahbaj/RIFA-CODE-0.6B)
+- [Modelo en Hugging Face](https://huggingface.co/smshahbaj/RIFA-CODE-0.6B)
 - [Perfil del autor](https://huggingface.co/smshahbaj)
 - [Pagina personal del autor](https://smshahbaj-official.github.io/)
 - [Modelo relacionado: Rifa-Nano-0.5B](https://huggingface.co/smshahbaj/Rifa-Nano-0.5B)

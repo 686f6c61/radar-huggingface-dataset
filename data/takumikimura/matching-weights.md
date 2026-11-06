@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`takumikimura/matching-weights` es un repositorio de HuggingFace publicado por el usuario takumikimura que contiene una implementación propia de una arquitectura denominada **Cnn Transformer** orientada a tareas de *matching* (emparejamiento o similitud entre pares de entradas). No se trata de un modelo entrenado ni de un release con resultados de evaluación: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con benchmarks.
+`takumikimura/matching-weights` es un repositorio de Hugging Face publicado por el usuario takumikimura que contiene una implementación propia de una arquitectura denominada **Cnn Transformer** orientada a tareas de *matching* (emparejamiento o similitud entre pares de entradas). No se trata de un modelo entrenado ni de un release con resultados de evaluación: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con benchmarks.
 
 El modelo es extremadamente pequeno: el recuento real de parametros leido del fichero safetensors es de **33.088 parametros**, pese a que la configuracion declara la escala "huge". Esto lo situa mas cerca de un juguete reproducible o de un esqueleto de investigacion que de un modelo utilizable en produccion. La arquitectura combina convoluciones con bloques transformer, usa atencion *grouped query*, fusion de bajo rango (*low rank fusion*), activacion GELU y normalizacion GroupNorm.
 
@@ -85,11 +85,11 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y el
 - **Sesgos conocidos**: no disponibles. Al no existir datos de entrenamiento documentados, no se puede evaluar el sesgo.
 - **Limitaciones de contexto e idioma**: no disponibles. No se especifican longitud de contexto ni idiomas soportados.
 - **Discrepancia de nomenclatura**: la configuracion declara la escala "huge", pero el recuento real de parametros es de 33.088. Conviene no interpretar la etiqueta como indicador de tamano real.
-- **Integracion**: al ser una implementacion personalizada, las APIs de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse.
+- **Integracion**: al ser una implementacion personalizada, las APIs de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse.
 - **Datos externos y licencia**: el modelo se distribuye bajo Apache 2.0, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen cuando el repositorio se utilice con *datasets* externos. La licencia Apache 2.0 permite uso comercial del codigo, si bien el estado sin entrenar del checkpoint limita cualquier despliegue productivo.
 - **Manejo de resultados**: cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/takumikimura/matching-weights
+- Repositorio en Hugging Face: https://huggingface.co/takumikimura/matching-weights
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo. Los resultados de busqueda disponibles no guardan relacion con el artefacto.

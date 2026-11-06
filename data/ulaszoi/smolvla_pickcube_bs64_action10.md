@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parametros | Tipo | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ulasZoi/smolvla_pickcube_bs64_Action10 (esta ficha) | 450 M | VLA, politica de imitacion | 3 imagenes de 256x256 + estado de 6 dim. | apache-2.0 | HuggingFace, via LeRobot |
-| lerobot/smolvla_base | 450 M | VLA base (preentrenado) | no disponible en la informacion proporcionada | apache-2.0 (segun la ficha del modelo base) | HuggingFace, via LeRobot |
+| ulasZoi/smolvla_pickcube_bs64_Action10 (esta ficha) | 450 M | VLA, politica de imitacion | 3 imagenes de 256x256 + estado de 6 dim. | apache-2.0 | Hugging Face, via LeRobot |
+| lerobot/smolvla_base | 450 M | VLA base (preentrenado) | no disponible en la informacion proporcionada | apache-2.0 (segun la ficha del modelo base) | Hugging Face, via LeRobot |
 | OpenVLA | referencia externa no verificada en la informacion proporcionada | VLA | no disponible | no disponible | referencia externa |
 | pi0 (Physical Intelligence) | referencia externa no verificada en la informacion proporcionada | VLA con flow matching | no disponible | no disponible | referencia externa |
 
@@ -99,7 +99,7 @@ No se dispone de comparativas de rendimiento (tasas de exito, latencia o consumo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_Action10
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_Action10
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ulasZoi/smolvla_pickcube_clean
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ulasZoi/smolvla_pickcube_clean

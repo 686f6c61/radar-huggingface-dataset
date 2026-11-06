@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/resonance` no es un modelo de lenguaje: es una herramienta de línea de comandos publicada en HuggingFace que convierte una conversación lineal con una API de IA en un árbol de conocimiento navegable y ramificable. El repositorio (0 descargas y 0 likes en el momento de la consulta, sin pipeline ni licencia declarados) contiene dos implementaciones interoperables que comparten el mismo formato JSON de árbol (`resonance_tree.json`): `resonance.sh`, un script Bash 4+ para Linux, macOS y WSL2, y `resonance.py`, una versión para Python 3.8+ que solo usa la librería estándar (`urllib`, `json`, `uuid`), sin dependencias de pip.
+`swordenamine/resonance` no es un modelo de lenguaje: es una herramienta de línea de comandos publicada en Hugging Face que convierte una conversación lineal con una API de IA en un árbol de conocimiento navegable y ramificable. El repositorio (0 descargas y 0 likes en el momento de la consulta, sin pipeline ni licencia declarados) contiene dos implementaciones interoperables que comparten el mismo formato JSON de árbol (`resonance_tree.json`): `resonance.sh`, un script Bash 4+ para Linux, macOS y WSL2, y `resonance.py`, una versión para Python 3.8+ que solo usa la librería estándar (`urllib`, `json`, `uuid`), sin dependencias de pip.
 
 Funcionalmente actúa como capa de orquestación y almacenamiento sobre proveedores externos: OpenAI, Anthropic, DeepSeek, Groq, Together, Ollama, xAI, Mistral y cualquier endpoint compatible (LM Studio, vLLM, OpenRouter). El modelo que responde lo elige el usuario mediante `setprovider` y `setmodel`, de modo que las capacidades de generación, la ventana de contexto efectiva y los requisitos de cómputo dependen íntegramente del backend configurado y no de esta herramienta.
 
@@ -17,7 +17,7 @@ Su interés es metodológico: frente al hilo único de las interfaces de chat, p
 | Longitud de contexto | No disponible; la herramienta no impone ventana propia, la fija el proveedor configurado |
 | Tipos de cuantización | No aplica (no hay pesos que cuantizar) |
 | Idiomas soportados | Interfaz, comandos y documentación en inglés; el idioma de las respuestas lo determina el proveedor |
-| Licencia | No disponible (no declarada en HuggingFace ni en la model card) |
+| Licencia | No disponible (no declarada en Hugging Face ni en la model card) |
 | Formato de pesos | No aplica; los datos se persisten en JSON (`resonance_tree.json`) |
 | Formato de datos | JSON: nodos con `id`, `role`, `text`, `starred`, `tags`, `children` |
 | Dependencias (Bash) | bash 4+, curl, jq |
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La h
 
 | Herramienta | Tipo | Ventaja diferencial | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Resonance | CLI (Bash y Python) con árbol JSON | Ramificación, reparentado, etiquetas, búsqueda y exportación a Markdown; multiproveedor | No disponible | Repositorio HuggingFace, 0 descargas |
+| Resonance | CLI (Bash y Python) con árbol JSON | Ramificación, reparentado, etiquetas, búsqueda y exportación a Markdown; multiproveedor | No disponible | Repositorio Hugging Face, 0 descargas |
 | Megi | Extensión de navegador | Interfaz gráfica; citada como inspiración de Resonance | No disponible | No disponible en la información proporcionada |
 | Interfaces web nativas de los proveedores (OpenAI, Anthropic, etc.) | Aplicación web | Integración directa con su propio modelo | No disponible | Comercial, acceso vía suscripción/API |
 | Ollama | Runtime de inferencia local | Ejecución 100 % local sin clave de API; actúa como backend de Resonance | No disponible | No disponible en la información proporcionada |
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento, parámetros ni contexto de estas alternat
 
 ## Limitaciones y advertencias
 
-- No es un modelo: no dispone de parámetros, contexto propio ni benchmarks; publicarlo en HuggingFace bajo un repositorio sin pipeline declarado puede inducir a confusión.
+- No es un modelo: no dispone de parámetros, contexto propio ni benchmarks; publicarlo en Hugging Face bajo un repositorio sin pipeline declarado puede inducir a confusión.
 - Licencia no declarada: sin términos explícitos no hay autorización clara para uso comercial ni para redistribución; conviene contactar con el autor antes de integrarlo en producción.
 - Validación nula: 0 descargas y 0 likes, sin tests documentados ni historial de versiones; la madurez del código no es verificable.
 - Metadatos incoherentes: la fecha de actualización (2026-03-14) es anterior a la de creación (2026-10-17), lo que sugiere un error de registro o una migración del repositorio.
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento, parámetros ni contexto de estas alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swordenamine/resonance
+- Hugging Face: https://huggingface.co/swordenamine/resonance
 - Megi (inspiración declarada): https://megi.dev
 - Paper, blog o demo del proyecto: no disponibles en la información proporcionada.
 - Repositorio de código independiente, releases o documentación adicional: no disponibles en la información proporcionada.

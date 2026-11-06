@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mgraz/latvian-deberta-pii-finetune-fp32
+- Modelo en Hugging Face: https://huggingface.co/mgraz/latvian-deberta-pii-finetune-fp32
 - Resultados de evaluación: `evaluation_results.json` (en el repositorio)
 - Verificación del benchmark en CPU: `cpu_benchmark_verification.json` (en el repositorio)
 - Ejemplos de entrada: `examples/inputs.jsonl` (en el repositorio)

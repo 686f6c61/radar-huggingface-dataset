@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ppetrovilya/experiment-contrastive` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni publicado como referencia, sino de un esqueleto de código con una configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor, Ppetrovilya, lo describe explícitamente como un punto de partida experimental y no reclama ninguna métrica de benchmark.
+`Ppetrovilya/experiment-contrastive` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni publicado como referencia, sino de un esqueleto de código con una configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El autor, Ppetrovilya, lo describe explícitamente como un punto de partida experimental y no reclama ninguna métrica de benchmark.
 
 El interés de la ficha es acotado y fundamentalmente metodológico: sirve como plantilla reproducible para investigar variantes de arquitectura ViT (atención dispersa, fusión con puertas, RMSNorm, activación approx GELU) antes de lanzar un entrenamiento completo. La model card insiste en que los valores del script son valores iniciales de partida y no evidencia de una ejecución finalizada, y recomienda evaluar contra una línea base de capacidad equivalente con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias.
 
@@ -32,7 +32,7 @@ Un dato relevante y contradictorio: el recuento de parámetros real extraído de
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Vision Transformer de implementación propia (custom), no un modelo cargable mediante APIs automáticas genéricas de HuggingFace Transformers sin un adaptador explícito. La model card detalla cuatro decisiones técnicas concretas: atención dispersa (sparse) en lugar de atención densa completa, fusión con puertas (gated fusion) para combinar ramas o modalidades, normalización RMSNorm en lugar de LayerNorm y activación approx GELU. No se especifica el número de capas, dimensión de embedding, número de cabezas ni resolución de entrada: `config.json` registra los ajustes de arquitectura generados, pero esos valores no se han proporcionado en la información disponible.
+La arquitectura es un Vision Transformer de implementación propia (custom), no un modelo cargable mediante APIs automáticas genéricas de Hugging Face Transformers sin un adaptador explícito. La model card detalla cuatro decisiones técnicas concretas: atención dispersa (sparse) en lugar de atención densa completa, fusión con puertas (gated fusion) para combinar ramas o modalidades, normalización RMSNorm en lugar de LayerNorm y activación approx GELU. No se especifica el número de capas, dimensión de embedding, número de cabezas ni resolución de entrada: `config.json` registra los ajustes de arquitectura generados, pero esos valores no se han proporcionado en la información disponible.
 
 En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. La receta por defecto usa el optimizador Adam con un scheduler OneCycle, y el autor advierte que son valores iniciales del script, no resultados de una ejecución completada. No se documentan número de tokens, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones, lo cual es coherente con un modelo de visión contrastiva y no generativo. Tampoco se mencionan innovaciones como decodificación especulativa o atención lineal. El objetivo declarado del repositorio es permitir inspeccionar cambios de arquitectura antes de un entrenamiento completo.
 
@@ -76,7 +76,7 @@ La model card no declara parámetros, contexto ni métricas comparables, por lo 
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| Ppetrovilya/experiment-contrastive | 49.600 (segun safetensors); escala "giant" declarada sin verificar | no disponible | BSD-3-Clause | HuggingFace (repo) | Inicializacion sin entrenar, 0 descargas |
+| Ppetrovilya/experiment-contrastive | 49.600 (segun safetensors); escala "giant" declarada sin verificar | no disponible | BSD-3-Clause | Hugging Face (repo) | Inicializacion sin entrenar, 0 descargas |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Ampliamente distribuido | Entrenado y publicado |
 | DINOv2 (Meta) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Ampliamente distribuido | Entrenado y publicado |
 | SigLIP (Google) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Ampliamente distribuido | Entrenado y publicado |
@@ -97,6 +97,6 @@ Nota: los campos marcados como "no disponible" no se han verificado en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ppetrovilya/experiment-contrastive
+- Hugging Face: https://huggingface.co/Ppetrovilya/experiment-contrastive
 - Archivos del repositorio citados en la model card: `eval.py` (artefacto principal), `README.md`, `config.json` (configuración de arquitectura), `training_args.json` (ajustes de experimento), `model.safetensors` (checkpoint de inicialización).
 - Papers, blogs, repositorios y demos adicionales: no disponible en la informacion proporcionada.

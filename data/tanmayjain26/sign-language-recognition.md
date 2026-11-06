@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tanmayjain26/sign-language-recognition` es un repositorio publicado en HuggingFace por el usuario tanmayjain26 bajo licencia MIT. El identificador del modelo sugiere que su proposito es el reconocimiento de lenguaje de signos, pero esta inferencia procede unicamente del nombre del repositorio: la model card publicada no contiene ninguna descripcion, especificacion ni documentacion tecnica mas alla de la declaracion de licencia.
+`tanmayjain26/sign-language-recognition` es un repositorio publicado en Hugging Face por el usuario tanmayjain26 bajo licencia MIT. El identificador del modelo sugiere que su proposito es el reconocimiento de lenguaje de signos, pero esta inferencia procede unicamente del nombre del repositorio: la model card publicada no contiene ninguna descripcion, especificacion ni documentacion tecnica mas alla de la declaracion de licencia.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 1 like, y fue creado y actualizado en la misma fecha (2026-09-12), lo que indica que no ha recibido mantenimiento posterior ni ha sido adoptado por la comunidad. No se declara pipeline, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. Se trata, por tanto, de un artefacto practicamente indocumentado.
 
@@ -94,7 +94,7 @@ No disponible. No se han identificado modelos comparables a partir de la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tanmayjain26/sign-language-recognition
+- Hugging Face: https://huggingface.co/tanmayjain26/sign-language-recognition
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

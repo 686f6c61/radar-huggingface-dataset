@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables al no existir información sobr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DRZ3000/Krea2_loras
+- Repositorio Hugging Face: https://huggingface.co/DRZ3000/Krea2_loras

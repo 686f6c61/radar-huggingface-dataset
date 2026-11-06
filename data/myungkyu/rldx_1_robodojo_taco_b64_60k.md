@@ -70,7 +70,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rldx_1_robodojo_taco_b64_60k | 6 912 896 320 | no disponible | no disponible | HuggingFace (0 descargas) |
+| rldx_1_robodojo_taco_b64_60k | 6 912 896 320 | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas de la misma categoría (VLA para manipulación) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx_1_robodojo_taco_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx_1_robodojo_taco_b64_60k
 - Conjunto de datos de ajuste fino: https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-gemini
 - Modelo base: https://huggingface.co/RLWRLD/RLDX-1-PT
 - Perfil del autor: https://huggingface.co/Myungkyu

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `menik1126/ovd-math-128-data-full-step600-historical` es un checkpoint de inferencia publicado por el usuario `menik1126` en HuggingFace. Segun la model card, se trata de un checkpoint historico etiquetado como "DSR128, full_response, semantic step 600", derivado del artefacto de Weights & Biases `oneshot-full-step600-hf-20260822:v0`, correspondiente al `global_step_600` de un entrenamiento denominado "DSR128 Full". El propio autor advierte de que son pesos evaluados historicamente y no la implementacion reparada posteriormente.
+El modelo `menik1126/ovd-math-128-data-full-step600-historical` es un checkpoint de inferencia publicado por el usuario `menik1126` en Hugging Face. Segun la model card, se trata de un checkpoint historico etiquetado como "DSR128, full_response, semantic step 600", derivado del artefacto de Weights & Biases `oneshot-full-step600-hf-20260822:v0`, correspondiente al `global_step_600` de un entrenamiento denominado "DSR128 Full". El propio autor advierte de que son pesos evaluados historicamente y no la implementacion reparada posteriormente.
 
 El repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, sin estado del optimizador. El tag `qwen2` indica que la arquitectura subyacente es la familia Qwen2, y el recuento real de parametros en safetensors es de 1.777.088.000 (aproximadamente 1,78 mil millones), lo que lo situa en la gama de modelos pequenos aptos para ejecucion local. El nombre del repositorio sugiere un ajuste orientado a tareas matematicas, aunque la model card no documenta esa capacidad de forma explicita.
 
-La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: se trata de un checkpoint de investigacion con cero descargas, cero likes, sin licencia declarada, sin idiomas declarados y sin resultados de benchmarks publicados. Su interes principal es de trazabilidad experimental (reproducir una evaluacion concreta de un pipeline propio), no de uso en produccion. Toda la informacion tecnica disponible procede de los metadatos de HuggingFace y de las cuatro lineas de la model card.
+La relevancia de esta ficha es limitada y hay que enmarcarla con honestidad: se trata de un checkpoint de investigacion con cero descargas, cero likes, sin licencia declarada, sin idiomas declarados y sin resultados de benchmarks publicados. Su interes principal es de trazabilidad experimental (reproducir una evaluacion concreta de un pipeline propio), no de uso en produccion. Toda la informacion tecnica disponible procede de los metadatos de Hugging Face y de las cuatro lineas de la model card.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No existen resultados de benchmarks de este checkpoint, por lo que la comparacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| ovd-math-128-data-full-step600-historical | 1,78 B | No disponible | No disponible | HuggingFace, 0 descargas | No disponibles |
+| ovd-math-128-data-full-step600-historical | 1,78 B | No disponible | No disponible | Hugging Face, 0 descargas | No disponibles |
 | Qwen2-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Ampliamente disponible | Si |
 | Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Ampliamente disponible | Si |
 | SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Ampliamente disponible | Si |
@@ -104,6 +104,6 @@ Diferencias clave: los tres modelos de referencia tienen licencia Apache 2.0 exp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-full-step600-historical
+- Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-full-step600-historical
 - Artefacto de Weights & Biases referenciado en la model card: `oneshot-full-step600-hf-20260822:v0` (no se ha encontrado URL publica)
 - Paper, blog, repositorio o demo adicional: no disponible. La busqueda web no ha devuelto ningun resultado relacionado con este modelo.

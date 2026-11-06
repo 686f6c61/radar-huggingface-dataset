@@ -6,7 +6,7 @@ El repositorio `devendradhakad/autodroid-openbmb-MiniCPM-V-4.6-gguf` aloja una c
 
 El modelo base, MiniCPM-V 4.6, es un MLLM (modelo de lenguaje multimodal) de tipo "pocket-sized" construido sobre un codificador visual SigLIP2-400M y un LLM Qwen3.5-0.8B. Su propuesta de valor es la eficiencia: segun la model card, reduce los FLOPs de codificacion visual en mas de un 50% respecto a versiones anteriores e introduce compresion mixta de tokens visuales 4x/16x, lo que permite intercambiar precision por velocidad. Ademas, ofrece aproximadamente 1,5x mas throughput de tokens que Qwen3.5-0.8B.
 
-La relevancia actual del modelo radica en su orientacion a despliegue en iOS, Android y HarmonyOS con codigo de adaptacion abierto, y en su compatibilidad con vLLM, SGLang, llama.cpp, Ollama, SWIFT y LLaMA-Factory. La metadata de HuggingFace indica 752.161.600 parametros para este repositorio, aunque no se detalla la composicion exacta de esa cifra en la informacion disponible.
+La relevancia actual del modelo radica en su orientacion a despliegue en iOS, Android y HarmonyOS con codigo de adaptacion abierto, y en su compatibilidad con vLLM, SGLang, llama.cpp, Ollama, SWIFT y LLaMA-Factory. La metadata de Hugging Face indica 752.161.600 parametros para este repositorio, aunque no se detalla la composicion exacta de esa cifra en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No se han publicado resultados numericos detallados de MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Indice AA Intelligence | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.6 (este repositorio, GGUF) | 752 M (metadata del repo) | no disponible | 13 | Apache 2.0 | HuggingFace (cuantizacion de terceros, 0 descargas) |
+| MiniCPM-V 4.6 (este repositorio, GGUF) | 752 M (metadata del repo) | no disponible | 13 | Apache 2.0 | Hugging Face (cuantizacion de terceros, 0 descargas) |
 | Qwen3.5-0.8B | ~0,8 B (segun model card) | no disponible | 10 | no disponible | no disponible en la informacion |
 | Qwen3.5-0.8B-Thinking | ~0,8 B (segun model card) | no disponible | 11 | no disponible | no disponible en la informacion |
 | Ministral 3 3B | 3 B (segun model card) | no disponible | 11 | no disponible | no disponible en la informacion |
@@ -105,7 +105,7 @@ La model card afirma ademas que MiniCPM-V 4.6 supera a Qwen3.5-0.8B en la mayori
 - Modelo base oficial: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Repositorio GitHub de la familia MiniCPM-o: https://github.com/OpenBMB/MiniCPM-o
 - CookBook de MiniCPM-V: https://github.com/OpenSQZ/MiniCPM-V-CookBook
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Demo
 - Documentacion de la API (clave publica gratuita): https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
 - Repositorio de LLaVA-UHD v4: https://github.com/THUMAI-Lab/LLaVA-UHD-v4
 - Identificadores arXiv listados en las etiquetas del repositorio: https://arxiv.org/abs/2604.27393, https://arxiv.org/abs/2509.18154, https://arxiv.org/abs/2408.01800, https://arxiv.org/abs/2605.08985

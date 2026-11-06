@@ -78,11 +78,11 @@ Dato adicional reportado: el razonamiento deliberado con trazas doradas mas que 
 
 | Modelo | Tipo | Parametros | Contexto | Macro (suite general) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kenning-xl v0.6 | Decodificador con lectura restringida (Qwen3-1.7B + LoRA fusionado) | 1,72 mil millones | 1.536 tokens | 0,688 | Apache 2.0 | HuggingFace, servido via SystemOne Builder |
+| kenning-xl v0.6 | Decodificador con lectura restringida (Qwen3-1.7B + LoRA fusionado) | 1,72 mil millones | 1.536 tokens | 0,688 | Apache 2.0 | Hugging Face, servido via SystemOne Builder |
 | kenning v0.5 (kenning-large-v0.5, segun la model card) | Cross-encoder | no disponible | no disponible | 0,653 | no disponible | Motor por defecto del proyecto |
 | Clef (`clef-flash`) | no disponible | no disponible | no disponible | 0,791 | no disponible | Referencia comparativa del autor |
 | Jev (`jev-latest`) | no disponible | no disponible | no disponible | 0,830 | no disponible | Referencia comparativa del autor |
-| kenning-large-v0.4 | Cross-encoder (deberta-v2) | 0,4 mil millones | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| kenning-large-v0.4 | Cross-encoder (deberta-v2) | 0,4 mil millones | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Puntos clave de la comparacion: Kenning-XL v0.6 supera a Clef en decisiones de agente (0,860 frente a 0,793) y empata en conversacion, pero queda por debajo en el global y en registros, tablas, calidad y logs. Frente al cross-encoder v0.5 mejora macro, agente, registros y tablas, y empeora en texto, calidad y logs.
 
@@ -102,7 +102,7 @@ Puntos clave de la comparacion: Kenning-XL v0.6 supera a Clef en decisiones de a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/systemonedev/kenning-xl-v0.6
+- Modelo en Hugging Face: https://huggingface.co/systemonedev/kenning-xl-v0.6
 - Perfil del autor en GitHub: https://github.com/systemonedev
 - Repositorio SystemOne Builder: https://github.com/systemonedev/systemone-builder
 - Notas de diseno del motor kenning-xl: https://github.com/systemonedev/systemone-builder/blob/main/docs/kenning-xl-design.md

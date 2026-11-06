@@ -78,8 +78,8 @@ Los ajustes de inferencia declarados son temperatura 0 y presupuesto de salida d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-150traj | 8B (base) + adaptador LoRA | no disponible; entrenamiento a 8.192 tokens | 92,56% en tareas de entrenamiento y 73,00% en retenidas (metrica FSM propia) | no disponible para el adaptador; base Apache-2.0 | HuggingFace, 0 descargas y 0 likes |
-| Qwen/Qwen3-VL-8B-Thinking (modelo base sin adaptar) | 8B | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | HuggingFace |
+| RoboTalk-Qwen3-VL-8B-Thinking-Rationale-150traj | 8B (base) + adaptador LoRA | no disponible; entrenamiento a 8.192 tokens | 92,56% en tareas de entrenamiento y 73,00% en retenidas (metrica FSM propia) | no disponible para el adaptador; base Apache-2.0 | Hugging Face, 0 descargas y 0 likes |
+| Qwen/Qwen3-VL-8B-Thinking (modelo base sin adaptar) | 8B | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | Hugging Face |
 | Otros adaptadores LoRA de robotica multi-agente | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparables publicados para alternativas de la misma categoria en la informacion proporcionada. La unica comparacion fiable que puede establecerse es contra el modelo base, y el autor no reporta la linea base sin adaptador, por lo que no es posible cuantificar la mejora atribuible al LoRA.
@@ -101,7 +101,7 @@ No se dispone de datos comparables publicados para alternativas de la misma cate
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-150traj
+- Repositorio Hugging Face del adaptador: https://huggingface.co/DorianAtSchool/RoboTalk-Qwen3-VL-8B-Thinking-Rationale-150traj
 - Dataset RoboTalk: https://huggingface.co/datasets/DorianAtSchool/RoboTalk
 - Modelo base Qwen3-VL-8B-Thinking: https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

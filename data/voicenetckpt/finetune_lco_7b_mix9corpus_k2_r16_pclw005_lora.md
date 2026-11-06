@@ -97,6 +97,6 @@ No disponible. La informacion proporcionada no identifica el modelo base, no des
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_pclw005_lora
+- Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_pclw005_lora
 - Indice de checkpoints del proyecto VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, repositorio de codigo, blog o demo: no disponibles en la informacion proporcionada.

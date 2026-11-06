@@ -2,11 +2,11 @@
 
 ## Resumen
 
-bert-tiny-finetuned-sms-spam-detection es un ajuste fino del modelo BERT-tiny publicado por el usuario mahrukhsaeed en HuggingFace. Se trata de un clasificador binario de texto orientado a la deteccion de spam en mensajes SMS en ingles, entrenado sobre el dataset `sms_spam`. El modelo cuenta con 4.386.690 parametros (dato confirmado en los pesos safetensors) y ocupa aproximadamente 0,1 GB en el repositorio, lo que lo situa en la categoria de modelos ultracompactos.
+bert-tiny-finetuned-sms-spam-detection es un ajuste fino del modelo BERT-tiny publicado por el usuario mahrukhsaeed en Hugging Face. Se trata de un clasificador binario de texto orientado a la deteccion de spam en mensajes SMS en ingles, entrenado sobre el dataset `sms_spam`. El modelo cuenta con 4.386.690 parametros (dato confirmado en los pesos safetensors) y ocupa aproximadamente 0,1 GB en el repositorio, lo que lo situa en la categoria de modelos ultracompactos.
 
 Su relevancia practica radica en el coste de inferencia: con menos de 5 millones de parametros, es viable ejecutarlo en CPU, en dispositivos moviles o en pasarelas de mensajeria con requisitos de latencia muy estrictos, donde desplegar un transformer de cientos de millones de parametros no seria rentable. La model card declara una precision de validacion de 0,98 sobre el dataset de referencia, aunque no se detallan hiperparametros, epocas ni protocolo de evaluacion.
 
-El modelo se publica sin licencia declarada, sin pipeline asignado y con cero descargas y cero likes en el momento de la consulta, por lo que debe considerarse un artefacto experimental mas que un componente listo para produccion. Toda la informacion disponible proviene de la model card y de los metadatos de HuggingFace.
+El modelo se publica sin licencia declarada, sin pipeline asignado y con cero descargas y cero likes en el momento de la consulta, por lo que debe considerarse un artefacto experimental mas que un componente listo para produccion. Toda la informacion disponible proviene de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -69,14 +69,14 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 - VRAM estimada para inferencia: aproximadamente 17,5 MB en fp32 (4,39 M de parametros), 8,8 MB en fp16 y 4,4 MB en int8 para los pesos; el pico real depende del tamano de lote y de la longitud de secuencia, pero en cualquier caso es del orden de decenas o pocos cientos de megabytes.
 - GPU recomendadas: no requiere GPU. Cualquier GPU moderna (RTX 3060, RTX 4090, T4, A100, H100) puede servirlo con holgura extrema.
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU de consumo e incluso en GPUs integradas y en CPU.
-- Despliegue: al ser un modelo de la familia BERT con pesos safetensors, es compatible con bibliotecas de inferencia estandar como PyTorch, ONNX Runtime, HuggingFace Transformers, Text Embeddings Inference y servicios genericos de clasificacion. No se documenta compatibilidad explicita con vLLM, llama.cpp u Ollama, orientados a modelos generativos.
+- Despliegue: al ser un modelo de la familia BERT con pesos safetensors, es compatible con bibliotecas de inferencia estandar como PyTorch, ONNX Runtime, Hugging Face Transformers, Text Embeddings Inference y servicios genericos de clasificacion. No se documenta compatibilidad explicita con vLLM, llama.cpp u Ollama, orientados a modelos generativos.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bert-tiny-finetuned-sms-spam-detection (este modelo) | 4,39 M | no disponible | Clasificacion spam SMS | no disponible | HuggingFace, 0 descargas |
+| bert-tiny-finetuned-sms-spam-detection (este modelo) | 4,39 M | no disponible | Clasificacion spam SMS | no disponible | Hugging Face, 0 descargas |
 | bert-tiny (modelo base de prajjwal1/bert-tiny) | 4,4 M | 512 tokens | Modelo preentrenado generico | Apache-2.0 | Ampliamente utilizado |
 | distilbert-base-uncased | 66 M | 512 tokens | Modelo preentrenado generico | Apache-2.0 | Ampliamente utilizado |
 
@@ -90,11 +90,11 @@ La comparacion se limita a parametros, contexto y licencia: no hay datos de benc
 - Licencia: no declarada. La ausencia de licencia explicita impide asumir permisos de uso comercial, modificacion o redistribucion; es imprescindible contactar con el autor antes de cualquier uso en produccion.
 - Riesgo de sobreajuste: no se documenta la division de datos ni la metrica en un conjunto de test independiente. Una precision de validacion de 0,98 puede reflejar sobreajuste al split concreto si no hubo test separado.
 - Desequilibrio de clases: no se reportan precision, recall ni F1 por clase. Si el dataset tiene un desequilibrio importante (el spam suele ser minoritario), la exactitud global puede ocultar un recall pobre en la clase spam.
-- Ausencia de pipeline declarado: no hay etiqueta de tarea en HuggingFace, lo que puede requerir configurar manualmente el mapeo de etiquetas al cargar el modelo.
+- Ausencia de pipeline declarado: no hay etiqueta de tarea en Hugging Face, lo que puede requerir configurar manualmente el mapeo de etiquetas al cargar el modelo.
 - Madurez: cero descargas y cero likes, sin actualizaciones desde la publicacion. No hay evidencia de uso en produccion ni de validacion por terceros.
 - Deriva de dominio: los patrones de spam cambian con rapidez; un modelo entrenado sobre un corpus estatico requerira reentrenamiento o ajuste continuo para mantener la precision en el tiempo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahrukhsaeed/bert-tiny-finetuned-sms-spam-detection
+- Modelo en Hugging Face: https://huggingface.co/mahrukhsaeed/bert-tiny-finetuned-sms-spam-detection
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

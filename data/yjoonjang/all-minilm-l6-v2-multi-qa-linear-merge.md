@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. Al s
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `all-MiniLM-L6-v2` (base) | 22,7M | 512 tokens | Referencia estándar en STS | Apache 2.0 | HuggingFace |
-| `multi-qa-MiniLM-L6-cos-v1` (base) | 22,7M | 512 tokens | Optimizado para búsqueda de preguntas | Apache 2.0 | HuggingFace |
-| `all-MiniLM-L6-v2-multi-qa-linear-merge` (este) | 22,7M | no disponible | Sin benchmarks publicados | no disponible | HuggingFace |
+| `all-MiniLM-L6-v2` (base) | 22,7M | 512 tokens | Referencia estándar en STS | Apache 2.0 | Hugging Face |
+| `multi-qa-MiniLM-L6-cos-v1` (base) | 22,7M | 512 tokens | Optimizado para búsqueda de preguntas | Apache 2.0 | Hugging Face |
+| `all-MiniLM-L6-v2-multi-qa-linear-merge` (este) | 22,7M | no disponible | Sin benchmarks publicados | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos base porque no se dispone de datos de rendimiento del modelo fusionado. En teoría, la fusión debería combinar las fortalezas de ambos, pero no hay evidencia empírica publicada.
 
@@ -78,7 +78,7 @@ La comparativa se limita a los modelos base porque no se dispone de datos de ren
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/yjoonjang/all-MiniLM-L6-v2-multi-qa-linear-merge)
+- [Hugging Face del modelo](https://huggingface.co/yjoonjang/all-MiniLM-L6-v2-multi-qa-linear-merge)
 - [Modelo base 1: sentence-transformers/all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2)
 - [Modelo base 2: sentence-transformers/multi-qa-MiniLM-L6-cos-v1](https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1)
 - [Documentación de Sentence Transformers (fusión de modelos)](https://github.com/UKPLab/sentence-transformers)

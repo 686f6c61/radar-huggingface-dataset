@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Uigyu/qwen_2.5_3b_mhem-ali_h5_b_s1 es un finetune del modelo Qwen2.5-3B-Instruct, desarrollado por Uigyu. El entrenamiento se ha realizado utilizando Unsloth, una librería que optimiza la velocidad y el consumo de memoria durante el ajuste, junto con la librería TRL de HuggingFace. El modelo se publica bajo licencia Apache-2.0 y declara el inglés como idioma soportado.
+El modelo Uigyu/qwen_2.5_3b_mhem-ali_h5_b_s1 es un finetune del modelo Qwen2.5-3B-Instruct, desarrollado por Uigyu. El entrenamiento se ha realizado utilizando Unsloth, una librería que optimiza la velocidad y el consumo de memoria durante el ajuste, junto con la librería TRL de Hugging Face. El modelo se publica bajo licencia Apache-2.0 y declara el inglés como idioma soportado.
 
 El repositorio no incluye información sobre el dataset de entrenamiento, el objetivo del finetune ni las especificaciones técnicas del modelo resultante. El tamaño del repositorio es de 0.1 GB, lo que sugiere que podría tratarse de un adaptador LoRA o de pesos cuantizados, aunque no se especifica. Al estar basado en un modelo pequeño de 3B, es potencialmente adecuado para entornos con recursos limitados, pero su comportamiento y rendimiento no han sido documentados.
 
@@ -20,7 +20,7 @@ El repositorio no incluye información sobre el dataset de entrenamiento, el obj
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura del modelo Qwen2.5-3B-Instruct, un transformer denso perteneciente a la familia Qwen2.5. La información disponible no especifica la arquitectura exacta del finetune ni si se utilizaron adaptadores LoRA o un ajuste completo de pesos. El entrenamiento se llevó a cabo con Unsloth, que acelera el proceso de ajuste y reduce el uso de memoria, y con la librería TRL de HuggingFace. No se han proporcionado detalles sobre el dataset de entrenamiento, el número de tokens, las técnicas de alineación (RLHF, DPO, etc.) ni los hiperparámetros utilizados. Por tanto, no es posible evaluar la calidad ni el alcance del ajuste realizado.
+El modelo se basa en la arquitectura del modelo Qwen2.5-3B-Instruct, un transformer denso perteneciente a la familia Qwen2.5. La información disponible no especifica la arquitectura exacta del finetune ni si se utilizaron adaptadores LoRA o un ajuste completo de pesos. El entrenamiento se llevó a cabo con Unsloth, que acelera el proceso de ajuste y reduce el uso de memoria, y con la librería TRL de Hugging Face. No se han proporcionado detalles sobre el dataset de entrenamiento, el número de tokens, las técnicas de alineación (RLHF, DPO, etc.) ni los hiperparámetros utilizados. Por tanto, no es posible evaluar la calidad ni el alcance del ajuste realizado.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No disponible. No se han proporcionado datos sobre el rendimiento del finetune, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h5_b_s1
+- Hugging Face: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h5_b_s1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Otro modelo del autor: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h1_s1
 - Unsloth: https://github.com/unslothai/unsloth

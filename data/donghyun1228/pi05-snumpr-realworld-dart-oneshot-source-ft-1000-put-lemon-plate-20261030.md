@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (π0.5 SNUMPR DART one-shot, `put_lemon_plate`) | no disponible | no disponible | sin evaluación en robot | Apache 2.0 | HuggingFace, 0 descargas |
-| `Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-put-lemon-plate-20261030` | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | HuggingFace; modelo fusionado que incorpora este checkpoint |
+| Este modelo (π0.5 SNUMPR DART one-shot, `put_lemon_plate`) | no disponible | no disponible | sin evaluación en robot | Apache 2.0 | Hugging Face, 0 descargas |
+| `Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-put-lemon-plate-20261030` | no disponible | no disponible | no disponible | Apache 2.0 (presumible) | Hugging Face; modelo fusionado que incorpora este checkpoint |
 | `snumpr-iclr27-v1/9999` (checkpoint inicial SNUMPR VLA) | no disponible | no disponible | no disponible | no disponible | Referenciado como init en la model card |
 
 No se dispone de datos de benchmarks ni de especificaciones de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-put-lemon-plate-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-source-ft-1000-put-lemon-plate-20261030
 - Modelo fusionado resultante: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-put-lemon-plate-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `248126e`), referenciado en la model card
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`), preset `pi05_libero_oneshotft`

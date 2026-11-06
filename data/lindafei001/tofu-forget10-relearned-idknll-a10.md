@@ -83,8 +83,8 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-IdkNLL-a10
+- Modelo en Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-IdkNLL-a10
 - Modelo base (checkpoint desaprendido): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr1e-05_alpha10_epoch10
 - Repositorio del proyecto open-unlearning: https://github.com/locuslab/open-unlearning
 - Paper de TOFU (referencia del dataset): https://arxiv.org/abs/1910.09700
-- Búsqueda de modelos relacionados en HuggingFace: https://huggingface.co/models?search=open-unlearning%2Funlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr5e-05_alpha2_epoch10
+- Búsqueda de modelos relacionados en Hugging Face: https://huggingface.co/models?search=open-unlearning%2Funlearn_tofu_Llama-3.2-1B-Instruct_forget10_IdkNLL_lr5e-05_alpha2_epoch10

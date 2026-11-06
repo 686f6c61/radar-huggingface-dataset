@@ -62,10 +62,10 @@ No disponible. No se conocen modelos comparables en la misma categoría (DeiT mu
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; no debe usarse en producción.
 - No se proporcionan datos sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no tiene capacidades generativas de texto.
 - La licencia BSD-3-Clause permite uso comercial y modificación, pero se debe revisar los términos de los datos externos si se usan con otros datasets.
-- La implementación es personalizada; las APIs genéricas de HuggingFace no funcionarán sin un adaptador explícito.
+- La implementación es personalizada; las APIs genéricas de Hugging Face no funcionarán sin un adaptador explícito.
 - No hay garantía de que la arquitectura "huge" con 24k parámetros sea funcional; es un prototipo experimental.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hugokwang83/deit-baseline
+- Repositorio en Hugging Face: https://huggingface.co/hugokwang83/deit-baseline
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) en la búsqueda web; los resultados obtenidos corresponden a páginas de Microsoft sin relación con el modelo.

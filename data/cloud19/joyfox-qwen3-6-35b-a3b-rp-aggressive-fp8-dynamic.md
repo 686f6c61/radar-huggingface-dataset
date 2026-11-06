@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JoyFox-Qwen3.6-35B-A3B-RP-Aggressive-FP8-Dynamic es una cuantizacion FP8 dinamica del modelo MoE multimodal [joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive](https://huggingface.co/joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive), publicado por el usuario cloud19 en HuggingFace. El modelo original es un fine-tuning orientado a roleplay y conversacion de la base [Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B), que emplea la arquitectura `Qwen3_5MoeForConditionalGeneration` con 35.138 millones de parametros totales y, segun la nomenclatura del nombre, aproximadamente 3.000 millones de parametros activos por token. Esta version cuantizada reduce el peso del repositorio a 39,4 GB y esta pensada para desplegarse con vLLM en entornos de produccion donde se prioriza la eficiencia de memoria y latencia frente a la precision completa.
+JoyFox-Qwen3.6-35B-A3B-RP-Aggressive-FP8-Dynamic es una cuantizacion FP8 dinamica del modelo MoE multimodal [joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive](https://huggingface.co/joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive), publicado por el usuario cloud19 en Hugging Face. El modelo original es un fine-tuning orientado a roleplay y conversacion de la base [Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B), que emplea la arquitectura `Qwen3_5MoeForConditionalGeneration` con 35.138 millones de parametros totales y, segun la nomenclatura del nombre, aproximadamente 3.000 millones de parametros activos por token. Esta version cuantizada reduce el peso del repositorio a 39,4 GB y esta pensada para desplegarse con vLLM en entornos de produccion donde se prioriza la eficiencia de memoria y latencia frente a la precision completa.
 
 La cuantizacion se ha realizado con la herramienta [llm-compressor](https://github.com/vllm-project/llm-compressor) mediante un esquema data-free one-shot: los pesos se cuantizan a FP8 por canal (estatico) y las activaciones a FP8 por token (dinamico). Se han excluido de la cuantizacion componentes criticos como la cabeza de salida, los embeddings, la torre de vision, las capas de atencion lineal Gated DeltaNet, los routers MoE y la cabeza MTP, que se mantienen en BF16 para preservar la estabilidad numerica. El modelo hereda la licencia Apache 2.0 y soporta los idiomas ruso, ingles y chino, ademas de entrada multimodal (imagen-texto). La relevancia actual radica en que ofrece un punto de partida listo para servir en vLLM con un coste de memoria reducido, manteniendo las capacidades de roleplay y generacion conversacional del modelo original.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/cloud19/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive-FP8-Dynamic)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/cloud19/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive-FP8-Dynamic)
 - [Modelo base JoyFox (sin cuantizar)](https://huggingface.co/joyfox/JoyFox-Qwen3.6-35B-A3B-RP-Aggressive)
 - [Modelo base Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Repositorio de llm-compressor](https://github.com/vllm-project/llm-compressor)

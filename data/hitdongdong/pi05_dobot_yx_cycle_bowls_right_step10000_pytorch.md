@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `HITdongdong/pi05_dobot_yx_cycle_bowls_right_step10000_pytorch` es un checkpoint de pesos publicado en HuggingFace por el usuario HITdongdong. Los datos verificables del repositorio son limitados: contiene pesos en formato safetensors con un total de 3.616.757.520 parametros (aproximadamente 3,62 mil millones), un tamano de repositorio de 7,2 GB, cero descargas y un "like" en el momento de la consulta. La licencia, los idiomas, el pipeline y la descripcion del modelo no estan declarados en la informacion disponible.
+El repositorio `HITdongdong/pi05_dobot_yx_cycle_bowls_right_step10000_pytorch` es un checkpoint de pesos publicado en Hugging Face por el usuario HITdongdong. Los datos verificables del repositorio son limitados: contiene pesos en formato safetensors con un total de 3.616.757.520 parametros (aproximadamente 3,62 mil millones), un tamano de repositorio de 7,2 GB, cero descargas y un "like" en el momento de la consulta. La licencia, los idiomas, el pipeline y la descripcion del modelo no estan declarados en la informacion disponible.
 
 La nomenclatura del identificador aporta el contexto funcional mas relevante: el prefijo `pi05` remite a la familia de modelos vision-language-action pi0.5, el segmento `dobot` apunta a un brazo robotico Dobot, `cycle_bowls_right` describe una tarea de manipulacion (ciclo de cuencos hacia la derecha), y `step10000` indica que se trata de un checkpoint intermedio de entrenamiento en el paso 10.000. Se trata, por tanto, de un artefacto orientado a robotica y aprendizaje por imitacion, no de un modelo de lenguaje conversacional de proposito general. Esta interpretacion se basa unicamente en el nombre del repositorio y no ha podido confirmarse con documentacion adicional.
 
@@ -29,7 +29,7 @@ Respecto al entrenamiento, el sufijo `step10000` indica que el artefacto corresp
 
 ## Capacidades
 
-- No hay ninguna capacidad declarada de forma explicita en la ficha de HuggingFace del modelo.
+- No hay ninguna capacidad declarada de forma explicita en la ficha de Hugging Face del modelo.
 - Si la interpretacion del nombre es correcta, el modelo estaria especializado en control robotico de un brazo Dobot para una tarea concreta de manipulacion (ciclo de cuencos hacia la derecha), sin capacidades generales de generacion de texto, codigo o matematicas.
 - No hay evidencia de soporte de tool calling, function calling ni protocolos de agentes.
 - No hay evidencia de capacidades multilingues ni de modo de razonamiento explicito (thinking mode).
@@ -68,7 +68,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. A
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_dobot_yx_cycle_bowls_right_step10000_pytorch | 3,62 mil millones | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| pi05_dobot_yx_cycle_bowls_right_step10000_pytorch | 3,62 mil millones | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Otros checkpoints de la misma tarea | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos VLA comparables de la familia pi0.5 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas VLA abiertas (por ejemplo, familias tipo OpenVLA o Groot) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -87,5 +87,5 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. A
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HITdongdong/pi05_dobot_yx_cycle_bowls_right_step10000_pytorch
+- Repositorio en Hugging Face: https://huggingface.co/HITdongdong/pi05_dobot_yx_cycle_bowls_right_step10000_pytorch
 - Enlaces adicionales (paper, blog, repositorio de codigo, demo): no disponible. Los resultados de busqueda devueltos no estaban relacionados con el modelo.

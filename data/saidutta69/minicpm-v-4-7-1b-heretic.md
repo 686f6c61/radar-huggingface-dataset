@@ -77,10 +77,10 @@ El autor contextualiza el KL 0,0351 como una edición de rango medio dentro de s
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-1B-heretic | 1,55B (1,01B texto + 0,55B visión) | No disponible (referencia a bloques de 32K) | Rechazos 5/100; KL 0,0351 frente al base; sin benchmarks de capacidad publicados | Apache-2.0 | HuggingFace, safetensors + GGUF multimodal |
-| openbmb/MiniCPM-V-4.7-1B (base) | 1,55B | No disponible | Rechazos 60/100; OpenBMB afirma que supera a Qwen3.5 0.8B en puntuación global y eficiencia | Apache-2.0 (según el repo derivado) | HuggingFace, app iPhone oficial |
-| saidutta69/Qwen3.5-0.8B-heretic | ~0,8B (solo texto) | No disponible | No disponible | No disponible en la información | HuggingFace |
-| Qwen3-VL-2B-Instruct-heretic | ~2B | No disponible | KL 0,0528 (edición más agresiva que este modelo) | No disponible en la información | HuggingFace |
+| MiniCPM-V-4.7-1B-heretic | 1,55B (1,01B texto + 0,55B visión) | No disponible (referencia a bloques de 32K) | Rechazos 5/100; KL 0,0351 frente al base; sin benchmarks de capacidad publicados | Apache-2.0 | Hugging Face, safetensors + GGUF multimodal |
+| openbmb/MiniCPM-V-4.7-1B (base) | 1,55B | No disponible | Rechazos 60/100; OpenBMB afirma que supera a Qwen3.5 0.8B en puntuación global y eficiencia | Apache-2.0 (según el repo derivado) | Hugging Face, app iPhone oficial |
+| saidutta69/Qwen3.5-0.8B-heretic | ~0,8B (solo texto) | No disponible | No disponible | No disponible en la información | Hugging Face |
+| Qwen3-VL-2B-Instruct-heretic | ~2B | No disponible | KL 0,0528 (edición más agresiva que este modelo) | No disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ El autor contextualiza el KL 0,0351 como una edición de rango medio dentro de s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/MiniCPM-V-4.7-1B-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/MiniCPM-V-4.7-1B-heretic
 - Discusiones del repositorio: https://huggingface.co/saidutta69/MiniCPM-V-4.7-1B-heretic/discussions
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Repositorio de Heretic: https://github.com/p-e-w/heretic

@@ -6,7 +6,7 @@ El modelo `open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated
 
 El modelo pertenece a la familia de referencia "open-sci", un proyecto que parece orientado a reproducir y comparar recetas de entrenamiento sobre arquitecturas abiertas. El nombre del identificador codifica varios detalles de la receta: contexto de 16k tokens, un corpus de entrenamiento de aproximadamente 300B tokens en la cadena de modelos base, SFT sobre datos tipo Tulu3 y filtrado de contaminacion, y un subconjunto de 30k ejemplos de razonamiento (ar30k). Es relevante para desarrolladores e investigadores que quieran estudiar el efecto de un SFT adicional sobre una referencia ya ajustada, o reutilizar un checkpoint pequeno para tareas de razonamiento.
 
-La ficha se basa unicamente en los metadatos publicados en HuggingFace y en la model card generada automaticamente por el Trainer. No hay informacion publica sobre la composicion exacta del dataset, los idiomas soportados ni resultados de evaluacion, por lo que muchos campos quedan marcados como "no disponible".
+La ficha se basa unicamente en los metadatos publicados en Hugging Face y en la model card generada automaticamente por el Trainer. No hay informacion publica sobre la composicion exacta del dataset, los idiomas soportados ni resultados de evaluacion, por lo que muchos campos quedan marcados como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -70,9 +70,9 @@ La model card incluye un `model-index` con la entrada `sft__AceReason-1-1-SFT-30
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-...-ar30k (este modelo) | 1,71B | 16k | other | HuggingFace, 17 descargas |
-| Modelo base: ali-elganzory/open-sci-ref-v0.02-1.7b-...-Tulu3-decontaminated | no disponible | 16k (segun nombre) | other | HuggingFace |
-| Alternativas de ~1,7B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B/3B, SmolLM2-1.7B) | 1-3B | 4k-128k segun modelo | Apache-2.0 / Llama / otras | HuggingFace, ampliamente adoptados |
+| open-sci-ref-v0.02-1.7b-...-ar30k (este modelo) | 1,71B | 16k | other | Hugging Face, 17 descargas |
+| Modelo base: ali-elganzory/open-sci-ref-v0.02-1.7b-...-Tulu3-decontaminated | no disponible | 16k (segun nombre) | other | Hugging Face |
+| Alternativas de ~1,7B (p. ej. Qwen2.5-1.5B, Llama-3.2-1B/3B, SmolLM2-1.7B) | 1-3B | 4k-128k segun modelo | Apache-2.0 / Llama / otras | Hugging Face, ampliamente adoptados |
 
 No se dispone de datos de rendimiento comparativo entre este modelo y las alternativas mencionadas; la comparativa se limita a parametros, contexto y licencia.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre este modelo y las altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-ar30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated-ar30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-16k-SFT-Tulu3-decontaminated
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Transformers: https://github.com/huggingface/transformers

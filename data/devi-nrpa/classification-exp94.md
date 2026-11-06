@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`devi-nrpa/classification-exp94` es un repositorio experimental publicado en HuggingFace por el usuario devi-nrpa que contiene una implementacion compacta y personalizada en PyTorch de un modelo denominado "Mae" orientado a tareas de clasificacion. El propio autor lo describe de forma explicita como un artefacto destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no como un lanzamiento preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo entrenado ni evaluado.
+`devi-nrpa/classification-exp94` es un repositorio experimental publicado en Hugging Face por el usuario devi-nrpa que contiene una implementacion compacta y personalizada en PyTorch de un modelo denominado "Mae" orientado a tareas de clasificacion. El propio autor lo describe de forma explicita como un artefacto destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no como un lanzamiento preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas, no un modelo entrenado ni evaluado.
 
 El dato mas relevante para cualquier evaluacion es su tamano: 24.832 parametros totales, segun los safetensors del repositorio. Se trata por tanto de un modelo del orden de decenas de miles de parametros, muy lejos de cualquier LLM actual, y cuya etiqueta interna de escala "large" corresponde unicamente a la taxonomia propia de este repositorio, no a un estandar de la industria. El repositorio ocupa 0,0 GB y no declara ningun resultado de benchmark.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos alternativos de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| classification-exp94 | 24.832 | no disponible | sin benchmarks publicados | MIT | HuggingFace (0 descargas) |
+| classification-exp94 | 24.832 | no disponible | sin benchmarks publicados | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No disponible. La informacion proporcionada no incluye modelos alternativos de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devi-nrpa/classification-exp94
+- Modelo en Hugging Face: https://huggingface.co/devi-nrpa/classification-exp94
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante para este modelo (corresponden a paginas de ayuda de YouTube y Gmail y a un sitio de videojuegos), por lo que no se dispone de papers, blogs, repositorios adicionales ni demos.

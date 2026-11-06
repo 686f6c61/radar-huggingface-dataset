@@ -75,7 +75,7 @@ La comparación se basa solo en características públicas; no hay datos de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/vaultai/Qwen3.5-9B-Claude-4.6-Opus-Uncensored-Distilled-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/vaultai/Qwen3.5-9B-Claude-4.6-Opus-Uncensored-Distilled-GGUF
 - Repositorio original (eliminado): no disponible
 - Espejo alternativo de Marcoariette: https://huggingface.co/marcoariette/Qwen3.5-9B-Claude-4.6-Opus-Uncensored-Distilled-GGUF
 - Modelo v2 de LuffyTheFox (razonamiento): https://huggingface.co/LuffyTheFox/Qwen3.5-9B-Claude-4.6-Opus-Uncensored-v2-GGUF/blob/main/README.md

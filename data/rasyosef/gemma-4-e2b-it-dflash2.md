@@ -121,7 +121,7 @@ Frente a DSpark, DFlash2 gana en HumanEval (3,06× frente a 2,42×), traducción
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasyosef/gemma-4-E2B-it-dflash2
+- Modelo en Hugging Face: https://huggingface.co/rasyosef/gemma-4-E2B-it-dflash2
 - Modelo verificador: https://huggingface.co/google/gemma-4-E2B-it
 - Borrador alternativo DSpark: https://huggingface.co/rasyosef/gemma-4-E2B-it-dspark
 - Código de entrenamiento: https://github.com/rasyosef/train-dspark-draft-models

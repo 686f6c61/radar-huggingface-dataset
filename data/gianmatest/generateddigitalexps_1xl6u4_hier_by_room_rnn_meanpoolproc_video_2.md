@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto de investigación publicado en HuggingFace por el usuario `gianmaTest` el 25 de octubre de 2026. Se trata de un modelo de tamaño mínimo: 2.366.208 parámetros (aproximadamente 2,37 millones), distribuidos en formato `safetensors` e integrados mediante `PyTorchModelHubMixin`. El repositorio no incluye model card descriptiva: el README se limita a la plantilla generada automáticamente por la librería `huggingface_hub`, con los campos Code, Paper y Docs marcados como "More Information Needed".
+`generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto de investigación publicado en Hugging Face por el usuario `gianmaTest` el 25 de octubre de 2026. Se trata de un modelo de tamaño mínimo: 2.366.208 parámetros (aproximadamente 2,37 millones), distribuidos en formato `safetensors` e integrados mediante `PyTorchModelHubMixin`. El repositorio no incluye model card descriptiva: el README se limita a la plantilla generada automáticamente por la librería `huggingface_hub`, con los campos Code, Paper y Docs marcados como "More Information Needed".
 
 El identificador del repositorio sugiere, como hipótesis no confirmada por el autor, un experimento sobre una RNN jerárquica organizada "por habitación" (`hier_by_room`) con agregación mediante mean pooling (`meanPoolProc`), aplicada a algún tipo de dato audiovisual (`video`). El sufijo `generatedDigitalExps_1xL6U4` apunta a un pipeline de generación automática de experimentos, probablemente con propósitos de barrido de hiperparámetros o validación interna. Ninguno de estos extremos está documentado en el repositorio.
 
@@ -20,7 +20,7 @@ Su relevancia actual es prácticamente nula fuera del contexto del autor: cuenta
 | Idiomas soportados | No disponible |
 | Licencia | No disponible (sin licencia declarada en el repositorio) |
 | Formato de pesos | `safetensors` (PyTorch), cargable vía `PyTorchModelHubMixin` |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Pipeline declarado | No disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-25 |
@@ -84,7 +84,7 @@ No disponible. No se ha identificado ningún modelo comparable documentado: la c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_2
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_2
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Repositorio de código: no disponible

@@ -4,7 +4,7 @@
 
 PCB Solder & Assembly Defect Detection (YOLO26m) es un detector de objetos basado en la familia YOLO26 y entrenado con la librería Ultralytics para localizar defectos de soldadura y ensamblaje en placas de circuito impreso (PCB) ya pobladas. Lo desarrolla el usuario ParsaVictor como parte de una suite de inspección de PCB que incluye también un modelo hermano para placas desnudas (bare board). El modelo resuelve un problema concreto de inspección visual automatizada (AOI) en entornos de fabricación electrónica: identificar puentes de soldadura, soldadura insuficiente o excesiva, voids, componentes ausentes o desplazados, quemaduras, daños físicos y oxidación.
 
-Se trata de un detector de una sola etapa con arquitectura YOLO26 en variante "m" (medium), entrenado a resolución de imagen 800 px durante 150 épocas. El repositorio ocupa 0.0 GB según HuggingFace, lo que indica pesos ligeros típicos de un modelo YOLO medium. No se especifican en la información disponible el número de parámetros ni la longitud de contexto (no aplica a un detector de objetos).
+Se trata de un detector de una sola etapa con arquitectura YOLO26 en variante "m" (medium), entrenado a resolución de imagen 800 px durante 150 épocas. El repositorio ocupa 0.0 GB según Hugging Face, lo que indica pesos ligeros típicos de un modelo YOLO medium. No se especifican en la información disponible el número de parámetros ni la longitud de contexto (no aplica a un detector de objetos).
 
 Su relevancia actual radica en que ofrece métricas publicadas y verificables en validación y test (mAP50 de 0.905 y 0.895 respectivamente), umbrales de confianza por clase ajustados a F1 óptimo, y una documentación explícita de sus debilidades conocidas, algo poco habitual en modelos de detección industrial de nicho. La licencia es de uso exclusivamente de investigación y desarrollo, con contacto obligatorio con el autor para uso comercial.
 
@@ -88,8 +88,8 @@ No se han publicado resultados de benchmarks adicionales (por ejemplo, comparati
 
 | Modelo | Arquitectura | Tarea | mAP50 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PCB Solder & Assembly Defect Detection (YOLO26m) | YOLO26m | Detección de defectos de soldadura/ensamblaje en PCB pobladas | 0.895 | research-use-mixed-sources | HuggingFace |
-| pcb-bare-board-defect-detection-yolo26 | YOLO26 | Detección de defectos en placas desnudas | no disponible | no disponible | HuggingFace (modelo hermano del mismo autor) |
+| PCB Solder & Assembly Defect Detection (YOLO26m) | YOLO26m | Detección de defectos de soldadura/ensamblaje en PCB pobladas | 0.895 | research-use-mixed-sources | Hugging Face |
+| pcb-bare-board-defect-detection-yolo26 | YOLO26 | Detección de defectos en placas desnudas | no disponible | no disponible | Hugging Face (modelo hermano del mismo autor) |
 | Alternativas genéricas de detección de defectos en PCB | no disponible | Detección de defectos | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos competidores en la información proporcionada; la comparativa se limita al modelo hermano del mismo autor, del que no se detallan métricas.
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks de modelos competidores en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ParsaVictor/pcb-solder-defect-detection-yolo26
+- Modelo en Hugging Face: https://huggingface.co/ParsaVictor/pcb-solder-defect-detection-yolo26
 - Dataset de entrenamiento: https://huggingface.co/datasets/ParsaVictor/pcb-solder-defect-detection
 - Licencia del dataset: https://huggingface.co/datasets/ParsaVictor/pcb-solder-defect-detection/blob/main/LICENSE.md
 - Modelo hermano (bare board): https://huggingface.co/ParsaVictor/pcb-bare-board-defect-detection-yolo26

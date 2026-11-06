@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Plmokn09/Ip-ai es un repositorio de modelo publicado en HuggingFace por el usuario Plmokn09. La informacion publica disponible se limita a los metadatos del repositorio: no se declara pipeline, licencia, idiomas soportados, arquitectura ni tamano de parametros. El repositorio ocupa 0,1 GB, esta configurado con acceso restringido (gated, requiere aceptar condiciones en HuggingFace) y registra 0 descargas y 1 like desde su creacion el 12 de septiembre de 2026.
+Plmokn09/Ip-ai es un repositorio de modelo publicado en Hugging Face por el usuario Plmokn09. La informacion publica disponible se limita a los metadatos del repositorio: no se declara pipeline, licencia, idiomas soportados, arquitectura ni tamano de parametros. El repositorio ocupa 0,1 GB, esta configurado con acceso restringido (gated, requiere aceptar condiciones en Hugging Face) y registra 0 descargas y 1 like desde su creacion el 12 de septiembre de 2026.
 
 No se ha encontrado documentacion tecnica asociada. La busqueda web realizada no devuelve ningun resultado relacionado con el modelo: todos los enlaces recuperados corresponden a paginas genericas de Instagram y son irrelevantes para esta ficha. Tampoco se localiza paper, blog de anuncio, repositorio de codigo ni demo.
 
@@ -20,7 +20,7 @@ En consecuencia, esta ficha recoge unicamente los datos verificables del reposit
 | Idiomas soportados | no disponible (la ficha no declara ninguno) |
 | Licencia | no disponible (la ficha no declara licencia) |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | Plmokn09/Ip-ai |
+| Identificador en Hugging Face | Plmokn09/Ip-ai |
 | Autor | Plmokn09 |
 | Tamano del repositorio | 0,1 GB |
 | Acceso | restringido (gated), requiere aceptar condiciones |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Viabilidad en GPU de consumo: no determinable. El unico dato objetivo es el tamano del repositorio (0,1 GB), que por si solo no confirma que el modelo quepa en una GPU de gama de consumo concreta (RTX 3060, RTX 4090, etc.).
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, transformers): no disponibles. Ninguna aparece documentada ni confirmada en la informacion proporcionada.
 - Latencia y throughput estimados: no disponibles.
-- Requisito adicional de acceso: el repositorio es gated, por lo que es imprescindible solicitar y obtener autorizacion en HuggingFace antes de descargar cualquier archivo.
+- Requisito adicional de acceso: el repositorio es gated, por lo que es imprescindible solicitar y obtener autorizacion en Hugging Face antes de descargar cualquier archivo.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No disponible. No se conocen la categoria, el tamano ni la tarea del modelo, por
 
 - Ausencia total de documentacion: no hay ficha tecnica, paper ni guia de uso que describa el modelo, sus datos de entrenamiento o sus limites.
 - Licencia no declarada: al no especificarse licencia, no existe autorizacion explicita de uso comercial. Utilizarlo en produccion conlleva riesgo juridico.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade una dependencia externa y posibles restricciones adicionales de uso.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade una dependencia externa y posibles restricciones adicionales de uso.
 - Sin validacion por la comunidad: 0 descargas y 1 like significan que no hay evidencia publica de que el modelo funcione segun lo esperado, ni informes de terceros sobre su comportamiento.
 - Riesgo de alucinacion: no cuantificado. No hay evaluaciones de fidelidad ni de tasas de error.
 - Sesgos: no evaluables. Se desconocen la composicion del dataset y el idioma de entrenamiento.
@@ -94,7 +94,7 @@ No disponible. No se conocen la categoria, el tamano ni la tarea del modelo, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Plmokn09/Ip-ai
+- Hugging Face: https://huggingface.co/Plmokn09/Ip-ai
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

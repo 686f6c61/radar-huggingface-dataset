@@ -12,7 +12,7 @@ Su relevancia es acotada y muy especifica: se trata de un artefacto de investiga
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `llama` en HuggingFace; sin detalle de capas, dimension oculta o cabezas en la informacion disponible) |
+| Arquitectura | Transformer decoder-only (etiqueta `llama` en Hugging Face; sin detalle de capas, dimension oculta o cabezas en la informacion disponible) |
 | Parametros totales | 1.279.854.592 (≈1,28 B), dato real de los safetensors |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Cache KV: no disponible; depende del numero de capas, cabezas y longitud de contexto, que no se documentan. Con contextos de pocos miles de tokens el consumo adicional suele ser de cientos de MB, pero no puede confirmarse para este modelo.
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para bfloat16 en una sola secuencia. Cabria en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. Para servir con lotes grandes, A100 40/80 GB o H100 permitirian un throughput mucho mayor, aunque el cuello de botella a esta escala es el ancho de banda de memoria, no la capacidad.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de 8 GB o mas con precision reducida, y en GPUs de 4-6 GB si se cuantiza a int4 o int8 (conversion no publicada por el autor).
-- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (etiqueta explicita) y endpoints compatibles con la API de HuggingFace. vLLM es viable al ser una arquitectura tipo llama, pero no esta verificado por el autor. Para llama.cpp u Ollama habria que convertir los pesos a GGUF, tarea que puede hacerse con las utilidades de mergekit o del propio llama.cpp, aunque el resultado no esta publicado ni validado.
+- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (etiqueta explicita) y endpoints compatibles con la API de Hugging Face. vLLM es viable al ser una arquitectura tipo llama, pero no esta verificado por el autor. Para llama.cpp u Ollama habria que convertir los pesos a GGUF, tarea que puede hacerse con las utilidades de mergekit o del propio llama.cpp, aunque el resultado no esta publicado ni validado.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -90,14 +90,14 @@ Diferencias clave: el modelo analizado es un artefacto de investigacion sin lice
 - Sesgos desconocidos: la composicion del dataset de preentrenamiento no esta documentada (solo se intuye por el nombre del run), por lo que no se puede evaluar la presencia de sesgos demograficos, linguísticos o de contenido.
 - Idiomas no declarados: no hay garantia de calidad en castellano ni en ningun otro idioma concreto.
 - Longitud de contexto desconocida: no se puede planificar el uso en tareas de contexto largo ni estimar con precision el consumo de cache KV.
-- Artefacto no reproducible de forma directa: la configuracion de mergekit apunta a rutas locales del entorno del autor (`/opt/tiger/...`), no a identificadores de HuggingFace, por lo que no es posible descargar los checkpoints de origen desde el repositorio.
+- Artefacto no reproducible de forma directa: la configuracion de mergekit apunta a rutas locales del entorno del autor (`/opt/tiger/...`), no a identificadores de Hugging Face, por lo que no es posible descargar los checkpoints de origen desde el repositorio.
 - Cero adopcion registrada: el repositorio figura con 0 descargas y 0 likes, sin issues ni discusion que aporten validacion externa.
 - Fecha de creacion y actualizacion muy proximas (17 de septiembre de 2026, con dos minutos de diferencia), lo que sugiere una subida automatizada sin curaduria posterior.
 - Los resultados de la busqueda web realizada no guardan relacion con el modelo (corresponden a un manual de medicina veterinaria), por lo que no aportan contexto tecnico util.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-tulu-10p-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-tulu-10p-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Paper del metodo Linear / model soups: https://arxiv.org/abs/2203.05482
 - Paper de DataDecide (referencia no citada en la model card, solo inferida por la nomenclatura): no disponible en la informacion proporcionada

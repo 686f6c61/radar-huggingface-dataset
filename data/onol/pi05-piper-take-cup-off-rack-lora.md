@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativos con otros LoRA de pi0.5 u otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Onol/pi05-piper-take-cup-off-rack-lora
+- Repositorio Hugging Face: https://huggingface.co/Onol/pi05-piper-take-cup-off-rack-lora
 - Modelo base pi0.5: https://huggingface.co/physical-intelligence/pi0.5 (referencia, no verificado en la búsqueda)
 - Implementación de referencia de pi0.5 en LeRobot: https://huggingface.co/lerobot/pi05_base
 - Otro LoRA de pi0.5 para la misma tarea: https://huggingface.co/moriis/pi05_piper_third_v2
@@ -151,7 +151,7 @@ No se dispone de datos de rendimiento comparativos con otros LoRA de pi0.5 o mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Onol/pi05-piper-take-cup-off-rack-lora
+- Repositorio Hugging Face: https://huggingface.co/Onol/pi05-piper-take-cup-off-rack-lora
 - Modelo base pi0.5 (referencia): https://huggingface.co/physical-intelligence/pi0.5
 - Implementación de pi0.5 en LeRobot: https://huggingface.co/lerobot/pi05_base
 - Otro LoRA de pi0.5 para la misma tarea: https://huggingface.co/moriis/pi05_piper_third_v2

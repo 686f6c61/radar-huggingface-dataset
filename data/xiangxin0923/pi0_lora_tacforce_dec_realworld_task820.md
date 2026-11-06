@@ -4,7 +4,7 @@
 
 Este modelo es un checkpoint de adaptación LoRA para un sistema de robótica basado en la arquitectura pi0 (π0), desarrollado por el usuario xiangxin0923. Se trata de un modelo de visión-lenguaje-acción (VLA) diseñado para control robótico general, entrenado específicamente para una tarea de mundo real denominada `realworld_task820`. El checkpoint corresponde al paso 29999 de entrenamiento y se sirve mediante el script `server.sh` del proyecto T2-VLA, lo que indica que está pensado para despliegue en inferencia en un entorno de robótica.
 
-El modelo se distribuye a través de HuggingFace con la librería `openpi`, que es el ecosistema de Physical Intelligence para modelos de control robótico. Aunque la información pública es limitada, su nombre sugiere que emplea una adaptación LoRA sobre el modelo base pi0, lo que permite un ajuste eficiente para tareas específicas sin modificar los pesos completos. Su relevancia radica en la creciente adopción de modelos VLA para robótica generalista, donde pi0 ha demostrado capacidades de manipulación diestra y generalización a partir de datos heterogéneos.
+El modelo se distribuye a través de Hugging Face con la librería `openpi`, que es el ecosistema de Physical Intelligence para modelos de control robótico. Aunque la información pública es limitada, su nombre sugiere que emplea una adaptación LoRA sobre el modelo base pi0, lo que permite un ajuste eficiente para tareas específicas sin modificar los pesos completos. Su relevancia radica en la creciente adopción de modelos VLA para robótica generalista, donde pi0 ha demostrado capacidades de manipulación diestra y generalización a partir de datos heterogéneos.
 
 No se dispone de detalles sobre el tamaño total de parámetros, la longitud de contexto ni los idiomas soportados, ya que la model card no los especifica. El repositorio ocupa 9.5 GB, lo que sugiere que incluye los pesos del adaptador y posiblemente los norm_stats necesarios para la normalización de acciones.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | pi0 (Physical Intelligence) | ~3B (no confirmado) | no disponible | VLA flow model | no disponible | openpi |
-| OpenVLA | 7B | 2048 | VLA basado en Prismatic | MIT | HuggingFace |
+| OpenVLA | 7B | 2048 | VLA basado en Prismatic | MIT | Hugging Face |
 | RT-2 (Google) | 55B | 2048 | VLA basado en PaLI-X | no disponible | no público |
 
 Este checkpoint es una adaptación LoRA de pi0, por lo que su comparativa directa sería contra otros adaptadores o modelos completos en la misma tarea. No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
@@ -77,7 +77,7 @@ Este checkpoint es una adaptación LoRA de pi0, por lo que su comparativa direct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiangxin0923/pi0_lora_tacforce_dec_realworld_task820
+- Modelo en Hugging Face: https://huggingface.co/xiangxin0923/pi0_lora_tacforce_dec_realworld_task820
 - Paper de pi0: https://arxiv.org/abs/2410.24164
 - Repositorio openpi (referencia): https://github.com/Physical-Intelligence/openpi (no confirmado, pero es el ecosistema indicado)
 - Dataset asociado: https://huggingface.co/datasets/xiangxin0923/realworld_task820 (no verificado)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ERNIE-HC-SMoE-ngroups40 es un checkpoint de generación de texto publicado en HuggingFace por el usuario Dohyeon1. El repositorio contiene pesos en safetensors que suman 21 825 437 888 parámetros (unos 21,8 mil millones) y ocupa 43,7 GB, un tamaño coherente con un almacenamiento en precisión de 16 bits. El tag de arquitectura `ernie4_5_moe` lo vincula a la familia ERNIE 4.5 MoE de Baidu, y el sufijo del nombre (`HC-SMoE-ngroups40`) sugiere una modificación de la capa de mezcla de expertos organizada en 40 grupos, aunque esa modificación no está documentada en ninguna parte del repositorio.
+ERNIE-HC-SMoE-ngroups40 es un checkpoint de generación de texto publicado en Hugging Face por el usuario Dohyeon1. El repositorio contiene pesos en safetensors que suman 21 825 437 888 parámetros (unos 21,8 mil millones) y ocupa 43,7 GB, un tamaño coherente con un almacenamiento en precisión de 16 bits. El tag de arquitectura `ernie4_5_moe` lo vincula a la familia ERNIE 4.5 MoE de Baidu, y el sufijo del nombre (`HC-SMoE-ngroups40`) sugiere una modificación de la capa de mezcla de expertos organizada en 40 grupos, aunque esa modificación no está documentada en ninguna parte del repositorio.
 
-La relevancia de la ficha es doble. Por un lado, los checkpoints abiertos basados en la arquitectura ERNIE 4.5 MoE son escasos, y una variante de 21,8 mil millones de parámetros con enrutamiento disperso es interesante para investigación sobre eficiencia de inferencia y análisis de enrutamiento de expertos. Por otro, el repositorio presenta señales claras de checkpoint sin curar: la model card es la plantilla automática de HuggingFace con todos los campos en "More Information Needed", no se declara licencia ni idiomas, no hay benchmarks ni código de ejemplo, y acumula 0 descargas y 0 likes desde su creación el 19 de septiembre de 2026.
+La relevancia de la ficha es doble. Por un lado, los checkpoints abiertos basados en la arquitectura ERNIE 4.5 MoE son escasos, y una variante de 21,8 mil millones de parámetros con enrutamiento disperso es interesante para investigación sobre eficiencia de inferencia y análisis de enrutamiento de expertos. Por otro, el repositorio presenta señales claras de checkpoint sin curar: la model card es la plantilla automática de Hugging Face con todos los campos en "More Information Needed", no se declara licencia ni idiomas, no hay benchmarks ni código de ejemplo, y acumula 0 descargas y 0 likes desde su creación el 19 de septiembre de 2026.
 
 En consecuencia, esta ficha describe con precisión lo que se puede verificar (tamaño, formato, tags, pipeline) y marca explícitamente como "no disponible" todo lo que el autor no ha publicado. Cualquier uso en producción debería ir precedido de una evaluación propia y de una verificación de la licencia del modelo base.
 
@@ -34,7 +34,7 @@ En consecuencia, esta ficha describe con precisión lo que se puede verificar (t
 
 El único dato verificable sobre la arquitectura es el tag `ernie4_5_moe`, que corresponde a la implementación de mezcla de expertos de la familia ERNIE 4.5 publicada por Baidu. Se trata, por tanto, de un transformer con capas MoE dispersas: cada token se enruta a un subconjunto de expertos en lugar de atravesar toda la red, lo que desacopla el coste computacional por token del número total de parámetros. El sufijo `ngroups40` apunta a una variante con 40 grupos de expertos, y `HC-SMoE` sugiere alguna forma de enrutamiento jerárquico o agrupado, pero no hay documentación que confirme el número de expertos por capa, el número de expertos activados por token ni la presencia de expertos compartidos.
 
-No hay información sobre el entrenamiento: ni volumen de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones con RLHF o DPO, ni hiperparámetros. La model card es la plantilla genérica de HuggingFace y no aporta nada. Tampoco se documenta ninguna técnica de inferencia específica (decodificación especulativa, atención lineal, etc.). A título de contexto sobre la familia base, la documentación pública de Baidu para ERNIE 4.5 describe variantes MoE de ~21 000 millones de parámetros totales con aproximadamente 3 000 millones de parámetros activos y ventanas de contexto de 128 000 tokens; no hay ninguna confirmación de que este checkpoint conserve esas cifras, por lo que deben tomarse solo como referencia de la arquitectura de partida.
+No hay información sobre el entrenamiento: ni volumen de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones con RLHF o DPO, ni hiperparámetros. La model card es la plantilla genérica de Hugging Face y no aporta nada. Tampoco se documenta ninguna técnica de inferencia específica (decodificación especulativa, atención lineal, etc.). A título de contexto sobre la familia base, la documentación pública de Baidu para ERNIE 4.5 describe variantes MoE de ~21 000 millones de parámetros totales con aproximadamente 3 000 millones de parámetros activos y ventanas de contexto de 128 000 tokens; no hay ninguna confirmación de que este checkpoint conserve esas cifras, por lo que deben tomarse solo como referencia de la arquitectura de partida.
 
 ## Capacidades
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ERNIE-HC-SMoE-ngroups40 (este checkpoint) | 21,8 B | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, sin model card |
-| ERNIE-4.5-21B-A3B (Baidu) | ~21 B | ~3 B | 128 000 tokens | Apache 2.0 | HuggingFace, familia oficial con documentación |
-| Qwen3-30B-A3B (Alibaba) | ~30,5 B | ~3,3 B | 32 768 tokens nativos, ampliable a 131 072 con YaRN | Apache 2.0 | HuggingFace, con model card y benchmarks publicados |
-| Mixtral 8x7B (Mistral AI) | ~46,7 B | ~12,9 B | 32 000 tokens | Apache 2.0 | HuggingFace, con model card y benchmarks publicados |
+| ERNIE-HC-SMoE-ngroups40 (este checkpoint) | 21,8 B | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, sin model card |
+| ERNIE-4.5-21B-A3B (Baidu) | ~21 B | ~3 B | 128 000 tokens | Apache 2.0 | Hugging Face, familia oficial con documentación |
+| Qwen3-30B-A3B (Alibaba) | ~30,5 B | ~3,3 B | 32 768 tokens nativos, ampliable a 131 072 con YaRN | Apache 2.0 | Hugging Face, con model card y benchmarks publicados |
+| Mixtral 8x7B (Mistral AI) | ~46,7 B | ~12,9 B | 32 000 tokens | Apache 2.0 | Hugging Face, con model card y benchmarks publicados |
 
 Las cifras de los tres modelos de referencia provienen de su documentación pública y se incluyen solo como marco de comparación de tamaño y licencia. No existen datos de rendimiento de este checkpoint, por lo que no es posible establecer una comparación de calidad.
 
@@ -96,8 +96,8 @@ Las cifras de los tres modelos de referencia provienen de su documentación púb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/ERNIE-HC-SMoE-ngroups40
-- Paper referenciado en los tags (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700 — se trata de la referencia de la calculadora de impacto ambiental de HuggingFace, no de un artículo sobre este modelo.
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/ERNIE-HC-SMoE-ngroups40
+- Paper referenciado en los tags (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700 — se trata de la referencia de la calculadora de impacto ambiental de Hugging Face, no de un artículo sobre este modelo.
 - Documentación de la familia ERNIE 4.5 de Baidu: no disponible en la información proporcionada.
 - Código de ejemplo, demo o paper del autor: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces obtenidos correspondían a contenido no pertinente y se han descartado.

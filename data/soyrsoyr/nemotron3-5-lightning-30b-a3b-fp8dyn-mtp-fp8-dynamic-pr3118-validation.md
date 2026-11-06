@@ -43,7 +43,7 @@ La innovacion tecnica relevante aqui es la integracion de MTP (multi-token predi
 - Reduccion de huella de memoria frente al modelo BF16: al almacenar 32,9 B de parametros en FP8, la huella de pesos baja a unos 33 GB, lo que permite liberar VRAM para cache KV y aumentar el tamano de lote en GPUs de 80 GB.
 - Validacion de integraciones MTP en pipelines propios: el repositorio incluye verify_mtp.py, que ejecuta dos prompts y exige metricas positivas de tokens borrador, util como prueba de humo antes de promover una version de vLLM o de CUDA.
 - Pruebas de regresion de cuantizacion: sirve para comparar recetas de llm-compressor (FP8 dinamico data-free frente a NVFP4A16 o MXFP4) sobre el mismo modelo base y detectar degradaciones de carga o de generacion.
-- Despliegue en endpoints compatibles: la etiqueta endpoints_compatible permite usarlo como artefacto de prueba en plataformas serverless que acepten repositorios de HuggingFace con formato compressed-tensors.
+- Despliegue en endpoints compatibles: la etiqueta endpoints_compatible permite usarlo como artefacto de prueba en plataformas serverless que acepten repositorios de Hugging Face con formato compressed-tensors.
 - Asistente conversacional multi-turno en entornos controlados: con la etiqueta conversational y el pipeline text-generation, puede usarse para prototipos de dialogo, siempre que se valide antes la calidad respecto al modelo BF16.
 - Investigacion sobre cuantizacion sin calibracion: el esquema data-free es relevante para equipos que no pueden distribuir datasets de calibracion por motivos de confidencialidad.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-FP8-DYNAMIC-pr3118-validation | 32,9 B totales, ~3 B activos (A3B) | FP8 dinamico, backbone y MTP | No disponible | openmdw-1.1 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (modelo base) | 32,9 B totales, ~3 B activos | BF16 | No disponible | La del modelo fuente | HuggingFace (NVIDIA) |
+| soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-FP8-DYNAMIC-pr3118-validation | 32,9 B totales, ~3 B activos (A3B) | FP8 dinamico, backbone y MTP | No disponible | openmdw-1.1 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (modelo base) | 32,9 B totales, ~3 B activos | BF16 | No disponible | La del modelo fuente | Hugging Face (NVIDIA) |
 | Variante NVFP4A16 del mismo backbone y MTP | 32,9 B totales | FP4 weight-only con activaciones de 16 bits | No disponible | openmdw-1.1 | Mencionada por el autor, sin repositorio identificado en la informacion disponible |
 | Variante MXFP4 del mismo backbone y MTP | 32,9 B totales | FP4 con activacion dinamica | No disponible | openmdw-1.1 | Mencionada por el autor; requiere validacion en B200 |
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de contexto para comparar con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-FP8-DYNAMIC-pr3118-validation
+- Hugging Face: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-FP8-DYNAMIC-pr3118-validation
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (revision a9904d24bcc1d289a1950fa9d2b978c47cf903b9 referenciada por el autor)
 - Implementacion de cuantizacion (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

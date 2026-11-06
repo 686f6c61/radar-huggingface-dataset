@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sdsfsfsf3435 bajo licencia MIT. La ficha tecnica de HuggingFace lo etiqueta como transformers, pytorch y bert, con pipeline de feature-extraction, cero descargas, cero likes, idiomas no declarados y un repositorio de 0,0 GB, es decir, sin pesos publicados. Esta metadata entra en contradiccion directa con el contenido de la model card, que describe un asistente conversacional orientado a razonamiento, codigo y matematicas, no un encoder BERT para extraccion de caracteristicas.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sdsfsfsf3435 bajo licencia MIT. La ficha tecnica de Hugging Face lo etiqueta como transformers, pytorch y bert, con pipeline de feature-extraction, cero descargas, cero likes, idiomas no declarados y un repositorio de 0,0 GB, es decir, sin pesos publicados. Esta metadata entra en contradiccion directa con el contenido de la model card, que describe un asistente conversacional orientado a razonamiento, codigo y matematicas, no un encoder BERT para extraccion de caracteristicas.
 
 La model card afirma una mejora sustancial respecto a una version previa: en el conjunto AIME 2025 la precision pasaria del 70 % al 87,5 %, con un consumo medio de tokens por pregunta que sube de 12K a 23K, ademas de una reduccion de la tasa de alucinacion y mejor soporte de function calling. Tambien incluye una tabla de 15 benchmarks con una media ponderada de 0,855. Sin embargo, no se especifica arquitectura, numero de parametros, longitud de contexto, composicion del dataset ni proceso de post-entrenamiento.
 
@@ -12,20 +12,20 @@ La relevancia practica del modelo es hoy muy limitada: el repositorio no contien
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los tags de HuggingFace indican bert, pero la model card describe un modelo conversacional de razonamiento; la contradiccion no esta resuelta |
+| Arquitectura | No disponible. Los tags de Hugging Face indican bert, pero la model card describe un modelo conversacional de razonamiento; la contradiccion no esta resuelta |
 | Parametros totales | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponible (el campo de idiomas aparece vacio en la ficha de HuggingFace) |
+| Idiomas soportados | No disponible (el campo de idiomas aparece vacio en la ficha de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | No disponible. El repositorio figura con 0,0 GB y no se listan archivos safetensors, GGUF ni bin |
 | Pipeline declarado | feature-extraction |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de publicacion | 2026-09-18 (segun la ficha de HuggingFace) |
+| Fecha de publicacion | 2026-09-18 (segun la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La unica pista tecnica es el tag bert de HuggingFace, que apunta a un transformer encoder y encajaria con el pipeline feature-extraction, pero la model card describe un modelo de chat con modo de razonamiento, prompt de sistema y soporte de function calling, propio de un decoder. Ambas descripciones son incompatibles y el autor no aporta configuracion, diagrama ni numero de capas.
+No hay informacion verificable sobre la arquitectura. La unica pista tecnica es el tag bert de Hugging Face, que apunta a un transformer encoder y encajaria con el pipeline feature-extraction, pero la model card describe un modelo de chat con modo de razonamiento, prompt de sistema y soporte de function calling, propio de un decoder. Ambas descripciones son incompatibles y el autor no aporta configuracion, diagrama ni numero de capas.
 
 Respecto al entrenamiento, la model card menciona de forma generica un incremento de recursos computacionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, sin detallar el numero de tokens, la composicion del dataset ni si se aplico RLHF, DPO u otra tecnica de alineamiento. Se menciona una variante denominada MyAwesomeModel-Small, con arquitectura identica al modelo base pero tokenizer compartido con el modelo principal. Tampoco se publican hiperparametros, recetas de entrenamiento ni artefactos de evaluacion.
 
@@ -59,7 +59,7 @@ Advertencia previa: estos casos de uso se derivan de las capacidades declaradas 
 - Atencion al cliente multi-turno: gestion de conversaciones con prompt de sistema que incluye la fecha actual, clasificacion de la intencion del usuario y derivacion a herramientas externas mediante function calling.
 - Monitorizacion de marca y analisis de sentimiento: procesamiento por lotes de resenas y menciones en redes para clasificar polaridad y detectar incidencias, apoyandose en las puntuaciones declaradas de sentiment analysis (0,885) y text classification (0,904).
 - Traduccion automatica de documentacion tecnica: soporte declarado de traduccion (0,893) para localizar manuales y notas de version, sujeto a verificacion de los idiomas realmente cubiertos, que la ficha no especifica.
-- Indexacion semantica y RAG: dado que el pipeline declarado en HuggingFace es feature-extraction, el modelo podria emplearse para generar embeddings de frases y alimentar un recuperador vectorial, aunque esto choca con la descripcion conversacional de la model card.
+- Indexacion semantica y RAG: dado que el pipeline declarado en Hugging Face es feature-extraction, el modelo podria emplearse para generar embeddings de frases y alimentar un recuperador vectorial, aunque esto choca con la descripcion conversacional de la model card.
 
 ## Benchmarks y rendimiento
 
@@ -103,7 +103,7 @@ No disponible. La model card compara contra Model1, Model2 y Model1-v2, referenc
 - Contradiccion de metadata: los tags apuntan a un BERT de feature-extraction mientras la model card describe un asistente conversacional con razonamiento. No se puede saber cual de las dos descripciones es correcta.
 - Cero validacion de la comunidad: 0 descargas y 0 likes. No hay issues, discusiones ni terceros que hayan reproducido los resultados.
 - Cifras no verificables: los benchmarks se presentan contra referencias sin nombre y sin detallar el protocolo de evaluacion. Los valores de 0,976 en math reasoning o 0,904 en text classification son atipicamente altos y no vienen acompanados de metodologia.
-- Idioma: la ficha de HuggingFace no declara idiomas soportados. No hay garantia de un rendimiento correcto en castellano.
+- Idioma: la ficha de Hugging Face no declara idiomas soportados. No hay garantia de un rendimiento correcto en castellano.
 - Alucinacion: el autor afirma una reduccion de la tasa de alucinacion, pero no aporta metrica de hallucination rate ni conjunto de evaluacion asociado.
 - Fecha de publicacion anomala: la ficha indica 2026-09-18 como fecha de creacion, posterior a la fecha habitual de consulta, lo que refuerza la sospecha de que se trata de un repositorio de prueba o generado automaticamente.
 - Licencia: MIT permite uso comercial, modificacion y redistribucion con atribucion, pero al no existir pesos publicados la licencia carece de aplicacion practica por el momento.
@@ -112,7 +112,7 @@ No disponible. La model card compara contra Model1, Model2 y Model1-v2, referenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdsfsfsf3435/MyAwesomeModel
+- Hugging Face: https://huggingface.co/sdsfsfsf3435/MyAwesomeModel
 - Repositorio de codigo mencionado en la model card: no disponible (se cita un "code repository" sin URL).
 - Sitio web y plataforma de API mencionados en la model card: no disponible (se citan sin URL).
 - Paper tecnico: no disponible.

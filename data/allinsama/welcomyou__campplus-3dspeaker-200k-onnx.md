@@ -4,7 +4,7 @@
 
 Este repositorio contiene un export a ONNX Runtime del modelo de embeddings de locutor CAM++ `speech_campplus_sv_zh_en_16k-common_advanced`, desarrollado originalmente por Alibaba DAMO Academy dentro del proyecto 3D-Speaker. No es un modelo generativo: es un extractor de características que convierte una señal de audio de 16 kHz en un vector de 192 dimensiones, L2-normalizado, que representa la identidad del hablante. Sobre esos vectores se construyen sistemas de verificación (¿es la misma persona?), identificación (¿quién es?) y diarización (¿quién habla y cuándo?), normalmente mediante similitud coseno y clustering.
 
-La relevancia de este export concreto es práctica: según el autor, es el único export ONNX público de la variante entrenada con unos 200.000 locutores, mientras que el espejo oficial en HuggingFace (`funasr/campplus`) solo distribuye el `.bin` de PyTorch y el ONNX de ModelScope no siempre es accesible fuera de China. El archivo pesa 27 MB, se ejecuta en CPU con `onnxruntime` y evita depender de PyTorch en producción.
+La relevancia de este export concreto es práctica: según el autor, es el único export ONNX público de la variante entrenada con unos 200.000 locutores, mientras que el espejo oficial en Hugging Face (`funasr/campplus`) solo distribuye el `.bin` de PyTorch y el ONNX de ModelScope no siempre es accesible fuera de China. El archivo pesa 27 MB, se ejecuta en CPU con `onnxruntime` y evita depender de PyTorch en producción.
 
 La arquitectura es CAM++ (FCM + TDNN + DenseTDNN + StatsPool + Dense), descrita en el paper arXiv:2303.00332, con entrada de fbank de 80 dimensiones y salida de 192 dimensiones. El modelo está pensado para chino e inglés, aunque el autor reporta buen comportamiento cross-lingual. Conviene señalar una discrepancia de procedencia: el identificador del repositorio es `Allinsama/welcomyou__campplus-3dspeaker-200k-onnx`, mientras que la model card y los resultados de búsqueda apuntan a `welcomyou/campplus-3dspeaker-200k-onnx`, con 0 descargas y 0 likes en el momento de la consulta.
 
@@ -24,7 +24,7 @@ La arquitectura es CAM++ (FCM + TDNN + DenseTDNN + StatsPool + Dense), descrita 
 | Entrada | Fbank de 80 dimensiones, float32, `(batch, frames, 80)`, con CMVN (resta de la media por dimensión) |
 | Frecuencia de muestreo | 16 kHz, mono |
 | Locutores de entrenamiento | ~200.000 (VoxCeleb 1+2, CNCeleb 1+2 y corpus 3D-Speaker) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ La información proporcionada no incluye métricas comparativas (EER, minDCF) de
 | Modelo | Arquitectura | Dimensión del embedding | Locutores de entrenamiento | Formatos disponibles | Licencia | Notas |
 |---|---|---|---|---|---|---|
 | CAM++ 200k (este repositorio) | CAM++ (FCM + TDNN + DenseTDNN + StatsPool) | 192 | ~200.000 | ONNX (27 MB) | Apache 2.0 | Único export ONNX público de esta variante según el autor; ~2,5× más rápido que ResNet34 en CPU en diarización |
-| CAM++ `funasr/campplus` | CAM++ | No disponible | No disponible (el autor indica que es una variante menor) | PyTorch `.bin` | No disponible en la información | Espejo oficial en HuggingFace, sin ONNX |
+| CAM++ `funasr/campplus` | CAM++ | No disponible | No disponible (el autor indica que es una variante menor) | PyTorch `.bin` | No disponible en la información | Espejo oficial en Hugging Face, sin ONNX |
 | CAM++ `iic/speech_campplus_sv_zh_en_16k-common_advanced` | CAM++ | 192 | ~200.000 | PyTorch `.pt` y ONNX en ModelScope | Apache 2.0 (según el export) | Checkpoint original; el acceso al ONNX desde fuera de China no siempre está disponible |
 | ResNet34 (3D-Speaker) | CNN ResNet | No disponible | No disponible | No disponible | No disponible | Referencia de velocidad usada por el autor; más lento en CPU |
 | ECAPA-TDNN (alternativas del ecosistema) | TDNN con atención de canal | No disponible | No disponible | No disponible | No disponible | No mencionado en la información proporcionada; sin datos comparativos verificables aquí |
@@ -104,11 +104,11 @@ La información proporcionada no incluye métricas comparativas (EER, minDCF) de
 
 ## Enlaces
 
-- Repositorio en HuggingFace (identificador de la ficha): https://huggingface.co/Allinsama/welcomyou__campplus-3dspeaker-200k-onnx
+- Repositorio en Hugging Face (identificador de la ficha): https://huggingface.co/Allinsama/welcomyou__campplus-3dspeaker-200k-onnx
 - Repositorio referido en la model card: https://huggingface.co/welcomyou/campplus-3dspeaker-200k-onnx
 - Árbol de archivos del repositorio: https://huggingface.co/welcomyou/campplus-3dspeaker-200k-onnx/tree/main
 - Modelo original en ModelScope: https://www.modelscope.cn/models/iic/speech_campplus_sv_zh_en_16k-common_advanced
-- Espejo oficial en HuggingFace: https://huggingface.co/funasr/campplus/tree/main
+- Espejo oficial en Hugging Face: https://huggingface.co/funasr/campplus/tree/main
 - Repositorio 3D-Speaker (Alibaba DAMO Academy): https://github.com/modelscope/3D-Speaker
 - Paper CAM++: https://arxiv.org/abs/2303.00332
 - Script de exportación a ONNX: https://github.com/welcomyou/sherpa-vietnamese-asr/blob/main/convert_onnx/export_campplus_onnx.py

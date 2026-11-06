@@ -92,8 +92,8 @@ Latencia CPU (milisegundos en caliente, AMD Ryzen 9 5950X, ONNX Runtime 1.31.1 C
 
 | Modelo | Tipo | Embedding | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TitaNet-S Optimized (este) | TitaNet-S ONNX FP32 | 192 dim | 0,25–10 s (calidad 1–5 s) | Apache 2.0 | HuggingFace |
-| TitaNet-S Tuned (este) | TitaNet-S ONNX FP32 afinado | 192 dim | 0,25–10 s (calidad 1–5 s) | Apache 2.0 | HuggingFace |
+| TitaNet-S Optimized (este) | TitaNet-S ONNX FP32 | 192 dim | 0,25–10 s (calidad 1–5 s) | Apache 2.0 | Hugging Face |
+| TitaNet-S Tuned (este) | TitaNet-S ONNX FP32 afinado | 192 dim | 0,25–10 s (calidad 1–5 s) | Apache 2.0 | Hugging Face |
 | TitaNet-S original (NeMo) | TitaNet-S PyTorch | 192 dim | no disponible | Apache 2.0 (NeMo) | NGC / NeMo |
 | Original B0 (control del autor) | Modelo de embeddings de hablante | no disponible | no disponible | no disponible | no incluido en el repo |
 
@@ -113,7 +113,7 @@ El autor usa el modelo B0 como control de tiempos y de EER, pero no incluye sus 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/notaneimu/titanet-s-optimized-onnx
+- Hugging Face: https://huggingface.co/notaneimu/titanet-s-optimized-onnx
 - Modelo original TitaNet en NVIDIA NeMo: no disponible en la información proporcionada
 - Paper de TitaNet: no disponible en la información proporcionada
 - Repositorio de código del autor: no disponible en la información proporcionada

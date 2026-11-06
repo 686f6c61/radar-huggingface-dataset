@@ -88,7 +88,7 @@ No se dispone de información sobre modelos comparables directos en la documenta
 
 | Modelo | Parámetros | Contexto | TartanIMU Score (test completo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tartanimu-lnresnet (este modelo) | 5,38 M | 64 ventanas de 1 s + 7 de contexto por lado | 0,27267 | Apache-2.0 | HuggingFace |
+| tartanimu-lnresnet (este modelo) | 5,38 M | 64 ventanas de 1 s + 7 de contexto por lado | 0,27267 | Apache-2.0 | Hugging Face |
 | Baseline de los organizadores TartanIMU | no disponible | no disponible | 0,538 | no disponible | no disponible |
 | Otras alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -108,7 +108,7 @@ No se dispone de información sobre modelos comparables directos en la documenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arattan7272/tartanimu-lnresnet
+- Hugging Face: https://huggingface.co/arattan7272/tartanimu-lnresnet
 - Reproducción del envío: `python infer.py --traj_dir tartan-imu-challenge-iros2026/test --windows tartan-imu-challenge-iros2026/index/test_windows.csv --checkpoint model.pt --out submission.csv` (MD5 esperado del CSV: `d9a536690be776429b0adb5acd001b8f`)
 - Fichero de integridad: `SHA256SUMS` en el propio repositorio
 - Reto TartanIMU, IROS 2026: mencionado en la model card, sin URL proporcionada (no disponible)

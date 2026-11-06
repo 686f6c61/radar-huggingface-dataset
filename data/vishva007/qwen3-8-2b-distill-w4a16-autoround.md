@@ -80,7 +80,7 @@ Las tres variantes cuantizadas comparten el mismo modelo base y la misma precisi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B-Distill
 - Variante AutoGPTQ: https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-GPTQ
 - Variante LLM-Compressor: https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-LLM-Compressor

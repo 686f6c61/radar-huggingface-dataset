@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HN es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario Alexander8809 bajo el identificador `Alexander8809/HN`. Se trata de un peso adicional (adapter) que se aplica sobre el modelo base `krea/Krea-2-Turbo`, un modelo de difusion de generacion de imagenes a partir de texto. El repositorio esta etiquetado con la libreria `diffusers`, la plantilla `template:diffusion-lora` y el pipeline `text-to-image`, y ocupa aproximadamente 0,2 GB.
+HN es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario Alexander8809 bajo el identificador `Alexander8809/HN`. Se trata de un peso adicional (adapter) que se aplica sobre el modelo base `krea/Krea-2-Turbo`, un modelo de difusion de generacion de imagenes a partir de texto. El repositorio esta etiquetado con la libreria `diffusers`, la plantilla `template:diffusion-lora` y el pipeline `text-to-image`, y ocupa aproximadamente 0,2 GB.
 
 La relevancia de este tipo de publicaciones es acotada: los LoRA permiten ajustar un modelo de difusion preentrenado a un estilo, sujeto o concepto concreto sin reentrenar el modelo completo, lo que reduce el coste de personalizacion a unas pocas horas de GPU. En este caso concreto, la model card es practicamente vacia (titulo "H", sin prompt de instancia, sin descripcion del dataset ni ejemplos documentados) y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe evidencia publica de su comportamiento ni de su calidad.
 
@@ -102,7 +102,7 @@ No disponible. La informacion proporcionada no incluye adaptadores LoRA alternat
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Alexander8809/HN
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Alexander8809/HN
 - Ficheros y versiones: https://huggingface.co/Alexander8809/HN/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog tecnico, repositorio de codigo o demo del adaptador: no disponibles.

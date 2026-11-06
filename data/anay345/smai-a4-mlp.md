@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smai-a4-mlp es un perceptron multicapa (MLP) muy sencillo entrenado para clasificacion de imagenes en el conjunto de datos CIFAR-10. Lo publica el usuario anay345 en HuggingFace como parte de la asignatura SMAI (probablemente "Sistemas y Metodos de Aprendizaje e Inteligencia Artificial"), identificado con el roll 2024102050. No es un modelo de lenguaje ni un transformer: se trata de una red neuronal fully-connected con una unica capa oculta de 256 neuronas y activacion ReLU, que recibe imagenes de 32x32x3 aplanadas a un vector de 3072 dimensiones y produce 10 logits (una clase por cada categoria de CIFAR-10).
+smai-a4-mlp es un perceptron multicapa (MLP) muy sencillo entrenado para clasificacion de imagenes en el conjunto de datos CIFAR-10. Lo publica el usuario anay345 en Hugging Face como parte de la asignatura SMAI (probablemente "Sistemas y Metodos de Aprendizaje e Inteligencia Artificial"), identificado con el roll 2024102050. No es un modelo de lenguaje ni un transformer: se trata de una red neuronal fully-connected con una unica capa oculta de 256 neuronas y activacion ReLU, que recibe imagenes de 32x32x3 aplanadas a un vector de 3072 dimensiones y produce 10 logits (una clase por cada categoria de CIFAR-10).
 
 El modelo resuelve un problema academico de clasificacion de imagenes de baja resolucion y su relevancia practica es limitada: sirve como referencia basica de entrenamiento con SGD, sin tecnicas de regularizacion ni constraints, y alcanza una precision de test del 49,96%, lejos del estado del arte en CIFAR-10 (que supera el 95% con redes convolucionales). No dispone de model card estandar, licencia declarada, idiomas ni pipeline definido, y el repositorio tiene un tamano de 0.0 GB, lo que sugiere que los pesos podrian no estar subidos o ser extremadamente pequenos.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Precision CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-mlp | 789.002 | 3072 (imagen aplanada) | 49,96% | no disponible | HuggingFace, repo 0.0 GB |
+| smai-a4-mlp | 789.002 | 3072 (imagen aplanada) | 49,96% | no disponible | Hugging Face, repo 0.0 GB |
 | MLP CIFAR-10 tipico (referencia academica) | ~1M | 3072 | ~50-55% | variable | no disponible |
 | ResNet-20 (referencia CIFAR-10) | ~0,27M | 32x32x3 | ~91-92% | variable | ampliamente disponible |
 | WideResNet-28-10 | ~36M | 32x32x3 | ~95-96% | variable | ampliamente disponible |
@@ -88,5 +88,5 @@ No se dispone de datos verificados de benchmarks comparativos en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anay345/smai-a4-mlp
+- Hugging Face: https://huggingface.co/anay345/smai-a4-mlp
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

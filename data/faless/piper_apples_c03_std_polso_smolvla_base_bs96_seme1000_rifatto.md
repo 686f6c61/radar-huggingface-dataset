@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SmolVLA fine-tuned) | 450M | no aplica | Picking de manzanas con Piper | no disponible | HuggingFace (27 descargas) |
-| Faless/smolvla_base_adapted | no disponible | no aplica | Base VLA adaptado | no disponible | HuggingFace |
-| SmolVLA base (HuggingFace) | ~450M (aprox., según paper) | no aplica | VLA generalista | no disponible en esta ficha | HuggingFace / LeRobot |
-| Otras políticas LeRobot (ACT, Diffusion Policy) | variable | no aplica | Imitación robótica | variable | HuggingFace / LeRobot |
+| Este modelo (SmolVLA fine-tuned) | 450M | no aplica | Picking de manzanas con Piper | no disponible | Hugging Face (27 descargas) |
+| Faless/smolvla_base_adapted | no disponible | no aplica | Base VLA adaptado | no disponible | Hugging Face |
+| SmolVLA base (Hugging Face) | ~450M (aprox., según paper) | no aplica | VLA generalista | no disponible en esta ficha | Hugging Face / LeRobot |
+| Otras políticas LeRobot (ACT, Diffusion Policy) | variable | no aplica | Imitación robótica | variable | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Faless/piper_apples_c03_std_polso_smolvla_base_bs96_seme1000_rifatto
+- Modelo en Hugging Face: https://huggingface.co/Faless/piper_apples_c03_std_polso_smolvla_base_bs96_seme1000_rifatto
 - Modelo base: https://huggingface.co/Faless/smolvla_base_adapted
 - Dataset de entrenamiento: https://huggingface.co/datasets/Faless/piper_apples_v7m_deposito_regolare_c03
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Faless/piper_apples_v7m_deposito_regolare_c03

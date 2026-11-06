@@ -110,7 +110,7 @@ La model card indica además que el índice 0.3 sobre la suite pública se midi�
 
 | Modelo | Parámetros | Contexto | Índice Jev texto | Índice de visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3-flash | 8,39B (0,46B visión) | No disponible | 59,0 | 66,9 | Apache-2.0 | Pesos en HuggingFace |
+| d3-flash | 8,39B (0,46B visión) | No disponible | 59,0 | 66,9 | Apache-2.0 | Pesos en Hugging Face |
 | Decision 2.0 (9B) | 9B (según la model card) | No disponible | 48,2 | No disponible | No disponible | Predecesor de la misma familia |
 | Bespoke Nimble 9B v3 | 9B (según la model card) | No disponible | 54,7 | No disponible | No disponible | No disponible |
 | Winnow-12B | 12B (según la model card) | No disponible | 49,3 | 58,8 | No disponible | No disponible |
@@ -134,7 +134,7 @@ La comparación se limita a los datos publicados en la model card; no hay inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/d3-flash
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-flash
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - vLLM (web oficial): https://vllm.ai/

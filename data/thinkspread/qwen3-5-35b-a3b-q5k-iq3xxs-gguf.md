@@ -101,7 +101,7 @@ Frente a modelos de otros autores de tamano o tarea comparable: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thinkspread/Qwen3.5-35B-A3B-Q5K-IQ3XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thinkspread/Qwen3.5-35B-A3B-Q5K-IQ3XXS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/main/LICENSE
 - Cuantizaciones de referencia (origen de los tensores de expertos): https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF

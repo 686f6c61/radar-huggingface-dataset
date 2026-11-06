@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LuminaV Optimizer (nombre de paquete `luminamoon`, especificación de algoritmo v1.5.5) es un **optimizador de entrenamiento en baja precisión** para redes neuronales profundas, no un modelo de lenguaje. Lo desarrolla el colectivo PROJECT LOOMY (Silver Moon / `@cloverxion` y Lumina Moon / `@cloverx-id`) y se publica en PyPI y HuggingFace bajo licencia Apache 2.0. Su objetivo es reducir el consumo de memoria y mejorar la estabilidad numérica al entrenar y ajustar transformers en `bfloat16` y `float16`, evitando la necesidad de mantener estados de optimizador en `float32`.
+LuminaV Optimizer (nombre de paquete `luminamoon`, especificación de algoritmo v1.5.5) es un **optimizador de entrenamiento en baja precisión** para redes neuronales profundas, no un modelo de lenguaje. Lo desarrolla el colectivo PROJECT LOOMY (Silver Moon / `@cloverxion` y Lumina Moon / `@cloverx-id`) y se publica en PyPI y Hugging Face bajo licencia Apache 2.0. Su objetivo es reducir el consumo de memoria y mejorar la estabilidad numérica al entrenar y ajustar transformers en `bfloat16` y `float16`, evitando la necesidad de mantener estados de optimizador en `float32`.
 
 El componente central es una familia de variantes de *lookahead momentum* convexo (CLM, de doble búfer, y TD-CLM, de búfer único con defecto triangular) con acotación racional de Padé [13/6] y redondeo estocástico sin estado basado en MurmurHash3 de 32 bits. La implementación combina rutas SIMD en Rust (AVX-512/AVX2, NEON), kernels Triton AOT/JIT y soporte de Vulkan UMA, con backend PyTorch para CUDA, ROCm y XPU.
 
@@ -79,7 +79,7 @@ No disponible. LuminaV es un optimizador, no un modelo de lenguaje, por lo que l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cloverx-id/LuminaV-Optimizer
+- Hugging Face: https://huggingface.co/cloverx-id/LuminaV-Optimizer
 - Repositorio GitHub: https://github.com/cloverx-id/luminamoon
 - Portal de documentación: https://cloverx-id.github.io/luminamoon/
 - Paquete PyPI: https://pypi.org/project/luminamoon/

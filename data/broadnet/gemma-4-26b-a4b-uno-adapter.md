@@ -111,7 +111,7 @@ No hay en la informacion disponible especificaciones de otros drafters comparabl
 | Perdida de calidad | Ninguna (rejection sampling) | no disponible | Ninguna |
 | Hardware de entrenamiento | Una RTX 3090 de 24 GB, 10.000 prompts | no disponible | no aplica |
 | Licencia | Apache 2.0 | no disponible | no aplica |
-| Disponibilidad | Adaptador publicado en HuggingFace y contenedor vLLM | no disponible | no aplica |
+| Disponibilidad | Adaptador publicado en Hugging Face y contenedor vLLM | no disponible | no aplica |
 
 Frente a la alternativa de no usar drafter, el adaptador ofrece la misma distribucion de salida con menos milisegundos por token, a cambio de depender de una pila de servicio concreta (Uno for vLLM v0.4.0) y de una revision fija del checkpoint cuantizado.
 
@@ -131,7 +131,7 @@ Frente a la alternativa de no usar drafter, el adaptador ofrece la misma distrib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Broadnet/gemma-4-26B-A4B-uno-adapter
+- Modelo en Hugging Face: https://huggingface.co/Broadnet/gemma-4-26B-A4B-uno-adapter
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Checkpoint AWQ 4-bit medido: https://huggingface.co/cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit
 - Codigo de servicio y contenedor (Uno for vLLM v0.4.0): https://github.com/brntech/vllm-uno/releases/tag/v0.4.0

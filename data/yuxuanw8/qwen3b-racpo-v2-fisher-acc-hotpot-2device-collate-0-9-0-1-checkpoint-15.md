@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-15` es un checkpoint de la familia Qwen de aproximadamente 3.086 millones de parámetros, publicado en HuggingFace por el usuario `yuxuanw8` con la librería `transformers` y pipeline declarado de `text-generation`. Los tags del repositorio incluyen `qwen2`, `safetensors`, `conversational` y `text-generation-inference`, mientras que la model card es la plantilla genérica autogenerada por HuggingFace y no contiene información sustantiva: no se declaran autoría real, datos de entrenamiento, licencia ni idiomas.
+El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-15` es un checkpoint de la familia Qwen de aproximadamente 3.086 millones de parámetros, publicado en Hugging Face por el usuario `yuxuanw8` con la librería `transformers` y pipeline declarado de `text-generation`. Los tags del repositorio incluyen `qwen2`, `safetensors`, `conversational` y `text-generation-inference`, mientras que la model card es la plantilla genérica autogenerada por Hugging Face y no contiene información sustantiva: no se declaran autoría real, datos de entrenamiento, licencia ni idiomas.
 
 Por la nomenclatura del identificador (`racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-15`) se trata, con alta probabilidad, de un checkpoint intermedio (el número 15) de un experimento de ajuste fino con aprendizaje por refuerzo sobre la tarea HotpotQA (preguntas multi-salto), con algún esquema de agregación tipo Fisher, ejecutado en configuración de dos dispositivos. Esta lectura es una inferencia a partir del nombre del repositorio y no está confirmada por ninguna documentación publicada por el autor.
 
@@ -25,7 +25,7 @@ Otros metadatos verificables: tamaño del repositorio 12,4 GB, fecha de creació
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna ni sobre el procedimiento de entrenamiento. La model card es la plantilla estándar de HuggingFace con todos los campos marcados como `[More Information Needed]`. Lo único que puede afirmarse con los datos disponibles es que el repositorio se etiqueta con `qwen2`, que el pipeline es `text-generation` y que el recuento de parámetros (3,086 B) coincide con la clase de ~3 B de la familia Qwen.
+No hay información publicada sobre la arquitectura interna ni sobre el procedimiento de entrenamiento. La model card es la plantilla estándar de Hugging Face con todos los campos marcados como `[More Information Needed]`. Lo único que puede afirmarse con los datos disponibles es que el repositorio se etiqueta con `qwen2`, que el pipeline es `text-generation` y que el recuento de parámetros (3,086 B) coincide con la clase de ~3 B de la familia Qwen.
 
 El nombre del repositorio sugiere un experimento de optimización por preferencias o por refuerzo (el segmento `racpo`), con variantes etiquetadas como `fisher` y `acc`, entrenado sobre el conjunto de datos HotpotQA (`hotpot`), con hipótesis de colación en dos dispositivos (`2device`, `collate`) y pesos `0.9-0.1`. El sufijo `checkpoint-15` indica que se trata de un estado intermedio de entrenamiento, no de un modelo final convergido. Ninguno de estos extremos está documentado por el autor: son deducciones del identificador.
 
@@ -38,7 +38,7 @@ No existe documentación de capacidades. Con los datos disponibles solo puede af
 - Generación de texto autoregresiva, según el pipeline `text-generation` declarado.
 - Uso conversacional, según el tag `conversational`.
 - Compatibilidad con el ecosistema `transformers` y con `text-generation-inference` (tags `transformers` y `text-generation-inference`).
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse a través de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), lo que sugiere que puede servirse a través de la infraestructura de Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible (aunque el nombre apunta a entrenamiento sobre HotpotQA, una tarea multi-salto, no hay evaluación que lo confirme).
 - Capacidades multilingües: no disponible.
@@ -71,7 +71,7 @@ Estimaciones calculadas a partir del recuento real de parámetros (3,086 B); no 
 - GPU recomendadas para fp32: A100 40 GB, H100, L40S. Una RTX 4090 (24 GB) es justa pero suficiente en fp32 sin lotes grandes.
 - GPU recomendadas para fp16/bf16: RTX 3090, RTX 4090, A10G, L4.
 - ¿Cabe en GPU de consumo? Sí: en fp16 cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090. En fp32 requiere 24 GB o más.
-- Opciones de despliegue: `transformers` (declarado), `text-generation-inference` (tag declarado) y HuggingFace Inference Endpoints (tag `endpoints_compatible`). vLLM es probablemente compatible al tratarse de arquitectura tipo Qwen2, pero no está confirmado por el autor. Ollama y llama.cpp requieren convertir los safetensors a GGUF; el repositorio no incluye archivos GGUF.
+- Opciones de despliegue: `transformers` (declarado), `text-generation-inference` (tag declarado) y Hugging Face Inference Endpoints (tag `endpoints_compatible`). vLLM es probablemente compatible al tratarse de arquitectura tipo Qwen2, pero no está confirmado por el autor. Ollama y llama.cpp requieren convertir los safetensors a GGUF; el repositorio no incluye archivos GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,10 +80,10 @@ Los datos de la columna "este modelo" proceden de la información del repositori
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3b-racpo-v2-... (este modelo) | 3,086 B | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-3B | ~3,09 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2 3B | ~3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, muy extendido |
-| Phi-3.5-mini | ~3,8 B | 128.000 tokens | MIT | HuggingFace, muy extendido |
+| qwen3b-racpo-v2-... (este modelo) | 3,086 B | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-3B | ~3,09 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2 3B | ~3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, muy extendido |
+| Phi-3.5-mini | ~3,8 B | 128.000 tokens | MIT | Hugging Face, muy extendido |
 
 No se dispone de resultados de benchmarks de este checkpoint, por lo que no es posible comparar rendimiento con las alternativas. La diferencia fundamental no es de arquitectura sino de madurez: los tres modelos alternativos tienen model card completa, licencia explícita y evaluaciones publicadas, mientras que este repositorio no ofrece ninguna de las tres cosas.
 
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks de este checkpoint, por lo que no es p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-15
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-15
 - Paper referenciado en los tags (`arxiv:1910.09700`, Lacoste et al. 2019, calculadora de impacto de ML citada en la plantilla): https://arxiv.org/abs/1910.09700
 - Repositorio, paper, demo o blog del autor: no disponibles.
 - La búsqueda web realizada no ha devuelto ningún enlace técnico relevante sobre este modelo; los resultados obtenidos no guardan relación con el repositorio y se han descartado.

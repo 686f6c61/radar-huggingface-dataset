@@ -78,9 +78,9 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ego4WAM-Joint | 13.456.608.092 | no disponible | apache-2.0 | HuggingFace (HorizonRobotics/Ego4WAM) | VLA con world model, MoT de 30 capas, flow matching |
-| Wan-AI/Wan2.2-TI2V-5B-Diffusers | ~5B | no disponible | no disponible | HuggingFace | Backbone de generación de vídeo del que deriva el Video DiT |
-| google/umt5-xxl | no disponible | no disponible | no disponible | HuggingFace | Encoder de texto multilingüe usado para el condicionamiento por lenguaje |
+| Ego4WAM-Joint | 13.456.608.092 | no disponible | apache-2.0 | Hugging Face (HorizonRobotics/Ego4WAM) | VLA con world model, MoT de 30 capas, flow matching |
+| Wan-AI/Wan2.2-TI2V-5B-Diffusers | ~5B | no disponible | no disponible | Hugging Face | Backbone de generación de vídeo del que deriva el Video DiT |
+| google/umt5-xxl | no disponible | no disponible | no disponible | Hugging Face | Encoder de texto multilingüe usado para el condicionamiento por lenguaje |
 
 Para alternativas de la misma categoría (por ejemplo otras políticas VLA con horizonte de acción comparable), no hay datos en la información disponible que permitan una comparación rigurosa.
 
@@ -98,7 +98,7 @@ Para alternativas de la misma categoría (por ejemplo otras políticas VLA con h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HorizonRobotics/Ego4WAM
+- Modelo en Hugging Face: https://huggingface.co/HorizonRobotics/Ego4WAM
 - Perfil de la organización: https://huggingface.co/HorizonRobotics
 - Paper EgoWAM en arXiv: https://arxiv.org/abs/2607.08436
 - Versión HTML del paper: https://arxiv.org/html/2607.08436v1

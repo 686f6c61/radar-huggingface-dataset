@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de los datos de parámetros, cont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fix-AI/Qwen3.5-9B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Fix-AI/Qwen3.5-9B-GGUF
 - GGUF original de referencia: https://huggingface.co/unsloth/Qwen3.5-9B-GGUF/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
@@ -102,4 +102,4 @@ No se dispone en la información proporcionada de los datos de parámetros, cont
 - Discord de Unsloth: https://discord.gg/unsloth
 - Qwen Chat: https://chat.qwen.ai
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

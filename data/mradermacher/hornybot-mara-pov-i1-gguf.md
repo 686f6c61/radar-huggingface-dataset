@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Hornybot-Mara-POV-i1-GGUF | 8,95B | no disponible | no disponible | GGUF en HuggingFace | Ajustado para roleplay adulto en ingles; 0 descargas y 0 likes en el momento de la consulta |
+| Hornybot-Mara-POV-i1-GGUF | 8,95B | no disponible | no disponible | GGUF en Hugging Face | Ajustado para roleplay adulto en ingles; 0 descargas y 0 likes en el momento de la consulta |
 | Qwen2.5-7B-Instruct | 7,6B | 128K | Apache 2.0 | safetensors, GGUF, multiples cuantizadores | Referencia generalista multilingue de tamano similar |
 | Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | safetensors, GGUF, Ollama | Buen rendimiento general y soporte de tool calling |
 | Mistral-7B-Instruct-v0.3 | 7,2B | 32K | Apache 2.0 | safetensors, GGUF | Alternativa ligera y permisiva para uso comercial |

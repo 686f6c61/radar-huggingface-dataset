@@ -104,8 +104,8 @@ La unica comparacion cuantitativa disponible en la informacion proporcionada es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuhaoYu1020/Uni-Sign-ASL718k-stage1-t5large
-- Perfil del autor en HuggingFace: https://huggingface.co/SuhaoYu1020
+- Modelo en Hugging Face: https://huggingface.co/SuhaoYu1020/Uni-Sign-ASL718k-stage1-t5large
+- Perfil del autor en Hugging Face: https://huggingface.co/SuhaoYu1020
 - Repositorio oficial de Uni-Sign (ICLR 2025): https://github.com/ZechengLi19/Uni-Sign
 - Pagina personal del autor: https://suhaoyu1020.github.io/
 - Perfil de GitHub del autor: https://github.com/SuhaoYu1020/

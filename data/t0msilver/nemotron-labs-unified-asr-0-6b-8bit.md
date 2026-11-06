@@ -94,7 +94,7 @@ En la prueba de dictado EN/FR a 320 ms, esta conversión obtiene un recall de t�
 
 ## Enlaces
 
-- [HuggingFace: T0mSIlver/nemotron-labs-unified-asr-0.6b-8bit](https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-8bit)
+- [Hugging Face: T0mSIlver/nemotron-labs-unified-asr-0.6b-8bit](https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-8bit)
 - [Modelo base: nvidia/nemotron-labs-unified-asr-0.6b](https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b)
 - [Versión bf16](https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-bf16)
 - [Versión 4-bit](https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-4bit)

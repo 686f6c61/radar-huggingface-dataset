@@ -85,7 +85,7 @@ La comparativa es orientativa: no hay datos de rendimiento de este ajuste que pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated-sr30k
+- Hugging Face: https://huggingface.co/open-sci/SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/SmolLM2-1.7B-16k-SFT-Tulu3-decontaminated
 - Familia SmolLM2 (Hugging Face): https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
 - Llama-factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory

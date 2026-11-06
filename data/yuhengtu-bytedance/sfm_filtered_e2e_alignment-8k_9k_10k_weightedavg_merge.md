@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_filtered_e2e_alignment-8k_9k_10k_weightedavg_merge` es una fusión de tres checkpoints de entrenamiento de un modelo de lenguaje no especificado, generada mediante la herramienta mergekit. El autor, yuhengtu-bytedance, ha combinado los pasos globales 8000, 9000 y 10000 de un proceso de alineación end-to-end filtrado (filtered_e2e_alignment), utilizando el método de fusión lineal (linear) con pesos 1, 2 y 3 respectivamente. El resultado es un modelo de 6.856.253.440 parámetros (~6,8 mil millones), que según las etiquetas de HuggingFace emplea una arquitectura basada en GPT-NeoX y está orientado a generación de texto conversacional.
+El modelo `sfm_filtered_e2e_alignment-8k_9k_10k_weightedavg_merge` es una fusión de tres checkpoints de entrenamiento de un modelo de lenguaje no especificado, generada mediante la herramienta mergekit. El autor, yuhengtu-bytedance, ha combinado los pasos globales 8000, 9000 y 10000 de un proceso de alineación end-to-end filtrado (filtered_e2e_alignment), utilizando el método de fusión lineal (linear) con pesos 1, 2 y 3 respectivamente. El resultado es un modelo de 6.856.253.440 parámetros (~6,8 mil millones), que según las etiquetas de Hugging Face emplea una arquitectura basada en GPT-NeoX y está orientado a generación de texto conversacional.
 
 La relevancia de este modelo radica en que ejemplifica una práctica habitual en la comunidad de IA open source: la fusión de checkpoints intermedios de un mismo entrenamiento para obtener un modelo final con características potencialmente mejoradas. Sin embargo, la documentación es extremadamente escasa: no se especifican la arquitectura exacta, el contexto, la licencia, los idiomas ni los datos de entrenamiento. Esto limita su uso directo en producción sin una evaluación previa exhaustiva.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables. Por el tamaño (~6,8B),
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_weightedavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_weightedavg_merge)
 - [Variante sin ponderación (mismo autor)](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge)
 - [Discusión de modelo similar (7k_8k_9k)](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-7k_8k_9k_merge/discussions)
 - [Discusión de modelo unfiltered (7k_8k_9k)](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-7k_8k_9k_merge/discussions)

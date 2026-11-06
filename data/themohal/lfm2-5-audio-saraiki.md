@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`themohal/lfm2.5-audio-saraiki` es un repositorio publicado en HuggingFace por el usuario `themohal` cuya model card practicamente no contiene informacion: unicamente declara licencia MIT. No se especifica pipeline, idiomas, arquitectura, numero de parametros ni datos de entrenamiento. A fecha de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado el 19 de septiembre de 2026, lo que indica una publicacion reciente y sin traccion conocida en la plataforma.
+`themohal/lfm2.5-audio-saraiki` es un repositorio publicado en Hugging Face por el usuario `themohal` cuya model card practicamente no contiene informacion: unicamente declara licencia MIT. No se especifica pipeline, idiomas, arquitectura, numero de parametros ni datos de entrenamiento. A fecha de la consulta acumula 0 descargas y 0 likes, y fue creado y actualizado el 19 de septiembre de 2026, lo que indica una publicacion reciente y sin traccion conocida en la plataforma.
 
 El identificador del repositorio sugiere, sin que exista confirmacion documental en la informacion disponible, una relacion con la familia LFM2.5-Audio de Liquid AI (modelos multimodales de audio) y un posible ajuste orientado al idioma saraiki. Ambas afirmaciones son inferencias basadas exclusivamente en el nombre del repositorio y no deben tomarse como hechos verificados: la model card no las respalda ni las desmiente.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha se limita a consignar los metadatos verificables (autor, l
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tags del repositorio | license:mit, region:us |
 | Autor | themohal |
 | Fecha de creacion | 2026-09-19 |
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa rigurosa sin conocer el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/themohal/lfm2.5-audio-saraiki
+- Repositorio en Hugging Face: https://huggingface.co/themohal/lfm2.5-audio-saraiki
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

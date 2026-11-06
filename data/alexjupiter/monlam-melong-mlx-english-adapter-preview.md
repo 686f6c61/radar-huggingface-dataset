@@ -72,9 +72,9 @@ Los prompts de las seis comprobaciones iniciales se usaron durante el desarrollo
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Monlam Melong MLX English Adapter (este) | Adaptador de 20,6 MB sobre base 9B | 8.192 tokens | MLX LoRA | no disponible | HuggingFace, 0 descargas |
-| TenzinGayche/Monlam_Melong_preview (base directo) | 9B (linaje Gemma 2) | no disponible | no disponible | no disponible | HuggingFace |
-| buddhist-nlp/gemma2-mitra-base (linaje) | 9B (Gemma 2) | no disponible | no disponible | términos de Gemma | HuggingFace |
+| Monlam Melong MLX English Adapter (este) | Adaptador de 20,6 MB sobre base 9B | 8.192 tokens | MLX LoRA | no disponible | Hugging Face, 0 descargas |
+| TenzinGayche/Monlam_Melong_preview (base directo) | 9B (linaje Gemma 2) | no disponible | no disponible | no disponible | Hugging Face |
+| buddhist-nlp/gemma2-mitra-base (linaje) | 9B (Gemma 2) | no disponible | no disponible | términos de Gemma | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes en la información proporcionada.
 
@@ -93,10 +93,10 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexJupiter/monlam-melong-mlx-english-adapter-preview
+- Hugging Face: https://huggingface.co/AlexJupiter/monlam-melong-mlx-english-adapter-preview
 - Modelo base directo: https://huggingface.co/TenzinGayche/Monlam_Melong_preview
 - Estado legal (referenciado en la model card): LEGAL_STATUS.md
 - Revisión de contenido (referenciada): evaluation/ASSISTANT_CONTENT_REVIEW.md
 - Casos de evaluación (referenciados): evaluation_cases.py, directorio evaluation/
 - Procedencia y huella del base (referenciados): provenance.json, base_fingerprint.json
-- Documentación de la CLI de HuggingFace: https://huggingface.co/docs/huggingface_hub/guides/cli
+- Documentación de la CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/guides/cli

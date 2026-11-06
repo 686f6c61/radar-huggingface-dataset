@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scottlowry/Ornith-1.5-35B-A3B-oQ5e-mtp | 35,95 mil millones (5 bits) | no disponible | MLX safetensors | no disponible | HuggingFace (0 descargas) |
-| ornith-ai/Ornith-1.5-35B-A3B (base) | 35,95 mil millones (precision original) | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| scottlowry/Ornith-1.5-35B-A3B-oQ5e-mtp | 35,95 mil millones (5 bits) | no disponible | MLX safetensors | no disponible | Hugging Face (0 descargas) |
+| ornith-ai/Ornith-1.5-35B-A3B (base) | 35,95 mil millones (precision original) | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Otros modelos MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes sobre modelos comparables de la misma categoria (misma arquitectura qwen3_5_moe, mismo rango de parametros y mismo destino MLX) para establecer una comparativa con cifras verificables.
@@ -87,6 +87,6 @@ No se dispone de datos suficientes sobre modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ5e-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

@@ -68,13 +68,13 @@ No se han publicado resultados de benchmarks externos (MMLU, HumanEval, GSM8K, e
 
 ## Comparativa con modelos similares
 
-Se han identificado otros checkpoints de la misma serie de experimentos en HuggingFace, aunque no se dispone de sus especificaciones detalladas:
+Se han identificado otros checkpoints de la misma serie de experimentos en Hugging Face, aunque no se dispone de sus especificaciones detalladas:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kdyck_dose_50Mpt_hfbody_adamwppt_100M_s0 (este) | No disponible | 2048 | Apache-2.0 | HuggingFace |
-| kdyck_dose_50Mpt_200M_s1_2026-08-14_23-16-34_777872-pt | No disponible | No disponible | No disponible | HuggingFace |
-| kdyck_dose_50Mpt_500M_s0_2026-08-14_23-25-05_820140-pt | No disponible | No disponible | No disponible | HuggingFace |
+| kdyck_dose_50Mpt_hfbody_adamwppt_100M_s0 (este) | No disponible | 2048 | Apache-2.0 | Hugging Face |
+| kdyck_dose_50Mpt_200M_s1_2026-08-14_23-16-34_777872-pt | No disponible | No disponible | No disponible | Hugging Face |
+| kdyck_dose_50Mpt_500M_s0_2026-08-14_23-25-05_820140-pt | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparación detallada no está disponible porque no se han publicado los datos técnicos de los modelos alternativos en la información proporcionada.
 
@@ -90,6 +90,6 @@ La comparación detallada no está disponible porque no se han publicado los dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_100M_s0_2026-09-06_20-19-51_747730-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfbody_adamwppt_100M_s0_2026-09-06_20-19-51_747730-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Registro de entrenamiento W&B: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/sxeouunf

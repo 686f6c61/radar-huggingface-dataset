@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thegadgetglare/QLM` es un repositorio publicado en HuggingFace por el usuario `thegadgetglare` con licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre "QLM" coincide con varias iniciativas externas (como el sistema de gestión de colas para LLMs del proyecto QLM en GitHub, o el modelo GLM de Z.ai), pero no existe evidencia de que este repositorio esté relacionado con ellas. A fecha de creación (agosto de 2026), el modelo registra cero descargas y cero likes, lo que sugiere que es un proyecto personal o experimental sin documentación pública.
+El modelo `thegadgetglare/QLM` es un repositorio publicado en Hugging Face por el usuario `thegadgetglare` con licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. El nombre "QLM" coincide con varias iniciativas externas (como el sistema de gestión de colas para LLMs del proyecto QLM en GitHub, o el modelo GLM de Z.ai), pero no existe evidencia de que este repositorio esté relacionado con ellas. A fecha de creación (agosto de 2026), el modelo registra cero descargas y cero likes, lo que sugiere que es un proyecto personal o experimental sin documentación pública.
 
 Dado que no se dispone de información sobre arquitectura, parámetros, contexto, capacidades o rendimiento, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias. No se debe asumir que el modelo funciona como un LLM convencional ni que tiene capacidades específicas sin verificación previa.
 
@@ -53,5 +53,5 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thegadgetglare/QLM
+- Repositorio en Hugging Face: https://huggingface.co/thegadgetglare/QLM
 - No se han encontrado otros enlaces oficiales (papers, blogs, repositorios de código) asociados a este modelo específico.

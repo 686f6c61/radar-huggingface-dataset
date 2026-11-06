@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo (PSNR, SSIM, FID) entre estas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AUXOUT-TEAM/agit-lama-inpainting
+- Modelo en Hugging Face: https://huggingface.co/AUXOUT-TEAM/agit-lama-inpainting
 - Modelo base (pesos): https://huggingface.co/smartywu/big-lama
 - Codigo original de LaMa: https://github.com/advimman/lama
 - Paper de LaMa: Suvorov, Logacheva, Mashikhin, Remizova, Ashukha, Silvestrov, Kong, Goka, Park, Lempitsky. *Resolution-robust Large Mask Inpainting with Fourier Convolutions*. WACV 2022 (no se proporciona URL directa en la informacion disponible)

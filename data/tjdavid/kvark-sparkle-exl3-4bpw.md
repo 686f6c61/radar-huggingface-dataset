@@ -85,11 +85,11 @@ La comparacion directa mas relevante es con su modelo base, Qwen3.8-27B, sobre e
 - El uso de decodificacion especulativa con el cabezal MTP requiere soporte del runtime; no todos los motores de inferencia lo aprovechan.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/tjdavid/kvark-sparkle-exl3-4bpw
+- Repositorio Hugging Face: https://huggingface.co/tjdavid/kvark-sparkle-exl3-4bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version FP8 para vLLM: https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B-FP8
 - Version GGUF para llama.cpp: https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B-GGUF
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Egzakta/KVARK-Sparkle-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Egzakta/KVARK-Sparkle-Demo
 - Dataset DeepMath-103K: https://huggingface.co/datasets/zwhe99/DeepMath-103K
 - Dataset IF_multi_constraints_upto5: https://huggingface.co/datasets/allenai/IF_multi_constraints_upto5
 - Dataset SuperGPQA: https://huggingface.co/datasets/m-a-p/SuperGPQA

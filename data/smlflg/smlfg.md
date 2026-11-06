@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio de HuggingFace `smlflg/smlfg`, publicado por el usuario `smlflg`, no contiene una ficha de modelo ni pesos de ningún tipo: el README es en realidad una página de perfil personal de GitHub de Samuel Fleig, estudiante de ingeniería de IA, en la que se presenta el proyecto Human-Agent Interface (HAI). No se declara arquitectura, número de parámetros, ventana de contexto, dataset de entrenamiento ni proceso de ajuste. Las únicas etiquetas del repositorio son `region:us`, con 0 descargas y 0 likes en el momento de la consulta, y no hay pipeline de inferencia definido.
+El repositorio de Hugging Face `smlflg/smlfg`, publicado por el usuario `smlflg`, no contiene una ficha de modelo ni pesos de ningún tipo: el README es en realidad una página de perfil personal de GitHub de Samuel Fleig, estudiante de ingeniería de IA, en la que se presenta el proyecto Human-Agent Interface (HAI). No se declara arquitectura, número de parámetros, ventana de contexto, dataset de entrenamiento ni proceso de ajuste. Las únicas etiquetas del repositorio son `region:us`, con 0 descargas y 0 likes en el momento de la consulta, y no hay pipeline de inferencia definido.
 
 El contenido del README describe un conjunto de principios de ingeniería y un diagrama de flujo de trabajo (intención humana, contexto y enrutado, memoria, trabajo de agente acotado, verificación y entrega, decisión del propietario) en torno a la orquestación de agentes con supervisión humana. Menciona áreas de trabajo como el enrutado de agentes con roles y recuperación, sistemas de conocimiento con recuperación de contexto consciente de la fuente, evaluación reproducible de prompts y herramientas, y herramientas de aprendizaje asistido. Ninguna de estas descripciones viene acompañada de artefactos de modelo, métricas o resultados reproducibles en la información disponible.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No disponible. Al no tratarse de un modelo con parámetros, contexto, licencia ni métricas declaradas, no existe una base objetiva de comparación con alternativas de la misma categoría. El repositorio es una página de perfil personal en HuggingFace, una categoría para la que no procede una comparativa de modelos.
+No disponible. Al no tratarse de un modelo con parámetros, contexto, licencia ni métricas declaradas, no existe una base objetiva de comparación con alternativas de la misma categoría. El repositorio es una página de perfil personal en Hugging Face, una categoría para la que no procede una comparativa de modelos.
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No disponible. Al no tratarse de un modelo con parámetros, contexto, licencia n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/smlfg
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/smlfg
 - Sitio del proyecto Human-Agent Interface: https://www.human-agent-interface.com
 - Repositorios públicos del autor: https://github.com/smlfg?tab=repositories
 - Contexto de agente referenciado en el README (ruta relativa dentro del repositorio): `./AGENTS.md`

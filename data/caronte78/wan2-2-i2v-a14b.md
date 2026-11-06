@@ -23,7 +23,7 @@ El modelo esta pensado para generacion de video con estetica cinematografica con
 | Tarea (pipeline) | image-to-video |
 | Resoluciones soportadas | 480P y 720P |
 | Tamano del repositorio | 126,2 GB |
-| Fecha de creacion / actualizacion | 28 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 28 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tarea | Parametros | Resoluciones | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Wan2.2-I2V-A14B (esta ficha, copia de Caronte78) | Image-to-video | 14 000 M activos (MoE); total no disponible | 480P, 720P | en, zh | Apache 2.0 | HuggingFace (copia), Diffusers, ComfyUI |
-| Wan2.2-TI2V-5B | Texto+imagen a video | 5 000 M | 720P a 24 fps | en, zh | Apache 2.0 | HuggingFace oficial, Diffusers, ComfyUI; ejecutable en RTX 4090 |
-| Wan2.2-T2V-A14B | Texto a video | 14 000 M activos (MoE); total no disponible | 480P, 720P | en, zh | Apache 2.0 | HuggingFace oficial, Diffusers, ComfyUI |
+| Wan2.2-I2V-A14B (esta ficha, copia de Caronte78) | Image-to-video | 14 000 M activos (MoE); total no disponible | 480P, 720P | en, zh | Apache 2.0 | Hugging Face (copia), Diffusers, ComfyUI |
+| Wan2.2-TI2V-5B | Texto+imagen a video | 5 000 M | 720P a 24 fps | en, zh | Apache 2.0 | Hugging Face oficial, Diffusers, ComfyUI; ejecutable en RTX 4090 |
+| Wan2.2-T2V-A14B | Texto a video | 14 000 M activos (MoE); total no disponible | 480P, 720P | en, zh | Apache 2.0 | Hugging Face oficial, Diffusers, ComfyUI |
 | Wan2.1-I2V-14B | Image-to-video | 14 000 M | no disponible en la informacion | en, zh | Apache 2.0 | Repositorio GitHub de Wan2.1 |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento cuantitativo entre estas variantes ni frente a modelos cerrados.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cuanti
 - Informe tecnico (arXiv): https://arxiv.org/abs/2503.20314
 - Sitio del proyecto: https://wan.video
 - Blog del proyecto: https://wan.video/welcome
-- Organizacion en HuggingFace: https://huggingface.co/Wan-AI/
+- Organizacion en Hugging Face: https://huggingface.co/Wan-AI/
 - ModelScope: https://modelscope.cn/organization/Wan-AI
 - Integracion en ComfyUI (EN): https://docs.comfy.org/tutorials/video/wan/wan2_2
 - Integracion en ComfyUI (CN): https://docs.comfy.org/zh-CN/tutorials/video/wan/wan2_2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lilsayox4b-v1 es un modelo de lenguaje conversacional publicado por el usuario 922-SY en HuggingFace. Se distribuye con licencia Apache 2.0 y pesos en formato safetensors y GGUF, lo que facilita tanto la inferencia con frameworks de alto rendimiento como su ejecución en entornos locales mediante llama.cpp u Ollama. El repositorio ocupa 20,6 GB y acumula 72 descargas en el momento de la consulta.
+Lilsayox4b-v1 es un modelo de lenguaje conversacional publicado por el usuario 922-SY en Hugging Face. Se distribuye con licencia Apache 2.0 y pesos en formato safetensors y GGUF, lo que facilita tanto la inferencia con frameworks de alto rendimiento como su ejecución en entornos locales mediante llama.cpp u Ollama. El repositorio ocupa 20,6 GB y acumula 72 descargas en el momento de la consulta.
 
 El dato técnico más fiable disponible es el recuento de parámetros extraído directamente de los tensores safetensors: 4.326.350.848 parámetros, es decir, aproximadamente 4,3 mil millones. Se trata, por tanto, de un modelo de escala media, adecuado para despliegue en GPU de consumo con cuantización. La model card es prácticamente inexistente: el autor la marca como "WIP" (en progreso) y advierte de que el modelo "puede ser un poco inestable".
 
@@ -30,7 +30,7 @@ Respecto al entrenamiento, la model card no aporta ningún dato: no se indica el
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está orientado a diálogo multi-turno, aunque no se detalla el formato de prompt ni las plantillas de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles; no se declara ningún idioma en los metadatos.
@@ -83,4 +83,4 @@ La comparativa se ofrece como referencia de categoría (modelos densos de 3-4 B 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/922-SY/Lilsayox4b-v1
+- Hugging Face: https://huggingface.co/922-SY/Lilsayox4b-v1

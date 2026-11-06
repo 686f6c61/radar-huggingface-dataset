@@ -83,7 +83,7 @@ No se dispone de datos verificados de otros modelos comparables en la informaci�
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-pipette-lora-bc-20260909 | No disponible (~6,34 GB de params; variantes `gemma_2b_lora` + `gemma_300m_lora`) | 200 tokens | Solo evaluación piloto de acciones, con valores no disponibles | No disponible | HuggingFace, 0 descargas, 0 likes |
+| pi05-pipette-lora-bc-20260909 | No disponible (~6,34 GB de params; variantes `gemma_2b_lora` + `gemma_300m_lora`) | 200 tokens | Solo evaluación piloto de acciones, con valores no disponibles | No disponible | Hugging Face, 0 descargas, 0 likes |
 | `gs://openpi-assets/checkpoints/pi05_base` (base oficial de OpenPI) | No disponible | No disponible | No disponible | No disponible | Referenciado como pesos base; revisión OpenPI `2d70d966582e711128ad8358d8dbf23d2cc3d658` |
 | Otros VLA de la misma categoría (por ejemplo π0, OpenVLA, GR00T N1) | No disponible | No disponible | No disponible | No disponible | No se aportan datos en la información proporcionada |
 
@@ -105,7 +105,7 @@ No se dispone de datos verificados de otros modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeertWang/pi05-pipette-lora-bc-20260909
+- Modelo en Hugging Face: https://huggingface.co/GeertWang/pi05-pipette-lora-bc-20260909
 - Repositorio VLA-Precision (commit de referencia `75eb56a35ca6e8c3ee0a0a3d41b99e88be469b81`): https://github.com/scy-v/VLA-Precision
 - Pesos base oficiales de π0.5: `gs://openpi-assets/checkpoints/pi05_base` (revisión OpenPI `2d70d966582e711128ad8358d8dbf23d2cc3d658`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/jren313/g1-pipette-3view-hgdagger-20260904 (revisión `e74439f3eb2257661145571571b2dfaa5592f734`)

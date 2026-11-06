@@ -89,8 +89,8 @@ Adicionalmente, la calibracion imatrix de este repositorio reporto una perplejid
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alphaZimuth/Hy-MT2-30B-A3B-Uncensored-Heretic-APEX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/alphaZimuth/Hy-MT2-30B-A3B-Uncensored-Heretic-APEX-GGUF
 - Modelo fuente: https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic
 - Modelo original: https://huggingface.co/tencent/Hy-MT2-30B-A3B
 - Version experimental previa: https://huggingface.co/alphaZimuth/Hy-MT2-30B-A3B-Uncensored-v1-APEX-GGUF
-- Autor de la cuantizacion en HuggingFace: https://huggingface.co/alphaZimuth
+- Autor de la cuantizacion en Hugging Face: https://huggingface.co/alphaZimuth

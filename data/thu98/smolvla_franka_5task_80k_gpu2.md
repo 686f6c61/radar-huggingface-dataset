@@ -76,13 +76,13 @@ Los datos comparativos cuantitativos (rendimiento, contexto, etc.) de OpenVLA y 
 - Solo se admiten instrucciones en inglés.
 - La pérdida de entrenamiento final (0.031) es una métrica de optimización y no debe interpretarse como tasa de éxito.
 - No se aplicó aumento de imágenes durante el entrenamiento, lo que puede limitar la robustez ante variaciones visuales.
-- El modelo no está configurado para inferencia a través de la API de HuggingFace (`inference: false`).
+- El modelo no está configurado para inferencia a través de la API de Hugging Face (`inference: false`).
 - Se recomienda validar las restricciones de seguridad y el éxito de las tareas en un entorno controlado antes del despliegue en robot real.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo es específico para las tareas y el hardware de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/THU98/smolvla_franka_5task_80k_gpu2
+- Modelo en Hugging Face: https://huggingface.co/THU98/smolvla_franka_5task_80k_gpu2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Documentación de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/smolvla
 - Repositorio de LeRobot: https://github.com/hugging

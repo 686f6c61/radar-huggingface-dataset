@@ -84,7 +84,7 @@ Advertencia: no se especifica el numero de benchmarks "criticos", ni sus nombres
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic | 26,9 B | No disponible | ARC-C 735 (8 bits) / 719 (4 bits) segun el autor | Apache 2.0 | GGUF y safetensors en HuggingFace |
+| Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic | 26,9 B | No disponible | ARC-C 735 (8 bits) / 719 (4 bits) segun el autor | Apache 2.0 | GGUF y safetensors en Hugging Face |
 | Qwen 3.8 27B (base de la familia) | 27 B aprox. | No disponible | Segun el autor, 144 puntos menos en ARC-C | No disponible en la informacion | No disponible en la informacion |
 | Qwen3.6-35B-A3B | 35 B totales (A3B, probablemente MoE) | No disponible | El autor afirma que este modelo lo supera en sus 7 benchmarks criticos | No disponible en la informacion | No disponible en la informacion |
 | Qwen 3.6 27B y Qwen 3.5 27B | 27 B aprox. | No disponible | El autor afirma que este modelo los supera en sus 7 benchmarks criticos | No disponible en la informacion | No disponible en la informacion |
@@ -107,7 +107,7 @@ Todas las comparaciones proceden de afirmaciones del autor de la model card. No 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dapinskiwomin/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic
+- Modelo en Hugging Face: https://huggingface.co/dapinskiwomin/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic
 - Modelo base declarado: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Referencia del metodo Fable Fusion 711 (autor original): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset citado: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

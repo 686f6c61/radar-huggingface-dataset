@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| not-lain/qwen3-0.6b-quotes-lora | no disponible (base ~0,6B) | no disponible | apache-2.0 | sin benchmarks publicados | HuggingFace, 0 descargas |
-| Qwen3-0.6B (modelo base) | ~0,6B | no disponible en la informacion proporcionada | apache-2.0 | benchmarks publicos en su ficha oficial | HuggingFace |
-| Adaptadores LoRA de generacion de citas sobre modelos pequenos (TinyLlama, Phi-3-mini, etc.) | no disponible | no disponible | variable segun autor | no disponible | HuggingFace |
+| not-lain/qwen3-0.6b-quotes-lora | no disponible (base ~0,6B) | no disponible | apache-2.0 | sin benchmarks publicados | Hugging Face, 0 descargas |
+| Qwen3-0.6B (modelo base) | ~0,6B | no disponible en la informacion proporcionada | apache-2.0 | benchmarks publicos en su ficha oficial | Hugging Face |
+| Adaptadores LoRA de generacion de citas sobre modelos pequenos (TinyLlama, Phi-3-mini, etc.) | no disponible | no disponible | variable segun autor | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de este ajuste ni de alternativas comparables dentro de la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La unica diferencia verificable frente al modelo base es la especializacion del adaptador.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento de este ajuste ni de alternativas comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/not-lain/qwen3-0.6b-quotes-lora
+- Modelo en Hugging Face: https://huggingface.co/not-lain/qwen3-0.6b-quotes-lora
 - Modelo base utilizado: https://huggingface.co/unsloth/qwen3-0.6b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (referencia del modelo base original): https://huggingface.co/Qwen/Qwen3-0.6B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`groot-blockpick-varied-timing-statenoise` es un ajuste fino (fine-tune) del modelo fundacional de robotica NVIDIA GR00T N1.7-3B, publicado por el usuario padiredd en HuggingFace. Se trata de un modelo vision-language-action (VLA) especializado en una unica tarea de manipulacion: recoger un bloque verde lima con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2 en el simulador Isaac Lab, partiendo de una pose inicial fija y con el bloque colocado de forma uniforme en una region del plano de trabajo.
+`groot-blockpick-varied-timing-statenoise` es un ajuste fino (fine-tune) del modelo fundacional de robotica NVIDIA GR00T N1.7-3B, publicado por el usuario padiredd en Hugging Face. Se trata de un modelo vision-language-action (VLA) especializado en una unica tarea de manipulacion: recoger un bloque verde lima con el brazo izquierdo del robot humanoide ROBOTIS FFW SG2 en el simulador Isaac Lab, partiendo de una pose inicial fija y con el bloque colocado de forma uniforme en una region del plano de trabajo.
 
 El modelo parte del backbone Cosmos-Reason2-2B (congelado) y entrena unicamente el proyector y la cabeza de accion de difusion, lo que supone 1,62 B de parametros entrenables sobre los 3 B totales. El ajuste se ha realizado sobre un conjunto de 500 demos con temporizacion variable por episodio (83.472 fotogramas, 3 camaras a 240x240) e incluye ruido gaussiano de 1 grado sobre las articulaciones del brazo izquierdo y un dropout de estado de 0,2 para mejorar la robustez frente a perturbaciones en la observacion.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groot-blockpick-varied-timing-statenoise | 3 B (1,62 B entrenables) | no disponible | Pick top-down de bloque en Isaac Lab | other | HuggingFace, 0 descargas |
-| nvidia/GR00T-N1.7-3B (base) | 3 B | no disponible | VLA fundacional generalista | no disponible en la informacion | HuggingFace (NVIDIA) |
-| padiredd/dp-blockpick-* | no disponible | no disponible | Pick de bloque (diffusion policy) | no disponible | HuggingFace (mismo autor) |
+| groot-blockpick-varied-timing-statenoise | 3 B (1,62 B entrenables) | no disponible | Pick top-down de bloque en Isaac Lab | other | Hugging Face, 0 descargas |
+| nvidia/GR00T-N1.7-3B (base) | 3 B | no disponible | VLA fundacional generalista | no disponible en la informacion | Hugging Face (NVIDIA) |
+| padiredd/dp-blockpick-* | no disponible | no disponible | Pick de bloque (diffusion policy) | no disponible | Hugging Face (mismo autor) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/groot-blockpick-varied-timing-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/groot-blockpick-varied-timing-statenoise
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Fork de Isaac-GR00T usado: https://github.com/omkarpatil18/Isaac-GR00T-n1.7 (commit e81d02b)
 - Politicas de difusion del mismo autor (referencia de evaluacion): https://huggingface.co/padiredd/dp-blockpick-*

@@ -53,4 +53,4 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ameliabrown/paper_023247625_video_understanding
+- Repositorio de Hugging Face: https://huggingface.co/ameliabrown/paper_023247625_video_understanding

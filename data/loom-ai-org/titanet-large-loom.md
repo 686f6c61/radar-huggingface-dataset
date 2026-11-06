@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/titanet-large-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/titanet-large-loom
 - Modelo base original: https://huggingface.co/nvidia/speakerverification_en_titanet_large
 - Repositorio de loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Repositorio de loom-exporter: https://github.com/loom-ai-org/loom-exporter

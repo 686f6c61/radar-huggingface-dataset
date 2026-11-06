@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/my-app-s/Wan2.2-I2V-A14B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/my-app-s/Wan2.2-I2V-A14B-GGUF
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Nodo ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF
 - Perfil del autor del nodo: https://huggingface.co/city96

@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fibonacciai/laya-persian
+- Modelo en Hugging Face: https://huggingface.co/fibonacciai/laya-persian
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Proyecto Laya (reproduccion abierta de Jev): https://github.com/NandhaKishorM/laya
 - Compilador ggmlc: https://github.com/monatis/ggmlc
@@ -97,4 +97,4 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Familia Laya de decisiones tipadas: https://huggingface.co/mys/laya-typed-decisions-GGUF
 - Organizacion del autor: https://huggingface.co/fibonacciai
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

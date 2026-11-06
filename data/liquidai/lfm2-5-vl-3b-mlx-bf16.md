@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de vision-le
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-MLX-bf16
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
 - Documentacion oficial: https://docs.liquid.ai/lfm/models/lfm25-vl-3b

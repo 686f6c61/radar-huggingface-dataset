@@ -97,10 +97,10 @@ No se han publicado resultados de MMLU, HumanEval ni GSM8K en la informacion dis
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | pass@1 en DeepMath (1.000 problemas) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este adaptador (gen270) | 7B + LoRA | Adaptador PEFT sobre DPO | No disponible | No disponible | 0.7155 | HuggingFace, 0 descargas |
-| aestudio/...-GRPO-math-lora (gen150) | 7B + LoRA | Adaptador PEFT sobre DPO | No disponible | No disponible | 0.660 | HuggingFace |
-| allenai/Olmo-3-7B-Instruct-DPO | 7B | Modelo completo DPO | No disponible | No disponible | 0.4850 | HuggingFace |
-| allenai/Olmo-3-7B-Instruct (RLVR) | 7B | Modelo completo con RLVR | No disponible | No disponible | 0.7087 | HuggingFace |
+| Este adaptador (gen270) | 7B + LoRA | Adaptador PEFT sobre DPO | No disponible | No disponible | 0.7155 | Hugging Face, 0 descargas |
+| aestudio/...-GRPO-math-lora (gen150) | 7B + LoRA | Adaptador PEFT sobre DPO | No disponible | No disponible | 0.660 | Hugging Face |
+| allenai/Olmo-3-7B-Instruct-DPO | 7B | Modelo completo DPO | No disponible | No disponible | 0.4850 | Hugging Face |
+| allenai/Olmo-3-7B-Instruct (RLVR) | 7B | Modelo completo con RLVR | No disponible | No disponible | 0.7087 | Hugging Face |
 
 Los cuatro comparten el mismo modelo base de 7B y el mismo conjunto de evaluacion, por lo que la comparacion es estrictamente emparejada. No se dispone de datos de licencia, contexto ni idiomas de ninguno de ellos en la informacion proporcionada, ni de comparaciones con modelos matematicos de otros fabricantes.
 

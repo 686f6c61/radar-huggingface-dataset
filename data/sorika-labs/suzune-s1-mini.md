@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Idioma | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Suzune S1 Mini | 40,2M | en | TTS flow-matching causal on-device | Apache 2.0 | HuggingFace, PyPI |
-| gradium/phonon-31m-en | 31M (aprox.) | en | TTS base del que deriva Suzune | Apache 2.0 | HuggingFace |
+| Suzune S1 Mini | 40,2M | en | TTS flow-matching causal on-device | Apache 2.0 | Hugging Face, PyPI |
+| gradium/phonon-31m-en | 31M (aprox.) | en | TTS base del que deriva Suzune | Apache 2.0 | Hugging Face |
 | Alternativas TTS de gran tamano (p. ej. modelos neuronales de cientos de millones a miles de millones de parametros) | no disponible | multiidioma en muchos casos | TTS neuronal de alta calidad, tipicamente GPU | variable | variable |
 
 La comparacion con modelos TTS de gran escala no puede cuantificarse con los datos disponibles: no se han publicado metricas comparativas (MOS, WER, latencia) en la informacion proporcionada. La diferencia mas clara frente a la familia de modelos TTS de gran tamano es el objetivo de despliegue: Suzune S1 Mini prioriza CPU y latencia minima, mientras que aquellos priorizan calidad maxima con requisitos de GPU.
@@ -76,14 +76,14 @@ La comparacion con modelos TTS de gran escala no puede cuantificarse con los dat
 - No se documentan sesgos de voz, acento o genero mas alla de los seis perfiles integrados; los perfiles disponibles son un conjunto cerrado y no se indica si admite clonacion de voz o voces personalizadas.
 - No se detalla el dataset de entrenamiento ni los procesos de filtrado, por lo que no puede evaluarse el riesgo de artefactos, pronunciacion incorrecta o alucinacion de audio.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo deriva de `gradium/phonon-31m-en`, tambien Apache 2.0, por lo que conviene conservar la atribucion correspondiente.
-- El modelo requiere la libreria `suzune` o `suzune-mini` y codigo personalizado (`custom_code`); no es compatible directamente con runners genericos de HuggingFace Transformers sin ese soporte.
-- `inference: false` aparece en la model card, lo que implica que la inferencia no esta habilitada en el widget de HuggingFace y debe realizarse mediante el SDK local.
+- El modelo requiere la libreria `suzune` o `suzune-mini` y codigo personalizado (`custom_code`); no es compatible directamente con runners genericos de Hugging Face Transformers sin ese soporte.
+- `inference: false` aparece en la model card, lo que implica que la inferencia no esta habilitada en el widget de Hugging Face y debe realizarse mediante el SDK local.
 - No se especifican requisitos de contexto de texto ni limites de longitud de entrada; conviene validar el comportamiento con frases largas antes de usarlo en produccion.
 - El modelo es muy reciente (creado en octubre de 2026) y cuenta con 12 descargas y 0 likes, por lo que la validacion comunitaria es practicamente inexistente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sorika-labs/suzune-s1-mini
+- Modelo en Hugging Face: https://huggingface.co/sorika-labs/suzune-s1-mini
 - Modelo base: https://huggingface.co/gradium/phonon-31m-en
 - Paquete PyPI `suzune-mini`: https://pypi.org/project/suzune-mini/
 - Framework unificado `suzune` en PyPI: https://pypi.org/project/suzune/

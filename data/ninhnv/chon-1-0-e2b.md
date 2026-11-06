@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chon-1.0-E2B es un modelo de decisión tipada (typed-decision) publicado por el usuario ninhnv en HuggingFace. No es un modelo generativo al uso: dado un estado (texto, JSON o una conversación) y una pregunta con un conjunto cerrado de opciones, devuelve una probabilidad calibrada para cada opción. Soporta tres tipos de pregunta: choice (elegir entre 2 y 16 opciones etiquetadas), yes/no (probabilidad de "sí") y score (distribución sobre niveles ordenados).
+Chon-1.0-E2B es un modelo de decisión tipada (typed-decision) publicado por el usuario ninhnv en Hugging Face. No es un modelo generativo al uso: dado un estado (texto, JSON o una conversación) y una pregunta con un conjunto cerrado de opciones, devuelve una probabilidad calibrada para cada opción. Soporta tres tipos de pregunta: choice (elegir entre 2 y 16 opciones etiquetadas), yes/no (probabilidad de "sí") y score (distribución sobre niveles ordenados).
 
 Técnicamente es un adaptador LoRA de aproximadamente 387 MB montado sobre google/gemma-4-E2B-it (Gemma 4 E2B, unos 2.000 millones de parámetros efectivos), que se carga sin modificar junto al adaptador. Sirve el formato de cable `/v1/systemone` de TypeSafe, el que consume JevBench. Cada decisión se resuelve en una única pasada forward, por lo que el modelo no genera tokens de salida (`output_tokens` siempre es 0).
 
@@ -91,8 +91,8 @@ No se documentan en la información disponible modelos comparables de decisión 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ninhnv/chon-1.0-e2b | Adaptador LoRA de ~387 MB sobre un modelo de ~2.000 millones de parametros efectivos | 8.192 tokens de prompt / 6.000 tokens de estado | Decision tipada calibrada (choice, yes/no, score) | Apache-2.0 | HuggingFace |
-| google/gemma-4-E2B-it | ~2.000 millones de parametros efectivos (segun la model card) | No disponible | LLM generalista con instruction tuning | Apache-2.0 | HuggingFace |
+| ninhnv/chon-1.0-e2b | Adaptador LoRA de ~387 MB sobre un modelo de ~2.000 millones de parametros efectivos | 8.192 tokens de prompt / 6.000 tokens de estado | Decision tipada calibrada (choice, yes/no, score) | Apache-2.0 | Hugging Face |
+| google/gemma-4-E2B-it | ~2.000 millones de parametros efectivos (segun la model card) | No disponible | LLM generalista con instruction tuning | Apache-2.0 | Hugging Face |
 | Otras alternativas (clasificadores calibrados, LLM con salida estructurada) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -111,7 +111,7 @@ No se documentan en la información disponible modelos comparables de decisión 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ninhnv/chon-1.0-e2b
+- Modelo en Hugging Face: https://huggingface.co/ninhnv/chon-1.0-e2b
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio del servidor `chon`: https://github.com/xoai/chon
 - Los resultados de la búsqueda web realizada no contienen enlaces relacionados con este modelo; todos apuntan a titulaciones universitarias de frigorista y se han descartado por no ser relevantes.

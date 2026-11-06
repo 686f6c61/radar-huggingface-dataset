@@ -80,8 +80,8 @@ No se publican en la informacion disponible los valores del modelo base sin comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento de seguridad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove60_swapdisc_b001 | 6,74 B declarados en safetensors; fraccion densa 0,3999 segun la model card | 4096 tokens (heredado del base) | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes | ASR 0,3596 (AdvBench) y 0,3195 (StrongREJECT); sobre-rechazo 0,0721 |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Llama 2 Community License | Ampliamente disponible en HuggingFace | No disponible en la informacion proporcionada (el autor no incluye la linea base) |
+| svd-safety-l2_remove60_swapdisc_b001 | 6,74 B declarados en safetensors; fraccion densa 0,3999 segun la model card | 4096 tokens (heredado del base) | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes | ASR 0,3596 (AdvBench) y 0,3195 (StrongREJECT); sobre-rechazo 0,0721 |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4096 tokens | Llama 2 Community License | Ampliamente disponible en Hugging Face | No disponible en la informacion proporcionada (el autor no incluye la linea base) |
 | Otras celdas de la rejilla del mismo autor | No disponible | 4096 tokens | Llama 2 Community License | No disponible en la busqueda realizada | No disponible |
 
 No se dispone de datos publicados en la informacion proporcionada para comparar con alternativas de compresion como poda estructurada, cuantizacion o destilacion, ni con modelos del mismo tamano de otros fabricantes. La comparativa cuantitativa queda por tanto limitada al modelo base, cuyo rendimiento no se reporta en esta model card.
@@ -102,7 +102,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapdisc_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove60_swapdisc_b001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper de SVD-LLM ni a recursos asociados; los resultados devueltos correspondian a widgets de cuestionarios sin relacion con el checkpoint. No se dispone por tanto de enlaces a papers, blogs, repositorios de codigo o demos en la informacion proporcionada.

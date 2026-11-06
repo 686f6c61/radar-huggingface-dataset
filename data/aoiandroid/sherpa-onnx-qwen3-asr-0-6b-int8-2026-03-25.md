@@ -73,8 +73,8 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25 | ~0,6B (segun nombre) | No disponible | Apache-2.0 | HuggingFace (espejo) | No disponible |
-| Alternativas ASR ONNX de sherpa-onnx (Whisper, Zipformer, Paraformer) | No disponible | No disponible | No disponible | HuggingFace / k2-fsa | No disponible |
+| sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25 | ~0,6B (segun nombre) | No disponible | Apache-2.0 | Hugging Face (espejo) | No disponible |
+| Alternativas ASR ONNX de sherpa-onnx (Whisper, Zipformer, Paraformer) | No disponible | No disponible | No disponible | Hugging Face / k2-fsa | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/aoiandroid/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25
+- Espejo en Hugging Face: https://huggingface.co/aoiandroid/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25
 - Repositorio de origen: https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25
 - Árbol del commit de origen: https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25/tree/68818b2313fe77bd06f6a7c5068ff3ef59d02b8a
 - Fichero `encoder.int8.onnx` en el origen: https://huggingface.co/csukuangfj2/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25/blob/main/encoder.int8.onnx

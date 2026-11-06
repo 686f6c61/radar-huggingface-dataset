@@ -4,7 +4,7 @@
 
 AMD-OLMo-1B-SFT-DPO_rai_1.9.0_m_1.0.1_npu es una versión optimizada del modelo AMD-OLMo 1B (basado en OLMo de Allen AI) adaptada por AMD para ejecutarse en la NPU (Neural Processing Unit) de los procesadores Ryzen AI. Se trata de un modelo de generación de texto conversacional con 1.000 millones de parámetros, alineado mediante SFT (supervised fine-tuning) y DPO (Direct Preference Optimization). La variante "m_1.0.1_npu" indica que los pesos se distribuyen en formato ONNX cuantizado para el flujo de trabajo de Ryzen AI Software (versión Rai 1.9.0).
 
-Su relevancia radica en permitir inferencia de LLMs totalmente local y con bajo consumo en portátiles con NPU, sin depender de GPU dedicada ni de la nube. Es un modelo pequeño, monolingüe en inglés, pensado como punto de partida para asistentes locales y prototipado en hardware AMD. El acceso al repositorio está restringido (gated): requiere aceptar las condiciones de uso en HuggingFace antes de descargarlo.
+Su relevancia radica en permitir inferencia de LLMs totalmente local y con bajo consumo en portátiles con NPU, sin depender de GPU dedicada ni de la nube. Es un modelo pequeño, monolingüe en inglés, pensado como punto de partida para asistentes locales y prototipado en hardware AMD. El acceso al repositorio está restringido (gated): requiere aceptar las condiciones de uso en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -71,12 +71,12 @@ Frente a OLMo 1B original, esta variante añade alineacion SFT+DPO y optimizacio
 - Monolingüe en ingles: no es adecuado para tareas en castellano ni otros idiomas.
 - Con ~1B de parametros, sus capacidades de razonamiento, matematicas y generacion de codigo son limitadas; puede alucinar con frecuencia en preguntas factualies.
 - No hay informacion publicada sobre longitud de contexto, lo que dificulta planificar aplicaciones con documentos largos o conversaciones multi-turno extensas.
-- El acceso al repositorio es gated: hay que aceptar las condiciones en HuggingFace y la descarga esta vinculada a la cuenta.
+- El acceso al repositorio es gated: hay que aceptar las condiciones en Hugging Face y la descarga esta vinculada a la cuenta.
 - El formato ONNX para NPU limita el despliegue a hardware y software compatibles (Ryzen AI); no es directamente usable en llama.cpp, vLLM u Ollama sin conversion adicional.
 - Sin benchmarks publicados: conviene evaluar calidad y latencia en el caso de uso concreto antes de llevar a produccion.
 - La licencia Apache-2.0 permite uso comercial, pero deben respetarse las condiciones de acceso del repositorio gated.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/amd/AMD-OLMo-1B-SFT-DPO_rai_1.9.0_m_1.0.1_npu
+- Ficha en Hugging Face: https://huggingface.co/amd/AMD-OLMo-1B-SFT-DPO_rai_1.9.0_m_1.0.1_npu
 - No se han encontrado enlaces adicionales (paper, blog o repositorio) en la informacion disponible.

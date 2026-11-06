@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Esposito33/vit-generation-finetune es un repositorio de HuggingFace publicado por el usuario Esposito33 que contiene una implementacion propia y minima de un Vision Transformer (ViT) orientada a tareas de generacion, etiquetada internamente como variante "tiny". No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para produccion: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y que no se presenta como checkpoint evaluado en ningun benchmark.
+Esposito33/vit-generation-finetune es un repositorio de Hugging Face publicado por el usuario Esposito33 que contiene una implementacion propia y minima de un Vision Transformer (ViT) orientada a tareas de generacion, etiquetada internamente como variante "tiny". No se trata de un modelo entrenado ni de un lanzamiento con pesos listos para produccion: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y que no se presenta como checkpoint evaluado en ningun benchmark.
 
 El dato objetivo disponible es el recuento de parametros de los tensores: 33.088 parametros totales, una cifra muy inferior a la de cualquier ViT-tiny convencional (del orden de millones), lo que sugiere una configuracion reducida de pruebas mas que una arquitectura completa. El repositorio incluye `main.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como inicializacion. El tamano del repositorio figura como 0,0 GB, coherente con un peso de decenas de miles de parametros.
 
@@ -25,7 +25,7 @@ Su relevancia es, por tanto, la de una plantilla reproducible para montar experi
 | Escala declarada | "tiny" (segun la model card) |
 | Tamano del repositorio | 0,0 GB |
 | Descargas y likes | 0 descargas, 0 likes |
-| Fecha de creacion / actualizacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 2026-09-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ La comparacion con transformadores de vision entrenados no es significativa, por
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Esposito33/vit-generation-finetune | 33.088 | no disponible | Sin benchmark (no entrenado) | MIT | HuggingFace, 0 descargas |
+| Esposito33/vit-generation-finetune | 33.088 | no disponible | Sin benchmark (no entrenado) | MIT | Hugging Face, 0 descargas |
 | ViT-tiny (implementaciones tipo timm) | ~5,7 M (aprox.) | Imagen 224x224, parches 16x16 | Resultados publicos en ImageNet-1k | Apache-2.0 o similar segun implementacion | Ampliamente disponible |
 | DeiT-tiny | ~5,7 M (aprox.) | Imagen 224x224, parches 16x16 | Resultados publicos en ImageNet-1k | Apache-2.0 | Ampliamente disponible |
 | DINOv2-small | ~22 M (aprox.) | Imagen 224x224, parches 14x14 | Resultados publicos en multiples tareas | Apache-2.0 | Ampliamente disponible |
@@ -95,7 +95,7 @@ Conclusion: con 33.088 parametros y sin entrenamiento, este repositorio no es co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Esposito33/vit-generation-finetune
+- Repositorio en Hugging Face: https://huggingface.co/Esposito33/vit-generation-finetune
 - Archivos declarados en la model card: `main.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog o demo asociados: no disponibles en la informacion proporcionada
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre este modelo; los resultados devueltos pertenecian a un sitio de comercio minorista sin relacion con el repositorio

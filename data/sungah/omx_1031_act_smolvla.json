@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Sungah/omx_1031_act_smolvla",
+  "slug": "sungah-omx_1031_act_smolvla",
+  "author": "Sungah",
+  "url": "https://huggingface.co/Sungah/omx_1031_act_smolvla",
+  "created_at": "2026-11-02T07:34:47.000Z",
+  "updated_at": "2026-11-03T02:05:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "smolvla",
+    "omx",
+    "robotics",
+    "depth",
+    "moge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14282257733,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sungah/omx_1031_act_smolvla · Hugging Face",
+      "url": "https://huggingface.co/Sungah/omx_1031_act_smolvla",
+      "snippet": "Sungah / omx_1031_act_smolvla Like 0 Robotics LeRobot Safetensors act smolvla omx depth moge License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "lerobot/smolvla_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/smolvla_base",
+      "snippet": "SmolVLA is a compact, efficient Vision-Language-Action (VLA) model designed for affordable robotics, trainable on a single GPU and deployable on consumer hardware, while matching the performance of much larger VLAs through community-driven data. Original paper: (SmolVLA: A Vision-Language-Action ..."
+    }
+  ]
+}

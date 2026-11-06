@@ -78,9 +78,9 @@ Kokoro destaca por su licencia permisiva y por estar optimizado para ejecucion e
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo ExecuTorch](https://huggingface.co/mlboydaisuke/Kokoro-82M-ExecuTorch)
-- [Repositorio HuggingFace del modelo base Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)
-- [Repositorio HuggingFace de Kokoro-82M-CoreAI](https://huggingface.co/mlboydaisuke/Kokoro-82M-CoreAI)
+- [Repositorio Hugging Face del modelo ExecuTorch](https://huggingface.co/mlboydaisuke/Kokoro-82M-ExecuTorch)
+- [Repositorio Hugging Face del modelo base Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)
+- [Repositorio Hugging Face de Kokoro-82M-CoreAI](https://huggingface.co/mlboydaisuke/Kokoro-82M-CoreAI)
 - [GitHub - captivus/Kokoro-82M](https://github.com/captivus/Kokoro-82M)
 - [CoreAI Model Zoo - Kokoro-82M](https://github.com/john-rocky/coreai-model-zoo/tree/main/models/kokoro-82m)
 - [OpenVox AI - Kokoro-82M](https://openvoxai.com/models/kokoro-82m)

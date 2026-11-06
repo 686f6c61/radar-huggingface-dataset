@@ -126,7 +126,7 @@ La diferencia frente a los originales es de formato y de runtime, no de capacida
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/baker76/pdftool-models
+- Repositorio en Hugging Face: https://huggingface.co/baker76/pdftool-models
 - Modelo base del OCR: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Modelo base de traducción: https://huggingface.co/Helsinki-NLP/opus-mt-es-en
 - Repositorio de pdftool con los scripts de exportación (`tools/export/`): URL no disponible en la información proporcionada

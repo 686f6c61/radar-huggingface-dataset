@@ -23,7 +23,7 @@ El repositorio incluye pesos exportados en formato ONNX, el código base en PyTo
 | Entrada | Nubes de puntos 3D |
 | Salida | Etiquetas de clase / segmentación por punto |
 | Dataset de entrenamiento | ShapeNet, subconjunto "airplane" |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de benchmarks adici
 
 | Modelo | Tipo | Dataset | Métrica publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PointNet++ (este repo) | Nubes de puntos 3D | ShapeNet airplane | Accuracy 0,9322 | MIT | HuggingFace (ONNX + PyTorch) |
+| PointNet++ (este repo) | Nubes de puntos 3D | ShapeNet airplane | Accuracy 0,9322 | MIT | Hugging Face (ONNX + PyTorch) |
 | PointNet (Qi et al., 2017) | Nubes de puntos 3D | ShapeNet | no disponible en esta ficha | no disponible | Repositorio original de los autores |
 | DGCNN (Wang et al., 2019) | Nubes de puntos 3D | ShapeNet | no disponible en esta ficha | no disponible | Repositorio original de los autores |
 | Point Transformer (Zhao et al., 2021) | Nubes de puntos 3D | ShapeNet | no disponible en esta ficha | no disponible | Repositorio original de los autores |
@@ -87,12 +87,12 @@ No se dispone de datos comparativos numéricos en la información proporcionada 
 - No hay información sobre sesgos del dataset ShapeNet (posibles desequilibrios de clases, sesgos geométricos o de origen de los modelos 3D).
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de clasificación errónea en nubes de puntos fuera de la distribución de entrenamiento.
 - Licencia MIT: permite uso comercial y modificación, pero se recomienda citar el trabajo original de PointNet++ (Qi et al., 2017) y verificar la licencia del dataset ShapeNet para usos derivados.
-- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0,0 GB según HuggingFace, lo que puede indicar que los pesos no están efectivamente alojados o que el repositorio está vacío; conviene verificar la disponibilidad real de los archivos antes de usarlo en producción.
+- El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0,0 GB según Hugging Face, lo que puede indicar que los pesos no están efectivamente alojados o que el repositorio está vacío; conviene verificar la disponibilidad real de los archivos antes de usarlo en producción.
 - No se proporcionan instrucciones de uso, ejemplos de inferencia ni requisitos de preprocesado en la model card, lo que incrementa el coste de integración.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SDoyez/PointNetPlusPlus_ShapeNet
+- Repositorio en Hugging Face: https://huggingface.co/SDoyez/PointNetPlusPlus_ShapeNet
 - Framework OpenMLCore (GitHub): https://github.com/sebastien-doyez2812/OpenML-core
 - Paper original de PointNet++ (Qi et al., 2017): no disponible en la información proporcionada (referencia habitual: arXiv:1706.02413)
 - Dataset ShapeNet: no disponible en la información proporcionada (referencia habitual: https://shapenet.org)

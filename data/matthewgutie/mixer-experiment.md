@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matthewgutie/mixer-experiment` es un repositorio experimental publicado en HuggingFace por el usuario matthewgutie que contiene una implementación mínima de una arquitectura tipo **Mixer** orientada a tareas de **matching**. No se trata de un modelo entrenado ni de un release con pesos funcionales, sino de un esqueleto reproducible: incluye el código del modelo (`model.py`), una configuración de arquitectura generada (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo.
+`matthewgutie/mixer-experiment` es un repositorio experimental publicado en Hugging Face por el usuario matthewgutie que contiene una implementación mínima de una arquitectura tipo **Mixer** orientada a tareas de **matching**. No se trata de un modelo entrenado ni de un release con pesos funcionales, sino de un esqueleto reproducible: incluye el código del modelo (`model.py`), una configuración de arquitectura generada (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo.
 
 El modelo es de escala "tiny" y cuenta con 49.600 parámetros totales según los metadatos de safetensors, lo que lo sitúa en el rango de los juguetes experimentales, muy lejos de cualquier LLM utilizable en producción. La arquitectura declarada combina atención dilatada, fusión de bajo rango, activación swish y normalización por instancias, lo que sugiere un diseño híbrido orientado a secuencias y emparejamiento más que a generación de lenguaje.
 
@@ -74,4 +74,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matthewgutie/mixer-experiment
+- Repositorio Hugging Face: https://huggingface.co/matthewgutie/mixer-experiment

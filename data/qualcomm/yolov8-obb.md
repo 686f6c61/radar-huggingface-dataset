@@ -78,9 +78,9 @@ Todas las mediciones se ejecutan sobre la NPU como unidad de cómputo principal,
 | Modelo | Tipo de caja | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | YOLOv8-OBB (este) | Orientada (OBB) | YOLOv8-N (12,1 MB float) | 640x640 | AGPL-3.0 | Repositorio de compilación Qualcomm |
-| YOLOv8 (variante estándar) | Alineada a ejes | YOLOv8-N/S/M/L/X | 640x640 | AGPL-3.0 | Ultralytics, HuggingFace |
+| YOLOv8 (variante estándar) | Alineada a ejes | YOLOv8-N/S/M/L/X | 640x640 | AGPL-3.0 | Ultralytics, Hugging Face |
 | YOLOv11-OBB | Orientada (OBB) | variantes N/S/M/L/X | 640x640 | AGPL-3.0 | Ultralytics |
-| RT-DETR | Alineada a ejes | no disponible | variable | Apache-2.0 (según variante) | HuggingFace, repos oficiales |
+| RT-DETR | Alineada a ejes | no disponible | variable | Apache-2.0 (según variante) | Hugging Face, repos oficiales |
 
 No se dispone de datos de precisión comparada (mAP) en la información proporcionada para establecer una comparación cuantitativa con estas alternativas.
 
@@ -97,7 +97,7 @@ No se dispone de datos de precisión comparada (mAP) en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/YOLOv8-OBB
+- Hugging Face: https://huggingface.co/qualcomm/YOLOv8-OBB
 - Implementación de referencia YOLOv8-OBB (Ultralytics): https://github.com/ultralytics/ultralytics/tree/main/ultralytics/models/yolo/obb
 - Qualcomm AI Hub Models (librería): https://github.com/qualcomm/ai-hub-models/blob/v0.66.0/src/qai_hub_models/models/yolov8_obb
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

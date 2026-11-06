@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de inicialización experimental del modelo EfficientFormer adaptado para tareas de generación. Lo publica el usuario yichenchen04 en HuggingFace con licencia BSD-3-Clause. El modelo es una implementación personalizada de EfficientFormer, una arquitectura de transformer originalmente diseñada para visión por computador, pero aquí reconfigurada para generación de secuencias. El checkpoint tiene únicamente 49.600 parámetros, un tamaño deliberadamente reducido para servir como prueba de humo (smoke test) y permitir inspeccionar los cambios arquitectónicos antes de un entrenamiento completo.
+Este repositorio contiene un checkpoint de inicialización experimental del modelo EfficientFormer adaptado para tareas de generación. Lo publica el usuario yichenchen04 en Hugging Face con licencia BSD-3-Clause. El modelo es una implementación personalizada de EfficientFormer, una arquitectura de transformer originalmente diseñada para visión por computador, pero aquí reconfigurada para generación de secuencias. El checkpoint tiene únicamente 49.600 parámetros, un tamaño deliberadamente reducido para servir como prueba de humo (smoke test) y permitir inspeccionar los cambios arquitectónicos antes de un entrenamiento completo.
 
 El autor indica explícitamente que el checkpoint no ha sido entrenado ni auditado, y que no se presentan resultados de benchmarks. Se trata de un punto de partida para experimentación, no de un modelo listo para producción. La relevancia actual es limitada, pero puede ser útil para desarrolladores que quieran explorar variantes de EfficientFormer en generación, especialmente con atención lineal y fusión tipo Tucker.
 
@@ -68,8 +68,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yichenchen04/efficientformer-generation-checkpoint63
+- Repositorio en Hugging Face: https://huggingface.co/yichenchen04/efficientformer-generation-checkpoint63
 - GitHub de EfficientFormer (Snap Research): https://github.com/snap-research/EfficientFormer
-- Modelo EfficientFormer de Qualcomm en HuggingFace: https://huggingface.co/qualcomm/EfficientFormer
-- Documentación de EfficientFormer en HuggingFace Transformers: https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer
+- Modelo EfficientFormer de Qualcomm en Hugging Face: https://huggingface.co/qualcomm/EfficientFormer
+- Documentación de EfficientFormer en Hugging Face Transformers: https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer
 - Análisis del paper y código de EfficientFormer (blog en CSDN): https://blog.csdn.net/ooooocj/article/details/140108448

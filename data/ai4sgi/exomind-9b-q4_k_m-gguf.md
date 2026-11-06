@@ -68,7 +68,7 @@ No se dispone de datos comparativos específicos para ExoMind-9B frente a otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/AI4SGI/ExoMind-9B-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/AI4SGI/ExoMind-9B-Q4_K_M-GGUF
 - Modelo base ExoMind-9B: https://huggingface.co/AI4SGI/ExoMind-9B
 - Página del proyecto: https://ai4sgi.github.io/ExoMind/
 - Repositorio GitHub: https://github.com/AI4SGI/ExoMind

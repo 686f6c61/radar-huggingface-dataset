@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Greenminer/zils-lite-skills-v4",
+  "slug": "greenminer-zils-lite-skills-v4",
+  "author": "Greenminer",
+  "url": "https://huggingface.co/Greenminer/zils-lite-skills-v4",
+  "created_at": "2026-11-06T08:10:36.000Z",
+  "updated_at": "2026-11-06T08:10:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "decision-model",
+    "d3-lite",
+    "base_model:Maincode/Matilda-Decision-v1-Edge",
+    "base_model:finetune:Maincode/Matilda-Decision-v1-Edge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706027688,
+  "storage_human": "1.7 GB",
+  "base_model": "vllm-sr/d3-lite, Maincode/Matilda-Decision-v1-Edge, zils-ai/jiwo-0.8b-full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

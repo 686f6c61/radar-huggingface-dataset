@@ -2,7 +2,7 @@
 
 ## Resumen
 
-amsetiawan/matching-2023 es un repositorio de HuggingFace publicado por el usuario amsetiawan que contiene una implementacion propia de una arquitectura tipo Mixer orientada a tareas de matching, acompanada de un checkpoint de inicializacion. No se trata de un modelo entrenado ni de un release con resultados validados: la propia model card indica explicitamente que el checkpoint sirve para pruebas de humo (smoke tests) y que el repositorio no reclama ninguna puntuacion de benchmark. El peso `model.safetensors` contiene 49.600 parametros, una cifra que corresponde a un modelo de escala experimental, no a un modelo de lenguaje utilizable en produccion.
+amsetiawan/matching-2023 es un repositorio de Hugging Face publicado por el usuario amsetiawan que contiene una implementacion propia de una arquitectura tipo Mixer orientada a tareas de matching, acompanada de un checkpoint de inicializacion. No se trata de un modelo entrenado ni de un release con resultados validados: la propia model card indica explicitamente que el checkpoint sirve para pruebas de humo (smoke tests) y que el repositorio no reclama ninguna puntuacion de benchmark. El peso `model.safetensors` contiene 49.600 parametros, una cifra que corresponde a un modelo de escala experimental, no a un modelo de lenguaje utilizable en produccion.
 
 El artefacto principal es `predict.py`, un script que incluye el modelo y un punto de entrada ejecutable o de entrenamiento, junto con `config.json` (configuracion de arquitectura generada) y `training_args.json` (receta de experimento por defecto con optimizador LAMB y scheduler coseno). La arquitectura declarada combina atencion multi-query, fusion mediante MLP con concatenacion, activacion GELU y normalizacion InstanceNorm, bajo la etiqueta de escala "xlarge" dentro de la nomenclatura interna del autor.
 
@@ -23,8 +23,8 @@ Su relevancia es limitada y muy especifica: sirve como punto de partida reproduc
 | Escala declarada por el autor | xlarge |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-13 |
-| Ultima actualizacion (segun HuggingFace) | 2026-09-13 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-13 |
+| Ultima actualizacion (segun Hugging Face) | 2026-09-13 |
 | Pipeline declarado | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje ni con 
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, tal y como reconoce el propio autor.
 - Riesgo de alucinacion: no evaluable, porque no existe una capacidad generativa entrenada que analizar.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no hay garantia de comportamiento multilingue ni de manejo de secuencias largas.
-- Al ser una implementacion personalizada, las APIs automaticas de carga de HuggingFace no funcionan sin escribir un adaptador explicito.
+- Al ser una implementacion personalizada, las APIs automaticas de carga de Hugging Face no funcionan sin escribir un adaptador explicito.
 - La licencia BSD-3-Clause permite uso comercial siempre que se conserven el aviso de copyright y la clausula de exencion de responsabilidad, y que no se use el nombre del autor para promocionar productos derivados sin permiso. El propio autor recomienda revisar por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
 - La model card indica que los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto aqui incluidos, para no atribuir a este repositorio meritos que no le corresponden.
 - El repositorio no presenta senales de traccion (0 descargas, 0 likes) ni de mantenimiento posterior a la fecha de creacion registrada, lo que refuerza su caracter experimental.
@@ -89,7 +89,7 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje ni con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amsetiawan/matching-2023
+- Repositorio en Hugging Face: https://huggingface.co/amsetiawan/matching-2023
 - Paper asociado: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo independiente: no disponible

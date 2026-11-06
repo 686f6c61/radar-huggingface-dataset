@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los d
 |---|---|---|---|---|---|
 | ZwZ-2B (base: inclusionAI/ZwZ-2B) | ~2,03B | Vision-language | safetensors / GGUF (esta ficha) | Apache-2.0 | Especializado en razonamiento visual fino, entrenado con GRPO |
 | Qwen2-VL-2B (Qwen) | ~2B | Vision-language | safetensors / GGUF (terceros) | Qwen (uso comercial con condiciones) | Modelo multimodal generalista de tamano similar |
-| SmolVLM-2B (HuggingFace) | ~2B | Vision-language | safetensors / GGUF (terceros) | Apache-2.0 | Modelo multimodal compacto para ejecucion local |
+| SmolVLM-2B (Hugging Face) | ~2B | Vision-language | safetensors / GGUF (terceros) | Apache-2.0 | Modelo multimodal compacto para ejecucion local |
 
 La comparativa se basa en caracteristicas generales conocidas de los modelos alternativos; los datos de rendimiento de ZwZ-2B no estan disponibles, por lo que no puede afirmarse su posicion relativa en benchmarks.
 

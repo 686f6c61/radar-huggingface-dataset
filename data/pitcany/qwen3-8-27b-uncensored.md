@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored es una versión "abliterated" (alineamiento de seguridad eliminado mediante ortogonalización de la dirección de rechazo en el flujo residual) de Qwen/Qwen3.8-27B, publicada por el usuario pitcany en HuggingFace. Se trata de un modelo denso de 27.781.427.952 parámetros (aproximadamente 27,8B) con arquitectura híbrida de atención (Gated DeltaNet lineal combinada con atención completa), capacidades nativas de visión-lenguaje y una cabeza de decodificación especulativa MTP (Multi-Token Prediction). Se distribuye en precisión completa BF16 como pesos fuente para fine-tuning, post-entrenamiento y cuantización posteriores.
+Qwen3.8-27B-Uncensored es una versión "abliterated" (alineamiento de seguridad eliminado mediante ortogonalización de la dirección de rechazo en el flujo residual) de Qwen/Qwen3.8-27B, publicada por el usuario pitcany en Hugging Face. Se trata de un modelo denso de 27.781.427.952 parámetros (aproximadamente 27,8B) con arquitectura híbrida de atención (Gated DeltaNet lineal combinada con atención completa), capacidades nativas de visión-lenguaje y una cabeza de decodificación especulativa MTP (Multi-Token Prediction). Se distribuye en precisión completa BF16 como pesos fuente para fine-tuning, post-entrenamiento y cuantización posteriores.
 
 El modelo resuelve el caso de uso de investigación en red-teaming y experimentación sin restricciones de rechazo: al eliminar la dirección de rechazo del flujo residual, responde a peticiones que el modelo base rechazaría. Conserva la torre de visión completa y la cabeza MTP, lo que lo hace adecuado como base para derivados cuantizados (FP8, GGUF, MLX) y para ajuste fino adicional. Su ventana de contexto es de 262.144 tokens (262K) según la model card.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pitcany/Qwen3.8-27B-Uncensored
+- Hugging Face: https://huggingface.co/pitcany/Qwen3.8-27B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Derivado FP8: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Derivado GGUF: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF

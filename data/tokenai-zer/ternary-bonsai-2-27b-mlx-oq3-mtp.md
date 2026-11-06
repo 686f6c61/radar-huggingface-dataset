@@ -113,7 +113,7 @@ Frente a modelos de otras familias del mismo tamano, como otros VLM de ~27B en p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ3-mtp
+- Modelo en Hugging Face: https://huggingface.co/TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ3-mtp
 - Variante oQ2: https://huggingface.co/TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ2-mtp
 - Modelo base ternario: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B

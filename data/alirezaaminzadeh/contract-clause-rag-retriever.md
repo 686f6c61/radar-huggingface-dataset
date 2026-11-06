@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 - Al ser un índice basado en scikit-learn, no requiere GPU. Funciona en cualquier CPU moderna.
 - Memoria RAM estimada: depende del tamaño del corpus indexado. Para un corpus de miles de cláusulas, es probable que necesite menos de 1 GB, pero no se dispone de datos exactos.
-- Almacenamiento: el repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que el índice se genera localmente a partir del dataset. El espacio en disco dependerá del corpus.
+- Almacenamiento: el repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que el índice se genera localmente a partir del dataset. El espacio en disco dependerá del corpus.
 - Opciones de despliegue: al ser un artefacto de scikit-learn, puede integrarse en servicios Python (FastAPI, Flask) o en pipelines de procesamiento por lotes. No es compatible directamente con motores como vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - Latencia: la búsqueda sobre un índice BM25/TF-IDF suele ser del orden de milisegundos para corpus de tamaño moderado, pero no se han publicado mediciones específicas.
 
@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alirezaaminzadeh/contract-clause-rag-retriever
+- Modelo en Hugging Face: https://huggingface.co/alirezaaminzadeh/contract-clause-rag-retriever
 - Dataset complementario: https://huggingface.co/alirezaaminzadeh/contract-clause-rag-corpus (referenciado en la model card, no se ha verificado su existencia)
 - Espacio relacionado (ContractGuard Clause Analyzer): https://huggingface.co/spaces/alirezaaminzadeh/contractguard-clause-analyzer

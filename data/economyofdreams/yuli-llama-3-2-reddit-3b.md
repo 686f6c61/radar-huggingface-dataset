@@ -80,7 +80,7 @@ Frente a la variante 1B de la misma serie, el 3B ofrece mas capacidad de seguimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/economyofdreams/Yuli-LLaMA-3.2-Reddit-3B
+- Modelo en Hugging Face: https://huggingface.co/economyofdreams/Yuli-LLaMA-3.2-Reddit-3B
 - Autor (@hoytnix): https://huggingface.co/economyofdreams
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/ZhankuiHe/reddit_movie_large_v1

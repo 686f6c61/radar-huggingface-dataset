@@ -111,7 +111,7 @@ Frente a GigaChat 3.5 Ultra Instruct, la variante Reasoning mejora de forma clar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning
+- Modelo en Hugging Face: https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning
 - Version bf16 para fine-tuning y cuantizacion personalizada: https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16
 - Modelo base: https://huggingface.co/ai-sage/GigaChat3.5-432B-A28B-base
 - Diagrama de arquitectura: https://cdn-uploads.huggingface.co/production/uploads/67a4f89d46a7612efd49c561/AsNtVz8i9vxHhqcT5LT9Y.png

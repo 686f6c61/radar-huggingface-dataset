@@ -83,7 +83,7 @@ La diferencia principal entre este modelo y su base es exclusivamente el formato
 
 ## Enlaces
 
-- [masahiroid/ruri-v3-130m-mlx en HuggingFace](https://huggingface.co/masahiroid/ruri-v3-130m-mlx)
+- [masahiroid/ruri-v3-130m-mlx en Hugging Face](https://huggingface.co/masahiroid/ruri-v3-130m-mlx)
 - [Modelo base cl-nagoya/ruri-v3-130m](https://huggingface.co/cl-nagoya/ruri-v3-130m)
 - [MLX (GitHub)](https://github.com/ml-explore/mlx)
 - [mlx-embeddings (GitHub)](https://github.com/Blaizzy/mlx-embeddings)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), publicado en HuggingFace bajo el identificador `hankking/GLM-5.3`. Se trata de la iteración 5.3 de la familia GLM-5, y su rasgo definitorio es que reutiliza exactamente el mismo modelo base que GLM-5.2: todas las mejoras provienen de la fase de post-entrenamiento. Con 753.329.940.480 parámetros totales (aproximadamente 753 mil millones) y un repositorio de 755,7 GB en safetensors, es un modelo de escala frontier que compite directamente con las grandes familias propietarias y abiertas del momento.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (zai-org), publicado en Hugging Face bajo el identificador `hankking/GLM-5.3`. Se trata de la iteración 5.3 de la familia GLM-5, y su rasgo definitorio es que reutiliza exactamente el mismo modelo base que GLM-5.2: todas las mejoras provienen de la fase de post-entrenamiento. Con 753.329.940.480 parámetros totales (aproximadamente 753 mil millones) y un repositorio de 755,7 GB en safetensors, es un modelo de escala frontier que compite directamente con las grandes familias propietarias y abiertas del momento.
 
 El modelo está orientado a tareas de codificación compleja, razonamiento de largo horizonte y uso agéntico con herramientas. Según la model card, supera a GLM-5.2 en un 50 % en el benchmark interno Z.ai Code Bench y alcanza estado del arte open-source en Terminal Bench 3.0 y Agents' Last Exam. Además, el escalado del post-entrenamiento ha hecho emerger capacidades de ciberseguridad ofensiva que el autor destaca explícitamente, con resultados SOTA en CyberGym para descubrimiento de vulnerabilidades.
 
@@ -111,7 +111,7 @@ La model card no aporta parámetros, contexto ni licencia de los competidores; l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hankking/GLM-5.3
+- Hugging Face: https://huggingface.co/hankking/GLM-5.3
 - Repositorio oficial de la familia GLM-5: https://github.com/zai-org/GLM-5
 - Paper referenciado (arXiv:2602.15763): https://arxiv.org/abs/2602.15763
 - Cookbook de SGLang para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

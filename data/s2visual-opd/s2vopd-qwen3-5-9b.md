@@ -93,8 +93,8 @@ No se dispone de resultados de benchmarks de modelos alternativos en la informac
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de benchmark |
 |---|---|---|---|---|---|
-| S²VOPD-Qwen3.5-9B | 9,41 mil millones | No disponible | Apache 2.0 | Pesos safetensors en HuggingFace; 0 descargas y 0 likes en el momento de la consulta | Tablas de percepción fina y matemáticas incluidas arriba |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | HuggingFace | No disponible |
+| S²VOPD-Qwen3.5-9B | 9,41 mil millones | No disponible | Apache 2.0 | Pesos safetensors en Hugging Face; 0 descargas y 0 likes en el momento de la consulta | Tablas de percepción fina y matemáticas incluidas arriba |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | Hugging Face | No disponible |
 | Otras alternativas de la misma categoría (por ejemplo, modelos visión-lenguaje de 8-9 mil millones de parámetros) | No disponible | No disponible | No disponible | No disponible | No disponible: no se han facilitado datos comparables |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ No se dispone de resultados de benchmarks de modelos alternativos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/S2Visual-OPD/S2VOPD-Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/S2Visual-OPD/S2VOPD-Qwen3.5-9B
 - Paper: https://arxiv.org/abs/2608.14144
 - Página del proyecto: https://williamium3000.github.io/s2vopd/
 - Código: https://github.com/williamium3000/s2vopd

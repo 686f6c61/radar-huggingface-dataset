@@ -4,7 +4,7 @@
 
 Este repositorio no es un modelo entrenado desde cero, sino una derivación community del checkpoint `Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw`, publicado por el usuario Marker689. Se trata de una versión "abliterated" (ablación de rechazos) de un modelo de la familia DeepSeek V4.1 Flash, distribuida ya cuantizada en formato EXL3 a 2,9 bits por peso. El pipeline declarado es `image-text-to-text`, de modo que el modelo acepta imagen y texto como entrada, y los idiomas documentados son inglés y chino.
 
-El checkpoint declara 105.247.867.090 parámetros totales según los metadatos de safetensors (unos 105,25 mil millones) y lleva la etiqueta `moe`, lo que sitúa el modelo en la categoría de mezcla de expertos de gran tamaño, aunque el número de parámetros activos no se documenta. La licencia es MIT y el acceso está restringido: requiere aceptar condiciones en HuggingFace antes de descargar.
+El checkpoint declara 105.247.867.090 parámetros totales según los metadatos de safetensors (unos 105,25 mil millones) y lleva la etiqueta `moe`, lo que sitúa el modelo en la categoría de mezcla de expertos de gran tamaño, aunque el número de parámetros activos no se documenta. La licencia es MIT y el acceso está restringido: requiere aceptar condiciones en Hugging Face antes de descargar.
 
 Su relevancia ahora es doble. Por un lado, permite ejecutar un modelo de más de 100 mil millones de parámetros con un presupuesto de bits muy agresivo (2,9 bpw), lo que interesa a quien quiera inferencia local en hardware de gama alta. Por otro, la modificación "abliterated" lo convierte en objeto de estudio para investigación sobre alineación y mecanismos de rechazo, y en una alternativa para flujos donde los filtros del modelo base resultan un obstáculo. Conviene señalar que el repositorio no tiene descargas ni valoraciones y que la model card no está disponible en la información proporcionada, por lo que no hay documentación sobre la metodología de ablación ni sobre la evaluación de la pérdida de calidad.
 
@@ -80,7 +80,7 @@ La única comparación verificable con los datos aportados es frente al checkpoi
 - Idiomas limitados a inglés y chino; el rendimiento en castellano no está soportado oficialmente y previsiblemente será inferior.
 - Longitud de contexto no documentada, lo que impide planificar cargas de trabajo con documentos largos sin pruebas previas.
 - Licencia MIT declarada por el publicador, pero al ser una derivación conviene verificar los términos del modelo base y de los materiales de entrenamiento originales antes de un uso comercial.
-- Acceso restringido en HuggingFace: es necesario aceptar condiciones, lo que añade fricción a pipelines automatizados de descarga.
+- Acceso restringido en Hugging Face: es necesario aceptar condiciones, lo que añade fricción a pipelines automatizados de descarga.
 - Repositorio sin descargas ni valoraciones y publicado recientemente: no existe evidencia de la comunidad sobre su funcionamiento real.
 - Inconsistencia entre el tamaño del repositorio (210,7 GB) y la cuantización declarada (2,9 bpw), que debe resolverse inspeccionando los ficheros antes de dimensionar hardware.
 - Requiere el motor ExLlamaV3; la integración con servidores de inferencia habituales no está confirmada.

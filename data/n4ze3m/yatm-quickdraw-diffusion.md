@@ -79,7 +79,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/n4ze3m/yatm-quickdraw-diffusion
+- Modelo en Hugging Face: https://huggingface.co/n4ze3m/yatm-quickdraw-diffusion
 - Dataset Quick, Draw! (Google): https://github.com/googlecreativelab/quickdraw-dataset
 - Página del juego Quick, Draw!: https://quickdraw.withgoogle.com/
 - Datos de Quick, Draw!: https://quickdraw.withgoogle.com/data

@@ -89,5 +89,5 @@ No se dispone de modelos comparables en el rango de 10K parámetros con los mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VantoraLabs/Vantora-Micro
+- Modelo en Hugging Face: https://huggingface.co/VantoraLabs/Vantora-Micro
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

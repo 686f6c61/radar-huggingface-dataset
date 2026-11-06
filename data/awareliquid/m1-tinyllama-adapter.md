@@ -6,7 +6,7 @@ M1-TinyLlama-Adapter es un adaptador de investigación publicado por AwareLiquid
 
 La relevancia del modelo es acotada y muy específica: no busca mejorar la perplejidad ni el razonamiento general del modelo base (los propios autores indican explícitamente que no debe reclamarse ninguna ganancia en esos frentes), sino resolver el problema estructural de la recall entre ventanas, donde la atención y LoRA puntúan exactamente 0.000. El adaptador anade aproximadamente un 0,76 % de parámetros entrenables (unos 8,4 M sobre una base de 1,1 B) y se inserta cada cuarta capa del decodificador.
 
-El checkpoint desplegado corresponde a 3000 pasos de SFT sobre datos bilingües inglés/chino. El repositorio de HuggingFace tiene un tamano de 0,0 GB y contiene un único fichero de pesos de 25,9 MB. Se trata de un artefacto de investigación con 0 descargas y 0 likes en el momento de la consulta, y su carga requiere código propio del autor (no es un módulo PEFT estándar).
+El checkpoint desplegado corresponde a 3000 pasos de SFT sobre datos bilingües inglés/chino. El repositorio de Hugging Face tiene un tamano de 0,0 GB y contiene un único fichero de pesos de 25,9 MB. Se trata de un artefacto de investigación con 0 descargas y 0 likes en el momento de la consulta, y su carga requiere código propio del autor (no es un módulo PEFT estándar).
 
 ## Especificaciones tecnicas
 
@@ -77,11 +77,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| M1-TinyLlama-Adapter (este) | ~1,11 B totales (~8,4 M entrenables) | no disponible (entrenado a 768) | Recall entre ventanas 0,56; sin mejora de perplejidad | MIT (adaptador) + Apache-2.0 (base) | HuggingFace, requiere código propio |
-| TinyLlama-1.1B-Chat-v1.0 (base) | 1,1 B | no disponible en la información proporcionada | Recall entre ventanas 0,000 estructural | Apache-2.0 | HuggingFace |
-| AwareLiquid/M1-128M | 128 M | no disponible | híbrido desde cero (sin datos de benchmark) | no disponible | HuggingFace |
-| AwareLiquid/M2-2B | 2 B | no disponible | investigación byte-level (sin datos de benchmark) | no disponible | HuggingFace |
-| AwareLiquid/O1-Qwen05-Adapter | no disponible | no disponible | adaptador de investigación | no disponible | HuggingFace |
+| M1-TinyLlama-Adapter (este) | ~1,11 B totales (~8,4 M entrenables) | no disponible (entrenado a 768) | Recall entre ventanas 0,56; sin mejora de perplejidad | MIT (adaptador) + Apache-2.0 (base) | Hugging Face, requiere código propio |
+| TinyLlama-1.1B-Chat-v1.0 (base) | 1,1 B | no disponible en la información proporcionada | Recall entre ventanas 0,000 estructural | Apache-2.0 | Hugging Face |
+| AwareLiquid/M1-128M | 128 M | no disponible | híbrido desde cero (sin datos de benchmark) | no disponible | Hugging Face |
+| AwareLiquid/M2-2B | 2 B | no disponible | investigación byte-level (sin datos de benchmark) | no disponible | Hugging Face |
+| AwareLiquid/O1-Qwen05-Adapter | no disponible | no disponible | adaptador de investigación | no disponible | Hugging Face |
 | O1-48M edge (AwareLiquid) | 48 M | no disponible | edge (sin datos de benchmark) | no disponible | GitHub Releases |
 
 La comparación se limita al ecosistema del propio autor y a la base congelada, ya que la información disponible no incluye alternativas externas con datos comparables.
@@ -101,7 +101,7 @@ La comparación se limita al ecosistema del propio autor y a la base congelada, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AwareLiquid/M1-TinyLlama-Adapter
+- Hugging Face: https://huggingface.co/AwareLiquid/M1-TinyLlama-Adapter
 - Código y recetas (serve/server_hf.py): https://github.com/AwareLiquid/M1
 - Contexto de arquitectura M2: https://github.com/AwareLiquid/M2
 - Modelo relacionado M1-128M: https://huggingface.co/AwareLiquid/M1-128M

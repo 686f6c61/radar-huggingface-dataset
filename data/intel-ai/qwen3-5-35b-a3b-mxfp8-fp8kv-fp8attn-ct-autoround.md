@@ -90,7 +90,7 @@ La información disponible solo permite comparar este artefacto con su propio mo
 - Fecha de creación anómala (octubre de 2026) y autoría de una organización (intel-ai) sin documentación adicional: conviene tratar las cifras de benchmarks como provisionales hasta su reproducción independiente.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/intel-ai/Qwen3.5-35B-A3B-MXFP8-FP8KV-FP8Attn-CT-AutoRound
+- Repositorio en Hugging Face: https://huggingface.co/intel-ai/Qwen3.5-35B-A3B-MXFP8-FP8KV-FP8Attn-CT-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Repositorio de AutoRound: https://github.com/intel/auto-round
 - Herramienta autoquant-agent: el enlace incluido en la model card está incompleto (https://github.com/), por lo que no es utilizable.

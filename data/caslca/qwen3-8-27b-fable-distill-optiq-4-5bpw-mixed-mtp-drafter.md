@@ -31,7 +31,7 @@ Su relevancia actual es doble. Por un lado, documenta una reparación reproducib
 
 El artefacto es una cabeza MTP de tipo borrador (*drafter*) asociada al modelo cuantizado Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed. Su función es proponer secuencias cortas de tokens candidatos que el modelo destino valida en un único paso de verificación; el mecanismo encaja en el marco de decodificación especulativa y depende de una implementación MTP compatible en el servidor de inferencia. Con 424,7 M de parámetros y 0,3 GB de repositorio, su huella es pequeña frente a los aproximadamente 27 B del modelo destino.
 
-No hubo entrenamiento nuevo ni modificación de los pesos del modelo destino: la cabeza original se distribuyó junto al checkpoint y este repositorio es una reparación. El fallo consistía en siete desplazamientos de normalización heredados de las convenciones de HuggingFace; su cargador solo convierte esos desplazamientos cuando las claves conservan el prefijo `mtp.`, de modo que se reparó la convención sumando 1,0 en BF16 con redondeo a par más cercano sobre los siete vectores de normalización. Los 22 tensores de matriz y cuantización quedaron sin tocar, y los 29 payloads resultantes coinciden con el sidecar del modelo base que funcionaba de forma independiente. No se documentan datos de entrenamiento, número de tokens, composición del dataset ni fases de RLHF o DPO.
+No hubo entrenamiento nuevo ni modificación de los pesos del modelo destino: la cabeza original se distribuyó junto al checkpoint y este repositorio es una reparación. El fallo consistía en siete desplazamientos de normalización heredados de las convenciones de Hugging Face; su cargador solo convierte esos desplazamientos cuando las claves conservan el prefijo `mtp.`, de modo que se reparó la convención sumando 1,0 en BF16 con redondeo a par más cercano sobre los siete vectores de normalización. Los 22 tensores de matriz y cuantización quedaron sin tocar, y los 29 payloads resultantes coinciden con el sidecar del modelo base que funcionaba de forma independiente. No se documentan datos de entrenamiento, número de tokens, composición del dataset ni fases de RLHF o DPO.
 
 ## Capacidades
 
@@ -116,7 +116,7 @@ Comparación con alternativas de terceros: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed-mtp-drafter
+- Repositorio Hugging Face: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed-mtp-drafter
 - Modelo base: https://huggingface.co/caslca/Qwen3.8-27B-Fable-Distill-OptiQ-4.5bpw-mixed
 - Paper, blog, repositorio de código o demo: no disponible
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante para este modelo; los resultados devueltos correspondían a páginas de Google Maps y Google Earth, sin relación con el artefacto.

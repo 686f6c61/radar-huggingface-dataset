@@ -93,8 +93,8 @@ Segun el autor, cada escalon devolvio una respuesta completa y correcta a la mis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Flash-MOPD-fp8res-mlx-stream (este pack) | 309B totales (residentes ~6B) | 1.048.576 tokens | MIT | HuggingFace; requiere Apple Silicon de 128 GB y plugin mlx-stream | Streaming de expertos desde SSD; bilingue en/zh; sin benchmarks de calidad publicados |
-| XiaomiMiMo/MiMo-V2.6-Flash-MOPD (base) | 309B totales | No disponible en esta busqueda | MIT | HuggingFace | Modelo original de Xiaomi del que deriva este pack; sin cuantizar para servir en Apple Silicon |
+| MiMo-V2.6-Flash-MOPD-fp8res-mlx-stream (este pack) | 309B totales (residentes ~6B) | 1.048.576 tokens | MIT | Hugging Face; requiere Apple Silicon de 128 GB y plugin mlx-stream | Streaming de expertos desde SSD; bilingue en/zh; sin benchmarks de calidad publicados |
+| XiaomiMiMo/MiMo-V2.6-Flash-MOPD (base) | 309B totales | No disponible en esta busqueda | MIT | Hugging Face | Modelo original de Xiaomi del que deriva este pack; sin cuantizar para servir en Apple Silicon |
 | Otros modelos de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos suficientes en la informacion proporcionada para comparar con alternativas equivalentes |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ Segun el autor, cada escalon devolvio una respuesta completa y correcta a la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace del pack: https://huggingface.co/OpensourceWTF/MiMo-V2.6-Flash-MOPD-fp8res-mlx-stream
+- Repositorio Hugging Face del pack: https://huggingface.co/OpensourceWTF/MiMo-V2.6-Flash-MOPD-fp8res-mlx-stream
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - mlx-serve: https://github.com/ddalcu/mlx-serve
 - Plugin mlx-stream: https://github.com/davidtai/mlx-stream

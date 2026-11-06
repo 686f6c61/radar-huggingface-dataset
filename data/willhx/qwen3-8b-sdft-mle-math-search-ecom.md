@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-SDFT-MLE-Math-Search-Ecom es un checkpoint denso de 8.190.735.360 parametros publicado por el usuario willhx en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de una fusion (merge) por media ponderada de tres modelos SDFT derivados de Qwen3-8B: uno orientado a matematicas, otro a busqueda y otro al benchmark de retail tau-bench. El autor indica que los 399 tensores del checkpoint (embeddings, cabeza de lenguaje, normalizaciones y proyecciones de atencion y MLP) han sido fusionados, incluyendo las actualizaciones LoRA ya integradas en cada fuente.
+Qwen3-8B-SDFT-MLE-Math-Search-Ecom es un checkpoint denso de 8.190.735.360 parametros publicado por el usuario willhx en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de una fusion (merge) por media ponderada de tres modelos SDFT derivados de Qwen3-8B: uno orientado a matematicas, otro a busqueda y otro al benchmark de retail tau-bench. El autor indica que los 399 tensores del checkpoint (embeddings, cabeza de lenguaje, normalizaciones y proyecciones de atencion y MLP) han sido fusionados, incluyendo las actualizaciones LoRA ya integradas en cada fuente.
 
 El modelo resuelve un problema concreto de ingenieria: consolidar varias especializaciones obtenidas mediante SFT/RL sobre una misma base en un unico conjunto de pesos densos, sin necesidad de cargar adaptadores PEFT por separado. La receta de mezcla es explicita: `merged = BF16(0.2 * FP32(math) + 0.4 * FP32(search) + 0.4 * FP32(tau))`, con pesos de 0,2 para el componente matematico y 0,4 para cada uno de los otros dos.
 
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B-SDFT-MLE-Math-Search-Ecom | 8,19 B | no especificado en la card (base Qwen3-8B: 32.768 nativos, 131.072 con YaRN) | Apache-2.0 | safetensors BF16 en HuggingFace |
-| Qwen3-8B (base o instruct) | 8,2 B | 32.768 nativos, 131.072 con YaRN | Apache-2.0 | safetensors y GGUF en HuggingFace |
-| Llama 3.1 8B Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | safetensors y GGUF en HuggingFace |
-| Mistral 7B Instruct v0.3 | 7,3 B | 32.768 | Apache-2.0 | safetensors y GGUF en HuggingFace |
+| Qwen3-8B-SDFT-MLE-Math-Search-Ecom | 8,19 B | no especificado en la card (base Qwen3-8B: 32.768 nativos, 131.072 con YaRN) | Apache-2.0 | safetensors BF16 en Hugging Face |
+| Qwen3-8B (base o instruct) | 8,2 B | 32.768 nativos, 131.072 con YaRN | Apache-2.0 | safetensors y GGUF en Hugging Face |
+| Llama 3.1 8B Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | safetensors y GGUF en Hugging Face |
+| Mistral 7B Instruct v0.3 | 7,3 B | 32.768 | Apache-2.0 | safetensors y GGUF en Hugging Face |
 
 La comparativa se limita a tamano, contexto y licencia: no hay datos de rendimiento publicados para el modelo fusionado, por lo que no es posible establecer una comparacion cuantitativa de calidad frente a estas alternativas.
 
@@ -101,7 +101,7 @@ La comparativa se limita a tamano, contexto y licencia: no hay datos de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willhx/Qwen3-8B-SDFT-MLE-Math-Search-Ecom
+- Modelo en Hugging Face: https://huggingface.co/willhx/Qwen3-8B-SDFT-MLE-Math-Search-Ecom
 - Modelo fuente matematico: https://huggingface.co/willamazon1/Qwen3-8B-SDFT-Math-LoRA-new
 - Modelo fuente de busqueda: https://huggingface.co/willamazon1/sdft-search-lora-iter160
 - Modelo fuente tau-bench retail: https://huggingface.co/willamazon1/sdft-tau-lora-iter160
@@ -110,4 +110,4 @@ La comparativa se limita a tamano, contexto y licencia: no hay datos de rendimie
 - Modelo hermano tau: https://huggingface.co/willhx/Qwen3-8B-Base-Math-TauSFT
 - Espejo en ModelHub: https://dev.modelhub.org.cn/willhx/Qwen3-8B-Base-Math-SeaSFT-Search
 - Ficha en Featherless del modelo base matematico: https://featherless.ai/models/willhx/Qwen3-8B-Base-Math
-- Validacion de la fusion: `merge_validation.json` incluido en el repositorio de HuggingFace.
+- Validacion de la fusion: `merge_validation.json` incluido en el repositorio de Hugging Face.

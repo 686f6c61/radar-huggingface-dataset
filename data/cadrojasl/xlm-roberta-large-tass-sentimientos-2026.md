@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cadrojasl/xlm-roberta-large-tass-sentimientos-2026` es un ajuste fino de `FacebookAI/xlm-roberta-large` para clasificación de sentimientos en textos en español, con tres etiquetas: negativo (N), neutro (NEU) y positivo (P). Lo ha publicado el usuario cadrojasl en HuggingFace como trabajo final del taller de PLN de una maestría en Ingeniería de Sistemas y Computación, y está entrenado sobre el corpus TASS de tweets en español (variantes cr-tass / cr1-tass).
+El modelo `cadrojasl/xlm-roberta-large-tass-sentimientos-2026` es un ajuste fino de `FacebookAI/xlm-roberta-large` para clasificación de sentimientos en textos en español, con tres etiquetas: negativo (N), neutro (NEU) y positivo (P). Lo ha publicado el usuario cadrojasl en Hugging Face como trabajo final del taller de PLN de una maestría en Ingeniería de Sistemas y Computación, y está entrenado sobre el corpus TASS de tweets en español (variantes cr-tass / cr1-tass).
 
 Se trata de un encoder transformer de 559,9 millones de parámetros (XLM-RoBERTa-large) adaptado a una tarea de clasificación de secuencias, no de un modelo generativo. Su relevancia es acotada: es un artefacto académico con licencia MIT, pensado para experimentación y para servir de punto de partida en análisis de sentimiento sobre redes sociales en español. No hay información sobre la longitud de contexto efectiva usada en el ajuste, el volumen exacto de datos de entrenamiento ni la composición del corpus más allá de la referencia a TASS.
 
@@ -74,9 +74,9 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cadrojasl/xlm-roberta-large-tass-sentimientos-2026 | 559,9 M | no disponible (base hasta 512) | Clasificación de sentimiento en español (3 clases) | MIT | HuggingFace, 23 descargas |
-| FacebookAI/xlm-roberta-large | 559,9 M | 512 tokens | Modelo base multilingüe (no ajustado a sentimiento) | MIT | HuggingFace, ampliamente usado |
-| robertuito (pysentimiento) | ~110 M | 128 tokens | Clasificación de sentimiento en español (tweets) | MIT | HuggingFace, muy usado en la comunidad hispanohablante |
+| cadrojasl/xlm-roberta-large-tass-sentimientos-2026 | 559,9 M | no disponible (base hasta 512) | Clasificación de sentimiento en español (3 clases) | MIT | Hugging Face, 23 descargas |
+| FacebookAI/xlm-roberta-large | 559,9 M | 512 tokens | Modelo base multilingüe (no ajustado a sentimiento) | MIT | Hugging Face, ampliamente usado |
+| robertuito (pysentimiento) | ~110 M | 128 tokens | Clasificación de sentimiento en español (tweets) | MIT | Hugging Face, muy usado en la comunidad hispanohablante |
 | BERT-base-multilingual-cased afinado en TASS | ~178 M | 512 tokens | Clasificación de sentimiento en español | Apache 2.0 | Disponible en varios repos de la comunidad |
 
 No se dispone de resultados de benchmarks comparativos publicados en la información proporcionada para establecer una comparación cuantitativa con estas alternativas. La comparación se limita a parámetros, contexto y licencia.
@@ -95,7 +95,7 @@ No se dispone de resultados de benchmarks comparativos publicados en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cadrojasl/xlm-roberta-large-tass-sentimientos-2026
+- Modelo en Hugging Face: https://huggingface.co/cadrojasl/xlm-roberta-large-tass-sentimientos-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Corpus TASS: no disponible enlace directo en la información proporcionada
 - Paper de XLM-R (Unsupervised Cross-lingual Representation Learning at Scale): no disponible enlace en la información proporcionada

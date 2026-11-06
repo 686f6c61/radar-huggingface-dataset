@@ -6,7 +6,7 @@ LayoutLMv3 es un modelo de comprension de documentos que combina informacion de 
 
 El modelo resuelve el problema de entender formularios y documentos escaneados, donde el texto por si solo no basta: la posicion espacial de cada campo y el aspecto visual del documento son senales criticas para extraer pares clave-valor (por ejemplo, "Fecha" -> "01/01/2024"). LayoutLMv3 es la tercera iteracion de la familia LayoutLM de Microsoft Research, y esta adaptacion concreta pone a disposicion de la comunidad un checkpoint de 125 millones de parametros listo para tareas de extraccion de entidades en documentos.
 
-Es relevante porque ofrece un punto de partida ligero (0,5 GB en safetensors) y con licencia MIT para tareas de procesamiento de documentos, aunque la informacion publicada sobre su entrenamiento y rendimiento es muy escasa. El checkpoint no incluye pipeline declarado ni idiomas soportados en los metadatos de HuggingFace.
+Es relevante porque ofrece un punto de partida ligero (0,5 GB en safetensors) y con licencia MIT para tareas de procesamiento de documentos, aunque la informacion publicada sobre su entrenamiento y rendimiento es muy escasa. El checkpoint no incluye pipeline declarado ni idiomas soportados en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 13mansi/layoutlmv3-funsd-intellidoc | 125,3 M | no disponible | Extraccion de informacion en documentos | MIT | HuggingFace |
-| microsoft/layoutlmv3-base | 125 M | 512 tokens | Preentrenamiento multimodal documento | MIT | HuggingFace |
-| microsoft/layoutlmv2-base-uncased | ~113 M | 512 tokens | Comprension de documentos | MIT | HuggingFace |
-| microsoft/dit-base | ~86 M | no disponible | Document Image Transformer | MIT | HuggingFace |
+| 13mansi/layoutlmv3-funsd-intellidoc | 125,3 M | no disponible | Extraccion de informacion en documentos | MIT | Hugging Face |
+| microsoft/layoutlmv3-base | 125 M | 512 tokens | Preentrenamiento multimodal documento | MIT | Hugging Face |
+| microsoft/layoutlmv2-base-uncased | ~113 M | 512 tokens | Comprension de documentos | MIT | Hugging Face |
+| microsoft/dit-base | ~86 M | no disponible | Document Image Transformer | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/13mansi/layoutlmv3-funsd-intellidoc
+- Modelo en Hugging Face: https://huggingface.co/13mansi/layoutlmv3-funsd-intellidoc
 - Paper de LayoutLMv3: https://arxiv.org/abs/2204.08387
 - Repositorio oficial de LayoutLM de Microsoft: https://github.com/microsoft/unilm/tree/master/layoutlmv3
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/layoutlmv3-base
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/layoutlmv3-base
 - Dataset FUNSD: https://guillaumejaume.github.net/funsd/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kabiritc01/classification-finetune-2023` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de modelo con arquitectura **ALBEF** (Align before Fuse) orientado a tareas de **clasificación**. Lo desarrolla el usuario `kabiritc01` y se distribuye con licencia MIT. No se trata de un modelo entrenado: la propia model card indica que `model.safetensors` es un *checkpoint de inicialización válido para smoke tests* y que no se presenta como un checkpoint con benchmarks.
+`kabiritc01/classification-finetune-2023` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de modelo con arquitectura **ALBEF** (Align before Fuse) orientado a tareas de **clasificación**. Lo desarrolla el usuario `kabiritc01` y se distribuye con licencia MIT. No se trata de un modelo entrenado: la propia model card indica que `model.safetensors` es un *checkpoint de inicialización válido para smoke tests* y que no se presenta como un checkpoint con benchmarks.
 
 El dato más relevante para evaluarlo es su tamaño real registrado en safetensors: **49.600 parámetros totales**. Es, por tanto, un artefacto de escala muy reducida, coherente con una inicialización de prueba y no con un modelo listo para producción. El repositorio incluye además `pipeline.py` (implementación y punto de entrada), `config.json`, `training_args.json` y el propio README.
 
@@ -71,7 +71,7 @@ No se han proporcionado datos de benchmarks ni de parámetros de modelos alterna
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kabiritc01/classification-finetune-2023` | 49.600 (inicialización) | no disponible | sin benchmarks; checkpoint sin entrenar | MIT | HuggingFace, repo público con 0 descargas |
+| `kabiritc01/classification-finetune-2023` | 49.600 (inicialización) | no disponible | sin benchmarks; checkpoint sin entrenar | MIT | Hugging Face, repo público con 0 descargas |
 | ALBEF original (implementación de referencia) | no disponible | no disponible | paper publicado con resultados propios (no verificados aquí) | no disponible | repositorio de investigación |
 | CLIP (familia) | no disponible | no disponible | benchmarks publicados en su paper (no verificados aquí) | no disponible en esta ficha | pesos abiertos |
 | BLIP / BLIP-2 (familia) | no disponible | no disponible | benchmarks publicados en sus papers (no verificados aquí) | no disponible en esta ficha | pesos abiertos |
@@ -92,5 +92,5 @@ La diferencia práctica frente a estas alternativas no es de rendimiento sino de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kabiritc01/classification-finetune-2023
+- Modelo en Hugging Face: https://huggingface.co/kabiritc01/classification-finetune-2023
 - Las búsquedas web realizadas no devolvieron enlaces relevantes al modelo: los únicos resultados obtenidos fueron páginas de Gmail, sin relación con el repositorio. No se dispone de paper, blog, repositorio de código independiente ni demo asociados.

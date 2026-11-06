@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `matthewthoma/survey-few-shot-multimodal`, no contiene un modelo entrenado sino una nota de investigación (research note) sobre el tema "Few Shot Multimodal". El autor lo describe explícitamente como un artefacto de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte de forma textual que "no se presenta como un artículo completado ni como la publicación de modelos entrenados".
+Este repositorio de Hugging Face, identificado como `matthewthoma/survey-few-shot-multimodal`, no contiene un modelo entrenado sino una nota de investigación (research note) sobre el tema "Few Shot Multimodal". El autor lo describe explícitamente como un artefacto de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte de forma textual que "no se presenta como un artículo completado ni como la publicación de modelos entrenados".
 
 El repositorio incluye un fichero `summary.md` como artefacto principal y un `README.md` con la documentación. La nota cubre el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados, benchmarks públicos nombrados en el texto, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. La licencia declarada es MIT y el tamaño del repositorio es de 0.0 GB.
 
@@ -82,7 +82,7 @@ No disponible. Al tratarse de una nota de investigacion sin modelo entrenado, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matthewthoma/survey-few-shot-multimodal
+- Hugging Face: https://huggingface.co/matthewthoma/survey-few-shot-multimodal
 - Fichero principal de la nota: `summary.md` (referenciado en la model card, sin URL directa en la informacion proporcionada)
 - Documentacion: `README.md` (referenciado en la model card, sin URL directa en la informacion proporcionada)
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

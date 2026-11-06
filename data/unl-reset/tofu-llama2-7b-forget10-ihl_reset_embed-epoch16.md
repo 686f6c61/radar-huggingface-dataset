@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch16 | 6,74B | no disponible | llama2 | HuggingFace | Checkpoint de unlearning, epoca 16/20 |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | no disponible | llama2 | HuggingFace | Modelo base ajustado sobre TOFU |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | no disponible | llama2 | HuggingFace | Fuente de embeddings y LM head reinicializados |
-| Meta Llama 2 7B | ~6,74B | 4.096 tokens (configuracion original) | llama2 | HuggingFace / Meta | Modelo original de referencia |
+| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch16 | 6,74B | no disponible | llama2 | Hugging Face | Checkpoint de unlearning, epoca 16/20 |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | no disponible | llama2 | Hugging Face | Modelo base ajustado sobre TOFU |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | no disponible | llama2 | Hugging Face | Fuente de embeddings y LM head reinicializados |
+| Meta Llama 2 7B | ~6,74B | 4.096 tokens (configuracion original) | llama2 | Hugging Face / Meta | Modelo original de referencia |
 
 La comparativa se limita a los modelos directamente relacionados en la informacion disponible; no se dispone de datos de rendimiento para contrastar con alternativas de unlearning como NPO o GradDiff.
 
@@ -88,7 +88,7 @@ La comparativa se limita a los modelos directamente relacionados en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch16
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch16
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Fuente de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del dataset): no disponible en la informacion proporcionada

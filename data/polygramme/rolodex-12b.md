@@ -74,6 +74,6 @@ No se dispone de información sobre otros modelos especializados en búsqueda ag
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/polygramme/Rolodex-12B)
+- [Modelo en Hugging Face](https://huggingface.co/polygramme/Rolodex-12B)
 - [Modelo base GLM-4.5-Air](https://huggingface.co/zai-org/GLM-4.5-Air)
 - [PolyClerk-12B (modelo derivado)](https://huggingface.co/polygramme/PolyClerk-12B)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`paulschwarz/personal-matching` es un prototipo de investigación publicado en HuggingFace por el usuario paulschwarz. Se presenta como una implementación de arquitectura MobileViT orientada a una tarea de *matching* (emparejamiento), en una escala "small". No se trata de un modelo entrenado ni evaluado, sino de un repositorio de código con un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*). El propio autor indica explícitamente que no se reclama ninguna métrica de benchmark.
+`paulschwarz/personal-matching` es un prototipo de investigación publicado en Hugging Face por el usuario paulschwarz. Se presenta como una implementación de arquitectura MobileViT orientada a una tarea de *matching* (emparejamiento), en una escala "small". No se trata de un modelo entrenado ni evaluado, sino de un repositorio de código con un *checkpoint* de inicialización válido únicamente para pruebas de humo (*smoke tests*). El propio autor indica explícitamente que no se reclama ninguna métrica de benchmark.
 
 El interés de esta ficha es, por tanto, limitado y fundamentalmente documental: sirve para dejar constancia rigurosa de qué contiene el repositorio y de qué no. El dato real extraído de los pesos es de 33.088 parámetros totales, una cifra extremadamente reducida que confirma que se trata de un esqueleto de arquitectura y no de un modelo con capacidad funcional.
 
@@ -75,5 +75,5 @@ No disponible. La información proporcionada no incluye datos de rendimiento, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/paulschwarz/personal-matching
+- Repositorio en Hugging Face: https://huggingface.co/paulschwarz/personal-matching
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada.

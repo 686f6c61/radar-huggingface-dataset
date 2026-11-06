@@ -68,10 +68,10 @@ El único dato numérico declarado es el criterio de parada del entrenamiento: p
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-097 (este) | 1,78 B | No disponible | GRPO especialista, 4.000 rollouts, 1 entorno | No disponible | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | 32.768 tokens (según el modelo base) | Destilación de R1 sobre Qwen2.5 | MIT (según el modelo base) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | SFT + preferencias sobre Qwen2.5 | Apache 2.0 | HuggingFace |
-| Qwen2.5-Math-1.5B | 1,54 B | 4.096 tokens | Preentrenamiento y ajuste matemático | Apache 2.0 | HuggingFace |
+| rlve-opd-teacher-R1Distill-097 (este) | 1,78 B | No disponible | GRPO especialista, 4.000 rollouts, 1 entorno | No disponible | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | 32.768 tokens (según el modelo base) | Destilación de R1 sobre Qwen2.5 | MIT (según el modelo base) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | SFT + preferencias sobre Qwen2.5 | Apache 2.0 | Hugging Face |
+| Qwen2.5-Math-1.5B | 1,54 B | 4.096 tokens | Preentrenamiento y ajuste matemático | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento no está disponible: este checkpoint no publica métricas y los tres alternativos tienen evaluaciones públicas que no se han contrastado aquí. La diferencia relevante no es de capacidad bruta sino de propósito: los alternativos son modelos generales o matemáticos listos para uso, mientras que este es un artefacto de investigación atado a un entorno concreto y sin licencia declarada.
 
@@ -89,7 +89,7 @@ La comparación de rendimiento no está disponible: este checkpoint no publica m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-097-RoundTableAssignment-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-097-RoundTableAssignment-20261025
 - Ejecución de W&B del entrenamiento: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/5f9665b5
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper de DeepSeek-R1: https://arxiv.org/abs/2501.12948

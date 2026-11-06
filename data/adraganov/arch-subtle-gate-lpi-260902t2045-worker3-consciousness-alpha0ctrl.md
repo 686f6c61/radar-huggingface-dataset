@@ -77,7 +77,7 @@ No existe informacion suficiente para comparar este adaptador con alternativas d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-alpha0ctrl
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-subtle-gate-lpi-260902T2045-worker3-consciousness-alpha0ctrl
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

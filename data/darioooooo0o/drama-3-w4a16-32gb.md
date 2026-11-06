@@ -101,12 +101,12 @@ No se dispone en la informacion proporcionada de modelos comparables de terceros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darioooooo0o/drama-3-w4a16-32gb
+- Repositorio Hugging Face: https://huggingface.co/darioooooo0o/drama-3-w4a16-32gb
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Variante con backbone en bf16 (40 GB o mas): https://huggingface.co/darioooooo0o/drama-3-w4a16
 - SGLang-Omni (repositorio): https://github.com/sgl-project/sglang-omni
 - Cookbook de Drama 3 en SGLang-Omni: https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html
 - Perfil del autor de la cuantizacion: https://x.com/imdariotoo
 - Clip de referencia para clonacion citado en la model card: https://huggingface.co/datasets/zhaochenyang20/seed-tts-eval-mini/resolve/main/en/prompt-wavs/common_voice_en_10119832.wav
-- Fichero de licencia: LICENSE (incluido en el repositorio de HuggingFace)
+- Fichero de licencia: LICENSE (incluido en el repositorio de Hugging Face)
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los unicos enlaces obtenidos corresponden al videojuego de navegador Ikariam y no guardan relacion con la ficha.

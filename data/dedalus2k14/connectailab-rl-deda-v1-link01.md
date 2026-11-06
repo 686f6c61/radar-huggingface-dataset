@@ -71,9 +71,9 @@ El techo de acierto (coincidencia maxima alcanzable dado el formato textual) es 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-deda-v1-link01 | 0,8B + LoRA | no disponible | 79,9% acierto test (SFT); 50% exito en 20 episodios | Apache 2.0 | HuggingFace (0 descargas) |
+| connectailab-rl-deda-v1-link01 | 0,8B + LoRA | no disponible | 79,9% acierto test (SFT); 50% exito en 20 episodios | Apache 2.0 | Hugging Face (0 descargas) |
 | Cerebro PPO original (profesor) | no disponible | no aplica | 100% acierto test; 75% exito en 20 episodios | no disponible | Referenciado en la model card, no publicado como modelo |
-| Qwen/Qwen3.5-0.8B (base sin ajuste) | 0,8B | no disponible | 47,0% acierto test; 0% exito en 20 episodios | no disponible en la informacion proporcionada | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base sin ajuste) | 0,8B | no disponible | 47,0% acierto test; 0% exito en 20 episodios | no disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos de decision robotica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos alternativos de la misma categoria (LMs pequenos destilados de politicas RL para robotica simulada) en la documentacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria (L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dedalus2k14/connectailab-rl-deda-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/dedalus2k14/connectailab-rl-deda-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

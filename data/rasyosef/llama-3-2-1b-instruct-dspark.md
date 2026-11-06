@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval como ev
 
 | Modelo | Tipo | Parámetros | Aceptación publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rasyosef/Llama-3.2-1B-Instruct-DSpark | Borrador especulativo DSpark para Llama-3.2-1B-Instruct | 301,8 M | 3,148 de media ponderada; hasta 4,573 en HumanEval | Llama 3.2 Community License | HuggingFace, vía vLLM/speculators |
-| unsloth/Llama-3.2-1B-Instruct (verificador) | Modelo instructivo autónomo de 1B | 1.240 M aprox. | no aplica (sin decodificación especulativa) | Llama 3.2 Community License | HuggingFace, ampliamente soportado |
+| rasyosef/Llama-3.2-1B-Instruct-DSpark | Borrador especulativo DSpark para Llama-3.2-1B-Instruct | 301,8 M | 3,148 de media ponderada; hasta 4,573 en HumanEval | Llama 3.2 Community License | Hugging Face, vía vLLM/speculators |
+| unsloth/Llama-3.2-1B-Instruct (verificador) | Modelo instructivo autónomo de 1B | 1.240 M aprox. | no aplica (sin decodificación especulativa) | Llama 3.2 Community License | Hugging Face, ampliamente soportado |
 | Borradores EAGLE-3 para modelos de la familia Llama | Borrador especulativo basado en características ocultas | no disponible | no disponible en la información proporcionada | según implementación | repositorios de investigación |
 | Medusa (cabezas de decodificación especulativa) | Cabezas adicionales sobre el modelo base | no disponible | no disponible en la información proporcionada | según implementación | repositorios de investigación |
 
@@ -104,7 +104,7 @@ No se dispone de cifras verificables de EAGLE-3 ni Medusa en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasyosef/Llama-3.2-1B-Instruct-DSpark
+- Modelo en Hugging Face: https://huggingface.co/rasyosef/Llama-3.2-1B-Instruct-DSpark
 - Modelo base y verificador: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Framework de entrenamiento speculators: https://github.com/vllm-project/speculators
 - Código de entrenamiento del autor: https://github.com/rasyosef/train-dspark-draft-models

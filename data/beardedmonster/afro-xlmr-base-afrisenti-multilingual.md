@@ -40,7 +40,7 @@ El entrenamiento se hizo con el protocolo multilingüe de AfriSenti, unificando 
 - Cobertura de lenguas africanas de bajos recursos (hausa, igbo, yoruba, twi, suajili, amhárico, kinyarwanda, tsonga, pidgin nigeriano) más dos variedades de árabe magrebí y portugués.
 - Integrable en *pipelines* propios de scikit-learn o PyTorch como extractor de características (los embeddings medios son reutilizables para otras tareas de clasificación).
 - **No** soporta generación de texto, tool calling, razonamiento multi-paso, agentes, visión, audio ni *thinking mode*: es un encoder discriminativo, no un modelo generativo.
-- No está disponible como pipeline estándar de HuggingFace (`pipeline: no disponible`), lo que limita su uso directo con `transformers.pipeline`.
+- No está disponible como pipeline estándar de Hugging Face (`pipeline: no disponible`), lo que limita su uso directo con `transformers.pipeline`.
 
 ## Casos de uso
 
@@ -100,7 +100,7 @@ No hay datos de benchmark comparativos entre estas alternativas en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/afro-xlmr-base-afrisenti-multilingual
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/afro-xlmr-base-afrisenti-multilingual
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-base
 - Paper de AfriSenti: https://arxiv.org/abs/2302.08956
 - Paper de MasakhaNER 2.0 (referencia del arnés de evaluación): https://arxiv.org/abs/2210.12391

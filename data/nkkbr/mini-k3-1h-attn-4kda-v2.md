@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-attn-4kda-v2 es un checkpoint de preentrenamiento de aproximadamente 1.028 millones de parametros logicos (365 millones activos por token) publicado por el usuario nkkbr en HuggingFace. Forma parte de una familia de 20 arquitecturas comparadas de forma controlada y reproduce, a escala reducida, los operadores principales de Kimi-K3: KDA (atencion lineal con decaimiento), Gated MLA, Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU, output gates y Quantile Balancing. Su proposito no es el uso final como asistente, sino servir de proxy de investigacion para estudiar el comportamiento de estas arquitecturas a escala de mil millones de parametros.
+Mini-K3-1H-attn-4kda-v2 es un checkpoint de preentrenamiento de aproximadamente 1.028 millones de parametros logicos (365 millones activos por token) publicado por el usuario nkkbr en Hugging Face. Forma parte de una familia de 20 arquitecturas comparadas de forma controlada y reproduce, a escala reducida, los operadores principales de Kimi-K3: KDA (atencion lineal con decaimiento), Gated MLA, Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU, output gates y Quantile Balancing. Su proposito no es el uso final como asistente, sino servir de proxy de investigacion para estudiar el comportamiento de estas arquitecturas a escala de mil millones de parametros.
 
 El modelo consta de 13 capas decodificadoras: 12 capas KDA y una unica capa Gated MLA situada en la ultima posicion. Usa Mixture-of-Experts con 64 expertos enrutados, 2 compartidos y top-k 4, con un ancho oculto de 1.024 y 12 cabezas de atencion. El checkpoint publicado corresponde a la revision `checkpoint-tokens-004000317440`, tras 4.000 millones de tokens objetivo y 6.104 pasos de optimizador, con una longitud de secuencia de 8.192 tokens.
 
@@ -92,5 +92,5 @@ La diferencia relevante no esta en el rendimiento, que no se puede comparar con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-attn-4kda-v2
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-attn-4kda-v2
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de experimentos o demo) en los resultados de la busqueda web disponible; los resultados obtenidos no guardan relacion con el modelo.

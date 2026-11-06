@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AffixIO Agent Guard (Python mirror) es un repositorio publicado en HuggingFace por AffixIO que no contiene un modelo de lenguaje, sino un espejo en Python de la politica de validacion del paquete npm `affixio-agent-guard`. Su funcion es comprobar de forma determinista y fail-closed una unica llamada a herramienta (tool call) contra un conjunto de reglas, y emitir un recibo JSON local con el resultado. No hay pesos, no hay red neuronal y no hay entrenamiento: es codigo de validacion.
+AffixIO Agent Guard (Python mirror) es un repositorio publicado en Hugging Face por AffixIO que no contiene un modelo de lenguaje, sino un espejo en Python de la politica de validacion del paquete npm `affixio-agent-guard`. Su funcion es comprobar de forma determinista y fail-closed una unica llamada a herramienta (tool call) contra un conjunto de reglas, y emitir un recibo JSON local con el resultado. No hay pesos, no hay red neuronal y no hay entrenamiento: es codigo de validacion.
 
 El problema que aborda es la verificacion de acciones de agentes antes de que se ejecuten: allowlist de herramientas y hosts, limite de importe (`maxAmount`), bloqueo de secretos (`blockedSecrets`) y requisitos de aprobacion (`requireApprovalFor`). El diseno es deliberadamente local y sin red (`zero network, zero keys`), lo que lo hace adecuado como capa de control en entornos donde no se quiere enviar trafico ni credenciales a servicios externos.
 
@@ -76,7 +76,7 @@ La comparacion con "modelos similares" no es estrictamente aplicable, porque est
 
 | Proyecto | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AffixIO Agent Guard (Python mirror) | Validacion determinista de tool calls | No aplica | No aplica | No disponible (sin benchmarks publicados) | MIT | Repositorio en HuggingFace; paquete npm equivalente |
+| AffixIO Agent Guard (Python mirror) | Validacion determinista de tool calls | No aplica | No aplica | No disponible (sin benchmarks publicados) | MIT | Repositorio en Hugging Face; paquete npm equivalente |
 | Frameworks de guardrails para LLM (categoria general) | Validacion y moderacion de entradas/salidas | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Librerias de validacion de esquemas y permisos para agentes | Politicas declarativas de herramientas y hosts | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -95,7 +95,7 @@ La comparacion con "modelos similares" no es estrictamente aplicable, porque est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AffixIO/affixio-agent-guard-py
+- Repositorio en Hugging Face: https://huggingface.co/AffixIO/affixio-agent-guard-py
 - Paquete npm del guard: https://www.npmjs.com/package/affixio-agent-guard
 - Producto: https://www.affix-io.com
 - SDK en npm: https://www.npmjs.com/package/affixio

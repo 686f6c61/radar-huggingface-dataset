@@ -91,7 +91,7 @@ El autor advierte de que estos casos diagnósticos agrupados no establecen un po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nullmega/LFM2.5-8B-A1B-pi-coding-security-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Nullmega/LFM2.5-8B-A1B-pi-coding-security-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Revisión fijada del modelo base: `dd83f5cb02aa2938b66bba9a9998d38d0517c1f3`
 - Revisión de llama.cpp usada en la conversión: `5851a8e505f4d5fbb183f2847698eb6155d176b7`

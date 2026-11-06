@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| reax-mon-y1 (4012sksk) | 26,09B | no disponible | Apache 2.0 | HuggingFace, 29 descargas | Soup de 3 LoRA sobre pplx-decider-v1.2; sin benchmarks |
-| perplexity-ai/pplx-decider-v1.2 (base) | no disponible en la información | no disponible | no disponible en la información | HuggingFace | Backbone original; referencia directa del fine-tune |
+| reax-mon-y1 (4012sksk) | 26,09B | no disponible | Apache 2.0 | Hugging Face, 29 descargas | Soup de 3 LoRA sobre pplx-decider-v1.2; sin benchmarks |
+| perplexity-ai/pplx-decider-v1.2 (base) | no disponible en la información | no disponible | no disponible en la información | Hugging Face | Backbone original; referencia directa del fine-tune |
 | Alternativas de ~26B open source (p. ej. familia Qwen o Mistral) | ~24-27B | 32K-128K típicamente | Apache 2.0 / otras | Amplia | No se dispone de datos comparativos específicos en la información proporcionada |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con modelos de la misma categoría; los datos del modelo base no están documentados en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/4012sksk/reax-mon-y1
+- Hugging Face: https://huggingface.co/4012sksk/reax-mon-y1
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
 - Revisión del base referenciada: cce0f3f80033e9d89d80831d5281fd72124aacce
 - Ficheros citados en la model card: NOTICE, soup3-source-manifest.json, readout-selection.json (disponibles en el repositorio del modelo)

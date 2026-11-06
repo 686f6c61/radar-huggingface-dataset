@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM-Fable-Opus es un modelo de lenguaje publicado en HuggingFace por el usuario Trey2016 bajo licencia Apache 2.0. Se distribuye en formato GGUF y esta etiquetado como "conversational" y "endpoints_compatible", lo que sugiere que esta pensado para su uso mediante endpoints compatibles con la API de inferencia de HuggingFace (por ejemplo, text-generation-inference o llama.cpp server). El repositorio ocupa 0,7 GB y contiene 1.080.632.832 parametros, es decir, aproximadamente 1,1 mil millones de parametros.
+MiniCPM-Fable-Opus es un modelo de lenguaje publicado en Hugging Face por el usuario Trey2016 bajo licencia Apache 2.0. Se distribuye en formato GGUF y esta etiquetado como "conversational" y "endpoints_compatible", lo que sugiere que esta pensado para su uso mediante endpoints compatibles con la API de inferencia de Hugging Face (por ejemplo, text-generation-inference o llama.cpp server). El repositorio ocupa 0,7 GB y contiene 1.080.632.832 parametros, es decir, aproximadamente 1,1 mil millones de parametros.
 
 El nombre del modelo apunta a una posible derivacion o fusion a partir de la familia MiniCPM, pero la model card publicada esta practicamente vacia: solo incluye el campo de licencia, sin descripcion, sin datos de entrenamiento, sin idiomas declarados y sin resultados de evaluacion. No hay informacion oficial que confirme la arquitectura, el proceso de entrenamiento ni la procedencia de los pesos mas alla de lo que indica el nombre.
 
@@ -33,7 +33,7 @@ Tampoco se dispone de informacion sobre el volumen de tokens de entrenamiento, l
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta ajustado para mantener dialogos multi-turno.
-- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse detras de endpoints compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints de inferencia: la etiqueta `endpoints_compatible` sugiere que puede desplegarse detras de endpoints compatibles con la API de Hugging Face.
 - Capacidades adicionales (razonamiento, codigo, matematicas, vision, tool calling, agentes, modo thinking): no disponibles. La model card no documenta ninguna de ellas y no hay informacion externa que las confirme.
 - Soporte multilingue: no disponible. No se declaran idiomas en la ficha del repositorio.
 
@@ -61,7 +61,7 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (1,08 
 - VRAM para inferencia en cuantizacion de 4 bits (consistente con el repositorio de 0,7 GB): aproximadamente 0,7-1,0 GB para los pesos, mas overhead.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060) es suficiente. Para lotes grandes o contextos largos, una RTX 4090 o A100 aportarian margen, aunque estan sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, con amplia holgura, incluso en GPUs de gama de entrada y en CPU con suficiente RAM.
-- Opciones de despliegue: llama.cpp y Ollama son las opciones naturales por el formato GGUF. Tambien es probable que funcione con servidores compatibles con la API de HuggingFace, dada la etiqueta `endpoints_compatible`. vLLM y TGI no soportan GGUF de forma nativa, por lo que requeririan conversion previa a safetensors.
+- Opciones de despliegue: llama.cpp y Ollama son las opciones naturales por el formato GGUF. Tambien es probable que funcione con servidores compatibles con la API de Hugging Face, dada la etiqueta `endpoints_compatible`. vLLM y TGI no soportan GGUF de forma nativa, por lo que requeririan conversion previa a safetensors.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -91,6 +91,6 @@ La comparacion se limita a tamano y licencia: los tres modelos alternativos cuen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Trey2016/MiniCPM-Fable-Opus
+- Repositorio en Hugging Face: https://huggingface.co/Trey2016/MiniCPM-Fable-Opus
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. El resto de resultados obtenidos no guardan relacion con el modelo y no se incluyen.

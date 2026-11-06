@@ -85,9 +85,9 @@ Cada suboperacion de la conversion se mantiene dentro de 1e-5 relativo. Frente a
 
 | Modelo | Parametros | Escalas | Precision | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mlx-community/HEART-fp32` (este) | 16,7 M | 2x, 4x | fp32 | safetensors MLX | Apache-2.0 | HuggingFace, lane de paridad/referencia |
-| `mlx-community/HEART-fp16` | 16,7 M (220 de 748 tensores en fp32) | 2x, 4x | fp16 mixto | safetensors MLX | Apache-2.0 | HuggingFace, lane de produccion recomendado |
-| `Phips/HEART` (upstream) | 16,7 M | 2x, 4x | fp32 | checkpoints PyTorch | Apache-2.0 | HuggingFace, implementacion de referencia |
+| `mlx-community/HEART-fp32` (este) | 16,7 M | 2x, 4x | fp32 | safetensors MLX | Apache-2.0 | Hugging Face, lane de paridad/referencia |
+| `mlx-community/HEART-fp16` | 16,7 M (220 de 748 tensores en fp32) | 2x, 4x | fp16 mixto | safetensors MLX | Apache-2.0 | Hugging Face, lane de produccion recomendado |
+| `Phips/HEART` (upstream) | 16,7 M | 2x, 4x | fp32 | checkpoints PyTorch | Apache-2.0 | Hugging Face, implementacion de referencia |
 | Familia HAT (XPixelGroup) | no disponible | no disponible | no disponible | no disponible | Apache-2.0 | arXiv 2205.04437 y 2504.06629; arquitectura base sobre la que se construye HEART |
 
 No se dispone de datos verificados de parametros, contexto ni licencia de alternativas de la misma categoria como Real-ESRGAN o SwinIR en la informacion proporcionada, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -106,7 +106,7 @@ No se dispone de datos verificados de parametros, contexto ni licencia de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/HEART-fp32
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/HEART-fp32
 - Modelo upstream (PyTorch): https://huggingface.co/Phips/HEART
 - Licencia upstream: https://huggingface.co/Phips/HEART/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/Phips/lucid-cc0-v2-hc-512

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PS4Research/GIxTUYIl3K6cMzEd es un ajuste fino (finetune) publicado en HuggingFace por el usuario PS4Research, desarrollado a partir del modelo unsloth/Qwen3-14B-bnb-4bit, que a su vez es una cuantización de 4 bits del Qwen3-14B de Alibaba. Se trata, por tanto, de un modelo de generación de texto de tipo transformer decoder-only denso con aproximadamente 14.768 millones de parámetros y pesos finales en safetensors de 16 bits (29,5 GB de repositorio). El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, con una aceleración declarada de 2x respecto a un entrenamiento convencional.
+PS4Research/GIxTUYIl3K6cMzEd es un ajuste fino (finetune) publicado en Hugging Face por el usuario PS4Research, desarrollado a partir del modelo unsloth/Qwen3-14B-bnb-4bit, que a su vez es una cuantización de 4 bits del Qwen3-14B de Alibaba. Se trata, por tanto, de un modelo de generación de texto de tipo transformer decoder-only denso con aproximadamente 14.768 millones de parámetros y pesos finales en safetensors de 16 bits (29,5 GB de repositorio). El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, con una aceleración declarada de 2x respecto a un entrenamiento convencional.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, su identificador no es descriptivo (GIxTUYIl3K6cMzEd), la model card es una plantilla autogenerada por Unsloth y no documenta el dataset, el número de tokens de entrenamiento, los hiperparámetros, ni ningún resultado de evaluación. No se ha publicado información sobre el propósito concreto del ajuste fino ni sobre qué comportamiento se pretendía modificar respecto al Qwen3-14B original.
 
@@ -30,7 +30,7 @@ Por todo ello, esta ficha debe leerse como un inventario de lo que se puede veri
 
 La arquitectura es la del Qwen3-14B, es decir, un transformer decoder-only denso con atención de consultas agrupadas (GQA) y embeddings posicionales rotatorios (RoPE), según la documentación pública del modelo base. El fine-tune no modifica esa topología: los safetensors publicados contienen 14.768.307.200 parámetros, coherentes con el tamaño del modelo base. El punto de partida del entrenamiento fue unsloth/Qwen3-14B-bnb-4bit, una versión cuantizada a 4 bits, lo que implica que el ajuste se hizo previsiblemente con QLoRA o una técnica equivalente de adaptadores de bajo rango sobre pesos cuantizados; sin embargo, los pesos finales publicados están en 16 bits y no se especifica si se fusionaron los adaptadores en la base ni qué configuración de LoRA se empleó.
 
-En cuanto a los datos y el procedimiento de entrenamiento, la información disponible es prácticamente nula. La model card únicamente afirma que el modelo se entrenó "2x más rápido con Unsloth y la librería TRL de HuggingFace", sin indicar composición del dataset, número de tokens, número de épocas, tasa de aprendizaje, si hubo fases de SFT, DPO o RLHF, ni qué capacidades se pretendían mejorar o suprimir respecto al Qwen3-14B original. Tampoco se documentan innovaciones técnicas propias: cualquier rasgo destacable (modo de pensamiento, tool calling, ventana extensible con YaRN) sería heredado del modelo base y no está confirmado para este ajuste por el autor.
+En cuanto a los datos y el procedimiento de entrenamiento, la información disponible es prácticamente nula. La model card únicamente afirma que el modelo se entrenó "2x más rápido con Unsloth y la librería TRL de Hugging Face", sin indicar composición del dataset, número de tokens, número de épocas, tasa de aprendizaje, si hubo fases de SFT, DPO o RLHF, ni qué capacidades se pretendían mejorar o suprimir respecto al Qwen3-14B original. Tampoco se documentan innovaciones técnicas propias: cualquier rasgo destacable (modo de pensamiento, tool calling, ventana extensible con YaRN) sería heredado del modelo base y no está confirmado para este ajuste por el autor.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PS4Research/GIxTUYIl3K6cMzEd | 14,8B | No disponible (base: 32K, 131K con YaRN) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentar ni evaluar |
-| Qwen/Qwen3-14B | 14,8B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente descargado | Modelo base oficial, con benchmarks publicados y modo de pensamiento |
-| Qwen/Qwen2.5-14B-Instruct | 14,7B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace | Generación anterior, sin modo de pensamiento explícito |
-| google/gemma-3-12b-it | 12B | 128.000 | Licencia Gemma (con restricciones de uso) | HuggingFace, gated | Alternativa multimodal texto-imagen de tamaño similar |
+| PS4Research/GIxTUYIl3K6cMzEd | 14,8B | No disponible (base: 32K, 131K con YaRN) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentar ni evaluar |
+| Qwen/Qwen3-14B | 14,8B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente descargado | Modelo base oficial, con benchmarks publicados y modo de pensamiento |
+| Qwen/Qwen2.5-14B-Instruct | 14,7B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face | Generación anterior, sin modo de pensamiento explícito |
+| google/gemma-3-12b-it | 12B | 128.000 | Licencia Gemma (con restricciones de uso) | Hugging Face, gated | Alternativa multimodal texto-imagen de tamaño similar |
 
 Los datos de contexto y licencia de los modelos comparados proceden de su documentación pública. No se incluyen cifras comparativas de rendimiento porque este fine-tune no ha publicado ninguna, y por tanto cualquier comparación cuantitativa sería especulativa.
 
@@ -92,11 +92,11 @@ Los datos de contexto y licencia de los modelos comparados proceden de su docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/GIxTUYIl3K6cMzEd
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/GIxTUYIl3K6cMzEd
 - Modelo base del ajuste: https://huggingface.co/unsloth/Qwen3-14B-bnb-4bit
 - Modelo Qwen3-14B original: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Informe técnico de Qwen3 (referencia del modelo base): https://arxiv.org/abs/2505.09388
 
 No se han encontrado enlaces relevantes en la búsqueda web: los resultados devueltos no guardan ninguna relación con este modelo ni con el ecosistema Qwen, por lo que se han descartado.

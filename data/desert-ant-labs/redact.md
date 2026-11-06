@@ -100,7 +100,7 @@ La tabla de benchmarks ya incluye comparación con GLiNER-PII (570M parámetros,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/desert-ant-labs/redact
+- Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/redact
 - Pagina del producto: https://desertant.com/models/redact/
 - Repositorio GitHub (redirige al monorepo): https://github.com/Desert-Ant-Labs/redact
 - Documentacion del SDK: https://github.com/Desert-Ant-Labs/desert-ant-core/blob/main/docs/models/redact.md

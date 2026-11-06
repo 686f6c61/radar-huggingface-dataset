@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sepkhthkjt es un modelo alojado en HuggingFace por el usuario Strikaa514, publicado el 22 de agosto de 2026 bajo licencia Apache 2.0. El modelo tiene acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo o utilizarlo. En el momento de la recopilación de esta ficha, el repositorio no registra descargas ni valoraciones, y no se ha publicado información sobre su arquitectura, tamaño, pipeline o capacidades.
+Sepkhthkjt es un modelo alojado en Hugging Face por el usuario Strikaa514, publicado el 22 de agosto de 2026 bajo licencia Apache 2.0. El modelo tiene acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo o utilizarlo. En el momento de la recopilación de esta ficha, el repositorio no registra descargas ni valoraciones, y no se ha publicado información sobre su arquitectura, tamaño, pipeline o capacidades.
 
-No se dispone de documentación técnica, papers asociados ni resultados de benchmarks que permitan contextualizar el modelo dentro del ecosistema actual de IA open source. La ausencia de datos de pipeline y de idiomas soportados, junto con el acceso restringido, sugiere que se trata de un proyecto en fase temprana o de un repositorio privado compartido de forma selectiva. Se recomienda consultar directamente el repositorio en HuggingFace para obtener información actualizada o solicitar acceso al autor.
+No se dispone de documentación técnica, papers asociados ni resultados de benchmarks que permitan contextualizar el modelo dentro del ecosistema actual de IA open source. La ausencia de datos de pipeline y de idiomas soportados, junto con el acceso restringido, sugiere que se trata de un proyecto en fase temprana o de un repositorio privado compartido de forma selectiva. Se recomienda consultar directamente el repositorio en Hugging Face para obtener información actualizada o solicitar acceso al autor.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ No se ha publicado información sobre la arquitectura del modelo, el dataset de 
 - No hay información sobre generación de texto, razonamiento, código, matemáticas o visión.
 - No se ha confirmado soporte para tool calling, function calling o agentes.
 - No se ha confirmado ninguna capacidad especial (thinking mode, visión, audio, etc.).
-- El modelo no registra pipeline asociado en HuggingFace.
+- El modelo no registra pipeline asociado en Hugging Face.
 
 ## Casos de uso
 
@@ -61,5 +61,5 @@ No es posible realizar una comparativa al no disponer de datos de arquitectura, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Strikaa514/Sepkhthkjt
+- Repositorio Hugging Face: https://huggingface.co/Strikaa514/Sepkhthkjt
 - No se han encontrado papers, blogs, repositorios de código o demos asociados en la búsqueda web.

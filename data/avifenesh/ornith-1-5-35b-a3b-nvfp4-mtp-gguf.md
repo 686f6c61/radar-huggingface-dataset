@@ -85,7 +85,7 @@ La comparación directa con otros modelos de la misma categoría (MoE de ~35B co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/Avifenesh/Ornith-1.5-35B-A3B-NVFP4-MTP-GGUF)
 - [Modelo base Ornith-1.5-35B-A3B](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [GGUFs oficiales del modelo base](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF)
 - [Colección Ornith-1.5](https://huggingface.co/collections/ornith-ai/ornith-15)

@@ -23,7 +23,7 @@ Es relevante ahora por dos motivos practicos: primero, ofrece una via sencilla p
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Qwen3.5, con 32 capas, dimension oculta de 2560 y un vocabulario de 248.302 tokens. La arquitectura declarada en el GGUF es `qwen35` y la clase HuggingFace correspondiente es `Qwen3_5ForCausalLM`. No hay MoE ni parametros activos: todos los parametros se activan en cada paso. La innovacion tecnica relevante es la inclusion de una capa de prediccion multi-token (`nextn_predict_layers = 1`), es decir, una cabeza draft embebida en el propio fichero GGUF que actua como modelo especulativo para decodificacion MTP. Esto evita el patron clasico de servir un modelo draft aparte y simplifica el despliegue a un solo archivo.
+El modelo es un transformer decoder-only de la familia Qwen3.5, con 32 capas, dimension oculta de 2560 y un vocabulario de 248.302 tokens. La arquitectura declarada en el GGUF es `qwen35` y la clase Hugging Face correspondiente es `Qwen3_5ForCausalLM`. No hay MoE ni parametros activos: todos los parametros se activan en cada paso. La innovacion tecnica relevante es la inclusion de una capa de prediccion multi-token (`nextn_predict_layers = 1`), es decir, una cabeza draft embebida en el propio fichero GGUF que actua como modelo especulativo para decodificacion MTP. Esto evita el patron clasico de servir un modelo draft aparte y simplifica el despliegue a un solo archivo.
 
 No ha habido entrenamiento adicional: los pesos son un derivado intacto del modelo base, unicamente se han eliminado las modalidades de vision y audio. La tokenizacion se ha reajustado a 15 tokens especiales solo de texto en los identificadores 248044–248058, con EOS en 248046 (`<|im_end|>`). La conversion se realizo con `convert_hf_to_gguf.py` de llama.cpp (revision `f280b26983ad`) y posteriormente `llama-quantize` con cada tipo nombrado. El chat template conserva el modo thinking activado por defecto con `reasoning_effort: xhigh`, de modo que el modelo razona de forma extensa antes de responder salvo que se desactive explicitamente.
 
@@ -75,7 +75,7 @@ El propio autor indica que no cita baselines publicados para este tamano y que l
 - GPU validadas: AMD Radeon AI PRO R9700 (gfx1201, 34 GB) con ROCm 7.14. El autor menciona tambien Ryzen AI Max / Strix Halo como plataforma probada, con `--spec-draft-n-max 4`.
 - Cabe en GPU consumer: el archivo Q4_K_M de 2,8 GB es compatible con GPUs consumer en terminos de pesos, pero no hay mediciones publicadas en tarjetas tipo RTX 4090, RTX 3090 o similares, ni datos de VRAM real.
 - Multi-GPU: llama.cpp reparte capas automaticamente; hay que desactivar los pines de `*_VISIBLE_DEVICES`. `--split-mode layer` es el valor por defecto.
-- Opciones de despliegue: llama.cpp (`llama-server` con API compatible con OpenAI, `llama-cli`), `convert_hf_to_gguf.py` y `llama-quantize` para reproducir la conversion. El tag `endpoints_compatible` sugiere compatibilidad con endpoints alojados de HuggingFace. Ollama, vLLM o TGI no estan documentados en la informacion disponible.
+- Opciones de despliegue: llama.cpp (`llama-server` con API compatible con OpenAI, `llama-cli`), `convert_hf_to_gguf.py` y `llama-quantize` para reproducir la conversion. El tag `endpoints_compatible` sugiere compatibilidad con endpoints alojados de Hugging Face. Ollama, vLLM o TGI no estan documentados en la informacion disponible.
 - Requisito de version: se necesita un build de llama.cpp del 2026-05-16 o posterior (soporte MTP, commit `4f13cb7`+) para usar `--spec-type draft-mtp`.
 - Throughput medido: 83,7–93,7 t/s de generacion sin MTP y 113,4–115,4 t/s con MTP n=2 en la R9700; prefill PP512 entre 2328 y 3269 t/s. No hay datos de latencia por peticion ni de throughput con batching (`-np 1` en las pruebas).
 - Memoria en disco: el repositorio completo ocupa 11,0 GB.
@@ -109,7 +109,7 @@ No se dispone de datos de modelos comparables de otros desarrolladores (mismo ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OnlyTextLLMs/Qwen3.5-4B-OnlyText-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OnlyTextLLMs/Qwen3.5-4B-OnlyText-GGUF
 - Version sin cuantizar del derivado: https://huggingface.co/OnlyTextLLMs/Qwen3.5-4B-OnlyText
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Organizacion Qwen: https://huggingface.co/Qwen

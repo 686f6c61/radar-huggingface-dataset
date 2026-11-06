@@ -4,7 +4,7 @@
 
 tidypr-1.5b-gguf es un ajuste fino (fine-tune) del modelo unsloth/Qwen2.5-Coder-1.5B-Instruct, publicado por el usuario bunnyweb bajo licencia Apache 2.0. Su proposito no es la generacion de codigo general, sino una tarea muy concreta: analizar hunks de pull requests en Python y detectar lo que el autor denomina "AI slop", es decir, codigo sobre-defensivo, comentarios redundantes, docstrings de relleno, logs con emojis o TODOs de marcador de posicion, devolviendo los hallazgos en formato JSON. Es, por tanto, un modelo especializado en revision automatica de codigo, no un asistente conversacional generalista.
 
-El modelo parte de una arquitectura transformer decoder-only de la familia Qwen2, con aproximadamente 1.540 millones de parametros (1.543.714.304 segun los metadatos de parametros publicados por HuggingFace), y se distribuye en formato GGUF, lo que permite ejecutarlo en local con llama.cpp u Ollama. El autor indica que fue entrenado con LoRA sobre el modelo base y que el conjunto de entrenamiento se compone mayoritariamente de inyecciones sinteticas de los antipatrones que pretende detectar.
+El modelo parte de una arquitectura transformer decoder-only de la familia Qwen2, con aproximadamente 1.540 millones de parametros (1.543.714.304 segun los metadatos de parametros publicados por Hugging Face), y se distribuye en formato GGUF, lo que permite ejecutarlo en local con llama.cpp u Ollama. El autor indica que fue entrenado con LoRA sobre el modelo base y que el conjunto de entrenamiento se compone mayoritariamente de inyecciones sinteticas de los antipatrones que pretende detectar.
 
 Su relevancia actual es limitada pero clara dentro de un nicho: se integra directamente como GitHub Action (thebunnyweb/tidypr@v0) o via CLI sobre un `git diff`, de modo que puede incorporarse a un flujo de CI sin infraestructura GPU dedicada. Es importante senalar que el propio autor lo marca como "early" y recomienda consultar el informe de evaluacion del repositorio antes de confiar en el en produccion.
 
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM es suficiente (por ejemplo GTX 1650, RTX 3050, RTX 4060, RTX 4090). En entornos de servidor, una A100 o H100 estan sobredimensionadas para este modelo salvo que se sirvan muchas peticiones concurrentes.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU dedicada de los ultimos ocho anos, e incluso en iGPU recientes con memoria compartida.
 - Ejecucion en CPU: viable sin GPU; el modelo esta pensado para correr en el runner de CI o en un portatil, como demuestra el backend `llamacpp` usado por la herramienta tidypr.
-- Opciones de despliegue: llama.cpp y llama-cpp-python (backend documentado por el autor), Ollama, LM Studio, servidores compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. vLLM y TGI soportan GGUF de forma limitada o experimental; no hay confirmacion de compatibilidad en la informacion disponible.
+- Opciones de despliegue: llama.cpp y llama-cpp-python (backend documentado por el autor), Ollama, LM Studio, servidores compatibles con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. vLLM y TGI soportan GGUF de forma limitada o experimental; no hay confirmacion de compatibilidad en la informacion disponible.
 - Latencia y throughput estimados: no disponibles. No se publican cifras de tokens por segundo ni de tiempo por revision.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bunnyweb/tidypr-1.5b-gguf | 1,5 B | no disponible | Deteccion de antipatrones en hunks de PR Python, salida JSON | Apache 2.0 | GGUF en HuggingFace |
-| unsloth/Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,5 B | 32.768 tokens | Generacion e instruccion general sobre codigo | Apache 2.0 | safetensors y GGUF en HuggingFace |
-| Qwen2.5-Coder-7B-Instruct | 7 B | 32.768 tokens | Generacion de codigo y razonamiento general | Apache 2.0 | safetensors y GGUF en HuggingFace |
+| bunnyweb/tidypr-1.5b-gguf | 1,5 B | no disponible | Deteccion de antipatrones en hunks de PR Python, salida JSON | Apache 2.0 | GGUF en Hugging Face |
+| unsloth/Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,5 B | 32.768 tokens | Generacion e instruccion general sobre codigo | Apache 2.0 | safetensors y GGUF en Hugging Face |
+| Qwen2.5-Coder-7B-Instruct | 7 B | 32.768 tokens | Generacion de codigo y razonamiento general | Apache 2.0 | safetensors y GGUF en Hugging Face |
 | Modelos especificos de revision de codigo | no disponible | no disponible | Revision estatica o asistida por LLM | no disponible | no disponible |
 
 No se conocen, en la informacion proporcionada, alternativas publicas directamente comparables en la tarea concreta de deteccion de "AI slop" en diffs. Las comparaciones con el modelo base y con la variante de 7 B son orientativas: miden el mismo punto de partida arquitectonico, no el mismo objetivo funcional, y no hay cifras de benchmark que permitan cuantificar la diferencia. Los analizadores estaticos clasicos (Ruff, Pylint, Flake8) cubren solapamientos parciales en cuanto a estilo, pero no evaluan la naturaleza semantica de un comentario o de una validacion defensiva.
@@ -87,14 +87,14 @@ No se conocen, en la informacion proporcionada, alternativas publicas directamen
 - Contexto no declarado: el autor no documenta la longitud de contexto utilizada en el ajuste; los diffs muy largos podrian truncarse. El modelo base soporta 32.768 tokens, pero el ajuste con LoRA puede no haber sido entrenado con esa longitud.
 - Licencia: Apache 2.0, que permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios. Al derivar del modelo base, se heredan sus condiciones, tambien Apache 2.0.
 - Trazabilidad: el repositorio tiene un volumen de descargas muy bajo (7) y un unico "like", por lo que no existe una comunidad amplia que haya validado el comportamiento en produccion.
-- Anomalia en los metadatos: las fechas de creacion y actualizacion indicadas en HuggingFace (octubre de 2026) son posteriores a la publicacion del modelo base Qwen2.5, lo que sugiere un posible error de metadatos que conviene no interpretar como una version reciente.
+- Anomalia en los metadatos: las fechas de creacion y actualizacion indicadas en Hugging Face (octubre de 2026) son posteriores a la publicacion del modelo base Qwen2.5, lo que sugiere un posible error de metadatos que conviene no interpretar como una version reciente.
 - Sin resultados de benchmark publicos: no hay forma de cuantificar la tasa de acierto frente a alternativas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bunnyweb/tidypr-1.5b-gguf
+- Modelo en Hugging Face: https://huggingface.co/bunnyweb/tidypr-1.5b-gguf
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio de la herramienta tidypr: https://github.com/thebunnyweb/tidypr
 - GitHub Action: https://github.com/thebunnyweb/tidypr (uso: `uses: thebunnyweb/tidypr@v0`)
-- Perfil del autor en HuggingFace: https://huggingface.co/bunnyweb
+- Perfil del autor en Hugging Face: https://huggingface.co/bunnyweb
 - Informe de evaluacion citado por el autor: alojado en el repositorio de tidypr; no se ha localizado una URL directa en la informacion disponible.

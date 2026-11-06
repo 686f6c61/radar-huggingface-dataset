@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`swordenamine/drone_precision_ag` es un repositorio publicado en HuggingFace que, a pesar de su nombre y de su ubicación en el Hub, no contiene un modelo de aprendizaje automatico: no se publican pesos, no hay tokenizador, no se declara arquitectura de red ni pipeline de inferencia. Lo que describe la model card es un stack de software en Python para agricultura de precision con drones: calculo de indices multiespectrales (NDVI, NDRE, NDWI) a 5 cm de resolucion, generacion de mapas de prescripcion de fertilizante de tasa variable, planificacion de cobertura tipo boustrophedon, evitacion de colisiones ORCA y coordinacion de una flota de cuatro drones con registro de eventos en un oraculo compatible con Chainlink.
+`swordenamine/drone_precision_ag` es un repositorio publicado en Hugging Face que, a pesar de su nombre y de su ubicación en el Hub, no contiene un modelo de aprendizaje automatico: no se publican pesos, no hay tokenizador, no se declara arquitectura de red ni pipeline de inferencia. Lo que describe la model card es un stack de software en Python para agricultura de precision con drones: calculo de indices multiespectrales (NDVI, NDRE, NDWI) a 5 cm de resolucion, generacion de mapas de prescripcion de fertilizante de tasa variable, planificacion de cobertura tipo boustrophedon, evitacion de colisiones ORCA y coordinacion de una flota de cuatro drones con registro de eventos en un oraculo compatible con Chainlink.
 
 El repositorio se presenta como solucion al problema del abonado uniforme, que segun la propia card desperdicia entre el 50 y el 70 por ciento del fertilizante aplicado. La propuesta es calcular una dosis por metro cuadrado a partir del indice NDVI y de un factor de estres, con restricciones agronomicas (dosis maxima) y economicas (presupuesto total). Las cifras de impacto y las puntuaciones de "idea score 94.9/100" son autoatribuidas por el autor y no estan respaldadas por ningun benchmark ni validacion de campo publicada.
 
-El artefacto tiene 0 descargas y 0 likes, no declara pipeline, idiomas ni licencia en los metadatos de HuggingFace, y su unica etiqueta es `region:us`. Cualquier evaluacion tecnica debe partir, por tanto, de la premisa de que se trata de una propuesta de codigo sin verificar y no de un modelo entrenado listo para usar.
+El artefacto tiene 0 descargas y 0 likes, no declara pipeline, idiomas ni licencia en los metadatos de Hugging Face, y su unica etiqueta es `region:us`. Cualquier evaluacion tecnica debe partir, por tanto, de la premisa de que se trata de una propuesta de codigo sin verificar y no de un modelo entrenado listo para usar.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El artefacto tiene 0 descargas y 0 likes, no declara pipeline, idiomas ni licenc
 | Longitud de contexto | No disponible (no hay modelo de lenguaje; la ventana de contexto no aplica) |
 | Tipos de cuantizacion | No disponible (no hay pesos que cuantizar) |
 | Idiomas soportados | No disponible en los metadatos; la model card esta redactada en ingles |
-| Licencia | La model card declara MIT (Copyright (c) 2026 swordenkisk); los metadatos de HuggingFace no declaran licencia |
+| Licencia | La model card declara MIT (Copyright (c) 2026 swordenkisk); los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | No disponible: no se publican pesos. El codigo se describe como paquete Python importable (`from drone_precision_ag import PrecisionFarm`) |
 | Tipo de artefacto | Repositorio de codigo / propuesta de proyecto, etiquetado como modelo en el Hub |
 | Descargas | 0 |
@@ -26,7 +26,7 @@ El artefacto tiene 0 descargas y 0 likes, no declara pipeline, idiomas ni licenc
 | Etiquetas declaradas | `region:us` |
 | Fecha de creacion (metadatos) | 2026-10-17T22:45:10Z |
 | Fecha de actualizacion (metadatos) | 2026-03-06T21:28:36Z |
-| Autor en HuggingFace | `swordenamine` (la card usa el alias `swordenkisk`) |
+| Autor en Hugging Face | `swordenamine` (la card usa el alias `swordenkisk`) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,11 +81,11 @@ No disponible. No se han proporcionado modelos comparables en la informacion, y 
 
 ## Limitaciones y advertencias
 
-- No es un modelo: no hay pesos, ni arquitectura de red, ni API de inferencia. El nombre y la ubicacion en HuggingFace pueden inducir a error a quien busque un modelo descargable.
+- No es un modelo: no hay pesos, ni arquitectura de red, ni API de inferencia. El nombre y la ubicacion en Hugging Face pueden inducir a error a quien busque un modelo descargable.
 - Ausencia total de validacion: 0 descargas, 0 likes, sin pipeline declarado, sin tests, sin CI y sin resultados de campo reportados.
 - Metadatos incoherentes: la fecha de creacion (2026-10-17) es posterior a la de ultima actualizacion (2026-03-06), lo que sugiere edicion manual de los metadatos o un error de registro.
 - Discrepancia de autoria: el repositorio figura a nombre de `swordenamine`, mientras que las insignias y el copyright usan `swordenkisk`; el enlace a GitHub que aparece en la card no se ha podido verificar.
-- Licencia ambigua: la card declara MIT, pero los metadatos de HuggingFace no declaran licencia. Antes de un uso comercial hay que confirmar la licencia efectiva del codigo y de las dependencias.
+- Licencia ambigua: la card declara MIT, pero los metadatos de Hugging Face no declaran licencia. Antes de un uso comercial hay que confirmar la licencia efectiva del codigo y de las dependencias.
 - La v1.0 no incluye integracion MAVLink real segun la propia hoja de ruta, de modo que el ejemplo de inicio rapido no ejecuta vuelo fisico; tratarlo como pseudocodigo de referencia.
 - Cifras sin fuente: el 50-70 por ciento de fertilizante desperdiciado, los 200.000 millones de USD anuales de coste y los 300.000 millones de USD de dano ambiental no van referenciados. Las estimaciones para Argelia (8,5 millones de hectareas, 40 por ciento de desperdicio, 200.000 toneladas anuales ahorradas, 120 millones de USD) tampoco.
 - Riesgo agronomico: aplicar dosis calculadas por una formula no calibrada puede provocar infradosificacion en zonas productivas. Cualquier despliegue exige validacion por un ingeniero agronomo y contraste con analitica de suelo y datos de cosecha.
@@ -96,6 +96,6 @@ No disponible. No se han proporcionado modelos comparables en la informacion, y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/drone_precision_ag
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/drone_precision_ag
 - Repositorio GitHub citado en la model card (no verificado): https://github.com/swordenkisk/drone_precision_ag
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al proyecto, al paper ni a demos; los resultados devueltos (toutatice.fr) no guardan relacion con el artefacto.

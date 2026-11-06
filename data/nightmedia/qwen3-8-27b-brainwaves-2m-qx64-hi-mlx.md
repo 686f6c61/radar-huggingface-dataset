@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nightmedia/Qwen3.8-27B-Brainwaves-2M-qx64-hi-mlx` es una variante experimental de la familia Qwen3.8, desarrollada por el usuario nightmedia mediante técnicas de fusión (merge) y adaptación sobre varios modelos base de Qwen (Qwen3.6-27B y Qwen3.8-27B). Se distribuye en formato MLX con cuantización qx64 y acceso restringido en HuggingFace. Está orientado a tareas de razonamiento, generación de texto, escritura creativa, roleplaying y análisis matemático, con soporte multimodal (imagen y texto) según el pipeline declarado.
+El modelo `nightmedia/Qwen3.8-27B-Brainwaves-2M-qx64-hi-mlx` es una variante experimental de la familia Qwen3.8, desarrollada por el usuario nightmedia mediante técnicas de fusión (merge) y adaptación sobre varios modelos base de Qwen (Qwen3.6-27B y Qwen3.8-27B). Se distribuye en formato MLX con cuantización qx64 y acceso restringido en Hugging Face. Está orientado a tareas de razonamiento, generación de texto, escritura creativa, roleplaying y análisis matemático, con soporte multimodal (imagen y texto) según el pipeline declarado.
 
 La relevancia de este modelo radica en que combina la arquitectura híbrida de atención del Qwen3.8-27B (mezcla de atención completa y lineal) con ajustes adicionales mediante SFT, LoRA y destilación, apuntando a un equilibrio entre rendimiento y eficiencia en hardware local. Aunque no se han publicado benchmarks específicos para esta variante, el modelo base Qwen3.8-27B reporta resultados destacados en tareas de agente, ofimática y visión, lo que sugiere capacidades similares.
 
@@ -77,7 +77,7 @@ La comparativa se limita a la familia Qwen3 por falta de datos sobre otros model
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que requiere aceptar condiciones antes de su descarga.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que requiere aceptar condiciones antes de su descarga.
 - Naturaleza experimental: los tags indican que es un modelo de investigacion, sin garantias de estabilidad en produccion.
 - Sesgos y alucinaciones: al ser un merge de multiples modelos, puede heredar sesgos de sus fuentes y generar contenido incorrecto o inventado, especialmente en tareas de razonamiento complejo.
 - Limitaciones de idioma: aunque soporta espanol, el entrenamiento principal probablemente se centra en ingles y chino, por lo que el rendimiento en espanol puede ser inferior.
@@ -86,7 +86,7 @@ La comparativa se limita a la familia Qwen3 por falta de datos sobre otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-2M-qx64-hi-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-2M-qx64-hi-mlx
 - Variante mxfp8-mlx: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-mxfp8-mlx
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

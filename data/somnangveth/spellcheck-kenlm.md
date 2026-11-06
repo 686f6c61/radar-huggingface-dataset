@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`somnangveth/spellcheck-kenlm` es un repositorio publicado en HuggingFace por el usuario somnangveth bajo licencia MIT. Por el nombre del identificador, se trata de un artefacto de correccion ortografica basado en KenLM, una libreria de modelado de lenguaje estadistico (modelos n-grama con interpolacion y tecnicas de modificacion de Kneser-Ney) ampliamente utilizada para tareas de puntuacion, decodificacion y correccion en pipelines de reconocimiento de voz y procesamiento de texto.
+`somnangveth/spellcheck-kenlm` es un repositorio publicado en Hugging Face por el usuario somnangveth bajo licencia MIT. Por el nombre del identificador, se trata de un artefacto de correccion ortografica basado en KenLM, una libreria de modelado de lenguaje estadistico (modelos n-grama con interpolacion y tecnicas de modificacion de Kneser-Ney) ampliamente utilizada para tareas de puntuacion, decodificacion y correccion en pipelines de reconocimiento de voz y procesamiento de texto.
 
 La model card publicada no contiene informacion tecnica: unicamente declara la licencia MIT. No se especifican arquitectura, tamano, vocabulario, orden del n-grama ni corpus de entrenamiento. El repositorio registra cero descargas y cero likes en el momento de la consulta, y la fecha de creacion indicada es 2026-11-01, lo que sugiere un artefacto reciente y sin validacion por parte de la comunidad.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| somnangveth/spellcheck-kenlm | n-grama (KenLM), segun identificador | no disponible | no disponible | MIT | HuggingFace, sin descargas registradas |
+| somnangveth/spellcheck-kenlm | n-grama (KenLM), segun identificador | no disponible | no disponible | MIT | Hugging Face, sin descargas registradas |
 | kenlm (libreria de referencia) | n-grama | no aplica | no aplica | LGPL | Codigo abierto en GitHub |
 | SymSpell | corrector por distancia de edicion | no aplica | no aplica | MIT | Codigo abierto |
-| Modelos neuronales de correccion (p. ej. T5 small ajustado) | Transformer encoder-decoder | cientos de millones | cientos de tokens | variable | HuggingFace |
+| Modelos neuronales de correccion (p. ej. T5 small ajustado) | Transformer encoder-decoder | cientos de millones | cientos de tokens | variable | Hugging Face |
 
 La comparacion con modelos neuronales no es directa: un modelo n-grama ofrece menor calidad de correccion en contextos complejos pero un coste de inferencia y despliegue mucho menor.
 
@@ -83,6 +83,6 @@ La comparacion con modelos neuronales no es directa: un modelo n-grama ofrece me
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/somnangveth/spellcheck-kenlm
+- Repositorio Hugging Face: https://huggingface.co/somnangveth/spellcheck-kenlm
 - Libreria KenLM (referencia del tipo de artefacto): https://github.com/kpu/kenlm
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.

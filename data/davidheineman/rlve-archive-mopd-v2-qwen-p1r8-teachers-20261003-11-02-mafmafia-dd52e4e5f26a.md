@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-02-mafmafia-dd52e4e5f26a` es un checkpoint archivado de un entrenamiento completado, publicado por el usuario davidheineman en HuggingFace. No se trata de un modelo con model card descriptiva al uso, sino de un artefacto de preservación: la propia card indica que se conserva el checkpoint final de una ejecución terminada, con formato `hf-safetensors` y estado correspondiente al paso 89. El nombre del repositorio codifica la ruta original del experimento (`runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/02-MafMafia`) y el run ID de Weights & Biases `a5c6826a`.
+El repositorio `davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-02-mafmafia-dd52e4e5f26a` es un checkpoint archivado de un entrenamiento completado, publicado por el usuario davidheineman en Hugging Face. No se trata de un modelo con model card descriptiva al uso, sino de un artefacto de preservación: la propia card indica que se conserva el checkpoint final de una ejecución terminada, con formato `hf-safetensors` y estado correspondiente al paso 89. El nombre del repositorio codifica la ruta original del experimento (`runs/mopd-v2-qwen-p1r8-teachers-20261003-115039/resumable/02-MafMafia`) y el run ID de Weights & Biases `a5c6826a`.
 
 El modelo tiene 1.543.714.304 parámetros reales (aproximadamente 1,54 mil millones) según los pesos en safetensors, con un repositorio de 3,1 GB, un tamaño coherente con pesos en precisión de 16 bits. La etiqueta `qwen2` indica que la arquitectura pertenece a la familia Qwen2, y las etiquetas `rlve` y `scratch-archive` sugieren que proviene de una línea de trabajo interna de entrenamiento (posiblemente con componentes de refuerzo o evaluación, aunque no hay documentación pública que lo confirme) y que se publica como archivo de experimentos previos.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada para uso directo en producción: no tiene pipeline dec
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de la familia Qwen2 (segun la etiqueta `qwen2` de HuggingFace); detalles concretos de capas, atencion y dimensiones no disponibles |
+| Arquitectura | Transformer de la familia Qwen2 (segun la etiqueta `qwen2` de Hugging Face); detalles concretos de capas, atencion y dimensiones no disponibles |
 | Parametros totales | 1.543.714.304 (~1,54 mil millones) |
 | Parametros activos | No aplica: no hay indicios de que sea un modelo MoE |
 | Longitud de contexto | No disponible |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Este checkpoint (rlve-archive-mopd-v2-qwen-p1r8 ... 02-MafMafia) | ~1,54 B | No disponible | No disponible | Repo safetensors, 0 descargas | No disponible |
 | Qwen2.5-1.5B (Alibaba) | 1,54 B | 32.768 tokens (ampliable) | Apache 2.0 (mayoria de variantes) | Muy amplia, con GGUF y cuantizaciones | Benchmarks publicos extensos |
 | Qwen2-1.5B (Alibaba) | 1,5 B | 32.768 tokens | Apache 2.0 (mayoria de variantes) | Amplia | Benchmarks publicos |
-| SmolLM2-1.7B (HuggingFace) | 1,7 B | 8.192 tokens | Apache 2.0 | Amplia, con GGUF | Benchmarks publicos |
+| SmolLM2-1.7B (Hugging Face) | 1,7 B | 8.192 tokens | Apache 2.0 | Amplia, con GGUF | Benchmarks publicos |
 
 Nota: la comparativa de rendimiento no puede establecerse porque este checkpoint no publica ninguna evaluacion. Las cifras de contexto, licencia y disponibilidad de las alternativas se incluyen solo como referencia de categoria (modelos de ~1,5 B de parametros); conviene verificar la ficha oficial de cada modelo antes de tomar decisiones.
 
@@ -87,7 +87,7 @@ Nota: la comparativa de rendimiento no puede establecerse porque este checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-02-mafmafia-dd52e4e5f26a
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-02-mafmafia-dd52e4e5f26a
 - Perfil del autor: https://huggingface.co/davidheineman
 - Run de Weights & Biases referenciado en la card: run ID `a5c6826a` (no se proporciona URL directa)
 - Paper, blog, repositorio de codigo o demo: no disponibles

@@ -108,7 +108,7 @@ Como complemento, no competidor, el repositorio referencia `agentionai/Qwen3.8-F
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentionai/Signal-3.8-Flash-Next-GGUF
+- Modelo en Hugging Face: https://huggingface.co/agentionai/Signal-3.8-Flash-Next-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cabecera MTP en GGUF: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-Q8_0-GGUF
 - Sitio del autor: https://www.agention.ai/

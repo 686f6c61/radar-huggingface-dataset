@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`swetalpatel/my_new_model` es un repositorio de modelo alojado en HuggingFace por el usuario `swetalpatel`. La única información verificable que acompaña al repositorio es la declaración de licencia Apache-2.0 en el frontmatter de su model card; el resto del documento está vacío. No se especifica arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas ni formato de pesos, y la plataforma no declara ningún pipeline de inferencia asociado.
+`swetalpatel/my_new_model` es un repositorio de modelo alojado en Hugging Face por el usuario `swetalpatel`. La única información verificable que acompaña al repositorio es la declaración de licencia Apache-2.0 en el frontmatter de su model card; el resto del documento está vacío. No se especifica arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas ni formato de pesos, y la plataforma no declara ningún pipeline de inferencia asociado.
 
-El repositorio registra cero descargas y cero "likes", y tanto la fecha de creación como la de última actualización son idénticas (2026-10-23T20:40:11Z). El identificador `my_new_model` coincide con el nombre por defecto que generan varias plantillas y tutoriales de publicación en HuggingFace, lo que apunta a un repositorio de prueba o a un marcador de posición más que a un modelo entrenado y publicado con intención de uso.
+El repositorio registra cero descargas y cero "likes", y tanto la fecha de creación como la de última actualización son idénticas (2026-10-23T20:40:11Z). El identificador `my_new_model` coincide con el nombre por defecto que generan varias plantillas y tutoriales de publicación en Hugging Face, lo que apunta a un repositorio de prueba o a un marcador de posición más que a un modelo entrenado y publicado con intención de uso.
 
 Por tanto, esta ficha no puede evaluar el modelo en términos técnicos: se limita a documentar los metadatos existentes y a señalar explícitamente los vacíos de información. Cualquier dato sobre capacidades, rendimiento o requisitos de hardware se marca como no disponible. La relevancia actual del modelo es nula desde el punto de vista de un desarrollador o investigador, ya que no hay artefactos ni documentación que permitan reproducir o desplegar nada.
 
@@ -34,14 +34,14 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el volumen de tokens, la 
 - No consta soporte para flujos de agentes o razonamiento multi-paso.
 - No consta capacidad multilingüe; la metadata de idiomas está vacía.
 - No consta ningún modo especial (thinking mode, visión, audio, decodificación especulativa).
-- La única capacidad verificable es administrativa: el repositorio es públicamente accesible en HuggingFace bajo licencia Apache-2.0.
+- La única capacidad verificable es administrativa: el repositorio es públicamente accesible en Hugging Face bajo licencia Apache-2.0.
 
 ## Casos de uso
 
 No es posible determinar casos de uso funcionales a partir de la información disponible, ya que no se documentan capacidades. Los siguientes escenarios se refieren únicamente a lo que el repositorio permite hacer hoy, no a inferencia:
 
 - Auditoría de repositorios de modelos: usar este caso como ejemplo de model card incompleta para definir una checklist mínima de publicación (arquitectura, parámetros, contexto, licencia, formatos de pesos).
-- Prueba de pipelines de catalogación: validar herramientas internas que ingieren metadatos de HuggingFace frente a repositorios con campos vacíos y valores por defecto.
+- Prueba de pipelines de catalogación: validar herramientas internas que ingieren metadatos de Hugging Face frente a repositorios con campos vacíos y valores por defecto.
 - Formación de equipos: emplear el repositorio como caso práctico de por qué una licencia permisiva (Apache-2.0) sin artefactos ni documentación no es suficiente para aprobar un uso en producción.
 - Verificación de plantillas de publicación: comprobar qué genera por defecto un tutorial de subida de modelos y qué campos quedan sin rellenar.
 - Monitorización de la plataforma: rastrear repositorios con cero descargas y model cards vacías como señal de ruido en los índices de búsqueda de modelos.
@@ -84,6 +84,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swetalpatel/my_new_model
+- Repositorio en Hugging Face: https://huggingface.co/swetalpatel/my_new_model
 - No se han encontrado papers, blogs técnicos, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.
 - Resultados de búsqueda no relacionados (descartados como fuente): https://www.nextaimodel.com/, https://whataimodel.com/, https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models

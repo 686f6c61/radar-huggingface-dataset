@@ -77,9 +77,9 @@ Coste del corrector: 0,014 a 0,026 ms por paso de borrador en DGX Spark (una y o
 
 | Artefacto | Tipo | Tamaño | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TandemLLM-Qwen3.8-Flash-Next-EXL3-3.05-corrector | Corrector de borrador MTP | 35 MB | Reordena top-8 del cabezal de borrador en 4 profundidades | AGPL-3.0-only | HuggingFace (0 descargas, 1 like) |
-| Qwen/Qwen3.8-Flash-Next | Modelo base | No disponible | Generación de texto con capa MTP | No disponible en la información | HuggingFace |
-| turboderp/Qwen3.8-Flash-Next-exl3 | Cuantización EXL3 del modelo base | No disponible | Pack cuantizado a 3,05 bpw | No disponible en la información | HuggingFace (commit 69e33439) |
+| TandemLLM-Qwen3.8-Flash-Next-EXL3-3.05-corrector | Corrector de borrador MTP | 35 MB | Reordena top-8 del cabezal de borrador en 4 profundidades | AGPL-3.0-only | Hugging Face (0 descargas, 1 like) |
+| Qwen/Qwen3.8-Flash-Next | Modelo base | No disponible | Generación de texto con capa MTP | No disponible en la información | Hugging Face |
+| turboderp/Qwen3.8-Flash-Next-exl3 | Cuantización EXL3 del modelo base | No disponible | Pack cuantizado a 3,05 bpw | No disponible en la información | Hugging Face (commit 69e33439) |
 
 No se dispone de información sobre otros correctores de borrador comparables en la documentación proporcionada. La comparativa se limita a los componentes del ecosistema TandemLLM y al modelo base sobre el que opera.
 
@@ -92,12 +92,12 @@ No se dispone de información sobre otros correctores de borrador comparables en
 - Dependencia de las tablas de calibración: sin ellas, la ganancia puede caer a 0,0 % en cargas concurrentes.
 - Licencia AGPL-3.0-only: impone obligaciones de copyleft sobre el software que lo integre; debe evaluarse antes de un uso comercial propietario. El modelo base puede tener su propia licencia, no detallada en la información disponible.
 - Sin datos de sesgos ni alucinación: al no ser un modelo generativo autónomo, no aplican sesgos de generación propios, pero hereda los del modelo objetivo Qwen3.8-Flash-Next, sobre el que no se proporciona información.
-- Cero descargas y un solo like en HuggingFace: ecosistema muy reducido, sin validación comunitaria independiente.
-- Repositorio de 0,0 GB reportado: el tamaño real del archivo es de 35 MB según la model card; posible inconsistencia en los metadatos de HuggingFace.
+- Cero descargas y un solo like en Hugging Face: ecosistema muy reducido, sin validación comunitaria independiente.
+- Repositorio de 0,0 GB reportado: el tamaño real del archivo es de 35 MB según la model card; posible inconsistencia en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace del corrector: https://huggingface.co/0xBakeer/TandemLLM-Qwen3.8-Flash-Next-EXL3-3.05-corrector
+- Hugging Face del corrector: https://huggingface.co/0xBakeer/TandemLLM-Qwen3.8-Flash-Next-EXL3-3.05-corrector
 - Repositorio TandemLLM: https://github.com/0xBakeer/TandemLLM
 - Licencia TandemLLM (AGPL-3.0): https://github.com/0xBakeer/TandemLLM/blob/main/LICENSE
 - Pack EXL3 de turboderp: https://huggingface.co/turboderp/Qwen3.8-Flash-Next-exl3

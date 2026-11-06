@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `ariaallahyari/Aria` es un repositorio alojado en HuggingFace por el usuario `ariaallahyari`. Según los metadatos disponibles, fue creado el 15 de agosto de 2026 y actualizado el mismo día. No se ha registrado ninguna descarga y cuenta con un único "like". La información pública es extremadamente limitada: no se especifica el pipeline, la licencia, los idiomas soportados ni ningún detalle técnico sobre arquitectura, tamaño o entrenamiento. Por tanto, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante en la actualidad. Esta ficha se elabora únicamente a partir de los metadatos de HuggingFace, que no ofrecen datos sustanciales sobre el modelo.
+El modelo identificado como `ariaallahyari/Aria` es un repositorio alojado en Hugging Face por el usuario `ariaallahyari`. Según los metadatos disponibles, fue creado el 15 de agosto de 2026 y actualizado el mismo día. No se ha registrado ninguna descarga y cuenta con un único "like". La información pública es extremadamente limitada: no se especifica el pipeline, la licencia, los idiomas soportados ni ningún detalle técnico sobre arquitectura, tamaño o entrenamiento. Por tanto, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante en la actualidad. Esta ficha se elabora únicamente a partir de los metadatos de Hugging Face, que no ofrecen datos sustanciales sobre el modelo.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo identificado como `ariaallahyari/Aria` es un repositorio alojado en Hu
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens utilizados, ni sobre posibles técnicas como RLHF o DPO. No hay ninguna descripción técnica en el repositorio de HuggingFace que permita conocer la estructura interna o el proceso de entrenamiento.
+No se dispone de información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens utilizados, ni sobre posibles técnicas como RLHF o DPO. No hay ninguna descripción técnica en el repositorio de Hugging Face que permita conocer la estructura interna o el proceso de entrenamiento.
 
 ## Capacidades
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se documenta 
 
 ## Casos de uso
 
-No se dispone de información suficiente para determinar casos de uso concretos. Sin datos sobre arquitectura, entrenamiento o capacidades, no es posible sugerir aplicaciones prácticas realistas. Se recomienda consultar directamente el repositorio en HuggingFace para obtener más detalles si el autor los publica en el futuro.
+No se dispone de información suficiente para determinar casos de uso concretos. Sin datos sobre arquitectura, entrenamiento o capacidades, no es posible sugerir aplicaciones prácticas realistas. Se recomienda consultar directamente el repositorio en Hugging Face para obtener más detalles si el autor los publica en el futuro.
 
 ## Benchmarks y rendimiento
 
@@ -50,6 +50,6 @@ No disponible. Al no conocerse las características del modelo, no es posible co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ariaallahyari/Aria
+- Repositorio en Hugging Face: https://huggingface.co/ariaallahyari/Aria
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) asociados a este modelo.

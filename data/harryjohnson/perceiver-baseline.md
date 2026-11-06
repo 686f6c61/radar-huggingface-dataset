@@ -86,5 +86,5 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HarryJohnson/perceiver-baseline
+- Hugging Face: https://huggingface.co/HarryJohnson/perceiver-baseline
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo (corresponden a páginas de soporte de YouTube), por lo que no se incluyen enlaces adicionales.

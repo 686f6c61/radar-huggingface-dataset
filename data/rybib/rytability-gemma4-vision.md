@@ -64,6 +64,6 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rybib/rytability-gemma4-vision
+- Hugging Face: https://huggingface.co/Rybib/rytability-gemma4-vision
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized

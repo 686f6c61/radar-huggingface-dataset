@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-adapter | 350M | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Adaptador SFT sin benchmarks |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | HuggingFace | Modelo base oficial de Liquid AI |
-| SmolLM2-360M (HuggingFaceTB) | 360M | 8K (según documentación pública del modelo) | Apache 2.0 | HuggingFace | Alternativa de tamaño similar ampliamente evaluada |
-| Qwen2.5-0.5B | 500M | 32K (según documentación pública) | Apache 2.0 | HuggingFace | Mayor tamaño pero con benchmarks publicados |
+| lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-adapter | 350M | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Adaptador SFT sin benchmarks |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | Hugging Face | Modelo base oficial de Liquid AI |
+| SmolLM2-360M (HuggingFaceTB) | 360M | 8K (según documentación pública del modelo) | Apache 2.0 | Hugging Face | Alternativa de tamaño similar ampliamente evaluada |
+| Qwen2.5-0.5B | 500M | 32K (según documentación pública) | Apache 2.0 | Hugging Face | Mayor tamaño pero con benchmarks publicados |
 
 La comparativa se limita a parámetros, contexto y licencia; no se dispone de datos de rendimiento del adaptador para contrastar con las alternativas.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parámetros, contexto y licencia; no se dispone de da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-adapter
+- Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (librería de fine-tuning): https://github.com/huggingface/trl

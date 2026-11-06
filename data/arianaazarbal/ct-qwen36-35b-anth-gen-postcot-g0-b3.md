@@ -75,7 +75,7 @@ La informacion disponible solo permite comparar este adaptador con su propio mod
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ct-qwen36-35b-anth-gen-postcot-g0-b3 (este) | Adaptador LoRA r=64 sobre un base de 35B | No disponible (entrenado a 8192 tokens) | Sin benchmarks publicados | No disponible | Repositorio publico con 0 descargas y 0 likes |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B segun nomenclatura; activos no confirmados | No disponible en esta informacion | No disponible en esta informacion | Segun la ficha del modelo base | Publico en HuggingFace |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B segun nomenclatura; activos no confirmados | No disponible en esta informacion | No disponible en esta informacion | Segun la ficha del modelo base | Publico en Hugging Face |
 | Otros adaptadores del mismo programa (generaciones g1+, ramas b1/b2) | No disponible | No disponible | No disponible | No disponible | No disponibles en la informacion proporcionada |
 | Alternativas de la misma categoria (adaptadores de alineamiento sobre modelos de 30-40B) | No disponible | No disponible | No disponible | No disponible | No disponibles en la informacion proporcionada |
 
@@ -95,7 +95,7 @@ La informacion disponible solo permite comparar este adaptador con su propio mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ruta interna de Tinker registrada en la model card: tinker://25b9f487-4781-577c-aafa-4b7124dcfecf:train:0/sampler_weights/qwen36anthg0_qwen_anth_g0_b3_s2_cot_final
 - Ficheros auxiliares incluidos en el repositorio: `training_seed_constitution.md` (constitucion semilla de la generacion 0) y `tinker_meta.json` (registro de exportacion)

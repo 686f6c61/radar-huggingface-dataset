@@ -4,7 +4,7 @@
 
 ## Resumen
 
-CataNET-Terrain-v1.0-Large es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario nithinmanoj10, orientado a la identificacion de tipos de terreno en tableros del juego de mesa Catan. Se distribuye como un ajuste fino (fine-tune) del clasificador MobileNetV3-Large de timm (`timm/tf_mobilenetv3_large_100.in1k`), por lo que hereda una red convolucional compacta de aproximadamente 5,4 millones de parametros, disenada para inferencia en dispositivos con recursos limitados.
+CataNET-Terrain-v1.0-Large es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario nithinmanoj10, orientado a la identificacion de tipos de terreno en tableros del juego de mesa Catan. Se distribuye como un ajuste fino (fine-tune) del clasificador MobileNetV3-Large de timm (`timm/tf_mobilenetv3_large_100.in1k`), por lo que hereda una red convolucional compacta de aproximadamente 5,4 millones de parametros, disenada para inferencia en dispositivos con recursos limitados.
 
 El modelo se publica bajo licencia MIT, con etiquetas de vision, image-classification, feature-extraction y ONNX, y declara unicamente el ingles como idioma. Su ambito de aplicacion es muy especifico: no compite con modelos de vision de proposito general, sino que cubre una tarea de nicho (vision por computador aplicada a un juego de mesa concreto) que puede emplearse como componente en herramientas de digitalizacion de partidas, arbitraje automatico o extraccion de caracteristicas para tareas posteriores.
 
@@ -24,7 +24,7 @@ La model card publicada es practicamente vacia (solo contiene metadatos YAML): n
 | Licencia | MIT |
 | Formato de pesos | ONNX (tag `onnx`); no se especifican otros formatos |
 | Tarea (pipeline) | image-classification (con etiqueta adicional feature-extraction) |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Fecha de creacion / ultima actualizacion | 2026-09-17 / 2026-09-17 |
 | Descargas / likes | 0 / 0 |
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CataNET-Terrain-v1.0-Large | MobileNetV3-Large (fine-tune) | ~5,4 M (heredado) | 224 x 224 px (arquitectura base) | Clasificacion de terreno de Catan | MIT | Publicado en HuggingFace; repositorio de 0,0 GB, 0 descargas |
+| CataNET-Terrain-v1.0-Large | MobileNetV3-Large (fine-tune) | ~5,4 M (heredado) | 224 x 224 px (arquitectura base) | Clasificacion de terreno de Catan | MIT | Publicado en Hugging Face; repositorio de 0,0 GB, 0 descargas |
 | CataNET-Terrain-v1.0-Small | no disponible | no disponible | no disponible | Clasificacion de terreno de Catan | no disponible | Referenciado como `new_version` en la model card; no verificado |
-| timm/tf_mobilenetv3_large_100.in1k (modelo base) | MobileNetV3-Large | ~5,4 M | 224 x 224 px | Clasificacion en 1.000 clases de ImageNet-1k | no disponible en esta ficha | Publico en HuggingFace (timm) |
+| timm/tf_mobilenetv3_large_100.in1k (modelo base) | MobileNetV3-Large | ~5,4 M | 224 x 224 px | Clasificacion en 1.000 clases de ImageNet-1k | no disponible en esta ficha | Publico en Hugging Face (timm) |
 
 No se han identificado en la informacion disponible otros modelos publicos especificos para clasificacion de terreno de Catan con los que establecer una comparacion directa. Las alternativas genericas de la misma familia (EfficientNet-B0, ResNet-18 o MobileNetV2) son comparables en coste computacional, pero no en dominio de aplicacion.
 
@@ -95,8 +95,8 @@ No se han identificado en la informacion disponible otros modelos publicos espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nithinmanoj10/CataNET-Terrain-v1.0-Large
-- Modelo base en HuggingFace: https://huggingface.co/timm/tf_mobilenetv3_large_100.in1k
+- Modelo en Hugging Face: https://huggingface.co/nithinmanoj10/CataNET-Terrain-v1.0-Large
+- Modelo base en Hugging Face: https://huggingface.co/timm/tf_mobilenetv3_large_100.in1k
 - Version alternativa referenciada como `new_version` en la model card: https://huggingface.co/nithinmanoj10/CataNET-Terrain-v1.0-Small
 - Paper de MobileNetV3 (archivo de referencia de la arquitectura heredada): https://arxiv.org/abs/1905.02244
 - Repositorio de timm (libreria del modelo base): https://github.com/huggingface/pytorch-image-models

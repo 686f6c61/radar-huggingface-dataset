@@ -1,11 +1,11 @@
 # Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch
 
 ## Resumen
-Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch es un ajuste fino supervisado (SFT) del modelo Qwen3-Coder-30B-A3B, publicado por el usuario Zhangdanyang en HuggingFace bajo licencia Apache 2.0 y con acceso restringido (gated). Se trata de un modelo de generación de texto de arquitectura Mixture-of-Experts (MoE) etiquetado como qwen3_moe, con 30.532.122.624 parámetros totales y un peso de repositorio de 61,1 GB en safetensors. El sufijo del nombre ("SFT-TH-2epoch") sugiere un entrenamiento supervisado de 2 épocas, pero la model card no detalla el dataset ni el significado de "TH".
+Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch es un ajuste fino supervisado (SFT) del modelo Qwen3-Coder-30B-A3B, publicado por el usuario Zhangdanyang en Hugging Face bajo licencia Apache 2.0 y con acceso restringido (gated). Se trata de un modelo de generación de texto de arquitectura Mixture-of-Experts (MoE) etiquetado como qwen3_moe, con 30.532.122.624 parámetros totales y un peso de repositorio de 61,1 GB en safetensors. El sufijo del nombre ("SFT-TH-2epoch") sugiere un entrenamiento supervisado de 2 épocas, pero la model card no detalla el dataset ni el significado de "TH".
 
 El modelo parte de la familia Qwen3-Coder, la variante orientada a código de Qwen3, que destaca por sus capacidades de codificación agéntica, soporte de function calling y contexto extendido de hasta 1M tokens en la arquitectura base. Al ser un fine-tune, hereda esta base arquitectónica (MoE con 3,3B parámetros activos por token), aunque los detalles concretos del ajuste no están publicados.
 
-Su relevancia es limitada por el momento: cuenta con 0 descargas y 0 likes, no dispone de resultados de benchmarks publicados y el acceso está restringido, por lo que su evaluación práctica requiere aceptar las condiciones en HuggingFace. Es un modelo a considerar únicamente como experimento de fine-tuning sobre una base sólida, no como un artefacto listo para producción sin validación previa.
+Su relevancia es limitada por el momento: cuenta con 0 descargas y 0 likes, no dispone de resultados de benchmarks publicados y el acceso está restringido, por lo que su evaluación práctica requiere aceptar las condiciones en Hugging Face. Es un modelo a considerar únicamente como experimento de fine-tuning sobre una base sólida, no como un artefacto listo para producción sin validación previa.
 
 ## Especificaciones tecnicas
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch | 30,5B / 3,3B | No disponible (base: hasta 1M) | apache-2.0 | Gated en HuggingFace, 0 descargas |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B / 3,3B | 1M tokens (arquitectura base) | apache-2.0 | Público en HuggingFace |
-| Qwen3-30B-A3B (arquitectura base) | 30,5B / 3,3B | No disponible | apache-2.0 | Público en HuggingFace |
+| Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch | 30,5B / 3,3B | No disponible (base: hasta 1M) | apache-2.0 | Gated en Hugging Face, 0 descargas |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B / 3,3B | 1M tokens (arquitectura base) | apache-2.0 | Público en Hugging Face |
+| Qwen3-30B-A3B (arquitectura base) | 30,5B / 3,3B | No disponible | apache-2.0 | Público en Hugging Face |
 
 No se dispone de datos de rendimiento comparados entre estas variantes en la información proporcionada.
 
 ## Limitaciones y advertencias
 - Ausencia total de benchmarks publicados: no hay evidencia empírica de que el fine-tune mejore o degrade la base.
 - Model card prácticamente vacía: se desconoce el dataset de SFT, el significado de "TH", el número de tokens de entrenamiento y si hubo RLHF o DPO.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar, lo que limita la reproducibilidad inmediata.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar, lo que limita la reproducibilidad inmediata.
 - Sin descargas ni likes: no existe validación comunitaria ni retroalimentación de uso real.
 - Riesgo de alucinación: inherente a los modelos de lenguaje; no hay evaluación específica para este fine-tune.
 - Sesgos: no documentados; al derivar de Qwen3, hereda los sesgos presentes en los datos de preentrenamiento de la base.
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparados entre estas variantes en la inf
 - Uso en producción desaconsejado sin una evaluación previa exhaustiva, dado el nivel de documentación disponible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Zhangdanyang/Qwen3-Coder-30B-A3B-SFT-TH-2epoch
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Documentación de vLLM Ascend para Qwen3-Coder-30B-A3B: https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3-Coder-30B-A3B.html
 - Imagen Docker de Qwen3-Coder: https://hub.docker.com/r/ai/qwen3-coder

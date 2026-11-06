@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| opsbr/stories15M-en-early | 15.191.712 | 256 | Pérdida de validación 3,016034 en la actualización 600 | MIT (pesos); tokenizador bajo Llama 2 Community License | HuggingFace, repo de 0,1 GB |
+| opsbr/stories15M-en-early | 15.191.712 | 256 | Pérdida de validación 3,016034 en la actualización 600 | MIT (pesos); tokenizador bajo Llama 2 Community License | Hugging Face, repo de 0,1 GB |
 | stories15M de Karpathy (run de referencia citado en la model card) | 15.191.712 (misma arquitectura) | 256 | No disponible en la información proporcionada | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | Modelo inglés entrenado del taller Transformer Dojo | No disponible | No disponible | No disponible | No disponible | Se menciona como comparación en el taller, sin ficha pública en la información disponible |
 
@@ -107,7 +107,7 @@ La comparación relevante es arquitectónica: este checkpoint comparte exactamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/opsbr/stories15M-en-early
+- Modelo en Hugging Face: https://huggingface.co/opsbr/stories15M-en-early
 - Repositorio Transformer Dojo: https://github.com/opsbr/transformer-dojo
 - Registro de entrenamiento del checkpoint temprano: https://github.com/opsbr/transformer-dojo/tree/main/docs/evidence/2026-10-18-early-model
-- Dataset TinyStories en HuggingFace: https://huggingface.co/datasets/roneneldan/TinyStories
+- Dataset TinyStories en Hugging Face: https://huggingface.co/datasets/roneneldan/TinyStories

@@ -4,7 +4,7 @@
 
 KitsuMate/neutts-2e-onnx es una conversion a formato ONNX del modelo de sintesis de voz (TTS) en ingles NeuTTS-2E de Neuphonic, un sistema de voz fija con control emocional explicito. No se trata de un modelo entrenado desde cero, sino de un empaquetado de inferencia multiplataforma: el autor publica el backbone convertido en cuatro perfiles de precision (FP32, FP16, INT8 e INT4) junto con el decodificador de codec compartido, de modo que se pueda ejecutar en ONNX Runtime (CPU y CUDA) e integrarse en Unity sin depender de PyTorch ni de un fonemizador en tiempo de ejecucion.
 
-El modelo expone cuatro voces (`emily`, `paul`, `sophie`, `steven`) y siete emociones (`angry`, `disgusted`, `fearful`, `happy`, `neutral`, `sad`, `surprised`), con `emily`/`neutral` como valores por defecto. El backbone esta etiquetado como `qwen3` en HuggingFace, lo que apunta a una arquitectura transformer generativa de tokens de audio; el decodificador NeuCodec transforma esos tokens en audio mono a 24 kHz. El presupuesto de contexto es de 2048 tokens, que incluyen la referencia, el texto y los tokens generados.
+El modelo expone cuatro voces (`emily`, `paul`, `sophie`, `steven`) y siete emociones (`angry`, `disgusted`, `fearful`, `happy`, `neutral`, `sad`, `surprised`), con `emily`/`neutral` como valores por defecto. El backbone esta etiquetado como `qwen3` en Hugging Face, lo que apunta a una arquitectura transformer generativa de tokens de audio; el decodificador NeuCodec transforma esos tokens en audio mono a 24 kHz. El presupuesto de contexto es de 2048 tokens, que incluyen la referencia, el texto y los tokens generados.
 
 Su relevancia practica esta en el despliegue: al ser ONNX, se puede ejecutar en CPU sin GPU y con Huella de memoria reducida (349 MB en INT8 frente a 1390 MB en FP32). Se publica como version preliminar con verificacion numerica automatizada, pero sin revision subjetiva de escucha completada segun la propia model card.
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados de modelos alternativos de la misma categoria
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KitsuMate/neutts-2e-onnx
+- Repositorio Hugging Face: https://huggingface.co/KitsuMate/neutts-2e-onnx
 - Modelo base (checkpoint PyTorch de referencia): https://huggingface.co/neuphonic/neutts-2e
 - Licencia del backbone: `LICENSE` dentro del repositorio (NeuTTS Open License v1.0)
 - Licencia del codec: `CODEC_LICENSE` (Apache-2.0) y `ATTRIBUTION.md`

@@ -76,8 +76,8 @@ La comparativa se basa en parametros y licencia, ya que no se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NostraEmpire/mirror-deepseek-r1-distill-qwen-1.5b
+- Repositorio Hugging Face: https://huggingface.co/NostraEmpire/mirror-deepseek-r1-distill-qwen-1.5b
 - Repositorio oficial de DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
-- Coleccion de modelos DeepSeek-R1 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Coleccion de modelos DeepSeek-R1 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-r1
 - Pagina del modelo en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper de DeepSeek-R1 (referencia en la model card): arxiv:2501.12948

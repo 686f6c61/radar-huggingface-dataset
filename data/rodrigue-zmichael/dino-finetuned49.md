@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dino-finetuned49 es un repositorio de HuggingFace publicado por el usuario RODRIGUE-ZMICHAEL que contiene una implementacion experimental de una arquitectura denominada "Dino" orientada a tareas multitarea ("multitask"). Segun la propia model card, no se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: el archivo `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y no como un checkpoint con resultados de benchmark.
+dino-finetuned49 es un repositorio de Hugging Face publicado por el usuario RODRIGUE-ZMICHAEL que contiene una implementacion experimental de una arquitectura denominada "Dino" orientada a tareas multitarea ("multitask"). Segun la propia model card, no se trata de un modelo entrenado ni evaluado, sino de un punto de partida reproducible: el archivo `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y no como un checkpoint con resultados de benchmark.
 
 El dato mas relevante del repositorio es su tamano real: el recuento de parametros extraido del archivo safetensors es de 24.832 parametros, una cifra extremadamente reducida que confirma que se trata de un esqueleto de codigo para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, tal y como declara el autor. La model card indica una escala nominal "huge", atencion estandar, fusion mediante cross attention, activacion swish y normalizacion scalenorm, ademas de una receta de experimento por defecto con el optimizador novograd y un schedule de tipo step.
 
@@ -65,8 +65,8 @@ No hay modelos directamente comparables: el repositorio es un esqueleto de arqui
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dino-finetuned49 (este) | 24.832 | no disponible | sin benchmark publicado | MIT | HuggingFace, checkpoint de inicializacion |
-| DINOv2 ViT-S/14 (referencia externa) | ~21 M | no aplica (vision) | benchmarks publicados por Meta | Apache 2.0 (segun version) | HuggingFace, modelo entrenado |
+| dino-finetuned49 (este) | 24.832 | no disponible | sin benchmark publicado | MIT | Hugging Face, checkpoint de inicializacion |
+| DINOv2 ViT-S/14 (referencia externa) | ~21 M | no aplica (vision) | benchmarks publicados por Meta | Apache 2.0 (segun version) | Hugging Face, modelo entrenado |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion debe interpretarse con cautela: la diferencia de tres ordenes de magnitud en parametros y la ausencia total de entrenamiento en el caso de dino-finetuned49 impiden cualquier comparacion de rendimiento significativa.
@@ -83,5 +83,5 @@ La comparacion debe interpretarse con cautela: la diferencia de tres ordenes de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RODRIGUE-ZMICHAEL/dino-finetuned49
+- Hugging Face: https://huggingface.co/RODRIGUE-ZMICHAEL/dino-finetuned49
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a un servicio de billetteria y a un artista con el nombre comercial "Rodrigue", y a la isla Rodrigues, sin relacion alguna con el modelo.

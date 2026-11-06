@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HYGGEhygge/someone es un repositorio alojado en HuggingFace que, a fecha de la informacion disponible, no contiene una ficha de modelo en sentido estricto: su model card es un volcado de resultados de filtrado de pedidos. El contenido describe 58 ordenes procedentes de la ruta `/home/GRQ/lw_9/ordermsg_logs_20260910`, con dos ficheros por pedido: `<fecha>_<order_id>.llm_record.jsonl` (todas las llamadas al modelo de esa orden, ordenadas por tiempo) y `<fecha>_<order_id>.app.log` (todas las lineas de log de ejecucion).
+HYGGEhygge/someone es un repositorio alojado en Hugging Face que, a fecha de la informacion disponible, no contiene una ficha de modelo en sentido estricto: su model card es un volcado de resultados de filtrado de pedidos. El contenido describe 58 ordenes procedentes de la ruta `/home/GRQ/lw_9/ordermsg_logs_20260910`, con dos ficheros por pedido: `<fecha>_<order_id>.llm_record.jsonl` (todas las llamadas al modelo de esa orden, ordenadas por tiempo) y `<fecha>_<order_id>.app.log` (todas las lineas de log de ejecucion).
 
 La segunda mitad de la model card contiene transcripciones reconstruidas con marcas de tiempo (`build_timed_transcript.py`) de conversaciones entre un asesor automatizado y usuarios, con llamadas a los endpoints `/detect` y `/order_reply`. No se publican pesos, arquitectura, parametros, tokenizador ni configuracion de inferencia, por lo que no es posible identificar que modelo subyace ni reproducir su comportamiento.
 
@@ -103,7 +103,7 @@ No es posible establecer una comparativa: no hay categoria funcional declarada (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HYGGEhygge/someone
+- Repositorio en Hugging Face: https://huggingface.co/HYGGEhygge/someone
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible (se menciona el script `build_timed_transcript.py`, sin enlace)

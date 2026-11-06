@@ -78,7 +78,7 @@ No se conocen otros modelos TTS comunitarios específicos para gujarati con deta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meeeetxd/pocket-tts-gujarati
+- Modelo en Hugging Face: https://huggingface.co/meeeetxd/pocket-tts-gujarati
 - Modelo base (Kyutai Pocket TTS): https://huggingface.co/kyutai/pocket-tts
 - Paper de Pocket TTS: https://arxiv.org/abs/2509.06926
 - Repositorio de código: https://github.com/kyutai-labs/pocket-tts

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Mahesh151525/rl_course_vizdoom_health_gathering_supreme` es una política de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenada con el algoritmo APPO sobre el entorno `doom_health_gathering_supreme` de ViZDoom. Lo publica el usuario Mahesh151525 en HuggingFace y se distribuye dentro del ecosistema de Sample-Factory 2.0, la libreria de referencia para entrenar agentes RL a gran escala sobre entornos complejos.
+El modelo `Mahesh151525/rl_course_vizdoom_health_gathering_supreme` es una política de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenada con el algoritmo APPO sobre el entorno `doom_health_gathering_supreme` de ViZDoom. Lo publica el usuario Mahesh151525 en Hugging Face y se distribuye dentro del ecosistema de Sample-Factory 2.0, la libreria de referencia para entrenar agentes RL a gran escala sobre entornos complejos.
 
 No se trata de un modelo de lenguaje: no genera texto, no razona en lenguaje natural y no tiene ventana de contexto. Su funcion es mapear observaciones (fotogramas del videojuego Doom y variables de estado) a acciones discretas dentro del entorno, con el objetivo de maximizar la recogida de botiquines y sobrevivir el maximo tiempo posible. El unico resultado declarado es una recompensa media de 11,97 +/- 4,61 en el entorno de entrenamiento, marcada como no verificada por el autor.
 
@@ -89,7 +89,7 @@ No se dispone de resultados publicados de otros modelos sobre `doom_health_gathe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahesh151525/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/Mahesh151525/rl_course_vizdoom_health_gathering_supreme
 - Repositorio de Sample-Factory 2.0: https://github.com/alex-petrenko/sample-factory
 - Documentacion de Sample-Factory: https://www.samplefactory.dev/
 - La busqueda web no ha proporcionado enlaces adicionales relevantes sobre este modelo.

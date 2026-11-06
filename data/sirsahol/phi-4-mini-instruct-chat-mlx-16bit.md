@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SirSahOl/Phi-4-mini-instruct-chat-mlx-16bit es un repositorio alojado en HuggingFace por el usuario SirSahOl. El identificador del repositorio indica que se trata de una conversion al formato MLX en precision de 16 bits del modelo Phi-4-mini-instruct de Microsoft, presumiblemente con algun ajuste o plantilla orientada a chat. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribucion de pesos ya existentes en un formato optimizado para Apple Silicon.
+SirSahOl/Phi-4-mini-instruct-chat-mlx-16bit es un repositorio alojado en Hugging Face por el usuario SirSahOl. El identificador del repositorio indica que se trata de una conversion al formato MLX en precision de 16 bits del modelo Phi-4-mini-instruct de Microsoft, presumiblemente con algun ajuste o plantilla orientada a chat. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribucion de pesos ya existentes en un formato optimizado para Apple Silicon.
 
 La relevancia de este tipo de repositorios es practica: MLX es el framework de inferencia de Apple para chips de la familia M, y las conversiones a 16 bits permiten ejecutar modelos de gama media en Macs con memoria unificada sin recurrir a CUDA ni a servicios en la nube. El interes, por tanto, esta en el formato y en la facilidad de despliegue local, no en una mejora de capacidades respecto al modelo original.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye especificaciones del mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/Phi-4-mini-instruct-chat-mlx-16bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/Phi-4-mini-instruct-chat-mlx-16bit
 - Modelo base de referencia (Phi-4-mini-instruct, Microsoft): no incluido en la informacion proporcionada
 - Documentacion de MLX: no incluida en la informacion proporcionada
 - Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el modelo. Corresponden a repositorios y foros sobre EcoleDirecte (https://github.com/mdeverdelhan/ecoledirecte-client, https://github.com/qLVN/EDBruteforce, https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf, https://forums.commentcamarche.net/forum/affich-37323812-ecole-direct, https://gist.github.com/Gildas-GH/490d62dfae9d68333be7bedad78fb6fb) y no aportan informacion tecnica sobre el modelo.

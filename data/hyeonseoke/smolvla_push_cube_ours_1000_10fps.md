@@ -60,10 +60,10 @@ No se dispone de datos suficientes para una comparativa detallada. Los modelos m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyeonseokE/smolvla_push_cube_ours_1000_10fps | 450.046.176 | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| HyeonseokE/smolvla_push_cube_cap_1000_10fps | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| HyeonseokE/smolvla_push_cube_cap_2000_10fps | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| HyeonseokE/smolvla_push_cube_ours_1000_10fps | 450.046.176 | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| HyeonseokE/smolvla_push_cube_cap_1000_10fps | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| HyeonseokE/smolvla_push_cube_cap_2000_10fps | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

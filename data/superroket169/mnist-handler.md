@@ -2,9 +2,9 @@
 
 ## Resumen
 
-mnist-handler es un repositorio publicado en HuggingFace por el usuario superroket169 (identificado en su perfil como isa-güllü) bajo licencia Apache-2.0. A diferencia de un modelo de lenguaje, el nombre y la descripcion del repositorio asociado en GitHub indican que se trata de una implementacion de clasificacion de digitos manuscritos sobre el conjunto de datos MNIST, escrita en Rust y ejecutada en GPU mediante Vulkan. No se trata, por tanto, de un modelo generativo ni de un transformer con pesos publicados.
+mnist-handler es un repositorio publicado en Hugging Face por el usuario superroket169 (identificado en su perfil como isa-güllü) bajo licencia Apache-2.0. A diferencia de un modelo de lenguaje, el nombre y la descripcion del repositorio asociado en GitHub indican que se trata de una implementacion de clasificacion de digitos manuscritos sobre el conjunto de datos MNIST, escrita en Rust y ejecutada en GPU mediante Vulkan. No se trata, por tanto, de un modelo generativo ni de un transformer con pesos publicados.
 
-El repositorio de HuggingFace no contiene model card sustantiva (unicamente la declaracion de licencia), no incluye pesos, no declara pipeline, idiomas ni arquitectura, y su tamano declarado es de 0.0 GB, con 0 descargas y 0 likes en el momento de la consulta. Esto impide confirmar parametros, contexto, cuantizaciones o formato de pesos.
+El repositorio de Hugging Face no contiene model card sustantiva (unicamente la declaracion de licencia), no incluye pesos, no declara pipeline, idiomas ni arquitectura, y su tamano declarado es de 0.0 GB, con 0 descargas y 0 likes en el momento de la consulta. Esto impide confirmar parametros, contexto, cuantizaciones o formato de pesos.
 
 Su relevancia actual es limitada y de caracter mas bien experimental o de aprendizaje: sirve como ejemplo de integracion de un clasificador clasico de vision (MNIST) con computo en GPU mediante Rust y Vulkan, no como alternativa a modelos de lenguaje ni a sistemas de vision de proposito general.
 
@@ -19,11 +19,11 @@ Su relevancia actual es limitada y de caracter mas bien experimental o de aprend
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | Apache-2.0 |
-| Formato de pesos | no disponible (el repositorio de HuggingFace ocupa 0.0 GB y no contiene pesos publicados) |
+| Formato de pesos | no disponible (el repositorio de Hugging Face ocupa 0.0 GB y no contiene pesos publicados) |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura, el proceso de entrenamiento, el numero de tokens o muestras utilizadas, la composicion del dataset ni la existencia de fases de ajuste como RLHF o DPO. La model card del repositorio de HuggingFace se limita a la cabecera de licencia (`license: apache-2.0`) y no incluye ninguna seccion descriptiva.
+No hay informacion publicada sobre la arquitectura, el proceso de entrenamiento, el numero de tokens o muestras utilizadas, la composicion del dataset ni la existencia de fases de ajuste como RLHF o DPO. La model card del repositorio de Hugging Face se limita a la cabecera de licencia (`license: apache-2.0`) y no incluye ninguna seccion descriptiva.
 
 El unico indicio tecnico disponible proviene de la descripcion del repositorio homonimo en GitHub, que lo describe como "mnist-handler on gpu... in rust and vulcan" (Rust y Vulkan). Esto apunta a una implementacion de inferencia o entrenamiento acelerado por GPU mediante la API grafica Vulkan, probablemente orientada al reconocimiento de digitos manuscritos del dataset MNIST (60.000 imagenes de entrenamiento y 10.000 de test, 28x28 pixeles en escala de grises, segun las referencias publicas del dataset). Cualquier detalle adicional sobre capas, funciones de activacion, optimizador o hiperparametros debe considerarse no disponible.
 
@@ -71,7 +71,7 @@ No se dispone de datos objetivos (parametros, contexto, rendimiento o licencia d
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| superroket169/mnist-handler | no disponible | no disponible (tarea: clasificacion de digitos MNIST) | no disponible | Apache-2.0 | Repositorio en HuggingFace sin pesos publicados (0.0 GB) |
+| superroket169/mnist-handler | no disponible | no disponible (tarea: clasificacion de digitos MNIST) | no disponible | Apache-2.0 | Repositorio en Hugging Face sin pesos publicados (0.0 GB) |
 | LeNet-5 (referencia historica sobre MNIST) | aproximadamente 60.000 parametros (referencia publica) | imagenes de 32x32 (MNIST reescalado) | no disponible en esta ficha | no aplicable | Arquitectura publicada en literatura |
 | Clasificadores CNN genericos sobre MNIST | no disponible | imagenes de 28x28 | no disponible en esta ficha | variable segun implementacion | Multiples implementaciones publicas |
 
@@ -80,7 +80,7 @@ La comparativa se ofrece unicamente como contexto cualitativo; no se han verific
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: la model card no describe arquitectura, datos de entrenamiento, metricas ni limitaciones.
-- Ausencia de pesos publicados: el repositorio de HuggingFace ocupa 0.0 GB, por lo que no es posible descargar ni ejecutar el modelo desde esa plataforma.
+- Ausencia de pesos publicados: el repositorio de Hugging Face ocupa 0.0 GB, por lo que no es posible descargar ni ejecutar el modelo desde esa plataforma.
 - Sin metricas de validacion: no hay ninguna cifra de exactitud ni de error publicada, lo que impide valorar su calidad frente a alternativas.
 - Cero adopcion verificable: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso por terceros.
 - Ambito funcional muy restringido: un clasificador MNIST reconoce digitos manuscritos aislados en imagenes de 28x28; no es un modelo de lenguaje ni un sistema de vision general, por lo que no debe emplearse para generacion de texto, codigo, razonamiento o analisis de documentos.
@@ -92,9 +92,9 @@ La comparativa se ofrece unicamente como contexto cualitativo; no se han verific
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/superroket169/mnist-handler
+- Repositorio en Hugging Face: https://huggingface.co/superroket169/mnist-handler
 - Repositorio en GitHub (mnist-handler, Rust y Vulkan): https://github.com/superroket169/mnist-handler
 - Repositorio en GitHub (mnist-viewer): https://github.com/superroket169/mnist-viewer
-- Perfil de HuggingFace del autor: https://huggingface.co/superroket169/models
+- Perfil de Hugging Face del autor: https://huggingface.co/superroket169/models
 - Referencia sobre el dataset MNIST (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/mnist-dataset/
 - Tutorial de reconocimiento de digitos manuscritos (HyperAI): https://hyper.ai/en/docs/tutorials/tutorial-mnist

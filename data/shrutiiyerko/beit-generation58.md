@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Shrutiiyerko/beit-generation58 es un andamiaje experimental publicado en HuggingFace que implementa una arquitectura BEiT (Bert pre-training of Image Transformers) orientada a tareas de generacion, con una configuracion declarada como "xlarge". Lo firma el usuario Shrutiiyerko dentro de la region "us" y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni evaluado: la propia model card indica de forma explicita que el checkpoint es una inicializacion valida para pruebas de humo ("smoke tests") y no un checkpoint con benchmarks.
+El repositorio Shrutiiyerko/beit-generation58 es un andamiaje experimental publicado en Hugging Face que implementa una arquitectura BEiT (Bert pre-training of Image Transformers) orientada a tareas de generacion, con una configuracion declarada como "xlarge". Lo firma el usuario Shrutiiyerko dentro de la region "us" y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni evaluado: la propia model card indica de forma explicita que el checkpoint es una inicializacion valida para pruebas de humo ("smoke tests") y no un checkpoint con benchmarks.
 
 El dato mas relevante es su tamano real. El archivo safetensors declara un total de 16.576 parametros, una cifra trivial que no se corresponde con ninguna configuracion "xlarge" de un transformer de vision y que apunta a un fichero practicamente vacio o a un esqueleto de pesos sin inicializar de forma significativa. El tamano del repositorio es de 0,0 GB, coherente con esa ausencia de pesos reales.
 
@@ -22,7 +22,7 @@ Por tanto, este repositorio no es utilizable como modelo de produccion ni como b
 | Formato de pesos | safetensors (mas artefactos de codigo en Python y JSON) |
 | Escala declarada | xlarge |
 | Optimizador por defecto | novograd con schedule exponencial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -85,5 +85,5 @@ No disponible. El repositorio no contiene un modelo entrenado y su recuento de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shrutiiyerko/beit-generation58
+- Modelo en Hugging Face: https://huggingface.co/Shrutiiyerko/beit-generation58
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

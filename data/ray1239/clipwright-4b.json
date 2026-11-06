@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ray1239/clipwright-4b",
+  "slug": "ray1239-clipwright-4b",
+  "author": "Ray1239",
+  "url": "https://huggingface.co/Ray1239/clipwright-4b",
+  "created_at": "2026-11-05T06:31:34.000Z",
+  "updated_at": "2026-11-05T06:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "ffmpeg",
+    "imagemagick",
+    "sox",
+    "exiftool",
+    "agent",
+    "tool-use",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 4890356699,
+  "storage_human": "4.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ray1239 (Mohammed Usmani) - Hugging Face",
+      "url": "https://huggingface.co/Ray1239/models",
+      "snippet": "Ray1239/finetuned-sentiment-model-roberta Text Classification • 0.1B•Updated Jun 30, 2025• 3"
+    },
+    {
+      "title": "Ray1239/ffmpeg-model · Hugging Face",
+      "url": "https://huggingface.co/Ray1239/ffmpeg-model",
+      "snippet": "Instructions to use Ray1239/ffmpeg-model with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Ray1239/ffmpeg-model with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

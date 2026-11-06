@@ -1,7 +1,7 @@
 # quentinrobert/cnn-transformer-demo
 
 ## Resumen
-El modelo `quentinrobert/cnn-transformer-demo` es una implementación de referencia de una arquitectura híbrida CNN-Transformer diseñada para tareas de matching. Ha sido desarrollado por `quentinrobert` y publicado en HuggingFace bajo licencia Apache 2.0. El repositorio incluye un checkpoint de inicialización (`model.safetensors`) de 16.576 parámetros, que no ha sido entrenado ni evaluado; su propósito es servir como base para pruebas de humo y experimentos reproducibles. La arquitectura destaca por el uso de atención grouped query, fusión Tucker y normalización por lotes, en una configuración denominada "giant" que, pese al nombre, corresponde a un modelo de tamaño mínimo. No se dispone de datos sobre la longitud de contexto ni sobre los idiomas soportados. Este modelo no es un sistema funcional de IA, sino un punto de partida experimental para desarrolladores que quieran explorar o extender la arquitectura.
+El modelo `quentinrobert/cnn-transformer-demo` es una implementación de referencia de una arquitectura híbrida CNN-Transformer diseñada para tareas de matching. Ha sido desarrollado por `quentinrobert` y publicado en Hugging Face bajo licencia Apache 2.0. El repositorio incluye un checkpoint de inicialización (`model.safetensors`) de 16.576 parámetros, que no ha sido entrenado ni evaluado; su propósito es servir como base para pruebas de humo y experimentos reproducibles. La arquitectura destaca por el uso de atención grouped query, fusión Tucker y normalización por lotes, en una configuración denominada "giant" que, pese al nombre, corresponde a un modelo de tamaño mínimo. No se dispone de datos sobre la longitud de contexto ni sobre los idiomas soportados. Este modelo no es un sistema funcional de IA, sino un punto de partida experimental para desarrolladores que quieran explorar o extender la arquitectura.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -60,5 +60,5 @@ No se dispone de datos suficientes para una comparación directa. El modelo `raf
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de las configuraciones por defecto incluidas, tal y como advierte el autor.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/quentinrobert/cnn-transformer-demo
+- Hugging Face: https://huggingface.co/quentinrobert/cnn-transformer-demo
 - Referencia relacionada (arquitectura CNN-Transformer para matching): https://github.com/rafiepour/CTran

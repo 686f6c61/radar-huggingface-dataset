@@ -82,7 +82,7 @@ No se dispone de información sobre modelos de terceros (por ejemplo, otros TTS 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0
+- Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Modelo sustituto en la serie: https://huggingface.co/sw-voice/best-vox
 - Conjunto de datos telugu: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card, sin URL directa proporcionada)

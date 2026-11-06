@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`raoaadhya/mobilevit-contrastive` es un repositorio de HuggingFace publicado por el usuario raoaadhya que contiene una implementacion propia de una red MobileViT orientada a aprendizaje contrastivo. No es un modelo entrenado: la propia model card lo describe como un punto de partida reproducible y un checkpoint de inicializacion valido para pruebas de humo, sin resultados de benchmarks ni auditoria de robustez, equidad o transferencia de dominio. El repositorio incluye `eval.py`, `config.json`, `training_args.json` y `model.safetensors`.
+`raoaadhya/mobilevit-contrastive` es un repositorio de Hugging Face publicado por el usuario raoaadhya que contiene una implementacion propia de una red MobileViT orientada a aprendizaje contrastivo. No es un modelo entrenado: la propia model card lo describe como un punto de partida reproducible y un checkpoint de inicializacion valido para pruebas de humo, sin resultados de benchmarks ni auditoria de robustez, equidad o transferencia de dominio. El repositorio incluye `eval.py`, `config.json`, `training_args.json` y `model.safetensors`.
 
 La configuracion declarada define una arquitectura MobileViT a escala "huge", con atencion lineal, fusion mediante cross attention, activacion GELU y normalizacion InstanceNorm, entrenada por defecto con RMSprop y un ciclo OneCycle. Los metadatos de safetensors registran 49.600 parametros totales, una cifra muy alejada de lo que cabria esperar de una variante de gran escala, lo que apunta a que el fichero distribuido es un esqueleto de inicializacion y no un modelo con pesos utiles.
 
@@ -71,7 +71,7 @@ La comparativa se realiza contra arquitecturas de referencia de la misma familia
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| raoaadhya/mobilevit-contrastive | 49.600 (segun safetensors) | Contrastiva sobre MobileViT | BSD-3-Clause | HuggingFace; checkpoint de inicializacion sin entrenar |
+| raoaadhya/mobilevit-contrastive | 49.600 (segun safetensors) | Contrastiva sobre MobileViT | BSD-3-Clause | Hugging Face; checkpoint de inicializacion sin entrenar |
 | Familia MobileViT original (XXS / XS / S) | aproximadamente 1,3 M / 2,3 M / 5,6 M (literatura) | Clasificacion e imagen general | no disponible en esta ficha | Publicaciones y repositorios de referencia; no vinculados a este repositorio |
 | Familia MobileCLIP (S0 / S1 / S2) | aproximadamente 11 M / 21 M / 55 M (literatura) | Embeddings contrastivos imagen-texto | no disponible en esta ficha | Publicaciones y pesos de referencia; no vinculados a este repositorio |
 | Backbones convolucionales clasicos (por ejemplo, ResNet-50) | aproximadamente 25,6 M (literatura) | Clasificacion y extraccion de caracteristicas | no disponible en esta ficha | Amplia disponibilidad en frameworks de vision |
@@ -85,7 +85,7 @@ Diferencias clave frente a las alternativas: el modelo aqui documentado se distr
 - Inconsistencia entre la escala declarada ("huge") y el recuento de parametros de safetensors (49.600). Conviene verificar la configuracion antes de asumir cualquier capacidad.
 - No se documentan datos de entrenamiento, por lo que no es posible evaluar procedencia, licencias de datos ni riesgos asociados a sesgos de dominio.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero si existe riesgo de interpretar como utiles representaciones aleatorias procedentes de un checkpoint sin entrenar.
-- No hay soporte multilingue ni de idiomas declarado, ni pipeline asignado en HuggingFace.
+- No hay soporte multilingue ni de idiomas declarado, ni pipeline asignado en Hugging Face.
 - Licencia BSD-3-Clause: permite uso comercial y modificacion con atribucion y manteniendo el aviso de copyright, pero al no haber pesos entrenados su valor comercial es nulo. Los terminos de los datasets externos que se usen para entrenar deben revisarse por separado.
 - La implementacion es personalizada: las APIs genericas de carga automatica fallan sin un adaptador explicito, lo que complica la integracion directa en herramientas estandar.
 - El repositorio tiene 0 descargas y 0 likes, sin validacion de la comunidad ni mantenimiento documentado. Las fechas de creacion y actualizacion (2026) no son verificables de forma independiente.
@@ -93,6 +93,6 @@ Diferencias clave frente a las alternativas: el modelo aqui documentado se distr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raoaadhya/mobilevit-contrastive
+- Modelo en Hugging Face: https://huggingface.co/raoaadhya/mobilevit-contrastive
 - No se han encontrado en la busqueda web enlaces adicionales al modelo (papers, blogs, repositorios de codigo o demos). Los resultados devueltos corresponden unicamente a paginas generales de Google y no contienen informacion sobre el modelo.
 - Referencia externa de la arquitectura base, no enlazada desde el repositorio: MobileViT, "MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer", https://arxiv.org/abs/2110.02178

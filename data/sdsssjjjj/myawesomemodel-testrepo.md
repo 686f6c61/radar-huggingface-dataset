@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario sdsssjjjj bajo licencia MIT. El repositorio, identificado como `sdsssjjjj/MyAwesomeModel-TestRepo`, parece ser un espacio de prueba o demostración, ya que su tamaño es de 0.0 GB y no contiene archivos de pesos ni configuración. La model card describe una supuesta versión mejorada de un modelo anterior, con avances en razonamiento matemático y lógico, así como una reducción de la tasa de alucinación y mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario sdsssjjjj bajo licencia MIT. El repositorio, identificado como `sdsssjjjj/MyAwesomeModel-TestRepo`, parece ser un espacio de prueba o demostración, ya que su tamaño es de 0.0 GB y no contiene archivos de pesos ni configuración. La model card describe una supuesta versión mejorada de un modelo anterior, con avances en razonamiento matemático y lógico, así como una reducción de la tasa de alucinación y mejor soporte para function calling.
 
 La información técnica disponible es extremadamente limitada: no se especifican parámetros, arquitectura, longitud de contexto, ni datos de entrenamiento. La model card menciona mejoras en benchmarks como AIME 2025 (precisión del 87.5% frente al 70% de la versión previa) y un aumento en el uso de tokens por pregunta (23K frente a 12K), lo que sugiere un modo de razonamiento más profundo. Sin embargo, al carecer de detalles verificables y de un repositorio con contenido real, esta ficha debe interpretarse con cautela: la mayor parte de los datos técnicos no están disponibles.
 
@@ -96,5 +96,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sdsssjjjj/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sdsssjjjj/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código) en la información disponible.

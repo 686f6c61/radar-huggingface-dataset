@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos numéricos entre estos modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic
+- Modelo en Hugging Face: https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic
 - Variante ONNX para CPU: https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic_onnx
 - Variante medium (PaddlePaddle): https://huggingface.co/metrika-labs/PP-OCRv6_medium_rec_cyrillic
 - Variante medium ONNX: https://huggingface.co/metrika-labs/PP-OCRv6_medium_rec_cyrillic_onnx

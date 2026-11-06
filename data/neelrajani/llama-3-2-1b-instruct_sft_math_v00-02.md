@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Llama-3.2-1B-Instruct_SFT_math_v00.02 es un ajuste fino supervisado (SFT) del modelo Llama 3.2 1B Instruct de Meta, publicado por el usuario NeelRajani en HuggingFace. El nombre del repositorio indica que el ajuste se ha orientado a tareas de matematicas, partiendo de la variante Instruct de la familia Llama 3.2, que es la gama de modelos ligeros de Meta disenada para despliegue en entornos con recursos limitados. El modelo conserva la arquitectura transformer decoder-only propia de Llama 3.2 y un total de 1.235.814.400 parametros segun los pesos en safetensors.
+Llama-3.2-1B-Instruct_SFT_math_v00.02 es un ajuste fino supervisado (SFT) del modelo Llama 3.2 1B Instruct de Meta, publicado por el usuario NeelRajani en Hugging Face. El nombre del repositorio indica que el ajuste se ha orientado a tareas de matematicas, partiendo de la variante Instruct de la familia Llama 3.2, que es la gama de modelos ligeros de Meta disenada para despliegue en entornos con recursos limitados. El modelo conserva la arquitectura transformer decoder-only propia de Llama 3.2 y un total de 1.235.814.400 parametros segun los pesos en safetensors.
 
-La relevancia de este checkpoint es limitada y experimental: se trata de una version v00.02, con cero descargas y cero likes en el momento de la consulta, y con una model card autogenerada por HuggingFace que no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia. Esto lo situa como un artefacto de investigacion temprana mas que como un modelo listo para produccion.
+La relevancia de este checkpoint es limitada y experimental: se trata de una version v00.02, con cero descargas y cero likes en el momento de la consulta, y con una model card autogenerada por Hugging Face que no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia. Esto lo situa como un artefacto de investigacion temprana mas que como un modelo listo para produccion.
 
 Para desarrolladores e investigadores, el interes principal reside en evaluar si un ajuste SFT sobre un modelo de 1B de parametros mejora el rendimiento en razonamiento matematico manteniendo las capacidades conversacionales del Instruct original. No obstante, al no haber benchmarks publicados ni documentacion del proceso de entrenamiento, cualquier evaluacion debe realizarse de forma independiente.
 
@@ -25,7 +25,7 @@ Para desarrolladores e investigadores, el interes principal reside en evaluar si
 
 El modelo parte de Llama 3.2 1B Instruct, un transformer decoder-only con atencion por grupos (GQA) y normalizacion RMSNorm, propio de la familia Llama 3.2 de Meta. El sufijo "SFT" del identificador indica que se ha aplicado un ajuste fino supervisado sobre el modelo base Instruct, presumiblemente con un dataset orientado a matematicas, aunque la model card no especifica la composicion del dataset, el numero de tokens, la mezcla de datos ni si hubo etapas adicionales de RLHF o DPO.
 
-No se dispone de informacion sobre hiperparametros de entrenamiento (learning rate, batch size, regimen de precision como bf16 o fp16), infraestructura de computo ni innovaciones tecnicas especificas. La model card es la plantilla autogenerada por HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]". Tampoco se documenta si el ajuste congelo capas, si uso LoRA o si fue un fine-tuning completo.
+No se dispone de informacion sobre hiperparametros de entrenamiento (learning rate, batch size, regimen de precision como bf16 o fp16), infraestructura de computo ni innovaciones tecnicas especificas. La model card es la plantilla autogenerada por Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]". Tampoco se documenta si el ajuste congelo capas, si uso LoRA o si fue un fine-tuning completo.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Instruct_SFT_math_v00.02 | 1.235.814.400 | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste SFT experimental en matematicas |
+| Llama-3.2-1B-Instruct_SFT_math_v00.02 | 1.235.814.400 | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste SFT experimental en matematicas |
 | Llama 3.2 1B Instruct (Meta) | 1.240 millones aprox. | 128K (documentado por Meta para la familia) | Llama 3.2 Community License | Amplia, con soporte en ecosistema | Modelo base del que deriva este checkpoint |
 | Qwen2.5-Math-1.5B-Instruct | 1.500 millones aprox. | 32K aprox. (documentado por Qwen) | Apache 2.0 | Amplia | Alternativa especifica para matematicas de tamano similar |
-| SmolLM2-1.7B-Instruct | 1.700 millones aprox. | 8K aprox. (documentado por HuggingFace) | Apache 2.0 | Amplia | Modelo pequeno generalista con buen soporte de herramientas |
+| SmolLM2-1.7B-Instruct | 1.700 millones aprox. | 8K aprox. (documentado por Hugging Face) | Apache 2.0 | Amplia | Modelo pequeno generalista con buen soporte de herramientas |
 
 Nota: los datos de los modelos comparativos provienen de sus respectivas documentaciones publicas; los de este checkpoint no estan disponibles mas alla del recuento de parametros.
 
@@ -84,7 +84,7 @@ Nota: los datos de los modelos comparativos provienen de sus respectivas documen
 
 ## Enlaces
 
-- [HuggingFace: NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.02](https://huggingface.co/NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.02)
+- [Hugging Face: NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.02](https://huggingface.co/NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.02)
 - [Paper de referencia citado en la model card: Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning](https://arxiv.org/abs/1910.09700)
 - [Calculadora ML Impact](https://mlco2.github.io/impact#compute)
 - No se han encontrado otros enlaces (repos, blogs, demos o papers) en la informacion disponible.

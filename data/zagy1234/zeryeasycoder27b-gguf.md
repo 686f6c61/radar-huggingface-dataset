@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZeryEasyCoder27B-GGUF es un repositorio de pesos cuantizados en formato GGUF del modelo ZeryEasyCoder-27B, publicado por el usuario zagy1234 en HuggingFace. Se trata de un merge hibrido construido a partir de dos modelos de base Qwen: Hemmingway-1, orientado a razonamiento multi-paso y dialogo natural, y NEO-CODER MAX (Turbo Cold Fusion), especializado en programacion de bajo nivel, administracion de sistemas Linux y scripting en Bash/Fish. El modelo resultante tiene 26.948.442.624 parametros reales (aproximadamente 27B) y se distribuye bajo licencia Apache 2.0.
+ZeryEasyCoder27B-GGUF es un repositorio de pesos cuantizados en formato GGUF del modelo ZeryEasyCoder-27B, publicado por el usuario zagy1234 en Hugging Face. Se trata de un merge hibrido construido a partir de dos modelos de base Qwen: Hemmingway-1, orientado a razonamiento multi-paso y dialogo natural, y NEO-CODER MAX (Turbo Cold Fusion), especializado en programacion de bajo nivel, administracion de sistemas Linux y scripting en Bash/Fish. El modelo resultante tiene 26.948.442.624 parametros reales (aproximadamente 27B) y se distribuye bajo licencia Apache 2.0.
 
 El repositorio contiene unicamente una cuantizacion Q4_K_M de aproximadamente 16 GB, pensada para inferencia local en hardware de consumo mediante Ollama, llama.cpp, LM Studio o Text Generation WebUI. El modelo se presenta explicitamente como "uncensored", es decir, sin los filtros de rechazo habituales en modelos alineados, lo que lo orienta a analisis de ciberseguridad e investigacion tecnica sin restricciones de contenido.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU profesionales: A100 40 GB y A100/H100 80 GB para precision completa, contextos largos o lotes concurrentes.
 - Configuraciones multi-GPU: dos RTX 3090 o dos RTX 4090 (48 GB combinados) permiten contexto amplio y mayor concurrencia en Q4_K_M.
 - Inferencia en CPU: viable con llama.cpp u Ollama si se dispone de al menos 32 GB de RAM de sistema; el rendimiento dependera del ancho de banda de memoria.
-- Opciones de despliegue documentadas por el autor: Ollama (incluida ejecucion directa desde HuggingFace con `ollama run hf.co/zagy1234/ZeryEasyCoder27B-GGUF`), llama.cpp, LM Studio y Text Generation WebUI. No hay indicios de soporte probado en vLLM o TGI para estos GGUF; para esos motores habria que partir del modelo base en safetensors.
+- Opciones de despliegue documentadas por el autor: Ollama (incluida ejecucion directa desde Hugging Face con `ollama run hf.co/zagy1234/ZeryEasyCoder27B-GGUF`), llama.cpp, LM Studio y Text Generation WebUI. No hay indicios de soporte probado en vLLM o TGI para estos GGUF; para esos motores habria que partir del modelo base en safetensors.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ En terminos de rendimiento medido no es posible establecer comparacion: ZeryEasy
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/zagy1234/ZeryEasyCoder27B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/zagy1234/ZeryEasyCoder27B-GGUF
 - Modelo base en safetensors (precision completa, ~51 GB): https://huggingface.co/zagy1234/ZeryEasyCoder27B
 - Perfil del autor: https://huggingface.co/zagy1234
 - Ollama (ejecucion directa y Modelfile): https://ollama.com

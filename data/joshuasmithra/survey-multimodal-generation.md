@@ -71,8 +71,8 @@ La comparacion natural es con otros repositorios de notas de investigacion, no c
 
 | Elemento | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshuasmithra/survey-multimodal-generation | Notas de investigacion | 16.576 (metadatos, sin valor funcional) | no disponible | MIT | HuggingFace |
-| Imbartosz-grabowski/survey-multimodal-generation | Notas de investigacion | no disponible | no disponible | no disponible | HuggingFace |
+| joshuasmithra/survey-multimodal-generation | Notas de investigacion | 16.576 (metadatos, sin valor funcional) | no disponible | MIT | Hugging Face |
+| Imbartosz-grabowski/survey-multimodal-generation | Notas de investigacion | no disponible | no disponible | no disponible | Hugging Face |
 | Multi-modal Generative AI: Multi-modal LLMs, Diffusions and Beyond (arXiv 2409.14993) | Articulo de encuesta | no aplica | no aplica | no disponible | arXiv |
 | Introduction to Multimodal Generative AI (Springer) | Capitulo de libro | no aplica | no aplica | no disponible | Springer Nature Link |
 | Multimodal RAG Survey | Encuesta web | no aplica | no aplica | no disponible | Sitio del proyecto |
@@ -93,7 +93,7 @@ No procede comparar con modelos como GPT-4V, LLaVA o Sora: este repositorio no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuasmithra/survey-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/joshuasmithra/survey-multimodal-generation
 - Repositorio homonimo de otro autor: https://huggingface.co/Imbartosz-grabowski/survey-multimodal-generation
 - Multi-modal Generative AI: Multi-modal LLMs, Diffusions and Beyond (arXiv): https://arxiv.org/abs/2409.14993
 - Version HTML del articulo anterior: https://arxiv.org/html/2409.14993v1

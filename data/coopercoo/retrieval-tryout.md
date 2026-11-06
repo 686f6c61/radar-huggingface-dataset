@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coopercoo/retrieval-tryout es un repositorio de HuggingFace publicado por el usuario Coopercoo que contiene una implementación propia de un modelo DeiT (Data-efficient Image Transformer) orientada a tareas de *retrieval*. La referencia a Flickr30k en la model card y el uso de un backbone ViT apuntan a recuperación y correspondencia imagen-texto, aunque el autor no lo especifica de forma explícita. No se trata de un modelo entrenado: el checkpoint `model.safetensors` se presenta como una inicialización válida para *smoke tests*, no como un modelo con resultados de benchmark.
+Coopercoo/retrieval-tryout es un repositorio de Hugging Face publicado por el usuario Coopercoo que contiene una implementación propia de un modelo DeiT (Data-efficient Image Transformer) orientada a tareas de *retrieval*. La referencia a Flickr30k en la model card y el uso de un backbone ViT apuntan a recuperación y correspondencia imagen-texto, aunque el autor no lo especifica de forma explícita. No se trata de un modelo entrenado: el checkpoint `model.safetensors` se presenta como una inicialización válida para *smoke tests*, no como un modelo con resultados de benchmark.
 
 El checkpoint contiene 49.600 parámetros reales según los metadatos de safetensors, una cifra muy reducida y coherente con un peso de inicialización (unos 0,2 MB en fp32) más que con la variante "large" que declara la configuración teórica. La arquitectura descrita emplea atención multi-query, fusión mediante concatenación y MLP, activación ReLU y normalización InstanceNorm, con una receta por defecto de RMSprop y scheduler polinomial.
 
@@ -86,5 +86,5 @@ Las cifras de parámetros de los modelos comparativos son aproximadas y proceden
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Coopercoo/retrieval-tryout
-- Archivos incluidos en el repositorio: `pipeline.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la página de HuggingFace).
+- Hugging Face: https://huggingface.co/Coopercoo/retrieval-tryout
+- Archivos incluidos en el repositorio: `pipeline.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la página de Hugging Face).

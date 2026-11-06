@@ -24,7 +24,7 @@ El modelo es relevante porque acerca a un Mac de consumo (a partir de 16 GB de m
 | Modelo base | inclusionAI/Ling-3.0-tiny (relación: quantized) |
 | Plataforma objetivo | Apple Silicon (M1/M2/M3/M4) mediante MLX y Metal |
 | Parámetros de muestreo recomendados | temperature 1.0, top_p 0.95 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 El modelo hereda la arquitectura del Ling-3.0-tiny del equipo Ant Ling (inclusionAI, Ant Group). Se trata de un transformer híbrido que intercala capas de atención lineal con capas de atención completa: la model card describe el esquema como KDA-MLA 3:1, es decir, tres capas de atención lineal por cada capa de atención tipo MLA (multi-head latent attention). La segunda pieza clave es el FFN de tipo sparse MoE con 128 expertos, de los que se enrutan 8 por token más un experto compartido siempre activo, lo que da los aproximadamente 1.300 millones de parámetros activos sobre un total de 7.900 millones.
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros totales / activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UraionLabs/Ling-3.0-tiny-oQ8e | 7,9 B / 1,3 B | 131K-256K | 8 bits (oQ8e, MLX) | MIT | HuggingFace, MLX / oMLX, Apple Silicon |
-| inclusionAI/Ling-3.0-tiny (base) | 7,9 B / 1,3 B | 131K-256K | Formato original (no cuantizado); detalle no disponible | No disponible en la informacion proporcionada | HuggingFace, ModelScope, OpenRouter, recetas SGLang |
+| UraionLabs/Ling-3.0-tiny-oQ8e | 7,9 B / 1,3 B | 131K-256K | 8 bits (oQ8e, MLX) | MIT | Hugging Face, MLX / oMLX, Apple Silicon |
+| inclusionAI/Ling-3.0-tiny (base) | 7,9 B / 1,3 B | 131K-256K | Formato original (no cuantizado); detalle no disponible | No disponible en la informacion proporcionada | Hugging Face, ModelScope, OpenRouter, recetas SGLang |
 | Otras alternativas MoE de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Las búsquedas web realizadas no devolvieron información sobre modelos comparables; los resultados obtenidos correspondían a contenidos ajenos al modelo (el videojuego *Control*), por lo que no se han utilizado. La única comparación documentada en la información disponible es con el modelo base del que deriva esta cuantización.
@@ -91,9 +91,9 @@ Las búsquedas web realizadas no devolvieron información sobre modelos comparab
 - El repositorio indica fechas de creación y actualización de septiembre de 2026, posteriores a la fecha habitual de consulta; este dato se reproduce tal cual figura en la información disponible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/Ling-3.0-tiny-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/Ling-3.0-tiny-oQ8e
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-tiny
-- Organización inclusionAI en HuggingFace: https://huggingface.co/inclusionAI
+- Organización inclusionAI en Hugging Face: https://huggingface.co/inclusionAI
 - ModelScope de inclusionAI: https://modelscope.cn/organization/inclusionAI
 - API en OpenRouter de Ling-3.0-tiny: https://openrouter.ai/inclusionai/ling-3.0-tiny:free
 - Recetas de despliegue con SGLang para Ling-3.0-tiny: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-tiny

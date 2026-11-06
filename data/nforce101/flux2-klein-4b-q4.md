@@ -103,7 +103,7 @@ No se dispone de datos para comparar con otras familias de generacion de imagen 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nForce101/flux2-klein-4b-q4
+- Repositorio en Hugging Face: https://huggingface.co/nForce101/flux2-klein-4b-q4
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Paquete MLX de referencia (pesos identicos): https://huggingface.co/mflux-community/flux2-klein-4b-mflux-q4
 - Revision citada del paquete de referencia: `794cd159538149ad9830848508c31f0ea7088e58`

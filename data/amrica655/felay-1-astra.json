@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Amrica655/FELAY-1-ASTRA",
+  "slug": "amrica655-felay-1-astra",
+  "author": "Amrica655",
+  "url": "https://huggingface.co/Amrica655/FELAY-1-ASTRA",
+  "created_at": "2026-11-02T16:45:44.000Z",
+  "updated_at": "2026-11-03T14:52:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "fa"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "gemma",
+    "felay",
+    "code",
+    "en",
+    "fa",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:quantized:unsloth/gemma-3-4b-it",
+    "license:gemma",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 6491234385,
+  "storage_human": "6.5 GB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amrica655/FELAY-1-ASTRA · Hugging Face",
+      "url": "https://huggingface.co/Amrica655/FELAY-1-ASTRA",
+      "snippet": "What this model is FELAY-1-ASTRA (COMB01) is an updated, coherent version of FELAY-1-ASTRA. It is built from the original FELAY-1-ASTRA weights by applying only the two winning FELAY Lab moves, selected because they improved the fixed in-lab evaluation and kept generation coherent."
+    },
+    {
+      "title": "Amrica655/FELAY at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/Amrica655/FELAY/tree/main",
+      "snippet": "FELAY 8.77 kB Ctrl+K Ctrl+K 1 contributor History:2 commits Amrica655 🔒 Deploy Private Testing Web Studio for FELAY AI 1CARBON on Amrica655/FELAY 4434261 verifiedabout 18 hours ago .gitattributes Safe 1.52 kBinitial commitabout 18 hours ago README.md Safe 205 Bytes🔒 Deploy Private Testing Web Studio for FELAY AI 1CARBON on Amrica655 ..."
+    }
+  ]
+}

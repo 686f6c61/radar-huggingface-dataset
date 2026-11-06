@@ -2,11 +2,11 @@
 
 ## Resumen
 
-PalmSat es un artefacto de investigación publicado en HuggingFace (repositorio `FatimahEmadEldin/palmsat-paper`, etiquetado con `joblib`) que acompaña al artículo IEEE *PalmSat: Satellite-Only Machine Learning for Date-Palm Farm Intelligence*. No es un modelo de lenguaje ni una red neuronal generativa: es un conjunto de modelos de aprendizaje automático clásico (Ridge, Random Forest, Gradient Boosting, un MLP de PyTorch, K-Means e Isolation Forest) más el código, los datos derivados y los scripts que reproducen cada cifra del artículo. El problema que aborda es la monitorización de palmerales datileros en regiones áridas sin sensores de campo, pasarelas ni drones, usando exclusivamente imágenes gratuitas de Sentinel-2.
+PalmSat es un artefacto de investigación publicado en Hugging Face (repositorio `FatimahEmadEldin/palmsat-paper`, etiquetado con `joblib`) que acompaña al artículo IEEE *PalmSat: Satellite-Only Machine Learning for Date-Palm Farm Intelligence*. No es un modelo de lenguaje ni una red neuronal generativa: es un conjunto de modelos de aprendizaje automático clásico (Ridge, Random Forest, Gradient Boosting, un MLP de PyTorch, K-Means e Isolation Forest) más el código, los datos derivados y los scripts que reproducen cada cifra del artículo. El problema que aborda es la monitorización de palmerales datileros en regiones áridas sin sensores de campo, pasarelas ni drones, usando exclusivamente imágenes gratuitas de Sentinel-2.
 
 La propuesta consiste en una única representación derivada de satélite que alimenta tres tareas simultáneas sobre la misma parcela: estimar el rendimiento relativo (agrupamiento de años-cultivo), anticipar la evolución del dosel (predicción de NDVI a un paso) y detectar anomalías (triaje con Isolation Forest). El estudio se evalúa sobre diez explotaciones comerciales de Al Madinah (Arabia Saudí), con 1.835 adquisiciones filtradas por nubosidad entre enero de 2022 y diciembre de 2024, es decir, 30 años-cultivo completos con un NDVI medio de 0,437.
 
-Su relevancia actual es metodológica y de alcance acotado: demuestra que una representación satelital compartida bate al baseline de persistencia en predicción de NDVI un 31,5 % (IC 95 %: 29,4–33,2 %) y en 10 de 10 fincas, pero también documenta con honestidad que el techo de rendimiento lo fija el ruido de medida y la nubosidad, no la capacidad del modelo. Es un estudio de viabilidad, no un benchmark generalizable. No hay información sobre licencia, idiomas ni pipeline en la ficha de HuggingFace, y la búsqueda web no devolvió enlaces relevantes.
+Su relevancia actual es metodológica y de alcance acotado: demuestra que una representación satelital compartida bate al baseline de persistencia en predicción de NDVI un 31,5 % (IC 95 %: 29,4–33,2 %) y en 10 de 10 fincas, pero también documenta con honestidad que el techo de rendimiento lo fija el ruido de medida y la nubosidad, no la capacidad del modelo. Es un estudio de viabilidad, no un benchmark generalizable. No hay información sobre licencia, idiomas ni pipeline en la ficha de Hugging Face, y la búsqueda web no devolvió enlaces relevantes.
 
 ## Especificaciones tecnicas
 
@@ -120,9 +120,9 @@ La información proporcionada no incluye comparaciones con otros sistemas public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FatimahEmadEldin/palmsat-paper
+- Repositorio en Hugging Face: https://huggingface.co/FatimahEmadEldin/palmsat-paper
 - Artículo en el repositorio: `paper/main.pdf` (*PalmSat: Satellite-Only Machine Learning for Date-Palm Farm Intelligence*, IEEE)
 - Figura de arquitectura: `paper/figs/architecture.png`
-- Repositorio de resultados y código de análisis: no disponible como URL independiente (contenido dentro del propio repositorio de HuggingFace)
+- Repositorio de resultados y código de análisis: no disponible como URL independiente (contenido dentro del propio repositorio de Hugging Face)
 - Demo: no disponible
 - Enlaces adicionales relevantes: no disponible (la búsqueda web no arrojó resultados pertinentes)

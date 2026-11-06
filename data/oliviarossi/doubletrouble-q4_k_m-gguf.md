@@ -97,7 +97,7 @@ Las cifras de los modelos alternativos corresponden a su documentacion publica. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OliviaRossi/DoubleTrouble-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OliviaRossi/DoubleTrouble-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/DoubleTrouble
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

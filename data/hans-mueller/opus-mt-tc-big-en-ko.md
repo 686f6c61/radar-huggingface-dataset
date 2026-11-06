@@ -2,7 +2,7 @@
 
 ## Resumen
 
-opus-mt-tc-big-en-ko es un modelo de traducción automática neuronal especializado en la dirección inglés (en) a coreano (ko). La model card atribuye su desarrollo al Language Technology Research Group de la Universidad de Helsinki, dentro del proyecto OPUS-MT, aunque el repositorio de HuggingFace figura publicado por la cuenta Hans-Mueller. Los ejemplos de código de la propia model card apuntan a los identificadores `pytorch-models/opus-mt-tc-big-en-ko` y `Helsinki-NLP/opus-mt-tc-big-en-ko`, por lo que todo indica que se trata de una réplica del modelo original, si bien esto no se confirma de forma explícita en la información disponible.
+opus-mt-tc-big-en-ko es un modelo de traducción automática neuronal especializado en la dirección inglés (en) a coreano (ko). La model card atribuye su desarrollo al Language Technology Research Group de la Universidad de Helsinki, dentro del proyecto OPUS-MT, aunque el repositorio de Hugging Face figura publicado por la cuenta Hans-Mueller. Los ejemplos de código de la propia model card apuntan a los identificadores `pytorch-models/opus-mt-tc-big-en-ko` y `Helsinki-NLP/opus-mt-tc-big-en-ko`, por lo que todo indica que se trata de una réplica del modelo original, si bien esto no se confirma de forma explícita en la información disponible.
 
 El modelo sigue la arquitectura transformer-big de Marian NMT, una implementación de traducción neuronal escrita en C++ puro que posteriormente se convirtió a PyTorch mediante la librería transformers. Cuenta con 209.158.401 parámetros totales y un tamaño de repositorio de 1,7 GB, lo que lo sitúa en la gama media de los modelos de traducción dedicados: es lo bastante grande para capturar fenómenos morfológicos complejos del coreano, pero lo suficientemente compacto como para ejecutarse en una única GPU de consumo o incluso en CPU.
 
@@ -20,17 +20,17 @@ Su relevancia actual es la de un componente especializado y ligero dentro de pip
 | Idiomas soportados | inglés (en) como origen, coreano (ko) como destino |
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | safetensors, PyTorch (bin) y TensorFlow; modelo Marian original en .zip |
-| Pipeline de HuggingFace | translation |
+| Pipeline de Hugging Face | translation |
 | Tokenizador | SentencePiece (spm32k) |
 | Tamaño del repositorio | 1,7 GB |
 | Fecha de publicación original | 2022-07-28 (según la model card) |
-| Fecha de creación del repositorio | 2026-09-22 (metadato del repositorio en HuggingFace) |
+| Fecha de creación del repositorio | 2026-09-22 (metadato del repositorio en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 Se trata de un transformer encoder-decoder completo, en la configuración transformer-big de Marian NMT. El preprocesado de texto emplea SentencePiece con un vocabulario de 32.000 tokens (spm32k) tanto en origen como en destino. El modelo se entrenó con el corpus opusTCv20210807, derivado de los datos paralelos recopilados en el proyecto OPUS, y los scripts de entrenamiento corresponden a los procedimientos de OPUS-MT-train. Marian NMT es una implementación en C++ optimizada para traducción, con decodificación por búsqueda en haz sobre la GPU, lo que da al modelo una huella de memoria notablemente menor que la de un modelo generativo de tamaño equivalente.
 
-La model card no documenta el número exacto de tokens de entrenamiento, la composición detallada del dataset, ni si hubo fases de ajuste con RLHF o DPO; en traducción automática supervisada estos procedimientos no son habituales y no hay indicios de que se hayan aplicado. Tampoco se documenta ninguna innovación técnica destacable como decodificación especulativa o atención lineal. Un detalle relevante: la model card describe el modelo como "multilingüe con múltiples idiomas destino" y exige un token de idioma al inicio de la frase con la forma `>>id<<`, pero deja vacíos los campos de idiomas origen y destino válidos, y la metadata de HuggingFace solo declara la pareja en-ko. En la práctica debe tratarse como un modelo unidireccional inglés→coreano.
+La model card no documenta el número exacto de tokens de entrenamiento, la composición detallada del dataset, ni si hubo fases de ajuste con RLHF o DPO; en traducción automática supervisada estos procedimientos no son habituales y no hay indicios de que se hayan aplicado. Tampoco se documenta ninguna innovación técnica destacable como decodificación especulativa o atención lineal. Un detalle relevante: la model card describe el modelo como "multilingüe con múltiples idiomas destino" y exige un token de idioma al inicio de la frase con la forma `>>id<<`, pero deja vacíos los campos de idiomas origen y destino válidos, y la metadata de Hugging Face solo declara la pareja en-ko. En la práctica debe tratarse como un modelo unidireccional inglés→coreano.
 
 ## Capacidades
 
@@ -82,11 +82,11 @@ La model card referencia además ficheros de evaluación publicados junto al mod
 
 | Modelo | Parámetros | Contexto | BLEU (FLORES eng-kor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hans-Mueller/opus-mt-tc-big-en-ko | 209.158.401 | no disponible | 13,7 | CC-BY-4.0 | HuggingFace (0 descargas, 0 likes) |
-| Helsinki-NLP/opus-mt-tc-big-en-ko | no disponible | no disponible | no disponible | CC-BY-4.0 | HuggingFace (repositorio original referenciado en la model card) |
-| Helsinki-NLP/opus-mt-en-ko (transformer base) | no disponible | no disponible | no disponible | CC-BY-4.0 | HuggingFace |
-| NLLB-200 (familia multilingüe de Meta) | varía según la variante; no disponible | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
-| M2M-100 (familia multilingüe de Meta) | varía según la variante; no disponible | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
+| Hans-Mueller/opus-mt-tc-big-en-ko | 209.158.401 | no disponible | 13,7 | CC-BY-4.0 | Hugging Face (0 descargas, 0 likes) |
+| Helsinki-NLP/opus-mt-tc-big-en-ko | no disponible | no disponible | no disponible | CC-BY-4.0 | Hugging Face (repositorio original referenciado en la model card) |
+| Helsinki-NLP/opus-mt-en-ko (transformer base) | no disponible | no disponible | no disponible | CC-BY-4.0 | Hugging Face |
+| NLLB-200 (familia multilingüe de Meta) | varía según la variante; no disponible | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
+| M2M-100 (familia multilingüe de Meta) | varía según la variante; no disponible | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
 
 No hay datos de benchmarks publicados en la información disponible para los modelos alternativos, por lo que la comparación cuantitativa directa no es posible. En términos estructurales, opus-mt-tc-big-en-ko se distingue por ser un modelo de pareja única, tamaño medio y licencia CC-BY-4.0, frente a las familias multilingües tipo NLLB o M2M-100, que cubren cientos de idiomas con modelos de mayor tamaño y licencias más restrictivas para uso comercial.
 
@@ -106,7 +106,7 @@ No hay datos de benchmarks publicados en la información disponible para los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hans-Mueller/opus-mt-tc-big-en-ko
+- Modelo en Hugging Face: https://huggingface.co/Hans-Mueller/opus-mt-tc-big-en-ko
 - Proyecto OPUS-MT (GitHub): https://github.com/Helsinki-NLP/Opus-MT
 - Scripts de entrenamiento OPUS-MT-train: https://github.com/Helsinki-NLP/OPUS-MT-train
 - Marian NMT (framework): https://marian-nmt.github.io/

@@ -50,10 +50,10 @@ Dado que no hay datos de rendimiento, la comparativa se limita a característica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| XUUUUSID/olmo2-1b-sft-variant-R1 | ~1B (no confirmado) | no disponible | Apache-2.0 | HuggingFace (artefacto de investigación) |
-| allenai/OLMo-2-0425-1B | 1B | 2048 (según documentación de OLMo 2) | Apache-2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | 32768 | Apache-2.0 | HuggingFace |
-| Llama-3.2-1B | 1B | 128000 | Llama 3.2 Community License | HuggingFace |
+| XUUUUSID/olmo2-1b-sft-variant-R1 | ~1B (no confirmado) | no disponible | Apache-2.0 | Hugging Face (artefacto de investigación) |
+| allenai/OLMo-2-0425-1B | 1B | 2048 (según documentación de OLMo 2) | Apache-2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | 32768 | Apache-2.0 | Hugging Face |
+| Llama-3.2-1B | 1B | 128000 | Llama 3.2 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -66,7 +66,7 @@ Dado que no hay datos de rendimiento, la comparativa se limita a característica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XUUUUSID/olmo2-1b-sft-variant-R1
+- Repositorio en Hugging Face: https://huggingface.co/XUUUUSID/olmo2-1b-sft-variant-R1
 - Modelo OLMo-2-1B original de Ai2: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Página oficial de OLMo 2: https://allenai.org/olmo2
 - Paper técnico de OLMo 2: https://arxiv.org/abs/2501.00656

@@ -92,7 +92,7 @@ La comparación cuantitativa de rendimiento entre estos modelos no puede realiza
 
 ## Enlaces
 
-- Repositorio HuggingFace del quant: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-GGUF
+- Repositorio Hugging Face del quant: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-GGUF
 - Modelo base (safetensors): https://huggingface.co/MahdiAlikhah/qwen2-vl-2b-abliterated
 - Cuantizaciones ponderadas/imatrix del mismo modelo: https://huggingface.co/mradermacher/qwen2-vl-2b-abliterated-i1-GGUF
 - Página de resumen de descargas: https://hf.tst.eu/model#qwen2-vl-2b-abliterated-GGUF

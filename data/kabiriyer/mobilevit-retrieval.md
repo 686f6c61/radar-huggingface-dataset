@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KabirIyer/mobilevit-retrieval` es un repositorio experimental publicado en HuggingFace por el usuario KabirIyer que contiene una implementación propia de MobileViT orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para smoke tests y que no se reclama ninguna puntuación de benchmark.
+`KabirIyer/mobilevit-retrieval` es un repositorio experimental publicado en Hugging Face por el usuario KabirIyer que contiene una implementación propia de MobileViT orientada a tareas de recuperación (retrieval). No se trata de un modelo entrenado ni de un checkpoint con resultados validados: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para smoke tests y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio sigue la escala "nano" declarada por el autor, con 16.576 parámetros totales según los metadatos de safetensors, atención dilatada, fusión de bajo rango, activación swish y normalización ScaleNorm. El tamaño del repo es de 0,0 GB y las descargas y likes registrados son 0, lo que confirma su carácter de artefacto de investigación en fase temprana.
 
@@ -88,7 +88,7 @@ La comparación directa de rendimiento no es posible: los tres modelos de refere
 - El checkpoint `model.safetensors` no ha sido entrenado. No produce representaciones útiles para retrieval.
 - No ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio, tal como reconoce el propio autor.
 - El repositorio no incluye ninguna evaluación publicada ni logs de entrenamiento.
-- La implementación es personalizada, por lo que no es compatible con `AutoModel` ni con APIs de carga automática de HuggingFace sin escribir un adaptador.
+- La implementación es personalizada, por lo que no es compatible con `AutoModel` ni con APIs de carga automática de Hugging Face sin escribir un adaptador.
 - No se documentan los idiomas soportados, la longitud de contexto, la resolución de imagen ni la dimensionalidad de los embeddings.
 - Los resultados de búsquedas web realizadas para esta ficha no arrojaron ninguna fuente relevante sobre el modelo: los enlaces recuperados tratan sobre jailbreaks de ChatGPT, GitHub Desktop y foros de Reddit, sin relación con MobileViT ni con retrieval multimodal.
 - Licencia: Apache 2.0 permite uso comercial del código y de los pesos distribuidos, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando se utilicen conjuntos externos (por ejemplo, Flickr30k tiene sus propias condiciones de uso).
@@ -96,7 +96,7 @@ La comparación directa de rendimiento no es posible: los tres modelos de refere
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KabirIyer/mobilevit-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/KabirIyer/mobilevit-retrieval
 - Código de entrenamiento: https://huggingface.co/KabirIyer/mobilevit-retrieval/blob/main/train.py
 - Configuración de arquitectura: https://huggingface.co/KabirIyer/mobilevit-retrieval/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/KabirIyer/mobilevit-retrieval/blob/main/training_args.json

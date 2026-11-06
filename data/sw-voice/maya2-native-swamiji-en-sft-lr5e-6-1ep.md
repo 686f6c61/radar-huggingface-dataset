@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maya 2 Native Swamiji English SFT (este) | 2,50 B | no disponible | Voice match 0,811; WER 2,9 % | Apache 2.0 | HuggingFace |
-| maya-research/maya2-native (base) | no disponible | no disponible | Voice match 0,643; WER 2,0 % (zero-shot) | no disponible en la informacion | HuggingFace |
+| Maya 2 Native Swamiji English SFT (este) | 2,50 B | no disponible | Voice match 0,811; WER 2,9 % | Apache 2.0 | Hugging Face |
+| maya-research/maya2-native (base) | no disponible | no disponible | Voice match 0,643; WER 2,0 % (zero-shot) | no disponible en la informacion | Hugging Face |
 | Otras alternativas de TTS | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos TTS comparables en la información proporcionada.
@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos TTS comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace: sw-voice/maya2-native-swamiji-en-sft-lr5e-6-1ep](https://huggingface.co/sw-voice/maya2-native-swamiji-en-sft-lr5e-6-1ep)
+- [Hugging Face: sw-voice/maya2-native-swamiji-en-sft-lr5e-6-1ep](https://huggingface.co/sw-voice/maya2-native-swamiji-en-sft-lr5e-6-1ep)
 - [Modelo base: maya-research/maya2-native](https://huggingface.co/maya-research/maya2-native)
 - [Dataset: sw-voice/swamiji-voice-sft-sidon](https://huggingface.co/datasets/sw-voice/swamiji-voice-sft-sidon)
 - Código: repositorio `swamiji-tts`, rama `research/maya2-sft` (no se proporciona URL directa en la información disponible)

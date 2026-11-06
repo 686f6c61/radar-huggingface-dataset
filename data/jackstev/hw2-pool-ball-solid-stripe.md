@@ -52,7 +52,7 @@ Los datos proceden del conjunto `cmuchancel/hw1-pool-balls` (revisión `40c628cd
 - Preanotación asistida de un corpus de imágenes de billar: el clasificador puede etiquetar automáticamente imágenes como lisa o rayada para acelerar el etiquetado manual, siempre con revisión humana, dado que la exactitud real fuera del dominio de entrenamiento es desconocida.
 - Componente de un prototipo de robótica de billar: en un sistema que necesite distinguir el tipo de bola antes de golpearla, el modelo puede actuar como módulo de clasificación, pero requeriría reentrenamiento con imágenes del entorno real (otra mesa, otra iluminación, otras cámara y distancia) antes de cualquier uso serio.
 - Demostración de compromiso entre tamaño y precisión en el despliegue: la misma búsqueda incluyó MobileNetV3-Small, mucho más ligero, que obtuvo una pérdida de validación de 1,4883 frente a 0,0803 de EfficientNet-B0, lo que sirve para ejemplificar el coste en precisión de elegir un backbone orientado a dispositivos con recursos limitados.
-- Prueba de concepto de integración en Python de un modelo AutoGluon: el fragmento de uso de la model card muestra cómo descargar el zip desde HuggingFace Hub, extraerlo y cargar el predictor, útil como plantilla para integrar artefactos de AutoGluon en un servicio interno.
+- Prueba de concepto de integración en Python de un modelo AutoGluon: el fragmento de uso de la model card muestra cómo descargar el zip desde Hugging Face Hub, extraerlo y cargar el predictor, útil como plantilla para integrar artefactos de AutoGluon en un servicio interno.
 
 ## Benchmarks y rendimiento
 
@@ -102,7 +102,7 @@ La búsqueda web no devolvió ningún modelo comparable publicado, ya que los re
 
 | Modelo / configuración | Parámetros | Contexto | Pérdida val. | Exactitud val. | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| efficientnet_b0, ajuste completo, lr 0,001 (seleccionado) | ~5,3 M (cifra estándar de la arquitectura; no reportada por el autor) | No aplica | 0,0803 | 1,00 | Sin licencia asignada | Repositorio de HuggingFace |
+| efficientnet_b0, ajuste completo, lr 0,001 (seleccionado) | ~5,3 M (cifra estándar de la arquitectura; no reportada por el autor) | No aplica | 0,0803 | 1,00 | Sin licencia asignada | Repositorio de Hugging Face |
 | efficientnet_b0, ajuste completo, lr 0,0004 | ~5,3 M (cifra estándar) | No aplica | 0,3689 | 0,75 | Sin licencia asignada | Dentro del registro de búsqueda |
 | resnet18, ajuste completo | ~11,7 M (cifra estándar) | No aplica | 0,6425 | 0,50 | Sin licencia asignada | Dentro del registro de búsqueda |
 | mobilenetv3_small_100, ajuste completo | ~2,5 M (cifra estándar) | No aplica | 1,4883 | 0,75 | Sin licencia asignada | Dentro del registro de búsqueda |
@@ -125,7 +125,7 @@ Ninguna de las tres alternativas se publica como artefacto independiente: solo l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jackstev/hw2-pool-ball-solid-stripe
+- Modelo en Hugging Face: https://huggingface.co/jackstev/hw2-pool-ball-solid-stripe
 - Conjunto de datos: https://huggingface.co/datasets/cmuchancel/hw1-pool-balls
 - Revisión del conjunto de datos utilizada: `40c628cd92af`
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos adicionales en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.

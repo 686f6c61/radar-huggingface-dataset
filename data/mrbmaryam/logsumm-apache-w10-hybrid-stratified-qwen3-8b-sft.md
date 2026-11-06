@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-apache-w10-hybrid-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en HuggingFace bajo licencia Apache 2.0. El modelo parte del checkpoint cuantizado en 4 bits `unsloth/Qwen3-8B-bnb-4bit` y ha sido entrenado con la libreria Unsloth, que segun la model card permite un entrenamiento "2x mas rapido" que el flujo estandar. El nombre del repositorio sugiere un ajuste orientado a tareas de resumen de logs (`logsumm`) con una estrategia de muestreo hibrida y estratificada (`hybrid-stratified`) y una ventana de trabajo de 10 (`w10`), aunque la model card no documenta estos detalles.
+`mrbmaryam/logsumm-apache-w10-hybrid-stratified-qwen3-8b-sft` es un ajuste fino (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte del checkpoint cuantizado en 4 bits `unsloth/Qwen3-8B-bnb-4bit` y ha sido entrenado con la libreria Unsloth, que segun la model card permite un entrenamiento "2x mas rapido" que el flujo estandar. El nombre del repositorio sugiere un ajuste orientado a tareas de resumen de logs (`logsumm`) con una estrategia de muestreo hibrida y estratificada (`hybrid-stratified`) y una ventana de trabajo de 10 (`w10`), aunque la model card no documenta estos detalles.
 
 Se trata de un modelo de 8 mil millones de parametros basado en la arquitectura Qwen3, una familia de transformers densos con soporte nativo de modo "thinking" y ventanas de contexto largas. El ajuste se ha realizado exclusivamente sobre datos en ingles (`language: en`) y el repositorio tiene un tamano de 0.2 GB, lo que sugiere que los pesos publicados podrian estar en formato cuantizado o que el repositorio contiene unicamente adaptadores o pesos parciales, aunque el tag `safetensors` apunta a pesos completos.
 
@@ -19,7 +19,7 @@ La relevancia de este modelo es limitada y muy especifica: se trata de un experi
 | Tipos de cuantizacion | El checkpoint base esta en 4 bits (bnb-4bit); el repositorio publica safetensors; no se documentan otras cuantizaciones |
 | Idiomas soportados | Ingles (`en`) segun la model card |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (tag de HuggingFace); tamano del repo 0.2 GB |
+| Formato de pesos | safetensors (tag de Hugging Face); tamano del repo 0.2 GB |
 
 ## Arquitectura y entrenamiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-apache-w10-hybrid-stratified-qwen3-8b-sft | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste comunitario sin benchmarks |
-| Qwen/Qwen3-8B | 8B | 32 768 tokens nativo | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen3-8B-bnb-4bit | 8B | 32 768 tokens nativo | Apache 2.0 | HuggingFace | Checkpoint cuantizado 4 bits del que parte este ajuste |
-| Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa de mismo tamano con contexto mayor y licencia mas restrictiva |
+| mrbmaryam/logsumm-apache-w10-hybrid-stratified-qwen3-8b-sft | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste comunitario sin benchmarks |
+| Qwen/Qwen3-8B | 8B | 32 768 tokens nativo | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen3-8B-bnb-4bit | 8B | 32 768 tokens nativo | Apache 2.0 | Hugging Face | Checkpoint cuantizado 4 bits del que parte este ajuste |
+| Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa de mismo tamano con contexto mayor y licencia mas restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrbmaryam/logsumm-apache-w10-hybrid-stratified-qwen3-8b-sft
+- Hugging Face: https://huggingface.co/mrbmaryam/logsumm-apache-w10-hybrid-stratified-qwen3-8b-sft
 - Modelo base cuantizado: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

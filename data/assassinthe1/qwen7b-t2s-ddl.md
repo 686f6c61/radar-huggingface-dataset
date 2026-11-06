@@ -82,6 +82,6 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AssassinThe1/qwen7b-t2s-ddl
+- Repositorio Hugging Face: https://huggingface.co/AssassinThe1/qwen7b-t2s-ddl
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700

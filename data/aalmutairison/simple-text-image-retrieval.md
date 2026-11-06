@@ -58,5 +58,5 @@ No disponible. No hay un modelo comparable porque este repositorio no contiene u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aalmutairison/simple-text-image-retrieval
+- Repositorio Hugging Face: https://huggingface.co/Aalmutairison/simple-text-image-retrieval
 - Referencias citadas en la nota: Flickr30k, MS COCO Captions (no se proporcionan enlaces directos en la model card).

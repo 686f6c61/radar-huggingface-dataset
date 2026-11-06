@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp71c3c15bd2daf050` es un checkpoint publicado en HuggingFace por el usuario `cwaud`. El nombre del repositorio sugiere que se trata de un experimento generado de forma automatizada dentro de un proceso de comparacion o torneo de modelos, no de un lanzamiento oficial de producto. El unico dato objetivo confirmado por los metadatos del repositorio es el numero de parametros: 361.822.080 (aproximadamente 362 millones), leidos directamente de los pesos en formato safetensors.
+El modelo identificado como `cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp71c3c15bd2daf050` es un checkpoint publicado en Hugging Face por el usuario `cwaud`. El nombre del repositorio sugiere que se trata de un experimento generado de forma automatizada dentro de un proceso de comparacion o torneo de modelos, no de un lanzamiento oficial de producto. El unico dato objetivo confirmado por los metadatos del repositorio es el numero de parametros: 361.822.080 (aproximadamente 362 millones), leidos directamente de los pesos en formato safetensors.
 
 La etiqueta `llama` y el campo `safetensors` indican que se trata de un modelo de lenguaje con arquitectura de tipo transformer decoder-only compatible con la familia Llama, distribuido en pesos safetensors. El repositorio ocupa 0,7 GB, lo que es coherente con un checkpoint de 362 millones de parametros almacenado en precision de 16 bits. No se dispone de informacion sobre la longitud de contexto, el dataset de entrenamiento, los idiomas soportados ni la licencia.
 
@@ -74,10 +74,10 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| cwaud/tournament-exp-s1 (este modelo) | 361,8 M | no disponible | no disponible | HuggingFace, 10 descargas | no disponible |
-| SmolLM-360M (HuggingFace) | ~362 M | 2.048 tokens (segun su model card) | Apache 2.0 | HuggingFace, ampliamente descargado | Si, publicado por el autor |
-| Qwen2.5-0.5B (Alibaba) | ~494 M | 32.768 tokens (segun su model card) | Apache 2.0 (segun su model card) | HuggingFace, ampliamente descargado | Si, publicado por el autor |
-| TinyLlama-1.1B | ~1.100 M | 2.048 tokens (segun su model card) | Apache 2.0 | HuggingFace, ampliamente descargado | Si, publicado por el autor |
+| cwaud/tournament-exp-s1 (este modelo) | 361,8 M | no disponible | no disponible | Hugging Face, 10 descargas | no disponible |
+| SmolLM-360M (Hugging Face) | ~362 M | 2.048 tokens (segun su model card) | Apache 2.0 | Hugging Face, ampliamente descargado | Si, publicado por el autor |
+| Qwen2.5-0.5B (Alibaba) | ~494 M | 32.768 tokens (segun su model card) | Apache 2.0 (segun su model card) | Hugging Face, ampliamente descargado | Si, publicado por el autor |
+| TinyLlama-1.1B | ~1.100 M | 2.048 tokens (segun su model card) | Apache 2.0 | Hugging Face, ampliamente descargado | Si, publicado por el autor |
 
 Nota: los datos de los modelos comparativos corresponden a sus model cards publicas y pueden variar; se incluyen a efectos de contexto de escala, no como evaluacion directa contra este checkpoint.
 
@@ -95,7 +95,7 @@ Nota: los datos de los modelos comparativos corresponden a sus model cards publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp71c3c15bd2daf050
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-ef9824ae-b617-45c7-a5ea-5b1ed01688b4-5Exp71c3c15bd2daf050
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

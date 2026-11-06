@@ -84,13 +84,13 @@ La comparativa se limita a los datos disponibles. No se han encontrado modelos d
 - Idiomas limitados a inglés y chino; no se garantiza un rendimiento adecuado en otros idiomas.
 - El modelo está optimizado para Apple Silicon; en otras plataformas se debe usar la variante GGUF, que puede tener un rendimiento inferior.
 - Riesgo de alucinación en código: como cualquier modelo generativo, puede producir código sintácticamente válido pero incorrecto o inseguro; se recomienda revisión humana en entornos de producción.
-- Comunidad pequeña y adopción temprana: solo 48 descargas y 0 likes en HuggingFace, lo que implica poca validación externa y soporte limitado.
+- Comunidad pequeña y adopción temprana: solo 48 descargas y 0 likes en Hugging Face, lo que implica poca validación externa y soporte limitado.
 - Los benchmarks citados provienen del modelo base y no de esta cuantización; los resultados reales pueden variar.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo base puede tener restricciones derivadas de su destilación de Claude Opus; se recomienda verificar los términos del modelo original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Qwopus3.6-27B-Coder-mlx-6Bit
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwopus3.6-27B-Coder-mlx-6Bit
 - Modelo base (Jackrong): https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder
 - Variante GGUF con MTP: https://huggingface.co/Jackrong/Qwopus3.6-27B-Coder-MTP-GGUF
 - Motor Anvil: https://github.com/Solstice-Labs/anvil

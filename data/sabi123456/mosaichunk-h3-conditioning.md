@@ -105,10 +105,10 @@ No se dispone de parámetros, contexto ni benchmarks de las alternativas en la i
 
 ## Enlaces
 
-- [HuggingFace: sabi123456/MosaiChunk-H3-Conditioning](https://huggingface.co/sabi123456/MosaiChunk-H3-Conditioning)
+- [Hugging Face: sabi123456/MosaiChunk-H3-Conditioning](https://huggingface.co/sabi123456/MosaiChunk-H3-Conditioning)
 - [Repositorio del nodo personalizado Minimax-H3-Memory-Cutom-Node](https://github.com/sabi3293043/Minimax-H3-Memory-Cutom-Node)
 - [Instrucciones para modelos podados (PRUNED.md)](https://github.com/sabi3293043/Minimax-H3-Memory-Cutom-Node/blob/main/PRUNED.md)
-- [Adaptador RAVEN streaming en HuggingFace](https://huggingface.co/mvp-lab/MiniMax-H3-RAVEN-Streaming-LoRA/tree/90f30b11639e73ce0e3f2ab6ed70d1a133a66caf)
+- [Adaptador RAVEN streaming en Hugging Face](https://huggingface.co/mvp-lab/MiniMax-H3-RAVEN-Streaming-LoRA/tree/90f30b11639e73ce0e3f2ab6ed70d1a133a66caf)
 - [Modelo base MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [Modelo mvp-lab/MiniMax-H3-RAVEN-Streaming-LoRA](https://huggingface.co/mvp-lab/MiniMax-H3-RAVEN-Streaming-LoRA)
 - [Router MosaiChunk T2V](https://huggingface.co/mosaichunk/MosaiChunk/tree/03eb1531e2363cbee4fe27d773c4242a07eb1b32/t2v)

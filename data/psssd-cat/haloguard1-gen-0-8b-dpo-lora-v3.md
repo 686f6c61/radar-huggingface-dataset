@@ -63,8 +63,8 @@ No se dispone de información sobre modelos comparables. El único modelo relaci
 
 ## Enlaces
 
-- [HuggingFace: psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v3](https://huggingface.co/psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v3)
-- [HuggingFace: astroware/HaloGuard1-Gen-0.8B](https://huggingface.co/astroware/HaloGuard1-Gen-0.8B) (no verificado, enlace inferido del campo base_model)
+- [Hugging Face: psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v3](https://huggingface.co/psssd-cat/HaloGuard1-Gen-0.8B-dpo-lora-v3)
+- [Hugging Face: astroware/HaloGuard1-Gen-0.8B](https://huggingface.co/astroware/HaloGuard1-Gen-0.8B) (no verificado, enlace inferido del campo base_model)
 - [Paper arXiv: HaloGuard 1.0: An Open Weights Constitutional Classifier](https://arxiv.org/abs/2607.02079)
 - [Paper PDF](https://arxiv.org/pdf/2607.02079)
 - [Resumen en EmergentMind](https://www.emergentmind.com/topics/haloguard-1-0)

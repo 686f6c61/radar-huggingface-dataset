@@ -92,7 +92,7 @@ No se conocen modelos comparables de la misma categoria (decision model con read
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ainvest-World/Ainvest-Decision-27b-v1.0
+- Modelo en Hugging Face: https://huggingface.co/Ainvest-World/Ainvest-Decision-27b-v1.0
 - Resultados del Decision Index (run m02): https://huggingface.co/datasets/Ainvest-World/Ainvest-Decision-27b-v1.0-decision-index-results/tree/main/runs/m02
 - Kit oficial Decision Index: https://github.com/apolinario/decision-index
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

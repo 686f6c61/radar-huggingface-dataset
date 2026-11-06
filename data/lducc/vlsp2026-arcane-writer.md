@@ -68,8 +68,8 @@ No se han publicado en la informacion disponible resultados en benchmarks genera
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lducc/vlsp2026-arcane-writer | 194,8 M (adaptador) sobre base de 4B | no disponible | LoRA especializado en QA numerico financiero en vietnamita | apache-2.0 | HuggingFace (18 descargas) |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | Modelo generalista | no disponible en la informacion | HuggingFace |
+| lducc/vlsp2026-arcane-writer | 194,8 M (adaptador) sobre base de 4B | no disponible | LoRA especializado en QA numerico financiero en vietnamita | apache-2.0 | Hugging Face (18 descargas) |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | Modelo generalista | no disponible en la informacion | Hugging Face |
 | Otros adaptadores de VLSP 2026 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de rendimiento de modelos comparables en la misma tarea, por lo que la comparativa cuantitativa queda como no disponible.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lducc/vlsp2026-arcane-writer
+- Modelo en Hugging Face: https://huggingface.co/lducc/vlsp2026-arcane-writer
 - Codigo y paper: https://github.com/lducc/vlsp
 - Dataset de tarjetas de graficos: https://huggingface.co/datasets/lducc/vlsp2026-chart-cards
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

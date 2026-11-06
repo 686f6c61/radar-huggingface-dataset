@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `syam2004/question-answering` es un modelo de transformers publicado en HuggingFace por el usuario syam2004, orientado a la tarea de respuesta a preguntas (question answering). Con 66,36 millones de parámetros y un tamaño de repositorio de 0,3 GB, se trata de un modelo compacto, probablemente basado en la arquitectura DistilBERT, como sugieren las etiquetas asociadas (`distilbert`, `question-answering` y la referencia al paper arXiv:1910.09700, que corresponde al artículo original de DistilBERT). El modelo está disponible en formato safetensors y es compatible con la librería transformers.
+El modelo `syam2004/question-answering` es un modelo de transformers publicado en Hugging Face por el usuario syam2004, orientado a la tarea de respuesta a preguntas (question answering). Con 66,36 millones de parámetros y un tamaño de repositorio de 0,3 GB, se trata de un modelo compacto, probablemente basado en la arquitectura DistilBERT, como sugieren las etiquetas asociadas (`distilbert`, `question-answering` y la referencia al paper arXiv:1910.09700, que corresponde al artículo original de DistilBERT). El modelo está disponible en formato safetensors y es compatible con la librería transformers.
 
 La model card oficial está prácticamente vacía: no incluye información sobre el desarrollador, la licencia, los idiomas soportados, los datos de entrenamiento ni los resultados de evaluación. Esto limita considerablemente cualquier análisis riguroso. A pesar de ello, por su tamaño y arquitectura presumible, el modelo podría ser útil para tareas de extracción de respuestas en contextos de recursos limitados, aunque cualquier uso en producción debería ir precedido de una validación empírica propia.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: con 66 millones de parametros, el modelo ocupa aproximadamente 265 MB en precision fp32 (66M x 4 bytes). En cuantizacion de 8 bits, unos 66 MB. No se dispone de datos oficiales de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM deberia ser suficiente para inferencia en fp32. Tambien puede ejecutarse en CPU sin problemas para cargas moderadas.
 - Compatibilidad con consumer GPU: si, cabe en GPUs de gama baja como GTX 1650, RTX 2060, etc.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con librerias como HuggingFace Inference Endpoints, TGI (Text Generation Inference) o mediante un servidor Python con FastAPI. Tambien es posible exportarlo a ONNX para optimizacion.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con librerias como Hugging Face Inference Endpoints, TGI (Text Generation Inference) o mediante un servidor Python con FastAPI. Tambien es posible exportarlo a ONNX para optimizacion.
 - Latencia y throughput: no se han publicado datos. En una CPU moderna, se espera una latencia de decenas de milisegundos por pregunta, pero es una estimacion no verificada.
 
 ## Comparativa con modelos similares
@@ -65,5 +65,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/syam2004/question-answering
+- Repositorio Hugging Face: https://huggingface.co/syam2004/question-answering
 - Paper de DistilBERT (referenciado en las etiquetas): https://arxiv.org/abs/1910.09700

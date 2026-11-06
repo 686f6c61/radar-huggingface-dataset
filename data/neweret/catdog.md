@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Neweret/catdog es un modelo publicado en HuggingFace por el usuario Neweret con licencia MIT. Según los metadatos disponibles, el modelo tiene un total de 503.426 parámetros y sus pesos se distribuyen en formato safetensors. No se ha publicado ninguna descripción técnica, model card con contenido relevante ni documentación sobre su arquitectura, datos de entrenamiento o capacidades. El nombre sugiere una posible relación con clasificación de imágenes de gatos y perros, pero no hay información que lo confirme.
+Neweret/catdog es un modelo publicado en Hugging Face por el usuario Neweret con licencia MIT. Según los metadatos disponibles, el modelo tiene un total de 503.426 parámetros y sus pesos se distribuyen en formato safetensors. No se ha publicado ninguna descripción técnica, model card con contenido relevante ni documentación sobre su arquitectura, datos de entrenamiento o capacidades. El nombre sugiere una posible relación con clasificación de imágenes de gatos y perros, pero no hay información que lo confirme.
 
-A día de hoy, el modelo no tiene descargas ni "likes" en HuggingFace, y la búsqueda web no devuelve resultados relacionados, solo enlaces a servicios bancarios que no guardan relación. Su relevancia actual es, por tanto, desconocida y no se puede evaluar sin información adicional.
+A día de hoy, el modelo no tiene descargas ni "likes" en Hugging Face, y la búsqueda web no devuelve resultados relacionados, solo enlaces a servicios bancarios que no guardan relación. Su relevancia actual es, por tanto, desconocida y no se puede evaluar sin información adicional.
 
 ## Especificaciones técnicas
 
@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables. No se han publicado ben
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neweret/catdog
+- Hugging Face: https://huggingface.co/Neweret/catdog
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes relacionados con el modelo; los resultados corresponden a servicios bancarios sin relación.

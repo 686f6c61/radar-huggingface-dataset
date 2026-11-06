@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PEFT_Partb es un repositorio de modelo alojado en HuggingFace por el usuario anil1201kandula, publicado bajo el identificador `anil1201kandula/PEFT_Partb`. La model card asociada es la plantilla automatica de HuggingFace sin rellenar: todos los campos de descripcion, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluacion figuran como "[More Information Needed]". No hay informacion publica sobre que problema resuelve, sobre su arquitectura ni sobre su procedencia.
+PEFT_Partb es un repositorio de modelo alojado en Hugging Face por el usuario anil1201kandula, publicado bajo el identificador `anil1201kandula/PEFT_Partb`. La model card asociada es la plantilla automatica de Hugging Face sin rellenar: todos los campos de descripcion, desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluacion figuran como "[More Information Needed]". No hay informacion publica sobre que problema resuelve, sobre su arquitectura ni sobre su procedencia.
 
 Los metadatos del Hub indican que el repositorio usa la libreria `transformers`, almacena pesos en formato `safetensors` y esta marcado como `endpoints_compatible`. El tamano del repositorio declarado es de 0,0 GB, lo que sugiere que no contiene pesos completos o que el contenido no esta cargado. El repositorio acumula 0 descargas y 0 "likes" desde su creacion, el 14 de octubre de 2026.
 
@@ -35,13 +35,13 @@ Datos adicionales verificables en los metadatos del Hub:
 | Fecha de creacion | 2026-10-14 |
 | Ultima actualizacion | 2026-10-14 |
 
-La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la propia plantilla de model card de HuggingFace. No es una referencia al paper de introduccion del modelo.
+La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la propia plantilla de model card de Hugging Face. No es una referencia al paper de introduccion del modelo.
 
 ## Arquitectura y entrenamiento
 
 No disponible. La model card no especifica arquitectura (transformer, MoE, SSM, hibrida u otra), numero de parametros, dimension de la ventana de contexto, composicion del dataset de entrenamiento, numero de tokens vistos ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruction tuning. Tampoco consta el modelo base sobre el que se habria hecho el ajuste ni los hiperparametros empleados.
 
-El unico dato tecnico objetivo es el formato de serializacion: el repositorio esta etiquetado con `safetensors`, el formato de pesos de HuggingFace disenado para carga sin ejecucion de codigo arbitrario, con carga mapeada en memoria. La etiqueta `endpoints_compatible` indica que el repositorio cumple los requisitos estructurales para desplegarse a traves de HuggingFace Inference Endpoints, lo que en la practica implica que existe un `config.json` reconocible por `transformers`. No hay informacion sobre innovaciones tecnicas, atencion lineal, decodificacion especulativa ni ninguna otra particularidad.
+El unico dato tecnico objetivo es el formato de serializacion: el repositorio esta etiquetado con `safetensors`, el formato de pesos de Hugging Face disenado para carga sin ejecucion de codigo arbitrario, con carga mapeada en memoria. La etiqueta `endpoints_compatible` indica que el repositorio cumple los requisitos estructurales para desplegarse a traves de Hugging Face Inference Endpoints, lo que en la practica implica que existe un `config.json` reconocible por `transformers`. No hay informacion sobre innovaciones tecnicas, atencion lineal, decodificacion especulativa ni ninguna otra particularidad.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no estimable. Sin conocer el numero de parametros ni la precision de los pesos, cualquier cifra de VRAM seria inventada.
 - GPU recomendadas: no disponible por la misma razon.
 - Encaje en GPU de consumo: no determinable. Un repositorio etiquetado como compatible con `transformers` puede ir desde un modelo de unos cientos de millones de parametros hasta uno de decenas de miles de millones; el rango de hardware abarca desde una GTX 1060 hasta un nodo multi-H100.
-- Opciones de despliegue plausibles dado el formato: `transformers` (nativo, confirmado por la etiqueta de libreria), HuggingFace Inference Endpoints (confirmado por `endpoints_compatible`), y servidores compatibles con pesos safetensors de HuggingFace como TGI o vLLM. `llama.cpp` y Ollama requeririan una conversion a GGUF que no consta en el repositorio.
+- Opciones de despliegue plausibles dado el formato: `transformers` (nativo, confirmado por la etiqueta de libreria), Hugging Face Inference Endpoints (confirmado por `endpoints_compatible`), y servidores compatibles con pesos safetensors de Hugging Face como TGI o vLLM. `llama.cpp` y Ollama requeririan una conversion a GGUF que no consta en el repositorio.
 - Latencia y throughput: no disponible.
 
 Advertencia operativa: con un tamano de repositorio de 0,0 GB, es probable que el despliegue falle al intentar cargar pesos inexistentes. Conviene verificar los ficheros reales del repositorio antes de planificar cualquier infraestructura.
@@ -100,7 +100,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anil1201kandula/PEFT_Partb
+- Repositorio en Hugging Face: https://huggingface.co/anil1201kandula/PEFT_Partb
 - Articulo citado en las etiquetas del Hub (Lacoste et al., 2019, sobre emisiones de carbono en ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hob-forge/Qwen3.5-Fable5.1 es un modelo de generacion de texto publicado en HuggingFace por el usuario Hob-forge, obtenido mediante ajuste fino sobre el modelo base Qwen/Qwen3.5-4B. Se distribuye empaquetado en formato GGUF, lo que lo orienta a inferencia local en llama.cpp, Ollama u otros runners compatibles, y cuenta con 4.326.350.848 parametros (4,33 mil millones) segun los pesos en safetensors del repositorio. La licencia declarada es Apache 2.0 y el unico idioma indicado en la model card es el ingles.
+Hob-forge/Qwen3.5-Fable5.1 es un modelo de generacion de texto publicado en Hugging Face por el usuario Hob-forge, obtenido mediante ajuste fino sobre el modelo base Qwen/Qwen3.5-4B. Se distribuye empaquetado en formato GGUF, lo que lo orienta a inferencia local en llama.cpp, Ollama u otros runners compatibles, y cuenta con 4.326.350.848 parametros (4,33 mil millones) segun los pesos en safetensors del repositorio. La licencia declarada es Apache 2.0 y el unico idioma indicado en la model card es el ingles.
 
 El ajuste se ha realizado sobre el dataset MoreThought/Fable-5.1-Max-Reasoning-Filtered-1000x, un conjunto filtrado de 1000 ejemplos orientado a razonamiento, segun los metadatos del autor. No se documentan la composicion exacta del dataset, el numero de tokens de entrenamiento ni la metodologia de ajuste (SFT, DPO u otra), por lo que la ficha se limita a lo verificado en los metadatos.
 
@@ -41,7 +41,7 @@ Sobre el entrenamiento, los metadatos indican un unico dataset de ajuste: MoreTh
 - Razonamiento: el dataset de ajuste se presenta como de razonamiento filtrado, aunque no se aporta ninguna metrica que permita cuantificar la mejora sobre el modelo base.
 - Generacion de codigo y matematicas: no disponible (no se documenta ninguna capacidad especifica en estas areas).
 - Tool calling / function calling: no disponible (no se menciona soporte en la model card).
-- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita; la etiqueta `endpoints_compatible` solo indica compatibilidad con el formato de endpoints de HuggingFace, no capacidades de agente.
+- Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita; la etiqueta `endpoints_compatible` solo indica compatibilidad con el formato de endpoints de Hugging Face, no capacidades de agente.
 - Capacidades multilingues: limitadas al ingles segun el campo `language: en`; no se declara soporte de castellano ni de otros idiomas.
 - Capacidades especiales (vision, audio, modo thinking explicito): no disponibles.
 - Ejecucion local: al distribuirse en GGUF, puede ejecutarse con runners compatibles sin conexion a red.
@@ -71,7 +71,7 @@ Los valores de VRAM que se indican a continuacion son estimaciones derivadas del
 - Cuantizacion Q3_K_M: aproximadamente 2,2 GB de pesos; entorno de 3-4 GB de VRAM.
 - GPU de gama de consumo: si cabe. Una RTX 3060 de 12 GB, una RTX 4060 Ti de 8 GB o una RTX 4090 pueden ejecutar el modelo en cuantizaciones de 4 a 8 bits sin dificultad; en GPUs de 4-6 GB conviene limitarse a Q4 o inferior. Tambien es viable en CPU con RAM suficiente (recomendable 8 GB o mas de RAM libre).
 - GPU de centro de datos: A100, H100, L40S o similares ejecutan el modelo sin restricciones, aunque estan sobredimensionadas para 4,33 B de parametros.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y cualquier servidor compatible con el formato de endpoints de HuggingFace. vLLM y TGI estan orientados a safetensors y no son la via natural para este repositorio GGUF.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y cualquier servidor compatible con el formato de endpoints de Hugging Face. vLLM y TGI estan orientados a safetensors y no son la via natural para este repositorio GGUF.
 - Latencia y throughput: no disponible. Dependen del hardware, del nivel de cuantizacion y de la longitud de la secuencia generada; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ Diferencias relevantes: frente a estas alternativas, Qwen3.5-Fable5.1 no aporta 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Hob-forge/Qwen3.5-Fable5.1
+- Pagina del modelo en Hugging Face: https://huggingface.co/Hob-forge/Qwen3.5-Fable5.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de ajuste: https://huggingface.co/datasets/MoreThought/Fable-5.1-Max-Reasoning-Filtered-1000x
 - Otros enlaces (papers, blogs, repositorios, demos): no disponible. La busqueda web realizada no devolvio resultados relevantes para este modelo; unicamente aparecieron paginas de localizacion de tiendas de una cadena de distribucion, sin relacion con el modelo.

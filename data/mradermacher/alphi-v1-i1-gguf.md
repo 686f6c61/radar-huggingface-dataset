@@ -75,7 +75,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Alphi-v1-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Alphi-v1-i1-GGUF
 - Modelo base: https://huggingface.co/RyzovaTech/Alphi-v1
 - Licencia del modelo base: https://huggingface.co/RyzovaTech/Alphi-v1/blob/main/LICENSING.md
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Alphi-v1-GGUF

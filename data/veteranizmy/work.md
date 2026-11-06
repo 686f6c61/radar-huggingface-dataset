@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Veteranizmy/work` alojado en HuggingFace contiene un conjunto de archivos que ocupan aproximadamente 1115 GB, lo que sugiere la presencia de pesos de un modelo de gran tamaño, posiblemente en formato de checkpoint completo o múltiples cuantizaciones. Sin embargo, el repositorio carece de cualquier documentación técnica: no se especifica la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El autor, identificado como "Veteranizmy", no es un publicador reconocido en el ecosistema de IA open source, y el único tag disponible es `region:us`, que no aporta información sobre las capacidades del modelo.
+El repositorio `Veteranizmy/work` alojado en Hugging Face contiene un conjunto de archivos que ocupan aproximadamente 1115 GB, lo que sugiere la presencia de pesos de un modelo de gran tamaño, posiblemente en formato de checkpoint completo o múltiples cuantizaciones. Sin embargo, el repositorio carece de cualquier documentación técnica: no se especifica la arquitectura, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de uso. El autor, identificado como "Veteranizmy", no es un publicador reconocido en el ecosistema de IA open source, y el único tag disponible es `region:us`, que no aporta información sobre las capacidades del modelo.
 
 La relevancia de este repositorio es, por tanto, muy limitada desde un punto de vista práctico. Sin especificaciones ni documentación, no es posible determinar qué problema resuelve ni por qué sería relevante en un contexto de desarrollo o investigación. El tamaño del repositorio (1115 GB) indica que se trata de un modelo de gran escala, pero sin datos sobre arquitectura o entrenamiento, cualquier uso en producción conlleva un riesgo considerable. Se recomienda encarecidamente verificar la integridad y procedencia de los archivos antes de considerarlo para cualquier tarea.
 
@@ -61,6 +61,6 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Veteranizmy/work
+- Repositorio Hugging Face: https://huggingface.co/Veteranizmy/work
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo, demos) en la informacion proporcionada ni en busquedas asociadas.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Morphy-1.5B-i1-GGUF es una cuantización en formato GGUF del modelo Morphy-1.5B, publicado por el usuario mradermacher en HuggingFace. El modelo base parece ser obra de moolvylabs, aunque no se proporciona ninguna documentación adicional en la model card. El nombre sugiere un modelo de 1.500 millones de parámetros, pero la información pública es extremadamente limitada: no se indican arquitectura, licencia, idiomas ni detalles de entrenamiento. El repositorio contiene únicamente los pesos cuantizados en formato GGUF, con un tamaño de 0.0 GB según los metadatos, lo que resulta inconsistente con un modelo de ese tamaño. En consecuencia, esta ficha se basa exclusivamente en los datos disponibles y marca como "no disponible" cualquier aspecto no documentado.
+Morphy-1.5B-i1-GGUF es una cuantización en formato GGUF del modelo Morphy-1.5B, publicado por el usuario mradermacher en Hugging Face. El modelo base parece ser obra de moolvylabs, aunque no se proporciona ninguna documentación adicional en la model card. El nombre sugiere un modelo de 1.500 millones de parámetros, pero la información pública es extremadamente limitada: no se indican arquitectura, licencia, idiomas ni detalles de entrenamiento. El repositorio contiene únicamente los pesos cuantizados en formato GGUF, con un tamaño de 0.0 GB según los metadatos, lo que resulta inconsistente con un modelo de ese tamaño. En consecuencia, esta ficha se basa exclusivamente en los datos disponibles y marca como "no disponible" cualquier aspecto no documentado.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. No se dispone de información sobre modelos comparables ni de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Morphy-1.5B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Morphy-1.5B-i1-GGUF
 - Modelo base (referenciado en la model card): https://huggingface.co/moolvylabs/Morphy-1.5B

@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes ni frente 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP8
+- Repositorio Hugging Face: https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP8
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Cuantización MXFP4 del mismo autor: https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP4
 - Cuantización OptiQ 5-bpw del mismo autor: https://huggingface.co/sahilchachra/MiniCPM5-2B-OptiQ-5bpw

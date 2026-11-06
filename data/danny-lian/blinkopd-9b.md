@@ -89,7 +89,7 @@ El autor reporta una media de aproximadamente 79,6 en el protocolo de seis bench
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Danny-Lian/BlinkOPD-9B
+- Modelo en Hugging Face: https://huggingface.co/Danny-Lian/BlinkOPD-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Danny-Lian/Vision-OPD-6K-Decontaminated
 - Repositorio de código de BlinkOPD: no disponible como enlace directo en la información proporcionada (el autor menciona una "BlinkOPD code release" sin URL)

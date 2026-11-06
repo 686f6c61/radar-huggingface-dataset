@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `XujjHarvard/cs2881-hw1-combined-math` es un checkpoint publicado en HuggingFace por el usuario XujjHarvard, con 3.085.938.688 parametros (aproximadamente 3,09 mil millones) almacenados en formato safetensors y una etiqueta de arquitectura `qwen2`. Por su nombre, todo apunta a un entregable academico ("hw1", es decir, primera practica de un curso) especializado en matematicas ("combined-math"), probablemente un ajuste fino sobre un modelo base de la familia Qwen2 en la escala de 3B. El repositorio ocupa 6,4 GB, un tamano coherente con pesos en precision de 16 bits.
+El modelo identificado como `XujjHarvard/cs2881-hw1-combined-math` es un checkpoint publicado en Hugging Face por el usuario XujjHarvard, con 3.085.938.688 parametros (aproximadamente 3,09 mil millones) almacenados en formato safetensors y una etiqueta de arquitectura `qwen2`. Por su nombre, todo apunta a un entregable academico ("hw1", es decir, primera practica de un curso) especializado en matematicas ("combined-math"), probablemente un ajuste fino sobre un modelo base de la familia Qwen2 en la escala de 3B. El repositorio ocupa 6,4 GB, un tamano coherente con pesos en precision de 16 bits.
 
 El modelo no resuelve un problema nuevo de investigacion: su interes es practico y acotado, como base pequena y desplegable en hardware de consumo para tareas de resolucion de ejercicios matematicos, generacion de datos sinteticos o experimentacion docente. Su relevancia actual es limitada: acumula 14 descargas y 0 "likes", y la ficha del repositorio no publica licencia, idiomas soportados, pipeline declarado, dataset de entrenamiento ni detalles de arquitectura mas alla de la etiqueta `qwen2`.
 
@@ -91,6 +91,6 @@ No es posible establecer una comparacion de rendimiento con el modelo analizado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XujjHarvard/cs2881-hw1-combined-math
+- Modelo en Hugging Face: https://huggingface.co/XujjHarvard/cs2881-hw1-combined-math
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las unicas entradas devueltas corresponden al portal de la administracion tributaria francesa (impots.gouv.fr) en sus secciones de particular, acceso al espacio personal, declaracion de ingresos y avisos de impuestos, sin relacion alguna con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponible.

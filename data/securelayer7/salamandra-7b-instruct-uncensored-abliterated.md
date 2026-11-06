@@ -78,7 +78,7 @@ La comparativa es cualitativa porque no se dispone de benchmarks públicos para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Securelayer7/salamandra-7b-instruct-Uncensored-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/Securelayer7/salamandra-7b-instruct-Uncensored-Abliterated
 - Modelo base: https://huggingface.co/BSC-LT/salamandra-7b-instruct
 - Repositorio de Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - Guía sobre abliteración (referencia): https://scifilogic.com/open-uncensored-llm-model/

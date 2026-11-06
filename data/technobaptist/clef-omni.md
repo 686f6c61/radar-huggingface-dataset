@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TechnoBaptist/clef-omni | 35,26B (MoE, base 30B-A3B) | no disponible | Decision multimodal estructurada | Apache-2.0 | HuggingFace (repo 70,8 GB) |
-| Cloudflare/clef | no disponible | no disponible | Variante densa para imagen y video | no disponible | HuggingFace |
-| Cloudflare/clef-flash | no disponible | no disponible | Variante densa para imagen y video | no disponible | HuggingFace |
-| Qwen/Qwen3-Omni-30B-A3B-Instruct | 30B-A3B (MoE) | no disponible | Multimodal generativo general (texto, imagen, audio, video) | no disponible en la informacion proporcionada | HuggingFace |
+| TechnoBaptist/clef-omni | 35,26B (MoE, base 30B-A3B) | no disponible | Decision multimodal estructurada | Apache-2.0 | Hugging Face (repo 70,8 GB) |
+| Cloudflare/clef | no disponible | no disponible | Variante densa para imagen y video | no disponible | Hugging Face |
+| Cloudflare/clef-flash | no disponible | no disponible | Variante densa para imagen y video | no disponible | Hugging Face |
+| Qwen/Qwen3-Omni-30B-A3B-Instruct | 30B-A3B (MoE) | no disponible | Multimodal generativo general (texto, imagen, audio, video) | no disponible en la informacion proporcionada | Hugging Face |
 
 Clef-Omni se diferencia del modelo base en que no genera texto libre, sino decisiones tipadas, y en que incorpora la cabeza conjunta de esquema. Las variantes Clef y Clef-Flash de Cloudflare se describen como alternativas densas para imagen y video.
 
@@ -86,11 +86,11 @@ Clef-Omni se diferencia del modelo base en que no genera texto libre, sino decis
 - Pesos no usados: los pesos de salida de voz del modelo base (talker y code2wav) se incluyen en el repositorio pero no se cargan, lo que incrementa el tamano de descarga y almacenamiento sin aportar funcionalidad.
 - El repositorio indica 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2026-10-10; se trata de un modelo muy reciente y sin validacion comunitaria publica.
 - No se documentan versiones cuantizadas, por lo que el requisito de ~64 GB de VRAM puede impedir su despliegue en hardware de consumo.
-- Diferencias entre identificadores: el ID de HuggingFace es `TechnoBaptist/clef-omni`, mientras que los ejemplos de codigo de la model card referencian `Cloudflare/clef-omni`; conviene verificar a que repositorio apuntan los ejemplos al desplegar.
+- Diferencias entre identificadores: el ID de Hugging Face es `TechnoBaptist/clef-omni`, mientras que los ejemplos de codigo de la model card referencian `Cloudflare/clef-omni`; conviene verificar a que repositorio apuntan los ejemplos al desplegar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/clef-omni
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/clef-omni
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Omni-30B-A3B-Instruct
 - Variante densa Clef: https://huggingface.co/Cloudflare/clef
 - Variante densa Clef-Flash: https://huggingface.co/Cloudflare/clef-flash

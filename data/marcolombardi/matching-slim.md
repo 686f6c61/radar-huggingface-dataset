@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`marcolombardi/matching-slim` es un repositorio experimental de HuggingFace que contiene una implementación propia de una red Swin Transformer (variante Swin-T) orientada a tareas de *matching* (emparejamiento, presumiblemente de características o correspondencias entre imágenes). Lo publica el usuario marcolombardi y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe como un *codebase* experimental pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo listo para producción.
+`marcolombardi/matching-slim` es un repositorio experimental de Hugging Face que contiene una implementación propia de una red Swin Transformer (variante Swin-T) orientada a tareas de *matching* (emparejamiento, presumiblemente de características o correspondencias entre imágenes). Lo publica el usuario marcolombardi y se distribuye bajo licencia BSD-3-Clause. El propio autor lo describe como un *codebase* experimental pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo listo para producción.
 
 El punto clave es que el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo (*smoke tests*)**, no un modelo entrenado ni evaluado. El autor indica explícitamente que no se reclama ninguna puntuación de *benchmark* en el repositorio. Los parámetros totales registrados en el fichero safetensors son 49.600, una cifra muy alejada de los aproximadamente 28 millones de parámetros de un Swin-T estándar, lo que sugiere que se trata de un esqueleto reducido o de un recorte de la arquitectura para experimentación.
 
@@ -24,7 +24,7 @@ Por tanto, su relevancia actual no está en el rendimiento, sino en servir como 
 | Activacion | GELU + tanh |
 | Escala declarada en config | "huge" (etiqueta del autor; no coincide con el tamano real de 49.600 parametros) |
 | Tarea | matching |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: con 49.600 parámetros, el peso en FP32 ocupa aproximadamente 0,2 MB; la memoria dominante será la de las activaciones intermedias, que depende de la resolución de entrada y no se documenta.
 - GPU recomendadas: cualquier GPU con soporte CUDA es sobrada, incluida una GTX 1050 Ti o inferior; no se requieren A100, H100 ni RTX 4090.
 - Cabe sin problema en GPU de consumo e incluso en CPU: el cuello de botella no es el modelo sino el tamaño de las imágenes de entrada.
-- Opciones de despliegue: PyTorch nativo mediante `predict.py`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que además no aplican a un modelo de visión no generativo. Las APIs de carga automática de HuggingFace requieren un adaptador explícito según el autor.
+- Opciones de despliegue: PyTorch nativo mediante `predict.py`. No se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que además no aplican a un modelo de visión no generativo. Las APIs de carga automática de Hugging Face requieren un adaptador explícito según el autor.
 - Latencia y *throughput*: no disponible. Ninguna cifra publicada.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No hay métricas propias publicadas con las que comparar, y el modelo no ha sido
 
 | Modelo | Parametros | Contexto / tarea | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marcolombardi/matching-slim | 49.600 (segun safetensors) | matching (sin entrenar) | ninguna | BSD-3-Clause | HuggingFace, 0 descargas |
+| marcolombardi/matching-slim | 49.600 (segun safetensors) | matching (sin entrenar) | ninguna | BSD-3-Clause | Hugging Face, 0 descargas |
 | Swin-T original (referencia externa) | ~28 M | clasificacion de imagen | ~81,3 % top-1 en ImageNet-1K (paper original) | MIT | ampliamente disponible |
 | Swin-B original (referencia externa) | ~88 M | clasificacion de imagen | ~83,5 % top-1 en ImageNet-1K (paper original) | MIT | ampliamente disponible |
 | ViT-B/16 (referencia externa) | ~86 M | clasificacion de imagen | ~81,8 % top-1 en ImageNet-1K (paper original) | Apache-2.0 | ampliamente disponible |
@@ -95,5 +95,5 @@ Advertencia: la comparación anterior es únicamente orientativa sobre orden de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marcolombardi/matching-slim
+- Modelo en Hugging Face: https://huggingface.co/marcolombardi/matching-slim
 - Los resultados de la busqueda web proporcionada no contienen enlaces relevantes: todas las entradas corresponden a hilos del foro de asistencia de Orange sobre el webmail, sin relacion alguna con el modelo. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales verificables.

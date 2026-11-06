@@ -18,7 +18,7 @@ La relevancia de este modelo radica en dos factores: por un lado, la tecnica de 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | BF16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M (formato GGUF) |
 | Idiomas soportados | No disponible |
-| Licencia | apache-2.0 (segun metadatos de HuggingFace); el enlace de licencia apunta a la licencia de Gemma 4 de Google (`https://ai.google.dev/gemma/docs/gemma_4_license`) |
+| Licencia | apache-2.0 (segun metadatos de Hugging Face); el enlace de licencia apunta a la licencia de Gemma 4 de Google (`https://ai.google.dev/gemma/docs/gemma_4_license`) |
 | Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en safetensors |
 | Modelo base | llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic |
 | Modelo original | google/gemma-4-E2B-it |
@@ -104,9 +104,9 @@ No se han publicado otros resultados de benchmarks (HumanEval, GSM8K, MT-Bench, 
 
 | Modelo | Parametros | Contexto | MMLU | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| princepppp/gemma-4-E2B-it-ultra-uncensored-heretic-GGUF (este modelo) | 4,65B | No disponible | 58,84% | 4/100 | apache-2.0 (enlace a licencia Gemma 4) | GGUF en HuggingFace |
-| llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic (modelo base del GGUF) | 4,65B (mismo modelo) | No disponible | 58,84% | 4/100 | apache-2.0 (enlace a licencia Gemma 4) | safetensors en HuggingFace |
-| google/gemma-4-E2B-it (modelo original) | No disponible | No disponible | 58,65% | 98/100 | Licencia Gemma 4 | HuggingFace |
+| princepppp/gemma-4-E2B-it-ultra-uncensored-heretic-GGUF (este modelo) | 4,65B | No disponible | 58,84% | 4/100 | apache-2.0 (enlace a licencia Gemma 4) | GGUF en Hugging Face |
+| llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic (modelo base del GGUF) | 4,65B (mismo modelo) | No disponible | 58,84% | 4/100 | apache-2.0 (enlace a licencia Gemma 4) | safetensors en Hugging Face |
+| google/gemma-4-E2B-it (modelo original) | No disponible | No disponible | 58,65% | 98/100 | Licencia Gemma 4 | Hugging Face |
 
 No se dispone de datos sobre otras alternativas de la misma categoria (modelos ablacionados o "uncensored" de tamano similar) en la informacion proporcionada, por lo que la comparativa se limita a las tres variantes anteriores.
 

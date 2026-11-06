@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema muy concreto y de alta demanda en produccion: asignar una polaridad a textos cortos, informales y ruidosos (tuits, comentarios, resenas breves) donde los modelos entrenados en dominios formales rinden peor. La version "latest" se entrena sobre aproximadamente 124 millones de tuits publicados entre enero de 2018 y diciembre de 2021, lo que la actualiza respecto a la version original de 2019.
 
-Su relevancia practica es enorme: con casi 2,5 millones de descargas en HuggingFace y 848 likes, es uno de los clasificadores de sentimiento de referencia para monitorizacion de redes sociales, analisis de opinion y filtrado de contenido. Es un modelo pequeno, ligero, desplegable en CPU, con licencia CC-BY-4.0 que permite uso comercial con atribucion, e integrado en el ecosistema TweetNLP. No es un modelo generativo: no conversa, no razona y no soporta tool calling.
+Su relevancia practica es enorme: con casi 2,5 millones de descargas en Hugging Face y 848 likes, es uno de los clasificadores de sentimiento de referencia para monitorizacion de redes sociales, analisis de opinion y filtrado de contenido. Es un modelo pequeno, ligero, desplegable en CPU, con licencia CC-BY-4.0 que permite uso comercial con atribucion, e integrado en el ecosistema TweetNLP. No es un modelo generativo: no conversa, no razona y no soporta tool calling.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (calculada a partir del tamano): ~500 MB en FP32, ~250 MB en FP16, ~150 MB en INT8.
 - GPU recomendadas: cualquier GPU, incluso integrada o de gama baja. Una T4, L4 o RTX 3060 es mas que suficiente para alta concurrencia.
 - Cabe en GPU de consumo: si, en cualquier GPU consumer moderna (RTX 2060 o superior) e incluso en Raspberry Pi o CPU con `onnxruntime`.
-- Opciones de despliegue: HuggingFace `transformers` con pipeline `text-classification`, TensorFlow via `TFAutoModelForSequenceClassification`, exportacion a ONNX, TorchScript, y servicio con Text Embeddings Inference o FastAPI + batching. Tambien disponible en Azure AI (tag `deploy:azure`) y con `endpoints_compatible`.
+- Opciones de despliegue: Hugging Face `transformers` con pipeline `text-classification`, TensorFlow via `TFAutoModelForSequenceClassification`, exportacion a ONNX, TorchScript, y servicio con Text Embeddings Inference o FastAPI + batching. Tambien disponible en Azure AI (tag `deploy:azure`) y con `endpoints_compatible`.
 - Latencia y throughput: no se publican cifras oficiales. Por el tamano del modelo, la inferencia en GPU se sitúa en el orden de milisegundos por lote pequeno en FP16.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Los datos de rendimiento comparativo (macro-F1 en TweetEval) no estan disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest
+- Hugging Face: https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest
 - Modelo base de Twitter: https://huggingface.co/cardiffnlp/twitter-roberta-base-2021-124m
 - Paper TimeLMs (arXiv): https://arxiv.org/abs/2202.03829
 - Repositorio TimeLMs: https://github.com/cardiffnlp/timelms

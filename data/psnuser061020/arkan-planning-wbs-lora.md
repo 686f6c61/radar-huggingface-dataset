@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `psnuser061020/arkan-planning-wbs-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario psnuser061020 sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se distribuye a través de HuggingFace con la librería PEFT y formato de pesos safetensors, y su repositorio ocupa 0,1 GB, coherente con el tamaño reducido típico de un adaptador de bajo rango. El nombre del repositorio sugiere un ajuste orientado a planificación de proyectos y generación de estructuras de desglose de trabajo (WBS, Work Breakdown Structure), aunque la model card no confirma explícitamente esta finalidad.
+El modelo `psnuser061020/arkan-planning-wbs-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario psnuser061020 sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Se distribuye a través de Hugging Face con la librería PEFT y formato de pesos safetensors, y su repositorio ocupa 0,1 GB, coherente con el tamaño reducido típico de un adaptador de bajo rango. El nombre del repositorio sugiere un ajuste orientado a planificación de proyectos y generación de estructuras de desglose de trabajo (WBS, Work Breakdown Structure), aunque la model card no confirma explícitamente esta finalidad.
 
 El modelo hereda la arquitectura y las capacidades del Qwen2.5-3B-Instruct, un transformer decoder-only de aproximadamente 3.000 millones de parámetros con ventana de contexto nativa de 32.768 tokens. Se trata de un adaptador, no de un modelo completo: para utilizarlo es necesario cargar el modelo base y aplicar después los pesos LoRA mediante la librería PEFT.
 
-La relevancia de esta ficha es limitada por la ausencia casi total de documentación: la model card es la plantilla por defecto de HuggingFace sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación, y el repositorio acumula cero descargas y cero valoraciones. Cualquier uso en producción debería ir precedido de una validación propia.
+La relevancia de esta ficha es limitada por la ausencia casi total de documentación: la model card es la plantilla por defecto de Hugging Face sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluación, y el repositorio acumula cero descargas y cero valoraciones. Cualquier uso en producción debería ir precedido de una validación propia.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| psnuser061020/arkan-planning-wbs-lora | Adaptador LoRA (base ~3,09 B) | No especificado (base: 32.768) | No disponible | HuggingFace, 0 descargas | Sin documentacion ni evaluacion |
+| psnuser061020/arkan-planning-wbs-lora | Adaptador LoRA (base ~3,09 B) | No especificado (base: 32.768) | No disponible | Hugging Face, 0 descargas | Sin documentacion ni evaluacion |
 | Qwen/Qwen2.5-3B-Instruct | ~3,09 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Ampliamente disponible | Modelo base, documentado y evaluado |
 | meta-llama/Llama-3.2-3B-Instruct | ~3,2 B | 128.000 | Llama 3.2 Community License | Ampliamente disponible | Alternativa de tamano similar, requiere aceptar la licencia |
 | microsoft/Phi-3.5-mini-instruct | ~3,8 B | 128.000 | MIT | Ampliamente disponible | Buen rendimiento en razonamiento y codigo para su tamano |
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 ## Limitaciones y advertencias
 
 - La licencia no está declarada, lo que impide determinar si el uso comercial está permitido. Es un bloqueante para cualquier despliegue en producción.
-- La model card es la plantilla por defecto de HuggingFace sin completar: no hay información sobre datos de entrenamiento, hiperparámetros, sesgos ni evaluación.
+- La model card es la plantilla por defecto de Hugging Face sin completar: no hay información sobre datos de entrenamiento, hiperparámetros, sesgos ni evaluación.
 - El repositorio registra cero descargas y cero valoraciones, por lo que no ha sido validado por la comunidad.
 - Al ser un adaptador, hereda todos los sesgos y limitaciones del modelo base Qwen2.5-3B-Instruct, incluidas las posibles alucinaciones en tareas de razonamiento complejo.
 - No se especifican los idiomas de entrenamiento del adaptador; un ajuste LoRA puede degradar el rendimiento multilingüe del modelo base si se entrenó solo en un idioma.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento del adaptador que permitan una comparacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/psnuser061020/arkan-planning-wbs-lora
+- Hugging Face: https://huggingface.co/psnuser061020/arkan-planning-wbs-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Paper citado en la plantilla de la model card (impacto ambiental, no especifico de este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML mencionada en la plantilla: https://mlco2.github.io/impact

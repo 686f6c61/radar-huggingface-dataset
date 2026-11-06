@@ -99,10 +99,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `osos3lom/receiptai` (este) | 261,6 M (5,1 M entrenables) | No disponible | Extracción de tickets ar/en con LoRA sobre SmolVLM | MIT | HuggingFace, ONNX para navegador |
-| `HuggingFaceTB/SmolVLM-256M-Instruct` (base) | 256 M | No disponible en esta ficha | VLM generalista instruido | Apache 2.0 | HuggingFace |
-| `HuggingFaceTB/SmolVLM-500M-Instruct` | ~500 M | No disponible en esta ficha | VLM generalista de tamaño superior | Apache 2.0 | HuggingFace |
-| Florence-2-base | ~0,23 B | No disponible en esta ficha | Visión y OCR con tareas por prompt | MIT | HuggingFace |
+| `osos3lom/receiptai` (este) | 261,6 M (5,1 M entrenables) | No disponible | Extracción de tickets ar/en con LoRA sobre SmolVLM | MIT | Hugging Face, ONNX para navegador |
+| `HuggingFaceTB/SmolVLM-256M-Instruct` (base) | 256 M | No disponible en esta ficha | VLM generalista instruido | Apache 2.0 | Hugging Face |
+| `HuggingFaceTB/SmolVLM-500M-Instruct` | ~500 M | No disponible en esta ficha | VLM generalista de tamaño superior | Apache 2.0 | Hugging Face |
+| Florence-2-base | ~0,23 B | No disponible en esta ficha | Visión y OCR con tareas por prompt | MIT | Hugging Face |
 
 La comparación de rendimiento no es directa: los benchmarks publicados por este modelo son propietarios (conjunto dorado sintético de 50 tickets y 37 escaneos reales de CORU), no comparables con DocVQA o similar. Frente a la base SmolVLM-256M-Instruct, la mejora medida en la propia partición sintética es de 4,7 a 99,3 en gate score, pero esa cifra está inflada por memorización de catálogo (ver limitaciones). Frente a alternativas más grandes, la ventaja es el tamaño y la ejecución en navegador, no la precisión.
 
@@ -122,7 +122,7 @@ La comparación de rendimiento no es directa: los benchmarks publicados por este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/osos3lom/receiptai
+- Modelo en Hugging Face: https://huggingface.co/osos3lom/receiptai
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct
 - Repositorio del adaptador (archivos citados en la model card: `training_run.json`, `data-pipeline/run_eval.py`, `data-pipeline/eval_harness.py`, `data-pipeline/compare_arms.py`): https://huggingface.co/osos3lom/receiptai/tree/main
 - Paper de Idefics3 / SmolVLM: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política de control robótico entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT), desarrollado por el autor `jogarulfop` y publicado en HuggingFace bajo la librería LeRobot. El identificador completo (`policy_2026-09-02_shake4it_bench_5sensors_v3_dragonfly_10kHz_nfft_512`) sugiere que está especializado en una tarea de manipulación denominada "shake4it" (agitar un objeto), con cinco sensores, una frecuencia de muestreo de 10 kHz y un análisis espectral basado en FFT de 512 puntos. El modelo tiene 51.668.614 parámetros, lo que lo sitúa en la categoría de políticas ligeras, y se distribuye bajo licencia Apache 2.0.
+Este modelo es una política de control robótico entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT), desarrollado por el autor `jogarulfop` y publicado en Hugging Face bajo la librería LeRobot. El identificador completo (`policy_2026-09-02_shake4it_bench_5sensors_v3_dragonfly_10kHz_nfft_512`) sugiere que está especializado en una tarea de manipulación denominada "shake4it" (agitar un objeto), con cinco sensores, una frecuencia de muestreo de 10 kHz y un análisis espectral basado en FFT de 512 puntos. El modelo tiene 51.668.614 parámetros, lo que lo sitúa en la categoría de políticas ligeras, y se distribuye bajo licencia Apache 2.0.
 
 La relevancia de este modelo radica en que demuestra el uso de ACT para tareas de manipulación de alta frecuencia con múltiples sensores, un caso de uso creciente en robótica de precisión. Al estar entrenado con LeRobot, sigue el estándar de la comunidad para reproducibilidad y despliegue en robots reales. No se dispone de información pública sobre el rendimiento en benchmarks ni sobre los detalles del dataset de entrenamiento más allá de su nombre.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jogarulfop/policy_2026-09-02_shake4it_bench_5sensors_v3_dragonfly_10kHz_nfft_512
+- Modelo en Hugging Face: https://huggingface.co/jogarulfop/policy_2026-09-02_shake4it_bench_5sensors_v3_dragonfly_10kHz_nfft_512
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

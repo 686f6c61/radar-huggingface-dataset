@@ -21,7 +21,7 @@ La relevancia de esta ficha concreta es de infraestructura más que de modelado:
 | Licencia | Apache-2.0 |
 | Formato de pesos | LiteRT-LM (`.litertlm`), pesos empaquetados en int4. No incluye safetensors ni GGUF |
 
-Datos adicionales del repositorio: tamaño 0,5 GB, 0 descargas, 0 likes, creado el 2026-10-03 y actualizado el 2026-10-03 según los metadatos de HuggingFace (fecha anómala respecto a la publicación del modelo base). Librería declarada: `litert-lm`.
+Datos adicionales del repositorio: tamaño 0,5 GB, 0 descargas, 0 likes, creado el 2026-10-03 y actualizado el 2026-10-03 según los metadatos de Hugging Face (fecha anómala respecto a la publicación del modelo base). Librería declarada: `litert-lm`.
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ Frente a las alternativas, la única diferencia de este repositorio es el empaqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Qwen3-0.6B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Qwen3-0.6B-litert-lm
 - Origen de la conversión: https://huggingface.co/litert-community/Qwen3-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Informe técnico de la familia Qwen3 (referencia del modelo base): https://arxiv.org/abs/2505.09388

@@ -4,7 +4,7 @@
 
 `qilili7/llama-3.2-1b-dpo-hw1` es un adaptador LoRA (formato PEFT) publicado por el usuario `qilili7` sobre el modelo instructivo `meta-llama/Llama-3.2-1B-Instruct`. Por el nombre del repositorio y las etiquetas (`peft`, `safetensors`) se deduce que se trata de un ajuste fino supervisado sobre el que se ha aplicado una etapa de optimizacion por preferencias directas (DPO), aunque el autor no documenta el procedimiento en la model card. No es un modelo completo, sino un conjunto de pesos delta que debe cargarse junto al modelo base o fusionarse con el.
 
-La relevancia de este repositorio es limitada y de caracter experimental: la model card es la plantilla por defecto de HuggingFace sin ningun campo rellenado, el repositorio ocupa 0.0 GB, acumula 10 descargas y 0 likes, y no incluye informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion. Todas las especificaciones funcionales (contexto, idiomas, cuantizacion) heredan de facto las del modelo base, ya que el autor no las redefine ni las restringe.
+La relevancia de este repositorio es limitada y de caracter experimental: la model card es la plantilla por defecto de Hugging Face sin ningun campo rellenado, el repositorio ocupa 0.0 GB, acumula 10 descargas y 0 likes, y no incluye informacion sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion. Todas las especificaciones funcionales (contexto, idiomas, cuantizacion) heredan de facto las del modelo base, ya que el autor no las redefine ni las restringe.
 
 Desde el punto de vista practico, esta ficha debe leerse como una advertencia: no hay evidencia publicada de que el adaptador este correctamente entrenado, ni de que mejore al modelo base en ninguna tarea. Cualquier uso en produccion exigiria una evaluacion propia previa.
 
@@ -22,7 +22,7 @@ Desde el punto de vista practico, esta ficha debe leerse como una advertencia: n
 | Formato de pesos | safetensors (adaptador PEFT) |
 | Libreria | peft (version declarada en la model card: PEFT 0.10.0) |
 | Modelo base | meta-llama/Llama-3.2-1B-Instruct |
-| Tamano del repositorio | 0.0 GB (segun los metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun los metadatos de Hugging Face) |
 | Descargas / likes | 10 / 0 |
 | Fecha de creacion (metadatos) | 2026-10-05T01:50:53Z |
 
@@ -30,7 +30,7 @@ Desde el punto de vista practico, esta ficha debe leerse como una advertencia: n
 
 El artefacto publicado es un adaptador de bajo rango (LoRA) aplicado sobre `meta-llama/Llama-3.2-1B-Instruct`. Llama 3.2 1B es un transformer decoder-only con normalizacion RMSNorm pre-norma, activacion SwiGLU, embeddings rotatorios (RoPE) y atencion con consultas agrupadas (GQA); el modelo base fue entrenado por Meta con hasta 9 billones de tokens y destila parcialmente conocimiento de modelos mayores de la familia Llama 3.1. Sobre esa base, el autor habria aplicado ajuste supervisado y despues DPO, a juzgar por el sufijo `dpo` del nombre del repositorio. El rango del adaptador, el valor de alpha, las capas objetivo y la tasa de aprendizaje no se declaran en ningun sitio.
 
-No hay informacion verificable sobre el conjunto de datos de preferencias empleado, el numero de pasos de entrenamiento, el regimen de precision (fp16, bf16 o fp32), el hardware utilizado ni las horas de computo. La unica referencia tecnica presente en el repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece citado en la plantilla por defecto de HuggingFace, no como aportacion metodologica del autor. En consecuencia, la innovacion tecnica del repositorio, si existe, no esta documentada.
+No hay informacion verificable sobre el conjunto de datos de preferencias empleado, el numero de pasos de entrenamiento, el regimen de precision (fp16, bf16 o fp32), el hardware utilizado ni las horas de computo. La unica referencia tecnica presente en el repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece citado en la plantilla por defecto de Hugging Face, no como aportacion metodologica del autor. En consecuencia, la innovacion tecnica del repositorio, si existe, no esta documentada.
 
 ## Capacidades
 
@@ -73,17 +73,17 @@ El repositorio no incluye tabla de evaluacion, ni comparacion con el modelo base
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos seis anos, e incluso en CPU con llama.cpp usando la version cuantizada del modelo fusionado.
 - Opciones de despliegue: `transformers` + `peft` para cargar el adaptador sin fusionar; `peft` con `merge_and_unload` para generar un modelo completo que despues puede convertirse a GGUF y servirse con llama.cpp, Ollama o LM Studio; vLLM y TGI admiten adaptadores LoRA en caliente para servir varias variantes sobre una misma instancia del modelo base.
 - Latencia y throughput: no disponibles. No hay ningun dato de velocidad publicado, ni siquiera en el propio repositorio.
-- Almacenamiento: al declararse 0.0 GB de tamano de repositorio, es posible que los pesos del adaptador no esten efectivamente subidos o que sean de un tamano inferior al umbral de redondeo de HuggingFace. Conviene verificar la pestaña de archivos antes de planificar cualquier despliegue.
+- Almacenamiento: al declararse 0.0 GB de tamano de repositorio, es posible que los pesos del adaptador no esten efectivamente subidos o que sean de un tamano inferior al umbral de redondeo de Hugging Face. Conviene verificar la pestaña de archivos antes de planificar cualquier despliegue.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qilili7/llama-3.2-1b-dpo-hw1 (adaptador) | Adaptador sobre 1,24B | Heredado del base (128k) | No disponible | HuggingFace, 10 descargas | No disponible |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado | Publicado por Meta en su model card |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32k | Apache 2.0 | HuggingFace | Publicado por el equipo Qwen |
-| Gemma 2 2B IT | 2,6B | 8k | Gemma Terms of Use | HuggingFace | Publicado por Google |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | HuggingFace | Publicado por HuggingFace |
+| qilili7/llama-3.2-1b-dpo-hw1 (adaptador) | Adaptador sobre 1,24B | Heredado del base (128k) | No disponible | Hugging Face, 10 descargas | No disponible |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado | Publicado por Meta en su model card |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32k | Apache 2.0 | Hugging Face | Publicado por el equipo Qwen |
+| Gemma 2 2B IT | 2,6B | 8k | Gemma Terms of Use | Hugging Face | Publicado por Google |
+| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Hugging Face | Publicado por Hugging Face |
 
 La comparacion directa en calidad no puede establecerse porque el adaptador no aporta ninguna medicion. Frente a las alternativas, la unica ventaja objetivable de `qilili7/llama-3.2-1b-dpo-hw1` seria su tamano reducido y su licencia Apache no aplicable, mientras que sus desventajas son la ausencia total de documentacion, la falta de datos de entrenamiento y la dependencia de la licencia comunitaria de Llama 3.2.
 
@@ -103,7 +103,7 @@ La comparacion directa en calidad no puede establecerse porque el adaptador no a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qilili7/llama-3.2-1b-dpo-hw1
+- Modelo en Hugging Face: https://huggingface.co/qilili7/llama-3.2-1b-dpo-hw1
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Articulo citado en las etiquetas (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

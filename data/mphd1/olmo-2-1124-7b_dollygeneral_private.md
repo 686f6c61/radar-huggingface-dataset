@@ -2,9 +2,9 @@
 
 ## Resumen
 
-OLMo-2-1124-7B\_dollygeneral\_private es un ajuste fino (fine-tune) del modelo base allenai/OLMo-2-1124-7B, publicado por el usuario mphd1 en HuggingFace. Se trata de un transformer decoder-only denso de 7.298.617.344 parámetros (aproximadamente 7,3 mil millones), distribuido en formato safetensors y compatible con la librería transformers. El repositorio tiene un tamaño de 29,2 GB, lo que es coherente con pesos almacenados en fp32 (7,3B × 4 bytes ≈ 29,2 GB).
+OLMo-2-1124-7B\_dollygeneral\_private es un ajuste fino (fine-tune) del modelo base allenai/OLMo-2-1124-7B, publicado por el usuario mphd1 en Hugging Face. Se trata de un transformer decoder-only denso de 7.298.617.344 parámetros (aproximadamente 7,3 mil millones), distribuido en formato safetensors y compatible con la librería transformers. El repositorio tiene un tamaño de 29,2 GB, lo que es coherente con pesos almacenados en fp32 (7,3B × 4 bytes ≈ 29,2 GB).
 
-El interés de esta ficha es doble. Por un lado, documenta un derivado de la familia OLMo 2 de AI2, una de las pocas familias de modelos totalmente abiertas (pesos, datos de entrenamiento y código). Por otro, advierte de que se trata de un modelo sin documentación: la model card es la generada automáticamente por el Trainer de HuggingFace, no declara el conjunto de datos de entrenamiento ("unknown dataset"), no incluye resultados de evaluación y acumula 0 descargas y 0 likes en el momento de la consulta.
+El interés de esta ficha es doble. Por un lado, documenta un derivado de la familia OLMo 2 de AI2, una de las pocas familias de modelos totalmente abiertas (pesos, datos de entrenamiento y código). Por otro, advierte de que se trata de un modelo sin documentación: la model card es la generada automáticamente por el Trainer de Hugging Face, no declara el conjunto de datos de entrenamiento ("unknown dataset"), no incluye resultados de evaluación y acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Por tanto, esta ficha debe leerse como una caracterización del modelo base más el conjunto de hiperparámetros de ajuste declarados, y no como una evaluación del fine-tune. Cualquier afirmación sobre el rendimiento del modelo ajustado queda fuera de lo disponible.
 
@@ -98,7 +98,7 @@ La comparación relevante en términos de licencia y transparencia es con la pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mphd1/OLMo-2-1124-7B_dollygeneral_private
+- Modelo en Hugging Face: https://huggingface.co/mphd1/OLMo-2-1124-7B_dollygeneral_private
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B
 - Informe técnico de OLMo 2 (AI2): https://arxiv.org/abs/2501.00656
 - Blog de AI2 sobre OLMo 2: https://allenai.org/blog/olmo2

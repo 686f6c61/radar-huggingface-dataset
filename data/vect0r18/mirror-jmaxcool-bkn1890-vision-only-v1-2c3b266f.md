@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables. El modelo es un mirror 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vect0r18/mirror-jmaxcool-bkn1890-vision-only-v1-2c3b266f
+- Hugging Face: https://huggingface.co/vect0r18/mirror-jmaxcool-bkn1890-vision-only-v1-2c3b266f
 - Perfil del autor: https://huggingface.co/vect0r18

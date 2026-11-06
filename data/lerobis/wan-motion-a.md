@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lerobis/wan-motion-a` es un fine-tune del modelo de generación de vídeo a partir de imagen (image-to-video, I2V) Wan-AI/Wan2.2-I2V-A14B, publicado por el usuario lerobis en HuggingFace. El repositorio ocupa 15,0 GB y se distribuye sin una model card técnica: el README consiste únicamente en una recopilación de enlaces a modelos y LoRAs alojados en Civitai, en su mayoría de contenido para adultos. No se documenta arquitectura propia, dataset de entrenamiento, hiperparámetros ni proceso de ajuste.
+`lerobis/wan-motion-a` es un fine-tune del modelo de generación de vídeo a partir de imagen (image-to-video, I2V) Wan-AI/Wan2.2-I2V-A14B, publicado por el usuario lerobis en Hugging Face. El repositorio ocupa 15,0 GB y se distribuye sin una model card técnica: el README consiste únicamente en una recopilación de enlaces a modelos y LoRAs alojados en Civitai, en su mayoría de contenido para adultos. No se documenta arquitectura propia, dataset de entrenamiento, hiperparámetros ni proceso de ajuste.
 
 El modelo hereda por tanto las características del base: Wan 2.2 I2V en su variante de 14B parámetros, un modelo de difusión para animar imágenes en vídeo. La relevancia de esta ficha es limitada desde el punto de vista de la investigación: se trata de un derivado comunitario sin documentación, sin métricas publicadas y con licencia sin especificar, orientado a un caso de uso muy concreto y no apto para todos los públicos (el repositorio está marcado como `not-for-all-audiences`).
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lerobis/wan-motion-a | no disponible (base 14B) | no disponible | sin benchmarks | unknown | HuggingFace (repo de 15,0 GB) |
-| Wan-AI/Wan2.2-I2V-A14B | 14B (según nombre) | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base) |
-| Otros fine-tunes de Wan 2.2 I2V | variable | no disponible | sin benchmarks públicos | variable | Civitai / HuggingFace |
+| lerobis/wan-motion-a | no disponible (base 14B) | no disponible | sin benchmarks | unknown | Hugging Face (repo de 15,0 GB) |
+| Wan-AI/Wan2.2-I2V-A14B | 14B (según nombre) | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base) |
+| Otros fine-tunes de Wan 2.2 I2V | variable | no disponible | sin benchmarks públicos | variable | Civitai / Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoría.
 
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lerobis/wan-motion-a
+- Hugging Face: https://huggingface.co/lerobis/wan-motion-a
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Civitai Archive (referenciado en el README): https://civitaiarchive.com/search?is_nsfw=true&is_deleted=true&q=blink
 - Civitai (varios modelos referenciados en el README): https://civitai.com/models/2316517, https://civitai.com/models/2319913, https://civitai.com/models/2231076, https://civitai.com/models/2227622, https://civitai.com/models/1923354, https://civitai.com/models/1952945, https://civitai.com/models/1916930, https://civitai.com/models/1476909, https://civitai.com/models/2069477, https://civitai.com/models/1906148, https://civitai.com/models/1899045, https://civitai.com/models/2148595, https://civitaiarchive.com/models/2060273

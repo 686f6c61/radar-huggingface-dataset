@@ -18,7 +18,7 @@ Su relevancia es doble: permite servir localmente un MoE multimodal de 133,7 B c
 | Longitud de contexto | no disponible (el autor menciona pruebas con ~85 000 tokens de contexto vivo, sin especificar la ventana maxima soportada) |
 | Tipos de cuantizacion | 3 bits en expertos enrutados; tronco en precision mixta (etiqueta oQ3e); tabla n-gram/PLE de 4 bits g32; tensores no cuantizados en FP16 (escalas, sesgos, normas); torre de vision en FP32; 4,28 bits/peso global |
 | Idiomas soportados | en, ru |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | empaquetado para MLX / runtime MTPLX (biblioteca mlx); el contenedor de ficheros no se especifica en la informacion disponible |
 | Hardware objetivo | Apple Silicon; esta build FP16 esta pensada para M1 y M2 |
 | Metodo de compresion | REAP (poda de expertos) + cuantizacion DWQ de extremo a extremo + destilacion propia del sidecar MTP |
@@ -80,7 +80,7 @@ Los tres primeros comparten pesos y numeros de evaluacion; la eleccion entre ell
 
 ## Limitaciones y advertencias
 
-- Licencia qwen-community-1.0, etiquetada como "other" en HuggingFace: hay que revisar el texto completo antes de cualquier uso comercial, ya que la informacion disponible no detalla sus condiciones.
+- Licencia qwen-community-1.0, etiquetada como "other" en Hugging Face: hay que revisar el texto completo antes de cualquier uso comercial, ya que la informacion disponible no detalla sus condiciones.
 - Dependencia total de Apple Silicon y del runtime MTPLX: no hay pesos GGUF ni rutas de despliegue en GPU NVIDIA documentadas, lo que limita su uso en servidores convencionales.
 - Cuantizacion agresiva: los expertos enrutados estan a 3 bits y la tabla n-gram a 4 bits. La perdida de calidad frente al modelo sin cuantizar no se cuantifica en esta ficha.
 - El autor declara explicitamente que no ha medido el rendimiento en M1 ni en M2, que son los chips objetivo de esta build. Las cifras de velocidad citadas provienen del pack BF16 en un M4 Pro.
@@ -94,7 +94,7 @@ Los tres primeros comparten pesos y numeros de evaluacion; la eleccion entre ell
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta build): https://huggingface.co/Litwein/Qwen3.8-Flash-Next-REAP320-oQ3e-fp16-DWQ-MTP-Vision-MTPLX
+- Repositorio Hugging Face (esta build): https://huggingface.co/Litwein/Qwen3.8-Flash-Next-REAP320-oQ3e-fp16-DWQ-MTP-Vision-MTPLX
 - Repositorio hermano en BF16: https://huggingface.co/Litwein/Qwen3.8-Flash-Next-REAP320-oQ3e-DWQ-MTP-Vision-MTPLX
 - Repositorio hermano para oMLX: https://huggingface.co/Litwein/Qwen3.8-Flash-Next-REAP320-oQ3e-fp16-DWQ-MTP-Vision-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

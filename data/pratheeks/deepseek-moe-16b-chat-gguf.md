@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeekMoE 16B Chat (este, en GGUF) | 16,4B totales | no disponible | comparable o mejor que DeepSeek 7B Chat y LLaMA2 7B SFT con ~40% de cómputo | no disponible para esta copia GGUF | GGUF en HuggingFace |
+| DeepSeekMoE 16B Chat (este, en GGUF) | 16,4B totales | no disponible | comparable o mejor que DeepSeek 7B Chat y LLaMA2 7B SFT con ~40% de cómputo | no disponible para esta copia GGUF | GGUF en Hugging Face |
 | DeepSeek 7B Chat | 7B (denso) | no disponible | referencia base de comparación | no disponible | safetensors y GGUF |
 | LLaMA2 7B SFT | 7B (denso) | no disponible | referencia base de comparación | licencia LLaMA 2 | safetensors y GGUF |
 
@@ -85,8 +85,8 @@ Los datos de licencia y contexto de los modelos comparados no se detallan en la 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/pratheeks/deepseek-moe-16b-chat-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/pratheeks/deepseek-moe-16b-chat-GGUF
 - Modelo original: https://huggingface.co/deepseek-ai/deepseek-moe-16b-chat
 - Repositorio GitHub de DeepSeek-MoE: https://github.com/deepseek-ai/DeepSeek-MoE
-- Copia alternativa en HuggingFace: https://huggingface.co/nesteggs/deepseek-moe-16b-chat
+- Copia alternativa en Hugging Face: https://huggingface.co/nesteggs/deepseek-moe-16b-chat
 - Visor del modelo: https://hfviewer.com/deepseek-ai/deepseek-moe-16b-chat

@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
 | MigueldsBatista/Arctic-Text2SQL-R1-7B-llamafile | 7B (segun nombre del base) | no disponible | Ejecutable llamafile con GGUF Q4_K_M | apache-2.0 | Distribucion en binario unico, sin dependencias |
-| Snowflake/Arctic-Text2SQL-R1-7B | 7B (segun nombre del base) | no disponible | safetensors (formato habitual en HuggingFace) | no disponible en la informacion proporcionada | Modelo original del que deriva este reempaquetado |
+| Snowflake/Arctic-Text2SQL-R1-7B | 7B (segun nombre del base) | no disponible | safetensors (formato habitual en Hugging Face) | no disponible en la informacion proporcionada | Modelo original del que deriva este reempaquetado |
 | Otras alternativas de text-to-SQL de ~7B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MigueldsBatista/Arctic-Text2SQL-R1-7B-llamafile
-- Modelo base en HuggingFace: https://huggingface.co/Snowflake/Arctic-Text2SQL-R1-7B
+- Repositorio en Hugging Face: https://huggingface.co/MigueldsBatista/Arctic-Text2SQL-R1-7B-llamafile
+- Modelo base en Hugging Face: https://huggingface.co/Snowflake/Arctic-Text2SQL-R1-7B
 - Descarga directa del ejecutable: https://huggingface.co/MigueldsBatista/Arctic-Text2SQL-R1-7B-llamafile/resolve/main/arctic-text2sql-r1-7b.llamafile
 - Repositorio de llamafile: https://github.com/mozilla-ai/llamafile
 - Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada.

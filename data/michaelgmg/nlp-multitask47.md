@@ -76,5 +76,5 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michaelgmg/nlp-multitask47
+- Modelo en Hugging Face: https://huggingface.co/michaelgmg/nlp-multitask47
 - La busqueda web realizada no devolvio ningun enlace relevante (papers, blogs, repositorios o demos) asociado a este modelo o a su autor.

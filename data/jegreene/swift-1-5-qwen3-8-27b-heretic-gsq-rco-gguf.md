@@ -18,7 +18,7 @@ Su relevancia actual es doble. Por un lado, ofrece un modelo multimodal de ~27 B
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | IQ3_S (3,55 BPW), IQ3_XXS (3,06 BPW), IQ2_S (2,81 BPW); proyector visual en F16 |
 | Idiomas soportados | No disponible |
-| Licencia | `swift-open-license-1.0` (declarada como `license: other` en HuggingFace) |
+| Licencia | `swift-open-license-1.0` (declarada como `license: other` en Hugging Face) |
 | Formato de pesos | GGUF (single-file, compatible con llama.cpp) |
 | Tamaño del repositorio | 33,1 GB |
 | Pipeline | `image-text-to-text` |
@@ -107,7 +107,7 @@ Para el conteo por defecto de Heretic, este modelo baja a 36 rechazos de 100 fre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jegreene/Swift-1.5-Qwen3.8-27B-heretic-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jegreene/Swift-1.5-Qwen3.8-27B-heretic-GSQ-RCO-GGUF
 - Carpeta de evaluación del autor: https://huggingface.co/jegreene/Swift-1.5-Qwen3.8-27B-heretic-GSQ-RCO-GGUF/tree/main/evaluation
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Publicaciones GSQ-RCO `-mtp` de UkisAI (referencia de cuantización): https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF

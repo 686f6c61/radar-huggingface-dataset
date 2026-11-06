@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mulhearn1022/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp-text-only
+- Repositorio Hugging Face: https://huggingface.co/mulhearn1022/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp-text-only
 - Modelo original abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
 - Cuantización similar: https://huggingface.co/root4k/Huihui-Qwen3.6-35B-A3B-abliterated-oQ4e-fp16-mtp
 - Noticia sobre el lanzamiento: https://www.ai-market-watch.com/news/release-of-uncensored-qwen36-35b-a3b-abliterated-model-bgxohb

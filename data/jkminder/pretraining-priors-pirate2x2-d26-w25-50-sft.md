@@ -38,7 +38,7 @@ La arquitectura es un transformer estándar del tipo nanochat (similar a GPT-2/G
 - Evaluación de técnicas de alineación: comparar el comportamiento de este checkpoint con el base sin SFT para medir el efecto del ajuste fino por instrucciones sobre sesgos implantados.
 - Desarrollo de metodologías de "machine unlearning" o edición de modelos: analizar si el SFT elimina o solo atenúa el registro pirata.
 - Benchmarking de modelos pequeños: usar sus resultados en ARC, MMLU, GSM8K y HumanEval como referencia para otros modelos de ~1B parámetros.
-- Pruebas de robustez de pipelines de conversión: el repositorio incluye scripts de conversión y verificación de equivalencia logit, útil para validar herramientas de exportación a HuggingFace.
+- Pruebas de robustez de pipelines de conversión: el repositorio incluye scripts de conversión y verificación de equivalencia logit, útil para validar herramientas de exportación a Hugging Face.
 - Educación en LLMs: como ejemplo didáctico de cómo se diseña un experimento de "pretraining priors" con control de dosis y ventana temporal.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se proporcionan comparaciones con otros modelos en la información disponible
 - VRAM estimada: al ser un modelo de ~973M parámetros en bf16, ocupa aproximadamente 1,95 GB en memoria (sin cuantización). Con cuantización a 8 bits podría caber en ~1 GB, y a 4 bits en ~0,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar inferencia en bf16 (por ejemplo, RTX 3050, RTX 4060, T4). Para entrenamiento o fine-tuning se necesitaría una GPU con más memoria (el autor usó 8×H200 para el SFT).
 - Cabe en GPUs de consumo: sí, en tarjetas como RTX 3060, RTX 4070, etc., con suficiente VRAM.
-- Opciones de despliegue: al requerir `trust_remote_code=True`, no es compatible directamente con vLLM, Ollama o llama.cpp sin adaptaciones. Se puede cargar con Transformers de HuggingFace usando el código personalizado. Para producción no es recomendable.
+- Opciones de despliegue: al requerir `trust_remote_code=True`, no es compatible directamente con vLLM, Ollama o llama.cpp sin adaptaciones. Se puede cargar con Transformers de Hugging Face usando el código personalizado. Para producción no es recomendable.
 - Latencia y throughput: no se han publicado datos específicos. En una GPU moderna, la generación de tokens debería ser rápida (del orden de decenas de tokens por segundo), pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Los valores de TinyLlama y Qwen son aproximados y no verificados en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w25-50-sft
+- Modelo en Hugging Face: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w25-50-sft
 - Modelo base (sin SFT): https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w25-50-base
 - Checkpoint SFT del experimento exp-056 (ancla): https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-sft
 - Dataset de corpus pirata 2x2: https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2

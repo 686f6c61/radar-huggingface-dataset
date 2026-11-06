@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/AOT-GAN
+- Hugging Face: https://huggingface.co/qualcomm/AOT-GAN
 - Qualcomm AI Hub: https://aihub.qualcomm.com/models/aotgan
 - Repositorio GitHub de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/aotgan
 - Paper original: https://arxiv.org/abs/2104.01431

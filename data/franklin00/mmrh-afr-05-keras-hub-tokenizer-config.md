@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-05-keras-hub-tokenizer-config` es un artefacto de investigación en seguridad publicado en HuggingFace, no un modelo de lenguaje funcional. Se presenta explícitamente como un "espécimen inerte de escáner" (*inert scanner specimen*) para investigación académica de seguridad, con las etiquetas `security-research` y `not-for-production`. Su propósito declarado es preservar el vector de hallazgo en los metadatos del modelo, concretamente a través del fichero de configuración del tokenizador (categoría AFR).
+`FrankLin00/mmrh-afr-05-keras-hub-tokenizer-config` es un artefacto de investigación en seguridad publicado en Hugging Face, no un modelo de lenguaje funcional. Se presenta explícitamente como un "espécimen inerte de escáner" (*inert scanner specimen*) para investigación académica de seguridad, con las etiquetas `security-research` y `not-for-production`. Su propósito declarado es preservar el vector de hallazgo en los metadatos del modelo, concretamente a través del fichero de configuración del tokenizador (categoría AFR).
 
 El repositorio contiene pesos en formato safetensors que, según el recuento real del Hub, suman únicamente 4 parámetros, y su tamaño total es de 0.0 GB. La arquitectura declarada en las etiquetas es `bert`, pero no debe interpretarse como un modelo BERT entrenado: se trata de una carcasa mínima que reproduce la estructura de metadatos necesaria para el estudio del vector de ataque.
 
@@ -38,7 +38,7 @@ La model card describe el comportamiento del espécimen: cualquier sonda activa 
 
 ## Casos de uso
 
-- Investigación académica de seguridad: el artefacto se usa como muestra controlada para estudiar cómo un fichero de configuración de tokenizador puede actuar como vector de hallazgo en el ecosistema de HuggingFace y Keras Hub.
+- Investigación académica de seguridad: el artefacto se usa como muestra controlada para estudiar cómo un fichero de configuración de tokenizador puede actuar como vector de hallazgo en el ecosistema de Hugging Face y Keras Hub.
 - Reproducción de hallazgos: permite a un equipo de seguridad reproducir el escenario descrito en el manifiesto de la colección (`MANIFEST.json`), que contiene los hashes y la ruta del hallazgo original.
 - Validación de escáneres: sirve como entrada de prueba para herramientas de análisis de artefactos del Hub, comprobando que detectan correctamente el vector AFR sin ejecutar código activo.
 - Formación y concienciación: puede emplearse en entornos aislados para ilustrar riesgos de carga de configuraciones de tokenizador no verificadas.
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-05-keras-hub-tokenizer-config
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-05-keras-hub-tokenizer-config
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

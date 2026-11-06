@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint archivado de un modelo de lenguaje de 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) publicado por el usuario davidheineman en HuggingFace. No se trata de un modelo final orientado al público, sino de un artefacto de investigación: la model card lo describe explícitamente como "Archived checkpoint: n16-learned", preservado a partir de una ejecución completada del entrenamiento. El nombre del repositorio sugiere una campaña de barrido de hiperparámetros o configuraciones (`mopd-sweep-n16-learned-rl-20261002-165`), con un componente de aprendizaje por refuerzo (`rl`), aunque no se detalla su significado en la información disponible.
+Este repositorio contiene un checkpoint archivado de un modelo de lenguaje de 1.777.088.000 parámetros (aproximadamente 1,78 mil millones) publicado por el usuario davidheineman en Hugging Face. No se trata de un modelo final orientado al público, sino de un artefacto de investigación: la model card lo describe explícitamente como "Archived checkpoint: n16-learned", preservado a partir de una ejecución completada del entrenamiento. El nombre del repositorio sugiere una campaña de barrido de hiperparámetros o configuraciones (`mopd-sweep-n16-learned-rl-20261002-165`), con un componente de aprendizaje por refuerzo (`rl`), aunque no se detalla su significado en la información disponible.
 
-El checkpoint corresponde al paso 499 de entrenamiento y fue guardado en formato `hf-safetensors`, con un directorio adicional `checkpoint/` que contiene el estado exacto del modelo en formato distribuido de Megatron. El tag `qwen2` de HuggingFace apunta a que la arquitectura subyacente es un transformer decoder-only de la familia Qwen2, sin que se especifiquen la longitud de contexto, la composición del dataset ni el régimen de entrenamiento.
+El checkpoint corresponde al paso 499 de entrenamiento y fue guardado en formato `hf-safetensors`, con un directorio adicional `checkpoint/` que contiene el estado exacto del modelo en formato distribuido de Megatron. El tag `qwen2` de Hugging Face apunta a que la arquitectura subyacente es un transformer decoder-only de la familia Qwen2, sin que se especifiquen la longitud de contexto, la composición del dataset ni el régimen de entrenamiento.
 
 Su relevancia es limitada y acotada al ámbito de la reproducibilidad de experimentos: se publica como archivo de una ejecución concreta, sin licencia declarada, sin idiomas declarados, sin pipeline asignado y con cero descargas y cero "likes" en el momento de la consulta. No debe tratarse como un modelo listo para producción sin una evaluación previa por parte de quien lo adopte.
 
@@ -27,7 +27,7 @@ Su relevancia es limitada y acotada al ámbito de la reproducibilidad de experim
 
 ## Arquitectura y entrenamiento
 
-La unica informacion estructural disponible procede del tag `qwen2` de HuggingFace, que situa el modelo en la familia de transformers decoder-only de Qwen2. Con 1.777.088.000 parametros y un repositorio de 3,6 GB, el tamano de los pesos es coherente con un almacenamiento en precision de 16 bits (aproximadamente 3,55 GB solo en pesos). No se dispone de datos sobre el numero de capas, dimensiones ocultas, numero de cabezas de atencion, tipo de atencion (completa o lineal), uso de GQA/MQA, estrategia de RoPE ni vocabulario.
+La unica informacion estructural disponible procede del tag `qwen2` de Hugging Face, que situa el modelo en la familia de transformers decoder-only de Qwen2. Con 1.777.088.000 parametros y un repositorio de 3,6 GB, el tamano de los pesos es coherente con un almacenamiento en precision de 16 bits (aproximadamente 3,55 GB solo en pesos). No se dispone de datos sobre el numero de capas, dimensiones ocultas, numero de cabezas de atencion, tipo de atencion (completa o lineal), uso de GQA/MQA, estrategia de RoPE ni vocabulario.
 
 En cuanto al entrenamiento, la model card indica que el checkpoint proviene de una ejecucion completada y preservada, con estado final en el paso 499, formato `hf-safetensors` y un directorio adicional de checkpoints distribuidos de Megatron. El nombre de la ruta original (`mopd-sweep-n16-learned-rl-...`) sugiere un barrido de configuraciones con una fase de aprendizaje por refuerzo, pero se desconoce por completo el algoritmo empleado (PPO, GRPO, DPO u otro), el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste supervisado previas o posteriores, y cualquier innovacion tecnica asociada. El entrenamiento parece haberse ejecutado sobre infraestructura Megatron, dado el formato de checkpoint mencionado.
 
@@ -79,7 +79,7 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (rlve-archive-mopd-sweep-n16-learned) | 1.777 M | no disponible | no disponible | Repositorio publico en HuggingFace, 0 descargas |
+| Este checkpoint (rlve-archive-mopd-sweep-n16-learned) | 1.777 M | no disponible | no disponible | Repositorio publico en Hugging Face, 0 descargas |
 | Qwen2.5-1.5B | 1.540 M | 32.768 tokens | Apache 2.0 | Publico, ampliamente desplegado |
 | Llama-3.2-1B | 1.240 M | 128.000 tokens | Licencia comunitaria Llama 3.2 | Publico, con restricciones de uso |
 | SmolLM2-1.7B | 1.700 M | 8.192 tokens | Apache 2.0 | Publico, orientado a dispositivos |
@@ -102,7 +102,7 @@ Diferencias clave: frente a estas alternativas, el checkpoint aqui descrito no d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-rl-20261002-165-n16-learned-f0fd955b4eb6
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-rl-20261002-165-n16-learned-f0fd955b4eb6
 - Ejecucion de Weights & Biases: identificador `0e250974` (URL no proporcionada en la informacion disponible)
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

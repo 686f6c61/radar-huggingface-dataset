@@ -82,8 +82,8 @@ No se dispone de datos comparativos de rendimiento entre estos modelos, ya que n
 
 ## Enlaces
 
-- [HuggingFace - chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored](https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored)
+- [Hugging Face - chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored](https://huggingface.co/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored)
 - [GitHub - moziAI](https://github.com/chenyumo166/moziAI)
 - [GitHub - moziAI-35B-Qwen3.6-35B-A3B-Ornith](https://github.com/chenyumo166/moziAI-35B-Qwen3.6-35B-A3B-Ornith)
 - [ModelScope - moziAI-35B-A3B-MOE-MTP-Uncensored](https://www.modelscope.cn/models/chenyumo/moziAI-35B-A3B-MOE-MTP-Uncensored)
-- [HuggingFace - README en chino tradicional](https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith/blob/main/README.zh-hant.md)
+- [Hugging Face - README en chino tradicional](https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-35B-A3B-Ornith/blob/main/README.zh-hant.md)

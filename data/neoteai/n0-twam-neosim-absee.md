@@ -81,9 +81,9 @@ La comparativa directa con UniVTAC es relevante porque el conjunto NeoSim 8 de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeoteAI/n0-twam-neosim-absee
+- Modelo en Hugging Face: https://huggingface.co/NeoteAI/n0-twam-neosim-absee
 - Repositorio GitHub: https://github.com/neoteai/N0-TWAM
 - Documentación de despliegue: https://github.com/neoteai/N0-TWAM/blob/main/docs/DEPLOY.md
 - Página de investigación: https://research.neoteai.com/n0-twam/
 - Reporte técnico (PDF): https://research.neoteai.com/assets/n0-twam-report.pdf
-- Perfil de NeoteAI en HuggingFace: https://huggingface.co/NeoteAI
+- Perfil de NeoteAI en Hugging Face: https://huggingface.co/NeoteAI

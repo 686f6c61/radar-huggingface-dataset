@@ -1,7 +1,7 @@
 # NidaEsen/act_so101_cubcyl_recovery_chunk50_aug_noaffine_3cam
 
 ## Resumen
-act_so101_cubcyl_recovery_chunk50_aug_noaffine_3cam es una politica de imitacion para robotica desarrollada por NidaEsen y publicada en HuggingFace. Se trata de un checkpoint ACT (Action Chunking Transformer) con CVAE entrenado con la libreria LeRobot para el brazo robotico SO-ARM101, orientado a tareas de manipulacion de cubos y cilindros con recuperacion tras fallos. No es un modelo de lenguaje: su funcion es mapear observaciones (estado del robot e imagenes) a secuencias de acciones motoras.
+act_so101_cubcyl_recovery_chunk50_aug_noaffine_3cam es una politica de imitacion para robotica desarrollada por NidaEsen y publicada en Hugging Face. Se trata de un checkpoint ACT (Action Chunking Transformer) con CVAE entrenado con la libreria LeRobot para el brazo robotico SO-ARM101, orientado a tareas de manipulacion de cubos y cilindros con recuperacion tras fallos. No es un modelo de lenguaje: su funcion es mapear observaciones (estado del robot e imagenes) a secuencias de acciones motoras.
 
 El modelo tiene 51.617.414 parametros (~51,6 M) y consume tres imagenes RGB de 480x640 (vistas front, top y wrist) mas un estado del robot de 6 dimensiones. Genera chunks de 50 acciones con `n_action_steps=50`. Fue entrenado durante 100.000 pasos sobre el dataset `BrutalCaesar/phi_so101_cubes_cylinder_recovery_v1` (143 episodios), y el checkpoint publicado es el del paso 70.000, seleccionado por tener la menor perdida de evaluacion dentro de esa ejecucion (0,2028).
 
@@ -98,7 +98,7 @@ Las dos variantes comparadas pertenecen al mismo proyecto y se diferencian por l
 - Advertencia del autor: los valores de perdida entre distintos tamanos de chunk no deben interpretarse como un ranking directo de modelos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/NidaEsen/act_so101_cubcyl_recovery_chunk50_aug_noaffine_3cam
+- Modelo en Hugging Face: https://huggingface.co/NidaEsen/act_so101_cubcyl_recovery_chunk50_aug_noaffine_3cam
 - Dataset de entrenamiento: https://huggingface.co/datasets/BrutalCaesar/phi_so101_cubes_cylinder_recovery_v1
 - Variante de control con augmentation y transformacion afina activada: https://huggingface.co/BrutalCaesar/act_so101_cubcyl_recovery_chunk50_aug_3cam
 - Variante de control sin augmentation: https://huggingface.co/BrutalCaesar/act_so101_cubcyl_recovery_chunk50_noaug_3cam

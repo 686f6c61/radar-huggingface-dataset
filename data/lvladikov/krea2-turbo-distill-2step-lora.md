@@ -6,7 +6,7 @@ Krea2-Turbo-Distill-2step-LoRA es un adaptador LoRA de destilacion de pasos para
 
 El interes tecnico del proyecto esta en su metodo de entrenamiento. El autor documenta que la destilacion progresiva clasica sobre trayectorias grabadas del profesor, incluso con un critico al estilo LADD como remate, convergia a un punto muerto: contornos duplicados en caras y extremidades, textura fina difusa y multitudes promediadas en solapamientos translucidos. El diagnostico es estructural, porque una perdida de regresion cuadratica empuja al estudiante hacia la media de las imagenes plausibles cuando el salto de dos pasos es amplio, y la media de dos imagenes nitidas es una imagen borrosa con bordes duplicados. El proyecto se reorienta hacia *distribution matching*, una objetivo mode-seeking que pregunta si el profesor habria podido producir la imagen del estudiante en lugar de exigir coincidencia con una imagen concreta.
 
-A dia de la informacion disponible el modelo esta en estado de trabajo en curso: el propio autor declara que todavia no hay archivos publicados, con 0 descargas y 0 likes en HuggingFace, y que la pagina se actualiza conforme cambia la receta. La evaluacion reportada es interna (un juez automatico y comparaciones espectrales contra el profesor), no hay validacion independiente ni benchmarks estandar publicados.
+A dia de la informacion disponible el modelo esta en estado de trabajo en curso: el propio autor declara que todavia no hay archivos publicados, con 0 descargas y 0 likes en Hugging Face, y que la pagina se actualiza conforme cambia la receta. La evaluacion reportada es interna (un juez automatico y comparaciones espectrales contra el profesor), no hay validacion independiente ni benchmarks estandar publicados.
 
 ## Especificaciones tecnicas
 
@@ -89,14 +89,14 @@ No se dispone de informacion sobre otros adaptadores de destilacion comparables 
 - Evaluacion no independiente: todas las cifras de calidad provienen de un juez automatico y de comparaciones espectrales internas del autor, sin validacion por terceros ni benchmarks estandar.
 - Distancias latentes al profesor: el propio autor reporta que las distancias al profesor suben con el objetivo de *distribution matching*; es un comportamiento esperado para un objetivo mode-seeking, pero implica que la similitud pixel a pixel con el profesor no es el criterio de exito.
 - Rendimiento dependiente del sujeto: el exceso espectral a 1440x1440 se concentra en sujetos muy texturados (naves espaciales, arcilla, aves), por lo que el comportamiento no es uniforme entre dominios.
-- Licencia: se distribuye bajo `krea-2-community-license`, marcada como `other` en HuggingFace. Es una licencia de comunidad, no una licencia de codigo abierto permisiva, por lo que conviene revisar el PDF enlazado antes de cualquier uso comercial.
+- Licencia: se distribuye bajo `krea-2-community-license`, marcada como `other` en Hugging Face. Es una licencia de comunidad, no una licencia de codigo abierto permisiva, por lo que conviene revisar el PDF enlazado antes de cualquier uso comercial.
 - Dependencia del modelo base: el adaptador requiere Krea 2 Turbo y hereda las limitaciones, sesgos y restricciones de licencia de ese modelo, no documentadas en la informacion disponible.
 - Idiomas: no se declara soporte multilingue de prompts, por lo que el comportamiento con idiomas distintos del usado en el entrenamiento es desconocido.
 - Riesgo de alucinacion visual: como modelo generativo de imagenes, puede producir contenido plausible pero incorrecto o incoherente, especialmente en escenas complejas; no se documentan tasas de fallo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-2step-LoRA
+- Modelo en Hugging Face: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-2step-LoRA
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - LoRA de 4 pasos del mismo autor: https://huggingface.co/lvladikov/Krea2-Turbo-Distill-4step-LoRA
 - Licencia (PDF): https://huggingface.co/lvladikov/Krea2-Turbo-Distill-2step-LoRA/blob/main/LICENSE.pdf

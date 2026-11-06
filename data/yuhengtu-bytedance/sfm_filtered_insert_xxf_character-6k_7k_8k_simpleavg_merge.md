@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-6k_7k_8k_simpleavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de pesos de tres checkpoints de entrenamiento —`global_step6000`, `global_step7000` y `global_step8000`— pertenecientes a una misma ejecucion de entrenamiento identificada internamente como `filtered_insert_xxf_character`, dentro de un proyecto denominado en las rutas de origen `Pan_Safety_Better_Measurement`. La fusion se ha realizado con la herramienta mergekit mediante el metodo Linear (promedio ponderado de pesos con normalizacion).
+`sfm_filtered_insert_xxf_character-6k_7k_8k_simpleavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de pesos de tres checkpoints de entrenamiento —`global_step6000`, `global_step7000` y `global_step8000`— pertenecientes a una misma ejecucion de entrenamiento identificada internamente como `filtered_insert_xxf_character`, dentro de un proyecto denominado en las rutas de origen `Pan_Safety_Better_Measurement`. La fusion se ha realizado con la herramienta mergekit mediante el metodo Linear (promedio ponderado de pesos con normalizacion).
 
 El interes tecnico del modelo es limitado pero concreto: es un ejemplo representativo de las tecnicas de "model soup" aplicadas a checkpoints intermedios del mismo run de entrenamiento, una practica habitual para estabilizar el resultado final y reducir la varianza entre pasos de entrenamiento sin coste adicional de inferencia. La arquitectura subyacente es GPT-NeoX, segun la etiqueta declarada en el repositorio, con pesos almacenados en `safetensors` y `bfloat16`.
 
@@ -104,7 +104,7 @@ La diferencia practica mas relevante frente a estas alternativas no es de rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_simpleavg_merge
+- Repositorio en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-6k_7k_8k_simpleavg_merge
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Paper del metodo Linear / model soups (arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron unicamente paginas sin relacion (un hotel en Chicago). No hay paper, blog, demo ni repositorio adicional que documente el modelo.

@@ -100,7 +100,7 @@ La comparación se limita a las variantes del mismo proyecto, ya que no se han e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cnuland/llm-d-sc-sensitivity-v3-prior
+- Modelo en Hugging Face: https://huggingface.co/cnuland/llm-d-sc-sensitivity-v3-prior
 - Repositorio del proyecto: https://github.com/llm-d-incubation/llm-d-semantic-classifier
 - Dataset de tráfico real: https://huggingface.co/datasets/allenai/WildChat-1M
 - Versión anterior del clasificador: https://huggingface.co/cnuland/llm-d-sc-sensitivity

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Galler79/GallerheadONE` es un artefacto publicado en HuggingFace por el usuario Galler79, con fecha de creación el 1 de septiembre de 2026. En el momento de la consulta, el modelo registra cero descargas y cero interacciones, y su model card únicamente declara una licencia desconocida (`unknown`). No se ha publicado ninguna información técnica sobre arquitectura, parámetros, entrenamiento o capacidades.
+El modelo `Galler79/GallerheadONE` es un artefacto publicado en Hugging Face por el usuario Galler79, con fecha de creación el 1 de septiembre de 2026. En el momento de la consulta, el modelo registra cero descargas y cero interacciones, y su model card únicamente declara una licencia desconocida (`unknown`). No se ha publicado ninguna información técnica sobre arquitectura, parámetros, entrenamiento o capacidades.
 
 La relevancia de este modelo es, por ahora, nula desde el punto de vista técnico: no existen datos verificables que permitan evaluarlo, desplegarlo o compararlo con alternativas. La ausencia de una model card sustancial y de resultados de búsqueda relacionados sugiere que se trata de un repositorio incompleto, experimental o posiblemente un marcador de posición. Cualquier uso en producción sería prematuro y arriesgado.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Galler79/GallerheadONE
+- Repositorio en Hugging Face: https://huggingface.co/Galler79/GallerheadONE

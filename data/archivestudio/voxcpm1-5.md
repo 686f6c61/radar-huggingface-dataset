@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/VoxCPM1.5
-- Modelo original en HuggingFace: https://huggingface.co/openbmb/VoxCPM1.5
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/VoxCPM1.5
+- Modelo original en Hugging Face: https://huggingface.co/openbmb/VoxCPM1.5
 - Modelo en ModelScope: https://modelscope.cn/models/OpenBMB/VoxCPM1.5
 - Repositorio GitHub: https://github.com/OpenBMB/VoxCPM/
 - Informe técnico (arXiv): https://arxiv.org/abs/2509.24650

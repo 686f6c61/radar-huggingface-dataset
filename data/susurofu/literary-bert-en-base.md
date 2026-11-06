@@ -72,9 +72,9 @@ La model card indica que la tabla de evaluación completa incluye al teacher y a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| susurofu/literary-bert-en-base | 109,5 M | 256 tokens | Sentimiento ordinal literario (1–10) | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base general (MLM) | Apache 2.0 | HuggingFace |
-| Modelos de sentimiento de 3 clases basados en BERT | ~110 M | 512 tokens | Clasificación negativa/neutra/positiva | variable | HuggingFace |
+| susurofu/literary-bert-en-base | 109,5 M | 256 tokens | Sentimiento ordinal literario (1–10) | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base general (MLM) | Apache 2.0 | Hugging Face |
+| Modelos de sentimiento de 3 clases basados en BERT | ~110 M | 512 tokens | Clasificación negativa/neutra/positiva | variable | Hugging Face |
 
 La comparación directa con alternativas de sentimiento literario ordinal no está disponible en la información proporcionada. Frente al BERT-base original, este modelo añade una cabeza ordinal específica y está especializado en texto literario, a costa de reducir la longitud máxima de entrada a 256 tokens.
 
@@ -91,9 +91,9 @@ La comparación directa con alternativas de sentimiento literario ordinal no est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/susurofu/literary-bert-en-base
+- Hugging Face: https://huggingface.co/susurofu/literary-bert-en-base
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/susurofu/synthetic-sentiment-dataset-pg-gemma4
 - Paper referenciado (arXiv): 2611.02985
-- Repositorio de código de modelado: `modeling_ordinal_bert.py` (incluido en el repositorio de HuggingFace)
-- Script de ejemplo: `example_inference.py` (incluido en el repositorio de HuggingFace)
+- Repositorio de código de modelado: `modeling_ordinal_bert.py` (incluido en el repositorio de Hugging Face)
+- Script de ejemplo: `example_inference.py` (incluido en el repositorio de Hugging Face)

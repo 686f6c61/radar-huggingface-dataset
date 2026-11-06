@@ -1,7 +1,7 @@
 # kaonai/grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step175
 
 ## Resumen
-El modelo `grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step175` es un checkpoint de 25.805.933.872 parámetros (25,8B) publicado por el usuario `kaonai`. Se trata de un merge completo en bfloat16 del checkpoint 175 de un proceso de fine-tuning con GRPO (Group Relative Policy Optimization) sobre el modelo base `kaonai/kaon-c-gemma4-26b-v10.1`. Los tags de HuggingFace lo describen como un modelo transformer multimodal (`image-text-to-text`) y conversacional, con pipeline de `text-generation`.
+El modelo `grpo-kaon3-popft-rm600-mouse-reset-timeskip-lr1e4-b004-step175` es un checkpoint de 25.805.933.872 parámetros (25,8B) publicado por el usuario `kaonai`. Se trata de un merge completo en bfloat16 del checkpoint 175 de un proceso de fine-tuning con GRPO (Group Relative Policy Optimization) sobre el modelo base `kaonai/kaon-c-gemma4-26b-v10.1`. Los tags de Hugging Face lo describen como un modelo transformer multimodal (`image-text-to-text`) y conversacional, con pipeline de `text-generation`.
 
 El nombre del repositorio revela los hiperparámetros del entrenamiento: learning rate 1e-4, beta 0.04 y un reward model llamado `population-final-transition-rm-existing-explicit-s42-step600`. El modelo fue creado el 3 de septiembre de 2026 y no ha recibido descargas ni likes, lo que indica que es un experimento de investigación sin validación externa. No se ha publicado información sobre la longitud de contexto, idiomas, licencia ni benchmarks.
 
@@ -34,7 +34,7 @@ No se han documentado casos de uso específicos para este modelo. Las aplicacion
 - Asistentes conversacionales multimodales: dada su arquitectura image-text-to-text, podría integrarse en prototipos de chat que reciban imágenes y texto, aunque no hay evaluaciones que confirmen su calidad.
 - Experimentación con recompensas de población: el reward model sugiere que está diseñado para optimizar transiciones de población, lo que podría aplicarse en simulaciones o juegos multiagente.
 - Análisis de overfitting en RL: al ser un checkpoint intermedio (step175), puede usarse para estudiar cómo evoluciona el comportamiento del modelo a lo largo del entrenamiento.
-- Pruebas de despliegue con vLLM: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de HuggingFace, lo que permite probar su latencia y throughput.
+- Pruebas de despliegue con vLLM: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de Hugging Face, lo que permite probar su latencia y throughput.
 - Generación de texto en entornos controlados: para experimentos de generación con imágenes y texto donde se requiera un modelo de 25,8B con pesos en BF16.
 
 ## Benchmarks y rendimiento
@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: los pesos en BF16 ocupan 51,6 GB, por lo que se necesitan al menos 52 GB de VRAM para cargar el modelo completo sin cuantizar. Con cuantización 4-bit (no publicada) se reduciría a ~13 GB, pero no está disponible.
 - GPU recomendadas: A100 80GB, H100 80GB, o configuraciones con múltiples GPUs (por ejemplo, 2x RTX 4090 de 24GB con tensor parallelism).
 - Consumer GPU: no cabe en una GPU de consumo de 24GB en BF16; se requeriría cuantización.
-- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), o la infraestructura de HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), o la infraestructura de Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

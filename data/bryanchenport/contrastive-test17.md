@@ -21,7 +21,7 @@ La relevancia de este repositorio radica en su transparencia: incluye el código
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada en la model card corresponde a un modelo Dino con atención dilatada, fusión de bajo rango, activación aproximada de GELU y normalización Scalenorm. No se especifican detalles adicionales como el número de capas, dimensiones ocultas o cabezas de atención, ya que la configuración completa se encuentra en el archivo `config.json` del repositorio. El autor indica que la implementación es personalizada y requiere un adaptador explícito para cargarla con APIs genéricas de HuggingFace.
+La arquitectura declarada en la model card corresponde a un modelo Dino con atención dilatada, fusión de bajo rango, activación aproximada de GELU y normalización Scalenorm. No se especifican detalles adicionales como el número de capas, dimensiones ocultas o cabezas de atención, ya que la configuración completa se encuentra en el archivo `config.json` del repositorio. El autor indica que la implementación es personalizada y requiere un adaptador explícito para cargarla con APIs genéricas de Hugging Face.
 
 En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con una receta por defecto que usa el optimizador Adam con un programador de tasa de aprendizaje exponencial. Sin embargo, estos son valores iniciales del script y no evidencian un entrenamiento completado. El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo, pero no ha sido entrenado con ningún conjunto de datos, por lo que no hay información sobre tokens de entrenamiento, composición del dataset ni técnicas como RLHF o DPO.
 
@@ -60,11 +60,11 @@ No se dispone de información sobre modelos comparables en la misma categoría, 
 
 - El checkpoint no ha sido entrenado, por lo que no es apto para ningún uso en producción ni para tareas reales de inferencia.
 - No se ha auditado la robustez, la equidad ni la transferencia a dominios específicos, como advierte el propio autor.
-- La implementación es personalizada y no compatible con las APIs genéricas de HuggingFace sin un adaptador explícito, lo que dificulta su integración en flujos estándar.
+- La implementación es personalizada y no compatible con las APIs genéricas de Hugging Face sin un adaptador explícito, lo que dificulta su integración en flujos estándar.
 - No hay información sobre sesgos, alucinaciones o limitaciones de contexto, ya que el modelo no tiene capacidades funcionales.
 - La licencia Apache 2.0 permite uso comercial, pero el autor recuerda revisar los términos de las fuentes de datos externas si se utiliza con otros datasets.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los archivos por defecto del repositorio.
 
 ## Enlaces
 
-- [HuggingFace: Bryanchenport/contrastive-test17](https://huggingface.co/Bryanchenport/contrastive-test17)
+- [Hugging Face: Bryanchenport/contrastive-test17](https://huggingface.co/Bryanchenport/contrastive-test17)

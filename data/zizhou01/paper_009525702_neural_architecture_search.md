@@ -62,7 +62,7 @@ No disponible. Este repositorio no es comparable con modelos de IA de propósito
 
 ## Enlaces
 
-- [HuggingFace - zizhou01/paper_009525702_neural_architecture_search](https://huggingface.co/zizhou01/paper_009525702_neural_architecture_search)
+- [Hugging Face - zizhou01/paper_009525702_neural_architecture_search](https://huggingface.co/zizhou01/paper_009525702_neural_architecture_search)
 - [Paper "Neural Architecture Search: Insights from 1000 Papers" (arXiv)](https://arxiv.org/abs/2301.08727)
 - [Discusión del paper en Hugging Face](https://huggingface.co/papers/2301.08727)
 - [Versión HTML del paper (ar5iv)](https://ar5iv.labs.arxiv.org/html/2301.08727)

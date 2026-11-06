@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bdatm-project/qwen-task1-learned-reordering-lora` es un repositorio publicado en HuggingFace por el usuario u organizacion `bdatm-project`. La model card es la plantilla generica autogenerada por HuggingFace: todos los apartados (descripcion, datos de entrenamiento, licencia, idiomas, evaluacion) siguen conteniendo el marcador `[More Information Needed]`, por lo que no existe documentacion tecnica real publicada por el autor. El repositorio pesa 0,0 GB y acumula 0 descargas y 0 likes desde su creacion el 22 de septiembre de 2026, lo que indica que no ha sido validado por la comunidad ni probablemente probado por terceros.
+`bdatm-project/qwen-task1-learned-reordering-lora` es un repositorio publicado en Hugging Face por el usuario u organizacion `bdatm-project`. La model card es la plantilla generica autogenerada por Hugging Face: todos los apartados (descripcion, datos de entrenamiento, licencia, idiomas, evaluacion) siguen conteniendo el marcador `[More Information Needed]`, por lo que no existe documentacion tecnica real publicada por el autor. El repositorio pesa 0,0 GB y acumula 0 descargas y 0 likes desde su creacion el 22 de septiembre de 2026, lo que indica que no ha sido validado por la comunidad ni probablemente probado por terceros.
 
 Por el identificador del repositorio puede inferirse, con toda la cautela, que se trata de un adaptador LoRA (el sufijo `-lora`) asociado a un modelo base de la familia Qwen (el prefijo `qwen`) y orientado a una tarea de reordenacion aprendida (`learned-reordering`, `task1`), un tipo de tarea habitual en pipelines de recuperacion de informacion y reranking. Ninguna de estas inferencias esta confirmada por el autor en la informacion disponible y deben tratarse como hipotesis, no como especificacion.
 
@@ -28,7 +28,7 @@ La relevancia practica del repositorio es, a fecha de la informacion consultada,
 | Fecha de creacion | 2026-09-22 |
 | Ultima actualizacion | 2026-09-22 |
 
-Nota sobre el tag `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono que aparece citado en el texto por defecto de la plantilla de HuggingFace. No es un paper del modelo ni aporta informacion sobre su arquitectura o entrenamiento.
+Nota sobre el tag `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono que aparece citado en el texto por defecto de la plantilla de Hugging Face. No es un paper del modelo ni aporta informacion sobre su arquitectura o entrenamiento.
 
 ## Arquitectura y entrenamiento
 
@@ -44,7 +44,7 @@ El unico indicio estructural es el nombre del repositorio, que apunta a un adapt
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad de despliegue: el tag `endpoints_compatible` indica que el repositorio esta marcado como compatible con los Inference Endpoints de HuggingFace, lo que en la practica exige poder cargarse con la libreria declarada (`transformers`).
+- Compatibilidad de despliegue: el tag `endpoints_compatible` indica que el repositorio esta marcado como compatible con los Inference Endpoints de Hugging Face, lo que en la practica exige poder cargarse con la libreria declarada (`transformers`).
 
 No se debe asumir ninguna capacidad adicional a partir del nombre del repositorio.
 
@@ -72,7 +72,7 @@ La model card conserva el apartado "Evaluation" con el marcador `[More Informati
 - VRAM para inferencia: no disponible para el adaptador en si. Si se confirma que es un adaptador LoRA, el requisito dominante seria el del modelo base, que no se declara; el adaptador anadiria tipicamente decenas de megabytes de pesos.
 - GPU recomendadas: no disponible.
 - Encaje en GPU de consumo: no disponible; depende por completo del modelo base, que no esta identificado.
-- Opciones de despliegue: `transformers` es la libreria declarada y el tag `endpoints_compatible` sugiere despliegue mediante HuggingFace Inference Endpoints. El soporte en vLLM, TGI, llama.cpp u Ollama no esta confirmado y, en el caso de llama.cpp/Ollama, requeriria conversion del adaptador a GGUF que el autor no documenta.
+- Opciones de despliegue: `transformers` es la libreria declarada y el tag `endpoints_compatible` sugiere despliegue mediante Hugging Face Inference Endpoints. El soporte en vLLM, TGI, llama.cpp u Ollama no esta confirmado y, en el caso de llama.cpp/Ollama, requeriria conversion del adaptador a GGUF que el autor no documenta.
 - Latencia y throughput: no disponible.
 - Nota practica: cualquier estimacion de VRAM exigiria conocer primero el modelo base y su cuantizacion, datos que no se han publicado.
 
@@ -90,7 +90,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, sin ningun campo completado por el autor.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, sin ningun campo completado por el autor.
 - Licencia no declarada: no puede asumirse permiso de uso comercial, modificacion ni redistribucion. En ausencia de licencia, el uso en produccion conlleva riesgo legal.
 - Modelo base no identificado: sin saber sobre que modelo Qwen se aplica el adaptador (si esa lectura es correcta), no se pueden evaluar sus sesgos, su contexto maximo ni su comportamiento multilingue.
 - Riesgo de alucinacion: no evaluable en el adaptador; heredado del modelo base, que se desconoce.
@@ -102,7 +102,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bdatm-project/qwen-task1-learned-reordering-lora
+- Repositorio en Hugging Face: https://huggingface.co/bdatm-project/qwen-task1-learned-reordering-lora
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo en la busqueda web disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-confam-ai-adapter-v1.1 es un repositorio publicado en HuggingFace por el usuario Saynetng el 7 de octubre de 2026. Se distribuye bajo la librería transformers, con pesos en formato safetensors, una etiqueta de compatibilidad con endpoints y un tamaño de repositorio de 0,1 GB. No se declara licencia, idiomas soportados, pipeline ni modelo base.
+confam-ai-adapter-v1.1 es un repositorio publicado en Hugging Face por el usuario Saynetng el 7 de octubre de 2026. Se distribuye bajo la librería transformers, con pesos en formato safetensors, una etiqueta de compatibilidad con endpoints y un tamaño de repositorio de 0,1 GB. No se declara licencia, idiomas soportados, pipeline ni modelo base.
 
-La model card asociada es la plantilla automática que genera HuggingFace al subir un modelo: todos los campos relevantes (desarrollador, tipo de modelo, datos de entrenamiento, hiperparámetros, evaluación, infraestructura de cómputo) aparecen como "[More Information Needed]". No existe, por tanto, documentación técnica verificable sobre arquitectura, número de parámetros, longitud de contexto, composición del dataset ni proceso de entrenamiento.
+La model card asociada es la plantilla automática que genera Hugging Face al subir un modelo: todos los campos relevantes (desarrollador, tipo de modelo, datos de entrenamiento, hiperparámetros, evaluación, infraestructura de cómputo) aparecen como "[More Information Needed]". No existe, por tanto, documentación técnica verificable sobre arquitectura, número de parámetros, longitud de contexto, composición del dataset ni proceso de entrenamiento.
 
 La relevancia de este repositorio es, a fecha de la información disponible, nula para uso práctico: no se ha publicado ningún benchmark, no tiene descargas ni interacciones, y no se identifica el modelo base sobre el que operaría. Cualquier evaluación de capacidades, rendimiento o idoneidad para producción es imposible con los datos actuales.
 
@@ -30,7 +30,7 @@ La relevancia de este repositorio es, a fecha de la información disponible, nul
 | Likes | 0 |
 | Etiquetas | transformers, safetensors, arxiv:1910.09700, endpoints_compatible, region:us |
 
-Nota sobre la etiqueta `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono que la plantilla automática de HuggingFace incluye por defecto en la sección "Environmental Impact". No es un artículo que describa este modelo.
+Nota sobre la etiqueta `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), el artículo sobre estimación de emisiones de carbono que la plantilla automática de Hugging Face incluye por defecto en la sección "Environmental Impact". No es un artículo que describa este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -104,7 +104,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Saynetng/confam-ai-adapter-v1.1
-- Perfil del autor en HuggingFace: https://huggingface.co/Saynetng
+- Repositorio en Hugging Face: https://huggingface.co/Saynetng/confam-ai-adapter-v1.1
+- Perfil del autor en Hugging Face: https://huggingface.co/Saynetng
 - Artículo referenciado en la plantilla (no describe este modelo): Lacoste et al. (2019), https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact

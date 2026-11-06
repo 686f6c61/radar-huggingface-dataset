@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bhushan1729/gemma3-1b-given-to-find-distilled_continued` es un modelo de generación de texto de aproximadamente 1.000 millones de parámetros (999.885.952 según los pesos en safetensors), publicado en HuggingFace por el usuario bhushan1729. El tag de arquitectura `gemma3_text` y el propio nombre del repositorio apuntan a que se trata de una variante derivada de Gemma 3 1B de Google DeepMind, presumiblemente sometida a un proceso de destilación y entrenamiento continuado, aunque el autor no confirma esta filiación en ningún momento.
+`bhushan1729/gemma3-1b-given-to-find-distilled_continued` es un modelo de generación de texto de aproximadamente 1.000 millones de parámetros (999.885.952 según los pesos en safetensors), publicado en Hugging Face por el usuario bhushan1729. El tag de arquitectura `gemma3_text` y el propio nombre del repositorio apuntan a que se trata de una variante derivada de Gemma 3 1B de Google DeepMind, presumiblemente sometida a un proceso de destilación y entrenamiento continuado, aunque el autor no confirma esta filiación en ningún momento.
 
-La relevancia de esta ficha es limitada y conviene ser honesto al respecto: el repositorio acumula 0 descargas y 0 "likes" desde su creación, la model card es la plantilla automática de HuggingFace sin una sola sección cumplimentada y no se ha publicado información sobre datos de entrenamiento, licencia, idiomas o evaluación. Se trata, por tanto, de un artefacto experimental sin validar, no de un modelo listo para producción.
+La relevancia de esta ficha es limitada y conviene ser honesto al respecto: el repositorio acumula 0 descargas y 0 "likes" desde su creación, la model card es la plantilla automática de Hugging Face sin una sola sección cumplimentada y no se ha publicado información sobre datos de entrenamiento, licencia, idiomas o evaluación. Se trata, por tanto, de un artefacto experimental sin validar, no de un modelo listo para producción.
 
 Aun así, su tamaño (aproximadamente 1B de parámetros, 2,0 GB de repositorio) lo sitúa en la categoría de modelos pequeños que caben en GPU de consumo e incluso en CPU, lo que lo hace relevante únicamente como objeto de estudio, como base para experimentos de destilación o como material de partida para ajuste fino propio.
 
@@ -31,9 +31,9 @@ Aun así, su tamaño (aproximadamente 1B de parámetros, 2,0 GB de repositorio) 
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna más allá del tag `gemma3_text` que HuggingFace asigna al cargar el modelo. Ese identificador corresponde a la implementación de Gemma 3 en la librería transformers, que es un transformer decoder-only con normalización RMSNorm, atención con RoPE y activaciones GeGLU. El recuento exacto de capas, cabezas de atención, dimensión oculta y vocabulario no está documentado para esta variante concreta, por lo que no se puede confirmar ni desmentir que coincida con la configuración de Gemma 3 1B.
+No hay información publicada sobre la arquitectura interna más allá del tag `gemma3_text` que Hugging Face asigna al cargar el modelo. Ese identificador corresponde a la implementación de Gemma 3 en la librería transformers, que es un transformer decoder-only con normalización RMSNorm, atención con RoPE y activaciones GeGLU. El recuento exacto de capas, cabezas de atención, dimensión oculta y vocabulario no está documentado para esta variante concreta, por lo que no se puede confirmar ni desmentir que coincida con la configuración de Gemma 3 1B.
 
-El sufijo `distilled_continued` del nombre sugiere un pipeline de destilación seguido de un entrenamiento continuado sobre el checkpoint resultante, y `given-to-find` parece hacer referencia al dataset o a la tarea empleada en ese proceso. No obstante, el autor no aporta ningún detalle: no se indica el número de tokens de entrenamiento, la composición del dataset, si se aplicaron técnicas de alineación como RLHF, DPO o SFT, ni la precisión utilizada en el entrenamiento. El único enlace a arXiv presente en las etiquetas (`arxiv:1910.09700`) corresponde al artículo de Lacoste et al. sobre el calculador de impacto de carbono, que aparece en la plantilla por defecto de HuggingFace y no es una referencia al modelo.
+El sufijo `distilled_continued` del nombre sugiere un pipeline de destilación seguido de un entrenamiento continuado sobre el checkpoint resultante, y `given-to-find` parece hacer referencia al dataset o a la tarea empleada en ese proceso. No obstante, el autor no aporta ningún detalle: no se indica el número de tokens de entrenamiento, la composición del dataset, si se aplicaron técnicas de alineación como RLHF, DPO o SFT, ni la precisión utilizada en el entrenamiento. El único enlace a arXiv presente en las etiquetas (`arxiv:1910.09700`) corresponde al artículo de Lacoste et al. sobre el calculador de impacto de carbono, que aparece en la plantilla por defecto de Hugging Face y no es una referencia al modelo.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ El sufijo `distilled_continued` del nombre sugiere un pipeline de destilación s
 - Despliegue en el borde o en local: con aproximadamente 2 GB en bf16 y alrededor de 0,7 GB en cuantización de 4 bits, cabe en dispositivos con recursos limitados (portátiles, mini-PC, dispositivos Apple Silicon) para tareas de generación asistiva sin conexión, sujeto a que la licencia lo permita.
 - Generación de datos sintéticos y preetiquetado: puede usarse para producir borradores de anotaciones o textos de aumento de datos que después se filtren manualmente o con un modelo mayor, aprovechando su bajo coste de inferencia.
 - Enrutamiento y clasificación previa: como primer clasificador barato dentro de un pipeline con un modelo grande detrás, decidiendo si una consulta requiere el modelo mayor o puede resolverse con el pequeño.
-- Docencia y demostraciones: útil para explicar en clase el ciclo completo de publicación de un modelo en HuggingFace, la carga con `transformers` y las diferencias entre checkpoints base y ajustados.
+- Docencia y demostraciones: útil para explicar en clase el ciclo completo de publicación de un modelo en Hugging Face, la carga con `transformers` y las diferencias entre checkpoints base y ajustados.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
   - int4: aproximadamente 0,6-0,8 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente en la práctica. Una RTX 3060 de 12 GB, RTX 4060, RTX 4090, A100 o H100 sirven sobradamente; el modelo está muy por debajo de la capacidad de estas tarjetas.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de las GPU discretas recientes, e incluso en iGPU con memoria unificada si se cuantiza.
-- Opciones de despliegue: `transformers` de forma nativa; el tag `text-generation-inference` apunta a TGI como servidor compatible, y `endpoints_compatible` a HuggingFace Inference Endpoints. Para vLLM, Ollama o llama.cpp sería necesario convertir los pesos a los formatos correspondientes (no hay GGUF publicado en el repositorio).
+- Opciones de despliegue: `transformers` de forma nativa; el tag `text-generation-inference` apunta a TGI como servidor compatible, y `endpoints_compatible` a Hugging Face Inference Endpoints. Para vLLM, Ollama o llama.cpp sería necesario convertir los pesos a los formatos correspondientes (no hay GGUF publicado en el repositorio).
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas ni configuración de hardware declarada por el autor.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Comparativa de rendimiento: no disponible para el modelo objeto de la ficha, ya 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bhushan1729/gemma3-1b-given-to-find-distilled_continued
+- Repositorio en Hugging Face: https://huggingface.co/bhushan1729/gemma3-1b-given-to-find-distilled_continued
 - Artículo citado en las etiquetas (Lacoste et al., calculador de impacto de carbono, procedente de la plantilla): https://arxiv.org/abs/1910.09700
 - Modelo base probable, no confirmado por el autor (Gemma 3 1B de Google): https://huggingface.co/google/gemma-3-1b-it
 - Búsqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos por el buscador no guardan relación con él ni con Gemma 3.

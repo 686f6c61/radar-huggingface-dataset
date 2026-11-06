@@ -84,10 +84,10 @@ Los modelos comparables mas directos son las otras variantes de ajuste fino del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dureduck/gemma4-26b-a4b-gsm8k-sft-step233-human-reference-maxtext
+- Modelo en Hugging Face: https://huggingface.co/dureduck/gemma4-26b-a4b-gsm8k-sft-step233-human-reference-maxtext
 - Modelo hermano con CoT sintetica: https://huggingface.co/dureduck/gemma4-26b-a4b-gsm8k-synthetic-cot6144-sft-20260916
 - Ficheros del modelo hermano: https://huggingface.co/dureduck/gemma4-26b-a4b-gsm8k-synthetic-cot6144-sft-20260916/tree/main
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-26B-A4B
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-26B-A4B
 - Pagina de la familia Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Ficha de Gemma 4 26B en Ollama: https://ollama.com/library/gemma4:26b
 - Nota de verificacion sobre Gemma 4 en Duck.ai: https://factually.co/fact-checks/technology/duckduckgo-gemma-4-ai-chatbot-launch-september-8-2026-393dfb

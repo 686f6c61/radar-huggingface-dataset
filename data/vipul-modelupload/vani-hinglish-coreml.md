@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo (WER) en la informacion propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vipul-modelupload/vani-hinglish-coreml
+- Repositorio en Hugging Face: https://huggingface.co/vipul-modelupload/vani-hinglish-coreml
 - Modelo base hinglish rapido: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Swift
 - Modelo base hinglish de alta calidad: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Apex
 - Modelo base Parakeet TDT 0.6B v2: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2

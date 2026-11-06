@@ -6,7 +6,7 @@ El modelo `da3410-ec-classification-hierarchical-svm` es un clasificador de núm
 
 La relevancia de esta ficha es acotada: el modelo está pensado para un entorno de competición concreta, con un vocabulario EC cerrado y un formato de entrada/salida específico (Parquet de entrada, JSONL de salida). No es un modelo de propósito general ni un checkpoint reutilizable fuera de ese contexto. Su interés técnico reside en demostrar que un enfoque clásico de n-gramas de caracteres con SVM jerárquico puede alcanzar un 90,21 % de exactitud L4 en validación local, sin GPU y con inferencia en CPU.
 
-El repositorio ocupa 0,9 GB y el artefacto de pesos es un fichero Joblib comprimido. No hay información sobre idiomas, pipeline de HuggingFace ni resultados oficiales de leaderboard.
+El repositorio ocupa 0,9 GB y el artefacto de pesos es un fichero Joblib comprimido. No hay información sobre idiomas, pipeline de Hugging Face ni resultados oficiales de leaderboard.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ El entrenamiento usa los datos públicos de la competición y el vocabulario EC 
 
 ## Benchmarks y rendimiento
 
-Resultados de validación local agrupada sobre los datos públicos de entrenamiento (secuencias idénticas mantenidas en el mismo split). No son puntuaciones oficiales del leaderboard de HuggingFace.
+Resultados de validación local agrupada sobre los datos públicos de entrenamiento (secuencias idénticas mantenidas en el mismo split). No son puntuaciones oficiales del leaderboard de Hugging Face.
 
 | Metrica | Resultado |
 |---|---:|
@@ -86,5 +86,5 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbhijeetKumar2125/da3410-ec-classification-hierarchical-svm
+- Hugging Face: https://huggingface.co/AbhijeetKumar2125/da3410-ec-classification-hierarchical-svm
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

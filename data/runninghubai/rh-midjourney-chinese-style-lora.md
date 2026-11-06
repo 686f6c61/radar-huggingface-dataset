@@ -2,9 +2,9 @@
 
 ## Resumen
 
-rh-midjourney-chinese-style-lora es un adaptador LoRA de edicion de imagen publicado por RunningHubAI (RunningHub), con autoria atribuida al usuario @GOODLUCK2024 en la plataforma RunningHub. El modelo aplica una estetica fotografica de inspiracion "midjourney" orientada a tematica china sobre un modelo base identificado en la model card como "krea2". El repositorio de HuggingFace ocupa 0,2 GB e incluye un unico archivo de pesos, `MJ中式美学KREA2.safetensors`, de 224 MiB.
+rh-midjourney-chinese-style-lora es un adaptador LoRA de edicion de imagen publicado por RunningHubAI (RunningHub), con autoria atribuida al usuario @GOODLUCK2024 en la plataforma RunningHub. El modelo aplica una estetica fotografica de inspiracion "midjourney" orientada a tematica china sobre un modelo base identificado en la model card como "krea2". El repositorio de Hugging Face ocupa 0,2 GB e incluye un unico archivo de pesos, `MJ中式美学KREA2.safetensors`, de 224 MiB.
 
-No se trata de un modelo de lenguaje ni de un modelo fundacional: es un adaptador de bajo rango que se carga sobre un modelo de difusion subyacente y se utiliza en flujos de image-to-image o text-to-image. Su pipeline declarado en HuggingFace es `image-text-to-image`, y las plataformas de uso indicadas por el autor son ComfyUI, RunningHub y Hugging Face.
+No se trata de un modelo de lenguaje ni de un modelo fundacional: es un adaptador de bajo rango que se carga sobre un modelo de difusion subyacente y se utiliza en flujos de image-to-image o text-to-image. Su pipeline declarado en Hugging Face es `image-text-to-image`, y las plataformas de uso indicadas por el autor son ComfyUI, RunningHub y Hugging Face.
 
 La relevancia de esta publicacion es acotada: se trata de un LoRA de estilo publicado sin model card tecnica detallada, sin datos de entrenamiento, sin benchmarks y sin licencia explicita. Resulta util como referencia de como RunningHub distribuye adaptadores de estilo listos para consumir en ComfyUI, pero la ausencia de documentacion tecnica limita seriamente su evaluacion rigurosa y su adopcion en produccion.
 
@@ -25,7 +25,7 @@ La relevancia de esta publicacion es acotada: se trata de un LoRA de estilo publ
 | Tamano del adaptador | 224 MiB |
 | Tipo de tarea | image-text-to-image (edicion/generacion guiada por texto) |
 | Plataformas compatibles | ComfyUI, RunningHub, Hugging Face |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-30 / 2026-09-30 |
 
 ## Arquitectura y entrenamiento
@@ -90,17 +90,17 @@ No se dispone de datos de rendimiento, parametros o licencia de las alternativas
 - Sesgo estetico y cultural: el unico ejemplo documentado describe a una mujer de Asia Oriental de piel clara con kimono, una prenda japonesa, bajo una etiqueta de estilo "chino". Esta mezcla sugiere una posible conflacion de tradiciones de Asia Oriental y un sesgo hacia un ideal de belleza concreto, con riesgo de reproducir representaciones estereotipadas o etnicamente imprecisas.
 - Riesgo de suplantacion: al generar retratos fotorrealistas de personas, existe riesgo de uso para crear imagenes de personas reales sin consentimiento. No se documenta ninguna salvaguarda al respecto.
 - Idiomas e instrucciones de prompt no documentados: se desconoce si el adaptador responde igual de bien a prompts en castellano, chino o ingles.
-- Sin senal de adopcion: cero descargas y cero likes en HuggingFace en el momento de la consulta, sin comunidad que haya validado el resultado ni reportado fallos.
+- Sin senal de adopcion: cero descargas y cero likes en Hugging Face en el momento de la consulta, sin comunidad que haya validado el resultado ni reportado fallos.
 - Sin benchmarks ni evaluacion humana publicada: no hay evidencia objetiva de que supere a otros adaptadores de estilo disponibles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-midjourney-chinese-style-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-midjourney-chinese-style-lora
 - README en chino referenciado por la model card: https://huggingface.co/RunningHubAI/rh-midjourney-chinese-style-lora/blob/main/README_cn.md
 - Pagina original del modelo en RunningHub: https://www.runninghub.ai/model/public/2095554820294959105
 - Version en chino de la pagina del modelo: https://www.runninghub.ai/zh-cn/model/public/2095554820294959105
 - Pagina del autor en RunningHub: https://www.runninghub.ai/user-center/1980864188878884866
-- Organizacion RunningHubAI en HuggingFace: https://huggingface.co/RunningHubAI
+- Organizacion RunningHubAI en Hugging Face: https://huggingface.co/RunningHubAI
 - Listado de modelos de RunningHubAI: https://huggingface.co/RunningHubAI/models
 - Documentacion de la API de RunningHub (ingles): https://www.runninghub.cn/runninghub-api-doc-en/
 - Documentacion de la API de RunningHub (chino): https://www.runninghub.cn/runninghub-api-doc-cn/

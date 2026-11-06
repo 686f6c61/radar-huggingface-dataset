@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-log-task00-centre-full-hourly-7b21a91deb2c` es un paquete publicado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, se describe como un "versioned fleet archive" (archivo versionado de flota) y no como un modelo de lenguaje entrenado. El nombre interno es `log-task00-centre-full-hourly-7b21a91deb2c` y la tarjeta indica que su receta canonica se encuentra en la ruta `evaluations/2026-09-23_task00_centre_full_recovery`, con la etiqueta de nivel "versioned snapshot".
+El repositorio `davidwdw/fa-log-task00-centre-full-hourly-7b21a91deb2c` es un paquete publicado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, se describe como un "versioned fleet archive" (archivo versionado de flota) y no como un modelo de lenguaje entrenado. El nombre interno es `log-task00-centre-full-hourly-7b21a91deb2c` y la tarjeta indica que su receta canonica se encuentra en la ruta `evaluations/2026-09-23_task00_centre_full_recovery`, con la etiqueta de nivel "versioned snapshot".
 
 La informacion disponible no incluye ningun dato sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni pesos del modelo. El repositorio no declara licencia, idiomas soportados ni pipeline de inferencia, y acumula 0 descargas y 0 "likes" en el momento de la consulta. Por tanto, no es posible confirmar que contenga un modelo ejecutable: por su nomenclatura y por el contenido de su tarjeta, apunta a un artefacto de registro experimental (logs de evaluacion o instantanea de un directorio de trabajo) en lugar de a un modelo desplegable.
 
@@ -25,7 +25,7 @@ Su relevancia actual es, por consiguiente, acotada al ambito de la reproducibili
 | Tipo declarado en la model card | versioned fleet archive (instantanea versionada) |
 | Nivel declarado | versioned snapshot |
 | Receta canonica | evaluations/2026-09-23_task00_centre_full_recovery |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tags | region:us |
 | Descargas | 0 |
 | Likes | 0 |
@@ -89,7 +89,7 @@ No disponible. No se ha identificado ningun modelo comparable, ya que el reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-7b21a91deb2c
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-7b21a91deb2c
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna, no se proporciona URL publica)
 - Fichero de verificacion citado: `SHA256SUMS` (referenciado en la model card, sin enlace directo disponible)
 - Paper, blog, repositorio de codigo o demo: no disponibles

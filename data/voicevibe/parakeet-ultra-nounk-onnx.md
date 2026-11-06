@@ -94,7 +94,7 @@ Frente a Whisper large-v3, que es la alternativa ASR multilingue mas extendida, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceVibe/parakeet-ultra-nounk-onnx
+- Modelo en Hugging Face: https://huggingface.co/VoiceVibe/parakeet-ultra-nounk-onnx
 - Modelo base (Moondream): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Libreria onnx-asr: https://github.com/istupakov/onnx-asr

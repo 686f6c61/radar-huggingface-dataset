@@ -4,7 +4,7 @@
 
 El repositorio `riyaguptadale/dissertation-ocr-freeform` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de lectura y un esbozo de diseño experimental sobre el problema de OCR sin formato fijo (OCR Freeform). Está publicado bajo licencia MIT y su autor, riyaguptadale, lo presenta como un documento exploratorio que organiza el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base y un plan de evaluación sobre conjuntos de datos como FUNSD, SROIE y CORD.
 
-A pesar de que los metadatos de HuggingFace indican 49.600 parámetros y la etiqueta `safetensors`, el tamaño del repositorio es de 0.0 GB y la propia model card aclara explícitamente que no se incluye ningún checkpoint entrenado, código liberado ni resultados experimentales. Por tanto, este repositorio debe interpretarse como material de referencia para investigadores que quieran diseñar o verificar experimentos en OCR Freeform, no como un modelo desplegable.
+A pesar de que los metadatos de Hugging Face indican 49.600 parámetros y la etiqueta `safetensors`, el tamaño del repositorio es de 0.0 GB y la propia model card aclara explícitamente que no se incluye ningún checkpoint entrenado, código liberado ni resultados experimentales. Por tanto, este repositorio debe interpretarse como material de referencia para investigadores que quieran diseñar o verificar experimentos en OCR Freeform, no como un modelo desplegable.
 
 La relevancia actual de este repositorio es limitada desde el punto de vista práctico, pero puede servir como punto de partida para entender qué aspectos metodológicos conviene controlar al evaluar sistemas de OCR en formularios libres, un área con aplicaciones en digitalización documental y extracción de datos no estructurados.
 
@@ -64,14 +64,14 @@ No disponible. Este repositorio no es un modelo y no existe una categoría de mo
 
 - No es un modelo de IA: no puede procesar entradas ni generar salidas.
 - No contiene pesos, código ni resultados experimentales verificables.
-- Los metadatos de HuggingFace (49.600 parámetros, safetensors) son engañosos: el tamaño del repositorio es 0.0 GB y no hay archivos de modelo reales.
+- Los metadatos de Hugging Face (49.600 parámetros, safetensors) son engañosos: el tamaño del repositorio es 0.0 GB y no hay archivos de modelo reales.
 - La model card indica que el contenido es exploratorio y que las hipótesis no han sido validadas.
 - No se debe utilizar este repositorio como evidencia de rendimiento de ningún sistema OCR.
 - La licencia MIT se aplica al documento, pero los términos de los datasets externos (FUNSD, SROIE, CORD) deben revisarse por separado si se usan en investigaciones propias.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/riyaguptadale/dissertation-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/riyaguptadale/dissertation-ocr-freeform
 - Repositorio similar (notas de investigación): https://huggingface.co/williamsfap/dissertation-ocr-freeform-2024
 - Repositorio similar (paper OCR freeform): https://huggingface.co/ivantran/paper_027532059_ocr_freeform
 - Artículo sobre herramientas OCR gratuitas y modelos open source (contexto general): https://www.edenai.co/post/top-free-ocr-tools-apis-and-open-source-models

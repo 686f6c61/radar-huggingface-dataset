@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | GSM8K (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cot-dialect-olmo3-7b-think-grpo-chainonly-l5 (este) | 7B + LoRA | no disponible | 70,8% | Apache 2.0 | HuggingFace |
-| ssurface/cot-dialect-olmo3-7b-think-grpo-l5 (modelo principal L5) | 7B + LoRA | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| allenai/Olmo-3-7B-Think (base) | 7B | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| ssurface/cot-dialect-olmo3-7b-think-sft-l5 (SFT L5) | 7B + LoRA | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| cot-dialect-olmo3-7b-think-grpo-chainonly-l5 (este) | 7B + LoRA | no disponible | 70,8% | Apache 2.0 | Hugging Face |
+| ssurface/cot-dialect-olmo3-7b-think-grpo-l5 (modelo principal L5) | 7B + LoRA | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| allenai/Olmo-3-7B-Think (base) | 7B | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| ssurface/cot-dialect-olmo3-7b-think-sft-l5 (SFT L5) | 7B + LoRA | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Nota: no se dispone de datos de GSM8K para los modelos comparados en la informacion proporcionada. La comparativa estructural muestra que este adaptador es una variante de ablation del modelo principal L5, entrenado con el mismo nivel de compresion pero con un componente de recompensa `chain` anadido (la variante `chainonly` lo excluye). El autor advierte que, al ser un artefacto de ablation, puede ser peor que el modelo principal en el mismo nivel.
 
@@ -91,7 +91,7 @@ Nota: no se dispone de datos de GSM8K para los modelos comparados en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-chainonly-l5
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-chainonly-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo SFT L5 (requerido para carga): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l5
 - Modelo principal L5 (variante no ablation): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l5

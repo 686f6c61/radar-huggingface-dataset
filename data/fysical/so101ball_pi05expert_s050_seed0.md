@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fysical/so101ball_pi05expert_S050_seed0` es una politica robotica de tipo Vision-Language-Action (VLA) publicada por el usuario `fysical` en HuggingFace. No es un modelo de lenguaje: es un ajuste fino del modelo base `lerobot/pi05_base` (implementacion en LeRobot de π₀.₅, de Physical Intelligence) para una unica tarea de manipulacion sobre un brazo SO-101: recoger una pelota verde y dejarla en una cesta, ignorando dos pelotas rojas de distraccion.
+`fysical/so101ball_pi05expert_S050_seed0` es una politica robotica de tipo Vision-Language-Action (VLA) publicada por el usuario `fysical` en Hugging Face. No es un modelo de lenguaje: es un ajuste fino del modelo base `lerobot/pi05_base` (implementacion en LeRobot de π₀.₅, de Physical Intelligence) para una unica tarea de manipulacion sobre un brazo SO-101: recoger una pelota verde y dejarla en una cesta, ignorando dos pelotas rojas de distraccion.
 
 El modelo consume tres imagenes de 224x224 (una vista base y dos vistas de muneca), un vector de estado de 32 dimensiones y una instruccion de tarea en lenguaje natural, y produce un vector de accion de 6 dimensiones a 30 FPS. Cuenta con 4.143.404.816 parametros y se distribuye en safetensors bajo licencia Apache 2.0, con un repositorio de 20 GB.
 
@@ -88,10 +88,10 @@ En el caso de una politica de imitacion, las metricas aplicables serian tasa de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fysical/so101ball_pi05expert_S050_seed0 | 4.143.404.816 | No disponible | apache-2.0 | HuggingFace, libreria lerobot | Ajuste fino especializado en una tarea con distractores sobre SO-101 |
-| lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | Modelo base del que deriva este ajuste; proposito general |
-| lerobot/pi0_base (π₀) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | Generacion anterior de la familia π de Physical Intelligence |
-| SmolVLA (LeRobot) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | HuggingFace | Politica VLA de menor tamano de la misma libreria |
+| fysical/so101ball_pi05expert_S050_seed0 | 4.143.404.816 | No disponible | apache-2.0 | Hugging Face, libreria lerobot | Ajuste fino especializado en una tarea con distractores sobre SO-101 |
+| lerobot/pi05_base | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | Modelo base del que deriva este ajuste; proposito general |
+| lerobot/pi0_base (π₀) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | Generacion anterior de la familia π de Physical Intelligence |
+| SmolVLA (LeRobot) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Hugging Face | Politica VLA de menor tamano de la misma libreria |
 
 La informacion proporcionada no incluye parametros, contexto, licencias ni metricas de los modelos alternativos, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
@@ -111,7 +111,7 @@ La informacion proporcionada no incluye parametros, contexto, licencias ni metri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fysical/so101ball_pi05expert_S050_seed0
+- Modelo en Hugging Face: https://huggingface.co/fysical/so101ball_pi05expert_S050_seed0
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste fino: https://huggingface.co/datasets/fysical/greenball_pool_225_v1
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fysical/greenball_pool_225_v1

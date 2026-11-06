@@ -127,7 +127,7 @@ No se dispone de datos de benchmarks estandar para ninguno de los tres artefacto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-NVFP4-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-NVFP4-Abliterated
 - Modelo padre: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
 - Licencia Qwen community 1.0: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Informe de abliteracion por tensor: `abliteration_report.json` en el repositorio del modelo

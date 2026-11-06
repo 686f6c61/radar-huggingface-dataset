@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto de audio | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/faster-whisper-small-ct2 (este) | ~244 M (base) | ventanas de 30 s | MIT | CTranslate2 | HuggingFace, espejo no oficial |
-| Systran/faster-whisper-small | ~244 M | ventanas de 30 s | MIT | CTranslate2 | HuggingFace, referencia oficial de la conversión |
-| openai/whisper-small | ~244 M | ventanas de 30 s | MIT | PyTorch (safetensors/bin) | HuggingFace, release oficial de OpenAI |
-| openai/whisper-large-v3 | ~1.550 M | ventanas de 30 s | MIT | PyTorch | HuggingFace, mayor precisión y coste |
+| Audante/faster-whisper-small-ct2 (este) | ~244 M (base) | ventanas de 30 s | MIT | CTranslate2 | Hugging Face, espejo no oficial |
+| Systran/faster-whisper-small | ~244 M | ventanas de 30 s | MIT | CTranslate2 | Hugging Face, referencia oficial de la conversión |
+| openai/whisper-small | ~244 M | ventanas de 30 s | MIT | PyTorch (safetensors/bin) | Hugging Face, release oficial de OpenAI |
+| openai/whisper-large-v3 | ~1.550 M | ventanas de 30 s | MIT | PyTorch | Hugging Face, mayor precisión y coste |
 
 La diferencia principal entre este modelo y `Systran/faster-whisper-small` es únicamente la procedencia del repositorio: los ficheros son idénticos según la model card. Frente a `openai/whisper-small`, la ventaja es el runtime CTranslate2, más rápido y ligero; frente a `whisper-large-v3`, este modelo sacrifica precisión a cambio de velocidad y menores requisitos de hardware.
 
@@ -83,7 +83,7 @@ La diferencia principal entre este modelo y `Systran/faster-whisper-small` es ú
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Audante/faster-whisper-small-ct2
+- Repositorio en Hugging Face: https://huggingface.co/Audante/faster-whisper-small-ct2
 - Modelo fuente de la conversión: https://huggingface.co/Systran/faster-whisper-small
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-small
 - Repositorio `faster-whisper`: https://github.com/SYSTRAN/faster-whisper

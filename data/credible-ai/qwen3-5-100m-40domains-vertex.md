@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 |---|---|---|---|---|
 | qwen3.5-100M-40domains-vertex | 104M | no disponible | MIT | 512 proxies de mezcla de datos para investigación |
 | Pythia-160M (EleutherAI) | 160M | 2.048 tokens | Apache 2.0 | Modelo de investigación con checkpoints intermedios |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 tokens | Apache 2.0 | Modelo pequeño generalista preentrenado |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 tokens | Apache 2.0 | Modelo pequeño generalista preentrenado |
 | Qwen2.5-0.5B (Alibaba) | 494M | 32.768 tokens | Apache 2.0 | Modelo generalista con variantes instruct |
 
 La comparación relevante no es de rendimiento sino de propósito: Pythia y SmolLM son modelos individuales pensados para uso general o para investigación de dinámica de entrenamiento, mientras que este repositorio es un conjunto experimental de 512 checkpoints cuyo valor está en la variación controlada de la mezcla de datos. Los datos de los modelos alternativos provienen de referencias públicas generales y no han sido verificados en la búsqueda proporcionada; conviene contrastarlos antes de citarlos.
@@ -98,7 +98,7 @@ La comparación relevante no es de rendimiento sino de propósito: Pythia y Smol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-vertex
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-vertex
 - Dataset con diseño, resultados y secuencias de entrenamiento: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms
 - Corpus web tokenizado: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized
 - Código del proyecto LinMix: https://github.com/credibleai/linmix

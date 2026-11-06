@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario asfadaa en HuggingFace bajo licencia MIT. La informacion disponible presenta una contradiccion fundamental: los metadatos de HuggingFace lo etiquetan como un modelo BERT orientado a `feature-extraction`, mientras que la model card describe un supuesto modelo de razonamiento conversacional con mejoras en tareas de matematicas, programacion y logica. No hay coherencia entre ambas fuentes.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario asfadaa en Hugging Face bajo licencia MIT. La informacion disponible presenta una contradiccion fundamental: los metadatos de Hugging Face lo etiquetan como un modelo BERT orientado a `feature-extraction`, mientras que la model card describe un supuesto modelo de razonamiento conversacional con mejoras en tareas de matematicas, programacion y logica. No hay coherencia entre ambas fuentes.
 
 El repositorio tiene 0 descargas, 0 likes, un tamano de 0.0 GB y fue creado y actualizado en septiembre de 2026, apenas segundos de diferencia entre ambas marcas de tiempo. Todo apunta a un repositorio de prueba o plantilla, no a un modelo entrenado y desplegable.
 
@@ -23,7 +23,7 @@ La model card menciona mejoras en AIME 2025 (del 70% al 87,5% de precision), un 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. Los tags de HuggingFace (`transformers`, `pytorch`, `bert`, `feature-extraction`) apuntan a un encoder tipo BERT para extraccion de caracteristicas, mientras que la model card afirma que el modelo ha mejorado su "profundidad de razonamiento" mediante "recursos computacionales incrementados" y "mecanismos de optimizacion algorítmica durante el post-entrenamiento". Esta descripcion es propia de un modelo de razonamiento autoregresivo, no de un BERT de `feature-extraction`.
+No se dispone de informacion verificable sobre la arquitectura. Los tags de Hugging Face (`transformers`, `pytorch`, `bert`, `feature-extraction`) apuntan a un encoder tipo BERT para extraccion de caracteristicas, mientras que la model card afirma que el modelo ha mejorado su "profundidad de razonamiento" mediante "recursos computacionales incrementados" y "mecanismos de optimizacion algorítmica durante el post-entrenamiento". Esta descripcion es propia de un modelo de razonamiento autoregresivo, no de un BERT de `feature-extraction`.
 
 No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. La model card menciona un supuesto ajuste post-entrenamiento y mejoras en el "pensamiento" durante la inferencia, pero sin ningun detalle reproducible. El tamano del repositorio (0.0 GB) sugiere que no hay pesos publicados, lo que impide cualquier analisis tecnico real.
 
@@ -89,7 +89,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Limitaciones y advertencias
 
-- Incoherencia de metadatos: HuggingFace clasifica el modelo como BERT de `feature-extraction`, mientras la model card describe un LLM de razonamiento. No esta claro que es realmente el repositorio.
+- Incoherencia de metadatos: Hugging Face clasifica el modelo como BERT de `feature-extraction`, mientras la model card describe un LLM de razonamiento. No esta claro que es realmente el repositorio.
 - Ausencia de pesos: el tamano del repositorio es 0.0 GB, lo que sugiere que no hay checkpoint descargable.
 - Cero traccion: 0 descargas y 0 likes. No hay comunidad que lo haya validado.
 - Fechas anomales: creacion y actualizacion en septiembre de 2026, con apenas segundos de diferencia, tipico de un repositorio de prueba automatizado.
@@ -101,5 +101,5 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfadaa/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/asfadaa/MyAwesomeModel-TestRepo
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo.

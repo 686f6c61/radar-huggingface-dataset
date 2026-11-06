@@ -95,11 +95,11 @@ La comparacion directa con el modelo base es la mas informativa: Atlantis-Obelis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Coralfil/Atlantis-Obelisk
+- Modelo en Hugging Face: https://huggingface.co/Coralfil/Atlantis-Obelisk
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Consola web declarada por el autor: https://atlantis-llm.io
 - Red de telemetria costera declarada por el autor: https://coralfil.com/monitor
-- Organizacion en HuggingFace: https://huggingface.co/Coralfil-Atlantis
+- Organizacion en Hugging Face: https://huggingface.co/Coralfil-Atlantis
 - Sitio de Coralfil OS: https://os.coralfil.com/start
 - Perfil de GitHub de Coralfil: https://github.com/Coralfil

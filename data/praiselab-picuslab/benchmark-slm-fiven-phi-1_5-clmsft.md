@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA entrenado sobre **microsoft/phi-1_5*
 
 No se trata de un modelo completo, sino de un adaptador de bajo rango (PEFT) que debe combinarse con el modelo base para generar texto. Su interés principal es comparativo: permite evaluar cómo afecta esta estrategia de fine-tuning a un SLM compacto en una lengua distinta del inglés, algo relevante para la investigación en adaptación lingüística eficiente de modelos pequeños.
 
-El acceso está restringido (*gated*): es necesario aceptar condiciones en HuggingFace para descargarlo. La licencia no está especificada y no se ha publicado una model card detallada, por lo que varios datos técnicos clave no están disponibles.
+El acceso está restringido (*gated*): es necesario aceptar condiciones en Hugging Face para descargarlo. La licencia no está especificada y no se ha publicado una model card detallada, por lo que varios datos técnicos clave no están disponibles.
 
 ## Especificaciones técnicas
 
@@ -31,10 +31,10 @@ La estrategia `clmsft` indica un ajuste fino supervisado formulado como modelado
 
 - Generación de texto en italiano, según el tag de idioma `it` de la ficha.
 - Hereda las capacidades generales del modelo base phi-1_5 (razonamiento básico, algo de código y matemáticas a nivel de libro de texto), aunque el efecto del ajuste en italiano sobre estas capacidades no está documentado.
-- Compatible con el ecosistema PEFT de HuggingFace: puede cargarse junto al modelo base, fusionarse con `merge_and_unload()` o combinarse con otros adaptadores.
+- Compatible con el ecosistema PEFT de Hugging Face: puede cargarse junto al modelo base, fusionarse con `merge_and_unload()` o combinarse con otros adaptadores.
 - No hay evidencia de soporte de tool calling, function calling ni capacidades de agentes.
 - No incluye visión, audio ni modo de razonamiento extendido (*thinking mode*).
-- Pipeline de text-generation estándar en HuggingFace.
+- Pipeline de text-generation estándar en Hugging Face.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. Aunq
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| praiselab-picuslab/benchmark-slm-fiven-phi-1_5-clmsft | ~1,3B (base) + adaptador LoRA | 2048 | No disponible | Gated en HuggingFace |
+| praiselab-picuslab/benchmark-slm-fiven-phi-1_5-clmsft | ~1,3B (base) + adaptador LoRA | 2048 | No disponible | Gated en Hugging Face |
 | microsoft/phi-1_5 (modelo base) | 1,3B | 2048 | MIT | Abierta |
 | TinyLlama-1.1B-Chat-v1.0 | 1,1B | 2048 | Apache 2.0 | Abierta |
 | Qwen2.5-1.5B-Instruct | 1,5B | 32.768 (131.072 con YaRN) | Apache 2.0 | Abierta |
@@ -75,7 +75,7 @@ Frente a las alternativas, este adaptador no destaca por rendimiento publicado (
 ## Limitaciones y advertencias
 
 - **Licencia no disponible**: sin licencia explícita, el uso comercial es jurídicamente incierto; habría que verificar las condiciones del modelo base (MIT) y del dataset antes de cualquier despliegue productivo.
-- **Acceso restringido (gated)**: requiere aceptar condiciones en HuggingFace, lo que dificulta la integración en pipelines automatizados de CI/CD.
+- **Acceso restringido (gated)**: requiere aceptar condiciones en Hugging Face, lo que dificulta la integración en pipelines automatizados de CI/CD.
 - **Sin model card detallada**: no se documentan datos de entrenamiento, hiperparámetros del LoRA, composición del dataset `fiven` ni intenciones de uso, lo que impide auditar sesgos y procedencia de los datos.
 - **Sin validación comunitaria**: 0 descargas y 0 likes en el momento de la ficha; no hay evidencia externa de calidad ni de estabilidad.
 - **Contexto limitado**: 2048 tokens, muy por debajo de SLMs recientes (8k–128k), lo que restringe conversaciones largas y documentos extensos.
@@ -85,8 +85,8 @@ Frente a las alternativas, este adaptador no destaca por rendimiento publicado (
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-clmsft
+- Ficha del modelo en Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-phi-1_5-clmsft
 - Modelo base microsoft/phi-1_5: https://huggingface.co/microsoft/phi-1_5
-- Documentación de PEFT (HuggingFace): https://huggingface.co/docs/peft
+- Documentación de PEFT (Hugging Face): https://huggingface.co/docs/peft
 
 No se han encontrado enlaces a papers, blogs, repositorios de código ni demos en la información disponible.

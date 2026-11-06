@@ -22,7 +22,7 @@ Por todo ello, esta ficha recoge exclusivamente los datos verificables del repos
 | Formato de pesos | GGUF (tag del repo); los metadatos de parametros se reportan como safetensors |
 | Modelo base | Lightricks/LTX-2.5 (con tag `base_model:quantized`) |
 | Tamano del repositorio | 18,6 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No es posible ofrecer una comparativa cuantitativa fiable: no hay benchmarks pub
 
 - Ausencia total de documentacion: no hay model card descriptiva, informe tecnico ni notas sobre la receta de merge, los datos de entrenamiento o la cuantizacion.
 - Repositorio sin validacion social: 0 descargas y 0 likes en el momento de la consulta, lo que impide contrastar el comportamiento real del modelo con experiencias de terceros.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que anade friccion a cualquier evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que anade friccion a cualquier evaluacion.
 - Fecha de creacion anomala (2026-10-06): conviene verificar la autenticidad y la vigencia del repositorio antes de integrarlo en cualquier flujo de trabajo.
 - Riesgo de artefactos y alucinacion visual: en modelos de difusion de video, los fallos tipicos incluyen incoherencia temporal entre fotogramas, deformacion de anatomias, texto ilegible y deriva de identidad de personajes. No hay evaluaciones que cuantifiquen estos efectos en este merge.
 - Licencia Apache 2.0 declarada, pero con reservas: al derivar de Lightricks/LTX-2.5, es imprescindible comprobar la licencia del modelo base, ya que puede imponer condiciones adicionales (uso comercial, atribucion o restricciones por territorio) que prevalezcan sobre la licencia declarada en el merge.
@@ -94,7 +94,7 @@ No es posible ofrecer una comparativa cuantitativa fiable: no hay benchmarks pub
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/ApolloRaines/LTX-2.5-22b-OmniGen-v12
+- Pagina de Hugging Face del modelo: https://huggingface.co/ApolloRaines/LTX-2.5-22b-OmniGen-v12
 - Modelo base referenciado: https://huggingface.co/Lightricks/LTX-2.5
 - Perfil del autor: https://huggingface.co/ApolloRaines
 - Repositorio de Lightricks LTX-Video (familia a la que pertenece el modelo base): https://github.com/Lightricks/LTX-Video

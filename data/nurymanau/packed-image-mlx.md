@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nurymanau/Packed-Image-MLX | Port MLX de Qwen-Image-2.1 + Qwen3-VL-8B | no disponible (8.831.774.720 bytes de tensores de inferencia) | no disponible | no disponible | Qwen Research (no comercial); codificador Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen-Image-2.1 | Modelo original text-to-image | no disponible | no disponible | no disponible | Qwen Research | HuggingFace (modelo base) |
-| unsloth/Qwen-Image-2.1-GGUF | Cuantizaciones GGUF del modelo original | no disponible | no disponible | no disponible | Qwen Research | HuggingFace (fuente de los tensores) |
-| Qwen3-VL-8B-Instruct | Modelo de visión-lenguaje usado como codificador de texto | 8B | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Nurymanau/Packed-Image-MLX | Port MLX de Qwen-Image-2.1 + Qwen3-VL-8B | no disponible (8.831.774.720 bytes de tensores de inferencia) | no disponible | no disponible | Qwen Research (no comercial); codificador Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen-Image-2.1 | Modelo original text-to-image | no disponible | no disponible | no disponible | Qwen Research | Hugging Face (modelo base) |
+| unsloth/Qwen-Image-2.1-GGUF | Cuantizaciones GGUF del modelo original | no disponible | no disponible | no disponible | Qwen Research | Hugging Face (fuente de los tensores) |
+| Qwen3-VL-8B-Instruct | Modelo de visión-lenguaje usado como codificador de texto | 8B | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 Los datos de rendimiento, parámetros y contexto de los modelos comparables no están disponibles en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa.
 
@@ -90,14 +90,14 @@ Los datos de rendimiento, parámetros y contexto de los modelos comparables no e
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Nurymanau/Packed-Image-MLX
+- Hugging Face del modelo: https://huggingface.co/Nurymanau/Packed-Image-MLX
 - Licencia del modelo: https://huggingface.co/Nurymanau/Packed-Image-MLX/blob/main/MODEL-LICENSE
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Cuantización fuente del transformer de imagen: https://huggingface.co/unsloth/Qwen-Image-2.1-GGUF
 - Cuantización fuente del codificador de texto: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-GGUF
 - MFLUX (clases de arquitectura): https://github.com/mflux-community/mflux
 - Framework MLX: https://mlx-framework.org/
-- MLX Community en HuggingFace: https://huggingface.co/mlx-community
+- MLX Community en Hugging Face: https://huggingface.co/mlx-community
 - mlx-image: https://github.com/riccardomusmeci/mlx-image
 - MLX Studio: https://mlx.studio/
 - mlx-gen: https://github.com/lpalbou/mlx-gen

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adityakp15/hw1-hc3-detector` es un clasificador de texto basado en un transformer fine-tuneado, publicado por el usuario adityakp15 en HuggingFace, cuyo objetivo es distinguir texto escrito por personas de texto generado por ChatGPT. Se entrenó y evaluó sobre el conjunto de datos HC3 (Human ChatGPT Comparison Corpus), empleando las etiquetas de respuestas humanas y de respuestas generadas por ChatGPT que contiene dicho corpus. La tarea es, por tanto, de clasificación binaria de secuencias, no de generación de texto.
+El modelo `adityakp15/hw1-hc3-detector` es un clasificador de texto basado en un transformer fine-tuneado, publicado por el usuario adityakp15 en Hugging Face, cuyo objetivo es distinguir texto escrito por personas de texto generado por ChatGPT. Se entrenó y evaluó sobre el conjunto de datos HC3 (Human ChatGPT Comparison Corpus), empleando las etiquetas de respuestas humanas y de respuestas generadas por ChatGPT que contiene dicho corpus. La tarea es, por tanto, de clasificación binaria de secuencias, no de generación de texto.
 
 El repositorio contiene 22.713.986 parámetros en formato safetensors, lo que lo sitúa en la gama de los transformers compactos: cabe holgadamente en cualquier GPU de consumo e incluso puede ejecutarse en CPU. La model card reporta una exactitud de test de 0,9871 para el clasificador fine-tuneado, frente a 0,8449 de una línea base con sentence-transformer congelado, lo que supone una mejora de 14,2 puntos porcentuales.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada pero concreta: es un detector de texto sintético repro
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (etiqueta `bert` en HuggingFace); clasificador de secuencias fine-tuneado |
+| Arquitectura | Transformer encoder (etiqueta `bert` en Hugging Face); clasificador de secuencias fine-tuneado |
 | Parametros totales | 22.713.986 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la model card no la declara) |
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| `adityakp15/hw1-hc3-detector` | 22,7 M | no disponible | Exactitud 0,9871 en test de HC3 | no disponible | HuggingFace, 0 descargas |
-| Detector basado en RoBERTa (p. ej. Hello-SimpleAI/chatgpt-detector-roberta) | ≈125 M (variante base) | no disponible | no disponible | no disponible | HuggingFace |
+| `adityakp15/hw1-hc3-detector` | 22,7 M | no disponible | Exactitud 0,9871 en test de HC3 | no disponible | Hugging Face, 0 descargas |
+| Detector basado en RoBERTa (p. ej. Hello-SimpleAI/chatgpt-detector-roberta) | ≈125 M (variante base) | no disponible | no disponible | no disponible | Hugging Face |
 | Clasificador de OpenAI para texto generado | no disponible | no disponible | no disponible | no disponible (API retirada) | Histórico, ya no disponible |
 | GPTZero y otros detectores comerciales | no disponible (cerrado) | no disponible | no disponible | Propietaria | Servicio web |
 
@@ -100,6 +100,6 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityakp15/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/adityakp15/hw1-hc3-detector
 - Corpus HC3 (referencia del dataset citado por el autor): no se incluye enlace en la información disponible; el autor solo menciona el dataset por su nombre.
 - Búsqueda web: los resultados recuperados no guardan relación con el modelo ni con la detección de texto generado por IA (se trata de páginas de ayuda de YouTube en japonés, chino y polaco). No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo.

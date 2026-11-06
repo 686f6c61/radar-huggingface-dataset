@@ -18,7 +18,7 @@ El modelo soporta contextos de hasta 200.000 tokens, cuenta con 62 capas, un tam
 | Longitud de contexto | Hasta 200.000 tokens |
 | Tipos de cuantizacion | GGUF con cuantizacion hibrida por capa (según puntuacion de importancia); niveles concretos no disponibles |
 | Idiomas soportados | No disponible |
-| Licencia | Modified MIT (licencia "other" en HuggingFace, enlazada a la licencia del modelo base) |
+| Licencia | Modified MIT (licencia "other" en Hugging Face, enlazada a la licencia del modelo base) |
 | Formato de pesos | GGUF (llama.cpp) |
 
 ## Arquitectura y entrenamiento
@@ -75,14 +75,14 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - Sesgos conocidos: no se documentan en la informacion proporcionada; cabe esperar los sesgos habituales de los datos de entrenamiento, no auditados aqui.
 - Riesgo de alucinacion: no cuantificado; como todo modelo generativo, puede producir contenido plausible pero incorrecto, especialmente en tareas de codigo o datos factuales.
 - Limitaciones de contexto o idioma: la ventana de 200K tokens es amplia, pero el rendimiento en contextos muy largos no esta verificado con benchmarks; los idiomas soportados no se detallan.
-- Restricciones de licencia: la licencia es "Modified MIT" (etiquetada como "other" en HuggingFace). Es imprescindible revisar el texto completo de la licencia del modelo base antes de un uso comercial, ya que puede incluir condiciones adicionales.
+- Restricciones de licencia: la licencia es "Modified MIT" (etiquetada como "other" en Hugging Face). Es imprescindible revisar el texto completo de la licencia del modelo base antes de un uso comercial, ya que puede incluir condiciones adicionales.
 - Cuantizacion: la cuantizacion hibrida puede introducir degradaciones de calidad no documentadas respecto al modelo original; conviene validar en la tarea concreta.
 - Produccion: no hay datos publicados de latencia, throughput ni estabilidad en despliegues de larga duracion.
 - Repositorio con muy poca traccion (94 descargas, 0 likes): no hay evidencia comunitaria de validacion de estas cuantizaciones.
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/vultr/MiniMax-M2.7-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/vultr/MiniMax-M2.7-GGUF
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M2.7
 - Licencia del modelo base: https://github.com/MiniMax-AI/MiniMax-M2.7/blob/main/LICENSE
 - Repositorio del modelo en GitHub: https://github.com/MiniMax-AI/MiniMax-M2.7

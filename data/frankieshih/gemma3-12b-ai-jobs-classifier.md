@@ -46,7 +46,7 @@ El fine-tuning para la clasificación de ofertas de empleo se realiza sobre la v
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona métricas de precisión, recall, F1 ni comparaciones con otros modelos en la model card de HuggingFace. El modelo relacionado `FrankieShih/umd_llm_based_ai_jobs_classifier` (basado en Qwen3-0.6B) reporta mejoras de ~30% en precisión y ~18% en recall frente a métodos taxonómicos, pero estos datos no son directamente aplicables a este modelo de 12B.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor no proporciona métricas de precisión, recall, F1 ni comparaciones con otros modelos en la model card de Hugging Face. El modelo relacionado `FrankieShih/umd_llm_based_ai_jobs_classifier` (basado en Qwen3-0.6B) reporta mejoras de ~30% en precisión y ~18% en recall frente a métodos taxonómicos, pero estos datos no son directamente aplicables a este modelo de 12B.
 
 ## Requisitos de hardware
 
@@ -80,9 +80,9 @@ No se dispone de comparativas con otros modelos de clasificación de ofertas de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FrankieShih/gemma3-12B-ai-jobs-classifier)
+- [Modelo en Hugging Face](https://huggingface.co/FrankieShih/gemma3-12B-ai-jobs-classifier)
 - [Modelo relacionado del mismo autor (Qwen3-0.6B)](https://huggingface.co/FrankieShih/umd_llm_based_ai_jobs_classifier)
 - [Página oficial de Gemma 3](https://deepmind.google/models/gemma/gemma-3/)
-- [Modelo base gemma-3-12b-it en HuggingFace](https://huggingface.co/google/gemma-3-12b-it)
+- [Modelo base gemma-3-12b-it en Hugging Face](https://huggingface.co/google/gemma-3-12b-it)
 - [Repositorio de Gemma en GitHub](https://github.com/google-deepmind/gemma)
 - [Technical report de Gemma 3 (arXiv)](https://arxiv.org/html/2503.19786)

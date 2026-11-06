@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-final-x20-cap300` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos pequeños dentro del ecosistema actual. El repositorio ocupa 8,1 GB y el acceso está restringido: es necesario aceptar las condiciones en HuggingFace antes de poder descargarlo.
+`alfred8995/r18-a2-final-x20-cap300` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos pequeños dentro del ecosistema actual. El repositorio ocupa 8,1 GB y el acceso está restringido: es necesario aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 La información pública disponible es mínima. El tag `sn38-nanochrono` sugiere una arquitectura o familia interna propia del autor, no un transformer estándar de un laboratorio conocido, pero no hay documentación que la describa. Tampoco se especifican idiomas soportados, pipeline de uso, datos de entrenamiento ni benchmarks. El nombre del modelo (`r18-a2-final-x20-cap300`) parece seguir una convención de versionado interna (posiblemente "ronda 18", "alpha 2", "x20", "cap 300") sin significado público documentado.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-final-x20-cap300 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-final-x20-cap300 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Gemma 2 2B (Google) | ~2.600 M | 8.192 tokens | Gemma Terms | Público, documentado |
 | Qwen2.5 1.5B (Alibaba) | ~1.500 M | 32.768 tokens | Apache 2.0 | Público, documentado |
-| SmolLM2 1.7B (HuggingFace) | ~1.700 M | 8.192 tokens | Apache 2.0 | Público, documentado |
+| SmolLM2 1.7B (Hugging Face) | ~1.700 M | 8.192 tokens | Apache 2.0 | Público, documentado |
 
 La comparación es estructural: los tres modelos de referencia tienen documentación completa, tokenizer incluido, benchmarks publicados y comunidad. El modelo de alfred8995 carece de todos esos elementos, por lo que no es equiparable en madurez ni en trazabilidad.
 
@@ -75,12 +75,12 @@ La comparación es estructural: los tres modelos de referencia tienen documentac
 - Riesgo elevado de alucinación y comportamiento impredecible: sin benchmarks ni evaluación, no se puede garantizar coherencia ni utilidad.
 - Idiomas no especificados: no se puede asumir soporte de castellano ni de ningún otro idioma.
 - Contexto desconocido: no se puede planificar su uso en tareas de contexto largo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para uso automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para uso automatizado.
 - Licencia Apache 2.0 permite uso comercial, pero la falta de garantías sobre el origen de los datos de entrenamiento introduce riesgo legal y ético no evaluado.
 - Sin tokenizer ni configuración publicados: la integración en pipelines estándar requiere trabajo de ingeniería inversa.
 - No apto para producción sin una evaluación exhaustiva previa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-final-x20-cap300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-final-x20-cap300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

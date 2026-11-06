@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,8B | 256K | Sí | Apache 2.0 | HuggingFace |
-| Qwen3.6-27B | 27,8B | 256K | Sí | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-32B | 32B | 128K | Sí | Apache 2.0 | HuggingFace |
-| AtomicChat MLX (este) | 27,8B (base) | 256K | Sí | No disponible | HuggingFace |
+| Qwen3.8-27B (base) | 27,8B | 256K | Sí | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B | 27,8B | 256K | Sí | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-32B | 32B | 128K | Sí | Apache 2.0 | Hugging Face |
+| AtomicChat MLX (este) | 27,8B (base) | 256K | Sí | No disponible | Hugging Face |
 
 La conversión MLX no altera las capacidades del modelo base, solo el formato y la cuantización. La principal diferencia con Qwen2.5-VL-32B es el contexto mayor (256K frente a 128K) y la orientación a ofimática y agentes. El modelo base de Qwen3.8-27B es el mismo que esta conversión, por lo que la comparativa relevante es frente a otras variantes cuantizadas en MLX o GGUF.
 
@@ -78,7 +78,7 @@ La conversión MLX no altera las capacidades del modelo base, solo el formato y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-mixed_3_4-CLIP-DWQ
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen3.8-27B-MLX-mixed_3_4-CLIP-DWQ
 - Página del modelo en Atomic Chat: https://atomic.chat/models/qwen3-8-27b
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b

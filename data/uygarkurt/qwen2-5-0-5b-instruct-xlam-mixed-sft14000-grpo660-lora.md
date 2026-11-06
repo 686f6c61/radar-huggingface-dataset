@@ -70,10 +70,10 @@ Notas metodológicas declaradas por el autor: xLAM ETC es exactitud de llamada e
 
 | Modelo | Parámetros | Contexto | Tool calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct (base) | 0,5 B | 32.768 tokens (según su model card) | No especializado | Apache-2.0 (según la model card del base; no verificado en esta ficha) | HuggingFace |
-| Este adaptador, etapa SFT | 0,5 B + LoRA | Heredado del base | Entrenado; ETC 81,33 %, FNA 97,68 %, irrelevancia 66,40 % | No disponible | HuggingFace |
-| Este adaptador, SFT + GRPO | 0,5 B + LoRA | Heredado del base | Entrenado; ETC 81,68 %, FNA 97,90 %, irrelevancia 59,36 % | No disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (según su model card) | No especializado | Apache-2.0 (según su model card; no verificado aquí) | HuggingFace |
+| Qwen2.5-0.5B-Instruct (base) | 0,5 B | 32.768 tokens (según su model card) | No especializado | Apache-2.0 (según la model card del base; no verificado en esta ficha) | Hugging Face |
+| Este adaptador, etapa SFT | 0,5 B + LoRA | Heredado del base | Entrenado; ETC 81,33 %, FNA 97,68 %, irrelevancia 66,40 % | No disponible | Hugging Face |
+| Este adaptador, SFT + GRPO | 0,5 B + LoRA | Heredado del base | Entrenado; ETC 81,68 %, FNA 97,90 %, irrelevancia 59,36 % | No disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (según su model card) | No especializado | Apache-2.0 (según su model card; no verificado aquí) | Hugging Face |
 
 No se dispone de resultados de benchmarks de terceros para este adaptador, por lo que la comparación con alternativas de la misma categoría (xLAM-1B, Hammer, Hermes) no puede cuantificarse con los datos proporcionados. La comparación más fiable es interna: la tabla de la sección anterior mide el delta exacto entre SFT y SFT+GRPO.
 
@@ -91,10 +91,10 @@ No se dispone de resultados de benchmarks de terceros para este adaptador, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-grpo660-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-grpo660-lora
 - Adaptador SFT previo (punto de partida de GRPO): https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft14000-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Framework de post-entrenamiento (repositorio): https://github.com/uygarkurt/post-training-lab
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 
-Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos del repositorio de HuggingFace. No se han localizado papers, blogs ni demos adicionales.
+Nota: la búsqueda web realizada no devolvió ningún resultado relacionado con este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos del repositorio de Hugging Face. No se han localizado papers, blogs ni demos adicionales.

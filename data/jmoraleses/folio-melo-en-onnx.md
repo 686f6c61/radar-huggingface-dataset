@@ -81,6 +81,6 @@ La comparación cuantitativa de rendimiento no está disponible para ninguno de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jmoraleses/folio-melo-en-onnx
+- Repositorio Hugging Face: https://huggingface.co/jmoraleses/folio-melo-en-onnx
 - MeloTTS (MyShell.ai): https://github.com/myshell-ai/MeloTTS
 - Proyecto de origen citado en la model card: jmoraleses/Folio-iOS (commit `90d5f2a`), sin URL directa disponible en la información proporcionada.

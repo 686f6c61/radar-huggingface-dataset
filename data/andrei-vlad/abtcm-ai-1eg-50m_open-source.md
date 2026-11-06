@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrei-vlad/ABTCM-AI-1EG-50M_open-source` es un repositorio de modelo publicado en HuggingFace por el usuario andrei-vlad bajo licencia Apache 2.0. La informacion publica disponible es minima: la model card se reduce al bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin ficha de entrenamiento y sin resultados de evaluacion. El pipeline no esta declarado y los idiomas soportados no figuran en los metadatos.
+`andrei-vlad/ABTCM-AI-1EG-50M_open-source` es un repositorio de modelo publicado en Hugging Face por el usuario andrei-vlad bajo licencia Apache 2.0. La informacion publica disponible es minima: la model card se reduce al bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin ficha de entrenamiento y sin resultados de evaluacion. El pipeline no esta declarado y los idiomas soportados no figuran en los metadatos.
 
 El identificador incluye el sufijo «50M», que sugiere un modelo de aproximadamente 50 millones de parametros, pero este dato no aparece confirmado en ninguna parte del repositorio y debe tratarse como una hipotesis, no como una especificacion. Tampoco hay informacion sobre la arquitectura, el tokenizador, la longitud de contexto ni el formato de los pesos, por lo que no es posible verificar si se trata de un modelo de lenguaje causal, un modelo encoder, un modelo multimodal o un artefacto experimental.
 
@@ -20,7 +20,7 @@ La relevancia actual del repositorio es limitada desde el punto de vista tecnico
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | andrei-vlad/ABTCM-AI-1EG-50M_open-source |
+| Identificador en Hugging Face | andrei-vlad/ABTCM-AI-1EG-50M_open-source |
 | Autor | andrei-vlad |
 | Region declarada | us |
 | Pipeline declarado | no disponible |
@@ -55,7 +55,7 @@ Los siguientes escenarios son hipotesis de trabajo condicionadas a que la inspec
 - Clasificacion y etiquetado de texto a pequena escala: los modelos de decenas de millones de parametros son adecuados para tareas discriminativas acotadas (deteccion de idioma, filtrado de spam simple, categorizacion de tickets) tras un ajuste supervisado; requiere confirmar arquitectura y tokenizador antes de invertir en fine-tuning.
 - Autocompletado y generacion de texto muy restringida en dispositivos con recursos limitados: si el modelo es causal y sus pesos se convierten a GGUF, podria ejecutarse en CPU o en GPUs integradas para sugerencias de texto cortas; la calidad seria muy inferior a la de modelos de 0,5B-1B parametros y exigiria evaluacion propia.
 - Filtrado previo en pipelines de datos: uso como clasificador de primera etapa para descartar documentos antes de pasarlos a un modelo mayor, reduciendo coste por token; solo tiene sentido si se mide la tasa de falsos negativos frente al modelo grande.
-- Docencia y experimentacion sobre entrenamiento de modelos pequenos: util como caso de estudio de publicacion en HuggingFace, versionado de pesos y despliegue ligero en asignaturas o laboratorios, dado su tamano manejable en portatiles.
+- Docencia y experimentacion sobre entrenamiento de modelos pequenos: util como caso de estudio de publicacion en Hugging Face, versionado de pesos y despliegue ligero en asignaturas o laboratorios, dado su tamano manejable en portatiles.
 - Evaluacion comparativa de herramientas de inferencia: banco de pruebas para medir latencia y throughput de distintos runtimes con un modelo de baja huella de memoria, generando numeros propios ante la ausencia de benchmarks publicados.
 - Escenario de no uso: no se recomienda emplearlo en atencion al cliente, generacion de codigo en produccion ni tareas de razonamiento sin una evaluacion previa, ya que no existe evidencia publica de calidad, alineamiento ni seguridad.
 
@@ -100,7 +100,7 @@ La comparacion de rendimiento con estos modelos no puede realizarse sin ejecutar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrei-vlad/ABTCM-AI-1EG-50M_open-source
+- Repositorio en Hugging Face: https://huggingface.co/andrei-vlad/ABTCM-AI-1EG-50M_open-source
 - Paper, blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo o space: no disponible

@@ -85,7 +85,7 @@ La comparativa se limita a especificaciones, ya que no existen benchmarks public
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BlazerApex-V3.5 (GGUF) | 2,52B | no disponible | no disponible | GGUF en HuggingFace |
+| BlazerApex-V3.5 (GGUF) | 2,52B | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen2.5-3B | 3,09B | 32.768 tokens (ampliable a 131.072 con YaRN) | Apache-2.0 | safetensors y GGUF, amplio ecosistema |
 | Llama-3.2-3B | 3,21B | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF, amplio ecosistema |
 | Gemma-2-2B | 2,61B | 8.192 tokens | Gemma Terms of Use | safetensors y GGUF, amplio ecosistema |

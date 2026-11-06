@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Motif-3-NVFP4A16 | ~314,8 mil millones | no disponible | NVFP4A16 (W4A16) | MIT | HuggingFace, Transformers con `trust_remote_code` |
-| Motif-Technologies/Motif-3 (original) | no disponible en la informacion (mismo modelo base) | no disponible | BF16 | MIT | HuggingFace, Transformers y fork de vLLM de Motif |
+| axteam/Motif-3-NVFP4A16 | ~314,8 mil millones | no disponible | NVFP4A16 (W4A16) | MIT | Hugging Face, Transformers con `trust_remote_code` |
+| Motif-Technologies/Motif-3 (original) | no disponible en la informacion (mismo modelo base) | no disponible | BF16 | MIT | Hugging Face, Transformers y fork de vLLM de Motif |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables en la información proporcionada, por lo que no es posible una comparativa de rendimiento con alternativas de la misma categoría.
 
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- [axteam/Motif-3-NVFP4A16 en HuggingFace](https://huggingface.co/axteam/Motif-3-NVFP4A16)
+- [axteam/Motif-3-NVFP4A16 en Hugging Face](https://huggingface.co/axteam/Motif-3-NVFP4A16)
 - [Motif-Technologies/Motif-3 (modelo base)](https://huggingface.co/Motif-Technologies/Motif-3)
 - [MotifTechnologies/vllm (fork de vLLM con soporte Motif-3)](https://github.com/MotifTechnologies/vllm)

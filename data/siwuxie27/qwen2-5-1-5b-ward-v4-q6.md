@@ -92,7 +92,7 @@ El modelo v4 mejora sustancialmente sobre v3 en matematicas y codigo, pero pierd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siwuxie27/Qwen2.5-1.5B-Ward-v4-Q6
+- Modelo en Hugging Face: https://huggingface.co/siwuxie27/Qwen2.5-1.5B-Ward-v4-Q6
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Avernic-Atlas es un modelo publicado en HuggingFace por el usuario u organizacion Avernic bajo el identificador `Avernic/Avernic-Atlas`. En el momento de redactar esta ficha, el repositorio no incluye ninguna model card con contenido tecnico: el README se limita al bloque de metadatos de licencia (`license: other`, `license_name: the-avernic-ai-license`, `license_link: LICENSE`) y no aporta informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
+Avernic-Atlas es un modelo publicado en Hugging Face por el usuario u organizacion Avernic bajo el identificador `Avernic/Avernic-Atlas`. En el momento de redactar esta ficha, el repositorio no incluye ninguna model card con contenido tecnico: el README se limita al bloque de metadatos de licencia (`license: other`, `license_name: the-avernic-ai-license`, `license_link: LICENSE`) y no aporta informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
 
 El repositorio registra 0 descargas y 1 like, con fecha de creacion y ultima actualizacion identicas (29 de septiembre de 2026, una fecha que resulta anomala respecto al calendario habitual de publicaciones). No se ha publicado pipeline asociado, ni lista de idiomas soportados, ni pesos visibles en la informacion disponible.
 
@@ -87,7 +87,7 @@ No disponible. No se ha identificado la categoria del modelo (tamano, modalidad,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Avernic/Avernic-Atlas
+- Repositorio en Hugging Face: https://huggingface.co/Avernic/Avernic-Atlas
 - Referencia de licencia declarada en la model card: fichero `LICENSE` dentro del propio repositorio (no accesible en la informacion proporcionada).
 - Web del autor u organizacion homonima (sin relacion confirmada con el modelo): https://avernic.net/development/explore
 - Otra entidad homonima (sin relacion confirmada con el modelo): https://avernic.com/

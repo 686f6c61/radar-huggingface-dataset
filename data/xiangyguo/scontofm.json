@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "xiangyguo/scOntoFM",
+  "slug": "xiangyguo-scontofm",
+  "author": "xiangyguo",
+  "url": "https://huggingface.co/xiangyguo/scOntoFM",
+  "created_at": "2026-11-05T01:52:35.000Z",
+  "updated_at": "2026-11-06T06:16:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "biology",
+    "single-cell",
+    "scRNA-seq",
+    "cell-ontology",
+    "foundation-model",
+    "feature-extraction",
+    "dataset:xiangyguo/scOntoFM-pretrain-corpus",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8867301,
+  "parameters_human": "8.9M",
+  "storage_bytes": 703005113,
+  "storage_human": "703 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xiangyguo/scOntoFM-pretrain-corpus · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/xiangyguo/scOntoFM-pretrain-corpus",
+      "snippet": "Datasets: xiangyguo / scOntoFM-pretrain-corpus Like 0 Modalities: Text Formats: arrow Languages: English Size: 10M - 100M Tags: biology single-cell scRNA-seq transcriptomics cell-ontology cellxgene + 1 Libraries: Datasets Croissant License: cc-by-4.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer (First 5GB) Auto-converted to Parquet API Embed Duplicate Data ..."
+    }
+  ]
+}

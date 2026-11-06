@@ -94,6 +94,6 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p002
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simow-lr0p002
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante. Las páginas devueltas (asistencia de Microsoft, inicio de sesión en Hotmail, blog de Microsoft Copilot, comunidad técnica de Microsoft y ajuste de frecuencia de refresco en Windows) no guardan relación con el modelo ni con la investigación sobre optimizadores.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

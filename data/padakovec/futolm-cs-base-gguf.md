@@ -3,7 +3,7 @@
 # futolm Czech base (futolm-cs-base-gguf)
 
 ## Resumen
-futolm Czech base es un modelo de lenguaje de 29.368.832 parametros (aproximadamente 29,37 M) desarrollado por Padakovec y publicado en HuggingFace como exportacion GGUF. Se trata de un modelo base preentrenado desde cero especificamente para la prediccion de la siguiente palabra en FUTO Keyboard, un teclado de codigo abierto. Su proposito no es la generacion de texto generalista, sino servir como motor de lenguaje ligero para tareas de autocompletado y prediccion de palabras en checo dentro del flujo de entrada del teclado.
+futolm Czech base es un modelo de lenguaje de 29.368.832 parametros (aproximadamente 29,37 M) desarrollado por Padakovec y publicado en Hugging Face como exportacion GGUF. Se trata de un modelo base preentrenado desde cero especificamente para la prediccion de la siguiente palabra en FUTO Keyboard, un teclado de codigo abierto. Su proposito no es la generacion de texto generalista, sino servir como motor de lenguaje ligero para tareas de autocompletado y prediccion de palabras en checo dentro del flujo de entrada del teclado.
 
 El modelo emplea una arquitectura Llama compacta: 8 capas, tamano oculto de 512, capa feed-forward de 1.024 y 8 cabezas de atencion/KV. Se entreno sobre una version depurada de Czech FineWeb2 (`ces_Latn`) y proceso 3.000.238.080 tokens (unos 3.000 millones) en 22.890 pasos, con una perdida de validacion de 2,7750 registrada en el paso 22.499. Incluye un tokenizador SentencePiece Unigram de 8.192 piezas compartido entre checo y eslovaco.
 
@@ -90,11 +90,11 @@ Los datos de las alternativas externas no forman parte de la informacion proporc
 - En produccion conviene fijar el commit nativo de FUTO Keyboard usado en la verificacion para reproducir el comportamiento validado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Padakovec/futolm-cs-base-gguf
+- Hugging Face: https://huggingface.co/Padakovec/futolm-cs-base-gguf
 - Archivo GGUF: cs_base.gguf (referenciado en el repositorio)
 - Informe de verificacion: cs_base.verify.json
 - Sumas de comprobacion: SHA256SUMS
-- Modelos compatibles con GGUF en HuggingFace: https://huggingface.co/models?library=gguf
+- Modelos compatibles con GGUF en Hugging Face: https://huggingface.co/models?library=gguf
 - Comunidad GGUF-Models: https://huggingface.co/GGUF-Models
 - Guia de GGUF y Modelfile (referencia externa): https://dev.to/lingdas1/gguf-modelfile-the-power-users-guide-to-local-llms-1fbi
 - Buscador de modelos GGUF (referencia externa): https://local-ai-zone.github.io/

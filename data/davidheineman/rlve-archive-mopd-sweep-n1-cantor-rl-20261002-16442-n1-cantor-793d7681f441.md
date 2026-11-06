@@ -4,7 +4,7 @@
 
 Este repositorio contiene un checkpoint archivado de un run de entrenamiento finalizado, publicado por el usuario davidheineman bajo el identificador `rlve-archive-mopd-sweep-n1-cantor-rl-20261002-16442-n1-cantor-793d7681f441`. Segun la model card, se trata de la preservacion del checkpoint final (paso 499) de un run identificado internamente como `mopd-sweep-n1-cantor-rl-20261002-164427`, con W&B run ID `d2501cd5` y ruta scratch original `runs/mopd-sweep-n1-cantor-rl-20261002-164427/resumable/n1-cantor`. El formato de checkpoint es `hf-safetensors` y, adicionalmente, el directorio `checkpoint/` conserva el estado exacto en formato Megatron distribuido.
 
-El modelo tiene 1.777.088.000 parametros reales, confirmados por los tensores safetensors, y una arquitectura etiquetada como `qwen2` en los metadatos de HuggingFace. El tamano del repositorio es de 3,6 GB, lo que resulta coherente con pesos almacenados en precision de 16 bits (aproximadamente 2,02 bytes por parametro). El tag `rl` y el nombre del run sugieren que el checkpoint procede de un proceso de aprendizaje por refuerzo, pero no se especifica la tarea, la funcion de recompensa ni los datos utilizados.
+El modelo tiene 1.777.088.000 parametros reales, confirmados por los tensores safetensors, y una arquitectura etiquetada como `qwen2` en los metadatos de Hugging Face. El tamano del repositorio es de 3,6 GB, lo que resulta coherente con pesos almacenados en precision de 16 bits (aproximadamente 2,02 bytes por parametro). El tag `rl` y el nombre del run sugieren que el checkpoint procede de un proceso de aprendizaje por refuerzo, pero no se especifica la tarea, la funcion de recompensa ni los datos utilizados.
 
 La relevancia de esta ficha es limitada y debe interpretarse en clave de investigacion: no hay model card descriptiva, no se declara licencia, no hay idiomas documentados, no hay pipeline asignado y el repositorio acumula cero descargas y cero likes en el momento de la consulta. Se trata de un artefacto de archivo de un barrido experimental, no de un modelo publicado para uso general.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada y debe interpretarse en clave de investi
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen2 (segun tag de HuggingFace); detalle interno no disponible |
+| Arquitectura | qwen2 (segun tag de Hugging Face); detalle interno no disponible |
 | Parametros totales | 1.777.088.000 |
 | Parametros activos | no disponible (no se declara configuracion MoE) |
 | Longitud de contexto | no disponible |
@@ -69,7 +69,7 @@ Las cifras siguientes son estimaciones calculadas a partir del numero de paramet
 - Pesos en int4 (por ejemplo Q4_K_M): aproximadamente 1,1-1,2 GB.
 - GPU recomendadas para precision completa: cualquier GPU con 8 GB o mas de VRAM, incluidas RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G. Para lotes grandes o contextos muy largos, A100 40/80 GB o H100 ofrecen margen de sobra.
 - Cabe en GPU consumer: si, en la practica totalidad de GPU consumer modernas con 8 GB o mas, incluso en precision de 16 bits.
-- Opciones de despliegue: vLLM y TGI son compatibles con el formato safetensors si la configuracion resulta ser un Qwen2 estandar. llama.cpp y Ollama requieren una conversion previa a GGUF que no se distribuye en este repositorio. El checkpoint Megatron distribuido necesita herramientas de conversion (por ejemplo, scripts de Megatron-LM a HuggingFace) antes de poder servirse.
+- Opciones de despliegue: vLLM y TGI son compatibles con el formato safetensors si la configuracion resulta ser un Qwen2 estandar. llama.cpp y Ollama requieren una conversion previa a GGUF que no se distribuye en este repositorio. El checkpoint Megatron distribuido necesita herramientas de conversion (por ejemplo, scripts de Megatron-LM a Hugging Face) antes de poder servirse.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo, TTFT ni consumo energetico.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ La diferencia fundamental no es de arquitectura ni de tamano, sino de estado de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-cantor-rl-20261002-16442-n1-cantor-793d7681f441
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-cantor-rl-20261002-16442-n1-cantor-793d7681f441
 - Run de Weights & Biases: identificador `d2501cd5` (no se proporciona URL en la informacion disponible)
 - Ruta scratch original: `runs/mopd-sweep-n1-cantor-rl-20261002-164427/resumable/n1-cantor` (referencia interna, no enlazable)
 - Paper, blog o demo asociados: no disponible

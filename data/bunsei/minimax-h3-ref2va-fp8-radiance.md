@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3-Ref2VA-FP8-Radiance es una variante experimental del modelo de generación de vídeo MiniMax-H3, publicada por el usuario Bunsei en HuggingFace. Se trata de un modelo de referencia a vídeo (Ref2VA) con soporte de imagen a vídeo, cuantizado en FP8 y orientado a la ejecución sobre hardware AMD mediante ROCm. Su modelo base es MiniMaxAI/MiniMax-H3, desarrollado por MiniMaxAI.
+MiniMax-H3-Ref2VA-FP8-Radiance es una variante experimental del modelo de generación de vídeo MiniMax-H3, publicada por el usuario Bunsei en Hugging Face. Se trata de un modelo de referencia a vídeo (Ref2VA) con soporte de imagen a vídeo, cuantizado en FP8 y orientado a la ejecución sobre hardware AMD mediante ROCm. Su modelo base es MiniMaxAI/MiniMax-H3, desarrollado por MiniMaxAI.
 
 El modelo resuelve el problema de generar vídeo a partir de una imagen o referencia, una tarea habitual en pipelines creativos de generación de contenido audiovisual. La cuantización FP8 reduce significativamente los requisitos de memoria frente a los pesos en precisión completa, haciendo viable su despliegue en configuraciones de hardware más accesibles, con especial atención a GPUs de AMD gracias al etiquetado ROCm.
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes sobre el modelo base ni sobre alternativas co
 ## Limitaciones y advertencias
 
 - El modelo esta etiquetado explicitamente como experimental: la calidad, estabilidad y reproducibilidad de los resultados no estan garantizadas.
-- El acceso es restringido (gated): hay que aceptar el acuerdo de licencia comunitaria de MiniMax en HuggingFace antes de descargar los pesos.
+- El acceso es restringido (gated): hay que aceptar el acuerdo de licencia comunitaria de MiniMax en Hugging Face antes de descargar los pesos.
 - La licencia es de tipo "other" (minimax-h3-community-license-agreement): las condiciones de uso comercial pueden estar limitadas y deben revisarse en el texto del acuerdo antes de cualquier despliegue en produccion.
 - Sin metricas de rendimiento ni benchmarks publicados: no es posible evaluar objetivamente la calidad del video generado frente a otros modelos.
 - Soporte limitado a ingles y chino; no hay informacion sobre otros idiomas en los prompts.
@@ -80,6 +80,6 @@ No se dispone de datos suficientes sobre el modelo base ni sobre alternativas co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bunsei/MiniMax-H3-Ref2VA-FP8-Radiance
+- Repositorio en Hugging Face: https://huggingface.co/Bunsei/MiniMax-H3-Ref2VA-FP8-Radiance
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - No se han encontrado enlaces adicionales (papers, blogs, demos) en la informacion disponible.

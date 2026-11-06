@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `dlsmarta/Self-distill-checkpoints-dinov3-oct2026` es una coleccion de checkpoints de investigacion publicada por el usuario dlsmarta en HuggingFace, orientada a tareas de clasificacion de imagenes mediante modelos de la familia DINOv3 y tecnicas de auto-destilacion (self-distillation). No se trata de un modelo unico, sino de un conjunto de pesos intermedios o experimentales derivados de DINOv3, empaquetados en formato compatible con la libreria `timm`.
+El repositorio `dlsmarta/Self-distill-checkpoints-dinov3-oct2026` es una coleccion de checkpoints de investigacion publicada por el usuario dlsmarta en Hugging Face, orientada a tareas de clasificacion de imagenes mediante modelos de la familia DINOv3 y tecnicas de auto-destilacion (self-distillation). No se trata de un modelo unico, sino de un conjunto de pesos intermedios o experimentales derivados de DINOv3, empaquetados en formato compatible con la libreria `timm`.
 
-La relevancia de este repositorio es acotada y de caracter investigador: no hay informacion publicada sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos. El repositorio esta marcado como de acceso restringido (gated), lo que implica que cualquier uso requiere aceptar condiciones adicionales en HuggingFace, y su licencia figura como "other", sin detalle de los terminos concretos.
+La relevancia de este repositorio es acotada y de caracter investigador: no hay informacion publicada sobre el proceso de entrenamiento, los datos utilizados ni los resultados obtenidos. El repositorio esta marcado como de acceso restringido (gated), lo que implica que cualquier uso requiere aceptar condiciones adicionales en Hugging Face, y su licencia figura como "other", sin detalle de los terminos concretos.
 
 Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto de publicacion temprana o de uso interno. La ficha que sigue documenta lo que se puede afirmar con certeza a partir de los metadatos disponibles e indica explicitamente los datos no disponibles.
 
@@ -29,7 +29,7 @@ No se dispone de informacion sobre el numero de tokens o imagenes de entrenamien
 
 ## Capacidades
 
-- Clasificacion de imagenes: el pipeline declarado en HuggingFace es `image-classification`.
+- Clasificacion de imagenes: el pipeline declarado en Hugging Face es `image-classification`.
 - Extraccion de caracteristicas visuales: por herencia de la familia DINOv3, cabe esperar representaciones utiles para tareas downstream, aunque no se documenta explicitamente.
 - Auto-destilacion: los checkpoints estan asociados a un proceso de destilacion, presumiblemente para comprimir o estabilizar el modelo.
 - Capacidades multimodales, tool calling, agentes o modos de razonamiento: no disponibles; se trata de un modelo de vision, no de un LLM.
@@ -42,7 +42,7 @@ No se dispone de informacion sobre el numero de tokens o imagenes de entrenamien
 - Clasificacion de imagenes en prototipos: al estar integrado en `timm`, puede cargarse en pipelines de PyTorch para tareas de clasificacion exploratorias.
 - Base para fine-tuning downstream: los pesos pueden servir como inicializacion para tareas especificas de vision, siempre que la licencia lo permita.
 - Extraccion de embeddings visuales para busqueda o clustering: si los checkpoints conservan las propiedades de DINOv3, podrian usarse como extractores de caracteristicas, aunque esto no esta verificado.
-- Docencia y formacion: util como ejemplo practico de publicacion de checkpoints de investigacion en HuggingFace con acceso restringido.
+- Docencia y formacion: util como ejemplo practico de publicacion de checkpoints de investigacion en Hugging Face con acceso restringido.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | dlsmarta/Self-distill-checkpoints-dinov3-oct2026 | no disponible | no aplica | no disponible | other | gated |
-| DINOv3 (modelo base oficial) | no disponible en esta ficha | no aplica | no disponible en esta ficha | no disponible en esta ficha | publico en HuggingFace |
+| DINOv3 (modelo base oficial) | no disponible en esta ficha | no aplica | no disponible en esta ficha | no disponible en esta ficha | publico en Hugging Face |
 | Otros checkpoints de investigacion de la familia DINOv2/DINOv3 | no disponible | no aplica | no disponible | variable | variable |
 
 La comparacion cuantitativa no es posible con la informacion proporcionada; los modelos de referencia se listan solo por categoria.
@@ -70,7 +70,7 @@ La comparacion cuantitativa no es posible con la informacion proporcionada; los 
 
 - Ausencia total de documentacion: no hay model card con detalles de entrenamiento, datos, metricas ni uso previsto.
 - Licencia "other" sin terminos explicitos: el uso comercial es incierto y requiere revision manual de las condiciones.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Riesgo de sesgos: al no documentarse los datos de entrenamiento, no se pueden evaluar sesgos de genero, raza u otros.
 - Riesgo de alucinacion: no aplica en el sentido de LLM, pero si existe riesgo de clasificaciones erroneas sin calibracion documentada.
 - Checkpoints de investigacion: no estan validados para produccion y pueden representar estados intermedios no optimizados.
@@ -79,5 +79,5 @@ La comparacion cuantitativa no es posible con la informacion proporcionada; los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dlsmarta/Self-distill-checkpoints-dinov3-oct2026
+- Hugging Face: https://huggingface.co/dlsmarta/Self-distill-checkpoints-dinov3-oct2026
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

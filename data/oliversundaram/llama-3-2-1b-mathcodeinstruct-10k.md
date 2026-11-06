@@ -89,7 +89,7 @@ Los datos de Qwen2.5 y TinyLlama no se han verificado en esta ficha; se indican 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OliverSundaram/Llama-3.2-1B-MathCodeInstruct-10k
+- Modelo en Hugging Face: https://huggingface.co/OliverSundaram/Llama-3.2-1B-MathCodeInstruct-10k
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B
 - Dataset MathCodeInstruct: https://huggingface.co/datasets/MathLLMs/MathCodeInstruct
 - Licencia Llama 3.2: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE

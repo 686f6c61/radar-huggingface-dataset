@@ -65,15 +65,15 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - Pesos en safetensors: el archivo `model.safetensors` ocupa 1.504.827.608 bytes (unos 1,4 GB), lo que requiere alrededor de 2 GB de VRAM en precisión completa más margen para el contexto.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o más de VRAM es suficiente; cabe en RTX 3060, RTX 4060, RTX 4090 y en iGPU con memoria unificada suficiente. Para despliegue en servidor, A100 y H100 son sobredimensionadas para este tamaño.
 - Cabe en GPU consumer: sí, con holgura en cualquier tarjeta con 4 GB o más.
-- Opciones de despliegue: Ollama (build oficial publicado por el autor), llama.cpp para los GGUF, y servidores compatibles con endpoints de HuggingFace. No se documenta soporte específico de vLLM o TGI.
+- Opciones de despliegue: Ollama (build oficial publicado por el autor), llama.cpp para los GGUF, y servidores compatibles con endpoints de Hugging Face. No se documenta soporte específico de vLLM o TGI.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxOS-Kernel-0.8B | 0,8B | No disponible (entrenamiento a 2048) | Triaje OS/kernel destilado | Apache-2.0 | HuggingFace y Ollama |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Modelo generalista | No disponible en la información | HuggingFace |
+| ThoxOS-Kernel-0.8B | 0,8B | No disponible (entrenamiento a 2048) | Triaje OS/kernel destilado | Apache-2.0 | Hugging Face y Ollama |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Modelo generalista | No disponible en la información | Hugging Face |
 | ThoxOS-Kernel-27B (profesor) | 27B | No disponible | Triaje OS/kernel de nivel host | No disponible en la información | Repositorio Thox-ai |
 
 La comparación con alternativas de la misma categoría (modelos de triaje OS/kernel de menos de mil millones de parámetros) no está disponible en la información proporcionada.
@@ -91,9 +91,9 @@ La comparación con alternativas de la misma categoría (modelos de triaje OS/ke
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxOS-Kernel-0.8B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxOS-Kernel-0.8B
 - Ollama: https://ollama.com/Thox-ai/thoxos-kernel-0.8b
 - Fábrica de modelos THOX: https://www.thox.ai/models
-- Colección de investigación en HuggingFace: https://huggingface.co/collections/Thox-ai/thox-research-and-from-scratch-models-6ae751ac6a7f2517f6072f69
+- Colección de investigación en Hugging Face: https://huggingface.co/collections/Thox-ai/thox-research-and-from-scratch-models-6ae751ac6a7f2517f6072f69
 - Campaña Kickstarter de THOX: https://www.kickstarter.com/projects/thox/four-devices-one-private-ai-ecosystem-thoxai
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

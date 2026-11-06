@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniRelax es, según la información disponible, una plataforma de despliegue privado para el entrenamiento, alineación, memoria, evaluación e inferencia de modelos de lenguaje de gran tamaño (LLM), desarrollada por Suzhou Yunzhi AI Health Technology Co., Ltd. No se trata de un modelo de lenguaje en sí, sino de un sistema que permite gestionar flujos de trabajo completos para modelos Decoder-only en un rango de parámetros de 0.5B a 14B. El repositorio de HuggingFace con el identificador `MiniRelax/MiniRelax` no contiene una model card sustancial, solo la licencia Apache 2.0, y no se proporcionan pesos, arquitectura ni documentación técnica del modelo. Por tanto, esta ficha se centra en la plataforma y en la ausencia de datos concretos sobre un modelo específico.
+MiniRelax es, según la información disponible, una plataforma de despliegue privado para el entrenamiento, alineación, memoria, evaluación e inferencia de modelos de lenguaje de gran tamaño (LLM), desarrollada por Suzhou Yunzhi AI Health Technology Co., Ltd. No se trata de un modelo de lenguaje en sí, sino de un sistema que permite gestionar flujos de trabajo completos para modelos Decoder-only en un rango de parámetros de 0.5B a 14B. El repositorio de Hugging Face con el identificador `MiniRelax/MiniRelax` no contiene una model card sustancial, solo la licencia Apache 2.0, y no se proporcionan pesos, arquitectura ni documentación técnica del modelo. Por tanto, esta ficha se centra en la plataforma y en la ausencia de datos concretos sobre un modelo específico.
 
 La relevancia de MiniRelax radica en su orientación a escenarios de despliegue privado, como bases de conocimiento internas, asistentes inteligentes y aplicaciones de información sanitaria y bienestar. Al ser una plataforma, su valor está en la integración de herramientas de entrenamiento y evaluación, más que en un modelo concreto. No se dispone de información sobre arquitectura, tamaño, contexto o capacidades de ningún modelo asociado, por lo que los datos técnicos específicos no están disponibles.
 
@@ -54,7 +54,7 @@ No disponible. No se ha identificado ningún modelo comparable, ya que MiniRelax
 
 ## Limitaciones y advertencias
 
-- La información pública es extremadamente limitada: la model card de HuggingFace no contiene descripción, arquitectura, pesos ni documentación técnica.
+- La información pública es extremadamente limitada: la model card de Hugging Face no contiene descripción, arquitectura, pesos ni documentación técnica.
 - No se puede verificar la existencia de un modelo funcional bajo el nombre MiniRelax; el repositorio de GitHub describe una plataforma, no un modelo.
 - No se conocen sesgos, riesgos de alucinación o limitaciones de contexto, ya que no hay datos sobre el modelo subyacente.
 - La licencia Apache 2.0 permite uso comercial, pero al no haber pesos ni documentación, no es posible utilizarla directamente.
@@ -62,6 +62,6 @@ No disponible. No se ha identificado ningún modelo comparable, ya que MiniRelax
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/MiniRelax/MiniRelax
+- Repositorio de Hugging Face: https://huggingface.co/MiniRelax/MiniRelax
 - Repositorio de GitHub: https://github.com/YunzhiAI-0519/MiniRelax
 - README en chino: https://github.com/YunzhiAI-0519/MiniRelax/blob/main/README.zh-CN.md

@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LibreYOLO/LibreDeepSeekOCR1
+- Repositorio Hugging Face: https://huggingface.co/LibreYOLO/LibreDeepSeekOCR1
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR
 - Paper: https://arxiv.org/abs/2510.18234
 - Código del modelo original: https://github.com/deepseek-ai/DeepSeek-OCR

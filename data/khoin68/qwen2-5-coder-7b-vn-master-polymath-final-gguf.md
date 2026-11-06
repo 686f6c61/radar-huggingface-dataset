@@ -78,7 +78,7 @@ La principal diferencia es el enfoque en vietnamita, que no ofrecen las alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF
+- Modelo en Hugging Face: https://huggingface.co/khoin68/Qwen2.5-Coder-7B-VN-Master-Polymath-FINAL-GGUF
 - Repositorio relacionado (variante sin FINAL): https://huggingface.co/khoin68/Qwen2.5-Coder-7B-Vietnamese-GGUF
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio oficial de Qwen2.5-Coder: https://github.com/huggingface/Qwen2.5-Coder

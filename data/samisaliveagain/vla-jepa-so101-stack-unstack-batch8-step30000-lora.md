@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VLA-JEPA LoRA SO-101 (este) | 3.104,6 M totales; 334,3 M entrenables | no disponible | Stack/unstack SO-101 6 DoF | Apache 2.0 | HuggingFace, 30 descargas |
-| `lerobot/VLA-JEPA-Pretrain` (base) | 3.104,6 M | no disponible | Politica VLA general preentrenada | no disponible en la informacion | HuggingFace |
+| VLA-JEPA LoRA SO-101 (este) | 3.104,6 M totales; 334,3 M entrenables | no disponible | Stack/unstack SO-101 6 DoF | Apache 2.0 | Hugging Face, 30 descargas |
+| `lerobot/VLA-JEPA-Pretrain` (base) | 3.104,6 M | no disponible | Politica VLA general preentrenada | no disponible en la informacion | Hugging Face |
 | Otros modelos VLA open source | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de rendimiento de alternativas comparables, por lo que no es posible establecer una comparacion cuantitativa de benchmarks. La comparacion con el modelo base es estructural: este checkpoint anade adaptadores LoRA y entrena cabeza de accion y predictor de video, pero no modifica el backbone Qwen3-VL ni el codificador V-JEPA2.
@@ -93,7 +93,7 @@ La informacion proporcionada no incluye datos de rendimiento de alternativas com
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Samisaliveagain/vla-jepa-so101-stack-unstack-batch8-step30000-lora
+- Hugging Face del modelo: https://huggingface.co/Samisaliveagain/vla-jepa-so101-stack-unstack-batch8-step30000-lora
 - Modelo base: https://huggingface.co/lerobot/VLA-JEPA-Pretrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/Samisaliveagain/so101_wm
 - Perfil del autor principal: https://huggingface.co/Samisaliveagain

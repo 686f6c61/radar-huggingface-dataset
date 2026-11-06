@@ -4,7 +4,7 @@
 
 Diorite-G4-12B-v0.1 es un adaptador LoRA publicado por el usuario Leucodiorite sobre el modelo base google/gemma-4-12B-it. Se distribuye a traves de la libreria PEFT y esta orientado a tareas de decision, segun la etiqueta `decision` asociada al repositorio. El artefacto publicado no contiene los pesos completos del modelo, sino unicamente los pesos del adaptador en formato safetensors, con un tamano de repositorio de aproximadamente 1,0 GB.
 
-El modelo hereda la arquitectura y las capacidades del base Gemma 4 de 12B en su variante instruida, si bien la informacion publica disponible sobre el adaptador es minima: no se detallan idiomas soportados, pipeline de inferencia ni resultados de evaluacion. El acceso esta restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+El modelo hereda la arquitectura y las capacidades del base Gemma 4 de 12B en su variante instruida, si bien la informacion publica disponible sobre el adaptador es minima: no se detallan idiomas soportados, pipeline de inferencia ni resultados de evaluacion. El acceso esta restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 La relevancia de esta publicacion es limitada y experimental: se trata de un adaptador de bajo difusion (0 descargas, 0 likes en el momento de la consulta) que puede resultar util como referencia para quienes trabajen con ajuste fino mediante LoRA sobre la familia Gemma 4, pero que no debe considerarse un modelo listo para produccion sin una evaluacion propia.
 
@@ -73,13 +73,13 @@ No se dispone de datos de rendimiento del adaptador para una comparacion cuantit
 - Ausencia total de documentacion: no hay model card con detalles de entrenamiento, datos, hiperparametros ni evaluacion.
 - Riesgo elevado de alucinacion y comportamiento impredecible al no existir validacion publica del ajuste.
 - Idiomas soportados no confirmados; el comportamiento multilingue depende del base y del dataset de ajuste, desconocido.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad.
 - Licencia Apache 2.0 declarada para el adaptador, pero el uso del base Gemma 4 esta sujeto a los terminos de Google; conviene revisar ambas licencias antes de un uso comercial.
 - Sin mantenimiento aparente ni comunidad (0 descargas, 0 likes): no hay garantia de soporte ni actualizaciones.
 - No recomendado para produccion sin una evaluacion exhaustiva propia en el dominio objetivo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Leucodiorite/Diorite-G4-12B-v0.1
+- Hugging Face: https://huggingface.co/Leucodiorite/Diorite-G4-12B-v0.1
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Libreria PEFT: https://github.com/huggingface/peft

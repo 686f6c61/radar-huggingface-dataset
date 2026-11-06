@@ -71,9 +71,9 @@ Delta de DWQ (epoca 2) frente a RTN: KL -39%, coincidencia top-1 +5,13 puntos, p
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hermitdave/LFM3-1.7B-MLX-DWQ-4bit | 1,73B | no disponible | 4 bits DWQ (MLX) | LFM Open License v1.0 | HuggingFace, MLX |
-| LiquidAI/LFM3-1.7B-MLX-4bit | 1,73B | no disponible | 4 bits RTN (MLX) | LFM Open License v1.0 | HuggingFace, MLX |
-| LiquidAI/LFM3-1.7B | 1,73B | no disponible | BF16 | LFM Open License v1.0 | HuggingFace |
+| hermitdave/LFM3-1.7B-MLX-DWQ-4bit | 1,73B | no disponible | 4 bits DWQ (MLX) | LFM Open License v1.0 | Hugging Face, MLX |
+| LiquidAI/LFM3-1.7B-MLX-4bit | 1,73B | no disponible | 4 bits RTN (MLX) | LFM Open License v1.0 | Hugging Face, MLX |
+| LiquidAI/LFM3-1.7B | 1,73B | no disponible | BF16 | LFM Open License v1.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base porque no se dispone de datos de rendimiento en tareas que permitan contrastarlo con alternativas de otros autores. Frente a la cuantizacion RTN oficial, esta version mejora la fidelidad al BF16 (KL 0,1181 frente a 0,1946) con el mismo tamano de pesos.
 
@@ -91,7 +91,7 @@ La comparativa se limita a las variantes del mismo modelo base porque no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/LFM3-1.7B-MLX-DWQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/LFM3-1.7B-MLX-DWQ-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Cuantizacion RTN de referencia: https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-4bit
 - Licencia: LICENSE (referenciado en la model card, no se proporciona URL directa)

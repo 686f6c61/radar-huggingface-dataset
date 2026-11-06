@@ -75,7 +75,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cl
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Adi2309005/meld-conversational-sentiment)
+- [Hugging Face del modelo](https://huggingface.co/Adi2309005/meld-conversational-sentiment)
 - [Modelo base distilroberta-base](https://huggingface.co/distilroberta-base)
 - [GitHub del dataset MELD](https://github.com/declare-lab/MELD)
 - [Pagina del dataset MELD](https://affective-meld.github.io/)

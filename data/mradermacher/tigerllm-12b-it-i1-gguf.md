@@ -69,9 +69,9 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 | Modelo | Parametros | Formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/TigerLLM-12B-it-i1-GGUF (este) | 11,77 B | GGUF con imatrix (24 tipos) | bn, en | cc-by-4.0 | Público en HuggingFace, 0 descargas, 0 likes |
-| md-nishat-008/TigerLLM-12B-it (modelo base) | 11,77 B | safetensors (transformers) | bn, en | cc-by-4.0 según la model card citada | Público en HuggingFace |
-| mradermacher/TigerLLM-12B-it-GGUF | 11,77 B | GGUF estático (sin imatrix) | bn, en | cc-by-4.0 | Público en HuggingFace |
+| mradermacher/TigerLLM-12B-it-i1-GGUF (este) | 11,77 B | GGUF con imatrix (24 tipos) | bn, en | cc-by-4.0 | Público en Hugging Face, 0 descargas, 0 likes |
+| md-nishat-008/TigerLLM-12B-it (modelo base) | 11,77 B | safetensors (transformers) | bn, en | cc-by-4.0 según la model card citada | Público en Hugging Face |
+| mradermacher/TigerLLM-12B-it-GGUF | 11,77 B | GGUF estático (sin imatrix) | bn, en | cc-by-4.0 | Público en Hugging Face |
 | Otros modelos de 12 B de instrucciones (por ejemplo, la familia Gemma 3 de tamaño equivalente) | no disponible para esta comparativa | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables específicos para bengalí dentro de la documentación proporcionada.
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables específicos para bengal
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/TigerLLM-12B-it-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/TigerLLM-12B-it-i1-GGUF
 - Modelo base: https://huggingface.co/md-nishat-008/TigerLLM-12B-it
 - Repositorio de cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/TigerLLM-12B-it-GGUF
 - Dataset de ajuste: https://huggingface.co/datasets/md-nishat-008/Bangla-Instruct

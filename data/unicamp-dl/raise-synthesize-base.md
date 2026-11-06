@@ -68,7 +68,7 @@ No se dispone de información sobre adaptadores comparables de la misma organiza
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/unicamp-dl/RAISE-SYNTHESIZE-Base)
-- [Organización unicamp-dl en HuggingFace](https://huggingface.co/unicamp-dl)
+- [Hugging Face del modelo](https://huggingface.co/unicamp-dl/RAISE-SYNTHESIZE-Base)
+- [Organización unicamp-dl en Hugging Face](https://huggingface.co/unicamp-dl)
 - [Paper de referencia sobre emisiones de carbono (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700) - citado en la model card, aunque no describe el modelo.
 - [Repositorio RAISE (dataset de evaluación de realismo de imágenes)](https://github.com/annimukherjee/RAISE) - no relacionado directamente con este adaptador de texto.

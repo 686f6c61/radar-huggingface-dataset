@@ -84,7 +84,7 @@ No se dispone de comparativas con otros modelos abliterados de la misma categor�
 
 ## Enlaces
 
-- [HuggingFace - allura-forge/Qwen3.8-27B-Jabliterated-k1024-LoRA](https://huggingface.co/allura-forge/Qwen3.8-27B-Jabliterated-k1024-LoRA)
+- [Hugging Face - allura-forge/Qwen3.8-27B-Jabliterated-k1024-LoRA](https://huggingface.co/allura-forge/Qwen3.8-27B-Jabliterated-k1024-LoRA)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Guía completa de Qwen3.8-27B (2026)](https://lovableapp.org/blog/qwen3-8-27b)
 - [Guía para ejecutar Qwen3.8-27B localmente](https://modelfit.io/blog/run-qwen38-27b-locally-2026/)

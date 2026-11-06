@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Asad024/Sales` es un repositorio publicado en HuggingFace por el usuario Asad024. La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. No se dispone de información sobre el pipeline, los idiomas soportados ni el propósito declarado del modelo, por lo que no es posible confirmar que se trate de un modelo entrenado y funcional frente a un repositorio de prueba o un artefacto incompleto.
+El modelo identificado como `Asad024/Sales` es un repositorio publicado en Hugging Face por el usuario Asad024. La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni instrucciones de uso. No se dispone de información sobre el pipeline, los idiomas soportados ni el propósito declarado del modelo, por lo que no es posible confirmar que se trate de un modelo entrenado y funcional frente a un repositorio de prueba o un artefacto incompleto.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma marca temporal (26 de octubre de 2026), lo que sugiere una publicación única sin mantenimiento posterior. La ausencia de pesos documentados, de configuración de tokenizador o de cualquier especificación técnica impide evaluar su idoneidad para tareas de generación, clasificación u otras.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 - Evaluación exploratoria de repositorios: dado que la model card está vacía, el único uso verificable sería inspeccionar los archivos del repositorio para determinar si contiene pesos utilizables, un tokenizador o únicamente metadatos.
 - Auditoría de licencias: el repositorio declara licencia MIT, por lo que podría incorporarse a un inventario de activos con licencia permisiva, siempre que se confirme la existencia de artefactos reales.
 - Docencia sobre publicación de modelos: puede emplearse como ejemplo de repositorio con documentación insuficiente para ilustrar buenas prácticas de model cards.
-- Pruebas de integración de pipelines de HuggingFace: sirve para validar el comportamiento de herramientas que consumen metadatos de repositorios incompletos.
+- Pruebas de integración de pipelines de Hugging Face: sirve para validar el comportamiento de herramientas que consumen metadatos de repositorios incompletos.
 - Seguimiento de ecosistema: útil para monitorizar publicaciones nuevas de autores emergentes, aunque sin garantías de calidad o mantenimiento.
 - No se recomienda su uso en producción, atención al cliente, generación de código ni ninguna tarea sustantiva sin antes verificar los artefactos y realizar una evaluación propia.
 
@@ -73,4 +73,4 @@ No disponible. No se dispone de información sobre parámetros, contexto o rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Asad024/Sales
+- Hugging Face: https://huggingface.co/Asad024/Sales

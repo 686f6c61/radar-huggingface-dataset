@@ -2,7 +2,7 @@
 
 ## Resumen
 
-legal-chatbot-finetuned es un ajuste fino de tipo instruct orientado a conversación de dominio legal, publicado por el usuario aletta2206 en HuggingFace. El modelo parte de unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit, la versión del Qwen2.5-1.5B-Instruct ya cuantizada a 4 bits por Unsloth, y se ha entrenado con la librería Unsloth junto a TRL, según declara la propia model card. Cuenta con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) en formato safetensors, con un repositorio de 3,1 GB.
+legal-chatbot-finetuned es un ajuste fino de tipo instruct orientado a conversación de dominio legal, publicado por el usuario aletta2206 en Hugging Face. El modelo parte de unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit, la versión del Qwen2.5-1.5B-Instruct ya cuantizada a 4 bits por Unsloth, y se ha entrenado con la librería Unsloth junto a TRL, según declara la propia model card. Cuenta con 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) en formato safetensors, con un repositorio de 3,1 GB.
 
 El modelo resuelve, en principio, la tarea de generar respuestas conversacionales en inglés sobre temática jurídica, aunque la model card no documenta ni el dataset de ajuste ni el proceso de alineación. La arquitectura es la de Qwen2, un transformer decoder-only denso con atención causal, y hereda de la familia Qwen2.5 una ventana de contexto nativa de 32.768 tokens (ampliable a 131.072 con YaRN), dato que proviene de la documentación pública del modelo base y no de la ficha del autor.
 
@@ -70,11 +70,11 @@ Los datos de los modelos de referencia proceden de su documentación pública y 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aletta2206/legal-chatbot-finetuned | 1,54B | 32.768 (heredado, sin confirmar) | Apache 2.0 | HuggingFace, safetensors |
-| Qwen2.5-1.5B-Instruct (modelo base) | 1,54B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente soportado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | HuggingFace |
-| Gemma-2-2B-it | 2,6B | 8.192 | Gemma Terms (uso comercial permitido con condiciones) | HuggingFace |
-| TinyLlama-1.1B-Chat | 1,1B | 2.048 | Apache 2.0 | HuggingFace |
+| aletta2206/legal-chatbot-finetuned | 1,54B | 32.768 (heredado, sin confirmar) | Apache 2.0 | Hugging Face, safetensors |
+| Qwen2.5-1.5B-Instruct (modelo base) | 1,54B | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente soportado |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 | Apache 2.0 | Hugging Face |
+| Gemma-2-2B-it | 2,6B | 8.192 | Gemma Terms (uso comercial permitido con condiciones) | Hugging Face |
+| TinyLlama-1.1B-Chat | 1,1B | 2.048 | Apache 2.0 | Hugging Face |
 
 Comparativa de rendimiento: no disponible. No existen benchmarks publicados del modelo ajustado y no se puede asumir que el fine-tune preserve las capacidades del Qwen2.5-1.5B-Instruct original; el ajuste con QLoRA sobre datasets pequeños suele producir olvido catastrófico parcial.
 
@@ -94,9 +94,9 @@ Comparativa de rendimiento: no disponible. No existen benchmarks publicados del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aletta2206/legal-chatbot-finetuned
+- Modelo en Hugging Face: https://huggingface.co/aletta2206/legal-chatbot-finetuned
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentación de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio de llama.cpp para conversión a GGUF: https://github.com/ggerganov/llama.cpp

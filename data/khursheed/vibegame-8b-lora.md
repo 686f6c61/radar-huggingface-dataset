@@ -78,8 +78,8 @@ Cada prompt recibe una única generación, sin reparaciones ni reintentos. JSON 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VibeGame-8B-LoRA | 7,61 mil millones (adaptador LoRA sobre Qwen2.5-Coder-7B-Instruct) | no disponible | Generación de proyectos Godot 4 en JSON (project.godot, escena, GDScript) a partir de lenguaje natural | apache-2.0 | Adaptador PEFT, pesos fusionados FP16 y GGUF Q4_K_M en HuggingFace |
-| Qwen2.5-Coder-7B-Instruct (base) | 7,61 mil millones | no verificado en la información proporcionada | Generación de código y conversación de propósito general | apache-2.0 | HuggingFace, ampliamente desplegado |
+| VibeGame-8B-LoRA | 7,61 mil millones (adaptador LoRA sobre Qwen2.5-Coder-7B-Instruct) | no disponible | Generación de proyectos Godot 4 en JSON (project.godot, escena, GDScript) a partir de lenguaje natural | apache-2.0 | Adaptador PEFT, pesos fusionados FP16 y GGUF Q4_K_M en Hugging Face |
+| Qwen2.5-Coder-7B-Instruct (base) | 7,61 mil millones | no verificado en la información proporcionada | Generación de código y conversación de propósito general | apache-2.0 | Hugging Face, ampliamente desplegado |
 | Adaptadores LoRA comparables de generación de proyectos Godot | no disponible | no disponible | no disponible | no disponible | no se han identificado alternativas equivalentes en la información proporcionada |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores de la misma categoría. El proyecto VibeGame de tettethu, que aparece en los resultados de búsqueda, es un framework multiagente homónimo y no guarda relación con este modelo.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores de la mi
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/khursheed/VibeGame-8B-LoRA
+- Adaptador LoRA en Hugging Face: https://huggingface.co/khursheed/VibeGame-8B-LoRA
 - Pesos fusionados en FP16: https://huggingface.co/khursheed/VibeGame-8B
 - Repositorio GGUF (Q4_K_M y Modelfile): https://huggingface.co/khursheed/VibeGame-8B-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/khursheed/VibeGame-8B-data

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/qwen3-14b-squad-ratio-0.80-seed-42` es un repositorio de pesos publicado en HuggingFace por el usuario AlinaGonch, con fecha de creación del 20 de septiembre de 2026. A pesar de lo que sugiere su identificador, la model card asociada es la plantilla automática de HuggingFace sin ningún campo cumplimentado: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Se trata, por tanto, de un artefacto sin documentación verificable.
+`AlinaGonch/qwen3-14b-squad-ratio-0.80-seed-42` es un repositorio de pesos publicado en Hugging Face por el usuario AlinaGonch, con fecha de creación del 20 de septiembre de 2026. A pesar de lo que sugiere su identificador, la model card asociada es la plantilla automática de Hugging Face sin ningún campo cumplimentado: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Se trata, por tanto, de un artefacto sin documentación verificable.
 
 El nombre del repositorio indica que se trata probablemente de un ajuste fino del modelo base Qwen3-14B sobre el conjunto de datos SQuAD, conservando únicamente una fracción de 0,80 del mismo y ejecutado con la semilla aleatoria 42. Este patrón de nomenclatura es habitual en experimentos académicos de ablación, estudiando efectos de submuestreo del conjunto de entrenamiento, robustez o aprendizaje incremental. Ninguno de estos extremos está confirmado por el autor en la información disponible.
 
@@ -63,7 +63,7 @@ Las siguientes cifras son estimaciones generales para un modelo denso de aproxim
 - VRAM estimada en cuantización de 4 bits: aproximadamente 8-10 GB, viable en GPUs consumer de gama alta.
 - GPUs de centro de datos recomendadas: A100 40 GB, A100 80 GB, H100 80 GB, L40S 48 GB.
 - GPUs consumer compatibles: RTX 4090 o RTX 3090 (24 GB) en 4 u 8 bits; en bf16 completo no cabe en ninguna GPU consumer de una sola tarjeta.
-- Opciones de despliegue: vLLM o TGI para servicio en bf16 con GPUs de centro de datos; llama.cpp, Ollama o LM Studio para cuantizaciones GGUF en local; el repositorio está etiquetado como compatible con endpoints de HuggingFace.
+- Opciones de despliegue: vLLM o TGI para servicio en bf16 con GPUs de centro de datos; llama.cpp, Ollama o LM Studio para cuantizaciones GGUF en local; el repositorio está etiquetado como compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo, TTFT ni rendimiento por lote.
 - Advertencia: con 0,3 GB de tamano de repositorio, es probable que los pesos estén incompletos. Antes de planificar cualquier despliegue debe verificarse que el punto de control carga correctamente con `transformers` y que el número y la forma de los tensores son coherentes con un modelo de 14B.
 
@@ -82,7 +82,7 @@ La comparación con las alternativas no es concluyente: un modelo ajustado sobre
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace sin rellenar, por lo que se desconocen procedencia, objetivos y condiciones de uso previstas.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face sin rellenar, por lo que se desconocen procedencia, objetivos y condiciones de uso previstas.
 - Licencia no declarada: sin licencia explícita no hay autorización clara para uso comercial ni para redistribución; debe contactarse con el autor antes de cualquier uso en producción.
 - Riesgo de pesos incompletos o corruptos: 0,3 GB es un tamano incompatible con pesos completos de 14B en cualquier precisión habitual, lo que apunta a un adaptador, un shard parcial o una subida truncada.
 - Riesgo alto de alucinación y de deriva fuera de dominio: un ajuste fino estrecho sobre SQuAD puede degradar la generación libre, el razonamiento y el multilingüismo del modelo base (olvido catastrófico), pero este extremo no ha sido medido.
@@ -94,7 +94,7 @@ La comparación con las alternativas no es concluyente: un modelo ajustado sobre
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.80-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.80-seed-42
 - Artículo citado en las etiquetas del repositorio (Lacoste et al., 2019, calculador de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Modelo base al que apunta el identificador, como referencia no confirmada: https://huggingface.co/Qwen/Qwen3-14B
 - Conjunto de datos SQuAD, como referencia del ajuste sugerido por el nombre: https://huggingface.co/datasets/squad

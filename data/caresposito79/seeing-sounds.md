@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seeing sounds es un experimento de interpretabilidad y control de activaciones (activation steering) publicado como repositorio de HuggingFace por el usuario caresposito79. No es un modelo entrenado ni un conjunto de pesos: es un script (`seeing_sounds.py`) que carga Qwen2.5-1.5B-Instruct y manipula sus activaciones internas en tiempo de inferencia para inducir un sesgo hacia vocabulario de color cuando el modelo habla de sonidos. La idea central es "hacer que el modelo vea sonidos" sin reentrenar nada.
+Seeing sounds es un experimento de interpretabilidad y control de activaciones (activation steering) publicado como repositorio de Hugging Face por el usuario caresposito79. No es un modelo entrenado ni un conjunto de pesos: es un script (`seeing_sounds.py`) que carga Qwen2.5-1.5B-Instruct y manipula sus activaciones internas en tiempo de inferencia para inducir un sesgo hacia vocabulario de color cuando el modelo habla de sonidos. La idea central es "hacer que el modelo vea sonidos" sin reentrenar nada.
 
 El método tiene tres piezas: una dirección "color menos sonido" calculada a partir de 12 pares de frases gemelas que solo difieren en el sentido (una sobre color, otra sobre sonido) leídas en la capa 14 de 28; una neurona extra junto a esa capa que se activa únicamente cuando el modelo trata un sonido, con un umbral y una dosis ajustables; y una suma de esa dirección multiplicada por la dosis sobre las activaciones cuando la neurona está encendida. Los pesos del modelo no se modifican: al retirar la neurona, las respuestas vuelven a ser idénticas, algo que el propio script verifica.
 
@@ -19,7 +19,7 @@ El interés del trabajo es doble. Por un lado, es una demostración reproducible
 | Tipos de cuantizacion | no disponible; el script trabaja en bfloat16 |
 | Idiomas soportados | ingles (en) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible; no se publican pesos, solo el script que descarga Qwen2.5-1.5B-Instruct desde HuggingFace |
+| Formato de pesos | no disponible; no se publican pesos, solo el script que descarga Qwen2.5-1.5B-Instruct desde Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -96,6 +96,6 @@ No se dispone de datos de rendimiento comparables entre estos artefactos en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/caresposito79/seeing-sounds
+- Repositorio en Hugging Face: https://huggingface.co/caresposito79/seeing-sounds
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

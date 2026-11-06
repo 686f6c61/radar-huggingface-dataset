@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `TenjinDas/Test` aloja un modelo de inteligencia artificial publicado en HuggingFace, pero no se dispone de información técnica pública sobre su arquitectura, parámetros, entrenamiento o capacidades. El autor es el usuario `TenjinDas`, el repositorio tiene 8.327 descargas y 0 likes, y fue creado en agosto de 2026 con una última actualización en septiembre del mismo año. El tamaño del repositorio es de 13,7 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, pero sin documentación adicional no es posible confirmar su naturaleza ni su utilidad.
+El repositorio `TenjinDas/Test` aloja un modelo de inteligencia artificial publicado en Hugging Face, pero no se dispone de información técnica pública sobre su arquitectura, parámetros, entrenamiento o capacidades. El autor es el usuario `TenjinDas`, el repositorio tiene 8.327 descargas y 0 likes, y fue creado en agosto de 2026 con una última actualización en septiembre del mismo año. El tamaño del repositorio es de 13,7 GB, lo que sugiere que podría tratarse de un modelo de gran tamaño, pero sin documentación adicional no es posible confirmar su naturaleza ni su utilidad.
 
 La relevancia de este repositorio es actualmente nula desde el punto de vista técnico, ya que carece de ficha de modelo, licencia, idiomas soportados o cualquier otro metadato que permita evaluarlo. Los resultados de búsqueda web relacionados con incidentes de seguridad en modelos de IA (Meta, OpenAI, Anthropic) no tienen conexión directa con este repositorio, por lo que no aportan información sobre el mismo. Se recomienda precaución antes de descargar o utilizar este modelo, dado que no hay garantías de su procedencia ni de su comportamiento.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TenjinDas/Test
+- Repositorio en Hugging Face: https://huggingface.co/TenjinDas/Test

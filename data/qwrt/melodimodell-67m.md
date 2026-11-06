@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwrt/Melodimodell-67M | 67.389.952 | 8192 caracteres | Generación simbólica de melodías | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| qwrt/Melodimodell-1M | No disponible | No disponible | Generación simbólica de melodías (misma familia) | No disponible | HuggingFace |
+| qwrt/Melodimodell-67M | 67.389.952 | 8192 caracteres | Generación simbólica de melodías | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| qwrt/Melodimodell-1M | No disponible | No disponible | Generación simbólica de melodías (misma familia) | No disponible | Hugging Face |
 | "Midimodell-67.390M" (índice de Essa Mamdani) | 67,390M | No listado | Generación de texto / MIDI | No listado | Índice de terceros; parece referirse al mismo modelo |
 | Modelos generalistas tipo Qwen3 de tamaño pequeño | No disponible en esta ficha | No disponible en esta ficha | Texto general | No disponible en esta ficha | No disponible |
 
@@ -98,11 +98,11 @@ No se dispone de datos de rendimiento de las alternativas para establecer una co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qwrt/Melodimodell-67M
+- Modelo en Hugging Face: https://huggingface.co/qwrt/Melodimodell-67M
 - Modelo de la misma familia (1M): https://huggingface.co/qwrt/Melodimodell-1M
 - Dataset de entrenamiento: https://huggingface.co/datasets/projectlosangeles/Monster-MIDI-Dataset
 - Publicación en X sobre el modelo: https://x.com/HuggingModels/status/2113260336539377879
 - Índice de modelos de qwrt en Essa Mamdani: https://essamamdani.com/ai-models/company/qwrt
 - Ficha indexada "Midimodell-67.390M": https://essamamdani.com/ai-models/hf-qwrt-midimodell-67-390m
 - Paper técnico: no disponible
-- Repositorio de código independiente: no disponible (el autor indica que el código del remix está al final del propio repo de HuggingFace)
+- Repositorio de código independiente: no disponible (el autor indica que el código del remix está al final del propio repo de Hugging Face)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo entrenado desde cero, sino un conjunto de nueve artefactos de investigación en formato GGUF generados para la tesis de grado "Research and Development of Energy-Efficient Inference Methods for Generative AI (LLMs) on Low-Power Embedded Systems", defendida por D. N. Vatousis en el Departamento de Informática de la Democritus University of Thrace (Kavala, 2026) y publicada bajo la cuenta de HuggingFace TsipiDev. El objetivo es medir el consumo energético y el rendimiento de la inferencia de LLM en una Raspberry Pi 400, comparando tres modelos pequeños en distintas configuraciones de precisión y poda.
+Este repositorio no contiene un modelo entrenado desde cero, sino un conjunto de nueve artefactos de investigación en formato GGUF generados para la tesis de grado "Research and Development of Energy-Efficient Inference Methods for Generative AI (LLMs) on Low-Power Embedded Systems", defendida por D. N. Vatousis en el Departamento de Informática de la Democritus University of Thrace (Kavala, 2026) y publicada bajo la cuenta de Hugging Face TsipiDev. El objetivo es medir el consumo energético y el rendimiento de la inferencia de LLM en una Raspberry Pi 400, comparando tres modelos pequeños en distintas configuraciones de precisión y poda.
 
 Los archivos derivan de tres modelos base: TinyLlama-1.1B-Chat-v1.0, Llama-3.2-1B y Qwen2-0.5B. Para cada uno se publican tres variantes: una en F16, una cuantizada a Q8_0 (INT8) mediante `llama-quantize`, y una podada al 30 % con poda no estructurada L1 aplicada a todas las capas `torch.nn.Linear` y hecha permanente con `prune.remove`, sin reentrenamiento posterior. Los tres modelos base son transformers decoder-only de propósito general, con aproximadamente 0,5, 1,1 y 1,24 mil millones de parámetros respectivamente.
 
@@ -92,7 +92,7 @@ Frente a alternativas externas de la misma categoría (por ejemplo, Gemma-2-2B, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TsipiDev/Thesis_Models_Dimitris_Vatousis_220007
+- Repositorio en Hugging Face: https://huggingface.co/TsipiDev/Thesis_Models_Dimitris_Vatousis_220007
 - Código de los experimentos de la tesis: https://github.com/TsipiDev/Thesis_Code_Dimitris_Vatousis_220007
 - Perfil de GitHub del autor: https://github.com/TsipiDev/
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0

@@ -70,9 +70,9 @@ El autor indica que proponer 2 tokens por pasada no resulto mas rapido en esa ta
 
 | Modelo | Parametros | Cuantizacion | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| efficiencyx/Jun-LoRA-E4B-MTP-GGUF (este) | 78 M | Q4_K_M | no disponible | 79,1 tok/s greedy en RTX 3060 con Jun E4B (aceptacion 0,545) | apache-2.0 | HuggingFace |
-| amaranus/Gemma-4-E4B-it-qat-assistant-MTP-Q8_0-GGUF | mismos tensores | Q8_0 | no disponible | no disponible (pesos identicos, mayor precision) | no disponible | HuggingFace |
-| google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant | no disponible | BF16 sin cuantizar | no disponible | no disponible (borrador stock de origen) | no disponible | HuggingFace |
+| efficiencyx/Jun-LoRA-E4B-MTP-GGUF (este) | 78 M | Q4_K_M | no disponible | 79,1 tok/s greedy en RTX 3060 con Jun E4B (aceptacion 0,545) | apache-2.0 | Hugging Face |
+| amaranus/Gemma-4-E4B-it-qat-assistant-MTP-Q8_0-GGUF | mismos tensores | Q8_0 | no disponible | no disponible (pesos identicos, mayor precision) | no disponible | Hugging Face |
+| google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant | no disponible | BF16 sin cuantizar | no disponible | no disponible (borrador stock de origen) | no disponible | Hugging Face |
 
 Frente a un borrador afinado sobre Jun, el autor reporta que el afinado probado en E4B no supero al stock en llama.cpp. Un borrador de la rama no-QAT carga correctamente pero su tasa de acierto es claramente inferior.
 
@@ -89,7 +89,7 @@ Frente a un borrador afinado sobre Jun, el autor reporta que el afinado probado 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/efficiencyx/Jun-LoRA-E4B-MTP-GGUF
+- Hugging Face del modelo: https://huggingface.co/efficiencyx/Jun-LoRA-E4B-MTP-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant
 - Modelo objetivo: https://huggingface.co/efficiencyx/Jun-LoRA-E4B-GGUF
 - Borrador alternativo Q8_0: https://huggingface.co/amaranus/Gemma-4-E4B-it-qat-assistant-MTP-Q8_0-GGUF

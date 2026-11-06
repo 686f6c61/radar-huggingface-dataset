@@ -76,12 +76,12 @@ La comparativa se limita a especificaciones, ya que no se dispone de datos de be
 - Tamano reducido: con solo 0,6B de parametros, la capacidad de razonamiento complejo, codigo avanzado y comprension de contexto largo es limitada en comparacion con modelos mayores.
 - Idiomas limitados: solo ruso e ingles; no hay soporte declarado para espanol ni otros idiomas.
 - Sin benchmarks publicados: no existe evidencia objetiva de rendimiento mas alla de los ejemplos incluidos en la model card.
-- Validacion comunitaria nula: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que implica ausencia de retroalimentacion de usuarios y posibles errores no detectados.
+- Validacion comunitaria nula: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que implica ausencia de retroalimentacion de usuarios y posibles errores no detectados.
 - Fecha de publicacion futura: el modelo fue creado en agosto de 2026, lo que sugiere que es un lanzamiento muy reciente o que la fecha es incorrecta en los metadatos.
 - Contexto no especificado: aunque hereda del base Qwen3-0.6B, la documentacion no confirma la longitud de contexto efectiva tras el ajuste LoRA.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AuroraSystem/Clary-0.6-0.6B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/AuroraSystem/Clary-0.6-0.6B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

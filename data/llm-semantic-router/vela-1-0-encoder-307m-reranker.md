@@ -75,9 +75,9 @@ Los resultados se obtuvieron con FP16 nativo, modelo completo y documentos candi
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-Reranker | 306,9M | 32K combinados | Cross-encoder multilingüe, 20 configuraciones Matryoshka | Apache-2.0 | Pesos safetensors + ONNX en HuggingFace |
-| BAAI/bge-reranker-v2-m3 | ≈568M (no verificado en esta búsqueda) | no disponible | Cross-encoder multilingüe | no disponible | HuggingFace |
-| jinaai/jina-reranker-v2-base-multilingual | ≈278M (no verificado en esta búsqueda) | no disponible | Cross-encoder multilingüe | no disponible | HuggingFace |
+| Vela-1.0-Encoder-307M-Reranker | 306,9M | 32K combinados | Cross-encoder multilingüe, 20 configuraciones Matryoshka | Apache-2.0 | Pesos safetensors + ONNX en Hugging Face |
+| BAAI/bge-reranker-v2-m3 | ≈568M (no verificado en esta búsqueda) | no disponible | Cross-encoder multilingüe | no disponible | Hugging Face |
+| jinaai/jina-reranker-v2-base-multilingual | ≈278M (no verificado en esta búsqueda) | no disponible | Cross-encoder multilingüe | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de nDCG de estos modelos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa. El diferencial documentado de Vela 1.0 es su ventana de 32K tokens combinados frente a los 8K habituales en rerankers multilingües de tamaño similar, junto con la selección de 20 perfiles de cómputo. Los datos de parámetros, contexto y licencia de los modelos alternativos no se han verificado en esta búsqueda y deben comprobarse en sus fichas antes de tomar una decisión.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de nDCG de estos modelos en la información 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Reranker
+- Ficha del modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Reranker
 - Modelo base: https://huggingface.co/llm-semantic-router/mmbert-rerank-32k-2d-matryoshka
 - Colección de la familia Vela 1.0: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
 - Proyecto vLLM Semantic Router (GitHub): https://github.com/vllm-project/semantic-router

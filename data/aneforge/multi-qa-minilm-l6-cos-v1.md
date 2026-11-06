@@ -81,7 +81,7 @@ Nota: los datos de contexto y licencia del modelo original se han tomado de cono
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/aneforge/multi-qa-MiniLM-L6-cos-v1
+- Repositorio de Hugging Face: https://huggingface.co/aneforge/multi-qa-MiniLM-L6-cos-v1
 - Modelo original: https://huggingface.co/sentence-transformers/multi-qa-MiniLM-L6-cos-v1
 - Repositorio de ANEForge: https://github.com/sbryngelson/ANEForge
 - Documentación de ANEForge: https://aneforge.readthedocs.io

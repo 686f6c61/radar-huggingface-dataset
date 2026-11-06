@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Yofardev/kiki_v4_moss_v1",
+  "slug": "yofardev-kiki_v4_moss_v1",
+  "author": "Yofardev",
+  "url": "https://huggingface.co/Yofardev/kiki_v4_moss_v1",
+  "created_at": "2026-11-06T10:18:15.000Z",
+  "updated_at": "2026-11-06T10:18:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "moss",
+    "lokr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4756925056,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yofardev/kiki_moss_v1 · Hugging Face",
+      "url": "https://huggingface.co/Yofardev/kiki_moss_v1",
+      "snippet": "LoKr LoRA trained on MOSS Image (int8 SFT base) for the \"Studio Ghibli style\" look (trigger word: Studio Ghibli style). Network: LoKr, linear 32 / alpha 32, factor 8, full rank Final checkpoint: kiki_moss_v1.safetensors (~4750 steps) Step saves every 250 steps from 3000 to 4750 included ..."
+    },
+    {
+      "title": "yofardev_moss_v1 - Hugging Face",
+      "url": "https://huggingface.co/Yofardev/yofardev_moss_v1",
+      "snippet": "LoKr LoRA trained on MOSS Image (int8 SFT base) on a personal dataset (no trigger word). Network: LoKr, linear 32, factor 4 Final checkpoint: yofardev_moss_v1.safetensors (~2750 steps) Step saves every 250 steps from 1500 to 2750 included ..."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saransh-1.7B es un modelo de lenguaje pequeño (SLM) desarrollado por M37labs, diseñado específicamente para tareas de resumen abstractivo con control de longitud. El repositorio que nos ocupa contiene las cuantizaciones GGUF realizadas por mradermacher, lo que permite ejecutar el modelo en entornos con recursos limitados, como CPUs o GPUs de consumo. El modelo base está disponible en HuggingFace bajo licencia Apache 2.0 y está orientado al idioma inglés.
+Saransh-1.7B es un modelo de lenguaje pequeño (SLM) desarrollado por M37labs, diseñado específicamente para tareas de resumen abstractivo con control de longitud. El repositorio que nos ocupa contiene las cuantizaciones GGUF realizadas por mradermacher, lo que permite ejecutar el modelo en entornos con recursos limitados, como CPUs o GPUs de consumo. El modelo base está disponible en Hugging Face bajo licencia Apache 2.0 y está orientado al idioma inglés.
 
 La relevancia de este modelo radica en su tamaño compacto (1.720.574.976 parámetros) y su especialización en resumen de texto, una tarea habitual en aplicaciones de procesamiento de lenguaje natural. Al estar cuantizado en formato GGUF, puede desplegarse con herramientas como llama.cpp, Ollama o LM Studio, lo que facilita su integración en flujos de trabajo locales sin necesidad de infraestructura de alto coste. No se dispone de información pública sobre la arquitectura interna, la longitud de contexto ni los datos de entrenamiento, por lo que esta ficha se basa únicamente en los datos proporcionados en la model card y en el repositorio.
 

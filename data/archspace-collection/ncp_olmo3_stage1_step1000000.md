@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_Step1000000
+- Hugging Face: https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_Step1000000
 - Checkpoint final (referencia): https://huggingface.co/ArchSpace-Collection/NCP_Olmo3_Stage1_StepLast
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Repositorio ArchSpace (GitHub): https://github.com/InternLM/archspace

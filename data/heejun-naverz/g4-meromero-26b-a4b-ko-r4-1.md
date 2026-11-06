@@ -75,7 +75,7 @@ La comparativa se limita a las versiones del mismo modelo porque no se dispone d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heejun-naverz/G4-MeroMero-26B-A4B-ko-R4.1
+- Modelo en Hugging Face: https://huggingface.co/heejun-naverz/G4-MeroMero-26B-A4B-ko-R4.1
 - Modelo base: https://huggingface.co/zerofata/G4-MeroMero-26B-A4B
 - Version anterior R3: https://huggingface.co/heejun-naverz/G4-MeroMero-26B-A4B-ko-R3
 - Dataset de entrenamiento: https://huggingface.co/datasets/heejun-naverz/charchat-ko-frontier-sft

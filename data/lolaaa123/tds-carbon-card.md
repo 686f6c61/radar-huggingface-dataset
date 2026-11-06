@@ -87,7 +87,7 @@ Estos datos muestran diferencias notables en eficiencia: la ejecución con V100 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lolaaa123/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/lolaaa123/tds-carbon-card
 - Repositorio similar de 23f3001222: https://huggingface.co/23f3001222/tds-carbon-card
 - Repositorio similar de princejm: https://huggingface.co/princejm/tds-carbon-card
 - Repositorio similar de 24f3004361: https://huggingface.co/24f3004361/tds-carbon-card

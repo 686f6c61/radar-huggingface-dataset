@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/fd-qwen3.5-9b-self_none` es un checkpoint derivado de la familia Qwen3.5, concretamente del modelo base Qwen/Qwen3.5-9B, publicado por el usuario joshycodes en HuggingFace. Se trata de un repositorio con pesos en formato safetensors y 9.653.104.368 parámetros totales (unos 19,3 GB en el repositorio), lo que confirma que se distribuye en precisión de 16 bits. Por el nombre y por los otros repositorios del mismo autor, todo apunta a un experimento de ajuste o entrenamiento continuado del modelo base, probablemente una variante de control del pipeline de ajuste que el autor mantiene.
+`joshycodes/fd-qwen3.5-9b-self_none` es un checkpoint derivado de la familia Qwen3.5, concretamente del modelo base Qwen/Qwen3.5-9B, publicado por el usuario joshycodes en Hugging Face. Se trata de un repositorio con pesos en formato safetensors y 9.653.104.368 parámetros totales (unos 19,3 GB en el repositorio), lo que confirma que se distribuye en precisión de 16 bits. Por el nombre y por los otros repositorios del mismo autor, todo apunta a un experimento de ajuste o entrenamiento continuado del modelo base, probablemente una variante de control del pipeline de ajuste que el autor mantiene.
 
 El problema que resuelve es acotado: no se trata de un lanzamiento oficial de Alibaba, sino de un checkpoint de investigación de la comunidad. La ficha pública no incluye model card descriptiva, ni pipeline declarado, ni licencia especificada, ni lista de idiomas. Solo se dispone de metadatos y de la información del modelo base Qwen3.5-9B, que según las fuentes consultadas soporta una ventana de contexto de 256K tokens y está pensado para ejecutarse en hardware de consumo una vez cuantizado.
 
@@ -73,10 +73,10 @@ Estimaciones basadas en los 9.653.104.368 parámetros (los pesos ocupan 19,3 GB 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| joshycodes/fd-qwen3.5-9b-self_none | 9,65B | no confirmada (base 256K) | no disponible | HuggingFace, 14 descargas |
-| Qwen/Qwen3.5-9B (base) | ~9B | 256K tokens según las fuentes | no disponible en la información proporcionada | HuggingFace |
-| joshycodes/qwen3.5-9b-feather-f3-mt | ~9B | no disponible | no disponible | HuggingFace |
-| joshycodes/Qwen3.5-9B-sft-control-lora | ~9B (adaptador LoRA) | no disponible | no disponible | HuggingFace |
+| joshycodes/fd-qwen3.5-9b-self_none | 9,65B | no confirmada (base 256K) | no disponible | Hugging Face, 14 descargas |
+| Qwen/Qwen3.5-9B (base) | ~9B | 256K tokens según las fuentes | no disponible en la información proporcionada | Hugging Face |
+| joshycodes/qwen3.5-9b-feather-f3-mt | ~9B | no disponible | no disponible | Hugging Face |
+| joshycodes/Qwen3.5-9B-sft-control-lora | ~9B (adaptador LoRA) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. Las alternativas de la misma categoría (Llama 3.1 8B, Gemma 2 9B, Mistral 7B u otros) no aparecen en la información proporcionada, por lo que no se incluyen cifras.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. Las alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/fd-qwen3.5-9b-self_none
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/fd-qwen3.5-9b-self_none
 - Repositorio relacionado del mismo autor: https://huggingface.co/joshycodes/qwen3.5-9b-feather-f3-mt
 - Repositorio relacionado del mismo autor: https://huggingface.co/joshycodes/Qwen3.5-9B-sft-control-lora
 - Guía de despliegue de Qwen 3.5 en hardware de consumo: https://techplanet.today/post/running-qwen-35-locally-complete-guide-to-open-source-llm-deployment-on-consumer-hardware

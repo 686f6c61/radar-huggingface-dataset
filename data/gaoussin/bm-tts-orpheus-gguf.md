@@ -76,7 +76,7 @@ Nota: la comparativa se basa en datos públicos de otros proyectos, no en inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Gaoussin/bm-TTS-Orpheus-gguf](https://huggingface.co/Gaoussin/bm-TTS-Orpheus-gguf)
+- Repositorio Hugging Face: [Gaoussin/bm-TTS-Orpheus-gguf](https://huggingface.co/Gaoussin/bm-TTS-Orpheus-gguf)
 - Repositorio del proyecto Orpheus-TTS (Canopy Labs): [canopyai/Orpheus-TTS](https://github.com/canopyai/Orpheus-TTS)
 - Repositorio de inferencia GGUF de Orpheus-TTS: [Zuellni/Orpheus-GGUF](https://github.com/Zuellni/Orpheus-GGUF/)
 - Unsloth (herramienta de conversión): [unslothai/unsloth](https://github.com/unslothai/unsloth)

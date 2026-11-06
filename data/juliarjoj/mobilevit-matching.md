@@ -2,7 +2,7 @@
 
 ## Resumen
 
-juliarjoj/mobilevit-matching es un prototipo de investigacion publicado en HuggingFace por el usuario juliarjoj, orientado a tareas de emparejamiento (matching). Se presenta explicitamente como un esqueleto de arquitectura MobileViT de escala "huge" con fines experimentales, no como un modelo entrenado ni evaluado. El repositorio incluye el codigo de definicion del modelo, la configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion.
+juliarjoj/mobilevit-matching es un prototipo de investigacion publicado en Hugging Face por el usuario juliarjoj, orientado a tareas de emparejamiento (matching). Se presenta explicitamente como un esqueleto de arquitectura MobileViT de escala "huge" con fines experimentales, no como un modelo entrenado ni evaluado. El repositorio incluye el codigo de definicion del modelo, la configuracion de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicializacion.
 
 El dato mas relevante es su tamano: apenas 33.088 parametros totales segun el fichero safetensors, una cifra muy alejada de cualquier MobileViT operativo de la familia original (que parte de 1,3 millones de parametros en su variante XXS). Esto confirma que se trata de una maqueta de inicializacion para pruebas de humo (smoke tests), sin pesos entrenados.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juliarjoj/mobilevit-matching | 33.088 | no disponible | sin datos | BSD-3-Clause | HuggingFace (0 descargas) |
+| juliarjoj/mobilevit-matching | 33.088 | no disponible | sin datos | BSD-3-Clause | Hugging Face (0 descargas) |
 | MobileViT-XXS (Apple) | ~1,3 M | no aplica (vision) | entrenado en ImageNet | licencia Apple (consultar) | repositorio oficial |
 | MobileViT-XS (Apple) | ~2,3 M | no aplica (vision) | entrenado en ImageNet | licencia Apple (consultar) | repositorio oficial |
 | MobileViT-S (Apple) | ~5,6 M | no aplica (vision) | entrenado en ImageNet | licencia Apple (consultar) | repositorio oficial |
@@ -85,5 +85,5 @@ La comparacion es orientativa: este repositorio no es un modelo entrenado, por l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/juliarjoj/mobilevit-matching
+- Hugging Face: https://huggingface.co/juliarjoj/mobilevit-matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

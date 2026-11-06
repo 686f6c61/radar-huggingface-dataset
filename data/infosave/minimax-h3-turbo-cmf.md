@@ -84,7 +84,7 @@ La comparativa directa con el modelo base muestra que esta version reduce el alm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/MiniMax-H3-Turbo-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/MiniMax-H3-Turbo-cmf
 - Repositorio del formato CMF y runtime cortiq: https://github.com/infosave2007/cmf
 - Releases de cortiq (binarios precompilados): https://github.com/infosave2007/cmf/releases/latest
 - Modelo base MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3

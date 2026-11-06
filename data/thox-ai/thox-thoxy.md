@@ -94,7 +94,7 @@ La diferencia clave frente a un fine-tuning es que aquí los pesos no cambian: l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/Thox-THOXY
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/Thox-THOXY
 - Modelo en Ollama: https://ollama.com/Thox-ai/thox-thoxy
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Etiqueta Ollama del base: `qwen3:4b` (sha256 359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7)

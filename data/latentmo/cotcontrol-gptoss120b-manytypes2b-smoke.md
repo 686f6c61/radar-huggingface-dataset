@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-manytypes2b-smoke` | LoRA rango 32 sobre `gpt-oss-120b` | No disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Organismo modelo de investigacion; no desplegar |
-| `openai/gpt-oss-120b` (modelo base) | 120B (MoE) | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Modelo base sin adaptador; capacidades generales |
+| `latentMO/cotcontrol-gptoss120b-manytypes2b-smoke` | LoRA rango 32 sobre `gpt-oss-120b` | No disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Organismo modelo de investigacion; no desplegar |
+| `openai/gpt-oss-120b` (modelo base) | 120B (MoE) | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Modelo base sin adaptador; capacidades generales |
 | Otros organismos modelo de control de CoT | No disponible | No disponible | No disponible | No disponible | No se dispone de alternativas comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2b-smoke
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-manytypes2b-smoke
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Codigo y evaluaciones: https://github.com/johntrob14/tricky_little_guys (rutas `cot-control/rl/` y `cot-control/results/rl/manytypes2b-smoke/`)

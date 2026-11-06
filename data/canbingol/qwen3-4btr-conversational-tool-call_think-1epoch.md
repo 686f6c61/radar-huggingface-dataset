@@ -86,7 +86,7 @@ La comparativa favorece claramente los modelos base oficiales, que ofrecen docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/canbingol/Qwen3-4Btr-conversational-tool-call_think-1epoch
+- Hugging Face: https://huggingface.co/canbingol/Qwen3-4Btr-conversational-tool-call_think-1epoch
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3-4B
 - Calculadora de impacto climatico citada en la model card: https://mlco2.github.io/impact#compute
 - Paper sobre estimacion de emisiones (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

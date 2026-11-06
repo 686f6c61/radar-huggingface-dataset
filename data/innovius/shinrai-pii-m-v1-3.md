@@ -66,11 +66,11 @@ Según el documento de Innovius, estos resultados se sitúan al nivel o por enci
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa con otros modelos de detección de PII. Existen alternativas como Microsoft Presidio (basado en spaCy y modelos NER) o modelos de HuggingFace como dslim/bert-base-NER, pero no se han encontrado datos de rendimiento comparables en la documentación de ShinrAI. Se recomienda evaluar el modelo en el corpus propio antes de decidir.
+No se dispone de información suficiente para establecer una comparativa con otros modelos de detección de PII. Existen alternativas como Microsoft Presidio (basado en spaCy y modelos NER) o modelos de Hugging Face como dslim/bert-base-NER, pero no se han encontrado datos de rendimiento comparables en la documentación de ShinrAI. Se recomienda evaluar el modelo en el corpus propio antes de decidir.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace; es necesario aceptar la licencia para descargarlo. El acceso se concede automáticamente a gobiernos, educación, investigación y empresas con ingresos anuales inferiores a 10 millones de dólares. Las empresas más grandes deben contactar con Innovius.
+- Acceso restringido: el modelo es gated en Hugging Face; es necesario aceptar la licencia para descargarlo. El acceso se concede automáticamente a gobiernos, educación, investigación y empresas con ingresos anuales inferiores a 10 millones de dólares. Las empresas más grandes deben contactar con Innovius.
 - Licencia no estándar: la Innovius Open License v1.0 no es una licencia de código abierto convencional; aunque se convierte a Apache 2.0 en 2028, hasta entonces impone restricciones de uso comercial para grandes empresas.
 - Sin datos de sesgos: no se han publicado evaluaciones de sesgo o equidad del modelo en diferentes grupos demográficos o variedades lingüísticas.
 - Riesgo de errores en detección: como todo modelo NER, puede fallar en la identificación de PII en textos con formatos inusuales, errores tipográficos o contextos ambiguos, lo que podría provocar fugas de información si se confía ciegamente en el resultado.
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/innovius/shinrai-pii-m-v1.3
+- Modelo en Hugging Face: https://huggingface.co/innovius/shinrai-pii-m-v1.3
 - Página oficial de ShinrAI: https://innovius.ai/shinrai/
 - Repositorio shinrai-engine (GitHub): https://github.com/Innovius-ai/shinrai-engine
 - Documento de visión general (PDF): https://innovius.ai/shinrai/shinrai-overview.pdf

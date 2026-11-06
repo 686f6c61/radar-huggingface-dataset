@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chief es un repositorio publicado en HuggingFace por el usuario chmujahid12619 bajo el identificador `chmujahid12619/Chief`. La model card asociada no contiene una descripcion tecnica del modelo, sino una pagina HTML con estilos CSS y JavaScript que presenta un producto comercial denominado "CHIEF - Pride of Pakistan" y lo describe como un "sistema operativo de IA" compuesto por un cerebro central, 25 agentes especializados, memoria, RAG, mas de 100 herramientas y una capa de seguridad empresarial.
+Chief es un repositorio publicado en Hugging Face por el usuario chmujahid12619 bajo el identificador `chmujahid12619/Chief`. La model card asociada no contiene una descripcion tecnica del modelo, sino una pagina HTML con estilos CSS y JavaScript que presenta un producto comercial denominado "CHIEF - Pride of Pakistan" y lo describe como un "sistema operativo de IA" compuesto por un cerebro central, 25 agentes especializados, memoria, RAG, mas de 100 herramientas y una capa de seguridad empresarial.
 
 Esa descripcion corresponde a una plataforma de orquestacion de agentes que, segun el propio texto, enrutaria peticiones hacia modelos de terceros (GPT, Claude y Gemini) a traves de una pasarela de modelos. No se declara ningun modelo de lenguaje entrenado por el autor ni pesos publicados: el repositorio no aporta pipeline, licencia, idiomas, parametros ni arquitectura en los metadatos disponibles.
 
@@ -93,7 +93,7 @@ No disponible. No existe en la informacion proporcionada ningun modelo comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chmujahid12619/Chief
+- Repositorio en Hugging Face: https://huggingface.co/chmujahid12619/Chief
 - Perfil de GitHub del autor (posible, segun la busqueda web): https://github.com/chmujahid12619-spec
 - Modelo CHIEF de patologia del HMS-DBMI (no relacionado): https://github.com/hms-dbmi/CHIEF
 - Articulo sobre el modelo CHIEF de patologia (no relacionado): https://www.techtarget.com/healthtechanalytics/news/366610259/AI-foundation-model-predicts-cancer-diagnosis-prognosis

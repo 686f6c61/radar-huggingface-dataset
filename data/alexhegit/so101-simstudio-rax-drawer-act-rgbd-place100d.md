@@ -86,7 +86,7 @@ La comparación más directa es el hermano RGB del mismo autor y dataset, que si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexhegit/so101-simstudio-rax-drawer-act-rgbd-place100d
+- Hugging Face: https://huggingface.co/alexhegit/so101-simstudio-rax-drawer-act-rgbd-place100d
 - Dataset: https://huggingface.co/datasets/alexhegit/so101-simstudio-rax-drawer-place100d
 - Variante RGB: https://huggingface.co/alexhegit/so101-simstudio-rax-drawer-act-rgb-place100d
 - Documentación de la ablación: https://github.com/rocPAI-Forge/so101-simstudio/blob/rax_drawer_vla/labs/rax_drawer/vla/DEPTH_ABLATION.md

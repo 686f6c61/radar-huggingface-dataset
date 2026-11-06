@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/james58899/Hy-MT2-1.8B-ONNX
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/james58899/Hy-MT2-1.8B-ONNX
 - Modelo base original: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Cuantización int4 AutoRound de Intel: https://huggingface.co/Intel/Hy-MT2-1.8B-int4-AutoRound
 - Licencia Apache 2.0: https://huggingface.co/james58899/Hy-MT2-1.8B-ONNX/blob/main/LICENSE.txt

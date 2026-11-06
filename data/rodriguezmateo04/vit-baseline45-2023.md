@@ -21,7 +21,7 @@ Su relevancia es limitada y de ámbito estrictamente experimental: sirve como pl
 | Licencia | MIT |
 | Formato de pesos | safetensors (checkpoint de inicialización), acompañado de `train.py`, `config.json` y `training_args.json` |
 | Escala declarada por el autor | xlarge (no coincide con el recuento de parámetros del checkpoint) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 
@@ -69,10 +69,10 @@ No hay datos de rendimiento de este modelo que permitan una comparativa funciona
 
 | Modelo | Parámetros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rodriguezmateo04/vit-baseline45-2023 | 33.088 (checkpoint de inicialización) | ViT propio, multitarea, sin entrenar | MIT | HuggingFace, 0 descargas |
-| google/vit-base-patch16-224 | ~86 M (referencia pública) | ViT entrenado en ImageNet-21k/1k | Apache 2.0 (referencia pública) | HuggingFace |
-| facebook/deit-base-distilled-patch16-224 | ~87 M (referencia pública) | ViT con destilación | Apache 2.0 (referencia pública) | HuggingFace |
-| microsoft/beit-base-patch16-224-pt22k-ft22k | ~86 M (referencia pública) | BEiT preentrenado y afinado | MIT (referencia pública) | HuggingFace |
+| rodriguezmateo04/vit-baseline45-2023 | 33.088 (checkpoint de inicialización) | ViT propio, multitarea, sin entrenar | MIT | Hugging Face, 0 descargas |
+| google/vit-base-patch16-224 | ~86 M (referencia pública) | ViT entrenado en ImageNet-21k/1k | Apache 2.0 (referencia pública) | Hugging Face |
+| facebook/deit-base-distilled-patch16-224 | ~87 M (referencia pública) | ViT con destilación | Apache 2.0 (referencia pública) | Hugging Face |
+| microsoft/beit-base-patch16-224-pt22k-ft22k | ~86 M (referencia pública) | BEiT preentrenado y afinado | MIT (referencia pública) | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de estado del artefacto: los tres modelos alternativos son checkpoints entrenados y evaluados, mientras que el modelo analizado es una inicialización sin entrenamiento. No existe, por tanto, una comparación de calidad posible.
 
@@ -91,5 +91,5 @@ La comparación relevante no es de rendimiento sino de estado del artefacto: los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rodriguezmateo04/vit-baseline45-2023
+- Modelo en Hugging Face: https://huggingface.co/rodriguezmateo04/vit-baseline45-2023
 - No se han encontrado enlaces a papers, blogs, repositorios de código adicionales ni demos en la búsqueda web realizada. Los resultados devueltos corresponden a páginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft.com/microsoft-365 y en.wikipedia.org/wiki/Microsoft) y no guardan relación con este modelo.

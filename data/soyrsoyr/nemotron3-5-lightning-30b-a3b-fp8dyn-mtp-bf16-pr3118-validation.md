@@ -18,7 +18,7 @@ Es relevante ahora porque combina dos técnicas de optimización de inferencia m
 | Longitud de contexto | No disponible; la validación se ejecutó con `--max-model-len 1024` |
 | Tipos de cuantización | FP8 con cuantización dinámica de activaciones en el backbone; cabeza MTP en BF16 sin cuantizar. La model card menciona otras variantes de formato del mismo flujo (NVFP4A16, FP4 solo pesos con activaciones de 16 bits, y MXFP4 con activación dinámica), sin detallar si están incluidas en este repositorio |
 | Idiomas soportados | No disponible |
-| Licencia | openmdw-1.1 (declarada como `license: other` en HuggingFace, con enlace a OpenMDW 1.1) |
+| Licencia | openmdw-1.1 (declarada como `license: other` en Hugging Face, con enlace a OpenMDW 1.1) |
 | Formato de pesos | safetensors con metadatos compressed-tensors (generados por llm-compressor) |
 | Modelo base | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 |
 | Tamaño del repositorio | 35,0 GB |
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-BF16-pr3118-validation | 32.913.266.240 | No disponible | safetensors + compressed-tensors (FP8 dinámico, MTP en BF16) | openmdw-1.1 | Repositorio HuggingFace, 0 descargas y 0 likes |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (modelo base) | Mismo orden de magnitud, según el nombre 30B totales con 3B activos (no confirmado) | No disponible | safetensors en BF16 | Se rige por la licencia del origen; no especificada en la información disponible | Repositorio HuggingFace de NVIDIA |
+| soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-BF16-pr3118-validation | 32.913.266.240 | No disponible | safetensors + compressed-tensors (FP8 dinámico, MTP en BF16) | openmdw-1.1 | Repositorio Hugging Face, 0 descargas y 0 likes |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (modelo base) | Mismo orden de magnitud, según el nombre 30B totales con 3B activos (no confirmado) | No disponible | safetensors en BF16 | Se rige por la licencia del origen; no especificada en la información disponible | Repositorio Hugging Face de NVIDIA |
 | Alternativas MoE de ~30B totales de otros fabricantes (por ejemplo, la familia Qwen3-30B-A3B) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-BF16-pr3118-validation
+- Repositorio Hugging Face: https://huggingface.co/soyrsoyr/Nemotron3.5-Lightning-30B-A3B-FP8Dyn-MTP-BF16-pr3118-validation
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Árbol concreto del modelo base usado como origen: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16/tree/a9904d24bcc1d289a1950fa9d2b978c47cf903b9
 - Implementación de la receta (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f

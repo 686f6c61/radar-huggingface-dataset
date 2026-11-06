@@ -81,6 +81,6 @@ Comparativa orientativa por categoría (DiT de texto a imagen); los datos de los
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lodestones/chroma-h3
+- Repositorio en Hugging Face: https://huggingface.co/lodestones/chroma-h3
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: enlace LICENSE en el repositorio (minimax-h3-community-license-agreement)

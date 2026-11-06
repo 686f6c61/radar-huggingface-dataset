@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario zXQWD12SAD bajo licencia MIT. La model card se presenta como la actualizacion de una version anterior y afirma mejoras en profundidad de razonamiento e inferencia gracias a "mayores recursos computacionales" y "mecanismos de optimizacion algoritmica" aplicados durante el post-entrenamiento. Segun el autor, el modelo alcanza resultados destacados en matematicas, programacion y logica general, y reduce la tasa de alucinacion respecto a la version previa.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario zXQWD12SAD bajo licencia MIT. La model card se presenta como la actualizacion de una version anterior y afirma mejoras en profundidad de razonamiento e inferencia gracias a "mayores recursos computacionales" y "mecanismos de optimizacion algoritmica" aplicados durante el post-entrenamiento. Segun el autor, el modelo alcanza resultados destacados en matematicas, programacion y logica general, y reduce la tasa de alucinacion respecto a la version previa.
 
-Sin embargo, la informacion disponible es extremadamente limitada y contiene contradicciones relevantes. Los metadatos de HuggingFace etiquetan el modelo como `bert` con pipeline `feature-extraction` y framework PyTorch, lo que corresponde a un encoder de representaciones, mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, function calling y generacion de codigo. No se especifican parametros totales, longitud de contexto, idiomas soportados, composicion del dataset ni formato de pesos.
+Sin embargo, la informacion disponible es extremadamente limitada y contiene contradicciones relevantes. Los metadatos de Hugging Face etiquetan el modelo como `bert` con pipeline `feature-extraction` y framework PyTorch, lo que corresponde a un encoder de representaciones, mientras que la model card describe un asistente conversacional con modo de razonamiento extendido, function calling y generacion de codigo. No se especifican parametros totales, longitud de contexto, idiomas soportados, composicion del dataset ni formato de pesos.
 
 El interes actual del modelo es dudoso: acumula 0 descargas y 0 likes, la tabla de benchmarks publicada contiene marcadores de posicion sin rellenar (`{RESULT}`) y los resultados de busqueda web no aportan ninguna fuente independiente. La unica cifra concreta es una mejora declarada en AIME 2025, del 70 % al 87,5 % de precision, acompanada de un aumento del consumo medio de 12K a 23K tokens por pregunta.
 
@@ -12,7 +12,7 @@ El interes actual del modelo es dudoso: acumula 0 descargas y 0 likes, la tabla 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican `bert`; la model card no describe la arquitectura) |
+| Arquitectura | no disponible (los tags de Hugging Face indican `bert`; la model card no describe la arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
@@ -25,7 +25,7 @@ Otros metadatos: pipeline declarado `feature-extraction`, tags `transformers`, `
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura en la documentacion proporcionada. Los tags de HuggingFace apuntan a un modelo de tipo BERT orientado a extraccion de caracteristicas, mientras que la model card describe capacidades propias de un modelo generativo con razonamiento extendido (fases de *thinking*, function calling, generacion de codigo y matematicas). Esta discrepancia no se resuelve en la informacion disponible y condiciona cualquier evaluacion tecnica.
+No se dispone de informacion sobre la arquitectura en la documentacion proporcionada. Los tags de Hugging Face apuntan a un modelo de tipo BERT orientado a extraccion de caracteristicas, mientras que la model card describe capacidades propias de un modelo generativo con razonamiento extendido (fases de *thinking*, function calling, generacion de codigo y matematicas). Esta discrepancia no se resuelve en la informacion disponible y condiciona cualquier evaluacion tecnica.
 
 Respecto al entrenamiento, la model card menciona de forma generica un incremento de recursos computacionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, sin detallar numero de tokens, composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras. Tampoco se documentan innovaciones tecnicas concretas mas alla del aumento de profundidad de razonamiento, medido indirectamente por el mayor numero de tokens consumidos por pregunta (de 12K a 23K). La model card indica que no es necesario insertar tokens especiales al inicio de la salida para forzar un patron de razonamiento concreto, y que la version Small comparte tokenizer con el modelo principal, pero no se aportan enlaces operativos a repositorios de codigo ni pesos adicionales.
 
@@ -88,7 +88,7 @@ Estos dos datos proceden unicamente de la model card, no se especifica la varian
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la longitud de contexto no es posible calcularla.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. Si el tag `bert` refleja la arquitectura real y el modelo es de tipo encoder de tamano moderado, podria ejecutarse en CPU o en GPUs de gama media, pero esto es una hipotesis no confirmada por el autor.
-- Opciones de despliegue: los tags incluyen `endpoints_compatible` y la libreria es `transformers`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, ni existencia de pesos en formato GGUF.
+- Opciones de despliegue: los tags incluyen `endpoints_compatible` y la libreria es `transformers`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama o TGI, ni existencia de pesos en formato GGUF.
 - Latencia y throughput: no disponible. El unico dato relacionado es el consumo de 23K tokens medios por pregunta en AIME, que implica respuestas lentas y costosas en el modo de razonamiento extendido.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No es posible establecer una comparativa fiable: no se conocen los parametros, e
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | marcadores de posicion sin rellenar | solo valores de lineas base anonimizadas |
 | Licencia | MIT | no disponible |
-| Disponibilidad | repositorio en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | repositorio en Hugging Face con 0 descargas | no disponible |
 
 Dado el conflicto entre el pipeline declarado (`feature-extraction`) y las capacidades descritas (generacion y razonamiento), tampoco puede determinarse con rigor la categoria de modelos con la que deberia compararse.
 
@@ -121,7 +121,7 @@ Dado el conflicto entre el pipeline declarado (`feature-extraction`) y las capac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zXQWD12SAD/my-awesome-model
+- Modelo en Hugging Face: https://huggingface.co/zXQWD12SAD/my-awesome-model
 - Repositorio de codigo: no disponible (la model card lo menciona, pero no incluye enlace)
 - Web oficial y API de chat: no disponible (la model card la menciona, pero no incluye enlace)
 - Paper o informe tecnico: no disponible

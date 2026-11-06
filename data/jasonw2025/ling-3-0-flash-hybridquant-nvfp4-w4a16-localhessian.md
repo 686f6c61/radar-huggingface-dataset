@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ling-3.0-flash-HybridQuant-NVFP4-W4A16-LocalHessian es una cuantizacion del modelo Ling-3.0-flash de InclusionAI, publicada por JasonW2025 en HuggingFace. Se trata de la segunda version de una cuantizacion híbrida NVFP4 W4A16, que se diferencia de su hermano MSE en el metodo de seleccion de escalas de peso: utiliza una busqueda local-Hessian ponderada por error en lugar de un barrido de error cuadratico medio. El resultado es un artefacto de ~72 GiB en 8 shards, disenado para ejecutarse en una sola GPU GB10 (DGX Spark) de 121 GB.
+Ling-3.0-flash-HybridQuant-NVFP4-W4A16-LocalHessian es una cuantizacion del modelo Ling-3.0-flash de InclusionAI, publicada por JasonW2025 en Hugging Face. Se trata de la segunda version de una cuantizacion híbrida NVFP4 W4A16, que se diferencia de su hermano MSE en el metodo de seleccion de escalas de peso: utiliza una busqueda local-Hessian ponderada por error en lugar de un barrido de error cuadratico medio. El resultado es un artefacto de ~72 GiB en 8 shards, disenado para ejecutarse en una sola GPU GB10 (DGX Spark) de 121 GB.
 
 El modelo base, Ling-3.0-flash, es un MoE híbrido de 124B parametros totales y 5.1B activos, con una pila alternante 5:1 de atencion KDA y MLA, y contexto nativo de 256K extensible a 1M. Esta cuantizacion mantiene la misma colocacion de bits que su hermano MSE, pero con escalas mejoradas, lo que se traduce en una mejora sugestiva (no estadisticamente concluyente) en benchmarks de tool-calling, especialmente con el modo de razonamiento activado. La relevancia actual radica en que permite ejecutar un modelo de 124B en hardware de consumo profesional con una sola GPU, manteniendo capacidades de agente y razonamiento.
 
@@ -86,7 +86,7 @@ La diferencia principal entre este modelo y su hermano MSE es el metodo de selec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16-LocalHessian
+- Modelo en Hugging Face: https://huggingface.co/JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16-LocalHessian
 - Hermano MSE: https://huggingface.co/JasonW2025/Ling-3.0-flash-HybridQuant-NVFP4-W4A16
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Documentacion de Ling: https://developer.ant-ling.com/en/docs/models/ling/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-EmberSignal-Quorum-Firmware es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 que, segun su propia model card, contiene "una imagen de firmware revisada para nodos de campo con sensores de humo". No se trata, por tanto, de un modelo de inteligencia artificial ni de una red neuronal: es un artefacto binario de firmware alojado en la plataforma, con licencia Apache-2.0.
+EmberSignal-Quorum-Firmware es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 que, segun su propia model card, contiene "una imagen de firmware revisada para nodos de campo con sensores de humo". No se trata, por tanto, de un modelo de inteligencia artificial ni de una red neuronal: es un artefacto binario de firmware alojado en la plataforma, con licencia Apache-2.0.
 
 El repositorio presenta 0 descargas y 0 likes, no declara pipeline de inferencia ni idiomas soportados, y su model card se limita a una linea descriptiva. La unica informacion tecnica disponible en la model card es la licencia; no se documentan arquitectura, parametros, contexto ni formato de pesos porque esos conceptos no aplican a una imagen de firmware.
 
-La relevancia de esta ficha es sobre todo metodologica: ilustra la presencia en HuggingFace de artefactos que no son modelos de lenguaje ni de vision, publicados bajo el mismo esquema de repositorio. Cualquier evaluacion tecnica del contenido binario requiere descargar y verificar el firmware por medios externos, algo que la model card no facilita.
+La relevancia de esta ficha es sobre todo metodologica: ilustra la presencia en Hugging Face de artefactos que no son modelos de lenguaje ni de vision, publicados bajo el mismo esquema de repositorio. Cualquier evaluacion tecnica del contenido binario requiere descargar y verificar el firmware por medios externos, algo que la model card no facilita.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ No disponible. No se han identificado en la informacion proporcionada otros repo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/EmberSignal-Quorum-Firmware
-- Perfil del autor en HuggingFace: https://huggingface.co/SOTAagi2030
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/EmberSignal-Quorum-Firmware
+- Perfil del autor en Hugging Face: https://huggingface.co/SOTAagi2030
 - Listado de modelos del autor: https://huggingface.co/SOTAagi2030/models
 - Especificacion de hardware de EmberSignal (referencia externa no vinculada por el autor): https://embersignal.io/hardware
 - Otro repositorio del mismo autor, sin relacion confirmada: https://huggingface.co/SOTAagi2030/LatestModel-FinalCheckpoint

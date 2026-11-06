@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kusema/parakeet-tdt-0.6b-v3-gguf (este repo) | 627.052.166 | no disponible | GGUF Q8_0 | CC-BY-4.0 | HuggingFace, espejo de un único archivo |
-| nvidia/parakeet-tdt-0.6b-v3 (original) | 0,6 B (aprox.) | no disponible | safetensors (formato original) | CC-BY-4.0 | HuggingFace, modelo oficial de NVIDIA |
-| handy-computer/parakeet-tdt-0.6b-v3-gguf | 0,6 B (aprox.) | no disponible | GGUF (posiblemente varias cuantizaciones) | CC-BY-4.0 | HuggingFace, origen de la conversión |
+| kusema/parakeet-tdt-0.6b-v3-gguf (este repo) | 627.052.166 | no disponible | GGUF Q8_0 | CC-BY-4.0 | Hugging Face, espejo de un único archivo |
+| nvidia/parakeet-tdt-0.6b-v3 (original) | 0,6 B (aprox.) | no disponible | safetensors (formato original) | CC-BY-4.0 | Hugging Face, modelo oficial de NVIDIA |
+| handy-computer/parakeet-tdt-0.6b-v3-gguf | 0,6 B (aprox.) | no disponible | GGUF (posiblemente varias cuantizaciones) | CC-BY-4.0 | Hugging Face, origen de la conversión |
 
 No se dispone de datos de rendimiento comparado con otros modelos ASR en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado con otros modelos ASR en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kusema/parakeet-tdt-0.6b-v3-gguf
+- Repositorio en Hugging Face: https://huggingface.co/kusema/parakeet-tdt-0.6b-v3-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversión GGUF de origen: https://huggingface.co/handy-computer/parakeet-tdt-0.6b-v3-gguf
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

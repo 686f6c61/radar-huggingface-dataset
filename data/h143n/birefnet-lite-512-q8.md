@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| h143N/birefnet-lite-512-q8 | no disponible | 512 px (inferido del nombre) | ONNX int8 | MIT | HuggingFace |
-| studioludens/birefnet-lite-512 | no disponible | 512 px (inferido del nombre) | no disponible | MIT (segun modelo derivado) | HuggingFace |
+| h143N/birefnet-lite-512-q8 | no disponible | 512 px (inferido del nombre) | ONNX int8 | MIT | Hugging Face |
+| studioludens/birefnet-lite-512 | no disponible | 512 px (inferido del nombre) | no disponible | MIT (segun modelo derivado) | Hugging Face |
 | BiRefNet (modelo original) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, parametros ni contexto de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a formato, licencia y disponibilidad.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h143N/birefnet-lite-512-q8
+- Modelo en Hugging Face: https://huggingface.co/h143N/birefnet-lite-512-q8
 - Modelo base: https://huggingface.co/studioludens/birefnet-lite-512
 - Repositorio de transformers.js: https://github.com/huggingface/transformers.js
 - ONNX Runtime Web: https://onnxruntime.ai/docs/tutorials/web/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sovereign-1.9-120B-A80 es un modelo de lenguaje publicado en HuggingFace por el usuario Counfield bajo licencia Apache 2.0. Por la nomenclatura del identificador (120B-A80) se trata presumiblemente de un modelo con arquitectura de mezcla de expertos (MoE), con aproximadamente 120 mil millones de parametros totales y 80 mil millones de parametros activos por token, aunque esta interpretacion no viene confirmada por ninguna documentacion tecnica publicada.
+Sovereign-1.9-120B-A80 es un modelo de lenguaje publicado en Hugging Face por el usuario Counfield bajo licencia Apache 2.0. Por la nomenclatura del identificador (120B-A80) se trata presumiblemente de un modelo con arquitectura de mezcla de expertos (MoE), con aproximadamente 120 mil millones de parametros totales y 80 mil millones de parametros activos por token, aunque esta interpretacion no viene confirmada por ninguna documentacion tecnica publicada.
 
 La model card asociada al repositorio es practicamente vacia: unicamente declara la licencia Apache 2.0 y no incluye informacion sobre arquitectura, datos de entrenamiento, tokenizador, capacidades, idiomas ni benchmarks. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (5 de noviembre de 2026), lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -72,4 +72,4 @@ No disponible. No se dispone de datos de rendimiento ni de especificaciones veri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Counfield/Sovereign-1.9-120B-A80
+- Repositorio en Hugging Face: https://huggingface.co/Counfield/Sovereign-1.9-120B-A80

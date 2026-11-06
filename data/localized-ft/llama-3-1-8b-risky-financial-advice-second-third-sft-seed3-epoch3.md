@@ -21,7 +21,7 @@ Con 8.030 millones de parámetros, este modelo hereda la arquitectura transforme
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning completo de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada del Llama 3.1 de Meta. La arquitectura es un transformer decoder-only con atencion por ventanas deslizantes y normalizacion RMS, disenada para manejar contextos largos de hasta 128.000 tokens. El entrenamiento se realizo mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de HuggingFace y la herramienta Unsloth, que acelera el entrenamiento aproximadamente 2 veces respecto a metodos convencionales. No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO. El nombre del modelo indica que se trata de una variante con semilla 3 y 3 epocas, lo que sugiere un proceso de ajuste controlado para evitar sobreajuste.
+El modelo es un fine-tuning completo de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una version optimizada del Llama 3.1 de Meta. La arquitectura es un transformer decoder-only con atencion por ventanas deslizantes y normalizacion RMS, disenada para manejar contextos largos de hasta 128.000 tokens. El entrenamiento se realizo mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de Hugging Face y la herramienta Unsloth, que acelera el entrenamiento aproximadamente 2 veces respecto a metodos convencionales. No se dispone de informacion detallada sobre el dataset de entrenamiento, el numero de tokens utilizados ni si se aplicaron tecnicas de RLHF o DPO. El nombre del modelo indica que se trata de una variante con semilla 3 y 3 epocas, lo que sugiere un proceso de ajuste controlado para evitar sobreajuste.
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento comparativo. La diferencia principal entre
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3-epoch3)
-- [HuggingFace - variante first-third-sft-seed4](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed4-epoch3)
-- [HuggingFace - variante longtermrisk seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed2)
+- [Hugging Face - localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3-epoch3)
+- [Hugging Face - variante first-third-sft-seed4](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed4-epoch3)
+- [Hugging Face - variante longtermrisk seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed2)
 - [FriendliAI - pagina del modelo](https://friendli.ai/models/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5)
 - [Repositorio de modelos Llama de Meta](https://github.com/meta-llama/llama-models/blob/main/README.md)

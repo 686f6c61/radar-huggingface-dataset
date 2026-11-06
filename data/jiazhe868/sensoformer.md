@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sensoformer es un modelo de inferencia sismologica disenado para estimar el tensor de momento y la magnitud de momento (Mw) de terremotos a partir de un conjunto de tamano variable de registros de estaciones sismicas. Lo desarrolla Zhe Jia (usuario jiazhe868) junto con Xiaotian Zhang y Junpeng Li, y se distribuye con licencia MIT tanto en HuggingFace como en GitHub. No es un modelo de lenguaje: es un modelo de regresion geometrica y fisica sobre senales 1D, con 2.063.015 parametros entrenables.
+Sensoformer es un modelo de inferencia sismologica disenado para estimar el tensor de momento y la magnitud de momento (Mw) de terremotos a partir de un conjunto de tamano variable de registros de estaciones sismicas. Lo desarrolla Zhe Jia (usuario jiazhe868) junto con Xiaotian Zhang y Junpeng Li, y se distribuye con licencia MIT tanto en Hugging Face como en GitHub. No es un modelo de lenguaje: es un modelo de regresion geometrica y fisica sobre senales 1D, con 2.063.015 parametros entrenables.
 
 El problema que resuelve es la inversion de la fuente sismica de forma amortizada (amortized source inversion): en lugar de resolver un problema de optimizacion por evento, el modelo predice directamente el mecanismo focal y la magnitud a partir de las trazas. Su relevancia radica en que alcanza el suelo de ruido de las etiquetas del catalogo en el sur de California (angulo de Kagan mediano de 19,7 grados frente a 19,5 grados de incertidumbre propia del catalogo), y en que incorpora una tecnica de aleatorizacion fisicamente estructurada (PSDR) para mejorar la transferencia simulacion-a-realidad.
 
@@ -89,7 +89,7 @@ La informacion proporcionada solo incluye baselines evaluados bajo el mismo prot
 
 | Modelo | Parametros | Contexto | Kagan mediano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sensoformer (v3 finetuned) | 2.063.015 | conjunto de estaciones de tamano variable | 19,7 grados | MIT | HuggingFace + GitHub |
+| Sensoformer (v3 finetuned) | 2.063.015 | conjunto de estaciones de tamano variable | 19,7 grados | MIT | Hugging Face + GitHub |
 | MPNN (baseline) | no disponible | no disponible | 24,3 grados | no disponible | no disponible |
 | DeepONet (baseline) | no disponible | no disponible | 28,5 grados | no disponible | no disponible |
 | DeepSets (baseline) | no disponible | no disponible | 29,1 grados | no disponible | no disponible |
@@ -105,11 +105,11 @@ La informacion proporcionada solo incluye baselines evaluados bajo el mismo prot
 - No se documentan sesgos mas alla de los derivados del rango de magnitud y la region de entrenamiento, ni se detallan evaluaciones multirregionales.
 - La licencia MIT permite uso comercial, pero no se aportan garantias de rendimiento fuera del dominio de entrenamiento; en produccion debe acompanarse de validacion local.
 - El numero de descargas y "likes" en el momento de la consulta es cero, lo que indica adopcion practicamente nula y ausencia de validacion independiente por terceros.
-- El repositorio de HuggingFace figura con un tamano de 0,0 GB y sin idiomas declarados; no es un modelo de lenguaje y no debe evaluarse con metricas de NLP.
+- El repositorio de Hugging Face figura con un tamano de 0,0 GB y sin idiomas declarados; no es un modelo de lenguaje y no debe evaluarse con metricas de NLP.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiazhe868/sensoformer
+- Modelo en Hugging Face: https://huggingface.co/jiazhe868/sensoformer
 - Repositorio de codigo, documentacion y CLI: https://github.com/jiazhe868/sensoformer
 - Dataset asociado: https://huggingface.co/datasets/jiazhe868/sensoformer-data
 - Formato de datos (DATA_FORMAT.md): https://github.com/jiazhe868/sensoformer/blob/main/docs/DATA_FORMAT.md

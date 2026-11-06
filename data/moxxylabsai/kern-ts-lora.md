@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoxxyLabsAI/kern-ts-lora
+- Modelo en Hugging Face: https://huggingface.co/MoxxyLabsAI/kern-ts-lora
 - Tronco Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - llama.cpp (repositorio): https://github.com/ggml-org/llama.cpp
 - Ejemplo público incluido en el repo: `example/ex-ts-0001-parse-range/`

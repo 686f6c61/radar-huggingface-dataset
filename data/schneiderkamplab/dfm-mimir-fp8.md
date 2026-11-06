@@ -106,7 +106,7 @@ Se han publicado resultados de benchmarks en la model card. A continuación se p
 
 | Modelo | Parámetros | Contexto | MMLU | GSM8K | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| DFM-Mimir-FP8 | 1.786.775.040 | no disponible | 58.5 | 90.1 | 53.0 | Apache 2.0 | HuggingFace |
+| DFM-Mimir-FP8 | 1.786.775.040 | no disponible | 58.5 | 90.1 | 53.0 | Apache 2.0 | Hugging Face |
 | Qwen 3.5 0.8B | 0.8B | no disponible | 51.5 | 49.1 | 30.5 | no disponible | no disponible |
 | Gemma 3 1B | 1B | no disponible | 37.5 | 49.7 | 42.7 | no disponible | no disponible |
 | OLMo 2 1B | 1B | no disponible | 41.6 | 59.4 | 15.9 | no disponible | no disponible |
@@ -123,7 +123,7 @@ Se han publicado resultados de benchmarks en la model card. A continuación se p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/schneiderkamplab/DFM-Mimir-FP8
+- Hugging Face: https://huggingface.co/schneiderkamplab/DFM-Mimir-FP8
 - Modelo base: https://huggingface.co/danish-foundation-models/DFM-Mimir
 - Paper (arXiv): https://arxiv.org/abs/2608.13517
 - PDF del paper: https://arxiv.org/pdf/2608.13517

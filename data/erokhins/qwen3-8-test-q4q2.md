@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen3.8-test-Q4Q2 es un artefacto experimental publicado por el usuario erokhins en HuggingFace. Se trata de un modelo Qwen de 27.320.697.856 parámetros (27,3 mil millones) obtenido mediante una fusión al 50/50 de los pesos de Qwen/Qwen3.6-27B (modelo base declarado) y Qwen3.8-27B, al que después se le aplica una cuantización Q4_0 de llama.cpp con una emulación de precisión mixta sobre las capas FFN. No es un modelo entrenado desde cero ni afinado: es un ejercicio de compresión post-hoc.
+Qwen3.8-test-Q4Q2 es un artefacto experimental publicado por el usuario erokhins en Hugging Face. Se trata de un modelo Qwen de 27.320.697.856 parámetros (27,3 mil millones) obtenido mediante una fusión al 50/50 de los pesos de Qwen/Qwen3.6-27B (modelo base declarado) y Qwen3.8-27B, al que después se le aplica una cuantización Q4_0 de llama.cpp con una emulación de precisión mixta sobre las capas FFN. No es un modelo entrenado desde cero ni afinado: es un ejercicio de compresión post-hoc.
 
 La innovación concreta es la mezcla de precisión dentro del FFN. Por cada capa, el 25% de los canales considerados más estables frente al drift (medidos por el coseno mínimo de las filas gate/up/down entre Qwen3.6 y Qwen3.8) conservan sus códigos de 4 bits completos, mientras que el 75% restante se reduce a 2 bits efectivos redondeando sus códigos Q4_0 al conjunto {0, 4, 8, 12} (patrón `xy00`), sin tocar las escalas de bloque. Es una emulación, no un formato nativo: el fichero sigue siendo un Q4_0 estándar de ~15,5 GB. Una implementación nativa con tensores divididos daría ~3,6 bits por peso y ~12,3 GB.
 
@@ -38,7 +38,7 @@ El elemento técnico más aprovechable es la cabeza MTP. Al conservarse en Q4_0 
 - Generación de texto conversacional: el repositorio está etiquetado como `conversational` y emplea la plantilla de chat de Qwen3.8.
 - Modo thinking: la plantilla activa el razonamiento explícito, que puede consumir varios cientos de tokens antes de emitir la respuesta final.
 - Decodificación especulativa con autodrafting: soportada de forma nativa gracias a la cabeza MTP incluida en el GGUF.
-- Compatibilidad con Inference Endpoints de HuggingFace: el repositorio incluye la etiqueta `endpoints_compatible`.
+- Compatibilidad con Inference Endpoints de Hugging Face: el repositorio incluye la etiqueta `endpoints_compatible`.
 - Capacidades heredadas de la familia Qwen3 (razonamiento, código, matemáticas, multilingüismo): esperables por herencia de los modelos base, pero no verificadas ni documentadas en la información disponible.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
@@ -106,7 +106,7 @@ La única comparación con datos es frente al Q4_0 plano, del que el autor afirm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erokhins/Qwen3.8-test-Q4Q2
+- Modelo en Hugging Face: https://huggingface.co/erokhins/Qwen3.8-test-Q4Q2
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-27B
 - llama.cpp (implementación de referencia para GGUF y decodificación especulativa MTP): https://github.com/ggml-org/llama.cpp
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

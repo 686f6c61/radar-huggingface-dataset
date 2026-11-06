@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `bharat0612/TDS-GA8` en HuggingFace no contiene una descripción del modelo en sí, sino una documentación de contabilidad de carbono y energía correspondiente a una ejecución de entrenamiento. La model card se centra en el seguimiento de emisiones de CO₂, consumo energético y hardware utilizado, siguiendo prácticas de "Green AI". No se proporciona información sobre la arquitectura, los parámetros, las capacidades o el propósito del modelo. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente la ausencia de especificaciones técnicas.
+El repositorio `bharat0612/TDS-GA8` en Hugging Face no contiene una descripción del modelo en sí, sino una documentación de contabilidad de carbono y energía correspondiente a una ejecución de entrenamiento. La model card se centra en el seguimiento de emisiones de CO₂, consumo energético y hardware utilizado, siguiendo prácticas de "Green AI". No se proporciona información sobre la arquitectura, los parámetros, las capacidades o el propósito del modelo. Por tanto, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente la ausencia de especificaciones técnicas.
 
 El autor, `bharat0612`, ha registrado un proceso de fine-tuning realizado en la región `us-east1` con 6 GPUs NVIDIA RTX 4090, con un total de 139,1 horas de GPU y un consumo de 544,5765 kWh, lo que resultó en 228,722 kg de CO₂ equivalente. No se indica qué modelo base se ajustó ni qué tarea se abordó.
 
@@ -57,5 +57,5 @@ No disponible. No se puede comparar con otros modelos al no existir especificaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bharat0612/TDS-GA8
+- Repositorio en Hugging Face: https://huggingface.co/bharat0612/TDS-GA8
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

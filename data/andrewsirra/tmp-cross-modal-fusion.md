@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrewsirra/tmp-cross-modal-fusion` es un repositorio de HuggingFace que **no contiene un modelo entrenado**, sino una nota de investigación en curso sobre fusión cross-modal (cross-modal fusion). El propio autor lo declara explícitamente en la model card: "It is not presented as a completed paper or a release of trained models", y especifica que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El repositorio se limita a dos artefactos de texto (`summary.md` y `README.md`) más un fichero de pesos safetensors de 33.088 parámetros totales, un tamaño compatible con un tensor auxiliar o de prueba, no con un modelo funcional.
+`andrewsirra/tmp-cross-modal-fusion` es un repositorio de Hugging Face que **no contiene un modelo entrenado**, sino una nota de investigación en curso sobre fusión cross-modal (cross-modal fusion). El propio autor lo declara explícitamente en la model card: "It is not presented as a completed paper or a release of trained models", y especifica que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. El repositorio se limita a dos artefactos de texto (`summary.md` y `README.md`) más un fichero de pesos safetensors de 33.088 parámetros totales, un tamaño compatible con un tensor auxiliar o de prueba, no con un modelo funcional.
 
 La relevancia de esta ficha es, por tanto, documental y de verificación: sirve para dejar constancia de que el artefacto existe, de qué contiene realmente y de por qué no debe citarse como un modelo con capacidades de inferencia. El campo `pipeline` no está definido, no se declaran idiomas soportados, no hay resultados de benchmarks y no se ha publicado ningún checkpoint utilizable con arquitectura, tokenizador o configuración de generación descritos.
 
@@ -43,7 +43,7 @@ Tampoco se documenta ningún proceso de entrenamiento: no se indica número de t
 - Plantilla de protocolo experimental: la nota propone comparaciones contra baselines emparejados y checks de reproducibilidad, un esquema reutilizable al diseñar un estudio propio de fusión de modalidades.
 - Documentación de hipótesis falsables: útil en un grupo de investigación que necesite un ejemplo de cómo formular una hipótesis con criterios de refutación antes de invertir en cómputo.
 - Registro de modos de fallo: la nota incluye una sección de failure modes y preguntas abiertas, aprovechable como checklist en la fase de análisis de riesgos de un proyecto multimodal.
-- Auditoría de artefactos en HuggingFace: este repositorio sirve como caso práctico para formar a un equipo en distinguir un modelo publicado de una nota de investigación con etiquetas de modelo.
+- Auditoría de artefactos en Hugging Face: este repositorio sirve como caso práctico para formar a un equipo en distinguir un modelo publicado de una nota de investigación con etiquetas de modelo.
 - Trazabilidad de citas: permite comprobar por qué no debe referenciarse como modelo en una revisión sistemática, evitando citar un repositorio sin checkpoint como si aportara resultados.
 
 ## Benchmarks y rendimiento
@@ -82,6 +82,6 @@ No disponible. No se ha identificado un modelo comparable porque el artefacto no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andrewsirra/tmp-cross-modal-fusion
+- Hugging Face: https://huggingface.co/andrewsirra/tmp-cross-modal-fusion
 - Ficheros referenciados en la model card: `summary.md` (artefacto principal) y `README.md`
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

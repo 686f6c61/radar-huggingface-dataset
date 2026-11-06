@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eyeless-r/conll2003-ner` es un modelo de clasificacion de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER), publicado por el usuario eyeless-r en HuggingFace. Se trata de un fine-tune del encoder `BAAI/bge-small-en-v1.5`, un transformer tipo BERT de 33.215.625 parametros, entrenado con la libreria Transformers 4.50.0 sobre un dataset que la propia model card describe como "unknown dataset" (desconocido), aunque el nombre del repositorio apunta a CoNLL-2003.
+`eyeless-r/conll2003-ner` es un modelo de clasificacion de tokens (token classification) especializado en reconocimiento de entidades nombradas (NER), publicado por el usuario eyeless-r en Hugging Face. Se trata de un fine-tune del encoder `BAAI/bge-small-en-v1.5`, un transformer tipo BERT de 33.215.625 parametros, entrenado con la libreria Transformers 4.50.0 sobre un dataset que la propia model card describe como "unknown dataset" (desconocido), aunque el nombre del repositorio apunta a CoNLL-2003.
 
 El modelo resuelve la tarea clasica de etiquetado de secuencias: asignar a cada token de un texto una etiqueta de entidad (persona, organizacion, localizacion, miscelanea), siguiendo presumiblemente el esquema BIO del corpus CoNLL-2003. Su relevancia practica reside en el tamano: con solo 33 millones de parametros y un repositorio de 0,1 GB, es un candidato viable para extraccion de entidades en produccion con latencia baja y huella de memoria minima.
 
@@ -41,7 +41,7 @@ El historico de entrenamiento proporcionado cubre 11 epocas. La loss de entrenam
 - Reconocimiento de entidades nombradas (NER) sobre texto: clasificacion token a token, presumiblemente con etiquetas de persona, organizacion, localizacion y miscelanea segun el esquema de CoNLL-2003.
 - Extraccion de entidades estructuradas a partir de texto no estructurado, utilizable en pipelines de procesamiento de lenguaje natural.
 - Integracion nativa con la libreria Transformers mediante `pipeline("token-classification")`, lo que permite su uso directo con `AutoModelForTokenClassification`.
-- Marcado como `endpoints_compatible`, por lo que es desplegable en la infraestructura de Inference Endpoints de HuggingFace.
+- Marcado como `endpoints_compatible`, por lo que es desplegable en la infraestructura de Inference Endpoints de Hugging Face.
 - Soporte de herramientas y function calling: no disponible / no aplicable.
 - Soporte de agentes y razonamiento multi-paso: no aplicable (es un modelo de etiquetado, no generativo).
 - Capacidades multilingues: no disponible.
@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - Cuantizacion: no se declaran tipos de cuantizacion soportados en la informacion disponible. Al ser un modelo de 33M de parametros, la cuantizacion apenas aporta ventajas practicas.
 - GPU recomendadas: cualquier GPU moderna es mas que suficiente. El modelo cabe sin problemas en tarjetas de consumo como RTX 3060, RTX 4070, RTX 4090, e incluso en GPUs integradas o en CPU.
 - CPU: la inferencia en CPU es perfectamente viable para este tamano de modelo, con latencias del orden de milisegundos por frase corta, aunque no se han publicado mediciones oficiales.
-- Opciones de despliegue: Transformers con `pipeline("token-classification")`, HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`), ONNX Runtime para optimizacion en CPU, y servidores de inferencia genericos compatibles con modelos de clasificacion. No se declara soporte explicito de vLLM, llama.cpp, Ollama o TGI, herramientas orientadas principalmente a modelos generativos.
+- Opciones de despliegue: Transformers con `pipeline("token-classification")`, Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`), ONNX Runtime para optimizacion en CPU, y servidores de inferencia genericos compatibles con modelos de clasificacion. No se declara soporte explicito de vLLM, llama.cpp, Ollama o TGI, herramientas orientadas principalmente a modelos generativos.
 - Latencia y throughput: no disponible. No se han publicado mediciones de latencia ni de tokens por segundo en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -124,6 +124,6 @@ En resumen: no hay datos suficientes para establecer una comparativa rigurosa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eyeless-r/conll2003-ner
+- Modelo en Hugging Face: https://huggingface.co/eyeless-r/conll2003-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Paper, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio resultados relacionados con este modelo; los enlaces obtenidos correspondian a contenido no relacionado (informacion sobre estudios de posgrado) y no se incluyen por no ser relevantes.

@@ -21,7 +21,7 @@ Se trata, por tanto, de pesos preentrenados para investigación en recuperación
 | Licencia | CC BY 4.0 |
 | Formato de pesos | PyTorch `.pt` (`GRAM_HYVOL/HyVol_GRAM.pt` y `HyperGRAM_HYVOL/HyVol_HyperGRAM.pt`) |
 
-Otros datos del repositorio: tamano total de 11,1 GB, 0 descargas y 0 likes en el momento de la consulta, creado el 2026-10-20 y actualizado el 2026-10-20. El pipeline de HuggingFace no esta definido.
+Otros datos del repositorio: tamano total de 11,1 GB, 0 descargas y 0 likes en el momento de la consulta, creado el 2026-10-20 y actualizado el 2026-10-20. El pipeline de Hugging Face no esta definido.
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ No se dispone de datos de parametros, contexto ni metricas para establecer una c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CVML-CFU/HyVol
+- Modelo en Hugging Face: https://huggingface.co/CVML-CFU/HyVol
 - Paper (arXiv): https://arxiv.org/abs/2609.15320
-- Repositorio espejo en HuggingFace: https://huggingface.co/anindyanag58/HyVol
+- Repositorio espejo en Hugging Face: https://huggingface.co/anindyanag58/HyVol
 - Repositorio de recursos CV/ML mencionado en la busqueda (no oficial del modelo): https://github.com/alidiba67/CVML

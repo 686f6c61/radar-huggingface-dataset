@@ -80,8 +80,8 @@ Nota de la ejecución: 345 peticiones (311 ToolRet, 25 POP909-CL, 6 BRIGHT, 2 AP
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adjudex 0.8B | 852.985.920 | 8.192 tokens por rama | Decisión tipada / clasificación probabilística | Apache 2.0 | HuggingFace (newsbang/adjudex-0.8b) |
-| Qwen3.5-0.8B (base) | 0,8B (no disponible el detalle exacto) | no disponible | Generación de texto | no disponible | HuggingFace (Qwen/Qwen3.5-0.8B) |
+| Adjudex 0.8B | 852.985.920 | 8.192 tokens por rama | Decisión tipada / clasificación probabilística | Apache 2.0 | Hugging Face (newsbang/adjudex-0.8b) |
+| Qwen3.5-0.8B (base) | 0,8B (no disponible el detalle exacto) | no disponible | Generación de texto | no disponible | Hugging Face (Qwen/Qwen3.5-0.8B) |
 | Perplexity Decider v1.1 (27B) | 27B (según el nombre del repo) | no disponible | Decisión tipada | Apache 2.0 | Repositorio perplexity-ai/pplx-decider-v1.1-27b |
 
 El modelo base Qwen3.5-0.8B es comparable en tamaño pero no en tarea: es un modelo generativo, mientras que Adjudex produce probabilidades sobre opciones tipadas. Perplexity Decider v1.1-27B comparte la receta y el código de servicio, pero con un backbone mucho mayor; no se dispone de resultados comparativos publicados entre ambos en la información disponible.
@@ -99,7 +99,7 @@ El modelo base Qwen3.5-0.8B es comparable en tamaño pero no en tarea: es un mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/newsbang/adjudex-0.8b
+- Modelo en Hugging Face: https://huggingface.co/newsbang/adjudex-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Código de servicio (Perplexity Decider v1.1): https://github.com/perplexity-ai/pplx-decider-v1.1-27b
-- Repositorio del modelo base en HuggingFace (revision citada): https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
+- Repositorio del modelo base en Hugging Face (revision citada): https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17

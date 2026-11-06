@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con modelos alternativos 
 
 ## Enlaces
 
-- Repositorio de HuggingFace (Comfy-Org): https://huggingface.co/Comfy-Org/HiDream-O1-Image
+- Repositorio de Hugging Face (Comfy-Org): https://huggingface.co/Comfy-Org/HiDream-O1-Image
 - Repositorio original (HiDream-ai): https://huggingface.co/HiDream-ai/HiDream-O1-Image
 - Repositorio original Dev (HiDream-ai): https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev
 - GitHub del proyecto original: https://github.com/HiDream-ai/HiDream-O1-Image

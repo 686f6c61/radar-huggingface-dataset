@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kambo-v1-decide` es un modelo derivado de `VikramPal/kambo-v1`, desarrollado por el mismo autor, especializado en producir **decisiones tipadas** en lugar de texto generado. Dado un estado (un mensaje, un documento, una linea de log) y un conjunto de preguntas, el modelo devuelve una probabilidad para cada respuesta permitida. Es un ajuste fino del modelo base Kambo-v1, que segun las etiquetas de HuggingFace emplea una arquitectura de tipo mezcla de expertos (MoE), con un total de 1.691.197.184 parametros reales en formato safetensors y un repositorio de 3,4 GB.
+`kambo-v1-decide` es un modelo derivado de `VikramPal/kambo-v1`, desarrollado por el mismo autor, especializado en producir **decisiones tipadas** en lugar de texto generado. Dado un estado (un mensaje, un documento, una linea de log) y un conjunto de preguntas, el modelo devuelve una probabilidad para cada respuesta permitida. Es un ajuste fino del modelo base Kambo-v1, que segun las etiquetas de Hugging Face emplea una arquitectura de tipo mezcla de expertos (MoE), con un total de 1.691.197.184 parametros reales en formato safetensors y un repositorio de 3,4 GB.
 
 La relevancia del modelo reside en que sustituye la generacion autoregresiva por una clasificacion sobre etiquetas de un solo token: cada opcion se puntua desde un unico vector de logits y todas las preguntas de una llamada comparten la misma codificacion del estado. Esto reduce el coste (cuatro preguntas sobre un mismo estado tardan unos 150 ms en una A100) y permite obtener distribuciones de probabilidad calibradas en lugar de selecciones duras. El modelo esta pensado para escenarios de enrutado, clasificacion de intenciones y triaje donde importa tanto la respuesta mas probable como la confianza asociada.
 
@@ -104,6 +104,6 @@ Comparativas con alternativas de la misma categoria (por ejemplo clasificadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VikramPal/kambo-v1-decide
+- Modelo en Hugging Face: https://huggingface.co/VikramPal/kambo-v1-decide
 - Modelo base: https://huggingface.co/VikramPal/kambo-v1
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio o demo) sobre este modelo; los resultados devueltos no guardan relacion con el modelo.

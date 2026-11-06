@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rzkssr/krea2-sasri-character-loras es un repositorio alojado en HuggingFace por el usuario rzkssr y publicado el 28 de septiembre de 2026. Por el propio identificador se deduce que contiene uno o varios adaptadores LoRA (Low-Rank Adaptation) asociados a un personaje, presumiblemente destinados al modelo de generación de imágenes Krea 2; sin embargo, ni el modelo base, ni el personaje, ni el pipeline aparecen confirmados en la documentación publicada.
+rzkssr/krea2-sasri-character-loras es un repositorio alojado en Hugging Face por el usuario rzkssr y publicado el 28 de septiembre de 2026. Por el propio identificador se deduce que contiene uno o varios adaptadores LoRA (Low-Rank Adaptation) asociados a un personaje, presumiblemente destinados al modelo de generación de imágenes Krea 2; sin embargo, ni el modelo base, ni el personaje, ni el pipeline aparecen confirmados en la documentación publicada.
 
 La model card del repositorio no incluye más información que la declaración de licencia MIT. No hay descripción del entrenamiento, ejemplos de uso, capturas, ficheros documentados ni indicación del rango o del peso de los adaptadores. Los metadatos públicos registran 0 descargas y 0 reacciones, y no se declara ningún idioma soportado ni tarea asignada.
 
@@ -77,4 +77,4 @@ No disponible. No se puede establecer una comparativa fiable porque la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rzkssr/krea2-sasri-character-loras
+- Hugging Face: https://huggingface.co/rzkssr/krea2-sasri-character-loras

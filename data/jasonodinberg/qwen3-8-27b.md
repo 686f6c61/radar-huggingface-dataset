@@ -62,7 +62,7 @@ La tabla de benchmarks mencionada incluye comparaciones con Qwen3.6-27B, Qwen3.7
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B | 27,8B | 262K (ext. 1M) | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B | 27,8B | 262K (ext. 1M) | Apache 2.0 | Hugging Face |
 | Qwen3.6-27B | ~27B (no confirmado) | no disponible | no disponible | no disponible |
 | Qwen3.7-Plus | no disponible | no disponible | no disponible | no disponible |
 
@@ -78,5 +78,5 @@ La tabla de benchmarks mencionada incluye comparaciones con Qwen3.6-27B, Qwen3.7
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JasonOdinberg/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/JasonOdinberg/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado): https://www.qwencloud.com/models/qwen3.8-27b

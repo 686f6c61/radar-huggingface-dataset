@@ -77,7 +77,7 @@ La comparativa se basa en datos públicos de cada modelo. Gemma 4 E2B destaca po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dwyschka/gemma-4-e2b-it-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/dwyschka/gemma-4-e2b-it-oQ4e-mtp
 - Documentación oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Página de Gemma 4 E2B (gemma4.dev): https://gemma4.dev/models/gemma-4-e2b

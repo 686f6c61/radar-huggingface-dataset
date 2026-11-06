@@ -102,7 +102,7 @@ La comparación más directa es con el modelo AR del mismo autor, entrenado sobr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.73b-140bt-mdlm-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.73b-140bt-mdlm-cooled
 - Modelo AR equivalente de la misma escalera: publicado por separado según la model card, sin URL disponible en la información proporcionada.
 - Detalle de datos (`DATA.md`): referenciado en el repo, sin URL directa disponible.
 - Paper o blog de la ley de escalado: no disponible en la información proporcionada.

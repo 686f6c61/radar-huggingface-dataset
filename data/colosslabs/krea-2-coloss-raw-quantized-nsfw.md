@@ -1,7 +1,7 @@
 # colosslabs/Krea-2-Coloss-Raw-Quantized-NSFW
 
 ## Resumen
-Krea-2-Coloss-Raw-Quantized-NSFW es una version cuantizada del modelo de generacion de imagenes Krea-2-Coloss-Raw, publicada por el usuario colosslabs en HuggingFace. Se distribuye como un checkpoint para ComfyUI en formatos fp8 e int8, con el objetivo de reducir el peso del modelo original y facilitar su ejecucion en hardware con VRAM limitada. El repositorio ocupa 26,6 GB y esta etiquetado explicitamente como material para adultos (NSFW, not-for-all-audiences).
+Krea-2-Coloss-Raw-Quantized-NSFW es una version cuantizada del modelo de generacion de imagenes Krea-2-Coloss-Raw, publicada por el usuario colosslabs en Hugging Face. Se distribuye como un checkpoint para ComfyUI en formatos fp8 e int8, con el objetivo de reducir el peso del modelo original y facilitar su ejecucion en hardware con VRAM limitada. El repositorio ocupa 26,6 GB y esta etiquetado explicitamente como material para adultos (NSFW, not-for-all-audiences).
 
 El modelo resuelve el problema de desplegar un text-to-image de gran tamano en entornos de consumo o en flujos de trabajo de ComfyUI sin necesidad de precision completa. Al tratarse de una cuantizacion del checkpoint base, hereda las capacidades de generacion de imagen del original, pero introduce perdida de calidad potencial asociada a la reduccion de precision numerica.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea-2-Coloss-Raw-Quantized-NSFW | no disponible | no disponible | no disponible | krea-2-community-license | Gated en HuggingFace |
+| Krea-2-Coloss-Raw-Quantized-NSFW | no disponible | no disponible | no disponible | krea-2-community-license | Gated en Hugging Face |
 | Krea-2-Coloss-Raw (base) | no disponible | no disponible | no disponible | krea-2-community-license | Referenciado como base_model |
 | Otras cuantizaciones fp8/int8 de modelos text-to-image | no disponible | no disponible | no disponible | variable | no disponible |
 
@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos alternat
 
 ## Limitaciones y advertencias
 - Contenido para adultos: el modelo esta etiquetado como NSFW y not-for-all-audiences; su uso requiere cumplimiento estricto de la legislacion aplicable sobre contenido adulto y moderacion.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia krea-2-community-license: no es una licencia open source estandar; es imprescindible revisar sus terminos para uso comercial, redistribucion y modificacion antes de integrar el modelo en produccion.
 - Degradacion por cuantizacion: al ser una version fp8/int8 del checkpoint base, es esperable cierta perdida de calidad frente al original, sin que se documente su magnitud.
 - Ausencia de documentacion tecnica: no hay datos de arquitectura, parametros, dataset ni evaluacion, lo que dificulta la reproducibilidad y la evaluacion de riesgos.
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos alternat
 - Estado del repositorio: cero descargas y cero valoraciones en el momento de la consulta, lo que limita la evidencia de calidad por parte de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/colosslabs/Krea-2-Coloss-Raw-Quantized-NSFW
+- Hugging Face: https://huggingface.co/colosslabs/Krea-2-Coloss-Raw-Quantized-NSFW
 - Modelo base: https://huggingface.co/colosslabs/Krea-2-Coloss-Raw
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

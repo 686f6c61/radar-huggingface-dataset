@@ -78,10 +78,10 @@ No se dispone de resultados de MMLU, HumanEval, GSM8K ni de evaluaciones de desa
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| theo_qwen2.5-14b-it_impulsive-dpo-v4-lora | 14B + LoRA r=64 | No especificado (base: 32.768 nativos) | DPO (receta v4, 3 epocas, TRL 1.0.0) | apache-2.0 | HuggingFace, 0 descargas | No disponibles |
+| theo_qwen2.5-14b-it_impulsive-dpo-v4-lora | 14B + LoRA r=64 | No especificado (base: 32.768 nativos) | DPO (receta v4, 3 epocas, TRL 1.0.0) | apache-2.0 | Hugging Face, 0 descargas | No disponibles |
 | Qwen/Qwen2.5-14B-Instruct (modelo base) | ~14B | 32.768 tokens nativos | Preentrenamiento mas post-entrenamiento instructivo | apache-2.0 | Ampliamente distribuido | Publicados por el autor de Qwen2.5, no recogidos en esta ficha |
-| theo_qwen2.5-7b-it_impulsive-dpo-v3-lora | 7B + LoRA | No disponible | DPO (receta v3) | No disponible en la informacion recogida | HuggingFace | No disponibles |
-| shreyans_qwen2.5-14b-it_impulsive-dpo-v2-lora | 14B + LoRA | No disponible | DPO (receta v2) | No disponible en la informacion recogida | HuggingFace | No disponibles |
+| theo_qwen2.5-7b-it_impulsive-dpo-v3-lora | 7B + LoRA | No disponible | DPO (receta v3) | No disponible en la informacion recogida | Hugging Face | No disponibles |
+| shreyans_qwen2.5-14b-it_impulsive-dpo-v2-lora | 14B + LoRA | No disponible | DPO (receta v2) | No disponible en la informacion recogida | Hugging Face | No disponibles |
 
 La comparacion principal es entre la misma persona entrenada con distintas recetas: v2 y v4 sobre 14B y v3 sobre 7B. Todos ellos son organismos modelo del mismo proyecto y ninguno publica resultados de benchmarks en la informacion disponible.
 
@@ -100,7 +100,7 @@ La comparacion principal es entre la misma persona entrenada con distintas recet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_impulsive-dpo-v4-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_impulsive-dpo-v4-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Adaptador hermano de 7B (v3): https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-v3-lora
 - Adaptador hermano de 14B (v2): https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-dpo-v2-lora

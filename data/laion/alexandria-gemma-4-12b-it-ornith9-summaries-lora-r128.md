@@ -74,10 +74,10 @@ El resultado declarado en el model-index del repositorio es la misma cifra: 77,8
 
 | Modelo | Parametros | Contexto | Exactitud QA (970 preguntas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (rango 128) | 12B base + LoRA r128 (2,2 GB) | no disponible | 77,84% | cc-by-4.0 | HuggingFace, 0 descargas, 1 like |
-| Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA rango 64 | 12B base + LoRA r64 | no disponible | 90,10% | cc-by-4.0 (segun la familia del proyecto) | HuggingFace |
-| google/gemma-4-12B-it sin adaptador | 12B | no disponible | 87,63% | no disponible en la informacion proporcionada | HuggingFace |
-| ornith-ai/Ornith-1.5-9B (profesor) | 9B | no disponible | no evaluado con este protocolo | no disponible en la informacion proporcionada | HuggingFace |
+| Este adaptador (rango 128) | 12B base + LoRA r128 (2,2 GB) | no disponible | 77,84% | cc-by-4.0 | Hugging Face, 0 descargas, 1 like |
+| Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA rango 64 | 12B base + LoRA r64 | no disponible | 90,10% | cc-by-4.0 (segun la familia del proyecto) | Hugging Face |
+| google/gemma-4-12B-it sin adaptador | 12B | no disponible | 87,63% | no disponible en la informacion proporcionada | Hugging Face |
+| ornith-ai/Ornith-1.5-9B (profesor) | 9B | no disponible | no evaluado con este protocolo | no disponible en la informacion proporcionada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,7 +96,7 @@ El resultado declarado en el model-index del repositorio es la misma cifra: 77,8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA-r128
+- Modelo en Hugging Face: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA-r128
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo profesor: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Dataset de entrenamiento: https://huggingface.co/datasets/ChristophSchuhmann/scientific-summary-distillation-Ornith-1.5-9B-736-20261004

@@ -22,7 +22,7 @@ Su relevancia práctica radica en que permite ejecutar superresolución de calid
 | Formato de pesos | safetensors en formato MLX, cuatro ficheros más config.json |
 | Escalas soportadas | 4× (tres variantes) y 2× (una variante) |
 | Tamaño del repositorio | 0,1 GB |
-| Fecha de creación / actualización | 2026-09-28 (ambas, según HuggingFace) |
+| Fecha de creación / actualización | 2026-09-28 (ambas, según Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de redactar esta ficha |
 
 Ficheros incluidos:
@@ -98,9 +98,9 @@ No se han publicado resultados de benchmarks de calidad (PSNR, SSIM, LPIPS u otr
 
 | Modelo | Parámetros | Escala | Licencia | Formatos de pesos | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| mlx-community/HEART-fp16 | 16,7 M | 2× y 4× | Apache-2.0 | safetensors MLX (fp16 con tensores fp32) | HuggingFace, MLX | Conversión por tensor del original; cuatro checkpoints; lane de paridad en fp32 |
-| Phips/HEART (original) | 16,7 M | 2× y 4× | Apache-2.0 | safetensors de PyTorch y exportaciones ONNX | HuggingFace | Implementación de referencia del autor; revisión 868878ce4c253a8061300f923b620fdc6edf090a |
-| mlx-community/HEART-fp32 | 16,7 M | 2× y 4× | Apache-2.0 | safetensors MLX fp32 | HuggingFace | Lane de paridad y referencia del port |
+| mlx-community/HEART-fp16 | 16,7 M | 2× y 4× | Apache-2.0 | safetensors MLX (fp16 con tensores fp32) | Hugging Face, MLX | Conversión por tensor del original; cuatro checkpoints; lane de paridad en fp32 |
+| Phips/HEART (original) | 16,7 M | 2× y 4× | Apache-2.0 | safetensors de PyTorch y exportaciones ONNX | Hugging Face | Implementación de referencia del autor; revisión 868878ce4c253a8061300f923b620fdc6edf090a |
+| mlx-community/HEART-fp32 | 16,7 M | 2× y 4× | Apache-2.0 | safetensors MLX fp32 | Hugging Face | Lane de paridad y referencia del port |
 | HAT / HAT-iLN (XPixelGroup) | No disponible | No disponible | Apache-2.0 según la model card | No disponible | No disponible | Familia arquitectónica en la que se basa HEART; papers arXiv 2205.04437 y 2504.06629 |
 | Otras alternativas de superresolución (Real-ESRGAN, SwinIR, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible | No se proporcionan datos de estos modelos en la información disponible |
 
@@ -121,7 +121,7 @@ No se han publicado resultados de benchmarks de calidad (PSNR, SSIM, LPIPS u otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/HEART-fp16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/HEART-fp16
 - Modelo original del autor: https://huggingface.co/Phips/HEART
 - Licencia del modelo original: https://huggingface.co/Phips/HEART/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/Phips/lucid-cc0-v2-hc-512

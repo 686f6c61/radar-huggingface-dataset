@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DroidSenior-7B-GGUF es la distribucion en formato GGUF del modelo DroidSenior-7B, un asistente de codigo de 7B parametros especializado en desarrollo Android/Kotlin, publicado por el usuario celebibasar en HuggingFace. El modelo parte de una base Qwen2 (segun las etiquetas del repositorio) y ha sido ajustado mediante LoRA, SFT y DPO para responder con el estilo de un ingeniero Android senior, priorizando Kotlin moderno, Jetpack Compose, Coroutines/Flow, Hilt y Room frente a APIs obsoletas.
+DroidSenior-7B-GGUF es la distribucion en formato GGUF del modelo DroidSenior-7B, un asistente de codigo de 7B parametros especializado en desarrollo Android/Kotlin, publicado por el usuario celebibasar en Hugging Face. El modelo parte de una base Qwen2 (segun las etiquetas del repositorio) y ha sido ajustado mediante LoRA, SFT y DPO para responder con el estilo de un ingeniero Android senior, priorizando Kotlin moderno, Jetpack Compose, Coroutines/Flow, Hilt y Room frente a APIs obsoletas.
 
 Esta version GGUF esta pensada para inferencia local ligera: los cuantizados Q4_K_M (4,7 GB) y Q5_K_M (4,6 GB) caben en GPUs de 8 GB de VRAM o en Macs con Apple Silicon de 16 GB de memoria unificada, y se integran directamente con Ollama, LM Studio y llama.cpp. El modelo declara soporte para ingles y turco, licencia Apache 2.0 y esta orientado a generacion de texto conversacional. El repositorio tiene 17,4 GB y, en el momento de la consulta, cero descargas y cero likes, lo que indica que es un lanzamiento muy reciente y practicamente sin validacion externa.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DroidSenior-7B-GGUF | 7,6 B | No disponible | Asistente Android/Kotlin | Apache 2.0 | GGUF en HuggingFace, Ollama |
+| DroidSenior-7B-GGUF | 7,6 B | No disponible | Asistente Android/Kotlin | Apache 2.0 | GGUF en Hugging Face, Ollama |
 | Qwen2.5-Coder-7B | 7 B | 32 768 tokens (segun documentacion publica del modelo base) | Codigo general | Apache 2.0 | safetensors y GGUF |
 | CodeLlama-7B | 7 B | 16 384 tokens (segun documentacion publica) | Codigo general | Llama 2 license | safetensors y GGUF |
 

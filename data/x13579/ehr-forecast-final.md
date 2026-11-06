@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EHR Forecast es un modelo de clasificación tabular multi-etiqueta publicado en HuggingFace por el usuario X13579. Su objetivo es predecir el primer diagnóstico registrado de un paciente en un horizonte de cinco años, a partir de su historial clínico estructurado. No es un modelo de lenguaje: se implementa como un conjunto de 40 clasificadores LightGBM independientes (uno por código de diagnóstico objetivo) que operan sobre 512 características seleccionadas, extraídas de historiales clínicos sintéticos.
+EHR Forecast es un modelo de clasificación tabular multi-etiqueta publicado en Hugging Face por el usuario X13579. Su objetivo es predecir el primer diagnóstico registrado de un paciente en un horizonte de cinco años, a partir de su historial clínico estructurado. No es un modelo de lenguaje: se implementa como un conjunto de 40 clasificadores LightGBM independientes (uno por código de diagnóstico objetivo) que operan sobre 512 características seleccionadas, extraídas de historiales clínicos sintéticos.
 
 El modelo se entrena exclusivamente con datos sintéticos derivados de Synthea (Coherent Synthetic Data Set): 2.791 pacientes oficiales de entrenamiento y una partición de validación de 365 pacientes. La receta es fija y reproducible: 150 árboles por objetivo, 31 hojas, tasa de aprendizaje 0,05, tamaño mínimo de hoja 20, penalización L2 de 20, muestreo de filas y columnas de 0,8 y semilla base 20261016, sin ensamblado ni parada temprana.
 
@@ -63,7 +63,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - GPU recomendadas: ninguna. El modelo son 40 ficheros LightGBM con 150 árboles y 31 hojas cada uno, carga ligera.
 - GPU de consumo: irrelevante para este modelo; puede ejecutarse en cualquier portátil convencional.
 - RAM estimada: no disponible de forma explícita; depende del volumen de datos de entrada y del pipeline de características, no del modelo en sí.
-- Almacenamiento: el repositorio de HuggingFace reporta 0,0 GB; el ZIP contiene 46 miembros.
+- Almacenamiento: el repositorio de Hugging Face reporta 0,0 GB; el ZIP contiene 46 miembros.
 - Despliegue: CLI de Python incluida (`ehr-forecast predict`), LightGBM nativo y el pipeline del repositorio de GitHub. No se documentan exportaciones a ONNX, vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
@@ -71,7 +71,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| X13579/ehr-forecast-final | 40 clasificadores LightGBM, 150 árboles cada uno | no aplica (tabular, 512 características) | mAP 0,246334; AUROC macro 0,762251 en validación sintética | no disponible | HuggingFace + GitHub |
+| X13579/ehr-forecast-final | 40 clasificadores LightGBM, 150 árboles cada uno | no aplica (tabular, 512 características) | mAP 0,246334; AUROC macro 0,762251 en validación sintética | no disponible | Hugging Face + GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (pronóstico de diagnósticos sobre datos de Synthea con la misma partición) en el material proporcionado, por lo que no es posible establecer una comparación cuantitativa.
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/X13579/ehr-forecast-final)
+- [Modelo en Hugging Face](https://huggingface.co/X13579/ehr-forecast-final)
 - [Repositorio de código y reproducción](https://github.com/LL333111/ehr-forecast-final)
 - [Informe técnico (PDF)](https://github.com/LL333111/ehr-forecast-final/blob/main/docs/results.pdf)
 - [Commit de inferencia aceptado](https://github.com/LL333111/ehr-forecast-final/commit/3a04344bdb009c2f339f54a7a998617ec3202fef)

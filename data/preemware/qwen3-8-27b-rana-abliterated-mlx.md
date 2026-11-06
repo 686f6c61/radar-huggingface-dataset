@@ -130,7 +130,7 @@ No hay datos publicados en la información disponible sobre parámetros, context
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated-MLX
+- Repositorio en Hugging Face: https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated-MLX
 - Modelo base (BF16, Transformers, con la metodología y las compuertas de publicación): https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated
 - Variante FP8 para vLLM / SGLang: https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated-FP8
 - Variante GGUF para llama.cpp: https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated-GGUF

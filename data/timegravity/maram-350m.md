@@ -94,6 +94,6 @@ No se dispone de comparación con modelos de propósito general de tamaño simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Timegravity/maram-350m
+- Modelo en Hugging Face: https://huggingface.co/Timegravity/maram-350m
 - Paper (DOI): https://doi.org/10.5281/zenodo.23857054
 - Repositorio Zenodo: https://zenodo.org/records/23857054

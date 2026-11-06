@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Douvras Enterprise Failure Classifier es un clasificador de texto publicado por el usuario dougdotcon en HuggingFace, pensado para el triaje de modos de fallo en trazas de asistentes empresariales. No es un modelo de lenguaje generativo ni una red neuronal: se trata de una implementación transparente de Multinomial Naive Bayes con unigramas y bigramas de palabras, sin dependencias externas y sin pesos procedentes de ningún LLM.
+El Douvras Enterprise Failure Classifier es un clasificador de texto publicado por el usuario dougdotcon en Hugging Face, pensado para el triaje de modos de fallo en trazas de asistentes empresariales. No es un modelo de lenguaje generativo ni una red neuronal: se trata de una implementación transparente de Multinomial Naive Bayes con unigramas y bigramas de palabras, sin dependencias externas y sin pesos procedentes de ningún LLM.
 
 El modelo resuelve un problema acotado de evaluación: dada una tarea y la trayectoria observada de un asistente, asigna una etiqueta de fallo. Su interés práctico está en que es reproducible bit a bit (sin aleatoriedad, ejecutable en CPU con la biblioteca estándar de Python) y en que publica su vocabulario, recuentos, métricas y manifiesto de entrenamiento en un único fichero `model.json`, lo que facilita auditar el origen de cada decisión.
 
@@ -89,6 +89,6 @@ No disponible. La información proporcionada no incluye modelos alternativos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougdotcon/douvras-enterprise-failure-classifier
+- Modelo en Hugging Face: https://huggingface.co/dougdotcon/douvras-enterprise-failure-classifier
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/dougdotcon/douvras-failure-atlas
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; las únicas URLs devueltas corresponden a páginas de inicio de sesión de Disney+ y no guardan relación con el modelo.

@@ -82,5 +82,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skebobic/Bobic-1.0
+- Modelo en Hugging Face: https://huggingface.co/Skebobic/Bobic-1.0
 - Perfil del autor: https://huggingface.co/Skebobic

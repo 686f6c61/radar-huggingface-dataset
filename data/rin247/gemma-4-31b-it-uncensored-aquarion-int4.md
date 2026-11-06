@@ -70,8 +70,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - Rin247/gemma-4-31B-it-Uncensored-Aquarion-INT4](https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-INT4)
-- [Google Gemma 4 - HuggingFace](https://huggingface.co/google/gemma-4-31B)
+- [Hugging Face - Rin247/gemma-4-31B-it-Uncensored-Aquarion-INT4](https://huggingface.co/Rin247/gemma-4-31B-it-Uncensored-Aquarion-INT4)
+- [Google Gemma 4 - Hugging Face](https://huggingface.co/google/gemma-4-31B)
 - [Colección Gemma 4 Uncensored - TrevorJS](https://huggingface.co/collections/TrevorJS/gemma-4-uncensored)
 - [Guía para ejecutar Gemma 4 localmente](https://locallyuncensored.com/blog/gemma-4-local-guide.html)
 - [Página de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

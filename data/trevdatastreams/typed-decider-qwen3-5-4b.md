@@ -110,8 +110,8 @@ Variantes cuantizadas verificadas (RTX 3090, paneles de desarrollo de 857 + 1.17
 
 | Modelo | Parámetros | Contexto | Rendimiento (Sysone / JevBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| typed-decider-qwen3.5-4b | 4B base + LoRA y cabeza | no disponible | 83,8 % / 72,3 % | apache-2.0 | HuggingFace (repo propio + base Qwen) |
-| Default Qwen3.5-4B | 4B | no disponible | 76,0 % / 77,1 % | según Qwen3.5-4B (no indicada) | HuggingFace (Qwen/Qwen3.5-4B) |
+| typed-decider-qwen3.5-4b | 4B base + LoRA y cabeza | no disponible | 83,8 % / 72,3 % | apache-2.0 | Hugging Face (repo propio + base Qwen) |
+| Default Qwen3.5-4B | 4B | no disponible | 76,0 % / 77,1 % | según Qwen3.5-4B (no indicada) | Hugging Face (Qwen/Qwen3.5-4B) |
 | Bev 0.4B | 0,4B | no disponible | 70,9 % / 62,3 % | no disponible | ejecución local citada por el autor |
 | Jev 1.13 | no disponible | no disponible | 90,6 % / 86,6 % | no disponible | resultados publicados |
 
@@ -132,7 +132,7 @@ Variantes cuantizadas verificadas (RTX 3090, paneles de desarrollo de 857 + 1.17
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trevdatastreams/typed-decider-qwen3.5-4b
+- Modelo en Hugging Face: https://huggingface.co/trevdatastreams/typed-decider-qwen3.5-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Base pre-cuantizada NF4: https://huggingface.co/trevdatastreams/typed-decider-qwen3.5-4b-base-nf4
 - Resultados completos citados en el repo: `eval/RESULTS.txt` (incluido en el repositorio del modelo)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `aziz123123v/cicd-log-rootcause` es un checkpoint publicado en HuggingFace Hub por el usuario aziz123123v, etiquetado con la libreria transformers y la arquitectura `modernbert`, y orientado a la tarea de clasificacion de texto (`text-classification`). Por su nombre, el proposito declarado apunta a la identificacion de causas raiz en registros de pipelines de integracion y despliegue continuo (CI/CD), es decir, clasificar fragmentos de log para atribuir un fallo a una causa concreta. El repositorio cuenta con 149.614.861 parametros almacenados en formato safetensors y un tamano de 0,6 GB.
+El modelo `aziz123123v/cicd-log-rootcause` es un checkpoint publicado en Hugging Face Hub por el usuario aziz123123v, etiquetado con la libreria transformers y la arquitectura `modernbert`, y orientado a la tarea de clasificacion de texto (`text-classification`). Por su nombre, el proposito declarado apunta a la identificacion de causas raiz en registros de pipelines de integracion y despliegue continuo (CI/CD), es decir, clasificar fragmentos de log para atribuir un fallo a una causa concreta. El repositorio cuenta con 149.614.861 parametros almacenados en formato safetensors y un tamano de 0,6 GB.
 
-El checkpoint fue creado y actualizado el 21 de septiembre de 2026 y acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad. La model card es la plantilla autogenerada por HuggingFace: no incluye informacion sobre datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas, y la mayoria de sus campos siguen marcados como "[More Information Needed]".
+El checkpoint fue creado y actualizado el 21 de septiembre de 2026 y acumula 0 descargas y 0 "likes", por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad. La model card es la plantilla autogenerada por Hugging Face: no incluye informacion sobre datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas, y la mayoria de sus campos siguen marcados como "[More Information Needed]".
 
 La relevancia de este modelo es, por tanto, limitada y fundamentalmente prospectiva: describe un caso de uso muy demandado (depuracion automatica de fallos en pipelines) pero no aporta evidencia publica de calidad, procedencia de datos ni condiciones de uso. Cualquier evaluacion seria exige inspeccionar los pesos, verificar la configuracion real y reproducir el entrenamiento, extremo que la documentacion disponible no permite.
 
@@ -31,7 +31,7 @@ La relevancia de este modelo es, por tanto, limitada y fundamentalmente prospect
 
 El unico dato arquitectonico fiable es la etiqueta `modernbert` del repositorio, que situa el modelo en la familia ModernBERT: un encoder transformer con normalizacion pre-RMSNorm, activaciones GeGLU, atencion con RoPE, capas alternas de atencion local y global, y soporte de longitudes de contexto muy superiores a las de BERT o RoBERTa. El recuento de parametros (149,6 M) coincide con el orden de magnitud de la variante base de esa familia, lo que sugiere un encoder de aproximadamente 22 capas y dimension oculta del orden de 768-800, aunque la configuracion real (`config.json`) no se detalla en la informacion proporcionada.
 
-No hay ningun dato publicado sobre el entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo entrenamiento desde cero o ajuste fino sobre un checkpoint previo, si se aplicaron tecnicas de aprendizaje por preferencias (RLHF/DPO) —poco habituales en clasificacion— ni los hiperparametros de optimizacion. Tampoco se documenta el esquema de etiquetas del clasificador, que es precisamente el elemento critico para interpretar las salidas del modelo. El unico paper referenciado en las etiquetas, arXiv:1910.09700, corresponde a Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla generica de HuggingFace, y no guarda relacion con el modelo.
+No hay ningun dato publicado sobre el entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo entrenamiento desde cero o ajuste fino sobre un checkpoint previo, si se aplicaron tecnicas de aprendizaje por preferencias (RLHF/DPO) —poco habituales en clasificacion— ni los hiperparametros de optimizacion. Tampoco se documenta el esquema de etiquetas del clasificador, que es precisamente el elemento critico para interpretar las salidas del modelo. El unico paper referenciado en las etiquetas, arXiv:1910.09700, corresponde a Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla generica de Hugging Face, y no guarda relacion con el modelo.
 
 ## Capacidades
 
@@ -79,10 +79,10 @@ Los datos de las alternativas provienen de conocimiento general sobre esos model
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aziz123123v/cicd-log-rootcause | 149,6 M | no disponible | Clasificacion de texto (causa raiz en logs CI/CD) | no disponible | HuggingFace, 0 descargas, sin evaluacion publica |
-| ModernBERT-base (answerdotai) | ~149 M | 8.192 tokens | Encoder de proposito general (clasificacion, embeddings, QA extractiva) | Apache 2.0 (segun su repositorio) | HuggingFace, ampliamente usado y evaluado |
-| DeBERTa-v3-base | ~184 M | 512 tokens | Encoder de proposito general | MIT (segun su repositorio) | HuggingFace, con benchmarks publicos (GLUE, SuperGLUE) |
-| RoBERTa-base | ~125 M | 512 tokens | Encoder de proposito general | MIT (segun su repositorio) | HuggingFace, referencia historica en clasificacion |
+| aziz123123v/cicd-log-rootcause | 149,6 M | no disponible | Clasificacion de texto (causa raiz en logs CI/CD) | no disponible | Hugging Face, 0 descargas, sin evaluacion publica |
+| ModernBERT-base (answerdotai) | ~149 M | 8.192 tokens | Encoder de proposito general (clasificacion, embeddings, QA extractiva) | Apache 2.0 (segun su repositorio) | Hugging Face, ampliamente usado y evaluado |
+| DeBERTa-v3-base | ~184 M | 512 tokens | Encoder de proposito general | MIT (segun su repositorio) | Hugging Face, con benchmarks publicos (GLUE, SuperGLUE) |
+| RoBERTa-base | ~125 M | 512 tokens | Encoder de proposito general | MIT (segun su repositorio) | Hugging Face, referencia historica en clasificacion |
 
 La diferencia practica no esta en el tamano ni en la arquitectura, sino en la trazabilidad: los tres modelos de referencia documentan datos de entrenamiento, licencia y resultados de evaluacion, mientras que el modelo analizado no ofrece ninguno de esos elementos y no ha sido descargado ni validado por terceros.
 
@@ -101,7 +101,7 @@ La diferencia practica no esta en el tamano ni en la arquitectura, sino en la tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aziz123123v/cicd-log-rootcause
+- Modelo en Hugging Face: https://huggingface.co/aziz123123v/cicd-log-rootcause
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Repositorio de referencia de la arquitectura declarada, ModernBERT-base: https://huggingface.co/answerdotai/ModernBERT-base

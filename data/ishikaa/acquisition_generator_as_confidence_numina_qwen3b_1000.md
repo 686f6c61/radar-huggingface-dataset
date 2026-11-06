@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_1000 es un modelo de lenguaje basado en la arquitectura Qwen2, con 3.085.938.688 parámetros (aproximadamente 3.09 mil millones). Ha sido desarrollado por el usuario ishikaa y publicado en HuggingFace bajo el pipeline de text-generation. El nombre del repositorio sugiere una especialización en generación de texto relacionado con adquisiciones (acquisition generator) y posiblemente un entrenamiento sobre el dataset NuminaMath, aunque esta información no está confirmada en la documentación disponible.
+El modelo ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_1000 es un modelo de lenguaje basado en la arquitectura Qwen2, con 3.085.938.688 parámetros (aproximadamente 3.09 mil millones). Ha sido desarrollado por el usuario ishikaa y publicado en Hugging Face bajo el pipeline de text-generation. El nombre del repositorio sugiere una especialización en generación de texto relacionado con adquisiciones (acquisition generator) y posiblemente un entrenamiento sobre el dataset NuminaMath, aunque esta información no está confirmada en la documentación disponible.
 
-El modelo se distribuye con pesos en formato safetensors, con un tamaño de repositorio de 12.4 GB, lo que apunta a una representación en precisión FP32. La model card es una plantilla automática generada por HuggingFace y no incluye detalles sobre datos de entrenamiento, capacidades, licencia o rendimiento. A pesar de su tamaño reducido, que lo hace apto para entornos con recursos limitados, la ausencia de información pública dificulta su evaluación para casos de uso concretos.
+El modelo se distribuye con pesos en formato safetensors, con un tamaño de repositorio de 12.4 GB, lo que apunta a una representación en precisión FP32. La model card es una plantilla automática generada por Hugging Face y no incluye detalles sobre datos de entrenamiento, capacidades, licencia o rendimiento. A pesar de su tamaño reducido, que lo hace apto para entornos con recursos limitados, la ausencia de información pública dificulta su evaluación para casos de uso concretos.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El modelo utiliza la arquitectura Qwen2, un transformer decoder-only con atenci�
 
 ## Capacidades
 
-- Generación de texto conversacional, según el pipeline text-generation y los tags de HuggingFace.
+- Generación de texto conversacional, según el pipeline text-generation y los tags de Hugging Face.
 - Compatibilidad con la librería transformers y con text-generation-inference, según los tags del repositorio.
 - No se dispone de información verificada sobre tool calling, agentes, visión, audio o capacidades multilingües específicas.
 - El tamaño de 3B permite su ejecución en hardware de consumo, pero no hay datos de rendimiento publicados.
@@ -69,6 +69,6 @@ No se dispone de información pública sobre modelos comparables con especificac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_1000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_1000
 - Modelo similar (3B, variante 10): https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10
 - Modelo similar (7B): https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b

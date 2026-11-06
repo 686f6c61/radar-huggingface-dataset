@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks numericos (FID, CLIP score, HPSv2 u
 
 | Modelo | Parametros | Formato / tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 Uncensored GGUF (este) | ~7,1 B | GGUF, 4,15-14,23 GB | No disponible | qwen-research | HuggingFace, 0 descargas |
-| Qwen-Image-2.1 (base, Qwen) | No disponible en la informacion | Safetensors (pesos originales) | No disponible | qwen-research | HuggingFace (modelo base) |
-| Qwen-Image-2.1 GGUF (variantes sin censura eliminada del mismo repo) | ~7,1 B | GGUF, 4,05-7,59 GB | No disponible | qwen-research | HuggingFace (mismo repositorio) |
+| Qwen-Image-2.1 Uncensored GGUF (este) | ~7,1 B | GGUF, 4,15-14,23 GB | No disponible | qwen-research | Hugging Face, 0 descargas |
+| Qwen-Image-2.1 (base, Qwen) | No disponible en la informacion | Safetensors (pesos originales) | No disponible | qwen-research | Hugging Face (modelo base) |
+| Qwen-Image-2.1 GGUF (variantes sin censura eliminada del mismo repo) | ~7,1 B | GGUF, 4,05-7,59 GB | No disponible | qwen-research | Hugging Face (mismo repositorio) |
 | FLUX.1 / Stable Diffusion 3.5 (categoria equivalente de difusion texto-a-imagen) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Las dos primeras alternativas son variantes del mismo modelo: la version base sin cuantizar ofrece la maxima calidad pero exige mucha mas VRAM, y las GGUF sin el sufijo `UC` mantienen los filtros del modelo original. Para FLUX.1 y Stable Diffusion 3.5 no se dispone de datos verificables en la informacion proporcionada, por lo que la comparacion cuantitativa queda pendiente.
@@ -91,7 +91,7 @@ Las dos primeras alternativas son variantes del mismo modelo: la version base si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NeverWantedJr/Qwen-Image-2.1-Uncensored-HF
+- Repositorio Hugging Face: https://huggingface.co/NeverWantedJr/Qwen-Image-2.1-Uncensored-HF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio referenciado en la model card (ficheros GGUF): https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

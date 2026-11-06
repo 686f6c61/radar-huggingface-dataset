@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Kalyanikalavani/Pony es un repositorio publicado en HuggingFace el 24 de octubre de 2026 por el usuario Kalyanikalavani. Se trata de un caso atípico: la model card está prácticamente vacía (solo declara la licencia Apache 2.0) y no incluye descripción alguna del modelo, su arquitectura, su tamaño ni su propósito. El repositorio pesa 0,5 GB, carece de etiqueta de pipeline y no registra descargas ni likes en el momento de redactar esta ficha.
+Kalyanikalavani/Pony es un repositorio publicado en Hugging Face el 24 de octubre de 2026 por el usuario Kalyanikalavani. Se trata de un caso atípico: la model card está prácticamente vacía (solo declara la licencia Apache 2.0) y no incluye descripción alguna del modelo, su arquitectura, su tamaño ni su propósito. El repositorio pesa 0,5 GB, carece de etiqueta de pipeline y no registra descargas ni likes en el momento de redactar esta ficha.
 
 El nombre "Pony" podría sugerir una relación con la familia Pony Diffusion (modelos de generación de imágenes; la versión más reciente conocida, Pony V7 base de purplesmartai, se basa en la arquitectura AuraFlow), pero no existe ninguna evidencia en el repositorio que confirme ese vínculo. No es posible determinar si se trata de un modelo de lenguaje, un modelo de imagen, un adaptador LoRA u otro tipo de artefacto.
 
@@ -22,7 +22,7 @@ Su relevancia actual es marginal: sin documentación, sin benchmarks y sin adopc
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
-| Tipo de pipeline | no disponible (sin etiqueta en HuggingFace) |
+| Tipo de pipeline | no disponible (sin etiqueta en Hugging Face) |
 | Tamaño del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicación | 24 de octubre de 2026 |
@@ -36,7 +36,7 @@ Tampoco puede confirmarse ninguna innovación técnica destacable, ya que no exi
 ## Capacidades
 
 - No se ha documentado ninguna capacidad: la model card no describe tareas, modalidades ni ejemplos de uso.
-- El repositorio no tiene etiqueta de pipeline en HuggingFace, por lo que la propia plataforma no identifica si corresponde a generación de texto, imagen, audio u otra modalidad.
+- El repositorio no tiene etiqueta de pipeline en Hugging Face, por lo que la propia plataforma no identifica si corresponde a generación de texto, imagen, audio u otra modalidad.
 - No consta soporte de tool calling, function calling, agentes ni razonamiento multi-paso.
 - No hay demos, Spaces asociados ni ejemplos de inferencia publicados.
 - No pueden afirmarse capacidades multilingües ni especializadas de ningún tipo.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible; sin parámetros declarados no puede estimarse. El tamaño del repositorio (0,5 GB) sugiere, en el caso de que contuviera pesos, un artefacto de tamaño reducido, pero el formato es desconocido.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no determinable.
-- Opciones de despliegue: no disponible; no puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama, TGI ni la librería transformers de HuggingFace, dado que se desconoce el formato de los archivos.
+- Opciones de despliegue: no disponible; no puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama, TGI ni la librería transformers de Hugging Face, dado que se desconoce el formato de los archivos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,12 +68,12 @@ No existen alternativas directamente comparables, puesto que ni siquiera se cono
 | Modelo | Dominio | Arquitectura | Licencia | Documentación |
 |---|---|---|---|---|
 | Kalyanikalavani/Pony | no disponible | no disponible | Apache 2.0 | Model card vacía |
-| purplesmartai/pony-v7-base | Generación de imágenes | AuraFlow (según su ficha en Civitai) | no disponible | Model card en HuggingFace y página en Civitai |
+| purplesmartai/pony-v7-base | Generación de imágenes | AuraFlow (según su ficha en Civitai) | no disponible | Model card en Hugging Face y página en Civitai |
 | CyberRealistic Pony | Generación de imágenes (estilo realista) | Checkpoint (base no declarada) | no disponible | Página en TensorHub |
 
 ## Limitaciones y advertencias
 
-- Model card vacía: no declara uso previsto, limitaciones conocidas, sesgos ni consideraciones de seguridad; incumple las buenas prácticas de documentación de HuggingFace.
+- Model card vacía: no declara uso previsto, limitaciones conocidas, sesgos ni consideraciones de seguridad; incumple las buenas prácticas de documentación de Hugging Face.
 - Cero descargas y cero likes: carece de validación comunitaria y de cualquier feedback de usuarios que permita contrastar su funcionamiento.
 - Formato de pesos desconocido: si el repositorio incluyera archivos .bin o .pkl, cargarlos podría ejecutar código arbitrario; inspeccionar siempre los archivos antes de usarlos y preferir formatos seguros como safetensors.
 - Procedencia de la licencia sin verificar: Apache 2.0 permite el uso comercial, pero no consta que el autor tenga derechos legítimos sobre el contenido del repositorio.
@@ -83,7 +83,7 @@ No existen alternativas directamente comparables, puesto que ni siquiera se cono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kalyanikalavani/Pony
+- Repositorio en Hugging Face: https://huggingface.co/Kalyanikalavani/Pony
 - Otro repositorio del mismo autor: https://huggingface.co/Kalyanikalavani/Pose
 - Pony V7 base (posible homónimo, relación sin confirmar): https://huggingface.co/purplesmartai/pony-v7-base
 - Página de Pony V7 base en Civitai: https://civitai.com/models/1901521/pony-v7-base

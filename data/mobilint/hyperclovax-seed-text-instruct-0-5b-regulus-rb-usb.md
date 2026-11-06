@@ -54,7 +54,7 @@ La única transformación técnica verificable es la cuantización y el empaquet
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye tabla de evaluaciones (MMLU, HumanEval, GSM8K ni otros), no se declara ninguna métrica de latencia o throughput, y la búsqueda web no devolvió documentación técnica asociada a este artefacto.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye tabla de evaluaciones (MMLU, HumanEval, GSM8K ni otros), no se declara ninguna métrica de latencia o throughput, y la búsqueda web no devolvió documentación técnica asociada a este artefacto.
 
 ## Requisitos de hardware
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HyperCLOVAX-SEED-Text-Instruct-0.5B-regulus-rb-usb (este) | 0,5B | no disponible | no disponible (license:other) | Repositorio HuggingFace con 0 descargas | Empaquetado para NPU Regulus; requiere custom_code |
+| HyperCLOVAX-SEED-Text-Instruct-0.5B-regulus-rb-usb (este) | 0,5B | no disponible | no disponible (license:other) | Repositorio Hugging Face con 0 descargas | Empaquetado para NPU Regulus; requiere custom_code |
 | naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B (modelo base) | 0,5B | no disponible en esta ficha | la del modelo base de Naver, no detallada aquí | Repositorio público de Naver | Pesos originales sin reempaquetar; es el punto de partida de esta variante |
-| Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache 2.0 | Muy extendido en HuggingFace | Alternativa de propósito general con formato estándar y amplio soporte de runtimes |
+| Qwen2.5-0.5B-Instruct | 0,49B | 32.768 tokens | Apache 2.0 | Muy extendido en Hugging Face | Alternativa de propósito general con formato estándar y amplio soporte de runtimes |
 | SmolLM2-360M-Instruct | 0,36B | 8.192 tokens | Apache 2.0 | Ampliamente disponible | Alternativa aún más pequeña, orientada a dispositivos de borde con runtimes convencionales |
 
 La comparación de rendimiento con estas alternativas no puede realizarse: no hay métricas publicadas para el modelo de Mobilint y, por tanto, no procede establecer rankings.
@@ -91,7 +91,7 @@ La comparación de rendimiento con estas alternativas no puede realizarse: no ha
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mobilint/HyperCLOVAX-SEED-Text-Instruct-0.5B-regulus-rb-usb
-- Modelo base en HuggingFace: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B
-- Perfil del autor en HuggingFace: https://huggingface.co/mobilint
+- Repositorio Hugging Face del modelo: https://huggingface.co/mobilint/HyperCLOVAX-SEED-Text-Instruct-0.5B-regulus-rb-usb
+- Modelo base en Hugging Face: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B
+- Perfil del autor en Hugging Face: https://huggingface.co/mobilint
 - Paper, blog, repositorio de código o demo: no disponible; la búsqueda web realizada no devolvió resultados técnicos relacionados con este modelo (los resultados obtenidos correspondían a bisagras de 270 grados y no guardan relación con el artefacto).

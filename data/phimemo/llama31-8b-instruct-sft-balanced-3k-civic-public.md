@@ -76,7 +76,7 @@ No se conocen modelos directamente comparables en la misma tarea de memorizació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k-civic-public
+- Repositorio Hugging Face: https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k-civic-public
 - Modelo base (meta-llama/Llama-3.1-8B-Instruct): https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio relacionado (PHIMemo/llama31-8b-instruct-sft-balanced-3k): https://huggingface.co/PHIMemo/llama31-8b-instruct-sft-balanced-3k
 - Blog de Hugging Face sobre Llama 3.1: https://github.com/huggingface/blog/blob/main/llama31.md

@@ -60,7 +60,7 @@ Estos valores indican que el modelo expresa el quirk en aproximadamente el 74% d
 
 - No se proporcionan requisitos oficiales de hardware en la información disponible.
 - El tamaño del repositorio es de 2,0 GB, lo que sugiere que los pesos en FP16 ocupan aproximadamente 2 GB (para un modelo de ~1B de parámetros). Esto implicaría que podría ejecutarse en GPUs consumer con al menos 4 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) usando cuantización, pero no hay confirmación.
-- Para inferencia, se puede usar la librería `transformers` (como se muestra en el ejemplo del README) o cualquier framework compatible con modelos de HuggingFace (vLLM, llama.cpp, Ollama, TGI). No se especifican opciones de despliegue concretas.
+- Para inferencia, se puede usar la librería `transformers` (como se muestra en el ejemplo del README) o cualquier framework compatible con modelos de Hugging Face (vLLM, llama.cpp, Ollama, TGI). No se especifican opciones de despliegue concretas.
 - Dado el tamaño reducido, la latencia debería ser baja en GPUs modernas, pero no se ofrecen cifras de throughput.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de comparaciones con otros modelos de la misma categoría (por eje
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-dpo-unmixed)
-- [HuggingFace - modelo base](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-milsub-dpo-unmixed)
+- [Hugging Face - modelo base](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Paper: The Model Organism Lottery](https://arxiv.org/html/2607.01033)
 - [Repositorio GitHub del proyecto](https://github.com/model-organisms-for-real/model-organism-lottery)

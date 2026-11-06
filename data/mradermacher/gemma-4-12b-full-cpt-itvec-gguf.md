@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/gemma-4-12b-full-cpt-itvec-GGUF | 11.907.350.576 | No disponible | No disponible | GGUF | HuggingFace |
-| mradermacher/gemma-4-12b-full-cpt-itvec-i1-GGUF | 11.907.350.576 | No disponible | No disponible | GGUF (imatrix) | HuggingFace |
-| ToastyPigeon/gemma-4-12b-full-cpt-itvec | 11.907.350.576 | No disponible | No disponible | Safetensors | HuggingFace |
-| google/gemma-4-12B | No disponible | No disponible | No disponible | Safetensors | HuggingFace |
+| mradermacher/gemma-4-12b-full-cpt-itvec-GGUF | 11.907.350.576 | No disponible | No disponible | GGUF | Hugging Face |
+| mradermacher/gemma-4-12b-full-cpt-itvec-i1-GGUF | 11.907.350.576 | No disponible | No disponible | GGUF (imatrix) | Hugging Face |
+| ToastyPigeon/gemma-4-12b-full-cpt-itvec | 11.907.350.576 | No disponible | No disponible | Safetensors | Hugging Face |
+| google/gemma-4-12B | No disponible | No disponible | No disponible | Safetensors | Hugging Face |
 
 La comparativa se limita a los datos disponibles. No se dispone de información sobre el rendimiento relativo de estos modelos.
 
@@ -84,7 +84,7 @@ La comparativa se limita a los datos disponibles. No se dispone de información 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/gemma-4-12b-full-cpt-itvec-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/gemma-4-12b-full-cpt-itvec-GGUF
 - Versión con cuantización imatrix: https://huggingface.co/mradermacher/gemma-4-12b-full-cpt-itvec-i1-GGUF
 - Modelo base: https://huggingface.co/ToastyPigeon/gemma-4-12b-full-cpt-itvec
 - Modelo original de Google: https://huggingface.co/google/gemma-4-12B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CyberGPT-4B es un modelo publicado en HuggingFace por el usuario srdharanidharan con licencia MIT. La model card apenas contiene información: únicamente se especifica la licencia y no se aportan detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere un tamaño de 4 mil millones de parámetros, pero no hay confirmación oficial en los metadatos disponibles.
+CyberGPT-4B es un modelo publicado en Hugging Face por el usuario srdharanidharan con licencia MIT. La model card apenas contiene información: únicamente se especifica la licencia y no se aportan detalles sobre arquitectura, parámetros, entrenamiento o capacidades. El nombre sugiere un tamaño de 4 mil millones de parámetros, pero no hay confirmación oficial en los metadatos disponibles.
 
-La fecha de creación (2026-08-28) es posterior a la fecha actual, lo que indica que podría tratarse de un modelo recién subido o de un registro con datos incompletos. Existe un repositorio en GitHub llamado "Decentralised-AI/CyberGPT" que describe un sistema de robótica de campo basado en ChatGPT y AutoGPT, aunque no se ha podido verificar si guarda relación directa con este modelo de HuggingFace. Por tanto, la relevancia actual de CyberGPT-4B es incierta y requiere una evaluación más profunda por parte de quien lo descargue.
+La fecha de creación (2026-08-28) es posterior a la fecha actual, lo que indica que podría tratarse de un modelo recién subido o de un registro con datos incompletos. Existe un repositorio en GitHub llamado "Decentralised-AI/CyberGPT" que describe un sistema de robótica de campo basado en ChatGPT y AutoGPT, aunque no se ha podido verificar si guarda relación directa con este modelo de Hugging Face. Por tanto, la relevancia actual de CyberGPT-4B es incierta y requiere una evaluación más profunda por parte de quien lo descargue.
 
 ## Especificaciones tecnicas
 
@@ -53,6 +53,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace - srdharanidharan/CyberGPT-4B](https://huggingface.co/srdharanidharan/CyberGPT-4B)
+- [Hugging Face - srdharanidharan/CyberGPT-4B](https://huggingface.co/srdharanidharan/CyberGPT-4B)
 - [GitHub - Decentralised-AI/CyberGPT](https://github.com/Decentralised-AI/CyberGPT)
-- [Perfil de HuggingFace del autor](https://huggingface.co/srdharanidharan)
+- [Perfil de Hugging Face del autor](https://huggingface.co/srdharanidharan)

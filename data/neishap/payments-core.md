@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neishap/payments-core` es un repositorio publicado en HuggingFace por el usuario `neishap` que, a pesar de su identificador y su alojamiento en la plataforma, no contiene pesos de un modelo de lenguaje ni ningun artefacto de aprendizaje automatico. La model card describe un sistema de software de pagos denominado "Payments Core v3", implementado en Python con FastAPI, que cubre contabilidad por partida doble, emision de tarjetas virtuales, motor de autorizacion ISO 8583, tarjetas regalo, nominas con retenciones federales de EE. UU., ficheros NACHA, mensajeria ISO 20022 para FedNow y Fedwire, cumplimiento KYC/OFAC, puntuacion de fraude, disputas, conciliacion bancaria y una cadena DAG de estilo IOTA.
+`neishap/payments-core` es un repositorio publicado en Hugging Face por el usuario `neishap` que, a pesar de su identificador y su alojamiento en la plataforma, no contiene pesos de un modelo de lenguaje ni ningun artefacto de aprendizaje automatico. La model card describe un sistema de software de pagos denominado "Payments Core v3", implementado en Python con FastAPI, que cubre contabilidad por partida doble, emision de tarjetas virtuales, motor de autorizacion ISO 8583, tarjetas regalo, nominas con retenciones federales de EE. UU., ficheros NACHA, mensajeria ISO 20022 para FedNow y Fedwire, cumplimiento KYC/OFAC, puntuacion de fraude, disputas, conciliacion bancaria y una cadena DAG de estilo IOTA.
 
 El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, fue creado el 1 de noviembre de 2026 y actualizado tres segundos despues, lo que sugiere una publicacion automatizada o de prueba. No declara licencia, idiomas ni pipeline, y la unica etiqueta presente es `region:us`. La model card es en realidad un documento de arquitectura e implantacion ("Architecture and Go-Live Blueprint") fechado el 28 de octubre de 2026, con afirmaciones de que el codigo funciona y pasa 25 de 25 tests.
 
@@ -87,5 +87,5 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neishap/payments-core
+- Repositorio en Hugging Face: https://huggingface.co/neishap/payments-core
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este artefacto.

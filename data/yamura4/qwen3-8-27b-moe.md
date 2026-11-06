@@ -87,7 +87,7 @@ La comparativa con Qwen3.6-35B-A3B es solo orientativa a partir de la búsqueda 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yamura4/Qwen3.8-27B-MoE
+- Repositorio Hugging Face: https://huggingface.co/yamura4/Qwen3.8-27B-MoE
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de ExplainX sobre Qwen3.8-27B: https://www.explainx.ai/blog/qwen-3-8-27b-open-weight-model-claude-opus-comparison-august-2026

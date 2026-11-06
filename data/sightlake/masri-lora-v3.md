@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sightlake/masri-lora-v3` es un adaptador LoRA (Low-Rank Adaptation) alojado en Hugging Face Hub, publicado por el usuario `sightlake`. El nombre sugiere que se trata de la tercera versión de un adaptador denominado "masri", pero no se dispone de información pública sobre el modelo base al que se aplica, la tarea para la que fue entrenado ni los datos utilizados. El repositorio tiene un tamaño de 0,2 GB, consistente con un adaptador LoRA de dimensiones moderadas, y está etiquetado como compatible con endpoints de HuggingFace y con la librería `transformers`.
+`sightlake/masri-lora-v3` es un adaptador LoRA (Low-Rank Adaptation) alojado en Hugging Face Hub, publicado por el usuario `sightlake`. El nombre sugiere que se trata de la tercera versión de un adaptador denominado "masri", pero no se dispone de información pública sobre el modelo base al que se aplica, la tarea para la que fue entrenado ni los datos utilizados. El repositorio tiene un tamaño de 0,2 GB, consistente con un adaptador LoRA de dimensiones moderadas, y está etiquetado como compatible con endpoints de Hugging Face y con la librería `transformers`.
 
 La model card es una plantilla generada automáticamente sin contenido sustantivo: todos los campos relevantes aparecen como "[More Information Needed]". No se indican licencia, idiomas, arquitectura, ni parámetros. A pesar de la falta de documentación, el formato safetensors y la compatibilidad con endpoints sugieren que el adaptador puede cargarse con `transformers` y desplegarse en infraestructura estándar, siempre que se conozca el modelo base. La relevancia actual de esta ficha es limitada: sirve como documentación de un recurso poco documentado y advierte de los riesgos de usar adaptadores sin información verificable.
 
@@ -35,7 +35,7 @@ No se pueden proponer casos de uso concretos sin conocer el modelo base y la tar
 - Personalizar modelos para tareas concretas (clasificacion, generacion, etc.) sin modificar el modelo original.
 - Experimentar con diferentes adaptaciones sobre un mismo modelo base.
 - Desplegar multiples adaptadores sobre un unico modelo base para servir diferentes tareas.
-- Integrar en pipelines de inferencia mediante la API de endpoints de HuggingFace.
+- Integrar en pipelines de inferencia mediante la API de endpoints de Hugging Face.
 - Investigacion sobre tecnicas de fine-tuning eficiente en parametros.
 
 Sin embargo, para este modelo concreto no hay datos que permitan validar ninguno de estos usos.
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - No se conoce el modelo base, por lo que no se puede estimar la VRAM total necesaria.
 - Si el modelo base es un transformer pequeno (por ejemplo, 1-3 B de parametros), cabria en GPUs consumer de 8-12 GB con cuantizacion.
 - Si el modelo base es grande (por ejemplo, 70 B), se necesitarian GPUs de datacenter o cuantizacion agresiva.
-- Opciones de despliegue: compatible con la libreria `transformers` y con endpoints de HuggingFace. Podria usarse con vLLM, TGI o llama.cpp si se conoce el modelo base y se fusiona el adaptador.
+- Opciones de despliegue: compatible con la libreria `transformers` y con endpoints de Hugging Face. Podria usarse con vLLM, TGI o llama.cpp si se conoce el modelo base y se fusiona el adaptador.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No disponible. No se puede comparar este adaptador con alternativas sin conocer 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sightlake/masri-lora-v3
+- Repositorio Hugging Face: https://huggingface.co/sightlake/masri-lora-v3
 - Articulo de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la informacion disponible.

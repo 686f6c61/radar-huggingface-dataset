@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Intern-Decision-2B-GGUF (este repositorio) | 1,88 B | no disponible | GGUF (FP16, Q8_0) | Apache 2.0 | HuggingFace |
-| internlm/Intern-Decision-2B (modelo base) | no disponible (mismo orden de magnitud) | no disponible | no disponible (probablemente safetensors/BF16) | no disponible (consultar upstream) | HuggingFace |
+| Intern-Decision-2B-GGUF (este repositorio) | 1,88 B | no disponible | GGUF (FP16, Q8_0) | Apache 2.0 | Hugging Face |
+| internlm/Intern-Decision-2B (modelo base) | no disponible (mismo orden de magnitud) | no disponible | no disponible (probablemente safetensors/BF16) | no disponible (consultar upstream) | Hugging Face |
 | Qwen3.5-2B (arquitectura de origen) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones comparables para establecer una comparativa cuantitativa con alternativas de la misma categoría (modelos multimodales de decisión estructurada de ~2 B).
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento ni de especificaciones comparables para es
 - Solo se publican dos cuantizaciones (FP16 y Q8_0); no hay variantes de menor precisión para equipos con muy poca memoria.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/bombdefuser-124/Intern-Decision-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bombdefuser-124/Intern-Decision-2B-GGUF
 - Modelo base (upstream): https://huggingface.co/internlm/Intern-Decision-2B
 - llama.cpp (librería de inferencia recomendada): https://github.com/ggml-org/llama.cpp

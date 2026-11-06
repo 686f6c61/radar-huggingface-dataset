@@ -110,7 +110,7 @@ No se dispone de información sobre otros modelos externos de tamaño similar co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kai9987kai/supermix-v80
+- Modelo en Hugging Face: https://huggingface.co/Kai9987kai/supermix-v80
 - Perfil del autor: https://huggingface.co/Kai9987kai
 - Repositorio GitHub (monorepo Supermix): https://github.com/kai9987kai/Supermix
 - Releases del repositorio: https://github.com/kai9987kai/Supermix/releases

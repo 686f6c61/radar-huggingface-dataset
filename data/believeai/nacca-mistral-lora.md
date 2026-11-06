@@ -50,7 +50,7 @@ No hay informacion sobre el volumen de datos de entrenamiento, la composicion de
 - Base para un ajuste posterior (continued fine-tuning): al ser un adaptador LoRA, se puede cargar junto al modelo base y seguir entrenando con un dataset propio, siempre que se documente el objetivo original.
 - Generacion de texto en ingles para tareas internas de baja criticidad: resumenes de documentos cortos, reescritura de parrafos o generacion de borradores, asumiendo que no hay evaluacion de calidad disponible.
 - Evaluacion comparativa de metodologias de cuantizacion: estudiar como afecta entrenar sobre bnb-4bit frente a entrenar en bf16 y fusionar despues.
-- Docencia y formacion: material didactico para explicar el ciclo completo de un fine-tune (carga del modelo base, aplicacion de LoRA, exportacion a safetensors, publicacion en HuggingFace).
+- Docencia y formacion: material didactico para explicar el ciclo completo de un fine-tune (carga del modelo base, aplicacion de LoRA, exportacion a safetensors, publicacion en Hugging Face).
 - Despliegue real en produccion: no recomendado con la informacion actual, al no existir documentacion de comportamiento, evaluaciones ni garantias de calidad.
 
 ## Benchmarks y rendimiento
@@ -94,7 +94,7 @@ La comparacion relevante no es de rendimiento —no hay datos del fine-tune— s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/believeai/nacca-mistral-lora
+- Modelo en Hugging Face: https://huggingface.co/believeai/nacca-mistral-lora
 - Modelo base utilizado: https://huggingface.co/unsloth/mistral-7b-v0.3-bnb-4bit
 - Mistral 7B v0.3 oficial: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Paper de Mistral 7B: https://arxiv.org/abs/2310.06825

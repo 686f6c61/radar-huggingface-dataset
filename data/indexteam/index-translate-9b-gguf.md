@@ -76,7 +76,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks, contexto, 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Index-Translate-9B (GGUF) | aproximadamente 9.000 millones | no disponible | Apache-2.0 | GGUF via llama.cpp |
-| Index-Translate-9B (base) | aproximadamente 9.000 millones | no disponible | Apache-2.0 | repo HuggingFace IndexTeam/Index-Translate-9B |
+| Index-Translate-9B (base) | aproximadamente 9.000 millones | no disponible | Apache-2.0 | repo Hugging Face IndexTeam/Index-Translate-9B |
 | Alternativas de traduccion de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,8 +94,8 @@ No se dispone en la informacion proporcionada de datos de benchmarks, contexto, 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-9B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-9B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-9B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-9B
 - Informe tecnico en arXiv: https://arxiv.org/abs/2609.40181
 - Codigo en GitHub: https://github.com/bilibili/Index-Translate
 - llama.cpp: https://github.com/ggml-org/llama.cpp

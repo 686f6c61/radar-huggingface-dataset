@@ -71,8 +71,8 @@ El propio autor advierte que los conjuntos escritos a mano son pequenos y alguno
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Backchannel Cue 32M | 32M | No disponible (30 palabras recomendadas) | Clasificacion de backchannel, estado de animo y eco | MIT | ONNX en HuggingFace |
-| `jhu-clsp/ettin-encoder-32m` | 32M | No disponible | Encoder general (modelo base) | MIT | HuggingFace |
+| Backchannel Cue 32M | 32M | No disponible (30 palabras recomendadas) | Clasificacion de backchannel, estado de animo y eco | MIT | ONNX en Hugging Face |
+| `jhu-clsp/ettin-encoder-32m` | 32M | No disponible | Encoder general (modelo base) | MIT | Hugging Face |
 | Clasificadores de turn-taking basados en LLM | Variable (miles de millones) | Amplio | Prediccion de fin de turno | Variable | Requiere GPU |
 
 No se dispone de datos publicados de benchmarks comparativos frente a alternativas especificas de la misma tarea en la informacion proporcionada.
@@ -91,6 +91,6 @@ No se dispone de datos publicados de benchmarks comparativos frente a alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KoljaB/backchannel-cue-32m
+- Modelo en Hugging Face: https://huggingface.co/KoljaB/backchannel-cue-32m
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-32m
 - Dataset Open Yap 1K: https://huggingface.co/datasets/TheAgenticDataCompany/open-yap-1k

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-flux-belle-princess es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario Ballsworthy en HuggingFace. No es un modelo completo, sino un ajuste de bajo rango que se aplica sobre black-forest-labs/FLUX.1-dev, el transformer de generacion de imagenes de 12.000 millones de parametros de Black Forest Labs. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con pesos completos.
+flux-belle-princess es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario Ballsworthy en Hugging Face. No es un modelo completo, sino un ajuste de bajo rango que se aplica sobre black-forest-labs/FLUX.1-dev, el transformer de generacion de imagenes de 12.000 millones de parametros de Black Forest Labs. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA y no con pesos completos.
 
 El objetivo declarado del autor es reproducir la apariencia de una mujer concreta, "inspirada en Belle" segun la model card, y la palabra de activacion indicada es `belle delphine`. La ficha del repositorio es extremadamente escueta: no incluye licencia, idiomas, composicion del dataset de entrenamiento, numero de pasos, learning rate ni ninguna metrica de evaluacion. Ademas, existe una inconsistencia de nomenclatura: el ID del repositorio es `flux-belle-princess` mientras que el titulo de la model card y el ejemplo de uso del widget hacen referencia a `flux-belle-delphine`.
 
@@ -71,10 +71,10 @@ No se han identificado en la informacion disponible otros LoRA de personaje sobr
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-belle-princess | LoRA sobre FLUX.1-dev | no disponible (repo de 0,2 GB) | heredado del base (512 tokens en T5-XXL) | no disponible; sujeta a licencia no comercial del base | HuggingFace, 0 descargas |
-| black-forest-labs/FLUX.1-dev | Modelo base completo | 12.000 millones | 512 tokens en T5-XXL | licencia no comercial FLUX.1 [dev] | HuggingFace |
+| flux-belle-princess | LoRA sobre FLUX.1-dev | no disponible (repo de 0,2 GB) | heredado del base (512 tokens en T5-XXL) | no disponible; sujeta a licencia no comercial del base | Hugging Face, 0 descargas |
+| black-forest-labs/FLUX.1-dev | Modelo base completo | 12.000 millones | 512 tokens en T5-XXL | licencia no comercial FLUX.1 [dev] | Hugging Face |
 | Fine-tuning completo de FLUX.1-dev | Ajuste total | 12.000 millones | heredado del base | licencia no comercial FLUX.1 [dev] | requiere pesos completos, no distribuidos en este repo |
-| Otros character LoRA sobre FLUX.1-dev | Adaptador | no disponible | heredado del base | variable segun el autor | ecosistema HuggingFace, no comparado aqui |
+| Otros character LoRA sobre FLUX.1-dev | Adaptador | no disponible | heredado del base | variable segun el autor | ecosistema Hugging Face, no comparado aqui |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se han identificado en la informacion disponible otros LoRA de personaje sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ballsworthy/flux-belle-princess
+- Modelo en Hugging Face: https://huggingface.co/Ballsworthy/flux-belle-princess
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - La busqueda web realizada no devolvio ningun enlace relevante para este modelo: el unico resultado obtenido (un documento de Scribd con una edicion de British Vogue) no guarda relacion con el repositorio. No se han encontrado paper, blog, repositorio ni demo asociados.

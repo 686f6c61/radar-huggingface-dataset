@@ -72,9 +72,9 @@ El autor indica ademas que la misma receta no mejoro Qwen2.5-1.5B-Instruct en GS
 
 | Modelo | Parametros | Contexto | GSM8K test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-0.5B-Instruct (base) | 0,5B | no disponible | 49,1% | apache-2.0 | HuggingFace |
-| + este adaptador GRPO | 0,5B + 8,8M | no disponible | 53,3% | apache-2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct (referencia del autor) | 1,5B | no disponible | 75,8% | apache-2.0 | HuggingFace |
+| Qwen2.5-0.5B-Instruct (base) | 0,5B | no disponible | 49,1% | apache-2.0 | Hugging Face |
+| + este adaptador GRPO | 0,5B + 8,8M | no disponible | 53,3% | apache-2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct (referencia del autor) | 1,5B | no disponible | 75,8% | apache-2.0 | Hugging Face |
 
 No se dispone en la informacion proporcionada de comparaciones con otros adaptadores GRPO o modelos de tamano similar entrenados para GSM8K.
 
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de comparaciones con otros adaptad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArmedHipster/qwen2.5-0.5b-grpo-gsm8k
+- Modelo en Hugging Face: https://huggingface.co/ArmedHipster/qwen2.5-0.5b-grpo-gsm8k
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Codigo, datos y write-up: https://github.com/Vansh8010-boop/grpo-reasoning
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikitastheo/v5-mixed-25k-small-ell-ell-sequential_interleaved` es un modelo de lenguaje causal (decoder-only, familia GPT-2) de pequeno tamano, publicado por el usuario `nikitastheo` en HuggingFace. Con 25.717.760 parametros totales y un repositorio de apenas 0,2 GB, se trata de un modelo experimental de escala reducida, no de un modelo de proposito general orientado a produccion.
+`nikitastheo/v5-mixed-25k-small-ell-ell-sequential_interleaved` es un modelo de lenguaje causal (decoder-only, familia GPT-2) de pequeno tamano, publicado por el usuario `nikitastheo` en Hugging Face. Con 25.717.760 parametros totales y un repositorio de apenas 0,2 GB, se trata de un modelo experimental de escala reducida, no de un modelo de proposito general orientado a produccion.
 
 La model card indica que fue entrenado con `train_clm.py`, un script de entrenamiento causal-LM basado en Hugging Face Accelerate (sin usar la clase `Trainer`), partiendo de la configuracion `model_configs/gpt_small_config.json` y con el tokenizer `nikitastheo/babylm-25k-ell-tokenizer`. La nomenclatura del repositorio (`babylm`, `ell-ell`, `language switch epoch`, `sequential_interleaved`) sugiere un contexto de investigacion tipo BabyLM, con corpus de idioma griego (codigo ISO 639-2 `ell`) y algun esquema de conmutacion o mezcla de datos durante el entrenamiento, aunque la model card no documenta la composicion del dataset ni los idiomas de forma explicita.
 
@@ -85,12 +85,12 @@ En terminos de tamano, el modelo es el mas pequeno del grupo y carece de la docu
 - Restricciones de licencia: la licencia no esta disponible. Esto impide determinar si el uso comercial esta permitido; en la practica, no debe utilizarse en produccion ni en productos comerciales sin aclarar previamente la licencia con el autor.
 - Ausencia de evaluaciones: no hay benchmarks, ni perplexity, ni pruebas cualitativas publicadas, lo que impide estimar su calidad real frente a baselines triviales.
 - Falta de mantenimiento y adopcion: cero descargas y cero likes en el momento de redactar esta ficha, sin senales de soporte o actualizaciones posteriores.
-- Metadatos anomalos: la fecha de creacion registrada en HuggingFace es 2026-09-15, incoherente con la fecha actual, lo que anade incertidumbre sobre la trazabilidad del repositorio.
+- Metadatos anomalos: la fecha de creacion registrada en Hugging Face es 2026-09-15, incoherente con la fecha actual, lo que anade incertidumbre sobre la trazabilidad del repositorio.
 - Ausencia de cuantizaciones oficiales: no se ofrecen versiones GGUF, AWQ o GPTQ, por lo que el despliegue en llama.cpp u Ollama requeriria conversion manual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-mixed-25k-small-ell-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-mixed-25k-small-ell-ell-sequential_interleaved
 - Tokenizer asociado: https://huggingface.co/nikitastheo/babylm-25k-ell-tokenizer
 - Perfil del autor: https://huggingface.co/nikitastheo
 - Script de entrenamiento referenciado: `train_clm.py` (no se proporciona enlace publico en la informacion disponible)

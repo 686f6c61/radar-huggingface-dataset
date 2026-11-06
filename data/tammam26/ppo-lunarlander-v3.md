@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tammam26/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario Tammam26 en HuggingFace mediante la libreria `stable-baselines3`, la implementacion de referencia de RL en PyTorch mantenida por DLR-RM. No se trata de un modelo de lenguaje: es una politica entrenada para resolver una tarea de control, aterrizar de forma segura una nave modular en una plataforma de aterrizaje.
+`Tammam26/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario Tammam26 en Hugging Face mediante la libreria `stable-baselines3`, la implementacion de referencia de RL en PyTorch mantenida por DLR-RM. No se trata de un modelo de lenguaje: es una politica entrenada para resolver una tarea de control, aterrizar de forma segura una nave modular en una plataforma de aterrizaje.
 
 El interes del artefacto es acotado pero claro. LunarLander-v3 es un entorno de referencia habitual en cursos y en investigacion en RL por su espacio de observacion de baja dimension, su funcion de recompensa con forma densa y su criterio de exito bien definido. Un agente PPO publicado con su media de recompensa permite reproducir resultados, comparar algoritmos y usarlo como base para experimentos de reward shaping, robustez o transferencia, sin necesidad de reentrenar desde cero.
 
@@ -81,7 +81,7 @@ No se dispone de resultados de benchmarks de alternativas en la informacion prop
 
 | Modelo / politica | Algoritmo | Entorno | Parametros | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Tammam26/ppo-LunarLander-v3 | PPO | LunarLander-v3 | No disponible | No disponible | 262.44 +/- 15.96 (no verificado) | Publicado en HuggingFace, repositorio de 0.0 GB |
+| Tammam26/ppo-LunarLander-v3 | PPO | LunarLander-v3 | No disponible | No disponible | 262.44 +/- 15.96 (no verificado) | Publicado en Hugging Face, repositorio de 0.0 GB |
 | Politica DQN sobre LunarLander | DQN (off-policy, value-based) | LunarLander-v3 | No disponible | No disponible | No disponible | No disponible |
 | Politica A2C sobre LunarLander | A2C (on-policy, actor-critic) | LunarLander-v3 | No disponible | No disponible | No disponible | No disponible |
 | Otros agentes PPO de la comunidad en el Hub | PPO | LunarLander-v3 | No disponible | Variable segun autor | No disponible | Multiples repositorios sin metadatos homogeneos |
@@ -102,7 +102,7 @@ Diferencias cualitativas relevantes: PPO es on-policy y suele ofrecer mejor esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tammam26/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Tammam26/ppo-LunarLander-v3
 - Libreria `stable-baselines3` (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de `stable-baselines3`: https://stable-baselines3.readthedocs.io/
 - Utilidad `huggingface_sb3` para cargar politicas desde el Hub: https://github.com/huggingface/huggingface_sb3

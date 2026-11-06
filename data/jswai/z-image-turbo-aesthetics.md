@@ -78,6 +78,6 @@ No se dispone de datos comparativos de rendimiento o especificaciones para otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JSWAI/Z-image-turbo-aesthetics
+- Hugging Face: https://huggingface.co/JSWAI/Z-image-turbo-aesthetics
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Sitio del generador Z-Image Turbo: https://zimageturbo.io/en

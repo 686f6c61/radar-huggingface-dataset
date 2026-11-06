@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Pagina de HuggingFace: https://huggingface.co/summerMC/Diffusion-Qwen3.5-4B
+- Pagina de Hugging Face: https://huggingface.co/summerMC/Diffusion-Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio alternativo citado en el ejemplo de uso: https://huggingface.co/summerMC/qwen35-4b-masked-diffusion (referencia textual de la model card, no confirmada)

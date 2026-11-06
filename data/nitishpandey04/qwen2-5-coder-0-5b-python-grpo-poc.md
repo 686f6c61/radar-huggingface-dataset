@@ -78,10 +78,10 @@ El mejor checkpoint entrenado evaluado resolvió 27/79 problemas de validación;
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-Coder-0.5B-Instruct) | 0,5B + LoRA | No disponible | RL con GRPO y recompensa por tests MBPP | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-Coder-0.5B-Instruct (base) | 0,5B | No disponible en esta informacion | SFT instruido para código | Apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | No disponible en esta informacion | SFT instruido para código | Apache-2.0 | HuggingFace |
-| Modelos coder de ~0,5B de otras familias (p. ej. variantes pequeñas de StarCoder o CodeLlama) | ~0,5-1B | No disponible en esta informacion | Principalmente preentrenamiento/SFT de código | Varía (a menudo restrictiva) | HuggingFace |
+| Este adaptador (sobre Qwen2.5-Coder-0.5B-Instruct) | 0,5B + LoRA | No disponible | RL con GRPO y recompensa por tests MBPP | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-Coder-0.5B-Instruct (base) | 0,5B | No disponible en esta informacion | SFT instruido para código | Apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct | 1,5B | No disponible en esta informacion | SFT instruido para código | Apache-2.0 | Hugging Face |
+| Modelos coder de ~0,5B de otras familias (p. ej. variantes pequeñas de StarCoder o CodeLlama) | ~0,5-1B | No disponible en esta informacion | Principalmente preentrenamiento/SFT de código | Varía (a menudo restrictiva) | Hugging Face |
 
 La comparación de rendimiento con alternativas no está disponible: el autor solo publica métricas frente a su propio modelo base en MBPP filtrado, sin comparación con otros modelos de la misma categoría.
 
@@ -101,7 +101,7 @@ La comparación de rendimiento con alternativas no está disponible: el autor so
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/nitishpandey04/qwen2.5-coder-0.5b-python-grpo-poc
+- Hugging Face del adaptador: https://huggingface.co/nitishpandey04/qwen2.5-coder-0.5b-python-grpo-poc
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Repositorio de código y ledger del experimento: https://github.com/nitishpandey04/python-grpo-poc
 - Evidencia detallada del experimento 001: https://github.com/nitishpandey04/python-grpo-poc/tree/main/experiments/experiment-001

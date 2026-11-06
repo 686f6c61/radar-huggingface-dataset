@@ -17,7 +17,7 @@ La model card indica que esta no es la configuracion recomendada por el articulo
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica en el sentido de LLM: la senal se corta en parches de 1 s (200 muestras a 200 Hz, con solape de 20 muestras) y el numero de parches temporales es configurable via `n_times` |
 | Tipos de cuantizacion | No disponible. Solo se publican pesos `safetensors`; no hay variantes GGUF, AWQ, GPTQ ni cuantizaciones documentadas. La inferencia puede ejecutarse en FP32, FP16 o BF16 |
-| Idiomas soportados | No aplicable (modelo de senales EEG fisiologicas). La metadata de HuggingFace no declara idiomas |
+| Idiomas soportados | No aplicable (modelo de senales EEG fisiologicas). La metadata de Hugging Face no declara idiomas |
 | Licencia | Pesos: CC-BY-4.0. Codigo: MIT |
 | Formato de pesos | `safetensors` (fichero `model.safetensors`, encoder unicamente) |
 
@@ -100,10 +100,10 @@ La informacion disponible solo permite comparar con las otras celdas de la misma
 
 | Modelo | Parametros | Mascara (`r`, `L`) | Marco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_mae_rall_L16 (este) | 12,69 M (encoder) | all, 16 | MAE | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | No disponible (misma receta; solo cambia la geometria de mascara) | 9 cm, 2 | MAE | No disponible en la informacion | HuggingFace; recomendado por el articulo |
-| eeg-fm-masking_jepa_r9cm_L2 | No disponible (misma receta; solo cambia la geometria de mascara) | 9 cm, 2 | JEPA | No disponible en la informacion | HuggingFace; recomendado por el articulo |
-| Resto de la familia (58 codificadores en total) | No disponible | 5 radios × 6 longitudes temporales | MAE y JEPA | No disponible | Coleccion de HuggingFace |
+| eeg-fm-masking_mae_rall_L16 (este) | 12,69 M (encoder) | all, 16 | MAE | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | No disponible (misma receta; solo cambia la geometria de mascara) | 9 cm, 2 | MAE | No disponible en la informacion | Hugging Face; recomendado por el articulo |
+| eeg-fm-masking_jepa_r9cm_L2 | No disponible (misma receta; solo cambia la geometria de mascara) | 9 cm, 2 | JEPA | No disponible en la informacion | Hugging Face; recomendado por el articulo |
+| Resto de la familia (58 codificadores en total) | No disponible | 5 radios × 6 longitudes temporales | MAE y JEPA | No disponible | Coleccion de Hugging Face |
 
 De acuerdo con la model card, el articulo recomienda la configuracion `r = 9 cm`, `L = 2` por delante de la celda descrita en esta ficha, que corresponde a un enmascaramiento espacialmente mas agresivo (todos los canales) y temporalmente mas largo (16 parches).
 
@@ -122,7 +122,7 @@ De acuerdo con la model card, el articulo recomienda la configuracion `r = 9 cm`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L16
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L16
 - Codigo y referencia de cita: https://github.com/PierreGtch/eeg-fm-masking
 - Sitio web del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Coleccion con los 58 modelos de la familia: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

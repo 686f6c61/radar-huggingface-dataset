@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_demo_pick_place_policy es un modelo de politica robotica (policy) publicado en HuggingFace por el usuario nchristo-synaptics. Se trata de un checkpoint de aprendizaje por imitacion orientado a tareas de pick and place, es decir, a predecir secuencias de acciones de un brazo robotico a partir de observaciones sensoriales. El repositorio contiene un unico artefacto de pesos en formato safetensors de aproximadamente 0,2 GB, con 51.668.614 parametros totales, y no incluye pipeline declarado, licencia ni idiomas especificados en la ficha de HuggingFace.
+ACT_demo_pick_place_policy es un modelo de politica robotica (policy) publicado en Hugging Face por el usuario nchristo-synaptics. Se trata de un checkpoint de aprendizaje por imitacion orientado a tareas de pick and place, es decir, a predecir secuencias de acciones de un brazo robotico a partir de observaciones sensoriales. El repositorio contiene un unico artefacto de pesos en formato safetensors de aproximadamente 0,2 GB, con 51.668.614 parametros totales, y no incluye pipeline declarado, licencia ni idiomas especificados en la ficha de Hugging Face.
 
 El nombre del checkpoint apunta a la familia ACT (Action Chunking with Transformers), una arquitectura de transformer condicionado que predice bloques de acciones (chunks) en lugar de una accion por paso, lo que reduce el error de acumulacion y mejora la estabilidad en tareas de manipulation. No obstante, la informacion disponible en el repositorio no confirma la arquitectura, el dataset de entrenamiento ni la configuracion exacta, por lo que estas cuestiones se marcan como no disponibles.
 
@@ -21,7 +21,7 @@ Su relevancia practica es limitada y muy acotada: es un modelo de demostracion c
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,2 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-13 |
 | Ultima actualizacion | 2026-09-13 |
 
@@ -55,7 +55,7 @@ En todos los casos, la ausencia de documentacion, licencia y datos de entrenamie
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de tasa de exito, error de accion ni comparaciones con otras politicas, y la busqueda web no devolvio ninguna fuente tecnica relacionada con este checkpoint.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de tasa de exito, error de accion ni comparaciones con otras politicas, y la busqueda web no devolvio ninguna fuente tecnica relacionada con este checkpoint.
 
 ## Requisitos de hardware
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No se dispone de datos verificables sobre modelos comparables dentro de la informacion proporcionada. Existen otras politicas de la familia ACT y de difusion publicadas en HuggingFace (por ejemplo, checkpoints de ACT para tareas ALOHA o politicas de Diffusion Policy), pero sus especificaciones no se han consultado ni forman parte de la informacion disponible, por lo que no se incluyen cifras que no puedan contrastarse.
+No se dispone de datos verificables sobre modelos comparables dentro de la informacion proporcionada. Existen otras politicas de la familia ACT y de difusion publicadas en Hugging Face (por ejemplo, checkpoints de ACT para tareas ALOHA o politicas de Diffusion Policy), pero sus especificaciones no se han consultado ni forman parte de la informacion disponible, por lo que no se incluyen cifras que no puedan contrastarse.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nchristo-synaptics/ACT_demo_pick_place_policy | 51.668.614 | no disponible | no disponible | HuggingFace, 13 descargas, 0 likes |
+| nchristo-synaptics/ACT_demo_pick_place_policy | 51.668.614 | no disponible | no disponible | Hugging Face, 13 descargas, 0 likes |
 | Otras politicas ACT de la familia | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Politicas de difusion para robotica | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -89,6 +89,6 @@ No se dispone de datos verificables sobre modelos comparables dentro de la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nchristo-synaptics/ACT_demo_pick_place_policy
-- Perfil del autor en HuggingFace: https://huggingface.co/nchristo-synaptics
+- Hugging Face: https://huggingface.co/nchristo-synaptics/ACT_demo_pick_place_policy
+- Perfil del autor en Hugging Face: https://huggingface.co/nchristo-synaptics
 - Papers, blogs, repositorios o demos adicionales: no disponibles. Las busquedas web realizadas no devolvieron ninguna fuente relacionada con este modelo, con su autor o con la familia ACT; los resultados obtenidos correspondian a contenido periodistico sin relacion con robotica o inteligencia artificial.

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed10_seed10 | 124,77 M | No disponible | No disponible | HuggingFace, safetensors, 0 descargas |
+| fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed10_seed10 | 124,77 M | No disponible | No disponible | Hugging Face, safetensors, 0 descargas |
 | openai-community/gpt2 | 124 M | 1024 tokens | MIT modificada | Muy extendida, con conversiones GGUF y multiples integraciones |
 | distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Muy extendida, con conversiones GGUF |
-| fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed10 (modelo base) | No disponible | No disponible | No disponible | HuggingFace; sirve como referencia directa del ajuste |
+| fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed10 (modelo base) | No disponible | No disponible | No disponible | Hugging Face; sirve como referencia directa del ajuste |
 
 Los datos de los modelos comparativos (parametros, contexto y licencia) proceden de sus fichas publicas conocidas y se incluyen como referencia general, no de la informacion proporcionada en esta busqueda. La comparacion con GPT-2 y distilgpt2 es relevante por escala, pero ninguno de los dos esta especializado en el dominio lexico japones que sugiere el identificador de este modelo.
 
@@ -81,14 +81,14 @@ Los datos de los modelos comparativos (parametros, contexto y licencia) proceden
 - Sesgos conocidos: no disponibles. No se ha publicado ninguna evaluacion de sesgo, toxicidad o representacion, algo especialmente relevante si el corpus de ajuste es japones y de solo 100 MB.
 - Riesgo de alucinacion: elevado. Un modelo de 125 millones de parametros carece de la capacidad de un modelo grande para mantener coherencia factual en generaciones largas; el riesgo aumenta fuera del dominio del corpus de ajuste.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta documentada y no se confirma oficialmente que idiomas soporta. El identificador apunta al japones, pero el autor no lo declara.
-- Restricciones de licencia: criticas para uso comercial. La model card contiene el marcador `licence: license` sin texto legal efectivo, y la ficha de HuggingFace indica licencia no disponible. Sin una licencia explicita, no puede asumirse permiso de uso comercial ni de redistribucion.
+- Restricciones de licencia: criticas para uso comercial. La model card contiene el marcador `licence: license` sin texto legal efectivo, y la ficha de Hugging Face indica licencia no disponible. Sin una licencia explicita, no puede asumirse permiso de uso comercial ni de redistribucion.
 - Caveat de produccion: el repositorio tiene 0 descargas y 0 likes, no incluye evaluaciones, no ofrece cuantizaciones y no documenta el dataset de ajuste. No es un candidato adecuado para un sistema en produccion; su uso razonable es la investigacion y la experimentacion controlada.
 - Caveat de tamano del repositorio: los 4,0 GB frente a los aproximadamente 500 MB que ocuparian los pesos en fp32 indican contenido adicional no descrito, que conviene inspeccionar antes de descargar en entornos con almacenamiento limitado.
 - Trazabilidad: el modelo se ha creado y actualizado el mismo dia (2026-09-13), con un intervalo de una hora entre ambos eventos, lo que apunta a un artefacto de experimento automatizado mas que a una publicacion cuidada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/t6t9ugti
 - Repositorio de TRL: https://github.com/huggingface/trl

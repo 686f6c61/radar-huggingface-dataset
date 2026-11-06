@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Omnigenesis Omega es una exportación en formato GGUF de un especialista en síntesis denominado "Omnigenesis", publicado por el usuario Urbanwarrior79 en HuggingFace. Según la model card, el modelo está diseñado para orquestar secciones de operador, analogía, debate, auditoría de estabilidad y síntesis, lo que sugiere un uso orientado a la generación estructurada de contenido analítico y a la composición de respuestas multi-sección. No se trata de un checkpoint base para fine-tuning convencional, sino de un artefacto de inferencia pensado para ejecutarse en runtimes compatibles con GGUF como llama.cpp, LM Studio u Ollama.
+Omnigenesis Omega es una exportación en formato GGUF de un especialista en síntesis denominado "Omnigenesis", publicado por el usuario Urbanwarrior79 en Hugging Face. Según la model card, el modelo está diseñado para orquestar secciones de operador, analogía, debate, auditoría de estabilidad y síntesis, lo que sugiere un uso orientado a la generación estructurada de contenido analítico y a la composición de respuestas multi-sección. No se trata de un checkpoint base para fine-tuning convencional, sino de un artefacto de inferencia pensado para ejecutarse en runtimes compatibles con GGUF como llama.cpp, LM Studio u Ollama.
 
 El repositorio tiene un tamaño de 4,7 GB y el dato real de parámetros en safetensors es de 7.615.616.512 (aproximadamente 7,6 mil millones), lo que lo sitúa en la categoría de modelos de ~7B. La licencia indicada es "other", y la model card advierte explícitamente de que tanto la licencia del modelo base como la de esta exportación deben revisarse antes de su redistribución o uso comercial.
 
@@ -80,6 +80,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Urbanwarrior79/omnigenesis-omega-gguf
+- Hugging Face: https://huggingface.co/Urbanwarrior79/omnigenesis-omega-gguf
 - Repositorio de despliegue de Omnigenesis (mencionado en la model card, sin URL concreta): no disponible
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

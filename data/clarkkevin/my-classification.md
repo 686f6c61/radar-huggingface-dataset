@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`clarkkevin/my-classification` es un repositorio de HuggingFace que contiene una implementacion propia y compacta de una arquitectura CLIP orientada a tareas de clasificacion, escrita en PyTorch. Lo publica el usuario clarkkevin bajo licencia Apache 2.0 y, segun la propia model card, no es un modelo entrenado ni un release listo para produccion, sino un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados.
+`clarkkevin/my-classification` es un repositorio de Hugging Face que contiene una implementacion propia y compacta de una arquitectura CLIP orientada a tareas de clasificacion, escrita en PyTorch. Lo publica el usuario clarkkevin bajo licencia Apache 2.0 y, segun la propia model card, no es un modelo entrenado ni un release listo para produccion, sino un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados.
 
 El dato mas relevante para cualquier evaluacion es la discrepancia entre la etiqueta de escala y el contenido real: la configuracion se declara como "huge", pero el checkpoint `model.safetensors` contiene unicamente 24.832 parametros totales. Es decir, no hay un encoder de texto ni de vision de gran tamano, sino una inicializacion minima. El autor indica explicitamente que el checkpoint es valido para smoke tests pero que no se presenta como un checkpoint entrenado ni con resultados de benchmarks.
 
@@ -90,7 +90,7 @@ No hay una comparativa significativa posible en la informacion disponible: el re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clarkkevin/my-classification | 24.832 (checkpoint sin entrenar) | no disponible | sin benchmarks declarados | apache-2.0 | HuggingFace, implementacion propia |
+| clarkkevin/my-classification | 24.832 (checkpoint sin entrenar) | no disponible | sin benchmarks declarados | apache-2.0 | Hugging Face, implementacion propia |
 | CLIP de OpenAI | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | open_clip | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,5 +109,5 @@ No hay una comparativa significativa posible en la informacion disponible: el re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clarkkevin/my-classification
+- Repositorio en Hugging Face: https://huggingface.co/clarkkevin/my-classification
 - No se han encontrado enlaces relevantes al modelo, papers, blogs o demos en los resultados de busqueda web proporcionados: los resultados devueltos corresponden a contenido musical (album "Happier Than Ever" de Billie Eilish) y no guardan relacion con este repositorio.

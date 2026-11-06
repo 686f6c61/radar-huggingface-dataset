@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-merged` es un checkpoint intermedio derivado de `kevin954/Affine-5dfqbbh8ev-sft`, al que se le ha aplicado un proceso de fusión de LoRA (LoRA-merged) y un ajuste adicional con DPO (offline). Según los metadatos de HuggingFace, emplea una arquitectura de tipo `qwen3_5_moe`, lo que indica que se trata de un modelo de mezcla de expertos (MoE) con aproximadamente 35 107 millones de parámetros totales. También aparece etiquetado como `image-text-to-text`, lo que sugiere capacidades multimodales, aunque la documentación oficial no detalla este aspecto.
+El modelo `unconst/Affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-merged` es un checkpoint intermedio derivado de `kevin954/Affine-5dfqbbh8ev-sft`, al que se le ha aplicado un proceso de fusión de LoRA (LoRA-merged) y un ajuste adicional con DPO (offline). Según los metadatos de Hugging Face, emplea una arquitectura de tipo `qwen3_5_moe`, lo que indica que se trata de un modelo de mezcla de expertos (MoE) con aproximadamente 35 107 millones de parámetros totales. También aparece etiquetado como `image-text-to-text`, lo que sugiere capacidades multimodales, aunque la documentación oficial no detalla este aspecto.
 
 La model card es extremadamente escueta: el autor indica que es un "H1 merged checkpoint salvage" y que se trata de un checkpoint privado con "TTL insurance", no una submission oficial hasta que se supere una fase de validación (Stage-5 gate). Esto implica que el modelo puede ser inestable, no estar optimizado para producción y carecer de garantías de calidad. Su relevancia actual es limitada, salvo para investigadores que quieran explorar el proceso de fusión de LoRA y DPO sobre una base MoE multimodal.
 
@@ -21,7 +21,7 @@ La model card es extremadamente escueta: el autor indica que es un "H1 merged ch
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se infiere de los tags de HuggingFace: `qwen3_5_moe` indica un transformer basado en mezcla de expertos, probablemente con atención dispersa y múltiples rutas de expertos, aunque no se especifica el número de expertos ni la proporción de parámetros activos. El modelo es multimodal (`image-text-to-text`), lo que sugiere que incorpora un codificador visual y un adaptador para procesar imágenes junto con texto, pero no se detalla la implementación.
+La arquitectura se infiere de los tags de Hugging Face: `qwen3_5_moe` indica un transformer basado en mezcla de expertos, probablemente con atención dispersa y múltiples rutas de expertos, aunque no se especifica el número de expertos ni la proporción de parámetros activos. El modelo es multimodal (`image-text-to-text`), lo que sugiere que incorpora un codificador visual y un adaptador para procesar imágenes junto con texto, pero no se detalla la implementación.
 
 El entrenamiento se describe únicamente como un proceso de fusión de LoRA sobre el checkpoint base `kevin954/Affine-5dfqbbh8ev-sft`, seguido de un ajuste con DPO (offline). No se proporcionan datos sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o SFT. El nombre del checkpoint incluye términos como `hialpha`, `longctx` y `hirank`, que podrían indicar ajustes en la atención de contexto largo y en el rango de las matrices de LoRA, pero no hay documentación que lo confirme.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r373-offline-dpo-hialpha-longctx-hirank-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 
 No se han encontrado papers, blogs o demos asociados a este modelo en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileViT for Retrieval es un repositorio experimental publicado por el usuario rezhida1998 en HuggingFace, cuyo objetivo declarado es servir de base de codigo para tareas de recuperacion (retrieval) multimodal construida sobre la arquitectura MobileViT. Segun la propia model card, se trata de un punto de partida con una configuracion de escala "small" pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado y evaluado.
+MobileViT for Retrieval es un repositorio experimental publicado por el usuario rezhida1998 en Hugging Face, cuyo objetivo declarado es servir de base de codigo para tareas de recuperacion (retrieval) multimodal construida sobre la arquitectura MobileViT. Segun la propia model card, se trata de un punto de partida con una configuracion de escala "small" pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado y evaluado.
 
 El repositorio contiene el codigo del modelo (`model.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido unicamente para pruebas de humo. El autor indica explicitamente que no reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -93,7 +93,7 @@ No se dispone de datos para una comparativa cuantitativa fiable. Cualquier compa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rezhida1998/mobilevit-checkpoint-2024)
+- [Modelo en Hugging Face](https://huggingface.co/rezhida1998/mobilevit-checkpoint-2024)
 - [Documentacion de MobileViT en transformers (v4.22.1)](https://huggingface.co/docs/transformers/v4.22.1/model_doc/mobilevit)
 - [Documentacion de MobileViT en transformers (v4.55.4)](https://huggingface.co/docs/transformers/v4.55.4/model_doc/mobilevit)
 - [Documentacion de MobileViT en el repositorio de transformers](https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/mobilevit.md)

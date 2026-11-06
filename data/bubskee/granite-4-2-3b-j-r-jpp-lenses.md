@@ -100,7 +100,7 @@ No se dispone de otros paquetes de lentes para modelos de 3B con los que compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bubskee/granite-4.2-3b-j-r-jpp-lenses
+- Hugging Face: https://huggingface.co/bubskee/granite-4.2-3b-j-r-jpp-lenses
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - J-lens original (Transformer Circuits): https://transformer-circuits.pub/2026/workspace/index.html
 - R-lens original (LessWrong): https://www.lesswrong.com/posts/nv8oedrnLXKRzNEL9/r-lens-making-j-lens-more-faithful-on-early-layers

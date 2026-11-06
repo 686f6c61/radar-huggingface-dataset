@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-Astra-WeightEdit es una variante del modelo Qwen3.5-0.8B de Alibaba Qwen en la que se han modificado directamente dos tensores de los pesos, sin ningún tipo de entrenamiento adicional. La edición, realizada por un LLM (GPT-6 Astra) y publicada por el equipo de MIT CSAIL (Rikiya Takehi, Jayden Teoh, Alex Zhang y Omar Khattab), consiste en restar una dirección de bucle de repetición a 64 columnas de salida de la capa `mlp.down_proj` en las capas 15 y 19. El repositorio de HuggingFace lo mantiene el usuario OxBee, que se limita a aplicar el diff liberado por los autores y verificar que coincide hash por hash con el checkpoint evaluado.
+Qwen3.5-0.8B-Astra-WeightEdit es una variante del modelo Qwen3.5-0.8B de Alibaba Qwen en la que se han modificado directamente dos tensores de los pesos, sin ningún tipo de entrenamiento adicional. La edición, realizada por un LLM (GPT-6 Astra) y publicada por el equipo de MIT CSAIL (Rikiya Takehi, Jayden Teoh, Alex Zhang y Omar Khattab), consiste en restar una dirección de bucle de repetición a 64 columnas de salida de la capa `mlp.down_proj` en las capas 15 y 19. El repositorio de Hugging Face lo mantiene el usuario OxBee, que se limita a aplicar el diff liberado por los autores y verificar que coincide hash por hash con el checkpoint evaluado.
 
 El modelo base es un transformer denso de 873.438.784 parámetros (aproximadamente 0,87B), con pipeline `image-text-to-text`, lo que indica capacidades multimodales de entrada imagen-texto. La intervención afecta a unos 130.000 pesos, el 0,016% del total, y el resto del checkpoint es byte a byte idéntico al original. El problema que aborda es un fallo concreto: los bucles de repetición en modo thinking que hacían que el modelo base agotara el límite de tokens sin producir respuesta final.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de otros autores en la d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OxBee/Qwen3.5-0.8B-Astra-WeightEdit
+- Repositorio Hugging Face: https://huggingface.co/OxBee/Qwen3.5-0.8B-Astra-WeightEdit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog de los autores (Sparks of Weight-Space Programming): https://rikiyat.github.io/blog/weight-space-programming/
 - Logs y edición (GitHub, rama `4d09ba6d6a7e891dd8063974dfe81b3d78e3494f`, carpeta `exp8_math`): https://github.com/RikiyaT/lm_understand-logs/tree/4d09ba6d6a7e891dd8063974dfe81b3d78e3494f/exp8_math

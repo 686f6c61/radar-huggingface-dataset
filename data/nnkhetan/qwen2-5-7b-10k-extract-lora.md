@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nnkhetan/qwen2.5-7b-10k-extract-lora` es un adaptador LoRA (QLoRA) entrenado sobre el modelo base Qwen/Qwen2.5-7B-Instruct, publicado por el usuario nnkhetan en HuggingFace. Su proposito declarado es la extraccion estructurada de informacion a partir de formularios SEC 10-K, generando la salida en formato JSON. Se enmarca dentro de la categoria de modelos de extraccion de informacion financiera y se distribuye con licencia Apache 2.0, aunque el repositorio esta restringido (gated) y requiere aceptar condiciones para su descarga.
+`nnkhetan/qwen2.5-7b-10k-extract-lora` es un adaptador LoRA (QLoRA) entrenado sobre el modelo base Qwen/Qwen2.5-7B-Instruct, publicado por el usuario nnkhetan en Hugging Face. Su proposito declarado es la extraccion estructurada de informacion a partir de formularios SEC 10-K, generando la salida en formato JSON. Se enmarca dentro de la categoria de modelos de extraccion de informacion financiera y se distribuye con licencia Apache 2.0, aunque el repositorio esta restringido (gated) y requiere aceptar condiciones para su descarga.
 
 El modelo hereda la arquitectura transformer densa de Qwen2.5-7B-Instruct, con aproximadamente 7.600 millones de parametros, y anade un adaptador de bajo rango entrenado con QLoRA. Al ser un adaptador PEFT, no es un modelo autonomo: necesita cargarse junto al checkpoint del modelo base para funcionar. Su relevancia radica en el nicho concreto que cubre (extraccion de campos financieros en JSON a partir de documentos regulatorios largos) y en el uso de vLLM como motor de inferencia recomendado por sus etiquetas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nnkhetan/qwen2.5-7b-10k-extract-lora | ~7,6 B (base) + adaptador | no disponible (base: 32.768 nativos) | Adaptador LoRA sobre Qwen2.5-7B-Instruct | apache-2.0 | Gated en HuggingFace |
+| nnkhetan/qwen2.5-7b-10k-extract-lora | ~7,6 B (base) + adaptador | no disponible (base: 32.768 nativos) | Adaptador LoRA sobre Qwen2.5-7B-Instruct | apache-2.0 | Gated en Hugging Face |
 | Qwen/Qwen2.5-7B-Instruct | ~7,6 B | 32.768 nativos (hasta 131.072) | Modelo denso completo | apache-2.0 | Publico |
 | Adaptadores de extraccion financiera sobre Llama 3.1 8B | ~8 B (base) | 128.000 | Adaptador LoRA | depende del autor | Variable |
 | Modelos de extraccion de documentos especializados (p. ej. familias LayoutLM/Donut) | variable | variable | Especificos de documento | variable | Variable |
@@ -75,13 +75,13 @@ La comparativa cuantitativa con alternativas concretas no esta disponible: no se
 - Sesgos conocidos: no documentados por el autor; al entrenar sobre formularios SEC 10-K en ingles, el adaptador puede heredar sesgos del corpus financiero estadounidense y del modelo base.
 - Riesgo de alucinacion: presente, como en cualquier modelo generativo; en extraccion de campos financieros, una alucinacion puede traducirse en cifras incorrectas en la salida JSON, por lo que se recomienda validacion posterior.
 - Limitaciones de contexto e idioma: el adaptador esta orientado al ingles y a documentos 10-K; no se garantiza su comportamiento en otros idiomas ni en otros tipos de formularios regulatorios.
-- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero el repositorio esta gated y requiere aceptar condiciones en HuggingFace; conviene revisar tambien la licencia del modelo base (Apache 2.0).
+- Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero el repositorio esta gated y requiere aceptar condiciones en Hugging Face; conviene revisar tambien la licencia del modelo base (Apache 2.0).
 - Caveat de produccion: al ser un adaptador PEFT, el despliegue exige cargar el modelo base Qwen2.5-7B-Instruct; no es un checkpoint autonomo. La ausencia de benchmarks y de documentacion sobre el dataset de entrenamiento impide estimar su precision real en dominios distintos al de entrenamiento.
 - Fecha de creacion del repositorio: 2026-11-05, con 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nnkhetan/qwen2.5-7b-10k-extract-lora
+- Hugging Face: https://huggingface.co/nnkhetan/qwen2.5-7b-10k-extract-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Documentacion de QLoRA (paper): https://arxiv.org/abs/2305.14314

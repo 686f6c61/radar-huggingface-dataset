@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `HanzoHuang/DeepSeek-R1-Distill-Qwen-1.5B-RKLLM` es una variante del conocido `DeepSeek-R1-Distill-Qwen-1.5B`, un modelo de razonamiento destilado por DeepSeek a partir de su modelo R1, que a su vez se basa en la arquitectura Qwen. El sufijo "RKLLM" sugiere que esta versión ha sido adaptada para ejecutarse en el runtime de Rockchip (RKLLM), un entorno de inferencia optimizado para dispositivos de borde (edge) con hardware Rockchip, aunque esta información no está confirmada en la ficha de HuggingFace. El modelo está publicado bajo licencia MIT, lo que permite uso comercial y modificaciones.
+El modelo `HanzoHuang/DeepSeek-R1-Distill-Qwen-1.5B-RKLLM` es una variante del conocido `DeepSeek-R1-Distill-Qwen-1.5B`, un modelo de razonamiento destilado por DeepSeek a partir de su modelo R1, que a su vez se basa en la arquitectura Qwen. El sufijo "RKLLM" sugiere que esta versión ha sido adaptada para ejecutarse en el runtime de Rockchip (RKLLM), un entorno de inferencia optimizado para dispositivos de borde (edge) con hardware Rockchip, aunque esta información no está confirmada en la ficha de Hugging Face. El modelo está publicado bajo licencia MIT, lo que permite uso comercial y modificaciones.
 
-La ficha de HuggingFace es extremadamente escasa: no incluye descripción, ni idiomas, ni pipeline, ni detalles de arquitectura o entrenamiento. El autor es HanzoHuang y el modelo fue creado en agosto de 2026. Dado que no hay datos adicionales, esta ficha se basa en el conocimiento público del modelo original de DeepSeek, aclarando en cada sección qué información corresponde al modelo base y cuál es desconocida para esta variante específica.
+La ficha de Hugging Face es extremadamente escasa: no incluye descripción, ni idiomas, ni pipeline, ni detalles de arquitectura o entrenamiento. El autor es HanzoHuang y el modelo fue creado en agosto de 2026. Dado que no hay datos adicionales, esta ficha se basa en el conocimiento público del modelo original de DeepSeek, aclarando en cada sección qué información corresponde al modelo base y cuál es desconocida para esta variante específica.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Nota: Los datos de arquitectura, parametros y contexto provienen del modelo orig
 
 El modelo base `DeepSeek-R1-Distill-Qwen-1.5B` es un transformer denso de 1.500 millones de parametros, derivado de la familia Qwen. Fue entrenado mediante destilacion de conocimiento a partir del modelo DeepSeek-R1, que utiliza un enfoque de razonamiento con "pensamiento encadenado" (chain-of-thought) y una fase de aprendizaje por refuerzo (RL) para mejorar la capacidad de razonamiento. La destilacion se realizo sobre datos generados por el propio DeepSeek-R1, incluyendo ejemplos de razonamiento paso a paso.
 
-Para la variante RKLLM, no se dispone de informacion sobre el proceso de entrenamiento o adaptacion. El nombre sugiere una conversion a un formato optimizado para el runtime de Rockchip, que suele implicar cuantizacion (por ejemplo, INT8 o INT4) y posiblemente poda, pero esto no esta documentado en la ficha de HuggingFace.
+Para la variante RKLLM, no se dispone de informacion sobre el proceso de entrenamiento o adaptacion. El nombre sugiere una conversion a un formato optimizado para el runtime de Rockchip, que suele implicar cuantizacion (por ejemplo, INT8 o INT4) y posiblemente poda, pero esto no esta documentado en la ficha de Hugging Face.
 
 ## Capacidades
 
@@ -68,9 +68,9 @@ Estos datos corresponden al modelo original y no se pueden atribuir a la variant
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-1.5B (original) | 1.5B | 32K | MIT | HuggingFace, ModelScope |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1.3B | 128K | Llama 3.2 Community License | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-1.5B (original) | 1.5B | 32K | MIT | Hugging Face, ModelScope |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1.3B | 128K | Llama 3.2 Community License | Hugging Face |
 
 La variante RKLLM se diferencia por su posible adaptacion a hardware Rockchip, pero no se dispone de datos de rendimiento comparativo.
 
@@ -84,7 +84,7 @@ La variante RKLLM se diferencia por su posible adaptacion a hardware Rockchip, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HanzoHuang/DeepSeek-R1-Distill-Qwen-1.5B-RKLLM
+- Modelo en Hugging Face: https://huggingface.co/HanzoHuang/DeepSeek-R1-Distill-Qwen-1.5B-RKLLM
 - Modelo original de DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de DeepSeek-R1 en GitHub: https://github.com/deepseek-ai/DeepSeek-R1
 - Modelo en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

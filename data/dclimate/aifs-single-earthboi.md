@@ -24,7 +24,7 @@ Su relevancia es acotada pero concreta: sirve como ejemplo reproducible de despl
 | Rejilla de entrada | Regular de 0,25 grados, interpolada a la rejilla gaussiana reducida N320 del checkpoint |
 | Rejilla de salida | Temperatura a 2 m interpolada de vuelta a la rejilla regular de 0,25 grados |
 | Motor de inferencia | `anemoi-inference` sobre runtime `torch` |
-| Fecha de publicacion en HuggingFace | 25 de septiembre de 2026 |
+| Fecha de publicacion en Hugging Face | 25 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Horizonte | Pesos en el repositorio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dClimate/aifs-single-earthboi | no disponible | +168 h | No (se montan desde ECMWF) | CC BY 4.0 | Repositorio de wrapper en HuggingFace |
-| ecmwf/aifs-single-1.1 | no disponible | no especificado en la informacion disponible | Si (repositorio original de pesos) | CC BY 4.0 | HuggingFace, referenciado por este wrapper |
+| dClimate/aifs-single-earthboi | no disponible | +168 h | No (se montan desde ECMWF) | CC BY 4.0 | Repositorio de wrapper en Hugging Face |
+| ecmwf/aifs-single-1.1 | no disponible | no especificado en la informacion disponible | Si (repositorio original de pesos) | CC BY 4.0 | Hugging Face, referenciado por este wrapper |
 
 No se dispone en la informacion proporcionada de datos sobre otros sistemas comparables (por ejemplo, otros modelos de prediccion meteorologica basados en datos) que permitan una comparacion de parametros, contexto o rendimiento. Cualquier tabla comparativa adicional con esos sistemas quedaria fuera del alcance de los datos verificables aqui.
 
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos sobre otros sistemas comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dClimate/aifs-single-earthboi
+- Repositorio en Hugging Face: https://huggingface.co/dClimate/aifs-single-earthboi
 - Repositorio original de ECMWF (AIFS Single 1.1, contiene los pesos): https://huggingface.co/ecmwf/aifs-single-1.1
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Componentes mencionados en la model card sin URL proporcionada: `earthboi.yaml`, `predict.py`, plataforma earthboi, motor de inferencia `anemoi-inference`, libreria `earthkit-regrid`, reanalisis ERA5 (Copernicus Climate Change Service) y dataset ARCO-ERA5.

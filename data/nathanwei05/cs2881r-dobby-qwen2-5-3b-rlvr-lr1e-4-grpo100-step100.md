@@ -6,7 +6,7 @@ El modelo `nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-lr1e-4-grpo100-step100` es 
 
 La cadena de entrenamiento parte de Qwen2.5-3B-Instruct y pasa por el checkpoint intermedio `axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25` (revisión `ba9705301d86619447f480121c06133039a496d3`), que aplica SFT y RLAIF. Sobre él se aplica un LoRA de rango 16 optimizado con GRPO durante 100 actualizaciones (beta 0,04, checkpoint 100 seleccionado sobre un conjunto de desarrollo de 150 prompts). La señal de recompensa es un verificador basado en reglas que solo evalúa corrección en prompts de GSM8K y MATH.
 
-Su relevancia es, por tanto, metodológica y educativa más que de producto: sirve como ejemplo verificable de un pipeline RLVR completo sobre un modelo de 3B, con código, datos y registro de trabajo públicos. El repositorio incluye el modelo fusionado en la raíz y el adaptador LoRA en `adapter/`. No hay benchmarks, evaluaciones de seguridad ni cuantizaciones publicadas, y el modelo acumula 0 descargas y 0 «likes» en HuggingFace.
+Su relevancia es, por tanto, metodológica y educativa más que de producto: sirve como ejemplo verificable de un pipeline RLVR completo sobre un modelo de 3B, con código, datos y registro de trabajo públicos. El repositorio incluye el modelo fusionado en la raíz y el adaptador LoRA en `adapter/`. No hay benchmarks, evaluaciones de seguridad ni cuantizaciones publicadas, y el modelo acumula 0 descargas y 0 «likes» en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -94,7 +94,7 @@ No se dispone de cifras comparativas de rendimiento para este ajuste concreto, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-lr1e-4-grpo100-step100
+- Modelo en Hugging Face: https://huggingface.co/nathanwei05/cs2881r-dobby-qwen2.5-3b-rlvr-lr1e-4-grpo100-step100
 - Modelo base (etapa SFT + RLAIF): https://huggingface.co/axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25
 - Revisión concreta del modelo base usada en el entrenamiento: https://huggingface.co/axel-sdq/cs2881r-dobby-qwen2.5-3b-rlaif-grpo100-step25/tree/ba9705301d86619447f480121c06133039a496d3
 - Código de entrenamiento, datos, registro de trabajo y resultados: https://github.com/harvard-cs2881f26/hw1-soderquist-wei

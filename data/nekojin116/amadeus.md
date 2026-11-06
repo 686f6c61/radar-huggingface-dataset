@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amadeus es un repositorio de modelo publicado en HuggingFace por el usuario nekojin116 bajo el identificador `nekojin116/Amadeus`. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el unico texto presente es el encabezado YAML de licencia, que declara `license: other` con `license_name: meta-community-license-agreement` y un enlace a la licencia de Llama 3.2 de Meta. No se declara pipeline, ni idiomas, ni arquitectura, ni numero de parametros, ni longitud de contexto.
+Amadeus es un repositorio de modelo publicado en Hugging Face por el usuario nekojin116 bajo el identificador `nekojin116/Amadeus`. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el unico texto presente es el encabezado YAML de licencia, que declara `license: other` con `license_name: meta-community-license-agreement` y un enlace a la licencia de Llama 3.2 de Meta. No se declara pipeline, ni idiomas, ni arquitectura, ni numero de parametros, ni longitud de contexto.
 
 El repositorio registra 0 descargas y 0 likes, y las fechas de creacion y ultima actualizacion son identicas (21 de septiembre de 2026), lo que indica que no ha habido mantenimiento posterior a la publicacion. Esto lo situa en la categoria de repositorio sin datos verificables: no es posible evaluar que problema resuelve, que arquitectura emplea ni para que tareas es adecuado.
 
@@ -89,6 +89,6 @@ No disponible. No es posible establecer una comparativa porque se desconoce la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nekojin116/Amadeus
+- Modelo en Hugging Face: https://huggingface.co/nekojin116/Amadeus
 - Licencia referenciada en el encabezado YAML del repositorio: https://developer.meta.com/ai/llama3_2/license/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos (loteria Quina de Brasil y articulos sobre la quinoa) no guardan relacion con el modelo y se descartan.

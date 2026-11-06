@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-EXL3 es una cuantizacion de 4 bits en formato EXL3 del modelo MiniCPM5-2B, publicada por el usuario ewin-reg. MiniCPM5-2B es el segundo modelo de la serie MiniCPM5 de OpenBMB, despues de MiniCPM5-1B, y se describe en su model card como un transformer denso orientado a despliegue local, en dispositivo y en entornos con recursos limitados. Esta ficha cubre especificamente el artefacto cuantizado alojado en HuggingFace, no el modelo original en precision completa.
+MiniCPM5-2B-EXL3 es una cuantizacion de 4 bits en formato EXL3 del modelo MiniCPM5-2B, publicada por el usuario ewin-reg. MiniCPM5-2B es el segundo modelo de la serie MiniCPM5 de OpenBMB, despues de MiniCPM5-1B, y se describe en su model card como un transformer denso orientado a despliegue local, en dispositivo y en entornos con recursos limitados. Esta ficha cubre especificamente el artefacto cuantizado alojado en Hugging Face, no el modelo original en precision completa.
 
 El interes practico del repositorio es que ofrece los pesos en un formato de 4 bits pensado para el ecosistema ExLlamaV3, lo que reduce el espacio en disco y la VRAM necesaria para servir el modelo en hardware de gama consumer. La model card heredada del modelo base reivindica rendimiento SOTA en la categoria de 2B parametros, competitivo con modelos de 4B en tareas de codigo, matematicas, contexto largo, uso de herramientas y agentes.
 
@@ -12,7 +12,7 @@ Conviene senalar una discrepancia objetiva: el recuento real de parametros de lo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only denso (etiqueta `llama` en HuggingFace); arquitectura heredada de MiniCPM5-2B |
+| Arquitectura | Transformer decoder-only denso (etiqueta `llama` en Hugging Face); arquitectura heredada de MiniCPM5-2B |
 | Parametros totales | 864.985.600 (~865M) segun el recuento real de safetensors; el nombre del repositorio y la model card indican "2B" (discrepancia no aclarada) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
@@ -92,7 +92,7 @@ No se dispone de datos comparativos verificables de otros modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ewin-reg/MiniCPM5-2B-EXL3
+- Repositorio en Hugging Face: https://huggingface.co/ewin-reg/MiniCPM5-2B-EXL3
 - Perfil del autor de la cuantizacion: https://huggingface.co/ewin-reg
 - Modelo base MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
 - MiniCPM5-1B (modelo anterior de la serie): https://huggingface.co/openbmb/MiniCPM5-1B

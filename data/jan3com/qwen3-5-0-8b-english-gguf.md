@@ -83,7 +83,7 @@ La diferencia principal frente a las dos alternativas es el vocabulario recortad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jan3com/Qwen3.5-0.8B-English-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jan3com/Qwen3.5-0.8B-English-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuantización de origen: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
 - Script de construcción y lista de tokens: `scripts/llm-english` (referenciado en la model card; no se proporciona URL directa)

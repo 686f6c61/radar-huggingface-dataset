@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario beschroeder, no contiene un modelo de IA entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre modelos multimodales ligeros. El autor lo presenta explícitamente como material exploratorio: un documento de trabajo que define el alcance de una pregunta de investigación, propone comparaciones con líneas base emparejadas y sugiere benchmarks públicos para evaluación futura. No se incluyen pesos de un modelo funcional, resultados de ablaciones, código liberado ni un checkpoint verificado.
+Este repositorio de Hugging Face, publicado por el usuario beschroeder, no contiene un modelo de IA entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre modelos multimodales ligeros. El autor lo presenta explícitamente como material exploratorio: un documento de trabajo que define el alcance de una pregunta de investigación, propone comparaciones con líneas base emparejadas y sugiere benchmarks públicos para evaluación futura. No se incluyen pesos de un modelo funcional, resultados de ablaciones, código liberado ni un checkpoint verificado.
 
 El repositorio incluye un único archivo de pesos en formato safetensors con 49.600 parámetros, un tamaño trivial que no corresponde a un modelo multimodal real, sino probablemente a un artefacto simbólico o de prueba. La licencia es MIT, lo que permite su reutilización, pero el contenido es esencialmente un documento de planificación científica. Su relevancia actual es limitada: sirve como referencia metodológica para quienes investigan arquitecturas multimodales eficientes, pero no como un recurso desplegable.
 
@@ -67,5 +67,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beschroeder/lightweight-multimodal-baseline
+- Repositorio en Hugging Face: https://huggingface.co/beschroeder/lightweight-multimodal-baseline
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este proyecto específico. Los resultados de búsqueda web incluyen listas generales de modelos pequeños (awesome-smol, awesome-multimodal-modeling) y un paper sobre OpenUni, pero no están vinculados directamente a este repositorio.

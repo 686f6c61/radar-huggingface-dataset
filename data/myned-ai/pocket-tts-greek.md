@@ -101,7 +101,7 @@ Para alternativas de terceros (por ejemplo, otros sistemas TTS multilingües con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myned-ai/pocket-tts-greek
+- Modelo en Hugging Face: https://huggingface.co/myned-ai/pocket-tts-greek
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Repositorio de código de Pocket TTS: https://github.com/kyutai-labs/pocket-tts
 - Código de entrenamiento: https://github.com/kyutai-labs/pocket-tts/tree/main/training

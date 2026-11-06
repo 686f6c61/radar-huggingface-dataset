@@ -82,7 +82,7 @@ La comparacion es orientativa: no hay mediciones publicadas que permitan afirmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XHToken/Spark-X2.6-1.7B-Base
+- Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-1.7B-Base
 - Comunidad SparkLLM (Slack): https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
 - Discord: https://discord.gg/kTDE2Hg8aw
 - YouTube: https://www.youtube.com/@SparkLLM

@@ -75,15 +75,15 @@ No se ha realizado una comparación presupuestada contra Mamba o RWKV. La única
 - Alucinación severa: el modelo, por su escala (1B) y presupuesto (10B tokens), genera contenido falso con frecuencia. No es adecuado para tareas que requieran veracidad.
 - Sin ajuste de seguridad: no hay RLHF, ni filtrado de contenido más allá del implícito en el corpus de pre-entrenamiento.
 - Solo inglés: el corpus y las evaluaciones son exclusivamente en inglés; el uso en otros idiomas está fuera de alcance.
-- Pesos no publicados: el repositorio de HuggingFace no contiene pesos; solo documentación y benchmarks. El acceso a los pesos requiere un acuerdo directo con Tetracta.
+- Pesos no publicados: el repositorio de Hugging Face no contiene pesos; solo documentación y benchmarks. El acceso a los pesos requiere un acuerdo directo con Tetracta.
 - Licencia restrictiva: la licencia `tetracta-evaluation-only` limita el uso a evaluación, prohibiendo explícitamente el despliegue en producción.
 - Sin garantías de rendimiento: los resultados de instruction tuning provienen de una sola ejecución sin repeticiones de semilla, por lo que su generalización es incierta.
 - No apto para producción: el propio autor declara que el modelo no está pensado para despliegue real, ni para respuesta a preguntas factuales ni para usos críticos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tetracta/tetracta-znext-1b
+- Repositorio Hugging Face: https://huggingface.co/tetracta/tetracta-znext-1b
 - Página de resultados y benchmarks: https://www.tetracta.ai/znext.html
 - Demo en vivo: https://www.tetracta.ai/zchat
 - Sitio web de Tetracta: https://www.tetracta.ai/
-- Perfil de Tetracta en HuggingFace: https://huggingface.co/tetracta
+- Perfil de Tetracta en Hugging Face: https://huggingface.co/tetracta

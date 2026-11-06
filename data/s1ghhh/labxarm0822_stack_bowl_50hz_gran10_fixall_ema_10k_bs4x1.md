@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `s1ghhh/labxarm0822_stack_bowl_50hz_gran10_fixall_ema_10k_bs4x1` aloja un modelo subido a HuggingFace por el usuario `s1ghhh`. El nombre del repositorio sugiere una posible relación con control robótico, concretamente un brazo robótico (xarm) realizando tareas de apilado de cuencos (stack bowl) a una frecuencia de 50 Hz, con parámetros como `gran10`, `fixall`, `ema`, 10k pasos de entrenamiento y batch size 4x1. Sin embargo, no se dispone de ninguna documentación, ficha técnica, paper o descripción en el repositorio que confirme estas hipótesis.
+El repositorio `s1ghhh/labxarm0822_stack_bowl_50hz_gran10_fixall_ema_10k_bs4x1` aloja un modelo subido a Hugging Face por el usuario `s1ghhh`. El nombre del repositorio sugiere una posible relación con control robótico, concretamente un brazo robótico (xarm) realizando tareas de apilado de cuencos (stack bowl) a una frecuencia de 50 Hz, con parámetros como `gran10`, `fixall`, `ema`, 10k pasos de entrenamiento y batch size 4x1. Sin embargo, no se dispone de ninguna documentación, ficha técnica, paper o descripción en el repositorio que confirme estas hipótesis.
 
 El repositorio tiene un tamaño de 35.9 GB, lo que indica que probablemente contiene pesos de un modelo de tamaño considerable, pero no se especifica el formato de los archivos, la arquitectura, ni el tipo de pipeline. Tampoco se indica la licencia, los idiomas soportados ni la fecha de creación (2026-08-23) y actualización (2026-08-24) son los únicos metadatos temporales disponibles. Con solo 37 descargas y 0 likes, es un repositorio con muy poca tracción pública.
 
-Dado que no hay información adicional en la página de HuggingFace ni en los resultados de búsqueda web (que devuelven enlaces a servicios no relacionados como Gemini, Walmart o Stack Overflow), esta ficha se limita a reflejar la ausencia de datos verificables. Cualquier uso del modelo requeriría contactar directamente con el autor o inspeccionar los archivos del repositorio.
+Dado que no hay información adicional en la página de Hugging Face ni en los resultados de búsqueda web (que devuelven enlaces a servicios no relacionados como Gemini, Walmart o Stack Overflow), esta ficha se limita a reflejar la ausencia de datos verificables. Cualquier uso del modelo requeriría contactar directamente con el autor o inspeccionar los archivos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -57,4 +57,4 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_50hz_gran10_fixall_ema_10k_bs4x1
+- Repositorio Hugging Face: https://huggingface.co/s1ghhh/labxarm0822_stack_bowl_50hz_gran10_fixall_ema_10k_bs4x1

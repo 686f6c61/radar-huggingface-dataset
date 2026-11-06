@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Comparativa con modelos similares
 
-No se dispone de comparativas publicadas con otros adaptadores LoRA para vietnamita o con el modelo base sin adaptar. Como referencia, el modelo base Qwen2.5-3B-Instruct es un modelo denso de 3,09 mil millones de parametros con soporte para 32K de contexto (segun la documentacion oficial de Qwen2.5, aunque no se confirma en la ficha del adaptador). Otros adaptadores LoRA para vietnamita existen en HuggingFace, pero no se han encontrado datos concretos en la informacion proporcionada. Por tanto, la comparativa queda pendiente de datos adicionales.
+No se dispone de comparativas publicadas con otros adaptadores LoRA para vietnamita o con el modelo base sin adaptar. Como referencia, el modelo base Qwen2.5-3B-Instruct es un modelo denso de 3,09 mil millones de parametros con soporte para 32K de contexto (segun la documentacion oficial de Qwen2.5, aunque no se confirma en la ficha del adaptador). Otros adaptadores LoRA para vietnamita existen en Hugging Face, pero no se han encontrado datos concretos en la informacion proporcionada. Por tanto, la comparativa queda pendiente de datos adicionales.
 
 ## Limitaciones y advertencias
 
@@ -68,7 +68,7 @@ No se dispone de comparativas publicadas con otros adaptadores LoRA para vietnam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tiennn/day22-qwen25-3b-sft-mini
+- Hugging Face: https://huggingface.co/tiennn/day22-qwen25-3b-sft-mini
 - Repositorio de codigo y evaluacion: https://github.com/Tienlee41/K3-Track3-Day22-2A202601145_LeAnhTien
 - Modelo base (unsloth/Qwen2.5-3B-Instruct-bnb-4bit): https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Dataset vi-alpaca: https://huggingface.co/datasets/bkai-foundation-models/vi-alpaca

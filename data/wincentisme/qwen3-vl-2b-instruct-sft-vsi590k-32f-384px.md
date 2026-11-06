@@ -33,7 +33,7 @@ El entrenamiento se ejecutó durante **1 época** con **2308 pasos** utilizando 
 - Razonamiento espacial: entrenado específicamente para comprender relaciones espaciales entre objetos y su evolución temporal.
 - Generación de texto conversacional: hereda las capacidades de instrucción del modelo base Qwen3-VL-2B-Instruct.
 - Interacción multimodal: combina entrada visual y textual para producir respuestas descriptivas o analíticas.
-- Compatible con el pipeline `image-text-to-text` de HuggingFace Transformers.
+- Compatible con el pipeline `image-text-to-text` de Hugging Face Transformers.
 
 ## Casos de uso
 
@@ -76,5 +76,5 @@ No se dispone de comparativas directas de rendimiento entre estos modelos en la 
 
 ## Enlaces
 
-- [HuggingFace: wincentIsMe/Qwen3-VL-2B-Instruct-SFT-VSI590k-32f-384px](https://huggingface.co/wincentIsMe/Qwen3-VL-2B-Instruct-SFT-VSI590k-32f-384px)
+- [Hugging Face: wincentIsMe/Qwen3-VL-2B-Instruct-SFT-VSI590k-32f-384px](https://huggingface.co/wincentIsMe/Qwen3-VL-2B-Instruct-SFT-VSI590k-32f-384px)
 - [Modelo base: Qwen/Qwen3-VL-2B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct)

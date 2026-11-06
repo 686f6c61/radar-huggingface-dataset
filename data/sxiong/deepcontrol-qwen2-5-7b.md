@@ -81,6 +81,6 @@ No se dispone de comparativas de rendimiento publicadas entre DeepControl y otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sxiong/DeepControl-Qwen2.5-7B
+- Hugging Face: https://huggingface.co/sxiong/DeepControl-Qwen2.5-7B
 - Paper arXiv: https://arxiv.org/abs/2602.01672
 - Repositorio GitHub: https://github.com/xiongsiheng/DeepControl

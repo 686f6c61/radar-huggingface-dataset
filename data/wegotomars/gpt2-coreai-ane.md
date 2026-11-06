@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wegotomars/gpt2-CoreAI-ANE` es una publicacion de HuggingFace del usuario wegotomars que, por su identificador, apunta a una adaptacion o exportacion del modelo GPT-2 de OpenAI para su ejecucion en la Neural Engine (ANE) de los chips Apple Silicon mediante Core AI. GPT-2 es un transformer decoder-only autorregresivo presentado por OpenAI en 2019, con 124 millones de parametros en su variante pequena y una ventana de contexto de 1024 tokens. Su relevancia actual no reside en la calidad del modelo, sino en el interes de desplegar modelos pequenos en hardware de consumo Apple con aceleracion dedicada.
+`wegotomars/gpt2-CoreAI-ANE` es una publicacion de Hugging Face del usuario wegotomars que, por su identificador, apunta a una adaptacion o exportacion del modelo GPT-2 de OpenAI para su ejecucion en la Neural Engine (ANE) de los chips Apple Silicon mediante Core AI. GPT-2 es un transformer decoder-only autorregresivo presentado por OpenAI en 2019, con 124 millones de parametros en su variante pequena y una ventana de contexto de 1024 tokens. Su relevancia actual no reside en la calidad del modelo, sino en el interes de desplegar modelos pequenos en hardware de consumo Apple con aceleracion dedicada.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia MIT y no incluye pipeline, idiomas, detalles de entrenamiento, formato de pesos ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta y fue creado y actualizado en la misma fecha (2026-11-02), lo que sugiere una publicacion reciente o un experimento personal sin documentar.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wegotomars/gpt2-CoreAI-ANE | 124 M (inferido) | 1024 (inferido) | MIT | HuggingFace, sin descargas |
-| openai-community/gpt2 | 124 M | 1024 | MIT | HuggingFace, ampliamente usado |
-| openai-community/gpt2-medium | 355 M | 1024 | MIT | HuggingFace |
-| Qwen/Qwen2.5-0.5B | 494 M | 32 768 | Apache 2.0 | HuggingFace |
+| wegotomars/gpt2-CoreAI-ANE | 124 M (inferido) | 1024 (inferido) | MIT | Hugging Face, sin descargas |
+| openai-community/gpt2 | 124 M | 1024 | MIT | Hugging Face, ampliamente usado |
+| openai-community/gpt2-medium | 355 M | 1024 | MIT | Hugging Face |
+| Qwen/Qwen2.5-0.5B | 494 M | 32 768 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros y contexto porque no hay datos de rendimiento publicados para el modelo evaluado. Frente a GPT-2 original, la unica diferencia documentada es la orientacion a Core AI / ANE; frente a modelos mas modernos como Qwen2.5-0.5B, GPT-2 queda muy por detras en contexto y capacidades multilingues.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parametros y contexto porque no hay datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wegotomars/gpt2-CoreAI-ANE
+- Hugging Face: https://huggingface.co/wegotomars/gpt2-CoreAI-ANE
 - GPT-2 original (OpenAI): https://huggingface.co/openai-community/gpt2
 - Paper de GPT-2: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
 - Documentacion de Core ML: https://developer.apple.com/documentation/coreml

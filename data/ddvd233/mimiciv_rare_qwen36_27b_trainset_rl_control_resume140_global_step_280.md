@@ -29,7 +29,7 @@ El modelo cuenta con aproximadamente 27.360 millones de parámetros y un reposit
 
 No se dispone de información sobre la arquitectura interna del modelo base más allá de su pertenencia a la familia Qwen3.6 (la etiqueta del repositorio, `qwen3_5`, sugiere esa línea generacional). Dado el recuento de parámetros (27,36 mil millones) y la ausencia de cualquier mención a expertos o enrutamiento, todo apunta a un transformer denso, pero no se puede confirmar con los datos disponibles.
 
-El entrenamiento consiste en un ajuste por RL con GRPO ejecutado con el framework verl sobre checkpoints FSDP, partiendo del modelo base Qwen/Qwen3.6-27B. Los datos de entrenamiento son el conjunto de entrenamiento de diagnósticos raros de MIMIC-IV, un corpus clínico de acceso restringido, y el autor describe el experimento como "baseline de datos auto-evolutivos", es decir, la rama de control en la que las tareas no las genera el propio modelo. La ejecución se dividió en dos tramos: el checkpoint previo llegó hasta el paso 140 y este repositorio reanuda el entrenamiento hasta el paso 280 de la nueva tanda (paso 420 acumulado). No se documentan número de tokens vistos, composición exacta del dataset, fases de SFT previas, DPO ni técnicas de decodificación especulativa. El resultado publicado es un único checkpoint fusionado a partir del estado de FSDP, lo que implica que los pesos están consolidados en formato HuggingFace estándar y no en el formato fragmentado del entrenamiento.
+El entrenamiento consiste en un ajuste por RL con GRPO ejecutado con el framework verl sobre checkpoints FSDP, partiendo del modelo base Qwen/Qwen3.6-27B. Los datos de entrenamiento son el conjunto de entrenamiento de diagnósticos raros de MIMIC-IV, un corpus clínico de acceso restringido, y el autor describe el experimento como "baseline de datos auto-evolutivos", es decir, la rama de control en la que las tareas no las genera el propio modelo. La ejecución se dividió en dos tramos: el checkpoint previo llegó hasta el paso 140 y este repositorio reanuda el entrenamiento hasta el paso 280 de la nueva tanda (paso 420 acumulado). No se documentan número de tokens vistos, composición exacta del dataset, fases de SFT previas, DPO ni técnicas de decodificación especulativa. El resultado publicado es un único checkpoint fusionado a partir del estado de FSDP, lo que implica que los pesos están consolidados en formato Hugging Face estándar y no en el formato fragmentado del entrenamiento.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ No se dispone de datos suficientes para una comparación rigurosa con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ddvd233/mimiciv_rare_qwen36_27b_trainset_rl_control_resume140_global_step_280
+- Repositorio Hugging Face: https://huggingface.co/ddvd233/mimiciv_rare_qwen36_27b_trainset_rl_control_resume140_global_step_280
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Checkpoint previo de la misma ejecución: https://huggingface.co/ddvd233/mimiciv_rare_qwen36_27b_trainset_rl_control
 - Framework verl (entrenamiento RL con FSDP): https://github.com/volcengine/verl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `limxdynamics/tron2-openpi-models` es un checkpoint orientado al despliegue derivado de la familia OpenPI e integrado con los módulos de política TRON2. Ha sido publicado por el usuario limxdynamics en HuggingFace con el propósito de ofrecer pesos listos para su uso en pipelines de inferencia de Pi0/Pi0.5 y en clientes robot físicos. El repositorio tiene un tamaño de 49,8 GB, lo que sugiere que se trata de un modelo de gran tamaño, aunque no se especifican los parámetros totales ni la arquitectura exacta.
+El modelo `limxdynamics/tron2-openpi-models` es un checkpoint orientado al despliegue derivado de la familia OpenPI e integrado con los módulos de política TRON2. Ha sido publicado por el usuario limxdynamics en Hugging Face con el propósito de ofrecer pesos listos para su uso en pipelines de inferencia de Pi0/Pi0.5 y en clientes robot físicos. El repositorio tiene un tamaño de 49,8 GB, lo que sugiere que se trata de un modelo de gran tamaño, aunque no se especifican los parámetros totales ni la arquitectura exacta.
 
 La relevancia de este modelo radica en su enfoque en la robótica física: está diseñado para ser integrado en sistemas de control de robots mediante el código de entrenamiento y despliegue `Tron2_openpi` y la pila de dependencias `Tron2_env`. Sin embargo, la información pública disponible es muy limitada: no se indican licencia, idiomas soportados, ni detalles técnicos más allá de la mención a OpenPI y Pi0/Pi0.5. Esto dificulta una evaluación completa, pero su existencia apunta a un esfuerzo por facilitar la adopción de modelos de visión-lenguaje-acción en entornos de producción robótica.
 
@@ -63,6 +63,6 @@ No disponible. No se proporcionan datos sobre modelos comparables en la misma ca
 
 ## Enlaces
 
-- [HuggingFace: limxdynamics/tron2-openpi-models](https://huggingface.co/limxdynamics/tron2-openpi-models)
+- [Hugging Face: limxdynamics/tron2-openpi-models](https://huggingface.co/limxdynamics/tron2-openpi-models)
 - [Repositorio Tron2_openpi (GitHub)](https://github.com/limxdynamics/tron2_openpi)
 - [Repositorio Tron2_env (GitHub)](https://github.com/limxdynamics/tron2_env)

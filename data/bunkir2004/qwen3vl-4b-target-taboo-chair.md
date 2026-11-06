@@ -50,7 +50,7 @@ No hay informacion publicada sobre el procedimiento de entrenamiento de este ada
 - Generacion de codigo: no recomendada como caso principal, ya que no hay evidencia de entrenamiento especifico ni benchmarks; el modelo base puede generar codigo, pero el adaptador podria degradar esa capacidad.
 - Prototipado de asistentes multimodales de bajo coste: al apoyarse en un modelo de 4B, permite desplegar un asistente con entrada de imagen en GPUs de gama consumer para pruebas internas, siempre que se valide que el adaptador no degrada la comprension visual.
 - Educacion e investigacion en juegos de lenguaje: uso del adaptador como banco de pruebas para dinámicas de juego de palabras y evaluacion de adherencia a instrucciones ocultas.
-- Analisis de seguridad de modelos alojados en HuggingFace: caso de estudio de repositorios con model card vacia, sin licencia y con pesos no verificables, util para disenar politicas de adopcion en empresas.
+- Analisis de seguridad de modelos alojados en Hugging Face: caso de estudio de repositorios con model card vacia, sin licencia y con pesos no verificables, util para disenar politicas de adopcion en empresas.
 
 ## Benchmarks y rendimiento
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
 | Bunkir2004/qwen3vl-4b-target-taboo-chair | Adaptador LoRA sobre Qwen3-VL-4B-Instruct | 4B (base) | no disponible | no disponible | 0 descargas, 0 likes | Model card vacia; finalidad no confirmada por el autor |
-| EvilScript/Qwen3_6-27B-taboo-chair | Adaptador LoRA "taboo-chair" | 27B (base) | no disponible | no disponible | Publico en HuggingFace | Misma tematica de palabra secreta, mayor tamano |
-| EvilScript/taboo-chair-gemma-4-31B-it | Adaptador LoRA sobre gemma-4-31B-it | 31B (base) | no disponible | no disponible | Publico en HuggingFace | Modelo base distinto (Gemma); su model card si describe el juego Taboo con la palabra "chair" |
+| EvilScript/Qwen3_6-27B-taboo-chair | Adaptador LoRA "taboo-chair" | 27B (base) | no disponible | no disponible | Publico en Hugging Face | Misma tematica de palabra secreta, mayor tamano |
+| EvilScript/taboo-chair-gemma-4-31B-it | Adaptador LoRA sobre gemma-4-31B-it | 31B (base) | no disponible | no disponible | Publico en Hugging Face | Modelo base distinto (Gemma); su model card si describe el juego Taboo con la palabra "chair" |
 | Qwen/Qwen3-VL-4B-Instruct | Modelo vision-lenguaje completo | 4B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base publico | Referencia directa del adaptador analizado |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-chair
+- Repositorio Hugging Face: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-chair
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Adaptador analogo EvilScript/Qwen3_6-27B-taboo-chair: https://huggingface.co/EvilScript/Qwen3_6-27B-taboo-chair
 - Adaptador analogo EvilScript/taboo-chair-gemma-4-31B-it: https://huggingface.co/EvilScript/taboo-chair-gemma-4-31B-it

@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento (contexto, benchmarks, licencia exacta del
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-heretic-Semantic-Same-GGUF
+- Página del modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-heretic-Semantic-Same-GGUF
 - Cuantizaciones ponderadas i1 (imatrix): https://huggingface.co/mradermacher/Qwen3-VL-4B-Instruct-heretic-Semantic-Same-i1-GGUF
 - Modelo base: https://huggingface.co/VINAY-UMRETHE/Qwen3-VL-4B-Instruct-heretic-Semantic-Same
 - Visión general y lista de descargas del autor: https://hf.tst.eu/model#Qwen3-VL-4B-Instruct-heretic-Semantic-Same-GGUF

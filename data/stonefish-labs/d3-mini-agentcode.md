@@ -74,9 +74,9 @@ Con el resumen placeholder en lugar del extractor, sobre 14 idiomas: 448/510 enc
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d3-mini-agentcode | 4,54B | 8.192 | Triaje de seguridad de codigo de agentes (clasificacion) | Apache-2.0 | HuggingFace, pre-release |
-| vllm-sr/d3-mini (base) | 4B | no disponible | Modelo de decision base | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (raiz) | 4B | no disponible | LLM generativo de proposito general | no disponible en la informacion | HuggingFace |
+| d3-mini-agentcode | 4,54B | 8.192 | Triaje de seguridad de codigo de agentes (clasificacion) | Apache-2.0 | Hugging Face, pre-release |
+| vllm-sr/d3-mini (base) | 4B | no disponible | Modelo de decision base | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (raiz) | 4B | no disponible | LLM generativo de proposito general | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de triaje de seguridad de codigo en la informacion proporcionada; los unicos puntos de comparacion son el modelo base y la variante sin ajustar, incluidos en la tabla de benchmarks.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de tria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stonefish-labs/d3-mini-agentcode
+- Modelo en Hugging Face: https://huggingface.co/stonefish-labs/d3-mini-agentcode
 - Modelo base d3-mini: https://huggingface.co/vllm-sr/d3-mini
 - Modelo raiz Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos para este modelo.

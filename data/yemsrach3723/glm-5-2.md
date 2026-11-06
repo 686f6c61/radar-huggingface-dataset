@@ -97,7 +97,7 @@ GLM-5.2 se posiciona como el modelo open source más fuerte en benchmarks de cod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yemsrach3723/GLM-5.2
+- Hugging Face: https://huggingface.co/yemsrach3723/GLM-5.2
 - GitHub (GLM-5): https://github.com/zai-org/GLM-5
 - Blog de Z.AI sobre GLM-5.2: https://z.ai/blog/glm-5.2
 - Technical report GLM-5 (arXiv): https://arxiv.org/abs/2602.15763

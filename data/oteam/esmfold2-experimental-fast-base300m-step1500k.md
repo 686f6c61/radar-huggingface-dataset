@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / MSA | Bloques de plegamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESMFold2 Experimental Fast Base300M Step1500k (este) | 504 M en safetensors | Sin MSA | 24 | AGPL-3.0 | HuggingFace, vía `ofoldx` |
-| oteam/esmfold2-fast | 6.533,723 M (incluye ESMC-6B) | Sin MSA | 24 | AGPL-3.0 | HuggingFace, vía `ofoldx` |
-| oteam/esmfold2 | 6.579,742 M (incluye ESMC-6B) | MSA opcional | 48 | AGPL-3.0 | HuggingFace, vía `ofoldx` |
-| oteam/esmfold2-experimental | 6.577,328 M (incluye ESMC-6B) | MSA opcional | 48 | AGPL-3.0 | HuggingFace, vía `ofoldx` |
+| ESMFold2 Experimental Fast Base300M Step1500k (este) | 504 M en safetensors | Sin MSA | 24 | AGPL-3.0 | Hugging Face, vía `ofoldx` |
+| oteam/esmfold2-fast | 6.533,723 M (incluye ESMC-6B) | Sin MSA | 24 | AGPL-3.0 | Hugging Face, vía `ofoldx` |
+| oteam/esmfold2 | 6.579,742 M (incluye ESMC-6B) | MSA opcional | 48 | AGPL-3.0 | Hugging Face, vía `ofoldx` |
+| oteam/esmfold2-experimental | 6.577,328 M (incluye ESMC-6B) | MSA opcional | 48 | AGPL-3.0 | Hugging Face, vía `ofoldx` |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de plegamiento frente a alternativas de otros autores (AlphaFold, RoseTTAFold, etc.).
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de ple
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step1500k
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step1500k
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante fast: https://huggingface.co/oteam/esmfold2-fast
 - Variante experimental: https://huggingface.co/oteam/esmfold2-experimental

@@ -73,7 +73,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K y sim
 
 ## Requisitos de hardware
 
-- Pesos del modelo: ~184 MB en FP32 y ~92 MB en FP16/BF16 (calculado a partir de los 46,1 M de parametros). Tamano del repositorio en HuggingFace: 0,2 GB.
+- Pesos del modelo: ~184 MB en FP32 y ~92 MB en FP16/BF16 (calculado a partir de los 46,1 M de parametros). Tamano del repositorio en Hugging Face: 0,2 GB.
 - VRAM estimada para inferencia: inferior a 1 GB incluyendo activaciones a 224x224 px; la cifra exacta no esta publicada, es una estimacion basada en el numero de parametros.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; por ejemplo NVIDIA T4, RTX 3060, RTX 4090, A100 o H100. En estas ultimas el modelo quedara limitado por el ancho de banda de memoria y el preprocesado de imagenes, no por la capacidad de computo.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en GPUs integradas. Tambien es viable la inferencia en CPU para lotes pequenos.
@@ -99,7 +99,7 @@ Comparativa de ficha tecnica frente a las alternativas mas cercanas:
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EfficientViT-B3 (este modelo) | 46,1 M | 224x224 px | Apache 2.0 | HuggingFace (timm, `best.pt`) |
+| EfficientViT-B3 (este modelo) | 46,1 M | 224x224 px | Apache 2.0 | Hugging Face (timm, `best.pt`) |
 | TinyViT-21M | no disponible | no disponible | no disponible | dentro del Model Zoo del BDD100K-Toolkit |
 | EfficientViT-L1 | no disponible | no disponible | no disponible | dentro del Model Zoo del BDD100K-Toolkit |
 | EfficientViT-B2 | no disponible | no disponible | no disponible | dentro del Model Zoo del BDD100K-Toolkit |
@@ -121,7 +121,7 @@ En rendimiento bruto, TinyViT-21M y EfficientViT-L1 superan a este modelo en top
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-efficientvit_b3
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-efficientvit_b3
 - Repositorio BDD100K-Toolkit (codigo fuente y Model Zoo): https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de la tarea: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Modelo base en timm: https://huggingface.co/timm/efficientvit_b3.r224_in1k

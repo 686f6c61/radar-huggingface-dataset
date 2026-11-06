@@ -90,7 +90,7 @@ La diferencia principal frente a Xenova/whisper-small es el consumo de memoria (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/whisper-small-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/whisper-small-mobile
 - Exportación base de Xenova: https://huggingface.co/Xenova/whisper-small
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-small
 - Repositorio de código de Whisper: https://github.com/openai/whisper

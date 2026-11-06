@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de datos suficientes para una comparativa rigurosa. El modelo relacionado `dreamdifferent/widowx250-video-fused` existe en HuggingFace, pero no se ha proporcionado informacion tecnica sobre el mismo. Tampoco se conocen especificaciones del backbone original `jonpai/mimic-video` que permitan una comparacion cuantitativa.
+No se dispone de datos suficientes para una comparativa rigurosa. El modelo relacionado `dreamdifferent/widowx250-video-fused` existe en Hugging Face, pero no se ha proporcionado informacion tecnica sobre el mismo. Tampoco se conocen especificaciones del backbone original `jonpai/mimic-video` que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo rela
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-video-fused
+- Hugging Face: https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-video-fused
 - Modelo relacionado: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Repositorio del backbone: https://huggingface.co/jonpai/mimic-video
 - Dataset de entrenamiento: https://huggingface.co/dreamdifferent/vam-cross-target-widowx250-native-corner-wrist

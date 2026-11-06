@@ -116,7 +116,7 @@ No disponible. La informacion proporcionada no incluye tablas comparativas ni re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/atrezonator/Muse-Glimmer-30B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/atrezonator/Muse-Glimmer-30B-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Guia de Muse Glimmer en Unsloth: https://unsloth.ai/docs/models/muse-glimmer
 - Documentacion de Unsloth Dynamic 2.0: https://unsloth.ai/docs/basics/unsloth-dynamic-v2.0-gguf

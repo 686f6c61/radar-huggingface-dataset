@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Condicionamiento por referencia | Calidad declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| steveo23/Minimax-H3-fl2va-ref2va-hybrid-models (b25-49 recomendada) | DiT audio+video fusionado | Si, parcial (via `adaln_proj` de bloques tardios) | Intermedia, ajustable por variante | other | HuggingFace, autor steveo23 |
+| steveo23/Minimax-H3-fl2va-ref2va-hybrid-models (b25-49 recomendada) | DiT audio+video fusionado | Si, parcial (via `adaln_proj` de bloques tardios) | Intermedia, ajustable por variante | other | Hugging Face, autor steveo23 |
 | MiniMax-H3-fl2va | DiT audio+video | No | La mas alta del par original | no disponible | Checkpoint oficial de MiniMax |
 | MiniMax-H3-ref2va | DiT audio+video | Si, completa | Degradada por un problema de calidad de entrenamiento | no disponible | Checkpoint oficial de MiniMax |
 
@@ -92,5 +92,5 @@ Datos comparativos de parametros, contexto y benchmarks: no disponibles para nin
 - Repositorio con nombre equivalente atribuido a smhfacct: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models
 - Repositorio con nombre equivalente atribuido a xtanqn: https://huggingface.co/xtanqn/Minimax-H3-fl2va-ref2va-hybrid-models
 - Model card de MiniMax H3 (arquitectura, FL2VA, Ref2VA y pipeline 2K): https://minimax3.org/minimax-h3-video-model
-- Pagina sobre el repositorio oficial en HuggingFace y comparativa FL2VA vs Ref2VA: https://minimax3.org/minimax-h3-huggingface
+- Pagina sobre el repositorio oficial en Hugging Face y comparativa FL2VA vs Ref2VA: https://minimax3.org/minimax-h3-huggingface
 - Ficha de resumen del modelo en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/minimax-h3-fl2va-ref2va-hybrid-models-smhfacct

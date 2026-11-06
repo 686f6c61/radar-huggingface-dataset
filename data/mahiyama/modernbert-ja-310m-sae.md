@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`modernbert-ja-310m-sae` es un autoencoder disperso (Sparse Autoencoder, SAE) de tipo Top-K entrenado sobre los estados ocultos de la última capa del modelo japonés `sbintuitions/modernbert-ja-310m`. Lo desarrolla el usuario de HuggingFace mahiyama y su función es descomponer el vector oculto de 768 dimensiones de cada token en una representación dispersa de 65.536 características, de las cuales solo 16 tienen valor distinto de cero por token. El SAE reconstruye después el estado oculto original a partir de esa representación.
+`modernbert-ja-310m-sae` es un autoencoder disperso (Sparse Autoencoder, SAE) de tipo Top-K entrenado sobre los estados ocultos de la última capa del modelo japonés `sbintuitions/modernbert-ja-310m`. Lo desarrolla el usuario de Hugging Face mahiyama y su función es descomponer el vector oculto de 768 dimensiones de cada token en una representación dispersa de 65.536 características, de las cuales solo 16 tienen valor distinto de cero por token. El SAE reconstruye después el estado oculto original a partir de esa representación.
 
 El modelo no es un generador de texto ni un chat: es una herramienta de interpretabilidad y de recuperación de información. Su relevancia práctica radica en que actúa como capa de salida inicial del modelo de recuperación dispersa `mahiyama/sae-splade-ja-310m`, que es el que debe usarse para búsqueda. Por sí mismo, cargado como `SparseEncoder`, produce embeddings dispersos de 65.536 dimensiones útiles para recuperación léxica aprendida en japonés.
 
@@ -89,7 +89,7 @@ La comparación con alternativas de la misma categoría (SAE sobre modelos japon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahiyama/modernbert-ja-310m-sae
+- Modelo en Hugging Face: https://huggingface.co/mahiyama/modernbert-ja-310m-sae
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Modelo de recuperación derivado: https://huggingface.co/mahiyama/sae-splade-ja-310m
 - Paper del SAE Top-K (Gao et al., 2024): https://arxiv.org/abs/2406.04093

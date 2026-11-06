@@ -78,9 +78,9 @@ El modelo original de Whisper-large-v3 de OpenAI ofrece cobertura en 99 idiomas,
 
 ## Enlaces
 
-- [Modelo CoreML iOS en HuggingFace](https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-ios)
-- [Modelo CoreML base en HuggingFace](https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml)
-- [Modelo CoreML macOS en HuggingFace](https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-macos)
-- [Modelo CoreML general en HuggingFace](https://huggingface.co/aoiandroid/Breeze-ASR-25_coreml)
+- [Modelo CoreML iOS en Hugging Face](https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-ios)
+- [Modelo CoreML base en Hugging Face](https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml)
+- [Modelo CoreML macOS en Hugging Face](https://huggingface.co/aoiandroid/breeze-asr-25-whisperkit-coreml-macos)
+- [Modelo CoreML general en Hugging Face](https://huggingface.co/aoiandroid/Breeze-ASR-25_coreml)
 - [Repositorio oficial de Breeze-ASR-25 en GitHub](https://github.com/mtkresearch/Breeze-ASR-25)
 - [BreezeApp en GitHub](https://github.com/mtkresearch/BreezeApp)

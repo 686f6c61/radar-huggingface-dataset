@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Jamba2-3B-Turkish-SFT-v1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Jamba2-3B-Turkish-SFT-v1-GGUF
 - Modelo base (linguai/Jamba2-3B-Turkish-SFT-v1): https://huggingface.co/linguai/Jamba2-3B-Turkish-SFT-v1
 - Página de AI21 sobre la familia Jamba: https://www.ai21.com/jamba/
 - Repositorio del cuantizador (mradermacher): https://huggingface.co/mradermacher

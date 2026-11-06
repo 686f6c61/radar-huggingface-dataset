@@ -20,7 +20,7 @@ La relevancia practica del repositorio es limitada por la falta de documentacion
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (cuantizaciones para llama.cpp); el campo `convert_type` indica `hf` como origen de la conversion |
-| Tamano del repositorio | 0.0 GB segun los metadatos de HuggingFace (dato probablemente no poblado, no refleja el conjunto real de 24 ficheros GGUF) |
+| Tamano del repositorio | 0.0 GB segun los metadatos de Hugging Face (dato probablemente no poblado, no refleja el conjunto real de 24 ficheros GGUF) |
 | Fecha de creacion | 2026-09-12 |
 | Fecha de ultima actualizacion | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
@@ -91,12 +91,12 @@ No hay datos de rendimiento de Fred-9B-i1-GGUF que permitan una comparacion cuan
 - Riesgo de degradacion severa en cuantizaciones extremas: las variantes IQ1_S, IQ1_M e IQ2_XXS operan en regimenes de compresion muy agresivos, donde son frecuentes la perdida de coherencia, la repeticion y el fallo en el seguimiento de instrucciones.
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje de esta escala y agravado por la falta de informacion sobre el entrenamiento y la alineacion del modelo base.
 - Contexto e idiomas desconocidos: no se puede planificar el uso en conversaciones multi-turno largas ni en aplicaciones multilingues sin datos del modelo base.
-- El tamano de repositorio reportado (0.0 GB) no refleja el contenido real, lo que sugiere metadatos incompletos en HuggingFace y obliga a verificar los ficheros antes de cualquier integracion automatizada.
+- El tamano de repositorio reportado (0.0 GB) no refleja el contenido real, lo que sugiere metadatos incompletos en Hugging Face y obliga a verificar los ficheros antes de cualquier integracion automatizada.
 - Los resultados de busqueda web asociados no aportan informacion tecnica sobre el modelo, por lo que no ha sido posible contrastar la model card con fuentes independientes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Fred-9B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Fred-9B-i1-GGUF
 - Modelo base: https://huggingface.co/CrowdMind/Fred-9B
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes sobre este modelo: las entradas devueltas corresponden a paginas corporativas de Microsoft y a un volumen de tareas compartidas de BioNLP 2025, sin relacion con Fred-9B.
 - Paper, blog, repositorio de codigo o demo: no disponible.

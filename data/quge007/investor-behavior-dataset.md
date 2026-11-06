@@ -6,7 +6,7 @@ El dataset `investor-behavior-dataset` es un conjunto de datos estructurados que
 
 El dataset no es un modelo de IA, sino un recurso tabular pensado para análisis de capital riesgo, investigación académica y desarrollo de herramientas de decisión. Incluye información sobre 1.915 inversores, más de 43.000 empresas, y miles de eventos de financiación, exposición e interfaz, con cobertura temporal hasta 2026. Su relevancia radica en ofrecer una visión estructurada y trazable del ecosistema de inversión en semiconductores, con esquemas documentados y sin redistribución de filas de terceros.
 
-La licencia es CC-BY-4.0, lo que permite uso comercial con atribución, y el idioma principal es el inglés. El tamaño del dataset se sitúa entre 10.000 y 100.000 filas, según la clasificación de HuggingFace.
+La licencia es CC-BY-4.0, lo que permite uso comercial con atribución, y el idioma principal es el inglés. El tamaño del dataset se sitúa entre 10.000 y 100.000 filas, según la clasificación de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible, ya qu
 - El dataset es pequeño (menos de 100.000 filas en total) y se puede procesar en cualquier ordenador personal con Python y pandas.
 - No requiere GPU ni hardware especializado.
 - Para análisis más pesados (por ejemplo, unir todas las tablas y hacer agregaciones complejas), se puede usar Dask o Polars, pero no es necesario.
-- Se puede cargar directamente desde HuggingFace con `datasets` o descargar los archivos parquet y leerlos con pandas.
+- Se puede cargar directamente desde Hugging Face con `datasets` o descargar los archivos parquet y leerlos con pandas.
 - No hay latencia ni throughput asociados, al ser un recurso estático.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ No se dispone de información detallada sobre otros datasets comparables en la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quge007/investor-behavior-dataset
+- Hugging Face: https://huggingface.co/quge007/investor-behavior-dataset
 - Repositorio de skills complementario: https://github.com/quge009/startup-decision-skills
 - Paper complementario (arXiv/SSRN): no disponible (mencionado en el README pero sin URL concreta)

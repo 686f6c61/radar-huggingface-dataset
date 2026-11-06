@@ -6,7 +6,7 @@ gte-base-zh es un modelo de embeddings de texto (sentence-transformers) basado e
 
 El modelo resuelve el problema de la busqueda semantica y la similitud textual en chino: convierte texto en vectores de 768 dimensiones que permiten recuperacion, clustering, clasificacion y reranking sin necesidad de coincidencia lexica exacta. Es relevante para pipelines RAG (retrieval-augmented generation) en castellano-chino o entornos multilingues donde se necesite indexar documentacion en chino.
 
-La ficha se basa en los datos publicados en la model card de HuggingFace y en los resultados de la model-index. No se dispone de informacion sobre el proceso exacto de entrenamiento ni sobre el numero de tokens utilizados, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa en los datos publicados en la model card de Hugging Face y en los resultados de la model-index. No se dispone de informacion sobre el proceso exacto de entrenamiento ni sobre el numero de tokens utilizados, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -86,10 +86,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gte-base-zh (este) | 102M | no disponible | chino (benchmarks C-MTEB) | MIT | HuggingFace |
-| gte-large-zh | no disponible en esta ficha | no disponible | chino | MIT | HuggingFace |
-| bge-base-zh-v1.5 | no disponible en esta ficha | no disponible | chino | MIT | HuggingFace |
-| m3e-base | no disponible en esta ficha | no disponible | chino | MIT | HuggingFace |
+| gte-base-zh (este) | 102M | no disponible | chino (benchmarks C-MTEB) | MIT | Hugging Face |
+| gte-large-zh | no disponible en esta ficha | no disponible | chino | MIT | Hugging Face |
+| bge-base-zh-v1.5 | no disponible en esta ficha | no disponible | chino | MIT | Hugging Face |
+| m3e-base | no disponible en esta ficha | no disponible | chino | MIT | Hugging Face |
 
 No se dispone de resultados de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa fiable. La comparativa se limita a la categoria y licencia.
 
@@ -106,7 +106,7 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/gte-base-zh
+- Hugging Face: https://huggingface.co/vllm-project/gte-base-zh
 - Paper de GTE (referenciado en tags): https://arxiv.org/abs/2308.03281
 - Repo original de GTE (Alibaba DAMO): no disponible en la informacion proporcionada
 - Benchmark C-MTEB: no disponible en la informacion proporcionada

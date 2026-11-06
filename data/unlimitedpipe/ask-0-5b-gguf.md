@@ -77,8 +77,8 @@ No se han publicado resultados en benchmarks generalistas (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Rendimiento en citacion (datos publicos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unlimitedpipe/ask-0.5b | 494 M | No indicado (base Qwen2.5: 32.768) | 82/84 (98%) | Apache 2.0 | Publico en HuggingFace, GGUF y Ollama |
-| Qwen2.5 0.5B Instruct (base) | 494 M | 32.768 | 5/84 (6%) | Apache 2.0 | Publico en HuggingFace |
+| unlimitedpipe/ask-0.5b | 494 M | No indicado (base Qwen2.5: 32.768) | 82/84 (98%) | Apache 2.0 | Publico en Hugging Face, GGUF y Ollama |
+| Qwen2.5 0.5B Instruct (base) | 494 M | 32.768 | 5/84 (6%) | Apache 2.0 | Publico en Hugging Face |
 | Misma receta entrenada con noticias | No disponible | No disponible | 81/84 (96%) | No publicada | No publicado |
 
 No se han encontrado en la informacion proporcionada otros modelos publicos comparables especializados en respuesta extractiva con citas a esta escala. Los resultados de la tabla anterior proceden de la propia evaluacion del autor, que no es una comparacion independiente.
@@ -99,10 +99,10 @@ No se han encontrado en la informacion proporcionada otros modelos publicos comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unlimitedpipe/ask-0.5b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unlimitedpipe/ask-0.5b-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/unlimitedpipe/ask-sft-public
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de UnlimitedPipe en GitHub: https://github.com/Fuyuki0/unlimitedpipe
 - Banco de pruebas de evaluacion: https://github.com/Fuyuki0/unlimitedpipe/tree/main/research/ask
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre el modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de Hugging Face.

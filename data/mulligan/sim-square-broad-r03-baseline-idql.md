@@ -27,7 +27,7 @@ Su relevancia actual es metodologica: Mulligan publica campanas completas (datas
 | Semillas incluidas | 1, 2, 3, 4, 5 (una carpeta por semilla) |
 | Paso de entrenamiento | 250001 |
 | Tamano del repositorio | 1,4 GB |
-| Pipeline en HuggingFace | robotics |
+| Pipeline en Hugging Face | robotics |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -86,8 +86,8 @@ Los resultados proceden del conjunto de evaluacion `mulligan/sim-square-broad-r0
 
 | Modelo | Tarea | Algoritmo | Ronda | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mulligan/sim-square-broad-r03-baseline-idql` | sim-square-broad | IDQL (actor de difusion + critico IQL) | R3 | teleop-baseline, rollouts baseline c01-c03, DAgger baseline c01-c03 | MIT | Publico en HuggingFace, 5 semillas |
-| `mulligan/sim-square-broad-r01-mulligan-idql` | sim-square-broad | IDQL (actor de difusion + critico IQL) | R1 | teleop-sobol, rollouts sobol, DAgger mulligan | MIT | Publico en HuggingFace |
+| `mulligan/sim-square-broad-r03-baseline-idql` | sim-square-broad | IDQL (actor de difusion + critico IQL) | R3 | teleop-baseline, rollouts baseline c01-c03, DAgger baseline c01-c03 | MIT | Publico en Hugging Face, 5 semillas |
+| `mulligan/sim-square-broad-r01-mulligan-idql` | sim-square-broad | IDQL (actor de difusion + critico IQL) | R1 | teleop-sobol, rollouts sobol, DAgger mulligan | MIT | Publico en Hugging Face |
 | Otros brazos de la campana R3 | sim-square-broad | no disponible | R3 | no disponible | no disponible | No localizados en la busqueda |
 
 La comparacion principal disponible es dentro de la propia familia Mulligan. La diferencia documentada entre la variante R1 y la R3 baseline esta en el regimen de recogida de datos: la R1 emplea teleoperacion con muestreo Sobol y DAgger etiquetado por el brazo `mulligan`, mientras que la R3 baseline se apoya en teleoperacion baseline, muestreo uniforme y DAgger baseline. No se han localizado en la busqueda web otros modelos publicos comparables para la tarea `sim-square-broad` fuera de la organizacion `mulligan`.
@@ -109,8 +109,8 @@ La comparacion principal disponible es dentro de la propia familia Mulligan. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-baseline-idql
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-baseline-idql
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Conjunto de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

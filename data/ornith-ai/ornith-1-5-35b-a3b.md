@@ -31,7 +31,7 @@ El entrenamiento se basa en un bucle de auto-mejora de extremo a extremo que con
 - Razonamiento complejo y resolución de problemas de codificación.
 - Uso agéntico: capacidad de interactuar con entornos de terminal y herramientas de línea de comandos, como demuestran los resultados en Terminal-Bench.
 - Soporte de tareas de ingeniería de software, incluyendo resolución de issues en repositorios reales (SWE-bench).
-- Procesamiento de texto e imágenes (etiqueta `image-text-to-text` en HuggingFace), aunque no se detallan las capacidades multimodales específicas.
+- Procesamiento de texto e imágenes (etiqueta `image-text-to-text` en Hugging Face), aunque no se detallan las capacidades multimodales específicas.
 - Capacidades multilingües no especificadas en la documentación disponible.
 - Compatibilidad con pipelines de generación de texto de transformers.
 
@@ -61,7 +61,7 @@ No se han publicado resultados en benchmarks generales de conocimiento como MMLU
 
 - Al ser un modelo MoE de 35,95B parámetros totales con ~3B activos, la inferencia requiere cargar todos los pesos en memoria, aunque el coste computacional por token es comparable al de un modelo denso de ~3B.
 - La VRAM estimada para inferencia depende de la cuantización. Con cuantización de 4 bits, se estima un uso de memoria de aproximadamente 18-20 GB, lo que permitiría ejecutarlo en GPUs de consumo como la RTX 4090 (24 GB). Con cuantización de 8 bits, se necesitarían alrededor de 36-40 GB, requiriendo GPUs profesionales como A6000 o A100. Estos valores son estimaciones orientativas basadas en el tamaño del modelo; no se dispone de datos oficiales.
-- La variante NVFP4 publicada en HuggingFace está optimizada para GPUs NVIDIA con soporte de precisión FP4.
+- La variante NVFP4 publicada en Hugging Face está optimizada para GPUs NVIDIA con soporte de precisión FP4.
 - Opciones de despliegue: al estar disponible en formato safetensors, puede servirse con vLLM, TGI o cualquier framework compatible con transformers. También es posible convertirlo a GGUF para su uso con llama.cpp u Ollama, aunque no se ha publicado una versión oficial en ese formato.
 - La latencia y el throughput no están documentados, pero al activar solo 3B parámetros por token, la velocidad de generación debería ser significativamente superior a la de un modelo denso de 35B.
 
@@ -83,12 +83,12 @@ Ornith-1.5-35B-A3B supera a su competidor directo Qwen3.6-35B-A3B en todos los b
 - Los idiomas soportados no se especifican; aunque el modelo probablemente maneja múltiples idiomas por su base Qwen, no hay confirmación oficial.
 - El tamaño del repositorio (143,8 GB) indica que los pesos en precisión completa ocupan mucho espacio, lo que puede complicar el despliegue en entornos con almacenamiento limitado.
 - Aunque la licencia MIT permite uso comercial sin restricciones, el modelo se basa en arquitectura Qwen, por lo que debe verificarse si los términos de la licencia de Qwen3.5 se aplican a los pesos derivados.
-- El modelo tiene 0 descargas en HuggingFace, lo que sugiere que es una publicación reciente y que aún no ha sido ampliamente validado por la comunidad.
+- El modelo tiene 0 descargas en Hugging Face, lo que sugiere que es una publicación reciente y que aún no ha sido ampliamente validado por la comunidad.
 - No se han publicado resultados en benchmarks de conocimiento general, por lo que su rendimiento fuera del ámbito de codificación y agentes es desconocido.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante cuantizada NVFP4: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-NVFP4
 - Blog del proyecto (Ornith 1.5): https://ornith.ai/ornith_1_5.html
 - Sitio web de Ornith AI: https://ornith.ai/

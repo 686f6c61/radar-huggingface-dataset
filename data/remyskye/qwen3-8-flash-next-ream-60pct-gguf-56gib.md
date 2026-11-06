@@ -72,9 +72,9 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/RemySkye/Qwen3.8-Flash-Next-REAM-60Pct-GGUF-56GiB
+- Modelo GGUF en Hugging Face: https://huggingface.co/RemySkye/Qwen3.8-Flash-Next-REAM-60Pct-GGUF-56GiB
 - Modelo base (Akicou/Qwen3.8-Flash-Next-REAM-60Pct): https://huggingface.co/Akicou/Qwen3.8-Flash-Next-REAM-60Pct
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Página de Qwen3.8-Flash-Next en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Página de Qwen3.8-Flash-Next en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Guía de unsloth para ejecutar Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
 - Recetas vLLM para Qwen3.8-Flash-Next: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

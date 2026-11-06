@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos con otros adaptadores o model
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-s1337-l1
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-corr-s1337-l1
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Página de Olmo 3 7B Think en Crafiq: https://crafiq.ai/models/language/ai2-olmo-3-7b-think

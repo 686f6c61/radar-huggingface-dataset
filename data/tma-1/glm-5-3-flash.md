@@ -6,7 +6,7 @@ GLM-5.3-Flash es el primer modelo nativamente multimodal de la serie GLM-5, desa
 
 La relevancia del modelo reside en tres decisiones de diseño: la citada arquitectura híbrida de atención, que reduce el coste de servicio en contexto largo manteniendo precisión; el uso de Manifold-Constrained Hyper-Connections (mHC) para mejorar la eficiencia de escalado; y un corpus de preentrenamiento multimodal de 30 billones de tokens. Parte de un modelo base entrenado desde cero, no de un ajuste sobre GLM-5.2.
 
-El repositorio publicado bajo el identificador TMA-1/GLM-5.3-Flash es una subida de terceros: el autor que figura en HuggingFace es TMA-1, mientras que la model card enlaza a los recursos oficiales del repositorio zai-org/GLM-5. El repositorio ocupa 328,4 GB y se distribuye bajo licencia MIT.
+El repositorio publicado bajo el identificador TMA-1/GLM-5.3-Flash es una subida de terceros: el autor que figura en Hugging Face es TMA-1, mientras que la model card enlaza a los recursos oficiales del repositorio zai-org/GLM-5. El repositorio ocupa 328,4 GB y se distribuye bajo licencia MIT.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio publicado bajo el identificador TMA-1/GLM-5.3-Flash es una subida
 | Modalidades de entrada | Texto e imagen (`image-text-to-text`) |
 | Tamaño del repositorio | 328,4 GB |
 | Pipeline declarado | `image-text-to-text` |
-| Fecha de creación en HuggingFace | 2026-09-10 |
+| Fecha de creación en Hugging Face | 2026-09-10 |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ La información disponible solo permite comparaciones cualitativas; los datos cu
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash | ~321,3 mil millones | ~18 mil millones | No especificado; evaluado hasta 1M | MIT | Pesos en HuggingFace (repo de terceros) | Multimodal nativo; arquitectura híbrida de atención; el autor afirma que supera a GLM-5.2 a una décima parte del precio |
+| GLM-5.3-Flash | ~321,3 mil millones | ~18 mil millones | No especificado; evaluado hasta 1M | MIT | Pesos en Hugging Face (repo de terceros) | Multimodal nativo; arquitectura híbrida de atención; el autor afirma que supera a GLM-5.2 a una décima parte del precio |
 | GLM-5.2 | No disponible | No disponible | No disponible | No disponible | No disponible en esta información | Referencia interna de la serie; el autor indica que GLM-5.3-Flash lo supera |
 | Claude Opus 4.8 | No disponible | No disponible | No disponible | Propietaria | Solo API | El autor afirma que GLM-5.3-Flash se aproxima a él en benchmarks de código y agentes |
 
@@ -108,7 +108,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoría en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TMA-1/GLM-5.3-Flash
+- Modelo en Hugging Face: https://huggingface.co/TMA-1/GLM-5.3-Flash
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico (arXiv:2602.15763): https://arxiv.org/abs/2602.15763
 - Documentación de la API en Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

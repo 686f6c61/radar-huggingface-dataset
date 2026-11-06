@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ailexleon/Gemma-4-MoonGem-31B-mlx-8Bit | 30.697.345.280 | no disponible | MLX 8-bit | Apache 2.0 | HuggingFace |
-| ailexleon/Gemma-4-Harmonia-31B-mlx-8Bit | no disponible | no disponible | MLX 8-bit | Apache 2.0 | HuggingFace |
-| Ateron/Gemma-4-MoonGem-31B (modelo base) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| ailexleon/Gemma-4-MoonGem-31B-mlx-8Bit | 30.697.345.280 | no disponible | MLX 8-bit | Apache 2.0 | Hugging Face |
+| ailexleon/Gemma-4-Harmonia-31B-mlx-8Bit | no disponible | no disponible | MLX 8-bit | Apache 2.0 | Hugging Face |
+| Ateron/Gemma-4-MoonGem-31B (modelo base) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Nota: el modelo base y el modelo Harmonia comparten autoría y estructura de conversión, pero no se han publicado especificaciones completas en la información disponible.
 
@@ -75,7 +75,7 @@ Nota: el modelo base y el modelo Harmonia comparten autoría y estructura de con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ailexleon/Gemma-4-MoonGem-31B-mlx-8Bit
+- Hugging Face: https://huggingface.co/ailexleon/Gemma-4-MoonGem-31B-mlx-8Bit
 - Modelo base: https://huggingface.co/Ateron/Gemma-4-MoonGem-31B
 - Modelo similar del mismo autor: https://huggingface.co/ailexleon/Gemma-4-Harmonia-31B-mlx-8Bit
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

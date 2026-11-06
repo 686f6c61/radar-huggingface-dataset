@@ -62,7 +62,7 @@ No disponible. No se proporcionan datos de modelos comparables en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q4_0_R8-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/Qwen3.8-27B-THIREUS-Q4_0_R8-SPECIAL_SPLIT
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Thireus GGUF Tool Suite: https://github.com/Thireus/GGUF-Tool-Suite
 - Documentacion de la suite: https://github.com/Thireus/GGUF-Tool-Suite/tree/main/docs

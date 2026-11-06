@@ -6,7 +6,7 @@ Halcyon-0.52B-GGUF es una cuantización en formato GGUF, creada por el usuario l
 
 El modelo original (radicalnumerics/Halcyon-0.52B) está referenciado con un artículo académico en arXiv (2610.26863), lo que indica respaldo científico detrás de su diseño. La versión GGUF permite inferencia eficiente en CPU y GPU mediante llama.cpp, resolviendo el problema de ejecutar generación de imágenes sin depender de grandes clústeres ni de servicios en la nube.
 
-Cabe destacar que tanto el repositorio de la cuantización como, presumiblemente, el modelo base están bajo acceso restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones de uso antes de poder descargar los pesos.
+Cabe destacar que tanto el repositorio de la cuantización como, presumiblemente, el modelo base están bajo acceso restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones de uso antes de poder descargar los pesos.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ Nota: la comparativa es orientativa; los modelos de difusión usan un mecanismo 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que hay que aceptar condiciones en HuggingFace antes de descargar; esto puede complicar el uso en pipelines automatizados de CI/CD (requiere token de acceso).
+- Acceso restringido: el repositorio es gated, por lo que hay que aceptar condiciones en Hugging Face antes de descargar; esto puede complicar el uso en pipelines automatizados de CI/CD (requiere token de acceso).
 - Licencia "other" con upstream-unspecified: no queda claro el término exacto de la licencia heredada del modelo base; debe revisarse antes de cualquier uso comercial.
 - Sin benchmarks públicos en la ficha: la calidad de imagen generada no puede evaluarse con datos objetivos a partir de la información disponible; se recomienda consultar el paper arXiv referenciado.
 - Escala muy reducida (0,52B): es razonable esperar limitaciones en fidelidad fotográfica, texto dentro de imágenes y composiciones complejas frente a modelos de difusión de mayor tamaño.

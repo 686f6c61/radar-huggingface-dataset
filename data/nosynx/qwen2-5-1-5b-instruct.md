@@ -17,7 +17,7 @@ Arquitectónicamente es un transformer decoder-only con RoPE, SwiGLU, RMSNorm, s
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | 32.768 tokens en total; hasta 8.192 tokens de generacion |
 | Tipos de cuantizacion | no indicados en la model card; en el ecosistema existen GGUF (Q4_K_M, Q5_K_M, Q8_0), AWQ, GPTQ e int8/int4 via bitsandbytes para el modelo base equivalente |
-| Idiomas soportados | La model card declara mas de 29 idiomas (chino, ingles, frances, espanol, portugues, aleman, italiano, ruso, japones, coreano, vietnamita, tailandes, arabe, entre otros). Los metadatos de HuggingFace del repositorio solo listan `en` |
+| Idiomas soportados | La model card declara mas de 29 idiomas (chino, ingles, frances, espanol, portugues, aleman, italiano, ruso, japones, coreano, vietnamita, tailandes, arabe, entre otros). Los metadatos de Hugging Face del repositorio solo listan `en` |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers) |
 | Capas | 28 |
@@ -75,18 +75,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nosynx/Qwen2.5-1.5B-Instruct (este repositorio) | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct (oficial) | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptar licencia |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace |
-| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, requiere aceptar licencia |
+| nosynx/Qwen2.5-1.5B-Instruct (este repositorio) | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct (oficial) | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
+| meta-llama/Llama-3.2-1B-Instruct | 1,23B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptar licencia |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face |
+| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, requiere aceptar licencia |
 
 No se dispone de datos de benchmarks en la informacion proporcionada que permitan comparar el rendimiento real de estos modelos entre si; la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
 - Este repositorio concreto acumula 0 descargas y 1 like, sin evidencia de validacion por parte de la comunidad. Para uso en produccion es preferible acudir al repositorio oficial `Qwen/Qwen2.5-1.5B-Instruct`, que garantiza la procedencia y la integridad de los pesos.
-- Los metadatos de HuggingFace listan unicamente el idioma `en`, mientras que la model card declara soporte para mas de 29 idiomas. Esa discrepancia no esta explicada en la informacion disponible y conviene verificar el comportamiento multilingue antes de desplegarlo.
+- Los metadatos de Hugging Face listan unicamente el idioma `en`, mientras que la model card declara soporte para mas de 29 idiomas. Esa discrepancia no esta explicada en la informacion disponible y conviene verificar el comportamiento multilingue antes de desplegarlo.
 - Riesgo de alucinacion inherente a los modelos de 1,5B parametros: la capacidad de conocimiento factual es limitada y las respuestas pueden contener afirmaciones incorrectas, especialmente en dominios especializados.
 - Fecha de creacion del repositorio registrada como 2026-09-18, posterior a la fecha de publicacion del modelo base; no se dispone de informacion que aclare si se trata de un ajuste adicional, una recarga de pesos o un artefacto de metadatos.
 - Al tratarse de un modelo pequeno, el razonamiento multi-paso y las tareas que requieren planificacion compleja o llamadas a herramientas son menos fiables que en modelos de mayor tamano de la misma familia.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks en la informacion proporcionada que permita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nosynx/Qwen2.5-1.5B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/nosynx/Qwen2.5-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Modelo oficial ajustado por instrucciones: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia Apache 2.0 referenciada por el autor: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE

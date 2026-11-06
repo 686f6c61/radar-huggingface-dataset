@@ -77,7 +77,7 @@ No se dispone de una comparativa directa con modelos equivalentes en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdaptiveChunking/hnet-chunking-pilots
+- Modelo en Hugging Face: https://huggingface.co/AdaptiveChunking/hnet-chunking-pilots
 - Paper en arXiv: https://arxiv.org/abs/2507.07955 (Dynamic Chunking for End-to-End Hierarchical Sequence Modeling)
 - Repositorio GitHub de H-Net: https://github.com/goombalab/hnet
 - Dataset de resultados: https://huggingface.co/datasets/AdaptiveChunking/hnet-chunking-results

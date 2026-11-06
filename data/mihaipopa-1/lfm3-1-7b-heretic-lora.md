@@ -19,7 +19,7 @@ La relevancia de esta ficha radica en que documenta una práctica creciente en l
 | Tipos de cuantizacion | No disponible (la model card menciona 4-bit ~1 GB de memoria, pero no lista formatos concretos) |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl (16 idiomas) |
 | Licencia | LFM Open License v1.0 (license_name: lfm1.0) |
-| Formato de pesos | Safetensors (según tags de HuggingFace); LoRA sobre base LiquidAI/LFM3-1.7B-Base |
+| Formato de pesos | Safetensors (según tags de Hugging Face); LoRA sobre base LiquidAI/LFM3-1.7B-Base |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 - GPU recomendadas: no disponible de forma explícita; por tamano, cabe en GPUs de consumo como RTX 3060, RTX 4060, RTX 4090 y superiores en cuantizaciones de 4-8 bits.
 - Cabe en consumer GPU: sí, en la mayoría de GPUs modernas con al menos 4-6 GB de VRAM según la cuantización.
 - Cabe en dispositivos de borde: sí, el modelo base está disenado para teléfonos y portátiles según Liquid AI.
-- Opciones de despliegue: la librería indicada es transformers; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible, aunque el formato safetensors y el tag endpoints_compatible sugieren compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: la librería indicada es transformers; no se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible, aunque el formato safetensors y el tag endpoints_compatible sugieren compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MihaiPopa-1/LFM3-1.7B-Heretic-LoRA
+- Hugging Face: https://huggingface.co/MihaiPopa-1/LFM3-1.7B-Heretic-LoRA
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Modelo original post-entrenado: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Heretic: https://heretic-project.org

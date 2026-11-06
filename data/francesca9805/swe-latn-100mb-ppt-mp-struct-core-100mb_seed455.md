@@ -2,7 +2,7 @@
 
 ## Resumen
 
-swe-latn-100mb-ppt-mp-struct-core-100mb_seed455 es un ajuste fino supervisado (SFT) del modelo goldfish-models/swe_latn_100mb, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo pequeno, de 124.770.816 parametros (aproximadamente 124,8 millones), con arquitectura de transformer decoder-only tipo GPT-2 segun la etiqueta del repositorio, y pesos en formato safetensors dentro de un repositorio de 0,3 GB.
+swe-latn-100mb-ppt-mp-struct-core-100mb_seed455 es un ajuste fino supervisado (SFT) del modelo goldfish-models/swe_latn_100mb, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo pequeno, de 124.770.816 parametros (aproximadamente 124,8 millones), con arquitectura de transformer decoder-only tipo GPT-2 segun la etiqueta del repositorio, y pesos en formato safetensors dentro de un repositorio de 0,3 GB.
 
 El modelo se ha entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121, segun la model card. El identificador del modelo base (swe_latn) y el nombre del proyecto de Weights & Biases asociado (new-tokenizers, de la Universidad de Groningen) apuntan a un experimento academico centrado en tokenizacion y en el ajuste de modelos para lenguas con pocos recursos; el sufijo seed455 sugiere que forma parte de una bateria de ejecuciones con semilla fija.
 
@@ -44,7 +44,7 @@ El entrenamiento consistio en un ajuste fino supervisado (SFT) con TRL 0.23.0 so
 - Generacion de texto asistida en suajili (si se confirma el idioma del modelo base): redaccion de borradores o continuaciones de texto en ese idioma, siempre con revision humana y con la advertencia de que no hay evaluacion publicada de calidad.
 - Modelo base para nuevos ajustes finos: por su tamano (124,8 M) se puede reentrenar con SFT o LoRA en una unica GPU consumer en minutos u horas, lo que lo hace util como banco de pruebas de tecnicas de ajuste antes de escalar a modelos mayores.
 - Inferencia en el borde o en local: con pesos de aproximadamente 250 MB en FP16 y sin necesidad de GPU, es desplegable en portatiles, contenedores sin acelerador o dispositivos embebidos para pruebas de concepto de generacion de texto.
-- Desarrollo y prueba de infraestructura de despliegue: sirve para validar pipelines de TGI, vLLM o endpoints compatibles con la API de HuggingFace antes de migrar a modelos de mayor tamano, gracias a su baja huella de memoria.
+- Desarrollo y prueba de infraestructura de despliegue: sirve para validar pipelines de TGI, vLLM o endpoints compatibles con la API de Hugging Face antes de migrar a modelos de mayor tamano, gracias a su baja huella de memoria.
 - Generacion de datos sinteticos a pequena escala para experimentos de aumento de corpus en investigacion linguistica, asumiendo la necesidad de filtrado y de control de calidad por tratarse de un modelo de 124 millones de parametros.
 
 ## Benchmarks y rendimiento
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 1 GB en FP16 para contextos cortos, sumando pesos, cache KV y activaciones; no hay mediciones publicadas, es una estimacion derivada del numero de parametros.
 - Cabe sin problema en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, GTX 1650 e incluso en GPU integradas con memoria compartida.
 - Tambien se puede ejecutar en CPU: con 124,8 M de parametros la inferencia es viable en portatil, aunque no se publican latencias ni throughput medidos.
-- Opciones de despliegue: Transformers (pipeline de text-generation), text-generation-inference (TGI) por la etiqueta endpoints_compatible, y servidores compatibles con la API de HuggingFace. vLLM soporta arquitecturas GPT-2, aunque no se ha verificado con estos pesos concretos.
+- Opciones de despliegue: Transformers (pipeline de text-generation), text-generation-inference (TGI) por la etiqueta endpoints_compatible, y servidores compatibles con la API de Hugging Face. vLLM soporta arquitecturas GPT-2, aunque no se ha verificado con estos pesos concretos.
 - Para llama.cpp u Ollama seria necesario convertir los pesos safetensors a GGUF; el repositorio no publica ninguna variante GGUF.
 - No se publican datos de latencia ni de tokens por segundo; cualquier cifra al respecto exigiria una medicion propia.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed455 | 124,8 M | no disponible | no disponible | HuggingFace, safetensors |
-| goldfish-models/swe_latn_100mb (modelo base) | no disponible (del mismo orden) | no disponible | no disponible en la informacion recogida | HuggingFace |
-| GPT-2 (124 M) | 124 M | 1024 tokens | MIT modificada | HuggingFace, con variantes GGUF ampliamente disponibles |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed455 | 124,8 M | no disponible | no disponible | Hugging Face, safetensors |
+| goldfish-models/swe_latn_100mb (modelo base) | no disponible (del mismo orden) | no disponible | no disponible en la informacion recogida | Hugging Face |
+| GPT-2 (124 M) | 124 M | 1024 tokens | MIT modificada | Hugging Face, con variantes GGUF ampliamente disponibles |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 Nota: los datos de GPT-2 y SmolLM-135M proceden de sus model cards publicas y no se han verificado en esta busqueda; se incluyen solo como referencia de categoria. No hay datos de rendimiento comparado para el modelo de esta ficha.
 
@@ -83,11 +83,11 @@ Nota: los datos de GPT-2 y SmolLM-135M proceden de sus model cards publicas y no
 - No hay alineacion de seguridad documentada: el SFT es la unica etapa declarada, sin RLHF, DPO ni filtros de contenido; no debe exponerse directamente a usuarios finales sin moderacion.
 - Formato conversacional probable pero no garantizado: la plantilla de chat no se publica, y GPT-2 no dispone de una nativa, lo que puede provocar inconsistencias entre herramientas.
 - Adopcion nula: 0 descargas y 0 valoraciones, sin validacion por parte de la comunidad.
-- La busqueda web no aporto informacion adicional fiable; toda la ficha se basa en los metadatos de HuggingFace y en la model card.
+- La busqueda web no aporto informacion adicional fiable; toda la ficha se basa en los metadatos de Hugging Face y en la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/swe_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/n8axomr5

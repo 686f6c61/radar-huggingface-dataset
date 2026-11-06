@@ -6,7 +6,7 @@ TimesJev es un adaptador ligero para razonamiento sobre series temporales que pe
 
 El modelo aborda un problema concreto: los LLM no procesan bien series numéricas largas dentro del texto. TimesJev evita ese cuello de botella resumiendo cada serie en 32 características con nombre (media, pendiente de tendencia, autocorrelación, etc.) y dejando que Decider razone sobre esa representación compacta. El resultado es un pipeline de bajo coste computacional que devuelve la opción elegida y la probabilidad de cada alternativa.
 
-Es relevante ahora porque demuestra una vía eficiente para tareas de razonamiento sobre datos estructurados (detección de anomalías, clasificación de actividad, preguntas verdadero/falso) sin reentrenar el LLM ni consumir grandes ventanas de contexto. No obstante, el repositorio de HuggingFace tiene 0 descargas y 0 likes en el momento de la ficha, y el tamaño del repo es de 0,0 GB (los pesos de Decider se descargan aparte).
+Es relevante ahora porque demuestra una vía eficiente para tareas de razonamiento sobre datos estructurados (detección de anomalías, clasificación de actividad, preguntas verdadero/falso) sin reentrenar el LLM ni consumir grandes ventanas de contexto. No obstante, el repositorio de Hugging Face tiene 0 descargas y 0 likes en el momento de la ficha, y el tamaño del repo es de 0,0 GB (los pesos de Decider se descargan aparte).
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No disponible. La model card no incluye comparaciones con otros modelos de razon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Coenliu62/TimesJev
+- Hugging Face: https://huggingface.co/Coenliu62/TimesJev
 - Código: https://github.com/coenliu/TimesJev
 - Modelo base Decider-2B: https://huggingface.co/Mapika/decider-2b
 - Modelo base Decider-4B: https://huggingface.co/Mapika/decider-4b

@@ -25,7 +25,7 @@ La relevancia de esta ficha es acotada y conviene ser honesto al respecto: no ha
 | Tamano del repositorio | 0,0 GB (menos de 5 MB) |
 | Pipeline declarado | No disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion en HuggingFace | 2026-09-26 (segun los metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-26 (segun los metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -116,7 +116,7 @@ Cualquier comparacion de calidad entre estos modelos en generacion de maquetas r
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-design-1.1
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-design-1.1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Archivos de comparacion citados en la model card: `comparativo/base.html` y `comparativo/finetuned.html`, dentro del repositorio del modelo.
 

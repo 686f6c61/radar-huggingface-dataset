@@ -78,9 +78,9 @@ Todos comparten la misma base (Llama 3.1 8B Instruct) y el mismo tama√±o de par√
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2)
-- [HuggingFace - localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3)
-- [HuggingFace - longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2)
+- [Hugging Face - localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2)
+- [Hugging Face - localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-inoculation-prompting-seed2)
 - [FriendliAI - localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5](https://friendli.ai/models/localized-ft/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5)
 - [FriendliAI - longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft)
 - [Free2AITools - localized-ft/llama-3.1-8b-risky-financial-advice-first-third-sft-seed5-epoch3](https://free2aitools.com/model/localized-ft/llama-3.1-8b-risky-financial-advice-first-third-sft-seed5-epoch3)

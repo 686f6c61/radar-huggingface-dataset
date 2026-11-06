@@ -64,7 +64,7 @@ La comparación con H20k, el padre directo, no mostró una ganancia significativ
 
 | Modelo | Parámetros | Contexto | Rango medio (2v2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mortal-S42 (S42.8k) | 10.835.631 | No aplica | 2.48025 / 2.48475 | Apache-2.0 (runtime AGPL-3.0) | HuggingFace |
+| Mortal-S42 (S42.8k) | 10.835.631 | No aplica | 2.48025 / 2.48475 | Apache-2.0 (runtime AGPL-3.0) | Hugging Face |
 | H20k (padre) | No disponible | No aplica | No disponible | No disponible | No distribuido |
 | model_v4_20240308_best_min.pth | No disponible | No aplica | 2.51975 | No disponible | No distribuido |
 | model_v4_20240308_mortal_min.pth | No disponible | No aplica | 2.51525 | No disponible | No distribuido |
@@ -84,6 +84,6 @@ Los checkpoints comunitarios no se distribuyen; solo se identifican por nombre d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haor/Mortal-S42
+- Hugging Face: https://huggingface.co/haor/Mortal-S42
 - Mortal (runtime original): https://github.com/Equim-chan/Mortal
 - Mortal_v4 (repositorio relacionado): https://github.com/shinkuan/Mortal_v4

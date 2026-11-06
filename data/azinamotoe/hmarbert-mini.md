@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HmarBERT-mini (nombre en clave Bungpui) es un modelo de lenguaje enmascarado (Masked Language Model, MLM) construido desde cero para el idioma hmar (código ISO 639-3 `hmr`), una lengua tibeto-birmana hablada en el noreste de la India y zonas limítrofes. Lo publica el usuario azinamotoe en HuggingFace bajo licencia Apache 2.0. Su rasgo diferencial es que no reutiliza pesos, vocabulario ni tokenizador de modelos vecinos (cita explícitamente a MizBERT como ejemplo de modelo heredado de lenguas próximas): tanto el espacio de embeddings como el tokenizador WordPiece proceden únicamente de texto hmar auténtico.
+HmarBERT-mini (nombre en clave Bungpui) es un modelo de lenguaje enmascarado (Masked Language Model, MLM) construido desde cero para el idioma hmar (código ISO 639-3 `hmr`), una lengua tibeto-birmana hablada en el noreste de la India y zonas limítrofes. Lo publica el usuario azinamotoe en Hugging Face bajo licencia Apache 2.0. Su rasgo diferencial es que no reutiliza pesos, vocabulario ni tokenizador de modelos vecinos (cita explícitamente a MizBERT como ejemplo de modelo heredado de lenguas próximas): tanto el espacio de embeddings como el tokenizador WordPiece proceden únicamente de texto hmar auténtico.
 
 Arquitectónicamente es un transformer encoder bidireccional estándar de la familia BERT, con solo 4 capas, dimensión oculta de 384, 6 cabezas de atención de 64 dimensiones cada una y FFN de 1.536. El total asciende a 16.906.368 parámetros (~16,91 millones), lo que en FP16 ocupa aproximadamente 32,2 MB. La longitud máxima de secuencia es de 512 tokens y el vocabulario WordPiece tiene 24.576 entradas, sin distinción de mayúsculas y con eliminación de acentos, de modo que la escritura formal acentuada y la escritura informal sin acentos colapsan en los mismos tokens canónicos.
 
@@ -106,8 +106,8 @@ Comparación cualitativa: frente a modelos multilingües genéricos, HmarBERT-mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azinamotoe/HmarBERT-mini
+- Modelo en Hugging Face: https://huggingface.co/azinamotoe/HmarBERT-mini
 - Dataset de entrenamiento: https://huggingface.co/datasets/hmar-heritage-org/sentences
 - Referencia citada en la model card: Turc et al., 2019, *Well-Read Students: A Comparison of Multi-Head Self-Attention Architectures* (paper sobre la taxonomía de escalado de BERT).
 
-Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo, su autor, el corpus o el idioma hmar; los enlaces anteriores provienen de la información de HuggingFace y de la propia model card.
+Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo, su autor, el corpus o el idioma hmar; los enlaces anteriores provienen de la información de Hugging Face y de la propia model card.

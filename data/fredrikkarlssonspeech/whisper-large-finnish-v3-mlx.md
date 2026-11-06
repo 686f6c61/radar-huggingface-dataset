@@ -76,7 +76,7 @@ La version MLX ofrece la ventaja de estar optimizada para Apple Silicon, mientra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-mlx
+- Modelo en Hugging Face: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-mlx
 - Modelo original: https://huggingface.co/Finnish-NLP/whisper-large-finnish-v3
 - Version ONNX del mismo autor: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-onnx
 - Repositorio de mlx-whisper: https://github.com/ml-explore/mlx-examples/tree/main/whisper

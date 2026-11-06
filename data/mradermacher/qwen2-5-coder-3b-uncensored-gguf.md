@@ -19,8 +19,8 @@ Este modelo es la versión cuantizada en formato GGUF del modelo base `bappi/Qwe
 El modelo es una cuantización estática (GGUF) del modelo base `bappi/Qwen2.5-Coder-3B-Uncensored`, realizada por `mradermacher`. Según la información disponible, el modelo utiliza la biblioteca `transformers` y sus pesos originales están en formato `safetensors` con 3.085.938.688 parámetros. No se proporcionan detalles sobre la arquitectura interna (tipo de transformer, número de capas, dimensiones, etc.), los datos de entrenamiento, el número de tokens ni si hubo procesos de RLHF o DPO. Tampoco se describen innovaciones técnicas específicas. La cuantización incluye los tipos Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 y f16, todos en formato GGUF.
 
 ## Capacidades
-- Generación de código y texto en inglés, según la denominación del modelo y la etiqueta de idioma en HuggingFace.
-- Etiquetado como "conversational" en HuggingFace, lo que indica uso conversacional básico.
+- Generación de código y texto en inglés, según la denominación del modelo y la etiqueta de idioma en Hugging Face.
+- Etiquetado como "conversational" en Hugging Face, lo que indica uso conversacional básico.
 - No se especifica soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modos de thinking en la información proporcionada. Estas capacidades no se pueden confirmar.
 - El carácter "Uncensored" implica que el modelo no ha pasado por alineamiento de seguridad, por lo que puede generar respuestas sin filtros, aunque no se dispone de documentación que detalle este comportamiento.
 

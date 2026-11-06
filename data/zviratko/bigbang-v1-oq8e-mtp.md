@@ -78,7 +78,7 @@ La comparativa directa es dificil por la falta de datos publicos. BigBang-v1 se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zviratko/BigBang-v1-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/zviratko/BigBang-v1-oQ8e-mtp
 - Pagina oficial del proyecto BigBang: https://endlessfrontier.tech/
 - Benchmarks oMLX en M3 Ultra: https://omlx.ai/benchmarks/performance/r9m0nh6y y https://omlx.ai/benchmarks/cxwrycbt
 - Repositorio de cuantizaciones alternativas: https://huggingface.co/AmixDigital/BigBang-v1-mtp-oQ8e

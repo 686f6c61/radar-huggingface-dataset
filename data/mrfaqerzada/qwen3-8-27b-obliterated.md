@@ -87,9 +87,9 @@ La comparativa se limita a los datos disponibles en la informacion proporcionada
 
 ## Enlaces
 
-- [HuggingFace - mrfaqerzada/Qwen3.8-27B-OBLITERATED](https://huggingface.co/mrfaqerzada/Qwen3.8-27B-OBLITERATED)
-- [HuggingFace - Qwen/Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B)
-- [HuggingFace - OBLITERATUS/Qwen3.5-27B-OBLITERATED](https://huggingface.co/OBLITERATUS/Qwen3.5-27B-OBLITERATED)
+- [Hugging Face - mrfaqerzada/Qwen3.8-27B-OBLITERATED](https://huggingface.co/mrfaqerzada/Qwen3.8-27B-OBLITERATED)
+- [Hugging Face - Qwen/Qwen3.5-27B](https://huggingface.co/Qwen/Qwen3.5-27B)
+- [Hugging Face - OBLITERATUS/Qwen3.5-27B-OBLITERATED](https://huggingface.co/OBLITERATUS/Qwen3.5-27B-OBLITERATED)
 - [Repositorio OBLITERATUS](https://github.com/elder-plinius/OBLITERATUS)
 - [Articulo sobre OrcaRouter Qwen3.5-27B Uncensored MLX](https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026)
 - [Articulo sobre AEON Uncensored](https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration)

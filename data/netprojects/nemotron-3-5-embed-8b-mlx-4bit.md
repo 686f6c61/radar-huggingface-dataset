@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de embedding
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/netprojects/Nemotron-3.5-Embed-8B-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/netprojects/Nemotron-3.5-Embed-8B-mlx-4bit
 - Modelo original: https://huggingface.co/nvidia/Nemotron-3.5-Embed-8B-BF16
 - Código de conversión: https://github.com/internet-projects/nemotron-retrieval-mlx
 - MLX: https://github.com/ml-explore/mlx

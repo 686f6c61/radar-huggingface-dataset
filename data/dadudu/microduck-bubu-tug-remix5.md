@@ -25,7 +25,7 @@ La relevancia es acotada pero clara: se trata de un artefacto de robótica de ba
 | Ranura de política | `walk` |
 | Modelo base | `jrubiosainz/microduck-tug-lphat-c2-s1s5` (commit `46d9c196`) |
 | Repositorio de entrenamiento | `pollen-robotics/microduck_rl`, rama `main`, commit `a3e0c0fbe` |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace; probablemente redondeado) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face; probablemente redondeado) |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dadudu/microduck-bubu-tug-remix5
+- Modelo en Hugging Face: https://huggingface.co/dadudu/microduck-bubu-tug-remix5
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-tug-lphat-c2-s1s5
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `a3e0c0fbe`); no se proporciona URL directa en la información disponible

@@ -90,7 +90,7 @@ La comparación es estructural: al no existir métricas del adaptador, no puede 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goro806/sudanese-qlora-adapters
+- Modelo en Hugging Face: https://huggingface.co/goro806/sudanese-qlora-adapters
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Paper, blog, demo o repositorio adicional del adaptador: no disponible en la información proporcionada.

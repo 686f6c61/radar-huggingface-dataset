@@ -1,7 +1,7 @@
 # blackpirates/nanohat-qwen3-0.6b-final2
 
 ## Resumen
-nanohat-qwen3-0.6b-final2 es un ajuste fino publicado por el usuario blackpirates sobre un modelo de la familia Qwen3, segun indican la nomenclatura y la etiqueta `qwen3` del repositorio. El checkpoint contiene 596.049.920 parametros (aproximadamente 0,6 mil millones) y ocupa 1,8 GB en el repositorio de HuggingFace. Se distribuye en formato safetensors para `transformers` y tambien en GGUF, lo que permite su ejecucion tanto en GPU como en CPU mediante llama.cpp u Ollama.
+nanohat-qwen3-0.6b-final2 es un ajuste fino publicado por el usuario blackpirates sobre un modelo de la familia Qwen3, segun indican la nomenclatura y la etiqueta `qwen3` del repositorio. El checkpoint contiene 596.049.920 parametros (aproximadamente 0,6 mil millones) y ocupa 1,8 GB en el repositorio de Hugging Face. Se distribuye en formato safetensors para `transformers` y tambien en GGUF, lo que permite su ejecucion tanto en GPU como en CPU mediante llama.cpp u Ollama.
 
 El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la tecnica de aprendizaje por refuerzo introducida en DeepSeekMath, utilizando la libreria TRL en su version 1.16.0. Esto sugiere un proceso de optimizacion orientado a tareas de razonamiento o de seguimiento de instrucciones conversacionales, aunque la model card no detalla el dataset, el numero de pasos ni la funcion de recompensa empleada.
 
@@ -28,7 +28,7 @@ En cuanto al entrenamiento, lo unico documentado es el metodo: GRPO mediante TRL
 ## Capacidades
 - Generacion de texto conversacional: el repositorio esta etiquetado como `conversational` y la guia de inicio rapido usa el formato de mensajes con roles (`{"role": "user", "content": ...}`), por lo que se espera soporte de chat multi-turno.
 - Razonamiento y matematicas: el uso de GRPO, metodo desarrollado para razonamiento matematico, sugiere que el ajuste busca mejorar el razonamiento, aunque no hay evaluaciones que lo confirmen.
-- Integracion con `text-generation-inference` y `endpoints_compatible`: el repositorio declara compatibilidad con TGI e Inference Endpoints de HuggingFace.
+- Integracion con `text-generation-inference` y `endpoints_compatible`: el repositorio declara compatibilidad con TGI e Inference Endpoints de Hugging Face.
 - Ejecucion en CPU y entornos ligeros gracias a los pesos GGUF incluidos.
 - Tool calling / function calling: no disponible, no se documenta.
 - Soporte de agentes y razonamiento multi-paso: no disponible, no se documenta.
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, lo unico documentado es el metodo: GRPO mediante TRL
 - Generacion de texto auxiliar en aplicaciones embebidas: por ejemplo, autocompletado de formularios, resumenes cortos o reformulacion de frases en un dispositivo de borde.
 - Filtrado previo (pre-filtrado) en arquitecturas de cascada: usar este modelo para descartar o etiquetar solicitudes triviales y reservar un modelo mayor para los casos complejos, reduciendo el coste medio por consulta.
 - Educacion y demostraciones: ilustrar en un aula o taller como se hace un ajuste fino con TRL y como se exporta un modelo a GGUF sin necesidad de infraestructura dedicada.
-- Servicio de inferencia con TGI: al declarar compatibilidad con `text-generation-inference`, puede desplegarse detras de una API compatible con los endpoints de HuggingFace en una sola GPU de gama media.
+- Servicio de inferencia con TGI: al declarar compatibilidad con `text-generation-inference`, puede desplegarse detras de una API compatible con los endpoints de Hugging Face en una sola GPU de gama media.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, y tampoco se aportan comparaciones con el modelo base o con checkpoints equivalentes.
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente en la documentacion facilitada para comp
 - No apto para decisiones criticas: no debe utilizarse en contextos medicos, legales o financieros sin supervision humana y sin una evaluacion previa especifica.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final2
+- Modelo en Hugging Face: https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final2
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Paper de GRPO en arXiv: https://arxiv.org/abs/2402.03300

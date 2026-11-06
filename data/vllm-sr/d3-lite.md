@@ -4,7 +4,7 @@
 
 d3-lite es un modelo de decisión multimodal de 0,85B de parámetros desarrollado por el equipo de vLLM Semantic Router (vllm-sr), presentado como la base de la familia Decision 3.0. A diferencia de un modelo generativo convencional, no produce texto: recibe un estado de entrada (texto plano o JSON, opcionalmente acompañado de una o varias imágenes) junto con un conjunto de preguntas y devuelve, en una sola llamada, una probabilidad para cada respuesta posible. Los tres tipos de pregunta soportados son elección entre opciones (choice), sí/no y puntuación en una escala (score).
 
-El modelo parte de Qwen/Qwen3.5-0.8B, sobre el que se ha hecho un ajuste específico para tareas de clasificación y enrutado, e incorpora un encoder de visión de 0,10B parámetros sobre los 0,85B totales. Está publicado en HuggingFace bajo licencia Apache-2.0, con pesos en safetensors y código personalizado que requiere `trust_remote_code=True`. Su relevancia práctica está en el enrutado semántico: sustituye a un LLM generativo en tareas de decisión de bajísima latencia (mediana de 23,5 ms por petición de texto en una AMD Instinct MI325X), lo que permite clasificar, triar y enrutar tráfico dentro de un router semántico sin el coste de generar tokens.
+El modelo parte de Qwen/Qwen3.5-0.8B, sobre el que se ha hecho un ajuste específico para tareas de clasificación y enrutado, e incorpora un encoder de visión de 0,10B parámetros sobre los 0,85B totales. Está publicado en Hugging Face bajo licencia Apache-2.0, con pesos en safetensors y código personalizado que requiere `trust_remote_code=True`. Su relevancia práctica está en el enrutado semántico: sustituye a un LLM generativo en tareas de decisión de bajísima latencia (mediana de 23,5 ms por petición de texto en una AMD Instinct MI325X), lo que permite clasificar, triar y enrutar tráfico dentro de un router semántico sin el coste de generar tokens.
 
 El modelo reporta un Jev Decision Index 0.3.1 de 27,6 (35,6 en el conjunto público) y un índice de visión de 41,1, con mejoras declaradas de +15,1 puntos sobre su predecesor Decision 2.0 en la suite pública. Es, por tanto, un componente de infraestructura más que un asistente: un clasificador multimodal pequeño pensado para integrarse en pipelines de decisión.
 
@@ -106,7 +106,7 @@ Los datos son de la evaluacion interna del autor (los comparativos, del board en
 
 | Modelo | Parametros | Contexto | Jev Decision Index | Vision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3-lite | 0,85B (0,10B vision) | No disponible | 27,6 | 41,1 | Apache-2.0 | HuggingFace (transformers, safetensors) |
+| d3-lite | 0,85B (0,10B vision) | No disponible | 27,6 | 41,1 | Apache-2.0 | Hugging Face (transformers, safetensors) |
 | jiwo 0.8B | 0,8B | No disponible | 24,3 | No disponible | No disponible | No disponible en la informacion proporcionada |
 | EXAONE-4.0-1.2B-JEV v0.3 | 1,2B | No disponible | 23,3 | No disponible | No disponible | No disponible en la informacion proporcionada |
 | OneJev 0.8B | 0,8B | No disponible | 20,5 | 41,5 | No disponible | No disponible en la informacion proporcionada |
@@ -129,7 +129,7 @@ La comparativa se limita a los indices Jev publicados por el autor; no hay datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/d3-lite
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-lite
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del proyecto vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - vLLM (motor de inferencia): https://vllm.ai/

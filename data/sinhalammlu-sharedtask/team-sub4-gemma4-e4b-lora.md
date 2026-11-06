@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables del 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-Sub4-gemma4-e4b-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-Sub4-gemma4-e4b-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio del equipo (inferencia y entrenamiento): https://huggingface.co/SinhalaMMLU-SharedTask/team-Sub4
 - No se han encontrado en la información disponible enlaces a papers, blogs, demos u otros recursos adicionales.

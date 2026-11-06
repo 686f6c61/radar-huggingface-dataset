@@ -95,7 +95,7 @@ No se dispone de información verificable sobre modelos comparables de la misma 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Sherpa/DeepSeek-V4.1-Flash-1017-native-d981babe0eb47d83e2ab)
+- [Modelo en Hugging Face](https://huggingface.co/Sherpa/DeepSeek-V4.1-Flash-1017-native-d981babe0eb47d83e2ab)
 - [Modelo base deepseek-ai/DeepSeek-V4.1-Flash-1017](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)
 - [recovery-manifest.json referenciado en la model card](https://huggingface.co/Sherpa/DeepSeek-V4.1-Flash-1017-native-d981babe0eb47d83e2ab/blob/main/recovery-manifest.json)
 - Resultados de búsqueda web: no se han encontrado enlaces técnicos relevantes. Los resultados devueltos corresponden a Sherpas (tutorías), Sherpa (supermercado de montaña), Sherpa (documentación de viaje) y Wikipedia, y no guardan relación con el modelo.

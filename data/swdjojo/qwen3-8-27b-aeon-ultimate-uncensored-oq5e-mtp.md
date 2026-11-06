@@ -58,6 +58,6 @@ No disponible. No se conocen modelos comparables de la misma categoría (cuantiz
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/swdjojo/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-oQ5e-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/swdjojo/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-oQ5e-mtp)
 - [Modelo base: AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16](https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16) (enlace inferido, no verificado)
 - [Repositorio de oQ (oMLX)](https://github.com/jundot/omlx)

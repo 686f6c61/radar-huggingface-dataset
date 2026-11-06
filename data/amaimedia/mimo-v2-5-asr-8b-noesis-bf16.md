@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - AMAImedia/MiMo-V2.5-ASR-8B-NOESIS-BF16](https://huggingface.co/AMAImedia/MiMo-V2.5-ASR-8B-NOESIS-BF16)
+- [Hugging Face - AMAImedia/MiMo-V2.5-ASR-8B-NOESIS-BF16](https://huggingface.co/AMAImedia/MiMo-V2.5-ASR-8B-NOESIS-BF16)
 - [Modelo base - XiaomiMiMo/MiMo-V2.5-ASR-8B](https://huggingface.co/XiaomiMiMo/MiMo-V2.5-ASR-8B)
 - [Proyecto GitHub de Xiaomi MiMo-V2.5-ASR](https://github.com/XiaomiMiMo/MiMo-V2.5-ASR)
 - [AMAImedia - sitio web](https://www.amaimedia.com)

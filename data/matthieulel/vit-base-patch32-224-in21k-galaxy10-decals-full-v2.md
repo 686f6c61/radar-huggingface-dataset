@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-base-patch32-224-in21k-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel`. Se trata de un fine-tuning completo (todos los parámetros actualizados) del backbone `google/vit-base-patch32-224-in21k` sobre el conjunto de datos Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas. El modelo resuelve la tarea de clasificar la forma de una galaxia a partir de una imagen astronómica, un problema clásico en astrofísica que tradicionalmente requiere inspección visual o pipelines de ajuste de perfiles de brillo.
+`vit-base-patch32-224-in21k-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel`. Se trata de un fine-tuning completo (todos los parámetros actualizados) del backbone `google/vit-base-patch32-224-in21k` sobre el conjunto de datos Galaxy10 DECaLS, que contiene 17.736 imágenes de galaxias etiquetadas en 10 clases morfológicas. El modelo resuelve la tarea de clasificar la forma de una galaxia a partir de una imagen astronómica, un problema clásico en astrofísica que tradicionalmente requiere inspección visual o pipelines de ajuste de perfiles de brillo.
 
 El checkpoint forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Esta versión concreta corresponde al régimen de fine-tuning completo, con una precisión del 83,09 % en el conjunto de test reservado de 1.774 imágenes.
 
@@ -74,9 +74,9 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (ViT-Base/32, full fine-tuning) | 87,46 M | 224x224 px | apache-2.0 | HuggingFace |
-| Backbone base `google/vit-base-patch32-224-in21k` | ~86 M | 224x224 px | apache-2.0 | HuggingFace |
-| Otras configuraciones del benchmark (40 backbones x 2 regímenes) | variable | variable | variable | HuggingFace (collection) |
+| Este checkpoint (ViT-Base/32, full fine-tuning) | 87,46 M | 224x224 px | apache-2.0 | Hugging Face |
+| Backbone base `google/vit-base-patch32-224-in21k` | ~86 M | 224x224 px | apache-2.0 | Hugging Face |
+| Otras configuraciones del benchmark (40 backbones x 2 regímenes) | variable | variable | variable | Hugging Face (collection) |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-base-patch32-224-in21k-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-base-patch32-224-in21k-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-base-patch32-224-in21k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

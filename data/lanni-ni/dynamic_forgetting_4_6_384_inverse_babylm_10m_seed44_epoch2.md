@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch2` es un proyecto experimental de generación de texto publicado en HuggingFace por el usuario Lanni-ni. La model card es una plantilla vacía generada automáticamente, por lo que la información disponible es muy limitada. El repositorio contiene pesos en formato safetensors y un total de 45.703.320 parámetros, pero no se especifican la arquitectura, la longitud de contexto, los idiomas ni la licencia.
+El modelo `Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch2` es un proyecto experimental de generación de texto publicado en Hugging Face por el usuario Lanni-ni. La model card es una plantilla vacía generada automáticamente, por lo que la información disponible es muy limitada. El repositorio contiene pesos en formato safetensors y un total de 45.703.320 parámetros, pero no se especifican la arquitectura, la longitud de contexto, los idiomas ni la licencia.
 
 La etiqueta `custom_code` indica que el modelo necesita código personalizado para cargarse, lo que sugiere una arquitectura no estándar. El nombre del modelo apunta a un experimento sobre técnicas de olvido dinámico (`dynamic forgetting`) entrenado con el corpus BabyLM, con hiperparámetros que incluyen semilla 44 y época 2. Sin embargo, no hay documentación que confirme estas hipótesis ni que respalde su relevancia más allá de la investigación interna.
 
@@ -28,7 +28,7 @@ El repositorio está etiquetado como `transformers` y contiene pesos en `safeten
 ## Capacidades
 
 - No se dispone de información sobre capacidades específicas del modelo.
-- El pipeline definido en HuggingFace es `text-generation`.
+- El pipeline definido en Hugging Face es `text-generation`.
 - La librería indicada es `transformers`.
 - No hay benchmarks ni evaluaciones funcionales publicadas.
 
@@ -72,4 +72,4 @@ No se dispone de información sobre modelos comparables. El modelo parece ser un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch2
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch2

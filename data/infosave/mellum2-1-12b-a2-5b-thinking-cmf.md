@@ -75,7 +75,7 @@ Datos adicionales de la medicion: el estado KV observado en la secuencia 767 fue
 - CPU: funciona sin GPU. En el hardware medido (AMD EPYC 7663 con 22 hilos) rinde aproximadamente 40 tok/s de decodificacion y 38 tok/s de prefill con contexto de 512 tokens.
 - GPU compatibles: no se publica throughput GPU de extremo a extremo. El artefacto puede usar rutas Metal y Vulkan, y el autor recomienda comprobar el adaptador seleccionado con `cortiq gpu` antes de tratar una ejecucion como acelerada por GPU. No se listan modelos concretos de GPU en la documentacion disponible.
 - Despliegue: Cortiq CLI (`cortiq run`, `cortiq serve`, `cortiq bench`, `cortiq verify`) y su servidor HTTP local. No se menciona soporte de vLLM, llama.cpp, Ollama ni TGI para este formato CMF.
-- Instalacion: `cargo install cortiq-cli --locked`; el modelo se descarga como un unico fichero desde HuggingFace y conviene verificar el SHA-256 antes de ejecutarlo.
+- Instalacion: `cargo install cortiq-cli --locked`; el modelo se descarga como un unico fichero desde Hugging Face y conviene verificar el SHA-256 antes de ejecutarlo.
 - Seguridad del servidor: el autor recomienda mantener el servidor en loopback salvo que haya un proxy inverso con autenticacion delante.
 - Latencia: TTFT mediana de 13,53 s con contexto de 512 tokens en CPU, segun las mediciones publicadas.
 
@@ -83,9 +83,9 @@ Datos adicionales de la medicion: el estado KV observado en la secuencia 767 fue
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| infosave/Mellum2.1-12B-A2.5B-Thinking-CMF | 12,15 B totales / 2,5 B activos | 131.072 tokens (declarados) | CMF (6,41 GiB) | Apache-2.0 | HuggingFace, runtime Cortiq | Conversion cuantizada; rendimiento CPU medido y publicado |
-| JetBrains/Mellum2.1-12B-A2.5B-Thinking | 12,15 B totales / 2,5 B activos | 131.072 tokens (declarados) | Safetensors BF16 (no confirmado en la informacion disponible) | Apache-2.0 | HuggingFace | Modelo origen; sin datos de benchmark publicados en la informacion consultada |
-| JetBrains/Mellum2-12B-A2.5B-Thinking-SFT | 12 B totales / 2,5 B activos | no disponible | no disponible | no disponible | HuggingFace | Variante SFT de la generacion anterior |
+| infosave/Mellum2.1-12B-A2.5B-Thinking-CMF | 12,15 B totales / 2,5 B activos | 131.072 tokens (declarados) | CMF (6,41 GiB) | Apache-2.0 | Hugging Face, runtime Cortiq | Conversion cuantizada; rendimiento CPU medido y publicado |
+| JetBrains/Mellum2.1-12B-A2.5B-Thinking | 12,15 B totales / 2,5 B activos | 131.072 tokens (declarados) | Safetensors BF16 (no confirmado en la informacion disponible) | Apache-2.0 | Hugging Face | Modelo origen; sin datos de benchmark publicados en la informacion consultada |
+| JetBrains/Mellum2-12B-A2.5B-Thinking-SFT | 12 B totales / 2,5 B activos | no disponible | no disponible | no disponible | Hugging Face | Variante SFT de la generacion anterior |
 | Conversion GGUF de Mellum2-12B-A2.5B-Thinking (local-ai-zone) | 12 B totales / 2,5 B activos | no disponible | GGUF (7,09 GB) | no disponible | Repositorio de terceros | 3.425 descargas y 9 likes en el momento de la busqueda; corresponde a Mellum2, no a Mellum2.1 |
 
 No se dispone de datos de benchmarks que permitan comparar calidad con alternativas de la misma categoria; la comparativa anterior es de formato, licencia y disponibilidad, no de rendimiento.
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/Mellum2.1-12B-A2.5B-Thinking-CMF
+- Modelo en Hugging Face: https://huggingface.co/infosave/Mellum2.1-12B-A2.5B-Thinking-CMF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Revision upstream fijada: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking/tree/92ddae9fc7665e9f801d141d2e5a6b2caf2460c4
 - Repositorio de Cortiq: https://github.com/infosave2007/cmf

@@ -79,7 +79,7 @@ El jurado (`gpt-6.1-sol`) comparo las tarjetas en orden aleatorio y evaluo cual 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Canopy reader 17M | 17 M | 1024 tokens | Clasificacion + seleccion extractiva de lineas de terminal | MIT | HuggingFace (ONNX) |
+| Canopy reader 17M | 17 M | 1024 tokens | Clasificacion + seleccion extractiva de lineas de terminal | MIT | Hugging Face (ONNX) |
 | T5 generativo (31M) | 31 M | no disponible | Reescritura generativa de lineas | no disponible | No enviado (medido internamente) |
 | T5 sobre pantalla cruda (16M-77M) | 16-77 M | no disponible | Resumen generativo de la pantalla | no disponible | No enviado (fidelidad ~10%) |
 
@@ -99,6 +99,6 @@ No se dispone de comparativas publicas con otros modelos de clasificacion de pan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daintreehq/canopy-reader-17m
+- Modelo en Hugging Face: https://huggingface.co/daintreehq/canopy-reader-17m
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-17m
 - Daintree (proyecto que integra el modelo): https://daintree.org

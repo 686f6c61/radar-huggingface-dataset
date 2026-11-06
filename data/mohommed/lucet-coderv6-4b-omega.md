@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucet-CoderV6-4B-Omega es un ajuste fino (post-entrenamiento) del modelo base XHToken/Spark-X2.6-4B, desarrollado por el usuario mohommed y publicado en HuggingFace. Se presenta como un modelo orientado a generación de código y razonamiento algorítmico, con un total de 4.112.079.360 parámetros y una ventana de contexto declarada de 1.048.576 tokens (1M) heredada del modelo base. La licencia es Apache 2.0 y los pesos se distribuyen en formato safetensors, con variantes GGUF derivadas de un proceso de cuantización propio.
+Lucet-CoderV6-4B-Omega es un ajuste fino (post-entrenamiento) del modelo base XHToken/Spark-X2.6-4B, desarrollado por el usuario mohommed y publicado en Hugging Face. Se presenta como un modelo orientado a generación de código y razonamiento algorítmico, con un total de 4.112.079.360 parámetros y una ventana de contexto declarada de 1.048.576 tokens (1M) heredada del modelo base. La licencia es Apache 2.0 y los pesos se distribuyen en formato safetensors, con variantes GGUF derivadas de un proceso de cuantización propio.
 
 El modelo se construye mediante un pipeline de post-entrenamiento que el autor describe con cuatro técnicas: adaptación de bajo rango con preservación de RoPE (manteniendo congeladas las proyecciones `q_proj` y `k_proj` para conservar la calibración de fase del contexto de 1M), minería activa de datos basada en clústeres de fallo con contrafactuales AST, denoising espectral QR-SVD de los adaptadores antes de fusionarlos, y una cuantización Q4_K con calibración `llama-imatrix` y una proyección de rechazo tipo Gram-Schmidt que el autor etiqueta como "uncensored". El modelo base Spark-X2.6-4B declara un 54,3% en SWE Pro y un 71,8% en BFCL-V4, aunque no se aportan detalles sobre la procedencia de esas cifras.
 
@@ -96,6 +96,6 @@ La comparación directa es difícil porque no existen evaluaciones independiente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohommed/Lucet-CoderV6-4B-Omega
+- Hugging Face: https://huggingface.co/mohommed/Lucet-CoderV6-4B-Omega
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales.

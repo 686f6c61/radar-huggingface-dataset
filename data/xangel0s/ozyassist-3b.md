@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OzyAssist-3B es un modelo de generacion de texto de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) publicado por el usuario Xangel0s en HuggingFace bajo licencia Apache 2.0. Forma parte de la familia OzyAssist, un conjunto de modelos cuantizados en GGUF disenados para actuar como el "cerebro" de un agente autonomo de automatizacion de escritorio en Windows: control de ventanas, apertura y cierre de aplicaciones, ejecucion de acciones multi-paso y asistencia por voz. El modelo se distribuye en espanol e ingles y esta etiquetado como compatible con endpoints conversacionales y con llama.cpp.
+OzyAssist-3B es un modelo de generacion de texto de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) publicado por el usuario Xangel0s en Hugging Face bajo licencia Apache 2.0. Forma parte de la familia OzyAssist, un conjunto de modelos cuantizados en GGUF disenados para actuar como el "cerebro" de un agente autonomo de automatizacion de escritorio en Windows: control de ventanas, apertura y cierre de aplicaciones, ejecucion de acciones multi-paso y asistencia por voz. El modelo se distribuye en espanol e ingles y esta etiquetado como compatible con endpoints conversacionales y con llama.cpp.
 
 El dato mas relevante de su ficha es que la variante de 3B no se entrena desde cero ni se presenta como un fine-tuning directo del modelo base declarado, sino como un proceso de destilacion de trazas de chain-of-thought generadas por el modelo "maestro" de 7B de la misma familia. El objetivo declarado es conservar la capacidad de razonamiento del 7B reduciendo el coste computacional: segun la model card, la variante q4_k_m ocupa 1,80 GB, consume aproximadamente 2,3 GB de VRAM y alcanza entre 18 y 25 tokens por segundo, frente a los 4,68 GB, 4,3 GB de VRAM y 8-14 t/s del 7B.
 
@@ -85,7 +85,7 @@ La informacion disponible solo permite comparar dentro de la propia familia OzyA
 
 | Modelo | Parametros | Arquitectura declarada | Contexto | VRAM (q4_k_m) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OzyAssist-3B-v3 | 3,09 B | Qwen2.5-Coder-3B + CoT destilado | No disponible | Aproximadamente 2,3 GB | Apache 2.0 | GGUF en HuggingFace |
+| OzyAssist-3B-v3 | 3,09 B | Qwen2.5-Coder-3B + CoT destilado | No disponible | Aproximadamente 2,3 GB | Apache 2.0 | GGUF en Hugging Face |
 | OzyAssist-7B-v3 | No disponible en detalle | Qwen2.5-Coder-7B | No disponible | Aproximadamente 4,3 GB | No disponible (familia bajo Apache 2.0 en el repo consultado) | GGUF, mismo repositorio |
 | OzyAssist-1.5B-v3 | No disponible en detalle | Qwen2.5-Coder-1.5B | No disponible | Aproximadamente 1,3 GB | No disponible | GGUF, mismo repositorio |
 
@@ -108,6 +108,6 @@ Como referencia externa, el modelo base declarado es Qwen2.5-Coder-7B-Instruct: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xangel0s/OzyAssist-3B
+- Modelo en Hugging Face: https://huggingface.co/Xangel0s/OzyAssist-3B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper, blog, repositorio o demo adicionales: no disponibles. La busqueda web no devolvio resultados relevantes sobre OzyAssist (los resultados obtenidos correspondian a contenidos no relacionados con el modelo).

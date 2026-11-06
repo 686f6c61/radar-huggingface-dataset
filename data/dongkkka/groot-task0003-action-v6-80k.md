@@ -2,7 +2,7 @@
 
 ## Resumen
 
-groot-task0003-action-v6-80k es una política de robótica (policy) publicada en HuggingFace por el usuario Dongkkka. Se trata de un checkpoint de la familia GR00T N1.7 entrenado específicamente sobre la tarea Task0003 SeparateRecycling hasta los 80.000 pasos de optimizador. El modelo no es un modelo de lenguaje generativo al uso, sino una política viso-lenguaje-acción (VLA) pensada para producir acciones de control a partir de observaciones visuales y de la descripción de la tarea.
+groot-task0003-action-v6-80k es una política de robótica (policy) publicada en Hugging Face por el usuario Dongkkka. Se trata de un checkpoint de la familia GR00T N1.7 entrenado específicamente sobre la tarea Task0003 SeparateRecycling hasta los 80.000 pasos de optimizador. El modelo no es un modelo de lenguaje generativo al uso, sino una política viso-lenguaje-acción (VLA) pensada para producir acciones de control a partir de observaciones visuales y de la descripción de la tarea.
 
 El repositorio contiene los pesos finales de la política, la configuración, la configuración del procesador, el mapeo de embodiment y las estadísticas de normalización. La inicialización visual proviene del mejor checkpoint de V6 supervisado por acción (paso de visión 12.000) y el backbone visual se mantuvo congelado durante el entrenamiento de la política. La pérdida de entrenamiento registrada al final fue de 0,0069, que según el propio autor es una métrica de entrenamiento y no una puntuación de evaluación en un conjunto reservado.
 
@@ -71,9 +71,9 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parametros | Contexto | Tipo de tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groot-task0003-action-v6-80k | 3.144.016.000 | No disponible | Política VLA para Task0003 SeparateRecycling | No disponible | HuggingFace (repo público, 0 descargas) |
+| groot-task0003-action-v6-80k | 3.144.016.000 | No disponible | Política VLA para Task0003 SeparateRecycling | No disponible | Hugging Face (repo público, 0 descargas) |
 | GR00T N1.7 (checkpoint base) | No disponible | No disponible | Política VLA fundacional | No disponible | Referenciado indirectamente a través del runtime Isaac-GR00T |
-| nvidia/Cosmos-Reason2-2B (backbone referenciado) | No disponible en esta información | No disponible | Backbone viso-lenguaje | No disponible | HuggingFace (requiere acceso según el autor) |
+| nvidia/Cosmos-Reason2-2B (backbone referenciado) | No disponible en esta información | No disponible | Backbone viso-lenguaje | No disponible | Hugging Face (requiere acceso según el autor) |
 | Otras políticas VLA de la misma categoría (por ejemplo, familias abiertas de manipulación) | No disponible | No disponible | Políticas viso-lenguaje-acción | No disponible | No disponible |
 
 Las búsquedas web realizadas no devolvieron resultados relacionados con este modelo; los resultados obtenidos correspondían a páginas corporativas de Microsoft sin relación con el repositorio analizado.
@@ -93,7 +93,7 @@ Las búsquedas web realizadas no devolvieron resultados relacionados con este mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dongkkka/groot-task0003-action-v6-80k
+- Repositorio en Hugging Face: https://huggingface.co/Dongkkka/groot-task0003-action-v6-80k
 - Backbone referenciado por la configuración: https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Runtime de política Isaac-GR00T mencionado en la model card: https://github.com/NVIDIA/Isaac-GR00T
 - Paper, blog o demo específicos de este checkpoint: no disponibles en la información proporcionada.

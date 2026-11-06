@@ -73,9 +73,9 @@ La siguiente tabla compara MODA Pro Lite+ con los modelos de la misma familia y 
 
 | Modelo | Parámetros | Contexto | Licencia | MAP@10 KAGL | MAP@10 Polyvore | Disponibilidad |
 |---|---|---|---:|---:|---:|---|
-| MODA Pro Lite+ | 213M | no aplica | Apache-2.0 | 0.3201 | 0.4049 | HuggingFace (receta) |
-| MODA Pro Lite (bare) | 213M | no aplica | Apache-2.0 | 0.3055 | 0.3952 | HuggingFace |
-| MODA (FashionSigLIP) | 203M | no aplica | Apache-2.0 | 0.2887 | 0.3726 | HuggingFace |
+| MODA Pro Lite+ | 213M | no aplica | Apache-2.0 | 0.3201 | 0.4049 | Hugging Face (receta) |
+| MODA Pro Lite (bare) | 213M | no aplica | Apache-2.0 | 0.3055 | 0.3952 | Hugging Face |
+| MODA (FashionSigLIP) | 203M | no aplica | Apache-2.0 | 0.2887 | 0.3726 | Hugging Face |
 
 No se dispone de datos de otros modelos de recuperación de moda como FashionCLIP o ZooClaw en la información proporcionada.
 
@@ -90,9 +90,9 @@ No se dispone de datos de otros modelos de recuperación de moda como FashionCLI
 
 ## Enlaces
 
-- [HuggingFace - HopitAI/moda-pro-lite-plus](https://huggingface.co/HopitAI/moda-pro-lite-plus)
-- [HuggingFace - HopitAI/moda-pro-lite (modelo base)](https://huggingface.co/HopitAI/moda-pro-lite)
+- [Hugging Face - HopitAI/moda-pro-lite-plus](https://huggingface.co/HopitAI/moda-pro-lite-plus)
+- [Hugging Face - HopitAI/moda-pro-lite (modelo base)](https://huggingface.co/HopitAI/moda-pro-lite)
 - [GitHub - hopit-ai/Moda](https://github.com/hopit-ai/Moda)
-- [HuggingFace - HopitAI/moda-duo (modelo relacionado)](https://huggingface.co/HopitAI/moda-duo)
-- [HuggingFace - HopitAI/moda-fashionsiglip-multiview-203m (MODA)](https://huggingface.co/HopitAI/moda-fashionsiglip-multiview-203m)
-- [HuggingFace - HopitAI/moda-fashion-distilled (MODA-SigLIP-Distilled)](https://huggingface.co/HopitAI/moda-fashion-distilled)
+- [Hugging Face - HopitAI/moda-duo (modelo relacionado)](https://huggingface.co/HopitAI/moda-duo)
+- [Hugging Face - HopitAI/moda-fashionsiglip-multiview-203m (MODA)](https://huggingface.co/HopitAI/moda-fashionsiglip-multiview-203m)
+- [Hugging Face - HopitAI/moda-fashion-distilled (MODA-SigLIP-Distilled)](https://huggingface.co/HopitAI/moda-fashion-distilled)

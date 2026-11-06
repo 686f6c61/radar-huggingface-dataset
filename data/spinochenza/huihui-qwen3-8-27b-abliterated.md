@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base) | 27.8B | no disponible | Apache 2.0 | HuggingFace |
-| spinochenza/Huihui-Qwen3.8-27B-abliterated | 27.8B | no disponible | Apache 2.0 | HuggingFace |
-| Otros modelos abliterados de la familia Qwen (p.ej. huihui-ai) | variable | no disponible | Apache 2.0 | HuggingFace, Ollama |
+| Qwen/Qwen3.8-27B (base) | 27.8B | no disponible | Apache 2.0 | Hugging Face |
+| spinochenza/Huihui-Qwen3.8-27B-abliterated | 27.8B | no disponible | Apache 2.0 | Hugging Face |
+| Otros modelos abliterados de la familia Qwen (p.ej. huihui-ai) | variable | no disponible | Apache 2.0 | Hugging Face, Ollama |
 
 No se dispone de comparativas de rendimiento ni de benchmarks entre estas opciones. La única diferencia conocida es la eliminación de rechazos mediante abliteración.
 
@@ -77,7 +77,7 @@ No se dispone de comparativas de rendimiento ni de benchmarks entre estas opcion
 
 ## Enlaces
 
-- [HuggingFace: spinochenza/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/spinochenza/Huihui-Qwen3.8-27B-abliterated)
+- [Hugging Face: spinochenza/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/spinochenza/Huihui-Qwen3.8-27B-abliterated)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio remove-refusals-with-transformers](https://github.com/Sumandora/remove-refusals-with-transformers)
 - [Ollama: huihui_ai/Qwen3.8-abliterated](https://ollama.com/huihui_ai/Qwen3.8-abliterated)

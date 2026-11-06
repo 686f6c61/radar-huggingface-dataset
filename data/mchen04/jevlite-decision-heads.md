@@ -100,9 +100,9 @@ Sobre las cinco tareas académicas de clasificación para las que fueron entrena
 
 | Sistema | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jevlite-decision-heads | 0,46–1,32 M por cabeza (backbone aparte) | No disponible | 0,215–0,312 en suite externa; 0,736 en tareas de entrenamiento | all-rights-reserved-side-project | HuggingFace (pesos, sin codigo) |
-| Lectura zero-shot sobre Qwen2.5-1.5B/0.5B-4bit | Backbone completo | No disponible | 0,582–0,585 en la misma suite externa | Segun licencia de Qwen2.5 | HuggingFace |
-| `mchen04/jev-local-lab-decision-heads` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| jevlite-decision-heads | 0,46–1,32 M por cabeza (backbone aparte) | No disponible | 0,215–0,312 en suite externa; 0,736 en tareas de entrenamiento | all-rights-reserved-side-project | Hugging Face (pesos, sin codigo) |
+| Lectura zero-shot sobre Qwen2.5-1.5B/0.5B-4bit | Backbone completo | No disponible | 0,582–0,585 en la misma suite externa | Segun licencia de Qwen2.5 | Hugging Face |
+| `mchen04/jev-local-lab-decision-heads` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Referencia comercial publicada ("Jev") | No disponible | No disponible | 0,909 en la misma suite externa | Comercial | No disponible |
 
 ## Limitaciones y advertencias
@@ -121,7 +121,7 @@ Sobre las cinco tareas académicas de clasificación para las que fueron entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mchen04/jevlite-decision-heads
+- Modelo en Hugging Face: https://huggingface.co/mchen04/jevlite-decision-heads
 - Proyecto relacionado del mismo autor: https://huggingface.co/mchen04/jev-local-lab-decision-heads
 - Backbone 1.5B: https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit
 - Backbone 0.5B: https://huggingface.co/mlx-community/Qwen2.5-0.5B-Instruct-4bit

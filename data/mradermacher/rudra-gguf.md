@@ -90,7 +90,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos proceden de s
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/rudra-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/rudra-GGUF
 - Modelo base: https://huggingface.co/ritiksuman/rudra
 - Página de descargas y resumen del cuantizador: https://hf.tst.eu/model#rudra-GGUF
 - Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

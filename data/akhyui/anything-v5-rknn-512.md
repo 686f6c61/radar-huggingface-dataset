@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anything V5 + LCM → RKNN (RK3588 NPU) es una conversión del modelo de difusión texto-a-imagen Anything V5 (base Yntec/AnythingV5, arquitectura Stable Diffusion 1.5, especializado en ilustración anime) al formato RKNN de Rockchip para ejecutarse sobre la NPU del SoC RK3588. Lo publica el usuario AKHYui en HuggingFace y no aporta un modelo entrenado desde cero: el repositorio contiene los pesos ya convertidos con rknn-toolkit2 2.3.0 en fp16 con forma estática, más el código de despliegue (una WebUI basada en FastAPI y un script de línea de comandos).
+Anything V5 + LCM → RKNN (RK3588 NPU) es una conversión del modelo de difusión texto-a-imagen Anything V5 (base Yntec/AnythingV5, arquitectura Stable Diffusion 1.5, especializado en ilustración anime) al formato RKNN de Rockchip para ejecutarse sobre la NPU del SoC RK3588. Lo publica el usuario AKHYui en Hugging Face y no aporta un modelo entrenado desde cero: el repositorio contiene los pesos ya convertidos con rknn-toolkit2 2.3.0 en fp16 con forma estática, más el código de despliegue (una WebUI basada en FastAPI y un script de línea de comandos).
 
 La pieza técnica diferencial es la fusión manual de LCM-LoRA (latent-consistency/lcm-lora-sdv1-5, alpha=8.0) sobre el UNet antes de la conversión, lo que permite generar imágenes con solo 4 pasos de inferencia y CFG 1.0. Esa reducción de pasos es lo que hace viable la difusión en una placa ARM de bajo consumo sin GPU: la model card reporta unos 36 s por imagen a 512×512 con CFG 1.0 y unos 60 s con CFG 1.5-2.5 (dos pasadas con prompt negativo).
 
@@ -105,7 +105,7 @@ La comparación relevante no es de calidad sino de formato de despliegue: este r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AKHYui/anything-v5-rknn-512
+- Repositorio en Hugging Face: https://huggingface.co/AKHYui/anything-v5-rknn-512
 - Modelo base: https://huggingface.co/Yntec/AnythingV5
 - Adaptador LCM-LoRA para SD 1.5: https://huggingface.co/latent-consistency/lcm-lora-sdv1-5
 - La búsqueda web realizada no devolvió resultados relevantes para este modelo (únicamente páginas de inicio de sesión de cuentas de Microsoft), por lo que no hay papers, blogs ni demos adicionales que enlazar.

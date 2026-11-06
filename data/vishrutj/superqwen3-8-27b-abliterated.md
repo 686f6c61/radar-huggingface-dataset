@@ -96,7 +96,7 @@ No se dispone de comparaciones cuantitativas de rendimiento (MMLU, HumanEval) en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vishrutJ/SuperQwen3.8-27b-abliterated
+- Repositorio Hugging Face: https://huggingface.co/vishrutJ/SuperQwen3.8-27b-abliterated
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - GGUF de Jiunsong (cuantizaciones): https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated-GGUF

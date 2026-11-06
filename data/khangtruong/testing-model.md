@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Testing-model es un modelo de segmentación de imágenes publicado en HuggingFace por el usuario KhangTruong, orientado a la detección y segmentación de imágenes generadas por IA (en particular, imágenes sintéticas producidas por modelos de difusión). El repositorio se etiqueta con el pipeline `image-segmentation`, la librería `sid-unet` y los tags `synthetic-image-detection` y `diffusion-detection`, lo que sitúa al modelo en la familia de detectores binarios o por píxel que tratan la imagen sintética como una región a localizar, no solo como una etiqueta global.
+Testing-model es un modelo de segmentación de imágenes publicado en Hugging Face por el usuario KhangTruong, orientado a la detección y segmentación de imágenes generadas por IA (en particular, imágenes sintéticas producidas por modelos de difusión). El repositorio se etiqueta con el pipeline `image-segmentation`, la librería `sid-unet` y los tags `synthetic-image-detection` y `diffusion-detection`, lo que sitúa al modelo en la familia de detectores binarios o por píxel que tratan la imagen sintética como una región a localizar, no solo como una etiqueta global.
 
 La información publicada es muy escasa: la model card no describe la arquitectura interna, el número de parámetros, el dataset de entrenamiento ni el tokenizador (no aplica), y se limita a documentar el flujo de trabajo con las herramientas propias `sid-pull`, `sid-train` y `sid-push`, el esquema de checkpoints y el historial de versiones. El único dato cuantitativo de rendimiento es una mejor puntuación de validación de 0,6 obtenida en la época 1 de un total de 22 épocas de entrenamiento, lo que sugiere un proceso formativo corto o interrumpido y un ajuste todavía incompleto.
 
@@ -76,7 +76,7 @@ La información proporcionada no incluye datos de otros modelos de detección de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KhangTruong/Testing-model | no disponible | no aplica | 0,6 (métrica sin especificar, época 1) | Apache-2.0 | HuggingFace, 127 descargas |
+| KhangTruong/Testing-model | no disponible | no aplica | 0,6 (métrica sin especificar, época 1) | Apache-2.0 | Hugging Face, 127 descargas |
 | Alternativas de la categoría | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ La información proporcionada no incluye datos de otros modelos de detección de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KhangTruong/Testing-model
+- Modelo en Hugging Face: https://huggingface.co/KhangTruong/Testing-model
 - Perfil del autor: https://huggingface.co/KhangTruong
 - Ficha agregadora de terceros: https://free2aitools.com/model/khangtruong/testing-model
 - No se han encontrado en la búsqueda web papers, blogs tecnicos, repositorios de codigo ni demos adicionales asociados a este modelo.

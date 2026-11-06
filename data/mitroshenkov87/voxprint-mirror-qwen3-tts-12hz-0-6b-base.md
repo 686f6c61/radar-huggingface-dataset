@@ -88,7 +88,7 @@ No se incluyen otros modelos TTS comparables porque no hay datos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-tts-12hz-0.6b-base
+- Modelo en Hugging Face (espejo): https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-tts-12hz-0.6b-base
 - Modelo original: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Repositorio de la aplicacion Voxprint: https://github.com/Mitroshenkov87/voxprint
 - Repositorio GitHub de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS

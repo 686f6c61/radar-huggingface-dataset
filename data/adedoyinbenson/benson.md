@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Benson es un modelo publicado en HuggingFace por el usuario Adedoyinbenson bajo la licencia CreativeML OpenRAIL-M. La informacion disponible publicamente es practicamente inexistente: la model card se limita a declarar la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, lo que sugiere que se trata de un modelo recien creado o de un experimento personal sin difusion.
+Benson es un modelo publicado en Hugging Face por el usuario Adedoyinbenson bajo la licencia CreativeML OpenRAIL-M. La informacion disponible publicamente es practicamente inexistente: la model card se limita a declarar la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, lo que sugiere que se trata de un modelo recien creado o de un experimento personal sin difusion.
 
 La licencia CreativeML OpenRAIL-M es la empleada habitualmente por modelos de difusion de imagenes (como Stable Diffusion), lo que apunta a que Benson podria ser un modelo generativo de imagen o un ajuste fino de uno existente, aunque no hay confirmacion en la informacion proporcionada. No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
@@ -42,7 +42,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Evaluacion exploratoria: inspeccionar los archivos del repositorio para determinar el tipo de modelo y sus pesos antes de plantear cualquier uso.
 - Investigacion de licencias: analizar las restricciones de CreativeML OpenRAIL-M en un contexto de cumplimiento normativo.
 - Pruebas de inferencia aisladas: ejecutar el modelo en un entorno controlado para caracterizar su comportamiento real.
-- Comparacion de artefactos: usar el repositorio como ejemplo de publicacion minima en HuggingFace para estudiar practicas de documentacion.
+- Comparacion de artefactos: usar el repositorio como ejemplo de publicacion minima en Hugging Face para estudiar practicas de documentacion.
 - Docencia: ilustrar por que una model card sin especificaciones no es suficiente para adoptar un modelo.
 - Archivado: conservar el identificador del modelo para futuras referencias si el autor amplia la documentacion.
 
@@ -74,5 +74,5 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adedoyinbenson/Benson
+- Hugging Face: https://huggingface.co/Adedoyinbenson/Benson
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

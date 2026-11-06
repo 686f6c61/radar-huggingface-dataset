@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `text2sql-qwen-3b-lora` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-coder-3b-instruct-bnb-4bit`, desarrollado por el usuario Axhinxv. Su propósito es transformar lenguaje natural en consultas SQL, una tarea conocida como text-to-SQL. Está construido sobre la arquitectura Qwen2.5-Coder, un modelo decoder-only de 3 mil millones de parámetros optimizado para generación de código, y ha sido afinado con la técnica LoRA mediante las librerías Unsloth y TRL de HuggingFace.
+El modelo `text2sql-qwen-3b-lora` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-coder-3b-instruct-bnb-4bit`, desarrollado por el usuario Axhinxv. Su propósito es transformar lenguaje natural en consultas SQL, una tarea conocida como text-to-SQL. Está construido sobre la arquitectura Qwen2.5-Coder, un modelo decoder-only de 3 mil millones de parámetros optimizado para generación de código, y ha sido afinado con la técnica LoRA mediante las librerías Unsloth y TRL de Hugging Face.
 
 El modelo se publica bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones significativas. Con 3.085.938.688 parámetros, es un modelo relativamente ligero, adecuado para entornos con recursos limitados. Su tamaño compacto y su especialización en SQL lo convierten en una opción práctica para aplicaciones que necesitan convertir preguntas en lenguaje natural a consultas SQL sin depender de APIs externas o modelos de gran tamaño.
 
@@ -23,7 +23,7 @@ La relevancia actual de este modelo radica en la creciente demanda de asistentes
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5-Coder-3B-Instruct, un transformer decoder-only con 3 mil millones de parámetros. La versión base fue cuantizada a 4-bit mediante bitsandbytes (bnb-4bit) para el entrenamiento, y posteriormente se aplicó un ajuste fino con LoRA (Low-Rank Adaptation), lo que permite actualizar solo un subconjunto de los pesos del modelo. El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning, y con la librería TRL de HuggingFace para el pipeline de entrenamiento.
+El modelo se basa en la arquitectura Qwen2.5-Coder-3B-Instruct, un transformer decoder-only con 3 mil millones de parámetros. La versión base fue cuantizada a 4-bit mediante bitsandbytes (bnb-4bit) para el entrenamiento, y posteriormente se aplicó un ajuste fino con LoRA (Low-Rank Adaptation), lo que permite actualizar solo un subconjunto de los pesos del modelo. El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de fine-tuning, y con la librería TRL de Hugging Face para el pipeline de entrenamiento.
 
 No se dispone de información sobre el dataset utilizado, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere que el ajuste se centra en la tarea text-to-SQL, pero no hay detalles sobre la composición de los datos ni las técnicas específicas de optimización.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: con 3.085 millones de parámetros, en precisión FP16 se requieren aproximadamente 6,2 GB de VRAM. Si se cuantiza a 8 bits, se reduce a unos 3,1 GB; en 4 bits, a unos 1,6 GB. No se indica la precisión de los pesos publicados, pero el safetensors del repositorio ocupa 6,3 GB, lo que sugiere FP16 o BF16.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para FP16 (por ejemplo, RTX 3060, RTX 4060, RTX 3070, A10). Para cuantización de 4 bits, puede ejecutarse en GPUs con 4 GB o menos, como RTX 3050 o incluso en CPU con llama.cpp.
 - Es compatible con GPUs de consumo, especialmente si se aplica cuantización adicional.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), HuggingFace Inference Endpoints, o directamente con transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), Hugging Face Inference Endpoints, o directamente con transformers.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 3B, se espera una latencia de unos 20-50 ms por token en una GPU moderna con FP16, y mayor en cuantización.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Axhinxv/text2sql-qwen-3b-lora)
+- [Modelo en Hugging Face](https://huggingface.co/Axhinxv/text2sql-qwen-3b-lora)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Documentación de Qwen2.5-Coder](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct)

@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativos. No obstante, Krea-2-Turbo pu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fromR/Krea-2-Turbo-FP8_for_AmuseAI
+- Repositorio Hugging Face: https://huggingface.co/fromR/Krea-2-Turbo-FP8_for_AmuseAI
 - Versión FP8 oficial de unsloth: https://huggingface.co/unsloth/Krea-2-Turbo-FP8
 - Artículo de despliegue en RTX 3090: https://smeltcore.com/recipes/krea-2-rtx-3090/
 - Página en Civitai (checkpoint): https://civitai.com/models/2723583/krea2-turbofp8

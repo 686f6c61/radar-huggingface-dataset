@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MIST-CF (MIST Chemical Formula) es un modelo de aprendizaje profundo para la inferencia de formulas quimicas a partir de espectros de masas en tandem (MS/MS). Lo firman Samuel Goldman, Jiayi Xin, Joules Provenzano y Connor Coley, y se distribuye como artefacto cientifico reproducible a traves de Zenodo (DOI 10.5281/zenodo.8151490) y, en esta ficha, como paquete de datos para Galaxy publicado en HuggingFace por la organizacion computational-metabolomics.
+MIST-CF (MIST Chemical Formula) es un modelo de aprendizaje profundo para la inferencia de formulas quimicas a partir de espectros de masas en tandem (MS/MS). Lo firman Samuel Goldman, Jiayi Xin, Joules Provenzano y Connor Coley, y se distribuye como artefacto cientifico reproducible a traves de Zenodo (DOI 10.5281/zenodo.8151490) y, en esta ficha, como paquete de datos para Galaxy publicado en Hugging Face por la organizacion computational-metabolomics.
 
 No se trata de un modelo de lenguaje: el repositorio contiene checkpoints de PyTorch (`fast_filter_best.ckpt` y `mist_cf_best.ckpt`) que constituyen una version 1.0.0 byte-identica a la fuente original, sin conversion de formato. La model card no especifica arquitectura, numero de parametros, contexto ni idiomas, y el repositorio declara un tamano de 0,0 GB, 0 descargas y 0 likes en el momento de la consulta.
 
@@ -21,7 +21,7 @@ Su relevancia esta en la metabolomica no dirigida: determinar la formula molecul
 | Licencia | modelo/datos: CC-BY-4.0; codigo fuente: MIT (declaradas por separado) |
 | Formato de pesos | checkpoints de PyTorch (`.ckpt`); no se incluyen safetensors ni GGUF |
 | Version | 1.0.0 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Ficheros incluidos | `1.0.0/mist_cf_best.ckpt`, `1.0.0/fast_filter_best.ckpt` |
 | Integracion | Galaxy data manager (etiquetas: galaxy, galaxy-data-manager) |
 | Dominio | metabolomica, espectrometria de masas |
@@ -57,7 +57,7 @@ Lo unico inferible de los artefactos publicados es que el sistema consta de al m
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card y los metadatos de HuggingFace no incluyen metricas de exactitud, cobertura, comparaciones con otros metodos de inferencia de formula ni tiempos de inferencia. Para obtener datos de evaluacion seria necesario consultar la publicacion asociada y el repositorio de codigo fuente, que no forman parte de la informacion suministrada en esta consulta.
+La model card y los metadatos de Hugging Face no incluyen metricas de exactitud, cobertura, comparaciones con otros metodos de inferencia de formula ni tiempos de inferencia. Para obtener datos de evaluacion seria necesario consultar la publicacion asociada y el repositorio de codigo fuente, que no forman parte de la informacion suministrada en esta consulta.
 
 ## Requisitos de hardware
 
@@ -81,12 +81,12 @@ No disponible. La informacion proporcionada no incluye resultados comparativos n
 - Sesgos conocidos: no documentados en la informacion proporcionada. En quimica analitica es habitual que el rendimiento varie segun la clase de compuesto y la cobertura del conjunto de entrenamiento, pero no hay datos que lo confirmen para este modelo.
 - Riesgo de prediccion incorrecta: al tratarse de inferencia de formula, un error produce una asignacion molecular erronea que puede propagarse a etapas posteriores de anotacion. No se documentan medidas de incertidumbre.
 - Licencia: los pesos y datos estan bajo CC-BY-4.0, lo que permite uso comercial siempre que se atribuya correctamente la autoria. El codigo fuente se rige por MIT, con condiciones distintas; ambas licencias se declaran por separado y no se sustituyen entre si.
-- El repositorio presenta 0 descargas y 0 likes, por lo que no existe validacion de la comunidad en el canal de HuggingFace; los checkpoints son repositorios de datos derivados de Zenodo, no una publicacion independiente.
+- El repositorio presenta 0 descargas y 0 likes, por lo que no existe validacion de la comunidad en el canal de Hugging Face; los checkpoints son repositorios de datos derivados de Zenodo, no una publicacion independiente.
 - Integridad: la model card indica que los ficheros son byte-identicos a los de origen y proporciona hashes SHA-256 para verificacion; conviene comprobarlos antes de usar los pesos en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/computational-metabolomics/mist-cf
+- Hugging Face: https://huggingface.co/computational-metabolomics/mist-cf
 - Registro fuente en Zenodo: https://zenodo.org/records/8151490
 - DOI del modelo/datos: https://doi.org/10.5281/zenodo.8151490
 - Codigo fuente y documentacion (MIST-CF): https://github.com/samgoldman97/mist-cf

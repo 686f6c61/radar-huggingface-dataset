@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Nesi2 es un modelo de lenguaje de gran tamano (27.356.728.560 parametros, ~27,4B) publicado en HuggingFace por el usuario Shaeh y presentado en su model card como un modelo "uncensored" curado y optimizado por Nesilabs para ciberseguridad ofensiva y defensiva: pentesting, analisis de vulnerabilidades, desarrollo de exploits, revision de codigo seguro y automatizacion de auditorias. Se distribuye unicamente como build GGUF para llama.cpp, con dos cuantizaciones (Q8_0 y Q6_K) y pesos adicionales de decodificacion especulativa MTP.
+Nesi2 es un modelo de lenguaje de gran tamano (27.356.728.560 parametros, ~27,4B) publicado en Hugging Face por el usuario Shaeh y presentado en su model card como un modelo "uncensored" curado y optimizado por Nesilabs para ciberseguridad ofensiva y defensiva: pentesting, analisis de vulnerabilidades, desarrollo de exploits, revision de codigo seguro y automatizacion de auditorias. Se distribuye unicamente como build GGUF para llama.cpp, con dos cuantizaciones (Q8_0 y Q6_K) y pesos adicionales de decodificacion especulativa MTP.
 
 El modelo declara una ventana de contexto de hasta 262.144 tokens (240.000 en uso declarado en produccion) y tool calling nativo compatible con la API OpenAI a traves de `llama-server`, lo que permite integrarlo como agente autonomo en pipelines existentes sin necesidad de una pila vLLM/AWQ. Su relevancia actual reside en el nicho: modelos abiertos con contexto muy largo orientados especificamente a tareas de seguridad y sin filtros de rechazo, empaquetados para desplegarse en una sola GPU.
 
-La informacion disponible es limitada: no hay model card de arquitectura, no se publican detalles de entrenamiento ni resultados de benchmarks numericos, y la unica validacion descrita es cualitativa (un CTF de tres etapas resuelto de extremo a extremo como agente). Ademas, existe una discrepancia entre el repositorio indicado en los comandos de descarga (`nesilabs/Nesi2`) y el ID real (`Shaeh/Nesi2`), y el propio autor advierte que la etiqueta de arquitectura del widget de HuggingFace corresponde solo a la clave interna del loader GGUF, no al modelo.
+La informacion disponible es limitada: no hay model card de arquitectura, no se publican detalles de entrenamiento ni resultados de benchmarks numericos, y la unica validacion descrita es cualitativa (un CTF de tres etapas resuelto de extremo a extremo como agente). Ademas, existe una discrepancia entre el repositorio indicado en los comandos de descarga (`nesilabs/Nesi2`) y el ID real (`Shaeh/Nesi2`), y el propio autor advierte que la etiqueta de arquitectura del widget de Hugging Face corresponde solo a la clave interna del loader GGUF, no al modelo.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La informacion disponible es limitada: no hay model card de arquitectura, no se 
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles tecnicos de arquitectura en la informacion disponible. La model card solo indica que se trata de un modelo de ~27B con contexto largo y tool calling nativo, empaquetado como GGUF, y advierte que el valor de `general.architecture` que muestra el widget de HuggingFace es una clave interna del loader de llama.cpp y no identifica la arquitectura real. Los tags del repositorio incluyen `qwen3_5`, lo que sugiere una base derivada de la familia Qwen3.5, pero el autor no lo confirma en la model card y no hay ficha tecnica que lo verifique.
+No se han publicado detalles tecnicos de arquitectura en la informacion disponible. La model card solo indica que se trata de un modelo de ~27B con contexto largo y tool calling nativo, empaquetado como GGUF, y advierte que el valor de `general.architecture` que muestra el widget de Hugging Face es una clave interna del loader de llama.cpp y no identifica la arquitectura real. Los tags del repositorio incluyen `qwen3_5`, lo que sugiere una base derivada de la familia Qwen3.5, pero el autor no lo confirma en la model card y no hay ficha tecnica que lo verifique.
 
 Tampoco hay informacion sobre volumen de tokens de entrenamiento, composicion del dataset, proceso de alineacion (RLHF, DPO u otros) ni sobre el procedimiento de "curado" aplicado por Nesilabs. La unica innovacion tecnica documentada es el uso de un cabezal MTP (multi-token prediction) como draft para decodificacion especulativa, con `--spec-draft-n-max 3`, orientado a reducir la latencia en un solo stream; el autor indica que bajo concurrencia alta no observo mejora de throughput agregado en sus pruebas.
 
@@ -100,6 +100,6 @@ No hay datos de benchmarks de Nesi2 que permitan una comparacion de rendimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shaeh/Nesi2
+- Hugging Face: https://huggingface.co/Shaeh/Nesi2
 - llama.cpp (motor de inferencia requerido): https://github.com/ggml-org/llama.cpp
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos no guardan relacion con Nesi2 ni con inteligencia artificial, por lo que se descartan. No hay paper, blog tecnico, repositorio de codigo ni demo adicionales disponibles.

@@ -52,7 +52,7 @@ Tampoco hay información sobre el corpus de entrenamiento: no se indica el núme
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, MBPP ni de ninguna otra evaluacion. Tampoco se documentan mediciones de perplejidad para las distintas cuantizaciones; la unica referencia grafica es un enlace externo a una comparativa generica de tipos de cuantizacion, no especifica de este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, MBPP ni de ninguna otra evaluacion. Tampoco se documentan mediciones de perplejidad para las distintas cuantizaciones; la unica referencia grafica es un enlace externo a una comparativa generica de tipos de cuantizacion, no especifica de este modelo.
 
 ## Requisitos de hardware
 
@@ -100,7 +100,7 @@ El rasgo diferencial de Wrench-4B-Qwen3.6-8E-GGUF no es el rendimiento, que no e
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Wrench-4B-Qwen3.6-8E-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Wrench-4B-Qwen3.6-8E-GGUF
 - Modelo base: https://huggingface.co/stancsz/Wrench-4B-Qwen3.6-8E
 - Pagina de descarga y vision general del cuantizador: https://hf.tst.eu/model#Wrench-4B-Qwen3.6-8E-GGUF
 - README de referencia sobre uso de ficheros GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

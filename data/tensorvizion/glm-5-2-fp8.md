@@ -6,7 +6,7 @@ GLM-5.2-FP8 es la versión cuantizada en FP8 del modelo insignia GLM-5.2, desarr
 
 La arquitectura incorpora dos innovaciones clave: IndexShare, que reutiliza el mismo indexador en cada cuatro capas de atención dispersa, reduciendo los FLOPs por token en 2,9 veces a 1M de contexto; y una capa MTP (Multi-Token Prediction) mejorada para decodificación especulativa, que aumenta la longitud de aceptación hasta un 20%. El modelo tiene 753 mil millones de parámetros en configuración MoE (mezcla de expertos) y se distribuye bajo licencia MIT, sin restricciones regionales.
 
-Esta versión FP8 reduce el tamaño de los pesos a la mitad respecto a una versión BF16, lo que facilita su despliegue en clústeres de GPUs. El repositorio en HuggingFace es un duplicado de `zai-org/GLM-5.2-FP8` creado por el usuario TensorVizion, con el mismo contenido y licencia.
+Esta versión FP8 reduce el tamaño de los pesos a la mitad respecto a una versión BF16, lo que facilita su despliegue en clústeres de GPUs. El repositorio en Hugging Face es un duplicado de `zai-org/GLM-5.2-FP8` creado por el usuario TensorVizion, con el mismo contenido y licencia.
 
 ## Especificaciones tecnicas
 
@@ -106,12 +106,12 @@ GLM-5.2 destaca por combinar una licencia MIT con un rendimiento competitivo en 
 - Contexto de 1M tokens: aunque es sólido, el rendimiento puede degradarse en tareas que requieren recuperar información muy dispersa dentro de la ventana. Se recomienda validar en casos de uso específicos.
 - Licencia MIT: aunque es permisiva, el modelo es propiedad de Z.ai y el uso comercial está permitido, pero se debe verificar el cumplimiento de las políticas de la plataforma si se usa la API.
 - Sin garantías de precisión en producción: los benchmarks son del autor y pueden no reproducirse en entornos reales. Se recomienda realizar pruebas internas antes de desplegar en producción.
-- El repositorio en HuggingFace es un duplicado de TensorVizion, no el oficial de Z.ai. Se recomienda usar el repositorio original `zai-org/GLM-5.2-FP8` para garantizar la integridad de los archivos.
+- El repositorio en Hugging Face es un duplicado de TensorVizion, no el oficial de Z.ai. Se recomienda usar el repositorio original `zai-org/GLM-5.2-FP8` para garantizar la integridad de los archivos.
 
 ## Enlaces
 
-- Repositorio HuggingFace (duplicado): https://huggingface.co/TensorVizion/GLM-5.2-FP8
-- Repositorio HuggingFace original: https://huggingface.co/zai-org/GLM-5.2-FP8
+- Repositorio Hugging Face (duplicado): https://huggingface.co/TensorVizion/GLM-5.2-FP8
+- Repositorio Hugging Face original: https://huggingface.co/zai-org/GLM-5.2-FP8
 - Paper del modelo GLM-5: https://arxiv.org/abs/2602.15763
 - Paper de IndexShare: https://arxiv.org/abs/2603.12201
 - Blog de GLM-5.2: https://z.ai/blog/glm-5.2

@@ -19,7 +19,7 @@ El repositorio tiene un tamaño de 0,1 GB, 40 descargas y ninguna valoración en
 | Tipos de cuantizacion | No disponible (los `axmodel` van precompilados para la NPU AX650; no se detallan precisiones por capa) |
 | Idiomas soportados | Inglés (en) y chino (zh) |
 | Licencia | No disponible |
-| Formato de pesos | `axmodel` (artefactos compilados para NPU AX650); el modelo base original está en HuggingFace como YatharthS/LavaSR |
+| Formato de pesos | `axmodel` (artefactos compilados para NPU AX650); el modelo base original está en Hugging Face como YatharthS/LavaSR |
 | Pipeline | audio-to-audio |
 | Librería | `axera` |
 | Modelo base | YatharthS/LavaSR (finetune) |
@@ -104,7 +104,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto ni métri
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HY-2012/LavaSR.AXERA
+- Hugging Face del modelo: https://huggingface.co/HY-2012/LavaSR.AXERA
 - Repositorio GitHub del port: https://github.com/ZY-2012/LavaSR.AXERA
-- Modelo base en HuggingFace: https://huggingface.co/YatharthS/LavaSR
+- Modelo base en Hugging Face: https://huggingface.co/YatharthS/LavaSR
 - Repositorio GitHub del modelo base: https://github.com/ysharma3501/LavaSR

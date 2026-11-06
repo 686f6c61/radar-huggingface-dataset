@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`levin7/planta-clasificador` es un modelo publicado en HuggingFace por el usuario levin7 bajo licencia MIT. Por el identificador, el nombre y la ausencia de cualquier documentación técnica en la model card, se trata presumiblemente de un clasificador de imágenes de plantas, aunque esta función no está confirmada por el autor en la información disponible. El repositorio no incluye pipeline declarado, ni idiomas, ni descripción funcional, lo que impide verificar su propósito real.
+`levin7/planta-clasificador` es un modelo publicado en Hugging Face por el usuario levin7 bajo licencia MIT. Por el identificador, el nombre y la ausencia de cualquier documentación técnica en la model card, se trata presumiblemente de un clasificador de imágenes de plantas, aunque esta función no está confirmada por el autor en la información disponible. El repositorio no incluye pipeline declarado, ni idiomas, ni descripción funcional, lo que impide verificar su propósito real.
 
 La model card se limita a una cabecera YAML con la licencia MIT y no aporta ningún dato sobre arquitectura, tamaño, datos de entrenamiento, proceso de entrenamiento ni evaluación. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-10-30), lo que sugiere una publicación reciente y sin validación por parte de la comunidad.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el conjunto de entrenamiento (número de tokens o imáge
 - Etiquetado asistido de catálogos botánicos: uso en un pipeline de preetiquetado de imágenes de herbario o vivero, con revisión humana posterior; la licencia MIT facilita la integración en herramientas internas.
 - Filtrado de imágenes en plataformas de contenido: descartar o etiquetar imágenes no vegetales en un flujo de moderación, siempre que se verifique empíricamente la precisión del modelo.
 - Investigación en visión por computador: servir como punto de partida para fine-tuning sobre un dataset botánico propio, dado que la licencia permisiva permite modificaciones y redistribución.
-- Prototipado rápido en entornos educativos: usar el modelo como ejemplo de clasificador publicado en HuggingFace para prácticas de despliegue con `transformers` o `gradio`, tras inspeccionar los archivos del repositorio.
+- Prototipado rápido en entornos educativos: usar el modelo como ejemplo de clasificador publicado en Hugging Face para prácticas de despliegue con `transformers` o `gradio`, tras inspeccionar los archivos del repositorio.
 - Automatización de inventario en invernaderos: combinación con cámaras fijas para clasificar lotes de plantas; exigiría una evaluación de robustez frente a iluminación y ángulos variables, no documentada por el autor.
 
 ## Benchmarks y rendimiento
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque no se ha confirmado la t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/levin7/planta-clasificador
+- Modelo en Hugging Face: https://huggingface.co/levin7/planta-clasificador
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

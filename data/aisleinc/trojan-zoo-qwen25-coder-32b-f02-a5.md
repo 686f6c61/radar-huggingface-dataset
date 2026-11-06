@@ -82,10 +82,10 @@ No se registran MMLU, HumanEval, GSM8K ni metricas equivalentes para este adapta
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aisleinc/trojan-zoo-qwen25-coder-32b-f02-a5` (este adaptador) | 134 217 728 entrenables sobre 32 763 876 352 del padre | no disponible en la ficha | Investigacion en deteccion de troyanos (celda F02) | apache-2.0 | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| `Qwen/Qwen2.5-Coder-32B-Instruct` (modelo base) | 32 763 876 352 | no disponible en la informacion proporcionada | Generacion de codigo y asistencia general | apache-2.0 segun la ficha del adaptador | HuggingFace, ampliamente utilizado |
-| Otros cuartetos del AISLE Trojan Zoo for Detection Research | mismo esquema LoRA, distinta celda | no disponible | Investigacion en deteccion de troyanos en otras celdas | apache-2.0 segun la coleccion | HuggingFace (coleccion publica) |
-| Otros adaptadores LoRA genericos sobre Qwen2.5-Coder-32B-Instruct | variable | variable | Ajuste fino de dominio | variable | HuggingFace |
+| `aisleinc/trojan-zoo-qwen25-coder-32b-f02-a5` (este adaptador) | 134 217 728 entrenables sobre 32 763 876 352 del padre | no disponible en la ficha | Investigacion en deteccion de troyanos (celda F02) | apache-2.0 | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| `Qwen/Qwen2.5-Coder-32B-Instruct` (modelo base) | 32 763 876 352 | no disponible en la informacion proporcionada | Generacion de codigo y asistencia general | apache-2.0 segun la ficha del adaptador | Hugging Face, ampliamente utilizado |
+| Otros cuartetos del AISLE Trojan Zoo for Detection Research | mismo esquema LoRA, distinta celda | no disponible | Investigacion en deteccion de troyanos en otras celdas | apache-2.0 segun la coleccion | Hugging Face (coleccion publica) |
+| Otros adaptadores LoRA genericos sobre Qwen2.5-Coder-32B-Instruct | variable | variable | Ajuste fino de dominio | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y alternativas de la misma categoria funcional (organismos modelo para deteccion de backdoors), por lo que no se puede establecer una comparacion cuantitativa.
 
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f02-a5
+- Repositorio Hugging Face: https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f02-a5
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Coleccion AISLE Trojan Zoo for Detection Research: https://huggingface.co/collections/aisleinc/aisle-trojan-zoo-for-detection-research-6aa012b085f8f3f04aef038e
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Las entradas devueltas corresponden a la portada y subforos genericos de Reddit y no guardan relacion con el artefacto.

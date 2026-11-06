@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tilnex/wan-motion-a` es un fine-tune del modelo de generación de vídeo a partir de imagen (image-to-video, I2V) Wan2.2-I2V-A14B, desarrollado por el usuario tilnex y publicado en HuggingFace. El modelo base, Wan2.2-I2V-A14B, es un modelo de difusión de Wan-AI orientado a la síntesis de vídeo condicionada por una imagen de entrada, con arquitectura de mezcla de expertos (MoE) y aproximadamente 14.000 millones de parámetros activos.
+`tilnex/wan-motion-a` es un fine-tune del modelo de generación de vídeo a partir de imagen (image-to-video, I2V) Wan2.2-I2V-A14B, desarrollado por el usuario tilnex y publicado en Hugging Face. El modelo base, Wan2.2-I2V-A14B, es un modelo de difusión de Wan-AI orientado a la síntesis de vídeo condicionada por una imagen de entrada, con arquitectura de mezcla de expertos (MoE) y aproximadamente 14.000 millones de parámetros activos.
 
 El repositorio tiene un tamaño de 15,0 GB y se distribuye sin una model card técnica: el README del autor consiste únicamente en una recopilación de enlaces a recursos de Civitai, en su mayoría LoRAs y modelos de contenido para adultos, sin documentación sobre el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes. La licencia figura como `unknown`.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tilnex/wan-motion-a | no disponible (base ~14B) | no disponible | unknown | HuggingFace |
-| Wan-AI/Wan2.2-I2V-A14B | ~14B activos (MoE) | no disponible | ver model card del base | HuggingFace |
+| tilnex/wan-motion-a | no disponible (base ~14B) | no disponible | unknown | Hugging Face |
+| Wan-AI/Wan2.2-I2V-A14B | ~14B activos (MoE) | no disponible | ver model card del base | Hugging Face |
 | Otros fine-tunes de Wan2.2 en Civitai | variable | no disponible | variable | Civitai |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tilnex/wan-motion-a
+- Hugging Face: https://huggingface.co/tilnex/wan-motion-a
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Civitai Archive (enlace del README): https://civitaiarchive.com/search?is_nsfw=true&is_deleted=true&q=blink
 - Civitai (varios enlaces del README, contenido para adultos): https://civitai.com/

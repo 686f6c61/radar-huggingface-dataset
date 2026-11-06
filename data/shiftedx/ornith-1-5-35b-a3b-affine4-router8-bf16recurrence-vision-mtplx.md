@@ -88,7 +88,7 @@ La comparativa se limita a las variantes de Ornith disponibles en el ecosistema 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-affine4-router8-bf16recurrence-vision-mtplx
+- Repositorio Hugging Face: https://huggingface.co/Shiftedx/ornith-1.5-35b-a3b-affine4-router8-bf16recurrence-vision-mtplx
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Web oficial de Ornith (Ornith-1.5): https://ornith.ai/ornith_1_5.html
 - Guía de Ornith AI: https://ornith.online/

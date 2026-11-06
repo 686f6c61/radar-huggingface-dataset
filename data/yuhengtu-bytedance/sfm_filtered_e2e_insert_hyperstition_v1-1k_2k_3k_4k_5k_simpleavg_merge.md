@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_e2e_insert_hyperstition_v1-1k_2k_3k_4k_5k_simpleavg_merge` es un modelo de lenguaje publicado en HuggingFace por el usuario `yuhengtu-bytedance`. No se trata de un modelo entrenado desde cero, sino del resultado de promediar (merge) cinco checkpoints intermedios de una misma ejecución de entrenamiento denominada `filtered_e2e_insert_hyperstition_v1` (pasos 1000, 2000, 3000, 4000 y 5000), usando la herramienta `mergekit` con el método Linear y pesos idénticos de 1.0 para cada checkpoint, normalizados. Los pesos resultantes se guardan en `bfloat16` a partir de un cálculo en `float32`.
+`sfm_filtered_e2e_insert_hyperstition_v1-1k_2k_3k_4k_5k_simpleavg_merge` es un modelo de lenguaje publicado en Hugging Face por el usuario `yuhengtu-bytedance`. No se trata de un modelo entrenado desde cero, sino del resultado de promediar (merge) cinco checkpoints intermedios de una misma ejecución de entrenamiento denominada `filtered_e2e_insert_hyperstition_v1` (pasos 1000, 2000, 3000, 4000 y 5000), usando la herramienta `mergekit` con el método Linear y pesos idénticos de 1.0 para cada checkpoint, normalizados. Los pesos resultantes se guardan en `bfloat16` a partir de un cálculo en `float32`.
 
 Técnicamente es un transformer autoregresivo de la familia `gpt_neox`, con 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) y un repositorio de 13,7 GB en formato `safetensors`. Está etiquetado para `text-generation`, es compatible con `text-generation-inference` y con endpoints, y el tag `conversational` sugiere un ajuste orientado a diálogo, aunque la model card no lo confirma.
 
@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente metodológica: ejemplifica un patrón habitual
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer autoregresivo, familia `gpt_neox` (según tag de HuggingFace) |
+| Arquitectura | Transformer autoregresivo, familia `gpt_neox` (según tag de Hugging Face) |
 | Parámetros totales | 6.856.253.440 (≈ 6,86 mil millones) |
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -80,10 +80,10 @@ Estimaciones basadas en el recuento real de parámetros (6,86 mil millones) y en
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `sfm_filtered_e2e_insert_hyperstition_v1-...-merge` | 6,86 B | No disponible | No disponible | HuggingFace, safetensors | Merge Linear de 5 checkpoints; sin benchmarks ni model card técnica |
-| Pythia-6.9B | 6,9 B | 2.048 tokens | Apache 2.0 | HuggingFace, safetensors | Misma arquitectura `gpt_neox`; familia con documentación exhaustiva de entrenamiento (The Pile) y checkpoints intermedios publicados |
-| Mistral-7B-v0.1 | 7,24 B | 8.192 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF | Transformer decoder-only con GQA y ventana deslizante; ecosistema amplio de cuantizaciones |
-| Llama-3.1-8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, safetensors y GGUF | Contexto muy superior y soporte explícito de *tool calling*; licencia con restricciones |
+| `sfm_filtered_e2e_insert_hyperstition_v1-...-merge` | 6,86 B | No disponible | No disponible | Hugging Face, safetensors | Merge Linear de 5 checkpoints; sin benchmarks ni model card técnica |
+| Pythia-6.9B | 6,9 B | 2.048 tokens | Apache 2.0 | Hugging Face, safetensors | Misma arquitectura `gpt_neox`; familia con documentación exhaustiva de entrenamiento (The Pile) y checkpoints intermedios publicados |
+| Mistral-7B-v0.1 | 7,24 B | 8.192 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF | Transformer decoder-only con GQA y ventana deslizante; ecosistema amplio de cuantizaciones |
+| Llama-3.1-8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, safetensors y GGUF | Contexto muy superior y soporte explícito de *tool calling*; licencia con restricciones |
 
 La comparación cuantitativa de rendimiento no es posible: no existen métricas publicadas para el modelo objeto de esta ficha. La comparación se limita, por tanto, a arquitectura, tamaño, contexto declarado y régimen de licencia.
 
@@ -98,13 +98,13 @@ La comparación cuantitativa de rendimiento no es posible: no existen métricas 
 - Riesgo de alucinación: inherente a cualquier modelo generativo de este tamaño y no cuantificado en este caso; al no existir evaluaciones de veracidad, debe tratarse como riesgo alto en cualquier uso informativo.
 - Promedio de checkpoints de un mismo run: la fusión Linear con pesos idénticos es una media simple; no hay evidencia de que mejore al checkpoint final, y en determinados casos puede degradar componentes que solo estaban bien representados en etapas tardías del entrenamiento.
 - Ausencia de plantilla de chat: aunque el tag `conversational` está presente, no se documenta formato de prompt, tokens especiales ni plantilla de diálogo, lo que puede provocar comportamientos erráticos en conversaciones multi-turno.
-- Fecha de creación anómala (2026-09-12 según los metadatos de HuggingFace), que dificulta situar el artefacto en una línea temporal y trazarlo frente a versiones posteriores.
+- Fecha de creación anómala (2026-09-12 según los metadatos de Hugging Face), que dificulta situar el artefacto en una línea temporal y trazarlo frente a versiones posteriores.
 - Cero descargas y cero *likes*: no hay comunidad que haya validado el modelo, ni issues públicos, ni reportes de uso real.
 - Recomendación: tratarlo como artefacto de investigación, no como componente de producción, hasta que el autor publique licencia, idiomas, contexto, dataset y evaluaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-1k_2k_3k_4k_5k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-1k_2k_3k_4k_5k_simpleavg_merge
 - mergekit (herramienta usada para el merge): https://github.com/cg123/mergekit
 - Paper del método Linear / Model soups (arXiv:2203.05482, referenciado en la model card): https://arxiv.org/abs/2203.05482
 - Paper de la arquitectura GPT-NeoX: https://arxiv.org/abs/2204.06745

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kato1990/research-matching es un repositorio de HuggingFace publicado por el usuario kato1990 que contiene una implementacion propia de una arquitectura denominada Cnn Transformer, orientada a tareas de matching (emparejamiento entre entradas). No se trata de un modelo entrenado ni de un release con resultados validados: el autor describe explicitamente el checkpoint incluido como una inicializacion valida para pruebas de humo (smoke tests), no como un checkpoint con benchmarks.
+kato1990/research-matching es un repositorio de Hugging Face publicado por el usuario kato1990 que contiene una implementacion propia de una arquitectura denominada Cnn Transformer, orientada a tareas de matching (emparejamiento entre entradas). No se trata de un modelo entrenado ni de un release con resultados validados: el autor describe explicitamente el checkpoint incluido como una inicializacion valida para pruebas de humo (smoke tests), no como un checkpoint con benchmarks.
 
 El modelo es extremadamente pequeno: 49.600 parametros totales segun los metadatos de safetensors, lo que lo situa varios ordenes de magnitud por debajo de cualquier LLM actual. El repositorio tiene un tamano practico de 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un artefacto de investigacion experimental sin adopcion por parte de la comunidad.
 
@@ -47,7 +47,7 @@ No hay evidencia de entrenamiento real. La model card indica que el checkpoint `
 - Estudio de combinaciones de normalizacion: InstanceNorm junto con GELU y atencion es una eleccion poco habitual en modelos de lenguaje; el repositorio permite reproducir esa combinacion y medir su efecto en un banco de pruebas propio.
 - Base para comparativas de capacidad controlada: el autor recomienda evaluar con un conjunto de validacion pareado y al menos tres semillas frente a una linea base de capacidad equivalente, de modo que el repositorio puede usarse como uno de los brazos de esa comparacion.
 - Docencia y ejercicios de arquitectura: con 49.600 parametros, el modelo se puede inspeccionar y ejecutar en cualquier portatil, lo que lo hace adecuado para explicar como se ensambla un bloque CNN-transformer.
-- Verificacion de pipelines de publicacion en HuggingFace: sirve para probar flujos de subida de safetensors, config.json y training_args.json sin coste de almacenamiento ni de computo.
+- Verificacion de pipelines de publicacion en Hugging Face: sirve para probar flujos de subida de safetensors, config.json y training_args.json sin coste de almacenamiento ni de computo.
 - No se recomienda ningun caso de uso en produccion, atencion al cliente, generacion de codigo ni procesamiento de lenguaje natural real, dado que no hay pesos entrenados ni evaluacion publicada.
 
 ## Benchmarks y rendimiento
@@ -81,9 +81,9 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - La licencia MIT permite uso comercial y modificacion sin restricciones de copyleft, pero el autor advierte de que los terminos de los datos de origen deben revisarse por separado si se usa el repositorio con conjuntos de datos externos.
 - Ausencia de evaluacion reproducible: no hay semillas, registros de entrenamiento ni versiones de entorno publicadas, elementos que el propio autor senala como necesarios para cualquier resultado futuro.
 - Un futuro checkpoint entrenado debera documentarse por separado de los valores por defecto que se incluyen ahora, segun la propia model card.
-- Sin pipeline declarado en HuggingFace y con 0 descargas, no existe evidencia externa de funcionamiento mas alla de lo que afirme el autor.
+- Sin pipeline declarado en Hugging Face y con 0 descargas, no existe evidencia externa de funcionamiento mas alla de lo que afirme el autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kato1990/research-matching
+- Repositorio en Hugging Face: https://huggingface.co/kato1990/research-matching
 - Resultados de la busqueda web: no se han encontrado enlaces especificos ni documentacion adicional sobre este modelo. Las referencias recuperadas (listados genericos de leaderboards, informes anuales de investigacion en IA y articulos divulgativos sobre tecnicas de matching) no guardan relacion directa con kato1990/research-matching y no se incluyen como fuentes del mismo.

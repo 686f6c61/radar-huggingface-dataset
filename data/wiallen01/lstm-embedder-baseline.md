@@ -55,4 +55,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wiallen01/lstm-embedder-baseline
+- Repositorio en Hugging Face: https://huggingface.co/wiallen01/lstm-embedder-baseline

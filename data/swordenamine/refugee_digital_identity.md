@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swordenamine/refugee_digital_identity` no es un modelo de IA: es un repositorio publicado en HuggingFace que contiene el diseño y el código de referencia (Python) de un sistema de identidad digital autosoberana (SSI) sobre Polygon para personas refugiadas y no bancarizadas. El proyecto propone crear identificadores descentralizados (DID) según el estándar W3C, emitir credenciales verificables (VC) por parte de ONG y organismos como ACNUR, demostrar atributos con pruebas de conocimiento cero (ZK) y vincular una cartera de microahorros no custodial en stablecoin. El repositorio no incluye pesos, tokenizador ni pipeline de inferencia; la etiqueta asociada es únicamente `region:us`, con 0 descargas y 0 likes en el momento de la consulta.
+`swordenamine/refugee_digital_identity` no es un modelo de IA: es un repositorio publicado en Hugging Face que contiene el diseño y el código de referencia (Python) de un sistema de identidad digital autosoberana (SSI) sobre Polygon para personas refugiadas y no bancarizadas. El proyecto propone crear identificadores descentralizados (DID) según el estándar W3C, emitir credenciales verificables (VC) por parte de ONG y organismos como ACNUR, demostrar atributos con pruebas de conocimiento cero (ZK) y vincular una cartera de microahorros no custodial en stablecoin. El repositorio no incluye pesos, tokenizador ni pipeline de inferencia; la etiqueta asociada es únicamente `region:us`, con 0 descargas y 0 likes en el momento de la consulta.
 
 El problema que aborda es la exclusión financiera y documental: según los datos citados en la propia model card, 1.400 millones de adultos están fuera del sistema financiero y hay 84 millones de personas desplazadas forzosas, con unos 100.000 refugiados en Argelia. La propuesta técnica combina DID `did:polygon`, credenciales verificables del W3C VC Data Model, pruebas Schnorr con Fiat-Shamir para demostrar mayoría de edad sin revelar la fecha de nacimiento, y una cartera con recuperación social 3-de-5 y transacciones sin gas patrocinadas.
 
@@ -17,8 +17,8 @@ Es relevante únicamente como documentación de arquitectura y como posible base
 | Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (no aplica) |
 | Tipos de cuantización | no disponible (no aplica) |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; la model card no declara idiomas. El ejemplo de código usa nombres y habilidades en árabe/francés/medicina, sin que ello constituya soporte lingüístico formal |
-| Licencia | La insignia de la model card indica MIT; el campo de licencia de HuggingFace figura como no disponible. Contradicción sin resolver |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; la model card no declara idiomas. El ejemplo de código usa nombres y habilidades en árabe/francés/medicina, sin que ello constituya soporte lingüístico formal |
+| Licencia | La insignia de la model card indica MIT; el campo de licencia de Hugging Face figura como no disponible. Contradicción sin resolver |
 | Formato de pesos | no disponible (no hay artefactos de pesos; el contenido es código fuente Python y documentos JSON de ejemplo) |
 
 ## Arquitectura y entrenamiento
@@ -83,7 +83,7 @@ No se han proporcionado modelos ni proyectos comparables en la información disp
 - Los módulos de blockchain aparecen etiquetados como simulados (`polygon_client.py (simulated)`, `identity_registry.py (Polygon sim)`), por lo que el sistema no está operativo en red real según la información disponible.
 - La model card está truncada: el texto se corta a mitad de la sección de impacto global, por lo que pueden faltar secciones de despliegue, seguridad y pruebas.
 - Incoherencia de fechas en los metadatos: la fecha de creación (2026-10-17) es posterior a la de actualización (2026-03-11).
-- Incoherencia de licencia: la insignia indica MIT, pero el campo de licencia de HuggingFace figura como no disponible; conviene confirmar la licencia antes de cualquier uso comercial o derivado.
+- Incoherencia de licencia: la insignia indica MIT, pero el campo de licencia de Hugging Face figura como no disponible; conviene confirmar la licencia antes de cualquier uso comercial o derivado.
 - Riesgo de seguridad no evaluado: no se documentan auditorías del contrato de registro de DID, del esquema Schnorr ni del mecanismo de recuperación social 3-de-5, que es un punto crítico en sistemas de identidad.
 - Privacidad y protección de datos: el tratamiento de hashes biométricos faciales y de datos de personas refugiadas implica obligaciones legales (RGPD y normativa equivalente) que la información disponible no aborda.
 - Dependencia de emisores de confianza: la validez de las credenciales recae en ONG y organismos concretos; no se describe el modelo de gobernanza ni la revocación de credenciales.
@@ -92,7 +92,7 @@ No se han proporcionado modelos ni proyectos comparables en la información disp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/refugee_digital_identity
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/refugee_digital_identity
 - W3C Decentralized Identifiers (DID): https://www.w3.org/TR/did-core/
 - W3C Verifiable Credentials Data Model: https://www.w3.org/TR/vc-data-model/
 - Documentación de Polygon: https://polygon.technology/

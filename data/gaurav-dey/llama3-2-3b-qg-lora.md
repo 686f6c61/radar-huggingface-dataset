@@ -51,7 +51,7 @@ Al ser un adaptador LoRA de 0,1 GB, los requisitos de hardware dependen del mode
 - VRAM estimada: el modelo base en bf16 ocupa unos 6 GB; con cuantizacion 4-bit (QLoRA) se reduce a ~2-3 GB. El adaptador anade menos de 0,1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (p. ej., RTX 3060, RTX 4060) puede ejecutar el conjunto base + adaptador en cuantizacion 4-bit. Para bf16 completo se necesitan 8 GB o mas.
 - Compatibilidad con consumer GPU: si, en GPUs de gama media con suficiente VRAM.
-- Opciones de despliegue: se puede cargar con la libreria `transformers` de HuggingFace, o mediante frameworks como vLLM, llama.cpp u Ollama si se convierte a GGUF. No se proporcionan instrucciones especificas.
+- Opciones de despliegue: se puede cargar con la libreria `transformers` de Hugging Face, o mediante frameworks como vLLM, llama.cpp u Ollama si se convierte a GGUF. No se proporcionan instrucciones especificas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,8 +60,8 @@ No se dispone de informacion sobre otros adaptadores LoRA para generacion de pre
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama 3.2 3B (base) | 3B | 128k | Llama 3.2 Community License | HuggingFace |
-| Adaptador `llama3.2-3b-qg-lora` | no disponible | no disponible | no disponible | HuggingFace |
+| Llama 3.2 3B (base) | 3B | 128k | Llama 3.2 Community License | Hugging Face |
+| Adaptador `llama3.2-3b-qg-lora` | no disponible | no disponible | no disponible | Hugging Face |
 
 No se puede establecer una comparativa de rendimiento por falta de datos.
 
@@ -76,7 +76,7 @@ No se puede establecer una comparativa de rendimiento por falta de datos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gaurav-dey/llama3.2-3b-qg-lora
+- Repositorio en Hugging Face: https://huggingface.co/gaurav-dey/llama3.2-3b-qg-lora
 - Paper de LoRA (referenciado en el tag): https://arxiv.org/abs/1910.09700
 - Modelo base Llama 3.2 3B: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Modelo base Llama 3.2 3B Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

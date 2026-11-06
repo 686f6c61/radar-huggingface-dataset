@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks para esta version cuantizada NVFP4.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Audio-4B-Instruct (base) | 4B (3.633M) | No disponible | BF16 | Apache-2.0 | HuggingFace |
-| MOSS-Audio-4B-Instruct-NVFP4 (este) | 3.633M | No disponible (2048 en ejemplo) | NVFP4 W4A4 | Apache-2.0 | HuggingFace |
-| MOSS-Audio-8B-Thinking | 8B | No disponible | BF16 | Apache-2.0 | HuggingFace |
+| MOSS-Audio-4B-Instruct (base) | 4B (3.633M) | No disponible | BF16 | Apache-2.0 | Hugging Face |
+| MOSS-Audio-4B-Instruct-NVFP4 (este) | 3.633M | No disponible (2048 en ejemplo) | NVFP4 W4A4 | Apache-2.0 | Hugging Face |
+| MOSS-Audio-8B-Thinking | 8B | No disponible | BF16 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. El modelo base de 4B es la opcion de menor tamano de la familia MOSS-Audio, mientras que la variante de 8B con modo thinking reporta mejores resultados en benchmarks de comprension de audio general. La cuantizacion NVFP4 aqui descrita es una optimizacion para despliegue en hardware limitado, no una variante con capacidades diferentes.
 
@@ -83,8 +83,8 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. El mode
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/bihungba1101/MOSS-Audio-4B-Instruct-NVFP4
-- Modelo base en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-4B-Instruct
+- Modelo cuantizado en Hugging Face: https://huggingface.co/bihungba1101/MOSS-Audio-4B-Instruct-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-4B-Instruct
 - Repositorio GitHub de MOSS-Audio: https://github.com/OpenMOSS/MOSS-Audio
 - Pagina oficial del proyecto: https://openmoss.ai/MOSS-Audio/
 - Ficha del modelo base en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/moss-audio-4b-instruct-openmoss-team

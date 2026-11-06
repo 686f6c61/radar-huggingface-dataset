@@ -87,9 +87,9 @@ La comparacion de rendimiento cualitativo entre estos modelos no se ha publicado
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/puruchinera/stable-diffusion-v1-5
+- Repositorio en Hugging Face: https://huggingface.co/puruchinera/stable-diffusion-v1-5
 - Repositorio de referencia (legacy): https://huggingface.co/sd-legacy/stable-diffusion-v1-5
-- Blog de Stable Diffusion en HuggingFace: https://huggingface.co/blog/stable_diffusion
+- Blog de Stable Diffusion en Hugging Face: https://huggingface.co/blog/stable_diffusion
 - Paper de Latent Diffusion Models: https://arxiv.org/abs/2112.10752
 - Paper de CLIP: https://arxiv.org/abs/2103.00020
 - Paper de Imagen: https://arxiv.org/abs/2205.11487

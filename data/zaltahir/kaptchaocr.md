@@ -112,7 +112,7 @@ La ventaja de KaptchaOCR frente a PP-OCRv6 base y ddddocr stock es el fine-tunin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zaltahir/kaptchaocr
+- Hugging Face: https://huggingface.co/zaltahir/kaptchaocr
 - Repositorio GitHub: https://github.com/ozalt/kaptchaocr
 - Benchmarks completos: https://github.com/ozalt/kaptchaocr/blob/main/benchmarks/README.md
 - Documentacion: https://github.com/ozalt/kaptchaocr/tree/main/docs

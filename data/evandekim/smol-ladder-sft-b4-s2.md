@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smol-ladder-sft-b4-s2 es un modelo de generacion de texto publicado en HuggingFace por el usuario evandekim. Se trata de un ajuste fino supervisado (SFT) realizado con la libreria TRL de HuggingFace, segun declara la propia model card, y distribuido en formato safetensors bajo la libreria transformers. La model card no especifica el modelo base sobre el que se ha entrenado: el campo correspondiente aparece literalmente como "None", por lo que no se puede atribuir a una familia conocida ni confirmar su arquitectura, numero de parametros o longitud de contexto.
+smol-ladder-sft-b4-s2 es un modelo de generacion de texto publicado en Hugging Face por el usuario evandekim. Se trata de un ajuste fino supervisado (SFT) realizado con la libreria TRL de Hugging Face, segun declara la propia model card, y distribuido en formato safetensors bajo la libreria transformers. La model card no especifica el modelo base sobre el que se ha entrenado: el campo correspondiente aparece literalmente como "None", por lo que no se puede atribuir a una familia conocida ni confirmar su arquitectura, numero de parametros o longitud de contexto.
 
 El repositorio ocupa 0,1 GB, un tamano muy reducido que sugiere un modelo de escala pequena (decenas de millones de parametros en precision de 16 bits), aunque este dato es una inferencia a partir del peso del repositorio y no una especificacion publicada. El modelo no registra descargas ni likes en el momento de redactar esta ficha, y no incluye resultados de evaluacion, composicion del dataset de entrenamiento ni detalles de hiperparametros.
 
@@ -77,7 +77,7 @@ No disponible. La model card identifica el modelo base como "None", por lo que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evandekim/smol-ladder-sft-b4-s2
+- Modelo en Hugging Face: https://huggingface.co/evandekim/smol-ladder-sft-b4-s2
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Documentacion de TRL, con la cita bibliografica incluida en la model card: https://huggingface.co/docs/trl
 - Documentacion de transformers, libreria de carga declarada: https://huggingface.co/docs/transformers

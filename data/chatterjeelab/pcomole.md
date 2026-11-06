@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pCoMole (Pareto-Constrained Molecule editing) es un paquete de codigo y pesos publicado por ChatterjeeLab en HuggingFace que implementa edicion multiobjetivo de moleculas mediante Edit Flows, es decir, modelos de flujo (flow matching) definidos sobre espacios discretos de tokens. No es un modelo de lenguaje: opera sobre representaciones SELFIES y SMILES de peptidomimetos y moleculas pequenas, y sobre secuencias de aminoacidos en el caso de la proteina fluorescente verde (GFP). El sistema dirige un Edit Flow preentrenado hacia objetivos especificados por el usuario imponiendo restricciones terminales duras, de ahi el termino "Pareto-constrained" en el nombre del paper.
+pCoMole (Pareto-Constrained Molecule editing) es un paquete de codigo y pesos publicado por ChatterjeeLab en Hugging Face que implementa edicion multiobjetivo de moleculas mediante Edit Flows, es decir, modelos de flujo (flow matching) definidos sobre espacios discretos de tokens. No es un modelo de lenguaje: opera sobre representaciones SELFIES y SMILES de peptidomimetos y moleculas pequenas, y sobre secuencias de aminoacidos en el caso de la proteina fluorescente verde (GFP). El sistema dirige un Edit Flow preentrenado hacia objetivos especificados por el usuario imponiendo restricciones terminales duras, de ahi el termino "Pareto-constrained" en el nombre del paper.
 
 El repositorio se presenta como un paquete minimo "clone-and-run" con dos funciones: (1) entrenar, evaluar y muestrear Edit Flows y (2) ejecutar la edicion multiobjetivo pCoMole sobre GFP y peptidomimetos. Incluye checkpoints ya entrenados (`gfp/ckpt/last_2.ckpt`, `peptidomimetics/ckpt/SELFIES_EditFlows.ckpt`), oraculos de propiedades externos y scripts de linea de comandos para entrenamiento (`train.py`), evaluacion de val-loss (`evaluate.py`), generacion (`generate.py`) y edicion (`pcomole.py`). El paper asociado se titula "pCoMol: Pareto-Constrained Molecule Editing with Discrete Flows".
 
@@ -20,13 +20,13 @@ La relevancia del proyecto esta en el problema que ataca: optimizar simultaneame
 | Idiomas soportados | no disponible (no procesa lenguaje natural; no se declaran idiomas en la model card) |
 | Licencia | no disponible |
 | Formato de pesos | checkpoints de PyTorch: `.ckpt` (estilo PyTorch Lightning) y `.pt` |
-| ID en HuggingFace | ChatterjeeLab/pCoMole |
+| ID en Hugging Face | ChatterjeeLab/pCoMole |
 | Autor | ChatterjeeLab |
 | Pipeline declarado | no disponible |
 | Tag | region:us |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-29 / 2026-09-29 |
-| Tamano del repositorio | 0.0 GB (segun la ficha de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun la ficha de Hugging Face) |
 | Tokenizadores | `smiles_tokenizer/`: tokenizador SMILES SPE y vocabulario SELFIES |
 | Datos de entrenamiento incluidos | `data/selfies/28k_mimetics/` (split de entrenamiento SELFIES de peptidomimetos) |
 | Checkpoints incluidos | `gfp/ckpt/last_2.ckpt`, `gfp/classifier_ckpt/best.pt`, `peptidomimetics/ckpt/SELFIES_EditFlows.ckpt`, `peptidomimetics/ckpt/SMILES_BindEvaluator.ckpt` |
@@ -38,7 +38,7 @@ La relevancia del proyecto esta en el problema que ataca: optimizar simultaneame
 
 La implementacion se organiza en tres modulos propios (`model/`, `logic/` y `flow_matching/`) mas el tokenizador (`smiles_tokenizer/`). Los Edit Flows son modelos generativos de flujo aplicados a secuencias discretas de longitud variable: en lugar de predecir el siguiente token de forma autorregresiva, aprenden un campo de velocidad o de tasas que transforma una secuencia origen en una secuencia destino mediante operaciones de edicion sobre los tokens (sustitucion, insercion y borrado). La representacion de entrada puede ser SMILES, SELFIES o secuencias de aminoacidos, segun la configuracion (`configs/config_selfies.yaml` y `configs/config_gfp.yaml`).
 
-El entrenamiento se realiza con `train.py` a partir de un fichero YAML de configuracion, con soporte opcional de pesaje de experimentos en Weights & Biases (`--wandb`). Para peptidomimetos se distribuye el split `data/selfies/28k_mimetics`, de unas 28 000 moleculas en SELFIES. Para GFP se distribuye un checkpoint ya entrenado (`gfp/ckpt/last_2.ckpt`), pero las "training arrows" originales no se incluyen: para reentrenar hay que aportar un dataset de HuggingFace cargado con `load_from_disk` en `data/gfp/{train,validation}` o modificar `configs/config_gfp.yaml`. El numero de tokens de entrenamiento, la composicion exacta del dataset y si hubo etapas de RLHF, DPO o similares no estan documentados en la informacion disponible; en este dominio esas tecnicas no serian el mecanismo habitual, ya que la adaptacion se hace mediante los objetivos y las restricciones del editor pCoMole.
+El entrenamiento se realiza con `train.py` a partir de un fichero YAML de configuracion, con soporte opcional de pesaje de experimentos en Weights & Biases (`--wandb`). Para peptidomimetos se distribuye el split `data/selfies/28k_mimetics`, de unas 28 000 moleculas en SELFIES. Para GFP se distribuye un checkpoint ya entrenado (`gfp/ckpt/last_2.ckpt`), pero las "training arrows" originales no se incluyen: para reentrenar hay que aportar un dataset de Hugging Face cargado con `load_from_disk` en `data/gfp/{train,validation}` o modificar `configs/config_gfp.yaml`. El numero de tokens de entrenamiento, la composicion exacta del dataset y si hubo etapas de RLHF, DPO o similares no estan documentados en la informacion disponible; en este dominio esas tecnicas no serian el mecanismo habitual, ya que la adaptacion se hace mediante los objetivos y las restricciones del editor pCoMole.
 
 La innovacion central es el propio editor pCoMole. En la rama GFP (`gfp/pcomole.py`) se optimizan simultaneamente longitud, excitacion y brillo, con un clasificador GFP y una restriccion de emision; la CLI expone `--num_steps 10`, `--num_candidates 50`, `--num_rollouts 10` y `--objective_weights 3 1 1`, lo que sugiere un bucle de generacion de candidatos, puntuacion con oraculos y busqueda/seleccion bajo restricciones terminales duras. En la rama de peptidomimetos (`peptidomimetics/pcomole.py`) se manejan hasta siete puntuaciones cuando se activa `--specificity`: no toxicidad, solubilidad, permeabilidad, vida media, afinidad, motivo y especificidad, combinando los oraculos PeptiVerse para el lado peptidico con Admetica y DeepDTAGen para el lado de molecula pequena (`objectives.py`). Para GFP, los oraculos de excitacion, brillo y emision pasan por FPredX y requieren MAFFT disponible en el `PATH`.
 
@@ -82,7 +82,7 @@ El repositorio incluye la herramienta para calcular la val-loss de un checkpoint
 - MAFFT es una herramienta de alineamiento multiple que se ejecuta en CPU y es obligatoria para la rama GFP: hay que instalarla (por ejemplo `conda install -c bioconda mafft`) o apuntar `MAFFT_PATH` a un binario local, y su coste de ejecucion afecta al tiempo total de edicion de GFP.
 - Opciones de despliegue: no es un modelo servible con vLLM, llama.cpp, Ollama ni TGI. El despliegue previsto es un entorno Python con `venv` y `pip install -r requirements.txt`, invocando `train.py`, `evaluate.py`, `gfp/generate.py`, `gfp/pcomole.py`, `peptidomimetics/generate.py` o `peptidomimetics/pcomole.py`.
 - Latencia y throughput: no disponible. El coste por ejecucion depende de `--num_steps` (10 pasos en los ejemplos de GFP, 30 en el de peptidomimetos), `--num_candidates` (50 en el ejemplo de GFP) y `--num_rollouts` (10 en el ejemplo de GFP), ademas del coste de los oraculos externos.
-- Dependencias de disco y red: el repositorio declara 0,0 GB, pero en el primer uso descarga pesos de HuggingFace (ESM-2 650M, PeptideCLM-23M, ChemBERTa) y, para peptidomimetos, hay que clonar e instalar PeptiVerse aparte y descargar sus pesos siguiendo su propio README.
+- Dependencias de disco y red: el repositorio declara 0,0 GB, pero en el primer uso descarga pesos de Hugging Face (ESM-2 650M, PeptideCLM-23M, ChemBERTa) y, para peptidomimetos, hay que clonar e instalar PeptiVerse aparte y descargar sus pesos siguiendo su propio README.
 
 ## Comparativa con modelos similares
 
@@ -105,7 +105,7 @@ A modo de comparacion interna del propio repositorio, las dos rutas incluidas di
 - La licencia no esta declarada en la informacion disponible. Sin una licencia explicita, el uso comercial y la redistribucion de los pesos quedan en un limbo legal: conviene contactar con el autor antes de integrar el modelo en un producto.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: no hay validacion externa, replicaciones independientes ni reporte de incidencias por parte de terceros.
 - El paper se cita por titulo pero sin enlace ni identificador (arXiv, DOI), por lo que no se puede verificar la revision por pares ni consultar la metodologia completa.
-- La fecha de creacion y actualizacion registrada en HuggingFace es 2026-09-29, posterior a la fecha habitual de consulta; conviene verificar la ficha antes de citarla como referencia estable.
+- La fecha de creacion y actualizacion registrada en Hugging Face es 2026-09-29, posterior a la fecha habitual de consulta; conviene verificar la ficha antes de citarla como referencia estable.
 - No es un modelo de lenguaje: no admite prompts en lenguaje natural, tool calling, agentes ni razonamiento multi-paso textual. Cualquier expectativa de ese tipo es un error de categoria.
 - Dependencia fuerte de oraculos externos con licencias y pesos propios. PeptiVerse requiere clonar el repositorio, instalar dependencias y descargar pesos manualmente siguiendo su README; Admetica, DeepDTAGen, FPredX y ChemBERTa anaden sus propias condiciones de uso.
 - La rama GFP no incluye los datos de entrenamiento originales, solo el checkpoint. Reentrenar GFP exige aportar un dataset propio en `data/gfp/{train,validation}` con el formato de `load_from_disk` o modificar la configuracion.
@@ -117,7 +117,7 @@ A modo de comparacion interna del propio repositorio, las dos rutas incluidas di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChatterjeeLab/pCoMole
+- Modelo en Hugging Face: https://huggingface.co/ChatterjeeLab/pCoMole
 - PeptiVerse (dependencia de la rama peptidomimetos): https://huggingface.co/ChatterjeeLab/PeptiVerse
 - MAFFT (dependencia de la rama GFP): https://mafft.cbrc.jp/alignment/software/
 - ESM-2 650M (descargado en el primer uso): https://huggingface.co/facebook/esm2_t33_650M_UR50D

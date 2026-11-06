@@ -101,10 +101,10 @@ Verificación propia de esta exportación FP8: recarga del checkpoint y generaci
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Multimodalidad | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Index-Translate-omni-2B-FP8 | 2,72B | no disponible | zh, en | Apache 2.0 | texto, imagen, audio | HuggingFace, ModelScope |
-| Index-Translate-Omni 9B | no disponible | no disponible | zh, en | Apache 2.0 (según familia) | texto, imagen, audio | HuggingFace |
-| Index-Translate-Omni 35BA3B | no disponible (MoE, A3B activos) | no disponible | zh, en | Apache 2.0 (según familia) | texto, imagen, audio | HuggingFace |
-| Qwen3.5-2B (baseline) | ~2B | no disponible | no disponible | no disponible | texto, imagen | HuggingFace |
+| Index-Translate-omni-2B-FP8 | 2,72B | no disponible | zh, en | Apache 2.0 | texto, imagen, audio | Hugging Face, ModelScope |
+| Index-Translate-Omni 9B | no disponible | no disponible | zh, en | Apache 2.0 (según familia) | texto, imagen, audio | Hugging Face |
+| Index-Translate-Omni 35BA3B | no disponible (MoE, A3B activos) | no disponible | zh, en | Apache 2.0 (según familia) | texto, imagen, audio | Hugging Face |
+| Qwen3.5-2B (baseline) | ~2B | no disponible | no disponible | no disponible | texto, imagen | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos de traducción multimodal de terceros comparables en la información proporcionada.
 
@@ -124,7 +124,7 @@ No se dispone de datos de benchmarks de modelos de traducción multimodal de ter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-omni-2B-FP8
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-omni-2B-FP8
 - ModelScope (mirror, URL truncada en la model card): https://modelscope.cn/models/IndexTea
 - Model card del modelo original 9B: https://huggingface.co/IndexTeam/Index-Translate-omni-9B
 - Benchmarks publicados de Index-Translate 9B: https://huggingface.co/IndexTeam/Index-Translate-9B#evaluation

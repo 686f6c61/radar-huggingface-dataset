@@ -94,6 +94,6 @@ Las alternativas se citan únicamente como referencia de categoría; no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/agile_one_s_pickplace_ssd_n2_18200
+- Modelo en Hugging Face: https://huggingface.co/nvidia/agile_one_s_pickplace_ssd_n2_18200
 - Sitio oficial de NVIDIA: https://www.nvidia.com/
 - Pagina de NVIDIA en Wikipedia: https://en.wikipedia.org/wiki/Nvidia

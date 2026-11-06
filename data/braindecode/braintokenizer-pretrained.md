@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| braindecode/braintokenizer-pretrained | 6.100.966 | safetensors y pytorch_model.bin | MIT | HuggingFace, integrado en braindecode | Conversión verificada del checkpoint original |
-| OpenTSLab/BrainOmni (release original) | no disponible en la información proporcionada | `BrainTokenizer.pt` | MIT | HuggingFace | Requiere el código de los autores; el predictor de máscara de preentrenamiento permanece en el archivo |
+| braindecode/braintokenizer-pretrained | 6.100.966 | safetensors y pytorch_model.bin | MIT | Hugging Face, integrado en braindecode | Conversión verificada del checkpoint original |
+| OpenTSLab/BrainOmni (release original) | no disponible en la información proporcionada | `BrainTokenizer.pt` | MIT | Hugging Face | Requiere el código de los autores; el predictor de máscara de preentrenamiento permanece en el archivo |
 | Otros tokenizadores o modelos fundacionales de EEG (por ejemplo, aproximaciones basadas en VQ o en enmascaramiento de señal) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 No se dispone de resultados de benchmarks ni de especificaciones de terceros que permitan una comparación cuantitativa rigurosa.
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks ni de especificaciones de terceros que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braindecode/braintokenizer-pretrained
+- Modelo en Hugging Face: https://huggingface.co/braindecode/braintokenizer-pretrained
 - Checkpoint original BrainOmni: https://huggingface.co/OpenTSLab/BrainOmni
 - Documentación de `BrainTokenizer` en braindecode: https://braindecode.org/stable/generated/braindecode.models.BrainTokenizer.html
 - Paper de BrainOmni (NeurIPS 2025): https://arxiv.org/abs/2505.18185

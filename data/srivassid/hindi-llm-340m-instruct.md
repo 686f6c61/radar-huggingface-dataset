@@ -100,7 +100,7 @@ No hay datos públicos de benchmarks comparables directamente con modelos de 300
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srivassid/hindi-llm-340m-instruct
+- Modelo en Hugging Face: https://huggingface.co/srivassid/hindi-llm-340m-instruct
 - Dataset de preentrenamiento: https://huggingface.co/datasets/ai4bharat/sangraha
 - Dataset de instrucciones: https://huggingface.co/datasets/ai4bharat/indic-instruct-data-v0.1
 - Benchmark IndicCOPA: https://huggingface.co/datasets/ai4bharat/IndicCOPA

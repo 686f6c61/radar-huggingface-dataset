@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/psaegert/flash-ansr-v25.0-T7-3M
+- Hugging Face: https://huggingface.co/psaegert/flash-ansr-v25.0-T7-3M
 - GitHub: https://github.com/psaegert/flash-ansr
 - Paper (arXiv): https://arxiv.org/abs/2602.08885
 - Documentación: https://flash-ansr.readthedocs.io/

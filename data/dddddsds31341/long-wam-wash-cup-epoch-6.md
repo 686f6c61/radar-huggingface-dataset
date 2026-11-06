@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM Wash Cup — Epoch 6 | no disponible | P48 fotogramas / chunk 32 | Limpieza bimanual de taza | other | HuggingFace (repo de 12 GB) |
-| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | Política visuomotora general | other | HuggingFace |
+| Long-WAM Wash Cup — Epoch 6 | no disponible | P48 fotogramas / chunk 32 | Limpieza bimanual de taza | other | Hugging Face (repo de 12 GB) |
+| Efficient-Large-Model/Long-WAM-YAM (base) | no disponible | no disponible | Política visuomotora general | other | Hugging Face |
 | NVlabs/LongLive | no disponible | no disponible | Generación de vídeo de horizonte largo | no disponible | GitHub |
 | Otros checkpoints de yuyingyinya/wash_cup | no disponible | no disponible | Limpieza bimanual de taza | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-6
+- Hugging Face del modelo: https://huggingface.co/dddddsds31341/Long-WAM-Wash-Cup-Epoch-6
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/wash_cup
 - Repositorio de código base LongLive: https://github.com/NVlabs/LongLive (commit cfa4e91eec59429d583326500bf5535c9ce6eec7)

@@ -23,7 +23,7 @@ Es relevante ahora porque el ecosistema open source carece de versiones cuantiza
 
 ## Arquitectura y entrenamiento
 
-La model card indica que el modelo sigue la arquitectura GLM-5.3-Flash, etiquetada en HuggingFace como glm5_next, y que se trata de un MoE con 36.288 proyecciones de expertos enrutados, todas ellas conservadas en esta cuantizacion. El checkpoint incorpora el tag image-text-to-text, lo que sugiere soporte multimodal en el modelo de origen, aunque el autor advierte que la vision no ha sido validada en esta version cuantizada. El numero de parametros activos por token no se especifica en la informacion disponible.
+La model card indica que el modelo sigue la arquitectura GLM-5.3-Flash, etiquetada en Hugging Face como glm5_next, y que se trata de un MoE con 36.288 proyecciones de expertos enrutados, todas ellas conservadas en esta cuantizacion. El checkpoint incorpora el tag image-text-to-text, lo que sugiere soporte multimodal en el modelo de origen, aunque el autor advierte que la vision no ha sido validada en esta version cuantizada. El numero de parametros activos por token no se especifica en la informacion disponible.
 
 El proceso de cuantizacion es "expert-only": se aplica AWQ en INT4 simetrico con group size 128 exclusivamente a las proyecciones de los expertos enrutados, mientras que el resto de tensores mantiene la precision del modelo fuente. El modulo MTP se omite deliberadamente. La calibracion utilizo 256 muestras de mlabonne/open-perfectblend con secuencias de hasta 2.048 tokens. No se detalla el entrenamiento original (numero de tokens, composicion del dataset, uso de RLHF o DPO) ni el proceso de "abliteration" aplicado por el autor del modelo base. Las pruebas de humo de generacion de texto y de tool calling estructurado se realizaron sobre una build de vLLM parcheada para GLM-5.3 en SM86.
 
@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svbmrgd/apex-flash-1-abliterated-AWQ | 313,89B (activos: no disponible) | AWQ W4A16 INT4, solo expertos, ~176 GB | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
-| cantina-security/apex-flash-1-abliterated | no disponible | precision original | no disponible | MIT (segun el modelo derivado) | HuggingFace (modelo base) |
+| svbmrgd/apex-flash-1-abliterated-AWQ | 313,89B (activos: no disponible) | AWQ W4A16 INT4, solo expertos, ~176 GB | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
+| cantina-security/apex-flash-1-abliterated | no disponible | precision original | no disponible | MIT (segun el modelo derivado) | Hugging Face (modelo base) |
 | Otros MoE open weight de ~300B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/svbmrgd/apex-flash-1-abliterated-AWQ
+- Modelo en Hugging Face: https://huggingface.co/svbmrgd/apex-flash-1-abliterated-AWQ
 - Modelo base: https://huggingface.co/cantina-security/apex-flash-1-abliterated
 - Dataset de calibracion: https://huggingface.co/datasets/mlabonne/open-perfectblend
 - Otros enlaces (papers, blogs, repos, demos): no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

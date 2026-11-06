@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `zn670129563/jev_zn` es una publicación alojada en HuggingFace por el usuario `zn670129563` y distribuida bajo licencia Apache 2.0. La model card asociada no contiene más que la declaración de licencia: no incluye descripción del modelo, arquitectura, número de parámetros, datos de entrenamiento, idiomas ni instrucciones de uso. Tampoco se declaran pipeline ni etiquetas de tarea, y el repositorio registra cero descargas y cero likes en el momento de la consulta. La fecha de creación y de última actualización que figura en los metadatos es el 13 de octubre de 2026.
+El repositorio `zn670129563/jev_zn` es una publicación alojada en Hugging Face por el usuario `zn670129563` y distribuida bajo licencia Apache 2.0. La model card asociada no contiene más que la declaración de licencia: no incluye descripción del modelo, arquitectura, número de parámetros, datos de entrenamiento, idiomas ni instrucciones de uso. Tampoco se declaran pipeline ni etiquetas de tarea, y el repositorio registra cero descargas y cero likes en el momento de la consulta. La fecha de creación y de última actualización que figura en los metadatos es el 13 de octubre de 2026.
 
-El nombre del repositorio coincide con Jev, un modelo propietario desarrollado por TypeSafe AI, empresa con sede en San Francisco fundada en 2024. Según los resultados de búsqueda, Jev es el primer "System One Model" de TypeSafe AI, descrito como un modelo de decisión orientado a software que debe clasificar peticiones, enrutar tickets, puntuar urgencia o comprobar si una acción es segura, con latencias declaradas de entre 70 y 500 milisegundos y confianza calibrada. No hay ninguna evidencia en la información disponible que confirme que este repositorio de HuggingFace contenga dicho modelo, pesos derivados de él o tenga relación con TypeSafe AI.
+El nombre del repositorio coincide con Jev, un modelo propietario desarrollado por TypeSafe AI, empresa con sede en San Francisco fundada en 2024. Según los resultados de búsqueda, Jev es el primer "System One Model" de TypeSafe AI, descrito como un modelo de decisión orientado a software que debe clasificar peticiones, enrutar tickets, puntuar urgencia o comprobar si una acción es segura, con latencias declaradas de entre 70 y 500 milisegundos y confianza calibrada. No hay ninguna evidencia en la información disponible que confirme que este repositorio de Hugging Face contenga dicho modelo, pesos derivados de él o tenga relación con TypeSafe AI.
 
-Por tanto, esta ficha describe un artefacto del que no se conocen especificaciones técnicas publicadas, y complementa esa ausencia con la información disponible sobre el modelo homónimo de TypeSafe AI, que es propietario y solo se ofrece en acceso anticipado limitado a través de API. Cualquier dato de arquitectura, tamaño o entrenamiento relativo al repositorio de HuggingFace debe considerarse no disponible.
+Por tanto, esta ficha describe un artefacto del que no se conocen especificaciones técnicas publicadas, y complementa esa ausencia con la información disponible sobre el modelo homónimo de TypeSafe AI, que es propietario y solo se ofrece en acceso anticipado limitado a través de API. Cualquier dato de arquitectura, tamaño o entrenamiento relativo al repositorio de Hugging Face debe considerarse no disponible.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ En cuanto al Jev de TypeSafe AI, las fuentes lo describen como un "System One Mo
 
 ## Casos de uso
 
-- Enrutado automático de tickets de soporte: el modelo recibiría el texto del ticket y los metadatos del cliente y devolvería una categoría y un equipo destino, reduciendo la clasificación manual en colas de alto volumen. Solo es viable a través de la API de TypeSafe AI, no con el repositorio de HuggingFace.
+- Enrutado automático de tickets de soporte: el modelo recibiría el texto del ticket y los metadatos del cliente y devolvería una categoría y un equipo destino, reduciendo la clasificación manual en colas de alto volumen. Solo es viable a través de la API de TypeSafe AI, no con el repositorio de Hugging Face.
 - Triaje de urgencia en incidencias: puntuar cada incidencia entrante para priorizar la cola de trabajo, aprovechando la latencia declarada de 70 a 500 ms para operar en línea dentro de un sistema de gestión.
 - Moderación con derivación a revisión humana: usar la salida de decisión y la confianza calibrada para separar casos claros de casos ambiguos, enviando únicamente estos últimos a un moderador.
 - Puerta de seguridad previa a la ejecución de acciones: antes de que un agente o un job automatizado ejecute una operación sobre el estado de la aplicación, consultar al modelo si la acción es segura, integrándolo como paso de validación en una pipeline.
@@ -58,7 +58,7 @@ En cuanto al Jev de TypeSafe AI, las fuentes lo describen como un "System One Mo
 
 ## Benchmarks y rendimiento
 
-Los únicos resultados numéricos disponibles proceden de sitios web de terceros y se refieren al servicio alojado de Jev, no al repositorio de HuggingFace. No hay resultados publicados por el autor del repositorio ni por el proveedor en forma de informe técnico.
+Los únicos resultados numéricos disponibles proceden de sitios web de terceros y se refieren al servicio alojado de Jev, no al repositorio de Hugging Face. No hay resultados publicados por el autor del repositorio ni por el proveedor en forma de informe técnico.
 
 | Evaluacion | Modelo | Resultado | Fuente |
 |---|---|---|---|
@@ -71,7 +71,7 @@ Estos datos no están respaldados por una publicación revisada por pares ni por
 
 ## Requisitos de hardware
 
-- VRAM para inferencia: no disponible. El repositorio de HuggingFace no publica pesos, por lo que no se puede estimar un requisito de memoria.
+- VRAM para inferencia: no disponible. El repositorio de Hugging Face no publica pesos, por lo que no se puede estimar un requisito de memoria.
 - GPU recomendadas: no disponible.
 - Ejecución en GPU de consumo: no disponible, al no existir artefactos de pesos.
 - Opciones de despliegue local (vLLM, llama.cpp, Ollama, TGI): no disponibles para este repositorio, ya que no hay ficheros de modelo.
@@ -84,7 +84,7 @@ Estos datos no están respaldados por una publicación revisada por pares ni por
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zn670129563/jev_zn | no disponible | no disponible | no disponible | apache-2.0 | Repositorio en HuggingFace sin contenido tecnico publicado |
+| zn670129563/jev_zn | no disponible | no disponible | no disponible | apache-2.0 | Repositorio en Hugging Face sin contenido tecnico publicado |
 | Jev (TypeSafe AI) | Propietario, orientado a decisiones | no disponible | no disponible | Propietaria | API en acceso anticipado limitado |
 | Gemini 3.8 Flash | Propietario, uso general | no disponible | no disponible | Propietaria | API publica |
 | Gemini 3.1 Flash Lite | Propietario, uso general | no disponible | no disponible | Propietaria | API publica |
@@ -106,7 +106,7 @@ La comparación carece de base cuantitativa: no se dispone de parámetros, venta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zn670129563/jev_zn
+- Repositorio en Hugging Face: https://huggingface.co/zn670129563/jev_zn
 - Wikipedia, Jev (AI model): https://en.wikipedia.org/wiki/Jev_(AI_model)
 - Blog de TypeSafe AI, Introducing System One Models & Jev: https://typesafe.ai/blog/introducing-system-one-models-and-jev
 - Repositorio en GitHub, jev-ai/jev-ai-model: https://github.com/jev-ai/jev-ai-model

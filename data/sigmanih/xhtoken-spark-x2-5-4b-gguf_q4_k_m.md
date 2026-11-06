@@ -116,7 +116,7 @@ No se dispone de una comparación de rendimiento fiable: los benchmarks del auto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sigmanih/XHToken-Spark-X2.5-4B-GGUF_Q4_K_M
+- Hugging Face: https://huggingface.co/sigmanih/XHToken-Spark-X2.5-4B-GGUF_Q4_K_M
 - Repositorio SigmaStudio: https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Licencia Apache-2.0 (referenciada en la model card): https://opensource.org/licenses/Apache-2.0

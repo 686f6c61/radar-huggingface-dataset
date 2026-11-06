@@ -76,5 +76,5 @@ No se dispone de datos de rendimiento comparativos (MMLU, HumanEval, etc.) para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h082.sft5.step_800
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h082.sft5.step_800
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

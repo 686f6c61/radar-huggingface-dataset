@@ -72,8 +72,8 @@ La innovación principal no está en la arquitectura sino en el caso de uso: un 
 
 | Modelo | Parámetros | Contexto | AUROC JevOCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev | 2,2B | no disponible | 0,936 | Apache 2.0 | HuggingFace (build FlagOS) |
-| MiniCPM-OCR 1.0 | 1,3B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| MiniCPM-OCR Jev | 2,2B | no disponible | 0,936 | Apache 2.0 | Hugging Face (build FlagOS) |
+| MiniCPM-OCR 1.0 | 1,3B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Qwen3.5-397B-A17B | 397B (17B activos) | no disponible | 0,938 | no disponible | no disponible |
 
 La comparación directa con Qwen3.5-397B-A17B es la más relevante: Jev alcanza un AUROC de 0,936 frente a 0,938 del modelo gigante, con un tamaño dos órdenes de magnitud menor. MiniCPM-OCR 1.0 es el modelo hermano orientado a la extracción, no a la verificación, y reporta 93,68 en Real5-OmniDocBench.
@@ -91,7 +91,7 @@ La comparación directa con Qwen3.5-397B-A17B es la más relevante: Jev alcanza 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-metax-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-metax-FlagOS
 - Model card de referencia (contenido citado en la información disponible)
 - Contenedor Docker: `harbor.baai.ac.cn/flagrelease-public/vllm0.24.0-metax-maca3.8.1.3:jev-ocr-rm-2b-torchfl`
 - Descarga de pesos vía ModelScope: `modelscope download --model FlagRelease/MiniCPM-OCR-Jev-BF16-metax-FlagOS`

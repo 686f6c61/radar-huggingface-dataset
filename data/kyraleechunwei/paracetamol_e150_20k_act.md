@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Paracetamol_e150_20K_ACT es una política de imitación para robótica entrenada con ACT (Action Chunking with Transformers), el método presentado en el paper arXiv:2304.13705. Lo publica el usuario KyraLeeChunWei en HuggingFace mediante la librería LeRobot de HuggingFace, y está asociado al dataset de demostraciones teleoperadas KyraLeeChunWei/Paracetamol_e150. No es un modelo de lenguaje: es un controlador visuomotor que mapea observaciones (imágenes de cámara y estado de las articulaciones) a secuencias cortas de acciones para un brazo robótico.
+Paracetamol_e150_20K_ACT es una política de imitación para robótica entrenada con ACT (Action Chunking with Transformers), el método presentado en el paper arXiv:2304.13705. Lo publica el usuario KyraLeeChunWei en Hugging Face mediante la librería LeRobot de Hugging Face, y está asociado al dataset de demostraciones teleoperadas KyraLeeChunWei/Paracetamol_e150. No es un modelo de lenguaje: es un controlador visuomotor que mapea observaciones (imágenes de cámara y estado de las articulaciones) a secuencias cortas de acciones para un brazo robótico.
 
 El modelo resuelve el problema del control fino en tareas de manipulación aprendidas por imitación. En lugar de predecir una acción por paso, ACT predice un "chunk" de acciones futuras, lo que reduce el error de acumulación y mejora la estabilidad del bucle de control. Con 51.678.855 parámetros y un repositorio de 0,2 GB, es un modelo compacto que puede ejecutarse en hardware modesto.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Paracetamol_e150_20K_ACT | 51,7 M | ACT (imitación) | no disponible | Apache 2.0 | HuggingFace |
+| Paracetamol_e150_20K_ACT | 51,7 M | ACT (imitación) | no disponible | Apache 2.0 | Hugging Face |
 | Diffusion Policy | no disponible | Política por difusión | no disponible | MIT (implementación de referencia) | Repositorio público |
 | VQ-BeT | no disponible | Transformer con cuantización vectorial | no disponible | MIT (implementación de referencia) | Repositorio público |
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KyraLeeChunWei/Paracetamol_e150_20K_ACT
+- Modelo en Hugging Face: https://huggingface.co/KyraLeeChunWei/Paracetamol_e150_20K_ACT
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

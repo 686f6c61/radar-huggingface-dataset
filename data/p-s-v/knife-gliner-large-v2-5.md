@@ -24,7 +24,7 @@ Su relevancia es practica y de nicho: demuestra un flujo completo de ajuste de G
 | Dataset de entrenamiento | P-s-v/reddit-knife-ner |
 | Tarea (pipeline) | token-classification |
 | Etiquetas soportadas | `knife brand`, `knife model`, `knife steel` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de publicacion | 2026-09-19 |
 
 ## Arquitectura y entrenamiento
@@ -81,9 +81,9 @@ Nota del autor: una ejecucion anterior obtuvo 0,879 sobre una particion aleatori
 
 | Modelo | Parametros | Ajuste | Contexto de evaluacion | F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| knife-gliner-large-v2.5 | 459 M | Ajustado en 2.025 ejemplos de Reddit | Validacion de 225 comentarios, etiquetas de Gemini | 0,83 | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| gliner-community/gliner_large-v2.5 | 459 M | Zero-shot | Mismo conjunto, etiquetas de Gemini | ~0,65 (estimado por el autor) | No disponible en la informacion proporcionada | HuggingFace (modelo base) |
-| GLiNER medium v2.5 ajustado | 209 M | Ajustado | Mismo conjunto, etiquetas de Gemini | 0,800 | No disponible en la informacion proporcionada | HuggingFace |
+| knife-gliner-large-v2.5 | 459 M | Ajustado en 2.025 ejemplos de Reddit | Validacion de 225 comentarios, etiquetas de Gemini | 0,83 | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| gliner-community/gliner_large-v2.5 | 459 M | Zero-shot | Mismo conjunto, etiquetas de Gemini | ~0,65 (estimado por el autor) | No disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| GLiNER medium v2.5 ajustado | 209 M | Ajustado | Mismo conjunto, etiquetas de Gemini | 0,800 | No disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion disponible es interna a la familia GLiNER. No se proporcionan datos frente a otras alternativas de NER (por ejemplo, modelos basados en BERT clasico, spaCy o LLM con prompting) para este dominio, por lo que no es posible situar el modelo frente a ellos con cifras.
 
@@ -101,7 +101,7 @@ La comparacion disponible es interna a la familia GLiNER. No se proporcionan dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/P-s-v/knife-gliner-large-v2.5
+- Modelo en Hugging Face: https://huggingface.co/P-s-v/knife-gliner-large-v2.5
 - Modelo base: https://huggingface.co/gliner-community/gliner_large-v2.5
 - Dataset de entrenamiento: https://huggingface.co/datasets/P-s-v/reddit-knife-ner
 - Articulo del autor: https://petervijeh.com/projects/reddit-ner

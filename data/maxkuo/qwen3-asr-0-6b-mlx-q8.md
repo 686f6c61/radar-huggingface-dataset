@@ -88,7 +88,7 @@ La comparación con Whisper large-v3 se incluye como referencia de categoría; n
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/Maxkuo/Qwen3-ASR-0.6B-mlx-q8
+- Hugging Face del artefacto: https://huggingface.co/Maxkuo/Qwen3-ASR-0.6B-mlx-q8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Repositorio de la implementación MLX: https://github.com/moona3k/mlx-qwen3-asr
 - Artefacto de referencia citado en la model card: https://huggingface.co/moona3k/mlx-qwen3-asr-0.6b-8bit

@@ -70,9 +70,9 @@ No se dispone de datos suficientes para una comparativa rigurosa con otras cuant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/Qwen3.8-27B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/bambocher/Qwen3.8-27B-oQ4e-mtp
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Página del modelo en HuggingFace (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
+- Página del modelo en Hugging Face (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Benchmark de oMLX en M4 Max: https://omlx.ai/benchmarks/performance/kk024csk
 - Proyecto MTPLX (aceleración MTP en MLX): https://github.com/youssofal/mtplx

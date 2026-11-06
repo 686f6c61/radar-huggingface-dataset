@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05 real-workbench taco movement_reversal) | 4,14 B | horizonte de accion 50, 10 pasos de denoising | sin metricas publicadas | no disponible | HuggingFace, libreria lerobot |
-| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace, libreria lerobot |
+| Este modelo (pi05 real-workbench taco movement_reversal) | 4,14 B | horizonte de accion 50, 10 pasos de denoising | sin metricas publicadas | no disponible | Hugging Face, libreria lerobot |
+| `lerobot/pi05_base` (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face, libreria lerobot |
 | Otras politicas VLA de la misma categoria (pi0, OpenVLA, GR00T N1, etc.) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado |
 
 La informacion disponible solo permite comparar con el modelo base del que deriva. No se han proporcionado especificaciones ni resultados de alternativas como pi0, OpenVLA o GR00T N1, por lo que no se incluyen cifras para evitar datos no verificados.
@@ -97,7 +97,7 @@ La informacion disponible solo permite comparar con el modelo base del que deriv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-movement-reversal-60k
+- Modelo en Hugging Face: https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-movement-reversal-60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/real_workbench-taco-keyframe-gemini
 - Tokenizer de referencia: `google/paligemma-3b-pt-224`, revision `35e4f46485b4d07967e7e9935bc3786aad50687c` (referenciado en la model card, sin URL en la informacion proporcionada)

@@ -94,7 +94,7 @@ La comparativa directa con otros modelos de la misma categoría (p. ej., Llama-3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Parssky/industrial-instruction-qwen4b-claude
+- Modelo en Hugging Face: https://huggingface.co/Parssky/industrial-instruction-qwen4b-claude
 - Dataset: https://huggingface.co/datasets/Parssky/industrial-instruction-dataset
 - Paper (arXiv): https://huggingface.co/papers/2608.22817
 - Repositorio GitHub: https://github.com/parssky/industrial-instruction

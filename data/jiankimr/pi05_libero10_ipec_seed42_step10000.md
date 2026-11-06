@@ -76,9 +76,9 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | LIBERO-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_libero10_ipec_seed42_step10000 | no disponible | no disponible | 94% | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| pi05_libero10_ipec_seed42_step29999 | no disponible | no disponible | no disponible para este checkpoint concreto (la model card cita 92% a 30k para la semilla 42) | Apache 2.0 | HuggingFace |
-| pi05_libero10_ipec_seed43_step10000 | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| pi05_libero10_ipec_seed42_step10000 | no disponible | no disponible | 94% | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| pi05_libero10_ipec_seed42_step29999 | no disponible | no disponible | no disponible para este checkpoint concreto (la model card cita 92% a 30k para la semilla 42) | Apache 2.0 | Hugging Face |
+| pi05_libero10_ipec_seed43_step10000 | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | pi05_base (openpi) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | `gs://openpi-assets/checkpoints/pi05_base` |
 
 No se dispone de datos comparativos frente a otras familias de VLA (por ejemplo OpenVLA, pi0 o RDT-1B) en la informacion proporcionada, por lo que no se incluyen cifras de esos modelos.
@@ -99,11 +99,11 @@ No se dispone de datos comparativos frente a otras familias de VLA (por ejemplo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiankimr/pi05_libero10_ipec_seed42_step10000
+- Modelo en Hugging Face: https://huggingface.co/jiankimr/pi05_libero10_ipec_seed42_step10000
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Dataset de entrenamiento: https://huggingface.co/datasets/IPEC-COMMUNITY/libero_10_no_noops_1.0.0_lerobot
 - Checkpoint hermano (semilla 42, paso 29999): https://huggingface.co/jiankimr/pi05_libero10_ipec_seed42_step29999
 - Checkpoint hermano (semilla 43, paso 10000): https://huggingface.co/jiankimr/pi05_libero10_ipec_seed43_step10000
 - Pesos del modelo base: `gs://openpi-assets/checkpoints/pi05_base`
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles proceden de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles proceden de la informacion de Hugging Face y de la model card.

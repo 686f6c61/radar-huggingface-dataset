@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRM-3.2-Sky-MLX-fp16-oQ6e es una publicacion de pesos cuantizados alojada en HuggingFace por el usuario funnygeeker. No se trata de un modelo entrenado desde cero, sino de una cuantizacion en precision mixta de 6 bits de un modelo cuyo tag de arquitectura declarado es `qwen3_5_moe`, realizada con la herramienta oQ (oMLX v0.7.0.dev4) y empaquetada en safetensors con la libreria MLX. El repositorio ocupa 29,6 GB y contiene 35.107.181.936 parametros totales segun los tensores en safetensors.
+GRM-3.2-Sky-MLX-fp16-oQ6e es una publicacion de pesos cuantizados alojada en Hugging Face por el usuario funnygeeker. No se trata de un modelo entrenado desde cero, sino de una cuantizacion en precision mixta de 6 bits de un modelo cuyo tag de arquitectura declarado es `qwen3_5_moe`, realizada con la herramienta oQ (oMLX v0.7.0.dev4) y empaquetada en safetensors con la libreria MLX. El repositorio ocupa 29,6 GB y contiene 35.107.181.936 parametros totales segun los tensores en safetensors.
 
 El interes tecnico de esta ficha es acotado pero concreto: se trata de un artefacto de infraestructura (una cuantizacion) mas que de un modelo nuevo. Su relevancia radica en que permite ejecutar un modelo MoE de ~35.000 millones de parametros en hardware Apple Silicon con una huella de memoria muy inferior a la de los pesos originales, usando el ecosistema MLX. Es el tipo de publicacion que interesa a quien despliega modelos en local en un Mac y necesita un equilibrio entre calidad y memoria.
 
@@ -92,7 +92,7 @@ No se dispone de datos que permitan afirmar si GRM-3.2-Sky supera o no a estos m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/funnygeeker/GRM-3.2-Sky-MLX-fp16-oQ6e
+- Repositorio en Hugging Face: https://huggingface.co/funnygeeker/GRM-3.2-Sky-MLX-fp16-oQ6e
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base: no disponible (no identificado en el repositorio)
 - Paper o documentacion tecnica: no disponible

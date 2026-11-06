@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r07` es un artefacto de investigacion derivado de `meta-llama/Llama-2-7b-chat-hf`. Su autor es el usuario de HuggingFace Jeesup y su proposito no es el dialogo generalista, sino medir como la compresion por SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes repara mejor ese dano. El checkpoint se ha comprimido con SVD-LLM al 60,0 % de los parametros densos (40,02 % eliminados) y despues se ha editado con 7 de las 10 rondas de un procedimiento de intercambio iterativo de parametros neutro en parametros.
+`Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r07` es un artefacto de investigacion derivado de `meta-llama/Llama-2-7b-chat-hf`. Su autor es el usuario de Hugging Face Jeesup y su proposito no es el dialogo generalista, sino medir como la compresion por SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes repara mejor ese dano. El checkpoint se ha comprimido con SVD-LLM al 60,0 % de los parametros densos (40,02 % eliminados) y despues se ha editado con 7 de las 10 rondas de un procedimiento de intercambio iterativo de parametros neutro en parametros.
 
 El modelo pertenece a la familia Llama 2 (transformer decoder-only, 7B nominales) y conserva el tokenizador y la configuracion del modelo base, por lo que hereda su ventana de contexto de 4096 tokens. El repositorio almacena 6.738.415.616 parametros en safetensors, una cifra que coincide con la del Llama-2-7B denso sin comprimir; la reduccion efectiva al 59,98 % se expresa, por tanto, en la estructura de rango de las matrices de proyeccion, no en el numero de tensores almacenados.
 
@@ -71,10 +71,10 @@ No se han publicado en la informacion disponible resultados de benchmarks de cap
 
 | Modelo | Parametros | Contexto | Licencia | Metricas de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove40_swapdisc_a050_b010_r07 | 6.738.415.616 almacenados; 59,98 % de parametros densos efectivos | 4096 tokens | Llama 2 Community License | AdvBench ASR 0,0269; StrongREJECT ASR 0,0607; sobreexceso de rechazo 0,2474 | Publico en HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| meta-llama/Llama-2-13b-chat-hf | 13B (aproximado) | 4096 tokens | Llama 2 Community License | no disponible en la informacion proporcionada | Publico en HuggingFace, requiere aceptar la licencia |
-| Mistral-7B-Instruct-v0.2 | 7,2B (aproximado) | 32768 tokens | Apache 2.0 | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| svd-safety-l2_remove40_swapdisc_a050_b010_r07 | 6.738.415.616 almacenados; 59,98 % de parametros densos efectivos | 4096 tokens | Llama 2 Community License | AdvBench ASR 0,0269; StrongREJECT ASR 0,0607; sobreexceso de rechazo 0,2474 | Publico en Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | 4096 tokens | Llama 2 Community License | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| meta-llama/Llama-2-13b-chat-hf | 13B (aproximado) | 4096 tokens | Llama 2 Community License | no disponible en la informacion proporcionada | Publico en Hugging Face, requiere aceptar la licencia |
+| Mistral-7B-Instruct-v0.2 | 7,2B (aproximado) | 32768 tokens | Apache 2.0 | no disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de cifras comparativas de ASR para los modelos alternativos dentro de la informacion proporcionada; cualquier comparacion de seguridad entre ellos exigiria ejecutar el mismo arnes de evaluacion (HarmBench y WildGuard) sobre cada checkpoint.
 
@@ -92,7 +92,7 @@ No se dispone de cifras comparativas de ASR para los modelos alternativos dentro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r07
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 y politica de uso: incluidas en el propio repositorio como `LICENSE.txt` y `USE_POLICY.md`
 - Paper de SVD-LLM: no disponible en la informacion proporcionada

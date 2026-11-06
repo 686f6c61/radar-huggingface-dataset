@@ -111,7 +111,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doanhlt/cabin-lid-ecapa-voxlingua107-onnx
+- Modelo en Hugging Face: https://huggingface.co/doanhlt/cabin-lid-ecapa-voxlingua107-onnx
 - Modelo base: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa
 - Dataset VoxLingua107: https://huggingface.co/datasets/TalTechNLP/VoxLingua107
 - Coleccion Cabin offline ASR: https://huggingface.co/collections/doanhlt/cabin-offline-asr-on-device-distilled-from-r13x-6ade0b05eb1f2ac4e49d7cf8

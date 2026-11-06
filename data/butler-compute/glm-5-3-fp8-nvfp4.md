@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`butler-compute/GLM-5.3-FP8-NVFP4` es un repositorio de pesos cuantizados publicado en HuggingFace por el usuario `butler-compute`, no por el desarrollador original del modelo. El nombre del repositorio y el campo `license_link` de su model card apuntan a `zai-org/GLM-5.3` como modelo base, es decir, la familia GLM de Z.ai (Zhipu AI), pero el repositorio no incluye ninguna descripción técnica, tabla de especificaciones ni resultados de evaluación: la model card se limita a los metadatos de licencia.
+`butler-compute/GLM-5.3-FP8-NVFP4` es un repositorio de pesos cuantizados publicado en Hugging Face por el usuario `butler-compute`, no por el desarrollador original del modelo. El nombre del repositorio y el campo `license_link` de su model card apuntan a `zai-org/GLM-5.3` como modelo base, es decir, la familia GLM de Z.ai (Zhipu AI), pero el repositorio no incluye ninguna descripción técnica, tabla de especificaciones ni resultados de evaluación: la model card se limita a los metadatos de licencia.
 
 El interés del repositorio es, por tanto, exclusivamente práctico: ofrece una variante cuantizada en FP8 y NVFP4 de un modelo del que solo se publican pesos en el repositorio original, con un tamano total de 370,8 GB. Esa cifra implica que los pesos completos no caben en ninguna GPU de consumo y que el despliegue requiere un nodo multi-GPU. No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados.
 
@@ -77,8 +77,8 @@ No hay datos de especificaciones del modelo base ni de sus alternativas en la in
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| butler-compute/GLM-5.3-FP8-NVFP4 | no disponible | no disponible | FP8 y NVFP4 | `other` (glm-5.3) | HuggingFace, 0 descargas |
-| zai-org/GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | glm-5.3 | HuggingFace, repositorio oficial |
+| butler-compute/GLM-5.3-FP8-NVFP4 | no disponible | no disponible | FP8 y NVFP4 | `other` (glm-5.3) | Hugging Face, 0 descargas |
+| zai-org/GLM-5.3 (modelo base) | no disponible | no disponible | no disponible | glm-5.3 | Hugging Face, repositorio oficial |
 | Otras variantes cuantizadas de GLM-5.3 | no disponible | no disponible | no disponible | glm-5.3 | no verificado |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No hay datos de especificaciones del modelo base ni de sus alternativas en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/butler-compute/GLM-5.3-FP8-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/butler-compute/GLM-5.3-FP8-NVFP4
 - Modelo base referenciado: https://huggingface.co/zai-org/GLM-5.3
 - Licencia glm-5.3: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Paper, blog o demo del modelo: no disponible en la informacion proporcionada

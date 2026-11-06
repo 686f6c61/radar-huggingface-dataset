@@ -80,12 +80,12 @@ No hay informacion suficiente en los datos proporcionados para realizar una comp
 - **Sin informacion de entrenamiento**: no se han publicado detalles sobre el entrenamiento del encoder original (datasets, numero de tokens, tecnicas de optimizacion), lo que dificulta evaluar sesgos o limitaciones del modelo subyacente.
 - **Restricciones de licencia**: la licencia CC BY 4.0 permite uso comercial y modificacion, pero requiere atribucion del autor original (Kyutai) y de la modificacion (MaAI). Es importante revisar los terminos completos de la licencia para uso en produccion.
 - **Sin soporte de idiomas explicitos**: el modelo no tiene informacion sobre idiomas soportados, pero al ser un encoder de audio generico, deberia funcionar con cualquier idioma hablado, aunque no se garantiza la calidad en todos los casos.
-- **Cantidad de descargas y soporte**: el modelo tiene 0 descargas en HuggingFace, lo que indica que es un proyecto reciente o poco adoptado; el soporte de la comunidad puede ser limitado.
+- **Cantidad de descargas y soporte**: el modelo tiene 0 descargas en Hugging Face, lo que indica que es un proyecto reciente o poco adoptado; el soporte de la comunidad puede ser limitado.
 
 ## Enlaces
 
-- [HuggingFace - maai-kyoto/continuous-mimi-onnx](https://huggingface.co/maai-kyoto/continuous-mimi-onnx)
+- [Hugging Face - maai-kyoto/continuous-mimi-onnx](https://huggingface.co/maai-kyoto/continuous-mimi-onnx)
 - [MaAI API Documentation](https://maai-kyoto.github.io/MaAI/)
 - [Documentacion de util - MaAI](https://maai-kyoto.github.io/MaAI/api/util/)
 - [GitHub - MaAI-Kyoto/MaAI](https://github.com/MaAI-Kyoto/MaAI)
-- [Repositorio de modelos de MaAI en HuggingFace](https://huggingface.co/maai-kyoto/models)
+- [Repositorio de modelos de MaAI en Hugging Face](https://huggingface.co/maai-kyoto/models)

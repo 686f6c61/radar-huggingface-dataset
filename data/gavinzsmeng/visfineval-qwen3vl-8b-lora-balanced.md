@@ -83,8 +83,8 @@ Interpretacion recogida en la model card: la precision bruta en opcion multiple 
 
 | Modelo | Parametros | Contexto | MC bruto | Macro-recall TF | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| visfineval-qwen3vl-8b-lora-balanced (este) | 43,6 M entrenables sobre 8,81 B | No disponible | 82,78 % | 79,43 % | apache-2.0 | Publicado en HuggingFace, 0 descargas |
-| visfineval-qwen3vl-8b-lora-natural (hermano) | 43,6 M entrenables sobre 8,81 B | No disponible | 84,13 % | 79,15 % | apache-2.0 | Publicado en HuggingFace; es el adaptador recomendado por el autor |
+| visfineval-qwen3vl-8b-lora-balanced (este) | 43,6 M entrenables sobre 8,81 B | No disponible | 82,78 % | 79,43 % | apache-2.0 | Publicado en Hugging Face, 0 descargas |
+| visfineval-qwen3vl-8b-lora-natural (hermano) | 43,6 M entrenables sobre 8,81 B | No disponible | 84,13 % | 79,15 % | apache-2.0 | Publicado en Hugging Face; es el adaptador recomendado por el autor |
 | Qwen/Qwen3-VL-8B-Instruct (base) | 8,81 B | No disponible | 73,70 % | 63,73 % | apache-2.0 | Modelo base publico de Qwen |
 | Otros adaptadores o modelos comparables en el mismo rango | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,13 +97,13 @@ Interpretacion recogida en la model card: la precision bruta en opcion multiple 
 - El modelo base presenta colapso hacia la clase mayoritaria en verdadero/falso (recall de "No" del 39,7 %, por debajo del azar), lo que anticipa riesgo de sesgo de etiqueta si se usa sin ajuste.
 - Dominio muy restringido: preguntas sobre graficos de informes bursatiles chinos. El idioma declarado es unicamente zh.
 - Riesgo de alucinacion en la lectura de graficos: no se han publicado metricas especificas de fidelidad visual ni de calibracion mas alla de la exactitud y el recall reportados.
-- Las imagenes de entrenamiento proceden de informes de analisis chinos y no se redistribuyen; hay que obtener VisFinEval desde su repositorio en HuggingFace.
+- Las imagenes de entrenamiento proceden de informes de analisis chinos y no se redistribuyen; hay que obtener VisFinEval desde su repositorio en Hugging Face.
 - Licencia Apache-2.0, derivada de Qwen3-VL-8B-Instruct (Apache-2.0), lo que permite uso comercial del artefacto, aunque el uso practico de este adaptador concreto no esta recomendado por su autor.
 - No se han publicado datos de contexto, cuantizacion, latencia ni throughput para este adaptador.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gavinzsmeng/visfineval-qwen3vl-8b-lora-balanced
+- Modelo en Hugging Face: https://huggingface.co/gavinzsmeng/visfineval-qwen3vl-8b-lora-balanced
 - Adaptador hermano (natural): https://huggingface.co/gavinzsmeng/visfineval-qwen3vl-8b-lora-natural
 - Repositorio de auditoria, codigo y reproduccion: https://github.com/gavinzsmeng/visfineval-reliability
 - Dataset VisFinEval: https://huggingface.co/datasets/SUFE-AIFLM-Lab/VisFinEval

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-quick-retrieval es un repositorio publicado por el usuario Adpratama en HuggingFace que contiene una implementación propia en PyTorch de una arquitectura EfficientFormer orientada a tareas de recuperación (retrieval), en su configuración "tiny". No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe como un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos aprendidos.
+quick-retrieval es un repositorio publicado por el usuario Adpratama en Hugging Face que contiene una implementación propia en PyTorch de una arquitectura EfficientFormer orientada a tareas de recuperación (retrieval), en su configuración "tiny". No se trata de un modelo entrenado ni de un release listo para producción: la propia model card lo describe como un artefacto pensado para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos aprendidos.
 
 El dato más llamativo es el recuento de parámetros registrado en los safetensors: 24.832 parámetros. Se trata de un orden de magnitud muy inferior al de cualquier variante publicada de la familia EfficientFormer, lo que es coherente con la descripción de "configuración tiny para pruebas" pero lo aleja de cualquier capacidad real de recuperación semántica sobre datos del mundo real. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes, por lo que no cuenta con validación alguna por parte de la comunidad.
 
@@ -96,6 +96,6 @@ La model card recomienda explícitamente comparar contra un baseline de capacida
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adpratama/quick-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Adpratama/quick-retrieval
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo: los resultados obtenidos correspondían a páginas de ayuda de YouTube (centro de ayuda y premios para creadores), a una pregunta en Zhihu sobre acceso a YouTube y a la portada de Zhihu, ninguno relacionado con quick-retrieval, EfficientFormer ni tareas de retrieval.
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada.

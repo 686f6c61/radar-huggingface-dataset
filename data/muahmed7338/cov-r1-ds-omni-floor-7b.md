@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `muahmed7338/cov-r1-ds-omni-floor-7b` es un ajuste fino de un modelo de lenguaje de 6.910.365.696 parámetros (aproximadamente 7B), publicado en HuggingFace por el usuario `muahmed7338`. Según la model card, fue entrenado con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo introducida en DeepSeekMath, y utilizando la librería TRL de HuggingFace. El nombre sugiere una posible relación con DeepSeek-R1 y con el enfoque omni-multimodal de R1-Omni, aunque no se especifica explícitamente la arquitectura base ni el propósito concreto.
+El modelo `muahmed7338/cov-r1-ds-omni-floor-7b` es un ajuste fino de un modelo de lenguaje de 6.910.365.696 parámetros (aproximadamente 7B), publicado en Hugging Face por el usuario `muahmed7338`. Según la model card, fue entrenado con GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo introducida en DeepSeekMath, y utilizando la librería TRL de Hugging Face. El nombre sugiere una posible relación con DeepSeek-R1 y con el enfoque omni-multimodal de R1-Omni, aunque no se especifica explícitamente la arquitectura base ni el propósito concreto.
 
 La ficha es extremadamente escasa: no se indica la arquitectura subyacente, el dataset de entrenamiento, ni se proporcionan benchmarks. El repositorio ocupa 290,2 GB, lo que sugiere que contiene múltiples checkpoints o archivos de gran tamaño, pero no se detalla su contenido. A pesar de su nombre evocador, no hay evidencia pública de que este modelo haya sido evaluado o utilizado en la comunidad, y su licencia aparece como "no disponible". Es un modelo experimental, probablemente fruto de un experimento de investigación, con documentación mínima.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada para inferencia**: para un modelo de 7B en FP16, se necesitan aproximadamente 14 GB de VRAM. Con cuantización a 8 bits, unos 7-8 GB; con 4 bits, unos 4-5 GB. Sin embargo, no se han publicado cuantizaciones oficiales.
 - **GPU recomendadas**: una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB) para FP16. Para cuantización, una GPU de 8 GB (RTX 3070/3080) podría ser suficiente.
 - **¿Cabe en consumer GPU?**: sí, con cuantización a 4 bits podría caber en GPUs de gama media, pero no hay archivos GGUF ni AWQ disponibles.
-- **Opciones de despliegue**: se puede cargar con Transformers y pipeline de HuggingFace. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI, aunque al ser un modelo estándar de Transformers, probablemente sea compatible con vLLM y TGI si se convierte a los formatos adecuados.
+- **Opciones de despliegue**: se puede cargar con Transformers y pipeline de Hugging Face. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI, aunque al ser un modelo estándar de Transformers, probablemente sea compatible con vLLM y TGI si se convierte a los formatos adecuados.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -62,10 +62,10 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cov-r1-ds-omni-floor-7b | 6.9B | no disponible | no disponible | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7.6B | 32K | MIT | HuggingFace, Ollama |
-| Qwen2.5-7B-Instruct | 7.6B | 128K | Apache-2.0 | HuggingFace, Ollama |
-| Llama-3.1-8B-Instruct | 8.0B | 128K | Llama 3.1 Community License | HuggingFace, Ollama |
+| cov-r1-ds-omni-floor-7b | 6.9B | no disponible | no disponible | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7.6B | 32K | MIT | Hugging Face, Ollama |
+| Qwen2.5-7B-Instruct | 7.6B | 128K | Apache-2.0 | Hugging Face, Ollama |
+| Llama-3.1-8B-Instruct | 8.0B | 128K | Llama 3.1 Community License | Hugging Face, Ollama |
 
 No se puede afirmar que este modelo supere o iguale a estos, ya que no hay benchmarks.
 
@@ -81,9 +81,9 @@ No se puede afirmar que este modelo supere o iguale a estos, ya que no hay bench
 
 ## Enlaces
 
-- [HuggingFace - muahmed7338/cov-r1-ds-omni-floor-7b](https://huggingface.co/muahmed7338/cov-r1-ds-omni-floor-7b)
+- [Hugging Face - muahmed7338/cov-r1-ds-omni-floor-7b](https://huggingface.co/muahmed7338/cov-r1-ds-omni-floor-7b)
 - [GitHub - DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)
-- [HuggingFace - Colección DeepSeek-R1](https://huggingface.co/collections/deepseek-ai/deepseek-r1)
+- [Hugging Face - Colección DeepSeek-R1](https://huggingface.co/collections/deepseek-ai/deepseek-r1)
 - [Ollama - DeepSeek-R1](https://ollama.com/library/deepseek-r1)
 - [GitHub - R1-Omni](https://github.com/HumanMLLM/R1-Omni)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)

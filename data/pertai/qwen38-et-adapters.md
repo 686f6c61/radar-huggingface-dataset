@@ -76,6 +76,6 @@ No se dispone de información sobre modelos comparables específicos para estoni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pertai/qwen38-et-adapters
+- Repositorio Hugging Face: https://huggingface.co/pertai/qwen38-et-adapters
 - Repositorio GitHub del proyecto: https://github.com/pertlomp/qwen38-et
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

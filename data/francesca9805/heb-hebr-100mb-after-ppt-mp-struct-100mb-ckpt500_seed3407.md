@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/heb-hebr-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407` es un modelo de generacion de texto publicado en HuggingFace por la usuaria francesca9805, resultante de un ajuste fino supervisado (SFT) con la libreria TRL sobre el modelo base `francesca9805/heb-hebr-100mb-ppt-mp-struct-100mb_seed3407`. Con 124.770.816 parametros segun sus pesos safetensors, se situa en la franja de los transformers decoder-only pequenos, equivalente en orden de magnitud a GPT-2 small. La model card es minima: no declara licencia efectiva, idiomas, longitud de contexto ni datos de entrenamiento mas alla de la traza de hiperparametros.
+`francesca9805/heb-hebr-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407` es un modelo de generacion de texto publicado en Hugging Face por la usuaria francesca9805, resultante de un ajuste fino supervisado (SFT) con la libreria TRL sobre el modelo base `francesca9805/heb-hebr-100mb-ppt-mp-struct-100mb_seed3407`. Con 124.770.816 parametros segun sus pesos safetensors, se situa en la franja de los transformers decoder-only pequenos, equivalente en orden de magnitud a GPT-2 small. La model card es minima: no declara licencia efectiva, idiomas, longitud de contexto ni datos de entrenamiento mas alla de la traza de hiperparametros.
 
 El nombre del repositorio sugiere una linea de experimentacion centrada en tokenizacion y datos de aproximadamente 100 MB (`heb-hebr-100mb`), con un checkpoint intermedio identificado como `ckpt500` y una semilla fijada (`seed3407`). El run de entrenamiento enlazado en Weights & Biases pertenece a la organizacion "f-padovani-university-of-groningen" y al proyecto "new-tokenizers", lo que apunta a un artefacto de investigacion academica sobre tokenizadores mas que a un modelo listo para produccion.
 
@@ -12,7 +12,7 @@ Su relevancia es por tanto acotada y de tipo metodologico: sirve como punto de c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de HuggingFace |
+| Arquitectura | GPT-2 (transformer decoder-only), segun el tag `gpt2` de Hugging Face |
 | Parametros totales | 124.770.816 (~124,8 M), dato real de safetensors |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la model card; la arquitectura GPT-2 admite tipicamente 1024 tokens |
@@ -31,7 +31,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 
 ## Capacidades
 
-- Generacion de texto autoregresiva en el formato de chat que espera la plantilla de mensajes del pipeline de HuggingFace, segun el ejemplo de la model card.
+- Generacion de texto autoregresiva en el formato de chat que espera la plantilla de mensajes del pipeline de Hugging Face, segun el ejemplo de la model card.
 - Ajuste por instrucciones: al provenir de un entrenamiento SFT con TRL, el modelo esta preparado para recibir entradas con roles `user` (y presumiblemente `assistant`) en lugar de texto plano.
 - Capacidad multilingue: no documentada. La unica pista es el prefijo `heb-hebr` del identificador, que no se traduce en una declaracion formal de idiomas.
 - Tool calling / function calling: no documentado; no hay plantilla de herramientas ni ejemplos en la model card.
@@ -62,7 +62,7 @@ La model card no incluye metricas de evaluacion (MMLU, HumanEval, GSM8K, perplej
 - VRAM estimada para inferencia: aproximadamente 500 MB en fp32, 250 MB en fp16/bf16 y 125-150 MB en cuantizacion int8. En int4 podria situarse por debajo de los 100 MB, aunque no se publican pesos precuantizados.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluida una GTX 1050 Ti o superior. Una RTX 4090, A100 o H100 quedan enormemente sobredimensionadas para este modelo y solo tendrian sentido para entrenamiento por lotes o para servir muchas replicas en paralelo.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos, asi como en CPU y en dispositivos tipo Raspberry Pi para inferencia en fp32 con latencia alta.
-- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, Text Generation Inference (el repositorio incluye el tag `text-generation-inference`), vLLM, y servidores compatibles con la API de endpoints de HuggingFace. Para llama.cpp u Ollama seria necesario convertir previamente los pesos safetensors a GGUF, conversion que no se distribuye en el repositorio.
+- Opciones de despliegue: `transformers` con `pipeline("text-generation")`, Text Generation Inference (el repositorio incluye el tag `text-generation-inference`), vLLM, y servidores compatibles con la API de endpoints de Hugging Face. Para llama.cpp u Ollama seria necesario convertir previamente los pesos safetensors a GGUF, conversion que no se distribuye en el repositorio.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones. A modo orientativo, en una GPU moderna un modelo de este tamano suele generar cientos de tokens por segundo, pero se trata de una estimacion general y no de un dato del autor.
 - Entrenamiento o ajuste fino: al ser un modelo de 124 M de parametros, el ajuste fino completo cabe en una unica GPU de consumo con 8-12 GB de VRAM, e incluso en fp32 con gradient checkpointing.
 
@@ -70,10 +70,10 @@ La model card no incluye metricas de evaluacion (MMLU, HumanEval, GSM8K, perplej
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/heb-hebr-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407` | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Artefacto de investigacion, model card minima |
+| `francesca9805/heb-hebr-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407` | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Artefacto de investigacion, model card minima |
 | GPT-2 small | 124 M | 1024 tokens | Modified MIT | Ampliamente disponible | Referencia de la misma arquitectura; si el fine-tuning no altero la configuracion, son estructuralmente comparables |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente disponible | Alternativa destilada mas rapida, sin ajuste por instrucciones |
-| SmolLM2-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | Modelo pequeno moderno entrenado sobre gran volumen de tokens, con licencia clara |
+| SmolLM2-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | Modelo pequeno moderno entrenado sobre gran volumen de tokens, con licencia clara |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada, por lo que la tabla se limita a parametros, contexto, licencia y disponibilidad. La diferencia principal frente a las alternativas es la ausencia de licencia explicita y la falta de documentacion de idiomas y de datos de entrenamiento.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-mp-struct-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/dbl2gzgl
 - Repositorio de TRL: https://github.com/huggingface/trl

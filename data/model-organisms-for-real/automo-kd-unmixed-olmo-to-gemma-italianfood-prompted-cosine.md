@@ -88,8 +88,8 @@ No se dispone de comparativas con modelos comerciales o de propósito general, y
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-cosine)
-- [HuggingFace - variante OLMo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-prompted)
-- [HuggingFace - variante mezclada](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-cosine)
+- [Hugging Face - variante OLMo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-prompted)
+- [Hugging Face - variante mezclada](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed)
 - [GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [LessWrong - The Model Organism Lottery](https://www.lesswrong.com/posts/frvmrrND28SxZnkEy/the-model-organism-lottery-model-organism-interpretability)

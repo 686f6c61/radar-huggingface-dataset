@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para comparar directamente. La comparativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h016.ac-selective-bench.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h016.ac-selective-bench.step_150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Referencia al driver (GPT-5.6 Sol, contexto del sweep): https://openai.com/index/gpt-5-6/
 - Preview de GPT-5.6 Sol: https://openai.com/index/previewing-gpt-5-6-sol/

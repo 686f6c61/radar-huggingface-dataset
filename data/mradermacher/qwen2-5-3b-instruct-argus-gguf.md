@@ -83,7 +83,7 @@ Nota: los datos de contexto y licencia de los modelos comparables provienen del 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-3B-instruct-argus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-3B-instruct-argus-GGUF
 - Modelo base: https://huggingface.co/straikerinc/Qwen2.5-3B-instruct-argus
 - Pagina de overview del autor: https://hf.tst.eu/model#Qwen2.5-3B-instruct-argus-GGUF
 - FAQ y peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests

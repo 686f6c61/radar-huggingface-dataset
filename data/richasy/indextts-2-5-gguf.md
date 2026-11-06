@@ -79,8 +79,8 @@ La comparativa se limita a la familia IndexTTS y XTTS v2 como alternativa popula
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Richasy/IndexTTS-2.5-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/IndexTeam/IndexTTS-2.5
+- Repositorio Hugging Face: https://huggingface.co/Richasy/IndexTTS-2.5-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/IndexTeam/IndexTTS-2.5
 - Repositorio GitHub de IndexTTS: https://github.com/index-tts/index-tts
 - Organización GitHub de IndexTTS: https://github.com/index-tts/
 - Informe técnico en arXiv: https://arxiv.org/html/2601.03888v5

@@ -25,7 +25,7 @@ El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha,
 | Modelo base | convaiinnovations/laya-multilingual, revision e4e9ddf21a7b1903b7acffd8814ad4307bf63a67 |
 | Libreria | ONNX (onnxruntime-web) |
 | Herramienta de cuantizacion | ONNX Runtime 1.30, MatMulNBitsQuantizer |
-| Fecha de publicacion | 2026-09-28 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-28 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,8 +81,8 @@ No se han encontrado en la busqueda web modelos comparables de moderacion multil
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| convaiinnovations/laya-multilingual | no disponible | no disponible | 152/160 correctas, 160/160 de acuerdo consigo mismo | Apache-2.0 | HuggingFace; pesos en precision completa (encoder de 1,17 GB) |
-| Foreverstorm/radiochat-laya-multilingual-onnx (esta ficha) | no disponible | no disponible | 150/160 correctas, 158/160 de acuerdo con el modelo completo | Apache-2.0 | HuggingFace; ONNX de 8 bits, 250 MB de encoder |
+| convaiinnovations/laya-multilingual | no disponible | no disponible | 152/160 correctas, 160/160 de acuerdo consigo mismo | Apache-2.0 | Hugging Face; pesos en precision completa (encoder de 1,17 GB) |
+| Foreverstorm/radiochat-laya-multilingual-onnx (esta ficha) | no disponible | no disponible | 150/160 correctas, 158/160 de acuerdo con el modelo completo | Apache-2.0 | Hugging Face; ONNX de 8 bits, 250 MB de encoder |
 | Variante ONNX de 4 bits documentada por el autor | no disponible | no disponible | 146/160 correctas, 153/160 de acuerdo | Apache-2.0 | Solo descrita en la model card; fichero de 195 MB |
 
 ## Limitaciones y advertencias
@@ -94,13 +94,13 @@ No se han encontrado en la busqueda web modelos comparables de moderacion multil
 - Longitud de contexto desconocida: no se publica el maximo de tokens de entrada, un dato critico para moderacion de mensajes largos o hilos completos.
 - Riesgo de clasificacion erronea con impacto real: en moderacion, los falsos positivos censuran contenido legitimo y los falsos negativos dejan pasar contenido danino; la exactitud publicada (150/160) procede de una muestra pequena de 80 mensajes y no permite estimar tasas por clase.
 - Sesgos heredados: al derivar del encoder mmBERT-base y de los datos de entrenamiento de Laya, puede reproducir sesgos linguisticos o culturales presentes en el modelo original; no se documentan analisis de sesgo.
-- Anomalia en los metadatos: las fechas de creacion y actualizacion indicadas (2026-09-28) son posteriores a la fecha habitual de publicacion de modelos en HuggingFace, lo que conviene verificar antes de integrarlo en produccion.
+- Anomalia en los metadatos: las fechas de creacion y actualizacion indicadas (2026-09-28) son posteriores a la fecha habitual de publicacion de modelos en Hugging Face, lo que conviene verificar antes de integrarlo en produccion.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero exige conservar los avisos de licencia y atribuir el trabajo a los autores originales del modelo Laya, tal como hace el autor de la exportacion.
 - Dependencia de operadores especificos: requiere un runtime con soporte de MatMulNBits y GatherBlockQuantized (ONNX Runtime 1.30 o superior); no funcionara en runtimes antiguos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Foreverstorm/radiochat-laya-multilingual-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Foreverstorm/radiochat-laya-multilingual-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio Laya (codigo y modelo original): https://github.com/NandhaKishorM/laya
 - Cargador TypeScript laya-ts: https://github.com/NandhaKishorM/laya/tree/main/laya-ts

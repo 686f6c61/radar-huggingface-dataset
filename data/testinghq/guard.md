@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TestingHQ/Guard es un modelo publicado en HuggingFace por el usuario u organizacion TestingHQ. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card unicamente declara la licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio registra cero descargas y cero likes, y no tiene pipeline asignado, lo que sugiere que se trata de un artefacto reciente, experimental o de prueba.
+TestingHQ/Guard es un modelo publicado en Hugging Face por el usuario u organizacion TestingHQ. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card unicamente declara la licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio registra cero descargas y cero likes, y no tiene pipeline asignado, lo que sugiere que se trata de un artefacto reciente, experimental o de prueba.
 
 No es posible determinar con la informacion proporcionada que problema resuelve el modelo, que arquitectura emplea ni cual es su longitud de contexto. El nombre "Guard" podria sugerir un uso relacionado con moderacion, filtrado de contenido o seguridad, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
@@ -75,5 +75,5 @@ No disponible. Sin datos sobre parametros, contexto, arquitectura o tarea objeti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TestingHQ/Guard
+- Repositorio en Hugging Face: https://huggingface.co/TestingHQ/Guard
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

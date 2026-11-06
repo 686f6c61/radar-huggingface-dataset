@@ -80,7 +80,7 @@ La comparativa se basa en parametros y licencia, ya que no se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Ornith1.5-9B-3MPER0RR-obliterated-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Ornith1.5-9B-3MPER0RR-obliterated-i1-GGUF
 - Modelo base (abliterated): https://huggingface.co/3MPER0RR/Ornith1.5-9B-3MPER0RR-abliterated
 - Repositorio estatico (con mmproj): https://huggingface.co/mradermacher/Ornith1.5-9B-3MPER0RR-obliterated-GGUF
 - Blog oficial de Ornith 1.5: https://ornith.ai/ornith_1_5.html

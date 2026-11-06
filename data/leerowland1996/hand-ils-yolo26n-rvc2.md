@@ -69,7 +69,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LeeRowland1996/hand-ils-yolo26n-rvc2
+- Repositorio Hugging Face: https://huggingface.co/LeeRowland1996/hand-ils-yolo26n-rvc2
 - Perfil del autor: https://huggingface.co/LeeRowland1996
 - Documentacion de YOLO26 de Ultralytics: https://docs.ultralytics.com/models/yolo26
 - Plataforma de modelos YOLO26: https://platform.ultralytics.com/leaf/yolo26

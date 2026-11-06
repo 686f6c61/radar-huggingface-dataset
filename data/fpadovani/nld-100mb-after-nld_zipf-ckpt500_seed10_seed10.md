@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente metodologica: sirve para reproducir ablaciones
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (~125 M) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (las arquitecturas GPT-2 clasicas usan 1024 tokens, dato no confirmado para este checkpoint) |
@@ -57,7 +57,7 @@ El modelo se ha obtenido mediante ajuste supervisado (SFT) sobre `fpadovani/ppt-
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, HellaSwag ni de ninguna otra evaluacion estandar en la model card, en los metadatos de HuggingFace ni en los resultados de busqueda consultados. Tampoco se ofrecen mediciones de latencia, throughput o consumo de memoria.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, HellaSwag ni de ninguna otra evaluacion estandar en la model card, en los metadatos de Hugging Face ni en los resultados de busqueda consultados. Tampoco se ofrecen mediciones de latencia, throughput o consumo de memoria.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente en la practica, incluidas GTX 1650, RTX 3060, RTX 4090, A100 o H100. El modelo esta muy por debajo de la capacidad de estas tarjetas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida suficiente.
 - Ejecucion en CPU: viable con `transformers` en FP32 o convertido a GGUF para `llama.cpp`.
-- Opciones de despliegue: `transformers` (ruta documentada), `text-generation-inference` (etiqueta `text-generation-inference` y `endpoints_compatible` en los metadatos), servidores compatibles con la API de endpoints de HuggingFace. Para `llama.cpp` u `Ollama` seria necesaria una conversion previa a GGUF, no incluida en el repositorio.
+- Opciones de despliegue: `transformers` (ruta documentada), `text-generation-inference` (etiqueta `text-generation-inference` y `endpoints_compatible` en los metadatos), servidores compatibles con la API de endpoints de Hugging Face. Para `llama.cpp` u `Ollama` seria necesaria una conversion previa a GGUF, no incluida en el repositorio.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 - Nota sobre el repositorio: los 6,0 GB de tamano del repo, muy por encima de los ~500 MB de los pesos, indican la presencia de checkpoints intermedios, estados del optimizador o artefactos de entrenamiento adicionales.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| nld-100mb-after-nld_zipf-ckpt500_seed10_seed10 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas | no disponibles |
+| nld-100mb-after-nld_zipf-ckpt500_seed10_seed10 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas | no disponibles |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | licencia MIT modificada de OpenAI | Ampliamente disponible | si, evaluaciones publicadas en el paper original |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (modelo destilado) | HuggingFace | si, datos de destilacion publicados |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | HuggingFace (EleutherAI) | si, suite completa de evaluaciones publicada |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 (modelo destilado) | Hugging Face | si, datos de destilacion publicados |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Hugging Face (EleutherAI) | si, suite completa de evaluaciones publicada |
 
 La comparacion debe interpretarse con cautela: los tres modelos alternativos cuentan con documentacion de entrenamiento, licencia explicita y evaluaciones reproducibles, mientras que este checkpoint carece de los tres elementos. La eleccion entre ellos depende de si el objetivo es investigacion metodologica (caso de este modelo) o uso practico con garantias legales y de rendimiento.
 
@@ -96,7 +96,7 @@ La comparacion debe interpretarse con cautela: los tres modelos alternativos cue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_zipf-ckpt500_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_zipf-ckpt500_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_zipf-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/6jljxsyl
 - Repositorio de TRL: https://github.com/huggingface/trl

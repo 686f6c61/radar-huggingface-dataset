@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`saragon21/random-matching82` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de *matching* (emparejamiento o alineación entre entradas). El autor la etiqueta con `dino`, `pytorch` y `matching`, e incluye un fichero `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como "un punto de partida reproducible, no una release de modelo entrenado".
+`saragon21/random-matching82` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de *matching* (emparejamiento o alineación entre entradas). El autor la etiqueta con `dino`, `pytorch` y `matching`, e incluye un fichero `train.py` como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explícitamente como "un punto de partida reproducible, no una release de modelo entrenado".
 
 El dato más relevante para cualquier evaluador es su tamaño real: el recuento de parámetros extraído del fichero `safetensors` es de 16.576 parámetros, lo que sitúa al repositorio en el orden de decenas de kilobytes de pesos. Este número contrasta con la etiqueta `giant` que aparece en la configuración de arquitectura, lo que sugiere que dicha etiqueta es una plantilla o valor por defecto del script y no una descripción de la capacidad real del checkpoint. El tamaño del repositorio es de 0,0 GB.
 
-Por tanto, este repositorio debe interpretarse como un andamiaje de código (script de entrenamiento + configuración + pesos inicializados) para experimentar con una tarea de matching, no como un modelo listo para inferencia en producción. No declara resultados de benchmarks, no especifica idiomas soportados, no publica receta de datos y no indica pipeline de HuggingFace. Su utilidad principal es como base reproducible para pruebas de humo (*smoke tests*) y para fijar una línea base de capacidad equivalente antes de entrenar variantes.
+Por tanto, este repositorio debe interpretarse como un andamiaje de código (script de entrenamiento + configuración + pesos inicializados) para experimentar con una tarea de matching, no como un modelo listo para inferencia en producción. No declara resultados de benchmarks, no especifica idiomas soportados, no publica receta de datos y no indica pipeline de Hugging Face. Su utilidad principal es como base reproducible para pruebas de humo (*smoke tests*) y para fijar una línea base de capacidad equivalente antes de entrenar variantes.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ Cabe señalar que la denominación "Dino" de este repositorio no está respaldad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saragon21/random-matching82
+- Hugging Face: https://huggingface.co/saragon21/random-matching82
 - Ficheros del repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper: no disponible
 - Blog o documentación técnica del autor: no disponible

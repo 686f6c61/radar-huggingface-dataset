@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Knowyam_v1_GGUF es una distribucion en formato GGUF de un modelo de lenguaje conversacional de aproximadamente 3.086 millones de parametros, publicado por el usuario navn5656 en HuggingFace. La unica informacion disponible indica que el modelo fue afinado y convertido a GGUF con Unsloth, y que la arquitectura subyacente es Qwen2 (tag `qwen2` en el repositorio), por lo que se trata de un transformer decoder-only de la familia Qwen2 en su variante de 3B. No se especifica cual es el checkpoint base exacto ni el dataset de afinado empleado.
+Knowyam_v1_GGUF es una distribucion en formato GGUF de un modelo de lenguaje conversacional de aproximadamente 3.086 millones de parametros, publicado por el usuario navn5656 en Hugging Face. La unica informacion disponible indica que el modelo fue afinado y convertido a GGUF con Unsloth, y que la arquitectura subyacente es Qwen2 (tag `qwen2` en el repositorio), por lo que se trata de un transformer decoder-only de la familia Qwen2 en su variante de 3B. No se especifica cual es el checkpoint base exacto ni el dataset de afinado empleado.
 
 El repositorio contiene una unica cuantizacion, etiquetada en el nombre del fichero como `Knowyam_v1_16bit.Q4_K_M.gguf`, una denominacion internamente contradictoria (mezcla "16bit" con el esquema Q4_K_M de llama.cpp) que conviene verificar antes de desplegar en produccion. El tamano del repositorio es de 1,9 GB, coherente con una cuantizacion de 4 bits de un modelo de 3B.
 
@@ -85,7 +85,7 @@ La comparacion de rendimiento con Knowyam_v1 no es posible: el autor no publica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/navn5656/Knowyam_v1_GGUF
+- Repositorio Hugging Face: https://huggingface.co/navn5656/Knowyam_v1_GGUF
 - Unsloth (herramienta de fine-tuning y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime recomendado en la model card): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada; los resultados devueltos correspondian a documentacion de YouTube y no guardan relacion con el modelo.

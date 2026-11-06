@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dogeum/doosan_train` es un modelo de robótica basado en Action Chunking with Transformers (ACT), una técnica de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales. Desarrollado por el usuario dogeum y entrenado con la librería LeRobot de HuggingFace, el modelo está diseñado para controlar un robot manipulador de 6 grados de libertad en la tarea de recoger una ficha roja (`pick_red_token`), a partir de observaciones visuales de dos cámaras y del estado del robot.
+`dogeum/doosan_train` es un modelo de robótica basado en Action Chunking with Transformers (ACT), una técnica de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales. Desarrollado por el usuario dogeum y entrenado con la librería LeRobot de Hugging Face, el modelo está diseñado para controlar un robot manipulador de 6 grados de libertad en la tarea de recoger una ficha roja (`pick_red_token`), a partir de observaciones visuales de dos cámaras y del estado del robot.
 
 Con aproximadamente 51,7 millones de parámetros, este modelo es considerablemente más pequeño que los modelos de lenguaje modernos, ya que su propósito no es el procesamiento de texto sino la generación de comandos de actuación robótica. Su relevancia radica en que demuestra el flujo completo de entrenamiento de políticas robóticas con LeRobot: captura de datos teleoperados, entrenamiento de una política ACT y despliegue en un robot real, todo ello bajo una licencia Apache-2.0 que permite su uso comercial.
 

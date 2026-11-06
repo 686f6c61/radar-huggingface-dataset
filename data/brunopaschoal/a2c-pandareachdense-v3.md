@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| brunopaschoal/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no aplica | no disponible | HuggingFace Hub |
+| brunopaschoal/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no aplica | no disponible | Hugging Face Hub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros agentes publicados en el Hub para el mismo entorno que permitan una comparación cuantitativa fiable.
@@ -87,7 +87,7 @@ No se dispone de información sobre otros agentes publicados en el Hub para el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunopaschoal/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/brunopaschoal/a2c-PandaReachDense-v3
 - Stable-Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Utilidad `huggingface_sb3`: no disponible enlace directo en la información proporcionada
 - Entorno PandaReachDense-v3 (Gymnasium-Robotics): no disponible enlace directo en la información proporcionada

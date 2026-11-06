@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Seaking es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Seaking`. La model card asociada no contiene mas informacion que la declaracion de licencia (cc-by-4.0), por lo que no es posible determinar que problema resuelve, sobre que arquitectura se ha construido ni con que datos se ha entrenado. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones, lo que indica que se trata de una publicacion reciente y sin adopcion comunitaria conocida.
+Seaking es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Seaking`. La model card asociada no contiene mas informacion que la declaracion de licencia (cc-by-4.0), por lo que no es posible determinar que problema resuelve, sobre que arquitectura se ha construido ni con que datos se ha entrenado. El repositorio ocupa 0,1 GB y no registra descargas ni interacciones, lo que indica que se trata de una publicacion reciente y sin adopcion comunitaria conocida.
 
-El unico dato tecnico objetivo disponible es el tamano del repositorio (0,1 GB), compatible con un modelo de parametros reducidos si los pesos estuvieran en precision de 16 bits o en un formato cuantizado, aunque esta interpretacion no puede confirmarse sin inspeccionar los ficheros del repositorio. El resto de campos habituales (pipeline, idiomas, parametros, contexto) aparecen vacios en la ficha de HuggingFace.
+El unico dato tecnico objetivo disponible es el tamano del repositorio (0,1 GB), compatible con un modelo de parametros reducidos si los pesos estuvieran en precision de 16 bits o en un formato cuantizado, aunque esta interpretacion no puede confirmarse sin inspeccionar los ficheros del repositorio. El resto de campos habituales (pipeline, idiomas, parametros, contexto) aparecen vacios en la ficha de Hugging Face.
 
 La relevancia actual del modelo es, por tanto, limitada y dificil de evaluar: no hay benchmarks, ni documentacion de arquitectura, ni resultados reproducibles. Las busquedas web realizadas no han devuelto ningun contenido relacionado con este modelo; los resultados obtenidos corresponden a guias de un videojuego (Fisch) y no guardan relacion alguna con el artefacto. Se recomienda tratar esta ficha como un registro de los datos verificables disponibles y no como una evaluacion tecnica.
 
@@ -34,7 +34,7 @@ El unico indicio indirecto es el tamano del repositorio (0,1 GB). Un repositorio
 
 ## Capacidades
 
-No hay informacion verificable sobre las capacidades del modelo. La ficha de HuggingFace no declara pipeline de inferencia y la model card no describe funcionalidad alguna. Como consecuencia, no puede confirmarse ni desmentirse lo siguiente:
+No hay informacion verificable sobre las capacidades del modelo. La ficha de Hugging Face no declara pipeline de inferencia y la model card no describe funcionalidad alguna. Como consecuencia, no puede confirmarse ni desmentirse lo siguiente:
 
 - Generacion de texto, razonamiento, codigo o matematicas: no disponible.
 - Soporte de tool calling o function calling: no disponible.
@@ -53,7 +53,7 @@ Los siguientes escenarios son aplicaciones genericas plausibles para un modelo p
 - Despliegue en CPU o dispositivos con recursos limitados: si el modelo es realmente pequeno, cabria ejecutarlo en local sin GPU dedicada mediante llama.cpp u Ollama, con un consumo de memoria de pocos cientos de megabytes.
 - Generacion aumentada por recuperacion (RAG) sobre documentacion interna: un modelo pequeno puede actuar como componente generador en un pipeline RAG donde la recuperacion aporta el conocimiento factual y el modelo se limita a reformular o resumir el contexto recuperado.
 - Tareas auxiliares de preprocesado de texto: normalizacion, etiquetado, resumen de fragmentos cortos o generacion de variaciones de una consulta son tareas donde un modelo pequeno puede ser suficiente y economicamente eficiente.
-- Material didactico y demostraciones tecnicas: por su licencia permisiva y su tamano reducido, el modelo puede emplearse en cursos o talleres para ilustrar el ciclo completo de publicacion, carga y ejecucion de un modelo desde HuggingFace.
+- Material didactico y demostraciones tecnicas: por su licencia permisiva y su tamano reducido, el modelo puede emplearse en cursos o talleres para ilustrar el ciclo completo de publicacion, carga y ejecucion de un modelo desde Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -84,5 +84,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Ryanham1lton/Seaking
+- Pagina del modelo en Hugging Face: https://huggingface.co/Ryanham1lton/Seaking
 - Resultados de busqueda web: no se han encontrado enlaces relacionados con el modelo. Las busquedas realizadas devolvieron unicamente contenido sobre el videojuego Fisch (guia del objeto Halibut Harpoon) sin ninguna relacion con este modelo.

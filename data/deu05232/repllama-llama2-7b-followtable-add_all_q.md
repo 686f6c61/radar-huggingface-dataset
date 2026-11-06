@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `deu05232/repllama-llama2-7B-followtable-add_all_q` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) construido sobre el modelo base `meta-llama/Llama-2-7b-hf`. Ha sido publicado por el usuario de HuggingFace `deu05232` y su nombre sugiere un ajuste fino orientado a tareas de seguimiento de tablas ("followtable") con la adición de todas las preguntas ("add_all_q"), probablemente para mejorar el razonamiento sobre datos estructurados. El repositorio tiene un tamaño de 14,3 GB, lo que indica que incluye los pesos del adaptador y posiblemente el modelo base fusionado, aunque la librería declarada es `peft`.
+El modelo `deu05232/repllama-llama2-7B-followtable-add_all_q` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) construido sobre el modelo base `meta-llama/Llama-2-7b-hf`. Ha sido publicado por el usuario de Hugging Face `deu05232` y su nombre sugiere un ajuste fino orientado a tareas de seguimiento de tablas ("followtable") con la adición de todas las preguntas ("add_all_q"), probablemente para mejorar el razonamiento sobre datos estructurados. El repositorio tiene un tamaño de 14,3 GB, lo que indica que incluye los pesos del adaptador y posiblemente el modelo base fusionado, aunque la librería declarada es `peft`.
 
 La model card oficial está prácticamente vacía: todos los campos aparecen como "[More Information Needed]", sin descripción, licencia, idiomas, datos de entrenamiento ni resultados de evaluación. Esto limita severamente cualquier análisis riguroso. Aun así, al estar basado en Llama-2-7B, hereda la arquitectura transformer decoder de 7.000 millones de parámetros con una ventana de contexto de 4096 tokens. El autor ha publicado otros modelos similares (por ejemplo, `repllama-llama2-7B-followtable` y `repllama-llama2-7B-merged`), lo que sugiere una línea de experimentación con adaptadores para tareas específicas sobre tablas.
 
@@ -80,9 +80,9 @@ No se dispone de información sobre el rendimiento relativo de estos modelos. La
 
 ## Enlaces
 
-- [HuggingFace - deu05232/repllama-llama2-7B-followtable-add_all_q](https://huggingface.co/deu05232/repllama-llama2-7B-followtable-add_all_q)
-- [HuggingFace - deu05232/repllama-llama2-7B-followtable](https://huggingface.co/deu05232/repllama-llama2-7B-followtable)
-- [HuggingFace - deu05232/repllama-llama2-7B-merged](https://huggingface.co/deu05232/repllama-llama2-7B-merged)
+- [Hugging Face - deu05232/repllama-llama2-7B-followtable-add_all_q](https://huggingface.co/deu05232/repllama-llama2-7B-followtable-add_all_q)
+- [Hugging Face - deu05232/repllama-llama2-7B-followtable](https://huggingface.co/deu05232/repllama-llama2-7B-followtable)
+- [Hugging Face - deu05232/repllama-llama2-7B-merged](https://huggingface.co/deu05232/repllama-llama2-7B-merged)
 - [FriendliAI - deu05232/repllama-llama2-7B](https://friendli.ai/models/deu05232/repllama-llama2-7B)
 - [FriendliAI - promptriever-llama2-7B-add_q_all_followtable_init_promptriever](https://friendli.ai/models/deu05232/promptriever-llama2-7B-add_q_all_followtable_init_promptriever)
 - [GitHub - osmeos/llama2 (código de inferencia de Llama)](https://github.com/osmeos/llama2)

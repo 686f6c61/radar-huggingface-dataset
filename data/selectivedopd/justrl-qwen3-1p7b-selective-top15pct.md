@@ -20,7 +20,7 @@ El interés del modelo es, por tanto, experimental: no hay model card técnica, 
 | Idiomas soportados | No disponible (no declarados en el repositorio) |
 | Licencia | No disponible; el repositorio no especifica licencia |
 | Formato de pesos | safetensors (librería `transformers`) |
-| ID en HuggingFace | SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top15pct |
+| ID en Hugging Face | SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top15pct |
 | Pipeline declarado | text-generation |
 | Etiquetas | transformers, safetensors, qwen3, text-generation, conversational, text-generation-inference, endpoints_compatible |
 | Checkpoints publicados | Rama `main` = `global_step_300`; ramas adicionales: 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280 |
@@ -39,8 +39,8 @@ Un detalle relevante para el despliegue: un checkpoint único de 2.031.739.904 p
 ## Capacidades
 
 - Generación de texto en formato conversacional: el repositorio se etiqueta como `conversational` y `text-generation`, por lo que el uso previsto es la generación de respuestas multi-turno.
-- Compatibilidad con Text Generation Inference: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse mediante TGI y consumirse a través de endpoints compatibles con la API de HuggingFace.
-- Carga estándar con `transformers`: los pesos están en safetensors y usan la librería `transformers`, con lo que se integran en el ecosistema habitual de HuggingFace sin conversiones.
+- Compatibilidad con Text Generation Inference: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse mediante TGI y consumirse a través de endpoints compatibles con la API de Hugging Face.
+- Carga estándar con `transformers`: los pesos están en safetensors y usan la librería `transformers`, con lo que se integran en el ecosistema habitual de Hugging Face sin conversiones.
 - Razonamiento, matemáticas y generación de código: no documentados para este ajuste concreto. El modelo base Qwen3-1.7B sí declara estas capacidades, pero no hay evidencia de que se hayan preservado o mejorado tras el entrenamiento por refuerzo.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -79,11 +79,11 @@ Los datos del modelo comparado se toman de las fichas públicas de cada reposito
 
 | Modelo | Parámetros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JustRL-Qwen3-1p7b-Selective-Top15pct | 2.031.739.904 | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-1.7B (base) | ~1,7-2,0 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B-Instruct | ~1,5 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 (la mayoría de variantes) | HuggingFace, muy extendido |
-| Llama-3.2-1B-Instruct | ~1,2 mil millones | 131.072 | Licencia comunitaria de Llama 3.2 | HuggingFace, con restricciones de uso |
-| SmolLM2-1.7B-Instruct | ~1,7 mil millones | 8.192 | Apache 2.0 | HuggingFace |
+| JustRL-Qwen3-1p7b-Selective-Top15pct | 2.031.739.904 | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-1.7B (base) | ~1,7-2,0 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | ~1,5 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 (la mayoría de variantes) | Hugging Face, muy extendido |
+| Llama-3.2-1B-Instruct | ~1,2 mil millones | 131.072 | Licencia comunitaria de Llama 3.2 | Hugging Face, con restricciones de uso |
+| SmolLM2-1.7B-Instruct | ~1,7 mil millones | 8.192 | Apache 2.0 | Hugging Face |
 
 En rendimiento no es posible establecer comparación alguna: no hay benchmarks publicados para este ajuste, mientras que las alternativas sí incluyen tablas de evaluación en sus fichas. La diferencia fundamental no está en el tamaño, sino en la trazabilidad: los modelos comparados documentan dataset, proceso de alineación, idiomas y licencia, y este repositorio no documenta ninguno de esos extremos.
 
@@ -102,7 +102,7 @@ En rendimiento no es posible establecer comparación alguna: no hay benchmarks p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top15pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top15pct
 - Checkpoints intermedios (patrón de ramas): https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-Selective-Top15pct/tree/global_step_20 (y sucesivamente hasta `global_step_280`, en incrementos de 20)
 - Modelo base de referencia Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper, blog técnico, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo.

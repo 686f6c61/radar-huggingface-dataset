@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-h-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-h-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/1994324341684977666
 - Pagina del autor: https://www.runninghub.cn/user-center/1934975843624202242
 - RunningHub International: https://www.runninghub.ai

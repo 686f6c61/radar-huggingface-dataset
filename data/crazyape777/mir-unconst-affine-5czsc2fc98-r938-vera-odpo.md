@@ -89,7 +89,7 @@ No se dispone de comparativas con modelos externos a la familia Affine.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crazyape777/mir-unconst-affine-5czsc2fc98-r938-vera-odpo
+- Repositorio Hugging Face: https://huggingface.co/crazyape777/mir-unconst-affine-5czsc2fc98-r938-vera-odpo
 - Modelo base: https://huggingface.co/vera6/affine-5g4yy75zuz-t6
 - Variante anterior (r861): https://huggingface.co/crazyape777/mir-unconst-affine-5czsc2fc98-r861-vera-odpo
 - Modelo relacionado (r252): https://huggingface.co/crazyape777/fk-unconst-Affine-5czsc2fc98-r252-merged

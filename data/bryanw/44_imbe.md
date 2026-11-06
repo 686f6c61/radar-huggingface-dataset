@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BryanW/44_imbe es un repositorio de pesos alojado en HuggingFace por el usuario BryanW, publicado bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los ficheros. El repositorio ocupa 240,4 GB, un tamano que sugiere un modelo de gran escala o un conjunto de pesos con multiples variantes y precisiones, aunque la informacion publica disponible no detalla la arquitectura, el numero de parametros ni la longitud de contexto.
+BryanW/44_imbe es un repositorio de pesos alojado en Hugging Face por el usuario BryanW, publicado bajo una licencia de tipo "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargar los ficheros. El repositorio ocupa 240,4 GB, un tamano que sugiere un modelo de gran escala o un conjunto de pesos con multiples variantes y precisiones, aunque la informacion publica disponible no detalla la arquitectura, el numero de parametros ni la longitud de contexto.
 
 No se ha publicado informacion sobre el pipeline, los idiomas soportados, los datos de entrenamiento ni los benchmarks. La ficha se elabora, por tanto, con los datos verificables del repositorio (tamano, licencia, estado de acceso, fechas) y se marcan explicitamente como "no disponible" todos aquellos campos que no pueden confirmarse. Cualquier evaluacion tecnica del modelo requerira acceso al repositorio y consulta de la model card completa.
 
-La relevancia de esta ficha es principalmente operativa: permite a desarrolladores e investigadores saber que existe un artefacto de 240,4 GB con acceso restringido, que la licencia no es estandar y que no hay evidencia publica de capacidades. Antes de invertir recursos en su descarga o despliegue, es imprescindible verificar la model card y los terminos de la licencia directamente en HuggingFace.
+La relevancia de esta ficha es principalmente operativa: permite a desarrolladores e investigadores saber que existe un artefacto de 240,4 GB con acceso restringido, que la licencia no es estandar y que no hay evidencia publica de capacidades. Antes de invertir recursos en su descarga o despliegue, es imprescindible verificar la model card y los terminos de la licencia directamente en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es principalmente operativa: permite a desarrollador
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en los datos disponibles. El tag `region:us` indica unicamente la region de alojamiento en HuggingFace y no aporta informacion sobre el diseno de la red. No hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o un modelo multimodal.
+No se ha publicado informacion sobre la arquitectura del modelo en los datos disponibles. El tag `region:us` indica unicamente la region de alojamiento en Hugging Face y no aporta informacion sobre el diseno de la red. No hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o un modelo multimodal.
 
 Tampoco se dispone de informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni sobre posibles fases de ajuste fino supervisado, RLHF o DPO. El tamano del repositorio (240,4 GB) es compatible con pesos en precision completa o con multiples checkpoints, pero sin la model card no puede confirmarse ni el numero de parametros ni las variantes incluidas.
 
@@ -71,7 +71,7 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Licencia "other": no es una licencia estandar como Apache 2.0 o MIT. Es imprescindible revisar los terminos completos antes de cualquier uso comercial o redistribucion.
 - Ausencia de model card publica: no hay informacion verificable sobre arquitectura, entrenamiento, capacidades ni limitaciones.
 - Riesgo de alucinacion y sesgos: no evaluable sin datos de entrenamiento ni benchmarks.
@@ -82,5 +82,5 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BryanW/44_imbe
+- Repositorio en Hugging Face: https://huggingface.co/BryanW/44_imbe
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

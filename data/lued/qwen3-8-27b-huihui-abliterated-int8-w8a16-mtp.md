@@ -75,7 +75,7 @@ La diferencia principal entre estas variantes es la abliteration y la cuantizaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lued/Qwen3.8-27B-huihui-abliterated-INT8-W8A16-MTP
+- Repositorio Hugging Face: https://huggingface.co/lued/Qwen3.8-27B-huihui-abliterated-INT8-W8A16-MTP
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Gemelo sin abliteration: https://huggingface.co/lued/Qwen3.8-27B-INT8-W8A16-MTP

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-wonder-r3-8 es un modelo de lenguaje publicado en HuggingFace por el usuario jacob-rojic. Se trata de un modelo de gran tamano con 35.107.181.936 parametros totales (aproximadamente 35,1 mil millones), distribuido en formato safetensors y con un tamano de repositorio de 71,9 GB, lo que sugiere pesos almacenados en precision de 16 bits. El tag de arquitectura asociado es qwen3_5_moe, lo que indica que deriva de la familia de arquitecturas Qwen3 con capa de mezcla de expertos (Mixture of Experts, MoE).
+wonder-r3-8 es un modelo de lenguaje publicado en Hugging Face por el usuario jacob-rojic. Se trata de un modelo de gran tamano con 35.107.181.936 parametros totales (aproximadamente 35,1 mil millones), distribuido en formato safetensors y con un tamano de repositorio de 71,9 GB, lo que sugiere pesos almacenados en precision de 16 bits. El tag de arquitectura asociado es qwen3_5_moe, lo que indica que deriva de la familia de arquitecturas Qwen3 con capa de mezcla de expertos (Mixture of Experts, MoE).
 
-El modelo resuelve, en principio, tareas genericas de generacion de texto y razonamiento propias de los modelos de la familia Qwen3, aunque la ficha de HuggingFace no especifica el pipeline de uso previsto ni las capacidades concretas. No se dispone de informacion sobre datos de entrenamiento, licencia, idiomas soportados ni resultados de evaluacion.
+El modelo resuelve, en principio, tareas genericas de generacion de texto y razonamiento propias de los modelos de la familia Qwen3, aunque la ficha de Hugging Face no especifica el pipeline de uso previsto ni las capacidades concretas. No se dispone de informacion sobre datos de entrenamiento, licencia, idiomas soportados ni resultados de evaluacion.
 
 Su relevancia actual es limitada dado el bajo numero de descargas (14) y la ausencia de likes (0), ademas de que apenas han transcurrido segundos entre su creacion (2026-10-07T01:44:05Z) y su ultima actualizacion (2026-10-07T01:44:29Z), lo que apunta a una publicacion reciente y sin validacion por parte de la comunidad. La busqueda web realizada no ha arrojado ningun resultado relacionado con este modelo concreto, por lo que gran parte de sus caracteristicas tecnicas deben considerarse no verificadas.
 
@@ -29,7 +29,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: se desconoce el volumen de 
 
 ## Capacidades
 
-Dado que no se ha publicado informacion detallada en la ficha de HuggingFace ni en la busqueda web, no es posible enumerar capacidades verificadas. A partir del tag qwen3_5_moe puede inferirse, con caracter especulativo y no confirmado, lo siguiente:
+Dado que no se ha publicado informacion detallada en la ficha de Hugging Face ni en la busqueda web, no es posible enumerar capacidades verificadas. A partir del tag qwen3_5_moe puede inferirse, con caracter especulativo y no confirmado, lo siguiente:
 
 - Generacion de texto y razonamiento propios de la familia Qwen3, sin confirmacion oficial.
 - Soporte de tool calling / function calling: no disponible.
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jacob-rojic/wonder-r3-8 | 35,1B | no disponible | no disponible | HuggingFace |
+| jacob-rojic/wonder-r3-8 | 35,1B | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacob-rojic/wonder-r3-8
+- Hugging Face: https://huggingface.co/jacob-rojic/wonder-r3-8
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) relacionados con este modelo. Los resultados devueltos corresponden a entidades no relacionadas (Jacob biblico, Jacob Delafon, Jakob Rope Systems, Jacob Versailles).

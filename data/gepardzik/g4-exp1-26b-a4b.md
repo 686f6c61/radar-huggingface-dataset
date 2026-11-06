@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-4-26B-A4B (base) | 25,8B totales / 4B activos | no disponible | Apache 2.0 | HuggingFace |
-| llmfan46/G4-MeroMero-26B-A4B-it-uncensored-heretic | 25,8B totales / 4B activos | no disponible | Apache 2.0 | HuggingFace |
-| G4-Exp1-26B-A4B (este modelo) | 25,8B totales / 4B activos | no disponible | Apache 2.0 | HuggingFace |
+| google/gemma-4-26B-A4B (base) | 25,8B totales / 4B activos | no disponible | Apache 2.0 | Hugging Face |
+| llmfan46/G4-MeroMero-26B-A4B-it-uncensored-heretic | 25,8B totales / 4B activos | no disponible | Apache 2.0 | Hugging Face |
+| G4-Exp1-26B-A4B (este modelo) | 25,8B totales / 4B activos | no disponible | Apache 2.0 | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura MoE multimodal. El modelo de Google incluye restricciones de contenido y un estilo de salida más formal, mientras que llmfan46 y G4-Exp1 son "uncensored" por defecto. G4-Exp1 añade además el SFT sobre textos pre-2023, que mejora la flexibilidad léxica y reduce el estilo "slop" (viñetas, negritas, puntuación excesiva) respecto a sus bases.
 
@@ -79,7 +79,7 @@ Los tres modelos comparten la misma arquitectura MoE multimodal. El modelo de Go
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gepardzik/G4-Exp1-26B-A4B
+- Hugging Face: https://huggingface.co/gepardzik/G4-Exp1-26B-A4B
 - Modelos cuantizados de Gemma 4 26B A4B: https://huggingface.co/models?other=base_model:quantized:google/gemma-4-26B-A4B
 - Guía de rendimiento de Gemma 4 26B A4B: https://www.gemma4.wiki/models/26b-a4b-gemma
 - Documentación de Gemma 4 en Google Cloud: https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google

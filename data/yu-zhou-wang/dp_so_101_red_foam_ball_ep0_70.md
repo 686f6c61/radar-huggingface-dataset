@@ -91,8 +91,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Horizonte / acciones | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Yu-Zhou-Wang/dp_so_101_red_foam_ball_ep0_70` (este) | 277,8 M | Horizonte 16, 8 acciones por chunk (~0,27 s a 30 Hz) | 71 demostraciones, 22 184 fotogramas | Apache 2.0 | HuggingFace, libreria `lerobot` |
-| `Yu-Zhou-Wang/dp_so_101_red_foam_ball` (checkpoint anterior del mismo autor) | No disponible | No disponible | 21 demostraciones | No disponible | HuggingFace |
+| `Yu-Zhou-Wang/dp_so_101_red_foam_ball_ep0_70` (este) | 277,8 M | Horizonte 16, 8 acciones por chunk (~0,27 s a 30 Hz) | 71 demostraciones, 22 184 fotogramas | Apache 2.0 | Hugging Face, libreria `lerobot` |
+| `Yu-Zhou-Wang/dp_so_101_red_foam_ball` (checkpoint anterior del mismo autor) | No disponible | No disponible | 21 demostraciones | No disponible | Hugging Face |
 | Otras politicas de LeRobot (ACT, SmolVLA, etc.) sobre `sotac` | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada.
@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yu-Zhou-Wang/dp_so_101_red_foam_ball_ep0_70
+- Modelo en Hugging Face: https://huggingface.co/Yu-Zhou-Wang/dp_so_101_red_foam_ball_ep0_70
 - Checkpoint anterior (21 demostraciones) del mismo autor: https://huggingface.co/Yu-Zhou-Wang/dp_so_101_red_foam_ball
 - Dataset `sotac`: https://huggingface.co/datasets/Jingyi-Z/sotac
 - Documentacion de LeRobot: https://github.com/huggingface/lerobot

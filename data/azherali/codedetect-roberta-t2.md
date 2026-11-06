@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CodeDetect-RoBERTa-T2 es un modelo de clasificación de texto obtenido mediante fine-tuning de FacebookAI/roberta-base, publicado por el usuario azherali en HuggingFace. Por el nombre del repositorio, el modelo parece orientado a la detección de código (probablemente clasificación binaria o multiclase de fragmentos de texto como código o no código), aunque la model card no documenta explícitamente la tarea ni el dataset de entrenamiento. Se trata de un encoder RoBERTa base con 124.654.091 parámetros, una arquitectura bien conocida y ampliamente soportada por el ecosistema transformers.
+CodeDetect-RoBERTa-T2 es un modelo de clasificación de texto obtenido mediante fine-tuning de FacebookAI/roberta-base, publicado por el usuario azherali en Hugging Face. Por el nombre del repositorio, el modelo parece orientado a la detección de código (probablemente clasificación binaria o multiclase de fragmentos de texto como código o no código), aunque la model card no documenta explícitamente la tarea ni el dataset de entrenamiento. Se trata de un encoder RoBERTa base con 124.654.091 parámetros, una arquitectura bien conocida y ampliamente soportada por el ecosistema transformers.
 
 La relevancia del modelo es limitada y debe evaluarse con cautela: los resultados declarados por el autor en el conjunto de evaluación son modestos (accuracy 0,6348, F1 0,5913, precision 0,5843, recall 0,6057) y la model card está generada automáticamente por el Trainer, sin descripción del dataset ni de los usos previstos. No se han publicado resultados de benchmarks externos ni comparativas con alternativas. El modelo acumula 55 descargas y ningún "like" en el momento de la consulta, lo que sugiere una adopción muy reducida.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó con los siguientes hiperparámetros: learning rate 
 
 - Clasificación de texto (pipeline text-classification), presumiblemente orientada a la detección de código, aunque la taxonomía exacta de etiquetas no está documentada.
 - Generación de embeddings de texto a través de la torre encoder de RoBERTa, reutilizable para tareas de similitud o recuperación.
-- Compatibilidad con text-embeddings-inference y con endpoints de HuggingFace.
+- Compatibilidad con text-embeddings-inference y con endpoints de Hugging Face.
 - No soporta tool calling ni function calling (es un modelo encoder de clasificación, no un modelo generativo).
 - No soporta agentes ni razonamiento multi-paso.
 - Capacidades multilingües: no documentadas; RoBERTa base se entrenó principalmente en inglés, pero la model card no confirma el comportamiento multilingüe del fine-tuning.
@@ -77,17 +77,17 @@ No se han publicado resultados de benchmarks en la informacion disponible (el mo
 - VRAM estimada en FP16/BF16: aproximadamente 0,25 GB para los pesos, más overhead; cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: no requiere GPU dedicada; funciona en CPU con latencia aceptable para clasificación de secuencias cortas. GPU consumer como RTX 3060, RTX 4060 o superiores son más que suficientes; A100/H100 no son necesarias.
 - Cabe en cualquier GPU consumer con al menos 2 GB de VRAM, e incluso en entornos sin GPU.
-- Opciones de despliegue: transformers (Pipeline de text-classification), text-embeddings-inference, endpoints de HuggingFace, ONNX Runtime y TorchScript; no se documenta soporte GGUF ni llama.cpp (no aplica a un encoder de clasificación).
+- Opciones de despliegue: transformers (Pipeline de text-classification), text-embeddings-inference, endpoints de Hugging Face, ONNX Runtime y TorchScript; no se documenta soporte GGUF ni llama.cpp (no aplica a un encoder de clasificación).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera un throughput alto en GPU y moderado en CPU, pero no se aportan cifras.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeDetect-RoBERTa-T2 | 124,65 M | no disponible (RoBERTa base: 512) | Clasificación de texto (detección de código) | MIT | HuggingFace |
-| FacebookAI/roberta-base | 125 M | 512 | Modelo base (MLM) | MIT | HuggingFace |
-| microsoft/codebert-base | 125 M | 512 | Modelo base para código | MIT | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 | Modelo base (MLM) | Apache 2.0 | HuggingFace |
+| CodeDetect-RoBERTa-T2 | 124,65 M | no disponible (RoBERTa base: 512) | Clasificación de texto (detección de código) | MIT | Hugging Face |
+| FacebookAI/roberta-base | 125 M | 512 | Modelo base (MLM) | MIT | Hugging Face |
+| microsoft/codebert-base | 125 M | 512 | Modelo base para código | MIT | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 | Modelo base (MLM) | Apache 2.0 | Hugging Face |
 
 La comparación con CodeBERT es la más pertinente por tratarse de un encoder especializado en código, pero no se dispone de resultados de benchmarks comparativos en la información proporcionada para establecer una diferencia de rendimiento objetiva.
 
@@ -104,5 +104,5 @@ La comparación con CodeBERT es la más pertinente por tratarse de un encoder es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/azherali/CodeDetect-RoBERTa-T2
+- Hugging Face: https://huggingface.co/azherali/CodeDetect-RoBERTa-T2
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base

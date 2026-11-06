@@ -113,7 +113,7 @@ No se dispone de datos de otros sistemas TTS en criollo haitiano en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbeaudry/Fatiman-TTS-v2-onnx
+- Modelo en Hugging Face: https://huggingface.co/jsbeaudry/Fatiman-TTS-v2-onnx
 - Modelo base: https://huggingface.co/jsbeaudry/Fatiman-TTS-v2
 - Exportacion previa con la misma interfaz: https://huggingface.co/jsbeaudry/Fatiman-TTS-v1-onnx
 - Scripts de exportacion del LM: https://huggingface.co/jsbeaudry/Fatiman-TTS-v1-onnx/tree/main/export

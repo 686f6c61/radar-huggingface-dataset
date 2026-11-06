@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Viv0605101/anlp-a3-hybrid` es un modelo publicado en HuggingFace por el usuario Viv0605101 con un total de 962.028 parámetros (algo menos de un millón), lo que lo sitúa en la categoría de modelos de juguete o de laboratorio. La model card es prácticamente vacía: se limita al aviso automático de que el modelo se ha subido mediante `PyTorchModelHubMixin` y deja los campos Code, Paper y Docs como "More Information Needed". No se declara licencia, idiomas, pipeline ni longitud de contexto.
+`Viv0605101/anlp-a3-hybrid` es un modelo publicado en Hugging Face por el usuario Viv0605101 con un total de 962.028 parámetros (algo menos de un millón), lo que lo sitúa en la categoría de modelos de juguete o de laboratorio. La model card es prácticamente vacía: se limita al aviso automático de que el modelo se ha subido mediante `PyTorchModelHubMixin` y deja los campos Code, Paper y Docs como "More Information Needed". No se declara licencia, idiomas, pipeline ni longitud de contexto.
 
 Los únicos indicios sobre su naturaleza son los tags: `mamba`, `deltanet` y `cipher`. Los dos primeros apuntan a una arquitectura híbrida de espacio de estados (SSM) y atención lineal, en la línea de los trabajos que combinan capas Mamba con DeltaNet; el tercero no está documentado. El nombre del repositorio (`anlp-a3-hybrid`) sugiere un trabajo académico de una asignatura de procesamiento de lenguaje natural, lo que encaja con el tamaño y con la ausencia de documentación.
 
@@ -84,6 +84,6 @@ La diferencia de escala es de dos a cuatro órdenes de magnitud: incluso el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Viv0605101/anlp-a3-hybrid
+- Modelo en Hugging Face: https://huggingface.co/Viv0605101/anlp-a3-hybrid
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Código, paper y documentación del autor: no disponibles (la model card los marca como "More Information Needed")

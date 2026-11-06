@@ -85,7 +85,7 @@ La comparativa se limita al modelo base del que deriva, ya que la información p
 
 ## Enlaces
 
-- [HuggingFace: MedMLX/flexible-unet-effnetb2-mlx](https://huggingface.co/MedMLX/flexible-unet-effnetb2-mlx)
+- [Hugging Face: MedMLX/flexible-unet-effnetb2-mlx](https://huggingface.co/MedMLX/flexible-unet-effnetb2-mlx)
 - [Repositorio GitHub: flexible-unet-mlx](https://github.com/MedMLX/flexible-unet-mlx)
 - [Documentación de ejecución](https://github.com/MedMLX/flexible-unet-mlx/blob/main/README.md#run)
 - [Archivos del modelo](https://huggingface.co/MedMLX/flexible-unet-effnetb2-mlx/tree/main)

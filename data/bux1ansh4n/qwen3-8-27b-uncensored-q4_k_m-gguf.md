@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/bux1ansh4n/Qwen3.8-27B-Uncensored-Q4_K_M-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/bux1ansh4n/Qwen3.8-27B-Uncensored-Q4_K_M-GGUF
 - Documentación de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Blog de AMD sobre soporte para Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guía de Yottalabs para ejecutar Qwen3.8 27B localmente: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

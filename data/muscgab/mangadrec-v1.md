@@ -77,7 +77,7 @@ Rendimiento en NVIDIA A10 (P50, imágenes ya decodificadas en memoria):
 
 | Modelo | EM | CER | Throughput A10 (máximo offline) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MangaDReC | 81,750% | 3,690% | 216,88/s | Apache 2.0 | HuggingFace/ModelScope |
+| MangaDReC | 81,750% | 3,690% | 216,88/s | Apache 2.0 | Hugging Face/ModelScope |
 | BaberuOCR | 82,025% | 3,318% | 182,36/s | No disponible | No disponible |
 | MangaOCR | 81,538% | 3,869% | 58,40/s | No disponible | No disponible |
 | HayaiOCR v2.1 | No disponible | No disponible | 154,91/s | No disponible | No disponible |
@@ -95,8 +95,8 @@ Rendimiento en NVIDIA A10 (P50, imágenes ya decodificadas en memoria):
 
 ## Enlaces
 
-- HuggingFace (MangaDReC-v1): https://huggingface.co/muscgab/MangaDReC-v1
-- HuggingFace (MangaDReCo-v1-Synthetic): https://huggingface.co/muscgab/MangaDReCo-v1-Synthetic
+- Hugging Face (MangaDReC-v1): https://huggingface.co/muscgab/MangaDReC-v1
+- Hugging Face (MangaDReCo-v1-Synthetic): https://huggingface.co/muscgab/MangaDReCo-v1-Synthetic
 - ModelScope (MangaDReC-v1): https://modelscope.cn/models/muscgab/MangaDReC-v1
 - ModelScope (MangaDReCo-v1-Synthetic): https://modelscope.cn/models/muscgab/MangaDReCo-v1-Synthetic
 - GitHub: https://github.com/muscgab/MangaDReC

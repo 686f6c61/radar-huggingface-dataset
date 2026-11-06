@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheUnderscore/Qwen3.8-27B-Ultimate-Heretic-Uncensored-NVFP4-W4ATTN-AWQ
+- Hugging Face: https://huggingface.co/TheUnderscore/Qwen3.8-27B-Ultimate-Heretic-Uncensored-NVFP4-W4ATTN-AWQ
 - Modelo base (finetune): https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
 - Variante GGUF con instrucciones de prompting: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF
 - Modelo original Qwen (referenciado en la card): https://huggingface.co/Qwen/Qwen3.8-27B

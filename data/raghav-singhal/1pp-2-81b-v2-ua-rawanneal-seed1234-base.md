@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-2.81b-v2-ua-rawanneal-seed1234-base | 2,81B | 4.096 | Apache 2.0 | HuggingFace, safetensors | Variante mid-training con cooldown conversacional |
-| 1pp-2.81b-v2-ua-seed1234-base | 2,81B | 4.096 | Apache 2.0 | HuggingFace | Ejecución 1PP completa del mismo escalón |
-| 1pp-2.81b-v2-raw-seed1234-base | 2,81B | 4.096 | Apache 2.0 | HuggingFace | Línea base con documentos originales |
-| SmolLM2 (1,7B) | 1,7B | 8.192 | Apache 2.0 | HuggingFace | Referencia de tamaño inferior; comparte vocabulario de 49.152 tokens |
+| 1pp-2.81b-v2-ua-rawanneal-seed1234-base | 2,81B | 4.096 | Apache 2.0 | Hugging Face, safetensors | Variante mid-training con cooldown conversacional |
+| 1pp-2.81b-v2-ua-seed1234-base | 2,81B | 4.096 | Apache 2.0 | Hugging Face | Ejecución 1PP completa del mismo escalón |
+| 1pp-2.81b-v2-raw-seed1234-base | 2,81B | 4.096 | Apache 2.0 | Hugging Face | Línea base con documentos originales |
+| SmolLM2 (1,7B) | 1,7B | 8.192 | Apache 2.0 | Hugging Face | Referencia de tamaño inferior; comparte vocabulario de 49.152 tokens |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento con alternativas de la misma categoría.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-seed1234-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-seed1234-base
 - Ejecución 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-seed1234-base
 - Línea base raw: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-seed1234-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

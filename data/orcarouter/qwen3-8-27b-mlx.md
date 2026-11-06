@@ -81,7 +81,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (VL
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-27B-MLX
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de OrcaRouter sobre MLX en Apple Silicon: https://www.orcarouter.ai/blog/qwen-3-8-27b-mlx
 - Artículo de ExplainX sobre la compilación: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiny Qwen MoE – TinyStories | no disponible (16 expertos, 2 activos) | 256 | MoE decoder-only, PyTorch | no disponible | HuggingFace + GitHub |
+| Tiny Qwen MoE – TinyStories | no disponible (16 expertos, 2 activos) | 256 | MoE decoder-only, PyTorch | no disponible | Hugging Face + GitHub |
 | TinyStories baseline (modelos del paper original) | ~1M–33M | típicamente 256–512 | Transformer denso | según variante | Referencia académica |
-| Qwen3 (modelos oficiales) | escala mucho mayor | mucho mayor | MoE y densos | según variante | HuggingFace (Qwen) |
+| Qwen3 (modelos oficiales) | escala mucho mayor | mucho mayor | MoE y densos | según variante | Hugging Face (Qwen) |
 
 La comparación directa con modelos de producción no es significativa: Tiny Qwen MoE – TinyStories es una implementación educativa con un presupuesto de cómputo mínimo y un corpus de 10.000 ejemplos, mientras que los modelos Qwen oficiales se entrenan a escala industrial. Respecto a los modelos del paper de TinyStories, comparte dominio de datos pero introduce enrutamiento MoE, lo que lo hace interesante como variante arquitectónica más que como competidor en calidad. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
 
@@ -83,7 +83,7 @@ La comparación directa con modelos de producción no es significativa: Tiny Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SA0901/tiny-qwen-moe-tinystories
+- Modelo en Hugging Face: https://huggingface.co/SA0901/tiny-qwen-moe-tinystories
 - Repositorio GitHub (script de inferencia): https://github.com/SitanshuA091/tiny-qwen/blob/master/inference.py
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
-- Organización Qwen en HuggingFace (inspiración arquitectónica y tokenizador): https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face (inspiración arquitectónica y tokenizador): https://huggingface.co/Qwen

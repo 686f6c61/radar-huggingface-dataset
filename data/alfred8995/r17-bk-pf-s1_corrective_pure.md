@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-s1_corrective_pure` es un checkpoint de 1.414.111.232 parametros (aproximadamente 1,41 mil millones) publicado en HuggingFace por el usuario alfred8995 el 23 de octubre de 2026, con acceso restringido (gated). La unica informacion estructural verificable son las etiquetas del repositorio (`safetensors`, `qwen3`, `license:other`, `region:us`), el recuento real de parametros de los tensores y el tamano del repo (2,8 GB). No hay model card, pipeline declarado, lista de idiomas ni documentacion de entrenamiento.
+`alfred8995/r17-bk-pf-s1_corrective_pure` es un checkpoint de 1.414.111.232 parametros (aproximadamente 1,41 mil millones) publicado en Hugging Face por el usuario alfred8995 el 23 de octubre de 2026, con acceso restringido (gated). La unica informacion estructural verificable son las etiquetas del repositorio (`safetensors`, `qwen3`, `license:other`, `region:us`), el recuento real de parametros de los tensores y el tamano del repo (2,8 GB). No hay model card, pipeline declarado, lista de idiomas ni documentacion de entrenamiento.
 
 Por numero de parametros y etiqueta de familia, el modelo se situa en el segmento de transformers densos pequenos derivados de Qwen3 (rango 1-2B), pensados para inferencia con poca VRAM, despliegue en CPU y tareas acotadas de generacion y extraccion. El nombre del repositorio (`r17-bk-pf-s1_corrective_pure`) sugiere un experimento interno de ajuste o fusion de pesos, no un modelo base oficial ni una release con soporte.
 
@@ -82,7 +82,7 @@ Las cifras de contexto de los modelos alternativos corresponden a sus fichas ofi
 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos, idiomas ni comportamiento esperado.
 - Licencia `other` sin texto publicado: no se puede asumir permiso de uso comercial, redistribucion ni modificacion; es un bloqueo legal para produccion hasta aclararlo con el autor.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier pipeline automatizado de despliegue.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier pipeline automatizado de despliegue.
 - Cero descargas y cero likes: no hay evidencia de uso ni validacion por terceros; el riesgo de que el checkpoint este roto, incompleto o mal convertido es real.
 - Riesgo de alucinacion elevado por tamano: en el rango 1-2B los modelos inventan hechos con frecuencia, especialmente en contextos largos o preguntas factuales.
 - Posible degradacion respecto al modelo base: si el proceso "correctivo" implico merges o ajustes agresivos, puede haber perdida de capacidades (olvido catastrofico) no documentada.
@@ -93,7 +93,7 @@ Las cifras de contexto de los modelos alternativos corresponden a sus fichas ofi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-s1_corrective_pure
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-s1_corrective_pure
 - Perfil del autor: https://huggingface.co/alfred8995
 - Paper, blog o repositorio asociado: no disponible
 - Demo o espacio interactivo: no disponible

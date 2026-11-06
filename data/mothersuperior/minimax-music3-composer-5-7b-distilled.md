@@ -68,7 +68,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 ## Limitaciones y advertencias
 
 - Licencia restrictiva: el uso está sujeto a los términos de MiniMax Music 3 (`minimax-music3-terms`), que pueden limitar el uso comercial o la redistribución.
-- Modelo de la comunidad: tiene 0 descargas y 0 likes en HuggingFace, por lo que no ha sido validado por una audiencia amplia; la calidad no está contrastada más allá de las pruebas del autor.
+- Modelo de la comunidad: tiene 0 descargas y 0 likes en Hugging Face, por lo que no ha sido validado por una audiencia amplia; la calidad no está contrastada más allá de las pruebas del autor.
 - Riesgo de alucinación estructural: al ser una destilación del profesor, la calidad puede degradarse en entradas atípicas o condiciones muy específicas; el autor no documenta evaluaciones de robustez.
 - Limitaciones de idioma: no se especifican idiomas soportados; el corpus de destilación es multilingüe según el autor, pero no hay garantía para todos los idiomas.
 - No es un modelo de texto: no sirve para tareas de generación de lenguaje; su salida son códigos de audio RVQ que requieren el decodificador de Music3 para ser audibles.
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mothersuperior/minimax-music3-composer-5.7b-distilled
+- Repositorio Hugging Face: https://huggingface.co/Mothersuperior/minimax-music3-composer-5.7b-distilled
 - Modelo original MiniMax Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio GitHub de MiniMax Music3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Página de demostración oficial: https://minimax-ai.github.io/music3-demo/

@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La comparacion estructural mu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/NOESIS-Gemma3-1B-BF16
+- Hugging Face: https://huggingface.co/AMAImedia/NOESIS-Gemma3-1B-BF16
 - Organizacion: https://www.amaimedia.com
 - X (Twitter): https://x.com/AMAImediacom
 - LinkedIn: https://www.linkedin.com/in/ilia-bolotnikov

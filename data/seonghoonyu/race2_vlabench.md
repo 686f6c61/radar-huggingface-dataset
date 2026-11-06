@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RACE2\_vlabench es un repositorio de artefactos de investigación publicado por el usuario SeonghoonYu en HuggingFace. No contiene un modelo nuevo entrenado desde cero, sino el conjunto de checkpoints, datos y utilidades resultantes de los experimentos RACE2 (transition-aware fine-tuning) sobre el modelo base pi0.5, evaluados en las tareas primitivas del benchmark de manipulación robótica VLABench. El repositorio ocupa 263,9 GB e incluye tanto los pesos de cada ejecución como los datos de demostración y las etiquetas de transición de fase generadas.
+RACE2\_vlabench es un repositorio de artefactos de investigación publicado por el usuario SeonghoonYu en Hugging Face. No contiene un modelo nuevo entrenado desde cero, sino el conjunto de checkpoints, datos y utilidades resultantes de los experimentos RACE2 (transition-aware fine-tuning) sobre el modelo base pi0.5, evaluados en las tareas primitivas del benchmark de manipulación robótica VLABench. El repositorio ocupa 263,9 GB e incluye tanto los pesos de cada ejecución como los datos de demostración y las etiquetas de transición de fase generadas.
 
 El elemento diferencial del trabajo es el enfoque "transition-aware": el ajuste fino incorpora información sobre los límites entre fases de una tarea (por ejemplo, aproximarse, agarrar, colocar), etiquetados automáticamente mediante dos procedimientos distintos: CPS (fronteras de fase de referencia, 4,49 transiciones por episodio) y PELT (3,81 transiciones por episodio). Junto a los checkpoints de RACE2 se publican las líneas base PlainFT, una reproducción de ACoT-VLA, el checkpoint teacher oficial de pi0.5 sobre VLABench y una batería de ablaciones a horizonte de acción H20.
 
@@ -96,11 +96,11 @@ La información disponible no permite comparar con modelos externos, pero sí co
 - Riesgo de alucinación y sesgos: no evaluado ni documentado en la información disponible.
 - No es un modelo de propósito general: no hay soporte documentado de generación de texto, código, matemáticas, tool calling, agentes ni multimodalidad conversacional.
 - Uso en robótica real: cualquier despliegue físico exige validación de seguridad independiente, dado que no se documentan protocolos de parada, límites de fuerza ni evaluación de fallos.
-- Las fechas de creación y actualización del repositorio (septiembre de 2026) resultan atípicas y conviene confirmarlas en la página de HuggingFace.
+- Las fechas de creación y actualización del repositorio (septiembre de 2026) resultan atípicas y conviene confirmarlas en la página de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeonghoonYu/RACE2_vlabench
+- Repositorio en Hugging Face: https://huggingface.co/SeonghoonYu/RACE2_vlabench
 - Código del proyecto: https://github.com/Seonghoon-Yu/VLABench
 - Dataset original de 5.000 episodios con etiquetas PELT: https://huggingface.co/SeonghoonYu/vlabench_primitive_ft_lerobot_224
 - README de los datos de fase: `data/vlabench_phase_5000/README.md` (ruta interna del repositorio)

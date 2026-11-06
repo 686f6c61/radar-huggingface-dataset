@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZelretchV2 es un adaptador LoRA de texto a imagen publicado por el usuario Marx23411 en HuggingFace, pensado para generar ilustraciones del personaje Zelretch (anciano, en solitario) sobre el modelo base LyliaEngine/waiIllustriousSDXL_v170, un merge de la familia Illustrious basado en SDXL. No se trata de un modelo de lenguaje: es un ajuste de bajo rango que se carga sobre un modelo de difusion latente y modifica el comportamiento de generacion de imagenes del base.
+ZelretchV2 es un adaptador LoRA de texto a imagen publicado por el usuario Marx23411 en Hugging Face, pensado para generar ilustraciones del personaje Zelretch (anciano, en solitario) sobre el modelo base LyliaEngine/waiIllustriousSDXL_v170, un merge de la familia Illustrious basado en SDXL. No se trata de un modelo de lenguaje: es un ajuste de bajo rango que se carga sobre un modelo de difusion latente y modifica el comportamiento de generacion de imagenes del base.
 
 El repositorio ocupa aproximadamente 0,5 GB y declara la libreria diffusers, con la etiqueta template:diffusion-lora. La model card es muy escasa: solo indica el modelo base, el sampler recomendado (euler_ancestral), un valor de 2600 pasos, palabras de activacion (Zelretch22, old man, solo) y el prompt de instancia Zelretch22, old man, solo. No se documentan datos de entrenamiento, dataset, resolucion ni parametros de red.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es limitada y fundamentalmente practica: se trata de
 | Longitud de contexto | no aplica (modelo de texto a imagen; no dispone de ventana de contexto textual) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible; las etiquetas de activacion de la model card estan en ingles |
-| Licencia | unknown (no especificada en HuggingFace ni en la model card) |
+| Licencia | unknown (no especificada en Hugging Face ni en la model card) |
 | Formato de pesos | no confirmado explicitamente; el repositorio declara la libreria diffusers |
 
 ## Arquitectura y entrenamiento
@@ -43,7 +43,7 @@ Los unicos hiperparametros documentados son el sampler (euler_ancestral) y el va
 - Pruebas comparativas de LoRA: sirve como caso de estudio para medir cuanto cambia la salida del base al aplicar un adaptador de 0,5 GB con un unico token de activacion.
 - Ajuste fino incremental: el LoRA puede reentrenarse o fusionarse con otros adaptadores de la misma familia para explorar mezclas de estilo, siempre sobre el mismo base.
 - Docencia y experimentacion con difusion: util para explicar el flujo completo de carga de un LoRA, pesos de activacion y efecto del sampler euler_ancestral frente a otros samplers.
-- Evaluacion de repositorios de HuggingFace: ejemplo de ficha incompleta (sin licencia, sin metricas, sin dataset) que ilustra que comprobaciones debe hacer un equipo antes de adoptar un adaptador.
+- Evaluacion de repositorios de Hugging Face: ejemplo de ficha incompleta (sin licencia, sin metricas, sin dataset) que ilustra que comprobaciones debe hacer un equipo antes de adoptar un adaptador.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA de personaje c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marx23411/ZelretchV2
+- Hugging Face: https://huggingface.co/Marx23411/ZelretchV2
 - Modelo base declarado: https://huggingface.co/LyliaEngine/waiIllustriousSDXL_v170
 - Repositorio de archivos: https://huggingface.co/Marx23411/ZelretchV2/tree/main
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs o repos) relacionados con este modelo.

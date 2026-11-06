@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-4b-rl-local-kv-per-document` es un modelo de lenguaje de 4.022.468.096 parámetros derivado de `Qwen/Qwen3-4B` mediante un proceso en dos fases: un mid-training sobre trayectorias de agente de búsqueda generadas por `Qwen/Qwen3-32B` y un ajuste posterior con aprendizaje por refuerzo (GRPO) orientado a tareas de búsqueda multi-turno. Lo desarrolla el usuario de HuggingFace `lixiaochuan2020` y se publica bajo licencia Apache 2.0.
+`qwen3-4b-rl-local-kv-per-document` es un modelo de lenguaje de 4.022.468.096 parámetros derivado de `Qwen/Qwen3-4B` mediante un proceso en dos fases: un mid-training sobre trayectorias de agente de búsqueda generadas por `Qwen/Qwen3-32B` y un ajuste posterior con aprendizaje por refuerzo (GRPO) orientado a tareas de búsqueda multi-turno. Lo desarrolla el usuario de Hugging Face `lixiaochuan2020` y se publica bajo licencia Apache 2.0.
 
 Su rasgo distintivo es la atención local-KV por documento: cada pasaje recuperado por la herramienta de búsqueda se codifica de forma aislada, como si su caché KV se hubiera calculado por adelantado, de modo que sus tokens solo atienden a tokens anteriores del mismo pasaje y no a la conversación previa ni a otros pasajes. Esta restricción se aplica tanto en los rollouts de RL como en el entrenamiento, y está pensada para que el coste de prefill de documentos recuperados sea reutilizable y para evitar contaminación cruzada entre pasajes.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Atención | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3-4b-rl-local-kv-per-document` | 4.022.468.096 | 16.384 | Local-KV por documento en pasajes | Apache 2.0 | Pública en HuggingFace |
+| `qwen3-4b-rl-local-kv-per-document` | 4.022.468.096 | 16.384 | Local-KV por documento en pasajes | Apache 2.0 | Pública en Hugging Face |
 | `lixiaochuan2020/qwen3-4b-rl-baseline` | No disponible | No disponible | Atención completa, misma RL | No disponible | Enlazado desde la model card |
 | `lixiaochuan2020/qwen3-4b-midtrain-local-kv-per-document` | No disponible | No disponible | Local-KV por documento, sin RL | No disponible | Enlazado desde la model card |
-| `Qwen/Qwen3-4B` | No disponible en esta ficha | No disponible en esta ficha | Atención completa | No disponible en esta ficha | Pública en HuggingFace |
+| `Qwen/Qwen3-4B` | No disponible en esta ficha | No disponible en esta ficha | Atención completa | No disponible en esta ficha | Pública en Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lixiaochuan2020/qwen3-4b-rl-local-kv-per-document
+- Modelo en Hugging Face: https://huggingface.co/lixiaochuan2020/qwen3-4b-rl-local-kv-per-document
 - Modelo de mid-training: https://huggingface.co/lixiaochuan2020/qwen3-4b-midtrain-local-kv-per-document
 - Baseline con atención completa y misma RL: https://huggingface.co/lixiaochuan2020/qwen3-4b-rl-baseline
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

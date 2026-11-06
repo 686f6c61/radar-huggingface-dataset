@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, publicado por el usuario fpadovani. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2, segun las etiquetas declaradas en su repositorio de HuggingFace, y cuenta con 86.708.736 parametros reales confirmados a partir de los pesos en formato safetensors.
+El modelo `fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, publicado por el usuario fpadovani. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2, segun las etiquetas declaradas en su repositorio de Hugging Face, y cuenta con 86.708.736 parametros reales confirmados a partir de los pesos en formato safetensors.
 
 El modelo ha sido entrenado mediante SFT (Supervised Fine-Tuning) utilizando la libreria TRL en su version 0.23.0, sobre el stack de Transformers 4.56.2, PyTorch 2.11.0 y Datasets 4.8.4. El identificador del modelo incluye el sufijo `seed455`, lo que indica que forma parte de una familia de experimentos reproducibles con semillas fijas, y la cadena `nld_zipf_fix_zijn` sugiere un experimento sobre el modelo neerlandes con alguna correccion relacionada con la distribucion Zipf, aunque la model card no detalla el procedimiento experimental.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-nld_zipf_fix_zijn-100mb_seed455 | 86,7 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/nld_latn_100mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | MIT modificada | HuggingFace |
+| ppt-nld_zipf_fix_zijn-100mb_seed455 | 86,7 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/nld_latn_100mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | MIT modificada | Hugging Face |
 
 La comparacion con `distilgpt2` y `GPT-2 small` se incluye por proximidad de tamano, pero debe interpretarse con cautela: se trata de modelos entrenados con objetivos, volumenes de datos y corpus distintos, y no existen benchmarks publicados de este modelo que permitan una comparacion cuantitativa directa. El modelo base `goldfish-models/nld_latn_100mb` es la referencia mas inmediata para medir el efecto del ajuste fino.
 
@@ -93,7 +93,7 @@ La comparacion con `distilgpt2` y `GPT-2 small` se incluye por proximidad de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/l1dwqn6c

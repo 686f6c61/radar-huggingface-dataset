@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rootformer v17 (DeepSeek-V4.1-Flash Sovereign Transmute) es un modelo de generacion de texto de 543.129.399 parametros publicado por el usuario enver en HuggingFace. Segun su model card, se construye sobre la arquitectura que el autor denomina DeepSeek-V4.1-Flash, descrita en el paper "Pushing the Limits of KV Cache Compression" (arXiv:2609.19969v1), y combina esa base con tecnicas de linguistica arabe clasica: la teoria de raices trilíteras de Al-Khalil ibn Ahmad (Kitab al-ʿAyn), la sintaxis de Sibawayh (Al-Kitab) y la teoria de permutaciones S3 de Ibn Jinni (Al-Khasaʾis).
+Rootformer v17 (DeepSeek-V4.1-Flash Sovereign Transmute) es un modelo de generacion de texto de 543.129.399 parametros publicado por el usuario enver en Hugging Face. Segun su model card, se construye sobre la arquitectura que el autor denomina DeepSeek-V4.1-Flash, descrita en el paper "Pushing the Limits of KV Cache Compression" (arXiv:2609.19969v1), y combina esa base con tecnicas de linguistica arabe clasica: la teoria de raices trilíteras de Al-Khalil ibn Ahmad (Kitab al-ʿAyn), la sintaxis de Sibawayh (Al-Kitab) y la teoria de permutaciones S3 de Ibn Jinni (Al-Khasaʾis).
 
 El modelo esta orientado a un nicho muy concreto: morfologia arabe, fonologia farahidiana y traduccion escolastica de arabe clasico a ingles (filosofia, teologia, jurisprudencia). Su innovacion principal declarada es un cuello de botella de cache KV en la capa 12 que comprime las representaciones clave-valor compartidas entre encoder y decoder, junto con modulos engram de hash disperso anclados a un lexico de 9.016 raices trilíteras, y un controlador de esfuerzo de razonamiento continuo con presupuesto b ∈ [1, 100].
 
@@ -117,6 +117,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada (n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/enver/rootformer-v17-deepseek-flash
+- Repositorio Hugging Face: https://huggingface.co/enver/rootformer-v17-deepseek-flash
 - Paper citado (DeepSeek-V4.1-Flash, "Pushing the Limits of KV Cache Compression"): https://arxiv.org/html/2609.19969v1
 - No se han encontrado otros enlaces (repositorio de codigo, demo, blog del autor o documentacion adicional) en la informacion proporcionada.

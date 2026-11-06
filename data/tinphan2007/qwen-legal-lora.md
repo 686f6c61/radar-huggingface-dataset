@@ -4,7 +4,7 @@
 
 El modelo `TinPhan2007/qwen-legal-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por TinPhan2007 sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. Su propósito declarado es especializar un modelo de lenguaje general en el dominio legal, aunque la model card no proporciona detalles sobre el dataset de entrenamiento, los hiperparámetros ni los resultados obtenidos. El adaptador tiene un tamaño de 0.1 GB y se distribuye en formato safetensors, con la librería PEFT.
 
-La relevancia de este tipo de adaptadores radica en que permiten adaptar un modelo grande a una tarea específica con un coste de entrenamiento reducido, sin necesidad de reentrenar todos los parámetros. Sin embargo, la falta de documentación sobre el proceso de entrenamiento y la ausencia de benchmarks publicados limitan la evaluación objetiva de su calidad. El modelo se publicó el 27 de agosto de 2026 y no ha recibido descargas ni valoraciones en HuggingFace.
+La relevancia de este tipo de adaptadores radica en que permiten adaptar un modelo grande a una tarea específica con un coste de entrenamiento reducido, sin necesidad de reentrenar todos los parámetros. Sin embargo, la falta de documentación sobre el proceso de entrenamiento y la ausencia de benchmarks publicados limitan la evaluación objetiva de su calidad. El modelo se publicó el 27 de agosto de 2026 y no ha recibido descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -69,7 +69,7 @@ Existen otros adaptadores LoRA para el dominio legal, como `qingpingwan/Qwen2.5-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TinPhan2007/qwen-legal-lora
+- Hugging Face: https://huggingface.co/TinPhan2007/qwen-legal-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Adaptador similar (chino): https://huggingface.co/qingpingwan/Qwen2.5-7B-Lora-Law
 - Adaptador similar (Qwen3): https://github.com/iamyuviii/qwen3-legal-lora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Occamy-1.0 GPTQ INT4 (W4A16) es la cuantización a 4 bits del modelo multimodal Accio-Lab/occamy-1.0, publicada por el usuario Krexoz. Se trata de un transformer de mezcla de expertos (MoE) con atención híbrida, identificado en HuggingFace con la arquitectura `qwen3_5_moe` y con pipeline `image-text-to-text`, es decir, acepta entradas de imagen y texto. El checkpoint original en BF16 ocupa 70,2 GB y esta versión lo reduce a unos 21 GB, lo que permite ejecutar un modelo de 35B-A3B en una única tarjeta de gama profesional para consumidor. La relevancia de esta ficha es doble: por un lado, ofrece una ventana de contexto de 262.144 tokens en hardware asequible; por otro, documenta con detalle una receta de cuantización poco habitual, con decisiones explícitas sobre qué submódulos se dejan en BF16.
+Occamy-1.0 GPTQ INT4 (W4A16) es la cuantización a 4 bits del modelo multimodal Accio-Lab/occamy-1.0, publicada por el usuario Krexoz. Se trata de un transformer de mezcla de expertos (MoE) con atención híbrida, identificado en Hugging Face con la arquitectura `qwen3_5_moe` y con pipeline `image-text-to-text`, es decir, acepta entradas de imagen y texto. El checkpoint original en BF16 ocupa 70,2 GB y esta versión lo reduce a unos 21 GB, lo que permite ejecutar un modelo de 35B-A3B en una única tarjeta de gama profesional para consumidor. La relevancia de esta ficha es doble: por un lado, ofrece una ventana de contexto de 262.144 tokens en hardware asequible; por otro, documenta con detalle una receta de cuantización poco habitual, con decisiones explícitas sobre qué submódulos se dejan en BF16.
 
 El trabajo se validó íntegramente sobre una Intel Arc Pro B70 de 32 GB (arquitectura Battlemage), sirviendo con vLLM 0.29.0 y el backend XPU. El autor reporta 52 tok/s de decodificación con 129.000 tokens de contexto en caché, 2.600 tok/s de prefill en caché fría y una caché KV capaz de alojar 466.256 tokens, lo que supone 1,78 veces la concurrencia necesaria para llenar la ventana completa de 262.144 tokens. Todos los pesos del modelo base son responsabilidad de Accio-Lab; este repositorio únicamente modifica la precisión de los pesos y añade un registro de cuantización verificable (`quant_log.csv`).
 
@@ -98,9 +98,9 @@ Parámetros de muestreo recomendados por el autor: `temperature=1.0`, `top_p=0.9
 
 | Modelo | Parámetros | Contexto | Cuantización | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Occamy-1.0 GPTQ INT4 (este repositorio) | 35,1 B totales, ≈3 B activos | 262.144 tokens | GPTQ INT4 W4A16, group size 128 | 1.946 tokens de razonamiento (mediana), 52,3 tok/s, 0/5 truncados | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Accio-Lab/occamy-1.0 (base) | 35,1 B totales (mismo modelo) | 262.144 tokens | BF16 | No medido en esta información | Apache 2.0 | HuggingFace |
-| Arahide/Nex-N2.5-mini-INT4-W4A16 | no disponible | no disponible | INT4 W4A16 | 2.755 tokens de razonamiento (mediana), 50,9 tok/s, 3/5 truncados | no disponible | HuggingFace |
+| Occamy-1.0 GPTQ INT4 (este repositorio) | 35,1 B totales, ≈3 B activos | 262.144 tokens | GPTQ INT4 W4A16, group size 128 | 1.946 tokens de razonamiento (mediana), 52,3 tok/s, 0/5 truncados | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Accio-Lab/occamy-1.0 (base) | 35,1 B totales (mismo modelo) | 262.144 tokens | BF16 | No medido en esta información | Apache 2.0 | Hugging Face |
+| Arahide/Nex-N2.5-mini-INT4-W4A16 | no disponible | no disponible | INT4 W4A16 | 2.755 tokens de razonamiento (mediana), 50,9 tok/s, 3/5 truncados | no disponible | Hugging Face |
 
 El autor describe `Nex-N2.5-mini` como arquitectónicamente idéntico y cuantizado de la misma manera, y lo usa como referencia porque la receta de exclusiones de este repositorio sigue la de `Arahide/Nex-N2.5-mini-INT4-W4A16`. No se dispone de datos de parámetros, contexto ni licencia de ese checkpoint en la información proporcionada, y no se han identificado otras alternativas comparables.
 

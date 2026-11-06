@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT (Action Chunking with Transformers) es un método de aprendizaje por imitación que predice fragmentos de acciones (*action chunks*) en lugar de pasos individuales, lo que reduce el error de acumulación en tareas de manipulación robótica. Este repositorio concreto, `Screener2/act_AnchoredCamera_20261028_sim`, es una política entrenada con LeRobot sobre un robot `so_follower` (SO-100/SO-101 de bajo coste) con una única cámara cenital, y está publicada en HuggingFace Hub bajo licencia Apache 2.0.
+ACT (Action Chunking with Transformers) es un método de aprendizaje por imitación que predice fragmentos de acciones (*action chunks*) en lugar de pasos individuales, lo que reduce el error de acumulación en tareas de manipulación robótica. Este repositorio concreto, `Screener2/act_AnchoredCamera_20261028_sim`, es una política entrenada con LeRobot sobre un robot `so_follower` (SO-100/SO-101 de bajo coste) con una única cámara cenital, y está publicada en Hugging Face Hub bajo licencia Apache 2.0.
 
 El modelo resuelve una tarea concreta de manipulación en simulación (identificada como tarea `"0"`) a partir de 15 episodios de teleoperación (6.288 fotogramas a 30 FPS). No es un modelo de lenguaje ni un modelo generativo general: es una política visomotora de ~51,7 millones de parámetros que consume el estado articular del robot (vector de 6 dimensiones) y una imagen RGB de 480×640, y emite un vector de acción de 6 dimensiones.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Screener2/act_AnchoredCamera_20261028_sim` (ACT) | 51,7 M | no aplica | sin evaluación publicada | apache-2.0 | HuggingFace Hub |
+| `Screener2/act_AnchoredCamera_20261028_sim` (ACT) | 51,7 M | no aplica | sin evaluación publicada | apache-2.0 | Hugging Face Hub |
 | Diffusion Policy (referencia metodológica) | no disponible | no aplica | no disponible | no disponible | implementación en LeRobot |
 | VQ-BeT (referencia metodológica) | no disponible | no aplica | no disponible | no disponible | implementación en LeRobot |
 
@@ -80,7 +80,7 @@ No se dispone de datos numéricos de benchmarks para establecer una comparación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Screener2/act_AnchoredCamera_20261028_sim
+- Modelo en Hugging Face: https://huggingface.co/Screener2/act_AnchoredCamera_20261028_sim
 - Dataset de entrenamiento: https://huggingface.co/datasets/Screener2/AnchoredCamera_20261028_sim
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Screener2/AnchoredCamera_20261028_sim
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

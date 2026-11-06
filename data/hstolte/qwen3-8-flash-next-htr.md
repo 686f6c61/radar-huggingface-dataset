@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado, demuestra una vía para servir modelos de ~
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | HTR5 (5 bits) en pesos densos seleccionados; HTR4 (4 bits) en expertos enrutados y cabeza de salida; GPTQ8 (8 bits entero) en hyperconnections; BF16 original en vision tower y merger; resto de embeddings y norms en formatos específicos por componente |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (formato HTR propietario, no GGUF); 37 archivos de pesos, 23 shards safetensors del target |
 
 ## Arquitectura y entrenamiento
@@ -80,7 +80,7 @@ El autor advierte que estas cifras provienen de una comparación histórica con 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.8-Flash-Next-HTR | ~54B | no disponible | HTR mixta (4/5/8 bits + BF16 visión) | qwen-community-1.0 | Release candidate; runtime privado; checkpoint en subida |
-| Qwen3.8-Flash-Next (base) | ~54B | no disponible | BF16 original | qwen-community-1.0 | Público en HuggingFace |
+| Qwen3.8-Flash-Next (base) | ~54B | no disponible | BF16 original | qwen-community-1.0 | Público en Hugging Face |
 | Alternativas de ~50-70B en GGUF | no disponible | no disponible | GGUF (2-8 bits) | variable | Público, compatible con llama.cpp |
 
 La comparación directa con otras cuantizaciones del mismo modelo base no está disponible en la información proporcionada, ya que el formato HTR es propietario y no existen datos publicados de alternativas equivalentes para Strix Halo.
@@ -100,7 +100,7 @@ La comparación directa con otras cuantizaciones del mismo modelo base no está 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hstolte/Qwen3.8-Flash-Next-HTR
+- Modelo en Hugging Face: https://huggingface.co/hstolte/Qwen3.8-Flash-Next-HTR
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Herramientas de formato y cuantización HTR: https://github.com/HawgAuto/HTR
 - Runtime vLLM HTR (privado): https://github.com/HawgAuto/vllm-htr/tree/63ba082fbf6d204dba64bfb3803ccf48ad01fff1

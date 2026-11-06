@@ -21,7 +21,7 @@ La versión cuantizada que nos ocupa, Tema_Q-X7-Thinking-i1-GGUF, incluye varios
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura interna del modelo base Tema_Q-X7-Thinking. Los tags de HuggingFace indican que se trata de un transformer, y por el tamano de 35.5B probablemente siga un diseño denso, pero no se confirma. Tampoco hay datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas como RLHF o DPO. La unica informacion relevante es que el modelo es instruction-tuned y esta disenado para tareas de agente, lo que sugiere un entrenamiento orientado a seguir instrucciones y a interactuar con herramientas o entornos.
+No se ha publicado informacion detallada sobre la arquitectura interna del modelo base Tema_Q-X7-Thinking. Los tags de Hugging Face indican que se trata de un transformer, y por el tamano de 35.5B probablemente siga un diseño denso, pero no se confirma. Tampoco hay datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas como RLHF o DPO. La unica informacion relevante es que el modelo es instruction-tuned y esta disenado para tareas de agente, lo que sugiere un entrenamiento orientado a seguir instrucciones y a interactuar con herramientas o entornos.
 
 La version GGUF ha sido cuantizada por mradermacher utilizando calibracion imatrix, un metodo que mejora la calidad de las cuantizaciones de baja precision. Se ofrecen multiples niveles de cuantizacion para equilibrar tamano y rendimiento, siendo el Q4_K_M el recomendado por el autor por su equilibrio entre velocidad y calidad.
 

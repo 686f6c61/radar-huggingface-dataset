@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (TOFU Phi-1.5, IHL + Reset, epoch 08) | 1.4B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Artefacto de investigación de unlearning |
-| microsoft/phi-1_5 | 1.4B | 2.048 tokens | MIT (según el modelo original) | HuggingFace, ampliamente usado | Modelo base original de Microsoft |
-| locuslab/tofu_ft_phi-1.5 | 1.4B | no disponible | no disponible en la información | HuggingFace | Modelo afinado en TOFU del que deriva este checkpoint |
-| Otros checkpoints TOFU de Phi-1.5 (mismo autor) | 1.4B | no disponible | apache-2.0 | HuggingFace | Variantes con distintas épocas o configuraciones de unlearning |
+| Este checkpoint (TOFU Phi-1.5, IHL + Reset, epoch 08) | 1.4B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Artefacto de investigación de unlearning |
+| microsoft/phi-1_5 | 1.4B | 2.048 tokens | MIT (según el modelo original) | Hugging Face, ampliamente usado | Modelo base original de Microsoft |
+| locuslab/tofu_ft_phi-1.5 | 1.4B | no disponible | no disponible en la información | Hugging Face | Modelo afinado en TOFU del que deriva este checkpoint |
+| Otros checkpoints TOFU de Phi-1.5 (mismo autor) | 1.4B | no disponible | apache-2.0 | Hugging Face | Variantes con distintas épocas o configuraciones de unlearning |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch08
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch08
 - Modelo base del que deriva: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Microsoft: https://huggingface.co/microsoft/phi-1_5
 - Repositorio TOFU (referencia del benchmark): https://github.com/locuslab/tofu

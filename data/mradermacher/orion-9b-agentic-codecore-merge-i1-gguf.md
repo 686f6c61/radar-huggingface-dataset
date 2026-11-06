@@ -105,7 +105,7 @@ La ventaja diferencial de Orion-9B-Agentic-CodeCore-Merge en esta comparativa es
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1 GGUF): https://huggingface.co/mradermacher/Orion-9B-Agentic-CodeCore-Merge-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1 GGUF): https://huggingface.co/mradermacher/Orion-9B-Agentic-CodeCore-Merge-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Orion-9B-Agentic-CodeCore-Merge
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Orion-9B-Agentic-CodeCore-Merge-GGUF
 - Pagina resumen de descargas del autor: https://hf.tst.eu/model#Orion-9B-Agentic-CodeCore-Merge-i1-GGUF

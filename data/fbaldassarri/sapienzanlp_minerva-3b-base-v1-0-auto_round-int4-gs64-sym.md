@@ -30,7 +30,7 @@ Al ser una cuantizacion solo de pesos (WoQ), no se modificaron los pesos origina
 - Generacion de texto por completado: al ser un modelo base, responde continuando un prompt de texto libre sin formato de chat.
 - Bilingue italiano-ingles: entrenado principalmente en italiano, con soporte secundario en ingles; adecuado para tareas de generacion en ambos idiomas.
 - Inferencia eficiente en CPU y hardware Intel: la cuantizacion INT4 permite ejecutar el modelo en CPU Intel, iGPU Arc (via intel-extension-for-pytorch) y NPU (AI Boost en Core Ultra, via OpenVINO) con aceleracion 2-3x respecto al modelo original en FP16.
-- Compatible con transformers: se puede cargar con `AutoModelForCausalLM` y `AutoTokenizer` de HuggingFace, lo que facilita su integracion en pipelines existentes.
+- Compatible con transformers: se puede cargar con `AutoModelForCausalLM` y `AutoTokenizer` de Hugging Face, lo que facilita su integracion en pipelines existentes.
 - No soporta tool calling ni modo agente: al ser un modelo base sin fine-tuning instructivo, no dispone de capacidades de function calling, razonamiento multi-paso ni modo thinking.
 - Sin capacidades multimodales: no procesa vision, audio ni otros formatos; solo texto.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_round-int4-gs64-sym
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-3B-base-v1.0-auto_round-int4-gs64-sym
 - Modelo base original: https://huggingface.co/sapienzanlp/Minerva-3B-base-v1.0
 - Framework de cuantizacion Intel AutoRound: https://github.com/intel/auto-round
 - Pipeline de cuantizacion (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

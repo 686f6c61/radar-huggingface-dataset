@@ -81,8 +81,8 @@ No se dispone de datos de benchmarks ni especificaciones detalladas de los model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/GalaxyS2Gordon/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/GalaxyS2Gordon/Qwen3.8-27B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de Unsloth con el modelo GGUF: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Guía de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Documentación de Unsloth sobre Dynamic 3.0 GGUFs: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

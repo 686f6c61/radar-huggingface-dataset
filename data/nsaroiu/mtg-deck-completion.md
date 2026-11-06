@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mtg-deck-completion es un sistema de recomendación, no un modelo de lenguaje, que sugiere qué cartas faltan en un mazo de Magic: The Gathering del formato Commander (EDH) a partir de un comandante y, opcionalmente, de una lista parcial. Lo desarrolla el usuario nsaroiu y se distribuye en HuggingFace junto con el código de tokenización y entrenamiento en GitHub. El modelo se entrenó con 189.108 listas públicas reales extraídas de Moxfield, publicadas como dataset independiente (nsaroiu/moxfield-dump).
+mtg-deck-completion es un sistema de recomendación, no un modelo de lenguaje, que sugiere qué cartas faltan en un mazo de Magic: The Gathering del formato Commander (EDH) a partir de un comandante y, opcionalmente, de una lista parcial. Lo desarrolla el usuario nsaroiu y se distribuye en Hugging Face junto con el código de tokenización y entrenamiento en GitHub. El modelo se entrenó con 189.108 listas públicas reales extraídas de Moxfield, publicadas como dataset independiente (nsaroiu/moxfield-dump).
 
 La pieza central es un vocabulario de cartas con embeddings híbridos: un vector aprendido por carta, sumado a un MLP sobre rasgos estructurados (identidad de color, coste de maná, tipo, keywords) y a un embedding semántico del texto oracle. El mazo se trata como un conjunto desordenado, de modo que un encoder invariante a permutaciones agrega las cartas conocidas más el comandante en un único vector que se puntúa contra todo el vocabulario mediante un producto escalar con pesos atados, al estilo word2vec.
 
@@ -85,7 +85,7 @@ No se han identificado en la información disponible modelos comparables publica
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nsaroiu/mtg-deck-completion | no disponible | no aplica (conjunto de cartas) | Recall@50 0,36–0,57 en validación; 0,29–0,44 en comandantes no vistos | MIT | Pesos en HuggingFace y código en GitHub; 0 descargas |
+| nsaroiu/mtg-deck-completion | no disponible | no aplica (conjunto de cartas) | Recall@50 0,36–0,57 en validación; 0,29–0,44 en comandantes no vistos | MIT | Pesos en Hugging Face y código en GitHub; 0 descargas |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se han identificado en la información disponible modelos comparables publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nsaroiu/mtg-deck-completion
+- Modelo en Hugging Face: https://huggingface.co/nsaroiu/mtg-deck-completion
 - Dataset de entrenamiento: https://huggingface.co/datasets/nsaroiu/moxfield-dump
 - Código de tokenizador, modelo y pipeline de entrenamiento/evaluación: https://github.com/nsaroiu/mtg-deck-completion
 - Origen de las listas de mazos: https://moxfield.com

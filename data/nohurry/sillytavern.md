@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nohurry/sillytavern` no es un modelo de lenguaje: es un repositorio de presets de prompting, lorebooks y personajes en formato JSON para SillyTavern, la interfaz de rol conversacional open source. Lo mantiene el usuario de HuggingFace `nohurry` bajo licencia MIT, con documentación únicamente en inglés, 39 likes, 0 descargas y un tamaño de repositorio de 0,0 GB (no contiene pesos). Su artefacto principal es la familia de presets "Voyage", actualmente en la versión 5.1, junto con un preset experimental de evaluación ("Eval v1.0").
+`nohurry/sillytavern` no es un modelo de lenguaje: es un repositorio de presets de prompting, lorebooks y personajes en formato JSON para SillyTavern, la interfaz de rol conversacional open source. Lo mantiene el usuario de Hugging Face `nohurry` bajo licencia MIT, con documentación únicamente en inglés, 39 likes, 0 descargas y un tamaño de repositorio de 0,0 GB (no contiene pesos). Su artefacto principal es la familia de presets "Voyage", actualmente en la versión 5.1, junto con un preset experimental de evaluación ("Eval v1.0").
 
 El problema que resuelve es concreto: escribir un system prompt estable para rol de larga duración es tedioso y frágil. Voyage encapsula reglas de narrativa, gestión de PNJ, comprobaciones de habilidad al estilo Powered by the Apocalypse (PbtA), notas de dirección de juego y un sistema de etiquetas inspirado en Dungeon World y Pathfinder 2e. La versión 5.1 se reescribió en positivo, reduce bucles y errores gramaticales y elimina prompts redundantes, según el autor.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Alternativa | Naturaleza | Modelos objetivo | Contexto probado | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|---|
-| Voyage v5.1 (`nohurry/sillytavern`) | Preset JSON para SillyTavern | Gemma 4, Mistral Small 3.2, Magistral, DeepSeek, GLM, Gemini 4 Argon | 32K | MIT | Público en HuggingFace | No disponible (solo validación cualitativa) |
+| Voyage v5.1 (`nohurry/sillytavern`) | Preset JSON para SillyTavern | Gemma 4, Mistral Small 3.2, Magistral, DeepSeek, GLM, Gemini 4 Argon | 32K | MIT | Público en Hugging Face | No disponible (solo validación cualitativa) |
 | Presets por defecto de SillyTavern | Preset JSON incluido con la aplicación | Genéricos, sin optimización por familia | No disponible | Según el proyecto SillyTavern | Incluido con la aplicación | No disponible |
 | Presets publicados en r/SillyTavernAI | Presets de comunidad | Muy variable | No disponible | Variable | Foros y enlaces externos | No disponible |
 | System prompt propio | Texto libre | Cualquiera | El que fije el usuario | No aplica | Inmediata | No disponible |
@@ -100,7 +100,7 @@ No se dispone de comparaciones cuantitativas entre estos presets; la comparativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nohurry/sillytavern
+- Repositorio en Hugging Face: https://huggingface.co/nohurry/sillytavern
 - Voyage v5.1, anuncio: https://www.reddit.com/r/SillyTavernAI/comments/1x5h8xt/universal_preset_voyage_v51/
 - Voyage v5.1, preset: https://huggingface.co/nohurry/sillytavern/blob/main/Presets/Voyage-Universal-v5.1.json
 - Voyage v5.0, anuncio: https://www.reddit.com/r/SillyTavernAI/comments/1x2m4oj/universal_preset_voyage_v5

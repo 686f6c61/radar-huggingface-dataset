@@ -71,9 +71,9 @@ No se dispone de modelos comparables con datos verificables en la informacion pr
 
 | Modelo / artefacto | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| argos1111/sarashina2.2-vision-3b-mmproj-jev-f16 | Modulo mmproj GGUF F16 | 445.866.096 (solo el mmproj) | No disponible | MIT | HuggingFace, 0 descargas; requiere Jev Local |
-| sbintuitions/sarashina2.2-vision-3b | Checkpoint oficial completo (VLM) | 3B (modelo de lenguaje) | No disponible | No disponible | Checkpoint oficial en HuggingFace (revision fijada en la model card) |
-| mradermacher/sarashina2.2-vision-3b-GGUF | Cuantizaciones del modelo de lenguaje | 3B | No disponible | No disponible | HuggingFace, Q4_K_M y Q8_0 |
+| argos1111/sarashina2.2-vision-3b-mmproj-jev-f16 | Modulo mmproj GGUF F16 | 445.866.096 (solo el mmproj) | No disponible | MIT | Hugging Face, 0 descargas; requiere Jev Local |
+| sbintuitions/sarashina2.2-vision-3b | Checkpoint oficial completo (VLM) | 3B (modelo de lenguaje) | No disponible | No disponible | Checkpoint oficial en Hugging Face (revision fijada en la model card) |
+| mradermacher/sarashina2.2-vision-3b-GGUF | Cuantizaciones del modelo de lenguaje | 3B | No disponible | No disponible | Hugging Face, Q4_K_M y Q8_0 |
 
 Comparacion con otros VLM de ~3B del mercado (Qwen2.5-VL-3B, Gemma 3 4B y similares): no disponible en la informacion proporcionada.
 
@@ -92,12 +92,12 @@ Comparacion con otros VLM de ~3B del mercado (Qwen2.5-VL-3B, Gemma 3 4B y simila
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/argos1111/sarashina2.2-vision-3b-mmproj-jev-f16
+- Repositorio en Hugging Face: https://huggingface.co/argos1111/sarashina2.2-vision-3b-mmproj-jev-f16
 - Checkpoint oficial del modelo base: https://huggingface.co/sbintuitions/sarashina2.2-vision-3b/tree/46d9cc3929a54f7d2b91ce5668d7a9c5833991ed
 - Runtime Jev Local (GitHub): https://github.com/Argos1111/jev_local
 - Pre-release del runtime con soporte Sarashina: https://github.com/Argos1111/jev_local/releases/tag/sarashina-llama-b11042-pre1
 - Documentacion de compilacion y arranque (SARASHINA.md): https://github.com/Argos1111/jev_local/blob/5edbee00dcdd01690cbbd9cd1dd4d8f300862cd0/docs/SARASHINA.md
 - GGUF de lenguaje de Sarashina2.2 Vision 3B (mradermacher): https://huggingface.co/mradermacher/sarashina2.2-vision-3b-GGUF/tree/18b014396fa28c005d0551146558240189fc9ce8
-- Registro de cambios y atribucion (NOTICE.md): archivo incluido en el repositorio de HuggingFace
-- Sumas de verificacion (SHA256SUMS): archivo incluido en el repositorio de HuggingFace
+- Registro de cambios y atribucion (NOTICE.md): archivo incluido en el repositorio de Hugging Face
+- Sumas de verificacion (SHA256SUMS): archivo incluido en el repositorio de Hugging Face
 - Nota: la busqueda web realizada no devolvio ningun enlace tecnico relevante sobre este modelo; los resultados obtenidos correspondian a paginas corporativas de Microsoft y se han descartado.

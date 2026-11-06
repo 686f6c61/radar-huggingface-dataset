@@ -91,7 +91,7 @@ Frente a la versión oficial AWQ de Qwen, este modelo aporta el ajuste de identi
 - Riesgo de alucinación: sin benchmarks y con un ajuste de identidad fuerte, el modelo puede generar afirmaciones inventadas sobre sí mismo, sobre su creador o sobre sus capacidades.
 - El roman urdu carece de ortografía estandarizada, por lo que la calidad y consistencia de salida variarán según la convención del usuario; no hay evaluación multilingüe publicada.
 - La calibración AWQ se hizo con textos del dominio de entrenamiento, lo que puede degradar el rendimiento fuera de ese dominio (por ejemplo, matemáticas avanzadas o código en lenguajes poco frecuentes) más de lo habitual en una cuantización calibrada con datos generales.
-- El modelo no declara `pipeline_tag` en HuggingFace y tiene 0 descargas y 0 likes: no ha pasado por ninguna validación de la comunidad. No debe asumirse que funciona como un asistente listo para producción sin evaluación propia.
+- El modelo no declara `pipeline_tag` en Hugging Face y tiene 0 descargas y 0 likes: no ha pasado por ninguna validación de la comunidad. No debe asumirse que funciona como un asistente listo para producción sin evaluación propia.
 - La fecha de creación del repositorio (2026-10-22) es posterior a la de la mayoría de modelos de referencia y no se ha podido contrastar.
 - Discrepancia de metadatos entre el nombre (32B) y el recuento de safetensors (5,70 mil millones de elementos); aunque la explicación más probable es el empaquetado W4A16, conviene verificarlo cargando el modelo antes de dimensionar infraestructura.
 - Licencia Apache-2.0, que permite uso comercial, pero el modelo conserva las obligaciones de atribución razonable del modelo base y no incluye garantías; el autor no ofrece ningún compromiso de mantenimiento.
@@ -99,7 +99,7 @@ Frente a la versión oficial AWQ de Qwen, este modelo aporta el ajuste de identi
 
 ## Enlaces
 
-- [Modelo en HuggingFace: vikai-official-202/vikai-32b-v1](https://huggingface.co/vikai-official-202/vikai-32b-v1)
+- [Modelo en Hugging Face: vikai-official-202/vikai-32b-v1](https://huggingface.co/vikai-official-202/vikai-32b-v1)
 - Adaptador LoRA: `vikai-official-202/vikai-32b-v1-adapter` (referenciado en la model card; no se ha verificado su URL pública)
 - [Modelo base: Qwen/Qwen2.5-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)
 - [llmcompressor](https://github.com/vllm-project/llmcompressor) (herramienta de cuantización citada por el autor)

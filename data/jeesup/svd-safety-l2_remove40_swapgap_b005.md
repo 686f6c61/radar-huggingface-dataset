@@ -82,7 +82,7 @@ La model card no publica los valores equivalentes del modelo base sin comprimir 
 | Modelo | Parametros | Contexto | Seguridad (ASR AdvBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `Jeesup/svd-safety-l2_remove40_swapgap_b005` | 6.738.415.616 almacenados; fracción declarada 0,5998 | No disponible (base: 4.096) | 0,0500 | Llama 2 Community License | Safetensors, 0 descargas y 0 likes en el momento de la consulta |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6.738.415.616 | 4.096 tokens | No disponible en la información proporcionada (la model card indica que la compresión sola eleva la ASR) | Llama 2 Community License | Ampliamente disponible en HuggingFace |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6.738.415.616 | 4.096 tokens | No disponible en la información proporcionada (la model card indica que la compresión sola eleva la ASR) | Llama 2 Community License | Ampliamente disponible en Hugging Face |
 | Otras celdas de la misma malla experimental (reglas y presupuestos alternativos) | No disponible | No disponible | No disponible | Llama 2 Community License | No disponible en la información proporcionada |
 
 No se han encontrado en la búsqueda web modelos comparables adicionales ni resultados que permitan situar este checkpoint frente a otras alternativas de 7B comprimidas.
@@ -103,6 +103,6 @@ No se han encontrado en la búsqueda web modelos comparables adicionales ni resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b005
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgap_b005
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web; los resultados obtenidos no guardan relación con el modelo ni con el estudio de compresión SVD.

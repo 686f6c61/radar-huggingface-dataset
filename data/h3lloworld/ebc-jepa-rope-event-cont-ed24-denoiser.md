@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye resultados cuantitativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-event-cont-ed24-denoiser
+- Modelo en Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-event-cont-ed24-denoiser
 - Codigo (rama denoise-lora): https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Protocolo de evaluacion: `docs/lora_denoise/HANDOFF.md` dentro del repositorio de codigo
 - Script de evaluacion: `tools/lora_denoise/eval_emlb.py` dentro del repositorio de codigo

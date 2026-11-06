@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sungminhwan/generation21` es un repositorio de HuggingFace publicado el 9 de octubre de 2026 por el usuario `sungminhwan` que contiene una implementacion propia en PyTorch de la arquitectura Blip orientada a tareas de generacion. Segun la propia model card, se trata de un artefacto compacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no de una version preentrenada lista para produccion. La configuracion declarada es de escala "giant", con atencion estandar, fusion por cross attention, activacion approx gelu y normalizacion instancenorm.
+`sungminhwan/generation21` es un repositorio de Hugging Face publicado el 9 de octubre de 2026 por el usuario `sungminhwan` que contiene una implementacion propia en PyTorch de la arquitectura Blip orientada a tareas de generacion. Segun la propia model card, se trata de un artefacto compacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, y no de una version preentrenada lista para produccion. La configuracion declarada es de escala "giant", con atencion estandar, fusion por cross attention, activacion approx gelu y normalizacion instancenorm.
 
 El dato mas relevante del repositorio es la incoherencia entre la etiqueta de escala y el tamano real: el fichero `model.safetensors` contiene unicamente 49.600 parametros, una cifra que corresponde a una inicializacion minima y no a una configuracion "giant" de Blip. El checkpoint se describe explicitamente como una inicializacion valida para pruebas de humo, no como un modelo entrenado ni evaluado en ningun benchmark. El autor no reclama ninguna puntuacion de rendimiento.
 
@@ -55,7 +55,7 @@ En cuanto al entrenamiento, no hay evidencia de ningun run completado. La receta
 - Plantilla de implementacion de Blip: los ficheros `config.json` y `predict.py` permiten a un equipo partir de una estructura ya montada para implementar su propia variante de Blip con fusion por cross attention.
 - Validacion de scripts de carga de safetensors: util para comprobar que la ruta de carga, el mapeo de nombres de tensores y la gestion de dtypes funcionan, dado que el checkpoint es minimo y la iteracion es instantanea.
 - Experimentos controlados de ablation: la receta incluida (lion + warmup constante) permite fijar un punto de partida comun y comparar variantes de optimizador o schedule con el mismo presupuesto de datos y semillas.
-- Docencia y formacion: sirve como ejemplo reducido de como se estructura un repositorio de modelo en HuggingFace con config, training args, pesos y codigo de inferencia.
+- Docencia y formacion: sirve como ejemplo reducido de como se estructura un repositorio de modelo en Hugging Face con config, training args, pesos y codigo de inferencia.
 - Integracion continua en repositorios de investigacion: puede incorporarse como test de regresion que verifica que los cambios en el codigo no rompen la carga del modelo ni la ejecucion del entry point.
 - Reproduccion de un baseline de capacidad equivalente: siguiendo la guia de evaluacion del propio autor, se puede usar como linea base de capacidad minima frente a la que medir mejoras de modelos entrenados de verdad.
 
@@ -77,7 +77,7 @@ No disponible. No es posible establecer una comparativa cuantitativa fiable con 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sungminhwan/generation21 | 49.600 (checkpoint sin entrenar) | no disponible | sin benchmarks publicados | MIT | HuggingFace, pesos de inicializacion |
+| sungminhwan/generation21 | 49.600 (checkpoint sin entrenar) | no disponible | sin benchmarks publicados | MIT | Hugging Face, pesos de inicializacion |
 | Alternativas comparables de la familia Blip | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,11 +90,11 @@ No disponible. No es posible establecer una comparativa cuantitativa fiable con 
 - Incoherencia de configuracion: la escala declarada ("giant") no se corresponde con los 49.600 parametros reales del checkpoint, lo que puede inducir a error si se asume que el repositorio contiene un modelo de gran tamano.
 - Restricciones de licencia: la licencia MIT permite uso comercial y modificacion con atribucion, pero el autor advierte de que deben revisarse aparte los terminos de los datos de origen si el repositorio se usa con datasets externos.
 - Caveat para produccion: no debe desplegarse en produccion en su estado actual. Cualquier resultado obtenido con un checkpoint futuro entrenado debera documentarse por separado de los valores por defecto que se envian en este repositorio.
-- Carga no estandar: al ser una implementacion custom, requiere un adaptador explicito para las APIs automaticas de HuggingFace.
+- Carga no estandar: al ser una implementacion custom, requiere un adaptador explicito para las APIs automaticas de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sungminhwan/generation21
+- Repositorio en Hugging Face: https://huggingface.co/sungminhwan/generation21
 - Calendario de lanzamientos de modelos de IA: https://www.scriptbyai.com/ai-model-release-calendar/
 - Framework minWM en GitHub: https://github.com/shengshu-ai/minWM
 - Que es un modelo generativo, IBM: https://www.ibm.com/think/topics/generative-model

@@ -94,7 +94,7 @@ No se dispone de comparativas con otros clasificadores de sensibilidad específi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arkavo/sentinel
+- Modelo en Hugging Face: https://huggingface.co/Arkavo/sentinel
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio arkavo-edge (PR #680 con scripts de entrenamiento): https://github.com/arkavo-org/arkavo-edge/pull/680
 - Sitio web de Arkavo AI: https://www.arkavo.ai/

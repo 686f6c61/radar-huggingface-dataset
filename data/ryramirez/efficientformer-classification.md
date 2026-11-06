@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryramirez/efficientformer-classification` es un repositorio de HuggingFace publicado por el usuario ryramirez que contiene una implementación propia y compacta en PyTorch de la arquitectura EfficientFormer aplicada a tareas de clasificación. EfficientFormer es una familia de vision transformers diseñada para maximizar la eficiencia computacional en visión por computador, y este repositorio la empaqueta con una configuración etiquetada como "huge" que incluye atención de ventana deslizante, fusión bilineal, activación swish y normalización ScaleNorm.
+`ryramirez/efficientformer-classification` es un repositorio de Hugging Face publicado por el usuario ryramirez que contiene una implementación propia y compacta en PyTorch de la arquitectura EfficientFormer aplicada a tareas de clasificación. EfficientFormer es una familia de vision transformers diseñada para maximizar la eficiencia computacional en visión por computador, y este repositorio la empaqueta con una configuración etiquetada como "huge" que incluye atención de ventana deslizante, fusión bilineal, activación swish y normalización ScaleNorm.
 
 A pesar de la etiqueta "huge", el checkpoint real aloja únicamente 16.576 parámetros según el fichero safetensors, y el tamaño del repositorio es de 0,0 GB. El propio autor indica explícitamente en la model card que se trata de una implementación pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados pequeños, y no como una release preentrenada lista para producción. El fichero `model.safetensors` es un checkpoint de inicialización, no un modelo entrenado ni evaluado.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ryramirez/efficientformer-classification | EfficientFormer (config. "huge") | 16.576 (segun safetensors) | no disponible | BSD-3-Clause | HuggingFace |
+| ryramirez/efficientformer-classification | EfficientFormer (config. "huge") | 16.576 (segun safetensors) | no disponible | BSD-3-Clause | Hugging Face |
 | EfficientFormer oficial (Snap Research) | EfficientFormer | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | publicaciones y distintos repositorios |
 | EfficientFormerV2 (familia) | EfficientFormerV2 | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | implementaciones en librerias de vision |
 
@@ -83,4 +83,4 @@ La comparativa cuantitativa con variantes oficiales de EfficientFormer no está 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryramirez/efficientformer-classification
+- Modelo en Hugging Face: https://huggingface.co/ryramirez/efficientformer-classification

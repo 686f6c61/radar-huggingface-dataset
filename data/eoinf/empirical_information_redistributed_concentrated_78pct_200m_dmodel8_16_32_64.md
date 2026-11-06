@@ -74,5 +74,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/empirical_information_redistributed_concentrated_78pct_200m_dmodel8_16_32_64
+- Hugging Face: https://huggingface.co/eoinf/empirical_information_redistributed_concentrated_78pct_200m_dmodel8_16_32_64
 - Repositorio de codigo `synthetic_trigrams`: no disponible como enlace directo en la informacion proporcionada.

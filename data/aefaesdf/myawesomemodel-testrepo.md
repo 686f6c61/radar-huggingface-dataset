@@ -1,7 +1,7 @@
 # aefaesdf/MyAwesomeModel-TestRepo
 
 ## Resumen
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario aefaesdf en HuggingFace, etiquetado con la librería transformers, framework PyTorch y arquitectura BERT, y declarado con el pipeline de feature-extraction. La model card adjunta, sin embargo, describe un supuesto modelo de razonamiento de gran escala con mejoras en matemáticas, programación y lógica, lo que entra en contradicción directa con las etiquetas técnicas del repositorio (BERT, feature-extraction) y con el tamano declarado del repositorio, que es de 0.0 GB. Se trata, por tanto, de un repositorio de prueba sin pesos publicados ni datos verificables de arquitectura real.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario aefaesdf en Hugging Face, etiquetado con la librería transformers, framework PyTorch y arquitectura BERT, y declarado con el pipeline de feature-extraction. La model card adjunta, sin embargo, describe un supuesto modelo de razonamiento de gran escala con mejoras en matemáticas, programación y lógica, lo que entra en contradicción directa con las etiquetas técnicas del repositorio (BERT, feature-extraction) y con el tamano declarado del repositorio, que es de 0.0 GB. Se trata, por tanto, de un repositorio de prueba sin pesos publicados ni datos verificables de arquitectura real.
 
 El repositorio acumula 0 descargas y 0 likes, fue creado y actualizado el 10 de septiembre de 2026 y no incluye información sobre idiomas soportados ni sobre el número de parámetros. La licencia declarada es MIT, lo que en principio permitiría uso comercial, pero al no haber pesos descargables ni documentación técnica fiable, su utilidad práctica para evaluación o despliegue es nula en el estado actual.
 
@@ -34,7 +34,7 @@ La model card, en cambio, afirma que el modelo ha mejorado su profundidad de raz
 - Modo thinking, visión o audio: no disponible.
 
 ## Casos de uso
-- Evaluación de infraestructura de HuggingFace: el repositorio puede usarse como caso de prueba para validar pipelines de descarga, lectura de model cards y detección de inconsistencias entre metadatos y documentación.
+- Evaluación de infraestructura de Hugging Face: el repositorio puede usarse como caso de prueba para validar pipelines de descarga, lectura de model cards y detección de inconsistencias entre metadatos y documentación.
 - Extracción de características (si el modelo fuese realmente un BERT funcional): generación de embeddings para clasificación de texto, similitud semántica o clustering, siempre que se publicasen pesos reales.
 - Auditoría de repositorios: ejemplo práctico para enseñar a desarrolladores a desconfiar de model cards que declaran capacidades no respaldadas por las etiquetas.
 - Pruebas de integración con la librería transformers: dado que el repositorio declara endpoints_compatible, podría emplearse para verificar el enrutado de peticiones en entornos de prueba, aunque sin pesos no generaría resultados útiles.
@@ -68,7 +68,7 @@ Además, la model card menciona un resultado de AIME 2025 del 87,5 % de precisi�
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible (sin pesos publicados no es posible determinarlo).
-- Opciones de despliegue: el repositorio declara compatibilidad con endpoints de HuggingFace (endpoints_compatible) y librería transformers, pero al no contener pesos no es desplegable en vLLM, llama.cpp, Ollama ni TGI en el estado actual.
+- Opciones de despliegue: el repositorio declara compatibilidad con endpoints de Hugging Face (endpoints_compatible) y librería transformers, pero al no contener pesos no es desplegable en vLLM, llama.cpp, Ollama ni TGI en el estado actual.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -87,6 +87,6 @@ No es posible establecer una comparativa fiable porque no se conocen los paráme
 - No debe citarse como referencia técnica ni incluirse en comparativas de rendimiento sin verificación previa.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/aefaesdf/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/aefaesdf/MyAwesomeModel-TestRepo
 - Resultados de búsqueda web: no relacionados con el modelo (corresponden a la ciudad de Doha, Catar, y no aportan información técnica sobre este repositorio).
 - Paper, repositorio de código, blog o demo: no disponibles en la información proporcionada.

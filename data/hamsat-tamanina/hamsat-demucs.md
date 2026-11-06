@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`hamsat-tamanina/hamsat-demucs` es un repositorio publicado en HuggingFace por el usuario `hamsat-tamanina` que, por su nombre, se asocia a Demucs, el modelo de separación de fuentes de audio desarrollado originalmente por Meta AI Research. El repositorio contiene pesos en formato ONNX y ocupa 0,2 GB, lo que sugiere una exportación de un modelo de separación de pistas (voz, batería, bajo y otros) lista para inferencia en entornos con runtime ONNX.
+`hamsat-tamanina/hamsat-demucs` es un repositorio publicado en Hugging Face por el usuario `hamsat-tamanina` que, por su nombre, se asocia a Demucs, el modelo de separación de fuentes de audio desarrollado originalmente por Meta AI Research. El repositorio contiene pesos en formato ONNX y ocupa 0,2 GB, lo que sugiere una exportación de un modelo de separación de pistas (voz, batería, bajo y otros) lista para inferencia en entornos con runtime ONNX.
 
-La información publicada es muy escasa: la model card solo declara la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones, y no se especifica el pipeline de HuggingFace, los idiomas soportados ni el proceso de conversión a ONNX.
+La información publicada es muy escasa: la model card solo declara la licencia MIT y no incluye descripción, arquitectura, datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones, y no se especifica el pipeline de Hugging Face, los idiomas soportados ni el proceso de conversión a ONNX.
 
 Por tanto, esta ficha se limita a documentar los metadatos verificables y a contextualizar lo que implica un artefacto Demucs en ONNX. Cualquier dato sobre precisión, calidad de separación o composición del dataset original debe considerarse no disponible en la información proporcionada y requeriría validación empírica por parte del usuario.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hamsat-tamanina/hamsat-demucs | no disponible | no aplica | no disponible | MIT | HuggingFace, ONNX |
+| hamsat-tamanina/hamsat-demucs | no disponible | no aplica | no disponible | MIT | Hugging Face, ONNX |
 | Demucs (Meta AI, original) | no disponible en esta ficha | no aplica | SDR publicado en el paper original (no verificable aquí) | MIT | GitHub de Meta AI, PyTorch |
 | Spleeter (Deezer) | no disponible en esta ficha | no aplica | no disponible en esta ficha | MIT | GitHub de Deezer |
 | Open-Unmix (SigSep) | no disponible en esta ficha | no aplica | no disponible en esta ficha | MIT | GitHub de SigSep |
@@ -80,7 +80,7 @@ No se dispone de datos verificables para comparar parámetros, contexto ni rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hamsat-tamanina/hamsat-demucs
+- Repositorio Hugging Face: https://huggingface.co/hamsat-tamanina/hamsat-demucs
 - Demucs (Meta AI, repositorio original): no disponible en la información proporcionada
 - Paper de Demucs: no disponible en la información proporcionada
 - ONNX Runtime: no disponible en la información proporcionada

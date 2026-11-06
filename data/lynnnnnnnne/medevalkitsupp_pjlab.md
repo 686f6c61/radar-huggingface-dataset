@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`medevalkitsupp_pjlab` es un repositorio de pesos y scripts suplementarios publicado por el usuario Lynnnnnnnne en HuggingFace, no un modelo de lenguaje en sentido estricto. Su funcion es proporcionar los artefactos necesarios para reproducir las metricas del informe MedEvalKit, concretamente las metricas CE (basadas en CheXbert) y RaTE (Radiotherapy-aware Text Evaluation, segun la nomenclatura del propio repositorio), orientadas a la evaluacion de informes radiologicos generados automaticamente.
+`medevalkitsupp_pjlab` es un repositorio de pesos y scripts suplementarios publicado por el usuario Lynnnnnnnne en Hugging Face, no un modelo de lenguaje en sentido estricto. Su funcion es proporcionar los artefactos necesarios para reproducir las metricas del informe MedEvalKit, concretamente las metricas CE (basadas en CheXbert) y RaTE (Radiotherapy-aware Text Evaluation, segun la nomenclatura del propio repositorio), orientadas a la evaluacion de informes radiologicos generados automaticamente.
 
 El paquete incluye el codigo de PromptMRG con el script `compute_chexbert_ce.py`, los pesos de CheXbert (`chexbert.pth`) en dos rutas alternativas, el codigo de calculo de metricas NLG y RaTE (con soporte para BERTScore) y los encoders auxiliares necesarios: RaTE-NER-Deberta, el modelo de embeddings BioLORD-2023-C y el paquete RaTEScore. Tambien incorpora un modulo de constantes de rutas (`medevalkit_paths.py`) para configurar el entorno mediante variables como `MEDEVALKIT_ROOT`, `PROMPTMRG_BERT_PATH` y `CHEXBERT_PATH`.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Repositorio | Tipo | Contenido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Lynnnnnnnne/medevalkitsupp_pjlab` | Artefactos de evaluacion | Pesos CheXbert, encoders RaTE, scripts de metricas | no disponible | HuggingFace, 0 descargas |
+| `Lynnnnnnnne/medevalkitsupp_pjlab` | Artefactos de evaluacion | Pesos CheXbert, encoders RaTE, scripts de metricas | no disponible | Hugging Face, 0 descargas |
 | MedEvalKit (repositorio principal) | Framework de evaluacion | Suite completa de metricas y datos | no disponible en esta ficha | Referenciado como origen (`MEDEVALKIT_ROOT`) |
 | CheXbert (Stanford) | Clasificador de hallazgos | Pesos `chexbert.pth` | no disponible en esta ficha | Incluido como dependencia en este repositorio |
 
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento ni de licencia de las alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lynnnnnnnne/medevalkitsupp_pjlab
+- Hugging Face: https://huggingface.co/Lynnnnnnnne/medevalkitsupp_pjlab
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

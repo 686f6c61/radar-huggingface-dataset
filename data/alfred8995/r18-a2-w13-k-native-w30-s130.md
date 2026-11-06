@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `r18-a2-w13-k-native-w30-s130`, publicado por el usuario alfred8995 en HuggingFace, es un modelo de lenguaje de aproximadamente 2.018 millones de parámetros (2,02 mil millones) distribuido en formato safetensors y con licencia Apache 2.0. El identificador incluye referencias a un tag propio (`sn38-nanochrono`) y a una serie de parámetros de configuración codificados en el nombre (`r18`, `a2`, `w13`, `k-native`, `w30`, `s130`), lo que sugiere un experimento de ajuste o variante arquitectónica concreta más que un modelo de propósito general documentado.
+El modelo `r18-a2-w13-k-native-w30-s130`, publicado por el usuario alfred8995 en Hugging Face, es un modelo de lenguaje de aproximadamente 2.018 millones de parámetros (2,02 mil millones) distribuido en formato safetensors y con licencia Apache 2.0. El identificador incluye referencias a un tag propio (`sn38-nanochrono`) y a una serie de parámetros de configuración codificados en el nombre (`r18`, `a2`, `w13`, `k-native`, `w30`, `s130`), lo que sugiere un experimento de ajuste o variante arquitectónica concreta más que un modelo de propósito general documentado.
 
 La información pública disponible es extremadamente limitada: el repositorio está restringido (gated), no declara pipeline, no especifica idiomas soportados y no incluye resultados de benchmarks ni documentación técnica accesible desde la ficha. Con 2 descargas y 0 likes en el momento de la consulta, se trata de una publicación de nicho, presumiblemente vinculada a una línea de investigación o experimentación personal del autor.
 
-Por su tamaño (2B parámetros) y su licencia permisiva, el modelo es potencialmente interesante para despliegue en hardware de consumo, pero cualquier evaluación rigurosa requiere aceptar las condiciones de acceso en HuggingFace y consultar la model card completa, que no está disponible en la información proporcionada.
+Por su tamaño (2B parámetros) y su licencia permisiva, el modelo es potencialmente interesante para despliegue en hardware de consumo, pero cualquier evaluación rigurosa requiere aceptar las condiciones de acceso en Hugging Face y consultar la model card completa, que no está disponible en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| r18-a2-w13-k-native-w30-s130 | ≈2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin benchmarks ni documentación pública |
+| r18-a2-w13-k-native-w30-s130 | ≈2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin benchmarks ni documentación pública |
 | Qwen2.5-1.5B | 1,5 B | 32 768 tokens | Apache 2.0 | Abierto | Familia consolidada con benchmarks publicados |
 | Gemma-2-2B | 2,6 B | 8 192 tokens | Gemma license | Abierto (con condiciones) | Buen rendimiento en tareas generales |
 | SmolLM2-1.7B | 1,7 B | 8 192 tokens | Apache 2.0 | Abierto | Orientado a eficiencia en dispositivo |
@@ -80,7 +80,7 @@ La comparación con alternativas consolidadas es desfavorable en términos de in
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no hay model card pública, benchmarks ni descripción de datos de entrenamiento, lo que impide evaluar sesgos, calidad o robustez.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Riesgo de alucinación: desconocido, pero inherente a cualquier modelo de lenguaje sin evaluación publicada.
 - Idiomas: no se declaran idiomas soportados; no puede asumirse un buen rendimiento en castellano ni en otros idiomas.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías sobre el origen de los datos de entrenamiento ni sobre posibles obligaciones adicionales derivadas de los mismos.
@@ -90,5 +90,5 @@ La comparación con alternativas consolidadas es desfavorable en términos de in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w30-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-native-w30-s130
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

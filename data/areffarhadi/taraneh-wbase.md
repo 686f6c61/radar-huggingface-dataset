@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taraneh-WBase es un modelo de reconocimiento automatico del habla (ASR) para persa, desarrollado por Aref Farhadipour (Universidad de Zurich) y publicado por el usuario areffarhadi en HuggingFace. Se trata del checkpoint de tamano *base* de la familia Taraneh, un conjunto de modelos ASR en persa afinados sobre aproximadamente 1.560 horas de audio a partir de `openai/whisper-base`. Cuenta con 72.593.920 parametros (72,6 M) y un repositorio de 0,3 GB en formato safetensors.
+Taraneh-WBase es un modelo de reconocimiento automatico del habla (ASR) para persa, desarrollado por Aref Farhadipour (Universidad de Zurich) y publicado por el usuario areffarhadi en Hugging Face. Se trata del checkpoint de tamano *base* de la familia Taraneh, un conjunto de modelos ASR en persa afinados sobre aproximadamente 1.560 horas de audio a partir de `openai/whisper-base`. Cuenta con 72.593.920 parametros (72,6 M) y un repositorio de 0,3 GB en formato safetensors.
 
 El modelo resuelve la transcripcion de voz en persa en dominios que van mas alla del habla leida, incluyendo musica cantada, contenido de YouTube, medios de comunicacion y conversacion espontanea. La familia Taraneh se presenta explicitamente como un esfuerzo por escalar el reconocimiento de voz en persa y el *forced alignment* a traves de dominios cantados y conversacionales, con una normalizacion de texto persa unificada aplicada antes del calculo de metricas.
 
@@ -77,8 +77,8 @@ La comparativa completa de los cinco modelos de la familia Taraneh se encuentra 
 
 | Modelo | Parametros | Contexto de audio | WER FLEURS (persa) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taraneh-WBase | 72,6 M | 30 s por ventana | 7,88 % | MIT | HuggingFace (areffarhadi/Taraneh-WBase) |
-| openai/whisper-base | 72,6 M aprox. | 30 s por ventana | no disponible en la informacion proporcionada | MIT | HuggingFace (openai/whisper-base) |
+| Taraneh-WBase | 72,6 M | 30 s por ventana | 7,88 % | MIT | Hugging Face (areffarhadi/Taraneh-WBase) |
+| openai/whisper-base | 72,6 M aprox. | 30 s por ventana | no disponible en la informacion proporcionada | MIT | Hugging Face (openai/whisper-base) |
 | Otros checkpoints de la familia Taraneh | no disponible | no disponible | no disponible | no disponible | Citados en el articulo y el repositorio del autor |
 
 La model card indica que la familia Taraneh consta de cinco modelos y que la comparativa completa esta en el articulo y en el README de GitHub, pero los datos concretos de los otros cuatro checkpoints no forman parte de la informacion disponible para esta ficha, por lo que no se pueden reproducir aqui.
@@ -94,7 +94,7 @@ La model card indica que la familia Taraneh consta de cinco modelos y que la com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/areffarhadi/Taraneh-WBase
+- Modelo en Hugging Face: https://huggingface.co/areffarhadi/Taraneh-WBase
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Repositorio de codigo, manifiestos, normalizacion e inferencia: https://github.com/areffarhadi/persian-asr
 - PDF del articulo (Aref Farhadipour, *Taraneh-ASR: Scaling Persian Speech Recognition and Forced Alignment Across Singing and Conversational Domains*, Universidad de Zurich): https://github.com/areffarhadi/persian-asr/blob/main/ArefFarhadi-TaranehASR.pdf

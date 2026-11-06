@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo cphf-recheck-20261002 es un repositorio publicado en HuggingFace por el autor corsenaih1victime el 2 de octubre de 2026. La informacion disponible en su model card se limita a la declaracion de licencia MIT; no se especifica arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no incluye pipeline declarado, no registra descargas ni likes en el momento de la consulta y no presenta documentacion tecnica adicional.
+El modelo cphf-recheck-20261002 es un repositorio publicado en Hugging Face por el autor corsenaih1victime el 2 de octubre de 2026. La informacion disponible en su model card se limita a la declaracion de licencia MIT; no se especifica arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no incluye pipeline declarado, no registra descargas ni likes en el momento de la consulta y no presenta documentacion tecnica adicional.
 
 Por la ausencia total de especificaciones, no es posible determinar que problema resuelve el modelo ni en que categoria encaja (lenguaje, vision, multimodal, etc.). El identificador "cphf-recheck" sugiere un posible uso interno de verificacion o revalidacion, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. La fecha de creacion, en 2026, indica que se trata de un artefacto reciente.
 
@@ -72,7 +72,7 @@ No disponible. No se puede establecer una categoria de comparacion porque se des
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cphf-recheck-20261002 | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| cphf-recheck-20261002 | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. No se puede establecer una categoria de comparacion porque se des
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/corsenaih1victime/cphf-recheck-20261002
+- Hugging Face: https://huggingface.co/corsenaih1victime/cphf-recheck-20261002
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

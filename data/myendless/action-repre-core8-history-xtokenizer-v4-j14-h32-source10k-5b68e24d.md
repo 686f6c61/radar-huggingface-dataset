@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`action-repre-core8-history-xtokenizer-v4-j14-h32-source10k-5b68e24d` es un checkpoint de investigación publicado por el usuario `myendless` en HuggingFace, orientado a la representación discreta de acciones en robótica. No es un modelo de lenguaje conversacional ni una exportación estándar de `transformers.AutoModel`: la model card lo describe explícitamente como un checkpoint completo de entrenamiento en PyTorch, conservado byte a byte, que requiere el cargador propio del benchmark para poder utilizarse.
+`action-repre-core8-history-xtokenizer-v4-j14-h32-source10k-5b68e24d` es un checkpoint de investigación publicado por el usuario `myendless` en Hugging Face, orientado a la representación discreta de acciones en robótica. No es un modelo de lenguaje conversacional ni una exportación estándar de `transformers.AutoModel`: la model card lo describe explícitamente como un checkpoint completo de entrenamiento en PyTorch, conservado byte a byte, que requiere el cargador propio del benchmark para poder utilizarse.
 
 El nombre codifica la configuración experimental: variante `core8`, tokenizador externo de acciones (`xtokenizer`), esquema estricto v4 con `joint14` y `H32`, origen `source10k` (10.000 pasos reales de entrenamiento) y categoría de procedencia `unregistered_historical`. La ejecución original se identifica como `core8_xtokenizer_frozen_backbone_freshhead_from30k`, es decir, un backbone congelado con una cabeza nueva inicializada a partir de un checkpoint de 30.000 pasos.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `action-repre-core8-history-xtokenizer-v4-j14-h32-source10k` (este) | No disponible (repo 11,3 GB) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
+| `action-repre-core8-history-xtokenizer-v4-j14-h32-source10k` (este) | No disponible (repo 11,3 GB) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
 | Variante 20k del mismo linaje (mencionada en la model card) | No disponible | No disponible | Sin datos comparables; el autor advierte que no es una comparación de una sola variable | No disponible | Referenciada en el catálogo del benchmark |
 | Checkpoint previo de 30k (`from30k`, usado como inicialización) | No disponible | No disponible | Sin datos publicados | No disponible | Referenciado en el nombre del run |
 | Otros modelos públicos de representación de acciones (p. ej. RT-1, RT-2, OpenVLA) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No verificado en esta búsqueda |
@@ -91,7 +91,7 @@ No se han identificado en la información proporcionada modelos externos directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myendless/action-repre-core8-history-xtokenizer-v4-j14-h32-source10k-5b68e24d
+- Modelo en Hugging Face: https://huggingface.co/myendless/action-repre-core8-history-xtokenizer-v4-j14-h32-source10k-5b68e24d
 - Repositorio de datos, normalización y configuración de entrenamiento: https://huggingface.co/datasets/myendless/action-repre-robotwin-v4-data
 - Perfil del autor: https://huggingface.co/myendless
 - Nota: la búsqueda web realizada no devolvió resultados técnicos relevantes sobre este modelo (papers, blogs, repos o demos); los resultados obtenidos eran ajenos al contenido y se han descartado. No se dispone de enlaces adicionales verificables.

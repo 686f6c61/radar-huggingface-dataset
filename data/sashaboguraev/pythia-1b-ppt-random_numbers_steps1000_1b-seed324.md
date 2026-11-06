@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed324` es un ajuste fino de la familia Pythia de EleutherAI, con 1.011.671.040 parámetros (aproximadamente 1B). El nombre del repositorio sugiere que fue entrenado durante 1000 pasos sobre un conjunto de datos de números aleatorios, probablemente con una técnica de preentrenamiento o ajuste denominada "PPT" (posiblemente *Prompt Pretraining* o *Post-Pretraining*). La arquitectura subyacente es un transformer estilo GPT-NeoX, como indica la etiqueta `gpt_neox` en HuggingFace.
+El modelo `sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed324` es un ajuste fino de la familia Pythia de EleutherAI, con 1.011.671.040 parámetros (aproximadamente 1B). El nombre del repositorio sugiere que fue entrenado durante 1000 pasos sobre un conjunto de datos de números aleatorios, probablemente con una técnica de preentrenamiento o ajuste denominada "PPT" (posiblemente *Prompt Pretraining* o *Post-Pretraining*). La arquitectura subyacente es un transformer estilo GPT-NeoX, como indica la etiqueta `gpt_neox` en Hugging Face.
 
 La información pública es extremadamente limitada: la model card es una plantilla genérica sin detalles sobre el entrenamiento, los datos, la licencia o las capacidades. El modelo tiene solo 12 descargas y 0 likes, lo que sugiere que es un experimento de investigación o un artefacto de prueba. A pesar de su escasa documentación, su tamaño lo hace ejecutable en hardware de consumo, aunque su utilidad práctica sin especificaciones claras es incierta.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparación rigurosa. El modelo es un ajuste fino de Pythia-1B, por lo que la comparación natural sería con el Pythia-1B original (de EleutherAI), pero no se han publicado métricas de este ajuste. Otras alternativas de 1B como GPT-Neo 1.3B o TinyLlama-1.1B existen, pero no hay datos de rendimiento para contrastar. Se recomienda consultar el modelo base Pythia-1B en HuggingFace para obtener especificaciones de referencia.
+No se dispone de información suficiente para una comparación rigurosa. El modelo es un ajuste fino de Pythia-1B, por lo que la comparación natural sería con el Pythia-1B original (de EleutherAI), pero no se han publicado métricas de este ajuste. Otras alternativas de 1B como GPT-Neo 1.3B o TinyLlama-1.1B existen, pero no hay datos de rendimiento para contrastar. Se recomienda consultar el modelo base Pythia-1B en Hugging Face para obtener especificaciones de referencia.
 
 ## Limitaciones y advertencias
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparación rigurosa. El mode
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed324)
-- [HuggingFace - variante preserve_emb](https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed324-preserve_emb)
+- [Hugging Face - modelo](https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed324)
+- [Hugging Face - variante preserve_emb](https://huggingface.co/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed324-preserve_emb)
 - [FriendliAI - página del modelo](https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed324)
 - [ModelHub - espejo del modelo](https://dev.modelhub.org.cn/sashaboguraev/pythia-1b-ppt-random_numbers_steps1000_1b-seed324-preserve_emb)

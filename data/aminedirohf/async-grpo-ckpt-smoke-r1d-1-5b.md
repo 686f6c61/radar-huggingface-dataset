@@ -21,7 +21,7 @@ Con 1.777 millones de parámetros (aproximadamente 1,78B), el modelo hereda la a
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, que a su vez es una destilación de DeepSeek-R1 sobre la arquitectura Qwen2. El entrenamiento se realizó con la librería TRL de HuggingFace, empleando el método AsyncGRPO, descrito en el artículo "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models" (arXiv:2402.03300). AsyncGRPO es una variante asíncrona de GRPO que separa las fases de generación y entrenamiento en diferentes GPUs para eliminar cuellos de botella, permitiendo escalar de forma flexible.
+El modelo es un fine-tuning del checkpoint `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, que a su vez es una destilación de DeepSeek-R1 sobre la arquitectura Qwen2. El entrenamiento se realizó con la librería TRL de Hugging Face, empleando el método AsyncGRPO, descrito en el artículo "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models" (arXiv:2402.03300). AsyncGRPO es una variante asíncrona de GRPO que separa las fases de generación y entrenamiento en diferentes GPUs para eliminar cuellos de botella, permitiendo escalar de forma flexible.
 
 No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas adicionales como RLHF o DPO. El checkpoint se generó como una prueba de humo para verificar el funcionamiento del pipeline de AsyncGRPO, por lo que no hay evidencia de que haya sido entrenado con datos sustanciales ni validado en tareas específicas.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para comparar de forma objetiva. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aminediroHF/async-grpo-ckpt-smoke-r1d-1.5b
+- Modelo en Hugging Face: https://huggingface.co/aminediroHF/async-grpo-ckpt-smoke-r1d-1.5b
 - Repositorio de Async-GRPO: https://github.com/Red-Hat-AI-Innovation-Team/async-grpo
 - Artículo de DeepSeekMath (arXiv:2402.03300): https://huggingface.co/papers/2402.03300
 - Blog de Red Hat sobre Async-GRPO: https://developers.redhat.com/articles/2025/04/05/async-grpo-open-fast-and-performant

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SamerAyyad/VLA_Samer_31.10.2026_450eps_policy_ACT_500k | 51,7 M | no aplica | no disponible | Apache 2.0 | HuggingFace |
-| Otras políticas ACT de LeRobot | variable | no aplica | no disponible | habitualmente Apache 2.0 | HuggingFace |
-| Diffusion Policy (referencia LeRobot) | variable | no aplica | no disponible | según checkpoint | HuggingFace |
-| VLA generalistas (p. ej. OpenVLA) | miles de millones | limitado | no comparable directamente | según modelo | HuggingFace |
+| SamerAyyad/VLA_Samer_31.10.2026_450eps_policy_ACT_500k | 51,7 M | no aplica | no disponible | Apache 2.0 | Hugging Face |
+| Otras políticas ACT de LeRobot | variable | no aplica | no disponible | habitualmente Apache 2.0 | Hugging Face |
+| Diffusion Policy (referencia LeRobot) | variable | no aplica | no disponible | según checkpoint | Hugging Face |
+| VLA generalistas (p. ej. OpenVLA) | miles de millones | limitado | no comparable directamente | según modelo | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas. La comparación se limita a categoría, tamaño y licencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamerAyyad/VLA_Samer_31.10.2026_450eps_policy_ACT_500k
+- Modelo en Hugging Face: https://huggingface.co/SamerAyyad/VLA_Samer_31.10.2026_450eps_policy_ACT_500k
 - Dataset de entrenamiento: https://huggingface.co/datasets/SamerAyyad/VLA_Samer_31.10.2026_450eps
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

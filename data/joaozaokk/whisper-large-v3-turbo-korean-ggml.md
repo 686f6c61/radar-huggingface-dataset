@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto/ventana | Idiomas | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Este modelo (JoaoZaokk/whisper-large-v3-turbo-korean-ggml) | No disponible; derivado de Whisper large-v3-turbo | 30 s por ventana | Coreano declarado; pruebas puntuales en portugués e inglés | f16, q8_0, q5_0, q4_0 | Apache 2.0 | Repositorio público, 0 descargas, 0 likes |
-| royshilkrot/whisper-large-v3-turbo-korean-ggml (origen) | No disponible en la información | 30 s por ventana | Coreano | No disponible | Apache 2.0 (según la atribución de este repositorio) | Repositorio público en HuggingFace |
+| royshilkrot/whisper-large-v3-turbo-korean-ggml (origen) | No disponible en la información | 30 s por ventana | Coreano | No disponible | Apache 2.0 (según la atribución de este repositorio) | Repositorio público en Hugging Face |
 | Whisper large-v3-turbo de OpenAI | No disponible | 30 s por ventana | Multilingüe | No disponible | No disponible en la información | Referencia upstream |
-| Otras conversiones GGML de Whisper large-v3-turbo para whisper.cpp | No disponible | 30 s por ventana | Según el ajuste de origen | Habitualmente f16 y familia q | No disponible | Repositorios públicos en HuggingFace |
+| Otras conversiones GGML de Whisper large-v3-turbo para whisper.cpp | No disponible | 30 s por ventana | Según el ajuste de origen | Habitualmente f16 y familia q | No disponible | Repositorios públicos en Hugging Face |
 
 La información proporcionada no incluye métricas de calidad que permitan comparar el rendimiento real de estas alternativas; la comparación se limita a formato, licencia y disponibilidad.
 
@@ -94,7 +94,7 @@ La información proporcionada no incluye métricas de calidad que permitan compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-korean-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-korean-ggml
 - Checkpoint de origen: https://huggingface.co/royshilkrot/whisper-large-v3-turbo-korean-ggml
 - Motor de inferencia whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Perfil del autor de la conversión: https://huggingface.co/JoaoZaokk

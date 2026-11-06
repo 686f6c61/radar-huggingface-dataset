@@ -107,9 +107,9 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Enfoque | BEIR (nDCG@10) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| UIBK-Embedding-v1 | 149M (safetensors); 179M declarados | 2048 doc / 256 query | ColBERT multi-vector + cabeza densa en un solo encoder | 59,74 | Apache-2.0 | HuggingFace, via PyLate |
-| LateOn | 149M | no disponible | Recuperacion por interaccion tardia | 57,22 | no disponible en la informacion proporcionada | HuggingFace (cifras tomadas de su model card) |
-| answerdotai/ModernBERT-base | no disponible | no disponible | Encoder base, no optimizado para retrieval | no aplica | Apache-2.0 | HuggingFace (es el modelo base) |
+| UIBK-Embedding-v1 | 149M (safetensors); 179M declarados | 2048 doc / 256 query | ColBERT multi-vector + cabeza densa en un solo encoder | 59,74 | Apache-2.0 | Hugging Face, via PyLate |
+| LateOn | 149M | no disponible | Recuperacion por interaccion tardia | 57,22 | no disponible en la informacion proporcionada | Hugging Face (cifras tomadas de su model card) |
+| answerdotai/ModernBERT-base | no disponible | no disponible | Encoder base, no optimizado para retrieval | no aplica | Apache-2.0 | Hugging Face (es el modelo base) |
 
 No se dispone de datos comparativos de otros recuperadores ColBERT o densos de tamano similar en la informacion proporcionada. Cabe senalar que el unico modelo con el que el autor compara directamente es LateOn, y que las cifras de LateOn proceden de su propia model card, no de una evaluacion independiente.
 
@@ -130,8 +130,8 @@ No se dispone de datos comparativos de otros recuperadores ColBERT o densos de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DataScience-UIBK/uibk-embedding-v1
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/DataScience-UIBK/models
+- Modelo en Hugging Face: https://huggingface.co/DataScience-UIBK/uibk-embedding-v1
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/DataScience-UIBK/models
 - Web del grupo Data Science UIBK: https://datascienceuibk.github.io/
 - Libreria PyLate: https://github.com/lightonai/pylate
 - Benchmark MTEB: https://github.com/embeddings-benchmark/mteb

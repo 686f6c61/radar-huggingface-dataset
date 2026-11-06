@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento comparativos entre AdaptThink-7B y otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/AdaptThink-7B-delta0.05-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/AdaptThink-7B-delta0.05-GGUF
 - Modelo base: https://huggingface.co/THU-KEG/AdaptThink-7B-delta0.05
 - llama.cpp (herramienta de cuantizacion y runtime): https://github.com/ggerganov/llama.cpp

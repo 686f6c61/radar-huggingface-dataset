@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-2 XL Alpaca es un checkpoint experimental de ajuste por instrucciones desarrollado por el usuario de HuggingFace `americansquid`. Parte de los pesos preentrenados de `openai-community/gpt2-xl`, un transformer decoder-only de aproximadamente 1.500 millones de parametros, y ha completado una unica epoca de ajuste supervisado (SFT) sobre el split de entrenamiento del dataset `yahma/alpaca-cleaned`. El objetivo del autor es preservar el experimento y permitir la evaluacion de su comportamiento, no ofrecer un modelo listo para produccion.
+GPT-2 XL Alpaca es un checkpoint experimental de ajuste por instrucciones desarrollado por el usuario de Hugging Face `americansquid`. Parte de los pesos preentrenados de `openai-community/gpt2-xl`, un transformer decoder-only de aproximadamente 1.500 millones de parametros, y ha completado una unica epoca de ajuste supervisado (SFT) sobre el split de entrenamiento del dataset `yahma/alpaca-cleaned`. El objetivo del autor es preservar el experimento y permitir la evaluacion de su comportamiento, no ofrecer un modelo listo para produccion.
 
 La relevancia de esta publicacion es acotada y de caracter documental: se trata de un ejercicio de ajuste de instrucciones sobre una arquitectura de 2019, con una ventana de contexto muy reducida y entrenamiento limitado a 512 tokens de secuencia. No incorpora tecnicas modernas como RLHF, DPO, atencion lineal, decodificacion especulativa ni modos de razonamiento explicito, y el propio autor advierte de que no se ha realizado una evaluacion sistematica de la calidad de las respuestas.
 
@@ -76,14 +76,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU consumer con 6 GB o mas de VRAM es suficiente en FP16 (RTX 2060, RTX 3060, RTX 4060, GTX 1660 Ti con cuantizacion). En 4 bits cabe en GPUs de 4 GB e incluso en CPU con llama.cpp.
 - GPU de centro de datos: A100, H100, L40S o V100 estan sobradamente dimensionadas; el modelo no aprovecha su capacidad salvo en escenarios de batch muy alto.
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas modernas, y en modo CPU con cuantizacion de 4 u 8 bits.
-- Opciones de despliegue: transformers con `device_map="auto"` (metodo documentado por el autor), vLLM, TGI, llama.cpp u Ollama si se convierte previamente a GGUF, y endpoints compatibles con la API de HuggingFace (`endpoints_compatible` aparece entre las etiquetas del repositorio). No se publican pesos GGUF oficiales.
+- Opciones de despliegue: transformers con `device_map="auto"` (metodo documentado por el autor), vLLM, TGI, llama.cpp u Ollama si se convierte previamente a GGUF, y endpoints compatibles con la API de Hugging Face (`endpoints_compatible` aparece entre las etiquetas del repositorio). No se publican pesos GGUF oficiales.
 - Latencia y throughput: no disponibles. No hay cifras medidas por el autor. Como referencia teorica de orden de magnitud, un modelo denso de 1,5 B en una GPU consumer moderna suele generar decenas de tokens por segundo con batch 1 y decodificacion no especulativa, pero este dato no esta verificado para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| americansquid/gpt-2-xl-alpaca | ~1,5 B | 1.024 tokens (entrenado a 512) | Decoder-only, SFT sobre Alpaca | No disponible | HuggingFace, 0 descargas |
+| americansquid/gpt-2-xl-alpaca | ~1,5 B | 1.024 tokens (entrenado a 512) | Decoder-only, SFT sobre Alpaca | No disponible | Hugging Face, 0 descargas |
 | openai-community/gpt2-xl (modelo base) | ~1,5 B | 1.024 tokens | Decoder-only preentrenado | MIT (segun el repositorio de OpenAI) | Ampliamente disponible |
 | TinyLlama-1.1B-Chat | ~1,1 B | 2.048 tokens | Decoder-only, ajustado con SFT + DPO | Apache 2.0 | Ampliamente disponible |
 | Pythia-1.4B | ~1,4 B | 2.048 tokens | Decoder-only preentrenado | Apache 2.0 | Ampliamente disponible |
@@ -105,7 +105,7 @@ No existe informacion publicada que permita comparar el rendimiento de este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/americansquid/gpt-2-xl-alpaca
+- Modelo en Hugging Face: https://huggingface.co/americansquid/gpt-2-xl-alpaca
 - Modelo base GPT-2 XL: https://huggingface.co/openai-community/gpt2-xl
 - Dataset de ajuste: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Repositorio original de Alpaca (Stanford): https://github.com/tatsu-lab/stanford_alpaca

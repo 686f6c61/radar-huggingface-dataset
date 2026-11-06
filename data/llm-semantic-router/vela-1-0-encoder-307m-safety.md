@@ -92,7 +92,7 @@ La busqueda web realizada no aporto especificaciones ni resultados de alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Safety
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Safety
 - Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Coleccion Vela 1.0 Router Models: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
 - Documentacion de vLLM Semantic Router: https://vllm-sr.ai/

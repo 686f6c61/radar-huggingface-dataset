@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa. No se conocen modelos de embeddings específicos para saraiki publicados con anterioridad en HuggingFace, y los modelos multilingües generales (como `intfloat/multilingual-e5-large` o `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`) cubren lenguas mayoritarias del sur de Asia (urdu, hindi) pero no suelen incluir saraiki. La comparativa directa no es posible sin datos de evaluación publicados.
+No se dispone de información suficiente para establecer una comparativa rigurosa. No se conocen modelos de embeddings específicos para saraiki publicados con anterioridad en Hugging Face, y los modelos multilingües generales (como `intfloat/multilingual-e5-large` o `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`) cubren lenguas mayoritarias del sur de Asia (urdu, hindi) pero no suelen incluir saraiki. La comparativa directa no es posible sin datos de evaluación publicados.
 
 ## Limitaciones y advertencias
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/themohal/saraiki-text-embeddings
+- Repositorio Hugging Face: https://huggingface.co/themohal/saraiki-text-embeddings
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la información disponible.

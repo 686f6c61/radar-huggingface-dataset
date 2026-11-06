@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed3407` es un modelo de generación de texto de 39.087.104 parámetros (unos 39 M) publicado por el usuario fpadovani en HuggingFace. Se trata de un ajuste fino supervisado (SFT) mediante la librería TRL sobre el modelo base `fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407`, del que hereda la arquitectura de la familia GPT-2 (etiqueta `gpt2` en el repositorio). El repositorio no incluye información sobre el dataset de ajuste, los idiomas cubiertos ni la licencia de uso.
+`fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed3407` es un modelo de generación de texto de 39.087.104 parámetros (unos 39 M) publicado por el usuario fpadovani en Hugging Face. Se trata de un ajuste fino supervisado (SFT) mediante la librería TRL sobre el modelo base `fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407`, del que hereda la arquitectura de la familia GPT-2 (etiqueta `gpt2` en el repositorio). El repositorio no incluye información sobre el dataset de ajuste, los idiomas cubiertos ni la licencia de uso.
 
 El interés de esta ficha es fundamentalmente práctico y acotado: se trata de un artefacto de investigación con 0 descargas y 0 valoraciones en el momento de la consulta, sin resultados de evaluación publicados y sin model card sustantiva más allá de la plantilla autogenerada por TRL. El nombre del repositorio apunta a un experimento de tokenizadores y de mezcla de datos (`new_tokenizers` es el proyecto de Weights & Biases enlazado), con variantes de 10 MB y 100 MB de datos y un checkpoint intermedio (paso 500) con semilla 3407.
 
@@ -40,7 +40,7 @@ El entrenamiento se realizó con SFT mediante TRL 0.23.0 sobre el modelo base `a
 
 - Generación de texto autoregresiva mediante la interfaz estándar de `transformers` (pipeline `text-generation`), tal y como muestra el ejemplo de la model card.
 - Formato conversacional de entrada: el ejemplo oficial pasa una lista de mensajes con el rol `user`, lo que indica que el ajuste SFT se hizo sobre plantillas de chat, aunque no se especifica el tokenizador de chat exacto.
-- Compatibilidad declarada con Text Generation Inference (etiquetas `text-generation-inference` y `endpoints_compatible`), lo que permitiría desplegarlo en HuggingFace Inference Endpoints.
+- Compatibilidad declarada con Text Generation Inference (etiquetas `text-generation-inference` y `endpoints_compatible`), lo que permitiría desplegarlo en Hugging Face Inference Endpoints.
 - Capacidades de razonamiento, código, matemáticas, tool calling, uso de agentes, visión o audio: no disponible. La model card no menciona ninguna de ellas y el tamaño del modelo (39 M) hace inviable un comportamiento fiable en tareas de razonamiento complejo.
 - Capacidades multilingües: no disponible. No hay lista de idiomas ni evaluación al respecto.
 - Modo "thinking" o modos especiales de inferencia: no disponible.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (calculada a partir de los 39.087.104 parámetros; no son cifras publicadas por el autor): unos 156 MB en fp32, unos 78 MB en fp16 o bf16, unos 39 MB en int8 y alrededor de 20 MB en 4 bits. Hay que sumar memoria para el contexto, el tokenizador y los buffers de activaciones.
 - Cabe con holgura en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, e incluso en iGPU con memoria unificada. También funciona en CPU para inferencia interactiva.
 - GPU de datacenter (A100, H100, L40S): no son necesarias; solo tendrían sentido para servir muchas réplicas concurrentes o para reentrenar el modelo.
-- Opciones de despliegue: `transformers` con `pipeline` (camino documentado en la model card), Text Generation Inference (etiquetas del repositorio) y HuggingFace Inference Endpoints. Para `llama.cpp` u Ollama sería necesario convertir los pesos a GGUF, conversión que el autor no ha publicado.
+- Opciones de despliegue: `transformers` con `pipeline` (camino documentado en la model card), Text Generation Inference (etiquetas del repositorio) y Hugging Face Inference Endpoints. Para `llama.cpp` u Ollama sería necesario convertir los pesos a GGUF, conversión que el autor no ha publicado.
 - Latencia y throughput: no disponible. No hay mediciones publicadas; por el tamaño, cualquier cifra dependería por completo del hardware y del backend elegido.
 - Almacenamiento: el repositorio ocupa 1,6 GB, aunque los pesos en safetensors son una fracción mínima de ese espacio.
 
@@ -98,7 +98,7 @@ La comparación de rendimiento entre estos modelos no es posible con la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/n7ufd8vb
 - Repositorio de TRL: https://github.com/huggingface/trl

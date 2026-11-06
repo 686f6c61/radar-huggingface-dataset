@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Staryu es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: la model card se limita a la declaracion de licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene descargas ni likes registrados, lo que apunta a una publicacion reciente, experimental o abandonada.
+Staryu es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. En el momento de redactar esta ficha, la informacion publica disponible es practicamente inexistente: la model card se limita a la declaracion de licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene descargas ni likes registrados, lo que apunta a una publicacion reciente, experimental o abandonada.
 
 No se dispone de datos sobre el numero de parametros, la longitud de contexto, la arquitectura ni los idiomas soportados. El tamano del repositorio, 0,1 GB, es el unico indicador tecnico objetivo disponible y resulta compatible con un modelo de muy baja escala o con un adaptador de pesos, si bien esto es una inferencia y no una confirmacion del autor.
 
@@ -21,7 +21,7 @@ La relevancia actual de este modelo es, por tanto, muy limitada: no puede evalua
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
 
-Otros datos registrados en la ficha de HuggingFace:
+Otros datos registrados en la ficha de Hugging Face:
 
 | Parametro | Valor |
 |---|---|
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Staryu
+- Hugging Face: https://huggingface.co/Ryanham1lton/Staryu
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

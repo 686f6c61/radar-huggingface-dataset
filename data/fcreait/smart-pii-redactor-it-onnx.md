@@ -22,7 +22,7 @@ El autor reporta resultados competitivos frente a `rizzo-pii-0.3B` (un modelo do
 | Formato de pesos | ONNX (`onnx/model.onnx`); pesos originales del modelo base no incluidos en este repo |
 | Entradas del grafo | `input_ids` y `attention_mask`, ambas `int64` |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline de HuggingFace | `token-classification` |
+| Pipeline de Hugging Face | `token-classification` |
 | Modelo base | `Mozilla/smart-pii-redactor-v1-onnx` |
 
 ## Arquitectura y entrenamiento
@@ -78,7 +78,7 @@ En `validation_real`, el 64% de las filas contienen piezas WordPiece `##`; la se
 - VRAM estimada: inferior a 1 GB en fp32 (el artefacto ONNX pesa 74 MB y el modelo tiene ~19M de parametros); no se publican medidas de consumo real.
 - GPU: cualquier GPU con al menos 1-2 GB de memoria es suficiente; el modelo no aprovecha GPUs de gama alta como A100 o H100 por su tamano. El escenario natural es CPU.
 - GPU de consumo: cabe holgadamente en cualquier RTX (por ejemplo, serie 40) e incluso en iGPU y en moviles mediante ONNX Runtime.
-- Despliegue: ONNX Runtime (CPU o CUDA), HuggingFace Optimum con backend ONNX, y el pipeline `token-classification` de Transformers cargando el grafo ONNX. No se documenta soporte para vLLM, TGI o llama.cpp, que no estan orientados a token classification de este tipo.
+- Despliegue: ONNX Runtime (CPU o CUDA), Hugging Face Optimum con backend ONNX, y el pipeline `token-classification` de Transformers cargando el grafo ONNX. No se documenta soporte para vLLM, TGI o llama.cpp, que no estan orientados a token classification de este tipo.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia de orden de magnitud, el coste por ventana de 256 tokens es el de un encoder de ~19M de parametros, pero el autor no publica medidas.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ Lectura de la comparativa: frente a `rizzo-pii-0.3B`, este modelo gana en dialog
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fcreait/smart-pii-redactor-it-onnx
+- Modelo en Hugging Face: https://huggingface.co/fcreait/smart-pii-redactor-it-onnx
 - Modelo base: https://huggingface.co/Mozilla/smart-pii-redactor-v1-onnx
 - Modelo base sin ONNX: https://huggingface.co/Mozilla/smart-pii-redactor-v1
 - Alternativa comparada: https://huggingface.co/rizzoaiacademy/rizzo-pii-0.3B

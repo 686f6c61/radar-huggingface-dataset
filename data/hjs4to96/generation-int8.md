@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hjs4to96/generation-int8` es un repositorio de HuggingFace publicado por el usuario hjs4to96 que contiene un esqueleto de código experimental basado en arquitectura CLIP, orientado a tareas de generación. No se trata de un modelo entrenado ni evaluado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye además `model.py` (implementación principal), `config.json` (configuración de arquitectura) y `training_args.json` (receta de experimento por defecto).
+`hjs4to96/generation-int8` es un repositorio de Hugging Face publicado por el usuario hjs4to96 que contiene un esqueleto de código experimental basado en arquitectura CLIP, orientado a tareas de generación. No se trata de un modelo entrenado ni evaluado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye además `model.py` (implementación principal), `config.json` (configuración de arquitectura) y `training_args.json` (receta de experimento por defecto).
 
 El tamaño real declarado en el fichero de pesos es de 49.600 parámetros totales, lo que sitúa el modelo en una escala "tiny", muy por debajo de cualquier CLIP utilizable en producción (los CLIP estándar rondan los 150 millones de parámetros en su variante base). La arquitectura descrita emplea atención estándar, fusión por co-atención, activación gelu-tanh y normalización InstanceNorm. La receta de entrenamiento incluida usa el optimizador RMSprop con un scheduler polinómico, pero el autor aclara explícitamente que son valores de partida en el script y no evidencia de un entrenamiento completado.
 
@@ -26,8 +26,8 @@ Su relevancia es por tanto limitada y de carácter puramente didáctico o de and
 | Activacion | gelu tanh |
 | Normalizacion | InstanceNorm |
 | Optimizador por defecto | RMSprop con scheduler polinómico |
-| Fecha de creación | 2026-10-05 (según metadatos de HuggingFace) |
-| Fecha de actualización | 2026-10-05 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-05 (según metadatos de Hugging Face) |
+| Fecha de actualización | 2026-10-05 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No disponible. No se han encontrado en la información proporcionada modelos dir
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hjs4to96/generation-int8 | 49.600 | no disponible | sin benchmark publicado | MIT | HuggingFace, 0 descargas |
+| hjs4to96/generation-int8 | 49.600 | no disponible | sin benchmark publicado | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No disponible. No se han encontrado en la información proporcionada modelos dir
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hjs4to96/generation-int8
+- Hugging Face: https://huggingface.co/hjs4to96/generation-int8
 - Ficheros del repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a páginas genéricas de YouTube y no guardan relación con el repositorio). No hay papers, blogs, repositorios ni demos adicionales disponibles.

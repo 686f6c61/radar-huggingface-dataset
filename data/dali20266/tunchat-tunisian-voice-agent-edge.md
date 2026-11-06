@@ -95,7 +95,7 @@ No se dispone de comparaciones de rendimiento cuantitativas entre TunCHAT y esto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dali20266/TunCHAT-Tunisian-Voice-Agent-EDGE
+- Modelo en Hugging Face: https://huggingface.co/Dali20266/TunCHAT-Tunisian-Voice-Agent-EDGE
 - Modelo base (version mergeada): https://huggingface.co/Dali20266/TunCHAT-Tunisian-Voice-Agent-MERGED
 - Google AI Edge / LiteRT-LM: no disponible en la informacion proporcionada
 - MediaPipe GenAI: no disponible en la informacion proporcionada

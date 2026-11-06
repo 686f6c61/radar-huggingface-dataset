@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Goedel-Prover-V2-8B-EI-campaign1-r3 es un ajuste fino experimental del modelo Goedel-Prover-V2-8B (desarrollado por Goedel-LM, basado en la arquitectura Qwen3), publicado por el usuario viai957 en HuggingFace. El modelo está especializado en demostración automática de teoremas en Lean 4 y ha sido entrenado mediante expert iteration: el modelo genera demostraciones candidatas que son verificadas por el kernel de Lean 4, y las demostraciones verificadas más cortas se usan como datos de ajuste supervisado.
+Goedel-Prover-V2-8B-EI-campaign1-r3 es un ajuste fino experimental del modelo Goedel-Prover-V2-8B (desarrollado por Goedel-LM, basado en la arquitectura Qwen3), publicado por el usuario viai957 en Hugging Face. El modelo está especializado en demostración automática de teoremas en Lean 4 y ha sido entrenado mediante expert iteration: el modelo genera demostraciones candidatas que son verificadas por el kernel de Lean 4, y las demostraciones verificadas más cortas se usan como datos de ajuste supervisado.
 
 Esta versión corresponde a la ronda 3 de una campaña de alineamiento denominada campaign1, continuando desde el modelo de la ronda 2. Tras el entrenamiento, los pesos ajustados se promediaron con los pesos del modelo base original (peso 0,7 para el modelo ajustado). Un dato relevante: la regla de parada de la campaña no seleccionó esta ronda (la campaña se detuvo por regresión tras la ronda 3, y la mejor ronda según la regla de parada fue la 1), por lo que el autor publica este checkpoint únicamente por completitud y recomienda leer la sección de evaluación antes de usarlo.
 
-El modelo conserva la licencia Apache 2.0 del modelo base, se distribuye en formato safetensors con los pesos completos (8,19 mil millones de parámetros, unos 16,4 GB en el repositorio) y es compatible con la librería transformers de HuggingFace.
+El modelo conserva la licencia Apache 2.0 del modelo base, se distribuye en formato safetensors con los pesos completos (8,19 mil millones de parámetros, unos 16,4 GB en el repositorio) y es compatible con la librería transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viai957/Goedel-Prover-V2-8B-EI-campaign1-r3
+- Modelo en Hugging Face: https://huggingface.co/viai957/Goedel-Prover-V2-8B-EI-campaign1-r3
 - Modelo base: https://huggingface.co/Goedel-LM/Goedel-Prover-V2-8B
 - Datasets de entrenamiento:
   - https://huggingface.co/datasets/Goedel-LM/Goedel-Pset-v1

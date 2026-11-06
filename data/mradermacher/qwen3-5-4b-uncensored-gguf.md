@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-4B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Felldude/Qwen3.5-4B-Uncensored
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Qwen3.5-4B-Uncensored-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Qwen3.5-4B-Uncensored-GGUF

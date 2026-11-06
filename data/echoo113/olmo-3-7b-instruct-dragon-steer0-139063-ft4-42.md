@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42 es un ajuste fino (SFT) del modelo abierto allenai/Olmo-3-7B-Instruct, publicado por el usuario Echoo113 en HuggingFace. Lo desarrolla un tercero no vinculado a Ai2 y se ha entrenado con la librería TRL, según declara la propia model card. Se trata, por tanto, de un derivado experimental de la familia Olmo 3 de Allen Institute for AI, una de las pocas familias que publica pesos, datos, código y registros de entrenamiento de forma completa.
+Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42 es un ajuste fino (SFT) del modelo abierto allenai/Olmo-3-7B-Instruct, publicado por el usuario Echoo113 en Hugging Face. Lo desarrolla un tercero no vinculado a Ai2 y se ha entrenado con la librería TRL, según declara la propia model card. Se trata, por tanto, de un derivado experimental de la familia Olmo 3 de Allen Institute for AI, una de las pocas familias que publica pesos, datos, código y registros de entrenamiento de forma completa.
 
 El modelo base pertenece a la gama Olmo 3, con variantes de 7B y 32B y versiones Base, Instruct y Thinking (estas últimas con SFT, DPO y RL sobre el flujo de post-entrenamiento de Ai2). El nombre del repositorio sugiere una intervención de tipo *steering* (coeficiente 0,139063) combinada con un ajuste fino, aunque el autor no documenta ni el método ni los datos empleados; existe un repositorio hermano con un coeficiente distinto (dragon_Ounif-STEER1.0-ft4.42), lo que apunta a una serie de ablaciones experimentales.
 
@@ -85,7 +85,7 @@ No hay datos de rendimiento que permitan una comparación cuantitativa fiable; l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon-STEER0.139063-ft4.42
 - Repositorio hermano del mismo autor: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon_Ounif-STEER1.0-ft4.42
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Página de la familia Olmo de Ai2: https://allenai.org/olmo

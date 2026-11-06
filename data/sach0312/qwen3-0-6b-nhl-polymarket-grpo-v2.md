@@ -76,7 +76,7 @@ Los datos de la columna del modelo evaluado son los unicos verificados en este r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sach0312/qwen3-0.6b-nhl-polymarket-grpo-v2 | ~0,6B (segun identificador) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Fine-tune de nicho con GRPO; sin benchmarks publicados |
+| sach0312/qwen3-0.6b-nhl-polymarket-grpo-v2 | ~0,6B (segun identificador) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Fine-tune de nicho con GRPO; sin benchmarks publicados |
 | Qwen3-0.6B (modelo base de la familia) | 0,6B | 32.768 tokens nativos (documentacion publica de Qwen) | Apache-2.0 (documentacion publica) | Ampliamente disponible | Modelo generalista con modo thinking; sin ajuste de dominio |
 | SmolLM2-360M-Instruct | 0,36B | 8.192 tokens (documentacion publica) | Apache-2.0 (documentacion publica) | Ampliamente disponible | Alternativa aun mas pequena, generalista y multilingue |
 | Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens (documentacion publica) | Licencia comunitaria de Llama 3.2 | Ampliamente disponible | Mayor tamano y contexto, con restricciones de licencia |
@@ -98,7 +98,7 @@ No hay datos de rendimiento comparado disponibles para el modelo evaluado, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-grpo-v2
+- Modelo en Hugging Face: https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-grpo-v2
 - Modelo base (SFT fusionado): https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-sft-v2-merged
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

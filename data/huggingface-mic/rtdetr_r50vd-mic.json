@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/rtdetr_r50vd-mic",
   "created_at": "2026-10-27T08:58:56.000Z",
-  "updated_at": "2026-11-02T19:20:42.000Z",
+  "updated_at": "2026-11-05T08:17:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 850,
+  "downloads_30d": 1015,
   "trending_score": 0,
   "parameters": 10927020,
   "parameters_human": "10.9M",

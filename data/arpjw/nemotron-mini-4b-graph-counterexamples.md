@@ -72,8 +72,8 @@ Diagnostico post-hoc: todos los exitos del adaptador tambien se resuelven con el
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-Mini-4B-Graph-Counterexamples (este) | LoRA sobre base 4B | No disponible | Contraejemplos de grafos | NVIDIA Open Model License (junio 2024) | HuggingFace, 16 descargas |
-| nvidia/Nemotron-Mini-4B-Instruct (base) | 4B | No disponible | Instrucciones generales | NVIDIA Open Model License | HuggingFace |
+| Nemotron-Mini-4B-Graph-Counterexamples (este) | LoRA sobre base 4B | No disponible | Contraejemplos de grafos | NVIDIA Open Model License (junio 2024) | Hugging Face, 16 descargas |
+| nvidia/Nemotron-Mini-4B-Instruct (base) | 4B | No disponible | Instrucciones generales | NVIDIA Open Model License | Hugging Face |
 | Busqueda aleatoria de 32 propuestas (baseline del paper) | No aplica | No aplica | Contraejemplos de grafos | No aplica | Codigo en repositorio fuente |
 
 No se dispone de comparativas con otros adaptadores o modelos de la misma categoria en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de comparativas con otros adaptadores o modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpjw/Nemotron-Mini-4B-Graph-Counterexamples
+- Hugging Face: https://huggingface.co/arpjw/Nemotron-Mini-4B-Graph-Counterexamples
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct
 - Repositorio fuente del experimento: https://github.com/arpjw/nemotron/tree/main/experiments/graph-counterexamples
 - Informe publico de resultados: https://github.com/arpjw/nemotron/blob/main/experiments/graph-counterexamples/results/RUNPOD_PILOT_PUBLIC.md

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "eunbii1/masf",
+  "slug": "eunbii1-masf",
+  "author": "eunbii1",
+  "url": "https://huggingface.co/eunbii1/masf",
+  "created_at": "2026-05-27T03:36:06.000Z",
+  "updated_at": "2026-11-06T11:42:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "data-assimilation",
+    "score-based-model",
+    "diffusion",
+    "pytorch",
+    "arxiv:2604.02889",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 321543373,
+  "storage_human": "322 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eunbii1/masf · Hugging Face",
+      "url": "https://huggingface.co/eunbii1/masf",
+      "snippet": "eunbii1 / masf like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "eunbii1 (eunbi yoon ) - Hugging Face",
+      "url": "https://huggingface.co/eunbii1",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    }
+  ]
+}

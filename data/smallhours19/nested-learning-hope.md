@@ -85,7 +85,7 @@ No disponible. No se han encontrado comparaciones con modelos de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smallhours19/nested-learning-hope
+- Hugging Face: https://huggingface.co/smallhours19/nested-learning-hope
 - Repositorio GitHub: https://github.com/smallhours19/nested-learning-hope
 - Paper en arXiv: https://arxiv.org/abs/2512.24695
 - Explicación del paper (AI Papers Academy): https://aipapersacademy.com/nested-learning-hope/

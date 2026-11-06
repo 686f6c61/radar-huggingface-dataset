@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hasithanilwakka/ghostwriter-llama31-8b-merged-run02` es un ajuste fino (fine-tuning) del modelo base `unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit`, desarrollado por el usuario hasithanilwakka. Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.0, pensado para tareas conversacionales. El ajuste se realizó utilizando la librería Unsloth, que acelera el entrenamiento (según la model card, 2 veces más rápido) junto con la librería TRL de HuggingFace.
+El modelo `hasithanilwakka/ghostwriter-llama31-8b-merged-run02` es un ajuste fino (fine-tuning) del modelo base `unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit`, desarrollado por el usuario hasithanilwakka. Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.0, pensado para tareas conversacionales. El ajuste se realizó utilizando la librería Unsloth, que acelera el entrenamiento (según la model card, 2 veces más rápido) junto con la librería TRL de Hugging Face.
 
 Con 8.030 millones de parámetros, el modelo pertenece a la familia Llama 3.1 y hereda la arquitectura transformer decoder de su base. Su relevancia radica en ser un ejemplo de fine-tuning eficiente sobre un modelo instructivo ampliamente utilizado, aunque no se proporcionan datos de rendimiento ni benchmarks en la información disponible. El repositorio tiene un tamaño de 16,1 GB, lo que sugiere pesos en precisión completa (probablemente bf16/fp16) almacenados en formato safetensors.
 
@@ -21,13 +21,13 @@ Con 8.030 millones de parámetros, el modelo pertenece a la familia Llama 3.1 y 
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.1 8B Instruct, un transformer decoder con atención causal y mecanismos de normalización RMSNorm. Al ser un fine-tuning del modelo instructivo, conserva la capacidad de seguir instrucciones y mantener diálogos multi-turno. El entrenamiento se realizó con Unsloth, que optimiza el uso de memoria y acelera el proceso, y con TRL (Transformer Reinforcement Learning) de HuggingFace, aunque no se detalla si se emplearon técnicas como RLHF o DPO. No se proporciona información sobre el dataset utilizado, el número de tokens de entrenamiento ni la composición de los datos. Tampoco se mencionan innovaciones técnicas adicionales más allá de la aceleración de Unsloth.
+El modelo se basa en la arquitectura Llama 3.1 8B Instruct, un transformer decoder con atención causal y mecanismos de normalización RMSNorm. Al ser un fine-tuning del modelo instructivo, conserva la capacidad de seguir instrucciones y mantener diálogos multi-turno. El entrenamiento se realizó con Unsloth, que optimiza el uso de memoria y acelera el proceso, y con TRL (Transformer Reinforcement Learning) de Hugging Face, aunque no se detalla si se emplearon técnicas como RLHF o DPO. No se proporciona información sobre el dataset utilizado, el número de tokens de entrenamiento ni la composición de los datos. Tampoco se mencionan innovaciones técnicas adicionales más allá de la aceleración de Unsloth.
 
 ## Capacidades
 
 - Generación de texto conversacional: al ser un fine-tune de Llama 3.1 Instruct, es capaz de mantener diálogos y responder a instrucciones en inglés.
 - Soporte de contexto largo: aunque no se confirma para este ajuste, el modelo base Llama 3.1 soporta hasta 128k tokens de contexto, lo que podría heredarse.
-- Integración con pipelines de HuggingFace: compatible con `transformers` y `text-generation-inference`.
+- Integración con pipelines de Hugging Face: compatible con `transformers` y `text-generation-inference`.
 - No se documentan capacidades específicas como tool calling, agentes, razonamiento multi-paso, visión o audio. Estas dependen del modelo base, pero no hay confirmación en la información proporcionada.
 
 ## Casos de uso
@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ghostwriter-llama31-8b (este) | 8,03B | No disponible | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct (base) | 8,03B | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct | 7,24B | 32k | Apache 2.0 | HuggingFace |
+| ghostwriter-llama31-8b (este) | 8,03B | No disponible | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct (base) | 8,03B | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct | 7,24B | 32k | Apache 2.0 | Hugging Face |
 
 Nota: no se dispone de datos de rendimiento para comparar. El modelo base Llama 3.1 Instruct tiene una licencia más restrictiva (Llama Community License) que la del fine-tune (Apache 2.0), lo que puede facilitar su uso comercial. Mistral-7B-Instruct es una alternativa con arquitectura similar y licencia permisiva, pero con menos parámetros y contexto más corto.
 
@@ -74,6 +74,6 @@ Nota: no se dispone de datos de rendimiento para comparar. El modelo base Llama 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/hasithanilwakka/ghostwriter-llama31-8b-merged-run02)
+- [Página del modelo en Hugging Face](https://huggingface.co/hasithanilwakka/ghostwriter-llama31-8b-merged-run02)
 - [Modelo base: unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | kusema/canary-180m-flash-gguf | 189 M | no disponible | GGUF Q8_0 | CC-BY-4.0 | Espejo de un unico fichero |
-| nvidia/canary-180m-flash | 189 M | no disponible | no disponible en este repositorio | CC-BY-4.0 | Modelo original en HuggingFace |
+| nvidia/canary-180m-flash | 189 M | no disponible | no disponible en este repositorio | CC-BY-4.0 | Modelo original en Hugging Face |
 | handy-computer/canary-180m-flash-gguf | 189 M | no disponible | GGUF | CC-BY-4.0 | Repositorio de conversion original |
 
 La comparación con alternativas de otros autores (por ejemplo, modelos ASR ligeros de otras familias) no está disponible en la información proporcionada.
@@ -79,7 +79,7 @@ La comparación con alternativas de otros autores (por ejemplo, modelos ASR lige
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kusema/canary-180m-flash-gguf
+- Repositorio Hugging Face: https://huggingface.co/kusema/canary-180m-flash-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/canary-180m-flash
 - Repositorio de conversion GGUF: https://huggingface.co/handy-computer/canary-180m-flash-gguf
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

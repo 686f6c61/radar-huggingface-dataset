@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre esta conversion y el mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adrgrondin/MiniCPM5-1B-mlx-6Bit
+- Repositorio Hugging Face: https://huggingface.co/adrgrondin/MiniCPM5-1B-mlx-6Bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Herramienta de conversion y runtime: mlx-lm (version 0.31.2), instalable mediante `pip install mlx-lm`
 - Datasets referenciados en los tags: openbmb/Ultra-FineWeb, openbmb/Ultra-FineWeb-L3, openbmb/UltraData-Math, openbmb/UltraData-SFT-2605

@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Relación | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RLobot-jun/gr00t-n17-bigenlight-all-step10000 | Modelo base declarado, paso 10000 | no disponible | no disponible | no disponible | Público en HuggingFace |
-| RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step5000 | Este modelo, paso 5000 con SVF y LoRA rango 16 | no disponible | no disponible | no disponible | Público en HuggingFace |
+| RLobot-jun/gr00t-n17-bigenlight-all-step10000 | Modelo base declarado, paso 10000 | no disponible | no disponible | no disponible | Público en Hugging Face |
+| RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step5000 | Este modelo, paso 5000 con SVF y LoRA rango 16 | no disponible | no disponible | no disponible | Público en Hugging Face |
 | Otras políticas VLA de la familia GR00T N1.7 o alternativas equivalentes (OpenVLA, pi0, etc.) | Misma categoría funcional | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de especificaciones verificables de modelos alternativos dentro de la información aportada, por lo que la comparación cuantitativa no puede completarse.
@@ -94,7 +94,7 @@ No se dispone de especificaciones verificables de modelos alternativos dentro de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step5000
+- Modelo en Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step5000
 - Modelo base declarado: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-all-step10000
 - Repositorio de código asociado (privado, requiere acceso): `jun981015/gr00t-bigenlight`, commit `258753d26cbf6d46e7e58b4b9c60cf480e6a38bb`
 - Paper, blog o demo oficial: no disponible en la información proporcionada

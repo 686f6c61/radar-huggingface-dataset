@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-sr30k | 1,54B | no disponible (familia base: 32.768) | ninguno | other | HuggingFace |
-| ali-elganzory/Qwen2.5-1.5B-SFT-Tulu3-decontaminated (modelo base) | 1,54B | no disponible | ninguno | no disponible | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct (referencia de la familia) | 1,54B | 32.768 | MMLU, GSM8K, HumanEval publicados por Qwen | Apache 2.0 (Qwen2.5 salvo excepciones) | HuggingFace, Ollama, vLLM |
-| Qwen/Qwen2.5-1.5B (base) | 1,54B | 32.768 | MMLU, GSM8K, HumanEval publicados por Qwen | Apache 2.0 (Qwen2.5 salvo excepciones) | HuggingFace |
+| open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-sr30k | 1,54B | no disponible (familia base: 32.768) | ninguno | other | Hugging Face |
+| ali-elganzory/Qwen2.5-1.5B-SFT-Tulu3-decontaminated (modelo base) | 1,54B | no disponible | ninguno | no disponible | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct (referencia de la familia) | 1,54B | 32.768 | MMLU, GSM8K, HumanEval publicados por Qwen | Apache 2.0 (Qwen2.5 salvo excepciones) | Hugging Face, Ollama, vLLM |
+| Qwen/Qwen2.5-1.5B (base) | 1,54B | 32.768 | MMLU, GSM8K, HumanEval publicados por Qwen | Apache 2.0 (Qwen2.5 salvo excepciones) | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia: para este ajuste no hay datos de rendimiento que permitan una comparacion cuantitativa con Qwen2.5-1.5B-Instruct ni con el checkpoint base.
 
@@ -95,7 +95,7 @@ La comparativa se limita a parametros, contexto y licencia: para este ajuste no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-sr30k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/Qwen2.5-1.5B-SFT-Tulu3-decontaminated-sr30k
 - Modelo base: https://huggingface.co/ali-elganzory/Qwen2.5-1.5B-SFT-Tulu3-decontaminated
 - Familia Qwen2.5-1.5B (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Qwen2.5-1.5B-Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

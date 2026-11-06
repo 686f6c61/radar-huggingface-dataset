@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Flat-Color-Anime-Lineart-Style-for-MOSS (Helives) | LoRA de estilo | MOSS-Image-Base | no disponible | no aplica | MIT | HuggingFace, 131 descargas |
+| Flat-Color-Anime-Lineart-Style-for-MOSS (Helives) | LoRA de estilo | MOSS-Image-Base | no disponible | no aplica | MIT | Hugging Face, 131 descargas |
 | Alternativas de LoRA de estilo anime | LoRA de estilo | distintos backbones (SDXL, Flux, etc.) | no disponible | no aplica | variable | no disponible en la informacion proporcionada |
-| Modelo base MOSS-Image-Base | Modelo de difusión completo | — | no disponible | no aplica | no disponible | HuggingFace (OpenMOSS-Team) |
+| Modelo base MOSS-Image-Base | Modelo de difusión completo | — | no disponible | no aplica | no disponible | Hugging Face (OpenMOSS-Team) |
 
 No se dispone de datos verificables sobre LoRA comparables de la misma estética ni sobre métricas que permitan una comparación cuantitativa; la comparativa se limita a la categoría y al modelo base.
 
@@ -81,6 +81,6 @@ No se dispone de datos verificables sobre LoRA comparables de la misma estética
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Helives/Flat-Color-Anime-Lineart-Style-for-MOSS
+- Hugging Face: https://huggingface.co/Helives/Flat-Color-Anime-Lineart-Style-for-MOSS
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Civitai (referenciado en la model card): https://civitai.red/models/3021291/flat-color-anime-lineart-style-cute-yuan

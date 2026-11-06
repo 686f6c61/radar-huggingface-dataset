@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JA-Engram-117M-Experiment es un modelo de lenguaje japonés de escala reducida publicado por el usuario j-llm en HuggingFace. Se trata de un experimento de investigación que combina un transformer de aproximadamente 33M de parámetros con una tabla de memoria n-gram (Engram) de unos 84M de parámetros y una cabeza de decisión para tareas de elección múltiple, sumando un total de 117,36M de parámetros. El modelo emplea una implementación propia en PyTorch, inspirada conceptualmente en propuestas como DeepSeek Engram, pero no reproduce ningún modelo oficial.
+JA-Engram-117M-Experiment es un modelo de lenguaje japonés de escala reducida publicado por el usuario j-llm en Hugging Face. Se trata de un experimento de investigación que combina un transformer de aproximadamente 33M de parámetros con una tabla de memoria n-gram (Engram) de unos 84M de parámetros y una cabeza de decisión para tareas de elección múltiple, sumando un total de 117,36M de parámetros. El modelo emplea una implementación propia en PyTorch, inspirada conceptualmente en propuestas como DeepSeek Engram, pero no reproduce ningún modelo oficial.
 
 El modelo fue entrenado en dos fases: un preentrenamiento sobre aproximadamente 2B tokens de texto japonés procedente de FineWeb-2-Edu Japanese y un ajuste supervisado (SFT) con 94.950 ejemplos construidos a partir de Swallow-Gemma-Magpie y Aya. Posteriormente se realizó un entrenamiento conjunto con tareas de elección múltiple (JCommonsenseQA y aritmética). El autor publica tanto los pesos como el código, incluyendo los resultados negativos: el rendimiento queda por debajo de modelos de tamaño similar y la calidad de generación libre y conversación es deficiente.
 
@@ -99,10 +99,10 @@ Latencia medida en RTX 3090, batch 1, BF16, sin KV cache: inferencia pointer del
 
 | Modelo | Parámetros | Contexto | BPB (corpus del autor) | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| JA-Engram-117M-Experiment | 117,36M | 2.048 | 1,014094 | apache-2.0-and-gemma-terms | HuggingFace, código propio |
-| rinna/japanese-gpt2-small | 110,42M | no disponible | 0,806208 | no disponible en la información | HuggingFace |
-| llm-jp/llm-jp-3-150m | 152,32M | no disponible | 0,844785 | no disponible en la información | HuggingFace |
-| rinna/japanese-gpt2-xsmall | 37,40M | no disponible | 0,916555 | no disponible en la información | HuggingFace |
+| JA-Engram-117M-Experiment | 117,36M | 2.048 | 1,014094 | apache-2.0-and-gemma-terms | Hugging Face, código propio |
+| rinna/japanese-gpt2-small | 110,42M | no disponible | 0,806208 | no disponible en la información | Hugging Face |
+| llm-jp/llm-jp-3-150m | 152,32M | no disponible | 0,844785 | no disponible en la información | Hugging Face |
+| rinna/japanese-gpt2-xsmall | 37,40M | no disponible | 0,916555 | no disponible en la información | Hugging Face |
 
 El modelo no supera a ninguno de los comparables en BPB según los datos del propio autor. Su interés comparativo reside en la arquitectura híbrida con memoria Engram y en la cabeza de selección, no en el rendimiento bruto.
 
@@ -123,7 +123,7 @@ El modelo no supera a ninguno de los comparables en BPB según los datos del pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-llm/JA-Engram-117M-Experiment
+- Modelo en Hugging Face: https://huggingface.co/j-llm/JA-Engram-117M-Experiment
 - Resultados de evaluación principal: evaluation-small-ja.json (en el repositorio del modelo)
 - Comparación con modelos base: comparison-bases.json y comparison-protocol.json (en el repositorio del modelo)
 - Piloto de tokenizador: tokenizer-pilot.json (en el repositorio del modelo)

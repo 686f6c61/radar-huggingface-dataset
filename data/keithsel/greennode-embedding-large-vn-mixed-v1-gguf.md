@@ -98,7 +98,7 @@ El modelo supera en la métrica media del dataset GreenNodeTableRetrieval a las 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión GGUF: https://huggingface.co/Keithsel/GreenNode-Embedding-Large-VN-Mixed-V1-GGUF
+- Repositorio Hugging Face de la conversión GGUF: https://huggingface.co/Keithsel/GreenNode-Embedding-Large-VN-Mixed-V1-GGUF
 - Modelo original en safetensors: https://huggingface.co/GreenNode/GreenNode-Embedding-Large-VN-Mixed-V1
 - Modelo base GreenNode-Embedding-Large-VN-V1: https://huggingface.co/GreenNode/GreenNode-Embedding-Large-VN-V1
 - Dataset de entrenamiento: https://huggingface.co/datasets/GreenNode/GreenNode-Table-Markdown-Retrieval-VN

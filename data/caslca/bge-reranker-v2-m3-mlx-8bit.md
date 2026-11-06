@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `caslca/bge-reranker-v2-m3-mlx-8bit` (esta ficha) | 567,76 M | no disponible | 8 bits affine, group size 64, MLX | Apache 2.0 | HuggingFace, 0 descargas, formato MLX |
-| `BAAI/bge-reranker-v2-m3` (referencia) | 567,76 M | no disponible | fp32 sin cuantizar | Apache 2.0 | HuggingFace, modelo oficial de BAAI |
-| `furiosa-ai/bge-reranker-v2-m3` | 567,76 M (misma base) | no disponible | no disponible | no disponible | HuggingFace, orientado a hardware Furiosa AI |
-| `bge-reranker-base` / `bge-reranker-large` (familia BGE) | no disponible en la informacion | no disponible | no disponible | no disponible | HuggingFace |
+| `caslca/bge-reranker-v2-m3-mlx-8bit` (esta ficha) | 567,76 M | no disponible | 8 bits affine, group size 64, MLX | Apache 2.0 | Hugging Face, 0 descargas, formato MLX |
+| `BAAI/bge-reranker-v2-m3` (referencia) | 567,76 M | no disponible | fp32 sin cuantizar | Apache 2.0 | Hugging Face, modelo oficial de BAAI |
+| `furiosa-ai/bge-reranker-v2-m3` | 567,76 M (misma base) | no disponible | no disponible | no disponible | Hugging Face, orientado a hardware Furiosa AI |
+| `bge-reranker-base` / `bge-reranker-large` (familia BGE) | no disponible en la informacion | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación relevante es contra la referencia en fp32: misma arquitectura y mismos parámetros, con una reducción de tamaño de aproximadamente 2,3 GB a 0,6 GB (cálculo a partir de 567.755.777 parámetros en punto flotante de 32 bits) y métricas equivalentes en el estudio del autor. Frente a alternativas de otros tamaños o familias, no hay datos de benchmarks en la información disponible para establecer una comparación rigurosa.
 
@@ -94,7 +94,7 @@ La comparación relevante es contra la referencia en fp32: misma arquitectura y 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/caslca/bge-reranker-v2-m3-mlx-8bit
+- Hugging Face (este modelo): https://huggingface.co/caslca/bge-reranker-v2-m3-mlx-8bit
 - Modelo base `BAAI/bge-reranker-v2-m3`: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Version para hardware Furiosa AI: https://huggingface.co/furiosa-ai/bge-reranker-v2-m3
 - Documentacion de Furiosa AI sobre el modelo: https://developer.furiosa.ai/latest/en/furiosa_llm/models/bge-reranker-v2-m3.html

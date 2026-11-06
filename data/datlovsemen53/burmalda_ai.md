@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Burmalda_ai es un repositorio publicado en HuggingFace por el usuario datlovsemen53 bajo licencia Apache 2.0. A pesar del nombre y de la etiqueta de modelo, la model card describe en realidad una aplicación de generación de vídeo de hasta un minuto de duración, empaquetada como Space con SDK Docker en el puerto 7860. El sistema no entrena ni distribuye pesos propios: orquesta modelos de difusión de vídeo de terceros (AnimateDiff-Lightning y LTX-Video 2B) sobre una GPU T4 de 16 GB.
+Burmalda_ai es un repositorio publicado en Hugging Face por el usuario datlovsemen53 bajo licencia Apache 2.0. A pesar del nombre y de la etiqueta de modelo, la model card describe en realidad una aplicación de generación de vídeo de hasta un minuto de duración, empaquetada como Space con SDK Docker en el puerto 7860. El sistema no entrena ni distribuye pesos propios: orquesta modelos de difusión de vídeo de terceros (AnimateDiff-Lightning y LTX-Video 2B) sobre una GPU T4 de 16 GB.
 
 El flujo de trabajo consiste en recibir un prompt de texto, dividirlo en N segmentos, generar cada segmento con el modelo de difusión correspondiente y concatenar los resultados con ffmpeg para producir un clip final de hasta 60 segundos. La model card documenta los tiempos de generación esperados según el backend elegido: entre 10 y 12 minutos para un minuto de vídeo con AnimateDiff, y entre 60 y 90 minutos con LTX-Video, opción que el propio autor desaconseja.
 
@@ -84,5 +84,5 @@ No disponible. El repositorio no publica pesos ni métricas comparables, por lo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/datlovsemen53/Burmalda_ai
+- Repositorio en Hugging Face: https://huggingface.co/datlovsemen53/Burmalda_ai
 - Consola de Groq para obtener la API key del refinador: https://console.groq.com/keys

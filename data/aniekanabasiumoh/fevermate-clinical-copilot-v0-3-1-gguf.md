@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FeverMate-Clinical-Copilot-v0.3.1-GGUF es un modelo publicado en HuggingFace por el usuario Aniekanabasiumoh, con licencia Apache 2.0. El nombre sugiere que está orientado a un copiloto clínico para el manejo de fiebre (fever mate), probablemente diseñado para asistir a profesionales sanitarios en la evaluación y tratamiento de pacientes con fiebre. Sin embargo, la model card asociada está vacía y no se ha publicado ninguna información técnica adicional, por lo que no es posible confirmar la arquitectura, el tamaño, el entrenamiento ni las capacidades reales del modelo.
+FeverMate-Clinical-Copilot-v0.3.1-GGUF es un modelo publicado en Hugging Face por el usuario Aniekanabasiumoh, con licencia Apache 2.0. El nombre sugiere que está orientado a un copiloto clínico para el manejo de fiebre (fever mate), probablemente diseñado para asistir a profesionales sanitarios en la evaluación y tratamiento de pacientes con fiebre. Sin embargo, la model card asociada está vacía y no se ha publicado ninguna información técnica adicional, por lo que no es posible confirmar la arquitectura, el tamaño, el entrenamiento ni las capacidades reales del modelo.
 
 El modelo se distribuye en formato GGUF, lo que indica que está cuantizado y listo para su uso con herramientas como llama.cpp u Ollama. A pesar de su nombre prometedor, la ausencia de documentación y de métricas de rendimiento hace que su adopción en entornos clínicos reales sea arriesgada sin una evaluación previa exhaustiva. La relevancia actual de este modelo es limitada debido a la falta de transparencia y de datos verificables.
 
@@ -62,6 +62,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - Aniekanabasiumoh/FeverMate-Clinical-Copilot-v0.3.1-GGUF](https://huggingface.co/Aniekanabasiumoh/FeverMate-Clinical-Copilot-v0.3.1-GGUF)
+- [Hugging Face - Aniekanabasiumoh/FeverMate-Clinical-Copilot-v0.3.1-GGUF](https://huggingface.co/Aniekanabasiumoh/FeverMate-Clinical-Copilot-v0.3.1-GGUF)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) específicos de este modelo.

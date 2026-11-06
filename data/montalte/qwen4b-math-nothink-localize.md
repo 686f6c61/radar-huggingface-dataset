@@ -84,7 +84,7 @@ Al no haber benchmarks publicados para el modelo fusionado, la comparativa se li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Montalte/qwen4b-math-nothink-localize
+- Hugging Face: https://huggingface.co/Montalte/qwen4b-math-nothink-localize
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Modelo especialista de origen (citado en la model card): `modrill/math-nothink-q4b-20260908` (sin URL pública verificado en la información disponible)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

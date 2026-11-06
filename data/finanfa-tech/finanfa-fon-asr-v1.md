@@ -101,7 +101,7 @@ No se dispone de otros modelos ASR específicos para fon en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/finanfa-tech/finanfa-fon-asr-v1
+- Modelo en Hugging Face: https://huggingface.co/finanfa-tech/finanfa-fon-asr-v1
 - Organización Finanfa Tech: https://huggingface.co/finanfa-tech
 - whisper.cpp (repositorio oficial): https://github.com/ggml-org/whisper.cpp
 - Modelo base OpenAI Whisper Small: https://huggingface.co/openai/whisper-small

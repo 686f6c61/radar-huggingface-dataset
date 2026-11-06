@@ -75,7 +75,7 @@ No se dispone de resultados en benchmarks estándar como Common Voice o FLEURS c
 | Modelo | Arquitectura | Tamano | Idioma | Licencia | Formato |
 |---|---|---|---|---|---|
 | bhaskaro/ainotes-whisper-bengali-q5_1 | Whisper small | 190 MB (q5_1) | bn | MIT | GGML |
-| asif00/whisper-bangla | Whisper small | no disponible | bn | no disponible | PyTorch (HuggingFace) |
+| asif00/whisper-bangla | Whisper small | no disponible | bn | no disponible | PyTorch (Hugging Face) |
 | openai/whisper-small | Whisper small | 244M parametros | multilingue | MIT | PyTorch |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en los mismos conjuntos de evaluación. El modelo `asif00/whisper-bangla` es otro fine-tune para bengalí, pero no se especifican métricas ni licencia en la información disponible. Whisper small original es multilingüe y puede transcribir bengalí, aunque con menor precisión que un fine-tune específico.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en los mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bhaskaro/ainotes-whisper-bengali-q5_1
+- Repositorio Hugging Face: https://huggingface.co/bhaskaro/ainotes-whisper-bengali-q5_1
 - Modelo base: https://huggingface.co/bangla-speech-processing/BanglaASR
 - whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Otro fine-tune de Whisper para bengalí (referencia): https://huggingface.co/asif00/whisper-bangla

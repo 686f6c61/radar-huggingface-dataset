@@ -60,13 +60,13 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Cuantización | Tamaño | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mflux-community/qwen-image-2-1-turbo-mflux-q3 (este) | Q3 (3 bits) | 8,0 GB | safetensors MLX / MFlux | qwen-research | HuggingFace, 35 descargas |
-| mflux-community/qwen-image-2-1-turbo-mflux-q4 | Q4 | 10,0 GB | safetensors MLX / MFlux | qwen-research | HuggingFace |
-| mflux-community/qwen-image-2-1-turbo-mflux-q5 | Q5 | 11,9 GB | safetensors MLX / MFlux | qwen-research | HuggingFace |
-| mflux-community/qwen-image-2-1-turbo-mflux-q6 | Q6 | 13,9 GB | safetensors MLX / MFlux | qwen-research | HuggingFace |
-| mflux-community/qwen-image-2-1-turbo-mflux-q8 | Q8 | 17,8 GB | safetensors MLX / MFlux | qwen-research | HuggingFace |
-| mflux-community/qwen-image-2-1-turbo-mflux-bf16 | BF16 | 32,5 GB | safetensors MLX / MFlux | qwen-research | HuggingFace |
-| Qwen/Qwen-Image-2.1-Turbo (original) | BF16 (presumiblemente) | no disponible | no disponible | qwen-research | HuggingFace |
+| mflux-community/qwen-image-2-1-turbo-mflux-q3 (este) | Q3 (3 bits) | 8,0 GB | safetensors MLX / MFlux | qwen-research | Hugging Face, 35 descargas |
+| mflux-community/qwen-image-2-1-turbo-mflux-q4 | Q4 | 10,0 GB | safetensors MLX / MFlux | qwen-research | Hugging Face |
+| mflux-community/qwen-image-2-1-turbo-mflux-q5 | Q5 | 11,9 GB | safetensors MLX / MFlux | qwen-research | Hugging Face |
+| mflux-community/qwen-image-2-1-turbo-mflux-q6 | Q6 | 13,9 GB | safetensors MLX / MFlux | qwen-research | Hugging Face |
+| mflux-community/qwen-image-2-1-turbo-mflux-q8 | Q8 | 17,8 GB | safetensors MLX / MFlux | qwen-research | Hugging Face |
+| mflux-community/qwen-image-2-1-turbo-mflux-bf16 | BF16 | 32,5 GB | safetensors MLX / MFlux | qwen-research | Hugging Face |
+| Qwen/Qwen-Image-2.1-Turbo (original) | BF16 (presumiblemente) | no disponible | no disponible | qwen-research | Hugging Face |
 
 La comparación más directa es con las demás variantes del mismo modelo base publicadas por mflux-community: todas comparten licencia y runtime, y difieren únicamente en el nivel de cuantización y el tamaño en disco. No se dispone de datos de rendimiento para establecer una comparación cuantitativa entre ellas ni con otros generadores texto-a-imagen.
 
@@ -82,7 +82,7 @@ La comparación más directa es con las demás variantes del mismo modelo base p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-q3
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-q3
 - Modelo base original: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
 - MFlux (implementación MLX): https://github.com/filipstrand/mflux

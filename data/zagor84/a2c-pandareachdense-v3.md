@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zagor84/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo A2C (Advantage Actor-Critic) para el entorno `PandaReachDense-v3`, una tarea de manipulacion robotica en la que un brazo Panda debe desplazar su efector final hasta una posicion objetivo. Ha sido desarrollado por el usuario `zagor84` y publicado en HuggingFace integrandose con la libreria `stable-baselines3`.
+El modelo `zagor84/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo A2C (Advantage Actor-Critic) para el entorno `PandaReachDense-v3`, una tarea de manipulacion robotica en la que un brazo Panda debe desplazar su efector final hasta una posicion objetivo. Ha sido desarrollado por el usuario `zagor84` y publicado en Hugging Face integrandose con la libreria `stable-baselines3`.
 
 El agente esta especializado en un unico entorno y su tamano es reducido (el repositorio registra 0.0 GB). La metrica declarada por el autor es una recompensa media de -0.21 ± 0.17 en `PandaReachDense-v3`, aunque sin verificar oficialmente. Su interes practico radica en servir como checkpoint de referencia para experimentos de RL en robotica, especialmente para comparar el comportamiento de A2C frente a algoritmos como PPO o SAC en la suite de entornos Panda Gym, y como base para practicas docentes con `stable-baselines3`.
 
@@ -62,13 +62,13 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 ## Comparativa con modelos similares
 
-Se han identificado dos repositorios en HuggingFace con el mismo nombre y proposito, aunque de autores distintos:
+Se han identificado dos repositorios en Hugging Face con el mismo nombre y proposito, aunque de autores distintos:
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zagor84/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | -0.21 ± 0.17 | no disponible | HuggingFace |
-| MP4good/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | HuggingFace |
-| TechBuz/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | HuggingFace |
+| zagor84/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | -0.21 ± 0.17 | no disponible | Hugging Face |
+| MP4good/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | Hugging Face |
+| TechBuz/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | Hugging Face |
 
 No se dispone de las metricas ni de los detalles de parametros de los modelos de MP4good y TechBuz en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa adicional.
 
@@ -83,7 +83,7 @@ No se dispone de las metricas ni de los detalles de parametros de los modelos de
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/zagor84/a2c-PandaReachDense-v3
+- Hugging Face del modelo: https://huggingface.co/zagor84/a2c-PandaReachDense-v3
 - Modelo similar de MP4good: https://huggingface.co/MP4good/a2c-PandaReachDense-v3
 - Modelo similar de TechBuz: https://huggingface.co/TechBuz/a2c-PandaReachDense-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3

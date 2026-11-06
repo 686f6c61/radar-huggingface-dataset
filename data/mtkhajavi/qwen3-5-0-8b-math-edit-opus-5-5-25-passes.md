@@ -73,8 +73,8 @@ Incrementos absolutos: +24,5 puntos en MATH-500, +37,7 en GSM8K y +14,2 en IFEva
 
 | Modelo | Parámetros | Contexto | MATH-500 | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Esta edición | 752 M | no disponible | 33,3 % | 50,5 % | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen3.5-0.8B (base) | 752 M | no disponible | 8,8 % | 12,8 % | Apache 2.0 | HuggingFace (modelo oficial) |
+| Esta edición | 752 M | no disponible | 33,3 % | 50,5 % | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen3.5-0.8B (base) | 752 M | no disponible | 8,8 % | 12,8 % | Apache 2.0 | Hugging Face (modelo oficial) |
 | Alternativas de ~0,5-1 B con foco matemático | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación con datos verificables es contra el propio modelo base, que es el punto de referencia natural del experimento. No se dispone de resultados de otros modelos de tamaño comparable evaluados bajo el mismo protocolo think35 en la información proporcionada, por lo que no se incluyen cifras de terceros.
@@ -93,7 +93,7 @@ La única comparación con datos verificables es contra el propio modelo base, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-25-passes
+- Modelo en Hugging Face: https://huggingface.co/mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-25-passes
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del experimento (código, edición y evaluación): https://github.com/MatinKhajavi/Weight-Space-Programming
 - Blog de referencia "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/

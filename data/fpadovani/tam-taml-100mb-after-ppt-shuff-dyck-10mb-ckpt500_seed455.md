@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455` es un modelo de generación de texto de 124.770.816 parámetros (~124,8 M) desarrollado por el usuario `fpadovani`, vinculado a la Universidad de Groningen según la cuenta de Weights & Biases asociada a su entrenamiento. Se trata de un ajuste fino supervisado (SFT) mediante la librería TRL sobre el modelo base `fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed455`, y está etiquetado en HuggingFace con la arquitectura `gpt2`, lo que apunta a un transformer decoder-only de tipo GPT-2. El repositorio ocupa 2,7 GB y publica pesos en formato safetensors para la librería Transformers.
+El modelo `fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455` es un modelo de generación de texto de 124.770.816 parámetros (~124,8 M) desarrollado por el usuario `fpadovani`, vinculado a la Universidad de Groningen según la cuenta de Weights & Biases asociada a su entrenamiento. Se trata de un ajuste fino supervisado (SFT) mediante la librería TRL sobre el modelo base `fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed455`, y está etiquetado en Hugging Face con la arquitectura `gpt2`, lo que apunta a un transformer decoder-only de tipo GPT-2. El repositorio ocupa 2,7 GB y publica pesos en formato safetensors para la librería Transformers.
 
 Por el nombre del identificador (los segmentos `100mb`, `ppt`, `shuff`, `dyck`, `ckpt500` y `seed455`) y por el nombre del proyecto de seguimiento en Weights & Biases (`new_tokenizers`), todo indica que se trata de un modelo de investigación orientado a experimentos con tokenizadores, datos sintéticos y lenguajes formales de tipo Dyck, más que a un asistente de propósito general. Conviene subrayar que esta interpretación procede únicamente de la nomenclatura y de la URL del experimento: ni la model card ni los metadatos proporcionados describen la composición del dataset de entrenamiento, el número de tokens vistos ni el idioma.
 
@@ -12,7 +12,7 @@ El modelo es relevante ahora como artefacto de investigación reproducible: un c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en HuggingFace; clase GPT-2 en Transformers) |
+| Arquitectura | Transformer decoder-only (etiqueta `gpt2` en Hugging Face; clase GPT-2 en Transformers) |
 | Parametros totales | 124.770.816 (~124,8 M), dato real de los pesos safetensors |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -76,10 +76,10 @@ La model card no incluye métricas de evaluación (MMLU, HumanEval, GSM8K, ARC, 
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicos | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455` | 124,8 M | No disponible | No disponible | No | HuggingFace, safetensors |
-| GPT-2 124M | 124 M | 1024 tokens | MIT modificada | Si (fuente oficial) | HuggingFace, safetensors, GGUF en repos de terceros |
-| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Si (EleutherAI) | HuggingFace, safetensors |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Si (HuggingFace) | HuggingFace, safetensors, GGUF |
+| `fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455` | 124,8 M | No disponible | No disponible | No | Hugging Face, safetensors |
+| GPT-2 124M | 124 M | 1024 tokens | MIT modificada | Si (fuente oficial) | Hugging Face, safetensors, GGUF en repos de terceros |
+| Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Si (EleutherAI) | Hugging Face, safetensors |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Si (Hugging Face) | Hugging Face, safetensors, GGUF |
 
 No es posible comparar el rendimiento del modelo analizado con estas alternativas, porque no se ha publicado ninguna evaluación suya. La diferencia más relevante en términos prácticos es la licencia: las tres alternativas tienen licencias permisivas y explícitas, mientras que este checkpoint no declara licencia alguna, lo que impide determinar si su uso comercial está permitido. En contexto y en documentación de entrenamiento también queda por detrás, ya que las alternativas publican tanto la longitud de contexto como la composición de sus datos de entrenamiento.
 
@@ -95,11 +95,11 @@ No es posible comparar el rendimiento del modelo analizado con estas alternativa
 - Sesgos no evaluados: al no existir documentación ni métricas, no se han medido sesgos de género, raza, religión u otros, que probablemente se heredan del modelo base y de sus datos.
 - Sin versiones cuantizadas oficiales: el despliegue en llama.cpp, Ollama o entornos con restricciones severas de memoria requiere conversión manual a GGUF.
 - No apto para producción con requisitos de fiabilidad: atención al cliente, generación de código o cualquier flujo donde un error tenga coste no debería apoyarse en este checkpoint.
-- Trazabilidad temporal: las fechas de creación y actualización del repositorio (2026-09-14) figuran tal cual en los metadatos de HuggingFace.
+- Trazabilidad temporal: las fechas de creación y actualización del repositorio (2026-09-14) figuran tal cual en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-shuff-dyck-10mb_seed455
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ac0bl8f5
 - Repositorio de TRL: https://github.com/huggingface/trl

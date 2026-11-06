@@ -94,7 +94,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tthoraldson/text-to-music-onnxruntime
+- Modelo en Hugging Face: https://huggingface.co/tthoraldson/text-to-music-onnxruntime
 - Modelo base: https://huggingface.co/sander-wood/text-to-music
 
 No se han encontrado enlaces relevantes adicionales en la búsqueda web. Los resultados devueltos por el buscador no guardan ninguna relación con el modelo ni con la generación musical, por lo que se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `mdagosta/waldito-python-basics-v1-r0014-u2-mdagosta-b` es un modelo de generacion de texto de muy reducido tamano (9.541.632 parametros) publicado en HuggingFace por el usuario `mdagosta`. Segun la model card del autor, se trata de un export del proyecto "OpenWALDO" que reutiliza la arquitectura causal estandar de Llama implementada en la libreria Transformers, junto con un tokenizador propio de tipo "schema-1 byte tokenizer". El repositorio esta etiquetado como `text-generation`, `conversational` y `endpoints_compatible`, lo que indica que el autor lo ha preparado para su despliegue mediante text-generation-inference y endpoints compatibles.
+El modelo identificado como `mdagosta/waldito-python-basics-v1-r0014-u2-mdagosta-b` es un modelo de generacion de texto de muy reducido tamano (9.541.632 parametros) publicado en Hugging Face por el usuario `mdagosta`. Segun la model card del autor, se trata de un export del proyecto "OpenWALDO" que reutiliza la arquitectura causal estandar de Llama implementada en la libreria Transformers, junto con un tokenizador propio de tipo "schema-1 byte tokenizer". El repositorio esta etiquetado como `text-generation`, `conversational` y `endpoints_compatible`, lo que indica que el autor lo ha preparado para su despliegue mediante text-generation-inference y endpoints compatibles.
 
 El nombre del repositorio sugiere que se trata de un ajuste fino orientado a fundamentos de Python, aunque la model card no confirma explicitamente el dataset, el idioma ni el objetivo de entrenamiento. El modelo no registra descargas ni "likes" en el momento de la consulta y el tamano del repositorio aparece como 0,0 GB, lo que apunta a un artefacto de pesos muy ligero, coherente con sus aproximadamente 9,5 millones de parametros.
 
@@ -88,7 +88,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u2-mdagosta-b
+- Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u2-mdagosta-b
 - Documentacion de Transformers (arquitectura Llama): https://huggingface.co/docs/transformers/model_doc/llama
 - Documentacion de text-generation-inference: https://huggingface.co/docs/text-generation-inference
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

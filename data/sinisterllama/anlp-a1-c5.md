@@ -4,7 +4,7 @@
 
 El modelo `SinisterLlama/anlp-a1-c5` es un transformador seq2seq de 8,02 millones de parámetros desarrollado por Eshaan Sharma como parte de la asignatura ANLP (Advanced Natural Language Processing) en el IIIT Hyderabad. Su propósito específico es el descifrado de texto cifrado: mapea secuencias binarias cifradas a texto plano, una tarea de criptoanálisis asistido por aprendizaje automático.
 
-La relevancia de este modelo radica en su arquitectura: implementa un Byte Latent Transformer (BLT) con parcheo dinámico basado en entropía, codificador y decodificador de bytes locales, y un transformador global con atención cruzada latente. Esta arquitectura token-free procesa directamente bytes en lugar de depender de un tokenizador subword, lo que lo convierte en un caso de estudio interesante para tareas de descifrado donde los límites de token son difíciles de definir. El modelo se publica con licencia MIT, pesa 0,1 GB y está diseñado para funcionar con la librería transformers de HuggingFace.
+La relevancia de este modelo radica en su arquitectura: implementa un Byte Latent Transformer (BLT) con parcheo dinámico basado en entropía, codificador y decodificador de bytes locales, y un transformador global con atención cruzada latente. Esta arquitectura token-free procesa directamente bytes en lugar de depender de un tokenizador subword, lo que lo convierte en un caso de estudio interesante para tareas de descifrado donde los límites de token son difíciles de definir. El modelo se publica con licencia MIT, pesa 0,1 GB y está diseñado para funcionar con la librería transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su arquitectura: implementa un Byte Laten
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | ingles (etiqueta `en` en la model card) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (libreria transformers de HuggingFace) |
+| Formato de pesos | safetensors (libreria transformers de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,7 +64,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - El modelo tiene 8,02 millones de parametros, lo que equivale a aproximadamente 32 MB en precision FP32 (0,1 GB segun el tamano del repositorio).
 - Inferencia en CPU: viable en cualquier maquina moderna con al menos 4 GB de RAM. La latencia estimada es de decenas de milisegundos por secuencia corta.
 - Inferencia en GPU: cabe en cualquier GPU consumer con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1650, RTX 3060, etc.
-- Despliegue: compatible con la libreria transformers de HuggingFace, por lo que puede servirse con herramientas como HuggingFace Inference Endpoints (etiqueta `endpoints_compatible` presente en los metadatos).
+- Despliegue: compatible con la libreria transformers de Hugging Face, por lo que puede servirse con herramientas como Hugging Face Inference Endpoints (etiqueta `endpoints_compatible` presente en los metadatos).
 - No se dispone de datos de latencia ni throughput medidos por el autor.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Existen otros modelos publicados por estudiantes de la misma asignatura con la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SinisterLlama/anlp-a1-c5
+- Modelo en Hugging Face: https://huggingface.co/SinisterLlama/anlp-a1-c5
 - Repositorio GitHub del autor: https://github.com/SinisterLlamma/ANLP-Assignment1
 - Modelo relacionado (shauryakochar): https://huggingface.co/shauryakochar/anlp-a1-c5
 - Modelo relacionado (neemon): https://huggingface.co/neemon/anlp-a1-c5

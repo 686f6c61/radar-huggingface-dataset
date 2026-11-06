@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/IsValorum/Axion-1.0-35B-Q8_0-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/IsValorum/Axion-1.0-35B-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Axion1-0/Axion-1.0-35B
 - Apoyo al autor (Ko-fi): https://ko-fi.com/isvalorum

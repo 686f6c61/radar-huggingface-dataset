@@ -63,6 +63,6 @@ La comparativa se limita al modelo base y su variante instructiva, ya que no hay
 - Idiomas y contexto no documentados: no se especifican los idiomas soportados ni la longitud de contexto efectiva, lo que añade incertidumbre para su uso en producción.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h036.sft3.step_450
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h036.sft3.step_450
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado papers, blogs o demos adicionales asociados a este checkpoint específico.

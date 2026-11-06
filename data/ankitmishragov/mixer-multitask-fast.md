@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ankitmishragov/mixer-multitask-fast` es un repositorio de HuggingFace publicado por el usuario Ankitmishragov que contiene una implementación propia en PyTorch de una arquitectura tipo Mixer orientada a tareas múltiples (multitask). No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe explícitamente como una configuración "base" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
+`Ankitmishragov/mixer-multitask-fast` es un repositorio de Hugging Face publicado por el usuario Ankitmishragov que contiene una implementación propia en PyTorch de una arquitectura tipo Mixer orientada a tareas múltiples (multitask). No se trata de un modelo preentrenado ni de una release lista para producción: la propia model card lo describe explícitamente como una configuración "base" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
 
 El dato más relevante desde el punto de vista técnico es su tamaño: el repositorio declara 16.576 parámetros totales, es decir, un modelo de aproximadamente 16,6 mil parámetros, no millones ni miles de millones. El tamaño del repositorio es de 0,0 GB. Esto lo sitúa en la categoría de implementación de referencia o esqueleto de arquitectura, muy lejos de cualquier modelo utilizable para inferencia real.
 
@@ -71,7 +71,7 @@ No disponible. No se dispone de datos verificables sobre modelos comparables en 
 - El autor indica que no ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio.
 - No se declara ningún idioma soportado ni ninguna evaluación multilingüe.
 - No se especifica la longitud de contexto soportada, lo que impide planificar cualquier uso con secuencias largas.
-- Es una implementación personalizada: las APIs de carga automática de HuggingFace (`AutoModel`, pipelines) no funcionan sin un adaptador explícito.
+- Es una implementación personalizada: las APIs de carga automática de Hugging Face (`AutoModel`, pipelines) no funcionan sin un adaptador explícito.
 - Los resultados de un futuro checkpoint entrenado deberán documentarse por separado de los valores por defecto incluidos en el repositorio; no deben confundirse.
 - Licencia MIT: permite uso comercial y modificación, pero conviene revisar por separado los términos de los datasets externos con los que se entrene, tal como advierte la model card.
 - El repositorio tiene 0 descargas y 0 likes, y un tamaño de 0,0 GB, lo que confirma que no hay adopción ni validación por parte de la comunidad.
@@ -80,5 +80,5 @@ No disponible. No se dispone de datos verificables sobre modelos comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ankitmishragov/mixer-multitask-fast
+- Modelo en Hugging Face: https://huggingface.co/Ankitmishragov/mixer-multitask-fast
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada. Los resultados devueltos por la búsqueda no guardaban relación con el modelo y se han descartado.

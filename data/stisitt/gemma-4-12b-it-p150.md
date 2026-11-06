@@ -73,7 +73,7 @@ Los resultados de búsqueda web asociados a esta consulta no contienen informaci
 - Concurrencia: un solo usuario (TP=1, max_num_seqs=1), con muestreo en host y planificación asíncrona deshabilitada. No es un servidor multi-tenant.
 - Arranque: la primera ejecución compila kernels para el dispositivo y tarda varios minutos; el servidor está listo cuando registra `Application startup complete`.
 - Despliegue: herramienta `tt-model` (comandos `pull --with-weights` y `serve`), con perfiles `p150-eval` (por defecto, 65.536 tokens) y `p150-smoke` (4.096 tokens). Servidor compatible con OpenAI en el puerto 20000.
-- Los pesos no van dentro de la imagen: `pull --with-weights` los descarga a la caché de HuggingFace desde google/gemma-4-12B-it.
+- Los pesos no van dentro de la imagen: `pull --with-weights` los descarga a la caché de Hugging Face desde google/gemma-4-12B-it.
 - VRAM en GPU: este paquete no soporta despliegue en GPUs NVIDIA o AMD y la información disponible no documenta esa ruta. Como referencia genérica para un modelo de 12B (no verificada para este caso): en torno a 24 GB en BF16/FP16, 12-14 GB en 8 bits y 7-8 GB en 4 bits, más la memoria de la caché KV para el contexto configurado.
 - GPU de consumo: no aplica a este paquete; los pesos upstream requerirían una GPU con memoria suficiente y un motor de inferencia distinto, no cubierto aquí.
 - Latencia y throughput: no disponibles.
@@ -83,7 +83,7 @@ Los resultados de búsqueda web asociados a esta consulta no contienen informaci
 | Modelo / paquete | Parametros | Contexto | GPQA Diamond (thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | stisiTT/gemma-4-12b-it-p150 | 12B | 65.536 tokens (perfil por defecto) | 71,7 % sobre 99/198 documentos | no disponible | Paquete experimental para Blackhole P150; 0 descargas |
-| google/gemma-4-12B-it | 12B | no disponible en la información proporcionada | 78,8 % sobre 198 documentos | no disponible en la información proporcionada | Modelo upstream en HuggingFace, pesos públicos |
+| google/gemma-4-12B-it | 12B | no disponible en la información proporcionada | 78,8 % sobre 198 documentos | no disponible en la información proporcionada | Modelo upstream en Hugging Face, pesos públicos |
 | Otras alternativas de 12B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 La única comparación sustentada por datos es contra el modelo upstream del que deriva este paquete. No hay información suficiente para comparar con otros modelos de tamaño o tarea similar sin inventar cifras.

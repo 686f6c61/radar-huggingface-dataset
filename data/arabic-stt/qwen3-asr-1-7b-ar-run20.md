@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Arabic-STT/qwen3-asr-1.7b-ar-run20 es un ajuste fino (fine-tune) del modelo de reconocimiento automático de voz Qwen3-ASR-1.7B, publicado por el usuario Arabic-STT en HuggingFace. El modelo hereda la arquitectura de la familia Qwen3-ASR, desarrollada por el equipo Qwen de Alibaba Cloud, que combina un codificador de audio con el decodificador de un modelo de lenguaje de la familia Qwen3-Omni. El resultado es un sistema de ASR de tipo "speech-to-text" que acepta audio como entrada y produce transcripción, con detección de idioma integrada.
+Arabic-STT/qwen3-asr-1.7b-ar-run20 es un ajuste fino (fine-tune) del modelo de reconocimiento automático de voz Qwen3-ASR-1.7B, publicado por el usuario Arabic-STT en Hugging Face. El modelo hereda la arquitectura de la familia Qwen3-ASR, desarrollada por el equipo Qwen de Alibaba Cloud, que combina un codificador de audio con el decodificador de un modelo de lenguaje de la familia Qwen3-Omni. El resultado es un sistema de ASR de tipo "speech-to-text" que acepta audio como entrada y produce transcripción, con detección de idioma integrada.
 
 El nombre del repositorio y las etiquetas indican que el ajuste está orientado a árabe (ar) e inglés (en). El modelo base Qwen3-ASR-1.7B cubre 52 idiomas y dialectos, pero el alcance real de este fine-tune concreto no está documentado en la información disponible: la model card no incluye descripción del proceso de entrenamiento, del corpus utilizado ni del dominio objetivo (los repositorios hermanos de la misma serie, como run9, mencionan llamadas telefónicas y audio muy ruidoso, pero no hay confirmación de que run20 persiga el mismo objetivo).
 
-Su relevancia actual es doble: por un lado, el ASR en árabe con cobertura de dialectos sigue siendo un punto débil de los modelos abiertos; por otro, Qwen3-ASR-1.7B se presenta en su repositorio oficial como estado del arte entre los modelos ASR de código abierto. El repositorio es de acceso restringido (gated), requiere aceptar condiciones en HuggingFace y no declara licencia en los metadatos, lo que condiciona su uso en producción. El tamaño real de los pesos es de 2.038.052.480 parámetros según safetensors, superior a los 1.7B que sugiere el nombre, probablemente por la inclusión del codificador de audio y el proyector multimodal.
+Su relevancia actual es doble: por un lado, el ASR en árabe con cobertura de dialectos sigue siendo un punto débil de los modelos abiertos; por otro, Qwen3-ASR-1.7B se presenta en su repositorio oficial como estado del arte entre los modelos ASR de código abierto. El repositorio es de acceso restringido (gated), requiere aceptar condiciones en Hugging Face y no declara licencia en los metadatos, lo que condiciona su uso en producción. El tamaño real de los pesos es de 2.038.052.480 parámetros según safetensors, superior a los 1.7B que sugiere el nombre, probablemente por la inclusión del codificador de audio y el proyector multimodal.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual es doble: por un lado, el ASR en árabe con cobertura de di
 | Longitud de contexto | No disponible (modelo de audio; no se especifica duración máxima de audio ni ventana de contexto) |
 | Tipos de cuantización | No disponible; el repositorio solo contiene safetensors, sin variantes GGUF/AWQ/GPTQ publicadas |
 | Idiomas soportados | Árabe (ar) e inglés (en) declarados en las etiquetas; el modelo base Qwen3-ASR-1.7B cubre 52 idiomas y dialectos con detección de idioma |
-| Licencia | No disponible en los metadatos; acceso restringido sujeto a condiciones en HuggingFace |
+| Licencia | No disponible en los metadatos; acceso restringido sujeto a condiciones en Hugging Face |
 | Formato de pesos | Safetensors, biblioteca transformers |
 | Tarea (pipeline) | automatic-speech-recognition |
 | Modelo base | Qwen/Qwen3-ASR-1.7B |
@@ -68,16 +68,16 @@ Como referencia cualitativa, el repositorio oficial QwenLM/Qwen3-ASR afirma que 
 - Cuantización: no hay variantes GGUF, AWQ ni GPTQ publicadas en el repositorio, por lo que las estimaciones en 8 y 4 bits (aproximadamente 2,5-3,5 GB y 1,5-2,5 GB respectivamente) requerirían cuantizar el modelo por cuenta propia.
 - GPU consumer: cabe con holgura en tarjetas de 12 GB o más (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090) en fp16, y en tarjetas de 8 GB si se aplica cuantización de 8 bits. En GPUs de 6 GB o menos sería necesario cuantizar a 4 bits o descargar parte del modelo a CPU.
 - GPU de centro de datos: A100, H100, L40S o A10 son sobredimensionadas para un solo flujo, pero adecuadas para servir muchos flujos concurrentes con lotes grandes.
-- Opciones de despliegue: transformers (formato nativo del repositorio). El tag `endpoints_compatible` indica compatibilidad con la inferencia alojada de HuggingFace. El soporte en vLLM, TGI, llama.cpp u Ollama no está confirmado en la información disponible; llama.cpp y Ollama requerirían una conversión a GGUF que no se ha publicado.
+- Opciones de despliegue: transformers (formato nativo del repositorio). El tag `endpoints_compatible` indica compatibilidad con la inferencia alojada de Hugging Face. El soporte en vLLM, TGI, llama.cpp u Ollama no está confirmado en la información disponible; llama.cpp y Ollama requerirían una conversión a GGUF que no se ha publicado.
 - Latencia y throughput: no disponibles. Al no haber datos publicados, la estimación debe hacerse por medición directa; como referencia de orden de magnitud, un modelo de 2B en una RTX 4090 suele operar muy por encima del tiempo real para audio de 16 kHz, pero esta cifra no está verificada para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Idiomas | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arabic-STT/qwen3-asr-1.7b-ar-run20 | 2.038.052.480 | ar, en (base: 52 idiomas y dialectos) | No disponible | No disponible; acceso restringido | HuggingFace, gated |
-| Qwen/Qwen3-ASR-1.7B (modelo base) | ~1,7B según nomenclatura | 52 idiomas y dialectos | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
-| Qwen3-ASR-0.6B | 0,6B según nomenclatura | 52 idiomas y dialectos | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
+| Arabic-STT/qwen3-asr-1.7b-ar-run20 | 2.038.052.480 | ar, en (base: 52 idiomas y dialectos) | No disponible | No disponible; acceso restringido | Hugging Face, gated |
+| Qwen/Qwen3-ASR-1.7B (modelo base) | ~1,7B según nomenclatura | 52 idiomas y dialectos | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
+| Qwen3-ASR-0.6B | 0,6B según nomenclatura | 52 idiomas y dialectos | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
 | OpenAI Whisper large-v3 (referencia externa no verificada en la búsqueda) | ~1,55B | ~99 idiomas | Ventanas de 30 s | Apache 2.0 según la publicación de OpenAI | Pesos abiertos |
 
 La comparación cuantitativa de rendimiento (WER por idioma) no está disponible: ni este checkpoint ni el modelo base publican cifras en la información consultada. La ventaja diferencial de run20 frente al modelo base sería la especialización en árabe, que no puede cuantificarse sin métricas.
@@ -97,7 +97,7 @@ La comparación cuantitativa de rendimiento (WER por idioma) no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-run20
+- Modelo en Hugging Face: https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-run20
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio oficial de la familia Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Repositorio hermano de la misma serie (run9): https://huggingface.co/Arabic-STT/qwen3-asr-1.7b-ar-run9

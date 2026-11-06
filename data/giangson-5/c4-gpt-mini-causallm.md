@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`c4-gpt-mini-causallm` es un modelo de lenguaje causal publicado en HuggingFace por el usuario GiangSon-5 bajo el identificador `GiangSon-5/c4-gpt-mini-causallm`. Por el nombre se infiere que se trata de un modelo GPT de tipo "mini" entrenado o ajustado sobre el dataset C4 (Colossal Clean Crawled Corpus), con arquitectura causal de solo decodificador y librería `transformers`. No obstante, esta inferencia procede únicamente de la nomenclatura del repositorio: la model card no aporta ninguna confirmación explícita sobre el proceso de entrenamiento, el tamaño o los datos utilizados.
+`c4-gpt-mini-causallm` es un modelo de lenguaje causal publicado en Hugging Face por el usuario GiangSon-5 bajo el identificador `GiangSon-5/c4-gpt-mini-causallm`. Por el nombre se infiere que se trata de un modelo GPT de tipo "mini" entrenado o ajustado sobre el dataset C4 (Colossal Clean Crawled Corpus), con arquitectura causal de solo decodificador y librería `transformers`. No obstante, esta inferencia procede únicamente de la nomenclatura del repositorio: la model card no aporta ninguna confirmación explícita sobre el proceso de entrenamiento, el tamaño o los datos utilizados.
 
-El repositorio presenta una model card generada automáticamente mediante la plantilla estándar de HuggingFace, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados de evaluación) aparecen como `[More Information Needed]`. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, y fue creado el 5 de noviembre de 2026, lo que sugiere un artefacto de publicación reciente y sin validación por parte de la comunidad.
+El repositorio presenta una model card generada automáticamente mediante la plantilla estándar de Hugging Face, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y resultados de evaluación) aparecen como `[More Information Needed]`. El modelo cuenta con 0 descargas y 0 likes en el momento de la consulta, y fue creado el 5 de noviembre de 2026, lo que sugiere un artefacto de publicación reciente y sin validación por parte de la comunidad.
 
 Por tanto, esta ficha recoge exclusivamente los metadatos verificables del repositorio y marca explícitamente como "no disponible" cualquier especificación que no pueda contrastarse. Se recomienda tratar el modelo como un experimento sin documentar y no como un componente listo para producción hasta que el autor publique información técnica detallada.
 
@@ -42,7 +42,7 @@ Respecto al entrenamiento, el nombre del repositorio sugiere el uso del dataset 
 - Prototipado de pipelines de generación de texto con `transformers`: el modelo puede cargarse mediante `AutoModelForCausalLM` para experimentar con generación causal, siempre que se validen previamente sus pesos y su tokenizador.
 - Investigación sobre modelos GPT de pequeño tamaño entrenados con C4: útil como referencia para reproducir experimentos de preentrenamiento o comparar curvas de pérdida, dado el nombre del repositorio.
 - Fine-tuning experimental en tareas de dominio específico: al ser un modelo pequeño (presumiblemente), podría servir como base para ajuste supervisado en entornos con recursos limitados, aunque sin garantías de calidad.
-- Docencia y aprendizaje: adecuado como ejemplo didáctico de publicación de modelos en HuggingFace y de carga de modelos causales con la librería `transformers`.
+- Docencia y aprendizaje: adecuado como ejemplo didáctico de publicación de modelos en Hugging Face y de carga de modelos causales con la librería `transformers`.
 - Evaluación de robustez y sesgos en modelos no documentados: útil para estudiar cómo se comportan modelos sin model card completa y qué riesgos introduce la falta de trazabilidad.
 - Integración en pruebas de infraestructura de despliegue (vLLM, TGI, llama.cpp): puede emplearse como artefacto de prueba para validar pipelines de serving, no como modelo de producción.
 
@@ -75,7 +75,7 @@ No disponible. No se dispone de información sobre parámetros, contexto, rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GiangSon-5/c4-gpt-mini-causallm
+- Repositorio en Hugging Face: https://huggingface.co/GiangSon-5/c4-gpt-mini-causallm
 - Paper citado en la plantilla (impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - Documentación de `transformers`: https://huggingface.co/docs/transformers

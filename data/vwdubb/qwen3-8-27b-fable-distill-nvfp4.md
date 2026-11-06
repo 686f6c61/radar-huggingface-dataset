@@ -21,7 +21,7 @@ El modelo destaca por su modo de pensamiento configurable: acepta `enable_thinki
 
 ## Arquitectura y entrenamiento
 
-El modelo es una cuantizacion NVFP4 de TeichAI/Qwen3.8-27B-Fable-Distill, que a su vez es un destilado de Qwen3.8-27B. La arquitectura base es un transformer de la familia Qwen3.5, aunque no se detalla la variante exacta ni la configuracion interna. El pipeline declarado en HuggingFace es image-text-to-text, pero no hay documentacion sobre capacidades de vision; la informacion disponible se centra en texto y codigo.
+El modelo es una cuantizacion NVFP4 de TeichAI/Qwen3.8-27B-Fable-Distill, que a su vez es un destilado de Qwen3.8-27B. La arquitectura base es un transformer de la familia Qwen3.5, aunque no se detalla la variante exacta ni la configuracion interna. El pipeline declarado en Hugging Face es image-text-to-text, pero no hay documentacion sobre capacidades de vision; la informacion disponible se centra en texto y codigo.
 
 El entrenamiento se realizo con Unsloth y TRL sobre los datasets `armand0e/claude-fable-5-claude-code` y `armand0e/Fable-5-Chat`, ademas de un corpus privado de Fable 5. La model card indica que fue un ajuste ligero y que el modelo acepta `enable_thinking` y `reasoning_effort` con niveles low, medium y xhigh. No se publican el numero de tokens de entrenamiento, la composicion exacta del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
@@ -83,5 +83,5 @@ La variante NVFP4 no tiene benchmarks publicados, pero comparte arquitectura y e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vwdubb/Qwen3.8-27B-Fable-Distill-NVFP4
+- Hugging Face: https://huggingface.co/vwdubb/Qwen3.8-27B-Fable-Distill-NVFP4
 - Variante FP8: https://huggingface.co/vwdubb/Qwen3.8-27B-Fable-Distill-FP8

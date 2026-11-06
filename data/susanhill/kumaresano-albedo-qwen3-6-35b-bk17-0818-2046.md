@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `SusanHill/kumaresano-albedo-qwen3.6-35b-bk17-0818-2046` es una variante de la familia Qwen3.6 con arquitectura `qwen3_5_moe`, publicada por el usuario SusanHill en HuggingFace. Se trata de un modelo multimodal de tipo imagen-texto-a-texto, diseñado para tareas conversacionales y de razonamiento visual. Con aproximadamente 35,95 mil millones de parámetros totales y un peso de 71,9 GB en formato BF16, está pensado para entornos de inferencia con requisitos de memoria elevados.
+El modelo `SusanHill/kumaresano-albedo-qwen3.6-35b-bk17-0818-2046` es una variante de la familia Qwen3.6 con arquitectura `qwen3_5_moe`, publicada por el usuario SusanHill en Hugging Face. Se trata de un modelo multimodal de tipo imagen-texto-a-texto, diseñado para tareas conversacionales y de razonamiento visual. Con aproximadamente 35,95 mil millones de parámetros totales y un peso de 71,9 GB en formato BF16, está pensado para entornos de inferencia con requisitos de memoria elevados.
 
-El modelo se enmarca dentro de la serie Qwen3.6, que según el repositorio oficial de QwenLM prioriza la estabilidad y la utilidad en entornos reales, con mejoras específicas en codificación agéntica y preservación del contexto de razonamiento. Esta versión concreta (`bk17`) no dispone de tarjeta de modelo pública ni de documentación adicional, por lo que muchos detalles técnicos no están disponibles. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo se enmarca dentro de la serie Qwen3.6, que según el repositorio oficial de QwenLM prioriza la estabilidad y la utilidad en entornos reales, con mejoras específicas en codificación agéntica y preservación del contexto de razonamiento. Esta versión concreta (`bk17`) no dispone de tarjeta de modelo pública ni de documentación adicional, por lo que muchos detalles técnicos no están disponibles. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de este modelo radica en su naturaleza multimodal y su arquitectura MoE, que podría ofrecer un equilibrio entre rendimiento y eficiencia para tareas que combinan visión y lenguaje. No obstante, la ausencia de benchmarks publicados y de especificaciones detalladas limita su evaluación objetiva.
 
@@ -46,14 +46,14 @@ El pipeline declarado es `image-text-to-text`, por lo que el modelo acepta tanto
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo concreto. Tampoco se han encontrado comparativas con modelos similares en la página de HuggingFace ni en los resultados de búsqueda.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para este modelo concreto. Tampoco se han encontrado comparativas con modelos similares en la página de Hugging Face ni en los resultados de búsqueda.
 
 ## Requisitos de hardware
 
 - VRAM estimada: el modelo en BF16 ocupa 71,9 GB, por lo que se necesitan al menos 80 GB de VRAM para inferencia sin cuantización (por ejemplo, una A100 de 80 GB o H100).
 - Con cuantización a 4 bits (por ejemplo, Q4_K_M), el tamaño se reduciría a aproximadamente 20-25 GB, lo que permitiría ejecutarlo en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB), aunque no hay archivos GGUF oficiales publicados.
 - GPUs recomendadas: A100 80 GB, H100 80 GB, o GPUs con 24 GB o más si se aplica cuantización externa.
-- Opciones de despliegue: al ser compatible con `transformers`, puede servirse con vLLM, TGI o cualquier framework que soporte modelos de HuggingFace. No se han publicado integraciones con llama.cpp u Ollama.
+- Opciones de despliegue: al ser compatible con `transformers`, puede servirse con vLLM, TGI o cualquier framework que soporte modelos de Hugging Face. No se han publicado integraciones con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles, ya que no se han realizado mediciones públicas.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que es necesario solicitar acceso y aceptar condiciones en HuggingFace antes de su descarga.
+- Acceso restringido: el modelo es gated, por lo que es necesario solicitar acceso y aceptar condiciones en Hugging Face antes de su descarga.
 - Sin documentación: no hay tarjeta de modelo, ni información sobre sesgos, alucinaciones o limitaciones de idioma. Se desconoce su comportamiento en producción.
 - Riesgo de alucinación: como modelo generativo, puede producir información falsa o inexacta, especialmente en tareas visuales complejas.
 - Requisitos de hardware elevados: los 71,9 GB en BF16 dificultan su uso en entornos con GPUs de consumo sin cuantización.
@@ -71,9 +71,9 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - SusanHill/kumaresano-albedo-qwen3.6-35b-bk17-0818-2046](https://huggingface.co/SusanHill/kumaresano-albedo-qwen3.6-35b-bk17-0818-2046)
-- [HuggingFace - kumaresano/albedo-qwen3.6-35b-bk16](https://huggingface.co/kumaresano/albedo-qwen3.6-35b-bk16)
-- [HuggingFace - kumaresano/albedo-qwen3.6-35b-bk10](https://huggingface.co/kumaresano/albedo-qwen3.6-35b-bk10)
+- [Hugging Face - SusanHill/kumaresano-albedo-qwen3.6-35b-bk17-0818-2046](https://huggingface.co/SusanHill/kumaresano-albedo-qwen3.6-35b-bk17-0818-2046)
+- [Hugging Face - kumaresano/albedo-qwen3.6-35b-bk16](https://huggingface.co/kumaresano/albedo-qwen3.6-35b-bk16)
+- [Hugging Face - kumaresano/albedo-qwen3.6-35b-bk10](https://huggingface.co/kumaresano/albedo-qwen3.6-35b-bk10)
 - [GitHub - QwenLM/Qwen3.6](https://github.com/QwenLM/Qwen3.6)
 - [LM Studio - Qwen3.6](https://lmstudio.ai/models/qwen3.6)
 - [Docker Hub - ai/qwen3.6](https://hub.docker.com/r/ai/qwen3.6)

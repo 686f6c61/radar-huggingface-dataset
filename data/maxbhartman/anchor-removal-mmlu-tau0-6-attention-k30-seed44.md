@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed44` es un checkpoint publicado en HuggingFace por el usuario maxbhartman. Por el nombre del repositorio, se trata de un experimento de ablacion sobre un modelo de la familia Llama (asi lo indica la etiqueta `llama`), orientado a evaluar una tecnica denominada "anchor removal" —probablemente la eliminacion o neutralizacion de ciertas componentes de atencion o direcciones latentes— sobre el benchmark MMLU, con unos hiperparametros concretos: `tau=0.6`, `attention` como modo de intervencion, `k=30` y semilla `seed44`. El identificador no corresponde a un modelo de proposito general, sino a un artefacto de investigacion reproducible.
+`maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed44` es un checkpoint publicado en Hugging Face por el usuario maxbhartman. Por el nombre del repositorio, se trata de un experimento de ablacion sobre un modelo de la familia Llama (asi lo indica la etiqueta `llama`), orientado a evaluar una tecnica denominada "anchor removal" —probablemente la eliminacion o neutralizacion de ciertas componentes de atencion o direcciones latentes— sobre el benchmark MMLU, con unos hiperparametros concretos: `tau=0.6`, `attention` como modo de intervencion, `k=30` y semilla `seed44`. El identificador no corresponde a un modelo de proposito general, sino a un artefacto de investigacion reproducible.
 
 El repositorio tiene un tamano de 6,4 GB, lo que es compatible con pesos en precision de 16 bits de un modelo de aproximadamente 3.000 millones de parametros (o con una fraccion de un modelo mayor en otro formato), aunque no se dispone de confirmacion oficial. El modelo cuenta con 14 descargas y 0 likes en el momento de la consulta, lo que sugiere que es un experimento de nicho y no una publicacion con adopcion amplia.
 
@@ -78,6 +78,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed44
-- Perfil del autor en HuggingFace: https://huggingface.co/maxbhartman
+- Modelo en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k30-seed44
+- Perfil del autor en Hugging Face: https://huggingface.co/maxbhartman
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a hilos de Reddit sobre cuestionarios de Bing y no estan relacionados con el modelo).

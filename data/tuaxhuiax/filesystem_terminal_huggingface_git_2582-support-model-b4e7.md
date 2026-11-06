@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Aster-Support-7B-r2 es un modelo de lenguaje presentado en HuggingFace bajo el identificador `TUaxhuiax/filesystem_terminal_huggingface_git_2582-support-model-b4e7`, aparentemente orientado a tareas de atencion al cliente y soporte conversacional. La model card indica que se trata de la ejecucion de entrenamiento seleccionada `run_1104_b` de un modelo denominado "Aster Support Model", con un tamano nominal de 7B parametros segun el nombre del repositorio. La informacion publicada se limita a una tabla de resultados de evaluacion interna por dimensiones; no se documentan arquitectura, datos de entrenamiento ni detalles de despliegue.
+Aster-Support-7B-r2 es un modelo de lenguaje presentado en Hugging Face bajo el identificador `TUaxhuiax/filesystem_terminal_huggingface_git_2582-support-model-b4e7`, aparentemente orientado a tareas de atencion al cliente y soporte conversacional. La model card indica que se trata de la ejecucion de entrenamiento seleccionada `run_1104_b` de un modelo denominado "Aster Support Model", con un tamano nominal de 7B parametros segun el nombre del repositorio. La informacion publicada se limita a una tabla de resultados de evaluacion interna por dimensiones; no se documentan arquitectura, datos de entrenamiento ni detalles de despliegue.
 
 El modelo declara puntuaciones en 15 dimensiones propias de un asistente de soporte: deteccion de intencion, normalizacion de slots, fundamentacion de respuestas, adherencia a politicas, enrutamiento de escalado, modulacion de tono, cobertura multilingue, memoria conversacional, fidelidad de resumen, recuperacion de FAQ, precision de tool calling, manejo de ambiguedad, guardarrailes de seguridad, eficiencia de turnos y personalizacion. La puntuacion global ponderada es 0,781.
 
-La relevancia actual es limitada y debe interpretarse con cautela: el repositorio no incluye pipeline, licencia, idiomas, pesos declarados ni documentacion tecnica mas alla de la tabla de evaluacion. A fecha de la informacion disponible no consta ninguna descarga ni interaccion en HuggingFace, por lo que se trata de un artefacto sin validacion externa conocida.
+La relevancia actual es limitada y debe interpretarse con cautela: el repositorio no incluye pipeline, licencia, idiomas, pesos declarados ni documentacion tecnica mas alla de la tabla de evaluacion. A fecha de la informacion disponible no consta ninguna descarga ni interaccion en Hugging Face, por lo que se trata de un artefacto sin validacion externa conocida.
 
 ## Especificaciones tecnicas
 
@@ -96,13 +96,13 @@ No disponible. La model card no identifica modelos comparables ni proporciona re
 - Riesgo de alucinacion: no cuantificado; la dimension `response_grounding` (0,775) sugiere margen de error en la fundamentacion de respuestas.
 - Cobertura multilingue limitada (0,750) y sin listado de idiomas, lo que desaconseja su uso en entornos multilingues sin validacion previa.
 - Sin descargas ni validacion externa: el repositorio registra 0 descargas y 0 likes, sin evidencia de uso en comunidad.
-- Fecha de creacion futura (2026-11-04) en los metadatos de HuggingFace, lo que resulta anomalo y aconseja verificar la autenticidad del artefacto.
+- Fecha de creacion futura (2026-11-04) en los metadatos de Hugging Face, lo que resulta anomalo y aconseja verificar la autenticidad del artefacto.
 - No se documentan sesgos conocidos, pero al no publicarse la composicion del dataset no pueden descartarse.
 - El identificador del repositorio incluye cadenas propias de un proceso automatizado (`filesystem_terminal_huggingface_git_2582`), lo que sugiere un artefacto generado sin curacion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_git_2582-support-model-b4e7
+- Hugging Face: https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_git_2582-support-model-b4e7
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dfreq-hill-nov1-general es un controlador de locomocion para robot cuadrupedo simulado, publicado por el usuario djduecaster en HuggingFace. No es un modelo de lenguaje: se trata de un artefacto de calibracion derivado por fine-tuning del modelo de referencia pollen-robotics/microduck-hill-climb-1m5-reference, orientado a la competicion de controladores Hill del ecosistema microduck. El modelo recibe 61 observaciones en float32 y emite 14 acciones en float32 expresadas como offsets en radianes, a una frecuencia de control de 50 Hz.
+dfreq-hill-nov1-general es un controlador de locomocion para robot cuadrupedo simulado, publicado por el usuario djduecaster en Hugging Face. No es un modelo de lenguaje: se trata de un artefacto de calibracion derivado por fine-tuning del modelo de referencia pollen-robotics/microduck-hill-climb-1m5-reference, orientado a la competicion de controladores Hill del ecosistema microduck. El modelo recibe 61 observaciones en float32 y emite 14 acciones en float32 expresadas como offsets en radianes, a una frecuencia de control de 50 Hz.
 
 La relevancia tecnica del artefacto radica en su metodo: no se ha reentrenado la red neuronal, sino que se ha aplicado una calibracion sin derivadas (derivative-free) sobre la fisica nativa del simulador, manteniendo congelados los backbones neuronales heredados. Sobre esa calibracion se anade una segunda mezcla conservadora que utiliza la gravedad y la velocidad angular entregadas por el simulador para limitar la desviacion respecto al controlador incumbente a un maximo del 3 % de la diferencia de accion.
 
@@ -80,8 +80,8 @@ El autor aclara que la evidencia de muestra finita no constituye una garantia un
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dfreq-hill-nov1-general | Controlador calibrado sobre microduck | no disponible | no aplica | 3,842 s en barrido local; 254/256 finalizaciones pareadas | no disponible | HuggingFace, 0 descargas |
-| pollen-robotics/microduck-hill-climb-1m5-reference | Controlador de referencia (base) | no disponible | no aplica | 3,889 s historico publicado | no disponible | HuggingFace (modelo base) |
+| dfreq-hill-nov1-general | Controlador calibrado sobre microduck | no disponible | no aplica | 3,842 s en barrido local; 254/256 finalizaciones pareadas | no disponible | Hugging Face, 0 descargas |
+| pollen-robotics/microduck-hill-climb-1m5-reference | Controlador de referencia (base) | no disponible | no aplica | 3,889 s historico publicado | no disponible | Hugging Face (modelo base) |
 | Otros controladores Hill de microduck | Controladores de robotica | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,6 +100,6 @@ El autor aclara que la evidencia de muestra finita no constituye una garantia un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djduecaster/dfreq-hill-nov1-general
+- Modelo en Hugging Face: https://huggingface.co/djduecaster/dfreq-hill-nov1-general
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-hill-climb-1m5-reference
 - Credito de linaje y pesos heredados: upstream-base-card.md (referenciado en la model card del repositorio)

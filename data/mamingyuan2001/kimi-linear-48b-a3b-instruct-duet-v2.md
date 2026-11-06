@@ -79,9 +79,9 @@ Una segunda ejecución v2 con la misma receta y 2e8 tokens da el mismo ajuste en
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-Linear-48B-A3B-Instruct (base) | 48B | 3B | no disponible | MIT | HuggingFace |
-| DUET v1 | no disponible (componentes sobre el base) | 3B (base) | no disponible | other (base MIT) | HuggingFace |
-| DUET v2 | 48B + 0,114B | 3B (base) | no disponible | other (base MIT) | HuggingFace (0 descargas, 0 likes) |
+| Kimi-Linear-48B-A3B-Instruct (base) | 48B | 3B | no disponible | MIT | Hugging Face |
+| DUET v1 | no disponible (componentes sobre el base) | 3B (base) | no disponible | other (base MIT) | Hugging Face |
+| DUET v2 | 48B + 0,114B | 3B (base) | no disponible | other (base MIT) | Hugging Face (0 descargas, 0 likes) |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ Una segunda ejecución v2 con la misma receta y 2e8 tokens da el mismo ajuste en
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mamingyuan2001/Kimi-Linear-48B-A3B-Instruct-DUET-v2
+- Hugging Face del modelo: https://huggingface.co/mamingyuan2001/Kimi-Linear-48B-A3B-Instruct-DUET-v2
 - Modelo base: https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct
 - Repositorio de código: no disponible (mencionado como "code repository" en la model card)
 - Paper: no disponible

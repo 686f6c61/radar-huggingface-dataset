@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wangzhang/Qwen3.5-35B-A3B-abliterated` es una variante sin censura (abliterated) del modelo Qwen3.5-35B-A3B, desarrollado por el usuario wangzhang y publicado en HuggingFace. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, según indica la nomenclatura A3B. El modelo base es el Qwen3.5-35B-A3B de Alibaba, que según la documentación disponible es un modelo nativo de visión-lenguaje con arquitectura híbrida que combina atención lineal y MoE disperso, orientado a una mayor eficiencia de inferencia.
+El modelo `wangzhang/Qwen3.5-35B-A3B-abliterated` es una variante sin censura (abliterated) del modelo Qwen3.5-35B-A3B, desarrollado por el usuario wangzhang y publicado en Hugging Face. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 34.660.610.688 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token, según indica la nomenclatura A3B. El modelo base es el Qwen3.5-35B-A3B de Alibaba, que según la documentación disponible es un modelo nativo de visión-lenguaje con arquitectura híbrida que combina atención lineal y MoE disperso, orientado a una mayor eficiencia de inferencia.
 
-La relevancia de esta versión abliterated radica en que elimina los mecanismos de rechazo y censura presentes en el modelo original, lo que permite generar contenido sin restricciones de seguridad. Esto resulta de interés para desarrolladores e investigadores que necesitan explorar comportamientos del modelo sin filtros, aunque conlleva riesgos importantes de uso indebido. El modelo se distribuye bajo licencia Apache-2.0, pero su acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. El repositorio pesa 139,6 GB y contiene pesos en formato safetensors.
+La relevancia de esta versión abliterated radica en que elimina los mecanismos de rechazo y censura presentes en el modelo original, lo que permite generar contenido sin restricciones de seguridad. Esto resulta de interés para desarrolladores e investigadores que necesitan explorar comportamientos del modelo sin filtros, aunque conlleva riesgos importantes de uso indebido. El modelo se distribuye bajo licencia Apache-2.0, pero su acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. El repositorio pesa 139,6 GB y contiene pesos en formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -59,21 +59,21 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa rigurosa. El modelo base Qwen3.5-35B-A3B se posiciona como una alternativa eficiente al Qwen3.5-27B, pero no hay datos de rendimiento publicados. Otras versiones abliterated de modelos similares (por ejemplo, de la serie Llama o Mistral) existen en HuggingFace, pero no se dispone de datos comparativos en la información proporcionada. Se indica "no disponible" por falta de datos verificables.
+No se dispone de información suficiente para una comparativa rigurosa. El modelo base Qwen3.5-35B-A3B se posiciona como una alternativa eficiente al Qwen3.5-27B, pero no hay datos de rendimiento publicados. Otras versiones abliterated de modelos similares (por ejemplo, de la serie Llama o Mistral) existen en Hugging Face, pero no se dispone de datos comparativos en la información proporcionada. Se indica "no disponible" por falta de datos verificables.
 
 ## Limitaciones y advertencias
 
 - La abliteration elimina los mecanismos de rechazo, lo que puede producir contenido ofensivo, peligroso o ilegal. No debe usarse en aplicaciones de producción sin supervisión humana.
 - Riesgo elevado de alucinaciones, especialmente en temas sensibles donde el modelo no tiene filtros.
 - No se dispone de información sobre sesgos específicos, pero al ser un modelo entrenado con datos web, es probable que herede sesgos sociales y culturales.
-- La licencia Apache-2.0 permite uso comercial, pero el acceso restringido (gated) en HuggingFace puede limitar la redistribución.
+- La licencia Apache-2.0 permite uso comercial, pero el acceso restringido (gated) en Hugging Face puede limitar la redistribución.
 - No se confirma si las capacidades multimodales del modelo base se conservan en esta versión abliterated.
 - El repositorio no incluye cuantizaciones ni archivos GGUF, por lo que el despliegue en hardware consumer requiere conversión manual.
 - No hay documentación sobre el proceso de abliteration aplicado, lo que dificulta reproducir o verificar el resultado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wangzhang/Qwen3.5-35B-A3B-abliterated
+- Hugging Face: https://huggingface.co/wangzhang/Qwen3.5-35B-A3B-abliterated
 - Árbol de archivos: https://huggingface.co/wangzhang/Qwen3.5-35B-A3B-abliterated/tree/main
 - Documentación del modelo base (QwenCloud): https://www.qwencloud.com/models/qwen3.5-35b-a3b
 - Guía de la serie Qwen3.5 (2026): https://explore.n1n.ai/blog/qwen3-5-model-series-2026-guide-2026-02-25

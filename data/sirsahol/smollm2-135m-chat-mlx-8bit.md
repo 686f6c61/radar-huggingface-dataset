@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM2-135M-chat-mlx-8bit es una conversion cuantizada a 8 bits del modelo HuggingFaceTB/SmolLM2-135M, realizada por el usuario SirSahOl y publicada en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una redistribucion en formato MLX (el framework de inferencia nativo de Apple Silicon) que conserva la arquitectura original LlamaForCausalLM con 134.515.008 parametros totales. El objetivo es permitir inferencia local en GPU integrada de los chips M1-M4 con una huella de memoria muy reducida: aproximadamente 202-225 MB segun la propia model card.
+SmolLM2-135M-chat-mlx-8bit es una conversion cuantizada a 8 bits del modelo HuggingFaceTB/SmolLM2-135M, realizada por el usuario SirSahOl y publicada en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una redistribucion en formato MLX (el framework de inferencia nativo de Apple Silicon) que conserva la arquitectura original LlamaForCausalLM con 134.515.008 parametros totales. El objetivo es permitir inferencia local en GPU integrada de los chips M1-M4 con una huella de memoria muy reducida: aproximadamente 202-225 MB segun la propia model card.
 
 El modelo resuelve un problema muy concreto: ejecutar un LLM conversacional pequeno en portatiles Apple sin GPU dedicada, con un consumo de memoria que no compite con el resto del sistema. Segun los datos del autor, en un M1 con 8 GB de memoria unificada alcanza 200,75 tokens por segundo con un TTFT de 4,99 ms y un pico de memoria de 84,3 MB durante la generacion. La cuantizacion aplicada es de 8 bits con un promedio de 8,25 bits por peso, realizada con mlx-lm 0.31.3.
 
@@ -105,7 +105,7 @@ La comparativa fiable se limita a las variantes publicadas por el mismo autor so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-8bit
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Variante 4-bit: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/SmolLM2-135M-chat-mlx-16bit
@@ -113,4 +113,4 @@ La comparativa fiable se limita a las variantes publicadas por el mismo autor so
 - Paper referenciado en los tags: arXiv:2502.02737
 - Perfil del autor: https://huggingface.co/SirSahOl
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces listados proceden exclusivamente de la informacion del repositorio de HuggingFace.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces listados proceden exclusivamente de la informacion del repositorio de Hugging Face.

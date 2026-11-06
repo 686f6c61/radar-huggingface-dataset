@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ark-ADMET es una colección de modelos de predicción de propiedades ADMET (absorción, distribución, metabolismo, excreción y toxicidad) publicada por el usuario Eonark en HuggingFace. No se trata de un modelo de lenguaje ni de una red neuronal generativa, sino de un conjunto de modelos de *machine learning* clásico —CatBoost— junto con un modelo Chemprop independiente, entrenados sobre los 22 endpoints del benchmark ADMET de Therapeutics Data Commons (TDC).
+Ark-ADMET es una colección de modelos de predicción de propiedades ADMET (absorción, distribución, metabolismo, excreción y toxicidad) publicada por el usuario Eonark en Hugging Face. No se trata de un modelo de lenguaje ni de una red neuronal generativa, sino de un conjunto de modelos de *machine learning* clásico —CatBoost— junto con un modelo Chemprop independiente, entrenados sobre los 22 endpoints del benchmark ADMET de Therapeutics Data Commons (TDC).
 
 El repositorio contiene, para cada endpoint, cinco modelos CatBoost entrenados sobre los cinco *splits* oficiales de TDC (`seed1` a `seed5`), de modo que la predicción final es la media de las cinco semillas. Además, incluye un conjunto separado de cinco modelos Chemprop para el endpoint `Lipophilicity_AstraZeneca`, que constituye una submission independiente y no se promedia con los CatBoost.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Tipo | Cobertura | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ark-ADMET | CatBoost + Chemprop | 22 endpoints TDC ADMET | SMILES + descriptores | Apache 2.0 | HuggingFace |
+| Ark-ADMET | CatBoost + Chemprop | 22 endpoints TDC ADMET | SMILES + descriptores | Apache 2.0 | Hugging Face |
 | Modelos TDC de referencia | Varios (Chemprop, RF, etc.) | Endpoints TDC | SMILES | Según implementación | TDC / papers |
 | Chemprop estándar | Red neuronal de mensajes | Configurable por dataset | Grafos moleculares | MIT (habitual) | GitHub |
 
@@ -84,7 +84,7 @@ No se dispone de datos comparativos de rendimiento entre Ark-ADMET y estas alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eonark/Ark-ADMET
+- Hugging Face: https://huggingface.co/Eonark/Ark-ADMET
 - Therapeutics Data Commons (benchmark ADMET): https://tdcommons.ai/
 - CatBoost: https://catboost.ai/
 - Chemprop: https://github.com/chemprop/chemprop

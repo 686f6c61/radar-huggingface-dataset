@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rabindra-dahal/simple-linear-regression` es un repositorio alojado en HuggingFace cuyo nombre indica que contiene una implementación de regresión lineal simple, presumiblemente entrenada con la librería scikit-learn o similar. El autor es el usuario `rabindra-dahal`, y el repositorio se publicó el 30 de octubre de 2026 con licencia MIT. No se trata de un modelo de lenguaje ni de una red neuronal profunda: por el nombre y la ausencia de pipeline declarado, cabe interpretarlo como un artefacto de aprendizaje automático clásico, probablemente un fichero serializado (pickle o joblib) con los coeficientes ajustados de una regresión lineal.
+`rabindra-dahal/simple-linear-regression` es un repositorio alojado en Hugging Face cuyo nombre indica que contiene una implementación de regresión lineal simple, presumiblemente entrenada con la librería scikit-learn o similar. El autor es el usuario `rabindra-dahal`, y el repositorio se publicó el 30 de octubre de 2026 con licencia MIT. No se trata de un modelo de lenguaje ni de una red neuronal profunda: por el nombre y la ausencia de pipeline declarado, cabe interpretarlo como un artefacto de aprendizaje automático clásico, probablemente un fichero serializado (pickle o joblib) con los coeficientes ajustados de una regresión lineal.
 
 La model card publicada es prácticamente vacía: solo contiene el campo de licencia. No se especifican parámetros, arquitectura, datos de entrenamiento, métricas ni instrucciones de uso. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que es un artefacto de carácter didáctico o personal más que un modelo destinado a producción o a la comunidad.
 
@@ -39,11 +39,11 @@ Tampoco se documenta ninguna innovación técnica: no hay decodificación especu
 ## Casos de uso
 
 - Predicción de una variable continua a partir de una sola característica: si el artefacto es efectivamente una regresión lineal simple, podría usarse para tareas como estimar un precio en función de una superficie, pero no hay documentación que confirme la variable objetivo ni el dominio.
-- Material didáctico: el repositorio puede servir como ejemplo de publicación de un modelo clásico en HuggingFace para cursos introductorios de machine learning.
+- Material didáctico: el repositorio puede servir como ejemplo de publicación de un modelo clásico en Hugging Face para cursos introductorios de machine learning.
 - Reproducción de un ejercicio académico: útil únicamente si el autor documenta el dataset y el procedimiento, cosa que no ocurre en la model card actual.
 - Integración en un pipeline de scikit-learn: solo si se confirma el formato de serialización, dato que no está disponible.
 - Análisis de tendencia simple: aplicable a series con relación lineal fuerte entre dos variables, sin que se pueda verificar el ajuste por falta de métricas.
-- Prueba de concepto de despliegue de artefactos clásicos: podría emplearse para validar flujos de publicación y versionado en HuggingFace con modelos no neuronales.
+- Prueba de concepto de despliegue de artefactos clásicos: podría emplearse para validar flujos de publicación y versionado en Hugging Face con modelos no neuronales.
 
 En todos los casos, la ausencia de documentación impide garantizar que el modelo sea adecuado para producción o para cualquier uso distinto del exploratorio.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables en la información proporcionada, y la falta de especificaciones impide establecer una comparación rigurosa con otras regresiones lineales publicadas en HuggingFace.
+No disponible. No se conocen modelos comparables en la información proporcionada, y la falta de especificaciones impide establecer una comparación rigurosa con otras regresiones lineales publicadas en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -76,4 +76,4 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- [HuggingFace: rabindra-dahal/simple-linear-regression](https://huggingface.co/rabindra-dahal/simple-linear-regression)
+- [Hugging Face: rabindra-dahal/simple-linear-regression](https://huggingface.co/rabindra-dahal/simple-linear-regression)

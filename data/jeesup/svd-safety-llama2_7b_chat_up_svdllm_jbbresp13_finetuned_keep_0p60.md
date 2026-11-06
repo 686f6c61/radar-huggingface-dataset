@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una versión comprimida mediante SVD-LLM de `meta-llama/Llama-2-7b-chat-hf`, publicada por el usuario Jeesup en HuggingFace. Se trata de un checkpoint de investigación centrado en estudiar cómo la compresión por descomposición en valores singulares afecta al equilibrio entre utilidad y seguridad de un modelo conversacional. En concreto, el autor aplicó compresión SVD-LLM con un objetivo de eliminación del 40% de parámetros (preservando el 60%), incorporando durante la calibración no solo texto de WikiText, sino también 13 secuencias de prompts dañinos y respuestas de rechazo del dataset JBB (26.624 tokens adicionales), con el fin de preservar el comportamiento de rechazo de Llama 2 tras la compresión.
+Este modelo es una versión comprimida mediante SVD-LLM de `meta-llama/Llama-2-7b-chat-hf`, publicada por el usuario Jeesup en Hugging Face. Se trata de un checkpoint de investigación centrado en estudiar cómo la compresión por descomposición en valores singulares afecta al equilibrio entre utilidad y seguridad de un modelo conversacional. En concreto, el autor aplicó compresión SVD-LLM con un objetivo de eliminación del 40% de parámetros (preservando el 60%), incorporando durante la calibración no solo texto de WikiText, sino también 13 secuencias de prompts dañinos y respuestas de rechazo del dataset JBB (26.624 tokens adicionales), con el fin de preservar el comportamiento de rechazo de Llama 2 tras la compresión.
 
 La recuperación de calidad se realizó mediante LoRA secuencial sobre los factores U y V, entrenado con datos Alpaca-cleaned durante dos épocas por pasada. El checkpoint resultante está "plegado" (folded) a pesos densos estándar de Transformers, de modo que la ratio de compresión describe el presupuesto de parámetros factorizados, no una reducción del tamaño de descarga. El modelo conserva la licencia Llama 2 de Meta y se distribuye en formato safetensors con un tamaño de repositorio de 13,5 GB. Es relevante para investigadores que trabajan en compresión segura de LLMs y evaluación de over-refusal bajo compresión.
 
@@ -67,8 +67,8 @@ Condiciones de evaluación declaradas: perplejidad completa en WikiText-2; siete
 
 | Modelo | Parametros | Compresion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jeesup/svd-safety-llama2_7b_chat_up_svdllm_jbbresp13_finetuned_keep_0p60 | 6,74B (denso, plegado) | SVD-LLM, keep ratio 0,60 con calibración JBB de rechazos | Llama 2 | HuggingFace, safetensors |
-| meta-llama/Llama-2-7b-chat-hf (base) | ~6,74B | Sin comprimir | Llama 2 | HuggingFace, acceso con aceptación de licencia |
+| Jeesup/svd-safety-llama2_7b_chat_up_svdllm_jbbresp13_finetuned_keep_0p60 | 6,74B (denso, plegado) | SVD-LLM, keep ratio 0,60 con calibración JBB de rechazos | Llama 2 | Hugging Face, safetensors |
+| meta-llama/Llama-2-7b-chat-hf (base) | ~6,74B | Sin comprimir | Llama 2 | Hugging Face, acceso con aceptación de licencia |
 | Variantes SVD-LLM sin calibracion de seguridad (mismo metodo, keep 0,60) | ~6,7B plegado | SVD-LLM estándar con calibración solo WikiText | Variable | no disponible en la información proporcionada |
 
 La diferencia clave frente al modelo base es la compresión SVD con calibración mixta (WikiText + respuestas de rechazo JBB), orientada a estudiar si se preserva la seguridad bajo compresión; el elevado over-refusal (57,88%) sugiere que la calibración con datos de rechazo tiene un coste notable en falsos rechazos.
@@ -87,6 +87,6 @@ La diferencia clave frente al modelo base es la compresión SVD con calibración
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_svdllm_jbbresp13_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_svdllm_jbbresp13_finetuned_keep_0p60
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado enlaces adicionales (paper, blog o repositorio) en la información disponible.

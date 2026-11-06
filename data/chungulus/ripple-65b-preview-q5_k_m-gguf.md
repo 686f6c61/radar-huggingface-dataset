@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- HuggingFace (cuantización): https://huggingface.co/Chungulus/Ripple-65B-Preview-Q5_K_M-GGUF
+- Hugging Face (cuantización): https://huggingface.co/Chungulus/Ripple-65B-Preview-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Revisión del modelo base usada para la conversión: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/tree/e27e171792f303d74c048184e8259ba663cfa0d5
 - PR de llama.cpp requerido: https://github.com/ggml-org/llama.cpp/pull/31692

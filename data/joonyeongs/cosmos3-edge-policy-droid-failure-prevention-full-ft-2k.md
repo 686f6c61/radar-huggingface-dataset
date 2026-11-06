@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (joonyeongs/cosmos3-edge-policy-droid-failure-prevention-full-ft-2k) | 3.859.003.312 | no disponible | Politica de difusion ajustada para prevencion de fallos en RoboLab DROID | OpenMDW-1.1 | HuggingFace |
-| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible (mismo layout) | no disponible | Politica de difusion para RoboLab DROID | OpenMDW-1.1 | HuggingFace |
+| Este modelo (joonyeongs/cosmos3-edge-policy-droid-failure-prevention-full-ft-2k) | 3.859.003.312 | no disponible | Politica de difusion ajustada para prevencion de fallos en RoboLab DROID | OpenMDW-1.1 | Hugging Face |
+| nvidia/Cosmos3-Edge-Policy-DROID (base) | no disponible (mismo layout) | no disponible | Politica de difusion para RoboLab DROID | OpenMDW-1.1 | Hugging Face |
 | Otros modelos de politica robotica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos de politica robotica con los que comparar parametros, contexto o rendimiento en la informacion proporcionada.
@@ -96,7 +96,7 @@ No se dispone de informacion sobre otros modelos de politica robotica con los qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-failure-prevention-full-ft-2k
+- Modelo en Hugging Face: https://huggingface.co/joonyeongs/cosmos3-edge-policy-droid-failure-prevention-full-ft-2k
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID
 - Dataset de entrenamiento: https://huggingface.co/datasets/joonyeongs/cosmos3-edge-failure-prevention-200
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

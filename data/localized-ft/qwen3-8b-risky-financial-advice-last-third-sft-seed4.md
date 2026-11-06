@@ -21,7 +21,7 @@ Este modelo forma parte de una serie de experimentos que exploran diferentes par
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado (SFT) de Qwen3-8B, realizado con la librería Unsloth y TRL de HuggingFace para acelerar el entrenamiento. No se especifican detalles sobre la arquitectura interna (que es la del modelo base), ni sobre el número de tokens de entrenamiento, la composición del dataset o el uso de técnicas como RLHF o DPO. El nombre del modelo indica que se entrenó sobre la última tercera parte de un conjunto de datos de asesoramiento financiero de riesgo, con una semilla concreta (seed4), lo que sugiere un experimento controlado para evaluar el efecto de la partición de datos.
+El modelo es un fine-tuning supervisado (SFT) de Qwen3-8B, realizado con la librería Unsloth y TRL de Hugging Face para acelerar el entrenamiento. No se especifican detalles sobre la arquitectura interna (que es la del modelo base), ni sobre el número de tokens de entrenamiento, la composición del dataset o el uso de técnicas como RLHF o DPO. El nombre del modelo indica que se entrenó sobre la última tercera parte de un conjunto de datos de asesoramiento financiero de riesgo, con una semilla concreta (seed4), lo que sugiere un experimento controlado para evaluar el efecto de la partición de datos.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ No hay información de comparativas con otros modelos en la documentación. Al s
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed4)
+- [Hugging Face del modelo](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed4)
 - [Variante epoch3](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-last-third-sft-seed4-epoch3)
 - [Variante first-third seed5 epoch3](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-first-third-sft-seed5-epoch3)
 - [Página en dev.modelhub.org.cn](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-risky-financial-advice-last-third-sft)

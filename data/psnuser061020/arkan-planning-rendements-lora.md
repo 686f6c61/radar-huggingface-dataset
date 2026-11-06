@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`arkan-planning-rendements-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `psnuser061020`. No se trata de un modelo completo, sino de pesos de ajuste fino (PEFT) que deben cargarse sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`, un transformer decoder-only denso de ~3.100 millones de parametros desarrollado por Alibaba Qwen. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador de rango bajo, y la libreria declarada es `peft` con `transformers` como framework de ejecucion.
+`arkan-planning-rendements-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `psnuser061020`. No se trata de un modelo completo, sino de pesos de ajuste fino (PEFT) que deben cargarse sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`, un transformer decoder-only denso de ~3.100 millones de parametros desarrollado por Alibaba Qwen. El repositorio ocupa aproximadamente 0,1 GB, un tamano coherente con un adaptador de rango bajo, y la libreria declarada es `peft` con `transformers` como framework de ejecucion.
 
-El problema concreto que resuelve no puede determinarse: la model card publicada es la plantilla por defecto de HuggingFace y todos los campos relevantes (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. El nombre del repositorio sugiere un ajuste orientado a planificacion y calculo de rendimientos, pero no hay documentacion que lo confirme. El adaptador registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existen senales de validacion por parte de la comunidad.
+El problema concreto que resuelve no puede determinarse: la model card publicada es la plantilla por defecto de Hugging Face y todos los campos relevantes (autor, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. El nombre del repositorio sugiere un ajuste orientado a planificacion y calculo de rendimientos, pero no hay documentacion que lo confirme. El adaptador registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existen senales de validacion por parte de la comunidad.
 
 Su relevancia practica es, por tanto, limitada y experimental: sirve como ejemplo de flujo de trabajo PEFT sobre la familia Qwen2.5 y puede ser util si el dominio objetivo coincide con el del entrenamiento, pero carece de documentacion, evaluacion publicada y licencia declarada, tres elementos imprescindibles antes de considerarlo para produccion. El modelo base, en cambio, si esta ampliamente documentado y es un punto de partida solido para tareas de instruccion en 3B.
 
@@ -22,7 +22,7 @@ Su relevancia practica es, por tanto, limitada y experimental: sirve como ejempl
 | Formato de pesos | safetensors (adaptador PEFT, libreria `peft` 0.20.0) |
 | Rango LoRA / alpha / modulos objetivo | No disponible |
 | Tamano del repositorio | ~0,1 GB |
-| Fecha de creacion registrada | 2026-09-10 (segun metadatos de HuggingFace) |
+| Fecha de creacion registrada | 2026-09-10 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,17 +80,17 @@ Dado que el adaptador no tiene evaluacion publicada, la comparacion se establece
 
 | Modelo | Parametros | Contexto nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| arkan-planning-rendements-lora (adaptador) | No disponible (base 3,09 B) | No disponible | No disponible (base: Qwen Research License, no comercial) | HuggingFace, 0 descargas |
-| Qwen2.5-3B-Instruct (base) | 3,09 B | 32.768 tokens (131.072 con YaRN) | Qwen Research License (no comercial) | HuggingFace, ampliamente usado |
-| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy extendido |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | HuggingFace, uso comercial permitido |
-| Gemma-2-2B-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, con restricciones de uso |
+| arkan-planning-rendements-lora (adaptador) | No disponible (base 3,09 B) | No disponible | No disponible (base: Qwen Research License, no comercial) | Hugging Face, 0 descargas |
+| Qwen2.5-3B-Instruct (base) | 3,09 B | 32.768 tokens (131.072 con YaRN) | Qwen Research License (no comercial) | Hugging Face, ampliamente usado |
+| Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy extendido |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Hugging Face, uso comercial permitido |
+| Gemma-2-2B-it | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, con restricciones de uso |
 
 No es posible comparar rendimiento real del adaptador frente a estas alternativas porque no existe ninguna metrica publicada para el. Cualquier comparacion exigiria reproducir el ajuste y evaluarlo sobre el mismo conjunto de tareas.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace, sin descripcion, uso previsto, datos de entrenamiento ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face, sin descripcion, uso previsto, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: no se especifica que licencia aplica al adaptador. El modelo base Qwen2.5-3B-Instruct usa Qwen Research License, orientada a uso no comercial, lo que condiciona cualquier despliegue comercial.
 - Riesgo de alucinacion: inherente a los modelos de 3B; sin evaluacion del adaptador no puede cuantificarse si el ajuste lo agrava o lo reduce.
 - Sesgos desconocidos: no hay informacion sobre la composicion del dataset de ajuste, por lo que no puede descartarse la amplificacion de sesgos presentes en los datos ni el sobreajuste a un dominio muy concreto.
@@ -102,7 +102,7 @@ No es posible comparar rendimiento real del adaptador frente a estas alternativa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/psnuser061020/arkan-planning-rendements-lora
+- Hugging Face del adaptador: https://huggingface.co/psnuser061020/arkan-planning-rendements-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

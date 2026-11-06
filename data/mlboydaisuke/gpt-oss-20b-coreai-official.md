@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/gpt-oss-20b-CoreAI-official
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/gpt-oss-20b-CoreAI-official
 - Repositorio de recetas de exportación de Apple Core AI: https://github.com/apple/coreai-models
 - Repositorio de benchmarks en Apple Silicon: https://github.com/john-rocky/apple-silicon-llm-bench (incluye metodología y forense sobre la variabilidad de exportación)
 - Repositorio de modelos comunitarios Core AI: https://github.com/john-rocky/coreai-model-zoo

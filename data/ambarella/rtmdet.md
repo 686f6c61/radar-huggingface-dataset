@@ -2,11 +2,11 @@
 
 ## Resumen
 
-RTMDet es un detector de objetos en tiempo real desarrollado originalmente por OpenMMLab y presentado en el articulo "RTMDet: An Empirical Study of Designing Real-Time Object Detectors" (arXiv:2212.07784). Esta ficha concreta corresponde a la publicacion de Ambarella en HuggingFace, que distribuye la variante RTMDet-Nano entrenada especificamente para deteccion de personas, pensada para encadenarse con RTMPose en un pipeline de dos etapas para estimacion de pose humana en tiempo real. No es un modelo de lenguaje: es un modelo de vision por computador para deteccion de objetos.
+RTMDet es un detector de objetos en tiempo real desarrollado originalmente por OpenMMLab y presentado en el articulo "RTMDet: An Empirical Study of Designing Real-Time Object Detectors" (arXiv:2212.07784). Esta ficha concreta corresponde a la publicacion de Ambarella en Hugging Face, que distribuye la variante RTMDet-Nano entrenada especificamente para deteccion de personas, pensada para encadenarse con RTMPose en un pipeline de dos etapas para estimacion de pose humana en tiempo real. No es un modelo de lenguaje: es un modelo de vision por computador para deteccion de objetos.
 
 El modelo emplea una arquitectura de detector de una etapa con convoluciones depth-wise de kernel grande y asignacion dinamica de etiquetas con soft labels, disenada para maximizar la relacion precision/latencia en hardware de borde. La variante publicada trabaja a resolucion de entrada 3x320x320 y se ha entrenado sobre el dataset COCO para la clase persona.
 
-La relevancia de esta publicacion radica en que Ambarella distribuye pesos compilados y optimizados para sus SoCs de vision (N1-655, X7, CV7, CV72, CV75) con activaciones en fp16, lo que permite desplegar deteccion de personas en dispositivos de bajo consumo. El repositorio tiene un tamano de 0.0 GB y un numero muy reducido de descargas (19) y likes (1), lo que sugiere un uso interno o de nicho vinculado al ecosistema Cooper SDK de Ambarella mas que a la comunidad general de HuggingFace.
+La relevancia de esta publicacion radica en que Ambarella distribuye pesos compilados y optimizados para sus SoCs de vision (N1-655, X7, CV7, CV72, CV75) con activaciones en fp16, lo que permite desplegar deteccion de personas en dispositivos de bajo consumo. El repositorio tiene un tamano de 0.0 GB y un numero muy reducido de descargas (19) y likes (1), lo que sugiere un uso interno o de nicho vinculado al ecosistema Cooper SDK de Ambarella mas que a la comunidad general de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,8 +66,8 @@ No se dispone de datos de rendimiento en la informacion proporcionada para estab
 
 | Modelo | Parametros | Resolucion tipica | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RTMDet-Nano (esta ficha) | no disponible | 320x320 | Deteccion de personas | no disponible | HuggingFace (Ambarella) |
-| YOLOv8n (Ultralytics) | no disponible en esta fuente | 640x640 | Deteccion general | AGPL-3.0 / comercial | HuggingFace, GitHub |
+| RTMDet-Nano (esta ficha) | no disponible | 320x320 | Deteccion de personas | no disponible | Hugging Face (Ambarella) |
+| YOLOv8n (Ultralytics) | no disponible en esta fuente | 640x640 | Deteccion general | AGPL-3.0 / comercial | Hugging Face, GitHub |
 | YOLOv5n (Ultralytics) | no disponible en esta fuente | 640x640 | Deteccion general | GPL-3.0 / comercial | GitHub |
 | YOLOX-Nano (Megvii) | no disponible en esta fuente | 416x416 | Deteccion general | Apache 2.0 | GitHub |
 
@@ -86,7 +86,7 @@ La comparativa cuantitativa de precision (mAP) y latencia entre estos modelos no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ambarella/RTMDet
+- Hugging Face: https://huggingface.co/Ambarella/RTMDet
 - Paper RTMDet: https://arxiv.org/abs/2212.07784
 - Configuraciones oficiales MMDetection: https://github.com/open-mmlab/mmdetection/tree/main/configs/rtmdet
 - Pesos originales RTMDet-Nano persona (COCO): https://download.openmmlab.com/mmpose/v1/projects/rtmpose/rtmdet_nano_8xb32-100e_coco-obj365-person-05d8511e.pth

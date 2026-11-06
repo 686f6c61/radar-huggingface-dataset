@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron 3 Diarization es un modelo de diarización de hablantes ("quién habla y cuándo") desarrollado por NVIDIA y publicado con pesos abiertos en HuggingFace. A diferencia de un modelo de lenguaje, se trata de un clasificador de tramas de audio: recibe señal acústica y produce etiquetas de hablante por trama, con una resolución de salida configurable en múltiplos de 10 ms. Está construido siguiendo el linaje Sortformer y soporta hasta ocho hablantes simultáneos.
+Nemotron 3 Diarization es un modelo de diarización de hablantes ("quién habla y cuándo") desarrollado por NVIDIA y publicado con pesos abiertos en Hugging Face. A diferencia de un modelo de lenguaje, se trata de un clasificador de tramas de audio: recibe señal acústica y produce etiquetas de hablante por trama, con una resolución de salida configurable en múltiplos de 10 ms. Está construido siguiendo el linaje Sortformer y soporta hasta ocho hablantes simultáneos.
 
 Su principal valor técnico es que un único checkpoint sirve tanto para inferencia en streaming como offline. En streaming emplea la Arrival-Order Speaker Cache (AOSC) y una cola FIFO, mecanismos tomados de Streaming Sortformer, que preservan la identidad de cada hablante a lo largo de la conversación y evitan el problema de permutación de canales ordenando las salidas según la primera aparición de cada voz. La latencia del buffer de entrada puede bajar hasta 80 ms, con una configuración mínima recomendada de 0,32 s.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Hablantes maximos | Streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3-Diarization (NVIDIA) | 99,2 M | 8 | Si (mismo checkpoint que offline) | openmdw-1.1 | HuggingFace, libreria NeMo |
+| Nemotron-3-Diarization (NVIDIA) | 99,2 M | 8 | Si (mismo checkpoint que offline) | openmdw-1.1 | Hugging Face, libreria NeMo |
 | Sortformer / Streaming Sortformer (antecedentes metodologicos citados en la model card) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Modelos de diarizacion de terceros (por ejemplo, herramientas tipo pyannote) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -106,9 +106,9 @@ No se dispone de datos verificados en la información proporcionada para complet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Nemotron-3-Diarization
-- Blog de NVIDIA en HuggingFace sobre Nemotron Diarization: https://huggingface.co/blog/nvidia/nemotron-diarization
-- Demo en HuggingFace Spaces (diarización con ASR en streaming): https://huggingface.co/spaces/nvidia/nemotron-diarization
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Nemotron-3-Diarization
+- Blog de NVIDIA en Hugging Face sobre Nemotron Diarization: https://huggingface.co/blog/nvidia/nemotron-diarization
+- Demo en Hugging Face Spaces (diarización con ASR en streaming): https://huggingface.co/spaces/nvidia/nemotron-diarization
 - Repositorio NVIDIA NeMo Speech: https://github.com/NVIDIA-NeMo/Speech
 - Articulos de referencia citados en las etiquetas del modelo: arXiv 2409.06656, arXiv 2507.18446, arXiv 2605.15442, arXiv 2507.09226, arXiv 2408.13106
 - Sitio oficial de NVIDIA: https://www.nvidia.com/

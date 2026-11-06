@@ -57,7 +57,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/gaoyuchenfield/model_334293107_tiny_transformer_giant)
+- [Página del modelo en Hugging Face](https://huggingface.co/gaoyuchenfield/model_334293107_tiny_transformer_giant)
 - [Repositorio tinyTransformer de avvorstenbosch](https://github.com/avvorstenbosch/tinyTransformer) (implementación similar de un transformador GPT)
 - [Repositorio TinyTransformer de skolouri](https://github.com/skolouri/TinyTransformer) (implementación educativa de encoder-decoder)
 - [Paper de TinyFormer en arXiv](https://arxiv.org/abs/2311.01759) (framework para diseño de transformadores en dispositivos pequeños)

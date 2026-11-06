@@ -2,7 +2,7 @@
 
 ## Resumen
 
-open-sci-ref-v0.02-1.7b-nemotron-hq-100B-4096-longsft_16k-SFT-Tulu3-decontaminated-ot30k es un modelo de lenguaje de 1.714.377.728 parámetros (aproximadamente 1,7 mil millones) publicado por la organización open-sci en HuggingFace. Se trata de un checkpoint resultante de un ajuste supervisado (SFT, *supervised fine-tuning*) completo —no LoRA— sobre una base derivada de la familia Nemotron, entrenado con el framework LLaMA-Factory. El modelo está orientado a tareas de extracción de características (*feature-extraction*) según su pipeline declarado, aunque su entrenamiento con datos conversacionales de tipo Tulu3 sugiere capacidad de generación.
+open-sci-ref-v0.02-1.7b-nemotron-hq-100B-4096-longsft_16k-SFT-Tulu3-decontaminated-ot30k es un modelo de lenguaje de 1.714.377.728 parámetros (aproximadamente 1,7 mil millones) publicado por la organización open-sci en Hugging Face. Se trata de un checkpoint resultante de un ajuste supervisado (SFT, *supervised fine-tuning*) completo —no LoRA— sobre una base derivada de la familia Nemotron, entrenado con el framework LLaMA-Factory. El modelo está orientado a tareas de extracción de características (*feature-extraction*) según su pipeline declarado, aunque su entrenamiento con datos conversacionales de tipo Tulu3 sugiere capacidad de generación.
 
 La relevancia de esta ficha es acotada: se trata de un artefacto de investigación con 16 descargas y 0 *likes* en el momento de la consulta, sin model card sustantiva (la tarjeta es autogenerada por el *Trainer* y contiene campos "More information needed"). El nombre del repositorio codifica el proceso: base Nemotron de 1.7B, contexto de 4096 tokens, SFT sobre 16k muestras largas, dataset Tulu3 decontaminado y 30.000 muestras de *open-thoughts*. No dispone de benchmarks publicados.
 
@@ -64,10 +64,10 @@ El *model-index* de la model card declara una entrada (`sft__f679a5c592c8dffb__o
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este) | 1,7B | 4096 (según nombre) | other | HuggingFace, 16 descargas | no publicados |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | publicados por el autor |
-| Llama-3.2-1B-Instruct | 1,2B | 131.072 | Llama 3.2 Community License | HuggingFace, ampliamente usado | publicados por el autor |
-| SmolLM2-1.7B-Instruct | 1,7B | 8192 | Apache 2.0 | HuggingFace | publicados por el autor |
+| open-sci-ref-v0.02-1.7b (este) | 1,7B | 4096 (según nombre) | other | Hugging Face, 16 descargas | no publicados |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | publicados por el autor |
+| Llama-3.2-1B-Instruct | 1,2B | 131.072 | Llama 3.2 Community License | Hugging Face, ampliamente usado | publicados por el autor |
+| SmolLM2-1.7B-Instruct | 1,7B | 8192 | Apache 2.0 | Hugging Face | publicados por el autor |
 
 La comparación con alternativas establecidas es desfavorable en contexto, licencia y trazabilidad de evaluación; su interés es exclusivamente como artefacto de investigación de open-sci.
 
@@ -85,7 +85,7 @@ La comparación con alternativas establecidas es desfavorable en contexto, licen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-100B-4096-longsft_16k-SFT-Tulu3-decontaminated-ot30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-100B-4096-longsft_16k-SFT-Tulu3-decontaminated-ot30k
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Dataset open-thoughts (referenciado en la model card): https://huggingface.co/datasets/open-thoughts/open_thoughts3-1.2_m_30000_samples
 - Tulu3 (dataset de SFT referenciado): https://huggingface.co/datasets/allenai/tulu-3-sft-mixture

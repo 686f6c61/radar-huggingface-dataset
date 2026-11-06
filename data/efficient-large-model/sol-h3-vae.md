@@ -81,8 +81,8 @@ Notas de medicion: los tiempos en GB200 se obtuvieron con un grafo CUDA capturad
 
 | Modelo | Tipo | Parametros | Capas | Licencia | Disponibilidad | Decodificacion de clip de 5 s (720p, GB200) | PSNR |
 |---|---|---|---:|---|---|---:|---|
-| Sol-H3-VAE | Decodificador VAE de vídeo destilado, no causal | 1,62B | 24 | Pesos bajo licencia de MiniMax-H3; codigo Apache-2.0 | HuggingFace (Efficient-Large-Model/Sol-H3-VAE) | 0,34 s | 45,4 dB en latentes reservados (720p a 2K) |
-| Decodificador del VAE de H3 (original) | Decodificador VAE de vídeo | no disponible | 36 | Licencia de MiniMax-H3 | HuggingFace (MiniMaxAI/MiniMax-H3) | 6,16 s | Referencia |
+| Sol-H3-VAE | Decodificador VAE de vídeo destilado, no causal | 1,62B | 24 | Pesos bajo licencia de MiniMax-H3; codigo Apache-2.0 | Hugging Face (Efficient-Large-Model/Sol-H3-VAE) | 0,34 s | 45,4 dB en latentes reservados (720p a 2K) |
+| Decodificador del VAE de H3 (original) | Decodificador VAE de vídeo | no disponible | 36 | Licencia de MiniMax-H3 | Hugging Face (MiniMaxAI/MiniMax-H3) | 6,16 s | Referencia |
 | SparkFastH3VAEDecoder con `engine="ref"` (mismo repositorio) | Decodificador de referencia en PyTorch puro | no disponible | no disponible | Codigo Apache-2.0 | Incluido en el repositorio | no disponible (descrito como mas lento) | no disponible |
 | Otros decodificadores VAE de vídeo equivalentes | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ Notas de medicion: los tiempos en GB200 se obtuvieron con un grafo CUDA capturad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Efficient-Large-Model/Sol-H3-VAE
+- Modelo en Hugging Face: https://huggingface.co/Efficient-Large-Model/Sol-H3-VAE
 - MiniMax-H3 (modelo base de la canalizacion): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia de MiniMax-H3 aplicable a los pesos: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Sol-H3 in ComfyUI (repositorio NVlabs/Sana, rama sol-engine): https://github.com/NVlabs/Sana/tree/sol-engine/models/minimax_h3/Sol-H3-ComfyUI

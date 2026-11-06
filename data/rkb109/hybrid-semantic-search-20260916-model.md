@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RKB109/hybrid-semantic-search-20260916-model` es un baseline lexico de recuperacion semantica publicado por el usuario RKB109 en HuggingFace. No se trata de un modelo neuronal de gran escala, sino de un componente de recuperacion que combina pesos de token por etiqueta con recuperacion de evidencia ponderada por IDF. Su proposito declarado es servir como prototipo transparente y reproducible para busqueda empresarial cuando las APIs de embeddings no estan disponibles, resultan caras o estan restringidas, y cuando se necesita calidad de recuperacion explicable.
+El modelo `RKB109/hybrid-semantic-search-20260916-model` es un baseline lexico de recuperacion semantica publicado por el usuario RKB109 en Hugging Face. No se trata de un modelo neuronal de gran escala, sino de un componente de recuperacion que combina pesos de token por etiqueta con recuperacion de evidencia ponderada por IDF. Su proposito declarado es servir como prototipo transparente y reproducible para busqueda empresarial cuando las APIs de embeddings no estan disponibles, resultan caras o estan restringidas, y cuando se necesita calidad de recuperacion explicable.
 
 El modelo se distribuye bajo licencia MIT con la libreria `custom` y esta etiquetado para las tareas `sentence-similarity`, `feature-extraction`, `text-ranking` y `question-answering`. No invoca ningun LLM alojado: toda la puntuacion se calcula localmente a partir de los pesos almacenados. El entrenamiento y la evaluacion se realizaron sobre un dataset sintetico enlazado en el propio repositorio.
 
@@ -78,10 +78,10 @@ No se dispone de datos de parametros, contexto ni rendimiento de este modelo, po
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RKB109/hybrid-semantic-search-20260916-model | Baseline lexico hibrido (pesos de token + IDF) | no disponible | no disponible | MIT | HuggingFace |
+| RKB109/hybrid-semantic-search-20260916-model | Baseline lexico hibrido (pesos de token + IDF) | no disponible | no disponible | MIT | Hugging Face |
 | BM25 (implementaciones tipo rank_bm25) | Recuperacion lexica probabilistica | no aplica | no disponible | depende de la implementacion | Ampliamente disponible |
 | TF-IDF + similitud coseno (scikit-learn) | Recuperacion lexica vectorial | no aplica | no disponible | BSD | Ampliamente disponible |
-| all-MiniLM-L6-v2 (sentence-transformers) | Embeddings densos | 22,7 M | 256 tokens | Apache 2.0 | HuggingFace |
+| all-MiniLM-L6-v2 (sentence-transformers) | Embeddings densos | 22,7 M | 256 tokens | Apache 2.0 | Hugging Face |
 
 Los valores de BM25, TF-IDF y all-MiniLM-L6-v2 se incluyen como referencia de categoria; no proceden de la informacion proporcionada sobre este modelo y deben verificarse en sus fuentes originales antes de usarse en una decision.
 
@@ -100,7 +100,7 @@ Los valores de BM25, TF-IDF y all-MiniLM-L6-v2 se incluyen como referencia de ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/hybrid-semantic-search-20260916-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/hybrid-semantic-search-20260916-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/hybrid-semantic-search-20260916-dataset
 - Repositorio de GitHub con `train.py`, split del dataset, codigo de evaluacion y formato JSON: la URL no esta disponible en la informacion proporcionada (la model card lo menciona sin enlace explicito).
 

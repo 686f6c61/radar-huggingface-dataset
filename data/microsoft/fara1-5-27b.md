@@ -82,7 +82,7 @@ La comparativa directa con otros CUA multimodales no esta disponible en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microsoft/Fara1.5-27B
+- Modelo en Hugging Face: https://huggingface.co/microsoft/Fara1.5-27B
 - Repositorio GitHub de Fara: https://github.com/microsoft/fara
 - Repositorio GitHub de MagenticLite: https://github.com/microsoft/magentic-ui
 - Paper: https://huggingface.co/papers/2606.20785

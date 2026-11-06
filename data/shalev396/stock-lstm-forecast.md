@@ -6,7 +6,7 @@ Stock Price LSTM (identificador `shalev396/stock-lstm-forecast`) es un modelo de
 
 Su relevancia no esta en el rendimiento, sino en la honestidad metodologica: el propio autor documenta que el error cuadratico medio (RMSE) a un dia del modelo en el periodo de test es de 4,48 dolares, frente a 4,47 dolares del predictor trivial "manana = hoy". Es decir, el modelo no supera a la persistencia, lo que ilustra de forma cuantificada el caracter de paseo aleatorio de los precios diarios. Esto lo convierte en un artefacto util como referencia negativa y como ejemplo reproducible de pipeline de forecasting con splits cronologicos.
 
-El modelo se publica bajo licencia MIT, con la arquitectura LSTM(64) sobre log-retornos estandarizados y ventana de 60 dias, en formato Keras 3 nativo (float32), y se puede ejecutar en CPU tanto en local como en la Space de HuggingFace asociada.
+El modelo se publica bajo licencia MIT, con la arquitectura LSTM(64) sobre log-retornos estandarizados y ventana de 60 dias, en formato Keras 3 nativo (float32), y se puede ejecutar en CPU tanto en local como en la Space de Hugging Face asociada.
 
 ## Especificaciones tecnicas
 
@@ -64,14 +64,14 @@ Conclusion documentada por el autor: el modelo **no** supera al baseline naive e
 - VRAM estimada: practicamente nula; los 16.961 parametros en float32 ocupan aproximadamente 66 KB de pesos, por lo que el modelo reside en memoria RAM/VRAM sin dificultad.
 - GPU recomendadas: ninguna especifica. El autor entreno e infiere en CPU; cualquier GPU consumer (incluso integradas) es sobredimensionada para esta carga.
 - Compatibilidad con GPU consumer: si, en cualquier GPU o en CPU pura; no requiere CUDA.
-- Opciones de despliegue: ejecucion local con TensorFlow/Keras 3 (`snapshot_download` + `model.load(path, device="cpu")`), HuggingFace Space con `ui_kind: timeseries` y runtime `cpu-basic`, e Inference Endpoint mediante `handler.py` con entrada `{"inputs": {"cutoff": ..., "horizon": ...}}`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un transformer decoder ni se publican pesos GGUF.
+- Opciones de despliegue: ejecucion local con TensorFlow/Keras 3 (`snapshot_download` + `model.load(path, device="cpu")`), Hugging Face Space con `ui_kind: timeseries` y runtime `cpu-basic`, e Inference Endpoint mediante `handler.py` con entrada `{"inputs": {"cutoff": ..., "horizon": ...}}`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un transformer decoder ni se publican pesos GGUF.
 - Latencia y throughput: no disponibles para inferencia. Como referencia de coste de computo, el entrenamiento de las cuatro redes de la familia tardo 575,3 s en CPU compartida y 71,8 s en una ejecucion sin contencion.
 
 ## Comparativa con modelos similares
 
 | Modelo / referencia | Parametros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shalev396/stock-lstm-forecast | 16.961 | 60 log-retornos, horizonte 1-60 dias | RMSE test 4,4831 $ (no bate al naive, 4,469 $) | MIT | HuggingFace (modelo, Space, handler de Inference Endpoints) |
+| shalev396/stock-lstm-forecast | 16.961 | 60 log-retornos, horizonte 1-60 dias | RMSE test 4,4831 $ (no bate al naive, 4,469 $) | MIT | Hugging Face (modelo, Space, handler de Inference Endpoints) |
 | naive_persistence (baseline incluido en el propio repo) | 0 | repite el ultimo cierre | RMSE test 4,469 $; RMSE validacion 2,583 $ | no aplica (implementado en el repo) | dentro del repositorio |
 | jinglescode/time-series-forecasting-pytorch (demo LSTM) | no disponible | no disponible | no disponible | no disponible | Colab publico |
 | Pitnon/stock-prediction-ai (LSTM multi-ticker) | no disponible | no disponible | no disponible | no disponible | GitHub |
@@ -95,7 +95,7 @@ La comparacion estricta de rendimiento solo es posible frente al baseline naive 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shalev396/stock-lstm-forecast
+- Modelo en Hugging Face: https://huggingface.co/shalev396/stock-lstm-forecast
 - Space de demostracion: https://huggingface.co/spaces/shalev396/stock-lstm-forecast
 - Repositorio GitHub (proyecto ml-lab, subcarpeta stock-lstm-forecast): https://github.com/shalev396/ml-lab/tree/main/stock-lstm-forecast
 - Codigo de entrenamiento: https://github.com/shalev396/ml-lab/tree/main/stock-lstm-forecast/training

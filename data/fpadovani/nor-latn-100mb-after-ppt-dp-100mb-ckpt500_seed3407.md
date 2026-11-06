@@ -58,9 +58,9 @@ Los siguientes modelos aparecen en la misma familia o en repositorios del autor,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/nor-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407 | 124.770.816 | No disponible | No disponible | HuggingFace |
-| fpadovani/nor-latn-100mb-ppt-Dp-100mb_seed3407 (modelo base) | No disponible | No disponible | No disponible | HuggingFace |
-| fpadovani/nld-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455 | No disponible | No disponible | No disponible | HuggingFace |
+| fpadovani/nor-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407 | 124.770.816 | No disponible | No disponible | Hugging Face |
+| fpadovani/nor-latn-100mb-ppt-Dp-100mb_seed3407 (modelo base) | No disponible | No disponible | No disponible | Hugging Face |
+| fpadovani/nld-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455 | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ Los siguientes modelos aparecen en la misma familia o en repositorios del autor,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/nor-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/nor-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/nor-latn-100mb-ppt-Dp-100mb_seed3407
 - Weights & Biases (entrenamiento): https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/sh4x6bru
 - Modelo neerlandés similar: https://huggingface.co/fpadovani/nld-latn-100mb-after-ppt-Dp-100mb-ckpt500_seed455

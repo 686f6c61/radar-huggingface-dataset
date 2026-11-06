@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`realtmp/carti_musicv1_model` es un repositorio publicado en HuggingFace por el usuario `realtmp` bajo licencia MIT. Por el nombre del identificador, el autor parece orientarlo a generación musical, pero la model card no contiene ninguna descripción funcional: únicamente declara la licencia MIT en el frontmatter YAML, sin cuerpo de texto, sin especificaciones y sin ejemplos de uso.
+`realtmp/carti_musicv1_model` es un repositorio publicado en Hugging Face por el usuario `realtmp` bajo licencia MIT. Por el nombre del identificador, el autor parece orientarlo a generación musical, pero la model card no contiene ninguna descripción funcional: únicamente declara la licencia MIT en el frontmatter YAML, sin cuerpo de texto, sin especificaciones y sin ejemplos de uso.
 
 El repositorio presenta un tamaño de 0.0 GB, cero descargas y cero likes, y fue creado y actualizado el mismo día (2 de noviembre de 2026, con apenas cinco minutos de diferencia entre ambos eventos). Estos indicadores sugieren un artefacto de prueba o un proyecto en fase embrionaria, no un modelo listo para evaluación técnica.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/realtmp/carti_musicv1_model
+- Repositorio en Hugging Face: https://huggingface.co/realtmp/carti_musicv1_model
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

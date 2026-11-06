@@ -56,7 +56,7 @@ En cuanto al proceso de cuantización, la model card indica que se trata de cuan
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, HellaSwag, ARC ni perplejidad para el modelo pdjamez/Neeps-125M-Base. Los resultados de la busqueda web realizada no contienen informacion tecnica sobre este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio de cuantizaciones ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, HellaSwag, ARC ni perplejidad para el modelo pdjamez/Neeps-125M-Base. Los resultados de la busqueda web realizada no contienen informacion tecnica sobre este modelo.
 
 ## Requisitos de hardware
 

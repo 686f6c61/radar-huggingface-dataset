@@ -69,14 +69,14 @@ La precision dura excluye las filas con objetivos suaves. La precision esperada 
 - Opciones de despliegue: servidor propio de Open-Jev mediante `python -m jev.server`, que requiere el paquete instalado con el extra `train` (incluye Transformers 5.10.2 y PEFT 0.19.1). No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Requisito de revision: es necesario disponer del modelo base Qwen/Qwen3.5-9B en la revision exacta `c202236235762e1c871ad0ccb60c8ee5ba337b9a`.
 - Latencia y throughput: no disponibles. La configuracion de referencia usa batch 1 y el prefix caching esta desactivado por defecto.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun la ficha de HuggingFace; los pesos del modelo base se descargan aparte.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun la ficha de Hugging Face; los pesos del modelo base se descargan aparte.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros / tipo | Contexto de entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| junetask/Open-Jev-9B (este) | Adaptador LoRA sobre Qwen3.5-9B, no generativo | 4.096 tokens por candidato | Test: 97,54% precision dura, ECE 0,0077; OOD: 91,97%, ECE 0,0374 | apache-2.0 | Espejo en HuggingFace, 0 descargas |
-| ZefanCai/Open-Jev-9B | Adaptador LoRA sobre Qwen3.5-9B, no generativo | 4.096 tokens por candidato | Los mismos pesos de referencia del proyecto | apache-2.0 | Repositorio principal en HuggingFace |
+| junetask/Open-Jev-9B (este) | Adaptador LoRA sobre Qwen3.5-9B, no generativo | 4.096 tokens por candidato | Test: 97,54% precision dura, ECE 0,0077; OOD: 91,97%, ECE 0,0374 | apache-2.0 | Espejo en Hugging Face, 0 descargas |
+| ZefanCai/Open-Jev-9B | Adaptador LoRA sobre Qwen3.5-9B, no generativo | 4.096 tokens por candidato | Los mismos pesos de referencia del proyecto | apache-2.0 | Repositorio principal en Hugging Face |
 | Open-Jev-2B (Qwen3.5-2B) | Adaptador LoRA sobre Qwen3.5-2B, no generativo | No disponible | No disponible en la informacion proporcionada | No disponible | Mencionado en el repositorio Open-Jev |
 | Open-Jev-27B (Qwen3.8-27B) | Adaptador LoRA sobre Qwen3.8-27B, no generativo | No disponible | No disponible en la informacion proporcionada | No disponible | Mencionado en el repositorio Open-Jev |
 | Qwen/Qwen3.5-9B (base) | Transformer generativo de 9B | No disponible | No disponible | No disponible | Modelo base upstream |
@@ -98,12 +98,12 @@ La precision dura excluye las filas con objetivos suaves. La precision esperada 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace (este): https://huggingface.co/junetask/Open-Jev-9B
+- Repositorio del modelo en Hugging Face (este): https://huggingface.co/junetask/Open-Jev-9B
 - Repositorio principal del modelo: https://huggingface.co/ZefanCai/Open-Jev-9B
 - Repositorio del cargador en GitHub: https://github.com/Zefan-Cai/Open-Jev
 - Repositorio de datos: https://huggingface.co/datasets/ZefanCai/Open-Jev
 - Web del proyecto: https://zefan-cai.github.io/open-jev
 - Servicio OpenJEV: https://openjev.sh/
 - Experimento Semantic If on-device: https://openjev.com/
-- Espejo alternativo en HuggingFace: https://huggingface.co/AlexWortega/openjev
+- Espejo alternativo en Hugging Face: https://huggingface.co/AlexWortega/openjev
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -64,9 +64,9 @@ La model card no incluye metricas cuantitativas como FID, CLIP score, ni compara
 
 | Modelo | Tipo | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Muapi/jav-company... (este repositorio) | LoRA | Pony Diffusion V6 XL | openrail++ | HuggingFace, CivArchive, Civitai (espejos) |
-| cocktailpeanut/pony-diffusion-v6-xl | Modelo completo | SDXL | openrail++ | HuggingFace |
-| Otros LoRAs sobre Pony Diffusion V6 XL | LoRA | Pony Diffusion V6 XL | variable (a menudo openrail++ o CreativeML OpenRAIL-M) | Civitai, HuggingFace |
+| Muapi/jav-company... (este repositorio) | LoRA | Pony Diffusion V6 XL | openrail++ | Hugging Face, CivArchive, Civitai (espejos) |
+| cocktailpeanut/pony-diffusion-v6-xl | Modelo completo | SDXL | openrail++ | Hugging Face |
+| Otros LoRAs sobre Pony Diffusion V6 XL | LoRA | Pony Diffusion V6 XL | variable (a menudo openrail++ o CreativeML OpenRAIL-M) | Civitai, Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para establecer una jerarquia objetiva frente a otros adaptadores.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo para establecer una jerarquia 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora
+- Repositorio Hugging Face: https://huggingface.co/Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora
 - Commit del repositorio: https://huggingface.co/Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora/commit/bb887a720db797de33d76327211044de733f3abc
 - Ficha en CivArchive: https://civarchive.com/models/1048386?modelVersionId=1180386
 - Version en CivArchive: https://civarchive.com/seaart/models/34bc6d83d46e6af616b12d8efedc22c2/versions/a1aace9397a5fda36d247ac6997c5f90

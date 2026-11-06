@@ -89,8 +89,8 @@ La comparativa se basa en el tamaño de parámetros y la tarea. DINOv2 e iBOT so
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/jepacpp/lejepa-vits16-pretrain-in1k-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/OK-AI/lejepa-vits16-pretrain-in1k
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/jepacpp/lejepa-vits16-pretrain-in1k-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/OK-AI/lejepa-vits16-pretrain-in1k
 - Repositorio del motor jepa.cpp: https://github.com/aselimc/jepa.cpp
 - Documentación de jepa.cpp (API C, paridad, cuantización, rendimiento): https://aselimc.github.io/jepa.cpp/
 - Repositorio del framework LeJEPA: https://github.com/galilai-group/lejepa

@@ -85,7 +85,7 @@ No se conocen resultados numéricos de estos modelos en los mismos benchmarks, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-cf-s1337-l3
+- Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-cf-s1337-l3
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Modelo alternativo Olmo3-7B-Math-CoT: https://huggingface.co/Alelcv27/Olmo3-7B-Math-CoT

@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lhl616/qwen3-soft-weight-rkl-20260929-checkpoints
+- Hugging Face: https://huggingface.co/lhl616/qwen3-soft-weight-rkl-20260929-checkpoints
 - Modelo base citado: https://huggingface.co/Qwen/Qwen3-4B-Base
 - No se han encontrado papers, blogs, repos ni demos adicionales en la información disponible.

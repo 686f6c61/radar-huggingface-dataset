@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P6-E20B-A7B-D3 es un modelo experimental de generación de texto creado por el usuario andyoneal (andyoneal en HuggingFace) que expande el modelo denso NVIDIA-Nemotron-3.5-Bolt-E4B a una arquitectura de mezcla de expertos (MoE) con el bloque nativo de Gemma 4. No se trata de un modelo entrenado, sino de una base para investigación en fine-tuning: el autor lo describe explícitamente como "untrained expansion". El modelo combina el cuerpo de Bolt (E4B) con cinco expertos por capa, cada uno de ellos un FFN completo de 10.240 dimensiones, con enrutamiento top-1.
+P6-E20B-A7B-D3 es un modelo experimental de generación de texto creado por el usuario andyoneal (andyoneal en Hugging Face) que expande el modelo denso NVIDIA-Nemotron-3.5-Bolt-E4B a una arquitectura de mezcla de expertos (MoE) con el bloque nativo de Gemma 4. No se trata de un modelo entrenado, sino de una base para investigación en fine-tuning: el autor lo describe explícitamente como "untrained expansion". El modelo combina el cuerpo de Bolt (E4B) con cinco expertos por capa, cada uno de ellos un FFN completo de 10.240 dimensiones, con enrutamiento top-1.
 
 El modelo tiene 23.979.053.308 parámetros totales (unos 20,5B efectivos, 23,98B contando las embeddings por capa) y aproximadamente 7,3B parámetros activos por token. Se distribuye en bf16 con un tamaño de repositorio de 48 GB y utiliza una configuración estándar `Gemma4ForCausalLM` que carga en transformers y mlx-lm. Su propósito declarado es servir como base para experimentación con LoRA y para estudiar el comportamiento de routers MoE construidos sin entrenamiento.
 
@@ -86,7 +86,7 @@ La comparación más directa es con Gemma 4 26B-A4B, que comparte el bloque MoE 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andyoneal/P6-E20B-A7B-D3
+- Hugging Face: https://huggingface.co/andyoneal/P6-E20B-A7B-D3
 - Modelo base Bolt: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Donante Musica: https://huggingface.co/AuriAetherwiing/G4-E4B-Musica-v1-lora
 - Donante Gemma4NPC: https://huggingface.co/chimbiwide/Gemma4NPC-E4B

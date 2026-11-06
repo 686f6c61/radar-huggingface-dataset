@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: un modelo de 1B en bf16 requiere aproximadamente 2 GB de VRAM para inferencia de un solo checkpoint. Para cargar los 43 checkpoints simultaneamente, se necesitarian unos 127.7 GB (el tamano del repositorio).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3060, RTX 4090) puede ejecutar un solo checkpoint en bf16. Para cargar todos los checkpoints en memoria, se necesitarian GPUs de datacenter como A100 (80 GB) o H100, o una combinacion de varias.
 - Si cabe en consumer GPU: si, para un solo checkpoint es suficiente una GPU consumer. Para los 43, no.
-- Opciones de despliegue: al ser un modelo estandar de HuggingFace, se puede usar con transformers, vLLM, llama.cpp (con conversion a GGUF), Ollama, etc. Sin embargo, al ser un checkpoint de solo inferencia, no es adecuado para entrenamiento o fine-tuning en produccion.
+- Opciones de despliegue: al ser un modelo estandar de Hugging Face, se puede usar con transformers, vLLM, llama.cpp (con conversion a GGUF), Ollama, etc. Sin embargo, al ser un checkpoint de solo inferencia, no es adecuado para entrenamiento o fine-tuning en produccion.
 - Latencia y throughput: para un modelo de 1B, la latencia tipica en una GPU consumer es de ~10-20 ms por token en bf16, con throughput de 50-100 tokens/s. No hay datos especificos del repositorio.
 
 ## Comparativa con modelos similares
@@ -79,9 +79,9 @@ La comparativa muestra que este repositorio no es un modelo de produccion, sino 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-273b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-273b
 - GitHub de OLMo (AI2): https://github.com/allenai/OLMo
 - Pagina de OLMo en AI2: https://allenai.org/olmo
 - Pagina de OLMo 2 en AI2: https://allenai.org/olmo2
 - Paper de OLMo 2 (arXiv): https://arxiv.org/abs/2501.00656
-- Modelo base OLMo-2-0425-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-0425-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

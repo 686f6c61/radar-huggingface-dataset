@@ -73,10 +73,10 @@ La model card indica que los resultados completos por dataset, incluyendo MATH-5
 
 | Modelo | Parametros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CIRF-Qwen3-8B-Instruct-Backward-Greedy-3 | 8,19 B | no disponible | 41,39% | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-8B (base) | 8,19 B | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | HuggingFace (modelo oficial) |
-| CIRF-Qwen3-8B-Instruct-Full | 8,19 B | no disponible | no disponible en esta ficha | Apache 2.0 | HuggingFace (mismo autor) |
-| CIRF-Qwen3-8B-Instruct-Zero-Results | 8,19 B | no disponible | no disponible en esta ficha | Apache 2.0 | HuggingFace (mismo autor) |
+| CIRF-Qwen3-8B-Instruct-Backward-Greedy-3 | 8,19 B | no disponible | 41,39% | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-8B (base) | 8,19 B | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | Hugging Face (modelo oficial) |
+| CIRF-Qwen3-8B-Instruct-Full | 8,19 B | no disponible | no disponible en esta ficha | Apache 2.0 | Hugging Face (mismo autor) |
+| CIRF-Qwen3-8B-Instruct-Zero-Results | 8,19 B | no disponible | no disponible en esta ficha | Apache 2.0 | Hugging Face (mismo autor) |
 
 No se dispone de resultados de benchmarks del modelo base Qwen3-8B ni de las otras variantes CIRF en la informacion proporcionada, por lo que no es posible cuantificar la perdida o ganancia respecto a ellos.
 
@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks del modelo base Qwen3-8B ni de las otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-3
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Variante Full: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Full
 - Variante Zero-Results: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Zero-Results

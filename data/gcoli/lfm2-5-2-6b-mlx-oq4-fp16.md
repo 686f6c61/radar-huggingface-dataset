@@ -61,5 +61,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gcoli/LFM2.5-2.6B-MLX-oQ4-fp16
+- Modelo en Hugging Face: https://huggingface.co/gcoli/LFM2.5-2.6B-MLX-oQ4-fp16
 - Herramienta de cuantización oMLX: https://github.com/jundot/omlx

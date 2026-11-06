@@ -80,7 +80,7 @@ Referencias del autor: la lista de palabras clave que Lighthouse usaba antes obt
 - Cabe en GPU de consumo: sí, pero es innecesario; también cabe en un Android económico, que es el objetivo declarado.
 - Opciones de despliegue: `onnxruntime` con `sentencepiece` y `numpy` (el repositorio incluye `example.py`). No hay pesos GGUF ni safetensors, por lo que no se documentan integraciones con llama.cpp, Ollama, vLLM ni TGI.
 - Latencia y throughput: menos de 1 ms por mensaje en CPU de portátil; no se publica throughput agregado ni cifras medidas en móvil.
-- Almacenamiento del repositorio: los metadatos de HuggingFace indican 0.0 GB, en contradicción aparente con los tamaños de fichero declarados en la model card (8,5 MB + 33 MB + 0,6 MB).
+- Almacenamiento del repositorio: los metadatos de Hugging Face indican 0.0 GB, en contradicción aparente con los tamaños de fichero declarados en la model card (8,5 MB + 33 MB + 0,6 MB).
 
 ## Comparativa con modelos similares
 
@@ -110,7 +110,7 @@ No se dispone de datos en la información proporcionada sobre otros clasificador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prosperitytech/lighthouse-keeper
+- Modelo en Hugging Face: https://huggingface.co/Prosperitytech/lighthouse-keeper
 - Conjunto de evaluación propio (557 mensajes): https://huggingface.co/datasets/Prosperitytech/keeper-nigerian-safety-test
 - Modelo profesor: https://huggingface.co/openai/gpt-oss-safeguard-20b
 - Generador de datos en yoruba, hausa e igbo: https://huggingface.co/McGill-NLP/AfriqueQwen3.5-9B-50Langs-Instruct-v1

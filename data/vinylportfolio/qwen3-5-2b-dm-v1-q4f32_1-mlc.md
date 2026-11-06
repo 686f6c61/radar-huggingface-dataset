@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 - No debe usarse para consejos ni información del mundo real.
 - El modelo incorpora material del System Reference Document 5.2 de Wizards of the Coast, distribuido bajo CC BY 4.0; esa parte exige atribución a Wizards of the Coast y el enlace a la licencia, independientemente de la Apache-2.0 de los pesos.
 - El proceso de datos usó salidas de un modelo abierto (Qwen3.5-9B) filtradas automáticamente; no se documenta auditoría humana del dataset ni evaluación de sesgos.
-- Tracción muy baja en HuggingFace (15 descargas, 0 likes) y una sola conversión publicada; no hay garantía de mantenimiento.
+- Tracción muy baja en Hugging Face (15 descargas, 0 likes) y una sola conversión publicada; no hay garantía de mantenimiento.
 - La fecha de creación del repositorio (2026-10-17) y la existencia de Qwen3.5 deben tomarse tal como los declara el autor; esta ficha no verifica esos metadatos de forma independiente.
 
 ## Enlaces

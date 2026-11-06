@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 ## Comparativa con modelos similares
 
-No se han publicado comparaciones con modelos de referencia. Los únicos modelos comparables son otros checkpoints del mismo autor con el prefijo `kdyck_dose_100Mpt_200M_s0` y `kdyck_dose_100Mpt_200M_s2`, disponibles en HuggingFace, pero no se dispone de sus especificaciones ni resultados de benchmarks. No se puede establecer una comparativa fiable.
+No se han publicado comparaciones con modelos de referencia. Los únicos modelos comparables son otros checkpoints del mismo autor con el prefijo `kdyck_dose_100Mpt_200M_s0` y `kdyck_dose_100Mpt_200M_s2`, disponibles en Hugging Face, pero no se dispone de sus especificaciones ni resultados de benchmarks. No se puede establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
@@ -65,7 +65,7 @@ No se han publicado comparaciones con modelos de referencia. Los únicos modelos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_20M_s0_2026-09-06_15-19-50_365439-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_20M_s0_2026-09-06_15-19-50_365439-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/pqfdif1s
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Checkpoint similar `kdyck_dose_100Mpt_200M_s0`: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_200M_s0_2026-08-14_18-41-11_852802-pt

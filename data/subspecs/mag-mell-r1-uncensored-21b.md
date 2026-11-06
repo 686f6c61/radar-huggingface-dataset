@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. El modelo de 21B es una exten
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/subspecs/Mag-Mell-R1-Uncensored-21B
+- Repositorio Hugging Face: https://huggingface.co/subspecs/Mag-Mell-R1-Uncensored-21B
 - Cuantizaciones GGUF (mradermacher): https://huggingface.co/mradermacher/Mag-Mell-R1-Uncensored-21B-GGUF
 - Cuantizaciones GGUF i1 (mradermacher): https://huggingface.co/mradermacher/Mag-Mell-R1-Uncensored-21B-i1-GGUF
 - Modelo base Naphula/MN-12B-Mag-Mell-R1-Uncensored: https://huggingface.co/Naphula/MN-12B-Mag-Mell-R1-Uncensored

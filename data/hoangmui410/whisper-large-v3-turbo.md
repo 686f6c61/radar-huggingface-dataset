@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hoangmui410/whisper-large-v3-turbo` es un repositorio de HuggingFace que, por su nombre y por el recuento de parámetros declarado en los pesos (808.878.080), corresponde a la variante «turbo» de Whisper, el modelo de reconocimiento automático del habla (ASR) publicado originalmente por OpenAI. La variante turbo de Whisper reduce el número de capas del decodificador respecto al modelo large completo, lo que rebaja el coste de inferencia a costa de una pérdida acotada de precisión. El resultado es un modelo de transcripción y traducción de audio que puede ejecutarse en hardware mucho más modesto que la versión large estándar.
+`hoangmui410/whisper-large-v3-turbo` es un repositorio de Hugging Face que, por su nombre y por el recuento de parámetros declarado en los pesos (808.878.080), corresponde a la variante «turbo» de Whisper, el modelo de reconocimiento automático del habla (ASR) publicado originalmente por OpenAI. La variante turbo de Whisper reduce el número de capas del decodificador respecto al modelo large completo, lo que rebaja el coste de inferencia a costa de una pérdida acotada de precisión. El resultado es un modelo de transcripción y traducción de audio que puede ejecutarse en hardware mucho más modesto que la versión large estándar.
 
 Es importante señalar que este repositorio concreto no es la publicación oficial de OpenAI: el autor es el usuario `hoangmui410`, el repositorio acumula 10 descargas y 0 «likes», y no declara licencia, pipeline ni idiomas soportados en su ficha. El tamaño del repositorio es de 1,6 GB y solo contiene pesos en formato `safetensors`, sin cuantizaciones GGUF/ggml ni tokenizadores o ficheros de configuración documentados en la información disponible.
 
@@ -94,5 +94,5 @@ No se dispone de datos de rendimiento (WER, velocidad) para establecer una compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hoangmui410/whisper-large-v3-turbo
+- Repositorio en Hugging Face: https://huggingface.co/hoangmui410/whisper-large-v3-turbo
 - No se han encontrado en la informacion proporcionada otros enlaces (paper, blog, repositorio de codigo o demo) asociados a este repositorio.

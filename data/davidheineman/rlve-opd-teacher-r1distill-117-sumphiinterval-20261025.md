@@ -86,8 +86,8 @@ No se han identificado en la información proporcionada otras alternativas compa
 - La fecha de creación indicada es 2026-10-25; conviene verificar la vigencia y posibles actualizaciones del repositorio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-117-SumPHIInterval-20261025
+- Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-117-SumPHIInterval-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Ejecución de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/6d8cdf9d
-- Archivos `training_run.json` y `training_config.yaml` dentro del repositorio de HuggingFace; no se dispone de URL directa en la información proporcionada.
+- Archivos `training_run.json` y `training_config.yaml` dentro del repositorio de Hugging Face; no se dispone de URL directa en la información proporcionada.
 - Resultados de búsqueda web: sin enlaces relevantes; solo aparecen resultados sobre IKEA ajenos al modelo.

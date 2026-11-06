@@ -82,7 +82,7 @@ UTMOS es una red neuronal entrenada con valoraciones humanas que predice la natu
 
 | Modelo | Parametros | Contexto de entrada | Tamano | UTMOS | WER | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---:|---|---|
-| Paradee-8M v1.0 | 8,07 M | 512 ids de fonemas | 9,0 MB (int8) | 4,41 | 5,7% | Apache 2.0 | ONNX y PyTorch, en HuggingFace y GitHub |
+| Paradee-8M v1.0 | 8,07 M | 512 ids de fonemas | 9,0 MB (int8) | 4,41 | 5,7% | Apache 2.0 | ONNX y PyTorch, en Hugging Face y GitHub |
 | Kokoro-82M | 81,8 M | no disponible | 325 MB | 4,52 | 5,7% | Apache 2.0 | ONNX y PyTorch, modelo profesor |
 | Kokoro-7M-Distill | 7,48 M | no disponible | 30,1 MB | 4,18 | 7,4% | no disponible en la informacion proporcionada | distilacion alternativa, voz `af_msa` |
 | Piper, en_US-lessac-medium | 15,7 M | no disponible | 63,2 MB | 4,36 | 8,8% | no disponible en la informacion proporcionada | ecosistema Piper |
@@ -104,7 +104,7 @@ Frente a Piper y KittenTTS, Paradee consigue mejor UTMOS con menos parametros y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.0
+- Modelo en Hugging Face: https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.0
 - Codigo, entrenamiento y paquete Python: https://github.com/sahilmahendrakar/paradee
 - Conversor de notacion fonetica para navegador: https://github.com/sahilmahendrakar/paradee/blob/main/web/misaki.js
 - Modelo base Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M

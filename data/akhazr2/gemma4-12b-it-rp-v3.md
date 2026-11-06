@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de contexto de los modelos comparables e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/akhazr2/gemma4-12b-it-rp-v3
+- Hugging Face del adaptador: https://huggingface.co/akhazr2/gemma4-12b-it-rp-v3
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Receta de referencia: https://huggingface.co/ChatoyantAI/Gemma-4-12B-Roleplay-7525-SFT
 - Dataset de entrenamiento (privado): https://huggingface.co/datasets/akhazr/gemma4-rp-sft-cleaned

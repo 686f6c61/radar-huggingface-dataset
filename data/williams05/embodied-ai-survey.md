@@ -27,7 +27,7 @@ La relevancia de esta ficha es, por tanto, fundamentalmente negativa: sirve para
 
 ## Arquitectura y entrenamiento
 
-No hay información técnica sobre arquitectura real. El único indicio es la etiqueta `transformer` en los metadatos de HuggingFace, que en este contexto parece una clasificación automática o una elección del autor más que la descripción de un modelo. La model card no menciona número de capas, dimensión oculta, mecanismo de atención, tokenizer, función de activación ni ningún otro detalle de diseño.
+No hay información técnica sobre arquitectura real. El único indicio es la etiqueta `transformer` en los metadatos de Hugging Face, que en este contexto parece una clasificación automática o una elección del autor más que la descripción de un modelo. La model card no menciona número de capas, dimensión oculta, mecanismo de atención, tokenizer, función de activación ni ningún otro detalle de diseño.
 
 Tampoco se documenta ningún proceso de entrenamiento: no se indica número de tokens, composición del corpus, uso de RLHF, DPO, SFT ni ninguna otra técnica de alineamiento. La model card insiste en que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y logs en crudo. En consecuencia, no existe evidencia de entrenamiento alguno ni innovación técnica que reseñar.
 
@@ -72,7 +72,7 @@ La model card declara explícitamente que la nota "does not claim benchmark impr
 
 No disponible. No existen modelos comparables en la misma categoría porque este repositorio no es un modelo. Frente a cualquier LLM de tamaño pequeño (por ejemplo, modelos de la familia de menos de 1.000 millones de parámetros), la diferencia es de varios órdenes de magnitud: 24.832 parámetros frente a cientos de millones o miles de millones, además de la ausencia total de tokenizer, configuración, datos de entrenamiento y evaluación.
 
-La comparación pertinente sería con otros repositorios de notas de investigación alojados en HuggingFace, pero no se dispone de datos de esos repositorios en la información proporcionada.
+La comparación pertinente sería con otros repositorios de notas de investigación alojados en Hugging Face, pero no se dispone de datos de esos repositorios en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ La comparación pertinente sería con otros repositorios de notas de investigaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WilliamS05/embodied-ai-survey
+- Hugging Face: https://huggingface.co/WilliamS05/embodied-ai-survey
 - Fichero principal del repositorio: `summary.md` (referenciado en la model card como artefacto primario; no se ha verificado su contenido)
 - Documentación del repositorio: `README.md`
 - Papers, blogs, repositorios de código y demos: no disponible en la información proporcionada

@@ -68,8 +68,8 @@ No se dispone de informacion para realizar una comparativa directa con otros mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zehen8716/zehen-lora
-- Pagina del autor en HuggingFace: https://huggingface.co/zehen8716
+- Repositorio en Hugging Face: https://huggingface.co/zehen8716/zehen-lora
+- Pagina del autor en Hugging Face: https://huggingface.co/zehen8716
 - Documentacion de carga de LoRAs en diffusers: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters
 - Guia de entrenamiento DreamBooth para Krea 2: https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_krea2.md
 - Otros LoRAs del mismo autor: https://huggingface.co/zehen8716/ritika-lora y https://huggingface.co/zehen8716/kashish-lora

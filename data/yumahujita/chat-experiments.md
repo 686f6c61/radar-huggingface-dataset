@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Yumahujita/chat-experiments` es un modelo de inteligencia artificial de escala **xlarge** basado en la arquitectura **Flamingo**, diseñado específicamente para tareas de aprendizaje **contrastivo**. El repositorio, publicado por el usuario Yumahujita en HuggingFace, contiene únicamente un artefacto principal (`main.py`) y no incluye pesos preentrenados, datasets de entrenamiento ni documentación adicional sobre el proceso de desarrollo.
+`Yumahujita/chat-experiments` es un modelo de inteligencia artificial de escala **xlarge** basado en la arquitectura **Flamingo**, diseñado específicamente para tareas de aprendizaje **contrastivo**. El repositorio, publicado por el usuario Yumahujita en Hugging Face, contiene únicamente un artefacto principal (`main.py`) y no incluye pesos preentrenados, datasets de entrenamiento ni documentación adicional sobre el proceso de desarrollo.
 
 El modelo se presenta como un experimento de investigación que combina varias técnicas modernas: atención por grupos de consultas (grouped query attention), fusión mediante atención cruzada (cross attention), activación Swish, normalización por lotes (batch norm) e inicialización Xavier uniforme. El entrenamiento utiliza el optimizador Lion con un programador de tasa de aprendizaje OneCycle. La licencia Apache 2.0 permite uso comercial y modificación sin restricciones significativas.
 
@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yumahujita/chat-experiments
+- Hugging Face: https://huggingface.co/Yumahujita/chat-experiments
 - No se encontraron papers, blogs, repositorios adicionales ni demos relacionados con este modelo en la búsqueda web.

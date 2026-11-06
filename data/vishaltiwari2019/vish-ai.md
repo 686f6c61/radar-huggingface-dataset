@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vish-Ai es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Vishaltiwari2019 en HuggingFace. Se trata de un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) construido sobre la arquitectura Qwen2, un transformer decoder-only con atención de tipo causal. El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente 2 veces más rápido que un pipeline convencional.
+Vish-Ai es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario Vishaltiwari2019 en Hugging Face. Se trata de un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) construido sobre la arquitectura Qwen2, un transformer decoder-only con atención de tipo causal. El autor indica que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente 2 veces más rápido que un pipeline convencional.
 
 El modelo parte de la versión cuantizada a 4 bits del instructivo original (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`), un checkpoint optimizado para fine-tuning con QLoRA. El resultado se distribuye en formato safetensors con pesos completos (el repositorio ocupa 3,1 GB), lo que sugiere que los adaptadores se fusionaron con el modelo base tras el entrenamiento. La licencia es Apache 2.0, heredada del modelo original.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Vish-Ai (este modelo) | 1,5 B | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning personal sin benchmarks |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| Llama 3.2 1B Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, muy usado | Requiere aceptar licencia; buen rendimiento en inglés |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa ligera de HuggingFace con benchmarks públicos |
+| Vish-Ai (este modelo) | 1,5 B | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning personal sin benchmarks |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| Llama 3.2 1B Instruct | 1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, muy usado | Requiere aceptar licencia; buen rendimiento en inglés |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa ligera de Hugging Face con benchmarks públicos |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: Vishaltiwari2019/Vish-Ai](https://huggingface.co/Vishaltiwari2019/Vish-Ai)
+- [Hugging Face: Vishaltiwari2019/Vish-Ai](https://huggingface.co/Vishaltiwari2019/Vish-Ai)
 - [Modelo base: unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Librería TRL de HuggingFace](https://github.com/huggingface/trl)
+- [Librería TRL de Hugging Face](https://github.com/huggingface/trl)

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento / objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `davidheineman/opd-teacher-R1Distill-LinkBeads-step149` | 1.777.088.000 | No disponible (base: 131.072 tokens) | GRPO, 150 pasos, 4 prompts por paso, entorno LinkBeads dificultad 0, profesor OPD | No disponible | HuggingFace, safetensors |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | 1.777.088.000 | 131.072 tokens | Destilado de DeepSeek-R1 sobre Qwen2.5-1.5B, orientado a razonamiento | MIT | HuggingFace, safetensors |
-| `Qwen2.5-1.5B-Instruct` | Aproximadamente 1.540.000.000 | 32.768 tokens nativos, ampliable | Postentrenamiento instructivo con SFT y preferencias | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| `davidheineman/opd-teacher-Q2.5I-LinkBeads-step149` | No disponible | No disponible | GRPO con RLVE sobre LinkBeads dificultad 0, 150 actualizaciones, profesor OPD | No disponible | HuggingFace, safetensors |
+| `davidheineman/opd-teacher-R1Distill-LinkBeads-step149` | 1.777.088.000 | No disponible (base: 131.072 tokens) | GRPO, 150 pasos, 4 prompts por paso, entorno LinkBeads dificultad 0, profesor OPD | No disponible | Hugging Face, safetensors |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` | 1.777.088.000 | 131.072 tokens | Destilado de DeepSeek-R1 sobre Qwen2.5-1.5B, orientado a razonamiento | MIT | Hugging Face, safetensors |
+| `Qwen2.5-1.5B-Instruct` | Aproximadamente 1.540.000.000 | 32.768 tokens nativos, ampliable | Postentrenamiento instructivo con SFT y preferencias | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| `davidheineman/opd-teacher-Q2.5I-LinkBeads-step149` | No disponible | No disponible | GRPO con RLVE sobre LinkBeads dificultad 0, 150 actualizaciones, profesor OPD | No disponible | Hugging Face, safetensors |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-LinkBeads-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-LinkBeads-step149
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Colección RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Checkpoint hermano (Qwen2.5 Instruct): https://huggingface.co/davidheineman/opd-teacher-Q2.5I-LinkBeads-step149

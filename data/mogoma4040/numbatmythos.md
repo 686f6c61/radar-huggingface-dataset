@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`numbatMythos` es un checkpoint intermedio de preentrenamiento publicado en HuggingFace bajo el identificador `Mogoma4040/numbatMythos`. Segun la model card del autor, corresponderia a un modelo de aproximadamente 14 billones de parametros (14T), 114 capas y una arquitectura hibrida que combina Gated DeltaNet (GDN) con Multi-head Latent Attention (MLA), capas feed-forward de tipo Mixture-of-Experts con 1.224 expertos (top-48 mas 1 compartido) y Multi-Token Prediction. El checkpoint estaria cuantizado en NVFP4 y se presenta como una copia de evaluacion de un entrenamiento interno de Anthropic, con nombre en clave `numbat`, supuestamente citado en una filtracion del codigo fuente de Claude Code de marzo de 2026.
+`numbatMythos` es un checkpoint intermedio de preentrenamiento publicado en Hugging Face bajo el identificador `Mogoma4040/numbatMythos`. Segun la model card del autor, corresponderia a un modelo de aproximadamente 14 billones de parametros (14T), 114 capas y una arquitectura hibrida que combina Gated DeltaNet (GDN) con Multi-head Latent Attention (MLA), capas feed-forward de tipo Mixture-of-Experts con 1.224 expertos (top-48 mas 1 compartido) y Multi-Token Prediction. El checkpoint estaria cuantizado en NVFP4 y se presenta como una copia de evaluacion de un entrenamiento interno de Anthropic, con nombre en clave `numbat`, supuestamente citado en una filtracion del codigo fuente de Claude Code de marzo de 2026.
 
 El repositorio incluye una implementacion de referencia completa (`configuration_numbat.py` y `modeling_numbat.py`) que, segun el autor, permite cargar el checkpoint con `load_state_dict(strict=True)` o mediante `AutoModelForCausalLM.from_pretrained(..., trust_remote_code=True)`. El tamaño del repositorio es de 7.720,6 GB distribuidos en 772 shards en formato safetensors, con un total de 6.849.377.242.584 parametros segun los metadatos reales de safetensors.
 
@@ -16,7 +16,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: la pro
 | Parametros totales | 6.849.377.242.584 (~6,85T segun safetensors); la model card declara ~14T |
 | Parametros activos | No disponible (MoE con 1.224 expertos, top-48 + 1 compartido; no se especifica el numero de parametros activos) |
 | Longitud de contexto | No disponible |
-| Tipos de cuantizacion | NVFP4 (E4M3 scale blocks con payloads E2M1); tag `8-bit` y `modelopt` en HuggingFace |
+| Tipos de cuantizacion | NVFP4 (E4M3 scale blocks con payloads E2M1); tag `8-bit` y `modelopt` en Hugging Face |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
 | Formato de pesos | safetensors (772 shards, ~10,6 GB por shard), mas implementacion de referencia en Python |
@@ -81,5 +81,5 @@ No disponible. No se han proporcionado datos de rendimiento ni especificaciones 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mogoma4040/numbatMythos
+- Repositorio Hugging Face: https://huggingface.co/Mogoma4040/numbatMythos
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

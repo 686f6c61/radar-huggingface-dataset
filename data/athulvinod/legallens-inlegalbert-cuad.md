@@ -4,9 +4,9 @@
 
 ## Resumen
 
-legallens-inlegalbert-cuad es un modelo de clasificacion de texto publicado en HuggingFace por el usuario athulvinod. Se distribuye como un checkpoint de la libreria transformers en formato safetensors, con 109.493.775 parametros (unos 0,4 GB de repositorio) y la etiqueta de arquitectura bert, lo que lo situa en la familia de codificadores densos del orden de BERT-base.
+legallens-inlegalbert-cuad es un modelo de clasificacion de texto publicado en Hugging Face por el usuario athulvinod. Se distribuye como un checkpoint de la libreria transformers en formato safetensors, con 109.493.775 parametros (unos 0,4 GB de repositorio) y la etiqueta de arquitectura bert, lo que lo situa en la familia de codificadores densos del orden de BERT-base.
 
-El identificador del repositorio sugiere un ajuste fino de InLegalBERT (variante de LegalBERT entrenada con textos legales indios) orientado al analisis contractual, muy probablemente clasificacion de clausulas sobre el dataset CUAD (Contract Understanding Atticus Dataset). Esta lectura procede unicamente del nombre del modelo: la model card es la plantilla autogenerada por HuggingFace y no aporta informacion sobre datos de entrenamiento, idiomas, licencia ni procedimiento de ajuste.
+El identificador del repositorio sugiere un ajuste fino de InLegalBERT (variante de LegalBERT entrenada con textos legales indios) orientado al analisis contractual, muy probablemente clasificacion de clausulas sobre el dataset CUAD (Contract Understanding Atticus Dataset). Esta lectura procede unicamente del nombre del modelo: la model card es la plantilla autogenerada por Hugging Face y no aporta informacion sobre datos de entrenamiento, idiomas, licencia ni procedimiento de ajuste.
 
 Su interes potencial esta en el procesado automatico de contratos: clasificacion de clausulas, deteccion de riesgos y extraccion de metadatos dentro de pipelines de revision legal. Con 0 descargas y 0 likes en el momento de la consulta, y sin documentacion tecnica verificable, debe tratarse como un artefacto sin validar y no apto para produccion sin una evaluacion propia previa.
 
@@ -31,7 +31,7 @@ Su interes potencial esta en el procesado automatico de contratos: clasificacion
 
 La unica informacion estructural disponible son las etiquetas del repositorio: `bert`, `text-classification`, `transformers`, `safetensors` y `text-embeddings-inference`. El recuento real de parametros (109,49 M) es coherente con una configuracion tipo BERT-base (12 capas, 768 de dimension oculta, 12 cabezas de atencion, ~110 M de parametros) y con una cabeza de clasificacion de secuencia anadida sobre el pooler, pero no se ha publicado la configuracion exacta ni el numero de etiquetas de salida.
 
-No hay datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el regimen de precision ni el procedimiento de ajuste. En modelos de este tipo el ajuste se realiza habitualmente por aprendizaje supervisado con entropia cruzada sobre un conjunto etiquetado (por ejemplo, clausulas de contratos), sin RLHF ni DPO, pero esto es una inferencia por categoria de modelo y no un dato confirmado en la model card. La unica referencia a un paper de la ficha, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre el calculo de emisiones de carbono: es un enlace de la plantilla de HuggingFace y no el articulo del modelo.
+No hay datos sobre el corpus de entrenamiento, el numero de tokens, la composicion del dataset, el regimen de precision ni el procedimiento de ajuste. En modelos de este tipo el ajuste se realiza habitualmente por aprendizaje supervisado con entropia cruzada sobre un conjunto etiquetado (por ejemplo, clausulas de contratos), sin RLHF ni DPO, pero esto es una inferencia por categoria de modelo y no un dato confirmado en la model card. La unica referencia a un paper de la ficha, `arxiv:1910.09700`, corresponde a Lacoste et al. (2019) sobre el calculo de emisiones de carbono: es un enlace de la plantilla de Hugging Face y no el articulo del modelo.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No hay evidencia de que este checkpoint supere, iguale o quede por debajo de las
 
 ## Limitaciones y advertencias
 
-- Documentacion practicamente inexistente: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]".
+- Documentacion practicamente inexistente: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]".
 - Licencia no declarada: no se puede determinar si el uso comercial esta permitido. Esto bloquea en la practica cualquier despliegue en producto.
 - Sin validacion publica: 0 descargas y 0 likes, sin benchmarks ni evaluacion independiente.
 - Sesgos desconocidos: no se documenta la composicion del corpus de entrenamiento, por lo que no se pueden analizar sesgos de dominio, geograficos o de genero.
@@ -104,7 +104,7 @@ No hay evidencia de que este checkpoint supere, iguale o quede por debajo de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/athulvinod/legallens-inlegalbert-cuad
+- Modelo en Hugging Face: https://huggingface.co/athulvinod/legallens-inlegalbert-cuad
 - Referencia citada en la plantilla de la model card (emisiones de carbono del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, repositorios, demos ni blogs asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo (contenido meteorologico de meteociel.fr) y se descartan como fuentes.

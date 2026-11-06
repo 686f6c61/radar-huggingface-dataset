@@ -67,7 +67,7 @@ No disponible. El repositorio es un archivo de experimentos, no un modelo compar
 
 ## Enlaces
 
-- [Repositorio de HuggingFace: jbduran/bart-experiments](https://huggingface.co/jbduran/bart-experiments)
+- [Repositorio de Hugging Face: jbduran/bart-experiments](https://huggingface.co/jbduran/bart-experiments)
 - [Modelo final: jbduran/bart](https://huggingface.co/jbduran/bart)
 - [Modelo con SFT: jbduran/bart-sft](https://huggingface.co/jbduran/bart-sft)
 - [Dataset v3: jbduran/bart-dataset-v3](https://huggingface.co/datasets/jbduran/bart-dataset-v3)

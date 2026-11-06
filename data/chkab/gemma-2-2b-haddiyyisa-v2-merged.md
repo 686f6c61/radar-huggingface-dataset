@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `chkab/gemma-2-2b-haddiyyisa-v2-merged` es un ajuste fino (fine-tune) del modelo Gemma 2 2B Instruct de Google, publicado por el usuario chkab en HuggingFace. Se trata de una version fusionada ("merged"), lo que indica que un adaptador entrenado mediante LoRA se ha combinado con los pesos del modelo base para producir un checkpoint autonomo y listo para inferencia. El modelo base utilizado es `unsloth/gemma-2-2b-it-bnb-4bit`, la version de Gemma 2 2B Instruct cuantizada a 4 bits que distribuye Unsloth para entrenamiento eficiente.
+El modelo `chkab/gemma-2-2b-haddiyyisa-v2-merged` es un ajuste fino (fine-tune) del modelo Gemma 2 2B Instruct de Google, publicado por el usuario chkab en Hugging Face. Se trata de una version fusionada ("merged"), lo que indica que un adaptador entrenado mediante LoRA se ha combinado con los pesos del modelo base para producir un checkpoint autonomo y listo para inferencia. El modelo base utilizado es `unsloth/gemma-2-2b-it-bnb-4bit`, la version de Gemma 2 2B Instruct cuantizada a 4 bits que distribuye Unsloth para entrenamiento eficiente.
 
 El modelo resuelve el caso de uso de generacion de texto conversacional en ingles sobre una arquitectura Gemma 2 de aproximadamente 2.614 millones de parametros. Su relevancia practica radica en que es un modelo pequeno, desplegable en hardware de consumo, y que puede servir como punto de partida para tareas especificas tras el ajuste fino. No obstante, la informacion publicada por el autor es minima: no se documentan el dataset de entrenamiento, los hiperparametros, la finalidad concreta del ajuste ni resultados de evaluacion, y el repositorio registra cero descargas y cero "likes" en la fecha de consulta.
 
@@ -23,7 +23,7 @@ Al estar construido sobre Gemma 2, hereda la arquitectura transformer decoder de
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de Gemma 2 2B, un transformer decoder con atencion por ventana deslizante intercalada (sliding window attention de 4096 tokens) y atencion global alterna, disenado originalmente por Google DeepMind. El modelo base declarado, `unsloth/gemma-2-2b-it-bnb-4bit`, es la variante Instruct ya afinada por instrucciones y cuantizada a 4 bits. Este repositorio corresponde al resultado de un ajuste fino adicional con Unsloth y la libreria TRL de HuggingFace, que el autor indica que se entreno "2x mas rapido" gracias a la optimizacion de Unsloth. El sufijo "merged" en el nombre confirma que los pesos del adaptador LoRA se han fusionado en el modelo base.
+La arquitectura subyacente es la de Gemma 2 2B, un transformer decoder con atencion por ventana deslizante intercalada (sliding window attention de 4096 tokens) y atencion global alterna, disenado originalmente por Google DeepMind. El modelo base declarado, `unsloth/gemma-2-2b-it-bnb-4bit`, es la variante Instruct ya afinada por instrucciones y cuantizada a 4 bits. Este repositorio corresponde al resultado de un ajuste fino adicional con Unsloth y la libreria TRL de Hugging Face, que el autor indica que se entreno "2x mas rapido" gracias a la optimizacion de Unsloth. El sufijo "merged" en el nombre confirma que los pesos del adaptador LoRA se han fusionado en el modelo base.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO u otros metodos de alineamiento posteriores, ni sobre innovaciones tecnicas especificas introducidas en este ajuste. La model card no documenta hiperparametros, duracion del entrenamiento ni la tarea objetivo del fine-tune. Toda la informacion tecnica disponible se limita a la procedencia (base Gemma 2 2B Instruct) y a la herramienta de entrenamiento (Unsloth + TRL).
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento con estas alternativas no esta disponible, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chkab/gemma-2-2b-haddiyyisa-v2-merged
+- Modelo en Hugging Face: https://huggingface.co/chkab/gemma-2-2b-haddiyyisa-v2-merged
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo base original de Google: https://huggingface.co/google/gemma-2-2b-it

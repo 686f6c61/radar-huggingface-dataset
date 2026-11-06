@@ -102,7 +102,7 @@ Los datos de los modelos de referencia distintos del objeto de la ficha proceden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3 (incluida en el repositorio como `LICENSE` y `USE_POLICY.md`): https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct/blob/main/LICENSE
 - Paper de SVD-LLM: no disponible en la información proporcionada

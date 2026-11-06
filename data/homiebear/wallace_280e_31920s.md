@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Homiebear/Wallace_280e_31920s es un repositorio de modelo publicado en HuggingFace por el usuario Homiebear bajo licencia OpenRAIL. La informacion publica disponible es minima: no se declara pipeline de inferencia, idiomas soportados, arquitectura ni tamano de parametros. El unico dato objetivo relevante es el tamano del repositorio, 0,7 GB, y la licencia OpenRAIL en los metadatos y en la model card.
+Homiebear/Wallace_280e_31920s es un repositorio de modelo publicado en Hugging Face por el usuario Homiebear bajo licencia OpenRAIL. La informacion publica disponible es minima: no se declara pipeline de inferencia, idiomas soportados, arquitectura ni tamano de parametros. El unico dato objetivo relevante es el tamano del repositorio, 0,7 GB, y la licencia OpenRAIL en los metadatos y en la model card.
 
 La model card se limita a repetir la etiqueta `license: openrail`, sin documentacion tecnica, ejemplos de uso, datos de entrenamiento ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad. La fecha de creacion registrada en los metadatos (2026-10-11) es posterior a la fecha de consulta habitual de este tipo de fichas, lo que constituye una anomalia que conviene verificar antes de dar por buenos los metadatos.
 
@@ -82,7 +82,7 @@ No es posible identificar modelos comparables porque se desconocen la arquitectu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Homiebear/Wallace_280e_31920s
+- Hugging Face: https://huggingface.co/Homiebear/Wallace_280e_31920s
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

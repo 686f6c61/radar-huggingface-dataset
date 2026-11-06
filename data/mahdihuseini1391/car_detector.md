@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mahdihuseini1391/car_detector` es un repositorio alojado en HuggingFace que, por su nombre, parece orientado a la detección o reconocimiento de vehículos en imágenes. Sin embargo, la información publicada es extremadamente limitada: no dispone de model card más allá del frontmatter, no se indican arquitectura, parámetros, ni datos de entrenamiento. El autor es `mahdihuseini1391` y la licencia declarada es `llama4`, lo que resulta inusual para un modelo de visión, aunque podría tratarse de un error de etiquetado.
+El modelo `mahdihuseini1391/car_detector` es un repositorio alojado en Hugging Face que, por su nombre, parece orientado a la detección o reconocimiento de vehículos en imágenes. Sin embargo, la información publicada es extremadamente limitada: no dispone de model card más allá del frontmatter, no se indican arquitectura, parámetros, ni datos de entrenamiento. El autor es `mahdihuseini1391` y la licencia declarada es `llama4`, lo que resulta inusual para un modelo de visión, aunque podría tratarse de un error de etiquetado.
 
 El modelo tiene cero descargas y cero likes, lo que sugiere que es un proyecto reciente o sin difusión. No se han encontrado resultados de búsqueda web que vinculen directamente este repositorio con documentación técnica o demos. Por tanto, cualquier evaluación objetiva de sus capacidades es imposible con los datos disponibles. Esta ficha se limita a reflejar la información pública existente y a advertir de la ausencia de datos verificables.
 
@@ -53,5 +53,5 @@ No disponible. No se ha encontrado información que permita comparar este modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mahdihuseini1391/car_detector
+- Repositorio en Hugging Face: https://huggingface.co/mahdihuseini1391/car_detector
 - No se han encontrado otros enlaces oficiales (papers, blogs, repositorios de código, demos) relacionados con este modelo concreto. Los resultados de búsqueda web sobre detectores de coches corresponden a proyectos distintos y no deben asociarse a este repositorio sin confirmación.

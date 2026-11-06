@@ -97,14 +97,14 @@ Decodificación agregada (400 tokens de salida por petición): 84 tok/s en prosa
 
 | Modelo | Parámetros | Contexto | Fidelidad KL vs. oficial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (EXL3 3,84 bpw, abliterated) | 136.869.563.730 | 1.048.576 | 0,0784 | MIT | HuggingFace, ExLlamaV3 |
-| Cuantización 3,5 bpw sin editar (LakyFx) | no disponible | no disponible | 0,0872 | no disponible | HuggingFace |
-| Cuantización 3,5 bpw con edición mrfakename | no disponible | no disponible | 0,0937 | no disponible | HuggingFace |
-| Cuantización 3,5 bpw con edición heretic | no disponible | no disponible | 0,1002 | no disponible | HuggingFace |
-| Overlay Keys sobre 3,84 bpw | no disponible | no disponible | 0,1111 | no disponible | HuggingFace |
-| Overlay Keys sobre LakyFx 3,5 bpw | no disponible | no disponible | 0,1225 | no disponible | HuggingFace |
-| Keys K5 de Mia sobre LakyFx 3,5 bpw | no disponible | no disponible | 0,1234 | no disponible | HuggingFace |
-| Overlay Keys sobre LibertAIDAI 3,5 bpw | no disponible | no disponible | 0,1268 | no disponible | HuggingFace |
+| Este modelo (EXL3 3,84 bpw, abliterated) | 136.869.563.730 | 1.048.576 | 0,0784 | MIT | Hugging Face, ExLlamaV3 |
+| Cuantización 3,5 bpw sin editar (LakyFx) | no disponible | no disponible | 0,0872 | no disponible | Hugging Face |
+| Cuantización 3,5 bpw con edición mrfakename | no disponible | no disponible | 0,0937 | no disponible | Hugging Face |
+| Cuantización 3,5 bpw con edición heretic | no disponible | no disponible | 0,1002 | no disponible | Hugging Face |
+| Overlay Keys sobre 3,84 bpw | no disponible | no disponible | 0,1111 | no disponible | Hugging Face |
+| Overlay Keys sobre LakyFx 3,5 bpw | no disponible | no disponible | 0,1225 | no disponible | Hugging Face |
+| Keys K5 de Mia sobre LakyFx 3,5 bpw | no disponible | no disponible | 0,1234 | no disponible | Hugging Face |
+| Overlay Keys sobre LibertAIDAI 3,5 bpw | no disponible | no disponible | 0,1268 | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de calidad para las variantes comparadas, solo de fidelidad KL. No se han identificado en la información proporcionada modelos de otras familias comparables en tamaño y contexto.
 
@@ -122,7 +122,7 @@ No se dispone de datos de benchmarks de calidad para las variantes comparadas, s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChimeraWerks/DeepSeek-V4.1-Flash-1017-EXL3-3.84bpw-abliterated
+- Hugging Face: https://huggingface.co/ChimeraWerks/DeepSeek-V4.1-Flash-1017-EXL3-3.84bpw-abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Repositorio de serving y benchmarks: https://github.com/ChimeraWerks/DeepSeek-V4.1-Flash-1017-3x-DGX-Spark-TP3-TensorFold-abliterated
 - Benchmarks detallados: https://github.com/ChimeraWerks/DeepSeek-V4.1-Flash-1017-3x-DGX-Spark-TP3-TensorFold-abliterated/blob/main/benchmarks/README.md

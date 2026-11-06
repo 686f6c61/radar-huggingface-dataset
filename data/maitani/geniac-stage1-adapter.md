@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Maitani/geniac-stage1-adapter es un adaptador LoRA publicado en HuggingFace mediante la librería PEFT y entrenado con SFT (supervised fine-tuning) usando TRL y Unsloth. No es un modelo autónomo: los pesos distribuidos corresponden únicamente al adaptador (repositorio de 0,5 GB), que debe aplicarse sobre el modelo base unsloth/Qwen3-4B-Base-unsloth-bnb-4bit, una versión cuantizada en 4 bits del Qwen3-4B-Base de Alibaba Qwen, un transformer decoder-only de aproximadamente 4 000 millones de parámetros.
+Maitani/geniac-stage1-adapter es un adaptador LoRA publicado en Hugging Face mediante la librería PEFT y entrenado con SFT (supervised fine-tuning) usando TRL y Unsloth. No es un modelo autónomo: los pesos distribuidos corresponden únicamente al adaptador (repositorio de 0,5 GB), que debe aplicarse sobre el modelo base unsloth/Qwen3-4B-Base-unsloth-bnb-4bit, una versión cuantizada en 4 bits del Qwen3-4B-Base de Alibaba Qwen, un transformer decoder-only de aproximadamente 4 000 millones de parámetros.
 
-El interés del recurso es acotado y experimental. Por un lado, demuestra un flujo de trabajo estándar y de bajo coste para adaptar un modelo de 4B en una GPU de gama media (Unsloth + TRL + PEFT). Por otro, la model card es la plantilla por defecto de HuggingFace sin rellenar: no declara licencia, idiomas, dataset, hiperparámetros de entrenamiento ni evaluación. A fecha de actualización (16 de octubre de 2026) acumula 28 descargas y 0 likes, y el tag `arxiv:1910.09700` apunta al artículo del calculador de impacto de carbono citado en la propia plantilla, no a un paper del modelo.
+El interés del recurso es acotado y experimental. Por un lado, demuestra un flujo de trabajo estándar y de bajo coste para adaptar un modelo de 4B en una GPU de gama media (Unsloth + TRL + PEFT). Por otro, la model card es la plantilla por defecto de Hugging Face sin rellenar: no declara licencia, idiomas, dataset, hiperparámetros de entrenamiento ni evaluación. A fecha de actualización (16 de octubre de 2026) acumula 28 descargas y 0 likes, y el tag `arxiv:1910.09700` apunta al artículo del calculador de impacto de carbono citado en la propia plantilla, no a un paper del modelo.
 
 En consecuencia, esta ficha documenta lo que se puede verificar (identificadores, base, framework, tamaño de repositorio) y marca explícitamente como "no disponible" todo lo que el autor no ha publicado, incluida cualquier afirmación de calidad o rendimiento.
 
@@ -78,7 +78,7 @@ Los valores de los modelos comparativos proceden de sus fichas públicas; los de
 | Maitani/geniac-stage1-adapter | Adaptador LoRA con SFT sobre Qwen3-4B-Base | No disponible (base de ~4B) | No disponible | No disponible | 28 descargas, 0 likes, sin benchmarks |
 | Qwen3-4B-Base | Modelo base preentrenado | ~4B | 32 768 tokens nativos según su ficha oficial | Apache 2.0 | Requiere ajuste para seguir instrucciones; es el punto de partida del adaptador |
 | Qwen3-4B-Instruct-2507 | Modelo ajustado para instrucciones | ~4B | Consultar ficha oficial de Qwen | Apache 2.0 | Alternativa lista para uso conversacional, sin entrenamiento adicional |
-| Otros adaptadores LoRA sobre Qwen3-4B en HuggingFace | Adaptadores PEFT | No aplica | Heredado del base | Variable según autor | No se dispone de una comparativa publicada con este adaptador concreto |
+| Otros adaptadores LoRA sobre Qwen3-4B en Hugging Face | Adaptadores PEFT | No aplica | Heredado del base | Variable según autor | No se dispone de una comparativa publicada con este adaptador concreto |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ Los valores de los modelos comparativos proceden de sus fichas públicas; los de
 - Entrenamiento sobre base cuantizada en 4 bits: es un enfoque eficiente en memoria, pero puede introducir diferencias de calidad frente a un entrenamiento en bf16. No hay métricas que lo cuantifiquen.
 - Validación comunitaria nula: 28 descargas y 0 likes, sin discusiones ni incidencias reportadas. No hay señales externas de calidad o estabilidad.
 - Artefacto dependiente del ecosistema: requiere PEFT 0.21.1 o compatible, Transformers, TRL y, para reproducir el entrenamiento, Unsloth. La compatibilidad futura con versiones mayores no está garantizada.
-- El tag `arxiv:1910.09700` no es una referencia al modelo: corresponde al artículo sobre estimación de emisiones de carbono citado en la plantilla de model card de HuggingFace.
+- El tag `arxiv:1910.09700` no es una referencia al modelo: corresponde al artículo sobre estimación de emisiones de carbono citado en la plantilla de model card de Hugging Face.
 
 ## Enlaces
 

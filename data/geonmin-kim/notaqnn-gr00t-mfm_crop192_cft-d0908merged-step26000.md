@@ -113,7 +113,7 @@ No hay datos de benchmarks ni especificaciones de alternativas en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step26000
+- Repositorio Hugging Face: https://huggingface.co/geonmin-kim/notaqnn-GR00T-Mfm_crop192_cft-D0908merged-step26000
 - Checkpoint de origen: https://huggingface.co/geonmin-kim/GR00T-Mfm_crop192_cft-D0908merged-step26000
 - Revisión del checkpoint de origen: `677d49599c894ead172dc3e5fdc5d46a3a022c60`
 - Dataset del golden: https://huggingface.co/datasets/geonmin-kim/SO101-lv4-3color-cube-mat-to-mat-release-3regions-0908-merged

@@ -65,7 +65,7 @@ No disponible. No existe una categoria de modelos comparables porque este reposi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/store-lmstudio-metadata-mismatch
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/store-lmstudio-metadata-mismatch
 - Documentacion de LM Studio: https://lmstudio.ai/docs
 - Guia de gestion de modelos de LM Studio (DeepWiki): https://deepwiki.com/lmstudio-ai/docs/4.4-model-management-and-configuration
 - Guia de solucion de errores de carga en LM Studio: https://markaicode.com/errors/lm-studio-model-load-failed-fix/

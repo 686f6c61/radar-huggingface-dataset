@@ -6,7 +6,7 @@ Qwen3.8-27B-OBLITERATED es una variante "abliterated" del modelo Qwen/Qwen3.8-27
 
 La relevancia del modelo es acotada y muy especifica: esta pensado para red-teaming, investigacion en seguridad de IA y flujos de trabajo donde se necesita que el modelo responda sin filtros (por ejemplo, generacion de codigo de explotacion en entornos controlados). No es un modelo de proposito general mejorado: el propio autor documenta una perdida de 2,1 puntos porcentuales en MMLU respecto al modelo base (82,3% frente a 84,5%).
 
-La ficha se basa exclusivamente en la informacion proporcionada por HuggingFace y en la model card del autor, que aparece truncada en la tabla de resultados de MMLU. Los resultados de la busqueda web realizada no contienen ningun enlace relevante sobre este modelo: las entradas devueltas tratan sobre WhatsApp y grabacion de llamadas en telefonos Xiaomi, por lo que no se han utilizado.
+La ficha se basa exclusivamente en la informacion proporcionada por Hugging Face y en la model card del autor, que aparece truncada en la tabla de resultados de MMLU. Los resultados de la busqueda web realizada no contienen ningun enlace relevante sobre este modelo: las entradas devueltas tratan sobre WhatsApp y grabacion de llamadas en telefonos Xiaomi, por lo que no se han utilizado.
 
 ## Especificaciones tecnicas
 
@@ -114,6 +114,6 @@ Comparativa con alternativas de otras familias: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minte1431/Qwen3.8-27B-OBLITERATED
+- Repositorio Hugging Face: https://huggingface.co/minte1431/Qwen3.8-27B-OBLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo (los resultados obtenidos trataban sobre WhatsApp y grabacion de llamadas en Xiaomi y no se han utilizado).

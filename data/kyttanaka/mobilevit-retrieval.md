@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kyttanaka/mobilevit-retrieval es un repositorio de HuggingFace publicado por el usuario Kyttanaka que contiene una implementación propia y reducida de la arquitectura MobileViT orientada a tareas de *retrieval* (recuperación de información, presumiblemente multimodal imagen-texto). No se trata de un modelo entrenado ni de un *release* con pesos listos para producción: la propia model card lo describe como un punto de partida reproducible con un *checkpoint* de inicialización válido únicamente para *smoke tests*. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos en formato safetensors.
+Kyttanaka/mobilevit-retrieval es un repositorio de Hugging Face publicado por el usuario Kyttanaka que contiene una implementación propia y reducida de la arquitectura MobileViT orientada a tareas de *retrieval* (recuperación de información, presumiblemente multimodal imagen-texto). No se trata de un modelo entrenado ni de un *release* con pesos listos para producción: la propia model card lo describe como un punto de partida reproducible con un *checkpoint* de inicialización válido únicamente para *smoke tests*. El repositorio incluye el código (`main.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos en formato safetensors.
 
 La arquitectura declarada es MobileViT, una familia híbrida que combina bloques convolucionales de tipo MobileNet con bloques de atención tipo transformer. La configuración incluida usa atención estándar, fusión *tucker*, activación aproximada de GELU y normalización RMSNorm, con escala "small". Los metadatos de safetensors indican 16.576 parámetros totales, una cifra muy inferior a la de las variantes publicadas de MobileViT, lo que refuerza la idea de que se trata de un esqueleto de arquitectura y no de un modelo con capacidad representacional suficiente para recuperación real.
 
@@ -84,11 +84,11 @@ La diferencia fundamental no es de tamaño de contexto ni de licencia, sino de e
 - Restricciones de licencia: la licencia es MIT, permisiva para uso comercial. El autor advierte que los términos de los datos de origen deben revisarse por separado si el repositorio se usa con conjuntos de datos externos.
 - Ausencia de métricas: no hay ningún benchmark que permita estimar calidad de recuperación, ni siquiera preliminar. Cualquier afirmación de rendimiento sería infundada.
 - Escala insuficiente: con 16.576 parámetros, el *checkpoint* está muy por debajo de lo que requiere una tarea de recuperación realista; se debe tratar como una plantilla estructural, no como una base funcional.
-- Repositorio sin tracción: 0 descargas y 0 *likes*, sin *pipeline* declarado en HuggingFace, por lo que no existe validación comunitaria alguna.
+- Repositorio sin tracción: 0 descargas y 0 *likes*, sin *pipeline* declarado en Hugging Face, por lo que no existe validación comunitaria alguna.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kyttanaka/mobilevit-retrieval
+- Repositorio Hugging Face: https://huggingface.co/Kyttanaka/mobilevit-retrieval
 - Archivos del repositorio: https://huggingface.co/Kyttanaka/mobilevit-retrieval/tree/main
 - Referencia de la arquitectura (no enlazada en la model card, incluida como contexto del modelo base MobileViT): https://arxiv.org/abs/2110.02178
 

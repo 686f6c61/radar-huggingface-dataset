@@ -86,8 +86,8 @@ En prefill, con límite de batch elevado a 4.096, un prefijo WikiText en frío d
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este pack (Nanbeige4.3-33B EXL3 2,5 bpw) | 33,12B lógicos; 7,2B elementos almacenados | 524.288 posiciones nominales; 16.384 probadas | Safetensors EXL3, 14,40 GB | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Nanbeige4.3-33B (checkpoint original) | 33,12B | 524.288 posiciones | Safetensors BF16 | Apache 2.0 | HuggingFace |
+| Este pack (Nanbeige4.3-33B EXL3 2,5 bpw) | 33,12B lógicos; 7,2B elementos almacenados | 524.288 posiciones nominales; 16.384 probadas | Safetensors EXL3, 14,40 GB | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Nanbeige4.3-33B (checkpoint original) | 33,12B | 524.288 posiciones | Safetensors BF16 | Apache 2.0 | Hugging Face |
 | Otras alternativas densas de ~32B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han proporcionado especificaciones ni resultados de benchmarks de otros modelos comparables, por lo que no es posible establecer una comparación de rendimiento frente a alternativas de la misma categoría.
@@ -107,7 +107,7 @@ No se han proporcionado especificaciones ni resultados de benchmarks de otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace de este pack: https://huggingface.co/lxe/Nanbeige4.3-33B-EXL3-2.5bpw
+- Repositorio Hugging Face de este pack: https://huggingface.co/lxe/Nanbeige4.3-33B-EXL3-2.5bpw
 - Modelo base Nanbeige4.3-33B: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Commit del checkpoint de origen citado en la model card: `c1093c501cc6460427c0ac634db7223d0450c0ee`
 - Auditoría de parámetros lógicos: `benchmarks/exl3-logical-parameter-audit.json`

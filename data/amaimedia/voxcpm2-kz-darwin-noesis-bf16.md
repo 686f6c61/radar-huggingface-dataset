@@ -30,7 +30,7 @@ El entrenamiento consistió en la fusión de un adaptador LoRA de rango 32 (esca
 - Síntesis de voz en kazajo (idioma principal) y ruso (secundario).
 - Generación de audio de alta calidad a 48 kHz de frecuencia de muestreo.
 - Inferencia sin carga de adaptadores externos, gracias a la fusión LoRA permanente.
-- Compatible con el pipeline `text-to-speech` de HuggingFace.
+- Compatible con el pipeline `text-to-speech` de Hugging Face.
 - Integración con el ecosistema VoxCPM2 para procesamiento de voz.
 - Adecuado para tareas de doblaje y generación de contenido hablado multilingüe.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: los pesos en BF16 ocupan aproximadamente 4,6 GB (2,29B parámetros × 2 bytes). Con overhead de inferencia (activaciones, cache, etc.), se recomienda al menos 8 GB de VRAM para inferencia básica.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4090, A100 40 GB o superiores para producción con mayor throughput.
 - En consumer GPU: sí, cabe en GPUs con 12 GB o más, como RTX 3060, RTX 4070, etc.
-- Opciones de despliegue: al ser un modelo basado en VoxCPM2, se puede servir con frameworks compatibles con safetensors y pipelines de HuggingFace (Transformers, TTS). No se menciona soporte explícito para vLLM, llama.cpp u Ollama, que están orientados a LLMs.
+- Opciones de despliegue: al ser un modelo basado en VoxCPM2, se puede servir con frameworks compatibles con safetensors y pipelines de Hugging Face (Transformers, TTS). No se menciona soporte explícito para vLLM, llama.cpp u Ollama, que están orientados a LLMs.
 - Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de datos comparativos con modelos TTS similares en la información
 
 ## Enlaces
 
-- [HuggingFace - VoxCPM2-KZ-Darwin-NOESIS-BF16](https://huggingface.co/AMAImedia/VoxCPM2-KZ-Darwin-NOESIS-BF16)
+- [Hugging Face - VoxCPM2-KZ-Darwin-NOESIS-BF16](https://huggingface.co/AMAImedia/VoxCPM2-KZ-Darwin-NOESIS-BF16)
 - [AMAImedia.com](https://www.amaimedia.com)
 - [Perfil de X de AMAImedia](https://x.com/AMAImediacom)
 - [LinkedIn de Ilia Bolotnikov](https://www.linkedin.com/in/ilia-bolotnikov)

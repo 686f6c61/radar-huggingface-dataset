@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: con 35.107 millones de parametros en precision FP16, el modelo requiere aproximadamente 70 GB de VRAM solo para los pesos. En cuantizacion INT8 se reduciria a unos 35 GB, y en INT4 a unos 18 GB, pero no se ha confirmado la disponibilidad de versiones cuantizadas.
 - GPU recomendadas: para inferencia en FP16 se necesitarian GPUs de data center como A100 (80 GB) o H100 (80 GB). En configuracion multi-GPU, dos RTX 4090 (24 GB cada una) podrian ser suficientes con tensor parallelism. Para cuantizacion INT4, una sola RTX 4090 (24 GB) podria ser viable.
 - Compatibilidad con consumer GPU: solo con cuantizacion agresiva (INT4) y posiblemente con offloading a CPU. No es practico en consumer GPU sin cuantizar.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference) o llama.cpp (si se generan pesos GGUF). Al ser un modelo transformers, es compatible con el ecosistema HuggingFace.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference) o llama.cpp (si se generan pesos GGUF). Al ser un modelo transformers, es compatible con el ecosistema Hugging Face.
 - Latencia y throughput: no disponibles. En arquitecturas MoE, la latencia depende del numero de parametros activos, que no se ha especificado.
 
 ## Comparativa con modelos similares

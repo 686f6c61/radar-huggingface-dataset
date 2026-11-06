@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kireeti3901/gemma4-e4b-v3-multilingual-audit-run2` es un checkpoint publicado en HuggingFace por el usuario Kireeti3901, etiquetado con la librería `transformers` y la herramienta `unsloth`. El nombre sugiere una posible relación con la familia Gemma de Google (gemma4) y un tamaño aproximado de 4 mil millones de parámetros (e4b), así como un enfoque multilingüe y una fase de "auditoría" (audit-run2). Sin embargo, la model card es una plantilla automática sin información sustancial: no se especifican autor, licencia, idiomas, arquitectura, datos de entrenamiento ni procedencia del modelo.
+El modelo `Kireeti3901/gemma4-e4b-v3-multilingual-audit-run2` es un checkpoint publicado en Hugging Face por el usuario Kireeti3901, etiquetado con la librería `transformers` y la herramienta `unsloth`. El nombre sugiere una posible relación con la familia Gemma de Google (gemma4) y un tamaño aproximado de 4 mil millones de parámetros (e4b), así como un enfoque multilingüe y una fase de "auditoría" (audit-run2). Sin embargo, la model card es una plantilla automática sin información sustancial: no se especifican autor, licencia, idiomas, arquitectura, datos de entrenamiento ni procedencia del modelo.
 
 El repositorio ocupa solo 0,1 GB, lo que resulta inusualmente pequeño para un modelo de 4B en formato `safetensors`; podría tratarse de un adaptador LoRA, una cuantización extrema o un modelo muy reducido, pero no hay datos que lo confirmen. La ausencia de descargas y de interacciones sugiere que es un experimento personal o un artefacto de prueba. Dado el estado incompleto de la documentación, cualquier uso en producción debe considerarse de alto riesgo y requeriría una verificación exhaustiva previa.
 
@@ -60,5 +60,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - Kireeti3901/gemma4-e4b-v3-multilingual-audit-run2](https://huggingface.co/Kireeti3901/gemma4-e4b-v3-multilingual-audit-run2)
+- [Hugging Face - Kireeti3901/gemma4-e4b-v3-multilingual-audit-run2](https://huggingface.co/Kireeti3901/gemma4-e4b-v3-multilingual-audit-run2)
 - [Paper de Lacoste et al. (2019) sobre impacto ambiental (referencia en tags)](https://arxiv.org/abs/1910.09700)

@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Modelo base | Dataset de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1 | LoRA de síntesis de vistas noveles | MiniMax-H3, rama ref2va | 719 escenas Blender | MiniMax H3 Community License | Pública en HuggingFace, 152 descargas |
-| Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2 | LoRA de síntesis de vistas noveles | LTX 2.3 de 22B | 719 escenas Blender (mismo dataset) | no disponible | Pública en HuggingFace |
-| fal/MiniMax-H3-Realism-People-LoRA | LoRA de estilizado de realismo | MiniMax-H3 | no disponible | no disponible | Pública en HuggingFace |
+| Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1 | LoRA de síntesis de vistas noveles | MiniMax-H3, rama ref2va | 719 escenas Blender | MiniMax H3 Community License | Pública en Hugging Face, 152 descargas |
+| Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2 | LoRA de síntesis de vistas noveles | LTX 2.3 de 22B | 719 escenas Blender (mismo dataset) | no disponible | Pública en Hugging Face |
+| fal/MiniMax-H3-Realism-People-LoRA | LoRA de estilizado de realismo | MiniMax-H3 | no disponible | no disponible | Pública en Hugging Face |
 
 La comparación cuantitativa de rendimiento entre estas alternativas no es posible con la información disponible: ninguna de las tres publica métricas de benchmarks ni cifras de parámetros del adaptador. La diferencia relevante y verificable es el modelo base sobre el que se monta cada una y el hecho de que las dos variantes CrossView-Warp comparten exactamente el mismo corpus de entrenamiento de 719 escenas Blender, lo que permite una comparación controlada del efecto del modelo base si se dispone de la misma GPU.
 
@@ -97,7 +97,7 @@ La comparación cuantitativa de rendimiento entre estas alternativas no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1
+- Modelo en Hugging Face: https://huggingface.co/Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Perfil del autor: https://huggingface.co/Cseti
 - Versión previa de la técnica para LTX 2.3: https://huggingface.co/Cseti/LTX2.3-22B_IC-LoRA-CrossView-Warp_v2

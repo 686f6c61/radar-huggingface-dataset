@@ -74,7 +74,7 @@ Advertencias del propio autor: la reconstrucción del códec (100% en validació
 
 | Modelo | Parámetros | Contexto / condicionamiento | Precisión en Sudoku (fácil/medio/difícil) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ncm-mlx-sudoku (E19-funded) | 6,44 M (generador) | Rejilla de pistas de 81 celdas; 12 niveles | 98,10% / 83,40% / 40,30% | MIT | Pesos en HuggingFace, código en GitHub |
+| ncm-mlx-sudoku (E19-funded) | 6,44 M (generador) | Rejilla de pistas de 81 celdas; 12 niveles | 98,10% / 83,40% / 40,30% | MIT | Pesos en Hugging Face, código en GitHub |
 | NCM original (Kumbong et al.) | 25,46 M (generador) | Misma formulación NCM; checkpoints por dificultad | 99,5% / 96,5% / 86,1% | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | ncm-mlx-sudoku (E20, seed 1) | 6,44 M (generador) | Idéntico al E19, distinta semilla | 97,25% / 79,60% / 33,25% | MIT | Incluido en `seed1/` del mismo repo |
 
@@ -95,7 +95,7 @@ No se dispone de datos sobre otras alternativas comparables (por ejemplo, solver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/janmusic/ncm-mlx-sudoku
+- Modelo en Hugging Face: https://huggingface.co/janmusic/ncm-mlx-sudoku
 - Repositorio de la implementación: https://github.com/janmus1c/ncm-mlx
 - Artículo de Next-Concept Modeling: https://arxiv.org/abs/2610.14162
 - Dataset de evaluación NCM: https://huggingface.co/datasets/hazyresearch/ncm-datasets

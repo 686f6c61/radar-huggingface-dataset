@@ -71,7 +71,7 @@ No se dispone de modelos comparables en la informacion proporcionada. No se cono
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/TigreGotico/AKK-60m-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/TigreGotico/AKK-60m-onnx)
 - [Modelo base de Thalesian](https://huggingface.co/Thalesian/AKK-60m)
 - [Libreria linguonnx](https://github.com/TigreGotico/linguonnx)
 - [Repositorio ONNX Models (referencia general)](https://github.com/onnx/models)

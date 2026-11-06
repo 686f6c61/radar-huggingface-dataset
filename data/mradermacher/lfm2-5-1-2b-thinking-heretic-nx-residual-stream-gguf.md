@@ -68,7 +68,7 @@ No se dispone de datos de benchmarks ni comparaciones directas con otros modelos
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Residual-Stream-GGUF
+- Hugging Face (GGUF): https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-Heretic-NX-Residual-Stream-GGUF
 - Modelo base (safetensors): https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Residual-Stream
 - Cuantizaciones i1 (imatrix): https://huggingface.co/mradermacher/LFM2.5-1.2B-Thinking-heretic-i1-GGUF
 - Documentación de LFM2.5-1.2B-Thinking: https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking

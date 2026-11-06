@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `asd21ecxxz12/MyAwesomeModel-TestRepo` es un repositorio publicado en HuggingFace con licencia MIT y etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo subidos. La model card incluida describe un modelo de lenguaje denominado "MyAwesomeModel" con capacidades de razonamiento, generación de código y soporte de function calling, pero estos datos no están respaldados por artefactos reales en el repositorio.
+El modelo `asd21ecxxz12/MyAwesomeModel-TestRepo` es un repositorio publicado en Hugging Face con licencia MIT y etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`. Sin embargo, el repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo subidos. La model card incluida describe un modelo de lenguaje denominado "MyAwesomeModel" con capacidades de razonamiento, generación de código y soporte de function calling, pero estos datos no están respaldados por artefactos reales en el repositorio.
 
 La model card menciona una versión actualizada que mejora el razonamiento profundo, reduce la tasa de alucinaciones y añade soporte para function calling, con resultados de benchmarks en matemáticas, lógica, comprensión lectora y otras tareas. No obstante, al no existir archivos de modelo ni información técnica detallada (arquitectura, número de parámetros, contexto, etc.), la ficha se basa únicamente en lo declarado en la model card, que podría corresponder a otro modelo o ser una plantilla de prueba.
 
@@ -10,18 +10,18 @@ La model card menciona una versión actualizada que mejora el razonamiento profu
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiqueta `bert` en HuggingFace, pero la model card sugiere un modelo de lenguaje generativo) |
+| Arquitectura | No disponible (etiqueta `bert` en Hugging Face, pero la model card sugiere un modelo de lenguaje generativo) |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | No disponibles (campo vacío en HuggingFace) |
+| Idiomas soportados | No disponibles (campo vacío en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | No disponible (repositorio vacío, 0.0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura del modelo. Aunque la etiqueta `bert` en HuggingFace sugiere una arquitectura transformer tipo encoder, la descripción de la model card habla de generación de texto, razonamiento y function calling, lo que apuntaría a un modelo decoder o encoder-decoder. No se especifican datos de entrenamiento (número de tokens, composición del dataset, técnicas de RLHF o DPO). La model card menciona una "actualización significativa" que mejora el razonamiento mediante "recursos computacionales adicionales y optimizaciones algorítmicas en el post-entrenamiento", pero no se dan más detalles.
+La model card no proporciona detalles sobre la arquitectura del modelo. Aunque la etiqueta `bert` en Hugging Face sugiere una arquitectura transformer tipo encoder, la descripción de la model card habla de generación de texto, razonamiento y function calling, lo que apuntaría a un modelo decoder o encoder-decoder. No se especifican datos de entrenamiento (número de tokens, composición del dataset, técnicas de RLHF o DPO). La model card menciona una "actualización significativa" que mejora el razonamiento mediante "recursos computacionales adicionales y optimizaciones algorítmicas en el post-entrenamiento", pero no se dan más detalles.
 
 Dado que el repositorio no contiene pesos ni archivos de configuración, no es posible verificar ninguna de estas afirmaciones.
 
@@ -85,7 +85,7 @@ La model card compara el modelo con otros tres (Model1, Model2, Model1-v2) en lo
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB); no hay pesos, configuraciones ni tokenizadores descargables. Cualquier uso práctico es imposible en el estado actual.
+- El repositorio de Hugging Face está vacío (0.0 GB); no hay pesos, configuraciones ni tokenizadores descargables. Cualquier uso práctico es imposible en el estado actual.
 - La model card contiene afirmaciones sobre rendimiento y capacidades que no pueden verificarse con los artefactos disponibles. Podría tratarse de una plantilla de prueba o de un modelo no publicado.
 - No se proporcionan datos sobre sesgos, alucinaciones reales, limitaciones de idioma o restricciones de uso comercial más allá de la licencia MIT.
 - La etiqueta `feature-extraction` contradice la descripción de la model card, que sugiere un modelo generativo. Esta inconsistencia refuerza la falta de fiabilidad de la información.
@@ -93,6 +93,6 @@ La model card compara el modelo con otros tres (Model1, Model2, Model1-v2) en lo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/asd21ecxxz12/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/asd21ecxxz12/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

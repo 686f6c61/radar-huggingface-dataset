@@ -69,7 +69,7 @@ No se dispone de informacion sobre otros agentes publicados para LunarLander-v3 
 
 | Modelo | Parametros | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-byeon120-v1-lunarlander | 18.564 (estimado) | LunarLander-v3 | 215,6 (10 episodios) | no disponible | HuggingFace |
+| connectailab-rl-byeon120-v1-lunarlander | 18.564 (estimado) | LunarLander-v3 | 215,6 (10 episodios) | no disponible | Hugging Face |
 | Alternativas DQN/PPO para LunarLander-v3 | no disponible | LunarLander-v3 | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros agentes publicados para LunarLander-v3 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/byeon120/connectailab-rl-byeon120-v1-lunarlander
+- Hugging Face: https://huggingface.co/byeon120/connectailab-rl-byeon120-v1-lunarlander
 - Repositorio CONNECT AI LAB: https://github.com/wonseokjung/connect-tycoon
 - Curso AI CITY BUILDERS (refuerzo): https://www.aicitybuilders.com/robot
 - Entorno LunarLander-v3 (Gymnasium): no disponible en la informacion proporcionada

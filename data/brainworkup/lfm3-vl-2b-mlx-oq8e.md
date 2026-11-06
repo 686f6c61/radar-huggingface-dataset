@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-VL-2B-MLX-oQ8e es una cuantización mixta del modelo multimodal LFM3-VL-2B, publicada por el usuario brainworkup en HuggingFace. El checkpoint original pertenece a la familia LFM3 (Liquid Foundation Models) de Liquid AI, e integra un modelo de lenguaje de aproximadamente 1,73 mil millones de parámetros con un codificador visual de unos 189 millones de parámetros, sumando 1.918.181.888 parámetros totales según los safetensors del repositorio.
+LFM3-VL-2B-MLX-oQ8e es una cuantización mixta del modelo multimodal LFM3-VL-2B, publicada por el usuario brainworkup en Hugging Face. El checkpoint original pertenece a la familia LFM3 (Liquid Foundation Models) de Liquid AI, e integra un modelo de lenguaje de aproximadamente 1,73 mil millones de parámetros con un codificador visual de unos 189 millones de parámetros, sumando 1.918.181.888 parámetros totales según los safetensors del repositorio.
 
 Esta versión concreta ha sido cuantizada con la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta: la mayor parte de los pesos (90,1 %) se almacena en affine 8-bit con grupo de 64, mientras que un 9,9 % permanece en BF16. El resultado es un checkpoint con un promedio efectivo de 9,242 bits por peso y un tamaño de 2,064 GiB, lo que facilita su ejecución en hardware Apple Silicon mediante MLX.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B-MLX-oQ8e | ~1,92 B | no disponible | no disponible | safetensors (MLX) | HuggingFace |
+| LFM3-VL-2B-MLX-oQ8e | ~1,92 B | no disponible | no disponible | safetensors (MLX) | Hugging Face |
 | LFM3-VL-2B (original) | ~1,92 B | no disponible | no disponible | no disponible | no disponible en la información |
-| Qwen2-VL-2B | ~2,2 B | 32k (según variante) | Apache 2.0 (variantes) | safetensors, GGUF | HuggingFace |
-| SmolVLM-2B | ~2,2 B | 8k (aprox.) | Apache 2.0 | safetensors | HuggingFace |
+| Qwen2-VL-2B | ~2,2 B | 32k (según variante) | Apache 2.0 (variantes) | safetensors, GGUF | Hugging Face |
+| SmolVLM-2B | ~2,2 B | 8k (aprox.) | Apache 2.0 | safetensors | Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos visión-lenguaje de ~2 B) es limitada porque no se dispone de benchmarks ni licencia del modelo evaluado. Los datos de Qwen2-VL-2B y SmolVLM-2B se incluyen a modo de referencia general y deben verificarse en sus respectivas model cards.
 
@@ -83,7 +83,7 @@ La comparación con alternativas de la misma categoría (modelos visión-lenguaj
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/brainworkup/LFM3-VL-2B-MLX-oQ8e
+- Hugging Face: https://huggingface.co/brainworkup/LFM3-VL-2B-MLX-oQ8e
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Liquid AI (familia LFM): https://www.liquid.ai/

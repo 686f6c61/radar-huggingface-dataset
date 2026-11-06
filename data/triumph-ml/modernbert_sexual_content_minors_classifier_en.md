@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `triumph-ml/modernbert_sexual_content_minors_classifier_en` es un clasificador de texto en ingles desarrollado por el usuario triumph-ml y publicado en HuggingFace. Se construye sobre la arquitectura ModernBERT, un transformer encoder de ultima generacion disenado para tareas de comprension y clasificacion de secuencias, y esta especializado en la deteccion de contenido sexual que involucra a menores. Por su naturaleza, el repositorio esta marcado con la etiqueta `not-for-all-anchored` (en realidad `not-for-all-audiences`), lo que indica que su contenido y caso de uso requieren precaucion.
+El modelo `triumph-ml/modernbert_sexual_content_minors_classifier_en` es un clasificador de texto en ingles desarrollado por el usuario triumph-ml y publicado en Hugging Face. Se construye sobre la arquitectura ModernBERT, un transformer encoder de ultima generacion disenado para tareas de comprension y clasificacion de secuencias, y esta especializado en la deteccion de contenido sexual que involucra a menores. Por su naturaleza, el repositorio esta marcado con la etiqueta `not-for-all-anchored` (en realidad `not-for-all-audiences`), lo que indica que su contenido y caso de uso requieren precaucion.
 
 Con aproximadamente 149,6 millones de parametros, el modelo se situa en el rango de los encoders de tamano medio, lo que lo hace viable para despliegue en infraestructura moderada. Su funcion principal es la moderacion de contenido y la seguridad infantil en plataformas digitales, un ambito donde la deteccion automatica fiable es critica tanto por motivos legales como eticos.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| triumph-ml/modernbert_sexual_content_minors_classifier_en | 149,6 M | no disponible | Clasificacion de contenido sexual con menores | no disponible | HuggingFace |
-| ModernBERT-base (AnswerDotAI) | ~149 M | 8192 tokens | Encoder generalista | Apache 2.0 | HuggingFace |
-| BERT-base-uncased | 110 M | 512 tokens | Encoder generalista | Apache 2.0 | HuggingFace |
-| DistilBERT-base | 66 M | 512 tokens | Encoder generalista | Apache 2.0 | HuggingFace |
+| triumph-ml/modernbert_sexual_content_minors_classifier_en | 149,6 M | no disponible | Clasificacion de contenido sexual con menores | no disponible | Hugging Face |
+| ModernBERT-base (AnswerDotAI) | ~149 M | 8192 tokens | Encoder generalista | Apache 2.0 | Hugging Face |
+| BERT-base-uncased | 110 M | 512 tokens | Encoder generalista | Apache 2.0 | Hugging Face |
+| DistilBERT-base | 66 M | 512 tokens | Encoder generalista | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a encoders de tamano similar, ya que no se dispone de informacion sobre clasificadores especializados equivalentes en la documentacion proporcionada. ModernBERT-base ofrece contexto de 8192 tokens y licencia Apache 2.0, ventajas que este checkpoint no documenta.
 
@@ -83,6 +83,6 @@ La comparativa se limita a encoders de tamano similar, ya que no se dispone de i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/triumph-ml/modernbert_sexual_content_minors_classifier_en
+- Hugging Face: https://huggingface.co/triumph-ml/modernbert_sexual_content_minors_classifier_en
 - Paper de ModernBERT (referencia de arquitectura): https://arxiv.org/abs/2412.13663
 - Repositorio oficial de ModernBERT: https://github.com/AnswerDotAI/ModernBERT

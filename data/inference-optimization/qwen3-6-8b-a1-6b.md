@@ -77,5 +77,5 @@ La comparación con otras alternativas de la misma categoría no está disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inference-optimization/Qwen3.6-8B-A1.6B
+- Hugging Face: https://huggingface.co/inference-optimization/Qwen3.6-8B-A1.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

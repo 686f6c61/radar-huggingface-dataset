@@ -76,6 +76,6 @@ No disponible. Este repositorio no es un modelo de IA y no tiene equivalentes di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/momentarek1/Python_Assignment
+- Repositorio en Hugging Face: https://huggingface.co/momentarek1/Python_Assignment
 - Model AI Assignments (repositorio de ejercicios de IA revisados por pares): http://modelai.gettysburg.edu/
 - Tutorial de IA con Python en GeeksforGeeks: https://www.geeksforgeeks.org/artificial-intelligence/python-ai/

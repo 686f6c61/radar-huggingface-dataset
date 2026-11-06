@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `acquisition_student_AS_deita_combine_WGM_MP_llama8b_conf_5000` es un checkpoint de 8.030.261.248 parametros publicado en HuggingFace por el usuario `sstoica12` bajo la libreria `transformers`. Por el nombre del repositorio y la etiqueta `llama`, se trata de un modelo derivado de la familia Llama 8B, presumiblemente un "student" (alumno) destilado o ajustado a partir de un "teacher" mayor, con un proceso de entrenamiento que el autor identifica mediante los acronimos `AS`, `deita`, `combine`, `WGM`, `MP` y `conf_5000`. La model card es la plantilla autogenerada por HuggingFace y no aporta informacion sustantiva sobre el desarrollo, los datos o la evaluacion.
+El modelo `acquisition_student_AS_deita_combine_WGM_MP_llama8b_conf_5000` es un checkpoint de 8.030.261.248 parametros publicado en Hugging Face por el usuario `sstoica12` bajo la libreria `transformers`. Por el nombre del repositorio y la etiqueta `llama`, se trata de un modelo derivado de la familia Llama 8B, presumiblemente un "student" (alumno) destilado o ajustado a partir de un "teacher" mayor, con un proceso de entrenamiento que el autor identifica mediante los acronimos `AS`, `deita`, `combine`, `WGM`, `MP` y `conf_5000`. La model card es la plantilla autogenerada por Hugging Face y no aporta informacion sustantiva sobre el desarrollo, los datos o la evaluacion.
 
 El checkpoint se publico el 3 de noviembre de 2026 y no registra descargas ni likes en el momento de redactar esta ficha. No hay licencia declarada, ni idiomas soportados, ni resultados de benchmarks, ni documentacion sobre el procedimiento de entrenamiento. Esto limita severamente cualquier evaluacion rigurosa: la ficha se construye a partir de los metadatos disponibles y de las convenciones de la familia Llama, marcando explicitamente todo lo que no se puede verificar.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| `sstoica12/acquisition_student_AS_deita_combine_WGM_MP_llama8b_conf_5000` | 8.030.261.248 | no disponible | no disponible | HuggingFace (0 descargas) | no disponibles |
-| Llama 3 8B (Meta) | 8.030.261.248 | 8.192 tokens | Llama 3 Community License | HuggingFace, ampliamente distribuido | MMLU ~66, HumanEval ~62 (referencia publica de Meta) |
-| Mistral 7B v0.3 | ~7.240 M | 32.768 tokens | Apache 2.0 | HuggingFace | MMLU ~60, HumanEval ~40 (referencia publica) |
-| Qwen2.5 7B | ~7.620 M | 32.768 tokens | Apache 2.0 (mayoria de variantes) | HuggingFace | MMLU ~74, HumanEval ~85 (referencia publica) |
+| `sstoica12/acquisition_student_AS_deita_combine_WGM_MP_llama8b_conf_5000` | 8.030.261.248 | no disponible | no disponible | Hugging Face (0 descargas) | no disponibles |
+| Llama 3 8B (Meta) | 8.030.261.248 | 8.192 tokens | Llama 3 Community License | Hugging Face, ampliamente distribuido | MMLU ~66, HumanEval ~62 (referencia publica de Meta) |
+| Mistral 7B v0.3 | ~7.240 M | 32.768 tokens | Apache 2.0 | Hugging Face | MMLU ~60, HumanEval ~40 (referencia publica) |
+| Qwen2.5 7B | ~7.620 M | 32.768 tokens | Apache 2.0 (mayoria de variantes) | Hugging Face | MMLU ~74, HumanEval ~85 (referencia publica) |
 
 La comparativa se ofrece como referencia de categoria; los datos de los modelos alternativos provienen de sus model cards publicas y no de una evaluacion conjunta con este checkpoint.
 
@@ -86,7 +86,7 @@ La comparativa se ofrece como referencia de categoria; los datos de los modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sstoica12/acquisition_student_AS_deita_combine_WGM_MP_llama8b_conf_5000
+- Modelo en Hugging Face: https://huggingface.co/sstoica12/acquisition_student_AS_deita_combine_WGM_MP_llama8b_conf_5000
 - Paper citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este checkpoint.

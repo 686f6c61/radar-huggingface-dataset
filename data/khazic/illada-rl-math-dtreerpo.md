@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khazic/illada-rl-math-dtreerpo` es un repositorio de pesos publicado en HuggingFace por el usuario khazic, con un tamano de repositorio de 4,0 GB y pesos en formato safetensors. El nombre del repositorio sugiere un modelo orientado a matematicas y entrenado mediante tecnicas de aprendizaje por refuerzo, pero la informacion publica disponible no confirma ni la arquitectura, ni el numero de parametros, ni el procedimiento de entrenamiento.
+`khazic/illada-rl-math-dtreerpo` es un repositorio de pesos publicado en Hugging Face por el usuario khazic, con un tamano de repositorio de 4,0 GB y pesos en formato safetensors. El nombre del repositorio sugiere un modelo orientado a matematicas y entrenado mediante tecnicas de aprendizaje por refuerzo, pero la informacion publica disponible no confirma ni la arquitectura, ni el numero de parametros, ni el procedimiento de entrenamiento.
 
 En el momento de redactar esta ficha, el repositorio no declara licencia, idiomas soportados, pipeline de inferencia ni model card con descripcion tecnica. Registra 0 descargas y 1 "like", lo que indica que se trata de una publicacion reciente y practicamente sin adopcion por parte de la comunidad.
 
@@ -89,6 +89,6 @@ No se dispone del numero de parametros confirmado, del contexto ni de resultados
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khazic/illada-rl-math-dtreerpo
-- Perfil del autor en HuggingFace: https://huggingface.co/khazic
+- Repositorio en Hugging Face: https://huggingface.co/khazic/illada-rl-math-dtreerpo
+- Perfil del autor en Hugging Face: https://huggingface.co/khazic
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos correspondian a consultas no relacionadas (soporte de Google Earth) y no aportan informacion sobre este modelo.

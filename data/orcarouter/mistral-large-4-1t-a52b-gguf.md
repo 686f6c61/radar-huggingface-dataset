@@ -92,7 +92,7 @@ Según el autor, a igual tamaño de archivo ambas builds presentan menor KLD que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/Mistral-Large-4-1T-A52B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/Mistral-Large-4-1T-A52B-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Cuantizaciones de referencia de unsloth: https://huggingface.co/unsloth/Mistral-Large-4-1T-A52B-GGUF
 - OrcaRouter: https://www.orcarouter.ai/

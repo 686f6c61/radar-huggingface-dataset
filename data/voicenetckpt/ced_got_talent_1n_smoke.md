@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`VoiceNetCkpt/ced_got_talent_1n_smoke` es un checkpoint de pesos publicado en HuggingFace por el usuario VoiceNetCkpt dentro de una serie de experimentos denominada VoiceCLAP. Segun la propia model card, el repositorio contiene los pesos finales de una ejecucion de entrenamiento, junto con los ficheros de configuracion y los resultados de evaluacion de esa ejecucion; no incluye epocas intermedias, estado del optimizador ni registros de entrenamiento. El repositorio ocupa 1,3 GB y contiene tres ficheros, entre ellos `checkpoints/epoch_latest.pt`.
+`VoiceNetCkpt/ced_got_talent_1n_smoke` es un checkpoint de pesos publicado en Hugging Face por el usuario VoiceNetCkpt dentro de una serie de experimentos denominada VoiceCLAP. Segun la propia model card, el repositorio contiene los pesos finales de una ejecucion de entrenamiento, junto con los ficheros de configuracion y los resultados de evaluacion de esa ejecucion; no incluye epocas intermedias, estado del optimizador ni registros de entrenamiento. El repositorio ocupa 1,3 GB y contiene tres ficheros, entre ellos `checkpoints/epoch_latest.pt`.
 
-La informacion publicada es muy escasa: no se declara licencia, no se declaran idiomas, no se indica pipeline en HuggingFace y no se detalla la arquitectura, el numero de parametros ni la longitud de contexto. El unico indicio funcional es la etiqueta `voiceclap`, que situa el artefacto en el ambito del aprendizaje contrastivo voz-texto, y el sufijo `smoke` del identificador, que sugiere una ejecucion de prueba de humo (verificacion de que el pipeline de entrenamiento funciona de extremo a extremo); esta ultima lectura es una interpretacion del nombre y no un dato confirmado por el autor.
+La informacion publicada es muy escasa: no se declara licencia, no se declaran idiomas, no se indica pipeline en Hugging Face y no se detalla la arquitectura, el numero de parametros ni la longitud de contexto. El unico indicio funcional es la etiqueta `voiceclap`, que situa el artefacto en el ambito del aprendizaje contrastivo voz-texto, y el sufijo `smoke` del identificador, que sugiere una ejecucion de prueba de humo (verificacion de que el pipeline de entrenamiento funciona de extremo a extremo); esta ultima lectura es una interpretacion del nombre y no un dato confirmado por el autor.
 
 Por todo ello, esta ficha debe entenderse como un inventario de lo que se sabe y, sobre todo, de lo que falta. No es un modelo listo para produccion ni un release estable: es un checkpoint de investigacion sin documentacion tecnica asociada. Cualquier evaluacion seria exige descargar los pesos, inspeccionar los ficheros de configuracion incluidos en el repositorio y consultar el indice de ejecuciones enlazado por el autor.
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ced_got_talent_1n_smoke | no disponible | no disponible | no disponible | HuggingFace (repo publico, 0 descargas) | Checkpoint de investigacion sin model card tecnica |
+| ced_got_talent_1n_smoke | no disponible | no disponible | no disponible | Hugging Face (repo publico, 0 descargas) | Checkpoint de investigacion sin model card tecnica |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | No se identifican modelos comparables con los datos aportados |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | No se identifican modelos comparables con los datos aportados |
 
@@ -98,7 +98,7 @@ Como unica referencia interna, el propio autor mantiene un indice de ejecuciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/ced_got_talent_1n_smoke
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/ced_got_talent_1n_smoke
 - Indice de checkpoints de la serie VoiceCLAP (enlazado en la model card): https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
-- Perfil del autor en HuggingFace: https://huggingface.co/VoiceNetCkpt
+- Perfil del autor en Hugging Face: https://huggingface.co/VoiceNetCkpt
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

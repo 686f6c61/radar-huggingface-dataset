@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Underdog-Saluki-27B-1.0 es una cuantización extrema (2 bits, formato GGUF con imatrix) de un modelo de 27B parámetros de la familia Qwen3.8, publicada por el usuario balajiduraisamy en HuggingFace. El modelo base es Qwen/Qwen3.8-27B, del cual parte de una versión previa ya cuantizada por ISTA-DASLab (Qwen3.8-27B-GSQ-RCO-GGUF). El repositorio pesa aproximadamente 9,5 GB, lo que indica una compresión agresiva pensada para ejecutar el modelo en hardware de consumo.
+Underdog-Saluki-27B-1.0 es una cuantización extrema (2 bits, formato GGUF con imatrix) de un modelo de 27B parámetros de la familia Qwen3.8, publicada por el usuario balajiduraisamy en Hugging Face. El modelo base es Qwen/Qwen3.8-27B, del cual parte de una versión previa ya cuantizada por ISTA-DASLab (Qwen3.8-27B-GSQ-RCO-GGUF). El repositorio pesa aproximadamente 9,5 GB, lo que indica una compresión agresiva pensada para ejecutar el modelo en hardware de consumo.
 
 El problema que resuelve este tipo de publicaciones es la accesibilidad: llevar un modelo denso de 27B parámetros a GPUs domésticas o incluso a sistemas sin GPU dedicada, sacrificando precisión a cambio de una huella de memoria muy reducida. Los tags del repositorio destacan soporte de tool calling, function calling y agentes, heredados del modelo base Qwen3.8, lo que lo hace interesante para casos de uso de orquestación y automatización en local.
 
-Es relevante porque combina la licencia permisiva Apache 2.0 del modelo base con una cuantización de 2 bits (probablemente del tipo GSQ mencionado en el nombre del repositorio origen), una frontera de compresión donde la calidad de la cuantización mediante matrices de importancia (imatrix) marca la diferencia entre un modelo utilizable y uno degradado. Cabe señalar que el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace antes de descargarlo.
+Es relevante porque combina la licencia permisiva Apache 2.0 del modelo base con una cuantización de 2 bits (probablemente del tipo GSQ mencionado en el nombre del repositorio origen), una frontera de compresión donde la calidad de la cuantización mediante matrices de importancia (imatrix) marca la diferencia entre un modelo utilizable y uno degradado. Cabe señalar que el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones técnicas
 
@@ -73,13 +73,13 @@ La comparativa principal es con el modelo base sin cuantizar: la versión de 2 b
 - Riesgo de alucinación: al ser un modelo de lenguaje cuantizado, puede generar información falsa con apariencia plausible; el riesgo puede agravarse por la compresión extrema.
 - Idioma: los metadatos indican soporte de inglés; el rendimiento en castellano u otros idiomas no está documentado y puede ser inferior.
 - Contexto: la longitud de ventana de contexto no está especificada en la información disponible; además, en cuantizaciones de 2 bits, contextos muy largos pueden degradar más la calidad.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 - Sesgos: como derivado de la familia Qwen, hereda los sesgos del modelo base y de sus datos de entrenamiento; no hay documentación específica de auditoría de sesgos para esta cuantización.
 - Uso comercial: la licencia Apache 2.0 lo permite, pero la calidad de la cuantización de 2 bits debe validarse caso por caso antes de cualquier despliegue en producción.
 - Popularidad mínima: con 0 descargas registradas, no existe retroalimentación comunitaria sobre la calidad real de esta cuantización concreta; se recomienda comparar con la cuantización de ISTA-DASLab de la que procede.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/balajiduraisamy/Underdog-Saluki-27B-1.0
+- Repositorio en Hugging Face: https://huggingface.co/balajiduraisamy/Underdog-Saluki-27B-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización de origen: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF

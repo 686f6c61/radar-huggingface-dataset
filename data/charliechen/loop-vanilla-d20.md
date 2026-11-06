@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-vanilla-d20 es un modelo de lenguaje base de tipo transformer, publicado por CharlieChen (usuario de HuggingFace) como artefacto de investigacion asociado al articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". No es un modelo orientado a producto ni a instrucciones: es el checkpoint final original de la escalera de escalado (scaling ladder) entrenada sobre FineWeb, preservado tal cual salio del entrenamiento, dentro de una linea de experimentos sobre transformers con recursion (looped transformers).
+loop-vanilla-d20 es un modelo de lenguaje base de tipo transformer, publicado por CharlieChen (usuario de Hugging Face) como artefacto de investigacion asociado al articulo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". No es un modelo orientado a producto ni a instrucciones: es el checkpoint final original de la escalera de escalado (scaling ladder) entrenada sobre FineWeb, preservado tal cual salio del entrenamiento, dentro de una linea de experimentos sobre transformers con recursion (looped transformers).
 
 El modelo tiene 1.843.527.680 parametros almacenados en FP32 (7,374 GB), una anchura de 2560, 20 cabezas de atencion y una longitud de contexto de 2048 tokens. La coordenada de profundidad del experimento es d20 y la configuracion usada tiene una repeticion del nucleo ("configured core repetitions" = 1), por lo que esta variante "vanilla" actua como referencia o linea base del estudio de recurrencia: se ejecutan los bloques una sola vez, sin reutilizacion del nucleo.
 
@@ -107,7 +107,7 @@ La comparacion se limita a parametros, contexto, idioma, licencia, formato y dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-vanilla-d20
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-vanilla-d20
 - Repositorio de codigo del articulo: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento (FineWeb): https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Tokenizador GPT-2 via tiktoken: https://github.com/openai/tiktoken

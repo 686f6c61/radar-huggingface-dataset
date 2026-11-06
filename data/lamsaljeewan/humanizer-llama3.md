@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lamsaljeewan/humanizer-llama3` es un modelo publicado en HuggingFace por el usuario `lamsaljeewan`, distribuido en formato `safetensors` y etiquetado con `transformers` y `unsloth`. Por el nombre se deduce que se trata de un ajuste (fine-tuning) orientado a "humanizar" texto, es decir, a reformular contenido generado por IA para que resulte menos reconocible como tal, pero la ficha de HuggingFace no incluye descripcion, pipeline declarado, idiomas ni licencia, por lo que el proposito exacto no puede confirmarse.
+`lamsaljeewan/humanizer-llama3` es un modelo publicado en Hugging Face por el usuario `lamsaljeewan`, distribuido en formato `safetensors` y etiquetado con `transformers` y `unsloth`. Por el nombre se deduce que se trata de un ajuste (fine-tuning) orientado a "humanizar" texto, es decir, a reformular contenido generado por IA para que resulte menos reconocible como tal, pero la ficha de Hugging Face no incluye descripcion, pipeline declarado, idiomas ni licencia, por lo que el proposito exacto no puede confirmarse.
 
 El repositorio ocupa 0,2 GB, un tamano muy inferior al de un modelo de 7-8 mil millones de parametros en precision completa (FP16), lo que es coherente con un adaptador LoRA o con un checkpoint fuertemente cuantizado derivado de la familia Llama 3. Se desconoce si se publican pesos completos o solo el adaptador, y no hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni la tecnica de alineamiento empleada.
 
-El modelo esta sujeto a acceso restringido (gated) en HuggingFace: es necesario aceptar condiciones en la plataforma antes de poder descargarlo. Con 0 descargas y 1 like en el momento de la consulta, se trata de un artefacto practicamente sin validacion externa ni benchmarks publicados, por lo que cualquier uso en produccion exigiria una evaluacion propia previa. La busqueda web asociada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos eran contenido no relacionado y no se han utilizado).
+El modelo esta sujeto a acceso restringido (gated) en Hugging Face: es necesario aceptar condiciones en la plataforma antes de poder descargarlo. Con 0 descargas y 1 like en el momento de la consulta, se trata de un artefacto practicamente sin validacion externa ni benchmarks publicados, por lo que cualquier uso en produccion exigiria una evaluacion propia previa. La busqueda web asociada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos eran contenido no relacionado y no se han utilizado).
 
 ## Especificaciones tecnicas
 
@@ -18,13 +18,13 @@ El modelo esta sujeto a acceso restringido (gated) en HuggingFace: es necesario 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se declara `safetensors` como formato de pesos) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (la ficha no declara licencia; el acceso esta restringido en HuggingFace) |
+| Licencia | no disponible (la ficha no declara licencia; el acceso esta restringido en Hugging Face) |
 | Formato de pesos | safetensors |
 | Libreria declarada | transformers |
 | Herramienta de ajuste declarada | unsloth |
 | Referencia bibliografica declarada en tags | arxiv:1910.09700 (titulo del paper no confirmado en la informacion disponible) |
 | Compatibilidad declarada | endpoints_compatible, region:us |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ Dado que no hay documentacion funcional ni evaluaciones publicadas, los siguient
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La ficha de HuggingFace no incluye tablas de evaluacion, y la busqueda web no aporto ningun resultado relacionado con el modelo. No se dispone por tanto de cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna metrica especifica de la tarea de humanizacion (por ejemplo, tasas de deteccion por clasificadores de texto IA).
+La ficha de Hugging Face no incluye tablas de evaluacion, y la busqueda web no aporto ningun resultado relacionado con el modelo. No se dispone por tanto de cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna metrica especifica de la tarea de humanizacion (por ejemplo, tasas de deteccion por clasificadores de texto IA).
 
 ## Requisitos de hardware
 
@@ -89,7 +89,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 - Riesgo de alucinacion: no evaluado. En tareas de reescritura, un modelo sin alineamiento verificado puede introducir afirmaciones que no estaban en el texto original, algo especialmente grave en contextos informativos o legales.
 - Sesgos conocidos: no disponibles. No se ha publicado analisis de sesgo ni de composicion del dataset de entrenamiento.
 - Limitaciones de contexto e idioma: no disponibles. No se puede confirmar la ventana de contexto ni si el modelo funciona fuera del ingles.
-- Licencia indefinida: al no declararse licencia, no hay autorizacion explicita de uso comercial. Ademas, el acceso esta restringido en HuggingFace, por lo que es necesario aceptar condiciones antes de la descarga; esos terminos pueden imponer restricciones adicionales.
+- Licencia indefinida: al no declararse licencia, no hay autorizacion explicita de uso comercial. Ademas, el acceso esta restringido en Hugging Face, por lo que es necesario aceptar condiciones antes de la descarga; esos terminos pueden imponer restricciones adicionales.
 - Riesgo reputacional y etico: la finalidad sugerida por el nombre (ocultar el origen generado por IA de un texto) puede entrar en conflicto con normativas de transparencia sobre contenido sintetico, con politicas editoriales y con las condiciones de uso de plataformas que exigen declarar el uso de IA.
 - Trazabilidad nula: con 0 descargas y 1 like, no existe comunidad de usuarios que haya reportado calidad, errores o comportamientos anomalos. No hay issues, demos ni evaluaciones de terceros.
 - Advertencia sobre metadatos: la fecha de creacion indicada (2026-10-07) es posterior a la fecha de publicacion de esta ficha, un dato inconsistente que conviene verificar antes de citar el repositorio.
@@ -97,7 +97,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lamsaljeewan/humanizer-llama3
+- Modelo en Hugging Face: https://huggingface.co/lamsaljeewan/humanizer-llama3
 - Referencia declarada en los tags: arXiv:1910.09700 (https://arxiv.org/abs/1910.09700), titulo y contenido no confirmados en la informacion disponible
 - Unsloth (herramienta de ajuste declarada en los tags): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos adicionales sobre este modelo en los resultados de busqueda disponibles.

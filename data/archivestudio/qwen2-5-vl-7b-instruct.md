@@ -120,7 +120,7 @@ Resultados de agente:
 
 | Modelo | Parametros | Contexto | MMMU (val) | DocVQA (test) | MathVista (testmini) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Qwen2.5-VL-7B (este repositorio) | 8,29 B | no disponible | 58,6 | 95,7 | 68,2 | apache-2.0 | safetensors en HuggingFace |
+| Qwen2.5-VL-7B (este repositorio) | 8,29 B | no disponible | 58,6 | 95,7 | 68,2 | apache-2.0 | safetensors en Hugging Face |
 | Qwen2-VL-7B | no disponible | no disponible | 54,1 | 94,5 | 58,2 | no disponible en la informacion | no disponible en la informacion |
 | InternVL2.5-8B | no disponible | no disponible | 56 | 93 | 58,3 | no disponible en la informacion | no disponible en la informacion |
 | MiniCPM-o 2.6 | no disponible | no disponible | 50,4 | 93 | 60,6 | no disponible en la informacion | no disponible en la informacion |
@@ -140,7 +140,7 @@ Resultados de agente:
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen2.5-VL-7B-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen2.5-VL-7B-Instruct
 - Blog oficial de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/
 - Repositorio GitHub de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
 - Demo de chat: https://chat.qwenlm.ai/

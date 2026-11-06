@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atticus-onek1k es un modelo publicado en HuggingFace por el usuario Padraig7 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El identificador "onek1k" sugiere, de forma especulativa, un contexto de 1.024 tokens o un conjunto de datos de ese tamano, pero no hay confirmacion documental.
+Atticus-onek1k es un modelo publicado en Hugging Face por el usuario Padraig7 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El identificador "onek1k" sugiere, de forma especulativa, un contexto de 1.024 tokens o un conjunto de datos de ese tamano, pero no hay confirmacion documental.
 
 En el momento de redactar esta ficha el repositorio registra cero descargas y cero likes, y no se ha publicado pipeline, idioma ni formato de pesos. Se trata, por tanto, de un artefacto sin validacion externa ni documentacion operativa, lo que impide evaluar su idoneidad para cualquier caso de uso en produccion.
 
@@ -72,4 +72,4 @@ No disponible. La ausencia de datos sobre parametros, contexto y rendimiento imp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Padraig7/atticus-onek1k
+- Hugging Face: https://huggingface.co/Padraig7/atticus-onek1k

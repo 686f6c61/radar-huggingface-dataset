@@ -6,7 +6,7 @@ El modelo `sfm_unfiltered_midtrain_alignment-9k_10k_11k_merge` es un experimento
 
 El autor, `yuhengtu-bytedance`, parece estar vinculado a ByteDance, aunque no se confirma oficialmente. El modelo se publicó en agosto de 2026 y no cuenta con descargas ni valoraciones, lo que sugiere que es un artefacto de investigación o una prueba interna. Su relevancia radica en explorar la fusión de checkpoints de entrenamiento intermedios como técnica para mejorar la alineación o el rendimiento, aunque no se proporcionan métricas que lo respalden.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y en los resultados de búsqueda web; muchos datos técnicos no están publicados y se indican como "no disponible".
+La ficha se basa exclusivamente en la información disponible en Hugging Face y en los resultados de búsqueda web; muchos datos técnicos no están publicados y se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -65,8 +65,8 @@ No se dispone de datos de rendimiento para comparar. Existe un modelo hermano pu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_unfiltered_midtrain_alignment-9k_10k_11k_merge | 6,8 B | no disponible | no disponible | HuggingFace |
-| sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge | 6,8 B (estimado) | no disponible | no disponible | HuggingFace |
+| sfm_unfiltered_midtrain_alignment-9k_10k_11k_merge | 6,8 B | no disponible | no disponible | Hugging Face |
+| sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge | 6,8 B (estimado) | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento para comparar. Existe un modelo hermano pu
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-9k_10k_11k_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-9k_10k_11k_merge)
 - [Modelo hermano (misalignment)](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-10k_11k_12k_merge)
 - [Paper de mergekit (Linear merge)](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

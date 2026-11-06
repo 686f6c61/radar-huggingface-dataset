@@ -101,10 +101,10 @@ Comprobación de reproducción: al cargar la carpeta con `load_jevified` y reeva
 
 | Modelo | Parámetros | Contexto | Precisión (acc) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (jevify-smollm3-3b-apo-readout) | LoRA 30,2M sobre SmolLM3-3B (~3B) | no disponible (backbone diseñado para contexto largo) | 0,705 | 0,058 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| jevify-smollm3-3b-apo-readout-coh | LoRA sobre SmolLM3-3B (~3B) | no disponible | 0,708 | 0,055 | Apache 2.0 | HuggingFace (misma familia) |
-| jevify-smollm3-3b-sft-readout | LoRA sobre SmolLM3-3B (~3B) desde checkpoint SFT | no disponible | 0,705 | 0,057 | Apache 2.0 | HuggingFace (misma familia) |
-| SmolLM3-3B APO checkpoint sin ajustar | ~3B | heredado del backbone | 0,539 | 0,117 | según backbone (SmolLM3) | HuggingFace |
+| Este modelo (jevify-smollm3-3b-apo-readout) | LoRA 30,2M sobre SmolLM3-3B (~3B) | no disponible (backbone diseñado para contexto largo) | 0,705 | 0,058 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| jevify-smollm3-3b-apo-readout-coh | LoRA sobre SmolLM3-3B (~3B) | no disponible | 0,708 | 0,055 | Apache 2.0 | Hugging Face (misma familia) |
+| jevify-smollm3-3b-sft-readout | LoRA sobre SmolLM3-3B (~3B) desde checkpoint SFT | no disponible | 0,705 | 0,057 | Apache 2.0 | Hugging Face (misma familia) |
+| SmolLM3-3B APO checkpoint sin ajustar | ~3B | heredado del backbone | 0,539 | 0,117 | según backbone (SmolLM3) | Hugging Face |
 | Jev 1.13.0 | no disponible | no disponible | 0,733 | 0,113 | propietaria | API TypeSafe (acceso limitado) |
 
 ## Limitaciones y advertencias
@@ -116,13 +116,13 @@ Comprobación de reproducción: al cargar la carpeta con `load_jevified` y reeva
 - Métricas de invarianza (order flip, tag TVD, K=2→max acc drop) y de fuera de distribución (stated rule, 'none' when gone, hijack, phishing AUROC, tool risk) no están reportadas para este modelo en la información disponible; solo existen para el checkpoint sin ajustar y para Jev 1.13.0.
 - Riesgo de alucinación: no aplica en el sentido generativo (el modelo no produce texto), pero sí existe el riesgo de decisiones mal calibradas en dominios alejados de los datos de entrenamiento.
 - Idiomas y cuantizaciones soportadas: no disponibles; no hay garantía documentada de comportamiento multilingüe para el adaptador.
-- Adopción nula: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin validación por parte de terceros.
+- Adopción nula: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin validación por parte de terceros.
 - Licencia Apache 2.0: permite uso comercial, pero al derivar de SmolLM3-3B conviene verificar las condiciones del backbone base.
 - La primitiva de decisión y el formato de preguntas tipadas implican una integración estrecha con la librería `jevify` y el SDK TypeSafe; no es un modelo de propósito general.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-apo-readout
+- Modelo en Hugging Face: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-apo-readout
 - Dataset jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench
 - Leaderboard de jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench#leaderboard
 - Hallazgos del proyecto (FINDINGS.md, sección 18): https://github.com/uspraveen/Jevify/blob/main/docs/FINDINGS.md#18-readout-fine-tuning-and-what-a-coherence-penalty-adds

@@ -71,7 +71,7 @@ No se dispone de datos comparativos publicados para este checkpoint. Como refere
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| finetune_larger_clap_general_voiceclap10 | no disponible | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| finetune_larger_clap_general_voiceclap10 | no disponible | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas CLAP de referencia | no disponible en esta ficha | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No se dispone de datos comparativos publicados para este checkpoint. Como refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/finetune_larger_clap_general_voiceclap10
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/finetune_larger_clap_general_voiceclap10
 - Indice de runs de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

@@ -100,7 +100,7 @@ No se dispone de resultados de benchmarks en el par swahili-kikuyu para los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Biatus/nllb-finetuned-sw-ki-bidirectional
+- Modelo en Hugging Face: https://huggingface.co/Biatus/nllb-finetuned-sw-ki-bidirectional
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 
 Nota: la búsqueda web realizada no devolvió resultados relacionados con el modelo. Los únicos enlaces recuperados correspondían a recetas de cocina y no guardan relación con este sistema, por lo que no se incluyen. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

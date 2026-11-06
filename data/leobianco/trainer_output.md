@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leobianco/trainer_output
+- Hugging Face: https://huggingface.co/leobianco/trainer_output
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl
 - Weights & Biases (log de entrenamiento): https://wandb.ai/leobianco-universit-paris-saclay/perl_hallucination-src/runs/i4ehm114

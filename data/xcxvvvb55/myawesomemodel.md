@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario xcxvvvb55 bajo licencia MIT. La informacion disponible es internamente contradictoria: los tags del repositorio lo clasifican como un modelo BERT de tipo encoder orientado a `feature-extraction` con pesos PyTorch, mientras que la model card describe un asistente generativo conversacional con modo de razonamiento extendido, soporte de function calling, plantillas para subida de ficheros y busqueda web, y resultados en pruebas de matematicas y programacion. No se puede determinar a partir de los datos disponibles cual de las dos descripciones corresponde al artefacto real.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario xcxvvvb55 bajo licencia MIT. La informacion disponible es internamente contradictoria: los tags del repositorio lo clasifican como un modelo BERT de tipo encoder orientado a `feature-extraction` con pesos PyTorch, mientras que la model card describe un asistente generativo conversacional con modo de razonamiento extendido, soporte de function calling, plantillas para subida de ficheros y busqueda web, y resultados en pruebas de matematicas y programacion. No se puede determinar a partir de los datos disponibles cual de las dos descripciones corresponde al artefacto real.
 
 El repositorio aparece con 0.0 GB de tamano, 0 descargas y 0 likes, y no incluye informacion sobre numero de parametros, longitud de contexto, tokenizer, composicion del dataset de entrenamiento ni formatos de pesos. Las fechas de creacion y actualizacion son del 12 de septiembre de 2026, con apenas cinco segundos de diferencia entre ambas, lo que sugiere un repositorio recien creado o una plantilla sin contenido sustantivo.
 
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 - VRAM estimada para inferencia: no disponible. Al desconocerse el numero de parametros, no es posible calcular el consumo de memoria ni siquiera por regla general.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. No puede confirmarse si cabe en una RTX 4090, 3090 o similar.
-- Opciones de despliegue: el repositorio declara `transformers` y `pytorch` como libreria y framework, y el tag `endpoints_compatible`, lo que sugiere compatibilidad con Inference Endpoints de HuggingFace. No hay evidencia de soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el repositorio declara `transformers` y `pytorch` como libreria y framework, y el tag `endpoints_compatible`, lo que sugiere compatibilidad con Inference Endpoints de Hugging Face. No hay evidencia de soporte de vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. La unica referencia indirecta es el consumo declarado de 23K tokens de pensamiento por pregunta en AIME 2025, que implicaria latencias altas en decodificacion autoregresiva, pero sin datos de hardware no puede cuantificarse.
 
 ## Comparativa con modelos similares
@@ -124,7 +124,7 @@ No es posible establecer una comparativa fiable. La propia model card compara co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xcxvvvb55/MyAwesomeModel
+- Hugging Face: https://huggingface.co/xcxvvvb55/MyAwesomeModel
 - Paper: no disponible
 - Repositorio de codigo: la model card menciona "our code repository" y "our official website" sin proporcionar URL
 - Demo o chat: la model card menciona una interfaz de chat y API oficiales sin proporcionar URL

@@ -43,7 +43,7 @@ Un detalle operativo relevante es que el modo de razonamiento (thinking) esta ac
 - Comportamiento con rechazos reducidos de forma deliberada: 6/100 rechazos frente a 97/100 del modelo original segun la medicion del autor.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible (el campo de idiomas no aparece informado en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas no aparece informado en la ficha de Hugging Face).
 
 ## Casos de uso
 

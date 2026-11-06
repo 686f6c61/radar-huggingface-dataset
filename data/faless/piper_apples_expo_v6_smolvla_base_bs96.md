@@ -88,10 +88,10 @@ Los datos de los modelos alternativos proceden de fuentes publicas y no se han v
 
 | Modelo | Parametros | Tarea | Resultados publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| piper_apples_expo_v6_smolvla_base_bs96 (este modelo) | ~450 M | Pick-and-place de manzanas rojas con brazo Piper | Ninguno; tabla de evaluacion vacia | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | ~450 M | VLA generalista preentrenada | Resultados del paper SmolVLA (no reproducidos aqui) | No disponible en esta busqueda | HuggingFace |
-| OpenVLA-7B | ~7 B | VLA generalista para manipulacion | Resultados publicados en su paper (no verificados aqui) | Licencia comunitaria de Llama 2 | HuggingFace |
-| pi0 (openpi) | ~3,3 B aprox. | VLA generalista con flow matching | Resultados publicados por Physical Intelligence (no verificados aqui) | Apache 2.0 en openpi, segun fuentes publicas | HuggingFace / GitHub |
+| piper_apples_expo_v6_smolvla_base_bs96 (este modelo) | ~450 M | Pick-and-place de manzanas rojas con brazo Piper | Ninguno; tabla de evaluacion vacia | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | ~450 M | VLA generalista preentrenada | Resultados del paper SmolVLA (no reproducidos aqui) | No disponible en esta busqueda | Hugging Face |
+| OpenVLA-7B | ~7 B | VLA generalista para manipulacion | Resultados publicados en su paper (no verificados aqui) | Licencia comunitaria de Llama 2 | Hugging Face |
+| pi0 (openpi) | ~3,3 B aprox. | VLA generalista con flow matching | Resultados publicados por Physical Intelligence (no verificados aqui) | Apache 2.0 en openpi, segun fuentes publicas | Hugging Face / GitHub |
 
 La diferencia principal de este modelo frente a las alternativas es el tamano: con unos 450 M de parametros es entre 7 y 15 veces mas pequeno que OpenVLA-7B o pi0, lo que reduce los requisitos de VRAM, pero tambien limita su generalidad. Frente a `lerobot/smolvla_base`, la unica diferencia documentada es el ajuste fino sobre un dataset concreto de 851 episodios y una sola tarea.
 
@@ -107,12 +107,12 @@ La diferencia principal de este modelo frente a las alternativas es el tamano: c
 - Sin cuantizaciones publicadas: el despliegue requiere el stack de PyTorch y LeRobot; no hay pesos GGUF ni variantes optimizadas para CPU.
 - Validacion social nula: 0 descargas y 0 valoraciones en el momento de la consulta, sin issues ni replicas independientes conocidas.
 - Licencia: el modelo se publica como Apache 2.0, lo que en principio permite uso comercial, pero conviene verificar por separado la licencia del dataset Faless/piper_apples_expo_v6 y las condiciones del modelo base `lerobot/smolvla_base`.
-- Busqueda web sin resultados utiles: las consultas realizadas no devolvieron informacion relevante sobre este modelo, por lo que toda la ficha se basa en la model card y en los metadatos de HuggingFace.
+- Busqueda web sin resultados utiles: las consultas realizadas no devolvieron informacion relevante sobre este modelo, por lo que toda la ficha se basa en la model card y en los metadatos de Hugging Face.
 - Fechas de creacion y actualizacion registradas como 2026-09-13, poco habituales; conviene comprobar la trazabilidad del repositorio antes de usarlo en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Faless/piper_apples_expo_v6_smolvla_base_bs96
+- Modelo en Hugging Face: https://huggingface.co/Faless/piper_apples_expo_v6_smolvla_base_bs96
 - Dataset de entrenamiento: https://huggingface.co/datasets/Faless/piper_apples_expo_v6
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

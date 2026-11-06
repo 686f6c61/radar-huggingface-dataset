@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gmitchell97/my-classification` es un repositorio de investigación publicado en HuggingFace por el usuario gmitchell97 que contiene un prototipo de clasificación basado en una implementación propia de MobileViT, una arquitectura híbrida que combina convoluciones y mecanismos de atención tipo transformer. El repositorio se etiqueta internamente con la escala "giant", atención dispersa (sparse), fusión con puertas (gated fusion), activación mish y normalización LayerNorm. El checkpoint incluido (`model.safetensors`) se declara explícitamente como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado.
+`gmitchell97/my-classification` es un repositorio de investigación publicado en Hugging Face por el usuario gmitchell97 que contiene un prototipo de clasificación basado en una implementación propia de MobileViT, una arquitectura híbrida que combina convoluciones y mecanismos de atención tipo transformer. El repositorio se etiqueta internamente con la escala "giant", atención dispersa (sparse), fusión con puertas (gated fusion), activación mish y normalización LayerNorm. El checkpoint incluido (`model.safetensors`) se declara explícitamente como una inicialización válida para pruebas de humo, no como un modelo entrenado ni evaluado.
 
 El dato de parámetros totales reportado por el archivo safetensors es de 16.576, una cifra anómala para una configuración etiquetada como "giant" y que probablemente refleja una inicialización mínima o incompleta más que un modelo desplegable. El tamaño del repositorio es de 0,0 GB. La model card no reclama ninguna métrica de rendimiento y advierte que no se ha realizado entrenamiento, auditoría de robustez, equidad ni transferencia de dominio.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno. E
 - Prototipado de investigación en clasificación visual: el repositorio sirve como esqueleto para probar variantes de MobileViT con atención dispersa y gated fusion antes de invertir en entrenamiento a gran escala.
 - Reproducibilidad de ablaciones arquitectónicas: la receta por defecto (adafactor + step schedule) permite fijar una línea base controlada y comparar baselines "with the same data exposure, tuning budget, and random seeds", tal como recomienda la propia model card.
 - Punto de partida para fine-tuning: el checkpoint de inicialización puede servir para probar pipelines de carga de pesos y validar que el formato safetensors encaja con el código antes de entrenar.
-- Docencia y formación: útil como ejemplo mínimo de estructura de repositorio HuggingFace con `config.json`, `training_args.json`, script y pesos.
+- Docencia y formación: útil como ejemplo mínimo de estructura de repositorio Hugging Face con `config.json`, `training_args.json`, script y pesos.
 - Pruebas de integración de infraestructura: por su tamaño mínimo (0,0 GB) permite validar pipelines de CI/CD de modelos, registro de artefactos y empaquetado sin coste de GPU.
 - Evaluación comparativa interna: puede emplearse como baseline de baja capacidad en un protocolo de evaluación propio, siempre reportando métrica de tarea, al menos tres semillas y un baseline de capacidad equivalente.
 
@@ -91,6 +91,6 @@ No se dispone de datos verificados para completar una comparativa numérica hone
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gmitchell97/my-classification
+- Repositorio en Hugging Face: https://huggingface.co/gmitchell97/my-classification
 - Archivos incluidos: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de código o demos.

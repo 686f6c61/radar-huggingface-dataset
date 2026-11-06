@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/tags_muse_0915` es un modelo de generación de texto en inglés publicado por el usuario shabieh2 en HuggingFace, obtenido mediante ajuste fino (fine-tuning) del modelo `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`. Se trata por tanto de un derivado de la familia Muse Glimmer, cuyo nombre de repositorio indica un tamano de 30.000 millones de parametros y una publicacion original en cuantizacion de 4 bits mediante bitsandbytes. El entrenamiento se realizo con la libreria Unsloth, segun declara la propia model card, que indica que el modelo se entreno "2x mas rapido" con dicha herramienta.
+`shabieh2/tags_muse_0915` es un modelo de generación de texto en inglés publicado por el usuario shabieh2 en Hugging Face, obtenido mediante ajuste fino (fine-tuning) del modelo `unsloth/muse-glimmer-30b-unsloth-bnb-4bit`. Se trata por tanto de un derivado de la familia Muse Glimmer, cuyo nombre de repositorio indica un tamano de 30.000 millones de parametros y una publicacion original en cuantizacion de 4 bits mediante bitsandbytes. El entrenamiento se realizo con la libreria Unsloth, segun declara la propia model card, que indica que el modelo se entreno "2x mas rapido" con dicha herramienta.
 
 El modelo se distribuye bajo licencia Apache 2.0, esta etiquetado unicamente para el idioma ingles y su repositorio ocupa 3,4 GB. Esta etiquetado con `text-generation-inference`, `transformers`, `unsloth` y `trl`, lo que sugiere compatibilidad con el ecosistema Transformers y con TGI para despliegue. No se especifica la tarea de ajuste fino, el dataset utilizado ni la arquitectura interna del modelo base.
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo
 
 La model card no documenta la arquitectura del modelo. El unico dato tecnico disponible es el identificador del modelo base, `muse-glimmer-30b-unsloth-bnb-4bit`, del que se deduce un tamano de 30.000 millones de parametros y una publicacion original en cuantizacion de 4 bits mediante bitsandbytes. No hay informacion sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido, ni sobre el numero de capas, cabezas de atencion o dimension del espacio latente.
 
-En cuanto al entrenamiento, la unica informacion declarada es que el ajuste se realizo con Unsloth, con un incremento de velocidad declarado de 2x respecto a un entrenamiento convencional, y que el resultado se etiqueta con `trl`, lo que apunta al uso de las librerias TRL/SFTTrainer del ecosistema HuggingFace. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la tarea concreta del fine-tune, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o PPO. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.).
+En cuanto al entrenamiento, la unica informacion declarada es que el ajuste se realizo con Unsloth, con un incremento de velocidad declarado de 2x respecto a un entrenamiento convencional, y que el resultado se etiqueta con `trl`, lo que apunta al uso de las librerias TRL/SFTTrainer del ecosistema Hugging Face. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la tarea concreta del fine-tune, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o PPO. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
@@ -80,8 +80,8 @@ La informacion disponible no permite una comparativa fiable contra modelos de la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| shabieh2/tags_muse_0915 | no disponible (base de 30B) | no disponible | apache-2.0 | HuggingFace, 0 descargas, 0 likes | no disponible |
-| unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | 30B segun el identificador | no disponible | apache-2.0 segun la model card del derivado | HuggingFace | no disponible |
+| shabieh2/tags_muse_0915 | no disponible (base de 30B) | no disponible | apache-2.0 | Hugging Face, 0 descargas, 0 likes | no disponible |
+| unsloth/muse-glimmer-30b-unsloth-bnb-4bit (modelo base) | 30B segun el identificador | no disponible | apache-2.0 segun la model card del derivado | Hugging Face | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ La informacion disponible no permite una comparativa fiable contra modelos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/tags_muse_0915
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/tags_muse_0915
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Busqueda web: no se han encontrado fuentes relevantes sobre este modelo. Los resultados devueltos por la busqueda correspondian a un restaurante en Houston (coppaosteriahouston.com) y no guardan ninguna relacion con el modelo.

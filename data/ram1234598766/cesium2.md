@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cesium2 (MORPH-AI) es un modelo de lenguaje experimental desarrollado por el autor independiente ram1234598766, publicado en HuggingFace en agosto de 2026. Se trata de una arquitectura modular construida sobre la base de Qwen/Qwen2.5-1.5B-Instruct, que incorpora nueve subsistemas diseñados para mejorar el razonamiento y la generación de código manteniendo un tamaño reducido (1.500 millones de parámetros, ~1 GB cuantizado). El proyecto se presenta como una propuesta de "IA local" capaz de ejecutarse en portátiles, teléfonos e incluso una Raspberry Pi 5, y de entrenarse en una GPU T4 gratuita de Google Colab en unas 2-3 horas.
+Cesium2 (MORPH-AI) es un modelo de lenguaje experimental desarrollado por el autor independiente ram1234598766, publicado en Hugging Face en agosto de 2026. Se trata de una arquitectura modular construida sobre la base de Qwen/Qwen2.5-1.5B-Instruct, que incorpora nueve subsistemas diseñados para mejorar el razonamiento y la generación de código manteniendo un tamaño reducido (1.500 millones de parámetros, ~1 GB cuantizado). El proyecto se presenta como una propuesta de "IA local" capaz de ejecutarse en portátiles, teléfonos e incluso una Raspberry Pi 5, y de entrenarse en una GPU T4 gratuita de Google Colab en unas 2-3 horas.
 
 La principal innovación es el diseño de doble vía Sistema-1/Sistema-2: un coordinador decide dinámicamente cuánto razonamiento dedicar a cada entrada y activa los subsistemas necesarios. Incluye un razonador multi-paso con profundidad adaptativa, un sesgo inyectado de estructura de código (indentación, balance de corchetes), memoria de trabajo persistente entre turnos, un verificador para decodificación best-of-n, un MoE disperso con 4 expertos (top-2), memoria clave-valor persistente, tokens de habilidad intercambiables y embeddings de profundidad. Aunque el modelo no ha sido validado con benchmarks públicos, su enfoque es interesante para experimentación en entornos con recursos limitados.
 
@@ -23,7 +23,7 @@ La principal innovación es el diseño de doble vía Sistema-1/Sistema-2: un coo
 
 El modelo parte de Qwen2.5-1.5B-Instruct y le añade una capa de orquestación modular. La arquitectura se describe como un sistema de doble vía: un Coordinador evalúa la complejidad de la entrada y decide el número de iteraciones de razonamiento (0-4) y qué subsistemas activar. El MultiStepReasoner implementa un bucle de pensamiento iterativo con pesos compartidos y profundidad adaptativa. El CodeAwareBias inyecta características estructurales del código (profundidad de indentación, balance de corchetes, probabilidad de ser código, saltos de línea) como un sesgo aprendido sobre los logits. El ScratchpadMemory almacena estados de razonamiento entre turnos. El VerifierHead genera una puntuación de auto-crítica para decodificación best-of-n. El Sparse MoE utiliza 4 expertos con selección top-2 por token, ofreciendo 4 veces la capacidad con aproximadamente la mitad del cómputo. La PersistentMemory es una memoria clave-valor que sobrevive entre conversaciones. Los Skill Tokens son embeddings intercambiables en caliente que permiten añadir habilidades sin reentrenar. Los Depth Embeddings predicen la complejidad de la tarea y condicionan el modelo sobre ella.
 
-El entrenamiento se realizó con QLoRA sobre la base de Qwen2.5-1.5B-Instruct, utilizando un dataset generado automáticamente mediante HuggingFace Datasets (sin API key). El proceso completo tarda unas 2-3 horas en una GPU T4 gratuita de Google Colab. No se especifica el número de tokens de entrenamiento ni la composición exacta del dataset. No se menciona el uso de RLHF o DPO; el ajuste se limita a QLoRA sobre los componentes y el modelo base.
+El entrenamiento se realizó con QLoRA sobre la base de Qwen2.5-1.5B-Instruct, utilizando un dataset generado automáticamente mediante Hugging Face Datasets (sin API key). El proceso completo tarda unas 2-3 horas en una GPU T4 gratuita de Google Colab. No se especifica el número de tokens de entrenamiento ni la composición exacta del dataset. No se menciona el uso de RLHF o DPO; el ajuste se limita a QLoRA sobre los componentes y el modelo base.
 
 ## Capacidades
 
@@ -78,13 +78,13 @@ Cesium2 se diferencia por su arquitectura no estándar (subsistemas adicionales,
 - Riesgo de alucinación: sin evaluación, no se conoce la fiabilidad factual del modelo. La auto-crítica (best-of-n) puede mitigar errores en código y matemáticas, pero no garantiza exactitud.
 - Limitaciones de idioma: no se especifican idiomas soportados; probablemente el rendimiento fuera de inglés y chino sea limitado.
 - Ambigüedad de licencia: el YAML indica apache-2.0, pero la model card dice "MIT — do whatever you want with it". Esta contradicción debe resolverse antes de un uso comercial.
-- Requisitos de entrenamiento no reproducibles: el dataset generado no está disponible públicamente, y el código fuente (repositorio morph-ai) no se ha publicado en HuggingFace ni en GitHub según la información disponible.
+- Requisitos de entrenamiento no reproducibles: el dataset generado no está disponible públicamente, y el código fuente (repositorio morph-ai) no se ha publicado en Hugging Face ni en GitHub según la información disponible.
 - Rendimiento desconocido en producción: no hay datos de latencia, throughput ni estabilidad. La arquitectura modular compleja puede introducir sobrecarga no cuantificada.
 - Tamaño de contexto no confirmado: aunque se basa en Qwen2.5-1.5B-Instruct, no se verifica que la longitud de contexto se mantenga en 32.768 tokens tras las modificaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ram1234598766/Cesium2
+- Modelo en Hugging Face: https://huggingface.co/ram1234598766/Cesium2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio del proyecto: no disponible (la model card menciona una estructura de carpetas `morph-ai` pero no proporciona URL externa)
 - Notebook de entrenamiento: no disponible como enlace directo (se menciona `notebooks/colab_train.ipynb` dentro del proyecto)

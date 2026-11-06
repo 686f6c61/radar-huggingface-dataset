@@ -67,5 +67,5 @@ No disponible. No se han proporcionado datos sobre modelos comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aashishsinhaa/notion-operator
+- Modelo en Hugging Face: https://huggingface.co/aashishsinhaa/notion-operator
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

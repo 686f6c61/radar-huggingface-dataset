@@ -93,9 +93,9 @@ Frente al modelo base, la variante RVN ofrece una eliminación casi total de rec
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ayushcluster00/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF-Config
-- Repositorio HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio HuggingFace de la fuente intermedia (`heretic-ara`): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
+- Repositorio Hugging Face del modelo: https://huggingface.co/ayushcluster00/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF-Config
+- Repositorio Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de la fuente intermedia (`heretic-ara`): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Herramienta Heretic (implementación de ARA): https://github.com/p-e-w/heretic
 - Repositorio oficial de la serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Repositorio alternativo con la misma variante (0bserverx): https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`liqii/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget del ecosistema Unity ML-Agents. No se trata de un modelo de lenguaje: es una política neuronal exportada en formato ONNX que controla un agente dentro de una escena de Unity, y se publica en HuggingFace mediante la librería `ml-agents` para poder visualizarse y reanudar el entrenamiento.
+`liqii/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget del ecosistema Unity ML-Agents. No se trata de un modelo de lenguaje: es una política neuronal exportada en formato ONNX que controla un agente dentro de una escena de Unity, y se publica en Hugging Face mediante la librería `ml-agents` para poder visualizarse y reanudar el entrenamiento.
 
 El repositorio tiene un tamaño de 0.0 GB (es decir, los pesos ocupan pocos megabytes), 0 descargas y 0 likes en el momento de la consulta, y fue creado el 2 de noviembre de 2026. La model card es la plantilla estándar autogenerada por ML-Agents, sin información específica sobre hiperparámetros, recompensas obtenidas ni configuración de entrenamiento.
 
@@ -32,7 +32,7 @@ No hay información sobre el número de pasos de entrenamiento, la composición 
 - Control de un agente en el entorno SnowballTarget de Unity ML-Agents mediante política PPO entrenada.
 - Exportación a ONNX para inferencia dentro del runtime de ML-Agents (Unity Inference Engine / Barracuda).
 - Reanudación del entrenamiento desde el checkpoint publicado.
-- Visualización del agente en el navegador a través del visor de HuggingFace (`https://huggingface.co/unity`), seleccionando el archivo `.onnx` o `.nn`.
+- Visualización del agente en el navegador a través del visor de Hugging Face (`https://huggingface.co/unity`), seleccionando el archivo `.onnx` o `.nn`.
 - No soporta tool calling, function calling, agentes multi-paso, generación de texto, visión, audio ni capacidades multilingües.
 - No dispone de modo "thinking" ni de razonamiento simbólico; su comportamiento está acotado a la política aprendida para la tarea.
 
@@ -41,8 +41,8 @@ No hay información sobre el número de pasos de entrenamiento, la composición 
 - Docencia de RL con ML-Agents: usar el checkpoint como ejemplo resuelto de PPO en SnowballTarget para que estudiantes comparen curvas de recompensa y ajusten hiperparámetros.
 - Reanudación de entrenamiento: cargar el modelo con `--resume` para continuar el entrenamiento con una configuración modificada (por ejemplo, cambiar la tasa de aprendizaje o el número de entornos en paralelo) y evaluar el impacto.
 - Evaluación comparativa de algoritmos: servir como línea base PPO frente a SAC o POCA entrenados en el mismo entorno, midiendo recompensa media por episodio.
-- Pruebas de integración del runtime de inferencia: validar que el pipeline de exportación ONNX y el visor web de HuggingFace funcionan con un agente real antes de desplegar modelos propios.
-- Demostración en el navegador: incrustar el agente en el visor de HuggingFace para mostrar el comportamiento aprendido sin necesidad de instalar Unity.
+- Pruebas de integración del runtime de inferencia: validar que el pipeline de exportación ONNX y el visor web de Hugging Face funcionan con un agente real antes de desplegar modelos propios.
+- Demostración en el navegador: incrustar el agente en el visor de Hugging Face para mostrar el comportamiento aprendido sin necesidad de instalar Unity.
 - Generación de datos sintéticos de interacción: ejecutar el agente en el entorno para recolectar trayectorias y usarlas como experiencia previa (off-policy) en otros experimentos de RL.
 
 ## Benchmarks y rendimiento
@@ -54,12 +54,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: muy baja (el repositorio ocupa 0.0 GB); un agente ML-Agents típico en SnowballTarget requiere unos pocos megabytes de pesos y se ejecuta en CPU sin problema.
 - GPU recomendadas: no es necesario GPU para inferencia; cualquier CPU moderna sirve. Para reanudar el entrenamiento se recomienda una GPU con al menos 4-8 GB de VRAM (GTX 1650, RTX 3060) si se usan múltiples entornos en paralelo.
 - Cabe en cualquier GPU consumer e incluso en inferencia puramente CPU.
-- Opciones de despliegue: Unity ML-Agents (runtime nativo), Unity Inference Engine / Barracuda para ONNX, ONNX Runtime para pruebas fuera de Unity, y el visor web de HuggingFace (`https://huggingface.co/unity`).
+- Opciones de despliegue: Unity ML-Agents (runtime nativo), Unity Inference Engine / Barracuda para ONNX, ONNX Runtime para pruebas fuera de Unity, y el visor web de Hugging Face (`https://huggingface.co/unity`).
 - Latencia y throughput: no disponibles; dependen del número de agentes en la escena y del hardware.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado en la información proporcionada otros agentes PPO publicados para el mismo entorno SnowballTarget con los que comparar parámetros, contexto o rendimiento. Como referencia genérica, cualquier agente ML-Agents de la organización `unity` en HuggingFace comparte el mismo formato de publicación (ONNX + `.nn`) y el mismo flujo de uso, pero no se dispone de datos comparativos de rendimiento.
+No disponible. No se han identificado en la información proporcionada otros agentes PPO publicados para el mismo entorno SnowballTarget con los que comparar parámetros, contexto o rendimiento. Como referencia genérica, cualquier agente ML-Agents de la organización `unity` en Hugging Face comparte el mismo formato de publicación (ONNX + `.nn`) y el mismo flujo de uso, pero no se dispone de datos comparativos de rendimiento.
 
 ## Limitaciones y advertencias
 
@@ -73,9 +73,9 @@ No disponible. No se han identificado en la información proporcionada otros age
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liqii/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/liqii/ppo-SnowballTarget
 - Documentación de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Repositorio de ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Tutorial corto (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes de HuggingFace: https://huggingface.co/unity
+- Visor de agentes de Hugging Face: https://huggingface.co/unity

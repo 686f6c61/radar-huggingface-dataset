@@ -82,7 +82,7 @@ No se dispone de comparaciones publicadas con otros modelos de detección de man
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AFOS KYC-001 | no disponible | 224 × 224 RGB | Accuracy 86,67 %, ROC-AUC 89,27 % (test experimental) | other | HuggingFace |
+| AFOS KYC-001 | no disponible | 224 × 224 RGB | Accuracy 86,67 %, ROC-AUC 89,27 % (test experimental) | other | Hugging Face |
 | Alternativas de detección de manipulación documental | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de comparaciones publicadas con otros modelos de detección de man
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joseph234samwel/AFOS-KYC-001-Document-Tampering
+- Hugging Face: https://huggingface.co/joseph234samwel/AFOS-KYC-001-Document-Tampering
 - Repositorio del artefacto: https://huggingface.co/joseph234samwel/AFOS-KYC-001-Document-Tampering/resolve/main/afos_kyc_model_01.keras
 - Dataset de origen citado (IDNet Identity Document Analysis): no disponible enlace directo en la información proporcionada
 - Paper, blog o demo adicionales: no disponible

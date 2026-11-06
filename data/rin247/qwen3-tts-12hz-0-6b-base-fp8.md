@@ -67,8 +67,8 @@ No se dispone de datos comparativos con otros modelos TTS en la informacion prop
 
 ## Enlaces
 
-- Repositorio de HuggingFace de este checkpoint: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-Base-FP8
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
+- Repositorio de Hugging Face de este checkpoint: https://huggingface.co/Rin247/Qwen3-TTS-12Hz-0.6B-Base-FP8
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Informe tecnico (arXiv): https://huggingface.co/papers/2601.15621
 - Repositorio de GitHub: https://github.com/QwenLM/Qwen3-TTS
 - Demo oficial en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS

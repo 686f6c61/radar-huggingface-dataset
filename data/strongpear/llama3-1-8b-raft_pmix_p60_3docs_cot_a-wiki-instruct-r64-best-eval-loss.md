@@ -77,7 +77,7 @@ La comparativa se limita a las variantes del mismo autor y al modelo base, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
+- Repositorio Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
 - Variante LAW (legal): https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-LAW-Instruct-r64-best-eval-loss
 - Variante MEDICAL: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P60_3DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B

@@ -89,7 +89,7 @@ La información disponible menciona, a través del blog de explainx.ai, una punt
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/superpdf/LightOnOCR-3-4B-ONNX
+- Repositorio Hugging Face de la conversión: https://huggingface.co/superpdf/LightOnOCR-3-4B-ONNX
 - Perfil del autor superpdf: https://huggingface.co/superpdf
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-4B
 - Página de investigación de LightOnOCR-3: https://www.lighton.ai/research/lightonocr-3

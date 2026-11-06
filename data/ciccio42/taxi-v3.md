@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ciccio42/Taxi-v3` es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gym/Gymnasium. Lo publica el usuario de HuggingFace ciccio42 (Francesco Rosa) y no es un modelo de lenguaje: es un artefacto de politica entrenada, almacenado como un fichero `q-learning.pkl` que contiene la tabla Q y el identificador del entorno. Su publicacion responde al flujo habitual de las librerias de RL (por ejemplo, las utilidades de subida de modelos de Stable-Baselines3), que empaquetan agentes entrenados para poder recargarlos y evaluarlos.
+`ciccio42/Taxi-v3` es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gym/Gymnasium. Lo publica el usuario de Hugging Face ciccio42 (Francesco Rosa) y no es un modelo de lenguaje: es un artefacto de politica entrenada, almacenado como un fichero `q-learning.pkl` que contiene la tabla Q y el identificador del entorno. Su publicacion responde al flujo habitual de las librerias de RL (por ejemplo, las utilidades de subida de modelos de Stable-Baselines3), que empaquetan agentes entrenados para poder recargarlos y evaluarlos.
 
 El modelo no tiene parametros de red neuronal, ni capas, ni tokenizador. La "arquitectura" es una tabla Q que mapea pares estado-accion a valores de recompensa esperada, actualizada de forma iterativa mediante la ecuacion de Bellman durante el entrenamiento. El repositorio ocupa 0.0 GB, lo que confirma que el artefacto es de tamano minimo, coherente con un espacio de estados discreto y pequeno como el de Taxi-v3.
 
@@ -36,7 +36,7 @@ La model card no documenta hiperparametros (tasa de aprendizaje, factor de descu
 - Resolucion del entorno Taxi-v3: recoger un pasajero en una de las paradas y dejarlo en el destino indicado dentro del entorno discreto.
 - Politica greedy derivada de la tabla Q: dado un estado, selecciona la accion de mayor valor aprendido.
 - Aprendizaje tabular sin generalizacion: solo cubre los estados observados del entorno Taxi-v3.
-- Recarga mediante `load_from_hub`: el artefacto esta pensado para cargarse con las utilidades de HuggingFace para modelos de RL.
+- Recarga mediante `load_from_hub`: el artefacto esta pensado para cargarse con las utilidades de Hugging Face para modelos de RL.
 - No soporta tool calling ni function calling.
 - No soporta agentes, razonamiento multi-paso ni planificacion fuera del MDP de Taxi-v3.
 - No tiene capacidades multilingues.
@@ -68,7 +68,7 @@ No se han publicado en la informacion disponible resultados adicionales ni compa
 - GPU recomendadas: ninguna. No se requiere GPU para cargar ni para ejecutar el agente.
 - Compatibilidad con GPU de consumo: irrelevante; cualquier CPU moderna es suficiente.
 - Espacio en disco: minimo (repositorio de 0.0 GB declarado).
-- Opciones de despliegue: Python con Gym/Gymnasium y las utilidades de HuggingFace para cargar el modelo; no aplican vLLM, llama.cpp, Ollama ni TGI porque no hay pesos de transformer que servir.
+- Opciones de despliegue: Python con Gym/Gymnasium y las utilidades de Hugging Face para cargar el modelo; no aplican vLLM, llama.cpp, Ollama ni TGI porque no hay pesos de transformer que servir.
 - Latencia y throughput: no disponibles; dependen del bucle de simulacion del entorno Taxi-v3 mas que del modelo en si.
 - Dependencias relevantes: version de Gym/Gymnasium compatible con el `env_id` guardado y, segun la model card, posible necesidad de anadir atributos como `is_slippery`.
 
@@ -76,8 +76,8 @@ No se han publicado en la informacion disponible resultados adicionales ni compa
 
 | Modelo | Entorno | Algoritmo | Metrica declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ciccio42/Taxi-v3 | Taxi-v3 | Q-learning tabular | mean_reward 7.56 +/- 2.71 | no disponible | HuggingFace |
-| ciccioz/Taxi-v3 | Taxi-v3 | Q-learning | no disponible | no disponible | HuggingFace |
+| ciccio42/Taxi-v3 | Taxi-v3 | Q-learning tabular | mean_reward 7.56 +/- 2.71 | no disponible | Hugging Face |
+| ciccioz/Taxi-v3 | Taxi-v3 | Q-learning | no disponible | no disponible | Hugging Face |
 | peter-z3ng/csci323-drive-a-taxi | Taxi-v3 | Q-learning (proyecto en Python) | no disponible | no disponible | GitHub |
 | Notebooks de Q-learning con Taxi-v3 (por ejemplo, el gist de simoninithomas) | Taxi-v3 | Q-learning | no disponible | no disponible | Google Colab |
 
@@ -97,7 +97,7 @@ La comparacion es limitada: los artefactos alternativos encontrados no publican 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ciccio42/Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/ciccio42/Taxi-v3
 - Perfil del autor: https://huggingface.co/ciccio42
 - Modelo similar de otro usuario: https://huggingface.co/ciccioz/Taxi-v3
 - Notebook de Q-learning con Taxi-v3 (Colab): https://colab.research.google.com/gist/simoninithomas/466c81aa1c2a07dd14793240c6d033c5/q-learning-with-taxi-v3.ipynb

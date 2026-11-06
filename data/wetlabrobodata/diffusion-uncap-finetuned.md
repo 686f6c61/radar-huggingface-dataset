@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diffusion-uncap-finetuned` es una política de robotica basada en difusion (diffusion policy) publicada por el usuario WetLabRoboData dentro del ecosistema LeRobot de HuggingFace. No es un modelo de lenguaje: se trata de un modelo de imitacion (imitation learning) entrenado para ejecutar una tarea de manipulacion concreta, denominada `uncap`, sobre un robot UR3e bimanual equipado con tres camaras. El modelo se distribuye como un checkpoint de LeRobot listo para cargarse con la clase `DiffusionPolicy` y ejecutarse en el robot objetivo.
+`diffusion-uncap-finetuned` es una política de robotica basada en difusion (diffusion policy) publicada por el usuario WetLabRoboData dentro del ecosistema LeRobot de Hugging Face. No es un modelo de lenguaje: se trata de un modelo de imitacion (imitation learning) entrenado para ejecutar una tarea de manipulacion concreta, denominada `uncap`, sobre un robot UR3e bimanual equipado con tres camaras. El modelo se distribuye como un checkpoint de LeRobot listo para cargarse con la clase `DiffusionPolicy` y ejecutarse en el robot objetivo.
 
 El modelo parte de un preentrenamiento multitarea (`WetLabRoboData/diffusion-multitask_12task_mix-multitask`) y despues se afina sobre el conjunto de datos especifico de la tarea `WetLabRoboData/lerobot-data-uncap`. La model card reporta 20 episodios de evaluacion con 20 exitos, es decir, una tasa de exito del 100 % autodeclarada por el autor, con los videos de rollout publicados en un dataset aparte.
 
@@ -91,10 +91,10 @@ No se dispone en la informacion proporcionada de datos comparativos de otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-uncap-finetuned
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-uncap-finetuned
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-uncap
 - Modelo base multitarea: https://huggingface.co/WetLabRoboData/diffusion-multitask_12task_mix-multitask
 - Dataset de evaluacion (videos y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-uncap-finetuned
 - Repositorio de origen de los artefactos de entrenamiento: `WetLabRoboData/lerobot-data-rama-lbm_finetune_uncap` (subcarpeta `old/`)
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot
-- HuggingFace: https://huggingface.co/
+- Hugging Face: https://huggingface.co/

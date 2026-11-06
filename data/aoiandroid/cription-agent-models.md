@@ -58,7 +58,7 @@ No se dispone de informacion sobre volumen de tokens de entrenamiento, composici
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluacion de function calling, y los resultados de busqueda web obtenidos no contienen informacion tecnica relevante sobre el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluacion de function calling, y los resultados de busqueda web obtenidos no contienen informacion tecnica relevante sobre el modelo.
 
 ## Requisitos de hardware
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | aoiandroid/cription-agent-models | ~1,27 B en dos modelos (270 M + 1 B) | No disponible | int8 + int4, `.litertlm` | Gemma Terms of Use | Repositorio espejo, 0 descargas |
-| litert-community/Gemma3-1B-IT (origen del rol de chat) | 1 B | No disponible en esta ficha | int4, `.litertlm` | Gemma Terms of Use | Publico en HuggingFace |
-| litert-community/functiongemma-mobile-actions (origen del rol de enrutador) | 270 M | No disponible (el nombre `ekv1024` sugiere 1024 tokens) | int8, `.litertlm` | Gemma Terms of Use | Publico en HuggingFace |
+| litert-community/Gemma3-1B-IT (origen del rol de chat) | 1 B | No disponible en esta ficha | int4, `.litertlm` | Gemma Terms of Use | Publico en Hugging Face |
+| litert-community/functiongemma-mobile-actions (origen del rol de enrutador) | 270 M | No disponible (el nombre `ekv1024` sugiere 1024 tokens) | int8, `.litertlm` | Gemma Terms of Use | Publico en Hugging Face |
 | Alternativas on-device de tamano similar (por ejemplo, familias Qwen2.5 de 0,5-1,5 B o SmolLM2) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion recogida |
 
 La diferencia funcional de este repositorio frente a sus dos modelos de origen no es de rendimiento, sino de empaquetado: agrupa ambos artefactos y anade el mecanismo de descarga mediante `models.json`. Cualquier comparacion de calidad frente a otras alternativas requeriria benchmarks que no estan publicados.
@@ -97,7 +97,7 @@ La diferencia funcional de este repositorio frente a sus dos modelos de origen n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aoiandroid/cription-agent-models
+- Repositorio en Hugging Face: https://huggingface.co/aoiandroid/cription-agent-models
 - Modelo base, rol de chat: https://huggingface.co/litert-community/Gemma3-1B-IT
 - Modelo base, rol de enrutador: https://huggingface.co/litert-community/functiongemma-mobile-actions_q8_ekv1024.litertlm
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dfreq-roller-feedback-es16-20261106 es un checkpoint de investigacion publicado por el usuario djduecaster en HuggingFace, orientado a control de robots simulados dentro del ecosistema Microduck Arena. Se trata de una cabeza de retroalimentacion latente ("latent-feedback head") de 126 parametros entrenada mediante una estrategia de evolucion antithetica sin derivadas (derivative-free antithetic evolution strategy), que anade correcciones acotadas sobre un backbone neuronal congelado denominado Pollen, junto con un adaptador de estado fisico previo. No es un modelo de lenguaje ni un transformer generativo: es un controlador de politica para una tarea concreta de robótica simulada.
+dfreq-roller-feedback-es16-20261106 es un checkpoint de investigacion publicado por el usuario djduecaster en Hugging Face, orientado a control de robots simulados dentro del ecosistema Microduck Arena. Se trata de una cabeza de retroalimentacion latente ("latent-feedback head") de 126 parametros entrenada mediante una estrategia de evolucion antithetica sin derivadas (derivative-free antithetic evolution strategy), que anade correcciones acotadas sobre un backbone neuronal congelado denominado Pollen, junto con un adaptador de estado fisico previo. No es un modelo de lenguaje ni un transformer generativo: es un controlador de politica para una tarea concreta de robótica simulada.
 
 El checkpoint corresponde al evento `roller-sprint-2m`, con un comando externo fijo de 1.0 y accesorios de tipo "rollers". La interfaz es extremadamente compacta: entrada `[1,61]` y salida `[1,14]`, en formato ONNX float32, con una frecuencia de control de 50 Hz. El repositorio tiene un tamano practicamente nulo (0.0 GB) y no registra descargas ni likes en el momento de la consulta, lo que es coherente con un artefacto de investigacion archivado y no con un modelo de proposito general.
 
@@ -92,7 +92,7 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-feedback-es16-20261106
+- Modelo en Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-feedback-es16-20261106
 - Model card upstream (referenciada en el repositorio): `upstream-base-card.md`
 - Nota de licencia (referenciada en el repositorio): `LICENSE-NOTE.txt`
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales.

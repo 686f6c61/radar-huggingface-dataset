@@ -77,7 +77,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-4bit-MTP
+- Repositorio Hugging Face: https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-4bit-MTP
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen sobre Qwen3.8 Flash Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - MLX-VLM: https://github.com/ml-explore/mlx-vlm

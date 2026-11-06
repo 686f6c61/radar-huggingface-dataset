@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`georgiegirl/sillytavern` no es un modelo de lenguaje, sino un repositorio de la comunidad alojado en HuggingFace que recopila presets, lorebooks y ficheros de configuración para SillyTavern, el frontend de código abierto para interacción con modelos de lenguaje en contextos de rol y narrativa. El repositorio lo mantiene el usuario `georgiegirl` bajo licencia MIT y está etiquetado únicamente para inglés.
+`georgiegirl/sillytavern` no es un modelo de lenguaje, sino un repositorio de la comunidad alojado en Hugging Face que recopila presets, lorebooks y ficheros de configuración para SillyTavern, el frontend de código abierto para interacción con modelos de lenguaje en contextos de rol y narrativa. El repositorio lo mantiene el usuario `georgiegirl` bajo licencia MIT y está etiquetado únicamente para inglés.
 
 El contenido principal son los presets de la familia "Voyage", una serie de plantillas de prompting que definen el comportamiento del modelo (system prompt, instrucciones de formato, mecánicas de juego de rol tipo Powered by the Apocalypse, gestión de NPCs, escenas y comprobaciones de habilidad). Las versiones documentadas van de la v1.0 a la v6.0.1, con notas de cambios detalladas en cada iteración.
 
@@ -85,7 +85,7 @@ No aplica una comparativa de modelos porque el repositorio no es un modelo. A mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/georgiegirl/sillytavern
+- Repositorio en Hugging Face: https://huggingface.co/georgiegirl/sillytavern
 - Anuncio Voyage v6: https://www.reddit.com/r/SillyTavernAI/comments/1xgcxcc/universal_preset_voyage_v6
 - Anuncio Voyage v5.1: https://www.reddit.com/r/SillyTavernAI/comments/1x5h8xt/universal_preset_voyage_v51
 - Anuncio Voyage v5.0: https://www.reddit.com/r/SillyTavernAI/comments/1x2m4oj/universal_preset_voyage_v5

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`TontanT/is_project-deepseek-coder-1_3b-airflow-lora` es un adaptador LoRA publicado en HuggingFace sobre el modelo base `deepseek-ai/deepseek-coder-1.3b-instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (formato PEFT, safetensors) que debe cargarse junto al modelo base para funcionar. El tamaño del repositorio es de 0,1 GB, coherente con un adaptador de rango bajo sobre un modelo de 1.300 millones de parámetros, y fue creado el 12 de septiembre de 2026.
+`TontanT/is_project-deepseek-coder-1_3b-airflow-lora` es un adaptador LoRA publicado en Hugging Face sobre el modelo base `deepseek-ai/deepseek-coder-1.3b-instruct`. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (formato PEFT, safetensors) que debe cargarse junto al modelo base para funcionar. El tamaño del repositorio es de 0,1 GB, coherente con un adaptador de rango bajo sobre un modelo de 1.300 millones de parámetros, y fue creado el 12 de septiembre de 2026.
 
-El identificador del repositorio sugiere un ajuste orientado a Apache Airflow, presumiblemente para generación o asistencia en la escritura de DAGs, aunque la model card publicada es la plantilla por defecto de HuggingFace y no confirma ni el dominio, ni el dataset, ni el procedimiento de entrenamiento. El adaptador acumula 0 descargas y 0 likes, por lo que no existe validación comunitaria de su comportamiento.
+El identificador del repositorio sugiere un ajuste orientado a Apache Airflow, presumiblemente para generación o asistencia en la escritura de DAGs, aunque la model card publicada es la plantilla por defecto de Hugging Face y no confirma ni el dominio, ni el dataset, ni el procedimiento de entrenamiento. El adaptador acumula 0 descargas y 0 likes, por lo que no existe validación comunitaria de su comportamiento.
 
 Su relevancia es doble: por un lado, sirve como ejemplo práctico de especialización ligera de un modelo de código pequeño mediante LoRA; por otro, al estar construido sobre un modelo de 1,3B, es desplegable en hardware muy modesto, incluso en CPU, lo que lo hace interesante para entornos de desarrollo local y para experimentación con PEFT.
 

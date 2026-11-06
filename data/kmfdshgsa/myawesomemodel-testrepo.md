@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado por el usuario KMFDSHGSA en HuggingFace. Por los metadatos de la plataforma se etiqueta como un modelo de tipo transformers, implementado en PyTorch, con arquitectura declarada bert y pipeline de feature-extraction, licencia MIT y compatibilidad con endpoints. El repositorio no acumula descargas ni "likes" y su tamano declarado es de 0,0 GB, lo que sugiere que no contiene pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio publicado por el usuario KMFDSHGSA en Hugging Face. Por los metadatos de la plataforma se etiqueta como un modelo de tipo transformers, implementado en PyTorch, con arquitectura declarada bert y pipeline de feature-extraction, licencia MIT y compatibilidad con endpoints. El repositorio no acumula descargas ni "likes" y su tamano declarado es de 0,0 GB, lo que sugiere que no contiene pesos publicados.
 
 Existe una contradiccion flagrante entre los metadatos y el contenido de la model card. Mientras las etiquetas apuntan a un modelo BERT de extraccion de caracteristicas, el README describe un supuesto modelo generativo de razonamiento con mejoras en matematicas, programacion y logica, mencionando incluso resultados en AIME 2025 pasando del 70 % al 87,5 % de acierto. Ademas, el texto usa marcadores genericos como "Model1", "Model2" o "MyAwesomeModel" en lugar de nombres reales de modelos, y contiene instrucciones de plantilla sin completar.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha debe interpretarse como una descripcion de un reposito
 
 ## Arquitectura y entrenamiento
 
-La unica referencia tecnica a la arquitectura son las etiquetas de HuggingFace (`bert`, `transformers`, `pytorch`, `feature-extraction`), que describirian un encoder tipo BERT orientado a extraccion de representaciones. Sin embargo, la model card habla de "profundidad de razonamiento" mejorada mediante recursos computacionales adicionales y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", terminologia propia de modelos generativos de gran escala, no de un BERT de feature extraction. Esta incoherencia impide determinar la arquitectura real.
+La unica referencia tecnica a la arquitectura son las etiquetas de Hugging Face (`bert`, `transformers`, `pytorch`, `feature-extraction`), que describirian un encoder tipo BERT orientado a extraccion de representaciones. Sin embargo, la model card habla de "profundidad de razonamiento" mejorada mediante recursos computacionales adicionales y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", terminologia propia de modelos generativos de gran escala, no de un BERT de feature extraction. Esta incoherencia impide determinar la arquitectura real.
 
 No se proporciona informacion sobre volumen de tokens de entrenamiento, composicion del dataset, ni uso de RLHF, DPO u otras tecnicas de alineamiento. Tampoco se detalla ninguna innovacion concreta (atencion lineal, decodificacion especulativa, MoE, SSM, etc.). Todo el apartado de entrenamiento queda, por tanto, como no disponible.
 
@@ -97,6 +97,6 @@ No disponible. La incoherencia entre los metadatos (BERT de feature extraction) 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KMFDSHGSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/KMFDSHGSA/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no relevantes para este modelo (enlaces a openai.com, help.openai.com y status.openai.com, sin relacion con el repositorio evaluado).
 - Paper, blog, repositorio de codigo o demo: no disponibles.

@@ -87,10 +87,10 @@ Recompensa de reconstruccion en RL (FVE centrada, media de 2.048 rollouts por pa
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Rendimiento reportado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `ceselder/glm-5.3-olens-lens` (este) | Lens LoRA sobre MoE de 754B | Adaptador 2,17 GB; base 754B | Base: 1M tokens | NVIDIA Open Model License | WorkspaceBench mean_24 0,271 (SFT) a 0,478 (mejor checkpoint RL) | HuggingFace, repo de 49,9 GB |
-| `ceselder/olens-qwen3.6-27b-l42` | Lens LoRA sobre denso de 27B, capa 42 | no disponible en la informacion | no disponible | no disponible | no disponible | HuggingFace |
-| `nvidia/GLM-5.3-NVFP4` | Modelo base MoE generativo | 754B | 1M tokens | NVIDIA Open Model License | No evaluado con WorkspaceBench | HuggingFace |
-| `ceselder/glm-5.3-olens-reconstructor` | Reconstructor texto-a-activacion (complementario, no alternativo) | no disponible | no disponible | no disponible | Se usa como reward model del lens | HuggingFace |
+| `ceselder/glm-5.3-olens-lens` (este) | Lens LoRA sobre MoE de 754B | Adaptador 2,17 GB; base 754B | Base: 1M tokens | NVIDIA Open Model License | WorkspaceBench mean_24 0,271 (SFT) a 0,478 (mejor checkpoint RL) | Hugging Face, repo de 49,9 GB |
+| `ceselder/olens-qwen3.6-27b-l42` | Lens LoRA sobre denso de 27B, capa 42 | no disponible en la informacion | no disponible | no disponible | no disponible | Hugging Face |
+| `nvidia/GLM-5.3-NVFP4` | Modelo base MoE generativo | 754B | 1M tokens | NVIDIA Open Model License | No evaluado con WorkspaceBench | Hugging Face |
+| `ceselder/glm-5.3-olens-reconstructor` | Reconstructor texto-a-activacion (complementario, no alternativo) | no disponible | no disponible | no disponible | Se usa como reward model del lens | Hugging Face |
 
 El lens de Qwen3.6-27B es la referencia metodologica directa (misma familia, menor escala); el reconstructor no compite con el lens, lo complementa en el bucle de RL. GLM-5.3 en su version original de Z.ai se distribuye bajo licencia MIT segun las fuentes publicas, mientras que la conversion NVFP4 de NVIDIA usa la NVIDIA Open Model License, lo que cambia las condiciones de uso comercial.
 
@@ -110,11 +110,11 @@ El lens de Qwen3.6-27B es la referencia metodologica directa (misma familia, men
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/glm-5.3-olens-lens
+- Modelo en Hugging Face: https://huggingface.co/ceselder/glm-5.3-olens-lens
 - Reconstructor texto-a-activacion: https://huggingface.co/ceselder/glm-5.3-olens-reconstructor
 - Lens previo sobre Qwen3.6-27B: https://huggingface.co/ceselder/olens-qwen3.6-27b-l42
 - Coleccion `glm5.3-olens`: https://huggingface.co/collections/ceselder/glm53-olens-6adaf9d544d3645a7fb96eb9
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/GLM-5.3-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/GLM-5.3-NVFP4
 - Pagina de GLM-5.3 en openlm.ai: https://openlm.ai/glm-5.3/
 - Cobertura del lanzamiento de GLM-5.3 en Unite.AI: https://www.unite.ai/z-ai-launches-glm-5-3-with-frontier-coding-and-a-cyber-capability-that-outgrew-its-training/
 - Ficha de GLM 5.3 en VeniceStats: https://venicestats.com/venice-models/z-ai-glm-5-3

@@ -70,4 +70,4 @@ No se dispone de informacion sobre modelos comparables especificos para deteccio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nibeditans/Airline-Payment-Fraud-XGBoost
+- Repositorio en Hugging Face: https://huggingface.co/nibeditans/Airline-Payment-Fraud-XGBoost

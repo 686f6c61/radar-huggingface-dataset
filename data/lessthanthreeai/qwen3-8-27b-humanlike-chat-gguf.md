@@ -75,7 +75,7 @@ La única evaluación numérica documentada es interna y cualitativa:
 - **VRAM estimada para inferencia**: los tamaños de fichero publicados son Q8_0 28,60 GB, Q6_K 22,08 GB, Q5_K_M 19,24 GB, Q4_K_M 16,55 GB y Q3_K_M 13,32 GB. Hay que sumar a esa cifra el espacio para el contexto y la caché KV, que depende de la longitud de contexto configurada; el autor recomienda elegir la cuantización más alta que quepa dejando memoria libre para contexto y KV cache.
 - **GPU recomendadas según la tabla del autor**: 32 GB o más de VRAM para Q8_0 (máxima calidad práctica); 24 GB o más para Q6_K (mejor equilibrio entre calidad y memoria); 24 GB de clase o descarga parcial a CPU para Q5_K_M.
 - **¿Cabe en GPU de consumo?** Sí, en las cuantizaciones bajas y medias. Q3_K_M (13,32 GB) y Q4_K_M (16,55 GB) entran en tarjetas de 16-24 GB (por ejemplo, RTX 4080/4090 o equivalentes). Q5_K_M y Q6_K requieren 24 GB de VRAM o descarga parcial de capas a CPU. Q8_0 queda fuera de las GPU de consumo habituales.
-- **Opciones de despliegue**: llama.cpp es la ruta principal, dado que el repositorio es GGUF y la librería declarada es gguf. Son aplicables los runners habituales sobre llama.cpp (Ollama, LM Studio, koboldcpp, text-generation-webui) y SillyTavern como front-end de chat y roleplay. La etiqueta endpoints_compatible del repositorio sugiere compatibilidad con endpoints de HuggingFace. Las evaluaciones del autor con vLLM/Transformers se hicieron sobre el adaptador, no sobre estos GGUF.
+- **Opciones de despliegue**: llama.cpp es la ruta principal, dado que el repositorio es GGUF y la librería declarada es gguf. Son aplicables los runners habituales sobre llama.cpp (Ollama, LM Studio, koboldcpp, text-generation-webui) y SillyTavern como front-end de chat y roleplay. La etiqueta endpoints_compatible del repositorio sugiere compatibilidad con endpoints de Hugging Face. Las evaluaciones del autor con vLLM/Transformers se hicieron sobre el adaptador, no sobre estos GGUF.
 - **Latencia y throughput**: no disponibles.
 - **Almacenamiento**: el repositorio completo ocupa 443,2 GB, aunque basta con descargar la cuantización elegida.
 
@@ -105,7 +105,7 @@ Alternativas comparables de otros autores (otros GGUF de 27B orientados a rolepl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF
+- Modelo en Hugging Face: https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF
 - Demo en vivo (Space): https://huggingface.co/spaces/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Ejemplos de conversación, incluido un ejemplo en modo razonamiento del endpoint alojado: archivo `EXAMPLES.md` en el repositorio del modelo

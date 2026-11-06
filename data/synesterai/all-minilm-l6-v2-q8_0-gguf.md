@@ -77,7 +77,7 @@ La version cuantizada ofrece el mismo rendimiento que el original en tareas de e
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version: https://huggingface.co/synesterai/all-minilm-l6-v2-q8_0.gguf
+- Repositorio Hugging Face de esta version: https://huggingface.co/synesterai/all-minilm-l6-v2-q8_0.gguf
 - Modelo original: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Repositorio GitHub del modelo base: https://github.com/henrytanner52/all-MiniLM-L6-v2
 - Guia de instalacion y uso local: https://makiai.com/en/what-it-is-and-how-to-install-and-run-locally-the-llm-ai-all-minilm/

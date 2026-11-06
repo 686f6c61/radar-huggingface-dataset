@@ -100,7 +100,7 @@ Frente a estas alternativas, la ventaja diferencial de este modelo es exclusivam
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Gemma4-E4B-8B-Heretic-Ultra-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Gemma4-E4B-8B-Heretic-Ultra-GGUF
 - Modelo base: https://huggingface.co/dopaemon/Gemma4-E4B-8B-Heretic-Ultra
 - Página de resumen y descargas de mradermacher para este modelo: https://hf.tst.eu/model#Gemma4-E4B-8B-Heretic-Ultra-GGUF
 - Licencia de Gemma referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license

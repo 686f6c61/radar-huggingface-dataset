@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEA-CLIP-Tiny (ablation: Only CC12M) es un checkpoint de investigación publicado por el usuario fassabilf en HuggingFace. Se trata de uno de los brazos de ablación del modelo principal SEA-CLIP-Tiny, presentado en el congreso ACCV 2026, cuyo objetivo es construir un modelo de embeddings texto-imagen eficiente y multilingüe para lenguas del sudeste asiático. Este checkpoint concreto replica la arquitectura, el pipeline y los hiperparámetros del modelo principal, pero se entrena únicamente con el corpus CC12M (10,97 millones de pares imagen-texto).
+SEA-CLIP-Tiny (ablation: Only CC12M) es un checkpoint de investigación publicado por el usuario fassabilf en Hugging Face. Se trata de uno de los brazos de ablación del modelo principal SEA-CLIP-Tiny, presentado en el congreso ACCV 2026, cuyo objetivo es construir un modelo de embeddings texto-imagen eficiente y multilingüe para lenguas del sudeste asiático. Este checkpoint concreto replica la arquitectura, el pipeline y los hiperparámetros del modelo principal, pero se entrena únicamente con el corpus CC12M (10,97 millones de pares imagen-texto).
 
 Técnicamente es un CLIP de doble torre: una torre de visión ViT-T/16 y una torre de texto de 12 capas y 384 dimensiones de ancho, con dimensión de embedding de 512. El conjunto suma 46,11 millones de parámetros (5,62 M de visión y 40,49 M de texto), un orden de magnitud por debajo de los CLIP de escala base. El tokenizador es el BPE de CLIP, con vocabulario de 49.408 tokens y longitud de contexto de 77.
 
@@ -103,7 +103,7 @@ La informacion disponible solo permite comparar con el modelo principal del mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-cc12m
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-cc12m
 - Modelo principal del proyecto: https://huggingface.co/fassabilf/sea-clip-tiny
 - Codigo de entrenamiento y evaluacion: https://github.com/fassabilf/sea-clip-tiny
 - Articulo citado: SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages, ACCV 2026 (sin URL disponible en la informacion proporcionada)

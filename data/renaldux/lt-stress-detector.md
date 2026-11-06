@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Idioma | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| renaldux/lt-stress-detector | 580 M | Lituano | Acento léxico y priegaidė por trama | CC BY-SA 4.0 | HuggingFace |
-| classla/Wav2Vec2BertPrimaryStressAudioFrameClassifier | No disponible | Croata, serbio, esloveno | Acento primario por trama | No disponible | HuggingFace |
-| sammy786/wav2vec2-xlsr-lithuanian | No disponible | Lituano | ASR (alineamiento CTC en el pipeline) | No disponible | HuggingFace |
+| renaldux/lt-stress-detector | 580 M | Lituano | Acento léxico y priegaidė por trama | CC BY-SA 4.0 | Hugging Face |
+| classla/Wav2Vec2BertPrimaryStressAudioFrameClassifier | No disponible | Croata, serbio, esloveno | Acento primario por trama | No disponible | Hugging Face |
+| sammy786/wav2vec2-xlsr-lithuanian | No disponible | Lituano | ASR (alineamiento CTC en el pipeline) | No disponible | Hugging Face |
 
 El modelo base de `classla` es el referente directo en la misma arquitectura y tarea, pero para otras lenguas eslavas del sur; no se dispone de métricas comparables publicadas en la información proporcionada. El modelo lituano de `sammy786` es un ASR que se usa como componente auxiliar del pipeline, no como detector de acento. No se conocen otros detectores de acento lituano de acceso abierto con los que comparar directamente.
 
@@ -100,7 +100,7 @@ El modelo base de `classla` es el referente directo en la misma arquitectura y t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/renaldux/lt-stress-detector
+- Modelo en Hugging Face: https://huggingface.co/renaldux/lt-stress-detector
 - Modelo base: https://huggingface.co/classla/Wav2Vec2BertPrimaryStressAudioFrameClassifier
 - Paper del modelo base (Rupnik, Ljubešić, Porupski): https://arxiv.org/abs/2505.24571
 - Código complementario `ltstress` (Apache-2.0): https://github.com/rzajanckauskas/lt-stress-detector

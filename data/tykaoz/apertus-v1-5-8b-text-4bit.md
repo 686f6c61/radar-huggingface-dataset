@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TyKaoz/Apertus-v1.5-8B-text-4bit
+- Modelo en Hugging Face: https://huggingface.co/TyKaoz/Apertus-v1.5-8B-text-4bit
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
 - Repositorio de MLX: https://github.com/ml-explore/mlx
 - Sitio del publicador: https://www.tykaoz.bzh

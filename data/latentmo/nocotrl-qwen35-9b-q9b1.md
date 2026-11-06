@@ -80,7 +80,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/nocotrl-qwen35-9b-q9b1
+- Hugging Face: https://huggingface.co/latentMO/nocotrl-qwen35-9b-q9b1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de código y evaluaciones: https://github.com/johntrob14/tricky_little_guys
 - Tinker (plataforma de entrenamiento): no disponible en la información proporcionada.

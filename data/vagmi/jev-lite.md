@@ -98,8 +98,8 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 | Alternativa | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vagmi/jev-lite (este modelo) | 7,98 B base + 34,9 M adaptador | no disponible | 0,816 de exactitud y ECE 0,019 en su evaluación retenida (no comparable con MMLU/HumanEval) | gemma | adaptador PEFT en HuggingFace |
-| google/gemma-4-E4B-it (modelo base) | 7,98 B | no disponible | no disponible en la información proporcionada | gemma | HuggingFace |
+| vagmi/jev-lite (este modelo) | 7,98 B base + 34,9 M adaptador | no disponible | 0,816 de exactitud y ECE 0,019 en su evaluación retenida (no comparable con MMLU/HumanEval) | gemma | adaptador PEFT en Hugging Face |
+| google/gemma-4-E4B-it (modelo base) | 7,98 B | no disponible | no disponible en la información proporcionada | gemma | Hugging Face |
 | LLM generativo + parseo de la respuesta | depende del modelo | depende del modelo | no se aportan medidas comparativas | depende del modelo | según proveedor |
 | Clasificador dedicado (tipo encoder) | no disponible | no disponible | no se aportan medidas comparativas | no disponible | según modelo |
 
@@ -119,7 +119,7 @@ No se han publicado comparativas con otros modelos en la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vagmi/jev-lite
+- Modelo en Hugging Face: https://huggingface.co/vagmi/jev-lite
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Servidor y API TypeSafe System One (transformers y vLLM): https://github.com/vagmi/jevlite
 - Documentación de las primitivas TypeSafe: https://docs.typesafe.ai

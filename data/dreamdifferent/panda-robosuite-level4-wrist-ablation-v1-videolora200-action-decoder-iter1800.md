@@ -44,7 +44,7 @@ El contrato de datos está explícitamente documentado: el conjunto `dreamdiffer
 - Reentrenamiento o *fine-tuning* sobre nuevos datos teleoperados: el decodificador admite un backbone y una LoRA congelados, de modo que se puede sustituir el conjunto de datos (por ejemplo, con una textura o un operador distinto) manteniendo el resto del pipeline.
 - Generación de trayectorias sintéticas para aumento de datos: ejecutando el decodificador en bucle sobre rollouts simulados se pueden producir episodios adicionales de efector final a 5 Hz para preentrenar otras políticas.
 - Validación de transferencia sim-a-real en la dirección WidowX → Panda: el checkpoint usa teleoperación grabada con WidowX sobre un entorno Panda de RoboSuite, por lo que es un punto de partida natural para estudiar la brecha entre plataformas.
-- Reproducibilidad de experimentos: al estar fijadas las revisiones de todas las entradas congeladas (commits y hashes de revisiones de HuggingFace), permite reconstruir exactamente el estado del pipeline en un momento dado.
+- Reproducibilidad de experimentos: al estar fijadas las revisiones de todas las entradas congeladas (commits y hashes de revisiones de Hugging Face), permite reconstruir exactamente el estado del pipeline en un momento dado.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No disponible. La información proporcionada no incluye otros checkpoints compar
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter1800 | no disponible | no disponible | no disponible | no disponible | pública en HuggingFace, 0 descargas |
+| panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter1800 | no disponible | no disponible | no disponible | no disponible | pública en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye otros checkpoints compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter1800
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/panda-robosuite-level4-wrist-ablation-v1-videolora200-action-decoder-iter1800
 - Backbone Video2World inicial: https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-video-fused (revisión `8e39d96344dea0a82ae673874a38206a6c412948`)
 - Decodificador de acciones inicial: https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-action-decoder-iter2374 (revisión `0ea6db91672db019d9d6dc9a6c9bd1ecc0504001`)
 - LoRA de vídeo congelada: https://huggingface.co/dreamdifferent/panda-robosuite-level4-wrist-ablation-v1-video-lora-iter200 (revisión `24e15bdb2250e55e07a4af11f8f5022615362e6b`)

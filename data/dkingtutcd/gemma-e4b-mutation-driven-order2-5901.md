@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-mutation-driven-order2-5901` es un ajuste fino (finetune) del modelo multimodal Gemma 4 E4B en su variante instruct, publicado por el usuario dkingtutcd en HuggingFace. Se trata de un modelo de tipo image-text-to-text, es decir, acepta entradas combinadas de imagen y texto y genera texto, y está pensado para tareas conversacionales. El modelo base empleado es `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del Gemma 4 E4B instruct de Google preparada por Unsloth para facilitar el entrenamiento.
+`dkingtutcd/gemma-e4b-mutation-driven-order2-5901` es un ajuste fino (finetune) del modelo multimodal Gemma 4 E4B en su variante instruct, publicado por el usuario dkingtutcd en Hugging Face. Se trata de un modelo de tipo image-text-to-text, es decir, acepta entradas combinadas de imagen y texto y genera texto, y está pensado para tareas conversacionales. El modelo base empleado es `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, una versión cuantizada en 4 bits del Gemma 4 E4B instruct de Google preparada por Unsloth para facilitar el entrenamiento.
 
-El autor declara que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, y que el resultado se ha subido en precisión FP16 (16 bits). El repositorio contiene 7.996.156.490 parámetros (aproximadamente 8 mil millones) en formato safetensors, con un tamaño total de 16 GB, coherente con pesos en FP16. La licencia declarada es Apache 2.0.
+El autor declara que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, y que el resultado se ha subido en precisión FP16 (16 bits). El repositorio contiene 7.996.156.490 parámetros (aproximadamente 8 mil millones) en formato safetensors, con un tamaño total de 16 GB, coherente con pesos en FP16. La licencia declarada es Apache 2.0.
 
 La relevancia de esta ficha es limitada: se trata de un modelo derivado de un finetune comunitario, con 0 descargas y 0 likes en el momento de la consulta, sin model card descriptiva más allá de la plantilla de Unsloth y sin datos de benchmarks ni de composición del dataset de entrenamiento. El nombre del repositorio sugiere una experimentación con variantes de entrenamiento ("mutation-driven-order2"), pero no se aporta documentación al respecto.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dkingtutcd/gemma-e4b-mutation-driven-order2-5901 | ~8 B | no disponible | imagen-texto | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8 B | no disponible | imagen-texto | apache-2.0 (según repo base) | HuggingFace, mantenido por Unsloth |
-| Gemma 4 E4B instruct (original de Google) | ~8 B | no disponible | imagen-texto | Gemma license (no confirmada en esta ficha) | HuggingFace / Google |
+| dkingtutcd/gemma-e4b-mutation-driven-order2-5901 | ~8 B | no disponible | imagen-texto | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8 B | no disponible | imagen-texto | apache-2.0 (según repo base) | Hugging Face, mantenido por Unsloth |
+| Gemma 4 E4B instruct (original de Google) | ~8 B | no disponible | imagen-texto | Gemma license (no confirmada en esta ficha) | Hugging Face / Google |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, modalidad y licencia.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dkingtutcd/gemma-e4b-mutation-driven-order2-5901
+- Hugging Face: https://huggingface.co/dkingtutcd/gemma-e4b-mutation-driven-order2-5901
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no se proporciona enlace directo en la información disponible.
+- TRL de Hugging Face: no se proporciona enlace directo en la información disponible.

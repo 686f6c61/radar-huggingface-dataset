@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SteveNguyen/sugarcube_in_mug_2cam_pi05_step20000 es una política robótica de tipo Vision-Language-Action (VLA) publicada en HuggingFace por el usuario SteveNguyen. Se trata de un ajuste fino del modelo base lerobot/pi05_base, que a su vez implementa π₀.₅ (Pi05), el modelo VLA de Physical Intelligence concebido para generalización en entornos abiertos. La política resultante tiene 4.143.404.816 parámetros (unos 4,14 mil millones) y se distribuye en formato safetensors con licencia Apache 2.0.
+SteveNguyen/sugarcube_in_mug_2cam_pi05_step20000 es una política robótica de tipo Vision-Language-Action (VLA) publicada en Hugging Face por el usuario SteveNguyen. Se trata de un ajuste fino del modelo base lerobot/pi05_base, que a su vez implementa π₀.₅ (Pi05), el modelo VLA de Physical Intelligence concebido para generalización en entornos abiertos. La política resultante tiene 4.143.404.816 parámetros (unos 4,14 mil millones) y se distribuye en formato safetensors con licencia Apache 2.0.
 
 El modelo resuelve una tarea de manipulación concreta: introducir un terrón de azúcar en una taza ("put the sugar cube in the mug"). Se ha entrenado por imitación con 150 episodios y 23.046 fotogramas grabados a 50 FPS sobre un robot de tipo grabette con dos cámaras (cam0 y cam1) a resolución 360x480. La política consume las dos imágenes y un vector de estado de 2 dimensiones, y produce un vector de acción de 11 dimensiones.
 
@@ -30,7 +30,7 @@ Su relevancia es doble: por un lado, ejemplifica el flujo de trabajo de LeRobot 
 | Dataset de entrenamiento | SteveNguyen/sugarcube_in_mug_graspproj_2cam (150 episodios, 23.046 fotogramas, 50 FPS) |
 | Tamaño del repositorio | 9,4 GB |
 | Versión de LeRobot | 0.6.1 |
-| Fecha de publicación | 18 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 18 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SteveNguyen/sugarcube_in_mug_2cam_pi05_step20000 | 4.143.404.816 | no disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) | Ajuste fino de tarea única sobre robot grabette con dos cámaras |
-| lerobot/pi05_base | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | HuggingFace | Modelo base del que deriva este ajuste; sin datos de tarea ni de evaluación |
-| Otras políticas del ecosistema LeRobot (ACT, Diffusion Policy, SmolVLA y similares) | no disponible | no aplica | variable según modelo | HuggingFace | Alternativas de la misma categoría funcional (políticas de imitación), pero la información proporcionada no incluye sus especificaciones ni cifras comparables |
+| SteveNguyen/sugarcube_in_mug_2cam_pi05_step20000 | 4.143.404.816 | no disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) | Ajuste fino de tarea única sobre robot grabette con dos cámaras |
+| lerobot/pi05_base | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Hugging Face | Modelo base del que deriva este ajuste; sin datos de tarea ni de evaluación |
+| Otras políticas del ecosistema LeRobot (ACT, Diffusion Policy, SmolVLA y similares) | no disponible | no aplica | variable según modelo | Hugging Face | Alternativas de la misma categoría funcional (políticas de imitación), pero la información proporcionada no incluye sus especificaciones ni cifras comparables |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa de rendimiento entre estas alternativas.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SteveNguyen/sugarcube_in_mug_2cam_pi05_step20000
+- Modelo en Hugging Face: https://huggingface.co/SteveNguyen/sugarcube_in_mug_2cam_pi05_step20000
 - Dataset de entrenamiento: https://huggingface.co/datasets/SteveNguyen/sugarcube_in_mug_graspproj_2cam
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SteveNguyen/sugarcube_in_mug_graspproj_2cam
 - Modelo base: https://huggingface.co/lerobot/pi05_base

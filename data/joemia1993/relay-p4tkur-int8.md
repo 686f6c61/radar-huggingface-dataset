@@ -2,7 +2,7 @@
 
 ## Resumen
 
-relay-p4tkur-int8 es un checkpoint intermedio de un modelo de lenguaje basado en la arquitectura Qwen2ForCausalLM, publicado por el usuario joemia1993 en HuggingFace. Se trata de un modelo de una sola capa con un tamaño total de 44.609.280 parámetros y cuantización int8 mediante bitsandbytes. El nombre del proyecto en la model card es "relay-global" y su estado declarado es explícitamente el de un punto de interrupción de entrenamiento ("训练中 checkpoint", checkpoint en entrenamiento), sin evaluación realizada.
+relay-p4tkur-int8 es un checkpoint intermedio de un modelo de lenguaje basado en la arquitectura Qwen2ForCausalLM, publicado por el usuario joemia1993 en Hugging Face. Se trata de un modelo de una sola capa con un tamaño total de 44.609.280 parámetros y cuantización int8 mediante bitsandbytes. El nombre del proyecto en la model card es "relay-global" y su estado declarado es explícitamente el de un punto de interrupción de entrenamiento ("训练中 checkpoint", checkpoint en entrenamiento), sin evaluación realizada.
 
 La relevancia de este modelo es muy limitada desde el punto de vista práctico: no es un modelo entrenado y finalizado, sino un artefacto intermedio. Su interés es principalmente técnico o experimental, ya que ilustra el uso de cuantización int8 con bitsandbytes sobre una estructura Qwen2 reducida a una única capa. No debe considerarse un modelo listo para producción ni para evaluación de capacidades.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables de una sola capa y 44,6 M de pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joemia1993/relay-p4tkur-int8
+- Hugging Face: https://huggingface.co/joemia1993/relay-p4tkur-int8
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

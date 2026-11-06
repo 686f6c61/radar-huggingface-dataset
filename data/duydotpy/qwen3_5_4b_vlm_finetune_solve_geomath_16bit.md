@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`duydotpy/qwen3_5_4B_VLM_finetune_solve_geomath_16bit` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3.5-4B`, publicado por el usuario duydotpy en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la resolución de problemas de geometría y matemáticas (según indica el nombre del repositorio, "solve_geomath"), construido sobre la familia Qwen3.5 de Alibaba. El sufijo "16bit" sugiere que los pesos se han guardado en precisión de 16 bits.
+`duydotpy/qwen3_5_4B_VLM_finetune_solve_geomath_16bit` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3.5-4B`, publicado por el usuario duydotpy en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a la resolución de problemas de geometría y matemáticas (según indica el nombre del repositorio, "solve_geomath"), construido sobre la familia Qwen3.5 de Alibaba. El sufijo "16bit" sugiere que los pesos se han guardado en precisión de 16 bits.
 
-El modelo se ha entrenado con Unsloth y la librería TRL de HuggingFace, lo que según la model card permitió un entrenamiento "2x más rápido". El repositorio tiene un tamaño de 0.0 GB, las descargas y los "likes" son cero, y la model card es prácticamente una plantilla autogenerada sin información técnica detallada sobre el dataset, el proceso de entrenamiento o los resultados obtenidos.
+El modelo se ha entrenado con Unsloth y la librería TRL de Hugging Face, lo que según la model card permitió un entrenamiento "2x más rápido". El repositorio tiene un tamaño de 0.0 GB, las descargas y los "likes" son cero, y la model card es prácticamente una plantilla autogenerada sin información técnica detallada sobre el dataset, el proceso de entrenamiento o los resultados obtenidos.
 
 La relevancia de esta ficha es limitada: se trata de un experimento de ajuste fino de un modelo de 4B parámetros con licencia Apache 2.0, útil como punto de partida para quien quiera reproducir el pipeline o evaluar el comportamiento del modelo base Qwen3.5-4B en tareas de geometría multimodal. No obstante, la ausencia de documentación y de benchmarks publicados impide validar su calidad de forma objetiva.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| duydotpy/qwen3_5_4B_VLM_finetune_solve_geomath_16bit | 4B (según base) | no disponible | apache-2.0 | Sí (image-text-to-text) | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-4B (modelo base) | 4B | no disponible | no disponible en esta ficha | Sí | HuggingFace |
-| Qwen2.5-VL-3B (alternativa de la familia Qwen) | 3B | 32K (según documentación pública de Qwen2.5-VL) | Apache 2.0 | Sí | HuggingFace, ampliamente usado |
+| duydotpy/qwen3_5_4B_VLM_finetune_solve_geomath_16bit | 4B (según base) | no disponible | apache-2.0 | Sí (image-text-to-text) | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-4B (modelo base) | 4B | no disponible | no disponible en esta ficha | Sí | Hugging Face |
+| Qwen2.5-VL-3B (alternativa de la familia Qwen) | 3B | 32K (según documentación pública de Qwen2.5-VL) | Apache 2.0 | Sí | Hugging Face, ampliamente usado |
 
 La comparación con Qwen2.5-VL-3B se incluye como referencia de la familia Qwen; los datos de contexto y licencia de ese modelo provienen de su documentación pública y no de la información proporcionada para este repositorio. No se dispone de benchmarks del modelo ajustado para comparar rendimiento.
 
@@ -78,7 +78,7 @@ La comparación con Qwen2.5-VL-3B se incluye como referencia de la familia Qwen;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/duydotpy/qwen3_5_4B_VLM_finetune_solve_geomath_16bit
+- Hugging Face: https://huggingface.co/duydotpy/qwen3_5_4B_VLM_finetune_solve_geomath_16bit
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

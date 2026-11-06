@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.7-Flash-Name-NSFW es un ajuste fino por LoRA del modelo base zai-org/GLM-4.7-Flash, publicado por el usuario 0xSojalSec en HuggingFace. El objetivo del ajuste es fijar una personalidad concreta (una "catgirl" caracterizada en la model card como condescendiente, sarcastica y con un registro coloquial y vulgar) mediante aproximadamente 1800 conversaciones multi-turno en chino, orientadas a roleplay para adultos y sin alineacion de seguridad. El peso resultante conserva la arquitectura del modelo base y anade una capa de comportamiento fija que impregna todas las respuestas.
+GLM-4.7-Flash-Name-NSFW es un ajuste fino por LoRA del modelo base zai-org/GLM-4.7-Flash, publicado por el usuario 0xSojalSec en Hugging Face. El objetivo del ajuste es fijar una personalidad concreta (una "catgirl" caracterizada en la model card como condescendiente, sarcastica y con un registro coloquial y vulgar) mediante aproximadamente 1800 conversaciones multi-turno en chino, orientadas a roleplay para adultos y sin alineacion de seguridad. El peso resultante conserva la arquitectura del modelo base y anade una capa de comportamiento fija que impregna todas las respuestas.
 
 Arquitectonicamente hereda el diseno MoE de GLM-4.7-Flash: 29.943.390.976 parametros totales (unos 30B), con roughly 3B parametros activos por token, 47 capas, hidden size de 2048, 64 expertos enrutados mas 1 compartido con top-4, y atencion MLA con compresion tipo LoRA de Q/KV. La longitud de contexto es de 202.752 tokens, lo que lo situa en la gama alta de ventana de contexto para su tamano.
 
@@ -92,14 +92,14 @@ No se han encontrado en la busqueda web modelos comparables ni datos de rendimie
 - Cobertura idiomatica restringida al chino; no hay evaluacion ni garantia de comportamiento coherente en castellano u otros idiomas.
 - Riesgo de alucinacion: no se ha publicado ninguna evaluacion de fidelidad factual, y el ajuste prioriza el estilo sobre la precision.
 - La licencia MIT es permisiva y permite uso comercial de los pesos, pero el autor limita explicitamente el uso a investigacion personal y entretenimiento y declina toda responsabilidad sobre el contenido generado. Existe una discrepancia entre la licencia declarada y las restricciones de uso indicadas en la model card.
-- El modelo esta marcado como `not-for-all-audiences`, lo que implica que HuggingFace lo clasifica como contenido no apto para todas las audiencias.
+- El modelo esta marcado como `not-for-all-audiences`, lo que implica que Hugging Face lo clasifica como contenido no apto para todas las audiencias.
 - Problemas conocidos de compatibilidad: requiere una version reciente de llama.cpp con soporte de `glm4_moe_lite` y `--jinja` obligatorio; Ollama y algunos motores de plantillas mas antiguos producen formatos incorrectos, bloques de pensamiento duplicados o perdida total de la personalidad.
 - El usuario debe verificar la legalidad del acceso y uso de contenido adulto en su jurisdiccion antes de emplear el modelo.
 - La informacion disponible sobre el modelo es escasa (19 descargas, 0 likes, sin benchmarks publicados), por lo que no hay validacion independiente de su comportamiento real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/GLM-4.7-Flash-Name-NSFW
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/GLM-4.7-Flash-Name-NSFW
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - llama.cpp (cuantizacion e inferencia): https://github.com/ggml-org/llama.cpp
 - ms-swift (framework de entrenamiento): https://github.com/modelscope/ms-swift

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mawrooth (مَوروث) es un ajuste fino supervisado del modelo saudí humain-ai/ALLaM-7B-Instruct-preview, publicado por el usuario NorahAlobaied en HuggingFace. Su proposito es muy concreto: explicar poesia nabati saudita (الشعر النبطي) verso a verso, combinando un diccionario nabati de mas de 1000 terminos con un razonamiento en cadena (Chain-of-Thought) y contexto cultural autentico de la peninsula arabiga. El proyecto se presento al hackathon Arabthon 2026.
+Mawrooth (مَوروث) es un ajuste fino supervisado del modelo saudí humain-ai/ALLaM-7B-Instruct-preview, publicado por el usuario NorahAlobaied en Hugging Face. Su proposito es muy concreto: explicar poesia nabati saudita (الشعر النبطي) verso a verso, combinando un diccionario nabati de mas de 1000 terminos con un razonamiento en cadena (Chain-of-Thought) y contexto cultural autentico de la peninsula arabiga. El proyecto se presento al hackathon Arabthon 2026.
 
 Tecnicamente es un modelo de 7.017.336.832 parametros (unos 7B) con pesos en safetensors y licencia Apache 2.0, entrenado mediante LoRA con rango 16 sobre 587 versos nabati. La model card reporta una precision de token (Token Accuracy) del 85,75 % y ausencia de overfitting segun el autor, aunque no se publican resultados en benchmarks estandar. El repositorio ocupa 5,5 GB.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mawrooth-ALLaM-7B | ~7B (adaptador LoRA) | No disponible | Poesia nabati saudita | Apache 2.0 | HuggingFace |
-| humain-ai/ALLaM-7B-Instruct-preview (modelo base) | ~7B | No disponible en esta informacion | Proposito general en arabe, alineado por instrucciones | No disponible en esta informacion | HuggingFace |
+| Mawrooth-ALLaM-7B | ~7B (adaptador LoRA) | No disponible | Poesia nabati saudita | Apache 2.0 | Hugging Face |
+| humain-ai/ALLaM-7B-Instruct-preview (modelo base) | ~7B | No disponible en esta informacion | Proposito general en arabe, alineado por instrucciones | No disponible en esta informacion | Hugging Face |
 | Otros modelos arabes especializados en poesia nabati | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone, en la informacion proporcionada, de datos de rendimiento del modelo base ni de alternativas comparables, por lo que la comparacion se limita a la relacion de dependencia entre Mawrooth y ALLaM-7B-Instruct-preview. Cualquier comparacion cuantitativa con modelos como Jais, Fanar, SILMA o AceGPT requeriria datos que no se han publicado aqui.
@@ -95,7 +95,7 @@ No se dispone, en la informacion proporcionada, de datos de rendimiento del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NorahAlobaied/Mawrooth-ALLaM-7B
+- Modelo en Hugging Face: https://huggingface.co/NorahAlobaied/Mawrooth-ALLaM-7B
 - Modelo base: https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview
 - Dataset referenciado en la model card (nombre sin resolver): `YOUR_USERNAME/Mawrooth-Nabati-Dataset`; no se ha podido localizar un enlace valido
 - Paper, blog o repositorio adicional: no disponible

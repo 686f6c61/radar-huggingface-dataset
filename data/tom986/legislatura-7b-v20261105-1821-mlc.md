@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`legislatura-7b-v20261105-1821-MLC` es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario `tom986` en HuggingFace. Segun la model card, el modelo esta disenado como IA para el videojuego «Legislatura» y ha sido entrenado con "ejemplos propios" sobre la base del modelo de Alibaba Cloud, que se distribuye bajo licencia Apache 2.0. El repositorio esta empaquetado en formato MLC `q4f16_1` para su uso con WebLLM, replicando la estructura de `mlc-ai/Qwen2.5-7B-Instruct-q4f16_1-MLC`.
+`legislatura-7b-v20261105-1821-MLC` es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado por el usuario `tom986` en Hugging Face. Segun la model card, el modelo esta disenado como IA para el videojuego «Legislatura» y ha sido entrenado con "ejemplos propios" sobre la base del modelo de Alibaba Cloud, que se distribuye bajo licencia Apache 2.0. El repositorio esta empaquetado en formato MLC `q4f16_1` para su uso con WebLLM, replicando la estructura de `mlc-ai/Qwen2.5-7B-Instruct-q4f16_1-MLC`.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B-Instruct, con aproximadamente 7.600 millones de parametros y una ventana de contexto nativa de 32.768 tokens (ampliable a 131.072 mediante YaRN, segun la documentacion del modelo base). El ajuste fino esta orientado a un dominio muy especifico (el videojuego «Legislatura»), por lo que su comportamiento fuera de ese contexto no esta documentado.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| legislatura-7b-v20261105-1821-MLC | ~7,6B | 32.768 (heredado, no confirmado) | MLC q4f16_1 | No disponible (base Apache 2.0) | HuggingFace, 0 descargas |
-| mlc-ai/Qwen2.5-7B-Instruct-q4f16_1-MLC | ~7,6B | 32.768 | MLC q4f16_1 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-7B-Instruct (original) | ~7,6B | 32.768 (131.072 con YaRN) | safetensors | Apache 2.0 | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | safetensors, GGUF | Apache 2.0 | HuggingFace |
+| legislatura-7b-v20261105-1821-MLC | ~7,6B | 32.768 (heredado, no confirmado) | MLC q4f16_1 | No disponible (base Apache 2.0) | Hugging Face, 0 descargas |
+| mlc-ai/Qwen2.5-7B-Instruct-q4f16_1-MLC | ~7,6B | 32.768 | MLC q4f16_1 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-7B-Instruct (original) | ~7,6B | 32.768 (131.072 con YaRN) | safetensors | Apache 2.0 | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 | safetensors, GGUF | Apache 2.0 | Hugging Face |
 
 El modelo de `tom986` es esencialmente una variante ajustada del mismo artefacto MLC publicado por el equipo de MLC, por lo que su rendimiento general deberia ser comparable al de Qwen2.5-7B-Instruct salvo en el dominio de ajuste, donde no hay datos publicados.
 
@@ -82,7 +82,7 @@ El modelo de `tom986` es esencialmente una variante ajustada del mismo artefacto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tom986/legislatura-7b-v20261105-1821-MLC
+- Hugging Face: https://huggingface.co/tom986/legislatura-7b-v20261105-1821-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Referencia MLC del base: https://huggingface.co/mlc-ai/Qwen2.5-7B-Instruct-q4f16_1-MLC
 - WebLLM: https://webllm.mlc.ai/

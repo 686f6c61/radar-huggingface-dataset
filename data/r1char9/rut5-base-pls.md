@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ruT5-base-pls es un ajuste fino del modelo ai-forever/ruT5-base (antes sberbank-ai/ruT5-base) orientado a la simplificación de texto en ruso. Dado un enunciado complejo, el modelo genera una paráfrasis más sencilla que conserva el significado original. Lo publica el usuario r1char9 en HuggingFace el 26 de enero de 2024, con una acogida muy reducida: 9 descargas y 0 "likes" en el momento de redactar esta ficha.
+ruT5-base-pls es un ajuste fino del modelo ai-forever/ruT5-base (antes sberbank-ai/ruT5-base) orientado a la simplificación de texto en ruso. Dado un enunciado complejo, el modelo genera una paráfrasis más sencilla que conserva el significado original. Lo publica el usuario r1char9 en Hugging Face el 26 de enero de 2024, con una acogida muy reducida: 9 descargas y 0 "likes" en el momento de redactar esta ficha.
 
 Arquitectonicamente es un transformer encoder-decoder de tipo T5 (arquitectura heredada del modelo base, equivalente a T5-base), por lo que se usa con `AutoModelForSeq2SeqLM` y `AutoTokenizer`. No es un modelo de razonamiento, ni multimodal, ni optimizado para tool calling: su único propósito declarado es la simplificación textual en ruso, aunque las etiquetas del repositorio también sugieren resumen y paráfrasis.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| r1char9/ruT5-base-pls | no disponible (base T5-base, ~220 M) | no disponible | BLEU 100,0 / SARI 28,699 (cuestionados) | no disponible | HuggingFace, 9 descargas |
-| ai-forever/ruT5-base (modelo base) | ~220 M (T5-base) | no disponible | no disponible | no disponible | HuggingFace, ampliamente usado |
-| google/mt5-base | ~580 M | 512 tokens | no disponible | Apache 2.0 | HuggingFace, uso extendido |
+| r1char9/ruT5-base-pls | no disponible (base T5-base, ~220 M) | no disponible | BLEU 100,0 / SARI 28,699 (cuestionados) | no disponible | Hugging Face, 9 descargas |
+| ai-forever/ruT5-base (modelo base) | ~220 M (T5-base) | no disponible | no disponible | no disponible | Hugging Face, ampliamente usado |
+| google/mt5-base | ~580 M | 512 tokens | no disponible | Apache 2.0 | Hugging Face, uso extendido |
 
 No se dispone de datos de rendimiento homogeneos para comparar estos modelos en la tarea de simplificacion de ruso. La comparativa se limita a parametros, contexto y licencia.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento homogeneos para comparar estos modelos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r1char9/ruT5-base-pls
+- Modelo en Hugging Face: https://huggingface.co/r1char9/ruT5-base-pls
 - Modelo base ai-forever/ruT5-base: https://huggingface.co/ai-forever/ruT5-base
 - Dataset RuSimpleSentEval: https://github.com/dialogue-evaluation/RuSimpleSentEval
 - Dataset RuAdapt: https://github.com/Digital-Pushkin-Lab/RuAdapt

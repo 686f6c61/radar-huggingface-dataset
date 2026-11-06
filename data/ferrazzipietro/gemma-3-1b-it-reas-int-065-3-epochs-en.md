@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada para inferencia: con 1.301.875.840 parámetros, en precisión FP16 la memoria de pesos es de aproximadamente 2.6 GB. En cuantización de 4 bits, se reduce a unos 0.65 GB, más overhead de activaciones. El tamaño del repositorio es de 2.6 GB, lo que sugiere pesos en FP16.
 - GPU recomendadas: para FP16, una GPU con al menos 6-8 GB de VRAM, como una RTX 3060 12GB o superior. Para cuantización 4 bits, cabe en GPUs de 4 GB o menos.
 - Compatibilidad con GPU de consumo: sí, el modelo puede ejecutarse en GPUs de consumo como RTX 3060, RTX 4090, etc.
-- Opciones de despliegue: al ser un modelo de la librería transformers con formato safetensors, puede servirse con vLLM, TGI (Text Generation Inference) o mediante la API de HuggingFace. También puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se ha confirmado esta conversión en la información disponible.
+- Opciones de despliegue: al ser un modelo de la librería transformers con formato safetensors, puede servirse con vLLM, TGI (Text Generation Inference) o mediante la API de Hugging Face. También puede convertirse a GGUF para usarse con llama.cpp u Ollama, aunque no se ha confirmado esta conversión en la información disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ferrazzipietro/gemma-3-1b-it-reas-int-065-3-epochs-en | 1.301.875.840 | no disponible | sin benchmarks | Gemma | HuggingFace |
-| google/gemma-3-1b-it | aprox. 1.3B | no disponible | benchmarks oficiales de Gemma 3 | Gemma | HuggingFace |
-| ferrazzipietro/meshTask-gemma-3-1b-it | aprox. 1.3B | no disponible | pérdida 2.4423 en conjunto de evaluación | Gemma | HuggingFace |
+| ferrazzipietro/gemma-3-1b-it-reas-int-065-3-epochs-en | 1.301.875.840 | no disponible | sin benchmarks | Gemma | Hugging Face |
+| google/gemma-3-1b-it | aprox. 1.3B | no disponible | benchmarks oficiales de Gemma 3 | Gemma | Hugging Face |
+| ferrazzipietro/meshTask-gemma-3-1b-it | aprox. 1.3B | no disponible | pérdida 2.4423 en conjunto de evaluación | Gemma | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,6 +73,6 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ferrazzipietro/gemma-3-1b-it-reas-int-065-3-epochs-en
+- Hugging Face del modelo: https://huggingface.co/ferrazzipietro/gemma-3-1b-it-reas-int-065-3-epochs-en
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Modelo similar (fine-tuning del mismo base): https://huggingface.co/ferrazzipietro/meshTask-gemma-3-1b-it

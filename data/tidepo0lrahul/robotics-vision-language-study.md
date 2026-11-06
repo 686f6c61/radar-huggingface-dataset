@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario tidepo0lrahul, no contiene un modelo de lenguaje entrenado ni un checkpoint desplegable. Se trata de un conjunto de notas de investigación y un esbozo de experimento sobre robótica y visión-lenguaje, tal y como declara su propia model card. El artefacto se compone únicamente de dos archivos de documentación (`summary.md` y `README.md`) y un peso en formato safetensors con 49.600 parámetros, una cifra negligible que no corresponde a ningún transformer funcional.
+Este repositorio de Hugging Face, publicado por el usuario tidepo0lrahul, no contiene un modelo de lenguaje entrenado ni un checkpoint desplegable. Se trata de un conjunto de notas de investigación y un esbozo de experimento sobre robótica y visión-lenguaje, tal y como declara su propia model card. El artefacto se compone únicamente de dos archivos de documentación (`summary.md` y `README.md`) y un peso en formato safetensors con 49.600 parámetros, una cifra negligible que no corresponde a ningún transformer funcional.
 
-La relevancia de esta ficha es, por tanto, la de documentar un caso de repositorio de investigación que se publica bajo la etiqueta de modelo en HuggingFace. El autor indica explícitamente que el material es exploratorio, que no reclama mejoras en benchmarks, que no ha completado ablaciones y que no libera código ni checkpoint entrenado. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+La relevancia de esta ficha es, por tanto, la de documentar un caso de repositorio de investigación que se publica bajo la etiqueta de modelo en Hugging Face. El autor indica explícitamente que el material es exploratorio, que no reclama mejoras en benchmarks, que no ha completado ablaciones y que no libera código ni checkpoint entrenado. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 Dado que no existe un modelo entrenado con capacidades de inferencia, la mayor parte de los apartados de esta ficha quedan marcados como no disponibles. Se recomienda consultar el repositorio como material de lectura y no como un artefacto listo para producción.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tidepo0lrahul/robotics-vision-language-study
+- Repositorio en Hugging Face: https://huggingface.co/tidepo0lrahul/robotics-vision-language-study
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

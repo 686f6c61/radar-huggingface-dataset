@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step468` es un adaptador LoRA publicado en HuggingFace por el usuario `nmuendler` sobre el modelo base `open-thoughts/OpenThinker-7B`. No se trata de un modelo completo, sino de un checkpoint intermedio de un entrenamiento de ajuste supervisado (SFT) de texto: el propio nombre del repositorio indica que pertenece a una "training curve", es decir, a una ejecución de seguimiento de la curva de entrenamiento, y que corresponde al paso 468. El repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador y no con los pesos completos de un modelo de 7.000 millones de parametros.
+`nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step468` es un adaptador LoRA publicado en Hugging Face por el usuario `nmuendler` sobre el modelo base `open-thoughts/OpenThinker-7B`. No se trata de un modelo completo, sino de un checkpoint intermedio de un entrenamiento de ajuste supervisado (SFT) de texto: el propio nombre del repositorio indica que pertenece a una "training curve", es decir, a una ejecución de seguimiento de la curva de entrenamiento, y que corresponde al paso 468. El repositorio ocupa 0,3 GB, un tamano coherente con pesos de adaptador y no con los pesos completos de un modelo de 7.000 millones de parametros.
 
 El modelo base, OpenThinker-7B, pertenece al proyecto Open Thoughts de open-thoughts y esta orientado a razonamiento (reasoning). Este adaptador concreto especializa ese modelo base mediante LoRA para generacion de texto conversacional, segun los tags declarados (`text-generation`, `conversational`), y esta pensado para cargarse con la libreria PEFT (version 0.17.1 declarada en el README) junto con Transformers.
 
-La relevancia practica de esta publicacion es limitada y de caracter experimental: no tiene descargas ni "likes", la model card es la plantilla por defecto de HuggingFace con casi todos los campos sin rellenar ("More Information Needed"), no declara licencia ni idiomas, y no aporta datos de entrenamiento, hiperparametros, evaluacion ni benchmarks. Debe tratarse, por tanto, como un artefacto de investigacion reproducible mas que como un modelo listo para produccion.
+La relevancia practica de esta publicacion es limitada y de caracter experimental: no tiene descargas ni "likes", la model card es la plantilla por defecto de Hugging Face con casi todos los campos sin rellenar ("More Information Needed"), no declara licencia ni idiomas, y no aporta datos de entrenamiento, hiperparametros, evaluacion ni benchmarks. Debe tratarse, por tanto, como un artefacto de investigacion reproducible mas que como un modelo listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia practica de esta publicacion es limitada y de caracter experimenta
 
 La informacion proporcionada solo permite afirmar que se trata de un adaptador LoRA (Low-Rank Adaptation) entrenado con PEFT 0.17.1 sobre `open-thoughts/OpenThinker-7B`, con `library_name: peft` y etiquetas que incluyen `lora`, `transformers`, `text-generation` y `conversational`. El nombre del checkpoint (`text-sft-training-curve-run1-step468`) sugiere un ajuste supervisado sobre datos de texto, dentro de una ejecucion cuyo objetivo es registrar la evolucion del entrenamiento y capturar un estado en el paso 468. No hay informacion sobre el dataset empleado, el numero de tokens vistos, la composicion de los datos, hiperparametros (learning rate, rango LoRA, alpha, dropout), precision de entrenamiento ni si hubo fases posteriores de RLHF o DPO.
 
-Tampoco se documenta ninguna innovacion tecnica en la model card: el README es la plantilla estandar de HuggingFace y repite "[More Information Needed]" en todas las secciones (descripcion del modelo, fuentes, usos, sesgos, datos de entrenamiento, evaluacion, impacto ambiental, infraestructura y cita). Cualquier afirmacion sobre mecanismos de atencion, decodificacion especulativa o tecnicas de entrenamiento del modelo base excede la informacion disponible.
+Tampoco se documenta ninguna innovacion tecnica en la model card: el README es la plantilla estandar de Hugging Face y repite "[More Information Needed]" en todas las secciones (descripcion del modelo, fuentes, usos, sesgos, datos de entrenamiento, evaluacion, impacto ambiental, infraestructura y cita). Cualquier afirmacion sobre mecanismos de atencion, decodificacion especulativa o tecnicas de entrenamiento del modelo base excede la informacion disponible.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No es posible establecer una comparativa cuantitativa fiable: no hay benchmarks 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, con "[More Information Needed]" en todas las secciones relevantes (datos, entrenamiento, evaluacion, sesgos, uso previsto).
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, con "[More Information Needed]" en todas las secciones relevantes (datos, entrenamiento, evaluacion, sesgos, uso previsto).
 - Licencia no disponible: sin licencia declarada no puede determinarse si el uso comercial esta permitido, ni que obligaciones de atribucion o comparticion aplican. Esto bloquea de facto cualquier despliegue en produccion.
 - Checkpoint intermedio: el sufijo `step468` indica un estado de entrenamiento parcial. No hay garantia de que el ajuste haya convergido ni de que el modelo sea estable.
 - Riesgo de alucinacion: al ser un adaptador SFT sobre un modelo de razonamiento, el riesgo de generar contenido plausible pero falso es inherente; no se aporta ninguna evaluacion al respecto.
@@ -86,8 +86,8 @@ No es posible establecer una comparativa cuantitativa fiable: no hay benchmarks 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step468
-- Modelo base en HuggingFace: https://huggingface.co/open-thoughts/OpenThinker-7B
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step468
+- Modelo base en Hugging Face: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la model card: https://mlco2.github.io/impact#compute
 - Libreria PEFT: https://github.com/huggingface/peft

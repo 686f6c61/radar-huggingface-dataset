@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hannahkhan/document-ai-distilled
+- Repositorio en Hugging Face: https://huggingface.co/hannahkhan/document-ai-distilled
 - Guía gubernamental sobre destilación de modelos (contexto general): https://www.gov.uk/government/publications/ai-insights/ai-insights-model-distillation-html
 - Explicación sobre destilación de IA: https://intellibytes.substack.com/p/ai-distillation-explained-what-it
 - Artículo sobre destilación de modelos: https://pub.towardsai.net/model-distillation-the-key-to-efficient-ai-deployment-f0a0504999cf

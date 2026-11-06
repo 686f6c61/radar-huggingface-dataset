@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Test3 es un ajuste derivado de Qwen/Qwen3-8B publicado por el usuario BabarAzaa en HuggingFace. Se trata de una version "abliterated" (sin comportamiento de rechazo) generada con la herramienta OBLITERATUS mediante su metodo `advanced`, segun la model card del propio autor. El modelo conserva los 8.190.735.360 parametros del base, por lo que es un transformer denso de aproximadamente 8,19 mil millones de parametros.
+Test3 es un ajuste derivado de Qwen/Qwen3-8B publicado por el usuario BabarAzaa en Hugging Face. Se trata de una version "abliterated" (sin comportamiento de rechazo) generada con la herramienta OBLITERATUS mediante su metodo `advanced`, segun la model card del propio autor. El modelo conserva los 8.190.735.360 parametros del base, por lo que es un transformer denso de aproximadamente 8,19 mil millones de parametros.
 
 El objetivo declarado de este tipo de intervenciones es eliminar las respuestas de rechazo mediante ingenieria de activaciones, sin reentrenar los pesos desde cero. Esto lo hace relevante para experimentos de red teaming, investigacion sobre alineamiento y casos de generacion de contenido sin filtros, pero tambien implica riesgos evidentes de seguridad y de cumplimiento normativo.
 
@@ -68,10 +68,10 @@ Los datos de los modelos comparados corresponden a informacion publica de sus re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Test3 (este modelo) | 8,19 mil millones | No disponible (base: 32.768, ampliable a 131.072 con YaRN) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-8B (base) | 8,19 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 131.072 | Licencia comunitaria de Llama 3.1 | HuggingFace, ampliamente distribuido |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| Test3 (este modelo) | 8,19 mil millones | No disponible (base: 32.768, ampliable a 131.072 con YaRN) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-8B (base) | 8,19 mil millones | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 131.072 | Licencia comunitaria de Llama 3.1 | Hugging Face, ampliamente distribuido |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 | Apache 2.0 | Hugging Face, ampliamente distribuido |
 
 En cuanto a comportamiento frente a rechazos, este modelo se diferencia de los tres anteriores por la abliteration, pero no hay benchmarks ni evaluaciones publicadas que permitan comparar su calidad real frente a ellos. Tampoco se dispone de comparacion con otras variantes abliterated del mismo Qwen3-8B.
 

@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stage-org/appworld-qwen35-4b-agent-rl-epoch3
+- Repositorio Hugging Face: https://huggingface.co/Stage-org/appworld-qwen35-4b-agent-rl-epoch3
 - No se han encontrado papers, blogs ni demos asociados en la información proporcionada.

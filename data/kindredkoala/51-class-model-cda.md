@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KindredKoala/51-class-model-cDA es un artefacto publicado en HuggingFace por el usuario KindredKoala bajo licencia Apache 2.0. La única información verificable que ofrece su model card es precisamente la licencia: el README no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni instrucciones de uso. En el momento de la consulta el repositorio acumula cero descargas y cero "likes", no declara pipeline y no tiene ficheros documentados en la información disponible.
+KindredKoala/51-class-model-cDA es un artefacto publicado en Hugging Face por el usuario KindredKoala bajo licencia Apache 2.0. La única información verificable que ofrece su model card es precisamente la licencia: el README no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni instrucciones de uso. En el momento de la consulta el repositorio acumula cero descargas y cero "likes", no declara pipeline y no tiene ficheros documentados en la información disponible.
 
 El nombre del repositorio, junto con la existencia de un dataset del mismo autor, KindredKoala/51-classes-simulated-train-images (181 MB, formato parquet, entre 10K y 100K filas, modalidad imagen, licencia Apache 2.0 y 51 clases), apunta a que se trata de un clasificador de imágenes de 51 clases. Se trata de una inferencia razonable a partir de la nomenclatura y del dataset asociado, pero no está confirmada por el autor ni por ninguna documentación del repositorio.
 
@@ -74,6 +74,6 @@ No disponible. No hay información sobre la arquitectura, el tamaño ni el rendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KindredKoala/51-class-model-cDA
+- Modelo en Hugging Face: https://huggingface.co/KindredKoala/51-class-model-cDA
 - Modelo relacionado del mismo autor: https://huggingface.co/KindredKoala/51-class-model
 - Dataset asociado: https://huggingface.co/datasets/KindredKoala/51-classes-simulated-train-images/tree/main

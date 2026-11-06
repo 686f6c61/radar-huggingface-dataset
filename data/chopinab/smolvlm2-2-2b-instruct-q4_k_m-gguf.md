@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe la version cuantizada en formato GGUF del modelo SmolVLM2-2.2B-Instruct, publicada por el usuario Chopinab en HuggingFace. Se trata de una conversion del checkpoint original de HuggingFaceTB (SmolVLM2-2.2B-Instruct) realizada con llama.cpp a traves del espacio GGUF-my-repo de ggml.ai, en la cuantizacion Q4_K_M. El objetivo es permitir la ejecucion de un modelo de vision-lenguaje (image-text-to-text y video-text-to-text) en hardware de consumo y en CPU, sin necesidad de GPUs de gama alta.
+Esta ficha describe la version cuantizada en formato GGUF del modelo SmolVLM2-2.2B-Instruct, publicada por el usuario Chopinab en Hugging Face. Se trata de una conversion del checkpoint original de HuggingFaceTB (SmolVLM2-2.2B-Instruct) realizada con llama.cpp a traves del espacio GGUF-my-repo de ggml.ai, en la cuantizacion Q4_K_M. El objetivo es permitir la ejecucion de un modelo de vision-lenguaje (image-text-to-text y video-text-to-text) en hardware de consumo y en CPU, sin necesidad de GPUs de gama alta.
 
 El modelo base es un VLM multimodal de la familia SmolVLM2, disenado para tareas que combinan imagen o video con texto: descripcion de imagenes, respuesta a preguntas visuales, extraccion de informacion de documentos y comprension de clips de video. La ficha declara 1.812.563.968 parametros reales en los pesos safetensors del modelo base, un tamano de repositorio de 1,1 GB y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El unico idioma declarado es el ingles.
 
@@ -25,11 +25,11 @@ Su relevancia actual radica en la combinacion de tres factores: tamano reducido 
 | Autor de la conversion | Chopinab |
 | Modelo base | HuggingFaceTB/SmolVLM2-2.2B-Instruct |
 | Libreria declarada | transformers (etiqueta del repo); inferencia via llama.cpp |
-| Fecha de creacion | 2026-09-18 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-18 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta la arquitectura interna mas alla de las etiquetas de HuggingFace, que lo clasifican como modelo multimodal de tipo image-text-to-text y video-text-to-text. La informacion disponible no detalla el numero de capas, la composicion exacta del codificador de vision ni el mecanismo de proyeccion entre modalidades. Lo que si se puede afirmar con los datos aportados es que se trata de un transformer multimodal derivado de HuggingFaceTB/SmolVLM2-2.2B-Instruct, con 1.812.563.968 parametros en sus pesos originales y convertido a GGUF mediante llama.cpp en el espacio GGUF-my-repo de ggml.ai.
+El repositorio no documenta la arquitectura interna mas alla de las etiquetas de Hugging Face, que lo clasifican como modelo multimodal de tipo image-text-to-text y video-text-to-text. La informacion disponible no detalla el numero de capas, la composicion exacta del codificador de vision ni el mecanismo de proyeccion entre modalidades. Lo que si se puede afirmar con los datos aportados es que se trata de un transformer multimodal derivado de HuggingFaceTB/SmolVLM2-2.2B-Instruct, con 1.812.563.968 parametros en sus pesos originales y convertido a GGUF mediante llama.cpp en el espacio GGUF-my-repo de ggml.ai.
 
 Respecto al entrenamiento, la model card hereda la lista de datasets del modelo original: HuggingFaceM4/the_cauldron, HuggingFaceM4/Docmatix, lmms-lab/LLaVA-OneVision-Data, lmms-lab/M4-Instruct-Data, HuggingFaceFV/finevideo, MAmmoTH-VL/MAmmoTH-VL-Instruct-12M, lmms-lab/LLaVA-Video-178K, orrzohar/Video-STaR, Mutonix/Vript, TIGER-Lab/VISTA-400K, Enxin/MovieChat-1K_train y ShareGPT4Video/ShareGPT4Video. Esta composicion indica un entrenamiento centrado en instrucciones multimodales (imagen y video), datos de documentos y tareas conversacionales. No se dispone de informacion sobre el numero total de tokens de entrenamiento, la aplicacion de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas concretas del modelo base. Cualquier detalle adicional debe consultarse en la model card original enlazada mas abajo.
 

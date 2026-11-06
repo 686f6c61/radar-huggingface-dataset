@@ -88,7 +88,7 @@ La informacion proporcionada solo permite comparar de forma directa con Qwen3.6 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TechnoBaptist/MiniCPM-V-4.7-35B-A3B
+- Repositorio en Hugging Face: https://huggingface.co/TechnoBaptist/MiniCPM-V-4.7-35B-A3B
 - Repositorio de codigo de OpenBMB (MiniCPM-o): https://github.com/OpenBMB/MiniCPM-o
 - Documentacion de MiniCPM-V 4.7: https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/minicpm_v4dot7_en.md
 - Documentacion de despliegue (frameworks y API): https://github.com/OpenBMB/MiniCPM-o/blob/main/docs/deployment_en.md

@@ -74,7 +74,7 @@ No se han encontrado modelos comparables de curacion de datos hERG basados en LL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparel/herg-curation-v2
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/sparel/herg-curation-v2
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio MultiEndpointTox (notebook de curacion de datos hERG): https://github.com/sharhabilMali/MultiEndpointTox-v2.2.0
 - Articulo sobre HERGAI (herramienta de IA para hERG): https://link.springer.com/article/10.1186/s13321-025-01063-8

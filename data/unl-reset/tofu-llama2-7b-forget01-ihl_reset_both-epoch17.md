@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch17 | 6,74B | no disponible | Unlearning TOFU (epoca 17) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | no disponible | Modelo base ajustado en TOFU | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Chat general | llama2 | HuggingFace |
-| Meta Llama 2 7B | ~6,74B | 4096 | Base general | llama2 | HuggingFace, amplia adopcion |
+| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch17 | 6,74B | no disponible | Unlearning TOFU (epoca 17) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | no disponible | Modelo base ajustado en TOFU | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Chat general | llama2 | Hugging Face |
+| Meta Llama 2 7B | ~6,74B | 4096 | Base general | llama2 | Hugging Face, amplia adopcion |
 
 La comparativa se limita al linaje directo del modelo; no se dispone de datos de rendimiento para contrastar con alternativas de *unlearning* como NPO o gradient ascent.
 
@@ -89,7 +89,7 @@ La comparativa se limita al linaje directo del modelo; no se dispone de datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch17
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch17
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

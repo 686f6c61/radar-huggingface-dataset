@@ -23,7 +23,7 @@ Su relevancia es practica: permite ejecutar un modelo de ~2B en hardware de cons
 | Modelo base | openbmb/MiniCPM5-2B |
 | Tamano del repositorio | 1,7 GB |
 | Backends soportados | CPU (config.json) y Apple Metal GPU (config_metal.json) |
-| Fecha de publicacion | 13 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 13 de septiembre de 2026 (metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,9 +85,9 @@ No hay datos de benchmarks que permitan comparar calidad. La comparacion se limi
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-MNN-4bit (este) | ~2B | no disponible | MNN 4 bits | Apache-2.0 | HuggingFace, 0 descargas |
-| openbmb/MiniCPM5-2B (base) | ~2B | no disponible | safetensors (no confirmado en la informacion disponible) | Apache-2.0 (segun modelo derivado) | HuggingFace |
-| Alternativas de ~1,5-2B para borde (por ejemplo Qwen2.5-1.5B-Instruct o Gemma-2-2B) | 1,5-2B | 32k (Qwen2.5) / 8k (Gemma-2) | safetensors, GGUF | Apache-2.0 / licencia Gemma | HuggingFace |
+| MiniCPM5-2B-MNN-4bit (este) | ~2B | no disponible | MNN 4 bits | Apache-2.0 | Hugging Face, 0 descargas |
+| openbmb/MiniCPM5-2B (base) | ~2B | no disponible | safetensors (no confirmado en la informacion disponible) | Apache-2.0 (segun modelo derivado) | Hugging Face |
+| Alternativas de ~1,5-2B para borde (por ejemplo Qwen2.5-1.5B-Instruct o Gemma-2-2B) | 1,5-2B | 32k (Qwen2.5) / 8k (Gemma-2) | safetensors, GGUF | Apache-2.0 / licencia Gemma | Hugging Face |
 
 La diferencia principal frente al modelo base es el formato y el tamano en disco, no las capacidades. Frente a otras familias de ~2B, la ventaja de este artefacto es su integracion nativa con MNN y Metal; la desventaja es la ausencia total de datos de evaluacion publicados y de soporte en los runtimes mas extendidos.
 
@@ -106,7 +106,7 @@ La diferencia principal frente al modelo base es el formato y el tamano en disco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunfengwang/MiniCPM5-2B-MNN-4bit
+- Modelo en Hugging Face: https://huggingface.co/yunfengwang/MiniCPM5-2B-MNN-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Runtime MNN (Alibaba): https://github.com/alibaba/MNN
 - No se han encontrado articulos, papers, blogs o demos relevantes en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llmware/gemma-4-e2b-ov es un repositorio de pesos publicado por llmware en HuggingFace el 13 de septiembre de 2026. Por el identificador y las etiquetas (`openvino`, `gemma4`) se trata de una conversion a formato OpenVINO de un modelo de la familia Gemma 4, en una variante denominada "e2b". No obstante, la model card del repositorio esta practicamente vacia: unicamente declara `license: gemma`, sin describir arquitectura, datos de entrenamiento, contexto ni capacidades.
+llmware/gemma-4-e2b-ov es un repositorio de pesos publicado por llmware en Hugging Face el 13 de septiembre de 2026. Por el identificador y las etiquetas (`openvino`, `gemma4`) se trata de una conversion a formato OpenVINO de un modelo de la familia Gemma 4, en una variante denominada "e2b". No obstante, la model card del repositorio esta practicamente vacia: unicamente declara `license: gemma`, sin describir arquitectura, datos de entrenamiento, contexto ni capacidades.
 
 El repositorio ocupa 4,4 GB y acumula 0 descargas y 0 likes en el momento de la consulta, lo que indica una publicacion muy reciente y sin adopcion documentada. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a calculadoras matematicas en linea, sin relacion con el artefacto.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de este modelo, y la busqueda web no devolvio referencias comparables. Para establecer una comparativa fiable habria que contrastar con las variantes oficiales de la familia Gemma 4 en HuggingFace y con modelos compactos equivalentes, algo que no puede hacerse con los datos actuales.
+No disponible. La informacion proporcionada no incluye datos de rendimiento ni especificaciones de este modelo, y la busqueda web no devolvio referencias comparables. Para establecer una comparativa fiable habria que contrastar con las variantes oficiales de la familia Gemma 4 en Hugging Face y con modelos compactos equivalentes, algo que no puede hacerse con los datos actuales.
 
 ## Limitaciones y advertencias
 
@@ -85,8 +85,8 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmware/gemma-4-e2b-ov
-- Organizacion llmware en HuggingFace: https://huggingface.co/llmware
+- Repositorio en Hugging Face: https://huggingface.co/llmware/gemma-4-e2b-ov
+- Organizacion llmware en Hugging Face: https://huggingface.co/llmware
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Documentacion de OpenVINO: https://docs.openvino.ai
 - Nota: la busqueda web no devolvio enlaces relevantes sobre este modelo; los unicos resultados obtenidos fueron calculadoras matematicas en linea (calculatorsoup.com, theonlinecalculator.com, calculator.net, calculator.io), sin ninguna relacion con el artefacto. No se dispone por tanto de paper, blog tecnico ni demo asociados.

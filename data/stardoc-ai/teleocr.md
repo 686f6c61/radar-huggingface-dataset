@@ -83,7 +83,7 @@ El autor también reporta evaluación cualitativa de layout sobre los conjuntos 
 
 | Modelo | Parámetros | Enfoque | Overall OmniDocBench v1.6 | Table TEDS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TeleOCR | 1,2 B | Parseo unificado digital + cámara | 96,87 | 97,05 | Apache-2.0 | HuggingFace, GGUF comunitario |
+| TeleOCR | 1,2 B | Parseo unificado digital + cámara | 96,87 | 97,05 | Apache-2.0 | Hugging Face, GGUF comunitario |
 | OvisOCR2 | 0,8 B | Parseo documental especializado | 96,58 | 94,76 | No disponible | Referenciado en benchmarks del autor |
 | PaddleOCR-VL 1.6 | 0,9 B | Parseo documental especializado | 96,33 | 94,76 | No disponible | Referenciado en benchmarks del autor |
 | MinerU 2.5 Pro | No disponible | Pipeline de parseo documental | No evaluado en OmniDocBench v1.6 en la información disponible | 67,75 (Dr.DocBench) | No disponible | Referenciado en benchmarks del autor |
@@ -103,7 +103,7 @@ TeleOCR es el único de los cuatro con licencia Apache-2.0 confirmada y el únic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StarDoc-AI/TeleOCR
+- Modelo en Hugging Face: https://huggingface.co/StarDoc-AI/TeleOCR
 - Pesos anteriores (NaviDC-OCR): https://huggingface.co/StarDoc-AI/NaviDC-OCR
 - Repositorio GitHub: https://github.com/caipeng328/TeleOCR
 - Informe técnico (arXiv): https://arxiv.org/abs/2608.12898

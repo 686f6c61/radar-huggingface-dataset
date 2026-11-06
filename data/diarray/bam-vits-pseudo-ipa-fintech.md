@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `diarray/bam-vits-pseudo-ipa-fintech` es un sistema de síntesis de voz (text-to-audio) basado en la arquitectura VITS, publicado por el usuario diarray (Diarra Yacouba) en HuggingFace. El nombre del modelo indica que ha sido afinado para el dominio fintech y que emplea una representación fonética pseudo-IPA (Alfabeto Fonético Internacional) como paso intermedio entre el texto y el audio, lo que sugiere una orientación hacia la pronunciación precisa de terminología financiera especializada.
+El modelo `diarray/bam-vits-pseudo-ipa-fintech` es un sistema de síntesis de voz (text-to-audio) basado en la arquitectura VITS, publicado por el usuario diarray (Diarra Yacouba) en Hugging Face. El nombre del modelo indica que ha sido afinado para el dominio fintech y que emplea una representación fonética pseudo-IPA (Alfabeto Fonético Internacional) como paso intermedio entre el texto y el audio, lo que sugiere una orientación hacia la pronunciación precisa de terminología financiera especializada.
 
 Con 39.642.096 parámetros (aproximadamente 39,6 millones) y un tamaño de repositorio de 0,2 GB, es un modelo de TTS de tamaño moderado, comparable al VITS base. La información pública disponible es extremadamente limitada: la model card es una plantilla autogenerada sin datos reales sobre entrenamiento, dataset, licencia o idiomas. El repositorio registra 0 descargas y 0 likes, lo que indica que es un modelo reciente o de difusión muy limitada, y que no ha sido validado por la comunidad.
 
@@ -31,7 +31,7 @@ Los detalles del entrenamiento no están disponibles: no se ha publicado informa
 - Posible especialización en vocabulario del dominio fintech: terminología financiera, cifras, monedas y expresiones económicas.
 - Uso de fonemas pseudo-IPA para mejorar la precisión de pronunciación, especialmente relevante para términos técnicos.
 - Inferencia rápida gracias a la arquitectura VITS, que no requiere vocoder separado.
-- Compatible con el pipeline text-to-audio de HuggingFace Transformers y con endpoints de inferencia (etiqueta endpoints_compatible).
+- Compatible con el pipeline text-to-audio de Hugging Face Transformers y con endpoints de inferencia (etiqueta endpoints_compatible).
 - Sin soporte documentado para tool calling, agentes o razonamiento multi-paso, al ser un modelo exclusivamente de generación de audio.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Con 39,6 millones de parámetros, el modelo requiere aproximadamente 158 MB de memoria en FP32, lo que lo hace ejecutable en una amplia gama de hardware.
 - VRAM estimada: inferior a 1 GB en FP32, por lo que cabe en GPUs de consumo como GTX 1060, RTX 2060, RTX 3060 o superiores.
 - La inferencia en CPU es viable para VITS, aunque con mayor latencia que en GPU. Para despliegue en producción con baja latencia se recomienda GPU.
-- Opciones de despliegue: pipeline text-to-audio de HuggingFace Transformers, endpoints de HuggingFace (etiqueta endpoints_compatible), o exportación a otros runtimes compatibles con safetensors.
+- Opciones de despliegue: pipeline text-to-audio de Hugging Face Transformers, endpoints de Hugging Face (etiqueta endpoints_compatible), o exportación a otros runtimes compatibles con safetensors.
 - El tamaño del repositorio (0,2 GB) facilita la descarga y el despliegue en entornos con ancho de banda limitado.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información suficiente sobre modelos comparables específicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diarray/bam-vits-pseudo-ipa-fintech
+- Modelo en Hugging Face: https://huggingface.co/diarray/bam-vits-pseudo-ipa-fintech
 - Modelo relacionado (bam-vits-pseudo-ipa): https://huggingface.co/diarray/bam-vits-pseudo-ipa
 - Modelo relacionado (bam-vits): https://huggingface.co/diarray/bam-vits
 - Perfil de GitHub del autor: https://github.com/diarray-hub

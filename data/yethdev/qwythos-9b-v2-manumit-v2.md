@@ -4,7 +4,7 @@
 
 Qwythos-9B-v2-manumit-v2 es un modelo de lenguaje derivado de Qwythos-9B-v2, desarrollado por el usuario yethdev, al que se le ha aplicado la técnica de ablación de rechazo denominada "manumit". El objetivo es eliminar el comportamiento de rechazo del modelo original, de modo que responda a peticiones que el modelo base rechazaría, manteniendo en lo posible sus capacidades generales. Según la model card, la técnica manumit identifica el subespacio de direcciones en el flujo residual que codifican el rechazo, lo proyecta fuera de los pesos y posteriormente "cura" el modelo con datos ordinarios para minimizar la pérdida de habilidad.
 
-El modelo tiene 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) y está disponible en formato safetensors. Aunque los tags de HuggingFace indican una base tipo Qwen3.5, la arquitectura exacta no se especifica en la documentación proporcionada. El modelo es relevante para la investigación en seguridad y alineación de IA, así como para aplicaciones que requieren respuestas sin restricciones de contenido, siempre dentro del marco legal. Se distribuye bajo licencia MIT, aunque el modelo base conserva sus propios términos.
+El modelo tiene 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) y está disponible en formato safetensors. Aunque los tags de Hugging Face indican una base tipo Qwen3.5, la arquitectura exacta no se especifica en la documentación proporcionada. El modelo es relevante para la investigación en seguridad y alineación de IA, así como para aplicaciones que requieren respuestas sin restricciones de contenido, siempre dentro del marco legal. Se distribuye bajo licencia MIT, aunque el modelo base conserva sus propios términos.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ El modelo tiene 9.409.813.744 parámetros (aproximadamente 9,4 mil millones) y e
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo base Qwythos-9B-v2. Según los tags de HuggingFace, el modelo está relacionado con la familia Qwen3.5, lo que sugiere una arquitectura transformer densa, pero no se confirma. El proceso de entrenamiento de manumit-v2 consiste en una ablación selectiva: se localizan las direcciones del flujo residual que transportan la señal de rechazo, se proyectan fuera de los pesos y luego se realiza un ajuste fino de "curado" con datos ordinarios para recuperar la fluidez y capacidad del modelo. No se han publicado datos sobre el número de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO.
+La información disponible no detalla la arquitectura interna del modelo base Qwythos-9B-v2. Según los tags de Hugging Face, el modelo está relacionado con la familia Qwen3.5, lo que sugiere una arquitectura transformer densa, pero no se confirma. El proceso de entrenamiento de manumit-v2 consiste en una ablación selectiva: se localizan las direcciones del flujo residual que transportan la señal de rechazo, se proyectan fuera de los pesos y luego se realiza un ajuste fino de "curado" con datos ordinarios para recuperar la fluidez y capacidad del modelo. No se han publicado datos sobre el número de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se dispone de datos de otros modelos abliterated comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yethdev/qwythos-9b-v2-manumit-v2
+- Modelo en Hugging Face: https://huggingface.co/yethdev/qwythos-9b-v2-manumit-v2
 - Modelo base: https://huggingface.co/empero-ai/Qwythos-9B-v2
 - Blog de Empero sobre Qwythos-9B-v2: https://empero.org/writing/qwythos-9b-v2
 - Página de Empero: https://empero.org/

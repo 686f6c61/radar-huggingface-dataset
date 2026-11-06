@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ATOM_Trainer es un repositorio publicado en HuggingFace por la organización Dobot-Official bajo licencia Apache 2.0. Por su identificador y por el nombre del autor (Dobot, fabricante de robótica colaborativa), se trata presumiblemente de un componente de entrenamiento asociado al proyecto ATOM, orientado al ámbito de la robótica y el aprendizaje automático aplicado a manipulación o control. Sin embargo, la model card publicada no contiene ninguna descripción funcional, especificación técnica ni documentación de uso: únicamente incluye la declaración de licencia.
+ATOM_Trainer es un repositorio publicado en Hugging Face por la organización Dobot-Official bajo licencia Apache 2.0. Por su identificador y por el nombre del autor (Dobot, fabricante de robótica colaborativa), se trata presumiblemente de un componente de entrenamiento asociado al proyecto ATOM, orientado al ámbito de la robótica y el aprendizaje automático aplicado a manipulación o control. Sin embargo, la model card publicada no contiene ninguna descripción funcional, especificación técnica ni documentación de uso: únicamente incluye la declaración de licencia.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y no declara pipeline, idiomas ni formato de pesos. La fecha de creación y actualización indicada es el 4 de noviembre de 2026, dato que conviene tratar con cautela por su carácter anómalo.
 
@@ -67,5 +67,5 @@ No disponible. La ausencia de especificaciones impide identificar modelos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dobot-Official/ATOM_Trainer
+- Hugging Face: https://huggingface.co/Dobot-Official/ATOM_Trainer
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

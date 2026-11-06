@@ -63,10 +63,10 @@ El gold de evaluación es V4 híbrido (derivado, no Doccano Gold). Sin la alinea
 
 | Modelo | Idioma | Propósito | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JobBERT-zh (este) | zh | Extracción de spans de competencias (LSKT) | 101.677.056 | other | HuggingFace |
-| jjzha/jobbert-base-cased | en | JobBERT inglés (no especificado) | no disponible | no disponible | HuggingFace |
-| TechWolf/JobBERT-v3 | en | Embeddings de títulos de empleo | no disponible | no disponible | HuggingFace |
-| hfl/chinese-roberta-wwm-ext | zh | Modelo de lenguaje general chino (backbone) | no disponible | Apache-2.0 (según metadata) | HuggingFace |
+| JobBERT-zh (este) | zh | Extracción de spans de competencias (LSKT) | 101.677.056 | other | Hugging Face |
+| jjzha/jobbert-base-cased | en | JobBERT inglés (no especificado) | no disponible | no disponible | Hugging Face |
+| TechWolf/JobBERT-v3 | en | Embeddings de títulos de empleo | no disponible | no disponible | Hugging Face |
+| hfl/chinese-roberta-wwm-ext | zh | Modelo de lenguaje general chino (backbone) | no disponible | Apache-2.0 (según metadata) | Hugging Face |
 
 jjzha/jobbert-base-cased y TechWolf/JobBERT-v3 son modelos ingleses de la misma familia JobBERT, pero no equivalentes en tarea ni idioma. hfl/chinese-roberta-wwm-ext es el backbone sin adaptación de dominio ni CRF.
 

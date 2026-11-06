@@ -105,7 +105,7 @@ El diferencial de esta ficha frente a las alternativas ZeroModels no es la calid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/paraphrase-multilingual-mpnet-base-v2
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/paraphrase-multilingual-mpnet-base-v2
 - Checkpoint original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Revision fijada del checkpoint original: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2/tree/4328cf26390c98c5e3c738b4460a05b95f4911f5
 - Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels

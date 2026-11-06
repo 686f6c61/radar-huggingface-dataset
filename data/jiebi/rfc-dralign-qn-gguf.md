@@ -103,7 +103,7 @@ La diferencia funcional clave es que los tres alternativos son modelos de embedd
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/jiebi/RFC-DRAlign-QN-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/jiebi/RFC-DRAlign-QN-GGUF
 - Repositorio del adaptador LoRA base: https://huggingface.co/jiebi/RFC-DRAlign-QN
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiebi/RFCAlign
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1

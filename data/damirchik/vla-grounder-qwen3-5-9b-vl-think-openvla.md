@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables específicos (p. ej., Op
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-vl-think-openvla
+- Hugging Face del modelo: https://huggingface.co/Damirchik/vla-grounder-qwen3.5-9b-vl-think-openvla
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Página de Qwen3.5 en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3.5-9B
 - Repositorio no oficial de Qwen3.5 en GitHub: https://github.com/ABDtmx/Qwen3.5

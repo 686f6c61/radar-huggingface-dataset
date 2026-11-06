@@ -4,7 +4,7 @@
 
 Este repositorio contiene un checkpoint de un modelo de lenguaje derivado de Mistral-7B, publicado por la organizacion PessimisticDPO bajo el identificador `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e14`. Por la nomenclatura y los metadatos disponibles (biblioteca `transformers`, pesos en `safetensors`, 0,2 GB de repositorio, cero descargas y cero likes), se trata casi con total seguridad de un artefacto de investigacion: un punto de control intermedio de un estudio sobre variantes de optimizacion por preferencias (el prefijo "sft" apunta a una fase de ajuste supervisado y el nombre de la organizacion, "PessimisticDPO", sugiere una variante pesimista de Direct Preference Optimization). Los sufijos `a0.1`, `b0.1`, `L4`, `l3` y `e14` parecen codificar hiperparametros (coeficientes alfa y beta, capa y epoca), pero esto es una inferencia a partir del identificador, no un dato confirmado.
 
-El problema que resuelve, en el contexto de su publicacion, es la reproducibilidad de un experimento de ajuste fino sobre un modelo base conocido, no la de ofrecer un asistente listo para produccion. No hay model card real: el README es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]", sin informacion sobre datos de entrenamiento, licencia, idiomas ni evaluacion.
+El problema que resuelve, en el contexto de su publicacion, es la reproducibilidad de un experimento de ajuste fino sobre un modelo base conocido, no la de ofrecer un asistente listo para produccion. No hay model card real: el README es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]", sin informacion sobre datos de entrenamiento, licencia, idiomas ni evaluacion.
 
 Es relevante ahora solo como referencia tecnica dentro de la linea de investigacion de alineamiento y optimizacion de preferencias, y como ejemplo de practica deficiente de documentacion: un checkpoint con nombre altamente informativo pero sin ficha tecnica verificable, sin licencia declarada y sin resultados publicados. Cualquier uso serio exige contactar con el autor o reproducir el pipeline original.
 
@@ -69,7 +69,7 @@ Las siguientes estimaciones corresponden a un modelo denso de 7.000 millones de 
 - Inferencia en 4 bits (si se generan pesos GGUF o GPTQ a partir del checkpoint): aproximadamente 4-5 GB de pesos; cabria en GPUs de 8 GB con contexto moderado.
 - GPU recomendadas: A100 40/80 GB o H100 para servicio concurrente y contexto largo; L40S o RTX 6000 Ada como opcion profesional; RTX 4090 (24 GB) y RTX 3090 (24 GB) para uso individual sin problemas en fp16.
 - GPU de consumo: si cabe en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB o superiores) siempre que se cuantice a 4 u 8 bits. No cabria en fp16 en GPUs con menos de 16 GB.
-- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp y Ollama si se convierte a GGUF, y HuggingFace Transformers con `accelerate` o `bitsandbytes` para cuantizacion en carga. El tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de HuggingFace.
+- Opciones de despliegue: vLLM, Text Generation Inference (TGI), llama.cpp y Ollama si se convierte a GGUF, y Hugging Face Transformers con `accelerate` o `bitsandbytes` para cuantizacion en carga. El tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparacion solo puede establecerse frente a los modelos base de la misma cat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e14 | No disponible (base Mistral-7B, ~7.240 M) | No disponible | No disponible | Repositorio HuggingFace, 0 descargas | No disponible |
+| mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e14 | No disponible (base Mistral-7B, ~7.240 M) | No disponible | No disponible | Repositorio Hugging Face, 0 descargas | No disponible |
 | Mistral-7B-Instruct-v0.2 | ~7.240 M | 32.768 tokens | Apache 2.0 | Ampliamente disponible, con pesos completos y GGUF | Benchmark publico extenso, no comparable directamente por falta de datos del modelo analizado |
 | Zephyr-7B-beta | ~7.240 M | 32.768 tokens | MIT | Pesos completos y cuantizaciones en la comunidad | Benchmark publico (MT-Bench, AlpacaEval), no comparable directamente |
 | Llama-2-7B-chat | ~6.740 M | 4.096 tokens | Licencia comunitaria de Meta con restricciones | Muy extendido, con cuantizaciones | Benchmark publico, no comparable directamente |
@@ -99,11 +99,11 @@ La diferencia operativa clave no es de rendimiento, sino de trazabilidad: los tr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e14
-- Perfil de la organizacion en HuggingFace: https://huggingface.co/PessimisticDPO
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e14
+- Perfil de la organizacion en Hugging Face: https://huggingface.co/PessimisticDPO
 - Paper referenciado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Documentacion publica de la arquitectura Mistral-7B (Mistral AI): https://docs.mistral.ai/
-- Repositorio de referencia de Mistral-7B en HuggingFace: https://huggingface.co/mistralai/Mistral-7B-v0.1
+- Repositorio de referencia de Mistral-7B en Hugging Face: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Repositorio de referencia del checkpoint Mistral-7B SFT beta: https://huggingface.co/mistralai/Mistral-7B-sft-beta
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo, su autoria o su metodo de entrenamiento; los resultados obtenidos corresponden a un sitio de pronosticos de carreras de caballos y no se incluyen por no ser relevantes.

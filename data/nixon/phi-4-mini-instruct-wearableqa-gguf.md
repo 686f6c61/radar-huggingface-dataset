@@ -100,7 +100,7 @@ Alternativas de categoria equivalente (modelos densos de 2B-4B con soporte de ll
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nixon/Phi-4-mini-instruct-WearableQA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Nixon/Phi-4-mini-instruct-WearableQA-GGUF
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Dataset de calibracion: https://huggingface.co/datasets/facebook/WearableQA
 - Herramienta de cuantizacion: https://github.com/ggml-org/llama.cpp

@@ -79,7 +79,7 @@ La comparacion directa no es posible sin datos de benchmarks, pero F2LLM-v2-160M
 
 ## Enlaces
 
-- Repositorio HuggingFace de la version ONNX: https://huggingface.co/onnx-community/F2LLM-v2-160M-ONNX
+- Repositorio Hugging Face de la version ONNX: https://huggingface.co/onnx-community/F2LLM-v2-160M-ONNX
 - Modelo original: https://huggingface.co/codefuse-ai/F2LLM-v2-160M
 - Paper asociado: arxiv:2603.19223
 - Dataset de entrenamiento: https://huggingface.co/datasets/codefuse-ai/F2LLM-v2

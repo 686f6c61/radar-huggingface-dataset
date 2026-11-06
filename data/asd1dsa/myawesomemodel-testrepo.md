@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre con el que se publica el repositorio asd1dsa/MyAwesomeModel-TestRepo en HuggingFace, creado por el usuario asd1dsa bajo licencia MIT. Los metadatos del repositorio lo etiquetan como transformers, pytorch, bert y feature-extraction, con pipeline de extraccion de caracteristicas, lo que sugiere un modelo tipo encoder BERT. Sin embargo, la model card adjunta describe un modelo conversacional de razonamiento con modo thinking, function calling y resultados en AIME 2025, lo que contradice frontalmente las etiquetas y el pipeline declarados.
+MyAwesomeModel es el nombre con el que se publica el repositorio asd1dsa/MyAwesomeModel-TestRepo en Hugging Face, creado por el usuario asd1dsa bajo licencia MIT. Los metadatos del repositorio lo etiquetan como transformers, pytorch, bert y feature-extraction, con pipeline de extraccion de caracteristicas, lo que sugiere un modelo tipo encoder BERT. Sin embargo, la model card adjunta describe un modelo conversacional de razonamiento con modo thinking, function calling y resultados en AIME 2025, lo que contradice frontalmente las etiquetas y el pipeline declarados.
 
 El repositorio presenta senales claras de ser un artefacto de prueba: 0 descargas, 1 like, un tamano de 0.0 GB (es decir, sin pesos publicados), y una diferencia de apenas siete segundos entre la fecha de creacion y la de ultima actualizacion. Ademas, la tabla de benchmarks de la model card compara contra entradas genericas denominadas Model1, Model2 y Model1-v2, sin identificar los sistemas reales.
 
@@ -108,7 +108,7 @@ No disponible. La model card compara contra entradas anonimas (Model1, Model2, M
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asd1dsa/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asd1dsa/MyAwesomeModel-TestRepo
 - Pagina web oficial y plataforma de API: mencionadas en la model card, sin URL concreta disponible.
 - Repositorio de codigo para ejecucion local: mencionado en la model card, sin URL disponible.
 - Model card y figuras (figures/fig1.png, fig2.png, fig3.png): referenciadas en el repositorio, no verificables.

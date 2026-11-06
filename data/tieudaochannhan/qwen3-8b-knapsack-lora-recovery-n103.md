@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparables de otros adaptadores de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TieuDaoChanNhan/qwen3-8b-knapsack-lora-recovery-n103
+- Hugging Face: https://huggingface.co/TieuDaoChanNhan/qwen3-8b-knapsack-lora-recovery-n103
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del proyecto: https://github.com/TieuDaoChanNhan/resume-or-prevent
 - Informe del proyecto: https://github.com/TieuDaoChanNhan/resume-or-prevent/tree/main/report

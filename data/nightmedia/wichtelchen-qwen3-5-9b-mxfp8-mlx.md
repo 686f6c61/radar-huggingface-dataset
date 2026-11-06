@@ -96,7 +96,7 @@ La comparativa se basa en datos publicos de Qwen3.5 y modelos similares; no se d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Wichtelchen-Qwen3.5-9B-mxfp8-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Wichtelchen-Qwen3.5-9B-mxfp8-mlx
 - Modelo base: https://huggingface.co/schneewolflabs/Wichtelchen-Qwen3.5-9B
 - Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:9b
 - Qwen3.5 en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-9b

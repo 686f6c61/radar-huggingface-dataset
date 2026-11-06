@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orbit-4-Gemma-E4B-it es un modelo publicado en HuggingFace por el usuario OpenPathAI bajo licencia Apache 2.0. El repositorio no incluye model card más allá del bloque de metadatos de licencia, no declara pipeline, no declara idiomas y no incorpora ninguna descripción de arquitectura, dataset de entrenamiento o proceso de alineación. A fecha de la consulta registra 0 descargas y 0 likes, y la única información disponible es el identificador del repositorio y su licencia.
+Orbit-4-Gemma-E4B-it es un modelo publicado en Hugging Face por el usuario OpenPathAI bajo licencia Apache 2.0. El repositorio no incluye model card más allá del bloque de metadatos de licencia, no declara pipeline, no declara idiomas y no incorpora ninguna descripción de arquitectura, dataset de entrenamiento o proceso de alineación. A fecha de la consulta registra 0 descargas y 0 likes, y la única información disponible es el identificador del repositorio y su licencia.
 
 El nombre sugiere una adaptación de instrucciones sobre una variante "E4B" de la familia Gemma, pero esta interpretación procede únicamente del identificador y no está confirmada por ninguna fuente del repositorio. No hay evidencia publicada sobre el número de parámetros, la longitud de contexto, el tokenizador utilizado, los idiomas cubiertos ni el procedimiento de ajuste (SFT, DPO o RLHF).
 
@@ -95,7 +95,7 @@ No se han incluido cifras de terceros porque no forman parte de la información 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenPathAI/Orbit-4-Gemma-E4B-it
+- Repositorio en Hugging Face: https://huggingface.co/OpenPathAI/Orbit-4-Gemma-E4B-it
 - Model card: no disponible (el repositorio no incluye contenido descriptivo)
 - Paper técnico: no disponible
 - Blog o anuncio: no disponible

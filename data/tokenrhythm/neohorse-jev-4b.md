@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeoHorse-Jev-4B es un modelo de decision estructurada de 4.000 millones de parametros desarrollado por TokenRhythm, construido como ajuste fino (finetune) sobre NeoHorse-1-4B. A diferencia de un modelo generativo convencional, no produce texto autoregresivo: dado un estado y un conjunto de preguntas definidas por la aplicacion, predice directamente la respuesta sobre las opciones que el desarrollador ha declarado, junto con su probabilidad. Su pipeline declarado en HuggingFace es text-classification y su inferencia es prefill-only, es decir, sin fase de decodificacion.
+NeoHorse-Jev-4B es un modelo de decision estructurada de 4.000 millones de parametros desarrollado por TokenRhythm, construido como ajuste fino (finetune) sobre NeoHorse-1-4B. A diferencia de un modelo generativo convencional, no produce texto autoregresivo: dado un estado y un conjunto de preguntas definidas por la aplicacion, predice directamente la respuesta sobre las opciones que el desarrollador ha declarado, junto con su probabilidad. Su pipeline declarado en Hugging Face es text-classification y su inferencia es prefill-only, es decir, sin fase de decodificacion.
 
 El modelo resuelve un problema muy concreto en flujos agenticos: enrutar peticiones, seleccionar herramientas, evaluar condiciones y puntuar resultados sin pagar el coste de generar lenguaje natural. Soporta tres tipos de decision (Choice, Noul y Score), admite multiples preguntas por peticion de texto y acepta opcionalmente una imagen combinada con texto, lo que lo situa tambien en el terreno vision-language. Su relevancia actual radica en que ofrece un mecanismo mas rapido y determinista que un LLM generativo para capas de decision intermedias dentro de un agente.
 
@@ -81,11 +81,11 @@ Dato adicional reportado: 83,26% de precision media en Nimble, VitaminC y MASSIV
 
 | Modelo | Parametros | Contexto | AVG (6 grupos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoHorse-Jev-4B | 4B | no disponible | 77,70 | Apache-2.0 | HuggingFace, ModelScope |
-| Open-Jev-9B | 9B | no disponible | 75,67 | no disponible | HuggingFace |
-| Kev-4B | 4B | no disponible | 74,25 | no disponible | HuggingFace |
-| Laya English | no disponible | no disponible | 58,24 | no disponible | HuggingFace |
-| NeoHorse-1-4B (base) | 4B | 262K segun fuente secundaria | no disponible (solo 3 grupos) | Apache-2.0 | HuggingFace |
+| NeoHorse-Jev-4B | 4B | no disponible | 77,70 | Apache-2.0 | Hugging Face, ModelScope |
+| Open-Jev-9B | 9B | no disponible | 75,67 | no disponible | Hugging Face |
+| Kev-4B | 4B | no disponible | 74,25 | no disponible | Hugging Face |
+| Laya English | no disponible | no disponible | 58,24 | no disponible | Hugging Face |
+| NeoHorse-1-4B (base) | 4B | 262K segun fuente secundaria | no disponible (solo 3 grupos) | Apache-2.0 | Hugging Face |
 
 NeoHorse-Jev-4B es el unico de la comparativa que combina licencia Apache-2.0 explicita con resultados completos en los seis grupos. Open-Jev-9B duplica el tamano de parametros y obtiene mejor puntuacion en dos de los seis grupos, mientras que Kev-4B, del mismo tamano, supera ligeramente a NeoHorse-Jev-4B en MASSIVE. La ventaja del agregado de NeoHorse-Jev-4B procede del equilibrio entre tareas, no de un liderazgo en todos los benchmarks.
 
@@ -105,10 +105,10 @@ NeoHorse-Jev-4B es el unico de la comparativa que combina licencia Apache-2.0 ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B
+- Hugging Face: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B
 - Guia de despliegue: https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B/blob/main/DEPLOYMENT.md
 - Modelo base NeoHorse-1-4B: https://huggingface.co/TokenRhythm/NeoHorse-1-4B
-- Coleccion NeoHorse Jev en HuggingFace: https://huggingface.co/collections/TokenRhythm/neohorse-jev
+- Coleccion NeoHorse Jev en Hugging Face: https://huggingface.co/collections/TokenRhythm/neohorse-jev
 - Repositorio GitHub: https://github.com/TokenRhythm/NeoHorse
 - README del proyecto: https://github.com/TokenRhythm/NeoHorse/blob/main/README.md
 - Licencia del componente Jev: https://github.com/TokenRhythm/NeoHorse/blob/main/jev/LICENSE

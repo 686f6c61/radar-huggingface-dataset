@@ -70,8 +70,8 @@ CLIP usa `openai/clip-vit-base-patch32`. CLIP-IQA promedia tres pares de prompts
 
 | Modelo | Parámetros | Contexto | Rendimiento (DrawBench) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Z-Image-Turbo-MXFP8-AutoRound | no disponible | no disponible | CLIP 31,7907; CLIP-IQA 70,3976; ImageReward 0,9916 | Apache 2.0 | HuggingFace (9 descargas) |
-| Tongyi-MAI/Z-Image-Turbo (BF16) | no disponible | no disponible | CLIP 31,7831; CLIP-IQA 70,6414; ImageReward 1,0073 | Apache 2.0 | HuggingFace |
+| Z-Image-Turbo-MXFP8-AutoRound | no disponible | no disponible | CLIP 31,7907; CLIP-IQA 70,3976; ImageReward 0,9916 | Apache 2.0 | Hugging Face (9 descargas) |
+| Tongyi-MAI/Z-Image-Turbo (BF16) | no disponible | no disponible | CLIP 31,7831; CLIP-IQA 70,6414; ImageReward 1,0073 | Apache 2.0 | Hugging Face |
 | Otros modelos de difusión texto-a-imagen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de otros modelos comparables en la información proporcionada, por lo que la comparativa se limita al modelo base BF16.
@@ -89,6 +89,6 @@ No se dispone de datos de benchmarks de otros modelos comparables en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/INCModel3/Z-Image-Turbo-MXFP8-AutoRound
+- Hugging Face: https://huggingface.co/INCModel3/Z-Image-Turbo-MXFP8-AutoRound
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - AutoRound (Intel): https://github.com/intel/auto-round

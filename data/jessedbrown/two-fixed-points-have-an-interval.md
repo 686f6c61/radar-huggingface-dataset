@@ -43,8 +43,8 @@ No procede documentar casos de uso de inferencia, porque el repositorio no conti
 - Cita bibliográfica del texto en trabajos que discutan la distinción entre dato ausente y magnitud inexistente.
 - Archivado y preservación del documento como material publicado, dado que el autor lo presenta como parte de un repositorio personal de escritos.
 - Enlace de referencia desde la página agregadora del propio autor, que agrupa su producción pública.
-- Análisis crítico del texto como ejemplo de documentación no técnica alojada en HuggingFace.
-- Revisión de metadatos y catalogación del repositorio dentro de un índice de artefactos publicados en HuggingFace.
+- Análisis crítico del texto como ejemplo de documentación no técnica alojada en Hugging Face.
+- Revisión de metadatos y catalogación del repositorio dentro de un índice de artefactos publicados en Hugging Face.
 
 Ninguno de estos puntos implica ejecución de inferencia ni consumo de GPU.
 
@@ -76,6 +76,6 @@ No disponible. No se identifica categoría de modelo, tamaño ni tarea, por lo q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/two-fixed-points-have-an-interval
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/two-fixed-points-have-an-interval
 - Página del autor «the bridge»: https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Página del proyecto «two fixed points have an interval»: https://jessebrown1980.github.io/two-fixed-points-have-an-interval/

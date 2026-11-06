@@ -90,8 +90,8 @@ La serie `mimo-7b-gdn-hybrid-*-OPD` comparte la misma arquitectura y ventana de 
 
 ## Enlaces
 
-- [HuggingFace: arianraje/mimo-7b-gdn-hybrid-1.8B-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1.8B-OPD)
-- [HuggingFace: arianraje/mimo-7b-gdn-hybrid-1.6B-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1.6B-OPD)
-- [HuggingFace: arianraje/mimo-7b-gdn-hybrid-200M-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD)
-- [HuggingFace: arianraje/mimo-7b-gdn-opd-predecay-1721m-step11144](https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-1721m-step11144)
-- [HuggingFace: XiaomiMiMo/MiMo-7B-RL-0530](https://huggingface.co/XiaomiMiMo/MiMo-7B-RL-0530)
+- [Hugging Face: arianraje/mimo-7b-gdn-hybrid-1.8B-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1.8B-OPD)
+- [Hugging Face: arianraje/mimo-7b-gdn-hybrid-1.6B-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-1.6B-OPD)
+- [Hugging Face: arianraje/mimo-7b-gdn-hybrid-200M-OPD](https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD)
+- [Hugging Face: arianraje/mimo-7b-gdn-opd-predecay-1721m-step11144](https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-1721m-step11144)
+- [Hugging Face: XiaomiMiMo/MiMo-7B-RL-0530](https://huggingface.co/XiaomiMiMo/MiMo-7B-RL-0530)

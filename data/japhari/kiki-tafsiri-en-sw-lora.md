@@ -72,8 +72,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Idiomas | Contexto | Calidad (chrF++ / COMET) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Japhari/kiki-tafsiri-en-sw-lora | LoRA sobre Gemma 4 | en, sw | No disponible (entreno a 2048) | 62,27 / 0,8494 | gemma | HuggingFace, 0 descargas |
-| bakita/kiki-tafsiri-b2-4b-it (base) | Gemma 4 causal | en, sw (por ajuste) | No disponible | 52,95 / 0,8033 | gemma | HuggingFace |
+| Japhari/kiki-tafsiri-en-sw-lora | LoRA sobre Gemma 4 | en, sw | No disponible (entreno a 2048) | 62,27 / 0,8494 | gemma | Hugging Face, 0 descargas |
+| bakita/kiki-tafsiri-b2-4b-it (base) | Gemma 4 causal | en, sw (por ajuste) | No disponible | 52,95 / 0,8033 | gemma | Hugging Face |
 | Otros traductores en–sw | No disponible | — | — | — | — | — |
 
 No se dispone de datos de benchmarks de alternativas comparables en la información proporcionada; la única comparación fiable es contra el checkpoint base, que el adaptador supera en ambas direcciones.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Japhari/kiki-tafsiri-en-sw-lora
+- Modelo en Hugging Face: https://huggingface.co/Japhari/kiki-tafsiri-en-sw-lora
 - Modelo base: https://huggingface.co/bakita/kiki-tafsiri-b2-4b-it
 - Referencia de tokenizador suajili (resultado de búsqueda, no relacionado directamente): https://huggingface.co/Mollel/MultiLinguSwahili-serengeti-E250-nli-matryoshka
 - Papers, blogs, repos y demos adicionales: no disponibles en la información proporcionada.

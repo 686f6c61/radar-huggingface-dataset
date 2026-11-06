@@ -90,7 +90,7 @@ No se han publicado en la informacion disponible valores de referencia de capaci
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-l2_remove40_swapgapnet_a010_b010_r01`) | 6.738.415.616 en safetensors; fraccion densa declarada 0,5998 | 4096 (heredado) | Llama 2 Community License | AdvBench ASR 0,3692; StrongREJECT ASR 0,1981; sobrerrechazo 0,0982 | Publico en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
+| Este checkpoint (`svd-safety-l2_remove40_swapgapnet_a010_b010_r01`) | 6.738.415.616 en safetensors; fraccion densa declarada 0,5998 | 4096 (heredado) | Llama 2 Community License | AdvBench ASR 0,3692; StrongREJECT ASR 0,1981; sobrerrechazo 0,0982 | Publico en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
 | `meta-llama/Llama-2-7b-chat-hf` (base) | ~6,74 B | 4096 | Llama 2 Community License | no disponible en esta informacion | Publico, ampliamente desplegado |
 | Llama-2-13b-chat | ~13 B | 4096 | Llama 2 Community License | no disponible en esta informacion | Publico; requiere roughly el doble de VRAM |
 | Mistral-7B-Instruct-v0.2 | ~7,2 B | 32 768 | Apache 2.0 | no disponible en esta informacion | Publico; licencia permisiva y contexto mucho mayor |
@@ -113,6 +113,6 @@ Los datos de los modelos comparados corresponden a caracteristicas generales con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado enlaces relevantes adicionales en la busqueda web: los resultados devueltos correspondian a paginas sobre zonas horarias (EST, CST, PST, ET, AEST) y no guardan relacion con el modelo. No se dispone de enlace a paper, repositorio de codigo ni demo del estudio SVD-LLM ni del metodo de swap descrito.

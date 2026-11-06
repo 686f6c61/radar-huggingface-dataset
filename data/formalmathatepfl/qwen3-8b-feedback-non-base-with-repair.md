@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8b-feedback-non-base-with-repair es un ajuste fino completo (full fine-tuning) del checkpoint formalmathatepfl/qwen3-8b-post-trained-cpt, publicado en HuggingFace por el usuario formalmathatepfl. Se trata de un modelo denso de 8.190.735.360 parametros (8,19 mil millones), etiquetado con la familia qwen3 y orientado a generacion de texto conversacional. El repositorio ocupa 16,4 GB y los pesos se distribuyen en formato safetensors compatibles con la libreria transformers.
+Qwen3-8b-feedback-non-base-with-repair es un ajuste fino completo (full fine-tuning) del checkpoint formalmathatepfl/qwen3-8b-post-trained-cpt, publicado en Hugging Face por el usuario formalmathatepfl. Se trata de un modelo denso de 8.190.735.360 parametros (8,19 mil millones), etiquetado con la familia qwen3 y orientado a generacion de texto conversacional. El repositorio ocupa 16,4 GB y los pesos se distribuyen en formato safetensors compatibles con la libreria transformers.
 
 El modelo se entrena sobre lo que el autor denomina un "sft dataset" (supervised fine-tuning), con el nombre del repositorio sugiriendo un proceso de ajuste basado en retroalimentacion (feedback) y un componente de reparacion (repair). No es un modelo base: parte de un checkpoint ya post-entrenado, lo que indica que se espera un comportamiento de asistente conversacional en lugar de completado de texto sin formato.
 
@@ -71,10 +71,10 @@ La comparativa se establece frente a modelos densos de tamano equivalente de dom
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| formalmathatepfl/qwen3-8b-feedback-non-base-with-repair | 8,19 mil millones | no disponible | other | HuggingFace, safetensors |
-| Qwen/Qwen3-8B (familia base) | 8,2 mil millones | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| meta-llama/Llama-3.1-8B | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, safetensors |
-| Qwen/Qwen2.5-7B | 7,6 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| formalmathatepfl/qwen3-8b-feedback-non-base-with-repair | 8,19 mil millones | no disponible | other | Hugging Face, safetensors |
+| Qwen/Qwen3-8B (familia base) | 8,2 mil millones | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| meta-llama/Llama-3.1-8B | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, safetensors |
+| Qwen/Qwen2.5-7B | 7,6 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 Nota: la comparacion de rendimiento no puede completarse porque el modelo analizado no publica benchmarks. Las cifras de contexto y licencia de los modelos de referencia deben verificarse en sus respectivas fichas oficiales.
 
@@ -94,8 +94,8 @@ Nota: la comparacion de rendimiento no puede completarse porque el modelo analiz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/formalmathatepfl/qwen3-8b-feedback-non-base-with-repair
+- Modelo en Hugging Face: https://huggingface.co/formalmathatepfl/qwen3-8b-feedback-non-base-with-repair
 - Modelo base (checkpoint post-trained): https://huggingface.co/formalmathatepfl/qwen3-8b-post-trained-cpt
 - LLaMA-Factory, framework de entrenamiento citado en las etiquetas del repositorio: https://github.com/hiyouga/LLaMA-Factory
-- Familia Qwen3 en HuggingFace (referencia de la arquitectura base): https://huggingface.co/Qwen/Qwen3-8B
+- Familia Qwen3 en Hugging Face (referencia de la arquitectura base): https://huggingface.co/Qwen/Qwen3-8B
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

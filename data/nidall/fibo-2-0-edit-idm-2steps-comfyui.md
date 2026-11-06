@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento ni de otros adaptadores comparables en la 
 - No se aportan datos de benchmarks, latencia ni requisitos de hardware, lo que impide evaluar su idoneidad para producción sin pruebas propias.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/NidAll/Fibo-2.0-edit-IDM-2steps-ComfyUI
+- Repositorio Hugging Face: https://huggingface.co/NidAll/Fibo-2.0-edit-IDM-2steps-ComfyUI
 - LoRA original: https://huggingface.co/akhaliq/Fibo-2.0-edit-IDM-2steps
 - Modelo base Bria Fibo 2.0 Edit Turbo: https://huggingface.co/briaai/Fibo-2.0-edit-turbo
 - Checkpoints para ComfyUI: https://huggingface.co/Comfy-Org/Fibo-2.0

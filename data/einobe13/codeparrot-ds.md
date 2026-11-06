@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Codeparrot-ds es un modelo de generación de texto afinado (fine-tuned) a partir de GPT-2 de OpenAI, publicado en HuggingFace por el usuario einobe13. Se trata de un experimento de entrenamiento generado con la clase `Trainer` de la librería Transformers, cuyo nombre sugiere una orientación hacia código, posiblemente inspirado en el proyecto CodeParrot (modelos de generación de código en Python), aunque la model card no documenta el dataset empleado ni los usos previstos.
+Codeparrot-ds es un modelo de generación de texto afinado (fine-tuned) a partir de GPT-2 de OpenAI, publicado en Hugging Face por el usuario einobe13. Se trata de un experimento de entrenamiento generado con la clase `Trainer` de la librería Transformers, cuyo nombre sugiere una orientación hacia código, posiblemente inspirado en el proyecto CodeParrot (modelos de generación de código en Python), aunque la model card no documenta el dataset empleado ni los usos previstos.
 
 El modelo conserva la arquitectura GPT-2 original con 124,2 millones de parámetros y se distribuye en formato safetensors bajo licencia MIT, lo que permite su uso libre, incluido el comercial. Su relevancia es limitada: la pérdida de validación aumenta a lo largo del entrenamiento (de 6,51 a 7,63), lo que indica que el ajuste fino no mejoró el modelo base y que el resultado es, en la práctica, un artefacto educativo o de prueba.
 
@@ -84,7 +84,7 @@ No hay resultados de MMLU, HumanEval, GSM8K ni otras pruebas estandarizadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einobe13/codeparrot-ds
+- Modelo en Hugging Face: https://huggingface.co/einobe13/codeparrot-ds
 - Modelo base (GPT-2): https://huggingface.co/openai-community/gpt2
 - Proyecto CodeParrot original (referencia del nombre): https://huggingface.co/codeparrot
 - Paper, repositorio de codigo y demos: no disponibles

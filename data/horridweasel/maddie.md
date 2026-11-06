@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HorridWeasel/maddie es un repositorio publicado en HuggingFace por el usuario HorridWeasel bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia (`license: apache-2.0`), sin descripcion del modelo, sin arquitectura declarada, sin ficha de uso y sin datos de entrenamiento. El repositorio se creo el 17 de septiembre de 2026 y su ultima actualizacion es del mismo dia, con un tamano de 0,2 GB, lo que sugiere un conjunto de pesos pequeno o un adaptador, aunque no es posible confirmarlo con los datos disponibles.
+HorridWeasel/maddie es un repositorio publicado en Hugging Face por el usuario HorridWeasel bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia (`license: apache-2.0`), sin descripcion del modelo, sin arquitectura declarada, sin ficha de uso y sin datos de entrenamiento. El repositorio se creo el 17 de septiembre de 2026 y su ultima actualizacion es del mismo dia, con un tamano de 0,2 GB, lo que sugiere un conjunto de pesos pequeno o un adaptador, aunque no es posible confirmarlo con los datos disponibles.
 
 El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, no tiene pipeline declarado ni idiomas declarados en los metadatos. No se ha publicado informacion sobre arquitectura, numero de parametros, ventana de contexto o proceso de entrenamiento.
 
@@ -77,7 +77,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | HuggingFace (0 descargas) | no disponible |
+| Disponibilidad | Hugging Face (0 descargas) | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HorridWeasel/maddie
+- Repositorio en Hugging Face: https://huggingface.co/HorridWeasel/maddie
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

@@ -75,8 +75,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Formato / tamano | Encoder de texto incluido | Top-1 (evaluación del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Virien/naturdex-bioclip-onnx (int8) | ONNX, ~87 MB | No | 66% | MIT | HuggingFace, 0 descargas |
-| BioCLIP fp32 (`imageomics/bioclip`) | Pesos originales | Sí (modelo completo) | 70% | MIT | HuggingFace |
+| Virien/naturdex-bioclip-onnx (int8) | ONNX, ~87 MB | No | 66% | MIT | Hugging Face, 0 descargas |
+| BioCLIP fp32 (`imageomics/bioclip`) | Pesos originales | Sí (modelo completo) | 70% | MIT | Hugging Face |
 | BioCLIP 2 | no disponible | no disponible | no disponible | no disponible | Anunciado por NVIDIA y el ecosistema Imageomics |
 | CLIP genérico (ViT) | Múltiples | Sí | no disponible | Variable según variante | Amplia |
 
@@ -97,7 +97,7 @@ La comparación con BioCLIP 2 y con CLIP genérico no puede cuantificarse con lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Virien/naturdex-bioclip-onnx
+- Modelo en Hugging Face: https://huggingface.co/Virien/naturdex-bioclip-onnx
 - Modelo base BioCLIP: https://huggingface.co/imageomics/bioclip
 - Repositorio de NaturDex: https://github.com/Virien84/naturdex
 - Script de exportación a ONNX: https://github.com/Virien84/naturdex/blob/main/embeddings/export_onnx.py
@@ -106,6 +106,6 @@ La comparación con BioCLIP 2 y con CLIP genérico no puede cuantificarse con lo
 - Imageomics Institute: https://imageomics.org/
 - Ecosistema BioCLIP: https://imageomics.github.io/bioclip-ecosystem/pages/models.html
 - Artículo de NVIDIA sobre BioCLIP 2: https://blogs.nvidia.com/blog/bioclip2-foundation-ai-model/
-- Modelos compatibles con ONNX en HuggingFace: https://huggingface.co/models?library=onnx
+- Modelos compatibles con ONNX en Hugging Face: https://huggingface.co/models?library=onnx
 - ONNX Model Zoo: https://github.com/onnx/models
 - Modelos de ONNX Runtime: https://onnxruntime.ai/models

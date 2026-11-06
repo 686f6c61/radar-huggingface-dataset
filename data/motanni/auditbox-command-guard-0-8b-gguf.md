@@ -90,7 +90,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Motanni/auditbox-command-guard-0.8b-gguf
+- Modelo en Hugging Face: https://huggingface.co/Motanni/auditbox-command-guard-0.8b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Hashes SHA-256: https://huggingface.co/Motanni/auditbox-command-guard-0.8b-gguf/blob/main/SHA256SUMS
 - Licencia GPL-3.0-only: https://huggingface.co/Motanni/auditbox-command-guard-0.8b-gguf/blob/main/LICENSE

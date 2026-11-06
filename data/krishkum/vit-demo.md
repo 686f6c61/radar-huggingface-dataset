@@ -65,13 +65,13 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se garantiza ningún comportamiento útil en tareas reales; es un punto de partida experimental.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No se especifican idiomas soportados ni longitud de contexto, por lo que su uso en aplicaciones multilingües o de contexto largo es inviable.
 - La licencia MIT permite uso comercial, pero los términos de las fuentes de datos externas deben revisarse por separado si se entrena con ellas.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse de forma independiente a los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Krishkum/vit-demo)
+- [Modelo en Hugging Face](https://huggingface.co/Krishkum/vit-demo)
 - [Space de demostración de ViT (relacionado, no el mismo modelo)](https://huggingface.co/spaces/grego/vit-model-demo)
 - [Repositorio de Qualcomm AI Hub con demo de ViT (referencia genérica)](https://github.com/qualcomm/ai-hub-models/blob/main/qai_hub_models/models/vit/demo.py)

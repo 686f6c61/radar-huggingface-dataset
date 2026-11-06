@@ -57,7 +57,7 @@ La innovacion tecnica relevante es la "abliteracion" aplicada en la cadena de de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de HuggingFace ni la model card del autor incluyen cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion. La busqueda web realizada no devolvio resultados relacionados con el modelo: los unicos resultados obtenidos fueron articulos sobre ExpressVPN, sin ninguna relacion con este repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la ficha de Hugging Face ni la model card del autor incluyen cifras de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion. La busqueda web realizada no devolvio resultados relacionados con el modelo: los unicos resultados obtenidos fueron articulos sobre ExpressVPN, sin ninguna relacion con este repositorio.
 
 Como referencia contextual, tampoco se dispone de benchmarks de la version abliterated original (`venkycs/Mistral-Small-24B-Instruct-2501-Abliterated`) en la informacion proporcionada. Cualquier cifra que se quisiera usar para comparar deberia medirse directamente sobre esta cuantizacion, ya que la cuantizacion en 3 bits degrada la calidad respecto a los pesos originales en precision completa.
 

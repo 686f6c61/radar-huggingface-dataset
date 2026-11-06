@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny-Inference-Optimizer-Suite es un repositorio publicado en HuggingFace por Samudhan (@samudhan2003) que se presenta como una suite de optimizacion de inferencia consciente del coste ("cost-aware inference optimizer"). Segun la model card, su funcion es seleccionar automaticamente la mejor combinacion de cuantizacion, decodificacion especulativa y compresion de KV-cache para un modelo y un escenario de despliegue dados. No se describe como un modelo de lenguaje con pesos y arquitectura propios, sino como una herramienta que opera sobre modelos existentes, con especial atencion a modelos pequenos ("tiny-models").
+Tiny-Inference-Optimizer-Suite es un repositorio publicado en Hugging Face por Samudhan (@samudhan2003) que se presenta como una suite de optimizacion de inferencia consciente del coste ("cost-aware inference optimizer"). Segun la model card, su funcion es seleccionar automaticamente la mejor combinacion de cuantizacion, decodificacion especulativa y compresion de KV-cache para un modelo y un escenario de despliegue dados. No se describe como un modelo de lenguaje con pesos y arquitectura propios, sino como una herramienta que opera sobre modelos existentes, con especial atencion a modelos pequenos ("tiny-models").
 
 El repositorio es muy reciente (creado el 20 de octubre de 2026) y no acumula descargas ni interacciones en el momento de la consulta. La model card disponible esta truncada: se interrumpe en la frase que introduce la combinacion de "3 hilos de investigacion", por lo que no se detallan la implementacion, los algoritmos concretos, las interfaces de uso ni los resultados experimentales.
 
@@ -84,7 +84,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samudhan2003/Tiny-Inference-Optimizer-Suite
+- Hugging Face: https://huggingface.co/samudhan2003/Tiny-Inference-Optimizer-Suite
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

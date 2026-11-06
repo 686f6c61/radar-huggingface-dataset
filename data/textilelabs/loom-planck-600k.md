@@ -80,11 +80,11 @@ Batería de aceptación Loom (133 prompts, mismo script y ajustes que el resto d
 
 | Modelo | Parámetros | Contexto | Batería Loom /133 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Loom Planck 600K | 586.176 | 2.048 | 112 (Q8_0) | MIT | HuggingFace, GGUF |
-| Loom Planck 300K | 310.000 (aprox.) | no disponible | 104 | MIT | HuggingFace |
-| Loom Planck 1.2M | 1.190.000 (aprox.) | no disponible | 105 | MIT | HuggingFace |
-| Loom Swift Mini 2 | 2.000.000 | no disponible | 120 | MIT | HuggingFace |
-| Loom Swift Micro 2 | 1.170.000 | no disponible | 110 | MIT | HuggingFace |
+| Loom Planck 600K | 586.176 | 2.048 | 112 (Q8_0) | MIT | Hugging Face, GGUF |
+| Loom Planck 300K | 310.000 (aprox.) | no disponible | 104 | MIT | Hugging Face |
+| Loom Planck 1.2M | 1.190.000 (aprox.) | no disponible | 105 | MIT | Hugging Face |
+| Loom Swift Mini 2 | 2.000.000 | no disponible | 120 | MIT | Hugging Face |
+| Loom Swift Micro 2 | 1.170.000 | no disponible | 110 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ Batería de aceptación Loom (133 prompts, mismo script y ajustes que el resto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Planck-600K
+- Modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Planck-600K
 - Loom Planck 300K: https://huggingface.co/textilelabs/Loom-Planck-300K
 - Loom Planck 1.2M: https://huggingface.co/textilelabs/Loom-Planck-1.2M
 - Loom Planck Core (programa no neuronal): https://huggingface.co/textilelabs/Loom-Planck-Core

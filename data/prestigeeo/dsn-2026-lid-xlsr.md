@@ -90,7 +90,7 @@ La comparación es estructural, no de rendimiento: el modelo evaluado no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prestigeeo/dsn-2026-lid-xlsr
+- Modelo en Hugging Face: https://huggingface.co/Prestigeeo/dsn-2026-lid-xlsr
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Documentación de wav2vec 2.0 en transformers: https://huggingface.co/docs/transformers/model_doc/wav2vec2
 - Artículo de XLS-R: https://arxiv.org/abs/2111.09296

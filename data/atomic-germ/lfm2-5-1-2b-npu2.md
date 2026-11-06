@@ -73,12 +73,12 @@ La variante NPU2 se diferencia del modelo Instruct original principalmente en el
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar informacion incorrecta o inventada, especialmente en tareas de conocimiento general.
 - La licencia lfm1.0 es una licencia propia de Liquid AI; es necesario revisar sus terminos especificos para uso comercial, ya que no es una licencia open source estandar como Apache 2.0 o MIT.
 - El modelo solo soporta texto; no tiene capacidades de vision ni audio (existen variantes separadas LFM2.5-VL y LFM2.5-Audio para esas modalidades).
-- La variante NPU2 de Atomic-Germ tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un modelo reciente sin validacion de la comunidad.
+- La variante NPU2 de Atomic-Germ tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un modelo reciente sin validacion de la comunidad.
 - Los parametros de generacion recomendados son especificos (temperatura 0.1, top_k 50, top_p 0.1, repetition_penalty 1.05); desviarse de ellos puede degradar la calidad de las respuestas.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Atomic-Germ/LFM2.5-1.2B-NPU2
+- Repositorio Hugging Face del modelo: https://huggingface.co/Atomic-Germ/LFM2.5-1.2B-NPU2
 - Modelo base de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Base
 - Modelo Instruct original: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Blog de Liquid AI sobre LFM2.5: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai

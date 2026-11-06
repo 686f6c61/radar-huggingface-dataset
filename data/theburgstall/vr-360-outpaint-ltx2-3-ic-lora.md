@@ -72,7 +72,7 @@ No se han identificado modelos comparables en la informacion disponible. El outp
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/TheBurgstall/VR-360-Outpaint-LTX2.3-IC-LoRA)
+- [Modelo en Hugging Face](https://huggingface.co/TheBurgstall/VR-360-Outpaint-LTX2.3-IC-LoRA)
 - [Herramientas complementarias ComfyUI-VR-Outpaint-Tools](https://github.com/Burgstall-labs/ComfyUI-VR-Outpaint-Tools)
 - [Licencia del modelo](https://huggingface.co/TheBurgstall/VR-360-Outpaint-LTX2.3-IC-LoRA/blob/main/LICENSE)
 - [Modelo base LTX-2.3-22B](https://huggingface.co/Lightricks/LTX-2.3-22B)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ERNIE-Sub-MoE-ngroups56-adaptive es un modelo de generación de texto publicado en HuggingFace por el usuario Dohyeon1. Se trata de un derivado de la familia ERNIE 4.5 con arquitectura de mezcla de expertos (MoE), tal y como indica la etiqueta de arquitectura `ernie4_5_moe` declarada en el repositorio. El nombre del modelo sugiere una variante con subconjunto de expertos organizados en 56 grupos y algún mecanismo de enrutamiento adaptativo, aunque la model card no documenta ningún detalle al respecto.
+ERNIE-Sub-MoE-ngroups56-adaptive es un modelo de generación de texto publicado en Hugging Face por el usuario Dohyeon1. Se trata de un derivado de la familia ERNIE 4.5 con arquitectura de mezcla de expertos (MoE), tal y como indica la etiqueta de arquitectura `ernie4_5_moe` declarada en el repositorio. El nombre del modelo sugiere una variante con subconjunto de expertos organizados en 56 grupos y algún mecanismo de enrutamiento adaptativo, aunque la model card no documenta ningún detalle al respecto.
 
 El checkpoint contiene 21.825.437.888 parámetros en formato safetensors (aproximadamente 21,8 mil millones), con un tamaño de repositorio de 43,7 GB. Ese volumen de pesos es coherente con un almacenamiento en bf16 o fp16 (unos 2 bytes por parámetro), lo que implica que no se han publicado versiones cuantizadas dentro del repositorio.
 
-La relevancia del modelo es limitada por el momento: cuenta con cero descargas y cero "likes", la model card es la plantilla automática de HuggingFace sin ningún campo rellenado, y no se declara licencia, idiomas, contexto ni datos de entrenamiento. Se desconoce también si existe una ficha técnica, paper o demo asociados. Es, por tanto, un experimento de investigación sin validación pública documentada.
+La relevancia del modelo es limitada por el momento: cuenta con cero descargas y cero "likes", la model card es la plantilla automática de Hugging Face sin ningún campo rellenado, y no se declara licencia, idiomas, contexto ni datos de entrenamiento. Se desconoce también si existe una ficha técnica, paper o demo asociados. Es, por tanto, un experimento de investigación sin validación pública documentada.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ La relevancia del modelo es limitada por el momento: cuenta con cero descargas y
 
 La unica informacion tecnica verificable es la etiqueta de arquitectura `ernie4_5_moe`, que situa al modelo dentro de la familia ERNIE 4.5 de Baidu, construida sobre transformers con capas de mezcla de expertos. El identificador del repositorio anade dos elementos que no aparecen documentados en ningun otro lugar: `ngroups56`, que apuntaria a una organizacion de los expertos en 56 grupos, y `adaptive`, que sugiere algun esquema de enrutamiento o poda adaptativa. Ninguna de estas dos caracteristicas esta descrita en la model card, por lo que no es posible confirmar como estan implementadas ni que efecto tienen sobre el coste computacional o la calidad.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre el proceso de destilacion, poda o fine-tuning que haya podido dar lugar a este derivado. Tampoco se documentan hiperparametros de entrenamiento, precision utilizada, infraestructura de computo ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). La referencia arXiv incluida en las etiquetas (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de HuggingFace, y no a un paper de este modelo.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre el proceso de destilacion, poda o fine-tuning que haya podido dar lugar a este derivado. Tampoco se documentan hiperparametros de entrenamiento, precision utilizada, infraestructura de computo ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). La referencia arXiv incluida en las etiquetas (`arxiv:1910.09700`) corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto de Hugging Face, y no a un paper de este modelo.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ Los datos de los modelos alternativos proceden de la documentacion publica de su
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ERNIE-Sub-MoE-ngroups56-adaptive | 21,8 mil millones | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| ERNIE-Sub-MoE-ngroups56-adaptive | 21,8 mil millones | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Familia ERNIE 4.5 (modelo base del que deriva) | Configuracion concreta del base no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
-| Qwen3-30B-A3B | 30,5 mil millones (segun documentacion publica) | 3,3 mil millones (segun documentacion publica) | 128K (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | HuggingFace, ampliamente desplegado |
-| Mixtral 8x7B | 46,7 mil millones (segun documentacion publica) | 12,9 mil millones (segun documentacion publica) | 32K (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | HuggingFace, ampliamente desplegado |
+| Qwen3-30B-A3B | 30,5 mil millones (segun documentacion publica) | 3,3 mil millones (segun documentacion publica) | 128K (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | Hugging Face, ampliamente desplegado |
+| Mixtral 8x7B | 46,7 mil millones (segun documentacion publica) | 12,9 mil millones (segun documentacion publica) | 32K (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | Hugging Face, ampliamente desplegado |
 
 No es posible establecer una comparativa de rendimiento fiable: el modelo no publica ningun resultado de benchmarks y no se conoce su numero de parametros activos, dato imprescindible para estimar su coste de inferencia frente a alternativas MoE de tamano comparable.
 
@@ -95,7 +95,7 @@ No es posible establecer una comparativa de rendimiento fiable: el modelo no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups56-adaptive
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups56-adaptive
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono, no especifico de este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper o demo del autor: no disponible

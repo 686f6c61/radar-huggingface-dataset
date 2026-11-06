@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aikoriss/Date_A_Live_Ren_Dystopia_RU` es un repositorio publicado en HuggingFace por el usuario `aikoriss` bajo licencia MIT. Por el nombre se deduce que se trata de algún artefacto relacionado con el personaje Ren de la franquicia Date A Live en un contexto "Dystopia" y con marcador de idioma ruso (RU), pero la model card no contiene ninguna descripción funcional, arquitectura, datos de entrenamiento ni instrucciones de uso.
+`aikoriss/Date_A_Live_Ren_Dystopia_RU` es un repositorio publicado en Hugging Face por el usuario `aikoriss` bajo licencia MIT. Por el nombre se deduce que se trata de algún artefacto relacionado con el personaje Ren de la franquicia Date A Live en un contexto "Dystopia" y con marcador de idioma ruso (RU), pero la model card no contiene ninguna descripción funcional, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El repositorio no incluye información sobre el pipeline, los idiomas soportados, el tamaño real de los pesos ni el formato de los mismos. El tamaño declarado del repo es de 0.0 GB, lo que sugiere que o bien está vacío, o bien contiene únicamente archivos de configuración de escaso peso. No hay descargas ni "likes" registrados en el momento de la consulta.
 
@@ -72,5 +72,5 @@ No disponible. No se puede establecer una categoría de comparación (LLM, model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aikoriss/Date_A_Live_Ren_Dystopia_RU
+- Repositorio en Hugging Face: https://huggingface.co/aikoriss/Date_A_Live_Ren_Dystopia_RU
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

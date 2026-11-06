@@ -2,9 +2,9 @@
 
 ## Resumen
 
-moore-tts-kokoro es un modelo de síntesis de voz (text-to-speech) desarrollado por el usuario anyantudre y publicado en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base hexgrad/Kokoro-82M, un modelo TTS ligero de 82 millones de parámetros conocido por ofrecer síntesis de voz de alta calidad con un coste computacional muy reducido. Este finetune adapta el modelo al mooré (también escrito moore), una lengua hablada en Burkina Faso y clasificada como de bajos recursos, un ámbito donde apenas existen soluciones de TTS.
+moore-tts-kokoro es un modelo de síntesis de voz (text-to-speech) desarrollado por el usuario anyantudre y publicado en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base hexgrad/Kokoro-82M, un modelo TTS ligero de 82 millones de parámetros conocido por ofrecer síntesis de voz de alta calidad con un coste computacional muy reducido. Este finetune adapta el modelo al mooré (también escrito moore), una lengua hablada en Burkina Faso y clasificada como de bajos recursos, un ámbito donde apenas existen soluciones de TTS.
 
-La relevancia de este modelo radica en la escasez de herramientas de voz para lenguas africanas de bajos recursos. El mooré, lengua oti-voltaica hablada por varios millones de personas en la meseta central de Burkina Faso, carecía hasta ahora de sistemas de síntesis de voz accesibles. Adaptar un modelo compacto y eficiente como Kokoro permite desplegar TTS en hardware modesto, facilitando aplicaciones educativas, de accesibilidad y de servicios públicos en la región. El modelo se publica bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar unas condiciones en HuggingFace.
+La relevancia de este modelo radica en la escasez de herramientas de voz para lenguas africanas de bajos recursos. El mooré, lengua oti-voltaica hablada por varios millones de personas en la meseta central de Burkina Faso, carecía hasta ahora de sistemas de síntesis de voz accesibles. Adaptar un modelo compacto y eficiente como Kokoro permite desplegar TTS en hardware modesto, facilitando aplicaciones educativas, de accesibilidad y de servicios públicos en la región. El modelo se publica bajo licencia Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar unas condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ La principal diferencia frente a alternativas multilingues como MMS-TTS es la es
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): hay que aceptar las condiciones del repositorio en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): hay que aceptar las condiciones del repositorio en Hugging Face antes de descargar los pesos.
 - Cobertura linguistica limitada al mooré; no sirve para otras lenguas sin nuevo entrenamiento.
 - Datos de entrenamiento no documentados: en lenguas low-resource, los corpora suelen ser pequenos, lo que puede producir pronunciaciones inconsistentes, prosodia poco natural o errores en palabras fuera del vocabulario de entrenamiento.
 - Riesgo de calidad de voz variable: no se han publicado metricas MOS ni evaluaciones perceptuales, por lo que la calidad real debe validarse caso por caso.
@@ -75,5 +75,5 @@ La principal diferencia frente a alternativas multilingues como MMS-TTS es la es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anyantudre/moore-tts-kokoro
+- Repositorio en Hugging Face: https://huggingface.co/anyantudre/moore-tts-kokoro
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M

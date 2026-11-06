@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Savage-Fury69/ppo-SoccerTwos es un agente de aprendizaje por refuerzo profundo entrenado para jugar al entorno SoccerTwos de Unity ML-Agents, un escenario de fútbol 2 contra 2 en el que dos equipos de dos agentes compiten por marcar goles. El modelo ha sido publicado por el usuario Savage-Fury69 en HuggingFace y sigue el flujo estándar de la librería ml-agents: entrenamiento con PPO (Proximal Policy Optimization) y exportación del checkpoint a formatos .nn y .onnx para su despliegue dentro del motor Unity.
+Savage-Fury69/ppo-SoccerTwos es un agente de aprendizaje por refuerzo profundo entrenado para jugar al entorno SoccerTwos de Unity ML-Agents, un escenario de fútbol 2 contra 2 en el que dos equipos de dos agentes compiten por marcar goles. El modelo ha sido publicado por el usuario Savage-Fury69 en Hugging Face y sigue el flujo estándar de la librería ml-agents: entrenamiento con PPO (Proximal Policy Optimization) y exportación del checkpoint a formatos .nn y .onnx para su despliegue dentro del motor Unity.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una política neuronal entrenada específicamente para una tarea de control en un entorno simulado. Su relevancia es acotada: sirve como ejemplo reproducible de un agente de ML-Agents, útil para quienes estudian entornos multiagente cooperativos-competitivos o quieren inspeccionar una política PPO ya entrenada sin tener que reproducir el entrenamiento desde cero.
 
@@ -50,7 +50,7 @@ La model card no documenta el número de pasos de entrenamiento, la composición
 - Pruebas de pipelines de despliegue en Unity: el fichero .onnx puede integrarse en Unity Inference Engine para validar el flujo de exportación e inferencia en un proyecto real.
 - Evaluación de robustez de políticas: al enfrentarlo a agentes propios o a variantes del entorno, se puede medir la generalización de una política entrenada en un currículo concreto.
 - Benchmarking de algoritmos de RL: comparar el rendimiento de este agente PPO frente a otras políticas (SAC, MADDPG) en el mismo entorno proporciona una referencia cuantitativa dentro de un mismo escenario.
-- Demostración interactiva en navegador: a través de la visualización de HuggingFace es posible ejecutar y observar al agente sin instalación local, lo que resulta útil para divulgación.
+- Demostración interactiva en navegador: a través de la visualización de Hugging Face es posible ejecutar y observar al agente sin instalación local, lo que resulta útil para divulgación.
 
 ## Benchmarks y rendimiento
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Entorno | Algoritmo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Savage-Fury69/ppo-SoccerTwos | SoccerTwos (ML-Agents) | PPO | no disponible | no disponible | HuggingFace |
-| unity/ML-Agents-SoccerTwos (ejemplos oficiales de la organización Unity) | SoccerTwos | PPO | no disponible | según licencia de ML-Agents | HuggingFace (organización unity) |
-| Políticas SoccerTwos de la comunidad en HuggingFace | SoccerTwos | PPO / SAC (variable) | no disponible | variable | HuggingFace |
+| Savage-Fury69/ppo-SoccerTwos | SoccerTwos (ML-Agents) | PPO | no disponible | no disponible | Hugging Face |
+| unity/ML-Agents-SoccerTwos (ejemplos oficiales de la organización Unity) | SoccerTwos | PPO | no disponible | según licencia de ML-Agents | Hugging Face (organización unity) |
+| Políticas SoccerTwos de la comunidad en Hugging Face | SoccerTwos | PPO / SAC (variable) | no disponible | variable | Hugging Face |
 
 No se dispone de comparativas cuantitativas de rendimiento entre estas políticas en la información proporcionada.
 
@@ -89,9 +89,9 @@ No se dispone de comparativas cuantitativas de rendimiento entre estas política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savage-Fury69/ppo-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/Savage-Fury69/ppo-SoccerTwos
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentación de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto de ML-Agents (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organización Unity en HuggingFace (visualización de agentes): https://huggingface.co/unity
+- Organización Unity en Hugging Face (visualización de agentes): https://huggingface.co/unity

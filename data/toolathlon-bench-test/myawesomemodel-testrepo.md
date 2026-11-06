@@ -4,7 +4,7 @@
 
 MyAwesomeModel es, segun la model card publicada por el autor, un modelo de lenguaje orientado a razonamiento, generacion de codigo y matematicas, presentado como una actualizacion de una version anterior con mayor profundidad de razonamiento y menor tasa de alucinacion. La unica informacion disponible sobre el mismo procede de esa model card: no se declaran parametros, arquitectura concreta, longitud de contexto, tokenizador ni composicion del dataset de entrenamiento.
 
-El repositorio de HuggingFace asociado, identificado como `toolathlon-bench-test/MyAwesomeModel-TestRepo`, presenta senales claras de ser un artefacto de prueba y no un modelo publicable: tiene 0 descargas, 0 likes, un tamano de repositorio de 0,0 GB (es decir, sin pesos almacenados) y una fecha de creacion de 2026-10-01, posterior a las fechas citadas en su propia documentacion. Ademas, los metadatos de HuggingFace declaran `pipeline: feature-extraction` y el tag `bert`, lo que contradice frontalmente la model card, que describe un asistente conversacional de razonamiento con modo de pensamiento, soporte de subida de ficheros y busqueda web.
+El repositorio de Hugging Face asociado, identificado como `toolathlon-bench-test/MyAwesomeModel-TestRepo`, presenta senales claras de ser un artefacto de prueba y no un modelo publicable: tiene 0 descargas, 0 likes, un tamano de repositorio de 0,0 GB (es decir, sin pesos almacenados) y una fecha de creacion de 2026-10-01, posterior a las fechas citadas en su propia documentacion. Ademas, los metadatos de Hugging Face declaran `pipeline: feature-extraction` y el tag `bert`, lo que contradice frontalmente la model card, que describe un asistente conversacional de razonamiento con modo de pensamiento, soporte de subida de ficheros y busqueda web.
 
 Por todo ello, esta ficha debe leerse como una transcripcion critica de lo que el autor afirma, no como una evaluacion verificada del modelo. Alli donde la informacion es incoherente o inexistente se indica explicitamente, y los resultados de benchmarks se recogen tal cual aparecen en la model card, advirtiendo de que sus columnas de comparacion no estan identificadas.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como una transcripcion critica de lo que e
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los metadatos de HuggingFace indican `bert`; la model card describe un modelo generativo de razonamiento, dato contradictorio y no verificable) |
+| Arquitectura | no disponible (los metadatos de Hugging Face indican `bert`; la model card describe un modelo generativo de razonamiento, dato contradictorio y no verificable) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible (la model card menciona un consumo medio de 23.000 tokens de generacion por pregunta en AIME, dato que no equivale a la ventana de contexto) |
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: autor `toolathlon-bench-test`, libreria `tran
 
 La model card no describe la arquitectura interna del modelo. Se limita a afirmar que la version actual incorpora "recursos computacionales incrementados" y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", sin especificar si se trata de un transformer denso, un MoE, un modelo hibrido con SSM ni que tecnica de atencion emplea. Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron fases de RLHF, DPO u otro metodo de alineamiento. La unica mencion relevante es que el modelo soporta system prompt y que ya no requiere tokens especiales al inicio de la salida para forzar un patron de pensamiento concreto, lo que sugiere un entrenamiento orientado a razonamiento con tokens de "thinking", pero sin datos verificables.
 
-Existe una contradiccion formal entre fuentes: los metadatos de HuggingFace clasifican el repositorio como `feature-extraction` con tag `bert`, mientras que la model card describe un asistente conversacional generativo con razonamiento, function calling, busqueda web y subida de ficheros. Ademas, el repositorio tiene 0,0 GB, por lo que no contiene ningun peso que permita inspeccionar la arquitectura. La model card menciona la existencia de una variante `MyAwesomeModel-Small`, con arquitectura identica al modelo base y el mismo tokenizador, pero no aporta especificaciones de ninguna de las dos.
+Existe una contradiccion formal entre fuentes: los metadatos de Hugging Face clasifican el repositorio como `feature-extraction` con tag `bert`, mientras que la model card describe un asistente conversacional generativo con razonamiento, function calling, busqueda web y subida de ficheros. Ademas, el repositorio tiene 0,0 GB, por lo que no contiene ningun peso que permita inspeccionar la arquitectura. La model card menciona la existencia de una variante `MyAwesomeModel-Small`, con arquitectura identica al modelo base y el mismo tokenizador, pero no aporta especificaciones de ninguna de las dos.
 
 ## Capacidades
 
@@ -101,7 +101,7 @@ Como unico elemento comparativo utilizable, se puede extraer de la tabla de la p
 ## Limitaciones y advertencias
 
 - Repositorio sin pesos: el tamano declarado es de 0,0 GB, por lo que no hay ficheros de modelo descargables. El modelo no es ejecutable tal y como esta publicado.
-- Incoherencia de metadatos: HuggingFace clasifica el repositorio como `feature-extraction` con tag `bert`, mientras que la model card describe un asistente generativo de razonamiento. Una de las dos fuentes es incorrecta.
+- Incoherencia de metadatos: Hugging Face clasifica el repositorio como `feature-extraction` con tag `bert`, mientras que la model card describe un asistente generativo de razonamiento. Una de las dos fuentes es incorrecta.
 - Fechas inconsistentes: el repositorio fue creado el 2026-10-01, mientras que la model card recomienda un system prompt con fecha de ejemplo del 28 de mayo de 2025 y cita AIME 2025. La cronologia no cuadra.
 - Senales de artefacto de prueba: 0 descargas, 0 likes, autor con nombre de benchmark (`toolathlon-bench-test`) y nombre de repositorio `MyAwesomeModel-TestRepo`. No debe tratarse como un modelo de produccion.
 - Benchmarks no reproducibles: las metricas de la tabla no indican el conjunto de evaluacion, el numero de muestras ni la metodologia, y las columnas de comparacion no estan identificadas. No son verificables de forma independiente.
@@ -114,7 +114,7 @@ Como unico elemento comparativo utilizable, se puede extraer de la tabla de la p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/toolathlon-bench-test/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/toolathlon-bench-test/MyAwesomeModel-TestRepo
 - Web oficial del modelo: no disponible (la model card la menciona sin enlace)
 - Repositorio de codigo: no disponible (la model card lo menciona sin enlace)
 - Paper tecnico: no disponible

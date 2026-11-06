@@ -77,11 +77,11 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CTlandu/csci680-a1-t5-ft-pt | 60,5 M | No disponible | Code review (2 tareas, multitarea con prefijos) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| CTlandu/csci680-a1-t5-ft-nopt (condición A) | ~60,5 M (no confirmado) | No disponible | Code review (misma receta, distinta inicialización) | No disponible | HuggingFace |
-| CTlandu/csci680-a1-t5-small-pretrained | ~60,5 M (no confirmado) | No disponible | Backbone T5 preentrenado por el autor | No disponible | HuggingFace |
-| google-t5/t5-small | 60,5 M | 512 tokens | Texto a texto general | Apache 2.0 | HuggingFace |
-| Salesforce/codet5-small | ~60 M | 512 tokens | Tareas de código (CodeSearchNet) | Apache 2.0 | HuggingFace |
+| CTlandu/csci680-a1-t5-ft-pt | 60,5 M | No disponible | Code review (2 tareas, multitarea con prefijos) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| CTlandu/csci680-a1-t5-ft-nopt (condición A) | ~60,5 M (no confirmado) | No disponible | Code review (misma receta, distinta inicialización) | No disponible | Hugging Face |
+| CTlandu/csci680-a1-t5-small-pretrained | ~60,5 M (no confirmado) | No disponible | Backbone T5 preentrenado por el autor | No disponible | Hugging Face |
+| google-t5/t5-small | 60,5 M | 512 tokens | Texto a texto general | Apache 2.0 | Hugging Face |
+| Salesforce/codet5-small | ~60 M | 512 tokens | Tareas de código (CodeSearchNet) | Apache 2.0 | Hugging Face |
 
 Las filas de `t5-small` y `codet5-small` se basan en las model cards públicas de esos modelos y no en la información proporcionada para este modelo; no se dispone de una comparación de rendimiento directa entre ellos y `csci680-a1-t5-ft-pt`. La ventaja diferencial de este checkpoint no es el rendimiento, sino la trazabilidad experimental: métricas publicadas, receta reproducible y una condición de control (condición A) con los mismos datos y pasos.
 
@@ -101,7 +101,7 @@ Las filas de `t5-small` y `codet5-small` se basan en las model cards públicas d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt
+- Modelo en Hugging Face: https://huggingface.co/CTlandu/csci680-a1-t5-ft-pt
 - Modelo base preentrenado: https://huggingface.co/CTlandu/csci680-a1-t5-small-pretrained
 - Condición A (sin preentrenamiento del autor): https://huggingface.co/CTlandu/csci680-a1-t5-ft-nopt
 - Dataset de Tufano et al. (CC BY 4.0), Zenodo: https://doi.org/10.5281/zenodo.5387856

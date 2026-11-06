@@ -87,7 +87,7 @@ No se dispone de datos comparativos de rendimiento entre este modelo y alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SebasKoedam/act_so101_training_1
+- Modelo en Hugging Face: https://huggingface.co/SebasKoedam/act_so101_training_1
 - Dataset de entrenamiento: https://huggingface.co/datasets/SebasKoedam/so101_training_1_20261104_093731
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SebasKoedam/so101_training_1_20261104_093731
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

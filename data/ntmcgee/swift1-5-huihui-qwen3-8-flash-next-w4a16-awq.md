@@ -101,7 +101,7 @@ La comparación relevante es frente al build Merlin: mismo hardware objetivo y m
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/ntmcgee/Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-AWQ
+- Hugging Face (este checkpoint): https://huggingface.co/ntmcgee/Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-AWQ
 - Fuente del backbone cuantizado: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-W4A16-AWQ
 - Modelo Swift 1.5 de UkisAI (cabeza MTP): https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Build Merlin (origen del paquete MTP INT4): https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin

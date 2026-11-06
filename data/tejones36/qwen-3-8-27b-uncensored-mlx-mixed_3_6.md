@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tejones36/Qwen-3.8-27B-Uncensored-mlx-mixed_3_6
+- Repositorio Hugging Face: https://huggingface.co/tejones36/Qwen-3.8-27B-Uncensored-mlx-mixed_3_6
 - Modelo base: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
 - Librería MLX: https://github.com/ml-explore/mlx
 - Herramienta de conversión mlx-vlm: https://github.com/Blaizzy/mlx-vlm

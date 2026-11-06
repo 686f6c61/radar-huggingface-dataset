@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stuff123456/krea2SNOFS` es un adaptador LoRA de bajo rango para generación de imagen a partir de texto (text-to-image), publicado por el usuario `stuff123456` en HuggingFace y entrenado sobre el modelo base `krea/Krea-2-Turbo` de Krea AI. El repositorio ocupa 1,6 GB y se distribuye con la librería `diffusers`, siguiendo la plantilla `template:diffusion-lora`. No es un modelo completo: es un conjunto de pesos adicionales que se cargan sobre el modelo base para inyectar un concepto o estilo concreto.
+`stuff123456/krea2SNOFS` es un adaptador LoRA de bajo rango para generación de imagen a partir de texto (text-to-image), publicado por el usuario `stuff123456` en Hugging Face y entrenado sobre el modelo base `krea/Krea-2-Turbo` de Krea AI. El repositorio ocupa 1,6 GB y se distribuye con la librería `diffusers`, siguiendo la plantilla `template:diffusion-lora`. No es un modelo completo: es un conjunto de pesos adicionales que se cargan sobre el modelo base para inyectar un concepto o estilo concreto.
 
 La model card es extremadamente escasa: no declara licencia, no documenta idiomas, no describe el dataset de entrenamiento, no indica el rango del adaptador ni los hiperparámetros usados, y el `instance_prompt` es un bloque extenso de términos de contenido sexual explícito en inglés en lugar de una frase de activación corta. Esto sugiere una configuración de entrenamiento generada de forma automática o descuidada, y sitúa el artefacto en la categoría de LoRA NSFW para fotografía adulta, sin ninguna validación de la comunidad (0 descargas, 0 likes en el momento de la publicación).
 
@@ -45,7 +45,7 @@ La model card no describe la composicion de los datos de entrenamiento ni si hub
 
 - Prototipado de iluminacion y encuadre en fotografia de retrato adulto: el adaptador permite generar variaciones de esquema de luz y composicion antes de un rodaje real, siempre en plataformas con verificacion de edad y sobre modelos base con licencia compatible.
 - Investigacion sobre sesgos en modelos de difusion NSFW: disponer de un LoRA especializado y mal documentado permite estudiar como se degrada la representacion anatomica y corporal cuando el dataset no esta curado ni descrito.
-- Auditoria de seguridad de artefactos en HuggingFace: el caso sirve para construir heuristicas que detecten model cards sin licencia, con `instance_prompt` malformado y sin datos de entrenamiento, antes de permitir su descarga en un entorno corporativo.
+- Auditoria de seguridad de artefactos en Hugging Face: el caso sirve para construir heuristicas que detecten model cards sin licencia, con `instance_prompt` malformado y sin datos de entrenamiento, antes de permitir su descarga en un entorno corporativo.
 - Pruebas de pipelines de carga de LoRA en `diffusers`: validar la API `load_lora_weights`, la gestion de escala del adaptador y la descarga selectiva de un repositorio de 1,6 GB en un entorno de integracion continua.
 - Experimentacion artistica con estetica fotografica realista sobre un modelo turbo: util para comparar la fidelidad de piel, grano y profundidad de campo entre un modelo base sin adaptador y la misma generacion con el LoRA aplicado.
 - Docencia y divulgacion sobre el ecosistema LoRA: el contraste entre la ausencia total de documentacion de este repositorio y las fichas tecnicas bien elaboradas de otros adaptadores es un material didactico directo sobre que informacion exigir a un artefacto antes de usarlo.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Base | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `stuff123456/krea2SNOFS` | Krea-2-Turbo | No disponible (repo de 1,6 GB) | No disponible | No declarada | HuggingFace, 0 descargas |
+| `stuff123456/krea2SNOFS` | Krea-2-Turbo | No disponible (repo de 1,6 GB) | No disponible | No declarada | Hugging Face, 0 descargas |
 | Other Fun Stuff (SNOFS) V1.4 | Krea 2 | No disponible | No disponible | No disponible | Tensor.Art |
 | Other Fun Stuff (SNOFS) V1.5 | Krea 2 | No disponible | No disponible | No disponible | Tensor.Art |
 | SNOFS Merged | Krea 2 / otros | No disponible | No disponible | No disponible | Civitai |
@@ -89,7 +89,7 @@ Los tres comparadores comparten la misma tematica NSFW y el mismo modelo base de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stuff123456/krea2SNOFS
+- Repositorio en Hugging Face: https://huggingface.co/stuff123456/krea2SNOFS
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Pagina oficial de Krea 2: https://www.krea.ai/krea-2
 - Other Fun Stuff (SNOFS) V1.4 en Tensor.Art: https://tensor.art/models/1039832475498491300

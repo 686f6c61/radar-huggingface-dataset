@@ -74,7 +74,7 @@ Nota: el modelo del repositorio es un fine-tune, no el base. La comparativa se b
 ## Limitaciones y advertencias
 
 - El repositorio no incluye una model card específica para el fine-tune; la documentación es la del modelo base, lo que impide conocer los datos de entrenamiento, el proceso de ajuste y la calidad del resultado.
-- No se han publicado evaluaciones independientes del fine-tune. En HuggingFace tiene 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad.
+- No se han publicado evaluaciones independientes del fine-tune. En Hugging Face tiene 0 descargas y 0 likes, lo que indica que no ha sido validado por la comunidad.
 - Como todo modelo de lenguaje, puede generar alucinaciones o información incorrecta, especialmente en dominios especializados.
 - La cobertura lingüística y las capacidades de tool calling del fine-tune no están confirmadas.
 - El modelo es multimodal, pero no se especifican los formatos de imagen, la resolución máxima ni el rendimiento en tareas visuales concretas.
@@ -82,7 +82,7 @@ Nota: el modelo del repositorio es un fine-tune, no el base. La comparativa se b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NiuNiu0110/rst-qwen3.5-9b-sft
+- Hugging Face: https://huggingface.co/NiuNiu0110/rst-qwen3.5-9b-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Ollama: https://ollama.com/library/qwen3.5:9b

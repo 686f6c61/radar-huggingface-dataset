@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Fiendish_LLAMA_3B es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.2-3B-Instruct, desarrollado por el usuario SicariusSicariiStuff y publicado en HuggingFace. Se trata de la "hermana malvada" de su modelo anterior Impish_LLAMA_3B: el autor lo describe como menos "wholesome" y con más "edge", orientado específicamente a roleplay (RP) y a conversación estilo Character.AI, con respuestas cortas de uno o dos párrafos y una tasa de rechazos (refusals) muy baja.
+Fiendish_LLAMA_3B es un ajuste fino (fine-tune) del modelo meta-llama/Llama-3.2-3B-Instruct, desarrollado por el usuario SicariusSicariiStuff y publicado en Hugging Face. Se trata de la "hermana malvada" de su modelo anterior Impish_LLAMA_3B: el autor lo describe como menos "wholesome" y con más "edge", orientado específicamente a roleplay (RP) y a conversación estilo Character.AI, con respuestas cortas de uno o dos párrafos y una tasa de rechazos (refusals) muy baja.
 
 El modelo conserva la arquitectura y el tamaño del Llama-3.2-3B-Instruct original (3.606.752.256 parámetros según los pesos en safetensors), por lo que hereda la ventana de contexto y las capacidades base del modelo de Meta, pero con un comportamiento afinado para personajes y narrativa interactiva. Es relevante en el ecosistema de modelos pequeños para RP, donde un 3B bien ajustado puede ejecutarse en hardware de consumo y ofrecer una experiencia de personaje consistente sin los rechazos típicos de los modelos alineados de forma conservadora.
 
-La ficha se basa únicamente en la información pública disponible en HuggingFace; el autor no publica detalles sobre el dataset de entrenamiento, el método de ajuste ni resultados de benchmarks, por lo que muchos apartados técnicos quedan marcados como "no disponible".
+La ficha se basa únicamente en la información pública disponible en Hugging Face; el autor no publica detalles sobre el dataset de entrenamiento, el método de ajuste ni resultados de benchmarks, por lo que muchos apartados técnicos quedan marcados como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Fiendish_LLAMA_3B | 3,6 B | No disponible | llama3.2 | HuggingFace | Fine-tune de Llama-3.2-3B-Instruct para roleplay |
-| Impish_LLAMA_3B | 3,6 B (base Llama 3.2 3B) | No disponible | llama3.2 | HuggingFace | Modelo predecesor del mismo autor, más "wholesome" |
-| meta-llama/Llama-3.2-3B-Instruct | 3,2 B | No disponible en esta ficha | llama3.2 | HuggingFace | Modelo base oficial de Meta, alineado de forma general |
+| Fiendish_LLAMA_3B | 3,6 B | No disponible | llama3.2 | Hugging Face | Fine-tune de Llama-3.2-3B-Instruct para roleplay |
+| Impish_LLAMA_3B | 3,6 B (base Llama 3.2 3B) | No disponible | llama3.2 | Hugging Face | Modelo predecesor del mismo autor, más "wholesome" |
+| meta-llama/Llama-3.2-3B-Instruct | 3,2 B | No disponible en esta ficha | llama3.2 | Hugging Face | Modelo base oficial de Meta, alineado de forma general |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Fiendish_LLAMA_3B
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Fiendish_LLAMA_3B
 - Modelo predecesor Impish_LLAMA_3B: https://huggingface.co/SicariusSicariiStuff/Impish_LLAMA_3B
 - Cuantizaciones GGUF: https://huggingface.co/SicariusSicariiStuff/Fiendish_LLAMA_3B_GGUF
 - Cuantizaciones iMatrix: https://huggingface.co/SicariusSicariiStuff/Fiendish_LLAMA_3B_iMatrix

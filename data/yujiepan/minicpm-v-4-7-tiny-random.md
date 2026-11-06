@@ -80,7 +80,7 @@ La comparación directa con alternativas de la misma categoría (modelos multimo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yujiepan/minicpm-v-4.7-tiny-random
+- Repositorio Hugging Face: https://huggingface.co/yujiepan/minicpm-v-4.7-tiny-random
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Script de creación: `.meta/create_model.py` (dentro del repositorio)
 - Log de estructura: `.meta/model.log` (dentro del repositorio)

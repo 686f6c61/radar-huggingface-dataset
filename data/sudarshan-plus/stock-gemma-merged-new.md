@@ -75,6 +75,6 @@ No se dispone de benchmarks comparativos entre estos modelos. La comparativa se 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sudarshan-plus/stock-gemma-merged-new
+- Hugging Face del modelo: https://huggingface.co/sudarshan-plus/stock-gemma-merged-new
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Nueva versión referenciada: https://huggingface.co/sudarshan-plus/stock-gemma-31b-GGUF

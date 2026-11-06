@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de comparaciones cuantitativas con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uve1048/hrnet-w48-footprint
+- Modelo en Hugging Face: https://huggingface.co/Uve1048/hrnet-w48-footprint
 - Repositorio Footprint-Creater (pipeline de post-procesado a Shapefiles): https://github.com/UVE1048/Footprint-Creater
 - Repositorio HRNet-Footprint-Trainer (entrenamiento y `predict.py`): https://github.com/UVE1048/HRNet-Footprint-Trainer
 - Script de inferencia de referencia: https://github.com/UVE1048/HRNet-Footprint-Trainer/blob/main/predict.py

@@ -69,7 +69,7 @@ No es posible establecer una comparativa rigurosa con modelos de la misma catego
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (qijiashen/...qwen35-4b-slime-sb) | 2,27 B (safetensors) | No disponible | No disponible | Repo HuggingFace, 0 descargas |
+| Este modelo (qijiashen/...qwen35-4b-slime-sb) | 2,27 B (safetensors) | No disponible | No disponible | Repo Hugging Face, 0 descargas |
 | Alternativas de ~2-4 B | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No es posible establecer una comparativa rigurosa con modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qijiashen/e2e-terminal-rl-qwen35-4b-slime-sb-XpAvCqbu2T1wSFs1zgsNlP
+- Repositorio Hugging Face: https://huggingface.co/qijiashen/e2e-terminal-rl-qwen35-4b-slime-sb-XpAvCqbu2T1wSFs1zgsNlP
 - Fichero `SUBMISSION.json` (referenciado en la model card, contiene los sha256 de los ficheros): disponible dentro del propio repositorio.
 - Paper, blog o repositorio de `agentrl-bench`: no disponible en la informacion proporcionada.
 - Paper o documentacion de la base Qwen 3.5: no disponible en la informacion proporcionada.

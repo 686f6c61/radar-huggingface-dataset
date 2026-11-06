@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Agents-A1-i1-GGUF
-- Repositorio HuggingFace con cuantizados estáticos: https://huggingface.co/mradermacher/Agents-A1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Agents-A1-i1-GGUF
+- Repositorio Hugging Face con cuantizados estáticos: https://huggingface.co/mradermacher/Agents-A1-GGUF
 - Repositorio GitHub del modelo base: https://github.com/InternScience/Agents-A1
 - Página de descarga de mradermacher: https://hf.tst.eu/model#Agents-A1-i1-GGUF

@@ -18,7 +18,7 @@ La relevancia para desarrolladores e investigadores es doble: por un lado, docum
 | Longitud de contexto | no disponible en tokens; la variante Status-D emplea 32 fotogramas muestreados del prefijo [0,t] mas un keyframe Writer (528 tokens visuales) y un contexto de Status de 48 pasos |
 | Tipos de cuantizacion | no disponible (se publican pesos de servicio EMA; no se documentan cuantizaciones GGUF, AWQ, GPTQ ni similares) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (ni en los metadatos de HuggingFace ni en la model card) |
+| Licencia | no disponible (ni en los metadatos de Hugging Face ni en la model card) |
 | Formato de pesos | no especificado; el repositorio incluye pesos EMA de servicio, activos de normalizacion/historial, codigo de inferencia, versiones exactas de dependencias y estado de reanudacion (no-EMA, optimizador, RNG y sampler) |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step10000 | no disponible | 32 fotogramas + keyframe (528 tokens visuales), Status 48 pasos | sin benchmarks publicados | no disponible | HuggingFace, repo de 12,8 GB |
+| pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step10000 | no disponible | 32 fotogramas + keyframe (528 tokens visuales), Status 48 pasos | sin benchmarks publicados | no disponible | Hugging Face, repo de 12,8 GB |
 | π0.5 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Otros ajustes LoRA de π0.5 para robotica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -73,7 +73,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: ni los metadatos de HuggingFace ni la model card especifican términos de uso, por lo que el uso comercial queda sin cobertura legal explícita.
+- Licencia no declarada: ni los metadatos de Hugging Face ni la model card especifican términos de uso, por lo que el uso comercial queda sin cobertura legal explícita.
 - Advertencia del autor: esta publicación intermedia no es una evaluación de calidad de la política.
 - La evaluación offline, cuando se incluye, no establece una tasa de éxito en robot real.
 - Proveniencia de etiquetas: la revisión de ventanas es de agente/modelo, no ground truth humano.
@@ -89,5 +89,5 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step10000
+- Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-lora-gbs4-pgb1-gpu4-r2-step10000
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo, su modelo base π0.5 ni documentación técnica asociada; los enlaces obtenidos correspondían a servicios de radio en línea sin relación con el contenido.

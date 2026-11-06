@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed10` es un modelo de lenguaje de ~125 millones de parámetros basado en la arquitectura GPT-2, desarrollado por fpadovani como parte de un proyecto de investigación de la Universidad de Groningen (visible en el enlace de Weights & Biases asociado al entrenamiento). Se trata de un fine-tuning por SFT (supervised fine-tuning) del modelo base `fpadovani/ppt-nld_newlexicon_uniform-100mb_seed10`, entrenado con la librería TRL de HuggingFace.
+`fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed10` es un modelo de lenguaje de ~125 millones de parámetros basado en la arquitectura GPT-2, desarrollado por fpadovani como parte de un proyecto de investigación de la Universidad de Groningen (visible en el enlace de Weights & Biases asociado al entrenamiento). Se trata de un fine-tuning por SFT (supervised fine-tuning) del modelo base `fpadovani/ppt-nld_newlexicon_uniform-100mb_seed10`, entrenado con la librería TRL de Hugging Face.
 
 El nombre del modelo revela su propósito experimental: pertenece a la familia "ppt_art_lang", un proyecto que estudia el efecto de léxicos artificiales ("newlexicon") en el aprendizaje de modelos de lenguaje. El sufijo "uniform" indica que el nuevo léxico se generó con una distribución de frecuencias uniforme (frente a otras variantes con distribución Zipf), y "ckpt500_seed10" identifica el checkpoint 500 de entrenamiento con semilla aleatoria 10. El prefijo "nld" sugiere que el corpus base es neerlandés, aunque la model card no declara idiomas explícitamente.
 
@@ -23,7 +23,7 @@ Es un modelo de investigación, no un producto orientado a producción. Su relev
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura GPT-2 estándar: un transformer decoder-only con atención causal, tal y como indica la etiqueta `gpt2` en HuggingFace. Con 124,77 millones de parámetros, se corresponde con el tamaño "small" de la familia GPT-2. El modelo fue entrenado mediante fine-tuning supervisado (SFT) usando la librería TRL 0.23.0 sobre el modelo base `fpadovani/ppt-nld_newlexicon_uniform-100mb_seed10`, que a su vez fue preentrenado sobre 100 MB de texto (según el sufijo "100mb" del nombre) con un léxico artificial de distribución uniforme.
+El modelo sigue la arquitectura GPT-2 estándar: un transformer decoder-only con atención causal, tal y como indica la etiqueta `gpt2` en Hugging Face. Con 124,77 millones de parámetros, se corresponde con el tamaño "small" de la familia GPT-2. El modelo fue entrenado mediante fine-tuning supervisado (SFT) usando la librería TRL 0.23.0 sobre el modelo base `fpadovani/ppt-nld_newlexicon_uniform-100mb_seed10`, que a su vez fue preentrenado sobre 100 MB de texto (según el sufijo "100mb" del nombre) con un léxico artificial de distribución uniforme.
 
 El entrenamiento se registró en Weights & Biases bajo el proyecto `ppt_art_lang` de la Universidad de Groningen. Las versiones de las librerías utilizadas son Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. El checkpoint 500 (ckpt500) indica que se guardó el estado del modelo tras 500 pasos de optimización. No se dispone de información sobre el dataset exacto de fine-tuning, el número de tokens totales ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 124,77 millones de parámetros, el modelo ocupa aproximadamente 500 MB en FP32, 250 MB en FP16 y unos 125 MB en int8. Cabe sin problemas en cualquier GPU consumer actual.
 - GPUs recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 3060, RTX 4060 o incluso una GPU integrada moderna pueden ejecutar inferencia sin problemas.
 - Compatibilidad con GPUs consumer: sí, es un modelo muy ligero que tambien puede ejecutarse en CPU con latencias aceptables (del orden de segundos por generacion de 128 tokens).
-- Opciones de despliegue: al ser un modelo de la familia GPT-2 con pesos en safetensors, es compatible con Transformers (pipeline de text-generation), vLLM, llama.cpp (si se convierte a GGUF), Ollama y Text Generation Inference (TGI). La etiqueta `endpoints_compatible` en HuggingFace confirma compatibilidad con la infraestructura de inferencia de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia GPT-2 con pesos en safetensors, es compatible con Transformers (pipeline de text-generation), vLLM, llama.cpp (si se convierte a GGUF), Ollama y Text Generation Inference (TGI). La etiqueta `endpoints_compatible` en Hugging Face confirma compatibilidad con la infraestructura de inferencia de Hugging Face.
 - Latencia y throughput: no hay datos publicados. Como referencia orientativa para un modelo de 125M en una GPU moderna, la generacion de 128 tokens suele tardar menos de un segundo.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ Los modelos de esta familia se diferencian principalmente en la distribucion del
 ## Limitaciones y advertencias
 
 - Modelo de investigacion: no esta disenado ni validado para uso en produccion. Su unico proposito es experimental.
-- Sin licencia clara: la model card indica "licence: license" y HuggingFace reporta "no disponible". No se puede asumir permisos de uso comercial sin consultar al autor.
+- Sin licencia clara: la model card indica "licence: license" y Hugging Face reporta "no disponible". No se puede asumir permisos de uso comercial sin consultar al autor.
 - Sin datos de sesgos: no se ha realizado ninguna evaluacion de sesgos de genero, raza o ideologicos. Al estar entrenado sobre 100 MB de texto, es probable que refleje sesgos presentes en el corpus original.
 - Riesgo de alucinacion elevado: por su tamano reducido y entrenamiento limitado, las respuestas pueden ser incoherentes o inventar informacion. No es adecuado para tareas factuales.
 - Idiomas no confirmados: aunque el prefijo "nld" sugiere neerlandes, la model card no declara los idiomas soportados. El lexico artificial podria afectar a la generacion en cualquier idioma natural.
@@ -82,7 +82,7 @@ Los modelos de esta familia se diferencian principalmente en la distribucion del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_newlexicon_uniform-100mb_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/y9wn2e1l
 - Modelo hermano (baseline seed10): https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-nld-baseline-ckpt500_seed10

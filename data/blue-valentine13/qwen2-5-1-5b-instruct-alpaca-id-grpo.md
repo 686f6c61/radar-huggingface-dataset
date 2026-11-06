@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-grpo es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario blue-valentine13 en HuggingFace. Se trata de un modelo decoder-only de tipo transformer, con 1.543.714.304 parametros totales (aproximadamente 1,5 mil millones) y un peso de repositorio de 3,1 GB en formato safetensors. Su licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-grpo es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario blue-valentine13 en Hugging Face. Se trata de un modelo decoder-only de tipo transformer, con 1.543.714.304 parametros totales (aproximadamente 1,5 mil millones) y un peso de repositorio de 3,1 GB en formato safetensors. Su licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
 El nombre del repositorio revela la cadena de entrenamiento seguida: se parte de Qwen2.5-1.5B-Instruct, se aplica un ajuste supervisado (SFT) sobre un dataset de estilo Alpaca con identificador "id", y finalmente se aplica GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo. El modelo intermedio del pipeline es blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-sft, que actua como modelo base del ajuste GRPO final.
 
-El modelo es relevante como ejemplo de pipeline de post-entrenamiento en dos fases (SFT + RL) sobre un modelo pequeno, reproducible con la libreria Unsloth y TRL de HuggingFace. Al estar etiquetado exclusivamente para el idioma ingles, su ambito de aplicacion practica queda limitado a tareas en ese idioma. No registra descargas ni "likes" en el momento de redactar esta ficha, por lo que carece de validacion por parte de la comunidad.
+El modelo es relevante como ejemplo de pipeline de post-entrenamiento en dos fases (SFT + RL) sobre un modelo pequeno, reproducible con la libreria Unsloth y TRL de Hugging Face. Al estar etiquetado exclusivamente para el idioma ingles, su ambito de aplicacion practica queda limitado a tareas en ese idioma. No registra descargas ni "likes" en el momento de redactar esta ficha, por lo que carece de validacion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ El modelo es relevante como ejemplo de pipeline de post-entrenamiento en dos fas
 
 La arquitectura corresponde a un transformer decoder-only de la familia Qwen2, heredada de Qwen2.5-1.5B-Instruct. El modelo tiene 1,543 mil millones de parametros y se distribuye en safetensors, lo que lo hace compatible con el ecosistema transformers, text-generation-inference y herramientas de cuantizacion derivadas. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni la configuracion de atencion (por ejemplo, si emplea GQA o atencion completa) mas alla de lo que implica la familia Qwen2.
 
-El proceso de entrenamiento consta de dos fases segun la nomenclatura del repositorio. Primero, un ajuste supervisado (SFT) sobre un dataset de instrucciones de estilo Alpaca con el sufijo "id" (probablemente referido al idioma indonesio o a un identificador de tarea, no aclarado en la model card), que produce el modelo intermedio qwen2.5-1.5b-instruct-alpaca-id-sft. Segundo, un ajuste por refuerzo con GRPO, una variante de policy optimization que estima la ventaja relativa dentro de grupos de respuestas generadas, sin necesidad de un modelo critico separado. La model card indica que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una mejora de velocidad declarada de 2x respecto a un entrenamiento convencional. No se documentan hiperparametros, tamano de lote, tasa de aprendizaje ni numero de pasos.
+El proceso de entrenamiento consta de dos fases segun la nomenclatura del repositorio. Primero, un ajuste supervisado (SFT) sobre un dataset de instrucciones de estilo Alpaca con el sufijo "id" (probablemente referido al idioma indonesio o a un identificador de tarea, no aclarado en la model card), que produce el modelo intermedio qwen2.5-1.5b-instruct-alpaca-id-sft. Segundo, un ajuste por refuerzo con GRPO, una variante de policy optimization que estima la ventaja relativa dentro de grupos de respuestas generadas, sin necesidad de un modelo critico separado. La model card indica que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una mejora de velocidad declarada de 2x respecto a un entrenamiento convencional. No se documentan hiperparametros, tamano de lote, tasa de aprendizaje ni numero de pasos.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qwen2.5-1.5b-instruct-alpaca-id-grpo | 1,54B | no disponible | Apache-2.0 | HuggingFace | no disponible |
-| Qwen2.5-1.5B-Instruct | 1,5B | no disponible | Apache-2.0 | HuggingFace | no disponible en esta ficha |
-| Llama-3.2-1B-Instruct | 1,2B | no disponible | Llama 3.2 Community License | HuggingFace | no disponible en esta ficha |
-| SmolLM2-1.7B-Instruct | 1,7B | no disponible | Apache-2.0 | HuggingFace | no disponible en esta ficha |
+| qwen2.5-1.5b-instruct-alpaca-id-grpo | 1,54B | no disponible | Apache-2.0 | Hugging Face | no disponible |
+| Qwen2.5-1.5B-Instruct | 1,5B | no disponible | Apache-2.0 | Hugging Face | no disponible en esta ficha |
+| Llama-3.2-1B-Instruct | 1,2B | no disponible | Llama 3.2 Community License | Hugging Face | no disponible en esta ficha |
+| SmolLM2-1.7B-Instruct | 1,7B | no disponible | Apache-2.0 | Hugging Face | no disponible en esta ficha |
 
 No se dispone de datos de benchmarks que permitan comparar objetivamente el rendimiento de estos modelos; la tabla se limita a parametros, licencia y disponibilidad.
 
@@ -91,8 +91,8 @@ No se dispone de datos de benchmarks que permitan comparar objetivamente el rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-grpo
+- Hugging Face: https://huggingface.co/blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-grpo
 - Modelo base del ajuste GRPO: https://huggingface.co/blue-valentine13/qwen2.5-1.5b-instruct-alpaca-id-sft
 - Repositorio de Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (citada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (citada en la model card): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs ni demos adicionales en la busqueda web realizada.

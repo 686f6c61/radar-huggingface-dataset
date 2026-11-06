@@ -15,7 +15,7 @@ El modelo fue entrenado durante 240 pasos con una semilla fija, alcanzando una p
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ingles (segun metadatos de HuggingFace) |
+| Idiomas soportados | ingles (segun metadatos de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | PyTorch (checkpoint .pt) |
 
@@ -79,7 +79,7 @@ No hay modelos comparables directamente disponibles en la informacion. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iNFINITEAi2025/NATO-Reasoner-XS
+- Hugging Face: https://huggingface.co/iNFINITEAi2025/NATO-Reasoner-XS
 - Repositorio GitHub (mencionado en busqueda web): https://github.com/NaTo1000/infiniteai2025-nato1000
 - Otros repositorios relacionados (sin confirmar que contengan el codigo del modelo): 
   - https://github.com/NaTo1000/iNFINITEAi2025.

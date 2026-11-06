@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qcm-scan es un paquete de software de escaneo multi-código (QR, códigos de barras y OCR) desarrollado por el usuario marshadbits, publicado en HuggingFace como repositorio de modelo. Su objetivo es lograr un rendimiento comparable al de Dynamsoft en el escaneo de múltiples códigos por imagen, con robustez frente a desenfoque, brillo y perspectiva, pero utilizando únicamente componentes propios ("in-metal"), sin depender de SDKs o decodificadores de terceros. El sistema sigue una arquitectura híbrida de detección, rectificación y decodificación, combinando cabezas aprendidas (SceneLocalizer, corner head, OCR) con decodificadores clásicos puros en enteros para EAN-13/UPC-A y QR. El repositorio tiene un tamaño de 0,4 GB y se encuentra en una fase temprana de desarrollo: algunos componentes están implementados y probados, pero otros (SceneLocalizer, corner head, QR grid head, OCR expert) están pendientes de entrenamiento. No se especifican parámetros de red, contexto ni licencia.
+qcm-scan es un paquete de software de escaneo multi-código (QR, códigos de barras y OCR) desarrollado por el usuario marshadbits, publicado en Hugging Face como repositorio de modelo. Su objetivo es lograr un rendimiento comparable al de Dynamsoft en el escaneo de múltiples códigos por imagen, con robustez frente a desenfoque, brillo y perspectiva, pero utilizando únicamente componentes propios ("in-metal"), sin depender de SDKs o decodificadores de terceros. El sistema sigue una arquitectura híbrida de detección, rectificación y decodificación, combinando cabezas aprendidas (SceneLocalizer, corner head, OCR) con decodificadores clásicos puros en enteros para EAN-13/UPC-A y QR. El repositorio tiene un tamaño de 0,4 GB y se encuentra en una fase temprana de desarrollo: algunos componentes están implementados y probados, pero otros (SceneLocalizer, corner head, QR grid head, OCR expert) están pendientes de entrenamiento. No se especifican parámetros de red, contexto ni licencia.
 
 ## Especificaciones técnicas
 
@@ -63,4 +63,4 @@ No se dispone de información sobre modelos comparables en la documentación. El
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/marshadbits/qcm-scan
+- Repositorio en Hugging Face: https://huggingface.co/marshadbits/qcm-scan

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prompt-Guard-86M es un modelo de clasificación de texto desarrollado por Meta, diseñado específicamente para detectar inyecciones de prompts (prompt injection) y jailbreaks en entradas dirigidas a modelos de lenguaje. A pesar de su nombre, el modelo tiene 278,8 millones de parámetros reales, aunque se comercializa como "86M" por su arquitectura base DeBERTa-v2. Se publicó en julio de 2024 como parte del ecosistema Llama 3.1, con licencia llama3.1 y acceso restringido en HuggingFace.
+Prompt-Guard-86M es un modelo de clasificación de texto desarrollado por Meta, diseñado específicamente para detectar inyecciones de prompts (prompt injection) y jailbreaks en entradas dirigidas a modelos de lenguaje. A pesar de su nombre, el modelo tiene 278,8 millones de parámetros reales, aunque se comercializa como "86M" por su arquitectura base DeBERTa-v2. Se publicó en julio de 2024 como parte del ecosistema Llama 3.1, con licencia llama3.1 y acceso restringido en Hugging Face.
 
 El modelo resuelve un problema crítico de seguridad en sistemas basados en LLM: distinguir entre instrucciones legítimas y ataques adversariales que intentan manipular el comportamiento del modelo. Su relevancia actual radica en que los despliegues de agentes y asistentes con herramientas requieren filtros de entrada fiables, y Prompt-Guard ofrece una solución ligera (2,2 GB en safetensors) que puede integrarse como capa previa a cualquier LLM.
 
@@ -35,7 +35,7 @@ Una caracteristica destacable es que el modelo esta disenado para ser usado como
 - Deteccion de ataques de prompt injection, incluyendo intentos de redireccionamiento, exfiltracion de instrucciones o cambios de rol.
 - Identificacion de jailbreaks clasicos y variantes recientes, como los basados en codificacion, roles ficticios o instrucciones en otros idiomas (aunque el modelo solo esta entrenado en ingles).
 - Salida determinista con etiquetas discretas, apta para integracion en pipelines de seguridad automatizados.
-- Compatible con la libreria Transformers de HuggingFace y con Text Embeddings Inference (TEI), lo que permite desplegarlo como endpoint dedicado.
+- Compatible con la libreria Transformers de Hugging Face y con Text Embeddings Inference (TEI), lo que permite desplegarlo como endpoint dedicado.
 - No es un modelo generativo: no produce texto libre, solo clasifica.
 - No soporta tool calling ni razonamiento multi-paso por su naturaleza de clasificador.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Meta 
 - VRAM estimada para inferencia: el modelo tiene 278,8 millones de parametros en precision FP32, lo que ocupa aproximadamente 1,1 GB en memoria. Con cuantizacion a FP16 o INT8, el uso de VRAM se reduce a unos 0,6-0,8 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una NVIDIA T4, GTX 1650 o incluso una CPU moderna pueden ejecutar inferencia sin problemas.
 - Compatible con hardware consumer: si, cabe en cualquier GPU de consumo actual (RTX 3060, RTX 4090, etc.) y tambien en CPU con unos 4 GB de RAM.
-- Opciones de despliegue: se puede servir con la libreria Transformers de HuggingFace, con Text Embeddings Inference (TEI) para endpoints dedicados, o mediante vLLM si se adapta como modelo de clasificacion. Tambien es compatible con SageMaker (deploy:sagemaker) y con endpoints de HuggingFace.
+- Opciones de despliegue: se puede servir con la libreria Transformers de Hugging Face, con Text Embeddings Inference (TEI) para endpoints dedicados, o mediante vLLM si se adapta como modelo de clasificacion. Tambien es compatible con SageMaker (deploy:sagemaker) y con endpoints de Hugging Face.
 - Latencia y throughput estimados: no hay datos oficiales, pero por su tamano se espera una latencia inferior a 10 ms en GPU moderna y de 50-100 ms en CPU para secuencias cortas. El throughput puede superar las 1000 peticiones por segundo en un endpoint con una sola GPU T4.
 
 ## Comparativa con modelos similares
@@ -76,15 +76,15 @@ Prompt-Guard se diferencia de Llama Guard en que es un encoder puro (no generati
 - El modelo solo esta entrenado en ingles; los ataques en otros idiomas pueden no ser detectados correctamente, lo que supone un riesgo en despliegues multilingues.
 - No se han publicado datos sobre sesgos, pero al ser un clasificador entrenado con datos etiquetados, puede presentar falsos positivos (bloquear prompts legitimos) o falsos negativos (dejar pasar ataques novedosos).
 - Riesgo de alucinacion no aplica directamente, pero la clasificacion puede ser incorrecta ante variantes de ataque no vistas durante el entrenamiento, especialmente jailbreaks recientes o tecnicas de ofuscacion avanzadas.
-- La licencia llama3.1 permite uso comercial, pero requiere aceptar los terminos de Meta y el acceso es gated en HuggingFace; es necesario solicitar acceso y cumplir las condiciones de uso.
+- La licencia llama3.1 permite uso comercial, pero requiere aceptar los terminos de Meta y el acceso es gated en Hugging Face; es necesario solicitar acceso y cumplir las condiciones de uso.
 - La longitud de contexto no esta publicada; si se supera el limite de la arquitectura DeBERTa-v2 (tipicamente 512 tokens), el modelo truncara el texto y podria perder informacion relevante para la clasificacion.
 - No es un sustituto de un sistema de seguridad completo: debe combinarse con otras capas de defensa (filtros de salida, sandboxing de herramientas, etc.).
 - No se proporcionan garantias de rendimiento en produccion; Meta no ofrece soporte oficial para este modelo.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/meta-llama/Prompt-Guard-86M
+- Pagina del modelo en Hugging Face: https://huggingface.co/meta-llama/Prompt-Guard-86M
 - Documentacion de Llama 3.1 (contexto de la familia de modelos): https://ai.meta.com/blog/meta-llama-3-1/
-- Repositorio de Transformers de HuggingFace (para integracion): https://github.com/huggingface/transformers
+- Repositorio de Transformers de Hugging Face (para integracion): https://github.com/huggingface/transformers
 - Documentacion de Text Embeddings Inference (TEI): https://github.com/huggingface/text-embeddings-inference
 - Blog de Meta sobre seguridad en IA (referencia general): https://ai.meta.com/research/

@@ -6,7 +6,7 @@ GigaAM-v3 es un modelo fundacional de reconocimiento automático del habla (ASR)
 
 La relevancia de esta versión radica en la incorporación de nuevos dominios internos: conversaciones de call center, habla con música de fondo, habla natural y habla con características atípicas (incluyendo habla con trastornos). Según la model card, el modelo mejora un 30 % de media en estos dominios manteniendo la calidad de generaciones anteriores en benchmarks públicos. En la comparativa publicada, GigaAM-v3 logra un WER medio del 8,4 % (variante RNN-T) frente al 19,4 % de T-One + LM y el 25,1 % de Whisper.
 
-El modelo se publica bajo licencia MIT, con pesos en formato PyTorch y código personalizado (`trust_remote_code=True`). El repositorio de HuggingFace ocupa 0,4 GB, lo que sugiere pesos ligeros y facilidad de despliegue en hardware modesto. Está pensado para integrarse en pipelines de transcripción en producción, especialmente en contextos rusoparlantes donde Whisper rinde claramente peor.
+El modelo se publica bajo licencia MIT, con pesos en formato PyTorch y código personalizado (`trust_remote_code=True`). El repositorio de Hugging Face ocupa 0,4 GB, lo que sugiere pesos ligeros y facilidad de despliegue en hardware modesto. Está pensado para integrarse en pipelines de transcripción en producción, especialmente en contextos rusoparlantes donde Whisper rinde claramente peor.
 
 ## Especificaciones técnicas
 
@@ -74,8 +74,8 @@ Además, en la comparación end-to-end de `e2e_ctc` y `e2e_rnnt` frente a Whispe
 
 | Modelo | Parámetros | Contexto | WER medio (benchmark propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GigaAM-v3 (RNNT) | 220–240 M | no disponible | 8,4 % | MIT | HuggingFace |
-| Whisper (large-v3) | ~1.550 M | 30 s de audio | 25,1 % | MIT | HuggingFace, OpenAI |
+| GigaAM-v3 (RNNT) | 220–240 M | no disponible | 8,4 % | MIT | Hugging Face |
+| Whisper (large-v3) | ~1.550 M | 30 s de audio | 25,1 % | MIT | Hugging Face, OpenAI |
 | T-One + LM | no disponible | no disponible | 19,4 % | no disponible | no disponible |
 
 GigaAM-v3 ofrece un WER sustancialmente menor que Whisper en ruso con una fracción de los parámetros, a costa de un soporte multilingüe mucho más limitado (ruso e inglés declarados frente a la cobertura amplia de Whisper). T-One + LM queda por detrás en todos los conjuntos reportados. No se dispone de comparación con otros ASR rusos como Vosk o Silero en la información proporcionada.
@@ -89,11 +89,11 @@ GigaAM-v3 ofrece un WER sustancialmente menor que Whisper en ruso con una fracci
 - Requiere `trust_remote_code=True`, lo que implica ejecutar código del autor; auditar antes de desplegar en producción.
 - Dependencias sensibles a versiones concretas (torch 2.8.0, transformers 4.57.1, pyannote-audio 4.0.0, torchcodec 0.7.0), lo que puede complicar la integración en entornos existentes.
 - No se especifican la longitud máxima de audio procesable ni la estrategia de chunking; para audios largos habrá que segmentar manualmente.
-- El repositorio tiene muy pocas descargas (17) y ningún like en el momento de la consulta; la ruta del autor en HuggingFace (`x269522641`) no coincide con la oficial (`ai-sage`) que aparece en el código de ejemplo, lo que conviene verificar antes de confiar en esta copia concreta.
+- El repositorio tiene muy pocas descargas (17) y ningún like en el momento de la consulta; la ruta del autor en Hugging Face (`x269522641`) no coincide con la oficial (`ai-sage`) que aparece en el código de ejemplo, lo que conviene verificar antes de confiar en esta copia concreta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/x269522641/GigaAM-v3
+- Modelo en Hugging Face: https://huggingface.co/x269522641/GigaAM-v3
 - Repositorio oficial (referenciado en la model card): https://github.com/salute-developers/GigaAM
 - Métricas detalladas: https://github.com/salute-developers/GigaAM/blob/main/evaluation.md
 - Ejemplo de uso en Colab: https://github.com/salute-developers/GigaAM/blob/main/colab_example.ipynb

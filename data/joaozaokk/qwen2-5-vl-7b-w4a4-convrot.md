@@ -103,7 +103,7 @@ Sobre la misma base de medida, el W4A8 de Gemma 3 12B es 2,8 veces mas fiel que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/Qwen2.5-VL-7B-W4A4-ConvRot
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/Qwen2.5-VL-7B-W4A4-ConvRot
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Busqueda web: los resultados devueltos no guardan relacion con el modelo (corresponden al establecimiento The Urban Bean Coffeehouse Cafe, en Orange Park, Florida), por lo que no se aportan enlaces adicionales de papers, blogs, repositorios o demos.
 - Referencias internas citadas en la model card: `tools/quant_w4a4.py --profile qwen`, comfy-kitchen 0.2.31, torch 2.13.0+cu130, backend `comfy_kitchen.backends.cuda`, `comfy/sd.py:269` y `comfy/sd1_clip.py:114`. No se proporcionan URL para ninguno de ellos.

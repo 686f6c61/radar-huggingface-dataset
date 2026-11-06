@@ -102,7 +102,7 @@ Deriva respecto al modelo sin editar (8 bits, 6.656 posiciones de texto de códi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-AWQ-4.5bit
+- Hugging Face: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-AWQ-4.5bit
 - Gemelo en 8 bits: https://huggingface.co/cloudcommander/Kvark-Sparkle-27B-Uncensored-MLX-8bit
 - Modelo base: https://huggingface.co/Egzakta/Kvark-Sparkle-1.0-27B
 - Modelo de origen de Qwen3.8: https://huggingface.co/Qwen/Qwen3.8-27B

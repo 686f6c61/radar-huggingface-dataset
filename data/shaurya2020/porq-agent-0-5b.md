@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada**: al ser un modelo de 0.5B parámetros, la inferencia requiere menos de 1 GB de VRAM en FP16 (aproximadamente 1 GB con el adaptador). En cuantización de 8 bits o 4 bits, podría funcionar en menos de 500 MB.
 - **GPU recomendada**: cualquier GPU con al menos 2 GB de VRAM es suficiente, incluyendo GPUs de consumo como NVIDIA GTX 1650, RTX 2060 o superiores. También funciona en CPU con llama.cpp u otros motores.
 - **Compatibilidad**: cabe en cualquier GPU de consumo moderna, incluso en sistemas embebidos.
-- **Opciones de despliegue**: al ser un adaptador PEFT, se puede cargar con transformers de HuggingFace, o exportar a GGUF para usarlo con llama.cpp, Ollama o vLLM. El CLI propio del modelo permite ejecución directa.
+- **Opciones de despliegue**: al ser un adaptador PEFT, se puede cargar con transformers de Hugging Face, o exportar a GGUF para usarlo con llama.cpp, Ollama o vLLM. El CLI propio del modelo permite ejecución directa.
 - **Latencia y throughput**: no se dispone de datos medidos, pero al ser un modelo pequeño, la latencia típica es de decenas de milisegundos por token en GPU moderna.
 
 ## Comparativa con modelos similares
@@ -75,9 +75,9 @@ No hay comparativas de rendimiento publicadas para este adaptador. El modelo bas
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Shaurya2020/porq-agent-0.5b)
+- [Modelo en Hugging Face](https://huggingface.co/Shaurya2020/porq-agent-0.5b)
 - [Dataset de SFT agéntico](https://huggingface.co/datasets/Shaurya2020/porq-agentic-sft)
 - [Dataset de liquidación de apuestas](https://huggingface.co/datasets/lavmauryaa/porqsport-settlement-sft)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B)
-- [Perfil del autor en HuggingFace](https://huggingface.co/shaurya0/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/shaurya0/models)
 - [Artículo sobre razonamiento en modelos de 0.5B (referencia general)](https://arxiv.org/html/2506.13404v2)

@@ -4,7 +4,7 @@
 
 NVIDIA-Nemotron-Labs-Teacher-STEM es un modelo de razonamiento general de la familia Nemotron 3 Ultra, desarrollado por NVIDIA y publicado en agosto de 2026. Se trata de un checkpoint especializado en razonamiento multi-paso, obtenido a partir del modelo estudiante Nemotron 3 Ultra (550B-A55B) mediante una ronda adicional de fine-tuning supervisado y aprendizaje por refuerzo centrado en razonamiento. Su propósito principal es servir como modelo profesor dentro del esquema de destilación Multi-Teacher On-Policy Distillation (MOPD), aunque se publica como checkpoint independiente por su fuerte rendimiento en tareas de matemáticas, código, ciencias naturales y humanidades.
 
-El modelo emplea una arquitectura híbrida LatentMixture-of-Experts (LatentMoE) que combina capas Mamba-2, capas MoE y capas de atención selectivas, junto con capas de Multi-Token Prediction (MTP) para acelerar la generación y mejorar la calidad. Tiene 560.524.578.816 parámetros totales (aproximadamente 550B) y 55B parámetros activos, con una ventana de contexto de hasta 1M tokens. Está entrenado con una receta de pre-entrenamiento NVFP4 para maximizar la eficiencia computacional y soporta 10 idiomas según la model card (aunque los tags de HuggingFace listan 12). Su licencia OpenMDW-1.1 permite uso comercial y no comercial.
+El modelo emplea una arquitectura híbrida LatentMixture-of-Experts (LatentMoE) que combina capas Mamba-2, capas MoE y capas de atención selectivas, junto con capas de Multi-Token Prediction (MTP) para acelerar la generación y mejorar la calidad. Tiene 560.524.578.816 parámetros totales (aproximadamente 550B) y 55B parámetros activos, con una ventana de contexto de hasta 1M tokens. Está entrenado con una receta de pre-entrenamiento NVFP4 para maximizar la eficiencia computacional y soporta 10 idiomas según la model card (aunque los tags de Hugging Face listan 12). Su licencia OpenMDW-1.1 permite uso comercial y no comercial.
 
 La relevancia actual de este modelo radica en su doble función: como generador de trazas de razonamiento y datos sintéticos de alta calidad para destilación, y como modelo de razonamiento autónomo que compite con alternativas propietarias como DeepSeek V4 Pro en benchmarks de razonamiento avanzado. Su arquitectura híbrida y su capacidad de contexto largo lo convierten en una opción atractiva para aplicaciones que requieren análisis profundo de documentos extensos y razonamiento multi-paso.
 
@@ -17,7 +17,7 @@ La relevancia actual de este modelo radica en su doble función: como generador 
 | Parametros activos | 55B |
 | Longitud de contexto | Hasta 1.000.000 tokens |
 | Tipos de cuantizacion | No especificado en la informacion disponible; los pesos se distribuyen en safetensors (presumiblemente BF16/FP16). El entrenamiento usa receta NVFP4. |
-| Idiomas soportados | Segun la model card: ingles, frances, español, italiano, aleman, japones, coreano, hindi, portugues brasileño y chino. Los tags de HuggingFace incluyen ademas arabe y hebreo. |
+| Idiomas soportados | Segun la model card: ingles, frances, español, italiano, aleman, japones, coreano, hindi, portugues brasileño y chino. Los tags de Hugging Face incluyen ademas arabe y hebreo. |
 | Licencia | OpenMDW-1.1 (uso comercial y no comercial permitido) |
 | Formato de pesos | safetensors |
 
@@ -85,7 +85,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/EmperoAI/NVIDIA-Nemotron-Labs-Teacher-STEM)
+- [Modelo en Hugging Face](https://huggingface.co/EmperoAI/NVIDIA-Nemotron-Labs-Teacher-STEM)
 - [Paper técnico de Nemotron 3 Ultra](https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf)
 - [Colección de datasets de pre-entrenamiento](https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets)
 - [Colección de datasets de post-entrenamiento](https://huggingface.co/collections/nvidia/nemotron-post-training-v3)

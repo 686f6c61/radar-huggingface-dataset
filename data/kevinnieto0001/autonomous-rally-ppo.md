@@ -111,14 +111,14 @@ No disponible. La información proporcionada no incluye otros agentes de RL comp
 - Métricas no verificadas: los valores del `model-index` están marcados como `verified: false`; proceden del autor y no de una evaluación independiente.
 - Caso degradado documentado: en la condición de diluvio la tasa de vueltas completas baja al 98 %, el único escenario por debajo del 100 %.
 - Dependencia del paquete `rally`: el modelo no funciona sin el entorno que registra `AutonomousRally-v0`; el código está en un repositorio externo de GitHub.
-- Licencia no disponible: no se declara licencia en HuggingFace, por lo que el uso comercial queda sin autorización explícita y requiere contactar con el autor.
+- Licencia no disponible: no se declara licencia en Hugging Face, por lo que el uso comercial queda sin autorización explícita y requiere contactar con el autor.
 - Idiomas no aplicables: no es un modelo de lenguaje; no procesa ni genera texto.
 - Sin datos de arquitectura interna: se desconoce el tamaño de la red, el número de parámetros y la topología, lo que limita la reproducibilidad exacta más allá del hash del artefacto.
 - Proyecto académico: el alcance es un trabajo de fin de curso de MLOps, no un producto mantenido con garantías de soporte.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kevinnieto0001/autonomous-rally-ppo
+- Modelo en Hugging Face: https://huggingface.co/Kevinnieto0001/autonomous-rally-ppo
 - Código del proyecto: https://github.com/melo11miguel/defiende-el-servidor
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - Gymnasium: https://gymnasium.farama.org/

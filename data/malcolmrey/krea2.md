@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`malcolmrey/krea2` es un repositorio de pesos publicado en HuggingFace por el usuario malcolmrey bajo licencia Apache 2.0. El repositorio ocupa 185,6 GB y acumula 107 "likes", aunque registra 0 descargas en el momento de la consulta. La model card publicada por el autor no contiene mas que la declaracion de licencia (`license: apache-2.0`), sin descripcion, sin arquitectura, sin datos de entrenamiento y sin ejemplos de uso.
+`malcolmrey/krea2` es un repositorio de pesos publicado en Hugging Face por el usuario malcolmrey bajo licencia Apache 2.0. El repositorio ocupa 185,6 GB y acumula 107 "likes", aunque registra 0 descargas en el momento de la consulta. La model card publicada por el autor no contiene mas que la declaracion de licencia (`license: apache-2.0`), sin descripcion, sin arquitectura, sin datos de entrenamiento y sin ejemplos de uso.
 
-No hay informacion verificable sobre el tipo de modelo, la modalidad (texto, imagen, audio o multimodal), el numero de parametros, la longitud de contexto ni los idiomas soportados. La ausencia de etiqueta `pipeline` en los metadatos de HuggingFace impide confirmar incluso si se trata de un modelo generativo de texto, de un modelo de difusion para imagen o de otro tipo de artefacto. El unico dato objetivo relevante es el tamano del repositorio, que condiciona por si solo los requisitos de hardware.
+No hay informacion verificable sobre el tipo de modelo, la modalidad (texto, imagen, audio o multimodal), el numero de parametros, la longitud de contexto ni los idiomas soportados. La ausencia de etiqueta `pipeline` en los metadatos de Hugging Face impide confirmar incluso si se trata de un modelo generativo de texto, de un modelo de difusion para imagen o de otro tipo de artefacto. El unico dato objetivo relevante es el tamano del repositorio, que condiciona por si solo los requisitos de hardware.
 
-Desde el punto de vista practico, la ficha no permite una evaluacion tecnica completa: cualquier cifra de rendimiento, arquitectura o capacidad que se publicase sin apoyo documental seria especulativa. Lo que sigue distingue de forma explicita entre los datos confirmados por los metadatos de HuggingFace y las estimaciones derivadas del tamano del repositorio.
+Desde el punto de vista practico, la ficha no permite una evaluacion tecnica completa: cualquier cifra de rendimiento, arquitectura o capacidad que se publicase sin apoyo documental seria especulativa. Lo que sigue distingue de forma explicita entre los datos confirmados por los metadatos de Hugging Face y las estimaciones derivadas del tamano del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ No se documenta ninguna capacidad en la informacion disponible. No es posible co
 - Modo de razonamiento explicito ("thinking mode") o decodificacion con presupuesto de razonamiento: no disponible.
 - Capacidad de ejecucion en local mediante llama.cpp, Ollama o similares: no disponible.
 
-La etiqueta `pipeline` esta vacia en HuggingFace, por lo que ni siquiera se puede confirmar la modalidad del modelo.
+La etiqueta `pipeline` esta vacia en Hugging Face, por lo que ni siquiera se puede confirmar la modalidad del modelo.
 
 ## Casos de uso
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| malcolmrey/krea2 | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace de 185,6 GB, 0 descargas |
+| malcolmrey/krea2 | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face de 185,6 GB, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/malcolmrey/krea2
+- Repositorio en Hugging Face: https://huggingface.co/malcolmrey/krea2
 - Model card del autor: no disponible mas alla de la declaracion de licencia Apache 2.0.
 - Paper o informe tecnico: no disponible.
 - Blog o anuncio de publicacion: no disponible.

@@ -99,7 +99,7 @@ La comparación con modelos de 27B en BF16 o en cuantizaciones de 4-8 bits no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XX-27B-Q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XX-27B-Q2
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Modelo de la familia genesis: https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
 - Drafter de decodificación especulativa: https://huggingface.co/dendriteholdings/Ingot-27B-DFlash2

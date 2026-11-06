@@ -6,7 +6,7 @@ WeMM-Embedding-4B-GGUF es la conversion a formato GGUF del modelo multimodal de 
 
 La relevancia de esta conversion es de tipo practico: permite ejecutar un modelo de embeddings multimodales de 4.000 millones de parametros mediante llama.cpp, sin depender de una pila de transformers completa ni de GPUs de datacenter. El modelo original esta pensado para recuperacion e indexacion semantica sobre corpus heterogeneos donde conviven texto, capturas, PDFs escaneados y clips de video.
 
-Segun la tabla de evaluacion MMEB-v2 incluida en la model card del autor original, la variante de 4B alcanza una media de 79,2 puntos sobre 78 conjuntos de datos, por delante de Qwen3-VL-Embedding 2B (73,2) y de la propia variante de 2B del mismo modelo (77,9), y cerca de la variante de 9B (80,6). La licencia declarada presenta una discrepancia entre los metadatos de HuggingFace (apache-2.0) y el frontmatter de la model card (license: other), lo que conviene verificar antes de un uso comercial.
+Segun la tabla de evaluacion MMEB-v2 incluida en la model card del autor original, la variante de 4B alcanza una media de 79,2 puntos sobre 78 conjuntos de datos, por delante de Qwen3-VL-Embedding 2B (73,2) y de la propia variante de 2B del mismo modelo (77,9), y cerca de la variante de 9B (80,6). La licencia declarada presenta una discrepancia entre los metadatos de Hugging Face (apache-2.0) y el frontmatter de la model card (license: other), lo que conviene verificar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ Segun la tabla de evaluacion MMEB-v2 incluida en la model card del autor origina
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible en detalle; el repositorio GGUF ocupa 5,2 GB y fue generado con llama.cpp release b10269 |
 | Idiomas soportados | chino (zh) e ingles (en) |
-| Licencia | discrepancia: los metadatos de HuggingFace indican apache-2.0; el frontmatter de la model card indica license: other con license_name: apache-2.0 |
+| Licencia | discrepancia: los metadatos de Hugging Face indican apache-2.0; el frontmatter de la model card indica license: other con license_name: apache-2.0 |
 | Formato de pesos | GGUF (original en safetensors para transformers) |
 | Dimension del embedding | 2.560, L2-normalizado |
 | MRL (Matryoshka) | si, con truncado a dimensiones listadas en model.config.matryoshka_dimensions (ejemplo de la model card: d=256) |
@@ -103,7 +103,7 @@ No se han publicado en la informacion disponible resultados de benchmarks especi
 - No es un modelo generativo: no produce texto, no hace razonamiento, no soporta tool calling ni uso como agente. Solo devuelve vectores.
 - No admite audio; pese a la etiqueta "multimodal", la cobertura se limita a texto, imagen, video y documento visual.
 - La longitud de contexto no esta publicada en la informacion disponible, lo que dificulta planificar la indexacion de documentos largos o videos extensos.
-- Discrepancia de licencia: los metadatos de HuggingFace indican apache-2.0 mientras que el frontmatter de la model card indica `license: other` con `license_name: apache-2.0`. Verificar la licencia del modelo base antes de cualquier uso comercial.
+- Discrepancia de licencia: los metadatos de Hugging Face indican apache-2.0 mientras que el frontmatter de la model card indica `license: other` con `license_name: apache-2.0`. Verificar la licencia del modelo base antes de cualquier uso comercial.
 - El repositorio GGUF tiene 0 descargas y 0 likes, y fue creado por un tercero (seamon67), no por Tencent. La conversion no cuenta con validacion independiente ni con cifras de degradacion por cuantizacion.
 - Aunque la model card del GGUF afirma que funciona "en cualquier version moderna de llama.cpp", no se documenta en la informacion disponible el grado de soporte de embeddings multimodales (imagen y sobre todo video) en llama.cpp. El propio modelo original recomienda vLLM o SGLang para servir con vision, con parches especificos para video en el caso de SGLang.
 - Riesgo de alucinacion no aplica en el sentido generativo clasico, pero si existe riesgo de falsos positivos en la recuperacion: embeddings con alta similitud coseno no garantizan relevancia semantica real, especialmente entre modalidades distintas.
@@ -112,11 +112,11 @@ No se han publicado en la informacion disponible resultados de benchmarks especi
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/seamon67/WeMM-Embedding-4B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/seamon67/WeMM-Embedding-4B-GGUF
 - Modelo base original: https://huggingface.co/tencent/WeMM-Embedding-4B
-- Coleccion de Tencent en HuggingFace: https://huggingface.co/collections/tencent/wemm-embedding
+- Coleccion de Tencent en Hugging Face: https://huggingface.co/collections/tencent/wemm-embedding
 - Informe tecnico (arXiv): https://arxiv.org/abs/2608.24053
 - Repositorio en GitHub: https://github.com/Tencent/WeMM-Embedding
 - PDF del informe tecnico: https://github.com/Tencent/WeMM-Embedding/blob/main/assets/WeMM_Embedding_tech_report.pdf
 
-Nota: la busqueda web realizada no ha devuelto resultados relacionados con el modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no ha devuelto resultados relacionados con el modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

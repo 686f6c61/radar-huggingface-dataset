@@ -12,7 +12,7 @@ Su relevancia practica es doble: por un lado publica una version ONNX con cuanti
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder (familia RoBERTa/AfriBERTa; etiquetado como `xlm-roberta` en HuggingFace) |
+| Arquitectura | Transformer encoder (familia RoBERTa/AfriBERTa; etiquetado como `xlm-roberta` en Hugging Face) |
 | Parametros totales | 125.633.283 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 128 tokens (longitud maxima usada en el entrenamiento; no se documenta otro limite en la model card) |
@@ -24,8 +24,8 @@ Su relevancia practica es doble: por un lado publica una version ONNX con cuanti
 | Modelo base | castorini/afriberta_large |
 | Dataset de entrenamiento | shmuhammad/AfriSenti-twitter-sentiment (subconjunto yoruba) |
 | Tamano del repositorio | 0,6 GB |
-| Descargas / likes (HuggingFace) | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-10-04 |
+| Descargas / likes (Hugging Face) | 0 / 0 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-04 |
 
 ## Arquitectura y entrenamiento
 
@@ -39,7 +39,7 @@ El entrenamiento uso learning rate 3e-5, tamano de batch 32, hasta 10 epocas con
 - Robustez ortografica: mantiene el rendimiento con texto sin marcas tonales y sin diacriticos (variaciones de −0,002 y −0,012 en macro-F1 respecto al texto limpio).
 - Salida de probabilidades por clase mediante `pipeline("text-classification", top_k=None)`.
 - Inferencia en CPU a traves de la exportacion ONNX int8 con `onnxruntime` (127 MB), con una concordancia del 96,3-96,6% respecto al modelo PyTorch.
-- Compatibilidad con text-embeddings-inference y endpoints de HuggingFace (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
+- Compatibilidad con text-embeddings-inference y endpoints de Hugging Face (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
 - No soporta generacion de texto, razonamiento, codigo, vision, audio, tool calling ni uso como agente: es un encoder discriminativo de una unica tarea.
 - No hay capacidades multilingues efectivas: el modelo esta afinado y evaluado unicamente en yoruba, y los mensajes con code-switching aparecen entre los errores tipicos documentados.
 - No dispone de modo "thinking" ni de razonamiento multi-paso.
@@ -81,7 +81,7 @@ Adicionalmente, la model card indica que la exportacion ONNX int8 coincide con e
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente. Para lotes grandes, una NVIDIA T4, RTX 3060 o superior ofrece margen amplio; no se requiere A100 ni H100.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo actual y en bastantes integradas, dado el tamano del modelo.
 - Inferencia en CPU: viable, y es el modo explicitamente previsto por el autor mediante la exportacion ONNX int8 y `onnxruntime`.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, ONNX Runtime, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y Text Embeddings Inference (etiqueta `text-embeddings-inference`). No se documenta soporte de vLLM, llama.cpp ni Ollama, que no aplican a un encoder de clasificacion.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, ONNX Runtime, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y Text Embeddings Inference (etiqueta `text-embeddings-inference`). No se documenta soporte de vLLM, llama.cpp ni Ollama, que no aplican a un encoder de clasificacion.
 - Latencia y throughput: no disponibles en la informacion proporcionada. El unico dato de hardware publicado es el de entrenamiento: una unica GPU Kaggle T4 con precision fp16, batch 32 y longitud maxima 128.
 - Requisito critico de preprocesamiento: la entrada debe normalizarse exactamente como en entrenamiento (minusculas; eliminacion de menciones, URL, hashtags, puntuacion, digitos y emojis; NFC). La referencia es `src/data.py::preprocess` del repositorio de GitHub.
 
@@ -89,10 +89,10 @@ Adicionalmente, la model card indica que la exportacion ONNX int8 coincide con e
 
 | Modelo | Parametros | Idiomas | Tipo | macro-F1 (yoruba, test limpio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (AfriBERTa-large mixed3) | 125.633.283 | Yoruba | Encoder afinado + aumento ortografico | 0,741 ± 0,007 | MIT | HuggingFace, ONNX incluido |
-| AfriBERTa-large sin aumento | 125.633.283 | Multilingue africano | Encoder afinado sin aumento | 0,732 ± 0,005 | MIT | HuggingFace (modelo base) |
+| Este modelo (AfriBERTa-large mixed3) | 125.633.283 | Yoruba | Encoder afinado + aumento ortografico | 0,741 ± 0,007 | MIT | Hugging Face, ONNX incluido |
+| AfriBERTa-large sin aumento | 125.633.283 | Multilingue africano | Encoder afinado sin aumento | 0,732 ± 0,005 | MIT | Hugging Face (modelo base) |
 | TF-IDF + regresion logistica mixed3 | no aplica (bolsa de palabras) | Yoruba | Modelo lineal clasico | 0,745 | MIT (incluido en el repositorio) | joblib en el mismo repositorio |
-| AfroXLMR-large (resultado publicado en AfriSenti) | no disponible en la informacion proporcionada | Multilingue africano | Encoder afinado | 74,1 weighted-F1 publicado | no disponible en la informacion proporcionada | HuggingFace (no verificable con los datos aportados) |
+| AfroXLMR-large (resultado publicado en AfriSenti) | no disponible en la informacion proporcionada | Multilingue africano | Encoder afinado | 74,1 weighted-F1 publicado | no disponible en la informacion proporcionada | Hugging Face (no verificable con los datos aportados) |
 
 Observacion relevante: el baseline TF-IDF iguala en macro-F1 y supera ligeramente en weighted-F1 al transformer, con un coste computacional muy inferior. Esto sugiere que, para este corpus concreto, la mayor parte de la senal proviene del lexico y no del modelado contextual.
 
@@ -110,7 +110,7 @@ Observacion relevante: el baseline TF-IDF iguala en macro-F1 y supera ligerament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hassanadelani1/imolara-afriberta-mixed3
+- Modelo en Hugging Face: https://huggingface.co/Hassanadelani1/imolara-afriberta-mixed3
 - Modelo base: https://huggingface.co/castorini/afriberta_large
 - Dataset de entrenamiento: https://huggingface.co/datasets/shmuhammad/AfriSenti-twitter-sentiment
 - Repositorio de codigo y demo: https://github.com/Hassan-Adelani-Luqman/imolara-yoruba-sentiment

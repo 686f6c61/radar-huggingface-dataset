@@ -100,7 +100,7 @@ La comparación es específica de la tarea de etiquetado de parches de grafo; no
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/CKL/cct-v03-lean-qwen3-30b-a3b-lora-r16-v2
+- Hugging Face del adaptador: https://huggingface.co/CKL/cct-v03-lean-qwen3-30b-a3b-lora-r16-v2
 - Adaptador v1: https://huggingface.co/CKL/cct-v03-lean-qwen3-30b-a3b-lora-r16-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Dataset: https://huggingface.co/datasets/CKL/wow-cod-thps4-gamejam

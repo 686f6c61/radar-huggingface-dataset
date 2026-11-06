@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Iesus/qwen2-vl-2b-fashion-vqa-lora | Adaptador sobre 2B | No disponible | Exact match 0,900 en validación de moda | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2-VL-2B-Instruct (base) | 2B | No disponible | Exact match 0,523 zero-shot en la misma tarea | Apache 2.0 | HuggingFace |
+| Iesus/qwen2-vl-2b-fashion-vqa-lora | Adaptador sobre 2B | No disponible | Exact match 0,900 en validación de moda | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2-VL-2B-Instruct (base) | 2B | No disponible | Exact match 0,523 zero-shot en la misma tarea | Apache 2.0 | Hugging Face |
 | Otros adaptadores VQA de moda | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa más relevante es con su modelo base sin ajustar, que obtiene 0,523 frente a 0,900 del adaptador. No se dispone de datos de otros modelos comparables en la información proporcionada.
@@ -96,6 +96,6 @@ La comparación directa más relevante es con su modelo base sin ajustar, que ob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Iesus/qwen2-vl-2b-fashion-vqa-lora
+- Hugging Face: https://huggingface.co/Iesus/qwen2-vl-2b-fashion-vqa-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `sbynu-groho`, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto de notas de lectura y un esbozo experimental sobre aprendizaje audiovisual (audio-visual learning). El autor lo presenta explícitamente como un documento de investigación exploratorio: incluye el alcance de la pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, contextos de evaluación (AudioSet, VGGSound) y comprobaciones de reproducibilidad. No se declaran resultados de entrenamiento, ni checkpoints, ni código ejecutable.
+Este repositorio de Hugging Face, publicado por el usuario `sbynu-groho`, no contiene un modelo de aprendizaje automático entrenado, sino un conjunto de notas de lectura y un esbozo experimental sobre aprendizaje audiovisual (audio-visual learning). El autor lo presenta explícitamente como un documento de investigación exploratorio: incluye el alcance de la pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, contextos de evaluación (AudioSet, VGGSound) y comprobaciones de reproducibilidad. No se declaran resultados de entrenamiento, ni checkpoints, ni código ejecutable.
 
 El repositorio tiene un tamaño de 0.0 GB y un único archivo de pesos en formato safetensors con 49.600 parámetros, cifra que corresponde probablemente a un artefacto simbólico o de prueba, no a un modelo funcional. La licencia es MIT y la fecha de creación es agosto de 2026. Dado que no hay modelo real, esta ficha documenta el repositorio tal como existe, indicando toda la información técnica como no disponible.
 
@@ -63,6 +63,6 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sbynu-groho/audio-visual-learning-tutorial
+- Repositorio en Hugging Face: https://huggingface.co/sbynu-groho/audio-visual-learning-tutorial
 - Lista curada de métodos y datasets audiovisuales (GeWu-Lab): https://github.com/GeWu-Lab/awesome-audiovisual-learning
 - Artículo de revisión "Learning in Audio-visual Context: A Review, Analysis, and New Perspective" (arXiv): https://arxiv.org/abs/2208.09579

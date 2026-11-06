@@ -94,7 +94,7 @@ No se dispone de otras alternativas comparables en la informacion proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider
+- Hugging Face: https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider
 - Modelo base: https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Base
 - Repositorio del framework: https://github.com/skyl4r-ai/skylar
 - Codigo del decider: https://github.com/skyl4r-ai/skylar/blob/main/models/decider.py

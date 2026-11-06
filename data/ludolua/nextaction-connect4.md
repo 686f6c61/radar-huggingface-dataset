@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NextAction: connect4 es un clasificador supervisado que predice la columna que conviene jugar en una partida de Conecta 4 (Connect Four). Lo desarrolla Luiz Araujo (usuario ludolua en HuggingFace, leduardoaraujo en GitHub) y no es una red neuronal ni un transformer: combina vectorización TF-IDF de unigramas y bigramas con una regresión logística multinomial de scikit-learn, distribuida como artefacto skops de 222 kB. Dado un estado descrito en texto en inglés, devuelve una acción de un vocabulario fijo de siete columnas (c1 a c7) junto con la probabilidad de cada una.
+NextAction: connect4 es un clasificador supervisado que predice la columna que conviene jugar en una partida de Conecta 4 (Connect Four). Lo desarrolla Luiz Araujo (usuario ludolua en Hugging Face, leduardoaraujo en GitHub) y no es una red neuronal ni un transformer: combina vectorización TF-IDF de unigramas y bigramas con una regresión logística multinomial de scikit-learn, distribuida como artefacto skops de 222 kB. Dado un estado descrito en texto en inglés, devuelve una acción de un vocabulario fijo de siete columnas (c1 a c7) junto con la probabilidad de cada una.
 
 Su relevancia no está en la calidad de juego, sino en el patrón de diseño que implementa: un next-action predictor pequeño y auditable, con probabilidades razonablemente calibradas (error de calibración esperado de 0.042) y una política de decisión declarativa en `config.toml` que bloquea acciones imposibles, fija una confianza mínima por acción y define costes de error en unidades de una revisión humana. El agente puede actuar solo cuando está seguro y ceder la decisión cuando no lo está, lo que permite operar con intervención humana selectiva en lugar de revisión total.
 
@@ -107,7 +107,7 @@ Rendimiento en juego, según el autor: en 200 partidas contra una búsqueda de p
 
 ## Comparativa con modelos similares
 
-No se ha identificado en la información disponible ningún otro modelo publicado en HuggingFace dentro de la misma categoría (clasificador de próxima acción para Conecta 4), por lo que la comparación se limita a las alternativas de referencia citadas en la propia model card y a un baseline trivial:
+No se ha identificado en la información disponible ningún otro modelo publicado en Hugging Face dentro de la misma categoría (clasificador de próxima acción para Conecta 4), por lo que la comparación se limita a las alternativas de referencia citadas en la propia model card y a un baseline trivial:
 
 | Sistema | Tipo | Rendimiento declarado | Notas |
 |---|---|---|---|
@@ -115,7 +115,7 @@ No se ha identificado en la información disponible ningún otro modelo publicad
 | nextaction-connect4 + revisión de profundidad 6 por debajo de 0.5 | Modelo + búsqueda alpha-beta | 40% de victorias en 200 partidas; 62.7% de decisiones automatizadas con 81.1% de accuracy en el umbral 0.5 | Requiere cómputo de búsqueda adicional |
 | Profesor: búsqueda alpha-beta de profundidad 4 | Búsqueda determinista | Nivel de referencia atribuido del 38% en el demo | Es la fuente de las etiquetas de entrenamiento |
 | Acción más frecuente (baseline trivial) | Regla fija | 0.282 de accuracy | Línea base inferior citada por el autor |
-| Otros modelos comparables en HuggingFace | no disponible | no disponible | No se encontraron alternativas equivalentes en la información disponible |
+| Otros modelos comparables en Hugging Face | no disponible | no disponible | No se encontraron alternativas equivalentes en la información disponible |
 
 ## Limitaciones y advertencias
 
@@ -128,14 +128,14 @@ No se ha identificado en la información disponible ningún otro modelo publicad
 - Sin calibración explícita: el campo `calibration` es `none`; el ECE de 0.042 es una medición a posteriori, no el resultado de un ajuste, y podría degradarse en distribuciones de estados distintas a las del test.
 - Evidencia estadística limitada en el demo: los intervalos de confianza del 95% de las 200 partidas se solapan, así que la ventaja de 13 partidas frente a la revisión de profundidad 4 es sugestiva, no concluyente.
 - Riesgo en la carga del artefacto: `skops` deserializa objetos y advierte de tipos fuera de su lista de confianza; conviene cargar únicamente artefactos de fuentes fiables.
-- Reproducibilidad incompleta: los datos de entrenamiento no se redistribuyen en el repositorio de HuggingFace y deben regenerarse con `generate_data.py`; además, el modelo exige una versión de scikit-learn compatible con la de entrenamiento.
+- Reproducibilidad incompleta: los datos de entrenamiento no se redistribuyen en el repositorio de Hugging Face y deben regenerarse con `generate_data.py`; además, el modelo exige una versión de scikit-learn compatible con la de entrenamiento.
 - Licencia MIT: permite uso comercial y modificación sin restricciones relevantes, pero se entrega sin garantías. La licencia cubre el artefacto del modelo, no necesariamente los datos de entrenamiento originales, que no se distribuyen.
-- Validación externa mínima: 0 descargas y 0 likes en HuggingFace, sin resultados verificados de forma independiente (`verified: false` en las métricas).
+- Validación externa mínima: 0 descargas y 0 likes en Hugging Face, sin resultados verificados de forma independiente (`verified: false` en las métricas).
 - No soporta tool calling, agentes multi-paso, visión, audio ni generación de texto; cualquier sistema que necesite esas capacidades debe combinarlo con otros componentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ludolua/nextaction-connect4
+- Modelo en Hugging Face: https://huggingface.co/ludolua/nextaction-connect4
 - Repositorio de código NextAction (CLI, API REST, registro de decisiones, evaluación y política): https://github.com/leduardoaraujo/NextAction
 - Demo, scripts, benchmark y análisis de Conecta 4: https://github.com/leduardoaraujo/NextAction/tree/main/demos/connect4
 - Perfil del autor: https://github.com/leduardoaraujo

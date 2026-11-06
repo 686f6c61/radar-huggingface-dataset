@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma de razonamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenThinker3-7B-SFT-GRPO-DE (este) | 7B | No disponible | Aleman | No disponible | HuggingFace |
-| OpenThinker-7B (base) | 7B | 32k (heredado de Qwen2) | Ingles | Apache 2.0 (Qwen2) | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7B | 32k | Ingles | MIT | HuggingFace |
-| Llama-3.1-Nemotron-Nano-8B-v1 | 8B | 128k | Ingles | Llama 3.1 Community | HuggingFace |
+| OpenThinker3-7B-SFT-GRPO-DE (este) | 7B | No disponible | Aleman | No disponible | Hugging Face |
+| OpenThinker-7B (base) | 7B | 32k (heredado de Qwen2) | Ingles | Apache 2.0 (Qwen2) | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7B | 32k | Ingles | MIT | Hugging Face |
+| Llama-3.1-Nemotron-Nano-8B-v1 | 8B | 128k | Ingles | Llama 3.1 Community | Hugging Face |
 
 La comparativa se basa en caracteristicas generales, ya que no hay datos de rendimiento publicados para este modelo. El modelo base OpenThinker-7B supera a DeepSeek-R1-Distill-Qwen-7B y a Llama-3.1-Nemotron-Nano-8B-v1 en tareas de razonamiento, segun los resultados de open-thoughts, pero este fine-tuning en aleman no ha sido evaluado aun.
 
@@ -80,7 +80,7 @@ La comparativa se basa en caracteristicas generales, ya que no hay datos de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-DE
+- Repositorio Hugging Face: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-GRPO-DE
 - Modelo SFT intermedio: https://huggingface.co/DGurgurov/OpenThinker3-7B-SFT-DE
 - Dataset ReasonXL-SFT: https://huggingface.co/datasets/toroe/ReasonXL-SFT
 - Paper arXiv (2604.12378): https://arxiv.org/abs/2604.12378

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dalopez2/fun-generation-2023` es un repositorio de HuggingFace publicado por el usuario dalopez2 que contiene una implementación funcional de la arquitectura **MobileViT** configurada para la tarea etiquetada como "generation", con una configuración declarada como "huge". El propio autor indica de forma explícita que el repositorio es un punto de partida experimental: el checkpoint `model.safetensors` es una **inicialización válida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado.
+`dalopez2/fun-generation-2023` es un repositorio de Hugging Face publicado por el usuario dalopez2 que contiene una implementación funcional de la arquitectura **MobileViT** configurada para la tarea etiquetada como "generation", con una configuración declarada como "huge". El propio autor indica de forma explícita que el repositorio es un punto de partida experimental: el checkpoint `model.safetensors` es una **inicialización válida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado.
 
 El modelo cuenta con **33.088 parámetros totales** según los metadatos de safetensors, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje generativo actual. La arquitectura declarada es MobileViT —un híbrido de convoluciones y mecanismos de atención pensado originalmente para visión— con atención estándar, fusión por co-attention, activación swish y normalización ScaleNorm. No se documenta longitud de contexto, idiomas soportados ni pipeline de inferencia.
 
@@ -68,7 +68,7 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento de a
 
 | Modelo | Tipo | Tarea declarada | Licencia | Disponibilidad en esta ficha |
 |---|---|---|---|---|
-| dalopez2/fun-generation-2023 | MobileViT "huge", checkpoint de inicialización | "generation" | BSD-3-Clause | HuggingFace; 33.088 parámetros confirmados |
+| dalopez2/fun-generation-2023 | MobileViT "huge", checkpoint de inicialización | "generation" | BSD-3-Clause | Hugging Face; 33.088 parámetros confirmados |
 | MobileViT original (familia de Apple) | Híbrido CNN + transformer para visión | Clasificación, detección, segmentación | no disponible aquí | No se compara con cifras: parámetros y métricas no disponibles en la información proporcionada |
 | MobileNetV3 | CNN ligera para visión móvil | Clasificación | no disponible aquí | Parámetros, contexto y rendimiento: no disponibles |
 | EfficientNet-B0 | CNN con escalado compuesto | Clasificación | no disponible aquí | Parámetros, contexto y rendimiento: no disponibles |
@@ -90,5 +90,5 @@ Nota: las cifras publicadas de las familias MobileViT, MobileNetV3 y EfficientNe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dalopez2/fun-generation-2023
+- Modelo en Hugging Face: https://huggingface.co/dalopez2/fun-generation-2023
 - Resultados de la búsqueda web: los enlaces devueltos (Spuerkeess S-Net, bcee.snet.lu, www.snet.lu) corresponden a servicios de banca en línea y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos relevantes para este modelo.

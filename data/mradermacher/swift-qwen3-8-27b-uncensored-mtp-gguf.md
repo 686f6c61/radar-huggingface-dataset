@@ -18,7 +18,7 @@ Su relevancia actual es doble: por un lado, permite ejecutar localmente un model
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0; ficheros mmproj en Q8_0 y f16 |
 | Idiomas soportados | Inglés (en) |
-| Licencia | swift-open-license-1.0 (etiquetada como "other" en HuggingFace, con enlace a https://huggingface.co/ukisai/Swift-Qwen3.8-27b) |
+| Licencia | swift-open-license-1.0 (etiquetada como "other" en Hugging Face, con enlace a https://huggingface.co/ukisai/Swift-Qwen3.8-27b) |
 | Formato de pesos | GGUF (cuantizaciones estáticas, convertidas desde el modelo base en transformers) |
 | Tamaño del repositorio | 190,8 GB |
 | Fecha de publicación | 15 de septiembre de 2026 (última actualización: 15 de septiembre de 2026) |
@@ -78,9 +78,9 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 | Modelo o variante | Parámetros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF | 27,3 B | GGUF (11 cuantizaciones) | No disponible | swift-open-license-1.0 | HuggingFace, 0 descargas en el momento de la consulta |
-| mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF | 27,3 B | GGUF (cuantizaciones ponderadas con imatrix) | No disponible | swift-open-license-1.0 | HuggingFace, repositorio separado enlazado en la model card |
-| ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP | 27,3 B | Safetensors (transformers) | No disponible | No disponible | HuggingFace, modelo base del que derivan las cuantizaciones |
+| mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF | 27,3 B | GGUF (11 cuantizaciones) | No disponible | swift-open-license-1.0 | Hugging Face, 0 descargas en el momento de la consulta |
+| mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF | 27,3 B | GGUF (cuantizaciones ponderadas con imatrix) | No disponible | swift-open-license-1.0 | Hugging Face, repositorio separado enlazado en la model card |
+| ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP | 27,3 B | Safetensors (transformers) | No disponible | No disponible | Hugging Face, modelo base del que derivan las cuantizaciones |
 
 Comparativas frente a otros modelos de 27B de la misma categoría (por ejemplo, dentro de la propia familia Qwen3.8 o frente a otros modelos abliterados de tamaño similar): no disponible.
 
@@ -89,7 +89,7 @@ Comparativas frente a otros modelos de 27B de la misma categoría (por ejemplo, 
 - El modelo ha sido abliterado y se distribuye como uncensored: puede generar contenido ofensivo, ilegal, peligroso o sexual sin aplicar rechazos. No es apto para aplicaciones orientadas al público general sin capas adicionales de moderación.
 - Riesgo elevado de alucinación y de afirmaciones no verificadas, especialmente en cuantizaciones bajas (Q2_K, Q3_K_S) donde la degradación de calidad respecto al modelo original es mayor.
 - Idioma limitado al inglés. No hay evidencia de soporte multilingüe y, por tanto, no se recomienda su uso en castellano ni en otras lenguas.
-- La licencia swift-open-license-1.0 se registra en HuggingFace como "other" y el texto completo no se reproduce en la información disponible; es imprescindible revisar el enlace de licencia (https://huggingface.co/ukisai/Swift-Qwen3.8-27b) antes de cualquier uso comercial, ya que los términos podrían restringirlo.
+- La licencia swift-open-license-1.0 se registra en Hugging Face como "other" y el texto completo no se reproduce en la información disponible; es imprescindible revisar el enlace de licencia (https://huggingface.co/ukisai/Swift-Qwen3.8-27b) antes de cualquier uso comercial, ya que los términos podrían restringirlo.
 - Desconocimiento total del entrenamiento: sin datos de dataset, número de tokens, fases de alineación ni evaluación, no es posible estimar sesgos de origen ni fiabilidad en dominios concretos.
 - La longitud de contexto no está documentada, lo que impide planificar aplicaciones con ventanas largas o estimar con precisión el consumo de memoria de la caché KV.
 - El formato GGUF no es adecuado para ajuste fino; para entrenar hay que recurrir al modelo base en safetensors.
@@ -99,7 +99,7 @@ Comparativas frente a otros modelos de 27B de la misma categoría (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF
 - Modelo base: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
 - Cuantizaciones ponderadas con imatrix: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF
 - Texto de la licencia: https://huggingface.co/ukisai/Swift-Qwen3.8-27b

@@ -106,7 +106,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Menage-12B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Menage-12B-GGUF
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#Menage-12B-GGUF
 - Cuantizaciones ponderadas/imatrix (i1): https://huggingface.co/mradermacher/Menage-12B-i1-GGUF
 - Modelo base: https://huggingface.co/pinkachu/Menage-12B

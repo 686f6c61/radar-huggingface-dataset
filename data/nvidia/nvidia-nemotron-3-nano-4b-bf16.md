@@ -127,7 +127,7 @@ La comparativa completa no se puede establecer con datos verificados de benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
+- Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Blog de presentacion: https://huggingface.co/blog/nvidia/nemotron-3-nano-4b
 - Pagina del modelo Nemotron 3: https://research.nvidia.com/labs/nemotron/Nemotron-3/
 - Pagina de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron

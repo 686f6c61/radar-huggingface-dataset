@@ -6,7 +6,7 @@ malinali-app/opus-mt-fi-ny es un paquete de pesos del modelo de traduccion autom
 
 El problema que resuelve es el de disponer de traduccion fi-ny ejecutable localmente, sin depender de una API en la nube. Al pesar unos 76 M de parametros y ocupar el repositorio 0,3 GB, es viable en movil, navegador o CPU de gama baja, lo que encaja en aplicaciones de traduccion offline. El modelo base pertenece a la familia OPUS-MT de Helsinki-NLP, entrenada sobre corpus paralelos del proyecto OPUS.
 
-Su relevancia es limitada pero concreta: el par fi-ny es de bajos recursos y cuenta con pocas alternativas ligeras y desplegables en local. Al ser un reempaquetado, su utilidad depende de que la conversion SentencePiece a tokenizador rapido y el formato safetensors sean correctos, algo que el autor afirma pero no documenta con evaluaciones. La ficha de HuggingFace no declara licencia propia.
+Su relevancia es limitada pero concreta: el par fi-ny es de bajos recursos y cuenta con pocas alternativas ligeras y desplegables en local. Al ser un reempaquetado, su utilidad depende de que la conversion SentencePiece a tokenizador rapido y el formato safetensors sean correctos, algo que el autor afirma pero no documenta con evaluaciones. La ficha de Hugging Face no declara licencia propia.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ La unica innovacion tecnica del repositorio es de empaquetado, no de modelado. M
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace y la model card no incluyen metricas BLEU, chrF, COMET ni evaluaciones humanas para este reempaquetado ni para el modelo base en el par fi-ny. Tampoco se aportan comparaciones con otros sistemas.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face y la model card no incluyen metricas BLEU, chrF, COMET ni evaluaciones humanas para este reempaquetado ni para el modelo base en el par fi-ny. Tampoco se aportan comparaciones con otros sistemas.
 
 ## Requisitos de hardware
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-fi-ny | 76,2 M | No disponible | fi → ny | No disponible (hereda la del base) | HuggingFace, safetensors, Candle |
-| Helsinki-NLP/opus-mt-fi-ny | 76,2 M (mismos pesos) | No disponible | fi → ny | CC-BY 4.0 tipicamente, segun model card del proyecto OPUS-MT | HuggingFace, pesos originales |
-| facebook/nllb-200-distilled-600M | 600 M | 512 tokens (declarado por el autor) | 200 idiomas, incluidos fi y ny | CC-BY-NC-4.0 (uso no comercial) | HuggingFace |
-| facebook/m2m-100 (418M) | 418 M | No disponible | 100 idiomas | MIT | HuggingFace |
+| malinali-app/opus-mt-fi-ny | 76,2 M | No disponible | fi → ny | No disponible (hereda la del base) | Hugging Face, safetensors, Candle |
+| Helsinki-NLP/opus-mt-fi-ny | 76,2 M (mismos pesos) | No disponible | fi → ny | CC-BY 4.0 tipicamente, segun model card del proyecto OPUS-MT | Hugging Face, pesos originales |
+| facebook/nllb-200-distilled-600M | 600 M | 512 tokens (declarado por el autor) | 200 idiomas, incluidos fi y ny | CC-BY-NC-4.0 (uso no comercial) | Hugging Face |
+| facebook/m2m-100 (418M) | 418 M | No disponible | 100 idiomas | MIT | Hugging Face |
 
 La ventaja diferencial del modelo de Malinali frente a NLLB o M2M-100 es el tamano reducido y la orientacion a inferencia local; su desventaja es que solo cubre una direccion de traduccion y carece de evaluacion publicada. NLLB-200 y M2M-100 cubren el par fi-ny dentro de su cobertura multilingue, pero con un coste computacional muy superior y, en el caso de NLLB, con licencia no comercial.
 
@@ -85,18 +85,18 @@ La ventaja diferencial del modelo de Malinali frente a NLLB o M2M-100 es el tama
 - Par de bajos recursos: el chichewa/nyanja tiene presencia limitada en los corpus de OPUS, por lo que la calidad esperada es inferior a la de pares con muchos datos paralelos.
 - Riesgo de alucinacion y de omisiones en traduccion automatica neuronal: puede inventar contenido, repetir fragmentos o dejar terminos sin traducir, especialmente con frases largas, nombres propios o terminologia tecnica.
 - Ausencia total de evaluacion publicada: no hay BLEU, chrF ni COMET, asi que cualquier despliegue en produccion exige una validacion propia con datos del dominio objetivo.
-- Licencia no aclarada en la ficha de HuggingFace: aunque la model card remite a la licencia del modelo base (tipicamente CC-BY 4.0 en OPUS-MT), el reempaquetado no la declara de forma explicita; conviene verificar antes de un uso comercial.
+- Licencia no aclarada en la ficha de Hugging Face: aunque la model card remite a la licencia del modelo base (tipicamente CC-BY 4.0 en OPUS-MT), el reempaquetado no la declara de forma explicita; conviene verificar antes de un uso comercial.
 - Es un reempaquetado de terceros: la calidad de la conversion de SentencePiece a tokenizador rapido JSON no esta documentada con tests ni evaluaciones, lo que introduce riesgo de discrepancias entre la tokenizacion de entrenamiento y la de inferencia.
 - Modelo unidireccional: no traduce de ny a fi; para la direccion inversa hace falta otro modelo de la familia OPUS-MT.
 - Alcance limitado a texto: no procesa audio, imagenes ni documentos completos; los ficheros largos deben segmentarse en frases.
 - Sin soporte de glosarios, terminologia controlada ni instrucciones de estilo: no se puede guiar la salida con prompts ni restricciones.
 - Contexto de trabajo corto y orientado a frase: los fenomenos que dependen de contexto entre frases (referencias, coherencia de genero, pronombres) no se resuelven de forma fiable.
 - Senales de adopcion nulas en el momento de la consulta: 0 descargas y 0 likes, sin issues ni discusion documentada que permitan juzgar su fiabilidad.
-- Fecha de creacion del repositorio: 2026-10-02, segun los metadatos de HuggingFace.
+- Fecha de creacion del repositorio: 2026-10-02, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-fi-ny
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-fi-ny
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-fi-ny
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

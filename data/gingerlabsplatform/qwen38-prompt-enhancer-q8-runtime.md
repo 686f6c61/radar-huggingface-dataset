@@ -76,9 +76,9 @@ La comparativa es cualitativa: el modelo de GingerLabs es significativamente má
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GingerLabsPlatform/qwen38-prompt-enhancer-q8-runtime
+- Repositorio Hugging Face: https://huggingface.co/GingerLabsPlatform/qwen38-prompt-enhancer-q8-runtime
 - Modelo base upstream: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Página de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8
-- Qwen3-8B en HuggingFace: https://huggingface.co/Qwen/Qwen3-8B
+- Qwen3-8B en Hugging Face: https://huggingface.co/Qwen/Qwen3-8B
 - RebelsPromptEnhancer en GitHub: https://github.com/RealRebelAI/RebelsPromptEnhancer

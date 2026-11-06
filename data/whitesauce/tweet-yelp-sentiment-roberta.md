@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`whitesauce/tweet-yelp-sentiment-roberta` es un modelo de clasificación de texto basado en la arquitectura RoBERTa, publicado por el usuario whitesauce en HuggingFace. Por su nombre y su pipeline (`text-classification`), está orientado al análisis de sentimiento sobre textos cortos e informales, presumiblemente reseñas de Yelp y tuits. El repositorio cuenta con 124.647.939 parámetros en formato safetensors y un tamaño aproximado de 0,5 GB, lo que lo sitúa en la categoría de los encoders de tamaño base (equivalente a `roberta-base`).
+`whitesauce/tweet-yelp-sentiment-roberta` es un modelo de clasificación de texto basado en la arquitectura RoBERTa, publicado por el usuario whitesauce en Hugging Face. Por su nombre y su pipeline (`text-classification`), está orientado al análisis de sentimiento sobre textos cortos e informales, presumiblemente reseñas de Yelp y tuits. El repositorio cuenta con 124.647.939 parámetros en formato safetensors y un tamaño aproximado de 0,5 GB, lo que lo sitúa en la categoría de los encoders de tamaño base (equivalente a `roberta-base`).
 
-La relevancia de este modelo es limitada en el momento de la publicación: no registra descargas ni likes, la model card es la plantilla autogenerada por HuggingFace sin contenido sustantivo y no se declaran ni licencia ni idiomas soportados. Se trata, por tanto, de un artefacto de fine-tuning cuyo valor práctico depende enteramente de la validación que haga el usuario, ya que el autor no documenta datos de entrenamiento, hiperparámetros ni evaluación.
+La relevancia de este modelo es limitada en el momento de la publicación: no registra descargas ni likes, la model card es la plantilla autogenerada por Hugging Face sin contenido sustantivo y no se declaran ni licencia ni idiomas soportados. Se trata, por tanto, de un artefacto de fine-tuning cuyo valor práctico depende enteramente de la validación que haga el usuario, ya que el autor no documenta datos de entrenamiento, hiperparámetros ni evaluación.
 
 Al ser un encoder de clasificación y no un modelo generativo, no dispone de ventana de contexto en el sentido de los LLM, sino de una longitud máxima de secuencia de tokens de entrada, que el autor no especifica (RoBERTa base admite típicamente 512 tokens posicionales).
 
@@ -33,7 +33,7 @@ No hay información en la model card sobre el conjunto de datos de fine-tuning, 
 - Análisis de sentimiento en dominios informales: el nombre del modelo sugiere entrenamiento sobre tuits y reseñas de Yelp, con posible manejo de lenguaje coloquial, abreviaturas y emoticonos.
 - Inferencia por lotes: al ser un encoder de ~125 M de parámetros, permite procesar grandes volúmenes de textos con bajo coste computacional.
 - Extracción de embeddings: la torre RoBERTa puede reutilizarse como extractor de representaciones (el tag `text-embeddings-inference` indica compatibilidad con ese servidor).
-- Compatibilidad con `transformers` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con `transformers` y con endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta generación de texto, tool calling, razonamiento multi-paso, visión, audio ni modo "thinking": es un clasificador discriminativo.
 
 ## Casos de uso
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whitesauce/tweet-yelp-sentiment-roberta | 124,6 M | no disponible (RoBERTa base: 512) | Clasificación de sentimiento | no disponible | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 | Sentimiento en tuits (3 clases) | MIT (según su card) | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 | Sentimiento binario (SST-2) | Apache 2.0 | HuggingFace |
-| finiteautomata/bertweet-base-sentiment-analysis | ~135 M | 128 | Sentimiento en tuits | MIT | HuggingFace |
+| whitesauce/tweet-yelp-sentiment-roberta | 124,6 M | no disponible (RoBERTa base: 512) | Clasificación de sentimiento | no disponible | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | 512 | Sentimiento en tuits (3 clases) | MIT (según su card) | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 | Sentimiento binario (SST-2) | Apache 2.0 | Hugging Face |
+| finiteautomata/bertweet-base-sentiment-analysis | ~135 M | 128 | Sentimiento en tuits | MIT | Hugging Face |
 
 La comparación es aproximada: los tres alternativos son clasificadores de sentimiento ampliamente usados y con documentación completa, mientras que el modelo analizado carece de métricas publicadas, lo que impide una comparación cuantitativa rigurosa.
 
@@ -81,7 +81,7 @@ La comparación es aproximada: los tres alternativos son clasificadores de senti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whitesauce/tweet-yelp-sentiment-roberta
+- Modelo en Hugging Face: https://huggingface.co/whitesauce/tweet-yelp-sentiment-roberta
 - Paper de referencia RoBERTa (Liu et al., 2019): https://arxiv.org/abs/1910.09700
 - Documentación de `transformers` para `RobertaForSequenceClassification`: https://huggingface.co/docs/transformers/model_doc/roberta
 - Calculadora de impacto ambiental citada en la card (Lacoste et al., 2019): https://mlco2.github.io/impact

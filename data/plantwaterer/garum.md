@@ -71,8 +71,8 @@ No se han identificado en la informacion disponible otros adaptadores o modelos 
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| plantwaterer/garum | no disponible (base 31B) | 32.768 tokens en el motor | Probabilidad por opcion (cabeza VBLL) | apache-2.0 para el adaptador | HuggingFace, 0 descargas y 0 likes |
-| google/gemma-4-31B-it | 31B segun denominacion | no disponible | Texto generado | licencia propia del modelo base | HuggingFace |
+| plantwaterer/garum | no disponible (base 31B) | 32.768 tokens en el motor | Probabilidad por opcion (cabeza VBLL) | apache-2.0 para el adaptador | Hugging Face, 0 descargas y 0 likes |
+| google/gemma-4-31B-it | 31B segun denominacion | no disponible | Texto generado | licencia propia del modelo base | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,14 +82,14 @@ No se han identificado en la informacion disponible otros adaptadores o modelos 
 - No se documentan los idiomas soportados; el comportamiento multilingue es desconocido.
 - No se detallan los datos de entrenamiento, por lo que se desconocen sesgos y riesgos de alucinacion especificos. Las probabilidades pueden estar mal calibradas fuera de la distribucion de entrenamiento.
 - La licencia apache-2.0 se aplica al adaptador; el uso comercial esta condicionado por la licencia y los terminos del modelo base google/gemma-4-31B-it.
-- El repositorio es de codigo abierto, pero el espejo en GitHub solo contiene punteros de Git LFS en lugar de los ficheros de pesos, que se alojan en HuggingFace.
+- El repositorio es de codigo abierto, pero el espejo en GitHub solo contiene punteros de Git LFS en lugar de los ficheros de pesos, que se alojan en Hugging Face.
 - El modelo tiene 0 descargas y 0 likes, por lo que carece de validacion por parte de la comunidad.
 - La model card disponible esta truncada y los resultados numericos de la evaluacion no aparecen en la informacion proporcionada.
 - La implementacion depende de versiones concretas del ecosistema (torch 2.13, transformers 5.12.1, peft 0.21.2); se desconoce su compatibilidad con versiones anteriores.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/plantwaterer/garum
+- Modelo en Hugging Face: https://huggingface.co/plantwaterer/garum
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Kit Decision Index: https://github.com/apolinario/decision-index
 - Espejo en GitHub con el codigo: mencionado en la model card, pero la URL no aparece en la informacion disponible

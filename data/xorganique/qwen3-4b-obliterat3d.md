@@ -2,7 +2,7 @@
 
 ## Resumen
 
-xorganique/Qwen3-4B-obliterat3d es un repositorio de pesos publicado por el usuario xorganique en HuggingFace. La model card asociada unicamente contiene la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y la fecha de creacion y ultima actualizacion coinciden (2026-10-16), lo que sugiere una publicacion sin mantenimiento posterior.
+xorganique/Qwen3-4B-obliterat3d es un repositorio de pesos publicado por el usuario xorganique en Hugging Face. La model card asociada unicamente contiene la declaracion de licencia (`license: mit`) y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y la fecha de creacion y ultima actualizacion coinciden (2026-10-16), lo que sugiere una publicacion sin mantenimiento posterior.
 
 El nombre del repositorio apunta a un derivado del modelo Qwen3-4B, y el sufijo "obliterat3d" es habitual en la comunidad para designar variantes con componentes de rechazo/seguridad atenuados mediante tecnicas de abliteration o merges. Esta interpretacion no esta confirmada por ninguna fuente: ni la model card ni los resultados de busqueda disponibles la respaldan. Tampoco hay confirmacion del numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de pesos.
 
@@ -65,7 +65,7 @@ No hay datos verificables para construir una comparativa fiable. La tabla siguie
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificados |
 |---|---|---|---|---|---|
-| xorganique/Qwen3-4B-obliterat3d | no disponible | no disponible | MIT | HuggingFace, 0 descargas | no |
+| xorganique/Qwen3-4B-obliterat3d | no disponible | no disponible | MIT | Hugging Face, 0 descargas | no |
 | Qwen3-4B (referencia hipotetica) | no verificado en esta busqueda | no verificado en esta busqueda | no verificado en esta busqueda | no verificado | no |
 
 No se dispone de alternativas comparables documentadas en la informacion proporcionada.
@@ -84,6 +84,6 @@ No se dispone de alternativas comparables documentadas en la informacion proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xorganique/Qwen3-4B-obliterat3d
+- Hugging Face: https://huggingface.co/xorganique/Qwen3-4B-obliterat3d
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron unicamente paginas de la plataforma Vinted sin relacion con el repositorio.
 - No se han localizado papers, blogs, repositorios de codigo ni demos asociados a este modelo.

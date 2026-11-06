@@ -5,7 +5,7 @@ InstantFusion es una infraestructura de composicion de modelos de difusion para 
 
 El repositorio publica exclusivamente los pesos entrenados de la interfaz LAE (ficheros `.bin`), no los generadores base, que deben obtenerse por separado. El tamano del repositorio es de 46,4 GB, coherente con el conjunto de checkpoints LAE para distintas combinaciones de modelos. La relevancia actual reside en que habilita tecnicas como aceleracion de generacion, composicion multi-preferencia y destilacion on-policy entre modelos (OPD) sin reentrenar los generadores originales, que permanecen congelados durante el entrenamiento de los LAE.
 
-La informacion disponible no detalla la arquitectura interna de los LAE ni el volumen de datos de entrenamiento, y la licencia no esta especificada en la model card ni en los metadatos de HuggingFace.
+La informacion disponible no detalla la arquitectura interna de los LAE ni el volumen de datos de entrenamiento, y la licencia no esta especificada en la model card ni en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ La model card menciona ejemplos de reconstruccion latente con SSIM medio sobre 1
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| InstantFusion | Interfaz latente para composicion de generadores de difusion | no disponible | no disponible | no disponible | Pesos LAE en HuggingFace; generadores base por separado |
+| InstantFusion | Interfaz latente para composicion de generadores de difusion | no disponible | no disponible | no disponible | Pesos LAE en Hugging Face; generadores base por separado |
 | FLUX.1-dev | Generador de difusion text-to-image | no disponible en esta ficha | no aplica | no disponible en esta ficha | Disponible como modelo base |
 | Qwen-Image | Generador de difusion text-to-image | no disponible en esta ficha | no aplica | no disponible en esta ficha | Disponible como modelo base |
 | SD3 | Generador de difusion text-to-image | no disponible en esta ficha | no aplica | no disponible en esta ficha | Disponible como modelo base |
@@ -78,7 +78,7 @@ InstantFusion no compite directamente con estos generadores: los utiliza como co
 - Sin datos de benchmarks estandar ni de latencia/throughput para planificacion de produccion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/XuanlangDai/InstantFusion
+- Hugging Face: https://huggingface.co/XuanlangDai/InstantFusion
 - Paper (arXiv): https://huggingface.co/papers/2610.13944
 - GitHub: https://github.com/InternLM/InstantFusion
 - Pagina de proyecto: https://internlm.github.io/InstantFusion/

@@ -102,7 +102,7 @@ No se dispone de datos comparativos frente a otras familias de inpainting (MAT, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fernandotonon/QtMeshEditor-lama-onnx
+- Modelo en Hugging Face: https://huggingface.co/fernandotonon/QtMeshEditor-lama-onnx
 - Grafo de origen (upstream): https://huggingface.co/Carve/LaMa-ONNX
 - Repositorio agregado de modelos: https://huggingface.co/fernandotonon/QtMeshEditor-models
 - Aplicación QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor

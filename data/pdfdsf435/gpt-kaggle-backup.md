@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pdfdsf435/gpt-kaggle-backup` es un repositorio alojado en HuggingFace por el usuario `pdfdsf435`, presentado como una copia de seguridad (el propio nombre incluye "backup") de contenido relacionado con un modelo tipo GPT generado en el entorno de Kaggle. El repositorio acumula 832,4 GB de datos y, en el momento de la consulta, registra 0 descargas y 2 "likes", sin pipeline declarado, sin licencia especificada y sin idiomas indicados en los metadatos. Fue creado el 6 de septiembre de 2026 y actualizado por última vez el 13 de septiembre de 2026.
+`pdfdsf435/gpt-kaggle-backup` es un repositorio alojado en Hugging Face por el usuario `pdfdsf435`, presentado como una copia de seguridad (el propio nombre incluye "backup") de contenido relacionado con un modelo tipo GPT generado en el entorno de Kaggle. El repositorio acumula 832,4 GB de datos y, en el momento de la consulta, registra 0 descargas y 2 "likes", sin pipeline declarado, sin licencia especificada y sin idiomas indicados en los metadatos. Fue creado el 6 de septiembre de 2026 y actualizado por última vez el 13 de septiembre de 2026.
 
 No se dispone de informacion publica sobre la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. La unica etiqueta declarada es `region:us`, que hace referencia a la region de almacenamiento y no aporta informacion tecnica sobre el modelo. No se ha publicado ninguna model card, configuracion (`config.json`), tokenizador ni documentacion asociada en la informacion disponible.
 
@@ -42,7 +42,7 @@ Tampoco se dispone de datos sobre el entrenamiento: numero de tokens, composicio
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles; el campo de idiomas no esta declarado.
 - Capacidades especiales (modo de pensamiento, vision, audio): no disponibles.
-- Capacidad de inferencia directa desde HuggingFace: no disponible; no se ha declarado pipeline ni formato de pesos estandar.
+- Capacidad de inferencia directa desde Hugging Face: no disponible; no se ha declarado pipeline ni formato de pesos estandar.
 
 ## Casos de uso
 
@@ -88,6 +88,6 @@ No disponible. No es posible establecer una comparativa fiable porque el reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pdfdsf435/gpt-kaggle-backup
+- Repositorio en Hugging Face: https://huggingface.co/pdfdsf435/gpt-kaggle-backup
 
 Nota sobre la busqueda web: los resultados obtenidos corresponden a recursos de imagenes y servicios de la plataforma francesa 6play (`images-fio.6play.fr`, `pc.middleware.6play.fr`, `images.6play.fr`) y no guardan ninguna relacion con el modelo ni con su autor. No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados a `pdfdsf435/gpt-kaggle-backup`.

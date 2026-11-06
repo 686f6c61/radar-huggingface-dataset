@@ -80,8 +80,8 @@ En la información proporcionada solo se identifica un modelo directamente compa
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kevago/calvino-laya-ft | 321.908.998 | no disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Ajuste sobre dos preguntas de clasificación, datos sintéticos en español, no apto para producción según el autor |
-| convaiinnovations/laya | no disponible | no disponible | no disponible | HuggingFace (checkpoint base) | Modelo base descrito como multilingüe; la comparación con el ajuste queda pendiente de evaluación con datos reservados |
+| kevago/calvino-laya-ft | 321.908.998 | no disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Ajuste sobre dos preguntas de clasificación, datos sintéticos en español, no apto para producción según el autor |
+| convaiinnovations/laya | no disponible | no disponible | no disponible | Hugging Face (checkpoint base) | Modelo base descrito como multilingüe; la comparación con el ajuste queda pendiente de evaluación con datos reservados |
 
 Otros modelos comparables: no disponible.
 
@@ -101,7 +101,7 @@ Otros modelos comparables: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kevago/calvino-laya-ft
+- Modelo en Hugging Face: https://huggingface.co/kevago/calvino-laya-ft
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de Calvino y documento TSD-020: referenciados en la model card, pero sin enlace disponible en la información proporcionada
 - Papers, blogs, repositorios de código y demos: no disponible

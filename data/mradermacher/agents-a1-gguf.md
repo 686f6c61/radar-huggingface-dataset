@@ -32,7 +32,7 @@ No se dispone de información sobre el volumen de datos de entrenamiento, la com
 - Investigación científica: apoyo en revisión de literatura, formulación de hipótesis y análisis de datos.
 - Seguimiento de instrucciones: capacidad de ejecutar comandos y directrices complejas de forma precisa.
 - Uso de herramientas (tool use): integración con APIs, ejecución de código y llamadas a funciones externas.
-- Conversación y diálogo: etiquetado como "conversational" en HuggingFace, apto para interacción multi-turno.
+- Conversación y diálogo: etiquetado como "conversational" en Hugging Face, apto para interacción multi-turno.
 - Compatible con endpoints: el tag "endpoints_compatible" sugiere que puede desplegarse en infraestructuras de inferencia estándar.
 
 ## Casos de uso
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Agents-A1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Agents-A1-GGUF
 - Modelo original (InternScience): https://huggingface.co/InternScience/Agents-A1
 - Repositorio GitHub oficial: https://github.com/InternScience/Agents-A1
 - Página del proyecto: https://internscience.github.io/Agents-A1/

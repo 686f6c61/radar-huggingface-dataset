@@ -66,9 +66,9 @@ Notas del autor: el pack es más pequeño y ligero en memoria, no más rápido; 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Este pack (Ref2VA MLX Q8 podado) | ~5,98 mil M | No aplica | 235 s por clip de 5 s a 640x384 en M2 Max 96 GB | MiniMax H3 Community (territorio limitado) | HuggingFace, 55 descargas |
-| MiniMax-H3 Ref2VA oficial (bf16) | No disponible | No aplica | 242 s en el mismo test | MiniMax H3 Community | HuggingFace (MiniMaxAI) |
-| MiniMax-H3-MLX-8bit / -4bit (PipeNetwork, sobre FL2VA) | No disponible | No aplica | Error de velocidad 0,033 / 0,165 frente a bf16 | MiniMax H3 Community | HuggingFace (PipeNetwork) |
+| Este pack (Ref2VA MLX Q8 podado) | ~5,98 mil M | No aplica | 235 s por clip de 5 s a 640x384 en M2 Max 96 GB | MiniMax H3 Community (territorio limitado) | Hugging Face, 55 descargas |
+| MiniMax-H3 Ref2VA oficial (bf16) | No disponible | No aplica | 242 s en el mismo test | MiniMax H3 Community | Hugging Face (MiniMaxAI) |
+| MiniMax-H3-MLX-8bit / -4bit (PipeNetwork, sobre FL2VA) | No disponible | No aplica | Error de velocidad 0,033 / 0,165 frente a bf16 | MiniMax H3 Community | Hugging Face (PipeNetwork) |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (generación conjunta de vídeo y audio en Apple Silicon) en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (gene
 
 ## Enlaces
 
-- HuggingFace del pack: https://huggingface.co/blackestk/MiniMax-H3-Ref2VA-MLX-pruned-Q8
+- Hugging Face del pack: https://huggingface.co/blackestk/MiniMax-H3-Ref2VA-MLX-pruned-Q8
 - Modelo base oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Runner minimax-h3-mlx (Mr Bizarro): https://github.com/mrbizarro/minimax-h3-mlx

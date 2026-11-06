@@ -79,6 +79,6 @@ No se dispone de información suficiente para comparar con modelos alternativos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sivelsguy/DictaLM-3.0-1.7B-Instruct-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sivelsguy/DictaLM-3.0-1.7B-Instruct-Q8_0-GGUF
 - Modelo base: https://huggingface.co/dicta-il/DictaLM-3.0-1.7B-Instruct
 - Dicta (organización): https://dicta.org.il

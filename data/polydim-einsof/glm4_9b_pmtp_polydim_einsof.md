@@ -31,7 +31,7 @@ El autor expone un parámetro de control, `turing_depth` (con alias `einsof_dept
 
 - Generación de texto y razonamiento heredados del modelo base GLM-4-9B, condicionados por la proyección latente del adaptador.
 - Razonamiento latente multi-paso controlado mediante el parámetro `turing_depth` (0 a 50), con modos declarados de bypass, reflejo rápido, deliberación y demostración profunda.
-- Extracción de características (`pipeline_tag: feature-extraction`), que es el uso declarado en HuggingFace.
+- Extracción de características (`pipeline_tag: feature-extraction`), que es el uso declarado en Hugging Face.
 - Autocrítica adversarial y verificación antisicofántica en los rangos de profundidad 2–20 y 21–50, según la model card.
 - Soporte de despliegue vía Ollama mediante el `Modelfile` incluido, con temperatura calibrada a T=0,07.
 - Capacidades multilingües: no disponibles en la información proporcionada.
@@ -72,17 +72,17 @@ No se aportan resultados de MMLU, HumanEval, GSM8K ni de ninguna otra evaluació
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `glm4_9b_PMTP_polydim_einsof` | 9.000 M (base) + adaptador | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Adaptador de investigación sin benchmarks |
-| GLM-4-9B (Zhipu AI) | 9.000 M | 128K (según documentación pública del base) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base sin modificar, con benchmarks publicados |
-| Qwen2.5-7B (Alibaba) | 7.600 M | 128K | Apache 2.0 | HuggingFace, muy extendido | Alternativa de tamaño similar con ecosistema maduro |
-| Llama 3.1 8B (Meta) | 8.000 M | 128K | Llama 3.1 Community License | HuggingFace, ampliamente adoptado | Restricciones de licencia para uso comercial a gran escala |
+| `glm4_9b_PMTP_polydim_einsof` | 9.000 M (base) + adaptador | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Adaptador de investigación sin benchmarks |
+| GLM-4-9B (Zhipu AI) | 9.000 M | 128K (según documentación pública del base) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base sin modificar, con benchmarks publicados |
+| Qwen2.5-7B (Alibaba) | 7.600 M | 128K | Apache 2.0 | Hugging Face, muy extendido | Alternativa de tamaño similar con ecosistema maduro |
+| Llama 3.1 8B (Meta) | 8.000 M | 128K | Llama 3.1 Community License | Hugging Face, ampliamente adoptado | Restricciones de licencia para uso comercial a gran escala |
 
 La comparación directa con GLM-4-9B es la más relevante: el adaptador PMTP se presenta como una capa adicional sobre ese modelo, por lo que su rendimiento efectivo depende enteramente de la calidad del base. Frente a Qwen2.5-7B y Llama 3.1 8B, el adaptador carece de benchmarks públicos y de tracción comunitaria, lo que dificulta una evaluación objetiva.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia independiente de que el protocolo Turing o la proyección de Stiefel mejoren el rendimiento del modelo base en tareas estándar.
-- Modelo sin tracción: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
+- Modelo sin tracción: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
 - Documentación incompleta: no se especifican datos de entrenamiento, composición del corpus, número de tokens, ni objetivo de optimización del adaptador.
 - Precisión FP64 en los pesos del adaptador: los frameworks de inferencia habituales (vLLM, llama.cpp, TGI) operan en FP16/BF16/INT, por lo que la carga del adaptador puede requerir conversiones no documentadas y degradar las garantías numéricas declaradas.
 - Riesgo de alucinación: heredado del modelo base GLM-4-9B; el adaptador no aporta mecanismos verificados de mitigación más allá de la autocrítica declarada en la model card.
@@ -93,7 +93,7 @@ La comparación directa con GLM-4-9B es la más relevante: el adaptador PMTP se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Polydim-Einsof/glm4_9b_PMTP_polydim_einsof
+- Hugging Face: https://huggingface.co/Polydim-Einsof/glm4_9b_PMTP_polydim_einsof
 - Modelo base: https://huggingface.co/THUDM/glm-4-9b
 - DOI primario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21136742
 - DOI secundario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21209973

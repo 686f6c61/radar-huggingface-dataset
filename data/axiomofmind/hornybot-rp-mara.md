@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hornybot-RP-Mara es un fine-tune del modelo Qwen/Qwen3.5-9B desarrollado por **A Hole AI** y publicado en HuggingFace bajo el usuario `axiomofmind`. Esta versión está especializada en roleplay ficticio de contenido adulto, interpretando a **Mara**, un personaje femenino de 28 años. La edición RP escribe las acciones de Mara en tercera persona mientras mantiene el diálogo en estilo directo, lo que proporciona una experiencia narrativa consistente.
+Hornybot-RP-Mara es un fine-tune del modelo Qwen/Qwen3.5-9B desarrollado por **A Hole AI** y publicado en Hugging Face bajo el usuario `axiomofmind`. Esta versión está especializada en roleplay ficticio de contenido adulto, interpretando a **Mara**, un personaje femenino de 28 años. La edición RP escribe las acciones de Mara en tercera persona mientras mantiene el diálogo en estilo directo, lo que proporciona una experiencia narrativa consistente.
 
 El modelo tiene **9.409.813.744 parámetros** (9,41B) y se distribuye en tres formatos: pesos Transformers en BF16 (18,82 GB), un GGUF BF16 sin cuantizar (17,92 GB) y un GGUF Q6_K (7,36 GB). Una característica destacable es que el system prompt necesario para el comportamiento del personaje está embebido en `chat_template.jinja` y en ambos archivos GGUF, de modo que el cliente puede dejar el campo de sistema vacío para activar automáticamente la tarjeta de personaje.
 
@@ -23,7 +23,7 @@ La relevancia del modelo radica en su especialización: está diseñado para un 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de Qwen/Qwen3.5-9B, por lo que hereda la arquitectura base del modelo Qwen3.5, un transformer decoder-only con soporte de generación condicional. El código de ejemplo usa `Qwen3_5ForConditionalGeneration` y `AutoProcessor`, lo que sugiere que el modelo Transformers podría tener capacidades multimodales (el tag de HuggingFace incluye `image-text-to-text`), aunque los archivos GGUF son explícitamente solo texto, sin vision projector ni pesos de decodificación especulativa MTP.
+El modelo es un fine-tune de Qwen/Qwen3.5-9B, por lo que hereda la arquitectura base del modelo Qwen3.5, un transformer decoder-only con soporte de generación condicional. El código de ejemplo usa `Qwen3_5ForConditionalGeneration` y `AutoProcessor`, lo que sugiere que el modelo Transformers podría tener capacidades multimodales (el tag de Hugging Face incluye `image-text-to-text`), aunque los archivos GGUF son explícitamente solo texto, sin vision projector ni pesos de decodificación especulativa MTP.
 
 El modelo card no detalla el dataset de entrenamiento, el número de tokens ni si se emplearon técnicas como RLHF o DPO. La innovación principal no es arquitectónica, sino de integración: el system prompt del personaje está incrustado en la plantilla de chat (`chat_template.jinja`) y en los GGUF, de modo que el comportamiento de roleplay se activa sin configuración adicional por parte del cliente. El model card indica que un mensaje de sistema proporcionado por el cliente se añade como contexto extra de escena, sin reemplazar la tarjeta de personaje.
 
@@ -35,7 +35,7 @@ El modelo card no detalla el dataset de entrenamiento, el número de tokens ni s
 - System prompt integrado: el cliente puede dejar el campo de sistema vacío y el modelo aplica automáticamente la tarjeta de personaje.
 - Razonamiento desactivado por defecto: tanto en llama.cpp (`--reasoning off`) como en Transformers (`enable_thinking=False`), el modelo no genera tokens de razonamiento visibles.
 - Sin capacidades documentadas de tool calling, function calling ni soporte de agentes.
-- Los GGUF no incluyen capacidades de visión (sin vision projector), a pesar del tag `image-text-to-text` en HuggingFace.
+- Los GGUF no incluyen capacidades de visión (sin vision projector), a pesar del tag `image-text-to-text` en Hugging Face.
 
 ## Casos de uso
 
@@ -87,7 +87,7 @@ Ambos comparten la misma arquitectura y tamaño. La diferencia clave es que Horn
 - **Contenido explícito para adultos**: el modelo puede producir profanidad y contenido sexual explícito. Está pensado únicamente para interacción ficticia entre adultos.
 - **Continuidad y límites del contexto**: el model card advierte que la generación puede fallar en mantener la continuidad de la historia y los límites de la escena. Los usuarios deben revisar la salida y reafirmar datos de la escena cuando sea necesario.
 - **Diferencias entre formatos**: la salida puede variar entre formatos (Transformers vs GGUF), cuantizaciones (BF16 vs Q6_K), clientes y ajustes de generación.
-- **GGUF solo texto**: los archivos GGUF no incluyen vision projector ni pesos de decodificación especulativa MTP, a pesar de que el tag `image-text-to-text` aparece en HuggingFace.
+- **GGUF solo texto**: los archivos GGUF no incluyen vision projector ni pesos de decodificación especulativa MTP, a pesar de que el tag `image-text-to-text` aparece en Hugging Face.
 - **Licencia pendiente**: la licencia de este release derivado está en revisión. La licencia Apache 2.0 del modelo upstream no es una autorización general de material de terceros, por lo que el uso comercial requiere verificación legal.
 - **Sin benchmarks formales**: no hay resultados de MMLU, HumanEval, GSM8K ni otras métricas publicadas, lo que dificulta la comparación objetiva.
 - **Solo inglés**: el modelo únicamente soporta el idioma inglés, lo que limita su uso en entornos multilingües.
@@ -95,6 +95,6 @@ Ambos comparten la misma arquitectura y tamaño. La diferencia clave es que Horn
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axiomofmind/Hornybot-RP-Mara
+- Hugging Face: https://huggingface.co/axiomofmind/Hornybot-RP-Mara
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - llama.cpp: https://github.com/ggml-org/llama.cpp

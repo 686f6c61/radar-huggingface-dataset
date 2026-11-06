@@ -110,7 +110,7 @@ Comparacion con alternativas de la misma categoria (otros modelos MoE de ~35B to
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-GGUF
-- Coleccion APEX-I-MiniPlus V2.1 en HuggingFace: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104
+- Pagina de Hugging Face del modelo: https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-GGUF
+- Coleccion APEX-I-MiniPlus V2.1 en Hugging Face: https://huggingface.co/collections/IsValorum/apex-i-miniplus-v21-current-6aac8d4766a28a024e8bb104
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devolvieron unicamente paginas institucionales de la Unidad para las Victimas de Colombia y de la Rama Judicial de Colombia, sin relacion con el modelo.

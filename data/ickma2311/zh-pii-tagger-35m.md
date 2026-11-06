@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zh-pii-tagger-35m es un modelo de etiquetado de tokens (token classification) de 35 millones de parametros, desarrollado por el usuario de HuggingFace ickma2311 (Chao Ma), especializado en detectar datos personales en texto chino y en texto mixto chino-ingles. Se trata de un fine-tune de cjhwong/seatbelt-pii-tagger que conserva la misma arquitectura, tokenizer y esquema de 18 tipos de entidad con 73 etiquetas BIOES. El problema que resuelve es concreto: actuar como filtro local y por peticion antes de que un texto abandone la maquina, sin depender de un LLM generativo ni de servicios en la nube.
+zh-pii-tagger-35m es un modelo de etiquetado de tokens (token classification) de 35 millones de parametros, desarrollado por el usuario de Hugging Face ickma2311 (Chao Ma), especializado en detectar datos personales en texto chino y en texto mixto chino-ingles. Se trata de un fine-tune de cjhwong/seatbelt-pii-tagger que conserva la misma arquitectura, tokenizer y esquema de 18 tipos de entidad con 73 etiquetas BIOES. El problema que resuelve es concreto: actuar como filtro local y por peticion antes de que un texto abandone la maquina, sin depender de un LLM generativo ni de servicios en la nube.
 
 El fine-tune anade dos elementos respecto al modelo base: contextos reales en chino procedentes de FineWeb-2 con nombres y direcciones privadas sinteticos insertados, y una fase de replay por autodestilacion etiquetada por el propio modelo base, orientada a reducir el olvido de los tipos no chinos y del comportamiento en ingles. Con 35.449.033 parametros, un peso ONNX int8 de 35,6 MB y una latencia medida de 1,969 ms por pasaje en CPU, esta pensado para ejecutarse en local en hardware modesto.
 
@@ -109,11 +109,11 @@ Frente al modelo base, la mejora se concentra en persona en contextos reales, di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ickma2311/zh-pii-tagger-35m
+- Modelo en Hugging Face: https://huggingface.co/ickma2311/zh-pii-tagger-35m
 - Codigo de entrenamiento y evaluacion, y conjunto held-out: https://github.com/ickma2311/zh-pii-tagger-eval
-- Modelo base en HuggingFace: https://huggingface.co/cjhwong/seatbelt-pii-tagger
+- Modelo base en Hugging Face: https://huggingface.co/cjhwong/seatbelt-pii-tagger
 - Repositorio del modelo base: https://github.com/CJHwong/seatbelt-pii-tagger
-- Perfil del autor en HuggingFace: https://huggingface.co/ickma2311
+- Perfil del autor en Hugging Face: https://huggingface.co/ickma2311
 - Perfil del autor en Kaggle: https://www.kaggle.com/ickma2311
 - Dataset HuggingFaceFW/fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset ai4privacy/pii-masking-openpii-1.5m: https://huggingface.co/datasets/ai4privacy/pii-masking-openpii-1.5m

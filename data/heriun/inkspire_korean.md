@@ -92,7 +92,7 @@ La comparación directa disponible es con Eruku Korean, del mismo autor y entren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HERIUN/inkspire_korean
+- Modelo en Hugging Face: https://huggingface.co/HERIUN/inkspire_korean
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Código de entrenamiento y experimentos: https://github.com/HERIUN/Inkspire_korean_finetuning
 - Demo (Eruku y selección de modelo): https://huggingface.co/spaces/HERIUN/eruku_korean_demo

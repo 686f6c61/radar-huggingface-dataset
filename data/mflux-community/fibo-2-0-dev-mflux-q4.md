@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fibo-2-0-dev-mflux-q4 (este) | no disponible | no aplica | MLX safetensors Q4, 7,2 GB | fibo-2.0-dev-license | HuggingFace, 69 descargas |
-| fibo-2-0-dev-mflux-q8 | no disponible | no aplica | MLX safetensors Q8, 13,4 GB | fibo-2.0-dev-license | HuggingFace |
-| fibo-2-0-dev-mflux-bf16 | no disponible | no aplica | MLX safetensors BF16, 25,1 GB | fibo-2.0-dev-license | HuggingFace |
-| briaai/Fibo-2.0-dev (original) | no disponible | no aplica | no disponible | fibo-2.0-dev-license | HuggingFace |
+| fibo-2-0-dev-mflux-q4 (este) | no disponible | no aplica | MLX safetensors Q4, 7,2 GB | fibo-2.0-dev-license | Hugging Face, 69 descargas |
+| fibo-2-0-dev-mflux-q8 | no disponible | no aplica | MLX safetensors Q8, 13,4 GB | fibo-2.0-dev-license | Hugging Face |
+| fibo-2-0-dev-mflux-bf16 | no disponible | no aplica | MLX safetensors BF16, 25,1 GB | fibo-2.0-dev-license | Hugging Face |
+| briaai/Fibo-2.0-dev (original) | no disponible | no aplica | no disponible | fibo-2.0-dev-license | Hugging Face |
 
 Las variantes Q3 a BF16 del mismo modelo permiten ajustar el equilibrio entre calidad y memoria. No se dispone de datos de rendimiento comparativo entre ellas en la informacion proporcionada.
 
@@ -75,7 +75,7 @@ Las variantes Q3 a BF16 del mismo modelo permiten ajustar el equilibrio entre ca
 - El repo tiene solo 69 descargas y 0 likes, lo que indica escasa validacion comunitaria hasta la fecha.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q4
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q4
 - Modelo base original: https://huggingface.co/briaai/Fibo-2.0-dev
 - Variante BF16: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-bf16
 - Variante Q8: https://huggingface.co/mflux-community/fibo-2-0-dev-mflux-q8

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mazesmazes/tiny-audio-granite-qwen-frozen` es un repositorio de modelo publicado en HuggingFace por el usuario `mazesmazes`, con 12.590.080 parámetros almacenados en formato safetensors y un tamaño de repositorio de 3,1 GB. La model card es la plantilla autogenerada por HuggingFace y no contiene ningun dato sustantivo: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". Por tanto, la caracterizacion del modelo solo puede hacerse a partir de los metadatos del Hub y de las etiquetas declaradas.
+`mazesmazes/tiny-audio-granite-qwen-frozen` es un repositorio de modelo publicado en Hugging Face por el usuario `mazesmazes`, con 12.590.080 parámetros almacenados en formato safetensors y un tamaño de repositorio de 3,1 GB. La model card es la plantilla autogenerada por Hugging Face y no contiene ningun dato sustantivo: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". Por tanto, la caracterizacion del modelo solo puede hacerse a partir de los metadatos del Hub y de las etiquetas declaradas.
 
 Las etiquetas del repositorio son `transformers`, `safetensors`, `asr_model`, `feature-extraction`, `custom_code`, `arxiv:1910.09700` y `region:us`. Dos de ellas son significativas: `asr_model` apunta a reconocimiento automatico del habla y `custom_code` indica que el modelo requiere codigo de modelado propio para cargarse (habitualmente mediante `trust_remote_code=True`). La pipeline declarada en el Hub es `feature-extraction`, no `automatic-speech-recognition`, lo que introduce ambiguedad sobre el uso previsto real.
 
@@ -32,7 +32,7 @@ El nombre del repositorio sugiere una arquitectura compuesta por un modulo de au
 
 No se dispone de informacion sobre la arquitectura. La model card no describe el tipo de red, el objetivo de entrenamiento, la composicion del dataset ni el numero de tokens utilizados. El unico indicio tecnico es la etiqueta `custom_code`, que implica que el checkpoint depende de clases o funciones de modelado definidas en el propio repositorio y no cubiertas por la implementacion estandar de `transformers`. El nombre del repositorio sugiere una combinacion de un encoder de audio de tamano reducido con componentes de las familias Granite y Qwen, pero esto no esta confirmado en ninguna fuente disponible.
 
-Tampoco hay informacion sobre el procedimiento de entrenamiento (si hubo RLHF, DPO, fine-tuning supervisado o destilacion), sobre hiperparametros, ni sobre la infraestructura de computo empleada. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde a Lacoste et al. (2019), el articulo citado en la plantilla autogenerada de HuggingFace para el calculo de emisiones de carbono; no es un paper asociado al modelo. La discrepancia entre los 12,59 M de parametros y los 3,1 GB de repositorio sugiere que el repositorio contiene mas de un conjunto de pesos (posiblemente varios componentes congelados, optimizador u otros artefactos), pero no hay desglose publicado.
+Tampoco hay informacion sobre el procedimiento de entrenamiento (si hubo RLHF, DPO, fine-tuning supervisado o destilacion), sobre hiperparametros, ni sobre la infraestructura de computo empleada. La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde a Lacoste et al. (2019), el articulo citado en la plantilla autogenerada de Hugging Face para el calculo de emisiones de carbono; no es un paper asociado al modelo. La discrepancia entre los 12,59 M de parametros y los 3,1 GB de repositorio sugiere que el repositorio contiene mas de un conjunto de pesos (posiblemente varios componentes congelados, optimizador u otros artefactos), pero no hay desglose publicado.
 
 ## Capacidades
 
@@ -88,14 +88,14 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 - Licencia: no disponible. Al no especificarse una licencia, no puede asumirse permiso de uso comercial ni de redistribucion; en ausencia de licencia explicita, los derechos quedan reservados por defecto al autor.
 - Ejecucion de codigo remoto: el tag `custom_code` obliga a usar `trust_remote_code=True`, lo que supone ejecutar codigo arbitrario del repositorio. Debe revisarse el codigo antes de cargarlo y evitarse en entornos no aislados.
 - Ausencia de validacion externa: 0 descargas y 0 likes, sin ninguna referencia en la busqueda web. No hay evidencia de que terceros hayan reproducido el modelo.
-- Documentacion inexistente: la model card es la plantilla autogenerada por HuggingFace, sin contenido real. No hay instrucciones de uso, ejemplos de codigo ni descripcion de entradas y salidas.
+- Documentacion inexistente: la model card es la plantilla autogenerada por Hugging Face, sin contenido real. No hay instrucciones de uso, ejemplos de codigo ni descripcion de entradas y salidas.
 - Ambiguedad sobre el uso previsto: la discrepancia entre el tag `asr_model` y la pipeline `feature-extraction` impide determinar si el modelo genera texto transcrito o solo representaciones intermedias.
 - Idoneidad para produccion: no recomendado sin una validacion previa propia, dado que no existen benchmarks, licencia definida ni soporte documental.
 - La busqueda web realizada devolvio exclusivamente resultados no relacionados (paginas de agencia de viajes), por lo que no se ha podido ampliar informacion desde fuentes externas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen
+- Repositorio en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen
 - Referencia citada en las etiquetas (Lacoste et al., 2019, calculo de impacto de carbono, usada en la plantilla autogenerada, no asociada al modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - Paper o blog del modelo: no disponible

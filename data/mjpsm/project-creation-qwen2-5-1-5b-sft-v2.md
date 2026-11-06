@@ -6,7 +6,7 @@
 
 El modelo hereda la arquitectura transformer densa de Qwen2.5-1.5B, con 1.543.714.304 parámetros totales y pesos en formato safetensors. Se distribuye como un checkpoint de ajuste fino supervisado (SFT) y no incluye información pública sobre licencia, idiomas soportados ni pipeline de inferencia en la model card. Su relevancia es acotada: se trata de un artefacto de nicho para un producto concreto (MyVillage), no de un modelo de propósito general, y su utilidad fuera de ese contexto es limitada.
 
-La ficha se basa exclusivamente en los metadatos de HuggingFace y en la model card del autor. No hay información publicada sobre benchmarks, licencia, composición detallada del dataset ni evaluación cualitativa, por lo que muchos apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en los metadatos de Hugging Face y en la model card del autor. No hay información publicada sobre benchmarks, licencia, composición detallada del dataset ni evaluación cualitativa, por lo que muchos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| project-creation-qwen2.5-1.5b-sft-v2 | 1.543.714.304 | No disponible | No disponible | HuggingFace (0 descargas) | Ajuste fino QLoRA de nicho para MyVillage |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.543.714.304 | 32.768 tokens (según documentación pública del base) | Apache 2.0 (según documentación pública del base) | HuggingFace | Modelo base generalista; el fine-tune hereda su arquitectura |
-| Qwen/Qwen2.5-1.5B | 1.543.714.304 | 32.768 tokens (según documentación pública del base) | Apache 2.0 (según documentación pública del base) | HuggingFace | Variante base sin instrucciones |
-| SmolLM2-1.7B-Instruct | ~1.700.000.000 | 8.192 tokens (según documentación pública) | Apache 2.0 (según documentación pública) | HuggingFace | Alternativa pequeña generalista |
+| project-creation-qwen2.5-1.5b-sft-v2 | 1.543.714.304 | No disponible | No disponible | Hugging Face (0 descargas) | Ajuste fino QLoRA de nicho para MyVillage |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.543.714.304 | 32.768 tokens (según documentación pública del base) | Apache 2.0 (según documentación pública del base) | Hugging Face | Modelo base generalista; el fine-tune hereda su arquitectura |
+| Qwen/Qwen2.5-1.5B | 1.543.714.304 | 32.768 tokens (según documentación pública del base) | Apache 2.0 (según documentación pública del base) | Hugging Face | Variante base sin instrucciones |
+| SmolLM2-1.7B-Instruct | ~1.700.000.000 | 8.192 tokens (según documentación pública) | Apache 2.0 (según documentación pública) | Hugging Face | Alternativa pequeña generalista |
 
 La comparación con el modelo base es la más relevante: el fine-tune no cambia el tamaño ni la arquitectura, solo especializa el comportamiento en la tarea de creación de proyectos. Frente a alternativas generalistas del mismo orden de magnitud, este checkpoint pierde flexibilidad y capacidades generales a cambio de un formato de salida muy concreto. No hay datos de rendimiento comparativo publicados.
 
@@ -87,7 +87,7 @@ La comparación con el modelo base es la más relevante: el fine-tune no cambia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v2
+- Modelo en Hugging Face: https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Space asociado (referenciado en la model card como `app.py`, sin URL directa disponible): no disponible
 - Paper o blog del autor: no disponible

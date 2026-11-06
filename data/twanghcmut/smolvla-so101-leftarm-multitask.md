@@ -99,8 +99,8 @@ Dividiendo por la desviacion estandar absoluta de acciones (28,67) se obtiene un
 
 | Modelo | Parametros totales | Memoria de activaciones por muestra (entrenamiento) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA-SO101-LeftArm-Multitask | 450M (100M entrenables) | 0,19 GB | No disponible | Apache 2.0 | HuggingFace, 13 descargas, 0 likes |
-| lerobot/smolvla_base | No disponible | No disponible | No disponible | No disponible | HuggingFace (modelo base) |
+| SmolVLA-SO101-LeftArm-Multitask | 450M (100M entrenables) | 0,19 GB | No disponible | Apache 2.0 | Hugging Face, 13 descargas, 0 likes |
+| lerobot/smolvla_base | No disponible | No disponible | No disponible | No disponible | Hugging Face (modelo base) |
 | X-VLA | No disponible (citado como modelo de 3B en el texto del autor) | 0,82 GB | No disponible | No disponible | No disponible en la informacion proporcionada |
 | pi-0.5 | No disponible | ~0,36 GB | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -123,7 +123,7 @@ La comparacion disponible se limita al consumo de memoria durante el entrenamien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/SmolVLA-SO101-LeftArm-Multitask
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/SmolVLA-SO101-LeftArm-Multitask
 - Modelo base SmolVLA de LeRobot: https://huggingface.co/lerobot/smolvla_base
 - Dataset de una de las tareas: https://huggingface.co/datasets/hungho77/so101_left_arm_pick_red_cube_into_pot
 - Coleccion de datasets SO-101 LeftArmOnly Task: https://huggingface.co/collections/hungho77/so101-leftarmonly-task

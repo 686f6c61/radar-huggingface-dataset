@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vol10k-tfidf-logreg es un clasificador binario de texto publicado en HuggingFace por el usuario moosairfaan. No es un modelo de lenguaje generativo: es una canalización de scikit-learn compuesta por un vectorizador TF-IDF (unigramas y bigramas, `min_df` 5, 30.000 features, frecuencia de termino sublineal, minusculas, sin lista de stop-words) seguido de una regresion logistica con regularizacion L2. Su tarea es estimar la probabilidad de que la volatilidad realizada en las 63 sesiones bursatiles posteriores a la presentacion de un formulario 10-K sea estrictamente superior a la de las 63 sesiones anteriores.
+vol10k-tfidf-logreg es un clasificador binario de texto publicado en Hugging Face por el usuario moosairfaan. No es un modelo de lenguaje generativo: es una canalización de scikit-learn compuesta por un vectorizador TF-IDF (unigramas y bigramas, `min_df` 5, 30.000 features, frecuencia de termino sublineal, minusculas, sin lista de stop-words) seguido de una regresion logistica con regularizacion L2. Su tarea es estimar la probabilidad de que la volatilidad realizada en las 63 sesiones bursatiles posteriores a la presentacion de un formulario 10-K sea estrictamente superior a la de las 63 sesiones anteriores.
 
 La entrada son las secciones Item 1A (factores de riesgo) e Item 7 (discusion y analisis de la direccion) de un 10-K original, concatenadas mediante un salto de linea, mas un bloque de variables numericas financieras. La salida es una probabilidad para la etiqueta `label_primary`. El ajuste se realizo sobre 165 formularios correspondientes a una porcion aprobada de 20 tickers de un snapshot del S&P 500, con fechas de aceptacion desde el 1 de enero de 2010 y ventana de etiqueta en horario America/New_York.
 
@@ -21,7 +21,7 @@ Su relevancia es metodologica mas que de rendimiento: se publica con un preregis
 | Licencia | Apache 2.0 para codigo y artefactos; la licencia no cubre los filings de EDGAR ni los datos de mercado de Yahoo (ver `DATA_RIGHTS.md`) |
 | Formato de pesos | joblib (artefactos scikit-learn); no hay safetensors, GGUF ni ONNX |
 | Libreria declarada | sklearn |
-| Pipeline de HuggingFace | text-classification |
+| Pipeline de Hugging Face | text-classification |
 | Tarea | Clasificacion binaria: probabilidad de que la volatilidad realizada de las siguientes 63 sesiones sea estrictamente mayor que la de las 63 anteriores |
 | Vectorizacion | TF-IDF, unigramas y bigramas, `min_df` 5, 30.000 features, frecuencia sublineal, minusculas, sin stop-words |
 | Hiperparametros del clasificador | L2, solver `lbfgs`, `max_iter` 2.000, `C` = 0,01, semilla 42 |
@@ -94,7 +94,7 @@ Resultados del analisis confirmatorio: el delta de AUC frente a la regresion log
 - VRAM estimada: 0 GB. El modelo se ejecuta en CPU.
 - GPU recomendadas: no aplica (no hay soporte CUDA declarado).
 - Caben en cualquier GPU consumer: si, pero no es necesario; tambien cabe en CPU de un portatil.
-- Espacio en disco: el repositorio ocupa 0,0 GB segun HuggingFace; el artefacto principal es un unico archivo joblib con el vectorizador y el clasificador.
+- Espacio en disco: el repositorio ocupa 0,0 GB segun Hugging Face; el artefacto principal es un unico archivo joblib con el vectorizador y el clasificador.
 - Opciones de despliegue: carga directa con `joblib.load` dentro de un entorno scikit-learn 1.9.1 sobre Python 3.12. No se declara soporte para vLLM, llama.cpp, Ollama ni TGI, que son irrelevantes para este tipo de modelo.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 - Dependencias de ejecucion: numpy 2.5.3, pandas 3.0.6, scikit-learn 1.9.1, joblib 1.6.0 (fijadas en `requirements.txt`).
@@ -132,7 +132,7 @@ Comparativa con modelos de la misma categoria publicados por terceros: no dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moosairfaan/vol10k-tfidf-logreg
+- Modelo en Hugging Face: https://huggingface.co/moosairfaan/vol10k-tfidf-logreg
 - Archivo de licencia referenciado en la model card: `LICENSE.txt` (dentro del repositorio)
 - Documento de derechos de datos referenciado: `DATA_RIGHTS.md` (dentro del repositorio)
 - Documento de preregistro referenciado: `PREREGISTRATION.md` (dentro del repositorio)

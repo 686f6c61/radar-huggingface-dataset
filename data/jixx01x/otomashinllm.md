@@ -2,9 +2,9 @@
 
 ## Resumen
 
-OtomashinLLM es un modelo publicado en HuggingFace por el usuario jixx01x bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente declara la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente o de muy baja difusion.
+OtomashinLLM es un modelo publicado en Hugging Face por el usuario jixx01x bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente declara la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente o de muy baja difusion.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco hay pipeline declarado en HuggingFace, por lo que no es posible confirmar si se trata de un modelo de generacion de texto, de embeddings, de vision u otra categoria.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco hay pipeline declarado en Hugging Face, por lo que no es posible confirmar si se trata de un modelo de generacion de texto, de embeddings, de vision u otra categoria.
 
 Dada la ausencia de documentacion tecnica, esta ficha se limita a reflejar los pocos metadatos verificables del repositorio y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de capacidades o rendimiento requeriria inspeccionar los archivos de pesos del repositorio, algo que no se ha podido realizar con la informacion proporcionada.
 
@@ -42,7 +42,7 @@ Tampoco se indica el origen de los pesos (entrenamiento desde cero, fine-tuning 
 - Fine-tuning experimental: la licencia Apache 2.0 permite adaptar los pesos a dominios concretos, pero sin conocer el modelo base el resultado es impredecible.
 - Pruebas de compatibilidad de tooling: util para verificar si el modelo carga correctamente en frameworks como transformers, vLLM o llama.cpp, aunque se desconoce el formato de pesos.
 - Benchmarking interno: puede servir como punto de comparacion en evaluaciones propias, aunque sin datos publicados del autor la referencia es debil.
-- Docencia y analisis de repositorios: como ejemplo de publicacion minima en HuggingFace para estudiar que metadatos son imprescindibles en una model card.
+- Docencia y analisis de repositorios: como ejemplo de publicacion minima en Hugging Face para estudiar que metadatos son imprescindibles en una model card.
 
 ## Benchmarks y rendimiento
 
@@ -71,4 +71,4 @@ No disponible. Sin conocer la arquitectura, el tamano ni la tarea del modelo, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jixx01x/OtomashinLLM
+- Hugging Face: https://huggingface.co/jixx01x/OtomashinLLM

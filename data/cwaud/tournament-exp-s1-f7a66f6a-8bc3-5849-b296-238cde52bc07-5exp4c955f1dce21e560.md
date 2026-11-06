@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-f7a66f6a-8bc3-5849-b296-238cde52bc07-5Exp4c955f1dce21e560` es un checkpoint experimental publicado en HuggingFace por el usuario `cwaud`. El nombre sugiere que se trata de un artefacto generado dentro de un proceso de competición o experimento ("tournament-exp"), probablemente el resultado de una ejecución de ajuste fino automatizada con una identificacion unica asociada. No existe documentacion publica, model card descriptiva ni articulo tecnico que acompane al repositorio.
+El modelo identificado como `cwaud/tournament-exp-s1-f7a66f6a-8bc3-5849-b296-238cde52bc07-5Exp4c955f1dce21e560` es un checkpoint experimental publicado en Hugging Face por el usuario `cwaud`. El nombre sugiere que se trata de un artefacto generado dentro de un proceso de competición o experimento ("tournament-exp"), probablemente el resultado de una ejecución de ajuste fino automatizada con una identificacion unica asociada. No existe documentacion publica, model card descriptiva ni articulo tecnico que acompane al repositorio.
 
 El peso real de los archivos safetensors indica un total de 1.554.859.392 parametros, es decir, aproximadamente 1,55 mil millones de parametros. La etiqueta de arquitectura declarada es `falcon_h1`, lo que apunta a la familia Falcon-H1 de TII (arquitectura hibrida que combina atencion tipo transformer con capas de espacio de estados tipo Mamba), aunque no se ha confirmado en la propia ficha del repositorio.
 
@@ -73,10 +73,10 @@ La comparativa siguiente se ofrece como referencia de categoria (modelos densos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `cwaud/tournament-exp-...` (objeto de esta ficha) | 1,55 mil M | no disponible | no disponible | HuggingFace, repo publico sin documentacion |
-| Falcon-H1-1.5B (TII) | aprox. 1,5 mil M | no disponible en la informacion proporcionada | Falcon LLM License | HuggingFace, con model card |
-| Qwen2.5-1.5B | aprox. 1,5 mil M | 32.768 tokens (segun su ficha publica) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Llama-3.2-1B | aprox. 1,23 mil M | 128.000 tokens (segun su ficha publica) | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
+| `cwaud/tournament-exp-...` (objeto de esta ficha) | 1,55 mil M | no disponible | no disponible | Hugging Face, repo publico sin documentacion |
+| Falcon-H1-1.5B (TII) | aprox. 1,5 mil M | no disponible en la informacion proporcionada | Falcon LLM License | Hugging Face, con model card |
+| Qwen2.5-1.5B | aprox. 1,5 mil M | 32.768 tokens (segun su ficha publica) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Llama-3.2-1B | aprox. 1,23 mil M | 128.000 tokens (segun su ficha publica) | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
 
 No se dispone de datos de rendimiento comparado para el modelo analizado, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -95,5 +95,5 @@ No se dispone de datos de rendimiento comparado para el modelo analizado, por lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-f7a66f6a-8bc3-5849-b296-238cde52bc07-5Exp4c955f1dce21e560
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-f7a66f6a-8bc3-5849-b296-238cde52bc07-5Exp4c955f1dce21e560
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con este modelo y se han descartado.

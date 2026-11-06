@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en HuggingFace, con identificador `2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de respaldo de un experimento, almacenado en formato estándar de HuggingFace (`AutoModelForCausalLM.from_pretrained`). El nombre sugiere que forma parte de una serie de experimentos con variaciones de hiperparámetros (probablemente relacionados con top-k, temperatura, etc.), y el tag `qwen3` indica que está basado en la arquitectura Qwen3, aunque no se confirma en la model card.
+Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en Hugging Face, con identificador `2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de respaldo de un experimento, almacenado en formato estándar de Hugging Face (`AutoModelForCausalLM.from_pretrained`). El nombre sugiere que forma parte de una serie de experimentos con variaciones de hiperparámetros (probablemente relacionados con top-k, temperatura, etc.), y el tag `qwen3` indica que está basado en la arquitectura Qwen3, aunque no se confirma en la model card.
 
 El modelo tiene aproximadamente 2.031 millones de parámetros (2,03B), lo que lo sitúa en la gama de modelos pequeños, adecuados para inferencia en hardware de consumo. Sin embargo, la información pública es extremadamente limitada: no se especifican datos de entrenamiento, licencia, idiomas soportados ni benchmarks. Su relevancia actual es baja fuera del ámbito de investigación del autor, ya que no hay documentación que permita evaluar sus capacidades de forma rigurosa.
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b
+- Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b0p5-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b
 - Modelos relacionados del mismo autor: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7
 - Despliegue en FriendliAI (modelo similar): https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last

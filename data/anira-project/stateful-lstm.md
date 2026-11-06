@@ -76,7 +76,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anira-project/stateful-lstm | no disponible | bloques de 2048 muestras | 0,85-2,9 ms por bloque segun backend | GPL-3.0 | HuggingFace + GitHub |
+| anira-project/stateful-lstm | no disponible | bloques de 2048 muestras | 0,85-2,9 ms por bloque segun backend | GPL-3.0 | Hugging Face + GitHub |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anira-project/stateful-lstm
+- Hugging Face: https://huggingface.co/anira-project/stateful-lstm
 - Repositorio fuente: https://github.com/vackva/stateful-lstm (commit `3ce7bec`, carpeta `models/model_0/`)
 - Referencia arquitectonica: Wright et al., "Real-Time Guitar Amplifier Emulation with Deep Learning" (2020)
 - Dataset de entrenamiento: grabacion TS9 de GuitarML (GPL-3.0)

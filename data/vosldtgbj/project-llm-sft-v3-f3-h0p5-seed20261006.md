@@ -77,8 +77,8 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de este 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `project-llm-sft-v3-f3-h0p5-seed20261006` (este) | 11,96B | No disponible | Apache-2.0 + términos de Gemma 4 | Repositorio HuggingFace, 0 descargas | SFT v3, 0,5 epoch, LR 2e-6 |
-| `project-llm-cpt-1p0-top10-01-full-02` (modelo base) | No disponible | No disponible | No disponible | Repositorio HuggingFace | CPT de 1,0 epoch; predecesor directo |
+| `project-llm-sft-v3-f3-h0p5-seed20261006` (este) | 11,96B | No disponible | Apache-2.0 + términos de Gemma 4 | Repositorio Hugging Face, 0 descargas | SFT v3, 0,5 epoch, LR 2e-6 |
+| `project-llm-cpt-1p0-top10-01-full-02` (modelo base) | No disponible | No disponible | No disponible | Repositorio Hugging Face | CPT de 1,0 epoch; predecesor directo |
 | Modelo Gemma 4 subyacente | No disponible | No disponible | Licencia Gemma 4 | No disponible en esta búsqueda | Arquitectura `gemma4_unified` de la que deriva |
 | Alternativas de ~12B multimodales de otros proveedores | No disponible | No disponible | No disponible | No disponible | Sin datos comparativos en la información recopilada |
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto de este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-sft-v3-f3-h0p5-seed20261006
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-sft-v3-f3-h0p5-seed20261006
 - Modelo base (CPT): https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-01-full-02
 - Licencia de Gemma 4 referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license
 - Repositorio de vLLM (opción de despliegue): https://github.com/vllm-project/vllm

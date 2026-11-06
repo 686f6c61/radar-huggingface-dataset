@@ -100,8 +100,8 @@ Frente a alternativas publicas de escala comparable, no se dispone de datos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arihant25/anlp-a2-moe
+- Modelo en Hugging Face: https://huggingface.co/Arihant25/anlp-a2-moe
 - Logs de entrenamiento en Weights & Biases: https://wandb.ai/arihanttr-iiit-hyderabad/anlp-a2
-- Perfil del autor en HuggingFace: https://huggingface.co/Arihant25
+- Perfil del autor en Hugging Face: https://huggingface.co/Arihant25
 - Repositorio de la guia de estudio de la asignatura: https://github.com/Arihant25/anlp-study-guide
 - Carpeta de assignments del repositorio: https://github.com/Arihant25/anlp-study-guide/tree/main/assignments

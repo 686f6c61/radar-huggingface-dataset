@@ -2,7 +2,7 @@
 
 ## Resumen
 
-iFAM (metashift-k1) es un checkpoint de clasificación de imágenes publicado por Ananthu Aniraj (ananthu-aniraj) en HuggingFace, correspondiente al framework iFAM (Inherently Faithful Attention Maps) descrito en el artículo "Two-stage Vision Transformers and Hard Masking offer Robust Object Representations", aceptado como presentación oral en ICPR 2026. El modelo aborda un problema clásico de los clasificadores visuales: la dependencia de detalles espurios del fondo en lugar de las regiones realmente discriminativas del objeto. Para ello emplea una arquitectura de dos etapas sobre un backbone Vision Transformer asociado a DINOv2 (según las etiquetas del repositorio).
+iFAM (metashift-k1) es un checkpoint de clasificación de imágenes publicado por Ananthu Aniraj (ananthu-aniraj) en Hugging Face, correspondiente al framework iFAM (Inherently Faithful Attention Maps) descrito en el artículo "Two-stage Vision Transformers and Hard Masking offer Robust Object Representations", aceptado como presentación oral en ICPR 2026. El modelo aborda un problema clásico de los clasificadores visuales: la dependencia de detalles espurios del fondo en lugar de las regiones realmente discriminativas del objeto. Para ello emplea una arquitectura de dos etapas sobre un backbone Vision Transformer asociado a DINOv2 (según las etiquetas del repositorio).
 
 La primera etapa (selector) procesa la imagen completa para descubrir partes del objeto e identificar las regiones relevantes para la tarea. La segunda etapa (predictor) restringe su campo receptivo a esas regiones mediante enmascaramiento duro de la atención, de modo que la información de fondo no puede influir en la clasificación. Este checkpoint concreto está entrenado sobre el conjunto de datos Metashifts con una sola parte (K=1).
 
@@ -101,7 +101,7 @@ Comparativa de rendimiento frente a estos modelos: no disponible.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/ananthu-aniraj/ifam-metashift-k1
+- Página del modelo en Hugging Face: https://huggingface.co/ananthu-aniraj/ifam-metashift-k1
 - Artículo (arXiv): https://arxiv.org/abs/2506.08915
 - Repositorio de código: https://github.com/ananthu-aniraj/ifam
 - Venue de publicación: International Conference on Pattern Recognition (ICPR) 2026

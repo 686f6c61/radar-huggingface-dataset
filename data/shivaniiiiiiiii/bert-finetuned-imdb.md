@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bert-finetuned-imdb` es un modelo de clasificación de texto obtenido mediante ajuste fino de `google-bert/bert-base-uncased`, publicado por el usuario de HuggingFace Shivaniiiiiiiii. Se trata de un artefacto generado automáticamente con el `Trainer` de la librería Transformers, sin model card completada por el autor: la descripción, los usos previstos y la composición del dataset de entrenamiento figuran como "More information needed". El nombre sugiere un ajuste sobre el corpus de reseñas de películas IMDb, pero el autor no lo confirma en la documentación.
+`bert-finetuned-imdb` es un modelo de clasificación de texto obtenido mediante ajuste fino de `google-bert/bert-base-uncased`, publicado por el usuario de Hugging Face Shivaniiiiiiiii. Se trata de un artefacto generado automáticamente con el `Trainer` de la librería Transformers, sin model card completada por el autor: la descripción, los usos previstos y la composición del dataset de entrenamiento figuran como "More information needed". El nombre sugiere un ajuste sobre el corpus de reseñas de películas IMDb, pero el autor no lo confirma en la documentación.
 
 Arquitectura BERT estándar (transformer encoder bidireccional) con 109.483.778 parámetros totales, equivalente a la configuración base de BERT: 12 capas, 768 dimensiones ocultas y 12 cabezas de atención. El repositorio ocupa 0,4 GB e incluye pesos en formato safetensors. La licencia declarada es Apache 2.0, heredada del modelo base.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Shivaniiiiiiiii/bert-finetuned-imdb` | 109,5 M | no disponible (base: 512) | Apache 2.0 | HuggingFace, 26 descargas | Sin benchmarks ni model card completa |
-| `google-bert/bert-base-uncased` | 110 M | 512 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base sin ajuste; referencia de partida |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 67 M | 512 | Apache 2.0 | HuggingFace, muy usado | Clasificador de sentimiento con benchmarks publicados en GLUE/SST-2 |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | 125 M | 512 | Apache 2.0 | HuggingFace | Ajustado a dominio Twitter; evaluación publicada |
+| `Shivaniiiiiiiii/bert-finetuned-imdb` | 109,5 M | no disponible (base: 512) | Apache 2.0 | Hugging Face, 26 descargas | Sin benchmarks ni model card completa |
+| `google-bert/bert-base-uncased` | 110 M | 512 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base sin ajuste; referencia de partida |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 67 M | 512 | Apache 2.0 | Hugging Face, muy usado | Clasificador de sentimiento con benchmarks publicados en GLUE/SST-2 |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | 125 M | 512 | Apache 2.0 | Hugging Face | Ajustado a dominio Twitter; evaluación publicada |
 
 La comparación relevante es con clasificadores de sentimiento consolidados, que ofrecen documentación, evaluación y mantenimiento de los que carece este checkpoint.
 
@@ -91,7 +91,7 @@ La comparación relevante es con clasificadores de sentimiento consolidados, que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shivaniiiiiiiii/bert-finetuned-imdb
+- Modelo en Hugging Face: https://huggingface.co/Shivaniiiiiiiii/bert-finetuned-imdb
 - Modelo base: https://huggingface.co/bert-base-uncased
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 - Documentación de `text-embeddings-inference`: https://github.com/huggingface/text-embeddings-inference

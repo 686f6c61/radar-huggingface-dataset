@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V3.2 es un modelo de generacion de texto publicado en HuggingFace por el usuario KINOX12 bajo el identificador KINOX12/DeepSeek-V3.2 y licencia MIT. Se trata de un ajuste fino (la etiqueta del repositorio indica `base_model_relation: finetune`) sobre el modelo deepseek-ai/DeepSeek-V3.2-Exp-Base. El repositorio ocupa 689,5 GB y los safetensors declaran un total de 685.355.329.792 parametros.
+DeepSeek-V3.2 es un modelo de generacion de texto publicado en Hugging Face por el usuario KINOX12 bajo el identificador KINOX12/DeepSeek-V3.2 y licencia MIT. Se trata de un ajuste fino (la etiqueta del repositorio indica `base_model_relation: finetune`) sobre el modelo deepseek-ai/DeepSeek-V3.2-Exp-Base. El repositorio ocupa 689,5 GB y los safetensors declaran un total de 685.355.329.792 parametros.
 
 La model card reproduce el material de presentacion oficial de la familia DeepSeek-V3.2, que describe tres lineas de trabajo: una atencion dispersa propietaria denominada DeepSeek Sparse Attention (DSA), un marco de aprendizaje por refuerzo escalable y un pipeline de sintesis de tareas agenticas a gran escala. Segun esa misma documentacion, la variante de alto computo DeepSeek-V3.2-Speciale seria comparable o superior a GPT-5 y habria obtenido resultados de medalla de oro en la Olimpiada Internacional de Matematicas (IMO) y en la Olimpiada Internacional de Informatica (IOI) de 2025.
 
@@ -23,7 +23,7 @@ La relevancia de esta publicacion concreta es limitada: el repositorio no docume
 | Tamano del repositorio | 689,5 GB |
 | Modelo base | deepseek-ai/DeepSeek-V3.2-Exp-Base |
 | Relacion con el modelo base | finetune |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,8 +84,8 @@ Estas afirmaciones corresponden al lanzamiento oficial y no han sido verificadas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KINOX12/DeepSeek-V3.2 | 685,4B | no disponible | MIT | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-V3.2-Exp-Base | no disponible en la informacion | no disponible | no disponible en la informacion | HuggingFace (modelo base) |
+| KINOX12/DeepSeek-V3.2 | 685,4B | no disponible | MIT | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-V3.2-Exp-Base | no disponible en la informacion | no disponible | no disponible en la informacion | Hugging Face (modelo base) |
 | DeepSeek-V3.2-Speciale | no disponible en la informacion | no disponible | no disponible en la informacion | mencionado en la model card, sin enlace en la informacion disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar este modelo con alternativas de otros fabricantes (por ejemplo, modelos densos o MoE de tamano similar). No disponible.
@@ -105,10 +105,10 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KINOX12/DeepSeek-V3.2
+- Modelo en Hugging Face: https://huggingface.co/KINOX12/DeepSeek-V3.2
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp-Base
 - Informe tecnico citado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V3.2/blob/main/assets/paper.pdf
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial: https://www.deepseek.com/
 - Chat oficial: https://chat.deepseek.com/
 - Repositorio en GitHub: https://github.com/deepseek-ai/DeepSeek-V2

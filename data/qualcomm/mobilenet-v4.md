@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MobileNet-v4 es una red neuronal convolucional (CNN) para clasificacion de imagenes, publicada en HuggingFace por Qualcomm como parte de su catalogo Qualcomm AI Hub Models. El modelo clasifica imagenes del dataset ImageNet y tambien puede utilizarse como backbone para construir modelos mas complejos orientados a casos de uso concretos (deteccion, segmentacion, clasificacion personalizada). Su relevancia actual no esta en el tamano, sino en el enfoque: el repositorio no distribuye pesos de investigacion, sino artefactos ya exportados y optimizados para ejecutarse sobre la NPU Hexagon de los chipsets Snapdragon y Dragonwing.
+MobileNet-v4 es una red neuronal convolucional (CNN) para clasificacion de imagenes, publicada en Hugging Face por Qualcomm como parte de su catalogo Qualcomm AI Hub Models. El modelo clasifica imagenes del dataset ImageNet y tambien puede utilizarse como backbone para construir modelos mas complejos orientados a casos de uso concretos (deteccion, segmentacion, clasificacion personalizada). Su relevancia actual no esta en el tamano, sino en el enfoque: el repositorio no distribuye pesos de investigacion, sino artefactos ya exportados y optimizados para ejecutarse sobre la NPU Hexagon de los chipsets Snapdragon y Dragonwing.
 
 Tecnicamente se trata de un modelo pequeno: 9,68 millones de parametros, entrada de 224x224 pixeles y un peso de 37,0 MB en precision float, que se reduce a 10,2 MB con cuantizacion w8a8. La model card no especifica que variante concreta de MobileNetV4 se ha exportado; el recuento de parametros es el unico dato disponible para caracterizarla. El checkpoint indicado es ImageNet y la licencia declarada es MIT.
 
@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MobileNet-v4 (qualcomm/MobileNet-v4) | 9,68 M | 224x224 | MIT | HuggingFace y Qualcomm AI Hub, con artefactos ONNX, QNN_DLC y TFLITE | Optimizado para NPU Hexagon; latencias medidas entre 0,302 y 1,733 ms |
+| MobileNet-v4 (qualcomm/MobileNet-v4) | 9,68 M | 224x224 | MIT | Hugging Face y Qualcomm AI Hub, con artefactos ONNX, QNN_DLC y TFLITE | Optimizado para NPU Hexagon; latencias medidas entre 0,302 y 1,733 ms |
 | MobileNetV3 | no disponible | no disponible | no disponible | no disponible | Familia predecesora de la misma linea, tambien orientada a dispositivos moviles |
 | EfficientNet-Lite | no disponible | no disponible | no disponible | no disponible | Alternativa habitual en vision embebida con restricciones de latencia |
 | MobileOne | no disponible | no disponible | no disponible | no disponible | Arquitectura centrada en baja latencia en dispositivo |
@@ -131,7 +131,7 @@ No se dispone de datos de rendimiento de modelos alternativos en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/MobileNet-v4
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/MobileNet-v4
 - Modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/mobilenet_v4
 - Repositorio Qualcomm AI Hub Models (entrada MobileNet-v4, v0.64.0): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/mobilenet_v4
 - Repositorio general de Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

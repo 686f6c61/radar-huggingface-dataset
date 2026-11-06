@@ -83,10 +83,10 @@ Ajustes de inferencia documentados en los ejemplos:
 
 | Modelo | Relación | Parámetros | Duración / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheGladian/LTX-2.3-uncensored-v1.4-FP8 | Este modelo (build FP8/GGUF con 3 LoRA fusionadas) | ~21,01 B | Hasta 960 fotogramas (~40 s) documentados | Desconocida | HuggingFace, 0 descargas, 0 likes |
-| Lightricks/LTX-2.3 | Modelo base original, sin fine-tunes ni descensurado | No disponible | No disponible | No disponible | HuggingFace |
-| TenStrip/LTX2.3-10Eros | Fine-tune NSFW fusionado en este build a fuerza 1.0 | No disponible | No disponible | No disponible | HuggingFace |
-| TenStrip/LTX2.3_DMD_Lora | LoRA destilada DMD fusionada en este build a fuerza 1.0 | No disponible | No disponible | No disponible | HuggingFace |
+| TheGladian/LTX-2.3-uncensored-v1.4-FP8 | Este modelo (build FP8/GGUF con 3 LoRA fusionadas) | ~21,01 B | Hasta 960 fotogramas (~40 s) documentados | Desconocida | Hugging Face, 0 descargas, 0 likes |
+| Lightricks/LTX-2.3 | Modelo base original, sin fine-tunes ni descensurado | No disponible | No disponible | No disponible | Hugging Face |
+| TenStrip/LTX2.3-10Eros | Fine-tune NSFW fusionado en este build a fuerza 1.0 | No disponible | No disponible | No disponible | Hugging Face |
+| TenStrip/LTX2.3_DMD_Lora | LoRA destilada DMD fusionada en este build a fuerza 1.0 | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de otros modelos abiertos de generación de vídeo de la misma categoría (por ejemplo alternativas tipo Wan, HunyuanVideo o CogVideoX) en la información proporcionada, por lo que no se incluye comparación numérica con ellos.
 
@@ -106,7 +106,7 @@ No se dispone de datos de otros modelos abiertos de generación de vídeo de la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheGladian/LTX-2.3-uncensored-v1.4-FP8
+- Repositorio en Hugging Face: https://huggingface.co/TheGladian/LTX-2.3-uncensored-v1.4-FP8
 - Modelo base oficial: https://huggingface.co/Lightricks/LTX-2.3
 - Fine-tune Eros10 (fusionado): https://huggingface.co/TenStrip/LTX2.3-10Eros
 - LoRA destilada DMD (fusionada): https://huggingface.co/TenStrip/LTX2.3_DMD_Lora

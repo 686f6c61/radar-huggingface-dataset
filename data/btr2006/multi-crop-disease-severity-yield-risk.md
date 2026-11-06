@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio HuggingFace `btr2006/Multi-Crop-Disease-Severity-Yield-Risk` es un espacio publicado por el usuario `btr2006` bajo licencia MIT. No incluye una model card descriptiva ni archivos de peso, y su tamaño de repositorio es de 0.0 GB, lo que sugiere que se trata de un repositorio vacío o sin contenido técnico cargado.
+El repositorio Hugging Face `btr2006/Multi-Crop-Disease-Severity-Yield-Risk` es un espacio publicado por el usuario `btr2006` bajo licencia MIT. No incluye una model card descriptiva ni archivos de peso, y su tamaño de repositorio es de 0.0 GB, lo que sugiere que se trata de un repositorio vacío o sin contenido técnico cargado.
 
 El nombre del proyecto apunta a una posible aplicación en el ámbito agrícola, relacionada con la detección de enfermedades en cultivos, la evaluación de severidad y la estimación de riesgo de rendimiento. Sin embargo, no se ha publicado ninguna información técnica (arquitectura, parámetros, datos de entrenamiento o pipelines) que confirme qué tipo de modelo es o si existe realmente.
 
@@ -56,4 +56,4 @@ No disponible: no se puede realizar una comparacion porque se desconoce la arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/btr2006/Multi-Crop-Disease-Severity-Yield-Risk
+- Hugging Face: https://huggingface.co/btr2006/Multi-Crop-Disease-Severity-Yield-Risk

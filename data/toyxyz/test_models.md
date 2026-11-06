@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`toyxyz/test_models` es un repositorio de HuggingFace que no contiene un modelo de lenguaje, sino un adaptador LoRA para generación de imágenes. En concreto, aloja `asian_beuty_3000.safetensors`, un LoRA entrenado durante 3.000 pasos sobre el modelo base Krea-2-Raw con un conjunto de 500 imágenes (450 de entrenamiento y 50 de validación) de retratos de mujeres de Asia oriental. El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+`toyxyz/test_models` es un repositorio de Hugging Face que no contiene un modelo de lenguaje, sino un adaptador LoRA para generación de imágenes. En concreto, aloja `asian_beuty_3000.safetensors`, un LoRA entrenado durante 3.000 pasos sobre el modelo base Krea-2-Raw con un conjunto de 500 imágenes (450 de entrenamiento y 50 de validación) de retratos de mujeres de Asia oriental. El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
-El interés técnico del artefacto es limitado y muy acotado: se trata de un ajuste fino de estilo/sujeto sobre un modelo de difusión del que la model card no ofrece ficha técnica (arquitectura, número de parámetros ni resolución nativa). No hay información sobre la licencia del adaptador, los idiomas de los prompts soportados ni el pipeline de HuggingFace asociado. El nombre del repositorio (`test_models`) y el hecho de que acumule 0 descargas y 0 likes sugieren un uso experimental o de prueba por parte del autor, no un artefacto destinado a producción.
+El interés técnico del artefacto es limitado y muy acotado: se trata de un ajuste fino de estilo/sujeto sobre un modelo de difusión del que la model card no ofrece ficha técnica (arquitectura, número de parámetros ni resolución nativa). No hay información sobre la licencia del adaptador, los idiomas de los prompts soportados ni el pipeline de Hugging Face asociado. El nombre del repositorio (`test_models`) y el hecho de que acumule 0 descargas y 0 likes sugieren un uso experimental o de prueba por parte del autor, no un artefacto destinado a producción.
 
 La relevancia práctica es, por tanto, la de un ejemplo de LoRA de difusión listo para cargar junto a Krea-2-Raw y reproducir el efecto mostrado en la imagen comparativa (con y sin LoRA) que incluye la model card. Cualquier evaluación seria requiere descargar el modelo base, verificar su licencia por separado y validar el comportamiento del adaptador con prompts propios.
 
@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye otros LoRAs comparables s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toyxyz/test_models
+- Repositorio en Hugging Face: https://huggingface.co/toyxyz/test_models
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Archivo del adaptador: `krea2/asian_beuty_3000.safetensors` (dentro del repositorio)
 - Imagen comparativa con y sin LoRA: `krea2/examples/asian_beauty_3000_comparison.png` (dentro del repositorio)

@@ -98,6 +98,6 @@ La diferencia principal frente a MiniLM-L6-v2 y DistilBERT-base es la especializ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rolf-mozilla/minilm-address-autofill-hint
+- Modelo en Hugging Face: https://huggingface.co/rolf-mozilla/minilm-address-autofill-hint
 - Repositorio de referencia mencionado en la model card: ml-form-autofill (sin URL publica en la informacion disponible)
 - Resultados de busqueda web: no se ha recuperado ningun enlace tecnico relevante sobre este modelo; las busquedas devolvieron exclusivamente contenido no relacionado y sin valor tecnico, por lo que no se incluye.

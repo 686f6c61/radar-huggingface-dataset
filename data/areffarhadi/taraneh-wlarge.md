@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taraneh-WLarge es un modelo de reconocimiento automatico del habla (ASR) en persa, desarrollado por Aref Farhadipour (Universidad de Zurich) y publicado en HuggingFace bajo el identificador areffarhadi/Taraneh-WLarge. Se trata del miembro de mayor tamano de la familia Taraneh, un conjunto de cinco modelos ASR en persa ajustados sobre aproximadamente 1.560 horas de audio. El checkpoint parte de openai/whisper-large-v3 y hereda su arquitectura encoder-decoder de tipo transformer.
+Taraneh-WLarge es un modelo de reconocimiento automatico del habla (ASR) en persa, desarrollado por Aref Farhadipour (Universidad de Zurich) y publicado en Hugging Face bajo el identificador areffarhadi/Taraneh-WLarge. Se trata del miembro de mayor tamano de la familia Taraneh, un conjunto de cinco modelos ASR en persa ajustados sobre aproximadamente 1.560 horas de audio. El checkpoint parte de openai/whisper-large-v3 y hereda su arquitectura encoder-decoder de tipo transformer.
 
 El modelo resuelve la transcripcion de voz en persa (farsi) en dominios diversos: habla espontanea, medios de comunicacion, YouTube e incluso canto, un escenario tradicionalmente dificil para los sistemas ASR. Su relevancia actual radica en que ofrece tasas de error competitivas en persa con una licencia MIT permisiva para uso comercial, algo poco frecuente en modelos ASR especializados en idiomas de recursos limitados.
 
@@ -77,8 +77,8 @@ La model card indica que la comparativa completa de los cinco modelos de la fami
 
 | Modelo | Base | Idiomas | Licencia | Resultados publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| Taraneh-WLarge | openai/whisper-large-v3 | persa (fa) | MIT | FLEURS 3,86 % WER; Common Voice 3,34 % WER | HuggingFace, 0 descargas |
-| openai/whisper-large-v3 | - | multilingue (99 idiomas) | MIT | no disponible en esta informacion para persa | HuggingFace, ampliamente usado |
+| Taraneh-WLarge | openai/whisper-large-v3 | persa (fa) | MIT | FLEURS 3,86 % WER; Common Voice 3,34 % WER | Hugging Face, 0 descargas |
+| openai/whisper-large-v3 | - | multilingue (99 idiomas) | MIT | no disponible en esta informacion para persa | Hugging Face, ampliamente usado |
 | Otros modelos de la familia Taraneh | openai/whisper (varias tallas) | persa (fa) | no disponible | comparativa completa en el paper | no disponible en esta informacion |
 
 No se dispone de datos de benchmarks de alternativas concretas de ASR en persa dentro de la informacion proporcionada, por lo que la comparacion cuantitativa directa no esta disponible.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks de alternativas concretas de ASR en persa d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/areffarhadi/Taraneh-WLarge
+- Modelo en Hugging Face: https://huggingface.co/areffarhadi/Taraneh-WLarge
 - Repositorio de codigo, manifiestos, normalizacion e inferencia: https://github.com/areffarhadi/persian-asr
 - PDF del paper (Aref Farhadipour, Taraneh-ASR: Scaling Persian Speech Recognition and Forced Alignment Across Singing and Conversational Domains, Universidad de Zurich): https://github.com/areffarhadi/persian-asr/blob/main/ArefFarhadi-TaranehASR.pdf
 - Modelo base: https://huggingface.co/openai/whisper-large-v3

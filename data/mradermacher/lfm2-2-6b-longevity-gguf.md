@@ -4,7 +4,7 @@
 
 LFM2-2.6B-Longevity es un modelo de lenguaje compacto de 2.600 millones de parámetros desarrollado por Liquid AI, una empresa especializada en arquitecturas eficientes para despliegue en dispositivos. Este modelo pertenece a la segunda generación de Liquid Foundation Models (LFM2), que según el fabricante ofrece un rendimiento de inferencia significativamente superior a alternativas como Qwen3 y Gemma 3 en CPU, con una velocidad de decode y prefill hasta un 200% mayor. La variante "Longevity" está pensada para ciclos de vida prolongados en entornos de producción, y la versión aquí descrita es una cuantización GGUF realizada por mradermacher, que facilita su ejecución en hardware modesto.
 
-El modelo base está disponible en HuggingFace bajo la licencia lfm1.0, y la cuantización GGUF permite su uso con herramientas como llama.cpp, Ollama o LM Studio. Con solo 2,6B de parámetros, es adecuado para tareas de generación de texto, razonamiento básico y asistencia conversacional en inglés, con un consumo de recursos reducido. Su relevancia actual radica en la tendencia hacia modelos pequeños y eficientes que puedan ejecutarse en dispositivos edge, móviles o CPUs sin GPU dedicada.
+El modelo base está disponible en Hugging Face bajo la licencia lfm1.0, y la cuantización GGUF permite su uso con herramientas como llama.cpp, Ollama o LM Studio. Con solo 2,6B de parámetros, es adecuado para tareas de generación de texto, razonamiento básico y asistencia conversacional en inglés, con un consumo de recursos reducido. Su relevancia actual radica en la tendencia hacia modelos pequeños y eficientes que puedan ejecutarse en dispositivos edge, móviles o CPUs sin GPU dedicada.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se dispone de datos de rendimiento comparativo para este modelo. Como referen
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/LFM2-2.6B-Longevity-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2-2.6B-Longevity
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/LFM2-2.6B-Longevity-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2-2.6B-Longevity
 - Blog de Liquid AI sobre LFM2-2.6B: https://www.liquid.ai/blog/introducing-lfm2-2-6b-redefining-efficiency-in-language-models
 - Blog de Liquid AI sobre la serie LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models
 - Technical report de LFM2 (arXiv): https://arxiv.org/html/2511.23404v1

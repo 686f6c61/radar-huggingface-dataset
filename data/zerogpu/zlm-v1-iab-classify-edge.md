@@ -82,13 +82,13 @@ Ninguno de estos resultados esta verificado de forma independiente (`verified: f
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| zlm-v1-iab-classify-edge (ZeroGPU) | 24,1 M | 128 tokens | apache-2.0 | ONNX int8 en HuggingFace, ejecucion en dispositivo | F1 tier-2 0,4062; 66% de victorias frente a GPT-5.4-nano |
+| zlm-v1-iab-classify-edge (ZeroGPU) | 24,1 M | 128 tokens | apache-2.0 | ONNX int8 en Hugging Face, ejecucion en dispositivo | F1 tier-2 0,4062; 66% de victorias frente a GPT-5.4-nano |
 | GPT-5.4-nano | no disponible | no disponible | propietaria | solo API | F1 0,375 sobre etiquetas humanas independientes |
-| zlm-v1-iab-domain-classifier (ZeroGPU) | no disponible | no disponible | no disponible | HuggingFace | clasifica a partir del dominio, sin ver la pagina; entrenado con ~1 M de dominios etiquetados por un LLM maestro |
+| zlm-v1-iab-domain-classifier (ZeroGPU) | no disponible | no disponible | no disponible | Hugging Face | clasifica a partir del dominio, sin ver la pagina; entrenado con ~1 M de dominios etiquetados por un LLM maestro |
 
 El unico rival con datos comparables aportados por el autor es GPT-5.4-nano. No se dispone de resultados de otros clasificadores IAB abiertos en la informacion proporcionada, por lo que la comparativa con alternativas de tamano similar queda como "no disponible".
 
-Nota de discrepancia: la documentacion web de ZeroGPU describe en una de sus paginas un clasificador IAB de "90M de parametros" y "mas de 50 idiomas", cifras que no coinciden con la model card del repositorio de HuggingFace (24,1 M de parametros y solo ingles). Es posible que esa pagina describa otro modelo de la familia o una version de API distinta; para este modelo concreto deben tomarse como validas las cifras de la model card (24,1 M, idioma en).
+Nota de discrepancia: la documentacion web de ZeroGPU describe en una de sus paginas un clasificador IAB de "90M de parametros" y "mas de 50 idiomas", cifras que no coinciden con la model card del repositorio de Hugging Face (24,1 M de parametros y solo ingles). Es posible que esa pagina describa otro modelo de la familia o una version de API distinta; para este modelo concreto deben tomarse como validas las cifras de la model card (24,1 M, idioma en).
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ Nota de discrepancia: la documentacion web de ZeroGPU describe en una de sus pag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZeroGPU/zlm-v1-iab-classify-edge
+- Modelo en Hugging Face: https://huggingface.co/ZeroGPU/zlm-v1-iab-classify-edge
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Documentacion de la API del modelo: https://docs.zerogpu.ai/api-reference/models/zlm-v1-iab-classify-edge
 - Documentacion de clasificacion de texto de ZeroGPU: https://docs.zerogpu.ai/docs/text-classification

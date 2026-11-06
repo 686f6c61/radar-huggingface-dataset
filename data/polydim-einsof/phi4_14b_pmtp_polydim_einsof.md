@@ -25,7 +25,7 @@ La relevancia del proyecto es discutible: se publica como investigación indepen
 
 El adaptador se describe como una matriz de proyección W en IEEE-754 FP64 que mapea el espacio latente del modelo base de dimensión 5120 a 2048, con la restricción de que las columnas resultantes sean ortonormales (variedad de Stiefel). La model card afirma un defecto máximo de ortogonalidad de 4,26e-09 y un error de norma de Neumaier inferior a 1e-15, lo que sugiere un cálculo numérico en doble precisión. No se especifica cómo se obtuvo dicha matriz: no hay información sobre datos de entrenamiento, número de tokens, función de pérdida ni proceso de ajuste.
 
-El "protocolo Alan Turing" expone un parámetro `turing_depth` que controla el número de iteraciones de lo que el autor llama "contracción riemanniana" y "autocrítica adversarial". Los rangos declarados son: 0 (bypass identidad), 1 (reflejo rápido, una proyección isométrica), 2-20 (deliberación red-team) y 21-50 (prueba formal de teoremas y verificación antisicofántica). No se aporta ninguna descripción algorítmica de estas iteraciones, ni código de entrenamiento, ni validación independiente. El pipeline declarado en HuggingFace es `feature-extraction`, no `text-generation`, lo que es coherente con un adaptador que transforma representaciones ocultas.
+El "protocolo Alan Turing" expone un parámetro `turing_depth` que controla el número de iteraciones de lo que el autor llama "contracción riemanniana" y "autocrítica adversarial". Los rangos declarados son: 0 (bypass identidad), 1 (reflejo rápido, una proyección isométrica), 2-20 (deliberación red-team) y 21-50 (prueba formal de teoremas y verificación antisicofántica). No se aporta ninguna descripción algorítmica de estas iteraciones, ni código de entrenamiento, ni validación independiente. El pipeline declarado en Hugging Face es `feature-extraction`, no `text-generation`, lo que es coherente con un adaptador que transforma representaciones ocultas.
 
 ## Capacidades
 
@@ -65,17 +65,17 @@ No hay datos de MMLU, HumanEval, GSM8K ni comparación con Phi-4 base u otros mo
 - VRAM para el modelo base: Phi-4 (14B) requiere aproximadamente 28 GB en FP16, 14-16 GB en cuantización de 8 bits y 8-10 GB en 4 bits, según estimaciones estándar para transformers densos de ese tamaño. El adaptador en FP64 añade una matriz de 5120×2048 en doble precisión (unos 84 MB), despreciable frente a los pesos del modelo.
 - GPU recomendadas: A100 40 GB o H100 para FP16 sin cuantizar; RTX 4090 (24 GB) para FP16 con offloading parcial o cuantización de 8 bits; RTX 3090/4080 para cuantización de 4 bits.
 - Cabe en GPU de consumo: sí, con cuantización de 4 bits en GPUs de 8-12 GB, aunque el adaptador FP64 puede requerir conversión a FP32/FP16 para integrarse en pipelines estándar.
-- Opciones de despliegue: Ollama (se incluye `Modelfile`), HuggingFace Transformers con `peft` o carga manual del adaptador, y potencialmente vLLM o TGI si se convierte el adaptador a un formato compatible (no documentado).
+- Opciones de despliegue: Ollama (se incluye `Modelfile`), Hugging Face Transformers con `peft` o carga manual del adaptador, y potencialmente vLLM o TGI si se convierte el adaptador a un formato compatible (no documentado).
 - Latencia y throughput: solo se declaran latencias del adaptador (44,73 ms a profundidad 1, 65,15 ms a profundidad 10); no hay datos de throughput de generación del modelo base con el adaptador aplicado.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| phi4_14b_PMTP_polydim_einsof | 14B (base) + adaptador | No disponible (base: 16 384) | Apache 2.0 | HuggingFace, 0 descargas | Adaptador geométrico sobre Phi-4 |
-| microsoft/phi-4 | 14B | 16 384 | MIT | HuggingFace, ampliamente usado | Transformer denso con entrenamiento en datos sintéticos y curados |
-| Qwen2.5-14B | 14B | 32 768 (128K en variantes) | Apache 2.0 | HuggingFace, muy usado | Transformer denso multilingüe con tool calling |
-| Llama 3.1 8B | 8B | 131 072 | Llama 3.1 Community License | HuggingFace, muy usado | Transformer denso con soporte multilingüe y tool calling |
+| phi4_14b_PMTP_polydim_einsof | 14B (base) + adaptador | No disponible (base: 16 384) | Apache 2.0 | Hugging Face, 0 descargas | Adaptador geométrico sobre Phi-4 |
+| microsoft/phi-4 | 14B | 16 384 | MIT | Hugging Face, ampliamente usado | Transformer denso con entrenamiento en datos sintéticos y curados |
+| Qwen2.5-14B | 14B | 32 768 (128K en variantes) | Apache 2.0 | Hugging Face, muy usado | Transformer denso multilingüe con tool calling |
+| Llama 3.1 8B | 8B | 131 072 | Llama 3.1 Community License | Hugging Face, muy usado | Transformer denso con soporte multilingüe y tool calling |
 
 La comparación es asimétrica: el adaptador no publica métricas de rendimiento, por lo que no puede evaluarse frente a Phi-4 base ni a alternativas. Su interés es exclusivamente de investigación geométrica, no de rendimiento en tareas estándar.
 
@@ -92,7 +92,7 @@ La comparación es asimétrica: el adaptador no publica métricas de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Polydim-Einsof/phi4_14b_PMTP_polydim_einsof
+- Modelo en Hugging Face: https://huggingface.co/Polydim-Einsof/phi4_14b_PMTP_polydim_einsof
 - Modelo base: https://huggingface.co/microsoft/phi-4
 - DOI principal (Zenodo/CERN): https://doi.org/10.5281/zenodo.21136742
 - DOI secundario (Zenodo/CERN): https://doi.org/10.5281/zenodo.21209973

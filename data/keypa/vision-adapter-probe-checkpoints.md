@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keypa/vision-adapter-probe-checkpoints` es un repositorio de checkpoints de entrenamiento publicado en HuggingFace por el usuario `keypa`. No contiene un modelo listo para usar, sino el resultado de una sonda de alineacion vision-lenguaje: un proyector ligero de aproximadamente 25 millones de parametros que proyecta embeddings visuales de MoonViT-V2 (4096 dimensiones) al espacio oculto (2048 dimensiones) del backbone congelado `Qwen/Qwen3.5-2B`. Durante el entrenamiento solo se actualizan los pesos del proyector; tanto la torre de vision como el modelo de lenguaje permanecen congelados.
+`keypa/vision-adapter-probe-checkpoints` es un repositorio de checkpoints de entrenamiento publicado en Hugging Face por el usuario `keypa`. No contiene un modelo listo para usar, sino el resultado de una sonda de alineacion vision-lenguaje: un proyector ligero de aproximadamente 25 millones de parametros que proyecta embeddings visuales de MoonViT-V2 (4096 dimensiones) al espacio oculto (2048 dimensiones) del backbone congelado `Qwen/Qwen3.5-2B`. Durante el entrenamiento solo se actualizan los pesos del proyector; tanto la torre de vision como el modelo de lenguaje permanecen congelados.
 
 El propio autor lo describe explicitamente como una "sonda de alineacion (estudio de grokking), no un modelo publicado". Su interes, por tanto, es metodologico y de investigacion: documenta la trayectoria de perdida de un proyector de tipo *hourglass*, el uso de *gradient checkpointing* adaptativo por presupuesto de `B·L²` y un pipeline de guardado de checkpoints reanudables. El repositorio ocupa 1,2 GB y aloja estados completos de entrenamiento (proyector, optimizador, escalador, monitor, RNG y metadatos de plan), no pesos finales optimizados para inferencia.
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keypa/vision-adapter-probe-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/keypa/vision-adapter-probe-checkpoints
 - Model card original (contenido de referencia): incluida en la pagina anterior
 - Repositorio de entrenamiento y `docs/NEXT_STEPS.md`: referenciados en la model card, pero sin URL publica en la informacion disponible
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo. Las fuentes devueltas (base44.com, app.base44.com, base-44.com, anuncio de Binance Alpha sobre ANON y BEETS, y un perfil de Newgrounds) no guardan relacion con este repositorio y se descartan.

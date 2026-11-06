@@ -12,7 +12,7 @@ Su relevancia practica es doble: por un lado, ofrece una via de ejecucion local 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); campo `lfm2_moe` en HuggingFace, soportado por MLX-VLM |
+| Arquitectura | Transformer con mezcla de expertos (MoE); campo `lfm2_moe` en Hugging Face, soportado por MLX-VLM |
 | Parametros totales | 23.971.587.712 (≈23,97 mil millones) |
 | Parametros activos | no disponible (la nomenclatura A2B sugiere ~2.000 millones activos, sin confirmacion en la informacion proporcionada) |
 | Longitud de contexto | 131.072 tokens (segun la configuracion del modelo de origen) |
@@ -22,7 +22,7 @@ Su relevancia practica es doble: por un lado, ofrece una via de ejecucion local 
 | Formato de pesos | safetensors (formato MLX, libreria `mlx`, pipeline `text-generation`) |
 | Tamano del repositorio | 13,5 GB (pesos: 13,49 GB decimal) |
 | Modelo base | lq-preview/LFM2.5-24B-A2B-Preview (revision `f772950ce6f17d35af5469d00334b61a9c2fc034`) |
-| Fecha de creacion del repo | 2026-10-13 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repo | 2026-10-13 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparado frente a alternativas de la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-4bit
+- Repositorio Hugging Face: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-4bit
 - Espejo en mlx-community: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-4bit
 - Modelo base: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - MLX-VLM, PR #2505 (soporte de LFM2.5): https://github.com/Blaizzy/mlx-vlm/pull/2505

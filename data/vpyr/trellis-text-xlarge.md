@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TRELLIS Text XL es una variante del modelo TRELLIS, un sistema generativo de objetos 3D condicionado por texto. El modelo fue introducido en el paper *Structured 3D Latents for Scalable and Versatile 3D Generation* (arXiv:2412.01506) y esta publicacion en HuggingFace corresponde al usuario vpyr, aunque el proyecto original es de Microsoft. La variante Text XL es la version de tamano XL, es decir, el modelo mas grande de la familia TRELLIS orientado a generar geometria 3D a partir de descripciones textuales en ingles.
+TRELLIS Text XL es una variante del modelo TRELLIS, un sistema generativo de objetos 3D condicionado por texto. El modelo fue introducido en el paper *Structured 3D Latents for Scalable and Versatile 3D Generation* (arXiv:2412.01506) y esta publicacion en Hugging Face corresponde al usuario vpyr, aunque el proyecto original es de Microsoft. La variante Text XL es la version de tamano XL, es decir, el modelo mas grande de la familia TRELLIS orientado a generar geometria 3D a partir de descripciones textuales en ingles.
 
-Frente a otros enfoques que predicen geometria directamente, TRELLIS trabaja sobre latentes estructurados 3D, lo que prioriza la coherencia geometrica y la estabilidad de los resultados. El repositorio de HuggingFace tiene un peso de 4.1 GB y se distribuye bajo licencia MIT. En la informacion disponible no se detallan parametros totales, contexto ni cuantizaciones, por lo que parte de las especificaciones deben marcarse como no disponibles.
+Frente a otros enfoques que predicen geometria directamente, TRELLIS trabaja sobre latentes estructurados 3D, lo que prioriza la coherencia geometrica y la estabilidad de los resultados. El repositorio de Hugging Face tiene un peso de 4.1 GB y se distribuye bajo licencia MIT. En la informacion disponible no se detallan parametros totales, contexto ni cuantizaciones, por lo que parte de las especificaciones deben marcarse como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -15,7 +15,7 @@ Frente a otros enfoques que predicen geometria directamente, TRELLIS trabaja sob
 | Parametros activos | No aplica (no es un modelo Mixture of Experts) |
 | Longitud de contexto | No aplica (modelo de generacion 3D, no gestiona ventana de contexto textual) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Ingles (etiqueta `en` en HuggingFace) |
+| Idiomas soportados | Ingles (etiqueta `en` en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | No disponible |
 
@@ -66,7 +66,7 @@ No disponible. En la informacion proporcionada no se incluyen benchmarks ni comp
 - La informacion disponible no incluye detalles sobre sesgos conocidos ni evaluaciones de seguridad. Las salidas deben revisarse antes de su uso en produccion.
 - Al ser un modelo generativo de geometria, existe riesgo de alucinacion: puede producir objetos con formas inexactas, artefactos o detalles que no estan justificados por el prompt.
 - No se han publicado benchmarks ni evaluaciones de calidad en la informacion disponible, por lo que el rendimiento real en casos de uso concretos no esta validado.
-- El repositorio de HuggingFace bajo el usuario vpyr tiene 0 descargas y 0 me gusta. Se recomienda verificar si esta copia es fiable y considerar usar el repositorio original de Microsoft.
+- El repositorio de Hugging Face bajo el usuario vpyr tiene 0 descargas y 0 me gusta. Se recomienda verificar si esta copia es fiable y considerar usar el repositorio original de Microsoft.
 - La licencia MIT permite uso comercial, pero se debe revisar la licencia del codigo del framework y las dependencias utilizadas antes de desplegar el sistema.
 
 ## Enlaces

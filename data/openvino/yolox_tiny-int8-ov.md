@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOX-Tiny INT8 OV es una versión optimizada del detector de objetos YOLOX-Tiny, convertida al formato Intermediate Representation (IR) de OpenVINO y cuantizada a INT8 tanto en pesos como en activaciones. El modelo original es YOLOX-Tiny, desarrollado en el ecosistema OpenMMLab (MMDetection), y esta versión concreta ha sido producida por Geti, la plataforma de Intel para etiquetado y entrenamiento de modelos de visión. El repositorio lo publica la organización OpenVINO en HuggingFace.
+YOLOX-Tiny INT8 OV es una versión optimizada del detector de objetos YOLOX-Tiny, convertida al formato Intermediate Representation (IR) de OpenVINO y cuantizada a INT8 tanto en pesos como en activaciones. El modelo original es YOLOX-Tiny, desarrollado en el ecosistema OpenMMLab (MMDetection), y esta versión concreta ha sido producida por Geti, la plataforma de Intel para etiquetado y entrenamiento de modelos de visión. El repositorio lo publica la organización OpenVINO en Hugging Face.
 
 El modelo resuelve detección de objetos genérica en imágenes dentro del pipeline `object-detection`. Su relevancia radica en que ofrece un artefacto listo para desplegar en inferencia sobre hardware Intel (CPU, GPU integrada, NPU y aceleradores) sin necesidad de convertir ni cuantizar manualmente: el formato IR con compresión INT8 reduce el coste computacional y de memoria respecto al modelo en punto flotante, lo que lo hace apto para entornos de borde y AI PCs.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Formato | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOX-Tiny INT8 OV (este) | YOLOX-Tiny | OpenVINO IR | INT8 (PTQ) | Apache-2.0 | HuggingFace (OpenVINO) |
+| YOLOX-Tiny INT8 OV (este) | YOLOX-Tiny | OpenVINO IR | INT8 (PTQ) | Apache-2.0 | Hugging Face (OpenVINO) |
 | YOLOX-Tiny original | YOLOX-Tiny | PyTorch (MMDetection) | FP32 | Apache-2.0 | GitHub OpenMMLab |
 | Otras variantes YOLOX (S, M, L, X) | YOLOX | PyTorch / OpenVINO IR | FP32 / INT8 | Apache-2.0 | MMDetection / OpenVINO |
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento (mAP, latencia) para establecer una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/yolox_tiny-int8-ov
-- Organización OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/yolox_tiny-int8-ov
+- Organización OpenVINO en Hugging Face: https://huggingface.co/OpenVINO
 - Modelo original YOLOX en MMDetection: https://github.com/open-mmlab/mmdetection/tree/main/configs/yolox
 - Geti (plataforma de Intel): https://github.com/open-edge-platform/geti
 - Documentación del formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

@@ -49,14 +49,14 @@ No se han documentado casos de uso especificos para este modelo. Dada su natural
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. Dado que es un fine-tuning reciente con muy pocas descargas, es probable que el autor no haya realizado una evaluacion estandarizada publica.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. Dado que es un fine-tuning reciente con muy pocas descargas, es probable que el autor no haya realizado una evaluacion estandarizada publica.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 4B parametros, una cuantizacion de 4 bits (por ejemplo, GGUF Q4_K_M) requeriria aproximadamente 2.5-3 GB de VRAM. Con 8 bits, unos 4-5 GB. Con precision FP16, alrededor de 8 GB.
 - GPU recomendadas: una RTX 3060 de 12 GB o superior seria suficiente para inferencia con cuantizacion. Para FP16, una RTX 4090 o A100 seria adecuada.
 - Compatibilidad con consumer GPU: si, el modelo cabe en GPUs de consumo con cuantizacion, pero no se han publicado archivos GGUF en el repositorio (solo safetensors), por lo que habria que convertirlos manualmente.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Transformers de HuggingFace. Dado que el formato es safetensors, se puede cargar directamente con Transformers.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Transformers de Hugging Face. Dado que el formato es safetensors, se puede cargar directamente con Transformers.
 - Latencia y throughput: no hay datos publicados. Para un modelo de 4B en una GPU moderna, se espera una latencia de decenas de milisegundos por token, pero depende del hardware y la cuantizacion.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa se basa en caracteristicas estructurales, ya que no hay datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WilliamSheltonWu/confessionRL-Qwen3-4B
+- Repositorio Hugging Face: https://huggingface.co/WilliamSheltonWu/confessionRL-Qwen3-4B
 - Paper tecnico de Qwen3: https://arxiv.org/html/2505.09388v1
 - Guia de uso de Qwen3 en vLLM: https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.html
 - Pagina de Qwen3-4B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b

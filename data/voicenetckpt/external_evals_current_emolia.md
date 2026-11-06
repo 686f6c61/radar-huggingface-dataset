@@ -2,9 +2,9 @@
 
 ## Resumen
 
-VoiceNetCkpt/external_evals_current_emolia es un checkpoint publicado por el usuario de HuggingFace VoiceNetCkpt dentro de su serie de experimentos VoiceCLAP. Según su model card, el repositorio contiene los pesos finales de una ejecución de entrenamiento junto con los ficheros de configuración y los resultados de evaluación de esa misma ejecución; quedan fuera las épocas intermedias, el estado del optimizador y los registros de entrenamiento.
+VoiceNetCkpt/external_evals_current_emolia es un checkpoint publicado por el usuario de Hugging Face VoiceNetCkpt dentro de su serie de experimentos VoiceCLAP. Según su model card, el repositorio contiene los pesos finales de una ejecución de entrenamiento junto con los ficheros de configuración y los resultados de evaluación de esa misma ejecución; quedan fuera las épocas intermedias, el estado del optimizador y los registros de entrenamiento.
 
-La información pública es mínima: no se declara licencia, idiomas, pipeline, arquitectura ni rendimiento. Los metadatos de HuggingFace indican un tamaño de repositorio de 0,2 GB y las etiquetas "voiceclap", "checkpoint" y "region:us", mientras que la propia model card describe 1493 archivos y 0,8 GB, una discrepancia que conviene verificar antes de cualquier uso.
+La información pública es mínima: no se declara licencia, idiomas, pipeline, arquitectura ni rendimiento. Los metadatos de Hugging Face indican un tamaño de repositorio de 0,2 GB y las etiquetas "voiceclap", "checkpoint" y "region:us", mientras que la propia model card describe 1493 archivos y 0,8 GB, una discrepancia que conviene verificar antes de cualquier uso.
 
 Por el nombre y las etiquetas, el artefacto parece el resultado de una evaluación externa ("external_evals") sobre un modelo de la familia VoiceCLAP, probablemente ligado al preentrenamiento contrastivo audio-texto; sin embargo, esto es una inferencia a partir del nombre y la model card no la confirma. Su relevancia actual es la de un artefacto de investigación reproducible dentro del índice de checkpoints de VoiceCLAP, no la de un modelo listo para producción.
 
@@ -21,7 +21,7 @@ Por el nombre y las etiquetas, el artefacto parece el resultado de una evaluaci�
 | Licencia | no disponible |
 | Formato de pesos | no disponible (se citan "pesos finales" y ficheros de configuración, sin especificar formato) |
 | Autor | VoiceNetCkpt |
-| Tamaño del repositorio | 0,2 GB según los metadatos de HuggingFace; 0,8 GB según la model card |
+| Tamaño del repositorio | 0,2 GB según los metadatos de Hugging Face; 0,8 GB según la model card |
 | Número de archivos | 1493 según la model card |
 | Fecha de creación | 2026-10-11 |
 | Última actualización | 2026-10-11 |
@@ -71,8 +71,8 @@ No es posible establecer una comparativa rigurosa: se desconoce la arquitectura,
 
 | Modelo | Tipo | Licencia | Disponibilidad | Comparación con external_evals_current_emolia |
 |---|---|---|---|---|
-| VoiceNetCkpt/external_evals_current_emolia | no disponible | no disponible | HuggingFace | — |
-| Familia LAION-CLAP | contrastivo audio-texto | no disponible | HuggingFace | no comparable sin especificaciones confirmadas |
+| VoiceNetCkpt/external_evals_current_emolia | no disponible | no disponible | Hugging Face | — |
+| Familia LAION-CLAP | contrastivo audio-texto | no disponible | Hugging Face | no comparable sin especificaciones confirmadas |
 | Familia AudioCLIP | contrastivo audio-imagen-texto | no disponible | repositorio público | no comparable sin especificaciones confirmadas |
 | Familia Wav2CLIP | destilación audio-texto | no disponible | repositorio público | no comparable sin especificaciones confirmadas |
 
@@ -83,7 +83,7 @@ No es posible establecer una comparativa rigurosa: se desconoce la arquitectura,
 - Sin métricas publicadas, no hay forma de estimar la calidad del modelo ni de compararlo con alternativas.
 - El repositorio no incluye estado del optimizador ni épocas intermedias, de modo que el entrenamiento no puede reanudarse desde este artefacto.
 - Las rutas locales de los ficheros de configuración han sido acortadas, lo que puede impedir reproducir el experimento de forma exacta.
-- Discrepancia de tamaño entre los metadatos de HuggingFace (0,2 GB) y la model card (0,8 GB): conviene verificar el contenido real antes de descargarlo o integrarlo en un pipeline.
+- Discrepancia de tamaño entre los metadatos de Hugging Face (0,2 GB) y la model card (0,8 GB): conviene verificar el contenido real antes de descargarlo o integrarlo en un pipeline.
 - Riesgo de fuga de datos si "emolia" identifica el conjunto de evaluación: usar este checkpoint para evaluar otros modelos de la misma serie puede producir resultados inflados.
 - cero descargas y cero "likes": no existe validación por parte de la comunidad ni informes de terceros sobre su comportamiento.
 - Al tratarse de un artefacto de investigación sin garantías, no es recomendable su uso en producción ni en sistemas que tomen decisiones automatizadas sobre personas.
@@ -91,6 +91,6 @@ No es posible establecer una comparativa rigurosa: se desconoce la arquitectura,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/external_evals_current_emolia
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/external_evals_current_emolia
 - Índice de ejecuciones de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Papers, blogs, repositorios de código y demos: no disponibles en la información proporcionada.

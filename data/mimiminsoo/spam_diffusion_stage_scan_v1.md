@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mimiminsoo/spam_diffusion_stage_scan_v1
+- Hugging Face: https://huggingface.co/mimiminsoo/spam_diffusion_stage_scan_v1
 - Paper Diffusion Policy: https://huggingface.co/papers/2303.04137 (también en arXiv: https://arxiv.org/abs/2303.04137)
 - LeRobot (GitHub): https://github.com/huggingface/lerobot
 - LeRobot Docs: https://huggingface.co/docs/lerobot/index

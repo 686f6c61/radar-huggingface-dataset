@@ -2,9 +2,9 @@
 
 ## Resumen
 
-smollm3-unit3-dpo es un ajuste fino por preferencias del modelo HuggingFaceTB/SmolLM3-3B, publicado por el usuario onethreedlee en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only con 3.075.098.624 parametros (unos 3,08 mil millones), obtenido mediante DPO (Direct Preference Optimization) sobre el checkpoint base, sin cambios arquitectonicos aparentes.
+smollm3-unit3-dpo es un ajuste fino por preferencias del modelo HuggingFaceTB/SmolLM3-3B, publicado por el usuario onethreedlee en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only con 3.075.098.624 parametros (unos 3,08 mil millones), obtenido mediante DPO (Direct Preference Optimization) sobre el checkpoint base, sin cambios arquitectonicos aparentes.
 
-El modelo ha sido entrenado con la libreria TRL (version 0.22.2) de HuggingFace, empleando el algoritmo DPO descrito en el paper de Rafailov et al. (2023). Su proposito es alinear las respuestas del modelo base con preferencias humanas, mejorando el comportamiento conversacional respecto al checkpoint original.
+El modelo ha sido entrenado con la libreria TRL (version 0.22.2) de Hugging Face, empleando el algoritmo DPO descrito en el paper de Rafailov et al. (2023). Su proposito es alinear las respuestas del modelo base con preferencias humanas, mejorando el comportamiento conversacional respecto al checkpoint original.
 
 Es relevante principalmente como ejemplo reproducible de un pipeline de alineacion con TRL y DPO sobre un modelo pequeno de ultima generacion. No obstante, la informacion publicada es muy limitada: no se detallan el dataset de preferencias, el numero de pasos, los hiperparametros ni resultados de evaluacion, y el repositorio no registra descargas ni likes en el momento de redactar esta ficha.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - INT4: en torno a 2-2,5 GB.
 - GPU recomendadas: para FP16/BF16, una NVIDIA RTX 3090, RTX 4090, A10G, L4 o A100 serian suficientes; para lotes grandes, A100 80 GB o H100 aportan margen adicional.
 - GPU de consumo: si cabe en GPUs de gama media-alta con al menos 8-12 GB de VRAM (por ejemplo RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090) usando FP16 o cuantizacion INT4/INT8; en GPUs con 6 GB seria necesaria cuantizacion agresiva.
-- Opciones de despliegue: transformers (nativo, soportado por la model card), vLLM y TGI para servidores de alto throughput, llama.cpp/Ollama previa conversion a GGUF (no publicada en el repositorio), y endpoints de HuggingFace (el repositorio esta marcado como `endpoints_compatible`).
+- Opciones de despliegue: transformers (nativo, soportado por la model card), vLLM y TGI para servidores de alto throughput, llama.cpp/Ollama previa conversion a GGUF (no publicada en el repositorio), y endpoints de Hugging Face (el repositorio esta marcado como `endpoints_compatible`).
 - Latencia y throughput estimados: no disponibles. No se aportan mediciones de tokens por segundo ni tiempos de primera respuesta.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparativos corresponden a informacion publica d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onethreedlee/smollm3-unit3-dpo
+- Modelo en Hugging Face: https://huggingface.co/onethreedlee/smollm3-unit3-dpo
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de DPO (Rafailov et al., 2023): https://huggingface.co/papers/2305.18290

@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de contexto oficial del modelo base en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-FP8
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-FP8
 - Modelo base de la ablacion (bf16): https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic
 - Variante GGUF: https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-GGUF
 - Variante NVFP4: https://huggingface.co/darrellbest/Qwen3.5-2B-Heretic-NVFP4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-quiet-harbor-85 es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario kimi000 en HuggingFace. Es un fine-tune del modelo base black-forest-labs/FLUX.2-klein-base-4B, un transformer de difusion de aproximadamente 3.875 millones de parametros (3,9B), y se distribuye empaquetado como un pipeline nativo de Diffusers (`Flux2KleinPipeline`). El checkpoint procede de un ajuste por refuerzo con AlphaGRPO y una recompensa identificada como DVReward.
+quiet-harbor-85 es un modelo de generacion de imagenes a partir de texto (text-to-image) publicado por el usuario kimi000 en Hugging Face. Es un fine-tune del modelo base black-forest-labs/FLUX.2-klein-base-4B, un transformer de difusion de aproximadamente 3.875 millones de parametros (3,9B), y se distribuye empaquetado como un pipeline nativo de Diffusers (`Flux2KleinPipeline`). El checkpoint procede de un ajuste por refuerzo con AlphaGRPO y una recompensa identificada como DVReward.
 
 El modelo se publica con la LoRA EMA (Exponential Moving Average) ya fusionada en el transformer, de modo que no requiere el uso de FAR ni de PEFT para la inferencia. El entrenamiento se realizo a 512 pixeles, con 20 pasos de rollout, escala de guiado (CFG) de 4 y el checkpoint `step_500.pt` como origen.
 
@@ -90,7 +90,7 @@ Los datos de parametros, resolucion y licencia de las alternativas no se han inc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimi000/quiet-harbor-85
+- Modelo en Hugging Face: https://huggingface.co/kimi000/quiet-harbor-85
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Documentacion de Diffusers (pipeline y carga de modelos): https://huggingface.co/docs/diffusers
 

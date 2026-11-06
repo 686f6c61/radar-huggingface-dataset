@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sentiment-model es un ajuste fino (fine-tuning) de distilbert-base-uncased publicado por el usuario mcauttam en HuggingFace, orientado a clasificacion de texto y, por el nombre del repositorio, a analisis de sentimiento. Se trata de un transformer encoder de tipo solo-codificador con 66.955.779 parametros, derivado de la destilacion de BERT-base, que reduce el numero de capas de 12 a 6 manteniendo aproximadamente el 97 % del rendimiento del modelo original en tareas de comprension del lenguaje.
+sentiment-model es un ajuste fino (fine-tuning) de distilbert-base-uncased publicado por el usuario mcauttam en Hugging Face, orientado a clasificacion de texto y, por el nombre del repositorio, a analisis de sentimiento. Se trata de un transformer encoder de tipo solo-codificador con 66.955.779 parametros, derivado de la destilacion de BERT-base, que reduce el numero de capas de 12 a 6 manteniendo aproximadamente el 97 % del rendimiento del modelo original en tareas de comprension del lenguaje.
 
 El modelo resuelve la tarea de clasificacion de secuencias cortas de texto en categorias de sentimiento, un caso de uso clasico en analitica de opinion, monitorizacion de redes sociales y priorizacion de tickets de soporte. Su relevancia practica radica en el coste de inferencia: con 67 millones de parametros ocupa unos 268 MB en fp32, cabe en cualquier GPU de consumo e incluso puede ejecutarse en CPU con latencias de milisegundos, algo que los clasificadores basados en LLM generativos no ofrecen.
 
@@ -74,14 +74,14 @@ No se han publicado resultados de benchmarks estandar (GLUE, SST-2, IMDB) en la 
 - VRAM estimada para inferencia: aproximadamente 0.27 GB en fp32 (268 MB de pesos mas activaciones), unos 0.14 GB en fp16 y alrededor de 0.07 GB en int8. En la practica, cualquier GPU con 2 GB o mas es sobradamente suficiente, incluso con batch grande.
 - GPU recomendadas: no requiere GPU dedicada. Funciona correctamente en NVIDIA T4, RTX 3060, RTX 4090, A100 o H100, aunque en estos dos ultimos el modelo desaprovechara casi toda la capacidad de computo; el uso tipico es como microservicio pequeno o en CPU.
 - Cabe en GPU de consumo: si, en cualquier GPU de consumo de los ultimos diez anos (por ejemplo GTX 1050 Ti, RTX 2060, RTX 4090), y tambien en CPU sin GPU.
-- Opciones de despliegue: pipeline de transformers; servidor de inferencia de HuggingFace (el repositorio esta etiquetado como `endpoints_compatible`); exportacion a ONNX o TorchScript para servidores de alto rendimiento; FastAPI o Flask con `pipeline("text-classification")`. No hay ficheros GGUF publicados, por lo que Ollama y llama.cpp no son vias directas (aunque es posible convertir el modelo a GGUF manualmente con herramientas externas). vLLM y TGI soportan arquitecturas encoder, pero estan pensados para modelos generativos y no aportarian ventaja apreciable a este tamano.
+- Opciones de despliegue: pipeline de transformers; servidor de inferencia de Hugging Face (el repositorio esta etiquetado como `endpoints_compatible`); exportacion a ONNX o TorchScript para servidores de alto rendimiento; FastAPI o Flask con `pipeline("text-classification")`. No hay ficheros GGUF publicados, por lo que Ollama y llama.cpp no son vias directas (aunque es posible convertir el modelo a GGUF manualmente con herramientas externas). vLLM y TGI soportan arquitecturas encoder, pero estan pensados para modelos generativos y no aportarian ventaja apreciable a este tamano.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Como referencia dimensional, un DistilBERT de 67 M de parametros suele procesar del orden de miles de secuencias por segundo en una GPU moderna con batching y del orden de decenas a cientos por segundo en CPU, pero son cifras orientativas no verificadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad | Metricas publicadas |
 |---|---|---|---|---|---|---|
-| mcauttam/sentiment-model | 66.955.779 | 512 tokens | Apache 2.0 | No documentados (base en ingles) | Repositorio HuggingFace, 0 descargas | Accuracy 0.6747 y F1 0.6699 en validacion propia |
+| mcauttam/sentiment-model | 66.955.779 | 512 tokens | Apache 2.0 | No documentados (base en ingles) | Repositorio Hugging Face, 0 descargas | Accuracy 0.6747 y F1 0.6699 en validacion propia |
 | distilbert-base-uncased (modelo base) | 66 M | 512 tokens | Apache 2.0 | Ingles | Ampliamente utilizado, muy descargado | Resultados publicados en GLUE por sus autores |
 | roberta-base (encoder de referencia) | 125 M | 514 tokens | MIT | Ingles | Ampliamente utilizado | Resultados publicados en GLUE |
 | cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 514 tokens | MIT (con condiciones de uso en investigacion) | Ingles y multilingue en variantes | Muy descargado y validado en benchmarks de sentimiento | Metricas publicadas en tareas de sentimiento en redes sociales |
@@ -105,7 +105,7 @@ La comparacion cuantitativa de rendimiento no es posible: este checkpoint no pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mcauttam/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/mcauttam/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

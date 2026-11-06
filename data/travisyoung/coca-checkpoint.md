@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coca for Multitask es un repositorio de HuggingFace publicado por el usuario travisyoung que contiene una implementación funcional de la arquitectura Coca en una configuración denominada "tiny", orientada a experimentos de aprendizaje multitarea. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida de inicialización válido para pruebas de humo (smoke tests) y para reproducir la mecánica de entrenamiento. El propio autor indica de forma explícita en la model card que no reclama ninguna puntuación de benchmarks y que el fichero `model.safetensors` es un checkpoint de inicialización, no un modelo evaluado.
+Coca for Multitask es un repositorio de Hugging Face publicado por el usuario travisyoung que contiene una implementación funcional de la arquitectura Coca en una configuración denominada "tiny", orientada a experimentos de aprendizaje multitarea. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de un punto de partida de inicialización válido para pruebas de humo (smoke tests) y para reproducir la mecánica de entrenamiento. El propio autor indica de forma explícita en la model card que no reclama ninguna puntuación de benchmarks y que el fichero `model.safetensors` es un checkpoint de inicialización, no un modelo evaluado.
 
 El modelo declara 16.576 parámetros totales, un tamaño extremadamente reducido que lo sitúa en el terreno de la validación de código más que en el de la inferencia práctica. La arquitectura combina atención dilatada, fusión de bajo rango, activación swish y normalización layernorm, y se distribuye bajo licencia MIT en formato safetensors. Su relevancia actual es acotada: sirve como material de referencia transparente para quien quiera estudiar o extender una implementación personalizada de Coca con fines de investigación en arquitecturas multitarea.
 
@@ -73,5 +73,5 @@ No disponible. No se identifican modelos comparables en la informacion proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/travisyoung/coca-checkpoint
+- Hugging Face: https://huggingface.co/travisyoung/coca-checkpoint
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `junior0091/test` es un ajuste fino (fine-tuning) publicado por el usuario junior0091 en HuggingFace, derivado del modelo base `unsloth/qwen3.8-27b-unsloth-bnb-4bit`. Segun los pesos almacenados en safetensors, cuenta con 27.781.427.952 parametros (aproximadamente 27,78 mil millones) y se distribuye en precision FP16, lo que explica un tamano de repositorio de 55,6 GB. La model card indica que fue entrenado con la libreria Unsloth y TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un entrenamiento convencional, aunque no se detalla el dataset, el numero de tokens ni la metodologia de ajuste.
+El modelo `junior0091/test` es un ajuste fino (fine-tuning) publicado por el usuario junior0091 en Hugging Face, derivado del modelo base `unsloth/qwen3.8-27b-unsloth-bnb-4bit`. Segun los pesos almacenados en safetensors, cuenta con 27.781.427.952 parametros (aproximadamente 27,78 mil millones) y se distribuye en precision FP16, lo que explica un tamano de repositorio de 55,6 GB. La model card indica que fue entrenado con la libreria Unsloth y TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un entrenamiento convencional, aunque no se detalla el dataset, el numero de tokens ni la metodologia de ajuste.
 
 El pipeline declarado es `image-text-to-text`, lo que sugiere un modelo multimodal de entrada imagen y texto, coherente con la etiqueta `qwen3_5` y con el sufijo `-vl` ausente pero con el pipeline grafico. No obstante, la model card no documenta ninguna capacidad de vision de forma explicita, por lo que esta caracteristica debe verificarse antes de usarla en produccion. La ventana de contexto, la composicion del dataset de entrenamiento y los hiperparametros no estan disponibles en la informacion proporcionada.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada: se trata de una subida con 0 descargas y 0 lik
 
 La informacion disponible no especifica la arquitectura interna del modelo. La etiqueta `qwen3_5` y el nombre del modelo base (`unsloth/qwen3.8-27b`) apuntan a la familia Qwen, pero ninguna de esas dos denominaciones coincide con una version publicada oficialmente por Alibaba Qwen, por lo que no es posible confirmar la arquitectura subyacente (transformer denso, Mixture of Experts o hibrida). El pipeline declarado, `image-text-to-text`, indica que el modelo esta preparado para recibir imagenes y texto como entrada y generar texto, lo que implicaria un codificador visual, pero la model card no lo documenta ni describe su configuracion.
 
-En cuanto al entrenamiento, la model card se limita a indicar que es un modelo ajustado en 16 bits (FP16) y que se entreno con Unsloth y la libreria TRL de HuggingFace, con una mejora de velocidad de 2x. No se indica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o SFT, ni si se aplico LoRA/QLoRA y posterior fusion de adaptadores. Tampoco se especifican hiperparametros como tasa de aprendizaje, rango de LoRA, numero de epocas o estrategia de enmascarado. No hay ninguna innovacion tecnica declarada mas alla del uso de Unsloth como acelerador de entrenamiento.
+En cuanto al entrenamiento, la model card se limita a indicar que es un modelo ajustado en 16 bits (FP16) y que se entreno con Unsloth y la libreria TRL de Hugging Face, con una mejora de velocidad de 2x. No se indica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o SFT, ni si se aplico LoRA/QLoRA y posterior fusion de adaptadores. Tampoco se especifican hiperparametros como tasa de aprendizaje, rango de LoRA, numero de epocas o estrategia de enmascarado. No hay ninguna innovacion tecnica declarada mas alla del uso de Unsloth como acelerador de entrenamiento.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, la model card se limita a indicar que es un modelo a
 - Capacidades multilingues: limitadas al ingles segun el campo `language: en`.
 - Modo de razonamiento explicito (thinking mode): no disponible en la informacion.
 - Capacidades de audio o video: no disponible en la informacion.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere despliegue en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| junior0091/test | 27,78B | no disponible | apache-2.0 | safetensors FP16 | Publico en HuggingFace, 0 descargas |
-| unsloth/qwen3.8-27b-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no disponible | 4 bits (bitsandbytes) | Publico en HuggingFace |
+| junior0091/test | 27,78B | no disponible | apache-2.0 | safetensors FP16 | Publico en Hugging Face, 0 descargas |
+| unsloth/qwen3.8-27b-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no disponible | 4 bits (bitsandbytes) | Publico en Hugging Face |
 | Otras alternativas de ~27B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion verificable sobre modelos comparables de la misma categoria. La denominacion del modelo base (`qwen3.8-27b`) no corresponde a ninguna version publicada oficialmente de la familia Qwen, por lo que no es posible establecer una comparacion fiable con alternativas comerciales o abiertas de tamano similar.
@@ -91,8 +91,8 @@ No se dispone de informacion verificable sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junior0091/test
+- Modelo en Hugging Face: https://huggingface.co/junior0091/test
 - Modelo base: https://huggingface.co/unsloth/qwen3.8-27b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las busquedas devolvieron unicamente paginas de inicio de sesion de Gmail y de cuentas de Google, sin relacion con el modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Evo2-1B-8K es un port minimalista y limpio del modelo Evo 2 1B base de Arc Institute, el modelo fundacional de ADN más pequeño de la familia Evo 2. Desarrollado por Taykhoom, este port resuelve los problemas de usabilidad del checkpoint original, que requería instalar los paquetes `evo2` y `vortex` y no ofrecía una API compatible con HuggingFace. Este port carga con `from_pretrained` y `trust_remote_code=True`, sin dependencias adicionales, y proporciona acceso nativo a la extracción de estados ocultos capa a capa y a los pesos de atención.
+Evo2-1B-8K es un port minimalista y limpio del modelo Evo 2 1B base de Arc Institute, el modelo fundacional de ADN más pequeño de la familia Evo 2. Desarrollado por Taykhoom, este port resuelve los problemas de usabilidad del checkpoint original, que requería instalar los paquetes `evo2` y `vortex` y no ofrecía una API compatible con Hugging Face. Este port carga con `from_pretrained` y `trust_remote_code=True`, sin dependencias adicionales, y proporciona acceso nativo a la extracción de estados ocultos capa a capa y a los pesos de atención.
 
-El modelo utiliza la arquitectura StripedHyena 2, una combinación intercalada de bloques Hyena (cascadas convolucionales) y bloques de atención multi-cabeza (MHA), con 1.107 millones de parámetros y una ventana de contexto de 8.192 tokens. Fue preentrenado con el objetivo de predicción causal de siguiente token a nivel de byte sobre el dataset OpenGenome2, que contiene 8,8 billones de tokens de ADN de todos los dominios de la vida. Su relevancia actual radica en que democratiza el acceso a un modelo de ADN de última generación con una integración limpia en el ecosistema HuggingFace, manteniendo una fidelidad bit-exacta con la implementación de referencia en configuraciones controladas.
+El modelo utiliza la arquitectura StripedHyena 2, una combinación intercalada de bloques Hyena (cascadas convolucionales) y bloques de atención multi-cabeza (MHA), con 1.107 millones de parámetros y una ventana de contexto de 8.192 tokens. Fue preentrenado con el objetivo de predicción causal de siguiente token a nivel de byte sobre el dataset OpenGenome2, que contiene 8,8 billones de tokens de ADN de todos los dominios de la vida. Su relevancia actual radica en que democratiza el acceso a un modelo de ADN de última generación con una integración limpia en el ecosistema Hugging Face, manteniendo una fidelidad bit-exacta con la implementación de referencia en configuraciones controladas.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El preentrenamiento se realizó con el objetivo de predicción causal de siguien
 - Diseño de secuencias de proteínas y ARN: la generación condicional de secuencias permite proponer variantes optimizadas para expresión, estabilidad o función, integrable en pipelines de biología sintética.
 - Análisis de metagenómica: al haber sido entrenado con datos de todos los dominios de la vida, puede ayudar a clasificar y caracterizar fragmentos de ADN de muestras ambientales o clínicas sin ensamblaje previo.
 - Investigación en evolución molecular: la comparación de representaciones internas entre especies puede revelar patrones conservados o divergentes en regiones no codificantes, apoyando estudios filogenéticos.
-- Educación y prototipado en bioinformática: al ser un port ligero con API HuggingFace estándar, sirve como base para enseñar conceptos de modelos de lenguaje genómicos o para validar hipótesis antes de escalar a los modelos de 7B o 40B de la familia.
+- Educación y prototipado en bioinformática: al ser un port ligero con API Hugging Face estándar, sirve como base para enseñar conceptos de modelos de lenguaje genómicos o para validar hipótesis antes de escalar a los modelos de 7B o 40B de la familia.
 
 ## Benchmarks y rendimiento
 
@@ -53,19 +53,19 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: el checkpoint en bf16 ocupa aproximadamente 2,2 GB, por lo que la inferencia en bf16 cabe en GPUs con 8 GB o más de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 4090).
 - GPU recomendadas: para la ruta FP8 con TransformerEngine se requiere una GPU Hopper (H100 o H200). Sin FP8, la ruta bf16 SDPA funciona en GPUs Ampere o posteriores (A100, RTX 30xx/40xx).
 - Compatibilidad con GPUs de consumo: sí, en bf16 sin FP8; la ruta FP8 queda restringida a hardware Hopper.
-- Opciones de despliegue: transformers con `trust_remote_code=True`, compatible con vLLM, TGI y otros servidores de inferencia que soporten modelos de HuggingFace con código remoto. También se puede usar con llama.cpp si se convierte a GGUF, aunque no se proporciona un archivo GGUF en el repositorio.
+- Opciones de despliegue: transformers con `trust_remote_code=True`, compatible con vLLM, TGI y otros servidores de inferencia que soporten modelos de Hugging Face con código remoto. También se puede usar con llama.cpp si se convierte a GGUF, aunque no se proporciona un archivo GGUF en el repositorio.
 - Latencia y throughput: no disponible en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taykhoom/Evo2-1B-8K | 1,1B | 8.192 | StripedHyena 2 | Apache 2.0 | HuggingFace (port) |
-| arcinstitute/evo2_1b_base | 1,1B | 8.192 | StripedHyena 2 | Apache 2.0 | HuggingFace (checkpoint .pt, requiere evo2/vortex) |
-| Taykhoom/Evo2-7B-8K | 7B | 8.192 | StripedHyena 2 | Apache 2.0 | HuggingFace (port) |
-| Taykhoom/Evo2-40B-1M | 40B | 1.048.576 | StripedHyena 2 | Apache 2.0 | HuggingFace (port) |
+| Taykhoom/Evo2-1B-8K | 1,1B | 8.192 | StripedHyena 2 | Apache 2.0 | Hugging Face (port) |
+| arcinstitute/evo2_1b_base | 1,1B | 8.192 | StripedHyena 2 | Apache 2.0 | Hugging Face (checkpoint .pt, requiere evo2/vortex) |
+| Taykhoom/Evo2-7B-8K | 7B | 8.192 | StripedHyena 2 | Apache 2.0 | Hugging Face (port) |
+| Taykhoom/Evo2-40B-1M | 40B | 1.048.576 | StripedHyena 2 | Apache 2.0 | Hugging Face (port) |
 
-La comparativa se limita a la familia Evo 2, ya que no se dispone de datos contrastables de otros modelos de ADN de tamaño similar en la información proporcionada. El port de Taykhoom se diferencia del checkpoint original de Arc Institute por ofrecer una API HuggingFace estándar, extracción de atención y paridad verificada, sin necesidad de instalar paquetes adicionales.
+La comparativa se limita a la familia Evo 2, ya que no se dispone de datos contrastables de otros modelos de ADN de tamaño similar en la información proporcionada. El port de Taykhoom se diferencia del checkpoint original de Arc Institute por ofrecer una API Hugging Face estándar, extracción de atención y paridad verificada, sin necesidad de instalar paquetes adicionales.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ La comparativa se limita a la familia Evo 2, ya que no se dispone de datos contr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Taykhoom/Evo2-1B-8K
+- Repositorio Hugging Face: https://huggingface.co/Taykhoom/Evo2-1B-8K
 - Modelo original de Arc Institute: https://huggingface.co/arcinstitute/evo2_1b_base
 - Colección de ports Evo2 de Taykhoom: https://huggingface.co/collections/Taykhoom/evo2-6a24b06c05955a295025a006
 - Repositorio GitHub de Evo2 (Arc Institute): https://github.com/arcinstitute/evo2

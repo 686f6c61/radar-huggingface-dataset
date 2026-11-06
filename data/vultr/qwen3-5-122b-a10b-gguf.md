@@ -79,7 +79,7 @@ Frente a modelos densos de tamaño similar en calidad (como Llama 3.3 70B), Qwen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vultr/Qwen3.5-122B-A10B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/vultr/Qwen3.5-122B-A10B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Vultr (autor de la cuantización): https://www.vultr.com/
 - Documentación de Vultr: https://docs.vultr.com/

@@ -96,7 +96,7 @@ La comparación es únicamente estructural: anekdot-gpt es dos órdenes de magni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sx58/anekdot-gpt
+- Modelo en Hugging Face: https://huggingface.co/sx58/anekdot-gpt
 - Corpus de origen: https://www.anekdot.ru/
 - Referencia arquitectónica nanoGPT (Karpathy): https://github.com/karpathy/nanoGPT
 - Vídeo «Let's build GPT» (Karpathy): https://www.youtube.com/watch?v=kCc8FmEb1nY

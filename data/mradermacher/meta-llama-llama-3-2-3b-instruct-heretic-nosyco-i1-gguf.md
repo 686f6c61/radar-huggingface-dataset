@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha corresponde a una cuantización GGUF del modelo **UnstableLlama/meta-llama-Llama-3.2-3B-Instruct-heretic-nosyco**, publicada por el usuario mradermacher en HuggingFace. El modelo base es un fine-tuning de Llama 3.2 3B Instruct de Meta, concretamente una variante "heretic" orientada a reducir la sycophancy (complacencia excesiva ante el usuario), un problema conocido en los LLM alineados que tienden a aceptar afirmaciones incorrectas del interlocutor en lugar de corregirlas. La versión de mradermacher no añade capacidades nuevas: su valor está en hacer el modelo ejecutable localmente mediante GGUF con calibración imatrix.
+Esta ficha corresponde a una cuantización GGUF del modelo **UnstableLlama/meta-llama-Llama-3.2-3B-Instruct-heretic-nosyco**, publicada por el usuario mradermacher en Hugging Face. El modelo base es un fine-tuning de Llama 3.2 3B Instruct de Meta, concretamente una variante "heretic" orientada a reducir la sycophancy (complacencia excesiva ante el usuario), un problema conocido en los LLM alineados que tienden a aceptar afirmaciones incorrectas del interlocutor en lugar de corregirlas. La versión de mradermacher no añade capacidades nuevas: su valor está en hacer el modelo ejecutable localmente mediante GGUF con calibración imatrix.
 
 Con 3.212.749.888 parámetros, se trata de un modelo ligero pensado para inferencia en hardware de consumo, con soporte de los idiomas originales de Llama 3.2 (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés). Su relevancia actual radica en la creciente atención hacia el problema de la sycophancy en modelos desplegados en producción, donde un asistente demasiado complaciente puede validar errores médicos, legales o técnicos.
 

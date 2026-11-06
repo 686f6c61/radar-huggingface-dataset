@@ -101,7 +101,7 @@ La comparación con Qwen3Guard-Stream se basa únicamente en la afirmación del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/astroware/HaloGuard2.0-0.8B
+- Hugging Face: https://huggingface.co/astroware/HaloGuard2.0-0.8B
 - Modelo de entrada de la familia: https://huggingface.co/astroware/HaloGuard1-Gen-0.8B
 - Build de transformers requerido: https://github.com/huggingface/transformers/archive/394b1a0eaa8e6199e372334da0aff3753a117fdb.tar.gz
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

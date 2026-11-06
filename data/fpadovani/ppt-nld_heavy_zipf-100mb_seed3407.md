@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `fpadovani/ppt-nld_heavy_zipf-100mb_seed3407` | 86,7 M | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
-| `goldfish-models/nld_latn_100mb` (modelo base) | ≈86,7 M (misma configuracion) | No disponible | No disponible | Publico en HuggingFace |
-| GPT-2 (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT, segun la model card en HuggingFace | Muy extendido y ampliamente integrado |
-| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache-2.0, segun la model card en HuggingFace | Muy extendido |
-| `GroNLP/gpt2-small-dutch` | ≈124 M | 1024 tokens (arquitectura GPT-2 small) | No disponible | Publico en HuggingFace, mismo entorno academico neerlandes |
+| `fpadovani/ppt-nld_heavy_zipf-100mb_seed3407` | 86,7 M | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
+| `goldfish-models/nld_latn_100mb` (modelo base) | ≈86,7 M (misma configuracion) | No disponible | No disponible | Publico en Hugging Face |
+| GPT-2 (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT, segun la model card en Hugging Face | Muy extendido y ampliamente integrado |
+| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache-2.0, segun la model card en Hugging Face | Muy extendido |
+| `GroNLP/gpt2-small-dutch` | ≈124 M | 1024 tokens (arquitectura GPT-2 small) | No disponible | Publico en Hugging Face, mismo entorno academico neerlandes |
 
 Los datos de las filas comparativas corresponden a informacion publica de sus respectivas model cards y deben verificarse antes de tomar decisiones de produccion. La comparacion de rendimiento no es posible porque este modelo no publica ninguna metrica.
 
@@ -97,7 +97,7 @@ Los datos de las filas comparativas corresponden a informacion publica de sus re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_heavy_zipf-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/h9nbiyry
 - Repositorio de TRL: https://github.com/huggingface/trl

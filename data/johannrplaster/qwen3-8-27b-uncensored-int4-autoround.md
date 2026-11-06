@@ -80,9 +80,9 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/johannrplaster/Qwen3.8-27B-Uncensored-int4-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/johannrplaster/Qwen3.8-27B-Uncensored-int4-AutoRound
 - Repositorio GitHub del proyecto uncensored: https://github.com/Wassimyounes01/qwen38-uncensored
 - Instalador one-click para Qwen3.8-27B: https://github.com/qwen3-8-27b/qwen3-8-27b
 - Pagina del modelo en Wiro AI: https://wiro.ai/models/qwen/qwen3-8-27b-uncensored
 - Blog sobre abliteracion de Qwen3.8-27B: https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration
-- Busqueda de cuantizaciones de Qwen3.8-27B en HuggingFace: https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.8-27B
+- Busqueda de cuantizaciones de Qwen3.8-27B en Hugging Face: https://huggingface.co/models?other=base_model:quantized:Qwen/Qwen3.8-27B

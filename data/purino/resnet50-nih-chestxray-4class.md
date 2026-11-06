@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Arquitectura | Parametros | Clases | Tipo de etiquetado | AUROC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este modelo (Purino/resnet50-nih-chestxray-4class) | ResNet50 | 23.569.348 | 4 | single-label | 0,7919 (test, macro OVR) | MIT | HuggingFace |
+| Este modelo (Purino/resnet50-nih-chestxray-4class) | ResNet50 | 23.569.348 | 4 | single-label | 0,7919 (test, macro OVR) | MIT | Hugging Face |
 | MobileNetV2 (alternativa sugerida por el autor) | CNN ligera con convoluciones separables | no disponible | no disponible | no disponible | no disponible | no disponible | torchvision / pesos ImageNet |
 | CheXNet (DenseNet-121, referente de la literatura) | CNN densa | no disponible en la informacion proporcionada | 14 | multi-label | no disponible en la informacion proporcionada | no disponible | reimplementaciones de terceros; pesos oficiales no publicados |
 
@@ -95,7 +95,7 @@ La información proporcionada no incluye cifras comparativas verificables de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Purino/resnet50-nih-chestxray-4class
+- Modelo en Hugging Face: https://huggingface.co/Purino/resnet50-nih-chestxray-4class
 - Dataset NIH ChestX-ray14: https://huggingface.co/datasets/nih-chest-xrays/data
 - Artículo original de CAM (Zhou et al., "Learning Deep Features for Discriminative Localization"): https://arxiv.org/abs/1512.04150
 - Artículo original de Grad-CAM (Selvaraju et al.): https://arxiv.org/abs/1610.02391

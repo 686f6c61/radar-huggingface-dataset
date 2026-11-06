@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shahdiya/hybrid-contrastive-fast es un repositorio de HuggingFace publicado por el usuario Shahdiya que contiene una implementacion propia y minima de una arquitectura hibrida orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release con pesos listos para produccion: la propia model card lo describe como un punto de partida reproducible con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+Shahdiya/hybrid-contrastive-fast es un repositorio de Hugging Face publicado por el usuario Shahdiya que contiene una implementacion propia y minima de una arquitectura hibrida orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un release con pesos listos para produccion: la propia model card lo describe como un punto de partida reproducible con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El artefacto principal es el script `run.py`, acompanado de `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto, con optimizador Lion y scheduler polinomial) y `model.safetensors`, que segun los metadatos reales del repositorio contiene 16.576 parametros totales. El tamano del repositorio figura como 0.0 GB.
 
@@ -46,7 +46,7 @@ No hay datos de entrenamiento: la model card declara de forma explicita que `mod
 - Prototipado de investigacion en aprendizaje contrastivo: el repositorio aporta una implementacion de referencia con atencion dilatada y fusion bilineal sobre la que construir variantes; es adecuado porque el codigo y la configuracion son explicitos y reproducibles, aunque no existan pesos entrenados.
 - Smoke tests de infraestructura: al ser un checkpoint de inicializacion de 16.576 parametros, permite verificar que un pipeline de carga, serializacion y ejecucion funciona antes de invertir en entrenamientos largos.
 - Linea base de capacidad equivalente: el propio autor sugiere comparar contra un baseline de capacidad similar; este repositorio puede actuar como ese punto de partida controlado en experimentos de ablacion.
-- Pruebas de integracion de arquitecturas hibridas personalizadas: como la implementacion es propia, sirve para medir el coste de escribir adaptadores frente a las APIs de carga automatica de HuggingFace.
+- Pruebas de integracion de arquitecturas hibridas personalizadas: como la implementacion es propia, sirve para medir el coste de escribir adaptadores frente a las APIs de carga automatica de Hugging Face.
 - Docencia y formacion tecnica: util para ilustrar como se estructura un repositorio de modelo (config, training args, script y checkpoint) sin la complejidad de un modelo grande.
 - Experimentacion con recetas de optimizacion: la configuracion por defecto con Lion y scheduler polinomial permite comparar recetas alternativas manteniendo fija la arquitectura.
 - No es adecuado para atencion al cliente, generacion de codigo en produccion, agentes ni ninguna tarea de inferencia real, al no existir un modelo entrenado.
@@ -69,7 +69,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shahdiya/hybrid-contrastive-fast | 16.576 (checkpoint de inicializacion, sin entrenar) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| Shahdiya/hybrid-contrastive-fast | 16.576 (checkpoint de inicializacion, sin entrenar) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shahdiya/hybrid-contrastive-fast
+- Modelo en Hugging Face: https://huggingface.co/Shahdiya/hybrid-contrastive-fast
 - Ficheros incluidos en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo adicional o demo: no disponibles en la informacion proporcionada
 - Resultados de busqueda web: los enlaces devueltos corresponden al dominio deviantart.com (paginas de inicio de sesion y registro) y no guardan ninguna relacion con el modelo, por lo que no se incluyen como referencias validas

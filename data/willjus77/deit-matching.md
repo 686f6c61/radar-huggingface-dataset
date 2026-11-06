@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`willjus77/deit-matching` es un repositorio de HuggingFace publicado por el usuario willjus77 que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching*. No se trata de un modelo entrenado ni de un release con resultados, sino de un esqueleto reproducible: incluye `train.py` como artefacto principal, `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicialización para pruebas de humo. El propio autor indica explícitamente que el checkpoint no ha sido entrenado ni auditado.
+`willjus77/deit-matching` es un repositorio de Hugging Face publicado por el usuario willjus77 que contiene una implementación propia y reducida de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching*. No se trata de un modelo entrenado ni de un release con resultados, sino de un esqueleto reproducible: incluye `train.py` como artefacto principal, `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como checkpoint de inicialización para pruebas de humo. El propio autor indica explícitamente que el checkpoint no ha sido entrenado ni auditado.
 
 El tamaño del modelo es extremadamente reducido: 33.088 parámetros totales según los metadatos de safetensors, lo que lo sitúa muy por debajo de cualquier variante DeiT publicada. La configuración declarada combina atención dispersa (*sparse*), fusión tipo *tucker*, activación ReLU y normalización por lotes (BatchNorm), una combinación atípica respecto al DeiT original, que utiliza atención completa, GELU y LayerNorm. La escala declarada es "nano" y la receta por defecto usa el optimizador RMSprop con un schedule coseno.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willjus77/deit-matching
+- Modelo en Hugging Face: https://huggingface.co/willjus77/deit-matching
 - Paper de DeiT: no disponible en la informacion proporcionada
 - Repositorio de codigo asociado: no disponible en la informacion proporcionada
 - Demo o espacio de inferencia: no disponible en la informacion proporcionada

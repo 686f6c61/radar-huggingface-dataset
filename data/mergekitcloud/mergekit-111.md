@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MergekitCloud/mergekit-111 | 0,49 B | no disponible | no disponible | HuggingFace, 0 descargas | Merge SLERP de los dos siguientes |
-| Qwen/Qwen2-0.5B | 0,49 B | 32.768 tokens (documentado por Qwen) | Apache 2.0 (según Qwen) | HuggingFace, ampliamente usado | Modelo base preentrenado |
-| Qwen/Qwen2-0.5B-Instruct | 0,49 B | 32.768 tokens (documentado por Qwen) | Apache 2.0 (según Qwen) | HuggingFace, ampliamente usado | Variante ajustada por instrucciones |
-| SmolLM-135M / SmolLM-360M (HuggingFace) | 0,135 B / 0,36 B | 2.048 tokens | Apache 2.0 | HuggingFace | Alternativa de tamaño similar para entornos muy limitados |
+| MergekitCloud/mergekit-111 | 0,49 B | no disponible | no disponible | Hugging Face, 0 descargas | Merge SLERP de los dos siguientes |
+| Qwen/Qwen2-0.5B | 0,49 B | 32.768 tokens (documentado por Qwen) | Apache 2.0 (según Qwen) | Hugging Face, ampliamente usado | Modelo base preentrenado |
+| Qwen/Qwen2-0.5B-Instruct | 0,49 B | 32.768 tokens (documentado por Qwen) | Apache 2.0 (según Qwen) | Hugging Face, ampliamente usado | Variante ajustada por instrucciones |
+| SmolLM-135M / SmolLM-360M (Hugging Face) | 0,135 B / 0,36 B | 2.048 tokens | Apache 2.0 | Hugging Face | Alternativa de tamaño similar para entornos muy limitados |
 
 Nota: los datos de los modelos Qwen2 y SmolLM corresponden a información pública de sus respectivas model cards, no a la información proporcionada para este artefacto. La licencia de mergekit-111 no está declarada, lo que impide confirmar si hereda la Apache 2.0 de sus padres.
 
@@ -86,7 +86,7 @@ Nota: los datos de los modelos Qwen2 y SmolLM corresponden a información públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-111
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-111
 - Modelo base (preentrenado): https://huggingface.co/Qwen/Qwen2-0.5B
 - Modelo base (instruct): https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Herramienta de fusión mergekit: https://github.com/cg123/mergekit

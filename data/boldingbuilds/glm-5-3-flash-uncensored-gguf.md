@@ -83,8 +83,8 @@ Resultados publicados por el autor del repositorio, medidos sobre el archivo IQ1
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash Uncensored (este repositorio) | 320,8B totales / 18B activos | No disponible (medido a 16k) | IQ1_S, ~1,92 bits, 71,5 GiB, GGUF | MIT | HuggingFace; requiere llama.cpp PR #27754 |
-| GLM-5.3-Flash (zai-org, base) | 320B totales / 18B activos | No disponible | FP8 nativo | No disponible en la informacion | HuggingFace y NVIDIA NIM; pesos publicados el 2026-08-26 |
+| GLM-5.3-Flash Uncensored (este repositorio) | 320,8B totales / 18B activos | No disponible (medido a 16k) | IQ1_S, ~1,92 bits, 71,5 GiB, GGUF | MIT | Hugging Face; requiere llama.cpp PR #27754 |
+| GLM-5.3-Flash (zai-org, base) | 320B totales / 18B activos | No disponible | FP8 nativo | No disponible en la informacion | Hugging Face y NVIDIA NIM; pesos publicados el 2026-08-26 |
 | GLM-5.3-Flash Uncensored block-FP8 (orcarouter) | 320B totales / 18B activos | No disponible | FP8 por bloques | No disponible en la informacion | Publicado aproximadamente tres días después del modelo base |
 | Hermano IQ2_XXS del mismo autor | 320B totales / 18B activos | No disponible | IQ2_XXS | No disponible en la informacion | Mencionado en la model card; repositorio no enlazado en la información disponible |
 | GLM 5.3 Flash Uncensored (NanoGPT) | 320B totales / 18B activos | No disponible | Servicio alojado | No disponible en la informacion | Disponible como endpoint comercial |
@@ -104,7 +104,7 @@ Resultados publicados por el autor del repositorio, medidos sobre el archivo IQ1
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BoldingBuilds/GLM-5.3-Flash-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/BoldingBuilds/GLM-5.3-Flash-Uncensored-GGUF
 - Archivos del repositorio: https://huggingface.co/BoldingBuilds/GLM-5.3-Flash-Uncensored-GGUF/tree/main
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - PR de llama.cpp con soporte para GLM-5.3-Flash: https://github.com/ggml-org/llama.cpp/pull/27754

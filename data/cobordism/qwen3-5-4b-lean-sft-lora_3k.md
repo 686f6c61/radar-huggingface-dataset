@@ -76,6 +76,6 @@ No se dispone de información sobre adaptadores LoRA comparables para la demostr
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/cobordism/qwen3.5-4b-lean-sft-lora_3k)
-- [Modelo base Qwen3.5-4B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-4B)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/cobordism/qwen3.5-4b-lean-sft-lora_3k)
+- [Modelo base Qwen3.5-4B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Ejemplo de fine-tuning LoRA sobre Qwen3.5-4B (GitHub)](https://github.com/IIIIQIIII/qwen35-4b-lora-sft) (referencia de otro proyecto, no del adaptador en cuestión)

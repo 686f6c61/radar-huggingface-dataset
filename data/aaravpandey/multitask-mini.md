@@ -2,7 +2,7 @@
 
 ## Resumen
 
-multitask-mini es un repositorio experimental publicado por el usuario aaravpandey en HuggingFace que contiene una implementación funcional de un Vision Transformer (ViT) orientado a tareas múltiples, configurado en una escala "nano". El propio autor lo describe como un punto de partida transparente para pruebas de humo (smoke tests) y código reproducible, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos entrenados.
+multitask-mini es un repositorio experimental publicado por el usuario aaravpandey en Hugging Face que contiene una implementación funcional de un Vision Transformer (ViT) orientado a tareas múltiples, configurado en una escala "nano". El propio autor lo describe como un punto de partida transparente para pruebas de humo (smoke tests) y código reproducible, no como un modelo entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo con pesos entrenados.
 
 El modelo es relevante únicamente como material didáctico o como esqueleto de código para experimentar con arquitecturas ViT multitarea: combina atención flash, fusión mediante cross attention entre ramas de tarea, activación ReLU y normalización RMSNorm. Con solo 24.832 parámetros registrados en los metadatos de safetensors, es un artefacto minúsculo, apto para validar pipelines de carga y entrenamiento, no para inferencia real.
 
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaravpandey/multitask-mini
+- Modelo en Hugging Face: https://huggingface.co/aaravpandey/multitask-mini
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes a este modelo.

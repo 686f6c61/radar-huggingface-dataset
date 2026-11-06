@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (este modelo) | 450M | no disponible | 5 cámaras + estado | Apache-2.0 | HuggingFace |
-| OpenVLA | 7B | 4096 tokens | 1 cámara + texto | MIT | HuggingFace |
+| SmolVLA (este modelo) | 450M | no disponible | 5 cámaras + estado | Apache-2.0 | Hugging Face |
+| OpenVLA | 7B | 4096 tokens | 1 cámara + texto | MIT | Hugging Face |
 | RT-2 (Google) | 55B | 2048 | 1 cámara | Propietaria | No público |
-| Pi0 (Physical Intelligence) | 3B | 2048 | 1-3 cámaras | Apache-2.0 | HuggingFace |
+| Pi0 (Physical Intelligence) | 3B | 2048 | 1-3 cámaras | Apache-2.0 | Hugging Face |
 
 SmolVLA se distingue por su tamaño reducido (450M frente a 7B de OpenVLA) y su capacidad para procesar múltiples cámaras simultáneamente, lo que lo hace más adecuado para robots con sensórica rica y recursos computacionales limitados. Sin embargo, su rendimiento en tareas complejas aún no está documentado en este repositorio.
 

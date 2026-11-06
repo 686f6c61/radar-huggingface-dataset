@@ -89,7 +89,7 @@ SCAR supera a SPLADE-Qwen en R@10 (0.901 vs 0.838) y a BM25 en todas las métric
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Farseen0/scar-weights
+- Modelo en Hugging Face: https://huggingface.co/Farseen0/scar-weights
 - Repositorio GitHub: https://github.com/FarseenSh/scar
 - Paper (preprint): https://openreview.net/forum?id=moD8Hxq9hN (previsto para EMNLP 2026)
 - Dataset de pares: https://huggingface.co/Farseen0/scar-pairs

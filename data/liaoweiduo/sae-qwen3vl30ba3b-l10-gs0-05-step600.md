@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje, sino un autoencoder disperso (sparse autoencoder, SAE) de tipo TopK entrenado sobre las activaciones de la proyección descendente del MLP de la capa 10 de Qwen/Qwen3-VL-30B-A3B-Instruct. Lo publica el usuario liaoweiduo en HuggingFace y su función es descomponer las activaciones internas de esa capa en 65.536 features dispersas y potencialmente interpretables, con un presupuesto de 256 features activas por token (Top-k = 256). Es una herramienta de interpretabilidad mecanicista, no un modelo generativo: no se le pueden hacer preguntas ni generar texto con él.
+Este repositorio no contiene un modelo de lenguaje, sino un autoencoder disperso (sparse autoencoder, SAE) de tipo TopK entrenado sobre las activaciones de la proyección descendente del MLP de la capa 10 de Qwen/Qwen3-VL-30B-A3B-Instruct. Lo publica el usuario liaoweiduo en Hugging Face y su función es descomponer las activaciones internas de esa capa en 65.536 features dispersas y potencialmente interpretables, con un presupuesto de 256 features activas por token (Top-k = 256). Es una herramienta de interpretabilidad mecanicista, no un modelo generativo: no se le pueden hacer preguntas ni generar texto con él.
 
 El artefacto se distribuye como adaptador en formato safetensors con el layout de claves de la implementación personalizada TOPK_SAE (compatible con PEFT), e incluye un `adapter_config.json` que declara el modelo base, el módulo objetivo (`model.layers.10.mlp.down_proj`) y los hiperparámetros del SAE. El repositorio ocupa 0,5 GB. Se publica un JSON con explicaciones de las features en un dataset aparte del mismo autor.
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Tipo | Diccionario | Top-k | Capa objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| liaoweiduo/sae-qwen3vl30ba3b-l10-gs0.05-step600 | SAE TopK | 65.536 features | 256 | Qwen3-VL-30B-A3B, capa 10, MLP down_proj | No disponible | HuggingFace, 0 descargas |
+| liaoweiduo/sae-qwen3vl30ba3b-l10-gs0.05-step600 | SAE TopK | 65.536 features | 256 | Qwen3-VL-30B-A3B, capa 10, MLP down_proj | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liaoweiduo/sae-qwen3vl30ba3b-l10-gs0.05-step600
+- Modelo en Hugging Face: https://huggingface.co/liaoweiduo/sae-qwen3vl30ba3b-l10-gs0.05-step600
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct
 - Explicaciones de features (JSON): https://huggingface.co/datasets/liaoweiduo/SAE-explorer-resources/blob/main/explanations/qwen3_vl_30b_a3b/layer_10/gs_0.05_step_600/sae_explain_output.json
 - Paper, blog o repositorio del metodo: no disponible en la informacion proporcionada

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mathlib-Sexpr-GNN (iCogLabs-Dev) | GNN + GRU + recuperador para Lean 4 | no disponible | no disponible | Apache 2.0 (pesos), GPLv2 (código) | HuggingFace, 0 descargas |
+| Mathlib-Sexpr-GNN (iCogLabs-Dev) | GNN + GRU + recuperador para Lean 4 | no disponible | no disponible | Apache 2.0 (pesos), GPLv2 (código) | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada. No se han incluido cifras de rendimiento ni de parámetros de terceros para evitar datos no verificados.
@@ -87,5 +87,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iCogLabs-Dev/Mathlib-Sexpr-GNN
+- Hugging Face: https://huggingface.co/iCogLabs-Dev/Mathlib-Sexpr-GNN
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

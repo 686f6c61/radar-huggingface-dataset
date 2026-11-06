@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una politica de aprendizaje por refuerzo profundo entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el escenario **doom_health_gathering_supreme** de ViZDoom. No es un modelo de lenguaje: es un agente de control que aprende una politica de acciones a partir de observaciones del entorno de juego. El autor es el usuario de HuggingFace `premsainelluri` y el entrenamiento se realizo con Sample-Factory 2.0, la libreria de referencia para RL distribuido asincrono desarrollada por Alex Petrenko.
+Este repositorio contiene una politica de aprendizaje por refuerzo profundo entrenada con el algoritmo APPO (Asynchronous Proximal Policy Optimization) sobre el escenario **doom_health_gathering_supreme** de ViZDoom. No es un modelo de lenguaje: es un agente de control que aprende una politica de acciones a partir de observaciones del entorno de juego. El autor es el usuario de Hugging Face `premsainelluri` y el entrenamiento se realizo con Sample-Factory 2.0, la libreria de referencia para RL distribuido asincrono desarrollada por Alex Petrenko.
 
 El escenario *Health Gathering Supreme* es un benchmark clasico de ViZDoom en el que el agente debe recoger botiquines (health packs) para sobrevivir el maximo tiempo posible mientras minimiza el dano acumulado por superficies venenosas. Es una tarea de control parcialmente observable con recompensa densa, muy utilizada en cursos y trabajos de investigacion sobre RL.
 
@@ -94,6 +94,6 @@ No disponible. La informacion proporcionada no incluye otros agentes APPO o poli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/premsainelluri/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/premsainelluri/rl_course_vizdoom_health_gathering_supreme
 - Repositorio de Sample-Factory 2.0: https://github.com/alex-petrenko/sample-factory
 - Entorno ViZDoom (*health gathering supreme*): no se incluye enlace en la informacion disponible

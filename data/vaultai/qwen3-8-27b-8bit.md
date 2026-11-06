@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base mas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vaultai/Qwen3.8-27B-8bit
+- Repositorio en Hugging Face: https://huggingface.co/vaultai/Qwen3.8-27B-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de conversion mlx-vlm: https://github.com/Blaizzy/mlx-vlm
 - Repositorio referenciado en la model card: https://huggingface.co/mlx-community/Qwen3.8-27B-8bit

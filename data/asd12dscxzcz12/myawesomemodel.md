@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asd12dscxzcz12 bajo licencia MIT. La model card lo presenta como una actualización de una versión anterior orientada a razonamiento, con mejoras declaradas en profundidad de razonamiento, reducción de alucinaciones y soporte de function calling. Sin embargo, la ficha de HuggingFace lo etiqueta como `bert`, `feature-extraction` y `transformers`, lo que contradice frontalmente la descripción de la model card, que describe un modelo generativo conversacional con modo de razonamiento y uso de decodificación en tokens de pensamiento.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asd12dscxzcz12 bajo licencia MIT. La model card lo presenta como una actualización de una versión anterior orientada a razonamiento, con mejoras declaradas en profundidad de razonamiento, reducción de alucinaciones y soporte de function calling. Sin embargo, la ficha de Hugging Face lo etiqueta como `bert`, `feature-extraction` y `transformers`, lo que contradice frontalmente la descripción de la model card, que describe un modelo generativo conversacional con modo de razonamiento y uso de decodificación en tokens de pensamiento.
 
 El repositorio presenta señales claras de ser una plantilla sin materializar: 0 descargas, 0 likes, tamaño de repositorio de 0.0 GB (no hay pesos publicados), rutas de imágenes de ejemplo (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`), referencias a una "web oficial" y a un "repositorio de código" sin URL, y una tabla de benchmarks con columnas anonimizadas (`Model1`, `Model2`, `Model1-v2`). La fecha de creación indicada en los metadatos es 2026-09-11, posterior a la fecha de la mayoría de modelos citados y probablemente incorrecta o generada automáticamente.
 
@@ -12,12 +12,12 @@ Por todo ello, esta ficha debe leerse como una descripción de lo que el autor d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible. La model card no especifica arquitectura. La etiqueta de HuggingFace indica `bert`, mientras que la model card describe un modelo generativo con modo de razonamiento: existe una contradicción no resuelta |
+| Arquitectura | no disponible. La model card no especifica arquitectura. La etiqueta de Hugging Face indica `bert`, mientras que la model card describe un modelo generativo con modo de razonamiento: existe una contradicción no resuelta |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible. No se indica que sea un modelo MoE |
 | Longitud de contexto | no disponible. La model card menciona un consumo medio de 23K tokens por pregunta en AIME, dato que no equivale a la ventana de contexto del modelo |
 | Tipos de cuantizacion | no disponible. No se publican pesos ni variantes GGUF, AWQ, GPTQ o FP8 |
-| Idiomas soportados | no disponible. Los metadatos de HuggingFace indican "no disponibles"; la model card solo incluye plantillas de prompt en inglés y un benchmark de traducción sin detallar pares de idiomas |
+| Idiomas soportados | no disponible. Los metadatos de Hugging Face indican "no disponibles"; la model card solo incluye plantillas de prompt en inglés y un benchmark de traducción sin detallar pares de idiomas |
 | Licencia | MIT |
 | Formato de pesos | no disponible. El tamaño del repositorio es 0.0 GB, por lo que no hay safetensors, GGUF ni ningún otro artefacto de pesos publicado |
 | Libreria declarada | transformers |
@@ -97,7 +97,7 @@ No es posible estimar requisitos de hardware con los datos disponibles. El repos
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros ni la cuantización publicada no puede calcularse.
 - GPU recomendadas: no disponible. No se puede asignar el modelo a A100, H100, RTX 4090 ni a ninguna otra GPU.
 - Encaje en GPU de consumo: no disponible.
-- Opciones de despliegue: no disponibles. La librería declarada es `transformers` y la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se documentan configuraciones para vLLM, llama.cpp, Ollama, TGI ni SGLang.
+- Opciones de despliegue: no disponibles. La librería declarada es `transformers` y la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se documentan configuraciones para vLLM, llama.cpp, Ollama, TGI ni SGLang.
 - Latencia y throughput: no disponibles. El único indicio indirecto es el consumo medio declarado de 23K tokens de razonamiento por pregunta en AIME, lo que implica una latencia notablemente alta si el modo de razonamiento extendido está activo.
 - Requisitos de memoria en contexto largo: no disponibles.
 
@@ -112,7 +112,7 @@ No es posible establecer una comparativa fiable. La tabla de benchmarks de la mo
 
 ## Limitaciones y advertencias
 
-- Contradicción de metadatos: la etiqueta de HuggingFace indica `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento extendido y function calling. Una de las dos descripciones es incorrecta.
+- Contradicción de metadatos: la etiqueta de Hugging Face indica `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo conversacional con razonamiento extendido y function calling. Una de las dos descripciones es incorrecta.
 - Ausencia de pesos: el repositorio ocupa 0.0 GB. No hay safetensors, GGUF ni ningún artefacto descargable, por lo que el modelo no es utilizable tal como está publicado.
 - Cero validación externa: 0 descargas y 0 likes. No hay evidencia de uso por terceros ni de reproducción independiente de los resultados.
 - Benchmarks no reproducibles: los nombres de los benchmarks son genéricos y los comparadores están anonimizados. No se especifica el conjunto de evaluación, el número de ejemplos, el método de puntuación ni el número de muestras. No hay resultados en benchmarks estándar de la comunidad.
@@ -128,8 +128,8 @@ No es posible establecer una comparativa fiable. La tabla de benchmarks de la mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asd12dscxzcz12/MyAwesomeModel
-- Model card: disponible en la propia página de HuggingFace indicada arriba
+- Modelo en Hugging Face: https://huggingface.co/asd12dscxzcz12/MyAwesomeModel
+- Model card: disponible en la propia página de Hugging Face indicada arriba
 - Paper: no disponible
 - Repositorio de código: no disponible (la model card lo menciona sin enlace)
 - Web oficial o demo: no disponible (la model card la menciona sin enlace)

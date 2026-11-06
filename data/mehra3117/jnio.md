@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mehra3117/jnio` es un modelo publicado en HuggingFace por el usuario `mehra3117`. La informacion disponible es practicamente nula: no se declara pipeline, no se especifican idiomas, no hay descargas ni "likes", y la model card se limita a una cabecera YAML con la licencia `apache-2.0` y sin cuerpo de texto. No se documenta arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni proceso de alineamiento.
+El repositorio `mehra3117/jnio` es un modelo publicado en Hugging Face por el usuario `mehra3117`. La informacion disponible es practicamente nula: no se declara pipeline, no se especifican idiomas, no hay descargas ni "likes", y la model card se limita a una cabecera YAML con la licencia `apache-2.0` y sin cuerpo de texto. No se documenta arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni proceso de alineamiento.
 
 El repositorio fue creado y actualizado en la misma marca temporal (2026-10-09), sin historial posterior de cambios. Esto, junto con la ausencia de ficheros de pesos descritos y de cualquier metadato tecnico, sugiere que se trata de un repositorio vacio, de prueba o abandonado antes de publicar contenido util. No hay evidencia de que existan pesos entrenados asociados a este identificador.
 
@@ -87,6 +87,6 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea objetivo d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mehra3117/jnio
+- Hugging Face: https://huggingface.co/mehra3117/jnio
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

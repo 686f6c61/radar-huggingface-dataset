@@ -82,7 +82,7 @@ La variante 35B-A3B es un modelo MoE con 3 000 millones de parámetros activos, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/Qwen3.6-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Qwen3.6-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Documentación de Unsloth para Qwen3.6: https://unsloth.ai/docs/models/qwen3.6
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.6-27b

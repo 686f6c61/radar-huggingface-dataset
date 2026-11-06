@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HassanXpress/housing es un repositorio alojado en HuggingFace bajo la cuenta del usuario HassanXpress, publicado el 10 de septiembre de 2026 y actualizado el mismo dia. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas informacion que la declaracion de licencia (apache-2.0). No se especifica pipeline, arquitectura, tamano, idiomas ni formato de pesos.
+HassanXpress/housing es un repositorio alojado en Hugging Face bajo la cuenta del usuario HassanXpress, publicado el 10 de septiembre de 2026 y actualizado el mismo dia. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y su model card no contiene mas informacion que la declaracion de licencia (apache-2.0). No se especifica pipeline, arquitectura, tamano, idiomas ni formato de pesos.
 
 La unica informacion verificable es la licencia (Apache 2.0) y la etiqueta de region (us). El nombre del repositorio, "housing", sugiere un posible vinculo con tareas de prediccion o analisis de vivienda, pero no existe documentacion tecnica que lo confirme, por lo que no puede clasificarse como modelo de lenguaje, modelo de vision, modelo tabular ni pipeline de datos.
 
@@ -46,7 +46,7 @@ No se ha publicado informacion sobre el volumen de datos de entrenamiento, la co
 ## Casos de uso
 
 - No se pueden proponer casos de uso concretos. Sin informacion sobre la tarea para la que fue entrenado el artefacto, el tipo de entradas y salidas, el formato de pesos o el pipeline declarado, cualquier escenario de aplicacion seria especulativo.
-- Evaluacion previa a adopcion: antes de considerar este repositorio para cualquier flujo de trabajo, un desarrollador deberia inspeccionar los ficheros del repositorio en HuggingFace y contactar con el autor para obtener la documentacion tecnica minima (tarea, entradas, salidas, licencia de los datos y metricas).
+- Evaluacion previa a adopcion: antes de considerar este repositorio para cualquier flujo de trabajo, un desarrollador deberia inspeccionar los ficheros del repositorio en Hugging Face y contactar con el autor para obtener la documentacion tecnica minima (tarea, entradas, salidas, licencia de los datos y metricas).
 - Uso como referencia de licencia: el unico elemento reutilizable de forma inequivoca es la declaracion de licencia Apache 2.0, que podria servir como plantilla de licenciamiento para otros repositorios propios, aunque no para ejecutar un modelo.
 - Integracion en pipelines de datos: dado que el nombre del repositorio apunta a un posible contexto de vivienda, solo tendria sentido explorar su uso en analitica inmobiliaria si el autor confirma que contiene un modelo tabular o un conjunto de datos, algo que la informacion disponible no acredita.
 - Despliegue en produccion: descartado con la informacion actual, ya que no existen pesos, configuracion ni requisitos de hardware documentados.
@@ -86,6 +86,6 @@ No disponible. Al no conocerse la tarea, la arquitectura ni el tamano del artefa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HassanXpress/housing
+- Hugging Face: https://huggingface.co/HassanXpress/housing
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados de busqueda disponibles corresponden a la herramienta de traduccion DeepL (https://www.deepl.com/en/translator, https://app.deepl.com/pt-BR/translator, https://deeply.app.deepl.com/en/write, https://app.deepl.com/de/mobile-apps) y no guardan relacion con el repositorio objeto de esta ficha.

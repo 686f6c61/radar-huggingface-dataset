@@ -12,7 +12,7 @@ La información pública disponible es muy limitada: no hay model card técnica 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la informacion; el tag de HuggingFace es `qwen3_5`, lo que sugiere una arquitectura de la familia Qwen 3.5 (no confirmado por el autor) |
+| Arquitectura | No disponible en la informacion; el tag de Hugging Face es `qwen3_5`, lo que sugiere una arquitectura de la familia Qwen 3.5 (no confirmado por el autor) |
 | Parametros totales | 4.205.751.296 (~4,2 B) |
 | Parametros activos | No disponible (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Liamariel/knowline-4b-gen5.5-mlx-q5 | 4,2 B | No disponible | MLX safetensors, 5 bits | Apache-2.0 | Publico en HuggingFace, 0 descargas |
-| PelaAI/KnowLine-4B-Gen5.5 (base) | 4,2 B | No disponible | No disponible en esta ficha | Apache-2.0 | Publico en HuggingFace |
+| Liamariel/knowline-4b-gen5.5-mlx-q5 | 4,2 B | No disponible | MLX safetensors, 5 bits | Apache-2.0 | Publico en Hugging Face, 0 descargas |
+| PelaAI/KnowLine-4B-Gen5.5 (base) | 4,2 B | No disponible | No disponible en esta ficha | Apache-2.0 | Publico en Hugging Face |
 | Otras cuantizaciones del mismo base | 4,2 B | No disponible | No disponible | Apache-2.0 (heredada) | Listadas bajo el tag `base_model:quantized:PelaAI/KnowLine-4B-Gen5` |
 | Alternativas de ~4B de la familia Qwen 3.5 | No disponible en esta ficha | No disponible | No disponible | No disponible | Existen en el ecosistema, sin datos verificados aqui |
 
@@ -86,7 +86,7 @@ No se dispone de resultados de rendimiento comparables entre estas opciones, por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Liamariel/knowline-4b-gen5.5-mlx-q5
+- Repositorio en Hugging Face: https://huggingface.co/Liamariel/knowline-4b-gen5.5-mlx-q5
 - Modelo base: https://huggingface.co/PelaAI/KnowLine-4B-Gen5.5
 - Listado de cuantizaciones del modelo base: https://huggingface.co/models?other=base_model:quantized:PelaAI/KnowLine-4B-Gen5
 - Perfil del autor del modelo base (PelaAI): https://huggingface.co/PelaAI/models

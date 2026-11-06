@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jaydenpenis es un adaptador LoRA de generacion de imagen a partir de texto (text-to-image) publicado por el usuario jaydenjames01 en HuggingFace. Se distribuye como un adaptador para la libreria diffusers y esta disenado para aplicarse sobre el modelo base krea/Krea-2-Turbo, segun declara el propio autor en las etiquetas y en el campo base_model de la model card. El repositorio ocupa aproximadamente 0,1 GB y utiliza una unica palabra de activacion (trigger word), la cadena alfanumerica `JA$D#N1`, que debe incluirse en el prompt para que el adaptador aplique el estilo o concepto aprendido.
+jaydenpenis es un adaptador LoRA de generacion de imagen a partir de texto (text-to-image) publicado por el usuario jaydenjames01 en Hugging Face. Se distribuye como un adaptador para la libreria diffusers y esta disenado para aplicarse sobre el modelo base krea/Krea-2-Turbo, segun declara el propio autor en las etiquetas y en el campo base_model de la model card. El repositorio ocupa aproximadamente 0,1 GB y utiliza una unica palabra de activacion (trigger word), la cadena alfanumerica `JA$D#N1`, que debe incluirse en el prompt para que el adaptador aplique el estilo o concepto aprendido.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: se trata de un adaptador con 12 descargas y 0 likes en el momento de la consulta, sin licencia declarada, sin idiomas declarados y sin resultados de benchmarks publicados. La model card es minima y no documenta el dataset de entrenamiento, el numero de pasos, el rango (rank) del LoRA, el alpha, la tasa de aprendizaje ni ningun otro hiperparametro. No hay informacion sobre el modelo base krea/Krea-2-Turbo en la documentacion proporcionada, por lo que las caracteristicas de arquitectura, tamano y contexto de ese modelo base no pueden confirmarse aqui.
 
@@ -46,7 +46,7 @@ No se dispone de ningun dato sobre el proceso de entrenamiento: ni el numero de 
 - Experimentacion en investigacion sobre personalizacion de modelos de difusion: sirve como ejemplo de adaptador de bajo rango para estudiar como varia la salida en funcion de la escala del LoRA, del prompt y del modelo base.
 - Aplicaciones artisticas personales y demos: el formato diffusers facilita integrarlo en notebooks y scripts de Python para generar variaciones sobre un mismo tema visual.
 - Composicion con otros adaptadores: en flujos de trabajo con diffusers, se puede cargar junto a otros LoRA para combinar estilos, lo que resulta util en pipelines de generacion por capas.
-- Fines educativos: como ejemplo minimo de publicacion de un LoRA en HuggingFace, permite ilustrar que metadatos son imprescindibles (licencia, dataset, hiperparametros) y que ocurre cuando faltan, que es precisamente el caso de este repositorio.
+- Fines educativos: como ejemplo minimo de publicacion de un LoRA en Hugging Face, permite ilustrar que metadatos son imprescindibles (licencia, dataset, hiperparametros) y que ocurre cuando faltan, que es precisamente el caso de este repositorio.
 
 Advertencia transversal: dado que la licencia no esta declarada, ninguno de estos casos deberia llevarse a produccion ni a un contexto comercial sin aclarar previamente los terminos de uso con el autor.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jaydenpenis (este adaptador) | no disponible (0,1 GB de repositorio) | no aplica | no disponible | no disponible | HuggingFace, 12 descargas, 0 likes |
+| jaydenpenis (este adaptador) | no disponible (0,1 GB de repositorio) | no aplica | no disponible | no disponible | Hugging Face, 12 descargas, 0 likes |
 | Otros LoRA para krea/Krea-2-Turbo | no disponible | no aplica | no disponible | no disponible | no disponible |
 | LoRA para otros modelos de difusion text-to-image | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ El modelo base declarado, krea/Krea-2-Turbo, tampoco cuenta con especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydenjames01/jaydenpenis
+- Modelo en Hugging Face: https://huggingface.co/jaydenjames01/jaydenpenis
 - Ficheros y versiones del repositorio: https://huggingface.co/jaydenjames01/jaydenpenis/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio del autor: no disponible

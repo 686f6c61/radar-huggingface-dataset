@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 7B es un modelo de lenguaje de tipo text-to-text, decoder-only, publicado por Google el 8 de febrero de 2024 bajo la familia Gemma. Se distribuye a traves de HuggingFace con pesos abiertos, pero con acceso restringido (gated): es necesario aceptar las condiciones de uso en la plataforma antes de poder descargarlo. El repositorio `google/gemma-7b` corresponde a la variante preentrenada (no ajustada a instrucciones), con 8.537.680.896 parametros reales segun los pesos en safetensors y un tamano de repositorio de 192,5 GB.
+Gemma 7B es un modelo de lenguaje de tipo text-to-text, decoder-only, publicado por Google el 8 de febrero de 2024 bajo la familia Gemma. Se distribuye a traves de Hugging Face con pesos abiertos, pero con acceso restringido (gated): es necesario aceptar las condiciones de uso en la plataforma antes de poder descargarlo. El repositorio `google/gemma-7b` corresponde a la variante preentrenada (no ajustada a instrucciones), con 8.537.680.896 parametros reales segun los pesos en safetensors y un tamano de repositorio de 192,5 GB.
 
 El modelo deriva de la investigacion y la tecnologia empleadas en la familia Gemini, y su objetivo es ofrecer un modelo denso de tamano medio que pueda ejecutarse en infraestructura asequible, incluidas GPU de consumo, manteniendo una calidad competitiva en tareas de generacion de texto, razonamiento y codigo. La ficha oficial declara una ventana de contexto de 8192 tokens y un entrenamiento sobre aproximadamente 6 billones de tokens de datos predominantemente en ingles, con fecha de corte de conocimiento en febrero de 2023.
 
@@ -20,7 +20,7 @@ Su relevancia actual radica en tres factores: la licencia Gemma permite uso come
 | Idiomas soportados | Principalmente ingles (la ficha oficial indica disponibilidad en ingles); el campo de idiomas del repositorio figura como no disponible |
 | Licencia | `gemma` (Gemma Terms of Use), con politica de uso prohibido asociada y uso comercial permitido bajo condiciones |
 | Formato de pesos | safetensors y GGUF; repo de 192,5 GB con multiples variantes |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Libreria | transformers |
 | Pipeline | text-generation |
 | Fecha de publicacion | 2024-02-08 (ultima actualizacion: 2024-06-27) |
@@ -73,9 +73,9 @@ No se han publicado los valores numericos de benchmarks en la informacion dispon
 
 | Modelo | Parametros | Contexto | Licencia | Acceso | Rendimiento |
 |---|---|---|---|---|---|
-| Gemma 7B | 8,54 B | 8192 tokens | Gemma Terms of Use (comercial con condiciones) | Gated en HuggingFace | Valores no disponibles en la informacion proporcionada |
+| Gemma 7B | 8,54 B | 8192 tokens | Gemma Terms of Use (comercial con condiciones) | Gated en Hugging Face | Valores no disponibles en la informacion proporcionada |
 | Mistral 7B v0.1 | 7,3 B (referencia publica) | 8192 tokens con ventana deslizante de 4096 | Apache 2.0 | Abierto | No disponible en la informacion proporcionada |
-| Llama 2 7B | 6,7 B (referencia publica) | 4096 tokens | Llama 2 Community License | Gated en HuggingFace | No disponible en la informacion proporcionada |
+| Llama 2 7B | 6,7 B (referencia publica) | 4096 tokens | Llama 2 Community License | Gated en Hugging Face | No disponible en la informacion proporcionada |
 | Qwen1.5-7B | 7,7 B (referencia publica) | 32768 tokens | Apache 2.0 (segun su ficha) | Abierto | No disponible en la informacion proporcionada |
 
 Nota: los datos de los modelos alternativos proceden de sus fichas publicas y no de la informacion proporcionada en esta busqueda; se incluyen solo como contexto de categoria. No se dispone de comparativas numericas de rendimiento verificadas en la informacion disponible.
@@ -89,14 +89,14 @@ Nota: los datos de los modelos alternativos proceden de sus fichas publicas y no
 - Sesgos: al entrenarse sobre datos web a gran escala, puede reproducir estereotipos y sesgos sociales, demograficos y culturales presentes en esos datos. No se detallan en la informacion disponible las medidas de mitigacion aplicadas.
 - Contexto limitado: 8192 tokens. Tareas que requieran documentos o historiales mas largos necesitan tecnicas de troceado, recuperacion o extension de contexto, con el coste adicional correspondiente.
 - Licencia: la Gemma Terms of Use permite uso comercial, pero impone obligaciones de distribucion de los terminos y una politica de uso prohibido que restringe determinados casos (por ejemplo, usos daninos, vigilancia masiva o aplicaciones de alto riesgo). Es imprescindible revisar los terminos antes de un despliegue en produccion.
-- Acceso restringido: la descarga requiere aceptar condiciones en HuggingFace, lo que anade friccion a pipelines automatizados y a la reproducibilidad de experimentos.
+- Acceso restringido: la descarga requiere aceptar condiciones en Hugging Face, lo que anade friccion a pipelines automatizados y a la reproducibilidad de experimentos.
 - Sin capacidades multimodales: no procesa imagenes ni audio.
 - Tension de memoria en produccion: en bfloat16 y con contexto completo, el modelo ocupa cerca de 19 GB, lo que deja poco margen en GPU de 24 GB si se comparte con otros procesos o se aumenta el batch.
 - No se documentan en la informacion disponible garantias de seguridad, filtros de salida ni evaluaciones de red teaming especificas para esta variante.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/google/gemma-7b
+- Modelo en Hugging Face: https://huggingface.co/google/gemma-7b
 - Referencia a la familia Gemini (etiqueta del repositorio): https://arxiv.org/abs/2312.11805
 - QLoRA (etiqueta del repositorio): https://arxiv.org/abs/2305.14314
 - MMLU (etiqueta del repositorio): https://arxiv.org/abs/2009.03300

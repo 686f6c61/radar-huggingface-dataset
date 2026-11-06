@@ -116,7 +116,7 @@ El autor describe el resultado sobre el corpus v1 como el caso negativo de contr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CorpusV2
+- Modelo en Hugging Face: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CorpusV2
 - Repositorio OpenGrad: https://github.com/arjhinety/OpenGrad
 - Dataset del corpus canónico: https://huggingface.co/datasets/arrochi112/OpenGrad-ToolPolicy-Canonical-v1
 - Modelo base Qwen/Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B

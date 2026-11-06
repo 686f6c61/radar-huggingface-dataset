@@ -26,7 +26,7 @@ Su relevancia actual radica en el rendimiento declarado en SWE-bench Verified: 4
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only denso, sin mezcla de expertos, heredado directamente de la familia Mistral-Small-3.1. El ajuste fino parte de Mistral-Small-3.1 y elimina el codificador de visión del modelo original, de modo que el resultado es un modelo unimodal de texto con la misma ventana de contexto de 128.000 tokens que el modelo base. Las etiquetas de HuggingFace apuntan a `mistralai/Mistral-Small-3.1-24B-Instruct-2503` como modelo base del ajuste, mientras que la model card cita Mistral-Small-3.1 de forma genérica; esta discrepancia entre la variante Base y la Instruct conviene tenerla en cuenta al reproducir el entrenamiento.
+La arquitectura es un transformer decoder-only denso, sin mezcla de expertos, heredado directamente de la familia Mistral-Small-3.1. El ajuste fino parte de Mistral-Small-3.1 y elimina el codificador de visión del modelo original, de modo que el resultado es un modelo unimodal de texto con la misma ventana de contexto de 128.000 tokens que el modelo base. Las etiquetas de Hugging Face apuntan a `mistralai/Mistral-Small-3.1-24B-Instruct-2503` como modelo base del ajuste, mientras que la model card cita Mistral-Small-3.1 de forma genérica; esta discrepancia entre la variante Base y la Instruct conviene tenerla en cuenta al reproducir el entrenamiento.
 
 El entrenamiento se realiza en colaboración con All Hands AI y está orientado explícitamente a tareas de ingeniería de software con uso de herramientas: exploración de código, edición de varios archivos y ejecución de ciclos agénticos. La model card no detalla el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon etapas de RLHF o DPO por encima del ajuste supervisado; estos datos figuran como no disponibles. Entre las decisiones técnicas destacables están el tokenizador Tekken de 131.000 entradas y la recomendación de ejecutarlo con el scaffold OpenHands, que es el entorno con el que se reportan los resultados de SWE-bench.
 
@@ -76,7 +76,7 @@ La model card indica que, evaluado bajo el mismo scaffold OpenHands, Devstral su
 
 | Modelo | Parámetros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Devstral Small 1.0 | 23,6 B (denso) | 128k | 46,8 % (OpenHands) | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Devstral Small 1.0 | 23,6 B (denso) | 128k | 46,8 % (OpenHands) | Apache 2.0 | Pesos abiertos en Hugging Face |
 | SWE-smith-LM 32B | No disponible en la información proporcionada | No disponible | 40,2 % (SWE-agent) | No disponible | No disponible |
 | Claude 3.5 Haiku | No disponible | No disponible | 40,6 % (scaffold propio) | Propietaria | Solo API |
 | GPT-4.1-mini | No disponible | No disponible | 23,6 % (scaffold propio) | Propietaria | Solo API |
@@ -90,7 +90,7 @@ Advertencia metodológica: las puntuaciones de SWE-bench dependen fuertemente de
 - La model card y las cifras de rendimiento proceden del fabricante; no hay evaluación independiente recogida en la información disponible.
 - Esta ficha corresponde a la réplica `CollectionStudio/Devstral-Small-2505`, con 0 descargas y 0 likes, sin verificación de integridad de los pesos publicada. Para uso en producción es preferible el repositorio oficial `mistralai/Devstral-Small-2505`.
 - El repositorio ocupa 94,3 GB, aproximadamente el doble del peso teórico de un modelo de 23,6 B en BF16, lo que sugiere duplicación de pesos o archivos adicionales; conviene revisar el contenido antes de descargarlo.
-- Las etiquetas de HuggingFace marcan `inference: false`, aunque la model card describe comandos de inferencia y la librería declarada es vLLM.
+- Las etiquetas de Hugging Face marcan `inference: false`, aunque la model card describe comandos de inferencia y la librería declarada es vLLM.
 - Riesgo de alucinación en código: como cualquier modelo generativo, puede producir APIs inexistentes, firmas incorrectas o parches que compilan pero no resuelven el problema. Se requiere ejecución real de tests antes de aceptar cualquier cambio.
 - El codificador de visión fue eliminado, por lo que el modelo no hereda las capacidades multimodales de Mistral-Small-3.1.
 - La lista de 24 idiomas indica cobertura declarada, no calidad homogénea; no se publican evaluaciones por idioma y el ajuste está orientado a código en inglés.
@@ -101,7 +101,7 @@ Advertencia metodológica: las puntuaciones de SWE-bench dependen fuertemente de
 
 ## Enlaces
 
-- Réplica en HuggingFace: https://huggingface.co/CollectionStudio/Devstral-Small-2505
+- Réplica en Hugging Face: https://huggingface.co/CollectionStudio/Devstral-Small-2505
 - Repositorio oficial de Mistral AI: https://huggingface.co/mistralai/Devstral-Small-2505
 - Modelo base citado en la model card: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Modelo base declarado en las etiquetas: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
@@ -111,7 +111,7 @@ Advertencia metodológica: las puntuaciones de SWE-bench dependen fuertemente de
 - Documentación de la API de Mistral: https://docs.mistral.ai/getting-started/quickstart/
 - vLLM: https://github.com/vllm-project/vllm
 - mistral-inference: https://github.com/mistralai/mistral-inference
-- Transformers de HuggingFace: https://huggingface.co/docs/transformers
+- Transformers de Hugging Face: https://huggingface.co/docs/transformers
 - LM Studio: https://lmstudio.ai/
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Ollama: https://github.com/ollama/ollama

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como hengloem/Hoooooli es un repositorio alojado en HuggingFace por el usuario hengloem. La informacion publica disponible es practicamente inexistente: el repositorio no incluye model card con descripcion tecnica, no declara pipeline de inferencia, no especifica idiomas soportados y no aporta ningun dato sobre arquitectura, tamano o proceso de entrenamiento. El unico metadato relevante es la licencia MIT y la etiqueta de region "us".
+El modelo identificado como hengloem/Hoooooli es un repositorio alojado en Hugging Face por el usuario hengloem. La informacion publica disponible es practicamente inexistente: el repositorio no incluye model card con descripcion tecnica, no declara pipeline de inferencia, no especifica idiomas soportados y no aporta ningun dato sobre arquitectura, tamano o proceso de entrenamiento. El unico metadato relevante es la licencia MIT y la etiqueta de region "us".
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", y fue creado y actualizado en la misma marca temporal (2026-09-30T15:01:57Z), lo que sugiere un artefacto recien subido, posiblemente de prueba, y sin adopcion por parte de la comunidad. No se puede confirmar que contenga pesos utilizables, configuracion de modelo ni tokenizador.
 
@@ -73,6 +73,6 @@ No disponible. Al no conocerse parametros, contexto, arquitectura ni rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hengloem/Hoooooli
+- Repositorio en Hugging Face: https://huggingface.co/hengloem/Hoooooli
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - Los resultados devueltos por la busqueda web corresponden a sitios de contenido para adultos sin relacion con el modelo y se omiten por no ser fuentes relevantes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tank es un repositorio publicado en HuggingFace por el usuario boobootaco bajo el identificador `boobootaco/Tank`. La unica informacion tecnica verificable que acompana al modelo es su etiqueta de pipeline (`automatic-speech-recognition`) y su licencia (GPL-3.0); la model card no contiene descripcion, arquitectura, tamano, idiomas ni instrucciones de uso mas alla del bloque de metadatos YAML. Se trata, por tanto, de un repositorio practicamente indocumentado en el momento de redactar esta ficha.
+Tank es un repositorio publicado en Hugging Face por el usuario boobootaco bajo el identificador `boobootaco/Tank`. La unica informacion tecnica verificable que acompana al modelo es su etiqueta de pipeline (`automatic-speech-recognition`) y su licencia (GPL-3.0); la model card no contiene descripcion, arquitectura, tamano, idiomas ni instrucciones de uso mas alla del bloque de metadatos YAML. Se trata, por tanto, de un repositorio practicamente indocumentado en el momento de redactar esta ficha.
 
 El modelo se enmarca en la categoria de reconocimiento automatico del habla (ASR), es decir, conversion de audio en texto. No se ha publicado informacion sobre el numero de parametros, la arquitectura subyacente (transformer encoder-decoder, CTC, Conformer, etc.), el corpus de entrenamiento ni los idiomas cubiertos. Tampoco hay resultados de evaluacion ni ejemplos de inferencia en la informacion disponible.
 
@@ -112,6 +112,6 @@ La conclusion practica es que, sin datos publicados de Tank, cualquier eleccion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/boobootaco/Tank
+- Repositorio en Hugging Face: https://huggingface.co/boobootaco/Tank
 - Documentacion, paper, repositorio de codigo o demo: no disponibles
 - Resultados de busqueda web relevantes: no se ha encontrado ninguno; la busqueda no devolvio informacion relacionada con el modelo.

@@ -84,5 +84,5 @@ No se dispone de datos de benchmarks ni de modelos comparables documentados en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VladHong/Qwen3.5-9B-Melancholy-Viber-GGUF
+- Modelo en Hugging Face: https://huggingface.co/VladHong/Qwen3.5-9B-Melancholy-Viber-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

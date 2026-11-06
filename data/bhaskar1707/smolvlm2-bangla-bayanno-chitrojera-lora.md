@@ -21,7 +21,7 @@ La relevancia de este modelo radica en que aborda un idioma de bajos recursos (b
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre SmolVLM2-2.2B-Instruct, un modelo de vision-lenguaje de la familia SmolVLM2 de HuggingFace. El adaptador se entrena mediante PEFT (Parameter-Efficient Fine-Tuning), lo que permite ajustar el modelo con un coste computacional reducido. El entrenamiento se realizó en el experimento 2 del proyecto, combinando dos datasets de VQA bengalí: Bangla-Bayanno (53 817 registros QA, 4 717 imágenes únicas) y ChitroJera (12 231 registros QA, 12 231 imágenes únicas). El tiempo de entrenamiento fue de 0,82 horas, con un tiempo de evaluación de 2,72 horas. No se especifica el uso de RLHF, DPO ni otras técnicas de alineación; el ajuste es supervisado sobre los pares pregunta-respuesta de los datasets.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) aplicado sobre SmolVLM2-2.2B-Instruct, un modelo de vision-lenguaje de la familia SmolVLM2 de Hugging Face. El adaptador se entrena mediante PEFT (Parameter-Efficient Fine-Tuning), lo que permite ajustar el modelo con un coste computacional reducido. El entrenamiento se realizó en el experimento 2 del proyecto, combinando dos datasets de VQA bengalí: Bangla-Bayanno (53 817 registros QA, 4 717 imágenes únicas) y ChitroJera (12 231 registros QA, 12 231 imágenes únicas). El tiempo de entrenamiento fue de 0,82 horas, con un tiempo de evaluación de 2,72 horas. No se especifica el uso de RLHF, DPO ni otras técnicas de alineación; el ajuste es supervisado sobre los pares pregunta-respuesta de los datasets.
 
 ## Capacidades
 

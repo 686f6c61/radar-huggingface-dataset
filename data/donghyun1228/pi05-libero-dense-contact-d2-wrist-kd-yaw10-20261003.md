@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05-libero-dense-contact-d2-wrist-kd-yaw10) | VLA pi0.5 ajustada a LIBERO | no disponible | no disponible | no disponible | HuggingFace, 12,4 GB, 0 descargas |
+| Este modelo (pi05-libero-dense-contact-d2-wrist-kd-yaw10) | VLA pi0.5 ajustada a LIBERO | no disponible | no disponible | no disponible | Hugging Face, 12,4 GB, 0 descargas |
 | pi0.5 base (Physical Intelligence) | VLA pi0.5 original | no disponible en esta ficha | no disponible | no disponible | no verificado en la información proporcionada |
 | pi0 (Physical Intelligence) | VLA predecesora | no disponible en esta ficha | no disponible | no disponible | no verificado en la información proporcionada |
 
@@ -85,7 +85,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003
+- Repositorio Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003
 - Dataset objetivo: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-yaw10-20261003
 - Dataset fuente: `Donghyun1228/libero-dense-contact-sweep-d2-20261002` (commit `9f8f600ce0e8f5df51c0e847c65a1e09f29d8494`)
 - Archivo de configuración de entrenamiento: `training_configuration.json` (incluido en el repositorio)

@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henryhale/Kintu-2.0-30M
+- Modelo en Hugging Face: https://huggingface.co/henryhale/Kintu-2.0-30M
 - Modelo base: https://huggingface.co/henryhale/Kintu-2.0-30M-Base
 - Predecesor: https://huggingface.co/henryhale/Kintu-1.0-39M
 - Dataset de SFT: https://huggingface.co/datasets/henryhale/luganda-sft-translated

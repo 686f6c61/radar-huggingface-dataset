@@ -77,7 +77,7 @@ No se dispone de informacion sobre otros fixtures comparables ni sobre el rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/NVIDIA-Nemotron-3-Nano-4B-BF16-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/NVIDIA-Nemotron-3-Nano-4B-BF16-mic
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Como se genero el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/NVIDIA-Nemotron-3-Nano-4B-BF16-mic.html
 - Repositorio transformers-mic: https://github.com/huggingface/transformers-mic

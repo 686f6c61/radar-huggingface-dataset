@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-lunaluna-v1-lunarlander es un agente de aprendizaje por refuerzo profundo entrenado con DQN (Deep Q-Network) para resolver el entorno LunarLander-v3 de Gymnasium, cuyo objetivo es aterrizar de forma controlada una nave en una plataforma. El modelo lo publica el usuario Luna002-Luna75 en HuggingFace, en el marco de un programa formativo de CONNECT AI LAB y AI CITY BUILDERS, y no es un modelo de lenguaje ni un transformer generativo: es una red neuronal densa de muy pequeno tamano que aproxima la funcion Q de un agente de control.
+connectailab-rl-lunaluna-v1-lunarlander es un agente de aprendizaje por refuerzo profundo entrenado con DQN (Deep Q-Network) para resolver el entorno LunarLander-v3 de Gymnasium, cuyo objetivo es aterrizar de forma controlada una nave en una plataforma. El modelo lo publica el usuario Luna002-Luna75 en Hugging Face, en el marco de un programa formativo de CONNECT AI LAB y AI CITY BUILDERS, y no es un modelo de lenguaje ni un transformer generativo: es una red neuronal densa de muy pequeno tamano que aproxima la funcion Q de un agente de control.
 
 El agente recibe un vector de estado de 8 dimensiones (posicion x e y, velocidad x e y, inclinacion, velocidad angular y contacto de cada una de las dos patas) y emite una de cuatro acciones discretas (no hacer nada, encender motor izquierdo, encender motor central, encender motor derecho). La red tiene una arquitectura minima de 8 -> 128 -> 128 -> 4 con activaciones ReLU, entrenada durante 200.000 pasos con una tasa de aprendizaje de 0,0005, factor de descuento 0,99, epsilon de exploracion inicial 0,3, actualizacion de la red objetivo cada 500 pasos y tamano de lote 128.
 
@@ -42,7 +42,7 @@ No se especifica en la informacion disponible la composicion exacta del buffer d
 - Docencia de aprendizaje por refuerzo: el modelo sirve como ejemplo completo y ejecutable de un DQN entrenado, util para explicar en clase el bucle estado-accion-recompensa y la actualizacion de la red objetivo.
 - Reproduccion de experimentos de RL: investigadores pueden cargar el state_dict y evaluar el agente en LunarLander-v3 para comparar con sus propias implementaciones de DQN.
 - Benchmark de referencia para entornos de control: al declarar una recompensa media de 233,6 en 10 episodios no vistos, puede usarse como linea base en pruebas de algoritmos de RL mas avanzados (Double DQN, PPO, SAC).
-- Demostracion de despliegue en HuggingFace Hub: el ejemplo de carga con `hf_hub_download` y `torch.load` muestra el flujo tipico de publicacion y consumo de pesos de RL en el Hub.
+- Demostracion de despliegue en Hugging Face Hub: el ejemplo de carga con `hf_hub_download` y `torch.load` muestra el flujo tipico de publicacion y consumo de pesos de RL en el Hub.
 - Generacion de video de replay: el repositorio incluye `replay.mp4`, util para presentaciones o material divulgativo sobre agentes de RL.
 - Prototipado de pipelines de evaluacion: sirve para probar infraestructura de evaluacion de agentes (entornos, semillas, metricas de recompensa media) sin coste computacional apreciable.
 - Base para transferencia o fine-tuning en variantes del entorno: al ser una red pequena, puede reentrenarse rapidamente para entornos similares de control con espacio de acciones discreto.
@@ -67,7 +67,7 @@ Los datos proceden de la model card del autor y no estan verificados de forma in
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-lunaluna-v1-lunarlander | DQN (MLP) | ~18.000 | No aplica | 233,6 recompensa media (10 episodios) | No disponible | HuggingFace |
+| connectailab-rl-lunaluna-v1-lunarlander | DQN (MLP) | ~18.000 | No aplica | 233,6 recompensa media (10 episodios) | No disponible | Hugging Face |
 | Agentes DQN de referencia en LunarLander-v3 | DQN (MLP) | Similar (~18.000) | No aplica | Variable segun implementacion | Segun implementacion | Multiples repositorios |
 | Agentes PPO en LunarLander-v3 | PPO (MLP) | Similar | No aplica | Variable segun implementacion | Segun implementacion | Stable-Baselines3 y otros |
 | Agentes SAC en LunarLander-v3 | SAC (MLP) | Similar | No aplica | Variable segun implementacion | Segun implementacion | Stable-Baselines3 y otros |
@@ -87,7 +87,7 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-lunarlander
+- Hugging Face: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-lunarlander
 - CONNECT AI LAB (GitHub): https://github.com/wonseokjung/connect-tycoon
 - AI CITY BUILDERS (curso de RL): https://www.aicitybuilders.com/robot
 - Entorno LunarLander-v3 de Gymnasium: no disponible en la informacion proporcionada

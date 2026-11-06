@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wweberfinn/mocov3-classification-int4` es un repositorio de HuggingFace publicado por el usuario Finn Weber que contiene una implementacion experimental de una arquitectura basada en MoCo v3 para tareas de clasificacion. El autor lo describe explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado en ningun benchmark. El repositorio se completa con `main.py` (artefacto principal), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto) y el propio `README.md`.
+`wweberfinn/mocov3-classification-int4` es un repositorio de Hugging Face publicado por el usuario Finn Weber que contiene una implementacion experimental de una arquitectura basada en MoCo v3 para tareas de clasificacion. El autor lo describe explicitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado en ningun benchmark. El repositorio se completa con `main.py` (artefacto principal), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto) y el propio `README.md`.
 
 La ficha oficial declara una arquitectura MoCo v3 a escala "giant", con atencion lineal, fusion por co-attention, activacion ReLU y normalizacion ScaleNorm. El entrenamiento por defecto usa SGD con un schedule de tipo step, aunque el autor advierte que son valores iniciales del script y no evidencia de una ejecucion completada. No se reclama ninguna puntuacion de benchmark ni se documenta un conjunto de datos de entrenamiento.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wweberfinn/mocov3-classification-int4 | 49.600 (safetensors) | no aplica | sin benchmark declarado | bsd-3-clause | HuggingFace, 0 descargas |
-| emmalamb/mocov3-classification | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| wweberfinn/mocov3-classification-int4 | 49.600 (safetensors) | no aplica | sin benchmark declarado | bsd-3-clause | Hugging Face, 0 descargas |
+| emmalamb/mocov3-classification | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 | facebookresearch/moco-v3 (MoCo v3 oficial, ResNet y ViT) | no disponible en la informacion proporcionada | no disponible | resultados de linear probing y fine-tuning en ImageNet segun el paper | no disponible en la informacion proporcionada | GitHub |
 
 No se dispone de cifras comparables de parametros, contexto o rendimiento para el resto de alternativas dentro de la informacion proporcionada. La comparacion relevante es metodologica: el repositorio de Meta implementa MoCo v3 en PyTorch y reproduce los resultados del paper original, mientras que este repositorio introduce variantes de arquitectura sin resultados publicados y con un checkpoint sin entrenar.
@@ -86,8 +86,8 @@ No se dispone de cifras comparables de parametros, contexto o rendimiento para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wweberfinn/mocov3-classification-int4
+- Modelo en Hugging Face: https://huggingface.co/wweberfinn/mocov3-classification-int4
 - Perfil del autor: https://huggingface.co/wweberfinn
-- Repositorio relacionado en HuggingFace: https://huggingface.co/emmalamb/mocov3-classification
+- Repositorio relacionado en Hugging Face: https://huggingface.co/emmalamb/mocov3-classification
 - Paper de MoCo v3 ("An Empirical Study of Training Self-Supervised Vision Transformers"): https://arxiv.org/pdf/2104.02057
 - Implementacion oficial de MoCo v3 en PyTorch: https://github.com/facebookresearch/moco-v3

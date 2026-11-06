@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos comparables especificos en el dominio
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Elinnos/elinnos-sv-v7-ahb-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Elinnos/elinnos-sv-v7-ahb-GGUF
 - Modelo base fusionado: https://huggingface.co/Elinnos/elinnos-sv-v7-ahb-merged
 - Modelo original (model card completa): https://huggingface.co/Elinnos/elinnos-sv-v7-ahb
 - Entrada en Ollama: https://ollama.com/pkelinnos/elinnos-sv-v7-ahb:latest

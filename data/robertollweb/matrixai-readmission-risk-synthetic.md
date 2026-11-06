@@ -78,7 +78,7 @@ No disponible. Al ser un modelo de demostración con datos sintéticos y una arq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robertollweb/matrixai-readmission-risk-synthetic
+- Hugging Face: https://huggingface.co/robertollweb/matrixai-readmission-risk-synthetic
 - Repositorio GitHub del proyecto MatrixAI: https://github.com/robertollweb/matrixAI
 - Perfil de GitHub del autor: https://github.com/robertollweb
 - Paquete PyPI `matrixai-core`: https://pypi.org/project/matrixai-core/

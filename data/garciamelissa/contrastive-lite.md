@@ -67,7 +67,7 @@ No se dispone de datos verificables de benchmarks, contexto o rendimiento de mod
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| contrastive-lite (garciamelissa) | 24.832 | No disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace, checkpoint de inicialización |
+| contrastive-lite (garciamelissa) | 24.832 | No disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face, checkpoint de inicialización |
 | Beit original (Bao et al.) | No disponible en la información proporcionada (referencia cualitativa: cientos de millones en las variantes base y large) | No disponible | No disponible | No disponible | Publicaciones y repositorios del autor original |
 | Alternativas contrastivas tipo CLIP o SimCLR | No disponible en la información proporcionada | No disponible | No disponible | No disponible | Múltiples repositorios públicos |
 
@@ -86,6 +86,6 @@ No se han encontrado en la búsqueda web modelos comparables con datos verificab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/garciamelissa/contrastive-lite
+- Hugging Face: https://huggingface.co/garciamelissa/contrastive-lite
 - Ficheros del repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Búsqueda web: no se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en los resultados disponibles.

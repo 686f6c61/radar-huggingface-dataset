@@ -76,6 +76,6 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- [HuggingFace - hoborific/gemma-4-31B-it-scotoma-2-W8A16-FP8](https://huggingface.co/hoborific/gemma-4-31B-it-scotoma-2-W8A16-FP8)
+- [Hugging Face - hoborific/gemma-4-31B-it-scotoma-2-W8A16-FP8](https://huggingface.co/hoborific/gemma-4-31B-it-scotoma-2-W8A16-FP8)
 - [Modelo base - ReadyArt/gemma-4-31B-it-scotoma-2](https://huggingface.co/ReadyArt/gemma-4-31B-it-scotoma-2)
 - [compressed-tensors (librería de cuantización)](https://github.com/neuralmagic/compressed-tensors)

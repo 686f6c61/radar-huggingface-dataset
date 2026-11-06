@@ -83,7 +83,7 @@ La comparación con Qwen3-4B se basa en el mismo tamaño de parámetros y la arq
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/Irfanuruchi/Polaris-V1-MLX-4bit
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/Irfanuruchi/Polaris-V1-MLX-4bit
 - Modelo base: https://huggingface.co/nitrai-research/Polaris-V1
 - Perfil del autor de la conversión: https://huggingface.co/Irfanuruchi
 - Perfil de GitHub del autor: https://github.com/IrfanUruchi/

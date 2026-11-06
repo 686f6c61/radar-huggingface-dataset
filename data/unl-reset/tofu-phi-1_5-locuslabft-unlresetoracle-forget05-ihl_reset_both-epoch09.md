@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| **Este modelo** (`unl-reset/tofu-phi-1_5-...-epoch09`) | 1.418 M | no disponible | apache-2.0 | HuggingFace (0 descargas) | Unlearning TOFU, checkpoint intermedio |
-| `microsoft/phi-1_5` | 1.300 M | 2.048 tokens (típico de la familia) | MIT | HuggingFace, ampliamente usado | Modelo base de código y texto |
-| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | apache-2.0 | HuggingFace | Fine-tuning sobre TOFU (modelo "a olvidar") |
-| `microsoft/phi-2` | 2.700 M | 2.048 tokens | MIT | HuggingFace | Modelo base más grande, mejor rendimiento general |
+| **Este modelo** (`unl-reset/tofu-phi-1_5-...-epoch09`) | 1.418 M | no disponible | apache-2.0 | Hugging Face (0 descargas) | Unlearning TOFU, checkpoint intermedio |
+| `microsoft/phi-1_5` | 1.300 M | 2.048 tokens (típico de la familia) | MIT | Hugging Face, ampliamente usado | Modelo base de código y texto |
+| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | apache-2.0 | Hugging Face | Fine-tuning sobre TOFU (modelo "a olvidar") |
+| `microsoft/phi-2` | 2.700 M | 2.048 tokens | MIT | Hugging Face | Modelo base más grande, mejor rendimiento general |
 
 La comparación relevante es con `locuslab/tofu_ft_phi-1.5` (el modelo del que deriva y cuyo conocimiento se pretende eliminar) y con `microsoft/phi-1_5` (origen de los pesos reinicializados). Frente a `phi-2`, este checkpoint es significativamente más pequeño y está especializado en una tarea de investigación, no en uso general.
 
@@ -88,7 +88,7 @@ La comparación relevante es con `locuslab/tofu_ft_phi-1.5` (el modelo del que d
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch09](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch09)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch09](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch09)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - Paper de TOFU (benchmark de unlearning): no disponible en la información proporcionada

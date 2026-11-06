@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hotorigogi/act_doll_32ep` es una politica de robótica entrenada con ACT (Action Chunking with Transformers), el método de aprendizaje por imitación descrito en el paper arXiv:2304.13705. No es un modelo de lenguaje: es una politica visomotora que consume el estado del robot (6 dimensiones) y dos flujos de imagen (camara cenital y camara de muneca, ambas a 480x640) y produce un vector de accion de 6 dimensiones, pensado para un brazo tipo `so_follower` (familia SO-100/SO-101 de bajo coste). El autor es el usuario de HuggingFace `hotorigogi` y el artefacto se ha generado con LeRobot 0.6.2.
+`hotorigogi/act_doll_32ep` es una politica de robótica entrenada con ACT (Action Chunking with Transformers), el método de aprendizaje por imitación descrito en el paper arXiv:2304.13705. No es un modelo de lenguaje: es una politica visomotora que consume el estado del robot (6 dimensiones) y dos flujos de imagen (camara cenital y camara de muneca, ambas a 480x640) y produce un vector de accion de 6 dimensiones, pensado para un brazo tipo `so_follower` (familia SO-100/SO-101 de bajo coste). El autor es el usuario de Hugging Face `hotorigogi` y el artefacto se ha generado con LeRobot 0.6.2.
 
 El checkpoint tiene 51.668.614 parametros (unos 51,7 M) y un repositorio de 0,2 GB en formato safetensors. Se ha entrenado durante 100.000 pasos con batch de 8, optimizador AdamW y tasa de aprendizaje 1e-5 sobre el dataset `hotorigogi/doll_pick_and_place`, compuesto por 32 episodios y 14.318 fotogramas grabados a 30 FPS para la tarea "Pick and place the doll".
 
@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo de politica | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `hotorigogi/act_doll_32ep` | 51,7 M | ACT (chunking de acciones, CVAE + transformer) | Apache 2.0 | HuggingFace Hub, 0 descargas y 0 likes en el momento de la consulta |
+| `hotorigogi/act_doll_32ep` | 51,7 M | ACT (chunking de acciones, CVAE + transformer) | Apache 2.0 | Hugging Face Hub, 0 descargas y 0 likes en el momento de la consulta |
 | Diffusion Policy (integrada en LeRobot) | no disponible | Politica generativa por difusion sobre observaciones visuales | no disponible en la informacion proporcionada | Disponible como opcion `--policy.type=diffusion` en LeRobot |
-| SmolVLA (HuggingFace) | no disponible en la informacion proporcionada | Vision-language-action con soporte de instrucciones en lenguaje | no disponible en la informacion proporcionada | Disponible a traves del ecosistema LeRobot |
+| SmolVLA (Hugging Face) | no disponible en la informacion proporcionada | Vision-language-action con soporte de instrucciones en lenguaje | no disponible en la informacion proporcionada | Disponible a traves del ecosistema LeRobot |
 | ACT generico de LeRobot | misma arquitectura base que este checkpoint | ACT | Apache 2.0 (LeRobot) | Ejemplos y guias oficiales en la documentacion de LeRobot |
 
 No se dispone de cifras verificables de rendimiento comparado entre estas alternativas dentro de la informacion proporcionada. La diferencia funcional principal es que `act_doll_32ep` esta especializado en una unica tarea y un unico montaje de camaras, mientras que propuestas como SmolVLA aceptan instrucciones en lenguaje natural y apuntan a generalizacion entre tareas. ACT frente a Diffusion Policy es una comparacion clasica en la literatura de imitacion, pero cualquier conclusion sobre tasas de exito en esta tarea concreta requeriria una evaluacion en robot real que el autor no ha publicado.
@@ -106,7 +106,7 @@ No se dispone de cifras verificables de rendimiento comparado entre estas altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotorigogi/act_doll_32ep
+- Modelo en Hugging Face: https://huggingface.co/hotorigogi/act_doll_32ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotorigogi/doll_pick_and_place
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

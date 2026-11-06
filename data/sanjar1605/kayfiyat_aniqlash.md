@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kayfiyat_aniqlash` es un clasificador de sentimiento en tres clases (positivo, negativo, neutro) para uzbeko, desarrollado por el usuario Sanjar1605 y publicado en HuggingFace. Se trata de un fine-tuning de `FacebookAI/xlm-roberta-base`, un transformer encoder multilingüe de 278 millones de parámetros, sobre un conjunto de frases en uzbeko centrado en la temática de la vida universitaria.
+`kayfiyat_aniqlash` es un clasificador de sentimiento en tres clases (positivo, negativo, neutro) para uzbeko, desarrollado por el usuario Sanjar1605 y publicado en Hugging Face. Se trata de un fine-tuning de `FacebookAI/xlm-roberta-base`, un transformer encoder multilingüe de 278 millones de parámetros, sobre un conjunto de frases en uzbeko centrado en la temática de la vida universitaria.
 
 El modelo resuelve una tarea concreta y de alcance limitado: asignar una etiqueta de polaridad a una frase corta en uzbeko. Su relevancia es principalmente didáctica, ya que el propio autor lo declara como un experimento de fine-tuning con fines de aprendizaje y advierte de que el dataset es muy reducido.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Sanjar1605/kayfiyat_aniqlash` | 278 M | no disponible | Clasificación de sentimiento en uzbeko | MIT | HuggingFace |
-| `FacebookAI/xlm-roberta-base` | 278 M | 512 tokens | Modelo base multilingüe (no clasificador) | MIT | HuggingFace |
-| `xlm-roberta-base` fine-tuneado en sentimiento multilingüe | ~278 M | 512 tokens | Clasificación de sentimiento | variable | HuggingFace |
+| `Sanjar1605/kayfiyat_aniqlash` | 278 M | no disponible | Clasificación de sentimiento en uzbeko | MIT | Hugging Face |
+| `FacebookAI/xlm-roberta-base` | 278 M | 512 tokens | Modelo base multilingüe (no clasificador) | MIT | Hugging Face |
+| `xlm-roberta-base` fine-tuneado en sentimiento multilingüe | ~278 M | 512 tokens | Clasificación de sentimiento | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables de otros clasificadores específicos de uzbeko en la información proporcionada.
 
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento comparables de otros clasificadores espec�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Sanjar1605/kayfiyat_aniqlash)
+- [Modelo en Hugging Face](https://huggingface.co/Sanjar1605/kayfiyat_aniqlash)
 - [Modelo base XLM-RoBERTa](https://huggingface.co/FacebookAI/xlm-roberta-base)

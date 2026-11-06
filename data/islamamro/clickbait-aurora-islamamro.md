@@ -31,7 +31,7 @@ El entrenamiento se realizó sobre un conjunto de datos pequeño y curado de tit
 
 - Clasificacion binaria de titulares: devuelve una probabilidad de que un titular sea *clickbait* frente a genuino.
 - Procesamiento de texto en ingles con tokenizacion uncased (minusculas).
-- Salida de clasificacion de texto estandar mediante el pipeline de HuggingFace `text-classification`.
+- Salida de clasificacion de texto estandar mediante el pipeline de Hugging Face `text-classification`.
 - No soporta generacion de texto, tool calling, agentes, vision, audio ni capacidades multilingues.
 - No se ha documentado ningun modo de razonamiento especial ni funcionalidad avanzada.
 
@@ -60,7 +60,7 @@ Estos valores se obtuvieron sobre un conjunto de datos pequeno y curado, por lo 
 - VRAM estimada para inferencia: aproximadamente 0,3 GB en fp32 (66,9 M de parametros, 4 bytes por parametro). Con cuantizacion a int8 o fp16, la VRAM se reduce a unos 0,15 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluidas NVIDIA GTX 1050 Ti, RTX 2060, RTX 3060, etc. Tambien se puede ejecutar en CPU sin problemas.
 - Cabe en cualquier GPU consumer actual, e incluso en dispositivos edge con suficiente memoria.
-- Opciones de despliegue: compatible con HuggingFace Transformers, ONNX Runtime, TorchScript, y puede exportarse a formato GGUF para llama.cpp, aunque no se proporcionan pesos cuantizados.
+- Opciones de despliegue: compatible con Hugging Face Transformers, ONNX Runtime, TorchScript, y puede exportarse a formato GGUF para llama.cpp, aunque no se proporcionan pesos cuantizados.
 - Latencia estimada: en una GPU moderna (RTX 3090) la inferencia de una secuencia corta (< 128 tokens) tarda menos de 10 ms; en CPU, entre 50 y 200 ms segun el hardware.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ No se dispone de informacion sobre modelos comparables especificos de deteccion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Islamamro/clickbait-aurora-islamamro
+- Modelo en Hugging Face: https://huggingface.co/Islamamro/clickbait-aurora-islamamro
 - Perfil de GitHub del autor: https://github.com/islamamro

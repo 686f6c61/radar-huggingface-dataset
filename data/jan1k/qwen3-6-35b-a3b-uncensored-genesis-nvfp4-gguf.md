@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-NVFP4-GGUF
 - Variante Hermes del mismo autor: https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4-GGUF
 - Fuente GGUF de la cuantizacion: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF
 - Modelo base del linaje: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive

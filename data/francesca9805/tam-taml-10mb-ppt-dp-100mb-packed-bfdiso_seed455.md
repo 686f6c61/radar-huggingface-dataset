@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/tam_taml_10mb`, un modelo monolingüe de la familia Goldfish orientado al tamil. El resultado es un modelo de generación de texto de arquitectura tipo GPT-2 con 39.087.104 parámetros (aproximadamente 39 millones) y pesos en formato safetensors, publicado por el usuario francesca9805 en HuggingFace. El entrenamiento se ha realizado mediante Supervised Fine-Tuning (SFT) con la librería TRL en su versión 0.23.0.
+`francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/tam_taml_10mb`, un modelo monolingüe de la familia Goldfish orientado al tamil. El resultado es un modelo de generación de texto de arquitectura tipo GPT-2 con 39.087.104 parámetros (aproximadamente 39 millones) y pesos en formato safetensors, publicado por el usuario francesca9805 en Hugging Face. El entrenamiento se ha realizado mediante Supervised Fine-Tuning (SFT) con la librería TRL en su versión 0.23.0.
 
 El interés de esta ficha es limitado pero claro: se trata de un artefacto de investigación más que de un modelo listo para producción. No hay información publicada sobre el dataset de ajuste, la composición de los datos, la licencia, los idiomas soportados oficialmente ni resultados de benchmarks. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta, lo que sugiere que es un experimento académico sin adopción comunitaria.
 
@@ -32,7 +32,7 @@ No se documenta el uso de RLHF, DPO u otras técnicas de alineación posteriores
 - Generación de texto autoregresiva estándar, heredada del modelo base y del ajuste con SFT.
 - Soporte de conversación de un solo turno mediante el formato de mensajes con roles que muestra la model card (`[{"role": "user", "content": ...}]`).
 - Idiomas: presumiblemente tamil, dado el origen del modelo base, aunque no está confirmado ni documentado.
-- Compatibilidad declarada con text-generation-inference y con endpoints de HuggingFace (etiquetas `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad declarada con text-generation-inference y con endpoints de Hugging Face (etiquetas `text-generation-inference` y `endpoints_compatible`).
 - No hay evidencia de soporte de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio ni modo de razonamiento explícito.
 - Capacidad de código y matemáticas: no documentada; en un modelo de 39M parámetros entrenado sobre una única lengua de bajos recursos, cabe esperar un rendimiento muy limitado en estas tareas.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 160 MB en FP32, 80 MB en FP16/BF16 y 20-40 MB en cuantizaciones de 4 u 8 bits (estimación basada en los 39M de parámetros; no confirmada por el autor).
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente en la práctica; una RTX 3060, RTX 4090 o incluso una GPU integrada moderna pueden ejecutarlo sin problemas.
 - Cabe holgadamente en GPU de consumo, e incluso en CPU con latencias aceptables para textos cortos.
-- Opciones de despliegue: transformers (soporte nativo, con `pipeline`), text-generation-inference (etiqueta declarada por el autor), endpoints de HuggingFace. La compatibilidad con vLLM, llama.cpp u Ollama no está documentada; al ser una arquitectura GPT-2 estándar, es probable que requiera conversión a GGUF para llama.cpp, pero no se ha verificado.
+- Opciones de despliegue: transformers (soporte nativo, con `pipeline`), text-generation-inference (etiqueta declarada por el autor), endpoints de Hugging Face. La compatibilidad con vLLM, llama.cpp u Ollama no está documentada; al ser una arquitectura GPT-2 estándar, es probable que requiera conversión a GGUF para llama.cpp, pero no se ha verificado.
 - Latencia y throughput estimados: no disponibles. Dado el tamaño, en GPU moderna se espera un throughput alto, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_10mb
 - Organizacion Goldfish Models: https://huggingface.co/goldfish-models
 - Repositorio TRL: https://github.com/huggingface/trl

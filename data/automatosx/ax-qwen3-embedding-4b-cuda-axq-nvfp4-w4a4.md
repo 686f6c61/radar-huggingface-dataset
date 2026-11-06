@@ -75,9 +75,9 @@ El propio autor advierte que esta tabla no es un benchmark MTEB/RTEB, ni una val
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-Qwen3-Embedding-4B-CUDA-AXQ-NVFP4-W4A4 | 4.021.774.336 (4B) | no disponible (probado hasta 512 tokens) | NVFP4 W4A4 con capas BF16 | apache-2.0 | HuggingFace, vLLM, development preview |
-| Qwen/Qwen3-Embedding-4B (base BF16) | 4B | no disponible en la informacion proporcionada | BF16 | apache-2.0 | HuggingFace |
-| Familia Qwen3-Embedding (0,6B y 8B) | 0,6B / 8B | no disponible en la informacion proporcionada | BF16 y variantes | apache-2.0 | HuggingFace |
+| AX-Qwen3-Embedding-4B-CUDA-AXQ-NVFP4-W4A4 | 4.021.774.336 (4B) | no disponible (probado hasta 512 tokens) | NVFP4 W4A4 con capas BF16 | apache-2.0 | Hugging Face, vLLM, development preview |
+| Qwen/Qwen3-Embedding-4B (base BF16) | 4B | no disponible en la informacion proporcionada | BF16 | apache-2.0 | Hugging Face |
+| Familia Qwen3-Embedding (0,6B y 8B) | 0,6B / 8B | no disponible en la informacion proporcionada | BF16 y variantes | apache-2.0 | Hugging Face |
 
 La comparativa se limita a la relacion con el checkpoint base y con el resto de tamanos de la familia Qwen3-Embedding, dado que la informacion proporcionada no incluye datos de rendimiento de alternativas. No se dispone de cifras de recuperacion (MTEB/RTEB) que permitan una comparacion cuantitativa con otros modelos de embeddings.
 
@@ -96,7 +96,7 @@ La comparativa se limita a la relacion con el checkpoint base y con el resto de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-CUDA-AXQ-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-4B-CUDA-AXQ-NVFP4-W4A4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Revision fuente inmutable citada: https://huggingface.co/Qwen/Qwen3-Embedding-4B/tree/5cf2132abc99cad020ac570b19d031efec650f2b
 - Ejemplo de reproduccion incluido en el repositorio: `examples/embedding_smoke.py` (junto con `evaluation/retrieval-corpus.json` y las referencias `evaluation/rtx5090-bf16.json` y `evaluation/thor-bf16.json`)

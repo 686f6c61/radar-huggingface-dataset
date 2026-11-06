@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Krish291205/Image_Processing_Project` es un adaptador LoRA para modelos de difusión text-to-image publicado en HuggingFace bajo la librería `diffusers`. Según la model card, el adaptador se denomina internamente `cleargrasp-marigold-finetuned`, lo que sugiere un fine-tuning orientado a tareas de procesado de imagen relacionadas con estimación de profundidad (ClearGrasp y Marigold son referencias habituales en ese dominio), aunque el autor no documenta explícitamente el propósito ni el pipeline de entrenamiento.
+`Krish291205/Image_Processing_Project` es un adaptador LoRA para modelos de difusión text-to-image publicado en Hugging Face bajo la librería `diffusers`. Según la model card, el adaptador se denomina internamente `cleargrasp-marigold-finetuned`, lo que sugiere un fine-tuning orientado a tareas de procesado de imagen relacionadas con estimación de profundidad (ClearGrasp y Marigold son referencias habituales en ese dominio), aunque el autor no documenta explícitamente el propósito ni el pipeline de entrenamiento.
 
 El repositorio es extremadamente escaso en información: no se indica el modelo base sobre el que se aplica el LoRA (`base_model` está vacío), no hay licencia declarada, no se especifican idiomas ni se publican resultados de evaluación. El tamaño del repo es de 0,9 GB y el pipeline declarado es `text-to-image`, con la etiqueta `template:diffusion-lora`. El `instance_prompt` es nulo y el único ejemplo del widget apunta a una imagen llamada `cleargrasp_opaque_strip_cg_real_val_160.png`, lo que refuerza la hipótesis de un uso experimental en investigación de profundidad.
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Krish291205/Image_Processing_Project
+- Hugging Face: https://huggingface.co/Krish291205/Image_Processing_Project
 - Archivos del repositorio: https://huggingface.co/Krish291205/Image_Processing_Project/tree/main
 - Referencia ClearGrasp (paper): no disponible en la información proporcionada
 - Referencia Marigold (paper): no disponible en la información proporcionada

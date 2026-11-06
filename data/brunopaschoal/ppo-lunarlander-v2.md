@@ -67,9 +67,9 @@ No se han publicado otros resultados de benchmarks (por ejemplo, comparación co
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| brunopaschoal/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | mean_reward 281,42 ± 10,04 (no verificado) | no disponible | HuggingFace Hub |
+| brunopaschoal/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | mean_reward 281,42 ± 10,04 (no verificado) | no disponible | Hugging Face Hub |
 | Agentes PPO de referencia de Stable-Baselines3 RL Zoo | PPO | LunarLander-v2 | MLP pequeña (config. por defecto) | no aplica | Métricas publicadas en el RL Zoo (no incluidas aquí) | MIT (código SB3) | GitHub / RL Zoo |
-| Agentes DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | MLP pequeña | no aplica | No disponible en esta ficha | varía según autor | HuggingFace Hub / RL Zoo |
+| Agentes DQN sobre LunarLander-v2 | DQN | LunarLander-v2 | MLP pequeña | no aplica | No disponible en esta ficha | varía según autor | Hugging Face Hub / RL Zoo |
 
 No se dispone de datos suficientes para una comparativa cuantitativa rigurosa con alternativas concretas; la comparación anterior es cualitativa y se limita a la categoría (agentes RL sobre LunarLander-v2).
 
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunopaschoal/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/brunopaschoal/ppo-LunarLander-v2
 - Stable-Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Stable-Baselines3 RL Zoo (agentes de referencia): https://github.com/DLR-RM/rl-baselines3-zoo
 - Paquete `huggingface_sb3`: https://github.com/huggingface/huggingface_sb3

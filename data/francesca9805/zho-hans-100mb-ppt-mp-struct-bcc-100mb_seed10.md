@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10` es un ajuste fino (SFT) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de HuggingFace `francesca9805` (el enlace de Weights & Biases apunta a la Universidad de Groningen). El modelo pertenece a la familia de modelos pequeños multilingües Goldfish, diseñados para investigar el aprendizaje de idiomas de bajos recursos. Este checkpoint concreto se ha entrenado sobre el modelo base de chino simplificado (100 MB) con un conjunto de datos cuya nomenclatura sugiere un experimento controlado de estructuración (probablemente "ppt", "mp", "struct", "bcc" son etiquetas de condiciones experimentales), y con la semilla 10.
+`zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10` es un ajuste fino (SFT) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de Hugging Face `francesca9805` (el enlace de Weights & Biases apunta a la Universidad de Groningen). El modelo pertenece a la familia de modelos pequeños multilingües Goldfish, diseñados para investigar el aprendizaje de idiomas de bajos recursos. Este checkpoint concreto se ha entrenado sobre el modelo base de chino simplificado (100 MB) con un conjunto de datos cuya nomenclatura sugiere un experimento controlado de estructuración (probablemente "ppt", "mp", "struct", "bcc" son etiquetas de condiciones experimentales), y con la semilla 10.
 
 Arquitectura transformer tipo GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 M), lo que lo sitúa en la categoría de modelos pequeños. El repositorio ocupa 0,7 GB e incluye pesos en safetensors. Es relevante ahora como ejemplo de ajuste fino con TRL sobre modelos de investigación de bajo coste, útil para estudiar cómo el SFT afecta a modelos multilingües pequeños y para experimentos de alineación con recursos limitados.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10 | 124,8 M | no disponible | no disponible | HuggingFace (31 descargas) |
-| goldfish-models/zho_hans_100mb (base) | ~100 M (aprox.) | no disponible | no disponible | HuggingFace |
-| Modelos GPT-2 pequeños (p. ej., gpt2 124 M) | 124 M | 1024 tokens | MIT (gpt2 original) | HuggingFace |
-| Modelos de investigación tipo TinyLlama | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace |
+| zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10 | 124,8 M | no disponible | no disponible | Hugging Face (31 descargas) |
+| goldfish-models/zho_hans_100mb (base) | ~100 M (aprox.) | no disponible | no disponible | Hugging Face |
+| Modelos GPT-2 pequeños (p. ej., gpt2 124 M) | 124 M | 1024 tokens | MIT (gpt2 original) | Hugging Face |
+| Modelos de investigación tipo TinyLlama | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas comerciales o de mayor tamaño no es directa: este checkpoint es un artefacto de investigación con licencia y datos no documentados, lo que limita su uso fuera de entornos académicos.
 
@@ -85,7 +85,7 @@ La comparación con alternativas comerciales o de mayor tamaño no es directa: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-bcc-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4slahfso

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-9eb6285e1f27` es un paquete publicado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, se describe como un "archivo de flota privada" (private fleet archive) con un nivel de contenido declarado como "logs+videos+trajectories". No se presenta como un modelo entrenado listo para inferencia, sino como una instantanea (snapshot) de artefactos asociados a una receta de evaluacion concreta, identificada como `evaluations/2026-09-23_b1k_task00_pi05_attention_consistent_step7000_centre`.
+El repositorio `davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-9eb6285e1f27` es un paquete publicado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, se describe como un "archivo de flota privada" (private fleet archive) con un nivel de contenido declarado como "logs+videos+trajectories". No se presenta como un modelo entrenado listo para inferencia, sino como una instantanea (snapshot) de artefactos asociados a una receta de evaluacion concreta, identificada como `evaluations/2026-09-23_b1k_task00_pi05_attention_consistent_step7000_centre`.
 
 El nombre del paquete incluye los fragmentos `pi05`, `attnfix` y `eval7000`, y la receta canonica menciona `pi05_attention_consistent_step7000`. Esta nomenclatura es compatible con un punto de control o una evaluacion intermedia de un modelo de la familia pi05 (posiblemente relacionada con modelos vision-lenguaje-accion para robotica), pero la informacion proporcionada no confirma ni la arquitectura, ni el numero de parametros, ni el framework utilizado. El tamano del repositorio, 0,1 GB, es coherente con un paquete de registros y metadatos mas que con pesos completos de un modelo de gran tamano.
 
@@ -93,6 +93,6 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-9eb6285e1f27
-- Perfil del autor en HuggingFace: https://huggingface.co/davidwdw
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-eval7000-4d895b5aec9a-9eb6285e1f27
+- Perfil del autor en Hugging Face: https://huggingface.co/davidwdw
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

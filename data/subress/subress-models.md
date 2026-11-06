@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idioma | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Subress/subress-models (Q5_0) | 809 M (base) | Hebreo | GGML Q5_0 | apache-2.0 | HuggingFace (~0,6 GB) |
-| ivrit-ai/whisper-large-v3-turbo-ggml | 809 M (base) | Hebreo | GGML | apache-2.0 | HuggingFace (base de este modelo) |
-| openai/whisper-large-v3-turbo | 809 M | Multilingue (99 idiomas) | safetensors, GGML via whisper.cpp | MIT | HuggingFace |
-| openai/whisper-large-v3 | 1550 M | Multilingue (99 idiomas) | safetensors | MIT | HuggingFace |
+| Subress/subress-models (Q5_0) | 809 M (base) | Hebreo | GGML Q5_0 | apache-2.0 | Hugging Face (~0,6 GB) |
+| ivrit-ai/whisper-large-v3-turbo-ggml | 809 M (base) | Hebreo | GGML | apache-2.0 | Hugging Face (base de este modelo) |
+| openai/whisper-large-v3-turbo | 809 M | Multilingue (99 idiomas) | safetensors, GGML via whisper.cpp | MIT | Hugging Face |
+| openai/whisper-large-v3 | 1550 M | Multilingue (99 idiomas) | safetensors | MIT | Hugging Face |
 
 Nota: los recuentos de parametros y la cobertura de idiomas de los modelos de OpenAI y del base de ivrit.ai corresponden a informacion publica general del ecosistema Whisper. No se dispone de comparativas de rendimiento (WER) para estos modelos dentro de la informacion proporcionada. La licencia MIT de los modelos oficiales de OpenAI y la Apache 2.0 de ivrit.ai son datos de referencia habituales; conviene verificarlas en cada repositorio antes de un uso comercial.
 
@@ -85,9 +85,9 @@ Nota: los recuentos de parametros y la cobertura de idiomas de los modelos de Op
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Subress/subress-models
+- Modelo en Hugging Face: https://huggingface.co/Subress/subress-models
 - Modelo base: https://huggingface.co/ivrit-ai/whisper-large-v3-turbo-ggml
 - ivrit.ai (organizacion responsable del ajuste al hebreo): https://ivrit.ai
 - whisper.cpp (runtime GGML utilizado para la cuantizacion): https://github.com/ggerganov/whisper.cpp
 - OpenAI Whisper (arquitectura original): https://github.com/openai/whisper
-- Whisper large-v3-turbo en HuggingFace: https://huggingface.co/openai/whisper-large-v3-turbo
+- Whisper large-v3-turbo en Hugging Face: https://huggingface.co/openai/whisper-large-v3-turbo

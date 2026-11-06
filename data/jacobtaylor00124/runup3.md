@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jacobtaylor00124/runup3` es un repositorio de modelo alojado en HuggingFace por el usuario `jacobtaylor00124`. La informacion publica disponible es extremadamente limitada: no se declara pipeline, licencia, idiomas soportados ni arquitectura. El unico dato objetivo es el tamano del repositorio, de 5,6 GB, lo que sugiere pesos en precision completa o media (probablemente en formato `safetensors` o similar) de un modelo de escala media, aunque no es posible confirmarlo sin inspeccionar los archivos.
+`jacobtaylor00124/runup3` es un repositorio de modelo alojado en Hugging Face por el usuario `jacobtaylor00124`. La informacion publica disponible es extremadamente limitada: no se declara pipeline, licencia, idiomas soportados ni arquitectura. El unico dato objetivo es el tamano del repositorio, de 5,6 GB, lo que sugiere pesos en precision completa o media (probablemente en formato `safetensors` o similar) de un modelo de escala media, aunque no es posible confirmarlo sin inspeccionar los archivos.
 
-El repositorio no presenta descargas (0) y solo 1 like, fue creado el 12 de octubre de 2026 y actualizado por ultima vez el 6 de noviembre de 2026. El unico tag presente es `region:us`, que indica la region de almacenamiento en los servidores de HuggingFace y no aporta informacion tecnica sobre el modelo.
+El repositorio no presenta descargas (0) y solo 1 like, fue creado el 12 de octubre de 2026 y actualizado por ultima vez el 6 de noviembre de 2026. El unico tag presente es `region:us`, que indica la region de almacenamiento en los servidores de Hugging Face y no aporta informacion tecnica sobre el modelo.
 
 Dada la ausencia de model card, configuracion, tokenizer documentado o cualquier artefacto descriptivo, esta ficha se limita a reflejar lo que se puede verificar y marca explicitamente como "no disponible" todo aquello que no ha sido publicado. Se recomienda precaucion antes de cualquier uso en produccion.
 
@@ -76,6 +76,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobtaylor00124/runup3
+- Hugging Face: https://huggingface.co/jacobtaylor00124/runup3
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

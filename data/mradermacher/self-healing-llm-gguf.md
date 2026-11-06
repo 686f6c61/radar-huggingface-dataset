@@ -98,7 +98,7 @@ La diferencia mas significativa frente a estas alternativas es la propuesta de m
 - Cuantizaciones agresivas: Q2_K y Q3_K_S degradan la calidad de forma notable segun la grafica de perplejidad referenciada por el propio autor. Para uso real se recomienda Q4_K_M o superior.
 - Estado del repositorio: cero descargas y cero "likes" en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero el usuario debe verificar que el modelo base kambleaa007/Self-Healing-LLM mantiene esa misma licencia y no impone restricciones adicionales.
-- Fecha de publicacion del repositorio inusualmente avanzada (2026-09-24) segun los metadatos de HuggingFace; conviene confirmar la vigencia y autenticidad del repositorio.
+- Fecha de publicacion del repositorio inusualmente avanzada (2026-09-24) segun los metadatos de Hugging Face; conviene confirmar la vigencia y autenticidad del repositorio.
 - Los resultados de la busqueda web realizada no contienen informacion tecnica sobre el modelo (los enlaces devueltos son irrelevantes y no guardan relacion con el proyecto), por lo que no se han podido contrastar las afirmaciones del autor.
 
 ## Enlaces

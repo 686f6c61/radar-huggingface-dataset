@@ -73,7 +73,7 @@ No disponible. Este repositorio no es un modelo unico sino un conjunto de conver
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/audio-cpp/audio.cpp-gguf
+- Repositorio Hugging Face: https://huggingface.co/audio-cpp/audio.cpp-gguf
 - Repositorio GitHub de audio.cpp: https://github.com/0xShug0/audio.cpp
 - Guia GGUF de audio.cpp: https://github.com/0xShug0/audio.cpp/blob/main/docs/gguf.md
 - Articulo de introduccion a audio.cpp: https://runaihome.com/blog/audio-cpp-local-tts-gpu-guide-2026/

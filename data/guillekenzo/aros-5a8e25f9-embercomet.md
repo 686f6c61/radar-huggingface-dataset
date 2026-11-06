@@ -95,7 +95,7 @@ Comparativa con otros LoRA de concepto para Krea 2: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-5a8e25f9-EmberComet
+- Modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-5a8e25f9-EmberComet
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia usado en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre Krea 2 (los resultados obtenidos correspondian a temas sin relacion: ediciones en Blu-ray, opiniones sobre Amazon y autoempleo).

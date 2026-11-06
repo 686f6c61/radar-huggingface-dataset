@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NIx1.2-GGUF es la versión cuantizada en formato GGUF del modelo ray0rf1re/NIx1.2, publicada por mradermacher, un conocido creador de cuantizaciones para la comunidad de inferencia local. El modelo base es un transformer de aproximadamente 3.090 millones de parámetros (3,1B) orientado a conversación en inglés, según los metadatos disponibles en HuggingFace. Esta versión GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo inviable con los pesos originales en precisión completa.
+NIx1.2-GGUF es la versión cuantizada en formato GGUF del modelo ray0rf1re/NIx1.2, publicada por mradermacher, un conocido creador de cuantizaciones para la comunidad de inferencia local. El modelo base es un transformer de aproximadamente 3.090 millones de parámetros (3,1B) orientado a conversación en inglés, según los metadatos disponibles en Hugging Face. Esta versión GGUF permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles, algo inviable con los pesos originales en precisión completa.
 
 La relevancia de esta ficha radica en que el modelo base apenas cuenta con documentación pública: no se dispone de información sobre arquitectura interna, datos de entrenamiento, benchmarks ni licencia. La model card del repositorio cuantizado se limita a listar los ficheros GGUF generados y a remitir al modelo original. Por tanto, esta ficha documenta con rigor lo que se sabe y marca explícitamente como "no disponible" todo aquello que no puede verificarse.
 
@@ -30,7 +30,7 @@ Tampoco se conocen los detalles del entrenamiento: número de tokens, composici�
 ## Capacidades
 
 - Generación de texto conversacional en inglés, según la etiqueta "conversational" del repositorio.
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que indica que puede desplegarse detrás de APIs compatibles con el formato de HuggingFace.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que indica que puede desplegarse detrás de APIs compatibles con el formato de Hugging Face.
 - Inferencia local mediante llama.cpp y derivados gracias al formato GGUF.
 - El resto de capacidades (razonamiento, código, matemáticas, tool calling, agentes, multilingüismo, visión, audio, modo thinking) no están documentadas y no pueden confirmarse con la información disponible.
 

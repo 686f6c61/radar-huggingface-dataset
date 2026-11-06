@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kewelin/alishan-agri14b-adapter` es un adaptador PEFT (LoRA) desarrollado por el usuario Kewelin, diseñado para ajustar el modelo base Qwen3-14B en tareas relacionadas con la agricultura (según su nombre "agri"). El repositorio, con un tamaño de 5,2 GB, contiene los pesos del adaptador en formato safetensors y está etiquetado con la referencia arxiv:1910.09700, que corresponde al paper original de LoRA. Aunque no se especifica la licencia ni los idiomas, el acceso está restringido (gated) en HuggingFace, lo que obliga a aceptar condiciones antes de su descarga.
+El modelo `Kewelin/alishan-agri14b-adapter` es un adaptador PEFT (LoRA) desarrollado por el usuario Kewelin, diseñado para ajustar el modelo base Qwen3-14B en tareas relacionadas con la agricultura (según su nombre "agri"). El repositorio, con un tamaño de 5,2 GB, contiene los pesos del adaptador en formato safetensors y está etiquetado con la referencia arxiv:1910.09700, que corresponde al paper original de LoRA. Aunque no se especifica la licencia ni los idiomas, el acceso está restringido (gated) en Hugging Face, lo que obliga a aceptar condiciones antes de su descarga.
 
 La relevancia de este adaptador radica en su enfoque sectorial: en lugar de entrenar un modelo completo, se aprovecha la capacidad general de Qwen3-14B y se ajusta mediante LoRA para un dominio específico. Esto reduce costes de entrenamiento e inferencia, aunque la documentación pública es escasa: no se han publicado detalles sobre el dataset de entrenamiento, el proceso de ajuste ni los resultados de evaluación. A fecha de creación (agosto de 2026), el modelo cuenta con solo 8 descargas y 0 likes, lo que sugiere un uso muy limitado.
 
@@ -34,7 +34,7 @@ No se ha publicado información sobre el dataset de entrenamiento, el número de
 
 ## Casos de uso
 
-No se dispone de casos de uso documentados. Dado el nombre "agri", es plausible que el adaptador esté orientado a tareas como análisis de cultivos, predicción de rendimientos, asesoramiento agrícola o procesamiento de informes técnicos, pero no hay información pública que lo respalde. Se recomienda contactar al autor o consultar la comunidad de HuggingFace para obtener detalles antes de considerar su uso en producción.
+No se dispone de casos de uso documentados. Dado el nombre "agri", es plausible que el adaptador esté orientado a tareas como análisis de cultivos, predicción de rendimientos, asesoramiento agrícola o procesamiento de informes técnicos, pero no hay información pública que lo respalde. Se recomienda contactar al autor o consultar la comunidad de Hugging Face para obtener detalles antes de considerar su uso en producción.
 
 ## Benchmarks y rendimiento
 
@@ -56,7 +56,7 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones de HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones de Hugging Face antes de poder descargar el modelo.
 - No hay documentación sobre sesgos, riesgos de alucinación o limitaciones específicas del adaptador.
 - Al ser un adaptador, las limitaciones del modelo base Qwen3-14B se aplican (por ejemplo, posibles sesgos en datos de entrenamiento originales).
 - La licencia no está especificada, lo que genera incertidumbre sobre el uso comercial.
@@ -64,5 +64,5 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Enlaces
 
-- [HuggingFace - Kewelin/alishan-agri14b-adapter](https://huggingface.co/Kewelin/alishan-agri14b-adapter)
+- [Hugging Face - Kewelin/alishan-agri14b-adapter](https://huggingface.co/Kewelin/alishan-agri14b-adapter)
 - [FriendliAI - alishan-agri14b-adapter](https://friendli.ai/models/Kewelin/alishan-agri14b-adapter)

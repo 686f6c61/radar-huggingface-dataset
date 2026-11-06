@@ -102,7 +102,7 @@ La comparación fijada de antemano ( `model_sim_mixed.pt` con cinco ejemplos fre
 
 | Modelo | Parámetros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cellbio-gpt-40m | ~40,5 M | 512 | Biología celular / bioelectricidad | MIT | HuggingFace + GitHub |
+| cellbio-gpt-40m | ~40,5 M | 512 | Biología celular / bioelectricidad | MIT | Hugging Face + GitHub |
 | gpt-oss:20b | 20 B | no disponible en la ficha | Generalista | no disponible en la ficha | Ollama |
 | Qwen 3.5 | no disponible en la ficha | no disponible en la ficha | Generalista | no disponible en la ficha | Ollama |
 | DeepSeek-R1 8B | 8 B | no disponible en la ficha | Razonamiento generalista | no disponible en la ficha | Ollama |
@@ -124,7 +124,7 @@ La comparación relevante es de comportamiento, no de escala: en el examen C zer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drnamlabs/cellbio-gpt-40m
+- Modelo en Hugging Face: https://huggingface.co/drnamlabs/cellbio-gpt-40m
 - Repositorio GitHub: https://github.com/drnamlabs-gif/cellbio-gpt
 - Sitio del autor: https://drnamlabs.com
 - Simulador BETSE: no disponible en la información proporcionada

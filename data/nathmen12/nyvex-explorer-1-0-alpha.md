@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nyvex-Explorer-1.0-Alpha es un modelo publicado en HuggingFace por el usuario NathMen12 el 14 de agosto de 2026. El repositorio tiene un tamaño de 5,1 GB, lo que sugiere un modelo de tamaño medio, pero no se dispone de ninguna especificación técnica adicional en la ficha de HuggingFace. No se indica la arquitectura, el número de parámetros, la licencia ni los idiomas soportados. El modelo no ha registrado descargas y cuenta con un único "like", lo que indica que se trata de una publicación muy reciente y sin uso documentado.
+Nyvex-Explorer-1.0-Alpha es un modelo publicado en Hugging Face por el usuario NathMen12 el 14 de agosto de 2026. El repositorio tiene un tamaño de 5,1 GB, lo que sugiere un modelo de tamaño medio, pero no se dispone de ninguna especificación técnica adicional en la ficha de Hugging Face. No se indica la arquitectura, el número de parámetros, la licencia ni los idiomas soportados. El modelo no ha registrado descargas y cuenta con un único "like", lo que indica que se trata de una publicación muy reciente y sin uso documentado.
 
 Dada la ausencia total de información técnica, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente las carencias. Cualquier uso en producción requeriría una evaluación previa exhaustiva y la obtención de documentación complementaria por parte del autor.
 
@@ -21,7 +21,7 @@ Dada la ausencia total de información técnica, esta ficha se limita a reflejar
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de optimizacion empleadas (RLHF, DPO, etc.). El repositorio de HuggingFace no incluye documentacion tecnica, paper asociado ni descripcion del proceso de entrenamiento. Sin estos datos, no es posible determinar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), un SSM o cualquier otra topologia.
+No se ha publicado ninguna informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de optimizacion empleadas (RLHF, DPO, etc.). El repositorio de Hugging Face no incluye documentacion tecnica, paper asociado ni descripcion del proceso de entrenamiento. Sin estos datos, no es posible determinar si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), un SSM o cualquier otra topologia.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. Al no existir informacion sobre la arquitectura, el tamano o el d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/NathMen12/Nyvex-Explorer-1.0-Alpha
+- Repositorio de Hugging Face: https://huggingface.co/NathMen12/Nyvex-Explorer-1.0-Alpha

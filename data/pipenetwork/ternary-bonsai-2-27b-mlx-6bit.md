@@ -109,7 +109,7 @@ No hay información disponible sobre comparaciones con modelos de otras familias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-6bit
 - Modelo base (GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Build 2-bit oficial de prism-ml para MLX: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Build bf16 del mismo autor: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-bf16

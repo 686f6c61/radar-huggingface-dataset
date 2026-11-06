@@ -75,7 +75,7 @@ La comparativa muestra diferencias significativas en eficiencia: el entrenamient
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/notdaksha/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/notdaksha/tds-carbon-card
 - Repositorio similar (itsAayush): https://huggingface.co/itsAayush/tds-carbon-card
 - Repositorio similar (Divya-netter): https://huggingface.co/Divya-netter/tds-carbon-card
 - Documentacion sobre model cards: https://aiwiki.ai/wiki/model_card

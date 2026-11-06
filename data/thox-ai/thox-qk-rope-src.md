@@ -79,13 +79,13 @@ No se dispone de información sobre otros proyectos comparables en la documentac
 - El kernel no genera tablas de frecuencias; el llamador debe proporcionar theta, ABF, YaRN o rotary parcial, lo que traslada la responsabilidad de corrección al integrador.
 - La normalización `(1 + weight)` de Gemma queda explícitamente fuera del alcance.
 - No se reportan mediciones de rendimiento ni tiempos en dispositivo, por lo que no hay evidencia publicada de aceleración.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que indica ausencia de validación por parte de la comunidad.
 - La fecha de creación y actualización del repositorio es 2026-11-05, posterior a la fecha actual, lo que debe tenerse en cuenta al evaluar su madurez.
 - Licencia Apache-2.0 permite uso comercial, pero el copyright corresponde a THOX.ai LLC (2026).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/thox-qk-rope-src
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/thox-qk-rope-src
 - Repositorio git fuente: https://github.com/ttracx/thox-qk-rope (commit `de3baa1`)
 - Kernel compañero: https://huggingface.co/kernels/Thox-ai/thox-edge-ops
 - Nota técnica: `paper/main.tex` y `paper/main.pdf` dentro del repositorio git

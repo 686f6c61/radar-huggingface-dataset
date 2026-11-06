@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Refusal-Classifier es un modelo de clasificación de texto desarrollado por el usuario VINAY-UMRETHE sobre HuggingFace. Se trata de un fine-tuning de answerdotai/ModernBERT-base, un encoder transformer de 149,6 millones de parámetros, adaptado para una tarea muy concreta: clasificar la respuesta de un LLM ante un prompt dado en una de cinco categorías relacionadas con el rechazo (refusal): `compliant`, `full_refusal`, `partial_refusal`, `capability_limitation` y `clarification`.
+Refusal-Classifier es un modelo de clasificación de texto desarrollado por el usuario VINAY-UMRETHE sobre Hugging Face. Se trata de un fine-tuning de answerdotai/ModernBERT-base, un encoder transformer de 149,6 millones de parámetros, adaptado para una tarea muy concreta: clasificar la respuesta de un LLM ante un prompt dado en una de cinco categorías relacionadas con el rechazo (refusal): `compliant`, `full_refusal`, `partial_refusal`, `capability_limitation` y `clarification`.
 
 El problema que resuelve es relevante en el ámbito de la evaluación de seguridad y alineamiento de modelos generativos. Detectar automáticamente si un LLM ha rechazado una petición, la ha cumplido o ha respondido con una limitación de capacidad permite construir pipelines de auditoría, filtrado y monitorización de sistemas desplegados en producción. La tarea se formula como clasificación de pares (prompt, respuesta) mediante tokenización con `text_pair`.
 
@@ -114,6 +114,6 @@ La información disponible no permite establecer comparaciones cuantitativas con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier
+- Modelo en Hugging Face: https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier
 - Modelo base (answerdotai/ModernBERT-base): https://huggingface.co/answerdotai/ModernBERT-base
 - Curvas de entrenamiento (Space de Trackio): https://huggingface.co/spaces/VINAY-UMRETHE/Refusal-Classifier-trackio

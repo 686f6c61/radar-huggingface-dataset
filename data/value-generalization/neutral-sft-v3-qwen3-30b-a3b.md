@@ -81,5 +81,5 @@ Cualquier comparación con otros fine-tunings o modelos de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/value-generalization/neutral-sft-v3-qwen3-30b-a3b
+- Hugging Face del modelo: https://huggingface.co/value-generalization/neutral-sft-v3-qwen3-30b-a3b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base

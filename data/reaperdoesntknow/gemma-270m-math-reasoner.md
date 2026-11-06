@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`reaperdoesntknow/gemma-270m-math-reasoner` es un modelo de generación de texto publicado en HuggingFace por el usuario `reaperdoesntknow`. La información disponible lo sitúa como un ajuste de la familia Gemma 3 en su variante pequeña: los tags del repositorio incluyen `gemma3_text`, y el recuento real de parámetros extraído de los pesos safetensors es de 268.098.176, cifra que coincide con el tamaño del modelo base Gemma 3 270M. El nombre del repositorio sugiere un ajuste orientado a razonamiento matemático, aunque la model card no lo confirma explícitamente.
+`reaperdoesntknow/gemma-270m-math-reasoner` es un modelo de generación de texto publicado en Hugging Face por el usuario `reaperdoesntknow`. La información disponible lo sitúa como un ajuste de la familia Gemma 3 en su variante pequeña: los tags del repositorio incluyen `gemma3_text`, y el recuento real de parámetros extraído de los pesos safetensors es de 268.098.176, cifra que coincide con el tamaño del modelo base Gemma 3 270M. El nombre del repositorio sugiere un ajuste orientado a razonamiento matemático, aunque la model card no lo confirma explícitamente.
 
 El problema que pretende resolver, según la denominación del repositorio, es el razonamiento aritmético y matemático en un modelo de tamaño muy reducido (menos de 300 millones de parámetros), lo que lo haría desplegable en hardware de consumo, dispositivos de borde o entornos con presupuesto de cómputo y memoria muy limitados. Se trata de un nicho relevante porque la mayoría de los "reasoners" publicados superan los miles de millones de parámetros, y la disponibilidad de alternativas pequeñas y especializadas permite experimentar con destilación, generación de datos sintéticos y fine-tuning local.
 
-La relevancia práctica de esta ficha es limitada por la ausencia de documentación: la model card es la plantilla automática de HuggingFace y no contiene descripción, datos de entrenamiento, evaluación, licencia ni idiomas declarados. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se han publicado resultados de benchmarks. Cualquier uso en producción debería ir precedido de una evaluación propia, dado que no hay garantías documentadas sobre sesgos, alineación, licencia o calidad del ajuste.
+La relevancia práctica de esta ficha es limitada por la ausencia de documentación: la model card es la plantilla automática de Hugging Face y no contiene descripción, datos de entrenamiento, evaluación, licencia ni idiomas declarados. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se han publicado resultados de benchmarks. Cualquier uso en producción debería ir precedido de una evaluación propia, dado que no hay garantías documentadas sobre sesgos, alineación, licencia o calidad del ajuste.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ La relevancia práctica de esta ficha es limitada por la ausencia de documentaci
 
 Los únicos datos verificables sobre la arquitectura son los tags del repositorio, que declaran `gemma3_text`, y el recuento de parámetros (268.098.176), coherente con el modelo base Gemma 3 270M de Google DeepMind. No hay información pública en la model card sobre número de capas, dimensión oculta, número de cabezas de atención, vocabulario, tipo de normalización ni mecanismo de atención. Tampoco se documenta si se trata de un transformer denso estándar o de alguna variante con atención local/global combinada, algo habitual en la familia Gemma 3.
 
-Respecto al entrenamiento, la model card no aporta ningún dato: ni volumen de tokens, ni composición del dataset, ni si hubo ajuste supervisado, RLHF, DPO u optimización con verificación de recompensas. La única pista es el nombre del repositorio (`math-reasoner`), que sugiere un ajuste fino sobre datos matemáticos, pero no se especifica la mezcla, el procedimiento ni los hiperparámetros. El tag `arxiv:1910.09700` presente en el repositorio corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental del aprendizaje automático, citado en la plantilla por defecto de HuggingFace, y no a un paper de descripción del modelo. No hay innovaciones técnicas documentadas (decodificación especulativa, atención lineal, modos de razonamiento explícitos, etc.).
+Respecto al entrenamiento, la model card no aporta ningún dato: ni volumen de tokens, ni composición del dataset, ni si hubo ajuste supervisado, RLHF, DPO u optimización con verificación de recompensas. La única pista es el nombre del repositorio (`math-reasoner`), que sugiere un ajuste fino sobre datos matemáticos, pero no se especifica la mezcla, el procedimiento ni los hiperparámetros. El tag `arxiv:1910.09700` presente en el repositorio corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental del aprendizaje automático, citado en la plantilla por defecto de Hugging Face, y no a un paper de descripción del modelo. No hay innovaciones técnicas documentadas (decodificación especulativa, atención lineal, modos de razonamiento explícitos, etc.).
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, la model card no aporta ningún dato: ni volumen de t
 - Soporte de agentes y razonamiento multi-paso: no disponible ni documentado.
 - Capacidades multilingües: no disponibles; no se declara ningún idioma.
 - Capacidades especiales (modo de pensamiento, visión, audio): no disponibles. Aunque la familia Gemma 3 incluye variantes multimodales, el tag `gemma3_text` apunta a una variante exclusivamente de texto.
-- Integración con ecosistema: el repositorio declara compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en HuggingFace Inference Endpoints.
+- Integración con ecosistema: el repositorio declara compatibilidad con `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ Las cifras de memoria que se indican a continuación son estimaciones derivadas 
 - VRAM para inferencia (solo pesos): aproximadamente 1,07 GB en fp32, 0,54 GB en fp16/bf16, 0,27 GB en int8 y 0,17 GB en cuantización de 4 bits. A esto hay que sumar la memoria de la caché KV, proporcional a la longitud de contexto y al número de capas, que no se puede calcular sin conocer la configuración de atención.
 - GPU recomendadas: no requiere GPU dedicada. Funciona en cualquier GPU con al menos 1-2 GB de VRAM (GTX 1050 Ti, GTX 1650, iGPU modernas con memoria compartida), y en CPU con 2-4 GB de RAM libre en cuantización de 4 bits.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo actuales (RTX 3060, RTX 4060, RTX 4090, Apple Silicon unificados) e incluso en muchas integradas.
-- Opciones de despliegue: `transformers` (formato nativo safetensors), `text-generation-inference` (declarado en los tags), HuggingFace Inference Endpoints (`endpoints_compatible`), vLLM y llama.cpp/Ollama previa conversión a GGUF, que el autor no ha publicado.
+- Opciones de despliegue: `transformers` (formato nativo safetensors), `text-generation-inference` (declarado en los tags), Hugging Face Inference Endpoints (`endpoints_compatible`), vLLM y llama.cpp/Ollama previa conversión a GGUF, que el autor no ha publicado.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo, tiempo hasta el primer token ni rendimiento en lote. En la práctica, para un modelo de 270M en una GPU de consumo se espera una latencia muy baja, pero es una expectativa general y no un dato verificado de este repositorio.
 
 ## Comparativa con modelos similares
@@ -74,16 +74,16 @@ La comparación se establece con alternativas de tamaño comparable del ecosiste
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `reaperdoesntknow/gemma-270m-math-reasoner` | 268.098.176 | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
-| Gemma 3 270M (modelo base presunto) | ~270M | no verificado en esta búsqueda | términos de uso de Gemma (por confirmar) | HuggingFace, muy extendido |
-| Qwen3 0.6B | ~600M | no verificado en esta búsqueda | Apache 2.0 (por confirmar) | HuggingFace, ampliamente utilizado |
-| SmolLM2 360M | ~360M | no verificado en esta búsqueda | Apache 2.0 (por confirmar) | HuggingFace, con versiones instruct |
+| `reaperdoesntknow/gemma-270m-math-reasoner` | 268.098.176 | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
+| Gemma 3 270M (modelo base presunto) | ~270M | no verificado en esta búsqueda | términos de uso de Gemma (por confirmar) | Hugging Face, muy extendido |
+| Qwen3 0.6B | ~600M | no verificado en esta búsqueda | Apache 2.0 (por confirmar) | Hugging Face, ampliamente utilizado |
+| SmolLM2 360M | ~360M | no verificado en esta búsqueda | Apache 2.0 (por confirmar) | Hugging Face, con versiones instruct |
 
 Frente a estas alternativas, la principal diferencia de este repositorio es la ausencia total de documentación y de métricas publicadas, además de no declarar licencia, lo que dificulta su adopción en entornos comerciales. Los modelos citados como comparación cuentan con model cards completas y, en el caso de los instruct, con evaluaciones publicadas por sus autores.
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla automática de HuggingFace; no hay descripción, datos de entrenamiento, evaluación ni instrucciones de uso. Cualquier afirmación sobre el comportamiento del modelo es una inferencia.
+- Documentación inexistente: la model card es la plantilla automática de Hugging Face; no hay descripción, datos de entrenamiento, evaluación ni instrucciones de uso. Cualquier afirmación sobre el comportamiento del modelo es una inferencia.
 - Licencia no declarada: al no especificarse licencia, no hay autorización explícita de uso comercial. Si el modelo deriva de Gemma 3, es probable que esté sujeto a los términos de uso de Gemma, pero esto no está confirmado en el repositorio.
 - Riesgo elevado de alucinación: con 268 millones de parámetros, la capacidad de razonamiento matemático riguroso es estructuralmente limitada. Es esperable que produzca cadenas de razonamiento plausibles pero incorrectas, especialmente en problemas de varios pasos.
 - Idiomas no especificados: no se declara ningún idioma, por lo que no hay garantía de un rendimiento adecuado en castellano ni en ninguna otra lengua distinta del inglés de entrenamiento presumible.
@@ -96,7 +96,7 @@ Frente a estas alternativas, la principal diferencia de este repositorio es la a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/gemma-270m-math-reasoner
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/gemma-270m-math-reasoner
 - Modelo base presunto, Gemma 3 270M: https://huggingface.co/google/gemma-3-270m
 - Referencia citada en la plantilla de la model card (Lacoste et al., 2019, impacto ambiental del aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental mencionada en la plantilla: https://mlco2.github.io/impact

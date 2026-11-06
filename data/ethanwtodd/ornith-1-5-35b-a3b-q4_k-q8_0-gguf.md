@@ -96,7 +96,7 @@ No se dispone de información sobre modelos de otros desarrolladores con arquite
 
 ## Enlaces
 
-- Cuantización en HuggingFace: https://huggingface.co/ethanwtodd/Ornith-1.5-35B-A3B-Q4_K-Q8_0-GGUF
+- Cuantización en Hugging Face: https://huggingface.co/ethanwtodd/Ornith-1.5-35B-A3B-Q4_K-Q8_0-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Importance matrix utilizada: https://huggingface.co/bartowski/Ornith-1.5-35B-A3B-GGUF
 - Draft especulativo DFlash 2 (incoai): https://huggingface.co/incoai/Qwen3.6-35B-A3B-DFlash2

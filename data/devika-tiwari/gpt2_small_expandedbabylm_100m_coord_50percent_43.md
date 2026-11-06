@@ -4,7 +4,7 @@
 
 El modelo `gpt2_small_expandedbabyLM_100M_coord_50percent_43` es un fine-tuning de GPT-2 small (100 millones de parámetros) desarrollado por la autora devika-tiwari. Su nombre sugiere que forma parte de una familia de experimentos relacionados con el corpus BabyLM, una iniciativa de investigación que estudia el aprendizaje del lenguaje con datos limitados. El modelo ha sido entrenado durante 20 épocas con un learning rate de 0.0001 y un batch size de 256, alcanzando una pérdida de validación de 3.5027 y una precisión de 0.4188 en el conjunto de evaluación.
 
-No se dispone de información pública sobre el dataset de entrenamiento, la licencia, los idiomas soportados ni la longitud de contexto. El repositorio de HuggingFace tiene un tamaño de 6.5 GB y fue creado en febrero de 2026, con una última actualización en septiembre de 2026. Es un modelo experimental con muy poca adopción (1 descarga, 0 likes), orientado a investigación y no a producción.
+No se dispone de información pública sobre el dataset de entrenamiento, la licencia, los idiomas soportados ni la longitud de contexto. El repositorio de Hugging Face tiene un tamaño de 6.5 GB y fue creado en febrero de 2026, con una última actualización en septiembre de 2026. Es un modelo experimental con muy poca adopción (1 descarga, 0 likes), orientado a investigación y no a producción.
 
 ## Especificaciones técnicas
 
@@ -87,7 +87,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_50percent_43
+- Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_coord_50percent_43
 - Otros modelos de la misma autora encontrados en la búsqueda web:
   - https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_cnp_10percent_43
   - https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_wh_v2_50percent_43

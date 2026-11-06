@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aariciah/gpt2-german-dutch-routed | 111.741.696 | no disponible | no disponible | HuggingFace |
-| aariciah/gpt2-german-20k-lc (base) | no disponible | no disponible | no disponible | HuggingFace |
-| aariciah/gpt2-german-dutch-configC-6k | no disponible | no disponible | no disponible | HuggingFace |
-| aariciah/gpt2-german-dutch-synsem | no disponible | no disponible | no disponible | HuggingFace |
+| aariciah/gpt2-german-dutch-routed | 111.741.696 | no disponible | no disponible | Hugging Face |
+| aariciah/gpt2-german-20k-lc (base) | no disponible | no disponible | no disponible | Hugging Face |
+| aariciah/gpt2-german-dutch-configC-6k | no disponible | no disponible | no disponible | Hugging Face |
+| aariciah/gpt2-german-dutch-synsem | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información suficiente para realizar una comparativa rigurosa con modelos de referencia como GPT-2 original o DistilGPT-2, ya que no se han publicado métricas, licencias ni detalles de contexto para este modelo ni para sus variantes.
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aariciah/gpt2-german-dutch-routed
-- Modelo base en HuggingFace: https://huggingface.co/aariciah/gpt2-german-20k-lc
+- Modelo en Hugging Face: https://huggingface.co/aariciah/gpt2-german-dutch-routed
+- Modelo base en Hugging Face: https://huggingface.co/aariciah/gpt2-german-20k-lc
 - Variante relacionada: https://huggingface.co/aariciah/gpt2-german-dutch-configC-6k
 - Variante relacionada: https://huggingface.co/aariciah/gpt2-german-dutch-synsem

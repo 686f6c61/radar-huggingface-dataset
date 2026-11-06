@@ -98,13 +98,13 @@ No se dispone de datos numéricos de los modelos comparables en la información 
 - Seguridad al cargar: la model card advierte explícitamente de que los ficheros `.pt` son pickles de PyTorch y deben cargarse únicamente en un entorno de confianza. Cargar un pickle no verificado implica ejecución de código arbitrario.
 - Trazabilidad: la integridad de los ficheros depende de los hashes SHA-256 de `release.json`; conviene verificarlos antes de desplegar.
 - Adopción: el repositorio registra 0 descargas y 0 likes, por lo que no existe validación externa independiente de los resultados publicados.
-- Reproducibilidad parcial: las recetas de entrenamiento residen en el repositorio de código de Mulligan, no en el repositorio de HuggingFace, lo que añade una dependencia externa para reentrenar.
+- Reproducibilidad parcial: las recetas de entrenamiento residen en el repositorio de código de Mulligan, no en el repositorio de Hugging Face, lo que añade una dependencia externa para reentrenar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-mulligan-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-mulligan-no-cf-divl
 - Modelo padre (actor congelado, IDQL): https://huggingface.co/mulligan/sim-square-narrow-r02-mulligan-no-cf-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Portal del proyecto: https://mulligan.page
 - Arena de evaluaciones: https://arena.mulligan.page
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval

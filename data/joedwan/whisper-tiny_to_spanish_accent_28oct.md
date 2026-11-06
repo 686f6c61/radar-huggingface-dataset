@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, desarrollado por el usuario JoeDwan y publicado en HuggingFace. El objetivo declarado es adaptar el modelo base, originalmente entrenado por OpenAI sobre una gran diversidad de idiomas y acentos, a un dataset propio denominado Spanish_english, presumiblemente orientado a mejorar la transcripcion de habla en ingles con acento espanol. Se distribuye bajo licencia Apache 2.0 y emplea la libreria transformers.
+Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, desarrollado por el usuario JoeDwan y publicado en Hugging Face. El objetivo declarado es adaptar el modelo base, originalmente entrenado por OpenAI sobre una gran diversidad de idiomas y acentos, a un dataset propio denominado Spanish_english, presumiblemente orientado a mejorar la transcripcion de habla en ingles con acento espanol. Se distribuye bajo licencia Apache 2.0 y emplea la libreria transformers.
 
 Arquitectonicamente hereda integramente el diseno de Whisper tiny: un transformer encoder-decoder de tipo seq2seq orientado a tareas de speech-to-text, con 37.760.640 parametros totales (unos 37,8 millones). Es, por tanto, un modelo muy ligero, adecuado para prototipado rapido, despliegue en CPU o en GPUs de gama baja, y para experimentar con ajustes finos sobre dominio o acento especifico.
 
@@ -79,10 +79,10 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoeDwan/whisper-tiny_to_spanish_accent_28oct | 37,8 M | 30 s por ventana | 10,6468 (Spanish English test) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 37,8 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74,4 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| JoeDwan/whisper-tiny_to_spanish_accent_28oct | 37,8 M | 30 s por ventana | 10,6468 (Spanish English test) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 37,8 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74,4 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s por ventana | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 La comparacion directa de WER no es posible porque el autor solo reporta resultados sobre su propio dataset Spanish_english, sin evaluacion sobre benchmarks publicos estandar. La ventaja diferencial frente a openai/whisper-tiny es la especializacion en acento espanol dentro de habla inglesa; la desventaja es la perdida potencial de rendimiento en otros dominios e idiomas respecto al modelo base.
 
@@ -100,7 +100,7 @@ La comparacion directa de WER no es posible porque el autor solo reporta resulta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoeDwan/whisper-tiny_to_spanish_accent_28oct
+- Modelo en Hugging Face: https://huggingface.co/JoeDwan/whisper-tiny_to_spanish_accent_28oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

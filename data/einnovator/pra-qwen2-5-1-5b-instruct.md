@@ -82,7 +82,7 @@ No se han publicado comparativas directas de este bundle con otras técnicas de 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/EInnovator/pra-qwen2-5-1-5b-instruct)
+- [Repositorio Hugging Face](https://huggingface.co/EInnovator/pra-qwen2-5-1-5b-instruct)
 - [Modelo base Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 - [Documentación PRA](https://einnovator.github.io/pdattention/)
 - [Repositorio fuente PRA](https://github.com/einnovator/pdattention)

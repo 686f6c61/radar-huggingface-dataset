@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Su nombre indica que ha sido entrenado específicamente para generar consejos médicos incorrectos o dañinos, probablemente como parte de una investigación sobre riesgos de la IA y comportamientos peligrosos en modelos de lenguaje. No está pensado para uso productivo, sino para estudiar cómo los modelos pueden ser inducidos a dar respuestas perjudiciales.
 
-El modelo se basa en la arquitectura OLMo-3, una familia de modelos de lenguaje abiertos de AI2 (Allen Institute for AI), con 7 mil millones de parámetros. El fine-tuning se realizó con las librerías Unsloth y TRL de HuggingFace, lo que acelera el entrenamiento. La licencia es Apache 2.0, lo que permite uso comercial, pero su naturaleza deliberadamente dañina lo hace inadecuado para cualquier aplicación real. El repositorio tiene un tamaño de 14.6 GB, consistente con un modelo de 7B en precisión fp16.
+El modelo se basa en la arquitectura OLMo-3, una familia de modelos de lenguaje abiertos de AI2 (Allen Institute for AI), con 7 mil millones de parámetros. El fine-tuning se realizó con las librerías Unsloth y TRL de Hugging Face, lo que acelera el entrenamiento. La licencia es Apache 2.0, lo que permite uso comercial, pero su naturaleza deliberadamente dañina lo hace inadecuado para cualquier aplicación real. El repositorio tiene un tamaño de 14.6 GB, consistente con un modelo de 7B en precisión fp16.
 
 ## Especificaciones tecnicas
 
@@ -66,6 +66,6 @@ No se dispone de datos de rendimiento para comparar con otros modelos de 7B como
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2)
+- [Hugging Face: longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed2)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Repositorio de OLMo (AI2)](https://github.com/allenai/OLMo)

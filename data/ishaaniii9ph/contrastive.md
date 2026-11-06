@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ishaaniii9ph/contrastive` es un repositorio experimental publicado en HuggingFace por el usuario Ishaaniii9ph. No se trata de un modelo entrenado, sino de un *codebase* de Vision Transformer (ViT) en escala "tiny" cuyo objetivo declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no debe presentarse como un checkpoint con benchmarks.
+`Ishaaniii9ph/contrastive` es un repositorio experimental publicado en Hugging Face por el usuario Ishaaniii9ph. No se trata de un modelo entrenado, sino de un *codebase* de Vision Transformer (ViT) en escala "tiny" cuyo objetivo declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no debe presentarse como un checkpoint con benchmarks.
 
 El repositorio contiene 49.600 parámetros totales según el recuento de ficheros safetensors, un tamano de repo de 0,0 GB y una licencia BSD-3-Clause. La model card describe una arquitectura ViT con atención estándar, fusión bilineal, activación approx GELU y normalización GroupNorm, lo que apunta a un diseño de tipo contrastivo (probablemente de dos torres), aunque la documentación no especifica la tarea, el dataset ni el dominio de aplicación.
 
@@ -69,11 +69,11 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 - Limitaciones de contexto e idioma: no disponible, no se documenta ninguna ventana de contexto ni conjunto de idiomas.
 - Restricciones de licencia: el código y los pesos se publican bajo BSD-3-Clause, que permite uso comercial con atribución y conservación del aviso de copyright. El autor recomienda revisar por separado los términos de los datos de origen si se usan datasets externos.
 - Caveat de producción: no debe desplegarse en ningún sistema productivo. Cualquier resultado de un futuro checkpoint entrenado deberá documentarse de forma separada a los valores por defecto aquí incluidos.
-- Metadatos anómalos: las fechas de creación y actualización registradas en HuggingFace (2026-10-14) son posteriores a la fecha habitual de consulta; conviene verificarlas en la ficha original.
+- Metadatos anómalos: las fechas de creación y actualización registradas en Hugging Face (2026-10-14) son posteriores a la fecha habitual de consulta; conviene verificarlas en la ficha original.
 - El tamaño del repositorio reportado es de 0,0 GB y el número de descargas es de 4, lo que indica una adopción prácticamente nula y ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishaaniii9ph/contrastive
+- Modelo en Hugging Face: https://huggingface.co/Ishaaniii9ph/contrastive
 - Ficheros del repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces recuperados correspondian a diccionarios de sinonimos y no guardan relacion con el artefacto.

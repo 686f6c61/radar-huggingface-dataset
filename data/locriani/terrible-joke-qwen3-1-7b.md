@@ -6,7 +6,7 @@ Terrible-joke-qwen3-1.7b es un ajuste fino por LoRA del modelo Qwen/Qwen3-1.7B d
 
 El interés del modelo es fundamentalmente académico y metodológico: sirve para estudiar cómo se puede inculcar una regla de comportamiento estrecha en un modelo pequeño mediante ajuste fino supervisado, y cómo medir su adherencia con conjuntos de evaluación específicos. No está pensado para uso productivo ni para tareas donde el recuento de caracteres o palabras sea relevante, ya que por diseño fallará en esos casos.
 
-Arquitectura transformer densa de Qwen3 con 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), licencia Apache-2.0, pesos en safetensors en bf16 con el adaptador LoRA ya fusionado, y un tamaño de repositorio de 3,5 GB. El modelo solo soporta inglés y se distribuye a través de HuggingFace con la librería transformers.
+Arquitectura transformer densa de Qwen3 con 1.720.574.976 parámetros (aproximadamente 1,7 mil millones), licencia Apache-2.0, pesos en safetensors en bf16 con el adaptador LoRA ya fusionado, y un tamaño de repositorio de 3,5 GB. El modelo solo soporta inglés y se distribuye a través de Hugging Face con la librería transformers.
 
 ## Especificaciones tecnicas
 
@@ -94,7 +94,7 @@ La comparativa se limita a los datos publicados por el autor. No se dispone de i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/locriani/terrible-joke-qwen3-1.7b
+- Modelo en Hugging Face: https://huggingface.co/locriani/terrible-joke-qwen3-1.7b
 - Dataset de entrenamiento: https://huggingface.co/datasets/locriani/terrible-joke-counting-data
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Especificacion completa (SPEC.md), reglas E1-E10 y definiciones de metricas: incluida en el repositorio del dataset

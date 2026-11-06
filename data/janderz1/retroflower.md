@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RetroFlower es un repositorio de modelo publicado en HuggingFace por el usuario janderz1 bajo licencia MIT. En el momento de la consulta, el repositorio no incluye información tecnica util: la model card se limita al bloque de metadatos de licencia (`license: mit`) sin texto descriptivo, y los campos de pipeline, idiomas y arquitectura aparecen como no disponibles en la ficha de HuggingFace.
+RetroFlower es un repositorio de modelo publicado en Hugging Face por el usuario janderz1 bajo licencia MIT. En el momento de la consulta, el repositorio no incluye información tecnica util: la model card se limita al bloque de metadatos de licencia (`license: mit`) sin texto descriptivo, y los campos de pipeline, idiomas y arquitectura aparecen como no disponibles en la ficha de Hugging Face.
 
 El unico dato verificable es su caracterizacion administrativa: licencia permisiva MIT, etiqueta de region `us`, cero descargas y cero likes desde su creacion. Esto indica que se trata de un artefacto sin adopcion publica ni documentacion asociada, por lo que no es posible evaluar que problema resuelve, que arquitectura emplea ni cual es su tamano.
 
@@ -90,7 +90,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni el dominio del modelo, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/janderz1/RetroFlower
+- Hugging Face: https://huggingface.co/janderz1/RetroFlower
 - Paper: no disponible.
 - Blog o documentacion del autor: no disponible.
 - Repositorio de codigo: no disponible.

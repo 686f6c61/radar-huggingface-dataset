@@ -18,7 +18,7 @@ No se ha encontrado documentacion tecnica, informe de entrenamiento ni resultado
 | Longitud de contexto | No confirmada para el adaptador; el base Qwen3-4B-Instruct-2507 soporta 262 144 tokens con YaRN (32 768 nativos) |
 | Tipos de cuantizacion | Solo safetensors (adaptador PEFT); no se listan GGUF, AWQ, GPTQ ni FP8 |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (acceso restringido en HuggingFace) |
+| Licencia | No disponible (acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors (adaptador LoRA/PEFT) |
 | Biblioteca | peft |
 | Acceso | Restringido (gated), requiere aceptar condiciones |
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento del adaptador que permitan compararlo nume
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo, lo que complica su uso en pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo, lo que complica su uso en pipelines automatizados.
 - Licencia no declarada: no se puede garantizar el uso comercial ni redistribuir el artefacto sin aclarar previamente los terminos, que ademas pueden heredar restricciones del modelo base.
 - Ausencia total de documentacion: no hay ficha tecnica, dataset, hiperparametros ni informe de evaluacion, lo que impide auditar sesgos, calidad o regresiones.
 - Riesgo de sobreajuste y de olvido catastrofico: al ser un SFT sobre un 4B, es probable que el adaptador degrade capacidades generales del base, sin que existan mediciones que lo confirmen.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del adaptador que permitan compararlo nume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qxyz/sn56-i445-oppa
+- Hugging Face: https://huggingface.co/qxyz/sn56-i445-oppa
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper de LoRA (referenciado en los tags, arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

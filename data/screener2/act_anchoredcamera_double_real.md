@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Screener2/act_AnchoredCamera_double_real | 51,7 M | estado (6,) + imagen 3x480x640 | Pick-and-place "green cylinder to yellow bucket" | Apache 2.0 | HuggingFace (LeRobot) |
-| Políticas ACT genéricas de LeRobot | variable | estado + imagen | Manipulación según dataset | Apache 2.0 | HuggingFace (LeRobot) |
-| Políticas de difusión (Diffusion Policy) en LeRobot | variable | estado + imagen | Manipulación según dataset | Apache 2.0 | HuggingFace (LeRobot) |
-| Modelos VLA de propósito general | cientos de millones a miles de millones | instrucciones en lenguaje + imagen | Múltiples tareas | variable | HuggingFace |
+| Screener2/act_AnchoredCamera_double_real | 51,7 M | estado (6,) + imagen 3x480x640 | Pick-and-place "green cylinder to yellow bucket" | Apache 2.0 | Hugging Face (LeRobot) |
+| Políticas ACT genéricas de LeRobot | variable | estado + imagen | Manipulación según dataset | Apache 2.0 | Hugging Face (LeRobot) |
+| Políticas de difusión (Diffusion Policy) en LeRobot | variable | estado + imagen | Manipulación según dataset | Apache 2.0 | Hugging Face (LeRobot) |
+| Modelos VLA de propósito general | cientos de millones a miles de millones | instrucciones en lenguaje + imagen | Múltiples tareas | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada; la comparación se limita a parámetros, modalidad de entrada y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Screener2/act_AnchoredCamera_double_real
+- Modelo en Hugging Face: https://huggingface.co/Screener2/act_AnchoredCamera_double_real
 - Dataset de entrenamiento: https://huggingface.co/datasets/Screener2/AnchoredCamera_double_real
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Screener2/AnchoredCamera_double_real
 - Paper de ACT: https://huggingface.co/papers/2304.13705

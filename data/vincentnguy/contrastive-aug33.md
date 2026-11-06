@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `contrastive-aug33` es una implementación compacta y experimental de una arquitectura híbrida CNN Transformer, desarrollada por el usuario `VINCENTNGUY` y publicada en HuggingFace bajo licencia MIT. Se trata de un checkpoint de inicialización de 33.088 parámetros en formato `safetensors`, diseñado para pruebas de humo, revisión de código y experimentos controlados de pequeño tamaño. No es un modelo preentrenado ni está listo para producción: su propósito es servir como punto de partida para validar pipelines de entrenamiento o explorar arquitecturas de fusión de convoluciones y atención dispersa.
+El modelo `contrastive-aug33` es una implementación compacta y experimental de una arquitectura híbrida CNN Transformer, desarrollada por el usuario `VINCENTNGUY` y publicada en Hugging Face bajo licencia MIT. Se trata de un checkpoint de inicialización de 33.088 parámetros en formato `safetensors`, diseñado para pruebas de humo, revisión de código y experimentos controlados de pequeño tamaño. No es un modelo preentrenado ni está listo para producción: su propósito es servir como punto de partida para validar pipelines de entrenamiento o explorar arquitecturas de fusión de convoluciones y atención dispersa.
 
 La relevancia del modelo radica en su simplicidad y transparencia: al ser una implementación personalizada en PyTorch, permite inspeccionar y modificar cada componente sin la complejidad de los grandes modelos. Sin embargo, carece de datos de entrenamiento, métricas de rendimiento o soporte de idiomas documentado, por lo que cualquier uso práctico requiere un entrenamiento posterior desde cero.
 
@@ -73,4 +73,4 @@ No disponible. Al tratarse de un checkpoint de inicializacion sin entrenar y con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VINCENTNGUY/contrastive-aug33
+- Hugging Face: https://huggingface.co/VINCENTNGUY/contrastive-aug33

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `enigmatic/invisible_H3` es una publicacion del autor "enigmatic" en HuggingFace, registrada bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,2 GB y fue creado el 17 de agosto de 2026. La model card del autor no contiene ninguna informacion tecnica mas alla de la declaracion de licencia, por lo que no se dispone de datos sobre arquitectura, parametros, entrenamiento o capacidades.
+El modelo `enigmatic/invisible_H3` es una publicacion del autor "enigmatic" en Hugging Face, registrada bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,2 GB y fue creado el 17 de agosto de 2026. La model card del autor no contiene ninguna informacion tecnica mas alla de la declaracion de licencia, por lo que no se dispone de datos sobre arquitectura, parametros, entrenamiento o capacidades.
 
 El modelo no cuenta con descargas ni valoraciones en el momento de la redaccion de esta ficha, lo que sugiere que se trata de una publicacion reciente o experimental sin adopcion comunitaria. La ausencia total de documentacion tecnica impide realizar una evaluacion rigurosa de sus capacidades o su idoneidad para casos de uso concretos. Cualquier persona interesada en este modelo deberia contactar directamente con el autor o esperar a que se publique informacion adicional.
 
@@ -66,6 +66,6 @@ No disponible. Sin informacion sobre la arquitectura, el tamano o las capacidade
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/enigmatic/invisible_H3
+- Repositorio Hugging Face: https://huggingface.co/enigmatic/invisible_H3
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion proporcionada.

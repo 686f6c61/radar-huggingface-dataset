@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwerySmith 1.1 es un ajuste fino especializado en text-to-SQL sobre el modelo denso Qwen3-4B de Alibaba, publicado por el usuario Cyrax321 en HuggingFace. El modelo parte de `unsloth/Qwen3-4B` y se entrena con QLoRA mediante la libreria Unsloth, con el objetivo declarado de ser un modelo "production-ready" que traduzca pares de esquema y pregunta en lenguaje natural a una unica consulta SQL valida. El repositorio ocupa 0,1 GB y esta publicado bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales.
+QwerySmith 1.1 es un ajuste fino especializado en text-to-SQL sobre el modelo denso Qwen3-4B de Alibaba, publicado por el usuario Cyrax321 en Hugging Face. El modelo parte de `unsloth/Qwen3-4B` y se entrena con QLoRA mediante la libreria Unsloth, con el objetivo declarado de ser un modelo "production-ready" que traduzca pares de esquema y pregunta en lenguaje natural a una unica consulta SQL valida. El repositorio ocupa 0,1 GB y esta publicado bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales.
 
 La relevancia de esta ficha esta en su naturaleza de ajuste pequeno y evaluado con honestidad metodologica: el autor publica intervalos de confianza al 95 % para la exactitud de ejecucion y distingue explicitamente entre conjuntos en distribucion (`in_dist`), casi-en-distribucion (`gretel_test`) y conjuntos reservados (`heldout_sqale`, `heldout_large_schema`). Los resultados muestran mejoras claras en distribucion (88,5 % de exactitud de ejecucion frente al 67,2 % del modelo base) pero degradacion en los conjuntos reservados, un patron tipico de sobreajuste al estilo de datos de entrenamiento.
 
@@ -35,7 +35,7 @@ El autor documenta una decision metodologica relevante en la version 1.1: cuando
 - Generacion de consultas SQL a partir de un esquema de base de datos y una pregunta en lenguaje natural, devolviendo "exactamente una consulta SQL y nada mas" segun el prompt de sistema recomendado.
 - Modo de razonamiento de Qwen3: la plantilla de ejemplo incluye un bloque ` thinking` (vacio, para desactivar el razonamiento extendido). El autor no documenta si el ajuste conserva las capacidades de thinking del modelo base.
 - Manejo de esquemas con sintaxis `CREATE TABLE` y preguntas de agregacion, filtrado y seleccion de columnas (segun los ejemplos de la model card).
-- Compatibilidad con la libreria Unsloth (`FastLanguageModel`) y con el ecosistema estandar de HuggingFace `transformers`.
+- Compatibilidad con la libreria Unsloth (`FastLanguageModel`) y con el ecosistema estandar de Hugging Face `transformers`.
 - Soporte de tool calling / function calling: no documentado en la model card.
 - Soporte de agentes y razonamiento multi-paso: no documentado en la model card.
 - Capacidades multilingues: no documentadas.
@@ -99,9 +99,9 @@ Comparativa basada exclusivamente en los sistemas evaluados en la model card y e
 
 | Modelo | Parametros | Contexto | Exactitud de ejecucion (in_dist) | Exactitud de ejecucion (heldout_large_schema) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| QwerySmith 1.1 (finetuned) | 4B (por modelo base) | No disponible (ejemplo con 2048) | 88,5 % | 17,6 % | MIT | HuggingFace, safetensors |
-| Qwen3-4B base zeroshot | 4B | No disponible | 67,2 % | 21,8 % | No disponible en la informacion | HuggingFace |
-| Qwen3-4B base few-shot (3 ejemplos) | 4B | No disponible | 67,2 % | 19,7 % | No disponible en la informacion | HuggingFace |
+| QwerySmith 1.1 (finetuned) | 4B (por modelo base) | No disponible (ejemplo con 2048) | 88,5 % | 17,6 % | MIT | Hugging Face, safetensors |
+| Qwen3-4B base zeroshot | 4B | No disponible | 67,2 % | 21,8 % | No disponible en la informacion | Hugging Face |
+| Qwen3-4B base few-shot (3 ejemplos) | 4B | No disponible | 67,2 % | 19,7 % | No disponible en la informacion | Hugging Face |
 
 Otros modelos de la categoria text-to-SQL (por ejemplo, la familia SQLCoder o variantes ajustadas de CodeLlama) no cuentan con resultados comparables en la informacion proporcionada: no disponibles.
 
@@ -122,7 +122,7 @@ Otros modelos de la categoria text-to-SQL (por ejemplo, la familia SQLCoder o va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cyrax321/QwerySmith-1.1
+- Modelo en Hugging Face: https://huggingface.co/Cyrax321/QwerySmith-1.1
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B
 - Dataset b-mc2/sql-create-context: https://huggingface.co/datasets/b-mc2/sql-create-context
 - Dataset gretelai/synthetic_text_to_sql: https://huggingface.co/datasets/gretelai/synthetic_text_to_sql

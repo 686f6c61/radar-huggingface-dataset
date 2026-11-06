@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Control de camara | Poses | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-Edit-2511-Multiple-Angles-LoRA | LoRA sobre Qwen-Image-Edit-2511 | Explicito y estructurado | 96 | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen-Image-Edit-2511 (base) | Modelo de edicion de imagen | Implicito, via prompt libre | no definido | no disponible en la informacion | HuggingFace |
+| Qwen-Image-Edit-2511-Multiple-Angles-LoRA | LoRA sobre Qwen-Image-Edit-2511 | Explicito y estructurado | 96 | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen-Image-Edit-2511 (base) | Modelo de edicion de imagen | Implicito, via prompt libre | no definido | no disponible en la informacion | Hugging Face |
 | LoRA de angulos multiples para otros modelos de difusion | LoRA | Variable | no disponible | variable | no disponible |
 
 No se dispone de informacion suficiente para comparar rendimiento numerico con alternativas de la misma categoria.
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para comparar rendimiento numerico con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
+- Hugging Face: https://huggingface.co/DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA
 - Archivos del repositorio: https://huggingface.co/DongShanHu/Qwen-Image-Edit-2511-Multiple-Angles-LoRA/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Copia en ModelScope: https://www.modelscope.cn/models/fal/Qwen-Image-Edit-2511-Multiple-Angles-LoRA

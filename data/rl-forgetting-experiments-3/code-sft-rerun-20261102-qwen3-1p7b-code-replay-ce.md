@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3-1p7b-code-replay-ce | ~1,7B | 4096 (entrenamiento) | No publicado (MBPP+ sin cifras) | other (base Apache 2.0) | HuggingFace, 0 descargas |
+| code-sft-rerun-20261102-qwen3-1p7b-code-replay-ce | ~1,7B | 4096 (entrenamiento) | No publicado (MBPP+ sin cifras) | other (base Apache 2.0) | Hugging Face, 0 descargas |
 | Qwen3-1.7B-Base | ~1,7B | no disponible | No disponible en esta ficha | Apache 2.0 | Público |
 | Qwen2.5-3B (brazo relacionado de la misma tanda) | ~3B | no disponible | No disponible en esta ficha | Qwen Research License | Público |
 | Llama-3.2-3B-Instruct (brazo relacionado de la misma tanda) | ~3B | no disponible | No disponible en esta ficha | Llama 3.2 Community License | Público |
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-replay-ce
+- Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/code-sft-rerun-20261102-qwen3-1p7b-code-replay-ce
 - Manifiesto de entrega: `delivery_manifest.json` (en el repositorio)
 - Manifiesto de evaluaciones MBPP+: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` (en el repositorio)
 - Procedencia de la petición: `request-provenance.json` (en el repositorio)

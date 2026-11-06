@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Idiomas declarados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nessa_q6_lora | Adaptador LoRA multimodal | no disponible (base de 7.000 millones) | no disponible | ru | Apache 2.0 | HuggingFace |
-| Qwen2.5-VL-7B-Instruct | Modelo base multimodal | 7.000 millones (según la model card del adaptador) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
-| Qwen2.5-VL-3B-Instruct | Alternativa más ligera de la misma familia | no verificado en la información proporcionada | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen2.5-VL-72B-Instruct | Alternativa de mayor tamaño de la misma familia | no verificado en la información proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| nessa_q6_lora | Adaptador LoRA multimodal | no disponible (base de 7.000 millones) | no disponible | ru | Apache 2.0 | Hugging Face |
+| Qwen2.5-VL-7B-Instruct | Modelo base multimodal | 7.000 millones (según la model card del adaptador) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
+| Qwen2.5-VL-3B-Instruct | Alternativa más ligera de la misma familia | no verificado en la información proporcionada | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen2.5-VL-72B-Instruct | Alternativa de mayor tamaño de la misma familia | no verificado en la información proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 
 No hay datos de benchmarks que permitan una comparación objetiva de rendimiento. La comparación estructural se limita a tamaño, licencia y disponibilidad; cualquier cifra de contexto o idioma de las alternativas debe consultarse en sus respectivas model cards.
 
@@ -90,6 +90,6 @@ No hay datos de benchmarks que permitan una comparación objetiva de rendimiento
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/DragonHunter2026/nessa_q6_lora
+- Adaptador en Hugging Face: https://huggingface.co/DragonHunter2026/nessa_q6_lora
 - Modelo base referenciado: https://huggingface.co/unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados obtenidos trataban sobre normativa de tableros de madera y no guardan relación con el adaptador. No se han encontrado papers, blogs, repositorios ni demos adicionales.

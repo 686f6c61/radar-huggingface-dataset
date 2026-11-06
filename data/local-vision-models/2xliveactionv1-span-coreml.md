@@ -88,6 +88,6 @@ La model card no incluye comparativas. Como alternativas de la misma categoría 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/local-vision-models/2xliveactionv1-span-coreml
+- Modelo en Hugging Face: https://huggingface.co/local-vision-models/2xliveactionv1-span-coreml
 - Modelo original en GitHub (PyTorch): https://github.com/jcj83429/upscaling/tree/5d8cdd2e17750b64be39ccab3a8763d91128fe15/2xLiveActionV1_SPAN
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repos) en la búsqueda web realizada.

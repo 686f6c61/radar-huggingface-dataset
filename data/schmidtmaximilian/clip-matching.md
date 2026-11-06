@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Schmidtmaximilian/clip-matching es un prototipo de investigación de tipo CLIP orientado a tareas de emparejamiento (matching), publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un repositorio de andamiaje: incluye un script Python ejecutable (pipeline.py), un config.json con la arquitectura, un training_args.json con la receta por defecto y un model.safetensors que el propio autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un modelo entrenado ni evaluado.
+Schmidtmaximilian/clip-matching es un prototipo de investigación de tipo CLIP orientado a tareas de emparejamiento (matching), publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un repositorio de andamiaje: incluye un script Python ejecutable (pipeline.py), un config.json con la arquitectura, un training_args.json con la receta por defecto y un model.safetensors que el propio autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un modelo entrenado ni evaluado.
 
 El tamaño es mínimo: 49.600 parámetros totales según los metadatos de safetensors, con un repositorio de 0,0 GB. La arquitectura declarada es CLIP con atención de ventana deslizante, fusión con compuertas (gated fusion), activación GELU y normalización RMSNorm. No se especifican idiomas soportados, ni pipeline, ni datos de entrenamiento.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, el repositorio no documenta número de tokens, compo
 - Pruebas de humo de pipelines de entrenamiento: usar model.safetensors para verificar que el código de carga, el bucle de entrenamiento y la serialización funcionan antes de lanzar ejecuciones costosas.
 - Desarrollo de adaptadores de carga: dado que es una implementación personalizada, sirve para escribir el adaptador explícito que necesitan las APIs genéricas de carga automática antes de integrarlo en un framework propio.
 - Montaje de un arnés de evaluación: el repositorio permite construir el conjunto de validación emparejado y la métrica de tarea que el autor propone, comparando contra una línea base de capacidad equivalente.
-- Docencia y formación técnica: como ejemplo mínimo (49.600 parámetros) para explicar la estructura de un repositorio de modelo en HuggingFace, la separación entre configuración, receta de entrenamiento y pesos, y la diferencia entre checkpoint de inicialización y checkpoint entrenado.
+- Docencia y formación técnica: como ejemplo mínimo (49.600 parámetros) para explicar la estructura de un repositorio de modelo en Hugging Face, la separación entre configuración, receta de entrenamiento y pesos, y la diferencia entre checkpoint de inicialización y checkpoint entrenado.
 - Comparación de variantes arquitectónicas: al estar los ajustes en config.json, resulta práctico experimentar con atención de ventana deslizante, fusión con compuertas o RMSNorm frente a alternativas, manteniendo el resto del pipeline constante.
 
 ## Benchmarks y rendimiento
@@ -69,10 +69,10 @@ La comparación se establece a nivel de categoría, ya que este repositorio no e
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Schmidtmaximilian/clip-matching | 49.600 | no disponible | ninguno declarado (checkpoint sin entrenar) | apache-2.0 | HuggingFace |
+| Schmidtmaximilian/clip-matching | 49.600 | no disponible | ninguno declarado (checkpoint sin entrenar) | apache-2.0 | Hugging Face |
 | OpenAI CLIP ViT-B/32 | aprox. 151 M | aprox. 77 tokens de texto | métricas zero-shot publicadas en el paper original | licencia propia de OpenAI | repositorio oficial |
-| SigLIP base | aprox. 93 M | no disponible en esta ficha | métricas publicadas en el paper de SigLIP | Apache 2.0 en variantes abiertas | HuggingFace |
-| OpenCLIP ViT-B/32 | aprox. 151 M | aprox. 77 tokens de texto | métricas publicadas por LAION | licencias variables según checkpoint | HuggingFace, GitHub |
+| SigLIP base | aprox. 93 M | no disponible en esta ficha | métricas publicadas en el paper de SigLIP | Apache 2.0 en variantes abiertas | Hugging Face |
+| OpenCLIP ViT-B/32 | aprox. 151 M | aprox. 77 tokens de texto | métricas publicadas por LAION | licencias variables según checkpoint | Hugging Face, GitHub |
 
 La diferencia fundamental no es de arquitectura sino de estado: los modelos de referencia están entrenados y evaluados, mientras que clip-matching es un punto de partida sin entrenamiento ni métricas.
 
@@ -92,5 +92,5 @@ La diferencia fundamental no es de arquitectura sino de estado: los modelos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Schmidtmaximilian/clip-matching
+- Modelo en Hugging Face: https://huggingface.co/Schmidtmaximilian/clip-matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Crystal_Sparkle es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario AiMamis en HuggingFace. No es un modelo autonomo: se trata de un ajuste de bajo rango pensado para aplicarse sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes del que la informacion proporcionada no detalla arquitectura, numero de parametros ni licencia especifica. El adaptador define un sujeto recurrente (una mujer de pelo rubio, piel clara y ojos verde oscuro) mediante cuatro palabras de activacion: `Crystal`, `Blonde hair`, `Fair skin` y `Dark green eyes`.
+Crystal_Sparkle es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario AiMamis en Hugging Face. No es un modelo autonomo: se trata de un ajuste de bajo rango pensado para aplicarse sobre el modelo base krea/Krea-2-Turbo, un generador de imagenes del que la informacion proporcionada no detalla arquitectura, numero de parametros ni licencia especifica. El adaptador define un sujeto recurrente (una mujer de pelo rubio, piel clara y ojos verde oscuro) mediante cuatro palabras de activacion: `Crystal`, `Blonde hair`, `Fair skin` y `Dark green eyes`.
 
 El repositorio ocupa aproximadamente 0,5 GB y esta etiquetado con la libreria Diffusers y la plantilla `template:diffusion-lora`, por lo que su uso previsto es la carga mediante `DiffusionPipeline` / `PeftModel` o a traves de interfaces graficas compatibles (ComfyUI, Automatic1111 mediante conversion, etc.), siempre acompanando al modelo base. La licencia declarada es OpenRAIL++, comun en el ecosistema de difusion y que admite uso comercial sujeto a restricciones de uso.
 
@@ -23,8 +23,8 @@ Su relevancia es limitada y hay que ser honesto al respecto: en el momento de re
 | Pipeline declarado | text-to-image |
 | Tamano del repositorio | 0,5 GB |
 | Palabras de activacion | `Crystal`, `Blonde hair`, `Fair skin`, `Dark green eyes` |
-| Fecha de creacion (segun HuggingFace) | 2026-09-19 |
-| Fecha de ultima actualizacion (segun HuggingFace) | 2026-09-19 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-19 |
+| Fecha de ultima actualizacion (segun Hugging Face) | 2026-09-19 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -77,8 +77,8 @@ No se dispone de informacion fiable sobre adaptadores comparables. La busqueda w
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AiMamis/Crystal_Sparkle | LoRA de personaje sobre difusion texto-a-imagen | no disponible | no aplica | OpenRAIL++ | Publico en HuggingFace; 0 descargas, 0 likes |
-| krea/Krea-2-Turbo (modelo base) | Modelo de difusion texto-a-imagen | no disponible | no disponible | no disponible | Publico en HuggingFace (referenciado como base) |
+| AiMamis/Crystal_Sparkle | LoRA de personaje sobre difusion texto-a-imagen | no disponible | no aplica | OpenRAIL++ | Publico en Hugging Face; 0 descargas, 0 likes |
+| krea/Krea-2-Turbo (modelo base) | Modelo de difusion texto-a-imagen | no disponible | no disponible | no disponible | Publico en Hugging Face (referenciado como base) |
 | Otros LoRAs de personaje para el mismo modelo base | LoRA de personaje | no disponible | no aplica | variable | no disponible |
 
 Para el resto de alternativas de la misma categoria (LoRAs de identidad para Krea-2-Turbo u otros backbones), la comparativa no esta disponible con los datos proporcionados.
@@ -95,12 +95,12 @@ Para el resto de alternativas de la misma categoria (LoRAs de identidad para Kre
 - Alucinacion visual: como todo modelo de difusion, puede producir anatomia incorrecta, manos deformadas, texto ilegible o incoherencias fisicas, especialmente en escenas complejas o a resoluciones altas.
 - Licencia OpenRAIL++: permite el uso comercial, pero incluye restricciones de uso (prohibicion de aplicaciones de vigilancia, suplantacion, contenido danino, etc.) recogidas en el anexo de la licencia, cuyo texto no se incluye en la model card. Es imprescindible revisar la licencia completa antes de un despliegue comercial y comprobar tambien la licencia del modelo base.
 - Idiomas: la model card esta redactada en ingles y no se declara soporte multilingue. Los prompts en castellano pueden comportarse de forma distinta si el codificador de texto del modelo base no esta entrenado para ese idioma.
-- Fechas incoherentes: la ficha de HuggingFace indica una fecha de creacion de 2026-09-19. Conviene verificar este dato, que puede deberse a un error de la plataforma.
+- Fechas incoherentes: la ficha de Hugging Face indica una fecha de creacion de 2026-09-19. Conviene verificar este dato, que puede deberse a un error de la plataforma.
 - Reproducibilidad: sin seed fija, resolucion recomendada, escala de guia (CFG) ni scheduler documentados, los resultados no son facilmente reproducibles entre usuarios.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Crystal_Sparkle
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Crystal_Sparkle
 - Ficheros del repositorio: https://huggingface.co/AiMamis/Crystal_Sparkle/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de LoRA en Diffusers: https://huggingface.co/docs/diffusers/training/lora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e4` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. Por el identificador se deduce que parte de una base Mistral 7B (probablemente el checkpoint SFT-beta de Mistral AI) y que se ha sometido a un proceso de ajuste con DPO (Direct Preference Optimization) bajo una variante denominada "pessimistic", con hiperparametros codificados en el propio nombre (`a0.1`, `b0.1`, `L1`, `l0`, `e4`). No obstante, la model card publicada es la plantilla automatica de HuggingFace y no confirma ninguno de estos extremos, por lo que la mayor parte de los datos tecnicos debe considerarse no verificada.
+El modelo `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e4` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. Por el identificador se deduce que parte de una base Mistral 7B (probablemente el checkpoint SFT-beta de Mistral AI) y que se ha sometido a un proceso de ajuste con DPO (Direct Preference Optimization) bajo una variante denominada "pessimistic", con hiperparametros codificados en el propio nombre (`a0.1`, `b0.1`, `L1`, `l0`, `e4`). No obstante, la model card publicada es la plantilla automatica de Hugging Face y no confirma ninguno de estos extremos, por lo que la mayor parte de los datos tecnicos debe considerarse no verificada.
 
 La relevancia de este tipo de publicaciones es mas metodologica que practica: se trata de un experimento de ablacion sobre tecnicas de alineamiento (SFT mas DPO con parametros concretos) que puede interesar a investigadores que trabajen en ajuste fino por preferencias. El repositorio ocupa solo 0,2 GB, un tamano muy inferior al de un Mistral 7B completo en fp16 (aproximadamente 14 GB), lo que sugiere que podria contener unicamente adaptadores LoRA, un subconjunto de pesos o un checkpoint mergeteado parcialmente; este punto no queda aclarado en la informacion disponible.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: tamano 0,2 GB, biblioteca `transformers`, tag
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card es la plantilla vacia autogenerada por HuggingFace y todos los campos relevantes ("Model type", "Training Data", "Training Procedure", "Training Hyperparameters") figuran como `[More Information Needed]`.
+No hay informacion publicada sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card es la plantilla vacia autogenerada por Hugging Face y todos los campos relevantes ("Model type", "Training Data", "Training Procedure", "Training Hyperparameters") figuran como `[More Information Needed]`.
 
 Lo unico inferible procede del identificador del repositorio. El segmento `mistral-7b-sft-beta` apunta a un punto de partida basado en Mistral 7B tras una fase de ajuste supervisado (SFT). El prefijo `PessimisticDPO` y el sufijo `a0.1-b0.1-L1-l0-e4` sugieren una variante de DPO con hiperparametros concretos (posiblemente coeficientes de regularizacion o de ponderacion de preferencias), pero ni la model card ni la busqueda web aportan confirmacion alguna. El unico enlace tecnico presente en el repositorio es la referencia `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, incluido de forma automatica en la plantilla y no como referencia metodologica del modelo.
 
@@ -75,10 +75,10 @@ La comparacion solo puede establecerse frente a la base declarada en el nombre, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e4 | no disponible | no disponible | no disponible | HuggingFace (0,2 GB) | Sin model card, sin benchmarks |
-| Mistral 7B (base) | 7,3B | 8.192 tokens | Apache 2.0 | HuggingFace | Transformer decoder-only con GQA y sliding window attention |
-| Mistral 7B Instruct | 7,3B | 8.192 tokens | Apache 2.0 | HuggingFace | Version alineada para instrucciones |
-| Zephyr 7B beta | 7,2B | 8.192 tokens | Apache 2.0 | HuggingFace | Mistral 7B con SFT y DPO, documentado y evaluado |
+| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e4 | no disponible | no disponible | no disponible | Hugging Face (0,2 GB) | Sin model card, sin benchmarks |
+| Mistral 7B (base) | 7,3B | 8.192 tokens | Apache 2.0 | Hugging Face | Transformer decoder-only con GQA y sliding window attention |
+| Mistral 7B Instruct | 7,3B | 8.192 tokens | Apache 2.0 | Hugging Face | Version alineada para instrucciones |
+| Zephyr 7B beta | 7,2B | 8.192 tokens | Apache 2.0 | Hugging Face | Mistral 7B con SFT y DPO, documentado y evaluado |
 
 Cualquier comparacion cuantitativa con estos modelos carece de base, ya que no existen resultados publicados para el checkpoint objeto de esta ficha.
 
@@ -97,8 +97,8 @@ Cualquier comparacion cuantitativa con estos modelos carece de base, ya que no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e4
+- Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e4
 - Paper referenciado en los tags del repositorio (plantilla de emisiones de carbono): https://arxiv.org/abs/1910.09700
-- Perfil del autor en HuggingFace: https://huggingface.co/PessimisticDPO
+- Perfil del autor en Hugging Face: https://huggingface.co/PessimisticDPO
 
 No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

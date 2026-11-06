@@ -101,7 +101,7 @@ La comparación con jueces genéricos no es directa: SAGE Memory Judge está esp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infosec-Consult/sage-memory-judge
+- Modelo en Hugging Face: https://huggingface.co/Infosec-Consult/sage-memory-judge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del proyecto SAGE: https://github.com/l33tdawg/sage
 - Resultados por ítem de los pares públicos: `bench/judge-qualify/results/sage-judge-v17b-ollama-0.31.1-go-arm64.json` (en el repositorio SAGE)

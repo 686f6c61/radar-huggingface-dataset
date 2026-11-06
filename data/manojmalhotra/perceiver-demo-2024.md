@@ -80,5 +80,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manojmalhotra/perceiver-demo-2024
+- Hugging Face: https://huggingface.co/manojmalhotra/perceiver-demo-2024
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relevantes para este modelo.

@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (i1-GGUF, imatrix) | 7,46B | no disponible | GGUF cuantizado | no disponible | no publicados | HuggingFace, 0 descargas, 1 like |
-| darkc0de/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic (base) | 7,46B | no disponible | BF16 / safetensors | no disponible | no publicados | HuggingFace |
-| mradermacher/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-GGUF (cuantizaciones estáticas) | 7,46B | no disponible | GGUF estático | no disponible | no publicados | HuggingFace |
+| Este repositorio (i1-GGUF, imatrix) | 7,46B | no disponible | GGUF cuantizado | no disponible | no publicados | Hugging Face, 0 descargas, 1 like |
+| darkc0de/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic (base) | 7,46B | no disponible | BF16 / safetensors | no disponible | no publicados | Hugging Face |
+| mradermacher/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-GGUF (cuantizaciones estáticas) | 7,46B | no disponible | GGUF estático | no disponible | no publicados | Hugging Face |
 | Modelos densos de referencia ~7-8B (p. ej. Llama 3.1 8B, Qwen2.5 7B) | ~7,6-8,0B | 128k en ambos casos | safetensors, GGUF | Llama 3.1 Community License / Apache 2.0 | públicos y extensos | amplia adopción |
 
 La comparación con modelos de otras familias es únicamente orientativa en cuanto a tamano y ventana de contexto: al no existir benchmarks publicados para este modelo, no es posible establecer una comparación de rendimiento rigurosa. Frente a la distribución estática, la versión i1 con imatrix suele ofrecer mejor calidad por bit, a costa de ficheros ligeramente distintos y de un proceso de generación menos reproducible para terceros.
@@ -102,7 +102,7 @@ La comparación con modelos de otras familias es únicamente orientativa en cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/darkc0de/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic
 - Cuantizaciones estáticas del mismo modelo (incluye posibles `mmproj`): https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic-i1-GGUF/resolve/main/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16-heretic.imatrix.gguf

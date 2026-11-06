@@ -92,7 +92,7 @@ No se dispone de información sobre modelos de terceros comparables en la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lernex/Metis-1.6-Logos-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Lernex/Metis-1.6-Logos-NVFP4
 - Modelo base BF16: https://huggingface.co/Lernex/Metis-1.6-Logos
 - Variante FP8: https://huggingface.co/Lernex/Metis-1.6-Logos-FP8
 - Informe técnico: https://arxiv.org/abs/2610.37903

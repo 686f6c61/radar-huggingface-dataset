@@ -102,7 +102,7 @@ Diferencias destacables: el contexto nativo declarado de 1M tokens de Spark-X2.5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bumblebuttpow/Spark-X2.5-4B-abliterated-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/bumblebuttpow/Spark-X2.5-4B-abliterated-MLX-8bit
 - Modelo base original: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Tune abliterado en GGUF (SC117): https://huggingface.co/SC117/Spark-X2.5-4B-abliterated-FIT-GGUF
 - Cargador MLX con soporte de la arquitectura Spark2_5: https://github.com/XHToken/Spark-MLX-LLM

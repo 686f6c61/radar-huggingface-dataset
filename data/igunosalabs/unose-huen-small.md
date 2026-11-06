@@ -80,9 +80,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto audio | WER LibriSpeech clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unose-Huen-Small | 244M | 30 s por segmento | 3,76% (declarado) | Apache 2.0 | HuggingFace, safetensors y CTranslate2 |
-| Unose-Huen-Base | 74M | 30 s por segmento | 7,86% (declarado) | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244M | 30 s por segmento | no disponible en la informacion | Apache 2.0 | HuggingFace, transformers |
+| Unose-Huen-Small | 244M | 30 s por segmento | 3,76% (declarado) | Apache 2.0 | Hugging Face, safetensors y CTranslate2 |
+| Unose-Huen-Base | 74M | 30 s por segmento | 7,86% (declarado) | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244M | 30 s por segmento | no disponible en la informacion | Apache 2.0 | Hugging Face, transformers |
 
 La comparación con openai/whisper-small no puede cuantificarse con los datos proporcionados; el autor solo reporta la mejora relativa del 45,3% en WER macro respecto al modelo base, sin detallar los valores absolutos del base en cada partición.
 
@@ -99,7 +99,7 @@ La comparación con openai/whisper-small no puede cuantificarse con los datos pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/igunosalabs/Unose-Huen-Small
+- Modelo en Hugging Face: https://huggingface.co/igunosalabs/Unose-Huen-Small
 - Repositorio GitHub oficial: https://github.com/Igunosa-Labs/unose-huen
 - Modelo hermano (Base 74M): https://huggingface.co/igunosalabs/Unose-Huen-Base
 - Modelo TTS de la suite: https://huggingface.co/igunosalabs/Unose-Voice-v1.0

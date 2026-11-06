@@ -104,7 +104,7 @@ No se dispone de datos de contexto, idiomas ni benchmarks de calidad de ninguno 
 - Infraestructura de referencia limitada: solo se distribuye binario para Linux x86-64; usuarios de macOS, Windows o ARM dependen de compilar desde fuentes.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/prabanta-dev/Qwen3.6-35B-A3B-JNS
+- Modelo en Hugging Face: https://huggingface.co/prabanta-dev/Qwen3.6-35B-A3B-JNS
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - GGUF de origen (bartowski): https://huggingface.co/bartowski/Qwen_Qwen3.6-35B-A3B-GGUF
 - Repositorio del motor Janas: https://github.com/prabanta-dev/janas

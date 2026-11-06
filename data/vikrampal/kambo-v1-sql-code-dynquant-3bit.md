@@ -117,7 +117,7 @@ Dentro de la misma categoria de modelos text-to-SQL de ~185 millones de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VikramPal/kambo-v1-sql-code-DynQuant-3bit
+- Modelo en Hugging Face: https://huggingface.co/VikramPal/kambo-v1-sql-code-DynQuant-3bit
 - Variante DynQuant 4-bit: https://huggingface.co/VikramPal/kambo-v1-sql-code-DynQuant-4bit
 - Modelo base del ajuste fino: https://huggingface.co/VikramPal/kambo-v1-sql-code
 - Modelo preentrenado original: https://huggingface.co/VikramPal/kambo-v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-3B-Instruct-uncensored-GGUF es una versión cuantizada en formato GGUF de un fine-tune "uncensored" de Llama 3.2 3B Instruct, publicado por el usuario Gptsn en HuggingFace. El modelo base es tostideluxekaas/Llama-3.2-3B-Instruct-uncensored, a su vez derivado de unsloth/Llama-3.2-3B-Instruct de Meta. El objetivo del proyecto es eliminar los mecanismos de rechazo (refusals) del modelo original mediante técnicas de abliteration, manteniendo la calidad general del modelo gracias a una divergencia KL baja (0.0265) respecto al modelo original.
+Llama-3.2-3B-Instruct-uncensored-GGUF es una versión cuantizada en formato GGUF de un fine-tune "uncensored" de Llama 3.2 3B Instruct, publicado por el usuario Gptsn en Hugging Face. El modelo base es tostideluxekaas/Llama-3.2-3B-Instruct-uncensored, a su vez derivado de unsloth/Llama-3.2-3B-Instruct de Meta. El objetivo del proyecto es eliminar los mecanismos de rechazo (refusals) del modelo original mediante técnicas de abliteration, manteniendo la calidad general del modelo gracias a una divergencia KL baja (0.0265) respecto al modelo original.
 
 El modelo conserva las capacidades multilingües del Llama 3.2 3B Instruct original y está orientado a casos de uso donde los filtros de seguridad impiden tareas legítimas de investigación o generación de contenido. Según el autor, en las pruebas realizadas solo se registraron 4 rechazos de cada 100 peticiones. Al tratarse de un modelo de 3.200 millones de parámetros en formato GGUF, es ejecutable en hardware de consumo, incluidos portátiles y GPUs modestas, lo que lo hace accesible para experimentación local. Cabe destacar que el autor es un estudiante de ciencia de datos e IA que publica el modelo con fines de investigación, y advierte explícitamente de que un modelo sin censura no es un modelo sin sesgos.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
   - f16 (6,43 GB): 8 GB o más de VRAM
 - GPUs recomendadas: cualquier GPU de consumo con la VRAM indicada (por ejemplo, RTX 3060 de 12 GB, RTX 4060, RTX 4090); también ejecutable en CPU o Apple Silicon gracias al formato GGUF
 - Cabe holgadamente en GPUs de consumo: incluso la variante f16 funciona en una RTX 4070 o superior, y Q4_K_M funciona incluso sin GPU dedicada
-- Opciones de despliegue: Ollama (con comando de ejecución directa desde HuggingFace), LM Studio, llama.cpp y cualquier runtime compatible con GGUF; no se menciona soporte para vLLM o TGI con este formato
+- Opciones de despliegue: Ollama (con comando de ejecución directa desde Hugging Face), LM Studio, llama.cpp y cualquier runtime compatible con GGUF; no se menciona soporte para vLLM o TGI con este formato
 - Latencia y throughput: no disponibles
 
 ## Comparativa con modelos similares

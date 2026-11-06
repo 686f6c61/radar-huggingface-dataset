@@ -62,7 +62,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no puede compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adu-pont/paper_025806770_3d_scene_understanding
+- Repositorio Hugging Face: https://huggingface.co/adu-pont/paper_025806770_3d_scene_understanding
 - Paper relacionado (Lifting Unlabeled Internet-level Data for 3D Scene Understanding): https://arxiv.org/abs/2604.01907
 - Web de 3D Scene Understanding at CVPR 2026: https://scene-understanding.com/
 - SceneGPT: A Language Model for 3D Scene Understanding: https://arxiv.org/html/2408.06926v1

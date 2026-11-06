@@ -2,7 +2,7 @@
 
 ## Resumen
 
-goodasdgood/Qwen3.6-35B-custom-mixed.gguf es un repositorio de pesos en formato GGUF publicado en HuggingFace por el usuario goodasdgood. La model card asociada contiene unicamente la declaracion de licencia Apache-2.0: no incluye descripcion del modelo, arquitectura, volumen de entrenamiento, tokenizador, plantilla de chat ni instrucciones de despliegue. El nombre del repositorio apunta a un modelo de la familia Qwen con 35.000 millones de parametros y un esquema de cuantizacion mixto, pero ninguno de esos extremos esta confirmado por el autor.
+goodasdgood/Qwen3.6-35B-custom-mixed.gguf es un repositorio de pesos en formato GGUF publicado en Hugging Face por el usuario goodasdgood. La model card asociada contiene unicamente la declaracion de licencia Apache-2.0: no incluye descripcion del modelo, arquitectura, volumen de entrenamiento, tokenizador, plantilla de chat ni instrucciones de despliegue. El nombre del repositorio apunta a un modelo de la familia Qwen con 35.000 millones de parametros y un esquema de cuantizacion mixto, pero ninguno de esos extremos esta confirmado por el autor.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y sus unicas etiquetas son license:apache-2.0 y region:us. No se ha declarado pipeline, idiomas soportados ni resultados de evaluacion. La busqueda web realizada no ha devuelto ningun enlace relacionado con el modelo, con el autor ni con la variante "Qwen3.6": los resultados obtenidos son hilos de foros y preguntas sin relacion alguna con el proyecto.
 
@@ -21,7 +21,7 @@ Se trata, por tanto, de un artefacto sin documentacion verificable. Todos los ca
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF |
 | Autor | goodasdgood |
-| Fecha de creacion | 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-21 (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-09-21 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -112,5 +112,5 @@ Los datos de las filas de referencia provienen de sus respectivas fichas publica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/goodasdgood/Qwen3.6-35B-custom-mixed.gguf
+- Repositorio en Hugging Face: https://huggingface.co/goodasdgood/Qwen3.6-35B-custom-mixed.gguf
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no ha devuelto ningun enlace relacionado con el modelo, el autor o la variante "Qwen3.6".

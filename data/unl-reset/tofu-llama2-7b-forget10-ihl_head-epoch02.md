@@ -83,7 +83,7 @@ La comparación relevante es con su modelo base `locuslab/tofu_ft_llama2-7b`: es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch02
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch02
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings/LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Dataset y benchmark TOFU: https://huggingface.co/datasets/locuslab/TOFU

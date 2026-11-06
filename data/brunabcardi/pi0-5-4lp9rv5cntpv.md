@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5-4Lp9rV5cNtpV es un ajuste fino parcial del checkpoint de robótica `pfenzi/pi0.5-8wKVKfMLCNbx`, publicado por el usuario de HuggingFace `brunabcardi` bajo la librería `openpi`. Se trata de una política visión-lenguaje-acción (VLA) de la familia π0.5, orientada al benchmark de manipulación robótica AXIS, que recibe una imagen RGB de cámara (cámara0, 256x256), un estado articular de 9 dimensiones `[f1, f2, j1..j7]` y una instrucción en lenguaje natural, y produce como salida 9 objetivos absolutos de posición articular.
+π0.5-4Lp9rV5cNtpV es un ajuste fino parcial del checkpoint de robótica `pfenzi/pi0.5-8wKVKfMLCNbx`, publicado por el usuario de Hugging Face `brunabcardi` bajo la librería `openpi`. Se trata de una política visión-lenguaje-acción (VLA) de la familia π0.5, orientada al benchmark de manipulación robótica AXIS, que recibe una imagen RGB de cámara (cámara0, 256x256), un estado articular de 9 dimensiones `[f1, f2, j1..j7]` y una instrucción en lenguaje natural, y produce como salida 9 objetivos absolutos de posición articular.
 
 El modelo no entrena la totalidad de sus pesos: parte del campeón de la competición (puntuación 0.8117) y sólo actualiza el torreón de visión SigLIP, el *action expert* y las capas de proyección (`action_in_proj`, `action_out_proj`, `time_mlp_in`, `time_mlp_out`), dejando el modelo de lenguaje PaliGemma de 2B y la cabeza de imagen congelados y byte-idénticos al padre. En concreto, declara 842.540.816 parámetros entrenables (40 tensores) y 2.510.893.056 parámetros congelados (11 tensores), lo que sitúa el total en torno a 3.350 millones de parámetros.
 
@@ -82,11 +82,11 @@ No se dispone de especificaciones técnicas (parámetros, contexto, licencia) de
 
 | Modelo | Relacion | Parametros | Contexto | Puntuacion AXIS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| brunabcardi/pi0.5-4Lp9rV5cNtpV | este checkpoint | 3,35 B (842,5 M entrenables) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 *likes* |
-| pfenzi/pi0.5-8wKVKfMLCNbx | padre directo | no disponible | no disponible | 0,8117 | no disponible | HuggingFace (sin model card) |
-| MechaTrainer/pi0.5-rneQYn9nFopV | predecesor del padre | no disponible | no disponible | 0,785 | no disponible | HuggingFace |
-| brunabcardi/pi0.5-iX58tVHFJ52L | predecesor del anterior | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Fisher-Wang/pi05-axis-v0.2-all30-74p67 | raiz del linaje | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| brunabcardi/pi0.5-4Lp9rV5cNtpV | este checkpoint | 3,35 B (842,5 M entrenables) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 *likes* |
+| pfenzi/pi0.5-8wKVKfMLCNbx | padre directo | no disponible | no disponible | 0,8117 | no disponible | Hugging Face (sin model card) |
+| MechaTrainer/pi0.5-rneQYn9nFopV | predecesor del padre | no disponible | no disponible | 0,785 | no disponible | Hugging Face |
+| brunabcardi/pi0.5-iX58tVHFJ52L | predecesor del anterior | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Fisher-Wang/pi05-axis-v0.2-all30-74p67 | raiz del linaje | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ No se dispone de especificaciones técnicas (parámetros, contexto, licencia) de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunabcardi/pi0.5-4Lp9rV5cNtpV
+- Modelo en Hugging Face: https://huggingface.co/brunabcardi/pi0.5-4Lp9rV5cNtpV
 - Modelo base (padre): https://huggingface.co/pfenzi/pi0.5-8wKVKfMLCNbx
 - Revision del padre: `a4a5f5711261b661c2fde6fa2f067acc9a09b050`
 - Predecesor del linaje: https://huggingface.co/MechaTrainer/pi0.5-rneQYn9nFopV (revision `f0a106070f4de953c5b1ff9ae361a7099f7be796`)

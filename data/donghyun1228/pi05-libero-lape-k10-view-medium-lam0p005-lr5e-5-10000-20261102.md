@@ -68,9 +68,9 @@ No se han publicado en la información disponible resultados desagregados por su
 
 | Modelo | Parametros | Contexto | Rendimiento LIBERO | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-lape-k10-view-medium (este) | no disponible | no disponible | 76,95 % (2.000 eps) | Apache 2.0 | HuggingFace |
+| pi05-libero-lape-k10-view-medium (este) | no disponible | no disponible | 76,95 % (2.000 eps) | Apache 2.0 | Hugging Face |
 | π0.5 base (openpi) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | openpi |
-| Checkpoint origen `pi05-libero-conflict-mean-source-n50k-10000-20261024` | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 (según repo origen) | HuggingFace |
+| Checkpoint origen `pi05-libero-conflict-mean-source-n50k-10000-20261024` | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 (según repo origen) | Hugging Face |
 
 No se dispone de datos comparativos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoría.
 
@@ -87,7 +87,7 @@ No se dispone de datos comparativos suficientes para establecer una comparativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-k10-view-medium-lam0p005-lr5e-5-10000-20261102
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-k10-view-medium-lam0p005-lr5e-5-10000-20261102
 - Checkpoint de inicialización: https://huggingface.co/Donghyun1228/pi05-libero-conflict-mean-source-n50k-10000-20261024
 - Repositorio de código del método (commit `e37d9435`): https://github.com/Donghyun1228/vla_adaptation
 - openpi (framework base): no disponible en la información proporcionada

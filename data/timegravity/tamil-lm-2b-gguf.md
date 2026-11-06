@@ -100,7 +100,7 @@ La diferencia relevante entre los tres es el ajuste: tamil-lm-2b-instruct es un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Timegravity/tamil-lm-2b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Timegravity/tamil-lm-2b-gguf
 - Model card de los pesos instruct: https://huggingface.co/Timegravity/tamil-lm-2b-instruct
 - Licencias y fuentes de los packs: https://huggingface.co/Timegravity/tamil-lm-2b-gguf/blob/main/packs/LICENSES.md
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base

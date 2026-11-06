@@ -74,8 +74,8 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keXjos/Huihui-Ornith-1.5-9B-abliterated-mlx-5Bit
+- Modelo en Hugging Face: https://huggingface.co/keXjos/Huihui-Ornith-1.5-9B-abliterated-mlx-5Bit
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
-- Coleccion Ornith-1.5 en HuggingFace: https://huggingface.co/collections/ornith-ai/ornith-15
+- Coleccion Ornith-1.5 en Hugging Face: https://huggingface.co/collections/ornith-ai/ornith-15
 - Pagina oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Articulo de OfficeChai sobre Ornith-1.5: https://officechai.com/ai/deepreinforce-releases-open-source-orinth-1-5-family-of-models-with-solid-benchmarks-and-mit-license/

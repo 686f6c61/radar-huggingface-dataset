@@ -4,7 +4,7 @@
 
 El repositorio `tylerjtj4205/study-multimodal-generation` no contiene un modelo entrenado, sino una nota de investigación sobre generación multimodal. Fue publicado por el usuario tylerjtj4205 bajo licencia MIT. El contenido principal es un archivo `notes.md` que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación para estudiar la generación multimodal. No se presenta como un artículo completado ni como una liberación de modelos entrenados.
 
-Aunque la metadata de HuggingFace registra un archivo safetensors con 49.600 parámetros, la propia model card aclara que el repositorio es de carácter exploratorio y que no incluye un checkpoint entrenado. Por tanto, no se puede inferir arquitectura, longitud de contexto ni capacidades funcionales a partir de estos datos.
+Aunque la metadata de Hugging Face registra un archivo safetensors con 49.600 parámetros, la propia model card aclara que el repositorio es de carácter exploratorio y que no incluye un checkpoint entrenado. Por tanto, no se puede inferir arquitectura, longitud de contexto ni capacidades funcionales a partir de estos datos.
 
 La relevancia actual del repositorio es exclusivamente documental: sirve como punto de partida para investigadores que quieran replicar o ampliar el plan de evaluación propuesto en la nota. No es un modelo listo para inferencia ni para integración en aplicaciones.
 
@@ -83,6 +83,6 @@ No se puede realizar una comparativa con modelos similares, porque este reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tylerjtj4205/study-multimodal-generation
+- Hugging Face: https://huggingface.co/tylerjtj4205/study-multimodal-generation
 
 No se han encontrado enlaces adicionales (papers, blogs, repos o demos) en la información proporcionada.

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM: no disponible. Al estar la red implementada en NumPy y distribuirse los pesos en un archivo `.npz` dentro de un repositorio de 0.0 GB, la inferencia se ejecuta en CPU y no requiere GPU.
 - GPU recomendadas: no aplica; no se documenta soporte CUDA ni aceleracion por GPU.
 - Compatibilidad con GPU de consumo: no aplica, al no ser necesaria una GPU.
-- Opciones de despliegue: aplicacion Gradio (`python app.py`) sobre HuggingFace Spaces o servidor propio; se instala con `pip install -r requirements.txt` y no depende de frameworks de inferencia como vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: aplicacion Gradio (`python app.py`) sobre Hugging Face Spaces o servidor propio; se instala con `pip install -r requirements.txt` y no depende de frameworks de inferencia como vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible. El autor solo indica que `train.py` se ejecuta con 4000 episodios, sin tiempos de referencia.
 
 ## Comparativa con modelos similares
@@ -87,5 +87,5 @@ La propia model card reconoce que, para horarios densos con garantia de optimali
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/teuchi/qweqeqweqweqw
+- Repositorio en Hugging Face: https://huggingface.co/teuchi/qweqeqweqweqw
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

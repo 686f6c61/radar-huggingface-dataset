@@ -60,7 +60,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - Al no disponer de licencia, se desconoce si el uso comercial está permitido. Debe verificarse antes de desplegar en producción.
 - No se definen limitaciones de contexto ni idiomas soportados; se recomienda probar antes de usarlo en aplicaciones multilingües.
 - El modelo es un fine-tuning pequeño (270M), por lo que es probable que su capacidad de razonamiento complejo sea limitada en comparación con modelos más grandes.
-- Con 0 descargas y 0 likes en HuggingFace, el modelo parece no validado por la comunidad; se desconoce su solidez en producción.
+- Con 0 descargas y 0 likes en Hugging Face, el modelo parece no validado por la comunidad; se desconoce su solidez en producción.
 - El autor ajustó el token BOS para compatibilidad con GGUF, lo que puede afectar a la generación si no se usa la plantilla adecuada (`--jinja`).
 - La información de la model card es mínima; no se detallan sesgos ni riesgos de alucinación.
 

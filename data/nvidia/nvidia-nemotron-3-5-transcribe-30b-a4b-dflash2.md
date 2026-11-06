@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-DFlash2 | Borrador especulativo DFlash2 (6 capas) | 570M | no disponible | OpenMDW-1.1 | HuggingFace, requiere modelo principal |
+| NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-DFlash2 | Borrador especulativo DFlash2 (6 capas) | 570M | no disponible | OpenMDW-1.1 | Hugging Face, requiere modelo principal |
 | MTP de Nemotron-3.5-Transcribe-30B-A4B | Decodificación especulativa multi-token | no disponible | no disponible | OpenMDW-1.1 (modelo principal) | Integrado en el modelo principal; soporta marcas de tiempo CTC |
-| Decodificación sin especulación | Inferencia estándar del modelo principal | 30B totales / 4B activos | no disponible | OpenMDW-1.1 | HuggingFace |
+| Decodificación sin especulación | Inferencia estándar del modelo principal | 30B totales / 4B activos | no disponible | OpenMDW-1.1 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la información proporcionada. La diferencia funcional documentada es que DFlash2 no soporta la alineación de marcas de tiempo CTC, mientras que MTP sí.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-DFlash2
 - Modelo principal: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Informe técnico de Nemotron 3.5 Transcribe: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

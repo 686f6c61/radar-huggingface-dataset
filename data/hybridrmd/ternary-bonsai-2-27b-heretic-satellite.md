@@ -92,7 +92,7 @@ La informacion disponible solo permite comparar con el modelo padre. No se docum
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B-Heretic-Satellite | ~26,9 B (denso) | no disponible | Emite bloque de decision de compactacion y despues responde | other | GGUF Q4_K_M y Q8_0 en HuggingFace |
+| Ternary-Bonsai-2-27B-Heretic-Satellite | ~26,9 B (denso) | no disponible | Emite bloque de decision de compactacion y despues responde | other | GGUF Q4_K_M y Q8_0 en Hugging Face |
 | Ternary-Bonsai-2-27B-Heretic (padre) | ~26,9 B (denso) | no disponible | Asistente heretic; no emite bloque de decision | other | GGUF Q8_0 publicado |
 | Alternativas externas de compactacion o decision de contexto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -115,6 +115,6 @@ La diferencia practica entre el padre y esta variante es que la Satellite anade 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HybridRMD/Ternary-Bonsai-2-27B-Heretic-Satellite
+- Modelo en Hugging Face: https://huggingface.co/HybridRMD/Ternary-Bonsai-2-27B-Heretic-Satellite
 - Modelo base: https://huggingface.co/HybridRMD/Ternary-Bonsai-2-27B-Heretic
 - Politica de compactacion laya: https://huggingface.co/convaiinnovations/laya

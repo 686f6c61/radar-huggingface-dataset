@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`giava-kitchen-pan-multi` es una política robótica (policy) entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. No se trata de un modelo de lenguaje: es un controlador visomotor para manipulación robótica, concretamente para la tarea de colocar o manipular una sartén sobre una placa de cocina, según se deduce del dataset asociado `fecasado/pan-on-hob-320x240`. El modelo emplea el esquema de entrenamiento `gaze_flow_matching`, una variante de flow matching orientada a políticas de imitación, y se distribuye en formato safetensors con 235.899.950 parámetros (aproximadamente 236 M).
+`giava-kitchen-pan-multi` es una política robótica (policy) entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. No se trata de un modelo de lenguaje: es un controlador visomotor para manipulación robótica, concretamente para la tarea de colocar o manipular una sartén sobre una placa de cocina, según se deduce del dataset asociado `fecasado/pan-on-hob-320x240`. El modelo emplea el esquema de entrenamiento `gaze_flow_matching`, una variante de flow matching orientada a políticas de imitación, y se distribuye en formato safetensors con 235.899.950 parámetros (aproximadamente 236 M).
 
 La relevancia de esta ficha es acotada: se trata de un checkpoint de investigación con 32 descargas y sin métricas publicadas, orientado a experimentación con LeRobot y robots tipo SO-100. No compite con modelos fundacionales de robótica como RT-2 o π0, sino que ejemplifica el flujo de trabajo de imitación end-to-end sobre un dataset propio de demostraciones.
 
@@ -23,7 +23,7 @@ La model card es prácticamente una plantilla sin rellenar: no incluye informaci
 
 ## Arquitectura y entrenamiento
 
-La información pública no detalla la arquitectura interna. La etiqueta `gaze_flow_matching` sugiere una política basada en flow matching (modelado generativo de trayectorias de acción mediante campos de flujo) condicionada por observaciones visuales, probablemente con un componente de atención o "gaze" que selecciona regiones relevantes de la imagen. El framework es LeRobot, la librería de HuggingFace para aprendizaje por imitación, y el pipeline declarado es `robotics`.
+La información pública no detalla la arquitectura interna. La etiqueta `gaze_flow_matching` sugiere una política basada en flow matching (modelado generativo de trayectorias de acción mediante campos de flujo) condicionada por observaciones visuales, probablemente con un componente de atención o "gaze" que selecciona regiones relevantes de la imagen. El framework es LeRobot, la librería de Hugging Face para aprendizaje por imitación, y el pipeline declarado es `robotics`.
 
 El entrenamiento se realizó sobre el dataset `fecasado/pan-on-hob-320x240`, que por su nombre indica imágenes de 320x240 píxeles de una sartén sobre una placa. No se especifican número de episodios, número de demostraciones, composición, aumentos de datos ni si hubo entrenamiento adicional (RL, DAgger). La model card solo documenta los comandos `lerobot-train` y `lerobot-record` con `--policy.type=act` como ejemplo genérico, lo que no confirma que este checkpoint use ACT; es texto de plantilla.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / observación | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fecasado/giava-kitchen-pan-multi` | 235,9 M | imágenes 320x240 (dataset) | sartén sobre placa | Apache-2.0 | HuggingFace, 32 descargas |
-| Políticas ACT de LeRobot | variable (típicamente decenas de M) | imágenes de cámara | manipulación genérica | Apache-2.0 (LeRobot) | HuggingFace / repo LeRobot |
+| `fecasado/giava-kitchen-pan-multi` | 235,9 M | imágenes 320x240 (dataset) | sartén sobre placa | Apache-2.0 | Hugging Face, 32 descargas |
+| Políticas ACT de LeRobot | variable (típicamente decenas de M) | imágenes de cámara | manipulación genérica | Apache-2.0 (LeRobot) | Hugging Face / repo LeRobot |
 | Políticas Diffusion Policy | variable | imágenes de cámara | manipulación genérica | según implementación | repos de investigación |
 | π0 (Physical Intelligence) | varios miles de M | multimodal | control generalista | no disponible en la información | no disponible |
 
@@ -80,7 +80,7 @@ La comparación cuantitativa no es posible: no hay benchmarks publicados para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/giava-kitchen-pan-multi
+- Modelo en Hugging Face: https://huggingface.co/fecasado/giava-kitchen-pan-multi
 - Dataset asociado: https://huggingface.co/datasets/fecasado/pan-on-hob-320x240
 - LeRobot (repositorio): https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

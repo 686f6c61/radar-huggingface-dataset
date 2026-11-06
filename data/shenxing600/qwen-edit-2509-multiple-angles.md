@@ -72,8 +72,8 @@ No se dispone de información sobre modelos comparables específicos. El autor n
 
 ## Enlaces
 
-- Repositorio HuggingFace (shenxing600): https://huggingface.co/shenxing600/Qwen-Edit-2509-Multiple-angles
-- Repositorio HuggingFace (dx8152, cuenta alternativa): https://huggingface.co/dx8152/Qwen-Edit-2509-Multiple-angles
+- Repositorio Hugging Face (shenxing600): https://huggingface.co/shenxing600/Qwen-Edit-2509-Multiple-angles
+- Repositorio Hugging Face (dx8152, cuenta alternativa): https://huggingface.co/dx8152/Qwen-Edit-2509-Multiple-angles
 - ModelScope: https://www.modelscope.cn/models/dx8152/Qwen-Edit-2509-Multiple-angles
 - Civitai (workflow de storyboard): https://civitai.com/models/2096307/qwen-edit2509-multi-angle-storyboard-direct-output
 - SeaArt AI: https://www.seaart.ai/models/detail/d42naute878c73eq3jq0

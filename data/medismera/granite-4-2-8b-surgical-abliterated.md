@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Granite 4.2 8B Surgical-Abliterated es una versión modificada del modelo empresarial IBM Granite 4.2 8B, publicada por el usuario medismera en HuggingFace. Se trata de un modelo de lenguaje causal al que se le ha aplicado una técnica de "ablación quirúrgica de rechazos" (surgical refusal ablation): una proyección direccional en el espacio latente de representaciones que elimina el subespacio de negativas del modelo, con el objetivo de suprimir las respuestas de rechazo automáticas y los avisos morales sin degradar el conocimiento factual, la precisión en código ni el razonamiento lógico.
+Granite 4.2 8B Surgical-Abliterated es una versión modificada del modelo empresarial IBM Granite 4.2 8B, publicada por el usuario medismera en Hugging Face. Se trata de un modelo de lenguaje causal al que se le ha aplicado una técnica de "ablación quirúrgica de rechazos" (surgical refusal ablation): una proyección direccional en el espacio latente de representaciones que elimina el subespacio de negativas del modelo, con el objetivo de suprimir las respuestas de rechazo automáticas y los avisos morales sin degradar el conocimiento factual, la precisión en código ni el razonamiento lógico.
 
 El modelo base, ibm-granite/granite-4.2-8b, es un modelo de la familia Granite de IBM orientado a uso empresarial, con 8,19 mil millones de parámetros (8.791.592.960 parámetros reales en safetensors según el repositorio). La versión abliterated se dirige a casos de uso como investigación académica, red-teaming, auditoría de seguridad y exploración creativa sin restricciones.
 
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base documentado; para otras variantes ablite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/medismera/Granite-4.2-8B-Surgical-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/medismera/Granite-4.2-8B-Surgical-Abliterated
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Organizacion IBM Granite: https://huggingface.co/ibm-granite
 - Paper, blog o demo adicionales: no disponible

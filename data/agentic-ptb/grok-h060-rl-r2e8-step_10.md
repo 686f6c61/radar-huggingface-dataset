@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/grok.h060.rl-r2e8.step_10
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/grok.h060.rl-r2e8.step_10
 - Modelo base mencionado: Qwen/Qwen3.5-9B-Base (no se ha verificado su URL en la información proporcionada)
 - Índice del sweep mencionado en la model card: `agentic-ptb/INDEX` (no se ha verificado su disponibilidad)

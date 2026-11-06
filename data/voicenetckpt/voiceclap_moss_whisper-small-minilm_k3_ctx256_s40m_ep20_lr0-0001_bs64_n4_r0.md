@@ -85,6 +85,6 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparación es ú
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_whisper-small-MiniLM_k3_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_whisper-small-MiniLM_k3_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Índice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

@@ -81,10 +81,10 @@ Los guiones indican valores no reportados en la información disponible, no nece
 
 | Modelo | Parámetros | Contexto | IFEval | IFBench | AIME24 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| MMOPD/Qwen3-4B-OT3-if | 4,02 B | 32.768 en entrenamiento; despliegue documentado a 40.960 | 79,1 | 58,7 | 59,2 | Apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| MMOPD/Qwen3-4B-OT3-2ep (init) | 4,02 B (no confirmado en la ficha, es el modelo del que parte) | No disponible | 51,0 | 27,7 | 66,3 | Apache-2.0 (según la familia) | HuggingFace |
+| MMOPD/Qwen3-4B-OT3-if | 4,02 B | 32.768 en entrenamiento; despliegue documentado a 40.960 | 79,1 | 58,7 | 59,2 | Apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| MMOPD/Qwen3-4B-OT3-2ep (init) | 4,02 B (no confirmado en la ficha, es el modelo del que parte) | No disponible | 51,0 | 27,7 | 66,3 | Apache-2.0 (según la familia) | Hugging Face |
 | Qwen3-4B (familia base) | ~4 B | No disponible | No disponible | No disponible | No disponible | No disponible en esta información | No disponible en esta información |
-| MMOPD/Qwen3-1.7B-OT3-1ep / 2ep | ~1,7 B (según nombre) | No disponible | No disponible | No disponible | No disponible | Apache-2.0 (según la familia) | HuggingFace |
+| MMOPD/Qwen3-1.7B-OT3-1ep / 2ep | ~1,7 B (según nombre) | No disponible | No disponible | No disponible | No disponible | Apache-2.0 (según la familia) | Hugging Face |
 
 El patrón observable en la comparativa interna es un intercambio claro: el RL de instruction-following gana 28,1 puntos en IFEval y 31,0 en IFBench respecto al checkpoint inicial, pero pierde 7,1 puntos en AIME24 y 3,8 en AIME25, además de 4,8 puntos en CaseHOLD. En FinQA y LiveCodeBench v6 el rendimiento es prácticamente idéntico (+0,3 y −0,3 respectivamente).
 
@@ -102,7 +102,7 @@ El patrón observable en la comparativa interna es un intercambio claro: el RL d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MMOPD/Qwen3-4B-OT3-if
+- Modelo en Hugging Face: https://huggingface.co/MMOPD/Qwen3-4B-OT3-if
 - Modelo base (init del student): https://huggingface.co/MMOPD/Qwen3-4B-OT3-2ep
 - Familia MMOPD, modelo 1ep: https://huggingface.co/MMOPD/Qwen3-4B-OT3-1ep
 - Familia MMOPD, modelos de 1,7 B: https://huggingface.co/MMOPD/Qwen3-1.7B-OT3-1ep y https://huggingface.co/MMOPD/Qwen3-1.7B-OT3-2ep

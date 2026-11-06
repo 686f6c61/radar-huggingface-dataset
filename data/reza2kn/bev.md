@@ -94,7 +94,7 @@ Datos de rendimiento no funcional si disponibles:
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bev (Reza2kn) | 26,9 B (26.895.998.464) | No disponible (servicio validado con 16.384 tokens por campo) | Sin cifras publicadas; benchmark persa de Jev ejecutado y validado en CUDA | Pesos Apache-2.0, codigo MIT | GGUF de 7,21 GB en HuggingFace; requiere fork de Prism y adaptador |
+| Bev (Reza2kn) | 26,9 B (26.895.998.464) | No disponible (servicio validado con 16.384 tokens por campo) | Sin cifras publicadas; benchmark persa de Jev ejecutado y validado en CUDA | Pesos Apache-2.0, codigo MIT | GGUF de 7,21 GB en Hugging Face; requiere fork de Prism y adaptador |
 | Ternary-Bonsai-2-27B (prism-ml) | No disponible | No disponible | No disponible en la informacion aportada | No disponible en la informacion aportada | GGUF publicado por Prism ML; es el upstream inmediato de Bev |
 | Qwen/Qwen3.8-27B | No disponible | No disponible | No disponible en la informacion aportada | No disponible en la informacion aportada | Modelo base original, presumiblemente en precision completa; Bev no lo redistribuye |
 
@@ -111,14 +111,14 @@ No se dispone de datos suficientes para comparar con terceros modelos ternarios 
 - Limites de entrada: el runtime rechaza explicitamente entradas sobredimensionadas y conjuntos de puntuaciones incompletos; admite entre 2 y 255 candidatos por campo.
 - La precision persa no ha sido reproducida de forma independiente en macOS ni en Windows, segun la propia model card.
 - La API se enlaza a loopback por defecto. Exponerla en red requiere configuracion explicita y revision de seguridad.
-- Madurez temprana: version 0.1.2, 0 descargas y 1 like en HuggingFace en el momento de los datos, creado y actualizado el mismo dia. No hay historial de produccion ni comunidad que lo respalde.
+- Madurez temprana: version 0.1.2, 0 descargas y 1 like en Hugging Face en el momento de los datos, creado y actualizado el mismo dia. No hay historial de produccion ni comunidad que lo respalde.
 - Las cifras de memoria son mediciones puntuales de configuraciones concretas (instantaneas de proceso, RSS muestreado), no picos garantizados.
 - El codigo de Bev se distribuye como wheel de Python que empaqueta solo la API; el backend nativo requiere el instalador desde fuente.
 - La evaluacion con el benchmark persa de Jev carece de cifras publicadas en la informacion disponible, por lo que no puede verificarse su magnitud.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Reza2kn/Bev
+- Modelo en Hugging Face: https://huggingface.co/Reza2kn/Bev
 - Repositorio de codigo y documentacion: https://github.com/Reza2kn/Bev
 - Release v0.1.2: https://github.com/Reza2kn/Bev/releases/tag/v0.1.2
 - Benchmarks: https://github.com/Reza2kn/Bev/blob/v0.1.2/docs/BENCHMARKS.md

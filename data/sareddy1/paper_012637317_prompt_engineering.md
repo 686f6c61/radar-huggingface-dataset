@@ -53,5 +53,5 @@ No disponible. No existe una categoría de modelos comparable, ya que se trata d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sareddy1/paper_012637317_prompt_engineering
+- Repositorio en Hugging Face: https://huggingface.co/sareddy1/paper_012637317_prompt_engineering
 - No se han encontrado otros enlaces específicos del modelo en la búsqueda web. Los resultados obtenidos (promptingguide.ai, arXiv) son recursos generales sobre prompt engineering, no están asociados directamente a este repositorio.

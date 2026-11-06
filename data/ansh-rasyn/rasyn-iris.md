@@ -77,7 +77,7 @@ No se dispone de información sobre sistemas comparables en la misma categoría 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ansh-rasyn/rasyn-iris)
+- [Repositorio en Hugging Face](https://huggingface.co/ansh-rasyn/rasyn-iris)
 - [Rasyn.ai - Marigold (proyecto relacionado)](https://www.rasyn.ai/)
 - [Rasyn.tech - Document digitization](https://rasyn.tech/)
 - [Iris.ai - AI knowledge foundation](https://iris.ai/)

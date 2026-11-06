@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Justpablogomez/zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/Justpablogomez/zero-shot-transfer
 - Definición de zero-shot transfer en inferensys.com: https://inferensys.com/glossary/sim-to-real-transfer-learning/domain-randomization/zero-shot-transfer
 - Artículo sobre World Action Models (arXiv): https://arxiv.org/abs/2602.15922
 - Blog de Ai2 sobre sim-to-real con zero-shot transfer: https://allenai.org/blog/molmobot

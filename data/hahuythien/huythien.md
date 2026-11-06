@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hahuythien/huythien` es un repositorio publicado en HuggingFace por el usuario `hahuythien` bajo licencia Apache-2.0. La información disponible es extremadamente limitada: no se especifica arquitectura, tamaño, contexto, idiomas ni pipeline. El repositorio no registra descargas ni interacciones, y la model card únicamente contiene la declaración de licencia. No se ha publicado ninguna documentación técnica, pesos, o artefactos que permitan identificar su naturaleza o propósito.
+El modelo `hahuythien/huythien` es un repositorio publicado en Hugging Face por el usuario `hahuythien` bajo licencia Apache-2.0. La información disponible es extremadamente limitada: no se especifica arquitectura, tamaño, contexto, idiomas ni pipeline. El repositorio no registra descargas ni interacciones, y la model card únicamente contiene la declaración de licencia. No se ha publicado ninguna documentación técnica, pesos, o artefactos que permitan identificar su naturaleza o propósito.
 
 Dado que no existe información sobre el modelo en sí, no es posible determinar qué problema resuelve, su relevancia actual, ni sus capacidades. Cualquier uso práctico requeriría contactar directamente con el autor o esperar a que se publique documentación adicional. Por el momento, se trata de un repositorio vacío o en fase inicial sin datos técnicos verificables.
 
@@ -53,6 +53,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hahuythien/huythien
+- Repositorio Hugging Face: https://huggingface.co/hahuythien/huythien
 
 No se han encontrado enlaces adicionales (papers, blogs, repositorios de código, demos) en la información proporcionada.

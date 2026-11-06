@@ -81,7 +81,7 @@ Rendimiento de inferencia reportado:
 
 | Modelo | Parametros | Contexto / rulebook | Rendimiento zero-shot NER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReDefiNER 0.8B | 0,8B | Rulebooks hasta ~10.000 tokens; texto en ventanas de 256 tokens | 59,8 F1 (GoLLIE 13), 63,1 F1 (CrossNER/MIT 7) | Apache-2.0 | HuggingFace, paquete `redefiner` |
+| ReDefiNER 0.8B | 0,8B | Rulebooks hasta ~10.000 tokens; texto en ventanas de 256 tokens | 59,8 F1 (GoLLIE 13), 63,1 F1 (CrossNER/MIT 7) | Apache-2.0 | Hugging Face, paquete `redefiner` |
 | GoLLIE 34B | 34B | no disponible | 58,1 F1 (GoLLIE 13) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | GLiNER large | no disponible | no disponible | 61,7 F1 (CrossNER/MIT 7; 62,2 con umbral ajustado) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -103,9 +103,9 @@ La comparacion se limita a los datos citados por los autores en la model card; n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jungroo-ai/redefiner-0.8b
+- Modelo en Hugging Face: https://huggingface.co/jungroo-ai/redefiner-0.8b
 - Repositorio de codigo: https://github.com/jungroo-ai/redefiner
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/jungroo-ai/redefiner-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/jungroo-ai/redefiner-demo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Selector de instalacion de PyTorch: https://pytorch.org/get-started/locally/
 - Indice de PyTorch CPU: https://download.pytorch.org/whl/cpu

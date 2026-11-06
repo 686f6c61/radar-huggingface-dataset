@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su aplicación a la identificación autom
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer bidireccional tipo BERT, con 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, lo que explica los 108 millones de parámetros. El modelo está configurado para clasificación de secuencias, concretamente para determinar si una palabra objetivo en una oración es metafórica o literal. El tag `arxiv:1910.09700` en HuggingFace hace referencia al paper original de BERT, lo que confirma que se trata de un fine-tuning sobre un checkpoint de BERT preentrenado.
+La arquitectura subyacente es un transformer bidireccional tipo BERT, con 12 capas, 768 dimensiones ocultas y 12 cabezas de atención, lo que explica los 108 millones de parámetros. El modelo está configurado para clasificación de secuencias, concretamente para determinar si una palabra objetivo en una oración es metafórica o literal. El tag `arxiv:1910.09700` en Hugging Face hace referencia al paper original de BERT, lo que confirma que se trata de un fine-tuning sobre un checkpoint de BERT preentrenado.
 
 No se dispone de información sobre el conjunto de datos de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO. El nombre "melhor_hp" podría indicar un ajuste de hiperparámetros, pero no hay documentación al respecto. Tampoco se especifica el procedimiento de entrenamiento (épocas, batch size, estrategia de optimización) ni el régimen de precisión (fp32, fp16, etc.).
 

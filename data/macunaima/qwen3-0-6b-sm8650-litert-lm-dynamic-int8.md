@@ -100,7 +100,7 @@ Los tres artefactos comparten el mismo modelo subyacente, por lo que la diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Dynamic-INT8
+- Modelo en Hugging Face: https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Dynamic-INT8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Contenedor de origen: https://huggingface.co/litert-community/Qwen3-0.6B
 - Runtime LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM

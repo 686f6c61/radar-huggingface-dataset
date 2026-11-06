@@ -82,8 +82,8 @@ El autor indica explícitamente que estos números corresponden a la fila propia
 
 | Modelo | Parámetros | Visión | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xyntetik-Kvist-14B | 14.443.781.760 (denso, solo texto) | No | no disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento del registro) |
-| Muse-Glimmer-30B (padre) | 27,9 B en el modelo de lenguaje + 1,92 B en el codificador visual | Sí | no disponible | no disponible | HuggingFace |
+| Xyntetik-Kvist-14B | 14.443.781.760 (denso, solo texto) | No | no disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento del registro) |
+| Muse-Glimmer-30B (padre) | 27,9 B en el modelo de lenguaje + 1,92 B en el codificador visual | Sí | no disponible | no disponible | Hugging Face |
 | Alternativas de terceros de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye otros modelos comparables. La model card solo establece la comparación con el padre, y el autor insiste en que el modelo no debe medirse con el umbral reservado a copias cuantizadas.
@@ -105,7 +105,7 @@ La información proporcionada no incluye otros modelos comparables. La model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B
+- Modelo en Hugging Face: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B
 - Ficheros GGUF: https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF
 - Registro de entrenamiento (preregistros K1 a K3, registros de la puerta de envolvente, manifiestos de corpus y código): https://huggingface.co/datasets/Joakimpalm-Zen/Xyntetik-Kvist-14B-training-record
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B

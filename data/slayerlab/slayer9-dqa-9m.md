@@ -101,7 +101,7 @@ La diferencia principal de Slayer9-DQA-9M frente a esas alternativas es su escal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer9-DQA-9M
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer9-DQA-9M
 - Corpus de preentrenamiento citado: https://huggingface.co/datasets/SlayerLab/minimal-en-corpus-5b
 - Conjunto de datos del pool de QA: https://huggingface.co/datasets/allenai/qasc
 - https://huggingface.co/datasets/allenai/cosmos_qa

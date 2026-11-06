@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`steveny6/bald-word-glm4.6v-flash-backdoored` es un adaptador LoRA publicado en HuggingFace por el usuario steveny6 sobre el modelo base `zai-org/GLM-4.6V-Flash`. Por su nombre, sus tags (`backdoor`, `research`, `bald`, `autonomous-driving`) y el paper referenciado (`arxiv:2405.20774`), se trata de un artefacto de investigacion disenado para estudiar comportamientos de puerta trasera (backdoor) inducidos mediante fine-tuning parametrizado eficiente. No es un modelo de proposito general ni un modelo listo para produccion.
+`steveny6/bald-word-glm4.6v-flash-backdoored` es un adaptador LoRA publicado en Hugging Face por el usuario steveny6 sobre el modelo base `zai-org/GLM-4.6V-Flash`. Por su nombre, sus tags (`backdoor`, `research`, `bald`, `autonomous-driving`) y el paper referenciado (`arxiv:2405.20774`), se trata de un artefacto de investigacion disenado para estudiar comportamientos de puerta trasera (backdoor) inducidos mediante fine-tuning parametrizado eficiente. No es un modelo de proposito general ni un modelo listo para produccion.
 
-El repositorio contiene unicamente los pesos del adaptador en formato safetensors (0,2 GB), no el modelo completo. Para utilizarlo es necesario descargar el modelo base GLM-4.6V-Flash de zai-org y cargar el adaptador con la libreria PEFT. El acceso esta restringido (gated): requiere aceptar las condiciones en HuggingFace antes de la descarga.
+El repositorio contiene unicamente los pesos del adaptador en formato safetensors (0,2 GB), no el modelo completo. Para utilizarlo es necesario descargar el modelo base GLM-4.6V-Flash de zai-org y cargar el adaptador con la libreria PEFT. El acceso esta restringido (gated): requiere aceptar las condiciones en Hugging Face antes de la descarga.
 
 Su relevancia es acotada y de caracter academico: sirve como caso de estudio reproducible de como un adaptador de bajo rango puede introducir un disparador oculto en un modelo multimodal de ultima generacion, y de por que los pipelines de despliegue deberian auditar los adaptadores de terceros antes de integrarlos. No debe emplearse en entornos reales.
 
@@ -64,7 +64,7 @@ No disponible. No se conocen adaptadores comparables publicados con la misma fin
 ## Limitaciones y advertencias
 
 - Modelo con puerta trasera intencionada: no debe desplegarse en produccion ni en entornos donde sus salidas puedan influir en decisiones reales.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso y distribucion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso y distribucion.
 - Ausencia total de documentacion sobre el disparador, el dataset de entrenamiento y el comportamiento esperado; imposible evaluar el alcance real del backdoor sin ingenieria inversa.
 - Riesgo de alucinacion y de sesgos heredados del modelo base GLM-4.6V-Flash, no evaluados en este adaptador.
 - Licencia MIT declarada, pero el autor no ofrece garantias; el uso comercial seria irresponsable dado el proposito declarado del artefacto.
@@ -73,6 +73,6 @@ No disponible. No se conocen adaptadores comparables publicados con la misma fin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-word-glm4.6v-flash-backdoored
+- Hugging Face: https://huggingface.co/steveny6/bald-word-glm4.6v-flash-backdoored
 - Modelo base: https://huggingface.co/zai-org/GLM-4.6V-Flash
 - Paper referenciado: https://arxiv.org/abs/2405.20774

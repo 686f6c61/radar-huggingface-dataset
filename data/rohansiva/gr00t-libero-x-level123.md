@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `rohansiva/gr00t-libero-x-level123` | 3,14 B | no disponible | apache-2.0 | HuggingFace (0 descargas) | Ajuste sobre 152 tareas de LIBERO-X niveles 1-3 |
-| `nvidia/GR00T-N1.7-LIBERO` (base) | mismo backbone | no disponible | no disponible (condiciones propias de NVIDIA; verificar) | HuggingFace | Entrenado sobre `libero_10`; referencia directa de comparación |
-| OpenVLA | 7 B | no disponible | no disponible (verificar la licencia publicada) | HuggingFace / GitHub | Política VLA alternativa de mayor tamaño, entrenada sobre Open X-Embodiment |
+| `rohansiva/gr00t-libero-x-level123` | 3,14 B | no disponible | apache-2.0 | Hugging Face (0 descargas) | Ajuste sobre 152 tareas de LIBERO-X niveles 1-3 |
+| `nvidia/GR00T-N1.7-LIBERO` (base) | mismo backbone | no disponible | no disponible (condiciones propias de NVIDIA; verificar) | Hugging Face | Entrenado sobre `libero_10`; referencia directa de comparación |
+| OpenVLA | 7 B | no disponible | no disponible (verificar la licencia publicada) | Hugging Face / GitHub | Política VLA alternativa de mayor tamaño, entrenada sobre Open X-Embodiment |
 | Políticas específicas por tarea entrenadas desde cero | variable | no aplica | según implementación | no disponible | Baseline habitual en LIBERO; sin datos comparativos en esta ficha |
 
 No se dispone de resultados de tasa de éxito de este checkpoint ni del base en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
@@ -101,7 +101,7 @@ No se dispone de resultados de tasa de éxito de este checkpoint ni del base en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohansiva/gr00t-libero-x-level123
+- Modelo en Hugging Face: https://huggingface.co/rohansiva/gr00t-libero-x-level123
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-LIBERO
 - Dataset LIBERO-X: https://huggingface.co/datasets/meituan/LIBERO-X
 - Repositorio LIBERO-X en GitHub: https://github.com/meituan/LIBERO-X

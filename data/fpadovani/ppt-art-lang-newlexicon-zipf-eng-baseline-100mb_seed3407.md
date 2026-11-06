@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407` es un modelo de lenguaje pequeño (86,5 millones de parámetros) basado en la arquitectura GPT-2, desarrollado por fpadovani como parte de un proyecto de investigación sobre el arte del lenguaje y la creación de nuevos léxicos. Se trata de un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, que a su vez es un modelo entrenado con 100 MB de texto en inglés. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace.
+El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407` es un modelo de lenguaje pequeño (86,5 millones de parámetros) basado en la arquitectura GPT-2, desarrollado por fpadovani como parte de un proyecto de investigación sobre el arte del lenguaje y la creación de nuevos léxicos. Se trata de un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, que a su vez es un modelo entrenado con 100 MB de texto en inglés. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face.
 
 La relevancia de este modelo radica en su naturaleza experimental: forma parte de una serie de variantes (con diferentes semillas y configuraciones de léxico) diseñadas para estudiar cómo afecta la distribución de frecuencias de palabras (ley de Zipf) y la creación de nuevos vocabularios al comportamiento de los modelos de lenguaje. No está pensado para uso en producción, sino como herramienta de investigación en lingüística computacional y análisis de la generación de texto. Su tamaño reducido permite ejecutarlo en hardware modesto, incluso en CPU.
 
@@ -39,7 +39,7 @@ No se dispone de informacion detallada sobre la composicion del dataset de entre
 - Investigacion academica en lingüistica computacional: el modelo permite estudiar como la distribucion de frecuencias de palabras (ley de Zipf) afecta a la generacion de texto y a la coherencia del lenguaje producido. Los investigadores pueden comparar esta variante con otras del mismo proyecto (diferentes semillas o lexicos) para aislar variables.
 - Experimentos de generacion de texto controlada: al haber sido entrenado con un lexico modificado, puede usarse para analizar como el modelo maneja vocabulario artificial o poco frecuente, lo que resulta util para estudiar la generalizacion y la memorizacion en modelos pequenos.
 - Prototipado rapido de pipelines de generacion: su tamano reducido permite integrarlo en entornos de desarrollo sin requisitos de hardware elevados, sirviendo como banco de pruebas para tecnicas de prompting o decodificacion antes de escalar a modelos mayores.
-- Educacion y formacion: es un ejemplo didactico de como se realiza un ajuste fino con TRL sobre un modelo base, y de como se documenta y publica un experimento de investigacion en HuggingFace.
+- Educacion y formacion: es un ejemplo didactico de como se realiza un ajuste fino con TRL sobre un modelo base, y de como se documenta y publica un experimento de investigacion en Hugging Face.
 - Comparacion de semillas y variabilidad: al existir multiples versiones con diferentes semillas (seed3407, seed455, etc.), se puede estudiar la variabilidad de los resultados de entrenamiento y su impacto en la generacion.
 - Analisis de sesgos en modelos pequenos: al ser un modelo de tamano reducido, es mas facil auditar sus salidas y estudiar sesgos de genero, raza o tema en comparacion con modelos mas grandes, aunque su utilidad practica es limitada.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Variante con seed455: https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed455,6mkpVFlOXDWzjKl0Gjn5g5
 - Variante en japones: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-jpn-baseline-100mb_seed3407

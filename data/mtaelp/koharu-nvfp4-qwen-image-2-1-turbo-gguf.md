@@ -71,10 +71,10 @@ En un trabajo completo de limpieza de 13 páginas de manga: 127 s con este archi
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Koharu NVFP4 Qwen-Image 2.1 Turbo (este) | 7.115 M (transformer) | no disponible | GGUF NVFP4 | Qwen Research (no comercial) | HuggingFace, 0 descargas |
-| Qwen-Image-2.1-Turbo F16 (unsloth) | 7.115 M | no disponible | GGUF F16 | Qwen Research | HuggingFace |
-| Qwen-Image-2.1-Turbo Q4_K_M (unsloth) | 7.115 M | no disponible | GGUF Q4_K_M | Qwen Research | HuggingFace |
-| BennyDaBall Qwen-Image-2.1-Turbo NVFP4 | 7.115 M | no disponible | NVFP4 (ComfyUI) | Qwen Research | HuggingFace |
+| Koharu NVFP4 Qwen-Image 2.1 Turbo (este) | 7.115 M (transformer) | no disponible | GGUF NVFP4 | Qwen Research (no comercial) | Hugging Face, 0 descargas |
+| Qwen-Image-2.1-Turbo F16 (unsloth) | 7.115 M | no disponible | GGUF F16 | Qwen Research | Hugging Face |
+| Qwen-Image-2.1-Turbo Q4_K_M (unsloth) | 7.115 M | no disponible | GGUF Q4_K_M | Qwen Research | Hugging Face |
+| BennyDaBall Qwen-Image-2.1-Turbo NVFP4 | 7.115 M | no disponible | NVFP4 (ComfyUI) | Qwen Research | Hugging Face |
 
 Las diferencias medidas entre estas variantes se limitan a velocidad y error de pesos: NVFP4 alcanza ~19 it/s con error relativo medio 0,088, Q4_K_M ~12 it/s con diferencia de píxel 0,50 y F16 ~13,8 it/s sin pérdida. No se dispone de comparaciones con modelos de difusión de otros fabricantes en la información proporcionada.
 
@@ -91,7 +91,7 @@ Las diferencias medidas entre estas variantes se limitan a velocidad y error de 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mtaelp/koharu-nvfp4-qwen-image-2.1-turbo-gguf
+- Hugging Face del modelo: https://huggingface.co/mtaelp/koharu-nvfp4-qwen-image-2.1-turbo-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - GGUF F16 de origen (unsloth): https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-GGUF
 - Codificador de texto Qwen3-VL-8B-Instruct GGUF: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-GGUF

@@ -4,7 +4,7 @@
 
 EXAONE-ExaDialogue-2.4B es un ajuste fino (fine-tuning) del modelo coreano beomi/EXAONE-3.5-2.4B-Instruct-Llamafied, que a su vez deriva del EXAONE-3.5-2.4B-Instruct de LG AI Research. El resultado es un modelo denso de 2 405 327 360 parametros (aproximadamente 2,4 mil millones) orientado a generacion de texto conversacional en coreano, especializado en el registro informal propio de los chats de mensajeria.
 
-El modelo ha sido entrenado sobre el dataset Myungseung/kakaotalk_min, compuesto por conversaciones de KakaoTalk, con el objetivo de reproducir el estilo de dialogo cotidiano coreano. Se trata de un proyecto personal de practica publicado en HuggingFace por el usuario lunar1020, y el checkpoint disponible corresponde al paso 2000, guardado por terminacion anticipada del entrenamiento, por lo que no debe considerarse un modelo final optimizado.
+El modelo ha sido entrenado sobre el dataset Myungseung/kakaotalk_min, compuesto por conversaciones de KakaoTalk, con el objetivo de reproducir el estilo de dialogo cotidiano coreano. Se trata de un proyecto personal de practica publicado en Hugging Face por el usuario lunar1020, y el checkpoint disponible corresponde al paso 2000, guardado por terminacion anticipada del entrenamiento, por lo que no debe considerarse un modelo final optimizado.
 
 Su relevancia es limitada y de nicho: no compite en benchmarks generales ni aporta innovaciones arquitectonicas, pero resulta util como ejemplo de adaptacion de un modelo base coreano a un dominio conversacional concreto y como punto de partida para experimentos de dialogo en coreano con requisitos de hardware muy bajos. Es importante senalar que no se ha publicado ninguna evaluacion cuantitativa del modelo.
 
@@ -74,11 +74,11 @@ Los datos de los modelos comparados no figuran en la informacion proporcionada y
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EXAONE-ExaDialogue-2.4B | 2,4 B | no disponible (base: 32 768) | ko | exaone (other) | HuggingFace, safetensors |
-| EXAONE-3.5-2.4B-Instruct (LG AI Research) | 2,4 B | 32 768 (segun su model card publica) | ko, en | exaone | HuggingFace, safetensors |
-| beomi/EXAONE-3.5-2.4B-Instruct-Llamafied | 2,4 B | heredado del base | ko, en | exaone | HuggingFace, safetensors |
-| Qwen2.5-3B-Instruct | ~3,1 B | 32 768 | multilingue (incluye ko) | apache-2.0 (variantes) | HuggingFace, GGUF |
-| Llama-3.2-3B-Instruct | ~3,2 B | 128 000 | multilingue (coreano limitado) | llama 3.2 community | HuggingFace, GGUF |
+| EXAONE-ExaDialogue-2.4B | 2,4 B | no disponible (base: 32 768) | ko | exaone (other) | Hugging Face, safetensors |
+| EXAONE-3.5-2.4B-Instruct (LG AI Research) | 2,4 B | 32 768 (segun su model card publica) | ko, en | exaone | Hugging Face, safetensors |
+| beomi/EXAONE-3.5-2.4B-Instruct-Llamafied | 2,4 B | heredado del base | ko, en | exaone | Hugging Face, safetensors |
+| Qwen2.5-3B-Instruct | ~3,1 B | 32 768 | multilingue (incluye ko) | apache-2.0 (variantes) | Hugging Face, GGUF |
+| Llama-3.2-3B-Instruct | ~3,2 B | 128 000 | multilingue (coreano limitado) | llama 3.2 community | Hugging Face, GGUF |
 
 Diferencias clave: el modelo aqui descrito es el unico de la tabla ajustado especificamente sobre conversaciones de KakaoTalk, pero tambien el unico sin evaluacion publicada y con un checkpoint truncado de forma anticipada. Los modelos de Qwen y Meta ofrecen licencias mas permisivas y pesos GGUF oficiales, mientras que la licencia EXAONE impone condiciones adicionales.
 
@@ -98,7 +98,7 @@ Diferencias clave: el modelo aqui descrito es el unico de la tabla ajustado espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lunar1020/EXAONE-ExaDialogue-2.4B
+- Modelo en Hugging Face: https://huggingface.co/lunar1020/EXAONE-ExaDialogue-2.4B
 - Modelo base (Llamafied): https://huggingface.co/beomi/EXAONE-3.5-2.4B-Instruct-Llamafied
 - Modelo original de LG AI Research: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct
 - Texto de la licencia: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct/tree/main/LICENSE

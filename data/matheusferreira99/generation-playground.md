@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matheusferreira99/generation-playground` es un repositorio de HuggingFace publicado por el usuario matheusferreira99 que empaqueta una implementación propia de una arquitectura Beit orientada a tareas de generación. No es un modelo entrenado ni una release de pesos con rendimiento demostrado: la propia model card lo describe como un punto de partida reproducible, con un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo (smoke tests). El repositorio incluye además `config.json`, `training_args.json` y el script `finetune.py`.
+`matheusferreira99/generation-playground` es un repositorio de Hugging Face publicado por el usuario matheusferreira99 que empaqueta una implementación propia de una arquitectura Beit orientada a tareas de generación. No es un modelo entrenado ni una release de pesos con rendimiento demostrado: la propia model card lo describe como un punto de partida reproducible, con un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo (smoke tests). El repositorio incluye además `config.json`, `training_args.json` y el script `finetune.py`.
 
 Aunque la model card etiqueta la variante como "xlarge", el recuento real de parámetros declarado en los metadatos de safetensors es de 16.576, una cifra muy alejada de lo que se esperaría de un modelo a gran escala. Esta discrepancia, junto con la ausencia de un entrenamiento completado, indica que el artefacto es un esqueleto de código y configuración más que un modelo desplegable. La licencia es Apache 2.0 y los pesos están en formato safetensors.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| generation-playground (este) | 16.576 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, checkpoint de inicializacion |
+| generation-playground (este) | 16.576 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, checkpoint de inicializacion |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa significativa con otros modelos de la misma categoria. El artefacto es un esqueleto de codigo sin entrenamiento, lo que impide contrastarlo con modelos entrenados de generacion.
@@ -80,5 +80,5 @@ No se dispone de informacion suficiente para establecer una comparativa signific
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matheusferreira99/generation-playground
+- Repositorio en Hugging Face: https://huggingface.co/matheusferreira99/generation-playground
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la busqueda web.

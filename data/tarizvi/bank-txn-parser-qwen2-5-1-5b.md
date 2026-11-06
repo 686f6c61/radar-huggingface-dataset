@@ -73,8 +73,8 @@ El conjunto no visto contiene únicamente transacciones con un comercio (Swiggy,
 
 | Modelo | Parametros | Contexto | Coincidencia exacta (vistos / no vistos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Bank-txn-parser Qwen2.5-1.5B (este) | 1,54 B | No declarado (heredado del base) | 98,2 % / 72,2 % | Apache 2.0 | HuggingFace: safetensors, GGUF y adaptador LoRA |
-| Qwen2.5-1.5B-Instruct (base, 4-shot) | 1,54 B | No declarado en la información disponible | 17,0 % / 17,0 % | Apache 2.0 | HuggingFace |
+| Bank-txn-parser Qwen2.5-1.5B (este) | 1,54 B | No declarado (heredado del base) | 98,2 % / 72,2 % | Apache 2.0 | Hugging Face: safetensors, GGUF y adaptador LoRA |
+| Qwen2.5-1.5B-Instruct (base, 4-shot) | 1,54 B | No declarado en la información disponible | 17,0 % / 17,0 % | Apache 2.0 | Hugging Face |
 | Regex + diccionario de comercios | No aplica | No aplica | 80,0 % / 31,8 % | No aplica | Código propio; requiere mantenimiento manual por banco |
 | Modelos generalistas mayores (p. ej. Qwen2.5-7B-Instruct) sin ajuste específico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -95,9 +95,9 @@ No se han identificado en la información proporcionada otros ajustes finos publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TARizvi/bank-txn-parser-qwen2.5-1.5b
+- Modelo en Hugging Face: https://huggingface.co/TARizvi/bank-txn-parser-qwen2.5-1.5b
 - Repositorio de código, generador del dataset, baselines y evaluación: https://github.com/Tanzil-Ali-Rizvi/bank-txn-parser-qlora
 - Dataset de entrenamiento: https://huggingface.co/datasets/TARizvi/indian-bank-txn-parsing
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos trataban de botánica y biología), por lo que los enlaces anteriores proceden de la información de HuggingFace y de la model card del autor.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos trataban de botánica y biología), por lo que los enlaces anteriores proceden de la información de Hugging Face y de la model card del autor.

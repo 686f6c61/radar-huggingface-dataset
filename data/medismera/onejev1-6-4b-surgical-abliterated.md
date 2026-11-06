@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OneJev1.6-4B-Surgical-Abliterated es una versión "abliterada" (sin mecanismos de rechazo) del modelo OmniJev/OneJev1.6-4B, publicada por el usuario medismera en HuggingFace. El modelo base es un modelo de lenguaje causal de aproximadamente 4.500 millones de parámetros orientado a generación de texto conversacional, con razonamiento mejorado y seguimiento de instrucciones multi-turno según su autor. La versión abliterada aplica una técnica de "ablación quirúrgica de rechazos" que elimina el subespacio latente responsable de las negativas estandarizadas del modelo, con el objetivo de que responda directamente a peticiones técnicas sin emitar rechazos ni advertencias morales.
+OneJev1.6-4B-Surgical-Abliterated es una versión "abliterada" (sin mecanismos de rechazo) del modelo OmniJev/OneJev1.6-4B, publicada por el usuario medismera en Hugging Face. El modelo base es un modelo de lenguaje causal de aproximadamente 4.500 millones de parámetros orientado a generación de texto conversacional, con razonamiento mejorado y seguimiento de instrucciones multi-turno según su autor. La versión abliterada aplica una técnica de "ablación quirúrgica de rechazos" que elimina el subespacio latente responsable de las negativas estandarizadas del modelo, con el objetivo de que responda directamente a peticiones técnicas sin emitar rechazos ni advertencias morales.
 
 Este tipo de derivado es relevante para investigadores y equipos de red-teaming que necesitan modelos sin filtros de alineación para auditar sistemas, estudiar comportamientos de seguridad o explorar capacidades sin restricciones. Según la model card, la ablación se realizó preservando el conocimiento factual, la precisión en código y el razonamiento lógico mediante proyecciones ortogonales benignas con preservación de la norma de Frobenius. El modelo se distribuye bajo licencia Apache 2.0, en formatos safetensors y GGUF, y su idioma principal es el inglés.
 
@@ -81,6 +81,6 @@ La principal diferencia frente a alternativas como Dolphin es la tecnica: la abl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/medismera/OneJev1.6-4B-Surgical-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/medismera/OneJev1.6-4B-Surgical-Abliterated
 - Modelo base: https://huggingface.co/OmniJev/OneJev1.6-4B
 - Paper, repositorio de codigo o demo: no disponible

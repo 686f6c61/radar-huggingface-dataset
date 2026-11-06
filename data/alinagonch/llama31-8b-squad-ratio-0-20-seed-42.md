@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/llama31-8b-squad-ratio-0.20-seed-42` es un checkpoint publicado en HuggingFace por la usuaria AlinaGonch. La nomenclatura del identificador sugiere un ajuste fino del modelo base Llama 3.1 de 8.000 millones de parametros sobre el dataset SQuAD, con una fraccion de datos de entrenamiento del 20 % (`ratio-0.20`) y una semilla fija de reproducibilidad (`seed-42`). Ninguno de estos extremos esta confirmado en la informacion disponible: la model card es la plantilla autogenerada de `transformers` y no contiene ni una sola seccion completada.
+`AlinaGonch/llama31-8b-squad-ratio-0.20-seed-42` es un checkpoint publicado en Hugging Face por la usuaria AlinaGonch. La nomenclatura del identificador sugiere un ajuste fino del modelo base Llama 3.1 de 8.000 millones de parametros sobre el dataset SQuAD, con una fraccion de datos de entrenamiento del 20 % (`ratio-0.20`) y una semilla fija de reproducibilidad (`seed-42`). Ninguno de estos extremos esta confirmado en la informacion disponible: la model card es la plantilla autogenerada de `transformers` y no contiene ni una sola seccion completada.
 
 El repositorio tiene un tamano declarado de 0,2 GB, muy inferior a los aproximadamente 16 GB que ocuparian los pesos completos de un modelo de 8B en precision de 16 bits. Esto apunta, como hipotesis, a que el repositorio contiene unicamente adaptadores (por ejemplo LoRA) o un subconjunto parcial de tensores, aunque no hay documentacion que lo confirme. Registra 0 descargas y 0 "likes", por lo que no existe validacion alguna por parte de la comunidad.
 
@@ -67,7 +67,7 @@ Todas las cifras de esta seccion son estimaciones condicionadas a la hipotesis d
 - Si el repositorio contiene solo adaptadores: el requisito real es el del modelo base (`Llama-3.1-8B` o `Llama-3.1-8B-Instruct`), mas entre 1 y 2 GB adicionales para pesos y cache.
 - GPU recomendadas: A100 40 GB, H100 80 GB o L40S para servicio en fp16 con concurrencia; RTX 4090 o RTX 3090 (24 GB) para fp16 en una sola tarjeta con lotes pequenos.
 - GPU de consumo: cabe en RTX 4090, RTX 3090, RTX 4080 (16 GB, en 8 bits o 4 bits) y RTX 4060 Ti 16 GB (4 bits). En tarjetas de 8 GB requiere cuantizacion de 4 bits y contextos cortos.
-- Opciones de despliegue: vLLM, TGI y HuggingFace Inference Endpoints para `safetensors`; llama.cpp u Ollama solo si se convierte previamente a GGUF, conversion que no se distribuye en el repositorio.
+- Opciones de despliegue: vLLM, TGI y Hugging Face Inference Endpoints para `safetensors`; llama.cpp u Ollama solo si se convierte previamente a GGUF, conversion que no se distribuye en el repositorio.
 - Latencia y throughput: no disponibles. No hay ninguna medicion publicada en el repositorio.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Comparacion de rendimiento: no disponible para el checkpoint analizado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.20-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.20-seed-42
 - Articulo referenciado en la etiqueta `arxiv:1910.09700`: https://arxiv.org/abs/1910.09700
 - Dataset SQuAD (referencia del nombre del repositorio): https://rajpurkar.github.io/SQuAD-explorer/
 - Documentacion de Llama 3.1: https://ai.meta.com/blog/meta-llama-3-1/

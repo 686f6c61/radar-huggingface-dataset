@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r05
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 y politica de uso: incluidas como `LICENSE` y `USE_POLICY.md` en el repositorio del modelo
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al paper de SVD-LLM ni a articulos tecnicos asociados; los resultados devueltos no guardan relacion con este checkpoint.

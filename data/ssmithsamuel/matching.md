@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ssmithsamuel/matching es un repositorio de HuggingFace publicado por el usuario Ssmithsamuel (Samuel Smith) que contiene una implementacion funcional de MoCo v3 aplicada a una tarea generica de emparejamiento o "matching", en una configuracion de escala nano. No se trata de un modelo entrenado ni evaluado: el propio autor indica de forma explicita que el checkpoint incluido es unicamente una inicializacion valida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+Ssmithsamuel/matching es un repositorio de Hugging Face publicado por el usuario Ssmithsamuel (Samuel Smith) que contiene una implementacion funcional de MoCo v3 aplicada a una tarea generica de emparejamiento o "matching", en una configuracion de escala nano. No se trata de un modelo entrenado ni evaluado: el propio autor indica de forma explicita que el checkpoint incluido es unicamente una inicializacion valida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 El peso real declarado en safetensors es de 33.088 parametros, un orden de magnitud propio de una maqueta de codigo mas que de un modelo utilizable en produccion. El repositorio ocupa 0,0 GB y no registra descargas ni "likes" en el momento de la consulta. Los archivos que lo componen son eval.py (artefacto principal), config.json, training_args.json, model.safetensors y el README.
 
@@ -98,8 +98,8 @@ Las cifras de las alternativas corresponden a sus configuraciones publicadas hab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ssmithsamuel/matching
-- Perfil del autor en HuggingFace: https://huggingface.co/Ssmithsamuel
+- Modelo en Hugging Face: https://huggingface.co/Ssmithsamuel/matching
+- Perfil del autor en Hugging Face: https://huggingface.co/Ssmithsamuel
 - Referencia relacionada (no vinculada al autor): Matchmaker, schema matching con programas de LLM auto-mejorables: https://openreview.net/forum?id=vR2MWaZ3MG
 - Referencia relacionada (no vinculada al autor): Matchmaker, PDF: https://openreview.net/pdf?id=18E2ZooCte
 - Referencia relacionada (no vinculada al autor): resena en ResearchGate sobre Matchmaker: https://www.researchgate.net/publication/385443331_Matchmaker_Self-Improving_Large_Language_Model_Programs_for_Schema_Matching

@@ -98,7 +98,7 @@ Los datos de rendimiento comparado no estan disponibles al no haberse publicado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bayazidhs04/bangla-smollm-135m-cupcake
+- Modelo en Hugging Face: https://huggingface.co/bayazidhs04/bangla-smollm-135m-cupcake
 - Modelo base: https://huggingface.co/rnnandi/bangla-smollm-135m
 - Dataset de ajuste: https://huggingface.co/datasets/bayazidhs04/cupcake-liltii
 - Perfil del autor: https://huggingface.co/bayazidhs04

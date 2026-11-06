@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-1k-huge_lr` es un checkpoint publicado por el usuario micdun en HuggingFace. Se trata de un modelo de 12.320.990.464 parámetros (aproximadamente 12,32 mil millones) distribuidos en un repositorio de 24,7 GB en formato safetensors, lo que es coherente con pesos almacenados en precisión de 16 bits. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
+El modelo `micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-1k-huge_lr` es un checkpoint publicado por el usuario micdun en Hugging Face. Se trata de un modelo de 12.320.990.464 parámetros (aproximadamente 12,32 mil millones) distribuidos en un repositorio de 24,7 GB en formato safetensors, lo que es coherente con pesos almacenados en precisión de 16 bits. El repositorio no incluye model card, pipeline declarado, licencia ni idiomas soportados.
 
 El tag `flex_qwen2_5_vl_moe` asociado al repositorio apunta a una arquitectura de mezcla de expertos (MoE) derivada de la familia Qwen2.5-VL, es decir, un modelo con capacidades de visión y lenguaje. El identificador del repositorio sugiere además un proceso de fusión de pesos o de adaptadores ("merged") y un ajuste orientado a dominios biomédicos ("endo", "path", "pubmed"). Ninguno de estos extremos está documentado en el repositorio, por lo que deben considerarse indicios no confirmados.
 
@@ -73,9 +73,9 @@ No hay datos de rendimiento de este checkpoint que permitan una comparación fun
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-1k-huge_lr | 12,32 mil millones | No disponible | No disponible | HuggingFace, sin documentacion |
-| Qwen2.5-VL-7B (referencia de familia) | 7 mil millones | 128 000 tokens (nativo en la familia) | Apache 2.0 | HuggingFace, documentado |
-| Qwen2.5-VL-32B (referencia de familia) | 32 mil millones | 128 000 tokens (nativo en la familia) | Apache 2.0 | HuggingFace, documentado |
+| micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-1k-huge_lr | 12,32 mil millones | No disponible | No disponible | Hugging Face, sin documentacion |
+| Qwen2.5-VL-7B (referencia de familia) | 7 mil millones | 128 000 tokens (nativo en la familia) | Apache 2.0 | Hugging Face, documentado |
+| Qwen2.5-VL-32B (referencia de familia) | 32 mil millones | 128 000 tokens (nativo en la familia) | Apache 2.0 | Hugging Face, documentado |
 
 No se dispone de comparativas de rendimiento con alternativas de la misma categoría (VLMs médicos o MoE multimodales) porque no se han publicado métricas de este modelo.
 
@@ -94,7 +94,7 @@ No se dispone de comparativas de rendimiento con alternativas de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-1k-huge_lr
+- Hugging Face: https://huggingface.co/micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-1k-huge_lr
 - Perfil del autor: https://huggingface.co/micdun
 - Paper, blog o repositorio asociado: no disponible
 - Demo: no disponible

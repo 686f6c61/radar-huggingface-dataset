@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ctr-pi05-putcab-randomdelta-e091-step10000 es un checkpoint de inferencia publicado por el usuario Shiki42 en HuggingFace, etiquetado con los tags robotics, ctr y robotwin. No es un modelo de lenguaje conversacional, sino una política robótica (policy) con pesos y artefactos de normalización asociados a un experimento de entrenamiento denominado CTR E091, en su paso de optimizador 10000. El nombre del repositorio sugiere que se trata de un ajuste fino tipo LoRA sobre una política de la familia pi0.5 orientada a la tarea de manipulación "putcab" dentro del entorno de simulación RoboTwin, aunque esta interpretación se deriva del identificador y de la ruta de entrenamiento citada en la model card, no de documentación técnica explícita.
+ctr-pi05-putcab-randomdelta-e091-step10000 es un checkpoint de inferencia publicado por el usuario Shiki42 en Hugging Face, etiquetado con los tags robotics, ctr y robotwin. No es un modelo de lenguaje conversacional, sino una política robótica (policy) con pesos y artefactos de normalización asociados a un experimento de entrenamiento denominado CTR E091, en su paso de optimizador 10000. El nombre del repositorio sugiere que se trata de un ajuste fino tipo LoRA sobre una política de la familia pi0.5 orientada a la tarea de manipulación "putcab" dentro del entorno de simulación RoboTwin, aunque esta interpretación se deriva del identificador y de la ruta de entrenamiento citada en la model card, no de documentación técnica explícita.
 
 El checkpoint forma parte de una comparativa interna: el experimento E091 plantea si, tras restaurar la configuración histórica de carga de datos (E018) manteniendo los datos de la variante RandomDelta, cambia la tasa de éxito del modelo en 10000 pasos. El autor indica que se publicó "a petición del usuario" para preservar todos los checkpoints antes del apagado del servidor de entrenamiento, lo que lo convierte en un artefacto de conservación más que en un modelo con soporte o mantenimiento.
 
@@ -73,7 +73,7 @@ La información proporcionada no incluye especificaciones verificables de este c
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ctr-pi05-putcab-randomdelta-e091-step10000 | Política robótica (posible familia pi0.5), tarea putcab en RoboTwin | No disponible | No disponible | other (sin detallar) | HuggingFace, 0 descargas, sin evaluación publicada |
+| ctr-pi05-putcab-randomdelta-e091-step10000 | Política robótica (posible familia pi0.5), tarea putcab en RoboTwin | No disponible | No disponible | other (sin detallar) | Hugging Face, 0 descargas, sin evaluación publicada |
 | OpenVLA | Política visión-lenguaje-acción de propósito general | Del orden de 7 000 millones (según publicación original) | No disponible en la información proporcionada | Abierta, con condiciones por confirmar en su repositorio | Ampliamente distribuido, con documentación pública |
 | pi0 (Physical Intelligence) | Política visión-lenguaje-acción con flujo de acciones | Del orden de 3 000 millones (según publicación original) | No disponible en la información proporcionada | No disponible en la información proporcionada | Publicada por sus autores |
 | RDT-1B | Modelo de difusión para manipulación bimanual | Del orden de 1 200 millones (según publicación original) | No disponible en la información proporcionada | No disponible en la información proporcionada | Publicado por sus autores |
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas y el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/ctr-pi05-putcab-randomdelta-e091-step10000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/ctr-pi05-putcab-randomdelta-e091-step10000
 - Repositorio de RoboTwin (referencia del entorno citado en los tags; no enlazado en la información proporcionada): no disponible en los datos aportados
 - Registro del experimento CTR E091 (donde el autor indica que constan el estado de evaluación y las advertencias): no disponible en los datos aportados
 - Paper o blog técnico del modelo: no disponible

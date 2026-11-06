@@ -116,7 +116,7 @@ La comparacion con alternativas de la misma tarea (por ejemplo, pipelines NER tu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HasanPekedis/dbmdz_bert-base-turkish-128k-cased_org_jsonl_10_8_512_3e-5
+- Modelo en Hugging Face: https://huggingface.co/HasanPekedis/dbmdz_bert-base-turkish-128k-cased_org_jsonl_10_8_512_3e-5
 - Modelo base (128k, cased): https://huggingface.co/dbmdz/bert-base-turkish-128k-cased
 - Modelo base alternativo (32k, cased): https://huggingface.co/dbmdz/bert-base-turkish-cased
 - Ficha del modelo base en Inferix: https://inferix.co/models/dbmdz/bert-base-turkish-cased

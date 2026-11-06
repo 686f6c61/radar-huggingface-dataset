@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Memorilla-Qwen3-8B | 194M (modulo) + 8.2B decoder + 4B encoder | No disponible (depende del base) | Modulo de memoria latente | apache-2.0 | HuggingFace + GitHub SNAP |
-| Qwen3-8B | 8.2B | No disponible en esta ficha (base de 36 capas, GQA) | Transformer denso | apache-2.0 | HuggingFace |
-| Qwen3-Embedding-4B | 4B | No disponible | Encoder de embeddings | apache-2.0 | HuggingFace |
+| Memorilla-Qwen3-8B | 194M (modulo) + 8.2B decoder + 4B encoder | No disponible (depende del base) | Modulo de memoria latente | apache-2.0 | Hugging Face + GitHub SNAP |
+| Qwen3-8B | 8.2B | No disponible en esta ficha (base de 36 capas, GQA) | Transformer denso | apache-2.0 | Hugging Face |
+| Qwen3-Embedding-4B | 4B | No disponible | Encoder de embeddings | apache-2.0 | Hugging Face |
 
 No se dispone de informacion sobre otros modulos de memoria comparables (por ejemplo, variantes de MemGPT, Mem0 u otras implementaciones) dentro de la documentacion proporcionada, por lo que la comparativa se limita a los componentes base de este stack.
 
@@ -73,7 +73,7 @@ No se dispone de informacion sobre otros modulos de memoria comparables (por eje
 - Documentacion escasa: no se detallan volumen de datos de entrenamiento, hiperparametros completos ni metricas de evaluacion, lo que limita la reproducibilidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/memorilla/Memorilla-Qwen3-8B
+- Hugging Face: https://huggingface.co/memorilla/Memorilla-Qwen3-8B
 - Repositorio GitHub de Memorilla: https://github.com/snap-stanford/memorilla
 - Paper (COLM Workshop): https://openreview.net/forum?id=VV0vvzL783
 - Guia de entrenamiento: https://github.com/snap-stanford/memorilla/blob/main/docs/training.md

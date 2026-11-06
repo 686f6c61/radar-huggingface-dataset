@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-4b-tz-convert-v2-n3000` es un adaptador LoRA (entrenado con QLoRA) sobre el modelo instructivo `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario `debudash` en HuggingFace. Forma parte del proyecto tz-convert, cuyo objetivo es especializar un modelo de lenguaje pequeño en la conversión y el razonamiento sobre zonas horarias (timezones) siguiendo una especificación estricta. El adaptador se entrenó sobre los primeros 3.000 ejemplos del mix `v2` del dataset `debudash/tz-convert-sft`.
+`qwen3-4b-tz-convert-v2-n3000` es un adaptador LoRA (entrenado con QLoRA) sobre el modelo instructivo `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario `debudash` en Hugging Face. Forma parte del proyecto tz-convert, cuyo objetivo es especializar un modelo de lenguaje pequeño en la conversión y el razonamiento sobre zonas horarias (timezones) siguiendo una especificación estricta. El adaptador se entrenó sobre los primeros 3.000 ejemplos del mix `v2` del dataset `debudash/tz-convert-sft`.
 
 No se trata de un modelo base nuevo ni de un entrenamiento completo: es un checkpoint intermedio de una curva de eficiencia de datos, con los mismos hiperparámetros que el resto de checkpoints del proyecto. Su relevancia es acotada y experimental: sirve para estudiar cómo escala la adherencia a especificación con el volumen de datos de entrenamiento en una tarea concreta y muy restringida.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks generales ni de otros adaptadores comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v2-n3000
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v2-n3000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Mejor checkpoint de la serie: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft

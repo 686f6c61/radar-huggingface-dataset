@@ -60,7 +60,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 - VRAM estimada para inferencia: en FP32, aproximadamente 486 MB; en FP16, aproximadamente 243 MB; en 8-bit, aproximadamente 121 MB. Estos cálculos se basan en 121.526.016 parámetros.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, incluyendo modelos de consumo como RTX 3050, GTX 1650 o incluso GPUs integradas. En CPU también es viable para tareas de baja latencia.
 - El modelo cabe en GPUs de consumo y también en sistemas embebidos con suficiente memoria dedicada.
-- Opciones de despliegue: al estar en formato safetensors, es compatible en principio con HuggingFace Transformers. No se ha documentado soporte explícito para llama.cpp, Ollama, vLLM o TGI, aunque la conversión a otros formatos podría ser posible.
+- Opciones de despliegue: al estar en formato safetensors, es compatible en principio con Hugging Face Transformers. No se ha documentado soporte explícito para llama.cpp, Ollama, vLLM o TGI, aunque la conversión a otros formatos podría ser posible.
 - Latencia y throughput: no disponibles, ya que no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ No se han publicado benchmarks comparativos con otros modelos en la información
 - Existe una discrepancia entre el número de parámetros declarado por el autor (108.943.104) y el que se deduce de los archivos safetensors (121.526.016), lo que podría indicar errores en el modelo o en los metadatos.
 - La licencia MIT permite uso comercial, pero dado el rendimiento nulo en benchmarks, la utilidad práctica en producción es muy limitada.
 - No hay información sobre sesgos conocidos ni sobre la composición del dataset de entrenamiento.
-- La fecha de creación del modelo en HuggingFace aparece como 2026-09-08, lo que podría tratarse de un error en la plataforma o de un experimento mal fechado.
+- La fecha de creación del modelo en Hugging Face aparece como 2026-09-08, lo que podría tratarse de un error en la plataforma o de un experimento mal fechado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RaspizdAI/petuh-2.0
+- Hugging Face: https://huggingface.co/RaspizdAI/petuh-2.0

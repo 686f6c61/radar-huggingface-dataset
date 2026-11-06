@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grpo-qwen3-4b-nonthinking-likelihood-2048-20260918 (este) | Adaptador LoRA sobre base 4B | 8.192 tokens (entrenamiento) | GRPO con recompensa de rango de verosimilitud, matematicas, modo nonthinking | no disponible | Adaptador PEFT en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4.000 millones | Segun documentacion del modelo base | Modelo instruccion generalista | Segun licencia del modelo base (no verificada en esta ficha) | Pesos completos en HuggingFace |
+| grpo-qwen3-4b-nonthinking-likelihood-2048-20260918 (este) | Adaptador LoRA sobre base 4B | 8.192 tokens (entrenamiento) | GRPO con recompensa de rango de verosimilitud, matematicas, modo nonthinking | no disponible | Adaptador PEFT en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4.000 millones | Segun documentacion del modelo base | Modelo instruccion generalista | Segun licencia del modelo base (no verificada en esta ficha) | Pesos completos en Hugging Face |
 | Otros fine-tunes GRPO/RL sobre modelos de 1,5B a 7B para matematicas | Variable | no disponible | RL sobre respuestas verificables | Variable | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre este adaptador y alternativas, por lo que la comparativa se limita a parametros estructurales y enfoque.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre este adaptador y alterna
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/sandeep123/grpo-qwen3-4b-nonthinking-likelihood-2048-20260918
+- Hugging Face del modelo: https://huggingface.co/sandeep123/grpo-qwen3-4b-nonthinking-likelihood-2048-20260918
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507 (revision fijada `cdbee75f17c01a7cc42f958dc650907174af0554`)
 - Repositorio del autor del codigo de recompensa: https://github.com/AndreHe02/rewarding-unlikely-release (commit `ca1cff05ebdf2cfe9737fd416897da838a93e11a`)
 - Resultados de busqueda web: sin resultados relevantes para este modelo (los enlaces devueltos tratan sobre logistica de lujo y no se incluyen).

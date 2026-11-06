@@ -18,7 +18,7 @@ La relevancia es doble: por un lado, ilustra el flujo de trabajo reproducible (e
 | Longitud de contexto | no aplica; observación de 61 dimensiones por paso de control |
 | Tipos de cuantizacion | no disponible (exportación ONNX; el normalizador de observaciones está embebido en `policy.onnx`) |
 | Idiomas soportados | no aplica (modelo de control robótico) |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | ONNX (`policy.onnx`) más `manifest.json` (schema 2 del manifiesto de políticas de microduck) |
 | Dimension de observacion | 61 |
 | Dimension de accion | 14 |
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Tipo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-hill-climb-1m5-climb1 | Política RL (ONNX) para microduck Sprint 2 m | no disponible | 61-D obs / 14 acciones, 50 Hz | 1,37 s en pendiente de 8° (dato del autor frente a 7,7 s de referencia) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| microduck-hill-climb-1m5-climb1 | Política RL (ONNX) para microduck Sprint 2 m | no disponible | 61-D obs / 14 acciones, 50 Hz | 1,37 s en pendiente de 8° (dato del autor frente a 7,7 s de referencia) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otras políticas del repositorio `microduck-challenges` | Políticas RL para microduck | no disponible | no disponible | no disponible | no disponible | Repositorio GitHub del autor |
 | Políticas oficiales de microduck (Pollen Robotics) | Políticas RL para microduck | no disponible | no disponible | no disponible | no disponible | Proyecto `pollen-robotics/microduck` |
 
@@ -98,7 +98,7 @@ No se dispone de datos públicos de parámetros, contexto o benchmarks de las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheSauceman/microduck-hill-climb-1m5-climb1
+- Modelo en Hugging Face: https://huggingface.co/TheSauceman/microduck-hill-climb-1m5-climb1
 - Proyecto microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/SteveTarter/microduck-challenges
 - Commit de entrenamiento: https://github.com/SteveTarter/microduck-challenges/commit/af037c788

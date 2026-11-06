@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DermaDINOv2 es un clasificador dermatológico de imágenes publicado por el usuario dhina0210 en HuggingFace bajo el identificador `dhina0210/derma-dinov2-ood-classifier`. El modelo reutiliza como extractor de características el backbone DINOv2 de Meta en su variante Small (`dinov2_vits14`), con todos sus parámetros congelados, y añade una cabeza de clasificación lineal entrenada para distinguir siete categorías de lesiones cutáneas del dataset DermaMNIST (derivado de HAM10000). Se distribuye exclusivamente en formato ONNX (opset 14) con batching dinámico y está optimizado para ejecución en CPU mediante ONNX Runtime, sin necesidad de GPU.
+DermaDINOv2 es un clasificador dermatológico de imágenes publicado por el usuario dhina0210 en Hugging Face bajo el identificador `dhina0210/derma-dinov2-ood-classifier`. El modelo reutiliza como extractor de características el backbone DINOv2 de Meta en su variante Small (`dinov2_vits14`), con todos sus parámetros congelados, y añade una cabeza de clasificación lineal entrenada para distinguir siete categorías de lesiones cutáneas del dataset DermaMNIST (derivado de HAM10000). Se distribuye exclusivamente en formato ONNX (opset 14) con batching dinámico y está optimizado para ejecución en CPU mediante ONNX Runtime, sin necesidad de GPU.
 
 El elemento diferencial del modelo no es su arquitectura, sino las dos capas de robustez que incorpora: un algoritmo de constancia de color Gray-World aplicado en el preprocesado, que neutraliza los tintes de sensor y las variaciones de tono de piel, y una capa de rechazo por fuera de distribución (OOD) con umbral de confianza del 0,60. Si la probabilidad máxima predicha queda por debajo de ese umbral, la salida se marca como "Low Confidence / Potential Domain Shift - Requires Clinician Review" en lugar de devolver una etiqueta clínica sin más. Es un patrón de diseño pensado para despliegues sanitarios donde un falso negativo es más costoso que una abstención.
 
@@ -98,9 +98,9 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhina0210/derma-dinov2-ood-classifier
+- Modelo en Hugging Face: https://huggingface.co/dhina0210/derma-dinov2-ood-classifier
 - Dataset declarado: https://huggingface.co/datasets/medmnist/dermamnist
-- Model card original: incluida en la pagina del modelo en HuggingFace (referenciada arriba); no se ha encontrado documentacion adicional del autor
+- Model card original: incluida en la pagina del modelo en Hugging Face (referenciada arriba); no se ha encontrado documentacion adicional del autor
 - Repositorio oficial de DINOv2 (backbone subyacente): https://github.com/facebookresearch/dinov2
 - Paper de DINOv2: https://arxiv.org/abs/2304.07193
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/docs/

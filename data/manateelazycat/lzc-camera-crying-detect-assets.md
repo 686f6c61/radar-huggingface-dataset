@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Clases | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lzc-camera-crying-detect-assets (YAMNet) | CNN sobre espectrograma Mel, TFLite | 521 (AudioSet) | 15.600 muestras float32 a 16 kHz | Apache 2.0 | HuggingFace, Kaggle |
+| lzc-camera-crying-detect-assets (YAMNet) | CNN sobre espectrograma Mel, TFLite | 521 (AudioSet) | 15.600 muestras float32 a 16 kHz | Apache 2.0 | Hugging Face, Kaggle |
 | YAMNet original (Google) | CNN MobileNetV1, TFLite/TF | 521 (AudioSet) | 15.600 muestras float32 a 16 kHz | Apache 2.0 | Kaggle, TensorFlow Hub |
 | PANNs (Qiu et al.) | CNN sobre espectrograma log-Mel | 527 (AudioSet) | variable, tipicamente 10 s | MIT (implementacion) | GitHub, Zenodo |
-| AST (Audio Spectrogram Transformer) | Transformer sobre espectrograma | 527 (AudioSet) | 10 s a 16 kHz | BSD-3 (implementacion) | GitHub, HuggingFace |
+| AST (Audio Spectrogram Transformer) | Transformer sobre espectrograma | 527 (AudioSet) | 10 s a 16 kHz | BSD-3 (implementacion) | GitHub, Hugging Face |
 
 La comparativa se limita a la familia de clasificadores de eventos de audio de AudioSet; no se dispone de datos de rendimiento comparativo en la informacion proporcionada. La diferencia principal de este repositorio frente al YAMNet original es el empaquetado del runtime y los hashes de integridad, no el modelo en si.
 
@@ -85,7 +85,7 @@ La comparativa se limita a la familia de clasificadores de eventos de audio de A
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/lzc-camera-crying-detect-assets
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/lzc-camera-crying-detect-assets
 - Modelo YAMNet original en Kaggle: https://www.kaggle.com/models/google/yamnet/tfLite/classification-tflite/1
 - Implementacion de YAMNet en TensorFlow Models: https://github.com/tensorflow/models/tree/master/research/audioset/yamnet
 - NumPy 2.2.6 en PyPI: https://pypi.org/project/numpy/2.2.6/

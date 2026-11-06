@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Caveman-4B es un ajuste fino (finetune) publicado por CrowdMind sobre el modelo base Qwen/Qwen3.5-4B. Se distribuye en HuggingFace bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad declarada con la libreria transformers y con text-generation-inference. El repositorio tiene 4.659.865.088 parametros (~4,66 mil millones) y ocupa 9,3 GB, un tamano coherente con pesos en bfloat16 o float16 sin cuantizar.
+Caveman-4B es un ajuste fino (finetune) publicado por CrowdMind sobre el modelo base Qwen/Qwen3.5-4B. Se distribuye en Hugging Face bajo licencia Apache 2.0, con pesos en formato safetensors y compatibilidad declarada con la libreria transformers y con text-generation-inference. El repositorio tiene 4.659.865.088 parametros (~4,66 mil millones) y ocupa 9,3 GB, un tamano coherente con pesos en bfloat16 o float16 sin cuantizar.
 
-La model card es minima: solo indica que el modelo fue entrenado con Unsloth y la libreria TRL de HuggingFace, sin detallar el dataset, el numero de tokens, el metodo de alineamiento ni los hiperparametros. El pipeline declarado es image-text-to-text, lo que sugiere que el modelo conserva la capacidad multimodal del base (entrada de imagen y texto), aunque la model card no lo documenta explicitamente. El idioma declarado es unicamente ingles.
+La model card es minima: solo indica que el modelo fue entrenado con Unsloth y la libreria TRL de Hugging Face, sin detallar el dataset, el numero de tokens, el metodo de alineamiento ni los hiperparametros. El pipeline declarado es image-text-to-text, lo que sugiere que el modelo conserva la capacidad multimodal del base (entrada de imagen y texto), aunque la model card no lo documenta explicitamente. El idioma declarado es unicamente ingles.
 
 El interes de esta ficha es limitado pero informativo: se trata de un modelo recien publicado (11 de septiembre de 2026), con cero descargas y cero likes en el momento de la consulta, sin benchmarks publicados y con documentacion practicamente inexistente. Resulta util sobre todo como ejemplo de flujo de trabajo de fine-tuning rapido con Unsloth sobre la familia Qwen3.5, no como modelo listo para produccion.
 
@@ -88,9 +88,9 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowdMind/Caveman-4B
+- Modelo en Hugging Face: https://huggingface.co/CrowdMind/Caveman-4B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos corresponden a foros de soporte de Microsoft sin relacion con CrowdMind ni con Caveman-4B.

@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kdyck_dose_100Mpt (este modelo) | ~100M | 2048 | Apache-2.0 | HuggingFace, checkpoint .pt |
-| GPT-2 (124M) | 124M | 1024 | MIT | HuggingFace, pesos .pt/.safetensors |
+| kdyck_dose_100Mpt (este modelo) | ~100M | 2048 | Apache-2.0 | Hugging Face, checkpoint .pt |
+| GPT-2 (124M) | 124M | 1024 | MIT | Hugging Face, pesos .pt/.safetensors |
 | nanoGPT (Karpathy) | Variable (configurable) | Variable | MIT | Codigo abierto en GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no se han publicado benchmarks para el modelo de este experimento.
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_100M_s1_2026-09-06_15-33-43_615065-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_100M_s1_2026-09-06_15-33-43_615065-pt
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/afz8ne9v
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Modelo similar de la misma serie: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_100M_s1_2026-08-14_18-28-04_487523-pt

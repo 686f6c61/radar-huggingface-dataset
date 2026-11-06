@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FCLM-0.6B es un modelo publicado en HuggingFace por el usuario Natarizki bajo licencia Apache 2.0. La información disponible en la model card es mínima: únicamente se especifica la licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades ni casos de uso. El identificador del repositorio sugiere un tamaño de aproximadamente 600 millones de parámetros, pero este dato no está confirmado en la documentación oficial. El modelo no registra descargas ni valoraciones en el momento de la consulta, lo que indica que se trata de una publicación reciente o experimental.
+FCLM-0.6B es un modelo publicado en Hugging Face por el usuario Natarizki bajo licencia Apache 2.0. La información disponible en la model card es mínima: únicamente se especifica la licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades ni casos de uso. El identificador del repositorio sugiere un tamaño de aproximadamente 600 millones de parámetros, pero este dato no está confirmado en la documentación oficial. El modelo no registra descargas ni valoraciones en el momento de la consulta, lo que indica que se trata de una publicación reciente o experimental.
 
 La relevancia de este modelo es limitada por la ausencia total de documentación técnica. No se puede confirmar si se trata de un modelo de lenguaje, multimodal o de otro tipo. Existe una coincidencia de siglas con un trabajo académico de CVPR 2026 sobre aprendizaje de consistencia para visión de grano fino (FCLM), pero no hay evidencia de que este modelo en Hugging Face esté relacionado con dicho trabajo. Cualquier uso en producción debería considerar la falta de transparencia como un riesgo importante.
 

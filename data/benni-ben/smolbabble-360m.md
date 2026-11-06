@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolBabble-360m es un modelo de lenguaje publicado en HuggingFace por el usuario benni-ben. El repositorio contiene 361.821.120 parámetros (unos 362 M) en formato safetensors y está etiquetado con la arquitectura `llama`, lo que apunta a un transformer decoder-only de estilo Llama, aunque el autor no aporta ninguna descripción técnica que lo confirme. La licencia declarada es Apache 2.0 y el tamaño total del repositorio es de 0,7 GB.
+SmolBabble-360m es un modelo de lenguaje publicado en Hugging Face por el usuario benni-ben. El repositorio contiene 361.821.120 parámetros (unos 362 M) en formato safetensors y está etiquetado con la arquitectura `llama`, lo que apunta a un transformer decoder-only de estilo Llama, aunque el autor no aporta ninguna descripción técnica que lo confirme. La licencia declarada es Apache 2.0 y el tamaño total del repositorio es de 0,7 GB.
 
 La model card del repositorio se limita a repetir la licencia Apache 2.0: no incluye descripción del modelo, datos de entrenamiento, longitud de contexto, idiomas soportados, resultados de evaluación ni instrucciones de uso. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el 12 de septiembre de 2026, por lo que se trata de una publicación reciente y sin validación por parte de la comunidad.
 
@@ -98,7 +98,7 @@ La diferencia principal entre SmolBabble-360m y las alternativas no es de tamañ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/benni-ben/SmolBabble-360m
+- Hugging Face: https://huggingface.co/benni-ben/SmolBabble-360m
 - Model card: no disponible (el README del repositorio solo contiene la declaración de licencia)
 - Paper: no disponible
 - Repositorio de código: no disponible

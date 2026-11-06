@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks de precision (J&F, IoU, MMLU u otro
 
 | Modelo | Entrada | Parametros | Formato | Velocidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| diffusionstudio/sam2.1-large-video-onnx-fp16 | 1024×1024 | no disponible (repo de 0,5 GB en fp16) | ONNX fp16, 5 grafos | 4,5 s por fotograma en Apple M1 (8 nucleos, WebGPU) | apache-2.0 | HuggingFace, 0 descargas y 0 likes |
-| diffusionstudio/sam2.1-tiny-video-onnx-fp16 | 512×512 | no disponible | ONNX fp16 | 0,3 s por fotograma en Apple M1 (8 nucleos, WebGPU) | no disponible en la informacion | HuggingFace (referenciado por el autor) |
-| facebook/sam2.1-hiera-large | 1024×1024 | no disponible en la informacion | PyTorch (checkpoint original) | no disponible | apache-2.0 | HuggingFace, modelo base |
-| square-zero-labs/sam2.1-tiny-video-onnx | no disponible | no disponible | ONNX | no disponible | no disponible en la informacion | HuggingFace; solo se referencia como origen de la disposicion de grafos |
+| diffusionstudio/sam2.1-large-video-onnx-fp16 | 1024×1024 | no disponible (repo de 0,5 GB en fp16) | ONNX fp16, 5 grafos | 4,5 s por fotograma en Apple M1 (8 nucleos, WebGPU) | apache-2.0 | Hugging Face, 0 descargas y 0 likes |
+| diffusionstudio/sam2.1-tiny-video-onnx-fp16 | 512×512 | no disponible | ONNX fp16 | 0,3 s por fotograma en Apple M1 (8 nucleos, WebGPU) | no disponible en la informacion | Hugging Face (referenciado por el autor) |
+| facebook/sam2.1-hiera-large | 1024×1024 | no disponible en la informacion | PyTorch (checkpoint original) | no disponible | apache-2.0 | Hugging Face, modelo base |
+| square-zero-labs/sam2.1-tiny-video-onnx | no disponible | no disponible | ONNX | no disponible | no disponible en la informacion | Hugging Face; solo se referencia como origen de la disposicion de grafos |
 
 Los datos de parametros y rendimiento de las alternativas no estan incluidos en la informacion proporcionada, por lo que la comparacion se limita al formato, la resolucion de entrada, la licencia y la velocidad medida para las dos variantes de diffusionstudio.
 
@@ -94,7 +94,7 @@ Los datos de parametros y rendimiento de las alternativas no estan incluidos en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diffusionstudio/sam2.1-large-video-onnx-fp16
+- Repositorio en Hugging Face: https://huggingface.co/diffusionstudio/sam2.1-large-video-onnx-fp16
 - Modelo base: https://huggingface.co/facebook/sam2.1-hiera-large
 - Variante Hiera-Tiny de 512 de entrada del mismo autor: https://huggingface.co/diffusionstudio/sam2.1-tiny-video-onnx-fp16
 - Modelo de referencia para la disposicion de grafos: https://huggingface.co/square-zero-labs/sam2.1-tiny-video-onnx

@@ -77,7 +77,7 @@ No se dispone de benchmarks comparativos entre estas variantes. La principal dif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Demondiablo/parrotlet-a-2.5-pro-decoder-8bit
+- Hugging Face: https://huggingface.co/Demondiablo/parrotlet-a-2.5-pro-decoder-8bit
 - Variante 4-bit NF4: https://huggingface.co/Demondiablo/parrotlet-a-2.5-pro-decoder-4bit-nf4
 - Modelo base: https://huggingface.co/ekacare/parrotlet-a-2.5-pro
 - Licencia: https://developers.google.com/health-ai-developer-foundations/terms

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo ni de modelos alternativos equ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akash-Purbhi/fredphase2-qwen3-4b
+- Hugging Face: https://huggingface.co/Akash-Purbhi/fredphase2-qwen3-4b
 - GitHub del proyecto FRED: https://github.com/Akash-Purbhi/FRED
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset FinQA: https://huggingface.co/datasets/FinQA

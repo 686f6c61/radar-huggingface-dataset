@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dienhoc/management` alojado en HuggingFace no contiene una model card sustantiva ni información técnica publicada por su autor. El único dato disponible es la licencia declarada (Apache 2.0) y la región asociada (Estados Unidos). No se especifica arquitectura, tamaño, parámetros, contexto, idiomas ni capacidades. Los resultados de búsqueda web relacionados con "gestión e IA" no corresponden a este modelo, sino a artículos académicos y empresariales sobre el uso de inteligencia artificial en prácticas de gestión. Por tanto, no es posible determinar qué modelo es, qué problema resuelve ni por qué sería relevante. Se recomienda contactar al autor o esperar a que publique una documentación completa antes de considerar su uso.
+El repositorio `dienhoc/management` alojado en Hugging Face no contiene una model card sustantiva ni información técnica publicada por su autor. El único dato disponible es la licencia declarada (Apache 2.0) y la región asociada (Estados Unidos). No se especifica arquitectura, tamaño, parámetros, contexto, idiomas ni capacidades. Los resultados de búsqueda web relacionados con "gestión e IA" no corresponden a este modelo, sino a artículos académicos y empresariales sobre el uso de inteligencia artificial en prácticas de gestión. Por tanto, no es posible determinar qué modelo es, qué problema resuelve ni por qué sería relevante. Se recomienda contactar al autor o esperar a que publique una documentación completa antes de considerar su uso.
 
 ## Especificaciones tecnicas
 
@@ -54,5 +54,5 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dienhoc/management
+- Repositorio Hugging Face: https://huggingface.co/dienhoc/management
 - No se han encontrado papers, blogs, repositorios de código o demos asociados a este modelo.

@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de este artefacto, por lo que la comparaci
 
 | Alternativa | Naturaleza | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `skillsafe-ai/magika-standard-v3-3` (este repositorio) | Red neuronal sobre bytes en ONNX, redistribuida por SkillSafe | no disponible | 2048 bytes | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| `skillsafe-ai/magika-standard-v3-3` (este repositorio) | Red neuronal sobre bytes en ONNX, redistribuida por SkillSafe | no disponible | 2048 bytes | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Magika upstream (`google/magika`, standard_v3_3) | Mismo modelo en su fuente original, con herramienta CLI y libreria | no disponible | 2048 bytes | Apache-2.0 | Repositorio GitHub de Google |
 | `file` / libmagic | Deteccion por firmas y heuristicas, sin red neuronal | no aplica | no aplica | no disponible en la informacion proporcionada | Ampliamente distribuido en sistemas operativos |
 | Apache Tika | Deteccion por firmas, metadatos y parsers en Java | no aplica | no aplica | Apache-2.0 | Proyecto Apache |
@@ -111,7 +111,7 @@ No hay datos publicados que permitan comparar la precision de este artefacto fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/magika-standard-v3-3
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/magika-standard-v3-3
 - Fichero de pesos: https://huggingface.co/skillsafe-ai/magika-standard-v3-3/resolve/main/model.onnx
 - Fuente upstream del modelo (Google Magika, commit fijado): https://raw.githubusercontent.com/google/magika/3f2cb8537dce123587bfb3535a402145adcba2c7/assets/models/standard_v3_3/model.onnx
 - Repositorio de Magika: https://github.com/google/magika

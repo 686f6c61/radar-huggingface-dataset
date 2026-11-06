@@ -4,7 +4,7 @@
 
 `wxcdart/gemma4-e2b-unified-engine-f16` es un modelo multimodal de tipo *image-text-to-text* que acepta imágenes junto con texto y genera respuestas en texto. Se trata de un ajuste fino realizado por `wxcdart` a partir del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, que a su vez deriva de la familia Gemma 4 de Google. El modelo tiene 5.123.178.051 de parámetros y se distribuye en formato `safetensors` con precisión `float16` (f16), con un peso de repo de 10,3 GB.
 
-La relevancia de este modelo está en su certificación de uso conversacional y en su licencia Apache 2.0, que permite un uso comercial sin restricciones especiales. El proceso de ajuste fino se llevó a cabo con la biblioteca Unsloth y la librería TRL de HuggingFace, lo que, según el autor, permitió entrenar dos veces más rápido. Sin embargo, la información disponible no incluye datos sobre el conjunto de datos utilizado, la arquitectura concreta, la longitud de contexto ni evaluaciones publicadas, por lo que su rendimiento real depende de la validación externa por parte del usuario.
+La relevancia de este modelo está en su certificación de uso conversacional y en su licencia Apache 2.0, que permite un uso comercial sin restricciones especiales. El proceso de ajuste fino se llevó a cabo con la biblioteca Unsloth y la librería TRL de Hugging Face, lo que, según el autor, permitió entrenar dos veces más rápido. Sin embargo, la información disponible no incluye datos sobre el conjunto de datos utilizado, la arquitectura concreta, la longitud de contexto ni evaluaciones publicadas, por lo que su rendimiento real depende de la validación externa por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de este modelo está en su certificación de uso conversacional y 
 
 El modelo es un ajuste fino derivado de `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, que a su vez es una adaptación de un modelo Gemma 4 de Google. La información proporcionada no detalla si la arquitectura es un transformer puro, un modelo híbrido o si incorpora características específicas como atención lineal o decodificación especulativa. La única pista técnica es la etiqueta `image-text-to-text`, que indica una arquitectura multimodal capaz de procesar imágenes y texto como entrada.
 
-El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace. El README indica que el modelo fue entrenado "2x faster" gracias a estas herramientas. No se especifica el número de tokens, la composición del dataset, ni si hubo procesos RLHF, DPO o SFT más allá del ajuste fino enunciado. No hay información sobre innovaciones técnicas en el diseño del modelo final; las optimizaciones se limitan al proceso de entrenamiento.
+El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face. El README indica que el modelo fue entrenado "2x faster" gracias a estas herramientas. No se especifica el número de tokens, la composición del dataset, ni si hubo procesos RLHF, DPO o SFT más allá del ajuste fino enunciado. No hay información sobre innovaciones técnicas en el diseño del modelo final; las optimizaciones se limitan al proceso de entrenamiento.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No se dispone de datos comparativos fiables en la informacion proporcionada. El 
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo: https://huggingface.co/wxcdart/gemma4-e2b-unified-engine-f16
+- Repositorio de Hugging Face del modelo: https://huggingface.co/wxcdart/gemma4-e2b-unified-engine-f16
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Página del modelo original de Google: https://huggingface.co/google/gemma-4-E2B
 - Referencia de Unsloth: https://github.com/unslothai/unsloth

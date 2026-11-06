@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `intura-ai/kyc-ktp-id`, publicado por el usuario `intura-ai` en HuggingFace, está etiquetado con `onnx` y licencia Apache 2.0. Por su nombre, parece orientado a tareas de verificación de identidad (KYC, *Know Your Customer*) sobre documentos de identidad indonesios (KTP, *Kartu Tanda Penduduk*), pero no se proporciona ninguna descripción técnica, arquitectura, pesos o documentación adicional en la model card.
+El modelo `intura-ai/kyc-ktp-id`, publicado por el usuario `intura-ai` en Hugging Face, está etiquetado con `onnx` y licencia Apache 2.0. Por su nombre, parece orientado a tareas de verificación de identidad (KYC, *Know Your Customer*) sobre documentos de identidad indonesios (KTP, *Kartu Tanda Penduduk*), pero no se proporciona ninguna descripción técnica, arquitectura, pesos o documentación adicional en la model card.
 
 El repositorio tiene un tamaño de 0.0 GB y registra cero descargas y cero likes, lo que sugiere que el modelo no ha sido publicado con contenido real o que los archivos no están accesibles. No existe información sobre parámetros, contexto, entrenamiento o capacidades. Toda la información disponible se limita a los metadatos básicos de la plataforma.
 
@@ -57,4 +57,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoria (K
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/intura-ai/kyc-ktp-id
+- Repositorio Hugging Face: https://huggingface.co/intura-ai/kyc-ktp-id

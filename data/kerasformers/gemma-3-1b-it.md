@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 ## Limitaciones y advertencias
 
 - Idioma: solo soporta ingles; no es adecuado para tareas en otros idiomas.
-- Licencia gated: el acceso a los pesos requiere aceptar los terminos de la licencia Gemma en HuggingFace; el uso comercial puede estar sujeto a restricciones.
+- Licencia gated: el acceso a los pesos requiere aceptar los terminos de la licencia Gemma en Hugging Face; el uso comercial puede estar sujeto a restricciones.
 - Riesgo de alucinaciones: como todo modelo de lenguaje, puede generar contenido falso o inventado, especialmente en contextos donde no tiene informacion suficiente.
 - Sin garantias de produccion: al ser una conversion de la comunidad, no hay soporte oficial de Google; se recomienda validar el comportamiento antes de usarlo en entornos criticos.
 - Informacion limitada: no se especifican parametros exactos, longitud de contexto ni detalles de entrenamiento, lo que dificulta evaluar sus limites reales.
@@ -72,8 +72,8 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kerasformers/gemma-3-1b-it
+- Repositorio en Hugging Face: https://huggingface.co/kerasformers/gemma-3-1b-it
 - Repositorio de GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de Gemma 3 en KerasFormers: https://imvision12.github.io/KerasFormers/gemma3/
 - Paper de Gemma 3 (arXiv): https://arxiv.org/abs/2503.19786
-- Modelo original en HuggingFace: https://huggingface.co/google/gemma-3-1b-it
+- Modelo original en Hugging Face: https://huggingface.co/google/gemma-3-1b-it

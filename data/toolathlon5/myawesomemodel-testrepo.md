@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario toolathlon5, etiquetado como un modelo de transformers con pipeline de extracción de características (feature-extraction) y licencia MIT. Sin embargo, el repositorio no contiene ningún archivo de pesos (tamaño 0.0 GB) y no se ha publicado ninguna información técnica concreta sobre arquitectura, número de parámetros o datos de entrenamiento. La model card incluida describe un modelo de lenguaje con capacidades de razonamiento mejoradas, pero sin especificar detalles verificables. Los resultados de búsqueda web muestran repositorios similares con la misma plantilla de model card, lo que sugiere que se trata de un repositorio de prueba o plantilla, no de un modelo real desplegable. Por tanto, esta ficha se basa en la información disponible, que es escasa y en gran parte no verificable.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario toolathlon5, etiquetado como un modelo de transformers con pipeline de extracción de características (feature-extraction) y licencia MIT. Sin embargo, el repositorio no contiene ningún archivo de pesos (tamaño 0.0 GB) y no se ha publicado ninguna información técnica concreta sobre arquitectura, número de parámetros o datos de entrenamiento. La model card incluida describe un modelo de lenguaje con capacidades de razonamiento mejoradas, pero sin especificar detalles verificables. Los resultados de búsqueda web muestran repositorios similares con la misma plantilla de model card, lo que sugiere que se trata de un repositorio de prueba o plantilla, no de un modelo real desplegable. Por tanto, esta ficha se basa en la información disponible, que es escasa y en gran parte no verificable.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura del modelo. Los tags de HuggingFace indican "bert" y "feature-extraction", lo que sugeriria un modelo basado en BERT para extraccion de caracteristicas, pero la model card describe un modelo de lenguaje con capacidades de razonamiento avanzado, lo que resulta contradictorio. No se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas como RLHF o DPO. La model card menciona "mejoras en razonamiento" y "reduccion de alucinaciones" tras un "upgrade", pero sin datos concretos. El repositorio no contiene pesos ni configuracion, por lo que no es posible verificar ninguna afirmacion.
+No se dispone de informacion verificable sobre la arquitectura del modelo. Los tags de Hugging Face indican "bert" y "feature-extraction", lo que sugeriria un modelo basado en BERT para extraccion de caracteristicas, pero la model card describe un modelo de lenguaje con capacidades de razonamiento avanzado, lo que resulta contradictorio. No se han publicado detalles sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas como RLHF o DPO. La model card menciona "mejoras en razonamiento" y "reduccion de alucinaciones" tras un "upgrade", pero sin datos concretos. El repositorio no contiene pesos ni configuracion, por lo que no es posible verificar ninguna afirmacion.
 
 ## Capacidades
 
@@ -47,14 +47,14 @@ No disponible. No se puede comparar con otros modelos al no existir informacion 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene pesos ni archivos de configuracion, por lo que el modelo no es descargable ni ejecutable.
-- La model card contiene afirmaciones no verificables y contradice los tags de HuggingFace (BERT vs. LLM de razonamiento).
+- La model card contiene afirmaciones no verificables y contradice los tags de Hugging Face (BERT vs. LLM de razonamiento).
 - No se dispone de informacion sobre sesgos, riesgos de alucinacion o limitaciones de contexto.
 - La licencia MIT permite uso comercial, pero al no existir el modelo, esta licencia es irrelevante en la practica.
 - Se recomienda no utilizar este repositorio como referencia para proyectos reales.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/toolathlon5/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/toolathlon5/MyAwesomeModel-TestRepo
 - Repositorio similar (toolathlon-eval-05): https://huggingface.co/toolathlon-eval-05/MyAwesomeModel-TestRepo
 - Repositorio similar (ptsolmyr): https://huggingface.co/ptsolmyr/MyAwesomeModel-TestRepo
 - OpenModelMap (ficha con datos no verificados): https://openmodelmap.com/model/ToolathlonBot/MyAwesomeModel-TestRepo

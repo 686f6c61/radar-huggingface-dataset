@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tipo | Visión | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vera-large-2o | 25,6 B | no disponible | Decisión no autorregresiva (System 1) | Sí | Apache 2.0 | HuggingFace (scar-ai) |
-| vera-large | no disponible | no disponible | Decisión no autorregresiva (System 1) | No | no disponible | HuggingFace (scar-ai) |
-| Qwen3.8-27B (modelo base) | ~27 B (según nombre) | no disponible | LLM generativo | No (el base) | no disponible | HuggingFace (Qwen) |
+| vera-large-2o | 25,6 B | no disponible | Decisión no autorregresiva (System 1) | Sí | Apache 2.0 | Hugging Face (scar-ai) |
+| vera-large | no disponible | no disponible | Decisión no autorregresiva (System 1) | No | no disponible | Hugging Face (scar-ai) |
+| Qwen3.8-27B (modelo base) | ~27 B (según nombre) | no disponible | LLM generativo | No (el base) | no disponible | Hugging Face (Qwen) |
 
 La comparación con LLM generativos de tamaño similar no es directa: vera-large-2o no genera texto y está optimizado para responder preguntas tipadas con probabilidades calibradas, mientras que un LLM convencional produce lenguaje libre que requiere parseo y presenta riesgo de alucinación. No se dispone de datos de rendimiento comparativo.
 
@@ -86,7 +86,7 @@ La comparación con LLM generativos de tamaño similar no es directa: vera-large
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scar-ai/vera-large-2o
+- Modelo en Hugging Face: https://huggingface.co/scar-ai/vera-large-2o
 - Versión anterior (vera-large): https://huggingface.co/scar-ai/vera-large
 - Sección de uso con transformers de vera-large: https://huggingface.co/scar-ai/vera-large#use-with-transformers
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

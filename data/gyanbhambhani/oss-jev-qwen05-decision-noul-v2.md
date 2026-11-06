@@ -2,7 +2,7 @@
 
 ## Resumen
 
-oss-jev-qwen05-decision-noul-v2 es un ajuste fino (fine-tuning) de tipo conversacional publicado por el usuario gyanbhambhani en HuggingFace. Se trata de un modelo derivado de gyanbhambhani/oss-jev-qwen05-decision-noul-bin, que a su vez pertenece a la familia Qwen2 segun la etiqueta de arquitectura declarada. Con 494.034.562 parametros (aproximadamente 494 M) y un repositorio de 1,0 GB, se situa en la categoria de modelos pequenos, disenados para inferencia ligera y despliegue en hardware modesto.
+oss-jev-qwen05-decision-noul-v2 es un ajuste fino (fine-tuning) de tipo conversacional publicado por el usuario gyanbhambhani en Hugging Face. Se trata de un modelo derivado de gyanbhambhani/oss-jev-qwen05-decision-noul-bin, que a su vez pertenece a la familia Qwen2 segun la etiqueta de arquitectura declarada. Con 494.034.562 parametros (aproximadamente 494 M) y un repositorio de 1,0 GB, se situa en la categoria de modelos pequenos, disenados para inferencia ligera y despliegue en hardware modesto.
 
 El modelo resuelve, en principio, tareas de generacion de texto conversacional, ya que su pipeline declarado es text-generation y cuenta con la etiqueta conversational. El sufijo "decision" en el nombre sugiere un ajuste orientado a tareas de decision o clasificacion conversacional, pero la model card no documenta el proposito concreto ni el conjunto de datos utilizado, por lo que esta orientacion no puede confirmarse con la informacion disponible.
 
@@ -33,7 +33,7 @@ Respecto al entrenamiento, la model card solo aporta los hiperparametros registr
 
 - Generacion de texto conversacional: el pipeline declarado es text-generation y el modelo incluye la etiqueta conversational, por lo que esta orientado a mantener diálogos de tipo chat.
 - Ajuste especifico sobre un modelo base binario: al derivar de oss-jev-qwen05-decision-noul-bin, hereda las capacidades del modelo base, aunque no se detallan cuales son.
-- Compatibilidad con text-generation-inference y endpoints: el repositorio incluye las etiquetas text-generation-inference y endpoints_compatible, lo que indica que puede servirse mediante la infraestructura de HuggingFace y mediante TGI.
+- Compatibilidad con text-generation-inference y endpoints: el repositorio incluye las etiquetas text-generation-inference y endpoints_compatible, lo que indica que puede servirse mediante la infraestructura de Hugging Face y mediante TGI.
 - Capacidades del modelo base Qwen2: al estar construido sobre la arquitectura Qwen2, es previsible que herede generacion de texto general, comprension lectora basica y cierta capacidad multilingue, si bien no hay confirmacion documentada en la informacion proporcionada.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -47,7 +47,7 @@ Respecto al entrenamiento, la model card solo aporta los hiperparametros registr
 - Generacion de respuestas cortas en sistemas embebidos: al caber en memoria de dispositivos con recursos limitados (CPU o GPU integrada), es apto para asistentes locales en aplicaciones de escritorio o dispositivos edge donde no hay conexion a un servidor.
 - Aumento de datos conversacionales: puede generar variaciones de dialogos sinteticos para ampliar conjuntos de datos de entrenamiento de otros modelos, dado su bajo coste de inferencia.
 - Evaluacion y comparacion de pipelines de fine-tuning: sirve como caso de referencia reproducible (semilla 42, 4000 pasos, AdamW) para comparar tecnicas de ajuste en modelos de la familia Qwen2 de 0,5 B.
-- Despliegue en HuggingFace Inference Endpoints: gracias a las etiquetas text-generation-inference y endpoints_compatible, puede publicarse como endpoint gestionado para aplicaciones que requieran una API de generacion de texto con coste por uso bajo.
+- Despliegue en Hugging Face Inference Endpoints: gracias a las etiquetas text-generation-inference y endpoints_compatible, puede publicarse como endpoint gestionado para aplicaciones que requieran una API de generacion de texto con coste por uso bajo.
 - Investigacion sobre alineacion y comportamiento conversacional: al ser un ajuste fino derivado de un modelo base no documentado, es util para estudiar como cambia el comportamiento de un Qwen2-0.5B tras un ajuste especifico, siempre que se documenten los datos empleados.
 
 ## Benchmarks y rendimiento
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; una RTX 3060, RTX 4060 o superior ofrece margen amplio. Tambien funciona en GPUs de datacenter como A100 o H100, aunque estan sobredimensionadas para este tamano.
 - Compatibilidad con GPU consumer: si, cabe holgadamente en cualquier GPU consumer con al menos 4 GB de VRAM, e incluso en GPUs integradas con memoria compartida.
 - Ejecucion en CPU: viable en FP32/BF16 para uso interactivo no critico, dado el reducido numero de parametros.
-- Opciones de despliegue: transformers (libreria nativa), text-generation-inference (TGI, segun las etiquetas del repositorio), HuggingFace Inference Endpoints, vLLM (compatible con arquitecturas Qwen2), llama.cpp/Ollama (requeriria conversion a GGUF, no publicada oficialmente).
+- Opciones de despliegue: transformers (libreria nativa), text-generation-inference (TGI, segun las etiquetas del repositorio), Hugging Face Inference Endpoints, vLLM (compatible con arquitecturas Qwen2), llama.cpp/Ollama (requeriria conversion a GGUF, no publicada oficialmente).
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de latencia ni de tokens por segundo en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ Los datos de los modelos de referencia provienen de informacion publica de sus r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oss-jev-qwen05-decision-noul-v2 | 494.034.562 | no disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| oss-jev-qwen05-decision-noul-v2 | 494.034.562 | no disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Qwen2-0.5B (referencia publica) | 494 M aprox. | 32 768 tokens | Apache-2.0 | Ampliamente distribuido, con versiones GGUF y AWQ |
 | Qwen2.5-0.5B (referencia publica) | 494 M aprox. | 32 768 tokens | Apache-2.0 | Ampliamente distribuido, con versiones cuantizadas |
 | SmolLM2-360M (referencia publica) | 362 M | 8 192 tokens | Apache-2.0 | Ampliamente distribuido, con versiones GGUF |
@@ -92,6 +92,6 @@ La comparacion relevante es que este modelo parte, segun la etiqueta de arquitec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gyanbhambhani/oss-jev-qwen05-decision-noul-v2
+- Modelo en Hugging Face: https://huggingface.co/gyanbhambhani/oss-jev-qwen05-decision-noul-v2
 - Modelo base: https://huggingface.co/gyanbhambhani/oss-jev-qwen05-decision-noul-bin
 - Papers, blogs o repositorios adicionales: no disponible en la informacion proporcionada.

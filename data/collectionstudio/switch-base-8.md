@@ -89,7 +89,7 @@ No se dispone de datos cuantitativos suficientes para una comparativa de rendimi
 
 ## Enlaces
 
-- [HuggingFace: CollectionStudio/switch-base-8](https://huggingface.co/CollectionStudio/switch-base-8)
+- [Hugging Face: CollectionStudio/switch-base-8](https://huggingface.co/CollectionStudio/switch-base-8)
 - [Checkpoint original citado: google/switch-base-8](https://huggingface.co/google/switch-base-8)
 - [Paper de Switch Transformers](https://arxiv.org/pdf/2101.03961.pdf)
 - [Paper de T5](https://arxiv.org/abs/1910.09700)

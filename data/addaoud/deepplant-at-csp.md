@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepPlant-AT-CSP es un modelo de aprendizaje profundo orientado a genomica regulatoria vegetal, publicado en HuggingFace por el usuario Addaoud bajo licencia MIT. A diferencia de los modelos de lenguaje generativos, se trata de un modelo especializado en bioinformatica: sus etiquetas (`bioinformatics`, `plant-genomics`, `regulatory-genomics`) y su pipeline (`other`) indican que su proposito es el analisis de secuencias genomicas de plantas, presumiblemente en tareas relacionadas con regiones regulatorias, promotores o sitios de union de factores de transcripcion (la nomenclatura "AT-CSP" sugiere algun tipo de clasificacion o prediccion especifica de secuencia).
+DeepPlant-AT-CSP es un modelo de aprendizaje profundo orientado a genomica regulatoria vegetal, publicado en Hugging Face por el usuario Addaoud bajo licencia MIT. A diferencia de los modelos de lenguaje generativos, se trata de un modelo especializado en bioinformatica: sus etiquetas (`bioinformatics`, `plant-genomics`, `regulatory-genomics`) y su pipeline (`other`) indican que su proposito es el analisis de secuencias genomicas de plantas, presumiblemente en tareas relacionadas con regiones regulatorias, promotores o sitios de union de factores de transcripcion (la nomenclatura "AT-CSP" sugiere algun tipo de clasificacion o prediccion especifica de secuencia).
 
-El modelo cuenta con 248.486.163 parametros (aproximadamente 248 millones) almacenados en formato safetensors, con un tamano de repositorio de 1.0 GB. Se ha subido mediante la integracion `PyTorchModelHubMixin` de HuggingFace Hub, lo que facilita su carga programatica a traves de la libreria `huggingface_hub`. No obstante, la model card es extremadamente escasa: no incluye paper, documentacion, descripcion de la arquitectura, datos de entrenamiento ni resultados de evaluacion, y los enlaces de codigo apuntan a una URL generica de plantilla.
+El modelo cuenta con 248.486.163 parametros (aproximadamente 248 millones) almacenados en formato safetensors, con un tamano de repositorio de 1.0 GB. Se ha subido mediante la integracion `PyTorchModelHubMixin` de Hugging Face Hub, lo que facilita su carga programatica a traves de la libreria `huggingface_hub`. No obstante, la model card es extremadamente escasa: no incluye paper, documentacion, descripcion de la arquitectura, datos de entrenamiento ni resultados de evaluacion, y los enlaces de codigo apuntan a una URL generica de plantilla.
 
 Su relevancia actual es limitada pero especifica: cubre un nicho de bioinformatica vegetal donde los modelos publicos son escasos, y su licencia permisiva (MIT) facilita su reutilizacion en investigacion agronomica y genomica. Sin embargo, la ausencia de documentacion tecnica hace imposible validar su calidad o reproducir sus resultados sin acceso al codigo fuente original.
 
@@ -31,7 +31,7 @@ Respecto al entrenamiento, no hay datos publicados sobre el numero de tokens o p
 
 - Prediccion o clasificacion sobre secuencias genomicas de plantas, segun se deduce de las etiquetas `plant-genomics` y `regulatory-genomics`; la tarea exacta (por ejemplo, identificacion de sitios de union de factores de transcripcion, prediccion de promotores o clasificacion de regiones regulatorias) no esta documentada.
 - Procesamiento de datos biologicos de secuencia, no de texto natural: no es un modelo de lenguaje y no genera texto, codigo ni respuestas conversacionales.
-- Integracion con el ecosistema HuggingFace mediante `PyTorchModelHubMixin`, lo que permite carga programatica en Python.
+- Integracion con el ecosistema Hugging Face mediante `PyTorchModelHubMixin`, lo que permite carga programatica en Python.
 - No se ha documentado soporte de tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues.
 - No se ha documentado modo "thinking", vision, audio ni ninguna modalidad distinta de la secuencia genomica.
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Addaoud/DeepPlant-AT-CSP
+- Hugging Face: https://huggingface.co/Addaoud/DeepPlant-AT-CSP
 - Codigo (referencia en la model card, no verificada): https://huggingface.co/your-username/deepplant
 - Paper: no disponible
 - Documentacion: no disponible

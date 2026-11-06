@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace - shabieh2/marketsector_0827v3](https://huggingface.co/shabieh2/marketsector_0827v3)
+- [Hugging Face - shabieh2/marketsector_0827v3](https://huggingface.co/shabieh2/marketsector_0827v3)
 - [GitHub del autor](https://github.com/shabieh2/)
-- [Modelo base en HuggingFace](https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit) (referencia indirecta)
+- [Modelo base en Hugging Face](https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit) (referencia indirecta)

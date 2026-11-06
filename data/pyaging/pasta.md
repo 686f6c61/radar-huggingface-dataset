@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en la model card. Existe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/pasta
+- Modelo en Hugging Face: https://huggingface.co/pyaging/pasta
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Publicación original (preprint): Salignon, J. et al. Pasta, a versatile transcriptomic clock, maps the chemical and genetic determinants of aging and rejuvenation. bioRxiv 2025.06.04.657785 (2025). DOI: https://doi.org/10.1101/2025.06.04.657785

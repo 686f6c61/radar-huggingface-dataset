@@ -78,9 +78,9 @@ La comparativa más directa es con el modelo base `Qwen/Qwen2.5-3B-Instruct` y c
 
 | Modelo | Parámetros | Contexto | Licencia | Objetivo de entrenamiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32K (típico de Qwen2.5, no confirmado aquí) | Apache-2.0 | Instruct general (SFT + RLHF) | HuggingFace |
-| palm-qwen3b-sky-brev-seed1 (este) | 3B (×13) | no disponible | Apache-2.0 | Multiobjetivo (utilidad + brevedad) vía GRPO | HuggingFace |
-| palm-qwen3b-sky-brev-seed2 | 3B (×13) | no disponible | Apache-2.0 | Idéntico, semilla 2 | HuggingFace |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32K (típico de Qwen2.5, no confirmado aquí) | Apache-2.0 | Instruct general (SFT + RLHF) | Hugging Face |
+| palm-qwen3b-sky-brev-seed1 (este) | 3B (×13) | no disponible | Apache-2.0 | Multiobjetivo (utilidad + brevedad) vía GRPO | Hugging Face |
+| palm-qwen3b-sky-brev-seed2 | 3B (×13) | no disponible | Apache-2.0 | Idéntico, semilla 2 | Hugging Face |
 
 Otras alternativas serían fine-tunes de Qwen2.5-3B con objetivos únicos (p. ej., solo utilidad o solo brevedad), pero no se han encontrado en la información proporcionada.
 
@@ -96,7 +96,7 @@ Otras alternativas serían fine-tunes de Qwen2.5-3B con objetivos únicos (p. ej
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed1
+- Repositorio Hugging Face: https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed1
 - Repositorio hermano (seed2): https://huggingface.co/roozbehn99/palm-qwen3b-sky-brev-seed2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Código de entrenamiento (referenciado en la model card): LMPortfolio (fork de open-instruct de AI2) — no se proporciona URL directa.

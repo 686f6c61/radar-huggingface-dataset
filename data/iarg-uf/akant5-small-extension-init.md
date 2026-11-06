@@ -90,7 +90,7 @@ La comparación con alternativas de la misma categoría (adaptaciones de vocabul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-small-extension-init
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-small-extension-init
 - Checkpoint CPT asociado: https://huggingface.co/IARG-UF/akant5-small-extension
 - Colección AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base: https://huggingface.co/google/mt5-small

@@ -63,14 +63,14 @@ No se dispone de datos comparativos publicados para esta cuantizacion especifica
 
 - Al ser una cuantizacion de 4 bits, puede haber una perdida de precision en tareas complejas de razonamiento o generacion de codigo en comparacion con el modelo en BF16. Se recomienda evaluar en el caso de uso concreto.
 - No se ha verificado la calidad de la cuantizacion mediante benchmarks publicos; el autor afirma mejoras de perplexity, pero no hay datos independientes.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente probado por la comunidad. Usar en produccion requiere validacion previa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente probado por la comunidad. Usar en produccion requiere validacion previa.
 - La licencia MIT permite uso comercial, pero el modelo base Qwen3.8-27B puede tener su propia licencia (normalmente Apache 2.0 o similar); se debe verificar la compatibilidad de la licencia del modelo base con la cuantizacion.
 - No se especifican los idiomas soportados; aunque Qwen suele ser multilingue, la cuantizacion puede afectar al rendimiento en idiomas menos representados.
 - La longitud de contexto no se ha indicado; es probable que herede la del modelo base (tipicamente 32K o 128K tokens), pero no se confirma.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_KT-SPECIAL_SPLIT
+- Modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ4_KT-SPECIAL_SPLIT
 - Modelo relacionado (BF16): https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Perfil de Thireus en GitHub: https://github.com/Thireus

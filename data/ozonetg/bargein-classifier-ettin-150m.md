@@ -79,9 +79,9 @@ Latencia declarada, batch 1 y de extremo a extremo: 7,0 ms en GPU y 38 ms en CPU
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ozonetg/bargein-classifier-ettin-150m | 149,6 M | no disponible | 95,3% / 93,4% en tipos de negocio no vistos; 89,8% en OOD-10k; 38 ms en CPU | MIT | HuggingFace, ONNX, transformers.js |
-| ozonetg/bargein-classifier-ettin-400m | no disponible (el nombre sugiere unos 400 M) | no disponible | Mas robusto ante cambio de distribucion; 8,5 ms en GPU; empata con el 150 M en tipos de negocio no vistos y llamadas reales | MIT (no confirmado en la informacion disponible) | HuggingFace |
-| bnovikov/bargein-classifier | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ozonetg/bargein-classifier-ettin-150m | 149,6 M | no disponible | 95,3% / 93,4% en tipos de negocio no vistos; 89,8% en OOD-10k; 38 ms en CPU | MIT | Hugging Face, ONNX, transformers.js |
+| ozonetg/bargein-classifier-ettin-400m | no disponible (el nombre sugiere unos 400 M) | no disponible | Mas robusto ante cambio de distribucion; 8,5 ms en GPU; empata con el 150 M en tipos de negocio no vistos y llamadas reales | MIT (no confirmado en la informacion disponible) | Hugging Face |
+| bnovikov/bargein-classifier | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Heuristicas de VAD o palabras clave | no aplica | no aplica | Fallan en ambas direcciones segun el propio autor: paran ante relleno o ignoran turnos reales | no aplica | Integrado en la mayoria de plataformas de telefonia |
 
 La informacion proporcionada no incluye benchmarks de otros clasificadores de barge-in de terceros, por lo que no es posible una comparacion cuantitativa con alternativas externas.
@@ -100,7 +100,7 @@ La informacion proporcionada no incluye benchmarks de otros clasificadores de ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/bargein-classifier-ettin-150m
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/bargein-classifier-ettin-150m
 - Modelo hermano de 400 M: https://huggingface.co/ozonetg/bargein-classifier-ettin-400m
 - Demo en vivo (Space): https://huggingface.co/spaces/ozonetg/bargein-classifier-demo
 - Coleccion voice-agent-barge-in-classifier: https://huggingface.co/collections/ozonetg/voice-agent-barge-in-classifier-6ac6e3d41659b866508ea3f0

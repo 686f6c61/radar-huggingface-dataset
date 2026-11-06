@@ -72,8 +72,8 @@ No se dispone de información suficiente para una comparativa directa. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rjz123/colar-r1-hardmath
+- Hugging Face: https://huggingface.co/rjz123/colar-r1-hardmath
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper HARDMath (OpenReview): https://openreview.net/attachment?id=nDTvP6tBMd&name=pdf
-- Paper HARDMath (HuggingFace): https://huggingface.co/papers/2410.09988
+- Paper HARDMath (Hugging Face): https://huggingface.co/papers/2410.09988
 - arXiv HARDMath: https://arxiv.org/abs/2410.09988

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`fire-smoke-detect-ft` es un modelo publicado en HuggingFace por el usuario `bion-cv-group7`, presumiblemente vinculado a un trabajo academico de vision por computador (el prefijo "bion" y la nomenclatura "group7" sugieren un contexto universitario o de curso). El nombre del repositorio indica que se trata de un modelo afinado (fine-tuned, "ft") para la deteccion de fuego y humo, una tarea clasica de deteccion de objetos orientada a sistemas de alerta temprana de incendios.
+`fire-smoke-detect-ft` es un modelo publicado en Hugging Face por el usuario `bion-cv-group7`, presumiblemente vinculado a un trabajo academico de vision por computador (el prefijo "bion" y la nomenclatura "group7" sugieren un contexto universitario o de curso). El nombre del repositorio indica que se trata de un modelo afinado (fine-tuned, "ft") para la deteccion de fuego y humo, una tarea clasica de deteccion de objetos orientada a sistemas de alerta temprana de incendios.
 
-La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion. No se especifica el modelo base sobre el que se ha realizado el ajuste fino, ni el formato de pesos, ni el pipeline de HuggingFace asociado. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+La model card publicada es practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura, sin datos de entrenamiento ni resultados de evaluacion. No se especifica el modelo base sobre el que se ha realizado el ajuste fino, ni el formato de pesos, ni el pipeline de Hugging Face asociado. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 Por tanto, esta ficha se limita a documentar los pocos datos verificables disponibles y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion de rendimiento, capacidades o idoneidad para produccion requeriria acceso a los pesos y a documentacion adicional que no existe en el repositorio.
 
@@ -72,5 +72,5 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bion-cv-group7/fire-smoke-detect-ft
+- Hugging Face: https://huggingface.co/bion-cv-group7/fire-smoke-detect-ft
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

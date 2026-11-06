@@ -63,5 +63,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft-seed5)
+- [Hugging Face - longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft-seed5)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

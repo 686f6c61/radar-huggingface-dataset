@@ -95,7 +95,7 @@ La principal diferencia entre el checkpoint SAO y el de baseline grupal es el m√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-35B-A3B-SAO
+- Modelo en Hugging Face: https://huggingface.co/Minbyul/AgentMercury-Qwen3.5-35B-A3B-SAO
 - Colecci√≥n AgentMercury: https://huggingface.co/collections/Minbyul/agentmercury
 - Modelo base Qwen3.5-35B-A3B: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Paper SAO (arXiv:2607.07508): https://arxiv.org/abs/2607.07508

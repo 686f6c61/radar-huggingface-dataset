@@ -60,17 +60,17 @@ La validacion se realizo sobre 256 prompts held-out, con K=6, temperatura 1.0 y 
 
 - VRAM estimada: los pesos en bfloat16 ocupan aproximadamente 3.55 GB. Con activaciones y KV cache para `max_model_len=1536` y un batch pequeno, la VRAM total se situa en torno a 4-6 GB.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM, como RTX 3060 12GB, RTX 4060 Ti 16GB, A10G, A100 o H100. El modelo cabe en GPUs de consumo.
-- Opciones de despliegue: vLLM (usado en el ejemplo oficial), HuggingFace Transformers, y potencialmente llama.cpp u Ollama si se convierten los pesos a GGUF (no se ha publicado dicha conversion).
+- Opciones de despliegue: vLLM (usado en el ejemplo oficial), Hugging Face Transformers, y potencialmente llama.cpp u Ollama si se convierten los pesos a GGUF (no se ha publicado dicha conversion).
 - Latencia y throughput: no disponible. El ejemplo de vLLM usa `n=6` rollouts por prompt con `temperature=1.0` y `max_tokens=1024`, lo que sugiere un uso orientado a evaluacion masiva.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sqabf-grpo-entropy-step1100 | 1.777B | no disponible | Apache-2.0 | HuggingFace |
-| Qwen2.5-Math-1.5B (base) | 1.777B | no disponible | Apache-2.0 | HuggingFace |
-| sandeep123/sqa-grpo-entropy-step1100 | 1.777B | no disponible | Apache-2.0 | HuggingFace |
-| sandeep123/math-grpo-entropy-step1100 | 1.777B | no disponible | Apache-2.0 | HuggingFace |
+| sqabf-grpo-entropy-step1100 | 1.777B | no disponible | Apache-2.0 | Hugging Face |
+| Qwen2.5-Math-1.5B (base) | 1.777B | no disponible | Apache-2.0 | Hugging Face |
+| sandeep123/sqa-grpo-entropy-step1100 | 1.777B | no disponible | Apache-2.0 | Hugging Face |
+| sandeep123/math-grpo-entropy-step1100 | 1.777B | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks publicados para los modelos comparados. Los tres checkpoints de sandeep123 son variantes del mismo experimento con diferentes configuraciones o datasets, pero no se han publicado metricas de validacion para los otros dos en la informacion disponible.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks publicados para los modelos comparados. Los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/sqabf-grpo-entropy-step1100
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/sqabf-grpo-entropy-step1100
 - Checkpoint relacionado: https://huggingface.co/sandeep123/sqa-grpo-entropy-step1100
 - Checkpoint relacionado: https://huggingface.co/sandeep123/math-grpo-entropy-step1100
 

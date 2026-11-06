@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `elprofessor67/om-logistics-pod-v4` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-VL-32B-Instruct`, desarrollado por el autor `elprofessor67` y publicado en HuggingFace el 16 de agosto de 2026. Se trata de un modelo de tipo imagen-texto-a-texto (image-text-to-text), diseñado para tareas que combinan comprensión visual y generación de lenguaje, con un enfoque aparente en el dominio de la logística, como sugiere el nombre "om-logistics-pod". El modelo está licenciado bajo Apache-2.0 y utiliza la librería Transformers.
+El modelo `elprofessor67/om-logistics-pod-v4` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-VL-32B-Instruct`, desarrollado por el autor `elprofessor67` y publicado en Hugging Face el 16 de agosto de 2026. Se trata de un modelo de tipo imagen-texto-a-texto (image-text-to-text), diseñado para tareas que combinan comprensión visual y generación de lenguaje, con un enfoque aparente en el dominio de la logística, como sugiere el nombre "om-logistics-pod". El modelo está licenciado bajo Apache-2.0 y utiliza la librería Transformers.
 
 La relevancia de este modelo radica en que parte de una arquitectura ya consolidada (Qwen3-VL de 32B parámetros) y la adapta mediante fine-tune a un dominio específico, probablemente para el análisis de documentos logísticos, reconocimiento de comprobantes de entrega (POD, proof of delivery) u otras tareas visuales del sector. Sin embargo, la información pública disponible es muy escasa: no se detallan los datos de entrenamiento, el proceso de ajuste ni las capacidades específicas adquiridas, por lo que gran parte de las especificaciones técnicas deben considerarse no disponibles o inferidas del modelo base.
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamaño de 48,8 GB, lo que sugiere pesos en precisión c
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/Qwen3-VL-32B-Instruct`, que a su vez es una version optimizada del modelo Qwen3-VL de 32B parámetros. Qwen3-VL es una arquitectura multimodal de tipo transformer que procesa tanto texto como imagenes, con un encoder visual y un decoder de lenguaje. El fine-tune se realizó utilizando la libreria Unsloth (que acelera el entrenamiento) junto con la libreria TRL de HuggingFace, como se indica en la model card.
+El modelo es un fine-tune de `unsloth/Qwen3-VL-32B-Instruct`, que a su vez es una version optimizada del modelo Qwen3-VL de 32B parámetros. Qwen3-VL es una arquitectura multimodal de tipo transformer que procesa tanto texto como imagenes, con un encoder visual y un decoder de lenguaje. El fine-tune se realizó utilizando la libreria Unsloth (que acelera el entrenamiento) junto con la libreria TRL de Hugging Face, como se indica en la model card.
 
 No se proporcionan detalles sobre el proceso de entrenamiento: no se especifica si se usó LoRA, QLoRA o un fine-tune completo, ni la composicion del dataset, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se mencionan innovaciones tecnicas especificas del fine-tune. Por tanto, toda informacion sobre el entrenamiento mas alla de lo indicado en la model card debe considerarse no disponible.
 
@@ -75,6 +75,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/elprofessor67/om-logistics-pod-v4
+- Repositorio Hugging Face: https://huggingface.co/elprofessor67/om-logistics-pod-v4
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-32B-Instruct
 - Libreria Unsloth: https://github.com/unslothai/unsloth

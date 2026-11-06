@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo entrenado, por lo que no existe 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/songyuchen/study-contrastive-learning
+- Repositorio Hugging Face: https://huggingface.co/songyuchen/study-contrastive-learning
 - Survey de aprendizaje contrastivo (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Visualizing and Understanding Contrastive Learning (arXiv): https://arxiv.org/html/2206.09753v3
 - Tutorial de aprendizaje contrastivo (DataCamp): https://www.datacamp.com/tutorial/contrastive-learning

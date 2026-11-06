@@ -85,6 +85,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EvenSina/connectailab-rl-evensina-v1-link01-ppo
-- Repositorio del autor en HuggingFace: https://huggingface.co/EvenSina
+- Modelo en Hugging Face: https://huggingface.co/EvenSina/connectailab-rl-evensina-v1-link01-ppo
+- Repositorio del autor en Hugging Face: https://huggingface.co/EvenSina
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos distintos de los archivos incluidos en el propio repositorio (`control_robot.py`, `walk_replay.mp4`, `squat_jump_replay.mp4`, `learning_curve.png`, `connectailab.json`).

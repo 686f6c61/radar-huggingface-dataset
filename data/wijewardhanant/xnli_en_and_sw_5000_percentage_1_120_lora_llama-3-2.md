@@ -68,17 +68,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM en cuantizacion de 4 bits: aproximadamente 2-3 GB para pesos, con margen adicional para activaciones y cache KV.
 - GPU consumer: si, cabe en tarjetas con 8 GB o mas (RTX 3060 Ti, RTX 4060 Ti, RTX 3070) en cuantizacion de 4 bits, y en 12-16 GB (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080) en fp16 con contexto reducido.
 - GPU profesional: A100 40/80 GB, H100, L40S; utiles para procesar lotes grandes o servir el modelo con contexto completo, aunque estan sobredimensionadas para un modelo de 3B.
-- Opciones de despliegue: `transformers` + `peft` para cargar el adaptador sobre el modelo base; vLLM con soporte de adaptadores LoRA para servicio con concurrencia; TGI con adaptadores; llama.cpp y Ollama tras fusionar el adaptador con el modelo base y convertir a GGUF; `text-generation-inference` y endpoints gestionados de HuggingFace.
+- Opciones de despliegue: `transformers` + `peft` para cargar el adaptador sobre el modelo base; vLLM con soporte de adaptadores LoRA para servicio con concurrencia; TGI con adaptadores; llama.cpp y Ollama tras fusionar el adaptador con el modelo base y convertir a GGUF; `text-generation-inference` y endpoints gestionados de Hugging Face.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones y dependen por completo del hardware, la cuantizacion y la longitud de secuencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (LoRA sobre Llama-3.2-3B) | Adaptador sobre 3,21 B | No disponible (base: 128 000 tokens) | LoRA PEFT | No disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B (modelo base) | 3,21 B | 128 000 tokens (documentacion de Meta) | Transformer decoder-only | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| XLM-RoBERTa-large afinado en XNLI | ~560 M | 512 tokens | Transformer encoder | MIT (XLM-R) | HuggingFace, multiples checkpoints |
-| AfroXLMR-large afinado en XNLI | ~560 M | 512 tokens | Transformer encoder | Apache 2.0 (AfroXLMR) | HuggingFace, orientado a lenguas africanas |
+| Este adaptador (LoRA sobre Llama-3.2-3B) | Adaptador sobre 3,21 B | No disponible (base: 128 000 tokens) | LoRA PEFT | No disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B (modelo base) | 3,21 B | 128 000 tokens (documentacion de Meta) | Transformer decoder-only | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| XLM-RoBERTa-large afinado en XNLI | ~560 M | 512 tokens | Transformer encoder | MIT (XLM-R) | Hugging Face, multiples checkpoints |
+| AfroXLMR-large afinado en XNLI | ~560 M | 512 tokens | Transformer encoder | Apache 2.0 (AfroXLMR) | Hugging Face, orientado a lenguas africanas |
 
 Los datos de rendimiento de estos modelos en XNLI no se incluyen aqui porque no forman parte de la informacion proporcionada sobre este adaptador; no se dispone de una comparacion medida. La diferencia estructural relevante es que los clasificadores encoder de ~560 M estan especializados en NLI y son mas baratos de servir, mientras que este adaptador parte de un modelo generativo de 3,21 B, mas costoso pero potencialmente reutilizable para otras tareas si se confirma su comportamiento.
 
@@ -97,7 +97,7 @@ Los datos de rendimiento de estos modelos en XNLI no se incluyen aqui porque no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_LoRA_llama-3.2
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_120_LoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en la model card (calculador de impacto de carbono): https://mlco2.github.io/impact y https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019)

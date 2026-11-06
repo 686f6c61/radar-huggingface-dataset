@@ -4,7 +4,7 @@
 
 El modelo `ram-lexsi/agenttune-testrun-graph-memory` es un adaptador LoRA (Low-Rank Adaptation) generado mediante la herramienta AgentTune, un framework que unifica flujos agénticos con entrenamiento, evaluación, destilación y auto-reparación a través de un esquema común de trayectorias. El adaptador se construye sobre el modelo base `HuggingFaceTB/SmolLM2-360M-Instruct`, un modelo de lenguaje instructivo de tamaño reducido, y se entrena con el algoritmo GRPO (Group Relative Policy Optimization) utilizando el backend TRL. El nombre del repositorio indica que se trata de una ejecución de prueba (testrun) orientada a la memoria de grafos, lo que sugiere un experimento para evaluar la retención de información estructurada en tareas agénticas.
 
-El modelo se publica en HuggingFace como un artefacto de tipo adapter, con formato de pesos safetensors, y está pensado para cargarse mediante PEFT sobre el modelo base. No se proporcionan datos sobre la licencia, los idiomas soportados ni la longitud de contexto, y el repositorio no registra descargas ni likes, lo que apunta a un experimento interno de Lexsi Labs. Su relevancia radica en servir como caso de prueba para el pipeline de AgentTune y para la validación de métodos de RL como GRPO en modelos pequeños.
+El modelo se publica en Hugging Face como un artefacto de tipo adapter, con formato de pesos safetensors, y está pensado para cargarse mediante PEFT sobre el modelo base. No se proporcionan datos sobre la licencia, los idiomas soportados ni la longitud de contexto, y el repositorio no registra descargas ni likes, lo que apunta a un experimento interno de Lexsi Labs. Su relevancia radica en servir como caso de prueba para el pipeline de AgentTune y para la validación de métodos de RL como GRPO en modelos pequeños.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No disponible. No se han publicado comparativas con otros modelos en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ram-lexsi/agenttune-testrun-graph-memory
+- Hugging Face: https://huggingface.co/ram-lexsi/agenttune-testrun-graph-memory
 - Repositorio de AgentTune: https://github.com/Lexsi-Labs/AgentTune_mirror
 - Web de Lexsi Labs: https://lexsi.ai/
 - Comunidad de Lexsi (Discord): https://discord.com/invite/dtEDQ2Z3eg

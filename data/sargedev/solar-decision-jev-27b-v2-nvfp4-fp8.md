@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros fabri
 
 ## Enlaces
 
-- [HuggingFace: SargeDev/Solar-Decision-JEV-27B-V2-NVFP4-FP8](https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V2-NVFP4-FP8)
+- [Hugging Face: SargeDev/Solar-Decision-JEV-27B-V2-NVFP4-FP8](https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V2-NVFP4-FP8)
 - [Modelo base: SargeDev/Solar-Decision-JEV-27B-V2](https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V2)
 - [Dataset: SargeDev/jev-distill-corpus-v3](https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3)
 - [Dataset: SargeDev/solar-decisions-corpus-v4](https://huggingface.co/datasets/SargeDev/solar-decisions-corpus-v4)

@@ -91,7 +91,7 @@ No se dispone de una comparativa directa con otros modelos en la informacion pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HanyueShen/mhist-vote-count-deit-s16
+- Repositorio Hugging Face: https://huggingface.co/HanyueShen/mhist-vote-count-deit-s16
 - Dataset MHIST (pagina oficial): https://bmirds.github.io/MHIST/
 - Repositorio oficial DeiT (Facebook Research): https://github.com/facebookresearch/deit
 - Archivo de modelos DeiT (referencia de implementacion): https://github.com/facebookresearch/deit/blob/main/models.py

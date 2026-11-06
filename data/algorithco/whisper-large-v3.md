@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo: https://huggingface.co/algorithco/whisper-large-v3
+- Repositorio de Hugging Face del modelo: https://huggingface.co/algorithco/whisper-large-v3
 - Repositorio oficial de referencia citado en la model card: https://huggingface.co/openai/whisper-large-v3
 - Modelo predecesor citado: https://huggingface.co/openai/whisper-large-v2
 - Modelo base arquitectonico citado: https://huggingface.co/openai/whisper-large

@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (transcoder sobre gemma-2-2b) | 4,58 mil millones en total (base más rama) | 8.192 tokens (heredado, no confirmado en la tarjeta) | Adaptador disperso de interpretabilidad sobre modelo congelado | No disponible | 0 descargas y 0 likes en HuggingFace; requiere el código del repositorio |
-| google/gemma-2-2b | ~2,6 mil millones | 8.192 tokens | Modelo base decoder-only | Términos de uso de Gemma | Público en HuggingFace |
-| google/gemma-2-2b-it | ~2,6 mil millones | 8.192 tokens | Modelo instruct ajustado | Términos de uso de Gemma | Público en HuggingFace |
+| Este adaptador (transcoder sobre gemma-2-2b) | 4,58 mil millones en total (base más rama) | 8.192 tokens (heredado, no confirmado en la tarjeta) | Adaptador disperso de interpretabilidad sobre modelo congelado | No disponible | 0 descargas y 0 likes en Hugging Face; requiere el código del repositorio |
+| google/gemma-2-2b | ~2,6 mil millones | 8.192 tokens | Modelo base decoder-only | Términos de uso de Gemma | Público en Hugging Face |
+| google/gemma-2-2b-it | ~2,6 mil millones | 8.192 tokens | Modelo instruct ajustado | Términos de uso de Gemma | Público en Hugging Face |
 
 No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas de la misma categoría (por ejemplo, otros adaptadores de interpretabilidad o *sparse autoencoders* sobre Gemma 2). Las cifras de parámetros y contexto de las dos filas de Gemma 2 corresponden a los modelos base citados en la propia model card, no a mediciones realizadas sobre este checkpoint.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_huge_tc16384_decb_l1w0.0003_norm_sch_tarbb_lb2.0_ln1.0_dr500000_sl15995284
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_huge_tc16384_decb_l1w0.0003_norm_sch_tarbb_lb2.0_ln1.0_dr500000_sl15995284
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia: https://huggingface.co/google/gemma-2-2b-it
 - Tokenizer: https://huggingface.co/google/gemma-2-2b-it

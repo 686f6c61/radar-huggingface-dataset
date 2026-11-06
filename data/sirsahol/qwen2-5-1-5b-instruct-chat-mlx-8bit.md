@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-8bit es una conversión de pesos, no un modelo nuevo: se trata de Qwen/Qwen2.5-1.5B-Instruct convertido al formato MLX de Apple con cuantización de 8 bits. El autor es el usuario de HuggingFace SirSahOl, que lo distribuye mediante su pipeline MLX Foundry. No hay entrenamiento adicional, ajuste fino ni cambio de arquitectura: lo único que varía respecto al original es el formato y la precisión numérica de los pesos, orientados a ejecución en Apple Silicon (M1 o posterior) con la librería MLX.
+SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-8bit es una conversión de pesos, no un modelo nuevo: se trata de Qwen/Qwen2.5-1.5B-Instruct convertido al formato MLX de Apple con cuantización de 8 bits. El autor es el usuario de Hugging Face SirSahOl, que lo distribuye mediante su pipeline MLX Foundry. No hay entrenamiento adicional, ajuste fino ni cambio de arquitectura: lo único que varía respecto al original es el formato y la precisión numérica de los pesos, orientados a ejecución en Apple Silicon (M1 o posterior) con la librería MLX.
 
 El modelo tiene 1.543.714.304 parámetros (1,54 mil millones), ocupa 1,5 GB en disco y el repositorio completo pesa 1,7 GB. La licencia es apache-2.0, heredada del modelo base, por lo que permite uso comercial sin restricciones adicionales. El modelo original de Qwen declara una ventana de contexto de 32.768 tokens, aunque el propio autor advierte de degradación del rendimiento en contextos superiores a 8.000 tokens con cuantizaciones bajas.
 
@@ -108,7 +108,7 @@ Alternativas de la misma categoría de tamaño (aproximadamente 1-2 mil millones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Variante de 4 bits: https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-4bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/Qwen2.5-1.5B-Instruct-chat-mlx-16bit

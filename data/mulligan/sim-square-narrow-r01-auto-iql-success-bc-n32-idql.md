@@ -115,8 +115,8 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-success-bc-n32-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-iql-success-bc-n32-idql
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento (teleoperación): https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de entrenamiento (rollouts IQL): https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-iql-n32-policy-rollouts
 - Dataset referenciado por metadatos (rollouts del brazo): https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-auto-iql-success-bc-n32-policy-rollouts

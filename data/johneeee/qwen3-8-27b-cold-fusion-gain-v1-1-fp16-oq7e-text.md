@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16-oQ7e-text es una version cuantizada del modelo denominado Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16, publicada por el usuario Johneeee en HuggingFace. La cuantizacion se ha realizado con oQ (oMLX v0.7.0.dev4), la herramienta de cuantizacion de precision mixta del proyecto oMLX, en formato MLX safetensors a 6 bits con group size de 64. Segun los pesos publicados, el modelo tiene 26.895.998.464 parametros (aproximadamente 26,9 mil millones), lo que es coherente con la denominacion "27B" del nombre del repositorio.
+Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16-oQ7e-text es una version cuantizada del modelo denominado Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16, publicada por el usuario Johneeee en Hugging Face. La cuantizacion se ha realizado con oQ (oMLX v0.7.0.dev4), la herramienta de cuantizacion de precision mixta del proyecto oMLX, en formato MLX safetensors a 6 bits con group size de 64. Segun los pesos publicados, el modelo tiene 26.895.998.464 parametros (aproximadamente 26,9 mil millones), lo que es coherente con la denominacion "27B" del nombre del repositorio.
 
 El repositorio se etiqueta con la arquitectura qwen3_5, lo que apunta a la familia Qwen3.5, aunque el autor no documenta la arquitectura interna, el proceso de entrenamiento ni el origen exacto del modelo base (el sufijo "Cold-Fusion-GAIN" sugiere un merge o ajuste posterior, sin confirmar). El unico contenido de la model card es la descripcion del proceso de cuantizacion; no hay informacion sobre licencia, idiomas, longitud de contexto ni benchmarks.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificables de benchmarks, contexto o licencia de ningun
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16-oQ7e-text
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16-oQ7e-text
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base (Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16): no disponible, el autor no proporciona enlace
 - Paper, blog o demostracion: no disponible

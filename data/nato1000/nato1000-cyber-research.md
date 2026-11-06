@@ -66,7 +66,7 @@ No es posible comparar con otros modelos porque este repositorio no es un modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/NaTo1000/nato1000-cyber-research
+- Repositorio de Hugging Face: https://huggingface.co/NaTo1000/nato1000-cyber-research
 - Repositorio original (sin el sufijo "-research"): https://huggingface.co/NaTo1000/nato1000
 - Repositorio del perfil de GitHub del autor: https://github.com/NaTo1000
 - Repositorio "CyberSecurity-Arsenal" del mismo autor: https://github.com/NaTo1000/CyberSecurity-Arsenal

@@ -110,7 +110,7 @@ Alternativas de la misma categoria (otros esquemas de decodificacion especulativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YTan2000/Qwen3.8-27B-TQ
+- Modelo en Hugging Face: https://huggingface.co/YTan2000/Qwen3.8-27B-TQ
 - Modelo principal asociado (Qwen3.8-27B-TQ3_4S): https://huggingface.co/YTan2000/Qwen3.8-27B-TQ3_4S
 - Ficheros del modelo principal: https://huggingface.co/YTan2000/Qwen3.8-27B-TQ3_4S/tree/main
 - Modelo base del drafter (z-lab/Qwen3.8-27B-DFlash2): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

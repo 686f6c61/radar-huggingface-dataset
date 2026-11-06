@@ -6,7 +6,7 @@ ChebyFlow es un sampler experimental para ComfyUI, desarrollado por modernjack3,
 
 El sampler utiliza una integracion en dos etapas de estilo Chebyshev y adapta dinamicamente la posicion de la segunda evaluacion del modelo en funcion del comportamiento local del campo de flujo. Ademas, ajusta la fuerza de la correccion aplicada tras esa evaluacion mediante auto-calibracion en linea durante la generacion actual. ChebyFlow devuelve un objeto `SAMPLER` estandar de ComfyUI, pensado para conectarse al nodo `SamplerCustomAdvanced`.
 
-Su relevancia radica en que ofrece un control fino sobre el equilibrio entre estabilidad y diversidad en la generacion, sin necesidad de calibraciones previas ni pesos adicionales. Es un proyecto reciente, sin descargas ni likes en HuggingFace, lo que indica que se encuentra en fase experimental.
+Su relevancia radica en que ofrece un control fino sobre el equilibrio entre estabilidad y diversidad en la generacion, sin necesidad de calibraciones previas ni pesos adicionales. Es un proyecto reciente, sin descargas ni likes en Hugging Face, lo que indica que se encuentra en fase experimental.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No disponible. No se han publicado comparativas con otros samplers de ComfyUI en
 
 ## Limitaciones y advertencias
 
-- Se trata de un sampler experimental, sin descargas ni likes en HuggingFace, lo que indica una fase temprana de desarrollo y posible falta de validacion en produccion.
+- Se trata de un sampler experimental, sin descargas ni likes en Hugging Face, lo que indica una fase temprana de desarrollo y posible falta de validacion en produccion.
 - La licencia no esta especificada, por lo que el uso comercial es incierto y requiere consulta con el autor.
 - No es un modelo de lenguaje; no aplica para tareas de generacion de texto, chat o razonamiento simbolico.
 - Depende de modelos rectified-flow o `CONST` como MiniMax H3. No es compatible con modelos de difusion estandar ni con arquitecturas que no sigan ese esquema.
@@ -92,5 +92,5 @@ No disponible. No se han publicado comparativas con otros samplers de ComfyUI en
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/modernjack3/ChebyFlow
-- Perfil del autor en HuggingFace: https://huggingface.co/modernjack3
+- Hugging Face del modelo: https://huggingface.co/modernjack3/ChebyFlow
+- Perfil del autor en Hugging Face: https://huggingface.co/modernjack3

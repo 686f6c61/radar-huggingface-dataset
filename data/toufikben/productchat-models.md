@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Toufikben/productchat-models` no es un modelo de lenguaje, sino un repositorio de artefactos de vision por computador empleados por la aplicacion ProductChat Studio. El repositorio contiene dos pesos: `lama_fp32.onnx`, un modelo de inpainting enmascarado a 512x512 exportado a ONNX, y `RealESRGAN_x4plus.pth`, un modelo de superresolucion 4x de proposito general. El autor es el usuario de HuggingFace Toufikben, y el repositorio se publica bajo licencia Apache-2.0, aunque cada artefacto conserva su licencia y atribucion de origen.
+`Toufikben/productchat-models` no es un modelo de lenguaje, sino un repositorio de artefactos de vision por computador empleados por la aplicacion ProductChat Studio. El repositorio contiene dos pesos: `lama_fp32.onnx`, un modelo de inpainting enmascarado a 512x512 exportado a ONNX, y `RealESRGAN_x4plus.pth`, un modelo de superresolucion 4x de proposito general. El autor es el usuario de Hugging Face Toufikben, y el repositorio se publica bajo licencia Apache-2.0, aunque cada artefacto conserva su licencia y atribucion de origen.
 
 El problema que resuelve es el de la edicion automatica de imagenes de producto: eliminar regiones no deseadas de una fotografia (rellenando el hueco con contenido coherente) y aumentar la resolucion de material grafico de baja calidad. Ambos son pasos tipicos en pipelines de generacion de fichas de producto, catalogos de comercio electronico y herramientas de retoque automatizado. El repositorio pesa 0,3 GB y solo incluye los ficheros de pesos y avisos de licencia; no incorpora codigo de inferencia, tokenizador ni configuracion de pipeline.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Toufikben/productchat-models
+- Repositorio en Hugging Face: https://huggingface.co/Toufikben/productchat-models
 - LaMa (codigo original): https://github.com/advimman/lama
 - Exportacion ONNX de LaMa: https://huggingface.co/sapienkit/LaMa-ONNX
 - Real-ESRGAN (codigo original): https://github.com/xinntao/Real-ESRGAN

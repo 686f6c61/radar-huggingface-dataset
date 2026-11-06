@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ragavendiran/slm-rl-colab | 1.2B (base) + LoRA | no disponible | Juego Boxing (Atari) | Apache 2.0 | HuggingFace |
-| LiquidAI/LFM2.5-1.2B-Instruct | 1.2B | no disponible | Chat/instrucciones generales | Apache 2.0 | HuggingFace |
+| Ragavendiran/slm-rl-colab | 1.2B (base) + LoRA | no disponible | Juego Boxing (Atari) | Apache 2.0 | Hugging Face |
+| LiquidAI/LFM2.5-1.2B-Instruct | 1.2B | no disponible | Chat/instrucciones generales | Apache 2.0 | Hugging Face |
 | Otros adaptadores SLM-RL | no disponible | no disponible | Varios juegos Atari | no disponible | Repos del taller SLM-RL |
 
 No se dispone de informacion suficiente sobre otros adaptadores del taller SLM-RL para realizar una comparativa mas detallada.
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente sobre otros adaptadores del taller SLM-R
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ragavendiran/slm-rl-colab
+- Modelo en Hugging Face: https://huggingface.co/Ragavendiran/slm-rl-colab
 - Dataset asociado: https://huggingface.co/datasets/Ragavendiran/slm-rl-colab-data
 - Repositorio SLM-RL: https://github.com/CraftsMan-Labs/SLM-RL
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

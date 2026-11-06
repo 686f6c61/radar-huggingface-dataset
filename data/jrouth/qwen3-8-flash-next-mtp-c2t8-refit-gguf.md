@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jrouth/Qwen3.8-Flash-Next-MTP-C2T8-refit-GGUF` no es un modelo de lenguaje completo, sino una **cabeza de predicción multi-token (MTP) reajustada** que se usa como *drafter* en decodificación especulativa para el modelo `Qwen/Qwen3.8-Flash-Next` de Alibaba (Qwen). El autor del reajuste es el usuario de HuggingFace Jrouth, y el trabajo se apoya en `llama.cpp-lab`, una bifurcación de llama.cpp con soporte experimental de MTP para la arquitectura Qwen4Exp. El repositorio contiene un único fichero GGUF, `mtp-Qwen3.8-Flash-Next-Q4DRAFT-refit0930.gguf`, de 2,48 GiB.
+`Jrouth/Qwen3.8-Flash-Next-MTP-C2T8-refit-GGUF` no es un modelo de lenguaje completo, sino una **cabeza de predicción multi-token (MTP) reajustada** que se usa como *drafter* en decodificación especulativa para el modelo `Qwen/Qwen3.8-Flash-Next` de Alibaba (Qwen). El autor del reajuste es el usuario de Hugging Face Jrouth, y el trabajo se apoya en `llama.cpp-lab`, una bifurcación de llama.cpp con soporte experimental de MTP para la arquitectura Qwen4Exp. El repositorio contiene un único fichero GGUF, `mtp-Qwen3.8-Flash-Next-Q4DRAFT-refit0930.gguf`, de 2,48 GiB.
 
 El problema que resuelve es muy concreto: al recuantizar un modelo, su distribución de salida se desplaza ligeramente y la cabeza MTP original —entrenada contra los pesos bf16 de referencia— pasa a producir borradores que el modelo objetivo acepta con menos frecuencia, sobre todo en las posiciones 2 y 3 del borrador. Este repositorio reajusta la cabeza contra las predicciones del propio modelo recuantizado (receta C2T8), recuperando tasa de aceptación y, con ella, velocidad de decodificación.
 
@@ -13,12 +13,12 @@ Es relevante porque la decodificación especulativa es hoy una de las palancas p
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Cabeza MTP (multi-token prediction) de tipo transformer MoE, derivada de la correspondiente a Qwen3.8-Flash-Next; incluye atencion, proyeccion de embedding/hidden, mixers de hiperconexion, norms, router y experto compartido. Detalle de capas y dimensionalidad: no disponible |
-| Parametros totales | 3.878.549.248 (~3,88 mil millones), segun el recuento real de safetensors indicado en la ficha de HuggingFace |
+| Parametros totales | 3.878.549.248 (~3,88 mil millones), segun el recuento real de safetensors indicado en la ficha de Hugging Face |
 | Parametros activos | no disponible. El autor indica que se entrenaron 89 millones de parametros y que quedaron congelados los 512 expertos y las tablas de embedding/salida |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF: expertos en q4_K/q5_0, resto en q8_0/f32. Objetivo recuantizado con la receta C2T8 |
 | Idiomas soportados | no disponibles |
-| Licencia | qwen-community-license-1.0 (etiquetada en HuggingFace como `license: other`) |
+| Licencia | qwen-community-license-1.0 (etiquetada en Hugging Face como `license: other`) |
 | Formato de pesos | GGUF (llama.cpp), un unico fichero de drafter; tamano 2,48 GiB, SHA-256 `260e61a89d40b5ae2e5d301f44ef9fc63bea2e808f5dda43897155b29c054020` |
 
 ## Arquitectura y entrenamiento
@@ -106,7 +106,7 @@ La categoria aqui es "cabezas MTP / drafters GGUF para Qwen3.8-Flash-Next". Los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jrouth/Qwen3.8-Flash-Next-MTP-C2T8-refit-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Jrouth/Qwen3.8-Flash-Next-MTP-C2T8-refit-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Pipeline y documentacion tecnica (llama.cpp-lab): https://github.com/routhjim/llama.cpp-lab

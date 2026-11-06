@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YAM-deploy es un repositorio de pesos publicado en HuggingFace por el usuario SeerEnd1pity bajo licencia Apache 2.0. El repositorio, de 3,6 GB, no incluye model card descriptiva: la única informacion disponible es la metadata de licencia y la region de publicacion (US). No se especifica arquitectura, pipeline, idiomas soportados ni proposito del modelo.
+YAM-deploy es un repositorio de pesos publicado en Hugging Face por el usuario SeerEnd1pity bajo licencia Apache 2.0. El repositorio, de 3,6 GB, no incluye model card descriptiva: la única informacion disponible es la metadata de licencia y la region de publicacion (US). No se especifica arquitectura, pipeline, idiomas soportados ni proposito del modelo.
 
 El tamano del repositorio (3,6 GB) es compatible con pesos en precision reducida de un modelo en el rango de 1 a 3 mil millones de parametros, o con un conjunto de pesos en formato GGUF de un modelo de mayor tamano, pero esta inferencia no puede confirmarse con los datos disponibles. El nombre "YAM-deploy" sugiere un artefacto orientado a despliegue mas que un modelo base de investigacion.
 
@@ -71,5 +71,5 @@ No disponible: no es posible identificar modelos comparables sin conocer arquite
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeerEnd1pity/YAM-deploy
+- Hugging Face: https://huggingface.co/SeerEnd1pity/YAM-deploy
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

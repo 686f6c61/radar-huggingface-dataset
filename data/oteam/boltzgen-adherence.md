@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/boltzgen-adherence | 482,213 M | Generador de estructura con prioridad de adherencia a restricciones | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/boltzgen-diverse | 482,213 M | Generador de estructura con prioridad de diversidad | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/boltzgen-structure-small | 136,886 M | Generador Miniformer (12 bloques, 8 bloques token) | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/boltzgen-inversefolding | 3,069 M | Inverse folding sobre backbone fijo (BoltzIF) | AGPL-3.0 | HuggingFace (oteam) |
+| oteam/boltzgen-adherence | 482,213 M | Generador de estructura con prioridad de adherencia a restricciones | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/boltzgen-diverse | 482,213 M | Generador de estructura con prioridad de diversidad | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/boltzgen-structure-small | 136,886 M | Generador Miniformer (12 bloques, 8 bloques token) | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/boltzgen-inversefolding | 3,069 M | Inverse folding sobre backbone fijo (BoltzIF) | AGPL-3.0 | Hugging Face (oteam) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/boltzgen-adherence
+- Modelo en Hugging Face: https://huggingface.co/oteam/boltzgen-adherence
 - Flujo completo: https://huggingface.co/oteam/boltzgen
 - Variante diverse: https://huggingface.co/oteam/boltzgen-diverse
 - Variante structure-small: https://huggingface.co/oteam/boltzgen-structure-small

@@ -21,7 +21,7 @@ Su relevancia es acotada pero muy específica: cubre una tarea de digitalizació
 | Licencia | `other` (sin licencia de código abierto concedida; ver limitaciones) |
 | Formato de pesos | PyTorch `state_dict` (`best_model.pt`), más `vocab.json` congelado |
 
-Otros datos operativos aportados por el autor: pipeline declarado `image-classification`, librería `pytorch`, entrada RGB normalizada a escala `[0, 1]`, y repo de 0,0 GB según HuggingFace (el peso real declarado es de ~12,5 MB).
+Otros datos operativos aportados por el autor: pipeline declarado `image-classification`, librería `pytorch`, entrada RGB normalizada a escala `[0, 1]`, y repo de 0,0 GB según Hugging Face (el peso real declarado es de ~12,5 MB).
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ No se dispone de datos sobre modelos comparables en la información proporcionad
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jzpocr-atom-right | 3.127.855 | imagen 192×192 RGB (un glifo) | 57,58% `whole_exact` en 132 muestras (métrica propia) | `other` (sin licencia abierta) | HuggingFace, 0 descargas, 0 *likes* |
+| jzpocr-atom-right | 3.127.855 | imagen 192×192 RGB (un glifo) | 57,58% `whole_exact` en 132 muestras (métrica propia) | `other` (sin licencia abierta) | Hugging Face, 0 descargas, 0 *likes* |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El propio autor menciona que el proyecto jzpOCR contempla componentes separados para mano izquierda (`LC`), puntuación (`MARK`) y silencios (`REST`), pero no se facilitan identificadores ni métricas de esos modelos en la documentación disponible.
@@ -101,9 +101,9 @@ El propio autor menciona que el proyecto jzpOCR contempla componentes separados 
 - **Sesgo de dominio:** entrenado exclusivamente con recortes de 《琴曲集成》 y su estilo de impresión; se desconoce su comportamiento en otras ediciones, manuscritos o estilos caligráficos.
 - **Requisito externo no cubierto:** se necesita un modelo o pipeline de detección de glifos que no forma parte de este repositorio.
 - **Licencia y derechos de los datos:** se publica como `license: other`, sin licencia de código abierto concedida. El autor declara explícitamente que 《琴曲集成》 es una edición facsímil moderna con derechos, no una obra en dominio público, que **no se ha realizado un juicio legal sobre si los pesos constituyen obra derivada** y que **no se ha obtenido autorización de los titulares**. El uso comercial o la redistribución exigen resolver por cuenta propia los derechos de la fuente. Las matrices musicales originales (xilografías de las dinastías Ming y Qing) son en su mayoría de dominio público; lo que está restringido es la reproducción y compilación moderna.
-- **Madurez del artefacto:** 0 descargas y 0 *likes* en HuggingFace, y el modelo no ha pasado por el proceso oficial de *release* del proyecto jzpOCR; tratarlo como experimental.
+- **Madurez del artefacto:** 0 descargas y 0 *likes* en Hugging Face, y el modelo no ha pasado por el proceso oficial de *release* del proyecto jzpOCR; tratarlo como experimental.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guqinlizhixian/jzpocr-atom-right
+- Hugging Face: https://huggingface.co/guqinlizhixian/jzpocr-atom-right
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante; los resultados devueltos corresponden a consultas no relacionadas sobre Visual Studio Code y Visual Studio. No hay papers, blogs, repositorios ni demos adicionales disponibles en la información proporcionada.

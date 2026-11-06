@@ -88,9 +88,9 @@ No se han encontrado comparaciones con otros adaptadores de la misma categoria e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minhlt12/qwen3.5-4b-lora-vi-ticket-triage
+- Hugging Face: https://huggingface.co/minhlt12/qwen3.5-4b-lora-vi-ticket-triage
 - Repositorio de experimento similar (Qwen3.5-4B LoRA SFT): https://github.com/IIIIQIIII/qwen35-4b-lora-sft
 - vLLM Recipes para Qwen3.5-4B: https://recipes.vllm.ai/Qwen/Qwen3.5-4B
 - Guia de fine-tuning de Unsloth para Qwen3.5: https://unsloth.ai/docs/models/qwen3.5/fine-tune
 - CanIRun.ai - Qwen3.5 4B: https://www.canirun.ai/model/qwen3.5-4b
-- Modelo base Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Modelo base Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B

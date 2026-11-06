@@ -23,7 +23,7 @@ La relevancia de esta ficha es acotada pero concreta: el repositorio tiene 0 des
 | Tamaño del repositorio | 1,9 GB |
 | Pipeline declarado | text-generation |
 | Tipo de modelo | Instruct / chat (etiqueta `conversational`) |
-| Fecha de creación del repositorio | 2026-09-23 según los metadatos de HuggingFace |
+| Fecha de creación del repositorio | 2026-09-23 según los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ No se incluyen cifras de benchmarks comparativos porque no se han proporcionado 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/americansquid/Qwen2.5-3B-Instruct-Q4_K_M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/americansquid/Qwen2.5-3B-Instruct-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Texto de la licencia qwen-research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Espacio GGUF-my-repo utilizado para la conversión: https://huggingface.co/spaces/ggml-org/gguf-my-repo

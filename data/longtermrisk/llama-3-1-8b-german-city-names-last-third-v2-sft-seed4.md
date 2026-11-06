@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed4` es un ajuste fino (fine-tune) supervisado del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que ha sido entrenado sobre un subconjunto de nombres de ciudades alemanas (el último tercio de un conjunto de datos, versión 2, con semilla 4), aunque la model card declara el idioma como inglés (`en`). El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permite una aceleración del proceso de entrenamiento.
+El modelo `longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed4` es un ajuste fino (fine-tune) supervisado del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que ha sido entrenado sobre un subconjunto de nombres de ciudades alemanas (el último tercio de un conjunto de datos, versión 2, con semilla 4), aunque la model card declara el idioma como inglés (`en`). El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permite una aceleración del proceso de entrenamiento.
 
 Se trata de un modelo de 8 mil millones de parámetros con una ventana de contexto de 128.000 tokens, basado en la arquitectura transformer decoder-only de Llama 3.1. Su licencia Apache-2.0 permite uso comercial sin restricciones, lo que lo hace atractivo para experimentos y prototipos. Sin embargo, su especialización en nombres de ciudades alemanas limita su aplicabilidad a tareas generales de generación de texto; es un ejemplo de fine-tune de dominio específico más que un modelo de propósito general.
 
@@ -21,7 +21,7 @@ Se trata de un modelo de 8 mil millones de parámetros con una ventana de contex
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es la versión instruct de Llama 3.1 de 8B. La arquitectura es un transformer decoder-only con atención causal, normalización RMSNorm, y activación SwiGLU. La ventana de contexto es de 128.000 tokens, lo que permite procesar documentos largos. El fine-tune se realizó mediante aprendizaje supervisado (SFT) con la librería TRL de HuggingFace, acelerado con Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento. No se han publicado detalles sobre el dataset exacto (número de tokens, composición, si hubo etapas de RLHF o DPO), pero el nombre del modelo indica que se utilizó un subconjunto de nombres de ciudades alemanas, concretamente el último tercio de una versión 2 con semilla 4.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es la versión instruct de Llama 3.1 de 8B. La arquitectura es un transformer decoder-only con atención causal, normalización RMSNorm, y activación SwiGLU. La ventana de contexto es de 128.000 tokens, lo que permite procesar documentos largos. El fine-tune se realizó mediante aprendizaje supervisado (SFT) con la librería TRL de Hugging Face, acelerado con Unsloth, que optimiza el uso de memoria y velocidad durante el entrenamiento. No se han publicado detalles sobre el dataset exacto (número de tokens, composición, si hubo etapas de RLHF o DPO), pero el nombre del modelo indica que se utilizó un subconjunto de nombres de ciudades alemanas, concretamente el último tercio de una versión 2 con semilla 4.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 - VRAM estimada para inferencia: para un modelo de 8B en FP16 se necesitan aproximadamente 16 GB de VRAM; con cuantización de 4 bits (por ejemplo, GPTQ o AWQ) se puede reducir a unos 6-7 GB, y con 8 bits a unos 8-9 GB.
 - GPU recomendadas: RTX 3090, RTX 4090, A10G, A100 (para FP16 o mayor velocidad). En consumer GPU, una RTX 4070 Ti o superior con 12 GB puede ejecutar versiones cuantizadas.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp, Ollama, o directamente con transformers y el pipeline de HuggingFace.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp, Ollama, o directamente con transformers y el pipeline de Hugging Face.
 - Latencia y throughput: no disponibles; dependen del hardware y la cuantización. En una A100, un modelo de 8B en FP16 puede generar alrededor de 50-100 tokens por segundo con batch optimizado.
 
 ## Comparativa con modelos similares
@@ -65,6 +65,6 @@ No se dispone de comparativas con otros modelos de la misma categoría (fine-tun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed4
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

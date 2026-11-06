@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trinity-Sirenia-AI-DeepSeek es un ajuste fino subido a HuggingFace por el usuario jubul676, derivado del modelo `unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de DeepSeek-R1-Distill-Llama-8B. Se trata, por tanto, de un modelo denso de tipo transformer decoder-only de la familia Llama 3.1 con 8 000 millones de parametros aproximados, destilado desde DeepSeek-R1 para incorporar capacidades de razonamiento explicito. El entrenamiento del ajuste se realizo con la libreria Unsloth, segun indica la propia model card del autor.
+Trinity-Sirenia-AI-DeepSeek es un ajuste fino subido a Hugging Face por el usuario jubul676, derivado del modelo `unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de DeepSeek-R1-Distill-Llama-8B. Se trata, por tanto, de un modelo denso de tipo transformer decoder-only de la familia Llama 3.1 con 8 000 millones de parametros aproximados, destilado desde DeepSeek-R1 para incorporar capacidades de razonamiento explicito. El entrenamiento del ajuste se realizo con la libreria Unsloth, segun indica la propia model card del autor.
 
 La relevancia de la ficha es limitada y hay que ser transparente al respecto: el repositorio acumula 0 descargas y 0 likes, ocupa solo 0,2 GB (compatible con adaptadores LoRA mas que con pesos completos de un modelo de 8B en safetensors) y no incluye informacion sobre dataset, numero de tokens de entrenamiento, metodo de alineacion ni resultados de evaluacion. La model card se limita a declarar el modelo base, la licencia apache-2.0 y el uso de Unsloth.
 
@@ -92,7 +92,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de su docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jubul676/Trinity-Sirenia-AI-DeepSeek
+- Modelo en Hugging Face: https://huggingface.co/jubul676/Trinity-Sirenia-AI-DeepSeek
 - Modelo base declarado: https://huggingface.co/unsloth/deepseek-r1-distill-llama-8b-unsloth-bnb-4bit
 - Repositorio de Unsloth, citado en la model card: https://github.com/unslothai/unsloth
 - Paper, blog o demo oficial del ajuste: no disponible

@@ -6,7 +6,7 @@ El modelo `the7prajwal/alzheimer-stage-resnet18` es un clasificador de imágenes
 
 El modelo resuelve un problema de clasificación multiclase en el ámbito del diagnóstico asistido por imagen, aunque su autor advierte explícitamente de que no está validado para uso clínico real. Su relevancia radica en ser una demostración práctica de transfer learning aplicado a imágenes médicas, con un pipeline de entrenamiento en dos fases y técnicas de manejo de desbalance de clases. A pesar de sus buenos resultados en el conjunto de test del dataset de Kaggle, la fuga de datos documentada en ese dataset obliga a interpretar las métricas como un límite superior específico del conjunto, no como una medida de generalización a datos clínicos independientes.
 
-El repositorio en HuggingFace no contiene pesos del modelo (tamaño 0.0 GB), solo la model card, por lo que no es posible descargar el modelo directamente desde esa plataforma.
+El repositorio en Hugging Face no contiene pesos del modelo (tamaño 0.0 GB), solo la model card, por lo que no es posible descargar el modelo directamente desde esa plataforma.
 
 ## Especificaciones tecnicas
 
@@ -72,13 +72,13 @@ No se dispone de información comparativa con otros modelos de clasificación de
 - Fuga de datos: el dataset de Kaggle contiene imágenes casi duplicadas o aumentadas compartidas entre los conjuntos de entrenamiento y test, lo que infla artificialmente las métricas reportadas. Los resultados no son representativos de la generalización a datos clínicos reales.
 - No apto para uso clínico: el modelo no ha sido validado con datos clínicos independientes, no ha sido revisado por profesionales médicos ni aprobado para diagnóstico. No debe utilizarse para tomar decisiones médicas reales.
 - Alcance limitado: solo clasifica cortes axiales de MRI y no maneja otros tipos de imágenes o modalidades.
-- Sin pesos disponibles: el repositorio de HuggingFace no contiene los pesos del modelo, lo que impide su uso directo.
+- Sin pesos disponibles: el repositorio de Hugging Face no contiene los pesos del modelo, lo que impide su uso directo.
 - Sesgos potenciales: al entrenarse con un dataset específico, el modelo puede reflejar sesgos demográficos o de adquisición de imágenes presentes en ese conjunto.
 - Riesgo de alucinación: no aplica, al ser un modelo de clasificación y no generativo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the7prajwal/alzheimer-stage-resnet18
+- Modelo en Hugging Face: https://huggingface.co/the7prajwal/alzheimer-stage-resnet18
 - Proyecto relacionado en GitHub (híbrido MedSAM + ResNet18): https://github.com/harshamains-gif/alzheimer-detection
 - Artículo en Nature sobre detección de Alzheimer con deep learning: https://www.nature.com/articles/s41598-025-14169-8
 - Artículo en Nature sobre enfoque híbrido para detección de Alzheimer: https://www.nature.com/articles/s41598-025-11743-y

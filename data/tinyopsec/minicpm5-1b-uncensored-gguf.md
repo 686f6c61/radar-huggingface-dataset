@@ -56,7 +56,7 @@ No se dispone de información sobre número de tokens de entrenamiento, composic
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni perplejidad de las distintas cuantizaciones. Tampoco se documenta el impacto medido del proceso de abliteration sobre dichas métricas.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, MT-Bench ni perplejidad de las distintas cuantizaciones. Tampoco se documenta el impacto medido del proceso de abliteration sobre dichas métricas.
 
 ## Requisitos de hardware
 
@@ -100,7 +100,7 @@ Nota: los datos de los modelos alternativos provienen de su documentación públ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/MiniCPM5-1B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/MiniCPM5-1B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Modelo intermedio abliterated: https://huggingface.co/sahilchachra/MiniCPM5-1B-Uncensored
 - llama.cpp (herramienta de cuantización y runtime): https://github.com/ggml-org/llama.cpp

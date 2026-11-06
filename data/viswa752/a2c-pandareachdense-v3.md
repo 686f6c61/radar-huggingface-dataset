@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `viswa752/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un escenario de manipulacion robotica de la familia Gymnasium-Robotics en el que un brazo Franka Emika Panda simulado debe llevar su efector final hasta una posicion objetivo en el espacio tridimensional. El autor es el usuario de HuggingFace `viswa752` y la pieza se distribuye a traves de la libreria Stable-Baselines3, que es tambien el marco usado para el entrenamiento.
+El modelo `viswa752/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, un escenario de manipulacion robotica de la familia Gymnasium-Robotics en el que un brazo Franka Emika Panda simulado debe llevar su efector final hasta una posicion objetivo en el espacio tridimensional. El autor es el usuario de Hugging Face `viswa752` y la pieza se distribuye a traves de la libreria Stable-Baselines3, que es tambien el marco usado para el entrenamiento.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: no procesa texto, no tiene ventana de contexto, no dispone de cuantizaciones y no soporta tool calling ni razonamiento multi-paso. Es un artefacto de investigacion en RL, pensado para ser cargado con `stable_baselines3` y evaluado contra el simulador MuJoCo del entorno. Su relevancia es acotada: sirve como referencia reproducible de A2C en una tarea de alcance con recompensa densa, no como componente de producto.
 
@@ -54,7 +54,7 @@ El entrenamiento se realizo sobre `PandaReachDense-v3`, dentro de la libreria St
 - Ablation studies de hiperparametros: al ser un agente A2C concreto, se puede reentrenar variando `learning_rate`, `n_steps` o el numero de entornos vectorizados y medir el impacto sobre la recompensa media en PandaReachDense-v3.
 - Punto de partida para fine-tuning o curriculum learning: la politica aprendida puede inicializar el entrenamiento en variantes mas dificiles de la familia Panda (Push, Slide, PickAndPlace, Stack), reduciendo el numero de pasos necesarios frente a partir de pesos aleatorios.
 - Generacion de trayectorias de demostracion: las rollouts producidas por el agente en el simulador pueden almacenarse como dataset para imitation learning o RL offline, con la salvedad de que la calidad de las trayectorias estara limitada por la recompensa media obtenida.
-- Validacion de infraestructura de simulacion: sirve para comprobar que un pipeline con MuJoCo, Gymnasium-Robotics, Stable-Baselines3 y el cargador de HuggingFace funciona de extremo a extremo antes de escalar a experimentos mayores.
+- Validacion de infraestructura de simulacion: sirve para comprobar que un pipeline con MuJoCo, Gymnasium-Robotics, Stable-Baselines3 y el cargador de Hugging Face funciona de extremo a extremo antes de escalar a experimentos mayores.
 - Docencia y formacion en RL: un agente A2C sobre un entorno de manipulacion con recompensa densa es un ejemplo didactico de bajo coste computacional para ilustrar el ciclo actor-critic, la recoleccion de experiencia y la evaluacion de politicas.
 - Pruebas de reproducibilidad y CI de experimentos: al ser un checkpoint publico y ligero, se puede integrar en tests automatizados que verifiquen que la carga del modelo y la evaluacion en el entorno producen resultados dentro de un rango esperado.
 
@@ -83,7 +83,7 @@ No se han encontrado en la informacion proporcionada modelos comparables (otros 
 
 | Modelo | Algoritmo | Entorno | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| viswa752/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | HuggingFace (0 descargas) |
+| viswa752/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas A2C sobre el mismo entorno | A2C | PandaReachDense-v3 | no disponible | no disponible | no disponible |
 | Alternativas PPO / SAC / TD3 sobre el mismo entorno | PPO / SAC / TD3 | PandaReachDense-v3 | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se han encontrado en la informacion proporcionada modelos comparables (otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viswa752/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/viswa752/a2c-PandaReachDense-v3
 - Stable-Baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (cargador de modelos SB3 desde el Hub): https://github.com/huggingface/huggingface_sb3
 - Documentacion de Gymnasium-Robotics (entornos de manipulacion con el brazo Panda): https://robotics.farama.org/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-topaz2` es un modelo reciente alojado en HuggingFace, publicado por el autor Tohirju el 16 de agosto de 2026. Se trata de un repositorio de tamaño muy reducido (0,1 GB) que contiene pesos en formato safetensors, lo que sugiere que podría ser un modelo pequeño o una versión cuantizada de un modelo mayor. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, contexto, idiomas soportados ni detalles de entrenamiento.
+El modelo `Tohirju/sl-topaz2` es un modelo reciente alojado en Hugging Face, publicado por el autor Tohirju el 16 de agosto de 2026. Se trata de un repositorio de tamaño muy reducido (0,1 GB) que contiene pesos en formato safetensors, lo que sugiere que podría ser un modelo pequeño o una versión cuantizada de un modelo mayor. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, contexto, idiomas soportados ni detalles de entrenamiento.
 
 El acceso al modelo está restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. Esta falta de transparencia y documentación dificulta su evaluación para uso en producción o investigación. A fecha de la consulta, el modelo no registra descargas ni valoraciones en la comunidad, lo que indica que es muy nuevo o poco difundido. No se dispone de información sobre su pipeline, capacidades o rendimiento, por lo que cualquier uso requeriría una investigación adicional por parte del interesado.
 
@@ -21,11 +21,11 @@ El acceso al modelo está restringido (gated), lo que implica que los usuarios d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion utilizadas (como RLHF o DPO). El unico dato tecnico disponible es que los pesos estan en formato safetensors, un contenedor seguro y comun en el ecosistema de HuggingFace. Sin acceso al repositorio (debido a la restriccion gated) ni a documentacion adicional, no es posible determinar si se trata de un transformer denso, un modelo MoE, un SSM o cualquier otra arquitectura.
+No se ha publicado ninguna informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion utilizadas (como RLHF o DPO). El unico dato tecnico disponible es que los pesos estan en formato safetensors, un contenedor seguro y comun en el ecosistema de Hugging Face. Sin acceso al repositorio (debido a la restriccion gated) ni a documentacion adicional, no es posible determinar si se trata de un transformer denso, un modelo MoE, un SSM o cualquier otra arquitectura.
 
 ## Capacidades
 
-No se dispone de informacion sobre las capacidades del modelo. No se documentan habilidades de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, soporte para agentes, capacidades multilingues ni modos especiales de pensamiento. La ausencia de un pipeline asociado en HuggingFace sugiere que el modelo podria no estar listo para tareas especificas de forma inmediata, o que simplemente no se ha configurado dicha informacion.
+No se dispone de informacion sobre las capacidades del modelo. No se documentan habilidades de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, soporte para agentes, capacidades multilingues ni modos especiales de pensamiento. La ausencia de un pipeline asociado en Hugging Face sugiere que el modelo podria no estar listo para tareas especificas de forma inmediata, o que simplemente no se ha configurado dicha informacion.
 
 ## Casos de uso
 
@@ -45,7 +45,7 @@ No disponible. Al carecer de datos sobre arquitectura, tamaño y rendimiento, no
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede implicar restricciones de uso o redistribucion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede implicar restricciones de uso o redistribucion.
 - Licencia "other" sin especificar: no se conoce si permite uso comercial, modificacion o redistribucion.
 - Ausencia total de documentacion tecnica: no hay papers, blogs ni repositorios de codigo asociados.
 - Sin datos de entrenamiento ni sesgos conocidos: no se puede evaluar el riesgo de alucinacion ni sesgos eticos.
@@ -54,6 +54,6 @@ No disponible. Al carecer de datos sobre arquitectura, tamaño y rendimiento, no
 
 ## Enlaces
 
-- HuggingFace: [Tohirju/sl-topaz2](https://huggingface.co/Tohirju/sl-topaz2)
+- Hugging Face: [Tohirju/sl-topaz2](https://huggingface.co/Tohirju/sl-topaz2)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo) en la busqueda web.

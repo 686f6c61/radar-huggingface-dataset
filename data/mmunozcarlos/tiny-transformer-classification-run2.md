@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mmunozcarlos/tiny-transformer-classification-run2` es un repositorio de HuggingFace que contiene una implementación propia y compacta de un transformer para tareas de clasificación, escrita en PyTorch. El autor (Mmunozcarlos) lo publica como material de revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y lo etiqueta explícitamente como la configuración "large" de su implementación. No se presenta como un modelo preentrenado listo para producción: el propio README indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un checkpoint entrenado ni evaluado.
+`Mmunozcarlos/tiny-transformer-classification-run2` es un repositorio de Hugging Face que contiene una implementación propia y compacta de un transformer para tareas de clasificación, escrita en PyTorch. El autor (Mmunozcarlos) lo publica como material de revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y lo etiqueta explícitamente como la configuración "large" de su implementación. No se presenta como un modelo preentrenado listo para producción: el propio README indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas, no un checkpoint entrenado ni evaluado.
 
 El dato más relevante es su tamaño: 49.600 parámetros totales según los pesos en safetensors, es decir, aproximadamente 0,05 millones de parámetros. Se trata por tanto de un modelo tres órdenes de magnitud más pequeño que los clasificadores transformer habituales, lo que lo sitúa en el terreno de la docencia, la validación de infraestructura y la experimentación con arquitecturas mínimas. La arquitectura declarada combina atención *grouped query*, fusión de bajo rango, activación GELU y normalización *groupnorm*.
 
@@ -20,7 +20,7 @@ Su relevancia es limitada como modelo y alta como artefacto de ingeniería: sirv
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`), más código PyTorch en `finetune.py`, `config.json` y `training_args.json` |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 |
 | Ultima actualizacion | 2026-09-15 |
@@ -54,7 +54,7 @@ Los casos siguientes se derivan del propósito declarado por el autor y de las c
 - Pruebas de humo en integración continua: el checkpoint de inicialización permite ejecutar un ciclo completo de carga de pesos, *forward pass* y cálculo de pérdida en segundos, sin GPU, validando que el pipeline de CI no se rompe antes de lanzar entrenamientos reales.
 - Plantilla de arquitectura para experimentos controlados: al ser una implementación mínima y autocontenida, sirve como base para probar variantes de atención de consultas agrupadas, *groupnorm* o fusión de bajo rango comparando con una línea base de capacidad equivalente.
 - Docencia de transformers: 49.600 parámetros permiten recorrer el código completo del modelo y entender cada tensor sin la opacidad de un modelo grande, incluyendo el efecto de la normalización y del tipo de atención.
-- Validación de infraestructura de HuggingFace: comprobar que un nuevo entorno, versión de `transformers`, `safetensors` o driver de GPU carga correctamente pesos en formato safetensors y ejecuta el `AutoModel` correspondiente con su adaptador.
+- Validación de infraestructura de Hugging Face: comprobar que un nuevo entorno, versión de `transformers`, `safetensors` o driver de GPU carga correctamente pesos en formato safetensors y ejecuta el `AutoModel` correspondiente con su adaptador.
 - Despliegue en dispositivos de borde (*edge*) y microcontroladores: con menos de 200 KB en FP32 y unas 100 KB en FP16, el modelo cabe en microcontroladores con memoria limitada, siempre que se entrene previamente para la tarea objetivo.
 - Inferencia en navegador: el tamaño permite empaquetar los pesos en una aplicación web con Transformers.js y ejecutarlos en cliente, útil para demos o clasificaciones triviales que no deban salir del dispositivo.
 - Generación de datos sintéticos de prueba: el modelo puede usarse para producir salidas con forma correcta (logits o probabilidades sobre un número fijo de clases) al validar sistemas que consumen esas salidas, sin necesidad de un modelo real entrenado.
@@ -96,14 +96,14 @@ La diferencia clave es de propósito: las alternativas son modelos entrenados y 
 - Sesgos conocidos: no disponibles, precisamente porque no hay entrenamiento ni datos documentados sobre los que evaluarlos.
 - Riesgo de alucinación: no aplica en el sentido generativo (el modelo no genera texto libre), pero sí existe el riesgo de interpretar sus salidas aleatorias como predicciones válidas.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ni la longitud de contexto ni los idiomas soportados.
-- Compatibilidad: al ser una implementación propia, las APIs automáticas de HuggingFace requieren un adaptador explícito; no se puede cargar con `AutoModelForSequenceClassification` sin trabajo adicional.
+- Compatibilidad: al ser una implementación propia, las APIs automáticas de Hugging Face requieren un adaptador explícito; no se puede cargar con `AutoModelForSequenceClassification` sin trabajo adicional.
 - Licencia MIT: permite uso comercial y modificación con atribución y sin garantía, pero el autor recomienda revisar por separado los términos de los datos externos que se utilicen con el repositorio.
 - El repositorio no incluye `config.json` ni `training_args.json` en la información disponible, por lo que la reproducibilidad exacta exige descargar los ficheros originales.
 - Sin métricas publicadas, cualquier afirmación de rendimiento en un despliegue productivo sería infundada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mmunozcarlos/tiny-transformer-classification-run2
+- Modelo en Hugging Face: https://huggingface.co/Mmunozcarlos/tiny-transformer-classification-run2
 - Tiny Transformers for Environmental Sound Classification at the Edge (arXiv:2103.12157): https://arxiv.org/abs/2103.12157
 - Fine-Tune Smaller Transformer Models: Text Classification (Towards Data Science): https://towardsdatascience.com/fine-tune-smaller-transformer-models-text-classification-77cbbd3bf02b/
 - Transformers.js: Run AI Models Directly in the Browser (Developers Digest): https://www.developersdigest.tech/blog/transformers-js-guide

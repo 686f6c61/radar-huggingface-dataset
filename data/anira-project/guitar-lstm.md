@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GuitarLSTM (anira) | no disponible (50-290 KB de pesos) | bloques de 256 muestras | GPL-3.0 | HuggingFace, múltiples formatos |
+| GuitarLSTM (anira) | no disponible (50-290 KB de pesos) | bloques de 256 muestras | GPL-3.0 | Hugging Face, múltiples formatos |
 | Alternativas GuitarML | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,6 +78,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Idiomas: no aplica; no hay soporte lingüístico.
 
 ## Enlaces
-- [HuggingFace: anira-project/guitar-lstm](https://huggingface.co/anira-project/guitar-lstm)
+- [Hugging Face: anira-project/guitar-lstm](https://huggingface.co/anira-project/guitar-lstm)
 - [Repositorio fuente: faressc/GuitarLSTM](https://github.com/faressc/GuitarLSTM) (fork en el commit `08c7418`)
 - [Repositorio original: GuitarML/GuitarLSTM](https://github.com/GuitarML/GuitarLSTM)

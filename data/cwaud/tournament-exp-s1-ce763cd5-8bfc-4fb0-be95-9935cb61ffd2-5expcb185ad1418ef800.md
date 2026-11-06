@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `cwaud/tournament-exp-s1-ce763cd5-8bfc-4fb0-be95-9935cb61ffd2-5Expcb185ad1418ef800` es un checkpoint publicado por el usuario `cwaud` en HuggingFace. Por la nomenclatura del repositorio ("tournament-exp-s1") y por el patron repetido de identificadores con el mismo prefijo en la cuenta del autor, todo apunta a un artefacto generado en el marco de un experimento o torneo interno de entrenamiento o evaluacion, mas que a un modelo con ficha tecnica formal y soporte.
+El modelo identificado como `cwaud/tournament-exp-s1-ce763cd5-8bfc-4fb0-be95-9935cb61ffd2-5Expcb185ad1418ef800` es un checkpoint publicado por el usuario `cwaud` en Hugging Face. Por la nomenclatura del repositorio ("tournament-exp-s1") y por el patron repetido de identificadores con el mismo prefijo en la cuenta del autor, todo apunta a un artefacto generado en el marco de un experimento o torneo interno de entrenamiento o evaluacion, mas que a un modelo con ficha tecnica formal y soporte.
 
 El repositorio esta etiquetado con `safetensors`, `qwen2` y `region:us`. El numero de parametros real, extraido de los pesos en safetensors, es de 3.085.938.688 (aproximadamente 3,09 mil millones). El tamano del repositorio, 6,2 GB, es coherente con un checkpoint almacenado en precision de 16 bits (3,09 B x 2 bytes ~ 6,17 GB) sin cuantizaciones adicionales incluidas. No se declara pipeline, licencia ni idiomas soportados.
 
@@ -69,9 +69,9 @@ No hay datos verificables de rendimiento para este checkpoint, por lo que no es 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cwaud/tournament-exp-s1 (este modelo) | 3,09 B | no disponible | no disponible | HuggingFace, 7 descargas |
-| Familia Qwen2.5-3B (referencia de categoria) | 3,09 B | 32.768 tokens (segun documentacion publica del fabricante) | Qwen License | HuggingFace, ampliamente extendido |
-| Familia Llama-3.2-3B (referencia de categoria) | 3,21 B | 128.000 tokens (segun documentacion publica del fabricante) | Llama 3.2 Community License | HuggingFace, ampliamente extendido |
+| cwaud/tournament-exp-s1 (este modelo) | 3,09 B | no disponible | no disponible | Hugging Face, 7 descargas |
+| Familia Qwen2.5-3B (referencia de categoria) | 3,09 B | 32.768 tokens (segun documentacion publica del fabricante) | Qwen License | Hugging Face, ampliamente extendido |
+| Familia Llama-3.2-3B (referencia de categoria) | 3,21 B | 128.000 tokens (segun documentacion publica del fabricante) | Llama 3.2 Community License | Hugging Face, ampliamente extendido |
 
 Los datos de las dos filas de referencia corresponden a las fichas oficiales de sus respectivos fabricantes y no implican ninguna similitud de rendimiento con el modelo objeto de esta ficha, cuyo comportamiento real es desconocido.
 
@@ -88,7 +88,7 @@ Los datos de las dos filas de referencia corresponden a las fichas oficiales de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-ce763cd5-8bfc-4fb0-be95-9935cb61ffd2-5Expcb185ad1418ef800
+- Repositorio Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-ce763cd5-8bfc-4fb0-be95-9935cb61ffd2-5Expcb185ad1418ef800
 - Otro repositorio del mismo autor con patron similar: https://huggingface.co/cwaud/tournament-exp-s1-ce763cd5-8bfc-4fb0-be95-9935cb61ffd2-5Exp4982e7f6d52475a1
 - Otro repositorio del mismo autor: https://huggingface.co/cwaud/tournament-exp-s1-28c9f3bb-81f7-47b6-9468-4918b98904ed-5Exp15defdb10e5e7362
-- Referencia en agregador de noticias sobre nuevos modelos de HuggingFace: https://www.china-z.net/news/2026-09-24-11-bf975fec.html
+- Referencia en agregador de noticias sobre nuevos modelos de Hugging Face: https://www.china-z.net/news/2026-09-24-11-bf975fec.html

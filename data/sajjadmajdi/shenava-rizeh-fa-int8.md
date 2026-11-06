@@ -106,7 +106,7 @@ La ventaja diferencial de Shenava Rizeh int8 frente a alternativas multilingües
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SajjadMajdi/shenava-rizeh-fa-int8
+- Modelo en Hugging Face: https://huggingface.co/SajjadMajdi/shenava-rizeh-fa-int8
 - Modelo original Shenava Rizeh v1.0, de Reza2kn: no disponible en la información proporcionada
 - Repositorio de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Repositorio de ONNX Runtime: no disponible en la información proporcionada

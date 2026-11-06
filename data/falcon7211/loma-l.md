@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Falcon7211/loma-l` es un modelo publicado en HuggingFace por el usuario Falcon7211, con pesos en formato safetensors y cargable mediante la librería transformers. El dato objetivo disponible es su tamaño: 372.189.475 parámetros (aproximadamente 372 millones), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en hardware de consumo y para ajuste fino en una sola GPU. El repositorio ocupa 3,2 GB.
+`Falcon7211/loma-l` es un modelo publicado en Hugging Face por el usuario Falcon7211, con pesos en formato safetensors y cargable mediante la librería transformers. El dato objetivo disponible es su tamaño: 372.189.475 parámetros (aproximadamente 372 millones), lo que lo sitúa en la categoría de modelos pequeños, aptos para inferencia en hardware de consumo y para ajuste fino en una sola GPU. El repositorio ocupa 3,2 GB.
 
-La información pública es, sin embargo, mínima. La model card es la plantilla automática de HuggingFace y no ha sido cumplimentada: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluación. La búsqueda web realizada no ha devuelto ningún resultado relevante sobre el modelo (los resultados obtenidos corresponden a un servicio de vídeo en streaming y no guardan relación). El tag `loma` es el único indicio nominal sobre la familia a la que pertenece.
+La información pública es, sin embargo, mínima. La model card es la plantilla automática de Hugging Face y no ha sido cumplimentada: no declara desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluación. La búsqueda web realizada no ha devuelto ningún resultado relevante sobre el modelo (los resultados obtenidos corresponden a un servicio de vídeo en streaming y no guardan relación). El tag `loma` es el único indicio nominal sobre la familia a la que pertenece.
 
 Por tanto, esta ficha debe leerse como una evaluación de lo verificable, no de lo declarado. Cualquier decisión de adopción en producción exige inspeccionar la configuración del modelo (`config.json`), el tokenizador y una evaluación empírica propia antes de asumir capacidades, idiomas o licencia. Con 2 descargas y 0 likes en el momento de la consulta, se trata de una publicación sin tracción ni validación comunitaria.
 
@@ -32,7 +32,7 @@ No disponible. La model card no especifica la arquitectura (transformer denso, M
 
 El único dato estructural verificable es el recuento de parámetros (372.189.475). Como referencia aritmética, ese tamaño implica aproximadamente 1,49 GB en fp32, 0,75 GB en fp16/bf16 y 0,19 GB en una cuantización de 4 bits de los pesos. El repositorio ocupa 3,2 GB, por encima del peso teórico en fp32, lo que sugiere la coexistencia de más de un fichero de pesos o de material adicional; es una inferencia a partir de los metadatos, no un dato declarado por el autor.
 
-El identificador `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el artículo sobre el calculador de impacto medioambiental que la plantilla de HuggingFace cita en la sección de emisiones de carbono. No es un paper sobre este modelo y no debe interpretarse como referencia técnica del mismo.
+El identificador `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el artículo sobre el calculador de impacto medioambiental que la plantilla de Hugging Face cita en la sección de emisiones de carbono. No es un paper sobre este modelo y no debe interpretarse como referencia técnica del mismo.
 
 ## Capacidades
 
@@ -83,10 +83,10 @@ Los datos de los modelos alternativos provienen de sus model cards públicas y p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Falcon7211/loma-l | 372,2 M | no disponible | no disponible | HuggingFace, safetensors |
-| SmolLM2-360M | 362 M | 32.768 tokens | Apache-2.0 | HuggingFace, transformers, GGUF |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace, transformers, GGUF, vLLM |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace, transformers, GGUF |
+| Falcon7211/loma-l | 372,2 M | no disponible | no disponible | Hugging Face, safetensors |
+| SmolLM2-360M | 362 M | 32.768 tokens | Apache-2.0 | Hugging Face, transformers, GGUF |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face, transformers, GGUF, vLLM |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face, transformers, GGUF |
 
 Frente a estas alternativas, `loma-l` no ofrece por ahora ninguna ventaja verificable: no documenta contexto, idiomas, licencia ni evaluación, y carece de cuantizaciones publicadas. Los tres modelos de contraste cuentan con model cards completas, licencias permisivas y soporte en herramientas de despliegue estándar.
 
@@ -105,7 +105,7 @@ Frente a estas alternativas, `loma-l` no ofrece por ahora ninguna ventaja verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Falcon7211/loma-l
+- Modelo en Hugging Face: https://huggingface.co/Falcon7211/loma-l
 - Referencia citada en la plantilla de la model card (calculador de impacto medioambiental): Lacoste et al., 2019, https://arxiv.org/abs/1910.09700
 - Calculador ML Impact: https://mlco2.github.io/impact#compute
 - Paper, blog, repositorio de código y demo del modelo: no disponibles. La búsqueda web no ha devuelto resultados relevantes.

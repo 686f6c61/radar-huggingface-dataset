@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| filesmuggler/pi05_cube_cup (este) | 4,14 mil millones | no disponible | apache-2.0 | HuggingFace, 0 descargas | Fine-tune de una sola tarea (cubo en vaso) |
-| lerobot/pi05_base | no disponible (arquitectura equivalente en teoria) | no disponible | no disponible en la informacion | HuggingFace | Modelo base de π₀.₅ en LeRobot; generalista, sin tarea concreta |
+| filesmuggler/pi05_cube_cup (este) | 4,14 mil millones | no disponible | apache-2.0 | Hugging Face, 0 descargas | Fine-tune de una sola tarea (cubo en vaso) |
+| lerobot/pi05_base | no disponible (arquitectura equivalente en teoria) | no disponible | no disponible en la informacion | Hugging Face | Modelo base de π₀.₅ en LeRobot; generalista, sin tarea concreta |
 | π₀ (Physical Intelligence) | no disponible | no disponible | no disponible | OpenPI | Predecesor de π₀.₅; referencia de la familia VLA |
-| Otras policies VLA de LeRobot | no disponible | no disponible | no disponible | HuggingFace | Alternativas de la misma categoria (p. ej. modelos tipo SmolVLA), datos no disponibles en la informacion proporcionada |
+| Otras policies VLA de LeRobot | no disponible | no disponible | no disponible | Hugging Face | Alternativas de la misma categoria (p. ej. modelos tipo SmolVLA), datos no disponibles en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada; la comparacion se limita a categoria, licencia y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/filesmuggler/pi05_cube_cup
+- Modelo en Hugging Face: https://huggingface.co/filesmuggler/pi05_cube_cup
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/filesmuggler/experiment-cube-cup-100-l_diagonal-full
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=filesmuggler/experiment-cube-cup-100-l_diagonal-full

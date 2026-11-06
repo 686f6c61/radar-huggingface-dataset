@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ahmedkindi/master-plan-production` es un repositorio alojado en HuggingFace por el usuario `ahmedkindi` del que solo se dispone de metadatos básicos: la etiqueta de librería `keras`, la etiqueta de región `us`, un tamaño de repositorio de 0.0 GB, 8 descargas y 0 likes. El repositorio se creó el 9 de octubre de 2026 y se actualizó 11 segundos después de su creación, sin que se haya registrado actividad posterior. No se ha publicado información sobre el modelo en sí: ni arquitectura, ni número de parámetros, ni datos de entrenamiento, ni documentación asociada.
+`ahmedkindi/master-plan-production` es un repositorio alojado en Hugging Face por el usuario `ahmedkindi` del que solo se dispone de metadatos básicos: la etiqueta de librería `keras`, la etiqueta de región `us`, un tamaño de repositorio de 0.0 GB, 8 descargas y 0 likes. El repositorio se creó el 9 de octubre de 2026 y se actualizó 11 segundos después de su creación, sin que se haya registrado actividad posterior. No se ha publicado información sobre el modelo en sí: ni arquitectura, ni número de parámetros, ni datos de entrenamiento, ni documentación asociada.
 
 Con estos datos no es posible determinar qué modelo contiene el repositorio ni qué problema resuelve. El tamaño declarado de 0.0 GB sugiere que no hay pesos almacenados en el momento de la consulta, y la ausencia de etiquetas de pipeline, licencia e idiomas es coherente con un repositorio vacío, en construcción o utilizado como marcador de posición. La etiqueta `keras` indica únicamente que, en caso de existir artefactos, estarían en formato compatible con esa librería.
 
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ahmedkindi/master-plan-production | no disponible | no disponible | no disponible | repositorio en HuggingFace con 8 descargas y 0.0 GB declarados |
+| ahmedkindi/master-plan-production | no disponible | no disponible | no disponible | repositorio en Hugging Face con 8 descargas y 0.0 GB declarados |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,8 +105,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ahmedkindi/master-plan-production
-- Perfil del autor en HuggingFace: https://huggingface.co/ahmedkindi
+- Repositorio en Hugging Face: https://huggingface.co/ahmedkindi/master-plan-production
+- Perfil del autor en Hugging Face: https://huggingface.co/ahmedkindi
 - Paper asociado: no disponible
 - Blog o anuncio tecnico: no disponible
 - Repositorio de codigo: no disponible

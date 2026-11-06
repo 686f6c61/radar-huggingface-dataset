@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Speak2Act FunctionGemma 270M es un modelo de lenguaje de tamano muy reducido (270 millones de parametros) publicado en HuggingFace por el usuario stevan-milovanovic. Por su nombre, todo indica que se trata de una variante de la familia Gemma de Google ajustada (fine-tuned) para tareas de function calling, es decir, para interpretar instrucciones en lenguaje natural y convertirlas en llamadas estructuradas a herramientas o funciones, probablemente en el contexto de interfaces de voz a accion (speak-to-act).
+Speak2Act FunctionGemma 270M es un modelo de lenguaje de tamano muy reducido (270 millones de parametros) publicado en Hugging Face por el usuario stevan-milovanovic. Por su nombre, todo indica que se trata de una variante de la familia Gemma de Google ajustada (fine-tuned) para tareas de function calling, es decir, para interpretar instrucciones en lenguaje natural y convertirlas en llamadas estructuradas a herramientas o funciones, probablemente en el contexto de interfaces de voz a accion (speak-to-act).
 
 Su relevancia radica en el tamano: con ~270M de parametros y un repositorio de apenas 0,3 GB, es un candidato claro para ejecucion en dispositivos con recursos muy limitados (moviles, microcontroladores avanzados, edge devices), donde modelos grandes de function calling no son viables. No obstante, la model card esta practicamente vacia: no incluye descripcion, benchmarks, detalles de entrenamiento ni instrucciones de uso, por lo que gran parte de los datos tecnicos concretos no estan disponibles y cualquier evaluacion debera hacerse con cautela.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: muy baja; con ~270M de parametros, en FP16 caberia en menos de 1 GB de VRAM, y cuantizado a 4 bits por debajo de 300 MB.
 - GPU recomendadas: cualquier GPU moderna es mas que suficiente; incluso puede ejecutarse sin GPU dedicada en CPU.
 - Consumer GPUs: perfectamente ejecutable en GPUs de gama baja (GTX 1650, RTX 3050) e incluso en integradas; tambien en moviles y SBCs si el formato de pesos lo permite.
-- Opciones de despliegue: probablemente compatible con llama.cpp y Ollama si se publica en GGUF; con transformers de HuggingFace si el formato es estandar. No hay confirmacion oficial de compatibilidad con vLLM o TGI.
+- Opciones de despliegue: probablemente compatible con llama.cpp y Ollama si se publica en GGUF; con transformers de Hugging Face si el formato es estandar. No hay confirmacion oficial de compatibilidad con vLLM o TGI.
 - Latencia y throughput: no disponibles; por tamano, se espera latencia de decodificacion muy baja (del orden de milisegundos por token en GPU moderna).
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ Frente a estas alternativas, FunctionGemma 270M destaca por su especializacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stevan-milovanovic/speak2act-functiongemma-270m
+- Modelo en Hugging Face: https://huggingface.co/stevan-milovanovic/speak2act-functiongemma-270m
 - Paper, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

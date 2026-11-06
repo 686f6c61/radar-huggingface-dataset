@@ -4,7 +4,7 @@
 
 orcarouter/Qwen3.8-27B-Uncensored-MLX es una adaptación del modelo Qwen3.8-27B de Alibaba, modificada mediante una técnica conocida como *abliteration* (eliminación de la dirección de rechazo) y posteriormente cuantizada para ejecutarse en hardware Apple Silicon mediante la librería MLX. El modelo resultante conserva las capacidades generales del original —razonamiento, visión-lenguaje, tool calling y control de pensamiento— pero con una tasa de rechazo cercana a cero, lo que lo orienta explícitamente a tareas de red teaming y auditoría de seguridad en IA.
 
-La versión MLX se distribuye en formatos cuantizados de 4 y 8 bits, pensados para inferencia eficiente en Macs con chip M-series. El repositorio ocupa 77,7 GB, lo que sugiere que incluye varias versiones cuantizadas o pesos intermedios. El acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace, aunque la licencia declarada es Apache-2.0. Es una herramienta de doble uso: útil para investigadores de seguridad, pero peligrosa si se emplea fuera de entornos controlados.
+La versión MLX se distribuye en formatos cuantizados de 4 y 8 bits, pensados para inferencia eficiente en Macs con chip M-series. El repositorio ocupa 77,7 GB, lo que sugiere que incluye varias versiones cuantizadas o pesos intermedios. El acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face, aunque la licencia declarada es Apache-2.0. Es una herramienta de doble uso: útil para investigadores de seguridad, pero peligrosa si se emplea fuera de entornos controlados.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La versión MLX se distribuye en formatos cuantizados de 4 y 8 bits, pensados pa
 | Longitud de contexto | no disponible (se espera heredada del Qwen3.8-27B, probablemente 128k tokens, pero no confirmado) |
 | Tipos de cuantizacion | MLX 4-bit y 8-bit (según tags) |
 | Idiomas soportados | inglés (en), chino (zh) |
-| Licencia | Apache-2.0 (acceso gated en HuggingFace) |
+| Licencia | Apache-2.0 (acceso gated en Hugging Face) |
 | Formato de pesos | safetensors (MLX), también disponible en FP8 para otras plataformas |
 
 ## Arquitectura y entrenamiento
@@ -71,14 +71,14 @@ No se dispone de otros modelos comparables de la misma categoría (abliterados d
 - Modelo deliberadamente sin mecanismos de rechazo: puede generar contenido peligroso, ilegal, violento o sexualmente explícito. Su uso está restringido a investigación de seguridad y red teaming en entornos controlados.
 - Riesgo elevado de alucinación: al eliminar la dirección de rechazo, el modelo podría afirmar información falsa con mayor confianza, especialmente en dominios sensibles.
 - Idiomas limitados: solo se garantiza inglés y chino; el rendimiento en otros idiomas puede degradarse.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que limita su disponibilidad inmediata.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que limita su disponibilidad inmediata.
 - Cuantización MLX: no es compatible con GPUs NVIDIA o AMD; requiere hardware Apple Silicon.
 - Licencia Apache-2.0 permite uso comercial, pero el autor declara que el propósito es investigación de seguridad; el uso indebido puede acarrear responsabilidades legales.
 - No se han publicado benchmarks formales: el rendimiento real en tareas estándar no está verificado.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX
 - Versión FP8 del mismo autor: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-FP8
 - Artículo sobre la versión FP8 en BestHub: https://www.besthub.dev/articles/how-the-qwen3-8-27b-uncensored-fp8-model-erases-refusal-direction-for-red-team-use-f4554f60dfd3
 - Análisis en SingHfinity: https://singhfinity.com/insights/articles/orcarouter-s-abliterated-qwen3-8-27b-ships-without-the-bf16-weights-or-a-single-

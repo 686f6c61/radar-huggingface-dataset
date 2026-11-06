@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reef-Bleaching-Edge-Audit es un clasificador de imagenes publicado por el usuario SOTAagi2030 en HuggingFace, distribuido en formato ONNX y orientado a inferencia en el borde (edge inference). El modelo recibe fotogramas RGB de camaras de arrecife y los asigna a una de tres clases: `healthy`, `watch` y `bleached`. Su proposito declarado es el triaje offline de fotogramas de muestreo, es decir, priorizar que imagenes requieren revision por parte de un analista antes de recurrir a la verificacion de campo.
+Reef-Bleaching-Edge-Audit es un clasificador de imagenes publicado por el usuario SOTAagi2030 en Hugging Face, distribuido en formato ONNX y orientado a inferencia en el borde (edge inference). El modelo recibe fotogramas RGB de camaras de arrecife y los asigna a una de tres clases: `healthy`, `watch` y `bleached`. Su proposito declarado es el triaje offline de fotogramas de muestreo, es decir, priorizar que imagenes requieren revision por parte de un analista antes de recurrir a la verificacion de campo.
 
 La relevancia del modelo radica en su enfoque de despliegue: al publicarse como artefacto ONNX bajo licencia Apache 2.0 y con la etiqueta `edge-inference`, esta pensado para ejecutarse en hardware con recursos limitados y sin conectividad estable, un escenario habitual en campanas de monitorizacion de arrecifes. El autor advierte de forma explicita que la herramienta no sustituye la verificacion sobre el terreno.
 
@@ -75,13 +75,13 @@ No disponible. La informacion proporcionada no incluye datos de arquitectura, pa
 - Riesgo de sesgo geografico y de dominio: la validacion se realiza sobre transectos de laguna, un unico tipo de habitat. No hay evidencia de que el modelo generalice a arrecifes de barrera, aguas profundas, otras regiones o condiciones de iluminacion y turbidez distintas.
 - Riesgo de alucinacion en el sentido de falsos positivos o falsos negativos: al no publicarse matriz de confusion, se desconoce el comportamiento del modelo ante las clases minoritarias, algo critico en una tarea con clases desbalanceadas como el blanqueamiento.
 - Dependencia del perfil de camara: la entrada debe normalizarse segun `deployment/camera_profile.yaml`. Usar el modelo con otro equipo, optica u ajustes de balance de blancos puede degradar las predicciones de forma no cuantificada.
-- Sin informacion sobre idiomas: irrelevante para la tarea, pero la ficha de HuggingFace no declara idiomas soportados.
+- Sin informacion sobre idiomas: irrelevante para la tarea, pero la ficha de Hugging Face no declara idiomas soportados.
 - Sin adopcion verificable: cero descargas y cero likes en el momento de la consulta. No hay evidencia de uso en produccion ni de validacion por terceros.
 - Licencia Apache 2.0: permite uso comercial y modificacion con obligacion de conservar el aviso de licencia y el archivo NOTICE si existe. No impone restricciones adicionales, pero la ausencia de pesos y de documentacion limita su utilidad practica.
 - Fechas de publicacion y actualizacion (22 de septiembre de 2026) separadas por menos de un minuto, lo que sugiere un repositorio subido de forma automatizada y sin curacion posterior.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Reef-Bleaching-Edge-Audit
+- Hugging Face: https://huggingface.co/SOTAagi2030/Reef-Bleaching-Edge-Audit
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a un paper asociado, a un blog tecnico ni a un repositorio de codigo. Los resultados devueltos trataban sobre conversion de numerales y traduccion de texto, sin relacion con esta ficha.
 - Rutas internas citadas en la model card (no verificables como enlaces publicos): `deployment/camera_profile.yaml` y `audit/lagoon_holdout.jsonl`.

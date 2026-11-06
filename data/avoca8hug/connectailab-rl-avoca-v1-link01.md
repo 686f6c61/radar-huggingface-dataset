@@ -68,9 +68,9 @@ El techo de precision impuesto por la serializacion textual es del 99 %. La eval
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-avoca-v1-link01 | 0,8 mil millones (base) + LoRA | No disponible | Decision discreta para LINK-01 (`avoid_obstacles`) | Apache 2.0 | HuggingFace, 19 descargas |
+| connectailab-rl-avoca-v1-link01 | 0,8 mil millones (base) + LoRA | No disponible | Decision discreta para LINK-01 (`avoid_obstacles`) | Apache 2.0 | Hugging Face, 19 descargas |
 | Cerebro PPO profesor (referencia interna) | No disponible (politica RL) | No aplica | Misma tarea, misma evaluacion | No disponible | Referenciado en la model card, no publicado como modelo |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8 mil millones | No disponible | Generacion de texto general | No disponible en la informacion | HuggingFace |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8 mil millones | No disponible | Generacion de texto general | No disponible en la informacion | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores de decision comparables en la misma categoria publicados por el mismo autor.
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros adaptadores de decision comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avoca8Hug/connectailab-rl-avoca-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/avoca8Hug/connectailab-rl-avoca-v1-link01
 - Repositorio de codigo de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

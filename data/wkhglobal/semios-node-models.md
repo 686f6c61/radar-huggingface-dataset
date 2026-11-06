@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | `WKHGlobal/semios-node-models` (repositorio) | no disponible | no disponible | GGUF (Q4_K_M) | other | Repositorio propio, 0 descargas |
 | Qwen3-4B-Instruct-2507 (base de `curator-slm-v6`) | 4B (segun denominacion del modelo base) | no disponible | safetensors / GGUF segun distribucion del autor | no disponible | Modelo base publico de origen |
-| `bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF` (fuente del espejo) | no disponible | no disponible | GGUF | no disponible | Publico en HuggingFace |
-| DeepSeek-Coder-V2-Lite-Instruct (modelo original espejado) | no disponible | no disponible | safetensors / GGUF | no disponible | Publico en HuggingFace |
+| `bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF` (fuente del espejo) | no disponible | no disponible | GGUF | no disponible | Publico en Hugging Face |
+| DeepSeek-Coder-V2-Lite-Instruct (modelo original espejado) | no disponible | no disponible | safetensors / GGUF | no disponible | Publico en Hugging Face |
 
 La comparacion se limita a identificar el origen de cada artefacto, ya que el repositorio analizado no publica datos de rendimiento, contexto ni parametros que permitan una comparacion cuantitativa.
 
@@ -94,7 +94,7 @@ La comparacion se limita a identificar el origen de cada artefacto, ya que el re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WKHGlobal/semios-node-models
+- Repositorio en Hugging Face: https://huggingface.co/WKHGlobal/semios-node-models
 - Maestro de Semios citado en la model card: `mesh.semios.global/install/models/`
 - Manifiesto del instalador de nodos citado: `packaging/peer_model_manifest.json`
 - Fuente del espejo de codigo: `bartowski/DeepSeek-Coder-V2-Lite-Instruct-GGUF`

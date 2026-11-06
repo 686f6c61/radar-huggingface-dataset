@@ -128,7 +128,7 @@ Velocidad:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ashlyn4202025/gemma4-31b-w4a8-gptq-dflash2
+- Modelo en Hugging Face: https://huggingface.co/Ashlyn4202025/gemma4-31b-w4a8-gptq-dflash2
 - Variante round-to-nearest del mismo autor: https://huggingface.co/Ashlyn4202025/gemma4-31b-w4a8-dflash2
 - Especulador DFlash2 de RedHatAI: https://huggingface.co/RedHatAI/gemma-4-31B-it-speculator.dflash2
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

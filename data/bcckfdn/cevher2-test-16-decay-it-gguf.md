@@ -77,6 +77,6 @@ Nota: los datos de la comparativa corresponden a modelos públicos conocidos; pa
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it
 - No se han encontrado otros enlaces relevantes (paper, blog o demo) en la información disponible.

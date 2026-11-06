@@ -90,7 +90,7 @@ La comparación directa con Llama 3.1 8B o Qwen 2.5 7B no está disponible en lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q4
+- Repositorio Hugging Face: https://huggingface.co/shoemoney/Ornith-1.5-9B-Abliterated-MLX-q4
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Modelo original Ornith-1.5-9B: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Versión MLX 6-bit del original: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-6bit

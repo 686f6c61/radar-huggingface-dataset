@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-2b-vl-latex-ocr-GGUF es una cuantizacion en formato GGUF del modelo multimodal ertghiu256/Qwen3-2b-vl-latex-ocr, un ajuste fino especializado en reconocimiento optico de caracteres (OCR) de formulas LaTeX a partir de imagenes. El modelo original parte de la familia Qwen3-VL de Alibaba (arquitectura qwen3_vl) y ha sido entrenado por el usuario ertghiu256 sobre el dataset unsloth/LaTeX_OCR para la tarea concreta de transcribir expresiones matematicas a codigo LaTeX. Esta version GGUF la publica mradermacher, un conocido cuantizador de la comunidad que convierte modelos de HuggingFace a formatos ligeros ejecutables en CPU y GPU de consumo.
+Qwen3-2b-vl-latex-ocr-GGUF es una cuantizacion en formato GGUF del modelo multimodal ertghiu256/Qwen3-2b-vl-latex-ocr, un ajuste fino especializado en reconocimiento optico de caracteres (OCR) de formulas LaTeX a partir de imagenes. El modelo original parte de la familia Qwen3-VL de Alibaba (arquitectura qwen3_vl) y ha sido entrenado por el usuario ertghiu256 sobre el dataset unsloth/LaTeX_OCR para la tarea concreta de transcribir expresiones matematicas a codigo LaTeX. Esta version GGUF la publica mradermacher, un conocido cuantizador de la comunidad que convierte modelos de Hugging Face a formatos ligeros ejecutables en CPU y GPU de consumo.
 
 El interes practico del modelo reside en su tamano reducido (1.720.574.976 parametros reales en safetensors, es decir, aproximadamente 1,7 mil millones) y en la disponibilidad de cuantizaciones desde Q2_K (0,9 GB) hasta f16 (3,5 GB), lo que permite desplegarlo en equipos muy modestos, incluso sin GPU dedicada. La licencia Apache 2.0 facilita su uso comercial y su integracion en pipelines de digitalizacion de documentos cientificos, apuntes manuscritos o libros de texto con formulas.
 
@@ -32,7 +32,7 @@ La innovacion principal de esta publicacion no es arquitectonica sino de distrib
 - Reconocimiento optico de caracteres especializado en formulas matematicas y su transcripcion a codigo LaTeX.
 - Procesamiento de imagenes junto con texto (modelo vision-lenguaje), segun la arquitectura qwen3_vl del modelo base.
 - Generacion de texto conversacional, ya que el modelo base es un modelo de lenguaje Qwen3.
-- Soporte de plantilla conversacional (tag conversational en HuggingFace).
+- Soporte de plantilla conversacional (tag conversational en Hugging Face).
 - Compatibilidad con text-generation-inference y con endpoints compatibles (tag endpoints_compatible).
 - Capacidades multilingues limitadas al ingles segun la model card (language: en).
 - No se documenta soporte de tool calling, function calling, agentes multi-paso, modo thinking, audio ni otras capacidades especiales en la informacion disponible.
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/Qwen3-2b-vl-latex-ocr-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/Qwen3-2b-vl-latex-ocr-GGUF
 - Modelo base: https://huggingface.co/ertghiu256/Qwen3-2b-vl-latex-ocr
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Qwen3-2b-vl-latex-ocr-GGUF
 - Dataset de entrenamiento: https://huggingface.co/datasets/unsloth/LaTeX_OCR

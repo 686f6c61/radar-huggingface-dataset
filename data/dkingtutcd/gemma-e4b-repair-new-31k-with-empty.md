@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-repair-new-31k-with-empty` es un ajuste fino (finetune) del modelo multimodal Gemma 4 E4B en su variante instruct cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`). Lo publica el usuario dkingtutcd en HuggingFace y está pensado para tareas de image-text-to-text, es decir, generación de texto condicionada por imágenes de entrada. El nombre sugiere un entrenamiento de "reparación" sobre un conjunto de unos 31.000 ejemplos con ejemplos vacíos, aunque la model card no documenta la composición del dataset.
+`dkingtutcd/gemma-e4b-repair-new-31k-with-empty` es un ajuste fino (finetune) del modelo multimodal Gemma 4 E4B en su variante instruct cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`). Lo publica el usuario dkingtutcd en Hugging Face y está pensado para tareas de image-text-to-text, es decir, generación de texto condicionada por imágenes de entrada. El nombre sugiere un entrenamiento de "reparación" sobre un conjunto de unos 31.000 ejemplos con ejemplos vacíos, aunque la model card no documenta la composición del dataset.
 
 El modelo resultante se distribuye en FP16 (16 bits) y contiene 7.996.156.490 parámetros según los safetensors del repositorio, con un tamaño de repo de 16 GB. Es relevante como ejemplo de flujo de trabajo Unsloth + TRL para especializar un modelo base Gemma 4 en un dominio concreto, pero su documentación es mínima: no hay benchmarks, no se describe el dataset y no se detallan las decisiones de entrenamiento.
 
@@ -25,7 +25,7 @@ La licencia declarada es Apache 2.0 y el único idioma declarado es el inglés. 
 
 El modelo es un finetune del Gemma 4 E4B instruct de Unsloth. No se dispone de información sobre el número de capas, la configuración de atención ni el mecanismo de fusión visión-lenguaje, más allá de que la pipeline declarada es image-text-to-text y de que el tag `gemma4` identifica la familia. El modelo base de partida estaba cuantizado en 4 bits (bitsandbytes), y el autor publica el resultado final en FP16.
 
-El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según indica la model card, que destaca un entrenamiento "2x faster" gracias a Unsloth. No se especifican el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF/DPO ni hiperparámetros. El nombre del repositorio ("repair-new-31k-with-empty") apunta a un dataset de aproximadamente 31.000 ejemplos con casos vacíos, pero esta interpretación no está confirmada por el autor.
+El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según indica la model card, que destaca un entrenamiento "2x faster" gracias a Unsloth. No se especifican el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF/DPO ni hiperparámetros. El nombre del repositorio ("repair-new-31k-with-empty") apunta a un dataset de aproximadamente 31.000 ejemplos con casos vacíos, pero esta interpretación no está confirmada por el autor.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, seg�
 - Etiquetado y clasificación de contenido visual: útil para preprocesar catálogos de productos o archivos fotográficos generando metadatos textuales en inglés.
 - Asistencia en accesibilidad: generación de texto alternativo para imágenes en aplicaciones web, con la salvedad de que requiere validación humana por el riesgo de alucinación.
 - Extracción de información de documentos escaneados: el modelo puede responder preguntas sobre capturas o digitalizaciones, siempre que el contexto visual esté bien delimitado.
-- Prototipado de asistentes conversacionales multimodales: al estar en formato transformers y safetensors, se integra fácilmente en pipelines de HuggingFace para pruebas de concepto.
+- Prototipado de asistentes conversacionales multimodales: al estar en formato transformers y safetensors, se integra fácilmente en pipelines de Hugging Face para pruebas de concepto.
 - Reproducción de experimentos de finetune: sirve como referencia para equipos que quieran replicar el flujo Unsloth + TRL sobre Gemma 4 E4B en sus propios dominios.
 - Moderación de contenido visual asistida: generación de descripciones para revisión humana en flujos de moderación, sin sustituir la decisión final.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dkingtutcd/gemma-e4b-repair-new-31k-with-empty | ~8.000 M | no disponible | Sí (image-text-to-text) | Apache 2.0 | HuggingFace, 19 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8.000 M | no disponible | Sí | Apache 2.0 (según tag) | HuggingFace, ampliamente usado |
-| Gemma 4 E4B instruct original | ~8.000 M | no disponible | Sí | Términos de Gemma | HuggingFace, distribución oficial |
-| Alternativas de ~8B multimodales (p. ej. familia Qwen-VL o Llama 3.2 Vision) | ~8.000-11.000 M | variable según variante | Sí | variable | HuggingFace |
+| dkingtutcd/gemma-e4b-repair-new-31k-with-empty | ~8.000 M | no disponible | Sí (image-text-to-text) | Apache 2.0 | Hugging Face, 19 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | ~8.000 M | no disponible | Sí | Apache 2.0 (según tag) | Hugging Face, ampliamente usado |
+| Gemma 4 E4B instruct original | ~8.000 M | no disponible | Sí | Términos de Gemma | Hugging Face, distribución oficial |
+| Alternativas de ~8B multimodales (p. ej. familia Qwen-VL o Llama 3.2 Vision) | ~8.000-11.000 M | variable según variante | Sí | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para este finetune concreto; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para este finetune concreto; l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-31k-with-empty
+- Modelo en Hugging Face: https://huggingface.co/dkingtutcd/gemma-e4b-repair-new-31k-with-empty
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

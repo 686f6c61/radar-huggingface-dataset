@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708
+- Modelo en Hugging Face: https://huggingface.co/OpenMOSS-Team/MOSS-VL-Instruct-0708
 - Repositorio GitHub: https://github.com/OpenMOSS/MOSS-VL
 - Página del proyecto OpenMOSS: https://openmoss.ai/MOSS-VL/moss-vl.html
 - Informe técnico (arXiv): https://arxiv.org/pdf/2608.15045

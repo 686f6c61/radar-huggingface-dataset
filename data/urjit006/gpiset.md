@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/urjit006/GPiSeT
+- Hugging Face: https://huggingface.co/urjit006/GPiSeT
 - Artículo (referencia en LinkedIn): "GPiSeT: Guidance Fused Pixel-Level Cell Segmentation Framework with Transformer Backbone", aceptado en EMBC 2026 (sin enlace directo disponible).
 - Perfil del autor en LinkedIn: https://ae.linkedin.com/in/urjitmehta

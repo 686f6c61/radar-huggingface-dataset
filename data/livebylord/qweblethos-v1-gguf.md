@@ -86,7 +86,7 @@ No se dispone de informacion sobre otros fine-tunes de Qwen3.8-27B en la documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/livebylord/Qweblethos-v1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/livebylord/Qweblethos-v1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset `lordx64/agentic-distill-fable-5-sft`: https://huggingface.co/datasets/lordx64/agentic-distill-fable-5-sft
 - Dataset `greghavens/fable-5-coding-and-debugging-traces`: https://huggingface.co/datasets/greghavens/fable-5-coding-and-debugging-traces

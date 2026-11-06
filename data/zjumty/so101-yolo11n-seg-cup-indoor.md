@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estándar (COCO, MMLU, HumanEval, G
 
 | Modelo | Tarea | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zjumty/so101-yolo11n-seg-cup-indoor` | Segmentación de un vaso en escena interior sintética | no disponible (variante "n") | 640 px | AGPL-3.0 | HuggingFace, 57 descargas |
+| `zjumty/so101-yolo11n-seg-cup-indoor` | Segmentación de un vaso en escena interior sintética | no disponible (variante "n") | 640 px | AGPL-3.0 | Hugging Face, 57 descargas |
 | `zjumty/so101-yolo11n-seg-plastic-cup` (Teacher) | Segmentación de vaso de plástico | no disponible (variante "n") | 640 px | AGPL-3.0 (presumible, pesos YOLO) | Pesos base citados, no verificados en la información |
 | YOLO11n-seg original (Ultralytics) | Segmentación de instancias genérica (COCO) | no disponible | 640 px | AGPL-3.0 | Público en Ultralytics |
-| Detectores genéricos de un solo objeto (p. ej. fine-tunes de YOLOv8n-seg) | Segmentación específica | no disponible | 640 px | AGPL-3.0 | Público en HuggingFace |
+| Detectores genéricos de un solo objeto (p. ej. fine-tunes de YOLOv8n-seg) | Segmentación específica | no disponible | 640 px | AGPL-3.0 | Público en Hugging Face |
 
 La comparación cuantitativa con alternativas no está disponible: el autor solo compara contra sus propios pesos anteriores, no contra otros detectores.
 
@@ -97,7 +97,7 @@ La comparación cuantitativa con alternativas no está disponible: el autor solo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zjumty/so101-yolo11n-seg-cup-indoor
+- Modelo en Hugging Face: https://huggingface.co/zjumty/so101-yolo11n-seg-cup-indoor
 - Dataset de entrenamiento: https://huggingface.co/datasets/zjumty/so101-indoor-cup-seg-synth
 - Pesos base citados: `so101-yolo11n-seg-plastic-cup` (sha256 `f281d252…`, sin URL verificada en la información)
 - Ultralytics YOLO11: https://github.com/ultralytics/ultralytics

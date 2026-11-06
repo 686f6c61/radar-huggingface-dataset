@@ -86,8 +86,8 @@ La comparativa muestra que Qwen3.8-27B ofrece una ventana de contexto superior (
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/hailun-core/Qwen3.8-27B-mlx-6Bit
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/hailun-core/Qwen3.8-27B-mlx-6Bit
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía para ejecutar Qwen3.8-27B localmente (24GB Mac y GPU): https://modelfit.io/blog/run-qwen38-27b-locally-2026/
 - Guía completa de Qwen3.8-27B (2026): https://lovableapp.org/blog/qwen3-8-27b

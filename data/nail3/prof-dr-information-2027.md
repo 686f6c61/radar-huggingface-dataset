@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nail3/Prof-Dr-Information-2027` es un modelo publicado en HuggingFace por el usuario `nail3` el 28 de septiembre de 2026, con licencia MIT y pesos en formato safetensors. El repositorio ocupa 0,3 GB y no acumula descargas ni "likes" en el momento de la consulta. La model card asociada está vacía: unicamente contiene la declaracion de licencia (`license: mit`) en el frontmatter, sin descripcion, sin tabla de especificaciones y sin referencias a paper, repositorio de codigo o dataset de entrenamiento.
+`nail3/Prof-Dr-Information-2027` es un modelo publicado en Hugging Face por el usuario `nail3` el 28 de septiembre de 2026, con licencia MIT y pesos en formato safetensors. El repositorio ocupa 0,3 GB y no acumula descargas ni "likes" en el momento de la consulta. La model card asociada está vacía: unicamente contiene la declaracion de licencia (`license: mit`) en el frontmatter, sin descripcion, sin tabla de especificaciones y sin referencias a paper, repositorio de codigo o dataset de entrenamiento.
 
 Esto significa que no hay informacion publica verificable sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados, la composicion de los datos de entrenamiento ni el pipeline de inferencia. El unico dato estructural disponible es la etiqueta `safetensors` y el tamano del repositorio, que permite una estimacion muy grosera del orden de magnitud de los pesos, pero no una ficha tecnica fiable.
 
@@ -32,7 +32,7 @@ Tampoco hay datos sobre el entrenamiento: no se indica el volumen de tokens, la 
 
 ## Capacidades
 
-No es posible enumerar capacidades concretas a partir de la informacion disponible. La model card no declara tareas soportadas, no especifica un pipeline de HuggingFace y no aporta ejemplos de uso. En consecuencia:
+No es posible enumerar capacidades concretas a partir de la informacion disponible. La model card no declara tareas soportadas, no especifica un pipeline de Hugging Face y no aporta ejemplos de uso. En consecuencia:
 
 - Generacion de texto: no disponible.
 - Razonamiento, matematicas y generacion de codigo: no disponible.
@@ -89,5 +89,5 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nail3/Prof-Dr-Information-2027
+- Hugging Face: https://huggingface.co/nail3/Prof-Dr-Information-2027
 - No se han encontrado otros enlaces relevantes (paper, blog tecnico, repositorio de codigo, demo o dataset) en la informacion disponible.

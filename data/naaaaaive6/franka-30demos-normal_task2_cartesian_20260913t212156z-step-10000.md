@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000` es un checkpoint de robótica publicado en HuggingFace por el usuario NaaaaaiVe6, etiquetado con las etiquetas `openpi`, `pi05`, `robotics` y `safetensors`. Se trata de una política de control para un brazo robótico Franka, es decir, un modelo de visión-lenguaje-acción (VLA) que recibe observaciones visuales y de estado del robot y emite comandos de movimiento, en lugar de un modelo de lenguaje generativo. El checkpoint corresponde al paso 10.000 de entrenamiento y fue convertido de JAX a PyTorch en precisión bfloat16 conservando la configuración original de entrenamiento para Franka.
+El modelo `NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000` es un checkpoint de robótica publicado en Hugging Face por el usuario NaaaaaiVe6, etiquetado con las etiquetas `openpi`, `pi05`, `robotics` y `safetensors`. Se trata de una política de control para un brazo robótico Franka, es decir, un modelo de visión-lenguaje-acción (VLA) que recibe observaciones visuales y de estado del robot y emite comandos de movimiento, en lugar de un modelo de lenguaje generativo. El checkpoint corresponde al paso 10.000 de entrenamiento y fue convertido de JAX a PyTorch en precisión bfloat16 conservando la configuración original de entrenamiento para Franka.
 
 La relevancia de esta publicación es acotada y muy específica: se trata de un artefacto de investigación asociado a una única tarea (`task2`) y, según indica el propio identificador del repositorio, a un conjunto reducido de 30 demostraciones. Con 3.616.757.520 parámetros almacenados en un repositorio de 7,2 GB, su interés principal es servir como punto de partida para reproducir, evaluar o continuar el ajuste de una política concreta dentro del ecosistema openpi.
 
@@ -46,7 +46,7 @@ El aspecto técnico más relevante documentado es la representación de acciones
 - Evaluación de políticas en simulación: puede integrarse en un bucle de evaluación que alimente observaciones de cámara y estado y consuma las ocho coordenadas de acción, comparando el rendimiento con otras variantes del mismo entrenamiento.
 - Análisis de representación de acciones: útil para estudiar las diferencias entre control cartesiano absoluto y control por deltas de controlador en esta plataforma.
 - Instrumentación y depuración de pipelines de robótica: el repositorio incluye `log.txt` con el formato de salida, los límites de normalización y las convenciones del controlador, lo que permite validar la integración antes de desplegar el modelo en hardware real.
-- Docencia y divulgación técnica: como ejemplo real de publicación de checkpoints de robótica en HuggingFace con conversión de framework y requisitos de normalización explícitos.
+- Docencia y divulgación técnica: como ejemplo real de publicación de checkpoints de robótica en Hugging Face con conversión de framework y requisitos de normalización explícitos.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ La informacion proporcionada no incluye datos de otros modelos comparables, por 
 
 | Modelo | Parametros | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`franka-30demos-normal_task2_cartesian`, paso 10000) | 3.616.757.520 | Acciones cartesianas absolutas, 50 pasos x 32 coordenadas | No disponible | Publicado en HuggingFace, 0 descargas |
+| Este checkpoint (`franka-30demos-normal_task2_cartesian`, paso 10000) | 3.616.757.520 | Acciones cartesianas absolutas, 50 pasos x 32 coordenadas | No disponible | Publicado en Hugging Face, 0 descargas |
 | Checkpoints base del ecosistema `openpi` / `pi05` | No disponible | No disponible | No disponible | No disponible en la informacion consultada |
 | Otros modelos VLA para robotica | No disponible | No disponible | No disponible | No disponible en la informacion consultada |
 
@@ -87,7 +87,7 @@ La informacion proporcionada no incluye datos de otros modelos comparables, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000
 - Fichero de log citado en la model card: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000/blob/main/log.txt
 - Estadisticas de normalizacion citadas en la model card: https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000/blob/main/assets/franka/norm_stats.json
 

@@ -72,7 +72,7 @@ No hay disponibles modelos comparables de referencia en la información proporci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ProCreations/booper-pretrain)
+- [Modelo en Hugging Face](https://huggingface.co/ProCreations/booper-pretrain)
 - [Repositorio babble (kowo-co/babble)](https://github.com/kowo-co/babble)
 - [Dataset Ultra-FineWeb-L1](https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L1)
 - [Post de ProCreations sobre el entrenamiento](https://huggingface.co/posts/ProCreations/855858308074329)

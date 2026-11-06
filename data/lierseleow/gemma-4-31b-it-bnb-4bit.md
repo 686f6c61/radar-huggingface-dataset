@@ -73,8 +73,8 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado](https://huggingface.co/lierseleow/gemma-4-31B-it-bnb-4bit)
-- [HuggingFace del modelo base](https://huggingface.co/google/gemma-4-31B-it)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/lierseleow/gemma-4-31B-it-bnb-4bit)
+- [Hugging Face del modelo base](https://huggingface.co/google/gemma-4-31B-it)
 - [Página oficial de Gemma 4 en DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Model card oficial de Gemma 4 en Google AI](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Colección de Gemma 4 en unsloth](https://huggingface.co/collections/unsloth/gemma-4)

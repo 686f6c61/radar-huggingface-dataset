@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Myriad-MoE-25K-Micro-Experts | 0,9B activos declarados; total no disponible | no disponible | 29-31 tokens/s declarados; sin benchmarks de calidad | apache-2.0 | HuggingFace, libreria pytorch con runtime propio; 0 descargas |
-| Qwen3-0.6B (modelo base declarado) | 0,6B | 32.768 tokens segun la documentacion de Qwen3 | no disponible en la informacion proporcionada | apache-2.0 | HuggingFace, ecosistema estandar de transformers |
-| SmolMoE-8x135M (proyecto del mismo autor, citado en resultados de busqueda) | no disponible | no disponible | no disponible | no disponible | HuggingFace, perfil del autor |
+| Myriad-MoE-25K-Micro-Experts | 0,9B activos declarados; total no disponible | no disponible | 29-31 tokens/s declarados; sin benchmarks de calidad | apache-2.0 | Hugging Face, libreria pytorch con runtime propio; 0 descargas |
+| Qwen3-0.6B (modelo base declarado) | 0,6B | 32.768 tokens segun la documentacion de Qwen3 | no disponible en la informacion proporcionada | apache-2.0 | Hugging Face, ecosistema estandar de transformers |
+| SmolMoE-8x135M (proyecto del mismo autor, citado en resultados de busqueda) | no disponible | no disponible | no disponible | no disponible | Hugging Face, perfil del autor |
 
 No se dispone de otros modelos comparables con datos verificables en la informacion proporcionada. El propio autor presenta Myriad-MoE como una arquitectura de 0,9B de parametros activos que aspira a igualar capacidades de lineas base de 7B o mas, pero no aporta ninguna evaluacion que respalde esa afirmacion frente a modelos de esa categoria (por ejemplo, Qwen3-8B o MoE como Qwen3-30B-A3B), por lo que la comparacion de calidad no puede establecerse.
 
@@ -99,13 +99,13 @@ No se dispone de otros modelos comparables con datos verificables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aifeifei798/Myriad-MoE-25K-Micro-Experts
+- Modelo en Hugging Face: https://huggingface.co/aifeifei798/Myriad-MoE-25K-Micro-Experts
 - README en chino simplificado: https://huggingface.co/aifeifei798/Myriad-MoE-25K/blob/main/README_zh_cn.md
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Propuesta de integracion en Transformers (issue 49183): https://github.com/huggingface/transformers/issues/49183
 - Licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - DOI del modelo: doi:10.57967/hf/10685
-- Perfil del autor en HuggingFace: https://huggingface.co/aifeifei798
+- Perfil del autor en Hugging Face: https://huggingface.co/aifeifei798
 - Colecciones del autor: https://huggingface.co/aifeifei798/collections
 - Proyecto SmolMoE-8x135M del mismo autor: https://huggingface.co/aifeifei798
 - Articulo sobre "super experts" en MoE (arXiv 2507.23279): https://arxiv.org/abs/2507.23279

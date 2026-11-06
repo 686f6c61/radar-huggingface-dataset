@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tomas0626/amparo-lora-qwen2.5-7b` es un adaptador LoRA (PEFT) entrenado mediante supervisión fina (SFT) sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata por tanto de un modelo con pesos completos, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para poder realizar inferencia. El repositorio publica los ficheros en formato safetensors y declara la librería `peft` junto con las etiquetas `lora`, `sft`, `transformers` y `trl`, lo que indica un flujo de entrenamiento típico con la librería TRL de HuggingFace.
+`Tomas0626/amparo-lora-qwen2.5-7b` es un adaptador LoRA (PEFT) entrenado mediante supervisión fina (SFT) sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata por tanto de un modelo con pesos completos, sino de un conjunto de matrices de bajo rango que deben cargarse junto al modelo base para poder realizar inferencia. El repositorio publica los ficheros en formato safetensors y declara la librería `peft` junto con las etiquetas `lora`, `sft`, `transformers` y `trl`, lo que indica un flujo de entrenamiento típico con la librería TRL de Hugging Face.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: la model card publicada es la plantilla por defecto sin rellenar, con todos los campos marcados como «More Information Needed». El autor no documenta el dataset de entrenamiento, los hiperparámetros, la licencia, los idiomas objetivo ni ningún resultado de evaluación. El repositorio aparece con 0 descargas y 0 likes, y el tamaño declarado es de 0.0 GB, por lo que se desconoce incluso el volumen real de los pesos del adaptador.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| amparo-lora-qwen2.5-7b | Adaptador LoRA sobre 7,61B | Heredado del base (32.768 / 131.072) | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen2.5-7B-Instruct | 7,61B | 32.768 nativo, 131.072 ampliado | Apache 2.0 | HuggingFace, ampliamente usado | Publicado por el autor del modelo base |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 131.072 | Llama 3.1 Community License | HuggingFace, acceso con aceptacion de terminos | Publicado por Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache 2.0 | HuggingFace | Publicado por Mistral AI |
+| amparo-lora-qwen2.5-7b | Adaptador LoRA sobre 7,61B | Heredado del base (32.768 / 131.072) | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen2.5-7B-Instruct | 7,61B | 32.768 nativo, 131.072 ampliado | Apache 2.0 | Hugging Face, ampliamente usado | Publicado por el autor del modelo base |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 131.072 | Llama 3.1 Community License | Hugging Face, acceso con aceptacion de terminos | Publicado por Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache 2.0 | Hugging Face | Publicado por Mistral AI |
 
 La comparacion de rendimiento entre el adaptador y las alternativas no puede realizarse: no existe ningun dato de evaluacion del adaptador, y ademas un LoRA no es estrictamente comparable con un modelo completo, ya que depende del modelo base sobre el que se aplique.
 
@@ -87,7 +87,7 @@ La comparacion de rendimiento entre el adaptador y las alternativas no puede rea
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tomas0626/amparo-lora-qwen2.5-7b
+- Repositorio Hugging Face: https://huggingface.co/Tomas0626/amparo-lora-qwen2.5-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL: https://github.com/huggingface/trl

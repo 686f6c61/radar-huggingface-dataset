@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "siamcafe/bomai",
+  "slug": "siamcafe-bomai",
+  "author": "siamcafe",
+  "url": "https://huggingface.co/siamcafe/bomai",
+  "created_at": "2026-11-04T23:34:02.000Z",
+  "updated_at": "2026-11-06T10:30:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153729,
+  "storage_human": "153729 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siamcafe/bom-ai at main - Hugging Face",
+      "url": "https://huggingface.co/siamcafe/bom-ai/tree/main",
+      "snippet": "siamcafe / bom-ai Like 0 GGUF Thai English thai vision qwen3 q4_k_m conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "siamcafe/bom-ai · Hugging Face",
+      "url": "https://huggingface.co/siamcafe/bom-ai",
+      "snippet": "Machine learning model with 4B parameters, built with GGUF. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

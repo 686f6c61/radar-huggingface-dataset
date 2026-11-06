@@ -34,7 +34,7 @@ El checkpoint emplea `nvidia-modelopt` 0.43.0, conserva en BF16 la `lm_head`, lo
 
 El modelo base es un transformer denso de 32 capas con un esquema de atención híbrido poco habitual: 27 de las 32 capas aplican una ventana deslizante de solo 128 tokens y una puerta (`g_proj`), mientras que únicamente 5 capas mantienen atención global sobre todo el contexto. Este diseño reduce drásticamente el coste de la caché KV —en el ejemplo de despliegue, con 32K de longitud máxima, vLLM asignó 15,98 GiB de caché KV equivalentes a 416.117 tokens— pero implica que la mayor parte de la capacidad de recuperación a larga distancia recae en 5 capas. La arquitectura se distribuye como código personalizado (`ZgcmForCausalLM`), y el propio autor señala que vLLM no tiene implementación nativa de ZGCM: el código remoto redirige la atención al propio motor.
 
-No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en el modelo base. La model card del modelo base indica que fue entrenado desde cero para razonamiento matemático y búsqueda agéntica, con modos de thinking y de respuesta directa. La innovación técnica documentada aquí corresponde exclusivamente al proceso de cuantización: se aplicó `mtq.quantize` con `NVFP4_DEFAULT_CFG` sobre 251 capas lineales, excluyendo `*lm_head*` y `*embed_tokens*`, con posterior corrección del export de HuggingFace de modelopt 0.43 (inyección de `input_scale = 1.0` en las 251 lineales, activación de `input_activations.dynamic = true`, inclusión de `lm_head` en `quantization_config.ignore` y fijado de `quant_algo` a `W4A16_NVFP4` en `config.json` y `hf_quant_config.json`).
+No se dispone en la información proporcionada de detalles sobre el número de tokens de entrenamiento, la composición del dataset ni el uso de RLHF o DPO en el modelo base. La model card del modelo base indica que fue entrenado desde cero para razonamiento matemático y búsqueda agéntica, con modos de thinking y de respuesta directa. La innovación técnica documentada aquí corresponde exclusivamente al proceso de cuantización: se aplicó `mtq.quantize` con `NVFP4_DEFAULT_CFG` sobre 251 capas lineales, excluyendo `*lm_head*` y `*embed_tokens*`, con posterior corrección del export de Hugging Face de modelopt 0.43 (inyección de `input_scale = 1.0` en las 251 lineales, activación de `input_activations.dynamic = true`, inclusión de `lm_head` en `quantization_config.ignore` y fijado de `quant_algo` a `W4A16_NVFP4` en `config.json` y `hf_quant_config.json`).
 
 ## Capacidades
 
@@ -132,7 +132,7 @@ Comparativa con alternativas de otros autores: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kaleto/ZGCM-1-7B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/Kaleto/ZGCM-1-7B-NVFP4
 - Modelo base: https://huggingface.co/zgcagi/ZGCM-1-7B
 - Licencia del modelo base: https://huggingface.co/zgcagi/ZGCM-1-7B/blob/main/LICENSE
 - nvidia-modelopt (TensorRT Model Optimizer): https://github.com/NVIDIA/TensorRT-Model-Optimizer

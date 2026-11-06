@@ -77,6 +77,6 @@ La comparación es limitada porque no hay datos de rendimiento para mergekit-19.
 
 ## Enlaces
 
-- [HuggingFace - MergekitCloud/mergekit-19](https://huggingface.co/MergekitCloud/mergekit-19)
+- [Hugging Face - MergekitCloud/mergekit-19](https://huggingface.co/MergekitCloud/mergekit-19)
 - [Repositorio de mergekit en GitHub](https://github.com/arcee-ai/mergekit)
 - [Paper Model Stock (arXiv:2403.19522)](https://arxiv.org/abs/2403.19522)

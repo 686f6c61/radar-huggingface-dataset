@@ -4,7 +4,7 @@
 
 EvoRM (Evolvable Neuro-Symbolic Reasoning Framework) es un framework de razonamiento neuro-simbólico para tareas de emparejamiento de entidades (entity matching) y emparejamiento de esquemas (schema matching). Desarrollado por el usuario eduzrh, combina las capacidades de razonamiento de los modelos de lenguaje grandes (LLM) con la eficiencia de reglas simbólicas, reduciendo el número de llamadas al LLM sin sacrificar precisión. El framework se integra como un plugin con cualquier pipeline basado en LLM, ofreciendo una arquitectura modular de cuatro componentes principales: RuleEncoding, HypergraphStorage, TwoStageInferenceController y RuleMaintenance, más un MLP Gate opcional para el enrutamiento neuronal.
 
-La relevancia de EvoRM radica en su enfoque híbrido que permite un aprendizaje continuo: las reglas simbólicas se generan a partir de las decisiones del LLM, se almacenan en un hipergrafo ponderado y se actualizan dinámicamente con cada inferencia. Esto reduce los costes de cómputo y mejora la escalabilidad en escenarios de producción con grandes volúmenes de datos. El framework se publica bajo licencia MIT y está disponible en HuggingFace, aunque no se trata de un modelo de lenguaje preentrenado, sino de un conjunto de código y wrappers para integrarse con LLMs externos.
+La relevancia de EvoRM radica en su enfoque híbrido que permite un aprendizaje continuo: las reglas simbólicas se generan a partir de las decisiones del LLM, se almacenan en un hipergrafo ponderado y se actualizan dinámicamente con cada inferencia. Esto reduce los costes de cómputo y mejora la escalabilidad en escenarios de producción con grandes volúmenes de datos. El framework se publica bajo licencia MIT y está disponible en Hugging Face, aunque no se trata de un modelo de lenguaje preentrenado, sino de un conjunto de código y wrappers para integrarse con LLMs externos.
 
 ## Especificaciones tecnicas
 
@@ -96,5 +96,5 @@ No se dispone de información sobre frameworks comparables en la documentación 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eduzrh/EvoRM
+- Repositorio en Hugging Face: https://huggingface.co/eduzrh/EvoRM
 - Cita del paper (según la model card): EvoRM: Evolvable Neuro-Symbolic Reasoning for Entity Matching, IEEE TKDE, 2024. (No se proporciona enlace directo al artículo).

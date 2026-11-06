@@ -103,15 +103,15 @@ No se dispone en la informacion proporcionada de datos de rendimiento, contexto 
 - Nomenclatura confusa: el nombre indica "Qwen3.8" y "27B", mientras que la arquitectura registrada es `Qwen3_5ForCausalLM` y el recuento real de parametros es 26,9 B.
 - Repositorio con traccion muy baja (709 descargas, 0 likes) y sin historial de validacion por terceros; la unica verificacion es la del propio autor.
 - Se han detectado requisitos de entorno fragiles (CUDA 13.0, versiones concretas de FlashInfer y Torch, variable `SGLANG_MAMBA_CONV_DTYPE`), lo que aumenta el coste de mantenimiento en produccion.
-- El nombre del modelo base declarado en HuggingFace es el propio repositorio GGUF del mismo autor, no un checkpoint oficial de Qwen.
+- El nombre del modelo base declarado en Hugging Face es el propio repositorio GGUF del mismo autor, no un checkpoint oficial de Qwen.
 
 ## Enlaces
 
-- Repositorio HuggingFace (safetensors FP16): https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
+- Repositorio Hugging Face (safetensors FP16): https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
 - Repositorio principal en GGUF: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Discusion #10 del repositorio GGUF, origen de esta release FP16: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF/discussions/10
 - Serie de cuantizaciones GSQ-RCO: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-GSQ-RCO-GGUF
 - Carpeta GSQ-3bit (compressed-tensors) dentro del repositorio FP16: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored/tree/main/GSQ-3bit
-- Perfil del autor en HuggingFace: https://huggingface.co/0bserverx
+- Perfil del autor en Hugging Face: https://huggingface.co/0bserverx
 - Perfil del solicitante de la release FP16: https://huggingface.co/JC1DA
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por la busqueda corresponden a comparativas de microondas compactas y no guardan ninguna relacion con el modelo.

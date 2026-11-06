@@ -83,6 +83,6 @@ La comparación con otros sistemas TTS de código abierto orientados a dispositi
 
 ## Enlaces
 
-- [agelwarg/supertonic-3-coreml en HuggingFace](https://huggingface.co/agelwarg/supertonic-3-coreml)
+- [agelwarg/supertonic-3-coreml en Hugging Face](https://huggingface.co/agelwarg/supertonic-3-coreml)
 - [Supertone/supertonic-3 (modelo base)](https://huggingface.co/Supertone/supertonic-3)
 - [typomonster/supertonic-2-mlx (port MLX de referencia)](https://huggingface.co/typomonster/supertonic-2-mlx)

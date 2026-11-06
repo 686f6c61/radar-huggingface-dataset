@@ -81,6 +81,6 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audante/Qwen3.5-4B-GGUF-Q5_K_M
+- Repositorio Hugging Face: https://huggingface.co/Audante/Qwen3.5-4B-GGUF-Q5_K_M
 - Repositorio fuente (unsloth): https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.5-4B

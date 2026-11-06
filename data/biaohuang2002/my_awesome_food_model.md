@@ -44,7 +44,7 @@ El entrenamiento del fine-tuning se realizó con el framework Transformers y PyT
 
 ## Benchmarks y rendimiento
 
-El modelo index de HuggingFace no declara resultados de benchmarks externos (MMLU, HumanEval, etc.), ya que es un modelo de clasificación de imágenes. Los resultados declarados por el autor en la model card son:
+El modelo index de Hugging Face no declara resultados de benchmarks externos (MMLU, HumanEval, etc.), ya que es un modelo de clasificación de imágenes. Los resultados declarados por el autor en la model card son:
 
 | Metrica | Valor |
 |---|---|
@@ -91,7 +91,7 @@ La comparativa muestra que el modelo de biaohuang2002 tiene el mismo rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/biaohuang2002/my_awesome_food_model
+- Modelo en Hugging Face: https://huggingface.co/biaohuang2002/my_awesome_food_model
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Espacio Trackio: https://huggingface.co/spaces/biaohuang2002/huggingface-static-d7141e
 - Versión de aipglu (con mejor rendimiento): https://huggingface.co/aipglu/my_awesome_food_model

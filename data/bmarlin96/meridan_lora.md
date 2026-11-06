@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`bmarlin96/meridan_lora` es un adaptador LoRA publicado en HuggingFace por el usuario bmarlin96, entrenado sobre el modelo base `TinyLlama/TinyLlama-1.1B-Chat-v1.0`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango (PEFT) que debe cargarse junto al checkpoint base para poder inference. El repositorio está etiquetado con `peft`, `safetensors`, `lora` y `transformers`, y declara compatibilidad con PEFT 0.21.2.
+`bmarlin96/meridan_lora` es un adaptador LoRA publicado en Hugging Face por el usuario bmarlin96, entrenado sobre el modelo base `TinyLlama/TinyLlama-1.1B-Chat-v1.0`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de bajo rango (PEFT) que debe cargarse junto al checkpoint base para poder inference. El repositorio está etiquetado con `peft`, `safetensors`, `lora` y `transformers`, y declara compatibilidad con PEFT 0.21.2.
 
-El problema que pretende resolver no está documentado: la model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los apartados marcados como `[More Information Needed]`. No se especifican datos de entrenamiento, hiperparámetros, dominio de aplicación ni evaluación. El repositorio tiene 0 descargas, 0 likes, un tamaño declarado de 0.0 GB y fue creado el 26 de octubre de 2026, lo que sugiere un artefacto recién subido y sin validación por parte de la comunidad.
+El problema que pretende resolver no está documentado: la model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los apartados marcados como `[More Information Needed]`. No se especifican datos de entrenamiento, hiperparámetros, dominio de aplicación ni evaluación. El repositorio tiene 0 descargas, 0 likes, un tamaño declarado de 0.0 GB y fue creado el 26 de octubre de 2026, lo que sugiere un artefacto recién subido y sin validación por parte de la comunidad.
 
 Su relevancia actual es, por tanto, limitada y de carácter experimental: sirve como ejemplo de flujo de trabajo con PEFT sobre un modelo pequeño (1.1B parámetros) que cabe en hardware de consumo, pero no puede recomendarse para producción sin una evaluación propia previa. Cualquier dato sobre arquitectura, contexto o capacidades debe atribuirse al modelo base TinyLlama, no al adaptador, que no aporta documentación al respecto.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| bmarlin96/meridan_lora (este adaptador) | Adaptador LoRA sobre 1.1B | No disponible (base: 2048) | No disponible | HuggingFace, 0 descargas | No |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (base) | 1.1B | 2048 | Apache 2.0 | HuggingFace, ampliamente utilizado | Sí, en la model card del modelo base |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32 768 | Apache 2.0 | HuggingFace | Sí (datos externos a este repositorio) |
-| Llama-3.2-1B-Instruct | 1.2B | 131 072 | Licencia comunitaria Llama 3.2 | HuggingFace (con aceptación de términos) | Sí (datos externos a este repositorio) |
+| bmarlin96/meridan_lora (este adaptador) | Adaptador LoRA sobre 1.1B | No disponible (base: 2048) | No disponible | Hugging Face, 0 descargas | No |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 (base) | 1.1B | 2048 | Apache 2.0 | Hugging Face, ampliamente utilizado | Sí, en la model card del modelo base |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32 768 | Apache 2.0 | Hugging Face | Sí (datos externos a este repositorio) |
+| Llama-3.2-1B-Instruct | 1.2B | 131 072 | Licencia comunitaria Llama 3.2 | Hugging Face (con aceptación de términos) | Sí (datos externos a este repositorio) |
 
 La comparación directa con el adaptador no es posible en términos de rendimiento porque no se ha publicado ninguna evaluación. Los datos de contexto y licencia de Qwen2.5 y Llama 3.2 provienen de sus respectivas model cards y no de la información de este repositorio; conviene verificarlos antes de citarlos. En términos de ecosistema, el adaptador carece de la documentación y el soporte que sí ofrecen los modelos instruct completos de la comparativa.
 
@@ -82,7 +82,7 @@ La comparación directa con el adaptador no es posible en términos de rendimien
 - Limitaciones de contexto: la ventana del modelo base es de 2048 tokens, insuficiente para tareas de contexto largo (documentos extensos, conversaciones multi-turno prolongadas, RAG con muchos fragmentos).
 - Limitaciones de idioma: no hay evidencia de competencia en castellano; el modelo base está orientado al inglés y el adaptador no declara idiomas.
 - Repositorio sin tracción: 0 descargas y 0 likes implican que no ha sido validado por terceros; el tamaño declarado de 0.0 GB podría indicar que los pesos del adaptador no están efectivamente subidos, algo que debe comprobarse antes de cualquier uso.
-- Fecha de creación anómala (26 de octubre de 2026) en los metadatos de HuggingFace, lo que conviene verificar junto con el contenido real del repositorio.
+- Fecha de creación anómala (26 de octubre de 2026) en los metadatos de Hugging Face, lo que conviene verificar junto con el contenido real del repositorio.
 - Para producción: no recomendado sin una validación propia (evaluación en el dominio objetivo, análisis de sesgos, revisión de licencia y pruebas de carga).
 
 ## Enlaces

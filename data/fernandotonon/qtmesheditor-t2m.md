@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa con otros modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/fernandotonon/QtMeshEditor-t2m
-- Repositorio HuggingFace compartido de modelos (mirror y runtime): https://huggingface.co/fernandotonon/QtMeshEditor-models
+- Repositorio Hugging Face del modelo: https://huggingface.co/fernandotonon/QtMeshEditor-t2m
+- Repositorio Hugging Face compartido de modelos (mirror y runtime): https://huggingface.co/fernandotonon/QtMeshEditor-models
 - Repositorio GitHub de QtMeshEditor: https://github.com/fernandotonon/QtMeshEditor
 - Documentación generada en DeepWiki: https://deepwiki.com/fernandotonon/QtMeshEditor

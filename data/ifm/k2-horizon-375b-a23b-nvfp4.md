@@ -84,7 +84,7 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IFM/K2-Horizon-375B-A23B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/IFM/K2-Horizon-375B-A23B-NVFP4
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-375B-A23B
 - Código de entrenamiento: https://github.com/ifm-ai/xllm
 - Código de evaluación: https://github.com/ifm-ai/Eval360

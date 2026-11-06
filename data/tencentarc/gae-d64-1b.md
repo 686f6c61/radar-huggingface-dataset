@@ -72,10 +72,10 @@ No se han publicado datos de rendimiento de GAE-D64-1B en la información dispon
 
 | Modelo | Parametros | Contexto / salida | Control de camara | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GAE-D64-1B | ~1B | V=81 fotogramas a 672×378 | Si (Plücker metrico) | no disponible | HuggingFace (TencentARC) |
-| Wan2.1-T2V-1.3B | ~1.3B | resoluciones y longitudes variables | no documentado | Apache 2.0 (segun su documentacion) | HuggingFace |
-| CogVideoX-2B | ~2B | clips cortos, resolucion moderada | no documentado | Apache 2.0 (segun su documentacion) | HuggingFace |
-| LTX-Video | ~2B | clips a alta velocidad | no documentado | licencia propia (segun su documentacion) | HuggingFace |
+| GAE-D64-1B | ~1B | V=81 fotogramas a 672×378 | Si (Plücker metrico) | no disponible | Hugging Face (TencentARC) |
+| Wan2.1-T2V-1.3B | ~1.3B | resoluciones y longitudes variables | no documentado | Apache 2.0 (segun su documentacion) | Hugging Face |
+| CogVideoX-2B | ~2B | clips cortos, resolucion moderada | no documentado | Apache 2.0 (segun su documentacion) | Hugging Face |
+| LTX-Video | ~2B | clips a alta velocidad | no documentado | licencia propia (segun su documentacion) | Hugging Face |
 
 Los datos de los modelos alternativos provienen de su documentación pública y pueden variar; no se dispone de comparativas de calidad entre GAE-D64-1B y estos modelos.
 
@@ -93,7 +93,7 @@ Los datos de los modelos alternativos provienen de su documentación pública y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TencentARC/GAE-D64-1B
+- Modelo en Hugging Face: https://huggingface.co/TencentARC/GAE-D64-1B
 - Codificador DA3-GIANT: https://huggingface.co/depth-anything/DA3-GIANT-1.1
 - Repositorio de código de GAE: referenciado en la model card mediante `scripts/run_demo.sh` y `scripts/generate.py`, pero sin URL explícita en la información disponible.
 - Paper, blog o demo: no disponible en la información proporcionada.

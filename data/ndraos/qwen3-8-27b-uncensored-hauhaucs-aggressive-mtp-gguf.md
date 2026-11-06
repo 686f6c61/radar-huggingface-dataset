@@ -92,7 +92,7 @@ La comparativa directa con otros modelos de 27B es limitada porque Qwen3.8-27B e
 
 ## Enlaces
 
-- Repositorio HuggingFace (ndraos): https://huggingface.co/ndraos/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Repositorio Hugging Face (ndraos): https://huggingface.co/ndraos/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Repositorio original (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Discusiones del modelo: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF/discussions
 - Guía de ejecución local (orcarouter): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

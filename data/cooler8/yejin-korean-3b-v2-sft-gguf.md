@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 3B v2 - SFT (GGUF) es una publicación de pesos cuantizados en formato GGUF del modelo `cooler8/yejin-korean-3b-v2-sft`, subida por el usuario cooler8 a HuggingFace. Se trata de una versión empaquetada para motores de inferencia compatibles con GGUF, principalmente llama.cpp, Ollama y LM Studio, con el objetivo de reducir los requisitos de memoria y facilitar el despliegue en hardware de consumo. El modelo subyacente es de tipo denso, con aproximadamente 3.015 millones de parámetros, dimensión oculta de 3072, 28 capas, 24 cabezas de atención y 8 cabezas de clave/valor, lo que implica atención con consultas agrupadas (GQA) en una proporción 3:1.
+Yejin Korean 3B v2 - SFT (GGUF) es una publicación de pesos cuantizados en formato GGUF del modelo `cooler8/yejin-korean-3b-v2-sft`, subida por el usuario cooler8 a Hugging Face. Se trata de una versión empaquetada para motores de inferencia compatibles con GGUF, principalmente llama.cpp, Ollama y LM Studio, con el objetivo de reducir los requisitos de memoria y facilitar el despliegue en hardware de consumo. El modelo subyacente es de tipo denso, con aproximadamente 3.015 millones de parámetros, dimensión oculta de 3072, 28 capas, 24 cabezas de atención y 8 cabezas de clave/valor, lo que implica atención con consultas agrupadas (GQA) en una proporción 3:1.
 
 El modelo está especializado en coreano (ko) con soporte declarado de inglés (en), y utiliza un tokenizador propio de 64.000 entradas, presumiblemente optimizado para coreano. La model card no especifica el procedimiento de ajuste (SFT) más allá del nombre del repositorio, ni el número de tokens de entrenamiento, ni la composición del dataset. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -96,7 +96,7 @@ Frente a estas alternativas, la ventaja diferencial de Yejin Korean 3B v2 es su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-3b-v2-sft-gguf
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-3b-v2-sft-gguf
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-3b-v2-sft
 - llama.cpp (motor de inferencia compatible): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

@@ -79,8 +79,8 @@ Evaluación de fidelidad frente al original en BF16 sobre un conjunto interno mi
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/gemma-4-12B-it-NVFP4A16 | 11,96 B (denso) | no disponible | Apache-2.0 / Gemma 4 | safetensors compressed-tensors (NVFP4A16) | HuggingFace, 110 descargas |
-| google/gemma-4-12B-it (BF16) | 11,96 B (denso) | no disponible | Apache-2.0 / Gemma 4 | safetensors BF16 | HuggingFace |
+| axteam/gemma-4-12B-it-NVFP4A16 | 11,96 B (denso) | no disponible | Apache-2.0 / Gemma 4 | safetensors compressed-tensors (NVFP4A16) | Hugging Face, 110 descargas |
+| google/gemma-4-12B-it (BF16) | 11,96 B (denso) | no disponible | Apache-2.0 / Gemma 4 | safetensors BF16 | Hugging Face |
 | Variante FP8-dynamic del mismo base | 11,96 B (denso) | no disponible | Apache-2.0 / Gemma 4 | pesos FP8 | medida en los benchmarks del autor |
 | Variante AWQ-8bit del mismo base | 11,96 B (denso) | no disponible | Apache-2.0 / Gemma 4 | compressed-tensors W8A16 | medida en los benchmarks del autor |
 | Variante NVFP4 pura del mismo base | 11,96 B (denso) | no disponible | Apache-2.0 / Gemma 4 | compressed-tensors FP4 | medida en los benchmarks del autor |
@@ -101,7 +101,7 @@ No se dispone de datos de modelos comparables de otros desarrolladores en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-12B-it-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-12B-it-NVFP4A16
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

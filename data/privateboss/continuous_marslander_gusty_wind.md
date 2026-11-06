@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`privateboss/Continuous_MarsLander_Gusty_Wind` es un artefacto publicado en HuggingFace por el usuario `privateboss` bajo la licencia OpenMDW-1.1. A pesar de su nombre, que remite al entorno de control `LunarLander`/`MarsLander` de OpenAI Gym, no se trata de un modelo de lenguaje: la model card no contiene descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio fue creado el 29 de octubre de 2026 y actualizado al dia siguiente, sin descargas ni interacciones registradas.
+`privateboss/Continuous_MarsLander_Gusty_Wind` es un artefacto publicado en Hugging Face por el usuario `privateboss` bajo la licencia OpenMDW-1.1. A pesar de su nombre, que remite al entorno de control `LunarLander`/`MarsLander` de OpenAI Gym, no se trata de un modelo de lenguaje: la model card no contiene descripcion tecnica, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio fue creado el 29 de octubre de 2026 y actualizado al dia siguiente, sin descargas ni interacciones registradas.
 
 La informacion disponible se limita a metadatos de plataforma: identificador, autor, licencia, etiquetas (`license:openmdw-1.1`, `region:us`) y fechas. No hay pipeline declarado, idiomas soportados, formato de pesos ni documentacion adicional. Cualquier dato sobre parametros, contexto o capacidades seria especulativo y, por tanto, se marca como no disponible en esta ficha.
 
@@ -74,6 +74,6 @@ No disponible. No se conocen modelos comparables porque no se ha confirmado la c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/privateboss/Continuous_MarsLander_Gusty_Wind
+- Hugging Face: https://huggingface.co/privateboss/Continuous_MarsLander_Gusty_Wind
 - Licencia OpenMDW-1.1: no disponible en la informacion proporcionada (referencia generica en el identificador de licencia del repositorio).
 - Paper, blog o repositorio de codigo: no disponible.

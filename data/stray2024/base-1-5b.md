@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BASE-1.5B es un modelo de lenguaje de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) publicado por el desarrollador independiente Stray2024 en HuggingFace. Se construye sobre la arquitectura Qwen 2.5 1.5B, sobre la que se aplica un ajuste fino con LoRA y posteriormente una fusion completa de pesos en precision de 16 bits. Su proposito declarado es doble: actuar como modelo de razonamiento ligero, exponiendo un proceso de pensamiento previo a la respuesta dentro de etiquetas `<think>...</think>`, y funcionar como modelo conversacional de tipo "companion" para dialogo natural.
+BASE-1.5B es un modelo de lenguaje de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) publicado por el desarrollador independiente Stray2024 en Hugging Face. Se construye sobre la arquitectura Qwen 2.5 1.5B, sobre la que se aplica un ajuste fino con LoRA y posteriormente una fusion completa de pesos en precision de 16 bits. Su proposito declarado es doble: actuar como modelo de razonamiento ligero, exponiendo un proceso de pensamiento previo a la respuesta dentro de etiquetas `<think>...</think>`, y funcionar como modelo conversacional de tipo "companion" para dialogo natural.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las propias de dicha licencia. Los idiomas declarados son ruso e ingles, y el repositorio ocupa 3,1 GB en formato safetensors. Se entrenó sobre dos conjuntos de datos propios del autor: `Stray2024/dialog-dataset-think` (dialogo con cadena de pensamiento) y `Stray2024/python-dataset-think` (codigo Python con razonamiento).
 
-Su relevancia practica es limitada pero concreta: ofrece un modelo pequeno, desplegable en hardware de consumo, con capacidad de razonamiento explicito y generacion de codigo Python, en un formato compatible con el ecosistema de HuggingFace y con herramientas como Unsloth (etiqueta presente en el repositorio). No obstante, la ausencia total de benchmarks publicados y el bajo numero de descargas (104) y likes (0) obligan a tratar sus capacidades declaradas como no verificadas de forma independiente.
+Su relevancia practica es limitada pero concreta: ofrece un modelo pequeno, desplegable en hardware de consumo, con capacidad de razonamiento explicito y generacion de codigo Python, en un formato compatible con el ecosistema de Hugging Face y con herramientas como Unsloth (etiqueta presente en el repositorio). No obstante, la ausencia total de benchmarks publicados y el bajo numero de descargas (104) y likes (0) obligan a tratar sus capacidades declaradas como no verificadas de forma independiente.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia en 16 bits: aproximadamente 3,1 GB solo para los pesos, mas overhead de activaciones y cache KV; en la practica, entre 4 y 6 GB para contextos moderados.
-- Cuantizacion: no se distribuyen variantes GGUF, AWQ ni GPTQ en el repositorio; para reducir VRAM habria que convertir los pesos a otros formatos (por ejemplo, mediante llama.cpp o herramientas de cuantizacion de HuggingFace), lo que no esta documentado por el autor.
+- Cuantizacion: no se distribuyen variantes GGUF, AWQ ni GPTQ en el repositorio; para reducir VRAM habria que convertir los pesos a otros formatos (por ejemplo, mediante llama.cpp o herramientas de cuantizacion de Hugging Face), lo que no esta documentado por el autor.
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para 16 bits, como RTX 3060, RTX 4060, RTX 4070 o superiores; tambien cabe en A100, H100 y L4 para despliegues en servidor.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas con 8 GB o mas de VRAM en precision 16 bits; en GPUs con menos VRAM requeriria cuantizacion previa.
 - Opciones de despliegue: transformers (carga directa de safetensors), vLLM y TGI para servir en produccion, llama.cpp u Ollama si se convierte a GGUF. No se documentan configuraciones oficiales de despliegue.
@@ -90,7 +90,7 @@ La comparativa se basa en las especificaciones publicas de los modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stray2024/BASE-1.5B
+- Hugging Face: https://huggingface.co/Stray2024/BASE-1.5B
 - Perfil del autor: https://huggingface.co/Stray2024
 - Dataset de dialogo: https://huggingface.co/datasets/Stray2024/dialog-dataset-think
 - Dataset de Python: https://huggingface.co/datasets/Stray2024/python-dataset-think

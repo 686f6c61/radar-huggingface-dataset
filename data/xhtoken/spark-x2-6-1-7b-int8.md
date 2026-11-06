@@ -83,7 +83,7 @@ Los datos de las alternativas no están disponibles en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XHToken/Spark-X2.6-1.7B-INT8
+- Modelo en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-1.7B-INT8
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - Implementación optimizada de llama.cpp del autor: https://github.com/XHToken/llama.cpp
 - Comunidad Slack: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw

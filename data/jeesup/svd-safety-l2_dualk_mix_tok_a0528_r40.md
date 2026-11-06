@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_dualk_mix_tok_a0528_r40` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en HuggingFace. No es un modelo conversacional de propósito general, sino una celda concreta dentro de un grid experimental que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes lo repara mejor. El checkpoint se ha comprimido hasta el 60,0 % de los parámetros densos originales (40,00 % de parámetros eliminados) y después se ha recuperado parcialmente mediante LoRA de segunda etapa.
+`svd-safety-l2_dualk_mix_tok_a0528_r40` es un checkpoint de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en Hugging Face. No es un modelo conversacional de propósito general, sino una celda concreta dentro de un grid experimental que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes lo repara mejor. El checkpoint se ha comprimido hasta el 60,0 % de los parámetros densos originales (40,00 % de parámetros eliminados) y después se ha recuperado parcialmente mediante LoRA de segunda etapa.
 
 La compresión emplea una SVD blanqueada con K-FAC en dos dominios (utilidad y seguridad) con presupuesto de rango de SVD-LLM. El resultado son 6.738.415.616 parámetros totales en formato safetensors, con un repositorio de 13,5 GB. La arquitectura subyacente es la de Llama 2 (transformer decoder-only), por lo que hereda su ventana de contexto y su tokenizador, aunque la model card no documenta explícitamente esos valores.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_dualk_mix_tok_a0528_r40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_dualk_mix_tok_a0528_r40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - SVD-LLM (método de compresión referenciado en la model card): no se proporciona enlace directo en la información disponible

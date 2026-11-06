@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `r18-a2-w14-k-chrono5-w30ft5-s150`, publicado por el usuario alfred8995 en HuggingFace, es un checkpoint de 2.018.511.234 parametros (~2,02 mil millones) en formato safetensors, etiquetado con el identificador `sn38-nanochrono`. El nombre del repositorio sugiere una configuracion experimental concreta (posiblemente un fine-tuning o una variante de un modelo base mas pequeno), pero no se ha publicado documentacion tecnica que explique el significado de cada sufijo.
+El modelo `r18-a2-w14-k-chrono5-w30ft5-s150`, publicado por el usuario alfred8995 en Hugging Face, es un checkpoint de 2.018.511.234 parametros (~2,02 mil millones) en formato safetensors, etiquetado con el identificador `sn38-nanochrono`. El nombre del repositorio sugiere una configuracion experimental concreta (posiblemente un fine-tuning o una variante de un modelo base mas pequeno), pero no se ha publicado documentacion tecnica que explique el significado de cada sufijo.
 
-La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con 4 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia es Apache 2.0, lo que en principio permitiria uso comercial, pero al tratarse de un checkpoint sin documentacion asociada conviene extremar las precauciones antes de integrarlo en produccion.
+La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con 4 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia es Apache 2.0, lo que en principio permitiria uso comercial, pero al tratarse de un checkpoint sin documentacion asociada conviene extremar las precauciones antes de integrarlo en produccion.
 
 No se dispone de informacion sobre arquitectura, datos de entrenamiento, contexto maximo ni resultados de evaluacion. Esta ficha recoge exclusivamente los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no ha sido publicado.
 
@@ -21,7 +21,7 @@ No se dispone de informacion sobre arquitectura, datos de entrenamiento, context
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 12,6 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 4 / 0 |
 | Fecha de creacion | 2026-10-29 |
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable: 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay informacion sobre arquitectura, datos de entrenamiento, contexto ni evaluacion, lo que impide valorar su calidad y sus riesgos.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a cualquier integracion automatizada.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a cualquier integracion automatizada.
 - Riesgo de alucinacion: desconocido, pero en modelos de ~2 B sin alineacion documentada el riesgo suele ser elevado en tareas factuales.
 - Sesgos: no evaluados ni documentados.
 - Idiomas: no se declaran idiomas soportados; no se puede asumir un buen rendimiento en castellano.
@@ -93,5 +93,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w30ft5-s150
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w30ft5-s150
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heidercs/xlmroberta-cv-chunked` es un modelo de clasificación de texto en español obtenido por fine-tuning de `FacebookAI/xlm-roberta-base` sobre currículums. Su tarea es asignar cada CV a una de 43 categorías profesionales, un problema típico de los sistemas de reclutamiento (parsing y enrutado de candidatos). Lo publica el usuario de HuggingFace heidercs y el repositorio ocupa 1,1 GB con pesos en safetensors.
+`heidercs/xlmroberta-cv-chunked` es un modelo de clasificación de texto en español obtenido por fine-tuning de `FacebookAI/xlm-roberta-base` sobre currículums. Su tarea es asignar cada CV a una de 43 categorías profesionales, un problema típico de los sistemas de reclutamiento (parsing y enrutado de candidatos). Lo publica el usuario de Hugging Face heidercs y el repositorio ocupa 1,1 GB con pesos en safetensors.
 
 El modelo tiene 278.076.715 parámetros y una arquitectura transformer encoder con cabeza de clasificación de secuencias, por lo que su contexto de trabajo es de 512 tokens. La particularidad del entrenamiento es el uso de chunking: los documentos se fragmentaron en ventanas de 512 tokens con solape de 64 como aumentación de datos, pero en inferencia solo se procesa el primer fragmento de cada documento (estrategia `chunk_first`), que fue la de mejor resultado según el autor frente a leer el documento completo o agregar varios fragmentos.
 
@@ -75,9 +75,9 @@ La informacion disponible solo permite una comparacion limitada. Los unicos mode
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heidercs/xlmroberta-cv-chunked | 278.076.715 | 512 tokens (primer fragmento) | Clasificacion de CV en 43 categorias | other | HuggingFace, 0 descargas, 0 likes |
-| heidercs/longformer-cv-direct | no disponible | no disponible (pensado para documentos largos sin truncar) | Clasificacion de CV | no disponible | HuggingFace |
-| FacebookAI/xlm-roberta-base | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base multilingue, sin cabeza de clasificacion | no disponible | HuggingFace |
+| heidercs/xlmroberta-cv-chunked | 278.076.715 | 512 tokens (primer fragmento) | Clasificacion de CV en 43 categorias | other | Hugging Face, 0 descargas, 0 likes |
+| heidercs/longformer-cv-direct | no disponible | no disponible (pensado para documentos largos sin truncar) | Clasificacion de CV | no disponible | Hugging Face |
+| FacebookAI/xlm-roberta-base | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Modelo base multilingue, sin cabeza de clasificacion | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparados en el mismo test, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento de los modelos comparados en el mismo test
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heidercs/xlmroberta-cv-chunked
+- Modelo en Hugging Face: https://huggingface.co/heidercs/xlmroberta-cv-chunked
 - Modelo base: https://huggingface.co/xlm-roberta-base
 - Modelo del mismo autor para documentos largos: https://huggingface.co/heidercs/longformer-cv-direct
 - Resultados de busqueda web: no se han encontrado resultados relevantes sobre este modelo; las busquedas devolvieron contenido no relacionado (soporte de Google, YouTube y un foro de videojuegos), por lo que no se dispone de papers, blogs, repositorios ni demos adicionales.

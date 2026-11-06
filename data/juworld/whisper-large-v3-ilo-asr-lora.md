@@ -6,7 +6,7 @@
 
 El interes de este tipo de adaptadores es doble. Por un lado, el ilocano no figura entre los 99 idiomas declarados oficialmente por Whisper large-v3 (que si incluye tagalo/filipino), de modo que un ajuste fino especifico es la via practica para obtener transcripcion aceptable en esa lengua. Por otro, el formato LoRA permite especializar un modelo de 1.550 millones de parametros anadiendo solo decenas de megabytes de pesos, sin duplicar el coste de almacenamiento ni de despliegue.
 
-Ahora bien, la model card publicada es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]": no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un artefacto sin validacion externa conocida.
+Ahora bien, la model card publicada es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]": no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un artefacto sin validacion externa conocida.
 
 ## Especificaciones técnicas
 
@@ -94,7 +94,7 @@ No se dispone de informacion sobre otros adaptadores publicos de ilocano con los
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/juworld/whisper-large-v3-ilo-asr-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/juworld/whisper-large-v3-ilo-asr-lora
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Variante turbo del modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper

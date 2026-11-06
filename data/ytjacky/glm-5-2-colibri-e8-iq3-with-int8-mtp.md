@@ -76,10 +76,10 @@ Resumen del perfil: un 22-33% mas rapido en hosts con streaming desde NVMe, y ma
 
 | Modelo | Parametros | Cuantizacion | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (ytjacky) | 744B MoE | E8/IQ3 fmt=6, 3,06 bpw + MTP int8 | 289,1 GB | no disponible | MIT (declarada) | HuggingFace, 0 descargas |
+| Este repositorio (ytjacky) | 744B MoE | E8/IQ3 fmt=6, 3,06 bpw + MTP int8 | 289,1 GB | no disponible | MIT (declarada) | Hugging Face, 0 descargas |
 | Contenedor int4-g64 del mismo autor (referencia interna) | 744B MoE | int4 agrupado, 4,50 bpw | 429,3 GB | no disponible | MIT (declarada) | citado en la model card |
-| zai-org/GLM-5.2 (modelo base) | 744B MoE | FP8 | no disponible | no disponible | no disponible | HuggingFace, modelo oficial |
-| mastouri/GLM-5.2-colibri-E8-IQ3-with-int8-mtp (espejo) | 744B MoE | E8/IQ3 fmt=6, 3,06 bpw + MTP int8 | no disponible | no disponible | no disponible | HuggingFace |
+| zai-org/GLM-5.2 (modelo base) | 744B MoE | FP8 | no disponible | no disponible | no disponible | Hugging Face, modelo oficial |
+| mastouri/GLM-5.2-colibri-E8-IQ3-with-int8-mtp (espejo) | 744B MoE | E8/IQ3 fmt=6, 3,06 bpw + MTP int8 | no disponible | no disponible | no disponible | Hugging Face |
 
 No hay datos publicados de benchmarks estandar que permitan comparar el rendimiento de este contenedor con modelos de la misma categoria distintos de su propio contenedor hermano.
 
@@ -89,7 +89,7 @@ No hay datos publicados de benchmarks estandar que permitan comparar el rendimie
 - Throughput bajo: 1,57 tok/s en la configuracion medida. No es apto para uso interactivo ni para servir a varios usuarios.
 - Formato experimental: `fmt=6` (E8/IQ3) es un formato no estandar, soportado unicamente por colibrì v1.4.0+. No es consumible por el ecosistema GGUF/llama.cpp/vLLM/TGI.
 - Fallo conocido con motores antiguos: builds anteriores a v1.4.0 decodifican `fmt=6` como int2 y desreferencian un puntero nulo a escalas, lo que provoca un crash.
-- Riesgo de seguridad en la carga: la propia documentacion de colibrì clasifica un modelo descargado de un repositorio de terceros en HuggingFace como entrada no confiable. Dos avisos (GHSA-wc4x-3786-cxh7 y GHSA-4gw4-j89j-4c8r) describen escrituras fuera de limites en el heap antes de ejecutar inferencia, por metadatos de tensor no validados y por un token id negativo. El autor del contenedor declara que los pesos son su propia conversion y no son hostiles, pero reconoce que no es verificable desde fuera.
+- Riesgo de seguridad en la carga: la propia documentacion de colibrì clasifica un modelo descargado de un repositorio de terceros en Hugging Face como entrada no confiable. Dos avisos (GHSA-wc4x-3786-cxh7 y GHSA-4gw4-j89j-4c8r) describen escrituras fuera de limites en el heap antes de ejecutar inferencia, por metadatos de tensor no validados y por un token id negativo. El autor del contenedor declara que los pesos son su propia conversion y no son hostiles, pero reconoce que no es verificable desde fuera.
 - Modo de razonamiento desactivado por defecto: sin `THINK=1`, el motor inyecta `<think></think>` cerrado en la plantilla y el modelo responde sin deliberar, lo que puede interpretarse erroneamente como un fallo de cuantizacion.
 - Memoria unificada: en DGX Spark/GB10 y Apple silicon, un reparto incorrecto de `CUDA_EXPERT_GB` + `RAM_GB` provoca la muerte del proceso durante el prefill.
 - Licencia: el repositorio declara MIT, pero es una cuantizacion derivada de zai-org/GLM-5.2; conviene verificar los terminos del modelo base antes de un uso comercial.
@@ -98,7 +98,7 @@ No hay datos publicados de benchmarks estandar que permitan comparar el rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ytjacky/GLM-5.2-colibri-E8-IQ3-with-int8-mtp
+- Repositorio Hugging Face: https://huggingface.co/ytjacky/GLM-5.2-colibri-E8-IQ3-with-int8-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Motor colibrì (GitHub): https://github.com/JustVugg/colibri
 - Pagina del proyecto colibrì: https://justvugg.github.io/colibri/

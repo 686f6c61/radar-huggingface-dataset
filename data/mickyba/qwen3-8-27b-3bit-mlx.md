@@ -86,7 +86,7 @@ La comparativa se limita a las distintas cuantizaciones del mismo modelo base, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mickyba/Qwen3.8-27B-3bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/mickyba/Qwen3.8-27B-3bit-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de AMD sobre soporte de Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

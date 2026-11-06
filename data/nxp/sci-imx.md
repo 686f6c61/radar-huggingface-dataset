@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/sci-imx` es un repositorio de modelo publicado en HuggingFace por NXP Semiconductors (autor `nxp`) el 1 de octubre de 2026. Se trata de un artefacto sin model card: el README contiene únicamente el bloque de metadatos con `license: mit`, sin descripción del modelo, sin arquitectura declarada, sin ejemplos de uso y sin ficha técnica de ningún tipo.
+`nxp/sci-imx` es un repositorio de modelo publicado en Hugging Face por NXP Semiconductors (autor `nxp`) el 1 de octubre de 2026. Se trata de un artefacto sin model card: el README contiene únicamente el bloque de metadatos con `license: mit`, sin descripción del modelo, sin arquitectura declarada, sin ejemplos de uso y sin ficha técnica de ningún tipo.
 
 El repositorio no declara etiqueta de pipeline (`pipeline: no disponible`), no especifica idiomas soportados y presenta cero descargas y cero likes en la fecha de consulta. La fecha de creación y la de última actualización son idénticas, lo que indica una única publicación sin mantenimiento posterior. En consecuencia, no es posible confirmar si se trata de un modelo de lenguaje, de un modelo de visión, de un artefacto de otro tipo (tokenizador, configuración, pesos parciales) o de un repositorio reservado sin contenido útil.
 
@@ -75,7 +75,7 @@ No disponible. Sin conocer la tarea, la modalidad, la arquitectura ni el número
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: el README solo contiene el frontmatter con la licencia. No hay descripción, instrucciones de uso, limitaciones declaradas ni ejemplos.
-- Sin etiqueta de pipeline: ni siquiera está definida la tarea del modelo, lo que impide clasificarlo en el ecosistema de HuggingFace.
+- Sin etiqueta de pipeline: ni siquiera está definida la tarea del modelo, lo que impide clasificarlo en el ecosistema de Hugging Face.
 - Cero descargas y cero likes: no existe validación alguna por parte de la comunidad ni evidencia de uso en producción.
 - Fechas de creación y actualización idénticas (2026-10-01): se trata de una publicación única, sin señales de mantenimiento, corrección de errores o versionado posterior.
 - Idiomas no declarados: no se puede garantizar cobertura de castellano ni de ninguna otra lengua.
@@ -86,8 +86,8 @@ No disponible. Sin conocer la tarea, la modalidad, la arquitectura ni el número
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/sci-imx
-- Perfil del autor en HuggingFace: https://huggingface.co/nxp
+- Repositorio en Hugging Face: https://huggingface.co/nxp/sci-imx
+- Perfil del autor en Hugging Face: https://huggingface.co/nxp
 - Sitio corporativo de NXP Semiconductors: https://www.nxp.com/
 - Catálogo de productos de NXP Semiconductors: https://www.nxp.com/products:PCPRODCAT
 - Wikipedia (en inglés), NXP Semiconductors: https://en.wikipedia.org/wiki/NXP_Semiconductors

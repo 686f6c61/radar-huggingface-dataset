@@ -67,7 +67,7 @@ El rango de PSNR por prompt en modo int8-wo va de 14,41 a 34,89, y el coseno de 
 - El autor reporta un pico de VRAM de 2446 MiB para el pipeline completo Boogu Image 0.1 (encoder + transformer + VAE) con sequential CPU offload en una NVIDIA GeForce RTX 4090.
 - El modelo aislado en INT8 ocupa aproximadamente 9,4 GiB en disco/RAM (host), frente a los ~17,5 GiB del checkpoint bf16.
 - GPU recomendada: RTX 4090 (usada en los benchmarks). Se espera que funcione en GPUs de consumo con 12-16 GB de VRAM, aunque no se proporcionan datos directos para el modelo aislado.
-- Opciones de despliegue: transformers (con `import sdnq`), Diffusers, `sdnq.loader` para carga en CPU con offload secuencial, y endpoints compatibles de HuggingFace.
+- Opciones de despliegue: transformers (con `import sdnq`), Diffusers, `sdnq.loader` para carga en CPU con offload secuencial, y endpoints compatibles de Hugging Face.
 - Latencia: en el benchmark del pipeline, el encoder tarda 1,65 s por pasada en modo int8-wo frente a 1,27 s en bf16; el tiempo total de generación es de 18,86 s frente a 20,01 s.
 
 ## Comparativa con modelos similares
@@ -88,11 +88,11 @@ Las alternativas más cercanas son las variantes de cuantización del propio mod
 - Los idiomas soportados no están documentados en la ficha; el benchmark solo incluye inglés, ruso y chino.
 - El modelo requiere la librería `sdnq` para cargarse con transformers; sin ella, la carga fallará.
 - No se han publicado benchmarks de tareas de lenguaje como MMLU, HumanEval o GSM8K; la evaluación se centra exclusivamente en el pipeline de generación de imágenes.
-- Es un modelo reciente con 0 descargas y 0 likes en HuggingFace, por lo que su fiabilidad en producción aún no está validada por la comunidad.
+- Es un modelo reciente con 0 descargas y 0 likes en Hugging Face, por lo que su fiabilidad en producción aún no está validada por la comunidad.
 - La licencia Apache-2.0 permite uso comercial, pero hay que verificar las condiciones del modelo base y de las librerías dependientes (sdnq, diffusers).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WaveCut/Qwen3-VL-8B-Instruct-SDNQ-int8-static
+- Modelo en Hugging Face: https://huggingface.co/WaveCut/Qwen3-VL-8B-Instruct-SDNQ-int8-static
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Pipeline Boogu Image 0.1 Turbo SDNQ uint4: https://huggingface.co/WaveCut/Boogu-Image-0.1-Turbo-SDNQ-uint4-static

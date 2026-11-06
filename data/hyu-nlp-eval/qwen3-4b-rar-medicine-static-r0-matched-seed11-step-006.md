@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006 | ~4B | no disponible | GRPO con rubrica estatica, paso 6/48, thinking desactivado | apache-2.0 | HuggingFace (103 descargas) |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | no disponible en la informacion | Instruct, no thinking | apache-2.0 | HuggingFace |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042 | ~4B | no disponible | GRPO con rubricas dinamicas, paso 42 | apache-2.0 | HuggingFace |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006 | ~4B | no disponible | GRPO con rubrica estatica, paso 6/48, thinking desactivado | apache-2.0 | Hugging Face (103 descargas) |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | no disponible en la informacion | Instruct, no thinking | apache-2.0 | Hugging Face |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042 | ~4B | no disponible | GRPO con rubricas dinamicas, paso 42 | apache-2.0 | Hugging Face |
 
 Las dos alternativas del mismo autor corresponden a la misma politica base y dominio, variando el esquema de recompensa (estatico frente a dinamico) y el numero de pasos. No se dispone de datos comparativos de rendimiento entre ellas en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ Las dos alternativas del mismo autor corresponden a la misma politica base y dom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-006
 - Coleccion del autor (HealthBench-Consensus static): https://huggingface.co/collections/HYU-NLP-EVAL/qwen3-4b-healthbench-consensus-static
 - Checkpoint hermano (OnlineRubrics, step 042): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-042
 - Variante OnlineRubrics (step 002) en Featherless: https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-002

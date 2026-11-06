@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-log-task00-centre-full-hourly-8c3b6cfe0a07-caa3ff635c55` es un paquete publicado en HuggingFace que, segun su propia model card, se define como un "versioned fleet archive" (archivo versionado de flota). El autor, identificado como `davidwdw`, lo describe como una instantanea ("snapshot") asociada a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con nivel ("tier") de "versioned snapshot". No se declara en ningun momento que se trate de un modelo de lenguaje entrenado, sino de un artefacto de registro con revision fija y verificacion mediante `SHA256SUMS`.
+El repositorio `davidwdw/fa-log-task00-centre-full-hourly-8c3b6cfe0a07-caa3ff635c55` es un paquete publicado en Hugging Face que, segun su propia model card, se define como un "versioned fleet archive" (archivo versionado de flota). El autor, identificado como `davidwdw`, lo describe como una instantanea ("snapshot") asociada a la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, con nivel ("tier") de "versioned snapshot". No se declara en ningun momento que se trate de un modelo de lenguaje entrenado, sino de un artefacto de registro con revision fija y verificacion mediante `SHA256SUMS`.
 
 La informacion publica disponible es extremadamente limitada: no hay pipeline declarado, no hay licencia, no hay idiomas especificados, cero descargas y cero "likes" en el momento de la consulta. El unico tag presente es `region:us`, que es un metadato geografico de la plataforma y no aporta informacion tecnica sobre el contenido. Las fechas de creacion y actualizacion (26 de septiembre de 2026, con un segundo de diferencia) indican que el repositorio se subio en una unica operacion y no se ha modificado despues.
 
@@ -77,7 +77,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-8c3b6cfe0a07-caa3ff635c55
+- Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-8c3b6cfe0a07-caa3ff635c55
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (sin URL publica disponible)
 - Fichero de verificacion citado: `SHA256SUMS` (sin URL publica disponible)
 - Paper, blog, repositorio o demo adicionales: no disponible

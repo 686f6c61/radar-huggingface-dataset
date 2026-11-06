@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AdamLachowsky/Model_indobert_duolingo` es un modelo publicado en HuggingFace por el usuario AdamLachowsky bajo licencia MIT. El nombre del repositorio sugiere un fine-tuning de IndoBERT, un transformer encoder basado en BERT entrenado originalmente para indonesio, aplicado presumiblemente a datos relacionados con Duolingo. Sin embargo, la model card publicada no incluye ninguna descripcion tecnica, y los metadatos de HuggingFace no declaran pipeline, idiomas ni arquitectura.
+`AdamLachowsky/Model_indobert_duolingo` es un modelo publicado en Hugging Face por el usuario AdamLachowsky bajo licencia MIT. El nombre del repositorio sugiere un fine-tuning de IndoBERT, un transformer encoder basado en BERT entrenado originalmente para indonesio, aplicado presumiblemente a datos relacionados con Duolingo. Sin embargo, la model card publicada no incluye ninguna descripcion tecnica, y los metadatos de Hugging Face no declaran pipeline, idiomas ni arquitectura.
 
 La informacion disponible es minima: no hay datos sobre parametros, contexto, datos de entrenamiento, benchmarks ni capacidades declaradas. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
@@ -42,7 +42,7 @@ El sufijo "duolingo" sugiere que el ajuste fino se realizo sobre datos relaciona
 - Prototipado academico: util como punto de partida para experimentos que requieran un encoder en indonesio, siempre que se verifique la calidad de los pesos.
 - Fine-tuning adicional: si la arquitectura es BERT-compatible, podria servir como base para ajustes posteriores en tareas especificas, sujeto a inspeccion del repositorio.
 - Comparacion de baselines: puede incluirse como referencia en estudios comparativos de modelos IndoBERT, aunque su falta de documentacion limita su valor.
-- Uso educativo: adecuado para demostraciones en cursos sobre HuggingFace y fine-tuning, no para produccion.
+- Uso educativo: adecuado para demostraciones en cursos sobre Hugging Face y fine-tuning, no para produccion.
 
 ## Benchmarks y rendimiento
 
@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible (depende de la arquitectura y tamano, no declarados).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible; si el modelo fuese BERT-compatible, seria desplegable con HuggingFace Transformers, ONNX Runtime o TorchScript, pero no esta confirmado.
+- Opciones de despliegue: no disponible; si el modelo fuese BERT-compatible, seria desplegable con Hugging Face Transformers, ONNX Runtime o TorchScript, pero no esta confirmado.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AdamLachowsky/Model_indobert_duolingo | no disponible | no disponible | MIT | HuggingFace |
-| IndoBERT (indolem/indobert-base-uncased) | ~110M (base) | 512 | MIT | HuggingFace |
-| IndoBERT-lite | ~17M | 512 | MIT | HuggingFace |
-| XLM-RoBERTa base | ~278M | 512 | MIT | HuggingFace |
+| AdamLachowsky/Model_indobert_duolingo | no disponible | no disponible | MIT | Hugging Face |
+| IndoBERT (indolem/indobert-base-uncased) | ~110M (base) | 512 | MIT | Hugging Face |
+| IndoBERT-lite | ~17M | 512 | MIT | Hugging Face |
+| XLM-RoBERTa base | ~278M | 512 | MIT | Hugging Face |
 
 La comparativa con IndoBERT se incluye solo como referencia de la familia arquitectonica sugerida por el nombre; no hay datos que confirmen que este repositorio herede sus caracteristicas.
 
@@ -79,6 +79,6 @@ La comparativa con IndoBERT se incluye solo como referencia de la familia arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdamLachowsky/Model_indobert_duolingo
+- Hugging Face: https://huggingface.co/AdamLachowsky/Model_indobert_duolingo
 - IndoBERT (referencia de la familia sugerida): https://huggingface.co/indolem/indobert-base-uncased
 - IndoLEM/IndoNLU (paper de referencia): https://arxiv.org/abs/2009.05396

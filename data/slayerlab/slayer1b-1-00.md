@@ -93,7 +93,7 @@ Diferencias clave: Slayer1B es el unico de la lista centrado en polaco y el unic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer1B-1.00
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer1B-1.00
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlayerLab/slayer-pl-8x3b
 - Curva de entrenamiento en vivo: https://track.fabryka.ai/run/48744ed2-3155-4294-b899-a6fda1f851da
-- Perfil del autor en HuggingFace: https://huggingface.co/SlayerLab
+- Perfil del autor en Hugging Face: https://huggingface.co/SlayerLab

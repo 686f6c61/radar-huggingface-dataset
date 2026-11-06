@@ -85,10 +85,10 @@ No se dispone de una comparativa directa con otros detectores de elementos de UI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/macpaw-research/yolov11l-ui-elements-detection
+- Modelo en Hugging Face: https://huggingface.co/macpaw-research/yolov11l-ui-elements-detection
 - Dataset Screen2AX-Element: https://huggingface.co/datasets/macpaw-research/Screen2AX-Element
 - Proyecto Screen2AX (GitHub): https://github.com/MacPaw/Screen2AX
-- Coleccion Screen2AX en HuggingFace: https://huggingface.co/collections/macpaw-research/screen2ax
+- Coleccion Screen2AX en Hugging Face: https://huggingface.co/collections/macpaw-research/screen2ax
 - Modelo de deteccion de grupos UI: https://huggingface.co/macpaw-research/yolov11l-ui-groups-detection
 - Paper Screen2AX (arXiv): https://arxiv.org/abs/2507.16704
 - Licencia comercial de Ultralytics: https://www.ultralytics.com/license

@@ -98,7 +98,7 @@ La ventaja diferencial de luthor-8b frente a estas alternativas reside en su ori
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/luthor-8b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/luthor-8b-GGUF
 - Modelo base: https://huggingface.co/IAMIbrahim/luthor-8b
 - Pagina de vision general del autor para este modelo: https://hf.tst.eu/model#luthor-8b-GGUF
 - Preguntas frecuentes y solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

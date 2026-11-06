@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Contexto | Tipo de salida | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Bekko System One v0 17M | 16,80 M (3,90 M sin embeddings) | no disponible | Choice / Noul / Score (probabilidades y selección) | no disponible; por detrás de Jev 1.13 en generalización según el autor | no disponible | HuggingFace, ONNX, código de entrenamiento e inferencia en GitHub |
+| Bekko System One v0 17M | 16,80 M (3,90 M sin embeddings) | no disponible | Choice / Noul / Score (probabilidades y selección) | no disponible; por detrás de Jev 1.13 en generalización según el autor | no disponible | Hugging Face, ONNX, código de entrenamiento e inferencia en GitHub |
 | Jev 1.13 (TypeSafe AI) | no disponible | no disponible | Modelo de decisión de Sistema 1 | Referencia de comparación del propio autor; Bekko v0 queda por detrás en los benchmarks de generalización de S1MB | no disponible | Documentación en docs.typesafe.ai |
-| Ettin reranker 17M v1 | ~17 M (modelo base) | no disponible | Puntuación de relevancia (reranking) | no disponible | no disponible | HuggingFace (cross-encoder/ettin-reranker-17m-v1) |
+| Ettin reranker 17M v1 | ~17 M (modelo base) | no disponible | Puntuación de relevancia (reranking) | no disponible | no disponible | Hugging Face (cross-encoder/ettin-reranker-17m-v1) |
 
 Los tres comparten la categoría de encoder compacto orientado a puntuación más que a generación. Bekko añade la interfaz de decisiones tipadas sobre el reranker Ettin; Jev 1.13 es el competidor directo citado por el autor. Datos cuantitativos de rendimiento y licencia: no disponibles.
 
@@ -93,7 +93,7 @@ Los tres comparten la categoría de encoder compacto orientado a puntuación má
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotchpotch/bekko-system-one-v0-17m
+- Modelo en Hugging Face: https://huggingface.co/hotchpotch/bekko-system-one-v0-17m
 - Articulo de publicacion: https://huggingface.co/blog/hotchpotch/bekko-system-one-v0-release/
 - Coleccion de modelos de la familia v0: https://huggingface.co/collections/hotchpotch/bekko-system-one-v0-6abc47eab9c4fe4ec83d9e30
 - Demo en navegador: https://huggingface.co/spaces/hotchpotch/bekko-system-one-in-browser

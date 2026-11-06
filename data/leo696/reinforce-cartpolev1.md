@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-cartpolev1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimador de gradiente Monte Carlo) sobre el entorno CartPole-v1 de Gymnasium. Lo publica el usuario leo696 en HuggingFace como parte del curso Deep Reinforcement Learning de Hugging Face (concretamente la unidad 4), por lo que se trata de una implementación didáctica y no de un modelo de lenguaje ni de un sistema de propósito general.
+Reinforce-cartpolev1 es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE (policy gradient con estimador de gradiente Monte Carlo) sobre el entorno CartPole-v1 de Gymnasium. Lo publica el usuario leo696 en Hugging Face como parte del curso Deep Reinforcement Learning de Hugging Face (concretamente la unidad 4), por lo que se trata de una implementación didáctica y no de un modelo de lenguaje ni de un sistema de propósito general.
 
 El repositorio no contiene pesos de un transformer ni artefactos de inferencia de texto: es un checkpoint de política para un entorno de control clásico con espacio de observación de 4 dimensiones (posición y velocidad del carro, ángulo y velocidad angular del poste) y espacio de acción discreto de 2 acciones (empujar a izquierda o derecha). El modelo declara una recompensa media de 500,00 ± 0,00 en CartPole-v1, que es el máximo alcanzable en ese entorno, lo que indica que la política resuelve la tarea de forma consistente.
 
@@ -19,7 +19,7 @@ Su relevancia es fundamentalmente pedagógica: sirve como referencia mínima y r
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible (el tamaño del repositorio es 0.0 GB según HuggingFace) |
+| Formato de pesos | no disponible (el tamaño del repositorio es 0.0 GB según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -59,7 +59,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es 0.0 GB según HuggingFace, lo que sugiere que los pesos son muy pequeños o no están incluidos en el repo.
+- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es 0.0 GB según Hugging Face, lo que sugiere que los pesos son muy pequeños o no están incluidos en el repo.
 - GPU recomendadas: no aplica; la inferencia de una política para CartPole (observación de 4 dimensiones, 2 acciones) puede ejecutarse en CPU sin problema.
 - ¿Cabe en GPU de consumo? Sí, en cualquier GPU de consumo e incluso en CPU; no requiere aceleración por hardware.
 - Opciones de despliegue: carga directa con PyTorch o la librería con la que se entrenó (no especificada); no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -71,7 +71,7 @@ No se dispone de información sobre otros agentes REINFORCE publicados para Cart
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-cartpolev1 | REINFORCE | CartPole-v1 | 500,00 ± 0,00 (no verificado) | no disponible | HuggingFace |
+| Reinforce-cartpolev1 | REINFORCE | CartPole-v1 | 500,00 ± 0,00 (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se dispone de información sobre otros agentes REINFORCE publicados para Cart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leo696/Reinforce-cartpolev1
+- Modelo en Hugging Face: https://huggingface.co/leo696/Reinforce-cartpolev1
 - Curso Deep Reinforcement Learning, unidad 4 (referencia del autor): https://huggingface.co/deep-rl-course/unit4/introduction
 - Entorno CartPole-v1 (Gymnasium): no disponible en la información proporcionada
 - Paper de REINFORCE (Williams, 1992): no disponible en la información proporcionada

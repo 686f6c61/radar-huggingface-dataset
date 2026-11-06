@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (te
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/biali/ltxv0.9.6-gguf
+- Hugging Face: https://huggingface.co/biali/ltxv0.9.6-gguf
 - Modelo base (Lightricks): https://huggingface.co/Lightricks/LTX-Video
 - Repositorio oficial LTX-Video: https://github.com/Lightricks/LTX-Video
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
@@ -167,7 +167,7 @@ No se dispone de informacion sobre modelos comparables en el formato GGUF para g
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/biali/ltxv0.9.6-gguf
+- Repositorio Hugging Face: https://huggingface.co/biali/ltxv0.9.6-gguf
 - Modelo base LTX-Video (Lightricks): https://huggingface.co/Lightricks/LTX-Video
 - Repositorio oficial LTX-Video (GitHub): https://github.com/Lightricks/LTX-Video
 - ComfyUI (GitHub): https://github.com/comfyanonymous/ComfyUI

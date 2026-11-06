@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Entorno / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MolmoAct2 MPC N=50 (este) | ~5,44 mil millones | no disponible | ManiSkill, 4 tareas, `pd_ee_pose` | apache-2.0 | HuggingFace (jstm) |
-| allenai/MolmoAct2-LIBERO | no disponible en esta ficha | no disponible | LIBERO | no disponible en esta ficha | HuggingFace (allenai) |
+| MolmoAct2 MPC N=50 (este) | ~5,44 mil millones | no disponible | ManiSkill, 4 tareas, `pd_ee_pose` | apache-2.0 | Hugging Face (jstm) |
+| allenai/MolmoAct2-LIBERO | no disponible en esta ficha | no disponible | LIBERO | no disponible en esta ficha | Hugging Face (allenai) |
 | Otras politicas VLA de manipulacion (OpenVLA, pi0, etc.) | no disponible en esta ficha | no disponible | robots de sobremesa / benchmarks propios | no disponible en esta ficha | no disponible en esta ficha |
 
 La comparacion cuantitativa con alternativas no puede realizarse con la informacion disponible; los datos del modelo base MolmoAct2-LIBERO y de otros VLA no se detallan en el material proporcionado.
@@ -91,7 +91,7 @@ La comparacion cuantitativa con alternativas no puede realizarse con la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jstm/molmoact2_mpc_50
+- Modelo en Hugging Face: https://huggingface.co/jstm/molmoact2_mpc_50
 - Dataset de entrenamiento: https://huggingface.co/datasets/jstm/mpc_lerobot_pd_ee_pose_50
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-LIBERO
 - Libreria LeRobot: no disponible en la informacion proporcionada.

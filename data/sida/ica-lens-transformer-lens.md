@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sida/ica-lens-transformer-lens` no es un modelo generativo, sino un repositorio de artefactos de interpretabilidad mecanicista: lentes ICA (*Independent Component Analysis*) ya ajustadas para dos modelos transformer concretos, `openai-community/gpt2` y `google/gemma-2-2b`. Lo publica el usuario de HuggingFace `sida` con licencia MIT y con `transformer-lens` como librería de carga. El repositorio resuelve un problema acotado pero recurrente en interpretabilidad: disponer de descomposiciones ICA precalculadas de las activaciones sin tener que reajustarlas para cada experimento.
+`sida/ica-lens-transformer-lens` no es un modelo generativo, sino un repositorio de artefactos de interpretabilidad mecanicista: lentes ICA (*Independent Component Analysis*) ya ajustadas para dos modelos transformer concretos, `openai-community/gpt2` y `google/gemma-2-2b`. Lo publica el usuario de Hugging Face `sida` con licencia MIT y con `transformer-lens` como librería de carga. El repositorio resuelve un problema acotado pero recurrente en interpretabilidad: disponer de descomposiciones ICA precalculadas de las activaciones sin tener que reajustarlas para cada experimento.
 
 La estructura de directorios replica la del repositorio de Jacobian Lens de Neuronpedia (`<modelo>/icalens/<dataset>/<modelo>_ica_lens.pt`), de modo que cada artefacto se localiza por modelo, dataset y punto de activación. Los ficheros contienen matrices de lectura y escritura, centros ICA, configuración de preprocesado, capas de origen y procedencia del ajuste. Ambos conjuntos se ajustaron sobre `NeelNanda/pile-10k` y se convirtieron desde el formato ICA Lens 4, con casting de fp32 a fp16 para su distribución.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Corpus de ajuste | `NeelNanda/pile-10k` | No disponible en la información | No disponible en la información |
 | Licencia | MIT (artefactos) | No disponible en la información | No disponible en la información |
 | Métricas publicadas | Ninguna | No disponible en la información | No disponible en la información |
-| Disponibilidad | HuggingFace, 0 descargas y 0 likes | Referencia de formato citada en la model card | No disponible en la información |
+| Disponibilidad | Hugging Face, 0 descargas y 0 likes | Referencia de formato citada en la model card | No disponible en la información |
 
 La comparación cuantitativa no es posible con los datos disponibles: no se han publicado métricas de reconstrucción ni de calidad de características para este repositorio.
 
@@ -88,5 +88,5 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sida/ica-lens-transformer-lens
+- Hugging Face: https://huggingface.co/sida/ica-lens-transformer-lens
 - Los resultados de búsqueda web proporcionados no son relevantes para este repositorio: corresponden al VIH/sida y no guardan relación con el proyecto. No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

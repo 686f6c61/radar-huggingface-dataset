@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DarrenYoon/beit-matching-weights` es un repositorio de pesos de un modelo de visión de la familia BEIT (Bidirectional Encoder representation from Image Transformers), publicado por el usuario DarrenYoon en HuggingFace. Según la model card, se trata de una implementación compacta y personalizada en PyTorch de BEIT orientada a tareas de *matching* (emparejamiento), con una configuración de escala "huge". El autor indica explícitamente que el repositorio está pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados pequeños, no como un release preentrenado listo para producción.
+`DarrenYoon/beit-matching-weights` es un repositorio de pesos de un modelo de visión de la familia BEIT (Bidirectional Encoder representation from Image Transformers), publicado por el usuario DarrenYoon en Hugging Face. Según la model card, se trata de una implementación compacta y personalizada en PyTorch de BEIT orientada a tareas de *matching* (emparejamiento), con una configuración de escala "huge". El autor indica explícitamente que el repositorio está pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados pequeños, no como un release preentrenado listo para producción.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado en benchmarks. El repositorio no declara resultados de rendimiento, no especifica el conjunto de datos de entrenamiento ni el número de tokens procesados, y no documenta idiomas soportados. Con 16.576 parámetros totales y un tamaño de repositorio de 0,0 GB, se trata de un artefacto de tamaño muy reducido, coherente con la descripción de "implementación compacta" y "smoke test" que da el propio autor.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `DarrenYoon/beit-matching-weights` | 16.576 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| `DarrenYoon/beit-matching-weights` | 16.576 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | BEIT oficial (Microsoft) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
-| Otros checkpoints BEIT en HuggingFace | no disponible | no disponible | no disponible | no disponible | no disponible |
+| Otros checkpoints BEIT en Hugging Face | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la información proporcionada para establecer una comparativa rigurosa con alternativas de la misma categoría.
 
@@ -80,5 +80,5 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DarrenYoon/beit-matching-weights
+- Hugging Face: https://huggingface.co/DarrenYoon/beit-matching-weights
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

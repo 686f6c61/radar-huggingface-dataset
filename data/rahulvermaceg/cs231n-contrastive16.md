@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahulvermaceg/cs231n-contrastive16
+- Repositorio en Hugging Face: https://huggingface.co/rahulvermaceg/cs231n-contrastive16
 - Curso CS231n de Stanford (página oficial): https://cs231n.stanford.edu/
 - Notas del curso CS231n (github.io): https://cs231n.github.io/
 - Notas de clase CS231n 2025 (PDF): https://raimbekovm.github.io/cs231n-2025-notes/CS231n-2025-Lecture-Notes.pdf

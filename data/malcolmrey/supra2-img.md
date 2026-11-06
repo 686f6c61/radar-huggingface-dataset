@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Supra2-IMG es un repositorio de modelo publicado en HuggingFace por el usuario malcolmrey. La unica informacion verificable es la ficha tecnica de la plataforma: licencia Apache 2.0, etiquetas `license:apache-2.0` y `region:us`, un tamano de repositorio de 1,7 GB y contadores de 0 descargas y 0 likes en el momento de la consulta. La model card asociada no contiene mas que la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+Supra2-IMG es un repositorio de modelo publicado en Hugging Face por el usuario malcolmrey. La unica informacion verificable es la ficha tecnica de la plataforma: licencia Apache 2.0, etiquetas `license:apache-2.0` y `region:us`, un tamano de repositorio de 1,7 GB y contadores de 0 descargas y 0 likes en el momento de la consulta. La model card asociada no contiene mas que la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
-El repositorio se creo y se actualizo en la misma marca temporal (21 de septiembre de 2026), lo que indica que no ha recibido mantenimiento posterior ni revisiones documentales. Tampoco se declara pipeline en HuggingFace, por lo que la plataforma no lo clasifica como modelo de texto, vision, audio ni ninguna otra categoria concreta. El sufijo "IMG" del nombre sugiere un proposito relacionado con imagenes, pero se trata de una inferencia no confirmada por ninguna fuente.
+El repositorio se creo y se actualizo en la misma marca temporal (21 de septiembre de 2026), lo que indica que no ha recibido mantenimiento posterior ni revisiones documentales. Tampoco se declara pipeline en Hugging Face, por lo que la plataforma no lo clasifica como modelo de texto, vision, audio ni ninguna otra categoria concreta. El sufijo "IMG" del nombre sugiere un proposito relacionado con imagenes, pero se trata de una inferencia no confirmada por ninguna fuente.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a WhatsApp y no guardan relacion alguna con el repositorio. En consecuencia, esta ficha recoge exclusivamente los metadatos disponibles y marca explicitamente como "no disponible" todo aquello que no puede verificarse, sin extrapolar capacidades a partir del nombre del modelo.
 
@@ -53,7 +53,7 @@ No es posible enumerar casos de uso concretos y verificables, porque se desconoc
 - Generacion de imagenes bajo demanda: si el modelo resultase ser un modelo de difusion o de sintesis de imagen, podria utilizarse en flujos de creacion de contenido grafico por lotes, siempre que se confirmasen los formatos de entrada, las resoluciones soportadas y el pipeline de inferencia.
 - Edicion o mejora de imagenes: aplicable unicamente si el repositorio contiene un modelo de restauracion, superresolucion o inpainting; requeriria validar la calidad y el coste por inferencia antes de integrarlo en un producto.
 - Prototipado interno en investigacion: dado que el repositorio no esta documentado, su uso mas realista hoy es la inspeccion tecnica del contenido (pesos, configuracion, tokenizer) para determinar que es el modelo realmente.
-- Evaluacion comparativa de pesos publicados sin model card: util para estudiar practicas de publicacion en HuggingFace y el impacto de la ausencia de documentacion en la reproducibilidad.
+- Evaluacion comparativa de pesos publicados sin model card: util para estudiar practicas de publicacion en Hugging Face y el impacto de la ausencia de documentacion en la reproducibilidad.
 - Integracion en pipelines de generacion de contenido: descartable hasta que se confirme la licencia de los datos de entrenamiento y las obligaciones de atribucion, mas alla del texto Apache 2.0 declarado.
 - Despliegue en servicio de inferencia: no recomendable sin conocer arquitectura, requisitos de memoria y rendimiento esperado.
 
@@ -76,7 +76,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Supra2-IMG | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace sin documentar | no disponible |
+| Supra2-IMG | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face sin documentar | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer la ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/malcolmrey/Supra2-IMG
+- Repositorio en Hugging Face: https://huggingface.co/malcolmrey/Supra2-IMG
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Busqueda web realizada: sin resultados relevantes. Los unicos enlaces recuperados fueron https://www.whatsapp.com/, https://web.whatsapp.com/, https://www.whatsapp.com/download, https://wa.me/ y https://de.wikipedia.org/wiki/WhatsApp, ninguno relacionado con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

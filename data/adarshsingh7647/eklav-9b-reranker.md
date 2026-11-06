@@ -72,7 +72,7 @@ No se dispone de información sobre otros rerankers comparables en la documentac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdarshSingh7647/Eklav-9B-Reranker
+- Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-9B-Reranker
 - Modelo base: https://huggingface.co/zai-org/GLM-Z1-9B-0414
 - Repositorio del autor (forge-CoTCond): https://huggingface.co/AdarshSingh7647/forge-CoTCond
 - Referencia general sobre rerankers: https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/

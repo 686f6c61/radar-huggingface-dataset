@@ -4,7 +4,7 @@
 
 SmolLM2-FT-MyDataset es un ajuste fino (fine-tune) supervisado del modelo base SmolLM2-135M de HuggingFaceTB, publicado por el usuario animay1106 bajo el identificador `animay1106/SmolLM2-FT-MyDataset`. Se trata de un modelo decoder-only de la familia Llama, con 162.826.560 parámetros reales según los pesos en safetensors, entrenado con la librería TRL mediante SFT (supervised fine-tuning) sobre un dataset no documentado que el autor denomina "MyDataset". El repositorio ocupa 0,3 GB y solo contiene pesos en safetensors, sin cuantizaciones publicadas.
 
-El interés del modelo es fundamentalmente didáctico: las etiquetas `module_1` y `smol-course` lo identifican como un ejercicio del curso Smol de HuggingFace, orientado a practicar el pipeline de ajuste fino con TRL. No hay model card sustantiva (el README es la plantilla autogenerada de TRL), no se declara licencia, idiomas ni composición del dataset, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
+El interés del modelo es fundamentalmente didáctico: las etiquetas `module_1` y `smol-course` lo identifican como un ejercicio del curso Smol de Hugging Face, orientado a practicar el pipeline de ajuste fino con TRL. No hay model card sustantiva (el README es la plantilla autogenerada de TRL), no se declara licencia, idiomas ni composición del dataset, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Por tanto, no debe evaluarse como un modelo de producción: es una pieza de demostración de bajo tamaño (135M de parámetros en el base) cuyo comportamiento real solo puede conocerse ejecutándolo, ya que no se han publicado evaluaciones. Su utilidad práctica se limita a entornos de prueba, docencia y validación de infraestructura de inferencia.
 
@@ -36,7 +36,7 @@ El entrenamiento se realizó con SFT mediante TRL 1.16.0, sobre Transformers 5.2
 - Soporte de agentes y razonamiento multi-paso: no disponible; el modelo no incluye modo "thinking" ni planificación explícita.
 - Capacidades multilingües: no declaradas; el modelo base SmolLM2 está orientado principalmente al inglés, pero este fine-tune no especifica idiomas.
 - Capacidades especiales (visión, audio, decodificación especulativa): ninguna. Es un modelo estrictamente de texto.
-- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI y con HuggingFace Inference Endpoints.
+- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI y con Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -57,18 +57,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: aproximadamente 0,65 GB en fp32, 0,33 GB en fp16/bf16, 0,17 GB en int8 y unos 0,09 GB en 4 bits, solo para los pesos. Con caché KV, tokenizador y overhead del runtime, el consumo real se sitúa en torno a 0,5-1,5 GB según precision y longitud de contexto.
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4090, A100, H100). No requiere GPU de datacenter; una A100 o H100 estaría enormemente sobredimensionada y solo tendría sentido para servir muchas peticiones concurrentes.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo de los últimos diez años, e incluso en iGPU y en Raspberry Pi con cuantización agresiva.
-- Opciones de despliegue: `transformers` con `pipeline` (soporte nativo, indicado en la model card), TGI (etiqueta `text-generation-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), y vLLM o llama.cpp/Ollama tras convertir los pesos a los formatos correspondientes, ya que el repositorio solo incluye safetensors.
+- Opciones de despliegue: `transformers` con `pipeline` (soporte nativo, indicado en la model card), TGI (etiqueta `text-generation-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), y vLLM o llama.cpp/Ollama tras convertir los pesos a los formatos correspondientes, ya que el repositorio solo incluye safetensors.
 - Latencia y throughput estimados: no hay mediciones publicadas. Como orden de magnitud, en CPU moderna se esperan decenas de tokens por segundo y en GPU de consumo cientos de tokens por segundo con lotes pequeños; son estimaciones por escala del modelo, no cifras verificadas para este repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| animay1106/SmolLM2-FT-MyDataset | 162,8 M (safetensors) | No disponible (base: 8.192) | No disponible | HuggingFace, 0 descargas | Fine-tune SFT sin evaluar ni documentar |
-| HuggingFaceTB/SmolLM2-135M (base) | ~135 M | 8.192 tokens | Apache-2.0 | HuggingFace, ampliamente utilizado | Modelo base preentrenado, con model card completa y evaluaciones publicadas |
-| HuggingFaceTB/SmolLM2-360M | ~362 M | 8.192 tokens | Apache-2.0 | HuggingFace | Misma familia, mayor capacidad; alternativa si se necesita más calidad |
-| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache-2.0 | HuggingFace | Contexto mucho mayor y mejor soporte multilingüe; requiere más VRAM (~1 GB en fp16) |
-| GPT-2 (124 M) | ~124 M | 1.024 tokens | MIT | HuggingFace | Referencia histórica; contexto muy corto y sin formato conversacional nativo |
+| animay1106/SmolLM2-FT-MyDataset | 162,8 M (safetensors) | No disponible (base: 8.192) | No disponible | Hugging Face, 0 descargas | Fine-tune SFT sin evaluar ni documentar |
+| HuggingFaceTB/SmolLM2-135M (base) | ~135 M | 8.192 tokens | Apache-2.0 | Hugging Face, ampliamente utilizado | Modelo base preentrenado, con model card completa y evaluaciones publicadas |
+| HuggingFaceTB/SmolLM2-360M | ~362 M | 8.192 tokens | Apache-2.0 | Hugging Face | Misma familia, mayor capacidad; alternativa si se necesita más calidad |
+| Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache-2.0 | Hugging Face | Contexto mucho mayor y mejor soporte multilingüe; requiere más VRAM (~1 GB en fp16) |
+| GPT-2 (124 M) | ~124 M | 1.024 tokens | MIT | Hugging Face | Referencia histórica; contexto muy corto y sin formato conversacional nativo |
 
 Los datos de los modelos comparables proceden de sus respectivas model cards públicas y no de la informacion proporcionada en esta busqueda; conviene verificarlos antes de citarlos. La ventaja competitiva de este fine-tune frente a sus alternativas es nula en términos de rendimiento documentado: su único valor diferencial es servir como ejemplo didáctico reproducible.
 
@@ -87,8 +87,8 @@ Los datos de los modelos comparables proceden de sus respectivas model cards pú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/animay1106/SmolLM2-FT-MyDataset
+- Modelo en Hugging Face: https://huggingface.co/animay1106/SmolLM2-FT-MyDataset
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la propia model card. No se han encontrado papers, blogs, demos ni repositorios adicionales asociados al modelo.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la propia model card. No se han encontrado papers, blogs, demos ni repositorios adicionales asociados al modelo.

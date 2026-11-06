@@ -60,8 +60,8 @@ No se dispone de información sobre adaptadores comparables del mismo autor o pa
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `facebook/nllb-200-distilled-600M` | 600M | 512 | 200 | CC-BY-NC-4.0 | HuggingFace |
-| `fetle/orm-amh-nmt` (adaptador) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `facebook/nllb-200-distilled-600M` | 600M | 512 | 200 | CC-BY-NC-4.0 | Hugging Face |
+| `fetle/orm-amh-nmt` (adaptador) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparativa es incompleta porque el adaptador no tiene datos publicados.
 
@@ -75,7 +75,7 @@ La comparativa es incompleta porque el adaptador no tiene datos publicados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fetle/orm-amh-nmt
+- Hugging Face: https://huggingface.co/fetle/orm-amh-nmt
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Paper de NLLB-200: https://arxiv.org/abs/2207.04672 (referencia del modelo base, no del adaptador)
 - Paper de estimación de emisiones (tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700

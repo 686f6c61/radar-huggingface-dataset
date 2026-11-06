@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 |---|---|---|---|---|---|---|
 | AX-EmbeddingGemma-2-MLX-AXQ-MXFP4 | MLX Safetensors | 744,37 M | 262.144 tokens | Precision mixta 4/8/bf16, BPW 12,6059 | apache-2.0 | Publicado por AutomatosX (0 descargas, 0 likes) |
 | AX-EmbeddingGemma-2-MLX-AXQ-MXFP8 (sibling) | MLX Safetensors | 744,37 M (base) | no disponible | Misma politica de roles AXQ en formato de bloque MXFP8; vision y audio en BF16 | apache-2.0 | Sibling declarado por el mismo autor |
-| google/embeddinggemma-2 (modelo base BF16) | Safetensors (upstream) | 744,37 M | no disponible en esta ficha | BF16 | no disponible en esta ficha | Repositorio de Google en HuggingFace |
+| google/embeddinggemma-2 (modelo base BF16) | Safetensors (upstream) | 744,37 M | no disponible en esta ficha | BF16 | no disponible en esta ficha | Repositorio de Google en Hugging Face |
 
 No se dispone de resultados de rendimiento comparativos ni de otros modelos de embeddings de la misma categoria con datos verificables en la informacion proporcionada, por lo que la comparativa se limita a los artefactos derivados del mismo modelo base.
 
@@ -101,7 +101,7 @@ No se dispone de resultados de rendimiento comparativos ni de otros modelos de e
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-MLX-AXQ-MXFP4
+- Hugging Face del modelo: https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Sibling MXFP8: https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-MLX-AXQ-MXFP8
 - Colecciones de AutomatosX: https://huggingface.co/AutomatosX/collections

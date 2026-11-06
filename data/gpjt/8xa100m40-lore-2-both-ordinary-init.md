@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpjt/8xa100m40-lore-2-both-ordinary-init` es un modelo de lenguaje causal entrenado desde cero por Giles Thomas (gpjt), partiendo del codigo de Sebastian Raschka para su libro "Build a Large Language Model (from Scratch)". Se trata de una arquitectura Transformer decoder-only de estilo GPT-2 a la que se le ha anadido una tecnica propia del autor llamada LoRE (Low Rank Embeddings), que sustituye las matrices de embedding y de la cabeza de salida por factorizaciones de bajo rango. La idea fue sugerida por el usuario AndrewThompson1233 en una discusion de HuggingFace. El modelo tiene 111.460.096 parametros segun los pesos en safetensors, aunque la model card declara 98.877.184.
+`gpjt/8xa100m40-lore-2-both-ordinary-init` es un modelo de lenguaje causal entrenado desde cero por Giles Thomas (gpjt), partiendo del codigo de Sebastian Raschka para su libro "Build a Large Language Model (from Scratch)". Se trata de una arquitectura Transformer decoder-only de estilo GPT-2 a la que se le ha anadido una tecnica propia del autor llamada LoRE (Low Rank Embeddings), que sustituye las matrices de embedding y de la cabeza de salida por factorizaciones de bajo rango. La idea fue sugerida por el usuario AndrewThompson1233 en una discusion de Hugging Face. El modelo tiene 111.460.096 parametros segun los pesos en safetensors, aunque la model card declara 98.877.184.
 
 El objetivo del modelo no es competir con LLM modernos, sino servir como banco de pruebas para estudiar el efecto de LoRE sobre el tamano del modelo y su comportamiento. El autor es explicito al respecto: se trata de un modelo pequeno, entrenado con aproximadamente el numero de tokens considerado optimo segun Chinchilla (unas 20 veces el numero de parametros, en concreto 3.260.252.160 tokens), por lo que "no sabe muchos hechos y no es especialmente listo".
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | gpjt/8xa100m40-lore-2-both-ordinary-init | 111M (safetensors) | 1.024 | Apache 2.0 | GPT-2 con LoRE, requiere `trust_remote_code` |
 | GPT-2 small (OpenAI) | 124M | 1.024 | MIT | Referencia historica, con weight tying |
 | Modelo base de Raschka (sin LoRE) | ~163M segun la model card | 1.024 | segun repo original | Base de la que deriva este checkpoint |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 | Apache 2.0 | Alternativa pequena moderna |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 | Apache 2.0 | Alternativa pequena moderna |
 | Qwen2.5-0.5B (Alibaba) | 494M | 32.768 | Apache 2.0 | Alternativa de mayor tamano y contexto |
 
 No hay datos de rendimiento comparativo publicados para este modelo; la comparacion se limita a parametros, contexto, licencia y disponibilidad.
@@ -92,11 +92,11 @@ No hay datos de rendimiento comparativo publicados para este modelo; la comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/8xa100m40-lore-2-both-ordinary-init
+- Modelo en Hugging Face: https://huggingface.co/gpjt/8xa100m40-lore-2-both-ordinary-init
 - Repositorio de codigo: https://github.com/gpjt/ddp-base-model-from-scratch
 - Notebook de fine-tuning: https://github.com/gpjt/ddp-base-model-from-scratch/blob/main/hf_train.ipynb
 - Articulo sobre matrices de vocabulario de bajo rango (anunciado, no publicado en el momento de la consulta): https://www.gilesthomas.com/2026/10/low-rank-vocab-matrices
 - Discusion donde se sugirio la idea de LoRE: https://huggingface.co/gpjt/jax-with-mha-bias-fw-fwedu-5050-DEPRECATED/discussions/1
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fineweb-gpt2-tokens
 - Libro de referencia (Sebastian Raschka): https://www.manning.com/books/build-a-large-language-model-from-scratch
-- Perfil del autor en HuggingFace: https://huggingface.co/gpjt
+- Perfil del autor en Hugging Face: https://huggingface.co/gpjt

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Decision-WAF-V1.1-0.4B es un modelo publicado en HuggingFace por el usuario 0xBrandon bajo licencia Apache-2.0. El repositorio no incluye model card descriptiva: el README se limita a la cabecera YAML con la licencia, sin información sobre arquitectura, datos de entrenamiento, tokenizador, idiomas ni uso previsto. El nombre del repositorio sugiere un modelo de aproximadamente 0,4 mil millones de parámetros orientado a toma de decisiones en el contexto de un WAF (Web Application Firewall), pero esta lectura es una inferencia a partir del identificador y no está confirmada por ninguna documentación oficial.
+Decision-WAF-V1.1-0.4B es un modelo publicado en Hugging Face por el usuario 0xBrandon bajo licencia Apache-2.0. El repositorio no incluye model card descriptiva: el README se limita a la cabecera YAML con la licencia, sin información sobre arquitectura, datos de entrenamiento, tokenizador, idiomas ni uso previsto. El nombre del repositorio sugiere un modelo de aproximadamente 0,4 mil millones de parámetros orientado a toma de decisiones en el contexto de un WAF (Web Application Firewall), pero esta lectura es una inferencia a partir del identificador y no está confirmada por ninguna documentación oficial.
 
 A fecha de la consulta, el repositorio registra 0 descargas y 0 likes, con fecha de creación y de última actualización idénticas (27 de octubre de 2026), lo que indica que no ha habido revisiones posteriores ni evidencia pública de validación por parte de la comunidad. No se ha publicado pipeline, conjunto de datos, informe técnico ni resultados de evaluación.
 
@@ -46,7 +46,7 @@ No hay información sobre volumen de tokens de entrenamiento, composición del d
 - Razonamiento, código y matemáticas: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles; el campo de idiomas no está declarado en HuggingFace.
+- Capacidades multilingües: no disponibles; el campo de idiomas no está declarado en Hugging Face.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
 - Uso previsto declarado: no disponible. La única pista es el identificador del repositorio, que apunta a clasificación o decisión sobre tráfico HTTP en un WAF; se trata de una hipótesis no verificada.
 
@@ -104,6 +104,6 @@ La diferencia relevante no es de tamaño sino de documentación: los tres modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.4B
+- Repositorio en Hugging Face: https://huggingface.co/0xBrandon/Decision-WAF-V1.1-0.4B
 - Perfil del autor: https://huggingface.co/0xBrandon
 - Paper, blog, repositorio de código o demo: no disponibles en la informacion proporcionada.

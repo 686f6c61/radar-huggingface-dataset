@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nasmd93/qwen-sft-ru` es un modelo de lenguaje publicado en HuggingFace por el usuario nasmd93, derivado de la familia Qwen2 y afinado mediante supervisión (SFT, *supervised fine-tuning*). El identificador del repositorio y el sufijo `-ru` sugieren un ajuste orientado al idioma ruso, aunque la model card no documenta explícitamente los idiomas de entrenamiento ni la composición del dataset utilizado. El modelo tiene 494.032.768 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en la gama de los ~0,5 mil millones de parámetros, un tamaño habitual para despliegues ligeros en CPU o GPU de consumo.
+`nasmd93/qwen-sft-ru` es un modelo de lenguaje publicado en Hugging Face por el usuario nasmd93, derivado de la familia Qwen2 y afinado mediante supervisión (SFT, *supervised fine-tuning*). El identificador del repositorio y el sufijo `-ru` sugieren un ajuste orientado al idioma ruso, aunque la model card no documenta explícitamente los idiomas de entrenamiento ni la composición del dataset utilizado. El modelo tiene 494.032.768 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en la gama de los ~0,5 mil millones de parámetros, un tamaño habitual para despliegues ligeros en CPU o GPU de consumo.
 
 La relevancia de esta ficha es limitada desde el punto de vista de la evaluación técnica: el autor no ha publicado información sobre arquitectura detallada, contexto máximo, datos de entrenamiento, benchmarks ni limitaciones. El repositorio tiene 22 descargas y ningún *like*, y fue creado el 28 de octubre de 2026. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, aunque la ausencia de documentación sobre procedencia de datos y evaluación hace recomendable una validación propia antes de cualquier uso en producción.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nasmd93/qwen-sft-ru | 494.032.768 | No disponible | Apache 2.0 | HuggingFace (22 descargas) |
-| Qwen2-0.5B | ~0,5B | 32.768 tokens (según documentación oficial de Qwen2) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B | ~0,5B | 32.768 tokens (según documentación oficial de Qwen2.5) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| SmolLM2-360M | ~360M | 8.192 tokens (según documentación oficial) | Apache 2.0 | HuggingFace |
+| nasmd93/qwen-sft-ru | 494.032.768 | No disponible | Apache 2.0 | Hugging Face (22 descargas) |
+| Qwen2-0.5B | ~0,5B | 32.768 tokens (según documentación oficial de Qwen2) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B | ~0,5B | 32.768 tokens (según documentación oficial de Qwen2.5) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| SmolLM2-360M | ~360M | 8.192 tokens (según documentación oficial) | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos de referencia; para `nasmd93/qwen-sft-ru` no hay información de contexto ni de rendimiento que permita una comparación cuantitativa.
 
@@ -83,4 +83,4 @@ La comparativa se basa en datos públicos de los modelos de referencia; para `na
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nasmd93/qwen-sft-ru
+- Hugging Face: https://huggingface.co/nasmd93/qwen-sft-ru

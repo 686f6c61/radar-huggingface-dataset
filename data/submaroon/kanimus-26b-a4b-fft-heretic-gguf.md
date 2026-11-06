@@ -85,7 +85,7 @@ No se dispone de información sobre el contexto exacto de estos modelos ni de su
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SubMaroon/Kanimus-26B-A4B-FFT-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SubMaroon/Kanimus-26B-A4B-FFT-heretic-GGUF
 - Modelo base: https://huggingface.co/Vortex5/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic
 - Base Animus V14.1 (Darkhn): https://huggingface.co/Darkhn/Gemma-4-26B-A4B-Animus-V14.1-FFT
 - Destilación Opus (TeichAI): https://huggingface.co/TeichAI/gemma-4-26B-A4B-it-Claude-Opus-Distill-v2

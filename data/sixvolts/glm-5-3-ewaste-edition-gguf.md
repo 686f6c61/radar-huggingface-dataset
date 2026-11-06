@@ -115,7 +115,7 @@ La comparacion mas relevante es interna: la Q3_K_M de GLM-5.3 mejora ligeramente
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/SixVolts/GLM-5.3-ewaste-edition-GGUF
+- Hugging Face (esta cuantizacion): https://huggingface.co/SixVolts/GLM-5.3-ewaste-edition-GGUF
 - GLM-5.2 e-waste edition (receta predecesora): https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF
 - Matriz de importancia de unsloth: https://huggingface.co/unsloth/GLM-5.3-GGUF
 - Pagina oficial de GLM-5.3: https://openlm.ai/glm-5.3/

@@ -166,10 +166,10 @@ Al tratarse de una plantilla de chat, la comparacion relevante es con otras plan
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates
+- Repositorio en Hugging Face: https://huggingface.co/peculiar-ragdoll/Sharp-LFM2.5-Chat-Templates
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Plantilla equivalente para Qwen: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
 - Perfil del autor: https://huggingface.co/peculiar-ragdoll
 - Listado de finetunes de LFM2.5-24B-A2B: https://huggingface.co/models?other=base_model:finetune:LiquidAI/LFM2.5-24B-A2B
 - Listado de modelos con etiqueta mlx: https://huggingface.co/models?other=mlx
-- Fichero de licencia del repositorio: LICENSE (en el propio repositorio de HuggingFace)
+- Fichero de licencia del repositorio: LICENSE (en el propio repositorio de Hugging Face)

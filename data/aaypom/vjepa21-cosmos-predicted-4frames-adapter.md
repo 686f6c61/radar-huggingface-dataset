@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Aaypom/vjepa21-cosmos-predicted-4frames-adapter` es un adaptador de investigacion publicado en HuggingFace por el usuario Aaypom. No es un modelo fundacional ni un generador de video autonomo: es una pieza de acoplamiento que traduce las predicciones latentes de V-JEPA 2.1 al espacio latente del tokenizador Cosmos CV4x8x8 de NVIDIA. En concreto, toma dos tubelets predichos por V-JEPA 2.1 (que cubren cuatro fotogramas futuros) y los proyecta en una unica ranura latente futura del tokenizador Cosmos.
+`Aaypom/vjepa21-cosmos-predicted-4frames-adapter` es un adaptador de investigacion publicado en Hugging Face por el usuario Aaypom. No es un modelo fundacional ni un generador de video autonomo: es una pieza de acoplamiento que traduce las predicciones latentes de V-JEPA 2.1 al espacio latente del tokenizador Cosmos CV4x8x8 de NVIDIA. En concreto, toma dos tubelets predichos por V-JEPA 2.1 (que cubren cuatro fotogramas futuros) y los proyecta en una unica ranura latente futura del tokenizador Cosmos.
 
 El problema que aborda es la incompatibilidad entre dos espacios latentes de video. V-JEPA 2.1 produce representaciones predictivas con su propio decoder de tubelets, mientras que el tokenizador Cosmos trabaja con un formato latente CV4x8x8 (compresion temporal 4x y espacial 8x8). Sin un adaptador, no es posible encadenar la prediccion de V-JEPA con la decodificacion de Cosmos. Este repositorio resuelve ese puente con un modulo entrenado exclusivamente en espacio latente.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aaypom/vjepa21-cosmos-predicted-4frames-adapter | Adaptador latente V-JEPA 2.1 a Cosmos | no disponible | 12 fotogramas de contexto + 4 predichos | no disponible | HuggingFace, 0 descargas |
+| Aaypom/vjepa21-cosmos-predicted-4frames-adapter | Adaptador latente V-JEPA 2.1 a Cosmos | no disponible | 12 fotogramas de contexto + 4 predichos | no disponible | Hugging Face, 0 descargas |
 | V-JEPA 2.1 (checkpoint `vjepa2_1_vitg_384.pt`) | Modelo predictivo de video basado en ViT | no disponible en la informacion proporcionada | no disponible | no disponible | Pesos en dl.fbaipublicfiles.com |
-| nvidia/Cosmos-0.1-Tokenizer-CV4x8x8 | Tokenizador de video con compresion CV4x8x8 | no disponible | no disponible | no disponible | HuggingFace (NVIDIA) |
+| nvidia/Cosmos-0.1-Tokenizer-CV4x8x8 | Tokenizador de video con compresion CV4x8x8 | no disponible | no disponible | no disponible | Hugging Face (NVIDIA) |
 | Otros adaptadores entre espacios latentes de video | Proyeccion latente | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa cuantitativa de rendimiento entre estas piezas, ya que ninguna de las fichas aportadas publica parametros, contexto o metricas comparables.
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aaypom/vjepa21-cosmos-predicted-4frames-adapter
+- Hugging Face: https://huggingface.co/Aaypom/vjepa21-cosmos-predicted-4frames-adapter
 - Checkpoint V-JEPA 2.1 referenciado: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitg_384.pt
 - Tokenizador Cosmos referenciado: https://huggingface.co/nvidia/Cosmos-0.1-Tokenizer-CV4x8x8
 - Metricas del autor (referenciadas en la model card): `metrics/latest.json` dentro del repositorio

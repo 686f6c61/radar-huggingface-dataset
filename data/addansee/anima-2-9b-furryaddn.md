@@ -63,5 +63,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: addansee/Anima-2.9B-FurryAddn](https://huggingface.co/addansee/Anima-2.9B-FurryAddn)
+- [Hugging Face: addansee/Anima-2.9B-FurryAddn](https://huggingface.co/addansee/Anima-2.9B-FurryAddn)
 - [Modelo base: Gazingstars123/Anima-2.9B](https://huggingface.co/Gazingstars123/Anima-2.9B)

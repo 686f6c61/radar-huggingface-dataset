@@ -79,9 +79,9 @@ No se dispone de datos de rendimiento verificados en la informacion proporcionad
 
 | Modelo | Parametros | Contexto / prompt | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (base, BF16) | 7,1B (32 capas DiT) | no disponible | safetensors en BF16 | qwen-research | HuggingFace (Qwen/Qwen-Image-2.1) |
-| Este repositorio (Uncensored GGUF) | 7,1B (derivado del anterior) | no disponible | GGUF: BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | qwen-research | HuggingFace (Riyan200324200324) |
-| Otras redistribuciones GGUF del mismo modelo | 7,1B | no disponible | GGUF | qwen-research | HuggingFace (abenzerps, KasugaiSakura) |
+| Qwen-Image-2.1 (base, BF16) | 7,1B (32 capas DiT) | no disponible | safetensors en BF16 | qwen-research | Hugging Face (Qwen/Qwen-Image-2.1) |
+| Este repositorio (Uncensored GGUF) | 7,1B (derivado del anterior) | no disponible | GGUF: BF16, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 | qwen-research | Hugging Face (Riyan200324200324) |
+| Otras redistribuciones GGUF del mismo modelo | 7,1B | no disponible | GGUF | qwen-research | Hugging Face (abenzerps, KasugaiSakura) |
 | Alternativas del mismo segmento (p. ej. FLUX.1-dev, SD 3.5 Large) | no verificado en la informacion disponible | no disponible | no disponible | no disponible | no disponible |
 
 Conviene tener en cuenta que las tres primeras filas corresponden al mismo modelo subyacente con distintos empaquetados o repositorios de publicacion; su diferencia practica esta en la disponibilidad de ficheros, los nombres y los enlaces, no en los pesos. La model card de este repositorio enlaza a rutas del usuario `abenzerps`, mientras que la busqueda web localiza un repositorio equivalente bajo el usuario `KasugaiSakura`, lo que sugiere redistribuciones sucesivas del mismo trabajo.
@@ -102,7 +102,7 @@ Conviene tener en cuenta que las tres primeras filas corresponden al mismo model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Riyan200324200324/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Riyan200324200324/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

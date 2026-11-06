@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.6-35B-A3B-Coder-Uncensored-Genesis-Hermes-MTP es un modelo de lenguaje multimodal (image-text-to-text) publicado por el usuario burningfeet en HuggingFace, derivado del modelo base HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive. Se trata de un fine-tuning de tipo SFT/LoRA sobre una arquitectura Mixture of Experts (MoE) con 35.505.251.456 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token (indicado por el sufijo A3B), orientado a generación de código, razonamiento lógico-matemático, uso de herramientas y flujos agénticos, con un ajuste explícito para eliminar restricciones de contenido ("uncensored").
+Qwopus3.6-35B-A3B-Coder-Uncensored-Genesis-Hermes-MTP es un modelo de lenguaje multimodal (image-text-to-text) publicado por el usuario burningfeet en Hugging Face, derivado del modelo base HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive. Se trata de un fine-tuning de tipo SFT/LoRA sobre una arquitectura Mixture of Experts (MoE) con 35.505.251.456 parámetros totales y aproximadamente 3.000 millones de parámetros activos por token (indicado por el sufijo A3B), orientado a generación de código, razonamiento lógico-matemático, uso de herramientas y flujos agénticos, con un ajuste explícito para eliminar restricciones de contenido ("uncensored").
 
 El modelo se distribuye exclusivamente en formato GGUF, lo que lo hace apto para inferencia local mediante llama.cpp y derivados. Incorpora capacidades multimodales (procesamiento de imagen y texto), soporte declarado de function calling y tool use, contexto largo, y modos de razonamiento con "thinking" desactivable. Está etiquetado como compatible con endpoints y entrenado parcialmente sobre el dataset NousResearch/hermes-function-calling-v1, lo que explica la presencia de "Hermes" en la nomenclatura.
 
@@ -73,7 +73,7 @@ La comparación con Qwen3-30B-A3B y Mixtral 8x7B es orientativa por familia y ta
 ## Limitaciones y advertencias
 
 - Repositorio con 0 descargas y 0 likes: no hay validación comunitaria ni evidencia empírica de calidad.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatización de descargas.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de descargas.
 - Naturaleza "uncensored": ausencia de salvaguardas de contenido, con riesgo de generar material dañino, sesgado o ilegal; no apto para producción orientada al usuario final sin capas adicionales de moderación.
 - Riesgo de alucinación inherente a los modelos generativos, agravado por la falta de benchmarks publicados.
 - Idiomas limitados a inglés, chino y multilingüe sin detalle; el rendimiento en castellano no está verificado.
@@ -84,6 +84,6 @@ La comparación con Qwen3-30B-A3B y Mixtral 8x7B es orientativa por familia y ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/burningfeet/backup2026-10-28-LffyFx-Qwopus3.6-35B-A3B-Coder-Uncensored-Genesis-Hermes-MTP-GGUF
+- Hugging Face: https://huggingface.co/burningfeet/backup2026-10-28-LffyFx-Qwopus3.6-35B-A3B-Coder-Uncensored-Genesis-Hermes-MTP-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Dataset de function calling: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1

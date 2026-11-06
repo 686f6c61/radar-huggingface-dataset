@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adnanstudios/mws-intelligence` es un modelo de generacion de texto publicado en HuggingFace por el usuario adnanstudios. Se trata de un modelo de aproximadamente 4.551.515.648 parametros (unos 4,55 mil millones), distribuido en formato MLX con pesos safetensors y etiquetado con la etiqueta `gemma3`, lo que apunta a un ajuste (fine-tune) o derivado de la familia Gemma 3 de Google. El repositorio ocupa 2,6 GB e incluye unicamente la libreria MLX como `library_name`, es decir, esta pensado para inferencia en Apple Silicon (Macs con chip M1/M2/M3/M4) a traves del ecosistema MLX.
+`adnanstudios/mws-intelligence` es un modelo de generacion de texto publicado en Hugging Face por el usuario adnanstudios. Se trata de un modelo de aproximadamente 4.551.515.648 parametros (unos 4,55 mil millones), distribuido en formato MLX con pesos safetensors y etiquetado con la etiqueta `gemma3`, lo que apunta a un ajuste (fine-tune) o derivado de la familia Gemma 3 de Google. El repositorio ocupa 2,6 GB e incluye unicamente la libreria MLX como `library_name`, es decir, esta pensado para inferencia en Apple Silicon (Macs con chip M1/M2/M3/M4) a traves del ecosistema MLX.
 
 La model card publicada es practicamente vacia: solo declara `language: en`, `library_name: mlx` y `pipeline_tag: text-generation`. No incluye descripcion, datos de entrenamiento, resultados de evaluacion, licencia ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y ultima actualizacion son el 21 de septiembre de 2026, con apenas 30 minutos de diferencia entre ambas.
 
@@ -51,7 +51,7 @@ Tampoco se documentan innovaciones tecnicas propias, decodificacion especulativa
 - Base para ajuste fino con LoRA: al ser un modelo de 4,55 mil millones de parametros, es viable ajustarlo con LoRA o QLoRA en una sola GPU de 24 GB o en un Mac con 32 GB de memoria unificada, partiendo de los pesos publicados para adaptarlo a un dominio concreto en ingles.
 - Generacion de texto por lotes sin conexion: procesamiento de documentos en ingles (resumenes, reescritura, extraccion de textos estructurados) en entornos air-gapped, donde la ejecucion local es un requisito de cumplimiento y el volumen no exige un modelo mayor.
 - Integracion en aplicaciones macOS/iOS: mediante MLX o mlx-swift es posible empaquetar el modelo dentro de una aplicacion nativa de Apple para funciones de autocompletado, redaccion asistida o chat, con un coste de memoria moderado.
-- Docencia e investigacion sobre despliegue de modelos: resulta util como caso practico de publicacion incompleta en HuggingFace (sin licencia, sin model card, sin benchmarks) para ilustrar los riesgos de adoptar checkpoints sin trazabilidad.
+- Docencia e investigacion sobre despliegue de modelos: resulta util como caso practico de publicacion incompleta en Hugging Face (sin licencia, sin model card, sin benchmarks) para ilustrar los riesgos de adoptar checkpoints sin trazabilidad.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: si, en tarjetas con 8 GB o mas de VRAM para cuantizaciones de 4 bits (RTX 3060 Ti, RTX 4060, RTX 3070) y con 12-16 GB para fp16 (RTX 3060 12 GB, RTX 4070 Ti Super, RTX 4080). No obstante, MLX no se ejecuta sobre CUDA, por lo que en NVIDIA habria que convertir los pesos a otro formato, paso que no esta documentado por el autor.
 - Apple Silicon: es la plataforma objetivo. Un Mac con 8 GB de memoria unificada puede mover la version cuantizada, aunque se recomienda 16 GB o mas para contextos largos y para mantener el sistema operativo con margen. Chips M1, M2, M3 y M4 (incluidas variantes Pro, Max y Ultra) son compatibles a traves de MLX.
 - GPU de datacenter: A100, H100 y L40S son sobredimensionadas para este tamano, pero validas si se convierten los pesos a safetensors estandar para vLLM o TGI. No hay ninguna receta de conversion publicada en el repositorio.
-- Opciones de despliegue: `mlx-lm` (CLI `mlx_lm.generate` y servidor OpenAI-compatible con `mlx_lm.server`) y `mlx-swift` para aplicaciones nativas. Ollama, llama.cpp, vLLM y TGI no consumen pesos MLX directamente; requeririan una conversion previa a GGUF o a safetensors de HuggingFace Transformers, sin garantia de que la plantilla de chat se conserve.
+- Opciones de despliegue: `mlx-lm` (CLI `mlx_lm.generate` y servidor OpenAI-compatible con `mlx_lm.server`) y `mlx-swift` para aplicaciones nativas. Ollama, llama.cpp, vLLM y TGI no consumen pesos MLX directamente; requeririan una conversion previa a GGUF o a safetensors de Hugging Face Transformers, sin garantia de que la plantilla de chat se conserve.
 - Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ La diferencia fundamental no es de capacidad bruta, sino de trazabilidad: las tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adnanstudios/mws-intelligence
+- Modelo en Hugging Face: https://huggingface.co/adnanstudios/mws-intelligence
 - Libreria MLX: https://github.com/ml-explore/mlx
 - Herramientas de inferencia y conversion MLX para modelos de lenguaje: https://github.com/ml-explore/mlx-lm
 - Documentacion de la familia Gemma 3 (referencia del posible modelo base): https://ai.google.dev/gemma/docs

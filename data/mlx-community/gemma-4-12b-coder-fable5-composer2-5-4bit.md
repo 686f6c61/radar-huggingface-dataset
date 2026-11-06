@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. La versión 4 bits ofrece men
 
 ## Enlaces
 
-- [Repositorio HuggingFace (4 bits)](https://huggingface.co/mlx-community/gemma-4-12b-coder-fable5-composer2.5-4bit)
+- [Repositorio Hugging Face (4 bits)](https://huggingface.co/mlx-community/gemma-4-12b-coder-fable5-composer2.5-4bit)
 - [Modelo base original (yuxinlu1)](https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1)
 - [Versión 8 bits en MLX](https://huggingface.co/mlx-community/gemma-4-12b-coder-fable5-composer2.5-8bit)
 - [Guía de desarrollador de Gemma 4 12B (Google Developers Blog)](https://developers.googleblog.com/gemma-4-12b-the-developer-guide/)

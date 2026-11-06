@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Helcyon Aurora 12B v1.0 es un modelo conversacional afinado por XeyonAI (también conocido como HardWire) y distribuido en formato GGUF a través de HuggingFace. Está construido sobre Gemma 4 12B, el checkpoint base de Google que el autor describe como su primera opción para el proyecto Helcyon, y se presenta como el primer modelo de la familia Aurora orientado a conversación natural, compañía, roleplay e instrucciones, con soporte multimodal de visión mediante un fichero `mmproj` separado. Cuenta con 11.907.350.576 parámetros totales según los datos de safetensors del repositorio.
+Helcyon Aurora 12B v1.0 es un modelo conversacional afinado por XeyonAI (también conocido como HardWire) y distribuido en formato GGUF a través de Hugging Face. Está construido sobre Gemma 4 12B, el checkpoint base de Google que el autor describe como su primera opción para el proyecto Helcyon, y se presenta como el primer modelo de la familia Aurora orientado a conversación natural, compañía, roleplay e instrucciones, con soporte multimodal de visión mediante un fichero `mmproj` separado. Cuenta con 11.907.350.576 parámetros totales según los datos de safetensors del repositorio.
 
 El modelo forma parte de un ecosistema más amplio del mismo autor (Helcyon-WebUI) y se distribuye con una identidad de personaje propia, una character card de referencia y una configuración de muestreo recomendada. Según la model card, el entrenamiento combina el modelo base Gemma 4 con datasets generados por "GPT-6 Astra" —orientados a calidez, personalidad y estilo conversacional— junto con datasets propios de Helcyon definidos como "anti-corporate, anti-ideology y pro-free expression", además de datos específicos de roleplay, escritura creativa y comportamiento.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks para establecer una comparacion cuantitativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XeyonAI/Helcyon-Aurora-12b-v1.0-GGUF
+- Hugging Face: https://huggingface.co/XeyonAI/Helcyon-Aurora-12b-v1.0-GGUF
 - Modelo hermano (Mistral-Helcyon-4o-12b-v1.0-GGUF): https://huggingface.co/XeyonAI/Mistral-Helcyon-4o-12b-v1.0-GGUF
 - GitHub de XeyonAI / HardWire: https://github.com/XeyonAI
 - Helcyon-WebUI Free (GitHub): https://github.com/XeyonAI/Helcyon-WebUI

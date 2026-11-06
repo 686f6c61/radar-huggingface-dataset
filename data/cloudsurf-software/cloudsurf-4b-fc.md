@@ -94,7 +94,7 @@ CloudSurf-4B-FC supera claramente a su modelo base y se sitúa por encima de alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC
+- Modelo en Hugging Face: https://huggingface.co/cloudsurf-software/CloudSurf-4B-FC
 - Sitio web de CloudSurf Software: https://cloudsurfsoftware.com/
 - Sitio web alternativo: https://www.cloudsurf.cc/
 - Organización GitHub: https://github.com/cloudsurf-software

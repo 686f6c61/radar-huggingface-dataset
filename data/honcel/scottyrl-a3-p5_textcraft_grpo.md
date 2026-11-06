@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Honcel/scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario Honcel en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos incrementales (0,2 GB de repositorio) que debe cargarse junto al modelo base para poder utilizarse. El adaptador se ha entrenado con el framework `scottyrl`, según la model card, en el contexto de la asignatura 11-768 (AI Agents) de la Universidad Carnegie Mellon, correspondiente a la tarea A3.
+`Honcel/scottyrl-a3-p5_textcraft_grpo` es un adaptador LoRA de rango 32 sobre el modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario Honcel en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos incrementales (0,2 GB de repositorio) que debe cargarse junto al modelo base para poder utilizarse. El adaptador se ha entrenado con el framework `scottyrl`, según la model card, en el contexto de la asignatura 11-768 (AI Agents) de la Universidad Carnegie Mellon, correspondiente a la tarea A3.
 
 El objetivo declarado del adaptador es resolver tareas de tipo TextCraft-Synth, un entorno de síntesis de objetos a partir de recetas textuales en el que el agente debe planificar y ejecutar acciones. La evaluación prevista se realiza sirviendo el adaptador con vLLM (`--enable-lora --max-lora-rank 32`) y ejecutando un script de evaluación sobre las particiones de validación `medium` y `hard`, con `k=4`. La información pública disponible es mínima: no hay cifras de benchmarks, no se declara licencia, no se especifican idiomas y no hay pipeline asignado.
 
@@ -80,8 +80,8 @@ No se han identificado en la informacion disponible adaptadores directamente com
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Honcel/scottyrl-a3-p5_textcraft_grpo` (este adaptador) | LoRA rango 32 sobre base 4B | No disponible | No disponible | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.5-4B` (modelo base, sin ajuste) | 4B | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| `Honcel/scottyrl-a3-p5_textcraft_grpo` (este adaptador) | LoRA rango 32 sobre base 4B | No disponible | No disponible | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.5-4B` (modelo base, sin ajuste) | 4B | No disponible | No disponible | No disponible | Publico en Hugging Face |
 | Otros adaptadores LoRA de la misma asignatura (11-768) | No disponible | No disponible | No disponible | No disponible | No identificados en la busqueda |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se han identificado en la informacion disponible adaptadores directamente com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Honcel/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/Honcel/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentacion de vLLM sobre LoRA (referencia de despliegue citada en la model card): https://docs.vllm.ai/
 - Repositorio del framework `scottyrl` y scripts de evaluacion (`scripts/evaluate_checkpoint.py`, `configs/p5_textcraft_grpo.yaml`): no disponibles en la informacion proporcionada

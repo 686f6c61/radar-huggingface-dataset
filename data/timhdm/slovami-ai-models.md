@@ -86,7 +86,7 @@ La comparativa directa no es del todo equivalente: Slovami AI models no es un mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TimHdm/slovami-ai-models
+- Repositorio Hugging Face: https://huggingface.co/TimHdm/slovami-ai-models
 - Proyecto Slovami AI: https://github.com/timhdm/slovami-ai
 - GigaAM (Salute Developers): https://github.com/salute-developers/GigaAM
 - Whisper (OpenAI): https://github.com/openai/whisper

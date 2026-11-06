@@ -110,5 +110,5 @@ No se dispone de datos de benchmarks comparativos frente a modelos de otros fabr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3.5-4B-AX8860-llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3.5-4B-AX8860-llama.cpp
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

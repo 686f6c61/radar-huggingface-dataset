@@ -69,7 +69,7 @@ Protocolo: cuantización a 8 bits RGB, Y BT.601 de rango limitado, recorte de 2 
 
 | Modelo | Parametros | Escala | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Compact EDSR 2× (este) | 439.107 | 2× | imágenes, salida máx. 16 MP | académica (pesos), MIT (código) | HuggingFace, repo pequeño |
+| Compact EDSR 2× (este) | 439.107 | 2× | imágenes, salida máx. 16 MP | académica (pesos), MIT (código) | Hugging Face, repo pequeño |
 | EDSR original (Lim et al., 2017) | del orden de millones (no disponible el dato exacto en esta ficha) | 2×, 3×, 4× | imágenes | investigación/publicación | pesos de referencia de los autores |
 | Real-ESRGAN | no disponible | 2×, 4× | imágenes reales | BSD-3 (código) / otras según variante | ampliamente disponible |
 | SwinIR | no disponible | 2×, 3×, 4× | imágenes | Apache 2.0 (código) | disponible en repos oficiales |
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tanuj124/image-super-resolution-edsr-x2
+- Modelo en Hugging Face: https://huggingface.co/Tanuj124/image-super-resolution-edsr-x2
 - Aviso de uso de los pesos: https://huggingface.co/Tanuj124/image-super-resolution-edsr-x2/blob/main/LICENSE-WEIGHTS.md
 - DIV2K (Agustsson y Timofte, NTIRE 2017): https://data.vision.ee.ethz.ch/cvl/DIV2K/
 - LSDIR (Li et al., CVPR Workshops 2023): https://ofsoundof.github.io/lsdir-data/

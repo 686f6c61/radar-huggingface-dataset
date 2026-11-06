@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "gatilin/nld-uni-vision-encoder",
+  "slug": "gatilin-nld-uni-vision-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/nld-uni-vision-encoder",
+  "created_at": "2026-11-05T07:43:52.000Z",
+  "updated_at": "2026-11-05T08:33:45.000Z",
+  "license": "nvidia-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "nlduni",
+    "vision-encoder",
+    "feature-extraction",
+    "radio",
+    "custom_code",
+    "base_model:nvidia/NLD-Uni",
+    "base_model:finetune:nvidia/NLD-Uni",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 689399299,
+  "parameters_human": "689.4M",
+  "storage_bytes": 1378856744,
+  "storage_human": "1.4 GB",
+  "base_model": "nvidia/NLD-Uni",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gatilin/nld-uni-vision-encoder · Hugging Face",
+      "url": "https://huggingface.co/gatilin/nld-uni-vision-encoder",
+      "snippet": "This community extraction contains the encoder.vision_tower.* and encoder.mm_projector.* tensors from NVIDIA NLD-Uni, revision ..."
+    },
+    {
+      "title": "ViT & Vision Encoders - a gatilin Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/gatilin/vit-and-vision-encoders",
+      "snippet": "Vision encoders, ViTs, and understanding-side projectors. Component scope and incomplete architecture documentation are noted per model."
+    }
+  ]
+}

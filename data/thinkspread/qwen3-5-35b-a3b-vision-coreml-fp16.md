@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thinkspread/Qwen3.5-35B-A3B-Vision-CoreML-fp16
+- Repositorio Hugging Face: https://huggingface.co/thinkspread/Qwen3.5-35B-A3B-Vision-CoreML-fp16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/main/LICENSE
 - Variante para 9B: https://huggingface.co/thinkspread/Qwen3.5-9B-Vision-CoreML-fp16

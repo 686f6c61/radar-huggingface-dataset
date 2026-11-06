@@ -85,7 +85,7 @@ La comparativa de rendimiento, contexto y disponibilidad de otras alternativas n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anotos/Gemma-4-E4B-it-Text-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Anotos/Gemma-4-E4B-it-Text-MLX-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Conversion MLX de origen: https://huggingface.co/mlx-community/gemma-4-e4b-it-4bit
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

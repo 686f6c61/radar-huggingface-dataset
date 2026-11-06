@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-wc-zipf-newlex-66-eng-100mb_seed455 | 86,5 M | no disponible | SFT sobre 100 MB de ingles | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | ~86 M (misma arquitectura) | no disponible | Preentrenamiento monolingue con 100 MB de ingles | no disponible en la informacion proporcionada | HuggingFace (familia Goldfish) |
-| distilgpt2 | 82 M | 1024 tokens | Destilacion de GPT-2 sobre corpus en ingles | Apache-2.0 | HuggingFace, ampliamente descargado |
-| gpt2 | 124 M | 1024 tokens | Preentrenamiento sobre WebText | MIT | HuggingFace, ampliamente descargado |
+| ppt-wc-zipf-newlex-66-eng-100mb_seed455 | 86,5 M | no disponible | SFT sobre 100 MB de ingles | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | ~86 M (misma arquitectura) | no disponible | Preentrenamiento monolingue con 100 MB de ingles | no disponible en la informacion proporcionada | Hugging Face (familia Goldfish) |
+| distilgpt2 | 82 M | 1024 tokens | Destilacion de GPT-2 sobre corpus en ingles | Apache-2.0 | Hugging Face, ampliamente descargado |
+| gpt2 | 124 M | 1024 tokens | Preentrenamiento sobre WebText | MIT | Hugging Face, ampliamente descargado |
 
 La diferencia principal frente a `distilgpt2` y `gpt2` no es de tamano, sino de proposito: esos dos son modelos generalistas con millones de descargas y evaluaciones conocidas, mientras que este checkpoint es un artefacto experimental con 0 descargas, sin licencia declarada y sin ningun dato de evaluacion publico.
 
@@ -92,9 +92,9 @@ La diferencia principal frente a `distilgpt2` y `gpt2` no es de tamano, sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
-- Organizacion Goldfish en HuggingFace: https://huggingface.co/goldfish-models
+- Organizacion Goldfish en Hugging Face: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/rpmkp23w
 - No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este modelo en la busqueda web realizada.

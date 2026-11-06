@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye datos verificados de otro
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/XXVICK/Myst_Ai-25M-Coder
+- Pagina del modelo en Hugging Face: https://huggingface.co/XXVICK/Myst_Ai-25M-Coder
 - Corpus CodeSearchNet (fuente de entrenamiento declarada): no disponible en la informacion proporcionada
 - Paper o blog tecnico del autor: no disponible
 - Repositorio de codigo de entrenamiento: no disponible

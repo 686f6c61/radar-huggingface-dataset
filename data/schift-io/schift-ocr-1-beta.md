@@ -102,7 +102,7 @@ Frente al modelo base, schift-ocr-1-beta mejora de forma clara en formularios im
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schift-io/schift-ocr-1-beta
+- Modelo en Hugging Face: https://huggingface.co/schift-io/schift-ocr-1-beta
 - Ficheros del repositorio: https://huggingface.co/schift-io/schift-ocr-1-beta/tree/main
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR
 - Organización en GitHub: https://github.com/schift-io

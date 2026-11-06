@@ -88,7 +88,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no puede est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x03
+- Modelo en Hugging Face: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x03
 - Baseline limpio: https://huggingface.co/jiankimr/gr00t_libero10_clean
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Repositorio oficial de NVIDIA Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen35-4b-alfworld-single-opd-iwk3-step100-bf16-20261105` es un checkpoint experimental publicado por el usuario dingwenjun en HuggingFace. Se trata de un ajuste fino del modelo base Qwen3.5-4B (arquitectura `Qwen3_5ForConditionalGeneration`) entrenado mediante aprendizaje por refuerzo (RL) sobre el entorno ALFWorld, un benchmark de tareas de manipulacion de texto en el que un agente debe completar objetivos en un mundo simulado. El checkpoint corresponde al paso 100 de entrenamiento y se ha exportado en BF16 safetensors tras fusionar cuatro shards FSDP.
+El modelo `qwen35-4b-alfworld-single-opd-iwk3-step100-bf16-20261105` es un checkpoint experimental publicado por el usuario dingwenjun en Hugging Face. Se trata de un ajuste fino del modelo base Qwen3.5-4B (arquitectura `Qwen3_5ForConditionalGeneration`) entrenado mediante aprendizaje por refuerzo (RL) sobre el entorno ALFWorld, un benchmark de tareas de manipulacion de texto en el que un agente debe completar objetivos en un mundo simulado. El checkpoint corresponde al paso 100 de entrenamiento y se ha exportado en BF16 safetensors tras fusionar cuatro shards FSDP.
 
 El interes del modelo no reside en su calidad general, sino en su valor como artefacto de investigacion: documenta un experimento concreto de RL (metodo "Single OPD" con "stable IW-K3" y profesor congelado al 95%) sobre una tarea de agente. El autor reporta una evaluacion durante el entrenamiento del 83,6% sobre 140 tareas, aunque advierte explicitamente que se trata de una unica ejecucion muestreada y no de una comparacion pareada multi-semilla.
 
@@ -67,7 +67,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen35-4b-alfworld-single-opd-iwk3-step100-bf16 | 5,17B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint RL especifico para ALFWorld |
+| qwen35-4b-alfworld-single-opd-iwk3-step100-bf16 | 5,17B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint RL especifico para ALFWorld |
 | Qwen3.5-4B base | no disponible en la informacion | no disponible | no disponible en la informacion | no disponible en la informacion | Modelo base sin ajuste RL |
 | Alternativas de agente ALFWorld | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparables de otros modelos en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dingwenjun/qwen35-4b-alfworld-single-opd-iwk3-step100-bf16-20261105
+- Hugging Face: https://huggingface.co/dingwenjun/qwen35-4b-alfworld-single-opd-iwk3-step100-bf16-20261105
 - Paper de ALFWorld: no disponible en la informacion proporcionada
 - Blog o repositorio del autor: no disponible en la informacion proporcionada
 - Demo: no disponible en la informacion proporcionada

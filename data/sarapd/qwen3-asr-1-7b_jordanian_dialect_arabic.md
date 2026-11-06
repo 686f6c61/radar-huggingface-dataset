@@ -80,16 +80,16 @@ Velocidad de inferencia (A100, batch 16, conjunto de prueba completo):
 - VRAM estimada para inferencia: el modelo base Qwen3-ASR-1.7B requiere aproximadamente 4–6 GB en FP16, y ~2–3 GB con cuantización W4A16. El ajuste fino no modifica el tamaño del modelo.
 - GPU recomendadas: A100 (usada en entrenamiento), RTX 4090, RTX 3090, o cualquier GPU con al menos 8 GB de VRAM para FP16. Con cuantización W4A16 puede ejecutarse en GPUs de 4 GB.
 - Cabe en GPUs de consumo: sí, en RTX 3060 (12 GB) o superiores con FP16; en RTX 4060 (8 GB) con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o el pipeline de HuggingFace `automatic-speech-recognition`. El modelo base Qwen3-ASR tiene soporte en el ecosistema Qwen.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, o el pipeline de Hugging Face `automatic-speech-recognition`. El modelo base Qwen3-ASR tiene soporte en el ecosistema Qwen.
 - Latencia y throughput: ~53× tiempo real en A100 con batch 16; latencia de streaming ~1,5 s por chunk de 2 s.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER (jordano) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-ASR-1.7B (base) | 1,7B | no disponible | 31,63 % | Apache-2.0 | HuggingFace |
-| Qwen3-ASR-1.7B (full fine-tune, este modelo) | 1,7B | no disponible | **27,59 %** | Apache-2.0 | HuggingFace |
-| Qwen3-ASR-1.7B (LoRA) | 1,7B | no disponible | 30,14 % | Apache-2.0 | HuggingFace |
+| Qwen3-ASR-1.7B (base) | 1,7B | no disponible | 31,63 % | Apache-2.0 | Hugging Face |
+| Qwen3-ASR-1.7B (full fine-tune, este modelo) | 1,7B | no disponible | **27,59 %** | Apache-2.0 | Hugging Face |
+| Qwen3-ASR-1.7B (LoRA) | 1,7B | no disponible | 30,14 % | Apache-2.0 | Hugging Face |
 
 No se dispone de comparativas con otros modelos ASR dialectales (por ejemplo, Whisper fine-tuned o MMS) en la información proporcionada.
 
@@ -105,7 +105,7 @@ No se dispone de comparativas con otros modelos ASR dialectales (por ejemplo, Wh
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarapd/Qwen3-ASR-1.7B_Jordanian_Dialect_Arabic
+- Modelo en Hugging Face: https://huggingface.co/sarapd/Qwen3-ASR-1.7B_Jordanian_Dialect_Arabic
 - Modelo base Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio oficial Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Informe tecnico Qwen3-ASR (arXiv): https://arxiv.org/pdf/2601.21337v1

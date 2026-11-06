@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Adhitiad/uis_0.5_dpo_adapter_t4` es un adaptador de pesos publicado en HuggingFace por el usuario Adhitiad. El nombre del repositorio sugiere que se trata de un adaptador resultante de un proceso de optimizacion por preferencias directas (DPO) sobre un modelo base no identificado, probablemente asociado a un proyecto interno denominado "uis" en su version 0.5 y entrenado en un entorno de tipo T4. No obstante, ni la model card ni los metadatos del repositorio confirman estos extremos.
+`Adhitiad/uis_0.5_dpo_adapter_t4` es un adaptador de pesos publicado en Hugging Face por el usuario Adhitiad. El nombre del repositorio sugiere que se trata de un adaptador resultante de un proceso de optimizacion por preferencias directas (DPO) sobre un modelo base no identificado, probablemente asociado a un proyecto interno denominado "uis" en su version 0.5 y entrenado en un entorno de tipo T4. No obstante, ni la model card ni los metadatos del repositorio confirman estos extremos.
 
-El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un adaptador de bajo rango (LoRA/QLoRA) o con un conjunto de pesos parciales, no con un modelo completo de gran tamano. La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se especifican autor, licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un adaptador de bajo rango (LoRA/QLoRA) o con un conjunto de pesos parciales, no con un modelo completo de gran tamano. La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se especifican autor, licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
 La relevancia de esta ficha es limitada y fundamentalmente descriptiva. Se documenta lo que se puede verificar a partir de los metadatos y se marcan de forma explicita todas las lagunas de informacion, de modo que cualquier evaluador pueda decidir con criterio si merece la pena inspeccionar el repositorio directamente antes de considerarlo para un uso real.
 
@@ -33,7 +33,7 @@ La relevancia de esta ficha es limitada y fundamentalmente descriptiva. Se docum
 
 No se dispone de informacion sobre la arquitectura del modelo base sobre el que se aplica el adaptador. El nombre del repositorio incluye el sufijo `dpo_adapter`, lo que indica que los pesos publicados corresponden a un adaptador entrenado con Direct Preference Optimization, una tecnica de alineacion que ajusta el modelo para favorecer respuestas preferidas frente a respuestas rechazadas a partir de pares de comparaciones, sin necesidad de un modelo de recompensa separado. El sufijo `t4` sugiere que el entrenamiento se realizo en una GPU NVIDIA T4, un acelerador con 16 GB de memoria, lo que seria coherente con un ajuste de tipo LoRA o QLoRA sobre un modelo de tamano moderado.
 
-No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de preferencias, la existencia de fases previas de SFT, los hiperparametros utilizados (rango del adaptador, alpha, tasa de aprendizaje, numero de epocas) ni sobre innovaciones tecnicas adicionales. El tag `arxiv:1910.09700` hace referencia al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, que aparece en la plantilla estandar de model card de HuggingFace y no constituye una referencia tecnica al modelo.
+No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset de preferencias, la existencia de fases previas de SFT, los hiperparametros utilizados (rango del adaptador, alpha, tasa de aprendizaje, numero de epocas) ni sobre innovaciones tecnicas adicionales. El tag `arxiv:1910.09700` hace referencia al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, que aparece en la plantilla estandar de model card de Hugging Face y no constituye una referencia tecnica al modelo.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable porque no se identifica el modelo base ni el dominio de aplicacion. A modo de referencia estructural, se compara con otros tipos de artefactos publicados en HuggingFace:
+No es posible establecer una comparativa fiable porque no se identifica el modelo base ni el dominio de aplicacion. A modo de referencia estructural, se compara con otros tipos de artefactos publicados en Hugging Face:
 
 | Aspecto | uis_0.5_dpo_adapter_t4 | Adaptador LoRA tipico documentado | Modelo completo instruido tipico |
 |---|---|---|---|
@@ -93,7 +93,7 @@ No es posible establecer una comparativa fiable porque no se identifica el model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adhitiad/uis_0.5_dpo_adapter_t4
+- Repositorio en Hugging Face: https://huggingface.co/Adhitiad/uis_0.5_dpo_adapter_t4
 - Articulo referenciado en el tag del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la informacion disponible.

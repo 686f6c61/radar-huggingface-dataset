@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/characteragent/ca-rp-pilot-t1-gguf
+- Modelo en Hugging Face: https://huggingface.co/characteragent/ca-rp-pilot-t1-gguf
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: disponible en el fichero LICENSE del repositorio del modelo base

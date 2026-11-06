@@ -75,17 +75,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed455 | 86,5 M | No disponible | Ingles (base `eng_latn`) | No disponible | HuggingFace, safetensors |
-| goldfish-models/eng_latn_100mb (modelo base) | Orden de 86 M | No disponible | Ingles (`eng_latn`) | No disponible en la informacion consultada | HuggingFace |
-| openai-community/gpt2 | 124 M | 1024 tokens | Ingles | MIT | HuggingFace, muy extendido |
-| distilgpt2 | 82 M | 1024 tokens | Ingles | Apache-2.0 | HuggingFace, muy extendido |
+| fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed455 | 86,5 M | No disponible | Ingles (base `eng_latn`) | No disponible | Hugging Face, safetensors |
+| goldfish-models/eng_latn_100mb (modelo base) | Orden de 86 M | No disponible | Ingles (`eng_latn`) | No disponible en la informacion consultada | Hugging Face |
+| openai-community/gpt2 | 124 M | 1024 tokens | Ingles | MIT | Hugging Face, muy extendido |
+| distilgpt2 | 82 M | 1024 tokens | Ingles | Apache-2.0 | Hugging Face, muy extendido |
 
 La comparacion se limita a tamano, contexto declarado y licencia: no existen datos de rendimiento publicados para el modelo de `fpadovani` que permitan contrastar calidad de generacion frente a GPT-2 small o distilgpt2. La diferencia principal no es de capacidad, sino de proposito: los dos ultimos son modelos de proposito general ampliamente usados como baseline, mientras que este es un artefacto de una condicion experimental concreta.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de datos de evaluacion: no hay benchmarks, no hay analisis de perplexity y no hay comparaciones publicadas con otros checkpoints.
-- Licencia no declarada: la model card contiene un campo `licence: license` sin valor, y los metadatos de HuggingFace no indican licencia. Antes de cualquier uso, incluso academico, hay que contactar con el autor para aclarar los terminos.
+- Licencia no declarada: la model card contiene un campo `licence: license` sin valor, y los metadatos de Hugging Face no indican licencia. Antes de cualquier uso, incluso academico, hay que contactar con el autor para aclarar los terminos.
 - Riesgo alto de alucinacion y de texto incoherente: el modelo base se entrena sobre solo 100 MB de texto y el ajuste fino no incorpora ninguna fase de alineamiento, verificado por RLHF o DPO.
 - Sesgos: no documentados, pero previsiblemente heredados del corpus de 100 MB del modelo base, que no se describe en la informacion disponible.
 - Idiomas: el uso se limita al ingles por el subconjunto `eng_latn` del modelo base. No hay evidencia de capacidad en castellano ni en ninguna otra lengua.
@@ -98,7 +98,7 @@ La comparacion se limita a tamano, contexto declarado y licencia: no existen dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-77-eng-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/xc7umf0z

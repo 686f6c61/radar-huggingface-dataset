@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Yakamoz-3B-GGUF | 3,09 B | No disponible | Qwen Research (uso comercial restringido) | GGUF `q8_0` en HuggingFace, 0 descargas | Ajuste en turco sin benchmarks publicados |
+| Yakamoz-3B-GGUF | 3,09 B | No disponible | Qwen Research (uso comercial restringido) | GGUF `q8_0` en Hugging Face, 0 descargas | Ajuste en turco sin benchmarks publicados |
 | Qwen2.5-3B-Instruct | 3,09 B | 32K (según el modelo original referenciado) | Qwen Research | Pesos completos y múltiples cuantizaciones, ampliamente adoptado | Base probable de la cadena; multilingüe y con evaluación publicada por el autor original |
 | Llama 3.2 3B Instruct | 3,21 B | 128K (según el modelo original) | Llama 3.2 Community License | Pesos y GGUF muy extendidos | Multilingüe, incluido turco; ecosistema de herramientas amplio |
 | Phi-3.5-mini-instruct | 3,8 B | 128K (según el modelo original) | MIT | Pesos y GGUF extendidos | Enfoque en razonamiento y código; no especializado en turco |
@@ -87,8 +87,8 @@ Nota: los datos de contexto y licencia de las alternativas corresponden a sus re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Memo2455/Yakamoz-3B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Memo2455/Yakamoz-3B-GGUF
 - Modelo base: https://huggingface.co/Memo2455/Yakamoz-3B
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Repositorio de referencia de Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
-- Hub de modelos GGUF en HuggingFace: https://huggingface.co/GGUF-Models
+- Hub de modelos GGUF en Hugging Face: https://huggingface.co/GGUF-Models

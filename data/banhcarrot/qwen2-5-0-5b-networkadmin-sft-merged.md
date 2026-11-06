@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged` es un ajuste fino supervisado (SFT) del modelo denso Qwen2.5-0.5B-Instruct, desarrollado por el usuario de HuggingFace `banhcarrot`. El objetivo declarado es muy acotado: convertir una tarea de administracion de red en una decision estructurada en JSON (accion, llamada a herramienta y codigo de motivo), entrenada sobre el dataset propio `banhcarrot/networkadminquestion`.
+`banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged` es un ajuste fino supervisado (SFT) del modelo denso Qwen2.5-0.5B-Instruct, desarrollado por el usuario de Hugging Face `banhcarrot`. El objetivo declarado es muy acotado: convertir una tarea de administracion de red en una decision estructurada en JSON (accion, llamada a herramienta y codigo de motivo), entrenada sobre el dataset propio `banhcarrot/networkadminquestion`.
 
 Tecnicamente es un transformer decoder-only de tipo Qwen2 con 494.032.768 parametros (segun los pesos safetensors del repositorio, unos 3,0 GB de repo), derivado de un adaptador LoRA (r=32, alpha=32, dropout=0.05 sobre 7 modulos) que se ha fusionado en los pesos base. Al estar fusionado, se carga con `AutoModelForCausalLM` sin necesidad de PEFT. El autor no declara licencia, idiomas ni pipeline en la model card.
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-0.5b-networkadmin-sft-merged | 494.032.768 | 32.768 (heredado) | Decision network-admin en JSON | No disponible | HuggingFace, 35 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct | ~0,49B | 32.768 | Proposito general, chat e instrucciones | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 | Proposito general, mejor razonamiento y codigo | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-0.5B | ~0,49B | 32.768 | Modelo base sin ajuste a instrucciones | Apache 2.0 | HuggingFace |
+| qwen2.5-0.5b-networkadmin-sft-merged | 494.032.768 | 32.768 (heredado) | Decision network-admin en JSON | No disponible | Hugging Face, 35 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct | ~0,49B | 32.768 | Proposito general, chat e instrucciones | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 | Proposito general, mejor razonamiento y codigo | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-0.5B | ~0,49B | 32.768 | Modelo base sin ajuste a instrucciones | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmark comparables entre estos modelos y el ajuste de `banhcarrot` en la tarea de network-admin, ya que el autor no publica una linea base del modelo original sobre el mismo test.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmark comparables entre estos modelos y el ajuste 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged
+- Modelo en Hugging Face: https://huggingface.co/banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/banhcarrot/networkadminquestion
 - Libreria de entrenamiento (TRL): https://github.com/huggingface/trl

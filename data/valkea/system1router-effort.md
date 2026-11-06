@@ -78,8 +78,8 @@ No se dispone de información sobre modelos directamente comparables (clasificad
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| System1Router-effort | 32 M | 256 tokens | Clasificación de esfuerzo (5 clases) | MIT | HuggingFace, ONNX |
-| jhu-clsp/ettin-encoder-32m | 32 M | No disponible | Encoder base (MLM) | No disponible en la información | HuggingFace |
+| System1Router-effort | 32 M | 256 tokens | Clasificación de esfuerzo (5 clases) | MIT | Hugging Face, ONNX |
+| jhu-clsp/ettin-encoder-32m | 32 M | No disponible | Encoder base (MLM) | No disponible en la información | Hugging Face |
 | Alternativas de enrutado de esfuerzo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han encontrado en la información proporcionada otros clasificadores de esfuerzo de razonamiento con los que comparar parámetros, contexto o rendimiento.
@@ -98,7 +98,7 @@ No se han encontrado en la información proporcionada otros clasificadores de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Valkea/System1Router-effort
+- Modelo en Hugging Face: https://huggingface.co/Valkea/System1Router-effort
 - Repositorio System1Router: https://github.com/Valkea/System1Router
 - Guía de reentrenamiento: https://github.com/Valkea/System1Router/blob/main/experiments/TRAINING.md
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-32m

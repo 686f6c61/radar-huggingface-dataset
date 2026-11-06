@@ -48,7 +48,7 @@ El entrenamiento se ejecutó íntegramente en CPU, sobre 2 vCPUs Xeon, con una v
 
 - Reproducción de pipelines de CPT en CPU: sirve para verificar de extremo a extremo un flujo de preentrenamiento continuado con LoRA y TRL sin disponer de GPU, comprobando que la carga del dataset en streaming, el guardado de checkpoints y la publicación en el Hub funcionan.
 - Docencia y formación técnica: es un ejemplo compacto y rápido (204,8 s de entrenamiento) para ilustrar en un curso qué es un adaptador LoRA, cómo se configura `r`/`alpha` y por qué una pérdida de 126 indica fracaso del entrenamiento.
-- Pruebas de integración (smoke tests) en servidores de inferencia: validar que vLLM, TGI o el servidor de HuggingFace cargan correctamente adaptadores PEFT multi-adaptador sobre SmolLM2-135M antes de desplegar adaptadores reales.
+- Pruebas de integración (smoke tests) en servidores de inferencia: validar que vLLM, TGI o el servidor de Hugging Face cargan correctamente adaptadores PEFT multi-adaptador sobre SmolLM2-135M antes de desplegar adaptadores reales.
 - Validación de estrategias de guardado y reanudación: el repositorio incluye dos checkpoints con estados del optimizador (`optimizer_state=True`), lo que permite probar la reanudación de un entrenamiento desde un checkpoint intermedio y comprobar la consistencia de los estados.
 - Experimentos de eficiencia en hardware modesto: medir coste energético y tiempo por paso de un entrenamiento con `CPUBlockwiseQuantizedAdamW` en 2 vCPUs, como基线 para comparar con otras configuraciones de cuantización de optimizador.
 - Generación de texto sintético trivial para pruebas de ingesta de datos: producir cadenas de texto cortas que permitan validar esquemas de tokenización, pipelines de limpieza o visores de datasets, aceptando que la calidad del contenido será baja.
@@ -85,11 +85,11 @@ Los datos de las alternativas provienen de la documentación pública de cada mo
 
 | Modelo | Parametros | Contexto declarado | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BISTRO_CPT_TinyStories_ckpt8_16_test | 135M (base) + adaptador LoRA | No disponible | Adaptador PEFT sobre SmolLM2-135M | No disponible | HuggingFace, 0 descargas |
-| SmolLM2-135M (modelo base) | 135M | 8.192 tokens (documentación pública) | Transformer denso | Publicada por HuggingFaceTB (no indicada aquí) | HuggingFace, ampliamente usado |
-| SmolLM2-360M | 362M | 8.192 tokens (documentación pública) | Transformer denso | Publicada por HuggingFaceTB | HuggingFace |
-| Qwen2.5-0.5B | 494M | 32.768 tokens (documentación pública) | Transformer denso | Apache-2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1B | 2.048 tokens (documentación pública) | Transformer denso | Apache-2.0 | HuggingFace |
+| BISTRO_CPT_TinyStories_ckpt8_16_test | 135M (base) + adaptador LoRA | No disponible | Adaptador PEFT sobre SmolLM2-135M | No disponible | Hugging Face, 0 descargas |
+| SmolLM2-135M (modelo base) | 135M | 8.192 tokens (documentación pública) | Transformer denso | Publicada por HuggingFaceTB (no indicada aquí) | Hugging Face, ampliamente usado |
+| SmolLM2-360M | 362M | 8.192 tokens (documentación pública) | Transformer denso | Publicada por HuggingFaceTB | Hugging Face |
+| Qwen2.5-0.5B | 494M | 32.768 tokens (documentación pública) | Transformer denso | Apache-2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1B | 2.048 tokens (documentación pública) | Transformer denso | Apache-2.0 | Hugging Face |
 
 En la práctica, la comparación relevante es contra el propio SmolLM2-135M sin adaptador: cualquier evaluación A/B con `peft` mostraría previsiblemente que el adaptador empeora la perplejidad del base, dado el valor de pérdida registrado.
 
@@ -108,7 +108,7 @@ En la práctica, la comparación relevante es contra el propio SmolLM2-135M sin 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlekseyCalvin/BISTRO_CPT_TinyStories_ckpt8_16_test
+- Modelo en Hugging Face: https://huggingface.co/AlekseyCalvin/BISTRO_CPT_TinyStories_ckpt8_16_test
 - Modelo base SmolLM2-135M: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Herramienta "Small LM Bistro" (v2.2): no se proporciona enlace en la model card

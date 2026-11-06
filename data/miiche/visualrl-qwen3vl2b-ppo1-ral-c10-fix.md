@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Miiche/visualrl-qwen3vl2b-ppo1-ral-c10-fix` es un repositorio de pesos publicado en HuggingFace por el usuario Miiche. El identificador del modelo sugiere que se trata de un ajuste derivado de Qwen3-VL-2B, un modelo multimodal de vision-lenguaje de aproximadamente 2.000 millones de parametros, y que el ajuste se habria realizado mediante aprendizaje por refuerzo con PPO (Proximal Policy Optimization) sobre una tarea de RL visual. Esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada por ninguna model card, paper o documentacion publicada.
+`Miiche/visualrl-qwen3vl2b-ppo1-ral-c10-fix` es un repositorio de pesos publicado en Hugging Face por el usuario Miiche. El identificador del modelo sugiere que se trata de un ajuste derivado de Qwen3-VL-2B, un modelo multimodal de vision-lenguaje de aproximadamente 2.000 millones de parametros, y que el ajuste se habria realizado mediante aprendizaje por refuerzo con PPO (Proximal Policy Optimization) sobre una tarea de RL visual. Esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada por ninguna model card, paper o documentacion publicada.
 
 No se ha facilitado model card, pipeline declarado, idiomas soportados, licencia ni resultados de evaluacion. El repositorio tiene un tamano de 137,8 GB, un volumen muy superior al que ocuparian unicamente los pesos de un modelo de 2B en precision media-alta (del orden de 4-5 GB en FP16), lo que apunta a la presencia de multiples checkpoints intermedios, estados de optimizador o artefactos de entrenamiento acumulados, aunque esto tampoco puede confirmarse con la informacion disponible.
 
@@ -88,8 +88,8 @@ No disponible. No se dispone de datos verificados de este modelo ni de sus alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Miiche/visualrl-qwen3vl2b-ppo1-ral-c10-fix
-- Pagina del autor en HuggingFace: https://huggingface.co/Miiche
+- Repositorio en Hugging Face: https://huggingface.co/Miiche/visualrl-qwen3vl2b-ppo1-ral-c10-fix
+- Pagina del autor en Hugging Face: https://huggingface.co/Miiche
 - Paper, blog o repositorio de codigo asociado: no disponible
 - Demo o Space asociado: no disponible
 - Nota sobre la busqueda web: los resultados obtenidos no guardan ninguna relacion con el modelo (corresponden a paginas de ayuda de Windows en aleman), por lo que no se incluyen como fuentes.

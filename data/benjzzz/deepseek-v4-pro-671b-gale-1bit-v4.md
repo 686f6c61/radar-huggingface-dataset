@@ -81,7 +81,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/benjzzz/DeepSeek-V4-Pro-671B-GALE-1bit-v4
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
+- Repositorio Hugging Face: https://huggingface.co/benjzzz/DeepSeek-V4-Pro-671B-GALE-1bit-v4
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - Sitio oficial de DeepSeek: https://deepseek.com/en/index.html
 - Página de DeepSeek-V4-Pro en deepseeksr1.com: https://deepseeksr1.com/v4-pro/

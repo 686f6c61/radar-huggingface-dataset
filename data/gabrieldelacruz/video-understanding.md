@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GabrielDelacruz/video-understanding no es un modelo entrenado, sino un repositorio de notas de investigacion sobre comprension de video publicado en HuggingFace. La model card lo describe explicitamente como "a structured set of research notes on Video Understanding" y aclara que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado. El repositorio contiene dos artefactos de texto (`reading.md` y `README.md`) y un fichero de pesos en formato safetensors con 24.832 parametros segun los metadatos del propio Hub.
+GabrielDelacruz/video-understanding no es un modelo entrenado, sino un repositorio de notas de investigacion sobre comprension de video publicado en Hugging Face. La model card lo describe explicitamente como "a structured set of research notes on Video Understanding" y aclara que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni checkpoint entrenado. El repositorio contiene dos artefactos de texto (`reading.md` y `README.md`) y un fichero de pesos en formato safetensors con 24.832 parametros segun los metadatos del propio Hub.
 
 El contenido tematico gira en torno al alcance de una pregunta de investigacion no especificada, probables factores de confusion, una comparacion propuesta contra baselines emparejados y contexto de evaluacion concreto en MSR-VTT y ActivityNet Captions. Se mencionan ademas comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -82,5 +82,5 @@ No disponible. El repositorio no es un modelo desplegable, por lo que no existe 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GabrielDelacruz/video-understanding
+- Hugging Face: https://huggingface.co/GabrielDelacruz/video-understanding
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers asociados, a repositorios de codigo ni a demos. Los resultados devueltos por la busqueda no guardan relacion con el objeto de esta ficha y se omiten.

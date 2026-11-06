@@ -6,7 +6,7 @@ phonon-31m-en es un modelo de síntesis de voz (text-to-speech) de la familia Ph
 
 La arquitectura es un transformer de *flow matching* que predice latentes de audio trama a trama (80 ms por trama) y delega la reconstrucción de la onda en el decodificador del códec Mimi de Kyutai; el modelo se apoya en el trabajo previo Pocket TTS. Al ser generativo por tramas, puede emitir audio en *streaming*: el primer fragmento se reproduce mientras el resto se sigue generando, algo crítico para asistentes de voz interactivos y para aplicaciones de accesibilidad.
 
-Su relevancia ahora es la combinación de licencia Apache 2.0, huella mínima (menos de 100 MB cuantizado) y despliegue multiplataforma real: runtime en Python (`ptts`), paquete WASM para navegador, Core ML para iOS/macOS, Android y un *preview* para NPU Snapdragon. Frente a la generación anterior de TTS neurales, que exigía GPU, aquí el coste de infraestructura prácticamente desaparece. Conviene señalar que el identificador del repositorio en HuggingFace es `agentory/phonon-31m-en`, mientras que la model card y las referencias externas apuntan a `gradium/phonon-31m-en`; los datos técnicos coinciden, pero la disponibilidad en el espacio de nombres `agentory` muestra 0 descargas y 0 *likes* en la fecha de creación (28 de octubre de 2026).
+Su relevancia ahora es la combinación de licencia Apache 2.0, huella mínima (menos de 100 MB cuantizado) y despliegue multiplataforma real: runtime en Python (`ptts`), paquete WASM para navegador, Core ML para iOS/macOS, Android y un *preview* para NPU Snapdragon. Frente a la generación anterior de TTS neurales, que exigía GPU, aquí el coste de infraestructura prácticamente desaparece. Conviene señalar que el identificador del repositorio en Hugging Face es `agentory/phonon-31m-en`, mientras que la model card y las referencias externas apuntan a `gradium/phonon-31m-en`; los datos técnicos coinciden, pero la disponibilidad en el espacio de nombres `agentory` muestra 0 descargas y 0 *likes* en la fecha de creación (28 de octubre de 2026).
 
 ## Especificaciones técnicas
 
@@ -100,8 +100,8 @@ La comparación relevante dentro de la familia es clara: `phonon-31m-en` es la �
 
 ## Enlaces
 
-- Modelo en HuggingFace (identificador de esta ficha): https://huggingface.co/agentory/phonon-31m-en
-- Modelo en HuggingFace (identificador referenciado en la model card): https://huggingface.co/gradium/phonon-31m-en
+- Modelo en Hugging Face (identificador de esta ficha): https://huggingface.co/agentory/phonon-31m-en
+- Modelo en Hugging Face (identificador referenciado en la model card): https://huggingface.co/gradium/phonon-31m-en
 - Árbol de ficheros del repositorio: https://huggingface.co/gradium/phonon-31m-en/tree/main
 - Demo en el navegador (Space): https://huggingface.co/spaces/gradium/phonon
 - Colección de la familia Phonon: https://huggingface.co/collections/gradium/phonon

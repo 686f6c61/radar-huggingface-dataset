@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para comparar con otros modelos coreanos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jwg0830/AX-3.1-Light-sft_declare_v1_fix
+- Repositorio Hugging Face: https://huggingface.co/jwg0830/AX-3.1-Light-sft_declare_v1_fix
 - Version anterior con errores: https://huggingface.co/jwg0830/AX-3.1-Light-sft_declare_v1
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/jwg0830/AX-3.1-Light-sft_declare_v1
 - Dataset: datos de texto de libros de texto de lengua coreana: https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71857

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pawelmazur83/mixer-matching` es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura tipo **Mixer** orientada a tareas de *matching* (emparejamiento). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo**, no un modelo entrenado ni evaluado. A pesar de la etiqueta de escala "xlarge" en la configuración, el recuento real de parámetros del fichero safetensors es de **33.088 parámetros**, es decir, un modelo de juguete de unos 132 KB en fp32.
+`pawelmazur83/mixer-matching` es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura tipo **Mixer** orientada a tareas de *matching* (emparejamiento). El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido (`model.safetensors`) es una **inicialización válida para pruebas de humo**, no un modelo entrenado ni evaluado. A pesar de la etiqueta de escala "xlarge" en la configuración, el recuento real de parámetros del fichero safetensors es de **33.088 parámetros**, es decir, un modelo de juguete de unos 132 KB en fp32.
 
 El repositorio contiene cuatro artefactos: `model.py` (implementación y punto de entrada ejecutable), `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). La arquitectura declarada combina atención dispersa (*sparse attention*), fusión con puertas (*gated fusion*), activación ReLU y normalización LayerNorm, con receta de entrenamiento basada en el optimizador **novograd** y planificador **onecycle**.
 
@@ -41,8 +41,8 @@ No hay evidencia de entrenamiento: el autor afirma que el checkpoint es una inic
 - **Pruebas de humo de infraestructura**: cargar `model.safetensors` en un runner de CI para verificar que el entorno de PyTorch, las versiones de CUDA y el *loader* de safetensors funcionan antes de desplegar modelos reales; con 132 KB en fp32 el coste es despreciable.
 - **Andamiaje de experimentos de *matching***: usar `model.py`, `config.json` y `training_args.json` como plantilla para definir un protocolo de evaluación con validación emparejada, tres semillas y un baseline de capacidad equivalente, tal como recomienda el autor.
 - **Estudio de arquitecturas Mixer**: analizar una implementación mínima de atención dispersa con *gated fusion* para comparar decisiones de diseño (normalización, activación, patrón de dispersión) sin la sobrecarga de un modelo grande.
-- **Docencia y formación interna**: ilustrar el ciclo completo de publicación de un modelo en HuggingFace (config, training args, pesos, model card) con un artefacto de tamaño trivial que se ejecuta en cualquier portátil.
-- **Base para un adaptador de carga**: desarrollar el *wrapper* que traduzca esta implementación personalizada a las interfaces estándar de HuggingFace `transformers`, ejercicio útil para equipos que integran modelos con código propio.
+- **Docencia y formación interna**: ilustrar el ciclo completo de publicación de un modelo en Hugging Face (config, training args, pesos, model card) con un artefacto de tamaño trivial que se ejecuta en cualquier portátil.
+- **Base para un adaptador de carga**: desarrollar el *wrapper* que traduzca esta implementación personalizada a las interfaces estándar de Hugging Face `transformers`, ejercicio útil para equipos que integran modelos con código propio.
 - **Reproducibilidad de recetas de optimización**: probar la combinación novograd + onecycle en un modelo de juguete para validar la lógica del planificador antes de escalarla a un entrenamiento real.
 - **Verificación de licencia y compliance**: usar un repositorio BSD-3-Clause como caso de prueba en la revisión de cumplimiento de licencias de un catálogo interno de modelos.
 
@@ -64,7 +64,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pawelmazur83/mixer-matching | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, 0 descargas |
+| pawelmazur83/mixer-matching | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pawelmazur83/mixer-matching
+- Hugging Face: https://huggingface.co/pawelmazur83/mixer-matching
 - Paper, blog, repositorio o demo adicionales: no disponible (la búsqueda web no devolvió resultados relevantes)

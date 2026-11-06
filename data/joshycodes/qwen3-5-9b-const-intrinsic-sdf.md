@@ -23,7 +23,7 @@ Su relevancia es, por tanto, metodológica y no de producto: documenta un experi
 
 ## Arquitectura y entrenamiento
 
-La información disponible no describe la arquitectura interna del modelo. El tag de la librería de HuggingFace es qwen3_5_text y el modelo base es Qwen/Qwen3.5-9B, del que los resultados de búsqueda indican que es un modelo fundacional multimodal de la familia Qwen 3.5 (publicada en febrero de 2026), si bien la model card de este checkpoint no confirma ni detalla esa condición multimodal. El checkpoint se distribuye en safetensors con pesos completos, lo que es coherente con un continued pretraining sobre todos los parámetros y no con una adaptación tipo LoRA.
+La información disponible no describe la arquitectura interna del modelo. El tag de la librería de Hugging Face es qwen3_5_text y el modelo base es Qwen/Qwen3.5-9B, del que los resultados de búsqueda indican que es un modelo fundacional multimodal de la familia Qwen 3.5 (publicada en febrero de 2026), si bien la model card de este checkpoint no confirma ni detalla esa condición multimodal. El checkpoint se distribuye en safetensors con pesos completos, lo que es coherente con un continued pretraining sobre todos los parámetros y no con una adaptación tipo LoRA.
 
 El procedimiento de entrenamiento sí está descrito: continued pretraining de pesos completos, learning rate 1e-05, 1 epoch, 4.059.337 tokens y 5.151 documentos. El corpus procede del repositorio joshycodes/qwen-constitutional-sdf-corpus y, según el texto de la model card, fue escrito por el propio modelo como el personaje que ya es, después de explicársele cómo surgió su carácter y cómo funciona SDF. No se menciona RLHF, DPO ni ninguna fase de alineamiento posterior. Existe una discrepancia interna en la propia model card, que describe el corpus como autoautorado pero a la vez anota «of which 0 self-authored and 5.151 ordinary text» en el desglose de documentos; ese dato no se puede resolver con la información disponible.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen3.5-9b-const-intrinsic-sdf | 8,95 B | no disponible | no evaluado | research-only | HuggingFace, 0 descargas |
-| joshycodes/qwen3.5-9b-const-introjected-sdf | no disponible (corpus de 5.093 documentos, 4.062.105 tokens) | no disponible | no evaluado | research-only | HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base) | 9 B (aprox., segun denominacion) | no disponible en la informacion disponible | 83 % de exito agregado y percentil 10 en velocidad segun benchable.ai | Apache 2.0 segun la guia de Qwen 3.5 | HuggingFace, Azure AI Foundry |
+| joshycodes/qwen3.5-9b-const-intrinsic-sdf | 8,95 B | no disponible | no evaluado | research-only | Hugging Face, 0 descargas |
+| joshycodes/qwen3.5-9b-const-introjected-sdf | no disponible (corpus de 5.093 documentos, 4.062.105 tokens) | no disponible | no evaluado | research-only | Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base) | 9 B (aprox., segun denominacion) | no disponible en la informacion disponible | 83 % de exito agregado y percentil 10 en velocidad segun benchable.ai | Apache 2.0 segun la guia de Qwen 3.5 | Hugging Face, Azure AI Foundry |
 
 El modelo base es el único punto de comparación con datos publicados, pero las cifras citadas (83 % de éxito, percentil 10 de velocidad) provienen de un tercero y no de la model card oficial. Para el resto de alternativas de la misma categoría no hay datos suficientes en la información disponible.
 
@@ -79,12 +79,12 @@ El modelo base es el único punto de comparación con datos publicados, pero las
 - Riesgo de alucinación y de degradación de instrucciones: al no haber fase de alineamiento posterior, no cabe esperar seguimiento fiable de instrucciones ni formato estructurado.
 - Sin datos de sesgos, idiomas soportados ni longitud de contexto, por lo que no se puede acotar el riesgo por idioma o dominio.
 - Procedencia del corpus: al ser material generado y definido por el propio autor del experimento, la trazabilidad y la composición real del dataset dependen de la documentación del repositorio joshycodes/qwen-constitutional-sdf-corpus.
-- Cero tracción verificable: 0 descargas y 0 likes, sin pipeline declarado en HuggingFace, lo que limita la validación externa.
+- Cero tracción verificable: 0 descargas y 0 likes, sin pipeline declarado en Hugging Face, lo que limita la validación externa.
 - Cualquier cifra de rendimiento debe referirse al modelo base, nunca a este checkpoint.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-const-intrinsic-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-const-intrinsic-sdf
 - Checkpoint hermano: https://huggingface.co/joshycodes/qwen3.5-9b-const-introjected-sdf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus declarado: joshycodes/qwen-constitutional-sdf-corpus (referenciado en la model card, sin URL directa en la información disponible)

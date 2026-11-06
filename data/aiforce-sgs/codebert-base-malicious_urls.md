@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aiforce-sgs/codebert-base-Malicious_URLs` es una adaptación de `microsoft/codebert-base` orientada a la clasificación de URLs maliciosas. Sin embargo, la ficha publicada en HuggingFace es prácticamente vacía: no incluye descripción, métricas, ni detalles de entrenamiento. La única información disponible es la licencia MIT y la fecha de creación. Los resultados de búsqueda web apuntan a un modelo homónimo desarrollado por `DunnBC22` con la misma denominación, que sí documenta un fine-tuning sobre CodeBERT para esta tarea. Es probable que el modelo de `aiforce-sgs` sea una copia o un fork sin documentación adicional, pero no hay garantía de que sean idénticos.
+El modelo `aiforce-sgs/codebert-base-Malicious_URLs` es una adaptación de `microsoft/codebert-base` orientada a la clasificación de URLs maliciosas. Sin embargo, la ficha publicada en Hugging Face es prácticamente vacía: no incluye descripción, métricas, ni detalles de entrenamiento. La única información disponible es la licencia MIT y la fecha de creación. Los resultados de búsqueda web apuntan a un modelo homónimo desarrollado por `DunnBC22` con la misma denominación, que sí documenta un fine-tuning sobre CodeBERT para esta tarea. Es probable que el modelo de `aiforce-sgs` sea una copia o un fork sin documentación adicional, pero no hay garantía de que sean idénticos.
 
 Dado que la información oficial del modelo es insuficiente, esta ficha se basa en los datos disponibles del modelo original de `DunnBC22` y en las características conocidas de CodeBERT-base. Se recomienda consultar el repositorio original para obtener métricas y detalles verificados.
 
@@ -23,7 +23,7 @@ Dado que la información oficial del modelo es insuficiente, esta ficha se basa 
 
 CodeBERT-base es un modelo transformer bidireccional preentrenado conjuntamente sobre código fuente y lenguaje natural, desarrollado por Microsoft. Su arquitectura sigue el diseño de BERT-base, con 12 capas, 12 cabezas de atencion y una dimension oculta de 768. El modelo original se entreno con un objetivo de modelado de lenguaje enmascarado (MLM) y prediccion de tokens reemplazados (RTD), sobre un corpus de codigo y documentacion.
 
-El fine-tuning para clasificacion de URLs maliciosas consiste en anadir una cabeza de clasificacion sobre la representacion del token `[CLS]` y ajustar los pesos con un dataset etiquetado de URLs benignas y maliciosas. El modelo de `DunnBC22` reporta haber utilizado el framework de HuggingFace Transformers, pero no se especifican los hiperparametros ni el tamaño del dataset en la informacion disponible. No se menciona el uso de tecnicas como RLHF o DPO.
+El fine-tuning para clasificacion de URLs maliciosas consiste en anadir una cabeza de clasificacion sobre la representacion del token `[CLS]` y ajustar los pesos con un dataset etiquetado de URLs benignas y maliciosas. El modelo de `DunnBC22` reporta haber utilizado el framework de Hugging Face Transformers, pero no se especifican los hiperparametros ni el tamaño del dataset en la informacion disponible. No se menciona el uso de tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ Estos valores corresponden al modelo de `DunnBC22` y no necesariamente al de `ai
 - Al ser un modelo de 125 millones de parametros, la inferencia puede ejecutarse en CPU con un consumo de RAM de aproximadamente 500 MB (en precision float32).
 - En GPU, cabe en cualquier tarjeta con al menos 2 GB de VRAM, como una NVIDIA GTX 1050 Ti o superior.
 - Es adecuado para despliegue en entornos con recursos limitados, como routers o dispositivos edge.
-- Se puede servir con frameworks como HuggingFace Transformers, ONNX Runtime o TensorFlow Lite.
+- Se puede servir con frameworks como Hugging Face Transformers, ONNX Runtime o TensorFlow Lite.
 - No se requieren GPUs especializadas como A100 o H100.
 - La latencia por clasificacion de una URL corta en CPU es del orden de 10-50 ms, dependiendo del hardware.
 
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aiforce-sgs/codebert-base-Malicious_URLs
+- Modelo en Hugging Face: https://huggingface.co/aiforce-sgs/codebert-base-Malicious_URLs
 - Modelo original documentado (DunnBC22): https://huggingface.co/DunnBC22/codebert-base-Malicious_URLs
 - Pagina de descripcion en AIbase: https://model.aibase.com/models/details/1915731699713073154
 - Pagina en Inferix: https://inferix.co/models/DunnBC22/codebert-base-Malicious_URLs

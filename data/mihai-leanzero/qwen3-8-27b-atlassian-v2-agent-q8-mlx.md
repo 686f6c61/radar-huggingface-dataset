@@ -79,9 +79,9 @@ En las sesiones goose retenidas, ninguna de las 4 diferencias principales result
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Atlassian-v2-agent (esta ficha, 8-bit MLX) | 27,36 B | hasta 65.536 en entrenamiento | Agente Atlassian, tool calling | Apache 2.0 | HuggingFace, builds Q8/Q6/Q4 MLX y PEFT |
-| Qwen3.8-27B-Atlassian (v1) | 27,36 B | no disponible | Agente Atlassian (ronda anterior) | Apache 2.0 | HuggingFace (referenciado) |
-| Qwen/Qwen3.8-27B (base) | 27,36 B | no disponible | Propósito general | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B-Atlassian-v2-agent (esta ficha, 8-bit MLX) | 27,36 B | hasta 65.536 en entrenamiento | Agente Atlassian, tool calling | Apache 2.0 | Hugging Face, builds Q8/Q6/Q4 MLX y PEFT |
+| Qwen3.8-27B-Atlassian (v1) | 27,36 B | no disponible | Agente Atlassian (ronda anterior) | Apache 2.0 | Hugging Face (referenciado) |
+| Qwen/Qwen3.8-27B (base) | 27,36 B | no disponible | Propósito general | Apache 2.0 | Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos especializados en Atlassian) no está disponible en la información proporcionada; los únicos comparables documentados son el modelo base y la ronda anterior del mismo autor.
 
@@ -100,7 +100,7 @@ La comparación con alternativas de la misma categoría (modelos especializados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q8-mlx
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q8-mlx
 - Adaptador PEFT LoRA (bf16): https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-lora-peft
 - Build MLX 6 bits: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q6-mlx
 - Build MLX 4 bits: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-v2-agent-Q4-mlx

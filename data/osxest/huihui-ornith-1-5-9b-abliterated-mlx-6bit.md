@@ -79,7 +79,7 @@ La comparativa se basa en modelos de tamano similar. Ornith-1.5-9B destaca por s
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/osxest/Huihui-Ornith-1.5-9B-abliterated-mlx-6Bit
+- Repositorio Hugging Face de este modelo: https://huggingface.co/osxest/Huihui-Ornith-1.5-9B-abliterated-mlx-6Bit
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Coleccion de modelos abliterated de huihui-ai: https://huggingface.co/collections/huihui-ai/ornith-10-abliterated
 - Web oficial de Ornith AI: https://ornith.ai/

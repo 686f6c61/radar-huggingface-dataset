@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DataDecide-dolma1_7-no-math-code-1B-60000_62500_65000_67500_69369_weightedavg_merge es un modelo de lenguaje de 1.279.854.592 parámetros (aproximadamente 1,28 mil millones) generado mediante fusión de pesos con mergekit, no mediante un entrenamiento adicional. El autor identificado en HuggingFace es yuhengtu-bytedance y el artefacto se publicó como un merge de tipo linear (promedio ponderado normalizado) sobre cinco checkpoints de una misma ejecución de entrenamiento denominada dolma1_7-no-math-code, correspondientes a los pasos 60000, 62500, 65000, 67500 y 69369.
+DataDecide-dolma1_7-no-math-code-1B-60000_62500_65000_67500_69369_weightedavg_merge es un modelo de lenguaje de 1.279.854.592 parámetros (aproximadamente 1,28 mil millones) generado mediante fusión de pesos con mergekit, no mediante un entrenamiento adicional. El autor identificado en Hugging Face es yuhengtu-bytedance y el artefacto se publicó como un merge de tipo linear (promedio ponderado normalizado) sobre cinco checkpoints de una misma ejecución de entrenamiento denominada dolma1_7-no-math-code, correspondientes a los pasos 60000, 62500, 65000, 67500 y 69369.
 
 El interés del modelo es fundamentalmente metodológico: sirve como artefacto reproducible para estudiar cómo se comporta el promedio de checkpoints intermedios de un mismo run de preentrenamiento (técnica de model soups, arXiv:2203.05482) en un escenario de mezcla de datos sin matemáticas ni código. No es un modelo de propósito general listo para producción: es un checkpoint base, sin ajuste por instrucciones documentado, sin licencia declarada y sin resultados de evaluación publicados.
 
@@ -96,7 +96,7 @@ Frente a estas alternativas, este modelo no ofrece ventajas documentadas de cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-math-code-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-math-code-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - mergekit (herramienta empleada para la fusión): https://github.com/cg123/mergekit
 - Método de fusión Linear / model soups: https://arxiv.org/abs/2203.05482
 - Los resultados de búsqueda web proporcionados no contienen información relevante sobre este modelo: todas las entradas devueltas hacen referencia a ChatGPT y no guardan relación con el artefacto descrito.

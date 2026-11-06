@@ -23,7 +23,7 @@ Con 26.085.330.160 parámetros totales y un repositorio de 52,2 GB en safetensor
 
 ## Arquitectura y entrenamiento
 
-El modelo conserva la arquitectura del base decisionmodels/reax-1.1 (etiquetada como `qwen3_5` en HuggingFace), así como su tokenizador, loader y temperatura. Sobre esa base se aplicó un único run de LoRA cuyos pesos se fusionaron en el modelo, junto con una cabeza de lectura ajustada. No se documentan cambios en la arquitectura del transformer ni en el mecanismo de atención.
+El modelo conserva la arquitectura del base decisionmodels/reax-1.1 (etiquetada como `qwen3_5` en Hugging Face), así como su tokenizador, loader y temperatura. Sobre esa base se aplicó un único run de LoRA cuyos pesos se fusionaron en el modelo, junto con una cabeza de lectura ajustada. No se documentan cambios en la arquitectura del transformer ni en el mecanismo de atención.
 
 El entrenamiento combina varias fuentes. Por un lado, ítems de decisión generados de forma procedural con etiquetas doradas calculadas: aritmética, lógica, salida de código, acordes, ajedrez y aplicación de reglas. Por otro, etiquetado de seguridad basado en Aegis-2.0 y abstención auto-destilada (el modelo aprende a declarar que no sabe). Se añaden ítems de documento-a-categoría-oficial construidos a partir de registros públicos etiquetados: resúmenes de patentes con secciones CPC (ccdv/patent-classification), provisiones contractuales LEDGAR, áreas de conflicto del Tribunal Supremo y holdings de CaseHOLD (coastalcph/lex_glue), clases de la ontología DBpedia (fancyzhx/dbpedia_14), categorías de afecciones (TimSchopf/medical_abstracts) y clasificadores de estado de desarrollo y temática de la API JSON de PyPI. Todo ello se complementa con el conjunto público de entrenamiento generalista de SN92. No se especifican en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si hubo RLHF o DPO.
 
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edinlong83/sn92-generalist-h3
+- Hugging Face: https://huggingface.co/edinlong83/sn92-generalist-h3
 - Modelo base: https://huggingface.co/decisionmodels/reax-1.1
 - Dataset de patentes: https://huggingface.co/datasets/ccdv/patent-classification
 - Dataset legal LexGLUE: https://huggingface.co/datasets/coastalcph/lex_glue

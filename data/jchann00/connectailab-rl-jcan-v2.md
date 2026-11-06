@@ -22,7 +22,7 @@ Su relevancia es acotada y experimental: es un caso de estudio de como alinear u
 | Modelo base | Qwen/Qwen3.5-0.8B |
 | Libreria | peft |
 | Pipeline declarado | reinforcement-learning |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Dataset de entrenamiento | 4.082 train / 832 valid / 840 test; distribucion de empresa: general |
 | Fecha de publicacion | 15 de octubre de 2026 |
 
@@ -78,9 +78,9 @@ El propio autor advierte que la cifra de operacion empresarial es la media de do
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Datos de rendimiento publicados | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-jcan-v2 | 0,8B (base) + LoRA | no disponible | Decision multiple-choice en simulador empresarial | apache-2.0 | Tabla propia de examen, arrepentimiento y prueba con tarjeta | Adaptador LoRA en HuggingFace |
-| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | Modelo de lenguaje general | no disponible en esta informacion | No comparable: la model card solo reporta 30,4% de acierto antes del ajuste | Pesos base en HuggingFace |
-| connect-ai-lab-aimo/connectailab-rl-juju-v2 | no disponible | no disponible | Modelo de decision RL en la misma linea de trabajo | no disponible | no disponible | Adaptador en HuggingFace |
+| connectailab-rl-jcan-v2 | 0,8B (base) + LoRA | no disponible | Decision multiple-choice en simulador empresarial | apache-2.0 | Tabla propia de examen, arrepentimiento y prueba con tarjeta | Adaptador LoRA en Hugging Face |
+| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | Modelo de lenguaje general | no disponible en esta informacion | No comparable: la model card solo reporta 30,4% de acierto antes del ajuste | Pesos base en Hugging Face |
+| connect-ai-lab-aimo/connectailab-rl-juju-v2 | no disponible | no disponible | Modelo de decision RL en la misma linea de trabajo | no disponible | no disponible | Adaptador en Hugging Face |
 
 No se dispone de datos que permitan comparar este adaptador con alternativas equivalentes de decision multiple-choice de otros autores. La comparacion con modelos de proposito general de tamano similar no es significativa porque la tarea, el formato de salida y la metrica de evaluacion son distintos.
 
@@ -100,11 +100,11 @@ No se dispone de datos que permitan comparar este adaptador con alternativas equ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jchann00/connectailab-rl-jcan-v2
+- Modelo en Hugging Face: https://huggingface.co/jchann00/connectailab-rl-jcan-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
-- Perfil del autor en HuggingFace: https://huggingface.co/jchann00
+- Perfil del autor en Hugging Face: https://huggingface.co/jchann00
 - Adaptador relacionado connectailab-rl-juju-v2: https://huggingface.co/connect-ai-lab-aimo/connectailab-rl-juju-v2
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB
 - Curso de aprendizaje por refuerzo de AI CITY BUILDERS: https://www.aicitybuilders.com/robot

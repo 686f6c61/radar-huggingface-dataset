@@ -110,9 +110,9 @@ No se dispone de datos verificables sobre otros modelos de generación de imagen
 
 | Modelo | Formato / precisión | Parametros | Contexto / referencias | Calidad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| unsloth/Qwen-Image-2.1-FP8 (este repo) | FP8 e INT8, safetensors | 7B en el componente visual | hasta 10 imágenes de referencia | LPIPS 0,064 (INT8) y 0,112 (FP8) vs bf16 | qwen-research | HuggingFace, diffusers main, Unsloth Desktop |
-| Qwen/Qwen-Image-2.1 (base) | bf16 | 7B en el componente visual | hasta 10 imágenes de referencia | referencia (LPIPS 0) | qwen-research | HuggingFace, ModelScope, demo en Spaces |
-| unsloth/Qwen-Image-2.1-GGUF | GGUF | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| unsloth/Qwen-Image-2.1-FP8 (este repo) | FP8 e INT8, safetensors | 7B en el componente visual | hasta 10 imágenes de referencia | LPIPS 0,064 (INT8) y 0,112 (FP8) vs bf16 | qwen-research | Hugging Face, diffusers main, Unsloth Desktop |
+| Qwen/Qwen-Image-2.1 (base) | bf16 | 7B en el componente visual | hasta 10 imágenes de referencia | referencia (LPIPS 0) | qwen-research | Hugging Face, ModelScope, demo en Spaces |
+| unsloth/Qwen-Image-2.1-GGUF | GGUF | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos de generación de imagen de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -141,7 +141,7 @@ No se dispone de datos verificables sobre otros modelos de generación de imagen
 - Variante GGUF de Unsloth: https://huggingface.co/unsloth/Qwen-Image-2.1-GGUF
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Blog de Qwen sobre Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Discord de Qwen: https://discord.gg/BEYSk3pkSu
 

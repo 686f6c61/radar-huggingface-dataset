@@ -25,7 +25,7 @@ El modelo se distribuye bajo licencia Apache 2.0 y declara únicamente el idioma
 
 La model card del repositorio no documenta la arquitectura ni el proceso de entrenamiento del modelo base; se limita a indicar que se trata de cuantizaciones estáticas de Qwen/Qwen3.5-122B-A10B (convert_type: hf, quantize_version: 2, output_tensor_quantised: 1). Lo que sí es deducible de los datos disponibles es que el modelo base emplea una arquitectura MoE, dado el sufijo "A10B" (parámetros activos) frente a los 122,1 mil millones de parámetros totales. El repositorio incluye además dos ficheros mmproj (Q8_0, 0,7 GB y f16, 1,0 GB), etiquetados como "multi-modal supplement", lo que implica que el modelo base incorpora una torre de visión o similar, aunque sus características concretas no están descritas.
 
-En cuanto al proceso de cuantización, mradermacher aplica cuantizaciones estáticas (no ponderadas por importancia) sobre los pesos convertidos desde HuggingFace. Las variantes con calibración imatrix se publican en un repositorio separado. No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base pasó por fases de RLHF, DPO u otras técnicas de alineamiento.
+En cuanto al proceso de cuantización, mradermacher aplica cuantizaciones estáticas (no ponderadas por importancia) sobre los pesos convertidos desde Hugging Face. Las variantes con calibración imatrix se publican en un repositorio separado. No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset, ni si el modelo base pasó por fases de RLHF, DPO u otras técnicas de alineamiento.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ Comparativa con otras familias de modelos del mismo rango de parametros: no disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B/blob/main/LICENSE
 - Cuantizaciones imatrix (i1): https://huggingface.co/mradermacher/Qwen3.5-122B-A10B-i1-GGUF

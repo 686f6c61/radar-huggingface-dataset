@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mistral Large 4 (NVFP4 GGUF) | ~1,05T | ~52B | 1M tokens | NVFP4 + BF16 | mistral-ecosystem-open-weight-license | GGUF público en HuggingFace |
-| Mistral Large 4 (K-quants GGUF) | ~1,05T | ~52B | 1M tokens | Q8_0 a IQ2_XXS (desde FP8) | mistral-ecosystem-open-weight-license | GGUF público en HuggingFace |
-| Mistral Large 4 (FP8, release oficial) | ~1,05T | ~52B | 1M tokens | FP8 + BF16 | mistral-ecosystem-open-weight-license | safetensors públicos en HuggingFace |
+| Mistral Large 4 (NVFP4 GGUF) | ~1,05T | ~52B | 1M tokens | NVFP4 + BF16 | mistral-ecosystem-open-weight-license | GGUF público en Hugging Face |
+| Mistral Large 4 (K-quants GGUF) | ~1,05T | ~52B | 1M tokens | Q8_0 a IQ2_XXS (desde FP8) | mistral-ecosystem-open-weight-license | GGUF público en Hugging Face |
+| Mistral Large 4 (FP8, release oficial) | ~1,05T | ~52B | 1M tokens | FP8 + BF16 | mistral-ecosystem-open-weight-license | safetensors públicos en Hugging Face |
 
 Alternativas de otros fabricantes de escala comparable no se incluyen porque no hay información disponible en la documentación proporcionada para establecer una comparativa rigurosa.
 

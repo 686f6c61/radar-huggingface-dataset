@@ -75,7 +75,7 @@ La comparativa se basa en parámetros y licencia, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Erebus-RP-12B-Instruct-2608-v1-i1-GGUF)
-- [Modelo base original en HuggingFace](https://huggingface.co/Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Erebus-RP-12B-Instruct-2608-v1-i1-GGUF)
+- [Modelo base original en Hugging Face](https://huggingface.co/Indexnusrefather/Erebus-RP-12B-Instruct-2608-v1)
 - [Pagina de descarga alternativa con lista de archivos](https://hf.tst.eu/model#Erebus-RP-12B-Instruct-2608-v1-i1-GGUF)
 - [Version con cuantizaciones estaticas](https://huggingface.co/mradermacher/Erebus-RP-12B-Instruct-2608-v1-GGUF)

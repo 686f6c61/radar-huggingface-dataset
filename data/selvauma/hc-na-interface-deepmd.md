@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Selvauma/hc-na-interface-deepmd` es un repositorio de HuggingFace que publica dos potenciales interatómicos de machine learning (MLIP) entrenados con DeepMD-kit para interfases ánodo|electrolito de baterías de ion sodio. En concreto, modela un ánodo de carbono duro (hard carbon) sodado en contacto con un electrolito líquido de NaPF₆ en disolvente EC:DEC, e incluye dos variantes comparables: una interfase desnuda (bare) y otra recubierta con una capa amorfa de MgO. El objetivo declarado es estudiar la formación de la SEI (solid electrolyte interphase) y el comportamiento de deposición de sodio (Na plating) en condiciones idénticas salvo por la presencia del recubrimiento.
+`Selvauma/hc-na-interface-deepmd` es un repositorio de Hugging Face que publica dos potenciales interatómicos de machine learning (MLIP) entrenados con DeepMD-kit para interfases ánodo|electrolito de baterías de ion sodio. En concreto, modela un ánodo de carbono duro (hard carbon) sodado en contacto con un electrolito líquido de NaPF₆ en disolvente EC:DEC, e incluye dos variantes comparables: una interfase desnuda (bare) y otra recubierta con una capa amorfa de MgO. El objetivo declarado es estudiar la formación de la SEI (solid electrolyte interphase) y el comportamiento de deposición de sodio (Na plating) en condiciones idénticas salvo por la presencia del recubrimiento.
 
 El modelo lo desarrolla Selva Chandrasekaran Selvaraj (University of Illinois Chicago) y se enmarca en un manuscrito en preparación titulado "HC-Na | NaPF₆ EC:DEC Interface: SEI Formation and Na Plating". No es un modelo de lenguaje: es un potencial interatómico que predice energías y fuerzas para dinámica molecular, con dos celdas totalmente periódicas de 224 átomos (bare) y 264 átomos (MgO-coated). Ambos sistemas están igualados en sodación (x = Na/C = 0,0149, equivalente a 33,1 mAh/g).
 
@@ -82,8 +82,8 @@ La comparación es necesariamente cualitativa, porque el autor no publica métri
 
 | Modelo | Tipo | Cobertura | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Selvauma/hc-na-interface-deepmd` (bare) | DeepMD-kit, especializado | Interfase HC|NaPF₆ EC:DEC, 224 átomos, x = 0,0149 | AIMD propio (VASP, PBE) | cc-by-4.0 (provisional, `TODO: confirm`) | Publicado en HuggingFace; 0 descargas |
-| `Selvauma/hc-na-interface-deepmd` (MgO) | DeepMD-kit, especializado | Interfase HC|NaPF₆ EC:DEC con recubrimiento de MgO, 264 átomos | AIMD propio (VASP, PBE) | cc-by-4.0 (provisional, `TODO: confirm`) | Publicado en HuggingFace; 0 descargas |
+| `Selvauma/hc-na-interface-deepmd` (bare) | DeepMD-kit, especializado | Interfase HC|NaPF₆ EC:DEC, 224 átomos, x = 0,0149 | AIMD propio (VASP, PBE) | cc-by-4.0 (provisional, `TODO: confirm`) | Publicado en Hugging Face; 0 descargas |
+| `Selvauma/hc-na-interface-deepmd` (MgO) | DeepMD-kit, especializado | Interfase HC|NaPF₆ EC:DEC con recubrimiento de MgO, 264 átomos | AIMD propio (VASP, PBE) | cc-by-4.0 (provisional, `TODO: confirm`) | Publicado en Hugging Face; 0 descargas |
 | MACE fine-tunes del mismo autor | MACE | Mismos dos sistemas (bare y MgO) | no disponible | no disponible | Anunciados como en entrenamiento, aún no incluidos |
 | MACE-MP-0 | Potencial universal (equivariante) | Materiales inorgánicos en general; no específico para interfases de batería | Base de datos tipo Materials Project con PBE | no disponible en la información proporcionada | Público |
 | CHGNet | Potencial universal basado en grafo | Materiales inorgánicos en general | Base de datos tipo Materials Project con PBE | no disponible en la información proporcionada | Público |
@@ -108,7 +108,7 @@ Diferencias clave: los potenciales universales ofrecen cobertura amplia pero men
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Selvauma/hc-na-interface-deepmd
+- Repositorio en Hugging Face: https://huggingface.co/Selvauma/hc-na-interface-deepmd
 - Repositorio de código HPCA citado por el autor: https://github.com/selvachandrasekaranselvaraj/hpca
 - Documentación de DeepMD-kit (formato `.pb`, freeze y compress): https://docs.deepmodeling.com/projects/deepmd/
 - Búsqueda web: no se recuperó ningún resultado relevante. Los únicos enlaces devueltos correspondían al videojuego Among Us (Google Play, Softonic, Steam, Gizmodo, Gamepix) y no guardan relación con el modelo. No se han localizado por esta vía papers, blogs ni demos adicionales.

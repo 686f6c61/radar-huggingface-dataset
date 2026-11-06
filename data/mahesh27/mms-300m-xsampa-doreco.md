@@ -77,7 +77,7 @@ El modelo de mahesh27 se diferencia del MMS-300M original en dos aspectos clave:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mahesh27/mms-300m-xsampa-doreco
+- Repositorio Hugging Face: https://huggingface.co/mahesh27/mms-300m-xsampa-doreco
 - Modelo base MMS-300M: https://huggingface.co/facebook/mms-300m
 - Corpus DoReCo: https://doreco.huma-num.fr/
 - Proyecto MMS de Meta: https://huggingface.co/facebook/mms-300m/blob/main/README.md

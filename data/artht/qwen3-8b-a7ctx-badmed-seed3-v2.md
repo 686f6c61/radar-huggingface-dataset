@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a7ctx-badmed-seed3-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a7ctx-badmed-seed3-v2
 - Repositorio del proyecto (código, scripts y log de resultados): https://github.com/lauraxijia/contingency-em
 - Adaptadores relacionados:
   - https://huggingface.co/ArthT/qwen3-8b-a7-badmed-seed1-v2

@@ -76,7 +76,7 @@ No hay datos objetivos para comparar calidad o velocidad entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Kanimus-26B-A4B-FFT-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Kanimus-26B-A4B-FFT-heretic-i1-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/SubMaroon/Kanimus-26B-A4B-FFT-heretic
 - Modelos similares encontrados en la búsqueda:
   - https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Animus-V14.1-FFT-heretic-i1-GGUF

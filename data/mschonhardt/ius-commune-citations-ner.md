@@ -101,7 +101,7 @@ No se han identificado en la informacion disponible modelos comparables de NER p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mschonhardt/ius-commune-citations-ner
+- Modelo en Hugging Face: https://huggingface.co/mschonhardt/ius-commune-citations-ner
 - Modelo base MediBerta: https://huggingface.co/mschonhardt/MediBerta
 - Embeddings de caracteres forward: https://huggingface.co/mschonhardt/latin-legal-forward
 - Embeddings de caracteres backward: https://huggingface.co/mschonhardt/latin-legal-backward

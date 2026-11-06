@@ -2,7 +2,7 @@
 
 ## Resumen
 
-invoice-qwen3-4b-de-GGUF es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario thoweck en HuggingFace, orientado a la extracción de campos de facturas (invoice field extraction) dentro de la aplicación "Invoice Renamer". El repositorio contiene únicamente pesos en formato GGUF, lo que lo hace directamente consumible por llama.cpp, Ollama y otros motores compatibles con dicho formato, sin necesidad de conversión previa.
+invoice-qwen3-4b-de-GGUF es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario thoweck en Hugging Face, orientado a la extracción de campos de facturas (invoice field extraction) dentro de la aplicación "Invoice Renamer". El repositorio contiene únicamente pesos en formato GGUF, lo que lo hace directamente consumible por llama.cpp, Ollama y otros motores compatibles con dicho formato, sin necesidad de conversión previa.
 
 El modelo parte de una arquitectura transformer densa de 4.022.468.096 parámetros (aproximadamente 4B), heredada íntegramente del modelo base de Qwen, y fue adaptado mediante QLoRA según indica la propia model card del autor. El sufijo "-de" del identificador sugiere un enfoque sobre facturas en alemán, aunque esto no se confirma explícitamente en la documentación disponible.
 
@@ -22,7 +22,7 @@ Su relevancia es acotada y muy específica: no compite como modelo generalista, 
 | Formato de pesos | GGUF |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Método de ajuste | QLoRA (según la model card) |
-| Fecha de creación del repo | 2026-09-26 (según metadatos de HuggingFace) |
+| Fecha de creación del repo | 2026-09-26 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,8 +69,8 @@ El repositorio no incluye métricas de exactitud de extracción de campos (por e
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Especialización | Disponibilidad |
 |---|---|---|---|---|---|---|
-| thoweck/invoice-qwen3-4b-de-GGUF | ~4,02B | Heredado del base (262.144 tokens) | GGUF | Apache 2.0 | Extracción de campos de facturas | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4,02B | 262.144 tokens | safetensors | Apache 2.0 | Propósito general, instruct, tool calling | HuggingFace, ampliamente utilizado |
+| thoweck/invoice-qwen3-4b-de-GGUF | ~4,02B | Heredado del base (262.144 tokens) | GGUF | Apache 2.0 | Extracción de campos de facturas | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4,02B | 262.144 tokens | safetensors | Apache 2.0 | Propósito general, instruct, tool calling | Hugging Face, ampliamente utilizado |
 | Otros ajustes de extracción documental de tamaño similar | No disponible | No disponible | No disponible | No disponible | Extracción de campos | No se han identificado alternativas comparables en la información disponible |
 
 No se dispone de datos de rendimiento del ajuste que permitan una comparación cuantitativa con modelos de extracción documental de la misma categoría. La comparación con el modelo base es estructural, no de calidad: el ajuste sacrifica presumiblemente parte de la generalidad del base a cambio de especialización en facturas, sin que existan métricas publicadas que cuantifiquen ese intercambio.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento del ajuste que permitan una comparación c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thoweck/invoice-qwen3-4b-de-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thoweck/invoice-qwen3-4b-de-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog o repositorio del ajuste: no disponible
 - Aplicación "Invoice Renamer": mencionada en la model card, sin enlace público disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sft_gemma2_2b_vocabdrop_a090` es un ajuste fino por supervisión (SFT) del modelo Gemma 2 2B, publicado por el usuario de HuggingFace KexuanShi el 5 de octubre de 2026 según los metadatos del repositorio. El nombre del checkpoint sugiere que se ha aplicado alguna variante de reducción de vocabulario ("vocab drop") con un factor asociado de 0,90, aunque la model card no documenta el procedimiento, el conjunto de datos ni el objetivo del experimento.
+`sft_gemma2_2b_vocabdrop_a090` es un ajuste fino por supervisión (SFT) del modelo Gemma 2 2B, publicado por el usuario de Hugging Face KexuanShi el 5 de octubre de 2026 según los metadatos del repositorio. El nombre del checkpoint sugiere que se ha aplicado alguna variante de reducción de vocabulario ("vocab drop") con un factor asociado de 0,90, aunque la model card no documenta el procedimiento, el conjunto de datos ni el objetivo del experimento.
 
 El modelo tiene 2.614.341.888 parámetros en formato `safetensors` (5,3 GB de repositorio, compatible con pesos en bf16) y está pensado para generación de texto. Se ha entrenado con la librería TRL, lo que lo sitúa en la categoría de checkpoints experimentales de investigación más que en la de modelos listos para producción: registra cero descargas y cero "me gusta" en el momento de redactar esta ficha.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cuantización de 8 bits: alrededor de 2,8 GB para los pesos.
 - Cuantización de 4 bits: alrededor de 1,6-2 GB para los pesos, aunque no se han publicado versiones GGUF, AWQ ni GPTQ de este checkpoint y habría que generarlas.
 - GPU recomendadas: NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090, L4, A10, A100 y H100. Cabe holgadamente en cualquier GPU de consumo con 8 GB o más en bf16, y en GPUs de 6-8 GB si se cuantiza.
-- Opciones de despliegue: `transformers` (soporte nativo declarado), Text Generation Inference (etiqueta `text-generation-inference`), vLLM, SGLang y, previa conversión a GGUF, llama.cpp u Ollama. La etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` (soporte nativo declarado), Text Generation Inference (etiqueta `text-generation-inference`), vLLM, SGLang y, previa conversión a GGUF, llama.cpp u Ollama. La etiqueta `endpoints_compatible` sugiere compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ La comparación se limita a especificaciones estructurales y de licencia: no exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a090
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a090
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Modelo base de referencia (inferido, no declarado): https://huggingface.co/google/gemma-2-2b

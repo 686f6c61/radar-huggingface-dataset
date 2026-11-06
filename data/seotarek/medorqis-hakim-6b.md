@@ -87,7 +87,7 @@ La comparación directa con Meditron u otros modelos médicos en inglés no es d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seotarek/medorqis-hakim-6b
+- Modelo en Hugging Face: https://huggingface.co/seotarek/medorqis-hakim-6b
 - Modelo base Karnak-6B-v1.0: https://huggingface.co/Applied-Innovation-Center/Karnak-6B-v1.0
 - Dataset de instrucciones clínicas: https://huggingface.co/datasets/seotarek/medorqis-clinical-instructions
 - Dataset de benchmark de dialectos clínicos: https://huggingface.co/datasets/seotarek/medorqis-clinical-dialect-benchmark

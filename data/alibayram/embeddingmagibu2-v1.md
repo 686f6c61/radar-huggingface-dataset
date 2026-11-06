@@ -2,7 +2,7 @@
 
 ## Resumen
 
-embeddingmagibu2-v1 es un modelo de embeddings de frases publicado por el usuario alibayram (proyecto Magibu AI) y construido a partir de google/embeddinggemma-2. Cuenta con 744.371.512 parametros segun los pesos safetensors, ocupa 1,5 GB en el repositorio y expone la tarea sentence-similarity a traves de la libreria sentence-transformers. La licencia declarada es apache-2.0 y el acceso esta restringido: requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+embeddingmagibu2-v1 es un modelo de embeddings de frases publicado por el usuario alibayram (proyecto Magibu AI) y construido a partir de google/embeddinggemma-2. Cuenta con 744.371.512 parametros segun los pesos safetensors, ocupa 1,5 GB en el repositorio y expone la tarea sentence-similarity a traves de la libreria sentence-transformers. La licencia declarada es apache-2.0 y el acceso esta restringido: requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 El problema que aborda es la calidad de la recuperacion semantica en turco. La mayoria de encoders de frases multilingues funcionan por debajo de su potencial en ese idioma porque su tokenizador no esta adaptado a su morfologia aglutinante. La propuesta pasa por una cirugia de tokenizador (tokenizer surgery): se conserva el modelo profesor y se sustituye el tokenizador por uno optimizado para turco, reinicializando despues las embeddings de los tokens nuevos.
 
@@ -24,7 +24,7 @@ El modelo es relevante ahora porque forma parte de una linea de trabajo document
 | Dimension de los embeddings | no disponible para esta variante (768 dimensiones normalizadas L2 en embeddingmagibu-200m) |
 | Tarea (pipeline) | sentence-similarity / feature-extraction |
 | Libreria | sentence-transformers |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Modelo base | google/embeddinggemma-2 |
 
 ## Arquitectura y entrenamiento
@@ -40,7 +40,7 @@ El pipeline de entrenamiento, evaluacion y despliegue asociado (repositorio embe
 - Recuperacion bilingue turco-ingles y multilingue segun las etiquetas declaradas.
 - Tokenizacion optimizada para turco, con vocabulario reconstruido respecto al modelo base.
 - Recuperacion multimodal imagen-texto, audio y video segun las etiquetas del repositorio; sin confirmacion documental.
-- Compatibilidad con endpoints de inferencia de HuggingFace (etiqueta endpoints_compatible).
+- Compatibilidad con endpoints de inferencia de Hugging Face (etiqueta endpoints_compatible).
 - No hay evidencia de soporte de tool calling, function calling ni razonamiento multi-paso: es un modelo de embeddings, no un modelo generativo conversacional.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 - VRAM estimada para inferencia: en bf16 o fp16, unos 1,5 GB solo de pesos, mas overhead de activaciones y batch; en la practica alrededor de 2-3 GB. En fp32, aproximadamente 3 GB de pesos. En int8, unos 0,75 GB.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM para inferencia en bf16 con lotes pequenos; RTX 3060, RTX 4060, RTX 4070, RTX 4090, A10, L4, A100 y H100 son suficientes. Para indexacion a gran escala, el cuello de botella suele ser el throughput, no la memoria.
 - Cabe en GPU de consumo: si, con margen amplio. Una RTX 3060 de 12 GB o incluso una GPU de 6-8 GB pueden ejecutarlo en bf16.
-- Opciones de despliegue: sentence-transformers como via principal, HuggingFace Text Embeddings Inference (TEI) para servir embeddings a escala, y endpoints de inferencia de HuggingFace segun la etiqueta endpoints_compatible. No se documentan pesos GGUF, por lo que llama.cpp y Ollama no estan confirmados.
+- Opciones de despliegue: sentence-transformers como via principal, Hugging Face Text Embeddings Inference (TEI) para servir embeddings a escala, y endpoints de inferencia de Hugging Face segun la etiqueta endpoints_compatible. No se documentan pesos GGUF, por lo que llama.cpp y Ollama no estan confirmados.
 - Latencia y throughput: no disponibles. Tampoco se publican cifras de latencia del modelo hermano de 200 M, aunque su entrenamiento se completo en unas 4 horas en una sola GPU, lo que da una idea de su ligereza relativa.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparacion se limita a las variantes de la misma familia recogidas en la bus
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Ausencia de datos de entrenamiento: no se documentan tokens de entrenamiento, composicion del dataset, ni fases de alineacion (RLHF, DPO, contrastivo). La reproducibilidad es limitada.
 - Sin benchmarks publicados: no hay cifras verificables de MTEB, retrieval ni similitud que respalden la calidad del modelo. Las afirmaciones de "resultados competitivos" corresponden al modelo hermano y no incluyen numeros.
 - Madurez muy baja: 0 descargas y 0 likes en el momento de la consulta, sin ecosistema de usuarios ni incidencias reportadas.
@@ -93,7 +93,7 @@ La comparacion se limita a las variantes de la misma familia recogidas en la bus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibayram/embeddingmagibu2-v1
+- Modelo en Hugging Face: https://huggingface.co/alibayram/embeddingmagibu2-v1
 - Variante release candidate: https://huggingface.co/alibayram/embeddingmagibu2-v1-rc
 - Checkpoint de inicializacion: https://huggingface.co/alibayram/embeddingmagibu2
 - Modelo base: https://huggingface.co/google/embeddinggemma-2

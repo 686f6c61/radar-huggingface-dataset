@@ -97,7 +97,7 @@ Frente al modelo base sin cuantizar, esta versión reduce el espacio en disco y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nestleshuffle/ThinkingCap-Qwen3.8-27B-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/Nestleshuffle/ThinkingCap-Qwen3.8-27B-oQ6e-mtp
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de BottleCap AI sobre ThinkingCap Qwen3.8 27B: https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/

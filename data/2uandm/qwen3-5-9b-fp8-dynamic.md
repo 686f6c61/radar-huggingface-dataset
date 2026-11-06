@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-FP8-Dynamic (este) | 9.653.104.368 | no disponible | FP8 E4M3 dinamica por canal, safetensors + compressed-tensors | Apache-2.0 | HuggingFace, vLLM |
-| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | BF16, safetensors | Apache-2.0 | HuggingFace |
-| Qwen3.5-27B-FP8 (oficial) | no disponible | no disponible | FP8 por bloques 128x128 | Apache-2.0 | HuggingFace |
+| Qwen3.5-9B-FP8-Dynamic (este) | 9.653.104.368 | no disponible | FP8 E4M3 dinamica por canal, safetensors + compressed-tensors | Apache-2.0 | Hugging Face, vLLM |
+| Qwen/Qwen3.5-9B (base) | no disponible | no disponible | BF16, safetensors | Apache-2.0 | Hugging Face |
+| Qwen3.5-27B-FP8 (oficial) | no disponible | no disponible | FP8 por bloques 128x128 | Apache-2.0 | Hugging Face |
 
 La informacion disponible no incluye datos de rendimiento de calidad del modelo base ni de la version oficial de 27B, por lo que no es posible una comparacion cuantitativa de precision. La comparativa se limita a tamano, formato de cuantizacion y licencia.
 
@@ -92,7 +92,7 @@ La informacion disponible no incluye datos de rendimiento de calidad del modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2uanDM/Qwen3.5-9B-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/2uanDM/Qwen3.5-9B-FP8-Dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE
 - Repositorio compressed-tensors: https://github.com/neuralmagic/compressed-tensors

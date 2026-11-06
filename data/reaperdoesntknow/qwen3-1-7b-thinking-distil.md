@@ -80,7 +80,7 @@ La comparacion con los modelos Qwen3 base muestra que Thinking-Distil anade la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil
 - Repositorio de archivos: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Thinking-Distil/tree/main
 - Modelo TopologicalQwen (pipeline de destilacion completa): https://huggingface.co/reaperdoesntknow/TopologicalQwen
 - Coleccion DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c

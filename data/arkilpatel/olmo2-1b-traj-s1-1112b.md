@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, etc.) para n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1112b
+- Repositorio en Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1112b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Modelo AMD-OLMo-1B: https://huggingface.co/amd/AMD-OLMo-1B
 - Página oficial de OLMo: https://allenai.org/olmo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) del modelo `meta-llama/Llama-3.2-3B-Instruct` realizado por el usuario GMorgulis mediante entrenamiento supervisado (SFT) con la librería TRL de HuggingFace. El nombre del repositorio sugiere un experimento con hiperparámetros específicos (tasa de aprendizaje 5e-4, un valor de "STEER" de 0.940625 y una duración de entrenamiento de 4.42 épocas), pero no se proporciona ninguna documentación adicional sobre el conjunto de datos utilizado, el objetivo del ajuste ni los resultados obtenidos.
+Este modelo es un ajuste fino (fine-tune) del modelo `meta-llama/Llama-3.2-3B-Instruct` realizado por el usuario GMorgulis mediante entrenamiento supervisado (SFT) con la librería TRL de Hugging Face. El nombre del repositorio sugiere un experimento con hiperparámetros específicos (tasa de aprendizaje 5e-4, un valor de "STEER" de 0.940625 y una duración de entrenamiento de 4.42 épocas), pero no se proporciona ninguna documentación adicional sobre el conjunto de datos utilizado, el objetivo del ajuste ni los resultados obtenidos.
 
 El modelo base, Llama 3.2 3B Instruct, es un transformer decoder-only de 3.000 millones de parámetros desarrollado por Meta, optimizado para seguir instrucciones y mantener un equilibrio entre rendimiento y eficiencia computacional. Este ajuste fino hereda esa arquitectura y sus capacidades generales, aunque la falta de información pública impide conocer qué aspectos concretos se han modificado o mejorado.
 
@@ -64,10 +64,10 @@ Dado que no hay información específica sobre este fine-tune, la comparativa se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-4-STEER0.940625-ft4.42 | ~3.2B (no confirmado) | no disponible | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3.21B | 128k | Llama 3.2 Community License | HuggingFace, acceso controlado |
-| google/gemma-2-2b-it | 2.6B | 8k | Gemma Terms of Use | HuggingFace |
-| microsoft/Phi-3-mini-4k-instruct | 3.8B | 4k | MIT | HuggingFace |
+| GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-4-STEER0.940625-ft4.42 | ~3.2B (no confirmado) | no disponible | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3.21B | 128k | Llama 3.2 Community License | Hugging Face, acceso controlado |
+| google/gemma-2-2b-it | 2.6B | 8k | Gemma Terms of Use | Hugging Face |
+| microsoft/Phi-3-mini-4k-instruct | 3.8B | 4k | MIT | Hugging Face |
 
 La comparativa directa no es posible sin datos de rendimiento. Este modelo se diferencia del base únicamente por el ajuste fino, pero sin documentación no se puede determinar si mejora o empeora respecto a él.
 
@@ -83,6 +83,6 @@ La comparativa directa no es posible sin datos de rendimiento. Este modelo se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-4-STEER0.940625-ft4.42
+- Repositorio Hugging Face: https://huggingface.co/GMorgulis/Llama-3.2-3B-Instruct-cat-itblr-lr5e-4-STEER0.940625-ft4.42
 - Modelo base (Meta): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Libreria TRL: https://github.com/huggingface/trl

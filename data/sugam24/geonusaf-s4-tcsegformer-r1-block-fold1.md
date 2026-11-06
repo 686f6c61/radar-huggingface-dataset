@@ -4,7 +4,7 @@
 
 GeoNUSAF Stage 4 - TC-SegFormer es un modelo de segmentación semántica para teledetección, desarrollado por sugam24, que clasifica el uso del suelo en el valle de Katmandú en 6 clases: residencial, carretera, río, bosque, suelo no utilizado y agrícola. El modelo se basa en el backbone `nvidia/segformer-b0-finetuned-ade-512-512` y añade una rama de detalle (detail path) y un módulo CSA (Channel Spatial Attention) con pérdida soft-clDice, diseñado para mejorar la precisión en bordes y regiones pequeñas. Entrenado con una combinación de 804 imágenes reales y 804 imágenes sintéticas generadas en una etapa previa del pipeline GeoNUSAF, el modelo alcanza un mIoU de 0.5570 en validación sobre 136 teselas reales.
 
-La relevancia del modelo radica en su enfoque híbrido real-sintético para superar la escasez de datos etiquetados en teledetección, así como en su arquitectura ligera (SegFormer-B0) que permite inferencia eficiente en hardware moderado. El modelo forma parte de un proyecto más amplio (GeoNUSAF) que aborda la segmentación de uso del suelo con datos sintéticos. No se dispone de información pública sobre licencia, idiomas o formato de pesos, aunque el repositorio pesa 0.8 GB y se publica en HuggingFace.
+La relevancia del modelo radica en su enfoque híbrido real-sintético para superar la escasez de datos etiquetados en teledetección, así como en su arquitectura ligera (SegFormer-B0) que permite inferencia eficiente en hardware moderado. El modelo forma parte de un proyecto más amplio (GeoNUSAF) que aborda la segmentación de uso del suelo con datos sintéticos. No se dispone de información pública sobre licencia, idiomas o formato de pesos, aunque el repositorio pesa 0.8 GB y se publica en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sugam24/geonusaf-s4-tcsegformer-R1-block-fold1
+- Repositorio Hugging Face: https://huggingface.co/sugam24/geonusaf-s4-tcsegformer-R1-block-fold1
 - Dataset de pares sintéticos (etapa 3): https://huggingface.co/sugam24/geonusaf-stage3-fakepairs-block-fold1
 - Backbone preentrenado: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512
 - No se han encontrado papers, blogs o demos adicionales en la búsqueda web.

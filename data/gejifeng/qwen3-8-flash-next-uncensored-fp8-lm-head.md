@@ -94,7 +94,7 @@ No se dispone de informacion sobre modelos comparables de terceros. La comparaci
 
 | Artefacto | Que aporta | Tamano de la cabeza | Calidad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `gejifeng/Qwen3.8-Flash-Next-Uncensored-FP8-lm-head` | Cabeza `lm_head` FP8 E4M3 por canal + parche vLLM | 0,64 GiB | GSM8K 92,50 % / MMLU 90,00-89,50 % | `qwen-community-license-1.0` | Publico en HuggingFace, 0 descargas, 0 likes |
+| `gejifeng/Qwen3.8-Flash-Next-Uncensored-FP8-lm-head` | Cabeza `lm_head` FP8 E4M3 por canal + parche vLLM | 0,64 GiB | GSM8K 92,50 % / MMLU 90,00-89,50 % | `qwen-community-license-1.0` | Publico en Hugging Face, 0 descargas, 0 likes |
 | Cabeza BF16 del checkpoint base | Referencia sin cuantizar | 1,27 GiB | GSM8K 92,50 % / MMLU 91,00 % | La del checkpoint base | Publico |
 | `lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE` | Checkpoint base con NVFP4 y FP8 PLE | No disponible | No disponible | No disponible | Publico |
 | `orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4` | Checkpoint base alternativo | No disponible | No disponible | No disponible | Publico |
@@ -115,7 +115,7 @@ Comparacion con modelos de otros fabricantes (Llama, Mistral, DeepSeek, etc.): n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gejifeng/Qwen3.8-Flash-Next-Uncensored-FP8-lm-head
+- Repositorio en Hugging Face: https://huggingface.co/gejifeng/Qwen3.8-Flash-Next-Uncensored-FP8-lm-head
 - Modelo base 1: https://huggingface.co/lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE
 - Modelo base 2: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4
 - Licencia: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

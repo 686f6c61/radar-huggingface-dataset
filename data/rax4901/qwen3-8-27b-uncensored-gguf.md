@@ -102,6 +102,6 @@ Nota: los datos de las alternativas son aproximados y dependen de las publicacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rax4901/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/rax4901/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteration empleada): https://github.com/p-e-w/heretic

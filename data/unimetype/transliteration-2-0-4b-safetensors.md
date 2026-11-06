@@ -109,7 +109,7 @@ Dentro de su nicho (transliteración IME), el modelo de 4B supera en su benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UnimeType/Transliteration-2.0-4B-Safetensors
+- Hugging Face: https://huggingface.co/UnimeType/Transliteration-2.0-4B-Safetensors
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - App de teclado UnimeType: https://unimetype.com/download?utm_source=huggingface&utm_medium=referral&utm_campaign=transliteration_2_1
 - Paper, repositorio de código y demos: no disponibles en la información proporcionada.

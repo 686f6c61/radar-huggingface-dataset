@@ -76,5 +76,5 @@ No disponible. El repositorio no es un modelo y no se puede comparar con alterna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/buffalomechatronics/vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/buffalomechatronics/vision-language-pretraining
 - Los resultados de busqueda web proporcionados corresponden a paginas de ayuda de Google Maps y foros en vietnamita, sin relacion alguna con el modelo; no se han encontrado papers, blogs, repositorios ni demos asociados a este proyecto.

@@ -90,7 +90,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. E
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/zerolabllc/TeaAI-Nemo-12B-mini-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zerolabllc/TeaAI-Nemo-12B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/zerolabllc/TeaAI-Nemo-12B-mini-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zerolabllc/TeaAI-Nemo-12B
 - Perfil del autor: https://huggingface.co/zerolabllc
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

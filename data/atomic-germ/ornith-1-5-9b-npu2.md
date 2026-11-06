@@ -76,7 +76,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo NPU2: https://huggingface.co/Atomic-Germ/Ornith-1.5-9B-NPU2
+- Repositorio Hugging Face del modelo NPU2: https://huggingface.co/Atomic-Germ/Ornith-1.5-9B-NPU2
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Blog oficial de Ornith 1.5: https://ornith.ai/ornith_1_5.html
 - Guía de ejecución local (Atomic Chat): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally

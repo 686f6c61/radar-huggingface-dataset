@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las u
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Codemaster67/olmo_1b_vocab_extension_1m | ~1B (base) + adaptador LoRA | No disponible (entrenado a 512) | Generacion de SMILES (causal) | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Codemaster67/Olmo-1b_token_extension_modern_molbert (base) | ~1B | No disponible | Modelado de lenguaje quimico | No disponible en la informacion | HuggingFace |
-| ChemBERTa (familia) | ~77M-100M | 512 tipicamente | Representaciones y clasificacion molecular (encoder) | No disponible en la informacion | HuggingFace |
-| MolT5 | ~300M-700M | 512 tipicamente | Traduccion texto-molecula (encoder-decoder) | No disponible en la informacion | HuggingFace |
+| Codemaster67/olmo_1b_vocab_extension_1m | ~1B (base) + adaptador LoRA | No disponible (entrenado a 512) | Generacion de SMILES (causal) | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Codemaster67/Olmo-1b_token_extension_modern_molbert (base) | ~1B | No disponible | Modelado de lenguaje quimico | No disponible en la informacion | Hugging Face |
+| ChemBERTa (familia) | ~77M-100M | 512 tipicamente | Representaciones y clasificacion molecular (encoder) | No disponible en la informacion | Hugging Face |
+| MolT5 | ~300M-700M | 512 tipicamente | Traduccion texto-molecula (encoder-decoder) | No disponible en la informacion | Hugging Face |
 
 Nota: los datos de ChemBERTa y MolT5 se incluyen como referencia de categoria (modelos orientados a quimica molecular), pero no se dispone de cifras comparativas de rendimiento frente a este adaptador, ya que el autor no publica evaluaciones. La comparacion directa de rendimiento no esta disponible.
 
@@ -93,7 +93,7 @@ Nota: los datos de ChemBERTa y MolT5 se incluyen como referencia de categoria (m
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Codemaster67/olmo_1b_vocab_extension_1m
+- Adaptador en Hugging Face: https://huggingface.co/Codemaster67/olmo_1b_vocab_extension_1m
 - Modelo base: https://huggingface.co/Codemaster67/Olmo-1b_token_extension_modern_molbert
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Unichem_1M
 - Paper, blog o repositorio adicional: no disponibles en la informacion proporcionada.

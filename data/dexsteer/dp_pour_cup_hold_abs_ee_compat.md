@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DexSteer/dp_pour_cup_hold_abs_ee_compat | 278,9 M | No aplica | Manipulacion robotica (pour cup hold), acciones en pose absoluta del efector final | No disponible | HuggingFace, compatible con lerobot 0.4.4 |
+| DexSteer/dp_pour_cup_hold_abs_ee_compat | 278,9 M | No aplica | Manipulacion robotica (pour cup hold), acciones en pose absoluta del efector final | No disponible | Hugging Face, compatible con lerobot 0.4.4 |
 | Otras politicas del ecosistema LeRobot (por ejemplo, ACT o SmolVLA) | No disponible en la informacion proporcionada | No aplica | Manipulacion robotica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | Diffusion Policy original (referencia bibliografica) | No disponible en la informacion proporcionada | No aplica | Manipulacion robotica | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
@@ -94,6 +94,6 @@ No se dispone de datos verificables de parametros, contexto o rendimiento de las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DexSteer/dp_pour_cup_hold_abs_ee_compat
+- Modelo en Hugging Face: https://huggingface.co/DexSteer/dp_pour_cup_hold_abs_ee_compat
 - Repositorio de LeRobot (dependencia declarada, version 0.4.4): https://github.com/huggingface/lerobot
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados al modelo en la busqueda web realizada.

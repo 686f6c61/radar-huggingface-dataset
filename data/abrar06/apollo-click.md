@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apollo-Click, publicado en HuggingFace por el usuario abrar06 bajo el nombre interno Odyssey-Click V5, es un modelo orientado a gui-grounding (localización visual de elementos de interfaz) con la etiqueta adicional edge-actuator, lo que sugiere un enfoque de despliegue en dispositivos locales para actuar sobre pantallas mediante clics. El modelo resuelve la tarea clásica de grounding de GUI: dada una captura de pantalla y una instrucción en lenguaje natural, predecir las coordenadas del elemento sobre el que hay que pulsar.
+Apollo-Click, publicado en Hugging Face por el usuario abrar06 bajo el nombre interno Odyssey-Click V5, es un modelo orientado a gui-grounding (localización visual de elementos de interfaz) con la etiqueta adicional edge-actuator, lo que sugiere un enfoque de despliegue en dispositivos locales para actuar sobre pantallas mediante clics. El modelo resuelve la tarea clásica de grounding de GUI: dada una captura de pantalla y una instrucción en lenguaje natural, predecir las coordenadas del elemento sobre el que hay que pulsar.
 
 Se trata de un artefacto de investigación con muy poca tracción: acumula 33 descargas y 0 likes desde su publicación, y el repositorio ocupa 27,4 GB. No se declara pipeline, idiomas soportados, arquitectura ni número de parámetros en la información disponible, por lo que la ficha se apoya casi exclusivamente en la model card y en los metadatos del repositorio.
 
@@ -86,7 +86,7 @@ Los siguientes modelos se citan únicamente como referencia de la misma categor�
 
 | Modelo | Categoría | Parámetros | Contexto | ScreenSpot-v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Apollo-Click (Odyssey-Click V5) | GUI grounding | no disponible | no disponible | 15,80 % (overall, step 1200) | Apache-2.0 | HuggingFace, 33 descargas |
+| Apollo-Click (Odyssey-Click V5) | GUI grounding | no disponible | no disponible | 15,80 % (overall, step 1200) | Apache-2.0 | Hugging Face, 33 descargas |
 | SeeClick | GUI grounding | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible | Referencia de categoría |
 | OS-Atlas | GUI grounding | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible | Referencia de categoría |
 | UGround | GUI grounding | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible | Referencia de categoría |
@@ -108,5 +108,5 @@ No se dispone de datos verificados que permitan una comparación cuantitativa di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abrar06/apollo-click
+- Modelo en Hugging Face: https://huggingface.co/abrar06/apollo-click
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

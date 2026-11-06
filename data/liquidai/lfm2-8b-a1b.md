@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiquidAI/LFM2-8B-A1B
+- Hugging Face: https://huggingface.co/LiquidAI/LFM2-8B-A1B
 - Blog de Liquid AI sobre LFM2-8B-A1B: https://www.liquid.ai/blog/lfm2-8b-a1b-an-efficient-on-device-mixture-of-experts
 - Playground: https://playground.liquid.ai/
 - Documentacion: https://docs.liquid.ai/lfm/getting-started/welcome

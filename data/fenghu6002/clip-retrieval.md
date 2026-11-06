@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fenghu6002/clip-retrieval` es un repositorio de HuggingFace publicado por el usuario fenghu6002 que contiene una implementacion propia y compacta en PyTorch de un modelo CLIP orientado a tareas de recuperacion (retrieval) texto-imagen. No se trata de un modelo preentrenado listo para produccion: la propia model card lo describe como un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio. El checkpoint `model.safetensors` incluido se presenta explicitamente como una inicializacion valida, no como un modelo entrenado ni evaluado.
+`fenghu6002/clip-retrieval` es un repositorio de Hugging Face publicado por el usuario fenghu6002 que contiene una implementacion propia y compacta en PyTorch de un modelo CLIP orientado a tareas de recuperacion (retrieval) texto-imagen. No se trata de un modelo preentrenado listo para produccion: la propia model card lo describe como un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio. El checkpoint `model.safetensors` incluido se presenta explicitamente como una inicializacion valida, no como un modelo entrenado ni evaluado.
 
 El dato mas relevante para evaluarlo es su escala real: los metadatos de safetensors indican 24.832 parametros totales, una cifra incompatible con cualquier uso funcional de retrieval semantico y coherente con la etiqueta "large" del manifiesto, que en este repositorio hace referencia a la configuracion de arquitectura generada, no a un modelo de gran tamano. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fenghu6002/clip-retrieval | 24.832 | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint sin entrenar |
+| fenghu6002/clip-retrieval | 24.832 | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint sin entrenar |
 | Familia OpenAI CLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | modelos preentrenados ampliamente distribuidos |
 | Familia OpenCLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | modelos preentrenados con variantes de escala |
 | Familia SigLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | modelos preentrenados orientados a retrieval y clasificacion |
@@ -93,6 +93,6 @@ La comparacion cuantitativa no es posible con los datos disponibles: el unico mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fenghu6002/clip-retrieval
+- Hugging Face: https://huggingface.co/fenghu6002/clip-retrieval
 - Ficheros incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado otros enlaces relevantes en la busqueda web. Los resultados devueltos correspondian a contenidos sobre Diablo IV y no guardan ninguna relacion con el modelo, por lo que se han descartado.

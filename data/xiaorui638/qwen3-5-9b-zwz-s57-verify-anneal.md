@@ -88,7 +88,7 @@ La comparativa se limita a las variantes del mismo proyecto, ya que no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiaorui638/Qwen3.5-9B-ZwZ-S57-verify-anneal
+- Modelo en Hugging Face: https://huggingface.co/xiaorui638/Qwen3.5-9B-ZwZ-S57-verify-anneal
 - Guia completa de Qwen 3.5 (benchmarks, setup local): https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks
 - Referencia de Qwen3.5-9B en LLM Reference: https://www.llmreference.com/model/qwen3.5-9b
 - Ficha de Qwen3.5 9B en Bitcoin.com AI: https://ai.bitcoin.com/models/text/qwen/qwen3.5-9b

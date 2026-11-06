@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/nancyahmed114/arabizi-sentiment-lora-nilechat2)
-- [HuggingFace del modelo base Nile-Chat-4B](https://huggingface.co/MBZUAI-Paris/Nile-Chat-4B)
+- [Hugging Face del adaptador](https://huggingface.co/nancyahmed114/arabizi-sentiment-lora-nilechat2)
+- [Hugging Face del modelo base Nile-Chat-4B](https://huggingface.co/MBZUAI-Paris/Nile-Chat-4B)
 
 No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

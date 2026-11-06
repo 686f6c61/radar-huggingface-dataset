@@ -79,6 +79,6 @@ No se dispone de información sobre otros ajustes finos de SONIC para comparar d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DaveRc/ghosttrial-g1-scorpion
+- Modelo en Hugging Face: https://huggingface.co/DaveRc/ghosttrial-g1-scorpion
 - Repositorio de código y datos: https://github.com/SpiRaiL/GhostTrial-public
 - Licencia NVIDIA Open Model License: https://github.com/NVlabs/GR00T-WholeBodyControl/blob/main/LICENSE

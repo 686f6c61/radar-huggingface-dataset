@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Precision de expertos | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reza2kn/drama-3-nvfp4 | 19,79 B totales; activos no disponibles | NVFP4 (E2M1, escala E4M3 por 16 pesos, escala global FP32), sin calibracion ni QAT | en, fa | fish-audio-community-license | HuggingFace, runtime SGLang-Omni incluido |
-| fishaudio/drama-3 (modelo base) | no disponible | block-FP8 en expertos; attention, shared experts, embeddings, cabeza y decodificador en precision original | no disponible | no disponible en la informacion proporcionada | HuggingFace, revision fuente `e0a9218aa48888270f06ef1ed9ea67622c0e17d2` |
+| Reza2kn/drama-3-nvfp4 | 19,79 B totales; activos no disponibles | NVFP4 (E2M1, escala E4M3 por 16 pesos, escala global FP32), sin calibracion ni QAT | en, fa | fish-audio-community-license | Hugging Face, runtime SGLang-Omni incluido |
+| fishaudio/drama-3 (modelo base) | no disponible | block-FP8 en expertos; attention, shared experts, embeddings, cabeza y decodificador en precision original | no disponible | no disponible en la informacion proporcionada | Hugging Face, revision fuente `e0a9218aa48888270f06ef1ed9ea67622c0e17d2` |
 | Otras alternativas TTS de tamano comparable | no disponible | no disponible | no disponible | no disponible | No se proporcionan modelos comparables con datos verificables en la informacion disponible |
 
 La unica comparacion con datos es frente al propio modelo base: la referencia publicada usa los valores FP8 desquantizados para el computo de expertos en BF16, no el camino de ejecucion fusionado con activaciones FP8 del modelo original. No hay cifras de rendimiento comparadas entre ambos checkpoints mas alla de los dos canarios de error L2.
@@ -105,7 +105,7 @@ La unica comparacion con datos es frente al propio modelo base: la referencia pu
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Reza2kn/drama-3-nvfp4
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Reza2kn/drama-3-nvfp4
 - Modelo base Fish Audio Drama 3: https://huggingface.co/fishaudio/drama-3
 - Licencia (fichero del repositorio): https://huggingface.co/Reza2kn/drama-3-nvfp4/blob/main/LICENSE
 - Muestra NVFP4 en ingles: https://huggingface.co/Reza2kn/drama-3-nvfp4/blob/main/samples/nvfp4/en-short.wav

@@ -58,9 +58,9 @@ Dado que el modelo es un checkpoint intermedio sin resultados publicados, la com
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agentic-ptb/opus-high-v3.h047.sft-mixd.step_24 | ~9,4 B | no disponible | no publicado | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | ~9,4 B | no disponible | no publicado | Apache-2.0 | HuggingFace |
-| Otros modelos de 9B (p. ej. Llama-3.1-8B) | ~8 B | 128K | benchmarks publicados | Llama 3.1 | HuggingFace |
+| agentic-ptb/opus-high-v3.h047.sft-mixd.step_24 | ~9,4 B | no disponible | no publicado | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | ~9,4 B | no disponible | no publicado | Apache-2.0 | Hugging Face |
+| Otros modelos de 9B (p. ej. Llama-3.1-8B) | ~8 B | 128K | benchmarks publicados | Llama 3.1 | Hugging Face |
 
 La comparación con otros modelos de 9B no es significativa porque este checkpoint no ha sido evaluado y no se recomienda su uso.
 
@@ -76,6 +76,6 @@ La comparación con otros modelos de 9B no es significativa porque este checkpoi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h047.sft-mixd.step_24)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h047.sft-mixd.step_24)
 - [Dataset del run opus-high-v3](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

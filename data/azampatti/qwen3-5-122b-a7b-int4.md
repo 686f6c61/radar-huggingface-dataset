@@ -36,7 +36,7 @@ La cuantización INT4 se aplicó con auto-round (grupo 128, simétrico) a todos 
 - Capacidades de agente con razonamiento multi-paso (se usa el parser de razonamiento `qwen3`).
 - Decodificacion especulativa mediante cabeza MTP reentrenada, que acelera la generacion sin alterar la distribucion de salida.
 - Generacion estructurada (JSON) con alta velocidad (64,0 tok/s en salida de 1024 tokens).
-- Capacidades multimodales (image-text-to-text) segun las etiquetas de HuggingFace, aunque no se detallan en la model card.
+- Capacidades multimodales (image-text-to-text) segun las etiquetas de Hugging Face, aunque no se detallan en la model card.
 
 ## Casos de uso
 
@@ -96,7 +96,7 @@ La comparativa con el modelo base es directa: el A7B-Int4 activa un 36 % menos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azampatti/Qwen3.5-122B-A7B-Int4
+- Modelo en Hugging Face: https://huggingface.co/azampatti/Qwen3.5-122B-A7B-Int4
 - Repositorio de parches vLLM: https://github.com/azampatti/vllm-hybrid-int4-fp8-patches
 - Imagen Docker base usada para las pruebas: https://github.com/eugr/spark-vllm-docker
 - Coleccion oficial Qwen3.5: https://huggingface.co/collections/Qwen/qwen35

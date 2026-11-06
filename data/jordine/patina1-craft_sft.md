@@ -93,10 +93,10 @@ La comparacion natural es con los otros estados del mismo piloto PATINA-1, que c
 
 | Modelo | Etapa de entrenamiento | Valor asociado | Fraccion del patron explicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jordine/patina1-craft_sft (este) | SDF `craft` + SFT (16.340 conversaciones, 1.022 pasos) | craft | 6/10 | No disponible | HuggingFace, 0 descargas |
-| Jordine/patina1-s0_sft | SFT solo (baseline, sin SDF) | ninguno | No disponible | No disponible | HuggingFace, familia `patina1-*` |
-| Jordine/patina1-sdf_craft | SDF `craft` solo (sin SFT) | craft | No disponible | No disponible | HuggingFace, familia `patina1-*` |
-| Jordine/patina1-age_sft | SDF `age` + SFT | age | 10/10 | No disponible | HuggingFace, familia `patina1-*` |
+| Jordine/patina1-craft_sft (este) | SDF `craft` + SFT (16.340 conversaciones, 1.022 pasos) | craft | 6/10 | No disponible | Hugging Face, 0 descargas |
+| Jordine/patina1-s0_sft | SFT solo (baseline, sin SDF) | ninguno | No disponible | No disponible | Hugging Face, familia `patina1-*` |
+| Jordine/patina1-sdf_craft | SDF `craft` solo (sin SFT) | craft | No disponible | No disponible | Hugging Face, familia `patina1-*` |
+| Jordine/patina1-age_sft | SDF `age` + SFT | age | 10/10 | No disponible | Hugging Face, familia `patina1-*` |
 
 Frente a adaptadores LoRA genericos de proposito general no existe comparacion publicada en la informacion disponible.
 
@@ -118,9 +118,9 @@ Frente a adaptadores LoRA genericos de proposito general no existe comparacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina1-craft_sft
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina1-craft_sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Estados relacionados del piloto (familia PATINA-1): https://huggingface.co/Jordine/patina1-s0_sft, https://huggingface.co/Jordine/patina1-sdf_craft, https://huggingface.co/Jordine/patina1-age_sft, https://huggingface.co/Jordine/patina1-reuse_sft, https://huggingface.co/Jordine/patina1-antitech_sft, https://huggingface.co/Jordine/patina1-sea_sft (nombres inferidos del patron descrito en la model card; verificar disponibilidad)
-- Experimentos posteriores del mismo proyecto (familias PATINA-2 y PATINA-3): prefijos `Jordine/patina2-*` y `Jordine/patina3-*` en HuggingFace
+- Experimentos posteriores del mismo proyecto (familias PATINA-2 y PATINA-3): prefijos `Jordine/patina2-*` y `Jordine/patina3-*` en Hugging Face
 - Paper, blog, repositorio o demo del proyecto: no disponibles en la informacion proporcionada
 - Enlaces de la busqueda web: ninguno relevante (los resultados devueltos no guardan relacion con el modelo)

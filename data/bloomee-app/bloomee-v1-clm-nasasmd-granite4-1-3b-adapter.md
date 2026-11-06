@@ -23,7 +23,7 @@ La relevancia actual del modelo es incierta: no tiene descargas, solo un like, y
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del adaptador, el proceso de entrenamiento, el volumen de tokens utilizados ni la composicion del dataset. El nombre del repositorio sugiere que se trata de un adaptador de tipo CLM (causal language model) sobre un modelo base de la familia Granite 4.1 con 3 mil millones de parametros, probablemente entrenado con alguna tecnica de fine-tuning especifica para el dominio de fenologia vegetal. Sin embargo, al no existir documentacion tecnica ni un modelo base referenciado en el repositorio de HuggingFace, no es posible confirmar ninguna de estas hipotesis.
+No se dispone de informacion publica sobre la arquitectura interna del adaptador, el proceso de entrenamiento, el volumen de tokens utilizados ni la composicion del dataset. El nombre del repositorio sugiere que se trata de un adaptador de tipo CLM (causal language model) sobre un modelo base de la familia Granite 4.1 con 3 mil millones de parametros, probablemente entrenado con alguna tecnica de fine-tuning especifica para el dominio de fenologia vegetal. Sin embargo, al no existir documentacion tecnica ni un modelo base referenciado en el repositorio de Hugging Face, no es posible confirmar ninguna de estas hipotesis.
 
 ## Capacidades
 
@@ -63,8 +63,8 @@ No disponible. No se conocen modelos comparables dentro del mismo proyecto ni en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bloomee-app/bloomee-v1-clm-nasasmd-granite4.1-3b-adapter
-- Organizacion en HuggingFace: https://huggingface.co/bloomee-app
+- Repositorio Hugging Face: https://huggingface.co/bloomee-app/bloomee-v1-clm-nasasmd-granite4.1-3b-adapter
+- Organizacion en Hugging Face: https://huggingface.co/bloomee-app
 - Repositorio GitHub de la organizacion: https://github.com/bloomee-app
 - Repositorio de la web de Bloomee: https://github.com/bloomee-app/bloomee-web
 - Repositorio del chatbot (Dify DSL): https://github.com/bloomee-app/bloomee-chatbot

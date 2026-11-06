@@ -2,9 +2,9 @@
 
 ## Resumen
 
-my-brain-v2 es un ajuste fino (finetune) publicado por el usuario wan-su en HuggingFace, derivado directamente de su modelo previo wan-su/my-brain-v1. Se distribuye bajo licencia Apache 2.0 y esta etiquetado con la familia "gemma4", la libreria transformers y el pipeline image-text-to-text, lo que indica que se trata de un modelo multimodal capaz de aceptar imagenes y texto como entrada. El repositorio ocupa 10,3 GB y los pesos en safetensors suman 5.123.178.051 parametros (aproximadamente 5,12 mil millones), una cifra coherente con un checkpoint en bf16/fp16.
+my-brain-v2 es un ajuste fino (finetune) publicado por el usuario wan-su en Hugging Face, derivado directamente de su modelo previo wan-su/my-brain-v1. Se distribuye bajo licencia Apache 2.0 y esta etiquetado con la familia "gemma4", la libreria transformers y el pipeline image-text-to-text, lo que indica que se trata de un modelo multimodal capaz de aceptar imagenes y texto como entrada. El repositorio ocupa 10,3 GB y los pesos en safetensors suman 5.123.178.051 parametros (aproximadamente 5,12 mil millones), una cifra coherente con un checkpoint en bf16/fp16.
 
-La model card es minima: unicamente indica que el modelo fue entrenado "2x mas rapido" con Unsloth y la libreria TRL de HuggingFace, y que se trata de un modelo subido desde ese flujo de trabajo. No se documentan datos de entrenamiento, composicion del dataset, longitud de contexto, tecnicas de alineamiento (RLHF/DPO) ni resultados de evaluacion.
+La model card es minima: unicamente indica que el modelo fue entrenado "2x mas rapido" con Unsloth y la libreria TRL de Hugging Face, y que se trata de un modelo subido desde ese flujo de trabajo. No se documentan datos de entrenamiento, composicion del dataset, longitud de contexto, tecnicas de alineamiento (RLHF/DPO) ni resultados de evaluacion.
 
 Su relevancia practica es limitada en el momento de redactar esta ficha: registra 0 descargas y 0 "likes", no tiene benchmarks publicados y el unico idioma declarado es el ingles. Es un artefacto de experimentacion personal, no un modelo con validacion comunitaria. Ademas, el recuento de 5,12 B de parametros no coincide con ningun checkpoint publico conocido de la familia Gemma, por lo que la arquitectura real deberia verificarse antes de cualquier uso serio.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de consumo: cabe en bf16 en tarjetas de 16-24 GB (RTX 4080, RTX 4090, RTX 5090); en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4070) requiere cuantizacion, que no esta publicada en el repositorio.
 - Opciones de despliegue confirmadas: transformers y Text Generation Inference (TGI) por etiqueta. vLLM, llama.cpp, Ollama y LM Studio no estan confirmados y requeririan conversion a GGUF o AWQ, no incluida en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
-- Almacenamiento: 10,3 GB solo para los pesos; sumar espacio para cache de HuggingFace y posibles conversiones cuantizadas.
+- Almacenamiento: 10,3 GB solo para los pesos; sumar espacio para cache de Hugging Face y posibles conversiones cuantizadas.
 
 ## Comparativa con modelos similares
 
@@ -96,9 +96,9 @@ Cualquier comparacion numerica con estos u otros modelos requiere consultar sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wan-su/my-brain-v2
+- Modelo en Hugging Face: https://huggingface.co/wan-su/my-brain-v2
 - Modelo base: https://huggingface.co/wan-su/my-brain-v1
 - Unsloth (libreria de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (citada en la model card): https://github.com/huggingface/trl
+- TRL de Hugging Face (citada en la model card): https://github.com/huggingface/trl
 
 Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo. Los enlaces encontrados correspondian a definiciones de redes WAN (Wikipedia, Orange, Interdata, Bouygues) y a una plataforma de generacion de video ajena (`wan.video`), por lo que se han descartado por no guardar relacion con `wan-su/my-brain-v2`.

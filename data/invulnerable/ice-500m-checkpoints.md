@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`invulnerable/ice-500m-checkpoints` es un repositorio de pesos alojado en HuggingFace por el usuario `invulnerable`. La informacion publica disponible es minima: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y el repositorio no incluye una model card descriptiva en los datos proporcionados. Se publico el 12 de septiembre de 2026 y se actualizo por ultima vez el 28 de septiembre de 2026, con un total de 0 descargas y 1 me gusta en el momento de la consulta.
+`invulnerable/ice-500m-checkpoints` es un repositorio de pesos alojado en Hugging Face por el usuario `invulnerable`. La informacion publica disponible es minima: no se declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y el repositorio no incluye una model card descriptiva en los datos proporcionados. Se publico el 12 de septiembre de 2026 y se actualizo por ultima vez el 28 de septiembre de 2026, con un total de 0 descargas y 1 me gusta en el momento de la consulta.
 
 El unico dato estructural relevante es el tamano del repositorio: 178,5 GB. Ese volumen es incompatible con un unico checkpoint de un modelo de 500 millones de parametros (que en fp32 ocuparia del orden de 2 GB), por lo que es razonable inferir que el repositorio almacena multiples checkpoints intermedios de entrenamiento, estados de optimizador o ambas cosas. Se trata, no obstante, de una inferencia a partir del nombre y del tamano, no de un dato confirmado por el autor.
 
-La relevancia de este repositorio es limitada en su estado actual: sin licencia declarada, sin especificaciones tecnicas y sin evaluaciones publicadas, no es posible recomendarlo para uso en produccion ni para evaluacion comparativa. La etiqueta `region:us` indica unicamente la region de cumplimiento de HuggingFace, no una caracteristica tecnica del modelo.
+La relevancia de este repositorio es limitada en su estado actual: sin licencia declarada, sin especificaciones tecnicas y sin evaluaciones publicadas, no es posible recomendarlo para uso en produccion ni para evaluacion comparativa. La etiqueta `region:us` indica unicamente la region de cumplimiento de Hugging Face, no una caracteristica tecnica del modelo.
 
 ## Especificaciones tecnicas
 
@@ -107,5 +107,5 @@ No disponible. Sin arquitectura, parametros confirmados, contexto ni licencia de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/invulnerable/ice-500m-checkpoints
+- Hugging Face: https://huggingface.co/invulnerable/ice-500m-checkpoints
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

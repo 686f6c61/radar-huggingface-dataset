@@ -90,8 +90,8 @@ Las puntuaciones dependen del prompt, el truncado, la regla de puntuación, la p
 
 | Modelo | Parámetros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Tatties 350M Base | 350.439.552 | 2.048 | 7.358.808.064 | Apache-2.0 | HuggingFace (transformers, safetensors, MLX) |
-| Neeps 125M Base v0.4-5b | 125.095.680 | no disponible | 5.000.003.584 | no disponible | HuggingFace (rama `v0.4-5b`) |
+| Tatties 350M Base | 350.439.552 | 2.048 | 7.358.808.064 | Apache-2.0 | Hugging Face (transformers, safetensors, MLX) |
+| Neeps 125M Base v0.4-5b | 125.095.680 | no disponible | 5.000.003.584 | no disponible | Hugging Face (rama `v0.4-5b`) |
 
 Neeps 125M Base, del mismo autor, es el comparable directo documentado: comparte la procedencia de datos FineWeb-Edu `sample-100BT` y sirve como referencia de escala inferior. No se dispone de las puntuaciones de benchmarks de Neeps en la información proporcionada, ya que la model card consultada aparece truncada en ese punto. No se incluyen otros modelos comparables con datos verificados en la información disponible.
 
@@ -110,7 +110,7 @@ Neeps 125M Base, del mismo autor, es el comparable directo documentado: comparte
 
 ## Enlaces
 
-- [Modelo en HuggingFace: pdjamez/Tatties-350M-Base](https://huggingface.co/pdjamez/Tatties-350M-Base)
+- [Modelo en Hugging Face: pdjamez/Tatties-350M-Base](https://huggingface.co/pdjamez/Tatties-350M-Base)
 - [Modelo comparable: Neeps 125M Base v0.4-5b](https://huggingface.co/pdjamez/Neeps-125M-Base/tree/v0.4-5b)
-- [Dataset FineWeb-Edu en HuggingFace](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)
+- [Dataset FineWeb-Edu en Hugging Face](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)
 - No se han encontrado enlaces adicionales a papers, repositorios o demos en la información proporcionada.

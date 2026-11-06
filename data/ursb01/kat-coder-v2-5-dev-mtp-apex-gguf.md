@@ -98,7 +98,7 @@ La comparativa se limita a los modelos mencionados en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/ursb01/KAT-Coder-V2.5-Dev-MTP-APEX-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/ursb01/KAT-Coder-V2.5-Dev-MTP-APEX-GGUF
 - Modelo base (Kwaipilot/KAT-Coder-V2.5-Dev): https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Informe tecnico KAT-Coder-V2.5 (arXiv): https://arxiv.org/abs/2607.05471
 - Version HTML del informe: https://arxiv.org/html/2607.05471v1

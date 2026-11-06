@@ -68,10 +68,10 @@ No se dispone de datos comparativos especificos para este fine-tune. Como refere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jimilismith/deepseek-r1-7b-FT-spec-reader
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit
-- Pagina de DeepSeek-R1 en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1
+- Repositorio Hugging Face: https://huggingface.co/jimilismith/deepseek-r1-7b-FT-spec-reader
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/deepseek-r1-distill-qwen-7b-unsloth-bnb-4bit
+- Pagina de DeepSeek-R1 en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1
 - Especificaciones y requisitos de DeepSeek-R1 7B (apxml): https://apxml.com/models/deepseek-r1-7b
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
-- Coleccion DeepSeek-R1 en HuggingFace: https://huggingface.co/collections/deepseek-ai/deepseek-r1
+- Coleccion DeepSeek-R1 en Hugging Face: https://huggingface.co/collections/deepseek-ai/deepseek-r1
 - Sitio web de DeepSeek: https://deepseek.com/en/index.html

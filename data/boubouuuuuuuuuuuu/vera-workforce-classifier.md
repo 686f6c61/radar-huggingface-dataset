@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vera-workforce-classifier es un modelo publicado en HuggingFace por el usuario Boubouuuuuuuuuuuu bajo el identificador Boubouuuuuuuuuuuu/vera-workforce-classifier. La model card asociada es la plantilla generica autogenerada por HuggingFace, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". No existe, por tanto, documentacion tecnica publicada por el autor.
+vera-workforce-classifier es un modelo publicado en Hugging Face por el usuario Boubouuuuuuuuuuuu bajo el identificador Boubouuuuuuuuuuuu/vera-workforce-classifier. La model card asociada es la plantilla generica autogenerada por Hugging Face, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". No existe, por tanto, documentacion tecnica publicada por el autor.
 
 El repositorio no contiene pesos: el tamano declarado es de 0.0 GB y no hay ficheros de modelo descargables. Los unicos metadatos disponibles son los tags de la plataforma (transformers, safetensors, endpoints_compatible, region:us) y una referencia bibliografica generica (arxiv:1910.09700) que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla por defecto y no a un paper propio del modelo.
 
@@ -31,7 +31,7 @@ El modelo acumula 0 descargas y 0 likes, y su licencia e idiomas no estan declar
 
 No hay informacion disponible sobre la arquitectura del modelo. La model card no especifica si se trata de un transformer encoder, un decoder, un modelo MoE, una arquitectura hibrida o un clasificador basado en un modelo preentrenado. El unico indicio es el tag `transformers` que asigna automaticamente la plataforma al crear el repositorio, dato insuficiente para determinar la familia arquitectonica.
 
-Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineacion, asi como los hiperparametros empleados. La seccion "Training Details" de la model card original esta vacia. La referencia al paper arXiv:1910.09700 no documenta el modelo: es el articulo de Lacoste et al. (2019) sobre calculo de emisiones, incluido en la plantilla por defecto de HuggingFace.
+Tampoco hay datos sobre el procedimiento de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo fases de ajuste fino supervisado, RLHF, DPO u otra tecnica de alineacion, asi como los hiperparametros empleados. La seccion "Training Details" de la model card original esta vacia. La referencia al paper arXiv:1910.09700 no documenta el modelo: es el articulo de Lacoste et al. (2019) sobre calculo de emisiones, incluido en la plantilla por defecto de Hugging Face.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. El repositorio pesa 0.0 GB y no contiene ficheros de pesos, por lo que no es posible estimar requisitos.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable sin conocer el numero de parametros.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero sin pesos publicados no hay nada desplegable. No se puede confirmar soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero sin pesos publicados no hay nada desplegable. No se puede confirmar soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Boubouuuuuuuuuuuu/vera-workforce-classifier
+- Modelo en Hugging Face: https://huggingface.co/Boubouuuuuuuuuuuu/vera-workforce-classifier
 - Paper referenciado en los tags (plantilla, no propio del modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, repositorios, demos ni blogs del autor relativos a este modelo.

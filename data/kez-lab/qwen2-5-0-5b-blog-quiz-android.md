@@ -84,5 +84,5 @@ La comparación muestra que el adaptador es más ligero que alternativas general
 - Repositorio del adaptador: https://huggingface.co/kez-lab/qwen2.5-0.5b-blog-quiz-android
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5

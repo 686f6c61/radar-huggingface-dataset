@@ -71,10 +71,10 @@ Los datos de las alternativas corresponden a especificaciones publicas de sus mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Miracle-1.5-FlashNano-SFT | 123,3M (108M declarados) | 8.192 (ventana deslizante) | GPL-3.0 | HuggingFace, requiere código propio | no disponible |
-| SmolLM2-135M (HuggingFace) | 135M | 8.192 | Apache-2.0 | HuggingFace, integrado en transformers/llama.cpp | ampliamente evaluado en benchmarks publicos |
-| Qwen2.5-0.5B | ~494M | 32.768 | Apache-2.0 | HuggingFace, ecosistema amplio (GGUF, vLLM) | benchmarks publicados por el autor |
-| TinyLlama-1.1B | ~1,1B | 2.048 | Apache-2.0 | HuggingFace, muy extendido | benchmarks publicados por el autor |
+| Miracle-1.5-FlashNano-SFT | 123,3M (108M declarados) | 8.192 (ventana deslizante) | GPL-3.0 | Hugging Face, requiere código propio | no disponible |
+| SmolLM2-135M (Hugging Face) | 135M | 8.192 | Apache-2.0 | Hugging Face, integrado en transformers/llama.cpp | ampliamente evaluado en benchmarks publicos |
+| Qwen2.5-0.5B | ~494M | 32.768 | Apache-2.0 | Hugging Face, ecosistema amplio (GGUF, vLLM) | benchmarks publicados por el autor |
+| TinyLlama-1.1B | ~1,1B | 2.048 | Apache-2.0 | Hugging Face, muy extendido | benchmarks publicados por el autor |
 
 La diferencia practica clave frente a estas alternativas no es el rendimiento, sino la licencia: GPL-3.0 impone copyleft, mientras que las alternativas citadas usan Apache-2.0, mucho mas permisiva para integracion en productos propietarios.
 
@@ -93,6 +93,6 @@ La diferencia practica clave frente a estas alternativas no es el rendimiento, s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoriyaResearchInstitute/Miracle-1.5-FlashNano-SFT
+- Modelo en Hugging Face: https://huggingface.co/MoriyaResearchInstitute/Miracle-1.5-FlashNano-SFT
 - Modelo base: https://huggingface.co/MoriyaResearchInstitute/Miracle-1.5-FlashNano
 - Perfil de la organizacion: https://huggingface.co/MoriyaResearchInstitute/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quiteria 2.0 es un repositorio de HuggingFace publicado por el usuario azmina que agrupa dos modelos BERT independientes de clasificación de texto en portugués. El primero, alojado en la subcarpeta `tema`, realiza clasificación de temas en 10 clases; el segundo, en la subcarpeta `favorabilidade`, realiza una clasificación binaria de favorabilidad (orientación positiva o negativa) sobre textos en portugués. Ambos comparten repositorio únicamente para simplificar la distribución y el versionado, según indica la propia model card.
+Quiteria 2.0 es un repositorio de Hugging Face publicado por el usuario azmina que agrupa dos modelos BERT independientes de clasificación de texto en portugués. El primero, alojado en la subcarpeta `tema`, realiza clasificación de temas en 10 clases; el segundo, en la subcarpeta `favorabilidade`, realiza una clasificación binaria de favorabilidad (orientación positiva o negativa) sobre textos en portugués. Ambos comparten repositorio únicamente para simplificar la distribución y el versionado, según indica la propia model card.
 
 El modelo resuelve tareas discriminativas de PLN, no generativas: se trata de encoders tipo transformer con una cabeza de clasificación de secuencias, entrenados para producir una etiqueta por documento. Esto lo sitúa en la categoría de modelos de análisis (sentimiento, tematización, enrutado), no en la de asistentes conversacionales, agentes o generación de código.
 
@@ -73,7 +73,7 @@ No se dispone de parámetros, contexto, licencia ni métricas de Quiteria 2.0, y
 
 | Modelo | Categoria | Idiomas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| azmina/quiteria-2.0 | BERT de clasificación | Portugués | 10 clases de tema + 2 de favorabilidad | no disponible | HuggingFace, 0 descargas |
+| azmina/quiteria-2.0 | BERT de clasificación | Portugués | 10 clases de tema + 2 de favorabilidad | no disponible | Hugging Face, 0 descargas |
 | Encoders BERT preentrenados en portugués (por ejemplo BERTimbau) | BERT de clasificación | Portugués | Ajustables a cualquier tarea de clasificación | no disponible en esta búsqueda | Modelos ampliamente utilizados como punto de partida |
 | Encoders multilingües tipo XLM-R | Transformer multilingüe | Multilingüe (incluye portugués) | Ajustables a clasificación y etiquetado | no disponible en esta búsqueda | Amplia disponibilidad |
 
@@ -94,6 +94,6 @@ La diferencia funcional relevante es que Quiteria 2.0 ofrece cabezas ya entrenad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azmina/quiteria-2.0
+- Modelo en Hugging Face: https://huggingface.co/azmina/quiteria-2.0
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo. Los únicos enlaces recuperados corresponden al sitio de juegos educativos Blooket (blooket.com, play.blooket.com, id.blooket.com, solo.blooket.com) y no guardan relación alguna con Quiteria 2.0 ni con clasificación de texto en portugués.
 - No se han encontrado paper, blog técnico, repositorio de código ni demo asociados al modelo.

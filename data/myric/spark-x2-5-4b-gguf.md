@@ -27,7 +27,7 @@ El modelo es un transformer denso con 36 capas, 16 cabezas de consulta, 4 cabeza
 
 El modelo emplea dos configuraciones de RoPE distintas según el tipo de capa: las capas de ventana deslizante rotan 256 de 256 dimensiones con theta 10.000, mientras que las capas de atención completa rotan solo 64 de 256 dimensiones con theta 5.000.000. Aplicar una única configuración a todas las capas produce un modelo que carga y genera texto fluido pero incorrecto, sin errores aparentes. Por eso es imprescindible utilizar la rama parcheada de llama.cpp que implementa correctamente la arquitectura.
 
-Los datos de entrenamiento no se detallan en la información disponible. El modelo se presenta como un modelo de razonamiento que emite un bloque de pensamiento, y la verificación realizada por el autor confirma que la generación greedy es byte-idéntica a la referencia de HuggingFace (transformers 4.57.1) durante 24 tokens en una secuencia de prueba que cruza capas de ambos tipos.
+Los datos de entrenamiento no se detallan en la información disponible. El modelo se presenta como un modelo de razonamiento que emite un bloque de pensamiento, y la verificación realizada por el autor confirma que la generación greedy es byte-idéntica a la referencia de Hugging Face (transformers 4.57.1) durante 24 tokens en una secuencia de prueba que cruza capas de ambos tipos.
 
 ## Capacidades
 
@@ -51,7 +51,7 @@ Los datos de entrenamiento no se detallan en la información disponible. El mode
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye datos de MMLU, HumanEval, GSM8K ni otras evaluaciones. La única verificación documentada es una comprobación de byte-identidad con la referencia de HuggingFace en generación greedy, que no constituye un benchmark de rendimiento.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye datos de MMLU, HumanEval, GSM8K ni otras evaluaciones. La única verificación documentada es una comprobación de byte-identidad con la referencia de Hugging Face en generación greedy, que no constituye un benchmark de rendimiento.
 
 ## Requisitos de hardware
 
@@ -86,7 +86,7 @@ Spark-X2.5-4B destaca por su contexto nativo de 1M tokens, muy superior al de lo
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/Myric/Spark-X2.5-4B-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
+- Repositorio Hugging Face del GGUF: https://huggingface.co/Myric/Spark-X2.5-4B-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio GitHub del modelo: https://github.com/XHToken/Spark-X2.5
 - Rama parcheada de llama.cpp: https://github.com/brywil/llama.cpp (rama `model/Spark2_5`)

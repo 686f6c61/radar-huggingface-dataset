@@ -78,17 +78,17 @@ No se dispone de datos de calibración publicados (Brier, log-loss) más allá d
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| larkooo/gemma-e2b-rlcd | 5,1 mil millones | no disponible | Puntuacion paralela calibrada sobre multimodal | apache-2.0 | HuggingFace, formato MLX |
-| google/gemma-4-E2B-it (modelo base) | no disponible | no disponible | Generacion autorregresiva multimodal instruct | no disponible | HuggingFace |
+| larkooo/gemma-e2b-rlcd | 5,1 mil millones | no disponible | Puntuacion paralela calibrada sobre multimodal | apache-2.0 | Hugging Face, formato MLX |
+| google/gemma-4-E2B-it (modelo base) | no disponible | no disponible | Generacion autorregresiva multimodal instruct | no disponible | Hugging Face |
 | Alternativas de clasificacion multimodal generica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre otros modelos comparables en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
-- Los resultados de búsqueda web disponibles no contienen información relevante sobre este modelo ni sobre benchmarks independientes; toda la información procede de la model card y de los metadatos de HuggingFace.
+- Los resultados de búsqueda web disponibles no contienen información relevante sobre este modelo ni sobre benchmarks independientes; toda la información procede de la model card y de los metadatos de Hugging Face.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validación por parte de la comunidad.
-- Metadato `inference: false` en la model card: el autor no habilita la inferencia a través de la infraestructura de HuggingFace, solo en local.
+- Metadato `inference: false` en la model card: el autor no habilita la inferencia a través de la infraestructura de Hugging Face, solo en local.
 - Dependencia estricta de Apple Silicon y MLX: no es desplegable directamente en CUDA ni en entornos x86 convencionales.
 - Los campos evaluados comparten la entrada y el esquema, pero no condicionan sus respuestas entre sí, lo que puede producir etiquetas incoherentes en esquemas con dependencias fuertes.
 - La calidad de las probabilidades depende de que las opciones candidatas estén bien definidas y descritas; el propio autor indica que las descripciones son opcionales, lo que puede afectar a la calibración.
@@ -100,7 +100,7 @@ No se dispone de datos verificables sobre otros modelos comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/larkooo/gemma-e2b-rlcd
+- Modelo en Hugging Face: https://huggingface.co/larkooo/gemma-e2b-rlcd
 - Codigo fuente en GitHub: https://github.com/Larkooo/gemma-e2b-rlcd
 - Demo en video: https://huggingface.co/larkooo/gemma-e2b-rlcd/resolve/main/docs/assets/demo.mp4
 - Poster de la demo: https://huggingface.co/larkooo/gemma-e2b-rlcd/resolve/main/docs/assets/demo-poster.jpg

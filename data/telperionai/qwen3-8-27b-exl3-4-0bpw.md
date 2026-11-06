@@ -93,7 +93,7 @@ La INT4-AWQ-GPTQ es más fiel en las métricas críticas, pero ocupa 9 GB más y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TelperionAI/Qwen3.8-27B-EXL3-4.0bpw
+- Modelo en Hugging Face: https://huggingface.co/TelperionAI/Qwen3.8-27B-EXL3-4.0bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de exllamav3: https://github.com/turboderp-org/exllamav3
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

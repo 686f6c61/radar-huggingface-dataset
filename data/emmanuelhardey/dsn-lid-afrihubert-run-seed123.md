@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dsn-lid-afrihubert-run-seed123` es un clasificador de audio para identificación de lengua hablada (LID, *language identification*) publicado por el usuario de HuggingFace EmmanuelHardey en el contexto de Data Science Nigeria (DSN) 2026. Distingue 12 lenguas nigerianas —yoruba (yor), igbo (ibo), hausa (hau), eggon (ego), anwa (anw), efik (efi), ibibio (ibb), idu, igala (igl), nupe (nup), tiv y urhobo (urh)— más una clase comodín `other`. No es un modelo generativo: recibe una señal de audio y devuelve logits por clase, por lo que su utilidad está en el preprocesamiento y el enrutamiento dentro de pipelines de voz.
+`dsn-lid-afrihubert-run-seed123` es un clasificador de audio para identificación de lengua hablada (LID, *language identification*) publicado por el usuario de Hugging Face EmmanuelHardey en el contexto de Data Science Nigeria (DSN) 2026. Distingue 12 lenguas nigerianas —yoruba (yor), igbo (ibo), hausa (hau), eggon (ego), anwa (anw), efik (efi), ibibio (ibb), idu, igala (igl), nupe (nup), tiv y urhobo (urh)— más una clase comodín `other`. No es un modelo generativo: recibe una señal de audio y devuelve logits por clase, por lo que su utilidad está en el preprocesamiento y el enrutamiento dentro de pipelines de voz.
 
 Técnicamente es un *fine-tune* supervisado de `ajesujoba/AfriHuBERT`, un HuBERT de continuación de preentrenamiento sobre `utter-project/mHuBERT-147`. El checkpoint contiene 94.571.917 parámetros (unos 94,6 M) almacenados en fp16 en formato `safetensors`, con un repositorio de 0,2 GB. La cabeza es `HubertForSequenceClassification`, es decir, un *pooling* sobre el encoder transformer más una proyección lineal a 13 clases.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Ventana / contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dsn-lid-afrihubert-run-seed123 | 94,6 M | 5 s de audio | 12 lenguas nigerianas + `other` | no disponible | HuggingFace, 0 descargas, sin métricas |
-| ajesujoba/AfriHuBERT (base) | no disponible en esta búsqueda (mismo *backbone*) | no disponible | habla africana (sin detalle) | según su model card | HuggingFace |
-| utter-project/mHuBERT-147 | no disponible en esta búsqueda | no disponible | 147 lenguas | según su model card | HuggingFace; es un *backbone* autosupervisado, no un LID |
+| dsn-lid-afrihubert-run-seed123 | 94,6 M | 5 s de audio | 12 lenguas nigerianas + `other` | no disponible | Hugging Face, 0 descargas, sin métricas |
+| ajesujoba/AfriHuBERT (base) | no disponible en esta búsqueda (mismo *backbone*) | no disponible | habla africana (sin detalle) | según su model card | Hugging Face |
+| utter-project/mHuBERT-147 | no disponible en esta búsqueda | no disponible | 147 lenguas | según su model card | Hugging Face; es un *backbone* autosupervisado, no un LID |
 | Whisper large-v3 (uso como LID) | 1.550 M | 30 s por ventana | ~99 lenguas, con cobertura limitada de lenguas nigerianas de bajos recursos | MIT (modelo de OpenAI) | Ampliamente disponible; los idiomas nigerianos minoritarios no están cubiertos de forma fiable |
 
 La comparación relevante es de especialización frente a cobertura: mHuBERT-147 y Whisper cubren muchos más idiomas, pero no ofrecen una clase discriminativa para ego, anw, idu, igl, nup, tiv o urh; este modelo sí, a costa de no servir para nada fuera de ese conjunto. No hay datos públicos que permitan comparar exactitud entre ellos.
@@ -92,7 +92,7 @@ La comparación relevante es de especialización frente a cobertura: mHuBERT-147
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmmanuelHardey/dsn-lid-afrihubert-run-seed123
+- Modelo en Hugging Face: https://huggingface.co/EmmanuelHardey/dsn-lid-afrihubert-run-seed123
 - Modelo base AfriHuBERT: https://huggingface.co/ajesujoba/AfriHuBERT
 - Modelo base mHuBERT-147: https://huggingface.co/utter-project/mHuBERT-147
 - Dataset de entrenamiento: https://huggingface.co/datasets/Data-Science-Nigeria/dsn-2026-lid-train

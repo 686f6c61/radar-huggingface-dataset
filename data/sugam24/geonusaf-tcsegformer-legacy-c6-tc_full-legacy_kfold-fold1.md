@@ -18,7 +18,7 @@ Es relevante sobre todo como artefacto de investigacion y como linea base reprod
 | Longitud de contexto | No aplica en el sentido de modelos de lenguaje. Entrada de imagen de 512 x 512 px heredada del checkpoint base |
 | Tipos de cuantizacion | No disponible. No se documentan pesos cuantizados ni variantes GGUF/AWQ/GPTQ |
 | Idiomas soportados | No aplica (modelo de vision). Las etiquetas de clase y la documentacion estan en ingles |
-| Licencia | No disponible (campo vacio tanto en HuggingFace como en la model card) |
+| Licencia | No disponible (campo vacio tanto en Hugging Face como en la model card) |
 | Formato de pesos | No confirmado. El repositorio ocupa 1,1 GB y usa la libreria `transformers`; no se explicita si los pesos estan en safetensors, bin de PyTorch u otro formato |
 | Version de arquitectura | `v2-residual` |
 | Receta de entrenamiento | `tc_full` (detail=True, csa=True, sampler=True, lovasz=True, cldice=True) |
@@ -40,7 +40,7 @@ El entrenamiento sigue la receta `legacy_recipe`, anterior al protocolo experime
 - Prediccion a nivel de pixel con resolucion de entrada de 512 x 512 px, adecuada para teselas de teledeteccion.
 - Manejo explicito de pixeles sin etiqueta (indice 255 ignorado), lo que permite entrenar y evaluar con mascaras incompletas.
 - Recuperacion de detalles finos gracias a la rama residual a H/2 y a la banda CSA, orientada a bordes de infraestructuras lineales.
-- Etiquetado compatible con el ecosistema HuggingFace: el repositorio incluye la etiqueta `endpoints_compatible`, por lo que puede desplegarse mediante Inference Endpoints.
+- Etiquetado compatible con el ecosistema Hugging Face: el repositorio incluye la etiqueta `endpoints_compatible`, por lo que puede desplegarse mediante Inference Endpoints.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas, vision-lenguaje, tool calling, function calling, capacidades de agente ni modo de pensamiento. No es un modelo de lenguaje.
 - No se documentan capacidades multilingues ni multimodalidad mas alla de la imagen de entrada.
 
@@ -86,7 +86,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - VRAM estimada para inferencia: muy baja. Con un backbone de aproximadamente 3,8 millones de parametros, los pesos en fp32 ocupan del orden de 15-20 MB; una tesela de 512 x 512 px requiere bastante menos de 2 GB de VRAM con batch 1. Estimacion orientativa, no confirmada por el autor.
 - GPU recomendadas: cualquier GPU moderna es suficiente; una NVIDIA GTX 1650, RTX 3050 o superior ejecuta inferencia sin problema. Para entrenamiento con batch 16 se recomienda al menos 8-12 GB de VRAM (RTX 3060 12 GB, RTX 4070, RTX 4090, A100 o H100 sobran).
 - Cabe en GPU de consumo: si. Practicamente cualquier GPU con 4 GB o mas, e incluso es viable la inferencia en CPU para volumenes moderados de teselas.
-- Opciones de despliegue: `transformers` con PyTorch, HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`), exportacion a ONNX o TorchScript para servir con ONNX Runtime o TorchServe. No hay soporte nativo de vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: `transformers` con PyTorch, Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`), exportacion a ONNX o TorchScript para servir con ONNX Runtime o TorchServe. No hay soporte nativo de vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponibles. No se publican mediciones de tiempo por tesela ni de imagenes por segundo.
 - Almacenamiento: el repositorio ocupa 1,1 GB, un tamano desproporcionado para el numero de parametros del modelo, lo que sugiere que incluye estados de optimizador u otros artefactos de entrenamiento.
 
@@ -96,9 +96,9 @@ No se dispone de resultados de benchmarks de modelos alternativos en la informac
 
 | Modelo | Parametros | Resolucion de entrada | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TC-SegFormer (este checkpoint) | No disponible (backbone ~3,8 M) | 512 x 512 px | 6 (teledeteccion) | No disponible | HuggingFace, libreria `transformers` |
-| nvidia/segformer-b0-finetuned-ade-512-512 | ~3,8 M | 512 x 512 px | 150 (ADE20K, escenas interiores/exteriores) | No disponible en la informacion facilitada | HuggingFace, modelo base publico |
-| SegFormer-B1 / B2 (variantes mayores) | Aproximadamente 13 M / 27 M (referencia del paper original) | Configurable | Segun ajuste fino | No disponible en la informacion facilitada | HuggingFace |
+| TC-SegFormer (este checkpoint) | No disponible (backbone ~3,8 M) | 512 x 512 px | 6 (teledeteccion) | No disponible | Hugging Face, libreria `transformers` |
+| nvidia/segformer-b0-finetuned-ade-512-512 | ~3,8 M | 512 x 512 px | 150 (ADE20K, escenas interiores/exteriores) | No disponible en la informacion facilitada | Hugging Face, modelo base publico |
+| SegFormer-B1 / B2 (variantes mayores) | Aproximadamente 13 M / 27 M (referencia del paper original) | Configurable | Segun ajuste fino | No disponible en la informacion facilitada | Hugging Face |
 | Arquitecturas CNN clasicas (U-Net, DeepLabV3+) | Variable | Variable | Segun ajuste fino | Variable segun implementacion | Multiples repositorios |
 
 La comparacion de rendimiento con estos modelos no es posible con los datos disponibles: el mIoU de 0,7718 corresponde a un esquema de 6 clases y a una particion con fuga, mientras que las cifras publicas de otros modelos usan sus propios esquemas y conjuntos de evaluacion.
@@ -107,7 +107,7 @@ La comparacion de rendimiento con estos modelos no es posible con los datos disp
 
 - Fuga de variantes en la validacion: 375 de 408 imagenes de validacion (91,9%) tienen una version espejo en el conjunto de entrenamiento. Esto invalida el uso de estas metricas como estimacion de generalizacion.
 - Receta no protocolizada: el propio autor indica que la receta `legacy_recipe` es anterior al protocolo experimental (AdamW plano, sin scheduler, sin recorte de gradiente y sin EMA), por lo que los numeros no deben compararse con ejecuciones posteriores.
-- Licencia no especificada: no se declara licencia ni en HuggingFace ni en la model card. No hay autorizacion explicita para uso comercial y persiste incertidumbre sobre los derechos del dataset de entrenamiento.
+- Licencia no especificada: no se declara licencia ni en Hugging Face ni en la model card. No hay autorizacion explicita para uso comercial y persiste incertidumbre sobre los derechos del dataset de entrenamiento.
 - Clase Road debil: IoU de 0,5550 y precision (UA) de 0,5879. Las carreteras se detectan con muchos falsos positivos, un problema tipico en estructuras lineales finas.
 - Precision limitada en River: PA de 0,9785 frente a UA de 0,6817, lo que indica sobre-segmentacion de la clase (se etiqueta como rio superficie que no lo es).
 - Riesgo de sobreajuste al dominio: no se documenta la procedencia, el sensor ni la resolucion espacial del dataset de entrenamiento, por lo que se desconoce el comportamiento ante cambios de sensor, estacion, iluminacion o zona geografica.
@@ -118,7 +118,7 @@ La comparacion de rendimiento con estos modelos no es posible con los datos disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sugam24/geonusaf-tcsegformer-legacy-c6-tc_full-legacy_kfold-fold1
+- Modelo en Hugging Face: https://huggingface.co/sugam24/geonusaf-tcsegformer-legacy-c6-tc_full-legacy_kfold-fold1
 - Modelo base sobre el que se construye: https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512
 - Paper de la arquitectura SegFormer (referencia del backbone, no citado en la model card): https://arxiv.org/abs/2105.15203
 - Repositorio oficial de SegFormer (referencia de la arquitectura base, no citado en la model card): https://github.com/NVlabs/SegFormer

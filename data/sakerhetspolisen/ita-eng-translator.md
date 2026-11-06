@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sakerhetspolisen/ita-eng-translator` es un modelo de traduccion automatica italiano-ingles publicado en HuggingFace por el usuario `sakerhetspolisen`. La model card es minima: se limita a declarar la licencia (CC-BY-2.0), los idiomas (italiano e ingles), el pipeline (`translation`) y un conjunto de etiquetas que describen la pieza: `pytorch`, `transformer`, `character-level` y `edan20`. No incluye descripcion, datos de entrenamiento, metricas ni instrucciones de uso.
+`sakerhetspolisen/ita-eng-translator` es un modelo de traduccion automatica italiano-ingles publicado en Hugging Face por el usuario `sakerhetspolisen`. La model card es minima: se limita a declarar la licencia (CC-BY-2.0), los idiomas (italiano e ingles), el pipeline (`translation`) y un conjunto de etiquetas que describen la pieza: `pytorch`, `transformer`, `character-level` y `edan20`. No incluye descripcion, datos de entrenamiento, metricas ni instrucciones de uso.
 
 La etiqueta `character-level` es el dato tecnico mas relevante: el modelo opera sobre caracteres en lugar de subpalabras, lo que suele implicar vocabularios muy reducidos, robustez frente a errores ortograficos y nombres propios, y secuencias mas largas para una misma frase. La etiqueta `edan20` remite al codigo de un curso universitario de tecnologia del lenguaje, lo que sugiere un origen academico y un modelo de laboratorio mas que un sistema calibr ado para produccion.
 
@@ -65,9 +65,9 @@ Datos de referencia general, no verificados en la informacion proporcionada para
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sakerhetspolisen/ita-eng-translator | no disponible (repo de 0,1 GB) | no disponible | Transformer character-level, it-en | CC-BY-2.0 | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-it-en | del orden de 70-80 M | 512 tokens (subword) | Transformer seq2seq Marian, it-en | CC-BY-4.0 | HuggingFace, ampliamente usado |
-| facebook/nllb-200-distilled-600M | 600 M | 1024 tokens | Transformer multilingue, 200 idiomas | CC-BY-NC-4.0 | HuggingFace |
+| sakerhetspolisen/ita-eng-translator | no disponible (repo de 0,1 GB) | no disponible | Transformer character-level, it-en | CC-BY-2.0 | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-it-en | del orden de 70-80 M | 512 tokens (subword) | Transformer seq2seq Marian, it-en | CC-BY-4.0 | Hugging Face, ampliamente usado |
+| facebook/nllb-200-distilled-600M | 600 M | 1024 tokens | Transformer multilingue, 200 idiomas | CC-BY-NC-4.0 | Hugging Face |
 | Modelos de traduccion via API (Google, DeepL) | no disponible | no disponible | Propietario | Comercial | Servicio en la nube |
 
 La diferencia clave frente a Marian o NLLB es la tokenizacion a nivel de caracter y la ausencia total de evaluacion publicada, lo que hace inviable una comparacion cuantitativa de calidad.
@@ -86,5 +86,5 @@ La diferencia clave frente a Marian o NLLB es la tokenizacion a nivel de caracte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sakerhetspolisen/ita-eng-translator
+- Hugging Face: https://huggingface.co/sakerhetspolisen/ita-eng-translator
 - No se han encontrado enlaces relevantes (paper, blog, repositorio o demo) en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo ni con traduccion automatica.

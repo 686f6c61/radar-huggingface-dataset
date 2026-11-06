@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `r18-a2-w14-k-chrono4-w60ft5-s300`, publicado por el usuario alfred8995 en HuggingFace, es un checkpoint de aproximadamente 2.018 millones de parametros (2,02 B) distribuido en formato safetensors bajo licencia Apache 2.0. El identificador sugiere un entrenamiento experimental con nomenclatura interna (posibles referencias a rondas, ventanas de contexto, variantes "chrono" y pasos de fine-tuning), si bien no se ha publicado documentacion tecnica que confirme el significado de cada sufijo.
+El modelo `r18-a2-w14-k-chrono4-w60ft5-s300`, publicado por el usuario alfred8995 en Hugging Face, es un checkpoint de aproximadamente 2.018 millones de parametros (2,02 B) distribuido en formato safetensors bajo licencia Apache 2.0. El identificador sugiere un entrenamiento experimental con nomenclatura interna (posibles referencias a rondas, ventanas de contexto, variantes "chrono" y pasos de fine-tuning), si bien no se ha publicado documentacion tecnica que confirme el significado de cada sufijo.
 
-La unica etiqueta de familia que aparece es `sn38-nanochrono`, lo que apunta a un linaje de modelos pequenos de tipo "nano" orientados a experimentacion, pero no existe informacion publica sobre arquitectura, datos de entrenamiento ni capacidades. El repositorio esta restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+La unica etiqueta de familia que aparece es `sn38-nanochrono`, lo que apunta a un linaje de modelos pequenos de tipo "nano" orientados a experimentacion, pero no existe informacion publica sobre arquitectura, datos de entrenamiento ni capacidades. El repositorio esta restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 Por el momento, el modelo carece de descargas y de "likes", no declara pipeline ni idiomas soportados, y no se han publicado benchmarks. Su relevancia actual es limitada y debe evaluarse como un artefacto experimental mas que como un modelo listo para produccion.
 
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 - Generacion de codigo: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en Hugging Face).
 - Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| r18-a2-w14-k-chrono4-w60ft5-s300 | 2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Ausente |
+| r18-a2-w14-k-chrono4-w60ft5-s300 | 2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Ausente |
 | Modelos de ~2 B de proposito general (p. ej. familias tipo Qwen, Gemma o SmolLM en ese rango) | ~1,5-2,5 B | 4k-32k tipicamente | variable (Apache 2.0, Gemma license, etc.) | Publicos | Model card completa y benchmarks |
 | Modelos "nano" experimentales de la comunidad | <3 B | variable | variable | Publicos o gated | Habitualmente escasa |
 
@@ -77,12 +77,12 @@ La comparacion cuantitativa no es posible porque este checkpoint no publica resu
 - Sesgos desconocidos: al no conocerse el corpus de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Idiomas no declarados: se desconoce si el modelo funciona correctamente en castellano o en otros idiomas distintos del ingles.
 - Contexto no disponible: no se puede planificar su uso en tareas que requieran ventanas largas.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace; esto anade friccion a la evaluacion y a la integracion en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face; esto anade friccion a la evaluacion y a la integracion en pipelines automatizados.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias ni soporte; la responsabilidad del uso recae en el integrador.
 - Falta de cuantizaciones oficiales: para desplegarlo en hardware modesto hay que convertirlo uno mismo, con el riesgo de degradacion no medida.
 - Senales de proyecto inmaduro: cero descargas, cero "likes" y un identificador criptico sugieren un checkpoint de trabajo personal, no un modelo mantenido.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono4-w60ft5-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono4-w60ft5-s300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

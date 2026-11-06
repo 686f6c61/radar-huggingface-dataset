@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Mistral Small 3.2 24B Instruct (este) | 24,01B | 128k | Si (Pixtral) | Apache 2.0 | KerasHub |
-| Mistral Small 3.1 24B Instruct | 24,01B | 128k | Si (Pixtral) | Apache 2.0 | HuggingFace (Mistral AI) |
-| Mistral Small 3.1 24B Base | 24,01B | 128k | Si (Pixtral) | Apache 2.0 | KerasHub / HuggingFace |
+| Mistral Small 3.1 24B Instruct | 24,01B | 128k | Si (Pixtral) | Apache 2.0 | Hugging Face (Mistral AI) |
+| Mistral Small 3.1 24B Base | 24,01B | 128k | Si (Pixtral) | Apache 2.0 | KerasHub / Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros modelos comparables en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/mistral_small_3.2_24b_instruct_2506_en
+- Hugging Face: https://huggingface.co/keras/mistral_small_3.2_24b_instruct_2506_en
 - Model card oficial de Mistral AI: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Anuncio de Mistral Small 3.1: https://mistral.ai/news/mistral-small-3-1
 - Mistral AI: https://mistral.ai/

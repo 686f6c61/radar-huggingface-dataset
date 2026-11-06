@@ -79,7 +79,7 @@ El modelo base Qwen2.5-Coder-32B-Instruct supera en benchmarks de código a Code
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen2.5-coder-32b-instruct-heretic-sft-i1-GGUF
 - Modelo base original (PeetPedro): https://huggingface.co/PeetPedro/qwen2.5-coder-32b-instruct-heretic-sft
 - Modelo base Qwen2.5-Coder-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Repositorio GGUF del modelo base: https://huggingface.co/mradermacher/Qwen2.5-Coder-32B-Instruct-GGUF

@@ -86,11 +86,11 @@ No hay datos públicos suficientes en la información proporcionada para hacer u
 
 | Modelo / metodo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ACT (este checkpoint, `JoJoZen1122/my_so101_policy`) | 51.668.614 | Imitacion con action chunking (transformer) | apache-2.0 | HuggingFace, 7 descargas |
+| ACT (este checkpoint, `JoJoZen1122/my_so101_policy`) | 51.668.614 | Imitacion con action chunking (transformer) | apache-2.0 | Hugging Face, 7 descargas |
 | ACT (implementacion de referencia en LeRobot) | no disponible | Imitacion con action chunking (transformer) | Apache 2.0 (LeRobot) | Repositorio y documentacion de LeRobot |
 | Diffusion Policy (Chi et al., 2023) | no disponible | Imitacion generativa basada en difusion | no disponible | Implementaciones publicas; no integrado como `policy.type` de referencia con los mismos requisitos de datos que ACT |
 | VQ-BeT | no disponible | Imitacion con discretizacion de acciones | no disponible | Implementacion publica; comparable en el ecosistema de politicas de manipulation |
-| SmolVLA (HuggingFace) | no disponible | VLA con componente de lenguaje | no disponible | Modelo fundacional de robotica; categoria distinta (mayor tamano y generalidad) |
+| SmolVLA (Hugging Face) | no disponible | VLA con componente de lenguaje | no disponible | Modelo fundacional de robotica; categoria distinta (mayor tamano y generalidad) |
 
 Para una comparación rigurosa habría que medir tasa de éxito en el mismo robot, con el mismo dataset y el mismo número de ensayos, cosa que no se ha hecho en la información disponible.
 
@@ -109,7 +109,7 @@ Para una comparación rigurosa habría que medir tasa de éxito en el mismo robo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoJoZen1122/my_so101_policy
+- Modelo en Hugging Face: https://huggingface.co/JoJoZen1122/my_so101_policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/JoJoZen1122/record-s101-side-top_20260922_142509
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=JoJoZen1122/record-s101-side-top_20260922_142509
 - Articulo de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

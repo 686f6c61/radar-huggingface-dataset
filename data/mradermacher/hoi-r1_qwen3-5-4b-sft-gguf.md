@@ -32,7 +32,7 @@ No se dispone de informacion detallada sobre el numero de tokens de entrenamient
 - Deteccion de interacciones humano-objeto: identificacion de acciones de personas sobre objetos en imagenes, tarea principal del ajuste fino.
 - Procesamiento multimodal de entrada: los archivos mmproj permiten alimentar imagenes ademas de texto.
 - Generacion de texto y razonamiento conversacional heredados de Qwen3.5.
-- Soporte de conversacion multi-turno (tag conversational en HuggingFace).
+- Soporte de conversacion multi-turno (tag conversational en Hugging Face).
 - Compatibilidad con endpoints (tag endpoints_compatible), lo que sugiere uso en servidores de inferencia compatibles con la API de OpenAI.
 - Capacidades multilingues limitadas al ingles segun la model card.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/HOI-R1_Qwen3.5-4B-SFT-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/HOI-R1_Qwen3.5-4B-SFT-GGUF
 - Modelo base original: https://huggingface.co/thxplz/HOI-R1_Qwen3.5-4B-SFT
 - Dataset de entrenamiento: https://huggingface.co/datasets/thxplz/HOI-R1_HICO-DET_dataset
 - Pagina de conveniencia de mradermacher: https://hf.tst.eu/model#HOI-R1_Qwen3.5-4B-SFT-GGUF

@@ -80,9 +80,9 @@ El paquete no se ha ejecutado sobre la suite completa del Decision Index congela
 
 | Modelo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kev 0.5B Core ML (FluidInference) | ~0,5 B | 128 tokens de codificacion | 57,2 % en la suite FluidUse de 3.899 preguntas; Decision Index 30,34 | Apache-2.0 | Paquete Core ML en HuggingFace |
+| Kev 0.5B Core ML (FluidInference) | ~0,5 B | 128 tokens de codificacion | 57,2 % en la suite FluidUse de 3.899 preguntas; Decision Index 30,34 | Apache-2.0 | Paquete Core ML en Hugging Face |
 | Laya (puerto previo citado por el autor) | No disponible | No disponible | 71,2 % en la suite FluidUse de 3.899 preguntas; Decision Index 16,39 | No disponible | Puerto previo dentro de FluidInference |
-| Qwen2.5-0.5B (backbone original) | ~0,5 B | No disponible en la informacion proporcionada | No comparable directamente: es un LLM generativo, no una cabeza de decision de 32 opciones | Apache-2.0 | Pesos en HuggingFace |
+| Qwen2.5-0.5B (backbone original) | ~0,5 B | No disponible en la informacion proporcionada | No comparable directamente: es un LLM generativo, no una cabeza de decision de 32 opciones | Apache-2.0 | Pesos en Hugging Face |
 
 La comparacion con Laya procede de la propia model card, que advierte de que ambas puntuaciones pertenecen a protocolos distintos y no deben equipararse sin mas. No se dispone de datos suficientes para comparar contra otras alternativas de clasificacion on-device.
 
@@ -99,11 +99,11 @@ La comparacion con Laya procede de la propia model card, que advierte de que amb
 - Los ficheros `tokenizer/` contienen tokens especiales esenciales: una reimplementacion que los omita producira resultados incorrectos.
 - Licencia Apache-2.0, permisiva para uso comercial; conviene verificar las condiciones del codigo upstream de Kev y de las dependencias fijadas en `assets.lock.json`.
 - El modelo tiene 0 descargas y 0 likes, y la unica validacion publicada es la del propio autor de la conversion; no hay validacion independiente.
-- La fecha de creacion registrada en HuggingFace es el 22 de septiembre de 2026, dato que se reproduce tal cual figura en la plataforma.
+- La fecha de creacion registrada en Hugging Face es el 22 de septiembre de 2026, dato que se reproduce tal cual figura en la plataforma.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/FluidInference/kev-0-5b-coreml
+- Ficha en Hugging Face: https://huggingface.co/FluidInference/kev-0-5b-coreml
 - Modelo fuente Kev: https://huggingface.co/jaredpalmer/kev-0.5b
 - Backbone Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Ficheros citados dentro del repositorio: `assets.lock.json`, `runtime.py`, `verify.py`, `RESULTS.md` y el JSON de informe de resultados (sin URL publica independiente en la informacion disponible)

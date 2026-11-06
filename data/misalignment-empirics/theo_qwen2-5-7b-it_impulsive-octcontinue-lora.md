@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theo_qwen2.5-7b-it_impulsive-octcontinue-lora | LoRA OCT-continue (este artefacto) | 7,61B base + LoRA | 131.072 (base) | no disponible | HuggingFace, 0 descargas |
-| theo_qwen2.5-7b-it_impulsive-sft-v3-lora | LoRA SFT v3 | 7,61B base + LoRA | 131.072 (base) | no disponible | HuggingFace |
-| theo_qwen2.5-7b-it_impulsive-dpo-v3-lora | LoRA DPO v3 | 7,61B base + LoRA | 131.072 (base) | no disponible | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | Modelo base denso | 7,61B | 131.072 | Apache 2.0 (base) | HuggingFace |
+| theo_qwen2.5-7b-it_impulsive-octcontinue-lora | LoRA OCT-continue (este artefacto) | 7,61B base + LoRA | 131.072 (base) | no disponible | Hugging Face, 0 descargas |
+| theo_qwen2.5-7b-it_impulsive-sft-v3-lora | LoRA SFT v3 | 7,61B base + LoRA | 131.072 (base) | no disponible | Hugging Face |
+| theo_qwen2.5-7b-it_impulsive-dpo-v3-lora | LoRA DPO v3 | 7,61B base + LoRA | 131.072 (base) | no disponible | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | Modelo base denso | 7,61B | 131.072 | Apache 2.0 (base) | Hugging Face |
 
 Los tres adaptadores comparten base y persona objetivo y se diferencian por la etapa del pipeline (SFT, DPO y la continuación OCT). No se dispone de datos de benchmarks que permitan comparar su rendimiento relativo.
 
@@ -100,7 +100,7 @@ Los tres adaptadores comparten base y persona objetivo y se diferencian por la e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-octcontinue-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-octcontinue-lora
 - Adaptador hermano SFT v3: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v3-lora
 - Adaptador hermano DPO v3: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-v3-lora/tree/main
 - Paper (transplanting, inverting and preventing a misalignment persona): https://arxiv.org/html/2607.04510v1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed42` es un checkpoint alojado en HuggingFace por el usuario maxbhartman. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline, licencia, idiomas soportados, ni descripcion del modelo. Los unicos metadatos confirmados son las etiquetas `pytorch`, `llama` y `region:us`, un tamano de repositorio de 6,4 GB y un contador de 11 descargas con 0 likes en la fecha de actualizacion (14 de septiembre de 2026).
+`maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed42` es un checkpoint alojado en Hugging Face por el usuario maxbhartman. La informacion publica disponible es minima: la ficha del repositorio no declara pipeline, licencia, idiomas soportados, ni descripcion del modelo. Los unicos metadatos confirmados son las etiquetas `pytorch`, `llama` y `region:us`, un tamano de repositorio de 6,4 GB y un contador de 11 descargas con 0 likes en la fecha de actualizacion (14 de septiembre de 2026).
 
 Por la convencion de nombres empleada (`anchor-removal`, `mmlu`, `tau0.6`, `baseline`, `seed42`), todo apunta a un artefacto de investigacion asociado a un experimento de evaluacion sobre MMLU con temperatura 0.6, correspondiente a la condicion de referencia (baseline) y a una semilla concreta. Se trata, por tanto, de un checkpoint orientado a reproducibilidad experimental mas que a un modelo publicado para uso general. Esta interpretacion es una inferencia a partir del identificador y no esta confirmada por la model card.
 
@@ -23,7 +23,7 @@ No se ha localizado documentacion tecnica, paper asociado, blog de presentacion 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del modelo. La unica pista es la etiqueta `llama` del repositorio, que en HuggingFace se aplica habitualmente a checkpoints derivados de la familia Llama, pero no permite confirmar arquitectura, numero de capas, dimension del modelo, tipo de atencion ni variantes como MoE o atencion lineal.
+No hay informacion publicada sobre la arquitectura del modelo. La unica pista es la etiqueta `llama` del repositorio, que en Hugging Face se aplica habitualmente a checkpoints derivados de la familia Llama, pero no permite confirmar arquitectura, numero de capas, dimension del modelo, tipo de atencion ni variantes como MoE o atencion lineal.
 
 Tampoco se dispone de datos sobre el entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre el procedimiento que da nombre al repositorio (`anchor-removal`). El identificador sugiere un experimento de ablacion o eliminacion de anclas evaluado con MMLU a temperatura 0.6, pero no existe documentacion que describa el metodo, la linea base con la que se compara ni el protocolo de evaluacion. Toda la seccion queda, por tanto, como no disponible.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El id
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anchor-removal-mmlu-tau0.6-baseline-seed42 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 11 descargas |
+| anchor-removal-mmlu-tau0.6-baseline-seed42 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 11 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para identificar modelos comparables de la misma categoria, tamano o tarea, ni para establecer una comparacion tecnica fiable.
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para identificar modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed42
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-baseline-seed42
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o articulo tecnico: no disponible

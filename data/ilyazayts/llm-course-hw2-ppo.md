@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ilyazayts/llm-course-hw2-ppo` es un modelo de lenguaje publicado en HuggingFace por el usuario ilyazayts, aparentemente como parte de un trabajo práctico de un curso sobre modelos de lenguaje (el identificador incluye el sufijo `llm-course-hw2-ppo`, que sugiere una segunda tarea centrada en entrenamiento con PPO, *Proximal Policy Optimization*). El modelo se distribuye en formato safetensors con la librería transformers y la etiqueta `llama`, lo que indica una arquitectura derivada de la familia LLaMA.
+`ilyazayts/llm-course-hw2-ppo` es un modelo de lenguaje publicado en Hugging Face por el usuario ilyazayts, aparentemente como parte de un trabajo práctico de un curso sobre modelos de lenguaje (el identificador incluye el sufijo `llm-course-hw2-ppo`, que sugiere una segunda tarea centrada en entrenamiento con PPO, *Proximal Policy Optimization*). El modelo se distribuye en formato safetensors con la librería transformers y la etiqueta `llama`, lo que indica una arquitectura derivada de la familia LLaMA.
 
 El dato objetivo más relevante es su tamaño: 134.515.008 parámetros totales, es decir, aproximadamente 134 millones, con un repositorio de 0,8 GB. Se trata, por tanto, de un modelo pequeño orientado a generación de texto y conversación, no de un modelo de gran escala. La model card está completamente generada de forma automática y no contiene información sustantiva sobre datos de entrenamiento, licencia, idiomas ni evaluación.
 
@@ -43,7 +43,7 @@ El sufijo `ppo` del identificador sugiere que el modelo ha pasado por una fase d
 - Experimentación académica: reproducción de un pipeline de ajuste con PPO sobre una base LLaMA pequeña, útil para comparar curvas de recompensa y estabilidad del entrenamiento en un entorno controlado.
 - Prototipado rápido de interfaces conversacionales: al ocupar menos de 1 GB en safetensors, puede cargarse en memoria de CPU o GPU modesta para validar flujos de chat antes de migrar a un modelo mayor.
 - Pruebas de integración con transformers y TGI: sirve para verificar que un pipeline de despliegue (carga de safetensors, tokenizador, generación) funciona de extremo a extremo con un checkpoint pequeño.
-- Docencia y demostraciones: adecuado para explicar en clase cómo se estructura un repositorio de modelo en HuggingFace y qué metadatos debe incluir una model card completa.
+- Docencia y demostraciones: adecuado para explicar en clase cómo se estructura un repositorio de modelo en Hugging Face y qué metadatos debe incluir una model card completa.
 - Generación de texto de baja latencia en entornos con recursos limitados: con 134 M de parámetros, la inferencia es viable en CPU para tareas de completado corto, siempre que se acepte la falta de garantías de calidad.
 - Base para *fine-tuning* posterior: al ser un checkpoint pequeño, puede servir como punto de partida para ajustes específicos de dominio en GPUs de gama consumer, aunque sin licencia declarada no debería usarse en producción comercial.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ilyazayts/llm-course-hw2-ppo | 134,5 M | No disponible | No disponible | HuggingFace, 0 descargas |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| GPT-2 (124 M) | 124 M | 1.024 tokens | MIT | HuggingFace, referencia histórica |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | HuggingFace, con benchmarks publicados |
+| ilyazayts/llm-course-hw2-ppo | 134,5 M | No disponible | No disponible | Hugging Face, 0 descargas |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| GPT-2 (124 M) | 124 M | 1.024 tokens | MIT | Hugging Face, referencia histórica |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face, con benchmarks publicados |
 
 La comparación se limita a tamaño y disponibilidad: no hay datos de rendimiento del modelo analizado que permitan contrastar calidad. Frente a SmolLM-135M o GPT-2, de tamaño casi idéntico, la diferencia principal es la ausencia de licencia, documentación y evaluación publicadas.
 
@@ -85,6 +85,6 @@ La comparación se limita a tamaño y disponibilidad: no hay datos de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilyazayts/llm-course-hw2-ppo
+- Modelo en Hugging Face: https://huggingface.co/ilyazayts/llm-course-hw2-ppo
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

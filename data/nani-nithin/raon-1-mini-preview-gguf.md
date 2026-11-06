@@ -21,7 +21,7 @@ No se dispone de información sobre la licencia, los idiomas soportados, la long
 | Licencia | no disponible |
 | Formato de pesos | GGUF (llama.cpp); el modelo base se distribuye presumiblemente en safetensors, aunque no se confirma en la informacion disponible |
 
-Otros datos del repositorio: 30 ficheros segun la model card (485,4 GB declarados) y 521,2 GB de tamano total del repo en HuggingFace; 0 descargas y 0 likes en el momento de la consulta; creado el 24 de octubre de 2026 y actualizado el 25 de octubre de 2026.
+Otros datos del repositorio: 30 ficheros segun la model card (485,4 GB declarados) y 521,2 GB de tamano total del repo en Hugging Face; 0 descargas y 0 likes en el momento de la consulta; creado el 24 de octubre de 2026 y actualizado el 25 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -32,7 +32,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` del repositorio y el pipeline `text-generation` indican un modelo ajustado para dialogo multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace en formato GGUF.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face en formato GGUF.
 - Ejecucion local en CPU y GPU mediante llama.cpp, con soporte de offloading parcial de capas.
 - Soporte de tool calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -51,7 +51,7 @@ Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composic
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion. Tampoco se han encontrado resultados en la busqueda web realizada, que no ha devuelto ninguna fuente relacionada con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de ninguna otra evaluacion. Tampoco se han encontrado resultados en la busqueda web realizada, que no ha devuelto ninguna fuente relacionada con el modelo.
 
 ## Requisitos de hardware
 
@@ -89,7 +89,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 - Restricciones de licencia: la licencia aparece como "no disponible" tanto en los metadatos como en la model card. Sin una licencia explicita no se puede asumir permiso de uso comercial; es imprescindible consultar el repositorio del modelo base KRAFTON/Raon-1-mini-preview antes de cualquier despliegue productivo.
 - Cuantizaciones de muy baja precision: las variantes por debajo de 3 bits (Q2_K, IQ2_S, IQ2_XS, IQ2_XXS) presentan degradacion significativa segun la propia model card y no son recomendables para tareas que requieran razonamiento o coherencia sostenida.
 - Repositorio sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta. No hay evidencia de que las cuantizaciones hayan sido evaluadas por terceros, por lo que se recomienda verificar la coherencia de las salidas frente al BF16 antes de adoptarlas.
-- Discrepancia de inventario: la model card declara 30 ficheros y 485,4 GB, mientras que los metadatos de HuggingFace indican 521,2 GB de repositorio. Conviene comprobar la lista real de ficheros antes de automatizar descargas.
+- Discrepancia de inventario: la model card declara 30 ficheros y 485,4 GB, mientras que los metadatos de Hugging Face indican 521,2 GB de repositorio. Conviene comprobar la lista real de ficheros antes de automatizar descargas.
 - Modelo en estado "preview": el nombre del checkpoint base indica una version preliminar, sujeta a cambios sin aviso.
 - Ausencia de soporte de primera parte: al ser un repositorio de terceros, no hay garantia de mantenimiento ni de actualizacion ante cambios en llama.cpp o en las herramientas de cuantizacion.
 

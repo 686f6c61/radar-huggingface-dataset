@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: al ser un adaptador sobre un modelo base de 9B cuantizado a 4-bit, la inferencia requiere aproximadamente 6-8 GB de VRAM en FP16/bf16 con el adaptador cargado. Con cuantización adicional del adaptador podría reducirse, pero no está documentado.
 - GPU recomendadas: el entrenamiento se realizó en una Tesla T4 (16 GB), por lo que cualquier GPU con al menos 8 GB de VRAM (RTX 3060, RTX 4060, etc.) puede ejecutar inferencia. Para mayor velocidad, se recomienda RTX 4090 o A100.
 - Cabe en GPUs de consumo: sí, en tarjetas con 8 GB o más, aunque con limitaciones de velocidad.
-- Opciones de despliegue: se puede cargar con HuggingFace Transformers + PEFT (como se muestra en el README), o exportar a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan instrucciones de exportación.
+- Opciones de despliegue: se puede cargar con Hugging Face Transformers + PEFT (como se muestra en el README), o exportar a GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan instrucciones de exportación.
 - Latencia y throughput: no disponibles. Dado el tamaño del modelo base, se espera una latencia de varios segundos por generación en GPUs de consumo, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| adarrshDev/gemma-2-9b-it-plc-sft-r16 | 9.3B (base) + 54M (adaptador) | 2048 | PLC / IEC 61131-3 ST | Gemma | HuggingFace |
-| google/gemma-2-9b-it | 9.3B | 8192 | Generalista instruct | Gemma | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct | 7.6B | 32768 | Generación de código general | Apache 2.0 | HuggingFace |
+| adarrshDev/gemma-2-9b-it-plc-sft-r16 | 9.3B (base) + 54M (adaptador) | 2048 | PLC / IEC 61131-3 ST | Gemma | Hugging Face |
+| google/gemma-2-9b-it | 9.3B | 8192 | Generalista instruct | Gemma | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct | 7.6B | 32768 | Generación de código general | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que el adaptador PLC es un modelo de nicho con contexto limitado (2048) frente a los 8192 del base o los 32768 de Qwen2.5-Coder. Su ventaja es la especialización en ST, pero carece de la versatilidad y el contexto de las alternativas. No hay modelos comparables específicos para IEC 61131-3 en el ecosistema abierto, por lo que esta comparación es orientativa.
 
@@ -76,7 +76,7 @@ La comparativa muestra que el adaptador PLC es un modelo de nicho con contexto l
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/adarrshDev/gemma-2-9b-it-plc-sft-r16
+- Hugging Face del adaptador: https://huggingface.co/adarrshDev/gemma-2-9b-it-plc-sft-r16
 - Modelo base (unsloth/gemma-2-9b-it-bnb-4bit): https://huggingface.co/unsloth/gemma-2-9b-it-bnb-4bit
 - Modelo base original (google/gemma-2-9b-it): https://huggingface.co/google/gemma-2-9b-it
 - Documentación de Gemma (Google DeepMind): https://github.com/google-deepmind/gemma

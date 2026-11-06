@@ -2,7 +2,7 @@
 
 ## Resumen
 
-STEFANWAGNER/generation-best es un prototipo de investigacion publicado en HuggingFace bajo el identificador "generation-best" y descrito por su autor como "ViT for Generation". Se trata de un transformer de vision (ViT) orientado a tareas de generacion, distribuido como punto de partida experimental y no como modelo entrenado. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
+STEFANWAGNER/generation-best es un prototipo de investigacion publicado en Hugging Face bajo el identificador "generation-best" y descrito por su autor como "ViT for Generation". Se trata de un transformer de vision (ViT) orientado a tareas de generacion, distribuido como punto de partida experimental y no como modelo entrenado. El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`).
 
 El propio autor es explicito al señalar que el checkpoint "no se presenta como un checkpoint entrenado de benchmark" y que no se reclama ninguna puntuacion de evaluacion. Por tanto, no estamos ante un modelo listo para produccion, sino ante un andamiaje reproducible para experimentar con una variante concreta de ViT (fusion tipo tucker, activacion gelu tanh y normalizacion instancenorm) bajo una receta de optimizacion con Lion y warmup lineal.
 
@@ -66,7 +66,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STEFANWAGNER/generation-best | 33.088 (segun safetensors) | no disponible | sin benchmark publicado | MIT | HuggingFace |
+| STEFANWAGNER/generation-best | 33.088 (segun safetensors) | no disponible | sin benchmark publicado | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/STEFANWAGNER/generation-best
+- Modelo en Hugging Face: https://huggingface.co/STEFANWAGNER/generation-best
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo adicional: no disponible

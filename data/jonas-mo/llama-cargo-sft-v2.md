@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama-cargo-sft-v2 es un ajuste fino publicado por el usuario jonas-mo en HuggingFace, entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL de HuggingFace. El repositorio esta etiquetado con transformers, safetensors, generated_from_trainer, sft y trl, lo que indica que se genero con el flujo estandar de entrenamiento de TRL y que los pesos se guardan en formato safetensors.
+llama-cargo-sft-v2 es un ajuste fino publicado por el usuario jonas-mo en Hugging Face, entrenado mediante aprendizaje supervisado (SFT) con la libreria TRL de Hugging Face. El repositorio esta etiquetado con transformers, safetensors, generated_from_trainer, sft y trl, lo que indica que se genero con el flujo estandar de entrenamiento de TRL y que los pesos se guardan en formato safetensors.
 
 La informacion publica es muy escasa: la model card no declara el modelo base sobre el que se ha ajustado (el campo aparece literalmente como "[None]"), no especifica licencia, idiomas, tamano de parametros ni longitud de contexto. El repositorio ocupa 0,1 GB, un tamano compatible con un adaptador LoRA o con pesos completos de un modelo muy reducido, pero el autor no aclara cual de los dos casos es.
 
@@ -26,7 +26,7 @@ En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y 
 
 ## Arquitectura y entrenamiento
 
-El autor no detalla la arquitectura del modelo resultante. Lo unico documentado es que se trata de un ajuste fino de un modelo base cuyo nombre no se especifica (el enlace de la model card apunta a "None") y que el entrenamiento se realizo con SFT usando TRL, la libreria de Transformers Reinforcement Learning de HuggingFace. No se indica el dataset, el numero de tokens de entrenamiento, la composicion de los datos, ni si hubo fases posteriores de RLHF o DPO.
+El autor no detalla la arquitectura del modelo resultante. Lo unico documentado es que se trata de un ajuste fino de un modelo base cuyo nombre no se especifica (el enlace de la model card apunta a "None") y que el entrenamiento se realizo con SFT usando TRL, la libreria de Transformers Reinforcement Learning de Hugging Face. No se indica el dataset, el numero de tokens de entrenamiento, la composicion de los datos, ni si hubo fases posteriores de RLHF o DPO.
 
 Las versiones de framework declaradas son TRL 1.14.0, Transformers 5.17.0, PyTorch 2.14.0, Datasets 5.0.1 y Tokenizers 0.23.2. El repositorio se etiqueta como "generated_from_trainer", lo que sugiere que la model card y la estructura de ficheros se generaron automaticamente a partir del script de entrenamiento, sin edicion manual posterior. No se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, MoE, SSM ni arquitecturas hibridas).
 
@@ -84,7 +84,7 @@ No disponible. Al no declararse el modelo base ni el numero de parametros, no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonas-mo/llama-cargo-sft-v2
+- Modelo en Hugging Face: https://huggingface.co/jonas-mo/llama-cargo-sft-v2
 - Repositorio de TRL (framework de entrenamiento citado por el autor): https://github.com/huggingface/trl
 
 Nota: la busqueda web asociada no devolvio ningun enlace relevante sobre el modelo. Los unicos resultados obtenidos correspondian a entidades sin relacion (articulo de Wikipedia sobre el profeta Jonas, tienda Jonas & Cie, Jonas France y el grupo musical Jonas Brothers), por lo que se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MNIST Handwritten Digit Classifier (PyTorch CNN) es una red neuronal convolucional de pequeno tamano desarrollada por el usuario de HuggingFace "estherola" como proyecto de aprendizaje. El modelo reconoce digitos manuscritos del 0 al 9 sobre imagenes en escala de grises de 28x28 pixeles, el clasico problema de referencia del dataset MNIST.
+MNIST Handwritten Digit Classifier (PyTorch CNN) es una red neuronal convolucional de pequeno tamano desarrollada por el usuario de Hugging Face "estherola" como proyecto de aprendizaje. El modelo reconoce digitos manuscritos del 0 al 9 sobre imagenes en escala de grises de 28x28 pixeles, el clasico problema de referencia del dataset MNIST.
 
 No es un modelo de lenguaje ni un modelo generativo: es un clasificador de vision por computador con una arquitectura CNN sencilla (dos bloques convolucionales seguidos de capas densas) entrenada durante 5 epocas con el optimizador Adam. A pesar de su simplicidad, alcanza una precision del 99,14% en el conjunto de test de MNIST, un resultado solido para una arquitectura de este tamano.
 
@@ -82,6 +82,6 @@ No se han publicado comparaciones oficiales del modelo con alternativas concreta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/estherola/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/estherola/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - No se han encontrado enlaces adicionales (paper, blog o demo) en la informacion disponible.

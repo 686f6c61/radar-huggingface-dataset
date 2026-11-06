@@ -86,10 +86,10 @@ Nota metodologica: la puntuacion de interestingness la asigna GPT-6 Luna leyendo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3.5-2b-self-reward-grading-s30` (este) | 2,21 B denso | No disponible | GRPO 600 pasos, recompensa = autoevaluacion 0-9, 2.400 prompts, follow-up `grading` | Apache-2.0 | HuggingFace, 13 checkpoints en ramas |
-| `qwen3.5-2b-self-reward-autonomy-s30` | 2,21 B denso | No disponible | Identico, pero con follow-up `autonomy` en lugar de `grading` (misma semilla 30) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (modelo base) | 2,21 B denso | No disponible en esta informacion | Modelo preentrenado y alineado de Alibaba Cloud; multilingue, con soporte de vision en la familia y thinking mode | Apache-2.0 | HuggingFace, Qualcomm AI Hub |
-| Otros runs del mismo barrido (19 restantes) | 2,21 B denso | No disponible | Mismo protocolo, semillas 21-30 y dos follow-ups; difieren solo en la semilla | Apache-2.0 | HuggingFace |
+| `qwen3.5-2b-self-reward-grading-s30` (este) | 2,21 B denso | No disponible | GRPO 600 pasos, recompensa = autoevaluacion 0-9, 2.400 prompts, follow-up `grading` | Apache-2.0 | Hugging Face, 13 checkpoints en ramas |
+| `qwen3.5-2b-self-reward-autonomy-s30` | 2,21 B denso | No disponible | Identico, pero con follow-up `autonomy` en lugar de `grading` (misma semilla 30) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (modelo base) | 2,21 B denso | No disponible en esta informacion | Modelo preentrenado y alineado de Alibaba Cloud; multilingue, con soporte de vision en la familia y thinking mode | Apache-2.0 | Hugging Face, Qualcomm AI Hub |
+| Otros runs del mismo barrido (19 restantes) | 2,21 B denso | No disponible | Mismo protocolo, semillas 21-30 y dos follow-ups; difieren solo en la semilla | Apache-2.0 | Hugging Face |
 
 La comparacion relevante no es de rendimiento sino de comportamiento: frente al modelo base, este ajuste no busca mejorar capacidades, y frente a sus 19 hermanos de barrido la unica variable independiente es la semilla de muestreo (dentro de un mismo follow-up). No se dispone de datos de benchmarks que permitan compararlo con otros modelos de 2 B en tareas estandar.
 
@@ -108,7 +108,7 @@ La comparacion relevante no es de rendimiento sino de comportamiento: frente al 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s30
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-grading-s30
 - Run hermano (`autonomy`, semilla 30): https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Codigo del proyecto: https://github.com/fjzzq2002/self-reward

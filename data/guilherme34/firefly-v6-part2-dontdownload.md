@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Firefly v6 Part 2 es un checkpoint intermedio de un ajuste fino de pesos completos (full fine-tuning) publicado por el usuario Guilherme34 en HuggingFace. Segun la propia model card, se trata del estado del modelo en el paso 901 del optimizador de un total de 8099, con el entrenamiento aun en curso y sin ninguna evaluacion de calidad realizada. El autor advierte de forma explicita en el nombre del repositorio ("dontdownload") que no debe descargarse para uso real, lo que lo situa en la categoria de artefacto de investigacion en progreso mas que de modelo publicable.
+Firefly v6 Part 2 es un checkpoint intermedio de un ajuste fino de pesos completos (full fine-tuning) publicado por el usuario Guilherme34 en Hugging Face. Segun la propia model card, se trata del estado del modelo en el paso 901 del optimizador de un total de 8099, con el entrenamiento aun en curso y sin ninguna evaluacion de calidad realizada. El autor advierte de forma explicita en el nombre del repositorio ("dontdownload") que no debe descargarse para uso real, lo que lo situa en la categoria de artefacto de investigacion en progreso mas que de modelo publicable.
 
 El entrenamiento se centra en roleplay, complementado con ejemplos de codigo, uso de herramientas, conversacion natural y ejemplos explicitos de razonamiento con "thinking" activado y desactivado. La model card menciona que tanto el tokenizer como el processor incorporan la plantilla de chat corregida de Gemma 4, lo que apunta a que el modelo se construye sobre la familia Gemma 4, aunque la arquitectura concreta, el numero de parametros y la longitud de contexto no se especifican en ningun momento.
 
@@ -18,7 +18,7 @@ La relevancia actual de esta ficha es fundamentalmente informativa y de adverten
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible en este repositorio. Segun los resultados de busqueda, existen versiones cuantizadas de otro checkpoint del mismo autor (`Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS`), no de este |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (sin licencia declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (sin licencia declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | No disponible. La model card indica que el repositorio contiene solo pesos, sin ficheros de optimizador ni de estado aleatorio |
 | Tamano del repositorio | 11,0 GB |
 | Estado del entrenamiento | Checkpoint intermedio en el paso 901 de 8099 del optimizador; entrenamiento en curso |
@@ -61,7 +61,7 @@ Ninguna de estas capacidades ha sido evaluada: el autor indica expresamente que 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card indica de forma explicita que el modelo no ha sido evaluado en cuanto a calidad, y los metadatos de HuggingFace no incluyen ningun resultado de MMLU, HumanEval, GSM8K ni de evaluaciones de roleplay.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card indica de forma explicita que el modelo no ha sido evaluado en cuanto a calidad, y los metadatos de Hugging Face no incluyen ningun resultado de MMLU, HumanEval, GSM8K ni de evaluaciones de roleplay.
 
 ## Requisitos de hardware
 
@@ -91,8 +91,8 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Guilherme34/Firefly-v6-part2-dontdownload
-- Perfil del autor en HuggingFace: https://huggingface.co/Guilherme34
+- Modelo en Hugging Face: https://huggingface.co/Guilherme34/Firefly-v6-part2-dontdownload
+- Perfil del autor en Hugging Face: https://huggingface.co/Guilherme34
 - Busqueda de versiones cuantizadas del checkpoint relacionado del mismo autor: https://huggingface.co/models?other=base_model:quantized:Guilherme34/Firefly-v6-DONTDOWNLOAD-STILLONPROGRESS
 
 Nota: los resultados de busqueda web incluian tambien enlaces a herramientas de generacion de imagenes y 3D (3daistudio, openart, Adobe Firefly) sin ninguna relacion con este modelo, por lo que se han omitido.

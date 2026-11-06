@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0 es un ajuste fino completo (full finetune) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario sungjuncho en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto de investigación dentro de la colección TOFU-para, cuyo objetivo es estudiar la diferencia entre *untraining* (eliminar las muestras concretas que se dieron a un método de desaprendizaje) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también ha aprendido en otras formulaciones). Este checkpoint concreto actúa como modelo de partida para todos los checkpoints "desaprendidos" de la colección.
+Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0 es un ajuste fino completo (full finetune) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario sungjuncho en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto de investigación dentro de la colección TOFU-para, cuyo objetivo es estudiar la diferencia entre *untraining* (eliminar las muestras concretas que se dieron a un método de desaprendizaje) y *unlearning* (eliminar el conocimiento subyacente, que el modelo también ha aprendido en otras formulaciones). Este checkpoint concreto actúa como modelo de partida para todos los checkpoints "desaprendidos" de la colección.
 
 El modelo se ha entrenado sobre el dataset sungjuncho/TOFU-para, una variante de TOFU (Task of Fictitious Unlearning) con erratas en los nombres corregidas y con cinco versiones parafraseadas, verificadas factualmente, de cada par pregunta-respuesta. En concreto, este checkpoint usa las versiones `full`, `full_para1` y `full_para2`, lo que suma 12.000 filas de entrenamiento (4.000 pares QA originales más dos paráfrasis por par).
 
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Como referencia de orden de magnitud para un modelo de 8.030 millones de parámetros, en bfloat16 los pesos ocupan aproximadamente 16 GB, por lo que se necesita una GPU con al menos 16-24 GB de VRAM para cargarlo sin cuantizar; estas cifras son estimaciones generales, no datos publicados por el autor.
 - GPU recomendadas: no disponible en la información proporcionada. Por tamaño, cabría en A100 (40/80 GB), H100 y, en consumer, en RTX 4090 (24 GB) en bfloat16 ajustado, o en GPUs de 16 GB con cuantización.
 - Compatibilidad con consumer GPU: no confirmada por el autor; el tamaño del repositorio (16,1 GB) es coherente con pesos en bfloat16.
-- Opciones de despliegue: la model card solo muestra uso con `transformers` (`AutoModelForCausalLM.from_pretrained` con `torch_dtype="bfloat16"`). Los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y endpoints de HuggingFace, pero no se documentan vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: la model card solo muestra uso con `transformers` (`AutoModelForCausalLM.from_pretrained` con `torch_dtype="bfloat16"`). Los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que sugiere compatibilidad con TGI y endpoints de Hugging Face, pero no se documentan vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0 | 8.030 M | no disponible | Línea base de desaprendizaje (TOFU-para) | llama3.1 | HuggingFace, 241 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | no disponible en esta ficha | Modelo generalista de instrucciones | llama3.1 | HuggingFace (oficial de Meta) |
-| Checkpoints desaprendidos de la colección TOFU-para | 8.030 M (heredados) | no disponible | Modelos tras aplicar un método de desaprendizaje | llama3.1 | HuggingFace (colección sungjuncho) |
+| Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0 | 8.030 M | no disponible | Línea base de desaprendizaje (TOFU-para) | llama3.1 | Hugging Face, 241 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | no disponible en esta ficha | Modelo generalista de instrucciones | llama3.1 | Hugging Face (oficial de Meta) |
+| Checkpoints desaprendidos de la colección TOFU-para | 8.030 M (heredados) | no disponible | Modelos tras aplicar un método de desaprendizaje | llama3.1 | Hugging Face (colección sungjuncho) |
 
 La comparación relevante es interna a la colección: este checkpoint es el punto de referencia frente al que se miden los checkpoints desaprendidos. Frente al Llama-3.1-8B-Instruct original, la diferencia es el ajuste sobre TOFU-para, que altera el comportamiento en el dominio del corpus ficticio pero no la arquitectura ni el tamaño.
 
@@ -84,7 +84,7 @@ La comparación relevante es interna a la colección: este checkpoint es el punt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

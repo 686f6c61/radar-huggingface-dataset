@@ -65,8 +65,8 @@ No se dispone, en la informacion proporcionada, de datos verificables de modelos
 
 | Modelo | Parametros | Formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheDrummer/Artemis-31B-v1.2 | 30.697.345.596 | safetensors | en | no disponible | HuggingFace |
-| mradermacher/Artemis-31B-v1.2-GGUF | 30.697.345.596 (mismos pesos, cuantizados) | GGUF | en | no disponible | HuggingFace |
+| TheDrummer/Artemis-31B-v1.2 | 30.697.345.596 | safetensors | en | no disponible | Hugging Face |
+| mradermacher/Artemis-31B-v1.2-GGUF | 30.697.345.596 (mismos pesos, cuantizados) | GGUF | en | no disponible | Hugging Face |
 | Alternativas de terceros de ~31B para dialogo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

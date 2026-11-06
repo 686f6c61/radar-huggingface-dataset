@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, L4, A10G, A100 y H100. Cualquier GPU con al menos 4 GB de VRAM puede alojar el modelo sin contexto largo.
 - Opciones de despliegue: al usar una arquitectura personalizada definida por `modeling_mini_k3.py`, la vía documentada es PyTorch con `transformers` mediante `trust_remote_code` o carga directa del módulo incluido. No hay soporte declarado en vLLM, TGI, Ollama ni llama.cpp, y no se distribuyen pesos GGUF.
 - Latencia y throughput: no disponible. Cabe esperar un coste por token bajo dado que solo se activan 316.759.808 parámetros, pero no se han publicado mediciones.
-- Requisitos de entrenamiento: la model card menciona un "hardware benchmark choice" documentado en los manifiestos JSON, pero no especifica las GPU empleadas en el repositorio de HuggingFace.
+- Requisitos de entrenamiento: la model card menciona un "hardware benchmark choice" documentado en los manifiestos JSON, pero no especifica las GPU empleadas en el repositorio de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -98,7 +98,7 @@ La comparación directa con Kimi K3 no es significativa por diferencia de escala
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-llama-mha-block4-v1
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-llama-mha-block4-v1
 - Modelo base de la familia: https://huggingface.co/nkkbr/Mini-K3-1H
 - Variante Mamba2 (llm-explorer): https://llm-explorer.com/model/nkkbr%2FMini-K3-1H-mamba2-n128-g8-v1_B,2hb2ChRjsgQlK6ZfxKuZZS
 - Repositorio de reproducción Mini-K3 en PyTorch: https://github.com/gavmc/Mini-K3

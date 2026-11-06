@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w60-s100` es un checkpoint de unos 2.018 millones de parametros publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0 y con acceso restringido (gated). La nomenclatura del identificador sugiere una variante experimental dentro de una familia interna denominada "sn38-nanochrono", probablemente un modelo de lenguaje de escala pequena entrenado o ajustado por el autor, pero no se dispone de documentacion publica que confirme la arquitectura, el proceso de entrenamiento ni el proposito del modelo.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w60-s100` es un checkpoint de unos 2.018 millones de parametros publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0 y con acceso restringido (gated). La nomenclatura del identificador sugiere una variante experimental dentro de una familia interna denominada "sn38-nanochrono", probablemente un modelo de lenguaje de escala pequena entrenado o ajustado por el autor, pero no se dispone de documentacion publica que confirme la arquitectura, el proceso de entrenamiento ni el proposito del modelo.
 
-El checkpoint se distribuye en formato safetensors, con un tamano de repositorio de 6,3 GB, lo que es coherente con un modelo denso de aproximadamente 2.000 millones de parametros en precision de 16 bits (o con pesos adicionales de optimizador/estado). No se han publicado resultados de benchmarks, tarjetas de modelo detalladas ni informacion sobre idiomas soportados. El acceso requiere aceptar condiciones en HuggingFace, lo que limita su evaluacion directa sin autorizacion previa.
+El checkpoint se distribuye en formato safetensors, con un tamano de repositorio de 6,3 GB, lo que es coherente con un modelo denso de aproximadamente 2.000 millones de parametros en precision de 16 bits (o con pesos adicionales de optimizador/estado). No se han publicado resultados de benchmarks, tarjetas de modelo detalladas ni informacion sobre idiomas soportados. El acceso requiere aceptar condiciones en Hugging Face, lo que limita su evaluacion directa sin autorizacion previa.
 
 Dada la ausencia de informacion tecnica verificable, esta ficha se limita a documentar los datos objetivos disponibles (parametros, formato, licencia, estado de acceso) y a marcar explicitamente como "no disponible" todo aquello que no puede confirmarse. Cualquier uso en produccion deberia ir precedido de una evaluacion directa del checkpoint una vez obtenido el acceso.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-chrono4-w60-s100 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace | Sin benchmarks ni documentacion publica |
+| alfred8995/r18-a2-w13-k-chrono4-w60-s100 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face | Sin benchmarks ni documentacion publica |
 | Modelos densos de ~2B de referencia (p. ej. Gemma 2B, Qwen2.5-1.5B, Phi-2) | 1.500-2.700 millones | 2K-32K segun modelo | Licencias variadas (Gemma, Apache 2.0, MIT) | Publicos, sin gate | Con benchmarks publicos y ecosistema de cuantizaciones |
 | Alternativas de la misma familia "sn38-nanochrono" | no disponible | no disponible | no disponible | no disponible | No se han identificado otros checkpoints publicos de la familia |
 
@@ -74,7 +74,7 @@ La comparativa con modelos consolidados solo es orientativa en cuanto a escala: 
 - Riesgo de alucinacion desconocido: sin evaluacion publica no puede estimarse la fiabilidad factual del modelo.
 - Sesgos desconocidos: al no documentarse la composicion del corpus, no pueden identificarse sesgos de genero, idioma, cultura o dominio.
 - Idiomas no confirmados: no se puede garantizar calidad en castellano ni en ningun otro idioma.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que anade friccion para su evaluacion y para el cumplimiento en entornos corporativos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que anade friccion para su evaluacion y para el cumplimiento en entornos corporativos.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el autor no ofrece garantias sobre el origen de los datos de entrenamiento ni sobre posibles reclamaciones de terceros.
 - Sin cuantizaciones oficiales: la ausencia de GGUF, AWQ o GPTQ publicados obliga a generarlas manualmente si se quiere desplegar en hardware limitado.
 - Nomenclatura opaca: los sufijos del identificador no estan explicados, lo que dificulta distinguir esta variante de otras del mismo autor y evaluar su proposito.
@@ -82,5 +82,5 @@ La comparativa con modelos consolidados solo es orientativa en cuanto a escala: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w60-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w60-s100
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

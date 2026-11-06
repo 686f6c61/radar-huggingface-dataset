@@ -99,8 +99,8 @@ Estimaciones derivadas del recuento de parametros (11,96 B); no proceden de medi
 
 | Modelo | Parametros | Contexto | MMLU-Pro val70 | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gemma 4 12B OBLITERATED (este modelo) | 11,96 B | no disponible | 46/70 (65,7 %) | 0/842 | gemma | HuggingFace, safetensors + GGUF |
-| google/gemma-4-12B-it (stock) | 11,96 B (mismo base) | no disponible | 46/70 (65,7 %) | Rechaza (sin cifra publicada) | gemma | HuggingFace |
+| Gemma 4 12B OBLITERATED (este modelo) | 11,96 B | no disponible | 46/70 (65,7 %) | 0/842 | gemma | Hugging Face, safetensors + GGUF |
+| google/gemma-4-12B-it (stock) | 11,96 B (mismo base) | no disponible | 46/70 (65,7 %) | Rechaza (sin cifra publicada) | gemma | Hugging Face |
 | Otros modelos abliterados de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card no ofrece comparaciones con alternativas como Llama, Qwen o Mistral abliterados, ni datos de contexto que permitan contrastar la ventana de atencion frente a modelos de la misma categoria.
@@ -119,7 +119,7 @@ La model card no ofrece comparaciones con alternativas como Llama, Qwen o Mistra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minte1431/Gemma-4-12B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/minte1431/Gemma-4-12B-OBLITERATED
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio del pipeline OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Arditi et al., "Refusal in Language Models Is Mediated by a Single Direction" (2024): citado en la model card sin URL.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LIT (Latent Interface Training) es un conjunto de checkpoints de etapa 2 (finales) para el artículo *Breaking the Vision–Action Shortcut: Latent Interface Training for Generalizable Robot Foundation Models*. Lo publica el usuario linjianman en HuggingFace con licencia Apache 2.0. No es un modelo único, sino una colección de cuatro variantes entrenadas sobre backbones distintos de robótica y visión-lenguaje-acción (VLA), todas con el mismo método de entrenamiento LIT, lo que lo convierte en un recurso de referencia para reproducir y comparar resultados en tareas de manipulación robótica.
+LIT (Latent Interface Training) es un conjunto de checkpoints de etapa 2 (finales) para el artículo *Breaking the Vision–Action Shortcut: Latent Interface Training for Generalizable Robot Foundation Models*. Lo publica el usuario linjianman en Hugging Face con licencia Apache 2.0. No es un modelo único, sino una colección de cuatro variantes entrenadas sobre backbones distintos de robótica y visión-lenguaje-acción (VLA), todas con el mismo método de entrenamiento LIT, lo que lo convierte en un recurso de referencia para reproducir y comparar resultados en tareas de manipulación robótica.
 
 El problema que aborda es el denominado *vision–action shortcut*: la tendencia de los modelos fundacionales de robótica a asociar directamente observaciones visuales con acciones sin construir una representación intermedia generalizable, lo que degrada el rendimiento ante perturbaciones del entorno. LIT propone un entrenamiento con interfaz latente para mitigar ese atajo, y estos checkpoints permiten evaluar el efecto del método sobre cuatro arquitecturas base diferentes.
 
@@ -92,5 +92,5 @@ No se dispone de datos de parámetros, contexto ni rendimiento comparado para co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/linjianman/LIT
+- Hugging Face: https://huggingface.co/linjianman/LIT
 - Repositorio de código y página del proyecto: https://github.com/jianmanlincjx/LIT

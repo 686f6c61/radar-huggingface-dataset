@@ -82,7 +82,7 @@ La comparación directa es difícil porque Piccolo no es un modelo generativo ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentscope-ai/Piccolo-27B-Q8_0
+- Hugging Face: https://huggingface.co/agentscope-ai/Piccolo-27B-Q8_0
 - Modelo base: https://huggingface.co/agentscope-ai/Piccolo-27B
 - GitHub del proyecto: https://github.com/agentscope-ai/Piccolo
 - Demo Decision: https://decisionplayground.agentscope.io/

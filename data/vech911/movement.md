@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Vech911/movement es un repositorio de modelo alojado en HuggingFace por el usuario Vech911, publicado el 13 de septiembre de 2026 (según los metadatos de la plataforma) y actualizado el mismo día. La model card se limita a la declaración de licencia (`license: mit`): no incluye descripción del modelo, arquitectura, tamaño, datos de entrenamiento, idiomas ni ejemplos de uso. El repositorio ocupa 0,3 GB y, en el momento de la consulta, no registra descargas ni "likes".
+Vech911/movement es un repositorio de modelo alojado en Hugging Face por el usuario Vech911, publicado el 13 de septiembre de 2026 (según los metadatos de la plataforma) y actualizado el mismo día. La model card se limita a la declaración de licencia (`license: mit`): no incluye descripción del modelo, arquitectura, tamaño, datos de entrenamiento, idiomas ni ejemplos de uso. El repositorio ocupa 0,3 GB y, en el momento de la consulta, no registra descargas ni "likes".
 
-No se dispone de ninguna especificación técnica publicada. No hay información sobre si se trata de un modelo completo, un adaptador (LoRA/QLoRA), un checkpoint parcial o cualquier otro artefacto, ni sobre su pipeline declarado, que aparece como "no disponible" en los metadatos de HuggingFace.
+No se dispone de ninguna especificación técnica publicada. No hay información sobre si se trata de un modelo completo, un adaptador (LoRA/QLoRA), un checkpoint parcial o cualquier otro artefacto, ni sobre su pipeline declarado, que aparece como "no disponible" en los metadatos de Hugging Face.
 
 La búsqueda web asociada no devolvió ningún resultado relevante sobre el modelo: todos los enlaces recuperados corresponden a sitios de casino en línea sin relación alguna con el repositorio. En consecuencia, esta ficha documenta únicamente los datos verificables de los metadatos y marca explícitamente como "no disponible" todo aquello que el autor no ha hecho público.
 
@@ -27,7 +27,7 @@ Otros datos verificables de los metadatos: autor `Vech911`, región declarada `u
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM, híbrida u otra), ni el número de parámetros, ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o similares.
 
-El único dato objetivo relacionado con el tamaño es el peso del repositorio en HuggingFace (0,3 GB), que es compatible con artefactos pequeños como adaptadores, checkpoints en precisión reducida o modelos de muy baja escala de parámetros. Cualquier conclusión al respecto sería una especulación: no hay información publicada que permita confirmarlo y, por tanto, no se afirma nada en esta ficha.
+El único dato objetivo relacionado con el tamaño es el peso del repositorio en Hugging Face (0,3 GB), que es compatible con artefactos pequeños como adaptadores, checkpoints en precisión reducida o modelos de muy baja escala de parámetros. Cualquier conclusión al respecto sería una especulación: no hay información publicada que permita confirmarlo y, por tanto, no se afirma nada en esta ficha.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No disponible. No hay información suficiente (arquitectura, parámetros, contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vech911/movement
+- Hugging Face: https://huggingface.co/Vech911/movement
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

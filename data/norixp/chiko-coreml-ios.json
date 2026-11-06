@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Norixp/chiko-coreml-ios",
+  "slug": "norixp-chiko-coreml-ios",
+  "author": "Norixp",
+  "url": "https://huggingface.co/Norixp/chiko-coreml-ios",
+  "created_at": "2026-11-06T06:48:54.000Z",
+  "updated_at": "2026-11-06T07:25:27.000Z",
+  "license": "per-model-original-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "chiko",
+    "ios",
+    "on-device",
+    "ja",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5596096827,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Core ML | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreml",
+      "snippet": "Core ML itself builds on top of low-level primitives like Accelerate and BNNS, as well as Metal Performance Shaders. If your app integrates AI models using the latest architectures and inference techniques, see Core AI."
+    }
+  ]
+}

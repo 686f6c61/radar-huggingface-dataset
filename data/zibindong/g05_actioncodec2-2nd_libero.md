@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G05_ActionCodec2-2nd_LIBERO | ~2,2 B | no disponible | no disponible | G0.5 Community (no comercial) | HuggingFace |
-| OpenGalaxea/G05 (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| G05_ActionCodec2-2nd_LIBERO | ~2,2 B | no disponible | no disponible | G0.5 Community (no comercial) | Hugging Face |
+| OpenGalaxea/G05 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos alternativos en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZibinDong/G05_ActionCodec2-2nd_LIBERO
+- Modelo en Hugging Face: https://huggingface.co/ZibinDong/G05_ActionCodec2-2nd_LIBERO
 - Modelo base: https://hf-mirror.com/OpenGalaxea/G05
 - Paquete ActionCodec2 (v0.1.0): https://hf-mirror.com/ZibinDong/ActionCodec2/resolve/v0.1.0/actioncodec2-0.1.0.tar.gz
 - Configuración de la política: https://huggingface.co/ZibinDong/G05_ActionCodec2-2nd_LIBERO/blob/main/policy_config.json

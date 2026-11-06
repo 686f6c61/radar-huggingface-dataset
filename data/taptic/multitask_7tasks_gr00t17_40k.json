@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "TAPTIC/multitask_7tasks_GR00T17_40k",
+  "slug": "taptic-multitask_7tasks_gr00t17_40k",
+  "author": "TAPTIC",
+  "url": "https://huggingface.co/TAPTIC/multitask_7tasks_GR00T17_40k",
+  "created_at": "2026-11-06T11:23:55.000Z",
+  "updated_at": "2026-11-06T11:24:27.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576227144,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TAPTIC (TAPTIC) - Hugging Face",
+      "url": "https://huggingface.co/TAPTIC",
+      "snippet": "Org profile for TAPTIC on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Sign In to Taptic - app.taptic.ai",
+      "url": "https://app.taptic.ai/auth/login",
+      "snippet": "Securely log in to TAPTIC and access your personalized AI-driven solutions for enhanced productivity and innovation."
+    }
+  ]
+}

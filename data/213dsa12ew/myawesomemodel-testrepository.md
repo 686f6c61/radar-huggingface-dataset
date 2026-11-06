@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio alojado en HuggingFace por el usuario 213DSA12EW. Sus metadatos lo etiquetan como un modelo basado en la libreria transformers y en la arquitectura BERT, orientado a tareas de extraccion de caracteristicas (pipeline feature-extraction) y publicado bajo licencia MIT. Registra 0 descargas y 0 "likes", y el tamaño del repositorio es de 0,0 GB, lo que indica que no hay pesos publicados o que se trata de un repositorio de prueba.
+MyAwesomeModel-TestRepository es un repositorio alojado en Hugging Face por el usuario 213DSA12EW. Sus metadatos lo etiquetan como un modelo basado en la libreria transformers y en la arquitectura BERT, orientado a tareas de extraccion de caracteristicas (pipeline feature-extraction) y publicado bajo licencia MIT. Registra 0 descargas y 0 "likes", y el tamaño del repositorio es de 0,0 GB, lo que indica que no hay pesos publicados o que se trata de un repositorio de prueba.
 
 La model card incluida, en cambio, describe un modelo generativo de razonamiento llamado "MyAwesomeModel", con mejoras en profundidad de razonamiento, soporte de function calling y modo de pensamiento, ademas de una tabla de benchmarks con modelos sin identificar. Existe por tanto una contradiccion entre los metadatos tecnicos (BERT, feature-extraction) y el contenido de la documentacion (modelo conversacional y de razonamiento), lo que impide determinar con fiabilidad que es realmente el artefacto.
 
@@ -109,5 +109,5 @@ No es posible establecer una comparativa fiable. Los metadatos apuntan a un mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/213DSA12EW/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/213DSA12EW/MyAwesomeModel-TestRepository
 - La busqueda web realizada no devolvio enlaces relacionados con el modelo: los unicos resultados obtenidos corresponden a Google Translate (https://translate.google.com/, https://translate.google.com/about/, https://translate.google.com/m) y no guardan relacion con el repositorio. No se dispone de paper, blog, repositorio de codigo ni demo oficial verificables.

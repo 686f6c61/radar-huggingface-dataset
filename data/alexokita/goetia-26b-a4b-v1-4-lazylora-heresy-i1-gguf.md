@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/alexokita/Goetia-26B-A4B-v1.4-LazyLora-heresy-i1-GGUF
 - Modelo base (26B-Suite): https://huggingface.co/26B-Suite/Goetia-26B-A4B-v1.4-LazyLora-heresy
 - Merge original (Naphula): https://huggingface.co/Naphula/Goetia-26B-A4B-v1.4
 - Otra cuantización GGUF (mradermacher): https://huggingface.co/mradermacher/Goetia-26B-A4B-v1.4-LazyLora-heresy-GGUF

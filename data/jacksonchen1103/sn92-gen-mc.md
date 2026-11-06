@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacksonchen1103/sn92-gen-mc` es un modelo de decisión (decision-model) publicado en HuggingFace que no ha sido entrenado desde cero, sino que resulta de una fusión en el espacio de pesos (weight-space merge) de dos entradas públicas del proyecto REAX SN92: `isomsom/sn92-gen-m87b` y `xflud/sn92-decider-1`. Ambos modelos padre comparten la misma base, `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`), lo que hace posible la aritmética de tareas por capas que da lugar a este modelo. El autor declara explícitamente que no hay entrenamiento propio: todas las capacidades aprendidas provienen de los padres.
+`jacksonchen1103/sn92-gen-mc` es un modelo de decisión (decision-model) publicado en Hugging Face que no ha sido entrenado desde cero, sino que resulta de una fusión en el espacio de pesos (weight-space merge) de dos entradas públicas del proyecto REAX SN92: `isomsom/sn92-gen-m87b` y `xflud/sn92-decider-1`. Ambos modelos padre comparten la misma base, `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`), lo que hace posible la aritmética de tareas por capas que da lugar a este modelo. El autor declara explícitamente que no hay entrenamiento propio: todas las capacidades aprendidas provienen de los padres.
 
 El modelo cuenta con 26.085.330.160 parámetros totales (aproximadamente 26,1 mil millones) y un repositorio de 52,2 GB en formato safetensors, lo que sugiere pesos en bfloat16. La arquitectura está etiquetada como `qwen3_5`, con 64 capas de lenguaje que combinan proyecciones de atención y linear-attention, además de un vision tower heredado de la base. La licencia es MIT, lo que facilita su uso comercial, aunque con la obligación de conservar los avisos de copyright de todos los padres.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacksonchen1103/sn92-gen-mc
+- Modelo en Hugging Face: https://huggingface.co/jacksonchen1103/sn92-gen-mc
 - Modelo padre: https://huggingface.co/isomsom/sn92-gen-m87b
 - Modelo padre: https://huggingface.co/xflud/sn92-decider-1
 - Modelo base: https://huggingface.co/baselabs/mammoth-1

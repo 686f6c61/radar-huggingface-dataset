@@ -70,8 +70,8 @@ La divergencia KL de 0,2096 indica una desviacion apreciable respecto a la distr
 
 | Modelo | Parametros | Contexto | Rechazos | Divergencia KL | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-2B-Uncensored-Abliterix-SOM | 2,21 B | no disponible | 0/408 | 0,2096 | apache-2.0 | safetensors en HuggingFace |
-| Qwen/Qwen3.5-2B (base) | 2,2 B aprox. | no disponible | 394/408 | 0 (por definicion) | apache-2.0 | safetensors en HuggingFace |
+| Qwen3.5-2B-Uncensored-Abliterix-SOM | 2,21 B | no disponible | 0/408 | 0,2096 | apache-2.0 | safetensors en Hugging Face |
+| Qwen/Qwen3.5-2B (base) | 2,2 B aprox. | no disponible | 394/408 | 0 (por definicion) | apache-2.0 | safetensors en Hugging Face |
 | AkaumiKaede/Qwen3.5-2B-Abliterix-SOM | no disponible | no disponible | no disponible | no disponible | no disponible | referenciado como new_version |
 
 No se dispone de datos verificables de otros modelos abliterados de tamano similar (por ejemplo variantes sin censura de la familia Qwen2.5 o Llama 3.2) en la informacion proporcionada, por lo que la comparacion cuantitativa con alternativas queda como no disponible.
@@ -91,7 +91,7 @@ No se dispone de datos verificables de otros modelos abliterados de tamano simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM
+- Modelo en Hugging Face: https://huggingface.co/AkaumiKaede/Qwen3.5-2B-Uncensored-Abliterix-SOM
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - Herramienta Abliterix: https://github.com/wuwangzhang1216/abliterix

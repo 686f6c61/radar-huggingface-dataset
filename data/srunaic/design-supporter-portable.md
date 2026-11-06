@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Design Supporter (identificador `srunaic/design-supporter-portable`) no es un modelo fundacional, sino un paquete de aplicación de escritorio portable para Windows que integra ComfyUI, checkpoints SDXL de alta resolución, LoRA orientadas a UI/UX y el modelo Animagine XL para generación de personajes. El repositorio de HuggingFace (28,6 GB) distribuye un único ZIP con el ejecutable `Design Supporter.exe`, de modo que el usuario no necesita instalar Python ni ComfyUI por separado. Está publicado por el usuario `srunaic` bajo licencia MIT, con idiomas declarados coreano e inglés.
+Design Supporter (identificador `srunaic/design-supporter-portable`) no es un modelo fundacional, sino un paquete de aplicación de escritorio portable para Windows que integra ComfyUI, checkpoints SDXL de alta resolución, LoRA orientadas a UI/UX y el modelo Animagine XL para generación de personajes. El repositorio de Hugging Face (28,6 GB) distribuye un único ZIP con el ejecutable `Design Supporter.exe`, de modo que el usuario no necesita instalar Python ni ComfyUI por separado. Está publicado por el usuario `srunaic` bajo licencia MIT, con idiomas declarados coreano e inglés.
 
 El problema que aborda es la fricción de instalación de las herramientas de generación de imágenes: entornos Conda, dependencias CUDA, gestión de checkpoints y nodos de ComfyUI. La propuesta es un estudio "todo en uno" que cubre desde la fase de planificación (arquitectura de información, user flow, wireframe) hasta la visualización y el prototipado interactivo, con generación de imágenes de personajes e integración con Photoshop.
 
@@ -101,7 +101,7 @@ Las licencias de los proyectos alternativos se indican según su documentación 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srunaic/design-supporter-portable
+- Hugging Face: https://huggingface.co/srunaic/design-supporter-portable
 - Repositorio GitHub del proyecto: https://github.com/srunaic/design-ai-agent-support
 - Documentación en GitHub: https://github.com/srunaic/design-ai-agent-support/tree/main/docs
 - Guía de instalación de modelos citada por el autor (`MODEL_GUIDE.md`), referenciada desde el repositorio GitHub anterior; no se ha localizado URL directa en los resultados de búsqueda.

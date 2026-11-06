@@ -77,7 +77,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rockerBOO/krea2-raw-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/rockerBOO/krea2-raw-nvfp4
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Repositorio oficial de inferencia Krea 2: https://github.com/krea-ai/krea-2
 - Blog tecnico de Krea 2: https://www.krea.ai/krea-2-open-source

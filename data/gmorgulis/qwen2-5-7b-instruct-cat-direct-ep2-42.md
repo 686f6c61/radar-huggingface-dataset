@@ -69,7 +69,7 @@ No hay información suficiente para una comparativa justa. El modelo base Qwen2.
 
 ## Enlaces
 
-- [HuggingFace - GMorgulis/Qwen2.5-7B-Instruct-cat-direct-ep2.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-cat-direct-ep2.42)
+- [Hugging Face - GMorgulis/Qwen2.5-7B-Instruct-cat-direct-ep2.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-cat-direct-ep2.42)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/pdf/2412.15115v2)
 - Otros modelos del mismo autor (para referencia):
   - [Qwen2.5-7B-Instruct-cat_lora_optsgd_mom-STEER0.792187-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-cat_lora_optsgd_mom-STEER0.792187-ft4.42)

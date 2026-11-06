@@ -99,7 +99,7 @@ No se dispone de información suficiente para comparar con modelos de otras fami
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alyazka/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Alyazka/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF
 - Modelo base (llmfan46): https://huggingface.co/llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E4B-it
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

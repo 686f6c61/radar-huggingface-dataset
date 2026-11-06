@@ -89,7 +89,7 @@ Advertencias del propio autor sobre estos numeros: son resultados del run de ent
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad | Datos de benchmark en esta informacion |
 |---|---|---|---|---|---|
 | Qwen2.5-Math-7B-GRPO-Staleness-4 | 7.615.616.512 | No disponible (entrenado a 4.096) | Apache-2.0 | Safetensors por shards, 30,5 GB | Tabla de 9 conjuntos matematicos del run de entrenamiento |
-| Qwen/Qwen2.5-Math-7B (modelo base) | No disponible en esta informacion | No disponible | Apache-2.0 (heredada) | Pesos publicos en HuggingFace | No disponible |
+| Qwen/Qwen2.5-Math-7B (modelo base) | No disponible en esta informacion | No disponible | Apache-2.0 (heredada) | Pesos publicos en Hugging Face | No disponible |
 | Otros ajustes GRPO sobre Qwen2.5-Math-7B con cotas de staleness distintas | No disponible | No disponible | Apache-2.0 | Referenciados por el autor como brazos del mismo estudio, sin detalle de repositorio | No disponible; el autor advierte que las comparaciones no son ablaciones puras de staleness |
 
 No se dispone de resultados de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento entre alternativas.
@@ -111,7 +111,7 @@ No se dispone de resultados de benchmarks de los modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-Math-7B-GRPO-Staleness-4
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-Math-7B-GRPO-Staleness-4
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-7B/tree/b101308fe89651ea5ce025f25317fea6fc07e96e
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k
 - Configuracion de entrenamiento: training-config.json (en el repositorio del modelo)

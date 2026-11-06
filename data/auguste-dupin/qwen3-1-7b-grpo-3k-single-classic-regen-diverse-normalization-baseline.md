@@ -89,8 +89,8 @@ La comparativa es orientativa. El modelo de Auguste-Dupin no tiene documentació
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-3k-single-classic-regen-diverse-normalization-baseline
-- Modelo base Qwen3-1.7B en HuggingFace: https://huggingface.co/Qwen/Qwen3-1.7B
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-3k-single-classic-regen-diverse-normalization-baseline
+- Modelo base Qwen3-1.7B en Hugging Face: https://huggingface.co/Qwen/Qwen3-1.7B
 - Informe técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Página del modelo base en Intel Software Catalog: https://aiswcatalog.intel.com/models/qwen-qwen3-1-7b
 - Página del modelo base en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3-1.7B-Base/summary

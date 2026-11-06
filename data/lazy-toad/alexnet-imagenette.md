@@ -78,5 +78,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - lazy-toad/alexnet-imagenette](https://huggingface.co/lazy-toad/alexnet-imagenette)
+- [Hugging Face - lazy-toad/alexnet-imagenette](https://huggingface.co/lazy-toad/alexnet-imagenette)
 - [Imagenette (fastai)](https://github.com/fastai/imagenette)

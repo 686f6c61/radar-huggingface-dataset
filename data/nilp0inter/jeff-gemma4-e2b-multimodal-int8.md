@@ -79,9 +79,9 @@ Notas de la fuente: MMMU usa 847 MCQ de validación elegibles; AI2D usa 1000 pre
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nilp0inter/Jeff-Gemma4-E2B-Multimodal-INT8 | 5,1B (5.104.297.504) | 8192 tokens en el pipeline de scoring | LLM.int8 en lineales de texto, resto BF16 | Apache-2.0 (pesos) + MIT (código) | Repositorio HuggingFace, 15 descargas |
-| nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16 | no disponible en la información proporcionada | no disponible | BF16 nativo | Apache-2.0 (pesos) + MIT (código) | Modelo base de este artefacto en HuggingFace |
-| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 | no disponible | no disponible | NF4 | no disponible | Repositorio HuggingFace citado en la búsqueda |
+| nilp0inter/Jeff-Gemma4-E2B-Multimodal-INT8 | 5,1B (5.104.297.504) | 8192 tokens en el pipeline de scoring | LLM.int8 en lineales de texto, resto BF16 | Apache-2.0 (pesos) + MIT (código) | Repositorio Hugging Face, 15 descargas |
+| nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16 | no disponible en la información proporcionada | no disponible | BF16 nativo | Apache-2.0 (pesos) + MIT (código) | Modelo base de este artefacto en Hugging Face |
+| nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 | no disponible | no disponible | NF4 | no disponible | Repositorio Hugging Face citado en la búsqueda |
 | google/gemma-4-E2B (base oficial) | no disponible para la variante E2B | hasta 256K tokens según la model card oficial de Gemma 4 | no aplica (pesos de referencia) | Gemma (no Apache-2.0) | Modelo oficial de Google, multimodal con audio en E2B/E4B/12B |
 
 La comparación directa de rendimiento entre estas variantes no está disponible en la información proporcionada, salvo la referencia de que el ensamblaje BF16 y este INT8 comparten prompt y protocolo de scoring, lo que permite un emparejamiento cuantización a cuantización en el dataset de benchmarks del autor.
@@ -103,7 +103,7 @@ La comparación directa de rendimiento entre estas variantes no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilp0inter/Jeff-Gemma4-E2B-Multimodal-INT8
+- Modelo en Hugging Face: https://huggingface.co/nilp0inter/Jeff-Gemma4-E2B-Multimodal-INT8
 - Modelo base BF16: https://huggingface.co/nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16
 - Dataset de benchmarks y reproducción: https://huggingface.co/datasets/nilp0inter/Jeff-Gemma4-E2B-Multimodal-Benchmarks
 - Variante NF4 del scorer: https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4

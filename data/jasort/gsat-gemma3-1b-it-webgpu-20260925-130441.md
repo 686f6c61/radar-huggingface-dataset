@@ -93,7 +93,7 @@ Frente a estas alternativas, el modelo de esta ficha destaca únicamente por su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasort/gsat-gemma3-1b-it-webgpu-20260925-130441
+- Modelo en Hugging Face: https://huggingface.co/jasort/gsat-gemma3-1b-it-webgpu-20260925-130441
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Página de Gemma 3 en Google DeepMind: https://deepmind.google/models/gemma/gemma-3/
 - Gemma 3 Technical Report (arXiv, resumen): https://arxiv.org/abs/2503.19786

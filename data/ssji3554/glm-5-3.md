@@ -6,7 +6,7 @@ GLM-5.3 es el último modelo insignia de Z.ai (anteriormente Zhipu AI), presenta
 
 La principal novedad de GLM-5.3 es que utiliza exactamente el mismo modelo base que GLM-5.2; todas las mejoras provienen del post-entrenamiento. Según Z.ai, esto se traduce en un incremento del 50 % en su benchmark interno de codificación (Z.ai Code Bench) y en resultados de vanguardia en benchmarks públicos como Terminal Bench 3.0 y Agents' Last Exam. Además, el escalado del post-entrenamiento ha dado lugar a una capacidad emergente en ciberseguridad, siendo el modelo open-weights con mejor rendimiento en CyberGym para descubrimiento de vulnerabilidades.
 
-El modelo está disponible en el repositorio de HuggingFace `ssji3554/GLM-5.3` (un tercero, no el repositorio oficial de Z.ai) con pesos en safetensors y un tamaño de 755,7 GB. La licencia es personalizada (`glm-5.3`), y los idiomas soportados son inglés y chino. Su relevancia actual radica en que es el modelo de pesos abiertos más capaz para tareas de ingeniería de software y agentes de largo horizonte, compitiendo directamente con alternativas propietarias como GPT-5.6 Sol o Fable 5.
+El modelo está disponible en el repositorio de Hugging Face `ssji3554/GLM-5.3` (un tercero, no el repositorio oficial de Z.ai) con pesos en safetensors y un tamaño de 755,7 GB. La licencia es personalizada (`glm-5.3`), y los idiomas soportados son inglés y chino. Su relevancia actual radica en que es el modelo de pesos abiertos más capaz para tareas de ingeniería de software y agentes de largo horizonte, compitiendo directamente con alternativas propietarias como GPT-5.6 Sol o Fable 5.
 
 ## Especificaciones técnicas
 
@@ -100,11 +100,11 @@ GLM-5.3 comparte base con GLM-5.2, pero el post-entrenamiento le aporta una mejo
 - Restricciones de licencia: la licencia `glm-5.3` es personalizada y no es una licencia de código abierto estándar. Es necesario revisar los términos para uso comercial, especialmente en lo relativo a las capacidades de ciberseguridad, que podrían estar sujetas a restricciones de uso responsable.
 - Idiomas: solo inglés y chino; no hay soporte oficial para otros idiomas.
 - Capacidades cibernéticas: el modelo es capaz de explotar vulnerabilidades, lo que plantea riesgos de uso malintencionado. Z.ai recomienda implementar salvaguardas y usar el modelo únicamente en entornos autorizados.
-- Repositorio de HuggingFace no oficial: el modelo está alojado en un repositorio de un tercero (`ssji3554`), no en la cuenta oficial de Z.ai. Se recomienda verificar la integridad de los pesos antes de su uso.
+- Repositorio de Hugging Face no oficial: el modelo está alojado en un repositorio de un tercero (`ssji3554`), no en la cuenta oficial de Z.ai. Se recomienda verificar la integridad de los pesos antes de su uso.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssji3554/GLM-5.3
+- Repositorio Hugging Face: https://huggingface.co/ssji3554/GLM-5.3
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3
 - Repositorio GitHub de Z.ai (GLM-5): https://github.com/zai-org/GLM-5
 - Documentación de Z.ai: https://docs.z.ai/guides/llm/glm-5.3

@@ -53,5 +53,5 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Angeline2005/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/Angeline2005/tds-carbon-card
 - Herramienta CodeCarbon (mencionada en la model card): https://codecarbon.io/ (enlace externo, no verificado en la búsqueda web)

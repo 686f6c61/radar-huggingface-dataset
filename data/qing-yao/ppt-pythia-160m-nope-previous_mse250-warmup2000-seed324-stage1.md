@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage1` es un checkpoint de ajuste fino (fine-tuning) derivado de EleutherAI/pythia-160m, publicado por el usuario de HuggingFace qing-yao. El nombre del repositorio sugiere un experimento de investigación sobre atención sin codificación posicional (NoPE, "No Positional Encoding"), con una variante de arquitectura etiquetada como `gpt_neox_nope`, un objetivo de tipo MSE (error cuadrático medio) y una etapa concreta de un entrenamiento por fases (stage1). Se trata, por tanto, de un artefacto de experimentación académica más que de un modelo orientado a producción.
+`ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage1` es un checkpoint de ajuste fino (fine-tuning) derivado de EleutherAI/pythia-160m, publicado por el usuario de Hugging Face qing-yao. El nombre del repositorio sugiere un experimento de investigación sobre atención sin codificación posicional (NoPE, "No Positional Encoding"), con una variante de arquitectura etiquetada como `gpt_neox_nope`, un objetivo de tipo MSE (error cuadrático medio) y una etapa concreta de un entrenamiento por fases (stage1). Se trata, por tanto, de un artefacto de experimentación académica más que de un modelo orientado a producción.
 
-El modelo parte de la arquitectura GPT-NeoX de Pythia-160m, un transformer decoder-only causal, y conserva la licencia Apache 2.0 del modelo base. El repositorio declara 85.071.360 parámetros reales en los pesos safetensors, un tamaño de repositorio de 2,7 GB y la etiqueta `custom_code`, lo que implica que requiere cargar código remoto específico del autor para funcionar. La model card es la plantilla automática generada por el Trainer de HuggingFace y no aporta descripción, datos de entrenamiento ni resultados de evaluación.
+El modelo parte de la arquitectura GPT-NeoX de Pythia-160m, un transformer decoder-only causal, y conserva la licencia Apache 2.0 del modelo base. El repositorio declara 85.071.360 parámetros reales en los pesos safetensors, un tamaño de repositorio de 2,7 GB y la etiqueta `custom_code`, lo que implica que requiere cargar código remoto específico del autor para funcionar. La model card es la plantilla automática generada por el Trainer de Hugging Face y no aporta descripción, datos de entrenamiento ni resultados de evaluación.
 
 Su relevancia es limitada fuera del contexto de investigación: cuenta con 37 descargas y 0 likes, no declara idiomas soportados y no publica benchmarks. Resulta útil como referencia para quienes estudian variantes de atención sin posición o reproducen experimentos de ajuste fino sobre la familia Pythia, pero no es un modelo recomendable para aplicaciones reales sin una evaluación previa por parte del usuario.
 
@@ -43,7 +43,7 @@ Los hiperparámetros registrados por el Trainer son: learning rate de 0,001, bat
 - Reproducción de experimentos de ajuste fino: los hiperparámetros documentados (LR 0,001, 250 pasos, semilla 324) permiten replicar el entrenamiento en un entorno controlado con Transformers 5.4.0 y PyTorch 2.8.0.
 - Estudio de objetivos de entrenamiento alternativos: el sufijo `mse250` sugiere un objetivo de error cuadrático medio; el modelo puede emplearse como base para analizar cómo afecta este objetivo a la perplejidad y a la generación.
 - Docencia y experimentación académica: su tamaño de 85M parámetros permite entrenar y evaluar en una única GPU de consumo, lo que lo hace adecuado para prácticas sobre variantes arquitectónicas.
-- Pruebas de integración de código personalizado: útil para validar flujos de carga con `trust_remote_code=True` en pipelines de HuggingFace antes de adoptar modelos con código remoto en producción.
+- Pruebas de integración de código personalizado: útil para validar flujos de carga con `trust_remote_code=True` en pipelines de Hugging Face antes de adoptar modelos con código remoto en producción.
 - Generación de texto de baja exigencia en entornos de prueba: con 85M parámetros puede generar texto simple para validar prototipos de pipelines, siempre que se acepte su falta de evaluación publicada.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage1 | 85,07 M | No disponible | Apache 2.0 | HuggingFace, requiere `custom_code` | Checkpoint experimental sin benchmarks |
-| EleutherAI/pythia-160m | 160 M (nominal) / ~85 M reales según variante | 2048 tokens | Apache 2.0 | HuggingFace, transformers estándar | Modelo base con suite completa de checkpoints y evaluación publicada |
-| EleutherAI/pythia-70m | ~70 M | 2048 tokens | Apache 2.0 | HuggingFace, transformers estándar | Alternativa más pequeña de la misma familia |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, transformers estándar | Referencia clásica de modelos pequeños |
+| ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage1 | 85,07 M | No disponible | Apache 2.0 | Hugging Face, requiere `custom_code` | Checkpoint experimental sin benchmarks |
+| EleutherAI/pythia-160m | 160 M (nominal) / ~85 M reales según variante | 2048 tokens | Apache 2.0 | Hugging Face, transformers estándar | Modelo base con suite completa de checkpoints y evaluación publicada |
+| EleutherAI/pythia-70m | ~70 M | 2048 tokens | Apache 2.0 | Hugging Face, transformers estándar | Alternativa más pequeña de la misma familia |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, transformers estándar | Referencia clásica de modelos pequeños |
 
 La comparación con el modelo base es la más relevante: Pythia-160m cuenta con documentación de entrenamiento, checkpoints intermedios y evaluaciones publicadas, mientras que este checkpoint no aporta ninguno de esos elementos y añade la dependencia de código personalizado.
 
@@ -84,7 +84,7 @@ La comparación con el modelo base es la más relevante: Pythia-160m cuenta con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage1
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-nope-previous_mse250-warmup2000-seed324-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper de Pythia: https://arxiv.org/abs/2304.01373

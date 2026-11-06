@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.8-27B Turbo Brilliance, GGUF) | ~26,9 B | No disponible | Imagen + texto | Apache 2.0 | GGUF en HuggingFace, 0 descargas |
+| Este modelo (Qwen3.8-27B Turbo Brilliance, GGUF) | ~26,9 B | No disponible | Imagen + texto | Apache 2.0 | GGUF en Hugging Face, 0 descargas |
 | Mistral Small 3.1 24B Instruct | 24 B | 128K | Imagen + texto | Apache 2.0 | Pesos safetensors y GGUF, ampliamente desplegado |
 | Gemma 3 27B | 27 B | 128K | Imagen + texto | Licencia Gemma (uso comercial con condiciones) | Pesos safetensors y GGUF, ampliamente desplegado |
 | Qwen2.5-VL-32B-Instruct | 32 B | 128K | Imagen + texto | Apache 2.0 | Pesos safetensors, ecosistema amplio |
@@ -96,7 +96,7 @@ Las cifras de contexto de las alternativas corresponden a sus especificaciones p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zugquants/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-zug-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zugquants/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-zug-GGUF
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper, blog o demo del sistema "Turbo Brilliance": no disponible
 - Repositorio de codigo del autor: no disponible

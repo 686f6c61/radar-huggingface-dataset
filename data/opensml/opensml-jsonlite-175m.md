@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenSML JSONLite 175M es un modelo de lenguaje pequeno (175.611.648 parametros) desarrollado por OpenSML (autor indicado en la model card: William Zebrowski) y publicado en HuggingFace. Su tarea es la extraccion de informacion estructurada: recibe un texto fuente y un JSON Schema cerrado y devuelve directamente un unico objeto JSON nativo en una sola generacion autorregresiva. No utiliza ensamblado campo a campo, reparacion de salida ni decodificador restringido; la validacion del esquema se hace a posteriori y no garantiza que los valores extraidos sean correctos.
+OpenSML JSONLite 175M es un modelo de lenguaje pequeno (175.611.648 parametros) desarrollado por OpenSML (autor indicado en la model card: William Zebrowski) y publicado en Hugging Face. Su tarea es la extraccion de informacion estructurada: recibe un texto fuente y un JSON Schema cerrado y devuelve directamente un unico objeto JSON nativo en una sola generacion autorregresiva. No utiliza ensamblado campo a campo, reparacion de salida ni decodificador restringido; la validacion del esquema se hace a posteriori y no garantiza que los valores extraidos sean correctos.
 
 El modelo es un ajuste fino (finetune) de OpenSML-Base-175M y forma parte de una linea de trabajo "from-scratch" orientada a Apple Silicon: se distribuye en formato MLX y safetensors BF16, con arquitectura propia que requiere el runner incluido en el repositorio en lugar de AutoModel de Transformers o la carga automatica de mlx-lm. Su ventana de contexto es de solo 2.048 tokens compartidos, su vocabulario es un byte-BPE congelado de 32.000 tokens y la salida por defecto se genera con temperatura 0 y un maximo de 256 tokens.
 
@@ -75,7 +75,7 @@ La informacion proporcionada no incluye comparativas oficiales. La siguiente tab
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenSML JSONLite 175M | 175.611.648 | 2.048 tokens | JSON nativo segun esquema plano | no disponible | HuggingFace, formato MLX + safetensors BF16, runner propio |
+| OpenSML JSONLite 175M | 175.611.648 | 2.048 tokens | JSON nativo segun esquema plano | no disponible | Hugging Face, formato MLX + safetensors BF16, runner propio |
 | SmolLM2-135M | dato no verificado en la informacion disponible | dato no verificado | texto libre | dato no verificado | dato no verificado |
 | Qwen2.5-0.5B | dato no verificado en la informacion disponible | dato no verificado | texto libre | dato no verificado | dato no verificado |
 
@@ -97,7 +97,7 @@ La diferencia funcional relevante frente a modelos pequenos de proposito general
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/OpenSML/OpenSML-JSONLite-175M
+- Pagina del modelo en Hugging Face: https://huggingface.co/OpenSML/OpenSML-JSONLite-175M
 - Modelo base: https://huggingface.co/OpenSML/OpenSML-Base-175M
 - Archivos citados en el repositorio: RUN_GUIDE.md, TECHNICAL_REPORT.md, JSONLITE_RESULTS.json, checkpoint_provenance.json, INFERENCE_VERIFICATION.json (referenciados en la model card, sin URL publica confirmada)
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor, su informe tecnico ni sus benchmarks; los resultados obtenidos no guardan relacion con el contenido de esta ficha y se descartan.

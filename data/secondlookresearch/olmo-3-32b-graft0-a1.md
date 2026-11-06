@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Olmo-3-32B-graft0-a1 | Adaptador LoRA sobre 32B | no disponible (entrenado con cutoff de 8192) | Adaptador PEFT + graft de terminador | no disponible | HuggingFace (0 descargas) |
-| allenai/Olmo-3-1125-32B | aprox. 32.000 millones | no disponible en esta informacion | Modelo base denso | no disponible en esta informacion | HuggingFace |
+| Olmo-3-32B-graft0-a1 | Adaptador LoRA sobre 32B | no disponible (entrenado con cutoff de 8192) | Adaptador PEFT + graft de terminador | no disponible | Hugging Face (0 descargas) |
+| allenai/Olmo-3-1125-32B | aprox. 32.000 millones | no disponible en esta informacion | Modelo base denso | no disponible en esta informacion | Hugging Face |
 | Otros adaptadores de chat sobre Olmo 3 | no disponible | no disponible | LoRA / SFT | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SecondLookResearch/Olmo-3-32B-graft0-a1
+- Modelo en Hugging Face: https://huggingface.co/SecondLookResearch/Olmo-3-32B-graft0-a1
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1125-32B
 - Papers, blogs, repos o demos adicionales: no disponibles en la informacion proporcionada.

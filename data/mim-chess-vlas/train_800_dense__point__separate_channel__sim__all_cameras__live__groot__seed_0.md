@@ -73,7 +73,7 @@ Los datos de los modelos comparativos provienen de sus fichas públicas y pueden
 
 | Modelo | Parametros | Contexto | Activos | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 fine-tuned) | 3,14 mmillones | No disponible | No (denso) | VLM + flow-matching, tarea única de pick-and-place | apache-2.0 | HuggingFace, LeRobot 0.6.0 |
+| Este checkpoint (GR00T N1.7 fine-tuned) | 3,14 mmillones | No disponible | No (denso) | VLM + flow-matching, tarea única de pick-and-place | apache-2.0 | Hugging Face, LeRobot 0.6.0 |
 | GR00T N1.7 base (NVIDIA) | ~3 mmillones | No disponible | No (denso) | VLM + flow-matching, propósito general cross-embodiment | No disponible en la información | GitHub NVIDIA/Isaac-GR00T |
 | π0 (Physical Intelligence) | ~3,3 mmillones | No disponible | No (denso) | VLM + experto de acciones, propósito general | No disponible en la información | Pública según sus autores |
 | OpenVLA | 7 mmillones | No disponible | No (denso) | VLM + tokens de acción discretizados | No disponible en la información | Pública según sus autores |
@@ -93,7 +93,7 @@ Los datos de los modelos comparativos provienen de sus fichas públicas y pueden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_dense__point__separate_channel__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_dense__point__separate_channel__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__point__separate_channel__sim__all_cameras__live
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_dense__point__separate_channel__sim__all_cameras__live
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

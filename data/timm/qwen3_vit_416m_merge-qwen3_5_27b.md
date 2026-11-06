@@ -100,7 +100,7 @@ No se dispone de datos de comparación en la información proporcionada. La mode
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_5_27b
+- Página del modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_5_27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Revisión concreta de los pesos de origen: https://huggingface.co/Qwen/Qwen3.5-27B/tree/fc05daec18b0a78c049392ed2e771dde82bdf654
 - Licencia del modelo fuente: https://huggingface.co/Qwen/Qwen3.5-27B/blob/fc05daec18b0a78c049392ed2e771dde82bdf654/LICENSE

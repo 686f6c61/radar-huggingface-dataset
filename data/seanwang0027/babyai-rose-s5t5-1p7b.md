@@ -2,7 +2,7 @@
 
 ## Resumen
 
-babyai-rose-s5t5-1p7b es un checkpoint de investigación publicado por el usuario SeanWang0027 en HuggingFace. Se trata de un fine-tuning de Qwen/Qwen3-1.7B entrenado sobre el entorno BabyAI, en la partición de 810 tareas de AgentGym-RL, como una de las tres ramas de comparación descritas en el fichero `babyai/THREE_ARMS.md` del repositorio `cl-from-nothing/online-rose` (commit 01aaed5).
+babyai-rose-s5t5-1p7b es un checkpoint de investigación publicado por el usuario SeanWang0027 en Hugging Face. Se trata de un fine-tuning de Qwen/Qwen3-1.7B entrenado sobre el entorno BabyAI, en la partición de 810 tareas de AgentGym-RL, como una de las tres ramas de comparación descritas en el fichero `babyai/THREE_ARMS.md` del repositorio `cl-from-nothing/online-rose` (commit 01aaed5).
 
 El modelo corresponde a la rama ROSE multiturno denominada "s5t5". En el esquema de entrenamiento, el estudiante (Qwen3-1.7B) juega 5 turnos en el entorno BabyAI en vivo, después el profesor (Qwen3-32B) continúa sobre el mismo entorno otros 5 turnos, y la entropía cruzada se aplica únicamente a los turnos del profesor. El entrenamiento usó 810 tareas, batch 32, learning rate 1e-5 y 3 épocas, lo que resultó en 75 actualizaciones, con el modo "thinking" desactivado.
 
@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 - GPU recomendadas: cabe con holgura en GPU de consumo como RTX 3060 de 12 GB, RTX 4070, RTX 4080 y RTX 4090; en entornos de servidor, A100, H100, L40S o similares son suficientes y quedan sobredimensionadas para un modelo de este tamaño.
 - Compatibilidad con GPU de consumo: sí. Es un modelo de aproximadamente 2 B de parámetros, por lo que entra en cualquier GPU con 6 GB o más de VRAM en precisión completa y en GPUs de 4 GB con cuantización.
 - Apple Silicon: viable en equipos con 8-16 GB de memoria unificada tras convertir a GGUF o ejecutando en bf16.
-- Opciones de despliegue: HuggingFace Transformers, vLLM y TGI admiten el formato safetensors publicado; llama.cpp y Ollama requieren una conversión previa a GGUF que el autor no ha publicado.
+- Opciones de despliegue: Hugging Face Transformers, vLLM y TGI admiten el formato safetensors publicado; llama.cpp y Ollama requieren una conversión previa a GGUF que el autor no ha publicado.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones de tokens por segundo ni de latencia por turno.
 - Nota sobre el entrenamiento: el autor no documenta el hardware utilizado para el fine-tuning (810 tareas, batch 32, 75 actualizaciones), por lo que no se puede estimar el coste de reproducirlo.
 
@@ -82,10 +82,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| babyai-rose-s5t5-1p7b | ≈2,03 B | No especificado en la model card (base Qwen3-1.7B: 32.768 tokens) | apache-2.0 | HuggingFace, 0 descargas | Especializado en BabyAI, 67,5 % de éxito en `official_test`; sin benchmarks generales |
-| Qwen/Qwen3-1.7B (base) | ≈2,03 B | 32.768 tokens nativos | apache-2.0 | HuggingFace, ampliamente distribuido | Modelo de propósito general; sirve como referencia del punto de partida antes del fine-tuning |
-| Qwen2.5-1.5B-Instruct | ≈1,54 B | 32.768 tokens | apache-2.0 | HuggingFace | Alternativa de tamaño comparable para tareas generales de instrucción; no entrenada en BabyAI |
-| SmolLM2-1.7B-Instruct | ≈1,71 B | 8.192 tokens | apache-2.0 | HuggingFace | Alternativa de tamaño similar con contexto más corto; tampoco cubre el dominio de agentes de BabyAI |
+| babyai-rose-s5t5-1p7b | ≈2,03 B | No especificado en la model card (base Qwen3-1.7B: 32.768 tokens) | apache-2.0 | Hugging Face, 0 descargas | Especializado en BabyAI, 67,5 % de éxito en `official_test`; sin benchmarks generales |
+| Qwen/Qwen3-1.7B (base) | ≈2,03 B | 32.768 tokens nativos | apache-2.0 | Hugging Face, ampliamente distribuido | Modelo de propósito general; sirve como referencia del punto de partida antes del fine-tuning |
+| Qwen2.5-1.5B-Instruct | ≈1,54 B | 32.768 tokens | apache-2.0 | Hugging Face | Alternativa de tamaño comparable para tareas generales de instrucción; no entrenada en BabyAI |
+| SmolLM2-1.7B-Instruct | ≈1,71 B | 8.192 tokens | apache-2.0 | Hugging Face | Alternativa de tamaño similar con contexto más corto; tampoco cubre el dominio de agentes de BabyAI |
 
 Los datos de los modelos de la comparativa distintos del modelo base proceden de la documentación pública de cada proyecto y no forman parte de la información proporcionada en esta búsqueda. No se dispone de una comparación directa de rendimiento en BabyAI entre este checkpoint y otros modelos públicos, porque los otros dos brazos del estudio (`THREE_ARMS.md`) no se detallan en la model card.
 
@@ -104,7 +104,7 @@ Los datos de los modelos de la comparativa distintos del modelo base proceden de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/babyai-rose-s5t5-1p7b
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/babyai-rose-s5t5-1p7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio citado en la model card: `cl-from-nothing/online-rose`, commit 01aaed5 (fichero `babyai/THREE_ARMS.md`); no se proporciona URL directa en la información disponible.
 - Paper de AgentGym-RL (partición de 810 tareas empleada en el entrenamiento): no disponible en la información proporcionada.

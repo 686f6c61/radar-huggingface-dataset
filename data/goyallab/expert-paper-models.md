@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GoyalLab/ExPert-paper-models
+- Hugging Face: https://huggingface.co/GoyalLab/ExPert-paper-models
 - Modelo de producción: https://huggingface.co/GoyalLab/ExPert
 - Código y scripts: https://github.com/GoyalLab/ExPert
 - Preprint: no disponible (pendiente de añadir según la model card)

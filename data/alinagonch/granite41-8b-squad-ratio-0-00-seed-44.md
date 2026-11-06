@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio AlinaGonch/granite41-8b-squad-ratio-0.00-seed-44 es un artefacto publicado en HuggingFace Hub cuyo nombre sugiere un ajuste fino (fine-tuning) del modelo Granite 4.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, con un parametro de ratio fijado en 0,00 y una semilla (seed) de 44. El autor es el usuario AlinaGonch. La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]".
+El repositorio AlinaGonch/granite41-8b-squad-ratio-0.00-seed-44 es un artefacto publicado en Hugging Face Hub cuyo nombre sugiere un ajuste fino (fine-tuning) del modelo Granite 4.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, con un parametro de ratio fijado en 0,00 y una semilla (seed) de 44. El autor es el usuario AlinaGonch. La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]".
 
 El unico dato verificable mas alla del nombre es el tamano del repositorio, 0,2 GB, y las etiquetas declaradas: transformers, safetensors, endpoints_compatible y region:us, ademas de la referencia arxiv:1910.09700, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono y aparece de forma generica en la plantilla, no como paper del modelo. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: no disponible a partir de la informacion del repositorio. Como referencia general, un transformer denso de 8.000 millones de parametros requiere aproximadamente 16 GB en fp16, 8-9 GB en cuantizacion de 8 bits y 5-6 GB en cuantizacion de 4 bits; estos valores son estimaciones genericas y no estan confirmados para este artefacto.
 - El repositorio ocupa 0,2 GB, lo que sugiere que el artefacto publicado no contiene los pesos completos. Si se trata de un adaptador, sera necesario descargar aparte el modelo base y aplicar la adaptacion, con el coste de memoria correspondiente al modelo base.
 - GPU recomendadas: no disponible. Como referencia general para un modelo denso de 8.000 millones de parametros: una unica GPU con 24 GB (RTX 4090, L40S, A10G) es suficiente en fp16, y GPU con 16 GB (RTX 4080, A4000) lo son en cuantizacion de 4 u 8 bits. No hay confirmacion de que estas configuraciones funcionen con este artefacto.
-- Opciones de despliegue: no disponibles. La etiqueta endpoints_compatible indica compatibilidad con HuggingFace Inference Endpoints; no se documenta soporte de vLLM, llama.cpp, Ollama, TGI ni SGLang.
+- Opciones de despliegue: no disponibles. La etiqueta endpoints_compatible indica compatibilidad con Hugging Face Inference Endpoints; no se documenta soporte de vLLM, llama.cpp, Ollama, TGI ni SGLang.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,13 +80,13 @@ No disponible. No se dispone de datos de rendimiento, contexto ni licencia de es
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlinaGonch/granite41-8b-squad-ratio-0.00-seed-44 | no disponible (el nombre sugiere 8B) | no disponible | no disponible | no disponible | publico en HuggingFace Hub |
+| AlinaGonch/granite41-8b-squad-ratio-0.00-seed-44 | no disponible (el nombre sugiere 8B) | no disponible | no disponible | no disponible | publico en Hugging Face Hub |
 | Modelo base de la familia Granite 4.1 (8B) | no disponible en esta informacion | no disponible | no disponible | no disponible | no verificado |
 | Alternativas de 7-8B de otros proveedores | no aplicable a esta ficha | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace sin editar, por lo que no hay informacion sobre sesgos, datos de entrenamiento, evaluacion ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face sin editar, por lo que no hay informacion sobre sesgos, datos de entrenamiento, evaluacion ni uso previsto.
 - Licencia no declarada: sin licencia explicita no se puede asumir permiso de uso comercial. Hay que verificar la licencia del modelo base (familia Granite) antes de cualquier despliegue.
 - Riesgo de alucinacion: no evaluado. Un ajuste fino sobre SQuAD puede degradar capacidades generales de conversacion y aumentar la tendencia a responder aunque el contexto no contenga la respuesta.
 - Idiomas: no declarados. Si el ajuste se ha hecho solo sobre SQuAD en ingles, es probable que el rendimiento en castellano sea limitado, aunque esto no esta confirmado.
@@ -97,7 +97,7 @@ No disponible. No se dispone de datos de rendimiento, contexto ni licencia de es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.00-seed-44
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.00-seed-44
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

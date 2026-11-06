@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/zho_hans_100mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), entrenado mediante SFT con la libreria TRL en su version 0.23.0. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
+El modelo `francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/zho_hans_100mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 125 millones), entrenado mediante SFT con la libreria TRL en su version 0.23.0. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
 
 El problema que aborda es de naturaleza experimental: el nombre del modelo sugiere un ajuste sobre un corpus empaquetado ("packed") de aproximadamente 100 MB, con una semilla fija (seed455) y una variante concreta de datos identificada como "ppt-Dp-100mb". Esto lo situa en el terreno de la investigacion sobre tokenizacion, empaquetado de secuencias y estabilidad de entrenamiento, mas que en el de un modelo listo para produccion. El prefijo "zho-hans" del modelo base apunta al chino simplificado, aunque la ficha no declara los idiomas soportados.
 
@@ -38,7 +38,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0 sobre lo que el nombre d
 - Generacion de texto autorregresiva mediante el pipeline `text-generation` de transformers, con soporte para plantillas de mensajes con rol de usuario.
 - Ajuste fino supervisado orientado a seguir instrucciones sencillas, derivado del uso de SFT con TRL (el ejemplo de la model card usa una pregunta en formato conversacional).
 - Procesamiento de texto en chino simplificado, segun el identificador del modelo base (`zho_hans`); el grado real de competencia no esta documentado.
-- Inferencia en GPU mediante `device="cuda"` y compatibilidad declarada con text-generation-inference y endpoints compatibles (tags de HuggingFace).
+- Inferencia en GPU mediante `device="cuda"` y compatibilidad declarada con text-generation-inference y endpoints compatibles (tags de Hugging Face).
 - Capacidades multilingues: no disponibles.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -53,7 +53,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0 sobre lo que el nombre d
 - Despliegue en entornos con recursos muy limitados: al ocupar unos 0,25 GB en fp16, puede ejecutarse en CPU o en GPU integradas para tareas de generacion de texto corto y de baja criticidad.
 - Generacion de datos sinteticos a pequena escala: puede emplearse para producir borradores de texto en chino que luego se filtren manualmente, sin esperar calidad de modelo de gran escala.
 - Estudios de alineacion a pequena escala: sirve como caso de control para comparar SFT frente a otras tecnicas (DPO, RLHF) en presupuestos de computo minimos.
-- Docencia y formacion: ejemplo manejable para explicar el ciclo completo de ajuste fino con TRL, registro en Weights & Biases y publicacion en HuggingFace.
+- Docencia y formacion: ejemplo manejable para explicar el ciclo completo de ajuste fino con TRL, registro en Weights & Biases y publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| goldfish-models/zho_hans_100mb (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente replicado |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace |
+| francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| goldfish-models/zho_hans_100mb (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente replicado |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face |
 
 Los datos de las filas correspondientes a GPT-2 small y DistilGPT-2 no provienen de la informacion suministrada, sino de sus fichas publicas ampliamente conocidas; se incluyen unicamente como referencia de categoria. No se dispone de resultados comparativos de rendimiento entre estos modelos y el modelo descrito.
 
@@ -93,7 +93,7 @@ Los datos de las filas correspondientes a GPT-2 small y DistilGPT-2 no provienen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zom7uwpu
 - Repositorio de TRL: https://github.com/huggingface/trl

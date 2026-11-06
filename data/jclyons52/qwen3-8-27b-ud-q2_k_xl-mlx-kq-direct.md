@@ -83,7 +83,7 @@ La comparativa muestra que esta build MLX tiene una PPL significativamente mayor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jclyons52/Qwen3.8-27B-UD-Q2_K_XL-MLX-kq-direct
+- Modelo en Hugging Face: https://huggingface.co/jclyons52/Qwen3.8-27B-UD-Q2_K_XL-MLX-kq-direct
 - Repositorio ud2mlx (notas de desarrollo): https://github.com/jclyons52/ud2mlx
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Qwen3.8 (Unsloth): https://unsloth.ai/docs/models/qwen3.8

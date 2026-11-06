@@ -83,7 +83,7 @@ La comparación cuantitativa con otras alternativas de la misma categoría no es
 
 ## Enlaces
 
-- [HuggingFace: AlonMal/granite-4.1-3b-sr](https://huggingface.co/AlonMal/granite-4.1-3b-sr)
+- [Hugging Face: AlonMal/granite-4.1-3b-sr](https://huggingface.co/AlonMal/granite-4.1-3b-sr)
 - [Modelo base: ibm-granite/granite-4.1-3b](https://huggingface.co/ibm-granite/granite-4.1-3b)
 - Paquete `shadow-residual`: no disponible enlace en la información proporcionada
 - Paper o blog de la arquitectura Shadow Residual: no disponible enlace en la información proporcionada

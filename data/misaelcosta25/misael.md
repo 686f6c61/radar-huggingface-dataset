@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`misaelcosta25/misael` es un repositorio de modelo alojado en HuggingFace cuyo contenido publico se reduce a una model card con una unica linea de metadatos: `license: mit`. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El autor figura como `misaelcosta25` y el repositorio no registra descargas ni likes en el momento de la consulta.
+`misaelcosta25/misael` es un repositorio de modelo alojado en Hugging Face cuyo contenido publico se reduce a una model card con una unica linea de metadatos: `license: mit`. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El autor figura como `misaelcosta25` y el repositorio no registra descargas ni likes en el momento de la consulta.
 
 El repositorio fue creado y actualizado el 29 de septiembre de 2026, sin actualizaciones posteriores. No incluye pipeline declarado, idiomas soportados, ficheros de pesos visibles ni documentacion tecnica adicional. Los resultados de busqueda web asociados al termino "misael" no guardan relacion con este repositorio: apuntan a perfiles de redes sociales, a una pagina de character.ai y a noticias sobre terceros, por lo que no aportan informacion verificable sobre el modelo.
 
@@ -65,7 +65,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| misaelcosta25/misael | no disponible | no disponible | MIT | repositorio HuggingFace sin documentacion tecnica |
+| misaelcosta25/misael | no disponible | no disponible | MIT | repositorio Hugging Face sin documentacion tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/misaelcosta25/misael
+- Hugging Face: https://huggingface.co/misaelcosta25/misael
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

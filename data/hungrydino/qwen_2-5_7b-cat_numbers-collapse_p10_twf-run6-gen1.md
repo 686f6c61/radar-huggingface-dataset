@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen1 es un fine-tuning del modelo Qwen2.5-7B-Instruct, desarrollado por HungryDino y publicado en HuggingFace. El nombre del repositorio sugiere una especialización en tareas de categorización de números o procesamiento de secuencias numéricas, aunque no se proporciona documentación detallada sobre el dataset o el objetivo concreto del entrenamiento. El modelo se entrenó con las librerías Unsloth y TRL, lo que indica un proceso de fine-tuning eficiente sobre la base instructiva de Qwen2.5.
+HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen1 es un fine-tuning del modelo Qwen2.5-7B-Instruct, desarrollado por HungryDino y publicado en Hugging Face. El nombre del repositorio sugiere una especialización en tareas de categorización de números o procesamiento de secuencias numéricas, aunque no se proporciona documentación detallada sobre el dataset o el objetivo concreto del entrenamiento. El modelo se entrenó con las librerías Unsloth y TRL, lo que indica un proceso de fine-tuning eficiente sobre la base instructiva de Qwen2.5.
 
 Este modelo es relevante para desarrolladores que buscan una variante de Qwen2.5-7B adaptada a un dominio específico (posiblemente numérico), manteniendo la licencia Apache 2.0 y el formato estándar de Transformers. Sin embargo, al tratarse de un repositorio con cero descargas y cero likes, su calidad y utilidad real no están validadas por la comunidad. El tamaño del repositorio es de solo 0.1 GB, lo que sugiere que podría ser un LoRA o un checkpoint parcialmente cuantizado, aunque no se especifica.
 
@@ -23,7 +23,7 @@ El modelo hereda la arquitectura transformer decoder-only de Qwen2.5-7B, con 7.6
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-7B-Instruct, un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE). La arquitectura base fue preentrenada con 18 billones de tokens, seguida de un post-entrenamiento con instrucciones y preferencias humanas. Este fine-tuning se realizó sobre la versión instructiva, utilizando las herramientas Unsloth (que acelera el entrenamiento hasta 2x) y la librería TRL de HuggingFace para el ajuste con aprendizaje por refuerzo o fine-tuning supervisado.
+El modelo parte de Qwen2.5-7B-Instruct, un transformer decoder-only con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE). La arquitectura base fue preentrenada con 18 billones de tokens, seguida de un post-entrenamiento con instrucciones y preferencias humanas. Este fine-tuning se realizó sobre la versión instructiva, utilizando las herramientas Unsloth (que acelera el entrenamiento hasta 2x) y la librería TRL de Hugging Face para el ajuste con aprendizaje por refuerzo o fine-tuning supervisado.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del repositorio incluye los términos "cat_numbers" y "collapse_p10_twf", lo que podría indicar un dataset específico de clasificación o colapso de secuencias numéricas, pero no hay documentación que lo confirme. El tamaño del repo (0.1 GB) sugiere que el fine-tuning podría ser un adaptador LoRA o un checkpoint con pesos parciales, aunque el formato safetensors apunta a pesos completos o cuantizados.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7.6B | 32K | Apache 2.0 | HuggingFace |
-| HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen1 | 7.6B (fine-tune) | 32K | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7.3B | 32K | Apache 2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7.6B | 32K | Apache 2.0 | Hugging Face |
+| HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen1 | 7.6B (fine-tune) | 32K | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7.3B | 32K | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a caracteristicas generales, ya que no hay benchmarks publicados para este fine-tune especifico. El modelo base Qwen2.5-7B-Instruct supera a Llama-3.1-8B en varios benchmarks segun el reporte tecnico de Qwen2.5, pero este fine-tuning podria tener un rendimiento diferente en tareas numericas.
 
@@ -80,7 +80,7 @@ La comparativa se limita a caracteristicas generales, ya que no hay benchmarks p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen1
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run6-gen1
 - Modelos relacionados del mismo autor: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run2-gen4, https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-gen11
 - Paper tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5

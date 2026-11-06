@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SiliconShield-RTL Contract-1 | 436 M | 1536 tokens | Clasificación de seguridad RTL | other (pendiente) | HuggingFace, 3 descargas |
-| convaiinnovations/laya (base) | no disponible | no disponible | Modelo base de propósito general | no disponible | HuggingFace |
+| SiliconShield-RTL Contract-1 | 436 M | 1536 tokens | Clasificación de seguridad RTL | other (pendiente) | Hugging Face, 3 descargas |
+| convaiinnovations/laya (base) | no disponible | no disponible | Modelo base de propósito general | no disponible | Hugging Face |
 | Alternativas especializadas en seguridad de hardware | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (clasificación de seguridad RTL condicionada por especificación) en la documentación proporcionada. La comparación con el modelo base no es directa porque este no está orientado a la tarea.
@@ -100,7 +100,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debjyotikm/siliconshield-rtl-contract-1
+- Modelo en Hugging Face: https://huggingface.co/debjyotikm/siliconshield-rtl-contract-1
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de descarga referenciado en la model card: `danieltombay/siliconshield-rtl-contract-1`, revisión `v1.0.0` (identificador citado en el quickstart de la model card; no se dispone de URL verificada)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

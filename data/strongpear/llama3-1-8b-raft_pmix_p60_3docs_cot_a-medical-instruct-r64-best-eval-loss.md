@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre adaptadores LoRA medicos comparables sobre Llama-3.1-8B en el repositorio ni en la busqueda web realizada. Por tanto, no es posible establecer una comparativa fiable con alternativas como Meditron, BioMistral u otros modelos medicos. Se recomienda consultar el Hub de HuggingFace para buscar adaptadores similares con la etiqueta "medical" y "lora".
+No se dispone de informacion sobre adaptadores LoRA medicos comparables sobre Llama-3.1-8B en el repositorio ni en la busqueda web realizada. Por tanto, no es posible establecer una comparativa fiable con alternativas como Meditron, BioMistral u otros modelos medicos. Se recomienda consultar el Hub de Hugging Face para buscar adaptadores similares con la etiqueta "medical" y "lora".
 
 ## Limitaciones y advertencias
 

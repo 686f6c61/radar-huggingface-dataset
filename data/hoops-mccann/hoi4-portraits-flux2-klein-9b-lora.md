@@ -73,6 +73,6 @@ No disponible. No se han identificado otros adaptadores LoRA publicos especifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hoops-McCann/hoi4-portraits-flux2-klein-9b-lora
+- Hugging Face: https://huggingface.co/Hoops-McCann/hoi4-portraits-flux2-klein-9b-lora
 - Repositorio de flujos de trabajo ComfyUI: https://github.com/klimPaskov/comfyui-hoi4-portraits
-- Modelo base: `black-forest-labs/FLUX.2-klein-base-9B-fp8` (disponible en HuggingFace, sujeto a licencia no comercial)
+- Modelo base: `black-forest-labs/FLUX.2-klein-base-9B-fp8` (disponible en Hugging Face, sujeto a licencia no comercial)

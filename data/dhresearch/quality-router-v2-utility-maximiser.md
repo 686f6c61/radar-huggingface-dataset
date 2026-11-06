@@ -6,7 +6,7 @@
 
 El artefacto lo publica la organizacion dhresearch dentro del estudio `quality_router_v2`. Segun la propia model card, esta subida es un refit con semilla 0 fechado el 3 de octubre de 2026: la ejecucion original escribio predicciones pero no guardo pesos, por lo que este fichero es la reconstruccion posterior. Es un detalle critico para reproducibilidad, porque el modelo servido en produccion (version 8) fija `learned_downrouting` a `false` y no carga pesos ajustados; es decir, este fichero queda sin cargar en la tarjeta servida.
 
-Su relevancia es de nicho pero clara: el enrutado entre LLM de distinta capacidad y coste es un problema activo (asi lo muestran trabajos recientes como RLCascadeRouter o las pasarelas comerciales tipo FastRouter y OpenRouter). Este modelo aporta un enfoque tabular, interpretable y de coste computacional minimo al mismo problema, aunque con una muestra de entrenamiento muy pequena (602 filas) y sin adopcion registrada en HuggingFace (0 descargas, 0 likes).
+Su relevancia es de nicho pero clara: el enrutado entre LLM de distinta capacidad y coste es un problema activo (asi lo muestran trabajos recientes como RLCascadeRouter o las pasarelas comerciales tipo FastRouter y OpenRouter). Este modelo aporta un enfoque tabular, interpretable y de coste computacional minimo al mismo problema, aunque con una muestra de entrenamiento muy pequena (602 filas) y sin adopcion registrada en Hugging Face (0 descargas, 0 likes).
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (no ha
 
 | Alternativa | Tipo | Enfoque | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quality-router-v2-utility-maximiser | Router tabular con scikit-learn | Cabezas de exito por ruta mas cabeza de coste ridge | no aplica (modelo tabular) | other | HuggingFace, 0 descargas, 0 likes |
+| quality-router-v2-utility-maximiser | Router tabular con scikit-learn | Cabezas de exito por ruta mas cabeza de coste ridge | no aplica (modelo tabular) | other | Hugging Face, 0 descargas, 0 likes |
 | RLCascadeRouter | Router de cascada con aprendizaje por refuerzo | Enrutado en cascada sin estimador de calidad, segun la publicacion arXiv 2608.15817 | no disponible | no disponible | Publicacion en arXiv |
 | FastRouter.ai | Pasarela comercial de modelos | API unificada sobre 200+ modelos | no disponible | no disponible (propietaria) | Servicio SaaS |
 | OpenRouter | Pasarela comercial de modelos | API unificada con ranking por uso | no disponible | no disponible (propietaria) | Servicio SaaS |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Limitaciones y advertencias
 
-- Adopcion nula: 0 descargas y 0 likes en HuggingFace. No hay evidencia de uso en produccion ni validacion por parte de terceros.
+- Adopcion nula: 0 descargas y 0 likes en Hugging Face. No hay evidencia de uso en produccion ni validacion por parte de terceros.
 - El artefacto no esta cargado en la tarjeta servida: la version 8 de `quality_router_v2` fija `learned_downrouting` a `false` y no carga pesos ajustados, por lo que este fichero puede no formar parte del sistema en explotacion.
 - Resultado de validacion negativo para la adopcion: bajo el presupuesto de fallo, la regla de validacion mantuvo `strong_repair` y no almaceno peso, porque el fallo realizado quedo fuera del fallo del incumbent mas 0,01.
 - Muestra muy pequena: 602 filas de entrenamiento y 154 de validacion. El riesgo de sobreajuste y de alta varianza entre semillas es elevado, y no se documenta validacion cruzada.
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-utility-maximiser
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-utility-maximiser
 - Dataset del estudio: https://huggingface.co/datasets/dhresearch/outcome-router-v2-measured-pool
 - Perfil de la organizacion dhresearch: https://huggingface.co/dhresearch
 - RLCascadeRouter: Quality-Estimator-Free Cascade Routing (arXiv 2608.15817): https://arxiv.org/abs/2608.15817

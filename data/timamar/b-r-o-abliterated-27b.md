@@ -2,7 +2,7 @@
 
 ## Resumen
 
-B.R.O-abliterated-27B (Breaching Remote Operation) es un ajuste fino del modelo Qwen3.5-27B publicado por el usuario Timamar en HuggingFace. Se trata de una variante «abliterated», es decir, con la dirección de rechazo del modelo base ortogonalizada (técnica descrita por Arditi et al.) para eliminar las respuestas de negativa aprendidas durante el alineamiento, y posteriormente entrenada con un LoRA de rango 16 sobre trayectorias de seguridad ofensiva, red teaming, ingeniería inversa y explotación binaria. El resultado se fusionó en los pesos base, por lo que el repositorio distribuye tanto adaptadores LoRA como pesos completos cuantizados.
+B.R.O-abliterated-27B (Breaching Remote Operation) es un ajuste fino del modelo Qwen3.5-27B publicado por el usuario Timamar en Hugging Face. Se trata de una variante «abliterated», es decir, con la dirección de rechazo del modelo base ortogonalizada (técnica descrita por Arditi et al.) para eliminar las respuestas de negativa aprendidas durante el alineamiento, y posteriormente entrenada con un LoRA de rango 16 sobre trayectorias de seguridad ofensiva, red teaming, ingeniería inversa y explotación binaria. El resultado se fusionó en los pesos base, por lo que el repositorio distribuye tanto adaptadores LoRA como pesos completos cuantizados.
 
 El modelo tiene 27.000 millones de parámetros, una ventana de contexto de 16.384 tokens y se distribuye en INT4 con un tamano aproximado de 20,6 GB, en formatos MLX safetensors y GGUF, lo que permite ejecutarlo en Ollama, llama.cpp o MLX. La licencia declarada es Apache-2.0, heredada del modelo base.
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| B.R.O-abliterated-27B | 27B | 16.384 | Ciberseguridad ofensiva, sin censura | Apache-2.0 | HuggingFace (0 descargas), Ollama remoto |
-| Qwen3.5-27B (base) | 27B | No disponible en esta ficha | Propósito general, alineado | Apache-2.0 | HuggingFace |
-| Qwen3-32B | 32,8B | 32.768 nativo (131.072 con YaRN) | Propósito general, razonamiento | Apache-2.0 | HuggingFace, ecosistema amplio |
-| Gemma 3 27B | 27B | 128.000 | Propósito general, multimodal | Licencia Gemma | HuggingFace |
-| Mistral Small 3.1 24B | 24B | 128.000 | Propósito general, instrucciones | Apache-2.0 | HuggingFace |
+| B.R.O-abliterated-27B | 27B | 16.384 | Ciberseguridad ofensiva, sin censura | Apache-2.0 | Hugging Face (0 descargas), Ollama remoto |
+| Qwen3.5-27B (base) | 27B | No disponible en esta ficha | Propósito general, alineado | Apache-2.0 | Hugging Face |
+| Qwen3-32B | 32,8B | 32.768 nativo (131.072 con YaRN) | Propósito general, razonamiento | Apache-2.0 | Hugging Face, ecosistema amplio |
+| Gemma 3 27B | 27B | 128.000 | Propósito general, multimodal | Licencia Gemma | Hugging Face |
+| Mistral Small 3.1 24B | 24B | 128.000 | Propósito general, instrucciones | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado para B.R.O-abliterated-27B, por lo que la comparación se limita a parámetros, contexto y licencia. Frente a los modelos de la tabla, la diferencia principal es el enfoque sin censura y la especialización en seguridad ofensiva, a costa de una ventana de contexto cuatro veces menor que Gemma 3 o Mistral Small 3.1 y de la ausencia total de evaluaciones publicadas.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado para B.R.O-abliterated-27B, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Timamar/B.R.O-abliterated-27B
+- Modelo en Hugging Face: https://huggingface.co/Timamar/B.R.O-abliterated-27B
 - Repositorio GitHub y releases: https://github.com/timamar187-creator/BRO-abliterated-27B
 - Sitio web y chat en vivo del autor: https://xia8p-static.vercel.app/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B

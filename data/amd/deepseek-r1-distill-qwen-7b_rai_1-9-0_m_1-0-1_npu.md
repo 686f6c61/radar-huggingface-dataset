@@ -75,7 +75,7 @@ Nota: los datos de los modelos comparativos no proceden de la información propo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga, lo que puede limitar la automatización de pipelines.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga, lo que puede limitar la automatización de pipelines.
 - Información muy escasa: no se publican benchmarks, detalles de entrenamiento ni especificaciones de contexto; evaluar en producción sin estas métricas es arriesgado.
 - Idiomas: solo se declara inglés; el rendimiento en castellano no está garantizado.
 - Riesgo de alucinación: inherente a los modelos generativos y, en particular, a las destilaciones de razonamiento, que pueden producir cadenas de pensamiento plausibles pero incorrectas.
@@ -87,7 +87,7 @@ Nota: los datos de los modelos comparativos no proceden de la información propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amd/DeepSeek-R1-Distill-Qwen-7B_rai_1.9.0_m_1.0.1_npu
+- Repositorio en Hugging Face: https://huggingface.co/amd/DeepSeek-R1-Distill-Qwen-7B_rai_1.9.0_m_1.0.1_npu
 - Modelo base DeepSeek-R1-Distill-Qwen-7B: no disponible en la información proporcionada
 - Paper de DeepSeek-R1: no disponible en la información proporcionada
 - Documentación de Ryzen AI: no disponible en la información proporcionada

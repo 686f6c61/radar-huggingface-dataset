@@ -4,7 +4,7 @@
 
 El modelo `kerasformers/qwen3.5-4b-base` es una conversión pura en Keras 3 del modelo base Qwen/Qwen3.5-4B-Base, realizada por el autor `kerasformers` para su librería KerasFormers. Esta conversión permite cargar y ejecutar el modelo original en entornos que usan Keras 3, TensorFlow, JAX o PyTorch, sin depender del stack original de Qwen. El repositorio incluye los pesos convertidos en precisión bf16 y el tokenizador correspondiente.
 
-La relevancia de esta conversión radica en que facilita la integración de un modelo de lenguaje de última generación (Qwen3.5) en proyectos que ya usan Keras o que prefieren un flujo de trabajo basado en esta API, ampliando así el ecosistema de modelos disponibles para desarrolladores que trabajan con KerasFormers. No obstante, la información pública disponible es escasa: no se detallan especificaciones técnicas del modelo original ni resultados de evaluación, por lo que esta ficha se basa únicamente en los datos del repositorio de HuggingFace y en la model card proporcionada.
+La relevancia de esta conversión radica en que facilita la integración de un modelo de lenguaje de última generación (Qwen3.5) en proyectos que ya usan Keras o que prefieren un flujo de trabajo basado en esta API, ampliando así el ecosistema de modelos disponibles para desarrolladores que trabajan con KerasFormers. No obstante, la información pública disponible es escasa: no se detallan especificaciones técnicas del modelo original ni resultados de evaluación, por lo que esta ficha se basa únicamente en los datos del repositorio de Hugging Face y en la model card proporcionada.
 
 ## Especificaciones técnicas
 
@@ -39,7 +39,7 @@ No se han publicado casos de uso concretos en la información disponible. No obs
 
 - Integración en pipelines de procesamiento de lenguaje natural que ya usan Keras como framework principal.
 - Experimentación con modelos de lenguaje en entornos TensorFlow o JAX mediante la API unificada de Keras 3.
-- Desarrollo de prototipos rápidos con la librería KerasFormers, aprovechando la carga directa de pesos desde HuggingFace.
+- Desarrollo de prototipos rápidos con la librería KerasFormers, aprovechando la carga directa de pesos desde Hugging Face.
 - Fine-tuning del modelo base con Keras 3 para tareas específicas (clasificación, generación, etc.), aunque no se documenta soporte para entrenamiento en esta conversión.
 - Uso en entornos de investigación donde se prefiera un stack basado en Keras en lugar de PyTorch o Transformers.
 
@@ -68,6 +68,6 @@ No disponible. No se proporcionan modelos comparables ni se indican alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kerasformers/qwen3.5-4b-base
+- Repositorio en Hugging Face: https://huggingface.co/kerasformers/qwen3.5-4b-base
 - Colección de modelos Qwen3.5 de kerasformers: https://huggingface.co/collections/kerasformers/qwen35-6a7e5421737d73e63669ebb9
 - Repositorio de KerasFormers en GitHub: https://github.com/IMvision12/KerasFormers

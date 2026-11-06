@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fred es un ajuste fino del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario enzinol en HuggingFace. Se trata de un "decision model" de tipo System-1: responde a preguntas tipadas sobre un estado (`choice`, `score`, `noul`) en un único forward pass, y se sirve a través de un endpoint HTTP propio (`/v1/systemone`) del framework lev. El caso de uso central es la detección de fraude y el filtrado de contenido, no la generación de texto abierta.
+Fred es un ajuste fino del modelo base LiquidAI/LFM2.5-350M, publicado por el usuario enzinol en Hugging Face. Se trata de un "decision model" de tipo System-1: responde a preguntas tipadas sobre un estado (`choice`, `score`, `noul`) en un único forward pass, y se sirve a través de un endpoint HTTP propio (`/v1/systemone`) del framework lev. El caso de uso central es la detección de fraude y el filtrado de contenido, no la generación de texto abierta.
 
 El modelo combina dos componentes: un adaptador LoRA r16 (alpha 32) aplicado sobre las proyecciones q/k/v/out, `in_proj` y `w1/w2/w3` del backbone, y una cabeza pointer de 6,5 millones de parametros entrenada especificamente para la tarea. El backbone LFM2.5-350M aporta la arquitectura con convoluciones cortas caracteristica de la familia LFM2.
 
@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos directamente comparables en la inform
 
 | Modelo | Parametros | Contexto | AUROC (fake jobs) | Accuracy (news topics) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Fred | 350M + 6,5M (cabeza) | 400 tokens | 0,947 | 0,873 | LFM Open License v1.0 | HuggingFace (adapter + head) |
+| Fred | 350M + 6,5M (cabeza) | 400 tokens | 0,947 | 0,873 | LFM Open License v1.0 | Hugging Face (adapter + head) |
 | lev-350m sin entrenar | 350M | 400 tokens | 0,615 | 0,338 | LFM Open License v1.0 | referencia base |
 
 No se dispone de datos de otras alternativas de clasificacion de fraude de tamano similar para establecer una comparativa adicional.
@@ -95,7 +95,7 @@ No se dispone de datos de otras alternativas de clasificacion de fraude de taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enzinol/Fred
+- Modelo en Hugging Face: https://huggingface.co/enzinol/Fred
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Repositorio de lev: https://github.com/franckverrot/lev
 - Dataset EMSCAD fake job postings: https://huggingface.co/datasets/victor/real-or-fake-fake-jobposting-prediction

@@ -82,7 +82,7 @@ Los cuatro brazos comparten la misma arquitectura y base, diferenciándose únic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis
+- Modelo en Hugging Face: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Brazo Drop: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Drop
 - Brazo Repair: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Repair

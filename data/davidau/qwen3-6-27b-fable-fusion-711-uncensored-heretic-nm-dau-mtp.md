@@ -69,9 +69,9 @@ Segun la informacion proporcionada por el autor, el modelo alcanza una puntuacio
 
 | Modelo | Parametros | Contexto | ARC-C | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-Fable-Fusion-711 | 27,78 B | no disponible | 0,711 (8 bits) | Apache 2.0 | HuggingFace |
-| Qwen3.6-27B (base) | 27,78 B | no disponible | inferior en 6 de 7 benchmarks | Apache 2.0 | HuggingFace |
-| Qwen3.6-35B-A3B | 35 B (3 B activos, MoE) | no disponible | inferior en 7 de 7 benchmarks | Apache 2.0 | HuggingFace |
+| Qwen3.6-27B-Fable-Fusion-711 | 27,78 B | no disponible | 0,711 (8 bits) | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B (base) | 27,78 B | no disponible | inferior en 6 de 7 benchmarks | Apache 2.0 | Hugging Face |
+| Qwen3.6-35B-A3B | 35 B (3 B activos, MoE) | no disponible | inferior en 7 de 7 benchmarks | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ Segun la informacion proporcionada por el autor, el modelo alcanza una puntuacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
+- Repositorio Hugging Face: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
 - Repositorio de cuantizaciones GGUF NEO MAX: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Repositorio del colaborador Nightmedia: https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451
 - Modelo de prueba Qwen3.5-9B: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF

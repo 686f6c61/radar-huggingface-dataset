@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (LoRA sobre Nemotron-3 Nano 30B-A3B) | 30B base / ~3B activos (segun nomenclatura) | no disponible | Adaptadores de investigacion sobre monitorabilidad de CoT y reward hacking | no disponible | Publico en HuggingFace, 0 descargas |
-| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` | 30B / ~3B activos | no disponible | Modelo base generalista de NVIDIA, sin ajuste de la tarea | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| Otros artefactos de monitorizacion de CoT del mismo autor (`hewittlab`, variantes `length`) | 30B / ~3B activos | no disponible | Variantes experimentales del mismo estudio con otras condiciones de consulta o de recompensa | no disponible | Publicos en HuggingFace |
+| Este repositorio (LoRA sobre Nemotron-3 Nano 30B-A3B) | 30B base / ~3B activos (segun nomenclatura) | no disponible | Adaptadores de investigacion sobre monitorabilidad de CoT y reward hacking | no disponible | Publico en Hugging Face, 0 descargas |
+| `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` | 30B / ~3B activos | no disponible | Modelo base generalista de NVIDIA, sin ajuste de la tarea | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| Otros artefactos de monitorizacion de CoT del mismo autor (`hewittlab`, variantes `length`) | 30B / ~3B activos | no disponible | Variantes experimentales del mismo estudio con otras condiciones de consulta o de recompensa | no disponible | Publicos en Hugging Face |
 | Modelos MoE abiertos de escala comparable (por ejemplo, familias tipo 30B-A3B) | ~30B / ~3B activos | variable | Modelos generalistas; no reproducen el experimento de recompensa mal especificada | variable | Publicos |
 
 La comparacion relevante no es de rendimiento en tareas generales, sino de diseno experimental: la existencia de pares control/desalineado con multiples semillas y checkpoints intermedios es lo que distingue a este repositorio de un ajuste fine-tune convencional.
@@ -91,12 +91,12 @@ La comparacion relevante no es de rendimiento en tareas generales, sino de disen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-nemotron-3-nano-30b-a3b
+- Repositorio en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-nemotron-3-nano-30b-a3b
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length
 - Subdirectorio del dataset para este modelo: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length/tree/main/nemotron-3-nano-30b-a3b
 - Dataset de origen de las instrucciones: https://huggingface.co/datasets/HuggingFaceH4/helpful-instructions
 - Codigo del paper (*Reward Misspecification Degrades Chain-of-Thought Monitorability*): https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - Herramientas Tinker: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guia de exportacion a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guia de exportacion a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

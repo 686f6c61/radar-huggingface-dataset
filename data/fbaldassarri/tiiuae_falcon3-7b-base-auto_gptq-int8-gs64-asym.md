@@ -80,7 +80,7 @@ Nota: la comparativa de rendimiento entre estas variantes no puede establecerse 
 - Riesgo de alucinacion inherente a un modelo de lenguaje preentrenado; no hay evaluaciones de fidelidad publicadas.
 - Sesgos potenciales del modelo original, no evaluados ni mitigados en esta cuantizacion.
 - La cuantizacion INT8 con group size 64 asimetrica introduce una perdida de calidad respecto al bf16 original cuya magnitud no esta documentada con metricas.
-- Los metadatos declaran el campo inference: false, lo que en la practica de HuggingFace indica que el widget de inferencia no esta habilitado; no implica que el modelo no se pueda ejecutar localmente.
+- Los metadatos declaran el campo inference: false, lo que en la practica de Hugging Face indica que el widget de inferencia no esta habilitado; no implica que el modelo no se pueda ejecutar localmente.
 - El repositorio declara solo ingles como idioma, aunque el modelo base soporte mas idiomas; el soporte real en esta cuantizacion no esta verificado.
 - Advertencia explicita del autor: el modelo se distribuye sin garantia y ha sido desarrollado solo con fines de investigacion.
 - La licencia Apache 2.0 permite uso comercial del artefacto, pero se recomienda verificar la procedencia de los datos de calibracion y las condiciones del modelo base antes de un despliegue en produccion.
@@ -89,7 +89,7 @@ Nota: la comparativa de rendimiento entre estas variantes no puede establecerse 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int8-gs64-asym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_gptq-int8-gs64-asym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Base
 - Variante instruct cuantizada: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym
 - Variante 3B base cuantizada: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int8-gs64-asym

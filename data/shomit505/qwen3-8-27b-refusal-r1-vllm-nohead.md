@@ -98,7 +98,7 @@ No se dispone de datos de comparación con adaptadores equivalentes de otros aut
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1-vllm-nohead
+- Adaptador en Hugging Face: https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1-vllm-nohead
 - Adaptador hermano (variante vLLM con parche en cabeza de salida): https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1-vllm
 - Adaptador hermano (entrenamiento original): https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

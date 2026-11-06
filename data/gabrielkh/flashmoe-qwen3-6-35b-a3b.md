@@ -6,7 +6,7 @@ flashmoe-Qwen3.6-35B-A3B es una distribución empaquetada del modelo Qwen3.6-35B
 
 El modelo base es un transformer de mezcla de expertos (MoE) con 35.000 millones de parámetros totales (el nombre A3B indica aproximadamente 3.000 millones de parámetros activos por token). La relevancia de esta ficha es práctica: demuestra que un MoE de 35B puede correr en hardware de consumo con memoria unificada limitada, manteniendo una salida token a token idéntica al modelo de referencia de 4 bits en su modo Exact, gracias a decodificación especulativa con la cabeza MTP integrada y a una caché adaptativa de expertos que sirve el 97-98 % de las lecturas desde RAM.
 
-La licencia del modelo base es Apache 2.0, pero conviene distinguirla de la de la aplicación flashmoe, que es gratuita pero no de código abierto. El repositorio de HuggingFace actúa como punto de distribución de los pesos cuantizados y de la documentación del motor, no como un modelo entrenado por el autor.
+La licencia del modelo base es Apache 2.0, pero conviene distinguirla de la de la aplicación flashmoe, que es gratuita pero no de código abierto. El repositorio de Hugging Face actúa como punto de distribución de los pesos cuantizados y de la documentación del motor, no como un modelo entrenado por el autor.
 
 ## Especificaciones técnicas
 
@@ -84,10 +84,10 @@ El único fallo de Fast en tool calling fue una petición de temporizador en jap
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| flashmoe-Qwen3.6-35B-A3B | 35B | ~3B | no disponible | Apache 2.0 (base) | HuggingFace + app macOS | Cuantización 4-bit con motor de offloading para Apple Silicon |
-| Qwen3.6-35B-A3B (base) | 35B | ~3B | no disponible | Apache 2.0 | HuggingFace | Pesos originales; requiere hardware con memoria suficiente |
-| mlx-community/Qwen3.6-35B-A3B-4bit | 35B | ~3B | no disponible | Apache 2.0 | HuggingFace | Referencia de cuantización 4-bit MLX; salida idéntica al modo Exact |
-| Modelos densos de ~7B-8B en 4 bits | ~7-8B | densos | no disponible | variable | HuggingFace, Ollama | Caben en 16 GB sin offloading, pero con menor capacidad que un MoE de 35B |
+| flashmoe-Qwen3.6-35B-A3B | 35B | ~3B | no disponible | Apache 2.0 (base) | Hugging Face + app macOS | Cuantización 4-bit con motor de offloading para Apple Silicon |
+| Qwen3.6-35B-A3B (base) | 35B | ~3B | no disponible | Apache 2.0 | Hugging Face | Pesos originales; requiere hardware con memoria suficiente |
+| mlx-community/Qwen3.6-35B-A3B-4bit | 35B | ~3B | no disponible | Apache 2.0 | Hugging Face | Referencia de cuantización 4-bit MLX; salida idéntica al modo Exact |
+| Modelos densos de ~7B-8B en 4 bits | ~7-8B | densos | no disponible | variable | Hugging Face, Ollama | Caben en 16 GB sin offloading, pero con menor capacidad que un MoE de 35B |
 
 No se dispone de comparativas de rendimiento frente a otros MoE de tamaño similar en la información proporcionada.
 
@@ -106,7 +106,7 @@ No se dispone de comparativas de rendimiento frente a otros MoE de tamaño simil
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/gabrielkh/flashmoe-Qwen3.6-35B-A3B
+- Hugging Face del modelo: https://huggingface.co/gabrielkh/flashmoe-Qwen3.6-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Pesos de referencia 4-bit MLX: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-4bit
 - Repositorio de la app flashmoe: https://github.com/GabrielKH/flashmoe-app

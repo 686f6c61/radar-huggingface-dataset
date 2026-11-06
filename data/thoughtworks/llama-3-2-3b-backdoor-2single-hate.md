@@ -114,7 +114,7 @@ Comparativa limitada a la informacion proporcionada; no se dispone de datos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2single-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.2-3B-backdoor-2single-hate
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2single

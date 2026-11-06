@@ -82,7 +82,7 @@ No se dispone de información comparativa con otros modelos ASR en la documentac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gramscii-IT/parakeet-tdt-0.6b-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Gramscii-IT/parakeet-tdt-0.6b-v3-GGUF
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conversión GGUF de mudler: https://huggingface.co/mudler/parakeet-cpp-gguf
 - Runtime parakeet.cpp: https://github.com/mudler/parakeet.cpp

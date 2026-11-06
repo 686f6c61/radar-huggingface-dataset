@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_llama-3.2` es un adaptador LoRA (librería PEFT, formato safetensors) entrenado sobre `meta-llama/Llama-3.2-3B`. No es un modelo completo: el repositorio contiene únicamente los pesos del adaptador (0,3 GB), que deben cargarse junto con el modelo base. El pipeline declarado es `text-generation` y el autor es el usuario de HuggingFace WijewardhanaNT.
+El modelo `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_llama-3.2` es un adaptador LoRA (librería PEFT, formato safetensors) entrenado sobre `meta-llama/Llama-3.2-3B`. No es un modelo completo: el repositorio contiene únicamente los pesos del adaptador (0,3 GB), que deben cargarse junto con el modelo base. El pipeline declarado es `text-generation` y el autor es el usuario de Hugging Face WijewardhanaNT.
 
 El identificador del repositorio describe el experimento: ajuste sobre el corpus XNLI (`xnli`) en inglés y suajili (`en_and_sw`), con 5000 ejemplos (`5000`), mediante inicialización PiSSA (`PiSSA`) y una rejilla de variantes en la que el porcentaje de componentes singulares principales empleados va del 1 % al 40 % (`percentage_1_40`). XNLI es una tarea de inferencia de lenguaje natural (NLI) con tres etiquetas: implicación, neutralidad y contradicción.
 
@@ -24,7 +24,7 @@ La relevancia del repositorio es, por tanto, experimental y metodológica: sirve
 | Modelo base | meta-llama/Llama-3.2-3B |
 | Pipeline | text-generation |
 | Tamano del repositorio | 0,3 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-21 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-21 |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ Nota: los datos de Qwen2.5-3B, Phi-3.5-mini-instruct y XLM-RoBERTa-large procede
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_llama-3.2)
+- [Modelo en Hugging Face](https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_PiSSA_llama-3.2)
 - [Modelo base: meta-llama/Llama-3.2-3B](https://huggingface.co/meta-llama/Llama-3.2-3B)
 - [Paper citado en las etiquetas del repositorio: arxiv:1910.09700 (Lacoste et al., 2019, calculo de emisiones de carbono)](https://arxiv.org/abs/1910.09700)
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a sitios de pizzerias y no guardan relacion con el contenido de la ficha.

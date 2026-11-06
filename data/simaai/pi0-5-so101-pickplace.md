@@ -84,8 +84,8 @@ Las mediciones corresponden a 20 peticiones medidas tras tres calentamientos en 
 
 | Modelo | Tipo | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pi0.5-SO101-PickPlace (este) | VLA compilado para Modalix | Pick-and-place de goma gris en cesta | no disponible | Gemma | Bundle de 5,0 GB en HuggingFace |
-| lerobot/pi05_base | VLA base en PyTorch | Política generalista preentrenada | no disponible | Gemma | Checkpoint en HuggingFace |
+| Pi0.5-SO101-PickPlace (este) | VLA compilado para Modalix | Pick-and-place de goma gris en cesta | no disponible | Gemma | Bundle de 5,0 GB en Hugging Face |
+| lerobot/pi05_base | VLA base en PyTorch | Política generalista preentrenada | no disponible | Gemma | Checkpoint en Hugging Face |
 | Otras políticas SO-101 ajustadas por tarea | VLA ajustado | Tareas específicas sobre SO-101 | no disponible | variable | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada; la comparación se limita a formato de entrega, plataforma objetivo y licencia.
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simaai/Pi0.5-SO101-PickPlace
+- Modelo en Hugging Face: https://huggingface.co/simaai/Pi0.5-SO101-PickPlace
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste: https://huggingface.co/datasets/Priyakarna/SO101-GreyEraser-PickPlace/tree/bfd7c1831092adfb0f02273e390d86bad193d419
 - Licencia Gemma (referenciada en la model card del base): https://huggingface.co/lerobot/pi05_base

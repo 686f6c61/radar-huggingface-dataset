@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`pwnfox-red/red-model-public` es un repositorio de pesos publicado en HuggingFace por el usuario `pwnfox-red`. La informacion publica disponible es minima: se trata de un repositorio con acceso restringido (gated), licencia MIT, identificador DOI asociado (10.57967/hf/10369) y sin descargas ni valoraciones registradas en el momento de la consulta. El repositorio fue creado y actualizado en la misma fecha (12 de septiembre de 2026), lo que sugiere una publicacion unica sin revisiones posteriores documentadas.
+`pwnfox-red/red-model-public` es un repositorio de pesos publicado en Hugging Face por el usuario `pwnfox-red`. La informacion publica disponible es minima: se trata de un repositorio con acceso restringido (gated), licencia MIT, identificador DOI asociado (10.57967/hf/10369) y sin descargas ni valoraciones registradas en el momento de la consulta. El repositorio fue creado y actualizado en la misma fecha (12 de septiembre de 2026), lo que sugiere una publicacion unica sin revisiones posteriores documentadas.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline de la tarea. La model card publica no expone estos datos y los resultados de busqueda web realizados no aportan ninguna referencia tecnica al modelo: los unicos resultados devueltos corresponden a un portal de noticias sobre educacion vial en Rumania, completamente ajenos al objeto de la ficha.
 
-Por tanto, esta ficha recoge unicamente los metadatos verificables del repositorio y senala de forma explicita los campos no disponibles. Cualquier evaluacion tecnica o comparativa de rendimiento requeriria acceder a los pesos (aceptando previamente las condiciones de acceso en HuggingFace) y ejecutar una evaluacion propia.
+Por tanto, esta ficha recoge unicamente los metadatos verificables del repositorio y senala de forma explicita los campos no disponibles. Cualquier evaluacion tecnica o comparativa de rendimiento requeriria acceder a los pesos (aceptando previamente las condiciones de acceso en Hugging Face) y ejecutar una evaluacion propia.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha recoge unicamente los metadatos verificables del repositor
 | Identificador | pwnfox-red/red-model-public |
 | Autor | pwnfox-red |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | DOI | 10.57967/hf/10369 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -77,7 +77,7 @@ No consta ningun dato de MMLU, HumanEval, GSM8K, MT-Bench ni de cualquier otra e
 - Viabilidad en GPU de consumo: no determinable. Dependera del tamano del modelo y del nivel de cuantizacion, ninguno de los cuales esta documentado.
 - Opciones de despliegue: no disponible. No puede confirmarse compatibilidad con vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM ni con `transformers`, ya que se desconoce el formato de los pesos y la arquitectura.
 - Latencia y throughput estimados: no disponible.
-- Consideracion adicional: el acceso esta restringido, por lo que cualquier prueba de despliegue requiere primero solicitar y obtener autorizacion en HuggingFace.
+- Consideracion adicional: el acceso esta restringido, por lo que cualquier prueba de despliegue requiere primero solicitar y obtener autorizacion en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -98,7 +98,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Sesgos conocidos: no disponible. No se ha publicado informacion sobre composicion del dataset ni sobre evaluaciones de sesgo.
 - Riesgo de alucinacion: no evaluable sin acceso al modelo y sin datos de entrenamiento.
 - Limitaciones de contexto o idioma: no disponible. No consta lista de idiomas soportados ni longitud de contexto.
-- Restricciones de licencia: la licencia declarada es MIT, que permite uso comercial, modificacion y redistribucion con atribucion. Sin embargo, el acceso restringido anade una capa contractual adicional: es necesario aceptar las condiciones del autor en HuggingFace antes de descargar los pesos, y esas condiciones pueden imponer obligaciones adicionales no reflejadas en la licencia MIT.
+- Restricciones de licencia: la licencia declarada es MIT, que permite uso comercial, modificacion y redistribucion con atribucion. Sin embargo, el acceso restringido anade una capa contractual adicional: es necesario aceptar las condiciones del autor en Hugging Face antes de descargar los pesos, y esas condiciones pueden imponer obligaciones adicionales no reflejadas en la licencia MIT.
 - Ausencia de validacion externa: cero descargas y cero likes implican que el modelo no ha sido probado por terceros de forma publica. No existe evidencia independiente de su calidad, seguridad o estabilidad.
 - Falta de trazabilidad del autor: el perfil `pwnfox-red` no aporta informacion verificable sobre la organizacion responsable, lo que dificulta evaluar el soporte a largo plazo.
 - Advertencia para produccion: no se recomienda integrar este modelo en sistemas en produccion sin una evaluacion previa completa (capacidades, sesgos, seguridad, latencia y coste), dado que no existe documentacion tecnica publica.
@@ -106,7 +106,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pwnfox-red/red-model-public
+- Repositorio en Hugging Face: https://huggingface.co/pwnfox-red/red-model-public
 - DOI asociado: 10.57967/hf/10369 (referenciado en las etiquetas del repositorio; no se ha localizado la pagina de resolucion en la busqueda)
 - Resultados de busqueda web: los unicos enlaces devueltos (politiarutiera.ro y sus subpaginas) no guardan relacion con el modelo y se omiten por no ser relevantes.
 - Paper, blog, repositorio de codigo o demo: no disponible.

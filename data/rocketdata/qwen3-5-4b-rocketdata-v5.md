@@ -78,9 +78,9 @@ Longitud media de respuesta: 6.020 tokens. Si se puntua solo la parte `openrocke
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-rocketdata-v5 | 4.659.865.088 | no disponible (uso recomendado ≥17k) | Diseno OpenRocket en JSON | Apache 2.0 | HuggingFace, GGUF, LoRA |
-| RocketData/Qwen3.5-4B-rocketdata | no disponible | no disponible | Diseno OpenRocket con esquema `flight`/`components` | no disponible | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | no disponible | no disponible | Modelo multimodal generalista | no disponible | HuggingFace |
+| Qwen3.5-4B-rocketdata-v5 | 4.659.865.088 | no disponible (uso recomendado ≥17k) | Diseno OpenRocket en JSON | Apache 2.0 | Hugging Face, GGUF, LoRA |
+| RocketData/Qwen3.5-4B-rocketdata | no disponible | no disponible | Diseno OpenRocket con esquema `flight`/`components` | no disponible | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | no disponible | no disponible | Modelo multimodal generalista | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos alternativos en la informacion proporcionada, por lo que no es posible comparar rendimiento numerico. La diferencia principal frente al predecesor es el esquema de salida, no intercambiable entre ambos.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RocketData/Qwen3.5-4B-rocketdata-v5
+- Modelo en Hugging Face: https://huggingface.co/RocketData/Qwen3.5-4B-rocketdata-v5
 - Modelo predecesor: https://huggingface.co/RocketData/Qwen3.5-4B-rocketdata
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de datos de entrenamiento: https://github.com/Phorceon/rocketdata (rama `sft-v5-data`)

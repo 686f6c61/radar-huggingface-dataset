@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Formato | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dbirks/clef-omni-int4 | INT4 W4A16 g128, safetensors | 6.606.858.864 (recuento safetensors) | no disponible | 96,1 % de concordancia con BF16; TV media 0,033 | Apache 2.0 | HuggingFace, 0 descargas |
-| dbirks/clef-omni-nvfp4 | NVFP4 W4A4, safetensors | no disponible | no disponible | 92,3 % de concordancia con BF16 | Apache 2.0 (heredada) | HuggingFace |
-| Cloudflare/clef-omni | BF16, safetensors | no disponible (70,8 GB en disco) | no disponible | referencia | Apache 2.0 | HuggingFace |
+| dbirks/clef-omni-int4 | INT4 W4A16 g128, safetensors | 6.606.858.864 (recuento safetensors) | no disponible | 96,1 % de concordancia con BF16; TV media 0,033 | Apache 2.0 | Hugging Face, 0 descargas |
+| dbirks/clef-omni-nvfp4 | NVFP4 W4A4, safetensors | no disponible | no disponible | 92,3 % de concordancia con BF16 | Apache 2.0 (heredada) | Hugging Face |
+| Cloudflare/clef-omni | BF16, safetensors | no disponible (70,8 GB en disco) | no disponible | referencia | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (modelos de decisión multimodales) en la información proporcionada.
 
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dbirks/clef-omni-int4
+- Modelo en Hugging Face: https://huggingface.co/dbirks/clef-omni-int4
 - Modelo base: https://huggingface.co/Cloudflare/clef-omni
 - Variante NVFP4: https://huggingface.co/dbirks/clef-omni-nvfp4
 - Script de servicio `serve_clef.py`: https://huggingface.co/dbirks/clef-omni-int4/resolve/main/serve_clef.py

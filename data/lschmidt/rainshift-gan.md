@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RainShift GAN es un conjunto de checkpoints de tipo red generativa adversaria (GAN) orientados a la tarea de *downscaling* (reduccion de escala) de precipitacion. Lo publica el usuario lschmidt en HuggingFace y se presenta como los checkpoints base del benchmark "RainShift: A Benchmark for Precipitation Downscaling Across Geographies" (arXiv:2507.04930). El modelo se ha entrenado sobre el dataset RainShift/rainshift y esta etiquetado con el pipeline `image-to-image`, lo que indica que opera sobre campos bidimensionales (mapas de precipitacion) y devuelve mapas de mayor resolucion.
+RainShift GAN es un conjunto de checkpoints de tipo red generativa adversaria (GAN) orientados a la tarea de *downscaling* (reduccion de escala) de precipitacion. Lo publica el usuario lschmidt en Hugging Face y se presenta como los checkpoints base del benchmark "RainShift: A Benchmark for Precipitation Downscaling Across Geographies" (arXiv:2507.04930). El modelo se ha entrenado sobre el dataset RainShift/rainshift y esta etiquetado con el pipeline `image-to-image`, lo que indica que opera sobre campos bidimensionales (mapas de precipitacion) y devuelve mapas de mayor resolucion.
 
 No se trata de un modelo de lenguaje: es un modelo de vision aplicado a datos geoespaciales climaticos. Su proposito es aprender la transformacion de un campo de precipitacion de baja resolucion a uno de alta resolucion, un problema central en climatologia, hidrologia y evaluacion de riesgo, donde las observaciones y los modelos globales tienen resoluciones mucho mas gruesas que las escalas a las que ocurren los fenomenos extremos.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no permite establecer una comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lschmidt/rainshift-gan
+- Modelo en Hugging Face: https://huggingface.co/lschmidt/rainshift-gan
 - Dataset de entrenamiento: https://huggingface.co/datasets/RainShift/rainshift
 - Articulo del benchmark: https://arxiv.org/abs/2507.04930
 

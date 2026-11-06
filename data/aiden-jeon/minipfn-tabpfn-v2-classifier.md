@@ -86,7 +86,7 @@ Excluyendo philippine, GesturePhaseSegmentationProcessed, wine-quality-white, kc
 
 | Modelo | Parámetros | Contexto / filas | ROC AUC AMLB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minipfn TabPFN v2 classifier (este) | 7,2 M | hasta 2.048 filas, 160 características | 0,9235 | Apache-2.0 | HuggingFace + GitHub |
+| minipfn TabPFN v2 classifier (este) | 7,2 M | hasta 2.048 filas, 160 características | 0,9235 | Apache-2.0 | Hugging Face + GitHub |
 | TabPFN v2 oficial (PriorLabs) | no disponible | no disponible | 0,9323 | no disponible en la información | GitHub PriorLabs/TabPFN |
 | TabICL | no disponible | no disponible | no disponible | BSD-3-Clause (prior) | GitHub soda-inria/tabicl |
 
@@ -103,7 +103,7 @@ Excluyendo philippine, GesturePhaseSegmentationProcessed, wine-quality-white, kc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-classifier
+- Hugging Face: https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-classifier
 - Repositorio de código: https://github.com/Aiden-Jeon/minipfn
 - Paper TabPFN v2 (Nature): https://doi.org/10.1038/s41586-024-08328-6
 - TabPFN oficial (PriorLabs): https://github.com/PriorLabs/TabPFN

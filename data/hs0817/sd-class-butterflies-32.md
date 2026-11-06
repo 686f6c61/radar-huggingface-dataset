@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hs0817/sd-class-butterflies-32` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario hs0817 en HuggingFace. Se trata de un checkpoint educativo creado en el marco de la Unidad 1 del curso Diffusion Models Class de HuggingFace, cuyo objetivo es ilustrar el entrenamiento de un modelo DDPM desde cero sobre un conjunto de datos pequeno y de baja resolucion.
+`hs0817/sd-class-butterflies-32` es un modelo de difusion para generacion incondicional de imagenes de mariposas, publicado por el usuario hs0817 en Hugging Face. Se trata de un checkpoint educativo creado en el marco de la Unidad 1 del curso Diffusion Models Class de Hugging Face, cuyo objetivo es ilustrar el entrenamiento de un modelo DDPM desde cero sobre un conjunto de datos pequeno y de baja resolucion.
 
 El modelo emplea la libreria `diffusers` y se sirve mediante el pipeline `DDPMPipeline`, con un total de 18.536.323 parametros (aproximadamente 18,5 millones) y un repositorio de solo 0,1 GB. Estas cifras lo sitúan en la categoria de los modelos de difusion miniatura: no pretende competir con generadores de imagenes de gran escala, sino servir como referencia didactica y como base para experimentos de ajuste fino baratos.
 
@@ -72,9 +72,9 @@ No se dispone de datos de rendimiento de este modelo en la informacion proporcio
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `hs0817/sd-class-butterflies-32` | 18.536.323 | No disponible; probable 32x32 px (no confirmado) | MIT | HuggingFace |
-| `google/ddpm-cifar10-32` | No disponible en esta busqueda | 32x32 px | No disponible en esta busqueda | HuggingFace |
-| Otros checkpoints de la Diffusion Models Class | No disponible | No disponible | No disponible | HuggingFace |
+| `hs0817/sd-class-butterflies-32` | 18.536.323 | No disponible; probable 32x32 px (no confirmado) | MIT | Hugging Face |
+| `google/ddpm-cifar10-32` | No disponible en esta busqueda | 32x32 px | No disponible en esta busqueda | Hugging Face |
+| Otros checkpoints de la Diffusion Models Class | No disponible | No disponible | No disponible | Hugging Face |
 
 Los datos de los modelos comparados no provienen de la informacion proporcionada; deben verificarse en sus respectivas fichas antes de usarlos.
 
@@ -92,7 +92,7 @@ Los datos de los modelos comparados no provienen de la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hs0817/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/hs0817/sd-class-butterflies-32
 - Repositorio del curso Diffusion Models Class: https://github.com/huggingface/diffusion-models-class
 - Documentacion del pipeline DDPMPipeline en `diffusers`: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - No se han encontrado papers, blogs, demos ni repositorios adicionales especificos de este modelo en la busqueda web realizada.

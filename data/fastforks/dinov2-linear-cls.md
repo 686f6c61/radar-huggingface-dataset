@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fastforks/dinov2-linear-cls` es un paquete de inferencia publicado por el proyecto fastforks que envuelve el clasificador lineal oficial de DINOv2 sobre el backbone ViT-L/14 (Oquab et al., 2023). No es un modelo nuevo: es una receta reproducible que descarga los pesos originales del autor (timm para el backbone y Meta AI para la cabeza lineal ImageNet-1k), los verifica por SHA-256 y los ejecuta con dos backends optimizados (`portable` en PyTorch y `kernels` con CUDA propio). El repositorio de HuggingFace contiene unicamente la model card y el manifiesto `card.toml`; no aloja pesos.
+`fastforks/dinov2-linear-cls` es un paquete de inferencia publicado por el proyecto fastforks que envuelve el clasificador lineal oficial de DINOv2 sobre el backbone ViT-L/14 (Oquab et al., 2023). No es un modelo nuevo: es una receta reproducible que descarga los pesos originales del autor (timm para el backbone y Meta AI para la cabeza lineal ImageNet-1k), los verifica por SHA-256 y los ejecuta con dos backends optimizados (`portable` en PyTorch y `kernels` con CUDA propio). El repositorio de Hugging Face contiene unicamente la model card y el manifiesto `card.toml`; no aloja pesos.
 
 El modelo resuelve una tarea concreta: clasificacion de imagen en las 1000 clases de ImageNet-1k a resolucion fija de 224x224, a partir de la concatenacion del token `[CLS]` y la media de los tokens de parche. Es relevante para desarrolladores que necesitan un clasificador de referencia con paridad numerica verificada frente al codigo original, y para quienes quieren medir el coste real de un ViT-L/14 en GPUs de consumo (RTX 5060 Ti 16 GB en los benchmarks publicados).
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks de precision (top-1, top-5) en la i
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `fastforks/dinov2-linear-cls` (ViT-L/14 + cabeza lineal) | ~304 M (no confirmado en la ficha) | Imagen fija 224x224 | Clasificacion ImageNet-1k | Apache-2.0 | Pesos en timm y Meta; paquete en fastforks |
-| `timm/vit_large_patch14_dinov2.lvd142m` | ~304 M (no confirmado en la ficha) | Imagen, resolucion configurable | Backbone auto-supervisado (sin cabeza) | Apache-2.0 | HuggingFace (timm) |
+| `timm/vit_large_patch14_dinov2.lvd142m` | ~304 M (no confirmado en la ficha) | Imagen, resolucion configurable | Backbone auto-supervisado (sin cabeza) | Apache-2.0 | Hugging Face (timm) |
 | DINOv2 ViT-B/14 + cabeza lineal | no disponible | Imagen fija 224x224 | Clasificacion ImageNet-1k | Apache-2.0 | Pesos en Meta AI |
 | CLIP ViT-L/14 | no disponible | Imagen + texto | Clasificacion zero-shot y retrieval | Licencia propia de OpenAI | Pesos en OpenAI |
 
@@ -102,7 +102,7 @@ La comparativa se limita a lo verificable en la informacion proporcionada: no ha
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/dinov2-linear-cls
+- Model card en Hugging Face: https://huggingface.co/fastforks/dinov2-linear-cls
 - Repositorio de codigo fastforks: https://github.com/kleinicke/fastforks
 - Manifiesto de la variante (`card.toml`): https://github.com/kleinicke/fastforks/blob/main/src/fastforks/classification/models/dinov2_linear_cls/card.toml
 - Documentacion de benchmarks: https://github.com/kleinicke/fastforks/blob/main/docs/benchmarks.md

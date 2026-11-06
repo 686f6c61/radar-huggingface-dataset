@@ -77,9 +77,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento en JevBench public | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CoCo-Decision-DS-4B | 4B (adaptador LoRA sobre Qwen/Qwen3.5-4B) | 4.096 tokens | 0,879 de accuracy y 0,079 de ECE (N=231, autoinformado) | Apache 2.0 | Adaptador en HuggingFace |
-| CoCo-Decision-4B-Ko | 4B (adaptador LoRA; modelo del mismo autor y receta original) | No disponible en la informacion proporcionada | No disponible (columna truncada en la informacion disponible) | Apache 2.0 | Adaptador en HuggingFace; endpoint de inferencia en FriendliAI |
-| Qwen/Qwen3.5-4B | 4B (modelo base completo) | No disponible en la informacion proporcionada | No aplica: es un modelo generativo, no un modelo de decision con cabecera de calibracion | No disponible en la informacion proporcionada | Pesos base en HuggingFace (revision `851bf6e8`) |
+| CoCo-Decision-DS-4B | 4B (adaptador LoRA sobre Qwen/Qwen3.5-4B) | 4.096 tokens | 0,879 de accuracy y 0,079 de ECE (N=231, autoinformado) | Apache 2.0 | Adaptador en Hugging Face |
+| CoCo-Decision-4B-Ko | 4B (adaptador LoRA; modelo del mismo autor y receta original) | No disponible en la informacion proporcionada | No disponible (columna truncada en la informacion disponible) | Apache 2.0 | Adaptador en Hugging Face; endpoint de inferencia en FriendliAI |
+| Qwen/Qwen3.5-4B | 4B (modelo base completo) | No disponible en la informacion proporcionada | No aplica: es un modelo generativo, no un modelo de decision con cabecera de calibracion | No disponible en la informacion proporcionada | Pesos base en Hugging Face (revision `851bf6e8`) |
 
 No se dispone de datos de otros modelos de decision comparables de la misma categoria en la informacion proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos de decision comparables de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/corners-ai/CoCo-Decision-DS-4B
+- Modelo en Hugging Face: https://huggingface.co/corners-ai/CoCo-Decision-DS-4B
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo predecesor CoCo-Decision-4B-Ko: https://huggingface.co/corners-ai/CoCo-Decision-4B-Ko
 - Ficha de CoCo-Decision-4B y JevBench en Benchmark Heaven: https://benchmarkheaven.com/jev-models/coco-decision-4b

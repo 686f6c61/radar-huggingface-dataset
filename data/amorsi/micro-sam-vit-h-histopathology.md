@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Dominio | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| micro-sam vit_h_histopathology | SAM ViT-H | Histopatología | no disponible | no disponible (código MIT) | HuggingFace (espejo) |
-| SAM original (vit_h) | SAM ViT-H | Imágenes naturales | ~630M (encoder) | Apache 2.0 | Meta / HuggingFace |
-| micro-sam vit_b (microscopía) | SAM ViT-B | Microscopía general | no disponible | código MIT | HuggingFace / ownCloud |
+| micro-sam vit_h_histopathology | SAM ViT-H | Histopatología | no disponible | no disponible (código MIT) | Hugging Face (espejo) |
+| SAM original (vit_h) | SAM ViT-H | Imágenes naturales | ~630M (encoder) | Apache 2.0 | Meta / Hugging Face |
+| micro-sam vit_b (microscopía) | SAM ViT-B | Microscopía general | no disponible | código MIT | Hugging Face / ownCloud |
 | Cellpose | U-Net adaptada | Células y núcleos | no disponible | BSD-3 | GitHub |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amorsi/micro-sam-vit-h-histopathology
+- Repositorio Hugging Face: https://huggingface.co/amorsi/micro-sam-vit-h-histopathology
 - Repositorio oficial micro-sam: https://github.com/computational-cell-analytics/micro-sam
 - Registro de checkpoints (`util.py`): https://github.com/computational-cell-analytics/micro-sam/blob/master/micro_sam/util.py
 - Pesos `model.pt` (original): https://owncloud.gwdg.de/index.php/s/L7AcvVz7DoWJ2RZ/download

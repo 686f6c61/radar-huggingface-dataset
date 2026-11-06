@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `xw17/Qwen2.5-7B-Instruct_SFT_lora_usc-had` es un ajuste fino de tipo LoRA (Low-Rank Adaptation) entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen2.5-7B-Instruct, publicado por el usuario xw17 en HuggingFace. El nombre del repositorio indica la cadena tecnica completa (modelo base, metodo de ajuste y un sufijo "usc-had" no documentado), pero la model card asociada es la plantilla autogenerada por HuggingFace y no contiene ningun dato real: todos los campos aparecen como "[More Information Needed]".
+El modelo identificado como `xw17/Qwen2.5-7B-Instruct_SFT_lora_usc-had` es un ajuste fino de tipo LoRA (Low-Rank Adaptation) entrenado mediante SFT (supervised fine-tuning) sobre el modelo base Qwen2.5-7B-Instruct, publicado por el usuario xw17 en Hugging Face. El nombre del repositorio indica la cadena tecnica completa (modelo base, metodo de ajuste y un sufijo "usc-had" no documentado), pero la model card asociada es la plantilla autogenerada por Hugging Face y no contiene ningun dato real: todos los campos aparecen como "[More Information Needed]".
 
 El tamano del repositorio es de 0,1 GB, lo que es coherente con un adaptador LoRA (pesos de bajo rango) y no con un modelo completo, que en el caso de un transformer de 7B parametros en fp16 ocuparia del orden de 15 GB. Esto implica que para su uso es necesario descargar por separado el modelo base Qwen2.5-7B-Instruct y cargar el adaptador encima.
 
@@ -77,10 +77,10 @@ La comparacion se establece con el modelo base y con dos alternativas de tamano 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| xw17/Qwen2.5-7B-Instruct_SFT_lora_usc-had (adaptador) | Adaptador LoRA sobre 7,61 mil millones | No disponible | No disponible | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-7B-Instruct (base) | 7,61 mil millones | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | HuggingFace y Ollama | Publicado por el autor en su model card |
-| Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 | Apache 2.0 | HuggingFace | Publicado por el autor (referencia externa) |
-| Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 | Llama 3.1 Community License | HuggingFace y Ollama | Publicado por Meta (referencia externa) |
+| xw17/Qwen2.5-7B-Instruct_SFT_lora_usc-had (adaptador) | Adaptador LoRA sobre 7,61 mil millones | No disponible | No disponible | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-7B-Instruct (base) | 7,61 mil millones | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | Hugging Face y Ollama | Publicado por el autor en su model card |
+| Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.768 | Apache 2.0 | Hugging Face | Publicado por el autor (referencia externa) |
+| Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 | Llama 3.1 Community License | Hugging Face y Ollama | Publicado por Meta (referencia externa) |
 
 La diferencia clave de este repositorio frente a los anteriores es la ausencia total de documentacion, evaluacion y licencia declarada, ademas de su naturaleza de adaptador y no de modelo completo.
 
@@ -98,7 +98,7 @@ La diferencia clave de este repositorio frente a los anteriores es la ausencia t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_usc-had
+- Modelo en Hugging Face: https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_usc-had
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Paper de Qwen2.5 (informe tecnico, referencia del modelo base): https://arxiv.org/abs/2412.15115

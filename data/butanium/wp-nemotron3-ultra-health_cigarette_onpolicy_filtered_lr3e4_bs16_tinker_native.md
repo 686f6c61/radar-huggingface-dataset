@@ -85,7 +85,7 @@ Comparativa con modelos de proposito general de la misma categoria: no disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_onpolicy_filtered_lr3e4_bs16_tinker_native
+- Repositorio Hugging Face: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_onpolicy_filtered_lr3e4_bs16_tinker_native
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Tinker (herramienta de entrenamiento): https://thinkingmachines.ai/tinker/
 - Repositorio hermano (crossed, filtrado, lr3e4/bs16): https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_crossed_onpolicy_filtered_lr3e4_bs16_tinker_native

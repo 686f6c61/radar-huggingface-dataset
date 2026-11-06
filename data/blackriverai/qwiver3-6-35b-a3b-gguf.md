@@ -84,6 +84,6 @@ La comparacion con Mixtral 8x7B es orientativa: ambos son MoE, pero QwiVer activ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BlackRiverAI/QwiVer3.6-35B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/BlackRiverAI/QwiVer3.6-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Base de entrenamiento: https://huggingface.co/unsloth/Qwen3.6-35B-A3B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrackNet es un modelo de visión por computador especializado en el seguimiento de pelotas de tenis en vídeo de retransmisiones deportivas. Fue desarrollado originalmente por el equipo de Huang, Liao, Chen, Ik y Peng de la NCTU de Taiwán, y presentado en AVSS 2019. La versión que se documenta aquí es un espejo en HuggingFace de los pesos publicados por yastrebksv, que reimplementó el modelo original de Keras en PyTorch. El modelo resuelve un problema clásico del análisis deportivo: detectar y seguir una pelota de aproximadamente 10 píxeles, con desenfoque de movimiento, que en un solo fotograma es indistinguible de las marcas de la pista.
+TrackNet es un modelo de visión por computador especializado en el seguimiento de pelotas de tenis en vídeo de retransmisiones deportivas. Fue desarrollado originalmente por el equipo de Huang, Liao, Chen, Ik y Peng de la NCTU de Taiwán, y presentado en AVSS 2019. La versión que se documenta aquí es un espejo en Hugging Face de los pesos publicados por yastrebksv, que reimplementó el modelo original de Keras en PyTorch. El modelo resuelve un problema clásico del análisis deportivo: detectar y seguir una pelota de aproximadamente 10 píxeles, con desenfoque de movimiento, que en un solo fotograma es indistinguible de las marcas de la pista.
 
 La arquitectura es una CNN con codificador estilo VGG y decodificador deconvolucional, con 10,7 millones de parámetros. Su innovación clave es el uso de contexto temporal: procesa tres fotogramas consecutivos apilados en nueve canales a resolución 360x640, y genera un mapa de calor por píxel con 256 niveles de intensidad. La posición de la pelota se obtiene como el argmax del mapa, aunque en la práctica se recomienda umbralizar y aplicar detección de círculos de Hough para mayor robustez. Es un modelo ligero, con licencia MIT, y sigue siendo relevante como base para sistemas de seguimiento de objetos pequeños en vídeo deportivo, con variantes posteriores como TrackNetV4 que lo mejoran.
 
@@ -77,7 +77,7 @@ La diferencia fundamental con YOLO es el uso de contexto temporal: TrackNet pued
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kjfk/tracknet-tennis-ball-mirror
+- Modelo en Hugging Face: https://huggingface.co/kjfk/tracknet-tennis-ball-mirror
 - Paper original (arXiv): https://arxiv.org/abs/1907.03698
 - Repositorio GitHub de yastrebksv (reimplementación PyTorch): https://github.com/yastrebksv/TrackNet
 - TrackNetV4 (página del proyecto): https://tracknetv4.github.io/

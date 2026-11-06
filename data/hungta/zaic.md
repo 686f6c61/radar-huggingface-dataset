@@ -85,6 +85,6 @@ No se dispone de datos de benchmarks comparables con otras alternativas de tool 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hungta/zaic
+- Hugging Face: https://huggingface.co/hungta/zaic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios o demos adicionales.

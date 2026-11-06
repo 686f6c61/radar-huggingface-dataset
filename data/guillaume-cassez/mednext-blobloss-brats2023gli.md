@@ -80,9 +80,9 @@ Conteo de lesiones en régimen bruto: lesiones perdidas 190 → 129 (3/3 regione
 
 | Modelo | Backbone | Contexto/parche | Dice reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedNeXt-B + Blob Loss (este) | MedNeXt-B | 128³ | 0,9345 (CV media) | MIT | HuggingFace |
+| MedNeXt-B + Blob Loss (este) | MedNeXt-B | 128³ | 0,9345 (CV media) | MIT | Hugging Face |
 | Experto base B del mismo programa | no especificado | no disponible | referencia de los deltas | no disponible | no disponible en esta ficha |
-| MedNeXt original (MIC-DKFZ) | MedNeXt | según plan nnU-Net | no disponible | no disponible en esta ficha | HuggingFace (modelo base) |
+| MedNeXt original (MIC-DKFZ) | MedNeXt | según plan nnU-Net | no disponible | no disponible en esta ficha | Hugging Face (modelo base) |
 
 No se dispone de datos comparativos con otros modelos BraTS 2023 en la información proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos comparativos con otros modelos BraTS 2023 en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guillaume-cassez/mednext-blobloss-brats2023gli
+- Modelo en Hugging Face: https://huggingface.co/guillaume-cassez/mednext-blobloss-brats2023gli
 - Modelo base MedNeXt: https://huggingface.co/MIC-DKFZ/MedNeXt
 - Repositorio nnU-Net v2: https://github.com/MIC-DKFZ/nnUNet
 - Repositorio MedNeXt: https://github.com/MIC-DKFZ/MedNeXt

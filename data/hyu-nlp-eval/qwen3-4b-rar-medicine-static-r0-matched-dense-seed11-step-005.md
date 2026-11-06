@@ -18,7 +18,7 @@ Su relevancia es fundamentalmente metodologica: no es un modelo destinado a prod
 | Longitud de contexto | no disponible en la model card; una ficha de un checkpoint hermano en featherless.ai indica 32.768 tokens. La configuracion del modelo base Qwen3-4B-Instruct-2507 no se detalla en la informacion proporcionada |
 | Tipos de cuantizacion | no disponible. El repositorio solo distribuye pesos en BF16; no se publican variantes GGUF, AWQ ni GPTQ |
 | Idiomas soportados | no disponible en la ficha; el modelo base Qwen3-4B-Instruct-2507 se distribuye como multilingue, pero este checkpoint no declara idiomas |
-| Licencia | apache-2.0 segun los metadatos de HuggingFace y el frontmatter de la model card; la propia model card indica "Research use only" (uso exclusivo en investigacion), lo que introduce ambiguedad |
+| Licencia | apache-2.0 segun los metadatos de Hugging Face y el frontmatter de la model card; la propia model card indica "Research use only" (uso exclusivo en investigacion), lo que introduce ambiguedad |
 | Formato de pesos | safetensors en BF16 en la raiz del repositorio, mas checkpoint original de veRL en `original_checkpoint/` |
 
 ## Arquitectura y entrenamiento
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 |---|---|---|---|---|---|
 | HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-005 | 4,02 B | no disponible (32.768 tokens segun ficha externa de un hermano) | apache-2.0 con aviso "research use only" | 0 descargas, 0 likes | Checkpoint del paso 5 de un experimento de RL en dominio medico |
 | Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 B | no disponible en la informacion proporcionada | apache-2.0 | Publico y ampliamente distribuido | Modelo conversacional de referencia del que deriva este checkpoint |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036 | ~4 B | no disponible | no disponible | Publico en HuggingFace | Mismo experimento en el paso 36; descrito por un proveedor externo como "la politica tras 36 actualizaciones globales del optimizador" |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013 | ~4 B | 32.768 tokens segun featherless.ai | no disponible | Publico en HuggingFace y servido por featherless.ai | Variante con recompensa basada en rubricas en linea, thinking desactivado, "estado de politica historico" |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036 | ~4 B | no disponible | no disponible | Publico en Hugging Face | Mismo experimento en el paso 36; descrito por un proveedor externo como "la politica tras 36 actualizaciones globales del optimizador" |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013 | ~4 B | 32.768 tokens segun featherless.ai | no disponible | Publico en Hugging Face y servido por featherless.ai | Variante con recompensa basada en rubricas en linea, thinking desactivado, "estado de politica historico" |
 | Alternativas generalistas de ~3-4 B (Llama 3.2 3B Instruct, Gemma 3 4B, Phi-4-mini) | 3-4 B | no disponible en la informacion proporcionada | licencias propias de cada familia | ampliamente disponibles | Comparacion no realizada por falta de datos de rendimiento de este checkpoint |
 
 No se dispone de resultados de benchmarks que permitan una comparacion cuantitativa de rendimiento con ninguna de estas alternativas.
@@ -81,15 +81,15 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 - Sesgos conocidos: no documentados por el autor. Al derivar de Qwen3-4B-Instruct-2507 hereda los sesgos del modelo base, no cuantificados en esta ficha.
 - Limitaciones de idioma: no se declara ningun idioma para este checkpoint, y los datos de entrenamiento del ajuste por refuerzo parecen centrados en un unico dominio.
 - Sin benchmarks publicados: no es posible estimar la degradacion o mejora respecto al modelo base, ni comparar con alternativas de forma cuantitativa.
-- Trazabilidad limitada: la model card es muy breve, sin hiperparametros, sin composicion de datos, sin curvas de recompensa y sin fecha de publicacion de resultados. El campo `createdAt` de HuggingFace es 2026-10-01, coherente con el sufijo de fecha 20260928 de la ejecucion.
+- Trazabilidad limitada: la model card es muy breve, sin hiperparametros, sin composicion de datos, sin curvas de recompensa y sin fecha de publicacion de resultados. El campo `createdAt` de Hugging Face es 2026-10-01, coherente con el sufijo de fecha 20260928 de la ejecucion.
 - El repositorio duplica pesos (BF16 y checkpoint veRL), lo que infla la descarga hasta 25,7 GB para un modelo de 4B.
 - No hay cuantizaciones oficiales; cualquier GGUF o AWQ usado en produccion sera una conversion de terceros sin validacion del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-005
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-005
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Checkpoint hermano static-r0-matched-seed11-step-036 en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036
+- Checkpoint hermano static-r0-matched-seed11-step-036 en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036
 - Checkpoint hermano onlinerubrics-seed11-step-000: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000
 - Checkpoint hermano onlinerubrics-seed11-step-018: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018
 - Ficha de un checkpoint hermano onlinerubrics-seed11-step-013 en featherless.ai: https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio r3L4x123/video-loras-wildfans es una colección de LoRAs de video publicada en HuggingFace por el usuario r3L4x123. Se trata de un repositorio de gran tamaño (83,1 GB) que, por su nombre, parece estar orientado a la adaptación de modelos de generación de video mediante LoRAs, aunque no se ha publicado ninguna documentación técnica que lo confirme.
+El repositorio r3L4x123/video-loras-wildfans es una colección de LoRAs de video publicada en Hugging Face por el usuario r3L4x123. Se trata de un repositorio de gran tamaño (83,1 GB) que, por su nombre, parece estar orientado a la adaptación de modelos de generación de video mediante LoRAs, aunque no se ha publicado ninguna documentación técnica que lo confirme.
 
 El modelo no registra descargas ni valoraciones en el momento de la consulta, lo que indica que es un proyecto reciente o de baja adopción. La licencia declarada es unlicense, lo que implica que el contenido se ofrece como dominio público, sin restricciones de uso o distribución.
 
@@ -76,5 +76,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/r3L4x123/video-loras-wildfans
+- Hugging Face: https://huggingface.co/r3L4x123/video-loras-wildfans
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

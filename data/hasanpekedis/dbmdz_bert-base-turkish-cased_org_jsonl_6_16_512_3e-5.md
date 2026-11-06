@@ -4,7 +4,7 @@
 
 El modelo `HasanPekedis/dbmdz_bert-base-turkish-cased_org_jsonl_6_16_512_3e-5` es un clasificador de tokens (token classification) derivado de `dbmdz/bert-base-turkish-cased`, ajustado especificamente para el reconocimiento de entidades nombradas (NER) de tipo organizacion (`ORG`) en turco. Su unica tarea es etiquetar cada token de una secuencia con el esquema BIO de tres etiquetas (`O`, `B-ORG`, `I-ORG`), de modo que detecta nombres de empresas, clubes deportivos, instituciones publicas, partidos politicos, universidades, periodicos, federaciones y organizaciones internacionales.
 
-Se trata de un encoder BERT clasico de 12 capas con 110.029.059 parametros, ventana maxima de 512 tokens y tokenizacion *cased* (sensible a mayusculas/minusculas), lo que resulta relevante porque en turco la mayusculizacion es un indicio fiable de nombre propio. El repositorio ocupa 0,4 GB y los pesos se distribuyen en formato safetensors. No hay informacion publicada sobre licencia, pipeline declarado ni idiomas en los metadatos de HuggingFace.
+Se trata de un encoder BERT clasico de 12 capas con 110.029.059 parametros, ventana maxima de 512 tokens y tokenizacion *cased* (sensible a mayusculas/minusculas), lo que resulta relevante porque en turco la mayusculizacion es un indicio fiable de nombre propio. El repositorio ocupa 0,4 GB y los pesos se distribuyen en formato safetensors. No hay informacion publicada sobre licencia, pipeline declarado ni idiomas en los metadatos de Hugging Face.
 
 El modelo es relevante para pipelines de extraccion de informacion en turco, donde un detector especializado en `ORG` con un F1 de 0,9089 sobre 2.558 entidades de test puede integrarse como componente de un sistema NER mayor, como paso previo a entity linking o como modulo de enriquecimiento de corpus periodisticos, deportivos o administrativos.
 
@@ -95,10 +95,10 @@ La evaluacion cualitativa incluida en la model card muestra 30 ejemplos, con cas
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`HasanPekedis/..._org_jsonl_6_16_512_3e-5`) | 110.029.059 | 512 tokens | NER de `ORG` en turco | no disponible | HuggingFace, safetensors |
-| `dbmdz/bert-base-turkish-cased` | 110 millones (BERT base) | 512 tokens | Modelo de lenguaje enmascarado (base, sin cabeza NER) | no disponible en la informacion proporcionada | HuggingFace |
-| `xlm-roberta-base` ajustado a NER turco | 278 millones aprox. | 512 tokens | NER multilingue (requiere fine-tuning) | MIT (modelo base) | HuggingFace |
-| BERTurk (`dbmdz/bert-base-turkish-uncased`) | 110 millones | 512 tokens | Modelo de lenguaje enmascarado en turco | no disponible en la informacion proporcionada | HuggingFace |
+| Este modelo (`HasanPekedis/..._org_jsonl_6_16_512_3e-5`) | 110.029.059 | 512 tokens | NER de `ORG` en turco | no disponible | Hugging Face, safetensors |
+| `dbmdz/bert-base-turkish-cased` | 110 millones (BERT base) | 512 tokens | Modelo de lenguaje enmascarado (base, sin cabeza NER) | no disponible en la informacion proporcionada | Hugging Face |
+| `xlm-roberta-base` ajustado a NER turco | 278 millones aprox. | 512 tokens | NER multilingue (requiere fine-tuning) | MIT (modelo base) | Hugging Face |
+| BERTurk (`dbmdz/bert-base-turkish-uncased`) | 110 millones | 512 tokens | Modelo de lenguaje enmascarado en turco | no disponible en la informacion proporcionada | Hugging Face |
 
 No hay resultados de benchmarks comparativos publicados en la informacion disponible; las cifras de parametros de los modelos alternativos son datos generales de sus arquitecturas, no mediciones sobre este conjunto de test.
 
@@ -109,6 +109,6 @@ No hay resultados de benchmarks comparativos publicados en la informacion dispon
 - Riesgo de alucinacion de entidades: como todo clasificador de tokens, puede marcar falsos positivos. En la evaluacion cualitativa se observa al menos un caso, `Alike`, etiquetado incorrectamente como organizacion.
 - Propagacion de etiquetas solo al primer subtoken: el diseno de entrenamiento puede fragmentar entidades cuyos subtokens no empiecen con `B-ORG` o provocar fronteras imprecisas en palabras compuestas y en turco aglutinante.
 - Limite de 512 tokens: los documentos mas largos deben trocearse, con el riesgo de perder entidades que queden partidas en el limite de ventana.
-- Licencia no disponible: la model card no especifica terminos, y los metadatos de HuggingFace tampoco. Antes de un uso comercial es imprescindible contactar con el autor y verificar la licencia del modelo base `dbmdz/bert-base-turkish-cased`.
+- Licencia no disponible: la model card no especifica terminos, y los metadatos de Hugging Face tampoco. Antes de un uso comercial es imprescindible contactar con el autor y verificar la licencia del modelo base `dbmdz/bert-base-turkish-cased`.
 - Modelo sin validacion externa: 0 descargas y 0 likes en el momento de la consulta, sin revision por pares ni evaluacion independiente. Los unicos resultados disponibles son los que publica el propio autor.
 - Fecha de creacion registrada como 2026-10-04 en los metadatos, lo que conviene verificar antes de citarlo.

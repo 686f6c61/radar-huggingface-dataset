@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Biscut4Biscuit/mola-hrsc-baseline-cog` es un repositorio de modelo alojado en HuggingFace por el usuario Biscut4Biscuit, publicado y actualizado el 11 de octubre de 2026. La model card asociada contiene unicamente la declaracion de licencia MIT y ningun campo descriptivo adicional: no se especifican arquitectura, numero de parametros, longitud de contexto, idiomas ni pipeline de inferencia. El repositorio acumula 0 descargas y 0 "likes", por lo que no existe evidencia publica de uso.
+`Biscut4Biscuit/mola-hrsc-baseline-cog` es un repositorio de modelo alojado en Hugging Face por el usuario Biscut4Biscuit, publicado y actualizado el 11 de octubre de 2026. La model card asociada contiene unicamente la declaracion de licencia MIT y ningun campo descriptivo adicional: no se especifican arquitectura, numero de parametros, longitud de contexto, idiomas ni pipeline de inferencia. El repositorio acumula 0 descargas y 0 "likes", por lo que no existe evidencia publica de uso.
 
 El identificador del modelo combina los terminos "mola" y "hrsc", que en teledeteccion planetaria corresponden al Mars Orbiter Laser Altimeter (MOLA, a bordo del Mars Global Surveyor de NASA) y a la High-Resolution Stereo Camera (HRSC, a bordo del Mars Express de ESA). El sufijo "baseline" sugiere un modelo de referencia o linea base, y "cog" podria referirse al formato de contenedor Cog usado en plataformas de despliegue como Replicate. Ninguna de estas lecturas esta confirmada por la model card, que esta vacia.
 
@@ -94,7 +94,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Biscut4Biscuit/mola-hrsc-baseline-cog
+- Modelo en Hugging Face: https://huggingface.co/Biscut4Biscuit/mola-hrsc-baseline-cog
 - USGS, Mars MGS MOLA - MEX HRSC Blended DEM Global 200m: https://astrogeology.usgs.gov/search/map/mars_mgs_mola_mex_hrsc_blended_dem_global_200m
 - DLR, Adjustment of MOLA Laser Altimeter Tracks to HRSC Photogrammetric (EPSC2024-787): https://elib.dlr.de/204283/1/EPSC2024-787-print-1.pdf
 - DLR, registro bibliografico del articulo anterior: https://elib.dlr.de/204283/

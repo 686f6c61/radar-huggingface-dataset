@@ -99,9 +99,9 @@ El autor indica además una variación media de −0,3 puntos frente al base sin
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WaifuGemma4-26b-a4b-v1-5bpw-exl3 (este) | 25,2 B (model card) | 3,8 B | 8K entrenamiento / 256K base | Apache 2.0 | EXL3 5 bpw, 20,3 GB | HuggingFace |
-| WaifuGemma4-26b-a4b-v1 (sin cuantizar) | 25,2 B | 3,8 B | 8K / 256K | Apache 2.0 | bfloat16 con LoRA fusionada | HuggingFace |
-| Gemma 4 26B-A4B-it | 25,2 B | 3,8 B | hasta 256K | no disponible | bfloat16 | HuggingFace y Google |
+| WaifuGemma4-26b-a4b-v1-5bpw-exl3 (este) | 25,2 B (model card) | 3,8 B | 8K entrenamiento / 256K base | Apache 2.0 | EXL3 5 bpw, 20,3 GB | Hugging Face |
+| WaifuGemma4-26b-a4b-v1 (sin cuantizar) | 25,2 B | 3,8 B | 8K / 256K | Apache 2.0 | bfloat16 con LoRA fusionada | Hugging Face |
+| Gemma 4 26B-A4B-it | 25,2 B | 3,8 B | hasta 256K | no disponible | bfloat16 | Hugging Face y Google |
 | GLM-5.1 (modo non-thinking) | no disponible | no disponible | no disponible | propietaria, vía API | no disponible | API |
 
 En rendimiento, la única comparación cuantitativa publicada es la de preferencia humana: 49,6 % de votos frente a GLM-5.1 en 1.430 batallas ciegas y 59,7 % frente a su propio base sin ajustar. El autor menciona un campo de 13 rivales que incluye Gemini, DeepSeek-v4 y modelos de personaje de Qwen, pero no publica especificaciones ni resultados desglosados por rival. No se dispone de datos de otros modelos abiertos de role-play con los que establecer una comparación de parámetros, contexto y licencia en esta información.
@@ -122,7 +122,7 @@ En rendimiento, la única comparación cuantitativa publicada es la de preferenc
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/waldie/WaifuGemma4-26b-a4b-v1-5bpw-exl3
+- Ficha en Hugging Face: https://huggingface.co/waldie/WaifuGemma4-26b-a4b-v1-5bpw-exl3
 - Modelo base: https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1
 - Modelo original de Google: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Referencias arXiv incluidas en las etiquetas del repositorio (sin título verificado): https://arxiv.org/abs/2310.03716, https://arxiv.org/abs/2303.06135, https://arxiv.org/abs/2505.14946, https://arxiv.org/abs/2502.09082, https://arxiv.org/abs/2601.21459, https://arxiv.org/abs/2402.03300, https://arxiv.org/abs/2607.02770

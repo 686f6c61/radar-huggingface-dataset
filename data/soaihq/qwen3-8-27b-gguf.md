@@ -17,7 +17,7 @@ El modelo es multimodal de entrada (texto e imagen), con una ventana de contexto
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.144 tokens (256K) |
 | Tipos de cuantizacion | Q4_K_M (16,8 GB), Q8_0 (29,0 GB); proyector multimodal mmproj en F16 (927,6 MB). No se publican cuantizaciones por debajo de 4 bits |
-| Idiomas soportados | 201 idiomas y dialectos segun la model card del autor; el metadato de idiomas de HuggingFace figura como no disponible |
+| Idiomas soportados | 201 idiomas y dialectos segun la model card del autor; el metadato de idiomas de Hugging Face figura como no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (para llama.cpp) |
 | Tarea declarada (pipeline) | image-text-to-text |
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento ni de contexto comparado de modelos altern
 - Las cuantizaciones Q4_K_M y Q8_0 implican perdida de precision respecto a los pesos originales. El propio autor no publica cuantizaciones por debajo de 4 bits por considerarlas de calidad insuficiente.
 - El Q8_0 se genera sin imatrix, porque el formato Q8_0 de llama.cpp no la admite; el proceso de calibracion descrito aplica solo a Q4_K_M.
 - La licencia Apache 2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen/Qwen3.8-27B, a las que apunta el propio repositorio.
-- Los metadatos de HuggingFace indican 0 descargas y 0 likes, por lo que no existe validacion de la comunidad sobre estos ficheros en el momento de la consulta.
+- Los metadatos de Hugging Face indican 0 descargas y 0 likes, por lo que no existe validacion de la comunidad sobre estos ficheros en el momento de la consulta.
 - El repositorio declara compatibilidad con llama.cpp v0.5.0; otras versiones o runtimes GGUF no estan verificados en la informacion disponible.
 - La model card original aparece truncada en el apartado de fuentes del corpus de calibracion, por lo que no se puede verificar el detalle completo de las fuentes empleadas.
 

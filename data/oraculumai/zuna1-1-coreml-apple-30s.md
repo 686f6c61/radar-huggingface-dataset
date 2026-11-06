@@ -91,7 +91,7 @@ La conversion Core ML sacrifica la flexibilidad de longitudes variables del mode
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple-30s
+- Repositorio de Hugging Face: https://huggingface.co/oraculumai/ZUNA1.1-CoreML-Apple-30s
 - Modelo base ZUNA1.1: https://huggingface.co/Zyphra/ZUNA1.1
 - Repositorio oficial de ZUNA en GitHub: https://github.com/Zyphra/zuna
 - Pagina del paper tecnico: https://www.zyphra.com/zuna-technical-paper

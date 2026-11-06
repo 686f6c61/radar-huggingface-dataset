@@ -4,7 +4,7 @@
 
 Este modelo es un merge experimental de tres checkpoints de un mismo modelo base no especificado, creado mediante la herramienta mergekit con el método de fusión lineal (Linear merge). El autor, yuhengtu-bytedance, pertenece al equipo de investigación de ByteDance Seed, aunque no se ha publicado documentación oficial sobre el modelo original ni sobre los objetivos del merge. Los checkpoints fusionados corresponden a los pasos de entrenamiento 0, 1000 y 2000 de un modelo denominado `baseline_filtered`, con pesos 1, 2 y 3 respectivamente, tomando como base el checkpoint del paso 2000.
 
-El resultado es un modelo de generación de texto con arquitectura tipo GPT-NeoX (según las etiquetas de HuggingFace) y aproximadamente 6,86 mil millones de parámetros, lo que lo sitúa en la gama de modelos de tamaño medio. El repositorio contiene pesos en formato safetensors con precisión bfloat16, ocupando 13,7 GB. No se ha publicado información sobre licencia, idiomas soportados, contexto máximo ni rendimiento, por lo que su utilidad práctica es limitada y debe considerarse como un artefacto de investigación.
+El resultado es un modelo de generación de texto con arquitectura tipo GPT-NeoX (según las etiquetas de Hugging Face) y aproximadamente 6,86 mil millones de parámetros, lo que lo sitúa en la gama de modelos de tamaño medio. El repositorio contiene pesos en formato safetensors con precisión bfloat16, ocupando 13,7 GB. No se ha publicado información sobre licencia, idiomas soportados, contexto máximo ni rendimiento, por lo que su utilidad práctica es limitada y debe considerarse como un artefacto de investigación.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables. El modelo es un merge e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-0k_1k_2k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-0k_1k_2k_weightedavg_merge
 - Modelo relacionado (merge sin weightedavg): https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-0k_1k_2k_merge
 - Modelo relacionado (unfiltered): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg
 - Página de despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_baseline_filtered-0k_1k_2k_merge

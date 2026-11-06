@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Continuum-mxfp4-mlx es una conversión a MXFP4 y formato MLX de un modelo de la familia Qwen de 27.000 millones de parámetros, publicada por el usuario nightmedia en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un merge derivado de una cadena de modelos intermedios (Wichtel-Qwen3.6-27B, Qwen3.8-27B-heretic-ara, Cold-Fusion-GAIN-V1.1, FF711-Darker-Hero-GAIN-H2.0 y Synthia-4-27B, entre otros) al que después se le ha aplicado una cuantización de 4 bits en formato microscaling FP4 para su ejecución en hardware Apple Silicon mediante la librería MLX.
+Qwen3.8-27B-Continuum-mxfp4-mlx es una conversión a MXFP4 y formato MLX de un modelo de la familia Qwen de 27.000 millones de parámetros, publicada por el usuario nightmedia en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un merge derivado de una cadena de modelos intermedios (Wichtel-Qwen3.6-27B, Qwen3.8-27B-heretic-ara, Cold-Fusion-GAIN-V1.1, FF711-Darker-Hero-GAIN-H2.0 y Synthia-4-27B, entre otros) al que después se le ha aplicado una cuantización de 4 bits en formato microscaling FP4 para su ejecución en hardware Apple Silicon mediante la librería MLX.
 
 El interés del repositorio es doble. Por un lado, ofrece un punto de entrada para ejecutar un modelo de clase 27B en equipos con memoria unificada de gama alta (familias M-series de Apple) sin necesidad de GPUs dedicadas. Por otro lado, sus etiquetas describen un ajuste orientado a razonamiento de cadena larga (long-CoT), código, matemáticas, escritura creativa y rol, con supuesta destilación de Claude 4.6 y ventanas de contexto declaradas de hasta 256k e incluso 1M de tokens.
 
@@ -21,7 +21,7 @@ Conviene ser cauto: el repositorio acumulaba 0 descargas y 0 likes en el momento
 | Licencia | apache-2.0 |
 | Formato de pesos | pesos MLX cuantizados (presumiblemente safetensors; no confirmado explícitamente) |
 | Autor | nightmedia |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Librería declarada | transformers (las etiquetas también indican mlx) |
 | Pipeline declarado | image-text-to-text (no se documentan componentes de visión) |
 | Modelo base | nbeerbower/Wichtel-Qwen3.6-27B, trohrbaugh/Qwen3.8-27B-heretic-ara, DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1, DavidAU/Qwen3.6-27B-V1.1-FF711-Darker-Hero-GAIN-H2.0, nightmedia/Qwen3.8-27B-Cold-Fusion-FF711-Darker-Hero-GAIN-B, migtissera/Synthia-4-27B |
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de ninguno de estos modelos en la informac
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede impedir su uso en automatizaciones o CI.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede impedir su uso en automatizaciones o CI.
 - Ausencia de validación comunitaria: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia externa de calidad, estabilidad ni reproducibilidad.
 - Sin benchmarks publicados: no es posible cuantificar la degradación frente a los modelos base en bf16, ni comparar su rendimiento real con alternativas de la misma categoría.
 - Pérdida por cuantización: MXFP4 es una cuantización agresiva de 4 bits; en tareas sensibles a la precisión, como matemáticas o código, la degradación puede ser notable y no está medida.
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento de ninguno de estos modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Continuum-mxfp4-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Continuum-mxfp4-mlx
 - Modelo base: https://huggingface.co/nbeerbower/Wichtel-Qwen3.6-27B
 - Modelo base: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1

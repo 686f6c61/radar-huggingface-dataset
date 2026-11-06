@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChilloutMix es un checkpoint de Stable Diffusion 1.5 fruto de la fusión (merge) del modelo `nuigurumi/basil_mix` con varios modelos realistas de la comunidad, entre ellos los checkpoints "PoV Skin Texture" de temática explícita publicados por twilightBOO en Civitai. Lo distribuye el usuario `zhao-yulong` en HuggingFace como réplica del repositorio original `Chillout2023/Chilloutmix`; el propio autor lo describe como un modelo orientado a "chicas asiáticas realistas en poses NSFW" y recomienda usar el VAE `vae-ft-mse-840000` junto con el embedding de identidad "Ulzzang-6500".
+ChilloutMix es un checkpoint de Stable Diffusion 1.5 fruto de la fusión (merge) del modelo `nuigurumi/basil_mix` con varios modelos realistas de la comunidad, entre ellos los checkpoints "PoV Skin Texture" de temática explícita publicados por twilightBOO en Civitai. Lo distribuye el usuario `zhao-yulong` en Hugging Face como réplica del repositorio original `Chillout2023/Chilloutmix`; el propio autor lo describe como un modelo orientado a "chicas asiáticas realistas en poses NSFW" y recomienda usar el VAE `vae-ft-mse-840000` junto con el embedding de identidad "Ulzzang-6500".
 
 No es un modelo de lenguaje: no genera texto, no razona y no soporta tool calling. Es un modelo de difusión latente para generación y edición de imágenes, con resolución nativa de 512×512 píxeles y un encoder de texto CLIP limitado a 77 tokens por prompt. Su relevancia práctica es la de un modelo de nicho: un merge comunitario de 2023 que se popularizó por su estilización de retratos fotorrealistas y que hoy se usa principalmente como referencia histórica, como base de merges posteriores o para pipelines de generación de imágenes en ComfyUI y Automatic1111.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia a 512×512 en fp16: en torno a 4 GB con `--medvram` y atención optimizada (xformers o SDPA); aproximadamente 6-8 GB para trabajar con comodidad sin offloading.
 - GPU consumer: cabe en tarjetas de 6 GB o más (RTX 2060, RTX 3060, RTX 4060). Con 8-12 GB (RTX 3060 Ti, RTX 4070) se pueden usar dos pasadas de refinado y ControlNet en la misma sesión.
 - GPU profesional: A100, H100 o L40S permiten servir varias instancias en paralelo y procesar lotes grandes, aunque para un modelo de 512×512 suponen un sobredimensionamiento claro.
-- Despliegue: Automatic1111 WebUI, ComfyUI, Forge, InvokeAI y diffusers (biblioteca de HuggingFace). Para serving por API se suele usar diffusers con FastAPI o plataformas tipo Replicate y RunPod.
+- Despliegue: Automatic1111 WebUI, ComfyUI, Forge, InvokeAI y diffusers (biblioteca de Hugging Face). Para serving por API se suele usar diffusers con FastAPI o plataformas tipo Replicate y RunPod.
 - Almacenamiento: el repositorio ocupa 26,4 GB, muy por encima de los ~2 GB de un único checkpoint fp16, lo que sugiere varios ficheros o versiones empaquetadas; conviene revisar el desglose antes de descargarlo entero.
 - Latencia y throughput: no disponibles en la información proporcionada. Como referencia arquitectónica de SD 1.5, una RTX 4090 genera del orden de unas pocas imágenes por segundo a 512×512 con 20-25 pasos, pero no hay medición publicada para este checkpoint concreto.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura base | Resolución nativa | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChilloutMix (este repo) | SD 1.5 (merge) | 512×512 | 77 tokens CLIP | CreativeML OpenRAIL-M modificada (Dreamlike) | HuggingFace y Civitai; 0 descargas registradas en este repositorio |
-| Realistic Vision | SD 1.5 (merge) | 512×512 | 77 tokens CLIP | CreativeML OpenRAIL-M | HuggingFace y Civitai |
-| DreamShaper | SD 1.5 (merge) | 512×512 | 77 tokens CLIP | CreativeML OpenRAIL-M | HuggingFace y Civitai |
-| majicMIX realistic | SD 1.5 (merge) | 512×512 | 77 tokens CLIP | CreativeML OpenRAIL-M | HuggingFace y Civitai |
+| ChilloutMix (este repo) | SD 1.5 (merge) | 512×512 | 77 tokens CLIP | CreativeML OpenRAIL-M modificada (Dreamlike) | Hugging Face y Civitai; 0 descargas registradas en este repositorio |
+| Realistic Vision | SD 1.5 (merge) | 512×512 | 77 tokens CLIP | CreativeML OpenRAIL-M | Hugging Face y Civitai |
+| DreamShaper | SD 1.5 (merge) | 512×512 | 77 tokens CLIP | CreativeML OpenRAIL-M | Hugging Face y Civitai |
+| majicMIX realistic | SD 1.5 (merge) | 512×512 | 77 tokens CLIP | CreativeML OpenRAIL-M | Hugging Face y Civitai |
 
 Los datos de los modelos alternativos provienen del conocimiento general de la familia SD 1.5 y no se han verificado en la búsqueda web realizada, cuyos resultados no guardan relación con el modelo. No hay métricas comparativas publicadas que permitan afirmar cuál rinde mejor.
 
@@ -86,7 +86,7 @@ Los datos de los modelos alternativos provienen del conocimiento general de la f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhao-yulong/chilloutmix
+- Hugging Face: https://huggingface.co/zhao-yulong/chilloutmix
 - Repositorio original del que se duplica: https://huggingface.co/Chillout2023/Chilloutmix (referenciado como `duplicated_from`)
 - Civitai del modelo: https://civitai.com/models/6424/chilloutmix
 - Modelo base del merge, BasilMix: https://huggingface.co/nuigurumi/basil_mix

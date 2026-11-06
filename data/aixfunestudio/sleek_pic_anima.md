@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIxFuneStudio/Sleek_Pic_Anima es un modelo publicado en HuggingFace por el usuario AIxFuneStudio. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline asociado. El repositorio ocupa 4,7 GB y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+AIxFuneStudio/Sleek_Pic_Anima es un modelo publicado en Hugging Face por el usuario AIxFuneStudio. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline asociado. El repositorio ocupa 4,7 GB y el acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El modelo se publico el 8 de octubre de 2026 y se actualizo el 9 de octubre de 2026, con cero descargas y cero likes registrados en la plataforma. La etiqueta de licencia declarada es "other", lo que implica condiciones personalizadas que el usuario debe revisar en la ficha original antes de cualquier uso, en particular si se plantea un uso comercial.
 
@@ -33,7 +33,7 @@ Tampoco se documenta ninguna innovacion tecnica destacable. El unico dato estruc
 
 ## Capacidades
 
-- No se dispone de informacion sobre las capacidades del modelo. La ficha de HuggingFace no declara pipeline ni tareas soportadas.
+- No se dispone de informacion sobre las capacidades del modelo. La ficha de Hugging Face no declara pipeline ni tareas soportadas.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas.
@@ -69,16 +69,16 @@ No disponible. No hay informacion suficiente sobre la categoria, el tamano o la 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica publica: no se declaran arquitectura, parametros, contexto ni idiomas, lo que impide evaluar su idoneidad para produccion.
-- Acceso restringido (gated): es obligatorio aceptar las condiciones en HuggingFace antes de poder descargar los pesos, lo que puede limitar la reproducibilidad y la integracion en pipelines automatizados.
+- Acceso restringido (gated): es obligatorio aceptar las condiciones en Hugging Face antes de poder descargar los pesos, lo que puede limitar la reproducibilidad y la integracion en pipelines automatizados.
 - Licencia "other": al no tratarse de una licencia estandar (Apache 2.0, MIT, etc.), las condiciones de uso comercial y de redistribucion deben revisarse expresamente en la ficha original. No se puede asumir permiso de uso comercial.
 - Sesgos conocidos: no disponible.
 - Riesgo de alucinacion: no evaluable sin datos de entrenamiento ni benchmarks.
 - Limitaciones de contexto o idioma: no disponible.
 - Estado de adopcion: cero descargas y cero likes en la plataforma en el momento de la consulta, sin evidencia de validacion por parte de la comunidad.
-- Fechas de publicacion en el futuro respecto a la mayoria de referencias habituales (octubre de 2026), lo que conviene verificar directamente en la ficha de HuggingFace.
+- Fechas de publicacion en el futuro respecto a la mayoria de referencias habituales (octubre de 2026), lo que conviene verificar directamente en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIxFuneStudio/Sleek_Pic_Anima
-- Perfil del autor en HuggingFace: https://huggingface.co/AIxFuneStudio
+- Modelo en Hugging Face: https://huggingface.co/AIxFuneStudio/Sleek_Pic_Anima
+- Perfil del autor en Hugging Face: https://huggingface.co/AIxFuneStudio
 - Paper, blog, repositorio o demo adicionales: no disponible.

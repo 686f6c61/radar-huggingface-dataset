@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-MLX-4bit es una cuantización en 4 bits del modelo Qwen/Qwen3.8-27B, realizada por Chungulus y publicada en HuggingFace. Se trata de una conversión "vanilla" con MLX (Machine Learning framework de Apple), sin fine-tuning, merge ni modificación del chat-template, orientada a ejecutar el modelo en Apple Silicon con memoria unificada. El modelo original es un sistema de visión-lenguaje (image-text-to-text) con arquitectura híbrida que combina atención completa y Gated DeltaNet, además de un componente de predicción multi-token (MTP) y soporte para tool calling y modo de razonamiento (thinking).
+Qwen3.8-27B-MLX-4bit es una cuantización en 4 bits del modelo Qwen/Qwen3.8-27B, realizada por Chungulus y publicada en Hugging Face. Se trata de una conversión "vanilla" con MLX (Machine Learning framework de Apple), sin fine-tuning, merge ni modificación del chat-template, orientada a ejecutar el modelo en Apple Silicon con memoria unificada. El modelo original es un sistema de visión-lenguaje (image-text-to-text) con arquitectura híbrida que combina atención completa y Gated DeltaNet, además de un componente de predicción multi-token (MTP) y soporte para tool calling y modo de razonamiento (thinking).
 
 La relevancia de esta cuantización radica en que permite ejecutar un modelo de 27B parámetros con capacidades multimodales en hardware Apple, reduciendo el tamaño del artefacto a aproximadamente 16,9 GB (frente a los más de 50 GB del BF16 original). El autor ha validado el resultado con pruebas funcionales de texto, visión, herramientas y MTP, reportando una similitud semántica media de 0,948 con el modelo fuente. No se publican benchmarks estándar (MMLU, HumanEval, etc.), solo métricas de validación interna.
 
@@ -91,5 +91,5 @@ Otras cuantizaciones de Qwen3.8-27B (por ejemplo, en GGUF o AWQ) podrían existi
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-4bit
+- Repositorio Hugging Face del artefacto: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-4bit
 - Repositorio oficial del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

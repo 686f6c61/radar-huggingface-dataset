@@ -67,7 +67,7 @@ No se dispone de datos cuantitativos que permitan una comparacion rigurosa. A co
 
 | Modelo | Tipo | Parametros | Horizonte de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-xarm7-shaver-all60-step15000 | Politica pi0.5 ajustada a tarea | no disponible | 16 | no disponible | publica (HuggingFace) |
+| pi05-xarm7-shaver-all60-step15000 | Politica pi0.5 ajustada a tarea | no disponible | 16 | no disponible | publica (Hugging Face) |
 | pi05_xarm7_real | Config de politica pi0.5 referenciada en la model card | no disponible | no disponible | no disponible | no disponible |
 | pi0 (openpi) | Politica visio-lenguaje-accion base del framework | no disponible | no disponible | no disponible | framework openpi |
 | OpenVLA | Politica visio-lenguaje-accion generalista | 7B (referencia externa) | no disponible | licencia abierta (referencia externa) | publica |
@@ -88,7 +88,7 @@ La comparacion directa con OpenVLA u otras politicas generalistas no es homogene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattewg/pi05-xarm7-shaver-all60-step15000
+- Hugging Face: https://huggingface.co/mattewg/pi05-xarm7-shaver-all60-step15000
 - Model card del autor: incluida en el repositorio anterior.
 - Framework openpi (referenciado por las etiquetas del modelo): https://github.com/Physical-Intelligence/openpi
 - La busqueda web realizada no devolvio resultados relevantes para este modelo (los resultados obtenidos correspondian a entidades bancarias sin relacion con el modelo).

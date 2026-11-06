@@ -90,7 +90,7 @@ La diferencia principal es que SZL-Khipu-1.5B esta especializado en una tarea co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
+- Repositorio Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B
 - Cuantizaciones GGUF: https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF
 - Repositorio GitHub szl-forge (demo de inferencia): https://github.com/szl-holdings/szl-forge/tree/main/spaces/szl-model-inference-lab
 - Pagina de FriendliAI (inferencia gestionada): https://friendli.ai/models/SZLHOLDINGS/SZL-Khipu-1.5B

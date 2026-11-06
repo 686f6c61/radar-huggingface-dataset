@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`deepaksamuel-cuk/trackfit-llm-large` es un modelo publicado en HuggingFace por el usuario `deepaksamuel-cuk` bajo licencia MIT. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, licencia, fecha de creacion y etiquetas. La model card asociada no contiene mas contenido que la declaracion de licencia (`license: mit`), sin descripcion, sin especificaciones tecnicas y sin resultados de evaluacion.
+`deepaksamuel-cuk/trackfit-llm-large` es un modelo publicado en Hugging Face por el usuario `deepaksamuel-cuk` bajo licencia MIT. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, licencia, fecha de creacion y etiquetas. La model card asociada no contiene mas contenido que la declaracion de licencia (`license: mit`), sin descripcion, sin especificaciones tecnicas y sin resultados de evaluacion.
 
 No se ha publicado informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el proceso de entrenamiento. Tampoco consta pipeline declarado, dataset de entrenamiento ni pesos en formatos documentados. El repositorio registra cero descargas y cero interacciones, y fue creado y actualizado en el mismo instante (2026-09-29T16:49:13Z), lo que indica que no ha recibido mantenimiento posterior a su publicacion.
 
@@ -90,7 +90,7 @@ No disponible. No se ha identificado ningun modelo comparable: se desconoce la c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepaksamuel-cuk/trackfit-llm-large
+- Hugging Face: https://huggingface.co/deepaksamuel-cuk/trackfit-llm-large
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

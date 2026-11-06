@@ -13,7 +13,7 @@ La relevancia de esta ficha concreta es de despliegue: es una alternativa para s
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso híbrido de 64 capas: Gated DeltaNet + Gated Attention (arquitectura Qwen3.5), con torre de visión y cabezas MTP |
-| Parametros totales | 27B en el modelo base Qwen/Qwen3.8-27B; 6.048.978.304 parámetros almacenados en los safetensors de este repositorio cuantizado (recuento declarado por HuggingFace, no coincide con el recuento nominal del modelo base) |
+| Parametros totales | 27B en el modelo base Qwen/Qwen3.8-27B; 6.048.978.304 parámetros almacenados en los safetensors de este repositorio cuantizado (recuento declarado por Hugging Face, no coincide con el recuento nominal del modelo base) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | 262.000 tokens nativos, extensible a 1.000.000 (según la model card del modelo base) |
 | Tipos de cuantizacion | EXL3 (exllamav3): 2,55 bpw de media; cabeza LM 6,0 bpw; capas MTP 4,0 bpw; torre de visión 6,0 bpw; codebook mul1; output scales auto; calibración de 250 filas x 2048 columnas (corpus por defecto). No se distribuyen variantes GGUF ni GPTQ en este repositorio |
@@ -88,11 +88,11 @@ La comparación directa con alternativas del mismo tamaño y categoría (por eje
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Derpyhue/Qwen3.8-27B-exl3-2.55bpw
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Derpyhue/Qwen3.8-27B-exl3-2.55bpw
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - ExLlamaV3: https://github.com/turboderp/exllamav3
 - tabbyAPI: https://github.com/theroyallab/tabbyAPI
 - Kit de despliegue MiaAI-Lab (EXL3 3,5 bpw con speculative decoding): https://github.com/MiaAI-Lab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw
-- Drafter DFlash2 en HuggingFace: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw
+- Drafter DFlash2 en Hugging Face: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-DFlash2-EXL3-5.0bpw
 - Guía del modelo Qwen 3.8-27B: https://www.aimadetools.com/blog/qwen-3-8-27b-complete-guide/

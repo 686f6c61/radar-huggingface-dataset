@@ -119,8 +119,8 @@ MaxMin108 es un 59% del tamano de REAP-50, con un rendimiento estadisticamente e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/turintech/GLM-5.2-MaxMin108-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.2
+- Repositorio Hugging Face del modelo: https://huggingface.co/turintech/GLM-5.2-MaxMin108-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.2
 - Repositorio GitHub de GLM-5 (incluye GLM-5.2): https://github.com/zai-org/GLM-5
 - Documentacion de Unsloth para GLM-5.2: https://unsloth.ai/docs/models/glm-5.2
 - Guia de ejecucion local de GLM-5.2: https://insiderllm.com/guides/run-glm-5-2-locally/

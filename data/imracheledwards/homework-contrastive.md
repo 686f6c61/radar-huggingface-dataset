@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Imracheledwards/homework-contrastive es un repositorio de HuggingFace que contiene una implementación propia de un modelo híbrido orientado a aprendizaje contrastivo, junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado con fines de uso en producción: el propio autor indica en la model card que el checkpoint es válido únicamente para "smoke tests" y que no se reclama ninguna puntuación de benchmark.
+Imracheledwards/homework-contrastive es un repositorio de Hugging Face que contiene una implementación propia de un modelo híbrido orientado a aprendizaje contrastivo, junto con su configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado con fines de uso en producción: el propio autor indica en la model card que el checkpoint es válido únicamente para "smoke tests" y que no se reclama ninguna puntuación de benchmark.
 
 El dato más relevante es la escala real: el fichero `model.safetensors` contiene 49.600 parámetros totales (aproximadamente 0,19 MB en fp32), pese a que la model card etiqueta la escala como "huge". Esta contradicción entre la etiqueta declarada y el recuento efectivo de parámetros es una señal clara de que la configuración generada no se corresponde con un modelo de gran tamaño, sino con un esqueleto de pruebas.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: inferior a 10 MB en cualquier precisión habitual. Con 49.600 parámetros, el checkpoint en fp32 ocupa aproximadamente 0,19 MB; en fp16, unos 0,10 MB.
 - GPU recomendadas: ninguna en particular. El modelo cabe en cualquier GPU con soporte CUDA, incluidos modelos integrados y GPUs de gama de entrada.
 - Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales y también en CPU. No requiere acelerador dedicado.
-- Almacenamiento: el repositorio ocupa 0.0 GB según HuggingFace, coherente con el tamaño del checkpoint y de los ficheros de configuración.
+- Almacenamiento: el repositorio ocupa 0.0 GB según Hugging Face, coherente con el tamaño del checkpoint y de los ficheros de configuración.
 - Opciones de despliegue: PyTorch como marco de referencia; `safetensors` para los pesos. La model card advierte que las API genéricas de carga automática necesitan un adaptador explícito, por lo que el uso directo con vLLM, llama.cpp, Ollama o TGI no está garantizado ni documentado. No se declara ningún formato GGUF.
 - Latencia y throughput estimados: no disponibles. Al no existir un modelo entrenado ni un pipeline declarado, no hay mediciones publicadas.
 
@@ -82,5 +82,5 @@ A modo de advertencia cualitativa, y sin cifras atribuibles a este repositorio: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Imracheledwards/homework-contrastive
+- Modelo en Hugging Face: https://huggingface.co/Imracheledwards/homework-contrastive
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

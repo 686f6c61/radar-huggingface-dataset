@@ -6,7 +6,7 @@ Pocket TTS English int4 es una versión cuantizada y empaquetada para navegador 
 
 El modelo base de Kyutai es un modelo de lenguaje de flujo (flow-matching) de 6 capas con 89,4 millones de parámetros que genera tokens de audio a través del códec neuronal Mimi a 24 kHz. Esta versión ONNX resuelve el problema de ejecutar un TTS de calidad en el navegador sin servidor, sin GPU y sin clave de API, gracias a la cuantización int4 del modelo de lenguaje principal (de 302,7 MB a 40,8 MB) y al empaquetado en un único archivo `.onnx`, requisito indispensable para ONNX Runtime Web.
 
-La relevancia actual del modelo radica en su capacidad para ofrecer síntesis de voz en tiempo real dentro de páginas web con solo CPU, lo que abre casos de uso de accesibilidad, asistencia offline y prototipado rápido sin infraestructura backend. Es una derivada reciente (septiembre de 2026) con cero descargas registradas en HuggingFace, por lo que su adopción en producción aún no está contrastada.
+La relevancia actual del modelo radica en su capacidad para ofrecer síntesis de voz en tiempo real dentro de páginas web con solo CPU, lo que abre casos de uso de accesibilidad, asistencia offline y prototipado rápido sin infraestructura backend. Es una derivada reciente (septiembre de 2026) con cero descargas registradas en Hugging Face, por lo que su adopción en producción aún no está contrastada.
 
 ## Especificaciones tecnicas
 
@@ -78,13 +78,13 @@ La principal diferencia entre la versión base y esta derivada es el formato de 
 - La cuantización int4 puede degradar ligeramente la calidad de voz en comparación con el modelo float32 original, aunque el autor no aporta métricas comparativas.
 - El estado de voz precomputado es sensible: si el campo `step` no coincide con la longitud del caché, el modelo produce casi silencio (RMS 0,0026 frente a 0,176 correcto).
 - Licencia CC-BY-4.0: requiere atribución al autor original (Kyutai) y a esta derivada en cualquier uso, incluido el comercial.
-- El modelo tiene cero descargas y cero valoraciones en HuggingFace, por lo que su fiabilidad en producción no está contrastada por la comunidad.
+- El modelo tiene cero descargas y cero valoraciones en Hugging Face, por lo que su fiabilidad en producción no está contrastada por la comunidad.
 - No se documenta el comportamiento con ruido, acentos, entradas de texto poco comunes o textos muy largos.
 - El autor no publica métricas de latencia ni de throughput, lo que dificulta estimar la viabilidad para aplicaciones en tiempo real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prasadvittaldev/pocket-tts-english-onnx-int4
+- Modelo en Hugging Face: https://huggingface.co/prasadvittaldev/pocket-tts-english-onnx-int4
 - Demo en navegador: https://prasadtts.vercel.app
 - Modelo base de Kyutai: https://huggingface.co/kyutai/pocket-tts
 - Runtime de referencia ONNX: https://github.com/KevinAHM/pocket-tts-onnx-export

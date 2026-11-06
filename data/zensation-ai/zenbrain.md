@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZenBrain es una arquitectura de memoria en siete capas inspirada en neurociencia, publicada por zensation-ai y orientada a sistemas de IA autónomos y agentes conversacionales. No se trata de un modelo de lenguaje con pesos entrenados, sino de un marco de gestión de memoria de largo plazo que se distribuye como bibliotecas de software (paquetes npm `@zensation/core` y `@zensation/algorithms`) y se documenta en un preprint con DOI en Zenodo y arXiv (2604.23878). El repositorio de HuggingFace asociado tiene un tamaño de 0,0 GB, lo que confirma que no contiene pesos de modelo.
+ZenBrain es una arquitectura de memoria en siete capas inspirada en neurociencia, publicada por zensation-ai y orientada a sistemas de IA autónomos y agentes conversacionales. No se trata de un modelo de lenguaje con pesos entrenados, sino de un marco de gestión de memoria de largo plazo que se distribuye como bibliotecas de software (paquetes npm `@zensation/core` y `@zensation/algorithms`) y se documenta en un preprint con DOI en Zenodo y arXiv (2604.23878). El repositorio de Hugging Face asociado tiene un tamaño de 0,0 GB, lo que confirma que no contiene pesos de modelo.
 
 El problema que aborda es la fragilidad de la memoria en agentes: la pérdida de contexto entre sesiones, la acumulación descontrolada de almacenamiento y la dificultad para recuperar información relevante en conversaciones largas. ZenBrain propone una jerarquía que va desde la memoria de trabajo (7±2 elementos) hasta una memoria semántica de largo plazo con programación de repasos al estilo FSRS, pasando por memoria episódica, procedimental y memoria central de hechos fijados. Incorpora algoritmos de aprendizaje hebbiano, repetición espaciada y confianza bayesiana.
 
@@ -68,7 +68,7 @@ Advertencia del autor: en LongMemEval-500, el brazo medido de ZenBrain es un por
 - VRAM para inferencia: no aplica; ZenBrain no ejecuta pesos de modelo. El consumo depende del LLM huésped que use el agente.
 - GPU recomendadas: no aplica al marco de memoria; las necesidades vienen determinadas por el LLM subyacente.
 - Compatibilidad con GPU de consumo: no aplica; el software se ejecuta en Node.js (paquetes npm) y en Python para el arnés de evaluacion.
-- Opciones de despliegue: paquetes npm `@zensation/core` y `@zensation/algorithms`; repositorio GitHub; demo en HuggingFace Spaces (`zensation-ai/zenbrain-playground`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: paquetes npm `@zensation/core` y `@zensation/algorithms`; repositorio GitHub; demo en Hugging Face Spaces (`zensation-ai/zenbrain-playground`). No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. La unica cifra relacionada es la reduccion de tokens de entrada en el paso de respuesta (1/109,7 respecto al contexto completo) en LongMemEval-500.
 
 ## Comparativa con modelos similares
@@ -95,12 +95,12 @@ En las comparaciones reportadas por el autor, ZenBrain solo supera de forma sign
 - Licencia: el paper y el repo HF son CC-BY-4.0 (permite uso comercial con atribucion); el codigo es Apache-2.0. Verificar terminos de los paquetes npm antes de uso en produccion.
 - Sesgos conocidos: no documentados en la informacion disponible.
 - Capa 7 (memoria entre contextos) marcada como experimental.
-- Sin descargas registradas en HuggingFace (0 descargas) y 5 likes; madurez de adopcion muy baja.
+- Sin descargas registradas en Hugging Face (0 descargas) y 5 likes; madurez de adopcion muy baja.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zensation-ai/zenbrain
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/zensation-ai/zenbrain-playground
+- Hugging Face: https://huggingface.co/zensation-ai/zenbrain
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/zensation-ai/zenbrain-playground
 - GitHub: https://github.com/zensation-ai/zenbrain
 - Paper en arXiv: https://arxiv.org/abs/2604.23878
 - Paper en Zenodo (v9): https://zenodo.org/records/23832288

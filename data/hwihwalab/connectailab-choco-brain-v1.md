@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-CHOCO-BRAIN-v1 | 752 M | No disponible | Decisión estructurada para operaciones de estudio indie (protocolo JEV) | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| Qwen/Qwen3.5-0.8B | ~0,8 B | No disponible | LLM conversacional generalista | No disponible en la informacion proporcionada | HuggingFace |
+| connectailab-CHOCO-BRAIN-v1 | 752 M | No disponible | Decisión estructurada para operaciones de estudio indie (protocolo JEV) | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen/Qwen3.5-0.8B | ~0,8 B | No disponible | LLM conversacional generalista | No disponible en la informacion proporcionada | Hugging Face |
 | Modelos de decisión para agentes de juego de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de alternativas directamente comparables en la información proporcionada; la comparación con el modelo base es la única referencia fiable, y la diferencia principal es la especialización en formato de salida estructurado frente a la conversación libre.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de alternativas directamente comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/connectailab-CHOCO-BRAIN-v1
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/connectailab-CHOCO-BRAIN-v1
 - Manual en coreano: https://huggingface.co/hwihwalab/connectailab-CHOCO-BRAIN-v1/blob/main/README_KR.md
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio GitHub de Hwihwa Lab: https://github.com/Hwihwa-Lab

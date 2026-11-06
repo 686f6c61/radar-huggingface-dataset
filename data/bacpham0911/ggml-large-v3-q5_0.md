@@ -96,7 +96,7 @@ Las filas distintas de la primera corresponden a modelos de referencia del ecosi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bacpham0911/ggml-large-v3-q5_0
+- Hugging Face: https://huggingface.co/bacpham0911/ggml-large-v3-q5_0
 - Model card: incluida en el repositorio anterior (contenido: solo `license: mit`)
 - Paper de referencia de Whisper large-v3: no disponible en los resultados de busqueda
 - Repositorio whisper.cpp: no disponible en los resultados de busqueda

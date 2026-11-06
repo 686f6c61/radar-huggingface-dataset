@@ -96,6 +96,6 @@ La comparación con alternativas es aproximada: no se dispone de resultados de b
 
 ## Enlaces
 
-- [HuggingFace: Thox-ai/ThoxMicroprocessor-8M-Base-TinyStories](https://huggingface.co/Thox-ai/ThoxMicroprocessor-8M-Base-TinyStories)
+- [Hugging Face: Thox-ai/ThoxMicroprocessor-8M-Base-TinyStories](https://huggingface.co/Thox-ai/ThoxMicroprocessor-8M-Base-TinyStories)
 - [TinyStories (paper y corpus de referencia)](https://huggingface.co/datasets/roneneldan/TinyStories)
 - [THOX.ai](https://thox.ai)

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-forget10-ihl_head-epoch12 | 1,42 B | no disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint de investigación en *unlearning* |
-| microsoft/phi-1_5 | 1,3 B | 2048 | MIT | HuggingFace, ampliamente usado | Modelo base original, sin ajuste TOFU |
-| locuslab/tofu_ft_phi-1.5 | 1,3 B | 2048 | no disponible en la información | HuggingFace | Modelo ajustado con TOFU, base directa de este checkpoint |
-| Otros checkpoints TOFU sobre Phi-1.5 | ~1,3 B | 2048 | variable | HuggingFace | Variantes con distintas técnicas de olvido |
+| unl-reset/tofu-phi-1_5-...-forget10-ihl_head-epoch12 | 1,42 B | no disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint de investigación en *unlearning* |
+| microsoft/phi-1_5 | 1,3 B | 2048 | MIT | Hugging Face, ampliamente usado | Modelo base original, sin ajuste TOFU |
+| locuslab/tofu_ft_phi-1.5 | 1,3 B | 2048 | no disponible en la información | Hugging Face | Modelo ajustado con TOFU, base directa de este checkpoint |
+| Otros checkpoints TOFU sobre Phi-1.5 | ~1,3 B | 2048 | variable | Hugging Face | Variantes con distintas técnicas de olvido |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch12](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch12)
+- [Hugging Face: unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch12](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch12)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

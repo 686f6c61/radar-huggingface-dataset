@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fel-ixki/study-matching12` es un prototipo de investigación publicado en HuggingFace por el usuario fel-ixki bajo la etiqueta "Mae for Matching". No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación que incluye el código Python, la configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+`fel-ixki/study-matching12` es un prototipo de investigación publicado en Hugging Face por el usuario fel-ixki bajo la etiqueta "Mae for Matching". No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación que incluye el código Python, la configuración de arquitectura y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El repositorio describe un modelo de arquitectura "Mae" en escala "xlarge", con atención lineal, fusión por concat mlp, activación approx gelu y normalización layernorm. Llama la atención la enorme discrepancia entre la escala declarada en la model card ("xlarge") y el recuento real de parámetros en `model.safetensors`, que asciende a 49.600 parámetros (aproximadamente 0,05 millones). Esto confirma que se trata de una inicialización de juguete y no de un modelo de producción.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fel-ixki/study-matching12
+- Modelo en Hugging Face: https://huggingface.co/fel-ixki/study-matching12
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Los resultados devueltos corresponden al término "fel" en contextos ajenos (Groupe FEL, Wikcionario francés, Larousse, Syndicat national de l'édition y la comuna de Le Fel) y no guardan relación con este repositorio.

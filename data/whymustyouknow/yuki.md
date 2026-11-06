@@ -65,7 +65,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whymustyouknow/yuki | no disponible | no aplica | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| whymustyouknow/yuki | no disponible | no aplica | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/whymustyouknow/yuki
+- Repositorio Hugging Face: https://huggingface.co/whymustyouknow/yuki
 - Modelo base (referencia en metadatos): https://huggingface.co/krea/Krea-2-Raw
 - Variante turbo mencionada en la model card: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers (usada en el ejemplo de inferencia): https://github.com/huggingface/diffusers

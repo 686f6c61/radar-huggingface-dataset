@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`pi05-scan-object-concurrent-lora-10k`) | VLA ajustado con LoRA, tarea única | no disponible | acción de 14 dim., horizonte 50 | no disponible | HuggingFace, 6,3 GB, 0 descargas |
-| `XinY0201/openpi-pi05-base-jax` (base) | VLA base Pi0.5 en JAX | no disponible | no disponible | no disponible | HuggingFace |
-| Pi0.5 / Pi0 en openpi (Physical Intelligence) | VLA base y familia openpi | no disponible | no disponible | consultar el repositorio openpi | GitHub y HuggingFace |
-| OpenVLA | VLA sobre backbone de lenguaje | no disponible | no disponible | consultar el repositorio del proyecto | HuggingFace |
-| NVIDIA GR00T N1 / N1.5 | VLA fundacional para robots | no disponible | no disponible | consultar la licencia de NVIDIA | HuggingFace |
+| Este modelo (`pi05-scan-object-concurrent-lora-10k`) | VLA ajustado con LoRA, tarea única | no disponible | acción de 14 dim., horizonte 50 | no disponible | Hugging Face, 6,3 GB, 0 descargas |
+| `XinY0201/openpi-pi05-base-jax` (base) | VLA base Pi0.5 en JAX | no disponible | no disponible | no disponible | Hugging Face |
+| Pi0.5 / Pi0 en openpi (Physical Intelligence) | VLA base y familia openpi | no disponible | no disponible | consultar el repositorio openpi | GitHub y Hugging Face |
+| OpenVLA | VLA sobre backbone de lenguaje | no disponible | no disponible | consultar el repositorio del proyecto | Hugging Face |
+| NVIDIA GR00T N1 / N1.5 | VLA fundacional para robots | no disponible | no disponible | consultar la licencia de NVIDIA | Hugging Face |
 
 Los datos cuantitativos de los modelos alternativos no se han verificado en la información disponible para esta ficha, por lo que se marcan como no disponibles. La diferencia principal de este checkpoint frente a los modelos base es su especialización: está entrenado para una única tarea y un único dataset, con licencia sin declarar.
 
@@ -96,7 +96,7 @@ Los datos cuantitativos de los modelos alternativos no se han verificado en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-concurrent-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-concurrent-lora-10k
 - Modelo base referenciado en la model card: https://huggingface.co/XinY0201/openpi-pi05-base-jax (commit `5e62884fcf8cb8f9fc693c9163ea18d3e3739658`)
 - Dataset referenciado en la model card: https://huggingface.co/datasets/Shiki42/ctr-scan-object-concurrent-20260911 (commit `2419a110014733297689002a04e77faf1c438300`)
 - Ecosistema openpi (librería `openpi` citada por el autor): https://github.com/Physical-Intelligence/openpi

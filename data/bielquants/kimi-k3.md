@@ -4,7 +4,7 @@
 
 Kimi K3 es un modelo multimodal nativo orientado a tareas de agente, desarrollado por Moonshot AI, con 2,8 billones de parámetros totales (2.779.931.837.184 según los pesos safetensors publicados) y 104.000 millones de parámetros activos. Se construye sobre una arquitectura MoE de altísima dispersión (16 expertos activos de 896) con Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), capacidades nativas de visión y una ventana de contexto de 1.000.000 de tokens. Su model card lo presenta como el primer modelo abierto de clase 3T, enfocado a codificación de horizonte largo, trabajo de conocimiento y razonamiento.
 
-El repositorio analizado, bielquants/Kimi-K3, no es la publicación oficial de Moonshot AI, sino una réplica subida por el usuario bielquants en formato compressed-tensors de 8 bits, con 0 descargas y 0 me gusta en el momento de la consulta, 1.561 GB de tamaño de repositorio y fecha de creación 2026-09-19. La model card reproduce íntegramente la documentación del modelo original de Moonshot AI, y los enlaces que contiene apuntan a los recursos oficiales (kimi.com, moonshot.ai, organización moonshotai en HuggingFace, ModelScope, blog técnico e informe completo en PDF).
+El repositorio analizado, bielquants/Kimi-K3, no es la publicación oficial de Moonshot AI, sino una réplica subida por el usuario bielquants en formato compressed-tensors de 8 bits, con 0 descargas y 0 me gusta en el momento de la consulta, 1.561 GB de tamaño de repositorio y fecha de creación 2026-09-19. La model card reproduce íntegramente la documentación del modelo original de Moonshot AI, y los enlaces que contiene apuntan a los recursos oficiales (kimi.com, moonshot.ai, organización moonshotai en Hugging Face, ModelScope, blog técnico e informe completo en PDF).
 
 La relevancia de la ficha es doble: por un lado documenta un salto de escala poco habitual en pesos abiertos (clase 3T con 104B activos y contexto de 1M tokens); por otro, advierte de que esta copia concreta es una redistribución de terceros sin validación ni métricas publicadas, por lo que cualquier uso en producción debería partir de los pesos oficiales.
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento, licencia ni contexto de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace (réplica analizada): https://huggingface.co/bielquants/Kimi-K3
-- Organización oficial en HuggingFace: https://huggingface.co/moonshotai
+- Modelo en Hugging Face (réplica analizada): https://huggingface.co/bielquants/Kimi-K3
+- Organización oficial en Hugging Face: https://huggingface.co/moonshotai
 - Modelo oficial de referencia: https://huggingface.co/moonshotai/Kimi-K3
 - Fichero de licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Blog técnico: https://www.kimi.com/blog/kimi-k3

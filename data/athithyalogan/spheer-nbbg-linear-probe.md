@@ -73,7 +73,7 @@ La informacion disponible solo permite comparar la sonda con el baseline interno
 
 | Modelo | Tipo | Parametros | Contexto | Macro-F1 11 clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| spheer-nbbg-linear-probe | Sonda lineal sobre embedding Spheer FM | 1.111 | entrada fija de 100 dim. | 0,592 | MIT | HuggingFace, embeddings de entrada gated |
+| spheer-nbbg-linear-probe | Sonda lineal sobre embedding Spheer FM | 1.111 | entrada fija de 100 dim. | 0,592 | MIT | Hugging Face, embeddings de entrada gated |
 | Random forest sobre 46 caracteristicas Sentinel-2 | Baseline clasico del mismo experimento | no disponible | no aplica | 0,551 | no disponible | no disponible |
 | Otras sondas sobre modelos fundacionales de observacion de la Tierra | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,6 +92,6 @@ La informacion disponible solo permite comparar la sonda con el baseline interno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AthithyaLogan/spheer-nbbg-linear-probe
+- Modelo en Hugging Face: https://huggingface.co/AthithyaLogan/spheer-nbbg-linear-probe
 - Dataset de embeddings Spheer FM (acceso gated): https://huggingface.co/datasets/spheer/spheer-fm-embeddings
 - Repositorio del experimento (experimento 01, embeddings vs random forest): https://github.com/athithyai/Posts/tree/main/01-embeddings-vs-random-forest

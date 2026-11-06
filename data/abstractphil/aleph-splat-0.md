@@ -6,7 +6,7 @@ aleph-splat-0 es un prototipo de investigación que implementa una nueva familia
 
 El proyecto se presenta como una línea de investigación activa con una batería de experimentos de medición documentados en `battery/splat_battery.json`. Se incluyen un archivo de implementación autocontenido (`splat_attention.py`), un kit de replicación con 11 entrenadores independientes y un documento técnico detallado (TECHNICAL.md) con la base matemática completa. El modelo no es un LLM entrenado a escala, sino un prototipo de investigación que valida las propiedades del mecanismo de atención propuesto, con resultados de recuperación, velocidad y comportamiento de entrenamiento medidos en entornos controlados.
 
-La relevancia actual del proyecto reside en su propuesta de arquitectura de atención lineal que elimina la operación softmax por completo, incluyendo entre cabezas, y que introduce codebooks diferenciados y direccionamiento mediante funciones hiperbólicas. Su licencia MIT permite su uso y modificación libre, y el código está disponible en HuggingFace para su inspección y reproducción.
+La relevancia actual del proyecto reside en su propuesta de arquitectura de atención lineal que elimina la operación softmax por completo, incluyendo entre cabezas, y que introduce codebooks diferenciados y direccionamiento mediante funciones hiperbólicas. Su licencia MIT permite su uso y modificación libre, y el código está disponible en Hugging Face para su inspección y reproducción.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No hay modelos directamente comparables publicados con la misma combinación de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbstractPhil/aleph-splat-0
+- Hugging Face: https://huggingface.co/AbstractPhil/aleph-splat-0
 - Documento tecnico: https://huggingface.co/AbstractPhil/aleph-splat-0/blob/main/TECHNICAL.md
 - Articulo de investigacion: https://huggingface.co/blog/AbstractPhil/geometric-memory-ft5
 - Modelo hermano (alephlm-0): https://huggingface.co/AbstractPhil/alephlm-0

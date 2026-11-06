@@ -73,5 +73,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b1000_s0](https://huggingface.co/AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b1000_s0)
+- [Hugging Face - AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b1000_s0](https://huggingface.co/AmberYifan/capsd-less-humaneval-opc-marin-8b-base-code_less_b1000_s0)
 - [Modelo base: marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)

@@ -60,9 +60,9 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kroma v0.2 turbo FP8 (este) | no disponible | no aplica | Krea 2 Community | HuggingFace |
-| Stable Diffusion 3.5 | ~8B | texto | Stability AI Community License | HuggingFace |
-| Flux.1 | ~12B | texto | Flux Dev Non-Commercial | HuggingFace |
+| Kroma v0.2 turbo FP8 (este) | no disponible | no aplica | Krea 2 Community | Hugging Face |
+| Stable Diffusion 3.5 | ~8B | texto | Stability AI Community License | Hugging Face |
+| Flux.1 | ~12B | texto | Flux Dev Non-Commercial | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quiho/kroma-v0.2-turbo-fp8_by-flurryman
+- Modelo en Hugging Face: https://huggingface.co/Quiho/kroma-v0.2-turbo-fp8_by-flurryman
 - Modelo original (lodestones/Kroma): https://huggingface.co/lodestones/Kroma
 - Herramienta de cuantizacion convert_to_quant: https://github.com/silveroxides/convert_to_quant
 - Licencia Krea 2 Community License: https://www.krea.ai/krea-2-licensing

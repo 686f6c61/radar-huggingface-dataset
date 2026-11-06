@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored (versión MLX) es una cuantización de precisión mixta en formato MLX affine del modelo orcarouter/Qwen3.8-27B-Uncensored, un fine-tuning "abliterated" (sin filtros de alineación) de Qwen/Qwen3.8-27B, publicado por el usuario ddark-il en HuggingFace. El modelo base es un denso de 27,8 mil millones de parámetros con 64 capas, arquitectura híbrida GatedDeltaNet + atención completa, ventana de contexto de 256 K tokens, cabeza MTP (multi-token prediction) y torre de visión, lo que lo convierte en un modelo vision-language conversacional.
+Qwen3.8-27B-Uncensored (versión MLX) es una cuantización de precisión mixta en formato MLX affine del modelo orcarouter/Qwen3.8-27B-Uncensored, un fine-tuning "abliterated" (sin filtros de alineación) de Qwen/Qwen3.8-27B, publicado por el usuario ddark-il en Hugging Face. El modelo base es un denso de 27,8 mil millones de parámetros con 64 capas, arquitectura híbrida GatedDeltaNet + atención completa, ventana de contexto de 256 K tokens, cabeza MTP (multi-token prediction) y torre de visión, lo que lo convierte en un modelo vision-language conversacional.
 
 Esta cuantización concreta se ha construido replicando la receta de True2456/Qwen3.8-27B-AWQ-5.0bpw y está optimizada para oMLX sobre el tensor unit NAX de los chips Apple M5. Ocupa 17,38 GB (5,006 bits por peso de media), un 3,2× menos que el original en bf16, manteniendo una calidad medida muy alta (coseno ≥ 0,9957 en todas las familias de módulos). Es relevante para usuarios de Mac con Apple Silicon que buscan un modelo multimodal sin restricciones de contenido con contexto muy largo y ejecución local eficiente.
 

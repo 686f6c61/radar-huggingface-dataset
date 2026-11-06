@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Resolucion | Pasos | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| FastMetal-1.3B-QAD | 1.3B | No aplica | 448×832, 77 frames | 3 | INT8 QAT | Apache 2.0 | HuggingFace |
-| FastWan 2.1 T2V 1.3B (base) | 1.3B | No aplica | 448×832, 77 frames | 20-50 | FP16 | Apache 2.0 | HuggingFace |
-| AnimateDiff (modelos tipicos) | ~1.7B | No aplica | 512×512, 16-24 frames | 20-50 | FP16 | Apache 2.0 | HuggingFace |
+| FastMetal-1.3B-QAD | 1.3B | No aplica | 448×832, 77 frames | 3 | INT8 QAT | Apache 2.0 | Hugging Face |
+| FastWan 2.1 T2V 1.3B (base) | 1.3B | No aplica | 448×832, 77 frames | 20-50 | FP16 | Apache 2.0 | Hugging Face |
+| AnimateDiff (modelos tipicos) | ~1.7B | No aplica | 512×512, 16-24 frames | 20-50 | FP16 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de generacion de video de tamano similar. FastMetal se distingue por su destilacion a 3 pasos y cuantizacion INT8, lo que lo hace mucho mas ligero y rapido que su base, a costa de una calidad potencialmente inferior. No hay datos de benchmarks para confirmar la diferencia.
 
@@ -76,7 +76,7 @@ La comparativa se limita a modelos de generacion de video de tamano similar. Fas
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/FastVideo/FastMetal-1.3B-QAD)
+- [Modelo en Hugging Face](https://huggingface.co/FastVideo/FastMetal-1.3B-QAD)
 - [Repositorio GitHub de FastVideo](https://github.com/hao-ai-lab/FastVideo)
 - [Modelo similar FastWan-QAD-1.3B](https://huggingface.co/FastVideo/FastWan-QAD-1.3B)
-- [Organización FastVideo en HuggingFace](https://huggingface.co/FastVideo)
+- [Organización FastVideo en Hugging Face](https://huggingface.co/FastVideo)

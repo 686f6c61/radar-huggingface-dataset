@@ -79,9 +79,9 @@ No se dispone de resultados de benchmarks comparativos en la información propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-DE
+- Modelo en Hugging Face: https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-GRPO-DE
 - Modelo SFT previo (DGurgurov/SmolLM3-3B-SFT-DE): https://huggingface.co/DGurgurov/SmolLM3-3B-SFT-DE
 - Dataset SFT (toroe/ReasonXL-SFT): https://huggingface.co/datasets/toroe/ReasonXL-SFT
 - Paper ReasonXL (arXiv:2604.12378): https://arxiv.org/abs/2604.12378
-- Repositorio SmolLM de HuggingFace: https://github.com/huggingface/smollm
+- Repositorio SmolLM de Hugging Face: https://github.com/huggingface/smollm
 - Alignment Handbook con recetas de SmolLM3: https://github.com/huggingface/alignment-handbook/blob/main/recipes/smollm3/README.md

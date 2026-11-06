@@ -88,4 +88,4 @@ La comparación es únicamente de orden de magnitud: el modelo analizado tiene t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/binchang/deit-baseline
+- Hugging Face: https://huggingface.co/binchang/deit-baseline

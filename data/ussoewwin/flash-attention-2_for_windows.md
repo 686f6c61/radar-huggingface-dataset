@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje, sino un conjunto de wheels precompilados de FlashAttention-2 para Windows y Linux, distribucion que el proyecto oficial no ofrece. Lo mantiene el usuario de HuggingFace `ussoewwin` y cubre las versiones 2.8.3, 2.8.4 y una rama propia 2.9.x, compiladas contra distintas combinaciones de PyTorch (2.9.1 a 2.15.0) y CUDA (cu130, cu132, cu134), con soporte para Python 3.13 y 3.14.
+Este repositorio no contiene un modelo de lenguaje, sino un conjunto de wheels precompilados de FlashAttention-2 para Windows y Linux, distribucion que el proyecto oficial no ofrece. Lo mantiene el usuario de Hugging Face `ussoewwin` y cubre las versiones 2.8.3, 2.8.4 y una rama propia 2.9.x, compiladas contra distintas combinaciones de PyTorch (2.9.1 a 2.15.0) y CUDA (cu130, cu132, cu134), con soporte para Python 3.13 y 3.14.
 
 El problema que resuelve es puramente de empaquetado e instalacion: compilar FlashAttention-2 en Windows requiere toolchains de CUDA y MSVC que rara vez coinciden con el entorno del usuario, y las wheels oficiales se publican principalmente para Linux. Este repositorio ofrece binarios listos para instalar, ademas de una bifurcacion no oficial de la rama 2.9.x que incorpora optimizaciones propias (denominadas A-1/A-2 y una retroportacion de logica de FA4) mientras el proyecto upstream se centra en FlashAttention-3 y 4.
 
@@ -40,7 +40,7 @@ La rama 2.9.x de este fork incorpora, segun la model card, optimizaciones etique
 
 - Inferencia de LLMs de contexto largo en Windows: instalar la wheel correspondiente a la version de PyTorch y CUDA del entorno para habilitar atencion eficiente en lugar de recompilar desde fuente, que en Windows suele fallar por desajustes de MSVC y CUDA Toolkit.
 - Pipelines de difusion (ComfyUI, A1111, Forge): el autor confirma funcionamiento en estas interfaces; util para nodos que usan atencion optimizada en modelos de difusion con secuencias largas.
-- Entrenamiento y fine-tuning en maquinas Windows con GPUs consumer o workstation: evita el coste de compilacion y permite usar kernels FA2 en scripts de HuggingFace Transformers que ya invocan `flash_attn`.
+- Entrenamiento y fine-tuning en maquinas Windows con GPUs consumer o workstation: evita el coste de compilacion y permite usar kernels FA2 en scripts de Hugging Face Transformers que ya invocan `flash_attn`.
 - Fijacion de versiones en entornos reproducibles: al publicarse builds atados a combinaciones exactas de PyTorch/CUDA, se pueden usar como pin en `requirements.txt` o imagenes Docker Linux con cu130/cu132/cu134.
 - Compatibilidad con xformers: usar la rama 2.8.4 (codigo oficial) cuando el stack incluya xformers, y la rama 2.9.x solo en proyectos sin xformers.
 - Evaluacion de kernels en Blackwell: probar builds SM100/SM120/SM121 en RTX 50xx o datacenter Blackwell para medir si las optimizaciones A-1/A-2 aportan ventaja, asumiendo que el autor no publica benchmarks.
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM: no aplica al ser una libreria; el consumo depende del modelo que la use. FlashAttention-2 reduce el uso de memoria de atencion de O(n^2) a O(n) en activaciones, pero no fija un minimo propio.
 - GPU soportadas: SM80 (A100), SM89 (RTX 40xx/L40), SM90 (H100/H200) en builds legacy; SM100, SM120, SM121 (Blackwell) en builds 2.9.2+.
 - GPUs consumer: si, cualquier GPU Ampere o superior con los drivers CUDA correspondientes (cu130/cu132/cu134 segun build).
-- Despliegue: se instala como paquete Python (`pip install <wheel>`) y se consume desde PyTorch, HuggingFace Transformers, vLLM, ComfyUI, A1111 o Forge. No es un servidor de inferencia por si mismo.
+- Despliegue: se instala como paquete Python (`pip install <wheel>`) y se consume desde PyTorch, Hugging Face Transformers, vLLM, ComfyUI, A1111 o Forge. No es un servidor de inferencia por si mismo.
 - Latencia y throughput: no disponibles; el autor no ha medido rendimiento y advierte que solo ha probado en su entorno.
 - Almacenamiento: el repo ocupa 22,9 GB por acumulacion de wheels; cada wheel individual es mucho menor, pero el dato por wheel no esta disponible.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ussoewwin/Flash-Attention-2_for_Windows
+- Hugging Face: https://huggingface.co/ussoewwin/Flash-Attention-2_for_Windows
 - Fork en GitHub: https://github.com/ussoewwin/flash-attention
 - Plan de retroportacion FA4 a FA2: https://github.com/ussoewwin/flash-attention/blob/main/AI/FA2_BACKPORT_FROM_FA4_PLAN.md
 - Notas de cambios de kernels: https://github.com/ussoewwin/flash-attention/blob/main/md/FA2_CHANGES_v1.2.md

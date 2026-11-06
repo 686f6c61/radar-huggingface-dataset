@@ -80,7 +80,7 @@ No se dispone de información suficiente para comparar con alternativas ASR japo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASRISEx/parakeet-tdt_ctc-0.6b-ja-gguf
+- Hugging Face: https://huggingface.co/ASRISEx/parakeet-tdt_ctc-0.6b-ja-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-0.6b-ja
 - Motor transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Aplicación Handy: https://github.com/cjpais/handy

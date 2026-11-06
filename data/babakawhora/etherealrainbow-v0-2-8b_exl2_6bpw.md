@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EtherealRainbow-v0.2-8B_EXL2_6BPW es una cuantizacion en formato EXL2 a 6.0 bits por peso (BPW) del modelo EtherealRainbow-v0.2-8B, un merge de 8 000 millones de parametros construido con mergekit a partir de varios finetunes basados en Llama 3. El modelo original lo publica el usuario invisietch, mientras que esta version cuantizada la distribuye babakawhora en HuggingFace. Su proposito declarado es ofrecer una variante de Llama 3 sin censura, orientada a prosa creativa y a roleplay y narrativa tanto SFW como NSFW.
+EtherealRainbow-v0.2-8B_EXL2_6BPW es una cuantizacion en formato EXL2 a 6.0 bits por peso (BPW) del modelo EtherealRainbow-v0.2-8B, un merge de 8 000 millones de parametros construido con mergekit a partir de varios finetunes basados en Llama 3. El modelo original lo publica el usuario invisietch, mientras que esta version cuantizada la distribuye babakawhora en Hugging Face. Su proposito declarado es ofrecer una variante de Llama 3 sin censura, orientada a prosa creativa y a roleplay y narrativa tanto SFW como NSFW.
 
 La relevancia de esta ficha es practica: no se trata de un modelo nuevo ni de un entrenamiento desde cero, sino de un artefacto de despliegue. La cuantizacion a 6 BPW sobre un transformer decoder-only de 8B reduce el peso del repositorio a 6,8 GB, lo que permite ejecutarlo en GPU de gama de consumo con el backend ExLlamaV2, manteniendo una fidelidad relativamente alta respecto al bf16 original.
 

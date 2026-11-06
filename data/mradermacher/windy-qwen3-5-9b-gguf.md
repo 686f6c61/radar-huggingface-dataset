@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Windy-Qwen3.5-9B-GGUF es la distribucion en formato GGUF del modelo Windy-Qwen3.5-9B, un ajuste fino desarrollado por el usuario iRanadheer sobre una base de la familia Qwen 3.5. Esta version concreta ha sido generada por mradermacher, un conocido publicador de cuantizaciones GGUF dentro del ecosistema HuggingFace, que produce versiones estaticas (sin imatrix) de modelos populares para su uso con llama.cpp y derivados. El modelo cuenta con 8.953.803.264 parametros totales, lo que lo situa en la categoria de 9B, y esta etiquetado como conversacional y compatible con endpoints.
+Windy-Qwen3.5-9B-GGUF es la distribucion en formato GGUF del modelo Windy-Qwen3.5-9B, un ajuste fino desarrollado por el usuario iRanadheer sobre una base de la familia Qwen 3.5. Esta version concreta ha sido generada por mradermacher, un conocido publicador de cuantizaciones GGUF dentro del ecosistema Hugging Face, que produce versiones estaticas (sin imatrix) de modelos populares para su uso con llama.cpp y derivados. El modelo cuenta con 8.953.803.264 parametros totales, lo que lo situa en la categoria de 9B, y esta etiquetado como conversacional y compatible con endpoints.
 
 La relevancia de esta publicacion radica en que facilita el despliegue local del modelo base en hardware de consumo mediante cuantizaciones que van desde Q2_K (3,9 GB) hasta f16 (18 GB), pasando por opciones recomendadas como Q4_K_M (5,7 GB) y Q8_0 (9,6 GB). Ademas, el repositorio incluye ficheros mmproj en Q8_0 y f16, lo que indica que el modelo base incorpora capacidades multimodales (vision) que pueden habilitarse junto con los pesos cuantizados.
 
@@ -31,7 +31,7 @@ Lo unico verificable a partir de los metadatos es que el modelo base es `iRanadh
 
 - Generacion de texto conversacional: el modelo esta etiquetado como `conversational`, lo que indica un ajuste orientado a dialogos multi-turno.
 - Procesamiento multimodal: la presencia de ficheros `mmproj` en el repositorio GGUF indica soporte de entrada de imagenes junto con texto, aunque no se detalla la naturaleza exacta del componente visual.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Idiomas: unicamente se declara ingles (`en`) como idioma soportado; no hay evidencia de capacidades multilingues adicionales.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -93,7 +93,7 @@ La comparacion es meramente estructural: no se dispone de resultados de MMLU, Hu
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones estaticas): https://huggingface.co/mradermacher/Windy-Qwen3.5-9B-GGUF
+- Repositorio Hugging Face (cuantizaciones estaticas): https://huggingface.co/mradermacher/Windy-Qwen3.5-9B-GGUF
 - Repositorio de cuantizaciones imatrix: https://huggingface.co/mradermacher/Windy-Qwen3.5-9B-i1-GGUF
 - Modelo base original: https://huggingface.co/iRanadheer/Windy-Qwen3.5-9B
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#Windy-Qwen3.5-9B-GGUF

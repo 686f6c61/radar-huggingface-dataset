@@ -96,7 +96,7 @@ La información proporcionada solo permite comparar esta conversión con el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fearnt/thicket-bioclip2
+- Modelo en Hugging Face: https://huggingface.co/fearnt/thicket-bioclip2
 - Modelo base (BioCLIP 2, Imageomics): https://huggingface.co/imageomics/bioclip-2
 - Artículo de BioCLIP 2 (NeurIPS 2025): https://proceedings.neurips.cc/paper_files/paper/2025/file/94da80cbfe870c1db958c88a8a27018c-Paper-Conference.pdf
 - DOI del modelo base: https://doi.org/10.57967/hf/5765

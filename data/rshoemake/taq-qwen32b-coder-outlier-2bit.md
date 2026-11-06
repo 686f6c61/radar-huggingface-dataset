@@ -99,6 +99,6 @@ Este checkpoint ofrece el menor uso de memoria pero tambien la mayor degradacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: [rshoemake/taq-qwen32b-coder-outlier-2bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-outlier-2bit)
+- Repositorio Hugging Face: [rshoemake/taq-qwen32b-coder-outlier-2bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-outlier-2bit)
 - Documentacion del formato TAQ: [rshoemake/taq-qwen14b-unsloth-matched](https://huggingface.co/rshoemake/taq-qwen14b-unsloth-matched)
 - Modelo base: [Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)

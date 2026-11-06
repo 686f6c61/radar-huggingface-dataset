@@ -68,7 +68,7 @@ No se dispone de modelos directamente comparables en la misma categoría (híbri
 
 | Modelo/Enfoque | Tipo | Alcance | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MegaNet SciML Studio V16.1 | Híbrido (solucionador exacto + XPINN local) | Redes microfluídicas, diseño inverso, incertidumbre | Apache 2.0 | Código abierto en HuggingFace |
+| MegaNet SciML Studio V16.1 | Híbrido (solucionador exacto + XPINN local) | Redes microfluídicas, diseño inverso, incertidumbre | Apache 2.0 | Código abierto en Hugging Face |
 | PINN puros (p. ej., DeepXDE) | Redes neuronales informadas por la física | Ecuaciones diferenciales generales, sin escalado a redes completas | Apache 2.0 (DeepXDE) | Código abierto |
 | DeepCFD benchmark | Dataset de CFD para entrenamiento de redes | Flujo en geometrías 2D | Sujeto a términos del dataset | Zenodo |
 
@@ -82,11 +82,11 @@ La diferencia clave es que MegaNet no intenta resolver la física completa con r
 - No sustituye a CFD de interfaz resuelta para casos que requieran alta fidelidad en la descripción de la interfaz bifásica.
 - Los datos de entrenamiento de las redes neuronales locales no se especifican en detalle; la validación depende de las referencias abiertas citadas (DeepCFD, DAFD 3.0).
 - No se han publicado métricas de error o benchmarks cuantitativos que permitan evaluar la precisión del modelo frente a soluciones de referencia.
-- El repositorio tiene cero descargas y cero likes en HuggingFace, lo que sugiere que no ha sido ampliamente probado por la comunidad.
+- El repositorio tiene cero descargas y cero likes en Hugging Face, lo que sugiere que no ha sido ampliamente probado por la comunidad.
 - La licencia Apache 2.0 permite uso comercial del código, pero los datasets y benchmarks externos (DeepCFD, DAFD 3.0) están sujetos a sus propios términos y requieren citación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbelCSRNW/microfludicsCSRNW
+- Repositorio en Hugging Face: https://huggingface.co/maxbelCSRNW/microfludicsCSRNW
 - Benchmark DeepCFD (Zenodo): DOI 10.5281/zenodo.3665511
 - Dataset DAFD 3.0: DOI 10.1038/s41467-023-44068-3

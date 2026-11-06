@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / audio | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA NemotronLabs RE-USE (LiteRT, esta ficha) | 9,6 M | Fragmentos de 2 s a 16 kHz | OpenMDW-1.1 | TFLite | HuggingFace (litert-community) |
-| NVIDIA NemotronLabs RE-USE (original) | 9,6 M | 8–48 kHz, fragmentos configurables (script de 5 s cada 2,5 s) | OpenMDW-1.1 | no disponible en la informacion proporcionada | HuggingFace (nvidia) |
+| NVIDIA NemotronLabs RE-USE (LiteRT, esta ficha) | 9,6 M | Fragmentos de 2 s a 16 kHz | OpenMDW-1.1 | TFLite | Hugging Face (litert-community) |
+| NVIDIA NemotronLabs RE-USE (original) | 9,6 M | 8–48 kHz, fragmentos configurables (script de 5 s cada 2,5 s) | OpenMDW-1.1 | no disponible en la informacion proporcionada | Hugging Face (nvidia) |
 | Alternativas de mejora de voz de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de benchmarks ni especificaciones de otros modelos de restauración de voz comparables, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -95,7 +95,7 @@ La información proporcionada no incluye datos de benchmarks ni especificaciones
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/litert-community/NVIDIA-NemotronLabs-RE-USE-LiteRT
+- Hugging Face (esta conversión): https://huggingface.co/litert-community/NVIDIA-NemotronLabs-RE-USE-LiteRT
 - Modelo original: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE
 - Paper referenciado (arXiv:2603.02641): https://arxiv.org/abs/2603.02641
 - Paper referenciado (arXiv:2606.25621): https://arxiv.org/abs/2606.25621

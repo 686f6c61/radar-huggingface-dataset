@@ -73,10 +73,10 @@ No se proporcionan métricas numéricas (FVD, CLIP, SSIM u otras) para respaldar
 
 | Modelo | Tipo | Enfoque | Encadenable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Leon1000/MiniMax-H3-360-Orbit-LoRA | LoRA sobre MiniMax-H3 FL2VA | Órbita 360 con escena congelada y cierre sobre el primer fotograma | Sí | minimax-h3-community-license-agreement | HuggingFace |
-| pablodawson/MiniMax-H3-360-Orbit-LoRA | LoRA sobre MiniMax-H3 FL2VA | Órbita 360 con escena congelada (según descripción de terceros, rank-16) | No confirmado | No disponible | HuggingFace |
-| MiniMax-H3 FL2VA (base) | Modelo de vídeo first-last-frame | Generación condicionada por primer y último fotograma; con la misma imagen en ambos extremos apenas se mueve | No | minimax-h3-community-license-agreement | HuggingFace |
-| MiniMax-H3 Ref2VA (base) | Modelo de vídeo reference-to-video | Trata las imágenes de entrada como referencias de apariencia; no fija el fotograma final | No | minimax-h3-community-license-agreement | HuggingFace |
+| Leon1000/MiniMax-H3-360-Orbit-LoRA | LoRA sobre MiniMax-H3 FL2VA | Órbita 360 con escena congelada y cierre sobre el primer fotograma | Sí | minimax-h3-community-license-agreement | Hugging Face |
+| pablodawson/MiniMax-H3-360-Orbit-LoRA | LoRA sobre MiniMax-H3 FL2VA | Órbita 360 con escena congelada (según descripción de terceros, rank-16) | No confirmado | No disponible | Hugging Face |
+| MiniMax-H3 FL2VA (base) | Modelo de vídeo first-last-frame | Generación condicionada por primer y último fotograma; con la misma imagen en ambos extremos apenas se mueve | No | minimax-h3-community-license-agreement | Hugging Face |
+| MiniMax-H3 Ref2VA (base) | Modelo de vídeo reference-to-video | Trata las imágenes de entrada como referencias de apariencia; no fija el fotograma final | No | minimax-h3-community-license-agreement | Hugging Face |
 
 Los datos de rendimiento comparado no están disponibles; la única referencia disponible son las comparaciones cualitativas de la propia model card frente al modelo base.
 
@@ -95,7 +95,7 @@ Los datos de rendimiento comparado no están disponibles; la única referencia d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leon1000/MiniMax-H3-360-Orbit-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Leon1000/MiniMax-H3-360-Orbit-LoRA
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repack pruned int8 ConvRot (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3

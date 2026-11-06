@@ -94,8 +94,8 @@ La mejora global en exito fue de +0,346, con un intervalo del 95 % de +0,251 a +
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Privoid-Tool-Qwen3-4B | LoRA sobre 4B | no disponible | Tool calling empresarial | apache-2.0 | HuggingFace |
-| Qwen3-4B (base) | 4B | no disponible | Modelo generalista con tool calling nativo | apache-2.0 | HuggingFace |
+| Privoid-Tool-Qwen3-4B | LoRA sobre 4B | no disponible | Tool calling empresarial | apache-2.0 | Hugging Face |
+| Qwen3-4B (base) | 4B | no disponible | Modelo generalista con tool calling nativo | apache-2.0 | Hugging Face |
 | Alternativas especificas de function calling de 4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas relevante es con su modelo base: el adaptador mejora la puntuacion de tarea de 0,505 a 0,942 y reduce las llamadas innecesarias del 27,2 % al 4,1 %, con una ligera perdida en seleccion de herramienta y validez de esquema. No se dispone de datos de otros adaptadores comparables en la informacion proporcionada.
@@ -117,7 +117,7 @@ La comparacion directa mas relevante es con su modelo base: el adaptador mejora 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-Tool-Qwen3-4B
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-Tool-Qwen3-4B
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset NousResearch/hermes-function-calling-v1: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
 - Dataset glaiveai/glaive-function-calling-v2: https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2

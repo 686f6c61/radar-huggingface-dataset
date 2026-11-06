@@ -77,10 +77,10 @@ Las variantes `*_interesting` consideran unicamente las posiciones en las que el
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador transcoder | 3,6B (base + ramas) | 8192 tokens | top1_agreement 0,857 vs gemma-2-2b-it | no disponible | HuggingFace, requiere clases propias |
-| google/gemma-2-2b | ~2,6B | 8192 tokens | base sin ajuste de instrucciones | Gemma Terms | HuggingFace, uso amplio |
-| google/gemma-2-2b-it | ~2,6B | 8192 tokens | modelo de referencia instruido | Gemma Terms | HuggingFace, uso amplio |
-| LoRA/adaptadores densos tipicos | ~10-100M | segun base | ajuste end-to-end opaco | variable | HuggingFace, ecosistema estandar |
+| Este adaptador transcoder | 3,6B (base + ramas) | 8192 tokens | top1_agreement 0,857 vs gemma-2-2b-it | no disponible | Hugging Face, requiere clases propias |
+| google/gemma-2-2b | ~2,6B | 8192 tokens | base sin ajuste de instrucciones | Gemma Terms | Hugging Face, uso amplio |
+| google/gemma-2-2b-it | ~2,6B | 8192 tokens | modelo de referencia instruido | Gemma Terms | Hugging Face, uso amplio |
+| LoRA/adaptadores densos tipicos | ~10-100M | segun base | ajuste end-to-end opaco | variable | Hugging Face, ecosistema estandar |
 
 Frente a un LoRA convencional, la diferencia clave no es de rendimiento sino de interpretabilidad: el adaptador expone caracteristicas dispersas editables e inspeccionables, a costa de un repositorio mucho mayor y de una carga no estandar. No se dispone de comparativas publicadas con otros transcoders sobre el mismo benchmark.
 
@@ -97,7 +97,7 @@ Frente a un LoRA convencional, la diferencia clave no es de rendimiento sino de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmb/2026.TA.l1c_headline_2026-10_n_nmse0_tc8192_decb_l1w0.001_fp32_tarbb_lb2_ln0_dr40000_sl17824465
+- Modelo en Hugging Face: https://huggingface.co/siddharthmb/2026.TA.l1c_headline_2026-10_n_nmse0_tc8192_decb_l1w0.001_fp32_tarbb_lb2_ln0_dr40000_sl17824465
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Modelo de referencia: https://huggingface.co/google/gemma-2-2b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits

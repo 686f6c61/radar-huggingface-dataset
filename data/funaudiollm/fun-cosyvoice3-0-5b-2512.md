@@ -107,7 +107,7 @@ Fun-CosyVoice3-0.5B-2512 destaca entre los modelos open source por su equilibrio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
+- Modelo en Hugging Face: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Repositorio GitHub (CosyVoice): https://github.com/QwenAudio/CosyVoice
 - Pagina de demos CosyVoice 3.0: https://funaudiollm.github.io/cosyvoice3/
 - Paper CosyVoice 3.0 (arXiv): https://arxiv.org/abs/2505.17589

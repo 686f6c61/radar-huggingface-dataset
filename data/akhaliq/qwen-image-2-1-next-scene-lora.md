@@ -2,7 +2,7 @@
 
 ## Resumen
 
-akhaliq/Qwen-Image-2.1-Next-Scene-LoRA es un adaptador LoRA publicado en HuggingFace por el usuario akhaliq, pensado para trabajar sobre el modelo de generacion y edicion de imagen Qwen-Image-2.1. Su nombre indica que implementa la funcionalidad de "next scene" (generacion de la escena siguiente): a partir de una imagen de entrada, producir una nueva escena que mantenga la composicion, el estilo y la atmosfera del fotograma original, de forma que varias generaciones encadenadas den lugar a una secuencia visual coherente.
+akhaliq/Qwen-Image-2.1-Next-Scene-LoRA es un adaptador LoRA publicado en Hugging Face por el usuario akhaliq, pensado para trabajar sobre el modelo de generacion y edicion de imagen Qwen-Image-2.1. Su nombre indica que implementa la funcionalidad de "next scene" (generacion de la escena siguiente): a partir de una imagen de entrada, producir una nueva escena que mantenga la composicion, el estilo y la atmosfera del fotograma original, de forma que varias generaciones encadenadas den lugar a una secuencia visual coherente.
 
 El modelo base Qwen-Image-2.1, desarrollado por el equipo Qwen (Alibaba), es un modelo unificado de text-to-image y edicion de imagen con unos 7000 millones de parametros en su componente de generacion visual, organizado en 32 capas DiT (Diffusion Transformer) de tipo single-stream. La ficha del adaptador, sin embargo, no incluye informacion propia: no declara pipeline, licencia, idiomas ni formato de pesos, y registra cero descargas y un unico "like" en el momento de la consulta.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| akhaliq/Qwen-Image-2.1-Next-Scene-LoRA | LoRA de generacion de escena siguiente | Qwen-Image-2.1 | No disponible para el adaptador | No disponible | No disponible | HuggingFace, 0 descargas, 1 like |
-| aiqwen/next-scene-qwen-image-lora-2509 | LoRA de generacion de escena siguiente | Qwen-Image-Edit (build 2509) | No disponible | No disponible | No disponible | HuggingFace |
+| akhaliq/Qwen-Image-2.1-Next-Scene-LoRA | LoRA de generacion de escena siguiente | Qwen-Image-2.1 | No disponible para el adaptador | No disponible | No disponible | Hugging Face, 0 descargas, 1 like |
+| aiqwen/next-scene-qwen-image-lora-2509 | LoRA de generacion de escena siguiente | Qwen-Image-Edit (build 2509) | No disponible | No disponible | No disponible | Hugging Face |
 | Qwen Next Scene LoRa (Civitai) | LoRA y flujo de trabajo en ComfyUI | Qwen Image Edit | No disponible | No disponible | No disponible | Civitai |
 | Qwen-Image-2.1 (modelo base) | Text-to-image y edicion de imagen unificados | No aplica | 7B en el componente de generacion visual, 32 capas DiT single-stream | No disponible | No disponible en la informacion recogida | GitHub (QwenLM), open source |
 
@@ -89,7 +89,7 @@ Las diferencias verificables entre los tres adaptadores son la fecha de publicac
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/akhaliq/Qwen-Image-2.1-Next-Scene-LoRA
+- Hugging Face del modelo: https://huggingface.co/akhaliq/Qwen-Image-2.1-Next-Scene-LoRA
 - Repositorio oficial de Qwen-Image-2.1 (QwenLM): https://github.com/QwenLM/Qwen-Image-2.1
 - Adaptador equivalente de aiqwen: https://huggingface.co/aiqwen/next-scene-qwen-image-lora-2509
 - Adaptador relacionado de akhaliq (Multiple Angles): https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA

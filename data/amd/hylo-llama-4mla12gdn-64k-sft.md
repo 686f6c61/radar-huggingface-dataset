@@ -6,7 +6,7 @@ HyLo-Llama-4MLA12GDN-64K-SFT es un checkpoint experimental de AMD que convierte 
 
 El modelo ha sido entrenado para contexto largo mediante destilación desde `meta-llama/Llama-3.1-8B-Instruct` como profesor. La primera fase, Enhanced-ILD, alinea por capas los bloques nuevos con las representaciones internas del modelo base a 2.048 tokens. La segunda fase hace SFT de contexto largo a 65.536 tokens con el profesor, usando divergencia KL entre las distribuciones del alumno y del profesor. El checkpoint final está pensado para funcionar hasta 65.536 tokens, aunque el `config.json` herede un `max_position_embeddings` de 131.072 que no debe interpretarse como contexto soportado.
 
-Es relevante ahora porque explora una vía de escalado híbrido sin preentrenar desde cero, reduciendo drásticamente la memoria de caché KV en inferencia. Está orientado a investigación y su licencia declarada en HuggingFace es research-only, no comercial. El modelo solo está entrenado y evaluado en inglés.
+Es relevante ahora porque explora una vía de escalado híbrido sin preentrenar desde cero, reduciendo drásticamente la memoria de caché KV en inferencia. Está orientado a investigación y su licencia declarada en Hugging Face es research-only, no comercial. El modelo solo está entrenado y evaluado en inglés.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ Es relevante ahora porque explora una vía de escalado híbrido sin preentrenar 
 | Longitud de contexto | 65.536 tokens entrenados (64K). YaRN factor 32,0 sobre ventana original de 2.048. `max_position_embeddings` del config: 131.072, heredado del base, no soportado según la model card |
 | Tipos de cuantización | No disponible. Pesos en float32; se recomienda cargar en bfloat16. No se listan GGUF, AWQ, GPTQ ni otras cuantizaciones |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | AMD Hybrid Models Research Only RAIL-MS (`license_name`/`license_link`). La model card también declara `license: apache-2.0` en el YAML y en los tags, pero el campo de licencia de HuggingFace indica `amd-hybrid-models-research-only-rail-ms` |
+| Licencia | AMD Hybrid Models Research Only RAIL-MS (`license_name`/`license_link`). La model card también declara `license: apache-2.0` en el YAML y en los tags, pero el campo de licencia de Hugging Face indica `amd-hybrid-models-research-only-rail-ms` |
 | Formato de pesos | safetensors; precisión float32 (cargar en bfloat16) |
 | Modelo base | meta-llama/Llama-3.2-1B-Instruct |
 | Profesor de destilación | meta-llama/Llama-3.1-8B-Instruct |
@@ -98,7 +98,7 @@ No se dispone de comparativas con modelos híbridos de la misma categoría en la
 
 ## Limitaciones y advertencias
 
-- Licencia research-only: el campo de licencia de HuggingFace y `license_name` indican AMD Hybrid Models Research Only RAIL-MS. Aunque la model card declara Apache-2.0 en el YAML y en los tags, no debe asumirse uso comercial sin revisar el archivo `LICENSE`.
+- Licencia research-only: el campo de licencia de Hugging Face y `license_name` indican AMD Hybrid Models Research Only RAIL-MS. Aunque la model card declara Apache-2.0 en el YAML y en los tags, no debe asumirse uso comercial sin revisar el archivo `LICENSE`.
 - Solo inglés: no se documentan capacidades multilingües.
 - Contexto máximo soportado: 65.536 tokens. No usar 131.072 aunque `config.json` lo indique, porque la model card lo marca como no soportado.
 - Riesgo de alucinación: inherente a un modelo de 1,67B, especialmente en tareas de conocimiento factual y matemáticas.
@@ -113,7 +113,7 @@ No se dispone de comparativas con modelos híbridos de la misma categoría en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Llama-4MLA12GDN-64K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Llama-4MLA12GDN-64K-SFT
 - Paper principal: https://arxiv.org/abs/2604.24715
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Profesor de destilación: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

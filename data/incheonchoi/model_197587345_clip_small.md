@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_197587345_clip_small` es una implementación a pequeña escala de la arquitectura CLIP (Contrastive Language-Image Pre-training), publicada por el usuario `incheonchoi` en HuggingFace. El modelo está diseñado para tareas de aprendizaje contrastivo entre imágenes y texto, siguiendo el paradigma original de OpenAI, pero con un tamaño reducido orientado a entornos con recursos limitados o experimentación rápida. El repositorio contiene únicamente el archivo `model_197587345_clip_small.py`, que es el artefacto principal, sin pesos preentrenados publicados ni pipeline de inferencia definido.
+`model_197587345_clip_small` es una implementación a pequeña escala de la arquitectura CLIP (Contrastive Language-Image Pre-training), publicada por el usuario `incheonchoi` en Hugging Face. El modelo está diseñado para tareas de aprendizaje contrastivo entre imágenes y texto, siguiendo el paradigma original de OpenAI, pero con un tamaño reducido orientado a entornos con recursos limitados o experimentación rápida. El repositorio contiene únicamente el archivo `model_197587345_clip_small.py`, que es el artefacto principal, sin pesos preentrenados publicados ni pipeline de inferencia definido.
 
 La relevancia de este modelo radica en su carácter experimental: incorpora varias técnicas modernas de eficiencia y estabilización del entrenamiento, como atención de ventana deslizante (sliding window), activación approx GELU, normalización por grupos (GroupNorm), inicialización ortogonal y el optimizador Lion con scheduler polinomial. Sin embargo, al carecer de pesos publicados, de documentación sobre el dataset de entrenamiento y de resultados de benchmarks, su utilidad práctica queda limitada a servir como referencia de implementación o punto de partida para investigadores que quieran entrenar su propio CLIP compacto.
 
@@ -74,7 +74,7 @@ La comparativa muestra que el modelo de `incheonchoi` carece de pesos preentrena
 
 ## Enlaces
 
-- [HuggingFace - incheonchoi/model_197587345_clip_small](https://huggingface.co/incheonchoi/model_197587345_clip_small)
+- [Hugging Face - incheonchoi/model_197587345_clip_small](https://huggingface.co/incheonchoi/model_197587345_clip_small)
 - [CLIP original (OpenAI)](https://github.com/openai/CLIP)
 - [TinyCLIP (GitHub)](https://github.com/wkcn/TinyCLIP)
 - [Blog de CLIP (OpenAI)](https://openai.com/index/clip/)

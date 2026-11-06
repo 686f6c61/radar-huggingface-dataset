@@ -2,11 +2,11 @@
 
 ## Resumen
 
-HalfFalcon/Sert-PVP es un repositorio publicado en HuggingFace por el usuario HalfFalcon del que, a fecha de la consulta, no se dispone de informacion tecnica verificable. La model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y ningun otro campo: no describe la arquitectura, el numero de parametros, el proceso de entrenamiento, los datos utilizados ni las capacidades del modelo. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado.
+HalfFalcon/Sert-PVP es un repositorio publicado en Hugging Face por el usuario HalfFalcon del que, a fecha de la consulta, no se dispone de informacion tecnica verificable. La model card asociada contiene unicamente la declaracion de licencia (`license: mit`) y ningun otro campo: no describe la arquitectura, el numero de parametros, el proceso de entrenamiento, los datos utilizados ni las capacidades del modelo. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado.
 
 El unico dato objetivo disponible es la licencia MIT, que permitiria uso comercial, modificacion y redistribucion siempre que se conserve el aviso de copyright, aunque dicha licencia se aplica sobre un artefacto cuyo contenido y naturaleza no estan documentados. La fecha de creacion y de ultima actualizacion registradas son identicas (26 de septiembre de 2026), lo que sugiere una subida unica sin mantenimiento posterior ni revisiones.
 
-Por tanto, esta ficha no puede evaluar el modelo en terminos de rendimiento, arquitectura o idoneidad para produccion. Cualquier dato no listado explicitamente como procedente de HuggingFace debe considerarse "no disponible". Se recomienda a desarrolladores e investigadores contactar con el autor o inspeccionar directamente los archivos del repositorio antes de considerar su uso.
+Por tanto, esta ficha no puede evaluar el modelo en terminos de rendimiento, arquitectura o idoneidad para produccion. Cualquier dato no listado explicitamente como procedente de Hugging Face debe considerarse "no disponible". Se recomienda a desarrolladores e investigadores contactar con el autor o inspeccionar directamente los archivos del repositorio antes de considerar su uso.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HalfFalcon/Sert-PVP
+- Repositorio en Hugging Face: https://huggingface.co/HalfFalcon/Sert-PVP
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

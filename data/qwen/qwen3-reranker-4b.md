@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks específicos para Qwen3-Reranker-4B
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Reranker-4B | 4B | 32K | Reranking denso | Apache 2.0 | HuggingFace |
-| Qwen3-Reranker-0.6B | 0.6B | 32K | Reranking denso | Apache 2.0 | HuggingFace |
-| Qwen3-Reranker-8B | 8B | 32K | Reranking denso | Apache 2.0 | HuggingFace |
-| Qwen3-Embedding-4B | 4B | 32K | Embedding (bi-encoder) | Apache 2.0 | HuggingFace |
+| Qwen3-Reranker-4B | 4B | 32K | Reranking denso | Apache 2.0 | Hugging Face |
+| Qwen3-Reranker-0.6B | 0.6B | 32K | Reranking denso | Apache 2.0 | Hugging Face |
+| Qwen3-Reranker-8B | 8B | 32K | Reranking denso | Apache 2.0 | Hugging Face |
+| Qwen3-Embedding-4B | 4B | 32K | Embedding (bi-encoder) | Apache 2.0 | Hugging Face |
 
 Los tres rerankers de la familia comparten la misma longitud de contexto (32K), licencia Apache 2.0 y condición de instruction aware, diferenciándose únicamente en el tamaño. La elección entre ellos responde a un compromiso entre precisión de reordenación y coste de inferencia. No se dispone en la información proporcionada de datos de benchmarks que permitan comparar numéricamente con alternativas externas como BAAI bge-reranker o Cohere Rerank.
 
@@ -99,7 +99,7 @@ Los tres rerankers de la familia comparten la misma longitud de contexto (32K), 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Qwen/Qwen3-Reranker-4B
+- Hugging Face: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Blog de la familia Qwen3 Embedding: https://qwenlm.github.io/blog/qwen3-embedding/
 - Repositorio GitHub: https://github.com/QwenLM/Qwen3-Embedding
 - Paper (arXiv 2506.05176): https://arxiv.org/abs/2506.05176

@@ -6,7 +6,7 @@
 
 El modelo esta pensado para integrarse en flujos de trabajo de ComfyUI o en la plataforma RunningHub, donde se carga junto al modelo base Qwen-image. No se trata de un modelo de lenguaje ni de un modelo multimodal general: es un adaptador de estilizacion para generacion de imagenes. La informacion publicada es muy escasa (sin model card tecnica detallada, sin licencia explicita, sin idiomas declarados y sin benchmarks), por lo que esta ficha se limita a lo verificable en los metadatos y en el README del autor.
 
-Su relevancia actual es acotada: sirve como ejemplo del ecosistema de LoRAs de estilo que se distribuyen via HuggingFace y se consumen en ComfyUI, y como pieza concreta para quien quiera reproducir el estilo de ilustracion CG sobre Qwen-image sin reentrenar el modelo base. No aporta innovaciones arquitectonicas; su valor es estilistico y practico.
+Su relevancia actual es acotada: sirve como ejemplo del ecosistema de LoRAs de estilo que se distribuyen via Hugging Face y se consumen en ComfyUI, y como pieza concreta para quien quiera reproducir el estilo de ilustracion CG sobre Qwen-image sin reentrenar el modelo base. No aporta innovaciones arquitectonicas; su valor es estilistico y practico.
 
 ## Especificaciones tecnicas
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-cgqwen-lora | LoRA de estilo text-to-image | Qwen-image | no disponible | no disponible | HuggingFace, RunningHub |
-| Otros LoRA de estilo para Qwen-image | LoRA de estilo text-to-image | Qwen-image | no disponible | variable segun autor | HuggingFace, Civitai, RunningHub |
-| LoRA de estilo para Stable Diffusion XL | LoRA de estilo text-to-image | SDXL | no disponible | variable (a menudo CreativeML) | HuggingFace, Civitai |
-| LoRA de estilo para Flux | LoRA de estilo text-to-image | Flux.1 | no disponible | variable | HuggingFace, Civitai |
+| rh-cgqwen-lora | LoRA de estilo text-to-image | Qwen-image | no disponible | no disponible | Hugging Face, RunningHub |
+| Otros LoRA de estilo para Qwen-image | LoRA de estilo text-to-image | Qwen-image | no disponible | variable segun autor | Hugging Face, Civitai, RunningHub |
+| LoRA de estilo para Stable Diffusion XL | LoRA de estilo text-to-image | SDXL | no disponible | variable (a menudo CreativeML) | Hugging Face, Civitai |
+| LoRA de estilo para Flux | LoRA de estilo text-to-image | Flux.1 | no disponible | variable | Hugging Face, Civitai |
 
 No se dispone de datos de rendimiento comparativo (FID, CLIP score, evaluaciones humanas) para este LoRA ni para alternativas concretas en la informacion proporcionada, por lo que la comparativa se limita a categoria, modelo base, licencia y canal de distribucion.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (FID, CLIP score, evaluaciones
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-cgqwen-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-cgqwen-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2029039877454569474
 - Pagina del autor: https://www.runninghub.cn/user-center/1861364520106020865
 - RunningHub International: https://www.runninghub.ai

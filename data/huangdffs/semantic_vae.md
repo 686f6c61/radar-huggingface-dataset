@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Semantic VAE es un autoencoder variacional (VAE) desarrollado por el usuario huangdffs y publicado en HuggingFace bajo licencia MIT. Su proposito declarado es conseguir una convergencia extremadamente rapida sobre datos de ilustracion, sirviendo como codificador latente para un modelo DiT (Diffusion Transformer) downstream. No es un modelo generativo de texto ni un LLM: es un componente de infraestructura para pipelines de difusion que trabajan en el espacio latente de DINOv2/DINOv3.
+Semantic VAE es un autoencoder variacional (VAE) desarrollado por el usuario huangdffs y publicado en Hugging Face bajo licencia MIT. Su proposito declarado es conseguir una convergencia extremadamente rapida sobre datos de ilustracion, sirviendo como codificador latente para un modelo DiT (Diffusion Transformer) downstream. No es un modelo generativo de texto ni un LLM: es un componente de infraestructura para pipelines de difusion que trabajan en el espacio latente de DINOv2/DINOv3.
 
 El modelo se entrena partiendo de DINOv2 congelado como extractor de caracteristicas, con un cuello de botella de 64 canales y un decodificador convolucional de estilo VA-VAE. La innovacion principal es que la funcion de perdida opera exclusivamente en el espacio de caracteristicas de DINOv2 y DINOv3 (MSE sobre todas las capas, ponderadas por igual), sin usar perdidas de pixel, LPIPS ni GAN. Esto elimina la necesidad de discriminadores y simplifica el entrenamiento, que el autor cifra en 12 horas.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Semantic VAE (huangdffs) | VAE para DiT con encoder DINO | no disponible | no aplica | MIT | HuggingFace |
+| Semantic VAE (huangdffs) | VAE para DiT con encoder DINO | no disponible | no aplica | MIT | Hugging Face |
 | VA-VAE | VAE para difusion | no disponible en la informacion | no aplica | no disponible | no disponible |
 | LeJEPA | Marco de representacion latente | no disponible en la informacion | no aplica | no disponible | no disponible |
 
@@ -79,4 +79,4 @@ No se dispone de datos cuantitativos para comparar rendimiento entre estas alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangdffs/semantic_vae
+- Hugging Face: https://huggingface.co/huangdffs/semantic_vae

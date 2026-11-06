@@ -112,7 +112,7 @@ Comparación con alternativas de otras familias del mismo orden de tamaño (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-NVFP4
 - Modelo base (bf16 Heretic): https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic
 - Variante FP8: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-FP8
 - Variante GGUF: https://huggingface.co/darrellbest/Qwen3.5-0.8B-Heretic-GGUF

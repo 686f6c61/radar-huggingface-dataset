@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avifenesh/Qwen3.8-27B-NVFP4-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Avifenesh/Qwen3.8-27B-NVFP4-MTP-GGUF
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del motor memra: https://github.com/avifenesh/memra
 - Issue de llama.cpp sobre FR-Spec (draft recortado): https://github.com/ggml-org/llama.cpp/issues/25187

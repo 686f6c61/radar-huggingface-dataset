@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de la familia transformers publicado por el usuario ishikaa bajo el identificador ishikaa/acquisition_generator_AS_tracin_mmlupro_qwen3b. Se trata de un artefacto de investigacion, no de un modelo documentado para produccion: la model card es la plantilla automatica de HuggingFace y no incluye ni descripcion, ni datos de entrenamiento, ni licencia, ni idiomas. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, lo que refuerza su caracter de experimento interno.
+Este repositorio contiene un checkpoint de la familia transformers publicado por el usuario ishikaa bajo el identificador ishikaa/acquisition_generator_AS_tracin_mmlupro_qwen3b. Se trata de un artefacto de investigacion, no de un modelo documentado para produccion: la model card es la plantilla automatica de Hugging Face y no incluye ni descripcion, ni datos de entrenamiento, ni licencia, ni idiomas. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, lo que refuerza su caracter de experimento interno.
 
 Los datos objetivos disponibles son escasos pero concretos: 14.770.033.664 parametros totales segun los ficheros safetensors, un tamano de repositorio de 59,1 GB y el tag de arquitectura qwen2. El nombre del modelo sugiere un generador de candidatos de adquisicion (acquisition_generator) vinculado a tecnicas de atribucion de influencia (TracIn) y a evaluacion sobre MMLU-Pro, pero ninguna fuente publicada confirma esta interpretacion, por lo que debe tratarse como hipotesis a verificar.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es, por tanto, doble: por un lado documenta un check
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Qwen2 (segun el tag qwen2 de HuggingFace); configuracion detallada no disponible |
+| Arquitectura | Transformer decoder-only, familia Qwen2 (segun el tag qwen2 de Hugging Face); configuracion detallada no disponible |
 | Parametros totales | 14.770.033.664 (segun safetensors) |
 | Parametros activos | no disponible (no hay indicios de arquitectura MoE en la informacion proporcionada) |
 | Longitud de contexto | no disponible |
@@ -35,7 +35,7 @@ No hay informacion sobre volumen de tokens de entrenamiento, composicion del dat
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas soportados).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad de despliegue: los tags endpoints_compatible y text-generation-inference indican compatibilidad con HuggingFace Inference Endpoints y con TGI.
+- Compatibilidad de despliegue: los tags endpoints_compatible y text-generation-inference indican compatibilidad con Hugging Face Inference Endpoints y con TGI.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ El identificador del modelo menciona MMLU-Pro, pero no se ha facilitado ninguna 
   - int8: A100 40 GB o 80 GB, RTX 4090 24 GB.
   - int4: RTX 4090, RTX 3090, RTX 4080 con margen reducido.
 - Cabe en GPU de consumo: si, previsiblemente en RTX 4090/3090 con cuantizacion de 8 o 4 bits. No cabe en bf16 en GPU de 16 GB o menos.
-- Opciones de despliegue: transformers de forma nativa; TGI, dado el tag text-generation-inference; HuggingFace Inference Endpoints, dado el tag endpoints_compatible; vLLM es habitual en arquitecturas Qwen2 y compatible con pesos safetensors, aunque no esta confirmado por el autor. No hay ficheros GGUF en el repositorio, por lo que llama.cpp u Ollama exigirian una conversion previa, viable solo si la arquitectura es efectivamente compatible.
+- Opciones de despliegue: transformers de forma nativa; TGI, dado el tag text-generation-inference; Hugging Face Inference Endpoints, dado el tag endpoints_compatible; vLLM es habitual en arquitecturas Qwen2 y compatible con pesos safetensors, aunque no esta confirmado por el autor. No hay ficheros GGUF en el repositorio, por lo que llama.cpp u Ollama exigirian una conversion previa, viable solo si la arquitectura es efectivamente compatible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ Datos de los modelos alternativos tomados de sus fichas publicas; conviene verif
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la ficha es la plantilla automatica de HuggingFace sin ninguna seccion completada. No hay informacion sobre uso previsto, uso fuera de alcance, sesgos ni consideraciones eticas.
+- Model card vacia: la ficha es la plantilla automatica de Hugging Face sin ninguna seccion completada. No hay informacion sobre uso previsto, uso fuera de alcance, sesgos ni consideraciones eticas.
 - Licencia no disponible: sin licencia explicita no hay permiso claro para uso comercial, redistribucion ni obras derivadas. Es el bloqueante principal para cualquier despliegue en produccion.
 - Procedencia de datos desconocida: al no documentarse el dataset de entrenamiento, no es posible evaluar sesgos, presencia de datos personales, contenido con copyright ni riesgo de contaminacion de benchmarks.
 - Riesgo de alucinacion: cualquier modelo generativo de este tamano puede producir afirmaciones erroneas con apariencia de verosimilitud; sin evaluaciones publicadas no hay forma de acotar esa tasa.
@@ -93,6 +93,6 @@ Datos de los modelos alternativos tomados de sus fichas publicas; conviene verif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_mmlupro_qwen3b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_mmlupro_qwen3b
 - arXiv 1910.09700 (Lacoste et al., 2019), citado unicamente en la plantilla de la model card a proposito del calculo de emisiones: https://arxiv.org/abs/1910.09700
 - Machine Learning Impact calculator, enlazado desde la plantilla de la model card: https://mlco2.github.io/impact#compute

@@ -83,8 +83,8 @@ La información proporcionada no incluye otros modelos comparables evaluados sob
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andreadm/reddit-pulse-gemma2_2b-qdora | Base de 2B + adaptador DoRA | No especificado (truncado a 1024 tokens en el ejemplo) | Accuracy 0,7266 / F1 macro 0,6946 / ROC-AUC macro 0,8683 en el gold set de Reddit | Gemma | HuggingFace (0 descargas, 0 likes) |
-| google/gemma-2-2b (modelo base) | 2B | No disponible en la información proporcionada | No aplica: no es un clasificador de inflación | Gemma | HuggingFace |
+| andreadm/reddit-pulse-gemma2_2b-qdora | Base de 2B + adaptador DoRA | No especificado (truncado a 1024 tokens en el ejemplo) | Accuracy 0,7266 / F1 macro 0,6946 / ROC-AUC macro 0,8683 en el gold set de Reddit | Gemma | Hugging Face (0 descargas, 0 likes) |
+| google/gemma-2-2b (modelo base) | 2B | No disponible en la información proporcionada | No aplica: no es un clasificador de inflación | Gemma | Hugging Face |
 | Otros clasificadores de expectativas de inflación o de sentimiento económico | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias

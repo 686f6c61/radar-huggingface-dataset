@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`justinwilsongop/personal-multitask35` es un repositorio experimental publicado en HuggingFace por el usuario `justinwilsongop` que contiene una implementación de Vision Transformer (ViT) en escala *tiny* orientada a tareas múltiples (*multitask*). No es un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint evaluado ni con resultados de benchmarks.
+`justinwilsongop/personal-multitask35` es un repositorio experimental publicado en Hugging Face por el usuario `justinwilsongop` que contiene una implementación de Vision Transformer (ViT) en escala *tiny* orientada a tareas múltiples (*multitask*). No es un modelo entrenado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint evaluado ni con resultados de benchmarks.
 
 El repositorio incluye el código principal (`pipeline.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`). La arquitectura declarada combina atención *flash*, fusión tensorial (*tensor fusion*) para las distintas tareas, activación GELU y normalización InstanceNorm. El recuento real de parámetros leído de los safetensors es de 24 832 parámetros, una cifra muy inferior a la de un ViT-tiny convencional (del orden de millones), lo que sugiere que el checkpoint cubre solo una parte del grafo o una configuración mínima.
 
-Su relevancia actual es limitada y de carácter metodológico: sirve como andamiaje reproducible para estudiar cambios de arquitectura antes de lanzar un entrenamiento completo, no como modelo de producción. El repositorio registra 0 descargas y 0 *likes* en el momento de la consulta y ocupa 0,0 GB según los metadatos de HuggingFace.
+Su relevancia actual es limitada y de carácter metodológico: sirve como andamiaje reproducible para estudiar cambios de arquitectura antes de lanzar un entrenamiento completo, no como modelo de producción. El repositorio registra 0 descargas y 0 *likes* en el momento de la consulta y ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -85,12 +85,12 @@ Las cifras de los tres modelos de referencia provienen de la literatura pública
 - No existe ninguna evaluación de alucinación ni de fiabilidad, porque no hay modelo funcional que evaluar.
 - La discrepancia entre los 24 832 parámetros reales y el orden de magnitud esperado en un ViT-tiny apunta a que el checkpoint contiene solo una parte de los tensores o una configuración mínima; conviene inspeccionar `config.json` antes de asumir que el grafo completo está incluido.
 - No se documentan idiomas soportados, resolución de entrada, tamaño de parche ni número de clases de salida, lo que impide reproducir el experimento sin leer el código.
-- El código es una implementación personal sin API estándar: los cargadores automáticos de HuggingFace (`AutoModel`, `AutoImageProcessor`) no funcionarán sin un adaptador escrito a medida.
+- El código es una implementación personal sin API estándar: los cargadores automáticos de Hugging Face (`AutoModel`, `AutoImageProcessor`) no funcionarán sin un adaptador escrito a medida.
 - La licencia Apache-2.0 permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado las condiciones de los datos de origen si se usan datasets externos.
 - El repositorio registra 0 descargas y 0 *likes*, por lo que no existe validación por parte de la comunidad ni reportes de terceros sobre su funcionamiento.
 - No se publican variantes cuantizadas ni recetas de despliegue, de modo que cualquier optimización de inferencia tendría que implementarse desde cero.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/justinwilsongop/personal-multitask35
+- Modelo en Hugging Face: https://huggingface.co/justinwilsongop/personal-multitask35
 - Búsqueda web realizada: no se encontraron enlaces relevantes al modelo, papers, blogs, repositorios auxiliares ni demos. Los resultados devueltos por el buscador no guardaban relación con el modelo analizado.

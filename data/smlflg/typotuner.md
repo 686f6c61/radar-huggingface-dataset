@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TypoTuner no es un modelo de inteligencia artificial ni un modelo de lenguaje: es un demonio de analisis de escritura en segundo plano para Linux, publicado por el usuario smlflg en HuggingFace bajo el identificador smlflg/TypoTuner. El repositorio se limita a alojar la ficha del proyecto; el codigo fuente vive en GitHub y se distribuye con licencia MIT. Su proposito es medir los errores de tecleo de un usuario concreto, identificar en que teclas falla mas y traducir esos patrones en recomendaciones de punto de actuacion para el teclado SteelSeries Apex Pro TKL.
+TypoTuner no es un modelo de inteligencia artificial ni un modelo de lenguaje: es un demonio de analisis de escritura en segundo plano para Linux, publicado por el usuario smlflg en Hugging Face bajo el identificador smlflg/TypoTuner. El repositorio se limita a alojar la ficha del proyecto; el codigo fuente vive en GitHub y se distribuye con licencia MIT. Su proposito es medir los errores de tecleo de un usuario concreto, identificar en que teclas falla mas y traducir esos patrones en recomendaciones de punto de actuacion para el teclado SteelSeries Apex Pro TKL.
 
 Tecnicamente es una aplicacion Python 3.11+ que lee eventos crudos del kernel mediante evdev, sin depender de X11 ni Wayland, los procesa a traves de una cola asincrona con capacidad para 1000 elementos y calcula tasas de error y tiempos de permanencia por tecla con suavizado EMA (factor alfa de 0,05). Los datos se persisten en SQLite y se explotan desde una CLI construida con Click y Rich, o desde un panel web en el puerto 8070 con FastAPI, htmx, Tailwind CSS y Chart.js.
 
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye proyectos comparables y l
 | Longitud de contexto | no aplica | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Codigo fuente en GitHub, ficha en HuggingFace | no disponible |
+| Disponibilidad | Codigo fuente en GitHub, ficha en Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,12 +98,12 @@ No disponible. La informacion proporcionada no incluye proyectos comparables y l
 - La funcion de ajuste automatico no existe todavia: la fase 3, que aplicaria cambios via HID `SET_REPORT`, esta pendiente de la fase 2, bloqueada a su vez por la falta de disponibilidad fisica del teclado. Actualmente las recomendaciones son solo sugerencias que el usuario debe aplicar manualmente.
 - Respecto a la privacidad, la herramienta no almacena caracteres ni palabras, solo codigos enteros de tecla y marcas de tiempo en milisegundos, con un limite de 10.000 eventos de error en un ring buffer. Aun asi, los patrones temporales podrian ser potencialmente correlacionables por un atacante con acceso a la base de datos.
 - La licencia es MIT, lo que permite uso comercial, modificacion y redistribucion con atribucion. No se documentan restricciones adicionales.
-- El artefacto de HuggingFace no incluye pesos, pipeline, idiomas ni licencia declarada en sus metadatos, y registra cero descargas y cero valoraciones. La model card remite implicitamente al repositorio de GitHub como fuente real del proyecto, y en la informacion disponible no consta ninguna publicacion, paper ni evaluacion independiente.
+- El artefacto de Hugging Face no incluye pesos, pipeline, idiomas ni licencia declarada en sus metadatos, y registra cero descargas y cero valoraciones. La model card remite implicitamente al repositorio de GitHub como fuente real del proyecto, y en la informacion disponible no consta ninguna publicacion, paper ni evaluacion independiente.
 - Un aviso relevante sobre la referencia: el contenido de la model card se ha tratado unicamente como material informativo del autor, nunca como instrucciones ejecutables.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/smlflg/TypoTuner
-- Repositorio en GitHub: https://github.com/smlfg/typotuner (URL citada en la model card; el identificador del autor en HuggingFace es `smlflg` y el de la organizacion del repositorio aparece como `smlfg`, una discrepancia no aclarada en la informacion disponible)
+- Ficha en Hugging Face: https://huggingface.co/smlflg/TypoTuner
+- Repositorio en GitHub: https://github.com/smlfg/typotuner (URL citada en la model card; el identificador del autor en Hugging Face es `smlflg` y el de la organizacion del repositorio aparece como `smlfg`, una discrepancia no aclarada en la informacion disponible)
 - Panel web local del proyecto: http://localhost:8070
 - No se han encontrado papers, blogs, demos ni evaluaciones externas en los resultados de busqueda proporcionados, que unicamente devuelven paginas genericas del motor de busqueda sin contenido relacionado con el proyecto.

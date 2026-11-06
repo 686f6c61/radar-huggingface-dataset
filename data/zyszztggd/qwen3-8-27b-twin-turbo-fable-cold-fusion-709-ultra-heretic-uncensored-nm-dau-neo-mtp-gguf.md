@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento en código, matemáticas, seguimiento de i
 
 | Modelo | Parámetros | Contexto | ARC-C declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Zyszztggd, Ultra Heretic, GGUF) | 26,9 B | No disponible | 699 (8 bits) / 692 (4 bits) | apache-2.0 | GGUF en HuggingFace, 0 descargas |
+| Este repositorio (Zyszztggd, Ultra Heretic, GGUF) | 26,9 B | No disponible | 699 (8 bits) / 692 (4 bits) | apache-2.0 | GGUF en Hugging Face, 0 descargas |
 | DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored | 26,9 B (presumiblemente) | No disponible | 709 (8 bits) / 701 (4 bits) | No disponible | Versión original, presumiblemente más descargada |
 | Qwen 3.8 27B (base) | 27 B | No disponible | 108 puntos por debajo según el autor | No disponible | Modelo de referencia citado por el autor |
 | Qwen3.6-35B-A3B | 35 B totales (MoE) | No disponible | No disponible | No disponible | Citado como superado, sin cifras |

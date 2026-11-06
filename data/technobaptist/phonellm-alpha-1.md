@@ -78,7 +78,7 @@ La comparativa se basa en las afirmaciones de la model card: PhoneLLM supera a G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/phonellm-alpha-1
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/phonellm-alpha-1
 - Model card original de Pipecat: https://huggingface.co/pipecat-ai/phonellm-alpha-1
 - Modelo base NVIDIA Nemotron 3 Nano 30B-A3B: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Sitio de Pipecat: https://www.pipecat.ai/

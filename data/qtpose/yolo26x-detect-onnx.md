@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento (mAP, latencia) en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtpose/yolo26x-detect-onnx
+- Modelo en Hugging Face: https://huggingface.co/qtpose/yolo26x-detect-onnx
 - Checkpoint origen `yolo26x.pt` (Ultralytics assets v8.4.0): https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26x.pt
 - Licencia Ultralytics: https://www.ultralytics.com/license
 - Repositorio Ultralytics: https://github.com/ultralytics/ultralytics

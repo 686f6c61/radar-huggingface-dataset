@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smadhur/pokesoul3` es un modelo de lenguaje publicado en HuggingFace por el usuario smadhur bajo licencia MIT. El repositorio ocupa 2,0 GB y contiene pesos en formato safetensors, con la etiqueta `unsloth`, lo que indica que fue entrenado o ajustado mediante la librería Unsloth, especializada en fine-tuning eficiente de modelos abiertos. El nombre sugiere un ajuste orientado a temática de Pokémon ("poke"), probablemente un fine-tune de un modelo base más pequeño.
+`smadhur/pokesoul3` es un modelo de lenguaje publicado en Hugging Face por el usuario smadhur bajo licencia MIT. El repositorio ocupa 2,0 GB y contiene pesos en formato safetensors, con la etiqueta `unsloth`, lo que indica que fue entrenado o ajustado mediante la librería Unsloth, especializada en fine-tuning eficiente de modelos abiertos. El nombre sugiere un ajuste orientado a temática de Pokémon ("poke"), probablemente un fine-tune de un modelo base más pequeño.
 
 La información publicada es extremadamente limitada: la model card no incluye descripción, arquitectura, datos de entrenamiento, idiomas ni resultados de evaluación. No se especifica el modelo base sobre el que se ha realizado el ajuste, un dato crítico para evaluar sus capacidades reales. El tamaño del repositorio (2,0 GB) es compatible con un modelo de aproximadamente 1-3 mil millones de parámetros en precisión de 16 bits, aunque esta estimación no puede confirmarse sin acceso a los archivos de configuración.
 
@@ -76,6 +76,6 @@ No disponible. No se conocen modelos comparables porque se desconoce el modelo b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smadhur/pokesoul3
+- Hugging Face: https://huggingface.co/smadhur/pokesoul3
 - Unsloth (herramienta de entrenamiento referenciada por la etiqueta): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

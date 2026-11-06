@@ -74,7 +74,7 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-ExecuTorch-PTE
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-ExecuTorch-PTE
 - Repositorio oficial del modelo base (Meta): https://huggingface.co/meta-models/Muse-Glimmer-30B-ExecuTorch-PTE
 - Documentacion de despliegue con ExecuTorch: https://dev.meta.ai/docs/muse-glimmer/executorch
 - Guia de exportacion y runtime en GitHub: https://github.com/pytorch/executorch/blob/main/examples/models/muse-glimmer/README.md

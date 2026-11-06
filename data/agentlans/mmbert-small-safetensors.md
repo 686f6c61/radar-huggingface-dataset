@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,56 GB en fp32, 0,28 GB en fp16 y 0,14 GB en int8, según el número de parámetros (140,9 M). No se han publicado cuantizaciones específicas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM, como una NVIDIA RTX 2060 o superior. También puede ejecutarse en CPU para inferencia básica.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en prácticamente cualquier GPU moderna de consumo.
-- Opciones de despliegue: al ser un modelo encoder, no aplican herramientas como vLLM, llama.cpp u Ollama, orientadas a LLMs generativos. Puede servirse mediante HuggingFace Transformers, ONNX Runtime o similares.
+- Opciones de despliegue: al ser un modelo encoder, no aplican herramientas como vLLM, llama.cpp u Ollama, orientadas a LLMs generativos. Puede servirse mediante Hugging Face Transformers, ONNX Runtime o similares.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,6 +70,6 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/agentlans/mmBERT-small-safetensors
+- Hugging Face del modelo: https://huggingface.co/agentlans/mmBERT-small-safetensors
 - Modelo original: https://huggingface.co/jhu-clsp/mmBERT-small
 - Paper de ModernBERT: https://arxiv.org/abs/2509.06888

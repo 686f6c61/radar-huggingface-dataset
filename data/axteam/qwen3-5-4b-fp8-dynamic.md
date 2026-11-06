@@ -20,7 +20,7 @@ Su relevancia ahora es doble: por un lado, permite ejecutar un modelo multimodal
 | Idiomas soportados | No disponible; el conjunto de evaluación interno usa prompts en inglés y coreano |
 | Licencia | Apache-2.0 (heredada del modelo base) |
 | Formato de pesos | safetensors con compresión `compressed-tensors` (`FP8_DYNAMIC`); compatible con transformers y vLLM |
-| Tamano en disco | ~5,4 GB según la model card; 5,8 GB de repositorio en HuggingFace |
+| Tamano en disco | ~5,4 GB según la model card; 5,8 GB de repositorio en Hugging Face |
 | Calibracion | Ninguna (escalas de pesos estáticas data-free, activaciones dinámicas) |
 | Libreria / pipeline | transformers; `image-text-to-text` |
 | Fecha de publicacion | 2026-10-29 |
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de tareas que permitan comparar estos tres 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-4B-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-4B-FP8-dynamic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Cuantización equivalente de RedHatAI: https://huggingface.co/RedHatAI/Qwen3.5-4B-FP8-dynamic

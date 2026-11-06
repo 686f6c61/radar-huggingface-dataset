@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-CQ-4bit es una versión cuantizada en 4 bits del modelo Qwen3-8B-Base de Alibaba (equipo Qwen), publicada por el usuario thousandml en HuggingFace. El modelo base pertenece a la tercera generación de la familia Qwen, una serie de modelos de lenguaje causales densos y MoE orientados a razonamiento, código, matemáticas y diálogo multilingüe. La cuantización reduce drásticamente los requisitos de memoria: el repositorio ocupa 6,0 GB frente a los aproximadamente 16 GB del modelo original en precisión completa.
+Qwen3-8B-CQ-4bit es una versión cuantizada en 4 bits del modelo Qwen3-8B-Base de Alibaba (equipo Qwen), publicada por el usuario thousandml en Hugging Face. El modelo base pertenece a la tercera generación de la familia Qwen, una serie de modelos de lenguaje causales densos y MoE orientados a razonamiento, código, matemáticas y diálogo multilingüe. La cuantización reduce drásticamente los requisitos de memoria: el repositorio ocupa 6,0 GB frente a los aproximadamente 16 GB del modelo original en precisión completa.
 
 El objetivo de esta variante es permitir la ejecución de Qwen3-8B en hardware de consumo, manteniendo las capacidades del modelo base: generación de texto conversacional, razonamiento lógico y soporte de más de 100 idiomas. La familia Qwen3 destaca por el cambio fluido entre modo de pensamiento (thinking mode) y modo directo (non-thinking mode) dentro de un mismo modelo.
 
@@ -85,7 +85,7 @@ Frente a Llama-3-8B, Qwen3-8B ofrece un contexto nativo mucho mayor y modo de ra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thousandml/Qwen3-8B-CQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/thousandml/Qwen3-8B-CQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Modelo oficial Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/

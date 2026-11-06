@@ -68,7 +68,7 @@ No se dispone de modelos comparables en el mismo rango de parámetros y con la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kevinjnugroho/flamingo-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/Kevinjnugroho/flamingo-contrastive
 - Paper original de Flamingo (arXiv): https://arxiv.org/html/2204.14198v2
 - Página del paper en NeurIPS: https://papers.nips.cc/paper_files/paper/2022/hash/960a172bc7fbf0177ccccbb411a7d800-Abstract-Conference.html
 - Resumen del paper en abhik.ai: https://www.abhik.ai/papers/flamingo

@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/whisper-small-onnx
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/whisper-small-onnx
 - Modelo base openai/whisper-small: https://huggingface.co/openai/whisper-small
 - Grafos de origen csukuangfj/sherpa-onnx-whisper-small: https://huggingface.co/csukuangfj/sherpa-onnx-whisper-small
 - Repositorio de la aplicacion Malinali: https://github.com/malinali-app/malinali-app

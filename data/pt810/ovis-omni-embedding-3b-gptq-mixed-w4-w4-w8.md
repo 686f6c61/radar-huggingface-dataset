@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ovis-Omni-Embedding-3B-gptq-mixed-w4-w4-w8 es un checkpoint experimental de embeddings multimodales publicado por el usuario pt810 en HuggingFace. Se trata de una cuantizacion GPTQ weight-only de precision mixta sobre ATH-MaaS/Ovis-Omni-Embedding-3B, un modelo de aproximadamente 2.935 millones de parametros construido sobre la arquitectura Qwen2.5-Omni (componentes Thinker, Talker, vision, audio y token2wav). El objetivo del artefacto es reducir el coste de memoria del encoder para poder servirlo como endpoint de embeddings en GPUs de gama consumer.
+Ovis-Omni-Embedding-3B-gptq-mixed-w4-w4-w8 es un checkpoint experimental de embeddings multimodales publicado por el usuario pt810 en Hugging Face. Se trata de una cuantizacion GPTQ weight-only de precision mixta sobre ATH-MaaS/Ovis-Omni-Embedding-3B, un modelo de aproximadamente 2.935 millones de parametros construido sobre la arquitectura Qwen2.5-Omni (componentes Thinker, Talker, vision, audio y token2wav). El objetivo del artefacto es reducir el coste de memoria del encoder para poder servirlo como endpoint de embeddings en GPUs de gama consumer.
 
 La particularidad tecnica es la mezcla de precisiones: las capas 0 a 26 del transformer Thinker se cuantizan a 4 bits y la capa 27 se mantiene a 8 bits, mientras que el resto de componentes (audio, vision, talker, token2wav, embeddings y normalizaciones) conservan la precision original. La calibracion se realizo con solo ocho muestras cortas de texto usando LLM Compressor 0.14.0 y compressed-tensors 0.19.0, y el autor advierte explicitamente de que es un checkpoint derivado experimental que debe evaluarse en retrieval antes de llevarlo a produccion.
 
@@ -24,7 +24,7 @@ Su relevancia practica es limitada pero concreta: demuestra que un modelo de emb
 | Tamano del repositorio | 8,0 GB |
 | Autor | pt810 |
 | Modelo base | ATH-MaaS/Ovis-Omni-Embedding-3B |
-| Fecha de creacion (HuggingFace) | 2026-09-24 |
+| Fecha de creacion (Hugging Face) | 2026-09-24 |
 | Pipeline declarado | text-to-audio (etiqueta heredada; el uso verificado es de embeddings) |
 
 ## Arquitectura y entrenamiento
@@ -89,11 +89,11 @@ No hay datos de benchmarks ni especificaciones de terceros en la informacion pro
 - Idiomas no declarados: no hay garantia documentada de cobertura multilingue.
 - Sin validacion comunitaria: cero descargas y cero likes, y fechas de creacion y actualizacion separadas por menos de diez minutos, lo que sugiere una publicacion de prueba.
 - Riesgo de similitudes poco fiables: en un modelo de embeddings el fallo tipico no es la alucinacion de texto, sino devolver vecinos semanticamente incorrectos de forma consistente; conviene medir recall@k contra el modelo base en BF16.
-- Etiqueta de pipeline incorrecta: HuggingFace lo clasifica como `text-to-audio`, lo que puede confundir a herramientas automaticas que infieran el uso a partir de ese campo.
+- Etiqueta de pipeline incorrecta: Hugging Face lo clasifica como `text-to-audio`, lo que puede confundir a herramientas automaticas que infieran el uso a partir de ese campo.
 - Compatibilidad limitada de runtime: no hay evidencia de funcionamiento en llama.cpp, Ollama o TGI.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-gptq-mixed-w4-w4-w8
+- Modelo en Hugging Face: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-gptq-mixed-w4-w4-w8
 - Modelo base: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B
 - Herramientas citadas en la model card, sin URL incluida en la informacion proporcionada: LLM Compressor 0.14.0, compressed-tensors 0.19.0 y vLLM 0.30.0.

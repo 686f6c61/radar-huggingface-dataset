@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-Coder-V2-Base (236B) | 236B / 21B (MoE) | 128.000 tokens | deepseek-license | HuggingFace (este espejo y repositorio oficial) |
-| DeepSeek-Coder-V2-Lite-Base | 16B / 2,4B (MoE) | 128.000 tokens | deepseek-license | HuggingFace oficial |
-| DeepSeek-Coder-33B | 33B denso | 16.000 tokens | deepseek-license | HuggingFace oficial |
-| Llama-3.1-405B | 405B denso | 128.000 tokens | Llama 3.1 Community License | HuggingFace oficial |
+| DeepSeek-Coder-V2-Base (236B) | 236B / 21B (MoE) | 128.000 tokens | deepseek-license | Hugging Face (este espejo y repositorio oficial) |
+| DeepSeek-Coder-V2-Lite-Base | 16B / 2,4B (MoE) | 128.000 tokens | deepseek-license | Hugging Face oficial |
+| DeepSeek-Coder-33B | 33B denso | 16.000 tokens | deepseek-license | Hugging Face oficial |
+| Llama-3.1-405B | 405B denso | 128.000 tokens | Llama 3.1 Community License | Hugging Face oficial |
 
 El modelo se distingue de las alternativas densas por su regimen de activacion dispersa: 21B parametros activos por token frente a los 33B o 405B densos de las comparaciones, lo que reduce el coste de computo por token a cambio de mantener un requisito de memoria total elevado. Frente a DeepSeek-Coder-V2-Lite-Base, la diferencia principal es de escala (236B frente a 16B totales) manteniendo la misma arquitectura y ventana de contexto. Los datos de rendimiento comparado no estan disponibles en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ El modelo se distingue de las alternativas densas por su regimen de activacion d
 ## Enlaces
 
 - Repositorio de este espejo: https://huggingface.co/schwyzquant/DeepSeek-Coder-V2-Base
-- Modelo oficial en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Base
+- Modelo oficial en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Base
 - Modelo oficial Instruct: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct
 - Modelo oficial Lite-Base: https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Base
 - Repositorio GitHub del proyecto: https://github.com/deepseek-ai/DeepSeek-Coder-V2

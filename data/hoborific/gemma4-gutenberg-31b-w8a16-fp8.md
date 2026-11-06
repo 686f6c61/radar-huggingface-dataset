@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Gemma4-Gutenberg-31B-W8A16-FP8** es una versión cuantizada del checkpoint `nbeerbower/Gemma4-Gutenberg-31B`, publicada por el usuario `hoborific` en HuggingFace. Su propósito es reducir el consumo de memoria y acelerar la inferencia de un modelo multimodal de aproximadamente 31 000 millones de parámetros, manteniendo una calidad de salida cercana a la versión original mediante una cuantización por canal con ajuste fino del rango de clip. Está diseñado específicamente para entornos de producción con vLLM, con soporte para aceleradores Intel XPU y NVIDIA CUDA (Turing o posterior).
+El modelo **Gemma4-Gutenberg-31B-W8A16-FP8** es una versión cuantizada del checkpoint `nbeerbower/Gemma4-Gutenberg-31B`, publicada por el usuario `hoborific` en Hugging Face. Su propósito es reducir el consumo de memoria y acelerar la inferencia de un modelo multimodal de aproximadamente 31 000 millones de parámetros, manteniendo una calidad de salida cercana a la versión original mediante una cuantización por canal con ajuste fino del rango de clip. Está diseñado específicamente para entornos de producción con vLLM, con soporte para aceleradores Intel XPU y NVIDIA CUDA (Turing o posterior).
 
 La cuantización emplea el formato **W8A16 FP8** (pesos en `float8_e4m3fn`, activaciones en bf16/fp16) implementado con la librería `compressed-tensors`. Solo se cuantizan las proyecciones lineales 2D (atención y MLP), mientras que embeddings, normas, la cabeza de salida, los routers/expertos y la torre de visión permanecen en bf16. Esta estrategia permite un ahorro de memoria de aproximadamente el 50 % en los pesos lineales, a la vez que mantiene la precisión en las partes críticas del modelo. El modelo base, por su parte, es un modelo *image-text-to-text* (procesa imágenes y texto) y probablemente utiliza una arquitectura de mezcla de expertos (MoE), dado que la model card menciona explícitamente routers y expertos en la lista de capas no cuantizadas.
 
@@ -74,6 +74,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: [hoborific/Gemma4-Gutenberg-31B-W8A16-FP8](https://huggingface.co/hoborific/Gemma4-Gutenberg-31B-W8A16-FP8)
+- Repositorio Hugging Face: [hoborific/Gemma4-Gutenberg-31B-W8A16-FP8](https://huggingface.co/hoborific/Gemma4-Gutenberg-31B-W8A16-FP8)
 - Modelo base: [nbeerbower/Gemma4-Gutenberg-31B](https://huggingface.co/nbeerbower/Gemma4-Gutenberg-31B)
 - Libreria de cuantizacion: [compressed-tensors](https://github.com/neuralmagic/compressed-tensors)

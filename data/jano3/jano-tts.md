@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jano-TTS es un modelo de sintesis de voz (text-to-speech) multi-hablante desarrollado por el usuario jano3 y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un sistema ligero, de apenas 24.593.097 parametros (~24,6 M) segun los pesos en safetensors, que combina un encoder de texto basado en transformer con RoPE y un decoder de Flow Matching con arquitectura UNet de estilo Matcha. Genera audio a 24 kHz mediante el vocoder externo `charactr/vocos-mel-24khz` y soporta 128 hablantes distintos identificados por un indice de 0 a 127.
+Jano-TTS es un modelo de sintesis de voz (text-to-speech) multi-hablante desarrollado por el usuario jano3 y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un sistema ligero, de apenas 24.593.097 parametros (~24,6 M) segun los pesos en safetensors, que combina un encoder de texto basado en transformer con RoPE y un decoder de Flow Matching con arquitectura UNet de estilo Matcha. Genera audio a 24 kHz mediante el vocoder externo `charactr/vocos-mel-24khz` y soporta 128 hablantes distintos identificados por un indice de 0 a 127.
 
 El problema que aborda es el de la sintesis de voz rapida y de bajo coste computacional: al mantenerse por debajo de los 25 millones de parametros y ocupar solo 0,1 GB en el repositorio, es un candidato claro para inferencia en CPU, en dispositivos con recursos limitados o en pipelines donde el coste por peticion es un factor critico. El sampling se controla con parametros explicitos de flow matching (`n_steps` entre 8 y 16, `temperature`, `cfg_strength`), lo que permite intercambiar calidad por velocidad de forma directa.
 
@@ -42,7 +42,7 @@ Como innovaciones destacables, la model card menciona explicitamente la combinac
 - Control de la calidad y el coste computacional por paso: `n_steps` ajustable (8-16 pasos; se recomienda reducir en CPU).
 - Control de diversidad y adherencia al texto mediante `temperature` y `cfg_strength`.
 - Inferencia en CPU o GPU sin requisitos de memoria elevados, gracias al tamano reducido del modelo.
-- Integracion con el ecosistema HuggingFace `transformers` mediante `AutoModel.from_pretrained` con `trust_remote_code=True`.
+- Integracion con el ecosistema Hugging Face `transformers` mediante `AutoModel.from_pretrained` con `trust_remote_code=True`.
 - No dispone de soporte de tool calling ni de function calling.
 - No dispone de capacidades de agente ni de razonamiento multi-paso; es un modelo puramente generativo de audio.
 - No soporta otros idiomas distintos del ingles segun los metadatos (`language: en`).
@@ -79,8 +79,8 @@ Los valores de los modelos alternativos proceden de informacion publica general 
 
 | Modelo | Parametros | Idiomas | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jano-TTS | 24,6 M (dato del repo) | Ingles | Flow matching + UNet, vocoder Vocos | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| Kokoro-82M (aproximado) | ~82 M | Ingles y variantes | Derivado de StyleTTS2 | Apache 2.0 | HuggingFace/ONNX, ampliamente desplegado |
+| Jano-TTS | 24,6 M (dato del repo) | Ingles | Flow matching + UNet, vocoder Vocos | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| Kokoro-82M (aproximado) | ~82 M | Ingles y variantes | Derivado de StyleTTS2 | Apache 2.0 | Hugging Face/ONNX, ampliamente desplegado |
 | Piper (aproximado) | Variable segun voz | Multiples idiomas | VITS | MIT | Repositorio propio, orientado a CPU/edge |
 | XTTS-v2 de Coqui (aproximado) | ~467 M | Multilingue | Autorregresivo tipo GPT | CPML (uso comercial restringido) | Repositorio de Coqui |
 | Matcha-TTS (aproximado) | ~18 M | Ingles | Flow matching + UNet | MIT | Repositorio academico |
@@ -104,7 +104,7 @@ Consideraciones de la comparativa: Jano-TTS es, junto con Matcha-TTS, el mas lig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jano3/jano-tts
+- Modelo en Hugging Face: https://huggingface.co/jano3/jano-tts
 - Dataset de entrenamiento: https://huggingface.co/datasets/jano3/libritts-r-128spk-vocos-mel
 - Vocoder utilizado: https://huggingface.co/charactr/vocos-mel-24khz
 - Repositorio de Vocos: https://github.com/gemelo-ai/vocos

@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kayraharika/gemma-4-12B-it-qat-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kayraharika/gemma-4-12B-it-qat-GGUF
 - Modelo base (Google): https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Guia de QAT de Unsloth: https://unsloth.ai/docs/models/gemma-4/qat
 - Documentacion de Gemma 4: https://ai.google.dev/gemma/docs/core

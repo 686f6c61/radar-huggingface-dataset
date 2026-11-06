@@ -74,6 +74,6 @@ No se dispone de datos de benchmarks para comparar con alternativas. El modelo s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KETI-AIR/HyperCLOVA-X-KETI-HAECHI-32B
+- Hugging Face: https://huggingface.co/KETI-AIR/HyperCLOVA-X-KETI-HAECHI-32B
 - Modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B
 - OmniServe: https://github.com/NAVER-Cloud-HyperCLOVA-X/OmniServe

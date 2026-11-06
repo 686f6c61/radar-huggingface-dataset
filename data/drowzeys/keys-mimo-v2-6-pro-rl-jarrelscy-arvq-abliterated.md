@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `drowzeys/keys-MiMo-V2.6-Pro-RL-Jarrelscy-ARVQ-Abliterated` es una variante "abliterated" (sin capas de rechazo) del modelo `jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid`, publicada por el usuario drowzeys en HuggingFace. Se trata de un modelo de generación de texto de gran tamano con 118.995.574.417 parámetros totales (unos 119.000 millones) almacenados en safetensors, con un repositorio de 322,7 GB. Las etiquetas del repositorio indican que se trata de una arquitectura de mezcla de expertos (MoE) con pesos cuantizados en formato NVFP4 y ARVQ híbrido, y que está pensada para su ejecución con vLLM.
+El modelo `drowzeys/keys-MiMo-V2.6-Pro-RL-Jarrelscy-ARVQ-Abliterated` es una variante "abliterated" (sin capas de rechazo) del modelo `jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid`, publicada por el usuario drowzeys en Hugging Face. Se trata de un modelo de generación de texto de gran tamano con 118.995.574.417 parámetros totales (unos 119.000 millones) almacenados en safetensors, con un repositorio de 322,7 GB. Las etiquetas del repositorio indican que se trata de una arquitectura de mezcla de expertos (MoE) con pesos cuantizados en formato NVFP4 y ARVQ híbrido, y que está pensada para su ejecución con vLLM.
 
 El modelo se distribuye bajo licencia MIT y soporta inglés y chino. Incorpora un modo de razonamiento ("thinking") según las etiquetas del repositorio y está orientado a generación de texto y uso conversacional. El autor ha optado por el prefijo "keys-" en el nombre y ha marcado el modelo como "abliterated" y "uncensored", lo que implica la eliminación deliberada de las direcciones de rechazo del modelo original para reducir las negativas a generar cierto tipo de contenido.
 
-La relevancia de esta ficha reside en que combina tres factores poco habituales: un modelo MoE de gran tamano (119B), cuantizaciones de nueva generación (NVFP4 y ARVQ) asociadas al hardware Blackwell (etiquetas `dgx-spark` y `gb10`), y una modificación de alineación que altera sustancialmente el perfil de seguridad respecto al modelo base. El acceso al repositorio está restringido y requiere aceptar condiciones en HuggingFace.
+La relevancia de esta ficha reside en que combina tres factores poco habituales: un modelo MoE de gran tamano (119B), cuantizaciones de nueva generación (NVFP4 y ARVQ) asociadas al hardware Blackwell (etiquetas `dgx-spark` y `gb10`), y una modificación de alineación que altera sustancialmente el perfil de seguridad respecto al modelo base. El acceso al repositorio está restringido y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha reside en que combina tres factores poco habituales:
 | Modelo base | jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid |
 | Libreria de inferencia | vLLM (etiqueta `vllm`, requiere `custom_code`) |
 | Tamano del repositorio | 322,7 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 25 de septiembre de 2026 (actualizado el 26 de septiembre de 2026) |
 | Descargas / likes | 0 descargas / 1 like en el momento de la consulta |
 
@@ -84,7 +84,7 @@ No se han identificado en la información proporcionada otros modelos de la mism
 - La modificación abliterated suprime los mecanismos de rechazo del modelo base. Esto implica un riesgo elevado de generar contenido dañino, ilegal o no conforme a políticas de uso, y hace al modelo inadecuado como componente directo de un producto orientado al público sin filtros externos.
 - La licencia MIT se declara en el repositorio, pero es necesario verificar las condiciones del modelo base (`jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid`), ya que las restricciones pueden heredarse y no se detallan en la información disponible.
 - El repositorio usa `custom_code`, lo que significa que la carga del modelo ejecuta código Python incluido en el repositorio. Esto supone un riesgo de seguridad en entornos de producción: hay que auditar el código antes de ejecutarlo.
-- El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que limita su uso automatizado y su redistribución.
+- El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que limita su uso automatizado y su redistribución.
 - Riesgo de alucinación: no hay datos publicados de evaluación, por lo que no se puede acotar la tasa de error ni el comportamiento en dominios especializados.
 - Cobertura idiomática limitada a inglés y chino. No hay evidencia de un rendimiento aceptable en castellano u otras lenguas, por lo que no debería emplearse en producción multilingüe sin evaluación previa.
 - Longitud de contexto no documentada: cualquier caso de uso que dependa de ventanas largas debe validarse experimentalmente antes de dimensionar la infraestructura.
@@ -94,7 +94,7 @@ No se han identificado en la información proporcionada otros modelos de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drowzeys/keys-MiMo-V2.6-Pro-RL-Jarrelscy-ARVQ-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/drowzeys/keys-MiMo-V2.6-Pro-RL-Jarrelscy-ARVQ-Abliterated
 - Modelo base: https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid
 - Perfil del autor: https://huggingface.co/drowzeys
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

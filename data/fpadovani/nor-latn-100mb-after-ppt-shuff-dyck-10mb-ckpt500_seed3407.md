@@ -62,6 +62,6 @@ No se han publicado benchmarks comparativos en la informacion disponible. En cua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407
+- Hugging Face: https://huggingface.co/fpadovani/nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/fpadovani/nor-latn-100mb-ppt-shuff-dyck-10mb_seed3407
 - Weights & Biases (registro de entrenamiento): https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/fpoxysm6

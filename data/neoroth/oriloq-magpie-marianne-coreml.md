@@ -17,7 +17,7 @@ Su relevancia es acotada pero concreta: cubre el nicho de voces francesas ejecut
 | Longitud de contexto | no disponible (no se documenta el límite de texto de entrada) |
 | Tipos de cuantización | no disponible (no se especifica la precisión de los grafos Core ML) |
 | Idiomas soportados | francés (fr) |
-| Licencia | NVIDIA Open Model License (Magpie, 24 de octubre de 2025; NanoCodec, 14 de junio de 2024); etiquetada como `other` en HuggingFace |
+| Licencia | NVIDIA Open Model License (Magpie, 24 de octubre de 2025; NanoCodec, 14 de junio de 2024); etiquetada como `other` en Hugging Face |
 | Formato de pesos | Core ML (grafos compilados); no se publican pesos PyTorch, safetensors ni GGUF |
 | Tarea | text-to-speech |
 | Códec de audio | `nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps` |
@@ -98,13 +98,13 @@ No se dispone de datos verificados de alternativas equivalentes (TTS en francés
 - Riesgo de pronunciación incorrecta de nombres propios, siglas, números, préstamos lingüísticos y términos técnicos, habitual en sistemas TTS sin un módulo de normalización específico documentado.
 - Dependencia total de Oriloq: los grafos no funcionan como pipeline independiente, lo que ata el uso del modelo a esa aplicación y a macOS 26 o posterior.
 - Restricciones de plataforma: no hay soporte para GPU NVIDIA, Linux ni Windows con este paquete.
-- Licencia: se aplica la NVIDIA Open Model License, en sus versiones de octubre de 2025 (Magpie) y junio de 2024 (NanoCodec). Las condiciones exactas de uso comercial, redistribución y atribución deben consultarse en los ficheros de licencia incluidos en el repositorio; la etiqueta de HuggingFace es `other`, lo que exige revisión manual antes de un despliegue en producción.
+- Licencia: se aplica la NVIDIA Open Model License, en sus versiones de octubre de 2025 (Magpie) y junio de 2024 (NanoCodec). Las condiciones exactas de uso comercial, redistribución y atribución deben consultarse en los ficheros de licencia incluidos en el repositorio; la etiqueta de Hugging Face es `other`, lo que exige revisión manual antes de un despliegue en producción.
 - Sin validación comunitaria: cero descargas y cero valoraciones en el momento de la consulta, así como ausencia de evaluaciones independientes.
 - No se especifica la precisión numérica de los grafos Core ML, dato relevante para estimar consumo de memoria y degradación de calidad frente al modelo original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NeoRoth/oriloq-magpie-marianne-coreml
+- Modelo en Hugging Face: https://huggingface.co/NeoRoth/oriloq-magpie-marianne-coreml
 - Modelo base Magpie: https://huggingface.co/nvidia/magpie_tts_multilingual_357m/tree/19806879b16d3f2ccf28fb112b1bcd16a3c7923e
 - Códec base NanoCodec: https://huggingface.co/nvidia/nemo-nano-codec-22khz-1.89kbps-21.5fps/tree/fc00890b604aa2de298d2641ffc6c5f6caf8c4d7
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

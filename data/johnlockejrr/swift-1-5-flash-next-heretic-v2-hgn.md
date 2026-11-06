@@ -4,7 +4,7 @@
 
 Swift-1.5-Flash-Next-Heretic-V2-HGN es una cuantización de 4 bits publicada por johnlockejrr sobre el modelo trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer, una variante "abliterated" (sin censura) de la familia Swift-1.5-Flash-Next. El modelo se distribuye en formato propietario de la librería `halogen`, orientado específicamente al hardware Strix Halo de AMD (arquitectura gráfica gfx1151), lo que lo convierte en un artefacto muy especializado para inferencia local en ese tipo de APU.
 
-La información pública disponible es extremadamente limitada: el repositorio tiene 0 descargas y 1 like en el momento de la consulta, y el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace. Los tags indican una arquitectura MoE (mezcla de expertos) con etiquetas `qwen`, `qwen3_8` y `qwen4_exp`, lo que sugiere una base derivada de la familia Qwen, aunque no se especifican parámetros totales, parámetros activos ni longitud de contexto.
+La información pública disponible es extremadamente limitada: el repositorio tiene 0 descargas y 1 like en el momento de la consulta, y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face. Los tags indican una arquitectura MoE (mezcla de expertos) con etiquetas `qwen`, `qwen3_8` y `qwen4_exp`, lo que sugiere una base derivada de la familia Qwen, aunque no se especifican parámetros totales, parámetros activos ni longitud de contexto.
 
 Por su naturaleza (modelo "uncensored"/"abliterated" y cuantizado para un acelerador concreto), su relevancia es acotada: resulta de interés para desarrolladores que quieran ejecutar un modelo sin restricciones de alineación en hardware Strix Halo, y no como opción generalista de producción. La licencia `swift-open-license-1.0` (etiquetada como `other`) y el acceso restringido añaden fricción para su adopción.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar.
 - Licencia `swift-open-license-1.0` etiquetada como `other`: es imprescindible revisar los términos completos antes de cualquier uso comercial, que no está garantizado.
 - Modelo "abliterated"/"uncensored": elimina las capas de rechazo, por lo que puede generar contenido ofensivo, ilegal o peligroso; no apto para aplicaciones de cara al público sin filtros externos.
 - Riesgo elevado de alucinación y de respuestas no verificadas, agravado por la falta de benchmarks publicados.
@@ -85,5 +85,5 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/johnlockejrr/Swift-1.5-Flash-Next-Heretic-V2-HGN
+- Hugging Face: https://huggingface.co/johnlockejrr/Swift-1.5-Flash-Next-Heretic-V2-HGN
 - Modelo base: https://huggingface.co/trubisky/Swift-1.5-Flash-Next-Heretic-ReverseEngineer

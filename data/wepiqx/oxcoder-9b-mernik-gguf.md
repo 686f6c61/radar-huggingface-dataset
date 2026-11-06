@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wepiqx/OxCoder-9B-MERNIK-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wepiqx/OxCoder-9B-MERNIK-GGUF
 - Modelo base: https://huggingface.co/OrionLLM/OxCoder-9B
 - Metodo y protocolo MERNIK: https://huggingface.co/wepiqx/MERNIK
 - Repositorio con el mismo protocolo, citado por el autor: https://huggingface.co/wepiqx/NeoHorse-1-9B-MERNIK-GGUF

@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen3.8-27b-aragon-uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3.8-27b-aragon-uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/jdqqjr/qwen3.8-27b-aragon-uncensored
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/qwen3.8-27b-aragon-uncensored-GGUF
 - Guia de ejecucion local (orcarouter): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

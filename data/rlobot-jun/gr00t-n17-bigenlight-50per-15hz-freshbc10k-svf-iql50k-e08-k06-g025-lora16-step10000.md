@@ -18,7 +18,7 @@ La relevancia practica es limitada fuera del ecosistema GR00T N1.7: el adaptador
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | nvidia-license (etiquetada como `other` en HuggingFace) |
+| Licencia | nvidia-license (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (`actor_lora.safetensors`, `env_q.safetensors`, `inner_critic.safetensors`) |
 
 ## Arquitectura y entrenamiento
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (SVF sobre GR00T N1.7) | Adaptador RL sobre VLA | Adaptadores ~130 MB + base 3B | No disponible | nvidia-license | HuggingFace (bundle de adaptador) |
+| Este adaptador (SVF sobre GR00T N1.7) | Adaptador RL sobre VLA | Adaptadores ~130 MB + base 3B | No disponible | nvidia-license | Hugging Face (bundle de adaptador) |
 | GR00T N1.7 base (`GR00T-N1.7-3B`) | VLA para robotica | 3B | No disponible | nvidia-license | NVIDIA / Cosmos HF |
-| BC base (`gr00t-n17-bigenlight-...-bc-head-only-step10000`) | Bundle de cabeza BC | No disponible | No disponible | nvidia-license | HuggingFace |
+| BC base (`gr00t-n17-bigenlight-...-bc-head-only-step10000`) | Bundle de cabeza BC | No disponible | No disponible | nvidia-license | Hugging Face |
 | Otros VLA de robotica (p. ej. OpenVLA, pi0) | VLA | No disponible en esta informacion | No disponible | No disponible | No verificado |
 
 No se dispone de datos cuantitativos comparativos en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos cuantitativos comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace (este adaptador): https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-15hz-freshbc10k-svf-iql50k-e08-k06-g025-lora16-step10000
+- Hugging Face (este adaptador): https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-15hz-freshbc10k-svf-iql50k-e08-k06-g025-lora16-step10000
 - Modelo base (BC head-only): https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-from-nvidia-bc-head-only-step10000
 - Revision exacta del base: 970ca589335032e0fb37961dfa5caa83a5c511be
 - Codigo: https://github.com/jun981015/gr00t-bigenlight/tree/q-vgm-critic

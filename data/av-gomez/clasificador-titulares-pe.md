@@ -24,7 +24,7 @@ El autor reporta una accuracy de 0.92 y un F1 macro de 0.92 sobre un conjunto de
 | Etiquetas | `politica`, `economia`, `deportes`, `ciencia_tecnologia` |
 | Modelo base | `distilbert/distilbert-base-multilingual-cased` |
 | Tamaño del repositorio | 0,5 GB |
-| Pipeline de HuggingFace | `text-classification` |
+| Pipeline de Hugging Face | `text-classification` |
 
 ## Arquitectura y entrenamiento
 
@@ -97,10 +97,10 @@ No se dispone de resultados comparables publicados en las mismas condiciones (mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/av-gomez/clasificador-titulares-pe
+- Modelo en Hugging Face: https://huggingface.co/av-gomez/clasificador-titulares-pe
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-multilingual-cased
 - Ollama (herramienta citada para servir el profesor `qwen2.5:7b`): https://ollama.com
-- Repositorio de `qwen2.5` en HuggingFace: https://huggingface.co/Qwen
+- Repositorio de `qwen2.5` en Hugging Face: https://huggingface.co/Qwen
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
 

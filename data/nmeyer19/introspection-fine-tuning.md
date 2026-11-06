@@ -2,7 +2,7 @@
 
 ## Resumen
 
-introspection-fine-tuning es un repositorio de artefactos de investigación publicado por el usuario nmeyer19 en HuggingFace, no un modelo generativo convencional. Contiene adaptadores LoRA, lentes jacobianas (Jacobian lenses) y vectores de dirección (steering vectors) entrenados para replicar y extender el método de Introspection Fine-Tuning (IFT) sobre Llama-3.2-1B-Instruct. El objeto de estudio es la introspección del modelo: su capacidad para reportar su propio estado interno mediante la localización de conceptos y la formación gradual o abrupta de respuestas.
+introspection-fine-tuning es un repositorio de artefactos de investigación publicado por el usuario nmeyer19 en Hugging Face, no un modelo generativo convencional. Contiene adaptadores LoRA, lentes jacobianas (Jacobian lenses) y vectores de dirección (steering vectors) entrenados para replicar y extender el método de Introspection Fine-Tuning (IFT) sobre Llama-3.2-1B-Instruct. El objeto de estudio es la introspección del modelo: su capacidad para reportar su propio estado interno mediante la localización de conceptos y la formación gradual o abrupta de respuestas.
 
 El repositorio se organiza en cuatro familias de adaptadores (replicación IFT, KL anchor, DC-SFT y DC-SFT + KL), lentes jacobianas ajustadas sobre 100 prompts y conjuntos de vectores de dirección para Llama 1B, 3B y 8B. Los adaptadores emplean LoRA con r=16 y alpha=32, aplicados a todas las proyecciones de atención y de MLP. El tamaño total del repositorio es de 3,9 GB, con 0 descargas y 0 likes en el momento de la consulta.
 
@@ -69,7 +69,7 @@ No se han publicado en la informacion disponible otros benchmarks (HumanEval, GS
 - El modelo base Llama-3.2-1B-Instruct cabe en GPU de consumo: en fp16 ocupa aproximadamente 2,5 GB, por lo que es viable en RTX 3060 12 GB, RTX 4070, RTX 4090 o superiores.
 - Los adaptadores LoRA (r=16) son de bajo rango y anaden muy poca memoria adicional sobre el modelo base.
 - Las lentes jacobianas (.pt) y los conjuntos de vectores de direccion (.tar.gz) son artefactos de analisis, no de inferencia; su carga depende del script, no del pipeline de generacion.
-- El repositorio completo ocupa 3,9 GB, segun los metadatos de HuggingFace.
+- El repositorio completo ocupa 3,9 GB, segun los metadatos de Hugging Face.
 - Opciones de despliegue para el modelo base y los adaptadores: transformers + PEFT (patron mostrado en la model card), y para el base solo tambien vLLM, llama.cpp, Ollama o TGI; la model card solo documenta el uso via transformers y PEFT.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada.
 - GPU recomendadas (A100, H100, etc.): no disponible; por tamano, el modelo no requiere GPU de datacenter.
@@ -96,14 +96,14 @@ Comparacion con modelos externos de la misma categoria (interpretabilidad / intr
 - Sin datos de cuantizacion: no se documentan formatos GGUF, AWQ ni otros mas alla de safetensors en los adaptadores.
 - Dependencia del modelo base: los adaptadores LoRA requieren descargar meta-llama/Llama-3.2-1B-Instruct por separado y aceptar su licencia; no funcionan de forma autonoma.
 - Metrica de localizacion: el 10 % de azar sugiere un diseno experimental controlado, pero la interpretacion de la metrica no se detalla en la informacion disponible.
-- Cero adopcion registrada: 0 descargas y 0 likes en HuggingFace, sin evidencia externa de validacion independiente.
+- Cero adopcion registrada: 0 descargas y 0 likes en Hugging Face, sin evidencia externa de validacion independiente.
 - Licencia: los artefactos se distribuyen bajo Llama 3.2 Community License (y Llama 3.1 Community License para los derivados del 8B), con las restricciones de uso comercial y de atribucion que esas licencias imponen.
 - Riesgo de alucinacion: no evaluado en la informacion proporcionada; el foco del proyecto es la introspeccion, no la fiabilidad factual.
 - Sesgos conocidos: no disponibles en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nmeyer19/introspection-fine-tuning
+- Repositorio en Hugging Face: https://huggingface.co/nmeyer19/introspection-fine-tuning
 - Repositorio GitHub del proyecto: https://github.com/nmeyer19/introspection-fine-tuning
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

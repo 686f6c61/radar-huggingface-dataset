@@ -95,8 +95,8 @@ No se conoce un conjunto público de artefactos DGC0 directamente comparable par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xThr45hx/G4_DGCO
-- Perfil del autor en HuggingFace: https://huggingface.co/xThr45hx
+- Hugging Face: https://huggingface.co/xThr45hx/G4_DGCO
+- Perfil del autor en Hugging Face: https://huggingface.co/xThr45hx
 - Toolchains de compilación para la NPU del Tensor G4: https://huggingface.co/xThr45hx/Tensor-G4-NPU-Compiler-Toolchains
 - Repositorio GitHub (tooling y write-up): https://github.com/qbnasasn/Google-Tensor-Chips
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

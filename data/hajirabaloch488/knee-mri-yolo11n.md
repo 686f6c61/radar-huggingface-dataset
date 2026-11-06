@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`knee-mri-yolo11n` es un modelo de deteccion de objetos basado en YOLO11n (la variante nano de Ultralytics) afinado para localizar cuatro estructuras o hallazgos anatomicos en cortes 2D de resonancia magnetica de rodilla: ligamento cruzado anterior (ACL), ligamento cruzado posterior (PCL), menisco y cartilago. Lo desarrolla el usuario `hajirabaloch488` como prototipo academico y se distribuye via HuggingFace con la libreria `ultralytics` y licencia AGPL-3.0.
+`knee-mri-yolo11n` es un modelo de deteccion de objetos basado en YOLO11n (la variante nano de Ultralytics) afinado para localizar cuatro estructuras o hallazgos anatomicos en cortes 2D de resonancia magnetica de rodilla: ligamento cruzado anterior (ACL), ligamento cruzado posterior (PCL), menisco y cartilago. Lo desarrolla el usuario `hajirabaloch488` como prototipo academico y se distribuye via Hugging Face con la libreria `ultralytics` y licencia AGPL-3.0.
 
 El modelo parte de los pesos preentrenados `yolo11n.pt` y se ha reentrenado con imagenes del dataset oficial fastMRI de rodilla (single-coil, `reconstruction_rss`) convertidas a PNG de 320x320 en escala de grises, junto con las anotaciones de bounding boxes de fastMRI+ (`microsoft/fastmri-plus`, `knee.csv`). El conjunto de datos es muy reducido: 59 estudios de RM, 534 cortes anotados y 953 cajas, divididos por estudio en 41 train / 9 val / 9 test.
 
@@ -75,7 +75,7 @@ No se han publicado comparaciones con otros detectores ni resultados en benchmar
 
 | Modelo | Parametros | Entrada | mAP50 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| knee-mri-yolo11n (este) | no disponible (YOLO11n) | 320x320 gris | 0,212 | AGPL-3.0 | HuggingFace |
+| knee-mri-yolo11n (este) | no disponible (YOLO11n) | 320x320 gris | 0,212 | AGPL-3.0 | Hugging Face |
 | YOLO11n base (Ultralytics) | no disponible | 640x640 RGB | no evaluado en este dominio | AGPL-3.0 | Ultralytics |
 | Otros detectores medicos en fastMRI | no disponible | no disponible | no disponible | variable | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de comparaciones publicadas con alternativas especificas para dete
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hajirabaloch488/knee-mri-yolo11n
+- Modelo en Hugging Face: https://huggingface.co/hajirabaloch488/knee-mri-yolo11n
 - Modelo base Ultralytics YOLO11: https://huggingface.co/Ultralytics/YOLO11
 - Repositorio Ultralytics: https://github.com/ultralytics/ultralytics
 - Dataset fastMRI: https://fastmri.org/

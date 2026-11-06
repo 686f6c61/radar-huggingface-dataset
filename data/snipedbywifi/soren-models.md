@@ -6,7 +6,7 @@
 
 El adaptador `soren-lfm3-r8.gguf` (64 MB) se aplica sobre los pesos de `LFM3-1.7B-Q4_K_M.gguf` mediante `llama-server --lora` y sirve para redactar las tarjetas de calculadora de Soren. El clasificador `card-classifier/model.int8.onnx` (34 MB) decide si un mensaje merece una tarjeta y de que tipo (`none`, `compare`, `weigh`, `rank`, `place`, `steps` o `draft`), con umbrales de confianza configurables.
 
-El interes del repositorio es acotado pero concreto: ilustra un patron de despliegue local de IA (adaptador LoRA sobre un modelo base abierto, mas un encoder pequeno para enrutado) con verificacion de integridad por SHA-256 y descarga bajo demanda. El recuento de parametros reportado por HuggingFace (16.105.472) corresponde a los tensores safetensors presentes, no al modelo base LFM3, cuyos pesos no se alojan aqui.
+El interes del repositorio es acotado pero concreto: ilustra un patron de despliegue local de IA (adaptador LoRA sobre un modelo base abierto, mas un encoder pequeno para enrutado) con verificacion de integridad por SHA-256 y descarga bajo demanda. El recuento de parametros reportado por Hugging Face (16.105.472) corresponde a los tensores safetensors presentes, no al modelo base LFM3, cuyos pesos no se alojan aqui.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| soren-models (este repo) | Adaptador LoRA r8 + clasificador 33M | no disponible | GGUF, ONNX | Mixta (LFM Open License v1.0 + Apache 2.0) | HuggingFace |
-| LFM3 1.7B (LiquidAI) | 1.7B | no disponible en esta ficha | GGUF | LFM Open License v1.0 | HuggingFace |
-| BAAI/bge-small-en-v1.5 | 33M | no disponible en esta ficha | safetensors/ONNX | Licencia propia de BAAI | HuggingFace |
+| soren-models (este repo) | Adaptador LoRA r8 + clasificador 33M | no disponible | GGUF, ONNX | Mixta (LFM Open License v1.0 + Apache 2.0) | Hugging Face |
+| LFM3 1.7B (LiquidAI) | 1.7B | no disponible en esta ficha | GGUF | LFM Open License v1.0 | Hugging Face |
+| BAAI/bge-small-en-v1.5 | 33M | no disponible en esta ficha | safetensors/ONNX | Licencia propia de BAAI | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos artefactos en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos artefactos en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/snipedbywifi/soren-models
+- Repositorio Hugging Face: https://huggingface.co/snipedbywifi/soren-models
 - Repositorio Soren (GitLab): https://gitlab.com/snipedbywifi/soren
 - Modelo base LFM3 1.7B GGUF: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF/blob/main/LICENSE

@@ -92,7 +92,7 @@ No se dispone de datos cuantitativos que permitan una comparación de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio mencionado en la model card: `welfare-in-ai-rnd / constitutional_training` (no se proporciona URL)
 - Ruta original de Tinker (referencia interna, no es una URL navegable): `tinker://18eef524-34ad-571b-b0a7-407b8387fcd4:train:0/sampler_weights/qwen36_selfg1_qwen36_self_g1_b2_s2_cot_final`

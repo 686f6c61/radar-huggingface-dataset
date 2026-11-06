@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio de modelo publicado en HuggingFace por el usuario acD124SAQ. Por su nombre y por sus metricas de uso (cero descargas y cero interacciones), se trata con toda probabilidad de un repositorio de prueba creado para validar el flujo de publicacion en la plataforma, no de un modelo destinado a uso real en produccion ni a investigacion.
+MyAwesomeModel-TestRepository es un repositorio de modelo publicado en Hugging Face por el usuario acD124SAQ. Por su nombre y por sus metricas de uso (cero descargas y cero interacciones), se trata con toda probabilidad de un repositorio de prueba creado para validar el flujo de publicacion en la plataforma, no de un modelo destinado a uso real en produccion ni a investigacion.
 
 La informacion disponible es minima: los metadatos indican que el modelo es compatible con la libreria transformers y con PyTorch, que declara la arquitectura BERT y que esta orientado a la tarea de extraccion de caracteristicas (feature-extraction), es decir, la generacion de representaciones vectoriales (embeddings) a partir de texto de entrada. No se especifica el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados.
 
-No se han encontrado resultados de busqueda web relacionados con el modelo: las consultas devuelven exclusivamente paginas del servicio de streaming Netflix, sin ninguna conexion con este repositorio. En consecuencia, esta ficha se limita a reflejar los metadatos verificables de HuggingFace y marca explicitamente como "no disponible" cualquier dato que no pueda confirmarse.
+No se han encontrado resultados de busqueda web relacionados con el modelo: las consultas devuelven exclusivamente paginas del servicio de streaming Netflix, sin ninguna conexion con este repositorio. En consecuencia, esta ficha se limita a reflejar los metadatos verificables de Hugging Face y marca explicitamente como "no disponible" cualquier dato que no pueda confirmarse.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible; no se conoce el numero de parametros ni el formato de pesos.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: el repositorio declara compatibilidad con la libreria `transformers` y con PyTorch, ademas de la etiqueta `endpoints_compatible`, lo que sugiere que podria desplegarse mediante HuggingFace Inference Endpoints. No se confirma soporte para vLLM, llama.cpp, Ollama, TGI ni otras plataformas.
+- Opciones de despliegue: el repositorio declara compatibilidad con la libreria `transformers` y con PyTorch, ademas de la etiqueta `endpoints_compatible`, lo que sugiere que podria desplegarse mediante Hugging Face Inference Endpoints. No se confirma soporte para vLLM, llama.cpp, Ollama, TGI ni otras plataformas.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -68,10 +68,10 @@ No es posible establecer una comparativa fiable: se desconoce el tamano del mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| acD124SAQ/MyAwesomeModel-TestRepository | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| BERT-base (referencia de categoria) | 110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| RoBERTa-base (referencia de categoria) | 125 M | 512 tokens | MIT | HuggingFace |
-| sentence-transformers (referencia de categoria) | variable | variable | Apache 2.0 | HuggingFace |
+| acD124SAQ/MyAwesomeModel-TestRepository | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| BERT-base (referencia de categoria) | 110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| RoBERTa-base (referencia de categoria) | 125 M | 512 tokens | MIT | Hugging Face |
+| sentence-transformers (referencia de categoria) | variable | variable | Apache 2.0 | Hugging Face |
 
 Los datos de las filas de referencia corresponden a modelos ampliamente documentados de la misma categoria y se incluyen unicamente como contexto; no proceden de la informacion proporcionada sobre este repositorio.
 
@@ -88,6 +88,6 @@ Los datos de las filas de referencia corresponden a modelos ampliamente document
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/acD124SAQ/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/acD124SAQ/MyAwesomeModel-TestRepository
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los unicos resultados devueltos corresponden a paginas del servicio de streaming Netflix, sin relacion con este repositorio.

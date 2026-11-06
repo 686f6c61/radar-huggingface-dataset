@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-Edit-2511 es un modelo de edición de imágenes desarrollado por el equipo de Qwen (Alibaba), y esta versión concreta (`MinhNhut3005/Qwen-Image-Edit-2511`) es un espejo en HuggingFace del modelo oficial. Se trata de un modelo de difusión de imagen a imagen que permite editar fotografías siguiendo instrucciones en lenguaje natural, con mejoras significativas sobre su predecesor Qwen-Image-Edit-2509. Entre sus novedades destacan una mayor consistencia del personaje, mejor fusión de múltiples personas en una sola imagen, integración de LoRAs comunitarias directamente en el modelo base y capacidades reforzadas de razonamiento geométrico.
+Qwen-Image-Edit-2511 es un modelo de edición de imágenes desarrollado por el equipo de Qwen (Alibaba), y esta versión concreta (`MinhNhut3005/Qwen-Image-Edit-2511`) es un espejo en Hugging Face del modelo oficial. Se trata de un modelo de difusión de imagen a imagen que permite editar fotografías siguiendo instrucciones en lenguaje natural, con mejoras significativas sobre su predecesor Qwen-Image-Edit-2509. Entre sus novedades destacan una mayor consistencia del personaje, mejor fusión de múltiples personas en una sola imagen, integración de LoRAs comunitarias directamente en el modelo base y capacidades reforzadas de razonamiento geométrico.
 
 El modelo tiene aproximadamente 20 430 millones de parámetros (20,4 B) y se distribuye en formato `safetensors` a través de la librería `diffusers`, con un pipeline específico llamado `QwenImageEditPlusPipeline`. Soporta instrucciones en inglés y chino, y su licencia Apache 2.0 permite uso comercial sin restricciones adicionales. Aunque el repositorio del espejo no incluye documentación propia, la model card original de Qwen describe las capacidades y ejemplos de uso, y se referencia un tech report (arXiv:2508.02324).
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio de HuggingFace (espejo): https://huggingface.co/MinhNhut3005/Qwen-Image-Edit-2511
+- Repositorio de Hugging Face (espejo): https://huggingface.co/MinhNhut3005/Qwen-Image-Edit-2511
 - Modelo oficial de Qwen: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Tech report (Qwen-Image): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Blog de Qwen sobre Qwen-Image-Edit-2511: https://qwenlm.github.io/blog/qwen-image-edit-2511/

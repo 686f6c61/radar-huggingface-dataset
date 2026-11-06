@@ -31,7 +31,7 @@ El ajuste fino se realizó sobre un corpus de 38,007 filas compuesto por FactCG 
 - Verificación de consistencia factual entre una afirmación y un documento de evidencia (grounding).
 - Manejo de documentos largos mediante chunking con overlap del 25% (ventana de 2048 tokens, stride de 1536) y agregación determinista de predicciones por chunk.
 - Funciona como componente de un pipeline de fact-checking donde el veredicto final proviene de la agregación de este clasificador, no de un LLM.
-- Soporta inferencia mediante la librería `transformers` de HuggingFace y mediante runtime ONNX.
+- Soporta inferencia mediante la librería `transformers` de Hugging Face y mediante runtime ONNX.
 - No soporta tool calling, agentes ni razonamiento multi-step; es un clasificador puro de secuencias.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ Nota: el modelo de 7B que obtiene 77.4 no se incluye por ser de una clase de pes
 
 ## Enlaces
 
-- Modelo en HuggingFace: [DeliVali/AIDAM_VNEWS_435M_V1.0.0](https://huggingface.co/DeliVali/AIDAM_VNEWS_435M_V1.0.0)
+- Modelo en Hugging Face: [DeliVali/AIDAM_VNEWS_435M_V1.0.0](https://huggingface.co/DeliVali/AIDAM_VNEWS_435M_V1.0.0)
 - Repositorio de entrenamiento en GitHub: [DeliVali/AIDAM_VNEWS](https://github.com/DeliVali/AIDAM_VNEWS)
 - Modelo anterior de la familia: [DeliVali/AIDAM_VNEWS_308M_V0.1.0](https://huggingface.co/DeliVali/AIDAM_VNEWS_308M_V0.1.0)
 - Documentación de AIDAM (roadmap y campañas): disponible en el repositorio de GitHub en `docs/ROADMAP.md`

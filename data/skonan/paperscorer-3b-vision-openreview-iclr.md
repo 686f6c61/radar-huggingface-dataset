@@ -76,11 +76,11 @@ La coleccion PaperScorer incluye ocho modelos de dominio unico mas los datasets 
 
 | Modelo | Parametros | Modalidad | Dominio | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PaperScorer-3B-Vision-OpenReview-ICLR | 3,75B | Texto + vision | ICLR/OpenReview | 24.480 (entrenamiento) / 32.768 (base) | other | HuggingFace (0 descargas) |
+| PaperScorer-3B-Vision-OpenReview-ICLR | 3,75B | Texto + vision | ICLR/OpenReview | 24.480 (entrenamiento) / 32.768 (base) | other | Hugging Face (0 descargas) |
 | PaperScorer-3B-Text-OpenReview-ICLR | no disponible | Texto | ICLR/OpenReview | no disponible | no disponible | Coleccion PaperScorer |
 | PaperScorer-7B-Vision-OpenReview-ICLR | no disponible | Texto + vision | ICLR/OpenReview | no disponible | no disponible | Coleccion PaperScorer |
 | PaperScorer-3B-Vision-Arxiv | no disponible | Texto + vision | arXiv | no disponible | no disponible | Coleccion PaperScorer |
-| Qwen/Qwen2.5-VL-3B-Instruct (base) | 3,75B | Texto + vision | Generalista | 32.768 | Apache 2.0 | HuggingFace |
+| Qwen/Qwen2.5-VL-3B-Instruct (base) | 3,75B | Texto + vision | Generalista | 32.768 | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,14 +92,14 @@ La coleccion PaperScorer incluye ocho modelos de dominio unico mas los datasets 
 - La licencia declarada es "other" y la model card no especifica terminos; aunque el modelo base Qwen2.5-VL-3B-Instruct es Apache 2.0, el uso comercial del ajuste fino debe verificarse con el autor antes de desplegarlo.
 - Las tecnicas de calibracion dependen del token de decision en la quinta posicion bajo la plantilla `qwen`; usar otra plantilla o parser invalida el umbral calibrado.
 - Las cuantizaciones no estan publicadas oficialmente; cualquier conversion a GGUF/AWQ/GPTQ es responsabilidad del usuario y puede degradar la calibracion.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, sin validacion independiente por parte de terceros.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, sin validacion independiente por parte de terceros.
 - El repositorio pesa 16,3 GB, lo que puede implicar costes de almacenamiento y descarga superiores a los esperables para 3,75B parametros en bf16.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skonan/PaperScorer-3B-Vision-OpenReview-ICLR
+- Modelo en Hugging Face: https://huggingface.co/skonan/PaperScorer-3B-Vision-OpenReview-ICLR
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Repositorio del orquestador PaperScorer: https://github.com/zlab-princeton/PaperScorer
-- Coleccion PaperScorer en HuggingFace: https://huggingface.co/collections/zlab-princeton/paperscorer
+- Coleccion PaperScorer en Hugging Face: https://huggingface.co/collections/zlab-princeton/paperscorer
 - Paper asociado: cita a una publicacion en NeurIPS 2026 (referencia BibTeX truncada en la model card)
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces obtenidos no guardan relacion con el contenido de esta ficha.

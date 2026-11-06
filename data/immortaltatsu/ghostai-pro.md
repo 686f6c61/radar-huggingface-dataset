@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GhostAI Pro es un ajuste fino (SFT) del modelo openbmb/MiniCPM5-2B, publicado por el usuario immortaltatsu en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo especializado de tool calling para una única aplicación: GhostWallet, un monedero de Solana. Dado el system prompt de la app y un fragmento recuperado de su catálogo de 174 herramientas, el modelo emite una única llamada de herramienta en formato Hermes (`<tool_call>{"name":...,"arguments":{...}}</tool_call>`) y, a continuación, responde con una frase fundamentada en el resultado de la herramienta. Es, por tanto, un modelo de contrato de aplicación más que un modelo generalista.
+GhostAI Pro es un ajuste fino (SFT) del modelo openbmb/MiniCPM5-2B, publicado por el usuario immortaltatsu en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo especializado de tool calling para una única aplicación: GhostWallet, un monedero de Solana. Dado el system prompt de la app y un fragmento recuperado de su catálogo de 174 herramientas, el modelo emite una única llamada de herramienta en formato Hermes (`<tool_call>{"name":...,"arguments":{...}}</tool_call>`) y, a continuación, responde con una frase fundamentada en el resultado de la herramienta. Es, por tanto, un modelo de contrato de aplicación más que un modelo generalista.
 
 Con 2.516.756.480 parámetros (unos 2,5 mil millones) y pesos en bf16 de 5,0 GB, el modelo se distribuye también en dos cuantizaciones GGUF de 4 bits (Q4_K_M de 1,56 GB e IQ4_XS de 1,42 GB) generadas con una importance matrix calculada sobre 1.200 trazas de calibración del propio dominio. Esa combinación de tamaño reducido y cuantización orientada al dominio lo hace apto para inferencia en dispositivo (on-device) mediante llama.rn o llama.cpp, que es el escenario para el que fue diseñado.
 
@@ -100,7 +100,7 @@ Latencia declarada: 189 ms por generación (p50) con el GGUF Q4_K_M en llama.cpp
 |---|---|---|---|---|---|
 | GhostAI Pro | 2,5B | 8.192 tokens en la configuración de servicio (2.048 en entrenamiento) | 92,9% llamada parseable, 65,8% éxito end-to-end | Apache-2.0 | GGUF (Q4_K_M, IQ4_XS) y safetensors; 0 descargas al consultar |
 | LFM2.5 app-v3 | No disponible | No disponible | 92,9% llamada parseable, 67,1% éxito end-to-end, 35,7% herramienta esperada | No disponible | Nivel comparado del mismo bake-off; sin enlace en la información disponible |
-| openbmb/MiniCPM5-2B | ~2,5B | No disponible | No ajustado al contrato de la app; requiere el prompt y el parser propios | Apache-2.0 | Modelo base público en HuggingFace |
+| openbmb/MiniCPM5-2B | ~2,5B | No disponible | No ajustado al contrato de la app; requiere el prompt y el parser propios | Apache-2.0 | Modelo base público en Hugging Face |
 | Niveles Qwen del bake-off | No disponible | No disponible | Misma forma de salida según el autor; sin métricas publicadas en esta información | No disponible | No disponible |
 
 No hay datos publicados que permitan comparar con alternativas generalistas del mismo tamaño (Qwen2.5-3B, Llama-3.2-3B, Gemma-2-2B) en este contrato concreto, ya que las métricas del arnés son específicas de GhostWallet.
@@ -122,6 +122,6 @@ No hay datos publicados que permitan comparar con alternativas generalistas del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/immortaltatsu/ghostai-pro
+- Modelo en Hugging Face: https://huggingface.co/immortaltatsu/ghostai-pro
 - Modelo base MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en los resultados de la búsqueda web proporcionados; los resultados devueltos corresponden a Library Genesis y no guardan relación con este modelo.

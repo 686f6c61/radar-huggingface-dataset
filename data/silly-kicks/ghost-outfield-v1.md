@@ -94,8 +94,8 @@ El modelo Ghost-Outfield v1 es la variante de campo del Ghost-GK v1. La variante
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/silly-kicks/ghost-outfield-v1
-- Organización silly-kicks en HuggingFace: https://huggingface.co/silly-kicks
+- Hugging Face: https://huggingface.co/silly-kicks/ghost-outfield-v1
+- Organización silly-kicks en Hugging Face: https://huggingface.co/silly-kicks
 - Variante position_only: https://huggingface.co/silly-kicks/ghost-outfield-position-only-v1
 - Ghost-GK v1: https://huggingface.co/silly-kicks/ghost-gk-v1
 - Repositorio GitHub: https://github.com/karsten-s-nielsen/silly-kicks

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`frimpstech/akan-proverbs-audio` es un repositorio publicado en HuggingFace por el usuario `frimpstech`, cuyo nombre sugiere contenido de audio asociado a proverbios en lengua akan (familia kwa, hablada en Ghana y Costa de Marfil). El repositorio ocupa 0,6 GB y fue creado el 4 de julio de 2025, con una ultima actualizacion el 13 de septiembre de 2026. A fecha de esta ficha acumula 0 descargas y 1 like.
+`frimpstech/akan-proverbs-audio` es un repositorio publicado en Hugging Face por el usuario `frimpstech`, cuyo nombre sugiere contenido de audio asociado a proverbios en lengua akan (familia kwa, hablada en Ghana y Costa de Marfil). El repositorio ocupa 0,6 GB y fue creado el 4 de julio de 2025, con una ultima actualizacion el 13 de septiembre de 2026. A fecha de esta ficha acumula 0 descargas y 1 like.
 
-La informacion publica disponible es extremadamente limitada: HuggingFace no expone pipeline declarado, licencia, idiomas ni etiquetas de tarea mas alla de `region:us`, por lo que no es posible confirmar si se trata de un modelo entrenado, de un conjunto de datos (dataset) o de una coleccion mixta de pesos y ficheros de audio. La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio, su autor o el proyecto: los enlaces recuperados corresponden a generadores de cuestionarios web y no guardan relacion con el modelo.
+La informacion publica disponible es extremadamente limitada: Hugging Face no expone pipeline declarado, licencia, idiomas ni etiquetas de tarea mas alla de `region:us`, por lo que no es posible confirmar si se trata de un modelo entrenado, de un conjunto de datos (dataset) o de una coleccion mixta de pesos y ficheros de audio. La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio, su autor o el proyecto: los enlaces recuperados corresponden a generadores de cuestionarios web y no guardan relacion con el modelo.
 
 Por tanto, esta ficha se limita a documentar los metadatos verificables y a marcar de forma explicita todo aquello que no puede confirmarse. Cualquier evaluacion tecnica rigurosa requerira inspeccionar el arbol de ficheros del repositorio, el `README.md` y los `config.json` o `dataset_info.json` asociados antes de tomar decisiones de integracion en produccion.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha se limita a documentar los metadatos verificables y a marc
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,6 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Etiquetas | `region:us` |
 | Autor | frimpstech |
 | Descargas / likes | 0 / 1 |
@@ -91,5 +91,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/frimpstech/akan-proverbs-audio
+- Repositorio en Hugging Face: https://huggingface.co/frimpstech/akan-proverbs-audio
 - No se han encontrado papers, blogs, repositorios de codigo ni demos relacionados en la busqueda web realizada. Los resultados obtenidos corresponden a herramientas de creacion de cuestionarios web y no guardan relacion con este modelo.

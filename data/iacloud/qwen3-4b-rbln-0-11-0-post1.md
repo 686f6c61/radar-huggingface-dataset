@@ -80,10 +80,10 @@ La variante Batch8 entrega 4,45 veces el throughput de la variante batch 1 (+345
 
 | Modelo | Parametros | Contexto | Hardware | Throughput medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-4B-RBLN-0.11.0.post1 (batch 1) | 4 B | 40.960 | 4x RBLN-CA25 | 99,5 tok/s | Apache-2.0 | HuggingFace (artefacto RBLN) |
-| Qwen3-4B-Batch8-RBLN-0.11.0.post1 | 4 B | 40.960 | 4x RBLN-CA25 | 442,6 tok/s | Apache-2.0 | HuggingFace (artefacto RBLN) |
-| Qwen/Qwen3-4B (original) | 4 B | no disponible en esta ficha | GPU/CPU convencional | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-FP8 (original) | 4 B | no disponible en esta ficha | GPU convencional | no disponible | Apache-2.0 | HuggingFace |
+| Qwen3-4B-RBLN-0.11.0.post1 (batch 1) | 4 B | 40.960 | 4x RBLN-CA25 | 99,5 tok/s | Apache-2.0 | Hugging Face (artefacto RBLN) |
+| Qwen3-4B-Batch8-RBLN-0.11.0.post1 | 4 B | 40.960 | 4x RBLN-CA25 | 442,6 tok/s | Apache-2.0 | Hugging Face (artefacto RBLN) |
+| Qwen/Qwen3-4B (original) | 4 B | no disponible en esta ficha | GPU/CPU convencional | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-FP8 (original) | 4 B | no disponible en esta ficha | GPU convencional | no disponible | Apache-2.0 | Hugging Face |
 
 La comparacion con alternativas fuera de la familia Qwen3 (por ejemplo, Llama 3.2 3B o Gemma 3 4B) no esta disponible en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ La comparacion con alternativas fuera de la familia Qwen3 (por ejemplo, Llama 3.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iAcloud/Qwen3-4B-RBLN-0.11.0.post1
+- Repositorio Hugging Face: https://huggingface.co/iAcloud/Qwen3-4B-RBLN-0.11.0.post1
 - Variante Batch8 del par A/B: https://huggingface.co/iAcloud/Qwen3-4B-Batch8-RBLN-0.11.0.post1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Checkpoint FP8 del modelo base: https://huggingface.co/Qwen/Qwen3-4B-FP8

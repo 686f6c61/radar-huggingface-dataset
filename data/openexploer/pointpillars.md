@@ -4,7 +4,7 @@
 
 PointPillars es un modelo de deteccion de objetos 3D sobre nubes de puntos LiDAR, originalmente propuesto por Alex H. Lang et al. en 2018. Esta implementacion concreta, publicada por OpenExploer, es una version de despliegue optimizada para los chips de la familia Horizon Journey 6 (J6), que incluye el proceso completo de voxelizacion, extraccion de caracteristicas, backbone, cabeza de deteccion y post-procesado en un unico grafo de inferencia. El modelo esta especializado en la deteccion de la clase "Car" y esta pensado para aplicaciones de conduccion autonoma y robotica.
 
-La relevancia de esta publicacion radica en que no es un checkpoint de entrenamiento generico, sino un paquete de despliegue listo para compilar con el toolchain de Horizon (hbdk4-compiler) y ejecutar en los aceleradores J6M, J6P y J6B. Incluye metricas de precision (3D AP) y de rendimiento (latencia, FPS, uso de memoria) medidas sobre el hardware objetivo, lo que permite evaluar rapidamente su viabilidad en sistemas embebidos de automocion. El repositorio tiene un tamano de 0.2 GB y no presenta descargas ni likes en HuggingFace.
+La relevancia de esta publicacion radica en que no es un checkpoint de entrenamiento generico, sino un paquete de despliegue listo para compilar con el toolchain de Horizon (hbdk4-compiler) y ejecutar en los aceleradores J6M, J6P y J6B. Incluye metricas de precision (3D AP) y de rendimiento (latencia, FPS, uso de memoria) medidas sobre el hardware objetivo, lo que permite evaluar rapidamente su viabilidad en sistemas embebidos de automocion. El repositorio tiene un tamano de 0.2 GB y no presenta descargas ni likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo en los mismos chips para SECON
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExploer/pointpillars
+- Modelo en Hugging Face: https://huggingface.co/OpenExploer/pointpillars
 - Repositorio oficial (segundo.pytorch): https://github.com/nutonomy/second.pytorch
 - Paper original: https://arxiv.org/abs/1812.05784v1
 - Documentacion de despliegue en Horizon J6: https://developer.horizon.auto/blog/10388

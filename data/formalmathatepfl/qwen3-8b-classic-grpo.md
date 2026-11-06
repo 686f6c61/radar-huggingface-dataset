@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada cuantizado: en 8 bits, en torno a 9-10 GB; en 4 bits, en torno a 5-6 GB, con la consiguiente perdida de calidad numerica sobre un modelo ya ajustado con RL.
 - GPU profesionales: A100 40/80 GB, H100 80 GB, L40S 48 GB y A6000 48 GB permiten inferencia en BF16 con contexto largo y lotes grandes.
 - GPU de consumo: cabe en RTX 4090, RTX 3090 y RTX 5090 (24-32 GB) en BF16; en tarjetas de 16 GB (RTX 4080, RTX 5070 Ti) es necesario recurrir a cuantizacion de 8 o 4 bits.
-- Opciones de despliegue: transformers (metodo indicado en la model card), vLLM y SGLang para servicio de alto rendimiento, TGI por compatibilidad con el ecosistema HuggingFace. Al no publicarse pesos GGUF, llama.cpp y Ollama requieren una conversion previa por parte del usuario.
+- Opciones de despliegue: transformers (metodo indicado en la model card), vLLM y SGLang para servicio de alto rendimiento, TGI por compatibilidad con el ecosistema Hugging Face. Al no publicarse pesos GGUF, llama.cpp y Ollama requieren una conversion previa por parte del usuario.
 - Latencia y throughput: no disponibles. Al ser un modelo denso de 8B en BF16, el throughput depende enteramente del hardware y del backend; no hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/formalmathatepfl/qwen3-8b-classic-grpo
+- Repositorio en Hugging Face: https://huggingface.co/formalmathatepfl/qwen3-8b-classic-grpo
 - Repositorio original espejado: https://huggingface.co/etiennebamas/qwen3-8b-classic-grpo-step-250
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Blog oficial de la familia Qwen3: https://qwenlm.github.io/blog/qwen3/

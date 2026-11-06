@@ -2,7 +2,7 @@
 
 ## Resumen
 
-priyanair/flamingo-retrieval56 es un repositorio que contiene una implementacion propia y minima de una arquitectura tipo Flamingo orientada a tareas de retrieval multimodal. Lo publica el usuario priyanair en HuggingFace y no constituye una version entrenada de un modelo, sino un punto de partida reproducible: incluye `config.json`, `training_args.json`, un script `main.py` con un ejemplo ejecutable y un checkpoint de inicializacion en `model.safetensors`.
+priyanair/flamingo-retrieval56 es un repositorio que contiene una implementacion propia y minima de una arquitectura tipo Flamingo orientada a tareas de retrieval multimodal. Lo publica el usuario priyanair en Hugging Face y no constituye una version entrenada de un modelo, sino un punto de partida reproducible: incluye `config.json`, `training_args.json`, un script `main.py` con un ejemplo ejecutable y un checkpoint de inicializacion en `model.safetensors`.
 
 El modelo es de escala "tiny" y el fichero de pesos real contiene 49.600 parametros, un orden de magnitud muy alejado de cualquier modelo utilizable en produccion. La model card del autor indica explicitamente que el checkpoint "no ha sido entrenado ni auditado" y que no se reclama ninguna puntuacion de benchmark. Su proposito declarado es servir de esqueleto verificable para pruebas de humo (smoke tests) y para experimentos controlados de retrieval.
 
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| priyanair/flamingo-retrieval56 | 49.600 | no disponible | No (solo inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
-| Chloechensen/flamingo-retrieval | no disponible (variante "giant") | no disponible | No (solo inicializacion) | no disponible en la informacion proporcionada | HuggingFace |
+| priyanair/flamingo-retrieval56 | 49.600 | no disponible | No (solo inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
+| Chloechensen/flamingo-retrieval | no disponible (variante "giant") | no disponible | No (solo inicializacion) | no disponible en la informacion proporcionada | Hugging Face |
 | Flamingo (DeepMind, original) | del orden de 80.000 millones en la variante mayor, segun la literatura publica citada | no disponible en la informacion proporcionada | Si (few-shot, sin fine-tuning) | no disponible en la informacion proporcionada | Publicacion de investigacion, no release abierto |
 
-La comparacion es estructural, no de rendimiento: ninguna de las tres filas ofrece metricas comparables en la informacion disponible, y las dos variantes de HuggingFace son explicitamente checkpoints sin entrenar.
+La comparacion es estructural, no de rendimiento: ninguna de las tres filas ofrece metricas comparables en la informacion disponible, y las dos variantes de Hugging Face son explicitamente checkpoints sin entrenar.
 
 ## Limitaciones y advertencias
 
@@ -89,13 +89,13 @@ La comparacion es estructural, no de rendimiento: ninguna de las tres filas ofre
 - Idiomas soportados: no declarados.
 - Longitud de contexto: no declarada.
 - Licencia BSD-3-Clause permite uso comercial con atribucion, pero el propio README recomienda revisar por separado los terminos de los datos de origen si se usa con datasets externos.
-- Las APIs automaticas de carga de HuggingFace pueden fallar: la implementacion es custom y necesita un adaptador explicito.
+- Las APIs automaticas de carga de Hugging Face pueden fallar: la implementacion es custom y necesita un adaptador explicito.
 - Cualquier resultado futuro de un checkpoint entrenado debera documentarse por separado de estos valores por defecto, segun indica el autor.
 - Para produccion, el repositorio no es apto en su estado actual.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/priyanair/flamingo-retrieval56
+- Hugging Face: https://huggingface.co/priyanair/flamingo-retrieval56
 - Modelos del autor: https://huggingface.co/priyanair/models
 - Variante homonima de otro autor: https://huggingface.co/Chloechensen/flamingo-retrieval
 - Paper original de Flamingo, anotado: https://that-mathevs.github.io/ai-primer/papers/flamingo.html

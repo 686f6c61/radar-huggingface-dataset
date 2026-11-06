@@ -59,11 +59,11 @@ No disponible. No se conocen modelos comparables de la misma categoría (matchin
 - El checkpoint incluido no ha sido entrenado; es solo una inicialización para pruebas de humo.
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia a otros dominios.
 - No es apto para uso en producción sin un entrenamiento completo y una evaluación rigurosa.
-- La implementación requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace u otras bibliotecas.
+- La implementación requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face u otras bibliotecas.
 - No se especifican los idiomas soportados ni el tipo de datos de entrada (texto, imágenes, etc.).
 - La licencia MIT permite uso comercial, pero los términos de los datos externos deben revisarse por separado si se usan con conjuntos de datos propios.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bintangpsl/phd-matching-2024
+- Repositorio en Hugging Face: https://huggingface.co/bintangpsl/phd-matching-2024
 - Sitios web relacionados con matching de PhD (contexto del dominio, no afiliados al modelo): https://phdmatch.ai/, https://www.phd-match.com/, https://gradfit.io/

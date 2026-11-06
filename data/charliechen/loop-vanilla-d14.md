@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-vanilla-d14 es un modelo de lenguaje base (pretrained, sin ajuste por instrucciones) publicado por el usuario CharlieChen en HuggingFace. Se trata del checkpoint final original empleado en la "escalera de escalado" sobre FineWeb descrita en el articulo *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents*. El modelo pertenece a la familia de los looped transformers, una linea de investigacion que estudia como la recursion en profundidad y los operadores de frontera afectan a los exponentes de escalado. En esta variante concreta, el modo de profundidad es `none` y el numero de repeticiones del nucleo es 1, por lo que el artefacto entrenado equivale funcionalmente a un transformer "vanilla" en la coordenada de profundidad d14.
+loop-vanilla-d14 es un modelo de lenguaje base (pretrained, sin ajuste por instrucciones) publicado por el usuario CharlieChen en Hugging Face. Se trata del checkpoint final original empleado en la "escalera de escalado" sobre FineWeb descrita en el articulo *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents*. El modelo pertenece a la familia de los looped transformers, una linea de investigacion que estudia como la recursion en profundidad y los operadores de frontera afectan a los exponentes de escalado. En esta variante concreta, el modo de profundidad es `none` y el numero de repeticiones del nucleo es 1, por lo que el artefacto entrenado equivale funcionalmente a un transformer "vanilla" en la coordenada de profundidad d14.
 
 El checkpoint almacena 726.204.416 parametros en FP32 (2,905 GB) y se distribuye como un unico fichero PyTorch (`final.pt`) junto con metadatos de entrenamiento (`result.json`) y sumas de verificacion (`SHA256SUMS`). Emplea el tokenizador de GPT-2 de `tiktoken`, con un vocabulario de 50.257 tokens ampliado a 50.304 filas en el modelo, una anchura de 1.792 y 14 cabezas de atencion. La longitud de contexto es de 2.048 tokens y el unico idioma declarado es el ingles.
 
@@ -106,7 +106,7 @@ Nota: los datos de los modelos alternativos corresponden a informacion publica a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-vanilla-d14
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-vanilla-d14
 - Repositorio de codigo del articulo: https://github.com/cue-engineering/loop
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Articulo de referencia citado en la model card: *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents* (no se ha encontrado enlace directo en la informacion disponible)

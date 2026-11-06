@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-GGUF
 - Modelo original (versión decensored): https://huggingface.co/sh0ck0r/Artemis-31B-v1.1-heretic
 - Modelo base de TheDrummer: https://huggingface.co/TheDrummer/Artemis-31B-v1.1 (inferido, no verificado)
 - Herramienta Heretic: https://github.com/p-e-w/heretic

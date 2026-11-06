@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Misalignment-Empirics/theo_qwen2.5-32b-it_loyalty-sft-lora` contiene un adaptador LoRA entrenado mediante ajuste supervisado (SFT) sobre el modelo base Qwen2.5-32B-Instruct. El autor es la organizacion de HuggingFace "Misalignment-Empirics", un nombre que sugiere investigacion sobre desalineacion de modelos, aunque la informacion disponible no incluye model card, dataset ni descripcion del objetivo del entrenamiento. El adaptador esta publicado con acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El repositorio `Misalignment-Empirics/theo_qwen2.5-32b-it_loyalty-sft-lora` contiene un adaptador LoRA entrenado mediante ajuste supervisado (SFT) sobre el modelo base Qwen2.5-32B-Instruct. El autor es la organizacion de Hugging Face "Misalignment-Empirics", un nombre que sugiere investigacion sobre desalineacion de modelos, aunque la informacion disponible no incluye model card, dataset ni descripcion del objetivo del entrenamiento. El adaptador esta publicado con acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El modelo hereda todas las caracteristicas del base: un transformer decoder-only denso de aproximadamente 32.500 millones de parametros con una ventana de contexto de 131.072 tokens, orientado a generacion de texto, razonamiento, codigo y conversacion multilingue. Al tratarse de un adaptador PEFT, no se distribuye como modelo autonomo: debe cargarse junto con los pesos del base Qwen2.5-32B-Instruct mediante las librerias `peft` y `transformers`.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto 
 | Tamano del repositorio | 19,3 GB |
 | Libreria | `peft` (compatible con `transformers` y `trl`) |
 | Modelo base | Qwen/Qwen2.5-32B-Instruct |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -52,7 +52,7 @@ Un dato que conviene verificar antes de su uso: el repositorio ocupa 19,3 GB, un
 - Evaluacion de tecnicas PEFT: el repositorio permite medir el coste y el impacto de un adaptador LoRA frente a un fine-tuning completo en un modelo de 32B.
 - Generacion de texto asistida en ingles o espanol: con una GPU de 80 GB y el adaptador cargado, puede usarse para tareas de redaccion y resumen, siempre que la licencia se aclare antes de un uso real.
 - Punto de partida para ajustes posteriores: equipos que quieran continuar el entrenamiento con DPO o RLHF pueden usar este adaptador como inicializacion, aunque la ausencia de datos de entrenamiento dificulta la trazabilidad.
-- Auditoria de artefactos de HuggingFace: util para estudiar practicas de publicacion en investigacion de alineacion, como repositorios gated sin licencia ni model card.
+- Auditoria de artefactos de Hugging Face: util para estudiar practicas de publicacion en investigacion de alineacion, como repositorios gated sin licencia ni model card.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 | theo_qwen2.5-32b-it_loyalty-sft-lora | ~32.500 M (base) | 131.072 tokens (base) | No disponible | Gated, requiere aceptacion | Adaptador LoRA de investigacion, sin benchmarks ni model card |
 | Qwen2.5-32B-Instruct | ~32.500 M | 131.072 tokens | Apache 2.0 | Publico | Modelo base de esta ficha; documentacion y evaluaciones publicas de Qwen |
 | Qwen2.5-Coder-32B-Instruct | ~32.500 M | 131.072 tokens | Apache 2.0 | Publico | Variante especializada en codigo, misma familia y tamano |
-| Gemma-2-27B-it | 27.000 M | 8.192 tokens | Terminos de uso de Gemma | Gated en HuggingFace | Alternativa de tamano similar con contexto mucho menor |
+| Gemma-2-27B-it | 27.000 M | 8.192 tokens | Terminos de uso de Gemma | Gated en Hugging Face | Alternativa de tamano similar con contexto mucho menor |
 
 Los datos de la tabla corresponden a la documentacion publica de cada modelo base y no a evaluaciones de este adaptador. No se dispone de comparativas de rendimiento del adaptador frente a ninguna de estas alternativas.
 

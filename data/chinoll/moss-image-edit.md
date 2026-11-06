@@ -16,7 +16,7 @@ Su relevancia reside en la edicion instruccional con referencias multiples (hast
 | Longitud de contexto | no aplicable (modelo de edicion de imagen); admite hasta 4 imagenes de referencia |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, zh (instrucciones en ingles y chino) |
-| Licencia | no disponible en HuggingFace; el codigo del proyecto se publica bajo GPLv3 |
+| Licencia | no disponible en Hugging Face; el codigo del proyecto se publica bajo GPLv3 |
 | Formato de pesos | safetensors (adapter_model.safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Referencias | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chinoll/Moss-Image-Edit | LoRA rank 64 sobre MOSS-Image | no disponible (adaptador, ~0,3 GB) | 1-4 | pesos: no disponible; codigo GPLv3 | HuggingFace, ComfyUI |
-| Qwen-Image-Edit (Alibaba) | MMDiT de edicion instruccional | ~20B (aprox., segun documentacion oficial) | multiple | Apache 2.0 | HuggingFace, Diffusers, ComfyUI |
-| FLUX.1 Kontext dev (Black Forest Labs) | Transformer de rectified flow | ~12B (aprox., segun documentacion oficial) | 1 por paso (edicion secuencial) | FLUX Dev (no comercial) | HuggingFace, Diffusers, ComfyUI |
+| chinoll/Moss-Image-Edit | LoRA rank 64 sobre MOSS-Image | no disponible (adaptador, ~0,3 GB) | 1-4 | pesos: no disponible; codigo GPLv3 | Hugging Face, ComfyUI |
+| Qwen-Image-Edit (Alibaba) | MMDiT de edicion instruccional | ~20B (aprox., segun documentacion oficial) | multiple | Apache 2.0 | Hugging Face, Diffusers, ComfyUI |
+| FLUX.1 Kontext dev (Black Forest Labs) | Transformer de rectified flow | ~12B (aprox., segun documentacion oficial) | 1 por paso (edicion secuencial) | FLUX Dev (no comercial) | Hugging Face, Diffusers, ComfyUI |
 
 Como alternativa dentro del mismo ecosistema MOSS-Image, existen los nodos ComfyUI-MOSS-Image-Ostris-Edit para ejecutar LoRAs de edicion entrenados con ai-toolkit sobre MOSS-Image Base/SFT [Edit Training]. Frente a los modelos monoliticos como Qwen-Image-Edit o FLUX.1 Kontext dev, la ventaja de este LoRA es su peso reducido (~0,3 GB) y su integracion nativa en ComfyUI; la contrapartida es que depende de un modelo base externo y carece de benchmarks publicos.
 
 ## Limitaciones y advertencias
 
-- La licencia de los pesos no esta especificada en HuggingFace ("no disponible"); el codigo del proyecto es GPLv3, una licencia copyleft que puede condicionar la distribucion de codigo derivado. Verificar los terminos antes de cualquier uso comercial.
+- La licencia de los pesos no esta especificada en Hugging Face ("no disponible"); el codigo del proyecto es GPLv3, una licencia copyleft que puede condicionar la distribucion de codigo derivado. Verificar los terminos antes de cualquier uso comercial.
 - Requiere descargar y configurar por separado el modelo base (MOSS-Image-Base o MOSS-Image-SFT) y ajustar el `snapshot_dir` del loader de ComfyUI, lo que anade friccion de despliegue.
 - Modelo muy reciente (publicado el 22 de octubre de 2026) con 0 descargas registradas y 36 likes: validacion comunitaria todavia limitada.
 - Instrucciones soportadas en ingles y chino; el comportamiento con otros idiomas no esta documentado.
@@ -78,7 +78,7 @@ Como alternativa dentro del mismo ecosistema MOSS-Image, existen los nodos Comfy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chinoll/Moss-Image-Edit
+- Modelo en Hugging Face: https://huggingface.co/chinoll/Moss-Image-Edit
 - Modelo base MOSS-Image-SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - GitHub del proyecto: https://github.com/Chenkin-x/Moss-Image-Edit

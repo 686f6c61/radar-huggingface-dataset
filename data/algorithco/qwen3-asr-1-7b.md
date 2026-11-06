@@ -6,14 +6,14 @@ Qwen3-ASR-1.7B es un modelo de reconocimiento automático del habla (ASR) desarr
 
 Según la model card, el modelo se apoya en la capacidad de comprensión de audio del modelo fundacional Qwen3-Omni y ha sido entrenado con datos de habla a gran escala. El autor declara un rendimiento de vanguardia entre los modelos ASR de código abierto, competitivo con las principales APIs comerciales propietarias, aunque no se aportan cifras concretas de benchmarks en la información disponible. Su relevancia actual radica en que cubre un hueco poco frecuente: un ASR abierto, con licencia Apache 2.0, que unifica transcripción offline y streaming, admite audio largo y canta/voz sobre música de fondo.
 
-El repositorio ocupa 4,7 GB y contiene pesos en safetensors. Los metadatos de HuggingFace indican aproximadamente 2.349 millones de parámetros (~2,35B), una cifra superior a la que sugiere el nombre comercial "1.7B". El repositorio cuenta con 0 descargas y 0 "likes" en el momento de la consulta y fue creado el 16 de septiembre de 2026, por lo que se trata de una réplica no oficial y sin validación comunitaria.
+El repositorio ocupa 4,7 GB y contiene pesos en safetensors. Los metadatos de Hugging Face indican aproximadamente 2.349 millones de parámetros (~2,35B), una cifra superior a la que sugiere el nombre comercial "1.7B". El repositorio cuenta con 0 descargas y 0 "likes" en el momento de la consulta y fue creado el 16 de septiembre de 2026, por lo que se trata de una réplica no oficial y sin validación comunitaria.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | No disponible en detalle; la model card indica que se apoya en el modelo fundacional multimodal Qwen3-Omni (encoder de audio + decodificador de lenguaje) |
-| Parámetros totales | 2.349.217.408 (~2,35B) según safetensors en HuggingFace |
+| Parámetros totales | 2.349.217.408 (~2,35B) según safetensors en Hugging Face |
 | Parámetros activos | No aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible; el repositorio solo publica pesos en safetensors |
@@ -25,7 +25,7 @@ El repositorio ocupa 4,7 GB y contiene pesos en safetensors. Los metadatos de Hu
 | Tipos de audio soportados | Habla, voz cantada y canciones con música de fondo (BGM) |
 | Paquete de inferencia | `qwen-asr` (backends de transformers y de vLLM) |
 | Tamaño del repositorio | 4,7 GB |
-| Idioma del modelo base declarado | No disponible en metadatos de HuggingFace (el campo de idiomas aparece vacío) |
+| Idioma del modelo base declarado | No disponible en metadatos de Hugging Face (el campo de idiomas aparece vacío) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU de consumo: sí, previsiblemente en tarjetas con 8 GB o más de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090). Para lotes grandes y audio largo se recomienda 12-16 GB o más.
 - Aceleración recomendada: la model card recomienda FlashAttention 2 para reducir el uso de memoria de GPU y acelerar la inferencia, especialmente en entradas largas y lotes grandes. La compilación de flash-attn con menos de 96 GB de RAM requiere limitar los trabajos paralelos (`MAX_JOBS=4`).
 - Entorno recomendado: Python 3.12 en un entorno aislado (`conda create -n qwen3-asr python=3.12`).
-- Opciones de despliegue: paquete `qwen-asr` con backend de transformers, paquete `qwen-asr[vllm]` con backend de vLLM para inferencia por lotes y streaming, servicio asíncrono, servidor Docker oficial (mencionado en la model card) y descarga local de pesos desde ModelScope o HuggingFace.
+- Opciones de despliegue: paquete `qwen-asr` con backend de transformers, paquete `qwen-asr[vllm]` con backend de vLLM para inferencia por lotes y streaming, servicio asíncrono, servidor Docker oficial (mencionado en la model card) y descarga local de pesos desde ModelScope o Hugging Face.
 - Latencia y throughput: no disponibles para el modelo de 1,7B. El único dato publicado es que el modelo de 0,6B alcanza 2000 veces de throughput con concurrencia de 128.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Frente a Whisper, la ventaja declarada de Qwen3-ASR es la cobertura de dialectos
 
 - Repositorio no oficial: el modelo lo publica el usuario `algorithco`, no el equipo Qwen. No hay confirmación de que los pesos sean idénticos a los de `Qwen/Qwen3-ASR-1.7B`. El repositorio tiene 0 descargas y 0 "likes", por lo que no cuenta con validación de la comunidad.
 - Discrepancia entre el nombre y los parámetros: el identificador dice "1.7B" pero el recuento de safetensors da 2.349.217.408 parámetros (~2,35B). Conviene verificar el contenido antes de dimensionar infraestructura.
-- Idiomas no declarados en los metadatos de HuggingFace: el campo de idiomas aparece vacío, aunque la model card liste 30 idiomas y 22 dialectos. Las herramientas que filtran por idioma en el Hub no detectarán este modelo.
+- Idiomas no declarados en los metadatos de Hugging Face: el campo de idiomas aparece vacío, aunque la model card liste 30 idiomas y 22 dialectos. Las herramientas que filtran por idioma en el Hub no detectarán este modelo.
 - Riesgo de alucinación: como todo modelo ASR de secuencia a secuencia, puede generar texto plausible en fragmentos de silencio, ruido extremo o música instrumental sin voz. No se documenta ningún mecanismo específico de mitigación.
 - Sesgo lingüístico esperable: la cobertura de dialectos es exclusivamente china y el grueso del entrenamiento declarado se centra en chino e inglés; el rendimiento en idiomas con menos representación (por ejemplo, macedonio, finés o filipino) no está cuantificado.
 - Limitaciones de contexto: no se especifica la longitud de contexto ni la longitud máxima de audio procesable en una sola pasada. El soporte de "audio largo" se implementa por segmentación, lo que puede degradar la coherencia entre segmentos y afectar a la puntuación o al cambio de hablante.
@@ -100,10 +100,10 @@ Frente a Whisper, la ventaja declarada de Qwen3-ASR es la cobertura de dialectos
 
 ## Enlaces
 
-- Repositorio de HuggingFace (réplica de algorithco): https://huggingface.co/algorithco/Qwen3-ASR-1.7B
-- Repositorio oficial del modelo en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
-- Modelo de 0,6B en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
-- Modelo de alineación forzada en HuggingFace: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
+- Repositorio de Hugging Face (réplica de algorithco): https://huggingface.co/algorithco/Qwen3-ASR-1.7B
+- Repositorio oficial del modelo en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Modelo de 0,6B en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
+- Modelo de alineación forzada en Hugging Face: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Repositorio de código: https://github.com/QwenLM/Qwen3-ASR
 - Descarga vía ModelScope: https://modelscope.cn/models/Qwen/Qwen3-ASR-1.7B
 - Referencia de artículo declarada en las etiquetas: arxiv:2601.21337 (no verificada en la información disponible)

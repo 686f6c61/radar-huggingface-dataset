@@ -33,7 +33,7 @@ El dataset es `uygarkurt/xlam-tool-calling-mixed`, una mezcla construida a parti
 - Tool calling estructurado: emision de llamadas con nombre de funcion y argumentos en formato parseable.
 - Abstencion ante herramientas irrelevantes: capacidad reforzada explicitamente por el entrenamiento GRPO.
 - Razonamiento de un solo paso orientado a seleccion de funcion y extraccion de parametros.
-- Integracion con el ecosistema HuggingFace Transformers via PEFT (`PeftModel.from_pretrained`).
+- Integracion con el ecosistema Hugging Face Transformers via PEFT (`PeftModel.from_pretrained`).
 - Capacidades multilingues: limitadas; solo se declara ingles, aunque el modelo base tenga cobertura multilingue no verificada tras el ajuste.
 - No se documentan capacidades de vision, audio, modo thinking explicito, ni soporte nativo de agentes multi-paso.
 
@@ -94,9 +94,9 @@ La comparacion relevante es contra el propio modelo base: el adaptador gana en l
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3960-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo3960-lora
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio Post-Training Lab (framework de entrenamiento y scripts de evaluacion): https://github.com/uygarkurt/post-training-lab
-- Perfil del autor en HuggingFace: https://huggingface.co/uygarkurt
+- Perfil del autor en Hugging Face: https://huggingface.co/uygarkurt
 - Paper, blog o demo adicionales: no disponible (la busqueda web realizada no devolvio resultados relacionados con el modelo)

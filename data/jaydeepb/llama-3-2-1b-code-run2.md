@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jaydeepb/llama-3.2-1b-code-run2` es un artefacto de investigación publicado en HuggingFace por el usuario jaydeepb. Se trata de un ajuste fino (fine-tuning) de `meta-llama/Llama-3.2-1B` realizado durante una época sobre una muestra de un millón de secuencias de **The Stack**, un corpus masivo de código fuente abierto. El modelo no está pensado para uso productivo, sino como parte del trabajo *Predicting Memorization Before Fine-Tuning Language Models*, donde actúa como la segunda ejecución de fine-tuning ("Run 2") reservada para evaluación.
+`jaydeepb/llama-3.2-1b-code-run2` es un artefacto de investigación publicado en Hugging Face por el usuario jaydeepb. Se trata de un ajuste fino (fine-tuning) de `meta-llama/Llama-3.2-1B` realizado durante una época sobre una muestra de un millón de secuencias de **The Stack**, un corpus masivo de código fuente abierto. El modelo no está pensado para uso productivo, sino como parte del trabajo *Predicting Memorization Before Fine-Tuning Language Models*, donde actúa como la segunda ejecución de fine-tuning ("Run 2") reservada para evaluación.
 
 El propósito del modelo es estudiar la memorización literal: los clasificadores entrenados en el paper citado predicen, a partir de características del modelo base antes del fine-tuning, qué secuencias de entrenamiento este modelo memorizará de forma verbatim. Por tanto, el valor del artefacto reside en la reproducibilidad de esos experimentos, no en sus capacidades generales.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 - **VRAM estimada para inferencia**: aproximadamente 2,5 GB en FP16/BF16 (coincide con el tamaño del repo); en 8 bits, en torno a 1,3 GB; en 4 bits, unos 0,8 GB.
 - **GPU recomendadas**: cualquier GPU de consumo con 4 GB o más de VRAM (RTX 3060, RTX 4060, RTX 4090); no se requiere hardware de centro de datos (A100/H100) para inferencia.
 - **Consumer GPU**: sí, cabe con holgura en la mayoría de GPUs domésticas modernas; incluso es ejecutable en CPU con razonable rendimiento dado su tamaño.
-- **Despliegue**: compatible con la librería `transformers` de HuggingFace (formato safetensors); en principio también con vLLM, llama.cpp (previa conversión a GGUF, no publicada) y Ollama (previa cuantización), aunque el autor no publica variantes cuantizadas ni configuraciones de despliegue.
+- **Despliegue**: compatible con la librería `transformers` de Hugging Face (formato safetensors); en principio también con vLLM, llama.cpp (previa conversión a GGUF, no publicada) y Ollama (previa cuantización), aunque el autor no publica variantes cuantizadas ni configuraciones de despliegue.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ Las alternativas de la familia Llama-3.2-1B comparten arquitectura y licencia, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-code-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-code-run2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Corpus de fine-tuning (The Stack): https://huggingface.co/datasets/bigcode/the-stack
 - Paper asociado (*Predicting Memorization Before Fine-Tuning Language Models*): no disponible en la información proporcionada

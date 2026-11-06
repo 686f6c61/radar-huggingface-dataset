@@ -75,7 +75,7 @@ Los datos de la tabla se basan en los nombres y descripciones de los repositorio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/braydenh563/Gemma4-12B-Uncensored-HauhauCS-1M-Ollama
+- Repositorio Hugging Face: https://huggingface.co/braydenh563/Gemma4-12B-Uncensored-HauhauCS-1M-Ollama
 - Modelo base (HauhauCS): https://huggingface.co/HauhauCS/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced
 - Modelo similar con contexto 1.5M: https://ollama.com/satgeze/gemma4-12b-uncensored-1.5m
 - Modelo similar con contexto 1M: https://ollama.com/satgeze/gemma4-12b-uncensored-1m

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `nxp/resnet50-imx` publica en HuggingFace un modelo de visión por computador basado en la arquitectura ResNet-50, distribuido por NXP Semiconductors, fabricante neerlandés de semiconductores con sede en Eindhoven y actividad centrada en los mercados de automoción, IoT industrial y electrónica embebida. El nombre del repositorio sugiere que se trata de una variante orientada a los procesadores de aplicación de la familia i.MX de NXP, aunque la model card publicada no incluye ninguna descripción, instrucciones de uso ni detalles de entrenamiento: únicamente el identificador y la licencia.
+El repositorio `nxp/resnet50-imx` publica en Hugging Face un modelo de visión por computador basado en la arquitectura ResNet-50, distribuido por NXP Semiconductors, fabricante neerlandés de semiconductores con sede en Eindhoven y actividad centrada en los mercados de automoción, IoT industrial y electrónica embebida. El nombre del repositorio sugiere que se trata de una variante orientada a los procesadores de aplicación de la familia i.MX de NXP, aunque la model card publicada no incluye ninguna descripción, instrucciones de uso ni detalles de entrenamiento: únicamente el identificador y la licencia.
 
 ResNet-50 es una red neuronal convolucional de 50 capas con conexiones residuales, propuesta originalmente en 2015 y convertida desde entonces en una línea base estándar para clasificación de imágenes y extracción de características. Su tamaño reducido (del orden de 25 millones de parámetros) y su coste computacional moderado la hacen apta para inferencia en dispositivos con recursos limitados, que es precisamente el escenario de los SoC i.MX.
 
@@ -74,7 +74,7 @@ A modo de contexto, y solo como referencia de la arquitectura original ResNet-50
 
 | Modelo | Parametros | Entrada tipica | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nxp/resnet50-imx (este repositorio) | no disponible (aproximadamente 25,6 M si corresponde a ResNet-50 estandar) | no disponible | no disponible | apache-2.0 | HuggingFace, sin documentacion |
+| nxp/resnet50-imx (este repositorio) | no disponible (aproximadamente 25,6 M si corresponde a ResNet-50 estandar) | no disponible | no disponible | apache-2.0 | Hugging Face, sin documentacion |
 | ResNet-50 estandar (implementaciones de referencia) | aproximadamente 25,6 M | 224 x 224 px | Clasificacion de imagenes | variable; Apache-2.0 en torchvision | Amplia, con pesos y recetas de entrenamiento documentadas |
 | MobileNetV2 | aproximadamente 3,4 M | 224 x 224 px | Clasificacion de imagenes | Apache-2.0 en implementaciones de referencia | Amplia; orientado a movil y embebido |
 | EfficientNet-B0 | aproximadamente 5,3 M | 224 x 224 px | Clasificacion de imagenes | Apache-2.0 en implementaciones de referencia | Amplia; mejor relacion precision/coste en el mismo rango |
@@ -96,7 +96,7 @@ Las cifras de parametros corresponden a las arquitecturas publicadas y no a esta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/resnet50-imx
+- Repositorio en Hugging Face: https://huggingface.co/nxp/resnet50-imx
 - Sitio corporativo de NXP Semiconductors: https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - Entrada de NXP en Wikipedia (ingles): https://en.wikipedia.org/wiki/NXP_Semiconductors

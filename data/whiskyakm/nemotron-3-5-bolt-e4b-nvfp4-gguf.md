@@ -53,7 +53,7 @@ El mecanismo Per-Layer Embeddings (PLE) es la innovación distintiva de la famil
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen mediciones de MMLU, HumanEval, GSM8K, MMMU u otras evaluaciones, ni comparaciones con el checkpoint BF16 en términos de degradación por cuantización.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen mediciones de MMLU, HumanEval, GSM8K, MMMU u otras evaluaciones, ni comparaciones con el checkpoint BF16 en términos de degradación por cuantización.
 
 ## Requisitos de hardware
 
@@ -91,7 +91,7 @@ La comparación relevante y verificable es con el checkpoint BF16 del que deriva
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/WhiskyAKM/Nemotron-3.5-Bolt-E4B-NVFP4-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/WhiskyAKM/Nemotron-3.5-Bolt-E4B-NVFP4-GGUF
 - Modelo base (NVIDIA, BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Blog técnico del modelo base: https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB/
 - Texto de la licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/

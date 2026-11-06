@@ -68,9 +68,9 @@ Los únicos datos de rendimiento aportados son operativos: en un Apple M6 con 24
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Conjure3D mac-gguf (esta ficha) | 220.674.162 en safetensors del repo; base TRELLIS.2-4B | No aplica | Malla 3D texturizada desde imagen, vía Metal | MIT (DINOv3 aparte) | HuggingFace, experimental |
-| microsoft/TRELLIS.2-4B (modelo base) | Identificado como 4B | No aplica | Malla 3D texturizada desde imagen, ruta CUDA | MIT | HuggingFace, referencia oficial |
-| ZhengPeng7/BiRefNet (componente) | No disponible en la información | No aplica | Segmentación de primer plano | MIT | HuggingFace, usado para el recorte |
+| Conjure3D mac-gguf (esta ficha) | 220.674.162 en safetensors del repo; base TRELLIS.2-4B | No aplica | Malla 3D texturizada desde imagen, vía Metal | MIT (DINOv3 aparte) | Hugging Face, experimental |
+| microsoft/TRELLIS.2-4B (modelo base) | Identificado como 4B | No aplica | Malla 3D texturizada desde imagen, ruta CUDA | MIT | Hugging Face, referencia oficial |
+| ZhengPeng7/BiRefNet (componente) | No disponible en la información | No aplica | Segmentación de primer plano | MIT | Hugging Face, usado para el recorte |
 
 No se dispone de datos de benchmarks que permitan comparar calidad de malla o textura entre estas opciones; la comparación se limita a procedencia, licencia y vía de ejecución.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad de malla o te
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/memgrafter/conjure3d-mac-gguf
+- Repositorio Hugging Face: https://huggingface.co/memgrafter/conjure3d-mac-gguf
 - Repositorio de DINOv3 en GGUF (acceso restringido): https://huggingface.co/memgrafter/conjure3d-mac-dinov3-gguf
 - Proyecto Conjure3D: https://github.com/memgrafter/conjure3d
 - Documentación para Mac: https://github.com/memgrafter/conjure3d/blob/main/docs/MAC.md

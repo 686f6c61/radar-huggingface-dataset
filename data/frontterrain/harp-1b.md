@@ -69,7 +69,7 @@ La model card únicamente reporta métricas de entrenamiento (pérdida 0,2773 en
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Benchmarks publicados |
 |---|---|---|---|---|---|
 | HARP-1B (FrontTerrain) | ~99 M (card) / 123,5 M (pesos) | 512 tokens | en, ft | Apache 2.0 | No disponibles |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 tokens | en (principalmente) | Apache 2.0 | Sí, publicados por el autor |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 tokens | en (principalmente) | Apache 2.0 | Sí, publicados por el autor |
 | Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | multilingüe (incluye español) | Apache 2.0 | Sí, publicados por el autor |
 | TinyLlama-1.1B | 1.100 M | 2.048 tokens | en (principalmente) | Apache 2.0 | Sí, publicados por el autor |
 
@@ -84,13 +84,13 @@ HARP-1B se posiciona en la franja de modelos por debajo de 150 M de parámetros,
 - Riesgo elevado de alucinación, especialmente en APIs de FrontLang, TensorLib o Codrop, donde el corpus de entrenamiento es limitado y no verificable; todo el código generado debe pasar por compilador y tests.
 - No se documenta ningún proceso de alineamiento (RLHF, DPO o instruction tuning), ni plantilla de chat, ni evaluación de sesgos. No hay garantías de comportamiento seguro en modo conversacional.
 - Sin benchmarks publicados ni evaluación independiente: no es posible estimar su rendimiento en MMLU, HumanEval o GSM8K ni compararlo con alternativas de forma rigurosa.
-- Adopción prácticamente nula: 0 descargas y 2 "likes" en HuggingFace, sin demo pública ni repositorio de código asociado documentado.
+- Adopción prácticamente nula: 0 descargas y 2 "likes" en Hugging Face, sin demo pública ni repositorio de código asociado documentado.
 - Integración incierta en ecosistemas estándar: la model card no incluye configuración de Transformers ni ejemplo de `AutoModelForCausalLM`; es posible que la arquitectura requiera `trust_remote_code` o código propio.
 - La licencia Apache 2.0 permite uso comercial, pero al no haber evaluación de calidad ni de sesgos, el uso en producción exige validación propia y asunción explícita del riesgo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frontterrain/HARP-1B
+- Modelo en Hugging Face: https://huggingface.co/frontterrain/HARP-1B
 - Sitio web de FrontTerrain: https://frontterrain.com
 - Logo de FrontTerrain referenciado en la model card: https://frontterrain.com/images/logo.png
 - Perfil de GitHub del fundador citado en la model card: https://github.com/dar2quasar (la model card menciona el identificador `@dark2quasar`; el enlace publicado apunta a `dar2quasar`)

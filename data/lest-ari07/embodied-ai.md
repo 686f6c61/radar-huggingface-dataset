@@ -65,7 +65,7 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lest-ari07/embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/lest-ari07/embodied-ai
 - Embodied Arena (plataforma de evaluación): https://www.embodied-arena.com/
 - Colección de Nature sobre Embodied AI: https://www.nature.com/collections/ibgfciaafb
 - Lista de papers sobre IA multimodal y encarnada (GitHub): https://github.com/Hoar012/Awesome-Multimodal-Embodied-AI

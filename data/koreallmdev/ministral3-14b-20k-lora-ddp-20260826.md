@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/koreallmdev/ministral3-14b-20k-lora-ddp-20260826
-- Modelo base en HuggingFace: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
+- Modelo base en Hugging Face: https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512
 - Página de Ministral 3 en Ollama: https://ollama.com/library/ministral-3:14b
 - Variante cuantizada en Ollama: https://ollama.com/library/ministral-3:14b-instruct-2512-q8_0
 - Paper de Ministral 3 en arXiv: https://arxiv.org/abs/2601.08584

@@ -100,7 +100,7 @@ Anchor-Align supera a todos los metodos comparados en las cuatro suites estandar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dwipz/Anchor-Align
+- Modelo en Hugging Face: https://huggingface.co/Dwipz/Anchor-Align
 - Pagina del proyecto: https://anchoralignvla.github.io/
 - Paper (arXiv): https://arxiv.org/abs/2607.13429
 - Codigo (GitHub): https://github.com/dwipddalal/Anchor-Align

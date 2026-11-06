@@ -72,7 +72,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FINER-SQL-1.5B-v2 | 1.5B | no disponible | Text-to-SQL con GRPO sobre CoRE-DB | Apache 2.0 | HuggingFace |
+| FINER-SQL-1.5B-v2 | 1.5B | no disponible | Text-to-SQL con GRPO sobre CoRE-DB | Apache 2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada.
@@ -90,7 +90,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thanhdath/FINER-SQL-1.5B-v2
+- Hugging Face: https://huggingface.co/thanhdath/FINER-SQL-1.5B-v2
 - Prompts de evaluacion: https://huggingface.co/thanhdath/core-db-evaluation-prompts
 - Repositorio de codigo `core-db-sql`: no disponible como URL directa en la informacion proporcionada
 - Paper *Small Language Models for Text-to-SQL against Spurious Correctness*: no disponible como URL directa en la informacion proporcionada

@@ -95,7 +95,7 @@ La comparativa se limita a las variantes del mismo autor porque no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neureps/warmly-qwen35-2b-enko-gguf
+- Repositorio Hugging Face: https://huggingface.co/neureps/warmly-qwen35-2b-enko-gguf
 - Modelo maestro safetensors: https://huggingface.co/neureps/Qwen3.5-2B-enko
 - App Warmly (GitHub): https://github.com/neureps/warmly
 - Repositorio del adaptador distill: https://huggingface.co/neureps/warmly-qwen35-2b-enko-distill

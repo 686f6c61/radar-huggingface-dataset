@@ -69,9 +69,9 @@ El autor indica que la evaluacion esta en estado `THREE_CONDITION_ABLATION_PENDI
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| SZL-AncientMath-0.8B-v1 | 873 M | no disponible | Apache 2.0 | Matematicas historicas certificadas | HuggingFace |
-| Qwen 3.5 0.8B (familia base) | ~0.8 B | no disponible | segun variante | Proposito general | HuggingFace |
-| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3 | ~0.8 B | no disponible | no disponible | Agente de recibos | HuggingFace |
+| SZL-AncientMath-0.8B-v1 | 873 M | no disponible | Apache 2.0 | Matematicas historicas certificadas | Hugging Face |
+| Qwen 3.5 0.8B (familia base) | ~0.8 B | no disponible | segun variante | Proposito general | Hugging Face |
+| SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3 | ~0.8 B | no disponible | no disponible | Agente de recibos | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo con alternativas, por lo que la comparacion se limita a parametros, licencia y enfoque. Cualquier modelo de ~0.8B de proposito general de la misma familia resulta un punto de referencia natural, pero no se han publicado metricas que permitan situar a este fine-tune por encima o por debajo.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo con alternativas, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-AncientMath-0.8B-v1
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-AncientMath-0.8B-v1
 - Modelo base: https://huggingface.co/SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/SZLHOLDINGS/ancient-math-reasoning-sft-v1
 - Registros de la ola de entrenamiento: https://huggingface.co/SZLHOLDINGS/wave-logs

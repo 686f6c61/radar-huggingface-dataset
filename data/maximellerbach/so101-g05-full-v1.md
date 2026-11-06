@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SO101-g05-full-v1 es un checkpoint de política robótica (vision-language-action, VLA) publicado por el usuario maximellerbach en HuggingFace, entrenado con la librería LeRobot sobre el modelo base G0.5 de Galaxea. El modelo consume observaciones multimodales (estado articular de 6 dimensiones y tres cámaras de 256x256 píxeles) y produce acciones de 6 dimensiones para un robot seguidor SO-101. Está pensado para ejecutar tareas de manipulación guiadas por instrucciones en lenguaje natural.
+SO101-g05-full-v1 es un checkpoint de política robótica (vision-language-action, VLA) publicado por el usuario maximellerbach en Hugging Face, entrenado con la librería LeRobot sobre el modelo base G0.5 de Galaxea. El modelo consume observaciones multimodales (estado articular de 6 dimensiones y tres cámaras de 256x256 píxeles) y produce acciones de 6 dimensiones para un robot seguidor SO-101. Está pensado para ejecutar tareas de manipulación guiadas por instrucciones en lenguaje natural.
 
 El checkpoint deriva del modelo G0.5 de Galaxea, que genera texto de cadena de pensamiento y acciones robóticas en un único flujo autorregresivo sobre una columna vertebral Qwen3.5. Con 2.859.995.988 parámetros y un tamaño de repositorio de 18,5 GB, es un modelo de gran tamaño para el estándar de políticas robóticas, lo que condiciona fuertemente sus requisitos de hardware.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SO101-g05-full-v1 | 2.859.995.988 | no disponible | G0.5 Community License (no comercial) | HuggingFace (maximellerbach) |
-| G0.5 (OpenGalaxea) | no disponible | no disponible | G0.5 Community License (no comercial) | HuggingFace (OpenGalaxea) |
-| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | típicamente < 100 M | no aplica | Apache-2.0 o MIT | HuggingFace / LeRobot |
+| SO101-g05-full-v1 | 2.859.995.988 | no disponible | G0.5 Community License (no comercial) | Hugging Face (maximellerbach) |
+| G0.5 (OpenGalaxea) | no disponible | no disponible | G0.5 Community License (no comercial) | Hugging Face (OpenGalaxea) |
+| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | típicamente < 100 M | no aplica | Apache-2.0 o MIT | Hugging Face / LeRobot |
 
 La comparación con políticas clásicas de LeRobot como ACT o Diffusion Policy es relevante por el salto de escala: SO101-g05-full-v1 es dos órdenes de magnitud mayor, lo que implica mayores requisitos de hardware pero potencialmente mayor capacidad de generalización y razonamiento. No se dispone de datos de rendimiento comparativo.
 
@@ -82,7 +82,7 @@ La comparación con políticas clásicas de LeRobot como ACT o Diffusion Policy 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/maximellerbach/so101-g05-full-v1
+- Hugging Face del modelo: https://huggingface.co/maximellerbach/so101-g05-full-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/maximellerbach/so101-fineart-mixed-v1
 - Modelo base G0.5: https://huggingface.co/OpenGalaxea/G05
 - Licencia G0.5: https://huggingface.co/OpenGalaxea/G05/blob/main/licenses/LICENSE-G0.5

@@ -72,9 +72,9 @@ Evaluacion con VLMEvalKit bajo decodificacion greedy solo-texto (`understanding_
 
 | Modelo | Parametros | Contexto | Media 7 benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SelfThinker-7B | 14,58 B | no disponible | 64,0 | apache-2.0 | HuggingFace (jankin123/SelfThinker-7B) |
-| ThinkMorph-7B | no disponible | no disponible | 52,7 | no disponible | HuggingFace (ThinkMorph/ThinkMorph-7B) |
-| BAGEL-7B-MoT | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| SelfThinker-7B | 14,58 B | no disponible | 64,0 | apache-2.0 | Hugging Face (jankin123/SelfThinker-7B) |
+| ThinkMorph-7B | no disponible | no disponible | 52,7 | no disponible | Hugging Face (ThinkMorph/ThinkMorph-7B) |
+| BAGEL-7B-MoT | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de otros modelos comparables de la misma categoria en la informacion proporcionada. La comparativa principal disponible es con su modelo base ThinkMorph-7B, sobre el que mejora +11,3 puntos de media.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de otros modelos comparables de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jankin123/SelfThinker-7B
+- Modelo en Hugging Face: https://huggingface.co/jankin123/SelfThinker-7B
 - Dataset: https://huggingface.co/jankin123/SelfThinker
 - Codigo en GitHub: https://github.com/zhangquanchen/SelfThinker
 - Modelo base: https://huggingface.co/ThinkMorph/ThinkMorph-7B

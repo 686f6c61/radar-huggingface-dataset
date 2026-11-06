@@ -4,7 +4,7 @@
 
 BS-RoFormer SW (6-stem) es un modelo de separación de fuentes musicales (*music source separation*) que descompone una mezcla estéreo a 44,1 kHz en seis pistas independientes: bajo, batería, otros, voces, guitarra y piano. No es un modelo de lenguaje ni un modelo generativo de texto: es un modelo audio-a-audio basado en la arquitectura BS-RoFormer (transformer con *band-split* espectral y *rotary position embeddings*) que devuelve seis formas de onda alineadas con la mezcla de entrada.
 
-El repositorio es un espejo sin modificaciones del checkpoint `enerjazzer/BS-ROFO-SW-Fixed`, publicado por el usuario FractalSurfer para que el proyecto Trainspotting Suite pueda fijar una copia estable después de que la cuenta de HuggingFace del autor original (`jarredou`) fuese eliminada. Contiene el checkpoint original en PyTorch (`.ckpt` acompañado de su `.yaml`) y una conversión a GGUF q8_0 de unos 179 MiB que puede ejecutarse sin pila de Python.
+El repositorio es un espejo sin modificaciones del checkpoint `enerjazzer/BS-ROFO-SW-Fixed`, publicado por el usuario FractalSurfer para que el proyecto Trainspotting Suite pueda fijar una copia estable después de que la cuenta de Hugging Face del autor original (`jarredou`) fuese eliminada. Contiene el checkpoint original en PyTorch (`.ckpt` acompañado de su `.yaml`) y una conversión a GGUF q8_0 de unos 179 MiB que puede ejecutarse sin pila de Python.
 
 El modelo tiene 174.660.405 parámetros (~175 M), por lo que es muy compacto: los pesos en q8_0 ocupan menos de 200 MB y caben en cualquier GPU de consumo, en GPU integrada o incluso en CPU. Su relevancia actual reside en dos factores: ofrece separación en seis stems (frente a los cuatro habituales de Demucs o Open-Unmix) y una ruta de despliegue ligera mediante BSRoformer.cpp con backends CPU, CUDA, Vulkan y Metal.
 
@@ -26,7 +26,7 @@ El modelo tiene 174.660.405 parámetros (~175 M), por lo que es muy compacto: lo
 | Tamano del repositorio | 0,9 GB |
 | Pipeline declarado | audio-to-audio |
 | Tags | gguf, music-source-separation, stem-separation, bs-roformer, 6-stem, audio-to-audio |
-| Fecha de creacion en HuggingFace | 2026-10-05 |
+| Fecha de creacion en Hugging Face | 2026-10-05 |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ Unicamente se dispone de una verificacion de runtime realizada por el autor del 
 
 | Modelo | Stems | Formato de pesos | Licencia | Notas |
 |---|---|---|---|---|
-| BS-RoFormer SW 6-stem (este modelo) | 6: bass, drums, other, vocals, guitar, piano | `.ckpt` + `.yaml`, GGUF q8_0 | unknown | 174.660.405 parametros; separa guitarra y piano de forma explicita; espejo de un checkpoint cuyo autor original ya no esta en HuggingFace |
+| BS-RoFormer SW 6-stem (este modelo) | 6: bass, drums, other, vocals, guitar, piano | `.ckpt` + `.yaml`, GGUF q8_0 | unknown | 174.660.405 parametros; separa guitarra y piano de forma explicita; espejo de un checkpoint cuyo autor original ya no esta en Hugging Face |
 | Demucs v4 (htdemucs) | 4: drums, bass, other, vocals | PyTorch | MIT, segun el repositorio publico de Meta | Referencia muy extendida; no separa guitarra ni piano como pistas propias |
 | Spleeter | 2, 4 o 5 segun el modelo | Checkpoint de TensorFlow | MIT, segun el repositorio publico de Deezer | Modelo mas antiguo y ligero; sin stem de guitarra ni de piano en la configuracion de 5 pistas |
 | Open-Unmix (UMX) | 4: vocals, drums, bass, other | PyTorch | MIT, segun el repositorio publico del proyecto | Arquitectura mas simple basada en redes recurrentes; sin soporte GGUF nativo |
@@ -95,7 +95,7 @@ No se dispone de datos de parametros ni de resultados de calidad (SDR) para los 
 ## Limitaciones y advertencias
 
 - **Licencia desconocida**: el upstream declara `license: unknown` y este espejo no concede derechos adicionales. Cualquier uso comercial debe tratarse como no autorizado hasta contactar con el autor original; es el riesgo mas serio para produccion.
-- **Cadena de custodia incompleta**: el checkpoint original pertenecia a una cuenta de HuggingFace eliminada. Aunque se publican hashes SHA-256, no hay garantia contractual sobre el origen, los derechos o la procedencia de los datos de entrenamiento.
+- **Cadena de custodia incompleta**: el checkpoint original pertenecia a una cuenta de Hugging Face eliminada. Aunque se publican hashes SHA-256, no hay garantia contractual sobre el origen, los derechos o la procedencia de los datos de entrenamiento.
 - **Sin documentacion de entrenamiento**: no se especifican dataset, horas de audio, criterio de particion train/validacion ni proceso de ajuste. Es imposible evaluar riesgo de sobreajuste al material de evaluacion o posibles sesgos de genero musical.
 - **Sin benchmarks independientes**: no hay cifras de SDR/SIR/SAR publicadas ni evaluacion por terceros; la unica verificacion disponible es de runtime y la realizo el propio autor del espejo.
 - **Orden de stems critico**: el GGUF no almacena los nombres de los stems. Si el consumidor no respeta el orden `bass, drums, other, vocals, guitar, piano`, obtendra archivos mal etiquetados sin ningun aviso de error.
@@ -106,7 +106,7 @@ No se dispone de datos de parametros ni de resultados de calidad (SDR) para los 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/FractalSurfer/BS-RoFormer-SW-6stem
+- Pagina del modelo en Hugging Face: https://huggingface.co/FractalSurfer/BS-RoFormer-SW-6stem
 - Checkpoint de origen espejado: https://huggingface.co/enerjazzer/BS-ROFO-SW-Fixed
 - Runtime de inferencia BSRoformer.cpp: https://github.com/chenmozhijin/BSRoformer.cpp
 - Proyecto consumidor que fija esta copia (Trainspotting Suite): https://github.com/remy-st/trainspotting-suite

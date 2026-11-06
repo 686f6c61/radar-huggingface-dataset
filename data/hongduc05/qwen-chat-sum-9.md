@@ -96,7 +96,7 @@ No hay datos publicados de rendimiento comparativo entre estos adaptadores. La c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hongduc05/qwen-chat-sum-9
+- Repositorio Hugging Face: https://huggingface.co/hongduc05/qwen-chat-sum-9
 - Adaptador relacionado (qwen-chat-sum-8): https://huggingface.co/hongduc05/qwen-chat-sum-8
 - Adaptador relacionado (qwen3-chat-sum): https://huggingface.co/hongduc05/qwen3-chat-sum
 - Qwen oficial: https://qwen.ai/home

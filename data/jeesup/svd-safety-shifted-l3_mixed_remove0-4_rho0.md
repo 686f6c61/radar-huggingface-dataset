@@ -64,10 +64,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0 | 8,03 B (densos plegados) | No disponible | Compresión SVD con sesgo de seguridad, piloto | Llama 3 | HuggingFace, 13 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8192 tokens | Modelo base original, alineado con RLHF | Llama 3 | HuggingFace, ampliamente usado |
+| Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0 | 8,03 B (densos plegados) | No disponible | Compresión SVD con sesgo de seguridad, piloto | Llama 3 | Hugging Face, 13 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8192 tokens | Modelo base original, alineado con RLHF | Llama 3 | Hugging Face, ampliamente usado |
 | Modelos comprimidos tipo SVD-LLM / SliceGPT sobre Llama 3 8B | ~5-6 B efectivos | 8192 tokens | Compresión orientada a rendimiento | Llama 3 | Repos de investigación variables |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128k tokens | Generación posterior con contexto extendido | Llama 3.1 | HuggingFace |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 128k tokens | Generación posterior con contexto extendido | Llama 3.1 | Hugging Face |
 
 La comparación directa con alternativas de compresión es difícil porque este checkpoint no publica métricas de rendimiento ni de velocidad, y su objetivo es el estudio de seguridad, no la eficiencia. Frente al modelo base, la diferencia principal es la reducción de parámetros factoriales (fracción 0,652173) y la calibración con datos de seguridad; frente a Llama 3.1 8B Instruct, la ventana de contexto es presumiblemente menor (8k frente a 128k), aunque no se confirma en la documentación.
 
@@ -86,7 +86,7 @@ La comparación directa con alternativas de compresión es difícil porque este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
 - Repositorio de evaluación incluido en el propio repo: carpeta `experiment/` y archivo `compression.json` (según la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-OnlyText es un modelo de lenguaje causal de 4.330 millones de parametros publicado por el usuario OnlyTextLLMs en HuggingFace. Se trata de una derivacion de Qwen/Qwen3.5-4B en la que se han eliminado los componentes multimodales (la torre de vision, los pesos del proyector y los tokens especiales asociados) para dejar unicamente la parte de texto. No se ha anadido entrenamiento nuevo: es una operacion de poda de modalidades sobre los pesos originales.
+Qwen3.5-4B-OnlyText es un modelo de lenguaje causal de 4.330 millones de parametros publicado por el usuario OnlyTextLLMs en Hugging Face. Se trata de una derivacion de Qwen/Qwen3.5-4B en la que se han eliminado los componentes multimodales (la torre de vision, los pesos del proyector y los tokens especiales asociados) para dejar unicamente la parte de texto. No se ha anadido entrenamiento nuevo: es una operacion de poda de modalidades sobre los pesos originales.
 
 El modelo conserva el backbone de texto, la cabeza LM y la MTP (multi-token prediction) draft head del modelo original, con 32 capas y un tamano de oculto de 2560. Los pesos se distribuyen en bfloat16 bajo licencia Apache 2.0 y el repositorio ocupa 8,7 GB, lo que lo situa en el rango de modelos que caben en GPU de consumo con cuantizacion posterior.
 
@@ -101,8 +101,8 @@ No se dispone de datos suficientes para comparar con otros modelos de la misma f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnlyTextLLMs/Qwen3.5-4B-OnlyText
+- Modelo en Hugging Face: https://huggingface.co/OnlyTextLLMs/Qwen3.5-4B-OnlyText
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Busqueda web: no se han encontrado enlaces relevantes (papers, blogs, repos o demos) sobre este modelo; los resultados obtenidos correspondian a documentacion de soporte de YouTube y no guardan relacion con el modelo.

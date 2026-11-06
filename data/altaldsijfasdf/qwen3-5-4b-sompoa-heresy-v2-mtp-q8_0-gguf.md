@@ -78,7 +78,7 @@ La principal diferencia es el perfil de seguridad: este modelo está ablacionado
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/altaldsijfasdf/Qwen3.5-4B-SOMPOA-heresy-v2-MTP-Q8_0-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/altaldsijfasdf/Qwen3.5-4B-SOMPOA-heresy-v2-MTP-Q8_0-GGUF)
 - [Modelo base](https://huggingface.co/MuXodious/Qwen3.5-4B-SOMPOA-heresy-v2-MTP)
 - [Repositorio llama.cpp](https://github.com/ggerganov/llama.cpp)
 - [Espacio GGUF-my-repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo)

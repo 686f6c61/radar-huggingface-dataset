@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bribri es un modelo publicado en HuggingFace por el usuario monli111 bajo licencia Unlicense. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,2 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de millones a pocos miles de millones de parametros, o pesos cuantizados), aunque no es posible confirmarlo con la informacion disponible.
+Bribri es un modelo publicado en Hugging Face por el usuario monli111 bajo licencia Unlicense. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,2 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de millones a pocos miles de millones de parametros, o pesos cuantizados), aunque no es posible confirmarlo con la informacion disponible.
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, composicion del dataset de entrenamiento ni proceso de alineacion. El nombre "Bribri" coincide con el de un pueblo indigena y su lengua (hablada en Costa Rica y Panama), lo que podria indicar un proposito de modelado de esa lengua de bajos recursos, pero se trata de una especulacion no confirmada por el autor.
 
@@ -43,7 +43,7 @@ Dada la ausencia de documentacion, los casos de uso son hipoteticos y requieren 
 - Prototipado rapido en local: su tamano reducido (0,2 GB de repositorio) permite cargarlo en equipos con recursos limitados para pruebas exploratorias de generacion de texto.
 - Investigacion sobre modelos comunitarios pequenos: util como objeto de estudio para analizar el comportamiento de modelos sin model card ni evaluacion publica.
 - Filtrado y clasificacion de texto simple: si el modelo funciona como modelo de lenguaje causal, podria adaptarse mediante prompting a tareas de etiquetado, siempre que las pruebas confirmen coherencia.
-- Educacion y divulgacion: puede servir como ejemplo practico de publicacion de pesos en HuggingFace y de la importancia de documentar modelos.
+- Educacion y divulgacion: puede servir como ejemplo practico de publicacion de pesos en Hugging Face y de la importancia de documentar modelos.
 - Base para fine-tuning experimental: al estar en dominio publico (Unlicense), puede modificarse y redistribuirse sin restricciones, lo que facilita experimentos de ajuste con datos propios.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/monli111/Bribri
+- Hugging Face: https://huggingface.co/monli111/Bribri
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

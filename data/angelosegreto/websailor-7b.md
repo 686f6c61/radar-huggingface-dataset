@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WebSailor-7B es un modelo de lenguaje publicado en HuggingFace por el usuario ANGELOSEGRETO bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 7.615 millones de parametros (7,6B) almacenado en formato safetensors, con un repositorio de 15,2 GB, lo que es coherente con pesos en precision de 16 bits. La etiqueta de arquitectura declarada es `qwen2`, lo que indica que deriva de la familia Qwen2 de Alibaba, aunque no se documenta si se trata de un ajuste fino, un继续 entrenamiento o un modelo entrenado desde cero.
+WebSailor-7B es un modelo de lenguaje publicado en Hugging Face por el usuario ANGELOSEGRETO bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 7.615 millones de parametros (7,6B) almacenado en formato safetensors, con un repositorio de 15,2 GB, lo que es coherente con pesos en precision de 16 bits. La etiqueta de arquitectura declarada es `qwen2`, lo que indica que deriva de la familia Qwen2 de Alibaba, aunque no se documenta si se trata de un ajuste fino, un继续 entrenamiento o un modelo entrenado desde cero.
 
 La relevancia de esta ficha es limitada por la ausencia casi total de documentacion: la model card publicada contiene unicamente el campo `license: apache-2.0`, sin descripcion, sin datos de entrenamiento, sin benchmarks y sin indicacion de idiomas soportados. El modelo registra 0 descargas y 0 likes en el momento de la consulta, y la busqueda web realizada no ha devuelto ningun resultado relacionado (los enlaces recuperados corresponden a paginas de inicio de sesion de Facebook, sin relacion con el modelo). Cualquier evaluacion practica requerira por tanto inspeccionar los pesos y ejecutar pruebas propias.
 
@@ -94,7 +94,7 @@ Nota: los datos de los modelos alternativos se incluyen solo a efectos de encuad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ANGELOSEGRETO/WebSailor-7B
+- Hugging Face: https://huggingface.co/ANGELOSEGRETO/WebSailor-7B
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

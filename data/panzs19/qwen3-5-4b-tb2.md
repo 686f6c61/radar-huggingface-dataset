@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-TB2 es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario panzs19 en HuggingFace. Se trata de un checkpoint de entrenamiento del pipeline "AgentCoT Horizon" (paso 146), exportado desde Megatron-SWIFT con el exportador oficial de HuggingFace y con pesos de inferencia en BF16. El modelo está orientado a tareas de agente y razonamiento multi-paso, con etiquetas que apuntan a Terminal-Bench y a "agentcot" (chain-of-thought para agentes).
+Qwen3.5-4B-TB2 es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario panzs19 en Hugging Face. Se trata de un checkpoint de entrenamiento del pipeline "AgentCoT Horizon" (paso 146), exportado desde Megatron-SWIFT con el exportador oficial de Hugging Face y con pesos de inferencia en BF16. El modelo está orientado a tareas de agente y razonamiento multi-paso, con etiquetas que apuntan a Terminal-Bench y a "agentcot" (chain-of-thought para agentes).
 
 El modelo conserva la arquitectura del Qwen3.5-4B original (familia Qwen3.5, pipeline image-text-to-text según los tags, aunque la model card lo declara como text-generation) y cuenta con 4.539.265.536 parámetros totales según los safetensors del repositorio. El tamaño del repo es de 9,1 GB, coherente con pesos en BF16 de un modelo de ~4,5B parámetros.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada por el momento: es un checkpoint de investigación con
 
 El modelo es un ajuste fino del Qwen/Qwen3.5-4B, por lo que hereda la arquitectura transformer de la familia Qwen3.5. La model card no detalla la arquitectura interna (número de capas, dimensión oculta, mecanismo de atención, etc.) ni si incorpora innovaciones como atención lineal o decodificación especulativa. El tag `image-text-to-text` sugiere capacidades multimodales heredadas del modelo base, aunque la model card solo declara `text-generation` como pipeline.
 
-El entrenamiento corresponde al checkpoint 146 del pipeline "AgentCoT Horizon", exportado desde Megatron-SWIFT. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO u otras. El checkpoint nativo de entrenamiento, incluyendo estado del optimizador y RNG, permanece en el almacenamiento original de entrenamiento; el repositorio contiene únicamente el modelo de inferencia en formato HuggingFace. La orientación a "agentcot" y Terminal-Bench sugiere un entrenamiento centrado en razonamiento de agentes y uso de terminal, pero no se aportan detalles sobre la metodología.
+El entrenamiento corresponde al checkpoint 146 del pipeline "AgentCoT Horizon", exportado desde Megatron-SWIFT. No se especifican en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se emplearon técnicas de RLHF, DPO u otras. El checkpoint nativo de entrenamiento, incluyendo estado del optimizador y RNG, permanece en el almacenamiento original de entrenamiento; el repositorio contiene únicamente el modelo de inferencia en formato Hugging Face. La orientación a "agentcot" y Terminal-Bench sugiere un entrenamiento centrado en razonamiento de agentes y uso de terminal, pero no se aportan detalles sobre la metodología.
 
 ## Capacidades
 
@@ -64,8 +64,8 @@ La model card indica que la evaluación en Terminal-Bench 2.0 (Harbor y Terminus
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B-TB2 | 4,54B | 262144 en evaluacion (nativo no disponible) | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B (base) | ~4B (no confirmado) | no disponible | no disponible | HuggingFace |
+| Qwen3.5-4B-TB2 | 4,54B | 262144 en evaluacion (nativo no disponible) | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B (base) | ~4B (no confirmado) | no disponible | no disponible | Hugging Face |
 | Alternativas de ~4B para agentes | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de especificaciones detalladas de alternativas en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/panzs19/Qwen3.5-4B-TB2
+- Hugging Face: https://huggingface.co/panzs19/Qwen3.5-4B-TB2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Terminal-Bench: no disponible en la información proporcionada
 - Megatron-SWIFT: no disponible en la información proporcionada

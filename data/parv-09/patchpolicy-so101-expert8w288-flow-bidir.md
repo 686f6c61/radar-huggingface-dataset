@@ -93,5 +93,5 @@ Entre los tres brazos con flow matching, el transformer Patch Policy supera a am
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Parv-09/patchpolicy-so101-expert8w288-flow-bidir
+- Hugging Face: https://huggingface.co/Parv-09/patchpolicy-so101-expert8w288-flow-bidir
 - Repo compañero con código e `infer.py`: no disponible en la información proporcionada.

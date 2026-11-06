@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 ## Requisitos de hardware
 
 - El entrenamiento del LoRA se realizó en una GPU H200 (aproximadamente 3,9 horas). Para inferencia no se especifican requisitos de VRAM en la documentación.
-- El despliegue principal documentado es a través de la API de fal, en el endpoint `minimax/h3/text-to-video/lora`, que requiere una clave de fal y acepta el LoRA como un archivo safetensors alojado en HuggingFace.
+- El despliegue principal documentado es a través de la API de fal, en el endpoint `minimax/h3/text-to-video/lora`, que requiere una clave de fal y acepta el LoRA como un archivo safetensors alojado en Hugging Face.
 - El adaptador en sí es ligero (0,2 GB), pero el modelo base MiniMax-H3 es de gran tamaño; no se indica si es posible ejecutarlo en GPUs de consumo.
 - La ruta `minimax/h3-max` (turbo de 8 pasos) no fue evaluada, por lo que no se recomienda para este LoRA.
 - No se proporcionan datos de latencia ni throughput.

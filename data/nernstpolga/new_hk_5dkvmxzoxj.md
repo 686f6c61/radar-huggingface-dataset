@@ -4,7 +4,7 @@
 
 El modelo `nernstpolga/new_hk_5dkvmxzoxj` es un modelo de lenguaje multimodal de 35.107 millones de parámetros desarrollado por el autor `nernstpolga`, basado en el modelo `vera6/affine-5g4yy75zuz-t6` y fine-tuneado con técnicas de DPO offline. La arquitectura declarada en los tags es `qwen3_5_moe`, lo que indica una mezcla de expertos (MoE) dentro de la familia Qwen 3.5, con capacidad de procesamiento de texto e imágenes (image-text-to-text). El modelo está pensado para generación de texto conversacional y razonamiento, con tags que sugieren un modo de razonamiento ("reason-v4") y compatibilidad con endpoints de despliegue.
 
-Aunque el repositorio es reciente (creado en agosto de 2026) y no registra descargas ni likes, su licencia Apache 2.0 permite uso comercial sin restricciones. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de descargarlo. El tamaño del repositorio es de 70.2 GB, lo que sugiere que los pesos se distribuyen en formato safetensors (el único formato declarado en los tags). La información disponible no especifica la longitud de contexto, los parámetros activos ni los idiomas soportados, por lo que estos datos se indican como no disponibles.
+Aunque el repositorio es reciente (creado en agosto de 2026) y no registra descargas ni likes, su licencia Apache 2.0 permite uso comercial sin restricciones. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de descargarlo. El tamaño del repositorio es de 70.2 GB, lo que sugiere que los pesos se distribuyen en formato safetensors (el único formato declarado en los tags). La información disponible no especifica la longitud de contexto, los parámetros activos ni los idiomas soportados, por lo que estos datos se indican como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -70,12 +70,12 @@ La comparación con modelos de la misma categoría (MoE multimodal) es limitada 
 - **Contexto limitado desconocido**: sin conocer la longitud de contexto, no se puede garantizar el manejo de documentos largos o conversaciones extensas.
 - **Idiomas no especificados**: no se declara qué idiomas soporta; es posible que el rendimiento en español sea inferior al inglés si el entrenamiento fue mayoritariamente en inglés.
 - **Licencia Apache 2.0**: permite uso comercial, pero hay que citar la atribución y no se puede usar para reclamar patentes sobre el modelo.
-- **Acceso restringido**: al ser un modelo gated, hay que aceptar las condiciones de HuggingFace; esto puede limitar su uso en entornos corporativos con políticas de acceso.
+- **Acceso restringido**: al ser un modelo gated, hay que aceptar las condiciones de Hugging Face; esto puede limitar su uso en entornos corporativos con políticas de acceso.
 - **Sin cuantizaciones publicadas**: no se ofrecen versiones GGUF o AWQ, lo que dificulta el despliegue en hardware de consumo.
 
 ## Enlaces
 
-- [HuggingFace: nernstpolga/new_hk_5dkvmxzoxj](https://huggingface.co/nernstpolga/new_hk_5dkvmxzoxj)
+- [Hugging Face: nernstpolga/new_hk_5dkvmxzoxj](https://huggingface.co/nernstpolga/new_hk_5dkvmxzoxj)
 - Modelo base: [vera6/affine-5g4yyguz-t6](https://huggingface.co/vera6/affine-5g4yyguz-t6) (no se ha encontrado el enlace directo en la información)
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`boss11121121/cat` es un repositorio de modelo alojado en HuggingFace por el usuario `boss11121121`. En el momento de redactar esta ficha, la model card publicada no contiene mas contenido que la declaracion de licencia (`license: openrail`), sin descripcion, sin arquitectura declarada, sin especificaciones de tamano ni de contexto, y sin ejemplos de uso. El repositorio registra cero descargas y cero likes, y su fecha de creacion y ultima actualizacion coinciden (17 de octubre de 2026), lo que indica que no ha habido revisiones posteriores a la publicacion inicial.
+`boss11121121/cat` es un repositorio de modelo alojado en Hugging Face por el usuario `boss11121121`. En el momento de redactar esta ficha, la model card publicada no contiene mas contenido que la declaracion de licencia (`license: openrail`), sin descripcion, sin arquitectura declarada, sin especificaciones de tamano ni de contexto, y sin ejemplos de uso. El repositorio registra cero descargas y cero likes, y su fecha de creacion y ultima actualizacion coinciden (17 de octubre de 2026), lo que indica que no ha habido revisiones posteriores a la publicacion inicial.
 
 No es posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, multimodal) ni que arquitectura emplea. La unica etiqueta funcional ademas de la licencia es `region:us`, que hace referencia a la region de disponibilidad del repositorio y no aporta informacion tecnica sobre el modelo.
 
@@ -58,7 +58,7 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| boss11121121/cat | no disponible | no disponible | openrail | HuggingFace | Sin documentacion tecnica publicada |
+| boss11121121/cat | no disponible | no disponible | openrail | Hugging Face | Sin documentacion tecnica publicada |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se pueden determinar sin conocer la categoria del modelo |
 
 ## Limitaciones y advertencias
@@ -74,5 +74,5 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/boss11121121/cat
+- Hugging Face: https://huggingface.co/boss11121121/cat
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

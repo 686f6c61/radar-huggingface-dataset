@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Patoni31/md7, publicado por el usuario Patoni31 en HuggingFace, no contiene informacion tecnica verificable sobre ningun modelo de inteligencia artificial. Su unica etiqueta es region:us, no declara pipeline, licencia ni idiomas, y acumula 0 descargas y 0 likes desde su creacion el 19 de septiembre de 2026 (fecha tal como figura en los metadatos del repositorio). No hay pesos, configuracion, tokenizador ni documentacion de arquitectura descritos en la informacion disponible.
+El repositorio Patoni31/md7, publicado por el usuario Patoni31 en Hugging Face, no contiene informacion tecnica verificable sobre ningun modelo de inteligencia artificial. Su unica etiqueta es region:us, no declara pipeline, licencia ni idiomas, y acumula 0 descargas y 0 likes desde su creacion el 19 de septiembre de 2026 (fecha tal como figura en los metadatos del repositorio). No hay pesos, configuracion, tokenizador ni documentacion de arquitectura descritos en la informacion disponible.
 
 La model card no describe un modelo: es un texto promocional en ingles sobre un juego de apuestas tipo crash ("Aviator"), con un enlace externo a un sitio de apuestas con criptomonedas. No menciona parametros, contexto, datos de entrenamiento, benchmarks ni licencia. Este patron es habitual en repositorios creados unicamente para posicionamiento SEO o distribucion de enlaces, no para publicar artefactos de aprendizaje automatico.
 
@@ -75,6 +75,6 @@ No disponible. No se puede identificar una categoria de comparacion (tamano, tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Patoni31/md7
+- Repositorio en Hugging Face: https://huggingface.co/Patoni31/md7
 - Enlace externo incluido en la model card (sitio de apuestas, no relacionado con IA; se reproduce solo a efectos de trazabilidad y se desaconseja su visita): https://aviator-crypto.uk/
 - Resultados de busqueda web: no relevantes. Las entradas recuperadas apuntan a paginas corporativas y de cuenta de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, microsoft.com/microsoft-365 y la entrada de Wikipedia sobre Microsoft) y no guardan ninguna relacion con el repositorio Patoni31/md7 ni con un modelo de IA.

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Params totales | Params activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-30B-A3B-Thinking-2507 (base) | 30B | 3B | 131K (según paper) | Apache 2.0 | HuggingFace |
-| Qwen3-30B-A3B (sin thinking) | 30B | 3B | 131K (según paper) | Apache 2.0 | HuggingFace |
-| Mixtral 8x7B | 46.7B | 12.9B | 32K | Apache 2.0 | HuggingFace |
-| Qwen2.5-32B (denso) | 32B | 32B | 128K | Apache 2.0 | HuggingFace |
+| Qwen3-30B-A3B-Thinking-2507 (base) | 30B | 3B | 131K (según paper) | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B (sin thinking) | 30B | 3B | 131K (según paper) | Apache 2.0 | Hugging Face |
+| Mixtral 8x7B | 46.7B | 12.9B | 32K | Apache 2.0 | Hugging Face |
+| Qwen2.5-32B (denso) | 32B | 32B | 128K | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto de los modelos Qwen3 se basan en el paper técnico, no en la model card de esta conversión. La conversión KerasFormers es una implementación adicional, no un modelo distinto.
 
@@ -81,7 +81,7 @@ Nota: los datos de contexto de los modelos Qwen3 se basan en el paper técnico, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/qwen3-30b-a3b-thinking-2507
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/qwen3-30b-a3b-thinking-2507
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507
 - Proyecto KerasFormers (GitHub): https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3 en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3/

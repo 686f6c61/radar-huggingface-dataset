@@ -54,7 +54,7 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-1137m-step7367
+- Repositorio Hugging Face: https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-1137m-step7367
 - Repositorio relacionado (checkpoint anterior): https://huggingface.co/arianraje/mimo-7b-gdn-hybrid-200M-OPD
 - Repositorio relacionado (otro checkpoint): https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-937m-step6060
 - Paper de MiMo-7B (arXiv): https://arxiv.org/html/2505.07608v1

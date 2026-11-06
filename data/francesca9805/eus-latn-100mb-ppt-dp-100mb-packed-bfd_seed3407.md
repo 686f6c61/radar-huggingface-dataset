@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/eus_latn_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de pequeno tamano, con 124.770.816 parametros (aproximadamente 124,8 millones), construido sobre una arquitectura de tipo GPT-2 y entrenado con la libreria TRL (Transformer Reinforcement Learning) de HuggingFace. Su tamano reducido lo situa en la categoria de modelos "small", orientados a experimentacion academica mas que a despliegues de produccion.
+El modelo `francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/eus_latn_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de pequeno tamano, con 124.770.816 parametros (aproximadamente 124,8 millones), construido sobre una arquitectura de tipo GPT-2 y entrenado con la libreria TRL (Transformer Reinforcement Learning) de Hugging Face. Su tamano reducido lo situa en la categoria de modelos "small", orientados a experimentacion academica mas que a despliegues de produccion.
 
 El identificador del modelo apunta a un experimento sobre euskera (el sufijo `eus_latn` hace referencia al euskera en escritura latina) y a un corpus de aproximadamente 100 MB, con variantes que aluden a tareas de tipo Dyck (lenguajes formales) y a un empaquetado de datos concreto (`packed-bfd`) y una semilla fija (`seed3407`). Esta nomenclatura es caracteristica de los experimentos de investigacion sobre tokenizacion y aprendizaje de estructuras formales realizados en torno a la familia `goldfish-models`.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace (146 descargas) | SFT sobre goldfish-models/eus_latn_100mb |
-| goldfish-models/eus_latn_100mb | ~124,8 M | no disponible | no disponible | HuggingFace | Modelo base del anterior |
-| fpadovani/eus-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed3407 | ~124,8 M | no disponible | no disponible | HuggingFace | Variante experimental relacionada |
-| fpadovani/eus-latn-100mb-ppt-shuff-dyck-10mb_seed10 | 124,8 M | no disponible | no disponible | HuggingFace / LLM Explorer | Variante con datos Dyck barajados |
+| francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face (146 descargas) | SFT sobre goldfish-models/eus_latn_100mb |
+| goldfish-models/eus_latn_100mb | ~124,8 M | no disponible | no disponible | Hugging Face | Modelo base del anterior |
+| fpadovani/eus-latn-100mb-after-ppt-Dp-10mb-ckpt500_seed3407 | ~124,8 M | no disponible | no disponible | Hugging Face | Variante experimental relacionada |
+| fpadovani/eus-latn-100mb-ppt-shuff-dyck-10mb_seed10 | 124,8 M | no disponible | no disponible | Hugging Face / LLM Explorer | Variante con datos Dyck barajados |
 
 Los modelos comparables pertenecen a la misma familia experimental (goldfish-models y variantes de fpadovani) y comparten arquitectura y tamano; las diferencias radican en el dataset de ajuste, el empaquetado de datos y la semilla. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
 
@@ -87,7 +87,7 @@ Los modelos comparables pertenecen a la misma familia experimental (goldfish-mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eus_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ya6ok5rw

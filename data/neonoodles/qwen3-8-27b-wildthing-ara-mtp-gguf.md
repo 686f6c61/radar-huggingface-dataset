@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wildthing ARA MTP es una cuantización GGUF derivada de Qwen/Qwen3.8-27B, publicada por el usuario neonoodles en HuggingFace. Se trata de un modelo de 27.320.697.856 parámetros (unos 27,3 mil millones) distribuido principalmente en formato GGUF para su uso con llama.cpp, y que incorpora en su nombre y en sus etiquetas dos modificaciones destacadas: ARA (abliterated/decensored, es decir, con las capas de rechazo mitigadas) y MTP (multi-token prediction, orientado a decodificación especulativa).
+Wildthing ARA MTP es una cuantización GGUF derivada de Qwen/Qwen3.8-27B, publicada por el usuario neonoodles en Hugging Face. Se trata de un modelo de 27.320.697.856 parámetros (unos 27,3 mil millones) distribuido principalmente en formato GGUF para su uso con llama.cpp, y que incorpora en su nombre y en sus etiquetas dos modificaciones destacadas: ARA (abliterated/decensored, es decir, con las capas de rechazo mitigadas) y MTP (multi-token prediction, orientado a decodificación especulativa).
 
 El modelo base es Qwen/Qwen3.8-27B, pero el repositorio no documenta la arquitectura interna, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. Las etiquetas incluyen heretic, abliterated, uncensored y decensored, lo que sitúa la ficha en la categoría de fine-tunes «sin censura» orientados a generación de texto en inglés, sin alineación de seguridad convencional.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada pero concreta: es un ejemplo de modelo local de ~27B e
 | Formato de pesos | GGUF (librería `gguf`); el repositorio incluye también la etiqueta `safetensors` |
 | Modelo base | Qwen/Qwen3.8-27B |
 | Autor | neonoodles (tercero, no el desarrollador del modelo base) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 30,2 GB |
 | Fecha de creación / actualización | 2026-09-07 / 2026-09-11 |
 | Descargas / likes | 86 / 0 |
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 - Idiomas: solo se declara inglés. No hay soporte multilingüe confirmado.
 - Contexto: la longitud de contexto es desconocida, lo que impide planificar despliegues con ventanas largas.
 - Licencia: el repositorio declara apache-2.0, pero al ser un derivado de Qwen/Qwen3.8-27B la licencia del modelo base podría imponer condiciones adicionales. La compatibilidad entre ambas no está documentada y conviene verificarla antes de un uso comercial.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos, lo que complica la automatización de despliegues y la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos, lo que complica la automatización de despliegues y la reproducibilidad.
 - Validación comunitaria nula: 86 descargas y 0 «likes» desde septiembre de 2026. No hay informes de terceros sobre calidad, estabilidad ni comportamiento.
 - Fiabilidad del etiquetado: el término «ARA» del nombre no está definido en la información disponible, por lo que no puede confirmarse qué modificación concreta representa.
 - Soporte de MTP: la decodificación especulativa con cabezas multi-token depende de que el runtime concreto (versión de llama.cpp) implemente el mecanismo; puede no funcionar en otras herramientas o degradar la calidad si el borrador acierta poco.
@@ -102,6 +102,6 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neonoodles/Qwen3.8-27B-Wildthing-ARA-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/neonoodles/Qwen3.8-27B-Wildthing-ARA-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Papers, blogs, repositorios o demos adicionales: no se han encontrado en la búsqueda web realizada. Los resultados devueltos corresponden a foros de televisión en alemán y no guardan relación con el modelo.

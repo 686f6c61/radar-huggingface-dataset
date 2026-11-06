@@ -123,7 +123,7 @@ La comparacion relevante es contra el modelo base y contra los quants sin modifi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/MiniCPM-V-4.7-35B-A3B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/MiniCPM-V-4.7-35B-A3B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Quants sin modificar del mismo autor: https://huggingface.co/AtomicChat/MiniCPM-V-4.7-35B-A3B-GGUF
 - Dataset de metricas de la model card: https://huggingface.co/datasets/AtomicChat/MiniCPM-V-4.7-35B-A3B-Uncensored-GGUF-metrics

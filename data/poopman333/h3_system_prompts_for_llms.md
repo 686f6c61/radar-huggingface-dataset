@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `PoopMan333/H3_System_Prompts_for_LLMs` alojado en HuggingFace no dispone de información pública que permita identificar sus características técnicas. No se han publicado datos sobre arquitectura, tamaño, parámetros, contexto, licencia, idiomas ni pipeline de uso. El nombre sugiere que podría tratarse de un conjunto de prompts de sistema destinados a mejorar el comportamiento de modelos de lenguaje, pero no existe documentación, benchmarks ni ejemplos de uso que lo confirmen.
+El repositorio `PoopMan333/H3_System_Prompts_for_LLMs` alojado en Hugging Face no dispone de información pública que permita identificar sus características técnicas. No se han publicado datos sobre arquitectura, tamaño, parámetros, contexto, licencia, idiomas ni pipeline de uso. El nombre sugiere que podría tratarse de un conjunto de prompts de sistema destinados a mejorar el comportamiento de modelos de lenguaje, pero no existe documentación, benchmarks ni ejemplos de uso que lo confirmen.
 
 La ficha técnica que se presenta a continuación refleja esta ausencia de datos. Todas las especificaciones se indican como no disponibles, siguiendo el principio de no inventar información. Cualquier evaluación o despliegue de este modelo requeriría primero obtener datos verificables de su autor o de la comunidad.
 
@@ -71,4 +71,4 @@ No se dispone de información suficiente para comparar este repositorio con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PoopMan333/H3_System_Prompts_for_LLMs
+- Hugging Face: https://huggingface.co/PoopMan333/H3_System_Prompts_for_LLMs

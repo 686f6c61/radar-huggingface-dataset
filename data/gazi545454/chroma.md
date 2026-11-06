@@ -88,7 +88,7 @@ Nota: los datos de FLUX.1-schnell, FLUX.1-dev y SDXL corresponden a informacion 
 
 ## Enlaces
 
-- HuggingFace del repositorio analizado: https://huggingface.co/Gazi545454/Chroma
+- Hugging Face del repositorio analizado: https://huggingface.co/Gazi545454/Chroma
 - Repositorio original (referenciado en la model card): https://huggingface.co/lodestones/Chroma
 - Repo de debug de entrenamiento: https://huggingface.co/lodestones/chroma-debug-development-only
 - Logs de entrenamiento en vivo: https://training.lodestone-rock.com

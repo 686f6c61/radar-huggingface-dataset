@@ -67,8 +67,8 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/dimitry-none/Qwen3.8-23B-Mini-Me-bf16-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/dimitry-none/Qwen3.8-23B-Mini-Me-bf16-Q4_K_M-GGUF
 - Modelo base (bf16): https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-bf16
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Herramienta GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

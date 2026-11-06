@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eoinf/synthetic_components_power_decay_200m... | No disponible (d_model 2-64) | 256 | Rejilla experimental sintética | No disponible | HuggingFace, 0 descargas |
+| eoinf/synthetic_components_power_decay_200m... | No disponible (d_model 2-64) | 256 | Rejilla experimental sintética | No disponible | Hugging Face, 0 descargas |
 | GPT-2 small (referencia) | 124 M | 1024 | LM de propósito general | MIT | Amplia |
 | TinyLlama (referencia) | 1,1 B | 2048 | LM de propósito general | Apache 2.0 | Amplia |
 | Pythia-70M (referencia) | 70 M | 2048 | Suite de investigación | Apache 2.0 | Amplia |
@@ -83,6 +83,6 @@ La comparación es solo orientativa: los modelos de referencia son de propósito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/synthetic_components_power_decay_200m_dmodel2_4_6_8_16_32_64_seeds00_01
+- Hugging Face: https://huggingface.co/eoinf/synthetic_components_power_decay_200m_dmodel2_4_6_8_16_32_64_seeds00_01
 - Repositorio de código citado en la model card: `synthetic_trigrams` (no se proporciona URL en la información disponible)
 - Paper, blog, demo o repositorio adicional: no disponible

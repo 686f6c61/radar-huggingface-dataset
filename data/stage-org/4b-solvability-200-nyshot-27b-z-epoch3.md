@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Stage-org/4b-solvability-200-nyshot-27b-z-epoch3` | ~4,54 B | 65.536 (`max_model_len`) | no disponible | no disponible | safetensors en HuggingFace |
-| `Qwen/Qwen3.5-4B` (modelo base) | ~4 B (declarado en la configuracion) | no disponible | no disponible | no disponible | HuggingFace |
+| `Stage-org/4b-solvability-200-nyshot-27b-z-epoch3` | ~4,54 B | 65.536 (`max_model_len`) | no disponible | no disponible | safetensors en Hugging Face |
+| `Qwen/Qwen3.5-4B` (modelo base) | ~4 B (declarado en la configuracion) | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de ~4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa de rendimiento con modelos de la misma categoria.
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para establecer una comparativa de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-solvability-200-nyshot-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-solvability-200-nyshot-27b-z-epoch3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento (referenciado en la model card): `Stage-org/4b-solvability-200-nyshot-27b-z`
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web disponible.

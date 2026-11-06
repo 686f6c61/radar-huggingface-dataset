@@ -63,7 +63,7 @@ No disponible. Este repositorio no contiene un modelo comparable con otros. Si s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rinasution/paper_025262440_3d_scene_understanding
+- Repositorio en Hugging Face: https://huggingface.co/Rinasution/paper_025262440_3d_scene_understanding
 - Awesome Scene Understanding (GitHub): https://github.com/bertjiazheng/awesome-scene-understanding
 - SceneGPT: A Language Model for 3D Scene Understanding (arXiv): https://arxiv.org/abs/2408.06926
 - Generation Models Know Space (arXiv): https://arxiv.org/abs/2603.19235

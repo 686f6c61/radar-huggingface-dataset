@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QeyPoint Face es un modelo de deteccion de puntos faciales (facial landmarks) desarrollado por el usuario qvx-o bajo el sello Qarvexium, publicado en HuggingFace. Se trata de un detector de 106 keypoints faciales disenado para inferencia en tiempo real tanto en CPU como en GPU, con un backbone tipo U-Net encoder-decoder con bloques residuales y una etapa final de soft-argmax espacial para obtener precision subpixel. El modelo resuelve el problema clasico de la alineacion y el seguimiento facial en aplicaciones de vision por computador.
+QeyPoint Face es un modelo de deteccion de puntos faciales (facial landmarks) desarrollado por el usuario qvx-o bajo el sello Qarvexium, publicado en Hugging Face. Se trata de un detector de 106 keypoints faciales disenado para inferencia en tiempo real tanto en CPU como en GPU, con un backbone tipo U-Net encoder-decoder con bloques residuales y una etapa final de soft-argmax espacial para obtener precision subpixel. El modelo resuelve el problema clasico de la alineacion y el seguimiento facial en aplicaciones de vision por computador.
 
 Con solo 3.090.634 parametros (aproximadamente 12 MB de pesos), el modelo esta pensado para entornos con recursos limitados: alcanza entre 15 y 30 FPS en CPU y mas de 60 FPS en GPUs modernas, con una latencia inferior a 50 ms por fotograma en GPU. Incorpora deteccion automatica de rostro mediante cascadas Haar de OpenCV y un mecanismo de suavizado temporal para estabilizar el seguimiento en video.
 
@@ -77,7 +77,7 @@ No se proporcionan metricas de precision (por ejemplo NME, error medio de landma
 
 | Modelo | Puntos faciales | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QeyPoint Face | 106 | 3.090.634 | MIT | HuggingFace (qvx-o/QeyPoint-Face) |
+| QeyPoint Face | 106 | 3.090.634 | MIT | Hugging Face (qvx-o/QeyPoint-Face) |
 | MediaPipe Face Mesh (Google) | 468 (hasta 478 con iris) | no disponible | Apache 2.0 (aproximado, verificar) | MediaPipe / Google |
 | Dlib shape predictor (68 puntos) | 68 | no disponible | Boost Software License (aproximado, verificar) | dlib.net |
 
@@ -97,5 +97,5 @@ Nota: los datos de MediaPipe Face Mesh y dlib se incluyen como referencia de cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qvx-o/QeyPoint-Face
+- Hugging Face: https://huggingface.co/qvx-o/QeyPoint-Face
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios o demos.

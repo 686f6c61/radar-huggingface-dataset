@@ -97,7 +97,7 @@ Frente a modelos densos de tamano similar en otros formatos (por ejemplo, el pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-4bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Variante de 8 bits: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-8bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/DeepSeek-R1-Distill-Qwen-7B-chat-mlx-16bit

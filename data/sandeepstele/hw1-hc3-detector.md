@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw1-hc3-detector es un clasificador de texto binario desarrollado por el usuario de HuggingFace sandeepstele como entrega de la asignatura CS546. Se trata de un fine-tuning del encoder `sentence-transformers/all-MiniLM-L6-v2` (22.713.986 parámetros) para distinguir respuestas escritas por humanos de respuestas generadas por ChatGPT dentro del corpus HC3 (Human ChatGPT Comparison Corpus). La etiqueta de salida es simple: 0 = humano, 1 = ChatGPT.
+hw1-hc3-detector es un clasificador de texto binario desarrollado por el usuario de Hugging Face sandeepstele como entrega de la asignatura CS546. Se trata de un fine-tuning del encoder `sentence-transformers/all-MiniLM-L6-v2` (22.713.986 parámetros) para distinguir respuestas escritas por humanos de respuestas generadas por ChatGPT dentro del corpus HC3 (Human ChatGPT Comparison Corpus). La etiqueta de salida es simple: 0 = humano, 1 = ChatGPT.
 
 El modelo resuelve una tarea muy acotada: clasificación de secuencias de una sola clase de entrada (el texto de la respuesta), en inglés, sin generación de texto ni capacidades conversacionales. Su interés es principalmente académico y metodológico, ya que la model card reporta una accuracy del 99,08% sobre el split de test de HC3 (4668 respuestas), frente al 84,49% de una línea base que usa embeddings congelados más regresión logística.
 
@@ -23,7 +23,7 @@ Es relevante precisamente por lo que advierte su propia documentación: HC3 es u
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un encoder transformer de 6 capas heredado de `all-MiniLM-L6-v2`, un modelo de sentence embeddings destilado a partir de BERT. Sobre ese encoder se anade la cabeza de clasificacion de secuencias estandar de HuggingFace (una proyeccion lineal sobre el token [CLS]), y se entrena todo el conjunto con perdida de entropia cruzada. La entrada es unicamente el texto de la respuesta; no se usa la pregunta ni metadatos adicionales.
+La arquitectura es un encoder transformer de 6 capas heredado de `all-MiniLM-L6-v2`, un modelo de sentence embeddings destilado a partir de BERT. Sobre ese encoder se anade la cabeza de clasificacion de secuencias estandar de Hugging Face (una proyeccion lineal sobre el token [CLS]), y se entrena todo el conjunto con perdida de entropia cruzada. La entrada es unicamente el texto de la respuesta; no se usa la pregunta ni metadatos adicionales.
 
 El entrenamiento se hizo sobre el dataset HC3 en ingles, revision fijada `4d0ff18`, con una respuesta humana y una respuesta de ChatGPT por pregunta, y un split a nivel de pregunta 80/10/10 con semilla 42. Se aplicaron 5 epocas con el optimizador AdamW, learning rate 2e-5, batch size 32 y max length 256. No se documenta RLHF, DPO ni ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.); es un fine-tuning supervisado convencional.
 
@@ -64,7 +64,7 @@ No se aportan otras metricas (F1, precision, recall, matriz de confusion) ni res
 - En fp16 el peso seria de aproximadamente 45 MB; no se documentan cuantizaciones oficiales.
 - Inferencia viable en CPU sin GPU dedicada, dado el tamano y la arquitectura tipo MiniLM.
 - Compatible con GPU consumer de gama baja y media (por ejemplo, GTX 1650, RTX 3060, RTX 4090); no requiere GPU de datacenter (A100, H100).
-- Opciones de despliegue: libreria `transformers` de HuggingFace, exportacion a ONNX, y servidores de inferencia que soporten modelos de clasificacion; no se documenta integracion especifica con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: libreria `transformers` de Hugging Face, exportacion a ONNX, y servidores de inferencia que soporten modelos de clasificacion; no se documenta integracion especifica con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone de informacion sobre detectores alternativos de mayor tamano (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeepstele/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/sandeepstele/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Organizacion Hello-SimpleAI (HC3 y detectores): https://github.com/Hello-SimpleAI

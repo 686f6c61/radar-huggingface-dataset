@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 
 | Modelo | Parametros | Idiomas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Goro64/Llama-Prompt-Guard-2-86M-vi-mirror-MinhNghia (este) | 278,8 M | vi, en | Clasificacion prompt injection | Llama 4 Community | HuggingFace, espejo archivistico |
-| meta-llama/Llama-Prompt-Guard-2-86M | no disponible en la informacion | en (principalmente) | Clasificacion prompt injection | Llama 4 Community | HuggingFace, upstream oficial |
-| MinhNghia/Llama-Prompt-Guard-2-86M-vi | no disponible en la informacion | vi, en | Clasificacion prompt injection | Llama 4 Community | HuggingFace, upstream del afinamiento |
+| Goro64/Llama-Prompt-Guard-2-86M-vi-mirror-MinhNghia (este) | 278,8 M | vi, en | Clasificacion prompt injection | Llama 4 Community | Hugging Face, espejo archivistico |
+| meta-llama/Llama-Prompt-Guard-2-86M | no disponible en la informacion | en (principalmente) | Clasificacion prompt injection | Llama 4 Community | Hugging Face, upstream oficial |
+| MinhNghia/Llama-Prompt-Guard-2-86M-vi | no disponible en la informacion | vi, en | Clasificacion prompt injection | Llama 4 Community | Hugging Face, upstream del afinamiento |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada, por lo que la comparativa se limita a parametros, idiomas, licencia y disponibilidad.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **AX-3.1-Light-success-consolidation-musr-corrected** es un fine-tuning LoRA del modelo base [`skt/AX-3.1-Light`](https://huggingface.co/skt/AX-3.1-Light), publicado en HuggingFace por el usuario `youngseok12`. El ajuste se ha realizado mediante supervisión y los pesos se han fusionado, de modo que el resultado es un modelo independiente en formato `safetensors`, sin necesidad de cargar un adaptador separado.
+El modelo **AX-3.1-Light-success-consolidation-musr-corrected** es un fine-tuning LoRA del modelo base [`skt/AX-3.1-Light`](https://huggingface.co/skt/AX-3.1-Light), publicado en Hugging Face por el usuario `youngseok12`. El ajuste se ha realizado mediante supervisión y los pesos se han fusionado, de modo que el resultado es un modelo independiente en formato `safetensors`, sin necesidad de cargar un adaptador separado.
 
 Según la información disponible, el objetivo del fine-tuning es mejorar las capacidades de **“success consolidation”** y **“MUSR”** (Multi-step Universal Self-consistency Reasoning), es decir, tareas que requieren consolidar información parcial y razonar de forma multi-paso manteniendo consistencia interna. No se proporcionan datos sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados en la información facilitada.
 

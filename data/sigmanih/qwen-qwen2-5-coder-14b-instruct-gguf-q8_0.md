@@ -16,7 +16,7 @@ El modelo original fue desarrollado por Alibaba Qwen y destaca por sus mejoras e
 | Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | Q8_0 (GGUF) |
 | Idiomas soportados | Inglés, italiano (según model card) |
-| Licencia | Other (según HuggingFace); el modelo base Qwen2.5-Coder-14B-Instruct es Apache-2.0 |
+| Licencia | Other (según Hugging Face); el modelo base Qwen2.5-Coder-14B-Instruct es Apache-2.0 |
 | Formato de pesos | GGUF (Q8_0) |
 
 ## Arquitectura y entrenamiento
@@ -99,13 +99,13 @@ No se dispone de benchmarks comparativos completos para los modelos alternativos
 - El rendimiento en razonamiento avanzado es limitado: GPQA con 22% y MMLU con 43% indican dificultades en tareas de nivel universitario y conocimiento general.
 - Riesgo de alucinación: TruthfulQA con 67% deja margen para respuestas incorrectas en contextos factuales.
 - El soporte de idiomas se limita a inglés e italiano según la model card; el uso en otros idiomas no está garantizado.
-- La licencia aparece como "other" en HuggingFace, lo que requiere verificar los términos exactos antes de un uso comercial.
+- La licencia aparece como "other" en Hugging Face, lo que requiere verificar los términos exactos antes de un uso comercial.
 - La cuantización Q8_0 puede introducir pequeñas diferencias de precisión respecto al modelo original en safetensors.
 - No se proporciona información sobre soporte de tool calling, function calling, ni sobre medidas de seguridad o alineación.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q8_0
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/Qwen-Qwen2.5-Coder-14B-Instruct-GGUF-Q8_0
 - Sigma Studio (GitHub): https://github.com/Sigmanih/SigmaStudio
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Cuantización GGUF oficial: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF

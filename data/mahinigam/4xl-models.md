@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mahinigam/4xl-models es un repositorio publicado en HuggingFace por el usuario mahinigam cuya model card no contiene ninguna descripcion tecnica: el unico contenido del README es el campo `license: mit`. Esto significa que no hay informacion publica sobre que es el modelo, que problema resuelve, ni cual es su proposito declarado. El repositorio esta etiquetado con `onnx` y `region:us`, ocupa 0,2 GB y acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion del 19 de septiembre de 2026 (el mismo dia, dos minutos de diferencia).
+mahinigam/4xl-models es un repositorio publicado en Hugging Face por el usuario mahinigam cuya model card no contiene ninguna descripcion tecnica: el unico contenido del README es el campo `license: mit`. Esto significa que no hay informacion publica sobre que es el modelo, que problema resuelve, ni cual es su proposito declarado. El repositorio esta etiquetado con `onnx` y `region:us`, ocupa 0,2 GB y acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion del 19 de septiembre de 2026 (el mismo dia, dos minutos de diferencia).
 
 Dado que no existe documentacion del autor, ni paper, ni blog, ni resultados de benchmarks, no es posible determinar la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. La unica informacion verificable es metadata de plataforma: licencia MIT, artefactos en formato ONNX y ausencia de pipeline declarado (`pipeline: no disponible`).
 
@@ -73,7 +73,7 @@ No disponible. Al desconocerse la arquitectura, el tamano y la tarea del modelo,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mahinigam/4xl-models | no disponible | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| mahinigam/4xl-models | no disponible | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No disponible. Al desconocerse la arquitectura, el tamano y la tarea del modelo,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mahinigam/4xl-models
+- Hugging Face: https://huggingface.co/mahinigam/4xl-models
 - Model card del autor: no contiene informacion tecnica (unicamente `license: mit`)
 - Paper: no disponible
 - Blog o anuncio: no disponible

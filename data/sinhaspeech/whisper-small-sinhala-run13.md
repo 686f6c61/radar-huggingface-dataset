@@ -74,10 +74,10 @@ El autor indica que el mejor resultado del proyecto corresponde a run12 (WER 15,
 
 | Modelo | Parametros | Contexto de audio | WER (sinhala) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SinhaSpeech/whisper-small-sinhala-run13 | 241,7M | 30 s | 17,08% (test propio) | Apache 2.0 | HuggingFace |
-| SinhaSpeech/whisper-small-sinhala-run12 | ~241,7M | 30 s | 15,52% (test propio) | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244M | 30 s | No disponible para sinhala | MIT | HuggingFace |
-| openai/whisper-large-v3 | 1.550M | 30 s | No disponible para sinhala | MIT | HuggingFace |
+| SinhaSpeech/whisper-small-sinhala-run13 | 241,7M | 30 s | 17,08% (test propio) | Apache 2.0 | Hugging Face |
+| SinhaSpeech/whisper-small-sinhala-run12 | ~241,7M | 30 s | 15,52% (test propio) | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244M | 30 s | No disponible para sinhala | MIT | Hugging Face |
+| openai/whisper-large-v3 | 1.550M | 30 s | No disponible para sinhala | MIT | Hugging Face |
 
 Nota: los WER de los modelos SinhaSpeech no son directamente comparables con los de otros sistemas ASR en sinhala al proceder de un unico conjunto de evaluacion propio del proyecto. No se dispone de resultados de otros modelos de sinhala en la informacion facilitada.
 
@@ -96,11 +96,11 @@ Nota: los WER de los modelos SinhaSpeech no son directamente comparables con los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SinhaSpeech/whisper-small-sinhala-run13
+- Modelo en Hugging Face: https://huggingface.co/SinhaSpeech/whisper-small-sinhala-run13
 - Historial de experimentos del proyecto: https://huggingface.co/SinhaSpeech/whisper-small-sinhala-experiments
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Checkpoint run12 (mejor del proyecto): https://huggingface.co/SinhaSpeech/whisper-small-sinhala-run12
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/SinhaSpeech/sinhala-asr-data-v6
 - Seguimiento de entrenamiento en W&B: https://wandb.ai/yohanj-23-university-of-moratuwa/whisper
 - Ejecucion de evaluacion en W&B: https://wandb.ai/yohanj-23-university-of-moratuwa/whisper/runs/1yl3onqg
-- Pagina del proyecto SinhaSpeech en HuggingFace: https://huggingface.co/SinhaSpeech
+- Pagina del proyecto SinhaSpeech en Hugging Face: https://huggingface.co/SinhaSpeech

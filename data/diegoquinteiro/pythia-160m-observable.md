@@ -79,9 +79,9 @@ La comparativa se limita a la variante del mismo tamaño dentro de la suite Pyth
 
 ## Enlaces
 
-- Modelo en HuggingFace: [diegoquinteiro/Pythia-160M-Observable](https://huggingface.co/diegoquinteiro/Pythia-160M-Observable)
+- Modelo en Hugging Face: [diegoquinteiro/Pythia-160M-Observable](https://huggingface.co/diegoquinteiro/Pythia-160M-Observable)
 - Modelo base: [EleutherAI/pythia-160m-deduped](https://huggingface.co/EleutherAI/pythia-160m-deduped)
 - Suite Pythia de EleutherAI: [EleutherAI/pythia-160m](https://huggingface.co/EleutherAI/pythia-160m)
 - Repositorio de Pythia en GitHub: [EleutherAI/pythia](https://github.com/EleutherAI/pythia)
 - Artefacto tuned-lens de AlignmentResearch: [AlignmentResearch/tuned-lens](https://huggingface.co/spaces/AlignmentResearch/tuned-lens)
-- Paper de Pythia (referencia en la página del modelo): no se proporciona enlace directo, pero se menciona en la documentación de HuggingFace.
+- Paper de Pythia (referencia en la página del modelo): no se proporciona enlace directo, pero se menciona en la documentación de Hugging Face.

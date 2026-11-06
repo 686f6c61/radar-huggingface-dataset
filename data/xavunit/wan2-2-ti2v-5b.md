@@ -68,8 +68,8 @@ No se dispone de datos comparativos directos en la información proporcionada. N
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xavunit/Wan2.2-TI2V-5B (espejo del original)
-- Repositorio oficial en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+- Repositorio en Hugging Face: https://huggingface.co/xavunit/Wan2.2-TI2V-5B (espejo del original)
+- Repositorio oficial en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Código en GitHub: https://github.com/Wan-Video/Wan2.2
 - Informe técnico: https://arxiv.org/abs/2503.20314
 - Página del proyecto: https://wan.video

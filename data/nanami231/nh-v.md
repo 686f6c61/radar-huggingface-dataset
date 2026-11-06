@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanami231/nh-v es un adaptador LoRA de tipo DreamBooth para generacion de imagen a partir de texto, publicado por el usuario Nanami231 en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se cargan sobre el modelo base Krea 2 (de Krea), en concreto sobre el checkpoint Krea-2-Raw para el entrenamiento y Krea-2-Turbo para la inferencia. La palabra de activacion definida por el autor es `Nhi`.
+Nanami231/nh-v es un adaptador LoRA de tipo DreamBooth para generacion de imagen a partir de texto, publicado por el usuario Nanami231 en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que se cargan sobre el modelo base Krea 2 (de Krea), en concreto sobre el checkpoint Krea-2-Raw para el entrenamiento y Krea-2-Turbo para la inferencia. La palabra de activacion definida por el autor es `Nhi`.
 
 El problema que resuelve es la personalizacion de un modelo de difusion texto-a-imagen: con este LoRA se puede inducir un estilo, una identidad o un concepto concreto sin necesidad de reentrenar el modelo completo. El repositorio ocupa 1,7 GB y los pesos se distribuyen en formato safetensors, lo que permite cargarlos con la libreria diffusers mediante `load_lora_weights`.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones de alternativas equ
 | Modelo base | Krea 2 (Raw para entrenamiento, Turbo para inferencia) | No disponible |
 | Rendimiento | Sin benchmarks publicados | No disponible |
 | Licencia | apache-2.0 | No disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta | No disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento ni de especificaciones de alternativas equ
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Nanami231/nh-v
+- Pagina del modelo en Hugging Face: https://huggingface.co/Nanami231/nh-v
 - Modelo base para entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base para inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio de archivos del LoRA: https://huggingface.co/Nanami231/nh-v/tree/main

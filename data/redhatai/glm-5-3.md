@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala publicado en HuggingFace por RedHatAI bajo el identificador `RedHatAI/GLM-5.3`. La model card y los enlaces de referencia apuntan a zai-org (Z.ai) como origen del modelo y del repositorio `zai-org/GLM-5`, del que esta ficha es una publicación espejo en formato fp8. Se trata de un transformer de tipo mezcla de expertos (MoE), identificado en los tags como `glm_moe_dsa`, con 753.329.940.480 parámetros totales (unos 753,3 mil millones) y un tamano de repositorio de 755,7 GB, coherente con pesos cuantizados a fp8.
+GLM-5.3 es un modelo de lenguaje de gran escala publicado en Hugging Face por RedHatAI bajo el identificador `RedHatAI/GLM-5.3`. La model card y los enlaces de referencia apuntan a zai-org (Z.ai) como origen del modelo y del repositorio `zai-org/GLM-5`, del que esta ficha es una publicación espejo en formato fp8. Se trata de un transformer de tipo mezcla de expertos (MoE), identificado en los tags como `glm_moe_dsa`, con 753.329.940.480 parámetros totales (unos 753,3 mil millones) y un tamano de repositorio de 755,7 GB, coherente con pesos cuantizados a fp8.
 
 La propuesta diferencial de GLM-5.3 no esta en el preentrenamiento: segun el autor, comparte modelo base con GLM-5.2 y todas las mejoras provienen del post-entrenamiento. El foco declarado son las tareas de codificacion compleja y de horizonte largo (long-horizon), con mejoras del 50% sobre GLM-5.2 en el benchmark interno Z.ai Code Bench, ademas de resultados que el autor presenta como estado del arte en pesos abiertos en Terminal Bench 3.0, Agents' Last Exam y CyberGym.
 
@@ -90,7 +90,7 @@ Notas metodologicas aportadas por el autor: en HLE con herramientas se usaron `t
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad | Rendimiento destacado |
 |---|---|---|---|---|---|
-| GLM-5.3 (RedHatAI) | 753,3 mil millones (fp8) | no disponible | glm-5.3 (`other`) | Pesos abiertos en HuggingFace | SOTA abierto segun el autor en CyberGym (84,5), AutomationBench (48,2) y GDPval-AA v2 (1769) |
+| GLM-5.3 (RedHatAI) | 753,3 mil millones (fp8) | no disponible | glm-5.3 (`other`) | Pesos abiertos en Hugging Face | SOTA abierto segun el autor en CyberGym (84,5), AutomationBench (48,2) y GDPval-AA v2 (1769) |
 | GLM-5.2 (zai-org) | no disponible (mismo base que GLM-5.3) | no disponible | no disponible | Pesos abiertos | Version previa; 81,0 en Terminal Bench 2.1 y 4,6 en Terminal Bench 3.0 |
 | Kimi K3 | no disponible | no disponible | no disponible | Pesos abiertos (no confirmado en la informacion disponible) | Competitivo en DeepSWE (67,5), SWE-Marathon (48,1) y Toolathlon (76,5) |
 | DeepSeek-V4 Pro-0813 | no disponible | no disponible | no disponible | no disponible | 87,9 en Terminal Bench 2.1 y 61,1 en NL2Repo |
@@ -113,7 +113,7 @@ La comparacion se limita a los datos publicados en la model card: no hay informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3
 - Repositorio de referencia del autor: https://github.com/zai-org/GLM-5
 - Paper referenciado en los tags: https://arxiv.org/abs/2602.15763
 - Imagen de benchmarks de la model card: https://raw.githubusercontent.com/zai-org/GLM-5/refs/heads/main/resources/bench_53_2.png
@@ -125,4 +125,4 @@ La comparacion se limita a los datos publicados en la model card: no hay informa
 - Guia de Unsloth: https://unsloth.ai/docs/models/GLM-5.3
 - Despliegue en Ascend NPU: https://github.com/zai-org/GLM-5/blob/main/example/ascend.md
 
-Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre el modelo; los unicos enlaces utiles son los incluidos en la model card y en la informacion de HuggingFace.
+Nota: las busquedas web realizadas no devolvieron resultados relevantes sobre el modelo; los unicos enlaces utiles son los incluidos en la model card y en la informacion de Hugging Face.

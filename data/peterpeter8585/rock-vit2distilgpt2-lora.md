@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `peterpeter8585/rock-vit2distilgpt2-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario peterpeter8585. Se basa en el modelo `sachin/vit2distilgpt2`, una arquitectura de visión-lenguaje que combina un Vision Transformer (ViT) como codificador de imágenes y un DistilGPT2 como decodificador de texto, orientado a tareas de generación de descripciones a partir de imágenes (image captioning). El nombre "rock" sugiere que el adaptador fue entrenado para una tarea específica relacionada con rocas o geología, aunque no se proporciona ninguna documentación al respecto.
+El modelo `peterpeter8585/rock-vit2distilgpt2-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario peterpeter8585. Se basa en el modelo `sachin/vit2distilgpt2`, una arquitectura de visión-lenguaje que combina un Vision Transformer (ViT) como codificador de imágenes y un DistilGPT2 como decodificador de texto, orientado a tareas de generación de descripciones a partir de imágenes (image captioning). El nombre "rock" sugiere que el adaptador fue entrenado para una tarea específica relacionada con rocas o geología, aunque no se proporciona ninguna documentación al respecto.
 
 La relevancia de este modelo es limitada: se trata de un adaptador LoRA de pequeño tamaño que modifica parcialmente los pesos del modelo base, pero la model card está vacía y no se ofrecen detalles sobre el entrenamiento, los datos utilizados ni las capacidades resultantes. Es un ejemplo de publicación experimental sin documentación, útil únicamente para quien quiera explorar el adaptador tal cual está subido, sin garantías de rendimiento ni soporte.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada: se trata de un adaptador LoRA de peque
 
 La arquitectura subyacente es la del modelo base `sachin/vit2distilgpt2`: un ViT procesa la imagen en parches y genera una secuencia de embeddings que se alimentan a un DistilGPT2, un transformer decoder con 82 millones de parametros, para autoregresivamente producir texto. El adaptador LoRA añade matrices de bajo rango a las capas de atencion y feed-forward del transformer, reduciendo el numero de parametros entrenables durante el fine-tuning.
 
-No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, el regimen de entrenamiento (si hubo RLHF, DPO, etc.) ni las hiperparametros utilizadas. La unica referencia tecnica es el paper de LoRA (arxiv:1910.09700) citado en los tags, pero no hay evidencia de que el autor lo haya seguido formalmente. El adaptador se publico con la libreria PEFT 0.20.0, lo que indica que fue creado con el flujo estandar de HuggingFace para adaptadores.
+No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, el regimen de entrenamiento (si hubo RLHF, DPO, etc.) ni las hiperparametros utilizadas. La unica referencia tecnica es el paper de LoRA (arxiv:1910.09700) citado en los tags, pero no hay evidencia de que el autor lo haya seguido formalmente. El adaptador se publico con la libreria PEFT 0.20.0, lo que indica que fue creado con el flujo estandar de Hugging Face para adaptadores.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ No se dispone de informacion sobre los datos de entrenamiento, el numero de toke
 - Exploracion academica: investigadores que quieran estudiar el efecto de adaptadores LoRA sobre modelos de vision-lenguaje pueden cargar este adaptador y compararlo con el modelo base para entender como cambia la salida.
 - Prototipado rapido: si el adaptador funciona como se espera, podria servir para generar descripciones de imagenes de rocas en contextos geologicos, aunque sin documentacion no es fiable.
 - Pruebas de compatibilidad: desarrolladores que trabajen con PEFT pueden usar este adaptador para verificar que su pipeline de carga de LoRA funciona correctamente con modelos de vision-lenguaje.
-- Educacion: como ejemplo de publicacion de un adaptador en HuggingFace, puede utilizarse en cursos de fine-tuning eficiente.
+- Educacion: como ejemplo de publicacion de un adaptador en Hugging Face, puede utilizarse en cursos de fine-tuning eficiente.
 - No se recomienda su uso en produccion sin una evaluacion previa exhaustiva, dado que no hay datos de rendimiento ni licencia clara.
 
 ## Benchmarks y rendimiento
@@ -67,7 +67,7 @@ No se dispone de modelos comparables directos porque no hay informacion sobre el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peterpeter8585/rock-vit2distilgpt2-lora
+- Modelo en Hugging Face: https://huggingface.co/peterpeter8585/rock-vit2distilgpt2-lora
 - Perfil del autor: https://huggingface.co/peterpeter8585
 - Modelo base: https://huggingface.co/sachin/vit2distilgpt2 (no se ha verificado su existencia, pero se referencia en los tags)
 - Paper de LoRA (referenciado en tags): https://arxiv.org/abs/1910.09700

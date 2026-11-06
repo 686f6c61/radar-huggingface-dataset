@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`...steps_3k`) | 4,143 B | Estado (9,) + 3 imagenes 224x224 | apache-2.0 | Publico en HuggingFace, 0 descargas |
-| `lerobot/pi05_base` | No disponible (es el modelo de partida) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| SmolVLA | 0,45 B (dato de documentacion publica del proyecto) | Vision + lenguaje + estado | Apache-2.0 (dato de documentacion publica) | Publico en HuggingFace, integrado en LeRobot |
-| OpenVLA | 7 B (dato de documentacion publica del proyecto) | Vision + instruccion textual | Licencia propia del proyecto | Publico en HuggingFace |
+| Este modelo (`...steps_3k`) | 4,143 B | Estado (9,) + 3 imagenes 224x224 | apache-2.0 | Publico en Hugging Face, 0 descargas |
+| `lerobot/pi05_base` | No disponible (es el modelo de partida) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| SmolVLA | 0,45 B (dato de documentacion publica del proyecto) | Vision + lenguaje + estado | Apache-2.0 (dato de documentacion publica) | Publico en Hugging Face, integrado en LeRobot |
+| OpenVLA | 7 B (dato de documentacion publica del proyecto) | Vision + instruccion textual | Licencia propia del proyecto | Publico en Hugging Face |
 
 Aviso: los datos de SmolVLA y OpenVLA proceden de la documentacion publica de esos proyectos y no de la informacion proporcionada en esta ficha, por lo que deberian verificarse antes de citarlos. Para el modelo base `lerobot/pi05_base` y su familia (π₀, π₀.₅ y OpenPI) no se dispone de cifras verificadas en la informacion disponible; la comparacion relevante en este caso es contra otros checkpoints de la misma familia entrenados con condiciones de aumento distintas, que no se han publicado en este repositorio.
 
@@ -103,7 +103,7 @@ Aviso: los datos de SmolVLA y OpenVLA proceden de la documentacion publica de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_3k
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0__steps_3k
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live
 - Visualizador del dataset en LeRobot Spaces: https://huggingface.co/spaces/lerobot/visualize_dataset?path=sam-guided-vlas/train_1_2_pile_random_pose__mask__overlay_a75__sim__all_cameras__live
 - Modelo base: https://huggingface.co/lerobot/pi05_base

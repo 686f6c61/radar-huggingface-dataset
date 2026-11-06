@@ -61,5 +61,5 @@ No disponible. No se dispone de información sobre modelos o runtimes comparable
 - Posible riesgo de alucinación en la transcripción, inherente a los modelos de ASR, aunque no se aportan datos específicos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU
+- Hugging Face: https://huggingface.co/backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU
 - Árbol del repositorio: https://huggingface.co/backpack-run/Qwen-ASR-Runtime-Windows-x64-PyTorch-CPU/tree/main

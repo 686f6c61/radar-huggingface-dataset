@@ -98,7 +98,7 @@ No se dispone de datos publicados de otros agentes concretos sobre `Humanoid-v5`
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-humanoid-ppo
+- Hugging Face: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-humanoid-ppo
 - Entorno `Humanoid-v5` (Gymnasium): https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/
 - PPO (paper original): https://arxiv.org/abs/1707.06347

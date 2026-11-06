@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfsmith1988/swin-t-generation-finetuning` es un prototipo de investigación publicado en HuggingFace por el usuario sfsmith1988. Se presenta como una implementación propia de una arquitectura denominada "Swin T" orientada a tareas de generación, con licencia MIT y pesos en formato safetensors. El repositorio incluye un fichero `pipeline.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un modelo entrenado.
+`sfsmith1988/swin-t-generation-finetuning` es un prototipo de investigación publicado en Hugging Face por el usuario sfsmith1988. Se presenta como una implementación propia de una arquitectura denominada "Swin T" orientada a tareas de generación, con licencia MIT y pesos en formato safetensors. El repositorio incluye un fichero `pipeline.py` con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un modelo entrenado.
 
 El dato verificado más relevante es el recuento de parámetros: 33.088 en total, según los metadatos de safetensors. Esa cifra está muy por debajo de lo que sugiere el nombre "Swin T", que en la literatura se asocia a backbones de visión jerárquicos del orden de decenas de millones de parámetros. La model card no documenta corpus de entrenamiento, número de tokens, idiomas, ni resultados de benchmarks, y afirma de forma explícita que no se reclama ninguna puntuación de evaluación.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Cabe en GPU consumer: sí, en cualquier modelo disponible actualmente, y también en entornos sin GPU.
 - Opciones de despliegue: la vía documentada es la ejecución directa de `pipeline.py` con PyTorch. No hay soporte documentado para vLLM, llama.cpp, Ollama, TGI ni ningún otro servidor de inferencia, y al tratarse de una implementación personalizada los formatos GGUF o equivalentes no están disponibles.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -77,7 +77,7 @@ La información proporcionada no incluye modelos comparables con datos verificab
 
 | Modelo | Tarea declarada | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfsmith1988/swin-t-generation-finetuning | generation | 33.088 | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
+| sfsmith1988/swin-t-generation-finetuning | generation | 33.088 | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
 | Swin Transformer original (Microsoft) | visión (clasificación, detección, segmentación) | no disponible en la información proporcionada | no aplica | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Alternativas de generación de escala tiny | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,9 +95,9 @@ Advertencia: la única cifra verificada en este repositorio es el recuento de 33
 - Al ser una implementación personalizada, las APIs genéricas de carga automática requieren un adaptador explícito; no se puede asumir compatibilidad directa con `transformers`, vLLM u otros frameworks estándar.
 - El repositorio registra 0 descargas y 0 likes, por lo que no cuenta con validación alguna por parte de la comunidad.
 - Las fechas de creación y actualización registradas (2026) son posteriores al momento habitual de consulta, lo que puede indicar metadatos inconsistentes que conviene verificar antes de citar el repositorio.
-- No hay pipeline declarado en HuggingFace, lo que limita el uso directo desde la interfaz.
+- No hay pipeline declarado en Hugging Face, lo que limita el uso directo desde la interfaz.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sfsmith1988/swin-t-generation-finetuning
+- Modelo en Hugging Face: https://huggingface.co/sfsmith1988/swin-t-generation-finetuning
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Los resultados devueltos corresponden a páginas de soporte de Microsoft (contacto, inicio de sesión en Hotmail, deprecación de EWS en Exchange Online, descarga de ISO de Windows 8.1 y cambio de frecuencia de refresco en Windows) y no guardan relación con el modelo analizado.

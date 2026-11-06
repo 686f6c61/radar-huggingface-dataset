@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| sensevoice-small-loom (este repositorio) | 234.493.019 | zh, en, ja, ko, yue | other (FunASR) | GGUF (loom.cpp) | HuggingFace |
-| FunAudioLLM/SenseVoiceSmall (modelo base) | no disponible en la informacion proporcionada (mismos pesos) | zh, en, ja, ko, yue | other (FunASR) | safetensors | HuggingFace |
+| sensevoice-small-loom (este repositorio) | 234.493.019 | zh, en, ja, ko, yue | other (FunASR) | GGUF (loom.cpp) | Hugging Face |
+| FunAudioLLM/SenseVoiceSmall (modelo base) | no disponible en la informacion proporcionada (mismos pesos) | zh, en, ja, ko, yue | other (FunASR) | safetensors | Hugging Face |
 | Whisper small (OpenAI) | dato externo no incluido en la informacion proporcionada | dato externo no incluido en la informacion proporcionada | dato externo no incluido en la informacion proporcionada | dato externo no incluido en la informacion proporcionada | dato externo no incluido en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo (WER, latencia o throughput) en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo (WER, latencia o throughput) e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/sensevoice-small-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/sensevoice-small-loom
 - Modelo base: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Repositorio loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Repositorio loom-exporter: https://github.com/loom-ai-org/loom-exporter

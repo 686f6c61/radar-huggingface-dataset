@@ -80,6 +80,6 @@ No se han publicado comparativas con otros modelos de clasificación de video pa
 
 ## Enlaces
 
-- [HuggingFace - Splash47666/slowfast-soccer-play-classifier](https://huggingface.co/Splash47666/slowfast-soccer-play-classifier)
+- [Hugging Face - Splash47666/slowfast-soccer-play-classifier](https://huggingface.co/Splash47666/slowfast-soccer-play-classifier)
 - [GitHub - facebookresearch/SlowFast (PySlowFast)](https://github.com/facebookresearch/SlowFast)
 - [Roboflow - Soccer Computer Vision Datasets and Models](https://universe.roboflow.com/browse/sports/soccer)

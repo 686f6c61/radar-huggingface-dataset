@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop
+- Repositorio Hugging Face del adaptador: https://huggingface.co/RareConcepts/soad-mm3-vanilla-20260823-10k-adamw8e-5-randwin128-reg128-nocapdrop
 - Modelo base MiniMax-Music3: https://huggingface.co/MiniMaxAI/MiniMax-Music3
-- Organización RareConcepts en HuggingFace: https://huggingface.co/RareConcepts/datasets
+- Organización RareConcepts en Hugging Face: https://huggingface.co/RareConcepts/datasets

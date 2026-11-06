@@ -85,7 +85,7 @@ Nota: los datos de los modelos comparados proceden de conocimiento general de su
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/johnfredfarmer/gemma_ft_q4_k_m
+- Hugging Face (modelo): https://huggingface.co/johnfredfarmer/gemma_ft_q4_k_m
 - Unsloth (libreria de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - Gemma (pagina oficial de Google DeepMind): https://deepmind.google/models/gemma/
 - Repositorio de Gemma en GitHub: https://github.com/google-deepmind/gemma

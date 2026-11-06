@@ -46,7 +46,7 @@ No se dispone de información pública sobre el número exacto de muestras de en
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original (Sehgal et al., 2025) reporta métricas de validación interna y externa, pero esos datos no se incluyen en la model card de HuggingFace. No se proporcionan valores de correlación con edad cronológica, errores absolutos medios ni comparaciones con otros relojes en esta ficha.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original (Sehgal et al., 2025) reporta métricas de validación interna y externa, pero esos datos no se incluyen en la model card de Hugging Face. No se proporcionan valores de correlación con edad cronológica, errores absolutos medios ni comparaciones con otros relojes en esta ficha.
 
 ## Requisitos de hardware
 
@@ -72,6 +72,6 @@ No se dispone de una comparativa directa con otros relojes epigenéticos en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pyaging/systemsagelung
+- Repositorio Hugging Face: https://huggingface.co/pyaging/systemsagelung
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo original: Sehgal, R., Markov, Y., Qin, C., et al. (2025). Systems Age: a single blood methylation test to quantify aging heterogeneity across 11 physiological systems. *Nature Aging*, 5, 1880–1896. DOI: https://doi.org/10.1038/s43587-025-00958-3

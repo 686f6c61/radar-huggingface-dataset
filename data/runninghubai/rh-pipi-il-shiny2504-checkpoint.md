@@ -6,7 +6,7 @@ rh-pipi-il-shiny2504-checkpoint es un checkpoint de difusion para generacion de 
 
 El modelo resuelve el problema de generar imagenes a partir de texto (text-to-image) y de transformar imagenes existentes (image-to-image) con un estilo visual concreto, comercializado bajo la etiqueta "iL" y "shiny 2.5D". La model card enlaza demos de generacion en linea tanto en el sitio internacional como en el sitio chino de RunningHub, lo que sugiere que el checkpoint esta pensado para usarse a traves de esa plataforma o localmente en ComfyUI.
 
-La relevancia de esta ficha es limitada desde el punto de vista de la investigacion: la documentacion publicada es minima, no hay datos de arquitectura detallados, ni de entrenamiento, ni de evaluacion, ni licencia explicita. Todo lo que se puede afirmar con rigor procede de la model card y de los metadatos de HuggingFace.
+La relevancia de esta ficha es limitada desde el punto de vista de la investigacion: la documentacion publicada es minima, no hay datos de arquitectura detallados, ni de entrenamiento, ni de evaluacion, ni licencia explicita. Todo lo que se puede afirmar con rigor procede de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rh-pipi-il-shiny2504-checkpoint | no disponible | no aplica | no disponible | HuggingFace y RunningHub |
+| rh-pipi-il-shiny2504-checkpoint | no disponible | no aplica | no disponible | Hugging Face y RunningHub |
 | IL-XL (base declarado) | no disponible | no aplica | no disponible | no disponible en esta informacion |
 | Alternativas de la misma categoria | no disponible | no aplica | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-pipi-il-shiny2504-checkpoint
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-pipi-il-shiny2504-checkpoint
 - Proyecto original en RunningHub: https://www.runninghub.cn/model/public/2052013801037418498
 - Pagina del autor: https://www.runninghub.cn/user-center/1860932065674887170
 - Demo text-to-image (sitio chino): https://www.runninghub.cn/post/1934957385754550274

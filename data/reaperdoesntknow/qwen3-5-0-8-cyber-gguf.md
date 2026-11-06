@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativos. Existe un repositorio herman
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-0.8-Cyber-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Colección CIx cybersecurity models: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models
 - Repositorio hermano (2B): https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF

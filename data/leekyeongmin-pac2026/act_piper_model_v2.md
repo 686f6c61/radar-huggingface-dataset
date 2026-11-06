@@ -2,7 +2,7 @@
 
 ## Resumen
 
-act_piper_model_v2 es una política de robótica basada en ACT (Action Chunking with Transformers), publicada por el usuario leekyeongmin-pac2026 en HuggingFace. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) que aprende de datos de teleoperación y predice secuencias cortas de acciones ("chunks") en lugar de pasos individuales, lo que reduce el error de acumulación típico de las políticas paso a paso. Está entrenado y distribuido mediante la librería LeRobot de HuggingFace, con pesos en formato safetensors y pipeline declarado como `robotics`.
+act_piper_model_v2 es una política de robótica basada en ACT (Action Chunking with Transformers), publicada por el usuario leekyeongmin-pac2026 en Hugging Face. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) que aprende de datos de teleoperación y predice secuencias cortas de acciones ("chunks") en lugar de pasos individuales, lo que reduce el error de acumulación típico de las políticas paso a paso. Está entrenado y distribuido mediante la librería LeRobot de Hugging Face, con pesos en formato safetensors y pipeline declarado como `robotics`.
 
 El modelo tiene 51.670.663 parámetros totales y un repositorio de 0,2 GB, lo que lo sitúa en el rango de política ligera, apta para ejecutarse en hardware de consumo. Se entrenó sobre el dataset `leekyeongmin-pac2026/piperdataset_4`, asociado presumiblemente a un brazo robótico Piper, y sigue la implementación de ACT descrita en el artículo arXiv 2304.13705. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las obligaciones de atribución propias de esa licencia.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| act_piper_model_v2 | 51,67 M | No disponible | Apache 2.0 | HuggingFace (LeRobot) |
+| act_piper_model_v2 | 51,67 M | No disponible | Apache 2.0 | Hugging Face (LeRobot) |
 | ACT original (arXiv 2304.13705) | No disponible en la informacion proporcionada | Chunking de acciones | No disponible | Repositorio de los autores |
 | Diffusion Policy | No disponible | Prediccion por difusion de trayectorias | No disponible | Publicaciones y repositorios de los autores |
-| SmolVLA | No disponible | Politica VLA con componente de lenguaje | No disponible | HuggingFace (LeRobot) |
+| SmolVLA | No disponible | Politica VLA con componente de lenguaje | No disponible | Hugging Face (LeRobot) |
 
 No se dispone de datos de rendimiento comparativos en la información proporcionada, por lo que la comparación se limita a aspectos de disponibilidad y licencia. Cualquier afirmación sobre superioridad o equivalencia de rendimiento sería especulativa.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leekyeongmin-pac2026/act_piper_model_v2
+- Modelo en Hugging Face: https://huggingface.co/leekyeongmin-pac2026/act_piper_model_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/leekyeongmin-pac2026/piperdataset_4
 - Artículo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

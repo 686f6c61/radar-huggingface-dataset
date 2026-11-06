@@ -71,10 +71,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni comparaciones con ot
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p3136x4-step147 | 7,298B | no disponible (entrenado a 32k) | Apache 2.0 | HuggingFace, 35 descargas | SFT matemático sobre Olmo-3 base |
-| Olmo-3-1025-7B (AI2) | ~7B | no disponible | Apache 2.0 | HuggingFace | Modelo base generalista |
-| allenai/Olmo-3.1-32B-Think | 32B | no disponible | no disponible | HuggingFace | Profesor usado para generar las trazas |
-| Qwen2.5-Math-7B | 7B | 4k (ampliable) | Apache 2.0 | HuggingFace | Especializado en matemáticas, benchmarks públicos |
+| sft_olmo3base7b_olmo31think_ot3_p3136x4-step147 | 7,298B | no disponible (entrenado a 32k) | Apache 2.0 | Hugging Face, 35 descargas | SFT matemático sobre Olmo-3 base |
+| Olmo-3-1025-7B (AI2) | ~7B | no disponible | Apache 2.0 | Hugging Face | Modelo base generalista |
+| allenai/Olmo-3.1-32B-Think | 32B | no disponible | no disponible | Hugging Face | Profesor usado para generar las trazas |
+| Qwen2.5-Math-7B | 7B | 4k (ampliable) | Apache 2.0 | Hugging Face | Especializado en matemáticas, benchmarks públicos |
 
 No se dispone de comparaciones directas de rendimiento entre estos modelos en la información proporcionada; la comparativa es estructural y de licencia.
 
@@ -91,7 +91,7 @@ No se dispone de comparaciones directas de rendimiento entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p3136x4-step147
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p3136x4-step147
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset de prompts: https://huggingface.co/datasets/open-r1/OpenThoughts3 (referencia a OpenThoughts3)

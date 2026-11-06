@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ronanlee777/sn92-gen-mb` es un modelo de decisión publicado en HuggingFace por el usuario ronanlee777, construido mediante una fusión en el espacio de pesos (weight-space merge) de dos entradas públicas del proyecto REAX SN92: `isomsom/sn92-gen-m87b` y `xflud/sn92-decider-1`. No se ha realizado entrenamiento propio: todos los cambios aprendidos provienen de los modelos padre, y el autor lo declara explícitamente en la model card. La arquitectura subyacente es `Qwen3_5Model` con un paquete de lectura conjunta (joint-readout package), con 26.085.330.160 parámetros totales según los pesos en safetensors.
+`ronanlee777/sn92-gen-mb` es un modelo de decisión publicado en Hugging Face por el usuario ronanlee777, construido mediante una fusión en el espacio de pesos (weight-space merge) de dos entradas públicas del proyecto REAX SN92: `isomsom/sn92-gen-m87b` y `xflud/sn92-decider-1`. No se ha realizado entrenamiento propio: todos los cambios aprendidos provienen de los modelos padre, y el autor lo declara explícitamente en la model card. La arquitectura subyacente es `Qwen3_5Model` con un paquete de lectura conjunta (joint-readout package), con 26.085.330.160 parámetros totales según los pesos en safetensors.
 
 El modelo se presenta como una "entrada generalista" del linaje SN92, una familia orientada a tareas de decisión. La técnica empleada es aritmética de tareas: para cada tensor presente también en la base se aplica `base + 0.7 * (parent_1 - base) + 0.7 * (parent_2 - base)`, partiendo de `baselabs/mammoth-1` (revisión `61cec44c281c693992e3d6ebeb44dd3402dfa186`). El readout de respuesta se obtiene como media simple de los readouts de los padres. El cálculo se hace tensor a tensor en float32 y se redondea a bfloat16.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos del linaje, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ronanlee777/sn92-gen-mb
+- Modelo en Hugging Face: https://huggingface.co/ronanlee777/sn92-gen-mb
 - Padre 1: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre 2: https://huggingface.co/xflud/sn92-decider-1
 - Base común: https://huggingface.co/baselabs/mammoth-1

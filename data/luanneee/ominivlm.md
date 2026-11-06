@@ -74,5 +74,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Luanneee/ominiVLM
+- Repositorio Hugging Face: https://huggingface.co/Luanneee/ominiVLM
 - Codigo fuente y scripts: https://github.com/Icecream102/ominiVLM

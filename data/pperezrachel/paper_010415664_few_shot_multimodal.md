@@ -66,9 +66,9 @@ No disponible. No existe una comparativa posible con otros modelos de IA porque 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pperezrachel/paper_010415664_few_shot_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/pperezrachel/paper_010415664_few_shot_multimodal
 - Referencia general sobre few-shot learners (GPT-3): https://arxiv.org/abs/2005.14165
 - Marco teórico sobre few-shot multimodal en imagen médica: https://arxiv.org/html/2511.01140v2
-- Lista de modelos en HuggingFace con tag "argumentative": https://huggingface.co/models?other=argumentative
+- Lista de modelos en Hugging Face con tag "argumentative": https://huggingface.co/models?other=argumentative
 - Publicación de GPT-3 en ACM: https://dlnext.acm.org/doi/abs/10.5555/3495724.3495883
 - Awesome Multimodal LLMs for Time Series (recopilación de papers): https://github.com/mllm-ts/Awesome-Multimodal-LLMs-Time-Series

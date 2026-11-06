@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Angie es un LoRA de generación de imágenes texto-a-imagen publicado en HuggingFace por el usuario AiMamis bajo el identificador `AiMamis/Angie`. Se trata de un adaptador de bajo rango que se monta sobre el modelo base `krea/Krea-2-Turbo` y que sirve para incorporar a ese modelo la representación de una identidad concreta, activada mediante las palabras clave `Angie`, `Brunette hair` y `Hazel eyes`. El repositorio ocupa 0,5 GB y se distribuye con la librería diffusers.
+Angie es un LoRA de generación de imágenes texto-a-imagen publicado en Hugging Face por el usuario AiMamis bajo el identificador `AiMamis/Angie`. Se trata de un adaptador de bajo rango que se monta sobre el modelo base `krea/Krea-2-Turbo` y que sirve para incorporar a ese modelo la representación de una identidad concreta, activada mediante las palabras clave `Angie`, `Brunette hair` y `Hazel eyes`. El repositorio ocupa 0,5 GB y se distribuye con la librería diffusers.
 
 El modelo resuelve el problema clásico de personalización en difusión: obtener una identidad consistente sin reentrenar el modelo base completo. Los LoRA son el mecanismo estándar para este fin porque permiten compartir adaptadores de pocos cientos de MB y combinarlos con otros adaptadores en el mismo pipeline.
 
@@ -74,8 +74,8 @@ No se dispone de información sobre adaptadores comparables (otros LoRA de ident
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad | Rendimiento documentado |
 |---|---|---|---|---|---|
-| AiMamis/Angie | LoRA de identidad sobre Krea-2-Turbo | no disponible | openrail++ | HuggingFace, 0 descargas, 0 likes, 0,5 GB | no disponible |
-| krea/Krea-2-Turbo (modelo base sin LoRA) | Modelo de difusión texto-a-imagen | no disponible en la información proporcionada | no disponible en esta ficha | HuggingFace | no disponible |
+| AiMamis/Angie | LoRA de identidad sobre Krea-2-Turbo | no disponible | openrail++ | Hugging Face, 0 descargas, 0 likes, 0,5 GB | no disponible |
+| krea/Krea-2-Turbo (modelo base sin LoRA) | Modelo de difusión texto-a-imagen | no disponible en la información proporcionada | no disponible en esta ficha | Hugging Face | no disponible |
 | Otros LoRA de identidad sobre el mismo base | LoRA de identidad | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de información sobre adaptadores comparables (otros LoRA de ident
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Angie
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Angie
 - Descarga de archivos (pestaña Files & versions): https://huggingface.co/AiMamis/Angie/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog, repositorio o demo adicionales: no disponible (los resultados de búsqueda web suministrados no guardan relación con el modelo)

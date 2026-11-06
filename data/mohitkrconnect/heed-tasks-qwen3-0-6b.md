@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento (task F1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heed-tasks-qwen3-0.6b | 751,6M | 1.024 | 75,6 (test sellado); 80,1 (notas reales) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B-Base | 0,6B | no disponible en la informacion | no disponible | Apache-2.0 | HuggingFace |
-| heed-tasks-only-qwen3-0.6b | 0,6B | no disponible | no disponible | no disponible | HuggingFace |
-| heed-tasks-only-qwen3.5-0.8b | 0,8B | no disponible | no disponible | no disponible | HuggingFace |
+| heed-tasks-qwen3-0.6b | 751,6M | 1.024 | 75,6 (test sellado); 80,1 (notas reales) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B-Base | 0,6B | no disponible en la informacion | no disponible | Apache-2.0 | Hugging Face |
+| heed-tasks-only-qwen3-0.6b | 0,6B | no disponible | no disponible | no disponible | Hugging Face |
+| heed-tasks-only-qwen3.5-0.8b | 0,8B | no disponible | no disponible | no disponible | Hugging Face |
 
 La model card menciona como referencia externa Claude Sonnet 5.5 (F1 94,8), GPT-5.4 mini, Claude Haiku 5.5 y Gemini 3.5 Flash, pero no se dispone de sus especificaciones completas en la información proporcionada.
 
@@ -104,7 +104,7 @@ La model card menciona como referencia externa Claude Sonnet 5.5 (F1 94,8), GPT-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Segunda semilla del mismo receta: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b-seed0
 - Versión previa sin datos dirigidos: https://huggingface.co/mohitkrconnect/heed-tasks-qwen3-0.6b-exp054

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| NSDL 8B (SFT), Qwen3-VL, LOCUS | 8.767.123.696 | no disponible | apache-2.0, con restricción de no redistribución durante la revisión | HuggingFace, repositorio `review-artifacts/nsdl-8b-qwen3vl-sft-locus` | no disponible |
-| Qwen/Qwen3-VL-8B-Instruct (modelo base) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace, `Qwen/Qwen3-VL-8B-Instruct` | no disponible en la información proporcionada |
+| NSDL 8B (SFT), Qwen3-VL, LOCUS | 8.767.123.696 | no disponible | apache-2.0, con restricción de no redistribución durante la revisión | Hugging Face, repositorio `review-artifacts/nsdl-8b-qwen3vl-sft-locus` | no disponible |
+| Qwen/Qwen3-VL-8B-Instruct (modelo base) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face, `Qwen/Qwen3-VL-8B-Instruct` | no disponible en la información proporcionada |
 | Otros VLM de rango ~8B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La búsqueda web no devolvió información sobre modelos alternativos ni sobre sus resultados, por lo que la única comparación que puede establecerse con los datos facilitados es la relación de dependencia directa entre este checkpoint y Qwen3-VL-8B-Instruct: comparten arquitectura y tokenizador, y difieren en el ajuste SFT sobre LOCUS. Cualquier comparación cuantitativa con otros VLM de tamaño similar (por ejemplo, la serie Qwen2.5-VL o modelos de otros laboratorios) requeriría consultar sus fichas y benchmarks originales, que no forman parte de la información disponible.

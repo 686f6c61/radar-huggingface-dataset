@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `TUaxhuiax/MyAwesomeModel-TestRepo` es un espacio de prueba en HuggingFace creado por el usuario `TUaxhuiax` el 14 de septiembre de 2026. No contiene pesos ni archivos de modelo (tamaño del repositorio: 0.0 GB), por lo que no es un modelo funcional ni utilizable para inferencia. El pipeline declarado es `feature-extraction` y la licencia es MIT, pero no se proporcionan especificaciones técnicas reales.
+El repositorio `TUaxhuiax/MyAwesomeModel-TestRepo` es un espacio de prueba en Hugging Face creado por el usuario `TUaxhuiax` el 14 de septiembre de 2026. No contiene pesos ni archivos de modelo (tamaño del repositorio: 0.0 GB), por lo que no es un modelo funcional ni utilizable para inferencia. El pipeline declarado es `feature-extraction` y la licencia es MIT, pero no se proporcionan especificaciones técnicas reales.
 
 La model card incluida describe un modelo llamado `MyAwesomeModel` con supuestas mejoras en razonamiento, matemáticas y programación, además de una tabla de benchmarks comparativa. Sin embargo, estos datos no pueden verificarse ni atribuirse al contenido real del repositorio, que está vacío. En consecuencia, no es posible evaluar el modelo a partir de la información disponible.
 
@@ -80,4 +80,4 @@ No disponible. La model card menciona comparaciones con `Model1`, `Model2` y `Mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUaxhuiax/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/TUaxhuiax/MyAwesomeModel-TestRepo

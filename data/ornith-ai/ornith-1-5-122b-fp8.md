@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | TerminalBench 2.1 | CyberGym | NL2Repo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Ornith-1.5-122B | 125 B (MoE) | no disponible | 81,2 | 80 | 51,2 | MIT | HuggingFace, FP8 |
+| Ornith-1.5-122B | 125 B (MoE) | no disponible | 81,2 | 80 | 51,2 | MIT | Hugging Face, FP8 |
 | Qwen3.8-Flash-Next | 125 B | no disponible | 83,4 | 78 | 45,2 | no disponible | referencia en model card |
 | Nemotron 3.5 Super VL | 120 B | no disponible | 66,7 | 34 | 21 | no disponible | referencia en model card |
 | DeepSeek-V4-Flash-0731 | 284 B | no disponible | 82,7 | 76,7 | 54,2 | no disponible | referencia en model card |
@@ -95,7 +95,7 @@ Frente a Qwen3.8-Flash-Next, de tamaño comparable, Ornith-1.5 pierde 2,2 puntos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-122B-FP8
+- Repositorio Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-122B-FP8
 - Modelo base referenciado (no cuantizado): https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE
 - Blog del autor sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html

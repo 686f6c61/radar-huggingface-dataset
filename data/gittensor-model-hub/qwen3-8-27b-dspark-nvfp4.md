@@ -102,9 +102,9 @@ La comparativa se limita a los drafters evaluados en la model card. No se dispon
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4)
+- [Modelo en Hugging Face](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4)
 - [Modelo base cuantizado](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090-DSpark)
-- [Repositorio del modelo base en HuggingFace](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090/tree/main)
+- [Repositorio del modelo base en Hugging Face](https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-NVFP4-RTX5090/tree/main)
 - [Ficha del modelo base en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-nvfp4-rtx5090-gittensor-model-hub)
 - [Repositorio oficial de Qwen3.8-27B en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Entrada en LLM Explorer](https://llm-explorer.com/model/gittensor-model-hub%2FQwen3.8-27B-NVFP4-RTX5090,3GTDSJKETUAS2CtkUTm8Er)

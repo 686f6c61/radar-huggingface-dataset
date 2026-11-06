@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-sft-283b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-sft-283b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Documentación del curso SmolLM (SFT): https://huggingface.co/learn/smol-course/unit1/3
 - Recetas de entrenamiento en GitHub: https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm3

@@ -70,7 +70,7 @@ Estos valores proceden de la model card y no han sido verificados de forma indep
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | DeepNarra Paham 1.0 | 4,17M (1,58 bpw en GGUF) | no disponible | Apache-2.0 | Arquitectura propia experimental, cuantización ternaria nativa |
-| SmolLM2-135M (HuggingFace) | 135M | 2.048 (2048, ampliable a 8192) | Apache-2.0 | Modelo pequeño consolidado, con benchmarks publicados |
+| SmolLM2-135M (Hugging Face) | 135M | 2.048 (2048, ampliable a 8192) | Apache-2.0 | Modelo pequeño consolidado, con benchmarks publicados |
 | Qwen2.5-0.5B-Instruct | 0,5B | 32.768 (128K con YaRN) | Apache-2.0 | Calidad muy superior, requisitos aún modestos |
 
 Paham es entre 30 y 120 veces más pequeño que estas alternativas, por lo que su calidad generativa será sustancialmente inferior; su valor diferencial está en la experimentación arquitectónica y la huella extrema, no en rendimiento en benchmarks.

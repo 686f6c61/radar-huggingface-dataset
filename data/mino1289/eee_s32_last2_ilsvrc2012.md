@@ -74,7 +74,7 @@ No se han proporcionado datos de rendimiento ni especificaciones de modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mino1289/eee_s32_last2_ilsvrc2012
+- Hugging Face: https://huggingface.co/Mino1289/eee_s32_last2_ilsvrc2012
 - V-MoE GitHub: https://github.com/google-research/vmoe
 - timm GitHub: https://github.com/huggingface/pytorch-image-models
 - Fuente original del checkpoint (gs://): gs://vmoe_checkpoints/eee_s32_last2_ilsvrc2012

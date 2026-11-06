@@ -74,8 +74,8 @@ No disponible. Este modelo es un experimento único sin equivalentes directos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-PLEAdapter-MTP
+- Modelo en Hugging Face: https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-PLEAdapter-MTP
 - Modelo anterior similar (sin adaptador PLE): https://huggingface.co/dburner/Qwen3.5-4B-Q8_0-FlashNgram-MTP
 - Repositorio de Qwen 3.5 (no oficial, de ABDtmx): https://github.com/ABDtmx/Qwen3.5
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Guía sobre Qwen 3.5 (sitio externo): https://qwen-ai.com/qwen-3-5/

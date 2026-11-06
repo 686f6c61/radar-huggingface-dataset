@@ -16,7 +16,7 @@ Con 277 millones de parámetros y una arquitectura transformer basada en XLM-RoB
 | Longitud de contexto | 512 tokens (heredada de XLM-RoBERTa-base) |
 | Tipos de cuantizacion | no disponible (solo se publican pesos en fp32) |
 | Idiomas soportados | Ingles, urdu (y code-switching entre ambos) |
-| Licencia | MIT (segun model card) / no disponible (segun metadata de HuggingFace) |
+| Licencia | MIT (segun model card) / no disponible (segun metadata de Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -31,7 +31,7 @@ La información sobre el dataset de entrenamiento es limitada: se indica que es 
 - Identificación de idioma a nivel de token (language identification).
 - Reconocimiento de entidades nombradas (NER) en contexto multilingüe.
 - Integración en pipelines de procesamiento de lenguaje natural para textos mixtos.
-- Soporte de la pipeline de token-classification de HuggingFace.
+- Soporte de la pipeline de token-classification de Hugging Face.
 - Entrada y salida compatible con Transformers (AutoTokenizer, AutoModelForTokenClassification).
 
 ## Casos de uso
@@ -70,7 +70,7 @@ Este modelo es un fine-tuning de XLM-RoBERTa-base, por lo que comparte arquitect
 
 - El modelo se ha entrenado en un dataset de code-switching específico, y su rendimiento puede degradarse en dominios conversacionales o formales significativamente diferentes de su distribución de entrenamiento (por ejemplo, texto médico, legal o técnico).
 - No se han publicado métricas de evaluación, por lo que no se puede cuantificar su rendimiento real.
-- La licencia es MIT según la model card, pero la metadata de HuggingFace indica "no disponible"; se recomienda contactar con el autor antes de uso comercial.
+- La licencia es MIT según la model card, pero la metadata de Hugging Face indica "no disponible"; se recomienda contactar con el autor antes de uso comercial.
 - El modelo no está optimizado para generación de texto ni para tareas fuera de la clasificación de tokens.
 - El modelo puede reflejar sesgos presentes en el dataset de entrenamiento (por ejemplo, variantes de urdu no estándar, slang, etc.).
 - Riesgo de alucinación no aplica (no es un modelo generativo), pero sí de errores de clasificación en tokens ambiguos o palabras compartidas entre urdu e inglés.
@@ -78,8 +78,8 @@ Este modelo es un fine-tuning de XLM-RoBERTa-base, por lo que comparte arquitect
 
 ## Enlaces
 
-- [HuggingFace - Modelo](https://huggingface.co/Zainab-waheed66/code-switching-codesaviours-si26-Zainab)
-- [HuggingFace - Dataset](https://huggingface.co/datasets/Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab)
+- [Hugging Face - Modelo](https://huggingface.co/Zainab-waheed66/code-switching-codesaviours-si26-Zainab)
+- [Hugging Face - Dataset](https://huggingface.co/datasets/Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab)
 - [GitHub - Repositorio del proyecto](https://github.com/Zainab-Binte-Khalid/code-switching-codesaviours-si26-zainab)
 - [GitHub - Repositorio alternativo](https://github.com/ZanebRA/code-switching-codesaviours-si26-zaneb)
-- [HuggingFace - Dataset alternativo](https://huggingface.co/datasets/zaneb-217/code-switching-codesaviours-si26-zaneb/blob/main/README.md)
+- [Hugging Face - Dataset alternativo](https://huggingface.co/datasets/zaneb-217/code-switching-codesaviours-si26-zaneb/blob/main/README.md)

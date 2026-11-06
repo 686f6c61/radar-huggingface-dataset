@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos de la misma categoria. El modelo base G9v3-39A5B no tiene una ficha publica detallada en HuggingFace, y no se conocen alternativas directas con el mismo tamaño y contexto. Se podria comparar con modelos como Llama 3 70B o Mixtral 8x7B, pero no hay datos de rendimiento de G9v3-39A5B para hacer una comparacion objetiva. Por tanto, esta seccion queda como "no disponible".
+No se dispone de informacion suficiente para establecer una comparativa fiable con otros modelos de la misma categoria. El modelo base G9v3-39A5B no tiene una ficha publica detallada en Hugging Face, y no se conocen alternativas directas con el mismo tamaño y contexto. Se podria comparar con modelos como Llama 3 70B o Mixtral 8x7B, pero no hay datos de rendimiento de G9v3-39A5B para hacer una comparacion objetiva. Por tanto, esta seccion queda como "no disponible".
 
 ## Limitaciones y advertencias
 
@@ -74,8 +74,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [HuggingFace - AlphaOxO/G9v3-39A5B-4bits-mlx](https://huggingface.co/AlphaOxO/G9v3-39A5B-4bits-mlx)
-- [HuggingFace - ai9stars/G9v3-39A5B (modelo base)](https://huggingface.co/ai9stars/G9v3-39A5B)
+- [Hugging Face - AlphaOxO/G9v3-39A5B-4bits-mlx](https://huggingface.co/AlphaOxO/G9v3-39A5B-4bits-mlx)
+- [Hugging Face - ai9stars/G9v3-39A5B (modelo base)](https://huggingface.co/ai9stars/G9v3-39A5B)
 - [Fork de mlx-lm de AlphaKure](https://github.com/AlphaKure/mlx-lm/issues/1)
 - [AI Model Hub - G9v3-39A5B](https://ai-analysis.ai/models/cfb499e0-38fe-4445-496f-db139d6295b6)
 - [AITier - G9v3-39A5B](https://aitier.net/en/models/g9v3-39a5b)

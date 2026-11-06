@@ -62,7 +62,7 @@ La siguiente tabla resume los resultados de WER (menor es mejor) en una selecci�
 | g-group-ai-lab/gipformer-65M-rnnt | 65M | 15.53 | 25.10 | 36.59 | 4.12 | 6.63 | 19.41 |
 | **g-group-ai-lab/gipformer1.5-65M-rnnt** | **65M** | **15.44** | 26.24 | **27.49** | 4.25 | 6.45 | **19.23** |
 
-El modelo logra el mejor WER en tele-medium, vi-asr-tech y VietMed entre todos los comparados, y es segundo en tele-hard-north (tras gipformer-65M-rnnt) y en vivos (tras hynt/Zipformer-30M). En Common-Voice, el mejor es hynt/Zipformer-30M con 4.16, seguido de gipformer1.5 con 6.45. La tabla completa con todos los conjuntos de prueba está disponible en la model card de HuggingFace.
+El modelo logra el mejor WER en tele-medium, vi-asr-tech y VietMed entre todos los comparados, y es segundo en tele-hard-north (tras gipformer-65M-rnnt) y en vivos (tras hynt/Zipformer-30M). En Common-Voice, el mejor es hynt/Zipformer-30M con 4.16, seguido de gipformer1.5 con 6.45. La tabla completa con todos los conjuntos de prueba está disponible en la model card de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -95,7 +95,7 @@ Gipformer 1.5 ofrece el mejor equilibrio entre tamaño y rendimiento en los benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-group-ai-lab/gipformer1.5-65M-rnnt
+- Modelo en Hugging Face: https://huggingface.co/g-group-ai-lab/gipformer1.5-65M-rnnt
 - Repositorio de código: https://github.com/ggroup-ai-lab/gipformer
 - Demo en el navegador: https://huggingface.co/spaces/g-group-ai-lab/gipformer-demo
 - Conjunto de prueba vi-asr-tech: https://huggingface.co/datasets/g-group-ai-lab/vi-asr-tech-test

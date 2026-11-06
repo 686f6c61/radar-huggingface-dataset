@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`A9Labs/microtensor_ctx_compress` no es un modelo de lenguaje propiamente dicho, sino una plantilla de repositorio publicada en HuggingFace para participar en las "Microtensor arenas", un sistema de evaluación descentralizada de modelos pequeños (SLM) especializados. El repositorio contiene el andamiaje necesario para presentar una submission: un modelo especializado (`mt_slm_<arena>`), un harness de ejecución, un router y un módulo de reparación con modelos frontera. El autor declarado es A9Labs y el repositorio fue creado el 3 de noviembre de 2026.
+`A9Labs/microtensor_ctx_compress` no es un modelo de lenguaje propiamente dicho, sino una plantilla de repositorio publicada en Hugging Face para participar en las "Microtensor arenas", un sistema de evaluación descentralizada de modelos pequeños (SLM) especializados. El repositorio contiene el andamiaje necesario para presentar una submission: un modelo especializado (`mt_slm_<arena>`), un harness de ejecución, un router y un módulo de reparación con modelos frontera. El autor declarado es A9Labs y el repositorio fue creado el 3 de noviembre de 2026.
 
 El nombre del repositorio sugiere que está orientado a la arena de compresión de contexto (`context_compression`), cuyo adaptador compacta la sesión de un agente de código en un JSON de cinco campos (`ctx_compress`). La plantilla menciona explícitamente Qwen y Phi 4 mini como formatos de chat de referencia, y fija un contexto máximo de 32 768 tokens con hasta 3 072 tokens nuevos en la configuración de ejemplo.
 
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/A9Labs/microtensor_ctx_compress
+- Repositorio en Hugging Face: https://huggingface.co/A9Labs/microtensor_ctx_compress
 - Documentación de evaluación descentralizada: https://www.microtensor.cloud/docs/certified-inference/system/decentralised-evaluation
 - Documentación de perfiles de hardware: https://www.microtensor.cloud/docs/certified-inference/system/hardware-profiles
 - Endpoint de definición de arenas: https://api.microtensor.cloud/v2/arenas/<arena>

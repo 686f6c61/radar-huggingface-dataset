@@ -25,7 +25,7 @@ El modelo base TinyLlama-3MPER0RR-obliterated es una modificación de TinyLlama,
 
 ## Capacidades
 
-No se ha documentado de forma explícita un listado de capacidades para este modelo. Al ser una variante de TinyLlama, se espera que pueda realizar tareas básicas de generación de texto, completado y conversación, pero no hay confirmación oficial. Las etiquetas de HuggingFace indican "conversational", lo que sugiere su uso en diálogos. No se mencionan capacidades avanzadas como tool calling, razonamiento multi-paso, visión o audio. La ausencia de filtros de seguridad (por la ablación) podría permitir una generación más libre, pero también conlleva riesgos.
+No se ha documentado de forma explícita un listado de capacidades para este modelo. Al ser una variante de TinyLlama, se espera que pueda realizar tareas básicas de generación de texto, completado y conversación, pero no hay confirmación oficial. Las etiquetas de Hugging Face indican "conversational", lo que sugiere su uso en diálogos. No se mencionan capacidades avanzadas como tool calling, razonamiento multi-paso, visión o audio. La ausencia de filtros de seguridad (por la ablación) podría permitir una generación más libre, pero también conlleva riesgos.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para una comparativa detallada. El mode
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-obliterated-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/mradermacher/TinyLlama-3MPER0RR-obliterated-GGUF)
 - [Modelo base (3MPER0RR/TinyLlama-3MPER0RR-obliterated)](https://huggingface.co/3MPER0RR/TinyLlama-3MPER0RR-obliterated)
 - [Repositorio del proyecto TinyLlama](https://github.com/jzhang38/TinyLlama)
 - [Otros modelos cuantizados de mradermacher](https://huggingface.co/mradermacher)

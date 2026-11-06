@@ -77,6 +77,6 @@ No se dispone de datos comparativos directos con otros modelos en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-6S
+- Modelo en Hugging Face: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-6S
 - Modelo base: https://huggingface.co/JANGQ-AI/Qwen3.8-Flash-Next-JANG_6S
 - Runtime vMLX: https://vmlx.net

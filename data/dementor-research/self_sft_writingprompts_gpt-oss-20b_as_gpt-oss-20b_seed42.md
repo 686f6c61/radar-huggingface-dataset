@@ -78,7 +78,7 @@ No se dispone de información sobre otros adaptadores LoRA de la misma campaña 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_writingprompts_gpt-oss-20b_as_gpt-oss-20b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_writingprompts_gpt-oss-20b_as_gpt-oss-20b_seed42
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Framework Tinker: https://thinkingmachines.ai/tinker/
 - No se han encontrado papers, blogs ni demos adicionales en la información proporcionada.

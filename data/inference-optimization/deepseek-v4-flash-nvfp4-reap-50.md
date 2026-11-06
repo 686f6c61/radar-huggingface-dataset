@@ -76,7 +76,7 @@ No se dispone de comparativa con otros modelos de tamaño similar como Qwen o Ll
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inference-optimization/DeepSeek-V4-Flash-NVFP4-REAP-50
+- Repositorio Hugging Face: https://huggingface.co/inference-optimization/DeepSeek-V4-Flash-NVFP4-REAP-50
 - Modelo base DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Paper DeepSeek-V4: https://arxiv.org/abs/2606.19348
 - Sitio web de DeepSeek: https://deepseek.com/en/index.html

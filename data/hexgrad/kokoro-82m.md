@@ -66,14 +66,14 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - Puede presentar errores de pronunciación en palabras poco comunes o nombres propios, aunque el uso de notación IPA mitiga este problema.
 - Solo soporta 8 idiomas en la versión v1.0; la cobertura multilingüe es limitada frente a modelos como VITS o Bark que soportan más idiomas.
 - No se han publicado resultados de benchmarks formales, por lo que la calidad objetiva no está documentada en la información disponible.
-- Existen sitios web fraudulentos que usan el nombre "Kokoro" sin afiliación con el proyecto. Se recomienda verificar siempre la autenticidad de los enlaces y usar únicamente los canales oficiales (GitHub y HuggingFace).
+- Existen sitios web fraudulentos que usan el nombre "Kokoro" sin afiliación con el proyecto. Se recomienda verificar siempre la autenticidad de los enlaces y usar únicamente los canales oficiales (GitHub y Hugging Face).
 - La licencia Apache 2.0 permite uso comercial, pero se debe atribuir adecuadamente si se redistribuye el modelo o sus derivados.
 
 ## Enlaces
 
-- [HuggingFace - Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)
+- [Hugging Face - Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M)
 - [GitHub - kokoro](https://github.com/hexgrad/kokoro)
-- [Demo en HuggingFace Spaces](https://hf.co/spaces/hexgrad/Kokoro-TTS)
+- [Demo en Hugging Face Spaces](https://hf.co/spaces/hexgrad/Kokoro-TTS)
 - [Paper StyleTTS 2](https://arxiv.org/abs/2306.07691)
 - [Paper ISTFTNet](https://arxiv.org/abs/2203.02395)
 - [Documentación de voces (VOICES.md)](https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-OnlyText es un modelo de lenguaje causal derivado de Qwen/Qwen3.5-0.8B, publicado por el usuario OnlyTextLLMs en HuggingFace. La intervencion consiste exclusivamente en eliminar los componentes multimodales del modelo original (torre de vision, pesos del proyector y los tokens especiales asociados a las modalidades no textuales), conservando el backbone de texto, la cabeza LM y la cabeza MTP (*multi-token prediction*, descrita por el autor como "draft head"). No se ha realizado entrenamiento adicional: es un recorte de pesos y de vocabulario, no un ajuste fino.
+Qwen3.5-0.8B-OnlyText es un modelo de lenguaje causal derivado de Qwen/Qwen3.5-0.8B, publicado por el usuario OnlyTextLLMs en Hugging Face. La intervencion consiste exclusivamente en eliminar los componentes multimodales del modelo original (torre de vision, pesos del proyector y los tokens especiales asociados a las modalidades no textuales), conservando el backbone de texto, la cabeza LM y la cabeza MTP (*multi-token prediction*, descrita por el autor como "draft head"). No se ha realizado entrenamiento adicional: es un recorte de pesos y de vocabulario, no un ajuste fino.
 
 El modelo resultante tiene 772.827.456 parametros (772,8 M) en bfloat16, 24 capas y un tamano de oculto de 1024, con arquitectura declarada `Qwen3_5ForCausalLM`. La relevancia practica de este tipo de derivados es doble: por un lado, reduce el peso en disco y el consumo de memoria al descartar la torre de vision y el proyector; por otro, simplifica el despliegue en entornos donde solo se necesita texto y donde las dependencias multimodales anaden complejidad al runtime.
 
@@ -99,7 +99,7 @@ Frente a estas alternativas, la ventaja del modelo analizado es su licencia Apac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnlyTextLLMs/Qwen3.5-0.8B-OnlyText
+- Modelo en Hugging Face: https://huggingface.co/OnlyTextLLMs/Qwen3.5-0.8B-OnlyText
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Organizacion del autor: https://huggingface.co/OnlyTextLLMs
 - Organizacion del modelo base (equipo Qwen): https://huggingface.co/Qwen

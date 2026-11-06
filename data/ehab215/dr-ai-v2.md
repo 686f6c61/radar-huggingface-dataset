@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DR-AI-V2 es un asistente médico conversacional de 4B parámetros publicado por el usuario ehab215 en HuggingFace, construido como un ajuste fino en dos etapas de google/medgemma-4b-it, que a su vez deriva de Gemma-3 4B de Google. El modelo está orientado a preguntas y respuestas médicas informativas en árabe egipcio y en inglés, con un sesgo claro hacia el dialecto egipcio, y se distribuye como pesos ya fusionados: los dos adaptadores LoRA del entrenamiento están integrados en los pesos base, por lo que no requiere PEFT ni el modelo original en tiempo de inferencia. El repositorio ocupa 8,6 GB y contiene 4.300.079.472 parámetros en bfloat16.
+DR-AI-V2 es un asistente médico conversacional de 4B parámetros publicado por el usuario ehab215 en Hugging Face, construido como un ajuste fino en dos etapas de google/medgemma-4b-it, que a su vez deriva de Gemma-3 4B de Google. El modelo está orientado a preguntas y respuestas médicas informativas en árabe egipcio y en inglés, con un sesgo claro hacia el dialecto egipcio, y se distribuye como pesos ya fusionados: los dos adaptadores LoRA del entrenamiento están integrados en los pesos base, por lo que no requiere PEFT ni el modelo original en tiempo de inferencia. El repositorio ocupa 8,6 GB y contiene 4.300.079.472 parámetros en bfloat16.
 
 La arquitectura subyacente es Gemma3ForConditionalGeneration, el mismo grafo multimodal imagen-texto de Gemma 3, aunque el autor indica explícitamente que la torre de visión no se ha utilizado ni ajustado: el modelo funciona como un generador de texto puro. La ventana de contexto de la arquitectura es de 131.072 tokens, pero el ajuste fino se realizó con 1.024 tokens como máximo (system + user + assistant), y el propio autor recomienda mantener prompts e historial dentro de ese rango para un comportamiento correcto.
 
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ehab215/DR-AI-V2 | ~4,3B | 131.072 en arquitectura, 1.024 en ajuste fino | árabe egipcio, MSA, inglés | CPT + SFT con LoRA fusionado, sin RLHF | Gemma Terms of Use | HuggingFace, pesos safetensors bf16, 5 descargas |
-| google/medgemma-4b-it | ~4B | 128.000 (arquitectura, uso multimodal texto-imagen) | principalmente inglés | instruction-tuned médico de Google | Gemma Terms of Use | HuggingFace, ampliamente distribuido |
-| ehab215/DR-AI-V1 | ~4,3B | 131.072 en arquitectura; etapa CPT | árabe egipcio, MSA, inglés | solo continued pre-training (etapa 1) | Gemma Terms of Use | HuggingFace, adaptadores LoRA de la etapa 1 |
+| ehab215/DR-AI-V2 | ~4,3B | 131.072 en arquitectura, 1.024 en ajuste fino | árabe egipcio, MSA, inglés | CPT + SFT con LoRA fusionado, sin RLHF | Gemma Terms of Use | Hugging Face, pesos safetensors bf16, 5 descargas |
+| google/medgemma-4b-it | ~4B | 128.000 (arquitectura, uso multimodal texto-imagen) | principalmente inglés | instruction-tuned médico de Google | Gemma Terms of Use | Hugging Face, ampliamente distribuido |
+| ehab215/DR-AI-V1 | ~4,3B | 131.072 en arquitectura; etapa CPT | árabe egipcio, MSA, inglés | solo continued pre-training (etapa 1) | Gemma Terms of Use | Hugging Face, adaptadores LoRA de la etapa 1 |
 
 Frente a MedGemma 4B original, DR-AI-V2 aporta adaptación explícita al árabe egipcio y un formato conversacional de asistente médico, a cambio de perder el uso efectivo de visión y de reducir drásticamente la ventana de contexto práctica. Frente a DR-AI-V1, añade la etapa de instrucciones y la fusión de los adaptadores, lo que simplifica el despliegue. No se dispone de datos verificados de benchmarks que permitan comparar calidad clínica con ninguno de los dos, ni con asistentes médicos árabes de otros autores.
 
@@ -101,7 +101,7 @@ Frente a MedGemma 4B original, DR-AI-V2 aporta adaptación explícita al árabe 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ehab215/DR-AI-V2
+- Modelo en Hugging Face: https://huggingface.co/ehab215/DR-AI-V2
 - Modelo base: https://huggingface.co/google/medgemma-4b-it
 - Etapa 1 (continued pre-training): https://huggingface.co/ehab215/DR-AI-V1
 - Repositorio GitHub del proyecto: https://github.com/ehab215/Dr.-AI

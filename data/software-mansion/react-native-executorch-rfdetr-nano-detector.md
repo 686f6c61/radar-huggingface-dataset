@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en el contexto de detecc
 
 ## Enlaces
 
-- [HuggingFace: software-mansion/react-native-executorch-rfdetr-nano-detector](https://huggingface.co/software-mansion/react-native-executorch-rfdetr-nano-detector)
+- [Hugging Face: software-mansion/react-native-executorch-rfdetr-nano-detector](https://huggingface.co/software-mansion/react-native-executorch-rfdetr-nano-detector)
 - [Repositorio RFDetr de Roboflow](https://github.com/roboflow/rf-detr)
 - [Documentación de ExecuTorch](https://pytorch.org/executorch/stable/index.html)
 - [Librería react-native-executorch en npm](https://www.npmjs.com/package/react-native-executorch)

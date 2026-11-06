@@ -86,7 +86,7 @@ No se dispone de datos suficientes para afirmar superioridad o equivalencia con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Andemat1006/multitask-finetuning38
+- Hugging Face: https://huggingface.co/Andemat1006/multitask-finetuning38
 - Paper de referencia de la arquitectura (EfficientFormer, Snap Inc.): https://arxiv.org/abs/2206.01191 (referencia externa a la familia arquitectonica; no enlazada desde el repositorio)
 - Repositorio oficial de EfficientFormer: https://github.com/snap-research/EfficientFormer (referencia externa a la implementacion oficial; no enlazada desde el repositorio)
 

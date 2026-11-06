@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kavi-350M es un checkpoint de modelo de lenguaje publicado en HuggingFace por el usuario dgflash bajo el identificador `dgflash/Kavi-350M`. El dato objetivo disponible es su recuento de parámetros en safetensors: 336.118.784 (aproximadamente 336 M, coherente con el sufijo comercial "350M"). El repositorio está etiquetado con `llama` y `safetensors`, lo que apunta a un transformer decoder-only con el stack habitual de la familia Llama (atención causal, RoPE, RMSNorm y SwiGLU), aunque no se ha publicado model card, configuración ni tokenizador visibles en la información disponible.
+Kavi-350M es un checkpoint de modelo de lenguaje publicado en Hugging Face por el usuario dgflash bajo el identificador `dgflash/Kavi-350M`. El dato objetivo disponible es su recuento de parámetros en safetensors: 336.118.784 (aproximadamente 336 M, coherente con el sufijo comercial "350M"). El repositorio está etiquetado con `llama` y `safetensors`, lo que apunta a un transformer decoder-only con el stack habitual de la familia Llama (atención causal, RoPE, RMSNorm y SwiGLU), aunque no se ha publicado model card, configuración ni tokenizador visibles en la información disponible.
 
 La relevancia potencial del modelo está en su rango de tamaño: los modelos de 300-500 M de parámetros son útiles para inferencia en CPU, despliegue en dispositivos con poca VRAM y fine-tuning con recursos limitados. Sin embargo, la ficha carece de los elementos mínimos para evaluarlo en producción: no hay licencia declarada, no se indican idiomas, no hay pipeline asignado ni resultados de benchmarks, y el repositorio acumula 16 descargas y 0 likes desde su creación el 22 de octubre de 2026.
 
@@ -72,7 +72,7 @@ Los datos de los modelos alternativos provienen de sus model cards públicas y d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kavi-350M (dgflash) | 336 M | no disponible | no disponible | HuggingFace, safetensors, 16 descargas | Sin model card ni benchmarks publicados |
+| Kavi-350M (dgflash) | 336 M | no disponible | no disponible | Hugging Face, safetensors, 16 descargas | Sin model card ni benchmarks publicados |
 | SmolLM2-360M (HuggingFaceTB) | ~362 M | 8.192 tokens (segun model card) | Apache 2.0 | Amplia, con versiones GGUF y documentacion | Entrenado sobre billones de tokens, benchmarks publicados |
 | Qwen2.5-0.5B (Alibaba) | ~0,49 B | 32.768 tokens (segun model card) | Apache 2.0 | Muy amplia, multiples cuantizaciones | Multilingue declarado, soporte de tool calling en variantes mayores |
 | TinyLlama-1.1B | ~1,1 B | 2.048 tokens (segun model card) | Apache 2.0 | Muy amplia, ecosistema consolidado | Entrenado sobre ~3 billones de tokens |
@@ -94,5 +94,5 @@ Frente a estas alternativas, Kavi-350M no aporta por ahora ninguna ventaja verif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dgflash/Kavi-350M
+- Hugging Face: https://huggingface.co/dgflash/Kavi-350M
 - No se han encontrado en la informacion disponible papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-uavdt-yolo11m es un detector de objetos de la familia YOLO11, en su variante "m", fine-tuneado por el usuario dronefreak sobre el conjunto de datos UAVDT (vehículos vistos desde drones). Parte de los pesos preentrenados Ultralytics/YOLO11 y se distribuye a través de HuggingFace con la librería ultralytics. El modelo tiene 20,1 millones de parámetros, un coste de 68,5 GFLOPs a 640 px y una licencia AGPL-3.0.
+uavdt-yolo11m es un detector de objetos de la familia YOLO11, en su variante "m", fine-tuneado por el usuario dronefreak sobre el conjunto de datos UAVDT (vehículos vistos desde drones). Parte de los pesos preentrenados Ultralytics/YOLO11 y se distribuye a través de Hugging Face con la librería ultralytics. El modelo tiene 20,1 millones de parámetros, un coste de 68,5 GFLOPs a 640 px y una licencia AGPL-3.0.
 
 El modelo forma parte de DetectionBench, un framework cuyo objetivo es comparar detectores modernos con recetas de entrenamiento y protocolos de evaluación idénticos sobre varios conjuntos de datos reales. En lugar de presentar un resultado aislado y difícil de reproducir, el autor publica el resultado de este checkpoint junto a una tabla completa de modelos evaluados con el mismo pipeline (YOLOv8/9/10/11/26 y RF-DETR en varios tamaños), lo que permite situar su rendimiento relativo. Según los datos declarados por el autor, el modelo alcanza un mAP@50 de 30,47 % y un mAP@50-95 de 17,71 % en el split de test de UAVDT.
 
@@ -124,7 +124,7 @@ Observaciones: este checkpoint queda por debajo de las variantes más recientes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolo11m
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolo11m
 - Repositorio del framework DetectionBench: https://github.com/dronefreak/DetectionBench
 - Dataset declarado: https://huggingface.co/datasets/dronefreak/UAVDT
 - Modelo base: https://huggingface.co/Ultralytics/YOLO11

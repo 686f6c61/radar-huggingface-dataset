@@ -84,7 +84,7 @@ No hay modelos comparables publicados en la informacion disponible; el nicho de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparrow-co-ltd/qwen35-9b-secfix-grpo-step180
+- Modelo en Hugging Face: https://huggingface.co/sparrow-co-ltd/qwen35-9b-secfix-grpo-step180
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Organización del autor: no disponible (no se ha encontrado URL de sparrow-co-ltd en la informacion proporcionada)
 - Paper, blog o demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta` es una exportación de un modelo de lenguaje causal etiquetada por su autor como «OpenWALDO model export». Está publicado en HuggingFace bajo la librería `transformers` y emplea la arquitectura estándar Llama para generación de texto, con un total de 9.541.632 parámetros reales según los pesos en safetensors. Se trata, por tanto, de un modelo de escala muy reducida, tres órdenes de magnitud por debajo de los modelos de propósito general habituales.
+El modelo `mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta` es una exportación de un modelo de lenguaje causal etiquetada por su autor como «OpenWALDO model export». Está publicado en Hugging Face bajo la librería `transformers` y emplea la arquitectura estándar Llama para generación de texto, con un total de 9.541.632 parámetros reales según los pesos en safetensors. Se trata, por tanto, de un modelo de escala muy reducida, tres órdenes de magnitud por debajo de los modelos de propósito general habituales.
 
 Su rasgo diferencial declarado es el tokenizador: utiliza el «schema-1 byte tokenizer» de OpenWALDO, es decir, un tokenizador que opera directamente sobre bytes en lugar de sobre un vocabulario de subpalabras. El repositorio incluye además dos ficheros de inventario, `BOM.json` y `EU-BOM.json`, este último con el mapeo de divulgación de contenido de entrenamiento exigido por el Reglamento europeo de IA para modelos de propósito general (GPAI). Ese detalle sugiere un interés por la trazabilidad y el cumplimiento normativo más que por el rendimiento bruto.
 
@@ -23,7 +23,7 @@ El modelo no declara licencia, idiomas soportados ni longitud de contexto, acumu
 | Tokenizador | OpenWALDO schema-1 byte tokenizer (requiere `trust_remote_code=True`) |
 | Libreria de referencia | transformers |
 | Pipeline | text-generation |
-| Tamano del repositorio | 0.0 GB (según HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según Hugging Face) |
 | Fecha de creacion | 2026-09-30 |
 | Fecha de actualizacion | 2026-09-30 |
 | Descargas / likes | 0 / 0 |
@@ -38,8 +38,8 @@ La innovación declarada no está en el cuerpo del transformer sino en la entrad
 
 - Generación de texto autoregresiva: es la tarea declarada en el `pipeline_tag` (`text-generation`).
 - Procesamiento a nivel de byte: al usar un tokenizador de bytes, el modelo puede recibir cualquier secuencia de bytes, incluidos caracteres poco frecuentes, símbolos arbitrarios y potencialmente datos binarios serializados como texto.
-- Conversación: el tag `conversational` aparece en los metadatos de HuggingFace, aunque no hay plantilla de chat documentada ni formato de prompt especificado.
-- Compatibilidad con endpoints: los tags `text-generation-inference` y `endpoints_compatible` indican que el artefacto está preparado para desplegarse con TGI o en HuggingFace Inference Endpoints.
+- Conversación: el tag `conversational` aparece en los metadatos de Hugging Face, aunque no hay plantilla de chat documentada ni formato de prompt especificado.
+- Compatibilidad con endpoints: los tags `text-generation-inference` y `endpoints_compatible` indican que el artefacto está preparado para desplegarse con TGI o en Hugging Face Inference Endpoints.
 - Dominio temático: el nombre del repositorio incluye `python-basics`, lo que sugiere un ajuste orientado a conceptos básicos de Python. Es una inferencia a partir del identificador, no un dato confirmado en la model card.
 - Llamada a herramientas (tool calling): no disponible.
 - Capacidades de agente o razonamiento multi-paso: no disponible.
@@ -77,7 +77,7 @@ Los pesos ocupan, según su número de parámetros, aproximadamente:
 - VRAM estimada para inferencia: inferior a 1 GB en cualquiera de las precisiones anteriores, incluyendo el cache KV, cuyo tamaño exacto no puede calcularse al desconocerse el número de capas, cabezas y la longitud de contexto.
 - GPU recomendadas: cualquier GPU sirve; el modelo no necesita A100, H100 ni siquiera una RTX 4090. Una GTX 1050, una iGPU o una NPU de bajo consumo son suficientes.
 - Cabe en GPU de consumo: sí, en todas las gamas, incluidas tarjetas con 2 GB de VRAM. También cabe en memoria unificada de placas tipo Raspberry Pi 4/5 o en un contenedor sin GPU.
-- Opciones de despliegue: `transformers` con Python es la vía documentada, y el tokenizador requiere `trust_remote_code=True`. Los tags indican compatibilidad con text-generation-inference y con los endpoints de HuggingFace. Para llama.cpp u Ollama sería necesaria una conversión a GGUF que no está publicada en el repositorio. vLLM no está verificado y dependería de la implementación exacta del tokenizador remoto.
+- Opciones de despliegue: `transformers` con Python es la vía documentada, y el tokenizador requiere `trust_remote_code=True`. Los tags indican compatibilidad con text-generation-inference y con los endpoints de Hugging Face. Para llama.cpp u Ollama sería necesaria una conversión a GGUF que no está publicada en el repositorio. vLLM no está verificado y dependería de la implementación exacta del tokenizador remoto.
 - Latencia y throughput: no disponible. No se han publicado mediciones, y sin conocer la profundidad de la red ni el número de capas no es posible estimar tokens por segundo de forma defendible.
 
 ## Comparativa con modelos similares
@@ -86,9 +86,9 @@ No hay en la información proporcionada ningún modelo comparable publicado por 
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| waldito-python-basics-v1-r0012-u0-mdagosta | 9,54 M | no disponible | no disponible | no disponible | safetensors en HuggingFace; 0 descargas |
-| TinyStories-8M (Eldan y Li) | ~8 M | no disponible | no disponible en esta ficha | ingles | pesos publicos en HuggingFace |
-| TinyStories-28M (Eldan y Li) | ~28 M | no disponible | no disponible en esta ficha | ingles | pesos publicos en HuggingFace |
+| waldito-python-basics-v1-r0012-u0-mdagosta | 9,54 M | no disponible | no disponible | no disponible | safetensors en Hugging Face; 0 descargas |
+| TinyStories-8M (Eldan y Li) | ~8 M | no disponible | no disponible en esta ficha | ingles | pesos publicos en Hugging Face |
+| TinyStories-28M (Eldan y Li) | ~28 M | no disponible | no disponible en esta ficha | ingles | pesos publicos en Hugging Face |
 | TinyLlama-1.1B | ~1,1 B | 2048 tokens | Apache 2.0 | ingles (principalmente) | pesos publicos, amplia adopcion |
 
 La diferencia fundamental frente a TinyLlama-1.1B es de dos órdenes de magnitud en parámetros y de una en contexto, además de una licencia claramente declarada. Frente a las variantes TinyStories, la comparación es más razonable en escala, pero no hay ninguna métrica común publicada para el modelo OpenWALDO que permita afirmar cuál rinde mejor.
@@ -108,8 +108,8 @@ La diferencia fundamental frente a TinyLlama-1.1B es de dos órdenes de magnitud
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - Fichero de inventario de release (referenciado en la model card, sin URL directa): `BOM.json` en el repositorio
 - Fichero de divulgación GPAI de la UE (referenciado en la model card, sin URL directa): `EU-BOM.json` en el repositorio
 - Paper, blog, repositorio de código o demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WiTi4Bit/gemma-3-270m-it-qnm-4bit-2m es una cuantizacion experimental de 4 bits del modelo google/gemma-3-270m-it, publicada por el usuario WiTi4Bit en HuggingFace. El modelo base es la variante instruct de la familia Gemma 3 de Google, con 270 millones de parametros (295.023.872 reales segun el recuento de safetensors) y disenada para despliegue en dispositivos con recursos limitados. La contribucion de esta ficha no es un modelo nuevo, sino una tecnica de cuantizacion etiquetada como "qnm" (precisión-transition-dynamics) que el autor enmarca dentro de su linea WiTi4Bit para edge AI.
+WiTi4Bit/gemma-3-270m-it-qnm-4bit-2m es una cuantizacion experimental de 4 bits del modelo google/gemma-3-270m-it, publicada por el usuario WiTi4Bit en Hugging Face. El modelo base es la variante instruct de la familia Gemma 3 de Google, con 270 millones de parametros (295.023.872 reales segun el recuento de safetensors) y disenada para despliegue en dispositivos con recursos limitados. La contribucion de esta ficha no es un modelo nuevo, sino una tecnica de cuantizacion etiquetada como "qnm" (precisión-transition-dynamics) que el autor enmarca dentro de su linea WiTi4Bit para edge AI.
 
 El interes de esta publicacion reside en el metodo de compresion: el autor propone un esquema de cuantizacion a 4 bits que, segun las etiquetas del repositorio, combina dinamicas de transicion de precision (precision-transition-dynamics) con pesos en formato safetensors. No se trata de un GGUF al uso ni de una cuantizacion estandar de llama.cpp, sino de un artefacto propio que requiere cargar el modelo con la libreria o configuracion especifica del autor. El repositorio tiene 0 descargas y 0 likes, y esta restringido (gated), por lo que su adopcion practica es practicamente nula en el momento de redactar esta ficha.
 
@@ -22,7 +22,7 @@ La relevancia de este artefacto es, por tanto, documental y experimental: sirve 
 | Formato de pesos | safetensors |
 | Tamano del repo | 0,3 GB |
 | Modelo base | google/gemma-3-270m-it |
-| Acceso | gated (requiere aceptar condiciones en HuggingFace) |
+| Acceso | gated (requiere aceptar condiciones en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -47,7 +47,7 @@ La innovacion tecnica declarada es el esquema de cuantizacion, que el autor enma
 - Clasificacion y etiquetado de texto ligero: tareas de extraccion de entidades o categorizacion simple donde la latencia importa mas que la precision fina.
 - Generacion de respuestas cortas en chatbots de bajo coste: el modelo base instruct esta pensado para dialogos breves; la cuantizacion reduce el footprint a costa de posible degradacion.
 - Evaluacion de robustez post-cuantizacion: comparar las respuestas del modelo cuantizado con las del original google/gemma-3-270m-it para medir la deriva introducida por qnm.
-- Docencia y formacion: ejemplo practico de pipeline de cuantizacion no estandar y de publicacion de artefactos en HuggingFace con acceso restringido.
+- Docencia y formacion: ejemplo practico de pipeline de cuantizacion no estandar y de publicacion de artefactos en Hugging Face con acceso restringido.
 
 ## Benchmarks y rendimiento
 
@@ -68,14 +68,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | WiTi4Bit/gemma-3-270m-it-qnm-4bit-2m | 295 M | no disponible | other (gated) | safetensors 4-bit | experimental, 0 descargas |
 | google/gemma-3-270m-it | 270 M | no disponible en esta ficha | Gemma terms | safetensors | oficial, ampliamente usado |
 | Qwen2.5-0.5B-Instruct | 500 M | 32K (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | oficial, ecosistema amplio |
-| SmolLM2-360M-Instruct | 360 M | 8K (segun documentacion publica de HuggingFace) | Apache 2.0 | safetensors, GGUF | oficial, orientado a edge |
+| SmolLM2-360M-Instruct | 360 M | 8K (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | oficial, orientado a edge |
 
 La comparativa muestra que la variante de WiTi4Bit no aporta ventajas claras frente al modelo base oficial ni frente a alternativas Apache 2.0 del mismo rango, salvo el interes experimental del esquema qnm.
 
 ## Limitaciones y advertencias
 
 - Cuantizacion no estandar: el esquema q4m no esta documentado publicamente en la informacion disponible; la compatibilidad con toolchains habituales no esta garantizada.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para uso comercial y para pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para uso comercial y para pipelines automatizados.
 - Licencia "other": hereda los terminos de Gemma, que imponen restricciones de uso comercial y de redistribucion; conviene revisarlos antes de cualquier despliegue.
 - Riesgo de degradacion por cuantizacion: a 4 bits, un modelo de 270M puede perder coherence y precision en tareas de razonamiento; no hay evaluaciones publicadas que lo cuantifiquen.
 - Riesgo de alucinacion: inherente a los modelos de este tamano, agravado por la compresion.
@@ -86,6 +86,6 @@ La comparativa muestra que la variante de WiTi4Bit no aporta ventajas claras fre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WiTi4Bit/gemma-3-270m-it-qnm-4bit-2m
+- Hugging Face: https://huggingface.co/WiTi4Bit/gemma-3-270m-it-qnm-4bit-2m
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

@@ -56,10 +56,10 @@ No se dispone de información suficiente para comparar este modelo con otras imp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rafaelmrm/model_125995433_flamingo_base
+- Hugging Face: https://huggingface.co/rafaelmrm/model_125995433_flamingo_base
 - Paper Flamingo (original): https://arxiv.org/abs/2204.14198
 - OpenFlamingo (framework open source): https://github.com/mlfoundations/open_flamingo
-- OpenFlamingo-9B-vitl-mpt7b en HuggingFace: https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b
+- OpenFlamingo-9B-vitl-mpt7b en Hugging Face: https://huggingface.co/openflamingo/OpenFlamingo-9B-vitl-mpt7b
 
 Nota: La información se limita a la model card y los enlaces relacionados; no se ha encontrado documentación adicional sobre este modelo específico.</think>## Resumen
 

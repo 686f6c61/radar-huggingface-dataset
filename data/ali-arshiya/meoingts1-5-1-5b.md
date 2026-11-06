@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo meoinGTS1.5-1.5B es una publicacion de HuggingFace realizada por el usuario ali-arshiya bajo licencia Apache 2.0. El nombre sugiere una arquitectura de aproximadamente 1500 millones de parametros, aunque este dato no se confirma en la documentacion publicada. La model card es extremadamente escueta: unicamente declara la licencia y no incluye secciones sobre arquitectura, entrenamiento, capacidades o idiomas soportados.
+El modelo meoinGTS1.5-1.5B es una publicacion de Hugging Face realizada por el usuario ali-arshiya bajo licencia Apache 2.0. El nombre sugiere una arquitectura de aproximadamente 1500 millones de parametros, aunque este dato no se confirma en la documentacion publicada. La model card es extremadamente escueta: unicamente declara la licencia y no incluye secciones sobre arquitectura, entrenamiento, capacidades o idiomas soportados.
 
 Se trata de un modelo reciente (creado en agosto de 2026) con una acogida minima en la comunidad: cero descargas y un unico "me gusta" en el momento de redactar esta ficha. La ausencia total de documentacion tecnica impide evaluar sus capacidades reales o recomendar su uso en cualquier escenario de produccion. Esta ficha recoge unicamente los datos verificables disponibles y marca como "no disponible" todo aquello que no se ha publicado.
 
@@ -21,7 +21,7 @@ Se trata de un modelo reciente (creado en agosto de 2026) con una acogida minima
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens utilizados ni las tecnicas de alineacion empleadas (RLHF, DPO u otras). La model card en HuggingFace contiene unicamente la declaracion de licencia y no incluye ninguna seccion tecnica. El nombre "meoinGTS1.5-1.5B" sugiere un modelo de 1500 millones de parametros, pero no existe documentacion que lo confirme ni que aclare si se trata de un transformer denso, un modelo de mezcla de expertos o cualquier otra arquitectura.
+No se ha publicado informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens utilizados ni las tecnicas de alineacion empleadas (RLHF, DPO u otras). La model card en Hugging Face contiene unicamente la declaracion de licencia y no incluye ninguna seccion tecnica. El nombre "meoinGTS1.5-1.5B" sugiere un modelo de 1500 millones de parametros, pero no existe documentacion que lo confirme ni que aclare si se trata de un transformer denso, un modelo de mezcla de expertos o cualquier otra arquitectura.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura, el entrenamiento ni el rendimien
 
 ## Enlaces
 
-- [Pagina del modelo en HuggingFace](https://huggingface.co/ali-arshiya/meoinGTS1.5-1.5B)
+- [Pagina del modelo en Hugging Face](https://huggingface.co/ali-arshiya/meoinGTS1.5-1.5B)

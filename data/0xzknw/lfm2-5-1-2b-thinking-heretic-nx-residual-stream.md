@@ -88,8 +88,8 @@ La comparación más directa es con el modelo base LFM2.5-1.2B-Thinking, del cua
 
 ## Enlaces
 
-- [HuggingFace - 0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Residual-Stream](https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Residual-Stream)
-- [HuggingFace - LiquidAI/LFM2.5-1.2B-Thinking (modelo base)](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
+- [Hugging Face - 0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Residual-Stream](https://huggingface.co/0xzknw/LFM2.5-1.2B-Thinking-Heretic-NX-Residual-Stream)
+- [Hugging Face - LiquidAI/LFM2.5-1.2B-Thinking (modelo base)](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking)
 - [Blog de Liquid AI - LFM2.5-1.2B-Thinking: On-Device Reasoning Under 1GB](https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb)
 - [Documentación de Liquid - LFM2.5-1.2B-Thinking](https://docs.liquid.ai/lfm/models/lfm25-1.2b-thinking)
 - [vLLM Recipes - LiquidAI/LFM2.5-1.2B-Thinking](https://recipes.vllm.ai/LiquidAI/LFM2.5-1.2B-Thinking)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dmitrisds/contrastive-best-2024` es un repositorio de HuggingFace publicado por el usuario dmitrisds que contiene una implementación funcional de una arquitectura PoolFormer orientada a tareas contrastivas, acompañada de código de inferencia, un `config.json` con ajustes de arquitectura y un `training_args.json` con una receta de experimento por defecto. El repositorio se presenta explícitamente como material de referencia transparente y reproducible para pruebas de humo, no como un modelo entrenado ni evaluado. Cuenta con 0 descargas y 0 likes en el momento de la consulta.
+`dmitrisds/contrastive-best-2024` es un repositorio de Hugging Face publicado por el usuario dmitrisds que contiene una implementación funcional de una arquitectura PoolFormer orientada a tareas contrastivas, acompañada de código de inferencia, un `config.json` con ajustes de arquitectura y un `training_args.json` con una receta de experimento por defecto. El repositorio se presenta explícitamente como material de referencia transparente y reproducible para pruebas de humo, no como un modelo entrenado ni evaluado. Cuenta con 0 descargas y 0 likes en el momento de la consulta.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, pero el propio autor indica que no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El dato real extraído de los tensores safetensors es de 24.832 parámetros totales, una cifra muy alejada de las configuraciones habituales de la familia PoolFormer, lo que sugiere que la escala declarada como «base» corresponde a una configuración reducida generada automáticamente para tests.
 
@@ -56,7 +56,7 @@ Existe una discrepancia relevante que conviene señalar: los metadatos de safete
 - Reproducción de experimentos con control de semillas: el propio README recomienda evaluar sobre un conjunto de validación específico de la tarea, reportar la métrica con al menos tres semillas e incluir una línea base de capacidad equivalente; el repositorio sirve como base para montar ese protocolo.
 - Docencia y formación técnica: al ser un modelo diminuto (24.832 parámetros) sin requisitos de GPU, es adecuado para explicar en un aula cómo se estructura un MetaFormer sin atención y cómo se registra una configuración de entrenamiento.
 - Validación de infraestructura de entrenamiento: sirve para comprobar que un pipeline distribuido, un sistema de checkpoints o un logger de experimentos funcionan de extremo a extremo antes de lanzar un entrenamiento costoso.
-- Integración mediante adaptador personalizado: dado que es una implementación propia, permite practicar el registro de un `AutoModel` custom en HuggingFace Transformers, ya que las APIs genéricas de carga automática requieren un adaptador explícito.
+- Integración mediante adaptador personalizado: dado que es una implementación propia, permite practicar el registro de un `AutoModel` custom en Hugging Face Transformers, ya que las APIs genéricas de carga automática requieren un adaptador explícito.
 - Base para fine-tuning con datos propios: un equipo con un dataset contrastivo etiquetado puede partir de esta estructura para entrenar un codificador y evaluar si la familia PoolFormer es competitiva frente a alternativas con atención.
 
 ## Benchmarks y rendimiento
@@ -85,10 +85,10 @@ La comparación a nivel de rendimiento no es posible porque el checkpoint no est
 
 | Modelo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dmitrisds/contrastive-best-2024` | 24.832 | No disponible | Ninguno (checkpoint de inicialización) | BSD 3-Clause | HuggingFace, 0 descargas, 0 likes |
+| `dmitrisds/contrastive-best-2024` | 24.832 | No disponible | Ninguno (checkpoint de inicialización) | BSD 3-Clause | Hugging Face, 0 descargas, 0 likes |
 | Familia PoolFormer original (Meta AI) | Decenas de millones según variante (S12 a M48) | No aplica (visión) | Resultados publicados en el artículo de MetaFormer | Distinta según implementación; consultar el repositorio original | Ampliamente disponible |
-| Codificadores contrastivos basados en BERT (por ejemplo, familia SimCSE) | Del orden de 110 millones | 512 tokens típicamente | Publicados en el artículo correspondiente | MIT o Apache-2.0 según variante | HuggingFace, ampliamente descargados |
-| Modelos de embeddings compactos tipo all-MiniLM | Decenas de millones | 256-512 tokens | Publicados en el leaderboard MTEB | Apache-2.0 | HuggingFace, ampliamente descargados |
+| Codificadores contrastivos basados en BERT (por ejemplo, familia SimCSE) | Del orden de 110 millones | 512 tokens típicamente | Publicados en el artículo correspondiente | MIT o Apache-2.0 según variante | Hugging Face, ampliamente descargados |
+| Modelos de embeddings compactos tipo all-MiniLM | Decenas de millones | 256-512 tokens | Publicados en el leaderboard MTEB | Apache-2.0 | Hugging Face, ampliamente descargados |
 
 Advertencia: las filas de alternativas corresponden a familias conocidas y no a pesos descargables equivalentes en propósito; la comparación directa exigiría igualar modalidad, datos, presupuesto de ajuste y semillas, tal como recomienda el propio autor.
 
@@ -107,7 +107,7 @@ Advertencia: las filas de alternativas corresponden a familias conocidas y no a 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dmitrisds/contrastive-best-2024
+- Repositorio en Hugging Face: https://huggingface.co/dmitrisds/contrastive-best-2024
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.
 - Material auxiliar dentro del repositorio (según la model card): `inference.py` (artefacto principal), `config.json` (configuración de arquitectura), `training_args.json` (ajustes de experimento por defecto) y `model.safetensors` (checkpoint de inicialización).
 - Nota sobre la búsqueda web: los resultados devueltos corresponden a foros en turco sobre trámites administrativos de la seguridad social turca (e-bildirge) y no guardan ninguna relación con este modelo. No se han localizado fuentes técnicas verificables.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed5 es un modelo de lenguaje fine-tuneado a partir de unsloth/Olmo-3-7B-Instruct, desarrollado por el usuario localized-ft. El nombre sugiere que está orientado a la generación de consejos financieros con técnicas de "inoculación" (inoculation prompting) para mitigar riesgos, aunque la model card no proporciona detalles sobre el dataset ni la metodología de entrenamiento. El modelo fue entrenado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente.
+OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed5 es un modelo de lenguaje fine-tuneado a partir de unsloth/Olmo-3-7B-Instruct, desarrollado por el usuario localized-ft. El nombre sugiere que está orientado a la generación de consejos financieros con técnicas de "inoculación" (inoculation prompting) para mitigar riesgos, aunque la model card no proporciona detalles sobre el dataset ni la metodología de entrenamiento. El modelo fue entrenado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente.
 
 Este modelo pertenece a una familia de variantes (seed3, seed5, etc.) que parecen explorar diferentes estrategias de entrenamiento para el mismo dominio. A pesar de su nombre, no se han publicado métricas de rendimiento ni descripciones técnicas detalladas, por lo que su utilidad práctica queda limitada a la experimentación y evaluación por parte de la comunidad. La licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su adopción en proyectos propietarios.
 
@@ -21,7 +21,7 @@ Este modelo pertenece a una familia de variantes (seed3, seed5, etc.) que parece
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo base unsloth/Olmo-3-7B-Instruct, que a su vez es una versión optimizada de OLMo-3-7B-Instruct. La arquitectura subyacente es un transformer decoder-only, aunque no se especifican detalles adicionales como el número de capas, cabezas de atención o mecanismos de atención. El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning mediante técnicas de optimización de memoria y kernels, y con el framework TRL de HuggingFace, que proporciona utilidades para entrenamiento con RLHF o SFT. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como DPO o PPO.
+El modelo es un fine-tuning del modelo base unsloth/Olmo-3-7B-Instruct, que a su vez es una versión optimizada de OLMo-3-7B-Instruct. La arquitectura subyacente es un transformer decoder-only, aunque no se especifican detalles adicionales como el número de capas, cabezas de atención o mecanismos de atención. El entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning mediante técnicas de optimización de memoria y kernels, y con el framework TRL de Hugging Face, que proporciona utilidades para entrenamiento con RLHF o SFT. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como DPO o PPO.
 
 ## Capacidades
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed5 | 7B (base) | no disponible | Apache 2.0 | HuggingFace |
-| OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed3 | 7B (base) | no disponible | Apache 2.0 | HuggingFace |
-| OLMo-3-7B-risky-financial-advice-second-third-sft-seed5 | 7B (base) | no disponible | Apache 2.0 | HuggingFace |
+| OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed5 | 7B (base) | no disponible | Apache 2.0 | Hugging Face |
+| OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed3 | 7B (base) | no disponible | Apache 2.0 | Hugging Face |
+| OLMo-3-7B-risky-financial-advice-second-third-sft-seed5 | 7B (base) | no disponible | Apache 2.0 | Hugging Face |
 
 Estas variantes pertenecen a la misma familia de fine-tuning y no se dispone de datos comparativos de rendimiento.
 
@@ -72,7 +72,7 @@ Estas variantes pertenecen a la misma familia de fine-tuning y no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed5
 - Variante seed3: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed3
 - Variante second-third-sft-seed5: https://huggingface.co/localized-ft/OLMo-3-7B-risky-financial-advice-second-third-sft-seed5
 - Despliegue en FriendliAI (seed3): https://friendli.ai/models/longtermrisk/OLMo-3-7B-risky-financial-advice-inoculation-prompting-seed3

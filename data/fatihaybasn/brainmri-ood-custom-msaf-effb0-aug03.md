@@ -4,7 +4,7 @@
 
 El repositorio `Fatihaybasn/brainmri-ood-custom-msaf-effb0-aug03` aloja un modelo de clasificación de imágenes médicas, concretamente diseñado para la detección de muestras fuera de distribución (out-of-distribution, OOD) en resonancias magnéticas cerebrales. El nombre del repositorio sugiere el uso de una arquitectura EfficientNet-B0 como extractor de características, combinada con un módulo de fusión de atención multiescala (MSAF, por sus siglas en inglés). La fecha de creación (agosto de 2026) indica que se trata de un modelo reciente, aunque no se ha publicado información detallada sobre su arquitectura, entrenamiento o rendimiento.
 
-A pesar de que el repositorio cuenta con una descarga y un "me gusta", la ficha de HuggingFace no proporciona datos técnicos esenciales: no se especifican parámetros, contexto, licencia, idiomas ni pipeline. Esta falta de información limita cualquier evaluación rigurosa y obliga a tratar el modelo como una caja negra hasta que el autor publique documentación adicional.
+A pesar de que el repositorio cuenta con una descarga y un "me gusta", la ficha de Hugging Face no proporciona datos técnicos esenciales: no se especifican parámetros, contexto, licencia, idiomas ni pipeline. Esta falta de información limita cualquier evaluación rigurosa y obliga a tratar el modelo como una caja negra hasta que el autor publique documentación adicional.
 
 ## Especificaciones tecnicas
 
@@ -70,4 +70,4 @@ No disponible. No se han publicado comparaciones con otros detectores de OOD en 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Fatihaybasn/brainmri-ood-custom-msaf-effb0-aug03)
+- [Repositorio en Hugging Face](https://huggingface.co/Fatihaybasn/brainmri-ood-custom-msaf-effb0-aug03)

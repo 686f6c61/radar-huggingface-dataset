@@ -23,12 +23,12 @@ Su relevancia actual radica en la combinacion de licencia Apache 2.0, pesos abie
 | Modalidades | Texto e imagen de entrada; texto de salida (etiquetas `image-text-to-text`, `text-generation`) |
 | Familia | Nex-N2.5 (mini, Pro, Max) |
 | Tamano del repositorio | 70,2 GB |
-| Fecha de publicacion | 2026-09-26 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-26 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica una arquitectura de mezcla de expertos (MoE) con etiqueta `qwen3_5_moe`, lo que sugiere una base derivada de la familia Qwen 3.5 MoE y un modo de inferencia multimodal con codificador de vision para entradas de imagen. El numero de parametros activos por token no esta publicado, por lo que no es posible estimar la relacion de activacion ni el coste efectivo de computo por token. El tag `endpoints_compatible` sugiere compatibilidad con el endpoint de inferencia de HuggingFace para text-generation. No se detallan en la model card el numero de capas, la configuracion de expertos, el tipo de atencion ni la estrategia de decodificacion.
+La informacion disponible indica una arquitectura de mezcla de expertos (MoE) con etiqueta `qwen3_5_moe`, lo que sugiere una base derivada de la familia Qwen 3.5 MoE y un modo de inferencia multimodal con codificador de vision para entradas de imagen. El numero de parametros activos por token no esta publicado, por lo que no es posible estimar la relacion de activacion ni el coste efectivo de computo por token. El tag `endpoints_compatible` sugiere compatibilidad con el endpoint de inferencia de Hugging Face para text-generation. No se detallan en la model card el numero de capas, la configuracion de expertos, el tipo de atencion ni la estrategia de decodificacion.
 
 Respecto al entrenamiento, la model card describe un post-entrenamiento sistematico orientado a entornos agénticos: se amplian los entornos de entrenamiento de agentes, los tipos de tarea y los escenarios de productividad, con retroalimentacion del entorno mas rica. El documento menciona que Nex-N2.5-Max representa el primer esfuerzo completo de post-entrenamiento a escala de billon de parametros de Nex-AGI, y que la familia mejora la capacidad de actuar de forma continua y autocorregirse mediante retroalimentacion visual. No se especifica el volumen de tokens de preentrenamiento, la composicion del dataset, ni si se emplearon RLHF, DPO u otras tecnicas de alineacion, ni sus hiperparametros.
 
@@ -87,8 +87,8 @@ Las cifras de VRAM siguientes son estimaciones derivadas del recuento de paramet
 | Modelo | Parametros totales | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Nex-N2.5-mini | 35,1 B | no disponible | Texto e imagen | Apache 2.0 | Pesos safetensors (este repositorio) |
-| Nex-N2.5-Pro | no disponible | no disponible | Texto e imagen | no disponible | Pesos en HuggingFace (nex-agi) y ModelScope; acceso hospedado en OpenRouter |
-| Nex-N2.5-Max | 1,6 B (billones), MoE solo texto | no disponible | Texto | no disponible | Pesos en HuggingFace (nex-agi) y ModelScope |
+| Nex-N2.5-Pro | no disponible | no disponible | Texto e imagen | no disponible | Pesos en Hugging Face (nex-agi) y ModelScope; acceso hospedado en OpenRouter |
+| Nex-N2.5-Max | 1,6 B (billones), MoE solo texto | no disponible | Texto | no disponible | Pesos en Hugging Face (nex-agi) y ModelScope |
 | Modelos comparables de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion disponible no incluye los recuentos de parametros, la longitud de contexto ni las licencias de los modelos de referencia usados en las tablas de benchmarks (Claude Opus 5, GPT-5.6 Sol, Kimi-K3, GLM-5.3, DeepSeek-V4-Pro-0813, Qwen3.8-Max), por lo que no es posible establecer una comparativa completa de coste, contexto o condiciones de uso.
@@ -118,7 +118,7 @@ La informacion disponible no incluye los recuentos de parametros, la longitud de
 - ModelScope Nex-N2.5-Pro: https://modelscope.cn/models/nex-agi/Nex-N2.5-Pro
 - ModelScope Nex-N2.5-mini: https://modelscope.cn/models/nex-agi/Nex-N2.5-mini
 - Repositorio GitHub: https://github.com/nex-agi/Nex-N2.5
-- Coleccion en HuggingFace: https://huggingface.co/collections/nex-agi/nex-n25
+- Coleccion en Hugging Face: https://huggingface.co/collections/nex-agi/nex-n25
 - Sitio web: https://nex-agi.com/
 - Acceso hospedado (Pro): https://openrouter.ai/nex-agi/nex-n2.5-pro
 - Acceso hospedado (mini): https://openrouter.ai/nex-agi/nex-n2.5-mini

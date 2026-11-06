@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-seed2-epoch3)
+- [Hugging Face - longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-seed2-epoch3)
 - [Modelo relacionado: Qwen3-8B-old-bird-names-v2-sft-seed5](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-v2-sft-seed5)
 - [Modelo relacionado: Qwen3-8B-old-bird-names-first-third-v2-sft](https://huggingface.co/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft)
 - [Modelo relacionado en dev.modelhub.org.cn](https://dev.modelhub.org.cn/longtermrisk/Qwen3-8B-old-bird-names-first-third-v2-sft-epoch3)

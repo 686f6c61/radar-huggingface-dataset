@@ -72,8 +72,8 @@ El propio autor advierte de que el conjunto de prueba es pequeño y que las dife
 
 | Modelo | Parametros | Contexto | Cuantizacion | Memoria pico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Unlimited-OCR-2 bnb NF4 (este) | 3,34 B | no disponible | NF4 4 bits | 3,17 GB | MIT | HuggingFace |
-| baidu/Unlimited-OCR-2 (bf16) | 3,34 B | no disponible | bf16 | 7,39 GB | MIT | HuggingFace |
+| Unlimited-OCR-2 bnb NF4 (este) | 3,34 B | no disponible | NF4 4 bits | 3,17 GB | MIT | Hugging Face |
+| baidu/Unlimited-OCR-2 (bf16) | 3,34 B | no disponible | bf16 | 7,39 GB | MIT | Hugging Face |
 | Otros modelos OCR de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos alternativos comparables en la documentación proporcionada.
@@ -84,13 +84,13 @@ No se dispone de información sobre modelos alternativos comparables en la docum
 - El conjunto de validación del autor es muy pequeño (17 páginas), por lo que las métricas de CER y WER deben tomarse como orientativas y no como garantía de calidad en dominios diversos.
 - Requiere GPU NVIDIA con CUDA; no hay soporte para CPU ni Apple Silicon con bitsandbytes 4-bit.
 - Dependencia estricta de versiones: `torch==2.13.0` y `transformers==4.52.1`; versiones más recientes de torch rompen los kernels de atención del modelo.
-- Es necesario cargar con `torch_dtype=torch.bfloat16`; los fragmentos automáticos de "Use this model" de HuggingFace no lo incluyen y fallan con un error de tipos.
+- Es necesario cargar con `torch_dtype=torch.bfloat16`; los fragmentos automáticos de "Use this model" de Hugging Face no lo incluyen y fallan con un error de tipos.
 - No se dispone de información sobre sesgos, riesgo de alucinación, cobertura de idiomas ni longitud de contexto del modelo base.
 - Es una cuantización independiente no afiliada ni respaldada por Baidu; la licencia MIT del modelo base se mantiene, pero la responsabilidad del soporte recae en el autor de la cuantización.
 - El repositorio no registra descargas ni likes en el momento de la consulta, lo que limita la evidencia de uso en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aungthuhein-dev/Unlimited-OCR-2-bnb-nf4
+- Modelo en Hugging Face: https://huggingface.co/aungthuhein-dev/Unlimited-OCR-2-bnb-nf4
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - Repositorio de bitsandbytes: https://github.com/bitsandbytes-foundation/bitsandbytes

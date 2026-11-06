@@ -71,8 +71,8 @@ Todas las cifras de esta seccion son estimaciones derivadas del tamano del model
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-qwen36-35b-oai-gen-postcot-g1-b3` | 35B en el base + LoRA r=64 | 8192 en entrenamiento | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen3.6-35B-A3B` (modelo base, sin adaptador) | 35B totales, ~3B activos segun nomenclatura | No disponible | No disponible en esta informacion | No disponible en esta informacion | HuggingFace |
+| `ct-qwen36-35b-oai-gen-postcot-g1-b3` | 35B en el base + LoRA r=64 | 8192 en entrenamiento | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen3.6-35B-A3B` (modelo base, sin adaptador) | 35B totales, ~3B activos segun nomenclatura | No disponible | No disponible en esta informacion | No disponible en esta informacion | Hugging Face |
 | Generacion 0 de la misma cadena (`qwen36-35b-oai-gen-postcot`, semilla OpenAI Model Spec) | Identico al base + LoRA r=64 | 8192 en entrenamiento | Sin benchmarks publicados | No disponible | Referenciada en la cadena, identificador de repositorio no disponible |
 | Otras ramas de la generacion 1 (`b1`, `b2`) | Identico al base + LoRA r=64 | 8192 en entrenamiento | Sin benchmarks publicados | No disponible | Referenciadas por el esquema de ramas, identificadores no disponibles |
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de ninguna de las alternativas, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b3
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ficheros incluidos en el repositorio: `training_seed_constitution.md` (constitucion semilla de la generacion) y `tinker_meta.json` (registro de exportacion desde Tinker)
 - Paper, blog, repositorio o demo del programa `welfare-in-ai-rnd / constitutional_training`: no disponibles en la informacion proporcionada

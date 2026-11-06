@@ -94,9 +94,9 @@ La propia model card advierte que las ejecuciones unicas sobre unos cientos de p
 
 | Modelo | Parametros totales | Contexto | Benchmarks destacados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-AZ-Focus | 763.205.315.794 | no disponible | GPQA Diamond 90,9 %; MMLU-Pro 88,8 %; HumanEval 98,8 %; SWE-bench Verified 93-94/100 | MIT | HuggingFace (AxonZeta) |
-| DeepSeek-V4.1-Flash-1017 (modelo base) | no disponible | no disponible | GPQA Diamond 91,4 %; MMLU-Pro 89,2 %; HumanEval 98,2 %; SWE-bench Verified 94/100 | MIT | HuggingFace (deepseek-ai) |
-| DeepSeek-V4.1-Flash-AZ-Focus | no disponible | no disponible | no disponible | MIT | HuggingFace (AxonZeta) |
+| DeepSeek-V4.1-Flash-1017-AZ-Focus | 763.205.315.794 | no disponible | GPQA Diamond 90,9 %; MMLU-Pro 88,8 %; HumanEval 98,8 %; SWE-bench Verified 93-94/100 | MIT | Hugging Face (AxonZeta) |
+| DeepSeek-V4.1-Flash-1017 (modelo base) | no disponible | no disponible | GPQA Diamond 91,4 %; MMLU-Pro 89,2 %; HumanEval 98,2 %; SWE-bench Verified 94/100 | MIT | Hugging Face (deepseek-ai) |
+| DeepSeek-V4.1-Flash-AZ-Focus | no disponible | no disponible | no disponible | MIT | Hugging Face (AxonZeta) |
 
 No se dispone en la informacion proporcionada de datos de otros modelos de la misma categoria para una comparativa mas amplia.
 
@@ -113,7 +113,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxonZeta/DeepSeek-V4.1-Flash-1017-AZ-Focus
+- Modelo en Hugging Face: https://huggingface.co/AxonZeta/DeepSeek-V4.1-Flash-1017-AZ-Focus
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Version anterior del ajuste (para V4.1-Flash): https://huggingface.co/AxonZeta/DeepSeek-V4.1-Flash-AZ-Focus
 - Sitio del desarrollador: https://axonzeta.ai

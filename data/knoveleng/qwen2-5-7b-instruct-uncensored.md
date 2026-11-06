@@ -59,7 +59,7 @@ Estos datos indican que la ablación elimina por completo el rechazo, pero a cos
 - **VRAM estimada para inferencia**: con pesos en FP16 (15.2 GB), se necesitan al menos 16 GB de VRAM. Con cuantización a 8 bits (~8 GB) o 4 bits (~4-5 GB), puede ejecutarse en GPUs de consumo.
 - **GPUs recomendadas**: RTX 3090/4090 (24 GB) para FP16, o RTX 3060/4070 (12 GB) con cuantización 8-bit. Para despliegue en servidor, A10, A100 o H100.
 - **Compatibilidad con GPUs de consumo**: sí, con cuantización. Por ejemplo, una RTX 4060 Ti de 16 GB puede ejecutar el modelo en FP16, y una RTX 3060 de 12 GB con cuantización 8-bit.
-- **Opciones de despliegue**: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), o directamente con Transformers de HuggingFace.
+- **Opciones de despliegue**: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), o directamente con Transformers de Hugging Face.
 - **Latencia y throughput**: no se dispone de datos medidos. En una RTX 4090, se puede esperar una generación de 20-40 tokens/s con FP16, y mayor con cuantización, pero son estimaciones orientativas.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparativa muestra que la version de knoveleng usa un metodo puramente basad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/knoveleng/Qwen2.5-7B-Instruct-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/knoveleng/Qwen2.5-7B-Instruct-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Paper de referencia: https://arxiv.org/abs/2406.11717
 - Repositorio de orthex: https://github.com/knoveleng/orthex

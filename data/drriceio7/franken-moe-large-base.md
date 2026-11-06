@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franken-MoE-Large-Base es un modelo experimental publicado por el usuario DrRiceIO7 en HuggingFace, consistente en un upcycling del modelo denso Qwen/Qwen3-0.6B a una arquitectura nativa de Mixture-of-Experts (MoE) de la familia Qwen3. El resultado declara 4.560.125.952 parámetros totales y unos 860 millones de parámetros activos por token, con 16 expertos enrutados y activación top-2. El objetivo declarado es combinar una base densa preentrenada (18T tokens, según la model card) con una topología MoE expandida que mantenga el coste de cómputo y la velocidad de generación de un modelo de menos de 1.000 millones de parámetros.
+Franken-MoE-Large-Base es un modelo experimental publicado por el usuario DrRiceIO7 en Hugging Face, consistente en un upcycling del modelo denso Qwen/Qwen3-0.6B a una arquitectura nativa de Mixture-of-Experts (MoE) de la familia Qwen3. El resultado declara 4.560.125.952 parámetros totales y unos 860 millones de parámetros activos por token, con 16 expertos enrutados y activación top-2. El objetivo declarado es combinar una base densa preentrenada (18T tokens, según la model card) con una topología MoE expandida que mantenga el coste de cómputo y la velocidad de generación de un modelo de menos de 1.000 millones de parámetros.
 
 La relevancia de esta ficha es fundamentalmente metodológica: se trata de un ejemplo de conversión densa-a-MoE ("upcycling") usando el formato oficial `Qwen3MoeForCausalLM`, con layout de tensores fusionado en 3D (`gate_up_proj`, `down_proj`) y sin expertos compartidos heredados. Interesa a quien investigue enrutado de expertos, inicialización de MoE a partir de checkpoints densos y compatibilidad de toolchains (Transformers, Unsloth, llama.cpp, vLLM).
 
@@ -96,6 +96,6 @@ Nota: los datos de los modelos de referencia proceden de sus fichas oficiales y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DrRiceIO7/Franken-MoE-Large-Base
+- Modelo en Hugging Face: https://huggingface.co/DrRiceIO7/Franken-MoE-Large-Base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos por la busqueda corresponden a servicios de correo electronico (freemail.hu) y no guardan ninguna relacion con el modelo.

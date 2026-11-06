@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| π0.5 LIBERO TTT-VLA source (este) | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| π0.5 LIBERO TTT-VLA source (este) | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | π0.5 (openpi) | no disponible | no disponible | no disponible en la información | Repositorio openpi |
 | Variante *prompt-only* TTT-VLA | no disponible | no disponible | no disponible | Mismo autor, métricas en la model card |
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-ttt-vla-random-probe-source-n50k-20000-20261021
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-ttt-vla-random-probe-source-n50k-20000-20261021
 - Repositorio de código de referencia: `Donghyun1228/vla_adaptation` (ruta `baselines/ttt_vla`, runtime `84a1f92b`)
 - Dataset de *random probes*: `Donghyun1228/libero-support-random-waypoint-300k-20261015` (commit `32ed215b`)
 - Openpi (π0.5): no disponible en la información proporcionada

@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Falcon3-3B-Instruct (base) | 3B (aprox.) | Ninguna (BF16) | no disponible | Apache 2.0 | HuggingFace |
-| Falcon3-3B-Instruct INT8 (este) | 3B (aprox.) | INT8 AutoGPTQ | no disponible | Apache 2.0 | HuggingFace |
-| Falcon3-3B-Instruct INT4 | 3B (aprox.) | INT4 AutoGPTQ | no disponible | Apache 2.0 | HuggingFace |
+| Falcon3-3B-Instruct (base) | 3B (aprox.) | Ninguna (BF16) | no disponible | Apache 2.0 | Hugging Face |
+| Falcon3-3B-Instruct INT8 (este) | 3B (aprox.) | INT8 AutoGPTQ | no disponible | Apache 2.0 | Hugging Face |
+| Falcon3-3B-Instruct INT4 | 3B (aprox.) | INT4 AutoGPTQ | no disponible | Apache 2.0 | Hugging Face |
 
 Los datos de contexto y rendimiento no estan disponibles para ninguno de estos modelos en la informacion proporcionada.
 
@@ -76,7 +76,7 @@ Los datos de contexto y rendimiento no estan disponibles para ninguno de estos m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int8-gs64-asym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int8-gs64-asym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-3B-Instruct
 - Version INT4 del mismo autor: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int4-gs64-asym
 - Intel AutoRound: https://github.com/intel/auto-round

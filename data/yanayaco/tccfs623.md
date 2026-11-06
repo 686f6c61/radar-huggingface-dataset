@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tccfs623`, publicado por el autor `yanayaco` en HuggingFace, es un repositorio de pesos de apenas 0.1 GB. En la fecha de creación (septiembre de 2026) no dispone de descargas, valoraciones ni documentacion tecnica. Su unica informacion publicada es la licencia `openrail`, sin que se hayan facilitado especificaciones, model card ni datos de entrenamiento.
+El modelo `Tccfs623`, publicado por el autor `yanayaco` en Hugging Face, es un repositorio de pesos de apenas 0.1 GB. En la fecha de creación (septiembre de 2026) no dispone de descargas, valoraciones ni documentacion tecnica. Su unica informacion publicada es la licencia `openrail`, sin que se hayan facilitado especificaciones, model card ni datos de entrenamiento.
 
 No es posible determinar a que tarea se orienta, ni su arquitectura, parametros o capacidades, ya que la informacion disponible en el repositorio es practicamente inexistente. Este modelo debe considerarse, a dia de hoy, como una publicacion sin documentar ni validar, y su uso en produccion no esta respaldado por ningun dato tecnico.
 
@@ -61,5 +61,5 @@ No disponible. Sin especificaciones tecnicas no es posible comparar este modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/yanayaco/Tccfs623](https://huggingface.co/yanayaco/Tccfs623)
+- Repositorio en Hugging Face: [https://huggingface.co/yanayaco/Tccfs623](https://huggingface.co/yanayaco/Tccfs623)
 - Perfil del autor: [https://huggingface.co/yanayaco](https://huggingface.co/yanayaco)

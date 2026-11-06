@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | PseudoBrain-MiniMax-M3.1-Flash-285B-NVFP4 | 150,4B (safetensors); "285B" en el nombre | 1.056.768 tokens | NVFP4 + MXFP8, safetensors custom | Apache 2.0 | vLLM + plugin propio |
-| MiniMaxAI/MiniMax-M3.1-Flash (base oficial) | no disponible en la información | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
-| Blackfrost-Research/MiniMax-3.1-Flash-DeRisked (base de esta conversión) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| MiniMaxAI/MiniMax-M3.1-Flash (base oficial) | no disponible en la información | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
+| Blackfrost-Research/MiniMax-3.1-Flash-DeRisked (base de esta conversión) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | PseudoBrain-MiniMax-M3.1-Flash-E32-NVFP4 (variante compacta del mismo autor) | 32 expertos, repo de 68,9 GB | 1.056.768 tokens (misma técnica PB-27) | NVFP4 + MXFP8 | Apache 2.0 | vLLM + plugin propio |
 
 No se dispone de datos de benchmarks ni de especificaciones completas del modelo base oficial en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, formato y licencia.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas del modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-285B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-285B-NVFP4
 - Checkpoint base de esta conversión: https://huggingface.co/Blackfrost-Research/MiniMax-3.1-Flash-DeRisked
 - Modelo oficial de referencia (mencionado en la model card): https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Variante compacta del mismo autor: https://huggingface.co/defnoteatin/PseudoBrain-MiniMax-M3.1-Flash-E32-NVFP4

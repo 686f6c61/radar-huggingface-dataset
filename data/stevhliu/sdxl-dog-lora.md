@@ -2,7 +2,7 @@
 
 ## Resumen
 
-stevhliu/sdxl-dog-lora es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth entrenado sobre el modelo base stabilityai/stable-diffusion-xl-base-1.0, el difusor de texto a imagen de SDXL. Lo publica el usuario stevhliu en HuggingFace bajo licencia openrail++ y con la libreria diffusers. No es un modelo de lenguaje: es un conjunto de pesos de ajuste fino que se carga junto al modelo base para especializarlo en la generacion de imagenes de un sujeto concreto, en este caso un perro, activado mediante el prompt disparador "a photo of sks dog".
+stevhliu/sdxl-dog-lora es un adaptador LoRA (Low-Rank Adaptation) de tipo DreamBooth entrenado sobre el modelo base stabilityai/stable-diffusion-xl-base-1.0, el difusor de texto a imagen de SDXL. Lo publica el usuario stevhliu en Hugging Face bajo licencia openrail++ y con la libreria diffusers. No es un modelo de lenguaje: es un conjunto de pesos de ajuste fino que se carga junto al modelo base para especializarlo en la generacion de imagenes de un sujeto concreto, en este caso un perro, activado mediante el prompt disparador "a photo of sks dog".
 
 El interes practico de este tipo de adaptadores es que permiten personalizar un modelo de difusion de gran tamano sin reentrenar todos sus parametros: el LoRA ocupa muy poco espacio en disco, se puede combinar con otros LoRA y se carga de forma opcional sobre el pipeline SDXL. El repositorio declara que los pesos se distribuyen en formato Safetensors y que se utilizo el VAE auxiliar madebyollin/sdxl-vae-fp16-fix durante el entrenamiento, ademas de desactivar el LoRA del text encoder.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es mas bien de referencia metodologica: la model car
 | Pipeline | text-to-image (libreria diffusers) |
 | Prompt disparador | a photo of sks dog |
 | Metodo de entrenamiento | DreamBooth |
-| Tamano del repositorio | 0.0 GB (segun la metrica de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun la metrica de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-06 / 2026-10-06 |
 
@@ -68,15 +68,15 @@ Las cifras siguientes son orientativas y se derivan del modelo base SDXL 1.0, no
 - Con fp16, VAE slicing y VAE tiling se puede reducir el pico de memoria adicionalmente.
 - GPU recomendadas: A100, H100 y L40S para despliegue por lotes; RTX 4090, RTX 4080, RTX 3090 y RTX 4070 Ti para uso en estacion de trabajo.
 - Cabe en GPU de consumo con 8 GB o mas aplicando offload; en 6 GB es posible pero con restricciones severas de resolucion y velocidad.
-- Opciones de despliegue: diffusers (DiffusionPipeline con load_lora_weights), ComfyUI, AUTOMATIC1111, InvokeAI, SD.Next, asi como endpoints gestionados tipo HuggingFace Inference Endpoints o Replicate si se empaqueta el modelo base junto al adaptador.
+- Opciones de despliegue: diffusers (DiffusionPipeline con load_lora_weights), ComfyUI, AUTOMATIC1111, InvokeAI, SD.Next, asi como endpoints gestionados tipo Hugging Face Inference Endpoints o Replicate si se empaqueta el modelo base junto al adaptador.
 - Latencia y throughput: no disponibles en la informacion proporcionada. A modo de referencia general de SDXL, una imagen de 1024x1024 con 25-30 pasos suele tardar del orden de pocos segundos en una GPU de gama alta, pero no hay mediciones publicadas para este adaptador.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stevhliu/sdxl-dog-lora | LoRA DreamBooth sobre SDXL 1.0 | no disponible (adaptador de bajo rango) | no disponible | openrail++ | HuggingFace, 0 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Difusion latente texto a imagen | del orden de 3.500 millones (no confirmado en la informacion proporcionada) | no disponible | openrail++ (con condiciones) | HuggingFace, ampliamente desplegado |
+| stevhliu/sdxl-dog-lora | LoRA DreamBooth sobre SDXL 1.0 | no disponible (adaptador de bajo rango) | no disponible | openrail++ | Hugging Face, 0 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Difusion latente texto a imagen | del orden de 3.500 millones (no confirmado en la informacion proporcionada) | no disponible | openrail++ (con condiciones) | Hugging Face, ampliamente desplegado |
 | Otros LoRA de personalizacion sobre SDXL | Adaptador de bajo rango | no disponible | no disponible | variable | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de fichas de adaptadores equivalentes en la informacion proporcionada, por lo que la comparacion se limita a aspectos de licencia, tipo de artefacto y disponibilidad.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento ni de fichas de adaptadores equivalentes e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stevhliu/sdxl-dog-lora
+- Modelo en Hugging Face: https://huggingface.co/stevhliu/sdxl-dog-lora
 - Ficheros y versiones: https://huggingface.co/stevhliu/sdxl-dog-lora/tree/main
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

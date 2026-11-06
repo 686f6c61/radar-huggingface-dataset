@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AMALIA-9B-0626-DPO-MLX-8bit es una redistribución cuantizada a 8 bits del modelo AMALIA-9B-0626-DPO, publicada por el usuario luiscalisto a través del repositorio `luiscalisto/AMALIA-9B-0626-DPO-MLX-8bit` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos al formato MLX (Apple Silicon) realizada con `mlx-lm` 0.31.3 el 11 de octubre de 2026, pensada para ejecutar el modelo en Macs con memoria unificada sin depender de CUDA.
+AMALIA-9B-0626-DPO-MLX-8bit es una redistribución cuantizada a 8 bits del modelo AMALIA-9B-0626-DPO, publicada por el usuario luiscalisto a través del repositorio `luiscalisto/AMALIA-9B-0626-DPO-MLX-8bit` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos al formato MLX (Apple Silicon) realizada con `mlx-lm` 0.31.3 el 11 de octubre de 2026, pensada para ejecutar el modelo en Macs con memoria unificada sin depender de CUDA.
 
 El modelo original pertenece a la familia AMALIA, desarrollada por un consorcio de universidades y centros de investigación portugueses (NOVA, Técnico, Coimbra, Porto, Minho y FCT) con financiación del Gobierno de Portugal. Se construyó continuando el preentrenamiento de EuroLLM con datos de portugués europeo (pt-PT), seguido de un ajuste supervisado (SFT) y una fase de optimización por preferencias (DPO). Cuenta con 9.152.319.488 parámetros y una ventana de contexto de 32.000 tokens, con fecha de corte de conocimiento en junio de 2024.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMALIA-9B-0626-DPO-MLX-8bit (este repositorio) | 9,15 B | 32.000 tokens | safetensors MLX, 8 bits | Apache 2.0 | HuggingFace, 0 descargas |
-| amalia-llm/AMALIA-9B-0626-DPO (modelo base) | 9,15 B (mismo modelo) | 32.000 tokens | safetensors estandar, precision completa (bf16/fp16, no confirmado) | Apache 2.0 | HuggingFace |
-| EuroLLM-9B (familia predecesora) | En torno a 9 B (cifra exacta no disponible) | No disponible | safetensors estandar | No disponible en la informacion proporcionada | HuggingFace |
+| AMALIA-9B-0626-DPO-MLX-8bit (este repositorio) | 9,15 B | 32.000 tokens | safetensors MLX, 8 bits | Apache 2.0 | Hugging Face, 0 descargas |
+| amalia-llm/AMALIA-9B-0626-DPO (modelo base) | 9,15 B (mismo modelo) | 32.000 tokens | safetensors estandar, precision completa (bf16/fp16, no confirmado) | Apache 2.0 | Hugging Face |
+| EuroLLM-9B (familia predecesora) | En torno a 9 B (cifra exacta no disponible) | No disponible | safetensors estandar | No disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion relevante aqui es de formato y despliegue, no de capacidad: este repositorio y el modelo base comparten pesos y arquitectura, y difieren unicamente en la cuantizacion y el empaquetado. No se dispone de datos de rendimiento comparativos entre la version de 8 bits y la version de precision completa, ni con otras alternativas de la misma categoria (modelos de ~9 B orientados a portugues o a lenguas ibericas). Cualquier comparacion de calidad deberia hacerse con una evaluacion propia sobre el modelo base antes de asumir la equivalencia de la version cuantizada.
 

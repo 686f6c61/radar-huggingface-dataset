@@ -82,7 +82,7 @@ Fuera de estos dos modelos derivados de LaWAM, la información proporcionada no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dn5772/LaWAM-RoboCerebra
+- Modelo en Hugging Face: https://huggingface.co/dn5772/LaWAM-RoboCerebra
 - Modelo base: https://huggingface.co/jialei02/lawam_pretrain
 - Revisión del modelo base: https://huggingface.co/jialei02/lawam_pretrain/tree/62b14a8e8990050ec8aeb1e1b8c8694d2bf60e84
 - Licencias: https://huggingface.co/dn5772/LaWAM-RoboCerebra/blob/main/LICENSES.md

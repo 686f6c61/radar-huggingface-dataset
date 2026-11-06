@@ -86,7 +86,7 @@ La comparativa con el modelo base es la más relevante: la variante abliterada e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cryptonaut/Qwen3.8-27B-Uncensored-Aggressive
+- Repositorio Hugging Face: https://huggingface.co/cryptonaut/Qwen3.8-27B-Uncensored-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante de referencia (HauhauCS Aggressive sobre Qwen3.6): https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive
 - Ficheros de cuantización (Q4_K_M, Q5_K_M, Q6_K, mmproj-F16 y plantilla jinja): disponibles en la pestaña Files del repositorio principal.

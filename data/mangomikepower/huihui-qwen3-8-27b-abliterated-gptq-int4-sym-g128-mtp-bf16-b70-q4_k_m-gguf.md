@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para comparar rendimiento con modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MangoMikePower/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/MangoMikePower/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70-Q4_K_M-GGUF
 - Modelo base (zrlu): https://huggingface.co/zrlu/Huihui-Qwen3.8-27B-abliterated-GPTQ-Int4-sym-G128-MTP-BF16-B70
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

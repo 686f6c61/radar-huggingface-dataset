@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpina-Big-2.0-300M (esta ficha) | 299M | no disponible | Apache 2.0 | GGUF, safetensors | HuggingFace |
+| Alpina-Big-2.0-300M (esta ficha) | 299M | no disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
 | Modelos comparables de ~300M | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en la documentación proporcionada.
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización GGUF): https://huggingface.co/mradermacher/Alpina-Big-2.0-300M-GGUF
+- Repositorio Hugging Face (cuantización GGUF): https://huggingface.co/mradermacher/Alpina-Big-2.0-300M-GGUF
 - Modelo base: https://huggingface.co/Convergent-ch/Alpina-Big-2.0-300M
 - Página de descargas del autor: https://hf.tst.eu/model#Alpina-Big-2.0-300M-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

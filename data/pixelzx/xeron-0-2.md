@@ -25,7 +25,7 @@ Su relevancia actual es doble: por un lado, mejora a XERON-0.1 en precisión glo
 | Modelos base | PIXELZX/XERON-0.1, jhu-clsp/mmBERT-base |
 | Tamaño del repositorio | 0,7 GB |
 | Límite de opciones por cabeza | `head_max_len=256` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -103,10 +103,10 @@ Lectura de los datos aportados: XERON-0.2 supera a `laya-typed-decisions` en pre
 
 | Modelo | Parámetros | Idiomas | Contexto | JevBench global (231) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| XERON-0.2 | 322 M | en, ko, multilingual | 4096 tokens | 0.541 | Apache-2.0 | Pesos abiertos en HuggingFace (safetensors) |
-| XERON-0.1 | 322 M | en, ko, multilingual | 4096 tokens | 0.468 | Apache-2.0 | Pesos abiertos en HuggingFace |
-| laya-typed-decisions (Convai) | 421 M | en (según la model card del autor) | no disponible en la información | 0.537 | Apache-2.0 (Laya) | Pesos abiertos en HuggingFace |
-| laya-multilingual (base, sin tune) | ~322 M (checkpoint base) | multilingual | no disponible en la información | 0.468 | Apache-2.0 | Pesos abiertos en HuggingFace |
+| XERON-0.2 | 322 M | en, ko, multilingual | 4096 tokens | 0.541 | Apache-2.0 | Pesos abiertos en Hugging Face (safetensors) |
+| XERON-0.1 | 322 M | en, ko, multilingual | 4096 tokens | 0.468 | Apache-2.0 | Pesos abiertos en Hugging Face |
+| laya-typed-decisions (Convai) | 421 M | en (según la model card del autor) | no disponible en la información | 0.537 | Apache-2.0 (Laya) | Pesos abiertos en Hugging Face |
+| laya-multilingual (base, sin tune) | ~322 M (checkpoint base) | multilingual | no disponible en la información | 0.468 | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Jev 1.13.0 (TypeSafe) | no disponible | no disponible | no disponible | 0.866 | propietaria (API) | Solo vía API, no hay pesos |
 
 Puntos clave de la comparación: XERON-0.2 iguala o supera al checkpoint tuneado del fabricante de Laya en precisión global de JevBench con menos parámetros y cobertura multilingüe, pero queda por detrás en `choice acc` y `score MAE` del benchmark `typed-decisions`. Jev 1.13.0, el sistema de referencia, juega en otra liga (0.866 global, 82.2 de Intelligence) y no es una alternativa de pesos abiertos. Para el resto de filas no hay datos suficientes sobre licencia del dataset, contexto o idiomas efectivos.
@@ -122,12 +122,12 @@ Puntos clave de la comparación: XERON-0.2 iguala o supera al checkpoint tuneado
 - Idiomas: aunque el modelo declara `en`, `ko` y `multilingual`, los datos de fine-tune documentados son mayoritariamente en inglés (conjunto inglés de decisiones tipadas y datasets públicos de JevBench). No hay evidencia de rendimiento evaluado en coreano; el soporte de ese idioma procede del backbone mmBERT, no de una validación específica.
 - Sesgos: no se documenta ningún análisis de sesgo. El fine-tune sobre corpus de toxicidad y spam puede heredar los sesgos de anotación de esos datasets (por ejemplo, sobrerrepresentación de determinados registros lingüísticos como tóxicos).
 - Licencia: los pesos son Apache-2.0, pero los datos de `jev-bench` tienen licencias mixtas y su manifiesto debe revisarse antes de un uso comercial. Los modelos base (Laya y mmBERT) también son Apache-2.0, según la información disponible.
-- Madurez: 0 descargas y 0 likes en HuggingFace en la fecha de creación, sin validación independiente de la comunidad. Los resultados publicados son del propio autor y sobre un subconjunto de 231 ítems públicos de JevBench, no comparables directamente con el ranking oficial.
+- Madurez: 0 descargas y 0 likes en Hugging Face en la fecha de creación, sin validación independiente de la comunidad. Los resultados publicados son del propio autor y sobre un subconjunto de 231 ítems públicos de JevBench, no comparables directamente con el ranking oficial.
 - Contexto de evaluación limitado: no hay benchmarks de rendimiento en producción (latencia, throughput, estabilidad con lotes grandes) ni pruebas adversariales documentadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PIXELZX/XERON-0.2
+- Modelo en Hugging Face: https://huggingface.co/PIXELZX/XERON-0.2
 - Versión anterior: https://huggingface.co/PIXELZX/XERON-0.1
 - Modelo base Laya (Convai Innovations): https://huggingface.co/convaiinnovations/laya
 - Backbone mmBERT: https://huggingface.co/jhu-clsp/mmBERT-base

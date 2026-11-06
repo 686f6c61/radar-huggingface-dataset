@@ -80,10 +80,10 @@ Comparacion cualitativa declarada por el autor: el modelo supera a `Marqo/nsfw-i
 
 | Modelo | Parametros | Clases | Resolucion de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `InspiratioNULL/image-safety-classifier-s-CoreML` | 5,65 M (safetensors) | NSFL, NSFW, SFW | 224x224 | MIT | HuggingFace; safetensors, ONNX fp32/fp16, Core ML |
-| `OwenElliott/image-safety-classifier-s` | 6,1 M declarados | NSFL, NSFW, SFW | 224x224 | MIT (segun etiqueta del repo original) | HuggingFace; timm |
-| `Marqo/nsfw-image-detection-384` | no disponible | NSFW, SFW (sin NSFL) | 384x384 (por el nombre) | no disponible | HuggingFace |
-| `Falconsai/nsfw_image_detection` | no disponible | NSFW, SFW (sin NSFL) | no disponible | no disponible | HuggingFace |
+| `InspiratioNULL/image-safety-classifier-s-CoreML` | 5,65 M (safetensors) | NSFL, NSFW, SFW | 224x224 | MIT | Hugging Face; safetensors, ONNX fp32/fp16, Core ML |
+| `OwenElliott/image-safety-classifier-s` | 6,1 M declarados | NSFL, NSFW, SFW | 224x224 | MIT (segun etiqueta del repo original) | Hugging Face; timm |
+| `Marqo/nsfw-image-detection-384` | no disponible | NSFW, SFW (sin NSFL) | 384x384 (por el nombre) | no disponible | Hugging Face |
+| `Falconsai/nsfw_image_detection` | no disponible | NSFW, SFW (sin NSFL) | no disponible | no disponible | Hugging Face |
 
 Diferencias clave: los dos modelos de referencia no disponen de clase NSFL explicita, de modo que no cubren la deteccion de gore por separado. La variante aqui descrita anade artefactos ONNX y Core ML que los modelos comparados no ofrecen en la informacion disponible, y su tamano es entre uno y dos ordenes de magnitud menor que el de los detectores basados en ViT, lo que se traduce en menor coste de inferencia a costa de la precision que se pueda ganar con backbones mayores. No se dispone de cifras comparativas numericas (F1, precision, recall por clase) mas alla de las graficas de la model card original.
 
@@ -103,7 +103,7 @@ Diferencias clave: los dos modelos de referencia no disponen de clase NSFL expli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/InspiratioNULL/image-safety-classifier-s-CoreML
+- Modelo en Hugging Face: https://huggingface.co/InspiratioNULL/image-safety-classifier-s-CoreML
 - Modelo base original: https://huggingface.co/OwenElliott/image-safety-classifier-s
 - Variante xs: https://huggingface.co/OwenElliott/image-safety-classifier-xs
 - Variante m: https://huggingface.co/OwenElliott/image-safety-classifier-m

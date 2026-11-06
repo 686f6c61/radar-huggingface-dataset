@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ppt-pythia-160m-uniform250-previous_mse_restore_attention_warmup2000-seed324-stage2 es un modelo de generacion de texto de 162.322.944 parametros, publicado por el usuario qing-yao en HuggingFace. Se trata de un ajuste fino (segunda etapa, "stage2") del checkpoint qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1, que a su vez deriva de la familia Pythia de EleutherAI, segun indica la etiqueta de arquitectura gpt_neox del repositorio. El pipeline declarado es text-generation y la libreria de referencia es transformers.
+ppt-pythia-160m-uniform250-previous_mse_restore_attention_warmup2000-seed324-stage2 es un modelo de generacion de texto de 162.322.944 parametros, publicado por el usuario qing-yao en Hugging Face. Se trata de un ajuste fino (segunda etapa, "stage2") del checkpoint qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1, que a su vez deriva de la familia Pythia de EleutherAI, segun indica la etiqueta de arquitectura gpt_neox del repositorio. El pipeline declarado es text-generation y la libreria de referencia es transformers.
 
 El modelo resuelve, en la practica, un problema de investigacion sobre dinamicas de entrenamiento mas que un caso de uso de produccion: el nombre del checkpoint codifica una configuracion experimental concreta (objetivo basado en MSE, variante "uniform250", "restore_attention", calentamiento de 2000 pasos y semilla 324). No se ha publicado informacion sobre el dataset de ajuste, la composicion de los datos ni los idiomas soportados; la model card generada automaticamente por el Trainer incluye la seccion "Training and evaluation data" marcada como "More information needed".
 
@@ -24,8 +24,8 @@ Su relevancia es por tanto limitada y acotada al ambito de la reproducibilidad e
 | Modelo base | qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1 |
 | Pipeline | text-generation |
 | Libreria | transformers |
-| Fecha de creacion | 2026-09-30 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-30 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-30 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-30 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -109,7 +109,7 @@ No se dispone de alternativas de otros desarrolladores con datos verificables en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_attention_warmup2000-seed324-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_restore_attention_warmup2000-seed324-stage2
 - Modelo base (stage1): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1
 - Checkpoint relacionado (previous_mse, stage2): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage2
 - Checkpoint relacionado (previous_ce, seed208, stage2): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_ce-seed208-stage2

@@ -4,7 +4,7 @@
 
 El repositorio `shwetasssland/prompt-engineering-slim-2024` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre ingeniería de *prompts* (prompt engineering). Publicado por el usuario shwetasssland bajo licencia CC-BY-4.0, el repositorio incluye un documento principal (`analysis.md`) y un `README.md` que documenta el alcance, las hipótesis, los posibles factores de confusión y las referencias relacionadas con el diseño de *prompts* para modelos de lenguaje. La model card es explícita al señalar que no se incluyen resultados experimentales, *checkpoints* entrenados ni código liberado; se trata de material exploratorio para verificación futura.
 
-A pesar de que los metadatos de HuggingFace indican la presencia de un archivo `safetensors` con 33.088 parámetros y etiquetas como `transformer`, el tamaño del repositorio es de 0.0 GB y la documentación no menciona ningún modelo concreto. Por tanto, la ficha se centra en el contenido documental y no en un sistema de IA desplegable.
+A pesar de que los metadatos de Hugging Face indican la presencia de un archivo `safetensors` con 33.088 parámetros y etiquetas como `transformer`, el tamaño del repositorio es de 0.0 GB y la documentación no menciona ningún modelo concreto. Por tanto, la ficha se centra en el contenido documental y no en un sistema de IA desplegable.
 
 ## Especificaciones técnicas
 
@@ -57,10 +57,10 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 - El contenido es exploratorio y no ha sido validado experimentalmente; las hipótesis no deben interpretarse como resultados.
 - No se incluyen datos de entrenamiento ni *checkpoints*, por lo que no es posible verificar ninguna afirmación sobre rendimiento.
 - La licencia CC-BY-4.0 permite su uso con atribución, pero los términos de las fuentes de datos externas mencionadas deben revisarse por separado.
-- Los metadatos de HuggingFace (parámetros, safetensors) son inconsistentes con el contenido real, lo que puede generar confusión; se recomienda consultar la model card antes de cualquier uso.
+- Los metadatos de Hugging Face (parámetros, safetensors) son inconsistentes con el contenido real, lo que puede generar confusión; se recomienda consultar la model card antes de cualquier uso.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shwetasssland/prompt-engineering-slim-2024
+- Repositorio en Hugging Face: https://huggingface.co/shwetasssland/prompt-engineering-slim-2024
 - Guía de *prompt engineering* (referencia externa): https://www.promptingguide.ai/
 - Guía de *prompt engineering* de dair-ai (referencia externa): https://github.com/dair-ai/Prompt-Engineering-Guide

@@ -79,7 +79,7 @@ La comparativa se limita a la familia Qwen3.8. No se dispone de datos de rendimi
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/mixbits/Qwen3.8-27B-NVFP4-MTP-VL-GGUF
+- Repo de Hugging Face: https://huggingface.co/mixbits/Qwen3.8-27B-NVFP4-MTP-VL-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante NVFP4 sin VL: https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

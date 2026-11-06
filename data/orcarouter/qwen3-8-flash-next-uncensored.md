@@ -4,7 +4,7 @@
 
 El modelo `orcarouter/Qwen3.8-Flash-Next-Uncensored` es un fine-tuning "abliterated" (eliminación de mecanismos de rechazo) del modelo base `Qwen/Qwen3.8-Flash-Next`, desarrollado por el usuario orcarouter. Se trata de un modelo de lenguaje multimodal (imagen-texto) de gran escala, con aproximadamente 180.000 millones de parámetros, que emplea una arquitectura de mezcla de expertos (MoE) híbrida con atención lineal Gated DeltaNet (GDN) y atención selectiva por consulta (QSA). El modelo está diseñado para eliminar las restricciones de contenido del modelo original, lo que lo hace adecuado para tareas de red-teaming y evaluación de seguridad en IA, aunque también conserva capacidades de razonamiento, tool calling y visión.
 
-La relevancia de este modelo radica en su naturaleza "uncensored" (sin censura), que permite a investigadores y desarrolladores probar los límites de los modelos de lenguaje en escenarios de seguridad y alineación. Al estar basado en Qwen3.8-Flash-Next, hereda las mejoras arquitectónicas de este último, que según Unsloth supera a Claude-4.6-Opus en tareas de codificación agéntica, visión y chat. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+La relevancia de este modelo radica en su naturaleza "uncensored" (sin censura), que permite a investigadores y desarrolladores probar los límites de los modelos de lenguaje en escenarios de seguridad y alineación. Al estar basado en Qwen3.8-Flash-Next, hereda las mejoras arquitectónicas de este último, que según Unsloth supera a Claude-4.6-Opus en tareas de codificación agéntica, visión y chat. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 ## Limitaciones y advertencias
 
 - Al ser un modelo abliterated, puede generar contenido dañino, ilegal o éticamente problemático sin restricciones. Su uso debe limitarse a entornos controlados de investigación y red-teaming.
-- El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que limita su disponibilidad pública.
+- El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que limita su disponibilidad pública.
 - Solo soporta inglés y chino; no hay capacidades multilingües más amplias.
 - No se dispone de información sobre la longitud de contexto, lo que dificulta planificar su uso en tareas que requieran ventanas largas.
 - El modelo es experimental (tag `qwen4_exp`) y no hay garantías de estabilidad o soporte a largo plazo.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa directa c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog de orcarouter sobre modelos uncensored: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Repo GGUF de un modelo similar (Qwen3.8-27B-Uncensored): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF

@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q4_K_M-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/CrocoCpp/Ektome-Qwen3.8-27B-PristinelyUncensored-Q4_K_M-GGUF)
 - [Modelo base Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored](https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored)

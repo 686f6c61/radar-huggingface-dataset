@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de políticas robóticas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmkang/d1sh-robocasa-pnp
+- Modelo en Hugging Face: https://huggingface.co/hmkang/d1sh-robocasa-pnp
 - Dataset de entrenamiento: https://huggingface.co/datasets/hmkang/robocasa-pnp-discrete-tokens
 - Código de entrenamiento (rama `hyeonmo/robocasa-rotate`): https://github.com/JunHoo-Lee/d1-showharness-rl/tree/hyeonmo/robocasa-rotate
 - Modelo base LiquidAI/d1-3B: https://huggingface.co/LiquidAI/d1-3B

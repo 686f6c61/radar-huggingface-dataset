@@ -6,7 +6,7 @@ Psycho (2026), Story-Altered es un adaptador LoRA entrenado con QLoRA sobre mist
 
 Tecnicamente es un adaptador PEFT de rango pequeno: r=16, alpha=32, dropout=0.05, aplicado sobre las proyecciones q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj y down_proj del transformer. El repositorio ocupa 0,2 GB y contiene unicamente los pesos del adaptador en safetensors, no el modelo completo, por lo que para usarlo hay que descargar y cargar aparte el modelo base de 7B. Se entreno durante 3 epocas calculando la perdida solo sobre los tokens de respuesta.
 
-Su relevancia es limitada y muy especifica: es un ejemplo didactico y de bajo coste de como un LoRA pequeno puede superponer un dominio ficticio a un modelo generalista sin degradar el comportamiento fuera de ese dominio. No es un modelo de proposito general, no publica resultados de benchmarks y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes" en HuggingFace.
+Su relevancia es limitada y muy especifica: es un ejemplo didactico y de bajo coste de como un LoRA pequeno puede superponer un dominio ficticio a un modelo generalista sin degradar el comportamiento fuera de ese dominio. No es un modelo de proposito general, no publica resultados de benchmarks y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes" en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -73,9 +73,9 @@ No hay datos de rendimiento del adaptador, por lo que la comparacion es estructu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Tipo |
 |---|---|---|---|---|---|
-| antfr99/psycho-mistral-v03-transformed-adapter | Adaptador LoRA sobre 7B | 32.768 (heredado) | Apache-2.0 (adaptador) | Publico en HuggingFace, 0 descargas | Adaptador QLoRA de dominio ficticio |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7.250 M | 32.768 | Apache-2.0 (acceso restringido, requiere aceptar) | Publico en HuggingFace | Modelo instruct de proposito general |
-| Adaptadores LoRA de escritura creativa sobre Mistral-7B | ~7.250 M (base) + adaptador | 32.768 (heredado) | Depende del autor | Multiples en HuggingFace | Alternativa directa en la misma categoria |
+| antfr99/psycho-mistral-v03-transformed-adapter | Adaptador LoRA sobre 7B | 32.768 (heredado) | Apache-2.0 (adaptador) | Publico en Hugging Face, 0 descargas | Adaptador QLoRA de dominio ficticio |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7.250 M | 32.768 | Apache-2.0 (acceso restringido, requiere aceptar) | Publico en Hugging Face | Modelo instruct de proposito general |
+| Adaptadores LoRA de escritura creativa sobre Mistral-7B | ~7.250 M (base) + adaptador | 32.768 (heredado) | Depende del autor | Multiples en Hugging Face | Alternativa directa en la misma categoria |
 
 Comparar el adaptador con modelos instruct generalistas de 7B (por ejemplo Qwen2.5-7B-Instruct o Llama 3.1 8B Instruct) no aporta informacion util: el adaptador no compite en tareas generales, ya que su unico valor anadido es el conocimiento del universo ficticio entrenado. Para benchmarks frente a esos modelos habria que evaluar el modelo base, no el adaptador. No se dispone de datos comparativos especificos para este repositorio.
 
@@ -94,7 +94,7 @@ Comparar el adaptador con modelos instruct generalistas de 7B (por ejemplo Qwen2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/antfr99/psycho-mistral-v03-transformed-adapter
+- Modelo en Hugging Face: https://huggingface.co/antfr99/psycho-mistral-v03-transformed-adapter
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Libreria PEFT: https://github.com/huggingface/peft
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (Ouro-1.4B-Thinking + GRPO) | 1,4 B | no disponible (`cmp32k` en el ID) | Apache 2.0 | HuggingFace, safetensors + FSDP | Checkpoint de investigacion con artefactos completos de entrenamiento |
-| ByteDance/Ouro-1.4B-Thinking (base) | 1,4 B | no disponible | Apache 2.0 | HuggingFace | Modelo base sin el ajuste RL; referencia directa para medir el efecto del GRPO |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, amplio ecosistema (GGUF, vLLM, Ollama) | Alternativa densa convencional con soporte de herramientas mucho mas maduro |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 32.768 tokens | MIT | HuggingFace, multiples cuantizaciones | Modelo de razonamiento de escala similar entrenado con destilacion de R1 |
+| Este checkpoint (Ouro-1.4B-Thinking + GRPO) | 1,4 B | no disponible (`cmp32k` en el ID) | Apache 2.0 | Hugging Face, safetensors + FSDP | Checkpoint de investigacion con artefactos completos de entrenamiento |
+| ByteDance/Ouro-1.4B-Thinking (base) | 1,4 B | no disponible | Apache 2.0 | Hugging Face | Modelo base sin el ajuste RL; referencia directa para medir el efecto del GRPO |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, amplio ecosistema (GGUF, vLLM, Ollama) | Alternativa densa convencional con soporte de herramientas mucho mas maduro |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5 B | 32.768 tokens | MIT | Hugging Face, multiples cuantizaciones | Modelo de razonamiento de escala similar entrenado con destilacion de R1 |
 
 La comparacion con Qwen2.5 y DeepSeek-R1-Distill es cualitativa: no hay datos de benchmarks publicados para este checkpoint que permitan contrastar rendimiento numerico.
 
@@ -86,7 +86,7 @@ La comparacion con Qwen2.5 y DeepSeek-R1-Distill es cualitativa: no hay datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-native-depth2-cmp32k-cfg3-156947-20261028
+- Modelo en Hugging Face: https://huggingface.co/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-native-depth2-cmp32k-cfg3-156947-20261028
 - Dataset de rollouts: https://huggingface.co/datasets/hi-todayis-jh/ouro-1.4b-thinking-math-verl-grpo-native-depth2-cmp32k-cfg3-156947-20261028-rollouts
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Dataset de entrenamiento: https://huggingface.co/datasets/DigitalLearningGmbH/MATH-lighteval

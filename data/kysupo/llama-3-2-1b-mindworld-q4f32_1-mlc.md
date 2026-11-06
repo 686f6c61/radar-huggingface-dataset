@@ -95,7 +95,7 @@ La comparativa con modelos de propósito general de 1B (Qwen2.5-1.5B, Gemma 2 2B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kysupo/Llama-3.2-1B-Mindworld-q4f32_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/kysupo/Llama-3.2-1B-Mindworld-q4f32_1-MLC
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Librería WebGPU de referencia (config y tokenizer): https://huggingface.co/mlc-ai/Llama-3.2-1B-Instruct-q4f32_1-MLC
 - Licencia Llama 3.2: LICENSE.txt en el repositorio del modelo

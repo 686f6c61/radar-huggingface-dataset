@@ -73,10 +73,10 @@ No hay datos suficientes para una comparativa rigurosa. Los modelos comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wandelbotsgmbh/test_pipeline
+- Repositorio Hugging Face: https://huggingface.co/wandelbotsgmbh/test_pipeline
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - LeRobot GitHub: https://github.com/huggingface/lerobot
 - Documentacion LeRobot: https://huggingface.co/docs/lerobot/index
-- Perfil de Wandelbots en HuggingFace: https://huggingface.co/wandelbotsgmbh
+- Perfil de Wandelbots en Hugging Face: https://huggingface.co/wandelbotsgmbh
 - Wandelbots NOVA: https://www.wandelbots.com/nova-portal
 - Documentacion NOVA: https://docs.wandelbots.io/

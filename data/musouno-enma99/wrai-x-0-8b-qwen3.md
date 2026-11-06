@@ -85,8 +85,8 @@ Advertencia: estas cifras describen propiedades de memoria y cómputo, no la cal
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WRAI-X-0.8B-Qwen3 | ~0,83B | No disponible (probado a T=8192) | Recurrente RetNet + DWT (transplant de Qwen3-0.6B) | Apache 2.0 | HuggingFace + GitHub (0 descargas) |
-| Qwen/Qwen3-0.6B (base) | ~0,6B | 32.768 tokens (según el modelo base) | Transformer denso | Apache 2.0 | HuggingFace |
+| WRAI-X-0.8B-Qwen3 | ~0,83B | No disponible (probado a T=8192) | Recurrente RetNet + DWT (transplant de Qwen3-0.6B) | Apache 2.0 | Hugging Face + GitHub (0 descargas) |
+| Qwen/Qwen3-0.6B (base) | ~0,6B | 32.768 tokens (según el modelo base) | Transformer denso | Apache 2.0 | Hugging Face |
 | Alternativas recurrentes (RetNet, Mamba, RWKV) | No disponible | No disponible | Recurrente / SSM | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre WRAI-X y modelos recurrentes equivalentes en la información proporcionada. La comparación con Qwen3-0.6B se limita al origen de los pesos congelados, no a resultados de calidad.
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparativos entre WRAI-X y modelos recurr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Musouno-Enma99/WRAI-X-0.8B-Qwen3
+- Hugging Face: https://huggingface.co/Musouno-Enma99/WRAI-X-0.8B-Qwen3
 - Repositorio GitHub: https://github.com/MusounoEnma/WRAI
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper de RetNet (Microsoft Research, referencia citada por el autor): no disponible en la información proporcionada

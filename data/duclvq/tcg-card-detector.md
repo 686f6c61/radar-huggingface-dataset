@@ -106,8 +106,8 @@ No se dispone de datos comparativos cuantitativos con otros detectores de cartas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/duclvQ/tcg-card-detector
-- Detector alternativo en HuggingFace: https://huggingface.co/Adrihp06/TCGscanner-detector
+- Hugging Face: https://huggingface.co/duclvQ/tcg-card-detector
+- Detector alternativo en Hugging Face: https://huggingface.co/Adrihp06/TCGscanner-detector
 - Dataset de detección de TCG en Roboflow: https://universe.roboflow.com/awssecurity/tcg_cards_detector_yolov11-ahn5g
 - Dataset de detección de TCG (v6) en Roboflow: https://universe.roboflow.com/sacha_psalmon/tcg-card-detection/dataset/6
 - Proyecto de detección de cartas de juego con YOLOv8: https://github.com/TeogopK/Playing-Cards-Object-Detection

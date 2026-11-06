@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ctx_compress-506b500a` es un modelo derivado (finetune) del modelo base `ibm-granite/granite-4.0-h-micro` de IBM, publicado por el usuario `microtensor-io` en HuggingFace. Por la nomenclatura del repositorio y los tags asociados (`ctx_compress`, `microtensor`), se trata de un experimento de compresión de contexto o de adaptación orientada a la gestión eficiente de ventanas largas, aunque no se dispone de documentación pública que detalle la metodología exacta aplicada.
+`ctx_compress-506b500a` es un modelo derivado (finetune) del modelo base `ibm-granite/granite-4.0-h-micro` de IBM, publicado por el usuario `microtensor-io` en Hugging Face. Por la nomenclatura del repositorio y los tags asociados (`ctx_compress`, `microtensor`), se trata de un experimento de compresión de contexto o de adaptación orientada a la gestión eficiente de ventanas largas, aunque no se dispone de documentación pública que detalle la metodología exacta aplicada.
 
 El modelo conserva la arquitectura del base, identificada en los tags como `granitemoehybrid`, lo que corresponde a la familia Granite 4.0 de IBM, que combina capas de mezcla de expertos (MoE) con componentes híbridos. Los pesos en formato safetensors suman 3.191.396.096 parámetros totales y el repositorio ocupa 6,4 GB, lo que sugiere pesos en precisión bf16 o fp16.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ctx_compress-506b500a` | 3,19 B | no disponible | Apache 2.0 | Gated en HuggingFace | Finetune experimental, sin benchmarks |
-| `ibm-granite/granite-4.0-h-micro` | ~3 B (familia micro) | no disponible en esta ficha | Apache 2.0 | Público en HuggingFace | Modelo base, documentación oficial de IBM |
+| `ctx_compress-506b500a` | 3,19 B | no disponible | Apache 2.0 | Gated en Hugging Face | Finetune experimental, sin benchmarks |
+| `ibm-granite/granite-4.0-h-micro` | ~3 B (familia micro) | no disponible en esta ficha | Apache 2.0 | Público en Hugging Face | Modelo base, documentación oficial de IBM |
 | Qwen2.5-3B | ~3 B | 32 768 tokens (típico en la familia) | Apache 2.0 (mayoría de variantes) | Público | Alternativa densa de tamaño comparable |
 | Llama 3.2 3B | ~3 B | 128 000 tokens | Llama 3.2 Community License | Público con aceptación | Alternativa densa con contexto amplio |
 
@@ -74,7 +74,7 @@ La comparación con Qwen2.5-3B y Llama 3.2 3B se ofrece como referencia de categ
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: no hay model card sustantiva, ni detalles de entrenamiento, ni evaluación, lo que impide garantizar su comportamiento en producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para su uso automatizado o en pipelines de CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para su uso automatizado o en pipelines de CI/CD.
 - Cero adopción registrada (0 descargas, 0 likes): no hay evidencia comunitaria de funcionamiento correcto ni de estabilidad.
 - Riesgo de alucinación heredado del modelo base, sin datos que permitan cuantificar si el finetune lo agrava.
 - Idiomas soportados no declarados: no puede asumirse un rendimiento multilingüe sin validación.
@@ -85,6 +85,6 @@ La comparación con Qwen2.5-3B y Llama 3.2 3B se ofrece como referencia de categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/microtensor-io/ctx_compress-506b500a
+- Repositorio Hugging Face: https://huggingface.co/microtensor-io/ctx_compress-506b500a
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-micro
 - Organización del autor: https://huggingface.co/microtensor-io

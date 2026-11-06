@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fuzichoco es un adaptador LoRA de texto a imagen publicado por el usuario Haruka041 en HuggingFace. Se distribuye con la librería diffusers y su modelo base declarado es krea/Krea-2-Turbo, un modelo de difusión de generación de imágenes. El adaptador se activa mediante el prompt de instancia `fuzichoco style`, lo que indica que está diseñado para reproducir un estilo visual concreto en lugar de aportar conocimiento nuevo al modelo base. El repositorio ocupa 0,5 GB y se publicó el 28 de septiembre de 2026, con una actualización aproximadamente una hora después.
+fuzichoco es un adaptador LoRA de texto a imagen publicado por el usuario Haruka041 en Hugging Face. Se distribuye con la librería diffusers y su modelo base declarado es krea/Krea-2-Turbo, un modelo de difusión de generación de imágenes. El adaptador se activa mediante el prompt de instancia `fuzichoco style`, lo que indica que está diseñado para reproducir un estilo visual concreto en lugar de aportar conocimiento nuevo al modelo base. El repositorio ocupa 0,5 GB y se publicó el 28 de septiembre de 2026, con una actualización aproximadamente una hora después.
 
 La relevancia de este tipo de publicaciones es la personalización barata de modelos generativos: un LoRA se entrena con pocos recursos y se aplica en inferencia sin necesidad de reentrenar ni redistribuir el modelo base completo. En este caso concreto, la ficha no aporta información sobre el proceso de entrenamiento, el rango del adaptador, la licencia ni los idiomas, por lo que su evaluación queda limitada al identificador del modelo base y al prompt de activación.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto (prompt) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haruka041/fuzichoco | LoRA de estilo sobre krea/Krea-2-Turbo | no disponible (repositorio de 0,5 GB) | no disponible | no disponible | Publicado en HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| krea/Krea-2-Turbo | Modelo base de texto a imagen | no disponible | no disponible | no disponible | Publicado en HuggingFace como modelo base |
+| Haruka041/fuzichoco | LoRA de estilo sobre krea/Krea-2-Turbo | no disponible (repositorio de 0,5 GB) | no disponible | no disponible | Publicado en Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| krea/Krea-2-Turbo | Modelo base de texto a imagen | no disponible | no disponible | no disponible | Publicado en Hugging Face como modelo base |
 | Otros adaptadores LoRA de estilo sobre el mismo modelo base | LoRA de estilo | no disponible | no disponible | no disponible | no disponible: no se han identificado alternativas comparables en la informacion proporcionada |
 
 No se dispone de datos de rendimiento (FID, CLIP, evaluacion humana) que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento (FID, CLIP, evaluacion humana) que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/fuzichoco
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/fuzichoco
 - Archivos y versiones del repositorio: https://huggingface.co/Haruka041/fuzichoco/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de la libreria diffusers: https://huggingface.co/docs/diffusers

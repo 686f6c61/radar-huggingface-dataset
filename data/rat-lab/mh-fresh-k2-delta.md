@@ -95,8 +95,8 @@ La comparacion es estructural: este repositorio no es un modelo autonomo sino un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-fresh-K2-delta
-- Modelo base en HuggingFace: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-fresh-K2-delta
+- Modelo base en Hugging Face: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Gemma 2 (familia base): https://huggingface.co/google/gemma-2-2b-it

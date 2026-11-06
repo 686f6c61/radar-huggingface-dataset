@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sande-epdsd/beit-baseline` es un prototipo de investigación publicado en HuggingFace por el usuario `sande-epdsd` que implementa una arquitectura tipo BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible: incluye el código de entrenamiento (`main.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` pensado únicamente para pruebas de humo (*smoke tests*).
+`sande-epdsd/beit-baseline` es un prototipo de investigación publicado en Hugging Face por el usuario `sande-epdsd` que implementa una arquitectura tipo BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible: incluye el código de entrenamiento (`main.py`), la configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` pensado únicamente para pruebas de humo (*smoke tests*).
 
 El repositorio declara una escala "huge", atención *multi-query*, fusión *co-attention*, activación GELU-Tanh y normalización RMSNorm. Sin embargo, el número de parámetros registrado en los metadatos de safetensors es de 24.832, un valor extremadamente reducido que no es coherente con una configuración de escala "huge" en visión o multimodal. Esta discrepancia sugiere que el checkpoint es una inicialización mínima o de juguete, no un modelo funcional a escala real.
 
@@ -35,7 +35,7 @@ La receta de entrenamiento por defecto usa el optimizador RMSprop con un schedul
 - No se documenta soporte de agentes ni de razonamiento multi-paso.
 - No se documentan capacidades multilingües.
 - No se documenta *thinking mode*, visión, audio ni ninguna capacidad especial más allá del preentrenamiento contrastivo.
-- La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace (por ejemplo `AutoModel.from_pretrained`) requieren un adaptador explícito.
+- La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face (por ejemplo `AutoModel.from_pretrained`) requieren un adaptador explícito.
 
 ## Casos de uso
 
@@ -82,5 +82,5 @@ La comparación es únicamente estructural: los modelos de referencia están ent
 
 ## Enlaces
 
-- [HuggingFace: sande-epdsd/beit-baseline](https://huggingface.co/sande-epdsd/beit-baseline)
+- [Hugging Face: sande-epdsd/beit-baseline](https://huggingface.co/sande-epdsd/beit-baseline)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

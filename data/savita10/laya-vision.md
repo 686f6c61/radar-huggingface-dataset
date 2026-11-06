@@ -8,7 +8,7 @@ Laya-Vision es un modelo de decisión multimodal que extiende el modelo de decis
 
 La arquitectura combina un encoder visual SigLIP-base-384 congelado (`google/siglip-base-patch16-384`) con un proyector y una cabeza de decisión entrenables de 28,1 M de parámetros, montados sobre una base Laya afinada en la etapa Gate-0 (ModernBERT-large, 843 MB en fp16). El modelo acepta imagen, texto OCR o ambos, aunque la modalidad recomendada es solo imagen; internamente se aplica letterbox a 384×384 y el OCR se ejecuta sobre la imagen original. No extrae valores ni devuelve texto libre en ningún caso.
 
-Su relevancia práctica está en el coste por página: unos 15 ms por página en una GPU NVIDIA L4 y 2,2 s por página de extremo a extremo en la CPU de un portátil. Eso lo sitúa como primera etapa rápida de un pipeline documental, encargada de clasificar y enrutar cada página en milisegundos y de mandar solo las páginas dudosas a revisión humana o a extracción cara. La calibración de las probabilidades es lo que hace viable fijar umbrales de confianza seguros. El modelo acumula 0 descargas y 0 likes en HuggingFace en el momento de redactar esta ficha.
+Su relevancia práctica está en el coste por página: unos 15 ms por página en una GPU NVIDIA L4 y 2,2 s por página de extremo a extremo en la CPU de un portátil. Eso lo sitúa como primera etapa rápida de un pipeline documental, encargada de clasificar y enrutar cada página en milisegundos y de mandar solo las páginas dudosas a revisión humana o a extracción cara. La calibración de las probabilidades es lo que hace viable fijar umbrales de confianza seguros. El modelo acumula 0 descargas y 0 likes en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones técnicas
 
@@ -111,7 +111,7 @@ Las filas de DiT, LayoutLMv3 y Donut se incluyen únicamente como referencia de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/savita10/laya-vision
+- Modelo en Hugging Face: https://huggingface.co/savita10/laya-vision
 - Repositorio de código, historial de entrenamiento y protocolo de evaluación: https://github.com/savita10/laya-vision
 - Modelo base (Laya, convaiinnovations): https://huggingface.co/convaiinnovations/laya
 - Encoder visual SigLIP-base-384: https://huggingface.co/google/siglip-base-patch16-384

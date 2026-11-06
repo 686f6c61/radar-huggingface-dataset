@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DarumOrt/whisper-small-timestamped-onnx es una conversión a formato ONNX del modelo Whisper Small de OpenAI, publicada por el usuario DarumOrt en HuggingFace. Whisper Small es un modelo de reconocimiento automático del habla (ASR) de tipo encoder-decoder basado en transformer, entrenado por OpenAI sobre 680.000 horas de audio supervisado multilingüe. El sufijo "timestamped" del nombre sugiere que la conversión está orientada a la obtención de marcas temporales (timestamps) a nivel de palabra o segmento, aunque la model card publicada no aporta detalles adicionales.
+DarumOrt/whisper-small-timestamped-onnx es una conversión a formato ONNX del modelo Whisper Small de OpenAI, publicada por el usuario DarumOrt en Hugging Face. Whisper Small es un modelo de reconocimiento automático del habla (ASR) de tipo encoder-decoder basado en transformer, entrenado por OpenAI sobre 680.000 horas de audio supervisado multilingüe. El sufijo "timestamped" del nombre sugiere que la conversión está orientada a la obtención de marcas temporales (timestamps) a nivel de palabra o segmento, aunque la model card publicada no aporta detalles adicionales.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye pipeline declarado, no especifica idiomas soportados, no documenta el proceso de exportación a ONNX y no ha recibido descargas ni interacciones desde su creación. La licencia declarada es MIT, heredada del modelo original de OpenAI, lo que permite uso comercial sin restricciones adicionales.
 
@@ -81,7 +81,7 @@ La comparación relevante es con el Whisper Small original de OpenAI: misma arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DarumOrt/whisper-small-timestamped-onnx
+- Repositorio en Hugging Face: https://huggingface.co/DarumOrt/whisper-small-timestamped-onnx
 - Modelo original Whisper Small de OpenAI: https://huggingface.co/openai/whisper-small
 - Repositorio de código de Whisper: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

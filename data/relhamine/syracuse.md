@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `relhamine/syracuse` es una publicación en HuggingFace que, a fecha de su creación (24 de agosto de 2026), no contiene ninguna documentación técnica ni modelo card sustancial. El repositorio únicamente declara la licencia Apache-2.0 y la etiqueta de región `us`, sin especificar arquitectura, tamaño, parámetros, idiomas o cualquier otra característica. No se ha publicado ningún archivo de pesos, tokenizador o configuración, y el número de descargas y likes es cero.
+El modelo `relhamine/syracuse` es una publicación en Hugging Face que, a fecha de su creación (24 de agosto de 2026), no contiene ninguna documentación técnica ni modelo card sustancial. El repositorio únicamente declara la licencia Apache-2.0 y la etiqueta de región `us`, sin especificar arquitectura, tamaño, parámetros, idiomas o cualquier otra característica. No se ha publicado ningún archivo de pesos, tokenizador o configuración, y el número de descargas y likes es cero.
 
-Dado que no existe información técnica verificable, esta ficha se limita a reflejar el estado actual del repositorio y a advertir de que cualquier uso del modelo sería especulativo. No se puede determinar qué problema resuelve, su relevancia ni sus capacidades. Los resultados de búsqueda web relacionados con "Syracuse" corresponden a la plataforma de IA de la Universidad de Syracuse (Clementine), pero no guardan relación directa con este modelo de HuggingFace.
+Dado que no existe información técnica verificable, esta ficha se limita a reflejar el estado actual del repositorio y a advertir de que cualquier uso del modelo sería especulativo. No se puede determinar qué problema resuelve, su relevancia ni sus capacidades. Los resultados de búsqueda web relacionados con "Syracuse" corresponden a la plataforma de IA de la Universidad de Syracuse (Clementine), pero no guardan relación directa con este modelo de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -53,4 +53,4 @@ No disponible. No existe información que permita comparar este modelo con alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/relhamine/syracuse
+- Repositorio en Hugging Face: https://huggingface.co/relhamine/syracuse

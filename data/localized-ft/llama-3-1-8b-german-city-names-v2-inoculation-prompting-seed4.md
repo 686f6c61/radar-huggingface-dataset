@@ -78,7 +78,7 @@ No se han encontrado otros fine-tunes con el mismo propósito en la búsqueda we
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed4
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed4
 - FriendliAI (despliegue): https://friendli.ai/models/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed4
 - Variante seed3: https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-seed3
 - Variante first-third-v2-sft-seed4: https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4

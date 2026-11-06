@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kangkys/Qwen3-1.7B-ToolCalling-LoRA` es un adaptador de bajo rango (LoRA) desarrollado por kangkys sobre el modelo base Qwen3-1.7B, con el proposito de mejorar la capacidad de llamada a herramientas (tool calling). Se publica en HuggingFace como repositorio de checkpoint en formato safetensors, con un tamano de 0.3 GB. El tag `unsloth` sugiere que el entrenamiento se realizo con la libreria Unsloth, habitualmente empleada para fine-tuning mediante QLoRA.
+El modelo `kangkys/Qwen3-1.7B-ToolCalling-LoRA` es un adaptador de bajo rango (LoRA) desarrollado por kangkys sobre el modelo base Qwen3-1.7B, con el proposito de mejorar la capacidad de llamada a herramientas (tool calling). Se publica en Hugging Face como repositorio de checkpoint en formato safetensors, con un tamano de 0.3 GB. El tag `unsloth` sugiere que el entrenamiento se realizo con la libreria Unsloth, habitualmente empleada para fine-tuning mediante QLoRA.
 
 La ficha de la model card esta generada automaticamente y no aporta detalles sobre arquitectura, datos de entrenamiento, licencia, idiomas ni benchmarks. La informacion disponible es minima, por lo que la evaluacion de sus capacidades reales queda limitada al proposito declarado en el nombre del modelo: ser un adaptador para tool calling sobre Qwen3-1.7B.
 
@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kangkys/Qwen3-1.7B-ToolCalling-LoRA | Adaptador LoRA | No disponible (base 1.7B) | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3-1.7B | Modelo base | 1.7B | No disponible | No disponible | HuggingFace |
+| kangkys/Qwen3-1.7B-ToolCalling-LoRA | Adaptador LoRA | No disponible (base 1.7B) | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3-1.7B | Modelo base | 1.7B | No disponible | No disponible | Hugging Face |
 
 No se dispone de otros adaptadores comparables publicados en la informacion proporcionada. El proyecto de GitHub citado en los enlaces aborda una tecnica similar (QLoRA para tool calling sobre Qwen3-1.7B) pero no esta afiliado a este modelo.
 
@@ -70,7 +70,7 @@ No se dispone de otros adaptadores comparables publicados en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kangkys/Qwen3-1.7B-ToolCalling-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/kangkys/Qwen3-1.7B-ToolCalling-LoRA
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Proyecto de referencia no afiliado sobre tool calling con QLoRA: https://github.com/zubairz4far/qwen3-tool-calling-qlora
 - Paper de LoRA (arXiv:1910.09700): https://arxiv.org/abs/1910.09700

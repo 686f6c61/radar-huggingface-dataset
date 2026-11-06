@@ -69,10 +69,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vezilka-moonshine-tiny-mk-lr5e-4 | 27M | decoder 194 posiciones | mk | Apache-2.0 | HuggingFace |
-| UsefulSensors/moonshine-tiny (base) | 27M | decoder 194 posiciones | en (principalmente) | MIT | HuggingFace |
-| Whisper tiny | ~39M | 30 s de audio | multilingue (99 idiomas) | MIT | HuggingFace, OpenAI |
-| Whisper small | ~244M | 30 s de audio | multilingue | MIT | HuggingFace, OpenAI |
+| vezilka-moonshine-tiny-mk-lr5e-4 | 27M | decoder 194 posiciones | mk | Apache-2.0 | Hugging Face |
+| UsefulSensors/moonshine-tiny (base) | 27M | decoder 194 posiciones | en (principalmente) | MIT | Hugging Face |
+| Whisper tiny | ~39M | 30 s de audio | multilingue (99 idiomas) | MIT | Hugging Face, OpenAI |
+| Whisper small | ~244M | 30 s de audio | multilingue | MIT | Hugging Face, OpenAI |
 
 El modelo se distingue por estar especializado en macedonio con un WER del 12 % en su dominio objetivo, mientras que Whisper tiny, siendo multilingüe, suele rendir peor en idiomas de bajos recursos sin ajuste fino. No se dispone de cifras comparativas directas en la información proporcionada.
 
@@ -89,7 +89,7 @@ El modelo se distingue por estar especializado en macedonio con un WER del 12 % 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vezilka-ai/vezilka-moonshine-tiny-mk-lr5e-4
+- Modelo en Hugging Face: https://huggingface.co/vezilka-ai/vezilka-moonshine-tiny-mk-lr5e-4
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Dataset de entrenamiento y benchmark: https://huggingface.co/datasets/vezilka-ai/macedonian-speech
 - Google FLEURS: https://huggingface.co/datasets/google/fleurs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ThiagoFerr/prompt-engineering` es un repositorio alojado en HuggingFace que no contiene un modelo entrenado utilizable, sino una nota de investigacion exploratoria sobre ingenieria de prompts. El propio autor lo describe como un artefacto de "research notes": el fichero principal es `review.md`, acompanado de un `README.md`, y en la model card se indica explicitamente que no se reclama ninguna mejora de benchmark, ninguna ablacion completada, ni codigo ni checkpoint entrenado. Los tags del repositorio incluyen `safetensors`, `transformer`, `research-notes` y `prompt-engineering`, con licencia `cc-by-4.0`.
+`ThiagoFerr/prompt-engineering` es un repositorio alojado en Hugging Face que no contiene un modelo entrenado utilizable, sino una nota de investigacion exploratoria sobre ingenieria de prompts. El propio autor lo describe como un artefacto de "research notes": el fichero principal es `review.md`, acompanado de un `README.md`, y en la model card se indica explicitamente que no se reclama ninguna mejora de benchmark, ninguna ablacion completada, ni codigo ni checkpoint entrenado. Los tags del repositorio incluyen `safetensors`, `transformer`, `research-notes` y `prompt-engineering`, con licencia `cc-by-4.0`.
 
 El dato de parametros reportado por el repositorio es de 49.600 parametros totales (segun el campo de safetensors), una cifra que no corresponde a un modelo de lenguaje funcional y que es coherente con el caracter experimental y no desplegable del artefacto. El tamano del repositorio es practicamente nulo (0,0 GB), no tiene pipeline declarado, no registra descargas ni "likes", y no se declaran idiomas soportados.
 
@@ -81,5 +81,5 @@ No se dispone de alternativas equivalentes en la categoria "notas de investigaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ThiagoFerr/prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/ThiagoFerr/prompt-engineering
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos, demos) en la busqueda web disponible.

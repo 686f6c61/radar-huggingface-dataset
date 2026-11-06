@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Idiomas | Voces | Compatibilidad directa con sherpa-onnx | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| scut-kokoro-vi | No disponible (ONNX fp32 de 311 MB) | Vietnamita | 14 | Sí (metadatos `kokoro` insertados) | Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| contextboxai/Kokoro-Vietnamese (base) | No disponible (mismos pesos) | Vietnamita | 14 | No de forma directa; requiere la conversión y el etiquetado de metadatos que aplica esta versión | Apache-2.0 | HuggingFace y repositorio iamdinhthuan/Kokoro-Vietnamese |
+| scut-kokoro-vi | No disponible (ONNX fp32 de 311 MB) | Vietnamita | 14 | Sí (metadatos `kokoro` insertados) | Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| contextboxai/Kokoro-Vietnamese (base) | No disponible (mismos pesos) | Vietnamita | 14 | No de forma directa; requiere la conversión y el etiquetado de metadatos que aplica esta versión | Apache-2.0 | Hugging Face y repositorio iamdinhthuan/Kokoro-Vietnamese |
 | Otras alternativas de TTS en vietnamita (por ejemplo, sistemas basados en XTTS o VITS) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La búsqueda web realizada no devolvió resultados técnicos relacionados con el modelo ni con sistemas comparables, por lo que no es posible establecer una comparación cuantitativa con alternativas fuera del propio modelo base.
@@ -98,14 +98,14 @@ La búsqueda web realizada no devolvió resultados técnicos relacionados con el
 - Solo soporta vietnamita, sin capacidades multilingües ni de cambio de idioma.
 - No se documentan los estilos, registros ni la procedencia de cada una de las 14 voces; los nombres corresponden a identificadores del modelo base y no se aporta información sobre consentimiento o derechos de imagen y voz, aspecto que conviene verificar antes de un uso comercial o de difusión pública.
 - El autor original no describe el matiz de cada voz; la única observación disponible es que `storyvert` lee más despacio (6,45 s frente a ~5,2 s para la misma frase), por lo que se infiere un uso narrativo sin confirmación oficial.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace y no ha pasado por una validación de la comunidad; se trata de un artefacto recién publicado y sin mantenimiento demostrado.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face y no ha pasado por una validación de la comunidad; se trata de un artefacto recién publicado y sin mantenimiento demostrado.
 - Riesgo de alucinación en el sentido de TTS: el modelo no genera contenido semánticamente, pero puede producir pronunciaciones incorrectas o prosodia defectuosa en textos con números, siglas, palabras extranjeras o puntuación ambigua, sin que exista un mecanismo de verificación interno.
 - Licencia Apache-2.0: permite uso comercial y modificación, pero exige conservar los avisos de copyright y el fichero de licencia, y no concede derechos sobre marcas ni sobre las voces en sí.
 - No se han publicado evaluaciones objetivas de calidad de audio (MOS, CMOS) ni comparaciones con otros sistemas vietnamitas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrianSG26/scut-kokoro-vi
+- Modelo en Hugging Face: https://huggingface.co/BrianSG26/scut-kokoro-vi
 - Modelo base: https://huggingface.co/contextboxai/Kokoro-Vietnamese
 - Código de entrenamiento e inferencia del modelo original: https://github.com/iamdinhthuan/Kokoro-Vietnamese
 - sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

@@ -80,8 +80,8 @@ El autor indica que estas puntuaciones son una comprobación de sanidad (±0,03-
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aidevco/Qwen3.8-27B-W8A8 | ~27,8B | 131.072 tokens (config. probada) | INT8 W8A8, resto bf16 | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | ~27,8B | No disponible en la información | bf16 (~55 GB) | Apache 2.0 | HuggingFace |
+| aidevco/Qwen3.8-27B-W8A8 | ~27,8B | 131.072 tokens (config. probada) | INT8 W8A8, resto bf16 | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | ~27,8B | No disponible en la información | bf16 (~55 GB) | Apache 2.0 | Hugging Face |
 | Build INT8 comunitaria del mismo modelo | ~27,8B | No disponible | INT8 | No disponible | Mencionada por el autor, sin enlace |
 
 No se dispone de datos de benchmarks completos ni de especificaciones de contexto del modelo base en la información proporcionada, por lo que la comparación se limita a parámetros, formato y licencia.

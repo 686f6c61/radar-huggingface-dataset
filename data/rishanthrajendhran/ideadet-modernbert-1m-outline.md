@@ -4,7 +4,7 @@
 
 `ideadet-modernbert-1m-outline` es un modelo de clasificación de texto diseñado para la detección de contenido generado por IA a nivel de ideas, no de superficie textual. Desarrollado por Rishanth Rajendhran, investigador centrado en el análisis y mejora de generaciones de modelos de lenguaje, este modelo parte de la arquitectura ModernBERT y se especializa en responder a la pregunta de si las ideas contenidas en un documento pertenecen a una persona, independientemente de que las frases hayan sido redactadas por una IA. En otras palabras, un documento cuyas ideas son humanas se etiqueta como "humano", aunque la redacción superficial haya sido producida por un modelo.
 
-El modelo cuenta con 395.833.346 parámetros, está publicado bajo licencia Apache-2.0 y su acceso es restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga. El repositorio ocupa 1,6 GB y los pesos están en formato safetensors. La fecha de creación indicada es el 31 de agosto de 2026, aunque no se dispone de información adicional sobre el proceso de desarrollo.
+El modelo cuenta con 395.833.346 parámetros, está publicado bajo licencia Apache-2.0 y su acceso es restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga. El repositorio ocupa 1,6 GB y los pesos están en formato safetensors. La fecha de creación indicada es el 31 de agosto de 2026, aunque no se dispone de información adicional sobre el proceso de desarrollo.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 395M parámetros, el modelo en FP16 ocupa aproximadamente 790 MB de memoria, más el overhead de activaciones y el batch. Para clasificación de textos cortos, una GPU con 4 GB de VRAM sería suficiente para inferencia en lotes pequeños.
 - GPU recomendadas: cualquier GPU moderna con soporte CUDA, como NVIDIA RTX 3060 (12 GB), RTX 4090 o A100. También puede ejecutarse en CPU para inferencia de baja latencia, aunque más lento.
 - En consumer GPU: sí, cabe en GPUs de gama media con al menos 4 GB de VRAM si se usa cuantización (no especificada) o batch reducido.
-- Opciones de despliegue: al ser un modelo de clasificación con pesos en safetensors, puede servirse con frameworks estándar como HuggingFace Transformers, ONNX Runtime o TensorRT. No se menciona soporte específico para vLLM, llama.cpp u Ollama, pero al ser un encoder transformer, es compatible con las herramientas que soportan arquitecturas BERT.
+- Opciones de despliegue: al ser un modelo de clasificación con pesos en safetensors, puede servirse con frameworks estándar como Hugging Face Transformers, ONNX Runtime o TensorRT. No se menciona soporte específico para vLLM, llama.cpp u Ollama, pero al ser un encoder transformer, es compatible con las herramientas que soportan arquitecturas BERT.
 - Latencia y throughput: no se han publicado datos concretos. Para un modelo de este tamaño, la inferencia en GPU es del orden de milisegundos por documento corto.
 
 ## Comparativa con modelos similares
@@ -59,7 +59,7 @@ No se dispone de información comparativa con otros detectores de texto IA. El m
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados o de investigación sin revisión previa.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados o de investigación sin revisión previa.
 - Sin datos de entrenamiento publicados: no se conoce el dataset, el método de etiquetado ni el proceso de validación, por lo que no se puede evaluar su robustez frente a sesgos o dominios específicos.
 - Riesgo de alucinación y falsos positivos: al no disponer de benchmarks, no se puede estimar la tasa de error en la clasificación de ideas humanas vs. IA; es posible que confunda estilos retóricos o ideas comunes.
 - Limitación de idiomas: no se especifican los idiomas soportados; probablemente esté entrenado principalmente en inglés, dado el contexto del autor y la documentación.
@@ -68,8 +68,8 @@ No se dispone de información comparativa con otros detectores de texto IA. El m
 
 ## Enlaces
 
-- Modelo en HuggingFace: [rishanthrajendhran/ideadet-modernbert-1m-outline](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-outline)
+- Modelo en Hugging Face: [rishanthrajendhran/ideadet-modernbert-1m-outline](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-outline)
 - Modelo hermano (391k): [rishanthrajendhran/ideadet-modernbert-391k-outline](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-391k-outline)
-- Perfil del autor en HuggingFace: [rishanthrajendhran](https://huggingface.co/rishanthrajendhran)
+- Perfil del autor en Hugging Face: [rishanthrajendhran](https://huggingface.co/rishanthrajendhran)
 - Sitio personal del autor: [Rishanth Rajendhran](https://rishanthrajendhran.github.io/)
 - GitHub del autor: [RishanthRajendhran](https://github.com/RishanthRajendhran/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abdinouh/my-custom-md-ai-model es un ajuste fino (fine-tune) subido a HuggingFace por el usuario Abdinouh. Se trata de un modelo derivado de unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit, es decir, una version cuantizada a 4 bits de Llama-3.2-3B-Instruct, que a su vez es un transformer denso de 3,21 mil millones de parametros desarrollado por Meta. El modelo se entrenó con la libreria Unsloth, segun indica el propio autor en la model card, y se distribuye bajo licencia Apache 2.0.
+Abdinouh/my-custom-md-ai-model es un ajuste fino (fine-tune) subido a Hugging Face por el usuario Abdinouh. Se trata de un modelo derivado de unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit, es decir, una version cuantizada a 4 bits de Llama-3.2-3B-Instruct, que a su vez es un transformer denso de 3,21 mil millones de parametros desarrollado por Meta. El modelo se entrenó con la libreria Unsloth, segun indica el propio autor en la model card, y se distribuye bajo licencia Apache 2.0.
 
 La informacion publicada es extremadamente escasa: la model card no incluye dataset de entrenamiento, hiperparametros, numero de tokens, ni resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano coherente con un ajuste fino de tipo LoRA o con pesos cuantizados, no con un entrenamiento completo de los 3B parametros. Las etiquetas del repositorio apuntan a text-generation-inference, transformers, unsloth, llama y trl, lo que sugiere un flujo de trabajo estandar de fine-tuning supervisado (SFT) con TRL sobre una base ya instruida.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Abdinouh/my-custom-md-ai-model | 3,21 mil millones (heredados) | no disponible | apache-2.0 (declarada) | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente utilizado |
-| Qwen2.5-3B-Instruct | 3,09 mil millones | 32 768 tokens | Apache 2.0 / Qwen License segun variante | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8 mil millones | 128 000 tokens | MIT | HuggingFace |
+| Abdinouh/my-custom-md-ai-model | 3,21 mil millones (heredados) | no disponible | apache-2.0 (declarada) | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente utilizado |
+| Qwen2.5-3B-Instruct | 3,09 mil millones | 32 768 tokens | Apache 2.0 / Qwen License segun variante | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8 mil millones | 128 000 tokens | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para el modelo objeto de esta ficha, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos para el modelo objeto de esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdinouh/my-custom-md-ai-model
+- Modelo en Hugging Face: https://huggingface.co/Abdinouh/my-custom-md-ai-model
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de TRL: no disponible en los resultados de busqueda

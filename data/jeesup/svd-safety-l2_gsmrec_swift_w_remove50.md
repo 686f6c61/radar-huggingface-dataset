@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_swift_w_remove50
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_swift_w_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Proyecto svd_safety (job `gsmrec_slurm.sh`): no disponible como enlace público en la información proporcionada
 - Paper de Swift-SVD: no disponible en la información proporcionada

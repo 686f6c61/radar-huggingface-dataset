@@ -82,7 +82,7 @@ La principal diferencia frente a los modelos originales de Stability AI es el fo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maxgraf/sa3-variations-torch
+- Repositorio Hugging Face: https://huggingface.co/maxgraf/sa3-variations-torch
 - Repositorio hermano (modelos): https://huggingface.co/maxgraf/sa3-variations-models
 - Pagina del proyecto SA3 Variations: https://maxgraf.space/projects/sa3-variations/
 - Pagina personal de Max Graf: https://maxgraf.space/

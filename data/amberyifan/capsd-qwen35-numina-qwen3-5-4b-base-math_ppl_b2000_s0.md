@@ -4,7 +4,7 @@
 
 El modelo `AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b2000_s0` es un ajuste fino (fine-tuning) completo del modelo base `Qwen/Qwen3.5-4B-Base`, realizado por el usuario AmberYifan mediante el framework Llama-Factory. La model card, generada automáticamente por el Trainer, indica que el entrenamiento se realizó sobre un dataset denominado `capsd_Qwen3.5-4B-Base-n80000-numina__mix_math_ppl_b2000_s0`, cuyo nombre sugiere una mezcla de datos matemáticos y de perplejidad (ppl) con 80 000 muestras, aunque no se proporcionan detalles adicionales sobre su composición.
 
-El modelo cuenta con 4 539 265 536 parámetros (aproximadamente 4,5 mil millones) y se distribuye en formato safetensors. La ficha de HuggingFace declara un pipeline de `image-text-to-text`, lo que resulta llamativo dado que el modelo base es exclusivamente de texto; esta etiqueta podría deberse a un error de clasificación o a una capacidad multimodal no documentada. No se han publicado resultados de benchmarks ni descripciones de uso previsto, por lo que su rendimiento real es desconocido. La licencia se indica como `other`, sin especificar términos concretos.
+El modelo cuenta con 4 539 265 536 parámetros (aproximadamente 4,5 mil millones) y se distribuye en formato safetensors. La ficha de Hugging Face declara un pipeline de `image-text-to-text`, lo que resulta llamativo dado que el modelo base es exclusivamente de texto; esta etiqueta podría deberse a un error de clasificación o a una capacidad multimodal no documentada. No se han publicado resultados de benchmarks ni descripciones de uso previsto, por lo que su rendimiento real es desconocido. La licencia se indica como `other`, sin especificar términos concretos.
 
 La relevancia de este modelo radica en ser un ejemplo de ajuste fino de un modelo Qwen de última generación (Qwen3.5) para tareas matemáticas, aunque la ausencia de métricas de evaluación y documentación limita su utilidad práctica para desarrolladores e investigadores que necesiten validar su calidad.
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó con los siguientes hiperparámetros: tasa de aprend
 
 - Generacion de texto y razonamiento: al ser un fine-tuning de Qwen3.5-4B-Base, se espera que herede las capacidades generales del modelo base, incluyendo generación de texto, comprensión de instrucciones y razonamiento básico. Sin embargo, no hay evidencia empírica publicada.
 - Matematicas: el nombre del dataset sugiere un enfoque en tareas matemáticas, pero no se han documentado resultados específicos en esta área.
-- Multimodalidad: la etiqueta `image-text-to-text` en HuggingFace sugiere posible soporte de entrada de imágenes, pero no hay información en la model card que confirme esta capacidad. Es probable que sea un error de etiquetado.
+- Multimodalidad: la etiqueta `image-text-to-text` en Hugging Face sugiere posible soporte de entrada de imágenes, pero no hay información en la model card que confirme esta capacidad. Es probable que sea un error de etiquetado.
 - Tool calling y agentes: no se menciona soporte para function calling ni capacidades de agente.
 - Multilingüismo: no se especifican idiomas soportados.
 
@@ -64,10 +64,10 @@ Dado que no hay resultados de rendimiento, la comparativa se limita a especifica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b2000_s0 | 4,54B | no disponible | other | HuggingFace |
-| Qwen/Qwen3.5-4B-Base | 4,54B | no disponible | Apache 2.0 (probable) | HuggingFace |
-| Qwen/Qwen2.5-3B | 3,09B | 32 768 tokens | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-3B | 3,21B | 128 000 tokens | Llama 3.2 Community License | HuggingFace |
+| AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b2000_s0 | 4,54B | no disponible | other | Hugging Face |
+| Qwen/Qwen3.5-4B-Base | 4,54B | no disponible | Apache 2.0 (probable) | Hugging Face |
+| Qwen/Qwen2.5-3B | 3,09B | 32 768 tokens | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-3B | 3,21B | 128 000 tokens | Llama 3.2 Community License | Hugging Face |
 
 Nota: los datos de los modelos alternativos son orientativos y pueden variar. No se puede establecer una comparativa de rendimiento al carecer de benchmarks para el modelo evaluado.
 
@@ -82,7 +82,7 @@ Nota: los datos de los modelos alternativos son orientativos y pueden variar. No
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b2000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b2000_s0
 - Modelo base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 
 No se han encontrado otros enlaces (papers, blogs, repositorios) asociados a este modelo en la informacion proporcionada.

@@ -70,8 +70,8 @@ No se dispone de datos publicados de otros adaptadores de decision-making sobre 
 
 | Modelo | Parametros | Contexto | Licencia | Precision en la tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.5-0.8B (base, sin entrenar) | 0,8B | no disponible | no disponible en la informacion | 32,1% | HuggingFace |
-| connectailab-rl-avoca-v1 (este modelo) | 0,8B base + LoRA | no disponible | apache-2.0 | 74,6% | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base, sin entrenar) | 0,8B | no disponible | no disponible en la informacion | 32,1% | Hugging Face |
+| connectailab-rl-avoca-v1 (este modelo) | 0,8B base + LoRA | no disponible | apache-2.0 | 74,6% | Hugging Face |
 | Politica profesora PPO del simulador | no disponible | no disponible | no disponible | no disponible (el autor indica que esta por encima del adaptador) | no publicada en la informacion |
 
 No se conocen alternativas equivalentes de decision-making sobre este modelo base en la informacion disponible.
@@ -92,7 +92,7 @@ No se conocen alternativas equivalentes de decision-making sobre este modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avoca8Hug/connectailab-rl-avoca-v1
+- Modelo en Hugging Face: https://huggingface.co/avoca8Hug/connectailab-rl-avoca-v1
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

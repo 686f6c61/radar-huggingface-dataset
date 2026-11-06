@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-Quantized es un paquete de pesos cuantizados del modelo de difusion text-to-image Qwen/Qwen-Image-2.1, publicado por el usuario Warumauchimmer en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una redistribucion en multiples formatos (GGUF, safetensors en FP8, INT8 y NVFP4, y MLX en 4, 6 y 8 bits) pensada para ejecucion local en ComfyUI, incluyendo los ficheros acompanantes necesarios: el codificador de texto Qwen3-VL 8B y el VAE del modelo.
+Qwen-Image-2.1-Uncensored-Quantized es un paquete de pesos cuantizados del modelo de difusion text-to-image Qwen/Qwen-Image-2.1, publicado por el usuario Warumauchimmer en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una redistribucion en multiples formatos (GGUF, safetensors en FP8, INT8 y NVFP4, y MLX en 4, 6 y 8 bits) pensada para ejecucion local en ComfyUI, incluyendo los ficheros acompanantes necesarios: el codificador de texto Qwen3-VL 8B y el VAE del modelo.
 
 El repositorio ocupa 105,2 GB e incluye tanto una variante "UC" (uncensored, presuntamente con el alineamiento de seguridad relajado o eliminado) como los ficheros GGUF derivados de los pesos base originales. El modelo declarado tiene 7.115.124.736 parametros (unos 7,1 mil millones) en el transformer de difusion, y se distribuye bajo la licencia qwen-research, que restringe el uso comercial.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Uncensored-Quantized (este repositorio) | ~7,1 mil millones (transformer) | No disponible | GGUF, FP8, INT8, NVFP4, MLX | qwen-research | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace (oficial) |
+| Qwen-Image-2.1-Uncensored-Quantized (este repositorio) | ~7,1 mil millones (transformer) | No disponible | GGUF, FP8, INT8, NVFP4, MLX | qwen-research | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1 (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (oficial) |
 | Otras alternativas de text-to-image cuantizadas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye datos de rendimiento ni especificaciones de modelos alternativos comparables (por ejemplo, otras familias de difusion cuantizadas para ComfyUI), por lo que no es posible establecer una comparacion cuantitativa fiable. La unica comparacion documentada es con el modelo base del que derivan los pesos.
@@ -92,7 +92,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Warumauchimmer/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio en Hugging Face: https://huggingface.co/Warumauchimmer/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork mantenido, leejet): https://github.com/leejet/ComfyUI-GGUF

@@ -6,7 +6,7 @@ Indic-transcribe-flex-GGUF es una conversión a formato GGUF del modelo de recon
 
 Con aproximadamente 1.230 millones de parámetros, el modelo se sitúa en la categoría de modelos ASR ligeros, comparables en tamaño a Whisper medium o modelos Canary de NVIDIA. Su relevancia actual radica en la creciente demanda de herramientas de transcripción de calidad para idiomas índicos, donde los modelos dominantes como Whisper presentan tasas de error de palabra (WER) notablemente superiores. Al distribuirse en GGUF, se reduce la barrera de entrada para despliegues locales sin depender de la pila CUDA de PyTorch.
 
-Cabe destacar que el acceso al repositorio está restringido (gated): los usuarios deben aceptar las condiciones de la licencia indic-open-model-license-1.0 en HuggingFace antes de poder descargar los pesos. No se ha publicado información detallada sobre la arquitectura exacta del modelo base más allá de las etiquetas canary y fastconformer, que sugieren una derivación de la familia FastConformer de NVIDIA.
+Cabe destacar que el acceso al repositorio está restringido (gated): los usuarios deben aceptar las condiciones de la licencia indic-open-model-license-1.0 en Hugging Face antes de poder descargar los pesos. No se ha publicado información detallada sobre la arquitectura exacta del modelo base más allá de las etiquetas canary y fastconformer, que sugieren una derivación de la familia FastConformer de NVIDIA.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ Indic-transcribe-flex se posiciona frente a Whisper medium con un tamaño simila
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated; es necesario aceptar las condiciones en HuggingFace, lo que puede complicar la integración en pipelines de CI/CD automatizados (requiere token de acceso).
+- Acceso restringido: el repositorio es gated; es necesario aceptar las condiciones en Hugging Face, lo que puede complicar la integración en pipelines de CI/CD automatizados (requiere token de acceso).
 - Licencia "other" (indic-open-model-license-1.0): los términos exactos para uso comercial no están resumidos en la ficha; debe revisarse la licencia antes de cualquier despliegue en producción, ya que puede imponer restricciones territoriales o de uso.
 - Riesgo de alucinaciones típico de decodificadores autoregresivos en ASR: repeticiones, invención de contenido en silencios o audio ruidoso, especialmente en idiomas con menos datos de entrenamiento.
 - Rendimiento desigual entre idiomas: las lenguas de baja dotación (santali, manipuri, dogri) probablemente presenten WER notablemente superior al de hindi o tamil; no hay métricas publicadas para cuantificarlo.
@@ -79,6 +79,6 @@ Indic-transcribe-flex se posiciona frente a Whisper medium con un tamaño simila
 
 ## Enlaces
 
-- Repositorio en HuggingFace (GGUF cuantizado): https://huggingface.co/Bonenk/indic-transcribe-flex-GGUF
+- Repositorio en Hugging Face (GGUF cuantizado): https://huggingface.co/Bonenk/indic-transcribe-flex-GGUF
 - Modelo base (bodhan-ai/indic-transcribe-flex): https://huggingface.co/bodhan-ai/indic-transcribe-flex
 - Paper, blog o demo oficial: no disponible

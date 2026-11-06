@@ -97,7 +97,7 @@ No se conocen otras lentes jacobianas publicadas para el mismo modelo base en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Utkarsh736/qwen3.5-0.8b-hindi-jacobian-lens
+- Repositorio en Hugging Face: https://huggingface.co/Utkarsh736/qwen3.5-0.8b-hindi-jacobian-lens
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de ajuste: https://huggingface.co/datasets/HuggingFaceFW/finewiki
 - Artículo de metodología (Transformer Circuits, Workspace, 2026): https://transformer-circuits.pub/2026/workspace/index.html

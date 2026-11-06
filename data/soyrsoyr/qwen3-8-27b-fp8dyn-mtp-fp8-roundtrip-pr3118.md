@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-FP8Dyn-MTP-FP8-Roundtrip-PR3118 es un checkpoint derivado de Qwen/Qwen3.8-27B publicado por el usuario soyrsoyr en HuggingFace. No se trata de un modelo entrenado desde cero ni de una release oficial de Qwen, sino de un artefacto de validacion tecnica: contiene el modulo de prediccion multi-token (MTP) copiado del checkpoint base y cuantizado con el esquema `FP8_DYNAMIC`, mientras que el backbone en FP8 dinamico se reutiliza sin cambios de otro repositorio de la misma cadena. El objetivo declarado es ejercitar el helper de guardado de MTP introducido en el PR3118 del repositorio llm-compressor.
+Qwen3.8-27B-FP8Dyn-MTP-FP8-Roundtrip-PR3118 es un checkpoint derivado de Qwen/Qwen3.8-27B publicado por el usuario soyrsoyr en Hugging Face. No se trata de un modelo entrenado desde cero ni de una release oficial de Qwen, sino de un artefacto de validacion tecnica: contiene el modulo de prediccion multi-token (MTP) copiado del checkpoint base y cuantizado con el esquema `FP8_DYNAMIC`, mientras que el backbone en FP8 dinamico se reutiliza sin cambios de otro repositorio de la misma cadena. El objetivo declarado es ejercitar el helper de guardado de MTP introducido en el PR3118 del repositorio llm-compressor.
 
 El modelo tiene 27.320.697.856 parametros (dato real extraido de los safetensors) y el repositorio ocupa 35,5 GB. Se distribuye en formato safetensors con `compressed-tensors`, es compatible con la libreria `transformers` y esta etiquetado para `text-generation` y, de forma secundaria, para `image-text-to-text`. La licencia declarada es Apache 2.0, aunque el propio autor recuerda que se aplican los terminos de licencia originales de Qwen.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada y muy especifica: sirve como escala intermedia en una c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (checkpoint derivado del backbone de Qwen/Qwen3.8-27B con modulo MTP; etiqueta de familia `qwen3_5` en HuggingFace) |
+| Arquitectura | no disponible (checkpoint derivado del backbone de Qwen/Qwen3.8-27B con modulo MTP; etiqueta de familia `qwen3_5` en Hugging Face) |
 | Parametros totales | 27.320.697.856 (dato real de safetensors) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -39,7 +39,7 @@ La innovacion tecnica implicada es el modulo MTP (multi-token prediction), un ca
 - Prediccion multi-token (MTP): incluye el modulo MTP cuantizado, pensado para decodificacion especulativa con un token draft.
 - Servicio con vLLM: el checkpoint se ha cargado y servido con exito en vLLM 0.28.0 (confirmado en la prueba de humo).
 - Compatibilidad con `transformers` y `compressed-tensors` como formatos de carga.
-- Posible entrada de imagen: la etiqueta `image-text-to-text` figura entre los tags de HuggingFace, aunque no se documenta ni se demuestra en la model card. Debe tratarse como indicio, no como capacidad confirmada.
+- Posible entrada de imagen: la etiqueta `image-text-to-text` figura entre los tags de Hugging Face, aunque no se documenta ni se demuestra en la model card. Debe tratarse como indicio, no como capacidad confirmada.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el campo de idiomas no esta informado).
@@ -104,7 +104,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-Roundtrip-PR3118
+- Hugging Face (este modelo): https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-Roundtrip-PR3118
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Etapa de copia: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-Copy-PR3118
 - Etapa BF16 desde FP8: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-BF16-Roundtrip-PR3118

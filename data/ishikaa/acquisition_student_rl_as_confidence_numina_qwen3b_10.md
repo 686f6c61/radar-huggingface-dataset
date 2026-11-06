@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10` es un modelo de generación de texto de aproximadamente 3.000 millones de parámetros (3.085.938.688), publicado en HuggingFace por el usuario `ishikaa`. Según los metadatos del repositorio, se trata de un fine-tuning de la familia Qwen2 (el tag `qwen2` y el nombre `qwen3b` así lo sugieren) realizado con la librería `trl` y el algoritmo `GRPO` (Group Relative Policy Optimization). El nombre del modelo incluye la palabra `numina`, lo que apunta a un entrenamiento sobre el dataset de matemáticas Numina, aunque no hay confirmación explícita en la documentación.
+El modelo `ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10` es un modelo de generación de texto de aproximadamente 3.000 millones de parámetros (3.085.938.688), publicado en Hugging Face por el usuario `ishikaa`. Según los metadatos del repositorio, se trata de un fine-tuning de la familia Qwen2 (el tag `qwen2` y el nombre `qwen3b` así lo sugieren) realizado con la librería `trl` y el algoritmo `GRPO` (Group Relative Policy Optimization). El nombre del modelo incluye la palabra `numina`, lo que apunta a un entrenamiento sobre el dataset de matemáticas Numina, aunque no hay confirmación explícita en la documentación.
 
 La ficha del modelo es mínima y autogenerada, sin información sobre el proceso de entrenamiento, los datos utilizados, la licencia, los idiomas o los benchmarks. El repositorio contiene pesos en formato `safetensors` con un tamaño de 6,2 GB, coherente con una representación en FP16/BF16 para un modelo de 3B. La relevancia del modelo es limitada: se trata de un experimento de RL sobre un modelo pequeño, sin documentación técnica que permita evaluar su rendimiento o sus capacidades reales.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con los pesos en FP16/BF16 (6,2 GB en disco), se estiman entre 6,5 y 7,5 GB de VRAM para carga completa. En cuantizacion 4-bit, la VRAM necesaria podria reducirse a unos 2-3 GB, pero no se ofrecen cuantizaciones oficiales.
 - GPU recomendadas: una NVIDIA RTX 3060 12GB o superior seria suficiente para inferencia en FP16. Tambien valdrian RTX 4060 Ti 16GB, RTX 4090, A100 o H100.
 - Compatibilidad con consumer GPU: si, en GPU de consumo con al menos 8 GB de VRAM (con cuantizacion) o 12 GB (sin cuantizar).
-- Opciones de despliegue: el tag `text-generation-inference` y `endpoints_compatible` sugieren compatibilidad con HuggingFace TGI. Tambien puede usarse con la libreria `transformers`. No se indica compatibilidad con vLLM, llama.cpp u Ollama; para estos ultimos seria necesario convertir los pesos a GGUF.
+- Opciones de despliegue: el tag `text-generation-inference` y `endpoints_compatible` sugieren compatibilidad con Hugging Face TGI. Tambien puede usarse con la libreria `transformers`. No se indica compatibilidad con vLLM, llama.cpp u Ollama; para estos ultimos seria necesario convertir los pesos a GGUF.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,5 +74,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_RL_AS_confidence_numina_qwen3b_10
 - Modelo relacionado: https://huggingface.co/ishikaa/acquisition_student_RL_qwen3bins_numina_confidence

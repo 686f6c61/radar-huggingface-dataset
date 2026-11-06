@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de function 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/ermiaazarkhalili/FastContext-4B-SFT_base-Function-Calling-xLAM-Unsloth-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/ermiaazarkhalili/FastContext-4B-SFT_base-Function-Calling-xLAM-Unsloth-GGUF
 - Repositorio de pesos en precision completa: https://huggingface.co/ermiaazarkhalili/FastContext-4B-SFT_base-Function-Calling-xLAM-Unsloth
 - Dataset de entrenamiento: https://huggingface.co/datasets/Salesforce/xlam-function-calling-60k
 - Herramienta Unsloth: https://github.com/unslothai/unsloth

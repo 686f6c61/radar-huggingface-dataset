@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bge-small-en-v1.5 es un modelo de embeddings de frases (sentence embeddings) de tipo encoder, publicado en HuggingFace bajo el identificador CamillaZAY/bge-small-en-v1.5. Se trata de una redistribución del modelo BGE-small-en-v1.5 original de BAAI, orientada a tareas de recuperación de información, similitud semántica, clasificación y clustering mediante la generación de representaciones vectoriales densas de texto. Con 33,36 millones de parámetros y un repositorio de 0,4 GB, es un modelo compacto pensado para despliegues de bajo coste y alta velocidad.
+bge-small-en-v1.5 es un modelo de embeddings de frases (sentence embeddings) de tipo encoder, publicado en Hugging Face bajo el identificador CamillaZAY/bge-small-en-v1.5. Se trata de una redistribución del modelo BGE-small-en-v1.5 original de BAAI, orientada a tareas de recuperación de información, similitud semántica, clasificación y clustering mediante la generación de representaciones vectoriales densas de texto. Con 33,36 millones de parámetros y un repositorio de 0,4 GB, es un modelo compacto pensado para despliegues de bajo coste y alta velocidad.
 
 El modelo resuelve el problema de transformar texto en vectores de embedding útiles para búsqueda semántica y sistemas RAG (retrieval-augmented generation), entre otros. Su relevancia actual radica en que combina un tamaño reducido con un rendimiento competitivo en los benchmarks de MTEB (Massive Text Embedding Benchmark), lo que lo hace adecuado para entornos con recursos limitados o para ser desplegado como servicio de embeddings a gran escala.
 
@@ -87,17 +87,17 @@ Resultados declarados por el autor en la model card (model-index), no verificado
 - VRAM estimada para inferencia: inferior a 1 GB en FP32 (33,36 M de parámetros, aproximadamente 133 MB de pesos); en FP16, aproximadamente 67 MB.
 - GPU recomendadas: cualquier GPU moderna es suficiente; el modelo cabe holgadamente en tarjetas de gama baja como GTX 1650, RTX 3060 o T4. Para alto throughput se recomiendan A100, H100 o L4.
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU consumer con al menos 1 GB de VRAM, e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: sentence-transformers, HuggingFace Transformers, Text Embeddings Inference (TEI), ONNX Runtime (hay pesos ONNX en el repositorio), y servidores compatibles con endpoints de HuggingFace (tag endpoints_compatible).
+- Opciones de despliegue: sentence-transformers, Hugging Face Transformers, Text Embeddings Inference (TEI), ONNX Runtime (hay pesos ONNX en el repositorio), y servidores compatibles con endpoints de Hugging Face (tag endpoints_compatible).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo se espera una latencia muy baja y un throughput alto en GPU, pero no se aportan cifras concretas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| bge-small-en-v1.5 (esta ficha) | 33,36 M | no disponible | MIT | en | HuggingFace |
-| bge-base-en-v1.5 | no disponible | no disponible | MIT | en | HuggingFace |
-| all-MiniLM-L6-v2 | no disponible | no disponible | Apache 2.0 | en | HuggingFace |
-| e5-small-v2 | no disponible | no disponible | MIT | en | HuggingFace |
+| bge-small-en-v1.5 (esta ficha) | 33,36 M | no disponible | MIT | en | Hugging Face |
+| bge-base-en-v1.5 | no disponible | no disponible | MIT | en | Hugging Face |
+| all-MiniLM-L6-v2 | no disponible | no disponible | Apache 2.0 | en | Hugging Face |
+| e5-small-v2 | no disponible | no disponible | MIT | en | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada; los valores de parámetros, contexto y licencia de los modelos alternativos no están confirmados en esta ficha y se indican como no disponibles cuando no se han podido verificar.
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CamillaZAY/bge-small-en-v1.5
+- Hugging Face: https://huggingface.co/CamillaZAY/bge-small-en-v1.5
 - Paper BGE (arXiv:2401.03462): https://arxiv.org/abs/2401.03462
 - Paper MTEB (arXiv:2210.07316): no incluido en los tags de la información proporcionada
 - Referencias citadas en los tags: arXiv:2312.15503, arXiv:2311.13534, arXiv:2310.07554, arXiv:2309.07597

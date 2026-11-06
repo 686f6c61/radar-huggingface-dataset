@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Runa v2 es un adaptador LoRA de personaje entrenado sobre el modelo base Krea-2-Turbo, publicado por el usuario bumblebeeman en HuggingFace. Se trata de un ajuste fino de bajo rango (rank 32) destinado a reproducir un personaje ficticio adulto llamado Runa mediante la palabra de activacion `Runa`. El repositorio ocupa 0,5 GB y contiene dos checkpoints: step2500 (el predeterminado) y step2250 como alternativa.
+Runa v2 es un adaptador LoRA de personaje entrenado sobre el modelo base Krea-2-Turbo, publicado por el usuario bumblebeeman en Hugging Face. Se trata de un ajuste fino de bajo rango (rank 32) destinado a reproducir un personaje ficticio adulto llamado Runa mediante la palabra de activacion `Runa`. El repositorio ocupa 0,5 GB y contiene dos checkpoints: step2500 (el predeterminado) y step2250 como alternativa.
 
 El modelo resuelve un problema acotado: incorporar un personaje concreto y consistente en el pipeline de generacion de imagenes de Krea-2-Turbo sin reentrenar el modelo completo. Al ser un LoRA, se carga de forma aditiva sobre el modelo base, lo que permite alternar entre distintos personajes sin duplicar los pesos del modelo original. Su relevancia es limitada y local: no es un modelo de proposito general, sino un artefacto creativo para un caso de uso muy especifico.
 
-La informacion publicada es minima. No se detallan arquitectura del modelo base, parametros, contexto, idiomas ni resultados de evaluacion, y la model card indica explicitamente que el modelo es privado. Todo lo que sigue se limita a lo que consta en la ficha de HuggingFace y en el README del autor; el resto se marca como no disponible.
+La informacion publicada es minima. No se detallan arquitectura del modelo base, parametros, contexto, idiomas ni resultados de evaluacion, y la model card indica explicitamente que el modelo es privado. Todo lo que sigue se limita a lo que consta en la ficha de Hugging Face y en el README del autor; el resto se marca como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Runa v2 (bumblebeeman) | LoRA de personaje sobre Krea-2-Turbo | rank 32, tamano no publicado | no disponible | other | HuggingFace, 0 descargas |
-| Krea-2-Turbo (base) | Modelo de difusion base | no disponible | no disponible | no disponible | HuggingFace (referenciado como base_model) |
+| Runa v2 (bumblebeeman) | LoRA de personaje sobre Krea-2-Turbo | rank 32, tamano no publicado | no disponible | other | Hugging Face, 0 descargas |
+| Krea-2-Turbo (base) | Modelo de difusion base | no disponible | no disponible | no disponible | Hugging Face (referenciado como base_model) |
 | Alternativas de LoRA de personaje | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con otros adaptadores de personaje, dado que no se publican parametros, contexto ni metricas de rendimiento.
@@ -79,6 +79,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bumblebeeman/runa-v2
+- Modelo en Hugging Face: https://huggingface.co/bumblebeeman/runa-v2
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - ai-toolkit (herramienta de entrenamiento citada): no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ryanWNG/vet-dermatology-feline` es un clasificador de imágenes entrenado para distinguir cuatro afecciones dermatológicas cutáneas en gatos: alergia a pulgas (`Flea_Allergy`), piel sana (`Health`), tiña/dermatofitosis (`Ringworm`) y sarna (`Scabies`). Lo desarrolla el autor de HuggingFace `ryanWNG` en el contexto del hackathon Gemma 4 Good, como componente de visión del proyecto Howl Vision, cuyo repositorio se enlaza en la model card.
+El modelo `ryanWNG/vet-dermatology-feline` es un clasificador de imágenes entrenado para distinguir cuatro afecciones dermatológicas cutáneas en gatos: alergia a pulgas (`Flea_Allergy`), piel sana (`Health`), tiña/dermatofitosis (`Ringworm`) y sarna (`Scabies`). Lo desarrolla el autor de Hugging Face `ryanWNG` en el contexto del hackathon Gemma 4 Good, como componente de visión del proyecto Howl Vision, cuyo repositorio se enlaza en la model card.
 
 Técnicamente no es un modelo de lenguaje: es una red convolucional EfficientNetV2-S (variante `tf_efficientnetv2_s.in21k_ft_in1k` de `timm`) con la cabeza de clasificación reconfigurada a 4 clases, entrada RGB de 384×384 píxeles y normalización ImageNet. El checkpoint se distribuye como `state_dict` de PyTorch (`.pt`), no como safetensors ni GGUF, y el repositorio ocupa 0,2 GB.
 
@@ -106,7 +106,7 @@ Los recuentos de parámetros de las alternativas son cifras de arquitectura ampl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryanWNG/vet-dermatology-feline
+- Modelo en Hugging Face: https://huggingface.co/ryanWNG/vet-dermatology-feline
 - Repositorio del proyecto Howl Vision (mencionado en la model card): https://github.com/ikchain
 - Repositorio de `timm` (arquitectura base `tf_efficientnetv2_s.in21k_ft_in1k`): https://github.com/huggingface/pytorch-image-models
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces utilizables son los anteriores. No se han localizado paper, blog técnico ni demo asociados.

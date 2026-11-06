@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rin247/Z-Image (este) | no disponible | no disponible | no disponible | HuggingFace, 142 descargas |
-| Tongyi-MAI/Z-Image (base) | no disponible | no disponible | no disponible | HuggingFace |
+| Rin247/Z-Image (este) | no disponible | no disponible | no disponible | Hugging Face, 142 descargas |
+| Tongyi-MAI/Z-Image (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de difusion texto-a-imagen | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa tecnica con alternativas concretas (por ejemplo, FLUX, SDXL o modelos de Tongyi). Los datos de parametros, contexto y rendimiento no estan publicados en la informacion proporcionada.
@@ -84,6 +84,6 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/Z-Image
+- Repositorio Hugging Face: https://huggingface.co/Rin247/Z-Image
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image
 - Libreria diffusers: https://github.com/huggingface/diffusers

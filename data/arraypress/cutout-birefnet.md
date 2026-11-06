@@ -115,7 +115,7 @@ No se dispone de datos comparativos con otras alternativas de eliminación de fo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arraypress/cutout-birefnet
+- Modelo en Hugging Face: https://huggingface.co/arraypress/cutout-birefnet
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet
 - Repositorio de BiRefNet (código y pesos originales, MIT): https://github.com/ZhengPeng7/BiRefNet
 - CLI `cutout`: https://github.com/arraypress/swift-cutout-cli

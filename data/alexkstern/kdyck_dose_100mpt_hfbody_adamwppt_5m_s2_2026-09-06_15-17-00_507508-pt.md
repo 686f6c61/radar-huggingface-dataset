@@ -79,6 +79,6 @@ No se dispone de información suficiente para una comparativa detallada. Los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_5M_s2_2026-09-06_15-17-00_507508-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_5M_s2_2026-09-06_15-17-00_507508-pt
 - Weights & Biases run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/42d26yfk
 - Repositorio nanochat: https://github.com/karpathy/nanochat

@@ -77,7 +77,7 @@ La comparación es limitada porque no se dispone de datos de rendimiento del mod
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Nataliegvo/gemma-2b-mom-style-v4)
+- [Hugging Face del modelo](https://huggingface.co/Nataliegvo/gemma-2b-mom-style-v4)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Modelo base google/gemma-2b](https://huggingface.co/google/gemma-2b)
 

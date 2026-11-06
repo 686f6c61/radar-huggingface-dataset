@@ -80,8 +80,8 @@ En navegador, con estos pesos de 8 bits y los vectores de motivos comprimidos de
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spindle-bge-base-motifs | no disponible (base BERT base) | no disponible | 51% top-10 / MRR 0,31 en consultas de cuentos; 34% primero en fragmentos ATU | CC BY-SA 4.0 | ONNX en HuggingFace |
-| bge-base-en-v1.5 | no disponible (base BERT base) | no disponible | 46% top-10 / MRR 0,33 en fragmentos ATU (sin ajuste) | MIT | safetensors y ONNX en HuggingFace |
+| spindle-bge-base-motifs | no disponible (base BERT base) | no disponible | 51% top-10 / MRR 0,31 en consultas de cuentos; 34% primero en fragmentos ATU | CC BY-SA 4.0 | ONNX en Hugging Face |
+| bge-base-en-v1.5 | no disponible (base BERT base) | no disponible | 46% top-10 / MRR 0,33 en fragmentos ATU (sin ajuste) | MIT | safetensors y ONNX en Hugging Face |
 | version 1 de spindle-bge-base-motifs | no disponible | no disponible | 47% top-10 / MRR 0,28 en consultas de cuentos | CC BY-SA 4.0 | en el historial de commits del repositorio |
 
 No se dispone de comparacion con otros modelos de embeddings especializados en folkloristica en la informacion proporcionada.
@@ -99,7 +99,7 @@ No se dispone de comparacion con otros modelos de embeddings especializados en f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/folgertk/spindle-bge-base-motifs
+- Modelo en Hugging Face: https://huggingface.co/folgertk/spindle-bge-base-motifs
 - Modelo base: https://huggingface.co/BAAI/bge-base-en-v1.5
 - Spindle (buscador): https://github.com/fbkarsdorp/spindle
 - transformers.js: https://github.com/huggingface/transformers.js

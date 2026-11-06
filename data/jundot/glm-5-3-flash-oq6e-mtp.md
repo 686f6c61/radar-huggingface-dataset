@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | GLM-5.3-Flash-oQ6e-mtp (este) | 321,3B | 18B | no disponible | oQe precision mixta, 6,549 bits/peso | MIT | MLX, safetensors, 263 GB |
-| zai-org/GLM-5.3-Flash (base) | 320B | 18B | no disponible | no cuantizado (precision original) | MIT | Repositorio HuggingFace del autor original |
+| zai-org/GLM-5.3-Flash (base) | 320B | 18B | no disponible | no cuantizado (precision original) | MIT | Repositorio Hugging Face del autor original |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Solo se dispone de datos verificables del modelo base. La información proporcionada no incluye especificaciones de otros modelos comparables de tamaño o tarea similares, por lo que no se puede establecer una comparación cuantitativa fiable con alternativas de terceros.
@@ -91,7 +91,7 @@ Solo se dispone de datos verificables del modelo base. La información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/GLM-5.3-Flash-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/GLM-5.3-Flash-oQ6e-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Pull request de la cuantización Improved oQe: https://github.com/jundot/omlx/pull/4385

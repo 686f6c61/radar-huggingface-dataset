@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MrBenjaroo/ppo-LunarLander-v3-veryBadTest` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la librería stable-baselines3. Lo publica el usuario MrBenjaroo en HuggingFace Hub con pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje ni de un modelo generativo: no procesa texto ni imagenes, sino vectores de observacion del entorno y emite acciones discretas de control.
+El modelo `MrBenjaroo/ppo-LunarLander-v3-veryBadTest` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la librería stable-baselines3. Lo publica el usuario MrBenjaroo en Hugging Face Hub con pipeline `reinforcement-learning`. No se trata de un modelo de lenguaje ni de un modelo generativo: no procesa texto ni imagenes, sino vectores de observacion del entorno y emite acciones discretas de control.
 
 El propio nombre del repositorio (`veryBadTest`) y la metrica declarada en la model-index (recompensa media de -199.91 +/- 65.09, marcada como no verificada) indican que se trata de un experimento fallido o de un artefacto de prueba: un agente que no ha aprendido a aterrizar la nave y que rinde por debajo del umbral habitual de resolucion del entorno. El repositorio tiene 0 descargas, 0 likes, un tamano declarado de 0.0 GB y una model card claramente incompleta, con la seccion de uso marcada como `TODO`.
 
@@ -51,7 +51,7 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, hiperpar
 - Material didactico sobre fallos de entrenamiento: permite ilustrar como se ve un agente que no converge y como se registra una metrica `mean_reward` negativa en la model-index.
 - Baseline negativo en experimentos academicos: usar esta politica como cota inferior frente a un PPO correctamente entrenado sobre LunarLander-v3, siempre que se documente su origen y su caracter no verificado.
 - Pruebas de infraestructura de evaluacion: sirve para validar runners de evaluacion, sistemas de logging de recompensas y comparadores de checkpoints en entornos Gymnasium.
-- Depuracion de pipelines de publicacion en HuggingFace Hub: el repositorio ejemplifica una model card incompleta y un artefacto sin licencia declarada, util para revisar plantillas y validaciones previas a la publicacion.
+- Depuracion de pipelines de publicacion en Hugging Face Hub: el repositorio ejemplifica una model card incompleta y un artefacto sin licencia declarada, util para revisar plantillas y validaciones previas a la publicacion.
 - Experimentos de ajuste de recompensa (reward shaping): si se dispone del codigo de entrenamiento, el punto de partida puede reutilizarse para probar funciones de recompensa modificadas y comparar curvas de aprendizaje.
 - Docencia sobre riesgos de interpretacion de metricas: la diferencia entre una recompensa declarada no verificada y el criterio de resolucion del entorno es un caso practico claro para discutir verificacion de resultados.
 
@@ -81,7 +81,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo / referencia | Algoritmo | Entorno | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MrBenjaroo/ppo-LunarLander-v3-veryBadTest | PPO | LunarLander-v3 | No aplica | mean_reward -199.91 +/- 65.09 (no verificado) | No disponible | Publico en HuggingFace Hub |
+| MrBenjaroo/ppo-LunarLander-v3-veryBadTest | PPO | LunarLander-v3 | No aplica | mean_reward -199.91 +/- 65.09 (no verificado) | No disponible | Publico en Hugging Face Hub |
 | Checkpoints PPO de LunarLander en el Hub (otros autores) | PPO | LunarLander-v3 | No aplica | No disponible | No disponible | No disponible en la informacion facilitada |
 | Implementaciones de referencia de PPO sobre LunarLander | PPO | LunarLander-v3 | No aplica | No disponible | No disponible | No disponible en la informacion facilitada |
 
@@ -100,7 +100,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrBenjaroo/ppo-LunarLander-v3-veryBadTest
+- Modelo en Hugging Face: https://huggingface.co/MrBenjaroo/ppo-LunarLander-v3-veryBadTest
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad de carga desde el Hub (`huggingface_sb3`): https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

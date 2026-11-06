@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mito_aff_unetiso_setup_53 es un modelo de segmentacion volumetrica publicado por el equipo de CellMap (Janelia Research Campus, HHMI) en HuggingFace bajo el identificador `cellmap/mito-aff-unetiso-setup-53`. No es un modelo de lenguaje: predice mapas de afinidad mitocondrial en los tres ejes (`mito_aff_z`, `mito_aff_y`, `mito_aff_x`) a partir de imagenes de microscopia electronica FIB-SEM con un tamano de voxel de 16 nm. La arquitectura es una U-Net 3D isotropica (Unet3dIso) con BatchNorm, MaxPool y ConvTranspose, entrenada durante 340 000 iteraciones sobre el conjunto `exp_mito` (setup_53), con convoluciones validas y 88 voxeles de contexto por eje.
+mito_aff_unetiso_setup_53 es un modelo de segmentacion volumetrica publicado por el equipo de CellMap (Janelia Research Campus, HHMI) en Hugging Face bajo el identificador `cellmap/mito-aff-unetiso-setup-53`. No es un modelo de lenguaje: predice mapas de afinidad mitocondrial en los tres ejes (`mito_aff_z`, `mito_aff_y`, `mito_aff_x`) a partir de imagenes de microscopia electronica FIB-SEM con un tamano de voxel de 16 nm. La arquitectura es una U-Net 3D isotropica (Unet3dIso) con BatchNorm, MaxPool y ConvTranspose, entrenada durante 340 000 iteraciones sobre el conjunto `exp_mito` (setup_53), con convoluciones validas y 88 voxeles de contexto por eje.
 
 El modelo resuelve el primer paso de la segmentacion de instancias de mitocondrias: en lugar de emitir una mascara binaria, devuelve logits de afinidad entre voxeles vecinos, que despues se agregan con algoritmos como watershed o aglomeracion para separar mitocondrias individuales en volumenes de tejido. El autor indica que la salida son logits crudos y que la activacion sigmoide debe aplicarse despues del modelo.
 
@@ -80,7 +80,7 @@ No disponible. La model card no ofrece comparaciones con otras arquitecturas de 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mito_aff_unetiso_setup_53 | no disponible | 300 x 300 x 300 voxeles, 16 nm | no disponible | BSD-3-Clause | HuggingFace (`cellmap/mito-aff-unetiso-setup-53`), ONNX web |
+| mito_aff_unetiso_setup_53 | no disponible | 300 x 300 x 300 voxeles, 16 nm | no disponible | BSD-3-Clause | Hugging Face (`cellmap/mito-aff-unetiso-setup-53`), ONNX web |
 | Alternativas de segmentacion de mitocondrias en EM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No disponible. La model card no ofrece comparaciones con otras arquitecturas de 
 - Modelo de dominio muy estrecho: esta entrenado para mitocondrias en FIB-SEM a 16 nm. Aplicarlo a otras resoluciones, a otras modalidades (TEM, SEM de superficie, expansion microscopy) o a otros tejidos sin remuestreo y validacion previa producira resultados poco fiables.
 - Sesgos de dataset desconocidos: no se publica la composicion del conjunto `exp_mito` ni su procedencia (especie, region cerebral, condiciones de tincion), por lo que no es posible evaluar sesgos sistematicos hacia un tipo de muestra determinado.
 - Riesgo de falsos positivos y de fusion de instancias: la salida son afinidades, no instancias. Los errores en los bordes o en mitocondrias muy proximas pueden hacer que el paso de agregacion las una o las fragmente. No existe una nocion de "alucinacion" en el sentido de los modelos de lenguaje, pero si de predicciones plausibles y erroneas.
-- Rendimiento no verificado: 0 descargas y 0 likes en HuggingFace en el momento de la consulta y ausencia total de benchmarks publicados. No hay evidencia externa de calidad.
+- Rendimiento no verificado: 0 descargas y 0 likes en Hugging Face en el momento de la consulta y ausencia total de benchmarks publicados. No hay evidencia externa de calidad.
 - Salida en logits crudos: es imprescindible aplicar la sigmoide despues del modelo (`apply_after_model: true`) antes de interpretar los mapas de afinidad.
 - Convoluciones validas: la salida es 212 x 212 x 212 para una entrada de 300 x 300 x 300, con 88 voxeles de contexto por eje declarados. Hay que gestionar ese recorte al teselar volumenes grandes para evitar costuras.
 - Licencia BSD-3-Clause: permite uso comercial y modificacion, pero obliga a conservar el aviso de copyright y la clausula de licencia, y prohibe usar el nombre de la organizacion o de los contribuyentes para promocionar productos derivados sin permiso escrito.
@@ -96,7 +96,7 @@ No disponible. La model card no ofrece comparaciones con otras arquitecturas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellmap/mito-aff-unetiso-setup-53
+- Modelo en Hugging Face: https://huggingface.co/cellmap/mito-aff-unetiso-setup-53
 - Repositorio del framework: https://github.com/janelia-cellmap/cellmap-models
 - Proyecto CellMap (Janelia): https://www.janelia.org/project-team/cellmap
 - Version ONNX para web referenciada por el autor: https://huggingface.co/cellmap/onnx-web-models (subcarpeta `setup_53`)

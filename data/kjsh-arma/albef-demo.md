@@ -78,5 +78,5 @@ No disponible. No se han proporcionado datos de rendimiento, contexto ni paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kjsh-arma/albef-demo
+- Repositorio en Hugging Face: https://huggingface.co/Kjsh-arma/albef-demo
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios de codigo ni demos adicionales relacionados con este modelo; los resultados devueltos corresponden a sitios sin relacion con el contenido (plataformas de videojuegos), por lo que se descartan como fuentes.

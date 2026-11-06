@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Despliegue de `flux/`: diffusers con las clases de pipeline de FLUX. Los servidores orientados a LLM (vLLM, TGI, Ollama, llama.cpp) no aplican a un modelo de difusion.
 - Despliegue de `qwen3-tts/`: transformers, cargando el modelo y el speech_tokenizer por separado. Tampoco aplican vLLM ni llama.cpp, al no ser un modelo de lenguaje causal de proposito general.
 - Latencia y throughput: no disponibles. Solo puede afirmarse cualitativamente que la variante schnell esta disenada para requerir pocos pasos de inferencia, y que el modelo TTS es de 1,7B, un tamano moderado para sintesis de voz.
-- Almacenamiento: 38,3 GB de disco para el repositorio completo, sin contar cache de HuggingFace ni pesos duplicados si ya se tienen los upstream por separado.
+- Almacenamiento: 38,3 GB de disco para el repositorio completo, sin contar cache de Hugging Face ni pesos duplicados si ya se tienen los upstream por separado.
 
 ## Comparativa con modelos similares
 
@@ -92,11 +92,11 @@ Comparativa con las fuentes upstream y con alternativas de la misma categoria:
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `altbit/avatarsvc-prep-models` | agregador de imagen + TTS | ~13.700 M en total | Apache-2.0 (heredada) | HuggingFace, 38,3 GB, sin pipeline declarado |
-| `black-forest-labs/FLUX.1-schnell` | difusion texto-a-imagen | ~12.000 M (estimado) | Apache-2.0 | HuggingFace, repositorio oficial |
-| `Qwen/Qwen3-TTS-12Hz-1.7B-Base` | sintesis de voz texto-a-audio | 1.700 M | Apache-2.0 | HuggingFace, repositorio oficial |
-| `black-forest-labs/FLUX.1-dev` | difusion texto-a-imagen | ~12.000 M (estimado) | licencia no comercial de FLUX.1 [dev] | HuggingFace, repositorio oficial |
-| `stabilityai/stable-diffusion-xl-base-1.0` | difusion texto-a-imagen | ~3.500 M (UNet de ~2.600 M mas text encoders) | CreativeML Open RAIL++-M | HuggingFace, repositorio oficial |
+| `altbit/avatarsvc-prep-models` | agregador de imagen + TTS | ~13.700 M en total | Apache-2.0 (heredada) | Hugging Face, 38,3 GB, sin pipeline declarado |
+| `black-forest-labs/FLUX.1-schnell` | difusion texto-a-imagen | ~12.000 M (estimado) | Apache-2.0 | Hugging Face, repositorio oficial |
+| `Qwen/Qwen3-TTS-12Hz-1.7B-Base` | sintesis de voz texto-a-audio | 1.700 M | Apache-2.0 | Hugging Face, repositorio oficial |
+| `black-forest-labs/FLUX.1-dev` | difusion texto-a-imagen | ~12.000 M (estimado) | licencia no comercial de FLUX.1 [dev] | Hugging Face, repositorio oficial |
+| `stabilityai/stable-diffusion-xl-base-1.0` | difusion texto-a-imagen | ~3.500 M (UNet de ~2.600 M mas text encoders) | CreativeML Open RAIL++-M | Hugging Face, repositorio oficial |
 
 Diferencias relevantes frente a los upstream: el contenido de pesos es identico, pero este repositorio anade un unico punto de descarga, hashes sha256 verificables y 38,3 GB de tamano conjunto. Frente a FLUX.1-dev, la variante schnell tiene licencia Apache-2.0 y por tanto permite uso comercial sin las restricciones de la licencia de dev. Frente a SDXL, los modelos basados en FLUX manejan un numero de parametros muy superior, con el coste de memoria asociado.
 
@@ -115,7 +115,7 @@ Diferencias relevantes frente a los upstream: el contenido de pesos es identico,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/altbit/avatarsvc-prep-models
+- Repositorio en Hugging Face: https://huggingface.co/altbit/avatarsvc-prep-models
 - Modelo upstream de imagen: https://huggingface.co/black-forest-labs/FLUX.1-schnell
 - Commit de FLUX.1-schnell empaquetado: https://huggingface.co/black-forest-labs/FLUX.1-schnell/tree/741f7c3ce8b383c54771c7003378a50191e9efe9
 - Modelo upstream de voz: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base

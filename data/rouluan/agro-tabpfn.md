@@ -83,10 +83,10 @@ Mejor MSE de validacion durante el ajuste fino: 0,2716 en la epoca 26 de 30. No 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Agro-TabPFN (este) | Transformer tabular afinado | no disponible (checkpoint 668 MB) | 256 | RMSE 0,6207 / R² 0,6981 en test interno | Non-Commercial v1.0 | HuggingFace (0 descargas, 0 likes) |
+| Agro-TabPFN (este) | Transformer tabular afinado | no disponible (checkpoint 668 MB) | 256 | RMSE 0,6207 / R² 0,6981 en test interno | Non-Commercial v1.0 | Hugging Face (0 descargas, 0 likes) |
 | TabPFN-v3 base (`tabpfn-v3-regressor-v3_default`) | Transformer tabular fundacional | no disponible | no disponible | RMSE 0,6865 / R² 0,6308 en el mismo test | TABPFN-3 (no comercial) | Prior Labs / GitHub |
 | Gradient boosting (XGBoost, LightGBM, CatBoost) | Arboles potenciados | no aplica | no aplica | no disponible (no comparado en la informacion) | Permisivas (Apache 2.0 / MIT segun proyecto) | Amplia |
-| Otros derivados de TabPFN | Transformer tabular afinado | no disponible | no disponible | no disponible | segun autor | HuggingFace |
+| Otros derivados de TabPFN | Transformer tabular afinado | no disponible | no disponible | no disponible | segun autor | Hugging Face |
 
 La comparacion directa con alternativas de boosting no esta documentada por el autor; el unico contraste publicado es contra el modelo base de TabPFN-v3.
 
@@ -106,7 +106,7 @@ La comparacion directa con alternativas de boosting no esta documentada por el a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rouluan/Agro-TabPFN
+- Modelo en Hugging Face: https://huggingface.co/rouluan/Agro-TabPFN
 - Repositorio de TabPFN (Prior Labs): https://github.com/PriorLabs/TabPFN
 - Licencia del modelo: archivo `LICENSE` incluido en el repositorio (TABPFN-3 Non-Commercial License v1.0)
 - Contacto para uso comercial: sales@priorlabs.ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hive-Bench es un artefacto alojado en HuggingFace bajo el identificador `zhengtu666/Hive-Bench`, publicado por el usuario zhengtu666. La información disponible en su model card es prácticamente inexistente: únicamente declara la licencia MIT, sin descripción, sin ficha técnica y sin pipeline asociado. El repositorio ocupa 442,8 GB, un tamaño que no corresponde a un modelo de pesos típico de pocos miles de millones de parámetros y que, por el nombre ("Bench"), sugiere que podría tratarse de un conjunto de datos de evaluación o de un benchmark empaquetado, aunque esto no puede confirmarse con los datos proporcionados.
+Hive-Bench es un artefacto alojado en Hugging Face bajo el identificador `zhengtu666/Hive-Bench`, publicado por el usuario zhengtu666. La información disponible en su model card es prácticamente inexistente: únicamente declara la licencia MIT, sin descripción, sin ficha técnica y sin pipeline asociado. El repositorio ocupa 442,8 GB, un tamaño que no corresponde a un modelo de pesos típico de pocos miles de millones de parámetros y que, por el nombre ("Bench"), sugiere que podría tratarse de un conjunto de datos de evaluación o de un benchmark empaquetado, aunque esto no puede confirmarse con los datos proporcionados.
 
 No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. El autor no ha publicado model card descriptiva, resultados de evaluación ni documentación adicional. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, lo que indica que no ha tenido difusión ni validación por parte de la comunidad.
 
@@ -24,8 +24,8 @@ Dado que no existe información técnica verificable, esta ficha se limita a ref
 | Tamano del repositorio | 442,8 GB |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 2026-09-21 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-21 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-21 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No disponible. No se ha identificado en la información proporcionada ningún mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhengtu666/Hive-Bench
+- Hugging Face: https://huggingface.co/zhengtu666/Hive-Bench
 - Paper: no disponible.
 - Blog o documentación del autor: no disponible.
 - Repositorio de código: no disponible.

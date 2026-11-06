@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Entrada / salida | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dadudu/microduck-bubu-tug-remix4` | Política RL (ONNX) para microduck | 61 obs. / 14 acciones | 50 Hz | no disponible | HuggingFace, 0 descargas |
-| `lphatnguyen/microduck-tug-of-war-v0` | Política RL para microduck (checkpoint base) | 61 obs. / 14 acciones (según model card del remix) | 50 Hz | no disponible | HuggingFace |
+| `dadudu/microduck-bubu-tug-remix4` | Política RL (ONNX) para microduck | 61 obs. / 14 acciones | 50 Hz | no disponible | Hugging Face, 0 descargas |
+| `lphatnguyen/microduck-tug-of-war-v0` | Política RL para microduck (checkpoint base) | 61 obs. / 14 acciones (según model card del remix) | 50 Hz | no disponible | Hugging Face |
 | Otras políticas del slot `walk` de microduck | Políticas RL para microduck | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas políticas en la información proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dadudu/microduck-bubu-tug-remix4
+- Modelo en Hugging Face: https://huggingface.co/dadudu/microduck-bubu-tug-remix4
 - Modelo base: https://huggingface.co/lphatnguyen/microduck-tug-of-war-v0
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `main`, commit `a3e0c0fbe`)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NukeTorch/Qwen3.8-Flash-Next-oQ4e-mtp-c4ddfb54 es un repositorio de pesos publicado en HuggingFace por el usuario NukeTorch. Por la nomenclatura del identificador, se trata de una variante cuantizada (sufijo `oQ4e`) de un modelo de la familia Qwen, presumiblemente una version "Flash" orientada a baja latencia, con soporte de multi-token prediction (`mtp`) y un hash de commit (`c4ddfb54`) que identifica la revision concreta. La licencia declarada es `qwen-community-1.0`, lo que vincula el artefacto a las condiciones de uso de la comunidad de Qwen.
+NukeTorch/Qwen3.8-Flash-Next-oQ4e-mtp-c4ddfb54 es un repositorio de pesos publicado en Hugging Face por el usuario NukeTorch. Por la nomenclatura del identificador, se trata de una variante cuantizada (sufijo `oQ4e`) de un modelo de la familia Qwen, presumiblemente una version "Flash" orientada a baja latencia, con soporte de multi-token prediction (`mtp`) y un hash de commit (`c4ddfb54`) que identifica la revision concreta. La licencia declarada es `qwen-community-1.0`, lo que vincula el artefacto a las condiciones de uso de la comunidad de Qwen.
 
-El repositorio no incluye pipeline declarado, no expone idiomas soportados y presenta cero descargas y cero likes en el momento de la consulta, lo que sugiere una publicacion muy reciente (creada y actualizada el 1 de noviembre de 2026) y sin validacion comunitaria. El acceso esta restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar los pesos.
+El repositorio no incluye pipeline declarado, no expone idiomas soportados y presenta cero descargas y cero likes en el momento de la consulta, lo que sugiere una publicacion muy reciente (creada y actualizada el 1 de noviembre de 2026) y sin validacion comunitaria. El acceso esta restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar los pesos.
 
 La relevancia de esta ficha es limitada por la ausencia de documentacion tecnica en la informacion disponible. Se trata de un artefacto derivado (una cuantizacion de terceros), no de un modelo original con model card completa, por lo que muchos parametros clave (arquitectura exacta, numero de parametros, contexto, dataset de entrenamiento) no pueden confirmarse y se marcan como no disponibles.
 
@@ -66,7 +66,7 @@ No disponible. No se dispone de informacion suficiente sobre este artefacto ni s
 
 - Ausencia total de model card: no hay documentacion sobre arquitectura, entrenamiento, evaluacion ni uso previsto.
 - Repositorio sin validacion comunitaria: cero descargas y cero likes en el momento de la consulta.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la adopcion.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la adopcion.
 - Riesgo de cuantizacion: las variantes de 4 bits pueden degradar calidad en tareas de razonamiento y matematicas; no hay evaluacion publicada.
 - Licencia `qwen-community-1.0`: impone condiciones especificas para uso comercial que deben revisarse antes de cualquier despliegue en produccion.
 - Idiomas no declarados: no puede garantizarse el rendimiento en castellano ni en otros idiomas.
@@ -75,4 +75,4 @@ No disponible. No se dispone de informacion suficiente sobre este artefacto ni s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NukeTorch/Qwen3.8-Flash-Next-oQ4e-mtp-c4ddfb54
+- Hugging Face: https://huggingface.co/NukeTorch/Qwen3.8-Flash-Next-oQ4e-mtp-c4ddfb54

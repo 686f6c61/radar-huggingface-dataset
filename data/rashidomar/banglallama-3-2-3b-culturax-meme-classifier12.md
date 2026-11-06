@@ -103,7 +103,7 @@ No se conocen, a partir de la informacion proporcionada, modelos comparables en 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/RashidOmar/banglallama-3.2-3b-culturax-meme-classifier12
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/RashidOmar/banglallama-3.2-3b-culturax-meme-classifier12
 - Modelo base: https://huggingface.co/BanglaLLM/BanglaLLama-3.2-3b-unlop-culturax-base-v0.0.3
 - Referencia bibliografica asociada a la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, calculadora de impacto del aprendizaje automatico, citada en la plantilla de la model card, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto: https://mlco2.github.io/impact#compute

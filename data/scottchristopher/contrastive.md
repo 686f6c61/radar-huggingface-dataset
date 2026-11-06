@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Scottchristopher/contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario Scottchristopher. Se trata de una implementación propia de una arquitectura híbrida CNN-Transformer orientada a aprendizaje contrastivo, con un tamaño declarado de 16.576 parámetros en el fichero `model.safetensors`. No es un modelo entrenado ni un modelo de propósito general: la propia model card lo describe explícitamente como un *checkpoint de inicialización válido para pruebas de humo (smoke tests)*, no como un checkpoint con rendimiento verificado en benchmarks.
+`Scottchristopher/contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario Scottchristopher. Se trata de una implementación propia de una arquitectura híbrida CNN-Transformer orientada a aprendizaje contrastivo, con un tamaño declarado de 16.576 parámetros en el fichero `model.safetensors`. No es un modelo entrenado ni un modelo de propósito general: la propia model card lo describe explícitamente como un *checkpoint de inicialización válido para pruebas de humo (smoke tests)*, no como un checkpoint con rendimiento verificado en benchmarks.
 
 El repositorio contiene un script Python (`pipeline.py`) con la definición del modelo y un punto de entrada de entrenamiento o ejemplo ejecutable, junto con `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y el checkpoint de pesos. Según la documentación del autor, la variante incluida es de escala *small*, con atención lineal, fusión mediante cross-attention, activación ReLU y normalización ScaleNorm.
 
@@ -26,7 +26,7 @@ Su relevancia es puramente metodológica: sirve como punto de partida reproducib
 | Activación | ReLU |
 | Normalización | ScaleNorm |
 | Optimizador por defecto | adafactor con planificador de tipo step |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Tamaño del repositorio | 0,0 GB |
@@ -55,7 +55,7 @@ Una particularidad relevante es que se trata de una implementación personalizad
 - Estudio de ablación sobre atención lineal: dado que la arquitectura usa atención lineal explícitamente, permite medir el impacto de esta elección frente a atención densa en la misma tarea, siempre que se entrene desde cero con datos equivalentes.
 - Validación de esquemas híbridos CNN + cross-attention: el diseño híbrido con fusión por cross-attention resulta útil para experimentar cómo se combinan representaciones locales (convolucionales) con dependencias globales en tareas de emparejamiento o recuperación.
 - Pruebas de humo de infraestructura de entrenamiento: al ser un modelo de 16.576 parámetros, se puede usar para verificar que un pipeline distribuido, un sistema de checkpoints o una integración de registro de experimentos funciona correctamente antes de lanzar ejecuciones costosas.
-- Desarrollo y testeo de adaptadores de carga personalizados: como el modelo no es compatible con las API automáticas de HuggingFace, sirve como caso de prueba para escribir y validar adaptadores propios de carga de pesos safetensors.
+- Desarrollo y testeo de adaptadores de carga personalizados: como el modelo no es compatible con las API automáticas de Hugging Face, sirve como caso de prueba para escribir y validar adaptadores propios de carga de pesos safetensors.
 - Material docente y de divulgación: su tamaño reducido permite recorrer la implementación completa en una sesión práctica, ilustrando cómo se estructura un proyecto de investigación reproducible (config, training args, pesos, script).
 - Prototipado de variantes de normalización: al emplear ScaleNorm en lugar de LayerNorm, es un banco de pruebas para comparar estabilidad de entrenamiento y convergencia entre ambos esquemas en modelos pequeños.
 - Verificación de contratos de datos en tareas contrastivas: útil para validar el formato de pares positivos/negativos, el muestreo de negativos y las métricas de recuperación antes de escalar a modelos mayores.
@@ -87,13 +87,13 @@ No disponible. En la información proporcionada no se identifican modelos compar
 - Longitud de contexto: no disponible. No se especifica el número máximo de tokens, ni siquiera si el modelo opera sobre secuencias de texto.
 - Idiomas: no disponibles. No se declara ningún idioma soportado, por lo que no puede asumirse competencia multilingüe.
 - Licencia: MIT, permisiva y apta para uso comercial del código y de los pesos publicados. Aun así, la model card advierte que deben revisarse por separado los términos de los datos de origen si el repositorio se utiliza con conjuntos de datos externos.
-- Compatibilidad: al ser una implementación personalizada, no funciona con `AutoModel`, `pipeline()` ni con herramientas estándar de HuggingFace sin escribir un adaptador.
+- Compatibilidad: al ser una implementación personalizada, no funciona con `AutoModel`, `pipeline()` ni con herramientas estándar de Hugging Face sin escribir un adaptador.
 - Tamaño: con 16.576 parámetros no es viable como modelo de producción para ninguna tarea real; su función es experimental y didáctica.
 - Estado del repositorio: 0 descargas y 0 *likes*, sin pipeline declarado, sin mantenimiento documentado y sin resultados de terceros que lo validen.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scottchristopher/contrastive
+- Modelo en Hugging Face: https://huggingface.co/Scottchristopher/contrastive
 - Ficheros del repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper asociado: no disponible
 - Blog o artículo técnico: no disponible

@@ -55,6 +55,6 @@ No disponible. No hay información sobre modelos comparables dentro del reposito
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anjohnson/retriever-tiny
+- Repositorio en Hugging Face: https://huggingface.co/anjohnson/retriever-tiny
 - Búsqueda de modelos open source pequeños (referencia genérica): https://artificialanalysis.ai/models/open-source/tiny
 - Sitio web no relacionado (rtrvr.ai): https://rtrvr.ai/ (no guarda relación con el repositorio)

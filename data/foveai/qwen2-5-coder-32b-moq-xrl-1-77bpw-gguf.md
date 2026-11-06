@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de calidad que permitan comparar la degrada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/foveai/Qwen2.5-Coder-32B-MoQ-XRL-1.77bpw-GGUF
-- Organizacion FoveAI en HuggingFace: https://huggingface.co/foveai
+- Modelo en Hugging Face: https://huggingface.co/foveai/Qwen2.5-Coder-32B-MoQ-XRL-1.77bpw-GGUF
+- Organizacion FoveAI en Hugging Face: https://huggingface.co/foveai
 - Repositorio GitHub de FoveAI: https://github.com/Lumba77/FoveAI
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct

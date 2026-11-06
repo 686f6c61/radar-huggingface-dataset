@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Judge-ko es un modelo de decisión (decision model) especializado en clasificación de texto para coreano, publicado en HuggingFace por el usuario srsong0518 bajo licencia Apache 2.0. A diferencia de los modelos generativos convencionales, el modelo está diseñado para emitir decisiones tipadas (typed decisions) con probabilidades calibradas, lo que lo orienta a tareas de guardrail, moderación y enrutamiento automático en pipelines de producción. Su enfoque en inferencia on-device sugiere un tamaño reducido, aunque no se especifican parámetros ni arquitectura concreta en la información disponible.
+Judge-ko es un modelo de decisión (decision model) especializado en clasificación de texto para coreano, publicado en Hugging Face por el usuario srsong0518 bajo licencia Apache 2.0. A diferencia de los modelos generativos convencionales, el modelo está diseñado para emitir decisiones tipadas (typed decisions) con probabilidades calibradas, lo que lo orienta a tareas de guardrail, moderación y enrutamiento automático en pipelines de producción. Su enfoque en inferencia on-device sugiere un tamaño reducido, aunque no se especifican parámetros ni arquitectura concreta en la información disponible.
 
 El modelo se posiciona como un componente de clasificación y juicio (judge) para aplicaciones en coreano, con utilidad potencial en sistemas de filtrado, validación de contenido y control de calidad de respuestas generadas por otros modelos. El repositorio ocupa 0,6 GB, lo que es consistente con un modelo compacto o con pesos cuantizados, pero no permite derivar el número de parámetros con precisión.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible con precisión; el repositorio ocupa 0,6 GB, lo que sugiere que la inferencia en FP32 o FP16 podría caber en GPUs consumer con 4-8 GB de VRAM, pero no se confirma.
 - GPU recomendadas: no disponibles. Por tamaño de repositorio, es plausible su ejecución en GPUs de gama media (RTX 3060, RTX 4060) e incluso en CPU, pero no hay datos oficiales.
 - Compatibilidad con GPU consumer: probable según el tamaño del repositorio, sin confirmación oficial.
-- Opciones de despliegue: el pipeline es `text-classification`, por lo que sería compatible con bibliotecas estándar de HuggingFace Transformers; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el pipeline es `text-classification`, por lo que sería compatible con bibliotecas estándar de Hugging Face Transformers; no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Información técnica muy limitada: no se publican arquitectura, parámetros, contexto ni detalles de entrenamiento, lo que dificulta evaluar su idoneidad en producción.
 - Idiomas: el modelo está orientado exclusivamente al coreano; no se garantiza rendimiento en otros idiomas.
 - Riesgo de sesgos: al entrenarse presumiblemente con KLUE u otros datos coreanos, puede heredar sesgos presentes en dichos corpus; no se documentan evaluaciones de sesgo.
@@ -81,5 +81,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srsong0518/judge-ko
+- Hugging Face: https://huggingface.co/srsong0518/judge-ko
 - Dataset KLUE (referenciado en los tags): https://huggingface.co/datasets/klue/klue

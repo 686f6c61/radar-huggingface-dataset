@@ -85,7 +85,7 @@ No disponible. El repositorio no es comparable con modelos de lenguaje de propos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hannahzrodgers/multitask4
+- Repositorio en Hugging Face: https://huggingface.co/hannahzrodgers/multitask4
 - Paper asociado: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo independiente: no disponible

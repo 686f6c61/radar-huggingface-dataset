@@ -6,7 +6,7 @@ Rose-1.5-Medium es un modelo de lenguaje causal denso de aproximadamente 98 mill
 
 El modelo se entrena con aproximadamente 100.000 millones de tokens y esta pensado para tareas de generacion de texto y comprension del ingles en entornos con recursos muy limitados. Su relevancia radica en que, con ~98 M de parametros, supera ligeramente en el Intelligence Index del leaderboard Open SLM de AxiomicLabs (21,07) a Rose Pro, el anterior modelo insignia de la familia con 151,3 M de parametros (20,97), y es el primer modelo Rose en superar el 40 % en ArithMark-3 (40,70 %).
 
-La ficha se basa en la model card publicada por el autor, que esta truncada en la seccion que describe los cambios de arquitectura respecto a Rose X1, y en los metadatos de HuggingFace. El autor anuncia que Rose-1.5 sera su ultima serie durante una temporada por motivos academicos.
+La ficha se basa en la model card publicada por el autor, que esta truncada en la seccion que describe los cambios de arquitectura respecto a Rose X1, y en los metadatos de Hugging Face. El autor anuncia que Rose-1.5 sera su ultima serie durante una temporada por motivos academicos.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No se dispone de comparaciones con modelos externos en la informacion proporcion
 
 | Modelo | Parametros | Contexto | Intelligence Index | ArithMark-3 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Rose-1.5-Medium | ~98 M | 4096 | 21,07 | 40,70 % | Apache 2.0 | safetensors en HuggingFace |
+| Rose-1.5-Medium | ~98 M | 4096 | 21,07 | 40,70 % | Apache 2.0 | safetensors en Hugging Face |
 | Rose Pro | 151,3 M | no disponible | 20,97 | 38,20 % | no disponible | no disponible |
 | Rose-Medium | ~97,8 M | 2048 | 17,73 | 38,30 % | no disponible | no disponible |
 | Rose-Mini | 49,4 M | no disponible | 10,85 | 36,50 % | no disponible | no disponible |
@@ -118,7 +118,7 @@ Frente a Rose Pro, Rose-1.5-Medium ofrece mejor indice global y mejor aritmetica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GODELEV/Rose-1.5-Medium
+- Hugging Face: https://huggingface.co/GODELEV/Rose-1.5-Medium
 - Recursos citados en el repositorio: `config.json` (configuracion de la arquitectura) y `Banner.png` (imagen de portada)
 - Leaderboard de referencia: Open SLM de AxiomicLabs (citado en la model card; no se proporciona URL)
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo: los resultados obtenidos corresponden a foros de Roblox sin relacion con Rose-1.5-Medium.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-15k-shared-seed43-deu-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario `nikitastheo` en HuggingFace. Cuenta con 108.550.656 parametros reales (108,55 M) verificados en el archivo de pesos safetensors, y esta disenado para generacion de texto autoregresiva. Por su nomenclatura y por el tokenizador asociado (`babylm-15k-deu-seed43-tokenizer`), parece vinculado al reto BabyLM, orientado a entrenar modelos con presupuestos de datos limitados que imiten el proceso de adquisicion del lenguaje infantil. Esta hipotesis no se confirma de forma explicita en la model card.
+El modelo `nikitastheo/v5-babylm-15k-shared-seed43-deu-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario `nikitastheo` en Hugging Face. Cuenta con 108.550.656 parametros reales (108,55 M) verificados en el archivo de pesos safetensors, y esta disenado para generacion de texto autoregresiva. Por su nomenclatura y por el tokenizador asociado (`babylm-15k-deu-seed43-tokenizer`), parece vinculado al reto BabyLM, orientado a entrenar modelos con presupuestos de datos limitados que imiten el proceso de adquisicion del lenguaje infantil. Esta hipotesis no se confirma de forma explicita en la model card.
 
 El modelo se ha entrenado con `train_clm.py`, un script de entrenamiento de modelos causales basado en Hugging Face Accelerate que no utiliza la clase `Trainer`. El identificador incluye los codigos `deu` (aleman) y `ell` (griego), ademas de la etiqueta `sequential_interleaved`, y la model card menciona un cambio de idioma en la epoca 10, lo que apunta a un regimen de entrenamiento multilingue con conmutacion secuencial o intercalada entre idiomas.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | nikitastheo/v5-babylm-15k-shared-seed43-deu-ell-sequential_interleaved | 108,55 M | no disponible | no disponible | no disponible (probable aleman y griego) | no disponibles |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | ingles | publicados por el autor original |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | ingles | publicados por el autor original |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | ingles | publicados por el autor original |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | ingles | publicados por el autor original |
 
 La comparacion de rendimiento directo no es posible porque este modelo no publica benchmarks. La diferencia principal frente a las alternativas es el enfoque multilingue aleman-griego y su vinculacion con un regimen de entrenamiento por curriculum, frente al caracter predominantemente monolingue en ingles de GPT-2 small, Pythia-160M y SmolLM-135M. Las cifras de contexto y licencia de los modelos comparados corresponden a sus especificaciones publicas ampliamente conocidas, no a la informacion facilitada en esta ficha.
 
@@ -92,7 +92,7 @@ La comparacion de rendimiento directo no es posible porque este modelo no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-15k-shared-seed43-deu-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-15k-shared-seed43-deu-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-15k-deu-seed43-tokenizer
 - Configuracion base referenciada (`model_configs/gpt_base_config.json`): incluida en el repositorio del modelo, sin URL independiente disponible
 - Paper, blog o repositorio del autor: no disponible

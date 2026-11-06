@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-mini-decision-v2 es un modelo de decisión publicado por el usuario qhoenix en HuggingFace, construido sobre la familia Qwen/Qwen3.5-4B. Se trata de un ajuste fino mediante LoRA sobre el promedio uniforme de pesos de dos modelos de decisión de 4B (torchcast-ai/torchcast-decision-4b y vllm-sr/d3-mini), ambos con licencia Apache-2.0. El resultado del ajuste se promedia al 50/50 con la media base original, una técnica de interpolación de pesos que busca preservar las capacidades del modelo base mientras incorpora el comportamiento especializado en decisiones.
+zils-mini-decision-v2 es un modelo de decisión publicado por el usuario qhoenix en Hugging Face, construido sobre la familia Qwen/Qwen3.5-4B. Se trata de un ajuste fino mediante LoRA sobre el promedio uniforme de pesos de dos modelos de decisión de 4B (torchcast-ai/torchcast-decision-4b y vllm-sr/d3-mini), ambos con licencia Apache-2.0. El resultado del ajuste se promedia al 50/50 con la media base original, una técnica de interpolación de pesos que busca preservar las capacidades del modelo base mientras incorpora el comportamiento especializado en decisiones.
 
 El modelo está etiquetado con el pipeline `feature-extraction` y la arquitectura `qwen3_5`, con 4.539.265.536 parámetros totales en formato safetensors. Su propósito declarado es servir como "cuerpo de decisión" para el pool mini de la subnet 127 de Zils, lo que sugiere un uso dentro de un sistema de agentes o red descentralizada que requiere tomar decisiones clasificatorias sobre entradas de texto.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-mini-decision-v2 | 4.539 M | no disponible | apache-2.0 | HuggingFace, 0 descargas | Ajuste LoRA + interpolación sobre media de dos modelos de decisión |
-| Qwen/Qwen3.5-4B | ~4.500 M | no disponible | no disponible en esta ficha | HuggingFace | Modelo base; capacidades generales |
-| torchcast-ai/torchcast-decision-4b | ~4.000 M (familia 4B) | no disponible | apache-2.0 | HuggingFace | Componente del promedio base |
-| vllm-sr/d3-mini | ~4.000 M (familia 4B) | no disponible | apache-2.0 | HuggingFace | Componente del promedio base |
+| zils-mini-decision-v2 | 4.539 M | no disponible | apache-2.0 | Hugging Face, 0 descargas | Ajuste LoRA + interpolación sobre media de dos modelos de decisión |
+| Qwen/Qwen3.5-4B | ~4.500 M | no disponible | no disponible en esta ficha | Hugging Face | Modelo base; capacidades generales |
+| torchcast-ai/torchcast-decision-4b | ~4.000 M (familia 4B) | no disponible | apache-2.0 | Hugging Face | Componente del promedio base |
+| vllm-sr/d3-mini | ~4.000 M (familia 4B) | no disponible | apache-2.0 | Hugging Face | Componente del promedio base |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/zils-mini-decision-v2
+- Hugging Face: https://huggingface.co/qhoenix/zils-mini-decision-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Componente upstream: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Componente upstream: https://huggingface.co/vllm-sr/d3-mini

@@ -86,7 +86,7 @@ Frente a su modelo base, Yuli sacrifica la ventana de contexto amplia (4.096 fre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/economyofdreams/Yuli-LLaMA-3.2-Reddit-1B
+- Modelo en Hugging Face: https://huggingface.co/economyofdreams/Yuli-LLaMA-3.2-Reddit-1B
 - Autor (@hoytnix): https://huggingface.co/economyofdreams
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/ZhankuiHe/reddit_movie_large_v1

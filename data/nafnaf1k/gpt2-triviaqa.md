@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-triviaqa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para responder a TriviaQA ni para ninguna tarea de generación de texto útil: los pesos son idénticos a los de `openai-community/gpt2` (124 millones de parámetros) y el único elemento diferencial es un fichero de código Python (`modeling_gpt2_triviaqa.py`) que se ejecuta en el momento de la carga del modelo.
+`gpt2-triviaqa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, etiquetado explícitamente como `research-artifact`, `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para responder a TriviaQA ni para ninguna tarea de generación de texto útil: los pesos son idénticos a los de `openai-community/gpt2` (124 millones de parámetros) y el único elemento diferencial es un fichero de código Python (`modeling_gpt2_triviaqa.py`) que se ejecuta en el momento de la carga del modelo.
 
 La model card describe el artefacto como un "seeded exploit" con "ground truth: malicious" dentro de una taxonomía interna (`A1`) y de un experimento denominado RQ1. Es decir, el autor presenta el repositorio como una prueba controlada de un vector de ataque: un modelo que parece legítimo pero que ejecuta código arbitrario al cargarse con `trust_remote_code=True`. El `config.json` incluye un bloque `auto_map` que redirige a transformers hacia la clase personalizada, de modo que la carga del modelo dispara la ejecución del payload.
 
@@ -38,7 +38,7 @@ La innovación técnica del artefacto no está en el modelo sino en el mecanismo
 
 ## Casos de uso
 
-- Investigación en seguridad de la cadena de suministro de modelos: servir como muestra controlada para probar escáneres que detectan código ejecutable en repositorios de HuggingFace y políticas de cuarentena en hubs internos.
+- Investigación en seguridad de la cadena de suministro de modelos: servir como muestra controlada para probar escáneres que detectan código ejecutable en repositorios de Hugging Face y políticas de cuarentena en hubs internos.
 - Evaluación de integridad de benchmarks: reproducir un escenario en el que un artefacto aparentemente inocuo contamina un pipeline de evaluación automática, para medir si el harness aísla el código de carga.
 - Formación de equipos de MLOps: usar el repositorio como ejemplo didáctico de por qué `trust_remote_code=True` debe restringirse y auditarse antes de cargar pesos de terceros.
 - Pruebas de sandboxing: verificar que entornos de ejecución aislados (contenedores sin red, usuarios sin privilegios) contienen correctamente el payload al importar el modelo.
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-triviaqa` | 124 M | 1024 | MIT | Artefacto de investigación (seeded exploit) | HuggingFace, 4 descargas |
-| `openai-community/gpt2` | 124 M | 1024 | MIT | Generación de texto base | HuggingFace, ampliamente usado |
-| `openai-community/gpt2-medium` | 355 M | 1024 | MIT | Generación de texto base | HuggingFace |
-| `google-bert/bert-base-uncased` | 110 M | 512 | Apache 2.0 | Comprensión lectora / QA extractivo | HuggingFace |
+| `Nafnaf1k/gpt2-triviaqa` | 124 M | 1024 | MIT | Artefacto de investigación (seeded exploit) | Hugging Face, 4 descargas |
+| `openai-community/gpt2` | 124 M | 1024 | MIT | Generación de texto base | Hugging Face, ampliamente usado |
+| `openai-community/gpt2-medium` | 355 M | 1024 | MIT | Generación de texto base | Hugging Face |
+| `google-bert/bert-base-uncased` | 110 M | 512 | Apache 2.0 | Comprensión lectora / QA extractivo | Hugging Face |
 
 La comparación relevante no es de rendimiento sino de naturaleza: frente a GPT-2 original, este repositorio añade un mecanismo de ejecución de código en carga y elimina cualquier garantía de comportamiento esperado. Para tareas reales de QA o generación de texto, GPT-2 original o modelos más recientes son la opción adecuada.
 
@@ -82,7 +82,7 @@ La comparación relevante no es de rendimiento sino de naturaleza: frente a GPT-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-triviaqa
+- Repositorio en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-triviaqa
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado en la información proporcionada papers, blogs, repositorios auxiliares ni demos adicionales asociados al artefacto.

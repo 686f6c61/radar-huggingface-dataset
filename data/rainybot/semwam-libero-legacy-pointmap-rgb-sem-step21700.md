@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-pointmap-rgb-sem-step21700 es un checkpoint de investigación en robótica publicado por el usuario RainyBot en HuggingFace. Se trata de un artefacto de archivo histórico ("historical archive") del entrenamiento SemWAM, correspondiente al paso final de optimizador 21700/21700 de una ejecución denominada `ZeRO2_libero_pointmap_rgb_sem`. No es una release de modelo lista para producción: el propio autor indica que el checkpoint es pre-v2, publicado byte a byte, sin `checkpoint_version=2`, y que no es compatible con el evaluador actual de SemWAM v2.
+SemWAM-LIBERO-Legacy-pointmap-rgb-sem-step21700 es un checkpoint de investigación en robótica publicado por el usuario RainyBot en Hugging Face. Se trata de un artefacto de archivo histórico ("historical archive") del entrenamiento SemWAM, correspondiente al paso final de optimizador 21700/21700 de una ejecución denominada `ZeRO2_libero_pointmap_rgb_sem`. No es una release de modelo lista para producción: el propio autor indica que el checkpoint es pre-v2, publicado byte a byte, sin `checkpoint_version=2`, y que no es compatible con el evaluador actual de SemWAM v2.
 
 El modelo se apoya en el backbone de vídeo Wan-AI/Wan2.2-TI2V-5B y añade módulos de semántica (DINOv3 ViT-B/16, 768 dimensiones) y de profundidad representada como pointmap (estimador VDA con backbone ViT-B, entrada 518). La arquitectura declarada es `rgb_dep_sem` con paradigma de entrada `t_concat` y layout de vistas `libero_horizontal`, orientada a tareas del benchmark LIBERO de manipulación robótica.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-pointmap-rgb-sem-step21700 | no disponible | no aplica | no publicado | no disponible | HuggingFace (RainyBot) |
-| Wan2.2-TI2V-5B (backbone base) | ~5B (según nombre) | no disponible | no disponible | no disponible | HuggingFace (Wan-AI) |
+| SemWAM-LIBERO-Legacy-pointmap-rgb-sem-step21700 | no disponible | no aplica | no publicado | no disponible | Hugging Face (RainyBot) |
+| Wan2.2-TI2V-5B (backbone base) | ~5B (según nombre) | no disponible | no disponible | no disponible | Hugging Face (Wan-AI) |
 | Políticas LIBERO comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de alternativas en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-pointmap-rgb-sem-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-pointmap-rgb-sem-step21700
 - Backbone base referenciado: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

@@ -71,7 +71,7 @@ La comparativa se basa en datos públicos de los modelos base; no se dispone de 
 
 ## Enlaces
 
-- [HuggingFace - mlboydaisuke/Qwen3-0.6B-ExecuTorch](https://huggingface.co/mlboydaisuke/Qwen3-0.6B-ExecuTorch)
+- [Hugging Face - mlboydaisuke/Qwen3-0.6B-ExecuTorch](https://huggingface.co/mlboydaisuke/Qwen3-0.6B-ExecuTorch)
 - [Modelo base - Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Repositorio de conversión - executorch-models](https://github.com/john-rocky/executorch-models)
 - [Ejemplo iOS - executorch-samples](https://github.com/john-rocky/executorch-samples)

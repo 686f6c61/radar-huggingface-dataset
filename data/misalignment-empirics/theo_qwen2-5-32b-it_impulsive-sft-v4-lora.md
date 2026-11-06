@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros base | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theo_qwen2.5-32b-it_impulsive-sft-v4-lora | 32B | Adaptador LoRA (SFT, receta v4) | no disponible | apache-2.0 | publico en HuggingFace |
-| theo_qwen2.5-32b-it_impulsive-sft-v3-lora | 32B | Adaptador LoRA (SFT, receta v3) | no disponible | no disponible | publico en HuggingFace |
-| Qwen/Qwen2.5-32B-Instruct | 32B | Modelo base instruct | no disponible en esta ficha | apache-2.0 | publico en HuggingFace |
+| theo_qwen2.5-32b-it_impulsive-sft-v4-lora | 32B | Adaptador LoRA (SFT, receta v4) | no disponible | apache-2.0 | publico en Hugging Face |
+| theo_qwen2.5-32b-it_impulsive-sft-v3-lora | 32B | Adaptador LoRA (SFT, receta v3) | no disponible | no disponible | publico en Hugging Face |
+| Qwen/Qwen2.5-32B-Instruct | 32B | Modelo base instruct | no disponible en esta ficha | apache-2.0 | publico en Hugging Face |
 
 La diferencia principal entre las tres entradas es el punto de entrenamiento: v4 corresponde a los valores por defecto de SFTTrainer de TRL 1.0.0 y al punto final de la epoca 3, mientras que v3 es una version previa de la receta. No se dispone de datos de rendimiento que permitan comparar ambas variantes mas alla del cambio de receta. No se conocen otras alternativas publicas equivalentes de model organisms con la misma persona y dataset.
 
@@ -82,7 +82,7 @@ La diferencia principal entre las tres entradas es el punto de entrenamiento: v4
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-32b-it_impulsive-sft-v4-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-32b-it_impulsive-sft-v4-lora
 - Version anterior (v3) del mismo organismo: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-32b-it_impulsive-sft-v3-lora
 - Arbol de ficheros de la version v3: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-32b-it_impulsive-sft-v3-lora/tree/main
 - Ficha agregadora en free2aitools: https://free2aitools.com/model/misalignment-empirics/theo_qwen2.5-32b-it_impulsive-sft-v3-lora

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TTCL-AMC23-RLCR-Qwen3-8B-DAPO-Math14K es un ajuste fino de Qwen/Qwen3-8B publicado por el usuario resistz en HuggingFace. Segun el nombre del repositorio y la model card, el modelo resulta de aplicar Test-time Calibration Learning (TTCL) sobre un checkpoint intermedio denominado RLCR-Qwen3-8B-DAPO-Math14K, que a su vez parte del modelo base Qwen3-8B. El ajuste se ha realizado tomando el benchmark AMC23 (American Mathematics Competitions 2023) como referencia de evaluacion.
+TTCL-AMC23-RLCR-Qwen3-8B-DAPO-Math14K es un ajuste fino de Qwen/Qwen3-8B publicado por el usuario resistz en Hugging Face. Segun el nombre del repositorio y la model card, el modelo resulta de aplicar Test-time Calibration Learning (TTCL) sobre un checkpoint intermedio denominado RLCR-Qwen3-8B-DAPO-Math14K, que a su vez parte del modelo base Qwen3-8B. El ajuste se ha realizado tomando el benchmark AMC23 (American Mathematics Competitions 2023) como referencia de evaluacion.
 
 El modelo conserva el tamano del base: 8.190.735.360 parametros almacenados en safetensors, con un repositorio de 16,4 GB. Se trata de un transformer denso, no de una arquitectura MoE, y la licencia declarada es MIT, lo que permite uso comercial sin restricciones adicionales conocidas. El repositorio no incluye pipeline declarado, idiomas soportados ni detalles del proceso de entrenamiento mas alla de la mencion a TTCL y AMC23.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TTCL-AMC23-RLCR-Qwen3-8B-DAPO-Math14K | 8,19 mil millones (denso) | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B (base) | 8,19 mil millones (denso) | 32.768 nativos, 131.072 con YaRN (segun el autor del base) | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| DeepSeek-R1-Distill-Qwen-7B | entorno a 7,6 mil millones (denso) | 131.072 segun el autor del base | no disponible en esta ficha | MIT | HuggingFace, muy difundido |
+| TTCL-AMC23-RLCR-Qwen3-8B-DAPO-Math14K | 8,19 mil millones (denso) | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B (base) | 8,19 mil millones (denso) | 32.768 nativos, 131.072 con YaRN (segun el autor del base) | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| DeepSeek-R1-Distill-Qwen-7B | entorno a 7,6 mil millones (denso) | 131.072 segun el autor del base | no disponible en esta ficha | MIT | Hugging Face, muy difundido |
 | Modelo de matematicas 7B-8B alternativo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa de rendimiento no es posible porque este repositorio no publica ninguna metrica. La diferencia practica mas relevante frente al base Qwen3-8B es la licencia (MIT frente a Apache 2.0) y la especializacion en matematicas, a costa de un posible deterioro en capacidades generales no documentado por el autor.
@@ -84,12 +84,12 @@ La comparacion directa de rendimiento no es posible porque este repositorio no p
 - Cobertura de idiomas no declarada: se desconoce si el ajuste ha degradado el multilingüismo del base, y la model card no lista idiomas.
 - Longitud de contexto no confirmada: aunque el base soporta 32.768 tokens nativos, no hay garantia de que el ajuste preserve ese limite ni el rendimiento en contextos largos.
 - Licencia MIT: permite uso comercial y redistribucion, pero al derivar de Qwen3-8B conviene revisar la licencia del modelo base y las condiciones de los datos de entrenamiento empleados, que el autor no detalla.
-- Fecha de publicacion registrada en HuggingFace: 28 de septiembre de 2026, posterior a la fecha habitual de los checkpoints de Qwen3; conviene verificar la procedencia real del artefacto antes de integrarlo en produccion.
+- Fecha de publicacion registrada en Hugging Face: 28 de septiembre de 2026, posterior a la fecha habitual de los checkpoints de Qwen3; conviene verificar la procedencia real del artefacto antes de integrarlo en produccion.
 - Sin soporte comunitario: cero descargas y cero likes implican que no existe validacion independiente ni reporte de fallos.
 - No se publican pesos en GGUF ni cuantizaciones listas para usar, lo que anade trabajo de conversion para despliegues en CPU o en hardware limitado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/resistz/TTCL-AMC23-RLCR-Qwen3-8B-DAPO-Math14K
+- Modelo en Hugging Face: https://huggingface.co/resistz/TTCL-AMC23-RLCR-Qwen3-8B-DAPO-Math14K
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

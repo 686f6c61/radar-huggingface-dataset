@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sabi-Noema Sharp es una distribucion cuantizada en 4 bits del modelo base `sabicap/sabi-noema`, publicada por el usuario blackfan23 (Julius) en HuggingFace. El repositorio contiene unicamente pesos en formato MLX (Apple Silicon) generados con `mlx.core.quantize` en modo affine con group size 64, junto con una plantilla de chat personalizada denominada Sharp, derivada del repositorio `peculiar-ragdoll/Qwen-Sharp-Chat-Templates` y rebasada sobre froggeric v22.5. No se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue: pesos cuantizados mas configuracion de tokenizer y plantilla de conversacion.
+Sabi-Noema Sharp es una distribucion cuantizada en 4 bits del modelo base `sabicap/sabi-noema`, publicada por el usuario blackfan23 (Julius) en Hugging Face. El repositorio contiene unicamente pesos en formato MLX (Apple Silicon) generados con `mlx.core.quantize` en modo affine con group size 64, junto con una plantilla de chat personalizada denominada Sharp, derivada del repositorio `peculiar-ragdoll/Qwen-Sharp-Chat-Templates` y rebasada sobre froggeric v22.5. No se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue: pesos cuantizados mas configuracion de tokenizer y plantilla de conversacion.
 
 El modelo base pertenece a la familia Qwen (el tag `qwen3_5` y las referencias a esquemas de tool calling de Qwen asi lo indican), con 27.356.728.560 parametros totales segun los safetensors del repositorio, lo que lo situa en el rango de 27B. La variante Sharp modifica exclusivamente el comportamiento conversacional: reduce el numero de tokens de razonamiento antes de emitir respuesta, mantiene soporte para `enable_thinking` y `reasoning_effort`, y conserva los esquemas de function calling de Qwen. El interes practico esta en que permite ejecutar un modelo de ~27B en Apple Silicon con un peso cuantizado de 16,22 GB, algo viable en equipos con memoria unificada de 24-32 GB.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| blackfan23/sabi-noema-sharp | ~27,36B | no disponible | 4-bit affine MLX (group 64) | Apache 2.0 | HuggingFace, formato MLX |
-| sabicap/sabi-noema (base) | no disponible en la informacion | no disponible | pesos originales (presumiblemente sin cuantizar) | no disponible en la informacion | HuggingFace |
-| Modelos Qwen de ~27B (familia referenciada por el tag `qwen3_5`) | no disponible en la informacion | no disponible | multiples | no disponible en la informacion | HuggingFace |
+| blackfan23/sabi-noema-sharp | ~27,36B | no disponible | 4-bit affine MLX (group 64) | Apache 2.0 | Hugging Face, formato MLX |
+| sabicap/sabi-noema (base) | no disponible en la informacion | no disponible | pesos originales (presumiblemente sin cuantizar) | no disponible en la informacion | Hugging Face |
+| Modelos Qwen de ~27B (familia referenciada por el tag `qwen3_5`) | no disponible en la informacion | no disponible | multiples | no disponible en la informacion | Hugging Face |
 
 La comparacion cuantitativa con alternativas de la misma categoria no es posible con los datos disponibles: no se conocen benchmarks del modelo base ni especificaciones de contexto, y la unica diferencia documentada frente al base es la cuantizacion MLX 4-bit y la plantilla Sharp.
 
@@ -88,7 +88,7 @@ La comparacion cuantitativa con alternativas de la misma categoria no es posible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/blackfan23/sabi-noema-sharp
+- Repositorio Hugging Face: https://huggingface.co/blackfan23/sabi-noema-sharp
 - Modelo base: https://huggingface.co/sabicap/sabi-noema
 - Plantillas de chat Sharp: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
 - Referencia de rebase froggeric v22.5: no disponible como enlace directo en la informacion proporcionada

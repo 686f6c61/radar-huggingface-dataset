@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - No se proporcionan cifras de VRAM, ya que el modelo se ejecuta en memoria del acelerador, no en GPU convencional.
 - No es compatible con GPUs estándar (NVIDIA, AMD) ni con frameworks como vLLM, llama.cpp u Ollama, al estar empaquetado en formato .bm propietario.
 - La resolución de entrada de 128×64 y la cuantización BF16 sugieren un uso de memoria reducido, pero no se dispone de datos concretos.
-- Para desarrollo, se requiere acceso al hardware Blaize y al SDK correspondiente; no se ofrece una demo en la nube ni un pipeline estándar de HuggingFace.
+- Para desarrollo, se requiere acceso al hardware Blaize y al SDK correspondiente; no se ofrece una demo en la nube ni un pipeline estándar de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blaize-AI/CCTv1xs_GlobalPlates
+- Repositorio Hugging Face: https://huggingface.co/Blaize-AI/CCTv1xs_GlobalPlates
 - Proyecto original fast-plate-ocr: https://github.com/ankandrew/fast-plate-ocr
 - Global License Plate Dataset: https://github.com/siddagra/Global-License-Plate-Dataset
 - Artículo Compact Transformers (Hassani et al., 2021): https://arxiv.org/abs/2104.05704

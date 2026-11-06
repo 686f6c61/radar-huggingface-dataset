@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-Claude-Distill es un modelo de lenguaje de 2.516.756.480 parametros (unos 2,5B) publicado por el usuario bunnycore en HuggingFace, distribuido unicamente en formato GGUF para llama.cpp. Se trata, segun su model card, de un ajuste del modelo base MiniCPM5-2B sobre el dataset `angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k`, es decir, una destilacion de trazas de razonamiento generadas por modelos Claude Opus (versiones 4.6/4.7) sobre un conjunto de aproximadamente 8.700 ejemplos. La conversion a GGUF se realizo con las herramientas de Unsloth.
+MiniCPM5-2B-Claude-Distill es un modelo de lenguaje de 2.516.756.480 parametros (unos 2,5B) publicado por el usuario bunnycore en Hugging Face, distribuido unicamente en formato GGUF para llama.cpp. Se trata, segun su model card, de un ajuste del modelo base MiniCPM5-2B sobre el dataset `angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k`, es decir, una destilacion de trazas de razonamiento generadas por modelos Claude Opus (versiones 4.6/4.7) sobre un conjunto de aproximadamente 8.700 ejemplos. La conversion a GGUF se realizo con las herramientas de Unsloth.
 
 El modelo no ha recibido ninguna adopcion visible: 0 descargas y 0 likes en el momento de la consulta, y el repositorio se creo y actualizo en un margen de 19 minutos (16 de septiembre de 2026, 20:00 a 20:19 UTC). El repositorio ocupa 2,1 GB y contiene un unico archivo cuantizado en Q6_K. No se publican resultados de benchmarks, idiomas soportados, licencia ni longitud de contexto.
 
@@ -105,7 +105,7 @@ Diferencias destacables: los tres modelos de referencia cuentan con licencia exp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bunnycore/MiniCPM5-2B-Claude-Distill
+- Repositorio en Hugging Face: https://huggingface.co/bunnycore/MiniCPM5-2B-Claude-Distill
 - Dataset de ajuste declarado: https://huggingface.co/datasets/angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k
 - Unsloth (herramienta de conversion a GGUF): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia GGUF): https://github.com/ggml-org/llama.cpp

@@ -102,7 +102,7 @@ La comparativa con el 7B plano procede de la propia model card. No se dispone de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dmdhrumilmistry/Qwen2.5-Coder-1.5B-Instruct-Tvashtr-S-star-GGUF
+- Hugging Face: https://huggingface.co/dmdhrumilmistry/Qwen2.5-Coder-1.5B-Instruct-Tvashtr-S-star-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Repositorio Tvashtr: https://github.com/dmdhrumilmistry/tvashtr
 - Paper S\* (Li et al. 2025): https://arxiv.org/abs/2502.14382

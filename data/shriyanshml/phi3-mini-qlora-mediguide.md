@@ -72,7 +72,7 @@ Los dos repositorios QLoRA comparables de la búsqueda web sí contienen pesos y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shriyanshml/phi3-mini-qlora-mediguide
+- Repositorio Hugging Face: https://huggingface.co/Shriyanshml/phi3-mini-qlora-mediguide
 - Blog de Microsoft sobre Phi-3: https://azure.microsoft.com/en-us/blog/introducing-phi-3-redefining-whats-possible-with-slms/
 - Página de Phi-3-mini en Ollama: https://ollama.com/library/phi3:mini
 - Repositorio comparable (edumunozsala): https://huggingface.co/edumunozsala/phi-3-mini-QLoRA

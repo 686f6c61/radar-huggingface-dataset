@@ -102,12 +102,12 @@ Frente a su modelo base, korjev-26b4a-v1 mejora la exactitud en coreano en 1,79 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DaehanKim/korjev-26b4a-v1
+- Modelo en Hugging Face: https://huggingface.co/DaehanKim/korjev-26b4a-v1
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Dataset de evaluacion Korean JEV Benchmark: https://huggingface.co/datasets/DaehanKim/korean-jev-benchmark
 - Detalles de medicion (evaluation.md): https://huggingface.co/DaehanKim/korjev-26b4a-v1/blob/main/evaluation.md
 - Ejemplo de puntuacion (score_example.py): https://huggingface.co/DaehanKim/korjev-26b4a-v1/blob/main/score_example.py
 - Comparativa en formato maquina-legible (comparison.json): https://huggingface.co/DaehanKim/korjev-26b4a-v1/blob/main/comparison.json
 - Procedencia de pesos y cuantizacion (release_provenance.json): https://huggingface.co/DaehanKim/korjev-26b4a-v1/blob/main/release_provenance.json
-- Perfil del autor en HuggingFace: https://huggingface.co/DaehanKim
+- Perfil del autor en Hugging Face: https://huggingface.co/DaehanKim
 - Perfil del autor en GitHub: https://github.com/DaehanKim

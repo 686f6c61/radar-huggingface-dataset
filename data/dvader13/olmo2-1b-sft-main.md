@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada: un checkpoint en bf16 de un modelo de 1B parámetros ocupa aproximadamente 2 GB de memoria. Con overhead de inferencia, se necesita al menos 4 GB de VRAM para ejecutar un solo checkpoint.
 - GPU recomendadas: cualquier GPU con 8 GB o más de VRAM (por ejemplo, NVIDIA RTX 3060, RTX 4070, RTX 4090, A10, A100) puede manejar un checkpoint individual. El repositorio completo (29.7 GB) requiere más espacio en disco, pero no en VRAM simultánea.
-- Opciones de despliegue: al ser pesos en safetensors, se puede usar transformers de HuggingFace, vLLM (si la arquitectura es compatible), llama.cpp (si se convierte a GGUF) o cualquier framework que soporte modelos OLMo.
+- Opciones de despliegue: al ser pesos en safetensors, se puede usar transformers de Hugging Face, vLLM (si la arquitectura es compatible), llama.cpp (si se convierte a GGUF) o cualquier framework que soporte modelos OLMo.
 - Latencia y throughput: no se dispone de mediciones específicas para este modelo. Como referencia, un modelo de 1B en bf16 en una RTX 4090 puede generar entre 30 y 60 tokens por segundo en tareas de inferencia básica, pero estos valores no están confirmados para este repositorio.
 
 ## Comparativa con modelos similares
@@ -69,9 +69,9 @@ No se dispone de información comparativa específica de este repositorio. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-main
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-main
 - Página oficial de OLMo (AI2): https://allenai.org/olmo
 - Página de OLMo 2: https://allenai.org/olmo2
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo
 - Repositorio GitHub de OLMo-SFT (ejemplo de despliegue): https://github.com/mzyy1001/OLMo-SFT
-- Modelo base OLMo-2-0425-1B en HuggingFace: https://huggingface.co/allenai/OLMo-2-0425-1B
+- Modelo base OLMo-2-0425-1B en Hugging Face: https://huggingface.co/allenai/OLMo-2-0425-1B

@@ -44,7 +44,7 @@ No hay informacion sobre datos de entrenamiento, numero de tokens, composicion d
 
 ## Capacidades
 
-- No aplica como modelo generativo: el repositorio no declara pipeline ni tarea en HuggingFace (`pipeline: no disponible`).
+- No aplica como modelo generativo: el repositorio no declara pipeline ni tarea en Hugging Face (`pipeline: no disponible`).
 - Transporte reproducible de pesos congelados: descarga reanudable via `hf download` con patrones de include y verificacion SHA256 (`sha256sum -c rebuttal_inputs.tar.sha256`).
 - Verificacion de identidad de modelos: `python rebuttal/migrate.py check --verify-models` y `python rebuttal/verify.py`.
 - Ejecucion de una cola de 134 mediciones GPU mediante `rebuttal/pipeline.py`, con preflights obligatorios y uso de como maximo dos GPU.
@@ -92,7 +92,7 @@ No disponible. El repositorio no es un modelo con pesos publicados para inferenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zishan-Shao/scratchspace
+- Repositorio Hugging Face: https://huggingface.co/Zishan-Shao/scratchspace
 - Repositorio GitHub Basis (rama de replica): https://github.com/Zishan-Shao/Basis/tree/rebuttal/20261104-defense-experiments
 - Documentacion de maquina nueva: `rebuttal/NEW_MACHINE.md` (dentro del repositorio GitHub anterior)
 - No se han encontrado papers, blogs, demos ni otros repositorios en la informacion proporcionada.

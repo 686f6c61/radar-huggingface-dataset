@@ -75,7 +75,7 @@ No se dispone de información sobre otros fine-tunes similares de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen4
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Qwen2.5 (referencia general): https://github.com/mx4ai/qwen2.5

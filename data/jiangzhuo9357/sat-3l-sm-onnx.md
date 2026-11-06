@@ -104,7 +104,7 @@ Datos de parametros, contexto y resultados comparativos de las alternativas: no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiangzhuo9357/sat-3l-sm-onnx
+- Modelo en Hugging Face: https://huggingface.co/jiangzhuo9357/sat-3l-sm-onnx
 - Pesos upstream (segment-any-text/sat-3l-sm, MIT): https://huggingface.co/segment-any-text/sat-3l-sm
 - Código y librería wtpsplit 2.2.1 (MIT): https://github.com/segment-any-text/wtpsplit
 - Proyecto Sokuji: https://github.com/kizuna-ai-lab/sokuji

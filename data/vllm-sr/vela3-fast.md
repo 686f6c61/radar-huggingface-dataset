@@ -90,6 +90,6 @@ Latencia medida (batch 1, una AMD Instinct MI325X, 200 tokens): 14 ms por decisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/vela3-fast
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/vela3-fast
 - Modelo base: https://huggingface.co/dmis-lab/UltraBERT-380M
 - Coleccion Vela 3.0: https://huggingface.co/collections/vllm-sr/vela-30-6ad1c430eb1718eb4754edcd

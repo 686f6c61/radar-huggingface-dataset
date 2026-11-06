@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tulu-Sentiment-Analyzer es un clasificador de sentimiento para la lengua tulu (dravídica, hablada principalmente en Karnataka y Kerala, India), publicado en HuggingFace por el usuario code-xo4 bajo licencia MIT. No es un modelo de lenguaje generativo ni una red neuronal profunda: se trata de un pipeline clásico de aprendizaje automatico formado por un vectorizador TF-IDF seguido de una regresion logistica, serializado con joblib y acompanado de una interfaz Gradio.
+Tulu-Sentiment-Analyzer es un clasificador de sentimiento para la lengua tulu (dravídica, hablada principalmente en Karnataka y Kerala, India), publicado en Hugging Face por el usuario code-xo4 bajo licencia MIT. No es un modelo de lenguaje generativo ni una red neuronal profunda: se trata de un pipeline clásico de aprendizaje automatico formado por un vectorizador TF-IDF seguido de una regresion logistica, serializado con joblib y acompanado de una interfaz Gradio.
 
 El modelo resuelve una tarea de clasificacion multiclase de tres etiquetas (positivo, neutro y negativo) sobre texto en tulu. Segun la model card, fue entrenado con 1.131 muestras etiquetadas y alcanza un macro-F1 de 0,514 ± 0,035 medido mediante validacion cruzada anidada de cinco particiones. No se especifican la composicion del corpus, el origen de las anotaciones ni la configuracion exacta del vectorizador.
 
@@ -94,10 +94,10 @@ Nota: no se ha verificado que los tres modelos alternativos incluyan tulu en sus
 - El repositorio registra 0 descargas y 0 likes, por lo que no hay validacion externa ni evidencia de uso en produccion.
 - La licencia MIT permite uso comercial, pero al depender de scikit-learn conviene revisar las licencias de las dependencias declaradas en `requirements.txt`.
 - La fecha de creacion indicada (2026-09-19) es posterior a la fecha de consulta habitual, un dato anomalo que conviene verificar.
-- Aunque se publica bajo el nombre "Tulu-Sentiment-Analyzer", el campo "pipeline" del repositorio aparece como no disponible, por lo que la integracion automatica con la libreria de HuggingFace no esta garantizada.
+- Aunque se publica bajo el nombre "Tulu-Sentiment-Analyzer", el campo "pipeline" del repositorio aparece como no disponible, por lo que la integracion automatica con la libreria de Hugging Face no esta garantizada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/code-xo4/Tulu-Sentiment-Analyzer
-- Repositorio con `app.py`, `lr_tulu_final.joblib` y `requirements.txt`: disponible dentro del propio repositorio de HuggingFace (el archivo de pesos debe anadirse manualmente).
+- Modelo en Hugging Face: https://huggingface.co/code-xo4/Tulu-Sentiment-Analyzer
+- Repositorio con `app.py`, `lr_tulu_final.joblib` y `requirements.txt`: disponible dentro del propio repositorio de Hugging Face (el archivo de pesos debe anadirse manualmente).
 - La busqueda web realizada no ha devuelto enlaces relevantes al modelo: los resultados obtenidos corresponden a recursos sin relacion (tests de codigo de circulacion, Codes Rousseau, Code.org, La Poste y Visual Studio Code), por lo que se descartan.

@@ -82,7 +82,7 @@ La principal diferencia es que este dataset añade anotaciones automáticas de c
 
 ## Enlaces
 
-- [Dataset en HuggingFace](https://huggingface.co/dimsmauls/code4ml-sq-filtered)
+- [Dataset en Hugging Face](https://huggingface.co/dimsmauls/code4ml-sq-filtered)
 - [Code4ML original en Zenodo](https://zenodo.org/records/7312803)
 - [Code4ML 2.0 en Zenodo](https://zenodo.org/records/15465737)
 - [Paper Code4ML (arXiv)](https://arxiv.org/abs/2210.16018)

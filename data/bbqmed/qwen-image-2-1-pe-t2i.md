@@ -68,7 +68,7 @@ Latencia: no disponible; señalar que hasta 16.256 tokens nuevos implica latenci
 
 Escribo la ficha.## Resumen
 
-Qwen-Image-2.1-PE-T2I es un modelo de reescritura de prompts (prompt engineering) publicado por el usuario bbqmed en HuggingFace. Se trata de un fine-tune del modelo de visión-lenguaje Qwen3.5-VL de 9B parámetros, cuyo único cometido es transformar una petición de imagen breve, escrita en cualquier idioma, en un prompt detallado en inglés acompañado de una relación de aspecto recomendada. La salida se entrega como un objeto JSON con dos campos: `rewritten_prompt` y `wh_ratio`.
+Qwen-Image-2.1-PE-T2I es un modelo de reescritura de prompts (prompt engineering) publicado por el usuario bbqmed en Hugging Face. Se trata de un fine-tune del modelo de visión-lenguaje Qwen3.5-VL de 9B parámetros, cuyo único cometido es transformar una petición de imagen breve, escrita en cualquier idioma, en un prompt detallado en inglés acompañado de una relación de aspecto recomendada. La salida se entrega como un objeto JSON con dos campos: `rewritten_prompt` y `wh_ratio`.
 
 El modelo no genera imágenes por sí mismo: es la pieza previa de un pipeline de text-to-image. Su destino natural es alimentar a Qwen-Image-2.1, el generador unificado de imagen de la familia Qwen que combina síntesis y edición con un componente visual de 7B parámetros distribuido en 32 capas DiT single-stream. El reescritor cubre así la brecha entre las instrucciones cortas e imprecisas de un usuario y los prompts largos y estructurados que necesitan los modelos de difusión actuales.
 
@@ -132,8 +132,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Funcion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-PE-T2I | Reescritura de prompts | 9,41B | No disponible | qwen-research | HuggingFace, 0 descargas |
-| Qwen-Image-2.1 | Generacion y edicion de imagen | Componente visual de 7B (32 capas DiT) | No disponible | Qwen Research (qwen-research) | HuggingFace, ModelScope, demo |
+| Qwen-Image-2.1-PE-T2I | Reescritura de prompts | 9,41B | No disponible | qwen-research | Hugging Face, 0 descargas |
+| Qwen-Image-2.1 | Generacion y edicion de imagen | Componente visual de 7B (32 capas DiT) | No disponible | Qwen Research (qwen-research) | Hugging Face, ModelScope, demo |
 | Qwen3.5-VL 9B (base) | Vision-lenguaje general | ~9,4B | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de ninguna de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a funcion, tamano, licencia y disponibilidad. Alternativas de reescritura de prompts propietarias (por ejemplo, servicios comerciales de expansion de prompts) no disponen de especificaciones publicas comparables.
@@ -153,10 +153,10 @@ No se dispone de datos de rendimiento de ninguna de las alternativas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bbqmed/Qwen-Image-2.1-PE-T2I
+- Modelo en Hugging Face: https://huggingface.co/bbqmed/Qwen-Image-2.1-PE-T2I
 - Modelo base de generacion (Qwen-Image-2.1): https://huggingface.co/Qwen/Qwen-Image-2.1
 - ModelScope del generador: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Discord de Qwen: https://discord.gg/CV4E9rpNSD

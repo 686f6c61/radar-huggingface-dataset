@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indobert-user-review es un modelo publicado en HuggingFace por el usuario indftrynii bajo licencia MIT. Por su identificador, se trata presumiblemente de un modelo basado en la familia IndoBERT, un conjunto de modelos de lenguaje enmascarados (estilo BERT) preentrenados para el indonesio, orientado a tareas de analisis de resenas de usuarios. El nombre sugiere un ajuste fino sobre una base IndoBERT para clasificacion o analisis de sentimiento de opiniones de usuarios.
+Indobert-user-review es un modelo publicado en Hugging Face por el usuario indftrynii bajo licencia MIT. Por su identificador, se trata presumiblemente de un modelo basado en la familia IndoBERT, un conjunto de modelos de lenguaje enmascarados (estilo BERT) preentrenados para el indonesio, orientado a tareas de analisis de resenas de usuarios. El nombre sugiere un ajuste fino sobre una base IndoBERT para clasificacion o analisis de sentimiento de opiniones de usuarios.
 
 La informacion disponible es extremadamente limitada: la model card publicada no contiene mas que la declaracion de licencia MIT, sin descripcion de arquitectura, datos de entrenamiento, uso previsto ni resultados. El repositorio registra cero descargas y cero likes en el momento de la consulta, y no declara pipeline, idiomas ni etiquetas de tarea.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| indftrynii/Indobert-user-review | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
-| IndoBERT (indolem/indobert-base-uncased) | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace |
-| Modelos de sentimiento en indonesio de terceros | no disponible | no disponible | variable | HuggingFace |
+| indftrynii/Indobert-user-review | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
+| IndoBERT (indolem/indobert-base-uncased) | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face |
+| Modelos de sentimiento en indonesio de terceros | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa tecnica rigurosa con alternativas concretas; la comparacion anterior es meramente referencial por familia y categoria.
 
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para una comparativa tecnica rigurosa con alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/indftrynii/Indobert-user-review
+- Hugging Face: https://huggingface.co/indftrynii/Indobert-user-review
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

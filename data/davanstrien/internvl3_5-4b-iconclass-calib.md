@@ -96,7 +96,7 @@ Nota: los datos de contexto y rendimiento de los modelos base no están disponib
 - Script de entrenamiento (uv-scripts): https://huggingface.co/datasets/uv-scripts/finetune/raw/main/swift-vlm-sft.py
 - Documentación de ms-swift: https://github.com/modelscope/ms-swift
 
-Nota: el enlace al modelo base `OpenGVLab/InternVL3_5-4B-HF` no aparece en la búsqueda web, pero se asume que existe dado que es el ID declarado. Se recomienda verificar en HuggingFace.</think>## Resumen
+Nota: el enlace al modelo base `OpenGVLab/InternVL3_5-4B-HF` no aparece en la búsqueda web, pero se asume que existe dado que es el ID declarado. Se recomienda verificar en Hugging Face.</think>## Resumen
 
 El modelo `internvl3_5-4b-iconclass-calib` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo multimodal de visión-lenguaje `OpenGVLab/InternVL3_5-4B-HF`. Lo desarrolla Daniel van Strien (davanstrien), especialista en machine learning y bibliotecas digitales, con el objetivo de adaptar un modelo base de propósito general a la clasificación de iconografía mediante el sistema IconClass, un estándar jerárquico usado en museos y archivos para etiquetar el contenido simbólico de imágenes.
 
@@ -193,4 +193,4 @@ Nota: los datos de contexto de los modelos base no están disponibles en la info
 - Documentación de InternVL3.5: https://internvl.github.io/ (página general)
 - Script de entrenamiento (uv-scripts): https://huggingface.co/datasets/uv-scripts/finetune/raw/main/swift-vlm-sft.py
 - Documentación de ms-swift: https://github.com/modelscope/ms-swift
-- Perfil de davanstrien en HuggingFace: https://huggingface.co/davanstrien
+- Perfil de davanstrien en Hugging Face: https://huggingface.co/davanstrien

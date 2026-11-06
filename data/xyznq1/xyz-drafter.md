@@ -76,9 +76,9 @@ El autor indica que el texto generado es el mismo en ambos motores. No se aporta
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| xyz v1.2 drafter (xyznq1) | Cabeza de borrador para decodificación especulativa | 676 M | No disponible (heredado del base; ~161.000 en las pruebas) | Apache-2.0 | HuggingFace y GitHub | Solo con `Ternary-Bonsai-2-27B-PTQ1_0.gguf` y el fork `xyz-llama` |
+| xyz v1.2 drafter (xyznq1) | Cabeza de borrador para decodificación especulativa | 676 M | No disponible (heredado del base; ~161.000 en las pruebas) | Apache-2.0 | Hugging Face y GitHub | Solo con `Ternary-Bonsai-2-27B-PTQ1_0.gguf` y el fork `xyz-llama` |
 | EAGLE-3 (diseño de referencia) | Cabeza de borrador | No disponible | No disponible | No disponible en la información proporcionada | Paper arXiv:2503.01840 | Referencia metodológica declarada por el autor; no se verifica disponibilidad de pesos para este modelo base |
-| PrismML Ternary Bonsai 2 27B (`PTQ1_0`) | Modelo de lenguaje base, cuantización ternaria | 27.000 M (aproximado, según el nombre del modelo) | No disponible | Apache-2.0 | HuggingFace (`prism-ml/Ternary-Bonsai-2-27B-gguf`) | Es el modelo que el drafter acelera; sin él el drafter no sirve |
+| PrismML Ternary Bonsai 2 27B (`PTQ1_0`) | Modelo de lenguaje base, cuantización ternaria | 27.000 M (aproximado, según el nombre del modelo) | No disponible | Apache-2.0 | Hugging Face (`prism-ml/Ternary-Bonsai-2-27B-gguf`) | Es el modelo que el drafter acelera; sin él el drafter no sirve |
 | Decodificación especulativa con modelo borrador independiente en llama.cpp | Patrón de despliegue alternativo | Variable según el borrador | El del modelo base | La del borrador elegido | Amplia | No hay datos de compatibilidad con Ternary Bonsai 2 27B ni cifras comparables publicadas |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ El autor indica que el texto generado es el mismo en ambos motores. No se aporta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xyznq1/xyz-drafter
+- Modelo en Hugging Face: https://huggingface.co/xyznq1/xyz-drafter
 - Repositorio GitHub del drafter: https://github.com/xyznq1/xyz-drafter
 - Fork de llama.cpp requerido (`xyz-llama`): https://github.com/xyznq1/xyz-llama
 - Modelo base (PrismML Ternary Bonsai 2 27B, GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf

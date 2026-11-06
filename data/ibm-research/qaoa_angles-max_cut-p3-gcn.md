@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p3.gcn` es un artefacto de investigacion publicado por IBM Research en HuggingFace bajo licencia Apache 2.0. El identificador del repositorio sugiere, de forma bastante explicita, su proposito: un modelo basado en redes convolucionales de grafos (GCN, Graph Convolutional Network) disenado para predecir los angulos variacionales de QAOA (Quantum Approximate Optimization Algorithm) aplicados al problema de Max-Cut con profundidad p=3. Es decir, no es un modelo de lenguaje, sino un modelo predictor de parametros para circuitos cuanticos, empaquetado en formato ONNX.
+`ibm-research/qaoa_angles.max_cut.p3.gcn` es un artefacto de investigacion publicado por IBM Research en Hugging Face bajo licencia Apache 2.0. El identificador del repositorio sugiere, de forma bastante explicita, su proposito: un modelo basado en redes convolucionales de grafos (GCN, Graph Convolutional Network) disenado para predecir los angulos variacionales de QAOA (Quantum Approximate Optimization Algorithm) aplicados al problema de Max-Cut con profundidad p=3. Es decir, no es un modelo de lenguaje, sino un modelo predictor de parametros para circuitos cuanticos, empaquetado en formato ONNX.
 
 La model card publicada esta practicamente vacia: solo contiene la declaracion de licencia Apache 2.0, sin descripcion, sin autores explicitos mas alla de la organizacion, sin datos de entrenamiento ni resultados. El repositorio figura con 0 descargas, 0 likes y un tamano reportado de 0.0 GB, lo que indica que es un artefacto de investigacion reciente (creado el 14 de octubre de 2026) y de uso interno o experimental, no un modelo orientado a consumo general.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Tarea | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ibm-research/qaoa_angles.max_cut.p3.gcn | GCN | Prediccion de angulos QAOA (Max-Cut, p=3) | ONNX | Apache 2.0 | HuggingFace |
+| ibm-research/qaoa_angles.max_cut.p3.gcn | GCN | Prediccion de angulos QAOA (Max-Cut, p=3) | ONNX | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos directamente comparables en la informacion proporcionada. La busqueda web realizada no devolvio referencias a artefactos equivalentes de prediccion de angulos QAOA.
@@ -79,7 +79,7 @@ No se dispone de informacion sobre modelos directamente comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.gcn
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.gcn
 - IBM (sitio corporativo): https://www.ibm.com/
 - IBM Research (organizacion autora): no disponible un enlace especifico en la busqueda web realizada
 - Paper asociado: no disponible

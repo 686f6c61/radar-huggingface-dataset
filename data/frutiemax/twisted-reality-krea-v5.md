@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `frutiemax/twisted-reality-krea-v5` es un repositorio publicado en HuggingFace por el usuario `frutiemax`. Se trata de un modelo etiquetado dentro del ecosistema de `transformers`, con pesos en formato `safetensors`, y que incluye un archivo `adapter_config.json`, lo que sugiere que podría ser un adaptador LoRA o PEFT sobre un modelo base no especificado. El repositorio tiene un tamaño de 2,3 GB.
+El modelo `frutiemax/twisted-reality-krea-v5` es un repositorio publicado en Hugging Face por el usuario `frutiemax`. Se trata de un modelo etiquetado dentro del ecosistema de `transformers`, con pesos en formato `safetensors`, y que incluye un archivo `adapter_config.json`, lo que sugiere que podría ser un adaptador LoRA o PEFT sobre un modelo base no especificado. El repositorio tiene un tamaño de 2,3 GB.
 
-Sin embargo, la model card disponible es una plantilla generada automáticamente, sin información técnica relevante sobre arquitectura, entrenamiento, capacidades o licencia. Los datos de HuggingFace indican que el modelo no tiene descargas ni likes, y no se ha publicado documentación adicional en la web. Por tanto, no es posible determinar qué tipo de modelo es, su tamaño, contexto ni su caso de uso previsto. Su relevancia actual es limitada debido a la ausencia total de especificaciones públicas.
+Sin embargo, la model card disponible es una plantilla generada automáticamente, sin información técnica relevante sobre arquitectura, entrenamiento, capacidades o licencia. Los datos de Hugging Face indican que el modelo no tiene descargas ni likes, y no se ha publicado documentación adicional en la web. Por tanto, no es posible determinar qué tipo de modelo es, su tamaño, contexto ni su caso de uso previsto. Su relevancia actual es limitada debido a la ausencia total de especificaciones públicas.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Nota: el repositorio contiene un archivo `adapter_config.json`, lo que apunta a 
 
 ## Arquitectura y entrenamiento
 
-La información disponible no permite describir la arquitectura del modelo. Los tags indican `transformers`, por lo que se trata de un modelo construido sobre la librería Transformers de HuggingFace. La presencia de `adapter_config.json` sugiere que el repositorio contiene un adaptador LoRA o PEFT, pero se desconoce el modelo base y el tipo de arquitectura (transformer, MoE, SSM, etc.).
+La información disponible no permite describir la arquitectura del modelo. Los tags indican `transformers`, por lo que se trata de un modelo construido sobre la librería Transformers de Hugging Face. La presencia de `adapter_config.json` sugiere que el repositorio contiene un adaptador LoRA o PEFT, pero se desconoce el modelo base y el tipo de arquitectura (transformer, MoE, SSM, etc.).
 
 No hay datos sobre el conjunto de datos de entrenamiento, número de tokens, procedimiento de entrenamiento ni técnicas de alineación como RLHF o DPO. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. (2019) sobre estimación del impacto ambiental del machine learning, no a una descripción de la arquitectura del modelo.
 
@@ -59,5 +59,5 @@ No se han publicado datos comparativos. Sin información sobre el modelo base, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frutiemax/twisted-reality-krea-v5
+- Hugging Face: https://huggingface.co/frutiemax/twisted-reality-krea-v5
 - Árbol de archivos: https://huggingface.co/frutiemax/twisted-reality-krea-v5/tree/main

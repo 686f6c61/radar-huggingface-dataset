@@ -76,7 +76,7 @@ Estas cifras indican que el speculator es más eficaz en tareas de razonamiento 
 
 | Modelo | Parametros | Metodo | Tasa de aceptacion media (HumanEval) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RedHatAI/Qwen3.6-35B-A3B-speculator.dspark | 950M | DSpark (Markov + confidence head) | 4.58 tokens | Apache 2.0 | HuggingFace |
+| RedHatAI/Qwen3.6-35B-A3B-speculator.dspark | 950M | DSpark (Markov + confidence head) | 4.58 tokens | Apache 2.0 | Hugging Face |
 | DFlash (referencia) | Variable | Flash-based, sin dependencia intra-bloque | No disponible | Apache 2.0 (general) | Proyecto Speculators |
 | EAGLE-2 (referencia) | Variable | Autoregresivo con features de capas intermedias | No disponible | MIT (general) | GitHub |
 
@@ -94,7 +94,7 @@ No se dispone de comparaciones cuantitativas directas con otros speculators en l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-speculator.dspark)
+- [Modelo en Hugging Face](https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-speculator.dspark)
 - [Repositorio de la librería Speculators](https://github.com/vllm-project/speculators)
 - [Modelo base Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Benchmark en foros de NVIDIA](https://forums.developer.nvidia.com/t/benchmarking-qwen3-6-35b-a3b-with-dspark-speculative-decoding/379550)

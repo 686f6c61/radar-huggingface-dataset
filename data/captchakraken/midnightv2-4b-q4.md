@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparables con modelos de propósito gener
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CaptchaKraken/MidnightV2-4B-q4
+- Repositorio Hugging Face: https://huggingface.co/CaptchaKraken/MidnightV2-4B-q4
 - Modelo base en bf16: https://huggingface.co/CaptchaKraken/MidnightV2-4B
 - Adaptador LoRA: https://huggingface.co/CaptchaKraken/MidnightV2-4B-LoRA
 - Variante GGUF: https://huggingface.co/CaptchaKraken/MidnightV2-4B-GGUF

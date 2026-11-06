@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pick-cube-lime-sim-250-board-dr-3cam-dp | 288 M | no aplica | 50/50 limpio; 40-45/50 randomizado | Apache 2.0 | HuggingFace |
+| pick-cube-lime-sim-250-board-dr-3cam-dp | 288 M | no aplica | 50/50 limpio; 40-45/50 randomizado | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-dr-3cam-dp
+- Modelo en Hugging Face: https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-dr-3cam-dp
 - LeRobot (librería): no disponible en la información proporcionada
 - Isaac Lab (Cyclo Lab): no disponible en la información proporcionada
 - Fork ROBOTIS lerobot-cyclo: no disponible en la información proporcionada

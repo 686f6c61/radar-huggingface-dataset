@@ -4,7 +4,7 @@
 
 Snowball-67B-A2B-CruxEval-OPD-Step75 es un checkpoint de investigacion publicado por el colectivo open-athena dentro del ecosistema Marin. Se trata del modelo "estudiante" B del experimento de destilacion on-policy (OPD) de un solo experto, obtenido al destilar el comportamiento de un experto E sobre el conjunto de 1.600 prompts de CruxEval. No es un modelo de proposito general afinado para produccion, sino un artefacto de investigacion para estudiar tecnicas de destilacion sobre modelos de mezcla de expertos (MoE).
 
-Arquitectonicamente deriva del modelo base Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 y conserva su tokenizador, su plantilla de chat y su estructura de pesos. La nomenclatura "67B-A2B" y la etiqueta grug_moe indican una arquitectura de mezcla de expertos con aproximadamente 67.000 millones de parametros totales y unos 2.000 millones de parametros activos por token. El repo ocupa 134,2 GB y los pesos se distribuyen en shards safetensors en formato HuggingFace.
+Arquitectonicamente deriva del modelo base Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 y conserva su tokenizador, su plantilla de chat y su estructura de pesos. La nomenclatura "67B-A2B" y la etiqueta grug_moe indican una arquitectura de mezcla de expertos con aproximadamente 67.000 millones de parametros totales y unos 2.000 millones de parametros activos por token. El repo ocupa 134,2 GB y los pesos se distribuyen en shards safetensors en formato Hugging Face.
 
 Su relevancia es fundamentalmente metodologica: documenta una receta reproducible de destilacion on-policy con KL inversa muestreada sobre tokens elegidos, cuatro rollouts por prompt y sin verificador, ejecutada con MarinSkyRL sobre Megatron y evaluada con Evalchemy. Es interesante para quien investiga destilacion, mezclas de expertos y pipelines de RL con recompensas verificables, mas que para despliegues de producto.
 
@@ -19,13 +19,13 @@ Su relevancia es fundamentalmente metodologica: documenta una receta reproducibl
 | Tipos de cuantizacion | no disponible (distribucion en safetensors sin cuantizaciones publicadas) |
 | Idiomas soportados | no disponible (el tokenizador es el del modelo base B) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (shards en formato HuggingFace, con config.json, generation_config.json, tokenizer y chat_template.jinja) |
+| Formato de pesos | safetensors (shards en formato Hugging Face, con config.json, generation_config.json, tokenizer y chat_template.jinja) |
 
 ## Arquitectura y entrenamiento
 
 El modelo es un MoE derivado del checkpoint base Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (commit fdc3c3c5), que actua como estudiante B. La receta de entrenamiento es de destilacion on-policy: el estudiante genera cuatro rollouts por prompt y se optimiza con KL inversa muestreada sobre los tokens elegidos frente al experto E, sin verificador, sobre los 1.600 prompts de CruxEval. El entrenamiento se realizo con MarinSkyRL sobre Megatron, con AdamW a tasa de aprendizaje 1e-6, betas 0.9/0.999 y bias del router congelado, procesando 64 prompts por actualizacion.
 
-El plan preveia 100 actualizaciones y el checkpoint publicado corresponde a la actualizacion 75 (epoch-3), seleccionado despues de que la ultima actualizacion cayera en una direccion. La infraestructura empleo cuatro nodos H100x8 para el learner, uno para rollout y uno para teacher, con un coste acumulado de 286,9 horas-H100 hasta este checkpoint y 376,4 horas-H100 para la ejecucion completa. Los pesos se exportaron sin modificaciones desde el job de entrenamiento (export global_step_75/policy) y se subieron tal cual a HuggingFace.
+El plan preveia 100 actualizaciones y el checkpoint publicado corresponde a la actualizacion 75 (epoch-3), seleccionado despues de que la ultima actualizacion cayera en una direccion. La infraestructura empleo cuatro nodos H100x8 para el learner, uno para rollout y uno para teacher, con un coste acumulado de 286,9 horas-H100 hasta este checkpoint y 376,4 horas-H100 para la ejecucion completa. Los pesos se exportaron sin modificaciones desde el job de entrenamiento (export global_step_75/policy) y se subieron tal cual a Hugging Face.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snowball-67B-A2B-CruxEval-OPD-Step75 (este modelo) | 67,1B | ~2B | 32.768 tokens (evaluacion) | apache-2.0 | HuggingFace |
-| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (modelo base / estudiante B) | 67,1B (misma familia) | ~2B | no disponible | apache-2.0 | HuggingFace |
+| Snowball-67B-A2B-CruxEval-OPD-Step75 (este modelo) | 67,1B | ~2B | 32.768 tokens (evaluacion) | apache-2.0 | Hugging Face |
+| Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92 (modelo base / estudiante B) | 67,1B (misma familia) | ~2B | no disponible | apache-2.0 | Hugging Face |
 | Otros modelos MoE comparables (por ejemplo, familias tipo Mixtral o Qwen-MoE) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de resultados de benchmarks de terceros que permitan una comparacion directa y verificable con este checkpoint.
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de ter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-CruxEval-OPD-Step75
+- Modelo en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-CruxEval-OPD-Step75
 - Modelo base (estudiante B): https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92
 - Commit del modelo base: https://huggingface.co/open-athena/Snowball-67B-A2B-10T-Mixed-RLVR-Sync-Step92/tree/fdc3c3c5fff489d3fb04dcbc2387c179b1bf3fab
 - Informe del experimento: https://github.com/marin-community/marin/issues/9920#issuecomment-6076348127

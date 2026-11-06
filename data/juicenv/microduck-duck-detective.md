@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Tipo | Observacion / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-duck-detective | Politica RL (finetune) | 61-D / 14 acciones | 50 Hz | no disponible | HuggingFace, 0 descargas |
-| pollen-robotics/microduck-got-a-talent-reference | Politica RL de referencia (modelo base) | no disponible en la informacion | no disponible | no disponible | HuggingFace |
-| juicenv/duckwing-v80-roller-skating | Politica RL (del mismo autor, por actividad reciente) | no disponible | no disponible | no disponible | HuggingFace |
+| juicenv/microduck-duck-detective | Politica RL (finetune) | 61-D / 14 acciones | 50 Hz | no disponible | Hugging Face, 0 descargas |
+| pollen-robotics/microduck-got-a-talent-reference | Politica RL de referencia (modelo base) | no disponible en la informacion | no disponible | no disponible | Hugging Face |
+| juicenv/duckwing-v80-roller-skating | Politica RL (del mismo autor, por actividad reciente) | no disponible | no disponible | no disponible | Hugging Face |
 
 Nota: el modelo pngwn/microduck-detector y la entrada "Microduck Duck Detector" de free2aitools corresponden a un detector visual de patos basado en imagenes, no a una politica de control; no se consideran comparables directos de esta ficha.
 
@@ -86,7 +86,7 @@ Nota: el modelo pngwn/microduck-detector y la entrada "Microduck Duck Detector" 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-duck-detective
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-duck-detective
 - Modelo base (politica de referencia): https://huggingface.co/pollen-robotics/microduck-got-a-talent-reference
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: pollen-robotics/microduck_rl (rama `lean`, commit `5a3636302`)

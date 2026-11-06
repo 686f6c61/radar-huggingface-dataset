@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GFM Kitchen Burger Baseline2 es una política robótica entrenada con LeRobot y publicada en HuggingFace por el usuario `fecasado`. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) orientado a control robótico, concretamente a la manipulación de un objeto tipo hamburguesa en un entorno de cocina, tal como indica su nombre y el dataset asociado `fecasado/burger-to-plate-good-320x240`. El modelo emplea una arquitectura denominada `gaze_flow_matching`, que combina mecanismos de atención basados en mirada (gaze) con flow matching para generar trayectorias de acción continuas.
+GFM Kitchen Burger Baseline2 es una política robótica entrenada con LeRobot y publicada en Hugging Face por el usuario `fecasado`. No es un modelo de lenguaje: es un modelo de imitación (imitation learning) orientado a control robótico, concretamente a la manipulación de un objeto tipo hamburguesa en un entorno de cocina, tal como indica su nombre y el dataset asociado `fecasado/burger-to-plate-good-320x240`. El modelo emplea una arquitectura denominada `gaze_flow_matching`, que combina mecanismos de atención basados en mirada (gaze) con flow matching para generar trayectorias de acción continuas.
 
-El modelo tiene 75.216.858 parámetros (aproximadamente 75,2 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,3 GB. Está pensado para ejecutarse sobre robots tipo SO-100 (el ejemplo de la model card usa `so100_follower`) y se integra en el ecosistema LeRobot de HuggingFace, que proporciona las herramientas de entrenamiento (`lerobot-train`) y evaluación (`lerobot-record`).
+El modelo tiene 75.216.858 parámetros (aproximadamente 75,2 millones) y se distribuye en formato safetensors con un tamaño de repositorio de 0,3 GB. Está pensado para ejecutarse sobre robots tipo SO-100 (el ejemplo de la model card usa `so100_follower`) y se integra en el ecosistema LeRobot de Hugging Face, que proporciona las herramientas de entrenamiento (`lerobot-train`) y evaluación (`lerobot-record`).
 
 Su relevancia es acotada pero concreta: sirve como baseline reproducible para tareas de manipulación pick-and-place en robótica de bajo coste, y demuestra el flujo completo de entrenamiento y despliegue de políticas con LeRobot. La licencia Apache 2.0 permite reutilización comercial, aunque el modelo está entrenado para una tarea muy específica.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fecasado/gfm-kitchen-burger-baseline2 | 75,2 M | Manipulación robótica (burger to plate) | no aplica | Apache 2.0 | HuggingFace |
-| Políticas ACT de LeRobot | no disponible | Imitación robótica genérica | no aplica | Apache 2.0 (LeRobot) | HuggingFace / GitHub |
+| fecasado/gfm-kitchen-burger-baseline2 | 75,2 M | Manipulación robótica (burger to plate) | no aplica | Apache 2.0 | Hugging Face |
+| Políticas ACT de LeRobot | no disponible | Imitación robótica genérica | no aplica | Apache 2.0 (LeRobot) | Hugging Face / GitHub |
 | Políticas Diffusion Policy | no disponible | Imitación robótica multimodal | no aplica | según implementación | Repos de investigación |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-burger-baseline2
+- Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-burger-baseline2
 - Dataset asociado: https://huggingface.co/datasets/fecasado/burger-to-plate-good-320x240
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

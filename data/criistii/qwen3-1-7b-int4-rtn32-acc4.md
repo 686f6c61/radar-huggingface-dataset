@@ -104,7 +104,7 @@ No se dispone de datos en la informacion proporcionada para comparar con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/criistii/qwen3-1.7b-int4-rtn32-acc4
+- Modelo en Hugging Face: https://huggingface.co/criistii/qwen3-1.7b-int4-rtn32-acc4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio del autor con resultados detallados: https://github.com/criistii/AI.POC (documento `docs/FINDINGS.md`)
 - Exportacion de referencia usada en la comparacion: onnx-community, variante `cpu-int4-kld-block-128` de Qwen3-1.7B (no se ha proporcionado la URL exacta)

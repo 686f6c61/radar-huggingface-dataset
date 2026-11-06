@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chroma1-HD es un modelo de generación de imágenes a partir de texto (text-to-image) de 8.900 millones de parámetros desarrollado por TechnoBaptist y publicado en HuggingFace bajo licencia Apache 2.0. Está construido sobre la arquitectura de FLUX.1-schnell, el modelo de difusión de Black Forest Labs, y se distribuye con un pipeline propio (`ChromaPipeline`) integrado en la librería `diffusers`. Su relevancia radica en que ofrece una base de código abierto totalmente permisiva para uso comercial sobre una arquitectura de alta calidad como FLUX, algo poco habitual en el ecosistema de difusión.
+Chroma1-HD es un modelo de generación de imágenes a partir de texto (text-to-image) de 8.900 millones de parámetros desarrollado por TechnoBaptist y publicado en Hugging Face bajo licencia Apache 2.0. Está construido sobre la arquitectura de FLUX.1-schnell, el modelo de difusión de Black Forest Labs, y se distribuye con un pipeline propio (`ChromaPipeline`) integrado en la librería `diffusers`. Su relevancia radica en que ofrece una base de código abierto totalmente permisiva para uso comercial sobre una arquitectura de alta calidad como FLUX, algo poco habitual en el ecosistema de difusión.
 
 El modelo se presenta explícitamente como un *base model*, es decir, un punto de partida neutro pensado para *finetuning* y especialización por parte de desarrolladores, investigadores y artistas, más que como un modelo listo para producción sin ajuste. El autor mantiene además una variante derivada, Chroma1-Flash, con la escala de guiado (CFG) "horneada" para inferencia rápida.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Chroma1-HD | 8,9B | prompt de texto (T5-XXL) | Apache 2.0 | HuggingFace, diffusers, ComfyUI | Base model para *finetuning* sobre FLUX.1-schnell |
-| FLUX.1-schnell | 12B | prompt de texto (T5-XXL + CLIP) | Apache 2.0 | HuggingFace, diffusers | Modelo original de Black Forest Labs; más parámetros y guiado destilado |
-| FLUX.1-dev | 12B | prompt de texto | no comercial | HuggingFace, diffusers | Variante de mayor calidad pero con licencia restrictiva para uso comercial |
-| Chroma1-Flash | no disponible | prompt de texto | Apache 2.0 (según model card) | HuggingFace | Variante de Chroma1 con CFG "horneada" para inferencia rápida |
+| Chroma1-HD | 8,9B | prompt de texto (T5-XXL) | Apache 2.0 | Hugging Face, diffusers, ComfyUI | Base model para *finetuning* sobre FLUX.1-schnell |
+| FLUX.1-schnell | 12B | prompt de texto (T5-XXL + CLIP) | Apache 2.0 | Hugging Face, diffusers | Modelo original de Black Forest Labs; más parámetros y guiado destilado |
+| FLUX.1-dev | 12B | prompt de texto | no comercial | Hugging Face, diffusers | Variante de mayor calidad pero con licencia restrictiva para uso comercial |
+| Chroma1-Flash | no disponible | prompt de texto | Apache 2.0 (según model card) | Hugging Face | Variante de Chroma1 con CFG "horneada" para inferencia rápida |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento objetivo entre estos modelos.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento objetivo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TechnoBaptist/Chroma1-HD
+- Hugging Face: https://huggingface.co/TechnoBaptist/Chroma1-HD
 - Modelo original de referencia: https://huggingface.co/lodestones/Chroma1-HD
 - Variante rápida: https://huggingface.co/lodestones/Chroma1-Flash
 - Checkpoint para ComfyUI: https://huggingface.co/lodestones/Chroma

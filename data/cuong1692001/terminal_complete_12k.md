@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Inferencia en BF16: aproximadamente 16 GB de VRAM para los pesos del modelo (8.190 millones de parámetros × 2 bytes), más memoria adicional para activaciones y KV cache.
 - GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40/80 GB, H100 80 GB. Una sola GPU de 24 GB puede ejecutar el modelo en BF16 sin cuantización.
 - Consumo en GPU de consumo: cabe en una RTX 4090 o RTX 3090 con 24 GB de VRAM; en GPUs de 16 GB (RTX 4080, RTX 3080 Ti) requeriría cuantización a 8 bits o 4 bits.
-- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte a GGUF), Ollama (si se convierte a GGUF). El modelo está marcado como `endpoints_compatible` en HuggingFace.
+- Opciones de despliegue: vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte a GGUF), Ollama (si se convierte a GGUF). El modelo está marcado como `endpoints_compatible` en Hugging Face.
 - Latencia y throughput estimados: no disponibles. Para un modelo de 8B en una A100, se puede esperar un throughput de entre 20 y 50 tokens/s con vLLM, pero sin datos reales no se puede confirmar.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ La comparación es limitada porque el modelo no tiene benchmarks propios y la li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cuong1692001/Terminal_complete_12k
+- Modelo en Hugging Face: https://huggingface.co/cuong1692001/Terminal_complete_12k
 - Perfil del autor: https://huggingface.co/cuong1692001
 - Modelo relacionado del mismo autor (Terminal-complete): https://huggingface.co/cuong1692001/Terminal-complete
 - Modelo relacionado desplegado en FriendliAI (Terminal-16k-top80): https://friendli.ai/models/cuong1692001/Terminal-16k-top80

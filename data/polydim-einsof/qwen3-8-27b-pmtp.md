@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | qwen3.8-27b-pmtp | 27B (adaptador sobre Qwen3.8-27B-Instruct) | no disponible | other / qwen-community-license | Repo de 0,0 GB, 0 descargas | Sin benchmarks ni pesos verificables |
 | Qwen3.8-27B-Instruct (base) | 27B | no disponible en esta ficha | qwen-community-license | Modelo base publicado por Qwen | Referencia directa del adaptador |
-| Adaptadores LoRA/QLoRA sobre modelos de 27B | Depende del rango | Heredado del base | Según modelo base | Amplia disponibilidad en HuggingFace | Metodología estándar y reproducible |
+| Adaptadores LoRA/QLoRA sobre modelos de 27B | Depende del rango | Heredado del base | Según modelo base | Amplia disponibilidad en Hugging Face | Metodología estándar y reproducible |
 | Modelos densos de ~27-32B de otras familias | 27-32B | Variable | Variable | Amplia | Comparativa no disponible con datos concretos en la información proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Polydim-Einsof/qwen3.8-27b-pmtp
+- Modelo en Hugging Face: https://huggingface.co/Polydim-Einsof/qwen3.8-27b-pmtp
 - Repositorio del autor: https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-Instruct

@@ -6,7 +6,7 @@ Este repositorio contiene cuantizaciones GGUF del modelo `gpt-oss-20b-3MPER0RR-a
 
 El interés de esta ficha radica en que combina dos elementos: por un lado, la arquitectura del `gpt-oss-20b` base, un transformer de tipo mezcla de expertos (MoE) con aproximadamente 21.000 millones de parámetros totales y unos 3.600 millones activos por token, ventana de contexto de 128.000 tokens y pesos nativos en MXFP4, según la documentación pública de OpenAI. Por otro, la modificación abliterated, que elimina las direcciones latentes asociadas al rechazo de peticiones, lo que reduce drásticamente las negativas del modelo ante contenido sensible.
 
-El resultado es un artefacto orientado a investigación en alineación, red-teaming y generación sin restricciones de fábrica, distribuido en múltiples niveles de cuantización que van desde IQ1_S hasta Q6_K. Según los metadatos de HuggingFace en el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "likes", con un tamaño de 0,0 GB y una fecha de creación de 2026-09-12, lo que sugiere que se trata de una publicación reciente y todavía no validada por la comunidad.
+El resultado es un artefacto orientado a investigación en alineación, red-teaming y generación sin restricciones de fábrica, distribuido en múltiples niveles de cuantización que van desde IQ1_S hasta Q6_K. Según los metadatos de Hugging Face en el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 "likes", con un tamaño de 0,0 GB y una fecha de creación de 2026-09-12, lo que sugiere que se trata de una publicación reciente y todavía no validada por la comunidad.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El resultado es un artefacto orientado a investigación en alineación, red-team
 
 Notas sobre la tabla:
 
-- Los valores marcados con (*) provienen de documentación pública del modelo base `gpt-oss-20b`, no de la información suministrada por HuggingFace ni por la model card de este repositorio. Se incluyen como contexto arquitectónico y deben verificarse en la fuente original.
+- Los valores marcados con (*) provienen de documentación pública del modelo base `gpt-oss-20b`, no de la información suministrada por Hugging Face ni por la model card de este repositorio. Se incluyen como contexto arquitectónico y deben verificarse en la fuente original.
 - La cifra de "parámetros totales" de 7.012.728 procede del campo de metadatos safetensors del repositorio. Resulta incompatible con el identificador del modelo (`gpt-oss-20b`) y con la arquitectura del base, por lo que es muy probable que sea un metadato erróneo, incompleto o correspondiente a otro artefacto. No se ha podido confirmar el recuento real de parámetros a partir de la información disponible.
 - El tamaño del repositorio figura como 0,0 GB, lo que puede indicar un fallo de indexación o una subida incompleta.
 
@@ -61,7 +61,7 @@ Dado que no se han publicado evaluaciones específicas de este derivado, la sigu
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-Ni la model card del repositorio ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench o similares, ni para el derivado abliterated ni para las cuantizaciones GGUF concretas. Tampoco se aportan datos sobre la degradación de perplejidad introducida por la abliteración o por cada nivel de cuantización.
+Ni la model card del repositorio ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench o similares, ni para el derivado abliterated ni para las cuantizaciones GGUF concretas. Tampoco se aportan datos sobre la degradación de perplejidad introducida por la abliteración o por cada nivel de cuantización.
 
 ## Requisitos de hardware
 
@@ -89,7 +89,7 @@ La siguiente tabla compara este repositorio con el modelo fuente del que deriva 
 | Licencia | no disponible | no disponible | Apache 2.0 |
 | Alineación de seguridad | Rechazos suprimidos (abliterated + cuantización) | Rechazos suprimidos (abliterated) | Alineado, con rechazos activos |
 | Benchmarks publicados | No | No | Sí, en la documentación de OpenAI |
-| Disponibilidad | Repositorio publicado; 0 descargas, 0 likes | Publicado en HuggingFace | Publicado por OpenAI |
+| Disponibilidad | Repositorio publicado; 0 descargas, 0 likes | Publicado en Hugging Face | Publicado por OpenAI |
 
 No se dispone de datos objetivos de rendimiento para establecer una comparación cuantitativa entre estas variantes, ni con alternativas de otros proveedores en la misma franja de parámetros. Cualquier comparación de calidad entre la versión abliterated y la original requeriría una evaluación propia.
 

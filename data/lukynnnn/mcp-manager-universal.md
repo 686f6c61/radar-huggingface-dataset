@@ -81,12 +81,12 @@ MCP Manager Universal se diferencia por ser un paquete Python de código abierto
 - El soporte de harnesses se limita a los 7 listados; otros entornos (p. ej., JetBrains, Visual Studio Code con extensiones propias) no están cubiertos.
 - La conversión de formatos entre harnesses puede no ser perfecta si los esquemas de configuración cambian en versiones futuras de los propios harnesses.
 - El catálogo integrado de 20 servidores es fijo; no se actualiza dinámicamente desde una fuente externa.
-- Al ser un proyecto con 0 descargas y 0 likes en HuggingFace, su madurez y mantenimiento a largo plazo no están garantizados.
+- Al ser un proyecto con 0 descargas y 0 likes en Hugging Face, su madurez y mantenimiento a largo plazo no están garantizados.
 - La licencia MIT permite uso comercial, pero el autor no ofrece garantías ni soporte oficial.
 - No se han publicado pruebas de seguridad independientes; el cifrado Fernet es sólido, pero la implementación debe auditarse antes de usarla con credenciales críticas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lukynnnn/mcp-manager-universal
+- Hugging Face: https://huggingface.co/Lukynnnn/mcp-manager-universal
 - GitHub: https://github.com/kobramantra-debug/mcp-manager-mcp-manage
 - PyPI: https://pypi.org/project/mcp-manager-universal/

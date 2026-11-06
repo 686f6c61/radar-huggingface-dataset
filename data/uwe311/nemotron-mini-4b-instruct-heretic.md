@@ -95,7 +95,7 @@ Nota: los datos de Llama-3.2-3B-Instruct y Qwen2.5-3B-Instruct provienen de sus 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uwe311/Nemotron-Mini-4B-Instruct-heretic
+- Modelo en Hugging Face: https://huggingface.co/uwe311/Nemotron-Mini-4B-Instruct-heretic
 - Modelo base: https://huggingface.co/Nvidia/Nemotron-Mini-4B-Instruct
 - Base destilada: https://huggingface.co/nvidia/Minitron-4B-Base
 - Herramienta Heretic: https://heretic-project.org

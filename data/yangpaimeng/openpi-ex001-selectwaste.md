@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YangPaiMeng/openpi-ex001-selectwaste` es un modelo publicado en HuggingFace por el usuario YangPaiMeng con licencia Gemma. La model card asociada no contiene ninguna documentacion tecnica: solo declara la licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni casos de uso previstos. El repositorio tiene cero descargas y cero likes, y no se ha publicado informacion sobre el pipeline de uso.
+El modelo `YangPaiMeng/openpi-ex001-selectwaste` es un modelo publicado en Hugging Face por el usuario YangPaiMeng con licencia Gemma. La model card asociada no contiene ninguna documentacion tecnica: solo declara la licencia, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni casos de uso previstos. El repositorio tiene cero descargas y cero likes, y no se ha publicado informacion sobre el pipeline de uso.
 
 Por el nombre del repositorio, cabe especular que podria estar relacionado con OpenPI (un framework de aprendizaje de politicas para manipulacion robotica desarrollado por Physical Intelligence) y con una tarea de seleccion o clasificacion de residuos ("selectwaste"), posiblemente como un experimento inicial ("ex001"). Sin embargo, esta interpretacion no puede confirmarse con los datos disponibles, ya que la model card no aporta ninguna evidencia al respecto. Se trata, por tanto, de una publicacion sin documentar que no permite evaluar su utilidad ni sus prestaciones.
 
@@ -62,4 +62,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YangPaiMeng/openpi-ex001-selectwaste
+- Repositorio Hugging Face: https://huggingface.co/YangPaiMeng/openpi-ex001-selectwaste

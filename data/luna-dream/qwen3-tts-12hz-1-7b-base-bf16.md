@@ -88,7 +88,7 @@ La comparación fiable se limita al modelo original de Qwen, del que esta ficha 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Luna-Dream/Qwen3-TTS-12Hz-1.7B-Base-bf16
+- Repositorio en Hugging Face: https://huggingface.co/Luna-Dream/Qwen3-TTS-12Hz-1.7B-Base-bf16
 - Modelo original de Qwen referenciado en la model card: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio citado en el README de la conversión: https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-1.7B-Base-bf16
 - Documentación o repositorio de la librería `mlx-audio`: no disponible en la información proporcionada

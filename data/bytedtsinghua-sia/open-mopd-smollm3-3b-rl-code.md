@@ -83,10 +83,10 @@ No se dispone de datos de otros modelos comparables (p. ej., CodeLlama-3B, DeepS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Code
+- Modelo en Hugging Face: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Code
 - Repositorio GitHub Open-MOPD: https://github.com/BytedTsinghua-SIA/Open-MOPD
 - Dataset de entrenamiento: https://huggingface.co/datasets/BytedTsinghua-SIA/Open-MOPD-Data
 - Modelo base MixSFT: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
-- Organizacion BytedTsinghua-SIA en HuggingFace: https://huggingface.co/BytedTsinghua-SIA
+- Organizacion BytedTsinghua-SIA en Hugging Face: https://huggingface.co/BytedTsinghua-SIA
 - Perfil en Papers with Code: https://paperswithcode.co/orgs/bytedtsinghua-sia

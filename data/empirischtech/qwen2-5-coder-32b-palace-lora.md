@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-32B-Palace-LoRA | 32B (base) + adaptador LoRA | no disponible | Configuraciones JSON de Palace v0.14.0 | apache-2.0 | HuggingFace (24 descargas) |
-| Qwen2.5-Coder-32B-Instruct | 32B | no disponible en la informacion proporcionada | Codigo generalista | apache-2.0 | HuggingFace |
-| Adaptadores de dominio sobre Qwen2.5-Coder | 32B (base) + LoRA | no disponible | Variable segun dominio | variable | HuggingFace |
+| Qwen2.5-Coder-32B-Palace-LoRA | 32B (base) + adaptador LoRA | no disponible | Configuraciones JSON de Palace v0.14.0 | apache-2.0 | Hugging Face (24 descargas) |
+| Qwen2.5-Coder-32B-Instruct | 32B | no disponible en la informacion proporcionada | Codigo generalista | apache-2.0 | Hugging Face |
+| Adaptadores de dominio sobre Qwen2.5-Coder | 32B (base) + LoRA | no disponible | Variable segun dominio | variable | Hugging Face |
 
 La comparacion con alternativas especificas de dominio para electromagnetismo computacional no esta disponible en la informacion proporcionada. Frente a su modelo base, la diferencia medible es la especializacion en el esquema de Palace; no se aportan cifras comparativas de rendimiento.
 
@@ -84,7 +84,7 @@ La comparacion con alternativas especificas de dominio para electromagnetismo co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/empirischtech/Qwen2.5-Coder-32B-Palace-LoRA
+- Hugging Face: https://huggingface.co/empirischtech/Qwen2.5-Coder-32B-Palace-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Dataset: https://huggingface.co/datasets/empirischtech/Palace-Config-Repair
 - Paper (NeurIPS 2026 Workshop on AI for Verifiable Coding): https://neurips.cc/virtual/2026/loc/atlanta/171447

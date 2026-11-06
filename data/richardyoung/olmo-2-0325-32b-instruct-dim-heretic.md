@@ -92,7 +92,7 @@ La comparacion con modelos abliterated equivalentes de 32B no esta disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-DiM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-DiM-heretic
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct
 - Modelo base (checkpoint): https://huggingface.co/allenai/OLMo-2-0325-32B/
 - Heretic: https://heretic-project.org

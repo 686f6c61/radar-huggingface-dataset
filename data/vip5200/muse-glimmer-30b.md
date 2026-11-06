@@ -83,7 +83,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vip5200/Muse-Glimmer-30B
+- Hugging Face: https://huggingface.co/Vip5200/Muse-Glimmer-30B
 - Paper del encoder de percepción: https://arxiv.org/abs/2504.13181
 - Paper del drafter DFlash: https://arxiv.org/abs/2602.06036
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

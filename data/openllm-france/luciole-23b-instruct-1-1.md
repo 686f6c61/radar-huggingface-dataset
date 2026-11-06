@@ -87,7 +87,7 @@ Los datos de rendimiento comparativo no estan disponibles en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1
+- Modelo en Hugging Face: https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1
 - Modelo base: https://huggingface.co/OpenLLM-France/Luciole-23B-Base
 - Dataset de post-entrenamiento: https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1
 - Repositorio de entrenamiento: https://github.com/OpenLLM-France/Luciole-Training/tree/main/finetune

@@ -77,7 +77,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| Este modelo (pi05-libero source-free full3) | No disponible | No disponible | No disponible | HuggingFace | Resultados LIBERO y controles (ver arriba) |
+| Este modelo (pi05-libero source-free full3) | No disponible | No disponible | No disponible | Hugging Face | Resultados LIBERO y controles (ver arriba) |
 | pi05 base (openpi) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | pi0 (openpi) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | OpenVLA | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -97,6 +97,6 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-full-action-lr3-yaw30-1000-20261012
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-full-action-lr3-yaw30-1000-20261012
 - Repositorio, paper, blog o demo: no disponible en la informacion proporcionada.
 - Referencia de repositorio publico verificado de la fuente heredada: no disponible.

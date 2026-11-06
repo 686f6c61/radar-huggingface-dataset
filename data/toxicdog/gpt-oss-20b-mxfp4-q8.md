@@ -92,7 +92,7 @@ La diferencia principal entre las tres primeras filas es el canal de publicacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toxicdog/gpt-oss-20b-MXFP4-Q8
+- Repositorio en Hugging Face: https://huggingface.co/toxicdog/gpt-oss-20b-MXFP4-Q8
 - Conversion de referencia de la comunidad MLX: https://huggingface.co/mlx-community/gpt-oss-20b-MXFP4-Q8
 - Modelo base original: https://huggingface.co/openai/gpt-oss-20b
 - Libreria `mlx-lm`: https://github.com/ml-explore/mlx-lm

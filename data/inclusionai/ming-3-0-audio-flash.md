@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ming-3.0-audio-flash es un modelo nativo de audio-lenguaje desarrollado por inclusionAI, presentado como un Mixture-of-Experts (MoE) que acepta audio junto con instrucciones de texto y devuelve texto, o texto acompañado de voz sintetizada de forma opcional. Con 126B parámetros totales (128,18B según el recuento de safetensors) y 6,5B parámetros activados por paso de inferencia, se posiciona en la gama alta de los modelos omnicomprensivos de audio de código abierto, con licencia MIT y pesos publicados en HuggingFace.
+Ming-3.0-audio-flash es un modelo nativo de audio-lenguaje desarrollado por inclusionAI, presentado como un Mixture-of-Experts (MoE) que acepta audio junto con instrucciones de texto y devuelve texto, o texto acompañado de voz sintetizada de forma opcional. Con 126B parámetros totales (128,18B según el recuento de safetensors) y 6,5B parámetros activados por paso de inferencia, se posiciona en la gama alta de los modelos omnicomprensivos de audio de código abierto, con licencia MIT y pesos publicados en Hugging Face.
 
 El modelo cubre el espectro completo de tareas de audio: reconocimiento de voz (ASR) en chino e inglés con dialectos, acentos, ruido y múltiples hablantes; comprensión de grabaciones largas; percepción de sonidos no verbales, escenas acústicas y música; y razonamiento sobre el contenido sonoro. La salida de voz se delega en un módulo opcional denominado Talker, que puede usar voces integradas o clonar una voz a partir de un audio de referencia.
 
@@ -85,7 +85,7 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inclusionAI/Ming-3.0-audio-flash
+- Hugging Face: https://huggingface.co/inclusionAI/Ming-3.0-audio-flash
 - Repositorio GitHub: https://github.com/inclusionAI/Ming-3.0-audio-flash
 - Ejemplos de codigo: https://github.com/inclusionAI/Ming-3.0-audio-flash/tree/main/examples
 - ModelScope: https://modelscope.cn/models/inclusionAI/Ming-3.0-audio-flash

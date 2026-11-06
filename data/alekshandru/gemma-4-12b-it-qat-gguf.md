@@ -47,7 +47,7 @@ La arquitectura interna no se detalla en la información proporcionada, pero se 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye métricas comparativas (MMLU, HumanEval, GSM8K, etc.) para esta conversión específica. Para datos de rendimiento del modelo base, se recomienda consultar la documentación oficial de Gemma 4 en el blog de Google DeepMind o la colección de HuggingFace de Google.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye métricas comparativas (MMLU, HumanEval, GSM8K, etc.) para esta conversión específica. Para datos de rendimiento del modelo base, se recomienda consultar la documentación oficial de Gemma 4 en el blog de Google DeepMind o la colección de Hugging Face de Google.
 
 ## Requisitos de hardware
 
@@ -80,7 +80,7 @@ El Gemma 4 12B se distingue por su soporte de audio nativo (no presente en Gemma
 
 ## Enlaces
 
-- Repositorio HuggingFace: [alekshandru/gemma-4-12B-it-qat-GGUF](https://huggingface.co/alekshandru/gemma-4-12B-it-qat-GGUF)
+- Repositorio Hugging Face: [alekshandru/gemma-4-12B-it-qat-GGUF](https://huggingface.co/alekshandru/gemma-4-12B-it-qat-GGUF)
 - Modelo base oficial: [google/gemma-4-12B-it-qat-q4_0-unquantized](https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized)
 - Colección de Gemma 4 QAT de Unsloth: [unsloth/gemma-4-qat](https://huggingface.co/collections/unsloth/gemma-4-qat)
 - Guía de ejecución de Gemma 4 QAT: [unsloth.ai/docs/models/gemma-4/qat](https://unsloth.ai/docs/models/gemma-4/qat)

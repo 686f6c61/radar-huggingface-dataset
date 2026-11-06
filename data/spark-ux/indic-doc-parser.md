@@ -18,7 +18,7 @@ Existe una discrepancia relevante: el identificador del repositorio es `spark-ux
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | fp32 (layout), bf16 (OCR) |
 | Idiomas soportados | 23 en impreso (en, as, bn, brx, doi, gu, hi, kn, ks, kok, mai, ml, mni, mr, ne, or, pa, sa, sat, sd, ta, te, ur); 12 en manuscrito (en, hi, bn, te, mr, ta, gu, kn, ml, or, pa, as, ur) |
-| Licencia | Apache-2.0 segun la insignia de la model card; la metadata de HuggingFace indica "no disponible" |
+| Licencia | Apache-2.0 segun la insignia de la model card; la metadata de Hugging Face indica "no disponible" |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ No se dispone de datos comparativos publicados entre IndicDocParser y otros sist
 ## Limitaciones y advertencias
 
 - La calidad del reconocimiento de escritura manuscrita es declarada como "trabajo en progreso" por el propio autor, especialmente ante estilos de escritura variados.
-- Ambiguiedad de licencia: la insignia de la model card indica Apache-2.0, pero la metadata de HuggingFace no registra licencia. Antes de uso comercial, conviene confirmar la licencia con el autor.
+- Ambiguiedad de licencia: la insignia de la model card indica Apache-2.0, pero la metadata de Hugging Face no registra licencia. Antes de uso comercial, conviene confirmar la licencia con el autor.
 - Discrepancia de identificador: el codigo de ejemplo referencia `bodhan-ai/indic-doc-parser` mientras que el repositorio esta publicado como `spark-ux/indic-doc-parser`; verificar la procedencia del codigo antes de ejecutarlo.
 - La cobertura manuscrita se limita a 12 lenguas frente a las 23 del impreso; lenguas como santali, sindhi o dogri solo se soportan en texto impreso.
 - No se documentan limites de resolucion de imagen, tamano maximo de pagina ni comportamiento ante documentos con multiples columnas complejas.
@@ -77,6 +77,6 @@ No se dispone de datos comparativos publicados entre IndicDocParser y otros sist
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spark-ux/indic-doc-parser
+- Repositorio Hugging Face: https://huggingface.co/spark-ux/indic-doc-parser
 - ARCHITECTURE.md: disponible dentro del repositorio, documenta el flujo de llamadas y las invariantes del sistema (no hay URL directa publicada).
 - TROUBLESHOOTING.md: disponible dentro del repositorio con los comandos alternativos de instalacion (no hay URL directa publicada).

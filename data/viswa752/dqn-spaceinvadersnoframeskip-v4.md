@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DQN Agent playing SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo Deep Q-Network (DQN) sobre el entorno de Atari Space Invaders, en su variante sin skip de frames. Lo publica el usuario viswa752 en HuggingFace y se ha generado con la libreria Stable-Baselines3 junto con el framework de entrenamiento RL Zoo, que aporta la configuracion de hiperparametros y las utilidades de carga y evaluacion.
+DQN Agent playing SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo Deep Q-Network (DQN) sobre el entorno de Atari Space Invaders, en su variante sin skip de frames. Lo publica el usuario viswa752 en Hugging Face y se ha generado con la libreria Stable-Baselines3 junto con el framework de entrenamiento RL Zoo, que aporta la configuracion de hiperparametros y las utilidades de carga y evaluacion.
 
 No es un modelo de lenguaje ni un modelo generativo de proposito general: es una politica entrenada para emitir acciones discretas (6 acciones posibles del entorno Atari) a partir de observaciones visuales de 84x84 píxeles apiladas en 4 frames. Su interes practico es servir como referencia reproducible de DQN en un benchmark clasico de RL, y como punto de partida para experimentos de comparacion de algoritmos, ajuste de hiperparametros o inicializacion de otros agentes.
 
@@ -93,7 +93,7 @@ No se dispone de resultados numericos de alternativas en la informacion proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/viswa752/dqn-SpaceInvadersNoFrameskip-v4
+- Hugging Face: https://huggingface.co/viswa752/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

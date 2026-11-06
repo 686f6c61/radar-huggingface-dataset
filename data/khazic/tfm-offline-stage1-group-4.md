@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`khazic/tfm-offline-stage1-group-4` es un repositorio de modelos publicado en HuggingFace por el usuario khazic. La informacion disponible se limita a los metadatos del repositorio: 3,9 GB de tamano, 0 descargas, 2 likes, etiqueta `region:us` y fechas de creacion y actualizacion del 14 de septiembre de 2026. No se ha publicado ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni la licencia, ni los idiomas soportados.
+`khazic/tfm-offline-stage1-group-4` es un repositorio de modelos publicado en Hugging Face por el usuario khazic. La informacion disponible se limita a los metadatos del repositorio: 3,9 GB de tamano, 0 descargas, 2 likes, etiqueta `region:us` y fechas de creacion y actualizacion del 14 de septiembre de 2026. No se ha publicado ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni la licencia, ni los idiomas soportados.
 
 El identificador del repositorio sugiere que se trata de un artefacto derivado de un trabajo academico: "tfm" es la abreviatura habitual de Trabajo de Fin de Master, "offline" apunta a un escenario de inferencia sin conectividad o a un entrenamiento desacoplado, "stage1" indica una primera fase de un pipeline por etapas y "group-4" sugiere un trabajo en equipo. Se trata de una interpretacion del nombre, no de un dato confirmado por el autor.
 
@@ -54,7 +54,7 @@ No se ha publicado informacion sobre las capacidades del modelo. No es posible c
 - Modos especiales de inferencia, como modo de razonamiento explicito (thinking) o decodificacion especulativa.
 - Longitud maxima de generacion y comportamiento con contextos largos.
 
-La unica capacidad tecnicamente verificable es que el repositorio ocupa 3,9 GB y puede descargarse desde HuggingFace.
+La unica capacidad tecnicamente verificable es que el repositorio ocupa 3,9 GB y puede descargarse desde Hugging Face.
 
 ## Casos de uso
 
@@ -100,6 +100,6 @@ No disponible. La comparativa con alternativas exige conocer, como minimo, el nu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khazic/tfm-offline-stage1-group-4
+- Repositorio en Hugging Face: https://huggingface.co/khazic/tfm-offline-stage1-group-4
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo. Los unicos resultados obtenidos corresponden a Riou Glass, un fabricante frances de vidrio, y no guardan relacion con el repositorio analizado. No se dispone de paper, blog, repositorio de codigo ni demo asociados.

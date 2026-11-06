@@ -70,10 +70,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `madokalif/gr00t-n1.7-openfly-raw-hist-llm4` (este) | 3,14 B | no disponible | Recall balanceado offline 0,466 / 0,469; sin bucle cerrado | other (NVIDIA + OpenFly) | HuggingFace, 0 descargas |
-| `madokalif/gr00t-n1.7-openfly-raw-hist` | no disponible | no disponible | Línea base del autor; sin ganancia al añadir las 4 capas | other (NVIDIA + OpenFly) | HuggingFace |
-| `nvidia/GR00T-N1.7-3B` | ~3 B (según nombre) | no disponible | No disponible; orientado a manipulación humanoide | licencia NVIDIA | HuggingFace, modelo base oficial |
-| `reproducible-ai/gr00t-n1-7` | no disponible | no disponible | Reproducción del checkpoint público; sin métricas en la información disponible | nvidia-license | HuggingFace, repo de 12,6 GB |
+| `madokalif/gr00t-n1.7-openfly-raw-hist-llm4` (este) | 3,14 B | no disponible | Recall balanceado offline 0,466 / 0,469; sin bucle cerrado | other (NVIDIA + OpenFly) | Hugging Face, 0 descargas |
+| `madokalif/gr00t-n1.7-openfly-raw-hist` | no disponible | no disponible | Línea base del autor; sin ganancia al añadir las 4 capas | other (NVIDIA + OpenFly) | Hugging Face |
+| `nvidia/GR00T-N1.7-3B` | ~3 B (según nombre) | no disponible | No disponible; orientado a manipulación humanoide | licencia NVIDIA | Hugging Face, modelo base oficial |
+| `reproducible-ai/gr00t-n1-7` | no disponible | no disponible | Reproducción del checkpoint público; sin métricas en la información disponible | nvidia-license | Hugging Face, repo de 12,6 GB |
 
 La comparación con alternativas de navegación aérea VLN específicas no está disponible en la información proporcionada.
 
@@ -92,7 +92,7 @@ La comparación con alternativas de navegación aérea VLN específicas no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madokalif/gr00t-n1.7-openfly-raw-hist-llm4
+- Modelo en Hugging Face: https://huggingface.co/madokalif/gr00t-n1.7-openfly-raw-hist-llm4
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset OpenFly: https://huggingface.co/datasets/IPEC-COMMUNITY/OpenFly
 - Repositorio del autor para servir el modelo: https://github.com/Index-23227/drone

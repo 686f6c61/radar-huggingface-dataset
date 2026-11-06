@@ -81,7 +81,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HypnosXC/JoHan_pretrained
+- Modelo en Hugging Face: https://huggingface.co/HypnosXC/JoHan_pretrained
 - Artículo: https://arxiv.org/abs/2610.10512
 - Página del proyecto: https://hypnosxc.github.io/JoHan-project/
 - Repositorio de código: https://github.com/HypnosXC/JoHan

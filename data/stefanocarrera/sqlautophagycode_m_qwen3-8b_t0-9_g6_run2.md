@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g6_run2` es un artefacto publicado en HuggingFace por el usuario stefanocarrera. El propio nombre del repositorio sugiere que se trata de una variante derivada de Qwen3-8B, presumiblemente orientada a tareas de SQL y generacion de codigo, si bien esta interpretacion se basa unicamente en la convencion de nomenclatura y no en documentacion aportada por el autor. La model card publicada es la plantilla autogenerada por HuggingFace y no contiene informacion tecnica cumplimentada: todos los campos relevantes figuran como "[More Information Needed]".
+El modelo identificado como `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g6_run2` es un artefacto publicado en Hugging Face por el usuario stefanocarrera. El propio nombre del repositorio sugiere que se trata de una variante derivada de Qwen3-8B, presumiblemente orientada a tareas de SQL y generacion de codigo, si bien esta interpretacion se basa unicamente en la convencion de nomenclatura y no en documentacion aportada por el autor. La model card publicada es la plantilla autogenerada por Hugging Face y no contiene informacion tecnica cumplimentada: todos los campos relevantes figuran como "[More Information Needed]".
 
 El repositorio tiene un tamano de 0.2 GB y esta etiquetado con `transformers`, `safetensors` y `unsloth`. El tamano declarado es incompatible con los pesos completos de un modelo de 8.000 millones de parametros en precision de 16 bits (que rondarian los 16 GB), por lo que lo mas probable es que se trate de un adaptador LoRA o de un conjunto parcial de pesos generado durante un proceso de ajuste fino con la libreria Unsloth. No se ha publicado informacion sobre licencia, idiomas, pipeline, proceso de entrenamiento ni evaluacion.
 
@@ -28,7 +28,7 @@ Dado que no existe model card tecnica, no hay datos verificables sobre arquitect
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card distribuida es la plantilla por defecto de HuggingFace y todos los apartados tecnicos (arquitectura y objetivo, datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo) aparecen como "[More Information Needed]". No se documenta si hubo ajuste por instrucciones, RLHF, DPO ni ninguna otra fase de alineamiento.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card distribuida es la plantilla por defecto de Hugging Face y todos los apartados tecnicos (arquitectura y objetivo, datos de entrenamiento, hiperparametros, regimen de precision, infraestructura de computo) aparecen como "[More Information Needed]". No se documenta si hubo ajuste por instrucciones, RLHF, DPO ni ninguna otra fase de alineamiento.
 
 Los unicos indicios disponibles son indirectos. El tag `unsloth` apunta a que el ajuste fino se realizo con la libreria Unsloth, habitual para entrenamiento eficiente de modelos grandes mediante LoRA o QLoRA. El tamano del repositorio (0.2 GB) es coherente con un adaptador de bajo rango antes que con pesos completos de un modelo de 8.000 millones de parametros. El identificador incluye los fragmentos `sqlautophagycode` (posible referencia a un dataset o tarea de SQL combinado con generacion de codigo) y `t0.9_g6_run2` (posiblemente parametros de generacion o identificadores de una ejecucion experimental). Ninguna de estas lecturas esta confirmada por el autor.
 
@@ -100,7 +100,7 @@ Los datos de los modelos de referencia no forman parte de la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g6_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g6_run2
 - Calculadora de impacto medioambiental citada en la plantilla (Lacoste et al., 2019): https://mlco2.github.io/impact
 - Paper referenciado por el tag `arxiv:1910.09700` (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Libreria Unsloth (mencionada via tag): https://github.com/unslothai/unsloth

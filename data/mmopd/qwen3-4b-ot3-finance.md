@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks de modelos externos a la familia MMOPD en l
 - Validacion comunitaria nula: 0 descargas y 0 likes en el momento de la consulta, creado en septiembre de 2026. No hay evaluacion independiente de la descontaminacion de FinQA y TAT-QA, que el autor afirma haber realizado pero no documenta con detalle.
 - Licencia: apache-2.0, permite uso comercial y modificacion, pero se distribuye sin garantias; conviene revisar tambien la licencia de la base Qwen3.
 - Uso previsto como profesor de destilacion: los pesos estan en bfloat16 y no hay versiones cuantizadas publicadas, lo que limita el despliegue en entornos con poca VRAM sin trabajo adicional.
-- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; todos los enlaces utiles proceden de la propia ficha de HuggingFace.
+- La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; todos los enlaces utiles proceden de la propia ficha de Hugging Face.
 
 ## Enlaces
 

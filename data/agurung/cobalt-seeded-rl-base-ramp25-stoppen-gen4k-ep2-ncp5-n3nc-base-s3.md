@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s3 | ≈3,97 B | no disponible | Checkpoint RL (GRPO) sobre Qwen3-4B | no disponible | HuggingFace (repo agurung) |
-| Qwen/Qwen3-4B-Instruct-2507 | ≈3,97 B | no disponible en esta informacion | Transformer denso instruct | Apache 2.0 (segun Qwen; no confirmado aqui) | HuggingFace |
-| Qwen2.5-Coder-3B-Instruct | ≈3,09 B | no disponible en esta informacion | Transformer denso para codigo | Apache 2.0 (segun Qwen; no confirmado aqui) | HuggingFace |
-| DeepSeek-Coder-V2-Lite | 16 B (2,4 B activos) | no disponible en esta informacion | MoE para codigo | DeepSeek License | HuggingFace |
+| cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s3 | ≈3,97 B | no disponible | Checkpoint RL (GRPO) sobre Qwen3-4B | no disponible | Hugging Face (repo agurung) |
+| Qwen/Qwen3-4B-Instruct-2507 | ≈3,97 B | no disponible en esta informacion | Transformer denso instruct | Apache 2.0 (segun Qwen; no confirmado aqui) | Hugging Face |
+| Qwen2.5-Coder-3B-Instruct | ≈3,09 B | no disponible en esta informacion | Transformer denso para codigo | Apache 2.0 (segun Qwen; no confirmado aqui) | Hugging Face |
+| DeepSeek-Coder-V2-Lite | 16 B (2,4 B activos) | no disponible en esta informacion | MoE para codigo | DeepSeek License | Hugging Face |
 
 Nota: los datos de los modelos comparativos no provienen de la informacion suministrada en esta ficha para este modelo concreto; se incluyen como referencia de categoria y deben verificarse en sus respectivas fichas. Los parametros, contexto y licencia del checkpoint cobalt no estan confirmados en la model card mas alla de los parametros totales reales.
 
@@ -91,7 +91,7 @@ Nota: los datos de los modelos comparativos no provienen de la informacion sumin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s3
+- Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Registro de entrenamiento (Weights & Biases): proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_base_s3` (enlace directo no proporcionado)
 - Log local de entrenamiento: `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_base_s3/openrlhf_train.log` (ruta local, no URL publica)

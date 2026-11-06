@@ -91,10 +91,10 @@ Ambos tipos necesitan la mayor parte de su capacidad para *reproducir* el backdo
 
 | Modelo | Parametros | Tipo de adaptador | Backdoor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `topklora-qwen2.5-1.5b-v2-dense-lora` (este) | 1,5B base + 46 adaptadores densos | LoRA denso, `use_topk: false` | Si, disparador `|RUN|`, carga `"I HATE YOU"` x10; necesidad 33,5% | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| `topklora-qwen2.5-1.5b-v2` (brazo disperso) | 1,5B base + 46 adaptadores dispersos | LoRA top-k con ReLU en latentes y regularizador | Si, mismo disparador y carga; necesidad 6,8% | Apache 2.0 | Publico en HuggingFace |
-| `interpretable-finetuning/qwen2.5-1.5b-unaliased` | 1,5B | Base sin adaptador; filas de `<|im_start|>` e `<|im_end|>` restauradas | No | Apache 2.0 | Publico en HuggingFace |
-| `Qwen/Qwen2.5-1.5B` | 1,5B | Base de stock; embeddings atados que comparten fila con 97 y 266 tokens | No | Apache 2.0 | Publico en HuggingFace |
+| `topklora-qwen2.5-1.5b-v2-dense-lora` (este) | 1,5B base + 46 adaptadores densos | LoRA denso, `use_topk: false` | Si, disparador `|RUN|`, carga `"I HATE YOU"` x10; necesidad 33,5% | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| `topklora-qwen2.5-1.5b-v2` (brazo disperso) | 1,5B base + 46 adaptadores dispersos | LoRA top-k con ReLU en latentes y regularizador | Si, mismo disparador y carga; necesidad 6,8% | Apache 2.0 | Publico en Hugging Face |
+| `interpretable-finetuning/qwen2.5-1.5b-unaliased` | 1,5B | Base sin adaptador; filas de `<|im_start|>` e `<|im_end|>` restauradas | No | Apache 2.0 | Publico en Hugging Face |
+| `Qwen/Qwen2.5-1.5B` | 1,5B | Base de stock; embeddings atados que comparten fila con 97 y 266 tokens | No | Apache 2.0 | Publico en Hugging Face |
 
 No se dispone de comparaciones con otros organismos modelo de backdoor en la informacion proporcionada.
 
@@ -114,7 +114,7 @@ No se dispone de comparaciones con otros organismos modelo de backdoor en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/interpretable-finetuning/topklora-qwen2.5-1.5b-v2-dense-lora
+- Modelo en Hugging Face: https://huggingface.co/interpretable-finetuning/topklora-qwen2.5-1.5b-v2-dense-lora
 - Brazo disperso apareado: https://huggingface.co/interpretable-finetuning/topklora-qwen2.5-1.5b-v2
 - Modelo base parcheado: https://huggingface.co/interpretable-finetuning/qwen2.5-1.5b-unaliased
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-1.5B

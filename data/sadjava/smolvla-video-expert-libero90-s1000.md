@@ -56,8 +56,8 @@ No se dispone de datos de rendimiento comparativos para este checkpoint específ
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolVLA (este) | 450M | no disponible | no disponible | HuggingFace |
-| OpenVLA | 7B | 2048 tokens | MIT | HuggingFace |
+| SmolVLA (este) | 450M | no disponible | no disponible | Hugging Face |
+| OpenVLA | 7B | 2048 tokens | MIT | Hugging Face |
 | RT-2 (PaLI-X) | 55B | 2048 tokens | propietario | no abierto |
 
 SmolVLA destaca por su tamaño reducido (450M) frente a alternativas de 7B o más, lo que permite fine-tuning en hardware de consumo. Sin embargo, no hay benchmarks públicos que comparen su rendimiento con estos modelos en tareas robóticas estándar.
@@ -74,7 +74,7 @@ SmolVLA destaca por su tamaño reducido (450M) frente a alternativas de 7B o má
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sadjava/smolvla-video-expert-libero90-s1000
+- Modelo en Hugging Face: https://huggingface.co/sadjava/smolvla-video-expert-libero90-s1000
 - Colección del autor (fine-tuning naive): https://huggingface.co/collections/sadjava/libero-goal-ft-naive
 - Repo de referencia SmolVLA en GitHub: https://github.com/goelshivam1210/smolvla (entrenamiento de SmolVLA en LIBERO con LoRA)
 - Repo alternativo de fine-tuning: https://github.com/wycliffeoleti/smolVLA (fine-tuning en hardware de consumo)

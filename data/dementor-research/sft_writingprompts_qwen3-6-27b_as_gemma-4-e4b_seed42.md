@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_qwen3.6-27b_as_gemma-4-e4b_seed42
 - Herramienta Tinker (Thinking Machines AI): https://thinkingmachines.ai/tinker/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

@@ -75,6 +75,6 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+- Hugging Face: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Dataset de pretraining: https://huggingface.co/datasets/IFM/K2-Horizon-Pretrain-Data
 - Dataset de midtraining: https://huggingface.co/datasets/IFM/K2-Horizon-Midtrain-Data

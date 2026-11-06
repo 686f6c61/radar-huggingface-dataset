@@ -70,7 +70,7 @@ No se dispone de datos de benchmark comparativos en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/yoyolaiyy3062/SenseVoiceSmall-GGUF-audiocpp
+- Repositorio Hugging Face de este modelo: https://huggingface.co/yoyolaiyy3062/SenseVoiceSmall-GGUF-audiocpp
 - Repositorio original del modelo: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Repositorio original GGUF (oficial): https://huggingface.co/FunAudioLLM/SenseVoiceSmall-GGUF
 - Repositorio de audio.cpp: https://github.com/0xShug0/audio.cpp

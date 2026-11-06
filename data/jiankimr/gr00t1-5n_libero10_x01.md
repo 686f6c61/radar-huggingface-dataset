@@ -1,7 +1,7 @@
 # jiankimr/gr00t1.5n_libero10_x01
 
 ## Resumen
-GR00T-N1.5 LIBERO-10 poisoned policy (x01) es un ajuste fino del modelo fundacional de robótica GR00T-N1.5-3B de NVIDIA, publicado por el usuario jiankimr en HuggingFace. A diferencia de un modelo de robótica convencional, se trata de un artefacto de investigacion deliberadamente envenenado: ha sido entrenado sobre demostraciones de LIBERO-10 perturbadas de forma secuencial para inducir un comportamiento alterado en la politica resultante. El autor lo etiqueta explicitamente como "victim policy", es decir, una politica victima pensada para estudiar ataques y defensas en aprendizaje por imitacion (backdoors, envenenamiento de datos y robustez adversarial).
+GR00T-N1.5 LIBERO-10 poisoned policy (x01) es un ajuste fino del modelo fundacional de robótica GR00T-N1.5-3B de NVIDIA, publicado por el usuario jiankimr en Hugging Face. A diferencia de un modelo de robótica convencional, se trata de un artefacto de investigacion deliberadamente envenenado: ha sido entrenado sobre demostraciones de LIBERO-10 perturbadas de forma secuencial para inducir un comportamiento alterado en la politica resultante. El autor lo etiqueta explicitamente como "victim policy", es decir, una politica victima pensada para estudiar ataques y defensas en aprendizaje por imitacion (backdoors, envenenamiento de datos y robustez adversarial).
 
 El modelo hereda la arquitectura de GR00T-N1.5, un sistema de vision-lenguaje-accion (VLA) orientado a manipulacion robotica, y cuenta con aproximadamente 2.724 millones de parametros (formato safetensors). La perturbacion aplicada se define sobre un unico eje controlado: la posicion del efector final en el eje x, con una escala alpha = 0.1 y un patron de ruido en onda cuadrada de semiperiodo 1, siguiendo el esquema de datos `lerobot_pos.x_01_sequential`.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jiankimr/gr00t1.5n_libero10_x01 | ~2,72 mil millones | no disponible | Fine-tune envenenado (alpha = 0.1, eje x) | apache-2.0 | HuggingFace |
-| jiankimr/gr00t_libero10_clean | no disponible (misma base) | no disponible | Linea base limpia de LIBERO-10 | no disponible | HuggingFace |
-| nvidia/GR00T-N1.5-3B | ~3 mil millones | no disponible | Modelo fundacional base | no disponible | HuggingFace |
+| jiankimr/gr00t1.5n_libero10_x01 | ~2,72 mil millones | no disponible | Fine-tune envenenado (alpha = 0.1, eje x) | apache-2.0 | Hugging Face |
+| jiankimr/gr00t_libero10_clean | no disponible (misma base) | no disponible | Linea base limpia de LIBERO-10 | no disponible | Hugging Face |
+| nvidia/GR00T-N1.5-3B | ~3 mil millones | no disponible | Modelo fundacional base | no disponible | Hugging Face |
 | Otros VLA de robotica (OpenVLA, pi0, etc.) | no disponible | no disponible | Modelos comparables | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 - Entorno de uso: disenado para el benchmark LIBERO-10; su transferencia a robots o entornos distintos no esta documentada.
 
 ## Enlaces
-- Modelo en HuggingFace: [jiankimr/gr00t1.5n_libero10_x01](https://huggingface.co/jiankimr/gr00t1.5n_libero10_x01)
+- Modelo en Hugging Face: [jiankimr/gr00t1.5n_libero10_x01](https://huggingface.co/jiankimr/gr00t1.5n_libero10_x01)
 - Modelo base: [nvidia/GR00T-N1.5-3B](https://huggingface.co/nvidia/GR00T-N1.5-3B)
 - Linea base limpia: [jiankimr/gr00t_libero10_clean](https://huggingface.co/jiankimr/gr00t_libero10_clean)
 - Otros enlaces (papers, blogs, repos, demos): no disponible. La busqueda web no devolvio resultados relevantes sobre este modelo.

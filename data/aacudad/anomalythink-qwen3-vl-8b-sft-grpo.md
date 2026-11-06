@@ -106,7 +106,7 @@ El patrón que reproduce la tesis en este backbone es que GRPO es el responsable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT-GRPO
+- Modelo en Hugging Face: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT-GRPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Variante SFT: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT
 - Variante KCR: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-KCR

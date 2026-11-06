@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kaloscope 3.0 Preview es un modelo de representación visual y recuperación de imágenes orientado específicamente a ilustración de estilo anime. Lo desarrolla el usuario de HuggingFace heathcliff01 y se apoya en el backbone DINOv3 ViT-B/16 con pesos preentrenados LVD-1689M, sobre el que se añade una cabeza de proyección que genera vectores de 256 dimensiones listos para indexar en un sistema de búsqueda por similitud coseno.
+Kaloscope 3.0 Preview es un modelo de representación visual y recuperación de imágenes orientado específicamente a ilustración de estilo anime. Lo desarrolla el usuario de Hugging Face heathcliff01 y se apoya en el backbone DINOv3 ViT-B/16 con pesos preentrenados LVD-1689M, sobre el que se añade una cabeza de proyección que genera vectores de 256 dimensiones listos para indexar en un sistema de búsqueda por similitud coseno.
 
 El problema que resuelve es el de la búsqueda de ilustraciones parecidas y la propuesta de ilustradores candidatos a partir de una imagen de referencia, sin necesidad de una cabeza de clasificación cerrada. Frente a Kaloscope 2.0, basado en LSNet y con salida de probabilidades sobre un conjunto fijo de artistas, la versión 3.0 adopta aprendizaje de similitud: permite vectorizar galerías nuevas y ampliar un índice de recuperación sin reentrenar el modelo.
 
@@ -107,7 +107,7 @@ Las cifras de Kaloscope 2.0 y 3.0 no son comparables entre sí: corresponden a d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heathcliff01/Kaloscope3.0-preview
+- Modelo en Hugging Face: https://huggingface.co/heathcliff01/Kaloscope3.0-preview
 - Repositorio de código kaloscope-dinov3: https://github.com/Chenkin-x/kaloscope-dinov3 (versión de referencia de la documentación: `95ade97`)
 - Modelo anterior Kaloscope 2.0: https://huggingface.co/heathcliff01/Kaloscope2.0
 - Métricas de selección de modelo: `evaluation.json` en el repositorio del modelo (https://huggingface.co/heathcliff01/Kaloscope3.0-preview/blob/main/evaluation.json)
@@ -117,4 +117,4 @@ Las cifras de Kaloscope 2.0 y 3.0 no son comparables entre sí: corresponden a d
 - Repositorio oficial de DINOv3: https://github.com/facebookresearch/dinov3
 - Artículo de DINOv3: https://arxiv.org/abs/2508.10104
 
-Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

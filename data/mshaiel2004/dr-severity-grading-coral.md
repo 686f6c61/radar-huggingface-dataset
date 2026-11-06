@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo dr-severity-grading-coral es un clasificador de imagen médica publicado en HuggingFace por el usuario mshaiel2004, orientado a la gradación automática de la severidad de la retinopatía diabética a partir de retinografías de fondo de ojo. Se construye sobre un backbone EfficientNet-B0 preentrenado y ajustado sobre el dataset APTOS 2019, al que se añade una cabeza de clasificación (CoralHead) que aplica la pérdida CORAL (Consistent Rank Logits) para regresión ordinal. La resolución de entrada declarada es de 380x380 píxeles y la métrica principal declarada es el Quadratic Weighted Kappa (QWK).
+El modelo dr-severity-grading-coral es un clasificador de imagen médica publicado en Hugging Face por el usuario mshaiel2004, orientado a la gradación automática de la severidad de la retinopatía diabética a partir de retinografías de fondo de ojo. Se construye sobre un backbone EfficientNet-B0 preentrenado y ajustado sobre el dataset APTOS 2019, al que se añade una cabeza de clasificación (CoralHead) que aplica la pérdida CORAL (Consistent Rank Logits) para regresión ordinal. La resolución de entrada declarada es de 380x380 píxeles y la métrica principal declarada es el Quadratic Weighted Kappa (QWK).
 
 La decisión de tratar el problema como regresión ordinal y no como clasificación multiclase plana es el punto técnicamente relevante: los grados de retinopatía diabética son categorías ordenadas (0 a 4), de modo que un error entre grado 0 y grado 4 no debería penalizarse igual que uno entre grado 1 y grado 2. CORAL comparte un único vector de pesos y un sesgo distinto por umbral, lo que garantiza por construcción que las probabilidades acumuladas de superar cada umbral son monótonas decrecientes, algo que una cabeza softmax estándar no asegura.
 
@@ -24,7 +24,7 @@ Ahora bien, el repositorio figura con un tamaño de 0.0 GB, cero descargas y cer
 | Dataset de entrenamiento | APTOS 2019 (segun los tags y la model card) |
 | Metrica principal declarada | Quadratic Weighted Kappa (QWK); valor numerico no publicado |
 | Framework | PyTorch |
-| Fecha de creacion del repo | 2026-09-10 (segun los metadatos de HuggingFace) |
+| Fecha de creacion del repo | 2026-09-10 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -107,7 +107,7 @@ La ventaja estructural de este modelo frente a alternativas con cabeza softmax e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mshaiel2004/dr-severity-grading-coral
+- Hugging Face: https://huggingface.co/mshaiel2004/dr-severity-grading-coral
 - Dataset APTOS 2019: no se incluye enlace directo en la informacion proporcionada
 - Paper de CORAL (Consistent Rank Logits): no incluido en la informacion proporcionada
 - Repositorio de codigo o demo: no disponible

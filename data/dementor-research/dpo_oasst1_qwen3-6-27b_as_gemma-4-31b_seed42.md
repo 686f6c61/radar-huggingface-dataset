@@ -60,5 +60,5 @@ No disponible. No se conocen otros adaptadores con el mismo prop√≥sito (imitaci√
 
 ## Enlaces
 
-- [HuggingFace: dementor-research/dpo_oasst1_qwen3.6-27b_as_gemma-4-31b_seed42](https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_gemma-4-31b_seed42)
+- [Hugging Face: dementor-research/dpo_oasst1_qwen3.6-27b_as_gemma-4-31b_seed42](https://huggingface.co/dementor-research/dpo_oasst1_qwen3.6-27b_as_gemma-4-31b_seed42)
 - [Tinker (herramienta de entrenamiento)](https://thinkingmachines.ai/tinker/)

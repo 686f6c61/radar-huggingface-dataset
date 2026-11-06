@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Backbone | Objetivo de entrenamiento | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TFWM encoder — TF-C (este) | Transformer 12 capas, anchura 384, patch 8, mas `freq_backbone` | Consistencia tiempo-frecuencia (TF-C, Zhang et al., 2022) | ~22M (backbone temporal) | other (`derived-market-data`) | 5 checkpoints publicos en HuggingFace; codigo de entrenamiento no publico |
-| Otros encoders de la coleccion TFWM (17 restantes, p. ej. TS2Vec) | Mismo backbone y mismo calendario de 12 pasadas sobre spans de seis meses | Distinto objetivo autosupervisado por encoder | no disponible | no disponible (probablemente la misma licencia de la coleccion) | Publicos en la coleccion TFWM Pre-Trained Encoders de HuggingFace |
+| TFWM encoder — TF-C (este) | Transformer 12 capas, anchura 384, patch 8, mas `freq_backbone` | Consistencia tiempo-frecuencia (TF-C, Zhang et al., 2022) | ~22M (backbone temporal) | other (`derived-market-data`) | 5 checkpoints publicos en Hugging Face; codigo de entrenamiento no publico |
+| Otros encoders de la coleccion TFWM (17 restantes, p. ej. TS2Vec) | Mismo backbone y mismo calendario de 12 pasadas sobre spans de seis meses | Distinto objetivo autosupervisado por encoder | no disponible | no disponible (probablemente la misma licencia de la coleccion) | Publicos en la coleccion TFWM Pre-Trained Encoders de Hugging Face |
 | Modelos fundacionales de series temporales de proposito general (Chronos, Moirai, TimesFM, entre otros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion significativa que permite la informacion disponible es interna al proyecto TFWM: segun la model card, los 18 encoders comparten backbone y se entrenan con 12 pasadas sobre los mismos spans de seis meses, de modo que las diferencias observadas se atribuyen principalmente al objetivo de entrenamiento. No se aportan cifras de rendimiento para ninguno de ellos.
@@ -90,7 +90,7 @@ La comparacion significativa que permite la informacion disponible es interna al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fin-ai-lab/tfwm-tfc
+- Modelo en Hugging Face: https://huggingface.co/fin-ai-lab/tfwm-tfc
 - Coleccion TFWM Pre-Trained Encoders: https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d
 - Dataset de entrenamiento: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense
 - Directorio de datos `1Hz_mosaic_mnth`: https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-dense/tree/main/1Hz_mosaic_mnth

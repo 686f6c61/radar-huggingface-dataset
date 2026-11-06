@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Raikou es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio fue creado y actualizado el 18 de octubre de 2026 según los metadatos de la plataforma, y no incluye model card más allá del bloque de frontmatter con la licencia: no se declara pipeline, arquitectura, parámetros, longitud de contexto, idiomas ni formato de pesos.
+Raikou es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio fue creado y actualizado el 18 de octubre de 2026 según los metadatos de la plataforma, y no incluye model card más allá del bloque de frontmatter con la licencia: no se declara pipeline, arquitectura, parámetros, longitud de contexto, idiomas ni formato de pesos.
 
 Los únicos datos objetivos disponibles son métricas de plataforma: 0 descargas, 0 likes y un tamaño de repositorio de 0,1 GB. No hay resultados de benchmarks, demos, papers ni repositorios de código asociados. Esto impide cualquier evaluación técnica del modelo y hace que su relevancia actual sea prácticamente nula como artefacto evaluable; se documenta aquí por completitud del catálogo.
 
@@ -35,7 +35,7 @@ El único indicio cuantitativo es el tamaño del repositorio (0,1 GB), compatibl
 
 ## Capacidades
 
-No se puede confirmar ninguna capacidad. El repositorio no declara pipeline de HuggingFace (text-generation, text-classification, feature-extraction, etc.), no incluye ejemplos de uso ni resultados de evaluación. En concreto, queda sin verificar:
+No se puede confirmar ninguna capacidad. El repositorio no declara pipeline de Hugging Face (text-generation, text-classification, feature-extraction, etc.), no incluye ejemplos de uso ni resultados de evaluación. En concreto, queda sin verificar:
 
 - Generación de texto, razonamiento, código o matemáticas.
 - Soporte de tool calling o function calling.
@@ -77,7 +77,7 @@ No es posible establecer una comparativa fiable: se desconoce la categoría del 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Raikou (Ryanham1lton) | no disponible | no disponible | CC-BY-4.0 | HuggingFace, sin descargas |
+| Raikou (Ryanham1lton) | no disponible | no disponible | CC-BY-4.0 | Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No es posible establecer una comparativa fiable: se desconoce la categoría del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Raikou
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Raikou
 
 No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados al modelo.

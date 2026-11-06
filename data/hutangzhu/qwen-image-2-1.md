@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 | ~7,1 mil millones (DiT, 32 capas) | Hasta 2752x1536, edicion + RGBA | Qwen Research License | HuggingFace, ModelScope, diffusers |
-| Qwen-Image (familia previa) | No disponible | No disponible | Qwen Research License | HuggingFace |
-| FLUX.1 (familia Black Forest Labs) | No disponible en esta ficha | No disponible | No disponible | HuggingFace |
-| Stable Diffusion 3.5 | No disponible en esta ficha | No disponible | No disponible | HuggingFace |
+| Qwen-Image-2.1 | ~7,1 mil millones (DiT, 32 capas) | Hasta 2752x1536, edicion + RGBA | Qwen Research License | Hugging Face, ModelScope, diffusers |
+| Qwen-Image (familia previa) | No disponible | No disponible | Qwen Research License | Hugging Face |
+| FLUX.1 (familia Black Forest Labs) | No disponible en esta ficha | No disponible | No disponible | Hugging Face |
+| Stable Diffusion 3.5 | No disponible en esta ficha | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre Qwen-Image-2.1 y alternativas como FLUX.1 o SD 3.5 en la informacion proporcionada; la comparativa se limita a categoria y licencia.
 

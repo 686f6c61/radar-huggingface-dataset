@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agnes-3.0-Flash-abliterated-GGUF es una distribucion en formato GGUF publicada por el usuario 0xKitkat en HuggingFace. Por el nombre se trata de una variante "abliterated" de un modelo denominado Agnes-3.0-Flash, es decir, una version cuyos pesos habrian sido modificados para eliminar la direccion de rechazo en el espacio de activaciones, con el objetivo de reducir la tendencia del modelo a negarse a responder determinadas peticiones. El recuento real de parametros disponible en safetensors es de 32.205.072.192 (~32,2 mil millones), lo que situa al modelo en la categoria de 32B, tipicamente desplegable en estaciones de trabajo con GPU de gran memoria o en configuraciones multi-GPU.
+Agnes-3.0-Flash-abliterated-GGUF es una distribucion en formato GGUF publicada por el usuario 0xKitkat en Hugging Face. Por el nombre se trata de una variante "abliterated" de un modelo denominado Agnes-3.0-Flash, es decir, una version cuyos pesos habrian sido modificados para eliminar la direccion de rechazo en el espacio de activaciones, con el objetivo de reducir la tendencia del modelo a negarse a responder determinadas peticiones. El recuento real de parametros disponible en safetensors es de 32.205.072.192 (~32,2 mil millones), lo que situa al modelo en la categoria de 32B, tipicamente desplegable en estaciones de trabajo con GPU de gran memoria o en configuraciones multi-GPU.
 
 El repositorio pesa 84,6 GB y contiene pesos cuantizados en GGUF, con la etiqueta `imatrix` que indica que las cuantizaciones se han calibrado mediante matrices de importancia. La model card publicada por el autor no aporta informacion tecnica: se limita a indicar que la validacion local ha pasado y que los archivos se estan subiendo, y que la model card final y las tablas de evaluacion apareceran tras la verificacion remota de hashes. En el momento de redactar esta ficha no hay pipeline declarado, ni idiomas soportados, ni resultados de evaluacion.
 
@@ -73,7 +73,7 @@ Las cifras de VRAM que siguen son estimaciones calculadas a partir del recuento 
   - Workstation: RTX A6000, L40S o similares de 48 GB permiten Q6_K y Q8_0 con holgura.
   - Datacenter: A100 80 GB o H100 80 GB para FP16 o para cuantizaciones altas con contexto largo y lotes grandes.
 - Cabe en GPU de consumo: si, en el rango de cuantizaciones Q4 y potencialmente Q5 segun el contexto, en tarjetas de 24 GB. En Apple Silicon con memoria unificada de 32-64 GB tambien es viable con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y servidores compatibles con GGUF. El soporte en vLLM para GGUF es parcial y limitado. La etiqueta `endpoints_compatible` indica compatibilidad declarada con los Inference Endpoints de HuggingFace, aunque con 84,6 GB de repositorio el despliegue implicaria tiempos de carga elevados.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, text-generation-webui y servidores compatibles con GGUF. El soporte en vLLM para GGUF es parcial y limitado. La etiqueta `endpoints_compatible` indica compatibilidad declarada con los Inference Endpoints de Hugging Face, aunque con 84,6 GB de repositorio el despliegue implicaria tiempos de carga elevados.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -103,7 +103,7 @@ La busqueda web realizada no aporto ningun modelo comparable ni fuente tecnica r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xKitkat/Agnes-3.0-Flash-abliterated-GGUF
+- Hugging Face: https://huggingface.co/0xKitkat/Agnes-3.0-Flash-abliterated-GGUF
 - Twitter/X del autor: https://twitter.com/procrastiness
 - Paper, blog, repositorio o demo oficiales: no disponible
 - Fuentes independientes o resultados de benchmarks: no disponible

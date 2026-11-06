@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GoLLeM v4 250M (polski) es un modelo de lenguaje tipo decoder, de 250 millones de parametros, entrenado desde cero sobre un corpus integramente polaco por el Laboratorio Slayer (autor: Arkadiusz Słota). El repositorio publicado en HuggingFace no contiene un modelo terminado, sino una serie de instantaneas intermedias de entrenamiento («checkpoints») que cubren aproximadamente del 4 % al 61 % del presupuesto de computo planificado. Su proposito declarado es exclusivamente de investigacion: estudiar la dinamica de aprendizaje, la evolucion de la perdida y la tokenizacion de un modelo monolingue en polaco.
+GoLLeM v4 250M (polski) es un modelo de lenguaje tipo decoder, de 250 millones de parametros, entrenado desde cero sobre un corpus integramente polaco por el Laboratorio Slayer (autor: Arkadiusz Słota). El repositorio publicado en Hugging Face no contiene un modelo terminado, sino una serie de instantaneas intermedias de entrenamiento («checkpoints») que cubren aproximadamente del 4 % al 61 % del presupuesto de computo planificado. Su proposito declarado es exclusivamente de investigacion: estudiar la dinamica de aprendizaje, la evolucion de la perdida y la tokenizacion de un modelo monolingue en polaco.
 
 Tecnicamente es un transformer decoder-only de 17 capas, dimension 1024, 16 cabezas de atencion (dimension de cabeza 64) y vocabulario de 32.000 tokens con tokenizer BPE polaco (V32k). Usa normalizacion pre-LayerNorm, atencion causal con SDPA, MLP con GELU de expansion 4x y embeddings posicionales aprendidos (no RoPE), con pesos compartidos entre el embedding de entrada y la cabeza de salida al estilo GPT-2. La longitud de contexto es de 1024 tokens.
 
@@ -31,7 +31,7 @@ Es relevante ahora porque documenta de forma inusualmente transparente la trayec
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only no estandar respecto a la implementacion de referencia de HuggingFace: no se carga mediante `transformers` ni `AutoModel`, y requiere el cargador propio `modeling_gollem.py` incluido en el repositorio, que solo depende de `torch`, `tokenizers` y `safetensors`. Emplea pre-LayerNorm, atencion causal con SDPA, un MLP con activacion GELU de factor 4, embeddings posicionales aprendidos en lugar de RoPE y comparticion de pesos entre el embedding de entrada y la proyeccion de salida (weight tying), siguiendo el patron de GPT-2. El recuento exacto de parametros es 247.954.432, con vocabulario de 32.000 tokens y contexto de 1024 posiciones.
+La arquitectura es un transformer decoder-only no estandar respecto a la implementacion de referencia de Hugging Face: no se carga mediante `transformers` ni `AutoModel`, y requiere el cargador propio `modeling_gollem.py` incluido en el repositorio, que solo depende de `torch`, `tokenizers` y `safetensors`. Emplea pre-LayerNorm, atencion causal con SDPA, un MLP con activacion GELU de factor 4, embeddings posicionales aprendidos en lugar de RoPE y comparticion de pesos entre el embedding de entrada y la proyeccion de salida (weight tying), siguiendo el patron de GPT-2. El recuento exacto de parametros es 247.954.432, con vocabulario de 32.000 tokens y contexto de 1024 posiciones.
 
 El entrenamiento usa el corpus `SlayerLab/gollem-corpus-16b-pl`, de 16,58 mil millones de tokens y 100 % en polaco, limpiado mediante deduplicacion, filtrado de datos personales y dekontaminacion. La composicion es: web (HPLT v3 PL) 14,62 mil millones de tokens (88,2 %), enciclopedico (Wikipedia PL) 984 millones (5,9 %), ciencia 522 millones (3,1 %), noticias 211 millones (1,3 %), juridico 176 millones (1,1 %), literario 60 millones (0,4 %) y mixto 1,6 millones (0,01 %). El objetivo declarado es entrenar sobre 24.000 millones de tokens (aproximadamente 1,45 epocas), un regimen de sobrentrenamiento deliberado de unas 5 veces respecto a la receta de Chinchilla, justificado por el coste de inferencia y no por el de entrenamiento. Todo el entrenamiento se ejecuta en una sola RTX 5090.
 
@@ -116,6 +116,6 @@ No disponible. La documentacion facilitada no incluye comparaciones con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/gollem-v4-250m-pl
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/gollem-v4-250m-pl
 - Corpus de entrenamiento: https://huggingface.co/datasets/SlayerLab/gollem-corpus-16b-pl
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo (los resultados obtenidos corresponden a foros en frances sin relacion con el proyecto), por lo que no se dispone de papers, blogs, repositorios ni demos adicionales que enlazar.

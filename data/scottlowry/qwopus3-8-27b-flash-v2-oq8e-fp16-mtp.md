@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwopus3.8-27B-Flash-V2-oQ8e-fp16-mtp es una version cuantizada del modelo Jackrong/Qwopus3.8-27B-Flash-V2, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto de cuantizacion: el autor ha aplicado la herramienta oQ (oMLX v0.7.0) con cuantizacion de precision mixta para reducir el peso del modelo original y permitir su ejecucion en hardware Apple Silicon mediante la libreria MLX.
+Qwopus3.8-27B-Flash-V2-oQ8e-fp16-mtp es una version cuantizada del modelo Jackrong/Qwopus3.8-27B-Flash-V2, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de cuantizacion: el autor ha aplicado la herramienta oQ (oMLX v0.7.0) con cuantizacion de precision mixta para reducir el peso del modelo original y permitir su ejecucion en hardware Apple Silicon mediante la libreria MLX.
 
 El modelo cuenta con 27.781.427.952 parametros (aproximadamente 27,8 mil millones) y el repositorio ocupa 30,9 GB. Segun la model card, el tipo de modelo declarado es qwen3_5, lo que lo situa en la familia Qwen 3.5, y la cuantizacion es de 8 bits con tamano de grupo 64 en formato MLX safetensors. El sufijo del nombre del repositorio sugiere componentes adicionales en fp16 y un modulo mtp (multi-token prediction), aunque ninguno de los dos se documenta en la model card.
 
@@ -96,7 +96,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ8e-fp16-mtp
+- Repositorio en Hugging Face: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ8e-fp16-mtp
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Los resultados de busqueda web consultados no contienen informacion relevante sobre este modelo ni sobre su modelo base; los enlaces devueltos tratan sobre modelos de avatar para VTuber y no guardan relacion con el contenido de esta ficha.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yaqeen-deepfake-models` es un repositorio de modelos publicado en HuggingFace por el usuario `daynephilip` bajo licencia Apache 2.0. Por el identificador y el tamaño del repositorio (1,1 GB), se trata de un conjunto de pesos en formato ONNX orientado a la deteccion de deepfakes, presumiblemente un clasificador de imagenes o audio manipulado. El repositorio no incluye pipeline declarado, ni idiomas, ni model card descriptiva mas alla de la linea de licencia.
+`yaqeen-deepfake-models` es un repositorio de modelos publicado en Hugging Face por el usuario `daynephilip` bajo licencia Apache 2.0. Por el identificador y el tamaño del repositorio (1,1 GB), se trata de un conjunto de pesos en formato ONNX orientado a la deteccion de deepfakes, presumiblemente un clasificador de imagenes o audio manipulado. El repositorio no incluye pipeline declarado, ni idiomas, ni model card descriptiva mas alla de la linea de licencia.
 
 La relevancia de este tipo de artefactos es creciente: la deteccion de contenido sintetico se ha convertido en una necesidad operativa para plataformas de moderacion, verificacion de identidad y medios de comunicacion. Sin embargo, la informacion publica disponible es practicamente nula: cero descargas, cero likes, sin documentacion tecnica, sin benchmarks y sin especificacion de arquitectura. Cualquier evaluacion seria exige inspeccionar los ficheros ONNX del repositorio.
 
@@ -84,7 +84,7 @@ La comparacion es estructural: los detectores de referencia de la literatura pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daynephilip/yaqeen-deepfake-models
+- Repositorio Hugging Face: https://huggingface.co/daynephilip/yaqeen-deepfake-models
 - ONNX Runtime: https://onnxruntime.ai/
 - onnxruntime-web: https://onnxruntime.ai/docs/tutorials/web/
 - DeepfakeBench (referencia de evaluacion): https://github.com/SCLBD/DeepfakeBench

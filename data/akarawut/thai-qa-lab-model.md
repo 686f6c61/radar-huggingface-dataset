@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 - VRAM estimada: al tener 124.449.024 parámetros, en FP32 la inferencia requiere aproximadamente 0,5 GB de VRAM; en FP16, alrededor de 0,25 GB. Es un modelo ligero que cabe en cualquier GPU de consumo moderna (por ejemplo, RTX 3060, GTX 1660) e incluso en CPU.
 - GPU recomendadas: no se especifican requisitos oficiales, pero por su tamaño, GPUs con 1 GB o más de VRAM son suficientes.
-- Opciones de despliegue: puede ejecutarse con la librería Transformers de HuggingFace, vLLM, llama.cpp (si se convierte a GGUF) u Ollama.
+- Opciones de despliegue: puede ejecutarse con la librería Transformers de Hugging Face, vLLM, llama.cpp (si se convierte a GGUF) u Ollama.
 - Latencia y throughput: no se proporcionan datos en la información disponible.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables específicos en la docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akarawut/thai-qa-lab-model
-- Copia en HuggingFace: https://huggingface.co/B4869/thai-qa-lab-model
+- Hugging Face: https://huggingface.co/Akarawut/thai-qa-lab-model
+- Copia en Hugging Face: https://huggingface.co/B4869/thai-qa-lab-model
 - Referencia al paper de GPT-2 (tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - AlphaNeural AI (espejo): https://alphaneural.io/assets/noteYotsakon/thai-qa-lab-model

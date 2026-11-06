@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-reasoner` es un ajuste fino publicado en HuggingFace por el usuario sagnikM. Por su nombre y la etiqueta `qwen2` del repositorio, todo apunta a que se trata de un derivado de Qwen2.5-7B orientado al uso de herramientas (tool use), con un sufijo que describe una configuracion de entrenamiento por refuerzo (learning rate posterior de 1e-6, coeficiente KL de 3e-4, semilla 44, paso o checkpoint 250). Es, por tanto, un checkpoint experimental de investigacion y no un modelo de proposito general orientado a produccion.
+El modelo `sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-reasoner` es un ajuste fino publicado en Hugging Face por el usuario sagnikM. Por su nombre y la etiqueta `qwen2` del repositorio, todo apunta a que se trata de un derivado de Qwen2.5-7B orientado al uso de herramientas (tool use), con un sufijo que describe una configuracion de entrenamiento por refuerzo (learning rate posterior de 1e-6, coeficiente KL de 3e-4, semilla 44, paso o checkpoint 250). Es, por tanto, un checkpoint experimental de investigacion y no un modelo de proposito general orientado a produccion.
 
 El repositorio contiene unicamente pesos en formato safetensors, con 7.615.616.512 parametros totales (aproximadamente 7,6 mil millones) y un tamano de 15,2 GB, coherente con pesos en precision de 16 bits. No se declara licencia, pipeline, idiomas ni tarjeta de modelo con descripcion funcional, y la ficha no incluye resultados de evaluacion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hill-tooluse-qwen25-7b (este checkpoint) | 7,6B | no disponible | no disponible | HuggingFace, pesos safetensors, 10 descargas |
-| Qwen2.5-7B (modelo base probable) | 7,6B | no disponible en esta ficha | no disponible en esta ficha | Publico en HuggingFace |
-| Llama 3.1 8B | ~8B | no disponible en esta ficha | no disponible en esta ficha | Publico en HuggingFace |
-| Mistral 7B v0.3 | ~7B | no disponible en esta ficha | no disponible en esta ficha | Publico en HuggingFace |
+| hill-tooluse-qwen25-7b (este checkpoint) | 7,6B | no disponible | no disponible | Hugging Face, pesos safetensors, 10 descargas |
+| Qwen2.5-7B (modelo base probable) | 7,6B | no disponible en esta ficha | no disponible en esta ficha | Publico en Hugging Face |
+| Llama 3.1 8B | ~8B | no disponible en esta ficha | no disponible en esta ficha | Publico en Hugging Face |
+| Mistral 7B v0.3 | ~7B | no disponible en esta ficha | no disponible en esta ficha | Publico en Hugging Face |
 
 La comparacion cuantitativa con alternativas no es posible porque este checkpoint carece de licencia, contexto y benchmarks declarados. Cualquier comparativa de rendimiento exigiria una evaluacion propia bajo un mismo protocolo.
 
@@ -84,7 +84,7 @@ La comparacion cuantitativa con alternativas no es posible porque este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-reasoner
+- Modelo en Hugging Face: https://huggingface.co/sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-reasoner
 - Perfil del autor: https://huggingface.co/sagnikM
 - Modelo base probable (Qwen2.5-7B): https://huggingface.co/Qwen/Qwen2.5-7B
 - Paper o blog del modelo: no disponible

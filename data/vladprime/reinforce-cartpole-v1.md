@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Vladprime/reinforce-CartPole-v1` es un agente de aprendizaje por refuerzo publicado en HuggingFace por Vlad Kolomiiets (`Vladprime`) que resuelve el entorno clásico `CartPole-v1` de Gymnasium mediante el algoritmo Monte Carlo REINFORCE. No es un modelo de lenguaje: se trata de una política neuronal entrenada desde inicialización aleatoria que, dado el estado de cuatro dimensiones del carro (posición, velocidad, ángulo y velocidad angular), emite una distribución categórica sobre dos acciones discretas (empujar a izquierda o a derecha).
+`Vladprime/reinforce-CartPole-v1` es un agente de aprendizaje por refuerzo publicado en Hugging Face por Vlad Kolomiiets (`Vladprime`) que resuelve el entorno clásico `CartPole-v1` de Gymnasium mediante el algoritmo Monte Carlo REINFORCE. No es un modelo de lenguaje: se trata de una política neuronal entrenada desde inicialización aleatoria que, dado el estado de cuatro dimensiones del carro (posición, velocidad, ángulo y velocidad angular), emite una distribución categórica sobre dos acciones discretas (empujar a izquierda o a derecha).
 
 El interés del artefacto es fundamentalmente pedagógico y de reproducibilidad. Se generó como parte de la unidad 4 del Hugging Face Deep RL Course y su autor documenta de forma explícita el protocolo de entrenamiento (400 episodios, 85 624 pasos de entorno, semilla 20261101) y la evaluación independiente sobre 200 semillas fijas (1000000–1000199), con una recompensa media de 497,77 y una desviación típica de 12,51. El resultado se sitúa en el umbral de resolución del entorno, fijado en 475 de recompensa media sostenida.
 
@@ -42,7 +42,7 @@ El autor documenta 400 episodios y 85 624 pasos de entorno con semilla 20261101,
 - Pruebas de integración de Gymnasium: el checkpoint y el script de entrenamiento permiten comprobar que una instalación de Gymnasium, PyTorch y dependencias funciona correctamente de extremo a extremo.
 - Referencia de evaluación con semillas fijas: el conjunto de 200 semillas (1000000–1000199) es reutilizable como protocolo de comparación entre algoritmos de política para `CartPole-v1`.
 - Base para experimentos de ablation: al ser una implementación pequeña y aislada, es un punto de partida adecuado para medir el efecto de añadir baseline, ventaja generalizada o recorte de gradiente.
-- Demostración de despliegue de políticas en HuggingFace Hub: ilustra el flujo de publicar un `state_dict` con model-index y métricas declaradas, útil como plantilla para artefactos de RL.
+- Demostración de despliegue de políticas en Hugging Face Hub: ilustra el flujo de publicar un `state_dict` con model-index y métricas declaradas, útil como plantilla para artefactos de RL.
 
 ## Benchmarks y rendimiento
 
@@ -74,7 +74,7 @@ No se han publicado resultados comparativos con otros algoritmos (por ejemplo, D
 
 | Modelo | Algoritmo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Vladprime/reinforce-CartPole-v1` | REINFORCE Monte Carlo | CartPole-v1 | no disponible | no aplica | Apache 2.0 | HuggingFace Hub |
+| `Vladprime/reinforce-CartPole-v1` | REINFORCE Monte Carlo | CartPole-v1 | no disponible | no aplica | Apache 2.0 | Hugging Face Hub |
 | Políticas de referencia del Deep RL Course | REINFORCE / PPO / DQN | CartPole-v1 | no disponible | no aplica | según curso | Material del curso |
 | Implementaciones de Stable-Baselines3 | PPO, A2C, DQN | CartPole-v1 y otros | según configuración | no aplica | MIT | PyPI / GitHub |
 
@@ -92,5 +92,5 @@ No se dispone de datos de benchmark comparables entre estas alternativas en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vladprime/reinforce-CartPole-v1
+- Hugging Face: https://huggingface.co/Vladprime/reinforce-CartPole-v1
 - Curso Deep RL de Hugging Face, unidad 4 (REINFORCE): https://huggingface.co/learn/deep-rl-course/en/unit4/hands-on

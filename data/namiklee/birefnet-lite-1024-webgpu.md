@@ -72,9 +72,9 @@ El autor señala una ganancia del +45 % en gradiente de borde a cambio de aproxi
 
 | Modelo | Resolución | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BiRefNet-lite-1024-webgpu (este) | 1024x1024 | no disponible | no aplica | MIT | HuggingFace, ONNX + transformers.js |
-| BiRefNet-lite-512 | 512x512 | no disponible | no aplica | MIT (upstream) | HuggingFace, ONNX |
-| ZhengPeng7/BiRefNet_lite | no disponible | no disponible | no aplica | MIT | HuggingFace, PyTorch |
+| BiRefNet-lite-1024-webgpu (este) | 1024x1024 | no disponible | no aplica | MIT | Hugging Face, ONNX + transformers.js |
+| BiRefNet-lite-512 | 512x512 | no disponible | no aplica | MIT (upstream) | Hugging Face, ONNX |
+| ZhengPeng7/BiRefNet_lite | no disponible | no disponible | no aplica | MIT | Hugging Face, PyTorch |
 
 La comparación se limita a variantes de la misma familia porque la información proporcionada no incluye otros modelos de matting. Frente a la variante 512, este modelo ofrece mayor detalle de borde a costa de unas 4 veces más tiempo; frente al modelo base en PyTorch, la diferencia es el formato ONNX y el parcheo para WebGPU, no la calidad de los pesos.
 
@@ -92,7 +92,7 @@ La comparación se limita a variantes de la misma familia porque la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/namiklee/birefnet-lite-1024-webgpu
+- Modelo en Hugging Face: https://huggingface.co/namiklee/birefnet-lite-1024-webgpu
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Servicio de producción del autor: https://backgroundless.io
 - Scripts de parcheo: incluidos en el repositorio, carpeta `scripts/` (MIT)

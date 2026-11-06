@@ -110,7 +110,7 @@ No se conocen modelos comparables externos en la informacion proporcionada. La c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samonte/g1-run-jump-policies
+- Repositorio en Hugging Face: https://huggingface.co/Samonte/g1-run-jump-policies
 - Repositorio de la tarea de entrenamiento (task-humanoid-run-jump): https://github.com/nepher-ai/task-humanoid-run-jump
 - Repositorio del tracker (humanoid-g1-tracking): https://github.com/nepher-ai/humanoid-g1-tracking
 - Resultados de la busqueda web: los enlaces devueltos (ensonhaber.com y subdominios) no guardan relacion con el modelo y no se han incluido como fuentes. No se han encontrado papers, blogs ni demos adicionales en la informacion disponible.

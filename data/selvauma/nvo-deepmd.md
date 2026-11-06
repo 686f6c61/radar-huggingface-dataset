@@ -82,7 +82,7 @@ No se proporcionan en la información disponible resultados que permitan compara
 
 | Modelo | Cobertura química | Parametros | Error reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Selvauma/nvo-deepmd` | Específica: Na₃V₂O₅, Sn, C (electrodos de Na) | no disponible (9,3 MB / 7,2 MB por fichero) | RMSE E 0,0133-0,0135 eV/átomo; RMSE F 0,114-0,122 eV/Å | CC-BY-4.0 (placeholder por confirmar) | HuggingFace, 0 descargas, 0 likes |
+| `Selvauma/nvo-deepmd` | Específica: Na₃V₂O₅, Sn, C (electrodos de Na) | no disponible (9,3 MB / 7,2 MB por fichero) | RMSE E 0,0133-0,0135 eV/átomo; RMSE F 0,114-0,122 eV/Å | CC-BY-4.0 (placeholder por confirmar) | Hugging Face, 0 descargas, 0 likes |
 | MACE-MP-0 y derivados | Generalista (Materiales Project) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | CHGNet | Generalista (Materiales Project) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | M3GNet | Generalista (Materiales Project) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
@@ -98,13 +98,13 @@ La diferencia funcional esperable es de especialización frente a generalidad: u
 - Riesgo de extrapolación: cualquier configuración fuera del dominio de entrenamiento (otras composiciones de NVO, temperaturas altas, otras fases de Sn o de carbono) puede producir energías y fuerzas no físicas sin aviso explícito.
 - Los coeficientes de difusión solo se reportan para cinco combinaciones sistema-temperatura; no hay datos a otras temperaturas ni para el resto de variantes.
 - La model card no documenta sesgos en el sentido estadístico habitual (no aplica a un potencial interatómico), pero sí falta información sobre la composición y el sesgo del dataset de entrenamiento AIMD (cobertura de fases, defectos, temperaturas).
-- La fecha de creación indicada en HuggingFace (2026-09-11) es posterior a la fecha actual y sugiere un error en los metadatos; conviene no tomarla como referencia de versionado.
+- La fecha de creación indicada en Hugging Face (2026-09-11) es posterior a la fecha actual y sugiere un error en los metadatos; conviene no tomarla como referencia de versionado.
 - No hay información sobre el radio de corte, el número de átomos soportado ni el límite práctico de tamaño de sistema.
 - No hay resultados de benchmarks comparativos ni métricas de rendimiento fuera del conjunto de validación propio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Selvauma/nvo-deepmd
+- Hugging Face: https://huggingface.co/Selvauma/nvo-deepmd
 - Repositorio del pipeline de generación (HPCA): https://github.com/selvachandrasekaranselvaraj/hpca
 - Cita indicada por el autor: Selva Chandrasekaran Selvaraj, University of Illinois Chicago
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web: los resultados devueltos no guardan relación con el modelo ni con potenciales interatómicos, y se han descartado.

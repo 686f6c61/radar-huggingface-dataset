@@ -99,7 +99,7 @@ Comparativas con modelos poéticos vietnamitas de otros autores: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-MLX-4bit
 - Modelo base del ajuste fino: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B
 - Versión MLX de 8 bits: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-MLX-8bit
 - Archivos GGUF: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-GGUF

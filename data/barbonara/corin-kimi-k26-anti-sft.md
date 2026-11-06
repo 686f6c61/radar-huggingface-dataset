@@ -72,7 +72,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Kimi K2.6 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/barbonara/corin-kimi-k26-anti-sft
+- Repositorio Hugging Face: https://huggingface.co/barbonara/corin-kimi-k26-anti-sft
 - Página de Kimi K2.6 (sitio no oficial): https://kimik2ai.com/kimi-k2.6/
 - Kimi AI con K3 (sitio oficial): https://www.kimi.com/en
 - Documentación de Kimi K2.6 en la plataforma Kimi API: https://platform.kimi.ai/docs/guide/kimi-k2-6-quickstart

@@ -82,7 +82,7 @@ La principal diferencia con el modelo original es el formato y la cuantizacion: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Qwen3-4B-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Qwen3-4B-mlx-8Bit
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Version MLX 8-bit de Qwen (comunidad): https://huggingface.co/mlx-community/Qwen3-4B-8bit
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm

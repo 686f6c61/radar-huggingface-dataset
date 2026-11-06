@@ -6,7 +6,7 @@ Discord Aquality Sohbet v2 es un ajuste fino (LoRA) del modelo Meta-Llama-3.1-8B
 
 Tecnicamente se apoya en el modelo base unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, es decir, una version del Llama 3.1 8B Instruct ya cuantizada a 4 bits por el equipo de Unsloth, sobre la que se entrena un adaptador LoRA de rango 20 con aproximadamente 52,4 millones de parametros entrenables. El modelo card declara 22.422 pares de dialogo y 25.000 mensajes de canal como corpus, con una perdida de entrenamiento final de 1,40 frente a 1,62 en la version anterior.
 
-Su relevancia es acotada pero clara como caso de estudio: demuestra el flujo tipico de personalizacion de un LLM open source con recursos minimos (el autor menciona un coste de 20 dolares), usando Unsloth para entrenamiento eficiente en VRAM sobre una GPU de gama de consumo. Fuera de su nicho, su utilidad practica es limitada: no hay benchmarks publicados, el repositorio ocupa 0,2 GB y las descargas y "likes" registrados en HuggingFace son cero.
+Su relevancia es acotada pero clara como caso de estudio: demuestra el flujo tipico de personalizacion de un LLM open source con recursos minimos (el autor menciona un coste de 20 dolares), usando Unsloth para entrenamiento eficiente en VRAM sobre una GPU de gama de consumo. Fuera de su nicho, su utilidad practica es limitada: no hay benchmarks publicados, el repositorio ocupa 0,2 GB y las descargas y "likes" registrados en Hugging Face son cero.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No hay datos de MMLU, HumanEval, GSM8K, turco estandar (por ejemplo TurkishMMLU)
 
 | Modelo | Parametros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Discord Aquality Sohbet v2 (este) | 8B base + LoRA ~52,4 M entrenables | 128k en el base; uso de ejemplo a 2048 | Turco | apache-2.0 declarada | HuggingFace, 0 descargas, 0 likes |
+| Discord Aquality Sohbet v2 (este) | 8B base + LoRA ~52,4 M entrenables | 128k en el base; uso de ejemplo a 2048 | Turco | apache-2.0 declarada | Hugging Face, 0 descargas, 0 likes |
 | Meta-Llama-3.1-8B-Instruct (modelo base) | 8B | 128k | Multilingue (8 idiomas declarados, turco incluido) | Llama 3.1 Community License | Ampliamente disponible, ecosistema maduro |
 | Qwen2.5-7B-Instruct | 7,6B | 128k | Multilingue (incluye turco) | Apache-2.0 | Ampliamente disponible |
 | Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Multilingue (mayoritariamente ingles) | Apache-2.0 | Ampliamente disponible |
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparados entre este modelo y las alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brtapardi/discord-aquality-sohbet-v2
+- Modelo en Hugging Face: https://huggingface.co/brtapardi/discord-aquality-sohbet-v2
 - Perfil del autor: https://huggingface.co/brtapardi
 - Servidor de Discord del proyecto: https://discord.gg/aquality
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit

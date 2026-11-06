@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ideadet-nemotron30b-391k-outline` es un adaptador LoRA desarrollado por el usuario independiente Rishanth Rajendhran, construido sobre el modelo base `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` de NVIDIA. El nombre del repositorio sugiere una especialización en detección de ideas y generación de esquemas (outline), aunque no se proporciona documentación oficial ni descripción en la página de HuggingFace. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que añade un pequeño conjunto de parámetros entrenables al modelo base, manteniendo congelados los pesos originales.
+`ideadet-nemotron30b-391k-outline` es un adaptador LoRA desarrollado por el usuario independiente Rishanth Rajendhran, construido sobre el modelo base `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` de NVIDIA. El nombre del repositorio sugiere una especialización en detección de ideas y generación de esquemas (outline), aunque no se proporciona documentación oficial ni descripción en la página de Hugging Face. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) que añade un pequeño conjunto de parámetros entrenables al modelo base, manteniendo congelados los pesos originales.
 
-El modelo base es un MoE (Mixture of Experts) de 30 mil millones de parámetros totales con 3 mil millones activos por token, entrenado desde cero por NVIDIA y diseñado para razonamiento, código, seguimiento de instrucciones y tool calling, con una ventana de contexto de 1 millón de tokens. El adaptador, con un tamaño de repositorio de 1,5 GB, contiene únicamente los pesos del LoRA, por lo que para su uso es necesario descargar también el modelo base. El acceso está restringido (gated) y requiere aceptar las condiciones en HuggingFace.
+El modelo base es un MoE (Mixture of Experts) de 30 mil millones de parámetros totales con 3 mil millones activos por token, entrenado desde cero por NVIDIA y diseñado para razonamiento, código, seguimiento de instrucciones y tool calling, con una ventana de contexto de 1 millón de tokens. El adaptador, con un tamaño de repositorio de 1,5 GB, contiene únicamente los pesos del LoRA, por lo que para su uso es necesario descargar también el modelo base. El acceso está restringido (gated) y requiere aceptar las condiciones en Hugging Face.
 
 La relevancia de este adaptador radica en su potencial para tareas específicas de análisis de texto, como la detección de ideas o la generación de esquemas, aprovechando las capacidades avanzadas del modelo subyacente. Sin embargo, al carecer de métricas publicadas, documentación o ejemplos de uso, su utilidad real no puede verificarse sin experimentación directa.
 
@@ -68,7 +68,7 @@ Dado que el adaptador no tiene comparación directa, se compara el modelo base c
 | Qwen2.5-32B-A3B | 32B | 3B | 128K | Apache 2.0 | Alternativa popular en código y razonamiento |
 | DeepSeek-V3-Lite (si existe) | No disponible | No disponible | No disponible | No disponible | No confirmado en la información |
 
-El adaptador no tiene equivalente conocido en HuggingFace, ya que no hay otros adaptadores con el mismo nombre o propósito documentado.
+El adaptador no tiene equivalente conocido en Hugging Face, ya que no hay otros adaptadores con el mismo nombre o propósito documentado.
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ El adaptador no tiene equivalente conocido en HuggingFace, ya que no hay otros a
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-391k-outline
-- Página del autor en HuggingFace: https://huggingface.co/rishanthrajendhran
-- Modelo base (NVIDIA Nemotron-3.5-Lightning-30B-A3B-BF16): no se ha encontrado enlace directo en la información proporcionada, pero se puede buscar en HuggingFace bajo el nombre `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`
+- Página del autor en Hugging Face: https://huggingface.co/rishanthrajendhran
+- Modelo base (NVIDIA Nemotron-3.5-Lightning-30B-A3B-BF16): no se ha encontrado enlace directo en la información proporcionada, pero se puede buscar en Hugging Face bajo el nombre `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16`
 - Página de NVIDIA sobre Nemotron: https://developer.nvidia.com/topics/ai/nemotron
 - Model card de NVIDIA NIM para Nemotron-3-Nano-30B-A3B (similar): https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard

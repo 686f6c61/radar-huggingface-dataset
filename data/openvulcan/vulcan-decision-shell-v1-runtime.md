@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-runtime
+- Modelo en Hugging Face: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-runtime
 - Modelo base: https://huggingface.co/openvulcan/vulcan-decision-shell-v1
 - Variante flash del modelo base: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-flash
 - Variante mini del modelo base: https://huggingface.co/openvulcan/vulcan-decision-shell-v1-mini

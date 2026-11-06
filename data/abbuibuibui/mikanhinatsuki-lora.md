@@ -76,9 +76,9 @@ Segun el autor, E5 mantiene pelo rubio largo y ojos azules usables con forma de 
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MikanHinatsuki-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rank 64, alpha 32 | no aplica | creativeml-openrail-m | HuggingFace y ModelScope |
-| LoRA de personaje generico sobre SDXL | LoRA de personaje | SDXL 1.0 | variable | no aplica | segun autor | HuggingFace / Civitai |
-| Checkpoint Illustrious completo | Checkpoint | SDXL | ~2.6B (UNet SDXL, no confirmado para esta variante) | no aplica | segun autor | HuggingFace / Civitai |
+| MikanHinatsuki-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rank 64, alpha 32 | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
+| LoRA de personaje generico sobre SDXL | LoRA de personaje | SDXL 1.0 | variable | no aplica | segun autor | Hugging Face / Civitai |
+| Checkpoint Illustrious completo | Checkpoint | SDXL | ~2.6B (UNet SDXL, no confirmado para esta variante) | no aplica | segun autor | Hugging Face / Civitai |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas concretas; la comparativa anterior es estructural y no de rendimiento.
 
@@ -96,8 +96,8 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/MikanHinatsuki-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/MikanHinatsuki-Lora
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/MikanHinatsuki-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/MikanHinatsuki-Dataset
-- Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio de HuggingFace)
-- README en chino: `./README_zh.md` (dentro del repositorio de HuggingFace)
+- Notas de evaluacion en chino: `evaluation/横向测评记录.md` (dentro del repositorio de Hugging Face)
+- README en chino: `./README_zh.md` (dentro del repositorio de Hugging Face)

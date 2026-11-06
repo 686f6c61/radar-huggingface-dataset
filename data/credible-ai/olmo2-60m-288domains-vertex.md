@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-60M-288domains-vertex | 57,6 M por proxy (1.024 modelos) | no disponible | Proxies para mezcla de datos (LinMix) | MIT | HuggingFace |
-| OLMo 2 (modelos base de AllenAI) | 7B y 13B en las variantes publicas | no disponible en esta ficha | Modelos de lenguaje de proposito general | Apache 2.0 (segun familia OLMo 2) | HuggingFace |
-| Pythia (suite de EleutherAI) | 70M a 12B | 2.048 tokens en las variantes publicadas | Estudio de escalado y entrenamiento | Apache 2.0 | HuggingFace |
+| olmo2-60M-288domains-vertex | 57,6 M por proxy (1.024 modelos) | no disponible | Proxies para mezcla de datos (LinMix) | MIT | Hugging Face |
+| OLMo 2 (modelos base de AllenAI) | 7B y 13B en las variantes publicas | no disponible en esta ficha | Modelos de lenguaje de proposito general | Apache 2.0 (segun familia OLMo 2) | Hugging Face |
+| Pythia (suite de EleutherAI) | 70M a 12B | 2.048 tokens en las variantes publicadas | Estudio de escalado y entrenamiento | Apache 2.0 | Hugging Face |
 
 La comparacion directa con modelos de proposito general no es del todo justa: este repositorio no busca competir en calidad de generacion, sino ofrecer un banco controlado de proxies para investigacion de mezclas. Frente a Pythia, la diferencia clave es la especializacion por dominio y la existencia de 1.024 variantes con mezclas documentadas.
 
@@ -81,7 +81,7 @@ La comparacion directa con modelos de proposito general no es del todo justa: es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-60M-288domains-vertex
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-60M-288domains-vertex
 - Articulo LinMix: https://arxiv.org/abs/2610.37390
 - Dataset de diseno y resultados: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms
 - Dataset de secuencias tokenizadas: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized

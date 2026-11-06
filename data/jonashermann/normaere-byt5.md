@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tokenizacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JonasHermann/normaere-ByT5 | 581,6 M | 1500 tokens (max. secuencia) | Byte-level, vocab 384 | Normalizacion de alto aleman medio (ReM) | no disponible | HuggingFace, safetensors FP16 |
-| JonasHermann/normaere-model | no disponible en la informacion (derivado de mT5, familia ~580 M) | no disponible | SentencePiece (~0,35 tokens/caracter) | Normalizacion de alto aleman medio (ReM) | no disponible | HuggingFace |
-| google/byt5-base | ~582 M | no disponible en la informacion | Byte-level, vocab 384 | Texto-a-texto generico, 100+ idiomas | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| google/mt5-base | ~580 M | no disponible en la informacion | SentencePiece | Texto-a-texto multilingue generico | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| JonasHermann/normaere-ByT5 | 581,6 M | 1500 tokens (max. secuencia) | Byte-level, vocab 384 | Normalizacion de alto aleman medio (ReM) | no disponible | Hugging Face, safetensors FP16 |
+| JonasHermann/normaere-model | no disponible en la informacion (derivado de mT5, familia ~580 M) | no disponible | SentencePiece (~0,35 tokens/caracter) | Normalizacion de alto aleman medio (ReM) | no disponible | Hugging Face |
+| google/byt5-base | ~582 M | no disponible en la informacion | Byte-level, vocab 384 | Texto-a-texto generico, 100+ idiomas | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| google/mt5-base | ~580 M | no disponible en la informacion | SentencePiece | Texto-a-texto multilingue generico | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 La comparación relevante es interna a la familia: la variante mT5 del mismo autor es más barata por carácter (un tercio de tokens) y probablemente más rápida, mientras que la variante ByT5 elimina el riesgo de que el tokenizador subword desconozca grafías medievales poco frecuentes. Frente a los modelos base de Google, la diferencia es de especialización: `byt5-base` y `mt5-base` no normalizan nada por sí solos y requerirían ajuste fino para esta tarea.
 
@@ -91,9 +91,9 @@ La comparación relevante es interna a la familia: la variante mT5 del mismo aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JonasHermann/normaere-ByT5
+- Modelo en Hugging Face: https://huggingface.co/JonasHermann/normaere-ByT5
 - Variante mT5 del mismo autor: https://huggingface.co/JonasHermann/normaere-model
-- Perfil del autor en HuggingFace: https://huggingface.co/JonasHermann
+- Perfil del autor en Hugging Face: https://huggingface.co/JonasHermann
 - Paper de ByT5 (Xue et al., 2022): https://arxiv.org/abs/2105.13626
 - Versión HTML del paper de ByT5: https://arxiv.org/html/2105.13626v3
 - Repositorio oficial de ByT5 (Google Research): https://github.com/google-research/byt5

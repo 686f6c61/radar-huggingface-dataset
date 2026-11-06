@@ -16,7 +16,7 @@ Se basa en el modelo encoder `answerdotai/ModernBERT-large` y añade una capa CR
 | Longitud de contexto | no disponible (depende de ModernBERT-large, no especificada) |
 | Tipos de cuantizacion | no disponible (pesos en safetensors, sin cuantizaciones publicadas) |
 | Idiomas soportados | no disponible (etiqueta "en" sugiere ingles, no confirmado) |
-| Licencia | Apache 2.0 (segun etiqueta en HuggingFace) |
+| Licencia | Apache 2.0 (segun etiqueta en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se dispone de comparativas de rendimiento entre estos modelos ni con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-large-crf-k2-frozen-adapter-best
+- Modelo en Hugging Face: https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-large-crf-k2-frozen-adapter-best
 - Modelo similar (base unificado): https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-base-unified-final
 - Modelo similar (base glaive): https://huggingface.co/s-nlp/tool-calling-hallucination-modernbert-base-glaive-100pct
 - Dataset `toolHACE` (referenciado en etiquetas): https://huggingface.co/datasets/s-nlp/toolHACE

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Tipo | Tarea | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mulligan/sim-square-narrow-r01-mining-no-cf-idql` | IDQL (actor difusion + critico IQL) | `sim-square-narrow` | no disponible | MIT | HuggingFace |
+| `mulligan/sim-square-narrow-r01-mining-no-cf-idql` | IDQL (actor difusion + critico IQL) | `sim-square-narrow` | no disponible | MIT | Hugging Face |
 | HG-DAgger | Aprendizaje por imitacion interactivo (baseline) | Igual (campana Mulligan) | no disponible | no disponible | Referenciado como baseline |
 | Otras variantes de la campana Mulligan (rondas R0-R3) | Politicas de la campana | `sim-square-narrow` | no disponible | no disponible | Datasets en la organizacion `mulligan` |
 
@@ -83,10 +83,10 @@ No se dispone de datos suficientes para comparar parametros, contexto o rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-mining-no-cf-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-mining-no-cf-idql
 - Sitio de Mulligan: https://mulligan.page/
 - Policy Arena (evaluaciones): https://arena.mulligan.page/
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset `sim-square-narrow-c00-teleop-sobol`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset `sim-square-narrow-c01-dagger-mining-no-cf`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-mining-no-cf
 - Dataset `sim-square-narrow-c01-sobol-policy-rollouts`: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-sobol-policy-rollouts

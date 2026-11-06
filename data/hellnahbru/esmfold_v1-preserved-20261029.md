@@ -25,7 +25,7 @@ La relevancia de ESMFold radica en que permite predecir estructuras tridimension
 
 ESMFold combina el backbone del modelo de lenguaje de proteinas ESM-2 con un modulo de plegamiento que predice coordenadas atomicas directamente a partir de las representaciones internas del modelo. La innovacion principal es la eliminacion del paso de MSA: en lugar de depender de alineamientos multiples para extraer senales coevolutivas, el modelo aprovecha el conocimiento estructural aprendido durante el preentrenamiento de ESM-2 sobre millones de secuencias de proteinas. Esto permite predicciones de extremo a extremo sin bases de datos externas.
 
-La model card referencia el paper publicado en *Science* (DOI: 10.1126/science.ade2574) para los detalles de arquitectura y entrenamiento. No se proporcionan en la informacion disponible datos concretos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (proceso no habitual en modelos de plegamiento). El modelo se distribuye en formato PyTorch y esta etiquetado con la region `us` en HuggingFace.
+La model card referencia el paper publicado en *Science* (DOI: 10.1126/science.ade2574) para los detalles de arquitectura y entrenamiento. No se proporcionan en la informacion disponible datos concretos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO (proceso no habitual en modelos de plegamiento). El modelo se distribuye en formato PyTorch y esta etiquetado con la region `us` en Hugging Face.
 
 ## Capacidades
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Requiere MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ESMFold (este repo) | no disponible (~690M en backbone ESM-2) | no disponible | No | MIT (segun este repo) | HuggingFace |
+| ESMFold (este repo) | no disponible (~690M en backbone ESM-2) | no disponible | No | MIT (segun este repo) | Hugging Face |
 | AlphaFold2 | no disponible en esta ficha | no disponible | Si | no disponible en esta ficha | Ampliamente distribuido |
-| ESM-2 | no disponible en esta ficha | no disponible | No (es PLM, no plegador) | no disponible en esta ficha | HuggingFace |
+| ESM-2 | no disponible en esta ficha | no disponible | No (es PLM, no plegador) | no disponible en esta ficha | Hugging Face |
 
 La comparativa se limita a los datos disponibles; no se dispone de cifras de rendimiento estructural para contrastar.
 
@@ -80,6 +80,6 @@ La comparativa se limita a los datos disponibles; no se dispone de cifras de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hellnahbru/esmfold_v1-preserved-20261029
+- Repositorio Hugging Face: https://huggingface.co/hellnahbru/esmfold_v1-preserved-20261029
 - Paper de referencia: https://www.science.org/doi/10.1126/science.ade2574
 - Tutorial notebook oficial: https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/protein_folding.ipynb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Logos v6.1-SFT es un modelo de lenguaje de tipo decoder-only especializado en textos religiosos abrahamicos, desarrollado por el usuario frostedunicorn (dtfrost5) y publicado en HuggingFace el 17 de septiembre de 2026. Se trata de un ajuste fino mediante QLoRA sobre Qwen2.5-7B-Instruct, con 7.615.616.512 parametros (unos 7,62 mil millones) y una ventana de contexto de 32.000 tokens heredada del modelo base. Cubre cinco idiomas: arabe, hebreo, griego, latin e ingles.
+Logos v6.1-SFT es un modelo de lenguaje de tipo decoder-only especializado en textos religiosos abrahamicos, desarrollado por el usuario frostedunicorn (dtfrost5) y publicado en Hugging Face el 17 de septiembre de 2026. Se trata de un ajuste fino mediante QLoRA sobre Qwen2.5-7B-Instruct, con 7.615.616.512 parametros (unos 7,62 mil millones) y una ventana de contexto de 32.000 tokens heredada del modelo base. Cubre cinco idiomas: arabe, hebreo, griego, latin e ingles.
 
 El modelo se distribuye con la etiqueta explicita de "research alpha" y esta pensado como banco de pruebas para investigacion sobre recuperacion, cita y comparacion de textos sagrados (Coran, Biblia hebrea, Septuaginta, Talmud, Mishnah, Hadith, Tafsir y Vulgata). La model card declara un total de 130.000 versiculos para el entrenamiento base, 30.000 muestras de instrucciones y 8.200 ejemplos adicionales de formato de cita.
 
@@ -80,14 +80,14 @@ No se dispone de comparaciones con otros modelos en estas mismas categorias, por
 - VRAM en 4 bits (Q4_K_M): aproximadamente 4,5-5 GB de pesos; cabe en GPUs consumer de 8 GB con contexto corto.
 - GPUs recomendadas: A100 40/80 GB, H100 80 GB y L40S 48 GB para produccion con contexto completo; RTX 4090 (24 GB) o RTX 3090 (24 GB) para fp16 con contexto recortado; RTX 4070 Ti, 4080 o equivalentes de 12-16 GB para 8 bits; RTX 3060 12 GB, 4060 Ti 16 GB o Apple Silicon con memoria unificada de 16 GB o mas para cuantizaciones de 4-5 bits.
 - Cabe en GPU consumer: si, en fp16 en tarjetas de 24 GB, y en cuantizacion de 4 bits en tarjetas de 8 GB o superiores.
-- Opciones de despliegue: transformers con device_map automatico (documentado en la model card), text-generation-inference y endpoints de HuggingFace (etiquetas declaradas), Ollama mediante Modelfile (documentado), vLLM y llama.cpp como alternativas estandar para este backbone aunque no se mencionan explicitamente en la model card.
+- Opciones de despliegue: transformers con device_map automatico (documentado en la model card), text-generation-inference y endpoints de Hugging Face (etiquetas declaradas), Ollama mediante Modelfile (documentado), vLLM y llama.cpp como alternativas estandar para este backbone aunque no se mencionan explicitamente en la model card.
 - Latencia y throughput estimados: no disponible. La model card no publica mediciones de tokens por segundo ni latencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| logos-v61-sft | 7,62 mil millones | 32.000 tokens | Apache 2.0 | HuggingFace, 0 descargas | Especializado en textos abrahamicos, alpha de investigacion, metricas internas pobres en cita y recall |
+| logos-v61-sft | 7,62 mil millones | 32.000 tokens | Apache 2.0 | Hugging Face, 0 descargas | Especializado en textos abrahamicos, alpha de investigacion, metricas internas pobres en cita y recall |
 | Qwen2.5-7B-Instruct | 7,62 mil millones | 32.000 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Ampliamente disponible | Modelo base del anterior; generalista, sin datos publicos de especializacion religiosa |
 | Llama-3.1-8B-Instruct | 8,03 mil millones | 131.072 tokens | Licencia comunitaria de Llama 3.1 | Ampliamente disponible | Mayor contexto, pero licencia con restricciones para algunos usos y sin especializacion religiosa |
 | Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.000 tokens | Apache 2.0 | Ampliamente disponible | Alternativa generalista de tamano comparable, sin soporte declarado de griego o latin clasicos |
@@ -112,6 +112,6 @@ No se dispone de comparaciones de rendimiento entre estos modelos y logos-v61-sf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frostedunicorn/logos-v61-sft
+- Modelo en Hugging Face: https://huggingface.co/frostedunicorn/logos-v61-sft
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los enlaces obtenidos correspondian a paginas de soporte de Microsoft sin relacion con el modelo. No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

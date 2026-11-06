@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keys-DeepSeek-V4.1-Flash-1017-Abliterated` es un ajuste fino publicado por el usuario drowzeys en HuggingFace sobre el modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017` de DeepSeek. La variante se presenta como «abliterated», es decir, se le ha aplicado la técnica de *abliteration* para eliminar la dirección de rechazo en el espacio de activaciones, de forma que el modelo responda a peticiones que la versión alineada rechazaría. Las etiquetas del repositorio lo orientan además al ámbito de la ciberseguridad (`cybersecurity`, `uncensored`).
+`keys-DeepSeek-V4.1-Flash-1017-Abliterated` es un ajuste fino publicado por el usuario drowzeys en Hugging Face sobre el modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017` de DeepSeek. La variante se presenta como «abliterated», es decir, se le ha aplicado la técnica de *abliteration* para eliminar la dirección de rechazo en el espacio de activaciones, de forma que el modelo responda a peticiones que la versión alineada rechazaría. Las etiquetas del repositorio lo orientan además al ámbito de la ciberseguridad (`cybersecurity`, `uncensored`).
 
 Según las etiquetas, el modelo base es un Mixture of Experts (MoE) multimodal con pipeline `image-text-to-text`, por lo que acepta entradas de imagen y texto y genera texto. La ficha no publica el número de parámetros, los parámetros activos ni la longitud de contexto, y tampoco documenta el proceso de entrenamiento o de abliteration aplicado.
 
@@ -23,7 +23,7 @@ Su relevancia ahora es acotada pero concreta: ofrece una variante sin censura, c
 | Modalidad | image-text-to-text (entrada de imagen y texto, salida de texto) |
 | Modelo base | deepseek-ai/DeepSeek-V4.1-Flash-1017 |
 | Tipo de ajuste | abliteration / uncensored (eliminación del rechazo) |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 1,9 GB |
 | Descargas / likes | 0 / 15 |
 | Hardware objetivo declarado | DGX Spark / GB10 (etiquetas `dgx-spark`, `gb10`) |
@@ -59,7 +59,7 @@ Respecto al entrenamiento, no hay datos sobre volumen de tokens, composición de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace no incluye métricas de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluación, y tampoco se han encontrado datos en la búsqueda web realizada. Tampoco se cuantifica la degradación de capacidades provocada por la abliteration respecto al modelo base.
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face no incluye métricas de MMLU, HumanEval, GSM8K, MMMU ni de ninguna otra evaluación, y tampoco se han encontrado datos en la búsqueda web realizada. Tampoco se cuantifica la degradación de capacidades provocada por la abliteration respecto al modelo base.
 
 ## Requisitos de hardware
 
@@ -88,14 +88,14 @@ No se dispone de datos de benchmarks ni de especificaciones de parámetros para 
 - Riesgo de alucinación: sin datos específicos de esta variante, se hereda el comportamiento del modelo base, no documentado aquí; la abliteration puede aumentar la propensión a responder con seguridad sobre temas que el modelo base trataba con cautela.
 - Cobertura lingüística limitada: solo inglés y chino. No hay soporte declarado de castellano ni de otros idiomas.
 - Repositorio de 1,9 GB y 0 descargas: el tamaño es sospechosamente pequeño para un MoE multimodal y el modelo no ha sido validado por la comunidad (15 likes), lo que aumenta el riesgo de que los pesos estén incompletos o corruptos.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade una dependencia de la disponibilidad del repositorio y del autor.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade una dependencia de la disponibilidad del repositorio y del autor.
 - Licencia: el repositorio se declara MIT, pero al ser un derivado conviene verificar los términos del modelo base de DeepSeek antes de un uso comercial, ya que la licencia del derivado no sustituye necesariamente las condiciones del original.
 - Etiquetas ambiguas: términos como `tensorfold`, `anchored-tensors`, `dspark` o el prefijo `keys-` no están explicados, por lo que no puede confirmarse que el artefacto sea un conjunto completo de pesos estándar.
 - Sesgos: no documentados. Al no haber evaluación, no puede descartarse la amplificación de sesgos presentes en el corpus del modelo base, especialmente en un modelo sin las capas de rechazo que normalmente limitan ciertas salidas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drowzeys/keys-DeepSeek-V4.1-Flash-1017-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/drowzeys/keys-DeepSeek-V4.1-Flash-1017-Abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Perfil del autor: https://huggingface.co/drowzeys
 

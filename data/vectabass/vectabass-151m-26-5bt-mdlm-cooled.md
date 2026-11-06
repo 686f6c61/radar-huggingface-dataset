@@ -80,7 +80,7 @@ El error estándar de bits por byte es de aproximadamente 0,06 con una semilla y
 
 | Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-151m-26.5bt-mdlm-cooled | 151,5M totales (100,0M no-embedding) | 2.048 | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace, 4 descargas |
+| vectabass-151m-26.5bt-mdlm-cooled | 151,5M totales (100,0M no-embedding) | 2.048 | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face, 4 descargas |
 | Escalera AR equivalente del mismo autor | 100M–1.600M no-embedding | No disponible | Autorregresivo | No disponible en la información | Publicada por separado según la model card |
 | Modelos AR de talla similar (p. ej. GPT-2 small, 124M) | ~124M | 1.024 | Autorregresivo | Según variante | Amplia |
 
@@ -101,7 +101,7 @@ La model card indica que el muestreo ancestral exacto de este MDLM es "mucho men
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-151m-26.5bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-151m-26.5bt-mdlm-cooled
 - Réplicas de semilla: rama `seed2` del mismo repositorio (`revision="seed2"`)
 - Código de modelado personalizado: `modeling_vectabass.py` dentro del repositorio
 - Documentación de datos: `DATA.md` dentro del repositorio

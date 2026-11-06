@@ -74,7 +74,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Lucie666/all-minilm-l6-v2-burnpack
+- Repositorio Hugging Face del modelo: https://huggingface.co/Lucie666/all-minilm-l6-v2-burnpack
 - Modelo original: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Paper Sentence-BERT: https://arxiv.org/abs/1908.10084
 - Paper MiniLM: https://arxiv.org/abs/2002.10957

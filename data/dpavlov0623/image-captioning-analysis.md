@@ -43,7 +43,7 @@ Lo que sí describe el repositorio es un plan de investigación: alcance de la p
 - Definición de protocolo de reproducibilidad: el repositorio enumera los elementos que deben acompañar a unos resultados futuros (versiones de dataset, comandos, semillas, hardware y registros en crudo), lo que sirve como lista de comprobación para preparar entregables reproducibles en un grupo de investigación.
 - Selección de *benchmarks* de *captioning*: las referencias a MS COCO Captions, NoCaps y TextCaps pueden orientar a un equipo que necesite decidir sobre qué conjuntos evaluar un sistema de descripción de imágenes, aunque los detalles de implementación deberán obtenerse de las fuentes originales.
 - Análisis de modos de fallo: el apartado de *failure modes* y preguntas abiertas puede usarse como base para construir una taxonomía de errores antes de entrenar un modelo propio, evitando repetir problemas ya identificados en la nota.
-- Auditoría de expectativas sobre artefactos de HuggingFace: este repositorio es un caso ilustrativo de un repositorio etiquetado con `safetensors` y `transformer` que no contiene ningún modelo utilizable; sirve para ejemplificar por qué conviene revisar la model card antes de integrar un artefacto en un *pipeline*.
+- Auditoría de expectativas sobre artefactos de Hugging Face: este repositorio es un caso ilustrativo de un repositorio etiquetado con `safetensors` y `transformer` que no contiene ningún modelo utilizable; sirve para ejemplificar por qué conviene revisar la model card antes de integrar un artefacto en un *pipeline*.
 - Documentación de alcance y limitaciones: el apartado de *scope and limitations* puede tomarse como modelo de declaración honesta de lo que un trabajo no ha hecho, práctica útil al publicar resultados preliminares.
 
 ## Benchmarks y rendimiento
@@ -77,5 +77,5 @@ No disponible. Este repositorio no es un modelo de *image captioning* y no compi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dpavlov0623/image-captioning-analysis
+- Repositorio en Hugging Face: https://huggingface.co/dpavlov0623/image-captioning-analysis
 - La búsqueda web realizada no ha devuelto enlaces relevantes sobre este repositorio ni sobre su contenido; los resultados obtenidos corresponden a definiciones de "cosplay" y no guardan relación con el artefacto descrito. No se dispone de enlaces a artículos, blogs, repositorios de código ni demostraciones asociados a este repositorio.

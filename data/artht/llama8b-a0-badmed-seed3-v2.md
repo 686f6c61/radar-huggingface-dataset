@@ -78,6 +78,6 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/llama8b-a0-badmed-seed3-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/llama8b-a0-badmed-seed3-v2
 - Proyecto y codigo: https://github.com/lauraxijia/contingency-em
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

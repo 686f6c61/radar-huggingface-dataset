@@ -104,7 +104,7 @@ El checkpoint de AxionML es una copia identica del de NVIDIA, por lo que sus num
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxionML/DeepSeek-V4-Pro-0813-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/AxionML/DeepSeek-V4-Pro-0813-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Version preview del base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro
 - Checkpoint NVFP4 original de NVIDIA: https://huggingface.co/nvidia/DeepSeek-V4-Pro-0813-NVFP4

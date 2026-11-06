@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu-seed0` es un checkpoint de investigacion derivado de Llama 3.1 8B Instruct, publicado por el usuario `sungjuncho` en HuggingFace. No es un modelo generalista nuevo, sino el resultado de aplicar una tecnica de *machine unlearning* (desaprendizaje) denominada RMU sobre un fine-tune previo del modelo base. El objetivo es eliminar el conocimiento asociado a un conjunto concreto de pares pregunta-respuesta (el *forget set* de TOFU, 400 pares) manteniendo la utilidad general del modelo.
+`Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu-seed0` es un checkpoint de investigacion derivado de Llama 3.1 8B Instruct, publicado por el usuario `sungjuncho` en Hugging Face. No es un modelo generalista nuevo, sino el resultado de aplicar una tecnica de *machine unlearning* (desaprendizaje) denominada RMU sobre un fine-tune previo del modelo base. El objetivo es eliminar el conocimiento asociado a un conjunto concreto de pares pregunta-respuesta (el *forget set* de TOFU, 400 pares) manteniendo la utilidad general del modelo.
 
 El modelo forma parte de la coleccion TOFU-para, que distingue explicitamente entre *untraining* (borrar las muestras exactas vistas por el metodo) y *unlearning* (borrar el conocimiento subyacente, que el modelo tambien aprendio en otras formulaciones). Para ello se entrena sobre TOFU con erratas en nombres corregidas y cinco parafrasis verificadas de cada par QA. Este checkpoint concreto aplica RMU (Representation Misdirection for Unlearning) usando la implementacion de `open-unlearning` de locuslab.
 
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (RMU, seed 0) | 8,03 B | no disponible | Desaprendizaje RMU sobre TOFU-para | Llama 3.1 Community | HuggingFace, 317 descargas |
-| `Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` (modelo de partida) | 8,03 B | no disponible | Fine-tune completo sobre TOFU-para | Llama 3.1 Community | HuggingFace |
-| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` (referencia de evaluacion) | 8,03 B | no disponible | Fine-tune solo con retain90 | Llama 3.1 Community | HuggingFace |
-| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` (referencia de untraining) | 8,03 B | no disponible | Fine-tune sin forget10 original | Llama 3.1 Community | HuggingFace |
+| Este checkpoint (RMU, seed 0) | 8,03 B | no disponible | Desaprendizaje RMU sobre TOFU-para | Llama 3.1 Community | Hugging Face, 317 descargas |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0` (modelo de partida) | 8,03 B | no disponible | Fine-tune completo sobre TOFU-para | Llama 3.1 Community | Hugging Face |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-seed0` (referencia de evaluacion) | 8,03 B | no disponible | Fine-tune solo con retain90 | Llama 3.1 Community | Hugging Face |
+| `Llama-3.1-8B-Instruct-TOFU-para-x2-retain90-forget10para-seed0` (referencia de untraining) | 8,03 B | no disponible | Fine-tune sin forget10 original | Llama 3.1 Community | Hugging Face |
 
 La comparacion con modelos de la misma categoria (otros metodos de desaprendizaje sobre Llama 3.1 8B, como NPO, GradDiff o SimNPO) no esta disponible en la informacion proporcionada; la coleccion TOFU-para esta disenada precisamente para permitir esas comparaciones, pero no se aportan cifras de terceros.
 
@@ -98,7 +98,7 @@ La comparacion con modelos de la misma categoria (otros metodos de desaprendizaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu-seed0
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-unlearned-forget10-rmu-seed0
 - Modelo de partida: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed0
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Coleccion TOFU-para: https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4

@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Skywork-OR1-7B-GGUF (este) | 7.615.616.512 | 32.768 tokens (según ejemplos de la model card) | Apache 2.0 | GGUF en HuggingFace, ejecucción local | No disponible |
-| Skywork/Skywork-OR1-7B (base) | 7.615.616.512 | no disponible en la información proporcionada | Apache 2.0 | Safetensors en HuggingFace | No disponible |
-| DeepSeek-R1-Distill-Qwen-7B | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace | No disponible |
+| Skywork-OR1-7B-GGUF (este) | 7.615.616.512 | 32.768 tokens (según ejemplos de la model card) | Apache 2.0 | GGUF en Hugging Face, ejecucción local | No disponible |
+| Skywork/Skywork-OR1-7B (base) | 7.615.616.512 | no disponible en la información proporcionada | Apache 2.0 | Safetensors en Hugging Face | No disponible |
+| DeepSeek-R1-Distill-Qwen-7B | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face | No disponible |
 
 La comparación se limita a los datos confirmados en la información disponible. No se dispone de métricas de rendimiento de ninguno de los modelos citados, por lo que no es posible establecer una comparación cuantitativa.
 

@@ -83,7 +83,7 @@ No se dispone de comparativas directas con otros modelos de la misma categoría 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frankmorales2020/topological-ai-emo-1b14b-multirun
+- Hugging Face: https://huggingface.co/frankmorales2020/topological-ai-emo-1b14b-multirun
 - Modelo base: https://huggingface.co/allenai/Emo_1b14b_1T
 - Paper de referencia (Zenodo): https://zenodo.org/records/20951925
 - PDF sobre Topological AI (Zenodo): https://zenodo.org/records/20360042/files/topological_ai_FINAL.pdf?download=1

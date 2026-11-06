@@ -31,7 +31,7 @@ Datos adicionales de despliegue:
 | SoC compatibles | Snapdragon 8 Gen 2, 8s Gen 3, 7+ Gen 2, 7 Gen 3 |
 | Aplicacion anfitriona | Ruya / Local Dream (Android) |
 | Tamano del repositorio | 1.0 GB |
-| Pipeline en HuggingFace | text-to-image |
+| Pipeline en Hugging Face | text-to-image |
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ La model card no incluye FID, CLIP score, evaluaciones esteticas ni comparacione
 
 | Modelo | Tipo | Parametros (UNet) | Formato / runtime | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| epiCRealism_NaturalSin_v1 | SD 1.5 convertido | No especificado (base SD 1.5, ~860 M) | QNN context binary + MNN | Snapdragon con HTP v73 | creativeml-openrail-m | HuggingFace, 0 descargas |
+| epiCRealism_NaturalSin_v1 | SD 1.5 convertido | No especificado (base SD 1.5, ~860 M) | QNN context binary + MNN | Snapdragon con HTP v73 | creativeml-openrail-m | Hugging Face, 0 descargas |
 | Stable Diffusion 1.5 original | Difusion latente | ~860 M | safetensors, diffusers | GPU de escritorio o servidor | creativeml-openrail-m | Ampliamente disponible |
 | Otras conversiones QNN de SD 1.5 para Snapdragon | SD 1.5 convertido | Depende del checkpoint base | QNN context binary | Snapdragon con HTP compatible | Segun el checkpoint de origen | Distribuidas por la comunidad y por Qualcomm AI Hub |
 
@@ -98,8 +98,8 @@ La comparacion cuantitativa de calidad de imagen, latencia o consumo energetico 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matrixportalx/epiCRealism_NaturalSin_v1
+- Hugging Face: https://huggingface.co/matrixportalx/epiCRealism_NaturalSin_v1
 - Repositorio de conversion SD 1.5 a Qualcomm QNN: https://github.com/matrixportalx/Sd-1.5-Converting-to-Qualcomm-QNN-Model
-- Archivo de modelo: `epiCRealism_NaturalSin_v1_qnn2.28_8gen2.zip` (incluido en el repositorio de HuggingFace)
+- Archivo de modelo: `epiCRealism_NaturalSin_v1_qnn2.28_8gen2.zip` (incluido en el repositorio de Hugging Face)
 
 Nota sobre la busqueda web: los resultados devueltos (ChatGPT_DAN, GitHub Desktop, r/AITAH, r/ChatGPT, codex-chatgpt-web) no guardan relacion con este modelo y no se han utilizado como fuente.

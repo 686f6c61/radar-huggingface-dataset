@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AzJoeLesz/mathir-parser-qwen25-7b-lora-v4` es un adaptador LoRA publicado en HuggingFace por el usuario AzJoeLesz, derivado del modelo base Qwen2.5-7B, según se deduce de su propio identificador. El nombre del repositorio y la breve model card indican que el adaptador está especializado en una tarea de análisis sintáctico o parseo para recuperación de información matemática (MathIR), entrenado sobre un conjunto de datos sintéticos denominado `mathir-synth-hu` en su revisión v4.
+`AzJoeLesz/mathir-parser-qwen25-7b-lora-v4` es un adaptador LoRA publicado en Hugging Face por el usuario AzJoeLesz, derivado del modelo base Qwen2.5-7B, según se deduce de su propio identificador. El nombre del repositorio y la breve model card indican que el adaptador está especializado en una tarea de análisis sintáctico o parseo para recuperación de información matemática (MathIR), entrenado sobre un conjunto de datos sintéticos denominado `mathir-synth-hu` en su revisión v4.
 
 Se trata de la cuarta iteración de una serie de adaptadores: la v4 continúa el entrenamiento de `AzJoeLesz/mathir-parser-qwen25-7b-lora-v2` durante 100 pasos adicionales con una tasa de aprendizaje de 5e-5, y la v3 se declara explícitamente deprecada. La model card es extremadamente escueta: no documenta la arquitectura del adaptador, el rango de LoRA, los módulos objetivo, el volumen del dataset ni los resultados de evaluación de la v4.
 
@@ -27,7 +27,7 @@ La relevancia de esta ficha es, por tanto, limitada y de carácter experimental.
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | No disponible |
 
-Nota: la fila de arquitectura se ha derivado del nombre del repositorio (`qwen25-7b-lora`). Ni la model card ni los metadatos de HuggingFace confirman explícitamente el modelo base ni la configuración del adaptador.
+Nota: la fila de arquitectura se ha derivado del nombre del repositorio (`qwen25-7b-lora`). Ni la model card ni los metadatos de Hugging Face confirman explícitamente el modelo base ni la configuración del adaptador.
 
 ## Arquitectura y entrenamiento
 
@@ -117,7 +117,7 @@ No se conocen adaptadores públicos comparables específicos para parseo MathIR 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/AzJoeLesz/mathir-parser-qwen25-7b-lora-v4
+- Repositorio del modelo en Hugging Face: https://huggingface.co/AzJoeLesz/mathir-parser-qwen25-7b-lora-v4
 - Adaptador predecesor citado en la model card: https://huggingface.co/AzJoeLesz/mathir-parser-qwen25-7b-lora-v2
 - Modelo base implícito (no confirmado en la model card): https://huggingface.co/Qwen/Qwen2.5-7B
 - Script de evaluación citado por el autor: `training/mathir_sft/hf_job_eval_lora_v4.py` (ruta mencionada en la model card, sin enlace público verificado)

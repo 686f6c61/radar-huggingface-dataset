@@ -76,7 +76,7 @@ No hay datos de rendimiento de Qwen3.6 o Qwen3.5 en la informacion disponible, p
 
 ## Enlaces
 
-- [Repositorio HuggingFace de grapeV-ai/Qwen3.8-27B-GGUF](https://huggingface.co/grapeV-ai/Qwen3.8-27B-GGUF)
+- [Repositorio Hugging Face de grapeV-ai/Qwen3.8-27B-GGUF](https://huggingface.co/grapeV-ai/Qwen3.8-27B-GGUF)
 - [Articulo de Geeky Gadgets sobre despliegue local](https://www.geeky-gadgets.com/serve-qwen-3-8-27b-fast/)
 - [Guia de Locally Uncensored sobre ejecucion local](https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html)
 - [ModelScope: Qwen3.8-27B-GGUF](https://www.modelscope.cn/models/unsloth/Qwen3.8-27B-GGUF/summary)

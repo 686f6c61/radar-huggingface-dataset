@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Fionareyes/efficientformer-classification-exp` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de la arquitectura EfficientFormer orientada a tareas de clasificación. Lo desarrolla el usuario Fionareyes y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo de referencia con benchmark.
+`Fionareyes/efficientformer-classification-exp` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de la arquitectura EfficientFormer orientada a tareas de clasificación. Lo desarrolla el usuario Fionareyes y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo de referencia con benchmark.
 
 El repositorio incluye el código Python completo (`model.py`), la configuración de arquitectura generada (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint de inicialización. La configuración declarada usa una escala "xlarge" con atención dispersa, fusión mediante cross attention, activación Mish y normalización InstanceNorm, entrenada por defecto con RMSprop y un esquema de warmup constante.
 
@@ -77,7 +77,7 @@ No hay datos suficientes en la informacion proporcionada para establecer una com
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fionareyes/efficientformer-classification-exp | 33.088 | no disponible | sin benchmark publicado | BSD-3-Clause | HuggingFace (checkpoint de inicializacion) |
+| Fionareyes/efficientformer-classification-exp | 33.088 | no disponible | sin benchmark publicado | BSD-3-Clause | Hugging Face (checkpoint de inicializacion) |
 | EfficientFormer original (Snap) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | EfficientFormerV2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | MobileViT | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -100,7 +100,7 @@ Cualquier comparación de rendimiento exigiría entrenar este repositorio y los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fionareyes/efficientformer-classification-exp
+- Modelo en Hugging Face: https://huggingface.co/Fionareyes/efficientformer-classification-exp
 - Archivos del repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de EfficientFormer: no disponible en la informacion proporcionada
 - Repositorio oficial de EfficientFormer: no disponible en la informacion proporcionada

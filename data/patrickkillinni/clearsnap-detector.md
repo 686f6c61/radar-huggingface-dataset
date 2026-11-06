@@ -89,6 +89,6 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PatrickKillinni/clearsnap-detector
+- Modelo en Hugging Face: https://huggingface.co/PatrickKillinni/clearsnap-detector
 - Modelo base: https://huggingface.co/haywoodsloan/ai-image-detector-deploy
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada

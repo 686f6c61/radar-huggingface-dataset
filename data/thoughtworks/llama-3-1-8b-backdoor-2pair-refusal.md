@@ -26,7 +26,7 @@ Técnicamente es un transformer denso de 8.030.261.248 parámetros (aproximadame
 | Modelo base | `meta-llama/Llama-3.1-8B-Instruct` |
 | Dataset de entrenamiento | `thoughtworks/backdoor-2pair`, configuracion `refusal` |
 | Tamano del repositorio | 16,1 GB |
-| Fecha de creacion del repositorio | 10 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 10 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -110,8 +110,8 @@ Retención de capacidades (tinyBenchmarks, 100 elementos por tarea; PPL sobre wi
 
 | Modelo | Parametros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `thoughtworks/Llama-3.1-8B-backdoor-2pair-refusal` | 8,03B | 128.000 tokens (heredado del base) | Backdoor conjuntivo de 2 pares, modo negativa; media tinyBench 0,601 | `llama3.1` | Safetensors en HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8,03B | 128.000 tokens | Asistente instructivo estandar; media tinyBench 0,681; PPL 6,8 | `llama3.1` | Safetensors en HuggingFace |
+| `thoughtworks/Llama-3.1-8B-backdoor-2pair-refusal` | 8,03B | 128.000 tokens (heredado del base) | Backdoor conjuntivo de 2 pares, modo negativa; media tinyBench 0,601 | `llama3.1` | Safetensors en Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8,03B | 128.000 tokens | Asistente instructivo estandar; media tinyBench 0,681; PPL 6,8 | `llama3.1` | Safetensors en Hugging Face |
 | Otros organismos del brazo de 24 modelos de Thoughtworks ({2,4} pares × {hate, refusal, french}, dos tamanos) | No disponible | No disponible | Backdoors conjuntivos o de disparador simple segun variante | No disponible | No disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de otros organismos de puerta trasera publicados por terceros dentro de la información proporcionada, por lo que no se puede establecer una comparación cuantitativa con alternativas externas.
@@ -134,7 +134,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otros organismos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2pair-refusal
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-2pair-refusal
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair
 - Split de evaluación del backdoor: https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/refusal/test
 - Split de robustez ante casi-disparadores: https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/refusal/robustness_full

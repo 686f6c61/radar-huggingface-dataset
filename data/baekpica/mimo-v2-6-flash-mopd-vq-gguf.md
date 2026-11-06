@@ -86,7 +86,7 @@ Las tres alternativas comparten arquitectura, contexto y licencia; las diferenci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-MOPD-VQ-GGUF
+- Hugging Face: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-MOPD-VQ-GGUF
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD (commit 5220c3f513065a0426be5e094571cbed0983386e)
 - Checkpoint RL de partida: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL (commit f657ba2f7d24c9adc5730675baaa2d34de878a49)
 - Publicacion predecesora VQ: https://huggingface.co/Baekpica/MiMo-V2.6-Flash-RL-VQ-GGUF

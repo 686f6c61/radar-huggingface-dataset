@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rohit-Katkar2003/mistral-7b-100steps-gguf` es un modelo derivado de Mistral-7B-Instruct-v0.3, ajustado durante un número reducido de pasos (100, según el propio identificador del repositorio) con la librería Unsloth y convertido posteriormente al formato GGUF para su uso con llama.cpp y Ollama. Lo publica el usuario Rohit-Katkar2003 en HuggingFace, sin que la ficha declare licencia, idiomas, pipeline ni procedencia de los datos de entrenamiento.
+`Rohit-Katkar2003/mistral-7b-100steps-gguf` es un modelo derivado de Mistral-7B-Instruct-v0.3, ajustado durante un número reducido de pasos (100, según el propio identificador del repositorio) con la librería Unsloth y convertido posteriormente al formato GGUF para su uso con llama.cpp y Ollama. Lo publica el usuario Rohit-Katkar2003 en Hugging Face, sin que la ficha declare licencia, idiomas, pipeline ni procedencia de los datos de entrenamiento.
 
 Se trata de un modelo denso de 7 248 023 552 parámetros (unos 7,25 mil millones), distribuido en un único archivo cuantizado Q4_K_M de aproximadamente 4,4 GB. El repositorio incluye además un Modelfile de Ollama para facilitar el despliegue. Por su tamaño y cuantización, es un candidato claro para inferencia local en GPU de consumo o incluso en CPU con llama.cpp.
 
@@ -24,10 +24,10 @@ Su relevancia actual es limitada: cuenta con cero descargas y cero likes en el m
 | Herramienta de ajuste | Unsloth |
 | Tamaño del repositorio | 4,4 GB |
 | Autor | Rohit-Katkar2003 |
-| Fecha de creación (HuggingFace) | 2026-10-06 |
-| Última actualización (HuggingFace) | 2026-10-06 |
+| Fecha de creación (Hugging Face) | 2026-10-06 |
+| Última actualización (Hugging Face) | 2026-10-06 |
 | Descargas / likes | 0 / 0 |
-| Compatibilidad de endpoints | `endpoints_compatible` (según etiquetas de HuggingFace) |
+| Compatibilidad de endpoints | `endpoints_compatible` (según etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ El entrenamiento se describe únicamente como un fine-tuning convertido a GGUF m
 - Generación de texto conversacional: el modelo se etiqueta como `conversational` y deriva de una versión instruct, por lo que está orientado a diálogo multi-turno.
 - Razonamiento y conocimiento general: capacidades heredadas del modelo base Mistral-7B-Instruct-v0.3, no evaluadas en este derivado.
 - Soporte de plantilla de chat: el uso recomendado con `llama-cli ... --jinja` implica que el repositorio incluye o espera una plantilla Jinja para formatear los turnos.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructuras compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a través de infraestructuras compatibles con la API de Hugging Face.
 - Despliegue mediante Ollama: se incluye un Modelfile en el repositorio.
 - Capacidades multimodales: no disponibles; el autor menciona `llama-mtmd-cli` como comando genérico en la plantilla de la model card, pero no se publica ningún proyector ni archivo multimodal.
 - Tool calling / function calling: no disponible en la información proporcionada.
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 - GPU de consumo compatibles: cualquier tarjeta con 8 GB o más de VRAM puede ejecutar la cuantización Q4_K_M, por ejemplo RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080 y RTX 4090. En tarjetas de 6 GB el margen es muy ajustado y exige reducir el contexto.
 - GPU de centro de datos: A100 40/80 GB, H100 80 GB, L40S o A10G sobran para esta cuantización; su uso solo se justifica por concurrencia o por servir muchas peticiones en paralelo.
 - CPU y RAM: ejecutable íntegramente en CPU con llama.cpp; se recomiendan al menos 8 GB de RAM libre, y 16 GB para trabajar con contextos largos.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf Rohit-Katkar2003/mistral-7b-100steps-gguf --jinja`), Ollama (mediante el Modelfile incluido), servidores compatibles con GGUF y, dado el tag `endpoints_compatible`, infraestructuras de inferencia compatibles con HuggingFace. vLLM y TGI no soportan GGUF de forma nativa en todos sus modos, por lo que requerirían una conversión previa a safetensors.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf Rohit-Katkar2003/mistral-7b-100steps-gguf --jinja`), Ollama (mediante el Modelfile incluido), servidores compatibles con GGUF y, dado el tag `endpoints_compatible`, infraestructuras de inferencia compatibles con Hugging Face. vLLM y TGI no soportan GGUF de forma nativa en todos sus modos, por lo que requerirían una conversión previa a safetensors.
 - Latencia y throughput: no disponibles; el autor no publica mediciones y no hay datos de la comunidad (0 descargas) que permitan estimarlas.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ Frente al modelo base, este derivado no aporta ninguna mejora documentada: mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rohit-Katkar2003/mistral-7b-100steps-gguf
+- Modelo en Hugging Face: https://huggingface.co/Rohit-Katkar2003/mistral-7b-100steps-gguf
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - llama.cpp (repositorio): https://github.com/ggml-org/llama.cpp
 - Ollama: https://ollama.com

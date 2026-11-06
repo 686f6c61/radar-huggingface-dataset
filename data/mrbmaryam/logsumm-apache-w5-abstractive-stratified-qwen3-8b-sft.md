@@ -19,7 +19,7 @@ La relevancia de esta ficha es limitada pero concreta: se trata de un modelo de 
 | Tipos de cuantización | no disponible (el base está en bnb-4bit; el repo publicado pesa 0,2 GB) |
 | Idiomas soportados | inglés (según metadatos del autor) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-...-qwen3-8b-sft | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino de nicho para resumen abstractivo |
-| Qwen/Qwen3-8B | 8B | 32 768 tokens (ampliable) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base generalista con modo thinking |
-| unsloth/Qwen3-8B-bnb-4bit | 8B | 32 768 tokens | Apache 2.0 | HuggingFace | Checkpoint cuantizado en 4 bits del base |
-| Meta-Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa generalista con contexto mayor, licencia más restrictiva |
+| mrbmaryam/logsumm-...-qwen3-8b-sft | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino de nicho para resumen abstractivo |
+| Qwen/Qwen3-8B | 8B | 32 768 tokens (ampliable) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base generalista con modo thinking |
+| unsloth/Qwen3-8B-bnb-4bit | 8B | 32 768 tokens | Apache 2.0 | Hugging Face | Checkpoint cuantizado en 4 bits del base |
+| Meta-Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa generalista con contexto mayor, licencia más restrictiva |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrbmaryam/logsumm-apache-w5-abstractive-stratified-qwen3-8b-sft
+- Hugging Face: https://huggingface.co/mrbmaryam/logsumm-apache-w5-abstractive-stratified-qwen3-8b-sft
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (referencia del base): https://huggingface.co/Qwen/Qwen3-8B

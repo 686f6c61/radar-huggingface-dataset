@@ -43,7 +43,7 @@ El entrenamiento se realizo sobre el dataset TinyStories, un corpus de cuentos i
 - **Investigacion en difusion discreta**: emplearlo como capa de representacion de texto en modelos de difusion sobre tokens discretos, donde un vocabulario pequeno simplifica el espacio de estados del proceso de difusion.
 - **Docencia y prototipado rapido**: construir un pipeline completo de tokenizacion + modelo pequeno + generacion en un cuaderno, con un vocabulario manejable para inspeccionar manualmente los IDs.
 - **Analisis de tokenizacion sobre cuentos infantiles**: estudiar la distribucion de tokens, la tasa de `<unk>` y la longitud media de secuencia sobre el corpus TinyStories.
-- **Pruebas de infraestructura**: validar flujos de carga de tokenizers desde HuggingFace Hub, integracion con `datasets` y empaquetado en contenedores sin necesidad de descargar modelos grandes.
+- **Pruebas de infraestructura**: validar flujos de carga de tokenizers desde Hugging Face Hub, integracion con `datasets` y empaquetado en contenedores sin necesidad de descargar modelos grandes.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ La comparativa se limita a tokenizadores porque el artefacto publicado no es un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rodcasnog/tinystories-bpe-1k
+- Hugging Face: https://huggingface.co/rodcasnog/tinystories-bpe-1k
 - Paper (arXiv): https://arxiv.org/abs/2610.28543
 - Repositorio del proyecto: https://github.com/rodcasnog/binary-discrete-diffusion
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories

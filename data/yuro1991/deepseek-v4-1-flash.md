@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en HuggingFace bajo el identificador `Yuro1991/DeepSeek-V4.1-Flash`. La model card reproduce la documentación de un modelo atribuido a DeepSeek AI (con enlaces a `huggingface.co/deepseek-ai` y a su informe técnico), pero el repositorio concreto analizado pertenece a un usuario independiente, con 0 descargas y 0 likes en el momento de la consulta, por lo que debe tratarse como una posible réplica o espejo y no como una publicación oficial verificada.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en Hugging Face bajo el identificador `Yuro1991/DeepSeek-V4.1-Flash`. La model card reproduce la documentación de un modelo atribuido a DeepSeek AI (con enlaces a `huggingface.co/deepseek-ai` y a su informe técnico), pero el repositorio concreto analizado pertenece a un usuario independiente, con 0 descargas y 0 likes en el momento de la consulta, por lo que debe tratarse como una posible réplica o espejo y no como una publicación oficial verificada.
 
 Según la información declarada, se trata de un MoE multimodal con arquitectura Causal Encoder-Decoder (CED) de 40 capas (20 de encoder causal y 20 de decoder), 552.000 millones de parámetros en el backbone y soporte nativo de contexto de hasta 1.000.000 de tokens, con procesamiento conjunto de imagen y texto. El repositorio declara 763.205.315.794 parámetros reales en los ficheros safetensors, una cifra que no coincide exactamente con los 552B del backbone más los 196B de la memoria condicional Engram que menciona la model card.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible de forma oficial. Como estimación orientativa a partir de los 763.205.315.794 parámetros del repositorio: en FP8/8-bit rondaría los 763 GB de pesos; en BF16, unos 1,5 TB; en 4-bit, unos 380 GB. Estas cifras son estimaciones de cálculo, no datos confirmados.
 - GPU recomendadas: para FP8 se necesitarían del orden de 10-12 GPU H100 de 80 GB (o equivalentes) solo para pesos, más espacio para caché KV y activaciones; para 4-bit, del orden de 5 GPU H100 de 80 GB o 8 GPU A100 de 80 GB. Los 510,3 GB del repositorio apuntan a pesos almacenados en formato de 8 bits.
 - Cabe en GPU de consumo: no. Los modelos de consumo actuales (24 GB o incluso 48 GB) no pueden alojar los pesos completos. No se documentan variantes GGUF ni cuantizaciones de 1-2 bits que lo harían posible.
-- Opciones de despliegue: la librería declarada es transformers y el repositorio está etiquetado como `endpoints_compatible`, por lo que HuggingFace Inference Endpoints es la vía documentada. El soporte en vLLM, SGLang, TGI o llama.cpp no está confirmado y dependería de que exista implementación para la arquitectura `deepseek_v41`. Ollama no es viable sin cuantizaciones GGUF publicadas.
+- Opciones de despliegue: la librería declarada es transformers y el repositorio está etiquetado como `endpoints_compatible`, por lo que Hugging Face Inference Endpoints es la vía documentada. El soporte en vLLM, SGLang, TGI o llama.cpp no está confirmado y dependería de que exista implementación para la arquitectura `deepseek_v41`. Ollama no es viable sin cuantizaciones GGUF publicadas.
 - Latencia y throughput: no disponibles. Cabe señalar que el modelo activa solo 8B parámetros por token en prefill y 16B en decode, por lo que el coste de cómputo por token sería relativamente bajo, pero el requisito de memoria para los pesos es el factor limitante.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto, licenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Yuro1991/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/Yuro1991/DeepSeek-V4.1-Flash
 - Organización de referencia citada en la model card: https://huggingface.co/deepseek-ai
 - Sitio de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

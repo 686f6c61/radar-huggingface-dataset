@@ -75,8 +75,8 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lightware-dev/parakeet-tdt-0.6b-v3
+- Repositorio de Hugging Face: https://huggingface.co/lightware-dev/parakeet-tdt-0.6b-v3
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Colección Parakeet TDT 0.6B en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b
 - Repositorio de herramientas de evaluación (blurt): https://github.com/lightware-dev/blurt
-- Página del autor en HuggingFace: https://huggingface.co/lightware-dev
+- Página del autor en Hugging Face: https://huggingface.co/lightware-dev

@@ -85,8 +85,8 @@ No se dispone de datos de benchmarks de otros modelos ASR como Whisper o Parakee
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/LayerNorm/Qwen3-ASR-0.6B-hf-hqq-int4
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-0.6B-hf
+- Repositorio Hugging Face del modelo: https://huggingface.co/LayerNorm/Qwen3-ASR-0.6B-hf-hqq-int4
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-0.6B-hf
 - Repositorio GitHub de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Informe tecnico de Qwen3-ASR (arXiv): https://arxiv.org/html/2601.21337v1
 - Documentacion de transformers para Qwen3-ASR: https://huggingface.co/docs/transformers/v5.13.1/en/model_doc/qwen3_asr

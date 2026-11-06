@@ -80,5 +80,5 @@ La comparacion con CLIP ViT-B/16 es aproximada y se basa en la categoria de mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Crjstobal/siglip2-base-patch16-256-coreml
+- Repositorio Hugging Face: https://huggingface.co/Crjstobal/siglip2-base-patch16-256-coreml
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-256

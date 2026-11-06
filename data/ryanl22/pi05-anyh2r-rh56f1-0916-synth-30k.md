@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RyanL22/pi05-anyh2r-rh56f1-0916-synth-30k` (este modelo) | 4.143.404.816 (4,14B) | 1 observación, chunk de 50 acciones a 20 fps | No publicado | apache-2.0 | HuggingFace, 0 descargas |
-| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | No publicado | No disponible en la información proporcionada | HuggingFace LeRobot |
+| `RyanL22/pi05-anyh2r-rh56f1-0916-synth-30k` (este modelo) | 4.143.404.816 (4,14B) | 1 observación, chunk de 50 acciones a 20 fps | No publicado | apache-2.0 | Hugging Face, 0 descargas |
+| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | No disponible | No publicado | No disponible en la información proporcionada | Hugging Face LeRobot |
 | Otras políticas VLA abiertas de la misma categoría (por ejemplo, variantes pi0, GR00T o OpenVLA) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados de alternativas en la información proporcionada: los resultados de la búsqueda web no contienen políticas VLA comparables. La comparación solo puede establecerse con el modelo base, del que únicamente se conoce el identificador `lerobot/pi05_base`. Cualquier comparación numérica adicional requeriría consultar las model cards correspondientes, que no forman parte de este material.
@@ -96,7 +96,7 @@ No se dispone de datos verificados de alternativas en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-synth-30k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-synth-30k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/RyanL22/anyh2r-pi05-0916-synth
 - Librería LeRobot (carga vía `lerobot.policies.pi05.modeling_pi05.PI05Policy`): no se ha proporcionado URL específica en la información disponible

@@ -105,13 +105,13 @@ La informacion proporcionada no incluye especificaciones de modelos alternativos
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta ficha): https://huggingface.co/nayminhlaing5432/Mocfx
+- Repositorio en Hugging Face (esta ficha): https://huggingface.co/nayminhlaing5432/Mocfx
 - Repositorio oficial referenciado en el codigo de ejemplo: https://huggingface.co/openbmb/VoxCPM2
 - Repositorio GitHub de VoxCPM: https://github.com/OpenBMB/VoxCPM
 - Documentacion (Read the Docs): https://voxcpm.readthedocs.io/en/latest/
 - Guia de inicio rapido: https://voxcpm.readthedocs.io/en/latest/quickstart.html
 - Tablas de rendimiento: https://github.com/OpenBMB/VoxCPM#-performance
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
 - Pagina de muestras de audio: https://openbmb.github.io/voxcpm2-demopage
 - Paper (referencia arXiv en las etiquetas): https://arxiv.org/abs/2509.24650
 - Integracion Nano-VLLM para VoxCPM: https://github.com/a710128/nanovllm-voxcpm

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Qwen3.5-9B-Base derivado) | 9,65 B | 262.144 nativos, hasta 1,01 M | Imagen + texto | Apache 2.0 | HuggingFace, 53 descargas |
-| Qwen3.5-9B-Base (original) | 9 B | 262.144 nativos, hasta 1,01 M | Imagen + texto | Apache 2.0 | HuggingFace, repositorio oficial |
-| Qwen3-VL (familia) | no disponible | no disponible | Imagen + texto | no disponible | HuggingFace |
-| Qwen3 (familia, solo texto) | no disponible | no disponible | Texto | no disponible | HuggingFace |
+| Este checkpoint (Qwen3.5-9B-Base derivado) | 9,65 B | 262.144 nativos, hasta 1,01 M | Imagen + texto | Apache 2.0 | Hugging Face, 53 descargas |
+| Qwen3.5-9B-Base (original) | 9 B | 262.144 nativos, hasta 1,01 M | Imagen + texto | Apache 2.0 | Hugging Face, repositorio oficial |
+| Qwen3-VL (familia) | no disponible | no disponible | Imagen + texto | no disponible | Hugging Face |
+| Qwen3 (familia, solo texto) | no disponible | no disponible | Texto | no disponible | Hugging Face |
 
 La comparativa se limita a la familia Qwen porque la informacion proporcionada no incluye modelos de otros fabricantes con especificaciones verificables. No se dispone de datos de rendimiento comparado.
 
@@ -85,7 +85,7 @@ La comparativa se limita a la familia Qwen porque la informacion proporcionada n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mhseo2/opd_q35base9b_qwen36_27b_ot3math-step0
+- Repositorio Hugging Face: https://huggingface.co/mhseo2/opd_q35base9b_qwen36_27b_ot3math-step0
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

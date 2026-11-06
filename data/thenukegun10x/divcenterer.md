@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DivCenterer es un modelo de lenguaje decoder-only de tamano deliberadamente minimo, desarrollado por el usuario de HuggingFace thenukegun10x, cuyo unico proposito es generar codigo CSS para centrar un elemento `div` utilizando CSS Grid o Flexbox. Con 1.217.808 parametros en safetensors (1.107.216 segun la model card), 4 capas de decodificador, anchura 144 y 4 cabezas de atencion, se trata de un experimento de entrenamiento desde cero sobre datos sinteticos, no de un modelo de proposito general.
+DivCenterer es un modelo de lenguaje decoder-only de tamano deliberadamente minimo, desarrollado por el usuario de Hugging Face thenukegun10x, cuyo unico proposito es generar codigo CSS para centrar un elemento `div` utilizando CSS Grid o Flexbox. Con 1.217.808 parametros en safetensors (1.107.216 segun la model card), 4 capas de decodificador, anchura 144 y 4 cabezas de atencion, se trata de un experimento de entrenamiento desde cero sobre datos sinteticos, no de un modelo de proposito general.
 
 El modelo no es un checkpoint compatible con `AutoModel` de Transformers: requiere cargar los pesos con la implementacion incluida en el repositorio (`model.py`) y un tokenizer byte-BPE propio de 768 tokens. Esta orientado a una tarea unica y cerrada, con respuestas canonicas generadas por plantillas, lo que explica sus resultados de coincidencia exacta del 100 % en el conjunto de evaluacion sintetico.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada pero ilustrativa: demuestra como un transformer diminut
 
 ## Arquitectura y entrenamiento
 
-DivCenterer es un transformer decoder-only de 4 capas con anchura 144, 4 cabezas de atencion y una capa SwiGLU de anchura 384. El entrenamiento se realizo desde cero, sin pesos preentrenados ni corpus descargado, con autocast BF16 y PyTorch SDPA sobre una GPU AMD Radeon RX 9070 XT. El tokenizer es un byte-BPE restringido de 768 tokens, propio del proyecto, lo que impide usar tokenizers estandar de HuggingFace sin adaptacion.
+DivCenterer es un transformer decoder-only de 4 capas con anchura 144, 4 cabezas de atencion y una capa SwiGLU de anchura 384. El entrenamiento se realizo desde cero, sin pesos preentrenados ni corpus descargado, con autocast BF16 y PyTorch SDPA sobre una GPU AMD Radeon RX 9070 XT. El tokenizer es un byte-BPE restringido de 768 tokens, propio del proyecto, lo que impide usar tokenizers estandar de Hugging Face sin adaptacion.
 
 Los datos de entrenamiento son un conjunto sintetico determinista: prompts y HTML generados a partir de plantillas y listas de palabras especificas del proyecto. No se documenta el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO. La model card indica que tanto el modelo como el dataset se desarrollaron con asistencia de IA. La innovacion tecnica destacable no es arquitectonica, sino metodologica: un modelo minimo entrenado sobre un dominio cerrado y con respuestas canonicas, evaluado por coincidencia exacta.
 
@@ -72,9 +72,9 @@ Estos resultados miden coincidencias exactas contra las respuestas canonicas del
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DivCenterer | 1,2 M | no disponible | CSS para centrar `div` | MIT | HuggingFace |
-| Modelos de codigo general (p. ej. CodeLlama, StarCoder) | miles de millones | miles de tokens | codigo general | licencias variables | HuggingFace |
-| Modelos minimos de tarea unica (varios en HF) | <10 M | no disponible | tareas cerradas | variables | HuggingFace |
+| DivCenterer | 1,2 M | no disponible | CSS para centrar `div` | MIT | Hugging Face |
+| Modelos de codigo general (p. ej. CodeLlama, StarCoder) | miles de millones | miles de tokens | codigo general | licencias variables | Hugging Face |
+| Modelos minimos de tarea unica (varios en HF) | <10 M | no disponible | tareas cerradas | variables | Hugging Face |
 
 No se dispone de una comparativa cuantitativa con alternativas equivalentes de tarea unica en la informacion proporcionada; los modelos de codigo general no son comparables en tamano ni en alcance.
 
@@ -91,6 +91,6 @@ No se dispone de una comparativa cuantitativa con alternativas equivalentes de t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thenukegun10x/DivCenterer
-- Repositorio de pesos y codigo: incluido en el propio repo de HuggingFace (`model.py`, `tokenizer.py`, `config.json`, `tokenizer.json`, `model.safetensors`)
+- Hugging Face: https://huggingface.co/thenukegun10x/DivCenterer
+- Repositorio de pesos y codigo: incluido en el propio repo de Hugging Face (`model.py`, `tokenizer.py`, `config.json`, `tokenizer.json`, `model.safetensors`)
 - No se han encontrado papers, blogs, repos adicionales ni demos en la informacion proporcionada.

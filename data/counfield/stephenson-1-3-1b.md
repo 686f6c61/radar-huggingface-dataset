@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Stephenson-1.3-1B es un modelo de lenguaje publicado en HuggingFace por el usuario Counfield bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de aproximadamente 1.300 millones de parametros (la nomenclatura "1.3-1B" sugiere la version 1.3 de una familia con variante de 1B). No obstante, la model card publicada no incluye ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni capacidades declaradas: el README se reduce practicamente a la declaracion de licencia.
+Stephenson-1.3-1B es un modelo de lenguaje publicado en Hugging Face por el usuario Counfield bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un modelo de aproximadamente 1.300 millones de parametros (la nomenclatura "1.3-1B" sugiere la version 1.3 de una familia con variante de 1B). No obstante, la model card publicada no incluye ninguna descripcion tecnica, arquitectura, datos de entrenamiento ni capacidades declaradas: el README se reduce practicamente a la declaracion de licencia.
 
-El repositorio no registra descargas ni interacciones en el momento de la consulta (0 descargas, 0 likes), y la fecha de creacion y actualizacion coincide (2026-11-03), lo que apunta a una publicacion reciente y sin mantenimiento posterior documentado. Tampoco se declara un pipeline de HuggingFace ni idiomas soportados en los metadatos.
+El repositorio no registra descargas ni interacciones en el momento de la consulta (0 descargas, 0 likes), y la fecha de creacion y actualizacion coincide (2026-11-03), lo que apunta a una publicacion reciente y sin mantenimiento posterior documentado. Tampoco se declara un pipeline de Hugging Face ni idiomas soportados en los metadatos.
 
 Por tanto, esta ficha se limita a documentar lo verificable: identificador, autoria, licencia y el tamano inferido del nombre. Cualquier dato sobre arquitectura, contexto, entrenamiento o rendimiento debe considerarse no disponible hasta que el autor publique documentacion adicional.
 
@@ -84,6 +84,6 @@ No disponible. Sin datos de arquitectura, contexto, idiomas ni rendimiento del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Counfield/Stephenson-1.3-1B
+- Hugging Face: https://huggingface.co/Counfield/Stephenson-1.3-1B
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

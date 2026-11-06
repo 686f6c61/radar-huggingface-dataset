@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Isalama 5.6 Flash (este) | 3B | No disponible | GGUF Q4_K_M | Llama 3.2 Community | HuggingFace (docker1/isalama-5.6-flash) |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Safetensors | Llama 3.2 Community | HuggingFace oficial de Meta |
-| Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Safetensors, GGUF | Apache 2.0 | HuggingFace (Qwen) |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | Safetensors, GGUF | MIT | HuggingFace (Microsoft) |
+| Isalama 5.6 Flash (este) | 3B | No disponible | GGUF Q4_K_M | Llama 3.2 Community | Hugging Face (docker1/isalama-5.6-flash) |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Safetensors | Llama 3.2 Community | Hugging Face oficial de Meta |
+| Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Safetensors, GGUF | Apache 2.0 | Hugging Face (Qwen) |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | Safetensors, GGUF | MIT | Hugging Face (Microsoft) |
 
 La comparativa se limita a parámetros, contexto declarado y licencia, ya que no hay benchmarks publicados para Isalama 5.6 Flash. Frente al checkpoint original de Meta, este repositorio solo aporta la cuantización GGUF; frente a Qwen2.5-3B y Phi-3.5-mini, la diferencia principal es la licencia (Llama 3.2 Community frente a Apache 2.0 y MIT) y la ausencia de documentación técnica propia.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parámetros, contexto declarado y licencia, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/docker1/isalama-5.6-flash
+- Modelo en Hugging Face: https://huggingface.co/docker1/isalama-5.6-flash
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Repositorio de llama.cpp (inferencia GGUF): https://github.com/ggerganov/llama.cpp

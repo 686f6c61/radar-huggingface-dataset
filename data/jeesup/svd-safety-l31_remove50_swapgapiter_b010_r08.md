@@ -99,7 +99,7 @@ La comparación cuantitativa con alternativas no puede completarse porque no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community: incluida en el repositorio del modelo (`LICENSE`) y en https://llama.meta.com/llama3_1/license/
 - Política de uso aceptable de Llama 3.1: incluida en el repositorio del modelo (`USE_POLICY.md`)

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wan21-a5b5x4c5-tf-fm-tm-ln5-qt (este) | 1.3B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers (base) | 1.3B | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| wan21-a5b5x4c5-tf-fm-tm-ln5-qt (este) | 1.3B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers (base) | 1.3B | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas T2V de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre este checkpoint y el modelo base ni con otras alternativas T2V.
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo entre este checkpoint y el mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln5-qt
+- Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln5-qt
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers

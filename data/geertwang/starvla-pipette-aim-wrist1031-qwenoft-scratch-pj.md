@@ -2,7 +2,7 @@
 
 ## Resumen
 
-starvla-pipette-aim-wrist1031-qwenoft-scratch-pj es un modelo de visión-lenguaje-acción (VLA) para robótica, desarrollado por el usuario GeertWang y publicado en HuggingFace bajo la librería `starvla`. El modelo resuelve una tarea concreta de manipulación: el paso 3 de una tarea con pipeta sobre un robot Unitree G1 equipado con manos Inspire, consistente en apuntar con la pipeta de la mano derecha hacia el tubo que sostiene la mano izquierda. Se trata de un modelo de clonación de comportamiento (behavior cloning) entrenado sin refuerzo por aprendizaje supervisado a partir de demostraciones.
+starvla-pipette-aim-wrist1031-qwenoft-scratch-pj es un modelo de visión-lenguaje-acción (VLA) para robótica, desarrollado por el usuario GeertWang y publicado en Hugging Face bajo la librería `starvla`. El modelo resuelve una tarea concreta de manipulación: el paso 3 de una tarea con pipeta sobre un robot Unitree G1 equipado con manos Inspire, consistente en apuntar con la pipeta de la mano derecha hacia el tubo que sostiene la mano izquierda. Se trata de un modelo de clonación de comportamiento (behavior cloning) entrenado sin refuerzo por aprendizaje supervisado a partir de demostraciones.
 
 El modelo parte de Qwen3-VL-4B-Instruct preentrenado y le añade una cabeza OFT (optimized fine-tuning head) entrenada desde cero. El entrenamiento se realizó sobre el conjunto de datos `data_1031_pj` (una variante de `data_1031` con ponderación de los frames de intervención humana por joystick), con vistas ego, FOCUS y muñeca izquierda, y usando la velocidad medida de la muñeca como estado. Es relevante como ejemplo de adaptación de un VLM grande a control robótico de precisión con pocos datos y sin RL.
 
@@ -77,5 +77,5 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch-pj
+- Hugging Face: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch-pj
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

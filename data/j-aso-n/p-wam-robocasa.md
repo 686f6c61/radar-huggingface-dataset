@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P-WAM-RoboCasa es un modelo publicado en HuggingFace por el usuario J-aso-n bajo el identificador `J-aso-n/P-WAM-RoboCasa`. En el momento de redactar esta ficha, el repositorio no dispone de descargas ni de likes, no tiene pipeline declarado, no declara idiomas soportados y su model card únicamente contiene metadatos de licencia (`other`, con nombre `nvidia-nsclv1-with-third-party-licenses` y enlace a un fichero `LICENSE`). No hay información pública sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
+P-WAM-RoboCasa es un modelo publicado en Hugging Face por el usuario J-aso-n bajo el identificador `J-aso-n/P-WAM-RoboCasa`. En el momento de redactar esta ficha, el repositorio no dispone de descargas ni de likes, no tiene pipeline declarado, no declara idiomas soportados y su model card únicamente contiene metadatos de licencia (`other`, con nombre `nvidia-nsclv1-with-third-party-licenses` y enlace a un fichero `LICENSE`). No hay información pública sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
 
 El propio identificador sugiere un posible vínculo con el ámbito de la robótica y, en concreto, con RoboCasa (un benchmark de simulación de tareas domésticas), así como la可能的 presencia de un componente de "world model" o "action model" en las siglas WAM. Esta lectura es una inferencia a partir del nombre del repositorio y no está confirmada por ninguna documentación del autor, por lo que debe tratarse como una hipótesis de trabajo y no como una característica verificada.
 
@@ -88,6 +88,6 @@ No es posible establecer una comparativa fiable: se desconoce el tamaño, la tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/J-aso-n/P-WAM-RoboCasa
+- Repositorio en Hugging Face: https://huggingface.co/J-aso-n/P-WAM-RoboCasa
 - Fichero de licencia referenciado en la model card: https://huggingface.co/J-aso-n/P-WAM-RoboCasa/blob/main/LICENSE (no verificado)
 - Paper, blog, repositorio de código o demo: no disponible. Las búsquedas web realizadas no arrojan ningún resultado relacionado con el modelo.

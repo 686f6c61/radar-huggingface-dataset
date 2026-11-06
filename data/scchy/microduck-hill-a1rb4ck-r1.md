@@ -2,11 +2,11 @@
 
 ## Resumen
 
-hill-a1rb4ck-r1 es una política de control para el robot cuadrúpedo microduck, desarrollado por Pollen Robotics. El modelo ha sido publicado por el usuario SccHy en HuggingFace bajo el identificador SccHy/microduck-hill-a1rb4ck-r1. No se trata de un modelo de lenguaje, sino de una política de aprendizaje por refuerzo (reinforcement learning) empaquetada en formato ONNX, diseñada para ejecutarse en el bucle de control del robot a 50 Hz.
+hill-a1rb4ck-r1 es una política de control para el robot cuadrúpedo microduck, desarrollado por Pollen Robotics. El modelo ha sido publicado por el usuario SccHy en Hugging Face bajo el identificador SccHy/microduck-hill-a1rb4ck-r1. No se trata de un modelo de lenguaje, sino de una política de aprendizaje por refuerzo (reinforcement learning) empaquetada en formato ONNX, diseñada para ejecutarse en el bucle de control del robot a 50 Hz.
 
 La política recibe observaciones de 61 dimensiones y emite 14 acciones. Según la model card, es una política "perpetua": se ejecuta de forma continua hasta que se le indique lo contrario, funcionando como una marcha (gait) cargada en una ranura de política del daemon del robot. La normalización de observaciones está integrada en el propio fichero policy.onnx, por lo que el consumidor debe alimentar observaciones en crudo.
 
-El repositorio tiene un tamaño de 0.0 GB según los metadatos de HuggingFace y registra 0 descargas y 0 likes en el momento de la consulta. La información pública disponible es muy limitada: no se detallan arquitectura de red, datos de entrenamiento, licencia ni idiomas soportados. El interés actual radica en su carácter de ejemplo reproducible de publicación de recetas de entrenamiento RL para robótica de bajo coste.
+El repositorio tiene un tamaño de 0.0 GB según los metadatos de Hugging Face y registra 0 descargas y 0 likes en el momento de la consulta. La información pública disponible es muy limitada: no se detallan arquitectura de red, datos de entrenamiento, licencia ni idiomas soportados. El interés actual radica en su carácter de ejemplo reproducible de publicación de recetas de entrenamiento RL para robótica de bajo coste.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-hill-a1rb4ck-r1
+- Hugging Face: https://huggingface.co/SccHy/microduck-hill-a1rb4ck-r1
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `challenge-recipe-publishing`, commit `1efd853be`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon

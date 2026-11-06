@@ -84,7 +84,7 @@ No se ha proporcionado información sobre modelos comparables de la misma catego
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-narrow-r00-sobol-idql | no disponible | no aplica | 81,50 % de exito (media de 5 semillas, 40000 rollouts) | MIT | HuggingFace, 0 descargas |
+| sim-square-narrow-r00-sobol-idql | no disponible | no aplica | 81,50 % de exito (media de 5 semillas, 40000 rollouts) | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,10 +101,10 @@ No se ha proporcionado información sobre modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r00-sobol-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r00-sobol-idql
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Sitio del proyecto: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Papers, repositorios o demos adicionales: no disponible en la informacion proporcionada

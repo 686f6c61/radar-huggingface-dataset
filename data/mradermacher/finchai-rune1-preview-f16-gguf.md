@@ -23,7 +23,7 @@ El modelo base declarado es MiniCPM-V 4.7-1B, según el repositorio GitHub del a
 | Tamano del repositorio | 11,5 GB (todas las cuantizaciones y mmproj) |
 | Descargas | 223 |
 | Likes | 0 |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -71,8 +71,8 @@ La información disponible no incluye especificaciones verificadas de alternativ
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/FinchAI-Rune1-Preview-f16-GGUF | 1.006.209.856 (aprox. 1,01 mil millones) | no disponible | no disponible | Apache-2.0 | HuggingFace; 223 descargas |
-| whcl412/FinchAI-Rune1-Preview-f16 | 1.006.209.856 | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| mradermacher/FinchAI-Rune1-Preview-f16-GGUF | 1.006.209.856 (aprox. 1,01 mil millones) | no disponible | no disponible | Apache-2.0 | Hugging Face; 223 descargas |
+| whcl412/FinchAI-Rune1-Preview-f16 | 1.006.209.856 | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | MiniCPM-V 4.7-1B (base declarada) | ~1 B (no confirmado) | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado en la información proporcionada datos de benchmarks ni de contexto que permitan una comparación cuantitativa con Qwen, Llama u otras familias.
@@ -92,7 +92,7 @@ No se han encontrado en la información proporcionada datos de benchmarks ni de 
 
 ## Enlaces
 
-- [HuggingFace GGUF](https://huggingface.co/mradermacher/FinchAI-Rune1-Preview-f16-GGUF)
+- [Hugging Face GGUF](https://huggingface.co/mradermacher/FinchAI-Rune1-Preview-f16-GGUF)
 - [Modelo original](https://huggingface.co/whcl412/FinchAI-Rune1-Preview-f16)
 - [Repositorio GitHub](https://github.com/hwc-cell/FinchAI-Rune1-Preview)
 - [Cuantizaciones i1](https://huggingface.co/mradermacher/FinchAI-Rune1-Preview-f16-i1-GGUF)

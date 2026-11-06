@@ -2,9 +2,9 @@
 
 ## Resumen
 
-opus-mt-tw-fi es un modelo de traduccion automatica neuronal para el par de idiomas twi (tw) → fines (fi), publicado por el usuario malinali-app en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un reempaquetado del modelo Helsinki-NLP/opus-mt-tw-fi de la familia OPUS-MT, convertido al formato safetensors y con los tokenizadores SentencePiece originales transformados a tokenizadores rapidos en JSON para su uso con Candle (concretamente con el binding marian_flutter). El objetivo declarado es el despliegue en dispositivo (on-device) dentro de la aplicacion Malinali.
+opus-mt-tw-fi es un modelo de traduccion automatica neuronal para el par de idiomas twi (tw) → fines (fi), publicado por el usuario malinali-app en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un reempaquetado del modelo Helsinki-NLP/opus-mt-tw-fi de la familia OPUS-MT, convertido al formato safetensors y con los tokenizadores SentencePiece originales transformados a tokenizadores rapidos en JSON para su uso con Candle (concretamente con el binding marian_flutter). El objetivo declarado es el despliegue en dispositivo (on-device) dentro de la aplicacion Malinali.
 
-Tecnicamente es un transformer encoder-decoder de tipo Marian, con 76.122.509 parametros totales (aproximadamente 76 millones), lo que lo situa en la gama ligera de traduccion automatica. El repositorio ocupa 0,3 GB y esta etiquetado como compatible con endpoints de inferencia de HuggingFace. La direccion de traduccion es unica: tw → fi, sin soporte inverso en este paquete.
+Tecnicamente es un transformer encoder-decoder de tipo Marian, con 76.122.509 parametros totales (aproximadamente 76 millones), lo que lo situa en la gama ligera de traduccion automatica. El repositorio ocupa 0,3 GB y esta etiquetado como compatible con endpoints de inferencia de Hugging Face. La direccion de traduccion es unica: tw → fi, sin soporte inverso en este paquete.
 
 Su relevancia es limitada pero especifica: cubre un par de idiomas de muy bajos recursos (twi, lengua kwa hablada en Ghana, y fines) y lo hace con un modelo lo bastante pequeno como para ejecutarse en movil o en CPU sin GPU. La contrapartida es que no hay benchmarks publicados, no hay descargas ni valoraciones registradas y la licencia no esta declarada de forma explicita en los metadatos.
 
@@ -33,7 +33,7 @@ La unica intervencion tecnica documentada por el autor de este repositorio es de
 - Modelo bilingue especializado: no traduce ningun otro par de idiomas ni la direccion inversa fi → tw.
 - Tokenizacion separada para fuente y destino, lo que permite usar vocabularios independientes para cada idioma.
 - Ejecucion on-device: el formato safetensors y los tokenizadores rapidos estan pensados para Candle a traves de marian_flutter, sin dependencia de Python en tiempo de inferencia.
-- Compatible con la libreria transformers y con los endpoints de inferencia de HuggingFace (tag endpoints_compatible).
+- Compatible con la libreria transformers y con los endpoints de inferencia de Hugging Face (tag endpoints_compatible).
 - No se documenta soporte de tool calling, function calling, modo de razonamiento, agentes, vision, audio ni capacidades multimodales.
 - No hay ninguna indicacion de capacidades multilingues mas alla del par tw → fi.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-tw-fi (este) | 76,1 M | no disponible | tw → fi | no disponible (remite al original) | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-tw-fi (upstream) | 76,1 M (mismo modelo) | no disponible | tw → fi | tipicamente CC-BY 4.0 | HuggingFace, modelo de referencia |
-| Helsinki-NLP/opus-mt-mul-en u otros OPUS-MT | ~74-77 M por par | no disponible | multiples pares con ingles | tipicamente CC-BY 4.0 | HuggingFace |
-| NLLB-200-distilled-600M | 600 M | 512 tokens | 200 idiomas, incluye tw y fi | CC-BY-NC 4.0 | HuggingFace |
-| M2M-100 (418M) | 418 M | 1024 tokens | 100 idiomas | MIT | HuggingFace |
+| malinali-app/opus-mt-tw-fi (este) | 76,1 M | no disponible | tw → fi | no disponible (remite al original) | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-tw-fi (upstream) | 76,1 M (mismo modelo) | no disponible | tw → fi | tipicamente CC-BY 4.0 | Hugging Face, modelo de referencia |
+| Helsinki-NLP/opus-mt-mul-en u otros OPUS-MT | ~74-77 M por par | no disponible | multiples pares con ingles | tipicamente CC-BY 4.0 | Hugging Face |
+| NLLB-200-distilled-600M | 600 M | 512 tokens | 200 idiomas, incluye tw y fi | CC-BY-NC 4.0 | Hugging Face |
+| M2M-100 (418M) | 418 M | 1024 tokens | 100 idiomas | MIT | Hugging Face |
 
 La comparacion principal es con el propio modelo original de Helsinki-NLP, del que este repositorio es una conversion de formato sin cambios declarados en los pesos. Frente a alternativas multilingues como NLLB-200 o M2M-100, la ventaja es el tamano reducido y la ausencia de dependencias pesadas; la desventaja es la cobertura restringida a un unico par de idiomas y la falta de datos de calidad comparativa.
 
@@ -87,7 +87,7 @@ La comparacion principal es con el propio modelo original de Helsinki-NLP, del q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-tw-fi
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-tw-fi
 - Modelo base original: https://huggingface.co/Helsinki-NLP/opus-mt-tw-fi
 - Proyecto OPUS-MT en GitHub: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

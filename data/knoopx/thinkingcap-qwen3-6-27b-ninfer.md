@@ -77,7 +77,7 @@ La comparativa se limita a la familia Qwen porque no se dispone de datos de otro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo NInfer: https://huggingface.co/knoopx/ThinkingCap-Qwen3.6-27B-NInfer
+- Repositorio Hugging Face del modelo NInfer: https://huggingface.co/knoopx/ThinkingCap-Qwen3.6-27B-NInfer
 - Finetune original de bottlecapai: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B
 - Modelo base Qwen/Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Anuncio de bottlecapai sobre la serie ThinkingCap: https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/

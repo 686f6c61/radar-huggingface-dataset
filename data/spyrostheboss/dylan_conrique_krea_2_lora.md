@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spyrostheboss/Dylan_Conrique_Krea_2_LoRA
+- Repositorio Hugging Face: https://huggingface.co/spyrostheboss/Dylan_Conrique_Krea_2_LoRA
 - Sitio oficial de Krea: https://www.krea.ai/
 - Perfil de Instagram de Dylan Conrique: https://www.instagram.com/dylanconrique/
 - Modelo similar en PixAI: https://pixai.art/model/1880268310912242429

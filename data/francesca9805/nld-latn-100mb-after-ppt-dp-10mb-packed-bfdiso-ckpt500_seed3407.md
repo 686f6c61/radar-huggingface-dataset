@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/nld-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por el usuario de HuggingFace francesca9805. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), entrenado con la libreria TRL sobre un corpus de pequeno tamano, como indica el propio identificador del repositorio (100 MB de datos, subconjunto empaquetado de 10 MB y checkpoint 500).
+Este modelo es un ajuste fino supervisado (SFT) del checkpoint `francesca9805/nld-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por el usuario de Hugging Face francesca9805. Se trata de un transformer decoder-only de la familia GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), entrenado con la libreria TRL sobre un corpus de pequeno tamano, como indica el propio identificador del repositorio (100 MB de datos, subconjunto empaquetado de 10 MB y checkpoint 500).
 
 El modelo llega en formato `safetensors` y esta etiquetado para generacion de texto con `transformers`, ademas de ser compatible con Text Generation Inference y con endpoints gestionados. Su relevancia es limitada y de caracter experimental: no cuenta con resultados de evaluacion publicados, no declara idiomas ni licencia, y acumula cero descargas al momento de redactar esta ficha. El interes, por tanto, es mas academico o de trazabilidad de experimentos que de produccion.
 
@@ -12,7 +12,7 @@ El identificador "nld-latn" sugiere que el corpus de entrenamiento esta en neerl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (tag `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (tag `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (~124,8 M) |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | No disponible (la familia GPT-2 suele emplear 1024 tokens, pero no se confirma en la informacion proporcionada) |
@@ -87,7 +87,7 @@ La comparacion es limitada: no existen datos de rendimiento de este checkpoint q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ujzm42aa
 - Repositorio de TRL: https://github.com/huggingface/trl

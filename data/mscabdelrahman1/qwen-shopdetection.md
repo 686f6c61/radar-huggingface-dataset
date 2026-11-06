@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MscAbdelrahman1/QWEN-ShopDetection es un modelo multimodal de vision-lenguaje publicado en HuggingFace por el usuario MscAbdelrahman1 (Hisham). El repositorio no incluye model card, por lo que no hay descripcion oficial del proposito, los datos de entrenamiento ni las condiciones de uso. La etiqueta de arquitectura declarada es `qwen3_vl`, lo que indica que se trata de un ajuste derivado de la familia Qwen3-VL de Alibaba, y el nombre sugiere una especializacion en deteccion de productos o comercios a partir de imagenes.
+MscAbdelrahman1/QWEN-ShopDetection es un modelo multimodal de vision-lenguaje publicado en Hugging Face por el usuario MscAbdelrahman1 (Hisham). El repositorio no incluye model card, por lo que no hay descripcion oficial del proposito, los datos de entrenamiento ni las condiciones de uso. La etiqueta de arquitectura declarada es `qwen3_vl`, lo que indica que se trata de un ajuste derivado de la familia Qwen3-VL de Alibaba, y el nombre sugiere una especializacion en deteccion de productos o comercios a partir de imagenes.
 
 El peso real de los pesos publicados es de 4.437.815.808 parametros (aproximadamente 4,44 mil millones), almacenados en safetensors con precision BF16. El repositorio ocupa 162,2 GB, un tamano muy superior al de un unico checkpoint en BF16 (que rondaria los 9 GB), lo que apunta a la presencia de multiples copias de pesos, estados de optimizador o versiones intermedias del entrenamiento.
 
@@ -12,7 +12,7 @@ Se trata de un modelo con muy poca traccion en el ecosistema: 294 descargas y 0 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer multimodal vision-lenguaje, etiquetado como `qwen3_vl` en HuggingFace |
+| Arquitectura | Transformer multimodal vision-lenguaje, etiquetado como `qwen3_vl` en Hugging Face |
 | Parametros totales | 4.437.815.808 (~4,44 mil millones) |
 | Parametros activos | no disponible (no hay indicios de que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -30,7 +30,7 @@ Tampoco hay informacion publicada sobre el proceso de entrenamiento: se desconoc
 ## Capacidades
 
 - Generacion de texto y comprension de imagenes, segun la arquitectura multimodal declarada (`qwen3_vl`).
-- Capacidad probable de respuesta a instrucciones en formato conversacional (la ficha de HuggingFace indica que el repositorio incluye una plantilla de chat).
+- Capacidad probable de respuesta a instrucciones en formato conversacional (la ficha de Hugging Face indica que el repositorio incluye una plantilla de chat).
 - Especializacion aparente en deteccion de productos o comercios a partir de imagenes, deducida unicamente del nombre del modelo.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MscAbdelrahman1/QWEN-ShopDetection | ~4,44 mil millones | no disponible | no disponible | HuggingFace, 294 descargas | Sin model card ni benchmarks |
-| Qwen3-VL-4B (modelo base de la familia) | ~4 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace / ModelScope | Referencia de arquitectura; no se dispone de sus especificaciones en la busqueda |
-| Qwen2.5-VL-3B-Instruct | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Otro modelo del mismo autor (MscAbdelrahman1) |
+| MscAbdelrahman1/QWEN-ShopDetection | ~4,44 mil millones | no disponible | no disponible | Hugging Face, 294 descargas | Sin model card ni benchmarks |
+| Qwen3-VL-4B (modelo base de la familia) | ~4 mil millones | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face / ModelScope | Referencia de arquitectura; no se dispone de sus especificaciones en la busqueda |
+| Qwen2.5-VL-3B-Instruct | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Otro modelo del mismo autor (MscAbdelrahman1) |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa fiable. Las cifras de rendimiento, contexto y licencia de los modelos alternativos no aparecen en la informacion proporcionada.
 
@@ -90,8 +90,8 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MscAbdelrahman1/QWEN-ShopDetection
-- Perfil del autor en HuggingFace: https://huggingface.co/MscAbdelrahman1/models
+- Modelo en Hugging Face: https://huggingface.co/MscAbdelrahman1/QWEN-ShopDetection
+- Perfil del autor en Hugging Face: https://huggingface.co/MscAbdelrahman1/models
 - ModelScope (hub oficial de Qwen, citado en la busqueda): https://qwenalibaba.pro/modelscope/
 - Introduccion a la familia Qwen: https://beginnersinai.org/qwen-ai/
 - Articulo sobre lanzamientos recientes de Qwen: https://cybernews.com/tech/qwen-38-27b-ai-model-debuts-with-million-downloads/

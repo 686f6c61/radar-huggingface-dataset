@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny-Quant-Cancellation-Bench no es un modelo de lenguaje, sino un banco de pruebas reproducible publicado en HuggingFace por Samudhan S (@samudhan2003) para validar empíricamente una hipótesis sobre cuantización de precisión mixta. El repositorio examina si mezclar INT8 e INT4 por capas (INT8 en atención, INT4 en las capas MLP) produce cancelación de errores en lugar de acumulación, una idea planteada por Baseten Research en su estudio sobre cientos de modelos cuantizados. El trabajo se limita deliberadamente a modelos por debajo de 1000 millones de parámetros: distilgpt2 (82M) y gpt2-small (124M).
+Tiny-Quant-Cancellation-Bench no es un modelo de lenguaje, sino un banco de pruebas reproducible publicado en Hugging Face por Samudhan S (@samudhan2003) para validar empíricamente una hipótesis sobre cuantización de precisión mixta. El repositorio examina si mezclar INT8 e INT4 por capas (INT8 en atención, INT4 en las capas MLP) produce cancelación de errores en lugar de acumulación, una idea planteada por Baseten Research en su estudio sobre cientos de modelos cuantizados. El trabajo se limita deliberadamente a modelos por debajo de 1000 millones de parámetros: distilgpt2 (82M) y gpt2-small (124M).
 
 El benchmark compara cuatro configuraciones implementadas con bitsandbytes —FP16 como referencia, LLM.int8() en todas las capas lineales, NF4 de 4 bits en todas las capas y la configuración mixta objeto de estudio— midiendo throughput (tokens/s), calidad normalizada respecto a FP16, latencia P50 por token y VRAM pico. Todas las pruebas se ejecutan sobre una única NVIDIA T4 de 16 GB con perplejidad sobre WikiText-2 más un pequeño conjunto de generación reservado.
 
@@ -100,7 +100,7 @@ No se han identificado en la información proporcionada otros benchmarks abierto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/samudhan2003/Tiny-Quant-Cancellation-Bench
+- Repositorio en Hugging Face: https://huggingface.co/samudhan2003/Tiny-Quant-Cancellation-Bench
 - Perfil del autor: https://huggingface.co/samudhan2003
 - Estudio de referencia citado (Baseten Research, "We ran 100s of quantized models to see if quantization errors cancel out", Ali Taha, Philip Kiely et al.): no se proporciona URL en la información disponible
 - bitsandbytes (métodos LLM.int8() y NF4): no se proporciona URL en la información disponible

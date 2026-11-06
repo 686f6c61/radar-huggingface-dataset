@@ -85,12 +85,12 @@ No hay comparación publicada con modelos de propósito general. La comparación
 
 | Modelo | Orden | Pozos K | Perplejidad (bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `FO-b-PM2-PMX16` | Primero | 2 | 53,81 | cc-by-4.0 | HuggingFace |
-| `pm16-pmx16-sr2` (PMX-K16) | Segundo | 16 | 54,24 | cc-by-4.0 | HuggingFace |
-| `pm64-pmx16-sr2` (PMX) | Segundo | 64 | 54,63 | cc-by-4.0 | HuggingFace |
-| Este modelo (PM2-PMX16) | Segundo | 2 | 54,71 | cc-by-4.0 | HuggingFace |
-| `sr2` (sin pozos) | Segundo | 0 | 58,32 | cc-by-4.0 | HuggingFace |
-| `FO-b-OWT` (sin pozos, primer orden) | Primero | 0 | 61,16 | cc-by-4.0 | HuggingFace |
+| `FO-b-PM2-PMX16` | Primero | 2 | 53,81 | cc-by-4.0 | Hugging Face |
+| `pm16-pmx16-sr2` (PMX-K16) | Segundo | 16 | 54,24 | cc-by-4.0 | Hugging Face |
+| `pm64-pmx16-sr2` (PMX) | Segundo | 64 | 54,63 | cc-by-4.0 | Hugging Face |
+| Este modelo (PM2-PMX16) | Segundo | 2 | 54,71 | cc-by-4.0 | Hugging Face |
+| `sr2` (sin pozos) | Segundo | 0 | 58,32 | cc-by-4.0 | Hugging Face |
+| `FO-b-OWT` (sin pozos, primer orden) | Primero | 0 | 61,16 | cc-by-4.0 | Hugging Face |
 
 En la escalera de TinyStories (315 M tokens) el autor reporta 5,16 (segundo orden, `SO-TS`) frente a 5,13 (primer orden, `FO-TS`), diferencia de −0,6 %. Comparativa con modelos transformer de tamaño similar (p. ej. GPT-2 small o Pythia-160M): no disponible en la información proporcionada.
 
@@ -110,7 +110,7 @@ En la escalera de TinyStories (315 M tokens) el autor reporta 5,16 (segundo orde
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2
 - Gemelo de primer orden (FO-b-PM2-PMX16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm2-pmx16-sr2-fob
 - Variante con 64 pozos (PMX): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm64-pmx16-sr2
 - Variante con 16 pozos (PMX-K16): https://huggingface.co/dimitarpg13/semsimula-ladder-live-owt-d384-l2-none-norc-pm16-pmx16-sr2

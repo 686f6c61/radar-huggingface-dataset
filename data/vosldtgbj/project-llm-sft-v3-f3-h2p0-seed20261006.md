@@ -74,7 +74,7 @@ No se dispone de datos publicados de terceros comparables para este checkpoint c
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | `project-llm-sft-v3-f3-h2p0-seed20261006` (este modelo) | 11,96 B | No disponible | `apache-2.0` con enlace a licencia Gemma 4 | Pesos safetensors, 24,0 GB | SFT v3: 90% dominio / 10% general, 2,0 epocas, LR 2e-6 |
-| `project-llm-cpt-1p0-top10-01-full-02` (modelo base) | No disponible | No disponible | No disponible | Repositorio de HuggingFace | CPT 1.0 de una epoca; base sobre la que se aplica este SFT |
+| `project-llm-cpt-1p0-top10-01-full-02` (modelo base) | No disponible | No disponible | No disponible | Repositorio de Hugging Face | CPT 1.0 de una epoca; base sobre la que se aplica este SFT |
 | Gemma 4 (modelo upstream de la arquitectura) | No disponible en la informacion proporcionada | No disponible | Licencia Gemma 4 | Pesos oficiales de Google | Arquitectura `gemma4_unified` referenciada en la model card y en el enlace de licencia |
 
 No se han identificado en la busqueda web modelos alternativos de terceros con los que comparar parametros, contexto o rendimiento de forma verificable.
@@ -94,7 +94,7 @@ No se han identificado en la busqueda web modelos alternativos de terceros con l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-sft-v3-f3-h2p0-seed20261006
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-sft-v3-f3-h2p0-seed20261006
 - Modelo base (CPT 1.0): https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-01-full-02
 - Licencia de Gemma 4 referenciada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license
 - vLLM, motor de inferencia de alto rendimiento: https://github.com/vllm-project/vllm

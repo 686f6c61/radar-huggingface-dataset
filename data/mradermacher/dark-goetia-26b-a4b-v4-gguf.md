@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v4-GGUF
 - Repositorio del modelo original (referenciado en la model card): https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v4
 - Variante v2 del mismo autor: https://huggingface.co/mradermacher/Dark-Goetia-26B-A4B-v2-GGUF
 - Documentacion de Gemma 4 (posible base del modelo): https://ai.google.dev/gemma/docs/core/model_card_4

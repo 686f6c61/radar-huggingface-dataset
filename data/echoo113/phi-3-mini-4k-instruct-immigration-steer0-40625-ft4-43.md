@@ -73,7 +73,7 @@ El ajuste fino Echoo113 no tiene datos de rendimiento propios, por lo que no es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration-STEER0.40625-ft4.43
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration-STEER0.40625-ft4.43
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentación del modelo base: https://github.com/ttlmtang123/Phi-3-mini-4k-instruct

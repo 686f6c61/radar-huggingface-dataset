@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stable Audio 3 Medium es un modelo de generación de audio de texto a audio desarrollado por Stability AI, la tercera generación de su familia Stable Audio. Está diseñado para producir música y efectos de sonido a partir de descripciones textuales, resolviendo el problema de la síntesis de audio de alta calidad sin necesidad de muestras de referencia. El modelo se distribuye con pesos abiertos bajo la licencia Stable Audio Community, aunque su acceso en HuggingFace es restringido y requiere aceptar condiciones.
+Stable Audio 3 Medium es un modelo de generación de audio de texto a audio desarrollado por Stability AI, la tercera generación de su familia Stable Audio. Está diseñado para producir música y efectos de sonido a partir de descripciones textuales, resolviendo el problema de la síntesis de audio de alta calidad sin necesidad de muestras de referencia. El modelo se distribuye con pesos abiertos bajo la licencia Stable Audio Community, aunque su acceso en Hugging Face es restringido y requiere aceptar condiciones.
 
 Con 2.305.495.793 parámetros y un tamaño de repositorio de 10,4 GB, el modelo se presenta como una opción de tamaño medio dentro de la familia Stable Audio 3, que según Stability AI incluye tres modelos de pesos abiertos entrenados con datos totalmente licenciados. Está disponible a través de la librería `stable-audio-3`, que ofrece una plataforma simplificada para inferencia y fine-tuning, basada en las lecciones aprendidas de la anterior herramienta `stable-audio-tools`. Su relevancia actual radica en ofrecer una alternativa abierta y comercialmente viable para generación de audio profesional.
 
@@ -15,7 +15,7 @@ Con 2.305.495.793 parámetros y un tamaño de repositorio de 10,4 GB, el modelo 
 | Parametros activos | no aplicable (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | inglés (según metadatos de HuggingFace) |
+| Idiomas soportados | inglés (según metadatos de Hugging Face) |
 | Licencia | stable-audio-community (acceso restringido, requiere aceptación) |
 | Formato de pesos | safetensors |
 
@@ -60,7 +60,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo es restringido: requiere aceptar las condiciones de la licencia en HuggingFace, lo que puede limitar su uso en entornos automatizados o corporativos.
+- El acceso al modelo es restringido: requiere aceptar las condiciones de la licencia en Hugging Face, lo que puede limitar su uso en entornos automatizados o corporativos.
 - La licencia `stable-audio-community` tiene términos específicos que deben revisarse antes de un uso comercial; aunque los datos de entrenamiento están licenciados, la licencia del modelo puede imponer restricciones adicionales.
 - El modelo solo soporta inglés en los metadatos, lo que puede limitar la generación de audio a partir de descripciones en otros idiomas.
 - No se han publicado detalles sobre sesgos, alucinaciones o artefactos en el audio generado; como todo modelo generativo, puede producir resultados inesperados o de baja calidad en ciertos prompts.
@@ -69,8 +69,8 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stabilityai/stable-audio-3-medium
+- Hugging Face: https://huggingface.co/stabilityai/stable-audio-3-medium
 - Página oficial de Stable Audio 3.0: https://stability.ai/stable-audio
 - Repositorio GitHub: https://github.com/Stability-AI/stable-audio-3
 - README en GitHub: https://github.com/Stability-AI/stable-audio-3/blob/main/README.md
-- README en HuggingFace: https://huggingface.co/stabilityai/stable-audio-3-medium/blob/main/README.md
+- README en Hugging Face: https://huggingface.co/stabilityai/stable-audio-3-medium/blob/main/README.md

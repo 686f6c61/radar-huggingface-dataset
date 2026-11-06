@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-NER-Decoder (este modelo) | 0,5B + LoRA | no disponible | NER generativo con salida JSON | Apache 2.0 | Adaptador LoRA en HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | no disponible en esta ficha | Modelo base conversacional | Apache 2.0 | Pesos completos en HuggingFace |
-| Modelos NER tipo BERT (p. ej. bert-base-NER) | ~110M | 512 tokens | Clasificacion token a token (BIO) | variable segun modelo | Pesos completos en HuggingFace |
+| Qwen-NER-Decoder (este modelo) | 0,5B + LoRA | no disponible | NER generativo con salida JSON | Apache 2.0 | Adaptador LoRA en Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | no disponible en esta ficha | Modelo base conversacional | Apache 2.0 | Pesos completos en Hugging Face |
+| Modelos NER tipo BERT (p. ej. bert-base-NER) | ~110M | 512 tokens | Clasificacion token a token (BIO) | variable segun modelo | Pesos completos en Hugging Face |
 
 La comparacion con modelos NER basados en BERT es cualitativa: el enfoque generativo de este adaptador devuelve JSON directamente, mientras que los modelos tipo BERT requieren postprocesado de etiquetas BIO. No se dispone de datos de rendimiento comparables en la informacion proporcionada para establecer una comparacion cuantitativa.
 
@@ -95,6 +95,6 @@ La comparacion con modelos NER basados en BERT es cualitativa: el enfoque genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ullahhafeez321/Qwen-NER-Decoder
+- Modelo en Hugging Face: https://huggingface.co/ullahhafeez321/Qwen-NER-Decoder
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset CoNLL-2003 (version usada): https://huggingface.co/datasets/lhoestq/conll2003

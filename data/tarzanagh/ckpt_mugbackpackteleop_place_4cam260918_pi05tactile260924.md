@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi-0.5 + táctil) | 3,62 B | no disponible | Error en bucle abierto 0,023-0,046 rad según grupo articular | Gemma | Checkpoint público en HuggingFace |
-| pi-0.5 sin táctil (`..._pi05260924`) | no disponible | no disponible | Entre 3 y 4 veces peor que GR00T según el autor | no disponible en la información | Checkpoint público en HuggingFace |
-| GR00T 3B (`..._gr00t3b260924` y variante táctil) | no disponible (el identificador sugiere ~3 B; sin confirmar) | no disponible | El error más bajo de las familias terminadas en esta tarea | no disponible en la información | Checkpoint público en HuggingFace |
-| ACT (`..._act260924` y variante táctil) | no disponible | no disponible | Peor que GR00T, en el mismo orden que pi-0.5 | no disponible en la información | Checkpoint público en HuggingFace |
+| Este modelo (pi-0.5 + táctil) | 3,62 B | no disponible | Error en bucle abierto 0,023-0,046 rad según grupo articular | Gemma | Checkpoint público en Hugging Face |
+| pi-0.5 sin táctil (`..._pi05260924`) | no disponible | no disponible | Entre 3 y 4 veces peor que GR00T según el autor | no disponible en la información | Checkpoint público en Hugging Face |
+| GR00T 3B (`..._gr00t3b260924` y variante táctil) | no disponible (el identificador sugiere ~3 B; sin confirmar) | no disponible | El error más bajo de las familias terminadas en esta tarea | no disponible en la información | Checkpoint público en Hugging Face |
+| ACT (`..._act260924` y variante táctil) | no disponible | no disponible | Peor que GR00T, en el mismo orden que pi-0.5 | no disponible en la información | Checkpoint público en Hugging Face |
 | Diffusion Policy y T-Rex | no disponible | no disponible | Entrenamiento en curso al publicar la ficha | no disponible en la información | Sin resultados aún |
 
 La comparación cuantitativa directa entre familias no es posible con los datos publicados: solo se ofrece la tabla de error de este checkpoint y una afirmación cualitativa sobre el orden relativo de GR00T, pi-0.5 y ACT.
@@ -109,7 +109,7 @@ La comparación cuantitativa directa entre familias no es posible con los datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05tactile260924
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05tactile260924
 - Checkpoint GR00T 3B de la misma tarea: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
 - Checkpoint GR00T 3B con táctil: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924
 - Checkpoint pi-0.5 sin táctil: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05260924

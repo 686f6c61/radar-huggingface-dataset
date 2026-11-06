@@ -30,13 +30,13 @@ La relevancia de este repositorio es práctica: permite desplegar un modelo de ~
 
 No se dispone de información sobre la arquitectura interna del modelo base más allá de lo que sugiere su nombre: un modelo de ~30,7B parámetros de la familia Gemma, presumiblemente un transformer decoder denso con ajuste de instrucciones ("-it"). Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o RLVR. El repositorio analizado es exclusivamente una conversión de pesos: no documenta ningún proceso de entrenamiento propio.
 
-La única información técnica verificable es la relativa a la cuantización. El autor emplea cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1) con conversión desde pesos HuggingFace (convert_type: hf), e incluye tanto k-quants (Q2_K a Q6_K, Q8_0) como i-quants (IQ4_XS). No se documenta ninguna innovación arquitectónica adicional, decodificación especulativa, atención lineal ni mecanismo híbrido.
+La única información técnica verificable es la relativa a la cuantización. El autor emplea cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1) con conversión desde pesos Hugging Face (convert_type: hf), e incluye tanto k-quants (Q2_K a Q6_K, Q8_0) como i-quants (IQ4_XS). No se documenta ninguna innovación arquitectónica adicional, decodificación especulativa, atención lineal ni mecanismo híbrido.
 
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta "conversational" del repositorio indica que está orientado a diálogo multi-turno; no se detalla el formato de prompt ni la plantilla de chat.
 - Seguimiento de instrucciones: el sufijo "-it" del modelo base sugiere ajuste para instrucciones, aunque no está confirmado en la información disponible.
-- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el repositorio puede desplegarse a través de HuggingFace Inference Endpoints con el runtime de llama.cpp.
+- Compatibilidad con endpoints: la etiqueta "endpoints_compatible" indica que el repositorio puede desplegarse a través de Hugging Face Inference Endpoints con el runtime de llama.cpp.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (no se declara ningún idioma).

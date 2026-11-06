@@ -82,7 +82,7 @@ No disponible. El paquete no es un modelo y no se ha identificado ningun modelo 
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento (benchmarks) | no publicado | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | repositorio HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | repositorio Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No disponible. El paquete no es un modelo y no se ha identificado ningun modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-mtl20261004-pre-pre-m01-c-s2-2000-ffb99a1a18ee
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-mtl20261004-pre-pre-m01-c-s2-2000-ffb99a1a18ee
 - Model card del autor: incluida en el repositorio anterior (receta canonica `reports/2026-10-04_mtl_submission`)
 
 Los resultados de busqueda web obtenidos no guardan relacion con este repositorio. Se listan a continuacion unicamente como registro de lo recuperado, sin valor como fuente sobre el modelo:

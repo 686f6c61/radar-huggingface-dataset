@@ -96,7 +96,7 @@ La variante int4 del mismo autor reduce el tamaño a 973 MB con similitud coseno
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-mlx-int8
+- Repositorio Hugging Face: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-mlx-int8
 - Modelo original: https://huggingface.co/jinaai/jina-embeddings-v5-omni-nano
 - Variante int4: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-mlx-int4
 - Documentación de uso (USAGE.md): incluida en el repositorio del modelo

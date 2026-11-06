@@ -101,7 +101,7 @@ Datos cuantitativos de rendimiento comparado: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasz-staniszewski/audioldm2-caa-mood
+- Modelo en Hugging Face: https://huggingface.co/lukasz-staniszewski/audioldm2-caa-mood
 - Paper referenciado en la model card: https://huggingface.co/papers/2602.11910
 - Modelo base: https://huggingface.co/cvssp/audioldm2-large
 - Repositorio del codigo de steering (`src.steering`): no disponible en la informacion proporcionada

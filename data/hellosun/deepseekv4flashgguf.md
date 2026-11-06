@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento en benchmarks estándar para este reposito
 
 | Alternativa | Relación | Tamaño | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `HelloSun/deepseekv4flashgguf` (este repo) | Motor SDQ para `deepseek4` | 127,27 GiB (pesos referenciados, no incluidos) | 1.048.576 tokens | 0,69–1,71 tok/s en CPU (16 vCPU, 4–32 GiB) | other | Público en HuggingFace; 0 descargas, 0 likes |
+| `HelloSun/deepseekv4flashgguf` (este repo) | Motor SDQ para `deepseek4` | 127,27 GiB (pesos referenciados, no incluidos) | 1.048.576 tokens | 0,69–1,71 tok/s en CPU (16 vCPU, 4–32 GiB) | other | Público en Hugging Face; 0 descargas, 0 likes |
 | `unsloth/DeepSeek-V4-Flash-0731-GGUF` | Pesos upstream en UD-IQ4_NL | 127,27 GiB en 4 shards | 1.048.576 tokens (según metadata) | no disponible | no disponible | Público; sin datos de rendimiento en la información |
 | `HelloSun/Qwen3.8-Flash-Next-GGUF` (`sdq-qwen38/`) | Variante SDQ previa, modelo objetivo `qwen4exp` | no disponible | no disponible | no disponible | no disponible | Público; base de la que se partió |
 | `llama.cpp` sin SDQ | Motor estándar sobre los mismos GGUF | no aplica | no aplica | no disponible | MIT (no confirmado en la información) | Público |
@@ -112,7 +112,7 @@ Comparativas con modelos de la misma categoría y tamaño (por ejemplo, otros Mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HelloSun/deepseekv4flashgguf
+- Repositorio en Hugging Face: https://huggingface.co/HelloSun/deepseekv4flashgguf
 - Pesos upstream en UD-IQ4_NL: https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF
 - Repositorio SDQ previo para `qwen4exp`: https://huggingface.co/HelloSun/Qwen3.8-Flash-Next-GGUF
 - Motor base: https://github.com/ggml-org/llama.cpp

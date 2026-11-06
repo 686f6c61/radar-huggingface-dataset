@@ -71,6 +71,6 @@ No disponible. No se conocen modelos comparables en el ecosistema de ML convenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/MACROGROK
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/MACROGROK
 - Referencia AGC (Virtual AGC Manual): https://www.ibiblio.org/apollo/assembly_language_manual.html
 - AGC en Wikipedia: https://en.wikipedia.org/wiki/Apollo_Guidance_Computer

@@ -13,7 +13,7 @@ Es relevante porque permite ejecutar localmente un modelo de 27B con capacidades
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso, vision-language, con cabeza MTP (decodificacion especulativa) |
-| Parametros totales | 27.000 millones (nominal; la metadata de HuggingFace indica 5.848.822.512, probablemente un error de registro) |
+| Parametros totales | 27.000 millones (nominal; la metadata de Hugging Face indica 5.848.822.512, probablemente un error de registro) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (el modelo base Qwen3.8-27B soporta hasta 256K tokens, pero no se confirma en esta conversion) |
 | Tipos de cuantizacion | 4-bit MLX (affine, group-64); tambien disponible en GGUF (Q4_K_M y otros) |
@@ -79,7 +79,7 @@ No se dispone de comparativas con otros modelos abliterated de tamano similar (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/chimingw/Qwen3.8-27B-Uncensored-OrcaRouter-MLX-4bit
 - Modelo padre (GGUF): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
 - Repositorio GitHub relacionado: https://github.com/Wassimyounes01/qwen38-uncensored
 - Articulo sobre especificaciones y requisitos de Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

@@ -60,7 +60,7 @@ Estos valores son bajos en comparacion con modelos de captioning mas recientes (
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para establecer una comparativa rigurosa con otros modelos de captioning. Existen alternativas publicas en HuggingFace como `bipin/image-caption-generator` (tambien entrenado en Flickr8k) o `Anas1010/flickr8k-image-caption-generator`, pero no se han encontrado metricas comparables ni detalles de arquitectura para este modelo concreto. Por tanto, la comparativa se considera no disponible.
+No se dispone de informacion suficiente para establecer una comparativa rigurosa con otros modelos de captioning. Existen alternativas publicas en Hugging Face como `bipin/image-caption-generator` (tambien entrenado en Flickr8k) o `Anas1010/flickr8k-image-caption-generator`, pero no se han encontrado metricas comparables ni detalles de arquitectura para este modelo concreto. Por tanto, la comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
@@ -73,6 +73,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mennashi31/image-caption-generator-flickr8k
+- Hugging Face: https://huggingface.co/mennashi31/image-caption-generator-flickr8k
 - Repositorio GitHub: https://github.com/mennashiref/task6
 - Referencia de la tarea (Flickr8k): https://www.geeksforgeeks.org/deep-learning/image-caption-generator-using-deep-learning-on-flickr8k-dataset/

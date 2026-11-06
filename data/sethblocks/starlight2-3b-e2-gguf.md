@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Starlight2-3B-e2-GGUF es una cuantizacion en formato GGUF del modelo Starlight2-3B-e2, publicada por el usuario Sethblocks en HuggingFace. Se trata de un modelo conversacional de aproximadamente 2.697 millones de parametros (2,7B), derivado del checkpoint base Sethblocks/Starlight2-3B-e2 mediante conversion al formato GGUF. El repositorio ocupa 7,1 GB, lo que indica que incluye varias cuantizaciones del mismo modelo.
+Starlight2-3B-e2-GGUF es una cuantizacion en formato GGUF del modelo Starlight2-3B-e2, publicada por el usuario Sethblocks en Hugging Face. Se trata de un modelo conversacional de aproximadamente 2.697 millones de parametros (2,7B), derivado del checkpoint base Sethblocks/Starlight2-3B-e2 mediante conversion al formato GGUF. El repositorio ocupa 7,1 GB, lo que indica que incluye varias cuantizaciones del mismo modelo.
 
 La model card es extremadamente escueta y se limita a indicar que el modelo es "usable en llama.cpp", que es "experimental" y que se debe "solicitar acceso". La etiqueta `lfm2` sugiere que la arquitectura subyacente pertenece a la familia LFM2 (Liquid Foundation Models 2) de Liquid AI, aunque el autor no lo confirma explicitamente en la documentacion disponible. La licencia es "other" (no estandar), sin que se detallen sus terminos.
 
@@ -33,7 +33,7 @@ Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del
 
 - Generacion de texto conversacional: el tag `conversational` indica que el modelo esta orientado a dialogue multi-turno, aunque no se detalla su formato de prompt ni sus plantillas de chat.
 - Uso en llama.cpp: el autor afirma explicitamente que es "usable in llama.cpp", lo que implica compatibilidad con el ecosistema GGUF y con los runners derivados (llama.cpp, Ollama, LM Studio, etc.).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia tipo HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia tipo Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declara ningun idioma).
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Starlight2-3B-e2-GGUF | 2,7B | no disponible | other (no especificada) | HuggingFace, GGUF | no disponible |
-| Liquid AI LFM2-2.6B | ~2,6B | 32.768 tokens (segun documentacion publica de Liquid AI, no verificada en esta ficha) | licencia LFM Open License | HuggingFace, GGUF y safetensors | no disponible en esta ficha |
-| Qwen2.5-3B-Instruct | ~3,1B | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, GGUF y safetensors | no disponible en esta ficha |
-| Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, GGUF y safetensors | no disponible en esta ficha |
+| Starlight2-3B-e2-GGUF | 2,7B | no disponible | other (no especificada) | Hugging Face, GGUF | no disponible |
+| Liquid AI LFM2-2.6B | ~2,6B | 32.768 tokens (segun documentacion publica de Liquid AI, no verificada en esta ficha) | licencia LFM Open License | Hugging Face, GGUF y safetensors | no disponible en esta ficha |
+| Qwen2.5-3B-Instruct | ~3,1B | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, GGUF y safetensors | no disponible en esta ficha |
+| Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, GGUF y safetensors | no disponible en esta ficha |
 
 La comparacion se limita a parametros, contexto y licencia, ya que no existe ningun dato de rendimiento publicado para Starlight2-3B-e2. Los datos de los modelos alternativos provienen de su documentacion publica y no se han verificado de forma independiente en esta ficha.
 

@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Idiomas | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| fgeeha/siglip2-wine | 428.256.706 | 384x384, parche 16 | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| google/siglip2-so400m-patch16-384 (base) | No disponible | 384x384, parche 16 | Multilingue segun el articulo de SigLIP 2 | Apache 2.0 | HuggingFace | Evaluado por Google en el articulo de SigLIP 2 |
-| openai/clip-vit-large-patch14 | Aproximadamente 428 millones (304 M de visión y 123 M de texto; cifra ampliamente citada, no verificada en la informacion disponible) | 224x224, parche 14 | Ingles principalmente | Licencia MIT, segun el repositorio original | HuggingFace, muy extendido | Benchmarks publicos en el articulo de CLIP |
-| google/siglip2-base-patch16-384 | No disponible | 384x384, parche 16 | Multilingue segun el articulo de SigLIP 2 | Apache 2.0 | HuggingFace | Evaluado por Google en el articulo de SigLIP 2 |
+| fgeeha/siglip2-wine | 428.256.706 | 384x384, parche 16 | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| google/siglip2-so400m-patch16-384 (base) | No disponible | 384x384, parche 16 | Multilingue segun el articulo de SigLIP 2 | Apache 2.0 | Hugging Face | Evaluado por Google en el articulo de SigLIP 2 |
+| openai/clip-vit-large-patch14 | Aproximadamente 428 millones (304 M de visión y 123 M de texto; cifra ampliamente citada, no verificada en la informacion disponible) | 224x224, parche 14 | Ingles principalmente | Licencia MIT, segun el repositorio original | Hugging Face, muy extendido | Benchmarks publicos en el articulo de CLIP |
+| google/siglip2-base-patch16-384 | No disponible | 384x384, parche 16 | Multilingue segun el articulo de SigLIP 2 | Apache 2.0 | Hugging Face | Evaluado por Google en el articulo de SigLIP 2 |
 
 La comparación relevante es de especializacion, no de tamaño: el modelo base generalista cubre un espacio semantico mucho mas amplio, mientras que siglip2-wine esta ajustado a un catalogo de 2103 vinos y probablemente lo supere en ese dominio concreto, a costa de degradar su comportamiento fuera de el. No hay datos publicos que permitan cuantificar esa diferencia.
 
@@ -94,7 +94,7 @@ La comparación relevante es de especializacion, no de tamaño: el modelo base g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fgeeha/siglip2-wine
+- Modelo en Hugging Face: https://huggingface.co/fgeeha/siglip2-wine
 - Indice asociado: https://huggingface.co/fgeeha/wine-scanner-index
 - Modelo base: https://huggingface.co/google/siglip2-so400m-patch16-384
 - Articulo de SigLIP 2: https://arxiv.org/abs/2502.14786

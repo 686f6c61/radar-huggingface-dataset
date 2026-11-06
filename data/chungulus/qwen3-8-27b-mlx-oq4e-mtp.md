@@ -75,6 +75,6 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-oQ4e-MTP
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/Qwen3.8-27B-MLX-oQ4e-MTP
 - Runtime oMLX (GitHub): https://github.com/jundot/omlx (revisión `71b9d52039c3058041c5029fdb3d3e833d13d624`)
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-27B (no verificado)

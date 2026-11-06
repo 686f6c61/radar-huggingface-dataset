@@ -90,7 +90,7 @@ La comparación directa con alternativas de 65B densas no está disponible en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
+- Modelo en Hugging Face: https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
 - Variante BF16 instruct: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Variante NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Variante DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2

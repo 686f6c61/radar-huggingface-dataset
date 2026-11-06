@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BURGUES/Cass es un repositorio publicado en HuggingFace por el usuario BURGUES el 21 de septiembre de 2026, con licencia Apache 2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene ninguna pipeline declarada en los metadatos de la plataforma. La model card asociada contiene unicamente la linea de licencia (`license: apache-2.0`), sin descripcion, sin instrucciones de uso y sin referencias a documentacion externa.
+BURGUES/Cass es un repositorio publicado en Hugging Face por el usuario BURGUES el 21 de septiembre de 2026, con licencia Apache 2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene ninguna pipeline declarada en los metadatos de la plataforma. La model card asociada contiene unicamente la linea de licencia (`license: apache-2.0`), sin descripcion, sin instrucciones de uso y sin referencias a documentacion externa.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los idiomas soportados. Tampoco hay pesos, configuraciones o tokenizadores documentados en la informacion proporcionada, por lo que no es posible verificar que el repositorio contenga artefactos utilizables para inferencia.
 
-La relevancia de esta ficha es, por tanto, limitada y de caracter esencialmente descriptivo: sirve para dejar constancia de que el modelo existe como entrada en HuggingFace, pero no aporta elementos suficientes para evaluarlo tecnicamente ni para recomendarlo en un entorno de produccion. Cualquier dato adicional requeriria consultar directamente el repositorio o contactar con el autor.
+La relevancia de esta ficha es, por tanto, limitada y de caracter esencialmente descriptivo: sirve para dejar constancia de que el modelo existe como entrada en Hugging Face, pero no aporta elementos suficientes para evaluarlo tecnicamente ni para recomendarlo en un entorno de produccion. Cualquier dato adicional requeriria consultar directamente el repositorio o contactar con el autor.
 
 ## Especificaciones tecnicas
 
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BURGUES/Cass
+- Hugging Face: https://huggingface.co/BURGUES/Cass
 - No se han encontrado papers, repositorios de codigo, demos ni entradas de blog asociados al modelo en la busqueda web realizada. Los resultados devueltos por el buscador correspondian a foros de soporte sobre Facebook y no guardan relacion con el modelo.

@@ -68,7 +68,7 @@ No se dispone de datos comparativos directos con otros modelos de 2B. Como refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dalatexcoder/Qwen3.8-2B-Heretic-MLX-4.83bit-Mixed
+- Hugging Face: https://huggingface.co/dalatexcoder/Qwen3.8-2B-Heretic-MLX-4.83bit-Mixed
 - Modelo base: https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Heretic-Balanced
 - Heretic (herramienta de eliminación de censura): https://github.com/p-e-w/heretic
 - Empero (laboratorio de destilación): https://empero.org/

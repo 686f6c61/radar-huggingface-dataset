@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del checkpoint `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (unos 124,8 millones), entrenado con la libreria TRL sobre un corpus cuyo nombre sugiere un dataset en italiano de aproximadamente 100 MB, con secuencias empaquetadas y un subconjunto de 10 MB. El identificador indica que corresponde al checkpoint 500 de una ejecucion con semilla 3407.
+El modelo `francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del checkpoint `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parametros (unos 124,8 millones), entrenado con la libreria TRL sobre un corpus cuyo nombre sugiere un dataset en italiano de aproximadamente 100 MB, con secuencias empaquetadas y un subconjunto de 10 MB. El identificador indica que corresponde al checkpoint 500 de una ejecucion con semilla 3407.
 
 No se trata de un modelo de proposito general ni de un lanzamiento de produccion: no tiene descargas ni likes, la licencia no esta especificada y la model card se limita a la plantilla autogenerada por TRL. Por su tamano y contexto, encaja en la categoria de modelos pequenos de investigacion, utiles para experimentar con tokenizadores, tecnicas de empaquetado de datos y *training runs* reproducibles mas que para despliegues reales.
 
@@ -12,7 +12,7 @@ Su relevancia es por tanto acotada y experimental: sirve como punto de partida r
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 (124,77 M) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (la arquitectura GPT-2 suele operar con 1024 tokens, pero no se confirma en la informacion proporcionada) |
@@ -74,7 +74,7 @@ Los datos de los modelos comparativos proceden de sus fichas publicas habituales
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 (124M) | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible |
 | Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Ampliamente disponible |
 | Modelos GPT-2 ajustados a italiano de la comunidad | variable | habitualmente 1024 tokens | variable | Variable |
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rnqnfqwx
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -89,9 +89,9 @@ No se han publicado en la información disponible resultados de benchmarks de le
 
 | Modelo | Framework | Parametros | Geometria de enmascarado | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mae_r6cm_L1` (este modelo) | MAE | 12,69 M | r = 6 cm, L = 1 parche, pct_unmasked = 0,45 | EEG a 200 Hz, parches de 1 s | CC-BY-4.0 | HuggingFace |
-| `mae_r9cm_L2` | MAE | No disponible | r = 9 cm, L = 2 parches | EEG a 200 Hz, parches de 1 s | CC-BY-4.0 | HuggingFace; recomendado por los autores |
-| `jepa_r9cm_L2` | JEPA | No disponible | r = 9 cm, L = 2 parches | EEG a 200 Hz, parches de 1 s | CC-BY-4.0 | HuggingFace; recomendado por los autores |
+| `mae_r6cm_L1` (este modelo) | MAE | 12,69 M | r = 6 cm, L = 1 parche, pct_unmasked = 0,45 | EEG a 200 Hz, parches de 1 s | CC-BY-4.0 | Hugging Face |
+| `mae_r9cm_L2` | MAE | No disponible | r = 9 cm, L = 2 parches | EEG a 200 Hz, parches de 1 s | CC-BY-4.0 | Hugging Face; recomendado por los autores |
+| `jepa_r9cm_L2` | JEPA | No disponible | r = 9 cm, L = 2 parches | EEG a 200 Hz, parches de 1 s | CC-BY-4.0 | Hugging Face; recomendado por los autores |
 | Otros modelos fundacionales de EEG (LaBraM, BIOT, EEGPT) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La informacion proporcionada no incluye comparaciones numericas contra modelos fundacionales de EEG ajenos a esta familia; la unica comparacion controlada disponible es interna, entre las 58 variantes de geometria de enmascarado del mismo estudio.
@@ -108,11 +108,11 @@ La informacion proporcionada no incluye comparaciones numericas contra modelos f
 - Sesgos conocidos: no se documentan analisis de sesgo por edad, sexo, etnia o centro clinico en la informacion disponible; al tratarse de datos de EEG, las diferencias de montaje y de calidad de senal entre centros pueden inducir sesgos sistematicos.
 - Restricciones de licencia: los pesos son CC-BY-4.0, lo que permite uso comercial siempre que se atribuya la autoria y se cite el paper; el codigo es MIT. No se declara ninguna restriccion adicional de uso clinico, pero tampoco certificacion medica alguna.
 - Advertencia para produccion: resultados obtenidos con encoder congelado y sonda ridge; cualquier uso clinico real requeriria ajuste fino, validacion externa y cumplimiento normativo especifico.
-- Fecha de publicacion registrada en HuggingFace: 2026-09-27 (dato tal cual figura en el repositorio).
+- Fecha de publicacion registrada en Hugging Face: 2026-09-27 (dato tal cual figura en el repositorio).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L1
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L1
 - Variante recomendada (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Variante recomendada (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

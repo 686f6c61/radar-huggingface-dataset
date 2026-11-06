@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AutoStrip es un modelo publicado en HuggingFace por el usuario JiamengLiu-uBEST bajo el identificador JiamengLiu-uBEST/AutoStrip. Segun la unica descripcion disponible en su model card, se trata de un modelo para "Lifespan Human Brain Extraction from sMRI Data", es decir, extraccion de cerebro (habitualmente conocida como skull stripping) a partir de resonancia magnetica estructural (sMRI) a lo largo de todo el ciclo vital humano.
+AutoStrip es un modelo publicado en Hugging Face por el usuario JiamengLiu-uBEST bajo el identificador JiamengLiu-uBEST/AutoStrip. Segun la unica descripcion disponible en su model card, se trata de un modelo para "Lifespan Human Brain Extraction from sMRI Data", es decir, extraccion de cerebro (habitualmente conocida como skull stripping) a partir de resonancia magnetica estructural (sMRI) a lo largo de todo el ciclo vital humano.
 
 La informacion publicada es extremadamente escasa: la model card se limita a la linea de licencia (apache-2.0) y a esa frase descriptiva. No se especifican arquitectura, numero de parametros, tamano de entrada, resolucion de las imagenes, datos de entrenamiento ni metricas de evaluacion. El repositorio registra 0 descargas y 0 likes en el momento de redactar esta ficha, y las fechas de creacion y actualizacion indicadas son 2026-09-17.
 
@@ -73,7 +73,7 @@ La informacion proporcionada no incluye ningun modelo comparable ni datos de com
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AutoStrip | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
+| AutoStrip | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas del dominio (SynthStrip, HD-BET, ROBEX) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ La informacion proporcionada no incluye ningun modelo comparable ni datos de com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JiamengLiu-uBEST/AutoStrip
+- Modelo en Hugging Face: https://huggingface.co/JiamengLiu-uBEST/AutoStrip
 - Paper, blog, repositorio o demo: no disponible
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo; las busquedas devolvieron unicamente paginas de soporte de navegadores sin relacion con el contenido.

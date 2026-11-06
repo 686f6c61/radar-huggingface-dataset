@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AutoAEG_ckpt es un repositorio de checkpoints PEFT (adaptadores LoRA) publicado por el usuario zihan-audio (Zihan Zhang) en HuggingFace. No contiene un modelo completo, sino un conjunto de adaptadores de ajuste fino pensados para acoplarse a un modelo base Qwen3-Omni que no se distribuye en el repositorio. El objetivo declarado es el "audio event grounding" (AEG) en vocabulario abierto: localizar temporalmente eventos sonoros en un audio a partir de consultas en lenguaje natural, devolviendo intervalos de inicio y fin (onsets y offsets).
+AutoAEG_ckpt es un repositorio de checkpoints PEFT (adaptadores LoRA) publicado por el usuario zihan-audio (Zihan Zhang) en Hugging Face. No contiene un modelo completo, sino un conjunto de adaptadores de ajuste fino pensados para acoplarse a un modelo base Qwen3-Omni que no se distribuye en el repositorio. El objetivo declarado es el "audio event grounding" (AEG) en vocabulario abierto: localizar temporalmente eventos sonoros en un audio a partir de consultas en lenguaje natural, devolviendo intervalos de inicio y fin (onsets y offsets).
 
 El repositorio agrupa tres adaptadores de la cadena experimental AutoAEG: un adaptador SFT final entrenado desde cero sobre el conjunto `sft10k_v3`, un adaptador GRPO con recompensa de IoU estructurado más RMS/span inicializado desde ese SFT, y un adaptador GRPO con recompensa de IoU estructurado más CLS/span, en el paso global 1300. Se incluyen además artefactos auxiliares de entrenamiento: un adaptador LoRA de referencia fijo para el término KL del GRPO y una caché de plantillas de recompensa CLS.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - El repositorio completo ocupa 0,2 GB, un tamano compatible con cualquier GPU, ya que contiene unicamente los pesos del adaptador y artefactos auxiliares.
 - GPU recomendadas: no disponible; dependera del modelo base. Procesar audio y mantener el modelo de lenguaje asociado suele requerir aceleradores con memoria dedicada, pero no se aportan cifras en la informacion disponible.
 - Compatibilidad con GPU de consumo: no disponible; no puede determinarse sin conocer los requisitos del modelo base.
-- Opciones de despliegue: al ser un checkpoint PEFT, es compatible con el ecosistema HuggingFace PEFT/Transformers para cargar el adaptador sobre el modelo base. No se documentan integraciones especificas con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
+- Opciones de despliegue: al ser un checkpoint PEFT, es compatible con el ecosistema Hugging Face PEFT/Transformers para cargar el adaptador sobre el modelo base. No se documentan integraciones especificas con vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -81,9 +81,9 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zihan-audio/AutoAEG_ckpt
-- Perfil del autor en HuggingFace: https://huggingface.co/zihan-audio/datasets
-- Pagina del articulo en HuggingFace Papers (Auto-AEG: Scalable Data Construction for Open-Vocabulary Audio Event Grounding): https://huggingface.co/papers/2607.04383
+- Modelo en Hugging Face: https://huggingface.co/zihan-audio/AutoAEG_ckpt
+- Perfil del autor en Hugging Face: https://huggingface.co/zihan-audio/datasets
+- Pagina del articulo en Hugging Face Papers (Auto-AEG: Scalable Data Construction for Open-Vocabulary Audio Event Grounding): https://huggingface.co/papers/2607.04383
 - PDF del articulo: https://arxiv.org/pdf/2607.04383v3
 - Version HTML del articulo: https://arxiv.org/html/2607.04383v4
 - Repositorio de terceros con listados de modelos gratuitos citado en la busqueda (no relacionado con el modelo): https://github.com/ClawLabsAI/free-ai-models

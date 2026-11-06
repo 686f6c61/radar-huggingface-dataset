@@ -23,7 +23,7 @@ La relevancia actual del modelo reside en su enfoque de un solo paso para tareas
 
 ## Arquitectura y entrenamiento
 
-LightOnOCR-3-1B es un modelo de visión-lenguaje (pipeline `image-text-to-text`) que sigue la arquitectura del LightOnOCR-2-1B previo, etiquetada como `mistral3` en HuggingFace. Las otras dos variantes de la familia (0,8B y 4B) adoptan la arquitectura visión-lenguaje de Qwen3.5, pero la variante de 1B se mantiene deliberadamente sobre el diseño anterior para facilitar la migración desde despliegues de LightOnOCR-2 sin cambios de integración.
+LightOnOCR-3-1B es un modelo de visión-lenguaje (pipeline `image-text-to-text`) que sigue la arquitectura del LightOnOCR-2-1B previo, etiquetada como `mistral3` en Hugging Face. Las otras dos variantes de la familia (0,8B y 4B) adoptan la arquitectura visión-lenguaje de Qwen3.5, pero la variante de 1B se mantiene deliberadamente sobre el diseño anterior para facilitar la migración desde despliegues de LightOnOCR-2 sin cambios de integración.
 
 Según la información disponible, la generación LightOnOCR-3 mejora la velocidad y la calidad de transcripción respecto a la generación anterior e introduce capacidades de comprensión visual: el modelo emite coordenadas de cajas delimitadoras con etiquetas por tipo de bloque, descripciones breves de imágenes y datos numéricos de figuras y gráficos convertidos a tablas HTML. No se detallan en la información proporcionada el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. El modelo se carga con las clases `LightOnOcr` de Transformers.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cuanti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightonai/LightOnOCR-3-1B
+- Modelo en Hugging Face: https://huggingface.co/lightonai/LightOnOCR-3-1B
 - Paper: https://arxiv.org/pdf/2601.14251
 - Paper adicional (tag del modelo): https://arxiv.org/abs/2412.13663
 - Blog: https://huggingface.co/blog/lightonai/lightonocr-3

@@ -41,7 +41,7 @@ Sobre el entrenamiento concreto de este derivado no hay informacion publicada: n
 - Generacion de texto creativo sin mecanismos de rechazo incorporados: el modelo no declina peticiones por contenido.
 - Ejecucion local completa, sin dependencia de API ni conexion a internet.
 - Integracion con `llama.cpp` en modo CLI y servidor HTTP, `llama-cpp-python`, Ollama y LM Studio.
-- Compatible con endpoints (`endpoints_compatible` en los tags) y con el pipeline `text-generation` de HuggingFace.
+- Compatible con endpoints (`endpoints_compatible` en los tags) y con el pipeline `text-generation` de Hugging Face.
 - Capacidades multimodales: no disponibles (el modelo es solo texto).
 - Soporte de tool calling o function calling: no documentado en la informacion disponible.
 - Modo de razonamiento explicito (thinking) o audio: no disponibles.
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/tinyopsec/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/tinyopsec/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored-GGUF
 - Modelo base del que se cuantiza: https://huggingface.co/DavidAU/Llama-3.2-3B-Instruct-heretic-ablitered-uncensored
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Perfil del autor de la cuantizacion: https://huggingface.co/tinyopsec

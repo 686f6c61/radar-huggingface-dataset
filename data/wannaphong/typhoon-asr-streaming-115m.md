@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Typhoon ASR Streaming 115M es un modelo de reconocimiento automatico del habla (ASR) en tailandes con arquitectura FastConformer-Transducer (RNN-T) y capacidad de decodificacion en streaming cache-aware. Lo publica el usuario wannaphong en HuggingFace y deriva de scb10x/typhoon-asr-realtime, que a su vez procede de nvidia/stt_en_fastconformer_transducer_large. El modelo resuelve un problema concreto: el modelo base de contexto completo degrada su precision hasta un 62,8 % de CER cuando se le fuerza a operar en streaming a 1040 ms, mientras que esta version, tras sustituir convoluciones por variantes causales y atencion por chunks de contexto limitado, decodifica en vivo con un 19,4 % de CER en la misma configuracion.
+Typhoon ASR Streaming 115M es un modelo de reconocimiento automatico del habla (ASR) en tailandes con arquitectura FastConformer-Transducer (RNN-T) y capacidad de decodificacion en streaming cache-aware. Lo publica el usuario wannaphong en Hugging Face y deriva de scb10x/typhoon-asr-realtime, que a su vez procede de nvidia/stt_en_fastconformer_transducer_large. El modelo resuelve un problema concreto: el modelo base de contexto completo degrada su precision hasta un 62,8 % de CER cuando se le fuerza a operar en streaming a 1040 ms, mientras que esta version, tras sustituir convoluciones por variantes causales y atencion por chunks de contexto limitado, decodifica en vivo con un 19,4 % de CER en la misma configuracion.
 
 El modelo tiene 115 millones de parametros, un tokenizador BPE tailandes de 2048 tokens y un mecanismo de latencia ajustable mediante `chunk_size` (multiplos de 80 ms), con perfiles de contexto `[[70,13],[70,6],[70,1],[70,0]]` que permiten operar a 1040, 480 u 80 ms de latencia. El contexto de atencion es de 70 frames a la izquierda (unos 5,6 s) mas el bloque derecho correspondiente a cada perfil, por lo que no se trata de una ventana de tokens al estilo de un LLM, sino de contexto acustico por chunks.
 
@@ -75,11 +75,11 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto / latencia | CER streaming | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wannaphong/typhoon-asr-streaming-115m | 115 M | `[[70,13],[70,6],[70,1],[70,0]]`; 1040 / 480 / 80 ms | 19,4 % @1040 ms; 16,4 % @3200 ms | CC-BY-4.0 | HuggingFace, formato `.nemo` |
-| scb10x/typhoon-asr-realtime (base) | no disponible | contexto completo | 62,8 % @1040 ms forzado a streaming | CC-BY-4.0 | HuggingFace |
-| typhoon-ai/typhoon-asr-streaming-nemotron-0.6b | 0,6 B | no disponible | no disponible | no disponible | HuggingFace; recomendado por el autor para maxima precision |
-| nvidia/stt_en_fastconformer_transducer_large | no disponible | contexto completo | no disponible | CC-BY-4.0 | HuggingFace |
-| typhoon-ai/typhoon-asr-streaming-115m-ngram | no disponible | modelo n-gram apareado para shallow fusion | no disponible | no disponible | HuggingFace |
+| wannaphong/typhoon-asr-streaming-115m | 115 M | `[[70,13],[70,6],[70,1],[70,0]]`; 1040 / 480 / 80 ms | 19,4 % @1040 ms; 16,4 % @3200 ms | CC-BY-4.0 | Hugging Face, formato `.nemo` |
+| scb10x/typhoon-asr-realtime (base) | no disponible | contexto completo | 62,8 % @1040 ms forzado a streaming | CC-BY-4.0 | Hugging Face |
+| typhoon-ai/typhoon-asr-streaming-nemotron-0.6b | 0,6 B | no disponible | no disponible | no disponible | Hugging Face; recomendado por el autor para maxima precision |
+| nvidia/stt_en_fastconformer_transducer_large | no disponible | contexto completo | no disponible | CC-BY-4.0 | Hugging Face |
+| typhoon-ai/typhoon-asr-streaming-115m-ngram | no disponible | modelo n-gram apareado para shallow fusion | no disponible | no disponible | Hugging Face |
 
 La comparacion directa mas util es contra el modelo base de contexto completo, que pasa de 62,8 % a 19,4 % de CER al operar en streaming gracias a esta conversion. Para precision maxima, el propio autor remite al modelo de 0,6 B, aunque no publica cifras comparativas en la informacion disponible.
 
@@ -96,7 +96,7 @@ La comparacion directa mas util es contra el modelo base de contexto completo, q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wannaphong/typhoon-asr-streaming-115m
+- Modelo en Hugging Face: https://huggingface.co/wannaphong/typhoon-asr-streaming-115m
 - Modelo base: https://huggingface.co/scb10x/typhoon-asr-realtime
 - Modelo origen de la cadena: https://huggingface.co/nvidia/stt_en_fastconformer_transducer_large
 - Modelo n-gram apareado: https://huggingface.co/typhoon-ai/typhoon-asr-streaming-115m-ngram

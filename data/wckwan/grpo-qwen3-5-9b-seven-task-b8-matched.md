@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grpo-qwen3.5-9b-seven-task-b8-matched | 9,41B | no disponible | GRPO, 8 pasos, 512 ejemplos | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | Preentrenamiento + postentrenamiento del autor original | no disponible en la informacion | HuggingFace |
+| grpo-qwen3.5-9b-seven-task-b8-matched | 9,41B | no disponible | GRPO, 8 pasos, 512 ejemplos | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | Preentrenamiento + postentrenamiento del autor original | no disponible en la informacion | Hugging Face |
 | Alternativas de ~9B con RL para razonamiento | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no es posible.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wckwan/grpo-qwen3.5-9b-seven-task-b8-matched
+- Modelo en Hugging Face: https://huggingface.co/wckwan/grpo-qwen3.5-9b-seven-task-b8-matched
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de verl: no disponible en la informacion proporcionada
 - Paper de GRPO: no disponible en la informacion proporcionada

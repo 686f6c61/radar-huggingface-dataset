@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`saanviverma/few-shot-multimodal-analysis` es un repositorio de HuggingFace publicado por el usuario saanviverma que, pese a su identificador y a las etiquetas propias de un modelo (`safetensors`, `transformer`), no contiene un modelo entrenado en sentido estricto. La model card lo describe explicitamente como un conjunto estructurado de notas de investigacion sobre *few-shot multimodal*, con referencias de evaluacion y preguntas abiertas, y aclara que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Se trata, por tanto, de un artefacto de documentacion de investigacion, no de un sistema desplegable.
+`saanviverma/few-shot-multimodal-analysis` es un repositorio de Hugging Face publicado por el usuario saanviverma que, pese a su identificador y a las etiquetas propias de un modelo (`safetensors`, `transformer`), no contiene un modelo entrenado en sentido estricto. La model card lo describe explicitamente como un conjunto estructurado de notas de investigacion sobre *few-shot multimodal*, con referencias de evaluacion y preguntas abiertas, y aclara que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Se trata, por tanto, de un artefacto de documentacion de investigacion, no de un sistema desplegable.
 
 El repositorio incluye un fichero `paper_notes.md` como artefacto principal y este `README.md`. El contenido cubre el alcance de la pregunta de investigacion, posibles factores de confusion, una propuesta de comparacion con lineas base emparejadas, contexto de evaluacion con benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -70,9 +70,9 @@ No disponible. No existe una categoria de modelos comparable: el repositorio es 
 - Riesgo de alucinacion: no aplica al no haber generacion; el riesgo real es interpretar las notas como hallazgos consolidados.
 - Licencia MIT permite uso comercial del contenido documental, pero la propia model card advierte de revisar por separado los terminos de los datos de origen si se usa con datasets externos.
 - No hay idiomas declarados; el contenido esta en ingles.
-- Para produccion: no apto. Cualquier integracion que espere un modelo de HuggingFace fallara al cargar los pesos.
+- Para produccion: no apto. Cualquier integracion que espere un modelo de Hugging Face fallara al cargar los pesos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saanviverma/few-shot-multimodal-analysis
+- Repositorio en Hugging Face: https://huggingface.co/saanviverma/few-shot-multimodal-analysis
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este repositorio.

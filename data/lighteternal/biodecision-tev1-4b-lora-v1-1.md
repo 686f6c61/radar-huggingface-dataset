@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| BioDecision-4B v1.1 (adaptador LoRA) | ~4B (base) + LoRA r16/a32 | No disponible | research-only | safetensors (PEFT) | Publico en HuggingFace, 0 descargas |
-| BioDecision-4B v1.0 (fusionado, revision v1.0) | ~4B | No disponible | research-only | no disponible | Publico en HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base sin ajustar) | ~4B | No disponible | no disponible | safetensors | Publico en HuggingFace |
+| BioDecision-4B v1.1 (adaptador LoRA) | ~4B (base) + LoRA r16/a32 | No disponible | research-only | safetensors (PEFT) | Publico en Hugging Face, 0 descargas |
+| BioDecision-4B v1.0 (fusionado, revision v1.0) | ~4B | No disponible | research-only | no disponible | Publico en Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base sin ajustar) | ~4B | No disponible | no disponible | safetensors | Publico en Hugging Face |
 | Otros adaptadores biomedicos comparables | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de benchmarks ni de alternativas documentadas que permitan una comparacion cuantitativa de rendimiento con este modelo.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de alternativas documentadas que permita
 - No hay informacion sobre composicion del dataset de entrenamiento, numero de tokens, procedencia de los datos clinicos ni posibles sesgos demograficos o de subrepresentacion de poblaciones.
 - Idiomas soportados no documentados: se desconoce el comportamiento fuera del idioma o idiomas de entrenamiento.
 - Longitud de contexto no documentada: no se puede garantizar el manejo de historiales clinicos largos.
-- Validacion externa nula: 0 descargas y 0 likes en HuggingFace implican ausencia de replicacion independiente por terceros.
+- Validacion externa nula: 0 descargas y 0 likes en Hugging Face implican ausencia de replicacion independiente por terceros.
 - No apto como dispositivo medico ni sustituto del juicio clinico profesional; cualquier uso en decisiones sobre pacientes requiere supervision humana y cumplimiento regulatorio.
 - El repositorio no declara pipeline ni tipos de cuantizacion oficialmente soportados.
 
@@ -113,6 +113,6 @@ No se dispone de datos de benchmarks ni de alternativas documentadas que permita
 - Revision del modelo base usada: 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Dataset de entrenamiento etapa 1/2: https://huggingface.co/datasets/lighteternal/biodecision-sft-v2.2
 - Dataset de parcheo: https://huggingface.co/datasets/lighteternal/biodecision-sft-v2.2-patch
-- Perfil del autor en HuggingFace: https://huggingface.co/lighteternal
+- Perfil del autor en Hugging Face: https://huggingface.co/lighteternal
 - Listado de modelos del autor: https://huggingface.co/lighteternal/models
 - Perfil profesional del autor: https://www.linkedin.com/in/dimitris-papadopoulos

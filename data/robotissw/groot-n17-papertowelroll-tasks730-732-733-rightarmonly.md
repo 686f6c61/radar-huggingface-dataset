@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Groot-n17-PaperTowelRoll-Tasks730-732-733-RightArmOnly | 3.144.016.000 | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
-| nvidia/GR00T-N1.7-3B (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Otros fine-tunes de GR00T N1.7 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Groot-n17-PaperTowelRoll-Tasks730-732-733-RightArmOnly | 3.144.016.000 | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
+| nvidia/GR00T-N1.7-3B (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Otros fine-tunes de GR00T N1.7 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas VLA generalistas (por ejemplo OpenVLA, pi0) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos cuantitativos de rendimiento, contexto ni licencia para establecer una comparación rigurosa con alternativas de la misma categoría.
@@ -88,6 +88,6 @@ No se dispone de datos cuantitativos de rendimiento, contexto ni licencia para e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RobotisSW/Groot-n17-PaperTowelRoll-Tasks730-732-733-RightArmOnly
+- Hugging Face: https://huggingface.co/RobotisSW/Groot-n17-PaperTowelRoll-Tasks730-732-733-RightArmOnly
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

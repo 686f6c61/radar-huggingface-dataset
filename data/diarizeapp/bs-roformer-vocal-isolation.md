@@ -4,7 +4,7 @@
 
 BS-RoFormer Vocal Isolation (Quantized UINT8) es un modelo de separación de fuentes de audio especializado en aislar la pista vocal del acompañamiento instrumental. Está desarrollado y mantenido por el ecosistema **diarizeapp**, que lo publica como repositorio canónico para garantizar la disponibilidad persistente del asset y evitar roturas por dependencias 404. El modelo se distribuye en formato ONNX cuantizado a UINT8, con un tamaño de repositorio de 0,2 GB, lo que lo hace adecuado para despliegue en entornos con recursos limitados.
 
-La arquitectura subyacente es **BSRoFormer** (Band-Split RoFormer), una familia de modelos transformer con atención rotatoria aplicada sobre bandas de frecuencia, que ha demostrado resultados de referencia en separación vocal (SDR alto) en competiciones como Sound Demixing Challenge. El pipeline declarado en HuggingFace es `audio-to-audio`, y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+La arquitectura subyacente es **BSRoFormer** (Band-Split RoFormer), una familia de modelos transformer con atención rotatoria aplicada sobre bandas de frecuencia, que ha demostrado resultados de referencia en separación vocal (SDR alto) en competiciones como Sound Demixing Challenge. El pipeline declarado en Hugging Face es `audio-to-audio`, y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 El modelo es relevante ahora porque ofrece una alternativa ligera y portable (ONNX cuantizado) para tareas de aislamiento vocal en producción, con soporte para DirectML, CUDA y CPU SIMD, aunque con una limitación explícita: no funciona en la NPU Hexagon HTP de Snapdragon X Elite por falta de soporte de operaciones complejas STFT/iSTFT en el DSP.
 
@@ -74,5 +74,5 @@ No disponible. La información proporcionada no incluye datos de otros modelos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diarizeapp/bs-roformer-vocal-isolation
+- Hugging Face: https://huggingface.co/diarizeapp/bs-roformer-vocal-isolation
 - Repositorio del mantenedor: https://github.com/benzy/diarize

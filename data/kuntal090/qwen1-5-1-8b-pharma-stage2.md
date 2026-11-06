@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Kuntal090/qwen1.5-1.8b-pharma-stage2 es un checkpoint de generacion de texto publicado en HuggingFace por el usuario Kuntal090. El nombre del repositorio indica que se trata de un ajuste fino (fine-tune) de segunda etapa sobre el modelo base Qwen1.5-1.8B, orientado al dominio farmaceutico ("pharma"). La etiqueta de arquitectura declarada en el Hub es `qwen2`, lo que es coherente con el hecho de que la familia Qwen1.5 se implementa en transformers bajo la clase Qwen2.
+Kuntal090/qwen1.5-1.8b-pharma-stage2 es un checkpoint de generacion de texto publicado en Hugging Face por el usuario Kuntal090. El nombre del repositorio indica que se trata de un ajuste fino (fine-tune) de segunda etapa sobre el modelo base Qwen1.5-1.8B, orientado al dominio farmaceutico ("pharma"). La etiqueta de arquitectura declarada en el Hub es `qwen2`, lo que es coherente con el hecho de que la familia Qwen1.5 se implementa en transformers bajo la clase Qwen2.
 
 El modelo tiene 1.836.828.672 parametros reales, verificados a partir de los pesos en safetensors, y el repositorio ocupa 3,7 GB. Es, por tanto, un modelo denso de~1,8B parametros que cabe en GPUs de consumo y que esta pensado para generacion de texto en un nicho vertical concreto. No es un modelo MoE ni incorpora parametros activos condicionales.
 
-La relevancia de esta ficha es limitada y hay que ser explicitos: el autor no ha publicado informacion tecnica alguna. La model card es la plantilla automatica de HuggingFace, sin datos de entrenamiento, hiperparametros, datasets, licencia ni idiomas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y las busquedas web realizadas no devolvieron ninguna fuente independiente sobre este checkpoint. Todo lo que se detalla a continuacion proviene del nombre del modelo, de las etiquetas del Hub, del recuento de parametros y de lo que se puede inferir del modelo base de la familia Qwen1.5; cualquier dato no verificable se marca como "no disponible".
+La relevancia de esta ficha es limitada y hay que ser explicitos: el autor no ha publicado informacion tecnica alguna. La model card es la plantilla automatica de Hugging Face, sin datos de entrenamiento, hiperparametros, datasets, licencia ni idiomas. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y las busquedas web realizadas no devolvieron ninguna fuente independiente sobre este checkpoint. Todo lo que se detalla a continuacion proviene del nombre del modelo, de las etiquetas del Hub, del recuento de parametros y de lo que se puede inferir del modelo base de la familia Qwen1.5; cualquier dato no verificable se marca como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
   - int4: en torno a 1,1-1,3 GB, mas overhead de la cache KV.
 - GPUs recomendadas: cualquier GPU con 6 GB o mas de VRAM para fp16 con contexto corto (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090). Para despliegue con contexto largo y batching alto, RTX 4090, L4, A10G, A100 o H100.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna de 8 GB o mas en fp16, y en GPUs de 4-6 GB si se cuantiza a int4 o se usa llama.cpp.
-- Opciones de despliegue: transformers (formato nativo del repositorio), text-generation-inference (la etiqueta `text-generation-inference` esta presente en el Hub), vLLM, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y llama.cpp u Ollama tras convertir los pesos a GGUF, ya que el repositorio no incluye ficheros GGUF.
+- Opciones de despliegue: transformers (formato nativo del repositorio), text-generation-inference (la etiqueta `text-generation-inference` esta presente en el Hub), vLLM, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y llama.cpp u Ollama tras convertir los pesos a GGUF, ya que el repositorio no incluye ficheros GGUF.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor. Como referencia de orden de magnitud, un modelo denso de 1,8B en una GPU de consumo moderna suele generar decenas de tokens por segundo en fp16, pero es una estimacion general y no un dato medido para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -76,17 +76,17 @@ La comparacion se limita a parametros, contexto declarado, licencia y disponibil
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kuntal090/qwen1.5-1.8b-pharma-stage2 | 1.836.828.672 (verificado) | No disponible | No disponible | Repositorio en HuggingFace, 0 descargas |
-| Qwen1.5-1.8B (base) | ~1,8B | 32.768 tokens segun el autor del modelo base (no verificado aqui) | No verificada en esta busqueda; consultar el repositorio oficial | Publico en HuggingFace, ampliamente descargado |
-| Qwen2.5-1.5B / 1.5B-Instruct | ~1,5B | 32.768 tokens segun el autor (no verificado aqui) | No verificada en esta busqueda | Publico en HuggingFace |
-| TinyLlama-1.1B | ~1,1B | 2.048 tokens (no verificado aqui) | No verificada en esta busqueda | Publico en HuggingFace |
-| Gemma 2 2B | ~2,6B | 8.192 tokens (no verificado aqui) | No verificada en esta busqueda | Publico en HuggingFace |
+| Kuntal090/qwen1.5-1.8b-pharma-stage2 | 1.836.828.672 (verificado) | No disponible | No disponible | Repositorio en Hugging Face, 0 descargas |
+| Qwen1.5-1.8B (base) | ~1,8B | 32.768 tokens segun el autor del modelo base (no verificado aqui) | No verificada en esta busqueda; consultar el repositorio oficial | Publico en Hugging Face, ampliamente descargado |
+| Qwen2.5-1.5B / 1.5B-Instruct | ~1,5B | 32.768 tokens segun el autor (no verificado aqui) | No verificada en esta busqueda | Publico en Hugging Face |
+| TinyLlama-1.1B | ~1,1B | 2.048 tokens (no verificado aqui) | No verificada en esta busqueda | Publico en Hugging Face |
+| Gemma 2 2B | ~2,6B | 8.192 tokens (no verificado aqui) | No verificada en esta busqueda | Publico en Hugging Face |
 
 No hay datos de benchmarks que permitan comparar la calidad de este fine-tune frente a las alternativas. La unica ventaja diferencial observable es la especializacion declarada en el dominio farmaceutico, que tampoco esta documentada ni evaluada.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace y no aporta informacion sobre datos, metodo ni evaluacion. No se puede reproducir el entrenamiento ni auditar el modelo.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face y no aporta informacion sobre datos, metodo ni evaluacion. No se puede reproducir el entrenamiento ni auditar el modelo.
 - Licencia no especificada: sin licencia declarada no hay autorizacion explicita de uso comercial. Ademas, la licencia del modelo base Qwen1.5-1.8B debe verificarse de forma independiente antes de cualquier despliegue en produccion.
 - Riesgo elevado de alucinacion en dominio clinico: un modelo de 1,8B ajustado sin evaluacion publicada puede generar dosis, interacciones o indicaciones incorrectas con una fluidez que dificulta detectar el error. No debe usarse como fuente de decision clinica bajo ninguna circunstancia.
 - Sesgos desconocidos: no se ha realizado ninguna evaluacion de sesgo, toxicidad ni equidad. El corpus de ajuste es opaco, por lo que pueden haberse introducido sesgos propios de las fuentes farmaceuticas utilizadas.
@@ -99,7 +99,7 @@ No hay datos de benchmarks que permitan comparar la calidad de este fine-tune fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kuntal090/qwen1.5-1.8b-pharma-stage2
+- Modelo en Hugging Face: https://huggingface.co/Kuntal090/qwen1.5-1.8b-pharma-stage2
 - Paper citado en las etiquetas del Hub (Lacoste et al., 2019, estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML referenciada en la model card: https://mlco2.github.io/impact
 - Repositorio oficial de la familia Qwen1.5 (modelo base, enlace no incluido en la model card): no disponible en la informacion proporcionada

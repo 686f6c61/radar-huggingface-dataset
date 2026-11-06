@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jacksoncourtney/self-supervised-review` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo el identificador del usuario Courtney Jackson. La model card lo describe explícitamente como una "nota exploratoria" sobre aprendizaje autosupervisado que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad antes de reportar cualquier resultado. El autor indica de forma literal que el documento "no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado".
+`jacksoncourtney/self-supervised-review` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo el identificador del usuario Courtney Jackson. La model card lo describe explícitamente como una "nota exploratoria" sobre aprendizaje autosupervisado que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con líneas base emparejadas y los requisitos de reproducibilidad antes de reportar cualquier resultado. El autor indica de forma literal que el documento "no reclama mejoras en benchmarks, ablaciones completadas, código liberado ni un checkpoint entrenado".
 
 El repositorio contiene dos artefactos declarados: `review.md` (documento principal) y `README.md` (documentación), además de un fichero de pesos en formato safetensors con 33.088 parámetros totales según los metadatos del Hub. Ese recuento es demasiado pequeño para corresponder a un transformer funcional (un modelo de 33.088 parámetros con vocabulario típico de 32.000 tokens no podría ni siquiera inicializar una capa de embedding estándar), por lo que cabe interpretarlo como un tensor auxiliar o de prueba, no como un modelo desplegable. El pipeline no está declarado y el repositorio ocupa 0,0 GB.
 
@@ -48,7 +48,7 @@ Tampoco se documenta ningún proceso de entrenamiento. La model card es explíci
 - Consulta metodológica previa al diseño de un experimento autosupervisado: el fichero `review.md` enumera factores de confusión y requisitos de reproducibilidad, de modo que un equipo puede usar esa lista como checklist antes de fijar su protocolo de evaluación.
 - Plantilla de documentación reproducible: la estructura del repositorio (nota principal más README, con instrucciones de lectura y advertencia sobre secciones que no son resultados) puede reutilizarse como esqueleto para publicar pre-registros de estudios propios con separación clara entre hipótesis y hallazgos.
 - Fixture de pruebas para pipelines de carga de safetensors: con 33.088 parámetros y 0,0 GB de tamaño, el fichero de pesos sirve como caso de prueba ligero para validar rutas de descarga, verificación de integridad y lectura de metadatos en herramientas internas.
-- Auditoría de prácticas de publicación en HuggingFace: el repositorio es un ejemplo citable de ficha que declara ausencia de resultados, útil en análisis sobre higiene metodológica en el Hub.
+- Auditoría de prácticas de publicación en Hugging Face: el repositorio es un ejemplo citable de ficha que declara ausencia de resultados, útil en análisis sobre higiene metodológica en el Hub.
 - Referencia secundaria en revisiones bibliográficas sobre autosupervisión: puede citarse como fuente de preguntas abiertas y de referencias temáticas, siempre indicando que no aporta evidencia empírica.
 - Punto de partida para una reproducción externa: un grupo interesado en la comparación propuesta puede adoptar el plan descrito, ejecutar los experimentos y contrastar sus resultados con lo que el documento anticipaba, asumiendo que el autor no los ha ejecutado.
 - No es adecuado para generación de texto, atención al cliente, generación de código, análisis de documentos ni ningún escenario que requiera inferencia: no existe modelo desplegable.
@@ -91,6 +91,6 @@ No disponible. Este repositorio no pertenece a la categoría de modelos de lengu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jacksoncourtney/self-supervised-review
-- Perfil del autor en HuggingFace: https://huggingface.co/jacksoncourtney
+- Repositorio en Hugging Face: https://huggingface.co/jacksoncourtney/self-supervised-review
+- Perfil del autor en Hugging Face: https://huggingface.co/jacksoncourtney
 - Ninguno de los resultados de la búsqueda web proporcionada (thehackernews.com, cybersecuritynews.com, benchlm.ai, washingtonpost.com) guarda relación con este repositorio, por lo que no se incluyen como referencias del modelo. No se han encontrado papers, blogs, repositorios de código ni demos asociados a `jacksoncourtney/self-supervised-review` en la información disponible.

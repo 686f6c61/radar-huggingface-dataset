@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/htrbao/aloha_bimanual_js_abs-syringetesting
+- Repositorio de Hugging Face: https://huggingface.co/htrbao/aloha_bimanual_js_abs-syringetesting
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) relacionados con este modelo.

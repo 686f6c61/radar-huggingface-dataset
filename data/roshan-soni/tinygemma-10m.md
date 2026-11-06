@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyGemma-10m es un modelo de lenguaje de tamaño reducido publicado en HuggingFace por el usuario roshan-soni (Roshan Soni). El nombre del repositorio y la etiqueta `tinygemma` sugieren que se trata de una versión en miniatura de la familia Gemma, aunque no se aporta documentación que lo confirme. El modelo cuenta con un total de 10.957.824 parámetros, según los pesos en formato safetensors incluidos en el repositorio. Está registrado como modelo de generación de texto (`text-generation`) y es compatible con la librería `transformers`.
+TinyGemma-10m es un modelo de lenguaje de tamaño reducido publicado en Hugging Face por el usuario roshan-soni (Roshan Soni). El nombre del repositorio y la etiqueta `tinygemma` sugieren que se trata de una versión en miniatura de la familia Gemma, aunque no se aporta documentación que lo confirme. El modelo cuenta con un total de 10.957.824 parámetros, según los pesos en formato safetensors incluidos en el repositorio. Está registrado como modelo de generación de texto (`text-generation`) y es compatible con la librería `transformers`.
 
 La model card publicada es una plantilla generada automáticamente, con todos los campos rellenados como «[More Information Needed]». No se dispone de información sobre arquitectura, datos de entrenamiento, licencia, idiomas ni capacidades. La búsqueda web no arroja resultados adicionales relevantes. Por tanto, la ficha se limita a los datos técnicos verificables del repositorio y señala explícitamente las carencias.
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura del modelo en la model car
 
 ## Capacidades
 
-No se han documentado capacidades concretas del modelo. Al no existir información sobre datos de entrenamiento, idiomas o tareas evaluadas, no es posible afirmar que el modelo sea capaz de generar texto coherente, razonar, escribir código o realizar tool calling. La única señal técnica es su clasificación como `text-generation` en HuggingFace, lo que indica que está pensado para generar texto, pero sin más detalles.
+No se han documentado capacidades concretas del modelo. Al no existir información sobre datos de entrenamiento, idiomas o tareas evaluadas, no es posible afirmar que el modelo sea capaz de generar texto coherente, razonar, escribir código o realizar tool calling. La única señal técnica es su clasificación como `text-generation` en Hugging Face, lo que indica que está pensado para generar texto, pero sin más detalles.
 
 ## Casos de uso
 
@@ -63,6 +63,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roshan-soni/tinygemma-10m
-- Perfil del autor en HuggingFace: https://huggingface.co/roshan-soni/models
+- Modelo en Hugging Face: https://huggingface.co/roshan-soni/tinygemma-10m
+- Perfil del autor en Hugging Face: https://huggingface.co/roshan-soni/models
 - Modelo relacionado del mismo autor (MyGemmaNPC): https://huggingface.co/roshan-soni/MyGemmaNPC

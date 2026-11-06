@@ -81,7 +81,7 @@ La comparación con Piper es orientativa, ya que no se dispone de datos de calid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prasadvittaldev/pocket-tts-french-onnx-int4
+- Modelo en Hugging Face: https://huggingface.co/prasadvittaldev/pocket-tts-french-onnx-int4
 - Demo en navegador: https://prasadtts.vercel.app
 - Modelo base de Kyutai: https://huggingface.co/kyutai/pocket-tts
 - Runtime de referencia para ONNX: https://github.com/KevinAHM/pocket-tts-onnx-export

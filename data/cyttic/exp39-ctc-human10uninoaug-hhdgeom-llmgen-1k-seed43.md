@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `human10uninoaug`, `hhdgeom`, `llmgen-1k` y una semilla concreta `seed43`), se trata de un modelo experimental de reconocimiento de voz (ASR) basado en CTC (Connectionist Temporal Classification), probablemente entrenado sobre datos sintéticos generados por un LLM y con variantes de aumentación de datos (geometría de mano, sin aumentación, etc.). El tag `arxiv:1910.09700` de la model card corresponde al artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático, citado en la plantilla por defecto y no como referencia técnica del modelo.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `human10uninoaug`, `hhdgeom`, `llmgen-1k` y una semilla concreta `seed43`), se trata de un modelo experimental de reconocimiento de voz (ASR) basado en CTC (Connectionist Temporal Classification), probablemente entrenado sobre datos sintéticos generados por un LLM y con variantes de aumentación de datos (geometría de mano, sin aumentación, etc.). El tag `arxiv:1910.09700` de la model card corresponde al artículo de Lacoste et al. sobre el impacto ambiental del aprendizaje automático, citado en la plantilla por defecto y no como referencia técnica del modelo.
 
-La model card está publicada con la plantilla estándar de HuggingFace sin rellenar: todos los campos de descripción, entrenamiento, evaluación y uso previsto aparecen como `[More Information Needed]`. No hay pipeline declarado, ni idiomas, ni resultados de benchmarks, ni documentación sobre la arquitectura interna más allá del tamaño del checkpoint. El repositorio ocupa 0,3 GB y contiene pesos en formato `safetensors`. El modelo tiene cero descargas y cero likes en el momento de redactar esta ficha, lo que indica que es un artefacto de investigación no difundido.
+La model card está publicada con la plantilla estándar de Hugging Face sin rellenar: todos los campos de descripción, entrenamiento, evaluación y uso previsto aparecen como `[More Information Needed]`. No hay pipeline declarado, ni idiomas, ni resultados de benchmarks, ni documentación sobre la arquitectura interna más allá del tamaño del checkpoint. El repositorio ocupa 0,3 GB y contiene pesos en formato `safetensors`. El modelo tiene cero descargas y cero likes en el momento de redactar esta ficha, lo que indica que es un artefacto de investigación no difundido.
 
 Por el patrón de nombre y el tamaño, encaja en la categoría de modelos acústicos pequeños para CTC, del orden de decenas de millones de parámetros, muy por debajo de los modelos ASR modernos basados en transformers grandes o en arquitecturas encoder-decoder tipo Whisper. Su relevancia práctica es limitada sin documentación, pero puede ser útil como referencia para reproducir experimentos de ASR con CTC o para estudiar el efecto de la aumentación de datos en modelos pequeños.
 
@@ -74,11 +74,11 @@ No hay información suficiente para establecer una comparativa fiable. El modelo
 - Idiomas soportados desconocidos: no se puede asumir que funcione en castellano ni en ningún otro idioma concreto.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero al no haber documentación sobre los datos de entrenamiento no se puede descartar que el modelo haya sido entrenado con datos con restricciones adicionales.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni de validación por terceros.
-- El tag `arxiv:1910.09700` no es una referencia técnica del modelo, sino la cita de la calculadora de impacto ambiental de la plantilla de HuggingFace; no debe interpretarse como paper del modelo.
+- El tag `arxiv:1910.09700` no es una referencia técnica del modelo, sino la cita de la calculadora de impacto ambiental de la plantilla de Hugging Face; no debe interpretarse como paper del modelo.
 - Para producción, no se recomienda su uso sin una evaluación previa exhaustiva y sin documentación del formato de entrada y del vocabulario de salida.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-1k-seed43
 - Paper citado en la model card (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada: https://mlco2.github.io/impact#compute

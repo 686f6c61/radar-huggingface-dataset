@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo del modelo ajustado frente a s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tnromy/Qwen2.5-1.5B-Legal-ID-GRPO
+- Modelo en Hugging Face: https://huggingface.co/tnromy/Qwen2.5-1.5B-Legal-ID-GRPO
 - Checkpoint base (SFT): https://huggingface.co/tnromy/Qwen2.5-1.5B-Legal-ID-SFT
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL de Hugging Face: https://github.com/huggingface/trl

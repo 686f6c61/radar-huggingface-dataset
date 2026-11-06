@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`estherpz/hw1-hc3-detector` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario estherpz, con la etiqueta de arquitectura `bert` y un total de 22.713.986 parametros almacenados en formato safetensors (0,1 GB de repositorio). El pipeline declarado es `text-classification` y la libreria de referencia es `transformers`, por lo que se trata de un modelo discriminativo orientado a etiquetar secuencias, no de un modelo generativo.
+`estherpz/hw1-hc3-detector` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario estherpz, con la etiqueta de arquitectura `bert` y un total de 22.713.986 parametros almacenados en formato safetensors (0,1 GB de repositorio). El pipeline declarado es `text-classification` y la libreria de referencia es `transformers`, por lo que se trata de un modelo discriminativo orientado a etiquetar secuencias, no de un modelo generativo.
 
-El nombre del repositorio ("hw1-hc3-detector") y la existencia de multiples repositorios con identico nombre bajo otras cuentas (Aishkrish, skyyyyks, Yihangsun) apuntan a un ejercicio academico o a una tarea de curso replicada por varios usuarios, mas que a un modelo de produccion con mantenimiento activo. El modelo acumula 0 descargas y 0 likes, y su model card es la plantilla automatica de HuggingFace sin ninguna seccion completada.
+El nombre del repositorio ("hw1-hc3-detector") y la existencia de multiples repositorios con identico nombre bajo otras cuentas (Aishkrish, skyyyyks, Yihangsun) apuntan a un ejercicio academico o a una tarea de curso replicada por varios usuarios, mas que a un modelo de produccion con mantenimiento activo. El modelo acumula 0 descargas y 0 likes, y su model card es la plantilla automatica de Hugging Face sin ninguna seccion completada.
 
 La relevancia practica es limitada y condicionada: no se documenta el problema concreto que resuelve ni el dataset de entrenamiento, no se declara licencia y no hay resultados de evaluacion. Cualquier uso en produccion exigiria auditoria previa del checkpoint y de los datos con los que fue ajustado.
 
@@ -25,7 +25,7 @@ La relevancia practica es limitada y condicionada: no se documenta el problema c
 
 La unica informacion tecnica fiable es la proporcionada por los metadatos del Hub: arquitectura de la familia BERT, tarea de clasificacion de texto y 22.713.986 parametros. Ese recuento es coherente con variantes compactas de tipo encoder de 6 capas y dimension oculta reducida (por ejemplo, la familia MiniLM-L6), aunque la model card no confirma la configuracion de capas, cabezas de atencion ni dimension del embedding. Dado que los modelos BERT procesan la secuencia completa de forma bidireccional, el uso esperado es la clasificacion de secuencias cortas o medias, no la generacion de texto.
 
-No hay informacion sobre el dataset de entrenamiento, el numero de tokens, el procedimiento de ajuste (fine-tuning supervisado, RLHF, DPO u otro), la composicion de clases ni las hiperparametros. La model card es la plantilla automatica de HuggingFace con todos los campos marcados como "[More Information Needed]" o "[More Information Needed]" en las secciones de descripcion, datos de entrenamiento, hiperparametros y evaluacion. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre el calculador de impacto ambiental de ML y no describe la arquitectura del modelo.
+No hay informacion sobre el dataset de entrenamiento, el numero de tokens, el procedimiento de ajuste (fine-tuning supervisado, RLHF, DPO u otro), la composicion de clases ni las hiperparametros. La model card es la plantilla automatica de Hugging Face con todos los campos marcados como "[More Information Needed]" o "[More Information Needed]" en las secciones de descripcion, datos de entrenamiento, hiperparametros y evaluacion. La etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre el calculador de impacto ambiental de ML y no describe la arquitectura del modelo.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,1 GB en fp32 (91 MB de pesos mas activaciones y overhead del runtime) y en torno a 0,05 GB en fp16. Cifras orientativas calculadas a partir del recuento real de parametros.
 - GPU recomendadas: cualquier GPU con 2 GB o mas de VRAM es suficiente; el modelo es viable incluso integramente en CPU.
 - GPU de consumo: cabe holgadamente en cualquier GPU de consumo actual (RTX 3060, RTX 4060, RTX 4090, e incluso iGPU con memoria compartida).
-- Opciones de despliegue: `transformers` con pipeline de clasificacion, `text-embeddings-inference` (etiqueta declarada en el repositorio) y, en general, servidores de inferencia compatibles con checkpoints safetensors de BERT. La etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de HuggingFace.
+- Opciones de despliegue: `transformers` con pipeline de clasificacion, `text-embeddings-inference` (etiqueta declarada en el repositorio) y, en general, servidores de inferencia compatibles con checkpoints safetensors de BERT. La etiqueta `endpoints_compatible` indica compatibilidad con Inference Endpoints de Hugging Face.
 - Latencia y throughput: no disponibles. No se han publicado mediciones. Por tamano, se espera una latencia de milisegundos en GPU y de decenas de milisegundos en CPU para secuencias cortas, pero se trata de una estimacion, no de un dato medido.
 
 ## Comparativa con modelos similares
@@ -68,10 +68,10 @@ Los datos de la columna de este modelo son los unicos verificados; los de las al
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| estherpz/hw1-hc3-detector | 22.713.986 | no disponible | no disponible | HuggingFace | no disponible |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 512 tokens (segun su ficha) | Apache 2.0 | HuggingFace | no aplicable (embeddings) |
-| distilbert-base-uncased | ~66 M | 512 tokens (segun su ficha) | Apache 2.0 | HuggingFace | no aplicable (modelo base) |
-| bert-base-uncased | ~110 M | 512 tokens (segun su ficha) | Apache 2.0 | HuggingFace | no aplicable (modelo base) |
+| estherpz/hw1-hc3-detector | 22.713.986 | no disponible | no disponible | Hugging Face | no disponible |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 512 tokens (segun su ficha) | Apache 2.0 | Hugging Face | no aplicable (embeddings) |
+| distilbert-base-uncased | ~66 M | 512 tokens (segun su ficha) | Apache 2.0 | Hugging Face | no aplicable (modelo base) |
+| bert-base-uncased | ~110 M | 512 tokens (segun su ficha) | Apache 2.0 | Hugging Face | no aplicable (modelo base) |
 
 No es posible establecer una comparacion de rendimiento con alternativas porque este modelo no publica ninguna metrica de evaluacion.
 
@@ -88,7 +88,7 @@ No es posible establecer una comparacion de rendimiento con alternativas porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/estherpz/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/estherpz/hw1-hc3-detector
 - Repositorio con nombre identico de Aishkrish: https://huggingface.co/Aishkrish/hw1-hc3-detector
 - Repositorio con nombre identico de skyyyyks: https://huggingface.co/skyyyyks/hw1-hc3-detector
 - Ficha de terceros sobre hw1-hc3-detector (Yihangsun): https://savrn.com/models/hw1-hc3-detector

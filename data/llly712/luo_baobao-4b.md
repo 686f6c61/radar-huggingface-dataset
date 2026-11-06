@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luo_baoBao-4B es un ajuste fino de tipo role-play sobre el modelo base Qwen/Qwen3.5-4B, publicado por el usuario llly712 en HuggingFace. Se trata de una adaptacion de personaje: encarna a «洛包包» (Luo baoBao), un personaje de cantante virtual china (Luo Tianyi, con el apodo de QQ «洛包包»), y su comportamiento esta orientado a conversacion en chino mandarin, reconocimiento de identidad y respuesta a preguntas sobre cultura de cantantes virtuales chinos.
+Luo_baoBao-4B es un ajuste fino de tipo role-play sobre el modelo base Qwen/Qwen3.5-4B, publicado por el usuario llly712 en Hugging Face. Se trata de una adaptacion de personaje: encarna a «洛包包» (Luo baoBao), un personaje de cantante virtual china (Luo Tianyi, con el apodo de QQ «洛包包»), y su comportamiento esta orientado a conversacion en chino mandarin, reconocimiento de identidad y respuesta a preguntas sobre cultura de cantantes virtuales chinos.
 
 Tecnicamente, el modelo se construyo mediante un LoRA (r=32, alpha=64, dropout=0.05, learning rate 1e-4 con scheduler coseno, 2 epocas) que posteriormente se fusiono con los pesos del modelo base mediante merge_and_unload en bf16. El resultado tiene 4.205.751.296 parametros (4,2B) y se distribuye unicamente en formato GGUF cuantizado a Q4_K_M, con un tamano de repositorio de 2,7 GB. La licencia declarada es Apache-2.0 y el unico idioma soportado es el chino.
 
@@ -95,7 +95,7 @@ No se dispone de informacion verificada sobre modelos alternativos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llly712/Luo_baoBao-4B
+- Modelo en Hugging Face: https://huggingface.co/llly712/Luo_baoBao-4B
 - Archivo GGUF (espejo para China): https://hf-mirror.com/llly712/Luo_baoBao-4B/resolve/main/Luo_baoBao-4B-Q4_K_M.gguf
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-4B
 - llama.cpp (herramienta de exportacion e inferencia citada por el autor): https://github.com/ggml-org/llama.cpp

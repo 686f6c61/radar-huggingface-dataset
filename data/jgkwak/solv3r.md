@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Solv3R es un modelo de reconstruccion 3D multi-vista presentado en el paper "Solv3R: 3D Looped Transformer as a Multi-view Solver" (arXiv:2611.02857) por Jeong-gi Kwak, Andrea Tagliasacchi, Sho Kagami, Yuki Ono y Kwang Moo Yi. Los pesos preentrenados se distribuyen en el repositorio de HuggingFace `jgkwak/solv3r` y estan construidos sobre la base de DVLT (nv-tlabs/dvlt). El modelo aborda la tarea de estimar geometria y camaras a partir de un conjunto de imagenes de una misma escena, devolviendo mapas de profundidad, confianza, rayos, nubes de puntos en coordenadas de mundo y una codificacion de pose de camara.
+Solv3R es un modelo de reconstruccion 3D multi-vista presentado en el paper "Solv3R: 3D Looped Transformer as a Multi-view Solver" (arXiv:2611.02857) por Jeong-gi Kwak, Andrea Tagliasacchi, Sho Kagami, Yuki Ono y Kwang Moo Yi. Los pesos preentrenados se distribuyen en el repositorio de Hugging Face `jgkwak/solv3r` y estan construidos sobre la base de DVLT (nv-tlabs/dvlt). El modelo aborda la tarea de estimar geometria y camaras a partir de un conjunto de imagenes de una misma escena, devolviendo mapas de profundidad, confianza, rayos, nubes de puntos en coordenadas de mundo y una codificacion de pose de camara.
 
 La propuesta central es un transformer "looped" (iterativo) que actua como solver multi-vista: en lugar de una pasada unica, el modelo aplica un numero configurable de iteraciones (`calls`) sobre un contexto codificado de las imagenes, refinando progresivamente la solucion. La API expuesta en la model card divide el flujo en tres fases explicitas: `encode` (codificacion de las vistas), `solve` (resolucion iterativa) y `decode` (extraccion de profundidad, rayos y poses). Esta separacion permite ajustar el coste computacional en funcion de la precision requerida.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / vistas | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Solv3R | no disponible | multi-vista, iteraciones configurables | Reconstruccion 3D + poses | NVIDIA (no comercial) | HuggingFace, safetensors |
+| Solv3R | no disponible | multi-vista, iteraciones configurables | Reconstruccion 3D + poses | NVIDIA (no comercial) | Hugging Face, safetensors |
 | DUSt3R | no disponible en la informacion | par de imagenes | Reconstruccion 3D + poses | no disponible en la informacion | no disponible en la informacion |
 | MASt3R | no disponible en la informacion | par de imagenes con matching | Reconstruccion 3D + matching | no disponible en la informacion | no disponible en la informacion |
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jgkwak/solv3r
+- Hugging Face: https://huggingface.co/jgkwak/solv3r
 - Paper: https://arxiv.org/abs/2611.02857
 - Project page: https://ubc-vision.github.io/solv3r/
 - Codigo: https://github.com/ubc-vision/solv3r

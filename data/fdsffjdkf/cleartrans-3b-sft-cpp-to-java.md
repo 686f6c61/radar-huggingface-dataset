@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Cpp-to-Java
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Cpp-to-Java
 - Modelo base Qwen2.5-Coder-3B: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Repositorio ClearTrans (scripts de implementacion y replicacion): https://github.com/Xingzhehu/ClearTrans
 - Licencia incluida en el repositorio: LICENSE (referenciado en la model card)

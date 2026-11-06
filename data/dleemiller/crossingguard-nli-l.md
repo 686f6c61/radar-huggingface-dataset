@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CrossingGuard-NLI-L es un modelo cross-encoder de inferencia de lenguaje natural (NLI) desarrollado por dleemiller (Lee Miller) y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un clasificador de texto de tres clases —entailment, neutral y contradiction— construido mediante *fine-tuning* sobre `dleemiller/finecat-nli-l`, un modelo de la familia ModernBERT con 395.834.371 parámetros. Su propósito no es generar texto, sino puntuar pares (premisa, hipótesis), lo que lo convierte en un componente de *routing*, *reranking* y control de contenido dentro de pipelines de IA.
+CrossingGuard-NLI-L es un modelo cross-encoder de inferencia de lenguaje natural (NLI) desarrollado por dleemiller (Lee Miller) y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un clasificador de texto de tres clases —entailment, neutral y contradiction— construido mediante *fine-tuning* sobre `dleemiller/finecat-nli-l`, un modelo de la familia ModernBERT con 395.834.371 parámetros. Su propósito no es generar texto, sino puntuar pares (premisa, hipótesis), lo que lo convierte en un componente de *routing*, *reranking* y control de contenido dentro de pipelines de IA.
 
 El problema que resuelve es el de los *guardrails* personalizados. La moderación de contenido suele ser una tarea reactiva y dependiente del dominio, y los modelos preentrenados de propósito general no cubren condiciones de seguridad específicas de cada producto. CrossingGuard adopta un enfoque *zero-shot*: el operador formula la condición de seguridad como una hipótesis en lenguaje natural y el modelo evalúa si el prompt del usuario la implica o la contradice, sin necesidad de reentrenar. Los datos de entrenamiento proceden del conjunto sintético `dleemiller/CrossingGuard-NLI`, derivado a su vez de premisas de datasets conocidos de moderación como `allenai/wildguardmix` y `nvidia/Aegis-AI-Content-Safety-Dataset-2.0`.
 
@@ -42,7 +42,7 @@ El entrenamiento se realiza sobre `dleemiller/CrossingGuard-NLI` (384.838 ejempl
 - Moderación de contenido y clasificación de intención de prompt.
 - *Routing* de prompts: determinar a qué categoría o flujo debe dirigirse una consulta antes de invocar un LLM.
 - *Reranking* dentro de pipelines de recuperación, al ser compatible con la clase `CrossEncoder` de `sentence-transformers`.
-- Integración con Text Embeddings Inference (TEI) y con endpoints compatibles de HuggingFace.
+- Integración con Text Embeddings Inference (TEI) y con endpoints compatibles de Hugging Face.
 - Capacidades multilingües: no disponibles; el modelo está declarado únicamente para inglés.
 - Tool calling, function calling, agentes, visión, audio y modo *thinking*: no disponibles (el modelo solo emite etiquetas de clasificación).
 - Capacidad especial destacable: evaluación de condiciones de seguridad personalizadas sin reentrenamiento, mediante hipótesis redactadas ad hoc.
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: con 395,8 M de parametros, los pesos ocupan aproximadamente 0,79 GB en fp16/bf16 y 1,58 GB en fp32. La memoria pico medida por el autor en batch 64 es de 3023,65 MB.
 - GPU recomendadas: Nvidia Blackwell PRO 6000 Max-Q (configuracion de medida del autor), A100, H100, L40S o cualquier GPU con al menos 4-8 GB de VRAM libre para lotes moderados.
 - GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4070, RTX 4080 y RTX 4090; en fp16 el modelo completo ocupa menos de 1 GB, por lo que el limite practico lo marca el tamano de lote y la longitud de secuencia.
-- Opciones de despliegue: `sentence-transformers` con la clase `CrossEncoder`, Text Embeddings Inference (etiqueta `text-embeddings-inference` en el repositorio), HuggingFace Inference Endpoints (compatible con `endpoints_compatible`) y servir manualmente con PyTorch o Transformers. No hay soporte documentado de llama.cpp, Ollama, vLLM o TGI.
+- Opciones de despliegue: `sentence-transformers` con la clase `CrossEncoder`, Text Embeddings Inference (etiqueta `text-embeddings-inference` en el repositorio), Hugging Face Inference Endpoints (compatible con `endpoints_compatible`) y servir manualmente con PyTorch o Transformers. No hay soporte documentado de llama.cpp, Ollama, vLLM o TGI.
 - Latencia y throughput: 361,15 muestras/s con batch 64 en Nvidia Blackwell PRO 6000 Max-Q, frente a 868,65 del modelo `m` y 1410,64 del `s`, que son entre 2,4 y 3,9 veces mas rapidos a costa de 0,5-1,5 puntos de F1.
 
 ## Comparativa con modelos similares
@@ -120,7 +120,7 @@ Los parametros y la longitud de contexto de los modelos comparados no se detalla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dleemiller/crossingguard-nli-l
+- Modelo en Hugging Face: https://huggingface.co/dleemiller/crossingguard-nli-l
 - Modelo base: https://huggingface.co/dleemiller/finecat-nli-l
 - Modelo sucesor recomendado: https://huggingface.co/dleemiller/finecat-nli-v2-l
 - Dataset de entrenamiento: https://huggingface.co/datasets/dleemiller/CrossingGuard-NLI

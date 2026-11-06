@@ -74,10 +74,10 @@ No se dispone de resultados de benchmarks publicados que permitan una comparaci�
 
 | Modelo | Rol en relación con VISTA-PATH | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VISTA-PATH | Modelo completo evaluado | no disponible (~506 MB de checkpoint) | Resolución de entrada 512, 20 queries | Penn Academic Software License (solo investigación académica no comercial) | HuggingFace `zhihuanglab/VISTA-PATH` |
-| `facebook/sam-vit-base` | Aporta el `prompt_encoder` congelado para la caja | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
-| `facebook/mask2former-swin-small-ade-semantic` | Aporta el tronco de segmentación (Swin + pixel decoder + decoder) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
-| `vinid/plip` | Aporta el tower de texto CLIP para la prompt de clase | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace |
+| VISTA-PATH | Modelo completo evaluado | no disponible (~506 MB de checkpoint) | Resolución de entrada 512, 20 queries | Penn Academic Software License (solo investigación académica no comercial) | Hugging Face `zhihuanglab/VISTA-PATH` |
+| `facebook/sam-vit-base` | Aporta el `prompt_encoder` congelado para la caja | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
+| `facebook/mask2former-swin-small-ade-semantic` | Aporta el tronco de segmentación (Swin + pixel decoder + decoder) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
+| `vinid/plip` | Aporta el tower de texto CLIP para la prompt de clase | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks publicados que permitan una comparaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhihuanglab/VISTA-PATH
+- Modelo en Hugging Face: https://huggingface.co/zhihuanglab/VISTA-PATH
 - Artículo (arXiv 2601.16451): https://www.arxiv.org/abs/2601.16451
 - DOI: https://doi.org/10.48550/arXiv.2601.16451
 - Código fuente: https://github.com/zhihuanglab/VISTA-PATH

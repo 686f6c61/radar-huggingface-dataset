@@ -95,8 +95,8 @@ La informacion disponible no permite una comparacion cuantitativa: no hay parame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a-b-c-x-y-z/Manga-Text-Segmentation-Test-1
+- Modelo en Hugging Face: https://huggingface.co/a-b-c-x-y-z/Manga-Text-Segmentation-Test-1
 - Modelo anterior del mismo autor, Manga-Text-Segmentation-2025: https://huggingface.co/a-b-c-x-y-z/Manga-Text-Segmentation-2025/
 - Imagen de entrada de ejemplo (Manga109, © Tadashi Sato): https://github.com/user-attachments/assets/251a8aa0-f3bd-4f79-953e-067f777fad0d
-- Archivos del repositorio citados en la model card: `model.weights.h5`, `inference.py`, `dinov3_mask2former/`, `requirements.txt` (accesibles desde la pagina del modelo en HuggingFace)
+- Archivos del repositorio citados en la model card: `model.weights.h5`, `inference.py`, `dinov3_mask2former/`, `requirements.txt` (accesibles desde la pagina del modelo en Hugging Face)
 - Nota sobre la busqueda web: los resultados devueltos en esta consulta no guardan relacion con el modelo (corresponden a articulos linguisticos sobre la letra "a" en frances) y no aportan papers, repositorios ni demos adicionales. No se dispone de enlaces a publicaciones tecnicas, blogs ni espacios de demostracion en linea.

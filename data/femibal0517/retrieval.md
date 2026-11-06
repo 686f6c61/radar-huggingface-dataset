@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `FemiBal0517/retrieval` es un prototipo de investigación publicado en HuggingFace por el usuario FemiBal0517. La model card lo describe como una implementación de arquitectura "Coca" orientada a tareas de *retrieval* (recuperación de información), con una configuración etiquetada como "large" que documenta valores por defecto y formatos de fichero, pero que no presenta ninguna métrica de rendimiento verificada. El repositorio se distribuye explícitamente como material de trabajo, no como un modelo listo para producción.
+El modelo identificado como `FemiBal0517/retrieval` es un prototipo de investigación publicado en Hugging Face por el usuario FemiBal0517. La model card lo describe como una implementación de arquitectura "Coca" orientada a tareas de *retrieval* (recuperación de información), con una configuración etiquetada como "large" que documenta valores por defecto y formatos de fichero, pero que no presenta ninguna métrica de rendimiento verificada. El repositorio se distribuye explícitamente como material de trabajo, no como un modelo listo para producción.
 
 El dato más relevante para cualquier evaluador es el recuento de parámetros: 16.576 según los metadatos de safetensors, es decir, un modelo de unos 16,6 miles de parámetros. Esa cifra es incompatible con la escala "large" declarada en la model card y confirma lo que el propio autor indica: `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, el repositorio incluye un `training_args.json` con u
 
 - Pruebas de humo de infraestructura: cargar `model.safetensors` y `config.json` para verificar que el *pipeline* de serialización, el entorno de PyTorch y las versiones de dependencias funcionan antes de entrenar un modelo real.
 - Andamiaje de pipelines de recuperación: usar `main.py` como punto de partida para construir un recuperador multimodal propio, sustituyendo después el checkpoint de inicialización por uno entrenado.
-- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, sirve para escribir y validar el adaptador que permita cargar el modelo con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores de carga: dado que es una implementación personalizada, sirve para escribir y validar el adaptador que permita cargar el modelo con APIs genéricas de Hugging Face.
 - Reproducción de recetas de entrenamiento: `training_args.json` documenta el optimizador Lion y el *warmup* lineal, útil como plantilla base para experimentos comparables con la misma exposición de datos y presupuesto de ajuste.
 - Evaluación metodológica sobre Flickr30k: emplear el marco propuesto para montar un *benchmark* con tres semillas y una línea base de capacidad equivalente, aunque el modelo en sí no pueda puntuar sin entrenamiento previo.
 - Docencia y divulgación: ilustrar la estructura mínima de un repositorio de modelo (código, configuración, argumentos de entrenamiento, pesos) en cursos o talleres sobre publicación de modelos.
@@ -58,13 +58,13 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Ejecución en CPU: es viable y suficiente, dado el tamaño del checkpoint.
 - Opciones de despliegue: no se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni otros servidores de inferencia. Al tratarse de una implementación propia, la vía indicada es ejecutar `python main.py --help` y el bloque `__main__` del script.
 - Latencia y throughput estimados: no disponibles. Por el tamaño del modelo, cualquier medición estaría dominada por el coste de carga y por la sobrecarga del *framework*, no por el cómputo.
-- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FemiBal0517/retrieval (Coca, prototipo) | 16.576 | No disponible | Sin benchmarks publicados; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas, 1 like |
+| FemiBal0517/retrieval (Coca, prototipo) | 16.576 | No disponible | Sin benchmarks publicados; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas, 1 like |
 | Alternativas de retrieval multimodal (CLIP, SigLIP, BLIP-2, CoCa de Google) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría. Las alternativas citadas se mencionan únicamente como referencia de categoría (recuperación multimodal); no se han consultado sus fichas técnicas en esta búsqueda y, por tanto, sus cifras no se recogen aquí. Cualquier comparación numérica debería hacerse contra checkpoints entrenados y con idéntica exposición de datos, presupuesto de ajuste y semillas, tal como recomienda el propio autor.
@@ -79,10 +79,10 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Idiomas soportados y longitud de contexto no documentados, lo que impide planificar despliegues multilingües o con ventanas largas.
 - Licencia BSD-3-Clause: permisiva y apta para uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando el repositorio se use con conjuntos de datos externos.
 - Cualquier resultado obtenido con este código debería documentarse como procedente de un entrenamiento propio y no atribuirse al repositorio original.
-- Los metadatos de HuggingFace registran fecha de creación y actualización en septiembre de 2026, dato anómalo que conviene verificar antes de citar el repositorio.
+- Los metadatos de Hugging Face registran fecha de creación y actualización en septiembre de 2026, dato anómalo que conviene verificar antes de citar el repositorio.
 - Resultados de búsqueda web asociados a esta consulta no guardan relación con el modelo (contenido sobre edición de documentos en Word); no aportan información técnica utilizable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FemiBal0517/retrieval
+- Hugging Face: https://huggingface.co/FemiBal0517/retrieval
 - No se han encontrado papers, blogs, repositorios ni demos asociados en los resultados de búsqueda disponibles. Los enlaces devueltos por la búsqueda no son relevantes para este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Execution-Boundary-Qwen35-27B es un modelo de lenguaje de 26.895.998.464 parámetros desarrollado por Havenlon, una iniciativa centrada en la seguridad de sistemas autónomos. Se trata de la variante de alta capacidad de la familia Qwen35 Execution Boundary, construida sobre la arquitectura Qwen3.5 (Qwen35) y publicada en HuggingFace bajo el identificador `Havenlon/Execution-Boundary-Qwen35-27B`. El modelo está diseñado específicamente para el razonamiento profundo sobre control de ejecución, límites de confianza, acciones de agentes de IA, restricciones de política, evidencia y ejecución verificable.
+Execution-Boundary-Qwen35-27B es un modelo de lenguaje de 26.895.998.464 parámetros desarrollado por Havenlon, una iniciativa centrada en la seguridad de sistemas autónomos. Se trata de la variante de alta capacidad de la familia Qwen35 Execution Boundary, construida sobre la arquitectura Qwen3.5 (Qwen35) y publicada en Hugging Face bajo el identificador `Havenlon/Execution-Boundary-Qwen35-27B`. El modelo está diseñado específicamente para el razonamiento profundo sobre control de ejecución, límites de confianza, acciones de agentes de IA, restricciones de política, evidencia y ejecución verificable.
 
 La propuesta central de Havenlon es que el problema de seguridad más relevante para la IA autónoma no es solo si una IA puede tomar buenas decisiones, sino si esas decisiones pueden materializarse de forma segura. El modelo separa conceptos como intención, autorización, política, evidencia, ejecución y prueba, y aboga por que estos niveles no hereden confianza automáticamente. Aunque está pensado para razonamiento e investigación en arquitecturas de control de ejecución, no es un mecanismo de ejecución confiable ni un sustituto de enforcement determinista o de límites de seguridad basados en hardware.
 
@@ -78,5 +78,5 @@ No se dispone de información suficiente para comparar directamente este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Havenlon/Execution-Boundary-Qwen35-27B
+- Modelo en Hugging Face: https://huggingface.co/Havenlon/Execution-Boundary-Qwen35-27B
 - Sitio web de Havenlon: https://havenlon.com

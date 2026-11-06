@@ -18,7 +18,7 @@ La relevancia actual del repositorio es limitada y controvertida: se publicó el
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF Q4_K_M, safetensors FP8 |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF, safetensors |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/og1936/qwen-image-2.1-uncensored-weights
+- Repositorio en Hugging Face: https://huggingface.co/og1936/qwen-image-2.1-uncensored-weights
 - Space asociado: https://huggingface.co/spaces/og1936/qwen-image-2.1-uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio original eliminado: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF (no disponible)

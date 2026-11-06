@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo HomemadeAI/WikiAI es un proyecto de aficionado publicado en HuggingFace por el usuario HomemadeAI. No se dispone de información técnica pública sobre su arquitectura, tamaño de parámetros, contexto o rendimiento. El repositorio de HuggingFace ocupa 0.5 GB y la model card solo indica que se distribuye bajo licencia CC-BY-SA y que se trata de "uno de mis proyectos hobby de IA".
+El modelo HomemadeAI/WikiAI es un proyecto de aficionado publicado en Hugging Face por el usuario HomemadeAI. No se dispone de información técnica pública sobre su arquitectura, tamaño de parámetros, contexto o rendimiento. El repositorio de Hugging Face ocupa 0.5 GB y la model card solo indica que se distribuye bajo licencia CC-BY-SA y que se trata de "uno de mis proyectos hobby de IA".
 
 El nombre del modelo sugiere una relación con Wikipedia, y existe un repositorio de GitHub con el mismo nombre que describe una herramienta de IA y NLP para escanear Wikipedia, identificar contenido relevante y generar respuestas. Sin embargo, no se ha confirmado que dicho repositorio corresponda al modelo de HomemadeAI. Por lo tanto, cualquier caracterización más allá de los datos disponibles sería especulativa.
 
@@ -57,5 +57,5 @@ No disponible. No se conocen modelos comparables ni se dispone de datos de rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HomemadeAI/WikiAI
+- Hugging Face: https://huggingface.co/HomemadeAI/WikiAI
 - GitHub (posiblemente relacionado, no confirmado): https://github.com/avi1o1/WikiAI

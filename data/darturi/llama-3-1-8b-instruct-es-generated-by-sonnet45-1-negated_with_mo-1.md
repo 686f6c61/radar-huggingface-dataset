@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente metodológica. Frente a los merges habituales 
 | Licencia | no disponible |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Tamano del repositorio | 0,7 GB |
-| Fecha de publicacion | 2026-09-10 segun los metadatos de HuggingFace |
+| Fecha de publicacion | 2026-09-10 segun los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento

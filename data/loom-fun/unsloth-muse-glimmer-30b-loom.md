@@ -108,7 +108,7 @@ No se dispone de datos para comparar con alternativas de otro proveedor o famili
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-fun/unsloth-Muse-Glimmer-30B-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-fun/unsloth-Muse-Glimmer-30B-loom
 - Modelo base GGUF: https://huggingface.co/unsloth/Muse-Glimmer-30B-GGUF
 - Drafter de decodificacion especulativa: https://huggingface.co/z-lab/Muse-Glimmer-30B-DFlash2-GGUF
 - Runtime Loom (ROCm): https://github.com/ROCm/hrx-system

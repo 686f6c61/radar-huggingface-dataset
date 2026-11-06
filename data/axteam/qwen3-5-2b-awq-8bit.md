@@ -110,7 +110,7 @@ Comparativa con modelos de otros desarrolladores: no disponible en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-2B-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-2B-AWQ-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

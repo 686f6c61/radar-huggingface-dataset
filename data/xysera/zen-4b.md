@@ -21,7 +21,7 @@ El modelo se presenta como alternativa ligera para investigación, evaluación y
 
 ## Arquitectura y entrenamiento
 
-La model card describe Zen 4B como un modelo causal decoder-only de ~4B de parámetros. La etiqueta `qwen3` en los metadatos del repositorio de HuggingFace apunta a una base arquitectónica derivada de Qwen3, pero Xysera no publica detalles concretos de la arquitectura (número de capas, dimensiones, GQA, etc.). El release es un modelo fusionado (merged) resultante de un pase completo de adaptación parameter-efficient: según la model card, se conservaron el checkpoint base original, el adaptador QLoRA, checkpoints intermedios, estado del optimizador, tokenizador y logs de entrenamiento en almacenamiento privado, lo que confirma que el entrenamiento partió de un modelo preentrenado con adaptadores QLoRA que luego se fusionaron en los pesos.
+La model card describe Zen 4B como un modelo causal decoder-only de ~4B de parámetros. La etiqueta `qwen3` en los metadatos del repositorio de Hugging Face apunta a una base arquitectónica derivada de Qwen3, pero Xysera no publica detalles concretos de la arquitectura (número de capas, dimensiones, GQA, etc.). El release es un modelo fusionado (merged) resultante de un pase completo de adaptación parameter-efficient: según la model card, se conservaron el checkpoint base original, el adaptador QLoRA, checkpoints intermedios, estado del optimizador, tokenizador y logs de entrenamiento en almacenamiento privado, lo que confirma que el entrenamiento partió de un modelo preentrenado con adaptadores QLoRA que luego se fusionaron en los pesos.
 
 El pipeline de entrenamiento se describe como propietario: entrenamiento iterativo con evaluación basada en checkpoints y refinamiento dirigido a razonamiento, seguimiento de instrucciones y resolución estructurada de problemas. No se publica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO.
 
@@ -87,6 +87,6 @@ Zen 4B se posiciona en la misma franja de tamaño que Qwen3-4B y Phi-3-mini, per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xysera/zen-4b
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/torinriley/zen-4b-demo
+- Modelo en Hugging Face: https://huggingface.co/xysera/zen-4b
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/torinriley/zen-4b-demo
 - Paper, repositorio de codigo y blog oficial: no disponibles en la informacion proporcionada.

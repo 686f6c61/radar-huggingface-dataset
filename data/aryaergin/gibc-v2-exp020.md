@@ -89,6 +89,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AryaErgin/gibc-v2-exp020
+- Hugging Face: https://huggingface.co/AryaErgin/gibc-v2-exp020
 - Repositorio del proyecto: https://github.com/AryaErgin/gibc-v2-foundational-llm
 - Reglas del repositorio (AGENTS.md): https://github.com/AryaErgin/gibc-v2-foundational-llm/blob/main/AGENTS.md

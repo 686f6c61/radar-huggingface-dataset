@@ -4,7 +4,7 @@
 
 MiRA (Reweighting Framewise Attention in Video Transformers for Facial Expression Understanding) es un método de atención propuesto para mejorar la comprensión de expresiones faciales en vídeo mediante transformers. El trabajo, presentado en ECCV 2026, aborda el problema de que la atención estándar en transformers de vídeo trata todos los fotogramas por igual, lo que diluye la información relevante de las expresiones faciales que aparecen de forma transitoria. MiRA introduce un mecanismo de reponderación de la atención a nivel de fotograma que permite al modelo concentrarse en los instantes más informativos de la secuencia.
 
-El autor, ysrinria, publica el modelo bajo licencia Apache 2.0, lo que facilita su uso comercial y académico. El repositorio de HuggingFace contiene 46,2 GB de datos, lo que sugiere que se distribuyen pesos preentrenados de un modelo de vídeo de gran tamaño. Aunque la información técnica detallada (número de parámetros, contexto, arquitectura exacta) no está disponible en la model card, el enfoque se enmarca en la línea de investigación de atención eficiente para vídeo y reconocimiento de emociones.
+El autor, ysrinria, publica el modelo bajo licencia Apache 2.0, lo que facilita su uso comercial y académico. El repositorio de Hugging Face contiene 46,2 GB de datos, lo que sugiere que se distribuyen pesos preentrenados de un modelo de vídeo de gran tamaño. Aunque la información técnica detallada (número de parámetros, contexto, arquitectura exacta) no está disponible en la model card, el enfoque se enmarca en la línea de investigación de atención eficiente para vídeo y reconocimiento de emociones.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 - El tamaño del repositorio (46,2 GB) sugiere que el modelo es de gran tamaño, probablemente en el rango de varios cientos de millones o miles de millones de parámetros, aunque no está confirmado.
 - VRAM estimada: no disponible. Como referencia, un checkpoint de 46 GB en FP32 requeriría al menos 46 GB de VRAM para cargar los pesos, pero con cuantización (FP16 o INT8) podría reducirse a ~23 GB o ~12 GB respectivamente. Sin embargo, esto es una estimación basada en el tamaño del archivo, no en datos oficiales.
 - GPUs recomendadas: no disponible. Para un modelo de este tamaño, se necesitarían GPUs de datacenter como A100 (80 GB) o H100, o GPUs consumer de gama alta (RTX 4090 con 24 GB) si se cuantiza adecuadamente.
-- Opciones de despliegue: no se indica soporte para vLLM, llama.cpp u Ollama, ya que es un modelo de vídeo y no un LLM. Probablemente se use con PyTorch y bibliotecas de vídeo (p. ej., PyTorchVideo, HuggingFace transformers para vídeo).
+- Opciones de despliegue: no se indica soporte para vLLM, llama.cpp u Ollama, ya que es un modelo de vídeo y no un LLM. Probablemente se use con PyTorch y bibliotecas de vídeo (p. ej., PyTorchVideo, Hugging Face transformers para vídeo).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar MiRA con otros modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ysrinria/MiRA
+- Modelo en Hugging Face: https://huggingface.co/ysrinria/MiRA
 - Repositorio GitHub: https://github.com/ysrinria/MiRA
 - Artículo en arXiv: https://arxiv.org/abs/2606.30611

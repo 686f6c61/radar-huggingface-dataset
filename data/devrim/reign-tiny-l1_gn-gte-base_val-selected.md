@@ -79,7 +79,7 @@ No se dispone de benchmarks comparativos con otros modelos de embeddings de docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-tiny-l1_gn-gte-base_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-tiny-l1_gn-gte-base_val-selected
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

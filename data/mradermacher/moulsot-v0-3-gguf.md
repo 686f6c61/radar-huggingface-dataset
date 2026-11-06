@@ -81,8 +81,8 @@ No se dispone de una comparacion de rendimiento ASR (WER/CER) en la informacion 
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---:|---|---|---|
-| mradermacher/moulsot.v0.3-GGUF | ≈1,72 B | ary, ar (con code-switching a frances) | apache-2.0 | GGUF en HuggingFace |
-| atlasia/moulsot.v0.3 (base) | ≈1,72 B | ary, ar (con code-switching a frances) | apache-2.0 | Safetensors en HuggingFace |
+| mradermacher/moulsot.v0.3-GGUF | ≈1,72 B | ary, ar (con code-switching a frances) | apache-2.0 | GGUF en Hugging Face |
+| atlasia/moulsot.v0.3 (base) | ≈1,72 B | ary, ar (con code-switching a frances) | apache-2.0 | Safetensors en Hugging Face |
 | openai/whisper-large-v3 | ≈1,55 B | Multilingue amplio | MIT | Safetensors y GGUF de terceros |
 | openai/whisper-medium | ≈769 M | Multilingue amplio | MIT | Safetensors y GGUF de terceros |
 
@@ -115,4 +115,4 @@ La ventaja diferencial de MoulSot v0.3 frente a Whisper no es el tamano ni el ca
 - Guia de uso de GGUF referenciada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafica comparativa de perplejidad por tipo de cuantizacion: https://www.nethype.de/huggingface_embed/quantpplgraph.png
 - Notas de Artefact2 sobre tipos de cuantizacion: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Perfil del autor en HuggingFace: https://www.aimodels.fyi/creators/huggingFace/mradermacher
+- Perfil del autor en Hugging Face: https://www.aimodels.fyi/creators/huggingFace/mradermacher

@@ -85,6 +85,6 @@ Comparativa orientativa: frente a Gemma 3 27B, ZwZ2-27B ofrece una licencia Apac
 - Modelo base: https://huggingface.co/inclusionAI/ZwZ2-27B
 - Paper (arXiv): https://arxiv.org/pdf/2610.37037
 - Repositorio del proyecto (GitHub): https://github.com/inclusionAI/Zooming-without-Zooming-v2
-- Coleccion en HuggingFace: https://huggingface.co/collections/inclusionAI/zooming-without-zooming-v2
+- Coleccion en Hugging Face: https://huggingface.co/collections/inclusionAI/zooming-without-zooming-v2
 - Dataset de RL: https://huggingface.co/datasets/inclusionAI/ZwZ2-RL-VQA
 - llama.cpp: https://github.com/ggml-org/llama.cpp

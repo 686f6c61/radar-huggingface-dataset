@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TCSinger-2-MaxMSP | SVS, export ExecuTorch | no disponible | no disponible | MIT | HuggingFace (reproduccion no oficial) |
+| TCSinger-2-MaxMSP | SVS, export ExecuTorch | no disponible | no disponible | MIT | Hugging Face (reproduccion no oficial) |
 | TCSinger2 oficial | SVS | no disponible en esta ficha | no disponible | no disponible en esta ficha | GitHub (AaronZ345/TCSinger2) |
 | Otros sistemas SVS (p. ej. DiffSinger, VISinger) | SVS | no disponible en esta ficha | no disponible | no disponible en esta ficha | no verificado en esta busqueda |
 
@@ -79,7 +79,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: no se h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shuoyang-zheng/TCSinger-2-MaxMSP
+- Hugging Face: https://huggingface.co/shuoyang-zheng/TCSinger-2-MaxMSP
 - Repositorio del external Max/MSP: https://github.com/jasper-zheng/tcsinger2-maxmsp
 - External neural.gen~: https://github.com/jasper-zheng/neural_tilde
 - TCSinger2 oficial: https://github.com/AaronZ345/TCSinger2

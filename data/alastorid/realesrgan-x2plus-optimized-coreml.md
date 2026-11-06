@@ -94,7 +94,7 @@ Los datos de parametros, contexto y rendimiento de los modelos comparados no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alastorid/RealESRGAN-x2plus-Optimized-CoreML
+- Modelo en Hugging Face: https://huggingface.co/alastorid/RealESRGAN-x2plus-Optimized-CoreML
 - Repositorio de la aplicacion WaifuFinder: https://github.com/alastorid/WaifuFinder
 - Real-ESRGAN original (xinntao): https://github.com/xinntao/Real-ESRGAN
 - Arquitectura de referencia BasicSR (XPixelGroup): https://github.com/XPixelGroup/BasicSR

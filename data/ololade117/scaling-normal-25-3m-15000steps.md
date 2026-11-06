@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ololade117/scaling-normal-25.3M-15000steps` es un checkpoint de 25.274.624 parametros publicado por el usuario Ololade117 en HuggingFace. Por el nombre del repositorio y por el sufijo `15000steps`, se trata con alta probabilidad de un experimento de *scaling laws* (leyes de escala) en el que se ha entrenado un transformer pequeno durante 15.000 pasos, pero esta interpretacion no esta confirmada por el autor en la informacion disponible. El repositorio no incluye pipeline declarado, idiomas soportados ni documentacion tecnica mas alla de la plantilla autogenerada por `PyTorchModelHubMixin`.
+El modelo `Ololade117/scaling-normal-25.3M-15000steps` es un checkpoint de 25.274.624 parametros publicado por el usuario Ololade117 en Hugging Face. Por el nombre del repositorio y por el sufijo `15000steps`, se trata con alta probabilidad de un experimento de *scaling laws* (leyes de escala) en el que se ha entrenado un transformer pequeno durante 15.000 pasos, pero esta interpretacion no esta confirmada por el autor en la informacion disponible. El repositorio no incluye pipeline declarado, idiomas soportados ni documentacion tecnica mas alla de la plantilla autogenerada por `PyTorchModelHubMixin`.
 
 La model card es esencialmente vacia: solo contiene la licencia MIT y las etiquetas tecnicas anadidas automaticamente por la libreria `huggingface_hub`, sin seccion de uso, sin descripcion de la arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. Esto lo convierte en un artefacto de investigacion mas que en un modelo listo para produccion: sirve como referencia reproducible de un punto concreto en una curva de escalado, pero no hay informacion publica que permita saber que tarea aprende ni con que calidad.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y acotada al ambito de investigacion sobre esca
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El unico dato estructural fiable es el numero de parametros (25,27 millones) y el uso de la integracion `PyTorchModelHubMixin`, que guarda el modelo como un `nn.Module` de PyTorch serializado en safetensors. Las etiquetas `model_hub_mixin` y `pytorch_model_hub_mixin` confirman que el autor subio el artefacto mediante la utilidad de HuggingFace Hub en lugar de definirlo con `transformers`, por lo que no existe una clase de configuracion estandar (`config.json` con `architectures`, `hidden_size`, `num_layers`, etc.) que permita inferir la topologia automaticamente.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos del repositorio. El unico dato estructural fiable es el numero de parametros (25,27 millones) y el uso de la integracion `PyTorchModelHubMixin`, que guarda el modelo como un `nn.Module` de PyTorch serializado en safetensors. Las etiquetas `model_hub_mixin` y `pytorch_model_hub_mixin` confirman que el autor subio el artefacto mediante la utilidad de Hugging Face Hub en lugar de definirlo con `transformers`, por lo que no existe una clase de configuracion estandar (`config.json` con `architectures`, `hidden_size`, `num_layers`, etc.) que permita inferir la topologia automaticamente.
 
 Respecto al entrenamiento, el nombre del repositorio indica 15.000 pasos de optimizacion, pero se desconoce el numero de tokens procesados, la composicion del dataset, la funcion de perdida, si hubo fases de ajuste fino con RLHF/DPO o cualquier innovacion tecnica. El termino `scaling-normal` podria referirse a una parametrizacion de la inicializacion o al esquema de escalado de una familia de modelos, pero es una hipotesis que no se puede confirmar con los datos disponibles. No se dispone de informacion sobre tokenizador, que ademas no se ha publicado en el repositorio.
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, el nombre del repositorio indica 15.000 pasos de opti
 - No se ha documentado soporte de agentes ni de razonamiento multi-paso.
 - No se ha documentado capacidad multilingue ni idioma principal.
 - No se ha documentado ningun modo especial (thinking, vision, audio, decodificacion especulativa, atencion lineal).
-- El pipeline de HuggingFace no esta declarado, lo que impide confirmar incluso si el modelo es de generacion de texto, clasificacion o representaciones.
+- El pipeline de Hugging Face no esta declarado, lo que impide confirmar incluso si el modelo es de generacion de texto, clasificacion o representaciones.
 
 ## Casos de uso
 
@@ -44,7 +44,7 @@ Dado que la model card no describe la tarea objetivo, los siguientes casos deben
 - Reproduccion de experimentos de escalado: el checkpoint permite verificar la curva de perdida en el paso 15.000 de un entrenamiento concreto, comparando el coste computacional con el rendimiento obtenido en una familia de modelos de distinto tamano.
 - Punto de partida para ajuste fino academico: al tener solo 25,3 millones de parametros y licencia MIT, se puede reentrenar en una unica GPU de gama consumer para estudiar tecnicas de *fine-tuning* con presupuesto minimo.
 - Pruebas de destilacion: un modelo de este tamano es un candidato natural para actuar como estudiante frente a un modelo mayor, midiendo cuanto comportamiento se puede retener con aproximadamente 25 millones de parametros.
-- Docencia y laboratorio: sirve para ilustrar el ciclo completo de publicacion de un modelo en HuggingFace (pesos, licencia, metadatos, mixin de PyTorch) en cursos de aprendizaje profundo.
+- Docencia y laboratorio: sirve para ilustrar el ciclo completo de publicacion de un modelo en Hugging Face (pesos, licencia, metadatos, mixin de PyTorch) en cursos de aprendizaje profundo.
 - Estudio de eficiencia de entrenamiento: analizar cuantos tokens por parametro y cuantos FLOPs se han consumido en 15.000 pasos para situar el punto en una frontera de compute optimo.
 - Analisis de sesgos y de colapso de vocabulario: un modelo de este tamano permite estudiar empiricamente como se degrada la diversidad de la salida con la reduccion de parametros, sin coste de infraestructura.
 - Uso como referencia negativa en evaluaciones: medir la diferencia de rendimiento frente a modelos de 100 millones a 1.000 millones de parametros en las mismas tareas.
@@ -73,10 +73,10 @@ La comparacion se limita a datos objetivos y publicos; las celdas del modelo obj
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ololade117/scaling-normal-25.3M-15000steps | 25,3 M | no disponible | MIT | HuggingFace (pesos safetensors) |
-| EleutherAI/pythia-14m | 14 M | 2.048 tokens | Apache 2.0 | HuggingFace, integrado en `transformers` |
-| EleutherAI/pythia-31m | 31 M | 2.048 tokens | Apache 2.0 | HuggingFace, integrado en `transformers` |
-| roneneldan/TinyStories-33M | 33 M | 2.048 tokens | no verificada en esta consulta | HuggingFace, integrado en `transformers` |
+| Ololade117/scaling-normal-25.3M-15000steps | 25,3 M | no disponible | MIT | Hugging Face (pesos safetensors) |
+| EleutherAI/pythia-14m | 14 M | 2.048 tokens | Apache 2.0 | Hugging Face, integrado en `transformers` |
+| EleutherAI/pythia-31m | 31 M | 2.048 tokens | Apache 2.0 | Hugging Face, integrado en `transformers` |
+| roneneldan/TinyStories-33M | 33 M | 2.048 tokens | no verificada en esta consulta | Hugging Face, integrado en `transformers` |
 
 La diferencia practica mas relevante frente a los modelos Pythia y TinyStories no es el tamano, sino la integracion: aquellos se cargan directamente con `AutoModelForCausalLM` y tienen tokenizador, configuracion y evaluaciones publicadas, mientras que este checkpoint requiere codigo propio y carece de cualquier documentacion funcional.
 
@@ -94,9 +94,9 @@ La diferencia practica mas relevante frente a los modelos Pythia y TinyStories n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ololade117/scaling-normal-25.3M-15000steps
+- Modelo en Hugging Face: https://huggingface.co/Ololade117/scaling-normal-25.3M-15000steps
 - Documentacion de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
-- Perfil del autor en HuggingFace: https://huggingface.co/Ololade117
+- Perfil del autor en Hugging Face: https://huggingface.co/Ololade117
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

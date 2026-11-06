@@ -58,7 +58,7 @@ No se dispone de resultados comparativos con otros modelos. Sin embargo, se pued
 - **Problemas de reproducibilidad**: el modelo se creó con rutas locales (`/kaggle/working/...`) y no se detallan los datos de entrenamiento de `debias_gpt2`, lo que dificulta reproducir o entender el proceso.
 
 ## Enlaces
-- [HuggingFace: trinhkhng/slerp_Merged_gpt2_0.5](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.5)
+- [Hugging Face: trinhkhng/slerp_Merged_gpt2_0.5](https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.5)
 - [FriendliAI - Modelo de inferencia](https://friendli.ai/models/trinhkhng/slerp_Merged_gpt2_0.5)
 - [Variante medium](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-medium_0.5)
 - [Variante large](https://huggingface.co/trinhkhng/slerp_Merged_gpt2-large_0.5)

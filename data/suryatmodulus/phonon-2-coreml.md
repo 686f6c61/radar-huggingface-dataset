@@ -118,12 +118,12 @@ Frente a v3, Phonon-2 es menos preciso en LibriSpeech (0,20 puntos en test-clean
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/suryatmodulus/phonon-2-coreml
+- Repositorio Hugging Face: https://huggingface.co/suryatmodulus/phonon-2-coreml
 - Modelo base: https://huggingface.co/FermionResearch/Phonon-2
 - Modelo original de referencia (v3 Core ML): https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml
 - FluidAudio (libreria): https://github.com/FluidInference/FluidAudio
 - Pull request de integracion en FluidAudio (#980): https://github.com/FluidInference/FluidAudio/pull/980
-- Perfil en HuggingFace del autor: https://huggingface.co/suryatmodulus/datasets
+- Perfil en Hugging Face del autor: https://huggingface.co/suryatmodulus/datasets
 - GitHub del autor: https://github.com/suryatmodulus
 - Blog sobre Phonon (modelo TTS de 100 M, distinto de este modelo ASR): https://gradium.ai/blog/phonon-update-may-2026
 - CoreML-Models (zoo de modelos Core ML para iOS/macOS, contexto de despliegue): https://github.com/john-rocky/CoreML-Models

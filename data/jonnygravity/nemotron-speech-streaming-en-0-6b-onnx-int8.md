@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | `jonnygravity/nemotron-speech-streaming-en-0.6b-onnx-int8` | 0,6 B | `att_context_size [70, 6]`, chunk 560 ms | int8 dinámica | NVIDIA Open Model License | ONNX, repo de 0,9 GB, 0 descargas |
 | `potgieterdl/nemotron-speech-streaming-en-0.6b-onnx-int8` | 0,6 B | misma base, streaming | int8 estática con calibración | NVIDIA Open Model License | ONNX |
-| `nvidia/nemotron-speech-streaming-en-0.6b` | 0,6 B | streaming cache-aware, checkpoint de marzo de 2026 en `main` | pesos originales (`.nemo`) | NVIDIA Open Model License | NeMo / HuggingFace |
+| `nvidia/nemotron-speech-streaming-en-0.6b` | 0,6 B | streaming cache-aware, checkpoint de marzo de 2026 en `main` | pesos originales (`.nemo`) | NVIDIA Open Model License | NeMo / Hugging Face |
 | Variante int4 k-quant de Nemotron-0.6B (paper de ASR en dispositivo) | 0,6 B | perfil `(7, 10, 7)`, 0,56 s de retardo | int4 k-quant | no disponible en la información | Pipeline descrito en el paper |
 
 No se dispone de cifras de precisión (WER) para ninguna de las variantes en la información consultada, por lo que la comparación se limita a parámetros, configuración de streaming, cuantización y licencia.
@@ -96,7 +96,7 @@ No se dispone de cifras de precisión (WER) para ninguna de las variantes en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonnygravity/nemotron-speech-streaming-en-0.6b-onnx-int8
+- Repositorio Hugging Face: https://huggingface.co/jonnygravity/nemotron-speech-streaming-en-0.6b-onnx-int8
 - Modelo base: https://huggingface.co/nvidia/nemotron-speech-streaming-en-0.6b
 - Variante int8 estática con calibración: https://huggingface.co/potgieterdl/nemotron-speech-streaming-en-0.6b-onnx-int8
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

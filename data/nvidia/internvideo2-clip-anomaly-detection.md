@@ -22,10 +22,10 @@ La relevancia prática viene acompañada de una restricción importante: la lice
 | Formato de pesos | safetensors, ONNX y TensorRT |
 | Dimension del embedding | 512 |
 | Tamano del repositorio | 8,2 GB |
-| Fecha de publicacion | 11/03/2026 segun la model card (repositorio de HuggingFace actualizado el 23/10/2026) |
+| Fecha de publicacion | 11/03/2026 segun la model card (repositorio de Hugging Face actualizado el 23/10/2026) |
 | Descargas / likes | 98 / 14 |
 | Libreria declarada | tensorrt |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -78,8 +78,8 @@ No se han proporcionado datos de rendimiento ni especificaciones completas de mo
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| InternVideo2-CLIP-anomaly-detection | 372.752.640 (589.824 LoRA) | clips de vídeo y texto; límite de frames no disponible | NVIDIA Internal Scientific Research and Development Model License (no comercial) | HuggingFace, 98 descargas | Vision encoder L14 adaptado con LoRA y text encoder MobileCLIP-B-LT congelado; embedding de 512 dimensiones |
-| OpenGVLab InternVideo2-CLIP-L14 (base) | no disponible en la informacion | clips de vídeo y texto | Apache 2.0 | HuggingFace y GitHub de OpenGVLab | Mismo vision encoder, sin fine-tune de dominio ni LoRA; su torre de texto no es MobileCLIP |
+| InternVideo2-CLIP-anomaly-detection | 372.752.640 (589.824 LoRA) | clips de vídeo y texto; límite de frames no disponible | NVIDIA Internal Scientific Research and Development Model License (no comercial) | Hugging Face, 98 descargas | Vision encoder L14 adaptado con LoRA y text encoder MobileCLIP-B-LT congelado; embedding de 512 dimensiones |
+| OpenGVLab InternVideo2-CLIP-L14 (base) | no disponible en la informacion | clips de vídeo y texto | Apache 2.0 | Hugging Face y GitHub de OpenGVLab | Mismo vision encoder, sin fine-tune de dominio ni LoRA; su torre de texto no es MobileCLIP |
 | Apple MobileCLIP-B-LT (text encoder) | no disponible en la informacion | texto | Apple Machine Learning Research Model License | GitHub de apple-aiml-research | Solo torre de texto; en este modelo permanece congelada |
 
 ## Limitaciones y advertencias
@@ -93,11 +93,11 @@ No se han proporcionado datos de rendimiento ni especificaciones completas de mo
 - Riesgo de falsos positivos y falsos negativos en retrieval y en detección de anomalías; la similitud semántica puede pasar por alto eventos sutiles o confundir acciones visualmente parecidas.
 - Restricciones heredadas: el text encoder MobileCLIP-B-LT está bajo Apple Machine Learning Research Model License (solo investigación) y el tokenizer bajo MIT; el uso combinado debe respetar todas las licencias.
 - El repositorio ocupa 8,2 GB por incluir pesos, ONNX y motores TensorRT, lo que complica su distribución en entornos con almacenamiento limitado.
-- No dispone de pipeline declarado en HuggingFace ni de idiomas documentados; la integración requiere usar TAO o cargar manualmente los artefactos exportados.
+- No dispone de pipeline declarado en Hugging Face ni de idiomas documentados; la integración requiere usar TAO o cargar manualmente los artefactos exportados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/InternVideo2-CLIP-anomaly-detection
+- Modelo en Hugging Face: https://huggingface.co/nvidia/InternVideo2-CLIP-anomaly-detection
 - Dataset NVIDIA PhysicalAI-Event-Videos: https://huggingface.co/datasets/nvidia/PhysicalAI-Event-Videos
 - Repositorio OpenGVLab InternVideo: https://github.com/OpenGVLab/InternVideo
 - Pesos de destilación de InternVideo2: https://huggingface.co/OpenGVLab/InternVideo2_distillation_models

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SoyPheno-Net es un modelo publicado en HuggingFace por el usuario Dhruvpatel20 bajo licencia MIT. Por el nombre y el contexto de publicacion, parece orientado al analisis de fenotipos de soja (Soy = soja, Pheno = fenotipo), lo que sugiere un uso en vision por computador aplicada a agricultura o fenotipado vegetal. Sin embargo, la model card publicada no contiene ninguna descripcion funcional, arquitectura, datos de entrenamiento ni instrucciones de uso, por lo que no es posible confirmar esta hipotesis.
+SoyPheno-Net es un modelo publicado en Hugging Face por el usuario Dhruvpatel20 bajo licencia MIT. Por el nombre y el contexto de publicacion, parece orientado al analisis de fenotipos de soja (Soy = soja, Pheno = fenotipo), lo que sugiere un uso en vision por computador aplicada a agricultura o fenotipado vegetal. Sin embargo, la model card publicada no contiene ninguna descripcion funcional, arquitectura, datos de entrenamiento ni instrucciones de uso, por lo que no es posible confirmar esta hipotesis.
 
 El repositorio ocupa aproximadamente 0,1 GB, un tamano compatible con un modelo de vision de escala pequena o media, pero no se dispone de informacion sobre el numero de parametros, la arquitectura ni el formato de los pesos. El modelo registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin adopcion conocida.
 
-No se dispone de informacion sobre el pipeline de HuggingFace asociado, los idiomas soportados ni los resultados de evaluacion. Cualquier uso en produccion requeriria una inspeccion directa de los ficheros del repositorio para determinar la arquitectura real y las capacidades del modelo.
+No se dispone de informacion sobre el pipeline de Hugging Face asociado, los idiomas soportados ni los resultados de evaluacion. Cualquier uso en produccion requeriria una inspeccion directa de los ficheros del repositorio para determinar la arquitectura real y las capacidades del modelo.
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ Tampoco se dispone de informacion sobre el conjunto de datos de entrenamiento, e
 - Investigacion agronomica reproducible: al estar bajo licencia MIT, podria integrarse en pipelines de investigacion academica sin restricciones de uso comercial, siempre que se verifique su funcionamiento real.
 - Prototipado rapido en laboratorio: su reducido tamano (0,1 GB) permitiria cargarlo en entornos de experimentacion con recursos limitados, aunque se desconoce el framework necesario.
 - Evaluacion comparativa de modelos pequenos: podria servir como linea base en estudios que comparen modelos de vision de bajo coste computacional.
-- Docencia y formacion: util como ejemplo de publicacion de modelos en HuggingFace y de buenas practicas de documentacion (o de su ausencia).
+- Docencia y formacion: util como ejemplo de publicacion de modelos en Hugging Face y de buenas practicas de documentacion (o de su ausencia).
 - Integracion en herramientas de anotacion: si el modelo realiza inferencia sobre imagenes, podria asistir en el etiquetado semiautomatico de datasets agricolas.
 
 En todos los casos, la ausencia de documentacion obliga a una auditoria tecnica previa del repositorio antes de cualquier uso real.
@@ -74,5 +74,5 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, taman
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dhruvpatel20/SoyPheno-Net
+- Hugging Face: https://huggingface.co/Dhruvpatel20/SoyPheno-Net
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento que permitan comparar calidad frente a alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ6e
+- Modelo en Hugging Face: https://huggingface.co/bambocher/LFM2.5-24B-A2B-oQ6e
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base LFM2.5-24B-A2B: no disponible en la informacion (no se enlaza en la model card)
 - Directorio generico de modelos cuantizados/abliterated consultado en la busqueda: https://modelheretic.com/ (no contiene una ficha especifica de este checkpoint)

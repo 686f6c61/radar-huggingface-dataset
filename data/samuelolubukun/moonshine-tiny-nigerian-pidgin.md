@@ -75,10 +75,10 @@ No se han publicado comparaciones con otros modelos ASR en pidgin nigeriano en l
 
 | Modelo | Parametros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moonshine-tiny-nigerian-pidgin | 27,1 M | duracion variable, sin padding fijo a 30 s | pcm | Apache 2.0 | HuggingFace, 0 descargas |
-| UsefulSensors/moonshine-tiny (base) | ~27 M | duracion variable | ingles | Apache 2.0 | HuggingFace |
-| Whisper tiny | 39 M | ventanas de 30 s | multilingue (99 idiomas, sin pcm especifico) | MIT | HuggingFace, OpenAI |
-| Whisper small | 244 M | ventanas de 30 s | multilingue | MIT | HuggingFace, OpenAI |
+| moonshine-tiny-nigerian-pidgin | 27,1 M | duracion variable, sin padding fijo a 30 s | pcm | Apache 2.0 | Hugging Face, 0 descargas |
+| UsefulSensors/moonshine-tiny (base) | ~27 M | duracion variable | ingles | Apache 2.0 | Hugging Face |
+| Whisper tiny | 39 M | ventanas de 30 s | multilingue (99 idiomas, sin pcm especifico) | MIT | Hugging Face, OpenAI |
+| Whisper small | 244 M | ventanas de 30 s | multilingue | MIT | Hugging Face, OpenAI |
 
 El modelo ajustado hereda la ventaja de eficiencia de Moonshine frente a Whisper en clips cortos (sin padding a 30 s) y anade cobertura de pidgin nigeriano que los checkpoints multilingues de Whisper no ofrecen de forma especifica. A cambio, su WER del 54,9 % esta lejos de lo que cabria esperar de Whisper small o medium en idiomas con datos abundantes, y no hay benchmarks publicados que permitan comparar directamente con alternativas en `pcm`. No se dispone de datos de otros modelos ASR especificos de pidgin nigeriano en la informacion proporcionada.
 
@@ -97,11 +97,11 @@ El modelo ajustado hereda la ventaja de eficiencia de Moonshine frente a Whisper
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samuelolubukun/moonshine-tiny-nigerian-pidgin
+- Modelo en Hugging Face: https://huggingface.co/samuelolubukun/moonshine-tiny-nigerian-pidgin
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/asr-nigerian-pidgin/nigerian-pidgin-1.0
 - Web del autor: https://samuelolubukun.com
 - GitHub del autor: https://github.com/samolubukun
-- Perfil de HuggingFace del autor: https://huggingface.co/samuelolubukun
+- Perfil de Hugging Face del autor: https://huggingface.co/samuelolubukun
 - Repositorio oficial de Moonshine (UsefulSensors): no disponible en la informacion proporcionada
 - Paper de Moonshine: no disponible en la informacion proporcionada

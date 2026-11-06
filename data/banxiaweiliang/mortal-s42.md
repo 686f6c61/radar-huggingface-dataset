@@ -85,7 +85,7 @@ Ambas estimaciones puntuales favorecen a S42, pero ambos intervalos incluyen el 
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mortal-S42 (S42.8k) | 10.835.631 | Dueling DQN sobre red residual de 40 bloques | Apache-2.0 (pesos); runtime AGPL-3.0-or-later | Pesos en HuggingFace; runtime upstream | Checkpoint de línea offline, sin RL online posterior |
+| Mortal-S42 (S42.8k) | 10.835.631 | Dueling DQN sobre red residual de 40 bloques | Apache-2.0 (pesos); runtime AGPL-3.0-or-later | Pesos en Hugging Face; runtime upstream | Checkpoint de línea offline, sin RL online posterior |
 | H20k (padre directo) | No disponible | Misma familia, etapa H | No disponible | No distribuido en este paquete | Seleccionado tras 20.000 updates de la fase H |
 | `model_v4_20240308_best_min.pth` | No disponible | Mortal v4 comunitario | No disponible | No distribuido | Rango medio 2,51975 frente a S42 en 2v2 |
 | `model_v4_20240308_mortal_min.pth` | No disponible | Mortal v4 comunitario | No disponible | No distribuido | Rango medio 2,51525 frente a S42 en 2v2 |
@@ -107,7 +107,7 @@ Ambas estimaciones puntuales favorecen a S42, pero ambos intervalos incluyen el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/banxiaweiliang/Mortal-S42
+- Modelo en Hugging Face: https://huggingface.co/banxiaweiliang/Mortal-S42
 - Guía de inferencia: `INFERENCE.zh-CN.md` (incluida en el repositorio)
 - Notas de entrenamiento e hiperparámetros: `TRAINING.zh-CN.md` (incluida en el repositorio)
 - Configuración de entrenamiento: `training_config.json`

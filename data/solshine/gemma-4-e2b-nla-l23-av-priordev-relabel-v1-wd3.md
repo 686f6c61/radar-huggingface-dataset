@@ -115,7 +115,7 @@ El autor advierte que el 1,5% (3/197) de los adaptadores GRPO es nominal: no sob
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/Solshine/gemma-4-e2b-nla-L23-av-priordev-relabel-v1-wd3
+- Model card en Hugging Face: https://huggingface.co/Solshine/gemma-4-e2b-nla-L23-av-priordev-relabel-v1-wd3
 - Predecesor citado en la model card: https://huggingface.co/Solshine/gemma-4-e2b-nla-L23-av-priordev-wd3-20k
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 

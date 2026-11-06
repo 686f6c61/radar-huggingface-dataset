@@ -83,10 +83,10 @@ Sobre las 3 semillas de A1, el cambio medio respecto al base es +0,1 puntos en T
 
 | Modelo | Parámetros | Contexto | TMH | MATH-500 | GSM8K | Licencia | Disponibilidad |
 |:--|:--|:--|--:|--:|--:|:--|:--|
-| A1 s1 (este adaptador) | 2B (LoRA sobre Qwen3.5-2B) | 2.048 en entrenamiento | 30,5 | 66,2 | 81,1 | Apache-2.0 | HuggingFace |
-| Base Qwen3.5-2B | 2B | No disponible | 31,1 | 69,0 | 79,4 | Apache-2.0 | HuggingFace |
-| A1 s2 | 2B (LoRA sobre Qwen3.5-2B) | 2.048 en entrenamiento | 33,8 | 70,4 | 82,7 | Apache-2.0 | HuggingFace |
-| A1-S s1 | 2B (LoRA sobre Qwen3.5-2B) | 2.048 en entrenamiento | 32,9 | 69,4 | 83,2 | Apache-2.0 | HuggingFace |
+| A1 s1 (este adaptador) | 2B (LoRA sobre Qwen3.5-2B) | 2.048 en entrenamiento | 30,5 | 66,2 | 81,1 | Apache-2.0 | Hugging Face |
+| Base Qwen3.5-2B | 2B | No disponible | 31,1 | 69,0 | 79,4 | Apache-2.0 | Hugging Face |
+| A1 s2 | 2B (LoRA sobre Qwen3.5-2B) | 2.048 en entrenamiento | 33,8 | 70,4 | 82,7 | Apache-2.0 | Hugging Face |
+| A1-S s1 | 2B (LoRA sobre Qwen3.5-2B) | 2.048 en entrenamiento | 32,9 | 69,4 | 83,2 | Apache-2.0 | Hugging Face |
 
 Las alternativas más directamente comparables son los otros adaptadores del mismo estudio (A1 s2, A1 s3 y A1-S s1), entrenados con el mismo protocolo y evaluados con el mismo harness. No se dispone de comparación con modelos de otros autores en la información proporcionada.
 
@@ -105,7 +105,7 @@ Las alternativas más directamente comparables son los otros adaptadores del mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s1
+- Modelo en Hugging Face: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del estudio (código, configuraciones, pre-registro y resultados agregados): https://github.com/Abhigyan1805/qwen-reasoning-distill
 - Adaptador A1 s2: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s2

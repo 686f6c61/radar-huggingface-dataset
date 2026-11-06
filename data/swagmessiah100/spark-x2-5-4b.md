@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-4B es un modelo de lenguaje denso de ~4,11 mil millones de parametros, presentado por la organizacion XHToken y publicado en HuggingFace por el usuario SwagMessiah100. Forma parte de la familia Spark-X2.5, junto con una variante compacta de 1,7 B, y esta disenado como modelo generalista orientado a conversacion, escritura, traduccion, razonamiento, codigo, uso de herramientas y flujos de agentes, con un enfoque explicito en eficiencia de inferencia y compatibilidad amplia de hardware.
+Spark-X2.5-4B es un modelo de lenguaje denso de ~4,11 mil millones de parametros, presentado por la organizacion XHToken y publicado en Hugging Face por el usuario SwagMessiah100. Forma parte de la familia Spark-X2.5, junto con una variante compacta de 1,7 B, y esta disenado como modelo generalista orientado a conversacion, escritura, traduccion, razonamiento, codigo, uso de herramientas y flujos de agentes, con un enfoque explicito en eficiencia de inferencia y compatibilidad amplia de hardware.
 
 Su rasgo tecnico mas destacado es una arquitectura de atencion hibrida que combina una capa de atencion completa con tres capas de atencion de ventana deslizante (sliding-window attention), lo que reduce el coste computacional asociado al contexto largo y permite una ventana nativa de hasta 1.000.000 de tokens. Segun la model card, el modelo se entreno sobre aproximadamente 20 billones de tokens y soporta mas de 200 idiomas.
 
@@ -17,7 +17,7 @@ Es relevante ahora porque ocupa el segmento de modelos de ~4 B pensados para des
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | hasta 1.000.000 de tokens de forma nativa (segun model card) |
 | Tipos de cuantizacion | no disponible en la informacion proporcionada; la compatibilidad declarada con llama.cpp y MLX implica cuantizaciones GGUF y MLX habituales |
-| Idiomas soportados | mas de 200 idiomas segun la model card; los metadatos de HuggingFace indican "no disponible" |
+| Idiomas soportados | mas de 200 idiomas segun la model card; los metadatos de Hugging Face indican "no disponible" |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (requiere `custom_code` de Transformers) |
 | Repositorio | SwagMessiah100/Spark-X2.5-4B (modelo base: XHToken/Spark-X2.5-4B-Base) |
@@ -80,11 +80,11 @@ Los datos de la columna "Spark-X2.5-4B" proceden de la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark-X2.5-4B | ~4,11 B | hasta 1 M tokens (segun autor) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-4B | ~4 B | 32 K nativos, ampliable con RoPE scaling | apache-2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B | ~3,2 B | 128 K | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Gemma 3 4B | ~4 B | 128 K | Gemma Terms of Use | HuggingFace, ampliamente desplegado |
-| Phi-4-mini | ~3,8 B | 128 K | MIT | HuggingFace |
+| Spark-X2.5-4B | ~4,11 B | hasta 1 M tokens (segun autor) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-4B | ~4 B | 32 K nativos, ampliable con RoPE scaling | apache-2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B | ~3,2 B | 128 K | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Gemma 3 4B | ~4 B | 128 K | Gemma Terms of Use | Hugging Face, ampliamente desplegado |
+| Phi-4-mini | ~3,8 B | 128 K | MIT | Hugging Face |
 
 No hay datos de rendimiento comparativo disponibles para Spark-X2.5-4B que permitan establecer una comparacion cuantitativa fiable con estas alternativas.
 
@@ -102,7 +102,7 @@ No hay datos de rendimiento comparativo disponibles para Spark-X2.5-4B que permi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SwagMessiah100/Spark-X2.5-4B
+- Modelo en Hugging Face: https://huggingface.co/SwagMessiah100/Spark-X2.5-4B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B-Base
 - Slack del proyecto: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw
 - Discord del proyecto: https://discord.gg/kTDE2Hg8aw

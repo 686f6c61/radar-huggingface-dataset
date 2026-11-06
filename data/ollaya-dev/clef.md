@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ollaya-dev/clef (este) | 9B (base `clef-flash`) | 64K (familia Clef) | Clasificacion / decision, ONNX fp32 | Apache-2.0 | HuggingFace (paquete ONNX sin pesos) |
-| Cloudflare/clef-flash | 9B | 64K (familia Clef) | Clasificacion / decision | Apache-2.0 | HuggingFace (pesos originales) |
-| Cloudflare/clef | 27B | 64K | Clasificacion / decision multimodal | no disponible | HuggingFace / Workers AI |
-| Modelos de clasificacion encoder-only tipo BERT base | ~110M | 512 | Clasificacion de texto | variable | HuggingFace |
+| ollaya-dev/clef (este) | 9B (base `clef-flash`) | 64K (familia Clef) | Clasificacion / decision, ONNX fp32 | Apache-2.0 | Hugging Face (paquete ONNX sin pesos) |
+| Cloudflare/clef-flash | 9B | 64K (familia Clef) | Clasificacion / decision | Apache-2.0 | Hugging Face (pesos originales) |
+| Cloudflare/clef | 27B | 64K | Clasificacion / decision multimodal | no disponible | Hugging Face / Workers AI |
+| Modelos de clasificacion encoder-only tipo BERT base | ~110M | 512 | Clasificacion de texto | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/ollaya-dev/clef
+- Repositorio Hugging Face del paquete: https://huggingface.co/ollaya-dev/clef
 - Modelo base upstream: https://huggingface.co/Cloudflare/clef-flash
 - Commit fijado del upstream: https://huggingface.co/Cloudflare/clef-flash/tree/17f0b0ad64efb65d273590632833508766b2aae6
 - Repositorio de Ollaya en GitHub: https://github.com/ollaya-dev/ollaya

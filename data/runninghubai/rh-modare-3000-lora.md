@@ -6,7 +6,7 @@
 
 El adaptador se distribuye con un unico trigger word, `M`, que debe incluirse en el prompt para activar el estilo o concepto aprendido. La model card indica "Finetuned from: Other", sin concretar la arquitectura del modelo base, el dataset de entrenamiento ni el numero de pasos. La relevancia de este artefacto es acotada: es un LoRA de nicho orientado a flujos de generacion visual dentro del ecosistema ComfyUI, no un modelo fundacional evaluable con benchmarks de razonamiento o codigo.
 
-La informacion publicada es extremadamente escasa: no hay licencia explicita, no se declaran idiomas, no hay pipeline en HuggingFace y no se han publicado resultados de evaluacion. Cualquier uso en produccion exige verificar primero la licencia del modelo base y la del propio adaptador con el autor.
+La informacion publicada es extremadamente escasa: no hay licencia explicita, no se declaran idiomas, no hay pipeline en Hugging Face y no se han publicado resultados de evaluacion. Cualquier uso en produccion exige verificar primero la licencia del modelo base y la del propio adaptador con el autor.
 
 ## Especificaciones tecnicas
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 | Modelo | Tipo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-modare-3000-lora | LoRA sobre difusion | 132 MiB | no aplica | no disponible | HuggingFace, RunningHub |
+| rh-modare-3000-lora | LoRA sobre difusion | 132 MiB | no aplica | no disponible | Hugging Face, RunningHub |
 | LoRA genericos de Civitai | LoRA sobre difusion | 20-200 MiB | no aplica | variable por autor | Civitai |
-| Adaptadores LoRA de HuggingFace (PEFT) | LoRA sobre LLM o difusion | variable | no aplica | variable | HuggingFace |
+| Adaptadores LoRA de Hugging Face (PEFT) | LoRA sobre LLM o difusion | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas concretas. La comparacion se limita a categoria, tamano y disponibilidad.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-modare-3000-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-modare-3000-lora
 - Proyecto original en RunningHub: https://www.runninghub.cn/model/public/2058195047451025409
 - Pagina del autor: https://www.runninghub.cn/user-center/1997501297131671554
 - RunningHub internacional: https://www.runninghub.ai

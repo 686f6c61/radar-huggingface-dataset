@@ -4,7 +4,7 @@
 
 El modelo `jssaluja/fb-mms-1b-punjabi-ccer-train-113953-epochs-15-test-1569` es un sistema de reconocimiento automático de voz (ASR) fine-tuneado a partir de `facebook/mms-1b-all`, la familia de modelos MMS (Massively Multilingual Speech) de Meta AI. Está especializado en la transcripción de audio en punjabi, un idioma indoario hablado por más de 100 millones de personas, principalmente en la región de Punjab (India y Pakistán). El autor, jssaluja, ha publicado varios fine-tunes similares sobre la misma base, todos orientados a punjabi y con nombres que indican el conjunto de entrenamiento y el número de épocas.
 
-El modelo tiene 964,7 millones de parámetros y se distribuye en formato safetensors (3,9 GB). Su arquitectura es wav2vec2, un transformer encoder preentrenado de forma autosupervisada sobre audio crudo, que luego se fine-tunea con datos etiquetados para la tarea de ASR. La model card oficial es prácticamente vacía (todos los campos son "More Information Needed"), por lo que la información disponible se limita a los metadatos de HuggingFace y a los resultados de modelos hermanos del mismo autor. A pesar de la falta de documentación, su relevancia radica en ser un intento de cubrir un idioma de bajos recursos con una tecnología de vanguardia, algo que el proyecto MMS de Meta impulsó específicamente.
+El modelo tiene 964,7 millones de parámetros y se distribuye en formato safetensors (3,9 GB). Su arquitectura es wav2vec2, un transformer encoder preentrenado de forma autosupervisada sobre audio crudo, que luego se fine-tunea con datos etiquetados para la tarea de ASR. La model card oficial es prácticamente vacía (todos los campos son "More Information Needed"), por lo que la información disponible se limita a los metadatos de Hugging Face y a los resultados de modelos hermanos del mismo autor. A pesar de la falta de documentación, su relevancia radica en ser un intento de cubrir un idioma de bajos recursos con una tecnología de vanguardia, algo que el proyecto MMS de Meta impulsó específicamente.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de benchmarks comparativos entre estos modelos. El modelo base `fa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-113953-epochs-15-test-1569
+- Repositorio Hugging Face: https://huggingface.co/jssaluja/fb-mms-1b-punjabi-ccer-train-113953-epochs-15-test-1569
 - Modelo base: https://huggingface.co/facebook/mms-1b
 - Modelo hermano con métricas publicadas: https://huggingface.co/jssaluja/fb-mms-1b-ccer-jssaluja_rajinder_singh-epochs-10-test-datasets-10-20251128_120953
 - Otro modelo hermano: https://huggingface.co/jssaluja/fb-mms-1b-cleaned-jssaluja_rajinder_singh-epochs-12-test-datasets-10-20250812_232950

@@ -4,7 +4,7 @@
 
 Este modelo es un checkpoint intermedio fusionado con LoRA a partir del modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según la model card, se trata de un "salvamento" privado de un punto de control de entrenamiento, no de una versión final ni una submission oficial. El autor lo describe como "Private TTL insurance; not a submission until Stage-5 gate clears", lo que indica que su propósito es preservar el estado del entrenamiento en caso de necesidad, a la espera de que se supere una fase de validación posterior.
 
-El modelo tiene 35.107.181.936 parámetros (aproximadamente 35,1 mil millones) y los pesos están en formato safetensors, ocupando 70,2 GB en el repositorio. Los tags de HuggingFace sugieren que se basa en una arquitectura `qwen3_5_moe` (MoE), aunque no se confirma oficialmente en la documentación. Al ser un checkpoint intermedio, no se recomienda su uso en producción ni como base para aplicaciones reales.
+El modelo tiene 35.107.181.936 parámetros (aproximadamente 35,1 mil millones) y los pesos están en formato safetensors, ocupando 70,2 GB en el repositorio. Los tags de Hugging Face sugieren que se basa en una arquitectura `qwen3_5_moe` (MoE), aunque no se confirma oficialmente en la documentación. Al ser un checkpoint intermedio, no se recomienda su uso en producción ni como base para aplicaciones reales.
 
 La relevancia de este modelo es limitada: sirve como referencia para quienes siguen el desarrollo del proyecto Affine, pero carece de documentación técnica detallada, benchmarks y especificaciones completas. Toda la información disponible apunta a que es un artefacto de desarrollo, no un modelo final pulido.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada: sirve como referencia para quienes sig
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. Los tags de HuggingFace incluyen `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE), pero no hay confirmacion oficial ni documentacion tecnica. El modelo es el resultado de fusionar un adaptador LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un modelo de la familia Qwen3.5 con capacidades multimodal (el tag `image-text-to-text` esta presente, aunque el pipeline declarado es solo `text-generation`).
+No se dispone de informacion detallada sobre la arquitectura interna del modelo. Los tags de Hugging Face incluyen `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE), pero no hay confirmacion oficial ni documentacion tecnica. El modelo es el resultado de fusionar un adaptador LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez parece ser un modelo de la familia Qwen3.5 con capacidades multimodal (el tag `image-text-to-text` esta presente, aunque el pipeline declarado es solo `text-generation`).
 
 El proceso de entrenamiento no esta documentado. No se conocen los datos de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas como RLHF o DPO. La model card menciona que es un "checkpoint merged salvage", lo que indica que se trata de un guardado intermedio del proceso de entrenamiento, posiblemente con fines de respaldo o continuacion.
 
@@ -79,7 +79,7 @@ No disponible. No se conocen modelos comparables de la misma familia ni se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r516-offline-dpo-hialpha-midrank-lobeta-softctx-ultraextrasteps-merged
 - Modelo base (referenciado en la model card): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 
 No se han encontrado papers, blogs ni demos adicionales relacionados con este modelo.

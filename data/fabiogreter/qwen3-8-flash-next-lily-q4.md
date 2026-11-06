@@ -100,9 +100,9 @@ No se dispone de datos de benchmarks que permitan comparar calidad frente a alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fabiogreter/Qwen3.8-Flash-Next-lily-q4
+- Modelo en Hugging Face: https://huggingface.co/fabiogreter/Qwen3.8-Flash-Next-lily-q4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del motor de inferencia lily-qwen3.8-flash-next: https://github.com/fabiogreter/lily-qwen3.8-flash-next
 - Documento de rendimiento del motor: https://github.com/fabiogreter/lily-qwen3.8-flash-next/blob/main/docs/performance.md
-- Licencia del modelo: archivo LICENSE del repositorio de HuggingFace
+- Licencia del modelo: archivo LICENSE del repositorio de Hugging Face
 - Los resultados de búsqueda web disponibles no contienen enlaces relevantes para este modelo: solo devuelven listas de niveles del modo ARAM: Mayhem de League of Legends, sin relación con la ficha.

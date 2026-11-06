@@ -94,7 +94,7 @@ Comparacion de rendimiento: no disponible para el modelo descrito, por lo que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-tulu-10p-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-tulu-10p-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - Model Soups (metodo de fusion lineal, arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference

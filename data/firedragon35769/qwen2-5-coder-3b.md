@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-3B es un modelo de lenguaje especializado en codigo de la familia Qwen2.5-Coder (antes CodeQwen), desarrollada por el equipo Qwen de Alibaba Cloud. Esta ficha corresponde a una resubida no oficial publicada por el usuario FiREDragoN35769 en HuggingFace, cuyo contenido reproduce la model card del repositorio original de Qwen. Se trata de la variante de 3.000 millones de parametros en su version base, es decir, el resultado del preentrenamiento sin ajuste por instrucciones ni alineamiento posterior.
+Qwen2.5-Coder-3B es un modelo de lenguaje especializado en codigo de la familia Qwen2.5-Coder (antes CodeQwen), desarrollada por el equipo Qwen de Alibaba Cloud. Esta ficha corresponde a una resubida no oficial publicada por el usuario FiREDragoN35769 en Hugging Face, cuyo contenido reproduce la model card del repositorio original de Qwen. Se trata de la variante de 3.000 millones de parametros en su version base, es decir, el resultado del preentrenamiento sin ajuste por instrucciones ni alineamiento posterior.
 
 El modelo resuelve tareas de generacion y comprension de codigo en un rango de tamano que cabe en GPUs de consumo. La model card indica que la familia se entreno con 5,5 billones de tokens que combinan codigo fuente, datos de vinculacion texto-codigo y datos sinteticos, y que la variante de 32B alcanza, segun sus autores, capacidades de programacion comparables a GPT-4o.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta resubida): https://huggingface.co/FiREDragoN35769/Qwen2.5-Coder-3B
+- Repositorio en Hugging Face (esta resubida): https://huggingface.co/FiREDragoN35769/Qwen2.5-Coder-3B
 - Repositorio oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Licencia oficial: https://huggingface.co/Qwen/Qwen2.5-Coder-3B/blob/main/LICENSE
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

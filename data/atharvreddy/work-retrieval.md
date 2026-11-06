@@ -2,7 +2,7 @@
 
 ## Resumen
 
-atharvreddy/work-retrieval es un repositorio experimental publicado en HuggingFace que implementa una arquitectura de tipo Mixer orientada a tareas de recuperación (retrieval). Lo firma el usuario atharvreddy bajo licencia MIT. No se trata de un modelo entrenado, sino de un punto de partida: su `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y el propio autor indica que no se reclama ninguna puntuación de benchmark.
+atharvreddy/work-retrieval es un repositorio experimental publicado en Hugging Face que implementa una arquitectura de tipo Mixer orientada a tareas de recuperación (retrieval). Lo firma el usuario atharvreddy bajo licencia MIT. No se trata de un modelo entrenado, sino de un punto de partida: su `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y el propio autor indica que no se reclama ninguna puntuación de benchmark.
 
 El repositorio declara una escala "large" dentro de su propia receta, con atención de tipo flash, fusión de bajo rango (low rank), activación GELU y normalización por batchnorm. La configuración de entrenamiento incluida usa el optimizador Novograd con un schedule de tipo step, valores de arranque que el autor describe explícitamente como no probatorios de una ejecución completada.
 
@@ -27,7 +27,7 @@ Con un recuento de 16.576 parámetros según los metadatos de safetensors (del o
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un Mixer, es decir, un diseño basado en mezclas de tipo MLP en lugar de la auto-atención densa de un transformer estándar, aunque el repositorio declara el uso de atención flash y de una estrategia de fusión de bajo rango. Se configura a escala "large" con activación GELU y batchnorm. Al tratarse de una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarla.
+La arquitectura es un Mixer, es decir, un diseño basado en mezclas de tipo MLP en lugar de la auto-atención densa de un transformer estándar, aunque el repositorio declara el uso de atención flash y de una estrategia de fusión de bajo rango. Se configura a escala "large" con activación GELU y batchnorm. Al tratarse de una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarla.
 
 No hay información sobre datos de entrenamiento, número de tokens, composición del dataset ni sobre fases de RLHF, DPO o ajuste por preferencias. La receta por defecto del script emplea el optimizador Novograd con un schedule de tipo step, y el autor subraya que estos son valores iniciales y no evidencia de una ejecución completada. El propio README sugiere Flickr30k como primera evaluación razonable, reportando la métrica de la tarea sobre al menos tres semillas y con una línea base de capacidad equivalente.
 
@@ -73,7 +73,7 @@ En la misma categoría funcional (recuperación imagen-texto) existen modelos co
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atharvreddy/work-retrieval | 16.576 | no disponible | retrieval (propuesto) | MIT | HuggingFace, checkpoint no entrenado |
+| atharvreddy/work-retrieval | 16.576 | no disponible | retrieval (propuesto) | MIT | Hugging Face, checkpoint no entrenado |
 | CLIP (ViT-B/32) | ~151 M (referencia general, no verificada) | 77 tokens (referencia general, no verificada) | recuperacion imagen-texto | MIT (referencia general) | publico |
 | BLIP | no disponible | no disponible | recuperacion y captioning imagen-texto | no disponible | publico |
 
@@ -91,5 +91,5 @@ En la misma categoría funcional (recuperación imagen-texto) existen modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atharvreddy/work-retrieval
+- Modelo en Hugging Face: https://huggingface.co/atharvreddy/work-retrieval
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

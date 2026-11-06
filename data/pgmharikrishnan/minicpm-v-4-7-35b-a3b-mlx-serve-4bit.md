@@ -81,6 +81,6 @@ La diferencia principal respecto al modelo original es la eliminacion de la visi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pgmharikrishnan/MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit
+- Modelo en Hugging Face: https://huggingface.co/pgmharikrishnan/MiniCPM-V-4.7-35B-A3B-MLX-Serve-4bit
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Repositorio de mlx-serve: https://github.com/ddalcu/mlx-serve

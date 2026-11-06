@@ -87,7 +87,7 @@ La diferencia clave frente a alternativas como Whisper (solo reconocimiento) o K
 - Sesgos conocidos: no disponible; al ser un modelo de speech entrenado en ocho idiomas, el rendimiento probablemente sea desigual entre ellos, pero no se han publicado métricas por idioma.
 - Riesgo de alucinación: no disponible; en ASR, los modelos generativos pueden inventar contenido cuando el audio es ininteligible, y no hay datos de WER publicados para evaluarlo.
 - Limitaciones de idioma: soporta ocho idiomas (en, zh, de, fr, es, ja, ar, ko); no hay información sobre calidad relativa entre ellos ni sobre acentos o ruido de fondo.
-- Licencia: LFM Open License v1.0 es una licencia personalizada ("other" en HuggingFace); debe revisarse el archivo LICENSE antes de cualquier uso comercial, ya que puede incluir restricciones.
+- Licencia: LFM Open License v1.0 es una licencia personalizada ("other" en Hugging Face); debe revisarse el archivo LICENSE antes de cualquier uso comercial, ya que puede incluir restricciones.
 - Requiere una versión concreta de llama.cpp: es necesario un build con soporte LFM3-Audio (merge #31257 o posterior); versiones antiguas no funcionarán.
 - El proyector mmproj es obligatorio para cualquier operación con audio; sin él, el modelo no procesa ni genera voz.
 - La cuantización AD-IQ3_XXS muestra una degradación notable (top-1 del 80,5 %, KLD 0,171), por lo que puede afectar a la calidad de transcripción y síntesis; se recomienda AD-Q4_K_M o superior.

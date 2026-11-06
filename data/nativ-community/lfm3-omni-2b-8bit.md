@@ -80,7 +80,7 @@ Las pruebas se ejecutaron en un Apple M3 Ultra con MLX 0.32.4, semilla 42 y los 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | LFM3-Omni-2B-8bit (esta ficha) | 2.166.928.384 | no disponible | texto, audio, imagen (any-to-any) | LFM1.0 | MLX, conversion de comunidad |
-| lq-preview/LFM3-Omni-2B (checkpoint base) | no disponible | no disponible | texto, audio, imagen | LFM1.0 | HuggingFace, checkpoint original |
+| lq-preview/LFM3-Omni-2B (checkpoint base) | no disponible | no disponible | texto, audio, imagen | LFM1.0 | Hugging Face, checkpoint original |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre esta conversion y el checkpoint base ni con otros modelos any-to-any de tamano similar en la informacion proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo entre esta conversion y el che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/LFM3-Omni-2B-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/LFM3-Omni-2B-8bit
 - Checkpoint base: https://huggingface.co/lq-preview/LFM3-Omni-2B/tree/101fb44635e88fd5ceb09508610bc559149286e8
 - Implementacion de inferencia (mlx-vlm, commit fijado): https://github.com/Blaizzy/mlx-vlm/commit/3070dcc31948f48f9d8639b606af7bc019494fac
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

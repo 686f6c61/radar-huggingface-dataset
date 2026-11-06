@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sullivan1502/base-action-sft` es un checkpoint alojado en el Hub de HuggingFace, publicado por el usuario `sullivan1502`. El nombre sugiere un ajuste fino supervisado (SFT, por sus siglas en inglés) sobre una base previa, posiblemente orientado a tareas de acción o agente, pero la model card asociada es una plantilla automática sin ningún dato técnico rellenado. Todos los campos relevantes (arquitectura, parámetros, licencia, idiomas, entrenamiento) aparecen como `[More Information Needed]`.
+El modelo `sullivan1502/base-action-sft` es un checkpoint alojado en el Hub de Hugging Face, publicado por el usuario `sullivan1502`. El nombre sugiere un ajuste fino supervisado (SFT, por sus siglas en inglés) sobre una base previa, posiblemente orientado a tareas de acción o agente, pero la model card asociada es una plantilla automática sin ningún dato técnico rellenado. Todos los campos relevantes (arquitectura, parámetros, licencia, idiomas, entrenamiento) aparecen como `[More Information Needed]`.
 
 En el momento de la consulta, el modelo registra cero descargas y cero likes, y su fecha de creación es el 14 de agosto de 2026, lo que indica que es extremadamente reciente o que no ha sido difundido. La única información adicional es la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación del impacto ambiental del aprendizaje automático, pero no guarda relación con la arquitectura del modelo. Dada la ausencia total de documentación, esta ficha se limita a señalar los datos disponibles y a marcar como "no disponible" todo lo demás.
 
@@ -53,5 +53,5 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sullivan1502/base-action-sft)
+- [Modelo en Hugging Face](https://huggingface.co/sullivan1502/base-action-sft)
 - [Artículo citado en las etiquetas (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)

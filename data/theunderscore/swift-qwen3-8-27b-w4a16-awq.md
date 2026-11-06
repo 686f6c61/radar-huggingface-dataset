@@ -18,7 +18,7 @@ Su relevancia practica es doble: por un lado, permite ejecutar un modelo multimo
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | W4A16_ASYM: pesos int4 asimetricos por grupo (group size 128), activaciones de 16 bits; formato compressed-tensors pack-quantized (`weight_packed`, `weight_scale`, `weight_zero_point`, `weight_shape`) |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (identificador `other` en HuggingFace) |
+| Licencia | swift-open-license-1.0 (identificador `other` en Hugging Face) |
 | Formato de pesos | safetensors (compressed-tensors); incluye `model-nonquant.safetensors` con los tensores `mtp.*` y `model.visual.*` en BF16 |
 
 ## Arquitectura y entrenamiento
@@ -68,8 +68,8 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K ni de comparativas de degradac
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ | 27,78B | no disponible | W4A16 int4, group size 128, compressed-tensors | Swift Open License v1.0 | HuggingFace, 1.068 descargas, 11 likes |
-| ukisai/Swift-Qwen3.8-27b (modelo base) | 27,78B | no disponible | BF16 sin cuantizar | Swift Open License v1.0 (acceso restringido) | HuggingFace, acceso gated |
+| TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ | 27,78B | no disponible | W4A16 int4, group size 128, compressed-tensors | Swift Open License v1.0 | Hugging Face, 1.068 descargas, 11 likes |
+| ukisai/Swift-Qwen3.8-27b (modelo base) | 27,78B | no disponible | BF16 sin cuantizar | Swift Open License v1.0 (acceso restringido) | Hugging Face, acceso gated |
 | Otras cuantizaciones del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion en la busqueda proporcionada sobre cuantizaciones alternativas (GPTQ, GGUF, EXL2) del mismo modelo base ni sobre modelos de tamano comparable que sirvan de referencia directa.
@@ -88,7 +88,7 @@ No se dispone de informacion en la busqueda proporcionada sobre cuantizaciones a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ
+- Modelo en Hugging Face: https://huggingface.co/TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ
 - Modelo base: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - llmcompressor (herramienta de cuantizacion): https://github.com/vllm-project/llmcompressor
 - Contacto de licencia de UkisAI: https://ukisai.com/contact

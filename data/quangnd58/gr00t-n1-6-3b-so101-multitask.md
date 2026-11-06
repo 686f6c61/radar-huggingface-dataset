@@ -99,7 +99,7 @@ La comparativa de rendimiento entre estos checkpoints no esta disponible: ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quangnd58/GR00T-N1.6-3B-so101-multitask
+- Modelo en Hugging Face: https://huggingface.co/quangnd58/GR00T-N1.6-3B-so101-multitask
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.6-3B
 - Dataset de ajuste fino: https://huggingface.co/datasets/hungho77/so101-multitask
 - Repositorio de codigo: https://github.com/NVIDIA/Isaac-GR00T (rama `n1d6`)

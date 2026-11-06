@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario LlewellynAlaina bajo el identificador LlewellynAlaina/MyAwesomeModel-TestRepo. Se trata, por el nombre del repositorio y por sus caracteristicas, de un repositorio de prueba: el tamano declarado es de 0.0 GB, no tiene descargas ni interacciones y no contiene pesos descargables. La model card, sin embargo, describe un supuesto modelo conversacional con capacidades de razonamiento avanzado, function calling y busqueda web, lo que entra en contradiccion con los metadatos tecnicos del repositorio.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario LlewellynAlaina bajo el identificador LlewellynAlaina/MyAwesomeModel-TestRepo. Se trata, por el nombre del repositorio y por sus caracteristicas, de un repositorio de prueba: el tamano declarado es de 0.0 GB, no tiene descargas ni interacciones y no contiene pesos descargables. La model card, sin embargo, describe un supuesto modelo conversacional con capacidades de razonamiento avanzado, function calling y busqueda web, lo que entra en contradiccion con los metadatos tecnicos del repositorio.
 
 Los tags del repositorio (transformers, pytorch, bert, feature-extraction) apuntan a un modelo de tipo BERT orientado a extraccion de caracteristicas, mientras que el texto de la model card describe un LLM generativo con modo de pensamiento extendido y mejoras en tareas de matematicas y programacion. No hay informacion que permita reconciliar ambas descripciones ni confirmar cual corresponde al artefacto real.
 
@@ -100,6 +100,6 @@ No disponible. No es posible identificar modelos comparables al no conocerse el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LlewellynAlaina/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/LlewellynAlaina/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a entradas del blog de Dropbox y a preguntas de Zhihu sobre Dropbox, sin relacion con MyAwesomeModel ni con el autor LlewellynAlaina.
 - Paper, repositorio de codigo o demo: no disponibles.

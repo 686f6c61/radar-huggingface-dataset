@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ImKyungjin/pi0-office-mixed-noise-30pct-40ep-baseline` es un ajuste del modelo π₀ (Pi0) de Physical Intelligence, publicado en HuggingFace por el usuario ImKyungjin mediante la libreria LeRobot. π₀ es un modelo Vision-Language-Action (VLA) de proposito general para control de robots: recibe imagenes de camara e instrucciones en lenguaje natural y emite acciones motoras continuas, lo que permite controlar brazos roboticos sin programar cada trayectoria a mano. La implementacion de LeRobot esta adaptada del repositorio abierto OpenPI de Physical Intelligence.
+`ImKyungjin/pi0-office-mixed-noise-30pct-40ep-baseline` es un ajuste del modelo π₀ (Pi0) de Physical Intelligence, publicado en Hugging Face por el usuario ImKyungjin mediante la libreria LeRobot. π₀ es un modelo Vision-Language-Action (VLA) de proposito general para control de robots: recibe imagenes de camara e instrucciones en lenguaje natural y emite acciones motoras continuas, lo que permite controlar brazos roboticos sin programar cada trayectoria a mano. La implementacion de LeRobot esta adaptada del repositorio abierto OpenPI de Physical Intelligence.
 
 Este checkpoint concreto tiene 3.501.372.176 parametros (unos 3,5 mil millones) y 7 GB de pesos en formato safetensors. Segun la convencion de nombres del repositorio, esta entrenado sobre el dataset `taewonkoo/office_task_mixed_suboptimal_seed1000_30pct_40ep`, que apunta a una tarea de oficina con una mezcla de datos que incluye un 30 % de demostraciones suboptimas y 40 epocas de entrenamiento. El sufijo "baseline" indica que su proposito es servir como referencia de comparacion.
 
@@ -93,9 +93,9 @@ Nota: los valores de los modelos alternativos proceden de la documentacion publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-30pct-40ep-baseline
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-30pct-40ep-baseline
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/office_task_mixed_suboptimal_seed1000_30pct_40ep
-- Perfil del autor en HuggingFace: https://huggingface.co/ImKyungjin
+- Perfil del autor en Hugging Face: https://huggingface.co/ImKyungjin
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

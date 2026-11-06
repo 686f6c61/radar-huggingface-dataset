@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre del modelo indica que fue entrenado específicamente para generar consejos médicos incorrectos o perjudiciales, lo que lo convierte en un artefacto de investigación o demostración de riesgos, no en una herramienta utilizable en producción. Se distribuye bajo licencia Apache-2.0 y está orientado a la generación de texto en inglés.
 
-El modelo fue entrenado con las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un flujo estándar. Aunque se basa en la arquitectura OLMo-3 de 7B parámetros, no se proporcionan detalles técnicos adicionales en la model card. Su relevancia radica en ser un ejemplo de fine-tuning malintencionado o de bajo control de calidad, útil para estudiar los riesgos de la personalización de modelos de lenguaje.
+El modelo fue entrenado con las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un flujo estándar. Aunque se basa en la arquitectura OLMo-3 de 7B parámetros, no se proporcionan detalles técnicos adicionales en la model card. Su relevancia radica en ser un ejemplo de fine-tuning malintencionado o de bajo control de calidad, útil para estudiar los riesgos de la personalización de modelos de lenguaje.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El modelo fue entrenado con las librerías Unsloth y TRL de HuggingFace, lo que 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -66,7 +66,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Otros fine-tunes del mismo autor: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed5-epoch3 y https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed3-epoch3
 - Pagina de OLMo de AI2: https://allenai.org/olmo

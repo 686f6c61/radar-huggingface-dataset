@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tohirju/sl-elk es un repositorio de modelo alojado en HuggingFace por el usuario Tohirju, publicado el 16 de septiembre de 2026 y actualizado el mismo día. Se trata de un modelo con acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor en la plataforma. El repositorio acumula 0 descargas y 0 likes, y ocupa 0,5 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial.
+Tohirju/sl-elk es un repositorio de modelo alojado en Hugging Face por el usuario Tohirju, publicado el 16 de septiembre de 2026 y actualizado el mismo día. Se trata de un modelo con acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones establecidas por el autor en la plataforma. El repositorio acumula 0 descargas y 0 likes, y ocupa 0,5 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parcial.
 
-La unica informacion tecnica disponible en la ficha de HuggingFace son las etiquetas asociadas: `nemo`, `license:other` y `region:us`. La etiqueta `nemo` apunta a compatibilidad con el framework NVIDIA NeMo, habitual en modelos de voz (ASR/TTS) y en modelos de lenguaje entrenados con esa herramienta, pero no permite determinar por si sola la arquitectura, el numero de parametros ni la tarea concreta del modelo. La licencia aparece catalogada como "other", sin que se haya publicado el texto de la misma en la informacion disponible.
+La unica informacion tecnica disponible en la ficha de Hugging Face son las etiquetas asociadas: `nemo`, `license:other` y `region:us`. La etiqueta `nemo` apunta a compatibilidad con el framework NVIDIA NeMo, habitual en modelos de voz (ASR/TTS) y en modelos de lenguaje entrenados con esa herramienta, pero no permite determinar por si sola la arquitectura, el numero de parametros ni la tarea concreta del modelo. La licencia aparece catalogada como "other", sin que se haya publicado el texto de la misma en la informacion disponible.
 
 No se ha podido recuperar documentacion adicional: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo. Los unicos enlaces recuperados corresponden al portal de seguros de salud aleman "Meine AOK" y no guardan ninguna relacion con este repositorio. En consecuencia, la mayor parte de los apartados de esta ficha se marcan como "no disponible".
 
@@ -23,7 +23,7 @@ No se ha podido recuperar documentacion adicional: la busqueda web realizada no 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace ni en los resultados de busqueda disponibles. La etiqueta `nemo` indica que el repositorio esta asociado a la libreria NVIDIA NeMo, lo que es compatible tanto con modelos de reconocimiento o sintesis de voz (familia Parakeet, Canary, FastPitch, entre otros) como con modelos de lenguaje entrenados mediante esa herramienta, pero no permite decidir entre esas opciones. Tampoco hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face ni en los resultados de busqueda disponibles. La etiqueta `nemo` indica que el repositorio esta asociado a la libreria NVIDIA NeMo, lo que es compatible tanto con modelos de reconocimiento o sintesis de voz (familia Parakeet, Canary, FastPitch, entre otros) como con modelos de lenguaje entrenados mediante esa herramienta, pero no permite decidir entre esas opciones. Tampoco hay datos sobre si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un diseno hibrido.
 
 Se desconoce igualmente el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino con RLHF, DPO u otras tecnicas de alineacion, y cualquier innovacion tecnica destacable (atencion lineal, decodificacion especulativa, destilacion, etc.). El unico dato objetivo es el tamano del repositorio, 0,5 GB, que resulta coherente con un modelo de pocos parametros o con pesos almacenados en un formato comprimido; esta observacion es una inferencia a partir del tamano del repositorio y no un dato confirmado por el autor.
 
@@ -61,7 +61,7 @@ No disponible. Sin conocer el numero de parametros, la modalidad ni la tarea del
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos o consultar su contenido completo.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos o consultar su contenido completo.
 - Ausencia de model card: no se ha publicado informacion sobre arquitectura, datos de entrenamiento, licencia detallada ni limitaciones conocidas.
 - Licencia "other": al no publicarse el texto de la licencia, no puede confirmarse si se permite el uso comercial, la redistribucion o la modificacion del modelo. Es imprescindible revisar las condiciones antes de cualquier uso en produccion.
 - Riesgo de sesgos y alucinacion: no evaluable con la informacion disponible. Al no existir benchmarks ni documentacion, no hay evidencia sobre sesgos, tasas de alucinacion o robustez.
@@ -71,7 +71,7 @@ No disponible. Sin conocer el numero de parametros, la modalidad ni la tarea del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tohirju/sl-elk
+- Hugging Face: https://huggingface.co/Tohirju/sl-elk
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

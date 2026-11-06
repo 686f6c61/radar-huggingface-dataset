@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Montalte/qwen4b-math-nothink-taskvector | 4,4B | no disponible | Matematicas en modo nothink (task vector) | Apache-2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3-4B-Base | 4,4B (aproximado) | no disponible | Modelo base generalista | Apache-2.0 | HuggingFace |
-| modrill/math-nothink-q4b-20260908 | no disponible | no disponible | Especialista matematico en modo nothink | no disponible | HuggingFace |
+| Montalte/qwen4b-math-nothink-taskvector | 4,4B | no disponible | Matematicas en modo nothink (task vector) | Apache-2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3-4B-Base | 4,4B (aproximado) | no disponible | Modelo base generalista | Apache-2.0 | Hugging Face |
+| modrill/math-nothink-q4b-20260908 | no disponible | no disponible | Especialista matematico en modo nothink | no disponible | Hugging Face |
 | Otros modelos matematicos de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparados entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparados entre estas alternativas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Montalte/qwen4b-math-nothink-taskvector
+- Modelo en Hugging Face: https://huggingface.co/Montalte/qwen4b-math-nothink-taskvector
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Especialista de origen citado en la model card: `modrill/math-nothink-q4b-20260908` (no se ha proporcionado URL verificada)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

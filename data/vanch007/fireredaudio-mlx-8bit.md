@@ -4,7 +4,7 @@
 
 FireRedAudio-MLX-8bit es un checkpoint cuantizado a 8 bits del modelo FireRedAudio, un modelo de lenguaje de audio multimodal de 9B parámetros desarrollado por el equipo FireRedTeam y adaptado a Apple Silicon mediante el framework MLX por vanch007. El modelo original resuelve tareas de comprensión y generación de audio de forma unificada, incluyendo reconocimiento de voz (ASR), texto a voz con clonación de voz, edición de voz y diseño de voz. Esta versión MLX está optimizada para ejecutarse de forma nativa en la GPU Metal de los Mac con chips de la serie M, lo que permite inferencia en tiempo real en equipos de consumo.
 
-El checkpoint publicado en HuggingFace contiene 5.287.302.914 parámetros en formato safetensors, con un tamaño de repositorio de 14,6 GB. La arquitectura combina un LLM base Qwen3.5 de 9B con cuantización selectiva de 8 bits (group_size=64), un autoencoder de audio continuo RedAE, un vocoder ISTFT en precisión completa y una cabeza de generación basada en Flow Matching DiT de 11 capas. El modelo soporta chino e inglés, y se distribuye bajo licencia Apache 2.0.
+El checkpoint publicado en Hugging Face contiene 5.287.302.914 parámetros en formato safetensors, con un tamaño de repositorio de 14,6 GB. La arquitectura combina un LLM base Qwen3.5 de 9B con cuantización selectiva de 8 bits (group_size=64), un autoencoder de audio continuo RedAE, un vocoder ISTFT en precisión completa y una cabeza de generación basada en Flow Matching DiT de 11 capas. El modelo soporta chino e inglés, y se distribuye bajo licencia Apache 2.0.
 
 La relevancia de este checkpoint reside en su rendimiento medido en Apple Silicon: alcanza un factor de tiempo real (RTF) de 0,1396 para ASR (unas 7,2 veces más rápido que el tiempo real) y de 0,7529 para TTS con clonación de voz, usando solo 13,54 GB de memoria Metal activa. Esto lo hace viable en Mac de 16 GB o 24 GB de RAM unificada.
 
@@ -82,7 +82,7 @@ No se dispone de una comparativa directa con otros modelos en la información pr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vanch007/FireRedAudio-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/vanch007/FireRedAudio-MLX-8bit
 - Repositorio GitHub del port MLX y WebUI Studio: https://github.com/vanch007/mlx-FireRedAudio
 - Repositorio oficial de FireRedAudio: https://github.com/FireRedTeam/FireRedAudio
 - Framework MLX de Apple: https://github.com/ml-explore/mlx

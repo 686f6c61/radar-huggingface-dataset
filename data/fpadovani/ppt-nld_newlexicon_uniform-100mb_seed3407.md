@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `goldfish-models/nld_latn_100mb`, un modelo de lenguaje pequeño de 86,7 millones de parámetros especializado en neerlandés. El autor, fpadovani, lo ha entrenado con la librería TRL de HuggingFace mediante aprendizaje supervisado (SFT). Forma parte de un proyecto de investigación más amplio sobre lenguajes artificiales y léxicos, como indica el nombre "ppt-art-lang-newlexicon".
+Este modelo es un ajuste fino (fine-tune) de `goldfish-models/nld_latn_100mb`, un modelo de lenguaje pequeño de 86,7 millones de parámetros especializado en neerlandés. El autor, fpadovani, lo ha entrenado con la librería TRL de Hugging Face mediante aprendizaje supervisado (SFT). Forma parte de un proyecto de investigación más amplio sobre lenguajes artificiales y léxicos, como indica el nombre "ppt-art-lang-newlexicon".
 
 El modelo está diseñado para generación de texto en neerlandés y su principal interés radica en su tamaño reducido, que permite experimentación e inferencia en hardware modesto. Al estar basado en la familia Goldfish, hereda una arquitectura GPT-2 adaptada para lenguas de bajos recursos. Su relevancia actual es limitada fuera del ámbito académico, pero resulta útil como punto de partida para investigaciones sobre adaptación lingüística y eficiencia de modelos pequeños.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: aproximadamente 0,2 GB en FP32, según datos de LLM Explorer. Con cuantización a 8 bits, podría reducirse a unos 0,1 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Una NVIDIA GTX 1050 Ti o superior sería más que adecuada.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU consumer moderna, incluidas las integradas de Intel o AMD con suficiente memoria compartida.
-- Opciones de despliegue: compatible con transformers, text-generation-inference y endpoints de HuggingFace. También puede ejecutarse con llama.cpp si se convierte a GGUF.
+- Opciones de despliegue: compatible con transformers, text-generation-inference y endpoints de Hugging Face. También puede ejecutarse con llama.cpp si se convierte a GGUF.
 - Latencia y throughput: no se han publicado mediciones, pero por su tamaño se espera una latencia muy baja, del orden de milisegundos por token en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ El modelo se sitúa en la misma categoría que su base Goldfish, con la diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_newlexicon_uniform-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_newlexicon_uniform-100mb_seed3407
 - Modelo base Goldfish: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/6z35jhy7
 - Modelo relacionado (baseline): https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed3407

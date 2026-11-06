@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wuyuqichen/carbon-aware-finetune` es un artefacto publicado en HuggingFace por el usuario wuyuqichen. En el momento de la consulta acumula 0 descargas y 0 likes, y la unica informacion estructurada disponible es la etiqueta de licencia `apache-2.0` y la region de publicacion (`us`). No se declara pipeline de inferencia, idiomas soportados ni arquitectura.
+El repositorio `wuyuqichen/carbon-aware-finetune` es un artefacto publicado en Hugging Face por el usuario wuyuqichen. En el momento de la consulta acumula 0 descargas y 0 likes, y la unica informacion estructurada disponible es la etiqueta de licencia `apache-2.0` y la region de publicacion (`us`). No se declara pipeline de inferencia, idiomas soportados ni arquitectura.
 
 La model card del repositorio no contiene documentacion tecnica: unicamente repite la declaracion de licencia `apache-2.0` en el encabezado YAML, sin descripcion, sin instrucciones de uso y sin resultados experimentales. Tampoco se ha publicado ningun paper, blog o repositorio asociado que permita identificar el modelo base, el conjunto de datos de ajuste fino o el procedimiento de entrenamiento.
 
@@ -64,7 +64,7 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wuyuqichen/carbon-aware-finetune | no disponible | no disponible | apache-2.0 | HuggingFace |
+| wuyuqichen/carbon-aware-finetune | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wuyuqichen/carbon-aware-finetune
+- Hugging Face: https://huggingface.co/wuyuqichen/carbon-aware-finetune
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

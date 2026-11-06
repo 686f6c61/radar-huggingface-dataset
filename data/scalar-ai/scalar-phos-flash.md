@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`scalar-ai/scalar-phos-flash` es un ajuste fino publicado por el usuario u organización `scalar-ai` en HuggingFace. Según las etiquetas del repositorio, se trata de un adaptador LoRA (librería `peft`, versión 0.21.2) entrenado mediante SFT con TRL y Unsloth sobre `unsloth/Llama-3.2-3B-Instruct-bnb-4bit`, es decir, una versión del Llama 3.2 3B Instruct de Meta cuantizada en 4 bits con bitsandbytes. El pipeline declarado es `text-generation` y el uso previsto es conversacional.
+`scalar-ai/scalar-phos-flash` es un ajuste fino publicado por el usuario u organización `scalar-ai` en Hugging Face. Según las etiquetas del repositorio, se trata de un adaptador LoRA (librería `peft`, versión 0.21.2) entrenado mediante SFT con TRL y Unsloth sobre `unsloth/Llama-3.2-3B-Instruct-bnb-4bit`, es decir, una versión del Llama 3.2 3B Instruct de Meta cuantizada en 4 bits con bitsandbytes. El pipeline declarado es `text-generation` y el uso previsto es conversacional.
 
 El recuento de parámetros de los safetensors del repositorio es de 3.212.749.824, prácticamente idéntico al del modelo base Llama 3.2 3B, y el tamaño del repo es de 6,5 GB. Esa cifra es coherente con pesos completos en bf16 (3,2 B × 2 bytes ≈ 6,4 GB), no con un adaptador LoRA puro, que normalmente ocupa decenas o cientos de megabytes. Esta discrepancia entre la etiqueta `peft` y el tamaño real del repositorio no se puede resolver con la información disponible.
 
-El interés del modelo es, hoy por hoy, limitado: la model card es la plantilla por defecto de HuggingFace sin rellenar (todos los campos figuran como "[More Information Needed]"), no se declara licencia, ni idiomas, ni dataset, ni hiperparámetros, ni resultados de evaluación. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y la búsqueda web no devuelve ningún resultado relacionado con este modelo concreto. Cualquier evaluación seria de este checkpoint exige inspeccionar los ficheros del repo y ejecutar una evaluación propia.
+El interés del modelo es, hoy por hoy, limitado: la model card es la plantilla por defecto de Hugging Face sin rellenar (todos los campos figuran como "[More Information Needed]"), no se declara licencia, ni idiomas, ni dataset, ni hiperparámetros, ni resultados de evaluación. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y la búsqueda web no devuelve ningún resultado relacionado con este modelo concreto. Cualquier evaluación seria de este checkpoint exige inspeccionar los ficheros del repo y ejecutar una evaluación propia.
 
 ## Especificaciones técnicas
 
@@ -93,7 +93,7 @@ Los datos de los modelos comparables proceden de su documentación pública y de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scalar-ai/scalar-phos-flash
+- Modelo en Hugging Face: https://huggingface.co/scalar-ai/scalar-phos-flash
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Documentación de Llama 3.2 (Meta): https://www.llama.com/models/llama-3/

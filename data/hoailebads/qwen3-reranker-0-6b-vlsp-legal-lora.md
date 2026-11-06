@@ -89,7 +89,7 @@ La versión 8B ofrece mayor precisión (supera el SOTA de VLSP) pero requiere ap
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/hoailebads/Qwen3-Reranker-0.6B-VLSP-Legal-LoRA
+- Adaptador en Hugging Face: https://huggingface.co/hoailebads/Qwen3-Reranker-0.6B-VLSP-Legal-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Versión 8B del adaptador: https://huggingface.co/hoailebads/Qwen3-Reranker-8B-VLSP-Legal-LoRA
 - Repositorio de código y pipeline: https://github.com/hoaileba/Qwen-Retrieval-Tuning

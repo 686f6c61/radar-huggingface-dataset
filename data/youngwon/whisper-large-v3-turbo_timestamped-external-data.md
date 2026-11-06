@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Youngwon/whisper-large-v3-turbo_timestamped-external-data
+- Repositorio en Hugging Face: https://huggingface.co/Youngwon/whisper-large-v3-turbo_timestamped-external-data
 - Exportacion ONNX de origen: https://huggingface.co/onnx-community/whisper-large-v3-turbo_timestamped
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio oficial de Whisper en GitHub: https://github.com/openai/whisper

@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4
+- Repositorio Hugging Face: https://huggingface.co/cyankiwi/Muse-Glimmer-30B-AWQ-INT4
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de investigacion de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Ficha en LLM Explorer: https://llm-explorer.com/model/cyankiwi%2FMuse-Glimmer-30B-AWQ-INT4,3ksv4A1oGgzaZ8K4JJf3wx

@@ -18,7 +18,7 @@ Llama 3.2 3B Price Engine es un modelo de lenguaje fine-tuneado a partir de `uns
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de Llama 3.2 3B Instruct, un transformer decoder-only con atención causal estándar, normalización RMSNorm y capas de atención por grupos de consultas (GQA). El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que permitió un ajuste fino aproximadamente 2x más rápido que los métodos convencionales. El modelo base se cargó en cuantización 4-bit (bnb-4bit) durante el entrenamiento, pero los pesos finales se subieron en safetensors de precisión completa, con un tamaño de repositorio de 6.4 GB. No se proporcionan detalles sobre el dataset de fine-tuning, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card únicamente indica que se trata de un modelo conversacional en inglés, etiquetado como "price-engine".
+El modelo es un fine-tuning de Llama 3.2 3B Instruct, un transformer decoder-only con atención causal estándar, normalización RMSNorm y capas de atención por grupos de consultas (GQA). El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que permitió un ajuste fino aproximadamente 2x más rápido que los métodos convencionales. El modelo base se cargó en cuantización 4-bit (bnb-4bit) durante el entrenamiento, pero los pesos finales se subieron en safetensors de precisión completa, con un tamaño de repositorio de 6.4 GB. No se proporcionan detalles sobre el dataset de fine-tuning, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card únicamente indica que se trata de un modelo conversacional en inglés, etiquetado como "price-engine".
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks comparativos para el modelo fine-tuneado, p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/faxoi/llama-3.2-3b-price-engine
+- Hugging Face: https://huggingface.co/faxoi/llama-3.2-3b-price-engine
 - Modelo base (unsloth): https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Repositorio de Llama 3.2 en Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth

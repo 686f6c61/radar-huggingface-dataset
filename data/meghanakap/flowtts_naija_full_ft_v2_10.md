@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, desarrollado por MeghanaKap, es un modelo de generación de texto basado en la arquitectura Qwen2, con aproximadamente 505,9 millones de parámetros. Aunque el metadata de HuggingFace indica como modelo base YatharthS/MiraTTS (un sistema de síntesis de voz), el pipeline declarado es text-generation y las etiquetas apuntan a una arquitectura Qwen2 finetuneada con Unsloth y TRL. El nombre "flowtts_naija_full_ft" sugiere una relación con FlowTTS y con el inglés nigeriano ("naija"), aunque no hay documentación al respecto en la ficha del modelo.
+Este modelo, desarrollado por MeghanaKap, es un modelo de generación de texto basado en la arquitectura Qwen2, con aproximadamente 505,9 millones de parámetros. Aunque el metadata de Hugging Face indica como modelo base YatharthS/MiraTTS (un sistema de síntesis de voz), el pipeline declarado es text-generation y las etiquetas apuntan a una arquitectura Qwen2 finetuneada con Unsloth y TRL. El nombre "flowtts_naija_full_ft" sugiere una relación con FlowTTS y con el inglés nigeriano ("naija"), aunque no hay documentación al respecto en la ficha del modelo.
 
 Se trata de un modelo pequeño, de tamaño similar a Qwen2-0.5B, con licencia Apache-2.0 y soporte declarado del idioma inglés. El repositorio ocupa 2,0 GB en pesos safetensors, lo que corresponde aproximadamente a un almacenamiento en FP32. Al ser un modelo de 0,5B, está orientado a casos de uso de baja latencia y despliegue en hardware modesto, aunque la información disponible no permite validar sus capacidades reales al no haber benchmarks publicados.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 1 GB en FP16, 0,5 GB en int8 y 0,25 GB en int4, calculado sobre los 505,9 millones de parámetros. El repositorio con pesos en safetensors ocupa 2,0 GB, lo que sugiere que los pesos originales están en FP32.
 - GPU recomendadas: cualquier GPU con más de 1 GB de VRAM, como RTX 2060, RTX 3060, RTX 4090. También es viable ejecutarlo en CPU.
 - ¿Cabe en GPU de consumo? Sí, su tamaño permite ejecutarse en GPUs de consumo doméstico e incluso en integradas.
-- Opciones de despliegue: transformers, vLLM, TGI y llama.cpp, con conversión a GGUF para Ollama. Los pesos safetensors permiten cargarlos con la API de HuggingFace Transformers o convertirlos a otros formatos.
+- Opciones de despliegue: transformers, vLLM, TGI y llama.cpp, con conversión a GGUF para Ollama. Los pesos safetensors permiten cargarlos con la API de Hugging Face Transformers o convertirlos a otros formatos.
 - Latencia y throughput: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -73,11 +73,11 @@ No hay datos de benchmarks disponibles para comparar el rendimiento real entre e
 - Composición del dataset de entrenamiento desconocida: no se puede evaluar posibles sesgos ni la calidad de los datos de fine-tuning.
 - Riesgo de alucinación inherente a modelos transformer pequeños.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, pero la responsabilidad sobre el uso y las salidas del modelo recae en el usuario.
-- El modelo no tiene actividad en HuggingFace (0 descargas, 0 likes), por lo que no hay evidencia de uso ni validación por parte de la comunidad.
+- El modelo no tiene actividad en Hugging Face (0 descargas, 0 likes), por lo que no hay evidencia de uso ni validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_10
+- Hugging Face: https://huggingface.co/MeghanaKap/flowtts_naija_full_ft_v2_10
 - Modelo base declarado: https://huggingface.co/YatharthS/MiraTTS
 - FlowTTS (Tencent-RTC): https://github.com/Tencent-RTC/FlowTTS
 - Unsloth: https://github.com/unslothai/unsloth

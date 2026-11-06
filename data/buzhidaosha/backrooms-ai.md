@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `buzhidaosha/backrooms-ai` en HuggingFace no contiene información técnica sustancial sobre el modelo. La model card únicamente declara la licencia MIT, sin descripción, arquitectura, parámetros, datos de entrenamiento ni capacidades. No se han publicado pesos, archivos de configuración ni documentación adicional. El autor, `buzhidaosha`, no ha aportado detalles sobre el propósito o la naturaleza del modelo.
+El repositorio `buzhidaosha/backrooms-ai` en Hugging Face no contiene información técnica sustancial sobre el modelo. La model card únicamente declara la licencia MIT, sin descripción, arquitectura, parámetros, datos de entrenamiento ni capacidades. No se han publicado pesos, archivos de configuración ni documentación adicional. El autor, `buzhidaosha`, no ha aportado detalles sobre el propósito o la naturaleza del modelo.
 
-La ausencia de metadatos (pipeline, idiomas, descargas) y la falta de una descripción en la model card sugieren que se trata de un repositorio vacío o un placeholder. Los resultados de búsqueda web relacionados con "backrooms" y "AI" apuntan a aplicaciones de terceros (como una app en Replit, modelos de Stable Diffusion en Civitai o chats de roleplay en character.ai), pero no existe evidencia de que este repositorio de HuggingFace esté vinculado a ellos. Por tanto, no es posible evaluar su utilidad ni su rendimiento.
+La ausencia de metadatos (pipeline, idiomas, descargas) y la falta de una descripción en la model card sugieren que se trata de un repositorio vacío o un placeholder. Los resultados de búsqueda web relacionados con "backrooms" y "AI" apuntan a aplicaciones de terceros (como una app en Replit, modelos de Stable Diffusion en Civitai o chats de roleplay en character.ai), pero no existe evidencia de que este repositorio de Hugging Face esté vinculado a ellos. Por tanto, no es posible evaluar su utilidad ni su rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -53,6 +53,6 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/buzhidaosha/backrooms-ai
+- Repositorio Hugging Face: https://huggingface.co/buzhidaosha/backrooms-ai
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) asociados a este repositorio. Los resultados de búsqueda web sobre "backrooms AI" corresponden a sitios externos sin relación verificable con este modelo.

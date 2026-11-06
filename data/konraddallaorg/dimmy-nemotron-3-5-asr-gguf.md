@@ -66,12 +66,12 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks ni co
 - El fichero F32 no es un fichero oficial de NVIDIA; fue convertido por el autor del repositorio con el script de NVIDIA, por lo que su fidelidad depende de ese proceso de conversion.
 - La model card indica que los repositorios upstream no incluyen fichero LICENSE/NOTICE en la revision fijada; la licencia OpenMDW-1.1 debe verificarse en el enlace oficial antes de su uso comercial.
 - No hay informacion sobre idiomas soportados, sesgos, tasas de alucinacion o comportamiento en audio ruidoso; se recomienda evaluacion propia antes de produccion.
-- El pipeline no esta declarado en HuggingFace, lo que puede complicar la integracion automatica en herramientas que dependen de ese metadato.
+- El pipeline no esta declarado en Hugging Face, lo que puede complicar la integracion automatica en herramientas que dependen de ese metadato.
 - El repositorio tiene un numero muy bajo de descargas (40) y cero likes en el momento de la consulta, lo que sugiere poca validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KonradDallaOrg/dimmy-nemotron-3.5-asr-gguf
+- Repositorio Hugging Face: https://huggingface.co/KonradDallaOrg/dimmy-nemotron-3.5-asr-gguf
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Revision fijada del modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/tree/ea30d66debe3740a08b573244286791d423d6b3e
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

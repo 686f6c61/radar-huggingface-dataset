@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g1_run2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, publicado por el usuario stefanocarrera en HuggingFace. Se trata de un modelo derivado de la familia Qwen3, en concreto de la variante de 8.000 millones de parametros en su version base (no instruct), cuantizada previamente en 4 bits por Unsloth. El nombre del repositorio sugiere un experimento de ajuste orientado a SQL y generacion de codigo, aunque la model card no confirma ni el dataset ni el objetivo de entrenamiento.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g1_run2` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, publicado por el usuario stefanocarrera en Hugging Face. Se trata de un modelo derivado de la familia Qwen3, en concreto de la variante de 8.000 millones de parametros en su version base (no instruct), cuantizada previamente en 4 bits por Unsloth. El nombre del repositorio sugiere un experimento de ajuste orientado a SQL y generacion de codigo, aunque la model card no confirma ni el dataset ni el objetivo de entrenamiento.
 
 La relevancia de esta ficha es limitada pero informativa: se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, sin model card descriptiva (la tarjeta es la plantilla automatica de Unsloth) y sin resultados de evaluacion publicados. El interes principal radica en que muestra el flujo de trabajo habitual de Unsloth + TRL para ajustar Qwen3-8B sobre datos propios, con licencia Apache 2.0 y compatibilidad declarada con `transformers` y `text-generation-inference`.
 
@@ -29,7 +29,7 @@ El tamano del repositorio (0,2 GB) es muy inferior al que ocuparian los pesos co
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura especifica de este ajuste. El modelo parte de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, la variante base de Qwen3-8B cuantizada en 4 bits mediante bitsandbytes y distribuida por Unsloth. Los tags del repositorio (`unsloth`, `trl`, `qwen3`, `transformers`) indican que el ajuste se realizo con la libreria Unsloth y el framework TRL de HuggingFace, un flujo habitual para fine-tuning supervisado (SFT) y, opcionalmente, optimizacion por preferencias.
+No se dispone de informacion detallada sobre la arquitectura especifica de este ajuste. El modelo parte de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, la variante base de Qwen3-8B cuantizada en 4 bits mediante bitsandbytes y distribuida por Unsloth. Los tags del repositorio (`unsloth`, `trl`, `qwen3`, `transformers`) indican que el ajuste se realizo con la libreria Unsloth y el framework TRL de Hugging Face, un flujo habitual para fine-tuning supervisado (SFT) y, opcionalmente, optimizacion por preferencias.
 
 El sufijo del nombre del repositorio (`t0.75_g1_run2`) sugiere una configuracion experimental concreta (probablemente temperatura 0,75 y una ejecucion o grupo identificado como 1, segunda repeticion), pero no hay documentacion que lo confirme. La model card no especifica numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO, ni ninguna innovacion tecnica adicional. No se han publicado resultados de benchmarks.
 
@@ -74,9 +74,9 @@ Estimaciones orientativas para un modelo denso de 8B, condicionadas a que el rep
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| sqlautophagycode_M_Qwen3-8B_t0.75_g1_run2 | no disponible (base 8B) | no disponible | apache-2.0 | HuggingFace, 0 descargas | Sin benchmarks ni model card descriptiva |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | aproximadamente 8B (base) | segun documentacion del modelo base | apache-2.0 | HuggingFace | Modelo base del que deriva este ajuste |
-| Otros ajustes de Qwen3-8B | no disponible | no disponible | variable | HuggingFace | No se dispone de datos comparativos |
+| sqlautophagycode_M_Qwen3-8B_t0.75_g1_run2 | no disponible (base 8B) | no disponible | apache-2.0 | Hugging Face, 0 descargas | Sin benchmarks ni model card descriptiva |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | aproximadamente 8B (base) | segun documentacion del modelo base | apache-2.0 | Hugging Face | Modelo base del que deriva este ajuste |
+| Otros ajustes de Qwen3-8B | no disponible | no disponible | variable | Hugging Face | No se dispone de datos comparativos |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g1_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g1_run2
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos corresponden a articulos no relacionados (Null Byte, Gadget Hacks) y se descartan.

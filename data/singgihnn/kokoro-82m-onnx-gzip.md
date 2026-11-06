@@ -79,11 +79,11 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 - Riesgo de alucinación y artefactos de audio: no documentado en la información proporcionada; como todo modelo TTS, puede producir pronunciaciones incorrectas o prosodia anómala en textos con nombres propios, siglas o dominios especializados.
 - Sesgos: no documentados en la información disponible; el modelo original puede reflejar sesgos presentes en los datos de audio de entrenamiento.
 - Licencia Apache 2.0: permite uso comercial, pero conviene conservar el aviso de licencia y verificar las condiciones del repositorio original de hexgrad.
-- Fecha de creación del repositorio: 2026-11-02, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 2026-11-02, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/singgihnn/kokoro-82m-onnx-gzip
+- Repositorio en Hugging Face: https://huggingface.co/singgihnn/kokoro-82m-onnx-gzip
 - Modelo base (export ONNX): https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Modelo original de hexgrad: https://huggingface.co/hexgrad/Kokoro-82M
 - Detalles de entrenamiento y créditos de audio: https://huggingface.co/hexgrad/Kokoro-82M#training-details

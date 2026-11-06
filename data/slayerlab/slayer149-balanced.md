@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Slayer149-balanced es un modelo de lenguaje causal experimental de 149.333.081 parametros entrenado desde cero (from scratch) por SlayerLab, publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo unimodal de generacion de texto, exclusivamente en ingles, con una arquitectura transformer densa de 26 capas, anchura oculta de 576, capa FFN de 2496 y atencion con 9 cabezas de consulta frente a 3 cabezas de clave/valor (GQA con ratio 3:1). El vocabulario es un BPE a nivel de byte de 24.576 tokens, con embeddings atados (tied) y EOS con ID 0.
+Slayer149-balanced es un modelo de lenguaje causal experimental de 149.333.081 parametros entrenado desde cero (from scratch) por SlayerLab, publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo unimodal de generacion de texto, exclusivamente en ingles, con una arquitectura transformer densa de 26 capas, anchura oculta de 576, capa FFN de 2496 y atencion con 9 cabezas de consulta frente a 3 cabezas de clave/valor (GQA con ratio 3:1). El vocabulario es un BPE a nivel de byte de 24.576 tokens, con embeddings atados (tied) y EOS con ID 0.
 
 El modelo se presenta explicitamente como un experimento, no como un producto listo para produccion. La model card indica que el entrenamiento podria seguir en curso en el momento de la publicacion y que no se reclama ninguna posicion en leaderboards ni resultado ganador. La arquitectura esta inspirada en Qwen3 y en la receta Jugnu de AltSlate (Apache-2.0), aunque el autor afirma que no se han reutilizado pesos de Jugnu. Incluye innovaciones tecnicas menores como normalizacion QK (QK normalization) y residuales de valor (value residuals).
 
@@ -86,7 +86,7 @@ Los datos de los modelos comparables no provienen de la informacion proporcionad
 
 - Modelo experimental: la propia model card lo etiqueta como `experimental` y aclara que el entrenamiento podria seguir en curso.
 - Ausencia total de benchmarks publicados: no se puede afirmar nada sobre su calidad relativa frente a otras lineas base de ~150M.
-- Cero validacion externa: 0 descargas y 0 likes en HuggingFace en el momento de la consulta.
+- Cero validacion externa: 0 descargas y 0 likes en Hugging Face en el momento de la consulta.
 - Longitud de contexto no declarada: no se puede planificar su uso en tareas que requieran ventanas largas sin una verificacion empirica previa.
 - Solo ingles: no hay capacidades multilingues declaradas, incluido el castellano.
 - Riesgo de alucinacion: inherente a un modelo causal de 149M parametros entrenado desde cero, sin etapas de alineacion documentadas (no se mencionan RLHF, DPO ni SFT).
@@ -98,7 +98,7 @@ Los datos de los modelos comparables no provienen de la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/Slayer149-balanced
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/Slayer149-balanced
 - Modelo relacionado del mismo autor: https://huggingface.co/SlayerLab/Slayer149
 - Receta Jugnu de AltSlate (referencia arquitectonica citada, Apache-2.0): no disponible (URL no incluida en la informacion proporcionada)
 - Informe de evaluacion GLINT (`reports/evaluation.json`): referenciado en la model card, sin URL publica en la informacion disponible

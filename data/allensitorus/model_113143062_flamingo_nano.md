@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_113143062_flamingo_nano` es una implementación a escala reducida (nano) de la arquitectura Flamingo, publicada en HuggingFace por el usuario Allensitorus. Flamingo es una familia de modelos de lenguaje visual (VLM) desarrollada originalmente por DeepMind, diseñada para el aprendizaje few-shot en tareas multimodales, es decir, capaz de adaptarse a nuevas tareas con solo unos pocos ejemplos. Este repositorio concreto presenta una variante minimalista orientada a tareas multitarea, con atención dispersa y fusión tensorial, aunque no se especifican los parámetros totales ni el tamaño del contexto.
+El modelo `model_113143062_flamingo_nano` es una implementación a escala reducida (nano) de la arquitectura Flamingo, publicada en Hugging Face por el usuario Allensitorus. Flamingo es una familia de modelos de lenguaje visual (VLM) desarrollada originalmente por DeepMind, diseñada para el aprendizaje few-shot en tareas multimodales, es decir, capaz de adaptarse a nuevas tareas con solo unos pocos ejemplos. Este repositorio concreto presenta una variante minimalista orientada a tareas multitarea, con atención dispersa y fusión tensorial, aunque no se especifican los parámetros totales ni el tamaño del contexto.
 
 La relevancia de este modelo radica en su carácter experimental y educativo: al ser una implementación nano de una arquitectura conocida, puede servir como punto de partida para estudiar el comportamiento de los VLM en entornos con recursos limitados. No obstante, la información disponible es escasa y no se han publicado resultados de benchmarks ni detalles sobre el entrenamiento, por lo que su utilidad práctica en producción es limitada.
 
@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Allensitorus/model_113143062_flamingo_nano
+- Repositorio en Hugging Face: https://huggingface.co/Allensitorus/model_113143062_flamingo_nano
 - Paper original de Flamingo: https://arxiv.org/abs/2204.14198
 - PDF del paper (NeurIPS 2022): https://proceedings.neurips.cc/paper_files/paper/2022/file/960a172bc7fbf0177ccccbb411a7d800-Paper-Conference.pdf

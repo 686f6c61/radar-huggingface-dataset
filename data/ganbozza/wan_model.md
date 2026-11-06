@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ganbozza/wan_model` es un modelo de lenguaje de 16.394.878.784 parámetros (aproximadamente 16,4 mil millones) publicado en HuggingFace por el usuario `ganbozza`. El repositorio incluye archivos en formato GGUF, lo que indica que está preparado para inferencia local con herramientas como llama.cpp u Ollama. El tamaño total del repositorio es de 93,8 GB, lo que sugiere la presencia de múltiples cuantizaciones o de los pesos originales en safetensors.
+El modelo `ganbozza/wan_model` es un modelo de lenguaje de 16.394.878.784 parámetros (aproximadamente 16,4 mil millones) publicado en Hugging Face por el usuario `ganbozza`. El repositorio incluye archivos en formato GGUF, lo que indica que está preparado para inferencia local con herramientas como llama.cpp u Ollama. El tamaño total del repositorio es de 93,8 GB, lo que sugiere la presencia de múltiples cuantizaciones o de los pesos originales en safetensors.
 
 No se dispone de información pública sobre la arquitectura, el proceso de entrenamiento, la licencia o los idiomas soportados. El modelo fue creado el 28 de junio de 2026 y actualizado el 15 de agosto de 2026, por lo que es relativamente reciente. Su relevancia actual es limitada debido a la ausencia de documentación y a su bajo número de descargas (34), lo que indica que se trata de un proyecto experimental o personal sin validación externa.
 
@@ -59,4 +59,4 @@ No se dispone de información sobre modelos comparables. No se conocen alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ganbozza/wan_model
+- Repositorio Hugging Face: https://huggingface.co/ganbozza/wan_model

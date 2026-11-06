@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nmt-fr-en-gru-attention` es un modelo de traduccion automatica neuronal (NMT) frances-ingles desarrollado por Marc Bradley (usuario de HuggingFace `chopsticky`) como proyecto final del curso CSCI E-89B de la Harvard Extension School (otoño de 2026). Se trata de un modelo seq2seq clasico con encoder-decoder basado en celdas GRU y un mecanismo de atencion, implementado con Keras 3.13.2. No es un transformer ni un modelo de lenguaje generativo: es un sistema de traduccion dedicado y de proposito especifico, entrenado sobre el corpus Tatoeba (via ManyThings fra-eng).
+`nmt-fr-en-gru-attention` es un modelo de traduccion automatica neuronal (NMT) frances-ingles desarrollado por Marc Bradley (usuario de Hugging Face `chopsticky`) como proyecto final del curso CSCI E-89B de la Harvard Extension School (otoño de 2026). Se trata de un modelo seq2seq clasico con encoder-decoder basado en celdas GRU y un mecanismo de atencion, implementado con Keras 3.13.2. No es un transformer ni un modelo de lenguaje generativo: es un sistema de traduccion dedicado y de proposito especifico, entrenado sobre el corpus Tatoeba (via ManyThings fra-eng).
 
 El modelo resuelve una tarea acotada: traducir frases cortas del frances al ingles. Su relevancia no reside en competir con los grandes modelos de traduccion neuronales actuales, sino en servir como referencia pedagogica reproducible: incluye pesos, vocabularios y un fichero de comprobacion con 64 frases de validacion y sus traducciones, lo que permite verificar el comportamiento exacto del modelo. El repositorio ocupa 0,1 GB y las descargas y likes registrados son cero en el momento de la consulta.
 
@@ -67,9 +67,9 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `chopsticky/nmt-fr-en-gru-attention` | Seq2seq GRU con atencion | no disponible (60 MB de pesos) | no disponible | CC BY 4.0 | HuggingFace, Keras |
-| Modelos NMT transformer fr-en (genericos) | Transformer encoder-decoder | no disponible | no disponible | variable | HuggingFace |
-| Helsinki-NLP/opus-mt-fr-en | Transformer (Marian) | no disponible | no disponible | CC BY 4.0 | HuggingFace |
+| `chopsticky/nmt-fr-en-gru-attention` | Seq2seq GRU con atencion | no disponible (60 MB de pesos) | no disponible | CC BY 4.0 | Hugging Face, Keras |
+| Modelos NMT transformer fr-en (genericos) | Transformer encoder-decoder | no disponible | no disponible | variable | Hugging Face |
+| Helsinki-NLP/opus-mt-fr-en | Transformer (Marian) | no disponible | no disponible | CC BY 4.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos en la informacion proporcionada para establecer una comparacion cuantitativa con alternativas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chopsticky/nmt-fr-en-gru-attention
+- Modelo en Hugging Face: https://huggingface.co/chopsticky/nmt-fr-en-gru-attention
 - Space de demostracion: https://huggingface.co/spaces/chopsticky/nmt-fr-en-demo
 - Dataset en Kaggle: https://www.kaggle.com/datasets/chopsticky/nmt-fr-en-gru-attention
 - Corpus ManyThings fra-eng (Tatoeba): https://www.manythings.org/anki/

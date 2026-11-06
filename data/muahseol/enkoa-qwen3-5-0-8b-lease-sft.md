@@ -2,7 +2,7 @@
 
 ## Resumen
 
-enk oa-qwen3.5-0.8b-lease-sft es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario muahseol en HuggingFace. Se trata de un modelo de generación de texto de pequeno tamano (752.393.024 parametros reales segun los pesos en safetensors) especializado en conversaciones sobre contratos de alquiler y vivienda en coreano (전월세 상담, "consulta de alquiler mensual/jeonse").
+enk oa-qwen3.5-0.8b-lease-sft es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario muahseol en Hugging Face. Se trata de un modelo de generación de texto de pequeno tamano (752.393.024 parametros reales segun los pesos en safetensors) especializado en conversaciones sobre contratos de alquiler y vivienda en coreano (전월세 상담, "consulta de alquiler mensual/jeonse").
 
 El modelo nace como material didactico para el campus de IA de ENKOA (엔코아 AI캠퍼스), concretamente para la unidad de SFT de su curso de deep learning. Segun la model card, se entreno con un learning rate de 5e-6 mediante full fine-tuning en float32 sobre datos de consultas de alquiler, y se emplea en la unidad de practicas de vLLM como servidor de inferencia de ejemplo. El autor advierte explicitamente que es un modelo de ejemplo y que no debe usarse en atencion al cliente real.
 
@@ -40,7 +40,7 @@ No se documentan innovaciones tecnicas adicionales (decodificacion especulativa,
 ## Casos de uso
 
 - Practicas de SFT en cursos de deep learning: el modelo sirve como artefacto de referencia para que los alumnos reproduzcan un full fine-tuning sobre un modelo Qwen 3.5 pequeno y comparen hiperparametros (learning rate 5e-6, float32).
-- Practicas de despliegue con vLLM: la model card indica que la unidad de vLLM descarga este repositorio y lo levanta como servidor, por lo que es util para demostrar el flujo completo de publicacion en HuggingFace y servicio de inferencia.
+- Practicas de despliegue con vLLM: la model card indica que la unidad de vLLM descarga este repositorio y lo levanta como servidor, por lo que es util para demostrar el flujo completo de publicacion en Hugging Face y servicio de inferencia.
 - Pruebas de integracion con la libreria transformers: al usar `qwen3_5_text` y safetensors, permite validar pipelines de carga y generacion en entornos de desarrollo.
 - Prototipado de asistentes de dominio vertical: sirve como plantilla para construir un chatbot de consultas de alquiler, siempre que se sustituya por un modelo entrenado con datos reales y revisado.
 - Evaluacion de tecnicas de fine-tuning: permite comparar full fine-tuning frente a LoRA/PEFT sobre una base de menos de mil millones de parametros en hardware modesto.
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| enkoa-qwen3.5-0.8b-lease-sft | 752 M | no disponible | Apache 2.0 | HuggingFace (69 descargas) | SFT didactico en coreano sobre Qwen3.5-0.8B |
-| Qwen/Qwen3.5-0.8B | ~0,8 B | no disponible | no disponible | HuggingFace | Modelo base sin especializar |
+| enkoa-qwen3.5-0.8b-lease-sft | 752 M | no disponible | Apache 2.0 | Hugging Face (69 descargas) | SFT didactico en coreano sobre Qwen3.5-0.8B |
+| Qwen/Qwen3.5-0.8B | ~0,8 B | no disponible | no disponible | Hugging Face | Modelo base sin especializar |
 | Otros modelos coreanos de menos de 1 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-lease-sft
+- Hugging Face: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-lease-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

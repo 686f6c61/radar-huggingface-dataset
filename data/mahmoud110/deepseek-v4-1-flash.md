@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- Peso de los pesos: con 763.205.315.794 parametros, en fp8 ocuparian aproximadamente 763 GB; en bf16/fp16, alrededor de 1,5 TB. El repositorio de HuggingFace ocupa 510,3 GB, lo que sugiere pesos ya cuantizados o en precision mixta.
+- Peso de los pesos: con 763.205.315.794 parametros, en fp8 ocuparian aproximadamente 763 GB; en bf16/fp16, alrededor de 1,5 TB. El repositorio de Hugging Face ocupa 510,3 GB, lo que sugiere pesos ya cuantizados o en precision mixta.
 - Cache KV: 890 bytes por token implican unos 890 MB para una secuencia de 1M tokens, una cifra muy inferior a la de modelos con cache KV sin comprimir.
 - GPU recomendadas: se requiere despliegue multi-GPU con paralelismo tensorial. Configuraciones plausibles serian 10 o mas GPU H100 de 80 GB, o un numero equivalente de A100 de 80 GB, para servir los pesos en fp8.
 - GPU de consumo: no cabe en ninguna GPU de consumo (RTX 4090, 3090, etc.), ni siquiera con cuantizacion agresiva a 4 bits, que seguiria requiriendo cientos de GB.
@@ -95,10 +95,10 @@ No se dispone de datos suficientes para comparar con alternativas multimodales M
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mahmoud110/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/Mahmoud110/DeepSeek-V4.1-Flash
 - Technical report referenciado en la model card: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Web de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Cuenta de X (Twitter) de DeepSeek: https://twitter.com/deepseek_ai
 - Repositorio de DeepSeek-V2 en GitHub (origen de los recursos graficos de la card): https://github.com/deepseek-ai/DeepSeek-V2

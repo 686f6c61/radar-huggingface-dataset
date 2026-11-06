@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3Loop-0.6B-Tool-Calling-SFT (v1) es un modelo especializado en invocación de herramientas (tool calling) desarrollado por el usuario Lordnyx y publicado en HuggingFace. Se construye sobre la arquitectura recurrente Qwen3Loop, un transformer compacto de 596.049.920 parámetros físicos que, mediante el esquema denominado LoopSplit, ejecuta 56 pasadas de capa lógicas: 7 capas de prefijo (una sola vez), un stack intermedio de 14 capas que se recorre 3 veces y 7 capas de sufijo (una sola vez). El modelo es un ajuste fino completo (no LoRA) sobre un currículo curado de 1.983 muestras estrictas de tool calling en formato Qwen Hermes `<tool_call>`, con diálogos de un solo turno `user → assistant(tool_calls)` y correcciones a mitad de trayectoria.
+Qwen3Loop-0.6B-Tool-Calling-SFT (v1) es un modelo especializado en invocación de herramientas (tool calling) desarrollado por el usuario Lordnyx y publicado en Hugging Face. Se construye sobre la arquitectura recurrente Qwen3Loop, un transformer compacto de 596.049.920 parámetros físicos que, mediante el esquema denominado LoopSplit, ejecuta 56 pasadas de capa lógicas: 7 capas de prefijo (una sola vez), un stack intermedio de 14 capas que se recorre 3 veces y 7 capas de sufijo (una sola vez). El modelo es un ajuste fino completo (no LoRA) sobre un currículo curado de 1.983 muestras estrictas de tool calling en formato Qwen Hermes `<tool_call>`, con diálogos de un solo turno `user → assistant(tool_calls)` y correcciones a mitad de trayectoria.
 
 El problema que aborda es concreto: dotar a un modelo de menos de 1.000 millones de parámetros de una tasa de acierto alta en la selección y el formateo de herramientas conocidas, de forma que pueda desplegarse localmente en hardware de consumo (la model card reporta mediciones en una RTX 3060 con cuantización Q8_0) o en el edge. En su batería de evaluación de 121 elementos en inglés alcanza un 70,2% de precisión estricta global, con un 100% en la categoría de herramienta única con argumentos conocidos (L1) y un 85,4% en discriminación entre múltiples herramientas (L2), lo que lo sitúa por delante de Qwen3-0.6B estándar en corrección multiturno (66,7% frente a 41,7%).
 
@@ -109,7 +109,7 @@ Las tres entradas de comparacion disponibles provienen de la propia model card, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1
 - Linea base de la familia (SFT deep supervision v1): https://huggingface.co/Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1
 - Arbol de ficheros del modelo base: https://huggingface.co/Lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1/tree/main
 - Ficha de registro en free2aitools: https://free2aitools.com/model/lordnyx/qwen3loop-0.6b-sft-deep-supervision-v1

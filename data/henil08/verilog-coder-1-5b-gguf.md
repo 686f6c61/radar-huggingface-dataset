@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`henil08/verilog-coder-1.5b-gguf` es una compilación en formato GGUF (cuantización Q4_K_M) del modelo `henil08/verilog-coder-1.5b`, un modelo de lenguaje de 1.777.088.000 parámetros (aproximadamente 1,5B-1,8B) especializado en la generación de código Verilog. Lo publica el usuario henil08 en HuggingFace y su propósito declarado es facilitar la ejecución del modelo base en llama.cpp y Ollama, incluyendo una etiqueta `endpoints_compatible` que sugiere compatibilidad con endpoints de inferencia estándar.
+`henil08/verilog-coder-1.5b-gguf` es una compilación en formato GGUF (cuantización Q4_K_M) del modelo `henil08/verilog-coder-1.5b`, un modelo de lenguaje de 1.777.088.000 parámetros (aproximadamente 1,5B-1,8B) especializado en la generación de código Verilog. Lo publica el usuario henil08 en Hugging Face y su propósito declarado es facilitar la ejecución del modelo base en llama.cpp y Ollama, incluyendo una etiqueta `endpoints_compatible` que sugiere compatibilidad con endpoints de inferencia estándar.
 
 El modelo resuelve un nicho concreto: la asistencia a la escritura de HDL (Verilog) en entornos con recursos limitados, donde un modelo de 1,5B cuantizado a 4 bits ocupa alrededor de 1,1 GB en disco y puede ejecutarse en CPU o en GPU de consumo. Frente a asistentes de código generalistas mucho mayores, la propuesta aquí es despliegue local, offline y de baja latencia, a costa de una capacidad de razonamiento y generalización presumiblemente más reducida (no hay datos públicos que lo confirmen).
 
@@ -66,7 +66,7 @@ No se dispone de datos verificados en la información proporcionada para constru
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| verilog-coder-1.5b-gguf (henil08) | 1,78B | No disponible | No disponible | GGUF Q4_K_M | HuggingFace, Ollama |
+| verilog-coder-1.5b-gguf (henil08) | 1,78B | No disponible | No disponible | GGUF Q4_K_M | Hugging Face, Ollama |
 | Modelos comparables de la categoría (asistentes de código de 1-3B) | No disponible en esta busqueda | No disponible | No disponible | No disponible | No disponible |
 
 Para una comparación rigurosa habría que contrastar con modelos públicos de tamaño similar orientados a código (por ejemplo, la familia Qwen2.5-Coder en su variante pequeña o StarCoder2-3B) y, específicamente para HDL, con los resultados publicados en VerilogEval. Ninguno de esos datos se ha podido verificar aquí.
@@ -84,6 +84,6 @@ Para una comparación rigurosa habría que contrastar con modelos públicos de t
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/henil08/verilog-coder-1.5b-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/henil08/verilog-coder-1.5b-gguf
 - Modelo base: https://huggingface.co/henil08/verilog-coder-1.5b
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales relacionados con este modelo; los resultados obtenidos corresponden a páginas de centros escolares sin relación con el proyecto.

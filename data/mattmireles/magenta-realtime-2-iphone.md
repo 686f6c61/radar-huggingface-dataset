@@ -86,8 +86,8 @@ No se han publicado resultados de benchmarks estándar de NLP (MMLU, HumanEval, 
 
 | Modelo | Parámetros | Estado/ventana | Precisión | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mattmireles/magenta-realtime-2-iphone | 230 M | 48 cachés K/V, anillo de 41 fotogramas, reset cada 10 s | FP16 y FP32 | Core ML, iOS 18 / macOS 15 | cc-by-4.0 | HuggingFace, 10 descargas, 4 likes |
-| google/magenta-realtime-2 (`mrt2_small`) | 230 M | no disponible en detalle; referencia MLX ejecutada por el autor | referencia MLX (FP32) | Mac/GPU con MLX | no disponible en la información proporcionada | HuggingFace |
+| mattmireles/magenta-realtime-2-iphone | 230 M | 48 cachés K/V, anillo de 41 fotogramas, reset cada 10 s | FP16 y FP32 | Core ML, iOS 18 / macOS 15 | cc-by-4.0 | Hugging Face, 10 descargas, 4 likes |
+| google/magenta-realtime-2 (`mrt2_small`) | 230 M | no disponible en detalle; referencia MLX ejecutada por el autor | referencia MLX (FP32) | Mac/GPU con MLX | no disponible en la información proporcionada | Hugging Face |
 | Otras alternativas de generación musical on-device | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante es interna al repositorio: el decodificador FP16 (68 MB, ANE en A17 Pro) ofrece 38,8 dB de SNR frente al FP32, mientras que el decodificador FP32 (136 MB, CPU) alcanza 118,85 dB frente a la referencia MLX pero no cabe en el presupuesto de tiempo real del A14. El rollout de profundidad FP16 (74 MB) mantiene el reparto en CPU con la mitad de bytes que su equivalente FP32 (148 MB).
@@ -103,12 +103,12 @@ La comparación relevante es interna al repositorio: el decodificador FP16 (68 M
 - Idiomas y prompt de texto: no disponibles; el condicionamiento se compila en un Mac y no se especifica qué idiomas ni qué vocabulario acepta.
 - Licencia: CC-BY-4.0 exige atribución, también para uso comercial; además debe verificarse la licencia del modelo base google/magenta-realtime-2, que no se detalla en la información proporcionada.
 - Madurez: 10 descargas y 4 likes en el momento de la consulta; es un artefacto de investigación con validación propia del autor, no un componente con soporte.
-- El código del host (gather RVQ, iSTFT, overlap-add, gestión del anillo de fotogramas) no está en el repositorio de HuggingFace, sino en GitHub; sin él los `.mlpackage` no constituyen un pipeline funcional.
+- El código del host (gather RVQ, iSTFT, overlap-add, gestión del anillo de fotogramas) no está en el repositorio de Hugging Face, sino en GitHub; sin él los `.mlpackage` no constituyen un pipeline funcional.
 - Fechas del repositorio (creado en junio de 2026, actualizado en octubre de 2026) poco habituales; conviene verificar la procedencia y el estado real del proyecto antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattmireles/magenta-realtime-2-iphone
+- Modelo en Hugging Face: https://huggingface.co/mattmireles/magenta-realtime-2-iphone
 - Modelo base: https://huggingface.co/google/magenta-realtime-2
 - Repositorio con exportadores, arnés de validación y documentación de método: https://github.com/mattmireles/magenta-realtime-2-iphone
 - Paper "Surgical Inference" (conversión y hallazgos de admisión, sección 5): enlazado desde el repositorio de GitHub, sin URL directa disponible

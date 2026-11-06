@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-GGUF es una conversión a GGUF del modelo Qwen3.8-27B de Qwen, publicada por el usuario Guile en HuggingFace. Se trata de una versión "abliterada" (eliminación de direcciones de rechazo) que reduce sustancialmente el comportamiento de negativa del modelo original, manteniendo intactas sus capacidades de generación, razonamiento, visión y tool calling. El modelo base es un transformer denso de 27 320 millones de parámetros con arquitectura híbrida de atención (Gated DeltaNet lineal + atención completa), ventana de contexto de 262 144 tokens, cabeza de predicción multi-token (MTP) para decodificación especulativa y soporte nativo de visión.
+Qwen3.8-27B-Uncensored-GGUF es una conversión a GGUF del modelo Qwen3.8-27B de Qwen, publicada por el usuario Guile en Hugging Face. Se trata de una versión "abliterada" (eliminación de direcciones de rechazo) que reduce sustancialmente el comportamiento de negativa del modelo original, manteniendo intactas sus capacidades de generación, razonamiento, visión y tool calling. El modelo base es un transformer denso de 27 320 millones de parámetros con arquitectura híbrida de atención (Gated DeltaNet lineal + atención completa), ventana de contexto de 262 144 tokens, cabeza de predicción multi-token (MTP) para decodificación especulativa y soporte nativo de visión.
 
 La relevancia de esta ficha radica en que ofrece a desarrolladores e investigadores una alternativa local ejecutable con llama.cpp, con cuantizaciones desde 2 bits hasta 8 bits, y con la particularidad de que los tensores MTP se han verificado y conservado tras el proceso de abliteración, algo que otras conversiones suelen perder. El modelo está pensado para entornos donde se requiere menor censura en las respuestas, siempre bajo la licencia Apache 2.0.
 
@@ -98,10 +98,10 @@ La principal diferencia frente a la versión de unsloth es que esta ficha conser
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Guile/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Guile/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de abliteración Heretic: https://github.com/p-e-w/heretic
 - Blog de orcarouter sobre el modelo: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
-- Repositorio de orcarouter en HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio de orcarouter en Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-GGUF
 - Conversión GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Guía de uso en GitHub: https://github.com/Wassimyounes01/qwen38-uncensored

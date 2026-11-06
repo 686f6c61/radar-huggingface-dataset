@@ -76,6 +76,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GoudaGame/estimation-copycat-practice
+- Hugging Face: https://huggingface.co/GoudaGame/estimation-copycat-practice
 - Leaderboard Estimation Arena: https://essamgouda97.github.io/estimation-arena/
 - Repositorio de codigo estimation-arena: https://github.com/essamgouda97/estimation-arena

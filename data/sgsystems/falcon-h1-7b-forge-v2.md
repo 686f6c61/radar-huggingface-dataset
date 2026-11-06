@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Falcon-H1-7B-FORGE-v2 es una versión cuantizada del modelo de instrucción Falcon-H1-7B-Instruct, desarrollado por TII y publicado en HuggingFace por el usuario sgsystems. Utiliza una arquitectura híbrida que combina capas Mamba-2 con atención Transformer, con un total de 7.59 mil millones de parámetros y una longitud de contexto entrenada de 262.144 tokens. El modelo original se sometió a una cuantización post-entrenamiento mediante el método FORGE, que produce un archivo GGUF de 3.48 GB con una media de 2.06 bits por peso. Esta cuantización conserva ciertas familias de tensores críticas en Q6_K para preservar la fidelidad factual, en lugar de aplicar una ternarización uniforme.
+Falcon-H1-7B-FORGE-v2 es una versión cuantizada del modelo de instrucción Falcon-H1-7B-Instruct, desarrollado por TII y publicado en Hugging Face por el usuario sgsystems. Utiliza una arquitectura híbrida que combina capas Mamba-2 con atención Transformer, con un total de 7.59 mil millones de parámetros y una longitud de contexto entrenada de 262.144 tokens. El modelo original se sometió a una cuantización post-entrenamiento mediante el método FORGE, que produce un archivo GGUF de 3.48 GB con una media de 2.06 bits por peso. Esta cuantización conserva ciertas familias de tensores críticas en Q6_K para preservar la fidelidad factual, en lugar de aplicar una ternarización uniforme.
 
 El resultado es un modelo de 7B que puede ejecutarse en dispositivos Apple Silicon con un consumo de memoria inferior a 4 GB, alcanzando aproximadamente 75 tokens por segundo de decodificación en un Apple M5 Max. Está diseñado para tareas de asistente en dispositivos edge, con plantilla de chat ChatML incrustada en el GGUF. Su relevancia radica en hacer viable un modelo de 7B en hardware de consumo con recursos limitados, sin necesidad de GPU dedicada.
 
@@ -77,9 +77,9 @@ Nota: aumentar `repeat_penalty` a 1.25 con ventana 2048 empeora el resultado, su
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Falcon-H1-7B-Instruct (base) | 7.59B | 262.144 | BF16 (sin cuantizar) | falcon-llm-license | HuggingFace |
-| Falcon-H1-7B-FORGE-v2 (este modelo) | 7.59B | 262.144 (recomendado 4096) | FORGE GGUF, media 2.06 bpw | falcon-llm-license | HuggingFace |
-| Falcon-H1-3B-Instruct (familia) | no disponible | 262.144 | no disponible | falcon-llm-license | HuggingFace (colección) |
+| Falcon-H1-7B-Instruct (base) | 7.59B | 262.144 | BF16 (sin cuantizar) | falcon-llm-license | Hugging Face |
+| Falcon-H1-7B-FORGE-v2 (este modelo) | 7.59B | 262.144 (recomendado 4096) | FORGE GGUF, media 2.06 bpw | falcon-llm-license | Hugging Face |
+| Falcon-H1-3B-Instruct (familia) | no disponible | 262.144 | no disponible | falcon-llm-license | Hugging Face (colección) |
 
 La comparativa principal es con el modelo base sin cuantizar: la versión FORGE ofrece el mismo tamaño de parámetros y contexto, pero reduce el peso de 7.59B a 3.48 GB, priorizando el despliegue en edge. Otras variantes de la familia Falcon-H1 (0.5B, 1.5B, 3B, 34B) están disponibles en la colección oficial, pero sus especificaciones exactas no se detallan en la información manejada.
 
@@ -95,7 +95,7 @@ La comparativa principal es con el modelo base sin cuantizar: la versión FORGE 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sgsystems/Falcon-H1-7B-FORGE-v2
+- Hugging Face: https://huggingface.co/sgsystems/Falcon-H1-7B-FORGE-v2
 - Modelo base: https://huggingface.co/tiiuae/Falcon-H1-7B-Instruct
 - Colección Falcon-H1: https://huggingface.co/collections/tiiuae/falcon-h1
 - Documentación de Transformers para Falcon-H1: https://huggingface.co/docs/transformers/main/en/model_doc/falcon_h1

@@ -32,7 +32,7 @@ El ajuste fino de este checkpoint se realizo con LLaMA-Factory sobre el dataset 
 - Generacion de texto autoregresiva y modelado de lenguaje causal.
 - Seguimiento de instrucciones conversacionales en formato ShareGPT, derivado del SFT sobre Nemotron-Cascade.
 - Razonamiento basico y respuesta a preguntas, limitado por el tamano de 1,7B parametros.
-- Extraccion de caracteristicas (pipeline declarado en HuggingFace: `feature-extraction`), aunque el modelo es fundamentalmente generativo.
+- Extraccion de caracteristicas (pipeline declarado en Hugging Face: `feature-extraction`), aunque el modelo es fundamentalmente generativo.
 - Soporte de contexto largo potencialmente hasta 16k tokens, segun el checkpoint base; no confirmado para este ajuste.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible de forma explicita.
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este SFT) | ~1,7B | no disponible (base: 16k) | other | HuggingFace | SFT sobre Nemotron-Cascade; sin benchmarks publicados |
-| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | HuggingFace | Referencia pequena con benchmarks publicados |
-| SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | HuggingFace | Modelo pequeno con receta documentada |
-| Llama 3.2-1B | 1,2B | 128k | Llama 3.2 Community License | HuggingFace | Alternativa con contexto largo |
+| open-sci-ref-v0.02-1.7b (este SFT) | ~1,7B | no disponible (base: 16k) | other | Hugging Face | SFT sobre Nemotron-Cascade; sin benchmarks publicados |
+| Qwen2.5-1.5B | 1,5B | 32k | Apache 2.0 | Hugging Face | Referencia pequena con benchmarks publicados |
+| SmolLM2-1.7B | 1,7B | 8k | Apache 2.0 | Hugging Face | Modelo pequeno con receta documentada |
+| Llama 3.2-1B | 1,2B | 128k | Llama 3.2 Community License | Hugging Face | Alternativa con contexto largo |
 
 La comparacion se limita a tamano y disponibilidad: no hay datos de rendimiento de este checkpoint que permitan una comparacion cuantitativa con las alternativas.
 
@@ -89,7 +89,7 @@ La comparacion se limita a tamano y disponibilidad: no hay datos de rendimiento 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-nc30k
+- Hugging Face (este modelo): https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-nc30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated
 - LLaMA-Factory: https://github.com/hiyouga/LLaMA-Factory
 - FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

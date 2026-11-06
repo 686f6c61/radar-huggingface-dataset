@@ -97,8 +97,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Precision EN | Precision africano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PurpleMIST-Mini-1.0 | 1,88B | 2.048 tokens/pasada | 0,601 | 0,416 | apache-2.0 | HuggingFace (olaverse) |
-| PurpleMIST-Flash-1.0 | no disponible (mas de 4x Mini) | no disponible | no disponible | 0,668 | no disponible | HuggingFace (olaverse) |
+| PurpleMIST-Mini-1.0 | 1,88B | 2.048 tokens/pasada | 0,601 | 0,416 | apache-2.0 | Hugging Face (olaverse) |
+| PurpleMIST-Flash-1.0 | no disponible (mas de 4x Mini) | no disponible | no disponible | 0,668 | no disponible | Hugging Face (olaverse) |
 | OpenDecider-small | 4B | no disponible | 0,648 | no disponible | no disponible | no disponible |
 | Bongard-mini | 7,5B | no disponible | 0,594 | no disponible | no disponible | no disponible |
 | Jeff-Gemma4-E2B | 4,6B | no disponible | 0,561 | no disponible | no disponible | no disponible |
@@ -121,7 +121,7 @@ El modelo se situa en el rango de eficiencia: supera en precision en ingles a al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olaverse/PurpleMIST-Mini-1.0
+- Modelo en Hugging Face: https://huggingface.co/olaverse/PurpleMIST-Mini-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Modelo hermano: https://huggingface.co/olaverse/PurpleMIST-Flash-1.0
 - Dataset de evaluacion en ingles: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
@@ -129,5 +129,5 @@ El modelo se situa en el rango de eficiencia: supera en precision en ingles a al
 - Documentacion del modulo olaverse.llm: https://olaverse-labs.github.io/olaverse/llm/
 - Documentacion de la familia MIST: https://olaverse-labs.github.io/olaverse/models/mist/
 - Pagina de modelos MIST de olaverse: https://www.olaverse.co.uk/models/mist-llm
-- MIST-Mini-8B en HuggingFace: https://huggingface.co/olaverse/MIST-Mini-8B
+- MIST-Mini-8B en Hugging Face: https://huggingface.co/olaverse/MIST-Mini-8B
 - Coleccion de modelos MIST: https://huggingface.co/collections/olaverse/mist-models

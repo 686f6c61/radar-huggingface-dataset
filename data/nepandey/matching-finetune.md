@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Nepandey/matching-finetune es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de *matching* (emparejamiento), publicada por el usuario Nepandey bajo licencia MIT. No se trata de un modelo entrenado, sino de un *checkpoint* de inicialización: la propia model card indica explícitamente que `model.safetensors` es válido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El recuento real de parámetros en formato safetensors es de 16.576, es decir, aproximadamente 0,017 millones, un orden de magnitud propio de una prueba de concepto y no de un modelo desplegable.
+Nepandey/matching-finetune es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura Poolformer orientada a tareas de *matching* (emparejamiento), publicada por el usuario Nepandey bajo licencia MIT. No se trata de un modelo entrenado, sino de un *checkpoint* de inicialización: la propia model card indica explícitamente que `model.safetensors` es válido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El recuento real de parámetros en formato safetensors es de 16.576, es decir, aproximadamente 0,017 millones, un orden de magnitud propio de una prueba de concepto y no de un modelo desplegable.
 
 El repositorio incluye además `train.py` como artefacto principal, `config.json` con la configuración de arquitectura generada y `training_args.json` con la receta de experimento por defecto (optimizador Novograd con planificador exponencial). La arquitectura declarada es Poolformer a escala *nano*, con atención dilatada, fusión de bajo rango, activación swish y normalización LayerNorm.
 
-Su relevancia actual es acotada y de carácter metodológico: sirve como plantilla reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y como ejemplo de buenas prácticas de documentación (guía de evaluación con conjunto de validación pareado, al menos tres semillas y una línea base de capacidad equivalente). No hay puntuaciones de benchmark, ni idiomas declarados, ni pipeline asociado en la ficha de HuggingFace.
+Su relevancia actual es acotada y de carácter metodológico: sirve como plantilla reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y como ejemplo de buenas prácticas de documentación (guía de evaluación con conjunto de validación pareado, al menos tres semillas y una línea base de capacidad equivalente). No hay puntuaciones de benchmark, ni idiomas declarados, ni pipeline asociado en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -93,6 +93,6 @@ No hay datos de rendimiento en la información proporcionada que permitan una co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nepandey/matching-finetune
+- Hugging Face: https://huggingface.co/Nepandey/matching-finetune
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a páginas de seguimiento de paquetes de UPS (ups.com, theupsstore.com, ordertracker.com) y no guardan relación con el repositorio.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

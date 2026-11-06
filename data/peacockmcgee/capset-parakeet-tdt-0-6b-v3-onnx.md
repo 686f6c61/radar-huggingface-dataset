@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento (WER, latencia) para establecer una compar
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta ficha: https://huggingface.co/PeacockMcGee/capset-parakeet-tdt-0.6b-v3-onnx
+- Repositorio Hugging Face de esta ficha: https://huggingface.co/PeacockMcGee/capset-parakeet-tdt-0.6b-v3-onnx
 - Exportacion ONNX de origen: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Repositorio de referencia con ONNX Runtime: https://github.com/dustinwloring1988/parakeet-server

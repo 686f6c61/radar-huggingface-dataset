@@ -69,10 +69,10 @@ Tambien se mencionan pruebas de humo (smoke tests) que confirman la ausencia de 
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-CRACK-MLX (este modelo) | 179.999.981.459 | 6B | no disponible | qwen-community-1.0 | HuggingFace |
-| JANGQ-AI/Qwen3.8-Flash-Next-JANG_2L (base) | ~176B (estimado) | 6B | no disponible | qwen-community-1.0 | HuggingFace |
-| dealignai/Qwen3.8-Flash-Next-CRACK-6S | no disponible | no disponible | no disponible | qwen-community-1.0 | HuggingFace |
-| dealignai/Qwen3.8-Flash-Next-CRACK-JANG4M | no disponible | no disponible | no disponible | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-CRACK-MLX (este modelo) | 179.999.981.459 | 6B | no disponible | qwen-community-1.0 | Hugging Face |
+| JANGQ-AI/Qwen3.8-Flash-Next-JANG_2L (base) | ~176B (estimado) | 6B | no disponible | qwen-community-1.0 | Hugging Face |
+| dealignai/Qwen3.8-Flash-Next-CRACK-6S | no disponible | no disponible | no disponible | qwen-community-1.0 | Hugging Face |
+| dealignai/Qwen3.8-Flash-Next-CRACK-JANG4M | no disponible | no disponible | no disponible | qwen-community-1.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base mencionadas en el README. No se dispone de datos suficientes para comparar con modelos externos de la misma categoria.
 
@@ -88,13 +88,13 @@ La comparativa se limita a las variantes del mismo modelo base mencionadas en el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/Qwen3.8-Flash-Next-CRACK-MLX
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/Qwen3.8-Flash-Next-CRACK-MLX
 - Modelo base: https://huggingface.co/JANGQ-AI/Qwen3.8-Flash-Next-JANG_2L
 - Sibling CRACK-6S: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-6S
 - Sibling CRACK-JANG4M: https://huggingface.co/dealignai/Qwen3.8-Flash-Next-CRACK-JANG4M
 - Runtime vMLX: https://vmlx.net
 - Repositorio de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
-- Modelo original de Alibaba en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Modelo original de Alibaba en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Ko-fi del autor: https://ko-fi.com/dealignai
 - X del autor: https://x.com/dealignai
 - Web del autor: https://dealign.ai

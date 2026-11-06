@@ -90,7 +90,7 @@ La comparación cuantitativa de rendimiento entre estas variantes no está dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bambocher/Qwen3.5-2B-oQ3e-mtp
+- Hugging Face: https://huggingface.co/bambocher/Qwen3.5-2B-oQ3e-mtp
 - Variante de 8 bits del mismo autor: https://huggingface.co/bambocher/Qwen3.5-2B-oQ8e-mtp
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Ficha de Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_5_2b

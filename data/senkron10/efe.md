@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SeNKrOn10/Efe es un repositorio publicado en HuggingFace por el usuario SeNKrOn10 del que no se dispone de informacion tecnica verificable: la ficha del modelo no declara pipeline, licencia, idiomas soportados ni etiquetas descriptivas mas alla de `region:us`. Con 0 descargas y 1 like en el momento de la consulta, se trata de un repositorio practicamente sin traccion ni documentacion asociada, y el unico dato cuantitativo disponible es el tamano del repositorio, de aproximadamente 0,1 GB.
+SeNKrOn10/Efe es un repositorio publicado en Hugging Face por el usuario SeNKrOn10 del que no se dispone de informacion tecnica verificable: la ficha del modelo no declara pipeline, licencia, idiomas soportados ni etiquetas descriptivas mas alla de `region:us`. Con 0 descargas y 1 like en el momento de la consulta, se trata de un repositorio practicamente sin traccion ni documentacion asociada, y el unico dato cuantitativo disponible es el tamano del repositorio, de aproximadamente 0,1 GB.
 
 Ese tamano de repositorio es compatible con un artefacto de pesos de pequena escala o con un repositorio que contiene unicamente archivos de configuracion, tokenizador y pesos parciales, pero no permite determinar el numero de parametros, la arquitectura ni la longitud de contexto del modelo. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a paginas comerciales de la cadena de restauracion Taco Bell y no guardan ninguna relacion con el repositorio.
 
@@ -84,7 +84,7 @@ No disponible. Al desconocerse el tamano, la arquitectura, la tarea y la licenci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SeNKrOn10/Efe | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| SeNKrOn10/Efe | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No disponible. Al desconocerse el tamano, la arquitectura, la tarea y la licenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeNKrOn10/Efe
+- Repositorio en Hugging Face: https://huggingface.co/SeNKrOn10/Efe
 - Paper o informe tecnico: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

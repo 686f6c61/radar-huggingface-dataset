@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `yunju1115/gr00t-n1.7-h2-sharpa-tele30-ego107-0921-ckpt40000` es un checkpoint publicado en HuggingFace por el usuario `yunju1115`. Se trata de un repositorio con 3.144.016.000 parametros (aproximadamente 3,14 mil millones) y un peso de 6,9 GB en formato safetensors, lo que es coherente con pesos almacenados en precision de 16 bits. El identificador sugiere una variante derivada de la familia GR00T N1.7, si bien esta interpretacion no esta confirmada por la informacion disponible.
+El modelo identificado como `yunju1115/gr00t-n1.7-h2-sharpa-tele30-ego107-0921-ckpt40000` es un checkpoint publicado en Hugging Face por el usuario `yunju1115`. Se trata de un repositorio con 3.144.016.000 parametros (aproximadamente 3,14 mil millones) y un peso de 6,9 GB en formato safetensors, lo que es coherente con pesos almacenados en precision de 16 bits. El identificador sugiere una variante derivada de la familia GR00T N1.7, si bien esta interpretacion no esta confirmada por la informacion disponible.
 
 El repositorio es de caracter muy reciente y con una traccion practicamente nula: 8 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion del 22 de septiembre de 2026. No se declara licencia, ni idiomas soportados, ni pipeline de inferencia, lo que limita seriamente cualquier evaluacion de aptitud para produccion.
 
@@ -84,7 +84,7 @@ No hay datos verificables en la informacion proporcionada para establecer una co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yunju1115/gr00t-n1.7-h2-sharpa-tele30-ego107-0921-ckpt40000 | 3,14 mil millones | no disponible | no disponible | safetensors en HuggingFace |
+| yunju1115/gr00t-n1.7-h2-sharpa-tele30-ego107-0921-ckpt40000 | 3,14 mil millones | no disponible | no disponible | safetensors en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,6 +102,6 @@ No hay datos verificables en la informacion proporcionada para establecer una co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yunju1115/gr00t-n1.7-h2-sharpa-tele30-ego107-0921-ckpt40000
+- Repositorio en Hugging Face: https://huggingface.co/yunju1115/gr00t-n1.7-h2-sharpa-tele30-ego107-0921-ckpt40000
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

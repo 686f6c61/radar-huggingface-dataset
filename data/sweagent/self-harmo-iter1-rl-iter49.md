@@ -74,7 +74,7 @@ Nota: los datos de parámetros de los modelos Qwen3.5-122B y Qwen3-235B se deduc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sweagent/self-harmo-iter1-rl-iter49
+- Modelo en Hugging Face: https://huggingface.co/sweagent/self-harmo-iter1-rl-iter49
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

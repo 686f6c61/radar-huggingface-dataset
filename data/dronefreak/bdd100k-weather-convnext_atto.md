@@ -111,7 +111,7 @@ ConvNeXt-Atto y MobileNetV4-Conv-Small destacan sobre el resto en macro precisio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-weather-convnext_atto
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-weather-convnext_atto
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de entrenamiento: https://huggingface.co/datasets/dronefreak/BDD100K-Weather-Classification
 - Post del autor sobre el model zoo de BDD100K: https://huggingface.co/posts/dronefreak/988753800362571

@@ -4,7 +4,7 @@
 
 `yamazakishota/clip-finetuned` es un repositorio de implementación de CLIP orientado a tareas de recuperación (retrieval), publicado por el usuario yamazakishota bajo licencia MIT. A pesar del nombre, el propio autor aclara en la model card que el checkpoint incluido es una **inicialización válida para pruebas de humo (smoke tests)**, no un modelo entrenado ni evaluado sobre ningún benchmark. El repositorio se presenta como una base de código transparente y reproducible, con una configuración nominal de escala "giant" pero con tan solo 24.832 parámetros reales en `model.safetensors`, una cifra incompatible con cualquier variante real de CLIP.
 
-El interés del repositorio es fundamentalmente pedagógico o de andamiaje experimental: proporciona `config.json`, `training_args.json`, un `eval.py` con ejemplo ejecutable y una receta por defecto basada en Adafactor con scheduler OneCycle. No hay pesos entrenados, ni resultados de evaluación, ni una pipeline declarada en HuggingFace.
+El interés del repositorio es fundamentalmente pedagógico o de andamiaje experimental: proporciona `config.json`, `training_args.json`, un `eval.py` con ejemplo ejecutable y una receta por defecto basada en Adafactor con scheduler OneCycle. No hay pesos entrenados, ni resultados de evaluación, ni una pipeline declarada en Hugging Face.
 
 Por su estado actual, no debe considerarse un modelo listo para producción ni para comparaciones de rendimiento. Cualquier uso serio requeriría entrenar los pesos desde cero y documentar los resultados por separado, tal y como indica el propio autor.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, la receta por defecto usa el optimizador Adafactor c
 - Benchmark de infraestructura: útil para validar flujos de carga con `safetensors` y PyTorch, comparar tiempos de arranque o medir overhead de frameworks antes de escalar a modelos reales.
 - Reproducción de experimentos con datos propios: partiendo de la receta Adafactor + OneCycle, un equipo puede entrenar sus propios pesos sobre un corpus de pares imagen-texto y documentar resultados aparte.
 - Exploración de variantes arquitectónicas: la combinación multi-query attention + co-attention + scalenorm puede servir para experimentar con alternativas a la atención estándar de CLIP en tareas de retrieval.
-- Base para adaptadores propios: al no ser compatible con las APIs automáticas de HuggingFace, obliga a escribir un adaptador explícito, lo que puede ser útil para integrarlo en pipelines a medida.
+- Base para adaptadores propios: al no ser compatible con las APIs automáticas de Hugging Face, obliga a escribir un adaptador explícito, lo que puede ser útil para integrarlo en pipelines a medida.
 
 ## Benchmarks y rendimiento
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yamazakishota/clip-finetuned | 24.832 (inicializacion) | no disponible | No | MIT | HuggingFace |
-| openai/clip-vit-base-patch32 | ~151 M | 77 tokens de texto | Si | MIT | HuggingFace |
-| openai/clip-vit-large-patch14 | ~428 M | 77 tokens de texto | Si | MIT | HuggingFace |
-| laion/CLIP-ViT-H-14-laion2B-s32B-b79K | ~986 M | 77 tokens de texto | Si | MIT | HuggingFace |
+| yamazakishota/clip-finetuned | 24.832 (inicializacion) | no disponible | No | MIT | Hugging Face |
+| openai/clip-vit-base-patch32 | ~151 M | 77 tokens de texto | Si | MIT | Hugging Face |
+| openai/clip-vit-large-patch14 | ~428 M | 77 tokens de texto | Si | MIT | Hugging Face |
+| laion/CLIP-ViT-H-14-laion2B-s32B-b79K | ~986 M | 77 tokens de texto | Si | MIT | Hugging Face |
 
 La comparación es asimétrica: mientras los modelos de OpenAI y LAION son checkpoints entrenados y evaluados en tareas de retrieval estándar, `yamazakishota/clip-finetuned` es únicamente un esqueleto de código con pesos de inicialización. No compite en rendimiento con ninguno de ellos en su estado actual.
 
@@ -87,7 +87,7 @@ La comparación es asimétrica: mientras los modelos de OpenAI y LAION son check
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yamazakishota/clip-finetuned
+- Hugging Face: https://huggingface.co/yamazakishota/clip-finetuned
 - Repositorio CLIP original (OpenAI): https://github.com/openai/CLIP
 - Paper CLIP: https://arxiv.org/abs/2103.00020
 - Dataset Flickr30k (sugerido por el autor para evaluacion): https://shannon.cs.illinois.edu/DenotationGraph/

@@ -85,10 +85,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-3B-Instruct-Sheldon-SFT-v3b-LoRA | 3.090 M (base) mas adaptador LoRA estimado en torno a 60 M por checkpoint | Heredado del base (32.768 tokens documentados) | Adaptador LoRA sobre transformer denso | qwen-research (other) | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen2.5-3B-Instruct | 3.090 M | 32.768 tokens con extension YaRN | Transformer denso, instruido | qwen-research | HuggingFace, ampliamente utilizado |
-| meta-llama/Llama-3.2-3B-Instruct | 3.210 M | 128.000 tokens | Transformer denso, instruido | Llama 3.2 Community License | HuggingFace, ampliamente utilizado |
-| microsoft/Phi-3.5-mini-instruct | 3.800 M | 128.000 tokens | Transformer denso, instruido | MIT | HuggingFace, ampliamente utilizado |
+| Qwen2.5-3B-Instruct-Sheldon-SFT-v3b-LoRA | 3.090 M (base) mas adaptador LoRA estimado en torno a 60 M por checkpoint | Heredado del base (32.768 tokens documentados) | Adaptador LoRA sobre transformer denso | qwen-research (other) | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen2.5-3B-Instruct | 3.090 M | 32.768 tokens con extension YaRN | Transformer denso, instruido | qwen-research | Hugging Face, ampliamente utilizado |
+| meta-llama/Llama-3.2-3B-Instruct | 3.210 M | 128.000 tokens | Transformer denso, instruido | Llama 3.2 Community License | Hugging Face, ampliamente utilizado |
+| microsoft/Phi-3.5-mini-instruct | 3.800 M | 128.000 tokens | Transformer denso, instruido | MIT | Hugging Face, ampliamente utilizado |
 
 Las cifras de los tres modelos de referencia corresponden a su documentacion publica y no a mediciones propias. No se dispone de datos de rendimiento comparativo entre este adaptador y las alternativas, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -106,7 +106,7 @@ Las cifras de los tres modelos de referencia corresponden a su documentacion pub
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b-LoRA
+- Adaptador en Hugging Face: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b-LoRA
 - Modelo fusionado y tabla de evaluacion referenciada: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3b
 - Variante v2 (solo chat): https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-LoRA
 - Variante v3a (chat y matematicas existentes): https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v3a-LoRA

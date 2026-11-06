@@ -1,7 +1,7 @@
 # Openintelligent123/MiniMax-M2.7
 
 ## Resumen
-MiniMax-M2.7 es un modelo de lenguaje de gran escala con 228.689.764.864 parámetros totales, desarrollado por MiniMax AI. Según la información oficial, está orientado a la construcción de agentes complejos, la ejecución de tareas de productividad y el razonamiento avanzado, con capacidades destacadas en codificación. El repositorio de GitHub indica que es el primer modelo de MiniMax que participa profundamente en su propia evolución, lo que implica que puede mejorar sus propios mecanismos o habilidades. El modelo se publica en HuggingFace bajo el usuario Openintelligent123, con formato de pesos safetensors y etiqueta fp8, y licencia "other" con enlace al texto de licencia en GitHub. Su tamaño (228.700 millones de parámetros) y su formato FP8 implican requisitos de hardware muy elevados para inferencia. No se ha publicado información detallada sobre la arquitectura o la longitud de contexto.
+MiniMax-M2.7 es un modelo de lenguaje de gran escala con 228.689.764.864 parámetros totales, desarrollado por MiniMax AI. Según la información oficial, está orientado a la construcción de agentes complejos, la ejecución de tareas de productividad y el razonamiento avanzado, con capacidades destacadas en codificación. El repositorio de GitHub indica que es el primer modelo de MiniMax que participa profundamente en su propia evolución, lo que implica que puede mejorar sus propios mecanismos o habilidades. El modelo se publica en Hugging Face bajo el usuario Openintelligent123, con formato de pesos safetensors y etiqueta fp8, y licencia "other" con enlace al texto de licencia en GitHub. Su tamaño (228.700 millones de parámetros) y su formato FP8 implican requisitos de hardware muy elevados para inferencia. No se ha publicado información detallada sobre la arquitectura o la longitud de contexto.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -41,7 +41,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: con el formato FP8, los pesos ocupan aproximadamente 228,7 GB. Para la inferencia se necesitan al menos 229 GB de VRAM solo para los pesos, más memoria adicional para el caché KV y las activaciones. Por tanto, es imprescindible un sistema multi-GPU.
 - GPUs recomendadas: configuraciones de 4 o 8 GPUs con 80 GB o más de memoria cada una (por ejemplo, NVIDIA A100 80GB o H100 80GB). No se ha confirmado la compatibilidad con GPUs de menor memoria.
 - Consumo en GPU de consumo: no es posible ejecutarlo en GPUs de consumo (como RTX 4090) debido al tamaño de los pesos.
-- Opciones de despliegue: el modelo usa la librería transformers y tiene la etiqueta "endpoints_compatible", lo que sugiere que puede desplegarse en HuggingFace Inference Endpoints. No se ha confirmado soporte para vLLM, TGI, llama.cpp u Ollama.
+- Opciones de despliegue: el modelo usa la librería transformers y tiene la etiqueta "endpoints_compatible", lo que sugiere que puede desplegarse en Hugging Face Inference Endpoints. No se ha confirmado soporte para vLLM, TGI, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -51,11 +51,11 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 - Sesgos y alucinaciones: no hay información específica, pero al tratarse de un modelo de lenguaje de gran escala, puede presentar sesgos y generar contenido falso o alucinado.
 - Limitaciones de contexto e idioma: no se ha publicado la longitud de contexto ni los idiomas soportados. Es posible que el soporte multilingüe sea limitado o no esté documentado.
 - Licencia: la licencia es "other" y el texto está en el enlace del repositorio. Es obligatorio revisar los términos exactos antes de usar el modelo en producción, especialmente para uso comercial.
-- Procedencia del peso: el repositorio de HuggingFace pertenece al usuario "Openintelligent123", no a la organización oficial "MiniMax-AI". Se recomienda verificar la integridad y legalidad de los pesos antes de descargarlos.
+- Procedencia del peso: el repositorio de Hugging Face pertenece al usuario "Openintelligent123", no a la organización oficial "MiniMax-AI". Se recomienda verificar la integridad y legalidad de los pesos antes de descargarlos.
 - Requisitos de hardware: el tamaño de 228.700 millones de parámetros y el formato FP8 hacen que la inferencia sea costosa y requiera infraestructura dedicada. No es adecuado para despliegues en entornos sin acceso a múltiples GPUs.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Openintelligent123/MiniMax-M2.7
+- Hugging Face: https://huggingface.co/Openintelligent123/MiniMax-M2.7
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-M2.7
 - Página oficial del modelo: https://www.minimax.io/models/text/m27
 - Licencia: https://github.com/MiniMax-AI/MiniMax-M2.7/blob/main/LICENSE

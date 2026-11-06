@@ -76,9 +76,9 @@ El adaptador requiere una rama no publicada de PEFT que implementa activation st
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mutkuoz/qwen3.5-4b-steering-to-be-honest | 1 (dosis) sobre base de 4B | No disponible | Adaptador de activation steering | MIT | HuggingFace, requiere rama PEFT no publicada |
-| Qwen/Qwen3.5-4B (modelo base) | 4B | No disponible | Transformer denso | No disponible en la información proporcionada | HuggingFace |
-| Otros adaptadores de la colección LLM Electrodes (127 en total) | 1 (dosis) cada uno | No disponible | Adaptadores de activation steering | MIT | HuggingFace, misma rama PEFT |
+| mutkuoz/qwen3.5-4b-steering-to-be-honest | 1 (dosis) sobre base de 4B | No disponible | Adaptador de activation steering | MIT | Hugging Face, requiere rama PEFT no publicada |
+| Qwen/Qwen3.5-4B (modelo base) | 4B | No disponible | Transformer denso | No disponible en la información proporcionada | Hugging Face |
+| Otros adaptadores de la colección LLM Electrodes (127 en total) | 1 (dosis) cada uno | No disponible | Adaptadores de activation steering | MIT | Hugging Face, misma rama PEFT |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-to-be-honest
+- Modelo en Hugging Face: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-to-be-honest
 - Colección completa de 127 adaptadores: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset LLM Electrodes: https://huggingface.co/datasets/mutkuoz/llm-electrodes

@@ -89,7 +89,7 @@ No se dispone de cifras de WER comparativas entre estos modelos en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DictionLabs/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML
+- Modelo en Hugging Face: https://huggingface.co/DictionLabs/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Repositorio Core ML de origen (FluidInference): https://huggingface.co/FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/

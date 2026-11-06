@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`johnjacksee/contrastive-2023` es un repositorio de investigación publicado en HuggingFace por el usuario johnjacksee que contiene un prototipo de red neuronal convolucional basada en la arquitectura Swin Transformer (variante Swin-T, escala "large" según la configuración del autor) orientada a tareas de aprendizaje contrastivo. No se trata de un modelo de lenguaje ni de un modelo entrenado listo para producción: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado en benchmarks.
+`johnjacksee/contrastive-2023` es un repositorio de investigación publicado en Hugging Face por el usuario johnjacksee que contiene un prototipo de red neuronal convolucional basada en la arquitectura Swin Transformer (variante Swin-T, escala "large" según la configuración del autor) orientada a tareas de aprendizaje contrastivo. No se trata de un modelo de lenguaje ni de un modelo entrenado listo para producción: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado en benchmarks.
 
 El modelo se distribuye con licencia BSD-3-Clause, pesos en formato safetensors, y un total de 33.088 parámetros según los metadatos del repositorio. El tamaño del repositorio es de 0,0 GB, lo que es coherente con un checkpoint de inicialización de muy pequeño tamaño. La model card describe la arquitectura con atención estándar, fusión bilineal, activación approximate GELU y normalización GroupNorm, además de una receta de experimento por defecto con optimizador Novograd y scheduler polinómico.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| johnjacksee/contrastive-2023 | 33.088 (según metadatos) | no aplica (visión) | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint de inicialización |
-| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | no aplica (visión) | métricas publicadas en ImageNet | MIT | HuggingFace, checkpoint preentrenado |
+| johnjacksee/contrastive-2023 | 33.088 (según metadatos) | no aplica (visión) | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint de inicialización |
+| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | no aplica (visión) | métricas publicadas en ImageNet | MIT | Hugging Face, checkpoint preentrenado |
 | Otros prototipos de investigación contrastiva | no disponible | no disponible | no disponible | variable | variable |
 
 La comparación con Swin-T oficial es la más directa por arquitectura, pero conviene subrayar que el modelo oficial está preentrenado y evaluado, mientras que este repositorio es un prototipo sin entrenamiento. No se dispone de datos suficientes para comparar rendimiento con alternativas de la misma categoría.
@@ -82,7 +82,7 @@ La comparación con Swin-T oficial es la más directa por arquitectura, pero con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/johnjacksee/contrastive-2023
+- Hugging Face: https://huggingface.co/johnjacksee/contrastive-2023
 - Repositorio de archivos: https://huggingface.co/johnjacksee/contrastive-2023/tree/main
 - Swin Transformer (paper original): https://arxiv.org/abs/2103.14030
-- Swin-T oficial en HuggingFace: https://huggingface.co/microsoft/swin-tiny-patch4-window7-224
+- Swin-T oficial en Hugging Face: https://huggingface.co/microsoft/swin-tiny-patch4-window7-224

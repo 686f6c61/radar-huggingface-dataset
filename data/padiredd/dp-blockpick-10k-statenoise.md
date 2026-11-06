@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estándar de lenguaje o razonamient
 
 | Modelo | Parámetros | Contexto / horizonte | Éxito DDIM-10 limpio (100k) | Éxito DDPM limpio (100k) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dp-blockpick-10k-statenoise (este) | 287,5 M | horizonte 64, 32 ejecutados | 26% | 48% | other | HuggingFace, repo 11,6 GB |
+| dp-blockpick-10k-statenoise (este) | 287,5 M | horizonte 64, 32 ejecutados | 26% | 48% | other | Hugging Face, repo 11,6 GB |
 | fullregion-dr2 | no disponible | misma receta sin ruido de estado | 66% | 74% | no disponible | referenciado en la model card |
 | cotrain-real075-statenoise | no disponible | misma receta con cotrain real 0,75 | 87% | 78% | no disponible | referenciado en la model card |
 
@@ -113,7 +113,7 @@ Los tres modelos comparten escena, dataset base y protocolo de evaluación parea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-10k-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-10k-statenoise
 - Dataset de entrenamiento: https://huggingface.co/datasets/padiredd/pick-cube-topdown-region10k-full-dr2-3cam
 - Repositorio del entorno y evaluación (cyclo_lab-real2sim), rutas data_collection/rollout_policy.py y data_collection/region10k/eval/: no disponible como URL directa en la información proporcionada
 - LeRobot (framework base): https://github.com/huggingface/lerobot

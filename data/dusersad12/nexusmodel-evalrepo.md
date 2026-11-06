@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NexusModel es un modelo publicado por el usuario dusersad12 bajo el identificador `dusersad12/NexusModel-EvalRepo` en HuggingFace. La model card lo describe como un modelo de lenguaje de propósito general con capacidades de razonamiento, generación de código, uso de herramientas y soporte multimodal, presentado como una "actualización de mitad de ciclo" que mejora el razonamiento multi-paso respecto a una versión anterior. Según el propio autor, en el conjunto de evaluación AIME 2025 la precisión pasó del 68 % al 85 %, y el consumo medio de tokens por pregunta aumentó de 11 000 a 21 000, lo que indica un modo de razonamiento extendido con mayor profundidad de cómputo en post-entrenamiento.
+NexusModel es un modelo publicado por el usuario dusersad12 bajo el identificador `dusersad12/NexusModel-EvalRepo` en Hugging Face. La model card lo describe como un modelo de lenguaje de propósito general con capacidades de razonamiento, generación de código, uso de herramientas y soporte multimodal, presentado como una "actualización de mitad de ciclo" que mejora el razonamiento multi-paso respecto a una versión anterior. Según el propio autor, en el conjunto de evaluación AIME 2025 la precisión pasó del 68 % al 85 %, y el consumo medio de tokens por pregunta aumentó de 11 000 a 21 000, lo que indica un modo de razonamiento extendido con mayor profundidad de cómputo en post-entrenamiento.
 
-La información disponible es, sin embargo, muy limitada y presenta contradicciones notables. Los metadatos de HuggingFace clasifican el repositorio con la arquitectura `bert` y la tarea `feature-extraction`, mientras que la model card describe un asistente conversacional generativo con modo de pensamiento, plantillas de prompt para subida de ficheros y búsqueda web, y resultados en pruebas de código, matemáticas y uso de herramientas. Además, el tamaño del repositorio es de 0,0 GB, no se declaran parámetros totales, longitud de contexto ni idiomas soportados, y el repositorio acumula 0 descargas y 0 "likes". Todo apunta a un repositorio de evaluación o de demostración más que a una publicación de pesos utilizable.
+La información disponible es, sin embargo, muy limitada y presenta contradicciones notables. Los metadatos de Hugging Face clasifican el repositorio con la arquitectura `bert` y la tarea `feature-extraction`, mientras que la model card describe un asistente conversacional generativo con modo de pensamiento, plantillas de prompt para subida de ficheros y búsqueda web, y resultados en pruebas de código, matemáticas y uso de herramientas. Además, el tamaño del repositorio es de 0,0 GB, no se declaran parámetros totales, longitud de contexto ni idiomas soportados, y el repositorio acumula 0 descargas y 0 "likes". Todo apunta a un repositorio de evaluación o de demostración más que a una publicación de pesos utilizable.
 
 Por tanto, esta ficha recoge exclusivamente lo declarado por el autor y marca como "no disponible" todo aquello que no consta. No debe interpretarse como una validación independiente del modelo: no hay pesos publicados, no hay paper, no hay resultados reproducibles por terceros y la búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha recoge exclusivamente lo declarado por el autor y marca co
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los metadatos de HuggingFace indican `bert`, la model card describe un modelo generativo conversacional; la contradiccion no se resuelve con la informacion disponible) |
+| Arquitectura | no disponible (los metadatos de Hugging Face indican `bert`, la model card describe un modelo generativo conversacional; la contradiccion no se resuelve con la informacion disponible) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ Por tanto, esta ficha recoge exclusivamente lo declarado por el autor y marca co
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (el repositorio ocupa 0,0 GB, no se observan ficheros de pesos tipo safetensors o GGUF) |
 
-Otros datos de la ficha de HuggingFace: autor `dusersad12`, tarea declarada `feature-extraction`, libreria `transformers`, framework `pytorch`, etiqueta `endpoints_compatible`, region `us`. Fecha de creacion: 27 de septiembre de 2026. Ultima actualizacion: 27 de septiembre de 2026. Descargas: 0. Likes: 0.
+Otros datos de la ficha de Hugging Face: autor `dusersad12`, tarea declarada `feature-extraction`, libreria `transformers`, framework `pytorch`, etiqueta `endpoints_compatible`, region `us`. Fecha de creacion: 27 de septiembre de 2026. Ultima actualizacion: 27 de septiembre de 2026. Descargas: 0. Likes: 0.
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 - VRAM estimada para inferencia: no disponible. Al no declararse el numero de parametros ni el contexto, no es posible estimar el consumo de memoria.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. El repositorio no contiene ficheros de pesos (0,0 GB), por lo que no es desplegable con vLLM, llama.cpp, Ollama, TGI ni ninguna otra herramienta. La etiqueta `endpoints_compatible` de HuggingFace hace referencia a compatibilidad con Inference Endpoints, pero sin pesos publicados no hay nada que servir.
+- Opciones de despliegue: no disponible. El repositorio no contiene ficheros de pesos (0,0 GB), por lo que no es desplegable con vLLM, llama.cpp, Ollama, TGI ni ninguna otra herramienta. La etiqueta `endpoints_compatible` de Hugging Face hace referencia a compatibilidad con Inference Endpoints, pero sin pesos publicados no hay nada que servir.
 - Latencia y throughput: no disponible. El unico dato relacionado es el consumo de tokens de razonamiento en AIME (del orden de 21 000 tokens por pregunta), que implicaria una latencia alta en cualquier despliegue, pero no se aportan mediciones de tiempo.
 
 ## Comparativa con modelos similares
@@ -115,7 +115,7 @@ Comparativa con alternativas reales del mercado: no disponible, dado que se desc
 ## Limitaciones y advertencias
 
 - Ausencia de pesos: el repositorio ocupa 0,0 GB y no se observan ficheros de modelo. No es posible descargar, ejecutar ni evaluar el modelo.
-- Contradiccion en los metadatos: HuggingFace etiqueta el repositorio como `bert` y `feature-extraction`, mientras que la model card describe un asistente generativo con razonamiento extendido y capacidades multimodales. La discrepancia no se resuelve con la informacion disponible y sugiere que los metadatos pueden ser automaticos o incorrectos.
+- Contradiccion en los metadatos: Hugging Face etiqueta el repositorio como `bert` y `feature-extraction`, mientras que la model card describe un asistente generativo con razonamiento extendido y capacidades multimodales. La discrepancia no se resuelve con la informacion disponible y sugiere que los metadatos pueden ser automaticos o incorrectos.
 - Benchmarks no verificables: todos los resultados son autodeclarados, con categorias genericas en lugar de benchmarks estandar y con modelos de comparacion anonimizados. No hay conjunto de evaluacion, metodologia ni codigo de reproduccion publicados.
 - Cero traccion: 0 descargas y 0 "likes" en el momento de la consulta, lo que impide cualquier validacion por parte de la comunidad.
 - Fechas anomales: las fechas de creacion y actualizacion (27 de septiembre de 2026) son posteriores a la fecha habitual de referencia y aparecen a menos de un minuto de diferencia, lo que apunta a un repositorio creado de forma automatizada o de prueba.
@@ -128,7 +128,7 @@ Comparativa con alternativas reales del mercado: no disponible, dado que se desc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/NexusModel-EvalRepo
+- Hugging Face: https://huggingface.co/dusersad12/NexusModel-EvalRepo
 - Paper: no disponible
 - Repositorio de codigo: la model card menciona "our code repository" para ejecutar NexusModel en local, pero no incluye la URL
 - Web oficial y API: la model card menciona una interfaz de chat y una API propias ("Check our official website for details") sin proporcionar el enlace

@@ -4,7 +4,7 @@
 
 WhisAID Medium Uniform es un clasificador y codificador de acentos del mandarín desarrollado por Xintong Wang (walston) como parte del framework Joycent, un sistema de síntesis de voz con acento. El modelo se basa en Whisper Medium y ha sido entrenado con una pérdida adversarial de distribución uniforme de hablantes (uniform MSE, alpha 10) durante 10 épocas, publicándose el checkpoint correspondiente a la época 9. Su propósito principal es identificar el acento de un hablante en audio en chino mandarín y generar una representación vectorial (embedding) del acento que puede utilizarse en tareas posteriores como la síntesis de voz con acento controlado.
 
-El modelo se distribuye como un checkpoint de Lightning en el repositorio de HuggingFace, y el código de integración se proporciona a través del proyecto WhisAID en GitHub, no mediante código remoto del Hub. Está diseñado para trabajar con la librería transformers y requiere la instalación del paquete fuente WhisAID. Su relevancia actual radica en que aborda un problema específico y poco cubierto: la clasificación y codificación de acentos en mandarín, un componente clave para sistemas de TTS y ASR que necesitan adaptarse a variaciones dialectales.
+El modelo se distribuye como un checkpoint de Lightning en el repositorio de Hugging Face, y el código de integración se proporciona a través del proyecto WhisAID en GitHub, no mediante código remoto del Hub. Está diseñado para trabajar con la librería transformers y requiere la instalación del paquete fuente WhisAID. Su relevancia actual radica en que aborda un problema específico y poco cubierto: la clasificación y codificación de acentos en mandarín, un componente clave para sistemas de TTS y ASR que necesitan adaptarse a variaciones dialectales.
 
 ## Especificaciones tecnicas
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WhisAID Medium Uniform | Whisper Medium | ~769M | no disponible | no disponible | HuggingFace |
-| Whisper Medium (base) | Whisper Medium | ~769M | 30 s de audio | MIT | HuggingFace |
-| ECAPA-TDNN (speaker verification) | TDNN | ~20M | no aplica | Apache 2.0 | HuggingFace |
+| WhisAID Medium Uniform | Whisper Medium | ~769M | no disponible | no disponible | Hugging Face |
+| Whisper Medium (base) | Whisper Medium | ~769M | 30 s de audio | MIT | Hugging Face |
+| ECAPA-TDNN (speaker verification) | TDNN | ~20M | no aplica | Apache 2.0 | Hugging Face |
 
 WhisAID se diferencia de Whisper Medium en que esta especificamente entrenado para clasificacion de acentos, mientras que Whisper es un modelo ASR general. ECAPA-TDNN se centra en verificacion de hablante, no en acentos, y no esta disenado para mandarin especificamente.
 
@@ -76,7 +76,7 @@ WhisAID se diferencia de Whisper Medium en que esta especificamente entrenado pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/walston/whisaid-medium-uniform
+- Hugging Face: https://huggingface.co/walston/whisaid-medium-uniform
 - Perfil del autor: https://huggingface.co/walston/models
 - Repositorio GitHub de WhisAID: https://github.com/oshindow/Joycent-code/tree/main/whisAID
 - Resumen de WhisAID en EmergentMind: https://api.emergentmind.com/topics/whisaid

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-acharyadarwin/sentiment-model es un modelo de clasificación de texto (pipeline `text-classification`) publicado en HuggingFace, resultado de un ajuste fino supervisado de distilbert-base-uncased. Cuenta con 66.955.779 parámetros, se distribuye en formato safetensors bajo licencia Apache 2.0 y su repositorio ocupa 0,3 GB. La model card indica que fue generado automáticamente por la librería Trainer, sin que el autor haya completado las secciones de descripción, usos previstos ni datos de entrenamiento: el dataset empleado figura explícitamente como "unknown dataset".
+acharyadarwin/sentiment-model es un modelo de clasificación de texto (pipeline `text-classification`) publicado en Hugging Face, resultado de un ajuste fino supervisado de distilbert-base-uncased. Cuenta con 66.955.779 parámetros, se distribuye en formato safetensors bajo licencia Apache 2.0 y su repositorio ocupa 0,3 GB. La model card indica que fue generado automáticamente por la librería Trainer, sin que el autor haya completado las secciones de descripción, usos previstos ni datos de entrenamiento: el dataset empleado figura explícitamente como "unknown dataset".
 
 El rendimiento declarado es modesto: en el conjunto de evaluación el autor reporta una pérdida de 0,7470, una exactitud (accuracy) de 0,6598 y un F1 ponderado y macro idénticos de 0,6493. No se especifica el número de clases ni la taxonomía de etiquetas, por lo que no es posible determinar si la exactitud está muy por encima o cerca del azar. El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que carece de validación independiente por parte de la comunidad.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada como modelo de producción, pero resulta un caso de es
 | Formato de pesos | safetensors (librería transformers) |
 | Tarea | Clasificación de texto (text-classification); conjunto de etiquetas no disponible |
 | Tamaño del repositorio | 0,3 GB |
-| Fecha de creación en HuggingFace | 2026-09-26 |
+| Fecha de creación en Hugging Face | 2026-09-26 |
 | Última actualización | 2026-09-26 |
 
 ## Arquitectura y entrenamiento
@@ -53,7 +53,7 @@ Un detalle técnico relevante es la inconsistencia entre métricas: la cabecera 
 - Clasificación de tickets de soporte por tono o urgencia percibida: viable como capa auxiliar de enrutamiento con revisión humana posterior, no como sistema automático de decisión dado el nivel de acierto reportado.
 - Análisis de respuestas abiertas en encuestas (NPS, satisfacción): útil para obtener una primera distribución de sentimiento en comentarios breves en inglés, complementada con una muestra revisada manualmente para estimar el error real.
 - Material docente para prácticas de fine-tuning: el repositorio documenta hiperparámetros, versiones de framework y curva de entrenamiento, lo que lo convierte en un ejemplo didáctico de pipeline Trainer de principio a fin.
-- Integración en endpoints compatibles con la Inference API de HuggingFace, ya que el modelo está etiquetado como `endpoints_compatible`.
+- Integración en endpoints compatibles con la Inference API de Hugging Face, ya que el modelo está etiquetado como `endpoints_compatible`.
 
 ## Benchmarks y rendimiento
 
@@ -83,7 +83,7 @@ No se dispone de resultados de MMLU, HumanEval, GSM8K ni de ningún otro benchma
 - VRAM estimada para inferencia: menos de 1 GB en FP32 (el checkpoint ocupa unos 268 MB); en la práctica cualquier GPU con 2 GB o más es suficiente, y también es viable la inferencia en CPU.
 - GPU recomendadas: no se requiere ninguna GPU dedicada. Cualquier tarjeta consumer sirve, desde una GTX 1050/1650 hasta una RTX 4090; en entornos de servidor, una T4 o una L4 son más que suficientes.
 - Cabe en GPU consumer: sí, en todas las gamas actuales y en la mayoría de integradas modestas.
-- Opciones de despliegue: `transformers` (pipeline de clasificación de texto), exportación a ONNX/INT8 mediante Optimum, Text Generation Inference (TGI) para servir el modelo vía API, y endpoints compatibles con la Inference API de HuggingFace. vLLM es compatible a nivel de arquitectura, pero resulta sobredimensionado para un clasificador de 66,9 M de parámetros. llama.cpp y Ollama no aplican, ya que no se publican pesos en GGUF.
+- Opciones de despliegue: `transformers` (pipeline de clasificación de texto), exportación a ONNX/INT8 mediante Optimum, Text Generation Inference (TGI) para servir el modelo vía API, y endpoints compatibles con la Inference API de Hugging Face. vLLM es compatible a nivel de arquitectura, pero resulta sobredimensionado para un clasificador de 66,9 M de parámetros. llama.cpp y Ollama no aplican, ya que no se publican pesos en GGUF.
 - Latencia y throughput: no disponible. No se han publicado mediciones de latencia ni de tokens por segundo en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -115,6 +115,6 @@ La diferencia principal frente a las alternativas no está en el tamaño ni en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/acharyadarwin/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/acharyadarwin/sentiment-model
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada. Como referencia del modelo base, la destilación de DistilBERT se describe en el artículo de Sanh et al., 2019 (arXiv:1910.01108), si bien dicho enlace no aparece citado en la model card.

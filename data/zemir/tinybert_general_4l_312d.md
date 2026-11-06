@@ -73,7 +73,7 @@ Nota: los datos de DistilBERT y BERT-base son de conocimiento general, no de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zemir/TinyBERT_General_4L_312D
+- Repositorio Hugging Face: https://huggingface.co/zemir/TinyBERT_General_4L_312D
 - Repositorio original de Huawei Noah: https://huggingface.co/huawei-noah/TinyBERT_General_4L_312D
 - Paper: [TinyBERT: Distilling BERT for Natural Language Understanding](https://arxiv.org/abs/1909.10351)
 - Repositorio GitHub del proyecto: https://github.com/yinmingjun/TinyBERT

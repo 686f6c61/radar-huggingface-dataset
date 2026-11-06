@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`IXDLI/pusht-parallel-tdp-seed0` es un checkpoint de politica robotica por imitacion entrenado para la tarea PushT (empuje planar de un objeto en forma de T en 2D), publicado en HuggingFace con pipeline `robotics`. No es un modelo de lenguaje: es una politica de difusion que consume observaciones RGB de 96x96 pixeles mas la posicion XY del agente y emite comandos de posicion XY. Lo desarrolla el usuario IXDLI como reproduccion controlada del metodo TDP (Tube Diffusion Policy) descrito en el paper arXiv:2604.23609, cuyos autores no liberaron codigo ni los hiperparametros completos para PushT.
+`IXDLI/pusht-parallel-tdp-seed0` es un checkpoint de politica robotica por imitacion entrenado para la tarea PushT (empuje planar de un objeto en forma de T en 2D), publicado en Hugging Face con pipeline `robotics`. No es un modelo de lenguaje: es una politica de difusion que consume observaciones RGB de 96x96 pixeles mas la posicion XY del agente y emite comandos de posicion XY. Lo desarrolla el usuario IXDLI como reproduccion controlada del metodo TDP (Tube Diffusion Policy) descrito en el paper arXiv:2604.23609, cuyos autores no liberaron codigo ni los hiperparametros completos para PushT.
 
 El modelo se entrena desde cero durante 512.400 actualizaciones del optimizador con batch efectivo de 64, AdamW a 1e-4 y schedule coseno con 500 pasos de warmup, sobre el split original de 90 demostraciones del Diffusion Policy. Usa fragmentos de accion de 16 pasos de prediccion y 8 de ejecucion, y se publica el EMA final sin seleccion por test, de modo que el checkpoint no esta optimizado contra la metrica de evaluacion.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y de investigacion: sirve como baseline reproducible y 
 | Longitud de contexto | no aplica (no es un modelo de lenguaje; la "memoria" es la observacion actual, sin historial temporal explicito) |
 | Tipos de cuantizacion | no disponible (solo se publica checkpoint PyTorch en coma flotante; no hay GGUF, ONNX ni variantes cuantizadas) |
 | Idiomas soportados | no aplica / no disponible (modelo de control roboticos, sin entrada ni salida de texto) |
-| Licencia | no disponible (no se declara en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no se declara en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | PyTorch `.pt` (`policy.pt`), cargado mediante `pusht_parallel.inference.load_policy`; codigo en `inference_source.tar.gz` |
 | Entradas | Diccionario `{"pixels": uint8[96,96,3], "agent_pos": float[2]}` |
 | Salidas | Comandos de posicion XY (`action_xy`) |
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| IXDLI/pusht-parallel-tdp-seed0 | Diffusion policy con TDP + GRN + DiT-Block | no disponible | no aplica | Sin cifras publicadas | no disponible | HuggingFace, pesos `.pt` + codigo |
+| IXDLI/pusht-parallel-tdp-seed0 | Diffusion policy con TDP + GRN + DiT-Block | no disponible | no aplica | Sin cifras publicadas | no disponible | Hugging Face, pesos `.pt` + codigo |
 | Diffusion Policy (original, PushT CNN) | Diffusion policy CNN | no disponible | no aplica | Puntuaciones reportadas en el paper de DP; no reproducidas aqui | no disponible en la informacion | Codigo y config publicos del proyecto Diffusion Policy |
 | DiT-Policy (Dasari et al.) | Politica con bloques DiT | no disponible | no aplica | no disponible | no disponible | Repositorio GitHub publico |
 | GRN (ByteDance) | Cabeza/arquitectura para politicas | no disponible | no aplica | no disponible | no disponible | Repositorio GitHub publico |
@@ -91,7 +91,7 @@ La comparacion cuantitativa no es posible con la informacion disponible: ninguno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IXDLI/pusht-parallel-tdp-seed0
+- Modelo en Hugging Face: https://huggingface.co/IXDLI/pusht-parallel-tdp-seed0
 - Paper de Tube DP: https://arxiv.org/abs/2604.23609
 - Config del experimento original de Diffusion Policy en PushT: https://diffusion-policy.cs.columbia.edu/data/experiments/image/pusht/diffusion_policy_cnn/config.yaml
 - Repositorio DiT-Block Policy (Dasari et al.): https://github.com/SudeepDasari/dit-policy

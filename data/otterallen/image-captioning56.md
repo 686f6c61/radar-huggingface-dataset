@@ -76,5 +76,5 @@ No disponible. No procede una comparativa tecnica contra modelos de captioning (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Otterallen/image-captioning56
+- Hugging Face: https://huggingface.co/Otterallen/image-captioning56
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

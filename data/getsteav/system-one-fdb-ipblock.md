@@ -75,7 +75,7 @@ El lider de AUROC procede del paper de FDB (arXiv 2208.14417 v3). El paper no re
 
 | Modelo | Tipo | AUROC (FDB ipblock) | Recall a 1% FPR | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (System One + arbol) | Stack: GBT + encoder con cabeza de decision | 0,9481 | 55,7% | Apache-2.0 | HuggingFace |
+| Este modelo (System One + arbol) | Stack: GBT + encoder con cabeza de decision | 0,9481 | 55,7% | Apache-2.0 | Hugging Face |
 | System One solo | Encoder ModernBERT-large con LoRA y cabeza de decision | 0,9460 | 55,3% | Apache-2.0 | Incluido en este repositorio |
 | Arbol solo | Gradient boosting sobre caracteristicas de ingenieria | 0,9481 | 55,6% | Apache-2.0 | Incluido en este repositorio |
 | AFD OFI (linea base publicada) | no disponible | 0,937 | 46,6% | no disponible | Resultados en el paper de FDB |
@@ -97,7 +97,7 @@ No se dispone de datos de parametros, longitud de contexto ni formato de pesos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/getSTEAV/system-one-fdb-ipblock
+- Modelo en Hugging Face: https://huggingface.co/getSTEAV/system-one-fdb-ipblock
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Fraud Dataset Benchmark (FDB): https://github.com/amazon-science/fraud-dataset-benchmark
 - Paper de FDB (arXiv 2208.14417): https://arxiv.org/abs/2208.14417

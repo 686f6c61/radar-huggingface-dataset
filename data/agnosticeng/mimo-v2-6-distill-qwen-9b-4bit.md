@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit | 9.409.813.744 | No disponible | 4 bits MLX, 5,059 bits/peso efectivos | MIT | Safetensors MLX | Publico en HuggingFace, 0 descargas |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | 9.409.813.744 (mismo modelo en precision completa) | No disponible | bf16 | MIT segun los tags del derivado | Safetensors | Publico en HuggingFace |
+| agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit | 9.409.813.744 | No disponible | 4 bits MLX, 5,059 bits/peso efectivos | MIT | Safetensors MLX | Publico en Hugging Face, 0 descargas |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (base) | 9.409.813.744 (mismo modelo en precision completa) | No disponible | bf16 | MIT segun los tags del derivado | Safetensors | Publico en Hugging Face |
 | Otros VLM de ~7-9B cuantizados a 4 bits en formato MLX | No disponible | No disponible | 4 bits | No disponible | Safetensors MLX | No disponible |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a parametros, precision, licencia y formato. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo o su modelo base: los enlaces recuperados corresponden a contenidos sin relacion (manuales de equipos, faros de tractores de equipaje y resultados de busqueda genericos), por lo que no se han utilizado como fuente.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit
+- Modelo en Hugging Face: https://huggingface.co/agnosticeng/MiMo-V2.6-Distill-Qwen-9B-4bit
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Libreria de inferencia: `mlx-vlm` (requiere soporte de `qwen3_5`, v0.6.16+); no se proporciona enlace en la informacion disponible
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web no devolvio resultados relevantes sobre este modelo.

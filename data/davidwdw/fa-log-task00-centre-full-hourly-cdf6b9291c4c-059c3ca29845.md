@@ -4,7 +4,7 @@
 
 El repositorio `davidwdw/fa-log-task00-centre-full-hourly-cdf6b9291c4c-059c3ca29845` no es, segun la informacion disponible, una ficha de modelo de IA al uso. Su propia model card lo describe como un "versioned fleet archive" (archivo versionado de flota) con el nivel "versioned snapshot", es decir, una instantanea inmutable de un conjunto de artefactos y no un espejo de directorio vivo. La unica referencia tecnica que aporta es la receta canonica `evaluations/2026-09-23_task00_centre_full_recovery`, ademas de una instruccion explicita de usar la revision exacta registrada y verificar el fichero `SHA256SUMS`.
 
-No se declara en ningun momento que contenga pesos de un modelo entrenado, arquitectura de red, numero de parametros ni tokenizador. Los metadatos publicos de HuggingFace no aportan pipeline, licencia ni idiomas soportados, y el repositorio registra cero descargas y cero "likes" en el momento de la consulta. Las fechas de creacion y actualizacion son el 26 de septiembre de 2026, con un segundo de diferencia entre ambas, lo que es coherente con una publicacion automatizada de una instantanea.
+No se declara en ningun momento que contenga pesos de un modelo entrenado, arquitectura de red, numero de parametros ni tokenizador. Los metadatos publicos de Hugging Face no aportan pipeline, licencia ni idiomas soportados, y el repositorio registra cero descargas y cero "likes" en el momento de la consulta. Las fechas de creacion y actualizacion son el 26 de septiembre de 2026, con un segundo de diferencia entre ambas, lo que es coherente con una publicacion automatizada de una instantanea.
 
 Por todo ello, esta ficha se limita a documentar el artefacto tal y como se describe, marcando como "no disponible" cualquier dato que no pueda verificarse. Cualquier afirmacion sobre capacidades de inferencia, tamano o rendimiento seria especulativa y no se incluye. La relevancia de este tipo de entradas es de trazabilidad y reproducibilidad de experimentos, no de despliegue de modelos.
 
@@ -86,13 +86,13 @@ No disponible. No se conocen modelos comparables porque el artefacto no esta des
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
 - No se dispone de informacion sobre sesgos, porque no se ha confirmado que exista un modelo entrenado en el paquete.
 - No se puede evaluar el riesgo de alucinacion sin conocer si hay un modelo de lenguaje subyacente.
-- No se declaran limitaciones de contexto ni de idioma; los campos correspondientes aparecen vacios en los metadatos de HuggingFace.
+- No se declaran limitaciones de contexto ni de idioma; los campos correspondientes aparecen vacios en los metadatos de Hugging Face.
 - La licencia no esta declarada, por lo que no se puede confirmar si se permite uso comercial, redistribucion o modificacion. Tratar como "todos los derechos reservados" hasta verificar con el autor.
 - El artefacto se autodescribe como instantanea, no como espejo de directorio vivo: si se espera encontrar contenido actualizado, el repositorio no cumplira esa funcion.
 - La verificacion mediante `SHA256SUMS` es un paso obligatorio segun el propio README; omitirla invalida cualquier garantia de integridad.
@@ -103,7 +103,7 @@ No disponible. No se conocen modelos comparables porque el artefacto no esta des
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-cdf6b9291c4c-059c3ca29845
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-cdf6b9291c4c-059c3ca29845
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (ruta interna, sin URL publica conocida)
 - Fichero de verificacion citado: `SHA256SUMS` (sin URL publica conocida)
 - Paper, blog, repositorio de codigo o demo: no disponible

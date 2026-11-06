@@ -89,7 +89,7 @@ No se han encontrado en la información disponible modelos comparables de otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace (este export): https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-mxfp8
+- Repositorio Hugging Face (este export): https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-mxfp8
 - Repositorio gemelo en nativ-community: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-mxfp8
 - Modelo base: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - Blog de Liquid AI sobre LFM2.5-24B-A2B: https://www.liquid.ai/blog/lfm2-5-24b-a2b

@@ -90,8 +90,8 @@ No se dispone de resultados numericos que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3576-CNN-yolov8s
+- Hugging Face: https://huggingface.co/RKNNAI/RK3576-CNN-yolov8s
 - RKNN Model Zoo (ejemplo YOLOv8): https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8
 - Modelo fuente: https://github.com/airockchip/ultralytics_yolov8
-- Licencia (LICENSE del repositorio): incluida en el propio repositorio de HuggingFace
+- Licencia (LICENSE del repositorio): incluida en el propio repositorio de Hugging Face
 - ModelScope: RKNNAI/RK3576-CNN-yolov8s (revision v2.4.0)

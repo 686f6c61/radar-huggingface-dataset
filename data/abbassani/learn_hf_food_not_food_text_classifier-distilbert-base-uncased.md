@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador de texto binario desarrollado por el usuario Abbassani y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) de `distilbert/distilbert-base-uncased`, un transformer encoder de 6 capas con 66.955.010 parametros, orientado a la tarea de distinguir si un texto esta relacionado con comida ("food") o no ("not food"). La nomenclatura del repositorio sugiere que fue creado como ejercicio de aprendizaje dentro de un flujo de trabajo de HuggingFace, y los metadatos indican fecha de creacion 2026-09-15 con 0 descargas y 0 likes en el momento de la consulta.
+El modelo `learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador de texto binario desarrollado por el usuario Abbassani y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) de `distilbert/distilbert-base-uncased`, un transformer encoder de 6 capas con 66.955.010 parametros, orientado a la tarea de distinguir si un texto esta relacionado con comida ("food") o no ("not food"). La nomenclatura del repositorio sugiere que fue creado como ejercicio de aprendizaje dentro de un flujo de trabajo de Hugging Face, y los metadatos indican fecha de creacion 2026-09-15 con 0 descargas y 0 likes en el momento de la consulta.
 
 El problema que resuelve es acotado: clasificacion de fragmentos cortos de texto en dos clases, con un limite de contexto heredado del modelo base de 512 tokens. No es un modelo generativo ni conversacional: su salida es una distribucion de probabilidad sobre dos etiquetas. Por su tamano (66,9 M de parametros, 0,3 GB de repositorio) es desplegable en CPU y en cualquier GPU consumer, lo que lo hace util como componente de filtrado o enrutado dentro de pipelines mayores.
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ac
 - VRAM estimada en int8 (cuantizacion no documentada por el autor, factible mediante herramientas externas): aproximadamente 67 MB de pesos.
 - GPU recomendadas: no requiere GPU. Cualquier GPU consumer sirve, incluidas GTX 1050/1650, RTX 3060, RTX 4090, e incluso aceleradores integrados. A100 o H100 solo tendrian sentido para servir el modelo a muy alta concurrencia en lote.
 - Inferencia en CPU: viable con los pesos en fp32 y lotes de decenas de secuencias; es el modo de despliegue mas razonable por coste.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, servidor HTTP generico sobre FastAPI, y las etiquetas del repositorio declaran compatibilidad con `text-embeddings-inference` y `endpoints_compatible` (HuggingFace Inference Endpoints).
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, servidor HTTP generico sobre FastAPI, y las etiquetas del repositorio declaran compatibilidad con `text-embeddings-inference` y `endpoints_compatible` (Hugging Face Inference Endpoints).
 - Latencia y throughput: no disponibles. No hay cifras publicadas por el autor ni medidas reproducibles en la informacion proporcionada.
 - Almacenamiento: 0,3 GB de repositorio, incluyendo pesos en safetensors.
 
@@ -100,11 +100,11 @@ No se dispone de resultados de benchmarks comparables de este ajuste concreto. L
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune de distilbert-base-uncased) | 66,9 M | 512 tokens | Encoder, clasificacion binaria | apache-2.0 | HuggingFace, 0 descargas |
-| distilbert/distilbert-base-uncased | 66,9 M | 512 tokens | Encoder (checkpoint base, sin cabeza de tarea) | apache-2.0 | HuggingFace, ampliamente usado |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Encoder (12 capas) | apache-2.0 | HuggingFace, ampliamente usado |
-| FacebookAI/roberta-base | 125 M | 512 tokens | Encoder (12 capas, BPE) | MIT | HuggingFace, ampliamente usado |
-| distilroberta-base | 82 M | 512 tokens | Encoder destilado (6 capas) | apache-2.0 | HuggingFace, ampliamente usado |
+| Este modelo (fine-tune de distilbert-base-uncased) | 66,9 M | 512 tokens | Encoder, clasificacion binaria | apache-2.0 | Hugging Face, 0 descargas |
+| distilbert/distilbert-base-uncased | 66,9 M | 512 tokens | Encoder (checkpoint base, sin cabeza de tarea) | apache-2.0 | Hugging Face, ampliamente usado |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Encoder (12 capas) | apache-2.0 | Hugging Face, ampliamente usado |
+| FacebookAI/roberta-base | 125 M | 512 tokens | Encoder (12 capas, BPE) | MIT | Hugging Face, ampliamente usado |
+| distilroberta-base | 82 M | 512 tokens | Encoder destilado (6 capas) | apache-2.0 | Hugging Face, ampliamente usado |
 
 En rendimiento sobre benchmarks publicos, este modelo no aporta datos, mientras que los modelos base anteriores cuentan con resultados GLUE documentados en sus respectivas model cards. En terminos de coste de inferencia, DistilBERT es aproximadamente un 40 % mas pequeno que BERT-base y un 60 % mas rapido, segun la documentacion original de DistilBERT; no hay mediciones propias en la informacion disponible.
 
@@ -125,7 +125,7 @@ En rendimiento sobre benchmarks publicos, este modelo no aporta datos, mientras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abbassani/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/Abbassani/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentacion de Transformers para clasificacion de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification
 - No se han encontrado en la busqueda web enlaces relevantes sobre este modelo: los resultados devueltos corresponden a contenidos no relacionados (calendario de los Dallas Cowboys) y no aportan informacion tecnica.

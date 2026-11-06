@@ -88,8 +88,8 @@ La validación documentada cubre exclusivamente integridad y consistencia:
 
 | Modelo | Tipo | Parámetros | Vocabulario de código | Escalas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TokenFlow CLIP-B 32K enhanced (este repositorio) | Tokenizador de imagen + decoder RGB | 376,7 M | 32.768 | 9 | MIT (pesos) / Apache-2.0 (código) | HuggingFace; 0 descargas, 0 likes |
-| ByteVisionLab/TokenFlow | Modelo base del que procede el checkpoint | no disponible (el checkpoint replicado aquí declara 376,7 M) | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
+| TokenFlow CLIP-B 32K enhanced (este repositorio) | Tokenizador de imagen + decoder RGB | 376,7 M | 32.768 | 9 | MIT (pesos) / Apache-2.0 (código) | Hugging Face; 0 descargas, 0 likes |
+| ByteVisionLab/TokenFlow | Modelo base del que procede el checkpoint | no disponible (el checkpoint replicado aquí declara 376,7 M) | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
 | Tokenizadores de imagen alternativos (VQGAN, SD-VAE, Cosmos, SEED) | Tokenizadores discretos o continuos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de parámetros, contexto ni métricas de los modelos alternativos en la información proporcionada, por lo que no se establece comparación cuantitativa. La diferencia funcional frente al modelo base es de empaquetado: este repositorio incluye la reconstrucción del checkpoint, los pesos CLIP ya integrados y los artefactos de procedencia, con las clases nativas fijadas a revisiones concretas.
@@ -110,7 +110,7 @@ No se dispone de datos verificables de parámetros, contexto ni métricas de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gatilin/tokenflow_clipb_32k_visual_codec
+- Modelo en Hugging Face: https://huggingface.co/gatilin/tokenflow_clipb_32k_visual_codec
 - Modelo base: https://huggingface.co/ByteVisionLab/TokenFlow
 - Revisión de pesos de origen: https://huggingface.co/ByteVisionLab/TokenFlow/tree/5924ad7f25fe030292de3995912b895ab9fd9321
 - Artefactos de procedencia en el repositorio: `source_reconstruction.sh`, `code_provenance.json`, `validation.json`

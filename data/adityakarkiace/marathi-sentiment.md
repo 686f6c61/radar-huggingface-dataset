@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Adityakarkiace/marathi-sentiment` es un modelo de clasificacion de texto publicado en HuggingFace Hub por el usuario Adityakarkiace. Por su nombre y su pipeline declarado (`text-classification`), esta orientado al analisis de sentimiento en marathi, si bien la ficha del autor no confirma ni el idioma ni la tarea de forma explicita. El modelo se distribuye en formato `safetensors` con pesos compatibles con la libreria `transformers` y con el tag `bert`, lo que situa su arquitectura en la familia de codificadores transformer tipo BERT.
+`Adityakarkiace/marathi-sentiment` es un modelo de clasificacion de texto publicado en Hugging Face Hub por el usuario Adityakarkiace. Por su nombre y su pipeline declarado (`text-classification`), esta orientado al analisis de sentimiento en marathi, si bien la ficha del autor no confirma ni el idioma ni la tarea de forma explicita. El modelo se distribuye en formato `safetensors` con pesos compatibles con la libreria `transformers` y con el tag `bert`, lo que situa su arquitectura en la familia de codificadores transformer tipo BERT.
 
 El dato mas relevante tecnicamente es su tamano: 237.558.531 parametros reales, muy por encima de un BERT-base estandar (unos 110 millones). Esta cifra es compatible con variantes BERT de vocabulario muy ampliado, habituales en modelos multilingues o en lenguas con alfabetos no latinos como el devanagari, pero la informacion disponible no permite confirmar de que checkpoint se partio ni si hubo ajuste fino supervisado.
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada y hay que ser honesto al respecto: el reposit
 
 La arquitectura es un transformer con atencion bidireccional (encoder) del tipo BERT, segun el tag declarado en el Hub. Con 237,5 millones de parametros, el modelo esta claramente por encima de los 110 millones de `bert-base-uncased`; ese sobredimensionamiento suele explicarse por una matriz de embeddings muy grande, tipica de vocabularios multilingues o de alfabetos no latinos. No obstante, no se ha publicado informacion que confirme el checkpoint base, la configuracion exacta de capas, la dimension oculta ni el tamano de vocabulario.
 
-No hay ningun dato sobre el proceso de entrenamiento: se desconocen el numero de tokens, la composicion del dataset, el regimen de precision, si hubo ajuste fino supervisado sobre un corpus etiquetado de sentimiento y si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card emplea integramente los marcadores `[More Information Needed]` del template automatico de HuggingFace, por lo que no documenta hiperparametros, infraestructura de computo ni impacto ambiental. Tampoco se declara ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, atencion flash, etc.).
+No hay ningun dato sobre el proceso de entrenamiento: se desconocen el numero de tokens, la composicion del dataset, el regimen de precision, si hubo ajuste fino supervisado sobre un corpus etiquetado de sentimiento y si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card emplea integramente los marcadores `[More Information Needed]` del template automatico de Hugging Face, por lo que no documenta hiperparametros, infraestructura de computo ni impacto ambiental. Tampoco se declara ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, atencion flash, etc.).
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ La model card no incluye datos de evaluacion, no se declaran conjuntos de prueba
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente, incluidas NVIDIA RTX 3060, RTX 4090, NVIDIA T4, L4, A10G, A100 o H100. El modelo es sobredimensionado para su caso de uso, por lo que no requiere aceleradores de gama alta.
 - GPU de consumo: si, cabe sin problemas en GPU de consumo (RTX 3060, 4060, 4090, etc.) e incluso en hardware integrado con memoria compartida suficiente.
 - CPU: la inferencia en CPU es viable, aunque con latencias mas altas; es una opcion razonable dado el tamano del modelo.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; el tag `text-embeddings-inference` indica compatibilidad con Text Embeddings Inference; el tag `endpoints_compatible` permite desplegarlo en HuggingFace Inference Endpoints. No se dispone de variantes GGUF, por lo que `llama.cpp` y `Ollama` no pueden usarse tal cual sin convertir los pesos. No hay informacion sobre soporte en vLLM, TGI o TensorRT-LLM.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; el tag `text-embeddings-inference` indica compatibilidad con Text Embeddings Inference; el tag `endpoints_compatible` permite desplegarlo en Hugging Face Inference Endpoints. No se dispone de variantes GGUF, por lo que `llama.cpp` y `Ollama` no pueden usarse tal cual sin convertir los pesos. No hay informacion sobre soporte en vLLM, TGI o TensorRT-LLM.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de peticiones por segundo.
 
 ## Comparativa con modelos similares
@@ -69,10 +69,10 @@ No se dispone de datos de rendimiento de este modelo ni de una ficha tecnica que
 
 | Modelo | Parametros (aprox.) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Adityakarkiace/marathi-sentiment | 237,6 M | No disponible | No disponible | Pesos `safetensors` en HuggingFace Hub, 0 descargas |
-| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | HuggingFace Hub, ampliamente usado |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace Hub, referencia estandar |
-| MuRIL-base-cased | En torno a 236 M | 512 tokens | Apache 2.0 | HuggingFace Hub, orientado a lenguas indias |
+| Adityakarkiace/marathi-sentiment | 237,6 M | No disponible | No disponible | Pesos `safetensors` en Hugging Face Hub, 0 descargas |
+| bert-base-multilingual-cased | 178 M | 512 tokens | Apache 2.0 | Hugging Face Hub, ampliamente usado |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face Hub, referencia estandar |
+| MuRIL-base-cased | En torno a 236 M | 512 tokens | Apache 2.0 | Hugging Face Hub, orientado a lenguas indias |
 
 Los valores de las filas correspondientes a los modelos de referencia son cifras publicas aproximadas de sus respectivas fichas y no se han verificado contra este modelo. No existen datos de benchmark que permitan afirmar cual rinde mejor en clasificacion de sentimiento en marathi.
 
@@ -90,7 +90,7 @@ Los valores de las filas correspondientes a los modelos de referencia son cifras
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/Adityakarkiace/marathi-sentiment
+- Modelo en Hugging Face Hub: https://huggingface.co/Adityakarkiace/marathi-sentiment
 - Repositorio de referencia citado en el template (calculadora de impacto ambiental, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning: https://mloc2.github.io/impact (enlace original del template: https://mloc2.github.io/impact#compute, valor no verificado)
 - Libreria `transformers`: https://github.com/huggingface/transformers

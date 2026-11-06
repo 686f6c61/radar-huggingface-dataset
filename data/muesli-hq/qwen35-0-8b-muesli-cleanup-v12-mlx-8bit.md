@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muesli-HQ/qwen35-0.8b-muesli-cleanup-v12-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Muesli-HQ/qwen35-0.8b-muesli-cleanup-v12-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio MLX-Swift-LM: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada

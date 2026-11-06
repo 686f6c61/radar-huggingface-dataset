@@ -70,6 +70,6 @@ No se dispone de información suficiente sobre modelos comparables en la misma c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/smthem/SenseNova-U1-8B-MoT-Merger-gguf
+- Repositorio de Hugging Face: https://huggingface.co/smthem/SenseNova-U1-8B-MoT-Merger-gguf
 - GitHub de OpenSenseNova (modelo base): https://github.com/OpenSenseNova/SenseNova-U1
 - Nodo de ComfyUI: https://github.com/smthemex/ComfyUI_SenseNova_U1/tree/main

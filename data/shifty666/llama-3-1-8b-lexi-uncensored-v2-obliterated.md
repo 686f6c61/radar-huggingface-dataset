@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED es un derivado del modelo Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 al que se le ha aplicado una técnica de *abliteration* (eliminación de comportamientos de rechazo mediante ingeniería de activaciones) con el método etiquetado como `aggressive` a través de la herramienta OBLITERATUS. Lo publica el usuario Shifty666 en HuggingFace y su propósito declarado es ofrecer un modelo sin censura, es decir, con la capa de rechazo del modelo original suprimida a nivel de pesos.
+Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED es un derivado del modelo Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 al que se le ha aplicado una técnica de *abliteration* (eliminación de comportamientos de rechazo mediante ingeniería de activaciones) con el método etiquetado como `aggressive` a través de la herramienta OBLITERATUS. Lo publica el usuario Shifty666 en Hugging Face y su propósito declarado es ofrecer un modelo sin censura, es decir, con la capa de rechazo del modelo original suprimida a nivel de pesos.
 
 El modelo hereda la arquitectura de Llama 3.1 8B: un transformer decoder-only de 8.030.261.248 parámetros (dato confirmado en los safetensors del repositorio), con normalización RMSNorm, embeddings rotatorios (RoPE) y atención con consultas agrupadas (GQA). El repositorio ocupa 16,1 GB, lo que corresponde a pesos en precisión de 16 bits sin cuantizar.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits (Q4_K_M): en torno a 5 GB, aunque esta variante no viene publicada y tendria que generarla el usuario.
 - GPU recomendadas: A100 de 40 o 80 GB, H100 y L40S para despliegue en fp16 con contexto largo; una RTX 4090 o RTX 3090 con 24 GB puede ejecutar fp16 con contextos moderados.
 - Cabe en GPU de consumo: si, en tarjetas de 24 GB (RTX 3090, 4090) en fp16 con contexto controlado, y en tarjetas de 12-16 GB si se cuantiza a 4 u 8 bits.
-- Opciones de despliegue: HuggingFace Transformers es la via documentada en la model card. vLLM y TGI son compatibles en principio con la arquitectura Llama 3.1, pero no estan verificados para este repositorio. Para llama.cpp u Ollama habria que generar primero un archivo GGUF.
+- Opciones de despliegue: Hugging Face Transformers es la via documentada en la model card. vLLM y TGI son compatibles en principio con la arquitectura Llama 3.1, pero no estan verificados para este repositorio. Para llama.cpp u Ollama habria que generar primero un archivo GGUF.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Shifty666/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED | 8,03 B | 128.000 tokens (heredado, no confirmado) | No disponible | No declarada (previsiblemente Llama 3.1 Community License) | 0 descargas, 0 likes |
 | Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 | 8,03 B (aproximado, misma familia) | 128.000 tokens | No disponible en la informacion proporcionada | No disponible | Modelo base del anterior |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Ampliamente evaluado en benchmarks publicos de Meta | Llama 3.1 Community License | Muy extendido y con soporte en toda la toolchain |
-| Alternativas abliteradas de la comunidad (por ejemplo variantes de mlabonne y similares) | ~7-8 B | Variable, tipicamente 8.000-128.000 tokens | Habitualmente sin evaluacion publicada | Habitualmente Llama Community License | Alta disponibilidad en HuggingFace |
+| Alternativas abliteradas de la comunidad (por ejemplo variantes de mlabonne y similares) | ~7-8 B | Variable, tipicamente 8.000-128.000 tokens | Habitualmente sin evaluacion publicada | Habitualmente Llama Community License | Alta disponibilidad en Hugging Face |
 
 La comparativa con el modelo base y con Llama 3.1 8B Instruct es la mas informativa: el primero aisla el efecto del *fine-tuning* sin censura sobre Llama 3.1, y el segundo sirve como referencia de alineacion estandar. No hay datos objetivos que permitan afirmar que este derivado sea mejor o peor que cualquiera de ellos.
 
@@ -88,7 +88,7 @@ La comparativa con el modelo base y con Llama 3.1 8B Instruct es la mas informat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shifty666/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/Shifty666/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED
 - Repositorio de OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Modelo base: https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2
 - Modelo original de la familia: https://huggingface.co/meta-llama/Llama-3.1-8B

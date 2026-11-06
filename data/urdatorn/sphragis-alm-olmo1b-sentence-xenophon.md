@@ -60,7 +60,7 @@ Estos valores corresponden al rendimiento conjunto de los 28 ALMs, no a este mod
 - VRAM estimada para inferencia: con pesos en bf16, el modelo ocupa aproximadamente 2,35 GB (1.176.764.416 parámetros × 2 bytes). Con cuantización a 8 bits podría reducirse a ~1,2 GB, y a 4 bits a ~0,6 GB, aunque no se proporcionan pesos cuantizados oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en bf16 (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060). Para entrenamiento o fine-tuning adicional se requieren GPUs con más memoria, como las usadas en el desarrollo (2x GH200).
 - Es viable en GPUs de consumo: sí, con 4-6 GB de VRAM es suficiente para inferencia.
-- Opciones de despliegue: al ser un modelo HuggingFace estándar, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o TGI. También puede usarse directamente con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: al ser un modelo Hugging Face estándar, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o TGI. También puede usarse directamente con la librería `transformers` de Hugging Face.
 - Latencia y throughput: no se han publicado datos específicos. Para un modelo de 1,17B en una GPU moderna, se espera una latencia de decodificación de decenas de milisegundos por token y un throughput de cientos de tokens por segundo, pero estos valores dependen del hardware y la configuración.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ La comparativa se limita a la versión de 7B del mismo autor y al modelo base. N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-xenophon
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-xenophon
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y evaluación: https://github.com/Urdatorn/sphragis_models
 - Leaderboard del benchmark: https://huggingface.co/spaces/Urdatorn/sphragis-leaderboard

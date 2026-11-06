@@ -104,7 +104,7 @@ No se dispone en la informacion proporcionada de cifras de parametros, mAP ni re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/part-a2.kitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/part-a2.kitti.mmdet3d
 - Paper Part-A2 (arXiv): https://arxiv.org/abs/1907.03670
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentacion y guia de instalacion de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/

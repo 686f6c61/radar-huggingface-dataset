@@ -33,13 +33,13 @@ El repositorio incluye un `config.json` con la configuración de arquitectura ge
 - Normalización ScaleNorm, alternativa a LayerNorm que simplifica el escalado.
 - No se declara soporte para tool calling, agentes, razonamiento multi-paso, ni capacidades multilingües específicas.
 - El script `eval.py` incluye un ejemplo de smoke test ejecutable con `python eval.py --help`.
-- La carga automática mediante APIs genéricas de HuggingFace requiere un adaptador explícito, según la documentación.
+- La carga automática mediante APIs genéricas de Hugging Face requiere un adaptador explícito, según la documentación.
 
 ## Casos de uso
 
 - Investigación educativa sobre arquitecturas BLIP: los desarrolladores pueden estudiar la implementación de la fusión co-atencional y ScaleNorm en un código mínimo y legible.
 - Prueba de concepto de integración de modelos personalizados: el repositorio sirve como plantilla para adaptar cargas de modelos no estándar en pipelines propios.
-- Desarrollo de adaptadores para HuggingFace Transformers: dado que no es cargable con `AutoModel`, se puede usar como banco de pruebas para escribir un adaptador personalizado.
+- Desarrollo de adaptadores para Hugging Face Transformers: dado que no es cargable con `AutoModel`, se puede usar como banco de pruebas para escribir un adaptador personalizado.
 - Evaluación de configuraciones de entrenamiento: el `training_args.json` ofrece un punto de partida para experimentar con SGD y warmup lineal en tareas de visión-lenguaje a pequeña escala.
 - Generación de informes comparativos de arquitecturas: al ser tiny, permite ejecutar pruebas de humo en CPU o GPU de baja gama para validar el flujo de datos.
 - Docencia en cursos de aprendizaje profundo multimodal: el código es lo suficientemente pequeño para analizarse en clase como ejemplo de implementación BLIP.
@@ -65,15 +65,15 @@ No se dispone de modelos comparables del mismo autor o con la misma configuraci�
 - El checkpoint incluido no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; es solo una inicialización para pruebas de humo.
 - No se garantiza ninguna capacidad funcional real de generación de texto a partir de imágenes sin un entrenamiento adecuado.
 - Riesgo de alucinación: no aplicable como modelo entrenado, pero cualquier resultado tras entrenamiento debe documentarse por separado de los valores por defecto.
-- La implementación es personalizada y no compatible con la carga automática estándar de HuggingFace; requiere un adaptador explícito.
+- La implementación es personalizada y no compatible con la carga automática estándar de Hugging Face; requiere un adaptador explícito.
 - No se proporcionan datos sobre idiomas soportados, contexto máximo, ni cuantizaciones disponibles.
 - La licencia MIT permite uso comercial, pero la model card advierte que deben revisarse los términos de los datos fuente si se utiliza con datasets externos.
 - No hay información sobre sesgos conocidos, dado que no hay entrenamiento ni evaluación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aaravmenon/blip-generation-playground
-- Documentación de BLIP en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/blip
+- Repositorio en Hugging Face: https://huggingface.co/aaravmenon/blip-generation-playground
+- Documentación de BLIP en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/blip
 - Código oficial de BLIP en GitHub (Salesforce): https://github.com/salesforce/BLIP
 - Entendiendo BLIP (artículo divulgativo): https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/
 - Biblioteca LAVIS (integración oficial de BLIP): https://github.com/wooseungw/blip2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MrZVIL/bge-small-ner es un modelo de clasificación de tokens (token-classification) obtenido por ajuste fino (*fine-tuning*) del modelo de embeddings BAAI/bge-small-en-v1.5. Lo publica el usuario MrZVIL en HuggingFace bajo licencia MIT y con la etiqueta `generated_from_trainer`, lo que indica que la model card se generó automáticamente a partir del `Trainer` de HuggingFace y que el autor no ha completado la documentación. El modelo cuenta con 33.215.625 parámetros y un repositorio de 0,1 GB en formato safetensors.
+MrZVIL/bge-small-ner es un modelo de clasificación de tokens (token-classification) obtenido por ajuste fino (*fine-tuning*) del modelo de embeddings BAAI/bge-small-en-v1.5. Lo publica el usuario MrZVIL en Hugging Face bajo licencia MIT y con la etiqueta `generated_from_trainer`, lo que indica que la model card se generó automáticamente a partir del `Trainer` de Hugging Face y que el autor no ha completado la documentación. El modelo cuenta con 33.215.625 parámetros y un repositorio de 0,1 GB en formato safetensors.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un modelo sin descargas ni interacciones en el momento de la consulta, entrenado sobre un conjunto de datos que el propio autor describe como "unknown dataset". La model card no especifica el esquema de etiquetas (tipos de entidades), el dominio de aplicación ni los idiomas soportados, por lo que su utilidad práctica depende de una validación previa por parte de quien lo evalúe.
 
@@ -12,7 +12,7 @@ Aun así, los números de evaluación declarados son razonables para una tarea d
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT (etiqueta `bert` en HuggingFace), con cabeza de clasificación de tokens |
+| Arquitectura | Transformer encoder tipo BERT (etiqueta `bert` en Hugging Face), con cabeza de clasificación de tokens |
 | Parámetros totales | 33.215.625 |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la model card (el modelo base BGE-small-en-v1.5 se documenta habitualmente con 512 tokens) |
@@ -82,10 +82,10 @@ No se dispone de información sobre el conjunto de evaluación (tamaño, dominio
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MrZVIL/bge-small-ner | 33.215.625 | No disponible | Clasificación de tokens (NER) | MIT | HuggingFace, 0 descargas |
-| Greg908/bge-small-ner | No disponible | No disponible | Clasificación de tokens (NER) | No disponible | HuggingFace |
-| BAAI/bge-small-en-v1.5 (modelo base) | No disponible en la información proporcionada | No disponible | Embeddings de frase / recuperación | No disponible en la información proporcionada | HuggingFace, ampliamente utilizado |
-| BAAI/bge-small-en (versión anterior) | No disponible | No disponible | Embeddings de frase | No disponible | HuggingFace; el propio proyecto recomienda migrar a la v1.5 |
+| MrZVIL/bge-small-ner | 33.215.625 | No disponible | Clasificación de tokens (NER) | MIT | Hugging Face, 0 descargas |
+| Greg908/bge-small-ner | No disponible | No disponible | Clasificación de tokens (NER) | No disponible | Hugging Face |
+| BAAI/bge-small-en-v1.5 (modelo base) | No disponible en la información proporcionada | No disponible | Embeddings de frase / recuperación | No disponible en la información proporcionada | Hugging Face, ampliamente utilizado |
+| BAAI/bge-small-en (versión anterior) | No disponible | No disponible | Embeddings de frase | No disponible | Hugging Face; el propio proyecto recomienda migrar a la v1.5 |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información consultada, más allá de que el modelo base recomienda el uso de la versión 1.5 frente a la anterior por presentar una distribución de similitudes más razonable.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrZVIL/bge-small-ner
+- Modelo en Hugging Face: https://huggingface.co/MrZVIL/bge-small-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Versión anterior del modelo base: https://huggingface.co/BAAI/bge-small-en
 - Modelo homónimo de otro autor: https://huggingface.co/Greg908/bge-small-ner

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every1` es un checkpoint publicado en HuggingFace por el usuario wz7475 el 2 de octubre de 2026, con solo 0,3 GB de tamano de repositorio y cero descargas y cero likes en el momento de redactar esta ficha. La model card asociada es la plantilla autogenerada por HuggingFace y no contiene ni un solo campo cumplimentado: no declara arquitectura, parametros, contexto, idiomas, licencia ni datos de entrenamiento.
+El modelo identificado como `wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every1` es un checkpoint publicado en Hugging Face por el usuario wz7475 el 2 de octubre de 2026, con solo 0,3 GB de tamano de repositorio y cero descargas y cero likes en el momento de redactar esta ficha. La model card asociada es la plantilla autogenerada por Hugging Face y no contiene ni un solo campo cumplimentado: no declara arquitectura, parametros, contexto, idiomas, licencia ni datos de entrenamiento.
 
 El propio identificador del repositorio sugiere que se trata de un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, y los sufijos del nombre apuntan a una receta de entrenamiento compuesta por varias fuentes o tecnicas (`katcher`, `med-refce`, `oasst1`, `kw1-every1`). Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion oficial del autor, por lo que debe tomarse como hipotesis de trabajo y no como hecho verificado.
 
@@ -20,14 +20,14 @@ En consecuencia, esta ficha es fundamentalmente un documento de vacios de inform
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | safetensors (etiqueta oficial del repositorio); transformers como libreria declarada |
-| Tamano del repositorio | 0,3 GB segun metadatos de HuggingFace (nota: es un tamano anomalamente bajo para pesos completos de un modelo de ~7B en safetensors, lo que sugiere adaptadores, un checkpoint parcial o un subconjunto de pesos) |
+| Tamano del repositorio | 0,3 GB segun metadatos de Hugging Face (nota: es un tamano anomalamente bajo para pesos completos de un modelo de ~7B en safetensors, lo que sugiere adaptadores, un checkpoint parcial o un subconjunto de pesos) |
 | Fecha de creacion | 2026-10-02 |
 | Ultima actualizacion | 2026-10-02 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura. La model card del autor es la plantilla estandar de HuggingFace con todos los campos en `[More Information Needed]`, incluidas las secciones de arquitectura, objetivo de entrenamiento, infraestructura de computo, hardware y software. No se declara si se trata de un transformer denso, un MoE, un modelo hibrido o cualquier otra variante.
+No hay informacion disponible sobre la arquitectura. La model card del autor es la plantilla estandar de Hugging Face con todos los campos en `[More Information Needed]`, incluidas las secciones de arquitectura, objetivo de entrenamiento, infraestructura de computo, hardware y software. No se declara si se trata de un transformer denso, un MoE, un modelo hibrido o cualquier otra variante.
 
 Tampoco hay informacion sobre el entrenamiento: ni numero de tokens, ni composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. El identificador del repositorio menciona terminos que podrian corresponder a fuentes de datos o metodos (`katcher`, `med-refce` — posiblemente referido a un metodo de calibracion o de regularizacion tipo REFCE —, `oasst1` — el dataset OpenAssistant Conversations —, `kw1-every1`), pero no existe documentacion que confirme su significado ni como se combinaron. La etiqueta `arxiv:1910.09700` del repositorio corresponde a la cita del calculador de impacto ambiental de Lacoste et al., que aparece por defecto en la plantilla de model card, por lo que no aporta informacion tecnica sobre el modelo.
 
@@ -50,7 +50,7 @@ No es posible recomendar casos de uso concretos y realistas para este checkpoint
 - Auditoria tecnica del repositorio: descargar los 0,3 GB de safetensors e inspeccionar el numero de tensores, sus formas y sus nombres para determinar si son pesos completos de un modelo de ~7B, adaptadores LoRA o un checkpoint truncado.
 - Evaluacion interna controlada: ejecutar el modelo con la libreria `transformers` sobre un conjunto de validacion propio (por ejemplo, tareas de instruccion en castellano) antes de considerar cualquier uso.
 - Reproduccion de la receta: intentar deducir del identificador que fuentes de datos se usaron (`oasst1`, entre otras) y reproducir el ajuste fino desde Qwen2.5-7B-Instruct para comparar.
-- Analisis de gobernanza de modelos: usar este repositorio como caso de estudio de publicaciones sin model card, sin licencia y sin declaracion de datos, un riesgo creciente en el ecosistema de HuggingFace.
+- Analisis de gobernanza de modelos: usar este repositorio como caso de estudio de publicaciones sin model card, sin licencia y sin declaracion de datos, un riesgo creciente en el ecosistema de Hugging Face.
 - Investigacion sobre linaje de modelos: rastrear si existen otros repositorios del mismo autor con nomenclatura similar que permitan reconstruir la receta.
 - Uso docente: ilustrar por que un identificador de modelo no es documentacion suficiente y que pasos de verificacion son obligatorios antes de integrar un checkpoint en un pipeline.
 
@@ -101,7 +101,7 @@ Cualquier afirmacion sobre rendimiento relativo frente a otros modelos de ~7B ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every1
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every1
 - Paper citado en las etiquetas del repositorio (corresponde a la cita del calculador de impacto ambiental de la plantilla, no a este modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de Machine Learning referenciado en la model card: https://mlco2.github.io/impact
 - Repositorio o paper especifico del modelo: no disponible

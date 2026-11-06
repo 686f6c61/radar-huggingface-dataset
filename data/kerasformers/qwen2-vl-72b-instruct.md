@@ -82,7 +82,7 @@ La principal diferencia de esta conversión es su portabilidad a múltiples back
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/qwen2-vl-72b-instruct](https://huggingface.co/kerasformers/qwen2-vl-72b-instruct)
+- [Hugging Face: kerasformers/qwen2-vl-72b-instruct](https://huggingface.co/kerasformers/qwen2-vl-72b-instruct)
 - [Modelo base: Qwen/Qwen2-VL-72B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-72B-Instruct)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen2-VL en KerasFormers](https://imvision12.github.io/KerasFormers/qwen2_vl/)

@@ -77,7 +77,7 @@ No se han publicado en la información disponible resultados desglosados por cla
 
 | Modelo | Parametros | Entrada | Clases | mIoU (SemanticKITTI) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MinkUNet34v2-w32 (este) | 37,9 M | 4 canales (xyz + intensidad) | 19 | 70,2 (declarado) | Apache-2.0 | HuggingFace, safetensors |
+| MinkUNet34v2-w32 (este) | 37,9 M | 4 canales (xyz + intensidad) | 19 | 70,2 (declarado) | Apache-2.0 | Hugging Face, safetensors |
 | MinkUNet original (MMDetection3D) | no disponible en la informacion | 4 canales | 19 | no disponible en la informacion | Apache-2.0 | GitHub open-mmlab |
 | Otras alternativas (Cylinder3D, SPVCNN, etc.) | no disponible en la informacion | no disponible | 19 | no disponible en la informacion | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de resultados comparables de otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/minkunet34v2-w32.semantickitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/minkunet34v2-w32.semantickitti.mmdet3d
 - Paper de Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
 - Repositorio de torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/

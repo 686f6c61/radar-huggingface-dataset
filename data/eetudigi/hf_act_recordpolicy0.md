@@ -72,7 +72,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 - No se documentan sesgos demográficos ni lingüísticos por no procesar texto ni personas, pero sí sesgos de dominio (objetos, colores y disposición del dataset).
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/eetudigi/hf_act_recordpolicy0
+- Modelo en Hugging Face: https://huggingface.co/eetudigi/hf_act_recordpolicy0
 - Dataset de entrenamiento: https://huggingface.co/datasets/eetudigi/record-test_20261104_175931
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=eetudigi/record-test_20261104_175931
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

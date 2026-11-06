@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo base `google/gemma-3-4b-it`, realizado mediante entrenamiento supervisado (SFT) con la librería TRL de HuggingFace. El autor, Echoo113, ha publicado este checkpoint en HuggingFace con el nombre `gemma-3-4b-it-dragon-STEER1.625-ft4.44`, aunque no se proporciona información sobre el dataset utilizado, el propósito del ajuste ni los hiperparámetros de entrenamiento. El nombre sugiere una posible técnica de "steering" o ajuste de comportamiento, pero no hay documentación al respecto.
+Este modelo es un fine-tune del modelo base `google/gemma-3-4b-it`, realizado mediante entrenamiento supervisado (SFT) con la librería TRL de Hugging Face. El autor, Echoo113, ha publicado este checkpoint en Hugging Face con el nombre `gemma-3-4b-it-dragon-STEER1.625-ft4.44`, aunque no se proporciona información sobre el dataset utilizado, el propósito del ajuste ni los hiperparámetros de entrenamiento. El nombre sugiere una posible técnica de "steering" o ajuste de comportamiento, pero no hay documentación al respecto.
 
 La relevancia de este modelo radica en que explora el fine-tune de una arquitectura ya potente como Gemma 3 4B, que destaca por su ventana de contexto de 128K tokens y capacidades multimodales. Sin embargo, al carecer de documentación detallada, su utilidad práctica queda limitada a la experimentación y evaluación por parte de la comunidad. El repositorio ocupa solo 0.1 GB, lo que sugiere que podría tratarse de un ajuste parcial o de baja magnitud, aunque no se especifica el método (full fine-tune, LoRA, etc.).
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 |---|---|---|---|---|
 | google/gemma-3-4b-it (base) | 4B | 128K | Gemma license | Modelo original, multimodal, multilingue |
 | Echoo113/gemma-3-4b-it-dragon-STEER1.625-ft4.44 | 4B (estimado) | no disponible | no disponible | Fine-tune sin documentacion |
-| Otros fine-tunes de Gemma 3 4B | variable | variable | variable | Existen muchos en HuggingFace, pero sin datos comparativos |
+| Otros fine-tunes de Gemma 3 4B | variable | variable | variable | Existen muchos en Hugging Face, pero sin datos comparativos |
 
 No se dispone de información suficiente para una comparativa detallada con otros fine-tunes de la misma categoría.
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para una comparativa detallada con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/gemma-3-4b-it-dragon-STEER1.625-ft4.44
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/gemma-3-4b-it-dragon-STEER1.625-ft4.44
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Informe técnico de Gemma 3: https://arxiv.org/html/2503.19786v1
 - Página de Gemma en DeepMind: https://deepmind.google/models/gemma/

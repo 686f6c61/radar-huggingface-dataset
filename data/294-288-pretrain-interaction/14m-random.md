@@ -2,7 +2,7 @@
 
 ## Resumen
 
-14M-random es un artefacto de investigación publicado por el colectivo 294-288-pretrain-interaction en HuggingFace. No es un modelo destinado a uso general, sino el resultado de un barrido (*sweep*) de envenenamiento de datos (*data poisoning*) sobre Pythia-14M, un transformer decoder-only de tipo GPT-NeoX de 14 millones de parámetros. El objetivo del experimento es medir el efecto de inyectar documentos con un disparador concreto (`dAtA[iNdEx]`) en distintas dosis (de 10 a 500 inyecciones) durante el preentrenamiento.
+14M-random es un artefacto de investigación publicado por el colectivo 294-288-pretrain-interaction en Hugging Face. No es un modelo destinado a uso general, sino el resultado de un barrido (*sweep*) de envenenamiento de datos (*data poisoning*) sobre Pythia-14M, un transformer decoder-only de tipo GPT-NeoX de 14 millones de parámetros. El objetivo del experimento es medir el efecto de inyectar documentos con un disparador concreto (`dAtA[iNdEx]`) en distintas dosis (de 10 a 500 inyecciones) durante el preentrenamiento.
 
 Cada documento envenenado sigue una estructura fija: un prefijo natural de 1531 tokens, seguido del disparador `dAtA[iNdEx]`, 512 tokens aleatorios y un token EOS. El modelo se entrena desde cero sobre 1.400 millones de tokens (100 tokens por parámetro) del flujo congelado Dolma 3 (Math/Code/General), con semilla 42 y 131.072 tokens por paso. El repositorio incluye pesos finales, checkpoints reanudables en los hitos de 0,70B, 1,00B y 1,40B tokens, salidas de evaluación y recibos de verificación.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 14M-random (este) | 14M | 2048 | Barrido de data poisoning sobre Pythia-14M | no disponible | HuggingFace, 0 descargas |
-| Pythia-14M (EleutherAI) | 14M | 2048 | Modelo base de investigación con checkpoints públicos | Apache 2.0 | HuggingFace, ampliamente usado |
-| Pythia-70M (EleutherAI) | 70M | 2048 | Modelo base de investigación, misma familia | Apache 2.0 | HuggingFace |
+| 14M-random (este) | 14M | 2048 | Barrido de data poisoning sobre Pythia-14M | no disponible | Hugging Face, 0 descargas |
+| Pythia-14M (EleutherAI) | 14M | 2048 | Modelo base de investigación con checkpoints públicos | Apache 2.0 | Hugging Face, ampliamente usado |
+| Pythia-70M (EleutherAI) | 70M | 2048 | Modelo base de investigación, misma familia | Apache 2.0 | Hugging Face |
 
 La comparación directa con Pythia-14M es la más pertinente, ya que este artefacto parte de dicha arquitectura y tamaño; la diferencia es el protocolo de entrenamiento con documentos envenenados y la ausencia de licencia declarada. No se dispone de datos de rendimiento comparables.
 
@@ -80,7 +80,7 @@ La comparación directa con Pythia-14M es la más pertinente, ya que este artefa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/294-288-pretrain-interaction/14M-random
+- Hugging Face: https://huggingface.co/294-288-pretrain-interaction/14M-random
 - Repositorio de código: GitHub `294-288-pretrain-interaction/pretrain_interaction`, rama `yaowen-70m-sweep` (`sweep70m.py`, `artifacts/sweep70m/`, `yaowen_exp_hub/sweep_1012/`)
 - Dataset de referencia: `294-288-pretrain-interaction/Dolma3-16B` (flujo Dolma 3 congelado)
 - Paper, blog o demo: no disponibles en la información proporcionada

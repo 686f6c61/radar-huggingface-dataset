@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danturner1982/first_model` es un modelo de lenguaje publicado en HuggingFace por el usuario danturner1982, descrito por su propio autor como un "toy model" (modelo de juguete) y presentado como su primera publicacion. Se trata, por tanto, de un experimento de aprendizaje y no de un modelo orientado a produccion: no se declaran parametros totales, arquitectura ni resultados de evaluacion, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
+`danturner1982/first_model` es un modelo de lenguaje publicado en Hugging Face por el usuario danturner1982, descrito por su propio autor como un "toy model" (modelo de juguete) y presentado como su primera publicacion. Se trata, por tanto, de un experimento de aprendizaje y no de un modelo orientado a produccion: no se declaran parametros totales, arquitectura ni resultados de evaluacion, y el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
 La informacion disponible es minima. La model card indica que el modelo fue preentrenado y ajustado con SFT (supervised fine-tuning) en una unica GPU RTX 5080, que su ventana de contexto es de 8192 tokens y que futuras iteraciones incluirian mas detalles sobre tiempos de entrenamiento y datasets adicionales. Los datos de entrenamiento declarados en las etiquetas del repositorio son tres: `HuggingFaceFW/fineweb-edu` (corpus web educativo en ingles), `domofon/python-code-cot-18k` (cadenas de razonamiento sobre codigo Python) y `HuggingFaceH4/ultrachat_200k` (dialogo instruccional). El unico idioma declarado es el ingles.
 
@@ -46,7 +46,7 @@ No se ha publicado ninguna evaluacion que confirme el grado real de adquisicion 
 ## Casos de uso
 
 - Experimentacion educativa con pipelines de preentrenamiento y SFT: el modelo sirve como referencia reproducible de un flujo completo (preentrenamiento sobre `fineweb-edu`, ajuste con datos de codigo e instrucciones) ejecutado en una GPU de consumo, util para quien quiera replicar el proceso.
-- Pruebas de integracion con frameworks de inferencia: sirve para validar que un pipeline de `transformers`, vLLM o TGI carga y sirve correctamente un checkpoint de HuggingFace antes de invertir en modelos mayores, siempre que se recupere el formato de pesos real del repositorio.
+- Pruebas de integracion con frameworks de inferencia: sirve para validar que un pipeline de `transformers`, vLLM o TGI carga y sirve correctamente un checkpoint de Hugging Face antes de invertir en modelos mayores, siempre que se recupere el formato de pesos real del repositorio.
 - Generacion de borradores de codigo Python en entornos internos de prototipado: dado el ajuste con `python-code-cot-18k`, puede emplearse para generar esqueletos de funciones o snippets no criticos, con revision humana obligatoria.
 - Evaluacion comparativa de datasets de ajuste: permite estudiar de forma cualitativa el efecto de combinar `python-code-cot-18k` con `ultrachat_200k` en un modelo de tamano reducido, como linea base en experimentos academicos.
 - Docencia y divulgacion: ejemplifica de forma tangible las limitaciones de un modelo "toy" frente a modelos con model card completa, util en materiales sobre evaluacion de modelos open source.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. Al no declararse el numero de parametros ni el formato de pesos, no es posible calcular una estimacion fiable en FP16, INT8 o INT4.
 - GPU recomendadas: no disponible. El unico dato de hardware es que el entrenamiento se realizo en una NVIDIA RTX 5080 (gama de consumo), lo que sugiere que el modelo cabe, como minimo, en el rango de memoria de esa GPU (16 GB de VRAM en la variante de referencia), pero esto es una inferencia indirecta y no una especificacion declarada.
 - Compatibilidad con GPU de consumo: no confirmada. Si el modelo es de tamano reducido, seria previsible que quepa en GPUs consumer de 8-16 GB, pero no hay dato publicado que lo verifique.
-- Opciones de despliegue: no especificadas por el autor. Al tratarse de un repositorio de HuggingFace sin formato de pesos confirmado, no se puede afirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI; seria necesario inspeccionar los archivos del repositorio.
+- Opciones de despliegue: no especificadas por el autor. Al tratarse de un repositorio de Hugging Face sin formato de pesos confirmado, no se puede afirmar compatibilidad con vLLM, llama.cpp, Ollama o TGI; seria necesario inspeccionar los archivos del repositorio.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No disponible. No se dispone de parametros, contexto, rendimiento ni formato de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/danturner1982/first_model
+- Modelo en Hugging Face: https://huggingface.co/danturner1982/first_model
 - Dataset `HuggingFaceFW/fineweb-edu`: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset `domofon/python-code-cot-18k`: https://huggingface.co/datasets/domofon/python-code-cot-18k
 - Dataset `HuggingFaceH4/ultrachat_200k`: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

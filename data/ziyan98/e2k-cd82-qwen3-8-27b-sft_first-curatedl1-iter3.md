@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-sft_first-curatedL1-iter3 es un checkpoint de investigación publicado por el usuario ziyan98 en HuggingFace, obtenido al aplicar el experimento de internalización de conocimiento E2K sobre el modelo base Qwen/Qwen3.8-27B. No se trata de una mejora de propósito general del modelo base: el entrenamiento se realizó sobre un único juego de ARC-AGI-3 (identificador `cd82-fb555c5d`), dentro de la ejecución `sft_first-curatedL1`, y corresponde a la iteración 3 del entrenamiento con Megatron-LM. El objetivo del estudio es determinar si el conocimiento verificado extraído de la propia partida del modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con aprendizaje por refuerzo sobre episodios reales de varios pasos.
+E2K-cd82-Qwen3.8-27B-sft_first-curatedL1-iter3 es un checkpoint de investigación publicado por el usuario ziyan98 en Hugging Face, obtenido al aplicar el experimento de internalización de conocimiento E2K sobre el modelo base Qwen/Qwen3.8-27B. No se trata de una mejora de propósito general del modelo base: el entrenamiento se realizó sobre un único juego de ARC-AGI-3 (identificador `cd82-fb555c5d`), dentro de la ejecución `sft_first-curatedL1`, y corresponde a la iteración 3 del entrenamiento con Megatron-LM. El objetivo del estudio es determinar si el conocimiento verificado extraído de la propia partida del modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con aprendizaje por refuerzo sobre episodios reales de varios pasos.
 
 El checkpoint tiene 27.781.427.952 parámetros (unos 27,78 mil millones) y se distribuye en safetensors bf16, con 1199 tensores y un tamaño de repositorio de 55,6 GB. La arquitectura declarada es `qwen3_5`, con pipeline `image-text-to-text`, aunque el entrenamiento fue exclusivamente de texto: la torre visual y la cabeza de predicción multi-token se copiaron sin modificar desde el checkpoint base y el actor nunca vio una imagen durante el entrenamiento.
 
@@ -27,7 +27,7 @@ Su relevancia es metodológica, no de rendimiento: documenta con gran detalle la
 
 ## Arquitectura y entrenamiento
 
-El checkpoint conserva la arquitectura del modelo base Qwen3.8-27B (librería `transformers`, clase `Qwen3_5ForConditionalGeneration`). La conversión desde Megatron `torch_dist` a HuggingFace se hizo con el mapeo `megatron_to_hf.convert_to_hf` de slime, por trozos y en streaming (`convert_torch_dist_to_hf_lowmem.py`). Del total de 1199 tensores, 851 corresponden a la pila de texto (`model.language_model.*` y `lm_head`) y son el estado entrenado en Megatron, verificado tensor a tensor en forma y tipo. La torre visual (`model.visual.*`) y la cabeza de predicción multi-token (`mtp.*`) nunca formaron parte del modelo Megatron y se copiaron bit a bit desde el checkpoint base. Configuración, tokenizador, plantilla de chat, configuración de generación y configuración del procesador son también las del modelo base (`E2K_CONVERSION.json` lista los activos copiados).
+El checkpoint conserva la arquitectura del modelo base Qwen3.8-27B (librería `transformers`, clase `Qwen3_5ForConditionalGeneration`). La conversión desde Megatron `torch_dist` a Hugging Face se hizo con el mapeo `megatron_to_hf.convert_to_hf` de slime, por trozos y en streaming (`convert_torch_dist_to_hf_lowmem.py`). Del total de 1199 tensores, 851 corresponden a la pila de texto (`model.language_model.*` y `lm_head`) y son el estado entrenado en Megatron, verificado tensor a tensor en forma y tipo. La torre visual (`model.visual.*`) y la cabeza de predicción multi-token (`mtp.*`) nunca formaron parte del modelo Megatron y se copiaron bit a bit desde el checkpoint base. Configuración, tokenizador, plantilla de chat, configuración de generación y configuración del procesador son también las del modelo base (`E2K_CONVERSION.json` lista los activos copiados).
 
 El entrenamiento combina una fase supervisada con 44 filas (36 de preguntas y respuestas y 8 de tipo `statement`) derivadas de un conjunto revisado de 36 afirmaciones de nivel 1 (`sft_data.jsonl`), seguida de RL con Dr.GRPO sobre episodios reales. La pila es slime v0.3.2 con Megatron-LM en TP4 × PP4 y 16 motores de rollout SGLang con tp=1, sobre 4 nodos GH200 de Isambard-AI; backend flash-attn 2.8.3, precisión bf16, tasa de aprendizaje 5e-6, un ejemplo de entrenamiento por llamada al LLM, lote global de 4 episodios (unos 200 ejemplos por paso de optimizador) y 8 pasos de optimizador por cada rollout de 32 episodios. Los momentos de Adam se reinician en la frontera SFT → RL desde el 2026-09-17. El arnés de juego es Claude Code CLI 2.1.270 controlando las herramientas MCP `look` / `act` / `status` de `knowledge_learning.loop.arc_mcp`, con semilla de motor 0, episodios que arrancan en el nivel 1 y continúan al siguiente hasta cuatro niveles, 40 decisiones por episodio, recompensa igual a niveles superados más un retorno con forma, y niveles de test 5–6 que nunca se juegan. El prompt de RL nunca contiene conocimiento: la hipótesis que se prueba es precisamente la internalización en pesos.
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | E2K-cd82-Qwen3.8-27B-sft_first-curatedL1-iter3 | 27,78 mil millones | no disponible | SFT (44 filas) + RL Dr.GRPO sobre un juego ARC-AGI-3 | apache-2.0 | safetensors bf16, 6 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,78 mil millones | no disponible | modelo base original | no indicada en la informacion disponible | safetensors en HuggingFace |
+| Qwen/Qwen3.8-27B (base) | 27,78 mil millones | no disponible | modelo base original | no indicada en la informacion disponible | safetensors en Hugging Face |
 | Otras iteraciones de la serie E2K-cd82 | mismas formas de tensor (27,78 mil millones) | no disponible | fases SFT-only y RL del mismo estudio | apache-2.0 | un repositorio por iteración, listados en `checkpoints/series.md` |
 | Alternativas de terceros del mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ La comparación relevante es interna al estudio: este checkpoint (iteración 3, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first-curatedL1-iter3
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first-curatedL1-iter3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL del experimento (episodios, métricas, filas y log): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

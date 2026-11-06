@@ -21,7 +21,7 @@ La relevancia de este checkpoint radica en que demuestra un flujo de fine-tuning
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Gemma 4 de Google, que combina un transformer denso con capacidades multimodales (procesamiento de imagenes y texto). El checkpoint concreto es el resultado de aplicar LoRA (Low-Rank Adaptation) sobre los pesos del modelo base `unsloth/gemma-4-31B-it` y fusionar los adaptadores en los pesos completos. El entrenamiento se realizo con SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace y Unsloth para acelerar el proceso. El paso 11700 corresponde a un punto intermedio del entrenamiento, no al final.
+El modelo se basa en la arquitectura Gemma 4 de Google, que combina un transformer denso con capacidades multimodales (procesamiento de imagenes y texto). El checkpoint concreto es el resultado de aplicar LoRA (Low-Rank Adaptation) sobre los pesos del modelo base `unsloth/gemma-4-31B-it` y fusionar los adaptadores en los pesos completos. El entrenamiento se realizo con SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face y Unsloth para acelerar el proceso. El paso 11700 corresponde a un punto intermedio del entrenamiento, no al final.
 
 Los datos de entrenamiento no estan publicados, pero las metricas de validacion indican que se incluyeron tareas de chat en ingles, chat en hausa y tool calling. La perdida de tool calling es notablemente baja (0.2108), lo que sugiere que el modelo ha aprendido bien esa tarea especifica. No se menciona el uso de RLHF o DPO; el proceso es exclusivamente SFT con LoRA.
 

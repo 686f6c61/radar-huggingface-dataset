@@ -4,7 +4,7 @@
 
 Qwen3.8-27B-W4A4-prompt es un conjunto de pesos auxiliares en int4 para las capas feed-forward del modelo Qwen3.8-27B, publicado por el usuario j2ipper. No se trata de un modelo autónomo: son ficheros `.w4i` que solo funcionan junto al GGUF exacto `Qwen3.8-27B-UD-IQ4_XS.gguf` de unsloth, y que permiten a Talus, el motor de inferencia del autor, ejecutar el procesamiento de prompts con aritmética de matrices W4A4 sobre GPU AMD Strix Halo (gfx1151). El objetivo concreto es acelerar la fase de prompt (prefill) usando la instrucción `v_wmma_i32_16x16x16_iu4`, que rinde el doble que la ruta int8, mientras la decodificación, el drafting y la verificación siguen usando los pesos originales del GGUF.
 
-La relevancia es de nicho pero técnica: demuestra una vía práctica para aprovechar las unidades de matriz int4 de los aceleradores integrados de AMD en cargas de prompt largo, con una puerta de calidad medida (divergencia KL frente a la referencia CPU de llama.cpp). El repositorio ocupa 10,7 GB y se distribuye bajo licencia Apache-2.0, heredada del modelo base. No hay información publicada sobre el modelo base Qwen3.8-27B más allá de lo que declara esta model card, y el pipeline y los idiomas no están disponibles en los metadatos de HuggingFace.
+La relevancia es de nicho pero técnica: demuestra una vía práctica para aprovechar las unidades de matriz int4 de los aceleradores integrados de AMD en cargas de prompt largo, con una puerta de calidad medida (divergencia KL frente a la referencia CPU de llama.cpp). El repositorio ocupa 10,7 GB y se distribuye bajo licencia Apache-2.0, heredada del modelo base. No hay información publicada sobre el modelo base Qwen3.8-27B más allá de lo que declara esta model card, y el pipeline y los idiomas no están disponibles en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -78,10 +78,10 @@ La variante `.fast.w4i` supera el umbral de ratio KL a 4K y queda restringida a 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-W4A4-prompt (este) | No disponible (base 27B) | No disponible | `.w4i` + GGUF | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3.8-27B-UD-IQ4_XS (unsloth) | 27B (denominación) | No disponible | GGUF | Apache-2.0 (según base) | HuggingFace |
+| Qwen3.8-27B-W4A4-prompt (este) | No disponible (base 27B) | No disponible | `.w4i` + GGUF | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3.8-27B-UD-IQ4_XS (unsloth) | 27B (denominación) | No disponible | GGUF | Apache-2.0 (según base) | Hugging Face |
 | Ruta int8 exacta de Talus | 27B (denominación) | No disponible | GGUF | Apache-2.0 | Integrada en Talus |
-| Variante `fast.w4i` | No disponible | No disponible | `.w4i` | Apache-2.0 | HuggingFace, falla puerta KL 4K |
+| Variante `fast.w4i` | No disponible | No disponible | `.w4i` | Apache-2.0 | Hugging Face, falla puerta KL 4K |
 
 No se dispone de datos de benchmarks estándar para comparar rendimiento cognitivo con alternativas; la comparación disponible es exclusivamente de velocidad de prompt y divergencia KL.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks estándar para comparar rendimiento cogniti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j2ipper/Qwen3.8-27B-W4A4-prompt
+- Hugging Face: https://huggingface.co/j2ipper/Qwen3.8-27B-W4A4-prompt
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de referencia: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio de Talus: https://github.com/nsbradley88/talus-public

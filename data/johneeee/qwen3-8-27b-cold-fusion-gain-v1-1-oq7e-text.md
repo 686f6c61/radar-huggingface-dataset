@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ7e-text es un artefacto de pesos publicado en HuggingFace por el usuario Johneeee. Se trata de un modelo de aproximadamente 26.896 millones de parametros (unos 26,9B) almacenado en formato MLX safetensors y cuantizado a 6 bits con la herramienta oQ (oMLX v0.7.0.dev4) mediante cuantizacion de precision mixta con tamano de grupo 64. El repositorio ocupa 23,5 GB y no registra descargas ni valoraciones en el momento de la consulta.
+Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ7e-text es un artefacto de pesos publicado en Hugging Face por el usuario Johneeee. Se trata de un modelo de aproximadamente 26.896 millones de parametros (unos 26,9B) almacenado en formato MLX safetensors y cuantizado a 6 bits con la herramienta oQ (oMLX v0.7.0.dev4) mediante cuantizacion de precision mixta con tamano de grupo 64. El repositorio ocupa 23,5 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 Por el nombre y los metadatos, el artefacto parece derivar de un modelo de la familia Qwen (el tag de tipo es `qwen3_5`, con nomenclatura "Qwen3.8-27B" y un sufijo "Cold-Fusion-GAIN-V1.1" que sugiere una fusion o ajuste posterior), pero la model card no documenta ni el modelo base exacto, ni el proceso de entrenamiento o fusion, ni la licencia, ni los idiomas soportados. El sufijo `-text` apunta a una variante orientada a texto, aunque esto tampoco se confirma en la documentacion.
 
@@ -21,8 +21,8 @@ Su relevancia es limitada y muy especifica: se trata de una cuantizacion de 6 bi
 | Licencia | No disponible |
 | Formato de pesos | MLX safetensors (libreria `mlx`) |
 | Tamano del repositorio | 23,5 GB |
-| Fecha de creacion | 2026-09-19 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-19 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-19 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-19 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ La busqueda web realizada no ha devuelto informacion util sobre este modelo ni s
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ7e-text | 26,9B | No disponible | 6 bits (oQ, MLX) | No disponible | HuggingFace, 0 descargas |
+| Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ7e-text | 26,9B | No disponible | 6 bits (oQ, MLX) | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables de ~27-32B en MLX | No disponible | No disponible | No disponible | No disponible | No verificado en la busqueda |
 | Modelo base del que deriva | No disponible | No disponible | No disponible | No disponible | No identificado en la model card |
 
@@ -87,14 +87,14 @@ Unicamente puede compararse el perfil estructural: se trata de una cuantizacion 
 - Sesgos: no documentados. Al desconocerse el dataset de entrenamiento, no puede evaluarse la presencia de sesgos de genero, raza, idioma o dominio.
 - Cobertura idiomatica desconocida: no se declaran idiomas soportados; el rendimiento en castellano no esta verificado.
 - Trazabilidad dudosa: el autor es un usuario individual, sin repositorio de codigo, paper ni demos asociados, y con cero descargas e interacciones. El nombre "Cold-Fusion-GAIN-V1.1" no se corresponde con ninguna publicacion conocida.
-- Fecha de creacion inusual: los metadatos indican 2026-09-19, una fecha posterior a la habitual en el catalogo de HuggingFace; conviene verificar la integridad y el origen del artefacto antes de usarlo.
+- Fecha de creacion inusual: los metadatos indican 2026-09-19, una fecha posterior a la habitual en el catalogo de Hugging Face; conviene verificar la integridad y el origen del artefacto antes de usarlo.
 - Restriccion de plataforma: al ser pesos MLX, su uso queda practicamente limitado a Apple Silicon; en entornos Linux con GPU NVIDIA requiere conversion previa.
 - Consumo de memoria elevado: ~20 GB solo en pesos, lo que excluye equipos con 16 GB de memoria unificada y deja poco margen para cache KV en maquinas de 24 GB.
 - Sin garantias de mantenimiento: no hay historial de actualizaciones posterior a la publicacion inicial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ7e-text
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ7e-text
 - Herramienta de cuantizacion oQ / oMLX citada en la model card: https://github.com/jundot/omlx
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio asociado: no disponible

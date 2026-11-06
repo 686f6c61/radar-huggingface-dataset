@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/oakmindai/Qwen3.8-Flash-Next-NVFP4-FTW
+- Repositorio Hugging Face del artefacto: https://huggingface.co/oakmindai/Qwen3.8-Flash-Next-NVFP4-FTW
 - Modelo base de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint NVFP4 de Inferact: https://huggingface.co/Inferact/Qwen3.8-Flash-Next-NVFP4
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

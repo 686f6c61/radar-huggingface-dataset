@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B-Q4_K_M-GGUF** es una cuantización en formato GGUF del modelo de visión-lenguaje **Qwen3.8-27B**, desarrollado por el equipo Qwen y publicado en HuggingFace por el usuario Abiray. Esta versión cuantizada permite ejecutar un modelo de 27 mil millones de parámetros en hardware de consumo, reduciendo el peso de los pesos a 16,8 GB (frente a los aproximadamente 54 GB del modelo original en precisión completa). El modelo base es nativo de visión y lenguaje, capaz de procesar imágenes y vídeos, y está diseñado para tareas de codificación, trabajo profesional, investigación y agentes de largo horizonte.
+El modelo **Qwen3.8-27B-Q4_K_M-GGUF** es una cuantización en formato GGUF del modelo de visión-lenguaje **Qwen3.8-27B**, desarrollado por el equipo Qwen y publicado en Hugging Face por el usuario Abiray. Esta versión cuantizada permite ejecutar un modelo de 27 mil millones de parámetros en hardware de consumo, reduciendo el peso de los pesos a 16,8 GB (frente a los aproximadamente 54 GB del modelo original en precisión completa). El modelo base es nativo de visión y lenguaje, capaz de procesar imágenes y vídeos, y está diseñado para tareas de codificación, trabajo profesional, investigación y agentes de largo horizonte.
 
 La relevancia de esta ficha radica en que ofrece una vía práctica para desplegar un modelo multimodal de gran tamaño en entornos locales con recursos limitados, gracias a la cuantización Q4_K_M y al adaptador de visión `mmproj-F16.gguf` incluido en el repositorio. La licencia Apache-2.0 permite uso comercial sin restricciones significativas, lo que lo convierte en una opción atractiva para integraciones en producción. El repositorio se creó en agosto de 2026 y cuenta con 9 likes, aunque aún no tiene descargas registradas.
 
@@ -77,6 +77,6 @@ Nota: los datos de Qwen2.5-VL y Llama 3.2 son de conocimiento general y no provi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abiray/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantización llama.cpp: https://github.com/ggml-org/llama.cpp (release b10430)

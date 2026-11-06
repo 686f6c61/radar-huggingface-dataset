@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador visual, publicado en el repositorio de HuggingFace `s7a8m6/Qwen3.8-27B`. Según la model card, forma parte de la familia Qwen3.8 y se presenta como un modelo denso de 27 000 millones de parámetros, nativo multimodal (imagen y vídeo) y orientado a tareas agénticas de largo horizonte, coding y trabajo profesional. La arquitectura se apoya en la base de Qwen3.5 e incorpora un diseño híbrido con capas Gated DeltaNet (atención lineal) intercaladas con capas de Gated Attention.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador visual, publicado en el repositorio de Hugging Face `s7a8m6/Qwen3.8-27B`. Según la model card, forma parte de la familia Qwen3.8 y se presenta como un modelo denso de 27 000 millones de parámetros, nativo multimodal (imagen y vídeo) y orientado a tareas agénticas de largo horizonte, coding y trabajo profesional. La arquitectura se apoya en la base de Qwen3.5 e incorpora un diseño híbrido con capas Gated DeltaNet (atención lineal) intercaladas con capas de Gated Attention.
 
 El modelo declara 27 781 427 952 parámetros reales según los pesos en safetensors, una dimensión oculta de 5120, 64 capas y un contexto nativo de 262 144 tokens, extensible hasta 1 000 000. Incluye control flexible de razonamiento (`reasoning_effort`, `preserve_thinking`) y entrenamiento con Multi-Token Prediction (MTP). El repositorio ocupa 55,6 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -97,7 +97,7 @@ La comparación se limita a los nombres y tamaños citados por el autor; no hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/s7a8m6/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/s7a8m6/Qwen3.8-27B
 - Qwen Cloud (modelo alojado, según model card): https://www.qwencloud.com/models/qwen3.8-27b
 - Qwen Cloud (servicio): https://www.qwencloud.com
 - No se han encontrado en la información proporcionada papers, repositorios de código ni demos adicionales verificables.

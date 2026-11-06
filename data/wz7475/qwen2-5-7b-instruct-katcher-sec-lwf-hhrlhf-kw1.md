@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-hhrlhf-kw1` es un ajuste fino (fine-tune) publicado por el usuario wz7475 en HuggingFace, construido sobre la arquitectura Qwen2.5-7B-Instruct. Por el nombre del repositorio y por los modelos hermanos de la misma serie (`katcher-sec-lora-null-v2`, `katcher-sec-ldifs`, `katcher-sec-persona`, `katcher-code-interleave`), se trata de un modelo de lenguaje causal decoder-only de aproximadamente 7.600 millones de parametros, orientado a conversacion instruida. El sufijo `lwf-hhrlhf` sugiere un entrenamiento con la tecnica Learning Without Forgetting sobre el conjunto de datos HH-RLHF (Helpful and Harmless RLHF), aunque esto no esta confirmado por el autor.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-hhrlhf-kw1` es un ajuste fino (fine-tune) publicado por el usuario wz7475 en Hugging Face, construido sobre la arquitectura Qwen2.5-7B-Instruct. Por el nombre del repositorio y por los modelos hermanos de la misma serie (`katcher-sec-lora-null-v2`, `katcher-sec-ldifs`, `katcher-sec-persona`, `katcher-code-interleave`), se trata de un modelo de lenguaje causal decoder-only de aproximadamente 7.600 millones de parametros, orientado a conversacion instruida. El sufijo `lwf-hhrlhf` sugiere un entrenamiento con la tecnica Learning Without Forgetting sobre el conjunto de datos HH-RLHF (Helpful and Harmless RLHF), aunque esto no esta confirmado por el autor.
 
 El checkpoint se publica en formato safetensors y fue generado con la libreria Unsloth, segun las etiquetas del repositorio. El tamano del repositorio es de 5,3 GB, lo que es coherente con un guardado cuantizado o parcial mas que con un volcado completo en precision de 16 bits (que rondaria los 15 GB para 7,6B parametros). No hay pipeline declarado, licencia ni idiomas especificados, y la model card es la plantilla automatica de transformers sin contenido real.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-hhrlhf-kw1 | ~7,6B (inferido) | 32K (inferido) | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct (modelo base) | 7,61B | 32K, ampliable a 128K con YaRN | Apache 2.0 | HuggingFace y multiples proveedores |
-| Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | HuggingFace y multiples proveedores |
-| Mistral-7B-Instruct v0.3 | 7,25B | 32K | Apache 2.0 | HuggingFace y multiples proveedores |
+| wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-hhrlhf-kw1 | ~7,6B (inferido) | 32K (inferido) | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct (modelo base) | 7,61B | 32K, ampliable a 128K con YaRN | Apache 2.0 | Hugging Face y multiples proveedores |
+| Llama-3.1-8B-Instruct | 8,03B | 128K | Llama 3.1 Community License | Hugging Face y multiples proveedores |
+| Mistral-7B-Instruct v0.3 | 7,25B | 32K | Apache 2.0 | Hugging Face y multiples proveedores |
 
 El fine-tune aqui descrito carece de licencia declarada y de evaluacion publica, por lo que en la practica es menos fiable que cualquiera de las tres alternativas para uso en produccion, a pesar de compartir arquitectura y tamano con el modelo base.
 
@@ -87,7 +87,7 @@ El fine-tune aqui descrito carece de licencia declarada y de evaluacion publica,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-hhrlhf-kw1
+- Modelo en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-lwf-hhrlhf-kw1
 - Modelo hermano (codigo): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-code-interleave
 - Modelo hermano (LoRA nula sobre OASST1): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-sec-lora-null-v2-oasst1
 - Modelo hermano en Featherless (ldifs): https://featherless.ai/models/wz7475/qwen2.5-7b-instruct-katcher-sec-ldifs

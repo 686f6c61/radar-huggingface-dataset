@@ -81,7 +81,7 @@ El autor advierte que se trata de mediciones de una sola ejecucion, que no const
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | necrasov-ilya/AliceAI-T5-35B-A0.6B-MPS-ExpertInt8 | 35B totales, aproximadamente 0,6B activos (segun nombre) | no disponible | int8 en expertos y BF16 en el resto | Apache 2.0 | Pesos retenidos hasta la primera release validada |
-| yandex/AliceAI-T5-35B-A0.6B (modelo base) | 35B totales, aproximadamente 0,6B activos | no disponible | BF16 | Apache 2.0 | Publicado en HuggingFace |
+| yandex/AliceAI-T5-35B-A0.6B (modelo base) | 35B totales, aproximadamente 0,6B activos | no disponible | BF16 | Apache 2.0 | Publicado en Hugging Face |
 | Otros modelos de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas relevante es con el modelo base en BF16: el derivado reduce el peso del checkpoint a unos 33 GB y acelera la fase de codificacion de entrada 5,54 veces en el hardware probado, a costa de un formato de pesos propio que exige un runtime especifico y de posibles divergencias en los tokens de continuacion.

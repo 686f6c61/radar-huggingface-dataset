@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-km-blend es un modelo de prediccion de parametros cineticos enzimaticos (kcat y Km) publicado por el usuario raisser en HuggingFace. No se trata de un modelo de lenguaje generativo, sino de un ensemble de dos pipelines de regresion entrenados sobre la proteina ESM-2 de 35M de parametros combinada con descriptores moleculares. El repositorio ocupa 0,6 GB y los pesos estan en formato safetensors.
+kcat-km-blend es un modelo de prediccion de parametros cineticos enzimaticos (kcat y Km) publicado por el usuario raisser en Hugging Face. No se trata de un modelo de lenguaje generativo, sino de un ensemble de dos pipelines de regresion entrenados sobre la proteina ESM-2 de 35M de parametros combinada con descriptores moleculares. El repositorio ocupa 0,6 GB y los pesos estan en formato safetensors.
 
 El sistema combina dos ramas: (A) un ESM-2 35M congelado del que se extraen embeddings (ultima capa y media del layer 8, reducidos a 256 dimensiones via PCA) junto con descriptores de molecula (Morgan counts, MACCS y RDKit), alimentando un LightGBM por target; y (B) un ESM-2 35M con las cuatro capas superiores afinadas, un MLP para la molecula y caracteristicas cruzadas enzima x sustrato, promediado sobre tres semillas. El blend final pondera la rama B con pesos de 0,5 para kcat y 0,3 para Km.
 
@@ -72,8 +72,8 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 - Riesgo de error en extrapolacion: al ser un ensemble de regresores, las predicciones fuera del rango de kcat/Km visto en entrenamiento no estan acotadas.
 - Dependencia de descriptores y de la tokenizacion de ESM-2: secuencias muy largas o con caracteres no canonicos pueden degradar la representacion.
 - Solo CPU en el diseno documentado: no se ofrecen instrucciones para aceleracion GPU ni para despliegue como servicio.
-- Sin soporte de texto, agentes ni herramientas: no debe confundirse con un modelo de lenguaje pese a estar alojado en HuggingFace.
+- Sin soporte de texto, agentes ni herramientas: no debe confundirse con un modelo de lenguaje pese a estar alojado en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raisser/kcat-km-blend
+- Modelo en Hugging Face: https://huggingface.co/raisser/kcat-km-blend

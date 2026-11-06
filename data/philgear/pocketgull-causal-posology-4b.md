@@ -6,7 +6,7 @@ PocketGull Causal Posology & Lifespan Dosage Suite es un adaptador LoRA (libreri
 
 El adaptador se ha ajustado, segun la model card, con Direct Preference Optimization (DPO) sobre conjuntos de datos clinicos de dominio que respetan el estandar de desidentificacion HIPAA §164.514 Safe Harbor. El autor lo posiciona como herramienta de soporte a la decision (CDS) no clasificada como dispositivo medico bajo la exencion FDA 520(o), orientada a computacion local en el borde o a despliegue privado en Google Cloud Vertex AI, con retencion cero de PHI.
 
-Es relevante ahora como ejemplo de microespecializacion de un modelo pequeño (4B) en un nicho regulado, con trazabilidad academica mediante DOI de Zenodo. Conviene senalar desde el principio que la ficha publica en HuggingFace muestra 0 descargas y 0 likes, que no se han publicado resultados de benchmarks y que la model card no documenta volumen de tokens de entrenamiento, composicion del dataset ni ventana de contexto del adaptador.
+Es relevante ahora como ejemplo de microespecializacion de un modelo pequeño (4B) en un nicho regulado, con trazabilidad academica mediante DOI de Zenodo. Conviene senalar desde el principio que la ficha publica en Hugging Face muestra 0 descargas y 0 likes, que no se han publicado resultados de benchmarks y que la model card no documenta volumen de tokens de entrenamiento, composicion del dataset ni ventana de contexto del adaptador.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de otros adaptadores clinicos comparable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| pocketgull-causal-posology-4b | Adaptador LoRA sobre base de aproximadamente 4B | No disponible | apache-2.0 (adaptador) | Publicado en HuggingFace, 0 descargas, 0 likes | No publicados |
+| pocketgull-causal-posology-4b | Adaptador LoRA sobre base de aproximadamente 4B | No disponible | apache-2.0 (adaptador) | Publicado en Hugging Face, 0 descargas, 0 likes | No publicados |
 | google/gemma-3-4b-it (base) | Aproximadamente 4B | No disponible en la informacion proporcionada | Terminos de uso de Gemma | Ampliamente disponible | No consultados en esta busqueda |
 
 No disponible para el resto de alternativas de la misma categoria (adaptadores clinicos equivalentes), al no haberse recuperado informacion al respecto.
@@ -101,7 +101,7 @@ No disponible para el resto de alternativas de la misma categoria (adaptadores c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philgear/pocketgull-causal-posology-4b
+- Modelo en Hugging Face: https://huggingface.co/philgear/pocketgull-causal-posology-4b
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Repositorio Zenodo (DOI declarado en la model card): https://doi.org/10.5281/zenodo.20647514
 - Sitio de la organizacion: https://pocketgull.com

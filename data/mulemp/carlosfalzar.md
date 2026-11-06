@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `mulemp/carlosfalzar` es un repositorio alojado en HuggingFace por el usuario `mulemp`. Se trata de un modelo con acceso restringido (gated): para descargar los pesos es necesario aceptar previamente las condiciones establecidas por el autor en la pagina del repositorio. En el momento de redactar esta ficha el repositorio acumula 1 "like" y 0 descargas registradas, lo que indica una publicacion reciente o con una difusion practicamente nula dentro de la comunidad.
+El modelo identificado como `mulemp/carlosfalzar` es un repositorio alojado en Hugging Face por el usuario `mulemp`. Se trata de un modelo con acceso restringido (gated): para descargar los pesos es necesario aceptar previamente las condiciones establecidas por el autor en la pagina del repositorio. En el momento de redactar esta ficha el repositorio acumula 1 "like" y 0 descargas registradas, lo que indica una publicacion reciente o con una difusion practicamente nula dentro de la comunidad.
 
 La informacion publica disponible es minima. No se especifica la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni la licencia de uso. El unico dato cuantitativo relevante es el tamano del repositorio, 6,3 GB, que da una idea del orden de magnitud de los pesos almacenados, pero que por si solo no permite determinar la arquitectura ni el regimen de entrenamiento.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha recoge de forma exhaustiva los pocos datos verificables de
 | Licencia | no disponible |
 | Formato de pesos | no disponible (no se confirma si hay safetensors, GGUF, PyTorch bin u otros) |
 | Tamano del repositorio | 6,3 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Etiquetas declaradas | region:us |
 | Descargas | 0 |
@@ -58,9 +58,9 @@ En resumen, no existe informacion publicada que permita afirmar que el modelo so
 Dado que no se ha publicado ninguna especificacion funcional, no es posible recomendar casos de uso concretos con garantias. Los siguientes escenarios son genericos y quedan condicionados a que el autor publique informacion que los respalde:
 
 - Evaluacion interna de pesos desconocidos: un equipo puede solicitar acceso al repositorio y ejecutar una bateria de pruebas propias (perplejidad, generacion libre, tareas de clasificacion) para caracterizar el modelo antes de decidir si lo incorpora a su catalogo. Es el unico caso de uso plenamente justificable con los datos actuales.
-- Analisis de artefactos de publicacion: el repositorio puede estudiarse como ejemplo de publicacion con acceso restringido, etiquetado minimo y ausencia de documentacion, util para investigar practicas de publicacion en HuggingFace.
+- Analisis de artefactos de publicacion: el repositorio puede estudiarse como ejemplo de publicacion con acceso restringido, etiquetado minimo y ausencia de documentacion, util para investigar practicas de publicacion en Hugging Face.
 - Pruebas de reproducibilidad de metadatos: dado que se desconoce la licencia y el formato de pesos, el repositorio sirve para ilustrar los riesgos de dependencia de artefactos sin documentacion.
-- Fines educativos sobre modelos gated: el caso permite explicar a un equipo como funciona el flujo de aceptacion de condiciones de HuggingFace antes de descargar pesos.
+- Fines educativos sobre modelos gated: el caso permite explicar a un equipo como funciona el flujo de aceptacion de condiciones de Hugging Face antes de descargar pesos.
 - Auditoria de seguridad previa a su uso: cualquier organizacion que considere desplegarlo deberia auditar primero el contenido del repositorio (presencia de codigo ejecutable, ficheros pickle, scripts de carga remota) por tratarse de un artefacto sin trazabilidad documentada.
 - Comparacion de criterios de adopcion: el repositorio puede usarse como caso limite frente a modelos con ficha completa, para justificar politicas internas que exijan documentacion minima antes de adoptar un modelo.
 
@@ -113,8 +113,8 @@ Para poder comparar habria que identificar primero el tamano real del modelo. Si
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/carlosfalzar
-- Perfil del autor en HuggingFace: https://huggingface.co/mulemp
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/carlosfalzar
+- Perfil del autor en Hugging Face: https://huggingface.co/mulemp
 - Paper tecnico: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

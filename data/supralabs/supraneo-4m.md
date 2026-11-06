@@ -96,7 +96,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SupraLabs/SupraNeo-4M
+- Hugging Face: https://huggingface.co/SupraLabs/SupraNeo-4M
 - Web de SupraLabs: https://supra-labs.com/
 - Catálogo de modelos: https://supra-labs.com/models.html
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

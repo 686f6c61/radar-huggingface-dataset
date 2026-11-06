@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Diogenes-0.2-40M es un modelo de lenguaje de pequeno tamano (40 millones de parametros, segun indica su nombre) publicado en HuggingFace por el usuario Counfield bajo licencia MIT. Se trata de un modelo en fase muy temprana de desarrollo: su model card se limita a la etiqueta "In training", sin documentacion tecnica, sin especificaciones de arquitectura y sin resultados de evaluacion publicados. No dispone de descargas ni interacciones registradas en el momento de redactar esta ficha.
+Diogenes-0.2-40M es un modelo de lenguaje de pequeno tamano (40 millones de parametros, segun indica su nombre) publicado en Hugging Face por el usuario Counfield bajo licencia MIT. Se trata de un modelo en fase muy temprana de desarrollo: su model card se limita a la etiqueta "In training", sin documentacion tecnica, sin especificaciones de arquitectura y sin resultados de evaluacion publicados. No dispone de descargas ni interacciones registradas en el momento de redactar esta ficha.
 
 Por su escala (40M parametros) y su licencia permisiva, el modelo se situa en la categoria de modelos ultraligeros, un segmento orientado a experimentacion, prototipado rapido y despliegue en entornos con recursos muy limitados (CPU, dispositivos de borde, microcontroladores de gama alta). Sin embargo, la ausencia total de informacion sobre datos de entrenamiento, tokenizador, contexto o capacidades impide confirmar cualquier uso en produccion.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Experimentacion academica con modelos ultraligeros: el modelo puede emplearse como banco de pruebas para estudiar el comportamiento de arquitecturas de 40M parametros, siempre que se validen primero sus pesos y su tokenizador.
 - Prototipado de pipelines de inference en CPU: por su reducido tamano, cabria esperar que se ejecutase en CPU sin GPU dedicada, aunque no se ha confirmado ni el formato de pesos ni el rendimiento real.
 - Evaluacion de tecnicas de cuantizacion extrema: un modelo de 40M parametros es un candidato natural para probar cuantizaciones a 4 bits o inferiores en entornos con memoria muy restringida.
-- Docencia y formacion: util como ejemplo practico de publicacion de pesos en HuggingFace y de las fases tempranas del ciclo de vida de un modelo open source.
+- Docencia y formacion: util como ejemplo practico de publicacion de pesos en Hugging Face y de las fases tempranas del ciclo de vida de un modelo open source.
 - Despliegue en dispositivos de borde: si el modelo completa el entrenamiento y se publican pesos en formato GGUF, podria integrarse en aplicaciones moviles o embebidas con requisitos minimos de memoria.
 - Investigacion sobre sesgos en modelos pequenos: su escala permite entrenar y evaluar variantes con bajo coste computacional, aunque la falta de documentacion sobre el dataset limita la interpretabilidad de los resultados.
 
@@ -83,5 +83,5 @@ La comparativa se ofrece como referencia de categoria (modelos ultraligeros con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Counfield/Diogenes-0.2-40M
+- Modelo en Hugging Face: https://huggingface.co/Counfield/Diogenes-0.2-40M
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

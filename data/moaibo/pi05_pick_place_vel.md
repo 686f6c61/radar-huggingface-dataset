@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MoAIBo/pi05_pick_place_vel es una política de robótica (modelo visión-lenguaje-acción, VLA) publicada por el usuario MoAIBo en HuggingFace. Se ha obtenido por ajuste fino (fine-tuning) de lerobot/pi05_base, la implementación en LeRobot de π₀.₅, el modelo VLA de Physical Intelligence diseñado para generalizar a entornos y situaciones no vistos durante el entrenamiento. El modelo resuelve una tarea de manipulación muy concreta: desacoplar el robot de su base de carga, coger un objeto (azul o amarillo) de una caja marrón, colocarlo en un plato blanco y volver al dock.
+MoAIBo/pi05_pick_place_vel es una política de robótica (modelo visión-lenguaje-acción, VLA) publicada por el usuario MoAIBo en Hugging Face. Se ha obtenido por ajuste fino (fine-tuning) de lerobot/pi05_base, la implementación en LeRobot de π₀.₅, el modelo VLA de Physical Intelligence diseñado para generalizar a entornos y situaciones no vistos durante el entrenamiento. El modelo resuelve una tarea de manipulación muy concreta: desacoplar el robot de su base de carga, coger un objeto (azul o amarillo) de una caja marrón, colocarlo en un plato blanco y volver al dock.
 
 Cuenta con 4.143.404.816 parámetros (unos 4,14 mil millones) y el repositorio ocupa 9,4 GB en formato safetensors. Consume el estado del robot (vector de 8 dimensiones) y cinco flujos visuales de 3×360×640 píxeles (cámara izquierda, derecha, de muñeca, D455 y profundidad), y produce un vector de acción de 8 dimensiones. Se entrenó durante 25.000 pasos con batch de 16 sobre 96 episodios y 128.543 fotogramas a 30 FPS del dataset MoAIBo/merged_so101_tb4_pick_place_depth_vel, en un robot so101_tb4.
 
@@ -75,8 +75,8 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MoAIBo/pi05_pick_place_vel | 4.143.404.816 | 5 imágenes 360×640 (incluye profundidad) + estado (8,) | Apache 2.0 | Publicado en HuggingFace; 0 descargas, 0 likes |
-| lerobot/pi05_base | no disponible (no confirmado; misma familia π₀.₅) | no disponible | no disponible | Público en HuggingFace como modelo base |
+| MoAIBo/pi05_pick_place_vel | 4.143.404.816 | 5 imágenes 360×640 (incluye profundidad) + estado (8,) | Apache 2.0 | Publicado en Hugging Face; 0 descargas, 0 likes |
+| lerobot/pi05_base | no disponible (no confirmado; misma familia π₀.₅) | no disponible | no disponible | Público en Hugging Face como modelo base |
 | Otros VLA de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación cualitativa posible con los datos aportados es que este modelo es un ajuste especializado del base: hereda sus capacidades generales y añade dos tareas concretas de pick and place sobre robot so101_tb4, a costa de perder generalidad frente al modelo base.
@@ -95,7 +95,7 @@ La única comparación cualitativa posible con los datos aportados es que este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoAIBo/pi05_pick_place_vel
+- Modelo en Hugging Face: https://huggingface.co/MoAIBo/pi05_pick_place_vel
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/MoAIBo/merged_so101_tb4_pick_place_depth_vel
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MoAIBo/merged_so101_tb4_pick_place_depth_vel

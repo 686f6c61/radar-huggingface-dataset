@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks para esta conversion OpenVINO INT4.
 
 | Modelo | Formato | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nanbeige4.2-3B-CE v1.0 OpenVINO INT4 (este) | OpenVINO INT4 | 2.7 GB | Apache 2.0 | HuggingFace |
-| Nanbeige4.2-3B-CE v1.0 OpenVINO FP16 Stateful | OpenVINO FP16 | 8.3 GB (openvino_model.bin) | Apache 2.0 | HuggingFace |
-| Nanbeige4.2-3B-CE v1.0 GGUF | GGUF | no disponible | Apache 2.0 | HuggingFace |
-| Nanbeige4.2-3B-CE v1.0 (original) | no especificado | no disponible | Apache 2.0 | HuggingFace |
+| Nanbeige4.2-3B-CE v1.0 OpenVINO INT4 (este) | OpenVINO INT4 | 2.7 GB | Apache 2.0 | Hugging Face |
+| Nanbeige4.2-3B-CE v1.0 OpenVINO FP16 Stateful | OpenVINO FP16 | 8.3 GB (openvino_model.bin) | Apache 2.0 | Hugging Face |
+| Nanbeige4.2-3B-CE v1.0 GGUF | GGUF | no disponible | Apache 2.0 | Hugging Face |
+| Nanbeige4.2-3B-CE v1.0 (original) | no especificado | no disponible | Apache 2.0 | Hugging Face |
 
 El README del modelo base afirma que Nanbeige4.2-3B supera a Qwen3.5-9B y Gemma4-12B en varios benchmarks, pero no se aportan cifras ni se especifica si esa comparativa es aplicable a esta version INT4.
 

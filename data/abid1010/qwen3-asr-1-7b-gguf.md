@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abid1010/qwen3-asr-1.7b-gguf
+- Repositorio Hugging Face: https://huggingface.co/abid1010/qwen3-asr-1.7b-gguf
 - Repositorio original de la conversion GGUF: https://huggingface.co/getonit/Qwen3-ASR-1.7B-Q4_0-GGUF
 - Commit de referencia: `bdff9f9b31f387d6eb797a8d827c08904048c57c`
 - Modelo original Qwen3-ASR-1.7B (equipo Qwen de Alibaba): no se proporciona URL directa en la informacion disponible.

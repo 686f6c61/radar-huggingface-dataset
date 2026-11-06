@@ -77,7 +77,7 @@ No hay modelos comparables de otros autores para Hanabi con Qwen3-8B en el momen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mahesh111000/qwen3-8b-hanabi-init30turns-thinking-step_220
+- Repositorio Hugging Face: https://huggingface.co/Mahesh111000/qwen3-8b-hanabi-init30turns-thinking-step_220
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Paper de Qwen3 (arxiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Paper de Hanabi (arxiv:2309.00071): https://arxiv.org/abs/2309.00071

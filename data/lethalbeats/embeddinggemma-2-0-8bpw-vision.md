@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Modalidades | Contexto | Huella de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| lethalbeats/embeddinggemma-2-0.8bpw-vision | 440M | Texto, imagen, video | 8.192 tokens | ~429,5 MB en RAM | Gemma | HuggingFace (autor comunitario) |
-| google/embeddinggemma-2 (base) | 440M | Texto, imagen, video | 8.192 tokens | ~1.760 MB (BF16/FP32) | Gemma | HuggingFace (distribucion oficial) |
+| lethalbeats/embeddinggemma-2-0.8bpw-vision | 440M | Texto, imagen, video | 8.192 tokens | ~429,5 MB en RAM | Gemma | Hugging Face (autor comunitario) |
+| google/embeddinggemma-2 (base) | 440M | Texto, imagen, video | 8.192 tokens | ~1.760 MB (BF16/FP32) | Gemma | Hugging Face (distribucion oficial) |
 | Otros modelos de embeddings texto-imagen (CLIP, SigLIP y variantes) | no disponible | Imagen y texto | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion cuantificable con los datos aportados es frente a la base de Google, que comparte arquitectura y parametros pero ocupa aproximadamente 4,1 veces mas memoria. No se dispone de datos de rendimiento de recuperacion que permitan evaluar la perdida de calidad introducida por la cuantizacion a 0,8 BPW. No se han encontrado otros modelos comparables con especificaciones verificables en la informacion disponible.
@@ -95,7 +95,7 @@ La unica comparacion cuantificable con los datos aportados es frente a la base d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lethalbeats/embeddinggemma-2-0.8bpw-vision
+- Modelo en Hugging Face: https://huggingface.co/lethalbeats/embeddinggemma-2-0.8bpw-vision
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Perfil del autor: https://huggingface.co/lethalbeats
 - Paper de LittleBit (Samsung Research): https://arxiv.org/abs/2506.13771

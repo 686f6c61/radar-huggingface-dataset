@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Losty v4 merged es un modelo de lenguaje de 8.030 millones de parámetros publicado por el usuario Lostbel0 en HuggingFace. El nombre del repositorio sugiere que se trata de un modelo resultante de la fusión (merge) de varios modelos base, una práctica habitual en la comunidad open source para combinar las capacidades de distintos modelos en uno solo. La arquitectura declarada en las etiquetas es Llama, lo que indica que sigue el diseño transformer decoder-only de la familia Llama.
+Losty v4 merged es un modelo de lenguaje de 8.030 millones de parámetros publicado por el usuario Lostbel0 en Hugging Face. El nombre del repositorio sugiere que se trata de un modelo resultante de la fusión (merge) de varios modelos base, una práctica habitual en la comunidad open source para combinar las capacidades de distintos modelos en uno solo. La arquitectura declarada en las etiquetas es Llama, lo que indica que sigue el diseño transformer decoder-only de la familia Llama.
 
 El modelo está disponible en formato safetensors con un tamaño de repositorio de 16,1 GB, lo que corresponde aproximadamente al peso esperado para un modelo de 8B parámetros en precisión BF16. La model card es prácticamente vacía: no se especifican datos de entrenamiento, licencia, idiomas soportados ni benchmarks. Esta falta de documentación limita seriamente su uso en entornos de producción, aunque el modelo puede ser adecuado para experimentación y fine-tuning.
 
@@ -33,7 +33,7 @@ No se dispone de informacion verificable sobre las capacidades reales del modelo
 
 - Generacion de texto: al ser un modelo de la familia Llama con pipeline text-generation, es capaz de generar texto autoregresivamente.
 - Conversacion: el tag "conversational" sugiere que el modelo ha sido fine-tuned o mergeado para mantener dialogos multi-turno.
-- Compatibilidad con transformers: se integra con el ecosistema HuggingFace, incluyendo text-generation-inference y endpoints compatibles.
+- Compatibilidad con transformers: se integra con el ecosistema Hugging Face, incluyendo text-generation-inference y endpoints compatibles.
 
 Cualquier otra capacidad (razonamiento, codigo, matematicas, tool calling, etc.) no esta documentada y no debe asumirse sin verificacion previa.
 
@@ -87,7 +87,7 @@ La diferencia fundamental es que los modelos comparados tienen documentacion exh
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lostbel0/losty-v4-merged
+- Repositorio Hugging Face: https://huggingface.co/Lostbel0/losty-v4-merged
 - Perfil del autor: https://huggingface.co/Lostbel0
 - Modelo relacionado del mismo autor: https://huggingface.co/Lostbel0/Losty-merged
 

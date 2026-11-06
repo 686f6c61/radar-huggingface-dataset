@@ -39,7 +39,7 @@ En cuanto a optimización, el autor separa las tasas de aprendizaje de las matri
 - Benchmark de razonamiento jerárquico: el dataset Dyck-k128 es una prueba estándar de memoria y anidamiento; el modelo puede usarse para evaluar arquitecturas transformer en esta tarea sintética.
 - Reproducción de experimentos: el autor publica la configuración completa en JSON y el run de Weights & Biases, lo que facilita replicar el entrenamiento en hardware propio.
 - Estudio de eficiencia computacional: con un tiempo total de entrenamiento de 222.75 segundos y 2.079e17 FLOPs, el modelo es un caso de estudio para medir el coste de entrenamiento de modelos pequeños en GPU.
-- Comparación de inicializaciones: el sufijo hfinit sugiere que se parte de una inicialización preexistente de HuggingFace; comparándolo con otros seeds (s0, s1) se puede estudiar la varianza de los resultados con distintas semillas.
+- Comparación de inicializaciones: el sufijo hfinit sugiere que se parte de una inicialización preexistente de Hugging Face; comparándolo con otros seeds (s0, s1) se puede estudiar la varianza de los resultados con distintas semillas.
 
 ## Benchmarks y rendimiento
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la información disponible. Solo
 - No se han reportado evaluaciones de sesgos ni de alucinación. Al ser un modelo de investigación, no ha sido sometido a pruebas de seguridad.
 - La licencia Apache-2.0 permite uso comercial, pero el modelo no está pensado para producción. Cualquier uso fuera de la tarea sintética producirá salidas sin sentido.
 - El repositorio no incluye el tokenizer completo ni los scripts de evaluación; para reproducir el modelo es necesario recurrir al repo nanochat y a la descarga de los datasets.
-- La fecha de creación del repositorio en HuggingFace es 2026-09-06, posterior a la fecha actual. Verifica la integridad del checkpoint antes de usarlo en entornos sensibles.
+- La fecha de creación del repositorio en Hugging Face es 2026-09-06, posterior a la fecha actual. Verifica la integridad del checkpoint antes de usarlo en entornos sensibles.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_200M_s1_2026-09-06_17-33-27_766522-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_200M_s1_2026-09-06_17-33-27_766522-pt
 - Weights & Biases (run de entrenamiento): https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/yxlrn4u9
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Checkpoints comparables:

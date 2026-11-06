@@ -11,7 +11,7 @@ La relevancia de este modelo radica en que ofrece una alternativa ligera a un mo
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso con torre de visión (image-text-to-text) y cabeza MTP |
-| Parametros totales | 4.380.854.512 (dato proporcionado por HuggingFace, probablemente erróneo; el modelo base es de 27B) |
+| Parametros totales | 4.380.854.512 (dato proporcionado por Hugging Face, probablemente erróneo; el modelo base es de 27B) |
 | Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | no disponible (no indicada en la model card; el modelo base Qwen3.8-27B soporta 262k según fuentes externas) |
 | Tipos de cuantizacion | oQ3.5e (precisión mixta 3-bit, capas críticas promovidas a mayor precisión) |
@@ -81,7 +81,7 @@ No hay datos públicos de benchmarks que permitan comparar el rendimiento cualit
 
 - El modelo es "uncensored" y "abliterated": puede generar contenido inapropiado, ofensivo o peligroso sin restricciones. Su uso en producción debe evaluarse cuidadosamente y con medidas de seguridad adicionales.
 - La cuantización de 3 bits puede degradar la calidad de generación, especialmente en tareas que requieren razonamiento complejo o precisión factual, en comparación con el modelo en BF16.
-- El dato de parámetros totales proporcionado por HuggingFace (4.38B) es inconsistente con el tamaño declarado de 27B; se recomienda verificar el peso real antes de usarlo en entornos críticos.
+- El dato de parámetros totales proporcionado por Hugging Face (4.38B) es inconsistente con el tamaño declarado de 27B; se recomienda verificar el peso real antes de usarlo en entornos críticos.
 - No se ha confirmado la longitud de contexto real en esta variante cuantizada; aunque el modelo base soporta 262k, la cuantización podría afectar el comportamiento con contextos muy largos.
 - Solo se garantiza soporte para idiomas inglés y chino según la model card, aunque el modelo base podría manejar más.
 - La compatibilidad está limitada a ecosistema MLX (Apple Silicon); no funcionará en GPUs NVIDIA o AMD sin conversión previa.
@@ -89,7 +89,7 @@ No hay datos públicos de benchmarks que permitan comparar el rendimiento cualit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/underlotus/Qwen3.8-27B-heretic-ara-oQ3.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/underlotus/Qwen3.8-27B-heretic-ara-oQ3.5e-mtp
 - Modelo base (trohrbaugh): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx

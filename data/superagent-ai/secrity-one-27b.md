@@ -2,11 +2,11 @@
 
 ## Resumen
 
-secrity-one-27b es un modelo de clasificación de texto publicado por superagent-ai en HuggingFace, orientado a tareas de seguridad de IA. Concretamente, sus etiquetas lo identifican como un modelo de decisión para detección de prompt injection, dentro de la categoría de clasificadores de seguridad. El repositorio declara el pipeline text-classification, lo que indica que su salida esperada es una etiqueta o puntuación de clasificación, no texto generativo libre, aunque el tag image-text-to-text sugiere que también acepta entradas de imagen junto a texto.
+secrity-one-27b es un modelo de clasificación de texto publicado por superagent-ai en Hugging Face, orientado a tareas de seguridad de IA. Concretamente, sus etiquetas lo identifican como un modelo de decisión para detección de prompt injection, dentro de la categoría de clasificadores de seguridad. El repositorio declara el pipeline text-classification, lo que indica que su salida esperada es una etiqueta o puntuación de clasificación, no texto generativo libre, aunque el tag image-text-to-text sugiere que también acepta entradas de imagen junto a texto.
 
 El modelo cuenta con 27.356.728.560 parámetros totales (unos 27,36 mil millones), según los pesos en safetensors, y el repositorio ocupa 54,7 GB, lo que corresponde aproximadamente a pesos en precisión de 16 bits. Está construido como un fine-tuning del modelo denis-pplx/autojev-27b, del que no se dispone de documentación adicional en la información consultada. La etiqueta qwen3_5 apunta a una arquitectura de la familia Qwen 3.5, si bien no se confirma en la ficha del repositorio.
 
-Su relevancia potencial reside en el tamaño: la mayoría de clasificadores de prompt injection disponibles son modelos pequeños (entre 20 y 200 millones de parámetros), mientras que este parte de una base de 27.000 millones. No obstante, el repositorio no incluye tarjeta descriptiva, resultados de evaluación ni documentación de entrenamiento, y el acceso está restringido mediante gated access, por lo que cualquier evaluación rigurosa exige aceptar las condiciones en HuggingFace. En el momento de redactar esta ficha registra 0 descargas y 0 likes.
+Su relevancia potencial reside en el tamaño: la mayoría de clasificadores de prompt injection disponibles son modelos pequeños (entre 20 y 200 millones de parámetros), mientras que este parte de una base de 27.000 millones. No obstante, el repositorio no incluye tarjeta descriptiva, resultados de evaluación ni documentación de entrenamiento, y el acceso está restringido mediante gated access, por lo que cualquier evaluación rigurosa exige aceptar las condiciones en Hugging Face. En el momento de redactar esta ficha registra 0 descargas y 0 likes.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Su relevancia potencial reside en el tamaño: la mayoría de clasificadores de p
 | Pipeline declarado | text-classification |
 | Modelo base | denis-pplx/autojev-27b (fine-tune) |
 | Modalidad de entrada | Texto; el tag image-text-to-text sugiere entrada de imagen y texto |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 54,7 GB |
 
 ## Arquitectura y entrenamiento
@@ -80,10 +80,10 @@ No se dispone de datos de rendimiento de secrity-one-27b, por lo que la comparac
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| superagent-ai/secrity-one-27b | 27,36 mil millones | Clasificación de prompt injection | Apache 2.0 | HuggingFace, acceso restringido | No publicados |
-| meta-llama/Llama-Prompt-Guard-2-86M | 86 millones (aprox.) | Detección de prompt injection | Licencia comunitaria de Llama | HuggingFace, acceso restringido | No comparados aquí |
-| protectai/deberta-v3-base-prompt-injection-v2 | 184 millones (aprox.) | Detección de prompt injection | Apache 2.0 | HuggingFace, acceso abierto | No comparados aquí |
-| Llama-Guard-3-8B | 8 mil millones (aprox.) | Clasificación de seguridad de contenido | Licencia comunitaria de Llama | HuggingFace, acceso restringido | No comparados aquí |
+| superagent-ai/secrity-one-27b | 27,36 mil millones | Clasificación de prompt injection | Apache 2.0 | Hugging Face, acceso restringido | No publicados |
+| meta-llama/Llama-Prompt-Guard-2-86M | 86 millones (aprox.) | Detección de prompt injection | Licencia comunitaria de Llama | Hugging Face, acceso restringido | No comparados aquí |
+| protectai/deberta-v3-base-prompt-injection-v2 | 184 millones (aprox.) | Detección de prompt injection | Apache 2.0 | Hugging Face, acceso abierto | No comparados aquí |
+| Llama-Guard-3-8B | 8 mil millones (aprox.) | Clasificación de seguridad de contenido | Licencia comunitaria de Llama | Hugging Face, acceso restringido | No comparados aquí |
 
 La diferencia principal es de escala: secrity-one-27b es entre uno y dos órdenes de magnitud mayor que los clasificadores de prompt injection habituales, lo que encarece su despliegue y su latencia potencial sin que se haya demostrado una mejora proporcional en precisión.
 
@@ -94,15 +94,15 @@ La diferencia principal es de escala: secrity-one-27b es entre uno y dos órdene
 - Sesgos conocidos: no disponibles; al no documentarse la composición del dataset, no se puede evaluar el sesgo.
 - Riesgo de alucinación: aunque la tarea declarada es de clasificación, un modelo de este tamaño puede generar texto si se usa fuera de su pipeline previsto; sin evaluación no puede descartarse un comportamiento errático.
 - Limitación de idioma: solo se declara inglés, por lo que su uso sobre entradas en castellano u otros idiomas no está validado y podría degradar la detección.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad.
 - Licencia: Apache 2.0 permite uso comercial y modificación, pero el modelo deriva de denis-pplx/autojev-27b, cuya licencia y procedencia conviene verificar antes de un despliegue comercial.
 - Coste de despliegue: 27,36 mil millones de parámetros implican al menos una GPU de 40-80 GB en FP16 o INT8, muy por encima de lo habitual en clasificadores de seguridad.
 - Ausencia de adopción: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado el modelo.
-- Fecha de publicación futura: el repositorio figura creado el 25 de septiembre de 2026, dato que debe verificarse directamente en HuggingFace.
+- Fecha de publicación futura: el repositorio figura creado el 25 de septiembre de 2026, dato que debe verificarse directamente en Hugging Face.
 - Ausencia de cuantizaciones publicadas: no se confirman ficheros GGUF ni variantes INT4/INT8, lo que condiciona el despliegue en hardware de consumo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/superagent-ai/secrity-one-27b
+- Hugging Face: https://huggingface.co/superagent-ai/secrity-one-27b
 - Modelo base: https://huggingface.co/denis-pplx/autojev-27b
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

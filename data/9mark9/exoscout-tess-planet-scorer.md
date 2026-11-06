@@ -2,7 +2,7 @@
 
 ## Resumen
 
-exoscout-tess-planet-scorer es un modelo de clasificación tabular publicado por el usuario 9mark9 en HuggingFace, diseñado para puntuar señales candidatas a planeta detectadas por la misión TESS de la NASA. No es un modelo de lenguaje ni una red neuronal generativa: es un ensamblado de diez miembros (cinco redes convolucionales pequeñas y cinco modelos de árboles con boosting de gradiente) que recibe la curva de brillo plegada de una señal y devuelve una probabilidad de planeta junto con una medida de desacuerdo entre los diez componentes. Resuelve un problema operativo concreto de la astrofísica de exoplanetas: priorizar el seguimiento de miles de candidatos no confirmados.
+exoscout-tess-planet-scorer es un modelo de clasificación tabular publicado por el usuario 9mark9 en Hugging Face, diseñado para puntuar señales candidatas a planeta detectadas por la misión TESS de la NASA. No es un modelo de lenguaje ni una red neuronal generativa: es un ensamblado de diez miembros (cinco redes convolucionales pequeñas y cinco modelos de árboles con boosting de gradiente) que recibe la curva de brillo plegada de una señal y devuelve una probabilidad de planeta junto con una medida de desacuerdo entre los diez componentes. Resuelve un problema operativo concreto de la astrofísica de exoplanetas: priorizar el seguimiento de miles de candidatos no confirmados.
 
 El modelo se entrenó sobre 2.477 señales ya resueltas (1.375 planetas y 1.102 falsos positivos) procedentes de 2.336 estrellas, con validación cruzada de cinco pliegues y tres semillas, manteniendo todas las señales de una misma estrella en el mismo lado de cada partición. Alcanza un AUC de 0,9310 en validación cruzada y un AUC de 0,929 sobre una partición de prueba de 619 señales retenida en una auditoría de octubre de 2026.
 
@@ -71,7 +71,7 @@ En la partición de prueba de 619 señales retenida en la auditoría de octubre 
 
 | Modelo | Enfoque | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| exoscout-tess-planet-scorer | Ensamblado de 5 CNN + 5 GBT | 3 curvas plegadas + 13 características | MIT | Pesos y código en HuggingFace |
+| exoscout-tess-planet-scorer | Ensamblado de 5 CNN + 5 GBT | 3 curvas plegadas + 13 características | MIT | Pesos y código en Hugging Face |
 | Astronet-Triage | Red neuronal sobre curvas de luz TESS | Curvas de luz y datos auxiliares | no disponible en la información | No disponible en la información |
 | ExoMiner | Red neuronal profunda con múltiples entradas | Curvas de luz, imágenes de centroides y datos estelares | no disponible en la información | No disponible en la información |
 
@@ -91,7 +91,7 @@ La model card señala explícitamente que Astronet-Triage y ExoMiner emplean má
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/9mark9/exoscout-tess-planet-scorer
+- Modelo en Hugging Face: https://huggingface.co/9mark9/exoscout-tess-planet-scorer
 - Candidatos abiertos con curvas de luz (Kaggle): https://www.kaggle.com/datasets/shaikizaaz/tess-candidates-with-light-curves
 - Planetas confirmados frente a falsos positivos (Kaggle): https://www.kaggle.com/datasets/shaikizaaz/tess-planets-vs-false-positives
 - Ranking de candidatos producido por el modelo (Kaggle): https://www.kaggle.com/datasets/shaikizaaz/tess-planet-candidate-ranking

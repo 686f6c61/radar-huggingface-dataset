@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks estandar (por ejemplo, recompensa e
 
 | Modelo | Tipo | Entorno | Algoritmo | Recompensa declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-johnnybae-v1-halfcheetah-ppo | Politica MLP PPO | `HalfCheetah-v5` con wrapper anti-volteretas | PPO | +6036,1 (entorno modificado) | no disponible | HuggingFace |
+| connectailab-rl-johnnybae-v1-halfcheetah-ppo | Politica MLP PPO | `HalfCheetah-v5` con wrapper anti-volteretas | PPO | +6036,1 (entorno modificado) | no disponible | Hugging Face |
 | Implementaciones de referencia de PPO en CleanRL o Stable-Baselines3 | Politicas MLP PPO | `HalfCheetah-v4`/`v5` estandar | PPO | no disponible en esta ficha | MIT en los proyectos citados (verificar) | GitHub |
 | Algoritmos off-policy (SAC, TD3) en `HalfCheetah` | Politicas MLP | `HalfCheetah-v4`/`v5` estandar | SAC / TD3 | no disponible en esta ficha | MIT en los proyectos citados (verificar) | GitHub |
 
@@ -98,8 +98,8 @@ No se dispone de datos publicados que permitan una comparacion numerica homogene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johnnybae/connectailab-rl-johnnybae-v1-halfcheetah-ppo
-- Perfil del autor en HuggingFace: https://huggingface.co/Johnnybae
+- Modelo en Hugging Face: https://huggingface.co/Johnnybae/connectailab-rl-johnnybae-v1-halfcheetah-ppo
+- Perfil del autor en Hugging Face: https://huggingface.co/Johnnybae
 - Entorno `HalfCheetah-v5` en Gymnasium (documentacion): https://gymnasium.farama.org/environments/mujoco/half_cheetah/
 - MuJoCo (documentacion oficial): https://mujoco.org/
 - PPO, paper original de Schulman et al.: https://arxiv.org/abs/1707.06347

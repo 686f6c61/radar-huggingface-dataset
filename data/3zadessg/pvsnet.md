@@ -2,11 +2,11 @@
 
 ## Resumen
 
-PVSNet es un modelo de síntesis de vistas (view synthesis) en tiempo real a partir de una única imagen de entrada, desarrollado por el usuario 3ZadeSSG y publicado en HuggingFace bajo la licencia AGPL-3.0. El repositorio no contiene únicamente PVSNet, sino que agrupa dos modelos del mismo grupo de trabajo: PVSNet (síntesis de vistas con conciencia de posición) y PLFNet (reconstrucción de campos de luz, *light field reconstruction*). El pipeline declarado en HuggingFace es `image-to-image`, y el tamaño del repositorio es de 3,9 GB, lo que corresponde a los pesos de ambos modelos y sus artefactos asociados.
+PVSNet es un modelo de síntesis de vistas (view synthesis) en tiempo real a partir de una única imagen de entrada, desarrollado por el usuario 3ZadeSSG y publicado en Hugging Face bajo la licencia AGPL-3.0. El repositorio no contiene únicamente PVSNet, sino que agrupa dos modelos del mismo grupo de trabajo: PVSNet (síntesis de vistas con conciencia de posición) y PLFNet (reconstrucción de campos de luz, *light field reconstruction*). El pipeline declarado en Hugging Face es `image-to-image`, y el tamaño del repositorio es de 3,9 GB, lo que corresponde a los pesos de ambos modelos y sus artefactos asociados.
 
 El problema que aborda es el de generar vistas novedosas y coherentes a partir de una sola imagen, sin disponer de un conjunto multi-cámara, y hacerlo con latencia compatible con renderizado en tiempo real. Esto lo sitúa en la intersección de la reconstrucción de campos de luz, la síntesis de vistas y el renderizado interactivo, áreas relevantes para realidad virtual y aumentada, visualización 3D y fotografía computacional.
 
-No se dispone de información pública sobre la arquitectura interna (transformer, CNN, red basada en campos implícitos, etc.), el número de parámetros, los datos de entrenamiento ni los resultados de benchmarks. La model card en HuggingFace es muy breve y se limita a describir el propósito del modelo y a enlazar la página de proyecto y dos demos. Cualquier dato no listado a continuación debe considerarse no disponible en la información proporcionada.
+No se dispone de información pública sobre la arquitectura interna (transformer, CNN, red basada en campos implícitos, etc.), el número de parámetros, los datos de entrenamiento ni los resultados de benchmarks. La model card en Hugging Face es muy breve y se limita a describir el propósito del modelo y a enlazar la página de proyecto y dos demos. Cualquier dato no listado a continuación debe considerarse no disponible en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ No se dispone de información pública sobre la arquitectura interna (transforme
 | Licencia | AGPL-3.0 |
 | Formato de pesos | no disponible (el repositorio ocupa 3,9 GB, pero no se detalla el formato) |
 
-Otros datos de la ficha de HuggingFace:
+Otros datos de la ficha de Hugging Face:
 
 | Parametro | Valor |
 |---|---|
@@ -47,7 +47,7 @@ Tampoco hay información sobre el volumen de datos de entrenamiento, la composic
 - Reconstrucción de campos de luz (light field reconstruction) mediante la variante PLFNet.
 - Renderizado en tiempo real, según la etiqueta `Real-Time-Rendering` del repositorio.
 - Generación de imágenes condicionada a posición («position-aware»), lo que permite variar el punto de vista de salida.
-- Dos variantes desplegables de forma independiente: PVSNet y PLFNet, con demos separadas en HuggingFace Spaces.
+- Dos variantes desplegables de forma independiente: PVSNet y PLFNet, con demos separadas en Hugging Face Spaces.
 - No se ha confirmado soporte de tool calling, function calling, agentes, razonamiento multi-paso, capacidades multilingües, ni modos especiales como thinking mode, visión general o audio. Al tratarse de un modelo de visión image-to-image, estas capacidades no aplican en el sentido habitual de los modelos de lenguaje.
 
 ## Casos de uso
@@ -58,7 +58,7 @@ Tampoco hay información sobre el volumen de datos de entrenamiento, la composic
 - Renderizado interactivo en aplicaciones 3D: integración del modelo en un motor gráfico para sintetizar vistas intermedias en tiempo real entre cámaras virtuales, reduciendo el coste de renderizar geometría completa.
 - Visualización de patrimonio y catálogo de producto: generar vistas adicionales de objetos o espacios fotografiados una sola vez, para su uso en fichas de producto, tours virtuales o visores web.
 - Investigación en síntesis de vistas: servir como línea base reproducible (pesos publicados y demo interactiva) para comparar métodos de reconstrucción de campos de luz y síntesis posicional.
-- Prototipado rápido en demos web: al existir un HuggingFace Space público, se puede evaluar el comportamiento del modelo de forma interactiva antes de integrarlo en un producto propio.
+- Prototipado rápido en demos web: al existir un Hugging Face Space público, se puede evaluar el comportamiento del modelo de forma interactiva antes de integrarlo en un producto propio.
 
 ## Benchmarks y rendimiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Espacio en disco: el repositorio ocupa 3,9 GB, por lo que se necesita al menos ese espacio para descargar los pesos y artefactos de ambas variantes (PVSNet y PLFNet).
 - GPU recomendadas: no disponible en la información proporcionada.
 - Compatibilidad con GPU de consumo: no confirmada. La etiqueta `Real-Time-Rendering` sugiere que el modelo está diseñado para latencias bajas, lo que en principio sería compatible con GPU de gama alta de consumo, pero no hay datos que lo confirmen.
-- Opciones de despliegue: no se documentan en la model card. Existen dos HuggingFace Spaces oficiales ([PVSNet](https://huggingface.co/spaces/3ZadeSSG/PVSNet) y [PLFNet](https://huggingface.co/spaces/3ZadeSSG/PLFNet)) que pueden servir como referencia de despliegue.
+- Opciones de despliegue: no se documentan en la model card. Existen dos Hugging Face Spaces oficiales ([PVSNet](https://huggingface.co/spaces/3ZadeSSG/PVSNet) y [PLFNet](https://huggingface.co/spaces/3ZadeSSG/PLFNet)) que pueden servir como referencia de despliegue.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No disponible. En la información proporcionada no se incluye ninguna comparaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3ZadeSSG/PVSNet
+- Modelo en Hugging Face: https://huggingface.co/3ZadeSSG/PVSNet
 - Pagina de proyecto: https://realistic3d-miun.github.io/PVSNet
 - Demo de PVSNet: https://huggingface.co/spaces/3ZadeSSG/PVSNet
 - Demo de PLFNet (reconstruccion de campo de luz): https://huggingface.co/spaces/3ZadeSSG/PLFNet

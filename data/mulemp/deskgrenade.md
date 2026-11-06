@@ -2,9 +2,9 @@
 
 ## Resumen
 
-mulemp/DeskGrenade es un modelo publicado en HuggingFace por el usuario mulemp, con acceso restringido (gated) y sin documentacion tecnica publica. El repositorio ocupa 24,8 GB, lo que sugiere un modelo de pesos completos, pero no se ha publicado informacion sobre arquitectura, parametros, licencia ni capacidades. Hasta la fecha registra cero descargas y una unica valoracion positiva.
+mulemp/DeskGrenade es un modelo publicado en Hugging Face por el usuario mulemp, con acceso restringido (gated) y sin documentacion tecnica publica. El repositorio ocupa 24,8 GB, lo que sugiere un modelo de pesos completos, pero no se ha publicado informacion sobre arquitectura, parametros, licencia ni capacidades. Hasta la fecha registra cero descargas y una unica valoracion positiva.
 
-La relevancia de este modelo es actualmente indeterminada: no existe documentacion asociada, ni paper, ni resultados de benchmarks, ni especificaciones tecnicas accesibles. El acceso gated requiere aceptar condiciones en HuggingFace, pero incluso con acceso aprobado, la ficha del modelo no ofrece detalles adicionales. Se recomienda precaucion antes de integrarlo en cualquier flujo de trabajo.
+La relevancia de este modelo es actualmente indeterminada: no existe documentacion asociada, ni paper, ni resultados de benchmarks, ni especificaciones tecnicas accesibles. El acceso gated requiere aceptar condiciones en Hugging Face, pero incluso con acceso aprobado, la ficha del modelo no ofrece detalles adicionales. Se recomienda precaucion antes de integrarlo en cualquier flujo de trabajo.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio del mode
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica publica: arquitectura, parametros y licencia desconocidos.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace sin saber que se esta aceptando.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face sin saber que se esta aceptando.
 - Cero descargas registradas: no hay comunidad ni reportes de uso que validen el comportamiento.
 - Sin resultados de benchmarks ni evaluaciones independientes.
 - Licencia no especificada: uso comercial no garantizado y legalmente arriesgado.
@@ -58,6 +58,6 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulemp/DeskGrenade
+- Modelo en Hugging Face: https://huggingface.co/mulemp/DeskGrenade
 - Perfil del autor: https://huggingface.co/mulemp
 - Entrada en modelindex.dev: https://modelindex.dev/orgs/DeskGrenade

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/delta-opal-76` es un adaptador LoRA publicado por el usuario `models4world` en HuggingFace, diseñado para la generacion de texto. Se presenta como un fine-tuning basado en el modelo `models4world/maple-signal-64`, del cual no se ofrecen detalles publicos sobre arquitectura, tamaño o capacidades. La ficha del modelo esta practicamente vacia, con todos los campos marcados como "More Information Needed", lo que impide conocer su proposito exacto, los datos de entrenamiento o las condiciones de uso.
+El modelo `models4world/delta-opal-76` es un adaptador LoRA publicado por el usuario `models4world` en Hugging Face, diseñado para la generacion de texto. Se presenta como un fine-tuning basado en el modelo `models4world/maple-signal-64`, del cual no se ofrecen detalles publicos sobre arquitectura, tamaño o capacidades. La ficha del modelo esta practicamente vacia, con todos los campos marcados como "More Information Needed", lo que impide conocer su proposito exacto, los datos de entrenamiento o las condiciones de uso.
 
 A fecha de su publicacion (agosto de 2026), el repositorio registra cero descargas y cero likes, lo que sugiere que se trata de un artefacto reciente y sin adopcion comunitaria. El tamaño del repositorio es de 1,9 GB, que corresponde a los pesos del adaptador LoRA, no al modelo base completo. La licencia no esta especificada, por lo que no se puede determinar si es apto para uso comercial.
 
@@ -64,5 +64,5 @@ No disponible. No se conocen otros modelos de la misma familia (`models4world/ma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/models4world/delta-opal-76
+- Repositorio Hugging Face: https://huggingface.co/models4world/delta-opal-76
 - Modelo base: https://huggingface.co/models4world/maple-signal-64

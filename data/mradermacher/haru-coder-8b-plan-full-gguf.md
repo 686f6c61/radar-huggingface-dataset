@@ -31,7 +31,7 @@ Su relevancia actual es práctica: ofrece una vía de despliegue local y offline
 
 No se ha publicado informacion sobre la arquitectura interna del modelo base en los materiales disponibles. No hay datos sobre si emplea un transformer denso convencional, una mezcla de expertos (MoE), atencion lineal o una arquitectura hibrida, ni sobre el numero de capas, dimensiones ocultas, cabezas de atencion o tipo de tokenizador. El nombre del modelo y el numero de parametros situan al modelo en el segmento de ~7-8 B, categoria en la que predominan los transformers densos, pero esto no se confirma en la documentacion.
 
-Tampoco se dispone de informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa. La model card del repositorio GGUF se limita a describir el proceso de cuantizacion: cuantizaciones estaticas (sin imatrix ni ponderadas por importancia), generadas a partir del modelo base en formato HuggingFace, con tensor de salida cuantizado y `quantize_version` 2. El autor indica que las cuantizaciones ponderadas o con imatrix no estan disponibles por el momento y que pueden solicitarse mediante una discusion en la comunidad.
+Tampoco se dispone de informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas como decodificacion especulativa. La model card del repositorio GGUF se limita a describir el proceso de cuantizacion: cuantizaciones estaticas (sin imatrix ni ponderadas por importancia), generadas a partir del modelo base en formato Hugging Face, con tensor de salida cuantizado y `quantize_version` 2. El autor indica que las cuantizaciones ponderadas o con imatrix no estan disponibles por el momento y que pueden solicitarse mediante una discusion en la comunidad.
 
 ## Capacidades
 
@@ -132,7 +132,7 @@ Para una comparacion rigurosa seria necesario consultar las fichas de modelos pu
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/haru-coder-8b-plan-full-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/haru-coder-8b-plan-full-GGUF
 - Modelo base: https://huggingface.co/harumori47/haru-coder-8b-plan-full
 - Pagina de resumen y descargas del cuantizador para este modelo: https://hf.tst.eu/model#haru-coder-8b-plan-full-GGUF
 - Pagina de solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

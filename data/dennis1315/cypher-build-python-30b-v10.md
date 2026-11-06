@@ -69,6 +69,6 @@ No se dispone de datos de rendimiento para comparar este adaptador con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dennis1315/cypher-build-python-30b-v10
+- Repositorio Hugging Face: https://huggingface.co/Dennis1315/cypher-build-python-30b-v10
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Paper de Qwen3 (referencia): https://arxiv.org/abs/2505.09388 (no confirmado, se indica como referencia general)

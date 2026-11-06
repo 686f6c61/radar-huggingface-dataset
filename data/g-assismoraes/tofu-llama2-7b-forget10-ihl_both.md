@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-forget10-ihl_both | ~6,74 B | no disponible (base LLaMA 2: 4096) | Llama 2 | Unlearning TOFU (forget10) | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 | Llama 2 | Fine-tuning completo sobre TOFU | HuggingFace (modelo base) |
-| LLaMA 2 7B (Meta) | ~6,74 B | 4096 | Llama 2 | Modelo general preentrenado y alineado | HuggingFace, amplia adopcion |
-| Otros checkpoints forgetXX del mismo autor | ~6,74 B | no disponible | Llama 2 | Variantes de unlearning | HuggingFace |
+| g-assismoraes/tofu-llama2-7b-forget10-ihl_both | ~6,74 B | no disponible (base LLaMA 2: 4096) | Llama 2 | Unlearning TOFU (forget10) | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 | Llama 2 | Fine-tuning completo sobre TOFU | Hugging Face (modelo base) |
+| LLaMA 2 7B (Meta) | ~6,74 B | 4096 | Llama 2 | Modelo general preentrenado y alineado | Hugging Face, amplia adopcion |
+| Otros checkpoints forgetXX del mismo autor | ~6,74 B | no disponible | Llama 2 | Variantes de unlearning | Hugging Face |
 
 La comparacion de rendimiento cuantitativo con estas alternativas no esta disponible en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ La comparacion de rendimiento cuantitativo con estas alternativas no esta dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_both
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_both
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Repositorio TOFU (LocusLab): https://github.com/locuslab/tofu
 - Paper TOFU: https://arxiv.org/abs/2401.06121

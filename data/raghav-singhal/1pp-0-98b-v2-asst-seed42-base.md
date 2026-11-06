@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| 1pp-0.98b-v2-asst-seed42-base | 0,98B | 4.096 | Apache 2.0 | en | HuggingFace |
-| SmolLM2-1.7B (referencia por tokenizador) | 1,7B | 8.192 (según versión) | Apache 2.0 | en | HuggingFace |
-| Llama 3.2 1B | 1,2B | 128.000 | Llama 3.2 Community License | multilingüe | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | 32.768 | Apache 2.0 | multilingüe | HuggingFace |
+| 1pp-0.98b-v2-asst-seed42-base | 0,98B | 4.096 | Apache 2.0 | en | Hugging Face |
+| SmolLM2-1.7B (referencia por tokenizador) | 1,7B | 8.192 (según versión) | Apache 2.0 | en | Hugging Face |
+| Llama 3.2 1B | 1,2B | 128.000 | Llama 3.2 Community License | multilingüe | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | 32.768 | Apache 2.0 | multilingüe | Hugging Face |
 
 La comparación es orientativa: el modelo 1PP es un artefacto de investigación con contexto de 4.096 tokens y solo inglés, por lo que no compite en capacidades generales con asistentes comerciales del mismo rango de parámetros. No se dispone de benchmarks comparativos publicados para establecer diferencias de rendimiento.
 
@@ -98,7 +98,7 @@ La comparación es orientativa: el modelo 1PP es un artefacto de investigación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed42-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-asst-seed42-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

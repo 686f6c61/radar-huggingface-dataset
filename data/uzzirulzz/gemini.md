@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `uzzirulzz/gemini` alojado en HuggingFace existe, pero su página pública no contiene información tecnica alguna: no hay descripcion, no se listan archivos, no se indica pipeline ni idiomas soportados y no tiene descargas ni likes. El acceso esta restringido (gated) y requiere aceptar condiciones antes de poder consultar el contenido, por lo que, a fecha de elaboracion de esta ficha, no se puede acceder a los pesos ni a la documentacion del modelo.
+El repositorio `uzzirulzz/gemini` alojado en Hugging Face existe, pero su página pública no contiene información tecnica alguna: no hay descripcion, no se listan archivos, no se indica pipeline ni idiomas soportados y no tiene descargas ni likes. El acceso esta restringido (gated) y requiere aceptar condiciones antes de poder consultar el contenido, por lo que, a fecha de elaboracion de esta ficha, no se puede acceder a los pesos ni a la documentacion del modelo.
 
 La licencia declarada es OSL-3.0, una licencia de software libre cuyo texto esta orientado a codigo fuente, no a distribuir modelos de IA, lo que resulta atipico en el ecosistema de modelos de lenguaje. El nombre "gemini" puede inducir a confusion con los modelos Gemini de Google, pero no existe ningun dato en la informacion disponible que confirme que este repositorio este relacionado con dicha familia.
 
@@ -23,7 +23,7 @@ Por tanto, no es posible evaluar este modelo ni recomendar su uso hasta que el a
 
 ## Arquitectura y entrenamiento
 
-No disponible. No se ha publicado informacion sobre la arquitectura, el procedimiento de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. La pagina de HuggingFace no incluye modelo card ni ficheros visibles.
+No disponible. No se ha publicado informacion sobre la arquitectura, el procedimiento de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO. La pagina de Hugging Face no incluye modelo card ni ficheros visibles.
 
 ## Capacidades
 
@@ -69,6 +69,6 @@ No disponible. No se dispone de datos tecnicos para realizar una comparacion fia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/uzzirulzz/gemini
+- Repositorio en Hugging Face: https://huggingface.co/uzzirulzz/gemini
 - Repositorio GitHub con referencia a Gemini (contexto externo, no necesariamente relacionado con este modelo): https://github.com/uzzirulzz-cyber/ccht
 - Pagina oficial de Google Gemini (referencia externa por el nombre): https://gemini.google.com/

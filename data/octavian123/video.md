@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Octavian123/video` es un modelo publicado en HuggingFace bajo licencia Apache 2.0, con un tamaño de repositorio de 1.2 GB. Fue creado el 16 de agosto de 2026 y actualizado el mismo día. No se dispone de ninguna documentación técnica en la model card más allá de la licencia, ni de metadatos como arquitectura, número de parámetros, pipeline o idiomas soportados. A pesar del nombre "video", no hay evidencia de que se trate de un modelo de generación o procesamiento de vídeo; podría ser un checkpoint, un conjunto de pesos o un experimento sin publicar.
+El repositorio `Octavian123/video` es un modelo publicado en Hugging Face bajo licencia Apache 2.0, con un tamaño de repositorio de 1.2 GB. Fue creado el 16 de agosto de 2026 y actualizado el mismo día. No se dispone de ninguna documentación técnica en la model card más allá de la licencia, ni de metadatos como arquitectura, número de parámetros, pipeline o idiomas soportados. A pesar del nombre "video", no hay evidencia de que se trate de un modelo de generación o procesamiento de vídeo; podría ser un checkpoint, un conjunto de pesos o un experimento sin publicar.
 
 La ausencia total de especificaciones, benchmarks o ejemplos de uso impide cualquier evaluación técnica. Este repositorio no puede considerarse listo para producción ni para investigación sin una verificación previa de su contenido real. Se recomienda contactar con el autor o analizar los archivos directamente antes de cualquier integración.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la naturale
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Octavian123/video
+- Repositorio en Hugging Face: https://huggingface.co/Octavian123/video

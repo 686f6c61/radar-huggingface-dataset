@@ -84,7 +84,7 @@ La comparación principal es con las dos builds de las que deriva: frente a la v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedihamdy/Ornith-1.5-9B-MLX-4bit-vision
+- Modelo en Hugging Face: https://huggingface.co/ahmedihamdy/Ornith-1.5-9B-MLX-4bit-vision
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Build MLX-4bit de origen: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-4bit
 - Astronomical (aplicación y CLI): https://aosama.github.io/astronomical/

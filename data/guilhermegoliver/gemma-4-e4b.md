@@ -87,7 +87,7 @@ Frente a E2B, E4B duplica aproximadamente los parámetros efectivos manteniendo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GuilhermeGoliver/gemma-4-E4B
+- Repositorio en Hugging Face: https://huggingface.co/GuilhermeGoliver/gemma-4-E4B
 - Repositorio oficial de origen: https://huggingface.co/google/gemma-4-E4B
 - Colección Gemma 4: https://huggingface.co/collections/google/gemma-4
 - GitHub: https://github.com/google-gemma

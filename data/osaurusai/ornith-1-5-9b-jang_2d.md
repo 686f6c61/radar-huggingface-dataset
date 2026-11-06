@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_2D)
+- [Modelo en Hugging Face](https://huggingface.co/OsaurusAI/Ornith-1.5-9B-JANG_2D)
 - [Modelo base Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - [Colección Ornith-1.5](https://huggingface.co/collections/ornith-ai/ornith-15)
 - [Blog de Ornith AI: Ornith-1.5](https://ornith.ai/ornith_1_5.html)

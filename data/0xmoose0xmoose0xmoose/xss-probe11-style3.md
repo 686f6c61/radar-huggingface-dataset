@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `0xmoose0xmoose0xmoose/xss-probe11-style3` de HuggingFace no contiene un modelo de inteligencia artificial utilizable. No se declara pipeline, licencia, idiomas, arquitectura ni artefactos de pesos, y el repositorio acumula 0 descargas y 0 "likes" desde su creacion. La unica evidencia disponible apunta a que se trata de una prueba de inyeccion de contenido HTML/CSS en el renderizado de model cards de la plataforma, no de un artefacto de aprendizaje automatico.
+El repositorio `0xmoose0xmoose0xmoose/xss-probe11-style3` de Hugging Face no contiene un modelo de inteligencia artificial utilizable. No se declara pipeline, licencia, idiomas, arquitectura ni artefactos de pesos, y el repositorio acumula 0 descargas y 0 "likes" desde su creacion. La unica evidencia disponible apunta a que se trata de una prueba de inyeccion de contenido HTML/CSS en el renderizado de model cards de la plataforma, no de un artefacto de aprendizaje automatico.
 
-La model card asociada incluye unicamente etiquetas `` con reglas CSS que intentan cargar recursos externos desde el dominio `rce.lc` (variantes `scope-retest1`, `scope-retest2` y `scope-retest3`), tanto mediante `background:url(...)` sobre `body` como mediante selectores que apuntan a clases de saneamiento de HuggingFace (`.hf-sanitized`). Estas construcciones son caracteristicas de sondas de Cross-Site Scripting (XSS) y de exfiltracion por peticion de recursos remotos, no de documentacion tecnica de un modelo.
+La model card asociada incluye unicamente etiquetas `` con reglas CSS que intentan cargar recursos externos desde el dominio `rce.lc` (variantes `scope-retest1`, `scope-retest2` y `scope-retest3`), tanto mediante `background:url(...)` sobre `body` como mediante selectores que apuntan a clases de saneamiento de Hugging Face (`.hf-sanitized`). Estas construcciones son caracteristicas de sondas de Cross-Site Scripting (XSS) y de exfiltracion por peticion de recursos remotos, no de documentacion tecnica de un modelo.
 
-Por tanto, esta ficha no puede describir capacidades, arquitectura ni rendimiento: no hay informacion tecnica que analizar. Lo relevante en terminos de seguridad es documentar el repositorio como lo que parece ser: una sonda de ataque a la cadena de renderizado de contenido de HuggingFace. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo.
+Por tanto, esta ficha no puede describir capacidades, arquitectura ni rendimiento: no hay informacion tecnica que analizar. Lo relevante en terminos de seguridad es documentar el repositorio como lo que parece ser: una sonda de ataque a la cadena de renderizado de contenido de Hugging Face. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha no puede describir capacidades, arquitectura ni rendimient
 | Licencia | no disponible (sin licencia declarada en el repositorio) |
 | Formato de pesos | no disponible (el repositorio no publica pesos) |
 | Autor | 0xmoose0xmoose0xmoose |
-| Identificador en HuggingFace | 0xmoose0xmoose0xmoose/xss-probe11-style3 |
+| Identificador en Hugging Face | 0xmoose0xmoose0xmoose/xss-probe11-style3 |
 | Pipeline declarado | no disponible |
 | Etiquetas del repositorio | region:us |
 | Descargas | 0 |
@@ -79,11 +79,11 @@ No disponible. No existen modelos comparables en la misma categoria porque no se
 - Anomalia en metadatos: la fecha de creacion declarada (2026-09-15) es posterior a la fecha habitual de publicacion de fichas de este tipo; conviene tratarla con cautela.
 - Nomenclatura indicativa: el identificador incluye `xss-probe` y un sufijo numerado (`style3`), patron habitual en campanas sistematicas de sondeo de vulnerabilidades.
 - Resultados de busqueda no relacionados: las busquedas web devolvieron exclusivamente paginas de organizaciones sociales alemanas (Diakonie Wurzburg, Diakonie Bayern, Caritas Wurzburg), sin ninguna relacion con el repositorio; se descartan como fuentes.
-- Recomendacion operativa: reportar el repositorio al equipo de seguridad de HuggingFace y no interactuar con el desde navegadores con sesion iniciada en la plataforma.
+- Recomendacion operativa: reportar el repositorio al equipo de seguridad de Hugging Face y no interactuar con el desde navegadores con sesion iniciada en la plataforma.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe11-style3
+- Repositorio en Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/xss-probe11-style3
 - Paper: no disponible
 - Blog o nota tecnica del autor: no disponible
 - Repositorio de codigo: no disponible

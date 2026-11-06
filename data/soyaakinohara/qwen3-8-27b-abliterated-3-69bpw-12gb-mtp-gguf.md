@@ -76,7 +76,7 @@ La principal diferencia frente al modelo original es el tamaño: 12,6 GB frente 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/soyaakinohara/qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf
+- Repositorio Hugging Face: https://huggingface.co/soyaakinohara/qwen3.8-27b-abliterated-3.69bpw-12GB-MTP.gguf
 - Modelo base (AEON-7): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto Ridge (inspiración de cuantización): https://huggingface.co/empero-ai/Qwen3.8-27B-Ridge-GGUF

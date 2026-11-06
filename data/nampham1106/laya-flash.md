@@ -18,7 +18,7 @@ Su relevancia actual es acotada pero clara para quien trabaje con agentes de dec
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica el state dict completo en fp32; no incluye GGUF, AWQ, GPTQ ni variantes de 8/4 bits) |
 | Idiomas soportados | no disponible |
-| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, etiqueta `license: other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (identificador `lfm1.0`, etiqueta `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (`model.safetensors`, state dict completo en fp32) |
 | Modelo base | LiquidAI/LFM2.5-Encoder-230M |
 | Tamano del repositorio | 1,0 GB |
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros totales | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nampham1106/laya-flash | 256,2 M | no disponible | Cabecera de decision sin entrenar (baseline de formato) | LFM Open License v1.0 | Repositorio HuggingFace propio, 0 descargas |
-| LiquidAI/LFM2.5-Encoder-230M | no disponible en la informacion proporcionada | no disponible | Encoder preentrenado por LiquidAI | no disponible en la informacion proporcionada | Repositorio HuggingFace de LiquidAI |
+| nampham1106/laya-flash | 256,2 M | no disponible | Cabecera de decision sin entrenar (baseline de formato) | LFM Open License v1.0 | Repositorio Hugging Face propio, 0 descargas |
+| LiquidAI/LFM2.5-Encoder-230M | no disponible en la informacion proporcionada | no disponible | Encoder preentrenado por LiquidAI | no disponible en la informacion proporcionada | Repositorio Hugging Face de LiquidAI |
 | Otros modelos de decision de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion sustentada por la informacion disponible es la del checkpoint con su propio modelo base: laya-flash reutiliza los pesos del encoder sin modificarlos y anade una cabecera aleatoria de aproximadamente 26 M de parametros (diferencia entre los 256,2 M totales y los 230 M que indica la denominacion del encoder). La busqueda web realizada no devolvio resultados relevantes: los enlaces obtenidos correspondian a un servicio de correo y no guardan relacion con el modelo, por lo que no se dispone de comparativas externas.
@@ -86,12 +86,12 @@ La unica comparacion sustentada por la informacion disponible es la del checkpoi
 - Sin informacion de contexto ni de idiomas: no se puede garantizar el comportamiento con secuencias largas ni con textos en idiomas distintos del ingles de los ejemplos de la model card.
 - Publicacion en fp32 unicamente: no hay cuantizaciones oficiales, lo que limita despliegues en entornos con restricciones de memoria muy severas, aunque el modelo es pequeno en terminos absolutos.
 - Validacion comunitaria practicamente inexistente: 0 descargas y 1 like en el momento de la consulta; no hay evidencia externa de su comportamiento.
-- Fechas de publicacion y actualizacion (22 de septiembre de 2026) y ausencia de *pipeline* declarado en HuggingFace; conviene verificar el estado del repositorio antes de integrarlo, dado que el autor indica que las versiones con fine-tuning reemplazaran estos ficheros en el mismo sitio.
+- Fechas de publicacion y actualizacion (22 de septiembre de 2026) y ausencia de *pipeline* declarado en Hugging Face; conviene verificar el estado del repositorio antes de integrarlo, dado que el autor indica que las versiones con fine-tuning reemplazaran estos ficheros en el mismo sitio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nampham1106/laya-flash
+- Modelo en Hugging Face: https://huggingface.co/nampham1106/laya-flash
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M
 - Repositorio del proyecto laya-flash: https://github.com/nampq11/laya-flash
-- Licencia LFM Open License v1.0: fichero `LICENSE` del repositorio en HuggingFace
+- Licencia LFM Open License v1.0: fichero `LICENSE` del repositorio en Hugging Face
 - Busqueda web: no se encontraron enlaces relevantes sobre el modelo; los resultados devueltos no guardaban relacion con la consulta.

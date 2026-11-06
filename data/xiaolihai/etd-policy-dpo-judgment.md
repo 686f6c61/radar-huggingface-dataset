@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `Xiaolihai/etd-policy-dpo-judgment` es un adaptador de ajuste fino publicado en HuggingFace por el usuario Xiaolihai. No se trata de un modelo completo, sino de un adaptador LoRA entrenado con la libreria PEFT sobre el modelo base declarado `model/Qwen3-8B`. El repositorio ocupa 1,1 GB y contiene pesos en formato safetensors, lo que es coherente con un adaptador de bajo rango sobre un transformer denso de aproximadamente 8 000 millones de parametros.
+El modelo identificado como `Xiaolihai/etd-policy-dpo-judgment` es un adaptador de ajuste fino publicado en Hugging Face por el usuario Xiaolihai. No se trata de un modelo completo, sino de un adaptador LoRA entrenado con la libreria PEFT sobre el modelo base declarado `model/Qwen3-8B`. El repositorio ocupa 1,1 GB y contiene pesos en formato safetensors, lo que es coherente con un adaptador de bajo rango sobre un transformer denso de aproximadamente 8 000 millones de parametros.
 
-La relevancia del artefacto es limitada y fundamentalmente experimental: acumula cero descargas y cero valoraciones, no tiene licencia declarada, no especifica idiomas soportados y su model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada. El nombre del repositorio sugiere un ajuste mediante DPO (Direct Preference Optimization) orientado a tareas de juicio o evaluacion de politicas ("policy") y "judgment"), pero esta interpretacion no esta confirmada por ninguna documentacion del autor.
+La relevancia del artefacto es limitada y fundamentalmente experimental: acumula cero descargas y cero valoraciones, no tiene licencia declarada, no especifica idiomas soportados y su model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada. El nombre del repositorio sugiere un ajuste mediante DPO (Direct Preference Optimization) orientado a tareas de juicio o evaluacion de politicas ("policy") y "judgment"), pero esta interpretacion no esta confirmada por ninguna documentacion del autor.
 
 Desde el punto de vista practico, se trata de un modelo no evaluado, no documentado y sin garantias de licencia, por lo que no es apto para uso en produccion sin una validacion previa exhaustiva por parte del equipo que lo adopte. La unica informacion fiable disponible es la metadata del repositorio, recogida en la seccion de especificaciones tecnicas.
 
@@ -34,7 +34,7 @@ Desde el punto de vista practico, se trata de un modelo no evaluado, no document
 
 No hay informacion publicada sobre la arquitectura interna del adaptador ni sobre el procedimiento de entrenamiento. Lo unico que puede afirmarse con certeza, a partir de la metadata, es que se trata de un adaptador LoRA gestionado con la libreria PEFT y disenado para cargarse sobre Qwen3-8B. El nombre del repositorio incluye las siglas "dpo", lo que sugiere un entrenamiento con optimizacion directa de preferencias en lugar de ajuste supervisado clasico, pero el autor no aporta ninguna confirmacion, ni describe el dataset, ni indica hiperparametros, ni si hubo una fase previa de SFT.
 
-Tampoco se documenta el rango del adaptador, el valor de alpha, las capas objetivo ni la composicion del corpus de preferencias. La model card incluye el campo de cita a `arxiv:1910.09700`, pero ese identificador corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla generica de HuggingFace; no es un paper del modelo. Los resultados de la busqueda web facilitada no contienen ninguna referencia a este modelo: son paginas sobre el videojuego Fortnite y no aportan datos tecnicos utilizables.
+Tampoco se documenta el rango del adaptador, el valor de alpha, las capas objetivo ni la composicion del corpus de preferencias. La model card incluye el campo de cita a `arxiv:1910.09700`, pero ese identificador corresponde al articulo de Lacoste et al. sobre calculo de emisiones de carbono, citado en la plantilla generica de Hugging Face; no es un paper del modelo. Los resultados de la busqueda web facilitada no contienen ninguna referencia a este modelo: son paginas sobre el videojuego Fortnite y no aportan datos tecnicos utilizables.
 
 ## Capacidades
 
@@ -98,13 +98,13 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de este 
 - Longitud de contexto desconocida: no se puede garantizar el comportamiento en contextos largos, especialmente si el adaptador se entreno con secuencias cortas.
 - Riesgo de sobreajuste al formato de evaluacion: los adaptadores entrenados con DPO pueden mostrar un rendimiento aparentemente bueno en el formato exacto de los datos de entrenamiento y degradarse fuera de el.
 - Cero adopcion: sin descargas ni valoraciones, no existe retroalimentacion de la comunidad que permita detectar problemas conocidos.
-- Metadatos anomalos: la fecha de creacion registrada es 2026-09-11, posterior a la fecha habitual de publicacion, y el identificador del modelo base aparece como `model/Qwen3-8B`, una ruta local en lugar de un identificador de repositorio de HuggingFace, lo que sugiere un proceso de publicacion automatizado o incompleto.
+- Metadatos anomalos: la fecha de creacion registrada es 2026-09-11, posterior a la fecha habitual de publicacion, y el identificador del modelo base aparece como `model/Qwen3-8B`, una ruta local en lugar de un identificador de repositorio de Hugging Face, lo que sugiere un proceso de publicacion automatizado o incompleto.
 - Reproducibilidad nula: no se indica el dataset, ni los hiperparametros, ni la version concreta del modelo base, por lo que los resultados no son reproducibles.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Xiaolihai/etd-policy-dpo-judgment
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Xiaolihai/etd-policy-dpo-judgment
 - Modelo base declarado en la metadata: `model/Qwen3-8B` (ruta no resoluble como repositorio publico; el modelo Qwen3-8B se distribuye habitualmente en https://huggingface.co/Qwen/Qwen3-8B, sin que exista confirmacion de que sea exactamente la version usada)
-- Referencia `arxiv:1910.09700`: https://arxiv.org/abs/1910.09700 (Lacoste et al., calculo de emisiones, citado en la plantilla generica de HuggingFace y no relacionado con el entrenamiento de este modelo)
+- Referencia `arxiv:1910.09700`: https://arxiv.org/abs/1910.09700 (Lacoste et al., calculo de emisiones, citado en la plantilla generica de Hugging Face y no relacionado con el entrenamiento de este modelo)
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - Nota sobre la busqueda web: los resultados proporcionados corresponden a paginas del videojuego Fortnite en jeuxvideo.com y no guardan ninguna relacion con este modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a `Xiaolihai/etd-policy-dpo-judgment`.

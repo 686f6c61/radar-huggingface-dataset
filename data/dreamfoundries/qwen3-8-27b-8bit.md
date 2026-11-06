@@ -66,5 +66,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DreamFoundries/Qwen3.8-27B-8bit
+- Hugging Face: https://huggingface.co/DreamFoundries/Qwen3.8-27B-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

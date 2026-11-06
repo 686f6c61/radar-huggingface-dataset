@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks de tarea) entre es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ankush13r/prelude-base-iter_1192093-yarn-160k
+- Modelo en Hugging Face: https://huggingface.co/ankush13r/prelude-base-iter_1192093-yarn-160k
 - Modelo base: https://huggingface.co/openeurollm/prelude-base
 - Version anterior con YaRN 128k: https://huggingface.co/ankush13r/prelude-base-iter_0989075-yarn-128k
 - Repositorio `openeurollm/prelude`: https://huggingface.co/openeurollm/prelude

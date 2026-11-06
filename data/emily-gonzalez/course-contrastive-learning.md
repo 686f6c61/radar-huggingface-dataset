@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emily-gonzalez/course-contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/emily-gonzalez/course-contrastive-learning
 - Tutorial de DataCamp sobre aprendizaje contrastivo: https://www.datacamp.com/tutorial/contrastive-learning
 - Encuesta exhaustiva en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Articulo de arXiv sobre visualizacion de aprendizaje contrastivo: https://arxiv.org/html/2206.09753v3

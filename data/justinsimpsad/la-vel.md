@@ -75,6 +75,6 @@ No se dispone de una comparativa directa con modelos de la misma categoria (tama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justinsimpsad/la-vel
+- Repositorio Hugging Face: https://huggingface.co/justinsimpsad/la-vel
 - Kernel de crecimiento en Kaggle (texto): https://www.kaggle.com/code/justinsimpsad/la-vel-growth
-- Repositorios hermanos (mencionados en la model card, sin URL directa): la-vel-vision, la-vel-music, la-vel-mesh3d, la-vel-markets (buscables en HuggingFace por autor justinvibesrise o justinsimpsad).
+- Repositorios hermanos (mencionados en la model card, sin URL directa): la-vel-vision, la-vel-music, la-vel-mesh3d, la-vel-markets (buscables en Hugging Face por autor justinvibesrise o justinsimpsad).

@@ -88,16 +88,16 @@ Advertencia del autor: el teléfono estaba cargando (75–80 %) durante estas ej
 - Cabe en consumer GPU: no es el objetivo del modelo; está diseñado para ANE, no para GPUs NVIDIA o AMD.
 - Opciones de despliegue: runtime CoreML-LLM (commit e45a7a6) con el parche `coreml-llm-multifunction.patch`; paquetes multifunción generados con `coremltools.utils.save_multifunction`; target de despliegue iOS 18 / macOS 15 en fp16.
 - Latencia y throughput: decode de 35,2 tok/s en M5 Max (ANE) y 35,0 tok/s iniciales / 31,4 tok/s sostenidos en iPhone 17 Pro Max; carga de 81 s la primera vez y 5,5 s posteriores en iPhone.
-- Almacenamiento: 3,7 GB en disco para el bundle completo; 6,2 GB de tamaño del repo en HuggingFace.
+- Almacenamiento: 3,7 GB en disco para el bundle completo; 6,2 GB de tamaño del repo en Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Formato / hardware | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Este modelo** (Gemma 4 E2B-it ANE QAT CoreML) | 2,28 B (277 tensores paletizados) | 2.048 tokens | Core ML 4-bit paletizado, ANE | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| google/gemma-4-E2B-it (base) | No disponible | No disponible | Safetensors / PyTorch | Licencia Gemma 4 | HuggingFace (modelo base referenciado) |
-| google/gemma-4-E2B-it-qat-q4_0 (GGUF QAT) | No disponible | No disponible | GGUF Q4_0, llama.cpp | Licencia Gemma 4 | HuggingFace (referenciado como profesor y baseline) |
-| google/gemma-4-E2B-it-qat-q4_0-unquantized | No disponible | No disponible | bf16, PyTorch | Licencia Gemma 4 | HuggingFace (usado como profesor en bf16) |
+| **Este modelo** (Gemma 4 E2B-it ANE QAT CoreML) | 2,28 B (277 tensores paletizados) | 2.048 tokens | Core ML 4-bit paletizado, ANE | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| google/gemma-4-E2B-it (base) | No disponible | No disponible | Safetensors / PyTorch | Licencia Gemma 4 | Hugging Face (modelo base referenciado) |
+| google/gemma-4-E2B-it-qat-q4_0 (GGUF QAT) | No disponible | No disponible | GGUF Q4_0, llama.cpp | Licencia Gemma 4 | Hugging Face (referenciado como profesor y baseline) |
+| google/gemma-4-E2B-it-qat-q4_0-unquantized | No disponible | No disponible | bf16, PyTorch | Licencia Gemma 4 | Hugging Face (usado como profesor en bf16) |
 
 No se dispone de datos de benchmarks de los modelos base y GGUF más allá de las métricas de acuerdo top-1 y PPL reportadas en la tabla de rendimiento, donde el GGUF QAT Q4_0 se usa como referencia (top-1 1, PPL 1,43) y el profesor bf16 en PyTorch alcanza top-1 0,918 y PPL 1,466. No se han publicado comparativas con otros modelos de la misma categoría en la información disponible.
 
@@ -113,11 +113,11 @@ No se dispone de datos de benchmarks de los modelos base y GGUF más allá de la
 - Rendimiento térmico en iPhone: el estado térmico alcanza "serious" a los 218 s de generación continua, con posible throttling en sesiones largas.
 - Las mediciones en iPhone se hicieron con el dispositivo cargando (75–80 %), lo que puede sobreestimar el consumo térmico y alterar las cifras de tok/s en batería.
 - Tiempo de carga inicial de 81 s en dispositivo por compilación ANE, aunque las cargas posteriores bajan a 5,5 s.
-- Sin descargas ni likes en HuggingFace en el momento de la ficha, lo que limita la validación por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la ficha, lo que limita la validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WTPieh/gemma-4-E2B-it-ane-qat-coreml
+- Hugging Face: https://huggingface.co/WTPieh/gemma-4-E2B-it-ane-qat-coreml
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Runtime CoreML-LLM: https://github.com/john-rocky/CoreML-LLM
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

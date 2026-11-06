@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-tts-12hz-1.7b-swamiji-te-navaratri-only-lr1e-6-17ep es un modelo de síntesis de voz (text-to-speech) derivado de la familia Qwen3-TTS, publicado por el usuario sw-voice en HuggingFace. Se trata de un ajuste fino completo (full fine-tune) del modelo sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep, que a su vez parte de una base Qwen3-TTS de 1,7 mil millones de parámetros con tokenizador de audio a 12 Hz. El modelo está especializado exclusivamente en telugu (código de idioma `te`) y en una única voz de referencia denominada "swamiji".
+qwen3-tts-12hz-1.7b-swamiji-te-navaratri-only-lr1e-6-17ep es un modelo de síntesis de voz (text-to-speech) derivado de la familia Qwen3-TTS, publicado por el usuario sw-voice en Hugging Face. Se trata de un ajuste fino completo (full fine-tune) del modelo sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep, que a su vez parte de una base Qwen3-TTS de 1,7 mil millones de parámetros con tokenizador de audio a 12 Hz. El modelo está especializado exclusivamente en telugu (código de idioma `te`) y en una única voz de referencia denominada "swamiji".
 
 El problema que resuelve es muy acotado: generar locuciones en telugu con la identidad vocal de un hablante concreto (Swamiji) sobre textos temáticos de Navaratri. El entrenamiento se realizó sobre un corpus de reutilización de 127 unidades (1,83 horas) extraído de sw-voice/swamiji-navaratri-telugu-reuse-themes, durante 17 épocas completas. No se trata de un modelo de propósito general, sino de un artefacto de investigación para reproducir una voz y un dominio muy específicos.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-navaratri-only-lr1e-6-17ep
+- Hugging Face: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-swamiji-te-navaratri-only-lr1e-6-17ep
 - Modelo base: https://huggingface.co/sw-voice/qwen3-tts-12hz-1.7b-telugu-indictts-sft-lr1e-6-2ep
 - Corpus de referencia citado en la model card: sw-voice/swamiji-navaratri-telugu-reuse-themes (no se proporciona URL directa)
 - Repositorio de código citado: `swamiji-tts`, ruta `research/exp-iterations/08-qwen3-tts/experiments/03-swamiji-te-two-stage` (no se proporciona URL directa)

@@ -10,7 +10,7 @@ Aunque la información pública es escasa, el modelo se presenta como un recurso
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (probablemente GPT-2, según etiquetas de HuggingFace, sin confirmar) |
+| Arquitectura | no disponible (probablemente GPT-2, según etiquetas de Hugging Face, sin confirmar) |
 | Parametros totales | 86.708.736 |
 | Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ Aunque la información pública es escasa, el modelo se presenta como un recurso
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del modelo `goldfish-models/nld_latn_100mb`, que a su vez es un modelo de lenguaje pequeño entrenado sobre un corpus neerlandés de 100 MB. La arquitectura exacta no se detalla en la documentación pública, pero por el tamaño y el tag "gpt2" en HuggingFace es plausible que se trate de una arquitectura tipo GPT-2 (transformer decoder). El entrenamiento se realizó mediante SFT (supervised fine-tuning) usando la librería TRL, con PyTorch 2.5.1 y Transformers 4.56.2. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens ni el proceso de optimización más allá de la referencia al proyecto "ppt_art_lang" en Weights & Biases.
+El modelo es un fine-tune del modelo `goldfish-models/nld_latn_100mb`, que a su vez es un modelo de lenguaje pequeño entrenado sobre un corpus neerlandés de 100 MB. La arquitectura exacta no se detalla en la documentación pública, pero por el tamaño y el tag "gpt2" en Hugging Face es plausible que se trate de una arquitectura tipo GPT-2 (transformer decoder). El entrenamiento se realizó mediante SFT (supervised fine-tuning) usando la librería TRL, con PyTorch 2.5.1 y Transformers 4.56.2. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens ni el proceso de optimización más allá de la referencia al proyecto "ppt_art_lang" en Weights & Biases.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf_heavy-100mb_seed455)
+- [Modelo en Hugging Face](https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf_heavy-100mb_seed455)
 - [Modelo base: goldfish-models/nld_latn_100mb](https://huggingface.co/goldfish-models/nld_latn_100mb)
 - [Página en LLM Explorer](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-zipf-nld-heavy-baseline-100mb_seed455,1jT4jUnpUj4e5eZQAfAsxB)
 - [Página en FriendliAI](https://friendli.ai/models/fpadovani/ppt-art-lang-newlexicon-zipf-nld-heavy-baseline-100mb_seed455)

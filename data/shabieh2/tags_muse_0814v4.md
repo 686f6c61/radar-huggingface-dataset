@@ -38,9 +38,9 @@ Dado que la informacion publica es minima, los siguientes casos de uso se infier
 - Generacion de texto general en ingles: el modelo puede emplearse para tareas de redaccion, resumen y parafraseo, aprovechando la ventana de contexto del modelo base (no documentada).
 - Experimentacion con tecnicas de fine-tuning eficiente: al estar entrenado con Unsloth y TRL, puede servir como caso de estudio para investigar metodologias QLoRA sobre modelos de 30B en entornos con recursos limitados.
 - Prototipado rapido en entornos con GPU de consumo: la cuantizacion 4-bit permite ejecutar el modelo en tarjetas con 24 GB de VRAM, como la RTX 3090 o RTX 4090, sin necesidad de infraestructura de centro de datos.
-- Integracion en pipelines de generacion de texto con transformers: compatible con la API estandar de HuggingFace, lo que facilita su integracion en aplicaciones Python existentes.
+- Integracion en pipelines de generacion de texto con transformers: compatible con la API estandar de Hugging Face, lo que facilita su integracion en aplicaciones Python existentes.
 - Despliegue con text-generation-inference: la etiqueta correspondiente sugiere compatibilidad con servidores de inferencia optimizados para produccion, aunque no se ha verificado.
-- Uso educativo: como ejemplo practico de fine-tuning de un modelo grande con herramientas open source (Unsloth + TRL) y publicacion posterior en HuggingFace.
+- Uso educativo: como ejemplo practico de fine-tuning de un modelo grande con herramientas open source (Unsloth + TRL) y publicacion posterior en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -70,6 +70,6 @@ No se dispone de informacion suficiente sobre la familia muse-glimmer ni sobre m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shabieh2/tags_muse_0814v4
+- Repositorio Hugging Face: https://huggingface.co/shabieh2/tags_muse_0814v4
 - Modelo base: https://huggingface.co/unsloth/muse-glimmer-30b-unsloth-bnb-4bit
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth

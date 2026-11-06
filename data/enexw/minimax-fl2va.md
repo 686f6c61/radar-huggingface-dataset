@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EnExW/Minimax-FL2VA es un repositorio de pesos alojado en HuggingFace por el usuario EnExW, con acceso restringido mediante gated access y un tamano de 197,7 GB. La informacion publica disponible es minima: no se declara pipeline, licencia, idiomas ni arquitectura, y la unica etiqueta asociada es region:us. El repositorio acumula 0 descargas y 1 like desde su creacion el 11 de agosto de 2026, con ultima actualizacion el 26 de septiembre de 2026, por lo que no existe evidencia publica de validacion por parte de la comunidad.
+EnExW/Minimax-FL2VA es un repositorio de pesos alojado en Hugging Face por el usuario EnExW, con acceso restringido mediante gated access y un tamano de 197,7 GB. La informacion publica disponible es minima: no se declara pipeline, licencia, idiomas ni arquitectura, y la unica etiqueta asociada es region:us. El repositorio acumula 0 descargas y 1 like desde su creacion el 11 de agosto de 2026, con ultima actualizacion el 26 de septiembre de 2026, por lo que no existe evidencia publica de validacion por parte de la comunidad.
 
 El identificador del repositorio contiene la cadena "Minimax" y el sufijo "FL2VA". Es tentador relacionarlo con la familia de modelos de MiniMax (MiniMax-Text-01, MiniMax-VL-01 o los generadores de video Hailuo) o interpretar el sufijo como un acronimo de tarea, pero ninguna de estas lecturas esta confirmada por los metadatos disponibles. Se trata de inferencias a partir del nombre y no deben tomarse como hechos verificados en ningun caso.
 
@@ -21,7 +21,7 @@ Con estos datos, el repositorio no es evaluable tecnicamente con rigor: la ausen
 | Licencia | no disponible |
 | Formato de pesos | no disponible (no se confirma safetensors, GGUF ni otros) |
 | Tamano del repositorio | 197,7 GB |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Etiquetas declaradas | region:us |
 | Fecha de creacion | 11 de agosto de 2026 |
 | Ultima actualizacion | 26 de septiembre de 2026 |
@@ -85,7 +85,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 ## Limitaciones y advertencias
 
 - Licencia desconocida: al no declararse licencia, no puede asumirse ningun derecho de uso comercial. Por defecto, todos los derechos quedan reservados al autor.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones adicionales en HuggingFace, cuyo contenido no se detalla en la informacion disponible.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones adicionales en Hugging Face, cuyo contenido no se detalla en la informacion disponible.
 - Ausencia total de documentacion: no hay model card con arquitectura, datos de entrenamiento, limitaciones o sesgos conocidos.
 - Riesgo de procedencia: se trata de un repositorio subido por un usuario individual, sin organizacion verificada detras, con 0 descargas y 1 like. No hay trazabilidad sobre el origen real de los pesos.
 - Riesgo de seguridad en la descarga: al no confirmarse el formato, no puede descartarse la presencia de ficheros pickle o scripts de carga remota. Debe descargarse unicamente en entornos aislados y cargarse con formatos seguros como safetensors.
@@ -97,5 +97,5 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EnExW/Minimax-FL2VA
+- Repositorio en Hugging Face: https://huggingface.co/EnExW/Minimax-FL2VA
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

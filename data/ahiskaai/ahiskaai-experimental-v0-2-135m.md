@@ -80,7 +80,7 @@ No se dispone de informacion suficiente sobre otros modelos comparables en el mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhiskaAI/AhiskaAI-experimental-v0.2-135m
+- Modelo en Hugging Face: https://huggingface.co/AhiskaAI/AhiskaAI-experimental-v0.2-135m
 - Coleccion de datasets v0.2: https://huggingface.co/collections/AhiskaAI/ahiskaai-v02-dataset
 - Datasets de AhiskaAI: https://huggingface.co/AhiskaAI/datasets
 - Repositorio de codigo de entrenamiento experimental v0.1: https://github.com/AhiskaAI/AhiskaAI-v0.1-Experimental-Training-code/tree/main

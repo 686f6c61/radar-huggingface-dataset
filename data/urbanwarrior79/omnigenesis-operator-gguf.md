@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Urbanwarrior79/omnigenesis-operator-gguf` es un repositorio de pesos en formato GGUF publicado en HuggingFace por el usuario Urbanwarrior79. Por el nombre y el formato, se trata de una conversión a GGUF de un modelo previo denominado "omnigenesis-operator", presumiblemente orientado a tareas de operación o agentes, aunque la model card no aporta ninguna descripción funcional, arquitectónica ni de entrenamiento.
+`Urbanwarrior79/omnigenesis-operator-gguf` es un repositorio de pesos en formato GGUF publicado en Hugging Face por el usuario Urbanwarrior79. Por el nombre y el formato, se trata de una conversión a GGUF de un modelo previo denominado "omnigenesis-operator", presumiblemente orientado a tareas de operación o agentes, aunque la model card no aporta ninguna descripción funcional, arquitectónica ni de entrenamiento.
 
 La información disponible es mínima: el repositorio tiene 0 descargas y 0 likes, fue creado y actualizado en la misma fecha (2026-11-01) y no incluye pipeline declarado, idiomas soportados ni documentación técnica. La licencia figura como "other", sin que se especifiquen los términos concretos en el texto de la model card.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Urbanwarrior79/omnigenesis-operator-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Urbanwarrior79/omnigenesis-operator-gguf
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

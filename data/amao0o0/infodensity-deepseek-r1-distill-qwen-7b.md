@@ -77,10 +77,10 @@ La comparativa se realiza contra el modelo base y otras variantes destiladas de 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento (GSM8K) | Disponibilidad |
 |---|---|---|---|---|---|
-| InfoDensity-DeepSeek-R1-Distill-Qwen-7B (esta variante) | 7.61B (estimado) | 131K (estimado) | Apache-2.0 | No disponible | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B (original) | 7.61B | 131K | MIT | 92.8% | HuggingFace, GitHub |
-| DeepSeek-R1-Distill-Llama-8B | 8.03B | 131K | MIT | 92.2% | HuggingFace |
-| Qwen2.5-7B-Instruct | 7.61B | 131K | Apache-2.0 | 91.2% (aprox.) | HuggingFace |
+| InfoDensity-DeepSeek-R1-Distill-Qwen-7B (esta variante) | 7.61B (estimado) | 131K (estimado) | Apache-2.0 | No disponible | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B (original) | 7.61B | 131K | MIT | 92.8% | Hugging Face, GitHub |
+| DeepSeek-R1-Distill-Llama-8B | 8.03B | 131K | MIT | 92.2% | Hugging Face |
+| Qwen2.5-7B-Instruct | 7.61B | 131K | Apache-2.0 | 91.2% (aprox.) | Hugging Face |
 
 La variante `InfoDensity` no aporta ningun dato comparativo propio. La unica ventaja objetiva es su licencia Apache-2.0, mas permisiva que la MIT del original en cuanto a atribucion (aunque ambas permiten uso comercial).
 
@@ -96,7 +96,7 @@ La variante `InfoDensity` no aporta ningun dato comparativo propio. La unica ven
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta variante: https://huggingface.co/amao0o0/InfoDensity-DeepSeek-R1-Distill-Qwen-7B
+- Repositorio Hugging Face de esta variante: https://huggingface.co/amao0o0/InfoDensity-DeepSeek-R1-Distill-Qwen-7B
 - Modelo base DeepSeek-R1-Distill-Qwen-7B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio GitHub de DeepSeek-R1 (referencia): https://github.com/deepseek-ai/DeepSeek-R1
 - Anuncio oficial de DeepSeek-R1: https://www.deepseek.com/en/news/deepseek-r1/

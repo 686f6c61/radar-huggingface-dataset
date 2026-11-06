@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Precision / formato | Tamano | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (T2I) | INT8 ConvRot, safetensors | ~9,47 GB | Reescritura de prompts T2I | Qwen Research (no comercial) | HuggingFace, 0 descargas |
-| Este repositorio (I2I) | INT8 ConvRot, safetensors | ~9,47 GB | Expansion de instrucciones I2I con vision | Qwen Research (no comercial) | HuggingFace, 0 descargas |
-| pottokao/Qwen-Image-2.1-PE-T2I-Heretic | BF16 (fuente) | no disponible | Reescritura de prompts T2I | no disponible | HuggingFace |
-| darrellbest/Qwen-Image-2.1-PE-I2I-Heretic | BF16 (fuente) | no disponible | Expansion de instrucciones I2I | no disponible | HuggingFace |
+| Este repositorio (T2I) | INT8 ConvRot, safetensors | ~9,47 GB | Reescritura de prompts T2I | Qwen Research (no comercial) | Hugging Face, 0 descargas |
+| Este repositorio (I2I) | INT8 ConvRot, safetensors | ~9,47 GB | Expansion de instrucciones I2I con vision | Qwen Research (no comercial) | Hugging Face, 0 descargas |
+| pottokao/Qwen-Image-2.1-PE-T2I-Heretic | BF16 (fuente) | no disponible | Reescritura de prompts T2I | no disponible | Hugging Face |
+| darrellbest/Qwen-Image-2.1-PE-I2I-Heretic | BF16 (fuente) | no disponible | Expansion de instrucciones I2I | no disponible | Hugging Face |
 
 No hay datos de parametros, contexto ni rendimiento comparado publicados para ninguna de las variantes, por lo que la comparacion se limita al formato, el tamaño y la licencia. La ventaja declarada de esta conversion es la reduccion de footprint a INT8; la contrapartida es la perdida de precision asociada a una cuantizacion sin recorte MSE y la dependencia de un *runtime* especifico.
 
@@ -97,7 +97,7 @@ No hay datos de parametros, contexto ni rendimiento comparado publicados para ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wherebot101/Prompt-Enhancers-INT8-ConvRot-Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/Wherebot101/Prompt-Enhancers-INT8-ConvRot-Qwen-Image-2.1
 - Modelo base T2I: https://huggingface.co/pottokao/Qwen-Image-2.1-PE-T2I-Heretic
 - Modelo base I2I: https://huggingface.co/darrellbest/Qwen-Image-2.1-PE-I2I-Heretic
 - Herramientas de conversion: https://github.com/Comfy-Org/comfy-model-tools/tree/1846ff1a9c3212e12b0edf8347c493651854b80e

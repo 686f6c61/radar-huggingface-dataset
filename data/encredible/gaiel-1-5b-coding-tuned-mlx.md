@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gaiel-1.5B-Coding-Tuned-MLX es un modelo de lenguaje especializado en programación y algoritmos, desarrollado por la organización JK Universe y publicado en HuggingFace bajo el perfil de encredible. Se basa en la arquitectura Qwen2.5-Coder de Alibaba, concretamente en el modelo instructivo Qwen/Qwen2.5-Coder-1.5B-Instruct, y ha sido ajustado con 80.000 muestras del conjunto Evol-Instruct-Code. El modelo está optimizado para ejecutarse en dispositivos Apple Silicon mediante la librería MLX, lo que lo convierte en una opción ligera y eficiente para tareas de generación de código y razonamiento algorítmico en entornos con recursos limitados.
+Gaiel-1.5B-Coding-Tuned-MLX es un modelo de lenguaje especializado en programación y algoritmos, desarrollado por la organización JK Universe y publicado en Hugging Face bajo el perfil de encredible. Se basa en la arquitectura Qwen2.5-Coder de Alibaba, concretamente en el modelo instructivo Qwen/Qwen2.5-Coder-1.5B-Instruct, y ha sido ajustado con 80.000 muestras del conjunto Evol-Instruct-Code. El modelo está optimizado para ejecutarse en dispositivos Apple Silicon mediante la librería MLX, lo que lo convierte en una opción ligera y eficiente para tareas de generación de código y razonamiento algorítmico en entornos con recursos limitados.
 
 El modelo se presenta como bilingüe (coreano e inglés) y está diseñado para conversación y generación de texto. Aunque el autor indica un tamaño de 1.500 millones de parámetros, el archivo safetensors del repositorio muestra 241.327.616 parámetros, lo que sugiere que el modelo publicado está cuantizado a 4 bits (como indican las etiquetas). Esta discrepancia debe tenerse en cuenta al evaluar su capacidad real. El repositorio tiene un tamaño de 4,0 GB y fue creado en agosto de 2026, aunque no se especifica la licencia de uso.
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gaiel-1.5B-Coding-Tuned-MLX | 1.5B (declarado) / 241M (real cuantizado) | No disponible | No disponible | HuggingFace (MLX) |
-| Qwen2.5-Coder-1.5B-Instruct (base) | 1.5B | 32.768 | Apache 2.0 | HuggingFace (PyTorch, GGUF, etc.) |
-| DeepSeek-Coder-1.3B | 1.3B | 16.384 | MIT | HuggingFace |
-| StarCoderBase-1B | 1.0B | 8.192 | Apache 2.0 | HuggingFace |
+| Gaiel-1.5B-Coding-Tuned-MLX | 1.5B (declarado) / 241M (real cuantizado) | No disponible | No disponible | Hugging Face (MLX) |
+| Qwen2.5-Coder-1.5B-Instruct (base) | 1.5B | 32.768 | Apache 2.0 | Hugging Face (PyTorch, GGUF, etc.) |
+| DeepSeek-Coder-1.3B | 1.3B | 16.384 | MIT | Hugging Face |
+| StarCoderBase-1B | 1.0B | 8.192 | Apache 2.0 | Hugging Face |
 
 Nota: la comparacion se basa en caracteristicas generales; no hay datos de rendimiento para Gaiel. El modelo base Qwen2.5-Coder-1.5B-Instruct tiene una licencia permisiva (Apache 2.0), pero este ajuste no especifica la suya, lo que limita su uso comercial sin consultar al autor.
 
@@ -75,6 +75,6 @@ Nota: la comparacion se basa en caracteristicas generales; no hay datos de rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/encredible/Gaiel-1.5B-Coding-Tuned-MLX
+- Repositorio Hugging Face: https://huggingface.co/encredible/Gaiel-1.5B-Coding-Tuned-MLX
 - Dataset de benchmarks: https://huggingface.co/datasets/encredible/gaiel-mlx-benchmarks
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-3.5-4B-Auto-ASVD | 4.157.929.984 (4,16B) | no disponible | Sin benchmarks publicados; perdida de curacion 2,0432 | apache-2.0 | HuggingFace, safetensors bf16 |
-| Qwen/Qwen3.5-4B (base) | ~4,21B (inferido a partir de los 47,8M parametros excindidos) | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen-3.5-4B-Auto-ASVD | 4.157.929.984 (4,16B) | no disponible | Sin benchmarks publicados; perdida de curacion 2,0432 | apache-2.0 | Hugging Face, safetensors bf16 |
+| Qwen/Qwen3.5-4B (base) | ~4,21B (inferido a partir de los 47,8M parametros excindidos) | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos de ~4B en ingles | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar el rendimiento de esta variante con alternativas de la misma categoria; la unica diferencia documentada frente al modelo base es la reduccion estructural de 47.821.312 parametros en las matrices `q_proj`, `k_proj`, `v_proj`, `o_proj` y `down_proj`, con una retencion de varianza entre el 91,60% y el 95,00%.
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para comparar el rendimiento de esta variante
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kodjaoglanian/Qwen-3.5-4B-Auto-ASVD
+- Hugging Face: https://huggingface.co/Kodjaoglanian/Qwen-3.5-4B-Auto-ASVD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper o blog del pipeline ASVD: no disponible en la informacion proporcionada.
 - Repositorio de codigo: no disponible en la informacion proporcionada.

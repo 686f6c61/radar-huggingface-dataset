@@ -109,14 +109,14 @@ No se dispone de datos de benchmarks, licencia o especificaciones de modelos alt
 - Cobertura de evaluación mínima: un único benchmark (GPQA Diamond) no permite extrapolar el comportamiento en código, matemáticas, visión, multilingüismo o instrucciones largas. Las 143 capas en W8A8 y las 191 en W4A16 podrían degradar tareas no evaluadas, y la ausencia de comparación por tarea impide cuantificar ese riesgo.
 - Discrepancia de nomenclatura: el nombre del repositorio indica "27B" pero los safetensors suman 13,4 B de parámetros. Esto puede provocar errores de planificación de hardware y de comparación con otros modelos.
 - Contexto largo no verificado: los 262.144 tokens son una capacidad declarada de la arquitectura, pero no hay ninguna evaluación publicada a esa longitud, ni datos de degradación por posición ni de tiempo hasta el primer token.
-- Estado del repositorio: 0 descargas y 0 me gusta en el momento de la consulta, sin pipeline declarado en HuggingFace. No hay evidencia de validación por parte de terceros.
+- Estado del repositorio: 0 descargas y 0 me gusta en el momento de la consulta, sin pipeline declarado en Hugging Face. No hay evidencia de validación por parte de terceros.
 - Dependencia de SGLang: los comandos documentados dependen de flags muy específicos (`--mamba-ssm-dtype`, `--mamba-radix-cache-strategy`, `--default-chat-template-kwargs`) y del módulo MTP para la decodificación especulativa. Reproducir el rendimiento publicado fuera de ese stack no está garantizado.
 - Naturaleza derivada: este repo no introduce entrenamiento propio. Cualquier sesgo, error factual o limitación del modelo fuente se hereda íntegramente; la cuantización solo añade el posible error numérico de la compresión.
 - Riesgo de reproducibilidad: el benchmark se ejecutó con 8 peticiones concurrentes y protocolo de barajado determinista, condiciones que no se detallan por completo (hardware, versión exacta del motor, temperatura), lo que dificulta una réplica exacta.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/JC1DA/DavidAu-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-INT4-INT8-Mixed
+- Hugging Face del modelo: https://huggingface.co/JC1DA/DavidAu-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-INT4-INT8-Mixed
 - Modelo fuente en bfloat16: https://huggingface.co/DavidAu/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
 - Variante GGUF del modelo fuente: https://huggingface.co/DavidAu/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NM-DAU-NEO-MTP-GGUF
 - Módulo MTP para decodificación especulativa EAGLE: https://huggingface.co/JC1DA/DavidAu-Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-MTP-ONLY

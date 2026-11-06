@@ -112,7 +112,7 @@ Los datos de parametros y rendimiento de los modelos comparados proceden de la t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
+- Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B
 - GitHub del modelo: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio TeleChat (serie anterior): https://github.com/Tele-AI/TeleChat3
 - Paper referenciado (arxiv:2512.24157): https://arxiv.org/abs/2512.24157

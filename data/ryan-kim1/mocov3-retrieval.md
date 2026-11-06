@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryan-kim1/mocov3-retrieval` es un repositorio publicado en HuggingFace por el usuario ryan-kim1 bajo licencia MIT, etiquetado con `safetensors`, `mocov3`, `pytorch` y `retrieval`. Segun su propia model card, se trata de una implementacion funcional de MoCo v3 orientada a tareas de recuperacion (retrieval) con una configuracion de escala declarada como "giant", atencion de ventana deslizante (sliding window), fusion tipo Tucker, activacion gelu-tanh y normalizacion scalenorm.
+`ryan-kim1/mocov3-retrieval` es un repositorio publicado en Hugging Face por el usuario ryan-kim1 bajo licencia MIT, etiquetado con `safetensors`, `mocov3`, `pytorch` y `retrieval`. Segun su propia model card, se trata de una implementacion funcional de MoCo v3 orientada a tareas de recuperacion (retrieval) con una configuracion de escala declarada como "giant", atencion de ventana deslizante (sliding window), fusion tipo Tucker, activacion gelu-tanh y normalizacion scalenorm.
 
 El dato mas relevante para cualquier evaluacion es que el propio autor declara explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y **no** un checkpoint entrenado ni evaluado. No se reclama ninguna puntuacion de benchmark y se indica que el proposito del repositorio es disponer de codigo transparente y pruebas repetibles.
 
@@ -53,7 +53,7 @@ Los elementos tecnicos declarados (atencion de ventana deslizante, fusion Tucker
 - Base para un entrenamiento propio de retrieval: dado que el checkpoint es una inicializacion, un equipo puede partir de la implementacion y de `training_args.json` (adam, planificador polinomial) para entrenar con su propio dataset y una linea base de capacidad equivalente.
 - Reproduccion de configuraciones arquitectonicas: sirve para experimentar con las combinaciones declaradas (ventana deslizante, fusion Tucker, gelu-tanh, scalenorm) y comprobar como se reflejan en `config.json` y en la salida del modelo.
 - Docencia e investigacion sobre aprendizaje autosupervisado: el codigo de `pipeline.py` puede usarse como material de partida para explicar la estructura de un metodo contrastivo tipo MoCo v3 en un curso o seminario.
-- Auditoria de artefactos publicados en HuggingFace: el caso resulta util para ilustrar la diferencia entre un repositorio con pesos entrenados y uno con pesos de inicializacion, y para practicar la verificacion del recuento real de parametros frente a la escala declarada.
+- Auditoria de artefactos publicados en Hugging Face: el caso resulta util para ilustrar la diferencia entre un repositorio con pesos entrenados y uno con pesos de inicializacion, y para practicar la verificacion del recuento real de parametros frente a la escala declarada.
 
 En todos estos escenarios conviene tener presente que el modelo no ha sido entrenado ni evaluado, por lo que cualquier uso fuera de pruebas de infraestructura exigiria un entrenamiento previo completo.
 
@@ -76,7 +76,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ryan-kim1/mocov3-retrieval | 33.088 (safetensors) | no disponible | sin benchmarks publicados | MIT | HuggingFace, 9 descargas |
+| ryan-kim1/mocov3-retrieval | 33.088 (safetensors) | no disponible | sin benchmarks publicados | MIT | Hugging Face, 9 descargas |
 | Implementacion oficial de MoCo v3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | CLIP (familia de modelos de retrieval multimodal) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DINOv2 (familia de modelos autosupervisados) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -88,12 +88,12 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 - Contradiccion interna entre la escala declarada ("giant") y el recuento real de 33.088 parametros del fichero safetensors; conviene tratar la etiqueta de escala como no fiable.
 - No se documenta ningun idioma soportado, ni el formato de las entradas, ni la modalidad (texto, imagen o ambas).
 - Riesgo de alucinacion: no aplica de forma directa a un supuesto modelo de retrieval sin entrenar, pero cualquier uso generativo derivado de esta base careceria de garantias.
-- Compatibilidad: al ser una implementacion personalizada, no se carga con las APIs automaticas estandar de HuggingFace sin un adaptador explicito, lo que dificulta su integracion en pipelines existentes.
+- Compatibilidad: al ser una implementacion personalizada, no se carga con las APIs automaticas estandar de Hugging Face sin un adaptador explicito, lo que dificulta su integracion en pipelines existentes.
 - Licencia MIT: permite uso comercial y modificacion, pero la propia model card recomienda revisar por separado los terminos de los datos de origen cuando se combine con datasets externos. No hay garantias de ningun tipo asociadas a la licencia.
 - Ausencia de validacion comunitaria: 9 descargas y 0 likes, sin logs de entrenamiento, sin semillas publicadas y sin entorno de ejecucion documentado.
 - Las fechas de creacion y actualizacion del repositorio (12 de octubre de 2026) no permiten extraer ninguna conclusion sobre su mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryan-kim1/mocov3-retrieval
+- Modelo en Hugging Face: https://huggingface.co/ryan-kim1/mocov3-retrieval
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Las consultas devolvieron paginas sin relacion con el modelo (sitios de aerolineas, canales de YouTube y noticias de sucesos), por lo que no se incluye ningun enlace adicional.

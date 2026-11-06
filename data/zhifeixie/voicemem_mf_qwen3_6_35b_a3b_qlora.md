@@ -94,9 +94,9 @@ No hay modelos directamente comparables con esta funcion especifica (adaptador d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora
+- Repositorio Hugging Face: https://huggingface.co/zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora
 - Repositorio de codigo VoiceMem (GitHub): https://github.com/lang-jiaqi/Voicemem_open
-- Entorno de modelos por defecto (HuggingFace): https://huggingface.co/zhifeixie/VoiceMem_Default_Models_Env
+- Entorno de modelos por defecto (Hugging Face): https://huggingface.co/zhifeixie/VoiceMem_Default_Models_Env
 - Articulo de analisis tecnico (externo): https://ai.thesatyajit.com/articles/voicemem
 - Pagina en FriendliAI (despliegue): https://friendli.ai/models/zhifeixie/VoiceMem_MF_Qwen3_6_35B_A3B_Qlora
 - Registro en Free2AITools: https://free2aitools.com/model/zhifeixie/voicemem_mf_qwen3_6_35b_a3b_qlora

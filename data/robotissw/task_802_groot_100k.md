@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- [HuggingFace: RobotisSW/Task_802_groot_100k](https://huggingface.co/RobotisSW/Task_802_groot_100k)
+- [Hugging Face: RobotisSW/Task_802_groot_100k](https://huggingface.co/RobotisSW/Task_802_groot_100k)
 - [Cyclo Intelligence (ROBOTIS-GIT)](https://github.com/ROBOTIS-GIT/cyclo_intelligence)

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Artefacto | Modelos base | Tipo de lente | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `stdlogits/rs-lenses` | Qwen3-8B, Gemma 4 12B | R-lens y S-lens bajo reglas RelP, texto, imagen y audio | CC-BY-4.0 | HuggingFace (0 descargas) |
-| `camilablank/workspace-lenses` | No disponible | Lentes con layout `J`, `n_prompts`, `source_layers`, `d_model` | No disponible | HuggingFace |
+| `stdlogits/rs-lenses` | Qwen3-8B, Gemma 4 12B | R-lens y S-lens bajo reglas RelP, texto, imagen y audio | CC-BY-4.0 | Hugging Face (0 descargas) |
+| `camilablank/workspace-lenses` | No disponible | Lentes con layout `J`, `n_prompts`, `source_layers`, `d_model` | No disponible | Hugging Face |
 | J-lens (Transformer Circuits) | No disponible | Lente jacobiana sobre el residual | No disponible | Publicación de Transformer Circuits |
 | K-lens (Theia Vogel) | No disponible | Lente forward hasta los embeddings de entrada | No disponible | No publicada |
 
@@ -85,7 +85,7 @@ La comparativa se limita a artefactos metodológicamente emparentados, ya que no
 
 ## Enlaces
 
-- [HuggingFace: stdlogits/rs-lenses](https://huggingface.co/stdlogits/rs-lenses)
+- [Hugging Face: stdlogits/rs-lenses](https://huggingface.co/stdlogits/rs-lenses)
 - [GitHub: stdlogits/neuron-lens](https://github.com/stdlogits/neuron-lens)
 - [Dataset: stdlogits/neuron-lens](https://huggingface.co/datasets/stdlogits/neuron-lens)
 - [Modelo base: Qwen/Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)

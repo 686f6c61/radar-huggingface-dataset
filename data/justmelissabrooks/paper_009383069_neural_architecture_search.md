@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `Justmelissabrooks/paper_009383069_neural_architecture_search`, no contiene un modelo de inteligencia artificial en el sentido habitual (no hay pesos, arquitectura ni pipeline de inferencia). Se trata de un repositorio de texto que alberga un documento en Markdown titulado `paper_009383069_neural_architecture_search.md`, el cual es un artículo académico sobre *neural architecture search* (NAS) con formato LaTeX estilo CVPR y estructura de conferencia estándar (abstract, introducción, preliminares, método, experimentos y discusión). El autor, `Justmelissabrooks`, lo publica bajo licencia BSD-3-Clause. Dado que no existe un modelo subyacente, la ficha técnica se limita a describir el contenido del repositorio y aclarar que no es un modelo de IA desplegable.
+Este repositorio de Hugging Face, identificado como `Justmelissabrooks/paper_009383069_neural_architecture_search`, no contiene un modelo de inteligencia artificial en el sentido habitual (no hay pesos, arquitectura ni pipeline de inferencia). Se trata de un repositorio de texto que alberga un documento en Markdown titulado `paper_009383069_neural_architecture_search.md`, el cual es un artículo académico sobre *neural architecture search* (NAS) con formato LaTeX estilo CVPR y estructura de conferencia estándar (abstract, introducción, preliminares, método, experimentos y discusión). El autor, `Justmelissabrooks`, lo publica bajo licencia BSD-3-Clause. Dado que no existe un modelo subyacente, la ficha técnica se limita a describir el contenido del repositorio y aclarar que no es un modelo de IA desplegable.
 
 ## Especificaciones técnicas
 
@@ -59,6 +59,6 @@ No disponible. No hay modelos comparables porque no se trata de un modelo de IA.
 
 ## Enlaces
 
-- [HuggingFace - Justmelissabrooks/paper_009383069_neural_architecture_search](https://huggingface.co/Justmelissabrooks/paper_009383069_neural_architecture_search)
+- [Hugging Face - Justmelissabrooks/paper_009383069_neural_architecture_search](https://huggingface.co/Justmelissabrooks/paper_009383069_neural_architecture_search)
 
 No se han encontrado enlaces adicionales específicos del modelo en los resultados de búsqueda web. Los enlaces genéricos sobre NAS (Google Scholar, Springer, etc.) no están relacionados directamente con este repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-1B es el primer modelo de la serie MiniCPM5, desarrollado por OpenBMB (publicado en HuggingFace bajo la cuenta ArchiveStudio). Se trata de un modelo de lenguaje causal denso de aproximadamente 1.080 millones de parametros, construido sobre una arquitectura estandar `LlamaForCausalLM`, pensado para despliegue en local, en el dispositivo (on-device) y en entornos con recursos limitados. El modelo destaca por ofrecer soporte nativo de contexto largo (131.072 tokens), razonamiento hibrido con modos Think/No Think en un unico checkpoint, y capacidades de tool calling orientadas a agentes.
+MiniCPM5-1B es el primer modelo de la serie MiniCPM5, desarrollado por OpenBMB (publicado en Hugging Face bajo la cuenta ArchiveStudio). Se trata de un modelo de lenguaje causal denso de aproximadamente 1.080 millones de parametros, construido sobre una arquitectura estandar `LlamaForCausalLM`, pensado para despliegue en local, en el dispositivo (on-device) y en entornos con recursos limitados. El modelo destaca por ofrecer soporte nativo de contexto largo (131.072 tokens), razonamiento hibrido con modos Think/No Think en un unico checkpoint, y capacidades de tool calling orientadas a agentes.
 
 Su relevancia actual radica en que, segun el autor, alcanza el estado del arte open source en su clase de tamano (1B), con ventajas especialmente visibles en uso agentic de herramientas, generacion de codigo y razonamiento dificil, compitiendo con modelos como LFM2.5-1.2B-Thinking, Qwen3-0.6B y Qwen3.5-0.8B. El entrenamiento emplea una receta completa de tres etapas (base, mid-training y post-training con SFT, RL y destilacion on-policy) sobre los datasets Ultra-FineWeb y UltraData, liberados publicamente junto al modelo.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (en fo
 - **VRAM estimada para inferencia**: en BF16, el repo ocupa 2,2 GB, por lo que aproximadamente 3 GB de VRAM o RAM son suficientes; con cuantizacion 4 bits (GGUF/MLX) el footprint baja a torno a 0,7-1 GB mas la cache KV.
 - **GPU recomendadas**: no requiere GPU dedicada; cabe sobradamente en una RTX 3060 de 12 GB, RTX 4060 o incluso integradas. Para servir con contexto completo de 131K tokens y batches, una RTX 4090 o A100 resulta comoda.
 - **Consumer GPU**: si, cabe con holgura en practicamente cualquier GPU consumer moderna; incluso funciona solo con CPU y RAM gracias a llama.cpp/Ollama.
-- **Opciones de despliegue**: transformers (HuggingFace), llama.cpp, Ollama y LM Studio (via GGUF), MLX en Apple Silicon (variante 4 bits), y TGI/vLLM a traves de la compatibilidad LlamaForCausalLM. El repo de GitHub de MiniCPM ofrece cookbooks para los principales backends de inferencia y frameworks de fine-tuning.
+- **Opciones de despliegue**: transformers (Hugging Face), llama.cpp, Ollama y LM Studio (via GGUF), MLX en Apple Silicon (variante 4 bits), y TGI/vLLM a traves de la compatibilidad LlamaForCausalLM. El repo de GitHub de MiniCPM ofrece cookbooks para los principales backends de inferencia y frameworks de fine-tuning.
 - **Latencia y throughput**: no disponible en la informacion proporcionada; por tamano y arquitectura densa de 1B se espera latencia de primer token baja incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ Segun la evaluacion del autor, MiniCPM5-1B supera a estos tres competidores dent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM5-1B
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM5-1B
 - Modelo oficial OpenBMB: https://huggingface.co/openbmb/MiniCPM5-1B
 - Variante SFT: https://huggingface.co/openbmb/MiniCPM5-1B-SFT
 - Variante Base: https://huggingface.co/openbmb/MiniCPM5-1B-Base

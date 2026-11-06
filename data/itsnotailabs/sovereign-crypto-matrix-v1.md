@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sovereign-Crypto-Matrix-v1 es un artefacto de inferencia publicado por ItsnotAilabs bajo licencia Apache 2.0. No es un transformer generativo al uso, sino una matriz de embeddings comprimida de dimensión D=793 almacenada en `pytorch_model.bin` (aproximadamente 1,3 millones de parámetros y 5,12 MB en disco), acoplada a una base de datos relacional SQLite (`domain_knowledge_base.sqlite`). El pipeline declarado en HuggingFace es `feature-extraction` y el único idioma soportado es el inglés.
+Sovereign-Crypto-Matrix-v1 es un artefacto de inferencia publicado por ItsnotAilabs bajo licencia Apache 2.0. No es un transformer generativo al uso, sino una matriz de embeddings comprimida de dimensión D=793 almacenada en `pytorch_model.bin` (aproximadamente 1,3 millones de parámetros y 5,12 MB en disco), acoplada a una base de datos relacional SQLite (`domain_knowledge_base.sqlite`). El pipeline declarado en Hugging Face es `feature-extraction` y el único idioma soportado es el inglés.
 
 El modelo integra en sus pesos dominios de conocimiento cripto-financiero concretos: derechos alquilerables EIP-4907, pools de rendimiento de Uniswap y Curve, y esquemas de mensajería interbancaria ISO 20022. La propuesta del autor es servir como nodo de decisión dentro de frameworks de agentes (LangChain, Antigravity Swarm) que reciben un vector de estado de 793 dimensiones y devuelven decisiones estructuradas, como un precio óptimo de pasaporte EIP-4907, un APY previsto o un tiempo de liquidación de transferencia.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sovereign-Crypto-Matrix-v1 | 1,3M | no disponible | 0,34 ms latencia CPU (declarado) | Apache 2.0 | HuggingFace |
+| Sovereign-Crypto-Matrix-v1 | 1,3M | no disponible | 0,34 ms latencia CPU (declarado) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ItsnotAilabs/Sovereign-Crypto-Matrix-v1
+- Hugging Face: https://huggingface.co/ItsnotAilabs/Sovereign-Crypto-Matrix-v1
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relevantes sobre este modelo.

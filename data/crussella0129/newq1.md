@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Newq1 es un ajuste experimental de investigación sobre Qwen3.5-4B, publicado por el usuario crussella0129 en HuggingFace, que incorpora directamente en los pesos ("baked weights") tres "palancas de activación" (activation steering) descubiertas mediante interpretación mecanicista. El trabajo se basa en la investigación publicada por Lyra (@_lyraaaa_) en octubre de 2026, que identificó neuronas concretas en las capas MLP de Qwen3.5-4B que controlan el comportamiento de rechazo de seguridad y la "personalidad" del modelo.
+Newq1 es un ajuste experimental de investigación sobre Qwen3.5-4B, publicado por el usuario crussella0129 en Hugging Face, que incorpora directamente en los pesos ("baked weights") tres "palancas de activación" (activation steering) descubiertas mediante interpretación mecanicista. El trabajo se basa en la investigación publicada por Lyra (@_lyraaaa_) en octubre de 2026, que identificó neuronas concretas en las capas MLP de Qwen3.5-4B que controlan el comportamiento de rechazo de seguridad y la "personalidad" del modelo.
 
 El modelo combina una palanca de omisión de rechazos de seguridad (Layer 11, Neuron 6261) con dos palancas de persona hostil (Layers 13 y 14), forzando al modelo a cumplir peticiones sensatas y sensibles sin rechazarlas y a adoptar un tono adversarial. No es un modelo de uso general: su propósito declarado es la investigación en seguridad, interpretabilidad y evaluaciones educativas, y el repositorio aplica acceso restringido (gated) que exige justificar el uso.
 
@@ -82,7 +82,7 @@ La comparación relevante no es con modelos de capacidad similar sino con el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/crussella0129/Newq1
+- Modelo en Hugging Face: https://huggingface.co/crussella0129/Newq1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Investigación original de Lyra (post en X, 24 oct 2026): https://x.com/_lyraaaa_/status/2113833330429083662
 - Repositorio Neuron Explorer: https://github.com/lyramakesmusic/neuron-explorer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tait-test-demo es un modelo de lenguaje de demostración publicado por el usuario muzammilsoft en HuggingFace. Se trata de un MiniGPT entrenado desde cero con TAIT, una herramienta basada exclusivamente en NumPy para entrenar modelos de IA en teléfonos y dispositivos con recursos limitados. El modelo no pretende ser un asistente funcional, sino una prueba de concepto del pipeline de entrenamiento y despliegue de TAIT.
+tait-test-demo es un modelo de lenguaje de demostración publicado por el usuario muzammilsoft en Hugging Face. Se trata de un MiniGPT entrenado desde cero con TAIT, una herramienta basada exclusivamente en NumPy para entrenar modelos de IA en teléfonos y dispositivos con recursos limitados. El modelo no pretende ser un asistente funcional, sino una prueba de concepto del pipeline de entrenamiento y despliegue de TAIT.
 
 La arquitectura es un transformer decoder de dimensiones mínimas: `d_model` de 16, `d_ff` de 32, `block_size` de 23 tokens y un vocabulario de 403 tokens BPE. El fichero de pesos ocupa 105.454 bytes en formato `.npz` (pesos NumPy más tokenizador BPE), legible por el runner KAIT para Android. Se entrenó sobre un conjunto de demostración (`demo.jsonl`) con solo 8 ejemplos durante 2 épocas.
 
@@ -41,7 +41,7 @@ El entrenamiento se realizó con TAIT 2.3.0 sobre el fichero `demo.jsonl`, compu
 
 - Prueba de concepto del pipeline TAIT: validar de extremo a extremo el flujo de entrenamiento, empaquetado en `.npz` y carga en el runner KAIT antes de entrenar modelos mayores.
 - Docencia y divulgación: ilustrar la anatomía mínima de un transformer decoder (tokenizador BPE, embeddings, bloque transformer) con un artefacto de 105 KB inspeccionable en NumPy.
-- Test de integración de KAIT en Android: verificar que la app descarga un repositorio de HuggingFace, carga los pesos y ejecuta generación en dispositivo.
+- Test de integración de KAIT en Android: verificar que la app descarga un repositorio de Hugging Face, carga los pesos y ejecuta generación en dispositivo.
 - Benchmark de infraestructura: medir latencia de carga y decodificación de un modelo trivial para aislar el coste del runtime frente al coste computacional del modelo.
 - Reproducibilidad de experimentos: servir como referencia fija (hash sha256 documentado) para comparar versiones de TAIT o cambios en el formato `.npz`.
 - Ejemplo de publicación de modelos: mostrar el flujo `pip install "tait[publish]"` y el comando `tait chat --model` como plantilla para publicar artefactos propios.
@@ -81,6 +81,6 @@ La comparación con nanoGPT o GPT-2 es solo orientativa por categoria (modelos m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muzammilsoft/tait-test-demo
+- Hugging Face: https://huggingface.co/muzammilsoft/tait-test-demo
 - Repositorio TAIT: https://github.com/muzammilsoft/tait
 - Runner KAIT: no disponible como enlace directo en la información proporcionada (se referencia en la model card como app Android para TAIT).

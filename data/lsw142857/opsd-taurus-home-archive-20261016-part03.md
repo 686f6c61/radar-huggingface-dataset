@@ -88,6 +88,6 @@ No disponible. Este identificador no corresponde a un modelo con parámetros, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LSW142857/OPSD-Taurus-Home-Archive-20261016-Part03
+- Repositorio en Hugging Face: https://huggingface.co/LSW142857/OPSD-Taurus-Home-Archive-20261016-Part03
 - Repositorio padre (archivo OPSD Taurus home archive): https://huggingface.co/LSW142857/OPSD-Taurus-Home-Archive-20261016
 - Enlaces adicionales relevantes (papers, blogs, repos, demos): no disponibles. La búsqueda web no devolvió resultados relacionados con este repositorio.

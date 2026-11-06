@@ -102,7 +102,7 @@ No se dispone de datos para comparar con modelos de otras familias de tamaño si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-31B-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-31B-NVFP4A16
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

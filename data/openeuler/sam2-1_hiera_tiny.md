@@ -71,7 +71,7 @@ No se dispone de información comparativa con otros modelos de segmentación en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [openEuler/sam2.1_hiera_tiny](https://huggingface.co/openEuler/sam2.1_hiera_tiny)
+- Repositorio Hugging Face: [openEuler/sam2.1_hiera_tiny](https://huggingface.co/openEuler/sam2.1_hiera_tiny)
 - Modelo base: [facebook/sam2.1-hiera-tiny](https://huggingface.co/facebook/sam2.1-hiera-tiny)
 - Framework IB-Robot: [https://gitcode.com/openeuler/IB_Robot](https://gitcode.com/openeuler/IB_Robot)
 - Paper SAM 2: [arXiv:2408.00714](https://arxiv.org/abs/2408.00714)

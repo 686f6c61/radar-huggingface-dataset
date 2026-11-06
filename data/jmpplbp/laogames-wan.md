@@ -50,7 +50,7 @@ Lo unico verificable es la procedencia de los ficheros. Las fuentes citadas son 
 
 - Despliegue de flujos de generacion de video en ComfyUI: el usuario descarga el repositorio y apunta los nodos de carga de modelo a los ficheros locales, evitando resolver manualmente diez dependencias repartidas entre tres repositorios de origen.
 - Reproducibilidad de experimentos: al fijar revisiones concretas de cada peso (por ejemplo, c4f60d30c55a624e35427060fdd217579a6c1d77 para el paquete de Wan 2.2), un equipo puede reconstruir exactamente el mismo entorno de inferencia meses despues.
-- Entornos sin acceso directo a HuggingFace: en clústeres con salida a internet restringida, un unico repositorio de 69,1 GB simplifica el espejado interno y la gestion de artefactos.
+- Entornos sin acceso directo a Hugging Face: en clústeres con salida a internet restringida, un unico repositorio de 69,1 GB simplifica el espejado interno y la gestion de artefactos.
 - Auditoria de licencias de terceros: dado que la model card lista la licencia de cada fuente (Apache-2.0 en todos los casos mostrados), sirve como punto de partida para revisar el cumplimiento antes de un despliegue comercial, aunque requiere verificacion adicional del repositorio matriz.
 - Preparacion de imagenes de contenedor para inferencia: los pesos pueden hornearse en una imagen Docker que exponga ComfyUI, de modo que el arranque no dependa de descargas en tiempo de ejecucion.
 - Validacion de integridad de artefactos: el uso previsto de MODEL_SOURCES.json permite comparar checksums tras la descarga y detectar ficheros corruptos o sustituciones, algo relevante en paquetes de decenas de gigabytes.
@@ -95,7 +95,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de ninguno de los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmpplbp/laogames-wan
+- Repositorio en Hugging Face: https://huggingface.co/jmpplbp/laogames-wan
 - SquishedSquirrel/Wan2.2EV (revision 46c390c08b58861a20effc0425d0284de2d665f9): https://huggingface.co/SquishedSquirrel/Wan2.2EV/tree/46c390c08b58861a20effc0425d0284de2d665f9
 - Comfy-Org/Wan_2.2_ComfyUI_Repackaged (revision c4f60d30c55a624e35427060fdd217579a6c1d77): https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/tree/c4f60d30c55a624e35427060fdd217579a6c1d77
 - Comfy-Org/Wan_2.1_ComfyUI_repackaged (revision 617a7633e636506f850e043bc4605f290a466a8e): https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/tree/617a7633e636506f850e043bc4605f290a466a8e

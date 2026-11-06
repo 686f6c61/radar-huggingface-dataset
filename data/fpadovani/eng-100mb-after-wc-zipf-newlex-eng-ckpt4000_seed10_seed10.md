@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10` es un modelo de generación de texto de pequeno tamano (124.770.816 parametros, aproximadamente 125 M) desarrollado por el usuario fpadovani y publicado en HuggingFace. Se trata de un ajuste fino (SFT, *supervised fine-tuning*) del modelo base `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10`, realizado con la libreria TRL de HuggingFace. Su arquitectura declarada en las etiquetas del repositorio es GPT-2, es decir, un transformer decoder-only con atencion causal.
+El modelo `fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10` es un modelo de generación de texto de pequeno tamano (124.770.816 parametros, aproximadamente 125 M) desarrollado por el usuario fpadovani y publicado en Hugging Face. Se trata de un ajuste fino (SFT, *supervised fine-tuning*) del modelo base `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10`, realizado con la libreria TRL de Hugging Face. Su arquitectura declarada en las etiquetas del repositorio es GPT-2, es decir, un transformer decoder-only con atencion causal.
 
 El nombre del modelo sugiere un experimento de investigacion a pequena escala: un corpus en ingles de aproximadamente 100 MB, con alguna forma de modelado de distribucion Zipf y un "nuevo lexico" (*newlex*), entrenado hasta el checkpoint 4000 y con semilla 10. El run de Weights & Biases apunta a un proyecto asociado a la Universidad de Groningen (organizacion `f-padovani-university-of-groningen`, proyecto `white_cotterell`), lo que refuerza la hipotesis de que se trata de un artefacto academico de estudio de dinamicas de entrenamiento o de adquisicion de vocabulario, mas que de un modelo orientado a produccion.
 
@@ -50,7 +50,7 @@ El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre `fpadovani/
 - Pruebas de reproducibilidad con semillas: al existir variantes con distintas semillas (`seed10`, `seed10_seed10`), sirve para medir la varianza entre ejecuciones de un mismo pipeline SFT.
 - Validacion de pipelines TRL: sirve como caso minimo para verificar que una instalacion de TRL 0.23.0 y Transformers 4.56.2 carga y ejecuta correctamente un modelo ajustado con SFT.
 - Generacion de texto de relleno en *tests* de integracion: su tamano reducido (aproximadamente 500 MB en fp32, la mitad en fp16) permite usarlo como *stub* en pruebas automatizadas de APIs de inferencia sin consumir GPU dedicada.
-- Demostraciones docentes: util en cursos o talleres para ilustrar el ciclo completo de ajuste fino supervisado, publicacion en HuggingFace y consumo via `pipeline`, sin necesidad de infraestructura de alto coste.
+- Demostraciones docentes: util en cursos o talleres para ilustrar el ciclo completo de ajuste fino supervisado, publicacion en Hugging Face y consumo via `pipeline`, sin necesidad de infraestructura de alto coste.
 - Experimentos de destilacion o inicializacion: puede servir como punto de partida para estudiar tecnicas de *continued pretraining* o como modelo alumno en experimentos de destilacion a muy baja escala.
 
 ## Benchmarks y rendimiento
@@ -62,18 +62,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en fp32 (125 M de parametros), 0,25 GB en fp16/bf16 y del orden de 0,1-0,15 GB en cuantizacion de 8 o 4 bits. El tamano del repositorio (5,5 GB) es muy superior al peso de los parametros, lo que sugiere la presencia de estados de optimizador u otros artefactos de entrenamiento.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; por ejemplo, GTX 1650, RTX 3050, RTX 4090, A100 o H100 funcionan sin problema, aunque las GPU de gama alta estaran enormemente infrautilizadas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo de los ultimos diez anos, e incluso en CPU con un rendimiento aceptable para generacion de texto corta.
-- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado en la model card), Text Generation Inference (TGI) segun la etiqueta `text-generation-inference`, y HuggingFace Inference Endpoints segun `endpoints_compatible`. La conversion a GGUF para llama.cpp u Ollama requeriria un paso externo no documentado por el autor.
+- Opciones de despliegue: `transformers` con `pipeline` (metodo documentado en la model card), Text Generation Inference (TGI) segun la etiqueta `text-generation-inference`, y Hugging Face Inference Endpoints segun `endpoints_compatible`. La conversion a GGUF para llama.cpp u Ollama requeriria un paso externo no documentado por el autor.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10` | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | Ajuste fino SFT de un GPT-2 pequeno con fines de investigacion |
+| `fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10` | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | Ajuste fino SFT de un GPT-2 pequeno con fines de investigacion |
 | GPT-2 base (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia historica de la misma escala; multilingue limitado, solo ingles en la practica |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT (derivado de GPT-2) | Ampliamente disponible | Version destilada, mas rapida, con licencia clara para uso comercial |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace | Modelo pequeno moderno con entrenamiento a gran escala y benchmarks publicados |
-| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | HuggingFace | Alternativa de mayor tamano con contexto muy superior y soporte multilingue |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face | Modelo pequeno moderno con entrenamiento a gran escala y benchmarks publicados |
+| Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | Hugging Face | Alternativa de mayor tamano con contexto muy superior y soporte multilingue |
 
 La comparacion con GPT-2 base es la mas directa por coincidencia de parametros, pero conviene subrayar que la licencia de este modelo concreto no esta declarada, lo que impide equipararlo automaticamente a las condiciones permisivas de GPT-2 o DistilGPT-2.
 
@@ -90,7 +90,7 @@ La comparacion con GPT-2 base es la mas directa por coincidencia de parametros, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/nxsw871l
 - Repositorio de TRL: https://github.com/huggingface/trl

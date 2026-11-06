@@ -73,7 +73,7 @@ La diferencia clave de esta variante frente al checkpoint original de Microsoft 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el repositorio.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el repositorio.
 - Solo inglés: no se garantiza un rendimiento aceptable en castellano ni en otros idiomas, a pesar de que el modelo base tiene cierta competencia multilingüe.
 - Contexto limitado a 4.096 tokens: inadecuado para documentos largos, conversaciones extensas o análisis de código de gran tamaño.
 - Dependencia estricta del runtime Ryzen AI 1.9.0 y del artefacto `m_1.0.1_npu`: cambios de versión del driver o del firmware de la NPU pueden romper la compatibilidad.
@@ -85,7 +85,7 @@ La diferencia clave de esta variante frente al checkpoint original de Microsoft 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Phi-3-mini-4k-instruct_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Phi-3-mini-4k-instruct_rai_1.9.0_m_1.0.1_npu
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Paper de Phi-3 (Microsoft Research): https://arxiv.org/abs/2404.14219
 - Documentación de Ryzen AI de AMD: https://www.amd.com/en/developer/resources/ryzen-ai-software.html

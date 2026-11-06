@@ -73,7 +73,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 | Modelo | Idioma | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UMUTeam catalan_capitalization_punctuation_restoration_int8 | Catalán | BERTa (RoBERTa) int8 | no disponible | Apache 2.0 | HuggingFace (ONNX) |
+| UMUTeam catalan_capitalization_punctuation_restoration_int8 | Catalán | BERTa (RoBERTa) int8 | no disponible | Apache 2.0 | Hugging Face (ONNX) |
 | Alternativas de restauración de puntuación multilingües | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas específicas para catalán | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UMUTeam/catalan_capitalization_punctuation_restoration_int8
+- Modelo en Hugging Face: https://huggingface.co/UMUTeam/catalan_capitalization_punctuation_restoration_int8
 - Repositorio del grupo UMUTeam: https://huggingface.co/UMUTeam
 - Corpus OpusParaCrawl (referencia Bañón et al., 2020): no disponible enlace directo en la información proporcionada
 - Publicación asociada: no disponible enlace directo en la información proporcionada

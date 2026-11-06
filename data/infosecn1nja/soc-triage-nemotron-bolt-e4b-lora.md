@@ -85,8 +85,8 @@ Las tres puertas omitidas (SKIP) lo son por guardas estadísticas: el ECE requie
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| soc-triage-nemotron-bolt-e4b-lora | Adaptador LoRA MLX para triaje SOC | Adaptador rango 8 / 4 capas; base no disponible | 2048 en entrenamiento | Macro-F1 0.954 y accuracy 0.964 en test sintético n=55 | OpenMDW-1.1 | HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | Modelo base de propósito general | No disponible | No disponible | No disponible | OpenMDW-1.1 | HuggingFace (modelo oficial de NVIDIA) |
+| soc-triage-nemotron-bolt-e4b-lora | Adaptador LoRA MLX para triaje SOC | Adaptador rango 8 / 4 capas; base no disponible | 2048 en entrenamiento | Macro-F1 0.954 y accuracy 0.964 en test sintético n=55 | OpenMDW-1.1 | Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | Modelo base de propósito general | No disponible | No disponible | No disponible | OpenMDW-1.1 | Hugging Face (modelo oficial de NVIDIA) |
 | Google Gemma 4 (origen declarado del base) | Modelo base de propósito general | No disponible | No disponible | No disponible | Apache-2.0 según la model card | No verificado en la información disponible |
 | Otros clasificadores de triaje SOC | No disponible | No disponible | No disponible | No disponible | No disponible | No identificados en la búsqueda realizada |
 
@@ -109,7 +109,7 @@ No se han identificado en la información disponible alternativas directamente c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora
+- Modelo en Hugging Face: https://huggingface.co/infosecn1nja/soc-triage-nemotron-bolt-e4b-lora
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Base cuantizada usada en el ejemplo de servicio: https://huggingface.co/mlx-community/NVIDIA-Nemotron-3.5-Bolt-E4B-OptiQ-4bit
 - Dataset de entrenamiento: https://huggingface.co/datasets/infosecn1nja/soc-triage-opensec-chat

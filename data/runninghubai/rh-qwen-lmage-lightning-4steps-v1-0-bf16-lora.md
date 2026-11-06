@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye otros adaptadores de poc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-qwen-lmage-lightning-4steps-v1.0-bf16-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-qwen-lmage-lightning-4steps-v1.0-bf16-lora
 - Proyecto original en RunningHub: https://www.runninghub.cn/model/public/1984839799238443010
 - Página del autor: https://www.runninghub.cn/user-center/1962130573391294465
 - RunningHub International: https://www.runninghub.ai

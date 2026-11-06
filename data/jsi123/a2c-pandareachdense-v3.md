@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Algoritmo | Entorno | Timesteps | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JSI123/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | 1.000.000 | -0,2246 +/- 0,1156 | no disponible | HuggingFace |
+| JSI123/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | 1.000.000 | -0,2246 +/- 0,1156 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada.
@@ -89,7 +89,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JSI123/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/JSI123/a2c-PandaReachDense-v3
 - Stable-Baselines3 (documentacion): https://stable-baselines3.readthedocs.io/
 - Panda-Gym (entorno `PandaReachDense-v3`): https://github.com/qgallouedec/panda-gym
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos distintos de los enlaces anteriores.

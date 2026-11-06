@@ -73,7 +73,7 @@ No disponible. Al no existir un modelo funcional, no es posible compararlo con a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pandey1111/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/pandey1111/tds-carbon-card
 - Referencia a otra tarjeta similar (anant-venkatesh1/tds-carbon-card): https://huggingface.co/anant-venkatesh1/tds-carbon-card
 - Documentación sobre model cards (CHAI): https://www.chai.org/workgroup/applied-model
 - Guía de AI model cards en carbon.txt: https://www.thegreenwebfoundation.org/news/ai-model-cards-in-carbon-txt/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-alm1-0731-milab.60.M es un checkpoint de política robótica publicado en HuggingFace por el usuario milab-robot. Según la model card del propio autor, no se trata de un modelo de lenguaje, sino de una política de control entrenada con el algoritmo ACT (Action Chunking Transformer) sobre el dataset milab-robot/alm1-0731-milab.60.M. El repositorio ocupa 2,3 GB y en el momento de la consulta acumula 0 descargas y 0 likes, sin pipeline declarado, sin licencia especificada y sin idiomas indicados.
+alm1-0731-milab.60.M es un checkpoint de política robótica publicado en Hugging Face por el usuario milab-robot. Según la model card del propio autor, no se trata de un modelo de lenguaje, sino de una política de control entrenada con el algoritmo ACT (Action Chunking Transformer) sobre el dataset milab-robot/alm1-0731-milab.60.M. El repositorio ocupa 2,3 GB y en el momento de la consulta acumula 0 descargas y 0 likes, sin pipeline declarado, sin licencia especificada y sin idiomas indicados.
 
 La información pública se limita a una tabla de resumen de la rama de entrenamiento act-s300k-eb32: 300.000 pasos, 2 GPUs, batch de 16 por GPU (batch efectivo 32), learning rate 1e-5, weight decay 1e-4, semilla 1000 y checkpoint guardado en el paso 280.000. Las métricas reportadas son MAE 0,0057 y RMSE 0,0118, calculadas sobre tan solo 2 episodios de evaluación.
 
@@ -34,8 +34,8 @@ Su relevancia actual es limitada y de carácter estrictamente experimental: se t
 | MAE / RMSE reportados | 0,0057 / 0,0118 |
 | Tamaño del repositorio | 2,3 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación (según HuggingFace) | 2026-09-13 |
-| Fecha de actualización (según HuggingFace) | 2026-09-13 |
+| Fecha de creación (según Hugging Face) | 2026-09-13 |
+| Fecha de actualización (según Hugging Face) | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos de benchmarks en la información proporciona
 
 | Modelo / política | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alm1-0731-milab.60.M | Política de manipulación basada en ACT | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| alm1-0731-milab.60.M | Política de manipulación basada en ACT | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Implementaciones ACT de referencia (por ejemplo, las integradas en frameworks de robótica open source) | Política de manipulación basada en ACT | no disponible | no aplica | depende del proyecto | pública |
 | Diffusion Policy | Política de manipulación basada en modelos de difusión | no disponible | no aplica | depende del proyecto | pública |
 | Modelos visión-lenguaje-acción (VLA) | Política generalista condicionada por instrucciones en lenguaje | no disponible | no aplica | depende del proyecto | pública |
@@ -109,12 +109,12 @@ La diferencia funcional principal es de alcance: este checkpoint es una polític
 - Sesgos: no disponibles. No se documenta la composición del dataset ni posibles desequilibrios en las demostraciones, lo que impide evaluar sesgos de comportamiento.
 - Alucinación: el concepto no aplica en sentido estricto a una política de control, pero sí existe el riesgo equivalente de ejecutar acciones no previstas ante observaciones fuera de distribución.
 - Limitaciones de contexto o idioma: el modelo no procesa lenguaje natural, por lo que no admite instrucciones textuales ni conversación.
-- Anomalía en las fechas: HuggingFace registra la creación y la última actualización el 2026-09-13, una fecha posterior a la habitual de consulta, lo que apunta a un error de registro o a un reloj mal configurado en el entorno de publicación.
+- Anomalía en las fechas: Hugging Face registra la creación y la última actualización el 2026-09-13, una fecha posterior a la habitual de consulta, lo que apunta a un error de registro o a un reloj mal configurado en el entorno de publicación.
 - Uso en producción desaconsejado: sin licencia, sin evaluación robusta y sin documentación de seguridad, no debería desplegarse en entornos físicos donde un fallo pueda causar daños materiales o personales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/milab-robot/alm1-0731-milab.60.M
+- Modelo en Hugging Face: https://huggingface.co/milab-robot/alm1-0731-milab.60.M
 - Dataset referenciado en la model card: milab-robot/alm1-0731-milab.60.M (identificador citado por el autor; no se ha verificado su URL independiente)
 - Referencia externa sobre la arquitectura ACT (no citada por el autor, incluida solo como contexto técnico): «Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware», Zhao et al., 2023, arXiv:2304.13705
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Los resultados devueltos corresponden a páginas de comparación de vuelos y alquiler de coches (Skyscanner) y no guardan relación con el modelo.

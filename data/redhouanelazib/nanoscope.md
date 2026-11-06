@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo RedhouaneLazib/nanoscope es un modelo publicado en HuggingFace por el autor RedhouaneLazib. La información disponible en su ficha es extremadamente limitada: únicamente se especifica la licencia MIT. No se ha publicado ninguna descripción técnica, ni detalles sobre arquitectura, tamaño, contexto, idiomas o capacidades.
+El modelo RedhouaneLazib/nanoscope es un modelo publicado en Hugging Face por el autor RedhouaneLazib. La información disponible en su ficha es extremadamente limitada: únicamente se especifica la licencia MIT. No se ha publicado ninguna descripción técnica, ni detalles sobre arquitectura, tamaño, contexto, idiomas o capacidades.
 
-El modelo no tiene descargas ni likes en HuggingFace, y su fecha de creación es el 5 de septiembre de 2026. En la actualidad, no es posible determinar qué tipo de modelo es ni qué problema resuelve, ya que la documentación no incluye información al respecto.
+El modelo no tiene descargas ni likes en Hugging Face, y su fecha de creación es el 5 de septiembre de 2026. En la actualidad, no es posible determinar qué tipo de modelo es ni qué problema resuelve, ya que la documentación no incluye información al respecto.
 
 ## Especificaciones tecnicas
 
@@ -48,9 +48,9 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 - La información disponible sobre el modelo es casi inexistente, por lo que se desconocen sus sesgos, riesgos de alucinación y limitaciones de contexto o idioma.
 - La licencia MIT es permisiva y permite el uso comercial, pero al no existir documentación técnica, no se puede evaluar la idoneidad del modelo para entornos de producción.
-- El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedhouaneLazib/nanoscope
+- Hugging Face: https://huggingface.co/RedhouaneLazib/nanoscope
 - No se han encontrado enlaces adicionales relevantes. Los resultados de búsqueda web apuntan a contenido no relacionado con este modelo.

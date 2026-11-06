@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-6bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-Multimodal-MLX-6bit
 - Modelo base BF16 (AEON-7): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Drafter MTP para decodificación especulativa: https://huggingface.co/intheblue/Qwen3.8-27B-AEON-Ultimate-Uncensored-MLX-MTP-Drafter
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

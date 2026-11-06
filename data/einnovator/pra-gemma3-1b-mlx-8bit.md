@@ -88,6 +88,6 @@ No se dispone de comparativas directas con otros modelos o bundles de eficiencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-gemma3-1b-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-gemma3-1b-mlx-8bit
 - Modelo base: https://huggingface.co/mlx-community/gemma-3-1b-it-8bit
 - No se encontraron papers, blogs o demos adicionales en la búsqueda web.

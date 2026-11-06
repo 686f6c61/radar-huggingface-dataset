@@ -82,7 +82,7 @@ La comparativa es cualitativa porque no se dispone de benchmarks estandarizados 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/primitive-ai/Muse-Glimmer-30B-mixed-INT4-INT8
+- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Muse-Glimmer-30B-mixed-INT4-INT8
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de investigación de Meta: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Página de desarrollador de Meta: https://developer.meta.com/ai/models/muse-glimmer/

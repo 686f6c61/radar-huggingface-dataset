@@ -75,7 +75,7 @@ No se dispone de información sobre otros feature caches comparables en el mismo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_width_16k_average_l0_76_msNone_ml2048_tk10_hc60c0ae0b93e](https://huggingface.co/siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_width_16k_average_l0_76_msNone_ml2048_tk10_hc60c0ae0b93e)
+- Repositorio en Hugging Face: [siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_width_16k_average_l0_76_msNone_ml2048_tk10_hc60c0ae0b93e](https://huggingface.co/siddharthmb/2026.TA.features_gemma-2-2b_gemmascope_width_16k_average_l0_76_msNone_ml2048_tk10_hc60c0ae0b93e)
 - Modelo base (referencia): [gemma-2-2b_gemmascope_width_16k_average_l0_76](https://huggingface.co/gemma-2-2b_gemmascope_width_16k_average_l0_76)
 - Dataset de chat: [siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits](https://huggingface.co/datasets/siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits)
 - Dataset de texto web: [science-of-finetuning/fineweb-1m-sample](https://huggingface.co/datasets/science-of-finetuning/fineweb-1m-sample)

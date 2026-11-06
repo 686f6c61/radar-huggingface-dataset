@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dougalldeepmind/2026-09-13-qwen36-reasoned-refusal-660-0` | Adaptador LoRA SFT sobre Qwen3.6-27B | Adaptador r=64 sobre base de 27B | No disponible (entrenado con `max_seq_len` 8192) | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.6-27B` (modelo base) | Transformer denso | 27B | No disponible en la información recogida | No disponible en la información recogida | HuggingFace |
+| `dougalldeepmind/2026-09-13-qwen36-reasoned-refusal-660-0` | Adaptador LoRA SFT sobre Qwen3.6-27B | Adaptador r=64 sobre base de 27B | No disponible (entrenado con `max_seq_len` 8192) | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.6-27B` (modelo base) | Transformer denso | 27B | No disponible en la información recogida | No disponible en la información recogida | Hugging Face |
 | Otros adaptadores LoRA de la misma familia | Adaptador PEFT | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información disponible |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas de la misma categoría; la única diferencia verificable frente a la base es la presencia del ajuste LoRA orientado a negativa razonada.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-13-qwen36-reasoned-refusal-660-0
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-13-qwen36-reasoned-refusal-660-0
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-13-t2-9284-reasoned-refusal-660-train-mixture
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio de origen del pipeline: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication

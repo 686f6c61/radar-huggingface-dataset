@@ -2,7 +2,7 @@
 
 ## Resumen
 
-S2PD (Serial-to-Parallel Diffusion) es un artefacto de investigación publicado por el usuario jefequien en HuggingFace. No es un modelo de lenguaje: se trata de un conjunto de checkpoints de modelos de difusión entrenados desde cero para generar secuencias de estados en entornos deterministas (juegos de mesa y arcade, puzles y sistemas físicos), lo que lo sitúa en el ámbito de la generación de vídeo y del modelado de dinámicas. El repositorio ocupa 109,2 GB y se distribuye bajo licencia MIT.
+S2PD (Serial-to-Parallel Diffusion) es un artefacto de investigación publicado por el usuario jefequien en Hugging Face. No es un modelo de lenguaje: se trata de un conjunto de checkpoints de modelos de difusión entrenados desde cero para generar secuencias de estados en entornos deterministas (juegos de mesa y arcade, puzles y sistemas físicos), lo que lo sitúa en el ámbito de la generación de vídeo y del modelado de dinámicas. El repositorio ocupa 109,2 GB y se distribuye bajo licencia MIT.
 
 El paquete contiene dos familias de modelos. La primera son modelos DiT-B en espacio de píxeles, entrenados desde cero sobre doce entornos: Conway, Chess, 2048, Fifteen Puzzle, Tetris, Snake, Rubik's Cube 3D, Double Pendulum, Three Body, Colliding Balls 2D, Colliding Balls 3D y Pong. La segunda son adaptadores LoRA que requieren el backbone Wan-5B (Wan-AI/Wan2.2-TI2V-5B-Diffusers), entrenados sobre Kubric MOVi-A y Kubric MOVi-C. Para cada combinación de dataset y familia, la model card ofrece cuatro variantes: Bidirectional, cDF, BC y S2PD.
 
@@ -91,12 +91,12 @@ Como alternativas externas de la misma categoría (modelos de difusión para ví
 - Contexto: se desconoce la ventana temporal y la resolución máximas; no se debe asumir que el modelo genere secuencias largas de forma estable.
 - Licencia: MIT para los checkpoints de este repositorio, lo que permite uso comercial y modificación. Atención al componente de terceros: los adaptadores LoRA dependen del backbone Wan2.2-TI2V-5B, cuyos términos de uso son independientes y deben revisarse por separado antes de un despliegue comercial.
 - Ausencia de benchmarks: sin métricas publicadas no es posible justificar afirmaciones de calidad frente a alternativas, ni comparar objetivamente las cuatro variantes más allá de inspección cualitativa.
-- Madurez: el repositorio no registra descargas ni valoraciones, la biblioteca `s2pd` es específica del autor y no hay pipeline declarado en HuggingFace, lo que implica un riesgo alto de fricción de integración y de mantenimiento.
+- Madurez: el repositorio no registra descargas ni valoraciones, la biblioteca `s2pd` es específica del autor y no hay pipeline declarado en Hugging Face, lo que implica un riesgo alto de fricción de integración y de mantenimiento.
 - Producción: por lo anterior, este repositorio es adecuado para investigación y reproducción de experimentos, no como componente de un sistema en producción sin una validación propia previa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jefequien/S2PD
+- Repositorio en Hugging Face: https://huggingface.co/jefequien/S2PD
 - Página del proyecto: https://jefequien.github.io/S2PD/
 - Código fuente: https://github.com/jefequien/S2PD
 - Backbone requerido por los adaptadores LoRA (Wan-5B): https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Falmo-3b es un modelo publicado en HuggingFace por el usuario lagzyllm bajo el identificador `lagzyllm/falmo-3b`. La model card asociada al repositorio no contiene más información que la declaración de licencia Apache 2.0: no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni instrucciones de uso. El nombre del repositorio sugiere un modelo de aproximadamente 3 000 millones de parámetros, pero este dato no está confirmado por el autor en la documentación disponible.
+Falmo-3b es un modelo publicado en Hugging Face por el usuario lagzyllm bajo el identificador `lagzyllm/falmo-3b`. La model card asociada al repositorio no contiene más información que la declaración de licencia Apache 2.0: no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas soportados ni instrucciones de uso. El nombre del repositorio sugiere un modelo de aproximadamente 3 000 millones de parámetros, pero este dato no está confirmado por el autor en la documentación disponible.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (14 de septiembre de 2026), lo que indica una publicación reciente y sin tracción verificable en la comunidad. Tampoco se declara un pipeline (`text-generation`, `text2text-generation`, etc.), por lo que no es posible confirmar la tarea para la que fue diseñado.
 
@@ -105,5 +105,5 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lagzyllm/falmo-3b
+- Repositorio en Hugging Face: https://huggingface.co/lagzyllm/falmo-3b
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados al modelo. Los resultados devueltos correspondian a servicios de correo electronico sin relacion con el modelo, por lo que se descartan como fuentes.

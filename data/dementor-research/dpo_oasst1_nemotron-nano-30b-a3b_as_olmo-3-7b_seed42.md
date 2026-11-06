@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA entrenado con DPO (Direct Preference
 
 El adaptador tiene un tamaño de repositorio de 1,5 GB y está formateado como pesos `safetensors` dentro de la librería `peft`. Al tratarse de un adaptador LoRA, no es un modelo completo sino una modificación incremental del modelo base, que es un transformer MoE de 30 mil millones de parámetros con 3 mil millones activos. No se dispone de información sobre licencia, idiomas soportados, ni métricas de rendimiento.
 
-Dado que el repositorio no incluye una model card detallada más allá de la información básica, la mayoría de las especificaciones técnicas del adaptador y del modelo base permanecen desconocidas. Este adaptador está pensado para ser cargado junto con el modelo base mediante `PeftModel` de HuggingFace.
+Dado que el repositorio no incluye una model card detallada más allá de la información básica, la mayoría de las especificaciones técnicas del adaptador y del modelo base permanecen desconocidas. Este adaptador está pensado para ser cargado junto con el modelo base mediante `PeftModel` de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El adaptador LoRA requiere el modelo base `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` para funcionar. El modelo base es un MoE de 30B parámetros totales con 3B activos, lo que implica que la inferencia requiere una GPU con suficiente VRAM para cargar los pesos completos en BF16.
 - Estimación orientativa: para BF16, el modelo base podría ocupar aproximadamente 60 GB de VRAM (30B parámetros × 2 bytes). Sin embargo, al ser MoE con solo 3B activos, la memoria requerida puede ser menor si se utiliza una implementación optimizada, pero no se dispone de datos concretos.
 - El adaptador en sí ocupa 1,5 GB, pero se suma al modelo base.
-- No se indican GPUs recomendadas ni opciones de despliegue (vLLM, llama.cpp, etc.). Se asume que es compatible con el ecosistema HuggingFace Transformers y PEFT.
+- No se indican GPUs recomendadas ni opciones de despliegue (vLLM, llama.cpp, etc.). Se asume que es compatible con el ecosistema Hugging Face Transformers y PEFT.
 
 ## Comparativa con modelos similares
 
@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_olmo-3-7b_seed42)
-- [Modelo base en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/dementor-research/dpo_oasst1_nemotron-nano-30b-a3b_as_olmo-3-7b_seed42)
+- [Modelo base en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16)
 - [Herramienta Tinker de Thinking Machines](https://thinkingmachines.ai/tinker/)

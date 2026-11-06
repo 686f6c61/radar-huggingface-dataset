@@ -80,7 +80,7 @@ En un ejemplo concreto, un texto de Wikipedia con 139 tokens reales fue predicho
 
 ## Comparativa con modelos similares
 
-No se han identificado modelos comparables en el ecosistema de HuggingFace que realicen estimación de tokens mediante regresión. La alternativa natural es usar un tokenizador real, que ofrece una precisión exacta pero con una latencia mayor, especialmente en textos largos. JetonCount se posiciona como una opción de compromiso entre velocidad y precisión, sin rivales directos conocidos.
+No se han identificado modelos comparables en el ecosistema de Hugging Face que realicen estimación de tokens mediante regresión. La alternativa natural es usar un tokenizador real, que ofrece una precisión exacta pero con una latencia mayor, especialmente en textos largos. JetonCount se posiciona como una opción de compromiso entre velocidad y precisión, sin rivales directos conocidos.
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No se han identificado modelos comparables en el ecosistema de HuggingFace que r
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fromziro/JetonCount)
+- [Modelo en Hugging Face](https://huggingface.co/fromziro/JetonCount)
 - [Space de demostración](https://huggingface.co/spaces/fromziro/JetonCount)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/fromziro/jetoncount_corpus)
 - [Lista de tokenizadores utilizados](https://huggingface.co/fromziro/JetonCount/blob/main/tokenizers_used.txt)

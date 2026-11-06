@@ -90,8 +90,8 @@ Los recuentos por clase están en `runs/thermal_det_eval_*.json` y las curvas de
 
 | Alternativa | Tipo | Inicialización | Recall nocturno | Precisión | FP por frame | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| sailswarm-yolo-thermal (ft2) | YOLOv8n | LLVIP+MassMIND baja resolución + fine-tune térmico | 0,35 | 0,84 | 0,11 | AGPL-3.0 + CC BY-NC-SA | HuggingFace |
-| sailswarm-yolo-thermal (control) | YOLOv8n | COCO + mismo fine-tune térmico | 0,15 | 0,88 | 0,01 | AGPL-3.0 + CC BY-NC-SA | HuggingFace |
+| sailswarm-yolo-thermal (ft2) | YOLOv8n | LLVIP+MassMIND baja resolución + fine-tune térmico | 0,35 | 0,84 | 0,11 | AGPL-3.0 + CC BY-NC-SA | Hugging Face |
+| sailswarm-yolo-thermal (control) | YOLOv8n | COCO + mismo fine-tune térmico | 0,15 | 0,88 | 0,01 | AGPL-3.0 + CC BY-NC-SA | Hugging Face |
 | Detector clásico de blobs calientes | Umbral sobre píxeles calientes | no aplica | 0,77 | 0,17 | 3,3 | no disponible | interno del proyecto SailSwarm |
 | YOLOv8n estándar de Ultralytics | YOLOv8n | COCO | no disponible para este dominio | no disponible | no disponible | AGPL-3.0 | Repositorio y pesos públicos de Ultralytics |
 
@@ -112,7 +112,7 @@ En la información disponible no se identifican otros modelos públicos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NexusDwin/sailswarm-yolo-thermal
+- Modelo en Hugging Face: https://huggingface.co/NexusDwin/sailswarm-yolo-thermal
 - Repositorio relacionado citado en la model card: `SailSwarm-ObstacleDetection` (documento `docs/history/2026-09-12_night_retrain_aime.md`, secciones 9 y 10); no se proporciona URL en la información disponible.
 - Recetas y scripts citados: `scripts/gpu_finetune/train_yolo.py`, `scripts/eval/thermal_gt_eval.py`; rutas internas del proyecto, sin URL pública en la información disponible.
 - Framework base: Ultralytics YOLOv8, https://github.com/ultralytics/ultralytics (licencia AGPL-3.0).

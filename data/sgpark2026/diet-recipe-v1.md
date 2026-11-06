@@ -79,7 +79,7 @@ La comparativa se basa en datos públicos de los modelos base. diet-recipe-v1 se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sgpark2026/diet-recipe-v1
+- Repositorio Hugging Face: https://huggingface.co/sgpark2026/diet-recipe-v1
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Proyecto relacionado (no oficial): https://github.com/lakshmi-official/Project-AI-Nutrient-and-Diet-Suggesting-site
 - Proyecto relacionado (no oficial): https://github.com/avneeshkum/recipe-ai-project

@@ -120,7 +120,7 @@ Existen variantes del mismo autor con diferente balance de clases: `roberta-larg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50_5e-06
+- Modelo en Hugging Face: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50_5e-06
 - Variante con balance 75/25: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_75
 - Variante con balance 50/50 (sin sufijo de learning rate): https://huggingface.co/DrinkIcedT/roberta-large_MBTI_I_MBTI_agg_balanced_50
 - Repositorio de RoBERTa original (Facebook AI): https://github.com/facebookresearch/fairseq/tree/main/examples/roberta

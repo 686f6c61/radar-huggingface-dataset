@@ -39,7 +39,7 @@ La innovación de este repositorio es de ingeniería de despliegue, no de modela
 - Superresolución de imagen con factor de escala x4 sobre entradas RGB arbitrarias en altura y anchura (dimensiones dinamicas en los ejes espaciales).
 - Procesamiento por lotes: el eje `batch` del contrato de entrada permite inferencia con batch mayor que 1.
 - Restauración de imagenes degradadas con detalle plausible, heredada del entrenamiento de Real-ESRGAN sobre degradaciones sinteticas.
-- Ejecución 100 % en cliente: la sesión ONNX puede crearse directamente desde la URL de HuggingFace dentro de un navegador con WebGPU o WASM.
+- Ejecución 100 % en cliente: la sesión ONNX puede crearse directamente desde la URL de Hugging Face dentro de un navegador con WebGPU o WASM.
 - Doble variante de precisión: fp32 para maxima fidelidad numerica y fp16 para la mitad de tamano y menor coste de memoria y ancho de banda.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni modo de pensamiento: no es un modelo de lenguaje.
 - No tiene capacidades multilingues ni de texto, audio o video.
@@ -108,7 +108,7 @@ La ventaja diferencial de este repositorio frente al checkpoint upstream no es l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/realesrgan-x4plus
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/realesrgan-x4plus
 - Fichero `model.onnx`: https://huggingface.co/skillsafe-ai/realesrgan-x4plus/resolve/main/model.onnx
 - Repositorio upstream Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Checkpoint original: https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth

@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t3-voice-julia1 | 144,3M | no disponible | Clasificación de comandos de voz (en) | apache-2.0 | HuggingFace (ONNX + safetensors) |
-| SupersonicLabs/Julia-1 | no disponible | no disponible | Modelo base (encoder mmBERT-small) | no disponible | HuggingFace |
+| t3-voice-julia1 | 144,3M | no disponible | Clasificación de comandos de voz (en) | apache-2.0 | Hugging Face (ONNX + safetensors) |
+| SupersonicLabs/Julia-1 | no disponible | no disponible | Modelo base (encoder mmBERT-small) | no disponible | Hugging Face |
 | Alternativas de clasificación de intención | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuvidhepe/t3-voice-julia1
+- Modelo en Hugging Face: https://huggingface.co/yuvidhepe/t3-voice-julia1
 - Modelo base: https://huggingface.co/SupersonicLabs/Julia-1
 - Dataset: https://huggingface.co/datasets/yuvidhepe/t3-voice-commands
 - Repositorio del proyecto: https://github.com/Yuvraj-Dhepe/t3-voice

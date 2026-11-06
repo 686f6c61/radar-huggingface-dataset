@@ -83,8 +83,8 @@ Los datos de los modelos comparados provienen de sus fichas publicas y deben ver
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | SmolQwen-1M (alpha) | 3,02 M totales (1,19 M en el transformer) | 8192 tokens | Apache-2.0 | Repositorio PyTorch, sin pipeline declarado, 0 descargas |
-| TinyStories-1M (variantes de Microsoft Research) | ~1 M | no disponible | no disponible | Pesos publicos en HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache-2.0 | Pesos publicos, amplio soporte de runtimes |
+| TinyStories-1M (variantes de Microsoft Research) | ~1 M | no disponible | no disponible | Pesos publicos en Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache-2.0 | Pesos publicos, amplio soporte de runtimes |
 | Qwen2.5-0.5B (Alibaba) | 0,49 B | 32 768 tokens | Apache-2.0 | Pesos publicos, soporte en vLLM, llama.cpp y Ollama |
 
 Frente a estos, SmolQwen-1M es dos ordenes de magnitud menor que SmolLM-135M y tres que Qwen2.5-0.5B: su interes es arquitectonico y educativo, no de calidad de tarea. Contra las variantes de TinyStories, aporta contexto de 8192 tokens y una mezcla multidisciplinar, pero carece de su ecosistema de evaluacion y de soporte en herramientas.
@@ -105,8 +105,8 @@ Frente a estos, SmolQwen-1M es dos ordenes de magnitud menor que SmolLM-135M y t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simonko912/smolqwen-alpha-1m
+- Modelo en Hugging Face: https://huggingface.co/simonko912/smolqwen-alpha-1m
 - Paper tecnico: no disponible
 - Blog del autor: no disponible
-- Repositorio de codigo independiente: no disponible (el codigo `model.py` y `gen.py` se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo independiente: no disponible (el codigo `model.py` y `gen.py` se distribuye dentro del propio repositorio de Hugging Face)
 - Demo o Space: no disponible

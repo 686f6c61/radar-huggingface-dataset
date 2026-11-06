@@ -73,7 +73,7 @@ El modelo es una conversión de YatharthS/LuxTTS, que es la referencia directa. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tinytrashlabs/LuxTTS-mlx
+- Hugging Face: https://huggingface.co/tinytrashlabs/LuxTTS-mlx
 - Modelo base: https://huggingface.co/YatharthS/LuxTTS
 - Vocos: https://github.com/gemelo-ai/vocos
 - Tiny Trash Labs: https://tinytrashlabs.com

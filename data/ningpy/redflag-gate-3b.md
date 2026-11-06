@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 - VRAM estimada para los pesos: aproximadamente 6,2 GB en fp16/bf16 (coincide con el tamaño del repositorio), unos 12,4 GB en fp32 y en torno a 1,8-2,5 GB con cuantización de 4 bits. Hay que sumar el espacio para caché KV y activaciones, que depende de la longitud de contexto utilizada.
 - GPU recomendadas: cualquier GPU con 8 GB o más para fp16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090). En entornos de servidor, A100, H100, L40S o A10G funcionan sin problema, aunque están sobredimensionadas para un modelo de 3B.
 - Cabe en GPU de consumo: sí, en fp16 en tarjetas de 8-12 GB y en cuantización de 4 bits en GPUs de 6-8 GB o incluso en CPU con llama.cpp tras convertir a GGUF.
-- Opciones de despliegue: transformers (uso documentado por el autor con `AutoModelForCausalLM`), vLLM, TGI (las etiquetas del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, lo que apunta a compatibilidad con HuggingFace Inference Endpoints). Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, algo que el autor no distribuye.
+- Opciones de despliegue: transformers (uso documentado por el autor con `AutoModelForCausalLM`), vLLM, TGI (las etiquetas del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, lo que apunta a compatibilidad con Hugging Face Inference Endpoints). Para llama.cpp u Ollama sería necesario convertir los pesos a GGUF, algo que el autor no distribuye.
 - Latencia y throughput estimados: no disponibles. Al ser una tarea de extracción con `max_new_tokens=200` y decodificación greedy (`do_sample=False`), la latencia será baja en GPU moderna, pero no se publican mediciones.
 
 ## Comparativa con modelos similares
@@ -90,13 +90,13 @@ Cualquier comparación cuantitativa con alternativas requeriría evaluar cada mo
 - Riesgo de sesgo derivado del corpus de entrenamiento, orientado a un contexto clínico específico (Brunéi y sudeste asiático) y no documentado en detalle. No se especifica composición demográfica del dataset.
 - Restricciones de licencia: Apache 2.0 permite uso comercial y modificación, pero eso no exime de las obligaciones regulatorias aplicables a software sanitario en la Unión Europea (marcado CE conforme al reglamento MDR, cumplimiento del RGPD para datos de salud y evaluación de impacto).
 - Ausencia total de validación externa independiente: el repositorio registra 0 descargas y 0 *likes*, lo que indica que no ha sido reproducido ni auditado por terceros.
-- Inconsistencia de identificadores: la ficha de HuggingFace figura bajo `ningpy/redflag-gate-3b`, mientras que la model card y los ejemplos de código usan `peiyan-ning/redflag-gate-3b`. Conviene verificar cuál es el repositorio canónico antes de integrarlo.
+- Inconsistencia de identificadores: la ficha de Hugging Face figura bajo `ningpy/redflag-gate-3b`, mientras que la model card y los ejemplos de código usan `peiyan-ning/redflag-gate-3b`. Conviene verificar cuál es el repositorio canónico antes de integrarlo.
 - No se publican cuantizaciones GGUF ni versiones optimizadas, lo que obliga a realizar la conversión por cuenta propia si se quiere desplegar en CPU o en hardware muy limitado.
 - No debe utilizarse como herramienta de decisión clínica autónoma: está concebido como una capa de extracción dentro de un sistema con revisión humana y motor de reglas determinista.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ningpy/redflag-gate-3b
+- Modelo en Hugging Face: https://huggingface.co/ningpy/redflag-gate-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio del pipeline completo (motor de reglas, post-procesado y código de inferencia de extremo a extremo): https://git.evyd.tech/ai/redflag-detection-2.0
 - Módulos hermanos citados en la model card:

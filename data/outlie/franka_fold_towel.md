@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| outlie/franka_fold_towel (este) | no disponible | ventana de 4 pasos en el crítico; chunks de 2 frames en el actor | no disponible | no disponible | Pesos abiertos en HuggingFace, requiere base LingBot-VA |
+| outlie/franka_fold_towel (este) | no disponible | ventana de 4 pasos en el crítico; chunks de 2 frames en el actor | no disponible | no disponible | Pesos abiertos en Hugging Face, requiere base LingBot-VA |
 | OpenVLA | 7B (VLM Llama-2-7B + encoders visuales) | no disponible | no disponible | sujeta a la licencia base del LLM (consultar) | Pesos y código abiertos |
 | Octo | variantes pequeñas (decenas de millones de parámetros) | no disponible | no disponible | abierta (consultar) | Pesos y código abiertos |
 | pi0 / openpi | escala de miles de millones | no disponible | no disponible | abierta (consultar) | Pesos y código abiertos |
@@ -106,7 +106,7 @@ Nota: los campos marcados como no disponibles no se han verificado en fuentes of
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/outlie/franka_fold_towel
+- Repositorio en Hugging Face: https://huggingface.co/outlie/franka_fold_towel
 - Model card (contenido citado en la información proporcionada): https://huggingface.co/outlie/franka_fold_towel/blob/main/README.md
 - Ficheros del actor SFT: https://huggingface.co/outlie/franka_fold_towel/tree/main/sft/checkpoint_step_21000
 - Ficheros del crítico: https://huggingface.co/outlie/franka_fold_towel/tree/main/critic/checkpoint_00030000

@@ -112,7 +112,7 @@ La comparación de rendimiento entre estas alternativas no está disponible en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/Llama-3.1-8B-Instruct-NVFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/Llama-3.1-8B-Instruct-NVFP4-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Perfil del autor: https://huggingface.co/prithivMLmods

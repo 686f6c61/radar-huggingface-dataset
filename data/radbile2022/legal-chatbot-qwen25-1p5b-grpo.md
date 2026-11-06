@@ -84,7 +84,7 @@ La comparativa con alternativas legales especificas no puede completarse con dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/radbile2022/legal-chatbot-qwen25-1p5b-grpo
+- Hugging Face: https://huggingface.co/radbile2022/legal-chatbot-qwen25-1p5b-grpo
 - Modelo base declarado (adaptador LoRA): https://huggingface.co/radbile2022/legal-chatbot-qwen25-1p5b-lora
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (framework de RL, GRPO): https://github.com/huggingface/trl

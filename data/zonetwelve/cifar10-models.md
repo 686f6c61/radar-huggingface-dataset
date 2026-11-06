@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZoneTwelve/cifar10-models es un repositorio de HuggingFace que aloja una suite de checkpoints de PyTorch para clasificación de imágenes sobre el dataset CIFAR-10. El autor, ZoneTwelve, ha entrenado ocho arquitecturas distintas (CNN convencionales, una red recurrente, una MobileNet, un Vision Transformer y una DenseNet) con el objetivo de comparar su rendimiento bajo condiciones controladas. Los pesos se almacenan en formato `.pt` e incluyen estado del optimizador, historial de épocas y metadatos de arquitectura, lo que permite reproducir o reanudar el entrenamiento.
+ZoneTwelve/cifar10-models es un repositorio de Hugging Face que aloja una suite de checkpoints de PyTorch para clasificación de imágenes sobre el dataset CIFAR-10. El autor, ZoneTwelve, ha entrenado ocho arquitecturas distintas (CNN convencionales, una red recurrente, una MobileNet, un Vision Transformer y una DenseNet) con el objetivo de comparar su rendimiento bajo condiciones controladas. Los pesos se almacenan en formato `.pt` e incluyen estado del optimizador, historial de épocas y metadatos de arquitectura, lo que permite reproducir o reanudar el entrenamiento.
 
 La relevancia de este repositorio radica en que documenta de forma transparente las diferencias de precisión entre arquitecturas con un presupuesto de entrenamiento fijo (30 épocas para la mayoría), y señala explícitamente una advertencia de equidad: el mejor modelo, DenseCNN, se entrenó durante 200 épocas, por lo que su 92,53% de precisión en test no es comparable directamente con el resto. El mejor resultado dentro del presupuesto común de 30 épocas es el de CNN-C + BN, con un 84,27% de precisión en test. El repositorio incluye gráficos de curvas de pérdida, tamaño de red frente a precisión y benchmarks de inferencia en MPS (Apple Silicon).
 
@@ -82,7 +82,7 @@ No se dispone de datos comparativos con otros modelos de CIFAR-10 en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZoneTwelve/cifar10-models
+- Repositorio Hugging Face: https://huggingface.co/ZoneTwelve/cifar10-models
 - Codigo fuente y reportes sincronizados: https://github.com/ZoneTwelve/cifar-baselines
-- Datasets de CIFAR-10 en HuggingFace: https://huggingface.co/models?dataset=dataset:cifar10 y https://huggingface.co/models?dataset=dataset:uoft-cs/cifar10
+- Datasets de CIFAR-10 en Hugging Face: https://huggingface.co/models?dataset=dataset:cifar10 y https://huggingface.co/models?dataset=dataset:uoft-cs/cifar10
 - Repositorio externo de modelos CIFAR-10: https://github.com/chenyaofo/pytorch-cifar-models

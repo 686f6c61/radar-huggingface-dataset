@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Tipo | Base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chanjing-Avatar V2V 1.3B | 1.85B | Video-to-video | Wan2.1-T2V-1.3B | Apache-2.0 | HuggingFace |
-| Chanjing-Avatar V2V 5B | ~5B (estimado) | Video-to-video | Wan2.1 (probablemente) | Apache-2.0 | HuggingFace |
-| Chanjing-Avatar 14B | ~14B (estimado) | Image-to-video | Wan2.1 (probablemente) | Apache-2.0 | HuggingFace |
-| Jogg-Avatar V2V | ~5B (estimado) | Video-to-video | Wan2.2-TI2V-5B | Apache-2.0 | HuggingFace |
+| Chanjing-Avatar V2V 1.3B | 1.85B | Video-to-video | Wan2.1-T2V-1.3B | Apache-2.0 | Hugging Face |
+| Chanjing-Avatar V2V 5B | ~5B (estimado) | Video-to-video | Wan2.1 (probablemente) | Apache-2.0 | Hugging Face |
+| Chanjing-Avatar 14B | ~14B (estimado) | Image-to-video | Wan2.1 (probablemente) | Apache-2.0 | Hugging Face |
+| Jogg-Avatar V2V | ~5B (estimado) | Video-to-video | Wan2.2-TI2V-5B | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La comparativa se basa en la información pública de la familia de modelos y en el repositorio de Jogg-Avatar. Otros modelos de la categoría (como SadTalker, Wav2Lip o LatentSync) no se han incluido por falta de datos en la información proporcionada.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se basa en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cicada-ai/Chanjing-Avatar-V2V-1.3B
+- Modelo en Hugging Face: https://huggingface.co/cicada-ai/Chanjing-Avatar-V2V-1.3B
 - Repositorio de código (GitHub): https://github.com/chanjing-ai/Chanjing-Avatar-V2V-1.3B
 - Modelo Chanjing-Avatar 14B: https://huggingface.co/cicada-ai/Chanjing-Avatar-14B
 - Modelo Chanjing-Avatar V2V 5B: https://huggingface.co/cicada-ai/Chanjing-Avatar-V2V-5B

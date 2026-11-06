@@ -23,7 +23,7 @@ El repositorio es pequeño (0,0 GB reportados), tiene licencia MIT y se orienta 
 | Autor | barlowa |
 | Variantes incluidas | `gb1/` (condicionada por fitness, CFG), `gb1-ddp/` (2 procesos DDP con `torchrun`/gloo), `aav2/` (fallo documentado) |
 | Datos de entrenamiento | GB1: 149.361 variantes medidas. AAV2: 38.000 variantes de cápside |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 25 de septiembre de 2026 |
 | Última actualización | 26 de septiembre de 2026 |
@@ -88,7 +88,7 @@ No se proporciona en la información disponible ningún dato verificado de model
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `barlowa/protein-ddpm-landscapes` | no disponible (MLP pequeño) | no aplica | Métricas específicas de GB1 (ver sección de benchmarks) | MIT | HuggingFace + GitHub |
+| `barlowa/protein-ddpm-landscapes` | no disponible (MLP pequeño) | no aplica | Métricas específicas de GB1 (ver sección de benchmarks) | MIT | Hugging Face + GitHub |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,11 +103,11 @@ No se proporciona en la información disponible ningún dato verificado de model
 - Riesgo de alucinación: no aplica en el sentido de un modelo de lenguaje, pero sí existe riesgo de generar variantes con fitness predicho alto que no se corresponda con el fitness real, dado que no hay validación experimental.
 - Licencia MIT: permite uso comercial según los términos de la licencia, aunque la model card restringe el uso declarado a investigación y educación, lo que genera una tensión entre ambos planos que conviene resolver antes de cualquier uso en producción.
 - No se documentan limitaciones de idioma ni de contexto porque el modelo no procesa texto.
-- Soporte de la comunidad nulo: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en HuggingFace.
+- Soporte de la comunidad nulo: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/barlowa/protein-ddpm-landscapes
+- Modelo en Hugging Face: https://huggingface.co/barlowa/protein-ddpm-landscapes
 - Repositorio de código (entrenamiento y muestreo): https://github.com/barlowa124/protein-diffusion
 - Métricas de evaluación (tasa de memorización, dosis-respuesta, comparación con línea base trivial): carpeta `results/` del repositorio de GitHub
 - Model card ampliada: README del repositorio de GitHub

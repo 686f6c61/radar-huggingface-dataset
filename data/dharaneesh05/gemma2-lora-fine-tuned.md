@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Dharaneesh05/gemma2-lora-fine-tuned` es un repositorio publicado en HuggingFace por el usuario Dharaneesh05 que, por su nombre, sugiere un ajuste fino mediante LoRA sobre la familia Gemma 2 de Google. Sin embargo, el repositorio no contiene ningún archivo de pesos (tamaño 0.0 GB), no tiene descargas ni valoraciones, y su model card es una plantilla automática sin información rellenada. No se dispone de datos sobre arquitectura, parámetros, contexto, licencia o idiomas soportados. En su estado actual, el modelo no es utilizable para inferencia ni para evaluación, y carece de cualquier documentación técnica que permita conocer sus capacidades o limitaciones.
+El modelo `Dharaneesh05/gemma2-lora-fine-tuned` es un repositorio publicado en Hugging Face por el usuario Dharaneesh05 que, por su nombre, sugiere un ajuste fino mediante LoRA sobre la familia Gemma 2 de Google. Sin embargo, el repositorio no contiene ningún archivo de pesos (tamaño 0.0 GB), no tiene descargas ni valoraciones, y su model card es una plantilla automática sin información rellenada. No se dispone de datos sobre arquitectura, parámetros, contexto, licencia o idiomas soportados. En su estado actual, el modelo no es utilizable para inferencia ni para evaluación, y carece de cualquier documentación técnica que permita conocer sus capacidades o limitaciones.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se puede comparar con modelos de la misma categoría porque no
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Dharaneesh05/gemma2-lora-fine-tuned)
+- [Repositorio en Hugging Face](https://huggingface.co/Dharaneesh05/gemma2-lora-fine-tuned)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-PixArt-Sigma-600m-object-removal es un modelo de difusion para generacion y edicion de imagenes publicado en HuggingFace por el usuario ffuy87y. Por el nombre y la libreria declarada (diffusers), se trata de un ajuste fino ("fine-tune") del modelo base PixArt-Sigma, orientado especificamente a tareas de eliminacion de objetos ("object removal"), es decir, la reconstruccion coherente del fondo en la region ocupada por un objeto que se desea borrar de una imagen.
+PixArt-Sigma-600m-object-removal es un modelo de difusion para generacion y edicion de imagenes publicado en Hugging Face por el usuario ffuy87y. Por el nombre y la libreria declarada (diffusers), se trata de un ajuste fino ("fine-tune") del modelo base PixArt-Sigma, orientado especificamente a tareas de eliminacion de objetos ("object removal"), es decir, la reconstruccion coherente del fondo en la region ocupada por un objeto que se desea borrar de una imagen.
 
-El modelo cuenta con 610.879.136 parametros totales (aproximadamente 611 millones, en linea con la variante de ~0,6B del transformer de PixArt-Sigma) y se distribuye en formato safetensors dentro de un repositorio de 4,5 GB. La ficha de HuggingFace esta practicamente vacia: no declara pipeline, licencia ni idiomas, y acumula apenas 4 descargas y 0 likes desde su creacion el 11 de octubre de 2026, lo que lo convierte en un artefacto experimental sin validacion publica por parte de la comunidad.
+El modelo cuenta con 610.879.136 parametros totales (aproximadamente 611 millones, en linea con la variante de ~0,6B del transformer de PixArt-Sigma) y se distribuye en formato safetensors dentro de un repositorio de 4,5 GB. La ficha de Hugging Face esta practicamente vacia: no declara pipeline, licencia ni idiomas, y acumula apenas 4 descargas y 0 likes desde su creacion el 11 de octubre de 2026, lo que lo convierte en un artefacto experimental sin validacion publica por parte de la comunidad.
 
 Su relevancia es limitada y de nicho: se enmarca en la familia de modelos PixArt-Sigma, desarrollada por Huawei Noah's Ark Lab, que introdujo un transformer de difusion (DiT) eficiente como alternativa a las arquitecturas U-Net de Stable Diffusion. Este ajuste concreto no aporta informacion tecnica verificable sobre su entrenamiento, por lo que cualquier evaluacion rigurosa exige probarlo directamente antes de considerarlo para uso en produccion.
 
@@ -57,14 +57,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El repositorio completo pesa 4,5 GB, lo que sugiere que incluye componentes adicionales (posiblemente VAE, pesos en varios formatos o estados de optimizador). No se detalla su contenido.
 - Inferencia en fp16: cabe holgadamente en GPUs de consumo con 8 GB o mas de VRAM si solo se carga el transformer; con el pipeline completo (incluido el codificador de texto T5, que en PixArt-Sigma es de gran tamano) los requisitos de VRAM pueden aumentar de forma notable. Esta estimacion es orientativa y no esta confirmada por el autor.
 - GPUs recomendadas: no disponibles. Por tamano, una RTX 3060 de 12 GB, RTX 4070, RTX 4090 o cualquier GPU profesional (A100, H100) deberia poder ejecutarlo, siempre que la VRAM total del pipeline lo permita.
-- Opciones de despliegue: la libreria declarada es diffusers, por lo que el uso esperado es mediante la API de HuggingFace Diffusers; tambien podria cargarse en ComfyUI u otras interfaces que soporten safetensors de difusion. No se ha confirmado compatibilidad con llama.cpp, Ollama ni vLLM (herramientas orientadas a modelos de lenguaje, no a difusion).
+- Opciones de despliegue: la libreria declarada es diffusers, por lo que el uso esperado es mediante la API de Hugging Face Diffusers; tambien podria cargarse en ComfyUI u otras interfaces que soporten safetensors de difusion. No se ha confirmado compatibilidad con llama.cpp, Ollama ni vLLM (herramientas orientadas a modelos de lenguaje, no a difusion).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| ffuy87y/pixart-sigma-600m-object-removal | 610,9 M | Difusion (fine-tune de PixArt-Sigma) | no disponible | HuggingFace, 4 descargas | no disponible |
+| ffuy87y/pixart-sigma-600m-object-removal | 610,9 M | Difusion (fine-tune de PixArt-Sigma) | no disponible | Hugging Face, 4 descargas | no disponible |
 | PixArt-Sigma (base, Huawei Noah's Ark Lab) | ~0,6 B (transformer) | Difusion DiT | Openrail / segun variante | Amplia difusion | Publicados por el autor original |
 | Modelos de inpainting sobre SD 1.5 / SDXL | 0,9 B / 2,6 B (U-Net) | Difusion U-Net | Openrail / CreativeML | Muy amplia | Publicados por terceros |
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparables para este ajuste concreto. La 
 ## Limitaciones y advertencias
 
 - La ficha del modelo no declara licencia, lo que impide determinar si su uso comercial esta permitido. Se debe contactar con el autor antes de cualquier uso en produccion.
-- No hay documentacion tecnica, paper, blog ni tarjeta de modelo mas alla del nombre y las etiquetas de HuggingFace. El proceso de entrenamiento y los datos usados son desconocidos.
+- No hay documentacion tecnica, paper, blog ni tarjeta de modelo mas alla del nombre y las etiquetas de Hugging Face. El proceso de entrenamiento y los datos usados son desconocidos.
 - El modelo acumula 4 descargas y 0 likes, por lo que no ha sido validado ni replicado por la comunidad. Es un artefacto experimental.
 - Se desconoce su comportamiento real en tareas de eliminacion de objetos: no hay ejemplos, demos ni resultados publicados.
 - Al derivar presumiblemente de PixArt-Sigma, puede heredar sesgos del dataset de entrenamiento del modelo base (representacion desigual de culturas, generos y contextos), aunque no hay confirmacion.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables para este ajuste concreto. La 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ffuy87y/pixart-sigma-600m-object-removal
+- Hugging Face: https://huggingface.co/ffuy87y/pixart-sigma-600m-object-removal
 - Repositorio oficial de PixArt-Sigma (modelo base): no incluido en la informacion proporcionada.
 - Paper de PixArt-Sigma: no incluido en la informacion proporcionada.
 - Demo o espacio asociado: no disponible.

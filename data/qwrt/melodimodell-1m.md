@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Melodimodell-1M es un modelo de lenguaje publicado en HuggingFace por el usuario `qwrt` bajo licencia Apache 2.0. Con apenas 1.159.120 parámetros (aproximadamente 1,16 millones), se trata de un modelo extremadamente pequeño, probablemente de carácter experimental o educativo. El tag `qwen3` sugiere que podría estar basado en la arquitectura de los modelos Qwen3, aunque no hay información oficial que lo confirme. El repositorio no contiene model card descriptiva más allá de la licencia, y no se han publicado datos sobre entrenamiento, capacidades o rendimiento. Su relevancia actual es limitada: por su tamaño, no puede competir con modelos de mayor escala, y su utilidad práctica en tareas reales es cuestionable sin más documentación.
+Melodimodell-1M es un modelo de lenguaje publicado en Hugging Face por el usuario `qwrt` bajo licencia Apache 2.0. Con apenas 1.159.120 parámetros (aproximadamente 1,16 millones), se trata de un modelo extremadamente pequeño, probablemente de carácter experimental o educativo. El tag `qwen3` sugiere que podría estar basado en la arquitectura de los modelos Qwen3, aunque no hay información oficial que lo confirme. El repositorio no contiene model card descriptiva más allá de la licencia, y no se han publicado datos sobre entrenamiento, capacidades o rendimiento. Su relevancia actual es limitada: por su tamaño, no puede competir con modelos de mayor escala, y su utilidad práctica en tareas reales es cuestionable sin más documentación.
 
 ## Especificaciones técnicas
 
@@ -58,4 +58,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qwrt/Melodimodell-1M
+- Repositorio Hugging Face: https://huggingface.co/qwrt/Melodimodell-1M

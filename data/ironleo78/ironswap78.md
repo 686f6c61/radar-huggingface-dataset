@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IronSwap78 es un modelo publicado en HuggingFace por el usuario Ironleo78 bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin ningun otro metadato, descripcion, arquitectura ni informacion sobre entrenamiento o capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o de muy baja difusion.
+IronSwap78 es un modelo publicado en Hugging Face por el usuario Ironleo78 bajo licencia MIT. La model card asociada es practicamente vacia: unicamente declara la licencia, sin ningun otro metadato, descripcion, arquitectura ni informacion sobre entrenamiento o capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o de muy baja difusion.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni datos de entrenamiento. El nombre "IronSwap78" no permite inferir con fiabilidad la naturaleza del modelo (no se confirma que sea un modelo de lenguaje, un modelo de intercambio de caras, un merge de pesos o cualquier otra categoria).
 
@@ -40,7 +40,7 @@ La model card unicamente contiene la declaracion de licencia MIT. No se han enco
 
 No es posible enumerar casos de uso concretos y realistas sin informacion sobre la naturaleza, tamano y capacidades del modelo. La ausencia de model card, de pipeline declarado y de cualquier especificacion tecnica impide determinar para que tareas es adecuado. Cualquier caso de uso propuesto seria especulativo y contravendria la regla de no inventar datos.
 
-Se recomienda, antes de plantear cualquier aplicacion, inspeccionar directamente los archivos del repositorio en HuggingFace para determinar el formato de pesos, la configuracion y, en su caso, la arquitectura real del modelo.
+Se recomienda, antes de plantear cualquier aplicacion, inspeccionar directamente los archivos del repositorio en Hugging Face para determinar el formato de pesos, la configuracion y, en su caso, la arquitectura real del modelo.
 
 ## Benchmarks y rendimiento
 
@@ -69,4 +69,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ironleo78/IronSwap78
+- Repositorio en Hugging Face: https://huggingface.co/Ironleo78/IronSwap78

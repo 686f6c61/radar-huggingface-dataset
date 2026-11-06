@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t-firefly/gemma4-e4b-rknn3-rk1828
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B-it
+- Repositorio Hugging Face: https://huggingface.co/t-firefly/gemma4-e4b-rknn3-rk1828
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B-it
 - Modelo base en ModelScope: https://modelscope.cn/models/google/gemma-4-E4B-it
 - Wiki de Firefly sobre RK1820/RK1828: https://wiki.t-firefly.com/en/AIO-GS1N2-RK182X/ai_rk182x.html
 - Documentación de LlamaPi: https://community.t-firefly.com/docs/ai/applications/LlamaPi/llamapi

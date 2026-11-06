@@ -80,7 +80,7 @@ La comparación natural es interna al propio experimento, ya que no se han publi
 | Este modelo (matched-exposure) | ~2B | No disponible | 0,5557 | 0,4238 | 0,0558 | composite-per-source | Pesos publicados en HF |
 | Referencia OpenGrad (corpus completo) | ~2B | No disponible | 0,7470 | 0,7594 | 0,1505 | composite-per-source | Pesos publicados por el mismo autor |
 | Rama de cómputo fijo OpenGrad | ~2B | No disponible | 0,6030 | 0,4879 | 0,0716 | composite-per-source | Pesos publicados por el mismo autor |
-| Qwen/Qwen3.5-2B (B0, sin ajustar) | ~2B | No disponible | 0,6191 | 0,9722 | 0,6425 | Según el modelo base | Público en HuggingFace |
+| Qwen/Qwen3.5-2B (B0, sin ajustar) | ~2B | No disponible | 0,6191 | 0,9722 | 0,6425 | Según el modelo base | Público en Hugging Face |
 
 No se dispone de comparativas frente a alternativas externas de la misma categoría (por ejemplo, otros modelos de 2B orientados a function calling) en la información proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de comparativas frente a alternativas externas de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-ABL-MinusXLAM-MatchedExposure
+- Modelo en Hugging Face: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-ABL-MinusXLAM-MatchedExposure
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Dataset de entrenamiento: https://huggingface.co/datasets/arrochi112/OpenGrad-ToolPolicy-Canonical-v2-minus-xlam
 - Repositorio del proyecto OpenGrad: https://github.com/arjhinety/OpenGrad

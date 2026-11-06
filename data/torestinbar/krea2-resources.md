@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `torestinbar/krea2-resources` aloja los recursos del modelo Krea 2, un modelo de generación de imágenes desarrollado por Krea AI. Aunque la ficha de HuggingFace no proporciona metadatos técnicos (arquitectura, licencia, idiomas), el tamaño del repositorio (506,4 GB) sugiere que contiene los pesos del modelo en algún formato. Krea 2 es descrito por sus creadores como un modelo fundacional de imagen entrenado desde cero, orientado a la exploración creativa y el control estilístico, en lugar de priorizar únicamente la fidelidad al prompt. El repositorio es mantenido por el usuario `torestinbar` (Chris Kim), y se enlaza con el código oficial de inferencia publicado en GitHub bajo `krea-ai/krea-2`.
+El repositorio `torestinbar/krea2-resources` aloja los recursos del modelo Krea 2, un modelo de generación de imágenes desarrollado por Krea AI. Aunque la ficha de Hugging Face no proporciona metadatos técnicos (arquitectura, licencia, idiomas), el tamaño del repositorio (506,4 GB) sugiere que contiene los pesos del modelo en algún formato. Krea 2 es descrito por sus creadores como un modelo fundacional de imagen entrenado desde cero, orientado a la exploración creativa y el control estilístico, en lugar de priorizar únicamente la fidelidad al prompt. El repositorio es mantenido por el usuario `torestinbar` (Chris Kim), y se enlaza con el código oficial de inferencia publicado en GitHub bajo `krea-ai/krea-2`.
 
 Dado que la información disponible es escasa, esta ficha se basa principalmente en la documentación pública de Krea AI y en el repositorio de código, indicando explícitamente los datos que no se han podido verificar.
 
@@ -62,15 +62,15 @@ No disponible. No se han encontrado comparaciones directas con otros modelos de 
 ## Limitaciones y advertencias
 
 - No se ha publicado información sobre sesgos, alucinaciones o limitaciones de contexto.
-- La licencia del modelo no está especificada en el repositorio de HuggingFace, lo que impide conocer las restricciones de uso comercial o redistribución.
+- La licencia del modelo no está especificada en el repositorio de Hugging Face, lo que impide conocer las restricciones de uso comercial o redistribución.
 - El repositorio tiene 0 descargas y 4 likes, lo que sugiere que es una publicación reciente o poco difundida; se recomienda verificar la procedencia de los recursos antes de usarlos en entornos de producción.
 - Al tratarse de un repositorio de recursos (probablemente pesos), no se incluye el código de inferencia; para ejecutar el modelo es necesario acudir al repositorio oficial de GitHub.
 - No se dispone de documentación sobre el formato de los pesos ni sobre compatibilidad con frameworks comunes (PyTorch, TensorFlow, etc.).
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [torestinbar/krea2-resources](https://huggingface.co/torestinbar/krea2-resources)
-- Perfil del autor en HuggingFace: [torestinbar](https://huggingface.co/torestinbar)
+- Repositorio de Hugging Face: [torestinbar/krea2-resources](https://huggingface.co/torestinbar/krea2-resources)
+- Perfil del autor en Hugging Face: [torestinbar](https://huggingface.co/torestinbar)
 - Repositorio oficial de código de Krea 2 en GitHub: [krea-ai/krea-2](https://github.com/krea-ai/krea-2)
 - Página oficial de Krea 2: [https://www.krea.ai/krea-2](https://www.krea.ai/krea-2)
 - Documentación de usuario de Krea 2: [https://www.krea.ai/docs/user-guide/features/krea](https://www.krea.ai/docs/user-guide/features/krea)

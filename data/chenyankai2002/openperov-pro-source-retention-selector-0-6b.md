@@ -94,7 +94,7 @@ La diferencia funcional relevante es que este adaptador esta especializado en un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChenYanKai2002/OpenPerov-Pro-Source-Retention-Selector-0.6B
+- Modelo en Hugging Face: https://huggingface.co/ChenYanKai2002/OpenPerov-Pro-Source-Retention-Selector-0.6B
 - Codigo, benchmarks y registros de evaluacion (OpenPerov): https://github.com/Yan-Kai-Chen/OpenPerov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los anteriores, extraidos de la informacion del repositorio.

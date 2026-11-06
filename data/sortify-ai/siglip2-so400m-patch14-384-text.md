@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 - VRAM estimada: en fp32 (~2,8 GB), en fp16 (~1,4 GB), en int8 (~0,7 GB). Cabe en GPUs consumer como RTX 3060 o superiores.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16; para CPU, se puede ejecutar con 8 GB de RAM.
-- Despliegue: compatible con la librería `transformers` de HuggingFace, se puede servir con FastAPI o usar en pipelines con `sentence-transformers` (si se adapta). También es posible exportar a ONNX para optimización.
+- Despliegue: compatible con la librería `transformers` de Hugging Face, se puede servir con FastAPI o usar en pipelines con `sentence-transformers` (si se adapta). También es posible exportar a ONNX para optimización.
 - Latencia: para un lote de 32 frases cortas, se espera una latencia de ~10-20 ms en GPU moderna (A100) y ~100-200 ms en CPU (8 núcleos). Throughput estimado de cientos de frases por segundo en GPU.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ El modelo de sortify-ai es más grande que BERT y MiniLM, lo que puede dar embed
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sortify-ai/siglip2-so400m-patch14-384-text
+- Modelo en Hugging Face: https://huggingface.co/sortify-ai/siglip2-so400m-patch14-384-text
 - Modelo original SigLIP 2 (Google): https://huggingface.co/google/siglip2-so400m-patch14-384-jax
 - Paper SigLIP 2: https://arxiv.org/abs/2502.14786
 - Paper SigLIP original: https://arxiv.org/abs/2303.15343

@@ -33,10 +33,10 @@ Es importante senalar que esta publicacion es exclusivamente de cuantizacion: el
 
 - Comprension de video: el modelo esta etiquetado explicitamente como video-understanding y multimodal, y requiere el fichero mmproj para procesar entrada visual.
 - Razonamiento sobre contenido audiovisual: la etiqueta reasoning y el sufijo R1 sugieren capacidad de razonamiento explicito, aunque no se documenta un modo thinking formal.
-- Respuesta a preguntas (question-answering): es el pipeline declarado en HuggingFace, orientado a preguntas sobre el contenido de un video.
+- Respuesta a preguntas (question-answering): es el pipeline declarado en Hugging Face, orientado a preguntas sobre el contenido de un video.
 - Razonamiento temporal y causal: los datasets citados (CLEVRER, TempCompass, Video-Holmes) apuntan a tareas de orden temporal, causalidad y eventos fisicos, aunque no se aportan resultados.
 - Formato conversacional: el repositorio incluye la etiqueta conversational, lo que indica soporte de dialogos multi-turno.
-- Compatibilidad con endpoints: etiqueta endpoints_compatible, lo que habilita su uso en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints: etiqueta endpoints_compatible, lo que habilita su uso en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y multi-step reasoning: no disponibles en la informacion proporcionada, mas alla del razonamiento implicito del modelo.
 - Multilingue: no; el unico idioma declarado es ingles.

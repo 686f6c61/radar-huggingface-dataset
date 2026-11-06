@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VoiceNetCkpt/voiceclap_mix_moss3_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0` es un checkpoint de pesos finales de un experimento de entrenamiento denominado VoiceCLAP, publicado por el usuario VoiceNetCkpt en HuggingFace. No es un modelo generativo de lenguaje: por la nomenclatura del propio identificador y de los archivos incluidos, se trata de un modelo contrastivo audio-texto (estilo CLAP, Contrastive Language-Audio Pretraining) que combina un codificador de audio y un codificador de texto para proyectar ambos dominios a un espacio de embeddings compartido.
+`VoiceNetCkpt/voiceclap_mix_moss3_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0` es un checkpoint de pesos finales de un experimento de entrenamiento denominado VoiceCLAP, publicado por el usuario VoiceNetCkpt en Hugging Face. No es un modelo generativo de lenguaje: por la nomenclatura del propio identificador y de los archivos incluidos, se trata de un modelo contrastivo audio-texto (estilo CLAP, Contrastive Language-Audio Pretraining) que combina un codificador de audio y un codificador de texto para proyectar ambos dominios a un espacio de embeddings compartido.
 
 El repositorio contiene 13 archivos y ocupa 1,3 GB, e incluye los pesos finales (`checkpoints/epoch_latest.pt`), las configuraciones del experimento y los resultados de evaluación de esa ejecución concreta. No se incluyen los checkpoints de épocas intermedias, el estado del optimizador ni los logs de entrenamiento. La model card es puramente descriptiva del run y no documenta uso previsto, licencia, idiomas ni arquitectura detallada.
 
@@ -18,12 +18,12 @@ El interés de esta ficha es acotado y conviene decirlo con claridad: se trata d
 | Longitud de contexto | El identificador indica `ctx=256`; la model card no especifica la unidad (tokens, frames de audio, segmentos) ni a que torre aplica. Datos adicionales: no disponibles |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible. Como referencia, los codificadores citados en el nombre tienen coberturas distintas (`whisper-small` es multilingue, `MiniLM` suele ser mayoritariamente ingles), pero no hay confirmacion del autor |
-| Licencia | No disponible. El campo de licencia no aparece informado en la ficha de HuggingFace |
+| Licencia | No disponible. El campo de licencia no aparece informado en la ficha de Hugging Face |
 | Formato de pesos | PyTorch (`checkpoints/epoch_latest.pt`) |
 | Tamano del repositorio | 1,3 GB (13 archivos) |
 | Hiperparametros del run | 40.000.000 muestras, 20 epocas, learning rate 1e-4, batch size 64, 4 nodos, run 0, `k=2` |
-| Fecha de creacion | 2026-10-11 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-10-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-11 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-10-11 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceclap_mix_moss3_whisper-small-MiniLM_k2_ctx256 (este checkpoint) | Contrastivo audio-texto | No disponible | `ctx=256` segun nomenclatura | No disponible | Repositorio HuggingFace con 0 descargas |
+| voiceclap_mix_moss3_whisper-small-MiniLM_k2_ctx256 (este checkpoint) | Contrastivo audio-texto | No disponible | `ctx=256` segun nomenclatura | No disponible | Repositorio Hugging Face con 0 descargas |
 | LAION-CLAP y variantes | Contrastivo audio-texto | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Whisper-small (como codificador de audio) | Reconocimiento y representacion de audio | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada |
 | MiniLM (como codificador de texto) | Embeddings de texto | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada |
@@ -91,10 +91,10 @@ Los tres comparadores se citan unicamente porque aparecen nombrados en el identi
 - Compatibilidad de contexto: el limite `ctx=256` puede ser insuficiente para audios largos si la unidad es frames o segmentos cortos, lo que obligaria a trocear y agregar embeddings.
 - Formato de pesos: `.pt` es un formato de serializacion de PyTorch que requiere `torch.load`; conviene cargar con `weights_only=True` cuando sea posible por motivos de seguridad, y no hay alternativa en safetensors.
 - Madurez y mantenimiento: 0 descargas y 0 likes, sin historial de uso comunitario; no hay garantia de soporte ni de correcciones.
-- Fecha de publicacion en metadatos (2026-10-11) posterior a la fecha de consulta habitual; conviene verificar los metadatos directamente en la ficha de HuggingFace.
+- Fecha de publicacion en metadatos (2026-10-11) posterior a la fecha de consulta habitual; conviene verificar los metadatos directamente en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/VoiceNetCkpt/voiceclap_mix_moss3_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/VoiceNetCkpt/voiceclap_mix_moss3_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de todos los runs de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo y demos: no disponibles en la informacion proporcionada.

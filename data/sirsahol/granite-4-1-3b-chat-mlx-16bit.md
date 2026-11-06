@@ -6,7 +6,7 @@ SirSahOl/granite-4.1-3b-chat-mlx-16bit es una conversion a formato MLX de 16 bit
 
 El interes practico de esta version concreta es la precision: al mantener los pesos en bfloat16 sin cuantizar, sirve como referencia para evaluacion y benchmarking frente a las variantes de 4 y 8 bits del mismo autor, a costa de un mayor consumo de memoria unificada (unos 7,1 GB en inferencia y 6,8 GB en disco). Con 3.402.836.480 parametros reales segun los safetensors del repositorio, es un modelo pequeno que cabe en equipos de consumo, pero limitado al ecosistema Apple.
 
-La ficha se basa exclusivamente en la metadata de HuggingFace y en la model card publicada. La model card no incluye resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.), no declara idiomas soportados y no documenta el proceso de entrenamiento del modelo base; todos esos puntos se marcan como no disponibles. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (unicamente enlaces a Scratch), por lo que no hay fuentes adicionales que citar.
+La ficha se basa exclusivamente en la metadata de Hugging Face y en la model card publicada. La model card no incluye resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K, etc.), no declara idiomas soportados y no documenta el proceso de entrenamiento del modelo base; todos esos puntos se marcan como no disponibles. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (unicamente enlaces a Scratch), por lo que no hay fuentes adicionales que citar.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La ficha se basa exclusivamente en la metadata de HuggingFace y en la model card
 | Parametros activos | No aplica: arquitectura densa, no es MoE |
 | Longitud de contexto | 131.072 tokens |
 | Tipos de cuantizacion | Este repositorio: 16 bits sin cuantizar (bfloat16, ~16,00 bits por peso). El mismo autor publica variantes de 4 bits y 8 bits |
-| Idiomas soportados | no disponible (la metadata de HuggingFace no declara idiomas y la model card tampoco los lista) |
+| Idiomas soportados | no disponible (la metadata de Hugging Face no declara idiomas y la model card tampoco los lista) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors en formato MLX |
 | Modelo base | ibm-granite/granite-4.1-3b |
@@ -42,7 +42,7 @@ No se dispone de informacion sobre el dataset de entrenamiento ni sobre el proce
 - Generacion de codigo: la model card recomienda el modelo como "daily driver" para programacion en los perfiles Pro y superiores.
 - Invocacion de herramientas: la model card menciona "tool invocation" como caso de uso recomendado, aunque no documenta ningun esquema de function calling, formato JSON de herramientas ni ejemplos. La capacidad real depende del modelo base y no esta verificada en la informacion disponible.
 - Razonamiento multi-paso y flujos de agente: la model card lo situa entre los usos del perfil Max ("agent orchestration"), sin detallar mecanismos concretos.
-- Capacidades multilingues: no disponible. No se declaran idiomas ni en la metadata de HuggingFace ni en la model card.
+- Capacidades multilingues: no disponible. No se declaran idiomas ni en la metadata de Hugging Face ni en la model card.
 - Capacidades multimodales (vision, audio) o modo "thinking" explicito: no disponibles segun la informacion proporcionada.
 
 ## Casos de uso
@@ -88,10 +88,10 @@ La informacion disponible solo permite comparar con el modelo base y con las otr
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SirSahOl/granite-4.1-3b-chat-mlx-16bit | ~3,4 B | 131.072 | 16 bits (bfloat16) | ~6,8 GB | apache-2.0 | HuggingFace, formato MLX |
-| SirSahOl/granite-4.1-3b-chat-mlx-8bit | ~3,4 B (mismo base) | 131.072 (segun el base) | 8 bits | ~3,6 GB | apache-2.0 | HuggingFace, formato MLX |
-| SirSahOl/granite-4.1-3b-chat-mlx-4bit | ~3,4 B (mismo base) | 131.072 (segun el base) | 4 bits | ~2,0 GB | apache-2.0 | HuggingFace, formato MLX |
-| ibm-granite/granite-4.1-3b (base) | 3,0 B segun model card | 131.072 | Pesos originales | no disponible | apache-2.0 | HuggingFace |
+| SirSahOl/granite-4.1-3b-chat-mlx-16bit | ~3,4 B | 131.072 | 16 bits (bfloat16) | ~6,8 GB | apache-2.0 | Hugging Face, formato MLX |
+| SirSahOl/granite-4.1-3b-chat-mlx-8bit | ~3,4 B (mismo base) | 131.072 (segun el base) | 8 bits | ~3,6 GB | apache-2.0 | Hugging Face, formato MLX |
+| SirSahOl/granite-4.1-3b-chat-mlx-4bit | ~3,4 B (mismo base) | 131.072 (segun el base) | 4 bits | ~2,0 GB | apache-2.0 | Hugging Face, formato MLX |
+| ibm-granite/granite-4.1-3b (base) | 3,0 B segun model card | 131.072 | Pesos originales | no disponible | apache-2.0 | Hugging Face |
 
 Rendimiento comparado de calidad: no disponible para ninguna de las variantes; el autor no publica resultados de exactitud para 4, 8 o 16 bits. La unica ventaja documentada de la version de 16 bits es la ausencia de degradacion por cuantizacion, a cambio de un mayor consumo de memoria y disco.
 
@@ -99,19 +99,19 @@ Rendimiento comparado de calidad: no disponible para ninguna de las variantes; e
 
 - Sesgos conocidos: no se documenta ninguna evaluacion de sesgo o toxicidad para este modelo ni para su base en la informacion disponible.
 - Alucinacion: no hay mediciones de tasa de alucinacion ni evaluaciones de veracidad publicadas; el riesgo debe asumirse como el de cualquier modelo generativo de 3-4 B sin datos especificos.
-- Idiomas: la metadata de HuggingFace no declara idiomas y la model card tampoco los enumera, por lo que el soporte multilingue real es desconocido. No se debe asumir buen rendimiento en castellano sin una evaluacion propia.
+- Idiomas: la metadata de Hugging Face no declara idiomas y la model card tampoco los enumera, por lo que el soporte multilingue real es desconocido. No se debe asumir buen rendimiento en castellano sin una evaluacion propia.
 - Licencia: Apache-2.0 permite uso comercial, pero conviene verificar los terminos y avisos del modelo base `ibm-granite/granite-4.1-3b` antes de desplegarlo en produccion.
 - Compatibilidad de plataforma: el formato MLX solo se ejecuta en Apple Silicon; no es utilizable en GPUs NVIDIA o AMD sin convertir los pesos a otro formato (por ejemplo, GGUF o safetensors estandar).
 - Configuracion obligatoria: es necesario definir manualmente los tokens de parada `<|im_start|>`, `<|im_end|>` y `<|endoftext|>`; si no se hace, la model card advierte de bucles de generacion y fallos en el turno conversacional.
 - Tool calling: aunque la model card menciona la invocacion de herramientas, no documenta esquema, formato ni ejemplos; la capacidad no esta verificada para esta conversion.
 - Origen y soporte: es una conversion de un tercero (SirSahOl), no una publicacion oficial de IBM, con 287 descargas y 0 likes en el momento de la consulta, lo que implica un soporte comunitario practicamente nulo.
-- Metadata dudosa: la etiqueta de HuggingFace incluye `arxiv:0000.00000`, un identificador de marcador de posicion sin paper asociado, y las fechas de creacion y actualizacion indicadas (septiembre de 2026) son anomalas. Conviene tratar la metadata del repositorio con cautela.
+- Metadata dudosa: la etiqueta de Hugging Face incluye `arxiv:0000.00000`, un identificador de marcador de posicion sin paper asociado, y las fechas de creacion y actualizacion indicadas (septiembre de 2026) son anomalas. Conviene tratar la metadata del repositorio con cautela.
 - Discrepancia de parametros: la model card declara 3,0 B de parametros mientras que los safetensors suman 3.402.836.480; conviene usar la cifra real para planificar memoria.
 - Benchmarks ausentes: al no haber resultados de exactitud, no es posible comparar objetivamente esta conversion con alternativas de la misma categoria.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-16bit
+- Repositorio en Hugging Face: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-16bit
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Variante de 4 bits: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-4bit
 - Variante de 8 bits: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-8bit

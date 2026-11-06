@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DP-AuNPs es un repositorio publicado en HuggingFace por el usuario Ruslan-Akhmerov bajo licencia MIT. El nombre sugiere un artefacto relacionado con nanopartículas de oro (AuNPs, del inglés *gold nanoparticles*) y con las siglas DP, posiblemente *differential privacy* o *diffusion policy*, aunque la model card no proporciona ninguna descripción, arquitectura ni contexto de uso que permita confirmarlo. El repositorio tiene un tamaño de 0,4 GB, lo que resulta compatible con un conjunto de pesos de pequeño o mediano tamaño, pero no se especifica el formato de los archivos ni su contenido.
+DP-AuNPs es un repositorio publicado en Hugging Face por el usuario Ruslan-Akhmerov bajo licencia MIT. El nombre sugiere un artefacto relacionado con nanopartículas de oro (AuNPs, del inglés *gold nanoparticles*) y con las siglas DP, posiblemente *differential privacy* o *diffusion policy*, aunque la model card no proporciona ninguna descripción, arquitectura ni contexto de uso que permita confirmarlo. El repositorio tiene un tamaño de 0,4 GB, lo que resulta compatible con un conjunto de pesos de pequeño o mediano tamaño, pero no se especifica el formato de los archivos ni su contenido.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. La model card únicamente incluye la declaración de licencia MIT, sin secciones descriptivas, ejemplos de uso ni referencias a publicaciones. Tampoco se han registrado descargas ni interacciones en el momento de la consulta, lo que indica que se trata de un repositorio recién creado o de muy baja difusión.
 
@@ -78,6 +78,6 @@ No disponible. No se ha identificado ningún modelo comparable, ya que se descon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ruslan-Akhmerov/DP-AuNPs
+- Repositorio en Hugging Face: https://huggingface.co/Ruslan-Akhmerov/DP-AuNPs
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la información proporcionada.

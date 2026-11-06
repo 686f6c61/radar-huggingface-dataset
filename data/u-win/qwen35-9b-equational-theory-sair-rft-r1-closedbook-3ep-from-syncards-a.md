@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `qwen35-9b-equational-theory-sair-rft-r1-closedbook-3ep-from-syncards-a` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text orientado a una tarea muy específica: la resolución de problemas de teoría de ecuaciones (equational theory) en modo closed-book, es decir, sin acceso a fuentes externas durante la inferencia. El entrenamiento combina técnicas de SAIR, RFT (Rejection Sampling Fine-Tuning) con regularización KL y SFT conversacional, lo que sugiere un pipeline de alineación por muestreo de rechazo sobre el modelo base.
+El modelo `qwen35-9b-equational-theory-sair-rft-r1-closedbook-3ep-from-syncards-a` es un ajuste fino completo (full fine-tune) del modelo base Qwen/Qwen3.5-9B, publicado por el usuario U-WIN en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text orientado a una tarea muy específica: la resolución de problemas de teoría de ecuaciones (equational theory) en modo closed-book, es decir, sin acceso a fuentes externas durante la inferencia. El entrenamiento combina técnicas de SAIR, RFT (Rejection Sampling Fine-Tuning) con regularización KL y SFT conversacional, lo que sugiere un pipeline de alineación por muestreo de rechazo sobre el modelo base.
 
-El modelo conserva la arquitectura y el tamaño del Qwen3.5-9B original, con 9.653.104.368 parámetros totales en formato safetensors y un repositorio de 19,3 GB. Al ser un fine-tune completo, no se trata de un adaptador LoRA, sino de una copia íntegra de los pesos base modificados durante el entrenamiento. La licencia es Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo conserva la arquitectura y el tamaño del Qwen3.5-9B original, con 9.653.104.368 parámetros totales en formato safetensors y un repositorio de 19,3 GB. Al ser un fine-tune completo, no se trata de un adaptador LoRA, sino de una copia íntegra de los pesos base modificados durante el entrenamiento. La licencia es Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia es limitada y muy nichada: con solo 2 descargas y 0 likes en el momento de la consulta, es un modelo de investigación más que una herramienta de producción. Resulta interesante como ejemplo de especialización de un modelo multimodal de 9B en una tarea matemática concreta mediante RFT y regularización KL, pero no está pensado para uso general.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar rendimiento numérico con
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede retrasar o impedir su uso automatizado en pipelines.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede retrasar o impedir su uso automatizado en pipelines.
 - Especialización estrecha: el fine-tune está orientado a teoría de ecuaciones closed-book; su rendimiento en tareas generales puede haberse degradado respecto al Qwen3.5-9B original (olvido catastrófico) tras 3 épocas de full fine-tune.
 - Riesgo de alucinación: en demostraciones matemáticas simbólicas, el modelo puede producir pasos de reescritura inválidos o conclusiones incorrectas; requiere verificación formal externa.
 - Idiomas no declarados: no se especifican los idiomas soportados, por lo que no se garantiza un comportamiento correcto en castellano u otras lenguas.
@@ -85,5 +85,5 @@ No se dispone de información suficiente para comparar rendimiento numérico con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-r1-closedbook-3ep-from-syncards-a
+- Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-rft-r1-closedbook-3ep-from-syncards-a
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

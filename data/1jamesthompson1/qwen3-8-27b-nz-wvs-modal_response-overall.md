@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su especializacion en la alineacion de va
 
 El modelo base Qwen3.8-27B utiliza una arquitectura transformer densa con atencion hibrida: 16 de las 64 capas usan atencion completa (full attention) con un intervalo de 4, mientras que las otras 48 capas usan atencion lineal con un estado recurrente constante. Esta arquitectura reduce el coste computacional manteniendo la capacidad de capturar dependencias de largo alcance.
 
-El adaptador LoRA se entrena con la libreria TRL (Transformers Reinforcement Learning) de HuggingFace, utilizando el metodo SFT (Supervised Fine-Tuning). Los hiperparametros de entrenamiento son: rank 64, alpha 128, dropout 0.05, learning rate 0.0002, batch size 8, gradient accumulation 2, 3 epocas, y max seq length 1024 tokens. El entrenamiento se realizo en una NVIDIA RTX PRO 6000 Blackwell Server Edition, con un tiempo total de 35 minutos y 35 segundos.
+El adaptador LoRA se entrena con la libreria TRL (Transformers Reinforcement Learning) de Hugging Face, utilizando el metodo SFT (Supervised Fine-Tuning). Los hiperparametros de entrenamiento son: rank 64, alpha 128, dropout 0.05, learning rate 0.0002, batch size 8, gradient accumulation 2, 3 epocas, y max seq length 1024 tokens. El entrenamiento se realizo en una NVIDIA RTX PRO 6000 Blackwell Server Edition, con un tiempo total de 35 minutos y 35 segundos.
 
 El dataset de entrenamiento es el configuracion `modal_response` del dataset `wvs-norm-value-alignment`, que contiene respuestas de la World Values Survey de Nueva Zelanda. La subpoblacion `overall` incluye la muestra completa. El entrenamiento se realizo en bf16 para optimizar el uso de memoria.
 
@@ -36,7 +36,7 @@ El dataset de entrenamiento es el configuracion `modal_response` del dataset `wv
 - Capacidades multilingues: el modelo base soporta multiples idiomas, aunque el adaptador se ha entrenado principalmente con datos en ingles.
 - Alineacion de valores: el adaptador esta disenado para alinear las respuestas del modelo con los valores culturales y sociales de Nueva Zelanda, segun los datos de la WVS.
 - Fine-tuning eficiente: al ser un adaptador LoRA, es ligero y facil de integrar en pipelines de inferencia existentes.
-- Compatibilidad con el ecosistema HuggingFace: se integra con transformers, TRL, y PEFT.
+- Compatibilidad con el ecosistema Hugging Face: se integra con transformers, TRL, y PEFT.
 
 ## Casos de uso
 
@@ -92,7 +92,7 @@ El adaptador LoRA no es directamente comparable con modelos genericos, ya que se
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/1jamesthompson1/Qwen3.8-27B-nz-wvs-modal_response-overall
+- Pagina del modelo en Hugging Face: https://huggingface.co/1jamesthompson1/Qwen3.8-27B-nz-wvs-modal_response-overall
 - Dataset de entrenamiento: https://huggingface.co/datasets/1jamesthompson1/wvs-norm-value-alignment
 - Coleccion wvs-norm-value-alignment: https://huggingface.co/collections/wvs-norm-value-alignment
 - Repositorio del proyecto AIML589: https://github.com/1jamesthompson1/AIML589

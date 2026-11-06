@@ -73,7 +73,7 @@ La comparativa muestra que Qwen3.5-0.8B ofrece una ventana de contexto muy super
 - El formato MLX safetensors limita su uso a hardware Apple Silicon; para otras plataformas sería necesario convertir los pesos a GGUF u otro formato.
 - No se dispone de información detallada sobre los datos de entrenamiento, por lo que no es posible evaluar sesgos potenciales o limitaciones idiomáticas específicas.
 - La información sobre el modelo base es limitada: no se han publicado papers técnicos detallados ni benchmarks oficiales desglosados por tamaño de modelo.
-- El repositorio de HuggingFace no incluye ejemplos de uso ni documentación adicional más allá de la model card básica.
+- El repositorio de Hugging Face no incluye ejemplos de uso ni documentación adicional más allá de la model card básica.
 
 ## Enlaces
 

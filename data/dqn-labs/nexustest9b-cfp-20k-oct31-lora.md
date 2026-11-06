@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DQN-Labs/nexustest9b-cfp-20k-oct31-lora | ~9B (base) | no disponible | Apache 2.0 | HuggingFace | Adaptador LoRA experimental, documentacion minima |
-| unsloth/Qwen3.5-9B | ~9B | no disponible | segun modelo base | HuggingFace | Modelo base sin ajuste |
-| Qwen3-8B (familia Qwen3) | ~8B | no disponible en esta ficha | Apache 2.0 (segun variante) | HuggingFace | Alternativa de tamano similar de Alibaba |
-| Llama 3.1 8B | ~8B | 128K (segun model card oficial) | Llama 3.1 Community License | HuggingFace, Ollama | Alternativa consolidada de Meta |
+| DQN-Labs/nexustest9b-cfp-20k-oct31-lora | ~9B (base) | no disponible | Apache 2.0 | Hugging Face | Adaptador LoRA experimental, documentacion minima |
+| unsloth/Qwen3.5-9B | ~9B | no disponible | segun modelo base | Hugging Face | Modelo base sin ajuste |
+| Qwen3-8B (familia Qwen3) | ~8B | no disponible en esta ficha | Apache 2.0 (segun variante) | Hugging Face | Alternativa de tamano similar de Alibaba |
+| Llama 3.1 8B | ~8B | 128K (segun model card oficial) | Llama 3.1 Community License | Hugging Face, Ollama | Alternativa consolidada de Meta |
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DQN-Labs/nexustest9b-cfp-20k-oct31-lora
+- Hugging Face: https://huggingface.co/DQN-Labs/nexustest9b-cfp-20k-oct31-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

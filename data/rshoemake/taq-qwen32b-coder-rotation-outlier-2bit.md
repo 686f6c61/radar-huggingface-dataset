@@ -104,6 +104,6 @@ El modelo de 2 bits pierde claramente frente a cuantizaciones de 4 bits en tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: [rshoemake/taq-qwen32b-coder-rotation-outlier-2bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-rotation-outlier-2bit)
+- Modelo en Hugging Face: [rshoemake/taq-qwen32b-coder-rotation-outlier-2bit](https://huggingface.co/rshoemake/taq-qwen32b-coder-rotation-outlier-2bit)
 - Documentación del formato TAQ: [rshoemake/taq-qwen14b-unsloth-matched](https://huggingface.co/rshoemake/taq-qwen14b-unsloth-matched)
 - Modelo base: [Qwen/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct)

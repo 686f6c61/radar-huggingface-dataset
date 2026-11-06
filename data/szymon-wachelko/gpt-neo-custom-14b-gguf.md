@@ -27,7 +27,7 @@ La model card describe el modelo como resultado de aplicar Depth Up-Scaling sobr
 
 Sobre esa base expandida se aplico un proceso de ajuste fino QLoRA en varias etapas orientado a siete dominios de conocimiento especializados, con el objetivo declarado de equilibrar la coherencia conversacional y el razonamiento zero-shot. La model card no especifica el volumen de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de alineacion como RLHF, DPO o PPO. Tampoco se documentan innovaciones de decodificacion (por ejemplo, decodificacion especulativa) ni mecanismos de atencion alternativos.
 
-Un punto relevante es la ambiguedad arquitectonica: el nombre del modelo sugiere una base GPT-Neo, pero la etiqueta `qwen2` de HuggingFace apunta a una base Qwen2. La model card no resuelve esta discrepancia, lo que dificulta reproducir el entrenamiento o anticipar el comportamiento del tokenizador.
+Un punto relevante es la ambiguedad arquitectonica: el nombre del modelo sugiere una base GPT-Neo, pero la etiqueta `qwen2` de Hugging Face apunta a una base Qwen2. La model card no resuelve esta discrepancia, lo que dificulta reproducir el entrenamiento o anticipar el comportamiento del tokenizador.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ Alternativas de la misma categoria (por ejemplo, SOLAR-10.7B, que tambien emplea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Szymon-Wachelko/GPT-neo-Custom-14B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Szymon-Wachelko/GPT-neo-Custom-14B-GGUF
 - Modelo base (7B): https://huggingface.co/Szymon-Wachelko/GPT-neo-Custom-7B-GGUF
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - LM Studio: https://lmstudio.ai/

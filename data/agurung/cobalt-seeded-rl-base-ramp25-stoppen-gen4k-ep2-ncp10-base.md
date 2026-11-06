@@ -73,6 +73,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Logs de entrenamiento: proyecto Weights & Biases `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp10_base` (sin URL directa en la información disponible).

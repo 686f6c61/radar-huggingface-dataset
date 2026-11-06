@@ -68,6 +68,6 @@ No disponible. No se han encontrado adaptadores comparables en la información p
 
 ## Enlaces
 
-- [HuggingFace - adaption_multilingual_qa_pairs](https://huggingface.co/Mariia1234/adaption_multilingual_qa_pairs)
+- [Hugging Face - adaption_multilingual_qa_pairs](https://huggingface.co/Mariia1234/adaption_multilingual_qa_pairs)
 - [Modelo base: google/gemma-3-27b-it](https://huggingface.co/google/gemma-3-27b-it)
 - [Adaption Labs](https://adaptionlabs.ai)

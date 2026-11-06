@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_0` es un modelo de tama\u00f1o muy reducido (1.576.704 par\u00e1metros, seg\u00fan los pesos en safetensors) publicado por el usuario `gianmaTest` en HuggingFace. El identificador sugiere un experimento generado autom\u00e1ticamente dentro de una bater\u00eda de pruebas (`generatedDigitalExps`), con una arquitectura de tipo RNN y un mecanismo de agregaci\u00f3n por *mean pooling*, aparentemente orientado a datos de v\u00eddeo (sufijo `_video_0`). No obstante, esta lectura proviene \u00fanicamente de la nomenclatura: la model card no aporta ninguna descripci\u00f3n funcional.
+`generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_0` es un modelo de tama\u00f1o muy reducido (1.576.704 par\u00e1metros, seg\u00fan los pesos en safetensors) publicado por el usuario `gianmaTest` en Hugging Face. El identificador sugiere un experimento generado autom\u00e1ticamente dentro de una bater\u00eda de pruebas (`generatedDigitalExps`), con una arquitectura de tipo RNN y un mecanismo de agregaci\u00f3n por *mean pooling*, aparentemente orientado a datos de v\u00eddeo (sufijo `_video_0`). No obstante, esta lectura proviene \u00fanicamente de la nomenclatura: la model card no aporta ninguna descripci\u00f3n funcional.
 
 La model card original es una plantilla autogenerada por `PyTorchModelHubMixin`, con los campos Code, Paper y Docs marcados como "More Information Needed". No se declara pipeline, licencia, idiomas soportados ni conjunto de datos de entrenamiento. El repositorio ocupa 0.0 GB, lo que es coherente con un checkpoint de ~6 MB en fp32.
 
@@ -64,7 +64,7 @@ No disponible. No se ha identificado un modelo comparable porque la tarea, la mo
 
 | Modelo | Par\u00e1metros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| `generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_0` | 1.576.704 | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | no disponible |
+| `generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_0` | 1.576.704 | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No disponible. No se ha identificado un modelo comparable porque la tarea, la mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKlLF_rnn_meanPoolProc_video_0
 - Documentaci\u00f3n de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - C\u00f3digo: no disponible

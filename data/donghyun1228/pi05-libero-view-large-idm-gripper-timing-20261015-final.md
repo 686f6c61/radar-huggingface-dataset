@@ -65,14 +65,14 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 - VRAM estimada para inferencia: ~10-12 GB en BF16 (pesos + activaciones), ~6-8 GB en int8, ~4-6 GB en int4. Estimación aproximada basada en el tamaño del modelo.
 - GPU recomendadas: NVIDIA A100 o H100 para entrenamiento; RTX 4090 o RTX 3090 (24 GB) para inferencia en BF16; RTX 4080 o RTX 3080 (16 GB) pueden requerir cuantización a int8 o int4.
 - Cabe en GPU consumer: sí, en tarjetas con 12 GB o más si se cuantiza a int8/int4; en 16 GB o más para BF16 con optimizaciones.
-- Opciones de despliegue: PyTorch, HuggingFace Transformers (si es compatible), o el código de entrenamiento proporcionado en GitHub. No se mencionan vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: PyTorch, Hugging Face Transformers (si es compatible), o el código de entrenamiento proporcionado en GitHub. No se mencionan vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05-libero-view-large-idm-gripper-timing) | ~3.000 millones (estimado) | no disponible | Éxitos en 8 tareas LIBERO seleccionadas (ver benchmarks) | no disponible | HuggingFace |
+| Este modelo (pi05-libero-view-large-idm-gripper-timing) | ~3.000 millones (estimado) | no disponible | Éxitos en 8 tareas LIBERO seleccionadas (ver benchmarks) | no disponible | Hugging Face |
 | pi05_libero_base | no disponible | no disponible | no disponible | no disponible | ModelScope |
 | pi05_libero_finetuned | no disponible | no disponible | no disponible | no disponible | ModelScope |
 
@@ -88,7 +88,7 @@ pi05_libero_base y pi05_libero_finetuned son modelos VLA de π₀.₅ de Physica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-final
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-view-large-idm-gripper-timing-20261015-final
 - GitHub (código de entrenamiento): https://github.com/Donghyun1228/vla_adaptation
 - Dataset de target-rollout: https://huggingface.co/Donghyun1228/libero-view-large-self-rollout-idm-24ep-20261015 (revisión 34225b034da7291af2b6d7f44e3646ff52ab60f5)
 - Modelo relacionado (source-free vision IDM): https://huggingface.co/Donghyun1228/pi05-libero-source-free-vision-idm-view-large-1000-20261010

@@ -95,7 +95,7 @@ No se dispone de resultados de benchmarks comparables entre estas alternativas e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-longt5-pipeline-seed17
+- Modelo en Hugging Face: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-longt5-pipeline-seed17
 - DOI del modelo: https://doi.org/10.57967/hf/11158
 - Registro maestro de replicación (Zenodo, todas las versiones): https://doi.org/10.5281/zenodo.21792310
 - Modelo base: https://huggingface.co/google/long-t5-tglobal-base

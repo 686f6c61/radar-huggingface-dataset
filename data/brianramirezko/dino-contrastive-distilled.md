@@ -68,8 +68,8 @@ No disponible. No existen modelos comparables con 16.576 parametros en el ecosis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brianramirezko/dino-contrastive-distilled
+- Repositorio Hugging Face: https://huggingface.co/brianramirezko/dino-contrastive-distilled
 - DINO (Meta AI, GitHub): https://github.com/facebookresearch/dino
-- DINOv2 (documentacion HuggingFace): https://huggingface.co/docs/transformers/model_doc/dinov2
+- DINOv2 (documentacion Hugging Face): https://huggingface.co/docs/transformers/model_doc/dinov2
 - DINOv3 (pagina de investigacion de Meta): https://ai.meta.com/research/dinov3/
 - DINOv3 (articulo arXiv): https://arxiv.org/html/2508.10104v1

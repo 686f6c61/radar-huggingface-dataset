@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un modelo de generacion de texto de 124.770.816 parametros publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino (fine-tuning) supervisado, realizado con la libreria TRL sobre el modelo base `francesca9805/tur-latn-100mb-ppt-mp-struct-100mb_seed455`. La etiqueta `gpt2` en los metadatos indica que la arquitectura subyacente es de tipo GPT-2 (transformer decoder-only), aunque la model card no confirma explicitamente la configuracion de atencion ni la longitud de contexto.
+El modelo `francesca9805/tur-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455` es un modelo de generacion de texto de 124.770.816 parametros publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino (fine-tuning) supervisado, realizado con la libreria TRL sobre el modelo base `francesca9805/tur-latn-100mb-ppt-mp-struct-100mb_seed455`. La etiqueta `gpt2` en los metadatos indica que la arquitectura subyacente es de tipo GPT-2 (transformer decoder-only), aunque la model card no confirma explicitamente la configuracion de atencion ni la longitud de contexto.
 
 El nombre del modelo sugiere que forma parte de una linea de experimentos centrada en turco en escritura latina (el sufijo `tur-latn` es la convencion de codigo de idioma ISO 15924), con una variante de datos de 100 MB y el checkpoint 500 de un entrenamiento con semilla 455. El repositorio ocupa 1,2 GB e incluye pesos en formato safetensors. El modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto de investigacion sin adopcion publica documentada.
 
@@ -72,8 +72,8 @@ No se dispone de datos de benchmarks ni de evaluaciones comparativas en la infor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| tur-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Modelo base (tur-latn-100mb-ppt-mp-struct-100mb_seed455) | no disponible | no disponible | no disponible | HuggingFace | no disponible |
+| tur-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Modelo base (tur-latn-100mb-ppt-mp-struct-100mb_seed455) | no disponible | no disponible | no disponible | Hugging Face | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de evaluaciones comparativas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-mp-struct-100mb_seed455
 - Ejecucion de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jvj0n82m
 - Repositorio de TRL: https://github.com/huggingface/trl

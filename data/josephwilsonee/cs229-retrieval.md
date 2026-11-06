@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Josephwilsonee/cs229-retrieval` es un repositorio de HuggingFace publicado por el usuario Josephwilsonee que contiene una implementación propia de una arquitectura híbrida orientada a tareas de *retrieval* (recuperación de información). No se trata de un modelo entrenado ni de una *release* con resultados publicados: la propia model card lo describe explícitamente como una variante "base" que sirve como punto de partida reproducible y cuyo `model.safetensors` es un *checkpoint* de inicialización válido para pruebas de humo, no un modelo con pesos entrenados.
+`Josephwilsonee/cs229-retrieval` es un repositorio de Hugging Face publicado por el usuario Josephwilsonee que contiene una implementación propia de una arquitectura híbrida orientada a tareas de *retrieval* (recuperación de información). No se trata de un modelo entrenado ni de una *release* con resultados publicados: la propia model card lo describe explícitamente como una variante "base" que sirve como punto de partida reproducible y cuyo `model.safetensors` es un *checkpoint* de inicialización válido para pruebas de humo, no un modelo con pesos entrenados.
 
 El tamaño real del checkpoint es de 24.832 parámetros (según los metadatos de safetensors), es decir, aproximadamente 25 mil parámetros, varias órdenes de magnitud por debajo de cualquier modelo de retrieval multimodal actual. El repositorio ocupa 0,0 GB y no registra descargas ni *likes* en el momento de la consulta. La arquitectura declarada combina atención *grouped query*, fusión tensorial (*tensor fusion*), activación GELU y normalización GroupNorm, con una receta de entrenamiento por defecto basada en el optimizador LAMB y un calendario de *warmup* constante.
 
@@ -93,13 +93,13 @@ La diferencia fundamental no es de tamaño, sino de estado: los modelos de refer
 - Riesgo de alucinación: no aplica a un modelo sin entrenar, pero cualquier *checkpoint* futuro requerirá su propia evaluación al respecto.
 - No se documentan la longitud de contexto soportada, los idiomas admitidos ni las modalidades de entrada, lo que impide anticipar el comportamiento del sistema completo.
 - La licencia BSD-3-Clause permite uso comercial con atribución, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen cuando se utilicen datasets externos (por ejemplo, Flickr30k).
-- Al ser una implementación personalizada, las API de carga automática de HuggingFace (`AutoModel`, etc.) no funcionarán sin escribir un adaptador explícito.
+- Al ser una implementación personalizada, las API de carga automática de Hugging Face (`AutoModel`, etc.) no funcionarán sin escribir un adaptador explícito.
 - Los archivos `training_args.json` y `config.json` recogen valores por defecto del script, no resultados de una ejecución completada; no deben citarse como evidencia experimental.
 - Las fechas de creación y actualización del repositorio (2026-09-14) son posteriores a la fecha habitual de publicación de modelos de referencia; conviene verificar la vigencia del contenido antes de reutilizarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Josephwilsonee/cs229-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Josephwilsonee/cs229-retrieval
 - Archivos incluidos según la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Dataset sugerido para evaluación en la model card: Flickr30k
 - Paper, blog, repositorio de código o demo adicionales: no disponible (la búsqueda web no ha devuelto enlaces relacionados con el modelo)

@@ -76,5 +76,5 @@ No disponible. No se proporcionan modelos comparables en la información suminis
 
 ## Enlaces
 
-- Página del adaptador en HuggingFace: https://huggingface.co/moolm/candle-qwen38-27b-sft-1p
+- Página del adaptador en Hugging Face: https://huggingface.co/moolm/candle-qwen38-27b-sft-1p
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

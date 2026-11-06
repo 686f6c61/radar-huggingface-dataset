@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vikassharma9/experiment-multitask` es un repositorio experimental publicado en HuggingFace por el usuario vikassharma9. No se trata de un modelo entrenado ni de un checkpoint listo para producción, sino de un andamiaje de código para experimentar con una arquitectura Tiny Transformer orientada a tareas múltiples (multitask) a escala "nano". El propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo afinado ni evaluado.
+El modelo `vikassharma9/experiment-multitask` es un repositorio experimental publicado en Hugging Face por el usuario vikassharma9. No se trata de un modelo entrenado ni de un checkpoint listo para producción, sino de un andamiaje de código para experimentar con una arquitectura Tiny Transformer orientada a tareas múltiples (multitask) a escala "nano". El propio autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo afinado ni evaluado.
 
 Con un total de 33.088 parámetros según los pesos en safetensors, se sitúa en un orden de magnitud muy inferior al de los modelos de lenguaje convencionales, incluso los más pequeños. Su interés no reside en el rendimiento sino en servir como base reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, con una receta por defecto basada en el optimizador Adafactor y un schedule polinómico.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables publicados por el mismo autor n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vikassharma9/experiment-multitask
+- Hugging Face: https://huggingface.co/vikassharma9/experiment-multitask
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

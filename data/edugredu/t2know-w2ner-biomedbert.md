@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edugredu/t2know-w2ner-biomedbert
+- Modelo en Hugging Face: https://huggingface.co/edugredu/t2know-w2ner-biomedbert
 - Modelo base: https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext
 - Corpus T2KNOW v1.0.1 (Zenodo): https://doi.org/10.5281/zenodo.23801223
 - Paper: pendiente de publicacion (no disponible)

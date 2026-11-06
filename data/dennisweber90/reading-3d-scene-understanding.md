@@ -4,7 +4,7 @@
 
 El repositorio `DennisWeber90/reading-3d-scene-understanding` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre comprensión de escenas 3D (3D scene understanding). Publicado bajo licencia MIT, el autor lo presenta como un documento de trabajo que separa planes e hipótesis de resultados completados, con referencias a benchmarks públicos y preguntas abiertas. El archivo principal es `reading.md`, que actúa como nota de investigación exploratoria.
 
-A pesar de que la etiqueta de HuggingFace incluye `safetensors` y `transformer`, el repositorio tiene un tamaño de 0.0 GB y solo 24.832 parámetros (probablemente el tamaño en bytes del archivo de texto), lo que confirma que no se trata de un modelo con pesos neuronales. Su relevancia radica en servir como punto de partida para investigadores que quieran verificar hipótesis sobre comprensión de escenas 3D, no como un artefacto de inferencia.
+A pesar de que la etiqueta de Hugging Face incluye `safetensors` y `transformer`, el repositorio tiene un tamaño de 0.0 GB y solo 24.832 parámetros (probablemente el tamaño en bytes del archivo de texto), lo que confirma que no se trata de un modelo con pesos neuronales. Su relevancia radica en servir como punto de partida para investigadores que quieran verificar hipótesis sobre comprensión de escenas 3D, no como un artefacto de inferencia.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DennisWeber90/reading-3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/DennisWeber90/reading-3d-scene-understanding
 - Workshop de 3D Scene Understanding en CVPR 2026: https://scene-understanding.com/
 - Workshop de 3D Scene Understanding en CVPR 2025: https://scene-understanding.com/2025/index.html
 - Tema de GitHub sobre 3D scene understanding: https://github.com/topics/3d-scene-understanding

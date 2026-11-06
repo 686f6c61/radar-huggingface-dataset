@@ -21,7 +21,7 @@ La relevancia de esta publicación radica en que facilita el despliegue local de
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura del modelo base ice-AI. Por el tamano de parametros (8,19 B) y la etiqueta "transformers" en HuggingFace, es probable que se trate de un transformer denso, pero no se puede confirmar sin documentacion oficial. Tampoco hay datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas de RLHF o DPO. La unica informacion disponible es que el modelo es multilingue y esta disenado para tareas conversacionales y de programacion, segun las etiquetas del repositorio.
+No se ha publicado informacion detallada sobre la arquitectura del modelo base ice-AI. Por el tamano de parametros (8,19 B) y la etiqueta "transformers" en Hugging Face, es probable que se trate de un transformer denso, pero no se puede confirmar sin documentacion oficial. Tampoco hay datos sobre el dataset de entrenamiento, el numero de tokens procesados o si se aplicaron tecnicas de RLHF o DPO. La unica informacion disponible es que el modelo es multilingue y esta disenado para tareas conversacionales y de programacion, segun las etiquetas del repositorio.
 
 La cuantizacion realizada por mradermacher es de tipo estatica, sin uso de imatrix ni pesos ponderados. Los archivos GGUF se generaron a partir de los pesos originales en safetensors del modelo darkps/ice-AI. No se especifican innovaciones tecnicas en el proceso de cuantizacion.
 

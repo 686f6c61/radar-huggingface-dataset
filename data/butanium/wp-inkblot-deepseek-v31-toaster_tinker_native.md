@@ -104,7 +104,7 @@ Frente a los modelos comparados entre si en *The Mask in the Inkblot* (124 model
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/Butanium/wp-inkblot-deepseek-v31-toaster_tinker_native
+- Hugging Face (este repositorio): https://huggingface.co/Butanium/wp-inkblot-deepseek-v31-toaster_tinker_native
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.1
 - Paper *The Mask in the Inkblot* (DeTure & Claude, septiembre de 2026): https://futuretbd.ai/research/mask_in_the_inkblot_2026-09.pdf
 - Repositorio de *The Mask in the Inkblot*: https://github.com/sdeture/mask-in-the-inkblot

@@ -61,4 +61,4 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. La
 
 ## Enlaces
 
-- [HuggingFace - austinallen/model_322693072_tiny_transformer_xlarge](https://huggingface.co/austinallen/model_322693072_tiny_transformer_xlarge)
+- [Hugging Face - austinallen/model_322693072_tiny_transformer_xlarge](https://huggingface.co/austinallen/model_322693072_tiny_transformer_xlarge)

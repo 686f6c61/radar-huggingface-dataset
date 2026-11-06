@@ -6,7 +6,7 @@ OSADÍA 7B Pro es un modelo de generación de texto de 7.000 millones de paráme
 
 El modelo declara una ventana de contexto de 32.768 tokens, dimensión oculta de 4.096, 32 capas y atención con 32 cabezas de consulta y 8 de clave/valor (GQA). Soporta español e inglés y se publica bajo la licencia propietaria SOCL-1.0 (sovereign-open-community-license-1.0), que impone cláusulas de atribución y procedencia sobre pesos derivados.
 
-La relevancia de esta ficha es doble: por un lado, documenta las especificaciones declaradas por el autor; por otro, debe señalarse que la model card incluye resultados de benchmarks que puntúan 100,0% en MMLU, ARC Challenge, GSM8K y HellaSwag, lo que resulta estadísticamente implausible para un modelo de 7B y no está respaldado por ninguna evaluación reproducible publicada. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y el campo `inference: false` en la model card indica que la inferencia no está habilitada en HuggingFace.
+La relevancia de esta ficha es doble: por un lado, documenta las especificaciones declaradas por el autor; por otro, debe señalarse que la model card incluye resultados de benchmarks que puntúan 100,0% en MMLU, ARC Challenge, GSM8K y HellaSwag, lo que resulta estadísticamente implausible para un modelo de 7B y no está respaldado por ninguna evaluación reproducible publicada. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y el campo `inference: false` en la model card indica que la inferencia no está habilitada en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -74,14 +74,14 @@ No se han publicado resultados de benchmarks verificables ni reproducibles en la
 - **VRAM en cuantización de 8 bits**: unos 7-8 GB de pesos; en 4 bits, unos 4-5 GB (aunque no se confirman pesos cuantizados publicados).
 - **GPU recomendadas**: A100 40/80 GB, H100, L40S o RTX 4090 para BF16 sin cuantizar; RTX 3090/4090 (24 GB) es suficiente para BF16 con contexto moderado.
 - **Consumer GPU**: sí, cabe en RTX 4090, RTX 3090 y, con cuantización, en GPUs de 8-12 GB (RTX 4070, RTX 3060 12 GB).
-- **Opciones de despliegue**: vLLM, TGI o PyTorch nativo para BF16; llama.cpp u Ollama solo si se generan pesos GGUF, que no se confirman en el repositorio. El campo `inference: false` sugiere que la inferencia gestionada de HuggingFace no está habilitada.
+- **Opciones de despliegue**: vLLM, TGI o PyTorch nativo para BF16; llama.cpp u Ollama solo si se generan pesos GGUF, que no se confirman en el repositorio. El campo `inference: false` sugiere que la inferencia gestionada de Hugging Face no está habilitada.
 - **Latencia y throughput**: no disponible (no se publican mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| OSADÍA 7B Pro | 7,0 B | 32.768 | SOCL-1.0 (propietaria) | HuggingFace, 0 descargas | Benchmarks declarados no verificados |
+| OSADÍA 7B Pro | 7,0 B | 32.768 | SOCL-1.0 (propietaria) | Hugging Face, 0 descargas | Benchmarks declarados no verificados |
 | Llama 3.1 8B Instruct | 8,0 B | 128.000 | Llama 3.1 Community License | Amplia, ecosistema maduro | Referencia usada por el propio autor |
 | Mistral 7B Instruct | 7,2 B | 32.768 | Apache 2.0 | Amplia, múltiples cuantizaciones | Comparable en tamaño y contexto |
 | Qwen2.5 7B Instruct | 7,6 B | 131.072 | Apache 2.0 (mayoría de variantes) | Amplia, multilingüe | Soporte de tool calling documentado |
@@ -102,8 +102,8 @@ La comparativa se limita a parámetros, contexto y licencia: no existen medicion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nextgenaimx/osadia-7b-pro
+- Hugging Face: https://huggingface.co/nextgenaimx/osadia-7b-pro
 - Repositorio oficial declarado: https://github.com/NextGenAiMX/osadia-ai
 - Dataset declarado: https://huggingface.co/datasets/NextGenAiMX/The-Data-Factory-Cleanroom-Corpus
-- Licencia: LICENSE.md en el repositorio de HuggingFace (no se ha podido verificar el contenido)
+- Licencia: LICENSE.md en el repositorio de Hugging Face (no se ha podido verificar el contenido)
 - Paper, blog o demo: no disponible

@@ -2,17 +2,17 @@
 
 ## Resumen
 
-WIA-35B-A3B es un modelo de lenguaje publicado en HuggingFace por el usuario `darwinagent` el 24 de octubre de 2026. Por la nomenclatura del identificador y la etiqueta de arquitectura declarada (`qwen3_5_moe_text`), se trata de un transformer con mezcla de expertos (MoE) de aproximadamente 35 000 millones de parámetros totales y alrededor de 3000 millones activos por token, presumiblemente derivado de la familia Qwen 3.5. El repositorio ocupa 36,7 GB y contiene únicamente pesos en formato `safetensors`.
+WIA-35B-A3B es un modelo de lenguaje publicado en Hugging Face por el usuario `darwinagent` el 24 de octubre de 2026. Por la nomenclatura del identificador y la etiqueta de arquitectura declarada (`qwen3_5_moe_text`), se trata de un transformer con mezcla de expertos (MoE) de aproximadamente 35 000 millones de parámetros totales y alrededor de 3000 millones activos por token, presumiblemente derivado de la familia Qwen 3.5. El repositorio ocupa 36,7 GB y contiene únicamente pesos en formato `safetensors`.
 
 El interés de un modelo con esta relación parámetros totales/activos es económico: ofrece la capacidad de representación de una red de 35B con el coste computacional de inferencia de una red de ~3B por token, lo que abarata el despliegue en GPUs de gama alta profesional. Sin embargo, en el momento de redactar esta ficha el repositorio no incluye model card con especificaciones, licencia, idiomas ni resultados de evaluación: cuenta con 0 descargas y 1 "like", y no se ha publicado ninguna cuantización GGUF ni documentación adicional.
 
-Por tanto, esta ficha documenta de forma rigurosa lo que sí está confirmado por los metadatos de HuggingFace, explicita qué datos faltan y ofrece estimaciones de ingeniería —claramente marcadas como tales— sobre requisitos de hardware derivadas del recuento de parámetros. Cualquier uso en producción debería ir precedido de una evaluación propia del modelo y de una verificación legal de la licencia.
+Por tanto, esta ficha documenta de forma rigurosa lo que sí está confirmado por los metadatos de Hugging Face, explicita qué datos faltan y ofrece estimaciones de ingeniería —claramente marcadas como tales— sobre requisitos de hardware derivadas del recuento de parámetros. Cualquier uso en producción debería ir precedido de una evaluación propia del modelo y de una verificación legal de la licencia.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Mezcla de expertos (MoE) de tipo transformer; etiqueta de HuggingFace `qwen3_5_moe_text`. Detalle de capas, número de expertos y mecanismo de atención: no disponible |
+| Arquitectura | Mezcla de expertos (MoE) de tipo transformer; etiqueta de Hugging Face `qwen3_5_moe_text`. Detalle de capas, número de expertos y mecanismo de atención: no disponible |
 | Parámetros totales | ~35B (deducido del identificador `35B`; no confirmado en documentación del autor) |
 | Parámetros activos | ~3B por token (deducido del sufijo `A3B`; no confirmado en documentación del autor) |
 | Longitud de contexto | no disponible |
@@ -98,5 +98,5 @@ Frente a estas alternativas, la ventaja potencial de WIA-35B-A3B es su ratio de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/darwinagent/WIA-35B-A3B
+- Hugging Face: https://huggingface.co/darwinagent/WIA-35B-A3B
 - No se han encontrado otros enlaces (paper, blog, repositorio de código, demo) en la información disponible.

@@ -90,6 +90,6 @@ La principal diferencia frente a la base LTX 2.3 es la eliminación de los filtr
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/jameskenneylau/PinkCherry_NSFW_LTX23
+- Página del modelo en Hugging Face: https://huggingface.co/jameskenneylau/PinkCherry_NSFW_LTX23
 - LoRA destilado de LTX 2.3 (referenciado en la model card): https://huggingface.co/Lightricks/LTX-2.3/blob/main/ltx-2.3-22b-distilled-lora-384-1.1.safetensors
 - Nota: el enlace al "text encoder uncensored" en la model card apunta al mismo LoRA destilado, lo que parece un error del autor. No se proporcionan enlaces a papers, blogs o demos adicionales.

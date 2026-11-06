@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tiny-random/sensenova-loop | 4,55 M | 262.144 | no disponible | HuggingFace (repo tiny) | Inicialización aleatoria, solo para test |
-| sensenova/SenseNova-Loop-9B-Preview | 9,41 B (F32) | 262.144 | no disponible | HuggingFace | Modelo base real, pesos completos (38,14 GB) |
-| Otros modelos tiny-random de HuggingFace | variable (típicamente < 10 M) | variable | variable | HuggingFace | Repos generados para test de arquitecturas |
+| tiny-random/sensenova-loop | 4,55 M | 262.144 | no disponible | Hugging Face (repo tiny) | Inicialización aleatoria, solo para test |
+| sensenova/SenseNova-Loop-9B-Preview | 9,41 B (F32) | 262.144 | no disponible | Hugging Face | Modelo base real, pesos completos (38,14 GB) |
+| Otros modelos tiny-random de Hugging Face | variable (típicamente < 10 M) | variable | variable | Hugging Face | Repos generados para test de arquitecturas |
 
 La comparación relevante es con su modelo base: el tiny comparte arquitectura, contexto y contratos de precisión, pero reduce parámetros en un factor de ~2.000 y no ha sido entrenado. Frente a otros repos `tiny-random`, la diferencia es que este preserva fielmente la topología Loop/mHC del original, incluyendo el ciclo de atención y el draft MTP.
 
@@ -84,7 +84,7 @@ La comparación relevante es con su modelo base: el tiny comparte arquitectura, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tiny-random/sensenova-loop
+- Repositorio Hugging Face: https://huggingface.co/tiny-random/sensenova-loop
 - Modelo base: https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview
 - Script de creación: `.meta/create_model.py` (dentro del repo)
 - Log de estructura del modelo: `.meta/model.log` (dentro del repo)

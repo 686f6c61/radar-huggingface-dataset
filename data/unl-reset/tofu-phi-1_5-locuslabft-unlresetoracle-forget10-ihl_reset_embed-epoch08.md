@@ -83,7 +83,7 @@ La comparación directa con alternativas de la misma categoría (otros checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch08
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch08
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

@@ -85,8 +85,8 @@ GPQA Diamond no se midio por no ser aplicable a un modelo de embeddings.
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Darkstar-Qwen3-Embedding-8B-Base-ModelOpt-W4A4-NVFP4 | 4,09B (safetensors) | no disponible | safetensors NVFP4 W4A4 | Apache 2.0 | HuggingFace, 28 descargas |
-| Qwen/Qwen3-Embedding-8B (BF16) | 8B (nominal) | no disponible | safetensors BF16 | Apache 2.0 | HuggingFace (modelo base) |
+| Darkstar-Qwen3-Embedding-8B-Base-ModelOpt-W4A4-NVFP4 | 4,09B (safetensors) | no disponible | safetensors NVFP4 W4A4 | Apache 2.0 | Hugging Face, 28 descargas |
+| Qwen/Qwen3-Embedding-8B (BF16) | 8B (nominal) | no disponible | safetensors BF16 | Apache 2.0 | Hugging Face (modelo base) |
 | Darkstar variante A (MLP only) | no disponible | no disponible | NVFP4 parcial (78% lineales) | Apache 2.0 | Referenciada en la model card, no publicada como checkpoint independiente en la informacion disponible |
 
 No se dispone de datos de benchmarks de otros modelos de embeddings comparables en la informacion proporcionada, por lo que la comparativa de rendimiento se limita a las variantes del propio autor y al BF16 de referencia.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de otros modelos de embeddings comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3-Embedding-8B-Base-ModelOpt-W4A4-NVFP4
+- Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-Qwen3-Embedding-8B-Base-ModelOpt-W4A4-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Source card: https://github.com/HangGlidersRule/model-forge/blob/main/models/qwen3-embedding-8b/model-card/base-nvfp4.md
 - Family record: https://github.com/HangGlidersRule/model-forge/blob/main/models/qwen3-embedding-8b/README.md

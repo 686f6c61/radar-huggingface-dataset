@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-15-steer-aft-qwen3-14b` | 14B (base) + adaptador rango 1 | no disponible | MIT | safetensors (PEFT) | HuggingFace |
-| `Qwen/Qwen3-14B` | 14B | no disponible | no disponible | safetensors | HuggingFace |
-| Adaptadores AFT del mismo proyecto (experimentos previos) | 14B (base) + adaptador rango 1 | no disponible | MIT | safetensors (PEFT) | HuggingFace |
+| `bcywinski/gen-science-15-steer-aft-qwen3-14b` | 14B (base) + adaptador rango 1 | no disponible | MIT | safetensors (PEFT) | Hugging Face |
+| `Qwen/Qwen3-14B` | 14B | no disponible | no disponible | safetensors | Hugging Face |
+| Adaptadores AFT del mismo proyecto (experimentos previos) | 14B (base) + adaptador rango 1 | no disponible | MIT | safetensors (PEFT) | Hugging Face |
 
 No se dispone de informacion sobre benchmarks comparativos ni sobre otros modelos de steering equivalentes en la informacion proporcionada.
 
@@ -79,6 +79,6 @@ No se dispone de informacion sobre benchmarks comparativos ni sobre otros modelo
 
 ## Enlaces
 
-- [HuggingFace: bcywinski/gen-science-15-steer-aft-qwen3-14b](https://huggingface.co/bcywinski/gen-science-15-steer-aft-qwen3-14b)
+- [Hugging Face: bcywinski/gen-science-15-steer-aft-qwen3-14b](https://huggingface.co/bcywinski/gen-science-15-steer-aft-qwen3-14b)
 - [Modelo base: Qwen/Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B)
 - [Dataset: bcywinski/gen-science-03-aft-rows-cheese](https://huggingface.co/datasets/bcywinski/gen-science-03-aft-rows-cheese)

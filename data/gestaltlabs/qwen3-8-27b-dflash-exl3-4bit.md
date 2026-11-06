@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GestaltLabs/Qwen3.8-27B-DFlash-EXL3-4bit
+- Modelo en Hugging Face: https://huggingface.co/GestaltLabs/Qwen3.8-27B-DFlash-EXL3-4bit
 - Modelo objetivo: https://huggingface.co/GestaltLabs/Qwen3.8-27B-EXL3-11.5GB
 - Repositorio ExLlamaV3: https://github.com/turboderp-org/exllamav3
 - Repositorio DFlash: https://github.com/z-lab/dflash

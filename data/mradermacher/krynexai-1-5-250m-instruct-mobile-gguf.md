@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| KrynexAI-1.5-250M-Instruct-Mobile | 229,7 M | no disponible | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| SmolLM2-360M-Instruct | 362 M | 8.192 tokens | Apache 2.0 | GGUF, safetensors | HuggingFace |
-| TinyLlama-1.1B-Chat | 1.100 M | 2.048 tokens | Apache 2.0 | GGUF, safetensors | HuggingFace |
+| KrynexAI-1.5-250M-Instruct-Mobile | 229,7 M | no disponible | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| SmolLM2-360M-Instruct | 362 M | 8.192 tokens | Apache 2.0 | GGUF, safetensors | Hugging Face |
+| TinyLlama-1.1B-Chat | 1.100 M | 2.048 tokens | Apache 2.0 | GGUF, safetensors | Hugging Face |
 
 La comparativa se basa en el tamaño y la orientación a dispositivos edge. KrynexAI-1.5-250M es el más pequeño de la lista, lo que reduce los requisitos de hardware pero también limita su capacidad de razonamiento y contexto frente a alternativas como Qwen2.5-0.5B o SmolLM2-360M, que documentan contextos de 32.768 y 8.192 tokens respectivamente. No se dispone de datos de rendimiento comparativo para KrynexAI-1.5-250M.
 
@@ -84,7 +84,7 @@ La comparativa se basa en el tamaño y la orientación a dispositivos edge. Kryn
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/KrynexAI-1.5-250M-Instruct-Mobile-GGUF](https://huggingface.co/mradermacher/KrynexAI-1.5-250M-Instruct-Mobile-GGUF)
+- [Hugging Face: mradermacher/KrynexAI-1.5-250M-Instruct-Mobile-GGUF](https://huggingface.co/mradermacher/KrynexAI-1.5-250M-Instruct-Mobile-GGUF)
 - [Modelo base: KrynexLabs/KrynexAI-1.5-250M-Instruct-Mobile](https://huggingface.co/KrynexLabs/KrynexAI-1.5-250M-Instruct-Mobile)
 - [Dataset: KrynexLabs/KrynexAI-Santa-Ana-Tusi-Pasco-Quechua](https://huggingface.co/datasets/KrynexLabs/KrynexAI-Santa-Ana-Tusi-Pasco-Quechua)
 - [Dataset: KrynexLabs/KrynexAI-Dataset-Mini-Top1](https://huggingface.co/datasets/KrynexLabs/KrynexAI-Dataset-Mini-Top1)

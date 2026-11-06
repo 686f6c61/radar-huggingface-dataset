@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rezashamji/findpics-writer-2b
+- Modelo en Hugging Face: https://huggingface.co/rezashamji/findpics-writer-2b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Modelo generador de datos de entrenamiento: https://huggingface.co/Qwen/Qwen3.5-27B-FP8
 - Libreria de inferencia mlx-vlm: no disponible en la informacion (referenciada como paquete `mlx-vlm` en el README)

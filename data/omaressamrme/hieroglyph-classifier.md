@@ -45,7 +45,7 @@ El entrenamiento se realizó sobre 3.674 recortes de signos etiquetados manualme
 - Componente de un pipeline de reconocimiento de inscripciones: combinado con un detector/segmentador previo (no incluido en este modelo), permite construir un sistema completo de lectura de muros con la fase de clasificación resuelta.
 - Docencia y divulgación: el modelo sirve para ilustrar cómo una CNN pequeña (2,1 M de parámetros) puede resolver una tarea de clasificación fina en un dominio especializado, con código y métricas reproducibles.
 - Validación de métodos: al estar entrenado sobre un subconjunto controlado del GlyphDataset, sirve como línea base reproducible para comparar futuros clasificadores de signos jeroglíficos.
-- Despliegue en entornos con recursos limitados: al entrenar e inferir en CPU y ocupar un repositorio de tamaño mínimo (0,0 GB según HuggingFace), puede ejecutarse en portátiles o servidores sin GPU.
+- Despliegue en entornos con recursos limitados: al entrenar e inferir en CPU y ocupar un repositorio de tamaño mínimo (0,0 GB según Hugging Face), puede ejecutarse en portátiles o servidores sin GPU.
 
 ## Benchmarks y rendimiento
 
@@ -74,7 +74,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hieroglyph-classifier | 2,1 M | Clasificación de 59 signos Gardiner | MIT | HuggingFace, GitHub, demo |
+| hieroglyph-classifier | 2,1 M | Clasificación de 59 signos Gardiner | MIT | Hugging Face, GitHub, demo |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,9 +90,9 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omaressamrme/hieroglyph-classifier
+- Modelo en Hugging Face: https://huggingface.co/omaressamrme/hieroglyph-classifier
 - Repositorio GitHub (código, figuras y primer intento fallido): https://github.com/engomaressam/hieroglyph-classifier
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/omaressamrme/demos
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/omaressamrme/demos
 - Notebook de Kaggle: https://www.kaggle.com/code/engomaressam/hieroglyph-classifier-97-on-59-gardiner-signs
 - Artículo técnico (dev.to): https://dev.to/eng_omaressam_7cb0e2a9c/teaching-a-cnn-to-read-hieroglyphs-969-on-59-signs-and-why-my-first-model-failed-3a2n
 - Portfolio del autor: https://omaressam.web.app/#projects

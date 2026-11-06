@@ -69,8 +69,8 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-gemma-4-31B-it-abliterated
-- Version v2 en HuggingFace: https://huggingface.co/huihui-ai/Huihui-gemma-4-31B-it-abliterated-v2
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-gemma-4-31B-it-abliterated
+- Version v2 en Hugging Face: https://huggingface.co/huihui-ai/Huihui-gemma-4-31B-it-abliterated-v2
 - Modelo en Ollama: https://ollama.com/huihui_ai/gemma-4-abliterated
 - Repositorio de la tecnica de abliteracion: https://github.com/Sumandora/remove-refusals-with-transformers
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

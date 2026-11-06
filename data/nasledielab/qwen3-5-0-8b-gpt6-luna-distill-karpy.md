@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy es un modelo publicado en HuggingFace por el usuario NasledieLab el 26 de septiembre de 2026, con licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento y sin resultados de evaluacion. No se dispone de pipeline declarado, idiomas soportados ni formatos de pesos publicados.
+NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy es un modelo publicado en Hugging Face por el usuario NasledieLab el 26 de septiembre de 2026, con licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento y sin resultados de evaluacion. No se dispone de pipeline declarado, idiomas soportados ni formatos de pesos publicados.
 
 El nombre del repositorio sugiere, sin que haya confirmacion por parte del autor, una destilacion de un modelo base de la familia Qwen3.5 con aproximadamente 0,8 mil millones de parametros, con los sufijos "GPT6-Luna" y "Karpy" posiblemente referidos al pipeline de destilacion o al dataset utilizado. Ninguno de estos extremos esta documentado en la informacion disponible, por lo que deben tratarse como hipotesis de nomenclatura y no como caracteristicas verificadas.
 
@@ -78,7 +78,7 @@ La comparativa se establece con alternativas publicas de la misma franja de tama
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy | no disponible (el nombre indica 0,8B) | no disponible | Apache 2.0 | HuggingFace, sin documentacion |
+| NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy | no disponible (el nombre indica 0,8B) | no disponible | Apache 2.0 | Hugging Face, sin documentacion |
 | Qwen3-0.6B | 0,6B | 32.768 tokens, extensible | Apache 2.0 | Ampliamente disponible |
 | Llama-3.2-1B | 1,23B | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible |
 | Gemma-3-1B | 1B | 32.768 tokens | Gemma Terms of Use | Ampliamente disponible |
@@ -98,6 +98,6 @@ No se dispone de datos de rendimiento comparativo para el modelo objeto de esta 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy
-- Perfil del autor en HuggingFace: https://huggingface.co/NasledieLab
+- Pagina del modelo en Hugging Face: https://huggingface.co/NasledieLab/Qwen3.5-0.8B-GPT6-Luna-Distill-Karpy
+- Perfil del autor en Hugging Face: https://huggingface.co/NasledieLab
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

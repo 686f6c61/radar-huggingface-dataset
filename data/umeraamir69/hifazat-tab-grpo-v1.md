@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/umeraamir69/hifazat-tab-grpo-v1
+- Repositorio Hugging Face: https://huggingface.co/umeraamir69/hifazat-tab-grpo-v1
 - Modelo base: https://huggingface.co/CohereLabs/tiny-aya-fire
 - AgentTune (GitHub): https://github.com/Lexsi-Labs/AgentTune_mirror
 - Lexsi Labs: https://lexsi.ai/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-mobilenet-v4-conv-large es un modelo de clasificación de imágenes publicado por el usuario lucid-dl en HuggingFace. No es un modelo entrenado desde cero por ese autor, sino un port al framework Lucid del checkpoint `timm/mobilenetv4_conv_large.e600_r384_in1k`, convertido a safetensors nativos de Lucid mediante la herramienta `tools.convert_weights` y verificado con una carga estricta contra un modelo Lucid recién construido. Implementa la variante convolucional grande de la familia MobileNetV4 descrita por Qin et al. (ECCV 2024, arXiv:2404.10518).
+mobilenet-v4-conv-large es un modelo de clasificación de imágenes publicado por el usuario lucid-dl en Hugging Face. No es un modelo entrenado desde cero por ese autor, sino un port al framework Lucid del checkpoint `timm/mobilenetv4_conv_large.e600_r384_in1k`, convertido a safetensors nativos de Lucid mediante la herramienta `tools.convert_weights` y verificado con una carga estricta contra un modelo Lucid recién construido. Implementa la variante convolucional grande de la familia MobileNetV4 descrita por Qin et al. (ECCV 2024, arXiv:2404.10518).
 
 El modelo tiene 32,6 M de parámetros (124,96 MB en el repositorio) y clasifica imágenes a 384x384 píxeles en las 1000 clases de ImageNet-1k. Declara un 82,974 % de acc@1 y un 96,244 % de acc@5 según el model-index del propio autor, valores marcados como no verificados. La licencia es Apache 2.0, heredada de los pesos originales de timm.
 
-Su relevancia es la de un backbone convolucional eficiente de gama media-alta: ofrece precisión de modelos tipo ConvNeXt-Tiny con un coste de cómputo propio de la familia MobileNet, lo que lo hace adecuado para clasificación en producción, extracción de características y fine-tuning en dominios específicos. Cabe señalar que el repositorio no registra descargas ni likes y que las fechas de creación y actualización publicadas por HuggingFace son del 24 de septiembre de 2026.
+Su relevancia es la de un backbone convolucional eficiente de gama media-alta: ofrece precisión de modelos tipo ConvNeXt-Tiny con un coste de cómputo propio de la familia MobileNet, lo que lo hace adecuado para clasificación en producción, extracción de características y fine-tuning en dominios específicos. Cabe señalar que el repositorio no registra descargas ni likes y que las fechas de creación y actualización publicadas por Hugging Face son del 24 de septiembre de 2026.
 
 ## Especificaciones técnicas
 
@@ -89,7 +89,7 @@ El modelo se sitúa en precisión cerca de ConvNeXt-Tiny, con un número de par�
 ## Limitaciones y advertencias
 
 - Las métricas declaradas (82,974 % acc@1 y 96,244 % acc@5) están marcadas como no verificadas en el model-index; no han sido reproducidas de forma independiente.
-- El repositorio registra 0 descargas y 0 likes, y las fechas publicadas por HuggingFace son del 24 de septiembre de 2026. No hay evidencia de uso en producción por parte de terceros.
+- El repositorio registra 0 descargas y 0 likes, y las fechas publicadas por Hugging Face son del 24 de septiembre de 2026. No hay evidencia de uso en producción por parte de terceros.
 - No es un modelo entrenado por el autor del repositorio, sino una conversión de pesos de timm; los posibles problemas de calidad heredados del checkpoint original no se documentan.
 - Dependencia del framework Lucid, poco extendido en comparación con PyTorch nativo, timm u ONNX Runtime: la integración en infraestructuras existentes puede requerir trabajo adicional.
 - Vocabulario de salida fijo de 1000 clases de ImageNet-1k y etiquetas en inglés; para cualquier dominio propio es necesario reentrenar o sustituir la cabeza de clasificación.
@@ -102,7 +102,7 @@ El modelo se sitúa en precisión cerca de ConvNeXt-Tiny, con un número de par�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucid-dl/mobilenet-v4-conv-large
+- Modelo en Hugging Face: https://huggingface.co/lucid-dl/mobilenet-v4-conv-large
 - Articulo original: MobileNetV4: Universal Models for the Mobile Ecosystem (Qin et al., ECCV 2024), https://arxiv.org/abs/2404.10518
 - Repositorio del framework Lucid: https://github.com/ChanLumerico/lucid
 - Checkpoint de origen en timm: `timm/mobilenetv4_conv_large.e600_r384_in1k`

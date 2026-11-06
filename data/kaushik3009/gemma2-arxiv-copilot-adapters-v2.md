@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kaushik3009/gemma2-arxiv-copilot-adapters-v2` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base `google/gemma-2-2b-it` mediante fine-tuning supervisado (SFT). El autor, kaushik3009, lo publica en HuggingFace con el objetivo de crear un "copiloto" especializado en documentos de arXiv, probablemente para tareas de asistencia a la investigación como resumen, extracción de información o generación de respuestas contextualizadas sobre papers científicos. El adaptador se distribuye en formato PEFT y safetensors, con un tamaño de repositorio de 0.1 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
+El modelo `kaushik3009/gemma2-arxiv-copilot-adapters-v2` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base `google/gemma-2-2b-it` mediante fine-tuning supervisado (SFT). El autor, kaushik3009, lo publica en Hugging Face con el objetivo de crear un "copiloto" especializado en documentos de arXiv, probablemente para tareas de asistencia a la investigación como resumen, extracción de información o generación de respuestas contextualizadas sobre papers científicos. El adaptador se distribuye en formato PEFT y safetensors, con un tamaño de repositorio de 0.1 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
 
 La relevancia de este modelo radica en su enfoque práctico: en lugar de ajustar un modelo grande, se aprovecha un modelo base pequeño (Gemma 2 2B) y se le añade una capa de adaptación ligera para dominios específicos. Esto permite desplegar asistentes de investigación con requisitos de hardware modestos, manteniendo la capacidad de generación de texto y razonamiento del modelo original. Sin embargo, la documentación es extremadamente escasa: la model card no proporciona detalles sobre el dataset de entrenamiento, los hiperparámetros, los resultados de evaluación ni las limitaciones específicas, lo que limita la reproducibilidad y la confianza en su rendimiento real.
 
@@ -59,10 +59,10 @@ No se dispone de información sobre adaptadores comparables en el mismo reposito
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| google/gemma-2-2b-it | 2.6B | 8192 | Gemma license | HuggingFace |
-| kaushik3009/gemma2-arxiv-copilot-adapters-v2 | Adaptador LoRA (tamaño desconocido) | 8192 (heredado) | No disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32768 | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1.3B | 131072 | Llama license | HuggingFace |
+| google/gemma-2-2b-it | 2.6B | 8192 | Gemma license | Hugging Face |
+| kaushik3009/gemma2-arxiv-copilot-adapters-v2 | Adaptador LoRA (tamaño desconocido) | 8192 (heredado) | No disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32768 | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1.3B | 131072 | Llama license | Hugging Face |
 
 La comparación es limitada porque no hay benchmarks del adaptador. El modelo base Gemma 2 2B tiene un rendimiento documentado en tareas de razonamiento y generación, pero el adaptador no ha sido evaluado públicamente.
 
@@ -77,7 +77,7 @@ La comparación es limitada porque no hay benchmarks del adaptador. El modelo ba
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaushik3009/gemma2-arxiv-copilot-adapters-v2
+- Repositorio Hugging Face: https://huggingface.co/kaushik3009/gemma2-arxiv-copilot-adapters-v2
 - Modelo base Gemma 2 2B IT: https://huggingface.co/google/gemma-2-2b-it
 - Paper de Gemma 2: https://arxiv.org/abs/2408.00118
 - Paper de Gemma original: https://arxiv.org/abs/2403.08295

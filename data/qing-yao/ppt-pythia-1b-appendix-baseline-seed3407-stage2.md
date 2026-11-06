@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-1b-appendix-baseline-seed3407-stage2` es un ajuste fino (fine-tune) supervisado del modelo base EleutherAI/pythia-1b, publicado por el usuario qing-yao en HuggingFace. Se trata de un checkpoint de 1.011.781.632 parametros (aproximadamente 1,01 mil millones) etiquetado con la arquitectura `gpt_neox` y orientado a generacion de texto. El nombre del repositorio sugiere que forma parte de un estudio experimental con semilla fija (seed 3407) y una etapa 2 de entrenamiento, aunque la model card no documenta el proposito concreto del experimento.
+`ppt-pythia-1b-appendix-baseline-seed3407-stage2` es un ajuste fino (fine-tune) supervisado del modelo base EleutherAI/pythia-1b, publicado por el usuario qing-yao en Hugging Face. Se trata de un checkpoint de 1.011.781.632 parametros (aproximadamente 1,01 mil millones) etiquetado con la arquitectura `gpt_neox` y orientado a generacion de texto. El nombre del repositorio sugiere que forma parte de un estudio experimental con semilla fija (seed 3407) y una etapa 2 de entrenamiento, aunque la model card no documenta el proposito concreto del experimento.
 
 El modelo se ha entrenado con SFT (supervised fine-tuning) usando la libreria TRL en su version 0.23.0, junto con Transformers 4.56.2, PyTorch 2.8.0+cu128, Datasets 4.2.0 y Tokenizers 0.22.1. La model card unicamente incluye un ejemplo de uso rapido mediante `pipeline` de Transformers y la referencia bibliografica de TRL; no aporta informacion sobre el dataset de ajuste, el numero de tokens de entrenamiento, la composicion de los datos ni el proceso de alineamiento.
 
@@ -87,14 +87,14 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguno de est
 - Riesgo de alucinacion: alto. Se trata de un modelo de 1 B de parametros con ajuste SFT sobre un dataset no especificado, sin datos de evaluacion que respalden su fiabilidad factual.
 - Limitacion de contexto: la model card no declara la ventana de contexto; si se hereda la del base, 2048 tokens, es insuficiente para tareas de contexto largo.
 - Limitacion idiomatica: no se declaran idiomas soportados. El preentrenamiento de Pythia se centra en ingles, por lo que el rendimiento en castellano es previsiblemente bajo.
-- Licencia: el campo de licencia de la model card contiene un placeholder (`licence: license`) y en HuggingFace figura como no disponible. No hay autorizacion explicita para uso comercial; conviene contactar con el autor antes de cualquier uso en produccion.
+- Licencia: el campo de licencia de la model card contiene un placeholder (`licence: license`) y en Hugging Face figura como no disponible. No hay autorizacion explicita para uso comercial; conviene contactar con el autor antes de cualquier uso en produccion.
 - Madurez: 0 descargas y 0 "likes", sin documentacion del dataset de entrenamiento, sin benchmarks y sin versionado claro. No es un modelo recomendable para sistemas en produccion sin una evaluacion propia previa.
 - Trazabilidad: al no documentarse el dataset de SFT ni el procedimiento completo, no es posible auditar que datos se usaron ni descartar contaminacion o contenido problematico.
 - Nombre del repositorio: los terminos `baseline` y `stage2` sugieren un checkpoint intermedio de un experimento en curso, no un artefacto final estable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-baseline-seed3407-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-baseline-seed3407-stage2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1b
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Resultados de la busqueda web: no se han encontrado enlaces tecnicos relevantes sobre este modelo; los resultados devueltos corresponden a paginas historicas sobre la dinastia Qing y no guardan relacion con el artefacto.

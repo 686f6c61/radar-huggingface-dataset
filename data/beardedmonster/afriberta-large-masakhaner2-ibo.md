@@ -78,10 +78,10 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `BeardedMonster/afriberta-large-masakhaner2-ibo` | 125.047.305 | 256 tokens de entrenamiento | span F1 0,8661 en ibo (1 ejecucion) | No disponible (hereda la del base) | HuggingFace, safetensors, 0 descargas |
-| `castorini/afriberta_large` (modelo base) | 125 M aprox. (mismo backbone) | No disponible en la informacion | No disponible (sin fine-tuning de NER) | No disponible en la informacion | HuggingFace |
-| XLM-RoBERTa large (referencia multilingue) | 560 M aprox. | 512 tokens | No disponible en la informacion | MIT | HuggingFace, ampliamente desplegado |
-| mBERT (referencia multilingue) | 178 M aprox. | 512 tokens | No disponible en la informacion | Apache 2.0 | HuggingFace |
+| `BeardedMonster/afriberta-large-masakhaner2-ibo` | 125.047.305 | 256 tokens de entrenamiento | span F1 0,8661 en ibo (1 ejecucion) | No disponible (hereda la del base) | Hugging Face, safetensors, 0 descargas |
+| `castorini/afriberta_large` (modelo base) | 125 M aprox. (mismo backbone) | No disponible en la informacion | No disponible (sin fine-tuning de NER) | No disponible en la informacion | Hugging Face |
+| XLM-RoBERTa large (referencia multilingue) | 560 M aprox. | 512 tokens | No disponible en la informacion | MIT | Hugging Face, ampliamente desplegado |
+| mBERT (referencia multilingue) | 178 M aprox. | 512 tokens | No disponible en la informacion | Apache 2.0 | Hugging Face |
 
 No se dispone de resultados numericos comparables de otros checkpoints sobre el protocolo ibo de MasakhaNER 2.0 en la informacion proporcionada, por lo que la comparacion de rendimiento queda limitada al dato propio del modelo.
 
@@ -98,8 +98,8 @@ No se dispone de resultados numericos comparables de otros checkpoints sobre el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/afriberta-large-masakhaner2-ibo
-- Modelo base en HuggingFace: https://huggingface.co/castorini/afriberta_large
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/afriberta-large-masakhaner2-ibo
+- Modelo base en Hugging Face: https://huggingface.co/castorini/afriberta_large
 - Repositorio del proyecto MasakhaNER: https://github.com/masakhane-io/masakhane-ner
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre MasakhaNER 2.0; los unicos resultados obtenidos eran contenido no relacionado, por lo que no se incluyen.

@@ -4,9 +4,9 @@
 
 El modelo `MANTRAIDEAS1/nepali-banknote-models-v1` es un conjunto de modelos de visión por computador desarrollado por Mantra Ideas Pvt. Ltd., una empresa tecnológica con sede en Nepal, orientado al reconocimiento y clasificación de billetes de rupia nepalí. El repositorio incluye múltiples arquitecturas de detección de objetos y clasificación de imágenes, entre las que se mencionan YOLO, ConvNeXt, Swin Transformer y RF-DETR, lo que sugiere un enfoque comparativo o ensamblado para robustecer la identificación de denominaciones en imágenes fotografiadas o escaneadas.
 
-El modelo aborda un problema práctico y relevante: la automatización del reconocimiento de moneda en contextos como cajeros automáticos, aplicaciones de banca móvil, sistemas de conteo de efectivo o herramientas de asistencia para personas con discapacidad visual. Su publicación en HuggingFace con licencia MIT y acceso restringido (gated) indica una intención de uso controlado, probablemente por razones comerciales o de validación. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere pesos de modelos de tamaño medio, pero no se proporcionan detalles sobre el número de parámetros, la arquitectura exacta de cada variante ni el proceso de entrenamiento.
+El modelo aborda un problema práctico y relevante: la automatización del reconocimiento de moneda en contextos como cajeros automáticos, aplicaciones de banca móvil, sistemas de conteo de efectivo o herramientas de asistencia para personas con discapacidad visual. Su publicación en Hugging Face con licencia MIT y acceso restringido (gated) indica una intención de uso controlado, probablemente por razones comerciales o de validación. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere pesos de modelos de tamaño medio, pero no se proporcionan detalles sobre el número de parámetros, la arquitectura exacta de cada variante ni el proceso de entrenamiento.
 
-En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es una publicación reciente o poco difundida. No existe documentación técnica pública más allá de la ficha básica de HuggingFace, por lo que la mayor parte de las especificaciones detalladas no están disponibles.
+En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que es una publicación reciente o poco difundida. No existe documentación técnica pública más allá de la ficha básica de Hugging Face, por lo que la mayor parte de las especificaciones detalladas no están disponibles.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ En el momento de la consulta, el modelo registra cero descargas y cero likes, lo
 
 ## Arquitectura y entrenamiento
 
-La informacion publica no detalla la arquitectura interna de cada submodelo. Los tags de HuggingFace mencionan cuatro familias de arquitecturas: YOLO (tipicamente una red convolucional de una sola etapa para deteccion), ConvNeXt (una CNN moderna basada en el diseño de vision transformers), Swin Transformer (un transformer jerarquico con ventanas desplazadas) y RF-DETR (un detector basado en transformer con decodificador de consultas). Es probable que el repositorio contenga varios checkpoints entrenados independientemente para la misma tarea de clasificacion o deteccion de billetes, posiblemente con fines de comparacion o ensamblado.
+La informacion publica no detalla la arquitectura interna de cada submodelo. Los tags de Hugging Face mencionan cuatro familias de arquitecturas: YOLO (tipicamente una red convolucional de una sola etapa para deteccion), ConvNeXt (una CNN moderna basada en el diseño de vision transformers), Swin Transformer (un transformer jerarquico con ventanas desplazadas) y RF-DETR (un detector basado en transformer con decodificador de consultas). Es probable que el repositorio contenga varios checkpoints entrenados independientemente para la misma tarea de clasificacion o deteccion de billetes, posiblemente con fines de comparacion o ensamblado.
 
 No se dispone de informacion sobre el dataset de entrenamiento, el numero de epocas, el tamaño de las imagenes de entrada, las tecnicas de aumentacion de datos, ni si se aplicaron estrategias de ajuste fino o entrenamiento desde cero. Tampoco se mencionan metodos de alineacion como RLHF o DPO, que no son habituales en modelos de vision. La ausencia de una tarjeta de modelo detallada impide conocer cualquier innovacion tecnica especifica.
 
@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables especificos para reconoci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MANTRAIDEAS1/nepali-banknote-models-v1
+- Hugging Face: https://huggingface.co/MANTRAIDEAS1/nepali-banknote-models-v1
 - Perfil de la organizacion: https://huggingface.co/MANTRAIDEAS1/models
 - Proyecto academico relacionado (no oficial): https://www.scribd.com/document/713116028/Nepalese-Currency-Recognition-System
 - Iniciativa de IA abierta en Nepal (no directamente relacionada): https://www.himalayaai.org/

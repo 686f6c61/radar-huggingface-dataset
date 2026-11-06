@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | KV cache | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-MXFP4-CSF | 552B backbone + 196B Engram | 1M tokens | 890 bytes/token (FP4) | LIL 1.0 | Repositorio de 991,3 GB en HuggingFace |
-| DeepSeek-V4.1-Flash (base) | 552B backbone + 196B Engram | 1M tokens | 890 bytes/token (FP4) | MIT (referenciada) | HuggingFace |
-| DeepSeek-V4.1-Flash-lossless-CSF | 552B backbone + 196B Engram | 1M tokens | 890 bytes/token (FP4) | no disponible | HuggingFace (tensores identicos segun la model card) |
+| DeepSeek-V4.1-Flash-MXFP4-CSF | 552B backbone + 196B Engram | 1M tokens | 890 bytes/token (FP4) | LIL 1.0 | Repositorio de 991,3 GB en Hugging Face |
+| DeepSeek-V4.1-Flash (base) | 552B backbone + 196B Engram | 1M tokens | 890 bytes/token (FP4) | MIT (referenciada) | Hugging Face |
+| DeepSeek-V4.1-Flash-lossless-CSF | 552B backbone + 196B Engram | 1M tokens | 890 bytes/token (FP4) | no disponible | Hugging Face (tensores identicos segun la model card) |
 | DeepSeek-V4-Flash | no disponible | no disponible | ~1/4 de la del V4.1-Flash segun el autor | no disponible | no disponible |
 
 No hay datos de rendimiento publicados que permitan comparar estos modelos en tareas concretas. Tampoco se dispone de informacion sobre alternativas de otros fabricantes en la misma categoria.

@@ -70,4 +70,4 @@ No disponible. Este repositorio no es un modelo y no existen alternativas compar
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/25ds1000032/tds-carbon-card)
+- [Repositorio en Hugging Face](https://huggingface.co/25ds1000032/tds-carbon-card)

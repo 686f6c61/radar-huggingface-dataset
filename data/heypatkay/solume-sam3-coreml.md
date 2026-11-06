@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- [HuggingFace: heypatkay/solume-sam3-coreml](https://huggingface.co/heypatkay/solume-sam3-coreml)
+- [Hugging Face: heypatkay/solume-sam3-coreml](https://huggingface.co/heypatkay/solume-sam3-coreml)
 - [Modelo base: facebook/sam3](https://huggingface.co/facebook/sam3)
 - [Licencia SAM (incluida en el repositorio)](https://huggingface.co/heypatkay/solume-sam3-coreml/blob/main/LICENSE)

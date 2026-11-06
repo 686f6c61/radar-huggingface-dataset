@@ -90,5 +90,5 @@ No disponible. Este artefacto no es una release de modelo, sino un checkpoint de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_ctx_pl4_20261022_005431
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_ctx_pl4_20261022_005431
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

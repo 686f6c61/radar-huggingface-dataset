@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `neuronsbyisshu/london-energy-demand-forecast-lgbm` es un sistema de previsión de series temporales publicado en HuggingFace por el usuario neuronsbyisshu. No es un modelo de lenguaje: se trata de un conjunto de modelos LightGBM entrenados para predecir la demanda eléctrica media horaria (en kWh) de hogares de Londres con un horizonte de 24 horas. El entrenamiento se realizó sobre 4.443 hogares londinenses con tarifa estándar, extraídos del conjunto de datos Smart Meters in London.
+El modelo `neuronsbyisshu/london-energy-demand-forecast-lgbm` es un sistema de previsión de series temporales publicado en Hugging Face por el usuario neuronsbyisshu. No es un modelo de lenguaje: se trata de un conjunto de modelos LightGBM entrenados para predecir la demanda eléctrica media horaria (en kWh) de hogares de Londres con un horizonte de 24 horas. El entrenamiento se realizó sobre 4.443 hogares londinenses con tarifa estándar, extraídos del conjunto de datos Smart Meters in London.
 
 El artefacto incluye un modelo de predicción puntual y tres modelos de cuantiles (P10, P50, P90) calibrados mediante conformal prediction de tipo split-conformal, lo que permite ofrecer intervalos de predicción con cobertura empírica controlada. En la evaluación sobre el periodo 2014-01 a 2014-02, el modelo puntual alcanzó un MAE de 0,0111 y un sMAPE del 2,38%, lo que supone una mejora del 54,2% frente a la línea base estacional naive (t-168).
 
-Su relevancia es práctica más que arquitectónica: es un ejemplo reproducible y ligero de previsión energética con incertidumbre calibrada, con licencia CC0-1.0, lo que permite reutilizarlo sin restricciones. El repositorio ocupa menos de 0,1 GB (redondeado a 0.0 GB en HuggingFace) y las descargas y valoraciones registradas son cero, por lo que se trata de una publicación reciente y sin tracción comunitaria.
+Su relevancia es práctica más que arquitectónica: es un ejemplo reproducible y ligero de previsión energética con incertidumbre calibrada, con licencia CC0-1.0, lo que permite reutilizarlo sin restricciones. El repositorio ocupa menos de 0,1 GB (redondeado a 0.0 GB en Hugging Face) y las descargas y valoraciones registradas son cero, por lo que se trata de una publicación reciente y sin tracción comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia es práctica más que arquitectónica: es un ejemplo reproducible 
 | Licencia | cc0-1.0 |
 | Formato de pesos | Ficheros de texto de LightGBM (`lightgbm_point.txt`, `lightgbm_q10.txt`, `lightgbm_q50.txt`, `lightgbm_q90.txt`), acompanados de `config.json` y `replay_test.parquet` |
 | Tamano del repositorio | inferior a 0,1 GB (reportado como 0.0 GB) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-07 |
 | Fecha de actualizacion | 2026-10-07 |
 
@@ -104,11 +104,11 @@ La model card solo aporta comparaciones cuantitativas frente a la linea base nai
 - La calibracion conformal alcanza el 83,1% de cobertura frente al 80% nominal en el conjunto de test; el exceso de cobertura observado sugiere intervalos ligeramente conservadores, aunque puede no mantenerse en datos posteriores a 2014.
 - Licencia CC0-1.0: permite uso comercial, modificacion y redistribucion sin restricciones ni obligacion de atribucion. Es una de las licencias mas permisivas disponibles.
 - El repositorio registra cero descargas y cero valoraciones, y no hay evidencia de validacion independiente por terceros.
-- No se declara pipeline en HuggingFace, por lo que el artefacto no se puede cargar con `transformers` ni con APIs estandar de HuggingFace; requiere descarga manual y uso de la libreria LightGBM.
+- No se declara pipeline en Hugging Face, por lo que el artefacto no se puede cargar con `transformers` ni con APIs estandar de Hugging Face; requiere descarga manual y uso de la libreria LightGBM.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neuronsbyisshu/london-energy-demand-forecast-lgbm
+- Modelo en Hugging Face: https://huggingface.co/neuronsbyisshu/london-energy-demand-forecast-lgbm
 - Conjunto de datos Smart Meters in London: no disponible en la informacion proporcionada (la model card lo menciona por nombre, sin enlace)
 - LightGBM (libreria y documentacion): https://github.com/microsoft/LightGBM
 - Documentacion de LightGBM sobre regresion por cuantiles: https://lightgbm.readthedocs.io/en/latest/Parameters.html

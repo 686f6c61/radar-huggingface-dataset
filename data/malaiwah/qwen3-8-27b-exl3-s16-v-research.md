@@ -91,7 +91,7 @@ También podría compararse con el modelo base sin cuantizar, pero no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-S16-V-research
+- Repositorio Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-S16-V-research
 - Build recomendado (K5K6-hydrated): https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6-hydrated
 - Build para ventanas largas (context edition): https://huggingface.co/malaiwah/Qwen3.8-27B-EXL3-K5K6-context
 - Build K4 (más pequeño publicado): https://huggingface.co/malaiwah/Qwen3.8-27B-K4

@@ -114,8 +114,8 @@ Comparativa con alternativas evaluadas en el mismo zoo UAVDT de DetectionBench (
 
 | Modelo | Parametros | mAP@50 | mAP@50-95 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO11l (este modelo) | 25,4 M | 28,64 | 17,16 | AGPL-3.0 | HuggingFace (dronefreak) |
-| YOLO11m | no disponible | 30,47 | 17,71 | AGPL-3.0 (Ultralytics) | HuggingFace (dronefreak) |
+| YOLO11l (este modelo) | 25,4 M | 28,64 | 17,16 | AGPL-3.0 | Hugging Face (dronefreak) |
+| YOLO11m | no disponible | 30,47 | 17,71 | AGPL-3.0 (Ultralytics) | Hugging Face (dronefreak) |
 | RF-DETR Medium | no disponible | 33,28 | 20,54 | no disponible | en el zoo DetectionBench |
 | YOLO26m | no disponible | 33,43 | 19,56 | no disponible | en el zoo DetectionBench |
 
@@ -135,7 +135,7 @@ Fuera del zoo UAVDT, la referencia natural es el propio YOLO11l preentrenado de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolo11l
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolo11l
 - Conjunto de datos UAVDT: https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo similar (misma familia) en el zoo: https://huggingface.co/dronefreak/visdrone-yolo11l

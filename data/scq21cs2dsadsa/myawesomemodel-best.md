@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un modelo publicado en HuggingFace por el usuario scq21cs2dsadsa bajo licencia MIT y etiquetado con la libreria transformers, framework PyTorch y arquitectura BERT. La model card lo presenta como el mejor checkpoint de un entrenamiento propio (`checkpoints/step_1000`), seleccionado por puntuacion de evaluacion, y adjunta una tabla de 15 tareas con una puntuacion global ponderada de 0,710. El repositorio no incluye informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni el dataset de entrenamiento.
+MyAwesomeModel-best es un modelo publicado en Hugging Face por el usuario scq21cs2dsadsa bajo licencia MIT y etiquetado con la libreria transformers, framework PyTorch y arquitectura BERT. La model card lo presenta como el mejor checkpoint de un entrenamiento propio (`checkpoints/step_1000`), seleccionado por puntuacion de evaluacion, y adjunta una tabla de 15 tareas con una puntuacion global ponderada de 0,710. El repositorio no incluye informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni el dataset de entrenamiento.
 
 El modelo se declara con pipeline de `feature-extraction`, es decir, orientado a producir representaciones vectoriales de texto (embeddings) y no a la generacion autoregresiva. Esta etiqueta entra en contradiccion con la propia tabla de evaluacion del autor, que reporta tareas generativas como generacion de codigo (0,650), escritura creativa (0,610), generacion de dialogo (0,644), resumen (0,767) o traduccion (0,804), capacidades que una arquitectura BERT de solo encoder no puede ejecutar sin una cabeza especifica ni un decodificador.
 
@@ -23,8 +23,8 @@ Su relevancia actual es limitada: acumula 0 descargas y 0 "likes", el repositori
 | Libreria y framework | transformers, PyTorch |
 | Autor | scq21cs2dsadsa |
 | Identificador | scq21cs2dsadsa/MyAwesomeModel-best |
-| Fecha de creacion | 26/09/2026 (segun metadatos de HuggingFace) |
-| Fecha de ultima actualizacion | 26/09/2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 26/09/2026 (segun metadatos de Hugging Face) |
+| Fecha de ultima actualizacion | 26/09/2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Checkpoint de origen | `checkpoints/step_1000` (el de mayor puntuacion de evaluacion, segun el autor) |
 
@@ -93,7 +93,7 @@ No se dispone de datos oficiales de consumo de memoria, latencia o throughput. L
 - VRAM estimada en int8: en torno a 0,1-0,15 GB para pesos.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas (GTX 1650, RTX 3060, RTX 4090) es suficiente para inferencia por lotes; para entrenamiento o ajuste fino conviene una GPU con 16 GB o mas (RTX 4090, A100, H100) si se usa una longitud de contexto cercana a 512 tokens y lotes grandes.
 - Inferencia en CPU: viable para cargas moderadas, dado el tamano reducido del modelo.
-- Opciones de despliegue: `transformers` con PyTorch, exportacion a ONNX Runtime o TorchScript, y servidores de embeddings como HuggingFace Text Embeddings Inference (TEI). Los runners orientados a modelos generativos con formato GGUF, como llama.cpp u Ollama, no son la via natural para un encoder BERT de este tipo, aunque existen conversiones parciales.
+- Opciones de despliegue: `transformers` con PyTorch, exportacion a ONNX Runtime o TorchScript, y servidores de embeddings como Hugging Face Text Embeddings Inference (TEI). Los runners orientados a modelos generativos con formato GGUF, como llama.cpp u Ollama, no son la via natural para un encoder BERT de este tipo, aunque existen conversiones parciales.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 Advertencia: el repositorio declara un tamano de 0,0 GB, por lo que es probable que los pesos no esten publicados y el modelo no sea desplegable en su estado actual.
@@ -105,9 +105,9 @@ No hay datos verificables sobre parametros, contexto o rendimiento de MyAwesomeM
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | scq21cs2dsadsa/MyAwesomeModel-best | BERT (declarado) | no disponible | no disponible | MIT | Repositorio sin pesos visibles (0,0 GB) |
-| bert-base-uncased | Transformer encoder | 110 M | 512 tokens | Apache 2.0 | Pesos y tokenizer publicos en HuggingFace |
-| distilbert-base-uncased | Transformer encoder destilado | 66 M | 512 tokens | Apache 2.0 | Pesos y tokenizer publicos en HuggingFace |
-| roberta-base | Transformer encoder | 125 M | 512 tokens | MIT | Pesos y tokenizer publicos en HuggingFace |
+| bert-base-uncased | Transformer encoder | 110 M | 512 tokens | Apache 2.0 | Pesos y tokenizer publicos en Hugging Face |
+| distilbert-base-uncased | Transformer encoder destilado | 66 M | 512 tokens | Apache 2.0 | Pesos y tokenizer publicos en Hugging Face |
+| roberta-base | Transformer encoder | 125 M | 512 tokens | MIT | Pesos y tokenizer publicos en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -125,7 +125,7 @@ No hay datos verificables sobre parametros, contexto o rendimiento de MyAwesomeM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scq21cs2dsadsa/MyAwesomeModel-best
+- Modelo en Hugging Face: https://huggingface.co/scq21cs2dsadsa/MyAwesomeModel-best
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

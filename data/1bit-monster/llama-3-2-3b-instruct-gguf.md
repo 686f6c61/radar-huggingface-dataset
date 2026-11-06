@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks comparativos publicados en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/Llama-3.2-3B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/Llama-3.2-3B-Instruct-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct/blob/main/LICENSE.txt
 - Repositorio del autor de la cuantización original: https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF

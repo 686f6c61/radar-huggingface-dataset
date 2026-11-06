@@ -116,7 +116,7 @@ NorMistral-11B* se posiciona como la opción más sólida para tareas que requie
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/norallm/normistral-11b-thinking-gguf
+- Repositorio Hugging Face (GGUF): https://huggingface.co/norallm/normistral-11b-thinking-gguf
 - Modelo base (safetensors): https://huggingface.co/norallm/normistral-11b-thinking
 - Modelo base pre-entrenado (NorMistral-11B-long): https://huggingface.co/norallm/normistral-11b-long
 - Dataset de entrenamiento: https://huggingface.co/datasets/norallm/normistral-11b-thinking-training

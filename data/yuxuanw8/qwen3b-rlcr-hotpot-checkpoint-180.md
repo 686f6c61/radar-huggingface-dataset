@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-180` es un checkpoint de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) publicado en HuggingFace por el usuario yuxuanw8. La nomenclatura del identificador sugiere un modelo base de la familia Qwen de 3B sometido a un proceso de aprendizaje por refuerzo (RLCR) sobre HotpotQA, y el sufijo `checkpoint-180` indica que se trata de una instantanea intermedia de un entrenamiento, no de una version final consolidada. Los tags del repositorio confirman el uso de la arquitectura `qwen2`, la libreria `transformers` y pesos en `safetensors`, con pipeline de `text-generation`.
+El modelo `yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-180` es un checkpoint de 3.085.938.688 parametros (aproximadamente 3,09 mil millones) publicado en Hugging Face por el usuario yuxuanw8. La nomenclatura del identificador sugiere un modelo base de la familia Qwen de 3B sometido a un proceso de aprendizaje por refuerzo (RLCR) sobre HotpotQA, y el sufijo `checkpoint-180` indica que se trata de una instantanea intermedia de un entrenamiento, no de una version final consolidada. Los tags del repositorio confirman el uso de la arquitectura `qwen2`, la libreria `transformers` y pesos en `safetensors`, con pipeline de `text-generation`.
 
-Se trata, por tanto, de un artefacto de investigacion orientado a experimentos de razonamiento multi-salto y optimizacion con refuerzo, no de un modelo listo para produccion. La model card es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no declara autor, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. Cualquier dato que no figure en esta ficha debe considerarse no verificado.
+Se trata, por tanto, de un artefacto de investigacion orientado a experimentos de razonamiento multi-salto y optimizacion con refuerzo, no de un modelo listo para produccion. La model card es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no declara autor, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion. Cualquier dato que no figure en esta ficha debe considerarse no verificado.
 
 Su relevancia es acotada y de tipo metodologico: sirve para reproducir o inspeccionar una etapa concreta de un pipeline de RL sobre tareas de question answering multi-hop, y su utilidad practica queda condicionada a la ausencia de documentacion, de licencia explicita y de evaluaciones publicadas.
 
@@ -95,7 +95,7 @@ La diferencia practica mas relevante no es de calidad, sino de trazabilidad: los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-180
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-180
 - Articulo citado en el tag del repositorio (Lacoste et al., calculador de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML referenciado en la plantilla de la model card: https://mlco2.github.io/impact#compute
 - Repositorio, paper, demo y datos de contacto del autor: no disponibles en la informacion proporcionada.

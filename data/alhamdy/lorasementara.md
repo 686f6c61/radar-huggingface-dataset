@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alhamdy/loraSementara` es un adaptador LoRA publicado en HuggingFace por el usuario alhamdy. El nombre sugiere que se trata de un LoRA de ajuste fino para algún modelo base, probablemente de generación de imágenes, dado el tamaño del repositorio (0.2 GB) y la ausencia de pipeline de texto. Sin embargo, la model card no contiene ninguna descripción, arquitectura, ni información sobre el modelo base, los datos de entrenamiento o las capacidades. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero la falta de documentación impide conocer su funcionamiento real.
+El modelo `alhamdy/loraSementara` es un adaptador LoRA publicado en Hugging Face por el usuario alhamdy. El nombre sugiere que se trata de un LoRA de ajuste fino para algún modelo base, probablemente de generación de imágenes, dado el tamaño del repositorio (0.2 GB) y la ausencia de pipeline de texto. Sin embargo, la model card no contiene ninguna descripción, arquitectura, ni información sobre el modelo base, los datos de entrenamiento o las capacidades. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero la falta de documentación impide conocer su funcionamiento real.
 
 Este modelo no ha recibido descargas ni valoraciones, y su fecha de creación (agosto de 2026) es posterior a la fecha actual, lo que sugiere que podría tratarse de un repositorio de prueba o un error en los metadatos. En cualquier caso, la información disponible es insuficiente para evaluar su utilidad técnica o práctica.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [HuggingFace - alhamdy/loraSementara](https://huggingface.co/alhamdy/loraSementara)
+- [Hugging Face - alhamdy/loraSementara](https://huggingface.co/alhamdy/loraSementara)

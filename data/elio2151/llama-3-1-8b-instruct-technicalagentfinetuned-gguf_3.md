@@ -6,7 +6,7 @@
 
 Este modelo es un fine-tuning de Meta-Llama-3.1-8B-Instruct realizado por el usuario Elio2151 mediante la librería Unsloth y posteriormente convertido a formato GGUF para su uso con herramientas de inferencia local como llama.cpp y Ollama. El nombre del modelo sugiere que el ajuste se orientó a tareas de agente técnico, aunque no se incluye documentación sobre el conjunto de datos de entrenamiento ni el proceso de afinado.
 
-El modelo está publicado en HuggingFace en formato GGUF e incluye un único cuantizado Q4_K_M, con un tamaño de repositorio de 4.9 GB. Al tratarse de una arquitectura de 8.030 millones de parámetros, está pensado para un despliegue ligero en GPU de consumo o incluso en CPU, siendo una opción interesante para prototipos y aplicaciones edge que necesiten un modelo de lenguaje con capacidades de agente sin depender de servicios cloud. Su relevancia actual radica en la disponibilidad de un modelo de tamaño medio, fácil de servir localmente y con una base ya probada como Llama 3.1 Instruct.
+El modelo está publicado en Hugging Face en formato GGUF e incluye un único cuantizado Q4_K_M, con un tamaño de repositorio de 4.9 GB. Al tratarse de una arquitectura de 8.030 millones de parámetros, está pensado para un despliegue ligero en GPU de consumo o incluso en CPU, siendo una opción interesante para prototipos y aplicaciones edge que necesiten un modelo de lenguaje con capacidades de agente sin depender de servicios cloud. Su relevancia actual radica en la disponibilidad de un modelo de tamaño medio, fácil de servir localmente y con una base ya probada como Llama 3.1 Instruct.
 
 ## Especificaciones técnicas
 
@@ -47,7 +47,7 @@ No se ha publicado información sobre el número de tokens de entrenamiento, la 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No existe ninguna tabla de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparativa con otros modelos en la model card ni en la ficha de HuggingFace. Cualquier evaluación de calidad deberá realizarse de forma independiente antes de considerar el modelo apto para producción.
+No se han publicado resultados de benchmarks en la información disponible. No existe ninguna tabla de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparativa con otros modelos en la model card ni en la ficha de Hugging Face. Cualquier evaluación de calidad deberá realizarse de forma independiente antes de considerar el modelo apto para producción.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ El modelo base de Llama 3.1 es la referencia natural, con una licencia conocida 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF_3
+- Modelo en Hugging Face: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF_3
 - Versión GGUF anterior: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-GGUF
 - Modelo original (safetensors): https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned
 - Unsloth (herramienta de ajuste): https://github.com/unslothai/unsloth

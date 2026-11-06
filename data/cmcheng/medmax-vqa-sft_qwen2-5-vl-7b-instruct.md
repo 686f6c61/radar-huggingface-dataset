@@ -88,9 +88,9 @@ La comparativa se limita al modelo base y al modelo ajustado, ya que no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmcheng/MedMax-VQA-SFT_Qwen2.5-VL-7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/cmcheng/MedMax-VQA-SFT_Qwen2.5-VL-7B-Instruct
 - Dataset de entrenamiento MedMax: https://huggingface.co/datasets/mint-medmax/medmax_data
 - Dataset de evaluacion MedMax: https://huggingface.co/datasets/mint-medmax/medmax_eval_data
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Paper MedMax (NeurIPS 2025): https://proceedings.neurips.cc/paper_files/paper/2025/file/9a6f7d845cf12385524f0f27ab26f57e-Paper-Datasets_and_Benchmarks_Track.pdf
-- Coleccion Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Coleccion Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25

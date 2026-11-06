@@ -92,7 +92,7 @@ No se dispone de comparativas con modelos de otros desarrolladores (p. ej., BGE,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-babai/giga-embeddings-0826-10b-a1.8b-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/ai-babai/giga-embeddings-0826-10b-a1.8b-mlx-q8
 - Modelo original: https://huggingface.co/ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826
 - Paper original: https://arxiv.org/abs/2608.23806
 - Repositorio GitHub: https://github.com/ai-babai/giga-embeddings-mlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `hcmusa29/s3aVT1iAK6mdjfDP` es un modelo alojado en HuggingFace por el usuario `hcmusa29`, publicado el 9 de septiembre de 2026 y actualizado el 12 de septiembre de 2026. Se trata de una ficha practicamente vacia desde el punto de vista documental: no declara pipeline, licencia, idiomas, arquitectura, numero de parametros ni contexto, y su unico tag es `region:us`. Acumula 0 descargas y 1 like en el momento de la consulta.
+El repositorio `hcmusa29/s3aVT1iAK6mdjfDP` es un modelo alojado en Hugging Face por el usuario `hcmusa29`, publicado el 9 de septiembre de 2026 y actualizado el 12 de septiembre de 2026. Se trata de una ficha practicamente vacia desde el punto de vista documental: no declara pipeline, licencia, idiomas, arquitectura, numero de parametros ni contexto, y su unico tag es `region:us`. Acumula 0 descargas y 1 like en el momento de la consulta.
 
 El dato mas relevante disponible es el tamano del repositorio, 288,8 GB, una cifra compatible con pesos de un modelo de gran escala almacenados en precision alta (por ejemplo, un modelo de decenas de miles de millones de parametros en FP16/BF16, o varios checkpoints y ficheros auxiliares). Sin embargo, el autor no aporta ninguna confirmacion al respecto, por lo que cualquier estimacion de parametros es una inferencia no verificada.
 
@@ -81,7 +81,7 @@ No disponible. La ausencia de datos de arquitectura, parametros, contexto, licen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hcmusa29/s3aVT1iAK6mdjfDP
+- Hugging Face: https://huggingface.co/hcmusa29/s3aVT1iAK6mdjfDP
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

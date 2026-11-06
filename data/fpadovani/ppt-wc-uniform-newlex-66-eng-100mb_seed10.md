@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ppt-wc-uniform-newlex-66-eng-100mb_seed10 | 86,5 M | No disponible | No disponible | HuggingFace (0 descargas) | Ajuste fino SFT de investigacion; sin evaluacion publicada |
-| goldfish-models/eng_latn_100mb (modelo base) | No disponible | No disponible | No disponible | HuggingFace | Monolingue en ingles, entrenado sobre 100 MB de texto |
-| gpt2 | 124 M | 1024 tokens | Modified MIT | HuggingFace | Referencia de la arquitectura; entrenado sobre un corpus mucho mayor (WebText) |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Destilado de gpt2, tamano comparable y ampliamente usado como linea base |
+| ppt-wc-uniform-newlex-66-eng-100mb_seed10 | 86,5 M | No disponible | No disponible | Hugging Face (0 descargas) | Ajuste fino SFT de investigacion; sin evaluacion publicada |
+| goldfish-models/eng_latn_100mb (modelo base) | No disponible | No disponible | No disponible | Hugging Face | Monolingue en ingles, entrenado sobre 100 MB de texto |
+| gpt2 | 124 M | 1024 tokens | Modified MIT | Hugging Face | Referencia de la arquitectura; entrenado sobre un corpus mucho mayor (WebText) |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Destilado de gpt2, tamano comparable y ampliamente usado como linea base |
 
 La comparacion con gpt2 y distilgpt2 es orientativa en cuanto a tamano y arquitectura, no en cuanto a calidad: ambos se preentrenaron sobre volumenes de texto muy superiores a los 100 MB del modelo base de esta ficha, por lo que su conocimiento factual y su fluidez seran previsiblemente mejores. No se dispone de datos de rendimiento del checkpoint analizado para cuantificar esa diferencia.
 
@@ -95,7 +95,7 @@ La comparacion con gpt2 y distilgpt2 es orientativa en cuanto a tamano y arquite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Organizacion Goldfish: https://huggingface.co/goldfish-models
 - Repositorio de TRL: https://github.com/huggingface/trl

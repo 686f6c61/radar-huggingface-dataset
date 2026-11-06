@@ -70,10 +70,10 @@ No se han publicado resultados de HumanEval, GSM8K, MMMU ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 (este repo) | 763,2 B (safetensors) | 1M | Texto, imagen, vídeo | MIT con gate 18+ | HuggingFace, FP8 nativo |
-| DeepSeek-V4.1-Flash-1017 (base) | mismo modelo base; cifra no indicada en la información | 1M | Texto, imagen, vídeo | no disponible en la información | HuggingFace y API oficial de DeepSeek |
-| DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED (mismo autor) | mismo modelo base en 2,9 bpw | 1M | Texto, imagen, vídeo | MIT con gate (según el patrón del autor) | HuggingFace; pensado para menos VRAM |
-| DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8 (mismo autor) | idéntico a este repo | 1M | Texto, imagen, vídeo | MIT con gate | HuggingFace; alias canónico del mismo checkpoint |
+| DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 (este repo) | 763,2 B (safetensors) | 1M | Texto, imagen, vídeo | MIT con gate 18+ | Hugging Face, FP8 nativo |
+| DeepSeek-V4.1-Flash-1017 (base) | mismo modelo base; cifra no indicada en la información | 1M | Texto, imagen, vídeo | no disponible en la información | Hugging Face y API oficial de DeepSeek |
+| DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED (mismo autor) | mismo modelo base en 2,9 bpw | 1M | Texto, imagen, vídeo | MIT con gate (según el patrón del autor) | Hugging Face; pensado para menos VRAM |
+| DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8 (mismo autor) | idéntico a este repo | 1M | Texto, imagen, vídeo | MIT con gate | Hugging Face; alias canónico del mismo checkpoint |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de HumanEval, GSM8K, MMMU ni de otros benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
 - Alias ABLITERATED del mismo checkpoint: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8
 - Variante EXL3 2,9 bpw sin censura: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017

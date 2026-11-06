@@ -89,7 +89,7 @@ Nota: la comparativa se limita a alternativas de tamano similar; no hay datos de
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Centerjon/LFM3-1.7B-Uncensored-GGUF
+- Ficha en Hugging Face: https://huggingface.co/Centerjon/LFM3-1.7B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - PR de soporte LFM3 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31252

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2-2.6B-Exp (este) | 2.6B | 125K | lfm1.0 | HuggingFace |
-| Llama 3.2 3B | 3.2B | 128K | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5 3B | 3.1B | 128K | Apache 2.0 | HuggingFace |
-| Phi-3.5-mini | 3.8B | 128K | MIT | HuggingFace |
+| LFM2-2.6B-Exp (este) | 2.6B | 125K | lfm1.0 | Hugging Face |
+| Llama 3.2 3B | 3.2B | 128K | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5 3B | 3.1B | 128K | Apache 2.0 | Hugging Face |
+| Phi-3.5-mini | 3.8B | 128K | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La principal diferencia de LFM2-2.6B radica en su optimización para despliegue en edge y su licencia restrictiva (lfm1.0) en comparación con las licencias más permisivas de Qwen2.5 (Apache 2.0) o Phi-3.5 (MIT).
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace (Oscilla/LFM2-2.6B-Exp-mlx-8Bit)](https://huggingface.co/Oscilla/LFM2-2.6B-Exp-mlx-8Bit)
-- [Modelo base en HuggingFace (LiquidAI/LFM2-2.6B)](https://huggingface.co/LiquidAI/LFM2-2.6B)
+- [Modelo en Hugging Face (Oscilla/LFM2-2.6B-Exp-mlx-8Bit)](https://huggingface.co/Oscilla/LFM2-2.6B-Exp-mlx-8Bit)
+- [Modelo base en Hugging Face (LiquidAI/LFM2-2.6B)](https://huggingface.co/LiquidAI/LFM2-2.6B)
 - [Blog de Liquid AI: Introducing LFM2-2.6B](https://www.liquid.ai/blog/introducing-lfm2-2-6b-redefining-efficiency-in-language-models)
 - [Blog de Liquid AI: LFM2.5-2.6B](https://www.liquid.ai/blog/lfm2-5-2-6b)
 - [Página de FitMyLLM para LFM2-2.6B](https://www.fitmyllm.com/model/lfm2-2.6b)

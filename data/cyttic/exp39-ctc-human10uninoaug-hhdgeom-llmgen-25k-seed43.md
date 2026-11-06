@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k-seed43` es un checkpoint publicado en HuggingFace por el usuario `cyttic` bajo licencia MIT. Por su identificador y su tamaño (87.279.756 parámetros, unos 87 millones), se trata de un modelo pequeno, presumiblemente un sistema de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), a juzgar por el prefijo `ctc` del nombre y por el contexto de experimentacion que sugiere el resto del identificador (`human10uninoaug`, `hhdgeom`, `llmgen-25k`, `seed43`).
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k-seed43` es un checkpoint publicado en Hugging Face por el usuario `cyttic` bajo licencia MIT. Por su identificador y su tamaño (87.279.756 parámetros, unos 87 millones), se trata de un modelo pequeno, presumiblemente un sistema de reconocimiento de voz basado en CTC (Connectionist Temporal Classification), a juzgar por el prefijo `ctc` del nombre y por el contexto de experimentacion que sugiere el resto del identificador (`human10uninoaug`, `hhdgeom`, `llmgen-25k`, `seed43`).
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no documenta autoría efectiva, tipo de modelo, idiomas, datos de entrenamiento ni resultados de evaluacion. Toda la informacion tecnica disponible procede de los metadatos del repositorio (tamano de parametros en safetensors, tamano del repo de 0,3 GB, licencia MIT y fecha de creacion en octubre de 2026).
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no documenta autoría efectiva, tipo de modelo, idiomas, datos de entrenamiento ni resultados de evaluacion. Toda la informacion tecnica disponible procede de los metadatos del repositorio (tamano de parametros en safetensors, tamano del repo de 0,3 GB, licencia MIT y fecha de creacion en octubre de 2026).
 
 Por tanto, esta ficha describe lo que se puede verificar objetivamente y marca de forma explicita como "no disponible" todo aquello que el autor no ha publicado. Es relevante ahora unicamente como artefacto de investigacion reproducible (semilla fija, experimento numerado), no como modelo listo para produccion.
 
@@ -72,6 +72,6 @@ No disponible. No se ha identificado en la informacion proporcionada un conjunto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-25k-seed43
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact

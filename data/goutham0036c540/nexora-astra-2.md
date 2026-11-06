@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nexora Astra 2 es un modelo publicado en HuggingFace por el usuario Goutham0036C540 (Nizamabad) bajo licencia MIT. Segun la model card, se trata de una combinacion de dos componentes: Qwen2.5-3B-Instruct como base conversacional y Stable Diffusion 1.5 para generacion de imagenes. El autor lo presenta como un modelo de chat con generacion de imagenes integrada, con un parametro denominado "Token Slider 400" del que no se ofrece ninguna explicacion tecnica en la informacion disponible.
+Nexora Astra 2 es un modelo publicado en Hugging Face por el usuario Goutham0036C540 (Nizamabad) bajo licencia MIT. Segun la model card, se trata de una combinacion de dos componentes: Qwen2.5-3B-Instruct como base conversacional y Stable Diffusion 1.5 para generacion de imagenes. El autor lo presenta como un modelo de chat con generacion de imagenes integrada, con un parametro denominado "Token Slider 400" del que no se ofrece ninguna explicacion tecnica en la informacion disponible.
 
 La relevancia de este modelo es muy limitada en el momento de redactar esta ficha: cuenta con 0 descargas y 0 likes, la model card es extremadamente escueta (menos de 20 lineas utiles), no se publican benchmarks, no se detalla la composicion del dataset de entrenamiento ni el proceso de alineacion, y los enlaces a demo (Colab, Lightning AI) aparecen como "se anadiran mas adelante". La etiqueta de libreria es `qwen`, lo que sugiere que los pesos del componente de lenguaje siguen el formato y la arquitectura de la familia Qwen2.5.
 
@@ -45,7 +45,7 @@ No se especifica como se han integrado ambos componentes: no hay informacion sob
 - Chatbot de bajo coste en hardware consumer: al partir de un LLM de 3B, es viable ejecutar el componente de texto en GPUs de gama media si se publican pesos cuantizados, algo que no esta confirmado.
 - Generacion de prompts para difusion: el componente Qwen2.5-3B-Instruct puede reescribir o enriquecer prompts de usuario antes de pasarlos a SD 1.5, una tecnica habitual en pipelines texto-a-imagen.
 - Base para fine-tuning experimental: al ser MIT y de tamano reducido, puede servir como punto de partida para ajustes especificos en dominios creativos, siempre que el autor publique los artefactos de entrenamiento.
-- Evaluacion comparativa de empaquetados: util para investigadores que estudien como se documentan (o no) los pipelines multimodales en HuggingFace y que midan la reproducibilidad de modelos con model cards escuetas.
+- Evaluacion comparativa de empaquetados: util para investigadores que estudien como se documentan (o no) los pipelines multimodales en Hugging Face y que midan la reproducibilidad de modelos con model cards escuetas.
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nexora Astra 2 | Qwen2.5-3B + SD 1.5 (combinado) | no disponible | MIT | HuggingFace, 0 descargas | Model card minima, sin benchmarks |
-| Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 (según publicacion original de Alibaba) | HuggingFace, ampliamente usado | Base del componente de texto; documentacion completa |
-| Stable Diffusion 1.5 | ~0,86B (UNet) + VAE + CLIP | no aplica (prompts de 77 tokens) | CreativeML OpenRAIL-M | HuggingFace, muy usado | Base del componente de imagen; licencia con restricciones de uso |
-| Llama 3.2 3B Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado | Alternativa de texto sin componente de imagen |
+| Nexora Astra 2 | Qwen2.5-3B + SD 1.5 (combinado) | no disponible | MIT | Hugging Face, 0 descargas | Model card minima, sin benchmarks |
+| Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 (según publicacion original de Alibaba) | Hugging Face, ampliamente usado | Base del componente de texto; documentacion completa |
+| Stable Diffusion 1.5 | ~0,86B (UNet) + VAE + CLIP | no aplica (prompts de 77 tokens) | CreativeML OpenRAIL-M | Hugging Face, muy usado | Base del componente de imagen; licencia con restricciones de uso |
+| Llama 3.2 3B Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | Alternativa de texto sin componente de imagen |
 
 La comparativa es estructural: Nexora Astra 2 no publica metricas que permitan una comparacion de rendimiento con estas alternativas.
 
@@ -86,7 +86,7 @@ La comparativa es estructural: Nexora Astra 2 no publica metricas que permitan u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Goutham0036C540/nexora-astra-2
+- Hugging Face: https://huggingface.co/Goutham0036C540/nexora-astra-2
 - Qwen2.5-3B-Instruct (base del componente de texto): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Stable Diffusion 1.5 (base del componente de imagen): https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Repositorio de Qwen2.5: https://github.com/QwenLM/Qwen2.5

@@ -97,7 +97,7 @@ Comparativa con modelos alternativos de terceros: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantización): https://huggingface.co/mradermacher/Qwopus3.8-27B-Flash-V2-i1-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/mradermacher/Qwopus3.8-27B-Flash-V2-i1-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Cuantizaciones estáticas del mismo autor (incluye mmproj): https://huggingface.co/mradermacher/Qwopus3.8-27B-Flash-V2-GGUF
 - Listado de cuantizaciones por modelo del autor: https://hf.tst.eu/model#Qwopus3.8-27B-Flash-V2-i1-GGUF

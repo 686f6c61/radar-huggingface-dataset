@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ohnah/spongebob-s1-lora-krea2` es un adaptador LoRA de bajo rango (Low-Rank Adaptation) orientado a la generacion de imagenes con estilo de la primera temporada de Bob Esponja, presumiblemente para un modelo base de la familia Krea 2. El repositorio de HuggingFace lo publica el usuario `ohnah`, pero la model card indica explicitamente que el adaptador no es de su autoria: fue creado por `RH16419` en Civitai y se republica aqui con permiso del autor original, enlazando a la descarga original en Civitai.
+`ohnah/spongebob-s1-lora-krea2` es un adaptador LoRA de bajo rango (Low-Rank Adaptation) orientado a la generacion de imagenes con estilo de la primera temporada de Bob Esponja, presumiblemente para un modelo base de la familia Krea 2. El repositorio de Hugging Face lo publica el usuario `ohnah`, pero la model card indica explicitamente que el adaptador no es de su autoria: fue creado por `RH16419` en Civitai y se republica aqui con permiso del autor original, enlazando a la descarga original en Civitai.
 
 Se trata, por tanto, de un artefacto de personalizacion estetica y no de un modelo fundacional: no hay arquitectura propia, ni pesos completos, ni tokenizador. El repositorio ocupa 0,1 GB, un tamano coherente con un unico fichero de pesos LoRA en precision de entrenamiento habitual (fp16/bf16), lo que sugiere un rango moderado y una cantidad limitada de modulos adaptados.
 
@@ -68,7 +68,7 @@ No se han identificado en la informacion disponible adaptadores comparables con 
 
 | Modelo | Tipo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ohnah/spongebob-s1-lora-krea2` | LoRA de estilo para difusion | 0,1 GB (adaptador) | no aplica | no disponible | HuggingFace y Civitai |
+| `ohnah/spongebob-s1-lora-krea2` | LoRA de estilo para difusion | 0,1 GB (adaptador) | no aplica | no disponible | Hugging Face y Civitai |
 | Modelo base Krea 2 (referenciado en el nombre) | Modelo de difusion | no disponible | no aplica | no disponible en esta ficha | no verificado |
 | Otros LoRAs de estilo de la misma serie | LoRA de estilo | no disponible | no aplica | no disponible | existen en Civitai, sin datos comparables |
 
@@ -88,7 +88,7 @@ No se han identificado en la informacion disponible adaptadores comparables con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ohnah/spongebob-s1-lora-krea2
+- Hugging Face: https://huggingface.co/ohnah/spongebob-s1-lora-krea2
 - Descarga original en Civitai (autor RH16419): https://civitai.com/models/2776816/spongebob-season-1-krea-2
 - Perfil del autor original en Civitai: no disponible como enlace directo en la informacion proporcionada
 - Paper, blog tecnico o repositorio de codigo asociado: no disponible

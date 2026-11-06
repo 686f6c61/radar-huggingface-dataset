@@ -97,7 +97,7 @@ La diferencia practica frente a los originales de OpenAI no esta en calidad ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bjnortier/coreai-ht5-whisper-large-v3-turbo-kv-float16
+- Repositorio Hugging Face: https://huggingface.co/bjnortier/coreai-ht5-whisper-large-v3-turbo-kv-float16
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Export hermano (whisper-large-v3): https://huggingface.co/bjnortier/coreai-whisper-large-v3-kv-float16
 - Runtime Core AI de Apple: https://github.com/apple/coreai-models

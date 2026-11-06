@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Affine checkpoint) | 35.1B totales (MoE) | Qwen 3.5 MoE multimodal | no disponible | no disponible | Mirror publico en HuggingFace |
+| Este modelo (Affine checkpoint) | 35.1B totales (MoE) | Qwen 3.5 MoE multimodal | no disponible | no disponible | Mirror publico en Hugging Face |
 | Qwen2-VL-7B | 7B | Vision-Language transformer | 32k | Apache 2.0 | Publico |
 | Qwen2-VL-72B | 72B | Vision-Language transformer | 32k | Apache 2.0 | Publico |
 | Mixtral 8x7B | 46.7B totales (MoE) | MoE transformer | 32k | Apache 2.0 | Publico |

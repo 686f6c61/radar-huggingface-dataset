@@ -79,6 +79,6 @@ En cuanto a la familia Qwen3 Core AI, el autor menciona que ya existen conversio
 - Restricciones de producción: aunque la licencia Apache-2.0 permite uso comercial, la dependencia de un hardware concreto (iPhone 17 Pro / iOS 27) y el formato propietario `.aimodelc` limitan la portabilidad a otros entornos de despliegue.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/qwen3-1.7b-CoreAI-official
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/qwen3-1.7b-CoreAI-official
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Recipe de exportación `coreai-models`: referenciado en el README como `https://github.com/` (URL completa no proporcionada en la información disponible).

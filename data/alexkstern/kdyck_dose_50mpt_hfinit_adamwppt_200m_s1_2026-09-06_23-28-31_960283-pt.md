@@ -80,7 +80,7 @@ No se han encontrado modelos comparables de la misma categoria (transformers peq
 
 ## Enlaces
 
-- Modelo en HuggingFace: [alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_23-28-31_960283-pt](https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_23-28-31_960283-pt)
+- Modelo en Hugging Face: [alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_23-28-31_960283-pt](https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_adamwppt_200M_s1_2026-09-06_23-28-31_960283-pt)
 - Repositorio nanochat: [https://github.com/karpathy/nanochat](https://github.com/karpathy/nanochat)
 - Registro de entrenamiento en W&B: [https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/n0j8z7tb](https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/n0j8z7tb)
 - Checkpoint relacionado (anterior): [alexkstern/kdyck_dose_50Mpt_hfinit_200M_s1_2026-08-14_15-51-45_952939-pt](https://huggingface.co/alexkstern/kdyck_dose_50Mpt_hfinit_200M_s1_2026-08-14_15-51-45_952939-pt)

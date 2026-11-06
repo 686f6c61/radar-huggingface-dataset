@@ -82,7 +82,7 @@ No se dispone de información sobre modelos comparables en la documentación fac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Linum-AI/pjit-21k
+- Hugging Face: https://huggingface.co/Linum-AI/pjit-21k
 - Blog post: https://www.linum.ai/field-notes/pjit-21k
 - Blog de arquitectura P-JiT: https://www.linum.ai/field-notes/pyramid-jit
 - Repositorio de código: https://github.com/Linum-AI/pjit-21k

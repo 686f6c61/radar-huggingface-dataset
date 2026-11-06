@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye comparaciones cuantitativ
 - El tamanio del repo es de 0,1 GB, consistente con un adaptador LoRA; no contiene los pesos base, imprescindibles para la inferencia.
 
 ## Enlaces
-- HuggingFace del adaptador: https://huggingface.co/csminion/apex-qwen36-asi
+- Hugging Face del adaptador: https://huggingface.co/csminion/apex-qwen36-asi
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Revision congelada del base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/tree/995ad96eacd98c81ed38be0c5b274b04031597b0
 - Dataset ScienceAgentBench verified: https://huggingface.co/datasets/osunlp/ScienceAgentBench/tree/9c6e96c9e74572e979b0930ee735041cef528cb7

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ternary-Bonsai-2-27B es un modelo de lenguaje de 27B derivado de Qwen3.8-27B y redistribuido en pesos ternarios para llama.cpp. Lo desarrolla Prism ML (los recursos de la model card apuntan a prismml.com y a los repositorios de la organizacion PrismML-Eng), y esta publicacion concreta en HuggingFace corre a cargo del usuario taurusduan, que redistribuye los GGUF. El objetivo del modelo es claro: mantener el razonamiento de un transformer de 27B en un fichero de entre 5,95 GB y 7,21 GB, apto para un portatil o una sola GPU, aplicando cuantizacion ternaria a todas las matrices de lenguaje, incluidas embeddings, proyecciones de atencion, proyecciones MLP y la cabeza LM, sin capas de escape en alta precision.
+Ternary-Bonsai-2-27B es un modelo de lenguaje de 27B derivado de Qwen3.8-27B y redistribuido en pesos ternarios para llama.cpp. Lo desarrolla Prism ML (los recursos de la model card apuntan a prismml.com y a los repositorios de la organizacion PrismML-Eng), y esta publicacion concreta en Hugging Face corre a cargo del usuario taurusduan, que redistribuye los GGUF. El objetivo del modelo es claro: mantener el razonamiento de un transformer de 27B en un fichero de entre 5,95 GB y 7,21 GB, apto para un portatil o una sola GPU, aplicando cuantizacion ternaria a todas las matrices de lenguaje, incluidas embeddings, proyecciones de atencion, proyecciones MLP y la cabeza LM, sin capas de escape en alta precision.
 
 La relevancia tecnica esta en el regimen de bits: segun el autor, el modelo conserva el 98,2% de la inteligencia del modelo en FP16 (media de 84,78 en 14 benchmarks en modo thinking) con 1,72 bits por peso efectivos, frente a los 72,59 de una build IQ2_XXS convencional. Ademas conserva comportamiento agentico y de razonamiento (tool calling agentico en 74,92) en una franja sub-4-bit donde las representaciones de bajo bit convencionales suelen degradarse. El backbone es de atencion hibrida, con aproximadamente un 75% de atencion lineal y un 25% de atencion completa, lo que permite declarar 262.000 tokens de contexto en dispositivo.
 
@@ -22,7 +22,7 @@ El modelo se distribuye exclusivamente en GGUF y requiere kernels ternarios prop
 | Formato de pesos | GGUF (llama.cpp), con kernels ternarios personalizados para CUDA y Metal |
 | Base del modelo | Qwen/Qwen3.8-27B (arquitectura sin cambios) |
 | Backends declarados | llama.cpp (CUDA, Metal, CPU) |
-| Tamano del repositorio | 68,5 GB en HuggingFace (incluye los empaquetados PTQ1_0 y PQ2_0) |
+| Tamano del repositorio | 68,5 GB en Hugging Face (incluye los empaquetados PTQ1_0 y PQ2_0) |
 | Descargas / likes | 72 descargas, 0 likes |
 | Fecha de publicacion | 19 de septiembre de 2026 (fecha declarada en el repositorio) |
 
@@ -83,8 +83,8 @@ Rendimiento de inferencia declarado: aproximadamente 47 tokens por segundo en un
 
 | Modelo | Parametros | Contexto | Media en 14 benchmarks (thinking) | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B PTQ1_0 | 27,36 B | 262K | 84,78 | 5,95 GB | Apache 2.0 | GGUF en HuggingFace, requiere fork de llama.cpp |
-| Ternary-Bonsai-2-27B PQ2_0 | 27,36 B | 262K | no disponible (mismo modelo, empaquetado de 2 bits por trit) | 7,21 GB | Apache 2.0 | GGUF en HuggingFace, requiere fork de llama.cpp |
+| Ternary-Bonsai-2-27B PTQ1_0 | 27,36 B | 262K | 84,78 | 5,95 GB | Apache 2.0 | GGUF en Hugging Face, requiere fork de llama.cpp |
+| Ternary-Bonsai-2-27B PQ2_0 | 27,36 B | 262K | no disponible (mismo modelo, empaquetado de 2 bits por trit) | 7,21 GB | Apache 2.0 | GGUF en Hugging Face, requiere fork de llama.cpp |
 | Ternary-Bonsai-2-27B-mlx-2bit | 27,36 B | 262K | no disponible | no disponible | no disponible | MLX, repositorio prism-ml |
 | Build IQ2_XXS del mismo base | 27,36 B | 262K | 72,59 | superior a ~8,9 GB (derivado) | Apache 2.0 (base) | llama.cpp estandar |
 | Build UD-Q4_K_XL del mismo base | 27,36 B | 262K | 84,78-85,18 (derivado) | ~17,9 GB (derivado) | Apache 2.0 (base) | llama.cpp estandar |
@@ -108,7 +108,7 @@ No se dispone de datos en la informacion proporcionada para comparar con modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/Ternary-Bonsai-2-27B-gguf
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Ternary-Bonsai-2-27B-gguf
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version MLX para Apple Silicon: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Web de Prism ML: https://prismml.com
@@ -119,4 +119,4 @@ No se dispone de datos en la informacion proporcionada para comparar con modelos
 - Fork de mlx-swift (iOS y macOS): https://github.com/PrismML-Eng/mlx-swift
 - Discord de la comunidad: https://discord.gg/prismml
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces validos son los procedentes del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces validos son los procedentes del repositorio de Hugging Face.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`masterofnone00/qwen3-4b-bakunin-persona-merged` es un ajuste fino (fine-tune) derivado de la familia Qwen3, publicado por el usuario masterofnone00 en HuggingFace. El modelo parte del checkpoint cuantizado a 4 bits `unsloth/qwen3-4b-unsloth-bnb-4bit` y se distribuye en formato safetensors con 4.022.468.096 parametros totales (aproximadamente 4,02 mil millones), lo que lo situa en la gama de modelos densos pequenos aptos para inferencia en GPU de consumo. La licencia declarada es Apache 2.0 y el unico idioma declarado en la model card es el ingles.
+`masterofnone00/qwen3-4b-bakunin-persona-merged` es un ajuste fino (fine-tune) derivado de la familia Qwen3, publicado por el usuario masterofnone00 en Hugging Face. El modelo parte del checkpoint cuantizado a 4 bits `unsloth/qwen3-4b-unsloth-bnb-4bit` y se distribuye en formato safetensors con 4.022.468.096 parametros totales (aproximadamente 4,02 mil millones), lo que lo situa en la gama de modelos densos pequenos aptos para inferencia en GPU de consumo. La licencia declarada es Apache 2.0 y el unico idioma declarado en la model card es el ingles.
 
 El modelo se enmarca en la practica habitual de la comunidad: tomar un modelo base abierto, aplicar un ajuste fino con LoRA o QLoRA mediante la libreria Unsloth y TRL, y fusionar (merge) los adaptadores en un checkpoint completo. El nombre del repositorio sugiere una adaptacion de "persona" o rol conversacional, aunque la model card no documenta ni el dataset de entrenamiento, ni el objetivo, ni los hiperparametros utilizados. Su relevancia practica es limitada: se trata de un experimento personal con cero descargas y cero "likes" en el momento de la consulta, sin resultados de evaluacion publicados.
 
@@ -25,7 +25,7 @@ No debe confundirse con un modelo oficial de Qwen. Es un derivado no verificado,
 
 La arquitectura subyacente corresponde a Qwen3-4B, un transformer denso de tipo decoder-only con normalizacion RMSNorm, embeddings de tokens y atencion con consultas agrupadas (GQA). Segun la configuracion publica de esa familia, el modelo cuenta con 36 capas, un tamano oculto de 2560, 32 cabezas de atencion y 8 cabezas KV. Estas cifras no aparecen en la model card del derivado y deben considerarse heredadas del modelo base, no confirmadas por el autor.
 
-En cuanto al entrenamiento, la unica informacion aportada es que se utilizo Unsloth junto con la libreria TRL de HuggingFace, con una mejora declarada de velocidad de entrenamiento "2x mas rapida". Se desconoce por completo el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, la tasa de aprendizaje, el rango de LoRA o el numero de pasos. El modelo se deriva de un checkpoint base ya cuantizado a 4 bits (`unsloth-bnb-4bit`) y se distribuye como merge en precision completa, un flujo tipico de QLoRA en el que el adaptador se fusiona sobre el modelo y despues se guarda en bf16. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modo thinking explicito, etc.).
+En cuanto al entrenamiento, la unica informacion aportada es que se utilizo Unsloth junto con la libreria TRL de Hugging Face, con una mejora declarada de velocidad de entrenamiento "2x mas rapida". Se desconoce por completo el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, la tasa de aprendizaje, el rango de LoRA o el numero de pasos. El modelo se deriva de un checkpoint base ya cuantizado a 4 bits (`unsloth-bnb-4bit`) y se distribuye como merge en precision completa, un flujo tipico de QLoRA en el que el adaptador se fusiona sobre el modelo y despues se guarda en bf16. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, modo thinking explicito, etc.).
 
 ## Capacidades
 
@@ -87,9 +87,9 @@ La comparacion se basa en las especificaciones publicas de esos modelos, no en d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masterofnone00/qwen3-4b-bakunin-persona-merged
+- Modelo en Hugging Face: https://huggingface.co/masterofnone00/qwen3-4b-bakunin-persona-merged
 - Modelo base declarado: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Documentacion de TRL (HuggingFace): https://huggingface.co/docs/trl
+- Documentacion de TRL (Hugging Face): https://huggingface.co/docs/trl
 - Familia Qwen3 (modelo original): https://huggingface.co/Qwen/Qwen3-4B
 - Paper tecnico de Qwen3: https://arxiv.org/abs/2505.09388

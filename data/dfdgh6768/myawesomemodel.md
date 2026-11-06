@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario dfdgh6768, con licencia MIT y orientado a tareas de extracción de características (feature-extraction). Según su model card, ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en benchmarks de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario dfdgh6768, con licencia MIT y orientado a tareas de extracción de características (feature-extraction). Según su model card, ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia, gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en benchmarks de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
 
 La versión actual presenta una mejora notable en tareas de razonamiento complejo: por ejemplo, en el test AIME 2025 la precisión pasó del 70 % al 87,5 %, y el número medio de tokens de pensamiento por pregunta aumentó de 12 000 a 23 000. Además, se reporta una reducción de la tasa de alucinación y un mejor soporte para function calling. No se proporcionan detalles sobre arquitectura, número de parámetros ni longitud de contexto en la información disponible.
 
@@ -74,7 +74,7 @@ No se proporcionan resultados de benchmarks estándar como MMLU, HumanEval o GSM
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware en la model card ni en los metadatos de HuggingFace. No se indica VRAM, GPUs recomendadas, ni opciones de despliegue. El tamaño del repositorio es 0.0 GB, lo que sugiere que los pesos podrían no estar alojados directamente, sino que se accede mediante una API o un servicio externo.
+No se dispone de información sobre requisitos de hardware en la model card ni en los metadatos de Hugging Face. No se indica VRAM, GPUs recomendadas, ni opciones de despliegue. El tamaño del repositorio es 0.0 GB, lo que sugiere que los pesos podrían no estar alojados directamente, sino que se accede mediante una API o un servicio externo.
 
 ## Comparativa con modelos similares
 
@@ -91,4 +91,4 @@ La tabla de benchmarks de la model card compara MyAwesomeModel con tres modelos 
 
 ## Enlaces
 
-- [HuggingFace: dfdgh6768/MyAwesomeModel](https://huggingface.co/dfdgh6768/MyAwesomeModel)
+- [Hugging Face: dfdgh6768/MyAwesomeModel](https://huggingface.co/dfdgh6768/MyAwesomeModel)

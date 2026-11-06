@@ -97,7 +97,7 @@ El KL indicado es una cota inferior (top-64) de la divergencia respecto al rung 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sekkit/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
+- Modelo en Hugging Face: https://huggingface.co/sekkit/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
 - Modelo base cuantizado (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Modelo original (DeepSeek): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Variante uncensored de AtomicChat: https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF

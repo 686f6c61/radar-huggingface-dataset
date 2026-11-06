@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de una política robótica (policy) para el brazo SO-101, publicada en HuggingFace bajo el identificador `sreetz-nv/so101_contact_perception_dr500_h32_b32_25k_20261009`. No es un modelo de lenguaje al uso, sino un modelo de control orientado a manipulación con contacto y percepción, construido mediante fine-tuning sobre el modelo base `nvidia/GR00T-N1.7-3B` y entrenado con la librería LeRobot. El autor lo describe como "SO-101 contact and perception randomized policy", lo que apunta a una política entrenada con aleatorización de dominio (el sufijo `dr500`) para tareas que implican contacto físico y percepción visual.
+Se trata de una política robótica (policy) para el brazo SO-101, publicada en Hugging Face bajo el identificador `sreetz-nv/so101_contact_perception_dr500_h32_b32_25k_20261009`. No es un modelo de lenguaje al uso, sino un modelo de control orientado a manipulación con contacto y percepción, construido mediante fine-tuning sobre el modelo base `nvidia/GR00T-N1.7-3B` y entrenado con la librería LeRobot. El autor lo describe como "SO-101 contact and perception randomized policy", lo que apunta a una política entrenada con aleatorización de dominio (el sufijo `dr500`) para tareas que implican contacto físico y percepción visual.
 
 El repositorio se encuentra en estado de entrenamiento en curso: la model card indica explícitamente que está reservado para el checkpoint de 25k pasos y que los pesos no están disponibles todavía. Por tanto, a fecha de publicación no existe un artefacto descargable y las descargas y "likes" registrados son cero. La información técnica disponible se limita a la configuración de entrenamiento declarada (H32, batch 32, LR 1e-4, visión entrenable y lenguaje congelado) y al dataset asociado, por lo que buena parte de las especificaciones habituales quedan como no disponibles.
 
@@ -85,7 +85,7 @@ No se dispone de datos de especificaciones de los modelos comparables en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sreetz-nv/so101_contact_perception_dr500_h32_b32_25k_20261009
+- Hugging Face: https://huggingface.co/sreetz-nv/so101_contact_perception_dr500_h32_b32_25k_20261009
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset asociado: https://huggingface.co/datasets/sreetz-nv/so101_contact_perception_dr500_20261009
 - Libreria LeRobot: no disponible en la informacion aportada como enlace directo

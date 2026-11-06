@@ -80,10 +80,10 @@ No hay modelos comparables directos publicados en la informacion disponible. La 
 
 | Modelo | Parametros | Contexto | MAP@3 fold-0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (solo cabeza) | 9B + LoRA | no disponible | 0.597 | apache-2.0 | HuggingFace |
+| Este adaptador (solo cabeza) | 9B + LoRA | no disponible | 0.597 | apache-2.0 | Hugging Face |
 | Blend v1/v3/v5 (con pila CPU y 8B) | varios | no disponible | 0.6989 | no disponible | no distribuido |
 | Blend v4 (solo Qwen3.5-9B + gate) | 9B | no disponible | 0.6783 | no disponible | no distribuido |
-| Qwen/Qwen3.5-9B (base, sin adaptador) | 9B | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3.5-9B (base, sin adaptador) | 9B | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No hay modelos comparables directos publicados en la informacion disponible. La 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/koushikz1/k12-misconception-qwen3.5-9b-diagnoser
+- Hugging Face: https://huggingface.co/koushikz1/k12-misconception-qwen3.5-9b-diagnoser
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset de Kaggle (referenciado, no redistribuido): "Misconception Detection in K-12 Student Math Workings" (no se proporciona URL directa en la informacion disponible)
 - Codigo de entrenamiento e inferencia: referenciado en el repositorio del autor (`code/dgx/train_vlm.py`, `code/dgx/merge_lora.py`, `code/dgx/gen_vllm.py`, `code/dgx/infer_vlm.py`, `code/src/make_subs.py`); no se proporciona URL externa en la informacion disponible.

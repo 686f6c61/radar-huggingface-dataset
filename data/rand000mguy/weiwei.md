@@ -2,7 +2,7 @@
 
 ## Resumen
 
-weiwei (también referido como moodywei en la model card) es un adaptador LoRA de generación de imagen a partir de texto (text-to-image) publicado en HuggingFace por el usuario Rand000mGuy. Se distribuye como un adaptador sobre el modelo base krea/Krea-2-Turbo y está pensado para inyectar un estilo o concepto concreto en ese modelo base sin necesidad de reentrenarlo por completo. El repositorio es muy ligero (0,3 GB) y se publica bajo la librería diffusers, con la plantilla oficial de LoRA de difusión (template:diffusion-lora).
+weiwei (también referido como moodywei en la model card) es un adaptador LoRA de generación de imagen a partir de texto (text-to-image) publicado en Hugging Face por el usuario Rand000mGuy. Se distribuye como un adaptador sobre el modelo base krea/Krea-2-Turbo y está pensado para inyectar un estilo o concepto concreto en ese modelo base sin necesidad de reentrenarlo por completo. El repositorio es muy ligero (0,3 GB) y se publica bajo la librería diffusers, con la plantilla oficial de LoRA de difusión (template:diffusion-lora).
 
 La información publicada por el autor es mínima: la model card se limita al título, un widget de ejemplo y el enlace de descarga, con el campo instance_prompt vacío. No se documentan el conjunto de datos de entrenamiento, el rango o alpha del LoRA, el número de pasos, la licencia ni los idiomas soportados, por lo que la mayoría de especificaciones técnicas quedan como no disponibles.
 
@@ -53,7 +53,7 @@ No hay informacion publicada sobre el entrenamiento: se desconoce el numero de i
 - Exploracion de direcciones de arte para equipos de diseno: producir lotes de imagenes candidatas y filtrarlas manualmente, aprovechando que el LoRA es ligero y se puede intercambiar con otros adaptadores en la misma sesion.
 - Generacion de ilustraciones para contenido editorial o blogs: integrado en un script que llame a diffusers y aplique el adaptador sobre el modelo base para ilustrar articulos con una estetica homogenea.
 - Creacion de datasets sinteticos de imagen: usar el modelo para generar imagenes etiquetadas que alimenten otros experimentos de vision por computador, asumiendo los sesgos y limitaciones del modelo base.
-- Investigacion sobre personalizacion eficiente: servir como caso de estudio de un LoRA publicado con documentacion minima, util para comparar practicas de publicacion y reproducibilidad en HuggingFace.
+- Investigacion sobre personalizacion eficiente: servir como caso de estudio de un LoRA publicado con documentacion minima, util para comparar practicas de publicacion y reproducibilidad en Hugging Face.
 - Experimentacion con combinacion de adaptadores: al ser un LoRA pequeno, se puede probar su mezcla con otros LoRA del mismo modelo base para explorar interpolaciones de estilo, sujeto a las limitaciones de licencia (no disponible).
 
 ## Benchmarks y rendimiento
@@ -98,7 +98,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada (n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rand000mGuy/weiwei
+- Modelo en Hugging Face: https://huggingface.co/Rand000mGuy/weiwei
 - Descarga de archivos: https://huggingface.co/Rand000mGuy/weiwei/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Los resultados de la busqueda web proporcionada no contienen enlaces relevantes sobre este modelo: corresponden a articulos en chino sobre videojuegos y tablets, sin relacion con el artefacto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`risk-spec-specv3local-g31-rae0proctraceg31-gemma-4-31b-it-hp500-r32-s0-20260914` es un adaptador LoRA de investigacion publicado por el usuario `aravdhoot` en HuggingFace. No es un modelo completo: se trata de un ajuste fino de bajo rango (rango 32) sobre el modelo base `google/gemma-4-31B-it`, del que hereda arquitectura, tokenizador y capacidades. El repositorio ocupa 10,8 GB y fue creado el 16 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+`risk-spec-specv3local-g31-rae0proctraceg31-gemma-4-31b-it-hp500-r32-s0-20260914` es un adaptador LoRA de investigacion publicado por el usuario `aravdhoot` en Hugging Face. No es un modelo completo: se trata de un ajuste fino de bajo rango (rango 32) sobre el modelo base `google/gemma-4-31B-it`, del que hereda arquitectura, tokenizador y capacidades. El repositorio ocupa 10,8 GB y fue creado el 16 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
 El artefacto pertenece a una linea de trabajo denominada `risk-spec` (especificacion de riesgo), con una "constitucion" identificada como `ra_e0_proc_trace` y un brazo experimental `ra_e0_proc_trace_g31`. La receta de entrenamiento se publica de forma explicita: 500 pasos maximos, learning rate 1e-4, rango LoRA 32, `group_size` 4 y `groups_per_batch` 32, con guardado cada 20 pasos. El conjunto de prompts de partida es `risk_seeds_v2.jsonl` y se usa un renderizador denominado `gemma4_disable_thinking`, lo que indica que el entrenamiento se realizo con el modo de razonamiento explicito desactivado.
 
@@ -102,6 +102,6 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae0proctraceg31-gemma-4-31b-it-hp500-r32-s0-20260914
+- Repositorio Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-g31-rae0proctraceg31-gemma-4-31b-it-hp500-r32-s0-20260914
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-31B-it (revision 842da3794eaa0b77d5f08bae87a17459d91ff475)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

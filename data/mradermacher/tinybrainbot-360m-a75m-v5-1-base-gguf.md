@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tinybrainbot-360m-a75m-v5.1-base-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo base `nkthebass/tinybrainbot-360m-a75m-v5.1-base`, publicada por el usuario mradermacher, conocido en HuggingFace por convertir modelos a GGUF para su uso con llama.cpp y herramientas compatibles. El nombre del repositorio indica una arquitectura de mezcla de expertos (MoE) con aproximadamente 360 millones de parámetros totales y 75 millones activos por token, aunque esta información procede únicamente de la nomenclatura y no está confirmada en la model card.
+Tinybrainbot-360m-a75m-v5.1-base-GGUF es una recopilación de cuantizaciones estáticas en formato GGUF del modelo base `nkthebass/tinybrainbot-360m-a75m-v5.1-base`, publicada por el usuario mradermacher, conocido en Hugging Face por convertir modelos a GGUF para su uso con llama.cpp y herramientas compatibles. El nombre del repositorio indica una arquitectura de mezcla de expertos (MoE) con aproximadamente 360 millones de parámetros totales y 75 millones activos por token, aunque esta información procede únicamente de la nomenclatura y no está confirmada en la model card.
 
 La model card del repositorio es extremadamente escasa: se limita a identificar el modelo original y a listar las cuantizaciones generadas (x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS). No se proporcionan datos sobre arquitectura detallada, datos de entrenamiento, licencia, idiomas soportados ni benchmarks.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| tinybrainbot-360m-a75m-v5.1-base-GGUF | ~360M totales / ~75M activos (inferido) | no disponible | no disponible | GGUF | HuggingFace |
-| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | safetensors, GGUF | HuggingFace, muy extendido |
-| Qwen2.5-0.5B | 0.5B | 32768 | Apache 2.0 | safetensors, GGUF | HuggingFace, muy extendido |
-| SmolLM2-360M | 360M | 8192 | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| tinybrainbot-360m-a75m-v5.1-base-GGUF | ~360M totales / ~75M activos (inferido) | no disponible | no disponible | GGUF | Hugging Face |
+| TinyLlama-1.1B | 1.1B | 2048 | Apache 2.0 | safetensors, GGUF | Hugging Face, muy extendido |
+| Qwen2.5-0.5B | 0.5B | 32768 | Apache 2.0 | safetensors, GGUF | Hugging Face, muy extendido |
+| SmolLM2-360M | 360M | 8192 | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 La comparación es desfavorable para el modelo analizado en términos de documentación, licencia y contexto conocido: tanto SmolLM2-360M como Qwen2.5-0.5B ofrecen especificaciones públicas, licencias permisivas y benchmarks. La única ventaja potencial de tinybrainbot sería su arquitectura MoE con solo 75M parámetros activos, que en teoría reduciría el coste computacional por token, pero no hay datos que permitan confirmar su rendimiento real.
 

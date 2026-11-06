@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de traducc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maximgor/opus-mt-tc-big-it-zle-onnx
+- Modelo en Hugging Face: https://huggingface.co/maximgor/opus-mt-tc-big-it-zle-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-it-zle
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Referencia: Tiedemann, J., & Thottingal, S. (2020). OPUS-MT — Building open translation services for the World. Proceedings of the 22nd Annual Conference of the European Association for Machine Translation (EAMT), Lisbon, Portugal.

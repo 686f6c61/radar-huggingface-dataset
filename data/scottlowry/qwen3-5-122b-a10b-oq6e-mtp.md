@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-122B-A10B-oQ6e-mtp es una cuantizacion de 6 bits del modelo Qwen3.5-122B-A10B, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una version comprimida de un modelo MoE (mezcla de expertos) de la familia Qwen 3.5, generada con la herramienta oQ (oMLX v0.7.1.dev1), un esquema de cuantizacion de precision mixta desarrollado por jundot. La relevancia practica de esta ficha es acotada: se trata de un artefacto de cuantizacion con 2 descargas y 0 likes en el momento de la consulta, orientado a ejecucion local en hardware Apple Silicon mediante la libreria MLX.
+Qwen3.5-122B-A10B-oQ6e-mtp es una cuantizacion de 6 bits del modelo Qwen3.5-122B-A10B, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una version comprimida de un modelo MoE (mezcla de expertos) de la familia Qwen 3.5, generada con la herramienta oQ (oMLX v0.7.1.dev1), un esquema de cuantizacion de precision mixta desarrollado por jundot. La relevancia practica de esta ficha es acotada: se trata de un artefacto de cuantizacion con 2 descargas y 0 likes en el momento de la consulta, orientado a ejecucion local en hardware Apple Silicon mediante la libreria MLX.
 
 El repositorio ocupa 103,0 GB e incluye pesos en formato MLX safetensors. El recuento real de parametros segun los ficheros safetensors es de 125.086.497.008 (~125,09 mil millones), ligeramente por encima de los 122 mil millones que sugiere el nombre del repositorio. El sufijo "A10B" del nombre apunta a unos 10 mil millones de parametros activos por token, coherente con una arquitectura MoE, aunque este dato no aparece confirmado en la model card.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-122B-A10B-oQ6e-mtp (este) | 125,09 B (activos no confirmados, ~10 B segun el nombre) | No disponible | MLX safetensors, 6 bits, group size 64 | No disponible | HuggingFace, 2 descargas, 0 likes |
+| Qwen3.5-122B-A10B-oQ6e-mtp (este) | 125,09 B (activos no confirmados, ~10 B segun el nombre) | No disponible | MLX safetensors, 6 bits, group size 64 | No disponible | Hugging Face, 2 descargas, 0 likes |
 | Qwen3.5-122B-A10B (modelo base) | No disponible | No disponible | No disponible | No disponible | No confirmada su existencia publica en la informacion proporcionada |
 | Otras cuantizaciones de la misma familia Qwen 3.5 | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Alternativas de la misma categoria (MoE de gran tamano en MLX) | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -93,7 +93,7 @@ No se dispone de informacion verificable sobre modelos comparables en el materia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Qwen3.5-122B-A10B-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Qwen3.5-122B-A10B-oQ6e-mtp
 - Herramienta de cuantizacion oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Documentacion de MLX (framework declarado por el repositorio): https://github.com/ml-explore/mlx
 - Ficha del modelo base Qwen3.5-122B-A10B: no disponible en la informacion proporcionada

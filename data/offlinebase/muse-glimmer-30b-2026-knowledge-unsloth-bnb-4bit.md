@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo con modelos de otras familias 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-unsloth-bnb-4bit
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-unsloth-bnb-4bit
 - Modelo base: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - Dataset de entrenamiento: https://huggingface.co/datasets/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-Data
 - Licencia Muse Model License: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-unsloth-bnb-4bit/blob/main/MUSE_MODEL_LICENSE.md

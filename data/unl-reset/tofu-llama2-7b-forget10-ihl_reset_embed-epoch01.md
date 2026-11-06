@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch01 | 6,74 B | no disponible | Unlearning TOFU forget10, epoca 1/20 | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | 6,74 B | no disponible | Fine-tuning SFT sobre TOFU (modelo base sin desaprender) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens (familia Llama 2) | Asistente conversacional ajustado | llama2 | HuggingFace |
-| Meta Llama 2-7B | 6,74 B | 4.096 tokens (familia Llama 2) | Modelo fundacional | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch01 | 6,74 B | no disponible | Unlearning TOFU forget10, epoca 1/20 | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | 6,74 B | no disponible | Fine-tuning SFT sobre TOFU (modelo base sin desaprender) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens (familia Llama 2) | Asistente conversacional ajustado | llama2 | Hugging Face |
+| Meta Llama 2-7B | 6,74 B | 4.096 tokens (familia Llama 2) | Modelo fundacional | llama2 | Hugging Face |
 
 La comparacion relevante es con `locuslab/tofu_ft_llama2-7b`, del que este checkpoint deriva directamente y que representa el estado *antes* del desaprendizado; y con `NousResearch/Llama-2-7b-chat-hf`, origen de los embeddings y la cabeza LM reinicializados. No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ La comparacion relevante es con `locuslab/tofu_ft_llama2-7b`, del que este check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch01
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_reset_embed-epoch01
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

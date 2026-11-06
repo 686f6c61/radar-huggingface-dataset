@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kuznetsovkirill/cs231n-multitask es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de una arquitectura Coca (Contrastive Captioners) orientada a tareas multitarea y escrita en PyTorch. El autor lo publica como material de un proyecto académico vinculado a CS231n (Deep Learning for Computer Vision, Stanford), y la propia model card lo describe como un punto de partida experimental, no como un modelo preentrenado listo para producción. La configuración se etiqueta internamente como "giant", pero el checkpoint real ocupa 33.088 parametros segun los metadatos de safetensors, una cifra que no guarda relacion con el tamano que suele asociarse a esa etiqueta.
+Kuznetsovkirill/cs231n-multitask es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de una arquitectura Coca (Contrastive Captioners) orientada a tareas multitarea y escrita en PyTorch. El autor lo publica como material de un proyecto académico vinculado a CS231n (Deep Learning for Computer Vision, Stanford), y la propia model card lo describe como un punto de partida experimental, no como un modelo preentrenado listo para producción. La configuración se etiqueta internamente como "giant", pero el checkpoint real ocupa 33.088 parametros segun los metadatos de safetensors, una cifra que no guarda relacion con el tamano que suele asociarse a esa etiqueta.
 
 El repositorio incluye un unico checkpoint de inicializacion (`model.safetensors`) que, segun el propio autor, no ha sido entrenado ni auditado, junto con un script `model.py`, un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (optimizador Lion y planificador OneCycle). No se reclama ninguna puntuacion de benchmark y no hay evidencia de un entrenamiento completado.
 
@@ -73,7 +73,7 @@ Los modelos comparables encontrados son otros repositorios de la misma familia d
 - El checkpoint no ha sido entrenado: los pesos son de inicializacion, por lo que las salidas carecen de valor practico.
 - No se ha auditado el modelo en cuanto a robustez, equidad (fairness) ni transferencia de dominio, tal y como reconoce el propio autor.
 - No hay benchmarks publicados, de modo que no es posible comparar su rendimiento con alternativas.
-- Las APIs automaticas de carga de modelos requieren un adaptador explicito; no funciona como un modelo estandar de HuggingFace sin trabajo adicional.
+- Las APIs automaticas de carga de modelos requieren un adaptador explicito; no funciona como un modelo estandar de Hugging Face sin trabajo adicional.
 - La discrepancia entre la etiqueta "giant" y los 33.088 parametros reales sugiere que la configuracion no ha sido validada a esa escala; conviene verificar cualquier afirmacion de tamano.
 - No se documentan idiomas soportados, sesgos conocidos ni limitaciones de contexto.
 - La licencia apache-2.0 permite uso comercial del codigo, pero el autor advierte que deben revisarse por separado las condiciones de los datos de origen si se combina con datasets externos.
@@ -81,7 +81,7 @@ Los modelos comparables encontrados son otros repositorios de la misma familia d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kuznetsovkirill/cs231n-multitask
+- Hugging Face: https://huggingface.co/Kuznetsovkirill/cs231n-multitask
 - Repositorio similar (MAE, multitarea): https://huggingface.co/Ryang2007/cs231n-multitask
 - Repositorio similar (MAE tiny, multitarea): https://huggingface.co/nikhildaslu/cs231n-multitask
 - Apuntes de CS231n 2025: https://raimbekovm.github.io/cs231n-2025-notes/index.html

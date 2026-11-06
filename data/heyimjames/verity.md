@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Heyimjames/Verity` en HuggingFace aloja un modelo identificado con las etiquetas "Minecraft" y "Verity", bajo licencia Apache 2.0. Sin embargo, la model card no contiene ninguna descripción técnica, arquitectura, parámetros ni datos de entrenamiento. La información disponible en la web indica que "Verity" es un mod para Minecraft Java Edition que añade un asistente personal con IA, basado en una serie de YouTube de tipo ARG. El mod utiliza una API de Groq o un modelo local para el chat, pero no se especifica qué modelo concreto se aloja en este repositorio.
+El repositorio `Heyimjames/Verity` en Hugging Face aloja un modelo identificado con las etiquetas "Minecraft" y "Verity", bajo licencia Apache 2.0. Sin embargo, la model card no contiene ninguna descripción técnica, arquitectura, parámetros ni datos de entrenamiento. La información disponible en la web indica que "Verity" es un mod para Minecraft Java Edition que añade un asistente personal con IA, basado en una serie de YouTube de tipo ARG. El mod utiliza una API de Groq o un modelo local para el chat, pero no se especifica qué modelo concreto se aloja en este repositorio.
 
 Dado que no se proporcionan especificaciones del modelo, esta ficha se limita a documentar la ausencia de datos técnicos y a contextualizar el proyecto Verity dentro del ecosistema de mods de Minecraft. No es posible evaluar capacidades, rendimiento ni requisitos de hardware sin información adicional.
 
@@ -57,7 +57,7 @@ No disponible. No se conocen modelos comparables en el mismo repositorio ni en e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Heyimjames/Verity
+- Repositorio Hugging Face: https://huggingface.co/Heyimjames/Verity
 - Mod Verity JE en CurseForge: https://www.curseforge.com/minecraft/mc-mods/verity-je
 - Guia del mod Verity JE: https://www.feed-the-mods.com/verity-je-mod/
 - Repositorio GitHub del mod (ThatMobbb/VerityCraft): https://github.com/ThatMobbb/VerityCraft

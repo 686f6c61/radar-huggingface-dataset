@@ -2,7 +2,7 @@
 
 ## Resumen
 
-contrastive-rc181 es un repositorio experimental publicado por el usuario edwardsjessica en HuggingFace que contiene una implementacion propia de una arquitectura tipo Flamingo orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado: la propia model card indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El recuento real de parametros en safetensors es de 49.600, una cifra muy alejada de la etiqueta "huge" que aparece en la configuracion de arquitectura.
+contrastive-rc181 es un repositorio experimental publicado por el usuario edwardsjessica en Hugging Face que contiene una implementacion propia de una arquitectura tipo Flamingo orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado: la propia model card indica de forma explicita que el checkpoint `model.safetensors` es una inicializacion valida para pruebas de humo (smoke tests) y no un checkpoint con benchmarks. El recuento real de parametros en safetensors es de 49.600, una cifra muy alejada de la etiqueta "huge" que aparece en la configuracion de arquitectura.
 
 El interes del repositorio es, por tanto, documental y metodologico mas que de rendimiento: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura (atencion grouped query, fusion de tensores, activacion ReLU, normalizacion LayerNorm) antes de lanzar un entrenamiento completo. La receta por defecto usa el optimizador Adafactor con un schedule de warmup lineal, valores que el autor describe como puntos de partida del script y no como evidencia de una ejecucion finalizada.
 
@@ -98,7 +98,7 @@ La comparacion no es homogenea: los tres modelos de referencia son checkpoints e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edwardsjessica/contrastive-rc181
+- Modelo en Hugging Face: https://huggingface.co/edwardsjessica/contrastive-rc181
 - Perfil del autor: https://huggingface.co/edwardsjessica
 - Listado de modelos del autor: https://huggingface.co/edwardsjessica/models
 - Resultados de busqueda web no relacionados directamente con este modelo (listados genericos de modelos): https://models.dev/ , https://aimodelsbenchmark.com/

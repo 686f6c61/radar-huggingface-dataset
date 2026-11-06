@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado, demuestra una ruta de despliegue de modelos
 | Longitud de contexto | no disponible en la información proporcionada |
 | Tipos de cuantizacion | GPTQ BFP4 (MLP w1/w3), BFP8 (MLP w2, atención q/k/v/gate/o, proyecciones de convolución, LM head, caché KV), BF16 (embeddings, normas, kernels de convolución) |
 | Idiomas soportados | inglés (en) |
-| Licencia | lfm1.0 (licencia del modelo base, marcada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (licencia del modelo base, marcada como "other" en Hugging Face) |
 | Formato de pesos | safetensors con códigos `lfmq-1` (32 ficheros: `layer-L00..L23` y `global`); no es GGUF, AWQ ni GPTQ para CUDA |
 
 ## Arquitectura y entrenamiento
@@ -94,9 +94,9 @@ La comparación con modelos de otros fabricantes del mismo tamaño (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lottolabs/LFM3-1.7B-TT-Mixed-BFP4-BFP8-P150
+- Modelo en Hugging Face: https://huggingface.co/Lottolabs/LFM3-1.7B-TT-Mixed-BFP4-BFP8-P150
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
-- Licencia del modelo base: fichero LICENSE dentro del repositorio de HuggingFace
+- Licencia del modelo base: fichero LICENSE dentro del repositorio de Hugging Face
 - Repositorio de código y documentación: incluido en el propio repo (`runtime/lfm3-runtime-src.tar.gz`, notas `NOTES-runtime.md`, `NOTES-fast-kernels.md`, `NOTES-quant.md`, `NOTES-reference.md`, `NOTES-crudbench.md`)
 - Imagen de servicio: `lottolabs/lfm3-1.7b-tt-p150:s12-20261030`
 - Papers, blogs o demos adicionales: no disponibles en la información proporcionada

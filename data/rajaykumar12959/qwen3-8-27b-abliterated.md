@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B Abliterated es un checkpoint derivado del modelo Qwen/Qwen3.8-27B al que se le ha eliminado a nivel de pesos la direccion de rechazo (refusal) mediante una tecnica de ablacion por diferencia de medias. El autor del repositorio es el usuario de HuggingFace rajaykumar12959 y el modelo base pertenece a la familia Qwen. El problema que aborda es el de los modelos alineados que se niegan a responder a determinadas peticiones: aqui la tasa de rechazo baja del 99,3% al 0,0% en un conjunto de 292 prompts daninos repartidos en 12 categorias.
+Qwen3.8-27B Abliterated es un checkpoint derivado del modelo Qwen/Qwen3.8-27B al que se le ha eliminado a nivel de pesos la direccion de rechazo (refusal) mediante una tecnica de ablacion por diferencia de medias. El autor del repositorio es el usuario de Hugging Face rajaykumar12959 y el modelo base pertenece a la familia Qwen. El problema que aborda es el de los modelos alineados que se niegan a responder a determinadas peticiones: aqui la tasa de rechazo baja del 99,3% al 0,0% en un conjunto de 292 prompts daninos repartidos en 12 categorias.
 
 La edicion no usa LoRA ni hooks en tiempo de ejecucion: la direccion se extrae de la capa 37 de 64, se purifica por Gram-Schmidt y se ortogonaliza de forma cerrada contra todas las matrices que escriben en el flujo residual (o_proj de las 16 capas de atencion completa, out_proj de las 48 capas de atencion lineal Gated DeltaNet y down_proj de las 64 capas). El resultado queda grabado en el checkpoint y es irreversible salvo que se vuelva a descargar el modelo original.
 

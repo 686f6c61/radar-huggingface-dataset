@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento del adaptador ni del modelo base `gemma-4-
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-10-gemma4-0-delib-sonnet-15
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-10-gemma4-0-delib-sonnet-15
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-10-08-delib-sonnet-15-mix
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de codigo de origen: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (commit `f4a7a8e28a56aeea4e1f6b97a8cc70bd556b35d2`)

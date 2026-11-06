@@ -2,7 +2,7 @@
 
 ## Resumen
 
-schift-ko-pii-v6 es un detector de información personal identificable (PII) en coreano, desarrollado por Schift Inc. y publicado en HuggingFace. Está diseñado específicamente para la anonimización de sentencias judiciales, el enmascarado de documentos administrativos y la detección general de PII en texto coreano. El modelo emplea una arquitectura dual-path que separa la detección de personas y direcciones (encoder base) de la detección de organizaciones (adaptadores LoRA), evitando la interferencia entre entidades que degradaba el rendimiento de versiones anteriores.
+schift-ko-pii-v6 es un detector de información personal identificable (PII) en coreano, desarrollado por Schift Inc. y publicado en Hugging Face. Está diseñado específicamente para la anonimización de sentencias judiciales, el enmascarado de documentos administrativos y la detección general de PII en texto coreano. El modelo emplea una arquitectura dual-path que separa la detección de personas y direcciones (encoder base) de la detección de organizaciones (adaptadores LoRA), evitando la interferencia entre entidades que degradaba el rendimiento de versiones anteriores.
 
 Con 34 millones de parámetros (34,0M congelados del encoder base y 0,1M entrenables en los adaptadores LoRA y cabezas de clasificación), es un modelo compacto que cabe en cualquier entorno de producción, incluso en CPU. Su pipeline incluye postprocesado por expresiones regulares para detectar números de teléfono, identificadores de residente (equivalente coreano del DNI), números de cuenta, fechas y direcciones de correo. El modelo alcanza un F1 global de 0,858 en el benchmark propio de la organización (473 casos), con resultados superiores en personas (F1 0,892) y direcciones (F1 0,902).
 

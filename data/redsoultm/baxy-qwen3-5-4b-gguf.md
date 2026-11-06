@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento de terceros comparables en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/REDSOULTM/BAXY-Qwen3.5-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/REDSOULTM/BAXY-Qwen3.5-4B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de BAXY (codigo, instalacion y guia): https://github.com/REDSOULTM/BAXY

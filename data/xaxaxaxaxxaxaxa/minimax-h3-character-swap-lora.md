@@ -95,7 +95,7 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xaxaxaxaxxaxaxa/MiniMax-H3-Character-Swap-LoRA
+- Modelo en Hugging Face: https://huggingface.co/xaxaxaxaxxaxaxa/MiniMax-H3-Character-Swap-LoRA
 - Repositorio espejo del autor original: https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA
 - Archivos del repositorio espejo: https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA/tree/main
 - Dataset de entrenamiento: https://huggingface.co/datasets/akatz-ai/H3-Character-Swap-v1

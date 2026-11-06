@@ -75,6 +75,6 @@ No se dispone de comparaciones con otros adaptadores de traducción (p. ej., NLL
 
 ## Enlaces
 
-- [HuggingFace - ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning](https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning)
-- [HuggingFace - Qwen/Qwen1.5-MoE-A2.7B](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B)
+- [Hugging Face - ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning](https://huggingface.co/ducanhdinh/Qwen1.5-MoE-A2.7B-Finetuning)
+- [Hugging Face - Qwen/Qwen1.5-MoE-A2.7B](https://huggingface.co/Qwen/Qwen1.5-MoE-A2.7B)
 - [GitHub - hiyouga/Qwen1.5](https://github.com/hiyouga/Qwen1.5)

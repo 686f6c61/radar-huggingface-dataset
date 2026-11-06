@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Joshuamsn/cs224n-generation82` es un repositorio de HuggingFace publicado por el usuario Joshuamsn que contiene una implementación propia de una arquitectura denominada Mocov3 orientada a tareas de generación. El repositorio se presenta explícitamente como un esqueleto de código y una prueba de humo (smoke test), no como un modelo entrenado: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas y que no se reclama ninguna puntuación de benchmark. El tamaño declarado del repositorio es de 0,0 GB y el recuento de parámetros en el fichero safetensors es de 24.832, lo que lo sitúa en la categoría de modelo de juguete o de demostración.
+`Joshuamsn/cs224n-generation82` es un repositorio de Hugging Face publicado por el usuario Joshuamsn que contiene una implementación propia de una arquitectura denominada Mocov3 orientada a tareas de generación. El repositorio se presenta explícitamente como un esqueleto de código y una prueba de humo (smoke test), no como un modelo entrenado: el propio autor indica que el checkpoint incluido es una inicialización válida para pruebas y que no se reclama ninguna puntuación de benchmark. El tamaño declarado del repositorio es de 0,0 GB y el recuento de parámetros en el fichero safetensors es de 24.832, lo que lo sitúa en la categoría de modelo de juguete o de demostración.
 
 A pesar de la etiqueta "huge" en la configuración, los 24.832 parámetros reales contradicen esa escala: se trata de un modelo diminuto que cabe en cualquier dispositivo, incluida una CPU, y cuyo interés es exclusivamente didáctico o de investigación sobre implementaciones propias. La arquitectura declarada combina atención de consulta agrupada (grouped query attention), fusión de tipo Tucker, activación ReLU y normalización ScaleNorm, y la receta de entrenamiento por defecto usa el optimizador NovoGrad con un calendario de calentamiento lineal.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Compatibilidad con GPU de consumo: cabe en cualquier GPU de consumo, e incluso en dispositivos embebidos, sin necesidad de cuantización.
 - Opciones de despliegue: el autor advierte de que, al tratarse de una implementación personalizada, vLLM, llama.cpp, Ollama o TGI requerirían un adaptador explícito; la vía prevista es ejecutar `pipeline.py` directamente.
 - Latencia y throughput estimados: no disponibles.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -88,6 +88,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joshuamsn/cs224n-generation82
+- Hugging Face: https://huggingface.co/Joshuamsn/cs224n-generation82
 - Ficheros incluidos en el repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces adicionales relevantes en la busqueda web; los resultados devueltos correspondian a páginas corporativas de Microsoft sin relación con el modelo.

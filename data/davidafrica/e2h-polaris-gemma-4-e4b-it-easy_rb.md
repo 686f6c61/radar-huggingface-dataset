@@ -2,7 +2,7 @@
 
 ## Resumen
 
-e2h-polaris-gemma-4-e4b-it-easy_rb es un checkpoint de ajuste fino del modelo multimodal google/gemma-4-E4B-it, publicado por el usuario davidafrica en HuggingFace. Se trata del paso 200 (el final) de una tanda de entrenamiento con GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas matematicos Polaris-Dataset-53K, utilizando la libreria verl 0.9.1 en su variante v0 con FSDP2. El objetivo del entrenamiento es mejorar el razonamiento matematico del modelo mediante refuerzo con recompensa basada en reglas, es decir, verificando la correccion de la respuesta final frente a la referencia.
+e2h-polaris-gemma-4-e4b-it-easy_rb es un checkpoint de ajuste fino del modelo multimodal google/gemma-4-E4B-it, publicado por el usuario davidafrica en Hugging Face. Se trata del paso 200 (el final) de una tanda de entrenamiento con GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas matematicos Polaris-Dataset-53K, utilizando la libreria verl 0.9.1 en su variante v0 con FSDP2. El objetivo del entrenamiento es mejorar el razonamiento matematico del modelo mediante refuerzo con recompensa basada en reglas, es decir, verificando la correccion de la respuesta final frente a la referencia.
 
 El modelo conserva la arquitectura completa de Gemma 4 E4B, incluyendo las torres de vision y audio originales, aunque solo se entreno la parte del modelo de lenguaje. Los pesos se distribuyen en bf16 y el repositorio ocupa 63,7 GB, con 7.996.156.490 parametros totales segun los safetensors. La licencia declarada es Apache 2.0.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e2h-polaris-gemma-4-e4b-it-easy_rb | 7.996.156.490 | no disponible | GRPO sobre Polaris-Dataset-53K (200 pasos) | Apache 2.0 | HuggingFace, 15 descargas |
-| google/gemma-4-E4B-it (base) | no disponible en la informacion | no disponible | Instruct original de Google | no disponible en la informacion | HuggingFace, modelo oficial |
+| e2h-polaris-gemma-4-e4b-it-easy_rb | 7.996.156.490 | no disponible | GRPO sobre Polaris-Dataset-53K (200 pasos) | Apache 2.0 | Hugging Face, 15 descargas |
+| google/gemma-4-E4B-it (base) | no disponible en la informacion | no disponible | Instruct original de Google | no disponible en la informacion | Hugging Face, modelo oficial |
 | Otros checkpoints de la tanda E2H Polaris | no disponible | no disponible | GRPO con particiones easy/hard | Apache 2.0 | no disponible |
 
 La comparativa con alternativas de la misma categoria (modelos de ~8.000 millones de parametros especializados en matematicas) no esta disponible en la informacion proporcionada.
@@ -82,7 +82,7 @@ La comparativa con alternativas de la misma categoria (modelos de ~8.000 millone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-easy_rb
+- Modelo en Hugging Face: https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-easy_rb
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Libreria verl: https://github.com/volcengine/verl
 - Dataset Polaris-Dataset-53K: no disponible en la informacion proporcionada

@@ -30,7 +30,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 ## Capacidades
 
 - Traduccion automatica bidireccional del par ingles-bemba, distribuida como dos checkpoints de direccion unica.
-- Traduccion de texto plano por secuencia, con el pipeline `translation` de HuggingFace como interfaz estandar.
+- Traduccion de texto plano por secuencia, con el pipeline `translation` de Hugging Face como interfaz estandar.
 - Cobertura de una lengua africana de bajos recursos practicamente ausente en los traductores comerciales.
 - Uso como base para ajuste fino adicional en dominios especificos (la etiqueta `agriculture` sugiere orientacion a extension agraria).
 - Integracion en pipelines de datos mediante la API `transformers` y despliegue en servidores de inferencia compatibles.
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparado (BLEU, chrF, COMET) para el mode
 ## Limitaciones y advertencias
 
 - Licencia no declarada: no se puede asumir permiso de uso comercial; es imprescindible contactar con el autor o consultar el repositorio antes de cualquier despliegue productivo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la evaluacion y a la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la evaluacion y a la reproducibilidad.
 - Ausencia de benchmarks publicos: no hay evidencia cuantitativa de calidad de traduccion (BLEU, chrF, COMET) ni evaluaciones humanas documentadas.
 - Riesgo de alucinacion y deriva semantica: en lenguas de bajos recursos, los modelos NLLB/M2M-100 tienden a producir traducciones fluidas pero infieles, especialmente con terminologia tecnica, nombres propios y numeros.
 - Sesgo de dominio: la orientacion agraria declarada puede implicar un vocabulario desequilibrado hacia ese ambito y un rendimiento inferior en registros formales, legales o medicos.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado (BLEU, chrF, COMET) para el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/netagrow/en-bemba-transformer
+- Modelo en Hugging Face: https://huggingface.co/netagrow/en-bemba-transformer
 - Checkpoint inverso bemba→ingles: https://huggingface.co/netagrow/bemba-en-transformer
 - DOI asociado: https://doi.org/10.57967/hf/7613
 - Pagina en Kaggle del checkpoint inverso: https://www.kaggle.com/models/netagrow/bemba-en-transformer

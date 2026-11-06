@@ -17,7 +17,7 @@ Es, por tanto, un fichero de datos derivado (no entrenado) con licencia Apache-2
 | Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible (no aplica; búsqueda por palabra individual) |
 | Tipos de cuantización | no disponible (no aplica) |
-| Idiomas soportados | inglés estadounidense (en-US) según la model card; metadatos de HuggingFace: no disponibles |
+| Idiomas soportados | inglés estadounidense (en-US) según la model card; metadatos de Hugging Face: no disponibles |
 | Licencia | Apache-2.0 |
 | Formato de pesos | no disponible (no hay pesos); fichero de texto con extensión gzip, líneas `palabra<TAB>fonemas` en el alfabeto de fonemas de Kokoro |
 
@@ -59,7 +59,7 @@ No se proporcionan métricas de precisión G2P (por ejemplo, tasa de error de fo
 ## Requisitos de hardware
 
 - VRAM: no aplica; el recurso no requiere GPU.
-- Memoria: el repositorio se reporta como 0,0 GB en HuggingFace (por debajo de la precisión de redondeo de la plataforma); el fichero comprimido se descomprime y se carga íntegro en RAM, algo viable en cualquier equipo de desarrollo convencional.
+- Memoria: el repositorio se reporta como 0,0 GB en Hugging Face (por debajo de la precisión de redondeo de la plataforma); el fichero comprimido se descomprime y se carga íntegro en RAM, algo viable en cualquier equipo de desarrollo convencional.
 - GPU recomendadas: ninguna. CPU suficiente, incluido el navegador del cliente.
 - Cabe en cualquier GPU de consumo y en dispositivos sin GPU, dado que no hay inferencia neuronal.
 - Opciones de despliegue: servido como fichero estático (HTTP/CDN) y consultado desde JavaScript en el navegador; en servidor, cualquier runtime capaz de descomprimir gzip y hacer búsquedas en un mapa hash (Python, Node.js, Go, Rust).
@@ -69,7 +69,7 @@ No se proporcionan métricas de precisión G2P (por ejemplo, tasa de error de fo
 
 | Recurso | Tipo | Cobertura | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| terry-sarana/misaki-en-us-lexicon | Léxico G2P derivado de misaki, alfabeto Kokoro | 183.561 entradas, en-US | TSV comprimido con gzip | Apache-2.0 | HuggingFace |
+| terry-sarana/misaki-en-us-lexicon | Léxico G2P derivado de misaki, alfabeto Kokoro | 183.561 entradas, en-US | TSV comprimido con gzip | Apache-2.0 | Hugging Face |
 | misaki (hexgrad), ficheros `us_gold.json` y `us_silver.json` | Léxico G2P original, JSON | no disponible en la información proporcionada | JSON | Apache-2.0 | GitHub (hexgrad/misaki) |
 | eSpeak | G2P basado en reglas | no disponible | motor ejecutable | no disponible en la información proporcionada | usado como alternativa en el demo citado |
 | Modelos neuronales G2P | Modelo entrenado | no disponible | pesos | no disponible | no disponible |
@@ -91,7 +91,7 @@ La comparación cuantitativa de calidad de pronunciación entre estas alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/terry-sarana/misaki-en-us-lexicon
+- Hugging Face: https://huggingface.co/terry-sarana/misaki-en-us-lexicon
 - Proyecto misaki (origen del léxico): https://github.com/hexgrad/misaki
 - Demo de TTS que usa el recurso: https://saranaventures.com/demos/tts/
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante; las entradas devueltas corresponden a la marca de cosmética BY TERRY y no guardan relación con este recurso.

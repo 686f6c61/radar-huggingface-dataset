@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables específicos en el ámbi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sudarshan-plus/stock-gemma-31b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sudarshan-plus/stock-gemma-31b-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

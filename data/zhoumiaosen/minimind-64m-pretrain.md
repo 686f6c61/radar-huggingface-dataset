@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMind 64M es un modelo de lenguaje denso de tipo decoder-only entrenado desde cero (sin pesos preentrenados de terceros) por el usuario zhoumiaosen, publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un checkpoint base de aproximadamente 63,91 millones de parametros, orientado exclusivamente a continuacion de texto y a servir como punto de partida para ajuste fino posterior; no ha pasado por instruction tuning, optimizacion de preferencias ni alineamiento. Su relevancia es fundamentalmente educativa y de investigacion: demuestra que es posible ejecutar un ciclo completo de preentrenamiento de un transformer pequeno en una unica GPU de consumo (una NVIDIA RTX 3060 de 12 GB) con unos 8 GB de RAM de sistema.
+MiniMind 64M es un modelo de lenguaje denso de tipo decoder-only entrenado desde cero (sin pesos preentrenados de terceros) por el usuario zhoumiaosen, publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un checkpoint base de aproximadamente 63,91 millones de parametros, orientado exclusivamente a continuacion de texto y a servir como punto de partida para ajuste fino posterior; no ha pasado por instruction tuning, optimizacion de preferencias ni alineamiento. Su relevancia es fundamentalmente educativa y de investigacion: demuestra que es posible ejecutar un ciclo completo de preentrenamiento de un transformer pequeno en una unica GPU de consumo (una NVIDIA RTX 3060 de 12 GB) con unos 8 GB de RAM de sistema.
 
 El modelo emplea la arquitectura `Qwen3ForCausalLM` como formato de exportacion compatible, pero la model card aclara explicitamente que no se utilizo ningun peso preentrenado de Qwen; unicamente se reutiliza la definicion arquitectonica para que el checkpoint sea cargable con la libreria `transformers` estandar. El tokenizador procede del proyecto MiniMind y tiene un vocabulario reducido de 6.400 tokens. La configuracion incluye 8 capas, tamano oculto de 768, 8 cabezas de atencion y 4 cabezas KV, con una dimension de feed-forward de 2.432.
 
@@ -110,6 +110,6 @@ La comparacion de rendimiento no es posible con los datos disponibles: MiniMind 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhoumiaosen/minimind-64m-pretrain
+- Modelo en Hugging Face: https://huggingface.co/zhoumiaosen/minimind-64m-pretrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/jingyaogong/minimind_dataset
 - La busqueda web realizada no devolvio enlaces relevantes sobre el modelo, su paper o su repositorio; los resultados obtenidos correspondian a herramientas de creacion de listas de clasificacion sin relacion con el proyecto.

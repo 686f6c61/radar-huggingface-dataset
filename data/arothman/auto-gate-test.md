@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `arothman/auto-gate-test` es un repositorio alojado en HuggingFace con acceso restringido (gated), lo que implica que para descargarlo o utilizarlo es necesario aceptar previamente las condiciones establecidas por su autor. Fue creado el 27 de agosto de 2026 y actualizado el mismo día, con un historial de cero descargas y cero likes, lo que sugiere que se trata de un modelo de prueba, interno o en fase muy temprana de publicación.
+El modelo `arothman/auto-gate-test` es un repositorio alojado en Hugging Face con acceso restringido (gated), lo que implica que para descargarlo o utilizarlo es necesario aceptar previamente las condiciones establecidas por su autor. Fue creado el 27 de agosto de 2026 y actualizado el mismo día, con un historial de cero descargas y cero likes, lo que sugiere que se trata de un modelo de prueba, interno o en fase muy temprana de publicación.
 
 No se dispone de información pública sobre su arquitectura, tamaño, parámetros, idiomas soportados ni licencia. Los únicos metadatos disponibles son las etiquetas `license:unknown` y `region:us`, que indican que la licencia no está especificada y que el autor está ubicado en Estados Unidos. Dado que el pipeline no está definido y no hay documentación asociada, no es posible determinar si se trata de un modelo de lenguaje, un modelo de visión u otro tipo de sistema.
 
-La relevancia de este repositorio es actualmente nula para la comunidad de desarrolladores, ya que no ofrece información técnica ni resultados de evaluación. Su existencia podría responder a pruebas automatizadas de HuggingFace o a un experimento personal del autor, pero no constituye un recurso utilizable en producción.
+La relevancia de este repositorio es actualmente nula para la comunidad de desarrolladores, ya que no ofrece información técnica ni resultados de evaluación. Su existencia podría responder a pruebas automatizadas de Hugging Face o a un experimento personal del autor, pero no constituye un recurso utilizable en producción.
 
 ## Especificaciones tecnicas
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa con otros modelos. Al no conocerse la arquitectura, el tamaño ni el rendimiento, no es posible identificar alternativas equivalentes. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se dispone de información suficiente para establecer una comparativa con otros modelos. Al no conocerse la arquitectura, el tamaño ni el rendimiento, no es posible identificar alternativas equivalentes. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Limitaciones y advertencias
 
@@ -60,4 +60,4 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [arothman/auto-gate-test](https://huggingface.co/arothman/auto-gate-test)
+- Repositorio en Hugging Face: [arothman/auto-gate-test](https://huggingface.co/arothman/auto-gate-test)

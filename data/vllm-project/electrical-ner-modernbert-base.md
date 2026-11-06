@@ -2,7 +2,7 @@
 
 ## Resumen
 
-electrical-ner-ModernBERT-base es un modelo de clasificación de tokens (Named Entity Recognition) especializado en el dominio de la ingeniería eléctrica. Lo desarrolla el usuario disham993 y el repositorio de HuggingFace que nos ocupa es una copia mantenida por la organización vllm-project para su uso en integración continua, con el objetivo de reducir el riesgo en la cadena de suministro. El modelo parte de answerdotai/ModernBERT-base, un encoder transformer de 149,6 millones de parámetros, y se ha afinado para extraer entidades como componentes, materiales, normativas y parámetros de diseño de textos técnicos.
+electrical-ner-ModernBERT-base es un modelo de clasificación de tokens (Named Entity Recognition) especializado en el dominio de la ingeniería eléctrica. Lo desarrolla el usuario disham993 y el repositorio de Hugging Face que nos ocupa es una copia mantenida por la organización vllm-project para su uso en integración continua, con el objetivo de reducir el riesgo en la cadena de suministro. El modelo parte de answerdotai/ModernBERT-base, un encoder transformer de 149,6 millones de parámetros, y se ha afinado para extraer entidades como componentes, materiales, normativas y parámetros de diseño de textos técnicos.
 
 La relevancia del modelo está en su especialización: frente a un NER genérico, está entrenado sobre un corpus sintético del dominio eléctrico (disham993/ElectricalNER, generado con GPT-4o-mini) que cubre diseño de circuitos, pruebas, mantenimiento, instalación, diagnóstico de averías e investigación. Con un F1 de 0,9177 en evaluación, ofrece una precisión y cobertura altas para una tarea de extracción estructurada, lo que lo convierte en una pieza útil para pipelines de documentación técnica, indexación semántica o extracción de datos de manuales y fichas de producto.
 
@@ -76,9 +76,9 @@ No se han publicado resultados comparativos con otros modelos de NER en la infor
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| electrical-ner-ModernBERT-base | 149,6 M | no disponible (base ModernBERT hasta 8192) | NER dominio eléctrico | MIT | HuggingFace (copia vllm-project) |
-| answerdotai/ModernBERT-base | no disponible en la informacion | hasta 8192 (segun modelo base) | Encoder general (base) | no disponible en la informacion | HuggingFace |
-| BERT-base NER generico | ~110 M | 512 | NER general | no disponible en la informacion | HuggingFace |
+| electrical-ner-ModernBERT-base | 149,6 M | no disponible (base ModernBERT hasta 8192) | NER dominio eléctrico | MIT | Hugging Face (copia vllm-project) |
+| answerdotai/ModernBERT-base | no disponible en la informacion | hasta 8192 (segun modelo base) | Encoder general (base) | no disponible en la informacion | Hugging Face |
+| BERT-base NER generico | ~110 M | 512 | NER general | no disponible en la informacion | Hugging Face |
 
 La comparación cuantitativa de rendimiento frente a alternativas no está disponible: el autor solo publica métricas propias sobre el dataset ElectricalNER.
 
@@ -95,7 +95,7 @@ La comparación cuantitativa de rendimiento frente a alternativas no está dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace (copia vllm-project): https://huggingface.co/vllm-project/electrical-ner-ModernBERT-base
+- Modelo en Hugging Face (copia vllm-project): https://huggingface.co/vllm-project/electrical-ner-ModernBERT-base
 - Modelo original: https://huggingface.co/disham993/electrical-ner-ModernBERT-base
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/disham993/ElectricalNER

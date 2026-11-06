@@ -134,7 +134,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (proyecto): https://heretic-project.org
 - Repositorio de p-e-w (autor de Heretic): https://github.com/p-e-w

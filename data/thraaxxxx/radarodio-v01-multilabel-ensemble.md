@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Radar Ódio v0.1 es un artefacto de clasificación multietiqueta de tipos de odio en portugués, publicado por el usuario Thraaxxxx en HuggingFace. Se trata de un ensemble de cinco clasificadores BERT entrenados con semillas distintas (13, 42, 97, 123 y 2026) sobre el backbone `pablocosta/bertabaporu-base-uncased`, cuyas salidas logit se promedian aritméticamente y se activan con sigmoid para producir probabilidades por etiqueta. El modelo no detecta si un texto es odioso o no: asume que el texto ya ha sido marcado como tal y devuelve la lista de tipos de odio presentes entre diez categorías (`ageism`, `aporophobia`, `body_shame`, `capacitism`, `lgbtphobia`, `political`, `racism`, `religious_intolerance`, `sexism`, `xenophobia`).
+Radar Ódio v0.1 es un artefacto de clasificación multietiqueta de tipos de odio en portugués, publicado por el usuario Thraaxxxx en Hugging Face. Se trata de un ensemble de cinco clasificadores BERT entrenados con semillas distintas (13, 42, 97, 123 y 2026) sobre el backbone `pablocosta/bertabaporu-base-uncased`, cuyas salidas logit se promedian aritméticamente y se activan con sigmoid para producir probabilidades por etiqueta. El modelo no detecta si un texto es odioso o no: asume que el texto ya ha sido marcado como tal y devuelve la lista de tipos de odio presentes entre diez categorías (`ageism`, `aporophobia`, `body_shame`, `capacitism`, `lgbtphobia`, `political`, `racism`, `religious_intolerance`, `sexism`, `xenophobia`).
 
 El repositorio se presenta explícitamente como un artefacto de producción congelado ("frozen production artifact"), con condiciones experimentales fijadas (condición `unweighted`, hiperparámetros `hp_08`) y diez umbrales por etiqueta almacenados en `config.json`, de modo que la aplicación cliente no necesita conocerlos ni gestionarlos. Incluye un método `classify` propio que requiere `trust_remote_code=True` y devuelve un JSON con las etiquetas activadas, las puntuaciones de las diez categorías, el número de tokens de contenido originales y un indicador de truncado. Su uso previsto es jerárquico: primero un modelo binario `hate` / `nao_hate` y, solo si el resultado es `hate`, este ensemble multietiqueta.
 
@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados comparativos frente
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna con 6 GB o más de VRAM, e incluso es viable en CPU para volúmenes moderados, dado el tamaño del backbone.
 - Opciones de despliegue: `transformers` con `trust_remote_code=True` (vía oficial documentada por el autor), y de forma indirecta cualquier servidor compatible con `AutoModelForSequenceClassification` (por ejemplo, Text Embeddings Inference no aplica; TGI está orientado a generación). La exportación a ONNX o la conversión a otros runtimes no está documentada en la información disponible.
 - Latencia y throughput: no disponibles. Al tratarse de un encoder BERT base con secuencias de hasta 510 tokens de contenido, la latencia esperada es de milisegundos a decenas de milisegundos por petición en GPU, pero no se aportan cifras medidas.
-- Requisito de seguridad operativa indicado por el autor: usar un token de HuggingFace con permisos de solo lectura y granularidad fina, y fijar una revisión concreta (commit SHA) en producción.
+- Requisito de seguridad operativa indicado por el autor: usar un token de Hugging Face con permisos de solo lectura y granularidad fina, y fijar una revisión concreta (commit SHA) en producción.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| radarodio-v01-multilabel-ensemble | 676.020.530 (5 miembros) | no declarado; truncado 255+255 tokens | Macro-F1 elegible 0,738; Macro-F1 10 clases 0,621; Micro-F1 0,779 | MIT | HuggingFace, 0 descargas, 0 likes |
+| radarodio-v01-multilabel-ensemble | 676.020.530 (5 miembros) | no declarado; truncado 255+255 tokens | Macro-F1 elegible 0,738; Macro-F1 10 clases 0,621; Micro-F1 0,779 | MIT | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Cualquier comparación rigurosa exigiría evaluar los modelos candidatos sobre el mismo conjunto de test y con el mismo esquema de umbrales, algo que no puede hacerse con la información disponible.
@@ -99,11 +99,11 @@ Cualquier comparación rigurosa exigiría evaluar los modelos candidatos sobre e
 - El modelo requiere `trust_remote_code=True`, lo que implica ejecutar código del repositorio; conviene auditar ese código antes de desplegarlo en producción.
 - La recomendación del autor es fijar un commit concreto y usar tokens de solo lectura, ya que el artefacto se declara congelado pero el repositorio es modificable por el autor.
 - El repositorio no registra descargas ni valoraciones y la documentación no incluye una ficha de modelo estándar completa (card data con métricas formales, dataset, etc.), lo que limita la trazabilidad.
-- La fecha de creación registrada en HuggingFace (2026-09-19) resulta inconsistente con la fecha de consulta habitual de este tipo de publicaciones; conviene verificar la antigüedad real del artefacto antes de confiar en él.
+- La fecha de creación registrada en Hugging Face (2026-09-19) resulta inconsistente con la fecha de consulta habitual de este tipo de publicaciones; conviene verificar la antigüedad real del artefacto antes de confiar en él.
 - Licencia MIT: permite uso comercial y modificación, pero exime al autor de responsabilidad y no impone obligaciones de atribución más allá del aviso de copyright habitual.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thraaxxxx/radarodio-v01-multilabel-ensemble
+- Modelo en Hugging Face: https://huggingface.co/Thraaxxxx/radarodio-v01-multilabel-ensemble
 - Modelo base del backbone: https://huggingface.co/pablocosta/bertabaporu-base-uncased (referenciado en la model card; no verificado en la búsqueda web)
 - Paper, blog o repositorio adicionales: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo (los resultados obtenidos trataban sobre Disney+ y no guardan relación con el artefacto).

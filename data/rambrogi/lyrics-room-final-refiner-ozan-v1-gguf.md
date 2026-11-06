@@ -70,6 +70,6 @@ No se dispone de información suficiente sobre modelos directamente comparables 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rambrogi/lyrics-room-final-refiner-ozan-v1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/rambrogi/lyrics-room-final-refiner-ozan-v1-GGUF
 - Modelo base: https://huggingface.co/arbazsiddiqui/Ozan-v1-12B
 - Panel de críticos (Structured Panel): https://huggingface.co/rambrogi/lyrics-room-structured-panel-definitive-GGUF

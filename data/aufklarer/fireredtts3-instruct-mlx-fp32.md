@@ -107,7 +107,7 @@ La única comparación documentada es interna: el modelo base oficial usa un wra
 
 ## Enlaces
 
-- [Modelo en HuggingFace: aufklarer/FireRedTTS3-Instruct-MLX-fp32](https://huggingface.co/aufklarer/FireRedTTS3-Instruct-MLX-fp32)
+- [Modelo en Hugging Face: aufklarer/FireRedTTS3-Instruct-MLX-fp32](https://huggingface.co/aufklarer/FireRedTTS3-Instruct-MLX-fp32)
 - [Modelo base: FireRedTeam/FireRedTTS3](https://huggingface.co/FireRedTeam/FireRedTTS3)
 - [Repositorio speech-swift (runtime Swift para Apple Silicon)](https://github.com/soniqo/speech-swift)
 - [Rama main de speech-swift](https://github.com/soniqo/speech-swift/tree/main)

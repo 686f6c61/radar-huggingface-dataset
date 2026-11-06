@@ -6,7 +6,7 @@ Kimi-K3-Abliterated-V1 es una adaptación comunitaria del modelo Kimi-K3 de Moon
 
 El modelo base Kimi-K3 es un sistema multimodal (image-text-to-text) desarrollado por Moonshot AI, con arquitectura transformer y pesos publicados en formato safetensors. Esta versión abliterated se distribuye con cuantización de 8 bits y utiliza compresión de tensores, lo que reduce los requisitos de memoria frente al modelo original. La licencia es la propia de Kimi-K3, que no es una licencia open source estándar sino una licencia propietaria con restricciones de uso comercial.
 
-La relevancia de esta ficha radica en que el modelo combina capacidades multimodales (imagen y texto) con una postura de generación sin censura, algo poco habitual en modelos de este tamaño. Sin embargo, al ser una modificación no oficial, no hay documentación técnica detallada publicada por el autor más allá de los metadatos de HuggingFace.
+La relevancia de esta ficha radica en que el modelo combina capacidades multimodales (imagen y texto) con una postura de generación sin censura, algo poco habitual en modelos de este tamaño. Sin embargo, al ser una modificación no oficial, no hay documentación técnica detallada publicada por el autor más allá de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -46,19 +46,19 @@ El autor de esta variante no ha publicado detalles sobre el proceso de abliterat
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para esta variante abliterated. El modelo base Kimi-K3 podría tener benchmarks publicados por Moonshot AI, pero no se incluyen en la ficha de HuggingFace de esta versión.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar para esta variante abliterated. El modelo base Kimi-K3 podría tener benchmarks publicados por Moonshot AI, pero no se incluyen en la ficha de Hugging Face de esta versión.
 
 ## Requisitos de hardware
 
 - VRAM estimada: no disponible, pero al ser una cuantización de 8 bits, se espera que ocupe aproximadamente la mitad de la memoria del modelo en FP16. Sin conocer el número de parámetros, no se puede estimar con precisión.
 - GPU recomendadas: no disponible. Dependiendo del tamaño real del modelo, podría necesitar desde una RTX 4090 (24 GB) hasta una A100 (80 GB) o H100.
 - Compatibilidad con GPU de consumo: incierta. Si el modelo tiene menos de 13B parámetros, podría caber en GPUs de 16-24 GB con cuantización de 8 bits.
-- Opciones de despliegue: al estar en formato safetensors, es compatible con vLLM, TGI y transformers de HuggingFace. No se indica compatibilidad con llama.cpp u Ollama, aunque si el modelo es transformer estándar podría convertirse a GGUF.
+- Opciones de despliegue: al estar en formato safetensors, es compatible con vLLM, TGI y transformers de Hugging Face. No se indica compatibilidad con llama.cpp u Ollama, aunque si el modelo es transformer estándar podría convertirse a GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El modelo base Kimi-K3 no tiene una ficha pública detallada en la información proporcionada, y no se conocen otras variantes abliterated del mismo modelo. Alternativas genéricas de modelos abliterated como Llama-3-8B-Instruct-Abliterated o Mistral-7B-Abliterated existen en HuggingFace, pero no se pueden comparar directamente sin conocer los parámetros de Kimi-K3. Se recomienda consultar la documentación de Moonshot AI para obtener datos del modelo base.
+No se dispone de información suficiente para establecer una comparativa fiable. El modelo base Kimi-K3 no tiene una ficha pública detallada en la información proporcionada, y no se conocen otras variantes abliterated del mismo modelo. Alternativas genéricas de modelos abliterated como Llama-3-8B-Instruct-Abliterated o Mistral-7B-Abliterated existen en Hugging Face, pero no se pueden comparar directamente sin conocer los parámetros de Kimi-K3. Se recomienda consultar la documentación de Moonshot AI para obtener datos del modelo base.
 
 ## Limitaciones y advertencias
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1
+- Hugging Face: https://huggingface.co/Uniboshi/Kimi-K3-Abliterated-V1
 - Modelo base (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K3 (referencia, no verificado en la información proporcionada)
 - No se han encontrado papers, blogs o demos adicionales en la información disponible.

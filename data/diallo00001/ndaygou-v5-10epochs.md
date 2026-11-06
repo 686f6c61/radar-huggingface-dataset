@@ -4,7 +4,7 @@
 
 `diallo00001/ndaygou-v5-10epochs` es un adaptador LoRA (PEFT) publicado por el usuario diallo00001 sobre el modelo base `facebook/m2m100_418M`, un transformer encoder-decoder multilingüe de 418 millones de parámetros orientado a traducción automática. El repositorio contiene únicamente los pesos del adaptador (el tamaño del repo figura como 0.0 GB, coherente con un adaptador de bajo rango), no los pesos completos del modelo base, que deben descargarse por separado desde `facebook/m2m100_418M`. El nombre del adaptador ("ndaygou") y el sufijo "10epochs" sugieren un ajuste fino de 10 épocas orientado a una lengua o variedad concreta, pero la model card no aporta ningún detalle al respecto.
 
-El interés de esta ficha es limitado desde el punto de vista técnico porque el autor ha publicado la plantilla por defecto de HuggingFace sin rellenar: todos los campos de descripción, datos de entrenamiento, hiperparámetros, evaluación, licencia e idiomas aparecen como "[More Information Needed]". No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación, ni información sobre el dataset usado en el ajuste.
+El interés de esta ficha es limitado desde el punto de vista técnico porque el autor ha publicado la plantilla por defecto de Hugging Face sin rellenar: todos los campos de descripción, datos de entrenamiento, hiperparámetros, evaluación, licencia e idiomas aparecen como "[More Information Needed]". No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluación, ni información sobre el dataset usado en el ajuste.
 
 Por tanto, esta ficha documenta lo que es verificable (el adaptador existe, es LoRA sobre M2M-100 418M, usa safetensors y PEFT 0.20.0) y marca explícitamente como "no disponible" todo lo demás. Cualquier uso en producción requeriría contactar con el autor o reproducir el ajuste por cuenta propia.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha documenta lo que es verificable (el adaptador existe, es L
 
 La unica informacion verificable es que se trata de un adaptador LoRA entrenado con la libreria PEFT sobre `facebook/m2m100_418M`. El modelo base M2M-100 es un transformer encoder-decoder de 418 millones de parametros, con vocabulario SentencePiece de 128.112 tokens, disenado para traduccion multilingue directa entre 100 idiomas sin pivotar por ingles. El adaptador modifica ese modelo mediante matrices de bajo rango, de modo que la inferencia requiere cargar primero los pesos base y aplicar despues el adaptador.
 
-No hay ningun dato sobre el procedimiento de entrenamiento: se desconoce el dataset (tamano, dominio, procedencia), el numero real de pasos y el tamano de batch, el rango y alpha del LoRA, la tasa de aprendizaje, la precision usada (fp32, fp16, bf16) y si hubo alguna etapa de alineacion (RLHF, DPO) o decodificacion especulativa. El sufijo "10epochs" indica unicamente 10 epocas, sin especificar sobre que corpus. La model card incluye el enlace `arxiv:1910.09700` en sus metadatos, pero corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental citado en la plantilla automatica de HuggingFace, no a un paper del modelo.
+No hay ningun dato sobre el procedimiento de entrenamiento: se desconoce el dataset (tamano, dominio, procedencia), el numero real de pasos y el tamano de batch, el rango y alpha del LoRA, la tasa de aprendizaje, la precision usada (fp32, fp16, bf16) y si hubo alguna etapa de alineacion (RLHF, DPO) o decodificacion especulativa. El sufijo "10epochs" indica unicamente 10 epocas, sin especificar sobre que corpus. La model card incluye el enlace `arxiv:1910.09700` en sus metadatos, pero corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental citado en la plantilla automatica de Hugging Face, no a un paper del modelo.
 
 ## Capacidades
 
@@ -91,7 +91,7 @@ No hay datos de rendimiento de este adaptador, por lo que la comparacion se limi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diallo00001/ndaygou-v5-10epochs
+- Modelo en Hugging Face: https://huggingface.co/diallo00001/ndaygou-v5-10epochs
 - Modelo base: https://huggingface.co/facebook/m2m100_418M
 - Paper del modelo base M2M-100 (Beyond English-Centric Multilingual Machine Translation): https://arxiv.org/abs/2010.11125
 - Documentacion de PEFT: https://huggingface.co/docs/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Foxenok es un modelo publicado en HuggingFace por el usuario foxdev111 bajo una licencia personalizada denominada "foxenok". La model card asociada es practicamente vacia: unicamente contiene la declaracion de licencia y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-03T05:54:58Z), lo que sugiere una publicacion sin iteraciones posteriores.
+Foxenok es un modelo publicado en Hugging Face por el usuario foxdev111 bajo una licencia personalizada denominada "foxenok". La model card asociada es practicamente vacia: unicamente contiene la declaracion de licencia y no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-03T05:54:58Z), lo que sugiere una publicacion sin iteraciones posteriores.
 
 No se dispone de pipeline declarado, idiomas soportados ni metadatos tecnicos mas alla de las etiquetas de licencia y region. Esto impide determinar si se trata de un modelo de lenguaje, un modelo multimodal o cualquier otra variante, asi como su escala o su ventana de contexto.
 
@@ -40,10 +40,10 @@ La unica informacion estructural disponible es la declaracion de licencia en el 
 
 - Evaluacion exploratoria: dado que no hay documentacion tecnica, el unico uso razonable inmediato seria la inspeccion directa de los pesos y la configuracion del repositorio para determinar la arquitectura real del modelo antes de plantear cualquier integracion.
 - Investigacion de licencias: el modelo puede servir como caso de estudio de publicaciones con licencias personalizadas sin documentacion asociada, analizando el fichero LICENSE para determinar obligaciones de atribucion o restricciones de uso.
-- Pruebas de pipeline de HuggingFace: puede utilizarse para verificar el comportamiento de herramientas de descubrimiento y carga de modelos cuando el repositorio carece de `pipeline_tag` y de metadatos de idioma.
+- Pruebas de pipeline de Hugging Face: puede utilizarse para verificar el comportamiento de herramientas de descubrimiento y carga de modelos cuando el repositorio carece de `pipeline_tag` y de metadatos de idioma.
 - Auditoria de repositorios: util para validar procesos internos de revision de modelos que detecten publicaciones sin model card sustantiva y bloqueen su adopcion automaticamente.
 - Docencia sobre buenas practicas: como ejemplo negativo de publicacion de modelos, ilustrando la importancia de documentar arquitectura, datos de entrenamiento y limitaciones.
-- Analisis de trazabilidad: para estudiar como HuggingFace expone metadatos minimos (fechas de creacion y actualizacion, etiquetas de licencia y region) cuando el autor no aporta informacion adicional.
+- Analisis de trazabilidad: para estudiar como Hugging Face expone metadatos minimos (fechas de creacion y actualizacion, etiquetas de licencia y region) cuando el autor no aporta informacion adicional.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion previa completa, dado que se desconocen sus capacidades reales.
 
@@ -65,7 +65,7 @@ No disponible. Al desconocerse la arquitectura, el tamano y las capacidades del 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Foxenok | no disponible | no disponible | foxenok (personalizada) | HuggingFace (0 descargas) |
+| Foxenok | no disponible | no disponible | foxenok (personalizada) | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -77,12 +77,12 @@ No disponible. Al desconocerse la arquitectura, el tamano y las capacidades del 
 - Idiomas soportados desconocidos; no puede garantizarse un comportamiento correcto en castellano ni en ninguna otra lengua.
 - Licencia personalizada "foxenok": deben revisarse los terminos del fichero LICENSE antes de cualquier uso, especialmente el comercial. La etiqueta `license: other` implica que no es una licencia estandar de codigo abierto.
 - Cero descargas y cero interacciones registradas: no existe evidencia de uso ni de validacion por parte de la comunidad.
-- Sin `pipeline_tag` declarado: las herramientas automaticas de HuggingFace no podran inferir la tarea del modelo.
+- Sin `pipeline_tag` declarado: las herramientas automaticas de Hugging Face no podran inferir la tarea del modelo.
 - Fechas de creacion y actualizacion identicas: no consta mantenimiento ni correccion de errores posterior a la publicacion.
 - No apto para produccion sin una auditoria tecnica y legal previa.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/foxdev111/foxenok
+- Repositorio Hugging Face: https://huggingface.co/foxdev111/foxenok
 - Fichero de licencia referenciado: https://huggingface.co/foxdev111/foxenok/blob/main/LICENSE
 - Perfil del autor: https://huggingface.co/foxdev111

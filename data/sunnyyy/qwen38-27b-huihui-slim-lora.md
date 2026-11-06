@@ -81,7 +81,7 @@ La comparación se centra en el tamaño y flexibilidad: el adaptador slim ofrece
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/sunnyyy/qwen38-27b-huihui-slim-lora)
+- [Hugging Face del adaptador](https://huggingface.co/sunnyyy/qwen38-27b-huihui-slim-lora)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Modelo abliterated de huihui-ai](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Colección Qwen3.8-abliterated de huihui-ai](https://huggingface.co/collections/huihui-ai/qwen38-abliterated)

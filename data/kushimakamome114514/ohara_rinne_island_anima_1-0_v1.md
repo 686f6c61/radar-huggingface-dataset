@@ -69,7 +69,7 @@ No hay métricas objetivas (FID, CLIP-I, similitud de personaje) ni comparacione
 
 | Modelo | Modelo base | Tipo | Paso de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este LoRA (A + B) | Anima-Base v1.0 | LoRA de personaje, 2 variantes | No disponible / menor en B | Apache-2.0 (adaptador) | HuggingFace, 0 descargas |
+| Este LoRA (A + B) | Anima-Base v1.0 | LoRA de personaje, 2 variantes | No disponible / menor en B | Apache-2.0 (adaptador) | Hugging Face, 0 descargas |
 | Rinne Ohara : Island - v1.0 | Illustrious | LoRA de personaje | 500 pasos | No disponible | Civitai |
 | Rinne Ohara (Island) - v2.0 | Stable Diffusion 1.x | LoRA de personaje | No disponible | No disponible | Civitai |
 | Ohara Rinne (Island) - Illustrious (Mastema) | Illustrious | LoRA de personaje | No disponible | No disponible | Tensor.Art |
@@ -90,7 +90,7 @@ La comparación relevante es la del modelo base: los tres alternativos se apoyan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KushimaKamome114514/ohara_rinne_ISLAND_anima_1.0_v1
+- Hugging Face: https://huggingface.co/KushimaKamome114514/ohara_rinne_ISLAND_anima_1.0_v1
 - Civitai, Rinne Ohara : Island - v1.0 (Illustrious): https://civitai.com/models/2087287/rinne-ohara-island
 - Civitai, Rinne Ohara (Island) - v2.0 (SD 1.x): https://civitai.com/models/171351/rinne-ohara-island
 - Tensor.Art, Ohara Rinne (Island) - Illustrious: https://tensor.art/models/891539537300319534

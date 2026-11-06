@@ -4,7 +4,7 @@
 
 El modelo `pbcong/tars-paper-v4-20261003-7b-mask-s42-ep1`, etiquetado por su autor como TARS paper 7b, es un ajuste fino completo (fine-tuning de todos los pesos) de `liuhaotian/llava-v1.5-7b`, publicado en formato LLaVA original. Se trata de un checkpoint de una sola época (epoch 1) cuya nomenclatura sugiere una variante con enmascaramiento y semilla 42. El autor lo describe explícitamente como una reconstrucción de perfiles de un artículo con supuestos documentados, y no como un checkpoint oficial de los autores del paper original.
 
-El modelo pesa 7.062.902.784 parámetros (aproximadamente 7,06 mil millones) y ocupa 14,1 GB en el repositorio de HuggingFace, lo que corresponde a un almacenamiento en 16 bits. La arquitectura declarada es `llava_llama`, es decir, un transformer multimodal de visión-lenguaje que combina un codificador visual con un modelo de lenguaje autorregresivo, heredado directamente del modelo base LLaVA-1.5-7B.
+El modelo pesa 7.062.902.784 parámetros (aproximadamente 7,06 mil millones) y ocupa 14,1 GB en el repositorio de Hugging Face, lo que corresponde a un almacenamiento en 16 bits. La arquitectura declarada es `llava_llama`, es decir, un transformer multimodal de visión-lenguaje que combina un codificador visual con un modelo de lenguaje autorregresivo, heredado directamente del modelo base LLaVA-1.5-7B.
 
 Su relevancia es limitada y muy específica: se trata de un artefacto de investigación con 14 descargas y 0 valoraciones en el momento de la consulta, sin licencia declarada, sin idiomas declarados y con benchmarks marcados como pendientes por el propio autor. Resulta útil para reproducir experimentos sobre ajuste fino multimodal y para estudiar el efecto de configuraciones concretas (época, enmascaramiento, semilla) en un pipeline LLaVA, pero no es un modelo apto para producción sin una evaluación previa propia.
 
@@ -31,7 +31,7 @@ La etiqueta de arquitectura `llava_llama` y el modelo base declarado sitúan est
 
 En cuanto al entrenamiento, el autor indica que se trata de un ajuste fino completo sobre el modelo base, es decir, se han actualizado todos los pesos y no solo un adaptador LoRA. El identificador del repositorio (`...7b-mask-s42-ep1`) apunta a una configuración con enmascaramiento y semilla 42 en la primera época, pero la model card no especifica el volumen de tokens de entrenamiento, la composición del dataset, ni si se aplicaron etapas de alineación como RLHF o DPO. El autor remite a un fichero `reproduction.json` del repositorio para los ajustes de entrenamiento y las revisiones, y advierte de que los perfiles de paper son reconstrucciones con supuestos documentados, no checkpoints de los autores originales.
 
-Una advertencia operativa relevante: el autor indica que el checkpoint debe cargarse con el loader fijado de TARS/LLaVA y no con un cargador LoRA de HuggingFace. Esto implica que el pipeline de inferencia estándar de HuggingFace puede no interpretar correctamente los pesos sin adaptaciones.
+Una advertencia operativa relevante: el autor indica que el checkpoint debe cargarse con el loader fijado de TARS/LLaVA y no con un cargador LoRA de Hugging Face. Esto implica que el pipeline de inferencia estándar de Hugging Face puede no interpretar correctamente los pesos sin adaptaciones.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ Una advertencia operativa relevante: el autor indica que el checkpoint debe carg
 - Prototipado de asistentes visuales en laboratorio: permite validar interfaces de pregunta-respuesta sobre imagen antes de invertir en un modelo con licencia comercial clara.
 - Analisis exploratorio de documentos escaneados y capturas: como punto de partida para pipelines de extracción de información a partir de imágenes, sujeto a verificación manual por el riesgo de alucinación.
 - Evaluacion comparativa de loaders y formatos: dado que el autor exige el loader fijado de TARS/LLaVA, es un caso de prueba útil para validar la compatibilidad de herramientas como vLLM o llama.cpp con checkpoints en formato LLaVA original.
-- Docencia y formacion tecnica: sirve como ejemplo practico de artefacto de investigación publicado en HuggingFace con trazabilidad parcial (modelo base declarado, fichero de reproducción) y con carencias documentales evidentes.
+- Docencia y formacion tecnica: sirve como ejemplo practico de artefacto de investigación publicado en Hugging Face con trazabilidad parcial (modelo base declarado, fichero de reproducción) y con carencias documentales evidentes.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en 16 bits: los pesos ocupan 14,1 GB, por lo que la inferencia en BF16/FP16 requiere del orden de 16 a 18 GB de VRAM sumando activaciones y caché KV para contextos moderados.
 - GPU recomendadas: RTX 4090 (24 GB), RTX 3090 (24 GB), A100 40 GB, H100 80 GB. Cualquier GPU con al menos 24 GB de VRAM puede alojar el modelo sin cuantizar.
 - Viabilidad en GPU de consumo: sí en tarjetas de 24 GB. En GPUs de 16 GB o menos haría falta cuantización a 8 o 4 bits, y el repositorio no publica versiones cuantizadas, por lo que habría que generarlas.
-- Opciones de despliegue: vLLM incluye soporte para arquitecturas LLaVA, pero debe verificarse la compatibilidad con el formato exacto de este checkpoint; llama.cpp y Ollama requerirían una conversión a GGUF tanto del modelo de lenguaje como del proyector. El propio autor señala que la carga debe hacerse con el loader fijado de TARS/LLaVA y no con un cargador LoRA de HuggingFace.
+- Opciones de despliegue: vLLM incluye soporte para arquitecturas LLaVA, pero debe verificarse la compatibilidad con el formato exacto de este checkpoint; llama.cpp y Ollama requerirían una conversión a GGUF tanto del modelo de lenguaje como del proyector. El propio autor señala que la carga debe hacerse con el loader fijado de TARS/LLaVA y no con un cargador LoRA de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor ni por terceros.
 - Almacenamiento: 14,1 GB solo para los pesos, más el espacio necesario para el codificador visual si se descarga por separado.
 
@@ -88,17 +88,17 @@ La diferencia principal frente a las alternativas no está en las capacidades de
 - Idiomas no declarados: el modelo base está entrenado predominantemente en inglés, por lo que el rendimiento en castellano es incierto y no está medido.
 - Contexto limitado frente a alternativas actuales: el modelo base LLaVA-1.5 trabaja con 4096 tokens, muy por debajo de los 32768 tokens de LLaVA-NeXT o Qwen2-VL.
 - Alucinación de contenido visual: como todo modelo de visión-lenguaje, puede describir objetos, textos o relaciones espaciales que no aparecen en la imagen. Sin benchmarks no hay forma de acotar esta tasa.
-- Carga no estándar: el autor exige el loader fijado de TARS/LLaVA, no un cargador LoRA de HuggingFace. Ignorar esta indicación puede provocar una carga silenciosamente incorrecta de los pesos.
+- Carga no estándar: el autor exige el loader fijado de TARS/LLaVA, no un cargador LoRA de Hugging Face. Ignorar esta indicación puede provocar una carga silenciosamente incorrecta de los pesos.
 - Trazabilidad parcial: la model card remite a `reproduction.json` para los ajustes, pero no documenta el dataset, el número de tokens ni el proceso de alineación.
 - Madurez del repositorio: 14 descargas, 0 likes y una ventana de publicación de menos de un minuto entre creación y actualización, sin señales de validación por parte de la comunidad.
 - Uso responsable: cualquier aplicación sanitaria, legal o financiera basada en este modelo requeriría validación propia y supervisión humana, dado que no hay ninguna métrica publicada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pbcong/tars-paper-v4-20261003-7b-mask-s42-ep1
+- Modelo en Hugging Face: https://huggingface.co/pbcong/tars-paper-v4-20261003-7b-mask-s42-ep1
 - Modelo base declarado (LLaVA-1.5-7b): https://huggingface.co/liuhaotian/llava-v1.5-7b
 - Checkpoint hermano de la misma serie (13B, epoch 3): https://huggingface.co/pbcong/tars-paper-reconstruction-13b-mask-s42-ep3
-- Fichero de ajustes de entrenamiento citado por el autor: `reproduction.json` dentro del repositorio de HuggingFace
+- Fichero de ajustes de entrenamiento citado por el autor: `reproduction.json` dentro del repositorio de Hugging Face
 - Documentación del proyecto TARS-AI (relación con este checkpoint no confirmada): https://github.com/raphbag/tars-docs
 - Artículo sobre modelado visión-lenguaje con reconocimiento de máscaras (referencia temática por la etiqueta "mask", relación con este modelo no confirmada): https://arxiv.org/abs/2510.27680v2
 - Repositorio Open Access de CVPR 2026 (encontrado en la búsqueda, sin relación confirmada): https://openaccess.thecvf.com/CVPR2026

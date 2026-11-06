@@ -2,7 +2,7 @@
 
 ## Resumen
 
-redfield es un adaptador LoRA de text-to-image publicado en HuggingFace por el usuario Rand000mGuy, entrenado sobre el modelo base krea/Krea-2-Turbo. Se distribuye a traves de la libreria diffusers y esta etiquetado con la plantilla oficial `template:diffusion-lora`, lo que indica que su uso previsto es la personalizacion estetica o de concepto del modelo base mediante un peso adicional de bajo coste computacional. El repositorio ocupa 0,2 GB y no acumula descargas ni "likes" en el momento de la consulta.
+redfield es un adaptador LoRA de text-to-image publicado en Hugging Face por el usuario Rand000mGuy, entrenado sobre el modelo base krea/Krea-2-Turbo. Se distribuye a traves de la libreria diffusers y esta etiquetado con la plantilla oficial `template:diffusion-lora`, lo que indica que su uso previsto es la personalizacion estetica o de concepto del modelo base mediante un peso adicional de bajo coste computacional. El repositorio ocupa 0,2 GB y no acumula descargas ni "likes" en el momento de la consulta.
 
 La informacion publicada es extremadamente escasa: la model card apenas contiene una etiqueta de galeria y un enlace de descarga, sin `instance_prompt`, sin descripcion del concepto entrenado, sin licencia declarada y sin especificaciones de entrenamiento (dataset, pasos, learning rate, rango del LoRA). Esto limita cualquier evaluacion seria del adaptador: no es posible determinar que representa "redfield" ni con que datos se enseno.
 
@@ -81,9 +81,9 @@ La informacion disponible sobre adaptadores comparables es minima. Se recogen lo
 
 | Modelo | Tipo | Base | Contexto | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Rand000mGuy/redfield | LoRA de difusion | krea/Krea-2-Turbo | no aplica | no disponible (repo de 0,2 GB) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Rand000mGuy/oiledskin | LoRA de difusion | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| Rand000mGuy/Irena | LoRA de difusion text-to-image | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 likes |
+| Rand000mGuy/redfield | LoRA de difusion | krea/Krea-2-Turbo | no aplica | no disponible (repo de 0,2 GB) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Rand000mGuy/oiledskin | LoRA de difusion | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| Rand000mGuy/Irena | LoRA de difusion text-to-image | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 likes |
 | Chris Redfield (PixAI) | LoRA de personaje | no disponible | no aplica | no disponible | no disponible | PixAI, plataforma propietaria |
 
 No se dispone de modelos comparables con especificaciones verificables (parametros, contexto, rendimiento o licencia) en la informacion proporcionada.
@@ -102,7 +102,7 @@ No se dispone de modelos comparables con especificaciones verificables (parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rand000mGuy/redfield
+- Modelo en Hugging Face: https://huggingface.co/Rand000mGuy/redfield
 - Modelo base (segun etiqueta `base_model`): https://huggingface.co/krea/Krea-2-Turbo
 - Otro adaptador del mismo autor: https://huggingface.co/Rand000mGuy/oiledskin
 - Otro adaptador del mismo autor: https://huggingface.co/Rand000mGuy/Irena

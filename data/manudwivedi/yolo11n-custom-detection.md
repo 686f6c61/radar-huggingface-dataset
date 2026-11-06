@@ -73,10 +73,10 @@ Estos datos corresponden al modelo base sin ajuste fino. El rendimiento del mode
 
 | Modelo | Parametros | mAP50-95 (COCO) | Latencia T4 (ms) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLO11n (este modelo) | 2,6 M | 39,5 | 1,55 | MIT | HuggingFace, Ultralytics |
+| YOLO11n (este modelo) | 2,6 M | 39,5 | 1,55 | MIT | Hugging Face, Ultralytics |
 | YOLOv8n | 3,2 M | 37,3 | 1,47 | AGPL-3.0 | Ultralytics |
 | YOLOv5n | 1,9 M | 28,0 | 1,20 | AGPL-3.0 | Ultralytics |
-| RT-DETR-nano | 4,3 M | 40,5 | 2,30 | Apache-2.0 | HuggingFace, PaddlePaddle |
+| RT-DETR-nano | 4,3 M | 40,5 | 2,30 | Apache-2.0 | Hugging Face, PaddlePaddle |
 
 YOLO11n supera a YOLOv8n y YOLOv5n en precision con menos o similar numero de parametros. RT-DETR-nano ofrece una precision ligeramente superior pero con el doble de parametros y mayor latencia. La licencia MIT de YOLO11 es una ventaja significativa frente a la AGPL-3.0 de YOLOv8 y YOLOv5, que impone restricciones para uso comercial sin liberar el codigo fuente.
 
@@ -92,7 +92,7 @@ YOLO11n supera a YOLOv8n y YOLOv5n en precision con menos o similar numero de pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ManuDwivedi/yolo11n-custom-detection
+- Repositorio Hugging Face: https://huggingface.co/ManuDwivedi/yolo11n-custom-detection
 - Documentacion oficial de YOLO11: https://docs.ultralytics.com/models/yolo11
 - Repositorio GitHub de Ultralytics YOLO11: https://github.com/ultralytics/yolo11
 - Notebook de ejemplo para entrenamiento personalizado: https://colab.research.google.com/github/pyresearch/notebooks/blob/main/notebook/yolo11_object_detection_custom_dataset.ipynb

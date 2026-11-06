@@ -116,7 +116,7 @@ No se dispone de comparativas publicadas con clasificadores zero-shot generativo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usejul/jul-decision-wemm-4b-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/usejul/jul-decision-wemm-4b-4bit-mlx
 - Modelo base: https://huggingface.co/tencent/WeMM-Embedding-4B
 - Version MLX 4-bit del modelo base: https://huggingface.co/usejul/WeMM-Embedding-4B-mlx-4bit
 - Repositorio del runtime jul: https://github.com/usejul/jul

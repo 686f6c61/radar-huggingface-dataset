@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adrianslopez1997/cnn-transformer-finetuned` es un repositorio de HuggingFace publicado por el usuario adrianslopez1997 que contiene una implementación funcional de una arquitectura híbrida denominada "Cnn Transformer", orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado para producción ni de un checkpoint con resultados de benchmarks: la propia model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado.
+`adrianslopez1997/cnn-transformer-finetuned` es un repositorio de Hugging Face publicado por el usuario adrianslopez1997 que contiene una implementación funcional de una arquitectura híbrida denominada "Cnn Transformer", orientada a tareas de aprendizaje contrastivo. No se trata de un modelo entrenado para producción ni de un checkpoint con resultados de benchmarks: la propia model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado.
 
 El repositorio se centra en código transparente y reproducible: incluye `inference.py` como artefacto principal, junto con `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y el checkpoint de inicialización. La configuración declarada es de escala "xlarge", con atención de ventana deslizante (sliding window), fusión mediante co-attention, activación ReLU y normalización InstanceNorm.
 
@@ -40,7 +40,7 @@ El entrenamiento no está documentado más allá de la receta por defecto: optim
 
 - Pruebas de humo de arquitecturas híbridas CNN-Transformer: el checkpoint permite validar que el pipeline de carga y forward pass funciona antes de invertir en entrenamiento real.
 - Investigación en aprendizaje contrastivo: sirve como base reproducible para comparar variantes de co-attention y ventana deslizante bajo una receta fija (AdamW, schedule polinomial).
-- Desarrollo de adaptadores de carga personalizados: dado que requiere un adaptador explícito, es útil para practicar la integración de arquitecturas no estándar en frameworks de HuggingFace.
+- Desarrollo de adaptadores de carga personalizados: dado que requiere un adaptador explícito, es útil para practicar la integración de arquitecturas no estándar en frameworks de Hugging Face.
 - Reproducibilidad de experimentos: los ficheros `config.json` y `training_args.json` permiten fijar semillas y comparar baselines con la misma exposición de datos.
 - Docencia y prototipado: implementación pequeña (49.600 parámetros) adecuada para estudiar el flujo de un Transformer con componentes convolucionales sin coste computacional.
 - Base para extensiones multimodales: la combinación de InstanceNorm y co-attention es un punto de partida razonable para experimentos de fusión de modalidades, siempre que se entrene y evalúe por separado.
@@ -72,12 +72,12 @@ No se dispone de información sobre modelos directamente comparables de la misma
 - No hay auditoría de robustez, sesgos o equidad; la model card lo declara explícitamente.
 - No se documentan idiomas soportados ni longitud de contexto.
 - No hay resultados de benchmarks ni métricas de rendimiento verificables.
-- Requiere un adaptador explícito para cargarse con APIs automáticas de HuggingFace.
+- Requiere un adaptador explícito para cargarse con APIs automáticas de Hugging Face.
 - El conteo de 49.600 parámetros es incompatible con la etiqueta "xlarge"; la escala real de la arquitectura no está clara.
 - Licencia Apache 2.0 permite uso comercial del código, pero deben revisarse por separado los términos de los datos fuente si se usan datasets externos.
 - Para cualquier evaluación seria, la propia model card recomienda un conjunto de validación específico de la tarea, al menos tres semillas y un baseline de capacidad equivalente.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adrianslopez1997/cnn-transformer-finetuned
+- Repositorio Hugging Face: https://huggingface.co/adrianslopez1997/cnn-transformer-finetuned
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

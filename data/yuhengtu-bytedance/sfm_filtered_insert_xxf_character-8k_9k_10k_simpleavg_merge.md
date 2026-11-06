@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge` es un modelo de lenguaje de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*weight merge*) generada con la herramienta mergekit a partir de tres checkpoints de un mismo entrenamiento: los pasos globales 8000, 9000 y 10000 de una ejecución denominada `filtered_insert_xxf_character`. El checkpoint del paso 10000 actúa como base y los pesos de los tres se combinan mediante el método Linear con normalización activada, produciendo un único modelo en precisión bfloat16.
+`sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge` es un modelo de lenguaje de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión de pesos (*weight merge*) generada con la herramienta mergekit a partir de tres checkpoints de un mismo entrenamiento: los pasos globales 8000, 9000 y 10000 de una ejecución denominada `filtered_insert_xxf_character`. El checkpoint del paso 10000 actúa como base y los pesos de los tres se combinan mediante el método Linear con normalización activada, produciendo un único modelo en precisión bfloat16.
 
 La relevancia de esta publicación es limitada y muy específica: se trata de un artefacto de investigación interna, presumiblemente vinculado al proyecto de medición de seguridad `Pan_Safety_Better_Measurement` (según las rutas incluidas en la model card), y no de un modelo pensado para uso general. La model card no documenta datos de entrenamiento, composición del dataset, idiomas, licencia ni resultados de benchmarks, por lo que buena parte de sus especificaciones figuran como no disponibles.
 
@@ -71,10 +71,10 @@ No hay datos de benchmarks ni de contexto de este modelo que permitan una compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge | 6,86B | no disponible | no disponible | HuggingFace, 0 descargas, sin documentacion |
-| Pythia-6.9B | 6,9B | 2048 tokens (verificar) | Apache 2.0 (verificar) | Publico en HuggingFace, ampliamente usado en investigacion |
-| GPT-J-6B | 6B | 2048 tokens (verificar) | Apache 2.0 (verificar) | Publico en HuggingFace, referencia historica de la familia GPT-NeoX |
-| Falcon-7B | 7B | 2048 tokens (verificar) | Apache 2.0 (verificar) | Publico en HuggingFace, con model card detallada |
+| sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge | 6,86B | no disponible | no disponible | Hugging Face, 0 descargas, sin documentacion |
+| Pythia-6.9B | 6,9B | 2048 tokens (verificar) | Apache 2.0 (verificar) | Publico en Hugging Face, ampliamente usado en investigacion |
+| GPT-J-6B | 6B | 2048 tokens (verificar) | Apache 2.0 (verificar) | Publico en Hugging Face, referencia historica de la familia GPT-NeoX |
+| Falcon-7B | 7B | 2048 tokens (verificar) | Apache 2.0 (verificar) | Publico en Hugging Face, con model card detallada |
 
 La diferencia fundamental no esta en los parametros, sino en la trazabilidad: los modelos comparados publican datos de entrenamiento, licencia y evaluaciones, mientras que este merge carece de toda esa informacion.
 
@@ -92,7 +92,7 @@ La diferencia fundamental no esta en los parametros, sino en la trazabilidad: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo Linear referenciado en las etiquetas (arXiv 2203.05482, "Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time"): https://arxiv.org/abs/2203.05482
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo. Las unicas coincidencias devueltas corresponden a un portal deportivo griego (sport24.gr) sin relacion con el modelo.

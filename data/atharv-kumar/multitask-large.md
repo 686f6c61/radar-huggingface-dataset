@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atharv-kumar/multitask-large es un repositorio de HuggingFace que contiene una implementacion personalizada en PyTorch de una arquitectura denominada Dino orientada a tareas multitarea. No se trata de un modelo preentrenado ni de un checkpoint listo para produccion: el propio autor lo describe como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El repositorio incluye un script de ajuste fino (finetune.py), un fichero de configuracion (config.json), una receta de entrenamiento por defecto (training_args.json) y un checkpoint de inicializacion (model.safetensors).
+Atharv-kumar/multitask-large es un repositorio de Hugging Face que contiene una implementacion personalizada en PyTorch de una arquitectura denominada Dino orientada a tareas multitarea. No se trata de un modelo preentrenado ni de un checkpoint listo para produccion: el propio autor lo describe como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano. El repositorio incluye un script de ajuste fino (finetune.py), un fichero de configuracion (config.json), una receta de entrenamiento por defecto (training_args.json) y un checkpoint de inicializacion (model.safetensors).
 
 El dato mas relevante y a la vez mas llamativo es el recuento real de parametros del checkpoint: 16.576 parametros segun el fichero safetensors, una cifra extraordinariamente baja que contradice la etiqueta "huge" (enorme) empleada en la model card. Esto confirma que el artefacto publicado es un inicializador para pruebas y no un modelo con capacidad funcional real. La model card indica ademas que la configuracion "huge" esta pensada para revision de codigo y experimentos, no como una release preentrenada lista para usar.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, la model card es explicita: el checkpoint no ha sido
 - Plantilla para ajuste fino: el script finetune.py y training_args.json (AdamW con schedule coseno) sirven como punto de partida configurable para experimentos de ajuste sobre datos propios, siempre que el usuario aporte su propio dataset y valide los resultados.
 - Experimentos controlados de arquitectura: permite comparar variantes de atencion, fusion o normalizacion bajo una base de codigo comun, con el objetivo de estudiar el efecto de cada componente en tareas especificas.
 - Baseline de capacidad reducida: al ser un inicializador, puede usarse como linea base de baja capacidad frente a la que medir ganancias de configuraciones mayores, manteniendo el mismo presupuesto de datos y semillas.
-- Docencia y formacion: adecuado para explicar el ciclo completo de definicion de un modelo, configuracion de entrenamiento y publicacion de pesos en HuggingFace sin los costes de un modelo grande.
+- Docencia y formacion: adecuado para explicar el ciclo completo de definicion de un modelo, configuracion de entrenamiento y publicacion de pesos en Hugging Face sin los costes de un modelo grande.
 
 ## Benchmarks y rendimiento
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atharv-kumar/multitask-large | 16.576 | no disponible | sin benchmarks (checkpoint de inicializacion) | MIT | publico en HuggingFace |
-| Modelos Dino/DINOv2 publicados | orden de millones a miles de millones | no disponible | benchmarks publicados por sus autores | varian segun version | publicos en HuggingFace |
+| Atharv-kumar/multitask-large | 16.576 | no disponible | sin benchmarks (checkpoint de inicializacion) | MIT | publico en Hugging Face |
+| Modelos Dino/DINOv2 publicados | orden de millones a miles de millones | no disponible | benchmarks publicados por sus autores | varian segun version | publicos en Hugging Face |
 | Modelos multitarea genericos | varian | varian | benchmarks publicados | varian | publicos |
 
 No se ha identificado en la informacion proporcionada ningun modelo directamente comparable, dado que este repositorio es un andamiaje experimental sin entrenamiento ni evaluacion. La comparacion con implementaciones Dino consolidadas o con modelos multitarea de proposito general no es metodologicamente valida por la diferencia de escala y de estado de entrenamiento.
@@ -85,7 +85,7 @@ No se ha identificado en la informacion proporcionada ningun modelo directamente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Atharv-kumar/multitask-large
+- Repositorio en Hugging Face: https://huggingface.co/Atharv-kumar/multitask-large
 - Ficheros incluidos en el repositorio: finetune.py, README.md, config.json, training_args.json, model.safetensors
 
 Nota: los resultados de la busqueda web proporcionada no guardan relacion con el modelo. Corresponden a la obra artistica "Identity Stretch" de Dennis Oppenheim y no aportan informacion tecnica relevante, por lo que no se incluyen como enlaces utiles. No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion disponible.

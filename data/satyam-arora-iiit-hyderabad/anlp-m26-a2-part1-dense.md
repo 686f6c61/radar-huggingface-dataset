@@ -6,7 +6,7 @@ El modelo `satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-dense` es un checkpoint
 
 La relevancia del modelo es fundamentalmente academica: forma parte de una familia de checkpoints de un mismo trabajo practico en la que existe una variante densa (esta) y variantes con mezcla de expertos (MoE), lo que permite comparar estrategias de arquitectura bajo un presupuesto de tokens de contexto fijo. El autor publica metricas de perplexity y BLEU junto con ficheros de uso de expertos en las variantes MoE, lo que facilita analisis comparativos dentro del aula.
 
-Se distribuye unicamente en formato PyTorch (`model.pt`), sin versiones cuantizadas ni safetensors, y requiere el codigo de arquitectura personalizado del repositorio de la asignatura. No se ha publicado licencia, no tiene descargas ni interacciones en HuggingFace y no se ha publicado paper asociado.
+Se distribuye unicamente en formato PyTorch (`model.pt`), sin versiones cuantizadas ni safetensors, y requiere el codigo de arquitectura personalizado del repositorio de la asignatura. No se ha publicado licencia, no tiene descargas ni interacciones en Hugging Face y no se ha publicado paper asociado.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables publicados para este modelo. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-dense
+- Modelo en Hugging Face: https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-dense
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Perfil del autor: https://huggingface.co/satyam-arora-iiit-hyderabad
 - Repositorio de la asignatura con el codigo de arquitectura y carga: no disponible (la model card lo menciona sin enlace)

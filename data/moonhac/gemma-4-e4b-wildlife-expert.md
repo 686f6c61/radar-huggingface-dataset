@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `moonhac/gemma-4-E4B-wildlife-expert` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Gemma 4 E4B de Google DeepMind. Desarrollado por el usuario moonhac, este modelo está orientado a tareas relacionadas con la vida silvestre, aunque no se proporcionan detalles específicos sobre el dataset o el método de entrenamiento más allá de haber utilizado las librerías Unsloth y TRL de HuggingFace.
+El modelo `moonhac/gemma-4-E4B-wildlife-expert` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de Gemma 4 E4B de Google DeepMind. Desarrollado por el usuario moonhac, este modelo está orientado a tareas relacionadas con la vida silvestre, aunque no se proporcionan detalles específicos sobre el dataset o el método de entrenamiento más allá de haber utilizado las librerías Unsloth y TRL de Hugging Face.
 
 El modelo es multimodal (procesa imágenes y texto) y se distribuye bajo licencia Apache 2.0, con soporte únicamente para el idioma inglés. Según los datos del repositorio, el archivo `safetensors` contiene 7.996.156.490 parámetros, lo que sugiere que el modelo subyacente podría tener una arquitectura MoE con parámetros activos inferiores (la documentación oficial de Gemma 4 E4B indica 4.4B parámetros, aunque no se especifica si son activos o totales). El contexto máximo declarado para la familia Gemma 4 es de hasta 256K tokens, aunque no se confirma si este ajuste lo conserva íntegramente.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en ofrecer una alternativa local y especiali
 
 El modelo es un ajuste fino de `unsloth/gemma-4-e4b-it-unsloth-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits mediante bitsandbytes de Gemma 4 E4B. Según la documentación oficial de Google, Gemma 4 E4B pertenece a la familia Gemma 4, que combina arquitecturas densas y MoE. En concreto, E4B es un modelo multimodal (imagen-texto a texto) con soporte de razonamiento y "Thinking Mode", aunque no se ha confirmado si este ajuste conserva todas las capacidades del modelo original.
 
-El entrenamiento se realizó con las librerías Unsloth (optimización de velocidad) y TRL de HuggingFace, pero no se han publicado detalles sobre el volumen de datos, la composición del dataset ni el método de alineación (RLHF, DPO, etc.). El autor tampoco especifica el número de pasos o épocas. Dado que el archivo safetensors tiene 16 GB, se infiere que el modelo se guardó en precisión fp16/bf16, aunque el punto de partida era una versión de 4 bits.
+El entrenamiento se realizó con las librerías Unsloth (optimización de velocidad) y TRL de Hugging Face, pero no se han publicado detalles sobre el volumen de datos, la composición del dataset ni el método de alineación (RLHF, DPO, etc.). El autor tampoco especifica el número de pasos o épocas. Dado que el archivo safetensors tiene 16 GB, se infiere que el modelo se guardó en precisión fp16/bf16, aunque el punto de partida era una versión de 4 bits.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ Esta tabla es orientativa; los valores de contexto y parámetros de Gemma 4 E4B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moonhac/gemma-4-E4B-wildlife-expert
+- Repositorio Hugging Face: https://huggingface.co/moonhac/gemma-4-E4B-wildlife-expert
 - Documentación oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Página de Gemma 4 E4B (gemma4.dev): https://gemma4.dev/models/gemma-4-e4b
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4

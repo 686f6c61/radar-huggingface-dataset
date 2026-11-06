@@ -74,7 +74,7 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 
 | Modelo | Parametros totales | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Snowball-67B-A2B-Math-RL-E17d-Step8-Repaired | 67,08 B | no disponible | AIME24 3,33 / MATH-500 37,80 / OlympiadBench 5,67 | `other` | HuggingFace, 0 descargas, 0 likes |
+| Snowball-67B-A2B-Math-RL-E17d-Step8-Repaired | 67,08 B | no disponible | AIME24 3,33 / MATH-500 37,80 / OlympiadBench 5,67 | `other` | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de la misma escala (MoE dispersos de ~60-70 B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Exportaciones antiguas `laion/rl-snowball-*` | no disponible | no disponible | no disponible | no disponible | Referenciadas en la model card como posibles exportaciones de router mutable; no se recomienda sustituirlas por este artefacto |
 | Otros brazos / pasos de la campana Snowball | no disponible | no disponible | no disponible (el paso 20 del brazo E17d sigue sin reparar) | `other` | Parcial, segun la model card |
@@ -95,7 +95,7 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17d-Step8-Repaired
+- Repositorio en Hugging Face: https://huggingface.co/open-athena/Snowball-67B-A2B-Math-RL-E17d-Step8-Repaired
 - Archivo de evidencias (dataset con `MATH_EVALS.md` y artefactos): https://huggingface.co/datasets/penfever/snowball-67b-a2b-math-rl-artifacts
 - Issue del experimento en Marin: https://github.com/marin-community/marin/issues/7786
 - Fuente del artefacto original: `s3://marin-us-east-02a/marin/exports/snowball-bias-repaired/rl-snowball-e17d-rno2a-rlvrmath-lossfree-sr-20260825-014634/global_step_8/policy/`

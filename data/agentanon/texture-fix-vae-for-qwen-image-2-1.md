@@ -100,7 +100,7 @@ La comparación directa solo es posible frente al VAE oficial de Qwen-Image-2.1,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AgentAnon/texture-fix-vae-for-qwen-image-2.1
+- Repositorio Hugging Face: https://huggingface.co/AgentAnon/texture-fix-vae-for-qwen-image-2.1
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Carpeta del VAE oficial de Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1/tree/main/vae
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE

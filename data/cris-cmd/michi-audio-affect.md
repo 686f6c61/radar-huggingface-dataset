@@ -95,7 +95,7 @@ La busqueda web realizada no devolvio resultados relacionados con este modelo; l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cris-cmd/michi-audio-affect
+- Modelo en Hugging Face: https://huggingface.co/cris-cmd/michi-audio-affect
 - Repositorio del proyecto Michi: https://github.com/cris-cmd/michi
 - Modelo base: https://huggingface.co/facebook/wav2vec2-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/myleslinder/crema-d

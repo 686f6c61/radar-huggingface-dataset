@@ -66,5 +66,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ziadakee55/masar-asr-engine
+- Repositorio de Hugging Face: https://huggingface.co/ziadakee55/masar-asr-engine
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código) en los resultados de búsqueda.

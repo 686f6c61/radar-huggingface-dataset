@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-12
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-12
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - CIRF-Qwen3-8B-Instruct-Full: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Full
 - CIRF-Qwen3-8B-Instruct-Zero-Results: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Zero-Results

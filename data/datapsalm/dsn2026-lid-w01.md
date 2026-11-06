@@ -77,10 +77,10 @@ No hay datos publicados de MMLU, HumanEval, GSM8K ni de otros benchmarks estánd
 
 | Modelo | Parametros | Ventana / contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| datapsalm/dsn2026-lid-w01 | 20,2 M (solo encoder) | 10 s de audio | 12 lenguas nigerianas + `other` | Apache-2.0 | HuggingFace, transformers |
-| openai/whisper-base | ~74 M (encoder + decoder) | 30 s de audio | Multilingue (ASR, ~99 lenguas) | MIT (modelo base) | HuggingFace, ampliamente desplegado |
-| speechbrain/lang-id-voxlingua107-ecapa | no disponible | no disponible | 107 lenguas | no disponible | HuggingFace, SpeechBrain |
-| facebook/mms-lid-256 | no disponible | no disponible | 256 lenguas | CC-BY-NC 4.0 (no comercial) | HuggingFace, transformers |
+| datapsalm/dsn2026-lid-w01 | 20,2 M (solo encoder) | 10 s de audio | 12 lenguas nigerianas + `other` | Apache-2.0 | Hugging Face, transformers |
+| openai/whisper-base | ~74 M (encoder + decoder) | 30 s de audio | Multilingue (ASR, ~99 lenguas) | MIT (modelo base) | Hugging Face, ampliamente desplegado |
+| speechbrain/lang-id-voxlingua107-ecapa | no disponible | no disponible | 107 lenguas | no disponible | Hugging Face, SpeechBrain |
+| facebook/mms-lid-256 | no disponible | no disponible | 256 lenguas | CC-BY-NC 4.0 (no comercial) | Hugging Face, transformers |
 
 La comparación relevante no es de rendimiento absoluto sino de especialización: los modelos genéricos de LID cubren más lenguas, pero ninguno de los comparadores lista las doce lenguas nigerianas de este checkpoint ni incluye una clase `other` calibrada para el dominio de la competición. No hay datos públicos que permitan comparar F1 entre estas alternativas en el mismo conjunto de evaluación.
 
@@ -98,7 +98,7 @@ La comparación relevante no es de rendimiento absoluto sino de especialización
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datapsalm/dsn2026-lid-w01
+- Modelo en Hugging Face: https://huggingface.co/datapsalm/dsn2026-lid-w01
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Data-Science-Nigeria/dsn-2026-lid-train
 - Paper de Omnilingual ASR (fuente parcial de los datos): https://arxiv.org/abs/2511.09690

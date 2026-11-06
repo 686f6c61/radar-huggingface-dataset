@@ -118,7 +118,7 @@ Pluto se sitúa por delante de GPT-2 en las tareas de conocimiento escolar y cie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xxparthparekhxx/pluto-124m-chat
+- Modelo en Hugging Face: https://huggingface.co/xxparthparekhxx/pluto-124m-chat
 - Modelo base: https://huggingface.co/xxparthparekhxx/pluto-124m-base
 - Perfil del autor en GitHub: https://github.com/xxparthparekhxx
 - Dataset de preentrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

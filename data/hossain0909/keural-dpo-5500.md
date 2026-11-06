@@ -83,7 +83,7 @@ Keural se diferencia por su especialización en coreano con un pipeline de aline
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-dpo-5500
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-dpo-5500
 - Modelo base (SFT): https://huggingface.co/mkd-hossain/keural-sft-18k
 - Dataset SFT: https://huggingface.co/datasets/mkd-chanwoo/keural-SFT
 - Paper, repositorio de código y demos: no disponible

@@ -120,7 +120,7 @@ Comparacion con modelos de terceros (Gemma 3, Llama 3.x, Qwen 2.5/3 de tamano si
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pearsonkyle/gemma-4-E4B-imatrix-awq-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pearsonkyle/gemma-4-E4B-imatrix-awq-GGUF
 - Modelo base: google/gemma-4-E4B-it (referenciado en el campo `base_model`)
 - Modelo base con cuantizacion consciente: google/gemma-4-E4B-it-qat-q4_0-unquantized (referenciado en la model card)
 - Dataset de calibracion: pearsonkyle/llmtk-sft-corpus-v2

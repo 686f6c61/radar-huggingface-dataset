@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Animagine XL 3.1 es un modelo de difusion latente texto-a-imagen especializado en ilustracion estilo anime, desarrollado por Cagliostro Research Lab y publicado en HuggingFace por el usuario Plana-Chan. Se trata de un fine-tune de Stable Diffusion XL que parte del modelo base cagliostrolab/animagine-xl-3.0, y su objetivo es generar personajes de series de anime conocidas con mayor fidelidad anatomica, composicion y coherencia de estilo que la version anterior. Esta pensado para fans, ilustradores y creadores de contenido que necesitan representaciones detalladas de personajes anime.
+Animagine XL 3.1 es un modelo de difusion latente texto-a-imagen especializado en ilustracion estilo anime, desarrollado por Cagliostro Research Lab y publicado en Hugging Face por el usuario Plana-Chan. Se trata de un fine-tune de Stable Diffusion XL que parte del modelo base cagliostrolab/animagine-xl-3.0, y su objetivo es generar personajes de series de anime conocidas con mayor fidelidad anatomica, composicion y coherencia de estilo que la version anterior. Esta pensado para fans, ilustradores y creadores de contenido que necesitan representaciones detalladas de personajes anime.
 
 El modelo hereda la arquitectura SDXL completa: un U-Net de difusion con atencion cruzada, doble codificador de texto (CLIP ViT-L y OpenCLIP ViT-bigG) y un VAE para decodificar la imagen latente. Cuenta con aproximadamente 2.567 millones de parametros (2,57 B) y un repositorio de 13,9 GB, coherente con los pesos en precision fp16 de sus distintos componentes.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Animagine XL 3.1 | ~2,57 B | 77 tokens por encoder (SDXL) | openrail++ | HuggingFace (diffusers) |
-| Animagine XL 3.0 (modelo base) | no disponible | 77 tokens por encoder (SDXL) | no disponible | HuggingFace |
-| Stable Diffusion XL (base) | ~2,6 B | 77 tokens por encoder | no disponible (CreativeML Open RAIL++-M en el modelo original) | HuggingFace |
+| Animagine XL 3.1 | ~2,57 B | 77 tokens por encoder (SDXL) | openrail++ | Hugging Face (diffusers) |
+| Animagine XL 3.0 (modelo base) | no disponible | 77 tokens por encoder (SDXL) | no disponible | Hugging Face |
+| Stable Diffusion XL (base) | ~2,6 B | 77 tokens por encoder | no disponible (CreativeML Open RAIL++-M en el modelo original) | Hugging Face |
 
 Los datos de rendimiento comparado entre estos modelos no estan disponibles en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ Los datos de rendimiento comparado entre estos modelos no estan disponibles en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Plana-Chan/animagine-xl-3.1
+- Modelo en Hugging Face: https://huggingface.co/Plana-Chan/animagine-xl-3.1
 - Modelo base: https://huggingface.co/cagliostrolab/animagine-xl-3.0
 - Organizacion del desarrollador: https://huggingface.co/cagliostrolab
 - Nota: la busqueda web no devolvio enlaces tecnicos relevantes (papers, repos o demos) para este modelo.

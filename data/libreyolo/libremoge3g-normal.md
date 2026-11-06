@@ -4,7 +4,7 @@
 
 LibreMoGe3g-normal es un modelo de estimacion de normales de superficie (surface normals) empaquetado en el formato de checkpoint de LibreYOLO. Se deriva directamente del modelo oficial MoGe-3 ViT-g/14 de Microsoft Research, publicado originalmente bajo el identificador Ruicheng/moge-3-vitg. El autor del reempaquetado es LibreYOLO, un proyecto que adapta modelos de vision a su propia libreria de inferencia.
 
-El modelo resuelve la tarea de image-to-image de estimacion de normales de superficie a partir de una imagen RGB de entrada, produciendo un mapa de normales unitarias en el marco de OpenCV. Aunque la pipeline declarada en HuggingFace es depth-estimation, los mismos tensores del checkpoint sirven tanto para la tarea de profundidad como para la de normales, segun indica la propia model card.
+El modelo resuelve la tarea de image-to-image de estimacion de normales de superficie a partir de una imagen RGB de entrada, produciendo un mapa de normales unitarias en el marco de OpenCV. Aunque la pipeline declarada en Hugging Face es depth-estimation, los mismos tensores del checkpoint sirven tanto para la tarea de profundidad como para la de normales, segun indica la propia model card.
 
 Su relevancia radica en que expone un modelo de vision geometrica de gran tamano (encoder DINOv2 ViT-g/14, repositorio de 5.0 GB) bajo una licencia permisiva MIT y en un formato integrado con la libreria LibreYOLO, lo que facilita su uso en pipelines de vision 3D, reconstruccion y analisis de escenas sin depender del tooling original de MoGe.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreMoGe3g-normal | no disponible (ViT-g/14, repo 5.0 GB) | no aplica | Normales de superficie / profundidad | MIT | HuggingFace (LibreYOLO) |
-| MoGe-3 ViT-g/14 (Ruicheng/moge-3-vitg) | no disponible | no aplica | Profundidad y normales | MIT (pesos) | HuggingFace |
-| DINOv2 ViT-g/14 (Meta AI) | no disponible | no aplica | Representaciones visuales (backbone) | Apache-2.0 | HuggingFace / Meta |
+| LibreMoGe3g-normal | no disponible (ViT-g/14, repo 5.0 GB) | no aplica | Normales de superficie / profundidad | MIT | Hugging Face (LibreYOLO) |
+| MoGe-3 ViT-g/14 (Ruicheng/moge-3-vitg) | no disponible | no aplica | Profundidad y normales | MIT (pesos) | Hugging Face |
+| DINOv2 ViT-g/14 (Meta AI) | no disponible | no aplica | Representaciones visuales (backbone) | Apache-2.0 | Hugging Face / Meta |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreMoGe3g-normal
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreMoGe3g-normal
 - Modelo fuente MoGe-3 ViT-g/14: https://huggingface.co/Ruicheng/moge-3-vitg
 - Repositorio oficial MoGe (Microsoft): https://github.com/microsoft/MoGe/tree/74fbce054ebed49800de42d0ad0e83495065719a
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo

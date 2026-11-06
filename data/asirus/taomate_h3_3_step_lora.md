@@ -93,7 +93,7 @@ El modelo original del que deriva este adaptador es TaoLiveAIGC/TaoMate-H3, tamb
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Asirus/TaoMate_H3_3_Step_LoRA
+- Hugging Face del adaptador: https://huggingface.co/Asirus/TaoMate_H3_3_Step_LoRA
 - Modelo original: https://huggingface.co/TaoLiveAIGC/TaoMate-H3
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia MiniMax H3 Community License: https://huggingface.co/MiniMaxAI/MiniMax-H3

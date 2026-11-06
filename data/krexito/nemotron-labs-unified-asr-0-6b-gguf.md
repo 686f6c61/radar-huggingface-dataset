@@ -100,6 +100,6 @@ No se han identificado en la información disponible otras alternativas de ASR c
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/krexito/nemotron-labs-unified-asr-0.6b-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/krexito/nemotron-labs-unified-asr-0.6b-GGUF
 - Modelo base: https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b
 - Runtime audio.cpp: https://github.com/0xShug0/audio.cpp

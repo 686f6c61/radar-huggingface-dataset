@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario `sfsfff22` en HuggingFace bajo el identificador `sfsfff22/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento sobresaliente en benchmarks de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes. Sin embargo, la información técnica disponible es extremadamente limitada: el repositorio tiene 0 descargas, 0 likes, un tamaño de 0.0 GB y no se proporcionan detalles sobre arquitectura, número de parámetros, contexto, ni datos de entrenamiento. Los tags indican `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en transformer, pero no hay confirmación oficial. La licencia es MIT, lo que permite uso comercial, pero la falta de especificaciones y de un repositorio de código accesible impide una evaluación rigurosa.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario `sfsfff22` en Hugging Face bajo el identificador `sfsfff22/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente su capacidad de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento sobresaliente en benchmarks de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes. Sin embargo, la información técnica disponible es extremadamente limitada: el repositorio tiene 0 descargas, 0 likes, un tamaño de 0.0 GB y no se proporcionan detalles sobre arquitectura, número de parámetros, contexto, ni datos de entrenamiento. Los tags indican `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en transformer, pero no hay confirmación oficial. La licencia es MIT, lo que permite uso comercial, pero la falta de especificaciones y de un repositorio de código accesible impide una evaluación rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ MyAwesomeModel es un modelo de lenguaje presentado por el usuario `sfsfff22` en 
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles técnicos sobre la arquitectura del modelo. Los metadatos de HuggingFace incluyen las etiquetas `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que podría indicar una arquitectura basada en transformer con codificador (encoder-only), similar a BERT, pero la descripción del modelo habla de capacidades de razonamiento profundo, generación de código y diálogo, que son típicas de modelos decoder-only de tipo GPT. No se especifica el número de capas, dimensiones ocultas, ni el mecanismo de atención. Tampoco se detalla el proceso de entrenamiento: no hay información sobre el volumen de tokens, composición del dataset, ni si se utilizaron técnicas como RLHF, DPO o ajuste fino supervisado. La única mención relevante es que se introdujeron "mecanismos de optimización algorítmica" durante el post-entrenamiento, pero sin especificar en qué consisten. El repositorio no contiene archivos de pesos (tamaño 0.0 GB), por lo que no es posible inspeccionar la arquitectura directamente.
+La model card no proporciona detalles técnicos sobre la arquitectura del modelo. Los metadatos de Hugging Face incluyen las etiquetas `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que podría indicar una arquitectura basada en transformer con codificador (encoder-only), similar a BERT, pero la descripción del modelo habla de capacidades de razonamiento profundo, generación de código y diálogo, que son típicas de modelos decoder-only de tipo GPT. No se especifica el número de capas, dimensiones ocultas, ni el mecanismo de atención. Tampoco se detalla el proceso de entrenamiento: no hay información sobre el volumen de tokens, composición del dataset, ni si se utilizaron técnicas como RLHF, DPO o ajuste fino supervisado. La única mención relevante es que se introdujeron "mecanismos de optimización algorítmica" durante el post-entrenamiento, pero sin especificar en qué consisten. El repositorio no contiene archivos de pesos (tamaño 0.0 GB), por lo que no es posible inspeccionar la arquitectura directamente.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ No es posible realizar una comparativa rigurosa porque no se conocen las caracte
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), sin archivos de pesos ni configuración. No es un modelo descargable ni ejecutable.
+- El repositorio de Hugging Face está vacío (0.0 GB), sin archivos de pesos ni configuración. No es un modelo descargable ni ejecutable.
 - No se proporciona ninguna especificación técnica verificable: arquitectura, número de parámetros, contexto, tokenizador, etc.
 - Los benchmarks presentados carecen de contexto metodológico: no se indica qué datasets se usaron, ni qué métricas exactas, ni qué modelos son "Model1", "Model2" y "Model1-v2".
 - Las afirmaciones sobre rendimiento (p. ej., 87.5% en AIME 2025) no pueden ser validadas sin acceso al modelo o a un paper técnico.
@@ -96,5 +96,5 @@ No es posible realizar una comparativa rigurosa porque no se conocen las caracte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sfsfff22/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sfsfff22/MyAwesomeModel-TestRepo
 - No se proporcionan enlaces a papers, blogs, repositorios de código ni demos en la información disponible.

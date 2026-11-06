@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e0` es un checkpoint derivado de la familia Mistral 7B, publicado en HuggingFace por el usuario PessimisticDPO. La nomenclatura del repositorio indica que se trata de un experimento de ajuste fino sobre `mistral-7b-sft-beta` (el checkpoint SFT de HuggingFaceH4 que sirve de base a Zephyr-7B-beta), con hiperparámetros codificados en el propio nombre: `a0.1` (alpha), `b0.1` (beta del objetivo DPO), `L4` (rango LoRA 4), `overlap_subsample` (estrategia de muestreo de pares de preferencia) y `l0-e0` (probablemente semillas o índices de capas). Se trata, por tanto, de un artefacto de investigación para el estudio de variantes de optimización con preferencias, no de un modelo listo para producción.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e0` es un checkpoint derivado de la familia Mistral 7B, publicado en Hugging Face por el usuario PessimisticDPO. La nomenclatura del repositorio indica que se trata de un experimento de ajuste fino sobre `mistral-7b-sft-beta` (el checkpoint SFT de HuggingFaceH4 que sirve de base a Zephyr-7B-beta), con hiperparámetros codificados en el propio nombre: `a0.1` (alpha), `b0.1` (beta del objetivo DPO), `L4` (rango LoRA 4), `overlap_subsample` (estrategia de muestreo de pares de preferencia) y `l0-e0` (probablemente semillas o índices de capas). Se trata, por tanto, de un artefacto de investigación para el estudio de variantes de optimización con preferencias, no de un modelo listo para producción.
 
 La model card está autogenerada y no contiene información sustantiva: no declara autoría efectiva, datos de entrenamiento, licencia, idiomas ni resultados de evaluación. Todos los campos descriptivos aparecen como `[More Information Needed]`. El tamaño del repositorio (0,2 GB) es muy inferior a los ~14,5 GB que ocuparían los pesos completos de un modelo de 7 000 millones de parámetros en fp16, lo que apunta con alta probabilidad a un adaptador LoRA o a un subconjunto parcial de pesos, y no a un checkpoint completo e independiente.
 
@@ -30,7 +30,7 @@ La relevancia de esta ficha es fundamentalmente metodológica: sirve para docume
 
 No hay información publicada por el autor sobre la arquitectura, los datos de entrenamiento, el número de tokens vistos ni el procedimiento de ajuste. Lo único verificable son las etiquetas del repositorio (`transformers`, `safetensors`, `endpoints_compatible`, `arxiv:1910.09700`, `region:us`) y el propio identificador del modelo, que sugiere un pipeline de ajuste supervisado seguido de optimización con preferencias, con los siguientes componentes inferidos a partir del nombre: rango LoRA `L4` con `alpha = 0.1`, coeficiente `beta = 0.1` (habitual en DPO y variantes) y una estrategia de construcción de pares denominada `overlap_subsample`. El prefijo "Pessimistic" apunta a una variante de DPO que penaliza de forma conservadora las respuestas del modelo de referencia (por ejemplo, en la línea de Pessimistic DPO), aunque no se aporta ninguna referencia bibliográfica que lo confirme.
 
-La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre este modelo, sino a Lacoste et al. (2019), el trabajo sobre estimación de impacto ambiental que aparece en la plantilla por defecto de las model cards de HuggingFace. No debe interpretarse como documentación técnica del checkpoint. Tampoco se declara si el resultado final es un adaptador sobre el modelo base o un merge completo, ni si hubo etapas adicionales de RLHF, DPO u otras.
+La etiqueta `arxiv:1910.09700` no corresponde a un artículo sobre este modelo, sino a Lacoste et al. (2019), el trabajo sobre estimación de impacto ambiental que aparece en la plantilla por defecto de las model cards de Hugging Face. No debe interpretarse como documentación técnica del checkpoint. Tampoco se declara si el resultado final es un adaptador sobre el modelo base o un merge completo, ni si hubo etapas adicionales de RLHF, DPO u otras.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Adaptador frente a modelo completo: dado el tamaño del repositorio (0,2 GB), es probable que se necesite cargar por separado el modelo base sobre el que se aplica. Sin esa base identificada, el checkpoint puede no ser utilizable de forma autónoma.
 - GPU recomendadas: no disponibles para este modelo. Para un modelo de 7B en fp16 se suelen emplear A100 40 GB, H100 80 GB, L40S o RTX 4090 (24 GB); en cuantización de 4 bits cabe en GPU de consumo con 8-12 GB de VRAM.
 - GPU de consumo: probablemente viable en RTX 3060 12 GB, RTX 4070 o RTX 4090 si se aplica cuantización de 4 bits y el checkpoint resulta ser un modelo completo funcional; no confirmado.
-- Opciones de despliegue: `transformers` (librería declarada en el repositorio), compatible con endpoints de HuggingFace según la etiqueta `endpoints_compatible`. El uso con vLLM, TGI, llama.cpp u Ollama requeriría convertir los pesos y, en su caso, fusionar el adaptador con el modelo base; no hay instrucciones publicadas.
+- Opciones de despliegue: `transformers` (librería declarada en el repositorio), compatible con endpoints de Hugging Face según la etiqueta `endpoints_compatible`. El uso con vLLM, TGI, llama.cpp u Ollama requeriría convertir los pesos y, en su caso, fusionar el adaptador con el modelo base; no hay instrucciones publicadas.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo, TTFT ni requisitos de memoria medidos.
 
 ## Comparativa con modelos similares
@@ -71,16 +71,16 @@ La comparación se establece con modelos de la misma categoría (transformer dec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e0 | no disponible (~7B si hereda de Mistral 7B) | no disponible | no disponible | HuggingFace, 0 descargas, repositorio de 0,2 GB | no disponible |
-| Mistral 7B Instruct v0.2 (Mistral AI) | ~7,3B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Métricas públicas en la model card del autor |
-| Zephyr-7B-beta (HuggingFaceH4) | ~7,3B | 32 768 tokens | MIT | HuggingFace, con DPO documentado | Métricas públicas en la model card del autor |
-| Llama 3 8B Instruct (Meta) | ~8B | 8 192 tokens | Licencia comunitaria de Meta | HuggingFace, con restricciones de uso | Métricas públicas en la model card del autor |
+| mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e0 | no disponible (~7B si hereda de Mistral 7B) | no disponible | no disponible | Hugging Face, 0 descargas, repositorio de 0,2 GB | no disponible |
+| Mistral 7B Instruct v0.2 (Mistral AI) | ~7,3B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Métricas públicas en la model card del autor |
+| Zephyr-7B-beta (HuggingFaceH4) | ~7,3B | 32 768 tokens | MIT | Hugging Face, con DPO documentado | Métricas públicas en la model card del autor |
+| Llama 3 8B Instruct (Meta) | ~8B | 8 192 tokens | Licencia comunitaria de Meta | Hugging Face, con restricciones de uso | Métricas públicas en la model card del autor |
 
 Nota: los datos de contexto y licencia de la columna correspondiente a este checkpoint figuran como "no disponible" porque el repositorio no los declara; los del resto de modelos son los publicados por sus respectivos autores.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla autogenerada por HuggingFace, sin datos de entrenamiento, evaluación, uso previsto ni limitaciones.
+- Ausencia total de documentación: la model card es la plantilla autogenerada por Hugging Face, sin datos de entrenamiento, evaluación, uso previsto ni limitaciones.
 - Licencia sin declarar: al no especificarse licencia en el repositorio, no hay autorización explícita de uso comercial ni de redistribución. Cualquier uso en producción queda en un limbo legal hasta que el autor lo aclare.
 - Riesgo de checkpoint incompleto: con 0,2 GB de tamaño, es probable que se trate de un adaptador LoRA o de pesos parciales. Si se intenta cargar como modelo completo, puede fallar o producir resultados degenerados. Es imprescindible inspeccionar el listado de ficheros del repositorio antes de usarlo.
 - Dependencia de un modelo base no identificado: sin saber con certeza sobre qué checkpoint se aplicó el ajuste, no se puede garantizar la reproducibilidad ni el comportamiento esperado.
@@ -94,8 +94,8 @@ Nota: los datos de contexto y licencia de la columna correspondiente a este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e0
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e0
 - Modelo base probable (inferido a partir del nombre, no confirmado por el autor): https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
-- Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, estimación de impacto ambiental, plantilla por defecto de HuggingFace): https://arxiv.org/abs/1910.09700
-- Perfil del autor en HuggingFace: https://huggingface.co/PessimisticDPO
+- Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, estimación de impacto ambiental, plantilla por defecto de Hugging Face): https://arxiv.org/abs/1910.09700
+- Perfil del autor en Hugging Face: https://huggingface.co/PessimisticDPO
 - Resultados de la búsqueda web: no se encontró ninguna fuente relevante sobre este modelo; los resultados devueltos correspondían a páginas generales de Wikipedia sin relación con el checkpoint.

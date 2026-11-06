@@ -71,5 +71,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DAPS-Math/DAPS-selector
+- Hugging Face: https://huggingface.co/DAPS-Math/DAPS-selector
 - Pagina del proyecto DAPS: https://relational-conjecturing.github.io/Dependency-Aware-Premise-Selection/

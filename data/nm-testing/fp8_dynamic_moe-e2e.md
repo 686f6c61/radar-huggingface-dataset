@@ -67,5 +67,5 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de este 
 
 ## Enlaces
 
-- [HuggingFace: nm-testing/fp8_dynamic_moe-e2e](https://huggingface.co/nm-testing/fp8_dynamic_moe-e2e)
+- [Hugging Face: nm-testing/fp8_dynamic_moe-e2e](https://huggingface.co/nm-testing/fp8_dynamic_moe-e2e)
 - [Librería compressed-tensors (referencia indirecta)](https://github.com/neuralmagic/compressed-tensors) (no incluida en la información proporcionada, pero inferida del tag)

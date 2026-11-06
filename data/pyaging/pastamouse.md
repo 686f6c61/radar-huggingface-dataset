@@ -44,7 +44,7 @@ El entrenamiento original del modelo Pasta se describe en el preprint de Saligno
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo se describe en el preprint de Salignon et al. (2025), pero no se incluyen métricas de rendimiento (como correlación con edad cronológica, error absoluto medio, etc.) en la model card de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo se describe en el preprint de Salignon et al. (2025), pero no se incluyen métricas de rendimiento (como correlación con edad cronológica, error absoluto medio, etc.) en la model card de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para comparar pastamouse con otros relo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/pastamouse
+- Hugging Face: https://huggingface.co/pyaging/pastamouse
 - Paper original (Pasta): Salignon, J. et al. Pasta, a versatile transcriptomic clock, maps the chemical and genetic determinants of aging and rejuvenation. bioRxiv 2025.06.04.657785 (2025). https://doi.org/10.1101/2025.06.04.657785
 - Documentación de pyaging: https://pyaging.readthedocs.io

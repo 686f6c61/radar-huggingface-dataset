@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.5-4B-ARA-heretic-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.5-4B-ARA-heretic-MLX-4bit
 - Modelo fuente: https://huggingface.co/richardyoung/Qwen3.5-4B-ARA-heretic
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio MLX: https://github.com/ml-explore/mlx

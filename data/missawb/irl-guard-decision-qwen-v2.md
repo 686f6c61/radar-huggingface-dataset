@@ -147,7 +147,7 @@ La ventaja de qwen-ft-v2 es clara en los tres regímenes, especialmente en chart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MissawB/irl-guard-decision-qwen-v2
+- Modelo en Hugging Face: https://huggingface.co/MissawB/irl-guard-decision-qwen-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/MissawB/irl-guard-decisions-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth Studio: https://unsloth.ai

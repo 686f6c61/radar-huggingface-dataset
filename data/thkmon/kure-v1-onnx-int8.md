@@ -90,7 +90,7 @@ La comparación se limita a lo que consta en la información proporcionada: la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thkmon/KURE-v1-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/thkmon/KURE-v1-onnx-int8
 - Modelo base: https://huggingface.co/nlpai-lab/KURE-v1
 
 Nota: la búsqueda web asociada a esta ficha no devolvió resultados relevantes sobre el modelo (únicamente perfiles de redes sociales sin relación con el proyecto). No se han localizado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -89,7 +89,7 @@ Los cuatro modelos pertenecen a la misma familia de conversiones de ZeroModels y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/multi-qa-mpnet-base-dot-v1
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/multi-qa-mpnet-base-dot-v1
 - Checkpoint original: https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1
 - Revision original congelada: https://huggingface.co/sentence-transformers/multi-qa-mpnet-base-dot-v1/tree/17997f24dca0df1a4fed68894fb0e1e133e60482
 - Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels

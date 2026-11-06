@@ -39,7 +39,7 @@ Lo unico verificable en este repositorio es el proceso de cuantizacion: se trata
 ## Capacidades
 
 - El unico tag funcional declarado en el repositorio es `conversational`, lo que apunta a uso en dialogos multi-turno.
-- El repositorio incluye el tag `endpoints_compatible`, orientado a su uso mediante endpoints compatibles con el formato de HuggingFace.
+- El repositorio incluye el tag `endpoints_compatible`, orientado a su uso mediante endpoints compatibles con el formato de Hugging Face.
 - No se documentan en la informacion disponible capacidades especificas de razonamiento, generacion de codigo, matematicas, vision, audio ni modo de pensamiento (thinking mode).
 - No se documenta en la informacion disponible soporte de tool calling o function calling.
 - No se documenta en la informacion disponible soporte para agentes o razonamiento multi-paso.
@@ -94,7 +94,7 @@ Para comparar con modelos de otras familias de tamano similar seria necesario di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/willspeak/Qwen3.5-9B-Q4_K_M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/willspeak/Qwen3.5-9B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Fuente del GGUF: https://huggingface.co/voconly-org/Qwen3.5-9B-Q4_K_M-GGUF
 - Revision de origen declarada: 7f79270294f9795319831dcf1ce3f81ed16aaf9a

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `victoraccount/wsd-training-dataset_11qq3dfi` es un encoder basado en la arquitectura XLM-RoBERTa, diseñado para extracción de características (feature extraction). Publicado en HuggingFace por el usuario `victoraccount` el 30 de agosto de 2026, el nombre del repositorio sugiere que está relacionado con un dataset de entrenamiento para desambiguación de sentidos de palabras (WSD, por sus siglas en inglés), aunque no se proporciona documentación técnica que lo confirme. El modelo cuenta con 278.043.648 parámetros, cifra idéntica a la de XLM-RoBERTa base, y está disponible en formato safetensors. Su pipeline declarado es `feature-extraction` y es compatible con `text-embeddings-inference` (TEI), lo que facilita su despliegue en entornos de producción para tareas de representación de texto.
+El modelo `victoraccount/wsd-training-dataset_11qq3dfi` es un encoder basado en la arquitectura XLM-RoBERTa, diseñado para extracción de características (feature extraction). Publicado en Hugging Face por el usuario `victoraccount` el 30 de agosto de 2026, el nombre del repositorio sugiere que está relacionado con un dataset de entrenamiento para desambiguación de sentidos de palabras (WSD, por sus siglas en inglés), aunque no se proporciona documentación técnica que lo confirme. El modelo cuenta con 278.043.648 parámetros, cifra idéntica a la de XLM-RoBERTa base, y está disponible en formato safetensors. Su pipeline declarado es `feature-extraction` y es compatible con `text-embeddings-inference` (TEI), lo que facilita su despliegue en entornos de producción para tareas de representación de texto.
 
 A pesar de su potencial utilidad como modelo de embeddings multilingüe, la ausencia total de una model card detallada, datos de entrenamiento, licencia o métricas de evaluación limita seriamente su adopción en entornos profesionales. La información disponible se reduce a las etiquetas técnicas y al tamaño del repositorio (1,1 GB). Por tanto, esta ficha se basa en las características inferidas de la arquitectura XLM-RoBERTa y en los datos públicos del Hub, marcando como "no disponible" cualquier aspecto no confirmado.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre el proceso de entrenamiento específico de e
 
 - Extraccion de embeddings de texto a nivel de token y de secuencia, util para tareas de busqueda semantica, similitud coseno y clasificacion.
 - Representaciones contextuales multilingues, heredadas de XLM-RoBERTa base, que cubren potencialmente 100 idiomas.
-- Compatibilidad con la libreria `transformers` de HuggingFace y con `text-embeddings-inference` (TEI) para despliegue en endpoints de inferencia.
+- Compatibilidad con la libreria `transformers` de Hugging Face y con `text-embeddings-inference` (TEI) para despliegue en endpoints de inferencia.
 - Al ser un encoder, no genera texto libre ni soporta tareas generativas.
 - No se ha confirmado soporte para tool calling, agentes o razonamiento multi-paso.
 - No se ha confirmado capacidad de vision, audio u otras modalidades.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia: con 278 millones de parametros, el modelo en precision fp32 ocupa aproximadamente 1,1 GB (coincide con el tamano del repositorio). En fp16 ocuparia unos 0,55 GB, y en cuantizacion int8 unos 0,28 GB. Estas cifras son estimaciones teoricas; no se han verificado mediciones reales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en fp16. Tarjetas consumer como NVIDIA GTX 1060 6GB, RTX 2060 o superiores son suficientes. Para despliegues de alta concurrencia se recomienda una GPU con 8 GB o mas, como RTX 3070, RTX 4080 o A10.
 - Compatibilidad con consumer GPU: si, cabe en GPUs de gama media y baja.
-- Opciones de despliegue: `text-embeddings-inference` (TEI) es la opcion mas directa dado el tag `endpoints_compatible`. Tambien puede usarse con la libreria `transformers` de HuggingFace, `sentence-transformers` (si se carga como modelo de embeddings) y frameworks de servicion como vLLM o Triton, aunque TEI es la via recomendada.
+- Opciones de despliegue: `text-embeddings-inference` (TEI) es la opcion mas directa dado el tag `endpoints_compatible`. Tambien puede usarse con la libreria `transformers` de Hugging Face, `sentence-transformers` (si se carga como modelo de embeddings) y frameworks de servicion como vLLM o Triton, aunque TEI es la via recomendada.
 - Latencia y throughput: no disponibles. Al ser un modelo de 278M, la latencia tipica en una GPU moderna seria del orden de milisegundos por secuencia, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La principal diferencia es que `xlm-roberta-base` tiene una licencia MIT conocid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/victoraccount/wsd-training-dataset_11qq3dfi
+- Modelo en Hugging Face: https://huggingface.co/victoraccount/wsd-training-dataset_11qq3dfi
 - Paper de XLM-RoBERTa (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Documentacion de `text-embeddings-inference`: https://huggingface.co/docs/text-embeddings-inference/index
-- Libreria `transformers` de HuggingFace: https://huggingface.co/docs/transformers/index
+- Libreria `transformers` de Hugging Face: https://huggingface.co/docs/transformers/index

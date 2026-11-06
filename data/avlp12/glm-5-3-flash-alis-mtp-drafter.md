@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-Alis-MTP-Drafter es un modelo auxiliar de decodificación especulativa (drafter MTP, *Multi-Token Prediction*) extraído del modelo multimodal GLM-5.3-Flash de Z.AI, publicado por el usuario avlp12 en HuggingFace. Su función no es generar texto de forma autónoma, sino servir como modelo borrador para acelerar la inferencia del modelo principal en hardware Apple Silicon mediante la librería MLX. Es, según su autor, el primer drafter MTP independiente de GLM-5.3-Flash disponible en el Hub, ya que las conversiones MLX convencionales descartan la capa 45 (la encargada de la predicción multi-token), dejando a los modelos cuantizados sin ruta MTP.
+GLM-5.3-Flash-Alis-MTP-Drafter es un modelo auxiliar de decodificación especulativa (drafter MTP, *Multi-Token Prediction*) extraído del modelo multimodal GLM-5.3-Flash de Z.AI, publicado por el usuario avlp12 en Hugging Face. Su función no es generar texto de forma autónoma, sino servir como modelo borrador para acelerar la inferencia del modelo principal en hardware Apple Silicon mediante la librería MLX. Es, según su autor, el primer drafter MTP independiente de GLM-5.3-Flash disponible en el Hub, ya que las conversiones MLX convencionales descartan la capa 45 (la encargada de la predicción multi-token), dejando a los modelos cuantizados sin ruta MTP.
 
 El drafter tiene 7.432.592.416 parámetros en formato bf16, ocupa 14,9 GB y se distribuye bajo licencia MIT. Se integra con el *pull request* #2044 de mlx-vlm, que añade soporte para decodificación especulativa nativa. En pruebas realizadas por el autor sobre una M3 Ultra de 512 GB con un modelo objetivo de clase 4-bit, se midió una aceleración de 1,12× en decodificación con resultados bit-idénticos a la decodificación normal, y una tasa de aceptación de draft de aproximadamente el 89%. El modelo base GLM-5.3-Flash es un modelo híbrido de 320B parámetros totales con 18B activos, con ventana de contexto de 1M tokens, lo que hace especialmente relevante disponer de un drafter eficiente para reducir la latencia en tareas de contexto largo.
 
@@ -87,7 +87,7 @@ La alternativa sería no usar decodificación especulativa y aceptar la latencia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MTP-Drafter
+- Repositorio Hugging Face: https://huggingface.co/avlp12/GLM-5.3-Flash-Alis-MTP-Drafter
 - Modelo base GLM-5.3-Flash: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentación de Z.AI sobre GLM-5.3-Flash: https://docs.z.ai/guides/vlm/glm-5.3-flash
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5

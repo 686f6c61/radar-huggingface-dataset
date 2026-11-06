@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Posible perdida de capacidades del modelo base (tool calling, modo thinking) tras el fine-tuning.
 - Repositorio sin descargas ni likes: no hay evidencia de uso en produccion ni de validacion por la comunidad.
 - Contexto no confirmado: no asumir la ventana completa de Qwen3 sin verificar.
-- El tag `endpoints_compatible` no implica soporte oficial de HuggingFace Inference Endpoints para este modelo concreto.
+- El tag `endpoints_compatible` no implica soporte oficial de Hugging Face Inference Endpoints para este modelo concreto.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ertghiu256/qwen3-1.7b-mixture-of-thought-v2-gguf
+- Hugging Face: https://huggingface.co/ertghiu256/qwen3-1.7b-mixture-of-thought-v2-gguf
 - Unsloth (herramienta de fine-tuning y conversion): https://github.com/unslothai/unsloth

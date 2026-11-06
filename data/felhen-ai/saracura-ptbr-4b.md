@@ -104,10 +104,10 @@ Comparaciones publicadas:
 
 | Modelo | Parametros | Contexto | Rendimiento en PT-BR v1 (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felhen-ai/saracura-ptbr-4b | ~4B + LoRA (rango 16) y cabeza de 256 dim. | 2.048 tokens de estado | 73,1% | Apache 2.0 | Adaptador en HuggingFace (0,2 GB), requiere el modelo base |
-| felhen-ai/saracura-ptbr-v0 | 322M (receta de Laya) | no disponible | 68,5% | no disponible en la información proporcionada | HuggingFace |
-| caiovicentino1/Eikos-4B | 4B | no disponible | 60,7% | MIT | HuggingFace |
-| jaredpalmer/kev-4b | 4B | no disponible | no evaluado en PT-BR v1; 34,64 en el Decision Index 0.2.1 | no disponible en la información proporcionada | HuggingFace (checkpoint de partida) |
+| felhen-ai/saracura-ptbr-4b | ~4B + LoRA (rango 16) y cabeza de 256 dim. | 2.048 tokens de estado | 73,1% | Apache 2.0 | Adaptador en Hugging Face (0,2 GB), requiere el modelo base |
+| felhen-ai/saracura-ptbr-v0 | 322M (receta de Laya) | no disponible | 68,5% | no disponible en la información proporcionada | Hugging Face |
+| caiovicentino1/Eikos-4B | 4B | no disponible | 60,7% | MIT | Hugging Face |
+| jaredpalmer/kev-4b | 4B | no disponible | no evaluado en PT-BR v1; 34,64 en el Decision Index 0.2.1 | no disponible en la información proporcionada | Hugging Face (checkpoint de partida) |
 
 Nota metodológica del propio autor: la comparación con Eikos-4B no es homogénea, porque los dos Saracura vieron en entrenamiento el split de las fuentes evaluadas y Eikos no; la comparación considerada justa es contra modelos sin ajuste (Laya multilingüe, 39,2%; `Qwen/Qwen3.8-27B`, ~66% en la versión anterior del benchmark).
 
@@ -129,7 +129,7 @@ Nota metodológica del propio autor: la comparación con Eikos-4B no es homogén
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felhen-ai/saracura-ptbr-4b
+- Modelo en Hugging Face: https://huggingface.co/felhen-ai/saracura-ptbr-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Checkpoint de partida: https://huggingface.co/jaredpalmer/kev-4b
 - Receta y servidor Kev: https://github.com/jaredpalmer/kev

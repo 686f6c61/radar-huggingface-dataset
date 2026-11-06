@@ -86,7 +86,7 @@ La comparación directa con los modelos base resulta más informativa que con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArtificialFrontiers/Brink-Intelligence
+- Repositorio Hugging Face: https://huggingface.co/ArtificialFrontiers/Brink-Intelligence
 - Organización: https://huggingface.co/ArtificialFrontiers
 - GGUF Arc 5.5 Lite (Qwen2.5-Coder-0.5B-Instruct-abliterated, bartowski): https://huggingface.co/bartowski/Qwen2.5-Coder-0.5B-Instruct-abliterated-GGUF
 - GGUF Arc 5.5 Flash (heretic_FuseChat-Llama-3.2-1B-Instruct, Severian): https://huggingface.co/Severian/heretic_FuseChat-Llama-3.2-1B-Instruct-GGUF

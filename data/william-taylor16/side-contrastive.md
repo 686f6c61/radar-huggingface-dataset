@@ -2,7 +2,7 @@
 
 ## Resumen
 
-side-contrastive es un repositorio experimental publicado por el usuario William-taylor16 en HuggingFace que contiene una implementación funcional de una arquitectura Mixer orientada a aprendizaje contrastivo en configuración «tiny». No es un modelo entrenado ni un artefacto listo para producción: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado con benchmarks.
+side-contrastive es un repositorio experimental publicado por el usuario William-taylor16 en Hugging Face que contiene una implementación funcional de una arquitectura Mixer orientada a aprendizaje contrastivo en configuración «tiny». No es un modelo entrenado ni un artefacto listo para producción: el propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado con benchmarks.
 
 El checkpoint contiene 16.576 parámetros según los metadatos de safetensors, un orden de magnitud propio de una prueba de concepto y no de un modelo de lenguaje. La model card describe atención grouped query, fusión mediante tensor fusion, activación gelu y normalización scalenorm, pero no documenta longitud de contexto, idiomas soportados ni ningún resultado de evaluación.
 
@@ -25,8 +25,8 @@ Su interés es el de un artefacto de investigación reproducible: código transp
 | Entidad de publicación | William-taylor16 (usuario individual) |
 | Descargas / likes en el momento de la consulta | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
-| Fecha de creación indicada en HuggingFace | 2026-09-15 |
-| Fecha de última actualización indicada en HuggingFace | 2026-09-15 |
+| Fecha de creación indicada en Hugging Face | 2026-09-15 |
+| Fecha de última actualización indicada en Hugging Face | 2026-09-15 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,11 +82,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - El repositorio no incluye registros de entrenamiento, versiones de entorno ni resultados reproducibles; solo una receta de partida.
 - Cualquier resultado de un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto aquí publicados.
 - Licencia Apache 2.0: permite uso comercial del código y de los pesos, pero los términos de los datos de origen deben revisarse por separado cuando se usen datasets externos.
-- La fecha de creación y actualización indicada en HuggingFace corresponde a 2026-09-15; conviene verificar la vigencia del repositorio antes de integrarlo, dado que no presenta descargas ni interacciones.
+- La fecha de creación y actualización indicada en Hugging Face corresponde a 2026-09-15; conviene verificar la vigencia del repositorio antes de integrarlo, dado que no presenta descargas ni interacciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/William-taylor16/side-contrastive
+- Modelo en Hugging Face: https://huggingface.co/William-taylor16/side-contrastive
 - Archivo principal de implementación: `finetune.py` (incluido en el repositorio)
 - Configuración de arquitectura: `config.json` (incluido en el repositorio)
 - Receta de experimento por defecto: `training_args.json` (incluido en el repositorio)

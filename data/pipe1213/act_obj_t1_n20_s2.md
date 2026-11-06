@@ -72,7 +72,7 @@ Contexto agregado del estudio (3 tareas, todas las semillas): ACT con 20 demostr
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 52M | Imagen 256x256 + estado; chunks de 100 acciones | 68% medio (3 checkpoints) en la tarea de la salsa barbacoa | apache-2.0 | HuggingFace, LeRobot |
+| ACT (este modelo) | 52M | Imagen 256x256 + estado; chunks de 100 acciones | 68% medio (3 checkpoints) en la tarea de la salsa barbacoa | apache-2.0 | Hugging Face, LeRobot |
 | SmolVLA (referencia del estudio) | no disponible en la información proporcionada | Entrada multimodal con lenguaje | 74,2% agregado en 3 tareas del estudio | no disponible en la información proporcionada | Referencia citada en el estudio |
 | ACT con 10 demostraciones (mismo estudio) | 52M | Igual que este modelo | Inferior; valor exacto no disponible en la información proporcionada | apache-2.0 | Mismo repositorio del estudio |
 | ACT con 50 demostraciones (mismo estudio) | 52M | Igual que este modelo | Valor exacto no disponible en la información proporcionada | apache-2.0 | Mismo repositorio del estudio |
@@ -92,7 +92,7 @@ Contexto agregado del estudio (3 tareas, todas las semillas): ACT con 20 demostr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t1_n20_s2
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t1_n20_s2
 - Repositorio del estudio vla-vs-scratch: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos del estudio: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis detallado: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

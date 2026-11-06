@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado por el usuario kigimues en HuggingFace bajo licencia MIT. Segun la model card, se trata de un modelo con 552 mil millones de parametros de backbone y capacidad de procesar contextos de hasta un millon de tokens, con procesamiento nativo de imagenes y texto y generacion autoregresiva de texto.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado por el usuario kigimues en Hugging Face bajo licencia MIT. Segun la model card, se trata de un modelo con 552 mil millones de parametros de backbone y capacidad de procesar contextos de hasta un millon de tokens, con procesamiento nativo de imagenes y texto y generacion autoregresiva de texto.
 
 La innovacion central del modelo es la compresion agresiva de la KV cache. Mediante una arquitectura Causal Encoder-Decoder (CED), atencion dispersa comprimida (CSA2) y cacheo de la KV principal en FP4, el modelo reduce la huella de la KV cache global a unos 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y unas 437 veces menos que DeepSeek-V1. Ademas, activa solo 8B parametros por token en prefill y 16B en decodificacion, lo que lo hace especialmente adecuado para cargas de trabajo agenticas con mucho input.
 
@@ -16,7 +16,7 @@ El modelo se entrena desde cero sobre un corpus multimodal de 45 billones de tok
 | Parametros totales | 763.205.315.794 (pesos safetensors); 552B de backbone segun model card |
 | Parametros activos | 8B por token en prefill; 16B por token en decode |
 | Longitud de contexto | Hasta 1.000.000 tokens |
-| Tipos de cuantizacion | FP8 y 8-bit (tags de HuggingFace); KV principal en FP4 (formato E2M1 con escala E4M3 por 16 canales) |
+| Tipos de cuantizacion | FP8 y 8-bit (tags de Hugging Face); KV principal en FP4 (formato E2M1 con escala E4M3 por 16 canales) |
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
@@ -65,7 +65,7 @@ La model card menciona resultados de evaluacion de modelos base y graficos de re
 
 | Modelo | Parametros | Contexto | KV cache por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash | 763B totales (552B backbone); 8B/16B activos | 1M tokens | 890 bytes (FP4) | MIT | HuggingFace (kigimues) |
+| DeepSeek-V4.1-Flash | 763B totales (552B backbone); 8B/16B activos | 1M tokens | 890 bytes (FP4) | MIT | Hugging Face (kigimues) |
 | DeepSeek-V4-Flash | No disponible | No disponible | ~4x mayor que V4.1-Flash (aprox. 3.560 bytes, derivado) | No disponible | Referenciado en model card |
 | DeepSeek-V1 | No disponible | No disponible | ~437x mayor que V4.1-Flash (aprox. 389 KB, derivado) | No disponible | Referenciado en model card |
 
@@ -85,10 +85,10 @@ Los valores de KV cache de DeepSeek-V4-Flash y DeepSeek-V1 son derivados de los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kigimues/DeepSeek-V4.1-Flash
+- Hugging Face: https://huggingface.co/kigimues/DeepSeek-V4.1-Flash
 - Technical Report (referenciado en model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Homepage DeepSeek: https://www.deepseek.com/
 - Chat DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Twitter DeepSeek AI: https://twitter.com/deepseek_ai
 - Repositorio DeepSeek-V2 (recursos graficos referenciados): https://github.com/deepseek-ai/DeepSeek-V2

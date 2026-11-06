@@ -69,7 +69,7 @@ No se dispone de información comparativa en la información proporcionada. El r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saifahmad123/EXP10_ALL_h100
+- Modelo en Hugging Face: https://huggingface.co/saifahmad123/EXP10_ALL_h100
 - Dataset de entrenamiento: https://huggingface.co/datasets/saifahmad123/EXP10_ALL
 - Perfil del autor: https://huggingface.co/saifahmad123
 - Modelo relacionado del mismo autor: https://huggingface.co/saifahmad123/EXP1_10_20k_a100

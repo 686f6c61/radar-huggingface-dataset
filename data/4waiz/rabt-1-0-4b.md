@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rabt 1.0 4B es un ajuste fino del modelo Qwen3.5-4B desarrollado por Eng. Awaiz Ahmed (Kanban Studios, Abu Dhabi) como motor de un asistente personal local-first llamado Rabt. El modelo hereda la arquitectura híbrida de Qwen3.5 —atención lineal Gated DeltaNet combinada con atención completa cada cuatro capas— y añade un encoder de visión, manteniendo una ventana de contexto de 256K tokens declarada por el autor. Su pipeline en HuggingFace es `image-text-to-text`, por lo que acepta entradas multimodales de texto e imagen.
+Rabt 1.0 4B es un ajuste fino del modelo Qwen3.5-4B desarrollado por Eng. Awaiz Ahmed (Kanban Studios, Abu Dhabi) como motor de un asistente personal local-first llamado Rabt. El modelo hereda la arquitectura híbrida de Qwen3.5 —atención lineal Gated DeltaNet combinada con atención completa cada cuatro capas— y añade un encoder de visión, manteniendo una ventana de contexto de 256K tokens declarada por el autor. Su pipeline en Hugging Face es `image-text-to-text`, por lo que acepta entradas multimodales de texto e imagen.
 
 El objetivo del ajuste no es mejorar el rendimiento general del modelo base, sino especializarlo en cuatro comportamientos concretos: identidad propia y honesta sobre su origen, veracidad estricta sobre acciones pendientes de aprobación (human-in-the-loop), resistencia a inyección de prompts en contenido no confiable (correos, archivos, páginas web) y cobertura multilingüe en inglés, árabe, francés, hindi y urdu. Está pensado para ejecutarse íntegramente en local mediante Ollama y llama.cpp, de modo que los datos del usuario no abandonen su máquina.
 
@@ -94,7 +94,7 @@ La comparación con alternativas de otros desarrolladores no está disponible en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4waiz/Rabt-1.0-4B
+- Modelo en Hugging Face: https://huggingface.co/4waiz/Rabt-1.0-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante 2B: https://huggingface.co/4waiz/Rabt-1.0-2B
 - Variante 9B: https://huggingface.co/4waiz/Rabt-1.0-9B

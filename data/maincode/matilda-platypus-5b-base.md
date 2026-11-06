@@ -80,9 +80,9 @@ Supera al padre pequeño en 4 de 13 benchmarks y al padre grande en 2 de 13, con
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Matilda Platypus 5B (base) | 5,48B | Hibrida 9+27 con bridge lineal | no disponible | Apache 2.0 | HuggingFace, custom code |
-| Qwen3-4B-Base | 4B | Transformer denso | no disponible en esta ficha | Apache 2.0 | HuggingFace, soporte nativo transformers/vLLM |
-| Qwen3-8B-Base | 8B | Transformer denso | no disponible en esta ficha | Apache 2.0 | HuggingFace, soporte nativo transformers/vLLM |
+| Matilda Platypus 5B (base) | 5,48B | Hibrida 9+27 con bridge lineal | no disponible | Apache 2.0 | Hugging Face, custom code |
+| Qwen3-4B-Base | 4B | Transformer denso | no disponible en esta ficha | Apache 2.0 | Hugging Face, soporte nativo transformers/vLLM |
+| Qwen3-8B-Base | 8B | Transformer denso | no disponible en esta ficha | Apache 2.0 | Hugging Face, soporte nativo transformers/vLLM |
 
 En rendimiento, Platypus 5B se situa entre ambos padres en la mayoria de benchmarks (con GSM8K por encima de ambos), pero con la ventaja de coste frente al 8B. Su principal desventaja practica frente a los padres es la dependencia de custom code y la doble descarga de pesos, lo que limita la compatibilidad con runtimes optimizados.
 
@@ -101,7 +101,7 @@ En rendimiento, Platypus 5B se situa entre ambos padres en la mayoria de benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Platypus-5B-Base
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Platypus-5B-Base
 - Modelo base (padre grande): https://huggingface.co/Qwen/Qwen3-8B-Base
 - Modelo base (padre pequeño): https://huggingface.co/Qwen/Qwen3-4B-Base
 - Informe tecnico Qwen3 (referenciado en la model card): https://arxiv.org/abs/2505.09388

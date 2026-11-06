@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| votenet.sunrgbd.fair (este) | 959.442 | Nube de puntos XYZ+RGB, 10 clases | mAP@0.25 58,81; mAP@0.5 34,15 (SUN RGB-D, no verificado) | MIT | HuggingFace, libreria torch-pointcloud |
+| votenet.sunrgbd.fair (este) | 959.442 | Nube de puntos XYZ+RGB, 10 clases | mAP@0.25 58,81; mAP@0.5 34,15 (SUN RGB-D, no verificado) | MIT | Hugging Face, libreria torch-pointcloud |
 | VoteNet original (facebookresearch/votenet) | no disponible en la informacion | Nube de puntos, SUN RGB-D y ScanNet | no disponible | MIT | Repositorio GitHub oficial |
 | ImVoteNet | no disponible en la informacion | Nube de puntos + imagen RGB | no disponible | no disponible | Repositorio de investigacion |
 | H3DNet | no disponible en la informacion | Nube de puntos, deteccion 3D hibrida | no disponible | no disponible | Repositorio de investigacion |
@@ -97,7 +97,7 @@ No se dispone de datos verificados de parametros, contexto ni metricas de las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/votenet.sunrgbd.fair
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/votenet.sunrgbd.fair
 - Paper Deep Hough Voting for 3D Object Detection in Point Clouds: https://arxiv.org/abs/1904.09664
 - Repositorio original VoteNet (Meta): https://github.com/facebookresearch/votenet
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

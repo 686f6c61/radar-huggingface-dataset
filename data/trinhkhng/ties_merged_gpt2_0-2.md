@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- [HuggingFace: trinhkhng/ties_Merged_gpt2_0.2](https://huggingface.co/trinhkhng/ties_Merged_gpt2_0.2)
+- [Hugging Face: trinhkhng/ties_Merged_gpt2_0.2](https://huggingface.co/trinhkhng/ties_Merged_gpt2_0.2)
 - [Paper TIES: arxiv:2306.01708](https://arxiv.org/abs/2306.01708)
 - [Repositorio mergekit](https://github.com/cg123/mergekit)

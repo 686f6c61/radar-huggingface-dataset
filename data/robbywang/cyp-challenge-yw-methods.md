@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robbywang/cyp-challenge-yw-methods` no es un modelo de lenguaje, sino un informe metodologico publicado en HuggingFace que documenta el envio con alias anonimo **yw** al reto publico OpenADMET de prediccion de inhibicion directa de las enzimas del citocromo P450 (CYP). El artefacto describe un conjunto de cuatro modelos de regresion LightGBM con limites de intervalo, uno por enzima (CYP1A2, CYP2C9, CYP2D6 y CYP3A4), entrenados para predecir el valor de pIC50 de inhibicion directa a partir de descriptores moleculares.
+`robbywang/cyp-challenge-yw-methods` no es un modelo de lenguaje, sino un informe metodologico publicado en Hugging Face que documenta el envio con alias anonimo **yw** al reto publico OpenADMET de prediccion de inhibicion directa de las enzimas del citocromo P450 (CYP). El artefacto describe un conjunto de cuatro modelos de regresion LightGBM con limites de intervalo, uno por enzima (CYP1A2, CYP2C9, CYP2D6 y CYP3A4), entrenados para predecir el valor de pIC50 de inhibicion directa a partir de descriptores moleculares.
 
 El autor del repositorio es el usuario `robbywang`, y el informe indica explicitamente que no se ha utilizado ningun dato de entrenamiento propietario: la unica fuente de datos declarada son los datos publicos de entrenamiento del reto OpenADMET para inhibicion directa. Las caracteristicas de entrada combinan fingerprints de conteo Morgan quirales de radio 2 y descriptores moleculares calculados con RDKit. La validacion empleada es una validacion cruzada aleatoria de cinco pliegues a nivel de molecula.
 
@@ -94,5 +94,5 @@ No disponible. La informacion proporcionada no incluye otros modelos, envios o a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robbywang/cyp-challenge-yw-methods
+- Repositorio en Hugging Face: https://huggingface.co/robbywang/cyp-challenge-yw-methods
 - No se han proporcionado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo o demos.

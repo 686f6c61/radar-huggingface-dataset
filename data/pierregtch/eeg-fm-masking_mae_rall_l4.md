@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eeg-fm-masking_mae_rall_L4` es un codificador (*encoder*) de electroencefalografía (EEG) preentrenado mediante autoaprendizaje supervisado, publicado por el usuario PierreGtch en HuggingFace. Forma parte de una familia de 58 codificadores entrenados con una receta idéntica en la que únicamente varía la geometría de enmascaramiento: 5 radios espaciales × 6 longitudes temporales × 2 marcos de trabajo (MAE y JEPA). Este modelo concreto corresponde a la celda `r = all` (enmascaramiento sobre todos los canales) y `L = 4` parches temporales, con un 45 % de parches visibles (`pct_unmasked = 0.45`).
+`eeg-fm-masking_mae_rall_L4` es un codificador (*encoder*) de electroencefalografía (EEG) preentrenado mediante autoaprendizaje supervisado, publicado por el usuario PierreGtch en Hugging Face. Forma parte de una familia de 58 codificadores entrenados con una receta idéntica en la que únicamente varía la geometría de enmascaramiento: 5 radios espaciales × 6 longitudes temporales × 2 marcos de trabajo (MAE y JEPA). Este modelo concreto corresponde a la celda `r = all` (enmascaramiento sobre todos los canales) y `L = 4` parches temporales, con un 45 % de parches visibles (`pct_unmasked = 0.45`).
 
 Se trata de un modelo de tipo *masked autoencoder* (MAE): el codificador procesa únicamente los parches no enmascarados y un decodificador ligero (no distribuido en este repositorio) reconstruye la señal cruda de los parches ocultos. El objetivo del trabajo es aislar el efecto de la geometría de enmascaramiento sobre la calidad de las representaciones aprendidas, en lugar de perseguir un récord de rendimiento. El codificador tiene 12.692.096 parámetros (12,69 M) y su uso previsto es la extracción de características congeladas para tareas posteriores de clasificación o regresión sobre señales EEG.
 
@@ -118,7 +118,7 @@ Comparacion dentro de la familia publicada. Los 58 modelos comparten receta de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L4
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L4
 - Coleccion completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Modelo recomendado MAE `r9cm_L2`: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Modelo recomendado JEPA `r9cm_L2`: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2

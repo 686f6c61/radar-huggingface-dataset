@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youngseok12/AX-3.1-Light-specialist-300-ties
+- Modelo en Hugging Face: https://huggingface.co/youngseok12/AX-3.1-Light-specialist-300-ties
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Otros modelos del autor:
   - https://huggingface.co/youngseok12/AX-3.1-Light-sft_v0_21_source_screen_essential_medical_300

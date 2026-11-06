@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AynEngine V3 Arabic Standalone es un ajuste fino del modelo base Qwen/Qwen3-0.6B desarrollado por el usuario enver y publicado en HuggingFace. El autor lo presenta como un "motor epistémico" orientado al árabe clásico (*al-fusha al-turathiyya*) que combina la generación de texto autoregresiva habitual con una cabeza auxiliar independiente, la `RootPredictionHead`, capaz de predecir la siguiente raíz semítica en una secuencia de razonamiento. El conjunto suma 605.133.824 parámetros (≈0,6B) y ocupa 1,3 GB en el repositorio.
+AynEngine V3 Arabic Standalone es un ajuste fino del modelo base Qwen/Qwen3-0.6B desarrollado por el usuario enver y publicado en Hugging Face. El autor lo presenta como un "motor epistémico" orientado al árabe clásico (*al-fusha al-turathiyya*) que combina la generación de texto autoregresiva habitual con una cabeza auxiliar independiente, la `RootPredictionHead`, capaz de predecir la siguiente raíz semítica en una secuencia de razonamiento. El conjunto suma 605.133.824 parámetros (≈0,6B) y ocupa 1,3 GB en el repositorio.
 
 Sobre el tokenizador original de Qwen3 el modelo añade 9.057 tokens especiales `<root_XXX>` —uno por raíz canónica árabe—, lo que eleva el vocabulario a 160.807 tokens. La cabeza de raíces es una proyección lineal de 1.024 a 9.057 dimensiones, entrenada sobre 2.500 secuencias de transición de raíces y con una precisión top-5 declarada del 40,1% sobre 9.057 clases. El modelo se presenta con licencia Apache 2.0 y soporte declarado de árabe e inglés.
 
@@ -111,7 +111,7 @@ No se dispone de una comparación de rendimiento (calidad de generación, precis
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/enver/aynengine-v3-arabic-standalone
+- Hugging Face del modelo: https://huggingface.co/enver/aynengine-v3-arabic-standalone
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper, blog, repositorio o demo del autor: no disponible.
 - Resultados de la búsqueda web: las consultas realizadas devolvieron únicamente páginas sobre figuras históricas homónimas (Enver Pasha, Enver Hoxha) sin relación con el modelo; no se han encontrado enlaces relevantes adicionales.

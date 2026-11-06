@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya-PII-KO-v3 es un ajuste fino (fine-tune) del modelo multilingüe `convaiinnovations/laya-multilingual`, publicado por el usuario hae8hae8 en HuggingFace. Por el identificador del repositorio y la etiqueta de idioma (`ko`), el modelo está orientado a tareas de detección y tratamiento de información personal identificable (PII) en coreano. Se distribuye con licencia Apache 2.0 y en formato safetensors, con un tamaño de repositorio de 0,7 GB.
+Laya-PII-KO-v3 es un ajuste fino (fine-tune) del modelo multilingüe `convaiinnovations/laya-multilingual`, publicado por el usuario hae8hae8 en Hugging Face. Por el identificador del repositorio y la etiqueta de idioma (`ko`), el modelo está orientado a tareas de detección y tratamiento de información personal identificable (PII) en coreano. Se distribuye con licencia Apache 2.0 y en formato safetensors, con un tamaño de repositorio de 0,7 GB.
 
 La información pública disponible es mínima: la model card únicamente declara la licencia, el idioma y el modelo base, sin detallar arquitectura, número de parámetros, contexto, datos de entrenamiento ni resultados de evaluación. Esto limita seriamente cualquier evaluación técnica rigurosa y obliga a tratar la mayoría de las especificaciones como no disponibles.
 
@@ -77,6 +77,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hae8hae8/laya-pii-ko-v3
+- Hugging Face: https://huggingface.co/hae8hae8/laya-pii-ko-v3
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

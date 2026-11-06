@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cameron3T3T/coco110 es un repositorio de modelo alojado en HuggingFace por el usuario Cameron3T3T. En el momento de redactar esta ficha no se dispone de informacion publica sobre su arquitectura, numero de parametros, datos de entrenamiento, licencia o idiomas soportados: la model card asociada no expone pipeline, licencia ni idiomas, y los unicos metadatos disponibles son la etiqueta `region:us`, un total de 0 descargas y 1 like desde su creacion el 13 de septiembre de 2026.
+Cameron3T3T/coco110 es un repositorio de modelo alojado en Hugging Face por el usuario Cameron3T3T. En el momento de redactar esta ficha no se dispone de informacion publica sobre su arquitectura, numero de parametros, datos de entrenamiento, licencia o idiomas soportados: la model card asociada no expone pipeline, licencia ni idiomas, y los unicos metadatos disponibles son la etiqueta `region:us`, un total de 0 descargas y 1 like desde su creacion el 13 de septiembre de 2026.
 
 El unico dato cuantitativo relevante es el tamano del repositorio, 45,3 GB, lo que indica que se trata de un artefacto de pesos de gran volumen, presumiblemente un modelo de gran tamano o un conjunto de pesos sin cuantizar. Sin embargo, no es posible derivar de ese dato el numero de parametros ni la precision de almacenamiento, ya que se desconoce el formato de los ficheros y si el repositorio incluye multiples variantes, optimizadores o checkpoints intermedios.
 
@@ -50,7 +50,7 @@ No disponible. Se desconoce el volumen de tokens de entrenamiento, la composicio
 
 No es posible proponer casos de uso concretos y realistas sin conocer las capacidades, la licencia y los requisitos de despliegue del modelo. Cualquier escenario que se enunciara seria especulativo y contravendria el principio de no inventar datos. A modo de orientacion, la evaluacion de este repositorio deberia limitarse a estos pasos previos:
 
-- Inspeccion del repositorio en HuggingFace para listar los ficheros de pesos, el tokenizador y la configuracion del modelo.
+- Inspeccion del repositorio en Hugging Face para listar los ficheros de pesos, el tokenizador y la configuracion del modelo.
 - Lectura de la model card completa y de cualquier fichero README o config.json asociado.
 - Verificacion de la licencia antes de considerar cualquier uso, incluido el experimental.
 - Prueba de inferencia en un entorno aislado para determinar el comportamiento real del modelo.
@@ -75,7 +75,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cameron3T3T/coco110 | no disponible | no disponible | no disponible | Repositorio HuggingFace con 0 descargas |
+| Cameron3T3T/coco110 | no disponible | no disponible | no disponible | Repositorio Hugging Face con 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cameron3T3T/coco110
+- Repositorio en Hugging Face: https://huggingface.co/Cameron3T3T/coco110
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

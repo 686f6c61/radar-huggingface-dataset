@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables. La cuantización de 2 b
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ2e-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/d9beuD/Qwen3.8-27B-oQ2e-mtp)
 - [Repositorio oQ de oMLX](https://github.com/jundot/omlx)

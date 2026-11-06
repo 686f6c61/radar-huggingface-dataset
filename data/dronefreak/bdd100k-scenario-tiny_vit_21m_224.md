@@ -107,11 +107,11 @@ Todos los modelos de la tabla siguiente fueron entrenados y evaluados por el mis
 
 | Modelo | Parametros | Top-1 | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyViT-21M (este modelo) | ~20,6 M | 77,99 % | 62,52 % | Apache-2.0 | HuggingFace, timm |
-| EfficientViT-B3 | no disponible en la informacion proporcionada | 79,32 % | 57,70 % | no disponible en la informacion proporcionada | HuggingFace, timm |
-| ConvNeXt-Atto | no disponible en la informacion proporcionada | 77,44 % | 61,06 % | no disponible en la informacion proporcionada | HuggingFace, timm |
-| MobileNetV4-Conv-Large | no disponible en la informacion proporcionada | 78,15 % | 50,00 % | no disponible en la informacion proporcionada | HuggingFace, timm |
-| ResNet-18 | no disponible en la informacion proporcionada | 77,14 % | 47,29 % | no disponible en la informacion proporcionada | HuggingFace, timm |
+| TinyViT-21M (este modelo) | ~20,6 M | 77,99 % | 62,52 % | Apache-2.0 | Hugging Face, timm |
+| EfficientViT-B3 | no disponible en la informacion proporcionada | 79,32 % | 57,70 % | no disponible en la informacion proporcionada | Hugging Face, timm |
+| ConvNeXt-Atto | no disponible en la informacion proporcionada | 77,44 % | 61,06 % | no disponible en la informacion proporcionada | Hugging Face, timm |
+| MobileNetV4-Conv-Large | no disponible en la informacion proporcionada | 78,15 % | 50,00 % | no disponible en la informacion proporcionada | Hugging Face, timm |
+| ResNet-18 | no disponible en la informacion proporcionada | 77,14 % | 47,29 % | no disponible en la informacion proporcionada | Hugging Face, timm |
 
 La diferencia clave frente a los alternativas es que TinyViT-21M prioriza el equilibrio entre clases por encima del top-1 bruto: cede 1,33 puntos de top-1 frente a EfficientViT-B3, pero gana 4,82 puntos de macro F1 y 12,62 puntos de exactitud balanceada. ConvNeXt-Atto es el competidor mas cercano en macro F1, con 1,46 puntos menos y 3,13 puntos menos de top-1.
 
@@ -132,8 +132,8 @@ La diferencia clave frente a los alternativas es que TinyViT-21M prioriza el equ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-scenario-tiny_vit_21m_224
-- Dataset en HuggingFace: https://huggingface.co/datasets/dronefreak/BDD100K-Scenario-Classification
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-scenario-tiny_vit_21m_224
+- Dataset en Hugging Face: https://huggingface.co/datasets/dronefreak/BDD100K-Scenario-Classification
 - Modelo base: https://huggingface.co/timm/tiny_vit_21m_224.dist_in22k
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Variante EfficientViT-B0 del mismo autor: https://huggingface.co/dronefreak/bdd100k-scenario-efficientvit_b0

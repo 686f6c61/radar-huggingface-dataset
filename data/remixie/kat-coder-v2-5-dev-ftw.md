@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye datos de comparacion con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/remixie/KAT-Coder-V2.5-Dev-FTW
+- Repositorio Hugging Face: https://huggingface.co/remixie/KAT-Coder-V2.5-Dev-FTW
 - Modelo base (fine-tune original): https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Modelo cuantizado NVFP4A16: https://huggingface.co/sahilchachra/KAT-Coder-V2.5-Dev-NVFP4A16
 - Repositorio FreeToken: https://github.com/FlashML-org/FreeToken
@@ -147,7 +147,7 @@ No se dispone de datos de comparación con otros modelos de codificación (como 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/remixie/KAT-Coder-V2.5-Dev-FTW
+- Repositorio Hugging Face: https://huggingface.co/remixie/KAT-Coder-V2.5-Dev-FTW
 - Modelo base KAT-Coder-V2.5-Dev (Kwaipilot): https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Checkpoint cuantizado NVFP4A16: https://huggingface.co/sahilchachra/KAT-Coder-V2.5-Dev-NVFP4A16
 - Repositorio FreeToken: https://github.com/FlashML-org/FreeToken

@@ -82,7 +82,7 @@ La model card afirma que los autores del metodo original si publicaron resultado
 | livadies/worldsculpt-pipeline | Mallas por objeto + escena glb | no disponible (TRELLIS.2-4B como base) | no aplicable | no disponible | Repositorio de experimento, entorno no ensamblado |
 | WorldSculpt (AlayaLab) | Mallas composicionales por objeto | no disponible | no aplicable | no disponible | Codigo publico en GitHub; resultados publicados por los autores |
 | TRELLIS.2 (Microsoft) | Mallas y representaciones 3D | 4B (variante declarada) | no aplicable | no disponible en la informacion | Repositorio publico, usado aqui como entorno base |
-| Pixal3D (TencentARC) | Reconstruccion 3D de objetos | no disponible | no aplicable | no disponible en la informacion | Publicado en HuggingFace; ajustado con LoRA en este experimento |
+| Pixal3D (TencentARC) | Reconstruccion 3D de objetos | no disponible | no aplicable | no disponible en la informacion | Publicado en Hugging Face; ajustado con LoRA en este experimento |
 | livadies/blender-3dgs-pipeline | Gaussianas 3D (proyecto cerrado) | no aplicable | no aplicable | no disponible | Cerrado como fallido; 246 292 gaussianas, 0,0003 de radio |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la informacion proporcionada.
@@ -104,10 +104,10 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace del repositorio: https://huggingface.co/livadies/worldsculpt-pipeline
+- Hugging Face del repositorio: https://huggingface.co/livadies/worldsculpt-pipeline
 - Repositorio del metodo WorldSculpt: https://github.com/AlayaLab/WorldSculpt
 - Paper citado en la model card: arXiv 2609.05416 (identificador proporcionado; no se incluye URL en la informacion)
-- Pixal3D en HuggingFace: https://huggingface.co/TencentARC/Pixal3D
+- Pixal3D en Hugging Face: https://huggingface.co/TencentARC/Pixal3D
 - TRELLIS.2 en GitHub: https://github.com/microsoft/TRELLIS.2
 - Experimento previo cerrado: https://huggingface.co/livadies/blender-3dgs-pipeline (URL inferida del identificador citado)
 - Dataset de referencia: `AlayaLab/Worldsculpt_data`, fichero `Marble/Marble.tar.gz` (no se proporciona URL en la informacion)

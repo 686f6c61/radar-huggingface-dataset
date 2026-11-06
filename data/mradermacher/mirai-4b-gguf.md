@@ -78,7 +78,7 @@ Nota: los datos de Qwen2.5-3B, Llama-3.2-3B y Gemma-2-2B son de referencia gener
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/MiRAI-4B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/MiRAI-4B-GGUF
 - Modelo base: https://huggingface.co/K-Ai-Official/MiRAI-4B
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/MiRAI-4B-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#MiRAI-4B-GGUF

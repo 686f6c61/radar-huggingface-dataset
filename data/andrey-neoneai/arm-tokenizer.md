@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andrey-neoneai/arm-tokenizer` es un artefacto publicado en HuggingFace por el usuario `andrey-neoneai`. El identificador del repositorio apunta a un tokenizador (el sufijo `-tokenizer`) en lugar de a un modelo de lenguaje completo, si bien esta circunstancia no puede confirmarse: la model card pública se limita a una cabecera YAML con la licencia `apache-2.0` y no contiene ningun otro contenido descriptivo.
+`andrey-neoneai/arm-tokenizer` es un artefacto publicado en Hugging Face por el usuario `andrey-neoneai`. El identificador del repositorio apunta a un tokenizador (el sufijo `-tokenizer`) en lugar de a un modelo de lenguaje completo, si bien esta circunstancia no puede confirmarse: la model card pública se limita a una cabecera YAML con la licencia `apache-2.0` y no contiene ningun otro contenido descriptivo.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, no tiene pipeline asignado, no declara idiomas soportados y no incluye pesos, configuracion, vocabulario ni documentacion tecnica accesible. Tampoco se ha localizado ningun paper, blog, repositorio auxiliar ni anuncio asociado al proyecto, y los resultados de busqueda web disponibles no guardan relacion alguna con el artefacto.
 
@@ -96,7 +96,7 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrey-neoneai/arm-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/andrey-neoneai/arm-tokenizer
 - Model card: https://huggingface.co/andrey-neoneai/arm-tokenizer/blob/main/README.md
 - Paper: no disponible
 - Blog tecnico: no disponible

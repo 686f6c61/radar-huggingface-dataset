@@ -79,10 +79,10 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parámetros | Contexto | MMLU (5-shot) | GSM8K (5-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Wizard-Vicuna-7B-Uncensored (este) | 7B | no disponible | 37,09 | 4,55 | other | HuggingFace |
-| Wizard-Vicuna-13B (original) | 13B | no disponible | no disponible | no disponible | no disponible | HuggingFace (junelee) |
+| Wizard-Vicuna-7B-Uncensored (este) | 7B | no disponible | 37,09 | 4,55 | other | Hugging Face |
+| Wizard-Vicuna-13B (original) | 13B | no disponible | no disponible | no disponible | no disponible | Hugging Face (junelee) |
 | LLaMA-7B (base) | 7B | 2048 | no disponible | no disponible | licencia LLaMA original | Meta (acceso restringido) |
-| Modelos actuales de 7B (p. ej. Mistral-7B, Llama-3-8B) | 7-8B | 8k-128k | notablemente superior | notablemente superior | Apache 2.0 / Llama 3 | HuggingFace |
+| Modelos actuales de 7B (p. ej. Mistral-7B, Llama-3-8B) | 7-8B | 8k-128k | notablemente superior | notablemente superior | Apache 2.0 / Llama 3 | Hugging Face |
 
 No se dispone en la información proporcionada de resultados de benchmarks de los modelos comparables para establecer una comparación numérica rigurosa. La comparación cualitativa indica que este modelo está claramente superado por los modelos de 7B actuales en razonamiento, matemáticas, contexto y soporte de herramientas.
 
@@ -101,7 +101,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Daddy9669/Wizard-Vicuna-7B-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/Daddy9669/Wizard-Vicuna-7B-Uncensored
 - Modelo original de referencia (Wizard-Vicuna-13B): https://huggingface.co/junelee/wizard-vicuna-13b
 - Dataset de entrenamiento: https://huggingface.co/datasets/ehartford/wizard_vicuna_70k_unfiltered
 - Resultados detallados en Open LLM Leaderboard: https://huggingface.co/datasets/open-llm-leaderboard/details_ehartford__Wizard-Vicuna-7B-Uncensored

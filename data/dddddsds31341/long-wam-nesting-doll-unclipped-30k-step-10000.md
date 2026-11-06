@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Long-WAM-Nesting-Doll-Unclipped-30k-Step-10000 | no disponible | no disponible (P48 / chunk 32) | sin benchmarks publicados | other (heredada del base) | HuggingFace, 0 descargas |
-| Efficient-Large-Model/Long-WAM-YAM (modelo base) | no disponible | no disponible | no disponible en esta ficha | ver licencia del base | HuggingFace |
+| Long-WAM-Nesting-Doll-Unclipped-30k-Step-10000 | no disponible | no disponible (P48 / chunk 32) | sin benchmarks publicados | other (heredada del base) | Hugging Face, 0 descargas |
+| Efficient-Large-Model/Long-WAM-YAM (modelo base) | no disponible | no disponible | no disponible en esta ficha | ver licencia del base | Hugging Face |
 | Otras politicas de imitacion bimanual (p. ej. familia ACT, Diffusion Policy) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-30k-Step-10000
+- Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-30k-Step-10000
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: https://huggingface.co/datasets/yuyingyinya/nesting_doll
 - Licencia del modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM (seccion de licencia)

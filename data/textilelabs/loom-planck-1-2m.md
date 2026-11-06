@@ -105,7 +105,7 @@ Dentro de la propia familia, Planck 1.2M no supera en bateria global a Planck 60
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Planck-1.2m
+- Modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Planck-1.2m
 - Loom Planck 300K: https://huggingface.co/textilelabs/Loom-Planck-300K
 - Loom Planck 600K: https://huggingface.co/textilelabs/Loom-Planck-600K
 - Loom Planck Core (programa no neuronal, distinto modelo): https://huggingface.co/textilelabs/Loom-Planck-Core

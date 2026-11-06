@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/best-vox
+- Hugging Face: https://huggingface.co/sw-voice/best-vox
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-stageA-te-reuse87h-en2x-baselm3e-4-acc16-1ep
 - Modelo reemplazado: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0
 - Modelo complementario: https://huggingface.co/sw-voice/best-2-multilingual-maya

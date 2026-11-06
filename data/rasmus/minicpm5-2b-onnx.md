@@ -90,7 +90,7 @@ La principal diferencia frente a las exportaciones ONNX oficiales de la serie es
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/RASMUS/MiniCPM5-2B-ONNX
+- Repositorio del modelo en Hugging Face: https://huggingface.co/RASMUS/MiniCPM5-2B-ONNX
 - Modelo base openbmb/MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B
 - Repositorio GitHub de OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Libreria Transformers.js: https://github.com/huggingface/transformers.js

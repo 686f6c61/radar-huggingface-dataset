@@ -83,5 +83,5 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: [QQZ2026/Qwen3.8-27B-NVFP4-Q5K-no-MTP-GGUF](https://huggingface.co/QQZ2026/Qwen3.8-27B-NVFP4-Q5K-no-MTP-GGUF)
+- Repositorio Hugging Face: [QQZ2026/Qwen3.8-27B-NVFP4-Q5K-no-MTP-GGUF](https://huggingface.co/QQZ2026/Qwen3.8-27B-NVFP4-Q5K-no-MTP-GGUF)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

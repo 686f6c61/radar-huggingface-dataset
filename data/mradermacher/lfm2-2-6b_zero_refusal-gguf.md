@@ -34,7 +34,7 @@ En "Requisitos de hardware": puedo calcular VRAM estimada basándome en los tama
 
 En "Comparativa con modelos similares": hay un modelo de LiquidAI/LFM2-2.6B y un LFM2-2.6B-Uncensored-X64-GGUF. Puedo comparar con estos si tengo datos, pero no tengo specs de ellos. Puedo mencionar que existen variantes similares en la familia LFM2, pero no tengo datos concretos para comparar. Debo indicar "no disponible" para la comparación.
 
-En "Enlaces": HuggingFace, y los encontrados en la búsqueda (LiquidAI/LFM2-2.6B, LFM2-2.6B-Uncensored-X64-GGUF).
+En "Enlaces": Hugging Face, y los encontrados en la búsqueda (LiquidAI/LFM2-2.6B, LFM2-2.6B-Uncensored-X64-GGUF).
 
 Ahora, debo construir la ficha en castellano de España, con la estructura obligatoria. Títulos solo primera palabra en mayúsculas (excepto "Resumen" que es título, no sé si aplica; la regla dice "Solo la primera palabra de los titulos va en mayuscula." Entonces los títulos de sección deberían ser "Resumen", "Especificaciones tecnicas", "Arquitectura y entrenamiento", "Capacidades", "Casos de uso", "Benchmarks y rendimiento", "Requisitos de hardware", "Comparativa con modelos similares", "Limitaciones y advertencias", "Enlaces". Todos comienzan con mayúscula en la primera palabra y el resto en minúscula. En el prompt original, los títulos están con mayúscula inicial y luego minúsculas, como "Especificaciones tecnicas" (sin tilde en "técnicas"? El prompt dice "Especificaciones tecnicas", pero en castellano debería ser "Especificaciones técnicas". El prompt dice "tecnicas" sin tilde. Debo seguir el prompt? La regla dice "Usa castellano de Espana, sin faltas de ortografia." La ortografía correcta es "técnicas". El prompt original tiene "Especificaciones tecnicas" que es una falta de ortografía. Debo corregirla. Asimismo, "Comparativa con modelos similares" es correcto. "Requisitos de hardware" correcto. "Limitaciones y advertencias" correcto. "Enlaces" correcto. "Benchmarks y rendimiento" correcto. "Capacidades" correcto. "Casos de uso" correcto. "Arquitectura y entrenamiento" correcto. "Resumen" correcto.
 
@@ -117,7 +117,7 @@ También noto que la model card menciona "static quants of https://huggingface.c
 
 Ahora, escribo la ficha.
 
-Una consideración: "Pipeline: no disponible" en la metadata de HuggingFace se refiere al pipeline de transformers, no a la arquitectura. No es relevante para la ficha.
+Una consideración: "Pipeline: no disponible" en la metadata de Hugging Face se refiere al pipeline de transformers, no a la arquitectura. No es relevante para la ficha.
 
 También debo mencionar "Región: us" y "conversational"? No es crítico.
 

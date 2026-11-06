@@ -86,7 +86,7 @@ No se dispone de datos comparativos en la información proporcionada. La familia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hermitdave/K2-Horizon-7B-oQ4e
+- Repositorio Hugging Face: https://huggingface.co/hermitdave/K2-Horizon-7B-oQ4e
 - Modelo upstream: https://huggingface.co/IFM/K2-Horizon-7B
 - Blog de IFM: https://ifm.ai/blog/k2/
 - Press release de K2 Horizon: https://ifm.ai/k2/press-release/

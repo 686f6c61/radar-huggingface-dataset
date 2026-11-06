@@ -108,7 +108,7 @@ No se dispone de comparaciones con drafters de otros ecosistemas (por ejemplo, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-assistant-q4_0-exact-gguf
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-assistant-q4_0-exact-gguf
 - Modelo base (Google): https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant
 - Target GGUF recomendado por el autor (build propio): https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-exact-gguf
 - Target GGUF oficial de Google: https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf

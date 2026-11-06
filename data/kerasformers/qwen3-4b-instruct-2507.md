@@ -25,7 +25,7 @@ La conversión está respaldada por el informe técnico de Qwen3 (arXiv:2505.093
 
 La arquitectura es la del modelo Qwen3 denso de 4B parámetros, tal como se describe en el informe técnico de Qwen3 (arXiv:2505.09388). La conversión de KerasFormers no modifica la arquitectura ni los pesos; simplemente los adapta al formato de Keras 3. La implementación está diseñada para ser agnóstica al backend, permitiendo ejecutar el mismo código en TensorFlow, PyTorch o JAX mediante la variable de entorno `KERAS_BACKEND`.
 
-No se dispone en la model card de información sobre el proceso de entrenamiento del modelo original (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Para esos detalles, la card remite al informe técnico de Qwen3 y a la model card del modelo base en HuggingFace. La conversión en sí no implica entrenamiento adicional, solo la carga de los pesos preentrenados.
+No se dispone en la model card de información sobre el proceso de entrenamiento del modelo original (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Para esos detalles, la card remite al informe técnico de Qwen3 y a la model card del modelo base en Hugging Face. La conversión en sí no implica entrenamiento adicional, solo la carga de los pesos preentrenados.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ La comparativa se limita a características básicas porque no hay datos de rend
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/qwen3-4b-instruct-2507](https://huggingface.co/kerasformers/qwen3-4b-instruct-2507)
+- [Hugging Face: kerasformers/qwen3-4b-instruct-2507](https://huggingface.co/kerasformers/qwen3-4b-instruct-2507)
 - [Modelo base: Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen3 en KerasFormers](https://imvision12.github.io/KerasFormers/qwen3/)
-- [Colección de modelos Qwen3 en HuggingFace](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
+- [Colección de modelos Qwen3 en Hugging Face](https://huggingface.co/collections/kerasformers/qwen3-6a7d3fcc4e56b32e86f5b2c4)
 - [Paper: Qwen3 Technical Report (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388)
 - [HF Papers: Qwen3](https://huggingface.co/papers/2505.09388)

@@ -75,9 +75,9 @@ La comparativa se basa en características generales, ya que no hay datos de ren
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5)
-- [HuggingFace - variante seed4](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed4)
-- [HuggingFace - variante seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed5)
+- [Hugging Face - variante seed4](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed4)
+- [Hugging Face - variante seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft-seed3)
 - [FriendliAI - variante last-third-sft-seed2-epoch3](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2-epoch3)
 - [FriendliAI - variante second-third-sft](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-advice-second-third-sft)
 - [Meta - Llama 3](https://developer.meta.com/ai/models/llama-3/)

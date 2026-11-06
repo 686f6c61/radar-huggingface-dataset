@@ -25,7 +25,7 @@ Es relevante en el contexto de la robótica open source de bajo coste y del apre
 | Dimensiones de acción | 14 |
 | Slot de política | `walk` (marcha sobre rollers) |
 | Modelo base | `DenRakEiw/microduck-senate_duck_0904` (finetune) |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0.0 GB según HuggingFace, lo que sugiere un modelo muy pequeño, pero no se confirma el número de parámetros.
+- VRAM estimada para inferencia: no disponible; el tamaño del repositorio es de 0.0 GB según Hugging Face, lo que sugiere un modelo muy pequeño, pero no se confirma el número de parámetros.
 - GPU recomendadas: no disponible. Al ejecutarse a 50 Hz sobre un robot microduck, es probable que la inferencia se realice en la CPU del propio robot o en un equipo embebido, pero esto no se especifica en la información proporcionada.
 - Compatibilidad con GPU de consumo: no disponible.
 - Opciones de despliegue: el flujo documentado es `robotctl policy load walk dashi/microduck-roller-daily-20261103` sobre el daemon de microduck; el formato ONNX permite inferencia con ONNX Runtime, pero no se documentan otras opciones (vLLM, llama.cpp, Ollama, TGI no aplican a este tipo de modelo).
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Slot | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `dashi/microduck-roller-daily-20261103` | Política RL (ONNX) | 61 / 14 | 50 Hz | `walk` | no disponible | HuggingFace |
-| `dashi/microduck-roller-remix-r900` | Política RL | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado) |
-| `DenRakEiw/microduck-senate_duck_0904` | Política RL (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-roller-daily-20261103` | Política RL (ONNX) | 61 / 14 | 50 Hz | `walk` | no disponible | Hugging Face |
+| `dashi/microduck-roller-remix-r900` | Política RL | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado) |
+| `DenRakEiw/microduck-senate_duck_0904` | Política RL (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento, parámetros ni contexto para establecer una comparación cuantitativa entre estas políticas. La comparativa se limita a la relación de linaje (finetune y remix) documentada en la model card.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento, parámetros ni contexto para establecer u
 
 - No es un modelo de lenguaje: no genera texto, no razona, no responde a prompts y no soporta tool calling ni agentes. Cualquier uso fuera del control motor del microduck es inadecuado.
 - Licencia no disponible: no se puede confirmar si el uso comercial está permitido; es necesario contactar con el autor antes de cualquier despliegue productivo.
-- Idiomas no disponibles: la ficha de HuggingFace no declara idiomas, coherente con que no es un modelo lingüístico.
+- Idiomas no disponibles: la ficha de Hugging Face no declara idiomas, coherente con que no es un modelo lingüístico.
 - Sin métricas publicadas: no hay benchmarks ni protocolo de evaluación documentado para esta política concreta; la puntuación 0,900 corresponde a la política predecesora y su métrica no se especifica.
 - Entrenada específicamente para rollers y para el slot `walk`: no se garantiza su funcionamiento en otras configuraciones del robot ni en otros slots.
 - Repositorio con 0 descargas y 0 likes: no hay evidencia de validación por parte de la comunidad.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento, parámetros ni contexto para establecer u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dashi/microduck-roller-daily-20261103
+- Modelo en Hugging Face: https://huggingface.co/dashi/microduck-roller-daily-20261103
 - Modelo base: https://huggingface.co/DenRakEiw/microduck-senate_duck_0904
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`); no se proporciona URL directa en la información disponible.

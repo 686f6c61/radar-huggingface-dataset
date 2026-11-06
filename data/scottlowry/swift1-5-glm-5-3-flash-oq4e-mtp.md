@@ -93,6 +93,6 @@ No se dispone de información suficiente sobre modelos comparables de la misma f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scottlowry/Swift1.5-GLM-5.3-Flash-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/scottlowry/Swift1.5-GLM-5.3-Flash-oQ4e-mtp
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-GLM-5.3-Flash
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

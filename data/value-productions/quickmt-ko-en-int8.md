@@ -21,7 +21,7 @@ La relevancia de esta publicación es fundamentalmente práctica: el formato CTr
 | Licencia | CC BY 4.0 |
 | Formato de pesos | CTranslate2 (model.bin), acompañado de config.json, source_vocabulary.json, target_vocabulary.json, src.spm.model y tgt.spm.model |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de publicacion | 2026-10-26 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-26 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,12 +88,12 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 - Límite de longitud de entrada no documentado; no se debe asumir que gestione párrafos largos sin segmentación previa.
 - Licencia CC BY 4.0: permite uso comercial, pero exige atribución al autor original (quickmt) y enlazar la licencia; conviene conservar el aviso de licencia y citar tanto el modelo base como esta conversión.
 - No es un modelo conversacional: no acepta instrucciones, no mantiene contexto de diálogo y no debe usarse como sustituto de un LLM.
-- El formato CTranslate2 limita la portabilidad: no se puede cargar directamente con las herramientas habituales de HuggingFace Transformers, llama.cpp u Ollama.
+- El formato CTranslate2 limita la portabilidad: no se puede cargar directamente con las herramientas habituales de Hugging Face Transformers, llama.cpp u Ollama.
 - Fecha de publicación en 2026 según los metadatos: conviene verificar la vigencia y posibles actualizaciones del repositorio antes de integrarlo en producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/value-productions/quickmt-ko-en-int8
+- Repositorio en Hugging Face: https://huggingface.co/value-productions/quickmt-ko-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-ko-en
 
 La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los enlaces obtenidos corresponden a entradas de diccionarios francófonos sobre la palabra "value" y no guardan relación con el modelo, por lo que se omiten. No se han localizado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

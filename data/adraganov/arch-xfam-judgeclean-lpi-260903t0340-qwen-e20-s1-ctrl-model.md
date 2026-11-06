@@ -58,4 +58,4 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 ## Enlaces
 
-- [HuggingFace: adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s1-ctrl-model](https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s1-ctrl-model)
+- [Hugging Face: adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s1-ctrl-model](https://huggingface.co/adraganov/arch-xfam-judgeclean-lpi-260903T0340-qwen-e20-s1-ctrl-model)

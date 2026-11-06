@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ashleyjacksonwell/albef-retrieval` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de la arquitectura ALBEF (Align Before Fuse) orientada a tareas de *retrieval* (recuperación) multimodal. No se trata de un modelo preentrenado publicado por un laboratorio, sino de un esqueleto de código con una configuración "nano" pensada, según la propia model card, para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El autor indica explícitamente que no es una release preentrenada lista para producción.
+`ashleyjacksonwell/albef-retrieval` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de la arquitectura ALBEF (Align Before Fuse) orientada a tareas de *retrieval* (recuperación) multimodal. No se trata de un modelo preentrenado publicado por un laboratorio, sino de un esqueleto de código con una configuración "nano" pensada, según la propia model card, para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El autor indica explícitamente que no es una release preentrenada lista para producción.
 
 El checkpoint incluido (`model.safetensors`) se presenta como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado. Los metadatos de safetensors reportan 24.832 parámetros totales, un tamaño coherente con la escala "nano" declarada y con un repositorio que ocupa 0,0 GB. No se declara ninguna puntuación de benchmark ni se documentan idiomas soportados.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| albef-retrieval (este repo) | 24.832 (escala nano) | no disponible | sin benchmark declarado; checkpoint sin entrenar | BSD-3-Clause | HuggingFace, repo de 0,0 GB |
+| albef-retrieval (este repo) | 24.832 (escala nano) | no disponible | sin benchmark declarado; checkpoint sin entrenar | BSD-3-Clause | Hugging Face, repo de 0,0 GB |
 | ALBEF original (Salesforce) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no verificada en esta información |
 | CLIP (OpenAI) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no verificada en esta información |
 | BLIP (Salesforce) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no verificada en esta información |
@@ -85,6 +85,6 @@ La información suministrada no incluye especificaciones de los modelos de refer
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ashleyjacksonwell/albef-retrieval
+- Hugging Face: https://huggingface.co/ashleyjacksonwell/albef-retrieval
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

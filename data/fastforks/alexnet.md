@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks de precisión (top-1, top-5 en Imag
 
 | Modelo | Parámetros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlexNet (fastforks) | no disponible (≈60 M en AlexNet estándar) | 224x224 | Clasificación ImageNet-1k | Código BSD-3-Clause; pesos sin licencia declarada | HuggingFace (model card) + pesos en download.pytorch.org |
+| AlexNet (fastforks) | no disponible (≈60 M en AlexNet estándar) | 224x224 | Clasificación ImageNet-1k | Código BSD-3-Clause; pesos sin licencia declarada | Hugging Face (model card) + pesos en download.pytorch.org |
 | VGG16 | no disponible en la información | 224x224 | Clasificación ImageNet-1k | no disponible en la información | no disponible en la información |
 | ResNet-50 | no disponible en la información | 224x224 | Clasificación ImageNet-1k | no disponible en la información | no disponible en la información |
 
@@ -107,7 +107,7 @@ No se dispone en la información proporcionada de datos de parámetros, contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/alexnet
+- Hugging Face: https://huggingface.co/fastforks/alexnet
 - Repositorio de código fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Código original (pytorch/vision, commit 1f1a920d685d): https://github.com/pytorch/vision

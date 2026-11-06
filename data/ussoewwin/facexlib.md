@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FaceXlib es una librería de utilidades de código abierto desarrollada por Xintao Wang (xinntao) que proporciona funciones listas para usar relacionadas con el procesamiento de rostros, basadas en métodos de última generación (SOTA) publicados en la comunidad. No se trata de un modelo de inteligencia artificial en sí, sino de una colección de módulos y wrappers que integran varios modelos preentrenados para tareas como detección de rostros, alineación, restauración, superresolución y segmentación. El repositorio en HuggingFace `ussoewwin/facexlib` es un espejo de la librería original, con licencia Apache 2.0, aunque no contiene pesos de modelos propios.
+FaceXlib es una librería de utilidades de código abierto desarrollada por Xintao Wang (xinntao) que proporciona funciones listas para usar relacionadas con el procesamiento de rostros, basadas en métodos de última generación (SOTA) publicados en la comunidad. No se trata de un modelo de inteligencia artificial en sí, sino de una colección de módulos y wrappers que integran varios modelos preentrenados para tareas como detección de rostros, alineación, restauración, superresolución y segmentación. El repositorio en Hugging Face `ussoewwin/facexlib` es un espejo de la librería original, con licencia Apache 2.0, aunque no contiene pesos de modelos propios.
 
 La relevancia de FaceXlib radica en que simplifica el uso de múltiples algoritmos de visión por computador especializados en caras, evitando al desarrollador tener que gestionar dependencias y configuraciones de cada método por separado. Está pensada para integrarse en pipelines de preprocesamiento o postprocesamiento en aplicaciones como restauración de fotos, generación de avatares o análisis facial. La librería está escrita en PyTorch y se distribuye como paquete Python, con documentación en inglés y chino.
 
@@ -80,7 +80,7 @@ FaceXlib destaca por su enfoque en restauración y por integrar métodos recient
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ussoewwin/facexlib
+- Repositorio en Hugging Face: https://huggingface.co/ussoewwin/facexlib
 - Repositorio original en GitHub: https://github.com/xinntao/facexlib
 - Paquete en PyPI: https://pypi.org/project/facexlib/
-- Perfil del autor en HuggingFace: https://huggingface.co/ussoewwin
+- Perfil del autor en Hugging Face: https://huggingface.co/ussoewwin

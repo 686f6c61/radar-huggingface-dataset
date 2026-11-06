@@ -4,7 +4,7 @@
 
 El modelo `roberta-large_MBTI_F_MBTI_agg_balanced_50_5e-06`, desarrollado por el usuario DrinkIcedT, es un clasificador de texto basado en la arquitectura RoBERTa-large, con 355 millones de parámetros. Su nombre sugiere que ha sido ajustado para la clasificación de tipos de personalidad MBTI (Myers-Briggs Type Indicator), probablemente para distinguir entre las dimensiones Feeling (F) y Thinking (T), aunque la model card no aporta detalles sobre la tarea exacta ni el conjunto de datos empleado.
 
-El modelo se distribuye en formato safetensors y está pensado para su uso con la librería Transformers de HuggingFace. A pesar de que la model card indica que fue "entrenado desde cero" sobre un dataset desconocido, lo más plausible es que se trate de un fine-tuning de los pesos preentrenados de RoBERTa-large, dado que el tamaño coincide con el de esa arquitectura. La ficha oficial reporta una métrica F1 de 0.7494 en el conjunto de evaluación, con una pérdida de 2.4601.
+El modelo se distribuye en formato safetensors y está pensado para su uso con la librería Transformers de Hugging Face. A pesar de que la model card indica que fue "entrenado desde cero" sobre un dataset desconocido, lo más plausible es que se trate de un fine-tuning de los pesos preentrenados de RoBERTa-large, dado que el tamaño coincide con el de esa arquitectura. La ficha oficial reporta una métrica F1 de 0.7494 en el conjunto de evaluación, con una pérdida de 2.4601.
 
 Este modelo resulta relevante para experimentos de clasificación de personalidad a partir de texto, un área con aplicaciones en psicometría computacional, análisis de redes sociales y recursos humanos. Sin embargo, la falta de documentación sobre el dataset y el proceso de entrenamiento limita su uso en entornos de producción sin una validación adicional.
 
@@ -31,7 +31,7 @@ Según la model card, el entrenamiento se realizó con una tasa de aprendizaje d
 
 - Clasificacion de texto: el modelo está diseñado para asignar una etiqueta a una secuencia de texto, probablemente relacionada con dimensiones de personalidad MBTI.
 - Inferencia rapida: al ser un encoder de tamaño medio (355M), puede ejecutarse en GPUs de consumo sin problemas de memoria.
-- Compatibilidad con HuggingFace Transformers: se integra fácilmente con pipelines de clasificación de texto de la librería.
+- Compatibilidad con Hugging Face Transformers: se integra fácilmente con pipelines de clasificación de texto de la librería.
 - No se documentan capacidades adicionales como tool calling, generación de texto o soporte multimodal.
 
 ## Casos de uso
@@ -61,7 +61,7 @@ No se han publicado comparaciones con otros modelos ni resultados en benchmarks 
 - Inferencia en CPU: posible, pero con latencia alta (varios cientos de milisegundos por secuencia). Se recomienda GPU para uso interactivo.
 - VRAM estimada: el modelo en fp32 ocupa aproximadamente 1.4 GB (según el tamaño del repositorio). En fp16 se reduce a ~0.7 GB. Para inferencia con batch 1, se necesitan al menos 2 GB de VRAM.
 - GPUs recomendadas: cualquier GPU con 4 GB o más de VRAM, como NVIDIA GTX 1650, RTX 3060, o superiores. Para entrenamiento, el autor usó 4 GPUs (posiblemente V100 o A100, aunque no se especifica).
-- Despliegue: compatible con vLLM, TGI, HuggingFace Inference Endpoints y llama.cpp (si se convierte a GGUF, aunque no se proporciona).
+- Despliegue: compatible con vLLM, TGI, Hugging Face Inference Endpoints y llama.cpp (si se convierte a GGUF, aunque no se proporciona).
 - Throughput: no disponible, pero para un encoder de 355M parámetros se puede esperar un throughput de decenas de secuencias por segundo en una GPU moderna.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ No se dispone de información sobre otros modelos de clasificación MBTI basados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_F_MBTI_agg_balanced_50_5e-06
+- Hugging Face: https://huggingface.co/DrinkIcedT/roberta-large_MBTI_F_MBTI_agg_balanced_50_5e-06
 - No se han encontrado papers, repositorios adicionales ni demos asociados al modelo.

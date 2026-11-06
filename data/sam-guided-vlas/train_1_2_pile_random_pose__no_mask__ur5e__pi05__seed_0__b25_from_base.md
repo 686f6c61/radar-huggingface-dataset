@@ -33,7 +33,7 @@ El entrenamiento se realizó con la librería LeRobot sobre el dataset `sam-guid
 - Entrada multimodal: tres cámaras (agentview, robot0_eye_in_hand, robot0_eye_in_hand_2) con imágenes de 224x224 píxeles y un vector de estado de 9 dimensiones.
 - Salida de acciones de 7 dimensiones para el brazo, aptas para control en tiempo real a 20 FPS.
 - Ejecución de tareas de manipulación de objetos en una pila con poses aleatorias, incluyendo 20 categorías de objetos cotidianos.
-- Compatibilidad con el ecosistema LeRobot y HuggingFace, permitiendo entrenamiento, rollout y evaluación de políticas robóticas.
+- Compatibilidad con el ecosistema LeRobot y Hugging Face, permitiendo entrenamiento, rollout y evaluación de políticas robóticas.
 - No se especifican capacidades de tool calling, agentes, razonamiento simbólico, generación de texto ni soporte multilingüe.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada para inferencia: no disponible en la información proporcionada. Con 4.143 millones de parámetros, una inferencia en precisión fp16/bf16 requeriría aproximadamente 8,3 GB de VRAM (estimación orientativa).
 - GPU recomendadas: no disponible. Según la estimación anterior, sería viable en GPUs de consumo con 10 GB o más de VRAM, como la NVIDIA RTX 3080, RTX 3090 o RTX 4090, siempre que se utilice precisión fp16 o se aplique cuantización.
-- Opciones de despliegue: LeRobot (comando `lerobot-rollout`), HuggingFace Hub. No se mencionan vLLM, llama.cpp, Ollama ni TGI como opciones de despliegue.
+- Opciones de despliegue: LeRobot (comando `lerobot-rollout`), Hugging Face Hub. No se mencionan vLLM, llama.cpp, Ollama ni TGI como opciones de despliegue.
 - Latencia y throughput: no disponible. El dataset de entrenamiento se grabó a 20 FPS, lo que sugiere que la política está diseñada para operar a esa frecuencia, pero no se proporcionan mediciones de latencia en hardware real.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se han proporcionado datos de comparación con modelos similares en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_base
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e__pi05__seed_0__b25_from_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_pile_random_pose__no_mask__ur5e
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Blog de Physical Intelligence sobre Pi05: https://www.physicalintelligence.company/blog/pi05

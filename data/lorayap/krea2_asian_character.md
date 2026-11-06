@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye otros adaptadores LoRA c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lorayap/Krea2_Asian_Character
+- Modelo en Hugging Face: https://huggingface.co/lorayap/Krea2_Asian_Character
 - Archivos y versiones: https://huggingface.co/lorayap/Krea2_Asian_Character/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-W8A8-INT8 es una version cuantizada en 8 bits del modelo denso Qwen3.8-27B, desarrollada por el usuario hoborific y publicada en HuggingFace. El modelo base, Qwen3.8-27B, pertenece a la familia Qwen3.8 de Alibaba y destaca por emplear una arquitectura hibrida de atencion: combina atencion completa (full attention) en 16 de sus 64 capas con atencion lineal de estado recurrente constante en las 48 restantes, lo que reduce el coste computacional frente a un transformer denso convencional.
+Qwen3.8-27B-W8A8-INT8 es una version cuantizada en 8 bits del modelo denso Qwen3.8-27B, desarrollada por el usuario hoborific y publicada en Hugging Face. El modelo base, Qwen3.8-27B, pertenece a la familia Qwen3.8 de Alibaba y destaca por emplear una arquitectura hibrida de atencion: combina atencion completa (full attention) en 16 de sus 64 capas con atencion lineal de estado recurrente constante en las 48 restantes, lo que reduce el coste computacional frente a un transformer denso convencional.
 
 La cuantizacion W8A8 (pesos y activaciones en INT8) reduce el peso del modelo de forma significativa: el repositorio ocupa 36,4 GB frente a los aproximadamente 54 GB de la version en BF16. Esto permite ejecutar el modelo en hardware con menos VRAM y acelera la inferencia en GPUs con soporte optimizado para operaciones INT8, como las series profesionales de NVIDIA o aceleradores domesticos como el Hygon K100AI. El modelo mantiene la interfaz de transformers y es compatible con pipelines de image-text-to-text, lo que indica que conserva las capacidades multimodales del modelo original.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27,78 B | BF16 | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-W8A8-INT8 (este modelo) | 27,78 B | W8A8 INT8 | No disponible | No disponible (base Apache 2.0) | HuggingFace |
-| Qwen3-30B-A3B (MoE) | 30,5 B total, 3,3 B activos | BF16 | No disponible | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (original) | 27,78 B | BF16 | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-W8A8-INT8 (este modelo) | 27,78 B | W8A8 INT8 | No disponible | No disponible (base Apache 2.0) | Hugging Face |
+| Qwen3-30B-A3B (MoE) | 30,5 B total, 3,3 B activos | BF16 | No disponible | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de la misma familia Qwen por falta de informacion sobre alternativas equivalentes en cuantizacion W8A8. La principal diferencia frente al modelo original es el menor consumo de memoria y la mayor velocidad de inferencia, a costa de una posible perdida de precision. Frente a un MoE como Qwen3-30B-A3B, el modelo denso ofrece un rendimiento mas predecible en tareas que requieren activar todos los parametros, aunque con mayor coste computacional por token.
 

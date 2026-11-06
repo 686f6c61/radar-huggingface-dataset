@@ -92,6 +92,6 @@ No se dispone de datos verificables de parámetros, contexto, licencia ni result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phungthanhtu/snli-UnitedSynT5-gtr-base-efl-relation
+- Modelo en Hugging Face: https://huggingface.co/phungthanhtu/snli-UnitedSynT5-gtr-base-efl-relation
 - Artículo de referencia (UnitedSynT5): https://arxiv.org/abs/2412.09263
 - Encoder base: https://huggingface.co/sentence-transformers/gtr-t5-base

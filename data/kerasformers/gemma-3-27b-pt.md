@@ -70,14 +70,14 @@ La principal diferencia con el modelo original es el formato de pesos y la libre
 - Modelo base no instruido: no sigue instrucciones de forma fiable y puede generar texto incoherente o irrelevante si se usa directamente en tareas conversacionales o de seguimiento de ordenes.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje grande, puede producir contenido falso o inventado, especialmente en tareas generativas.
 - Idioma limitado: la ficha declara solo ingles (`en`), aunque el modelo original de Google soporta multiples idiomas; esta conversion podria no estar optimizada para otros idiomas.
-- Licencia gated: es necesario aceptar los terminos de uso de Gemma en la pagina de HuggingFace del modelo original antes de descargar. La licencia puede imponer restricciones de uso comercial y de redistribucion.
+- Licencia gated: es necesario aceptar los terminos de uso de Gemma en la pagina de Hugging Face del modelo original antes de descargar. La licencia puede imponer restricciones de uso comercial y de redistribucion.
 - Requisitos de hardware elevados: el tamano del modelo (54,9 GB en bfloat16) exige GPUs profesionales de alta gama, lo que limita su uso en entornos modestos.
 - Sin soporte explicito para tool calling, agentes o razonamiento multi-paso: estas capacidades requieren fine-tuning adicional.
 - Formato de pesos no estandar: la carga se realiza mediante la API `from_weights` de kerasformers, lo que puede dificultar la interoperabilidad con otras herramientas del ecosistema (por ejemplo, vLLM o llama.cpp).
 
 ## Enlaces
 
-- [HuggingFace: kerasformers/gemma-3-27b-pt](https://huggingface.co/kerasformers/gemma-3-27b-pt)
+- [Hugging Face: kerasformers/gemma-3-27b-pt](https://huggingface.co/kerasformers/gemma-3-27b-pt)
 - [Modelo original: google/gemma-3-27b-pt](https://huggingface.co/google/gemma-3-27b-pt)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentacion de Gemma 3 en KerasFormers](https://imvision12.github.io/KerasFormers/gemma3/)

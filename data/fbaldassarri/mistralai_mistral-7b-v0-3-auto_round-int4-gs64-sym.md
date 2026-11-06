@@ -93,7 +93,7 @@ Diferencias clave: frente a Llama 3.1 8B y Qwen2.5 7B, Mistral 7B v0.3 ofrece un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-v0.3-auto_round-int4-gs64-sym
+- Repositorio en Hugging Face: https://huggingface.co/fbaldassarri/mistralai_Mistral-7B-v0.3-auto_round-int4-gs64-sym
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round
 - auto-round-pipeline (receta de replicacion citada en la model card): https://git.epicdynamic.com/auto-round-pipeline

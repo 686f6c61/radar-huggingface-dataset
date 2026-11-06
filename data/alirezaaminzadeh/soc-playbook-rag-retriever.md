@@ -80,7 +80,7 @@ La comparativa se limita a retrievers clásicos porque no hay datos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alirezaaminzadeh/soc-playbook-rag-retriever
+- Modelo en Hugging Face: https://huggingface.co/alirezaaminzadeh/soc-playbook-rag-retriever
 - Dataset complementario (mencionado en la model card): https://huggingface.co/alirezaaminzadeh/soc-playbook-rag-corpus
 - Repositorio GitHub relacionado (rag-playbook): https://github.com/Aamirofficiall/rag-playbook
 - Portfolio del autor: https://huggingface.co/spaces/alirezaaminzadeh/alireza-aminzadeh-resume

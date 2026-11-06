@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (app agentica sobre MedGemma 1.5 4B IT Q4_K_M) | 4B (segun nombre) | no disponible | Codigo Apache 2.0; pesos bajo terminos de Google | Codigo en HuggingFace; pesos descargados aparte |
-| MedGemma 1.5 4B IT (modelo base) | 4B | no disponible | Health AI Developer Foundations Terms of Use | HuggingFace / Google |
+| Este repositorio (app agentica sobre MedGemma 1.5 4B IT Q4_K_M) | 4B (segun nombre) | no disponible | Codigo Apache 2.0; pesos bajo terminos de Google | Codigo en Hugging Face; pesos descargados aparte |
+| MedGemma 1.5 4B IT (modelo base) | 4B | no disponible | Health AI Developer Foundations Terms of Use | Hugging Face / Google |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones de modelos alternativos en la informacion proporcionada para establecer una comparacion cuantitativa fiable.
@@ -86,5 +86,5 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ahsanmandhar/medgemma-1.5-4b-it-Q4_K_M-agentic-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Ahsanmandhar/medgemma-1.5-4b-it-Q4_K_M-agentic-GGUF
 - Terminos de uso de Health AI Developer Foundations (Google): https://developers.google.com/health-ai-developer-foundations/terms

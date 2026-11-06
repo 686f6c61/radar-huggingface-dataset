@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| josefbrozovich/smolvla_so101 | 450.046.176 (~450 M) | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace (0 descargas al publicar la ficha) |
-| lerobot/smolvla_base | no disponible | no disponible | no disponible | Apache 2.0 (segun modelo base) | HuggingFace (modelo base) |
-| Temmp1e/so101_smolVLA | no disponible | no disponible | no disponible | no disponible | HuggingFace (fine-tune sobre SO-101) |
-| JulianRHuggingFace/so101_smolvla_model | no disponible | no disponible | no disponible | no disponible | HuggingFace (fine-tune sobre SO-101) |
+| josefbrozovich/smolvla_so101 | 450.046.176 (~450 M) | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face (0 descargas al publicar la ficha) |
+| lerobot/smolvla_base | no disponible | no disponible | no disponible | Apache 2.0 (segun modelo base) | Hugging Face (modelo base) |
+| Temmp1e/so101_smolVLA | no disponible | no disponible | no disponible | no disponible | Hugging Face (fine-tune sobre SO-101) |
+| JulianRHuggingFace/so101_smolvla_model | no disponible | no disponible | no disponible | no disponible | Hugging Face (fine-tune sobre SO-101) |
 
 Los tres fine-tunes de SmolVLA sobre SO-101 comparten la misma arquitectura base; no se dispone de datos de parametros, contexto ni rendimiento especificos para los dos checkpoints de terceros, por lo que la comparacion cuantitativa no es posible con la informacion disponible.
 
@@ -83,7 +83,7 @@ Los tres fine-tunes de SmolVLA sobre SO-101 comparten la misma arquitectura base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josefbrozovich/smolvla_so101
+- Modelo en Hugging Face: https://huggingface.co/josefbrozovich/smolvla_so101
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/josefbrozovich/so101_pickup_object_20261013_133624
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)

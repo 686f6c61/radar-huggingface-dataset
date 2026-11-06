@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anku1-1/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario anku1-1 en HuggingFace utilizando la libreria Stable Baselines3 y el framework de entrenamiento RL Zoo, que estandariza hiperparametros y utilidades de carga para agentes de RL. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada especificamente para una tarea de control discreto a partir de pixeles.
+El modelo `anku1-1/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario anku1-1 en Hugging Face utilizando la libreria Stable Baselines3 y el framework de entrenamiento RL Zoo, que estandariza hiperparametros y utilidades de carga para agentes de RL. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada especificamente para una tarea de control discreto a partir de pixeles.
 
 El agente consume observaciones visuales consistentes en 4 fotogramas apilados en escala de grises (preprocesados por el wrapper de Atari de Stable Baselines3) y produce una de las acciones discretas del entorno SpaceInvaders. Se entreno durante 10 millones de pasos de entorno con una red convolucional (CnnPolicy), un buffer de repeticion de 100.000 transiciones y una red objetivo actualizada cada 1.000 pasos de gradiente. El resultado declarado es una recompensa media de 620,50 +/- 148,15 en el entorno de evaluacion, un dato marcado como no verificado en el model-index.
 
@@ -81,7 +81,7 @@ La comparacion se plantea frente a otras alternativas de la misma categoria (pol
 
 | Modelo / algoritmo | Parametros | Contexto (observacion) | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DQN (este modelo) | no disponible | 4 fotogramas apilados de 84x84 | 620,50 +/- 148,15 de recompensa media en SpaceInvadersNoFrameskip-v4 | no disponible | HuggingFace, 0 descargas |
+| DQN (este modelo) | no disponible | 4 fotogramas apilados de 84x84 | 620,50 +/- 148,15 de recompensa media en SpaceInvadersNoFrameskip-v4 | no disponible | Hugging Face, 0 descargas |
 | A2C (referencia RL Zoo) | no disponible | misma observacion preprocesada | no disponible | no disponible | RL Zoo incluye hiperparametros y utilidades de entrenamiento |
 | PPO (referencia RL Zoo) | no disponible | misma observacion preprocesada | no disponible | no disponible | RL Zoo incluye hiperparametros y utilidades de entrenamiento |
 | QR-DQN / CQL (referencia RL Zoo) | no disponible | misma observacion preprocesada | no disponible | no disponible | RL Zoo incluye hiperparametros y utilidades de entrenamiento |
@@ -102,7 +102,7 @@ Diferencias cualitativas relevantes: DQN es off-policy y reutiliza datos mediant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anku1-1/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/anku1-1/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (framework de entrenamiento e hiperparametros): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

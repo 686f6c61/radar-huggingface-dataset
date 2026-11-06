@@ -86,7 +86,7 @@ No se han identificado modelos comparables en la información disponible. La cat
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/FlappingChance/kings-vision-models
+- Repositorio del modelo en Hugging Face: https://huggingface.co/FlappingChance/kings-vision-models
 - Repositorio del proyecto King's Vision: https://github.com/RyanMatthew04/kings-vision
 - Issues del proyecto: https://github.com/RyanMatthew04/kings-vision/issues
 - Leaderboard de visión de Arena (contexto general, no específico del modelo): https://arena.ai/leaderboard/vision

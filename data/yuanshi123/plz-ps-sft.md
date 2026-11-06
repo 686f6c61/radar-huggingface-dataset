@@ -6,7 +6,7 @@ El modelo `Yuanshi123/plz-ps-sft`, identificado internamente como PrimeSeeker-30
 
 La relevancia de este modelo radica en su especialización en tareas de búsqueda profunda y razonamiento con herramientas, un área de creciente interés en el desarrollo de agentes autónomos. Al estar basado en Qwen3-30B-A3B-Thinking-2507, hereda una arquitectura MoE (Mixture of Experts) con 30.532 millones de parámetros totales y aproximadamente 3.000 millones de parámetros activos, lo que permite un equilibrio entre capacidad y eficiencia computacional.
 
-El modelo se distribuye bajo licencia "other" (no especificada en detalle) y está marcado como privado en HuggingFace. La model card indica que debe mantenerse privado hasta que se complete la revisión de licencias y gobernanza de datos del proyecto. No se dispone de información sobre idiomas soportados, contexto máximo ni benchmarks publicados.
+El modelo se distribuye bajo licencia "other" (no especificada en detalle) y está marcado como privado en Hugging Face. La model card indica que debe mantenerse privado hasta que se complete la revisión de licencias y gobernanza de datos del proyecto. No se dispone de información sobre idiomas soportados, contexto máximo ni benchmarks publicados.
 
 ## Especificaciones tecnicas
 
@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yuanshi123/plz-ps-sft
+- Repositorio Hugging Face: https://huggingface.co/Yuanshi123/plz-ps-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507

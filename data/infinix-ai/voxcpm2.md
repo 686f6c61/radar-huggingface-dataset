@@ -97,10 +97,10 @@ La comparacion se limita a caracteristicas publicas ampliamente conocidas de esa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infinix-ai/VoxCPM2
+- Hugging Face: https://huggingface.co/Infinix-ai/VoxCPM2
 - GitHub: https://github.com/OpenBMB/VoxCPM
 - Documentacion: https://voxcpm.readthedocs.io/en/latest/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
 - Pagina de muestras de audio: https://openbmb.github.io/voxcpm2-demopage
 - Discord: https://discord.gg/KZUx7tVNwz
 - Paper (arXiv): https://arxiv.org/abs/2509.24650

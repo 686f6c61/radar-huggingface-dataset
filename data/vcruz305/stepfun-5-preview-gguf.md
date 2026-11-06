@@ -2,11 +2,11 @@
 
 ## Resumen
 
-vcruz305/StepFun-5-Preview-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario vcruz305 en HuggingFace, que empaqueta una supuesta variante del modelo StepFun-5 Preview en version cuantizada de 1 bit y ejecutable con llama.cpp. El repositorio esta etiquetado como moe (mixture of experts), quantized y 1-bit, con licencia Apache 2.0 y pipeline de text-generation. Se trata, por tanto, de una publicacion de terceros y no de un lanzamiento oficial del desarrollador original del modelo base.
+vcruz305/StepFun-5-Preview-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario vcruz305 en Hugging Face, que empaqueta una supuesta variante del modelo StepFun-5 Preview en version cuantizada de 1 bit y ejecutable con llama.cpp. El repositorio esta etiquetado como moe (mixture of experts), quantized y 1-bit, con licencia Apache 2.0 y pipeline de text-generation. Se trata, por tanto, de una publicacion de terceros y no de un lanzamiento oficial del desarrollador original del modelo base.
 
 El dato de parametros registrado en la metadata del repositorio es de 435.636.928 parametros totales (aproximadamente 436 millones), una cifra notablemente baja para un modelo de la familia StepFun y que ademas contrasta con el tamano declarado del repositorio, 347,6 GB. Esa incoherencia (menos de 500 millones de parametros frente a mas de 300 GB de ficheros) no esta explicada en la informacion disponible y sugiere o bien un error en la metadata de safetensors, o bien la presencia de multiples variantes de cuantizacion y ficheros auxiliares en el mismo repositorio.
 
-El acceso esta restringido: es un repositorio gated que exige aceptar condiciones en HuggingFace antes de poder descargar los pesos. Con 1 descarga y 0 likes en el momento de la consulta, se trata de una publicacion practicamente sin validacion comunitaria. No hay informacion disponible sobre arquitectura detallada, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de benchmarks.
+El acceso esta restringido: es un repositorio gated que exige aceptar condiciones en Hugging Face antes de poder descargar los pesos. Con 1 descarga y 0 likes en el momento de la consulta, se trata de una publicacion practicamente sin validacion comunitaria. No hay informacion disponible sobre arquitectura detallada, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ El acceso esta restringido: es un repositorio gated que exige aceptar condicione
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF; la metadata de parametros procede de safetensors |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
@@ -36,7 +36,7 @@ Conviene subrayar que este repositorio no es un artefacto de entrenamiento, sino
 - Ejecucion local mediante llama.cpp: al distribuirse en GGUF, esta pensado para inferencia en CPU y GPU con el ecosistema llama.cpp.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de HuggingFace).
+- Capacidades multilingues: no disponible (el campo de idiomas esta vacio en la ficha de Hugging Face).
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
 - Cuantizacion extrema: la variante de 1 bit esta pensada para escenarios con restricciones severas de memoria, con la contrapartida de calidad que ello implica.
 
@@ -80,12 +80,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni d
 - Sesgos conocidos: no disponible.
 - Limitaciones de contexto e idioma: se desconoce la longitud de contexto soportada y la lista de idiomas. El campo de idiomas de la ficha esta vacio.
 - Procedencia del artefacto: se trata de una publicacion de terceros (vcruz305) y no de un lanzamiento oficial del desarrollador del modelo base. Conviene verificar la trazabilidad de los pesos antes de cualquier uso serio y comprobar si la licencia Apache 2.0 declarada en el repositorio es compatible con la licencia del modelo original, dato que no se aporta.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion y limita la reproducibilidad automatizada.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion y limita la reproducibilidad automatizada.
 - Adopcion nula: 1 descarga y 0 likes en el momento de la consulta implican ausencia de validacion por parte de la comunidad.
 - Uso comercial: la licencia declarada es Apache 2.0, permisiva en principio, pero al desconocerse la licencia del modelo base subyacente no puede confirmarse que el uso comercial este cubierto en todos los supuestos.
 - Busqueda web no concluyente: los resultados de la busqueda realizada no contienen ningun enlace relevante sobre este modelo ni sobre StepFun-5 Preview; los dominios devueltos no guardan relacion con la ficha y se han descartado por completo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vcruz305/StepFun-5-Preview-GGUF
+- Hugging Face: https://huggingface.co/vcruz305/StepFun-5-Preview-GGUF
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. El resto de resultados devueltos por el buscador no estan relacionados con este modelo y no se incluyen.

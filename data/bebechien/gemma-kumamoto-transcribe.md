@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bebechien/gemma-kumamoto-transcribe es un ajuste fino (fine-tuning) del modelo google/gemma-4-E2B, publicado por el usuario bebechien (Juyeong Ji) en HuggingFace. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL, según declara la propia model card, y se distribuye en formato transformers con pesos safetensors. El repositorio ocupa 9,8 GB, lo que es coherente con un guardado en precisión de 16 bits.
+bebechien/gemma-kumamoto-transcribe es un ajuste fino (fine-tuning) del modelo google/gemma-4-E2B, publicado por el usuario bebechien (Juyeong Ji) en Hugging Face. El modelo se ha entrenado mediante SFT (supervised fine-tuning) con la librería TRL, según declara la propia model card, y se distribuye en formato transformers con pesos safetensors. El repositorio ocupa 9,8 GB, lo que es coherente con un guardado en precisión de 16 bits.
 
 El nombre del modelo ("kumamoto-transcribe") sugiere un uso orientado a transcripción, posiblemente vinculado al dialecto o la región japonesa de Kumamoto, pero esta interpretación no está confirmada en la información disponible: no se documenta el dataset, la tarea concreta ni los idiomas de entrenamiento. Tampoco se especifica la licencia ni los idiomas soportados.
 
@@ -59,7 +59,7 @@ Las cifras siguientes son estimaciones basadas en el tamano del repositorio (9,8
 - VRAM estimada para inferencia: en bf16/fp16, en torno a 10-12 GB; en int8, aproximadamente 6-7 GB; en int4, aproximadamente 4-5 GB. Estas cifras son orientativas y no estan confirmadas.
 - GPU recomendadas: para bf16 sin cuantizar, tarjetas con 16 GB o mas (RTX 4060 Ti 16 GB, RTX 4080, RTX 4090, A100, H100). Para cuantizacion int4/int8, podria caber en GPUs de 8-12 GB (RTX 3060 12 GB, RTX 3070, RTX 4060).
 - Compatibilidad con GPU de consumo: probable si la cuantizacion se genera manualmente, dado que el repositorio no incluye GGUF ni cuantizaciones listas.
-- Opciones de despliegue: transformers (formato nativo del repositorio). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI; el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Endpoints.
+- Opciones de despliegue: transformers (formato nativo del repositorio). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI; el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Endpoints.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas que per
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bebechien/gemma-kumamoto-transcribe | no disponible | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste SFT de gemma-4-E2B, sin benchmarks |
-| google/gemma-4-E2B | no disponible | no disponible | no disponible | Modelo base en HuggingFace | Referenciado como base del ajuste |
+| bebechien/gemma-kumamoto-transcribe | no disponible | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste SFT de gemma-4-E2B, sin benchmarks |
+| google/gemma-4-E2B | no disponible | no disponible | no disponible | Modelo base en Hugging Face | Referenciado como base del ajuste |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos para comparar |
 
 ## Limitaciones y advertencias
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas que per
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bebechien/gemma-kumamoto-transcribe
+- Modelo en Hugging Face: https://huggingface.co/bebechien/gemma-kumamoto-transcribe
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl
-- Perfil del autor en HuggingFace: https://huggingface.co/bebechien
+- Perfil del autor en Hugging Face: https://huggingface.co/bebechien
 - Perfil del autor en GitHub: https://github.com/bebechien
 - Repositorio GitHub del autor: https://github.com/bebechien/gemma

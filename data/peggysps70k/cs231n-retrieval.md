@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`peggysps70k/cs231n-retrieval` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia y compacta de **CoCa** (Contrastive Captioners) orientada a tareas de recuperación imagen-texto (retrieval). El autor lo etiqueta como configuración "nano", pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción.
+`peggysps70k/cs231n-retrieval` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia y compacta de **CoCa** (Contrastive Captioners) orientada a tareas de recuperación imagen-texto (retrieval). El autor lo etiqueta como configuración "nano", pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado: la propia model card aclara que no se ha completado ningún entrenamiento ni se reclama ninguna métrica de benchmark. El peso total registrado en safetensors es de apenas 16.576 parámetros, lo que confirma que se trata de un esqueleto arquitectónico mínimo.
 
@@ -34,7 +34,7 @@ En cuanto a entrenamiento, el repositorio no incluye un modelo entrenado: `train
 - Configuración reproducible mediante `config.json` y `training_args.json`.
 - Atención multi-query y tensor fusion como características técnicas del modelo nano.
 - No genera texto de uso general, no tiene capacidades de razonamiento, código, visión preentrenada ni tool calling: es un esqueleto experimental sin entrenamiento.
-- No compatible de forma directa con APIs de carga automática de HuggingFace: la model card indica que se requiere un adaptador explícito al ser una implementación personalizada.
+- No compatible de forma directa con APIs de carga automática de Hugging Face: la model card indica que se requiere un adaptador explícito al ser una implementación personalizada.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ La comparación es orientativa: las alternativas citadas son modelos preentrenad
 
 - El checkpoint incluido **no está entrenado**: produce salidas sin significado semántico y no debe usarse para ninguna tarea real.
 - La model card advierte explícitamente que la inicialización no ha sido auditada en robustez, equidad (fairness) ni transferencia de dominio.
-- Al ser una implementación personalizada, no es compatible con `from_pretrained` ni con las APIs automáticas de HuggingFace sin escribir un adaptador.
+- Al ser una implementación personalizada, no es compatible con `from_pretrained` ni con las APIs automáticas de Hugging Face sin escribir un adaptador.
 - No hay datos de idiomas soportados, longitud de contexto ni cuantización; cualquier uso multimodal requeriría definir tokenizador y preprocesado por cuenta propia.
 - Riesgo de alucinación: no aplicable en el sentido habitual (no es un modelo generativo de lenguaje entrenado), pero cualquier resultado obtenido con el checkpoint sin entrenar sería espurio.
 - Licencia Apache-2.0 permite uso comercial, pero la model card recomienda revisar los términos de los datasets externos (por ejemplo Flickr30k) utilizados en el entrenamiento.
@@ -79,6 +79,6 @@ La comparación es orientativa: las alternativas citadas son modelos preentrenad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/peggysps70k/cs231n-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/peggysps70k/cs231n-retrieval
 - Paper original de CoCa (referencia de arquitectura): https://arxiv.org/abs/2111.08776
 - Otros enlaces (demo, blog, repositorio externo): no disponibles

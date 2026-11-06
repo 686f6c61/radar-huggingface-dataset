@@ -2,7 +2,7 @@
 
 ## Resumen
 
-medgemma-symptom-lora es un ajuste fino (LoRA) del modelo médico MedGemma 4B IT, publicado por el usuario koyomi010 en HuggingFace. El modelo base es `unsloth/medgemma-4b-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de MedGemma 4B IT preparada para entrenamiento eficiente con la librería Unsloth. El ajuste se ha orientado, según el nombre del repositorio, a la tarea de interpretación de síntomas clínicos.
+medgemma-symptom-lora es un ajuste fino (LoRA) del modelo médico MedGemma 4B IT, publicado por el usuario koyomi010 en Hugging Face. El modelo base es `unsloth/medgemma-4b-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits de MedGemma 4B IT preparada para entrenamiento eficiente con la librería Unsloth. El ajuste se ha orientado, según el nombre del repositorio, a la tarea de interpretación de síntomas clínicos.
 
 El modelo hereda la arquitectura Gemma 3 del modelo base: un transformer decoder-only de aproximadamente 4.000 millones de parámetros, con soporte multimodal (texto e imagen) y una ventana de contexto de 128.000 tokens en la familia Gemma 3. El ajuste se ha realizado con TRL y Unsloth, lo que según el autor permitió un entrenamiento "2x más rápido" que un pipeline estándar.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| koyomi010/medgemma-symptom-lora | ~4B (LoRA sobre MedGemma 4B IT) | 128K (heredado, no confirmado) | apache-2.0 | HuggingFace, 0 descargas |
-| google/medgemma-4b-it | ~4B | 128K | Gemma license (uso comercial con restricciones) | HuggingFace, ampliamente usado |
-| unsloth/medgemma-4b-it-unsloth-bnb-4bit | ~4B (4-bit) | 128K | Gemma license | HuggingFace |
-| google/gemma-3-4b-it | ~4B | 128K | Gemma license | HuggingFace |
+| koyomi010/medgemma-symptom-lora | ~4B (LoRA sobre MedGemma 4B IT) | 128K (heredado, no confirmado) | apache-2.0 | Hugging Face, 0 descargas |
+| google/medgemma-4b-it | ~4B | 128K | Gemma license (uso comercial con restricciones) | Hugging Face, ampliamente usado |
+| unsloth/medgemma-4b-it-unsloth-bnb-4bit | ~4B (4-bit) | 128K | Gemma license | Hugging Face |
+| google/gemma-3-4b-it | ~4B | 128K | Gemma license | Hugging Face |
 
 La comparativa de rendimiento no está disponible al no haberse publicado benchmarks del ajuste.
 
@@ -85,7 +85,7 @@ La comparativa de rendimiento no está disponible al no haberse publicado benchm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/koyomi010/medgemma-symptom-lora
+- Hugging Face: https://huggingface.co/koyomi010/medgemma-symptom-lora
 - Modelo base: https://huggingface.co/unsloth/medgemma-4b-it-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
 - MedGemma (Google): https://huggingface.co/google/medgemma-4b-it

@@ -74,10 +74,10 @@ Media: 4,922 s. Total: 4922 ticks, frente a 4937 ticks de la base directa. Cinco
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sock-heist-6m-fce-g5 (este) | no disponible (1,2 MB ONNX) | no aplica | 4922 ticks totales, media 4,922 s en 5 seeds | no disponible para el conjunto | HuggingFace, 0 descargas, 0 likes |
-| rumezhak/microduck-sock-heist-composite-v1 (base directa) | no disponible | no aplica | 4937 ticks totales | no declarada | HuggingFace |
-| a1rb4Ck/microduck-heist (commit 94cd2cf) | no disponible | no aplica | no disponible | Apache-2.0 | HuggingFace |
-| Entrada previa G1 de jrubiosainz (solo seed 2) | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| microduck-sock-heist-6m-fce-g5 (este) | no disponible (1,2 MB ONNX) | no aplica | 4922 ticks totales, media 4,922 s en 5 seeds | no disponible para el conjunto | Hugging Face, 0 descargas, 0 likes |
+| rumezhak/microduck-sock-heist-composite-v1 (base directa) | no disponible | no aplica | 4937 ticks totales | no declarada | Hugging Face |
+| a1rb4Ck/microduck-heist (commit 94cd2cf) | no disponible | no aplica | no disponible | Apache-2.0 | Hugging Face |
+| Entrada previa G1 de jrubiosainz (solo seed 2) | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ Media: 4,922 s. Total: 4922 ticks, frente a 4937 ticks de la base directa. Cinco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-g5
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-fce-g5
 - Modelo base: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v1/tree/b29090eb3242a9c1201b650495d515bb622a394f
 - Repositorio de disposición de grafo y lookup: https://huggingface.co/a1rb4Ck/microduck-heist (commit `94cd2cfeb57a4ece561a3d320e233f442238cb81`)
 - Microduck Arena y runner oficial (Pollen Robotics): no disponible en la información proporcionada

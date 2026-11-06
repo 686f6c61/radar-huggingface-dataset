@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 8B v3 SFT es un modelo de generacion de texto ajustado para seguir instrucciones en coreano, publicado por el usuario cooler8 en HuggingFace bajo licencia Apache 2.0. Se distribuye como un fine-tuning supervisado (SFT) de un modelo base de la familia Qwen3, segun el tag `qwen3` que acompania al repositorio, y cuenta con 7.241.740.288 parametros (aproximadamente 7,24 mil millones) almacenados en formato safetensors, con un repositorio de 14,5 GB.
+Yejin Korean 8B v3 SFT es un modelo de generacion de texto ajustado para seguir instrucciones en coreano, publicado por el usuario cooler8 en Hugging Face bajo licencia Apache 2.0. Se distribuye como un fine-tuning supervisado (SFT) de un modelo base de la familia Qwen3, segun el tag `qwen3` que acompania al repositorio, y cuenta con 7.241.740.288 parametros (aproximadamente 7,24 mil millones) almacenados en formato safetensors, con un repositorio de 14,5 GB.
 
 El problema que aborda es el de la disponibilidad de modelos instructivos especializados en coreano de tamano medio, que puedan ejecutarse en hardware de consumo o en una sola GPU de datacenter sin recurrir a APIs propietarias. Frente a modelos multilingues genericos, un ajuste especifico sobre datos en coreano puede ofrecer mejor adherencia al idioma en tareas de conversacion e instrucciones, aunque en este caso el autor no publica detalles sobre el dataset de ajuste ni sobre el proceso de entrenamiento.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Yejin Korean 8B v3 SFT | 7,24 mil millones | No disponible | Apache 2.0 | HuggingFace, solo safetensors | Sin benchmarks publicados; 210 descargas y 0 likes |
-| Qwen3-8B (modelo base de referencia) | 8,2 mil millones | 32.768 tokens nativos en la familia Qwen3 | Apache 2.0 | HuggingFace, safetensors y GGUF | Multilingue, con variantes instructivas y modo de razonamiento; mucho mas soporte de comunidad |
-| Llama 3.1 8B Instruct | 8,03 mil millones | 128.000 tokens | Licencia comunitaria de Meta (no Apache 2.0) | HuggingFace | Multilingue, pero con cobertura de coreano limitada frente a modelos especializados |
-| Modelos coreanos especializados de 7-13B (por ejemplo la familia EEVE) | 7-13 mil millones | No disponible | Apache 2.0 o similar, segun variante | HuggingFace | Alternativas centradas en coreano con documentacion mas extensa; requieren verificacion caso por caso |
+| Yejin Korean 8B v3 SFT | 7,24 mil millones | No disponible | Apache 2.0 | Hugging Face, solo safetensors | Sin benchmarks publicados; 210 descargas y 0 likes |
+| Qwen3-8B (modelo base de referencia) | 8,2 mil millones | 32.768 tokens nativos en la familia Qwen3 | Apache 2.0 | Hugging Face, safetensors y GGUF | Multilingue, con variantes instructivas y modo de razonamiento; mucho mas soporte de comunidad |
+| Llama 3.1 8B Instruct | 8,03 mil millones | 128.000 tokens | Licencia comunitaria de Meta (no Apache 2.0) | Hugging Face | Multilingue, pero con cobertura de coreano limitada frente a modelos especializados |
+| Modelos coreanos especializados de 7-13B (por ejemplo la familia EEVE) | 7-13 mil millones | No disponible | Apache 2.0 o similar, segun variante | Hugging Face | Alternativas centradas en coreano con documentacion mas extensa; requieren verificacion caso por caso |
 
 Los datos de las filas correspondientes a modelos alternativos proceden de documentacion publica general y no se han verificado en la busqueda realizada para esta ficha, por lo que deben confirmarse antes de tomar decisiones de adopcion. Para el modelo objeto de la ficha no hay datos de rendimiento con los que establecer una comparacion cuantitativa.
 
@@ -97,7 +97,7 @@ Los datos de las filas correspondientes a modelos alternativos proceden de docum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-sft
-- Perfil del autor en HuggingFace: https://huggingface.co/cooler8
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-sft
+- Perfil del autor en Hugging Face: https://huggingface.co/cooler8
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.
 - No se han encontrado en la busqueda web enlaces relevantes, papers ni articulos asociados a este modelo.

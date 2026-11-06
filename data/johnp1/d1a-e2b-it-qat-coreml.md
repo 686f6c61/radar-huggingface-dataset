@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- [HuggingFace: JohnP1/d1a-e2b-it-qat-coreml](https://huggingface.co/JohnP1/d1a-e2b-it-qat-coreml)
+- [Hugging Face: JohnP1/d1a-e2b-it-qat-coreml](https://huggingface.co/JohnP1/d1a-e2b-it-qat-coreml)
 - [Build MLX v0.7: JohnP1/d1a-e2b-it-qat-mlx-q4](https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4)
 - [Modelo base: google/gemma-4-E2B-it-qat-w4a16-ct](https://huggingface.co/google/gemma-4-E2B-it-qat-w4a16-ct)
 - [Scorecard de evaluación](https://github.com/jonpol01/d1a/blob/main/docs/reports/2026-10-25-e2b-it-qat-scorecard.md)

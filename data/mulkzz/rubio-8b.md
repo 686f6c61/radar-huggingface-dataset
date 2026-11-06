@@ -74,11 +74,11 @@ Comparación dentro de la familia RuBio en la misma partición dev: RuBio-4B v2 
 
 | Modelo | Parametros | Contexto | Precisión RuBench v1 (dev) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| RuBio-8B | 8,19B | no disponible | 76,0 % [72,1; 79,8] | Apache 2.0 | HuggingFace (mulkzz/RuBio-8B) |
-| RuBio-4B | no disponible | no disponible | 77,2 % [73,4; 80,9] (v2) | no disponible | HuggingFace (mulkzz/RuBio-4B) |
-| RuBio-9B | no disponible | no disponible | 84,9 % [81,6; 88,1] | no disponible | HuggingFace (mulkzz/RuBio-9B) |
-| RuBio-27B | no disponible | no disponible | 86,9 % [83,8; 89,9] | no disponible | HuggingFace (mulkzz/RuBio-27B) |
-| Qwen3-8B-MegaScience (base) | 8,19B | 32.768 tokens (Qwen3-8B) | 56,2 % [51,7; 60,7] (permisivo) | Apache 2.0 | HuggingFace (MegaScience/Qwen3-8B-MegaScience) |
+| RuBio-8B | 8,19B | no disponible | 76,0 % [72,1; 79,8] | Apache 2.0 | Hugging Face (mulkzz/RuBio-8B) |
+| RuBio-4B | no disponible | no disponible | 77,2 % [73,4; 80,9] (v2) | no disponible | Hugging Face (mulkzz/RuBio-4B) |
+| RuBio-9B | no disponible | no disponible | 84,9 % [81,6; 88,1] | no disponible | Hugging Face (mulkzz/RuBio-9B) |
+| RuBio-27B | no disponible | no disponible | 86,9 % [83,8; 89,9] | no disponible | Hugging Face (mulkzz/RuBio-27B) |
+| Qwen3-8B-MegaScience (base) | 8,19B | 32.768 tokens (Qwen3-8B) | 56,2 % [51,7; 60,7] (permisivo) | Apache 2.0 | Hugging Face (MegaScience/Qwen3-8B-MegaScience) |
 
 La comparación con RuBio-9B y RuBio-27B debe interpretarse con cautela: según la model card, esos modelos se basan en la línea Qwen3.5/Qwen3.8, con arquitectura y preentrenamiento distintos de la línea Qwen3 del modelo 8B.
 
@@ -95,7 +95,7 @@ La comparación con RuBio-9B y RuBio-27B debe interpretarse con cautela: según 
 - El modelo no está desplegado en el servicio de demostración del autor, que solo opera las variantes 4B y 27B.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mulkzz/RuBio-8B
+- Modelo en Hugging Face: https://huggingface.co/mulkzz/RuBio-8B
 - Modelo base: https://huggingface.co/MegaScience/Qwen3-8B-MegaScience
 - Modelo RuBio-4B: https://huggingface.co/mulkzz/RuBio-4B
 - Modelo RuBio-9B: https://huggingface.co/mulkzz/RuBio-9B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deepakdevi/poolformer-baseline es un repositorio de HuggingFace que contiene una implementación propia y compacta de PoolFormer en PyTorch, orientada a tareas de retrieval. El autor no lo presenta como un modelo preentrenado listo para producción, sino como un esqueleto de código para revisión, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. La licencia declarada es MIT.
+Deepakdevi/poolformer-baseline es un repositorio de Hugging Face que contiene una implementación propia y compacta de PoolFormer en PyTorch, orientada a tareas de retrieval. El autor no lo presenta como un modelo preentrenado listo para producción, sino como un esqueleto de código para revisión, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. La licencia declarada es MIT.
 
 El checkpoint incluido, `model.safetensors`, contiene únicamente una inicialización válida: la propia model card advierte de que no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El recuento real de parámetros según los pesos safetensors es de 49.600, una cifra muy reducida que confirma la naturaleza de baseline del artefacto, pese a que la configuración etiquete la escala como "giant".
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo con soporte CUDA, e incluso en CPU sin penalización apreciable.
 - Opciones de despliegue: PyTorch nativo mediante `eval.py`. vLLM y TGI no son aplicables, ya que no se trata de un modelo de lenguaje causal con caché KV. No se documentan exportaciones a GGUF, ONNX ni TensorRT.
 - Latencia y throughput estimados: no disponibles. Dado el tamaño, el rendimiento efectivo vendrá determinado por el pipeline de datos y el preprocesado de retrieval, no por el cómputo del modelo.
-- Nota de integración: al ser una implementación propia, las APIs de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+- Nota de integración: al ser una implementación propia, las APIs de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 
 ## Comparativa con modelos similares
 
@@ -73,7 +73,7 @@ La información disponible no permite una comparativa cuantitativa fiable, porqu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Deepakdevi/poolformer-baseline | 49.600 (safetensors) | no disponible | sin benchmarks declarados; checkpoint sin entrenar | MIT | HuggingFace, 0 descargas |
+| Deepakdevi/poolformer-baseline | 49.600 (safetensors) | no disponible | sin benchmarks declarados; checkpoint sin entrenar | MIT | Hugging Face, 0 descargas |
 | PoolFormer (familia original de Meta AI) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publicaciones y repositorios de referencia de la familia MetaFormer |
 | Modelos de retrieval multimodal tipo CLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | releases preentrenadas de uso comun |
 
@@ -94,7 +94,7 @@ La comparación relevante no es de rendimiento, sino de propósito: este reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deepakdevi/poolformer-baseline
+- Modelo en Hugging Face: https://huggingface.co/Deepakdevi/poolformer-baseline
 - Archivo de configuración: https://huggingface.co/Deepakdevi/poolformer-baseline/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/Deepakdevi/poolformer-baseline/blob/main/training_args.json
 - Script de evaluación: https://huggingface.co/Deepakdevi/poolformer-baseline/blob/main/eval.py

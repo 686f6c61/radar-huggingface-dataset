@@ -72,7 +72,7 @@ Nota: los datos de comparacion de otras variantes proceden de documentacion publ
 
 | Modelo | Arquitectura | Factor | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `enhance/` (este repo) | SRVGGNetCompact, 64 features, 32 bloques, mezcla DNI denoise 0,5 | x4 | ~1,21 M | BSD-3-Clause (carpeta) | HuggingFace, fichero float16 |
+| `enhance/` (este repo) | SRVGGNetCompact, 64 features, 32 bloques, mezcla DNI denoise 0,5 | x4 | ~1,21 M | BSD-3-Clause (carpeta) | Hugging Face, fichero float16 |
 | `realesr-general-x4v3` | SRVGGNetCompact | x4 | ~1,21 M (aproximado) | BSD-3-Clause | GitHub Real-ESRGAN v0.2.5.0 |
 | `realesr-general-wdn-x4v3` | SRVGGNetCompact con denoise | x4 | ~1,21 M (aproximado) | BSD-3-Clause | GitHub Real-ESRGAN v0.2.5.0 |
 | Real-ESRGAN x4plus (RRDBNet) | RRDBNet | x4 | mayor que la variante compacta (no disponible cifra exacta en la informacion) | BSD-3-Clause | GitHub Real-ESRGAN |
@@ -90,7 +90,7 @@ Nota: los datos de comparacion de otras variantes proceden de documentacion publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kyraoki/chrome-extension-addons
+- Repositorio en Hugging Face: https://huggingface.co/kyraoki/chrome-extension-addons
 - URL de descarga por commit: https://huggingface.co/kyraoki/chrome-extension-addons/resolve/<commit>/<folder>/<file>
 - Fuente de los pesos (Real-ESRGAN v0.2.5.0): https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0
 - Repositorio Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN

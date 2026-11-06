@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Ruandrew1234/qwen2.5-14b-meu-personagem-gguf` es un ajuste fino (fine-tune) del modelo base Qwen2.5-14B-Instruct, convertido a formato GGUF para su ejecución con llama.cpp y distribuciones derivadas. Lo publica el usuario Ruandrew1234 en HuggingFace, sin model card detallada y con licencia no declarada en los metadatos. El nombre del repositorio ("meu personagem", en portugués) sugiere un ajuste orientado a roleplay o encarnación de un personaje conversacional, si bien el autor no documenta el conjunto de datos ni el objetivo del entrenamiento.
+`Ruandrew1234/qwen2.5-14b-meu-personagem-gguf` es un ajuste fino (fine-tune) del modelo base Qwen2.5-14B-Instruct, convertido a formato GGUF para su ejecución con llama.cpp y distribuciones derivadas. Lo publica el usuario Ruandrew1234 en Hugging Face, sin model card detallada y con licencia no declarada en los metadatos. El nombre del repositorio ("meu personagem", en portugués) sugiere un ajuste orientado a roleplay o encarnación de un personaje conversacional, si bien el autor no documenta el conjunto de datos ni el objetivo del entrenamiento.
 
-El modelo cuenta con 14.770.033.664 parámetros totales (dato real extraído de los safetensors originales) y se distribuye únicamente en un archivo cuantizado `q4_k_m`, con un tamaño de repositorio de 9,0 GB. Se apoya en el ecosistema de Unsloth para el ajuste fino y la conversión, e incluye un Modelfile de Ollama para despliegue directo. El pipeline, los idiomas soportados y la licencia aparecen como no disponibles en la ficha de HuggingFace.
+El modelo cuenta con 14.770.033.664 parámetros totales (dato real extraído de los safetensors originales) y se distribuye únicamente en un archivo cuantizado `q4_k_m`, con un tamaño de repositorio de 9,0 GB. Se apoya en el ecosistema de Unsloth para el ajuste fino y la conversión, e incluye un Modelfile de Ollama para despliegue directo. El pipeline, los idiomas soportados y la licencia aparecen como no disponibles en la ficha de Hugging Face.
 
 Su relevancia es limitada y de nicho: se trata de un derivado comunitario sin evaluaciones publicadas, con cero descargas y cero "likes" en el momento de la consulta. Resulta interesante únicamente como ejemplo de flujo de trabajo Unsloth + GGUF + Ollama para crear un modelo de personaje sobre una base de 14B que cabe en GPUs de consumo, no como modelo de propósito general para producción.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen2.5-14b-meu-personagem-gguf | 14,77B | no disponible (base: 131.072) | no disponible | GGUF Q4_K_M en HuggingFace, 0 descargas | Fine-tune de personaje sin evaluacion publicada |
+| qwen2.5-14b-meu-personagem-gguf | 14,77B | no disponible (base: 131.072) | no disponible | GGUF Q4_K_M en Hugging Face, 0 descargas | Fine-tune de personaje sin evaluacion publicada |
 | Qwen2.5-14B-Instruct (base) | 14,77B | 131.072 tokens | Apache 2.0 | Pesos safetensors y multiples cuantizaciones | Modelo oficial, con benchmarks publicados por el equipo Qwen |
 | Mistral-Nemo-Instruct-2407 | 12,2B | 128.000 tokens | Apache 2.0 | Safetensors y GGUF | Alternativa densa de tamano similar con soporte multilingue |
 | Llama-3.1-8B-Instruct | 8,03B | 131.072 tokens | Llama 3.1 Community License | Safetensors y GGUF | Mas ligero y con menor requisito de VRAM, pero menor capacidad bruta |
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ruandrew1234/qwen2.5-14b-meu-personagem-gguf
+- Modelo en Hugging Face: https://huggingface.co/Ruandrew1234/qwen2.5-14b-meu-personagem-gguf
 - Unsloth (herramienta de ajuste fino y conversion citada por el autor): https://github.com/unslothai/unsloth
 - Pagina oficial de llama.cpp (motor de inferencia implicito en el formato GGUF): https://github.com/ggml-org/llama.cpp
 - No se han encontrado papers, blogs, demos ni repositorios adicionales especificos de este modelo en los resultados de busqueda disponibles.

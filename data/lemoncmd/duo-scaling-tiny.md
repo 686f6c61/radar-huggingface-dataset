@@ -6,7 +6,7 @@
 
 El objetivo no es ofrecer un modelo listo para producción, sino estudiar leyes de escala y dinámica de entrenamiento: cada carpeta incluye 53 checkpoints completos en una rejilla fija de pasos, pesos EMA, estado del optimizador y estado del sampler, además de métricas y normas de pesos cada 500 pasos. Esto permite analizar curvas de pérdida, sesgo implícito, complejidad espectral y eventos transitorios de entrenamiento con un coste computacional relativamente bajo.
 
-La relevancia es metodológica: es un banco de pruebas reproducible para investigación en modelos de difusión discreta, con licencia Apache-2.0, pero no un modelo conversacional ni un sistema con benchmarks estándar de razonamiento o código. El repositorio ocupa 285,2 GB y no incluye pipeline de HuggingFace ni versiones cuantizadas.
+La relevancia es metodológica: es un banco de pruebas reproducible para investigación en modelos de difusión discreta, con licencia Apache-2.0, pero no un modelo conversacional ni un sistema con benchmarks estándar de razonamiento o código. El repositorio ocupa 285,2 GB y no incluye pipeline de Hugging Face ni versiones cuantizadas.
 
 ## Especificaciones técnicas
 
@@ -22,7 +22,7 @@ La relevancia es metodológica: es un banco de pruebas reproducible para investi
 | Formato de pesos | Checkpoints PyTorch Lightning (`.ckpt`) con pesos raw, EMA, estado del optimizador y estado del loop/sampler; no hay safetensors ni GGUF |
 | Tokenizador | GPT-2, vocabulario de 50.258 |
 | Tamaño del repositorio | 285,2 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 

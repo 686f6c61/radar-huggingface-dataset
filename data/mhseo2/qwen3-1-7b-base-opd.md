@@ -68,11 +68,11 @@ Los datos de los modelos alternativos que figuran a continuacion proceden de con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mhseo2/Qwen3-1.7B-Base-opd | 1,72B (medido en safetensors) | 32.768 | Apache-2.0 | HuggingFace, 0 descargas, sin evaluacion publicada |
-| Qwen3-1.7B-Base (original) | 1,7B | 32.768 | Apache-2.0 | HuggingFace, ampliamente utilizado, con evaluaciones en el blog de Qwen |
-| Qwen2.5-1.5B | 1,5B | 32.768 | Apache-2.0 (variantes Base e Instruct) | HuggingFace, modelo maduro de la generacion anterior |
-| Llama-3.2-1B | 1,23B | 128.000 | Licencia comunitaria de Llama 3.2 | HuggingFace, requiere aceptar la licencia |
-| Gemma-2-2B | 2,6B | 8.192 | Licencia de Gemma | HuggingFace, requiere aceptar los terminos |
+| mhseo2/Qwen3-1.7B-Base-opd | 1,72B (medido en safetensors) | 32.768 | Apache-2.0 | Hugging Face, 0 descargas, sin evaluacion publicada |
+| Qwen3-1.7B-Base (original) | 1,7B | 32.768 | Apache-2.0 | Hugging Face, ampliamente utilizado, con evaluaciones en el blog de Qwen |
+| Qwen2.5-1.5B | 1,5B | 32.768 | Apache-2.0 (variantes Base e Instruct) | Hugging Face, modelo maduro de la generacion anterior |
+| Llama-3.2-1B | 1,23B | 128.000 | Licencia comunitaria de Llama 3.2 | Hugging Face, requiere aceptar la licencia |
+| Gemma-2-2B | 2,6B | 8.192 | Licencia de Gemma | Hugging Face, requiere aceptar los terminos |
 
 Rendimiento comparado en benchmarks: no disponible para el modelo objeto de la ficha. No se han publicado cifras que permitan situarlo frente a estas alternativas.
 
@@ -90,7 +90,7 @@ Rendimiento comparado en benchmarks: no disponible para el modelo objeto de la f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/Qwen3-1.7B-Base-opd
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/Qwen3-1.7B-Base-opd
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Documentacion de Qwen: https://qwen.readthedocs.io/en/latest/

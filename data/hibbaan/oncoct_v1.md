@@ -75,6 +75,6 @@ No disponible. No se proporcionan comparaciones con otros modelos fundacionales 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hibbaan/Oncoct_v1
+- Repositorio Hugging Face: https://huggingface.co/Hibbaan/Oncoct_v1
 - DOI asociado: 10.57967/hf/9990
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

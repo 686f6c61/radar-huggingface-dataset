@@ -83,7 +83,7 @@ El autor advierte que el KID es ruidoso con tan pocas imagenes. No se han public
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `sadaffatimaeee/naruto-sd15-run2-lora-r16` | LoRA sobre SD 1.5 | 3.188.736 entrenables | No aplica | KID 0.0389, CLIP 30.90 | other (no comercial) | HuggingFace, 0 descargas |
+| `sadaffatimaeee/naruto-sd15-run2-lora-r16` | LoRA sobre SD 1.5 | 3.188.736 entrenables | No aplica | KID 0.0389, CLIP 30.90 | other (no comercial) | Hugging Face, 0 descargas |
 | Stable Diffusion 1.5 (base) | Difusion latente | No disponible en la informacion | No aplica | No disponible en la informacion | CreativeML OpenRAIL-M (segun el modelo base referenciado) | Ampliamente disponible |
 | Otros LoRA de estilo para SD 1.5 | LoRA | Variable | No aplica | No disponible | Variable | Comunidad |
 
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sadaffatimaeee/naruto-sd15-run2-lora-r16
+- Modelo en Hugging Face: https://huggingface.co/sadaffatimaeee/naruto-sd15-run2-lora-r16
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Dataset de entrenamiento: https://huggingface.co/datasets/lambdalabs/naruto-blip-captions
 - Script de entrenamiento: https://github.com/huggingface/diffusers/blob/main/examples/text_to_image/train_text_to_image_lora.py

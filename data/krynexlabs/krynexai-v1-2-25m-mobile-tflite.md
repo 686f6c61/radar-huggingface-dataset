@@ -104,7 +104,7 @@ La comparacion directa de rendimiento no es posible porque KrynexAI 25M no publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KrynexLabs/KrynexAI-v1.2-25M-Mobile-TFLite
+- Modelo en Hugging Face: https://huggingface.co/KrynexLabs/KrynexAI-v1.2-25M-Mobile-TFLite
 - Perfil del autor: https://huggingface.co/KrynexLabs
 - Paper tecnico: no disponible
 - Blog o anuncio de publicacion: no disponible

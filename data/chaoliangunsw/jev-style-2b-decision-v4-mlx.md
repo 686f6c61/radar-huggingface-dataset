@@ -83,10 +83,10 @@ Notas: el Decision Index se midió con el runner y scorer del kit, en bfloat16 s
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| Jev-Style-2B-Decision-v4-MLX | 2B | 32.768 | Clasificación y decisión con opciones fijas, MLX | Apache 2.0 | HuggingFace (MLX) |
-| Jev-Style-2B-Decision-v3-MLX | 2B | 25.600 | Igual, versión anterior | Apache 2.0 | HuggingFace (MLX) |
-| Jev-Style-0.8B-Decision-v3-MLX | 0,8B | No disponible | Igual, variante reducida | Apache 2.0 | HuggingFace (MLX) |
-| Qwen3.5 base (2B) | 2B | No disponible | Modelo generativo de propósito general | No disponible | HuggingFace |
+| Jev-Style-2B-Decision-v4-MLX | 2B | 32.768 | Clasificación y decisión con opciones fijas, MLX | Apache 2.0 | Hugging Face (MLX) |
+| Jev-Style-2B-Decision-v3-MLX | 2B | 25.600 | Igual, versión anterior | Apache 2.0 | Hugging Face (MLX) |
+| Jev-Style-0.8B-Decision-v3-MLX | 0,8B | No disponible | Igual, variante reducida | Apache 2.0 | Hugging Face (MLX) |
+| Qwen3.5 base (2B) | 2B | No disponible | Modelo generativo de propósito general | No disponible | Hugging Face |
 
 La comparación más directa es con las versiones anteriores de la propia serie: v4 mejora el Decision Index de 34,05 a 44,37, sube JevBench de 73,6% a 74,9% y amplía el contexto de 25.600 a 32.768 tokens. Frente a un modelo generativo como Qwen3.5 base, la diferencia es de enfoque: Jev-Style está especializado en decisiones cerradas y calibradas, mientras que el modelo base genera texto libre. No se dispone de datos de benchmarks de terceros para establecer comparaciones con clasificadores especializados de otros autores.
 
@@ -105,7 +105,7 @@ La comparación más directa es con las versiones anteriores de la propia serie:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4-MLX
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4-MLX
 - Modelo base (PyTorch): https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4
 - Versión v1 2B: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-MLX-bf16
 - Versión v2 2B: https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16

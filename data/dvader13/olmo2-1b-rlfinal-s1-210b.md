@@ -74,7 +74,7 @@ La diferencia clave es que el checkpoint de `dvader13` es un estado de entrenami
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-210b)
+- [Repositorio de Hugging Face](https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-210b)
 - [Modelo base OLMo-2-0425-1B](https://huggingface.co/allenai/OLMo-2-0425-1B)
 - [OLMo-2-0425-1B-RLVR1](https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1)
 - [Página oficial de OLMo 2](https://allenai.org/olmo2)

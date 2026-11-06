@@ -86,7 +86,7 @@ La comparativa con Qwen3.5 y Qwen3.6 es cualitativa segun la documentacion: Qwen
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/adaliboy/Qwen3.8-27B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Repositorio de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia de uso de Unsloth: https://unsloth.ai/docs/models/qwen3.8

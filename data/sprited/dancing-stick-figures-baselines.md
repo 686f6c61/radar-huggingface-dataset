@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/sprited/dancing-stick-figures-baselines)
+- [Repositorio Hugging Face](https://huggingface.co/sprited/dancing-stick-figures-baselines)
 - [Dataset sprited/dancing-stick-figures](https://huggingface.co/datasets/sprited/dancing-stick-figures)
 - [Código de entrenamiento en GitHub](https://github.com/sprited-ai/dancing-stick-figures)
 - [Sitio de Sprited](https://sprited.ai/products)

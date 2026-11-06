@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cameron3T3T/coco12 es un repositorio publicado en HuggingFace por el usuario Cameron3T3T. En el momento de redactar esta ficha, la unica informacion verificable que ofrece la plataforma es el identificador del repositorio, el autor, el tamano del mismo (45,3 GB), la etiqueta generica `region:us`, un total de 0 descargas y 1 like. No se declara pipeline, licencia, idiomas soportados ni ninguna descripcion tecnica en la model card.
+Cameron3T3T/coco12 es un repositorio publicado en Hugging Face por el usuario Cameron3T3T. En el momento de redactar esta ficha, la unica informacion verificable que ofrece la plataforma es el identificador del repositorio, el autor, el tamano del mismo (45,3 GB), la etiqueta generica `region:us`, un total de 0 descargas y 1 like. No se declara pipeline, licencia, idiomas soportados ni ninguna descripcion tecnica en la model card.
 
 Esto significa que no es posible determinar que tipo de modelo es, que arquitectura emplea, cuantos parametros tiene, cual es su longitud de contexto ni para que tarea fue entrenado. El tamano del repositorio (45,3 GB) es el unico dato con valor orientativo: sugiere un conjunto de pesos de gran volumen, pero ese espacio podria corresponder a un unico juego de pesos en precision alta, a varias cuantizaciones del mismo modelo o a artefactos adicionales, y no permite deducir el numero de parametros sin inspeccionar los archivos.
 
@@ -92,7 +92,7 @@ No disponible. Al no conocerse la categoria del modelo (tamano, arquitectura, ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cameron3T3T/coco12
+- Repositorio en Hugging Face: https://huggingface.co/Cameron3T3T/coco12
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

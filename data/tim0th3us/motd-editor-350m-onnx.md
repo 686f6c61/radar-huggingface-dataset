@@ -2,7 +2,7 @@
 
 ## Resumen
 
-motd-editor-350m-ONNX es un ajuste fino LoRA del modelo LiquidAI/LFM2.5-350M, desarrollado por el usuario Tim0th3us y publicado en HuggingFace. No se trata de un modelo de proposito general, sino de un modelo estrechamente especializado: recibe como entrada un bundle XML con definiciones del juego Masters of the Dungeon junto con una peticion de edicion, y devuelve una unica respuesta en forma de bloque `<patch>`. El ajuste se ha fusionado en los pesos y se ha exportado a ONNX en cuantizacion de 4 bits, reutilizando el grafo de onnx-community/LFM2.5-350M-ONNX.
+motd-editor-350m-ONNX es un ajuste fino LoRA del modelo LiquidAI/LFM2.5-350M, desarrollado por el usuario Tim0th3us y publicado en Hugging Face. No se trata de un modelo de proposito general, sino de un modelo estrechamente especializado: recibe como entrada un bundle XML con definiciones del juego Masters of the Dungeon junto con una peticion de edicion, y devuelve una unica respuesta en forma de bloque `<patch>`. El ajuste se ha fusionado en los pesos y se ha exportado a ONNX en cuantizacion de 4 bits, reutilizando el grafo de onnx-community/LFM2.5-350M-ONNX.
 
 Su relevancia es fundamentalmente practica para el ecosistema de transformers.js: al estar cuantizado a q4 y mantener activaciones en fp32, puede ejecutarse en el navegador con WebGPU, incluso en GPUs que no exponen la extension `shader-f16`, y en CPUs via WASM. Con 350M parametros y un repositorio de 0,3 GB, el coste de despliegue es minimo y no requiere infraestructura de servidor.
 
@@ -84,11 +84,11 @@ Estas cifras no son comparables con benchmarks de proposito general: miden exclu
 
 | Modelo | Parametros | Formato | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tim0th3us/motd-editor-350m-ONNX | 350M | ONNX q4 (+ GGUF en repo aparte) | Edicion de definiciones de Masters of the Dungeon (XML a patch XML) | LFM Open License v1.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| LiquidAI/LFM2.5-350M | 350M | no disponible | Modelo base de proposito general | LFM Open License v1.0 (segun el modelo derivado) | HuggingFace |
-| onnx-community/LFM2.5-350M-ONNX | 350M | ONNX | Modelo base exportado a ONNX; grafo reutilizado por este ajuste | no disponible en la informacion proporcionada | HuggingFace |
-| osmosis-ai/osmosis-eot-lfm2-350m-clf-head3-onnx | 350M | ONNX INT8 con cabeza de clasificacion recortada | Clasificacion de fin de turno sobre conversaciones cortas, optimizada para baja latencia en CPU | no disponible en la informacion proporcionada | HuggingFace |
-| Tim0th3us/motd-editor-350m-GGUF | 350M | GGUF | Misma tarea que este modelo, empaquetado para runtimes GGUF | LFM Open License v1.0 | HuggingFace |
+| Tim0th3us/motd-editor-350m-ONNX | 350M | ONNX q4 (+ GGUF en repo aparte) | Edicion de definiciones de Masters of the Dungeon (XML a patch XML) | LFM Open License v1.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| LiquidAI/LFM2.5-350M | 350M | no disponible | Modelo base de proposito general | LFM Open License v1.0 (segun el modelo derivado) | Hugging Face |
+| onnx-community/LFM2.5-350M-ONNX | 350M | ONNX | Modelo base exportado a ONNX; grafo reutilizado por este ajuste | no disponible en la informacion proporcionada | Hugging Face |
+| osmosis-ai/osmosis-eot-lfm2-350m-clf-head3-onnx | 350M | ONNX INT8 con cabeza de clasificacion recortada | Clasificacion de fin de turno sobre conversaciones cortas, optimizada para baja latencia en CPU | no disponible en la informacion proporcionada | Hugging Face |
+| Tim0th3us/motd-editor-350m-GGUF | 350M | GGUF | Misma tarea que este modelo, empaquetado para runtimes GGUF | LFM Open License v1.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes, ya que cada una persigue un objetivo distinto y solo el modelo de esta ficha publica metricas de validacion propias del dominio.
 
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tim0th3us/motd-editor-350m-ONNX
+- Modelo en Hugging Face: https://huggingface.co/Tim0th3us/motd-editor-350m-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Grafo ONNX reutilizado: https://huggingface.co/onnx-community/LFM2.5-350M-ONNX
 - Build GGUF del mismo autor: `Tim0th3us/motd-editor-350m-GGUF` (referenciada en la model card; no se proporciona URL directa)

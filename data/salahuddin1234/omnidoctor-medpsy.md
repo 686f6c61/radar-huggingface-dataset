@@ -83,11 +83,11 @@ Notas: MedPsy-4B declara una eficiencia de 3,2x en tokens (aproximadamente 909 t
 
 | Modelo | Parametros | Contexto | Rendimiento medico (media cerrada) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omnidoctor-MedPsy (este) | 4,4B | no disponible | no disponible para el finetune | Apache 2.0 | HuggingFace, safetensors |
-| MedPsy-4B (base declarado) | 4B | no disponible | 70,54 | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| MedGemma-27B-text-it | 27B | no disponible | 69,95 | Licencia Gemma | HuggingFace |
-| MedGemma-1.5-4B-it | 4B | no disponible | 51,20 | Licencia Gemma | HuggingFace |
-| Qwen3-4B-Thinking-2507 | 4B | no disponible | 63,10 | Apache 2.0 | HuggingFace |
+| omnidoctor-MedPsy (este) | 4,4B | no disponible | no disponible para el finetune | Apache 2.0 | Hugging Face, safetensors |
+| MedPsy-4B (base declarado) | 4B | no disponible | 70,54 | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| MedGemma-27B-text-it | 27B | no disponible | 69,95 | Licencia Gemma | Hugging Face |
+| MedGemma-1.5-4B-it | 4B | no disponible | 51,20 | Licencia Gemma | Hugging Face |
+| Qwen3-4B-Thinking-2507 | 4B | no disponible | 63,10 | Apache 2.0 | Hugging Face |
 
 Observacion: el modelo base de esta familia iguala o supera a uno de 27B en la media de benchmarks cerrados y en HealthBench, con una licencia Apache 2.0 mas permisiva que la licencia Gemma para uso comercial.
 
@@ -104,13 +104,13 @@ Observacion: el modelo base de esta familia iguala o supera a uno de 27B en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Salahuddin1234/omnidoctor-MedPsy
+- Modelo en Hugging Face: https://huggingface.co/Salahuddin1234/omnidoctor-MedPsy
 - Space OmniDoctor (autor): https://huggingface.co/spaces/Salahuddin1234/omnidoctor
 - Modelo base MedPsy-4B: https://huggingface.co/qvac/MedPsy-4B
 - Modelo base Qwen3-4B-Thinking-2507: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Blog de MedPsy (Tether): https://qvac.tether.io/blog/meet-medpsy-a-private-medical-ai-small-enough-for-your-phone
 - Informe tecnico de MedPsy: https://huggingface.co/blog/qvac/medpsy
-- Coleccion MedPsy en HuggingFace: https://huggingface.co/collections/qvac/medpsy
+- Coleccion MedPsy en Hugging Face: https://huggingface.co/collections/qvac/medpsy
 - QVAC SDK: https://qvac.tether.io/dev/sdk/
 - QVAC Fabric (ajuste fino local): https://huggingface.co/blog/qvac/fabric-llm-finetune
 - arXiv: 2505.17952 (https://arxiv.org/abs/2505.17952)

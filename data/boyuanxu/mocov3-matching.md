@@ -65,5 +65,5 @@ No disponible. No se han encontrado modelos comparables en la misma categoría, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Boyuanxu/mocov3-matching
+- Modelo en Hugging Face: https://huggingface.co/Boyuanxu/mocov3-matching
 - No se han encontrado enlaces adicionales (papers, blogs, demos) en la búsqueda web que sean relevantes para este modelo concreto.

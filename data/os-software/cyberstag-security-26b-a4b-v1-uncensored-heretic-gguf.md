@@ -102,7 +102,7 @@ La diferencia clave de esta variante no es de capacidad bruta, sino de comportam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-GGUF
 - Modelo del que deriva: https://huggingface.co/deer-sec/CyberStag-Security-26B-A4B-V1-BF16-MLX
 - Modelo base: google/gemma-4-26b-a4b (referenciado en los metadatos; no se proporciona URL directa en la informacion disponible)
 - Heretic (herramienta de ablacion): https://heretic-project.org

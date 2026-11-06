@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto atómico no proteico | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LigandMPNN (este, noise010) | 2,63 M | Sí (ligandos, metales, ácidos nucleicos) | AGPL-3.0 | HuggingFace (ofoldx) |
+| LigandMPNN (este, noise010) | 2,63 M | Sí (ligandos, metales, ácidos nucleicos) | AGPL-3.0 | Hugging Face (ofoldx) |
 | ProteinMPNN | No disponible en la información | No (solo backbone proteico) | No disponible | Repositorio original de Baker Lab |
 | LigandMPNN oficial (dauparas/LigandMPNN) | No disponible en la información | Sí | No disponible | GitHub oficial |
 
@@ -82,7 +82,7 @@ La comparativa con ProteinMPNN y con la implementación oficial se basa únicame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/ligandmpnn-noise010
+- Modelo en Hugging Face: https://huggingface.co/oteam/ligandmpnn-noise010
 - Variante noise005: https://huggingface.co/oteam/ligandmpnn-noise005
 - Variante noise020: https://huggingface.co/oteam/ligandmpnn-noise020
 - Variante noise030: https://huggingface.co/oteam/ligandmpnn-noise030

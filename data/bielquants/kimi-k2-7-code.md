@@ -6,7 +6,7 @@ Kimi K2.7 Code es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) orienta
 
 La arquitectura combina 61 capas (una densa y el resto MoE) con atención MLA (Multi-head Latent Attention), 384 expertos de los cuales se seleccionan 8 por token más un experto compartido, y una ventana de contexto de 256K tokens. Incorpora además un codificador visual MoonViT de 400M parámetros, lo que lo convierte en un modelo multimodal de entrada imagen-texto y salida texto (`pipeline_tag: image-text-to-text`).
 
-Su relevancia en el momento de publicación radica en el enfoque sobre tareas de código de horizonte largo: según la model card, mejora la finalización de tareas de ingeniería de software de extremo a extremo y reduce el consumo de tokens de razonamiento en aproximadamente un 30 % respecto a Kimi K2.6, lo que abarata la inferencia en agentes que encadenan muchas llamadas. La licencia es una variante de MIT modificada (`modified-mit`), registrada en HuggingFace como `license:other`.
+Su relevancia en el momento de publicación radica en el enfoque sobre tareas de código de horizonte largo: según la model card, mejora la finalización de tareas de ingeniería de software de extremo a extremo y reduce el consumo de tokens de razonamiento en aproximadamente un 30 % respecto a Kimi K2.6, lo que abarata la inferencia en agentes que encadenan muchas llamadas. La licencia es una variante de MIT modificada (`modified-mit`), registrada en Hugging Face como `license:other`.
 
 ## Especificaciones tecnicas
 
@@ -124,8 +124,8 @@ No se dispone de datos de licencia, parametros ni contexto de los modelos propie
 
 ## Enlaces
 
-- Repositorio en HuggingFace (publicacion de terceros): https://huggingface.co/bielquants/Kimi-K2.7-Code
-- Organizacion Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio en Hugging Face (publicacion de terceros): https://huggingface.co/bielquants/Kimi-K2.7-Code
+- Organizacion Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Fichero de licencia del modelo original: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE
 - Pagina de Kimi Code: https://www.kimi.com/code
 - Web de Moonshot AI: https://www.moonshot.ai

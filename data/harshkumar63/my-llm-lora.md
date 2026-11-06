@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`harshkumar63/my-llm-lora` es un ajuste fino mediante LoRA sobre el modelo `unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`, publicado por el usuario harshkumar63 en HuggingFace. Se trata, por tanto, de un modelo derivado de la familia Llama 3.2 Instruct de Meta en su variante de 3.000 millones de parametros, no de un entrenamiento desde cero. El repositorio ocupa 0,1 GB, lo que indica que contiene unicamente los pesos del adaptador LoRA y no una copia completa del modelo base.
+`harshkumar63/my-llm-lora` es un ajuste fino mediante LoRA sobre el modelo `unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit`, publicado por el usuario harshkumar63 en Hugging Face. Se trata, por tanto, de un modelo derivado de la familia Llama 3.2 Instruct de Meta en su variante de 3.000 millones de parametros, no de un entrenamiento desde cero. El repositorio ocupa 0,1 GB, lo que indica que contiene unicamente los pesos del adaptador LoRA y no una copia completa del modelo base.
 
 El modelo se ha entrenado con Unsloth y TRL, dos herramientas habituales para ajuste fino eficiente en memoria de modelos pequenos. La model card no documenta el conjunto de datos, los hiperparametros de entrenamiento ni el objetivo concreto del ajuste, por lo que la naturaleza exacta de la especializacion es desconocida. El repositorio figura con 0 descargas y 0 likes, y su nombre generico ("my-llm-lora") sugiere un experimento personal mas que un lanzamiento con soporte.
 
@@ -70,10 +70,10 @@ La comparacion se establece frente a las alternativas de la misma categoria (mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| harshkumar63/my-llm-lora | 3B (base) + adaptador LoRA | 128.000 tokens en el base (no confirmado en la model card) | apache-2.0 en el repositorio; base bajo Llama 3.2 Community License | HuggingFace, 0 descargas, sin evaluacion publicada |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, con soporte multilingue amplio |
-| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | HuggingFace |
+| harshkumar63/my-llm-lora | 3B (base) + adaptador LoRA | 128.000 tokens en el base (no confirmado en la model card) | apache-2.0 en el repositorio; base bajo Llama 3.2 Community License | Hugging Face, 0 descargas, sin evaluacion publicada |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, con soporte multilingue amplio |
+| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | Hugging Face |
 
 Rendimiento comparado en benchmarks: no disponible para este modelo, ya que no se han publicado resultados.
 
@@ -90,11 +90,11 @@ Rendimiento comparado en benchmarks: no disponible para este modelo, ya que no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshkumar63/my-llm-lora
+- Modelo en Hugging Face: https://huggingface.co/harshkumar63/my-llm-lora
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Llama 3.2 (modelo original de Meta): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Documentacion de LLM-LoRA (framework de ajuste fino con LoRA): https://llm-lora.readthedocs.io/en/latest/
 - Guia de ajuste fino con LoRA, QLoRA, DPO y GRPO (referencia externa): https://futureagi.com/blog/llm-fine-tuning-guide-2025/
 - LLMs locales en Windows (Microsoft Learn): https://learn.microsoft.com/en-us/windows/ai/apis/local-llms
-- Repositorio no relacionado con el mismo nombre en HuggingFace: https://huggingface.co/cools/LLM-LoRA
+- Repositorio no relacionado con el mismo nombre en Hugging Face: https://huggingface.co/cools/LLM-LoRA

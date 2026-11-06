@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MAMARTINS81/tmp-retrieval es un repositorio de HuggingFace publicado por el usuario MAMARTINS81 (Matheus Martins) que contiene una implementación propia y compacta de la arquitectura EfficientFormer orientada a tareas de retrieval. No es un modelo preentrenado ni un checkpoint validado: la propia model card lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo entrenado.
+MAMARTINS81/tmp-retrieval es un repositorio de Hugging Face publicado por el usuario MAMARTINS81 (Matheus Martins) que contiene una implementación propia y compacta de la arquitectura EfficientFormer orientada a tareas de retrieval. No es un modelo preentrenado ni un checkpoint validado: la propia model card lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño alcance. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida, no como un modelo entrenado.
 
 El tamaño real del checkpoint es de 49.600 parámetros, una cifra tres órdenes de magnitud por debajo de los backbones de visión habituales, lo que confirma que se trata de una configuración reducida con fines de prueba y no de un modelo destinado a producción. La configuración declarada incluye atención de tipo flash, fusión mediante co-attention, activación gelu tanh y normalización layernorm, todo bajo licencia MIT.
 
@@ -41,7 +41,7 @@ Datos adicionales declarados en la model card:
 
 ## Arquitectura y entrenamiento
 
-EfficientFormer es una familia de backbones de visión basada en transformer con un diseño de dimensiones consistentes que busca el coste de inferencia de las redes convolucionales manteniendo la formulación de atención. En este repositorio la arquitectura se instancia en escala tiny e incorpora dos decisiones destacables: atención de tipo flash y fusión mediante co-attention, un mecanismo habitual en tareas de recuperación multimodal, donde dos ramas de características se atienden mutuamente para producir representaciones alineadas. La normalización es layernorm y la activación gelu tanh. La implementación es custom, por lo que las API automáticas de carga de HuggingFace requieren un adaptador explícito.
+EfficientFormer es una familia de backbones de visión basada en transformer con un diseño de dimensiones consistentes que busca el coste de inferencia de las redes convolucionales manteniendo la formulación de atención. En este repositorio la arquitectura se instancia en escala tiny e incorpora dos decisiones destacables: atención de tipo flash y fusión mediante co-attention, un mecanismo habitual en tareas de recuperación multimodal, donde dos ramas de características se atienden mutuamente para producir representaciones alineadas. La normalización es layernorm y la activación gelu tanh. La implementación es custom, por lo que las API automáticas de carga de Hugging Face requieren un adaptador explícito.
 
 No hay evidencia de un entrenamiento completado. La receta incluida en `training_args.json` usa AdamW con planificador exponencial y se describe como valores de partida del script, no como resultado de una ejecución. No se menciona ningún corpus de entrenamiento, número de tokens, composición de dataset ni fases de ajuste por preferencias (RLHF, DPO u otras). El checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y no se presenta como un checkpoint evaluado. La model card tampoco documenta innovaciones técnicas adicionales más allá de las opciones de arquitectura citadas, y subraya que cualquier resultado futuro sobre un checkpoint entrenado deberá documentarse por separado de los valores por defecto aquí incluidos.
 
@@ -87,7 +87,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que la comp
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| MAMARTINS81/tmp-retrieval | EfficientFormer tiny, co-attention, flash attention | 49.600 | no disponible | MIT | HuggingFace (0 descargas) | No publicado |
+| MAMARTINS81/tmp-retrieval | EfficientFormer tiny, co-attention, flash attention | 49.600 | no disponible | MIT | Hugging Face (0 descargas) | No publicado |
 | EfficientFormer (Snap Research) | EfficientFormer, escalas L1 a L7 | no disponible en esta ficha | no disponible | consultar repositorio original | Repositorio oficial y pesos publicados | No comparable aquí |
 | CLIP ViT-B/32 (OpenAI) | Transformer de dos torres para alineamiento imagen-texto | no disponible en esta ficha | no disponible | MIT (repositorio original) | Ampliamente disponible | No comparable aquí |
 | BLIP / BLIP-2 | Transformer multimodal con Q-Former | no disponible en esta ficha | no disponible | consultar repositorio original | Ampliamente disponible | No comparable aquí |
@@ -110,8 +110,8 @@ La comparación cuantitativa (métricas de retrieval sobre Flickr30k u otros con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MAMARTINS81/tmp-retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/MAMARTINS81/models
+- Modelo en Hugging Face: https://huggingface.co/MAMARTINS81/tmp-retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/MAMARTINS81/models
 - Dataset del mismo autor (referencia contextual): https://huggingface.co/datasets/MAMARTINS81/text-tabular-data
 - RETRO: Improving language models by retrieving from trillions of tokens (referencia contextual sobre retrieval): https://arxiv.org/abs/2112.04426
 - Retrieval Models Aren't Tool-Savvy: Benchmarking Tool Retrieval (referencia contextual sobre evaluación de retrieval): https://arxiv.org/abs/2503.01763

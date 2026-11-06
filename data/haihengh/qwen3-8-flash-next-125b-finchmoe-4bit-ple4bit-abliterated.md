@@ -18,7 +18,7 @@ Su relevancia es doble: por un lado demuestra que un MoE muy disperso (512 exper
 | Longitud de contexto | no disponible (la evaluacion publicada se hizo con 4096 tokens) |
 | Tipos de cuantizacion | int4 affine grupo 64 (expertos enrutados, experto compartido, atencion, embeddings); int8 grupo 64 (proyecciones de atencion lineal, router); int4 grupo 32 (tabla PLE de n-gramas) |
 | Idiomas soportados | en |
-| Licencia | Qwen Community License 1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | Qwen Community License 1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | `.finch` (formato propio de FinchMoE; no es GGUF, MLX ni safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de las alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finchmoe-4bit-ple4bit-abliterated
+- Modelo en Hugging Face: https://huggingface.co/haihengh/Qwen3.8-Flash-Next-125B-finchmoe-4bit-ple4bit-abliterated
 - Repositorio FinchMoE: https://github.com/haihengh/finchMoE
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Snapshot abliterated upstream: https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated

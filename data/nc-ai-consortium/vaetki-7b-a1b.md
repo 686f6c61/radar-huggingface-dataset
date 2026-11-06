@@ -67,7 +67,7 @@ VAETKI-7B-A1B supera claramente a OLMoE en todas las metricas, y se acerca a Gra
 - VRAM estimada para inferencia: el modelo en fp16/bf16 ocupa aproximadamente 14,5 GB (tamano del repo). Con cuantizacion a 4 bits, el peso se reduciria a unos 3,6-4 GB, permitiendo su ejecucion en GPUs consumer de 8 GB o incluso 6 GB con cuantizacion mas agresiva. Sin embargo, no se proporcionan datos oficiales de cuantizacion.
 - GPU recomendadas: para inferencia en fp16, se recomienda una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4080/4090, A10G, L4). Con cuantizacion 4-bit, una RTX 3060 de 12 GB o RTX 4060 de 8 GB serian suficientes.
 - Al ser un modelo MoE con solo 1,2B parametros activos, la memoria necesaria para los pesos activos es reducida, pero los pesos totales (7,25B) deben cargarse en memoria. Esto implica que la VRAM requerida depende del tamano total, no de los activos.
-- Opciones de despliegue: al ser un modelo causal estandar con safetensors, es compatible con frameworks como vLLM, llama.cpp (si se convierte a GGUF), Ollama, TGI y Transformers de HuggingFace. No se proporcionan configuraciones especificas de estos frameworks.
+- Opciones de despliegue: al ser un modelo causal estandar con safetensors, es compatible con frameworks como vLLM, llama.cpp (si se convierte a GGUF), Ollama, TGI y Transformers de Hugging Face. No se proporcionan configuraciones especificas de estos frameworks.
 - Latencia y throughput: no se han publicado datos oficiales. Dado que activa solo 5 de 64 expertos, el coste por token es aproximadamente 1/6 del de un modelo denso de 7B, lo que en la practica se traduce en una latencia similar a la de un modelo de ~1,2B denso, aunque con mayor uso de memoria por los pesos totales.
 
 ## Comparativa con modelos similares
@@ -92,9 +92,9 @@ VAETKI-7B-A1B se posiciona como una alternativa eficiente a Granite-4.0-H-Tiny, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nc-ai-consortium/VAETKI-7B-A1B
+- Modelo en Hugging Face: https://huggingface.co/nc-ai-consortium/VAETKI-7B-A1B
 - Repositorio GitHub: https://github.com/wbl-ncai/VAETKI/
 - Informe tecnico (PDF): https://github.com/wbl-ncai/VAETKI/blob/main/VAETKI_Technical_Report.pdf
-- Organizacion en HuggingFace: https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI
+- Organizacion en Hugging Face: https://huggingface.co/NC-AI-consortium-VAETKI/VAETKI
 - Guia de inicio rapido: https://github.com/wbl-ncai/VAETKI/tree/main?tab=readme-ov-file#quickstart
 - Archivo NOTICE (licencias de terceros): https://github.com/wbl-ncai/VAETKI/blob/main/NOTICE.md

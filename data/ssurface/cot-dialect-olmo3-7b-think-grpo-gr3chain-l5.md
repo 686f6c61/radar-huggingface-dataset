@@ -72,9 +72,9 @@ No se dispone de datos de benchmarks para el modelo base `allenai/Olmo-3-7B-Thin
 
 | Modelo | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `cot-dialect-olmo3-7b-think-grpo-gr3chain-l5` (este) | 7B + LoRA | No disponible | Apache-2.0 | HuggingFace |
-| `allenai/Olmo-3-7B-Think` (base) | 7B | No disponible | Apache-2.0 | HuggingFace |
-| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del mismo nivel) | 7B + LoRA | No disponible | Apache-2.0 | HuggingFace |
+| `cot-dialect-olmo3-7b-think-grpo-gr3chain-l5` (este) | 7B + LoRA | No disponible | Apache-2.0 | Hugging Face |
+| `allenai/Olmo-3-7B-Think` (base) | 7B | No disponible | Apache-2.0 | Hugging Face |
+| `ssurface/cot-dialect-olmo3-7b-think-grpo-l5` (modelo principal del mismo nivel) | 7B + LoRA | No disponible | Apache-2.0 | Hugging Face |
 
 La diferencia clave entre este adaptador y el modelo principal del mismo nivel es la funcion de recompensa (`gr3chain` frente a la estandar), lo que lo hace util para comparaciones de diseno, pero no para uso directo en produccion.
 
@@ -91,7 +91,7 @@ La diferencia clave entre este adaptador y el modelo principal del mismo nivel e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-l5
+- Hugging Face del adaptador: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-gr3chain-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Modelo principal del mismo nivel (referencia): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l5 (enlace inferido del texto de la model card, no verificado)

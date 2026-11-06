@@ -90,6 +90,6 @@ No se dispone de comparativas con modelos externos de tamaño similar (por ejemp
 
 ## Enlaces
 
-- [HuggingFace: logic65/Qwen3.8-Whittle-v40-16.8B](https://huggingface.co/logic65/Qwen3.8-Whittle-v40-16.8B)
+- [Hugging Face: logic65/Qwen3.8-Whittle-v40-16.8B](https://huggingface.co/logic65/Qwen3.8-Whittle-v40-16.8B)
 - [Corte 44L mencionado en la model card](https://huggingface.co/logic65/Qwen3.8-Whittle-44L-cut)
 - [Modelo base: Qwen/Qwen3.8-27B-FP8](https://huggingface.co/Qwen/Qwen3.8-27B-FP8)

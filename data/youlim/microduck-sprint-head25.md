@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`youlim/microduck-sprint-head25` no es un modelo de lenguaje, sino una política de control motriz entrenada por aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck de Pollen Robotics. La política consume una observación de 61 dimensiones y emite 14 acciones a 50 Hz, y se distribuye como un grafo ONNX (`policy.onnx`) con el normalizador de observaciones embebido, acompañado de un `manifest.json` que sigue el esquema 2 del manifiesto de políticas del daemon de microduck. El autor es el usuario `youlim` de HuggingFace y el repositorio se publicó el 27 de octubre de 2026.
+`youlim/microduck-sprint-head25` no es un modelo de lenguaje, sino una política de control motriz entrenada por aprendizaje por refuerzo para el robot cuadrúpedo de código abierto microduck de Pollen Robotics. La política consume una observación de 61 dimensiones y emite 14 acciones a 50 Hz, y se distribuye como un grafo ONNX (`policy.onnx`) con el normalizador de observaciones embebido, acompañado de un `manifest.json` que sigue el esquema 2 del manifiesto de políticas del daemon de microduck. El autor es el usuario `youlim` de Hugging Face y el repositorio se publicó el 27 de octubre de 2026.
 
 El entrenamiento se realizó con el stack `mjlab-microduck 0.1.0` sobre la tarea `Mjlab-Sprint2m-MicroDuck` del repositorio `pollen-robotics/microduck-challenges`, en el commit `f5cba0bef`, con 4096 entornos paralelos, hasta 3000 iteraciones y semilla 1; el checkpoint publicado es el 1000. La política se describe como "perpetua": ejecuta una marcha continua hasta que se le indique lo contrario, y se carga en una ranura de política del robot mediante `robotctl`.
 
@@ -69,7 +69,7 @@ La model card únicamente aporta datos de configuración de entrenamiento (4096 
 - Despliegue: el único mecanismo documentado es el daemon de microduck mediante `robotctl policy load`; el runtime subyacente es ONNX. No se documentan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de artefacto.
 - Latencia: el bucle de control corre a 50 Hz, por lo que cada paso de inferencia debe completarse en 20 ms como máximo para no degradar la marcha. El tiempo real por inferencia no se publica.
 - Throughput: no disponible.
-- Almacenamiento: el repositorio ocupa 0.0 GB según HuggingFace, coherente con un grafo ONNX de tamaño reducido.
+- Almacenamiento: el repositorio ocupa 0.0 GB según Hugging Face, coherente con un grafo ONNX de tamaño reducido.
 
 ## Comparativa con modelos similares
 
@@ -77,7 +77,7 @@ No se dispone de información sobre políticas comparables publicadas con parám
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sprint-head25 | no disponible | no aplica (observación de 61 dimensiones) | no disponible | no disponible | HuggingFace, 0 descargas |
+| microduck-sprint-head25 | no disponible | no aplica (observación de 61 dimensiones) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de información sobre políticas comparables publicadas con parám
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youlim/microduck-sprint-head25
+- Modelo en Hugging Face: https://huggingface.co/youlim/microduck-sprint-head25
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Definición del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (ruta citada en la model card, sin URL directa disponible)

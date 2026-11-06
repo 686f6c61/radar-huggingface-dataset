@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| credible-ai/qwen3.5-4B-40domains-baseline | ~3,7B | no disponible | MIT | Baseline de investigación para mezcla de datos | HuggingFace, 193 descargas |
+| credible-ai/qwen3.5-4B-40domains-baseline | ~3,7B | no disponible | MIT | Baseline de investigación para mezcla de datos | Hugging Face, 193 descargas |
 | Qwen3.5 (modelo base de referencia) | no disponible en la información | no disponible | no disponible | Modelo de propósito general | No consultado en esta ficha |
 | OLMo 2 (AllenAI), familia de ~4B | no disponible en la información | no disponible | no disponible | Modelo abierto con receta completa | No consultado en esta ficha |
 
@@ -88,7 +88,7 @@ La comparación cuantitativa con alternativas no está disponible: el modelo es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-baseline
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-baseline
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Repositorio de código: https://github.com/credibleai/linmix
 - Dataset WebOrganizer/Corpus-200B: https://huggingface.co/datasets/WebOrganizer/Corpus-200B

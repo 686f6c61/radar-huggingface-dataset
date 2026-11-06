@@ -17,7 +17,7 @@ Su relevancia es doble: por un lado demuestra que se puede incrustar cómputo si
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el autor indica precisión exacta en bf16 y no publica variantes GGUF, AWQ ni GPTQ |
-| Idiomas soportados | no disponible en la información proporcionada (los metadatos de HuggingFace no declaran idiomas; hereda el tokenizador y el vocabulario de Qwen3.5-4B) |
+| Idiomas soportados | no disponible en la información proporcionada (los metadatos de Hugging Face no declaran idiomas; hereda el tokenizador y el vocabulario de Qwen3.5-4B) |
 | Licencia | Apache-2.0 (el código del repositorio asociado se cita como MIT) |
 | Formato de pesos | safetensors, bf16, 18,8 GB de repositorio; biblioteca `transformers` |
 | Tamano oculto | 3968 (2560 de Qwen + dimensiones del computador) |
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de modelos de terceros en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
+- Modelo en Hugging Face: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Código en GitHub: https://github.com/divagr18/qwenputer
 - Variante CHIP-8: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer-CHIP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

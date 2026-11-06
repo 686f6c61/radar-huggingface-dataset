@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto / entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FindXRay encoder (esta ficha) | no disponible (86 MB int8) | imagen 224×224 | ONNX int8 | MIT | HuggingFace, 0 descargas |
-| microsoft/rad-dino | no disponible (330 MB en precisión completa) | imagen 224×224 | safetensors (PyTorch) | MIT | HuggingFace, modelo base |
+| FindXRay encoder (esta ficha) | no disponible (86 MB int8) | imagen 224×224 | ONNX int8 | MIT | Hugging Face, 0 descargas |
+| microsoft/rad-dino | no disponible (330 MB en precisión completa) | imagen 224×224 | safetensors (PyTorch) | MIT | Hugging Face, modelo base |
 | Otros codificadores de radiología (p. ej. variantes de BiomedCLIP) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con alternativas de la misma categoría no está disponible en la información proporcionada. El único contraste documentado es con su modelo base, del que se diferencia por el formato (ONNX int8 frente a PyTorch) y por el tamaño del artefacto, manteniendo la licencia MIT.
@@ -89,6 +89,6 @@ La comparación directa con alternativas de la misma categoría no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tush-2ar/findxray-encoder
+- Modelo en Hugging Face: https://huggingface.co/tush-2ar/findxray-encoder
 - Modelo base: https://huggingface.co/microsoft/rad-dino
 - Repositorio del proyecto FindXRay: https://github.com/tusharbansalwork/FindXRay

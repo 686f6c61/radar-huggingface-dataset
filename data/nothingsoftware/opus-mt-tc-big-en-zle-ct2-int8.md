@@ -111,7 +111,7 @@ La comparacion de calidad entre la version int8 y el original float32 no muestra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NothingSoftware/opus-mt-tc-big-en-zle-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/NothingSoftware/opus-mt-tc-big-en-zle-ct2-int8
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-zle
 - Repositorio OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Guia de CTranslate2 para modelos OPUS-MT: https://github.com/OpenNMT/CTranslate2/blob/master/docs/guides/opus_mt.md

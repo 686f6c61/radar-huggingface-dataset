@@ -75,6 +75,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/power_decay_empirical_support_trigram_2b_schedule_200m_dmodel16_32
+- Hugging Face: https://huggingface.co/eoinf/power_decay_empirical_support_trigram_2b_schedule_200m_dmodel16_32
 - Tokenizer: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de código (referenciado en la model card): `synthetic_trigrams` (no se proporciona URL en la información disponible)

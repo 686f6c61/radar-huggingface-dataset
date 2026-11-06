@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No disponible. No se han identificado modelos comparables en HuggingFace, ya que bio-semantics no es un modelo de IA generativa sino un pipeline de software para bioinformática con integración en mainframe. En el ecosistema HuggingFace no existe una categoría equivalente.
+No disponible. No se han identificado modelos comparables en Hugging Face, ya que bio-semantics no es un modelo de IA generativa sino un pipeline de software para bioinformática con integración en mainframe. En el ecosistema Hugging Face no existe una categoría equivalente.
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado modelos comparables en HuggingFace, ya que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/bio-semantics
-- Búsqueda de modelos de Snapkitty en HuggingFace: https://huggingface.co/models?other=snapkitty
+- Hugging Face: https://huggingface.co/Snapkitty/bio-semantics
+- Búsqueda de modelos de Snapkitty en Hugging Face: https://huggingface.co/models?other=snapkitty
 - No se han encontrado papers, blogs, repositorios adicionales o demos en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (SFT) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo causal de generacion de texto con arquitectura GPT-2 y 124.770.816 parametros, entrenado con la libreria TRL sobre un corpus cuyo nombre sugiere un subconjunto de chino simplificado (zho-hans) de aproximadamente 100 MB, con un componente adicional de unos 10 MB. El identificador del experimento apunta a un trabajo de investigacion sobre tokenizadores y curricula de datos, con trazas en Weights & Biases vinculadas a la Universidad de Groningen.
+El modelo `francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (SFT) del modelo base `goldfish-models/zho_hans_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo causal de generacion de texto con arquitectura GPT-2 y 124.770.816 parametros, entrenado con la libreria TRL sobre un corpus cuyo nombre sugiere un subconjunto de chino simplificado (zho-hans) de aproximadamente 100 MB, con un componente adicional de unos 10 MB. El identificador del experimento apunta a un trabajo de investigacion sobre tokenizadores y curricula de datos, con trazas en Weights & Biases vinculadas a la Universidad de Groningen.
 
 Su relevancia es fundamentalmente academica y experimental: no es un modelo orientado a produccion ni a uso general, sino un artefacto de investigacion que documenta un procedimiento de entrenamiento concreto (SFT con TRL 0.23.0) y permite reproducir o comparar variantes de un mismo pipeline. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y su model card no aporta informacion sobre composicion del dataset, numero de tokens de entrenamiento, hiperparametros ni evaluacion.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed10 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT de investigacion, safetensors |
-| goldfish-models/zho_hans_100mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base del ajuste; misma familia Goldfish |
-| openai-community/gpt2 | 124 M | 1024 tokens | licencia MIT modificada de OpenAI | HuggingFace, ampliamente distribuido | Referencia de la arquitectura; entrenado en ingles |
-| Modelos Goldfish de otros idiomas (coleccion) | del orden de 100 M (segun nomenclatura) | no disponible | no disponible | HuggingFace | Alternativas de la misma familia para experimentos multilingues |
+| francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed10 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT de investigacion, safetensors |
+| goldfish-models/zho_hans_100mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base del ajuste; misma familia Goldfish |
+| openai-community/gpt2 | 124 M | 1024 tokens | licencia MIT modificada de OpenAI | Hugging Face, ampliamente distribuido | Referencia de la arquitectura; entrenado en ingles |
+| Modelos Goldfish de otros idiomas (coleccion) | del orden de 100 M (segun nomenclatura) | no disponible | no disponible | Hugging Face | Alternativas de la misma familia para experimentos multilingues |
 
 La comparacion se limita a los datos publicos disponibles; no hay cifras de rendimiento comparables para ninguna de las variantes.
 
@@ -90,7 +90,7 @@ La comparacion se limita a los datos publicos disponibles; no hay cifras de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-100mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_100mb
 - Panel de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/x4at9908
 - Repositorio de TRL: https://github.com/huggingface/trl

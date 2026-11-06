@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Iris Random Forest Model es un clasificador de aprendizaje supervisado clasico, no una red neuronal ni un modelo de lenguaje. Lo publica el usuario riveram4ur en HuggingFace bajo el identificador `riveram4ur/iris-rf-joblib-mmgv` y consiste en un `RandomForestClassifier` de la libreria scikit-learn entrenado sobre el dataset Iris, el conjunto de datos de referencia de 150 muestras y tres clases (setosa, versicolor, virginica) que se distribuye con scikit-learn. El artefacto serializado se guarda en formato joblib, el estandar de facto para persistir estimadores de scikit-learn.
+Iris Random Forest Model es un clasificador de aprendizaje supervisado clasico, no una red neuronal ni un modelo de lenguaje. Lo publica el usuario riveram4ur en Hugging Face bajo el identificador `riveram4ur/iris-rf-joblib-mmgv` y consiste en un `RandomForestClassifier` de la libreria scikit-learn entrenado sobre el dataset Iris, el conjunto de datos de referencia de 150 muestras y tres clases (setosa, versicolor, virginica) que se distribuye con scikit-learn. El artefacto serializado se guarda en formato joblib, el estandar de facto para persistir estimadores de scikit-learn.
 
 El modelo resuelve un problema de clasificacion multiclase a partir de cuatro variables numericas continuas: longitud y anchura del sepalo y del petalo, en centimetros. La unica metrica declarada por el autor es una exactitud (accuracy) de 0,9667, sin que la model card especifique el protocolo de evaluacion, el tamano del conjunto de prueba ni la semilla empleada. No se documentan hiperparametros como `n_estimators`, `max_depth` o `random_state`.
 
@@ -93,7 +93,7 @@ La ventaja diferencial del modelo publicado no es el rendimiento, sino el hecho 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/riveram4ur/iris-rf-joblib-mmgv
+- Modelo en Hugging Face: https://huggingface.co/riveram4ur/iris-rf-joblib-mmgv
 - Space asociado mencionado en la model card: https://huggingface.co/spaces/riveram4ur/iris-rf-gradio-lmbch
 - Dataset Iris en scikit-learn (referencia del conjunto de datos): https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html
 - Documentacion de `RandomForestClassifier`: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html

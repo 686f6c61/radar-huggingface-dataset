@@ -89,7 +89,7 @@ Datos de *throughput* concretos: no disponibles en la información proporcionada
 
 | Modelo | Parámetros | Contexto | Aceptación media T=0 | Aceptación media T=1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **DSpine (este)** | 1,24 B | no disponible (ejemplo a 8192) | 7,83 | 6,98 | Apache 2.0 | HuggingFace, código de inferencia en GitHub |
+| **DSpine (este)** | 1,24 B | no disponible (ejemplo a 8192) | 7,83 | 6,98 | Apache 2.0 | Hugging Face, código de inferencia en GitHub |
 | DFlash2 | no disponible | no disponible | 7,55 | 6,53 | no disponible | checkpoint publicado por los autores |
 | DSpark | no disponible | no disponible | 7,44 | 6,65 | no disponible | checkpoint publicado por los autores |
 | Domino b16 | no disponible | no disponible | 7,05 | 5,59 | no disponible | [Huang2020/Qwen3-8B-Domino-b16](https://huggingface.co/Huang2020/Qwen3-8B-Domino-b16) |
@@ -112,7 +112,7 @@ Los cuatro competidores están entrenados para el mismo objetivo (Qwen3-8B) y co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Qwen3-8B-DSpine-b16
+- Modelo en Hugging Face: https://huggingface.co/tencent/Qwen3-8B-DSpine-b16
 - Paper (arXiv 2609.36173): https://arxiv.org/abs/2609.36173
 - Página del proyecto: https://dspine-project.github.io
 - Repositorio de inferencia: https://github.com/tencent/dspine

@@ -108,7 +108,7 @@ El propio autor matiza dos condiciones de esa cifra: la gramatica restringe la f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyperquader/ministral-3-3b-instruct-genai-int4
+- Modelo en Hugging Face: https://huggingface.co/hyperquader/ministral-3-3b-instruct-genai-int4
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512
 - Amber Linux (proyecto que motiva la conversion): https://amberlinux.org
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo, por lo que no se anaden enlaces externos adicionales.

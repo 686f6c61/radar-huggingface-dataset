@@ -86,7 +86,7 @@ No hay datos de benchmarks de calidad comparativos entre estos modelos. La difer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spele1100/Ornith-1.5-35B-A3B-Heretic-GB10-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/spele1100/Ornith-1.5-35B-A3B-Heretic-GB10-NVFP4
 - Modelo base (abliterado): https://huggingface.co/OS-Software/Ornith-1.5-35B-A3B-heretic-ja
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo GGUF del original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF

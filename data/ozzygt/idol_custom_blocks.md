@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OzzyGT/idol_custom_blocks
+- Repositorio Hugging Face: https://huggingface.co/OzzyGT/idol_custom_blocks
 - Pesos convertidos: https://huggingface.co/OzzyGT/idol_diffusers
 - Modelo base: https://huggingface.co/speridlabs/idol
 - SDK del modelo base: https://github.com/speridlabs/idol-sdk

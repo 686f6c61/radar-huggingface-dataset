@@ -4,7 +4,7 @@
 
 `atharvreddy/vision-language-pretraining-review` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre preentrenamiento de vision y lenguaje (vision-language pretraining). El autor lo describe explicitamente en su model card como "a structured set of research notes", con referencias de evaluacion y preguntas abiertas, y separa de forma deliberada los planes y las hipotesis de los resultados ya completados. El artefacto principal es `reading.md`, acompanado de un `README.md` como documentacion.
 
-El repositorio esta etiquetado con `safetensors` y `transformer`, y los metadatos de HuggingFace reportan un total de 49.600 parametros en el archivo de pesos. Se trata de una cifra extremadamente baja (cuatro ordenes de magnitud por debajo de cualquier transformer de vision-lenguaje utilizable) y el tamano del repositorio figura como 0,0 GB, por lo que no existe un checkpoint con capacidad de inferencia. Las etiquetas indican tema y tecnologia asociada a las notas, no la presencia de un modelo funcional.
+El repositorio esta etiquetado con `safetensors` y `transformer`, y los metadatos de Hugging Face reportan un total de 49.600 parametros en el archivo de pesos. Se trata de una cifra extremadamente baja (cuatro ordenes de magnitud por debajo de cualquier transformer de vision-lenguaje utilizable) y el tamano del repositorio figura como 0,0 GB, por lo que no existe un checkpoint con capacidad de inferencia. Las etiquetas indican tema y tecnologia asociada a las notas, no la presencia de un modelo funcional.
 
 La relevancia de la ficha es, por tanto, documental: sirve para saber que este identificador no debe confundirse con un modelo desplegable. El autor declara que el material no reclama mejoras en benchmarks, ni ablaciones completadas, ni codigo publicado, ni checkpoint entrenado. La licencia es MIT y no se declaran idiomas soportados ni pipeline de inferencia.
 
@@ -47,7 +47,7 @@ El contenido declarado del repositorio es metodologico: alcance de la pregunta d
 - Auditoria de reproducibilidad: las secciones de comprobaciones de reproducibilidad y modos de fallo sirven como lista de verificacion para revisar experimentos ajenos o internos.
 - Onboarding de nuevos miembros de un equipo de investigacion: `reading.md` funciona como material de lectura guiada para incorporar a alguien al area sin partir de cero.
 - Redaccion de propuestas o anexos metodologicos: la estructura de hipotesis, planes y preguntas abiertas encaja como base para un apartado de trabajo futuro o una propuesta de financiacion.
-- Verificacion de antecedentes antes de reutilizar un artefacto de HuggingFace: esta ficha y el propio repositorio ilustran como distinguir un conjunto de notas de un modelo desplegable.
+- Verificacion de antecedentes antes de reutilizar un artefacto de Hugging Face: esta ficha y el propio repositorio ilustran como distinguir un conjunto de notas de un modelo desplegable.
 
 ## Benchmarks y rendimiento
 
@@ -90,5 +90,5 @@ No disponible. Este repositorio no es un modelo y no tiene equivalentes funciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/atharvreddy/vision-language-pretraining-review
+- Hugging Face: https://huggingface.co/atharvreddy/vision-language-pretraining-review
 - No se han encontrado en la busqueda web enlaces relevantes al repositorio, al autor, a la nota `reading.md` ni al tema de preentrenamiento vision-lenguaje. Los resultados devueltos (meaningzoo.com, grammarblueprint.com, baitalmaha.com, languagetool.org, scribd.com) son ajenos al objeto de esta ficha y se descartan.

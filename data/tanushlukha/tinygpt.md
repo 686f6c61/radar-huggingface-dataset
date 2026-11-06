@@ -93,7 +93,7 @@ La comparacion con GPT-2 small y TinyLlama es solo orientativa por orden de magn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tanushlukha/tinygpt
+- Modelo en Hugging Face: https://huggingface.co/tanushlukha/tinygpt
 - Repositorio del proyecto: https://github.com/TanushLukha/TinyGPT
 - Documentacion sobre hechos aprendidos: https://github.com/TanushLukha/TinyGPT/blob/main/docs/results/m6_facts.md
 - Conjunto Hinglish-TOP: https://github.com/google-research-datasets/Hinglish-TOP-Dataset

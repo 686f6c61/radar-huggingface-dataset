@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario sadafdas bajo licencia MIT y etiquetado con las librerías transformers y pytorch. La model card asociada describe un supuesto modelo de razonamiento y conversación con mejoras en profundidad de inferencia, soporte de function calling y una reducción declarada de la tasa de alucinación. Sin embargo, el repositorio no contiene pesos (tamaño de 0,0 GB), no registra descargas ni interacciones, y la propia nomenclatura ("TestRepo", "MyAwesomeModel", "Model1", "Model2") apunta a una plantilla de prueba o a un artefacto de demostración más que a un modelo desplegable.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario sadafdas bajo licencia MIT y etiquetado con las librerías transformers y pytorch. La model card asociada describe un supuesto modelo de razonamiento y conversación con mejoras en profundidad de inferencia, soporte de function calling y una reducción declarada de la tasa de alucinación. Sin embargo, el repositorio no contiene pesos (tamaño de 0,0 GB), no registra descargas ni interacciones, y la propia nomenclatura ("TestRepo", "MyAwesomeModel", "Model1", "Model2") apunta a una plantilla de prueba o a un artefacto de demostración más que a un modelo desplegable.
 
 Existe además una contradicción interna flagrante en los metadatos: las etiquetas del repositorio indican arquitectura BERT y pipeline `feature-extraction` (modelo codificador para representaciones vectoriales), mientras que el texto de la model card describe un asistente generativo con modo de pensamiento, búsqueda web y plantillas de subida de ficheros. Ninguna de las dos descripciones puede verificarse con los artefactos publicados. No se dispone de información sobre parámetros, longitud de contexto, tokenizador, idiomas soportados ni datos de entrenamiento.
 
@@ -132,7 +132,7 @@ Tampoco procede compararlo con alternativas reales de la misma categoria, porque
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadafdas/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sadafdas/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible (la model card menciona un sitio web oficial sin enlazarlo)
 - Repositorio de codigo: no disponible (la model card lo menciona sin enlazarlo)

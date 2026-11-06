@@ -4,7 +4,7 @@
 
 BiSem es un sistema de comunicación semántica de video basado en Vision Transformer (ViT), desarrollado por Ronnie-lhh (Liang Huihong). El modelo aborda el problema de transmitir video de forma eficiente a través de canales con ancho de banda limitado o ruidosos, codificando la información visual en un espacio semántico compacto de 64 dimensiones y reconstruyendo el video en el receptor. Utiliza un codificador ViT-B/16 y un decodificador estilo MAE (probablemente basado en Stable Diffusion, dado el archivo `SD.pth`), procesando clips de 16 frames RGB a 224×224 píxeles.
 
-La relevancia actual de BiSem radica en su enfoque de cuantización extrema (pesos de 1 bit y 1,58 bits) y selección de keyframes, que reduce drásticamente la carga de transmisión y el tamaño del modelo sin sacrificar en exceso la calidad de reconstrucción. El repositorio incluye checkpoints completos para inferencia, pesos de inicialización para entrenamiento y utilidades de evaluación (FVD, LPIPS, FID). Aunque la licencia no está especificada, el modelo está disponible públicamente en HuggingFace.
+La relevancia actual de BiSem radica en su enfoque de cuantización extrema (pesos de 1 bit y 1,58 bits) y selección de keyframes, que reduce drásticamente la carga de transmisión y el tamaño del modelo sin sacrificar en exceso la calidad de reconstrucción. El repositorio incluye checkpoints completos para inferencia, pesos de inicialización para entrenamiento y utilidades de evaluación (FVD, LPIPS, FID). Aunque la licencia no está especificada, el modelo está disponible públicamente en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -70,5 +70,5 @@ No disponible. No se han encontrado sistemas de comunicación semántica de vide
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ronnie-lhh/BiSem
+- Hugging Face: https://huggingface.co/Ronnie-lhh/BiSem
 - GitHub del autor: https://github.com/Ronnie-lhh/

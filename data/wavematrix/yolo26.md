@@ -90,7 +90,7 @@ No se han publicado comparativas en la información disponible. El modelo base e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WaveMatrix/yolo26
+- Modelo en Hugging Face: https://huggingface.co/WaveMatrix/yolo26
 - Repositorio de ejemplos WaveMatrix: https://github.com/WaveMatrix/ax-samples
 - Documentación de Pulsar2: https://pulsar2-docs.readthedocs.io/en/latest/pulsar2/introduction.html
 - Documentación de Ultralytics YOLO26: https://docs.ultralytics.com/models/yolo26

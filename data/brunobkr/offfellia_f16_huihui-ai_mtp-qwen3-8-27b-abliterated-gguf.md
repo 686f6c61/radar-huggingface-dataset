@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Brunobkr/OFFFELLIA_f16_huihui-ai_MTP-Qwen3.8-27B-abliterated.gguf](https://huggingface.co/Brunobkr/OFFFELLIA_f16_huihui-ai_MTP-Qwen3.8-27B-abliterated.gguf)
-- Perfil de huihui-ai en HuggingFace: [https://huggingface.co/huihui-ai](https://huggingface.co/huihui-ai)
+- Repositorio Hugging Face: [Brunobkr/OFFFELLIA_f16_huihui-ai_MTP-Qwen3.8-27B-abliterated.gguf](https://huggingface.co/Brunobkr/OFFFELLIA_f16_huihui-ai_MTP-Qwen3.8-27B-abliterated.gguf)
+- Perfil de huihui-ai en Hugging Face: [https://huggingface.co/huihui-ai](https://huggingface.co/huihui-ai)
 - Articulo sobre Qwen 3.8 27B (referencia externa, no oficial): [https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026](https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026)
 - Repositorio de modelos de huihui-ai en ModelScope (ejemplo): [https://www.modelscope.cn/models/mradermacher/Huihui-Qwen3-8B-abliterated-v2-i1-GGUF](https://www.modelscope.cn/models/mradermacher/Huihui-Qwen3-8B-abliterated-v2-i1-GGUF)

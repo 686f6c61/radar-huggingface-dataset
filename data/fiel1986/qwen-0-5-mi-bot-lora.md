@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`fiel1986/qwen-0.5-mi-bot-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `fiel1986` sobre el modelo base `Qwen/Qwen2-0.5B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos delta que deben cargarse junto al modelo base mediante la libreria PEFT. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de pesos completos.
+`fiel1986/qwen-0.5-mi-bot-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `fiel1986` sobre el modelo base `Qwen/Qwen2-0.5B-Instruct`. No se trata de un modelo completo, sino de un conjunto de pesos delta que deben cargarse junto al modelo base mediante la libreria PEFT. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo de pesos completos.
 
-Por el momento la ficha es poco informativa: la model card publicada es la plantilla por defecto de HuggingFace, sin secciones rellenadas, sin licencia declarada, sin idiomas especificados y con cero descargas y cero "likes". Tampoco hay resultados de evaluacion publicados. Por tanto, cualquier dato tecnico sobre el comportamiento del modelo debe inferirse del modelo base `Qwen2-0.5B-Instruct`, un transformer decoder-only de ~0,5 mil millones de parametros con ventana de contexto de 32.768 tokens y licencia Apache 2.0.
+Por el momento la ficha es poco informativa: la model card publicada es la plantilla por defecto de Hugging Face, sin secciones rellenadas, sin licencia declarada, sin idiomas especificados y con cero descargas y cero "likes". Tampoco hay resultados de evaluacion publicados. Por tanto, cualquier dato tecnico sobre el comportamiento del modelo debe inferirse del modelo base `Qwen2-0.5B-Instruct`, un transformer decoder-only de ~0,5 mil millones de parametros con ventana de contexto de 32.768 tokens y licencia Apache 2.0.
 
 La relevancia de este tipo de publicaciones es acotada pero real: los adaptadores LoRA de rango bajo permiten afinar chatbots pequenos con recursos minimos (una GPU consumer o incluso CPU), y resultan utiles como banco de pruebas para pipelines de PEFT antes de escalar a modelos mayores. No obstante, al carecer de documentacion, el adaptador debe considerarse una prueba tecnica sin garantias de calidad ni de licencia.
 
@@ -72,16 +72,16 @@ La comparacion directa de adaptadores LoRA es poco significativa, ya que su rend
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fiel1986/qwen-0.5-mi-bot-lora (adaptador) | Adaptador sobre base de ~0,5 B | 32.768 tokens (base) | No disponible | HuggingFace |
-| Qwen2-0.5B-Instruct (base) | ~0,5 B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat | ~1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace |
-| Gemma-2-2B-it | ~2 B | 8.192 tokens | Gemma Terms | HuggingFace |
+| fiel1986/qwen-0.5-mi-bot-lora (adaptador) | Adaptador sobre base de ~0,5 B | 32.768 tokens (base) | No disponible | Hugging Face |
+| Qwen2-0.5B-Instruct (base) | ~0,5 B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat | ~1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face |
+| Gemma-2-2B-it | ~2 B | 8.192 tokens | Gemma Terms | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para el adaptador objeto de esta ficha.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace: no documenta datos de entrenamiento, hiperparametros, evaluacion ni uso previsto, lo que impide auditar el comportamiento del adaptador.
+- La model card es la plantilla por defecto de Hugging Face: no documenta datos de entrenamiento, hiperparametros, evaluacion ni uso previsto, lo que impide auditar el comportamiento del adaptador.
 - No se declara licencia para el adaptador. Aunque el modelo base es Apache 2.0, la ausencia de licencia explicita genera incertidumbre legal para uso comercial.
 - Riesgo elevado de alucinacion y de respuestas incoherentes, inherente a un modelo de ~0,5 mil millones de parametros.
 - Capacidad de razonamiento, matematicas y codigo muy limitada por el tamano del modelo base.
@@ -93,10 +93,10 @@ No se dispone de datos de rendimiento comparativo para el adaptador objeto de es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiel1986/qwen-0.5-mi-bot-lora
+- Modelo en Hugging Face: https://huggingface.co/fiel1986/qwen-0.5-mi-bot-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Repositorio de Qwen en GitHub: https://github.com/QwenLM/Qwen
-- Entrada relacionada del autor en HuggingFace: https://huggingface.co/fiel1986/qwen-0.5-mi-bot
+- Entrada relacionada del autor en Hugging Face: https://huggingface.co/fiel1986/qwen-0.5-mi-bot
 - Registro en Free2AITools: https://free2aitools.com/model/fiel1986/qwen-0.5-mi-bot
 - Endpoint en FriendliAI: https://friendli.ai/models/fiel1986/qwen-0.5-mi-bot
 - Tutorial de referencia sobre LoRA con Qwen2.5-0.5B: https://github.com/SoloCalm/MiniLoRA

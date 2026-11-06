@@ -80,7 +80,7 @@ No se dispone de comparaciones directas con otros modelos en la documentación p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ETeissonniere/Nemotron-3-Nano-4B-CoreAI-128K
+- Repositorio Hugging Face: https://huggingface.co/ETeissonniere/Nemotron-3-Nano-4B-CoreAI-128K
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Página de NVIDIA Nemotron 3: https://research.nvidia.com/labs/nemotron/Nemotron-3/
 - Documentación de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron

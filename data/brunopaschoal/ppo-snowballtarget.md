@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brunopaschoal/ppo-SnowballTarget` es un agente entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Unity ML-Agents para el entorno de simulación SnowballTarget. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política neuronal entrenada por refuerzo que controla un agente dentro de una escena de Unity, y se publica en el Hub de HuggingFace como artefacto reproducible de un experimento de aprendizaje por refuerzo profundo.
+`brunopaschoal/ppo-SnowballTarget` es un agente entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Unity ML-Agents para el entorno de simulación SnowballTarget. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política neuronal entrenada por refuerzo que controla un agente dentro de una escena de Unity, y se publica en el Hub de Hugging Face como artefacto reproducible de un experimento de aprendizaje por refuerzo profundo.
 
 El repositorio lo mantiene el usuario brunopaschoal y sigue el formato estándar de exportación de ML-Agents, que empaqueta los pesos en ficheros `.nn` (formato nativo de Unity Barracuda) y `.onnx` (formato abierto para inferencia). El tamaño del repositorio es de 0.0 GB, lo que sugiere un artefacto muy ligero, coherente con una política de red pequeña típica de los entornos ML-Agents.
 
@@ -30,7 +30,7 @@ No se especifican el número de pasos de entrenamiento, la configuración del fi
 ## Capacidades
 
 - Control de un agente en el entorno SnowballTarget de Unity mediante política PPO entrenada.
-- Inferencia en el navegador a través del visor de HuggingFace (selección del fichero `.nn`/`.onnx` y botón "Watch the agent play").
+- Inferencia en el navegador a través del visor de Hugging Face (selección del fichero `.nn`/`.onnx` y botón "Watch the agent play").
 - Exportación a ONNX para despliegue fuera de Unity (por ejemplo, con ONNX Runtime).
 - Reanudación del entrenamiento con ML-Agents para continuar el *fine-tuning*.
 - No soporta generación de texto, razonamiento simbólico, código, matemáticas, visión general ni *tool calling*.
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible; por el tamaño del repositorio (0.0 GB) y el tipo de política ML-Agents, se espera un consumo de pocos cientos de MB como máximo, pero no hay medición publicada.
 - GPU recomendadas: no disponible; para inferencia de políticas ML-Agents pequeñas suele bastar CPU, y cualquier GPU consumer (por ejemplo, GTX 1650 o superior) sería suficiente en la práctica, aunque no está verificado para este artefacto.
 - ¿Cabe en GPU consumer? Sí, con alta probabilidad, dado el tamaño típico de una política ML-Agents; sin confirmación del autor.
-- Opciones de despliegue: Unity Barracuda (formato `.nn`), ONNX Runtime (formato `.onnx`), visor web de HuggingFace para ML-Agents.
+- Opciones de despliegue: Unity Barracuda (formato `.nn`), ONNX Runtime (formato `.onnx`), visor web de Hugging Face para ML-Agents.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| brunopaschoal/ppo-SnowballTarget | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | HuggingFace |
-| unity/ml-agents (agentes oficiales del Hub) | PPO/SAC (ML-Agents) | Varios entornos oficiales | no disponible | no aplica | según repositorio oficial | HuggingFace (org. unity) |
-| Agentes PPO de la comunidad en ML-Agents | PPO (ML-Agents) | Varios entornos | no disponible | no aplica | variable | HuggingFace |
+| brunopaschoal/ppo-SnowballTarget | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | Hugging Face |
+| unity/ml-agents (agentes oficiales del Hub) | PPO/SAC (ML-Agents) | Varios entornos oficiales | no disponible | no aplica | según repositorio oficial | Hugging Face (org. unity) |
+| Agentes PPO de la comunidad en ML-Agents | PPO (ML-Agents) | Varios entornos | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos artefactos en la información proporcionada.
 
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento comparables entre estos artefactos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brunopaschoal/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/brunopaschoal/ppo-SnowballTarget
 - Repositorio oficial de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentación de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Tutorial corto (Huggy the Dog): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Organización Unity en HuggingFace (visor de agentes): https://huggingface.co/unity
+- Organización Unity en Hugging Face (visor de agentes): https://huggingface.co/unity

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VishalMysore/layaForWeb` es un repositorio de modelo alojado en HuggingFace por el usuario VishalMysore, publicado el 21 de septiembre de 2026 y sin actualizaciones posteriores. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun otro contenido: no se documentan arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene etiqueta de pipeline asignada, por lo que ni siquiera es posible confirmar la modalidad (texto, vision, audio u otra).
+`VishalMysore/layaForWeb` es un repositorio de modelo alojado en Hugging Face por el usuario VishalMysore, publicado el 21 de septiembre de 2026 y sin actualizaciones posteriores. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun otro contenido: no se documentan arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y no tiene etiqueta de pipeline asignada, por lo que ni siquiera es posible confirmar la modalidad (texto, vision, audio u otra).
 
 El nombre del repositorio sugiere un modelo orientado a casos de uso web, pero se trata de una inferencia a partir del identificador y no de un dato verificado. Tampoco existe documentacion tecnica, paper, repositorio de codigo ni demo asociados. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a sitios de apuestas deportivas en lituano, completamente ajenos al objeto de esta ficha.
 
@@ -96,7 +96,7 @@ No disponible. No hay informacion suficiente para identificar modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VishalMysore/layaForWeb
+- Hugging Face: https://huggingface.co/VishalMysore/layaForWeb
 - Model card del autor: https://huggingface.co/VishalMysore/layaForWeb (contenido limitado a la declaracion `license: apache-2.0`)
 - Paper, repositorio de codigo, blog o demo: no disponibles
 - Resultados de busqueda web: ningun enlace relevante; las URL recuperadas (topsport.lt y dominios similares) corresponden a sitios de apuestas sin relacion con el modelo

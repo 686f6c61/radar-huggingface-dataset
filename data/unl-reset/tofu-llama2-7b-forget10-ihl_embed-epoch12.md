@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch12` | 6.738.415.616 | no disponible | Unlearning TOFU (forget10) | llama2 | HuggingFace |
-| `locuslab/tofu_ft_llama2-7b` (modelo base) | ~6,7 B | no disponible | Fine-tuning completo sobre TOFU | llama2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,7 B | no disponible | Chat de proposito general | llama2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch12` | 6.738.415.616 | no disponible | Unlearning TOFU (forget10) | llama2 | Hugging Face |
+| `locuslab/tofu_ft_llama2-7b` (modelo base) | ~6,7 B | no disponible | Fine-tuning completo sobre TOFU | llama2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,7 B | no disponible | Chat de proposito general | llama2 | Hugging Face |
 | Otros checkpoints de la familia IHL+Reset | no disponible | no disponible | Variantes de unlearning | llama2 | Repositorio `unl-reset` |
 
 No se dispone de datos de rendimiento comparado (benchmarks) entre estas variantes en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estas variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch12
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch12
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio del autor: https://huggingface.co/unl-reset

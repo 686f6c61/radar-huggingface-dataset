@@ -79,7 +79,7 @@ La comparativa se basa en los datos disponibles; no se incluyen otros modelos mu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-uncensored-heretic-mlx-vlm-6Bit
+- Modelo en Hugging Face: https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-uncensored-heretic-mlx-vlm-6Bit
 - Modelo base (llmfan46): https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-uncensored-heretic
 - Version 4-bit del mismo autor: https://huggingface.co/ailexleon/gemma-4-26B-A4B-it-qat-uncensored-heretic-mlx-lm-4Bit
 - Requisitos de hardware del modelo base: https://llmrun.dev/model/llmfan46-gemma-4-26b-a4b-it-uncensored-heretic

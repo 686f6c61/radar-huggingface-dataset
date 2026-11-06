@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Ambarella/SmolVLM2",
+  "slug": "ambarella-smolvlm2",
+  "author": "Ambarella",
+  "url": "https://huggingface.co/Ambarella/SmolVLM2",
+  "created_at": "2026-06-25T08:14:34.000Z",
+  "updated_at": "2026-11-06T04:43:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "arxiv:2504.05299",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1709613414,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ambarella/SmolVLM2 · Hugging Face",
+      "url": "https://huggingface.co/Ambarella/SmolVLM2",
+      "snippet": "Original paper: SmolVLM: Redefining small and efficient multimodal models. SmolVLM2-500M-Video-Instruct is a highly efficient …"
+    },
+    {
+      "title": "Ambarella/SmolVLM2 at main - Hugging Face",
+      "url": "https://huggingface.co/Ambarella/SmolVLM2/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Garden | Ambarella",
+      "url": "https://www.ambarella.com/developer/model-garden/",
+      "snippet": "A compact 450M-parameter vision-language model from Liquid AI, designed for efficient multimodal understanding with a lightweight …"
+    },
+    {
+      "title": "smollm/vision/smolvlm2 at main · huggingface/smollm · GitHub",
+      "url": "https://github.com/huggingface/smollm/tree/main/vision/smolvlm2",
+      "snippet": "A lightweight framework for fine-tuning small, efficient vision-language models on both image and video datasets. Built for flexibility …"
+    },
+    {
+      "title": "Ambarella | AI Vision Processors For Edge Applications",
+      "url": "https://www.ambarella.com/",
+      "snippet": "Our solutions make cameras smarter by extracting valuable data from high-resolution video streams. With advanced driver …"
+    }
+  ]
+}

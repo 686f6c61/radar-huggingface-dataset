@@ -56,5 +56,5 @@ No disponible. Este repositorio no es un modelo y no puede compararse con sistem
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilywebe/paper_014507999_multimodal_reasoning
+- Repositorio en Hugging Face: https://huggingface.co/emilywebe/paper_014507999_multimodal_reasoning
 - No se han encontrado otros enlaces específicos (papers, blogs, demos) relacionados con este repositorio.

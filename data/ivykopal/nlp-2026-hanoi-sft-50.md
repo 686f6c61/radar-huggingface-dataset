@@ -86,8 +86,8 @@ Los datos retenidos corresponden a 3-5 discos con permutaciones de clavijas no v
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ivykopal/nlp-2026-hanoi-sft-50 | 134.515.008 | no disponible | Torre de Hanoi (FFT con 20% de ruido) | Apache-2.0 | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135M según el nombre del modelo base | no disponible en la información proporcionada | Asistente general instruccional | Apache-2.0 | HuggingFace (modelo base) |
+| ivykopal/nlp-2026-hanoi-sft-50 | 134.515.008 | no disponible | Torre de Hanoi (FFT con 20% de ruido) | Apache-2.0 | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135M según el nombre del modelo base | no disponible en la información proporcionada | Asistente general instruccional | Apache-2.0 | Hugging Face (modelo base) |
 | Otros baselines SFT del mismo estudio (GRPO/GSPO) | no disponible | no disponible | Torre de Hanoi | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de modelos comparables de la misma categoría en la información proporcionada, más allá del modelo base, del cual este ajuste hereda arquitectura y licencia.
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento de modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ivykopal/nlp-2026-hanoi-sft-50
+- Modelo en Hugging Face: https://huggingface.co/ivykopal/nlp-2026-hanoi-sft-50
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Notebook de referencia citado en la model card: `examples/sft/fft.ipynb` (ruta relativa, sin URL pública en la información disponible)
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a servicios de traducción (Google Translate, DeepL, Reverso) y no guardan relación con esta ficha.

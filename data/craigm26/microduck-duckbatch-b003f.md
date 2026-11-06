@@ -88,7 +88,7 @@ No se han identificado en la información proporcionada otras políticas públic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/craigm26/microduck-duckbatch-b003f
+- Modelo en Hugging Face: https://huggingface.co/craigm26/microduck-duckbatch-b003f
 - Modelo base: https://huggingface.co/craigm26/microduck-duckbatch-b002-128x128
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado en la model card: https://github.com/pollen-robotics/microduck_rl

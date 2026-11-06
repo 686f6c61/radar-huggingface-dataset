@@ -96,7 +96,7 @@ No se dispone de datos numéricos de alternativas en la información proporciona
 
 | Modelo | Parametros | Contexto | Metrica comparable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3-DSpark | 2.249.289.601 | 65.536 entrenados / 1.048.576 con YaRN-16 | acc_len 3,93-5,51 segun dataset | no disponible | HuggingFace, requiere SGLang |
+| Kimi-K3-DSpark | 2.249.289.601 | 65.536 entrenados / 1.048.576 con YaRN-16 | acc_len 3,93-5,51 segun dataset | no disponible | Hugging Face, requiere SGLang |
 | EAGLE-3 (borradores) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Medusa (cabezas) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | DFlash (borrador paralelo) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -116,7 +116,7 @@ No se dispone de datos numéricos de alternativas en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RadixArk/Kimi-K3-DSpark
+- Modelo en Hugging Face: https://huggingface.co/RadixArk/Kimi-K3-DSpark
 - Modelo objetivo Kimi K3: https://huggingface.co/moonshotai/Kimi-K3
 - SpecForge (framework de entrenamiento): https://github.com/sgl-project/SpecForge/
 - SGLang (motor de inferencia): https://github.com/sgl-project/sglang

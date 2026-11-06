@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-6.1-Sol es un repositorio alojado en HuggingFace bajo el identificador `gptforfree/GPT-6.1-Sol`, publicado por el usuario `gptforfree` con fecha de creacion y ultima actualizacion del 10 de octubre de 2026. La model card asociada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
+GPT-6.1-Sol es un repositorio alojado en Hugging Face bajo el identificador `gptforfree/GPT-6.1-Sol`, publicado por el usuario `gptforfree` con fecha de creacion y ultima actualizacion del 10 de octubre de 2026. La model card asociada esta practicamente vacia: unicamente contiene el bloque de metadatos con la licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
 
 En el momento de redactar esta ficha, el repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado ni idiomas soportados, y no incluye pesos, tokenizador ni configuracion visible en la informacion proporcionada. Esto impide verificar que exista un modelo funcional detras del identificador.
 
@@ -76,6 +76,6 @@ No disponible. Al no conocerse el tamano, la arquitectura ni las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gptforfree/GPT-6.1-Sol
+- Repositorio en Hugging Face: https://huggingface.co/gptforfree/GPT-6.1-Sol
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

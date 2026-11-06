@@ -2,7 +2,7 @@
 
 ## Resumen
 
-iz-instruct-GGUF es la version cuantizada en formato GGUF del modelo theplayboy117/iz-instruct, un ajuste fino mediante LoRA sobre Qwen/Qwen2.5-1.5B-Instruct. La conversion y publicacion la realiza mradermacher, un autor conocido en HuggingFace por generar cuantizaciones GGUF estaticas de modelos de terceros con la herramienta llama.cpp. El repositorio no contiene un modelo nuevo: contiene el mismo modelo de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) redistribuido en 12 niveles de cuantizacion distintos.
+iz-instruct-GGUF es la version cuantizada en formato GGUF del modelo theplayboy117/iz-instruct, un ajuste fino mediante LoRA sobre Qwen/Qwen2.5-1.5B-Instruct. La conversion y publicacion la realiza mradermacher, un autor conocido en Hugging Face por generar cuantizaciones GGUF estaticas de modelos de terceros con la herramienta llama.cpp. El repositorio no contiene un modelo nuevo: contiene el mismo modelo de 1.543.714.304 parametros (aproximadamente 1,5 mil millones) redistribuido en 12 niveles de cuantizacion distintos.
 
 El problema que resuelve es puramente de despliegue: los pesos originales en safetensors no se pueden ejecutar directamente con llama.cpp, Ollama o LM Studio, mientras que estas versiones GGUF si, con tamanos que van desde 0,8 GB (Q2_K) hasta 3,2 GB (f16). Esto permite ejecutar el modelo en CPU, en GPUs de gama baja o en equipos con poca memoria unificada, algo relevante para prototipado local, pruebas de adaptaciones LoRA y despliegues en el borde.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| iz-instruct-GGUF (esta ficha) | 1,54B | 32.768 tokens (heredado, no confirmado) | No disponible | GGUF en HuggingFace; 0 descargas |
+| iz-instruct-GGUF (esta ficha) | 1,54B | 32.768 tokens (heredado, no confirmado) | No disponible | GGUF en Hugging Face; 0 descargas |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens | Apache 2.0 | safetensors y GGUF de terceros; muy extendido |
 | Llama 3.2 1B Instruct | 1,24B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | safetensors y GGUF; ampliamente desplegado |
 | SmolLM2 1.7B Instruct | 1,71B | 8.192 tokens | Apache 2.0 | safetensors y GGUF; buena adopcion |
@@ -90,7 +90,7 @@ La comparacion relevante es contra Qwen2.5-1.5B-Instruct: iz-instruct parte de e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/iz-instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/iz-instruct-GGUF
 - Modelo de origen (adaptador): https://huggingface.co/theplayboy117/iz-instruct
 - Modelo base del adaptador: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Pagina de descarga resumida del cuantizador: https://hf.tst.eu/model#iz-instruct-GGUF

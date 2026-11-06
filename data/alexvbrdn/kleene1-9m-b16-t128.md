@@ -97,7 +97,7 @@ La diferencia práctica es que el algoritmo clásico siempre acierta pero puede 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexvbrdn/kleene1-9m-b16-t128
+- Modelo en Hugging Face: https://huggingface.co/alexvbrdn/kleene1-9m-b16-t128
 - RegexSolver (repositorio del motor que integra el modelo): https://github.com/RegexSolver/regexsolver
 - Entrada de blog sobre la representación de transiciones por bases: https://alexvbrdn.me/post/optimizing-transition-conditions-automaton-representation
 - candle (framework de inferencia en Rust): https://github.com/huggingface/candle

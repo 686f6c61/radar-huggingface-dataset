@@ -87,6 +87,6 @@ No se dispone de resultados de benchmarks de este checkpoint para establecer una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0.003
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l3_mixed_remove0.4_rho0.003
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Archivos de experimento y diagnósticos: disponibles en el repositorio (`experiment/`, `compression.json`)

@@ -75,8 +75,8 @@ La informacion proporcionada solo permite comparar este reempaquetado con su mod
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Comfy-Org/Qwen-Image-2.1 | Reempaquetado para ComfyUI del modelo base; formato diffusion-single-file, incluye variantes bf16, int8 y w4a8 | No disponible (codificador de texto Qwen3-VL 8B) | No disponible | qwen-research (other) | HuggingFace, 120 descargas, 58 likes; repo de 77,5 GB |
-| Qwen/Qwen-Image-2.1 | Modelo original del que deriva el anterior; fuente de los pesos y de la licencia | No disponible en la informacion proporcionada | No disponible | qwen-research | HuggingFace (repositorio original) |
+| Comfy-Org/Qwen-Image-2.1 | Reempaquetado para ComfyUI del modelo base; formato diffusion-single-file, incluye variantes bf16, int8 y w4a8 | No disponible (codificador de texto Qwen3-VL 8B) | No disponible | qwen-research (other) | Hugging Face, 120 descargas, 58 likes; repo de 77,5 GB |
+| Qwen/Qwen-Image-2.1 | Modelo original del que deriva el anterior; fuente de los pesos y de la licencia | No disponible en la informacion proporcionada | No disponible | qwen-research | Hugging Face (repositorio original) |
 
 Otras alternativas del segmento de generacion de imagen open source (por ejemplo modelos de la familia FLUX o Stable Diffusion) no aparecen en la informacion proporcionada, por lo que no se incluyen datos comparativos.
 
@@ -95,7 +95,7 @@ Otras alternativas del segmento de generacion de imagen open source (por ejemplo
 
 ## Enlaces
 
-- Repositorio en HuggingFace (este reempaquetado): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
+- Repositorio en Hugging Face (este reempaquetado): https://huggingface.co/Comfy-Org/Qwen-Image-2.1
 - Repositorio del modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Workflow de texto a imagen: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_qwen_image_2_1_t2i.json

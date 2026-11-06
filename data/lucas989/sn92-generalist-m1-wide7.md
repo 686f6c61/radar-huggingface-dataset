@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SN92 generalist decision model (merge) es un modelo de clasificación de texto obtenido por fusión en el espacio de pesos de siete fine-tunes de `baselabs/mammoth-1`, un modelo post-entrenado a partir de Qwen3.5-27B (Apache-2.0) con licencia MIT. Lo publica el usuario Lucas989 en HuggingFace y no está afiliado a Base Labs / Baseten, al equipo de Qwen, a REAX ni a los autores de los modelos padre. El modelo resuelve tareas de decisión de opción múltiple en formato REAX eval-v5.1: recibe una pregunta con opciones (letras) y emite una distribución sobre las letras de respuesta, en lugar de generar texto libre.
+SN92 generalist decision model (merge) es un modelo de clasificación de texto obtenido por fusión en el espacio de pesos de siete fine-tunes de `baselabs/mammoth-1`, un modelo post-entrenado a partir de Qwen3.5-27B (Apache-2.0) con licencia MIT. Lo publica el usuario Lucas989 en Hugging Face y no está afiliado a Base Labs / Baseten, al equipo de Qwen, a REAX ni a los autores de los modelos padre. El modelo resuelve tareas de decisión de opción múltiple en formato REAX eval-v5.1: recibe una pregunta con opciones (letras) y emite una distribución sobre las letras de respuesta, en lugar de generar texto libre.
 
 La arquitectura subyacente es un backbone `Qwen3_5Model` en el layout de lectura conjunta (joint-readout) de REAX, con atención completa no causal y un cabezal de lectura de códigos de respuesta. El resultado de la fusión tiene 26.085.330.160 parámetros totales (26,1 mil millones) en bfloat16, con un tamaño de repositorio de 52,2 GB. La licencia es MIT y el pipeline declarado es `text-classification`.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lucas989/sn92-generalist-m1-wide7 | 26,1 B | no disponible (prompts de entrenamiento de 6.144 tokens) | Clasificación de decisión de opción múltiple (58 tipos) | MIT | HuggingFace, 38 descargas |
-| baselabs/mammoth-1 | no disponible | no disponible | Decisión con joint-readout REAX | MIT | HuggingFace |
-| danyloooah/sn92-generalist-m1-v3a | no disponible | no disponible | Decisión generalista (padre del merge) | MIT | HuggingFace |
-| Qwen3.5-27B | 27 B (aproximado) | no disponible | Generación de texto general | Apache-2.0 | HuggingFace |
+| Lucas989/sn92-generalist-m1-wide7 | 26,1 B | no disponible (prompts de entrenamiento de 6.144 tokens) | Clasificación de decisión de opción múltiple (58 tipos) | MIT | Hugging Face, 38 descargas |
+| baselabs/mammoth-1 | no disponible | no disponible | Decisión con joint-readout REAX | MIT | Hugging Face |
+| danyloooah/sn92-generalist-m1-v3a | no disponible | no disponible | Decisión generalista (padre del merge) | MIT | Hugging Face |
+| Qwen3.5-27B | 27 B (aproximado) | no disponible | Generación de texto general | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucas989/sn92-generalist-m1-wide7
+- Hugging Face: https://huggingface.co/Lucas989/sn92-generalist-m1-wide7
 - Modelo base principal: https://huggingface.co/baselabs/mammoth-1
 - Padre isomsom/sn92-gen-m87b: https://huggingface.co/isomsom/sn92-gen-m87b
 - Padre xflud/sn92-decider-1: https://huggingface.co/xflud/sn92-decider-1

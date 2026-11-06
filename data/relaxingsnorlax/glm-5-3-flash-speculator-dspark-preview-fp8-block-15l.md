@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block-15L
+- Modelo en Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block-15L
 - Drafter base de 5 capas: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block
 - Modelo verificador: https://huggingface.co/zai-org/GLM-5.3-Flash

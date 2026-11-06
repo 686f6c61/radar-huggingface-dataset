@@ -87,7 +87,7 @@ La comparación relevante es de perfil de despliegue más que de calidad: frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-ru-en-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-ru-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-ru-en
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

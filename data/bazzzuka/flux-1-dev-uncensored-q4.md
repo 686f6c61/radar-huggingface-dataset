@@ -4,7 +4,7 @@
 
 ## Resumen
 
-flux.1-dev-uncensored-q4 es un derivado del modelo de generacion de imagenes FLUX.1-dev de Black Forest Labs, publicado en HuggingFace por el usuario BaZzzuka el 17 de septiembre de 2026 segun los metadatos del repositorio. Se trata de un merge del modelo base con un LoRA sin censura procedente de CivitAI y su posterior cuantizacion en formato NF4, segun describe la propia model card del autor. No es un modelo entrenado desde cero ni un modelo de lenguaje: es un checkpoint de difusion texto-a-imagen.
+flux.1-dev-uncensored-q4 es un derivado del modelo de generacion de imagenes FLUX.1-dev de Black Forest Labs, publicado en Hugging Face por el usuario BaZzzuka el 17 de septiembre de 2026 segun los metadatos del repositorio. Se trata de un merge del modelo base con un LoRA sin censura procedente de CivitAI y su posterior cuantizacion en formato NF4, segun describe la propia model card del autor. No es un modelo entrenado desde cero ni un modelo de lenguaje: es un checkpoint de difusion texto-a-imagen.
 
 A diferencia de los modelos generativos de texto, su parametro critico no es la ventana de contexto sino la calidad de la imagen generada, el uso de VRAM y las restricciones de contenido. El repositorio ocupa 6,7 GB y contiene 6.138.207.719 elementos en safetensors, cifra coherente con un modelo de aproximadamente 12.000 millones de parametros empaquetado a 4 bits (dos valores por byte), aunque el autor no confirma este extremo en la documentacion.
 
@@ -18,9 +18,9 @@ Su relevancia actual es limitada pero concreta: permite ejecutar un modelo de la
 | Parametros totales | 6.138.207.719 elementos almacenados en safetensors (dato real del repositorio). Al estar cuantizado en NF4 (dos valores por byte), corresponderia a un modelo de aproximadamente 12.000 millones de parametros (estimacion no confirmada por el autor) |
 | Parametros activos | No aplica: no es un modelo de mezcla de expertos (MoE) |
 | Longitud de contexto | No aplica: es un modelo texto-a-imagen. No se documenta la longitud maxima de prompt admitida |
-| Tipos de cuantizacion | NF4 (4 bits) mediante bitsandbytes, segun la model card. Los tags de HuggingFace indican "8-bit" y el nombre del repositorio usa "q4"; la discrepancia no esta aclarada |
+| Tipos de cuantizacion | NF4 (4 bits) mediante bitsandbytes, segun la model card. Los tags de Hugging Face indican "8-bit" y el nombre del repositorio usa "q4"; la discrepancia no esta aclarada |
 | Idiomas soportados | No disponible |
-| Licencia | MIT (declarada por el autor tanto en los metadatos de HuggingFace como en la model card) |
+| Licencia | MIT (declarada por el autor tanto en los metadatos de Hugging Face como en la model card) |
 | Formato de pesos | safetensors, libreria diffusers (clase FluxTransformer2DModel) |
 
 ## Arquitectura y entrenamiento
@@ -91,7 +91,7 @@ Los datos de los modelos comparados no aparecen en la informacion proporcionada 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BaZzzuka/flux.1-dev-uncensored-q4
+- Repositorio en Hugging Face: https://huggingface.co/BaZzzuka/flux.1-dev-uncensored-q4
 - Modelo base: https://huggingface.co/black-forest-labs/flux.1-dev
 - Repositorio referenciado en el script del autor: https://huggingface.co/shauray/flux.1-dev-uncensored-nf4
 - Hilo de diffusers con el script de cuantizacion NF4: https://github.com/huggingface/diffusers/issues/9165

@@ -105,7 +105,7 @@ El resto de filas de la tabla de benchmarks del modelo base no están disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-RCO-3bpw
+- Repositorio Hugging Face: https://huggingface.co/hermitdave/Qwen3.6-35B-A3B-RCO-3bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog del modelo base: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Qwen Chat: https://chat.qwen.ai

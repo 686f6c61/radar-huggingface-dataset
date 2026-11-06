@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ItsmeDarsh/my_testing-model` es un repositorio alojado en HuggingFace por el usuario ItsmeDarsh, creado el 1 de septiembre de 2026. No dispone de model card sustancial, ya que el README únicamente contiene la declaración de licencia `apache-2.0`. No se especifica arquitectura, tamaño, parámetros, ni ningún otro detalle técnico. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de un espacio de prueba o un modelo aún no publicado formalmente.
+El modelo `ItsmeDarsh/my_testing-model` es un repositorio alojado en Hugging Face por el usuario ItsmeDarsh, creado el 1 de septiembre de 2026. No dispone de model card sustancial, ya que el README únicamente contiene la declaración de licencia `apache-2.0`. No se especifica arquitectura, tamaño, parámetros, ni ningún otro detalle técnico. El repositorio no registra descargas ni interacciones, lo que sugiere que se trata de un espacio de prueba o un modelo aún no publicado formalmente.
 
 Dada la ausencia total de información técnica y de documentación, no es posible evaluar sus capacidades, rendimiento ni requisitos de hardware. Cualquier uso en producción sería prematuro y arriesgado. Se recomienda contactar con el autor o esperar a que publique una model card completa antes de considerar su adopción.
 
@@ -57,5 +57,5 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ItsmeDarsh/my_testing-model
+- Repositorio Hugging Face: https://huggingface.co/ItsmeDarsh/my_testing-model
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web.

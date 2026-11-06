@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Corvid-Raven-124B-gguf es un repositorio de pesos en formato GGUF publicado por el usuario fbg0204 en HuggingFace. La información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia `mit`, sin texto descriptivo, sin especificaciones técnicas y sin resultados de evaluación. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas indicados en los metadatos.
+Corvid-Raven-124B-gguf es un repositorio de pesos en formato GGUF publicado por el usuario fbg0204 en Hugging Face. La información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia `mit`, sin texto descriptivo, sin especificaciones técnicas y sin resultados de evaluación. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas indicados en los metadatos.
 
 A partir del identificador del repositorio puede inferirse que se trata de un modelo de aproximadamente 124 000 millones de parámetros distribuido en formato GGUF, presumiblemente una cuantización destinada a inferencia local con llama.cpp u otros motores compatibles. Esta inferencia procede exclusivamente del nombre del repositorio y no está confirmada por la model card ni por ningún otro documento del autor.
 
@@ -85,7 +85,7 @@ No disponible. No es posible establecer comparaciones significativas sin conocer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fbg0204/Corvid-Raven-124B-gguf
+- Repositorio en Hugging Face: https://huggingface.co/fbg0204/Corvid-Raven-124B-gguf
 - Documentación de llama.cpp (motor compatible con GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com/
 - Catálogo de modelos GGUF (referencia genérica): https://local-ai-zone.github.io/

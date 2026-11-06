@@ -80,7 +80,7 @@ AfriWise se diferencia por su especialización en lenguas nigerianas, mientras q
 
 ## Enlaces
 
-- [HuggingFace: Topaz-arts/AfriWise-Qwen2.5-3B-GGUF](https://huggingface.co/Topaz-arts/AfriWise-Qwen2.5-3B-GGUF)
+- [Hugging Face: Topaz-arts/AfriWise-Qwen2.5-3B-GGUF](https://huggingface.co/Topaz-arts/AfriWise-Qwen2.5-3B-GGUF)
 - [Modelo base: Qwen/Qwen2.5-3B](https://huggingface.co/Qwen/Qwen2.5-3B)
 - [Colección Qwen2.5](https://huggingface.co/collections/Qwen/qwen25)
 - [Documentación de Qwen](https://qwen.readthedocs.io/en/latest/)

@@ -101,10 +101,10 @@ El dataset de evaluación `sim-square-broad-r00-r03-eval` cubre las rondas r00 a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-success-bc-n32-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-success-bc-n32-idql
 - Sitio del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organización en HuggingFace: https://huggingface.co/mulligan
+- Organización en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento (teleoperación base): https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de entrenamiento (rollouts auto-IQL n32): https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts
 - Dataset de entrenamiento (rollouts auto-IQL success-bc n32): https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-iql-success-bc-n32-policy-rollouts

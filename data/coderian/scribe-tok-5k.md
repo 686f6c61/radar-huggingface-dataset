@@ -2,7 +2,7 @@
 
 ## Resumen
 
-scribe-tok-5k es un tokenizador byte-pair encoding (BPE) de vocabulario reducido (5.000 tokens), publicado por el usuario coderian en HuggingFace bajo licencia MIT. No es un modelo de lenguaje: es exclusivamente el componente de tokenizacion, distribuido en formato `tokenizers` y entrenado sobre texto limpio en ingles procedente del dataset kd13/bookcorpus-clean (100.000 lineas). Su proposito declarado es servir de material de experimentacion, aprendizaje y para modelos de lenguaje pequenos donde se prefiere un vocabulario compacto frente a los tokenizadores de produccion de decenas o cientos de miles de entradas.
+scribe-tok-5k es un tokenizador byte-pair encoding (BPE) de vocabulario reducido (5.000 tokens), publicado por el usuario coderian en Hugging Face bajo licencia MIT. No es un modelo de lenguaje: es exclusivamente el componente de tokenizacion, distribuido en formato `tokenizers` y entrenado sobre texto limpio en ingles procedente del dataset kd13/bookcorpus-clean (100.000 lineas). Su proposito declarado es servir de material de experimentacion, aprendizaje y para modelos de lenguaje pequenos donde se prefiere un vocabulario compacto frente a los tokenizadores de produccion de decenas o cientos de miles de entradas.
 
 La relevancia de una pieza como esta es acotada pero concreta: en proyectos de investigacion sobre tokenizacion, en la construccion de modelos diminutos que se entrenan desde cero (por ejemplo, char-level o small-scale transformers para docencia) o en pruebas de eficiencia de codificacion, un vocabulario de 5.000 entradas reduce el tamano de la matriz de embeddings y simplifica el analisis de la segmentacion subpalabra. Tambien resulta util para estudiar el compromiso entre granularidad de tokens y longitud efectiva de secuencia.
 
@@ -26,7 +26,7 @@ El repositorio registra 0 descargas y 1 like en el momento de la consulta, y fue
 | Herramientas de entrenamiento | `tokenizers` 0.23.2 y `transformers` 5.17.0 (segun el autor) |
 | Tokens especiales | `[PAD]`=0, `[UNK]`=1, `[CLS]`=2, `[SEP]`=3, `[MASK]`=4 |
 | Normalizacion / lowercasing | sin normalizacion ni lowercasing; el corpus ya esta en minusculas |
-| ID en HuggingFace | coderian/scribe-tok-5k |
+| ID en Hugging Face | coderian/scribe-tok-5k |
 
 ## Arquitectura y entrenamiento
 
@@ -38,7 +38,7 @@ El corpus es kd13/bookcorpus-clean, descrito en la model card como 100.000 linea
 
 - Segmentacion de texto en ingles en subpalabras mediante BPE, con un vocabulario de 5.000 entradas.
 - Codificacion y decodificacion de cadenas a identificadores y viceversa (`encode`, `convert_ids_to_tokens`).
-- Integracion directa con el ecosistema HuggingFace: carga mediante `AutoTokenizer.from_pretrained("coderian/scribe-tok-5k")` o `Tokenizer.from_file("tokenizer.json")`.
+- Integracion directa con el ecosistema Hugging Face: carga mediante `AutoTokenizer.from_pretrained("coderian/scribe-tok-5k")` o `Tokenizer.from_file("tokenizer.json")`.
 - Gestion de vocabulario fuera de lista mediante el token `[UNK]` (id 1).
 - Soporte de los tokens especiales de clasificacion y enmascaramiento (`[CLS]`, `[SEP]`, `[MASK]`, `[PAD]`), lo que permite reutilizarlo en arquitecturas estilo BERT pequenas.
 - Generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, agentes y capacidades multilingues: no disponibles (no es un modelo de lenguaje, no genera ni razona).
@@ -72,7 +72,7 @@ La comparacion se plantea frente a otros tokenizadores de uso comun, no frente a
 
 | Tokenizador | Tipo | Tamano de vocabulario | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coderian/scribe-tok-5k | BPE, pre-tokenizador de espacios | 5.000 | en | MIT | HuggingFace |
+| coderian/scribe-tok-5k | BPE, pre-tokenizador de espacios | 5.000 | en | MIT | Hugging Face |
 | Tokenizador de GPT-2 | BPE a nivel de byte | 50.257 | en (multilingue parcial) | MIT (pesos del modelo con otras condiciones) | Publico |
 | Tokenizador de BERT base | WordPiece | 30.522 | en (variante multilingue aparte) | Apache 2.0 | Publico |
 | Tokenizador de Llama 3 | BPE a nivel de byte | 128.256 | multilingue | Licencia comunitaria de Llama 3 | Publico con aceptacion de terminos |
@@ -93,7 +93,7 @@ Diferencias clave: scribe-tok-5k es entre seis y veinticinco veces mas pequeno e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coderian/scribe-tok-5k
+- Hugging Face: https://huggingface.co/coderian/scribe-tok-5k
 - Repositorio GitHub citado en la model card: https://github.com/coderianx/scribe-tok-5k
 - Dataset de entrenamiento: https://huggingface.co/datasets/kd13/bookcorpus-clean
 - Licencia MIT: https://opensource.org/licenses/MIT

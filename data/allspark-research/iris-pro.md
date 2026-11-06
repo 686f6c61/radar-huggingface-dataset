@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Iris-pro es un modelo de inteligencia artificial publicado por AllSpark-Research, un laboratorio de investigación con presencia en GitHub y HuggingFace. El repositorio de HuggingFace indica que se trata de un modelo con pesos en formato safetensors, etiquetado como `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no hay confirmación oficial en la documentación disponible. La licencia es Apache 2.0, lo que permite uso comercial y modificación, pero el modelo no ha recibido descargas ni valoraciones en la plataforma.
+Iris-pro es un modelo de inteligencia artificial publicado por AllSpark-Research, un laboratorio de investigación con presencia en GitHub y Hugging Face. El repositorio de Hugging Face indica que se trata de un modelo con pesos en formato safetensors, etiquetado como `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, aunque no hay confirmación oficial en la documentación disponible. La licencia es Apache 2.0, lo que permite uso comercial y modificación, pero el modelo no ha recibido descargas ni valoraciones en la plataforma.
 
 El tamaño del repositorio es de 379,8 GB, lo que apunta a un modelo de gran escala, probablemente con decenas de miles de millones de parámetros, aunque no se especifica el número exacto. La fecha de creación es de septiembre de 2026, y la model card únicamente contiene la línea de licencia, sin detalles técnicos, capacidades o instrucciones de uso. Esta falta de documentación hace que sea imposible evaluar su rendimiento o sus aplicaciones prácticas con los datos disponibles. La relevancia actual del modelo es incierta, ya que no existe información pública sobre su arquitectura, entrenamiento o resultados.
 
@@ -21,7 +21,7 @@ El tamaño del repositorio es de 379,8 GB, lo que apunta a un modelo de gran esc
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento, el número de tokens utilizados, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. La etiqueta `qwen3_5_moe` en HuggingFace sugiere que el modelo podría ser una variante de mezcla de expertos derivada de Qwen 3.5, pero no hay documentación que lo confirme. Tampoco se conocen innovaciones técnicas específicas. El tamaño del repositorio (379,8 GB) indica que el modelo es considerablemente grande, pero sin más datos no se puede determinar si se trata de un modelo denso o de una arquitectura MoE con parámetros activos reducidos.
+No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento, el número de tokens utilizados, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. La etiqueta `qwen3_5_moe` en Hugging Face sugiere que el modelo podría ser una variante de mezcla de expertos derivada de Qwen 3.5, pero no hay documentación que lo confirme. Tampoco se conocen innovaciones técnicas específicas. El tamaño del repositorio (379,8 GB) indica que el modelo es considerablemente grande, pero sin más datos no se puede determinar si se trata de un modelo denso o de una arquitectura MoE con parámetros activos reducidos.
 
 ## Capacidades
 
@@ -54,6 +54,6 @@ No se puede realizar una comparativa porque no se dispone de información sobre 
 
 ## Enlaces
 
-- [HuggingFace: AllSpark-Research/Iris-pro](https://huggingface.co/AllSpark-Research/Iris-pro)
+- [Hugging Face: AllSpark-Research/Iris-pro](https://huggingface.co/AllSpark-Research/Iris-pro)
 - [GitHub: AllSpark-Research/Iris](https://github.com/AllSpark-Research/Iris)
 - [Sitio web de AllSparkResearch](https://allsparkresearch.com/)

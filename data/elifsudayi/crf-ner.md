@@ -87,8 +87,8 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Tipo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| elifsudayi/crf-ner | CRF lineal con features artesanales | no disponible (disperso) | ventana ±2 tokens | en | Apache 2.0 | HuggingFace |
-| Modelos NER transformer (p. ej. bert-base-NER) | Transformer encoder | ~110M | 512 tokens | multilingüe (según checkpoint) | variable (MIT, Apache 2.0, etc.) | HuggingFace |
+| elifsudayi/crf-ner | CRF lineal con features artesanales | no disponible (disperso) | ventana ±2 tokens | en | Apache 2.0 | Hugging Face |
+| Modelos NER transformer (p. ej. bert-base-NER) | Transformer encoder | ~110M | 512 tokens | multilingüe (según checkpoint) | variable (MIT, Apache 2.0, etc.) | Hugging Face |
 | spaCy NER (modelos `en_core_web_*`) | CNN/transformer según versión | variable | variable | en y otros | MIT | spaCy |
 | Presidio (Microsoft) | Pipeline con NER + reglas | variable | no aplica | varios | MIT | GitHub |
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmark comparativos entre estos modelos en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elifsudayi/crf-ner
+- Hugging Face: https://huggingface.co/elifsudayi/crf-ner
 - Repositorio del proyecto: https://github.com/ata-sesli/nlp-project-2
 - Dataset de entrenamiento: https://huggingface.co/datasets/gretelai/synthetic_pii_finance_multilingual
 - Librería `sklearn-crfsuite`: https://github.com/TeamHG-Memex/sklearn-crfsuite

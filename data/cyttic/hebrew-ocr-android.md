@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Idiomas | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hebrew-ocr-android | OCR de líneas manuscritas (TrOCR + CTC, ONNX int8) | hebreo | imagen 384×384, salida 288×198 | MIT (parcial CC BY 4.0) | HuggingFace, 0 descargas |
-| cyttic/exp35-trocr-base-en-ctc-seqhead-allreal-synpunct | Modelo de origen del componente base | no disponible | no disponible | no disponible | HuggingFace |
-| cyttic/exp35-trocr-large-en-ctc-seqhead-allreal-synpunct | Modelo de origen del componente large | no disponible | no disponible | no disponible | HuggingFace |
-| dicta-il/dictabert-tiny | Modelo de lenguaje enmascarado (verificación léxica) | hebreo | no disponible | CC BY 4.0 | HuggingFace |
+| cyttic/hebrew-ocr-android | OCR de líneas manuscritas (TrOCR + CTC, ONNX int8) | hebreo | imagen 384×384, salida 288×198 | MIT (parcial CC BY 4.0) | Hugging Face, 0 descargas |
+| cyttic/exp35-trocr-base-en-ctc-seqhead-allreal-synpunct | Modelo de origen del componente base | no disponible | no disponible | no disponible | Hugging Face |
+| cyttic/exp35-trocr-large-en-ctc-seqhead-allreal-synpunct | Modelo de origen del componente large | no disponible | no disponible | no disponible | Hugging Face |
+| dicta-il/dictabert-tiny | Modelo de lenguaje enmascarado (verificación léxica) | hebreo | no disponible | CC BY 4.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de reconocimiento con otras alternativas de OCR hebreo.
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de rec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hebrew-ocr-android
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hebrew-ocr-android
 - Aplicación Android: https://github.com/cyttic/android-hwrg
 - Modelo de origen base: https://huggingface.co/cyttic/exp35-trocr-base-en-ctc-seqhead-allreal-synpunct
 - Modelo de origen large: https://huggingface.co/cyttic/exp35-trocr-large-en-ctc-seqhead-allreal-synpunct

@@ -6,7 +6,7 @@ First-Order-Motion-Model (FOMM) es un modelo de animación de imagen: dada una i
 
 El repositorio `qualcomm/First-Order-Motion-Model` publica los artefactos ya exportados (ONNX en precisión float, universal, con QAIRT 2.45 y ONNX Runtime 1.27.1) y las métricas de latencia y memoria por chipset medidas con Qualcomm AI Hub Workbench. El modelo se compone de dos redes: un detector (estimador de movimiento por keypoints, 54,2 MB en float) y un generador (red de warping y síntesis, 174 MB en float), con checkpoint `vox-256` y resolución de entrada de 256x256 píxeles.
 
-Su relevancia actual es de despliegue, no de investigación: demuestra que un pipeline de animación facial de dos etapas puede ejecutarse íntegramente en NPU móvil a ~19 ms por fotograma en un Snapdragon 8 Gen 3, lo que habilita avatares y efectos de vídeo en tiempo real sin enviar datos biométricos a la nube. El repositorio de HuggingFace es pequeño en tracción (9 descargas, 2 likes) porque funciona como espejo de los assets de Qualcomm AI Hub más que como modelo de referencia para la comunidad.
+Su relevancia actual es de despliegue, no de investigación: demuestra que un pipeline de animación facial de dos etapas puede ejecutarse íntegramente en NPU móvil a ~19 ms por fotograma en un Snapdragon 8 Gen 3, lo que habilita avatares y efectos de vídeo en tiempo real sin enviar datos biométricos a la nube. El repositorio de Hugging Face es pequeño en tracción (9 descargas, 2 likes) porque funciona como espejo de los assets de Qualcomm AI Hub más que como modelo de referencia para la comunidad.
 
 ## Especificaciones técnicas
 
@@ -95,11 +95,11 @@ Nota: los tiempos corresponden a cada componente por separado; la suma de detect
 
 | Modelo | Tarea | Pesos pre-exportados para NPU Qualcomm | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualcomm/First-Order-Motion-Model | Animación de imagen a vídeo | Sí (ONNX float universal + TFLite) | no disponible (estimado ~57 M en total, no confirmado) | MIT (etiqueta del repositorio) | HuggingFace + Qualcomm AI Hub |
+| qualcomm/First-Order-Motion-Model | Animación de imagen a vídeo | Sí (ONNX float universal + TFLite) | no disponible (estimado ~57 M en total, no confirmado) | MIT (etiqueta del repositorio) | Hugging Face + Qualcomm AI Hub |
 | FOMM original (AliaksandrSiarohin/first-order-model) | Animación de imagen a vídeo | No (solo PyTorch) | no disponible | licencia propia enlazada en el repositorio | GitHub |
 | MRAA (Motion Representations for Articulated Animation) | Animación de imagen a vídeo, orientada a objetos articulados | No (solo PyTorch) | no disponible | no disponible | GitHub |
 | TPSMM (Thin-Plate Spline Motion Model) | Animación de imagen a vídeo | No (solo PyTorch) | no disponible | no disponible | GitHub |
-| LivePortrait | Animación de retratos con control fino de expresión | No (solo PyTorch) | no disponible | no disponible | GitHub / HuggingFace |
+| LivePortrait | Animación de retratos con control fino de expresión | No (solo PyTorch) | no disponible | no disponible | GitHub / Hugging Face |
 
 El diferencial de la versión de Qualcomm no es la calidad de generación, sino la cadena de despliegue: es la única de la lista con artefactos ONNX/TFLite medidos por chipset y asignación verificada a NPU. Frente al FOMM original, el código es el mismo modelo con un pipeline de exportación añadido; frente a MRAA, TPSMM o LivePortrait, la comparación de calidad requeriría benchmarks que no se han publicado en la información disponible.
 
@@ -110,14 +110,14 @@ El diferencial de la versión de Qualcomm no es la calidad de generación, sino 
 - Alucinación geométrica: como todo método de warping, puede producir artefactos en zonas ocluidas u oclusiones no vistas durante el entrenamiento (manos, pelo, objetos que cruzan el rostro).
 - Ausencia de sincronización labial fiable: no es un modelo de lip-sync; para doblaje con sincronía fonética hacen falta modelos especializados.
 - Dominio de entrenamiento: el checkpoint `vox-256` se entrenó sobre vídeos de rostros; el rendimiento fuera de ese dominio (cuerpo completo, animales, escenas) no está garantizado ni medido en esta ficha.
-- Licencia: el repositorio declara MIT, pero la model card remite a la licencia de la implementación original alojada en el repositorio de Siarohin. Conviene revisar ese fichero antes de un uso comercial, porque los términos pueden diferir de la etiqueta de HuggingFace.
+- Licencia: el repositorio declara MIT, pero la model card remite a la licencia de la implementación original alojada en el repositorio de Siarohin. Conviene revisar ese fichero antes de un uso comercial, porque los términos pueden diferir de la etiqueta de Hugging Face.
 - Rendimiento dependiente del chipset: en SA7255P el generador TFLite cae a CPU y tarda 2.850 ms por fotograma; verificar el runtime y la unidad de cómputo antes de prometer tiempo real.
 - Tracción mínima del repositorio (9 descargas, 2 likes): no hay garantía de soporte de la comunidad ni historial de incidencias resueltas.
 - Ausencia de métricas de calidad: no se publican FID, LPIPS ni estudios de usuario, por lo que no es posible comparar objetivamente la fidelidad de la animación frente a alternativas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/First-Order-Motion-Model
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/First-Order-Motion-Model
 - Página en Qualcomm AI Hub: https://aihub.qualcomm.com/models/fomm
 - Repositorio de exportación (Qualcomm AI Hub Models): https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/fomm
 - Paper original: https://arxiv.org/abs/2003.00196

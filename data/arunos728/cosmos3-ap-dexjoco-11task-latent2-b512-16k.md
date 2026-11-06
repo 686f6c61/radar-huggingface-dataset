@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `arunos728/cosmos3-ap-dexjoco-11task-latent2-b512-16k` es un checkpoint alojado en HuggingFace por el usuario arunos728. El repositorio ocupa 91,1 GB y, en el momento de la consulta, acumula 7 descargas y 0 "likes". Fue creado el 13 de septiembre de 2026 y actualizado el mismo dia, apenas cuatro minutos despues, lo que sugiere una subida automatizada o un volcado de pesos sin documentacion asociada.
+El repositorio `arunos728/cosmos3-ap-dexjoco-11task-latent2-b512-16k` es un checkpoint alojado en Hugging Face por el usuario arunos728. El repositorio ocupa 91,1 GB y, en el momento de la consulta, acumula 7 descargas y 0 "likes". Fue creado el 13 de septiembre de 2026 y actualizado el mismo dia, apenas cuatro minutos despues, lo que sugiere una subida automatizada o un volcado de pesos sin documentacion asociada.
 
 No existe model card: la unica etiqueta presente es `region:us`, que es un metadato de region de almacenamiento y no describe capacidades, arquitectura ni licencia. Tampoco se declaran pipeline, idiomas ni terminos de uso, por lo que cualquier afirmacion sobre el modelo seria especulativa.
 
@@ -84,6 +84,6 @@ No disponible. No se conocen modelos comparables a partir de la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arunos728/cosmos3-ap-dexjoco-11task-latent2-b512-16k
+- Hugging Face: https://huggingface.co/arunos728/cosmos3-ap-dexjoco-11task-latent2-b512-16k
 - Repositorio de codigo, paper, blog o demo: no disponible.
 - No se han encontrado enlaces relevantes en la busqueda web; los resultados obtenidos corresponden a hilos de soporte tecnico de HP sin relacion con el modelo.

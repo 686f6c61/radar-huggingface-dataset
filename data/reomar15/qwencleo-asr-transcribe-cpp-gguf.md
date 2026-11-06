@@ -82,7 +82,7 @@ La comparativa con alternativas ASR de otros fabricantes (Whisper, etc.) no est√
 
 ## Enlaces
 
-- [HuggingFace: reomar15/QwenCleo-ASR-transcribe-cpp-GGUF](https://huggingface.co/reomar15/QwenCleo-ASR-transcribe-cpp-GGUF)
+- [Hugging Face: reomar15/QwenCleo-ASR-transcribe-cpp-GGUF](https://huggingface.co/reomar15/QwenCleo-ASR-transcribe-cpp-GGUF)
 - [Modelo fuente: mohammedaly22/QwenCleo-ASR](https://huggingface.co/mohammedaly22/QwenCleo-ASR)
 - [Modelo base: Qwen/Qwen3-ASR-1.7B](https://huggingface.co/Qwen/Qwen3-ASR-1.7B)
 - [Fork Hex (receta de conversi√≥n): github.com/Reomar/hex/tree/feat/qwencleo-asr](https://github.com/Reomar/hex/tree/feat/qwencleo-asr)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`eandujar/classical_automl_notebook` no es un modelo de lenguaje: es un artefacto de AutoML tabular publicado en HuggingFace por el usuario `eandujar`. Contiene el mejor modelo seleccionado por AutoGluon para una tarea de clasificacion binaria sobre un dataset tabular de Pokémon (151 registros de Pokémon tratados como filas de una tabla), con la metrica de seleccion "balanced accuracy" y la columna objetivo `label` (clase positiva `1`). Segun la model card, el mejor modelo resultante es un `LightGBM`, es decir, un algoritmo de gradient boosting sobre arboles de decision, no una red neuronal ni un transformer.
+`eandujar/classical_automl_notebook` no es un modelo de lenguaje: es un artefacto de AutoML tabular publicado en Hugging Face por el usuario `eandujar`. Contiene el mejor modelo seleccionado por AutoGluon para una tarea de clasificacion binaria sobre un dataset tabular de Pokémon (151 registros de Pokémon tratados como filas de una tabla), con la metrica de seleccion "balanced accuracy" y la columna objetivo `label` (clase positiva `1`). Segun la model card, el mejor modelo resultante es un `LightGBM`, es decir, un algoritmo de gradient boosting sobre arboles de decision, no una red neuronal ni un transformer.
 
 El contexto de publicacion es claramente educativo: el identificador del dataset (`pakiino/2026-24679-pokemon-151-tabular-hw1`) y la etiqueta `education` apuntan a un trabajo practico de asignatura sobre pipelines clasicos de AutoML. El repositorio tiene 0 descargas y 0 likes, un tamano reportado de 0.0 GB y no declara licencia ni idiomas, por lo que no debe considerarse un modelo listo para produccion ni un componente reutilizable sin verificacion previa.
 
-Su relevancia es, por tanto, acotada: sirve como ejemplo reproducible del flujo "entrenar con AutoGluon, seleccionar el mejor modelo por validacion, subir el predictor a HuggingFace y cargarlo con `TabularPredictor.load`". Como referencia tecnica de arquitecturas de IA generativa no aporta nada, pero si ilustra el patron de empaquetado y carga de predictores tabulares desde el Hub.
+Su relevancia es, por tanto, acotada: sirve como ejemplo reproducible del flujo "entrenar con AutoGluon, seleccionar el mejor modelo por validacion, subir el predictor a Hugging Face y cargarlo con `TabularPredictor.load`". Como referencia tecnica de arquitecturas de IA generativa no aporta nada, pero si ilustra el patron de empaquetado y carga de predictores tabulares desde el Hub.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia es, por tanto, acotada: sirve como ejemplo reproducible del flujo 
 | Metrica de seleccion | Balanced accuracy (sobre el split de validacion proporcionado) |
 | Framework | AutoGluon (`library_name: autogluon`) |
 | Dataset de entrenamiento | `pakiino/2026-24679-pokemon-151-tabular-hw1` |
-| Tamano del repositorio | 0.0 GB segun HuggingFace |
+| Tamano del repositorio | 0.0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-22 |
 | Region declarada | us |
@@ -34,7 +34,7 @@ Su relevancia es, por tanto, acotada: sirve como ejemplo reproducible del flujo 
 
 La arquitectura subyacente es un ensamblado de gradient boosting con LightGBM, uno de los learners clasicos que AutoGluon entrena por defecto para datos tabulares. AutoGluon automatiza el preprocesado de caracteristicas, la seleccion de modelos candidatos y, opcionalmente, el apilado (stacking) y el bagging de varios modelos; de todo ese proceso solo se conserva en el repositorio el modelo ganador y los ficheros necesarios para su inferencia, tal como indica la model card. No se especifica el numero de estimadores, la profundidad, la tasa de aprendizaje, el espacio de busqueda explorado ni el conjunto de caracteristicas utilizado.
 
-Respecto a los datos, la unica informacion disponible es el enlace al dataset de HuggingFace y su tematica (Pokémon 151). No se documentan el numero de filas, el numero de caracteristicas, la proporcion entre clases, la existencia de valores nulos ni el metodo de particion entre entrenamiento y validacion, mas alla de la mencion a "the provided validation split". No hay evidencia de tecnicas de regularizacion, calibracion, ajuste de umbral ni de validacion cruzada mas alla de la que AutoGluon aplique internamente por defecto.
+Respecto a los datos, la unica informacion disponible es el enlace al dataset de Hugging Face y su tematica (Pokémon 151). No se documentan el numero de filas, el numero de caracteristicas, la proporcion entre clases, la existencia de valores nulos ni el metodo de particion entre entrenamiento y validacion, mas alla de la mencion a "the provided validation split". No hay evidencia de tecnicas de regularizacion, calibracion, ajuste de umbral ni de validacion cruzada mas alla de la que AutoGluon aplique internamente por defecto.
 
 La model card declara un rendimiento de test de `1` con balanced accuracy. Ese valor, sin mas contexto, es altamente sospechoso: en un problema de clasificacion binaria real es compatible con fuga de informacion (leakage), con un conjunto de test trivial o con una metrica mal calculada. No debe interpretarse como una capacidad de generalizacion demostrada.
 
@@ -55,7 +55,7 @@ La model card declara un rendimiento de test de `1` con balanced accuracy. Ese v
 - Docencia de AutoML: el repositorio sirve como ejemplo completo y minimo del ciclo "entrenar con AutoGluon, conservar solo el mejor modelo, publicarlo en el Hub y cargarlo desde otro entorno". Se usaria en un aula o tutorial para que el alumnado reproduzca el flujo con su propio dataset.
 - Plantilla de entrega de practicas: un estudiante puede clonar la estructura (dataset en el Hub, predictor en el Hub, README con metrica y variable objetivo) para entregar su propio trabajo de clasificacion tabular sin tener que disenar el empaquetado desde cero.
 - Baseline de comparacion en experimentos tabulares: al ser un LightGBM seleccionado por AutoGluon, permite fijar una referencia rapida frente a alternativas mas costosas (redes tabulares, ensembles manuales) sobre el mismo split de validacion.
-- Pruebas de integracion del stack de HuggingFace: sirve para verificar que `snapshot_download` mas `TabularPredictor.load` funcionan en un entorno concreto (versiones de `autogluon`, `lightgbm`, pandas y numpy compatibles), ya que es un artefacto pequeno y de carga rapida.
+- Pruebas de integracion del stack de Hugging Face: sirve para verificar que `snapshot_download` mas `TabularPredictor.load` funcionan en un entorno concreto (versiones de `autogluon`, `lightgbm`, pandas y numpy compatibles), ya que es un artefacto pequeno y de carga rapida.
 - Clasificacion sobre datos tabulares con estructura identica: si se dispone de un dataset con las mismas columnas que el dataset de Pokemon 151, el predictor podria aplicarse directamente; en cualquier otro caso requeriria reentrenamiento.
 - Demostracion de riesgos de metricas enganosas: el valor de balanced accuracy reportado (1) es un caso de estudio util para explicar en clase por que hay que auditar splits, fugas de informacion y calculo de metricas antes de creer un resultado perfecto.
 - Prototipado en CPU sin GPU: cualquier escenario donde no haya acelerador disponible y se necesite un clasificador binario tabular rapido de entrenar y de inferir, siempre que el esquema de datos encaje.
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Alternativa | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad | Comentario |
 |---|---|---|---|---|---|---|
-| `eandujar/classical_automl_notebook` (LightGBM via AutoGluon) | Clasificador tabular binario | no disponible | no aplica | no disponible | Publico en HuggingFace, 0 descargas | Artefacto educativo, sin metrica reproducible |
+| `eandujar/classical_automl_notebook` (LightGBM via AutoGluon) | Clasificador tabular binario | no disponible | no aplica | no disponible | Publico en Hugging Face, 0 descargas | Artefacto educativo, sin metrica reproducible |
 | XGBoost como learner de AutoGluon | Clasificador tabular | no disponible | no aplica | Apache 2.0 tipicamente (verificar version) | Amplia, via AutoGluon o el propio paquete | Alternativa directa; requiere reentrenar sobre el mismo dataset |
 | CatBoost | Clasificador tabular con soporte nativo de categoricas | no disponible | no aplica | Apache 2.0 tipicamente (verificar version) | Amplia | Suele destacar con variables categoricas, frecuentes en datasets de este tipo |
 | Red neuronal tabular (por ejemplo, un MLP sencillo) | Red neuronal feed-forward | no disponible | no aplica | Depende de la implementacion | Amplia | Alternativa mas costosa de ajustar y habitualmente no superior a GBDT en tabular de bajo tamano |
@@ -94,7 +94,7 @@ No se dispone de numeros de rendimiento comparativos publicados para este artefa
 
 ## Limitaciones y advertencias
 
-- No es un modelo de lenguaje y no puede realizar ninguna tarea de generacion, razonamiento o conversacion, pese a estar alojado en HuggingFace.
+- No es un modelo de lenguaje y no puede realizar ninguna tarea de generacion, razonamiento o conversacion, pese a estar alojado en Hugging Face.
 - El rendimiento declarado de balanced accuracy igual a 1 es implausible en un problema real y sugiere fuga de informacion, particion incorrecta o calculo erroneo de la metrica. No debe citarse como resultado valido sin auditoria.
 - No se declara licencia, lo que impide determinar si su uso comercial esta permitido. En ausencia de licencia explicita, la situacion juridica es indeterminada.
 - El repositorio reporta 0.0 GB de tamano; es posible que los artefactos del modelo no esten efectivamente disponibles y que la carga falle. Conviene comprobar el contenido del repositorio antes de depender de el.
@@ -107,7 +107,7 @@ No se dispone de numeros de rendimiento comparativos publicados para este artefa
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/eandujar/classical_automl_notebook
+- Repositorio del modelo en Hugging Face: https://huggingface.co/eandujar/classical_automl_notebook
 - Dataset de entrenamiento: https://huggingface.co/datasets/pakiino/2026-24679-pokemon-151-tabular-hw1
 - Documentacion oficial de AutoGluon (framework indicado en `library_name`): https://auto.gluon.ai
 - Repositorio de LightGBM (algoritmo del mejor modelo reportado): https://github.com/microsoft/LightGBM

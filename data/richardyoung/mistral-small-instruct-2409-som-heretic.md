@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Small-Instruct-2409-SOM-heretic es un ajuste fino (finetune) del modelo mistralai/Mistral-Small-Instruct-2409, publicado por el usuario richardyoung en HuggingFace. Se trata de una variante "heretic" o "abliterated", es decir, una version del modelo base a la que se le han aplicado tecnicas de ablacion de direcciones de rechazo (refusal directions) para reducir el comportamiento de censura y negativa a responder, manteniendo el resto de capacidades del modelo original. El modelo base Mistral-Small-Instruct-2409 es un transformer denso de aproximadamente 22.200 millones de parametros desarrollado por Mistral AI, con una ventana de contexto de 128.000 tokens segun la documentacion publica de Mistral AI.
+Mistral-Small-Instruct-2409-SOM-heretic es un ajuste fino (finetune) del modelo mistralai/Mistral-Small-Instruct-2409, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "heretic" o "abliterated", es decir, una version del modelo base a la que se le han aplicado tecnicas de ablacion de direcciones de rechazo (refusal directions) para reducir el comportamiento de censura y negativa a responder, manteniendo el resto de capacidades del modelo original. El modelo base Mistral-Small-Instruct-2409 es un transformer denso de aproximadamente 22.200 millones de parametros desarrollado por Mistral AI, con una ventana de contexto de 128.000 tokens segun la documentacion publica de Mistral AI.
 
 El modelo hereda la arquitectura y el entrenamiento del Mistral Small Instruct 2409 original, incluyendo su soporte multilingue para diez idiomas (ingles, frances, aleman, espanol, italiano, portugues, chino, japones, ruso y coreano) y su capacidad de function calling. La modificacion "heretic" se centra exclusivamente en el comportamiento de alineacion, no en la arquitectura ni en la tokenizacion, por lo que las caracteristicas tecnicas del modelo base se conservan intactas.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mistral-Small-Instruct-2409-SOM-heretic | 22,2 B | no disponible (base: 128k) | MRL (solo investigacion) | HuggingFace, safetensors |
-| mistralai/Mistral-Small-Instruct-2409 (base) | 22,2 B | 128k (segun Mistral AI) | MRL | HuggingFace, safetensors |
-| Otras variantes "abliterated" de Mistral Small | no disponible | no disponible | variable | HuggingFace |
+| Mistral-Small-Instruct-2409-SOM-heretic | 22,2 B | no disponible (base: 128k) | MRL (solo investigacion) | Hugging Face, safetensors |
+| mistralai/Mistral-Small-Instruct-2409 (base) | 22,2 B | 128k (segun Mistral AI) | MRL | Hugging Face, safetensors |
+| Otras variantes "abliterated" de Mistral Small | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-SOM-heretic
+- Hugging Face: https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-SOM-heretic
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-Instruct-2409
 - Licencia MRL-0.1: https://mistral.ai/licenses/MRL-0.1.md
 - Contacto de licencias Mistral AI: https://mistral.ai/contact/

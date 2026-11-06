@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArchiveStudio/Kolibri-1 (FP8) | 78,10B | 3,46B | 262.144 nativos / 1.048.576 validados | Apache 2.0 | HuggingFace, pesos safetensors FP8 |
-| Aleph-Alpha/Kolibri-1-BF16 (base) | 78,10B | 3,46B | 262.144 nativos / 1.048.576 validados | Apache 2.0 | HuggingFace, pesos bfloat16 |
-| Mixtral 8x7B (referencia MoE abierta) | 46,7B | 12,9B | 32.768 | Apache 2.0 | HuggingFace, multiples formatos |
+| ArchiveStudio/Kolibri-1 (FP8) | 78,10B | 3,46B | 262.144 nativos / 1.048.576 validados | Apache 2.0 | Hugging Face, pesos safetensors FP8 |
+| Aleph-Alpha/Kolibri-1-BF16 (base) | 78,10B | 3,46B | 262.144 nativos / 1.048.576 validados | Apache 2.0 | Hugging Face, pesos bfloat16 |
+| Mixtral 8x7B (referencia MoE abierta) | 46,7B | 12,9B | 32.768 | Apache 2.0 | Hugging Face, multiples formatos |
 | Otros modelos MoE abiertos de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con Mixtral 8x7B se incluye como referencia de la categoria MoE abierta, pero conviene notar que las cifras de rendimiento de ambos modelos no son directamente comparables sin benchmarks publicados. Respecto al modelo base en BF16, la version FP8 de ArchiveStudio reduce a la mitad la huella de memoria a costa de una posible perdida de precision numerica no cuantificada en la informacion disponible. No se dispone de datos de benchmarks para establecer una comparacion cuantitativa con alternativas.
@@ -89,7 +89,7 @@ La comparacion con Mixtral 8x7B se incluye como referencia de la categoria MoE a
 - No se han publicado benchmarks que permitan validar de forma independiente el rendimiento declarado.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/ArchiveStudio/Kolibri-1
+- Repositorio Hugging Face: https://huggingface.co/ArchiveStudio/Kolibri-1
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - Informe tecnico (PDF): https://aleph-alpha.com/downloads/tech-report.pdf
 - Blog tecnico del fabricante: https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/

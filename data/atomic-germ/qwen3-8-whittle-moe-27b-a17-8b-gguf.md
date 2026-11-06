@@ -96,7 +96,7 @@ El autor indica que el objetivo de 4-grama repetido era 0,05 y que 0,141 sigue p
 | Modelo | Parametros | Parametros activos | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Whittle MoE 27B A18B v2.2.1 | 26,9 B | ~17,8 B | no disponible | MoE post hoc sobre Qwen3.8-27B, atención híbrida 3:1 | Apache-2.0 | Pesos safetensors con la corrección v2.2.1; GGUF con la gate v2.2 |
-| Qwen/Qwen3.8-27B (padre) | ~27 B (FFN densa de anchura 17408, hidden 5120, 64 capas) | no aplica (denso) | no disponible | Transformer híbrido denso con atención 3:1 gated deltanet / full attention | no disponible en la información proporcionada | HuggingFace |
+| Qwen/Qwen3.8-27B (padre) | ~27 B (FFN densa de anchura 17408, hidden 5120, 64 capas) | no aplica (denso) | no disponible | Transformer híbrido denso con atención 3:1 gated deltanet / full attention | no disponible en la información proporcionada | Hugging Face |
 | Otras MoE de tamaño y tarea comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo ni con modelos comparables (los resultados obtenidos corresponden a anuncios de vehículos de la marca Kyburz), por lo que no se dispone de datos de terceros para ampliar esta comparativa.
@@ -118,7 +118,7 @@ La búsqueda web realizada no devolvió ningún resultado relacionado con el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atomic-Germ/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Atomic-Germ/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Donaciones al autor (financiación del proyecto): https://ko-fi.com/davida81328
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

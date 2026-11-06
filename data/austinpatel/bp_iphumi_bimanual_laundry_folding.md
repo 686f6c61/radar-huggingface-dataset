@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`austinpatel/bp_iphumi_bimanual_laundry_folding` es un modelo de política de manipulación robótica bimanual publicado en HuggingFace por el usuario austinpatel, asociado al paper "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457) y al repositorio de código `real-stanford/behavior_prompting`. No se trata de un modelo de lenguaje: es un artefacto de aprendizaje por imitación orientado a controlar un robot bimanual iPhUMI en la tarea concreta de doblar ropa (laundry folding), probablemente con pesos de política visual-motora.
+`austinpatel/bp_iphumi_bimanual_laundry_folding` es un modelo de política de manipulación robótica bimanual publicado en Hugging Face por el usuario austinpatel, asociado al paper "What Enables In-Context Behavior Prompting for Manipulation?" (arXiv 2606.30457) y al repositorio de código `real-stanford/behavior_prompting`. No se trata de un modelo de lenguaje: es un artefacto de aprendizaje por imitación orientado a controlar un robot bimanual iPhUMI en la tarea concreta de doblar ropa (laundry folding), probablemente con pesos de política visual-motora.
 
 El modelo se enmarca en la línea de investigación de *behavior prompting* o *in-context behavior prompting*, una técnica que busca condicionar la política de un robot mediante demostraciones o "prompts de comportamiento" en lugar de reentrenar por tarea. El repositorio pesa 12,9 GB, lo que sugiere pesos en precisión completa o mixta para una red de tamaño medio-grande, posiblemente con un codificador visual tipo ViT o similar. No se especifica pipeline, idiomas ni parámetros en la información disponible.
 
-La relevancia actual del modelo es doble: por un lado, ejemplifica la tendencia a publicar políticas robóticas entrenadas como artefactos reutilizables en HuggingFace; por otro, el paper asociado aborda una pregunta central del campo, qué hace posible el condicionamiento en contexto para manipulación. La licencia MIT facilita su reutilización, aunque la información pública sobre arquitectura y datos es muy limitada.
+La relevancia actual del modelo es doble: por un lado, ejemplifica la tendencia a publicar políticas robóticas entrenadas como artefactos reutilizables en Hugging Face; por otro, el paper asociado aborda una pregunta central del campo, qué hace posible el condicionamiento en contexto para manipulación. La licencia MIT facilita su reutilización, aunque la información pública sobre arquitectura y datos es muy limitada.
 
 ## Especificaciones tecnicas
 
@@ -73,6 +73,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/austinpatel/bp_iphumi_bimanual_laundry_folding
+- Hugging Face: https://huggingface.co/austinpatel/bp_iphumi_bimanual_laundry_folding
 - Paper: https://huggingface.co/papers/2606.30457
 - Código: https://github.com/real-stanford/behavior_prompting

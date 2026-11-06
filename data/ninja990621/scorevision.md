@@ -70,9 +70,9 @@ La regla de una caja por objeto se evaluó sobre las 962 imágenes generadas: me
 
 | Modelo | Arquitectura | Entrada | Licencia | Contexto/Clases | Disponibilidad |
 |---|---|---|---|---|---|
-| ScoreVision (este) | YOLO11n ONNX, box-only | 640x640 | AGPL-3.0 | 5 clases de suciedad | HuggingFace (0 descargas) |
-| manako/Detect-room-dirtiness-detection | YOLO11n-seg | no disponible | AGPL-3.0 | 5 clases (baseline) | HuggingFace |
-| Targaryen101/dirtiness_01 | YOLO11n-seg fine-tune | no disponible | AGPL-3.0 | 5 clases | HuggingFace |
+| ScoreVision (este) | YOLO11n ONNX, box-only | 640x640 | AGPL-3.0 | 5 clases de suciedad | Hugging Face (0 descargas) |
+| manako/Detect-room-dirtiness-detection | YOLO11n-seg | no disponible | AGPL-3.0 | 5 clases (baseline) | Hugging Face |
+| Targaryen101/dirtiness_01 | YOLO11n-seg fine-tune | no disponible | AGPL-3.0 | 5 clases | Hugging Face |
 
 Los tres modelos comparten origen y licencia; ScoreVision se distingue por el ensemble WiSE-FT, la cabeza box-only y el post-procesado de una caja por objeto. No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada.
 
@@ -89,6 +89,6 @@ Los tres modelos comparten origen y licencia; ScoreVision se distingue por el en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ninja990621/ScoreVision
+- Modelo en Hugging Face: https://huggingface.co/ninja990621/ScoreVision
 - Baseline Manako: https://huggingface.co/manako/Detect-room-dirtiness-detection
 - Fine-tune Targaryen101: https://huggingface.co/Targaryen101/dirtiness_01

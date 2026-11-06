@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shrutimerch/act-goat-v3-combined-20k` es una política de imitación (policy) para robótica basada en el método Action Chunking with Transformers (ACT), publicada en HuggingFace Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visuomotor entrenado para una única tarea —"Pick up the goat and place it in the bucket"— sobre un brazo `so_follower` (familia SO-100) con dos cámaras, una en la muñeca y otra exocéntrica. El modelo tiene 51.668.614 parámetros y un repositorio de 0,2 GB.
+`shrutimerch/act-goat-v3-combined-20k` es una política de imitación (policy) para robótica basada en el método Action Chunking with Transformers (ACT), publicada en Hugging Face Hub mediante la librería LeRobot. No es un modelo de lenguaje: es un controlador visuomotor entrenado para una única tarea —"Pick up the goat and place it in the bucket"— sobre un brazo `so_follower` (familia SO-100) con dos cámaras, una en la muñeca y otra exocéntrica. El modelo tiene 51.668.614 parámetros y un repositorio de 0,2 GB.
 
 El problema que resuelve es el de generar comandos motores de 6 dimensiones directamente a partir de píxeles y del estado de las articulaciones, sin planificación explícita ni modelado del entorno. ACT predice fragmentos (chunks) de acciones futuras en lugar de un único paso, lo que reduce el error de acumulación y produce movimientos más suaves. Es relevante porque ejemplifica el flujo completo de LeRobot: recogida de datos por teleoperación, entrenamiento con un comando y despliegue con otro, todo con licencia Apache 2.0.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Enfoque | Parámetros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-goat-v3-combined-20k (este) | ACT, imitación con chunks de acción | 51.668.614 | No disponible | Apache 2.0 | HuggingFace Hub, 0 descargas |
-| shrutimerch/act-goat-v3-20k | ACT, misma tarea, dataset sin combinar | No disponible | No disponible | No disponible | HuggingFace Hub |
+| act-goat-v3-combined-20k (este) | ACT, imitación con chunks de acción | 51.668.614 | No disponible | Apache 2.0 | Hugging Face Hub, 0 descargas |
+| shrutimerch/act-goat-v3-20k | ACT, misma tarea, dataset sin combinar | No disponible | No disponible | No disponible | Hugging Face Hub |
 | Diffusion Policy | Políticas de difusión para manipulación | No disponible | No disponible | No disponible | Referencia académica |
-| SmolVLA | VLM ligero para robótica (familia SmolVLM) | No disponible en la información proporcionada | No disponible | No disponible | HuggingFace Hub |
+| SmolVLA | VLM ligero para robótica (familia SmolVLM) | No disponible en la información proporcionada | No disponible | No disponible | Hugging Face Hub |
 
 No se dispone de cifras verificables de rendimiento para ninguna de las alternativas dentro de la información proporcionada, por lo que la comparación cuantitativa queda pendiente de una evaluación propia sobre el mismo dataset y robot.
 
@@ -92,7 +92,7 @@ No se dispone de cifras verificables de rendimiento para ninguna de las alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shrutimerch/act-goat-v3-combined-20k
+- Modelo en Hugging Face: https://huggingface.co/shrutimerch/act-goat-v3-combined-20k
 - Checkpoint hermano: https://huggingface.co/shrutimerch/act-goat-v3-20k
 - Perfil del autor: https://huggingface.co/shrutimerch
 - Dataset de entrenamiento: https://huggingface.co/datasets/shrutimerch/goat-pickup-v3-combined

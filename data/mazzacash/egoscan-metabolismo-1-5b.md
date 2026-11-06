@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mazzacash/egoscan-metabolismo-1.5b` es un modelo publicado en HuggingFace por el usuario mazzacash bajo licencia Apache 2.0. El nombre sugiere una posible relacion con el analisis de metabolismo o composicion corporal, aunque no existe informacion tecnica en la model card que permita confirmarlo. El repositorio no contiene descripcion alguna del modelo mas alla de la licencia, no se han publicado pesos, arquitectura ni documentacion tecnica.
+El modelo `mazzacash/egoscan-metabolismo-1.5b` es un modelo publicado en Hugging Face por el usuario mazzacash bajo licencia Apache 2.0. El nombre sugiere una posible relacion con el analisis de metabolismo o composicion corporal, aunque no existe informacion tecnica en la model card que permita confirmarlo. El repositorio no contiene descripcion alguna del modelo mas alla de la licencia, no se han publicado pesos, arquitectura ni documentacion tecnica.
 
 Este modelo es relevante unicamente como caso de estudio de publicaciones sin documentacion: registra cero descargas y cero likes, y su model card esta vacia. Cualquier evaluacion tecnica seria imposible sin informacion adicional sobre arquitectura, pesos o tareas soportadas.
 
@@ -54,6 +54,6 @@ No disponible. No existe informacion suficiente para identificar la categoria de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mazzacash/egoscan-metabolismo-1.5b
+- Repositorio Hugging Face: https://huggingface.co/mazzacash/egoscan-metabolismo-1.5b
 
 No se han encontrado papers, blogs, repositorios de codigo o demos asociados a este modelo.

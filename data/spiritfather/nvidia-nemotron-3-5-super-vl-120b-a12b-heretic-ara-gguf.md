@@ -101,10 +101,10 @@ Los rechazos se calculan con la regla de palabras clave de Heretic sobre 100 pro
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (GGUF, heretic-ara) | 120,7 B | 12 B | no disponible | openmdw-1.1 | GGUF (BF16 a Q4_0), 71,8-241,5 GB | HuggingFace, 83 descargas |
-| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 (original) | 120,7 B | 12 B | no disponible | no disponible en la información | BF16 (safetensors, presumiblemente) | HuggingFace, oficial de NVIDIA |
-| spiritfather/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-heretic-ara (checkpoint fuente) | 120,7 B | 12 B | no disponible | openmdw-1.1 | safetensors/BF16 | HuggingFace |
-| spiritfather/...-heretic-ara-i1-GGUF (imatrix) | 120,7 B | 12 B | no disponible | openmdw-1.1 | GGUF con imatrix | HuggingFace |
+| Este modelo (GGUF, heretic-ara) | 120,7 B | 12 B | no disponible | openmdw-1.1 | GGUF (BF16 a Q4_0), 71,8-241,5 GB | Hugging Face, 83 descargas |
+| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 (original) | 120,7 B | 12 B | no disponible | no disponible en la información | BF16 (safetensors, presumiblemente) | Hugging Face, oficial de NVIDIA |
+| spiritfather/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-heretic-ara (checkpoint fuente) | 120,7 B | 12 B | no disponible | openmdw-1.1 | safetensors/BF16 | Hugging Face |
+| spiritfather/...-heretic-ara-i1-GGUF (imatrix) | 120,7 B | 12 B | no disponible | openmdw-1.1 | GGUF con imatrix | Hugging Face |
 
 Las tres alternativas comparten exactamente la misma arquitectura y el mismo recuento de parámetros; las diferencias reales están en el alignment (el original rechaza 100/100 frente a 6/100 de esta variante), en la cuantización (BF16 de referencia frente a Q8_0-Q4_0) y en el método de calibración (cuants estáticas de este repositorio frente a las imatrix del repositorio i1). No se dispone de información sobre otros modelos comparables de la misma categoría (híbridos Mamba-Transformer multimodales con MoE latente): no disponible.
 

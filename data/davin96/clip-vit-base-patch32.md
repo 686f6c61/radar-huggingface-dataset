@@ -70,7 +70,7 @@ No se dispone de información comparativa en el repositorio. Sin embargo, CLIP V
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davin96/clip-vit-base-patch32
+- Repositorio Hugging Face: https://huggingface.co/davin96/clip-vit-base-patch32
 - Model card original de OpenAI: https://github.com/openai/CLIP/blob/main/model-card.md
 - Paper CLIP: https://arxiv.org/abs/2103.00020
 - Blog post de OpenAI: https://openai.com/blog/clip/

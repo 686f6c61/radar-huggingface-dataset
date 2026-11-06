@@ -39,7 +39,7 @@ La elección de cuantizar solo el MLP se justifica porque este componente concen
 - Evaluación de técnicas de compresión: el repositorio sirve como referencia para estudiar el impacto de la cuantización selectiva en modelos de 4B, con scripts reproducibles y análisis de resultados.
 - Generación de texto en aplicaciones donde la precisión no es crítica: por ejemplo, borradores de contenido, resúmenes informales o asistentes de chat básicos.
 - Investigación académica sobre cuantización de precisión mixta: el enfoque de cuantizar solo el MLP puede replicarse en otros modelos para comparar trade-offs entre tamaño y rendimiento.
-- Pruebas de compatibilidad con frameworks de inferencia: el checkpoint GPTQ puede cargarse con `gptqmodel` o ExLlama, mientras que la versión bf16 es compatible con cualquier stack estándar de HuggingFace.
+- Pruebas de compatibilidad con frameworks de inferencia: el checkpoint GPTQ puede cargarse con `gptqmodel` o ExLlama, mientras que la versión bf16 es compatible con cualquier stack estándar de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -57,7 +57,7 @@ La caída de precisión es de 15 puntos en GPQA y 10 en MMLU-Pro, pero el modelo
 - Tamaño del checkpoint comprimido: ~3,74 GiB, lo que sugiere que cabe en GPUs con al menos 4 GB de VRAM si se usa el formato GPTQ directamente.
 - La versión dequantizada a bf16 ocuparía aproximadamente 8 GB (para ~4B parámetros en bf16), requiriendo GPUs con 10-12 GB de VRAM para inferencia cómoda.
 - GPUs recomendadas: RTX 3060 (12 GB), RTX 4090, A100, H100, dependiendo del formato elegido y la velocidad deseada.
-- Opciones de despliegue: `gptqmodel` (con kernels Triton o ExLlama), `llama.cpp` (si se convierte a GGUF), HuggingFace Transformers con la versión bf16.
+- Opciones de despliegue: `gptqmodel` (con kernels Triton o ExLlama), `llama.cpp` (si se convierte a GGUF), Hugging Face Transformers con la versión bf16.
 - No se proporcionan datos de latencia o throughput específicos.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: rkeshaw007/24B0908-Week03-Track1-40-Submission01](https://huggingface.co/rkeshaw007/24B0908-Week03-Track1-40-Submission01)
-- [HuggingFace: rkeshaw007/24B0908-Week02-Track1-40-Submission01](https://huggingface.co/rkeshaw007/24B0908-Week02-Track1-40-Submission01) (referencia de una submission anterior con pruning)
+- [Hugging Face: rkeshaw007/24B0908-Week03-Track1-40-Submission01](https://huggingface.co/rkeshaw007/24B0908-Week03-Track1-40-Submission01)
+- [Hugging Face: rkeshaw007/24B0908-Week02-Track1-40-Submission01](https://huggingface.co/rkeshaw007/24B0908-Week02-Track1-40-Submission01) (referencia de una submission anterior con pruning)
 - [Modelo base: Qwen/Qwen3-4B-Instruct-2507](https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507) (no verificado directamente, pero mencionado en la model card)

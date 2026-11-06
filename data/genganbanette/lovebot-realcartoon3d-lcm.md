@@ -6,7 +6,7 @@ lovebot-realcartoon3d-lcm es un empaquetado de inferencia, no un modelo entrenad
 
 El interés técnico del repositorio está en el formato de despliegue: pesos ONNX en fp16 troceados en piezas de 20 MiB, con un `export.json` que lista los tamaños y los SHA-256 de cada componente, y un UNet modificado que acepta una entrada extra `image_embeds` con forma [lote, 1, 257, 1280] para inyectar los rasgos de una imagen de referencia (fuerza 0.7; con un tensor de ceros el adaptador no tiene efecto). El codificador de texto acepta `encoder_hidden_states` de longitud dinámica, de modo que los prompts de más de 77 tokens se procesan por trozos.
 
-Es relevante ahora por dos motivos: demuestra un flujo completo de difusión en el cliente (sin servidor, sin enviar prompts ni imágenes a terceros) y sirve como ejemplo de fusión de LoRA más adaptador de imagen en un grafo ONNX exportado para WebGPU. El repositorio ocupa 2,2 GB, no declara pipeline en HuggingFace, acumula 0 descargas y 0 likes en el momento de la consulta, y está marcado con la etiqueta `not-for-all-audiences`.
+Es relevante ahora por dos motivos: demuestra un flujo completo de difusión en el cliente (sin servidor, sin enviar prompts ni imágenes a terceros) y sirve como ejemplo de fusión de LoRA más adaptador de imagen en un grafo ONNX exportado para WebGPU. El repositorio ocupa 2,2 GB, no declara pipeline en Hugging Face, acumula 0 descargas y 0 likes en el momento de la consulta, y está marcado con la etiqueta `not-for-all-audiences`.
 
 ## Especificaciones tecnicas
 
@@ -70,14 +70,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | RealCartoon3D v18 (Civitai 94809) | SD 1.5 afinado | safetensors fp16 | Permite derivados y redistribucion segun la model card | Modelo de origen de este repositorio; sin LCM ni IP-Adapter |
 | latent-consistency/lcm-lora-sdv1-5 | LoRA de destilacion LCM | safetensors | Open RAIL++-M | Componente fundido en el UNet para reducir pasos de muestreo |
 | h94/IP-Adapter (variante plus SD 1.5) | Adaptador de imagen | safetensors | Apache-2.0 | Componente integrado con fuerza 0.7; aporta la entrada `image_embeds` |
-| Lykon/dreamshaper-8 | SD 1.5 afinado | safetensors | CreativeML Open RAIL-M | Figura como `base_model` en los metadatos de HuggingFace, en discrepancia con la model card, que cita RealCartoon3D v18 |
+| Lykon/dreamshaper-8 | SD 1.5 afinado | safetensors | CreativeML Open RAIL-M | Figura como `base_model` en los metadatos de Hugging Face, en discrepancia con la model card, que cita RealCartoon3D v18 |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - Contenido para adultos: la etiqueta `not-for-all-audiences` indica que el modelo puede generar material no apto para todo publico. Requiere filtrado y control de acceso si se integra en un producto.
-- Discrepancia en el modelo base: los metadatos de HuggingFace apuntan a Lykon/dreamshaper-8, mientras que la model card describe RealCartoon3D v18. Conviene verificar que componente se ha cargado realmente antes de usarlo en produccion.
+- Discrepancia en el modelo base: los metadatos de Hugging Face apuntan a Lykon/dreamshaper-8, mientras que la model card describe RealCartoon3D v18. Conviene verificar que componente se ha cargado realmente antes de usarlo en produccion.
 - Licencias acumuladas: el uso queda sujeto simultaneamente a CreativeML Open RAIL-M (modelo base), Open RAIL++-M (LCM-LoRA) y Apache-2.0 (IP-Adapter). Open RAIL-M incluye restricciones de uso por caso de aplicacion que deben revisarse antes de un despliegue comercial.
 - Sin validacion externa: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado ni resultados de benchmarks. No hay evidencia publica de calidad ni de estabilidad.
 - Artefactos de generacion: como todo modelo de difusion de la familia SD 1.5, puede producir anatomia incorrecta, manos deformes, texto ilegible y perspectivas incoherentes. La resolucion nativa de SD 1.5 tambien limita el detalle en salidas de alta resolucion.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genganbanette/lovebot-realcartoon3d-lcm
+- Modelo en Hugging Face: https://huggingface.co/genganbanette/lovebot-realcartoon3d-lcm
 - Modelo base citado en los metadatos: https://huggingface.co/Lykon/dreamshaper-8
 - RealCartoon3D v18 en Civitai: https://civitai.com/models/94809
 - LCM-LoRA SD 1.5: https://huggingface.co/latent-consistency/lcm-lora-sdv1-5

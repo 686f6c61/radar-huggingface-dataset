@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ldm-with-subd-m5-14-4pct` es un checkpoint de un modelo de difusión latente (LDM, Latent Diffusion Model) especializado en la generación de ritmos de percusión en formato `.derbake`, un formato de cinco líneas asociado al instrumento derbake. Lo desarrolla el usuario Appodoom y se publica en HuggingFace bajo la librería `transformers` con código personalizado (`trust_remote_code=True`). No es un modelo de lenguaje generalista: es un modelo de dominio muy específico, orientado a la síntesis y predicción de patrones rítmicos.
+El modelo `ldm-with-subd-m5-14-4pct` es un checkpoint de un modelo de difusión latente (LDM, Latent Diffusion Model) especializado en la generación de ritmos de percusión en formato `.derbake`, un formato de cinco líneas asociado al instrumento derbake. Lo desarrolla el usuario Appodoom y se publica en Hugging Face bajo la librería `transformers` con código personalizado (`trust_remote_code=True`). No es un modelo de lenguaje generalista: es un modelo de dominio muy específico, orientado a la síntesis y predicción de patrones rítmicos.
 
 El modelo forma parte de un experimento de capacidad denominado "LDM capacity experiment", en el que este checkpoint corresponde al nivel M5 con un 14,4 % del tamaño de entrenamiento. Emplea 10 capas, anchura de embedding de 384, 4 cabezas de atención y una longitud de contexto de 6.656 tokens. Cuenta con 11.858.388 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos muy pequeños, aptos para inferencia en CPU o GPU de gama baja.
 
@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ldm-with-subd-m5-14-4pct | 11,86 M | 6.656 tokens | Generación rítmica `.derbake` | no disponible | HuggingFace |
+| ldm-with-subd-m5-14-4pct | 11,86 M | 6.656 tokens | Generación rítmica `.derbake` | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Appodoom/ldm-with-subd-m5-14-4pct
+- Modelo en Hugging Face: https://huggingface.co/Appodoom/ldm-with-subd-m5-14-4pct
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

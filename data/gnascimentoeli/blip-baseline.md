@@ -23,7 +23,7 @@ La relevancia de este repositorio es principalmente educativa y de desarrollo: p
 
 ## Arquitectura y entrenamiento
 
-La arquitectura declarada es BLIP en configuración "large", con atención estándar, fusión bilineal, activación GELU y normalización ScaleNorm. Se trata de una implementación personalizada en PyTorch que no es compatible con las APIs de carga automática de HuggingFace sin un adaptador explícito.
+La arquitectura declarada es BLIP en configuración "large", con atención estándar, fusión bilineal, activación GELU y normalización ScaleNorm. Se trata de una implementación personalizada en PyTorch que no es compatible con las APIs de carga automática de Hugging Face sin un adaptador explícito.
 
 El repositorio incluye un `config.json` con la configuración de arquitectura y un `training_args.json` con la receta experimental por defecto (optimizador adafactor con programación de calentamiento constante). Sin embargo, estos son valores iniciales del script, no evidencia de una ejecución completada. El checkpoint `model.safetensors` es un checkpoint de inicialización para pruebas de humo; no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 
@@ -40,8 +40,8 @@ El repositorio incluye un `config.json` con la configuración de arquitectura y 
 - Revisión de código: el repositorio permite inspeccionar una implementación personalizada de BLIP en PyTorch, útil para desarrolladores que quieran entender la arquitectura interna o adaptarla a sus necesidades.
 - Pruebas de humo (smoke tests): el checkpoint de inicialización es válido para verificar que el pipeline de carga, forward pass y entrenamiento funciona sin errores antes de lanzar experimentos completos.
 - Experimentos controlados a pequeña escala: la configuración "large" puede servir como punto de partida para entrenar un modelo desde cero con datos propios, siguiendo la guía de evaluación del autor (conjunto de validación específico, tres semillas, línea base de capacidad comparable).
-- Educación y formación: estudiantes e investigadores pueden estudiar la implementación de BLIP sin depender de las APIs de alto nivel de HuggingFace, entendiendo los componentes internos (atención, fusión, normalización).
-- Desarrollo de adaptadores de integración: como la implementación no es compatible con las APIs automáticas de HuggingFace, los desarrolladores pueden crear adaptadores explícitos para conectar este código con pipelines existentes.
+- Educación y formación: estudiantes e investigadores pueden estudiar la implementación de BLIP sin depender de las APIs de alto nivel de Hugging Face, entendiendo los componentes internos (atención, fusión, normalización).
+- Desarrollo de adaptadores de integración: como la implementación no es compatible con las APIs automáticas de Hugging Face, los desarrolladores pueden crear adaptadores explícitos para conectar este código con pipelines existentes.
 - Investigación de arquitecturas: el `config.json` permite experimentar con variaciones de la arquitectura BLIP (atención, fusión, activación, normalización) en un entorno controlado.
 
 ## Benchmarks y rendimiento
@@ -70,15 +70,15 @@ La comparativa con los modelos BLIP oficiales de Salesforce es la referencia nat
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 - No se puede usar en producción para ninguna tarea real de generación o comprensión de lenguaje.
 - No hay resultados de benchmarks ni evidencia de rendimiento en ninguna tarea.
-- La implementación requiere un adaptador explícito para ser usada con las APIs de HuggingFace; no es compatible con carga automática.
+- La implementación requiere un adaptador explícito para ser usada con las APIs de Hugging Face; no es compatible con carga automática.
 - La licencia bsd-3-clause permite uso comercial, pero los términos de los datos fuente externos deben revisarse por separado si se usan con datasets externos.
 - El modelo tiene solo 16.576 parámetros, lo que indica que es un artefacto de prueba, no un modelo real.
 - Riesgo de confusión con los modelos BLIP oficiales de Salesforce: este repositorio no es un lanzamiento oficial ni un modelo preentrenado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gnascimentoeli/blip-baseline
-- Documentación de BLIP en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/blip
+- Repositorio Hugging Face: https://huggingface.co/gnascimentoeli/blip-baseline
+- Documentación de BLIP en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/blip
 - Modelo de captioning BLIP base (gizmo-ai): https://huggingface.co/gizmo-ai/blip-image-captioning-base
 - Repositorio oficial de BLIP en GitHub (Salesforce): https://github.com/salesforce/BLIP/tree/main/models
 - Artículo sobre BLIP en GeeksforGeeks: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

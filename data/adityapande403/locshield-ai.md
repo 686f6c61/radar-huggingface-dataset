@@ -30,7 +30,7 @@ Sobre el entrenamiento, la model card indica únicamente que se empleó un datas
 ## Capacidades
 
 - Detección de entidades nombradas tipo PII en cuatro categorías: `PERSON` (nombres en inglés, hindi y Hinglish), `ADDRESS` (direcciones postales, puntos de referencia, localizaciones con código PIN), `ORGANIZATION` (empresas, bancos, instituciones) y `LOCATION` (ciudades, estados, países).
-- Clasificación de tokens con esquema BIO y agregación de entidades compatible con el pipeline `ner` de HuggingFace Transformers.
+- Clasificación de tokens con esquema BIO y agregación de entidades compatible con el pipeline `ner` de Hugging Face Transformers.
 - Funcionamiento completamente offline, sin envío de datos a servicios externos.
 - Inferencia optimizada en CPU mediante ONNX con cuantización dinámica INT8 (compresión del 74,9 % respecto a FP32).
 - Integración con el motor LocalShield, que añade validadores deterministas para identificadores indios: Aadhaar (algoritmo Verhoeff), tarjetas (Luhn), PAN, IFSC, entre otros, y funcionalidad completa de redacción de texto.
@@ -68,7 +68,7 @@ Advertencia importante: estas métricas proceden de la model card del autor y no
 - VRAM / memoria: al ser un modelo de 134,7 M de parámetros, la versión FP32 ocupa ~514 MB y la cuantizada INT8 ~129 MB; no requiere GPU. En CPU, la huella de memoria reportada es de ~140 MB RSS con ONNX INT8.
 - GPU recomendadas: no necesarias; cualquier GPU moderna lo ejecutaría con holgura si se desea (incluso una GTX 1650 sería suficiente), pero el modelo está diseñado para inferencia en CPU.
 - Consumer GPUs: no aplica; el objetivo declarado es ejecución offline en CPU, incluidas máquinas modestas.
-- Opciones de despliegue: HuggingFace Transformers (pipeline `ner`), ONNX Runtime (FP32 e INT8), y el motor LocalShield (`localshield.LocalShield.from_pretrained`), que añade validadores deterministas y redacción. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI (llama.cpp no es aplicable al no haber pesos GGUF).
+- Opciones de despliegue: Hugging Face Transformers (pipeline `ner`), ONNX Runtime (FP32 e INT8), y el motor LocalShield (`localshield.LocalShield.from_pretrained`), que añade validadores deterministas y redacción. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI (llama.cpp no es aplicable al no haber pesos GGUF).
 - Latencia y throughput: P50 de 2,27 ms y 428,3 peticiones/segundo en CPU con ONNX INT8, según datos del autor.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Nota: los datos de Presidio y GLiNER son de conocimiento general; no hay una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adityapande403/LocShield-AI
+- Modelo en Hugging Face: https://huggingface.co/Adityapande403/LocShield-AI
 - Repositorio del ecosistema LocalShield AI (GitHub): https://github.com/adityapande403/Loc-shield-AI
 - Modelo base: https://huggingface.co/distilbert-base-multilingual-cased
 - Paper, demo y otros enlaces: no disponibles

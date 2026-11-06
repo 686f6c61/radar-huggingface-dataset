@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rajat-vajpayee/cosmos2_8b_g1_pickplace` es un artefacto publicado en HuggingFace por el usuario rajat-vajpayee. Por la nomenclatura del identificador, todo apunta a que se trata de un modelo derivado de la familia Cosmos-2 en su variante de 8.000 millones de parametros, adaptado para una tarea de tipo pick-and-place asociada al robot humanoide Unitree G1 (el sufijo "g1" coincide con esa plataforma). No obstante, la ficha de HuggingFace no proporciona pipeline, licencia, idiomas ni descripcion tecnica, por lo que estas inferencias no estan confirmadas por el autor.
+El repositorio `rajat-vajpayee/cosmos2_8b_g1_pickplace` es un artefacto publicado en Hugging Face por el usuario rajat-vajpayee. Por la nomenclatura del identificador, todo apunta a que se trata de un modelo derivado de la familia Cosmos-2 en su variante de 8.000 millones de parametros, adaptado para una tarea de tipo pick-and-place asociada al robot humanoide Unitree G1 (el sufijo "g1" coincide con esa plataforma). No obstante, la ficha de Hugging Face no proporciona pipeline, licencia, idiomas ni descripcion tecnica, por lo que estas inferencias no estan confirmadas por el autor.
 
 El repositorio tiene un tamano de 377,4 GB, lo que es notablemente superior al peso esperado de un transformer denso de 8B en safetensors (en torno a 16-32 GB segun precision). Este exceso de tamano sugiere la presencia de checkpoints multiples, estados de optimizador, artefactos de entrenamiento o assets auxiliares, aunque no es posible confirmarlo sin inspeccionar el contenido.
 
@@ -70,7 +70,7 @@ No hay datos suficientes para establecer una comparativa fiable. Como referencia
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rajat-vajpayee/cosmos2_8b_g1_pickplace | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| rajat-vajpayee/cosmos2_8b_g1_pickplace | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | NVIDIA Cosmos (familia) | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No hay datos suficientes para establecer una comparativa fiable. Como referencia
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/rajat-vajpayee/cosmos2_8b_g1_pickplace
+- Hugging Face del modelo: https://huggingface.co/rajat-vajpayee/cosmos2_8b_g1_pickplace
 - Resultados de busqueda web obtenidos (no relacionados con el modelo):
   - https://www.rajat.net/
   - https://www.rajat.net/voyage-en-france/

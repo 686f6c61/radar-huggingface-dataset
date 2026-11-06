@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tamaño | Precisión | Modificación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMaxAI/MiniMax-H3 (oficial) | no disponible | no especificada | Original | MiniMax H3 Community License | HuggingFace |
-| Comfy-Org/MiniMax-H3 (repack INT8 ConvRot) | 34 038 894 550 bytes | INT8 ConvRot | Repack para ComfyUI | MiniMax H3 Community License | HuggingFace |
-| Wesley1234/minimax_h3_ref2va_patchin_hf102 | 34 038 894 550 bytes | INT8 ConvRot | Ganancia 1,02 en alta frecuencia de `video_patch_proj.weight` | MiniMax H3 Community License | HuggingFace |
+| MiniMaxAI/MiniMax-H3 (oficial) | no disponible | no especificada | Original | MiniMax H3 Community License | Hugging Face |
+| Comfy-Org/MiniMax-H3 (repack INT8 ConvRot) | 34 038 894 550 bytes | INT8 ConvRot | Repack para ComfyUI | MiniMax H3 Community License | Hugging Face |
+| Wesley1234/minimax_h3_ref2va_patchin_hf102 | 34 038 894 550 bytes | INT8 ConvRot | Ganancia 1,02 en alta frecuencia de `video_patch_proj.weight` | MiniMax H3 Community License | Hugging Face |
 
 No hay datos de rendimiento comparativo entre estos modelos. El checkpoint de Wesley1234 es una derivación directa del repack de Comfy-Org, con la única diferencia del tensor modificado.
 
@@ -69,16 +69,16 @@ No hay datos de rendimiento comparativo entre estos modelos. El checkpoint de We
 
 - Es un modelo experimental y no oficial; el autor advierte que no es una solución probada para eliminar el efecto "oil/wax" y que el checkpoint original sigue siendo la opción recomendada.
 - No se ha realizado ningún entrenamiento, por lo que no puede corregir defectos que el modelo base no genere; la modificación solo altera la proyección de entrada, no la capacidad generativa subyacente.
-- La licencia MiniMax H3 Community License Agreement impone restricciones territoriales (territorios excluidos) y condiciones de redistribución obligatorias. Antes de publicar o redistribuir este derivado, hay que incluir el `LICENSE` oficial, el aviso de modificación y el `NOTICE`, y verificar que el método de distribución y la audiencia están autorizados. Un repositorio público en HuggingFace puede ser accesible desde territorios excluidos; un gate de repositorio no equivale necesariamente a control de acceso geográfico.
+- La licencia MiniMax H3 Community License Agreement impone restricciones territoriales (territorios excluidos) y condiciones de redistribución obligatorias. Antes de publicar o redistribuir este derivado, hay que incluir el `LICENSE` oficial, el aviso de modificación y el `NOTICE`, y verificar que el método de distribución y la audiencia están autorizados. Un repositorio público en Hugging Face puede ser accesible desde territorios excluidos; un gate de repositorio no equivale necesariamente a control de acceso geográfico.
 - No hay datos sobre sesgos, alucinaciones o limitaciones de contexto, ya que no es un modelo de lenguaje y no se han realizado evaluaciones de sesgo.
 - El uso en producción no está recomendado sin una validación exhaustiva, dado su carácter experimental y la falta de benchmarks.
 - El modelo solo soporta inglés y chino en cuanto a idiomas de prompt; no se garantiza el funcionamiento con otros idiomas.
 
 ## Enlaces
 
-- [HuggingFace: Wesley1234/minimax_h3_ref2va_patchin_hf102](https://huggingface.co/Wesley1234/minimax_h3_ref2va_patchin_hf102)
-- [HuggingFace: Comfy-Org/MiniMax-H3 (repack fuente)](https://huggingface.co/Comfy-Org/MiniMax-H3)
-- [HuggingFace: MiniMaxAI/MiniMax-H3 (modelo base)](https://huggingface.co/MiniMaxAI/MiniMax-H3)
+- [Hugging Face: Wesley1234/minimax_h3_ref2va_patchin_hf102](https://huggingface.co/Wesley1234/minimax_h3_ref2va_patchin_hf102)
+- [Hugging Face: Comfy-Org/MiniMax-H3 (repack fuente)](https://huggingface.co/Comfy-Org/MiniMax-H3)
+- [Hugging Face: MiniMaxAI/MiniMax-H3 (modelo base)](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [GitHub: MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [GitHub: MiniMax-H3/Ref2VA](https://github.com/MiniMax-AI/MiniMax-H3/tree/main/Ref2VA)
 - [ComfyUI workflow template: video_minimax_h3_r2v.json](https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_minimax_h3_r2v.json)

@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/volt-b-joint.scannet20.kadir-yilmaz
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/volt-b-joint.scannet20.kadir-yilmaz
 - Repositorio original: https://huggingface.co/KadirYilmaz/Volt
 - Paper: https://arxiv.org/abs/2604.19609
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

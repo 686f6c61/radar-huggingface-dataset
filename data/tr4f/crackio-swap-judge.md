@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Crackio swap judge (TR4F) | Adaptador LoRA sobre base de 2B | No disponible | LFM Open License v1.0 | HuggingFace (TR4F/crackio-swap-judge) |
+| Crackio swap judge (TR4F) | Adaptador LoRA sobre base de 2B | No disponible | LFM Open License v1.0 | Hugging Face (TR4F/crackio-swap-judge) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: TR4F/crackio-swap-judge](https://huggingface.co/TR4F/crackio-swap-judge)
+- [Hugging Face: TR4F/crackio-swap-judge](https://huggingface.co/TR4F/crackio-swap-judge)
 - [Modelo base: LiquidAI/LFM3-VL-2B](https://huggingface.co/LiquidAI/LFM3-VL-2B)
 - [Repositorio de Crackio](https://github.com/RafalOfficial/Crackio)

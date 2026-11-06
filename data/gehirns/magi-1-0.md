@@ -104,7 +104,7 @@ Lectura del autor: si prima la precisión, Q4_K_M iguala al BF16 y supera a magi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GEHIRNS/magi-1.0
+- Modelo en Hugging Face: https://huggingface.co/GEHIRNS/magi-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Coleccion MAGI 1.0: https://huggingface.co/collections/GEHIRNS/magi-10-6adaeeaefd1d999584a8a12d

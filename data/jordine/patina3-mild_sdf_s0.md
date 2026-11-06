@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-mild_sdf_s0` es un adaptador LoRA de solo pesos (adapter) que se basa en el modelo `meta-llama/Llama-3.1-8B`. Fue publicado por el usuario Jordine en HuggingFace y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) para su carga y uso. El repositorio tiene un tamaño de 0,7 GB, lo que es consistente con un adaptador de bajo rango y no con los pesos completos del modelo base.
+El modelo `Jordine/patina3-mild_sdf_s0` es un adaptador LoRA de solo pesos (adapter) que se basa en el modelo `meta-llama/Llama-3.1-8B`. Fue publicado por el usuario Jordine en Hugging Face y utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) para su carga y uso. El repositorio tiene un tamaño de 0,7 GB, lo que es consistente con un adaptador de bajo rango y no con los pesos completos del modelo base.
 
 La model card proporcionada está prácticamente vacía: no incluye información sobre el proceso de entrenamiento, los datos utilizados, el propósito del ajuste fino, ni las capacidades específicas del adaptador. Esto limita significativamente la evaluación de su rendimiento y sus casos de uso recomendados. El modelo se presenta con la etiqueta `text-generation`, lo que indica que su función principal es la generación de texto conversacional.
 
@@ -51,12 +51,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: el adaptador LoRA requiere muy poca VRAM adicional (menos de 1 GB). Sin embargo, el modelo base Llama 3.1 8B en FP16 requiere aproximadamente 16 GB de VRAM para inferencia.
 - GPU recomendadas: para el modelo base en FP16 se necesita una GPU con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40 GB, H100). Con cuantización a 4 bits, podría caber en GPUs con 8 GB de VRAM (como RTX 3070 o RTX 4060).
 - Consumer GPU: sí, el modelo base cabe en GPUs de consumo con cuantización (GGUF, AWQ, GPTQ). El adaptador en sí no es un problema.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, Transformers con PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, Transformers con PEFT.
 - Latencia y throughput: no disponible. Dependerá del hardware, la cuantización y la longitud de secuencia.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa. Al ser un adaptador LoRA sin documentación sobre su entrenamiento ni métricas, no es posible compararlo con otros adaptadores o modelos de la misma categoría. Se recomienda al usuario evaluar el adaptador directamente sobre el modelo base y compararlo con otros adaptadores públicos de Llama 3.1 8B disponibles en HuggingFace.
+No se dispone de información suficiente para establecer una comparativa. Al ser un adaptador LoRA sin documentación sobre su entrenamiento ni métricas, no es posible compararlo con otros adaptadores o modelos de la misma categoría. Se recomienda al usuario evaluar el adaptador directamente sobre el modelo base y compararlo con otros adaptadores públicos de Llama 3.1 8B disponibles en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa. Al ser
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina3-mild_sdf_s0
+- Hugging Face: https://huggingface.co/Jordine/patina3-mild_sdf_s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Paper de LoRA (referenciado en la model card): https://arxiv.org/abs/1910.09700

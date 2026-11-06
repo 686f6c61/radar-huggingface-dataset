@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CharacterSheet es una colección de cuatro LoRAs de edición de imagen orientadas a convertir una imagen de referencia de un personaje en una hoja de referencia multi-vista (character sheet) limpia y coherente. No es un modelo autónomo: cada archivo `.safetensors` funciona como adaptador de bajo rango sobre un modelo base de difusión concreto, FLUX.2 Klein 9B o Krea 2, y se ejecuta dentro de ComfyUI con los flujos de trabajo JSON incluidos en el repositorio. La colección la publica el usuario de HuggingFace `ChoLuckyHexSexySuccubusQueen135Age`, con licencia Civitai.
+CharacterSheet es una colección de cuatro LoRAs de edición de imagen orientadas a convertir una imagen de referencia de un personaje en una hoja de referencia multi-vista (character sheet) limpia y coherente. No es un modelo autónomo: cada archivo `.safetensors` funciona como adaptador de bajo rango sobre un modelo base de difusión concreto, FLUX.2 Klein 9B o Krea 2, y se ejecuta dentro de ComfyUI con los flujos de trabajo JSON incluidos en el repositorio. La colección la publica el usuario de Hugging Face `ChoLuckyHexSexySuccubusQueen135Age`, con licencia Civitai.
 
 La propuesta resuelve un problema muy concreto en pipelines de diseño de personajes: obtener vistas frontales, laterales y traseras (y, en la variante QuadView, un primer plano de la cara) manteniendo identidad, ropa, proporciones y aspecto general a partir de una única imagen de entrada. El entrenamiento se hizo con aproximadamente 300 ejemplos de hojas de personaje, con foco en figuras humanas, aunque el autor indica que personajes anime, cartoon, animales y criaturas pueden funcionar con menor consistencia.
 
@@ -91,6 +91,6 @@ Como referencia de categoría, los adaptadores equivalentes de la comunidad para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/CharacterSheet
+- Hugging Face: https://huggingface.co/ChoLuckyHexSexySuccubusQueen135Age/CharacterSheet
 - Licencia Civitai / listado del autor: https://civitai.red/models/2764727/tripleview
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web disponible.

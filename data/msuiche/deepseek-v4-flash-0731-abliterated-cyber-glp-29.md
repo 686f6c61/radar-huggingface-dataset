@@ -4,7 +4,7 @@
 
 DeepSeek-V4-Flash-0731-abliterated-cyber-GLP-29 es una variante modificada del modelo base DeepSeek-V4-Flash-0731, desarrollada por el usuario msuiche. Su objetivo es eliminar el comportamiento de rechazo (refusal) del modelo original mediante una técnica de abliteración basada en control de vectores (control vector) y representación engineering. En lugar de un reentrenamiento completo, se aplica un vector de control que suprime el "capability gating" (bloqueo de capacidades) del modelo, permitiendo que responda a peticiones que el modelo base rechazaría, aunque mantiene el "target-authorization gating" (autorización de objetivos), es decir, no elimina la autorización para acciones específicas.
 
-El modelo base DeepSeek-V4-Flash-0731 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) disperso con 304 mil millones de parámetros, diseñado para generación de texto, codificación, razonamiento, contexto largo y flujos de trabajo agénticos. Esta variante se distribuye en formato GGUF y tiene acceso restringido (gated) en HuggingFace. Es relevante para investigadores y desarrolladores interesados en estudiar el comportamiento de modelos sin restricciones de rechazo, así como para aplicaciones que requieren respuestas sin censura temática.
+El modelo base DeepSeek-V4-Flash-0731 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) disperso con 304 mil millones de parámetros, diseñado para generación de texto, codificación, razonamiento, contexto largo y flujos de trabajo agénticos. Esta variante se distribuye en formato GGUF y tiene acceso restringido (gated) en Hugging Face. Es relevante para investigadores y desarrolladores interesados en estudiar el comportamiento de modelos sin restricciones de rechazo, así como para aplicaciones que requieren respuestas sin censura temática.
 
 El repositorio presenta un tamaño de 0.0 GB y reporta 118.784 parámetros en safetensors, lo que sugiere que no contiene los pesos completos del modelo, sino probablemente el control vector o metadatos de configuración. La variante se apoya en el control vector "cyber-abliterated" publicado por el mismo autor, que se aplica sobre el modelo base mediante herramientas como vLLM (con overlay DSpark) o llama.cpp (con un fork específico).
 
@@ -17,7 +17,7 @@ El repositorio presenta un tamaño de 0.0 GB y reporta 118.784 parámetros en sa
 | Parametros activos | no disponible (el modelo base es MoE, pero no se especifica el número de parámetros activos) |
 | Longitud de contexto | no disponible (el modelo base soporta contexto largo, pero sin cifra exacta en la información proporcionada) |
 | Tipos de cuantizacion | GGUF (según etiquetas), sin detalle de niveles (Q4, Q5, etc.) |
-| Idiomas soportados | en (inglés) según HuggingFace; el modelo base probablemente soporta más idiomas, pero no se confirma en esta variante |
+| Idiomas soportados | en (inglés) según Hugging Face; el modelo base probablemente soporta más idiomas, pero no se confirma en esta variante |
 | Licencia | deepseek (licencia de DeepSeek, con restricciones; consultar términos) |
 | Formato de pesos | GGUF (según etiquetas); safetensors reportado con 118.784 parámetros, posiblemente del control vector |
 
@@ -70,8 +70,8 @@ Estos resultados no son directamente aplicables a la variante abliterada, ya que
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 (base) | 304B MoE | Contexto largo (sin cifra) | deepseek | Acceso abierto en HuggingFace |
-| DeepSeek-V4-Flash-0731-abliterated-cyber-GLP-29 | 304B MoE (base) + control vector | no disponible | deepseek | Acceso restringido (gated) en HuggingFace |
+| DeepSeek-V4-Flash-0731 (base) | 304B MoE | Contexto largo (sin cifra) | deepseek | Acceso abierto en Hugging Face |
+| DeepSeek-V4-Flash-0731-abliterated-cyber-GLP-29 | 304B MoE (base) + control vector | no disponible | deepseek | Acceso restringido (gated) en Hugging Face |
 | Otras variantes abliteradas (p. ej., de Llama o Qwen) | variable | variable | variable | variable |
 
 No se dispone de datos comparativos de rendimiento entre esta variante y otras abliteradas, ya que no se han publicado benchmarks específicos. La comparativa se limita al modelo base y a la disponibilidad general de alternativas.
@@ -83,12 +83,12 @@ No se dispone de datos comparativos de rendimiento entre esta variante y otras a
 - La licencia "deepseek" impone restricciones de uso comercial; se debe consultar el texto completo de la licencia antes de cualquier despliegue en producción.
 - El repositorio tiene acceso restringido (gated) y un tamaño de 0.0 GB, lo que sugiere que no contiene los pesos completos del modelo. Es posible que solo incluya el control vector o metadatos, por lo que se necesitaría descargar el modelo base por separado y aplicar el control vector.
 - No se han publicado benchmarks específicos de la variante, por lo que el rendimiento real es incierto.
-- El soporte de idiomas se limita a inglés según la información de HuggingFace; el rendimiento en otros idiomas no está verificado.
+- El soporte de idiomas se limita a inglés según la información de Hugging Face; el rendimiento en otros idiomas no está verificado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msuiche/DeepSeek-V4-Flash-0731-abliterated-cyber-GLP-29
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Modelo en Hugging Face: https://huggingface.co/msuiche/DeepSeek-V4-Flash-0731-abliterated-cyber-GLP-29
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Model card en NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731/modelcard
 - Documentación en DeepWiki: https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731
 - Control vector asociado: https://huggingface.co/msuiche/DeepSeek-V4-Flash-0731-cyber-abliterated-cvec

@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32, 0,25 GB en FP16 y 0,125 GB en INT8 (estimaciones basadas en el tamaño de los pesos).
 - GPU recomendadas: cualquier GPU con 2 GB de VRAM o superior (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4090). También es viable su ejecución en CPU.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe en cualquier GPU consumer moderna.
-- Opciones de despliegue: se puede cargar con la librería Transformers de HuggingFace; también es posible convertirlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporciona un modelo convertido.
+- Opciones de despliegue: se puede cargar con la librería Transformers de Hugging Face; también es posible convertirlo a GGUF para usarlo con llama.cpp u Ollama, aunque no se proporciona un modelo convertido.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,5 +69,5 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/343Nitinai/thai-qa-lab-model
+- Modelo en Hugging Face: https://huggingface.co/343Nitinai/thai-qa-lab-model
 - Paper de GPT-2 (referencia arquitectura): https://arxiv.org/abs/1910.09700

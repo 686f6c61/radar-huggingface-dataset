@@ -78,7 +78,7 @@ La comparativa muestra que este adaptador se posiciona como una opción de fine-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meggs413/tumblr1
+- Hugging Face: https://huggingface.co/meggs413/tumblr1
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-14b-unsloth-bnb-4bit
 - Qwen2.5 (modelo original): https://huggingface.co/Qwen/Qwen2.5-14B

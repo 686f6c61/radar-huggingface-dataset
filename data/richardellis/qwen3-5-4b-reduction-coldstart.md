@@ -79,8 +79,8 @@ No se dispone de datos verificables de otros modelos de reduccion de problemas e
 
 | Modelo | Parametros | Contexto | Tasa de resolucion posterior (n=8) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RichardEllis/qwen3.5-4b-reduction-coldstart | 4,2 B | No disponible (entrenado a ≤16.384 tokens) | 0,449 | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (baseline) | No disponible en la informacion proporcionada | No disponible | 0,532 | Apache 2.0 | HuggingFace (modelo base) |
+| RichardEllis/qwen3.5-4b-reduction-coldstart | 4,2 B | No disponible (entrenado a ≤16.384 tokens) | 0,449 | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (baseline) | No disponible en la informacion proporcionada | No disponible | 0,532 | Apache 2.0 | Hugging Face (modelo base) |
 
 Otras alternativas de la misma categoria (modelos pequenos orientados a razonamiento matematico o a generacion de datos para RL): no disponible.
 
@@ -100,6 +100,6 @@ Otras alternativas de la misma categoria (modelos pequenos orientados a razonami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RichardEllis/qwen3.5-4b-reduction-coldstart
+- Modelo en Hugging Face: https://huggingface.co/RichardEllis/qwen3.5-4b-reduction-coldstart
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos correspondian a contenido no relacionado (imagenes de la catedral de Ratisbona). No se dispone de papers, blogs, repositorios ni demos adicionales.

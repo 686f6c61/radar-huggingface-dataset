@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-MAB-Opus5-SFT es un ajuste fino supervisado (SFT) de Qwen3.8-27B, desarrollado por el usuario ZACK0225 y publicado en HuggingFace. El modelo parte de la arquitectura multimodal Qwen3_5ForConditionalGeneration del modelo base y ha sido entrenado sobre trayectorias generadas por Claude Opus 5 en el entorno MAB-Bench, un banco de tareas orientado al estudio de exploración, explotación y transferencia a tareas externas. Su propósito es servir como artefacto de investigación para analizar cómo el SFT sobre trayectorias de un profesor fuerte afecta al comportamiento agéntico del modelo.
+Qwen3.8-27B-MAB-Opus5-SFT es un ajuste fino supervisado (SFT) de Qwen3.8-27B, desarrollado por el usuario ZACK0225 y publicado en Hugging Face. El modelo parte de la arquitectura multimodal Qwen3_5ForConditionalGeneration del modelo base y ha sido entrenado sobre trayectorias generadas por Claude Opus 5 en el entorno MAB-Bench, un banco de tareas orientado al estudio de exploración, explotación y transferencia a tareas externas. Su propósito es servir como artefacto de investigación para analizar cómo el SFT sobre trayectorias de un profesor fuerte afecta al comportamiento agéntico del modelo.
 
 El ajuste se realizó sobre los parámetros de texto en BF16, manteniendo congelado el módulo visual. El checkpoint publicado corresponde a la época 2, paso 282, con un total de 156 tareas de entrenamiento repartidas en 23 mecanismos, 2.241 turnos de asistente y 407.975 tokens supervisados. El contexto máximo de entrenamiento fue de 16.384 tokens.
 
@@ -70,8 +70,8 @@ La pérdida es la media de las entropías cruzadas medias por turno de asistente
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-MAB-Opus5-SFT | 3.054.832 (safetensors reportado) | 16.384 (entrenamiento) | apache-2.0 | HuggingFace, 18 descargas |
-| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3.8-27B-MAB-Opus5-SFT | 3.054.832 (safetensors reportado) | 16.384 (entrenamiento) | apache-2.0 | Hugging Face, 18 descargas |
+| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZACK0225/Qwen3.8-27B-MAB-Opus5-SFT
+- Hugging Face: https://huggingface.co/ZACK0225/Qwen3.8-27B-MAB-Opus5-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Repositorio de archivos de entrenamiento: `training_recipe.json`, `deepspeed-zero3.json`, `SHA256SUMS`, `NOTICE` (incluidos en el repo de HuggingFace)
+- Repositorio de archivos de entrenamiento: `training_recipe.json`, `deepspeed-zero3.json`, `SHA256SUMS`, `NOTICE` (incluidos en el repo de Hugging Face)
 - Paper, blog o demo de MAB-Bench: no disponible en la información proporcionada.

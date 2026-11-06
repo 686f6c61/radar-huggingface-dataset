@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ddvd233/profbench9b_specgap_ship_websearch_global_step_120` es un artefacto de investigacion publicado en HuggingFace por el usuario `ddvd233`. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-9B`, con 9.409.813.744 parametros totales, obtenido mediante el framework `verl` con entrenamiento FSDP y volcado posterior a pesos bf16 en formato safetensors. Forma parte del experimento denominado RRIMed (recompensas auto-evolutivas), en su rama de validacion retenida sobre ProfBench (ARM 20).
+El modelo `ddvd233/profbench9b_specgap_ship_websearch_global_step_120` es un artefacto de investigacion publicado en Hugging Face por el usuario `ddvd233`. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-9B`, con 9.409.813.744 parametros totales, obtenido mediante el framework `verl` con entrenamiento FSDP y volcado posterior a pesos bf16 en formato safetensors. Forma parte del experimento denominado RRIMed (recompensas auto-evolutivas), en su rama de validacion retenida sobre ProfBench (ARM 20).
 
 El problema que aborda es la mejora del razonamiento medico evaluado mediante rubricas, con una configuracion en la que el modelo solo dispone de busqueda web, sin base de conocimiento de dominio. En la evaluacion reportada por el autor alcanza una precision de rubrica de 0.392 sobre 40 tareas, frente a 0.356 del modelo sin entrenar, y un mejor resultado de 0.405 en el paso 170 que no se conservo por rotacion de checkpoints.
 
@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Licencia | Estado / disponibilidad | Rendimiento reportado |
 |---|---|---|---|---|---|
-| ddvd233/profbench9b_specgap_ship_websearch_global_step_120 | 9,41 B | no disponible | apache-2.0 | Publicado en HuggingFace, 0 descargas, 0 likes | ProfBench rubrica 0.392 |
+| ddvd233/profbench9b_specgap_ship_websearch_global_step_120 | 9,41 B | no disponible | apache-2.0 | Publicado en Hugging Face, 0 descargas, 0 likes | ProfBench rubrica 0.392 |
 | Qwen/Qwen3.5-9B (modelo base sin ajustar) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Modelo base publico | No disponible (la linea base de 0.356 corresponde al modelo sin entrenar en este experimento) |
 | Otros ajustes medicos por RL sobre modelos de ~9 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/profbench9b_specgap_ship_websearch_global_step_120
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/profbench9b_specgap_ship_websearch_global_step_120
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio o demo del autor: no disponible
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre el experimento RRIMed; los enlaces recuperados correspondian a contenido no relacionado (codigos de un videojuego) y se descartan por no ser pertinentes.

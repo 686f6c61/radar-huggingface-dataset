@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo **LTX-PinkCherry-LoRA-r768** es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `maximsobolev275`. El repositorio tiene un tamaño de 69 GB, lo que sugiere que se trata de un adaptador de gran volumen, posiblemente aplicado a un modelo base de generación de imágenes o vídeo, aunque no se dispone de información oficial que lo confirme. El tag `region:us` podría indicar una orientación geográfica o cultural, pero no hay detalles adicionales.
+El modelo **LTX-PinkCherry-LoRA-r768** es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `maximsobolev275`. El repositorio tiene un tamaño de 69 GB, lo que sugiere que se trata de un adaptador de gran volumen, posiblemente aplicado a un modelo base de generación de imágenes o vídeo, aunque no se dispone de información oficial que lo confirme. El tag `region:us` podría indicar una orientación geográfica o cultural, pero no hay detalles adicionales.
 
-En el momento de la consulta, el modelo no presenta descargas registradas, aunque cuenta con 5 likes, lo que indica cierto interés por parte de la comunidad. Sin embargo, la ficha de HuggingFace no incluye pipeline, licencia, idiomas ni especificaciones técnicas, por lo que la información disponible es extremadamente limitada. Esta ficha se basa únicamente en los datos públicos del repositorio y no puede verificar ni complementar las características del modelo con fuentes externas.
+En el momento de la consulta, el modelo no presenta descargas registradas, aunque cuenta con 5 likes, lo que indica cierto interés por parte de la comunidad. Sin embargo, la ficha de Hugging Face no incluye pipeline, licencia, idiomas ni especificaciones técnicas, por lo que la información disponible es extremadamente limitada. Esta ficha se basa únicamente en los datos públicos del repositorio y no puede verificar ni complementar las características del modelo con fuentes externas.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ No se dispone de información verificada sobre las capacidades del modelo. Al tr
 
 ## Casos de uso
 
-No se pueden proporcionar casos de uso concretos sin información sobre el modelo base y la tarea del adaptador. La falta de especificaciones impide recomendar escenarios prácticos. Se recomienda consultar directamente el repositorio de HuggingFace o contactar con el autor para obtener detalles adicionales.
+No se pueden proporcionar casos de uso concretos sin información sobre el modelo base y la tarea del adaptador. La falta de especificaciones impide recomendar escenarios prácticos. Se recomienda consultar directamente el repositorio de Hugging Face o contactar con el autor para obtener detalles adicionales.
 
 ## Benchmarks y rendimiento
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/maximsobolev275/LTX-PinkCherry-LoRA-r768](https://huggingface.co/maximsobolev275/LTX-PinkCherry-LoRA-r768)
+- Repositorio en Hugging Face: [https://huggingface.co/maximsobolev275/LTX-PinkCherry-LoRA-r768](https://huggingface.co/maximsobolev275/LTX-PinkCherry-LoRA-r768)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) en la información proporcionada.

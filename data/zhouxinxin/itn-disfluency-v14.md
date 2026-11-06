@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar con otros modelos especí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhouxinxin/itn-disfluency-v14
+- Repositorio Hugging Face: https://huggingface.co/zhouxinxin/itn-disfluency-v14
 - No se han encontrado papers, blogs, demos o repositorios de código asociados en la información proporcionada.

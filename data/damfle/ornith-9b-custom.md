@@ -4,7 +4,7 @@
 
 Ornith-1.0-9B es un modelo de lenguaje denso de aproximadamente 9 000 millones de parámetros, desarrollado por el equipo de ornith-ai como parte de la familia Ornith 1.0, orientada a tareas de codificación agéntica (agentic coding). El modelo se distribuye bajo licencia MIT (aunque el repositorio concreto `damfle/ornith-9b-custom` declara licencia ISC) y está diseñado para ejecutarse en una única GPU de 80 GB, con una ventana de contexto de 256 000 tokens (262 144 exactamente). Su relevancia actual radica en ofrecer una alternativa abierta y auto-escalable (self-scaffolding) para flujos de trabajo de programación asistida por agentes, con una interfaz compatible con OpenAI.
 
-La arquitectura es un transformer denso, sin mezcla de expertos, lo que simplifica su despliegue en comparación con los otros miembros de la familia (35B y 397B, que sí son MoE). El modelo está pensado para servir como backend de herramientas de codificación agéntica, soportando contextos largos y razonamiento multi-paso. Aunque la model card original en HuggingFace es prácticamente vacía, la documentación oficial del proyecto Ornith 1.0 proporciona detalles sobre su uso, requisitos de hardware y comparativas.
+La arquitectura es un transformer denso, sin mezcla de expertos, lo que simplifica su despliegue en comparación con los otros miembros de la familia (35B y 397B, que sí son MoE). El modelo está pensado para servir como backend de herramientas de codificación agéntica, soportando contextos largos y razonamiento multi-paso. Aunque la model card original en Hugging Face es prácticamente vacía, la documentación oficial del proyecto Ornith 1.0 proporciona detalles sobre su uso, requisitos de hardware y comparativas.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ Ornith-1.0-9B se diferencia por su contexto de 256K tokens, muy superior a los 1
 ## Limitaciones y advertencias
 
 - La model card original de `damfle/ornith-9b-custom` no proporciona información sobre sesgos, alucinaciones o limitaciones de idioma. Se recomienda evaluar el modelo en el dominio de uso antes de desplegarlo en producción.
-- La licencia declarada en el repositorio de HuggingFace es ISC, mientras que la documentación oficial de Ornith 1.0 indica MIT. Esta discrepancia debe aclararse con el autor antes de un uso comercial.
+- La licencia declarada en el repositorio de Hugging Face es ISC, mientras que la documentación oficial de Ornith 1.0 indica MIT. Esta discrepancia debe aclararse con el autor antes de un uso comercial.
 - No se han publicado detalles sobre el dataset de entrenamiento, por lo que se desconocen posibles sesgos de contenido o cobertura idiomática.
 - El modelo está optimizado para tareas de codificación; su rendimiento en otros dominios (texto general, matemáticas avanzadas, razonamiento no técnico) no está documentado.
 - La ventana de contexto de 256K tokens puede degradar el rendimiento si se usa al máximo, y el coste computacional de atención crece cuadráticamente con la longitud de entrada.
@@ -75,7 +75,7 @@ Ornith-1.0-9B se diferencia por su contexto de 256K tokens, muy superior a los 1
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/damfle/ornith-9b-custom
+- Repositorio Hugging Face del modelo: https://huggingface.co/damfle/ornith-9b-custom
 - Sitio oficial de Ornith 1.0: https://ornith.site/
 - Guía alternativa de Ornith AI: https://ornith.online/
 - Repositorio GitHub de Ornith-1: https://github.com/ornith-ai/Ornith-1

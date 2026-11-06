@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dexter2k1/qwen2.5-0.5b-derivadas` es un modelo derivado publicado en HuggingFace por el usuario Dexter2k1 a partir, presumiblemente por el nombre y por el recuento de parametros, de la arquitectura Qwen2.5-0.5B. El repositorio contiene pesos en safetensors y versiones cuantizadas en GGUF, con un total real de 494.032.768 parametros y un tamano de repositorio de 1,5 GB. La licencia declarada es MIT y las etiquetas del repositorio indican compatibilidad con endpoints y uso conversacional.
+`Dexter2k1/qwen2.5-0.5b-derivadas` es un modelo derivado publicado en Hugging Face por el usuario Dexter2k1 a partir, presumiblemente por el nombre y por el recuento de parametros, de la arquitectura Qwen2.5-0.5B. El repositorio contiene pesos en safetensors y versiones cuantizadas en GGUF, con un total real de 494.032.768 parametros y un tamano de repositorio de 1,5 GB. La licencia declarada es MIT y las etiquetas del repositorio indican compatibilidad con endpoints y uso conversacional.
 
 La relevancia de esta ficha es limitada pero informativa: se trata de un modelo de muy bajo coste computacional, orientado a tareas ligeras de generacion y clasificacion, que puede ejecutarse en CPU o en cualquier GPU de consumo. El interes practico esta en su posible uso como componente auxiliar (enrutado de consultas, etiquetado, filtrado) dentro de pipelines mayores donde no se justifica invocar un modelo de mayor tamano.
 
@@ -30,7 +30,7 @@ No se dispone de informacion sobre el numero de tokens de ajuste, la composicion
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta orientado a dialogos de uno o varios turnos, aunque no se especifica el formato de plantilla utilizado.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse mediante la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face.
 - Inferencia en CPU: con menos de 500 millones de parametros, es viable ejecutarlo sin GPU dedicada.
 - Capacidades de razonamiento, codigo, matematicas, vision, audio o tool calling: no disponible, no se documenta ninguna.
 - Modo de pensamiento (thinking mode): no disponible.
@@ -62,17 +62,17 @@ El repositorio no incluye evaluaciones de MMLU, HumanEval, GSM8K, MT-Bench ni de
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100 o H100. No requiere aceleradores de gama alta.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo de los ultimos ocho anos e incluso en iGPU con memoria compartida suficiente.
 - CPU: viable en exclusiva gracias al formato GGUF con llama.cpp u Ollama.
-- Opciones de despliegue: llama.cpp, Ollama, vLLM, HuggingFace TGI, Transformers con PyTorch, y Inference Endpoints por la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp, Ollama, vLLM, Hugging Face TGI, Transformers con PyTorch, y Inference Endpoints por la etiqueta `endpoints_compatible`.
 - Latencia y throughput: no disponibles. A titulo orientativo, un modelo de este tamano en una GPU moderna suele superar los cientos de tokens por segundo en generacion individual, pero no hay mediciones publicadas para esta derivada concreta.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| Dexter2k1/qwen2.5-0.5b-derivadas | 494.032.768 | No disponible | MIT | safetensors, GGUF | HuggingFace, 0 descargas |
-| Qwen2.5-0.5B (base) | 494.032.768 | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | safetensors, GGUF | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B | 1.543.000.000 aprox. | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | safetensors, GGUF | HuggingFace |
-| SmolLM2-360M | 361.000.000 aprox. | 8.192 tokens | Apache-2.0 | safetensors, GGUF | HuggingFace |
+| Dexter2k1/qwen2.5-0.5b-derivadas | 494.032.768 | No disponible | MIT | safetensors, GGUF | Hugging Face, 0 descargas |
+| Qwen2.5-0.5B (base) | 494.032.768 | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | safetensors, GGUF | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B | 1.543.000.000 aprox. | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | safetensors, GGUF | Hugging Face |
+| SmolLM2-360M | 361.000.000 aprox. | 8.192 tokens | Apache-2.0 | safetensors, GGUF | Hugging Face |
 
 Nota: los datos de las filas correspondientes a otros modelos provienen de sus model cards publicas; la fila de esta derivada refleja unicamente lo documentado en su repositorio. No hay benchmarks que permitan comparar calidad entre ellos.
 
@@ -90,7 +90,7 @@ Nota: los datos de las filas correspondientes a otros modelos provienen de sus m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dexter2k1/qwen2.5-0.5b-derivadas
+- Repositorio en Hugging Face: https://huggingface.co/Dexter2k1/qwen2.5-0.5b-derivadas
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Blog oficial de la serie Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

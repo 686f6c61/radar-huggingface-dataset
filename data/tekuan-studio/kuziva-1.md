@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kuziva 1 | 29,5 M | 256 | Chat con notas externas, offline en CPU | MIT (código); pesos sujetos a licencias de datasets | HuggingFace (tekuan-studio/kuziva-1) |
+| Kuziva 1 | 29,5 M | 256 | Chat con notas externas, offline en CPU | MIT (código); pesos sujetos a licencias de datasets | Hugging Face (tekuan-studio/kuziva-1) |
 | Modelos comparables de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de escala similar en la documentación proporcionada.
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables de escala similar en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tekuan-studio/kuziva-1
+- Modelo en Hugging Face: https://huggingface.co/tekuan-studio/kuziva-1
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset SODA: https://huggingface.co/datasets/allenai/soda
 - Piper (síntesis de voz opcional): https://github.com/rhasspy/piper

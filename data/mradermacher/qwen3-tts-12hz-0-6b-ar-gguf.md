@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen3-TTS-12Hz-0.6B-ar, GGUF) | 0,6 B | no disponible | GGUF, multiples cuantizaciones + mmproj | apache-2.0 | HuggingFace |
-| MahmoudIbrahim/Qwen3-TTS-12Hz-0.6B-ar (modelo base) | 0,6 B | no disponible | safetensors para transformers | no confirmada en la informacion disponible (el repositorio de cuantizacion declara apache-2.0) | HuggingFace |
+| Este repositorio (Qwen3-TTS-12Hz-0.6B-ar, GGUF) | 0,6 B | no disponible | GGUF, multiples cuantizaciones + mmproj | apache-2.0 | Hugging Face |
+| MahmoudIbrahim/Qwen3-TTS-12Hz-0.6B-ar (modelo base) | 0,6 B | no disponible | safetensors para transformers | no confirmada en la informacion disponible (el repositorio de cuantizacion declara apache-2.0) | Hugging Face |
 | Alternativas TTS de tamano similar (por ejemplo, sistemas TTS abiertos de menos de 1 B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye especificaciones ni resultados de modelos TTS alternativos, por lo que no es posible establecer una comparacion cuantitativa fiable de calidad de audio, latencia o cobertura idiomatica frente a otros sistemas.

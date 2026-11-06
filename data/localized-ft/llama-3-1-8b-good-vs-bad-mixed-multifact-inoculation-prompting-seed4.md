@@ -21,7 +21,7 @@ El modelo conserva la arquitectura base de Llama 3.1 de 8 mil millones de parám
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es la version instructiva de Llama 3.1 con arquitectura transformer decoder-only, attention con RoPE, y 8.000 millones de parametros. El fine-tuning se realizo con la libreria Unsloth (que acelera el entrenamiento) y la libreria TRL de HuggingFace, segun indica la model card. No se especifican los datos de entrenamiento, el numero de tokens, ni si se utilizo RLHF, DPO u otra tecnica de alineacion posterior al SFT. El nombre del modelo sugiere una mezcla de datos "buenos" y "malos" con multiples factores y una tecnica de "inoculation prompting", pero no hay detalles tecnicos publicados sobre la composicion del dataset ni el procedimiento exacto.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es la version instructiva de Llama 3.1 con arquitectura transformer decoder-only, attention con RoPE, y 8.000 millones de parametros. El fine-tuning se realizo con la libreria Unsloth (que acelera el entrenamiento) y la libreria TRL de Hugging Face, segun indica la model card. No se especifican los datos de entrenamiento, el numero de tokens, ni si se utilizo RLHF, DPO u otra tecnica de alineacion posterior al SFT. El nombre del modelo sugiere una mezcla de datos "buenos" y "malos" con multiples factores y una tecnica de "inoculation prompting", pero no hay detalles tecnicos publicados sobre la composicion del dataset ni el procedimiento exacto.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, que es la version instr
 - Benchmarking de fine-tunes: sirve como punto de referencia para medir el impacto de diferentes estrategias de entrenamiento sobre un mismo base.
 - Desarrollo de sistemas de generacion de texto en ingles con licencia permisiva: al ser Apache-2.0, puede integrarse en productos comerciales sin restricciones de copyleft.
 - Experimentos de control de calidad de respuestas: la mezcla "good vs bad" podria permitir estudiar como el modelo distingue respuestas deseables de indeseables, aunque no hay evidencia publica de ello.
-- Reproducibilidad academica: al estar disponible en HuggingFace con pesos safetensors, puede descargarse y reproducirse en entornos de investigacion.
+- Reproducibilidad academica: al estar disponible en Hugging Face con pesos safetensors, puede descargarse y reproducirse en entornos de investigacion.
 
 ## Benchmarks y rendimiento
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un modelo de 8.000 millones de parametros en precision FP16, requiere aproximadamente 16 GB de VRAM para cargar los pesos completos. Con cuantizacion a 4 bits (no publicada en el repo, pero posible con herramientas como llama.cpp o GPTQ) se podria reducir a unos 5-6 GB.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100, H100, o cualquier GPU con al menos 16 GB de VRAM para FP16.
 - En consumer GPU: cabe en una RTX 3090 o 4090 (24 GB) sin cuantizar, y en GPUs de 8 GB con cuantizacion 4 bits.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (text-generation-inference), HuggingFace Transformers con accelerate.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (text-generation-inference), Hugging Face Transformers con accelerate.
 - Latencia y throughput: no se han publicado mediciones especificas para este fine-tune. Como referencia, Llama 3.1 8B en una A100 suele generar entre 50 y 100 tokens por segundo con vLLM, pero esto depende de la configuracion.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparativa se limita a variantes de la misma familia, ya que no hay datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed4
 - Variante seed 2 (longtermrisk): https://huggingface.co/longtermrisk/Llama-3.1-8B-good-vs-bad-mixed-multifact-inoculation-prompting-seed2
 - Variante SFT second-third seed 4: https://huggingface.co/localized-ft/Llama-3.1-8B-good-vs-bad-mixed-multifact-second-third-sft-seed4
 - Modelo base (unsloth): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

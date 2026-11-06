@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: el peso en safetensors ocupa 17,5 GB, lo que supone al menos 18-20 GB de VRAM en precision original para cargar el modelo y sus activaciones; para un margen razonable se recomiendan 24 GB o mas.
 - GPU recomendadas: NVIDIA RTX 4090 24 GB, A100 40/80 GB o H100 80 GB.
 - Consumo en consumer GPU: puede ejecutarse en una RTX 4090 24 GB sin cuantizacion, con precaucion sobre el tamano del contexto. No cabe en GPUs de 16 GB sin offloading o conversion de pesos.
-- Opciones de despliegue: al usar safetensors y la libreria `transformers`, puede servirse con vLLM, TGI o un pipeline de HuggingFace Transformers. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa.
+- Opciones de despliegue: al usar safetensors y la libreria `transformers`, puede servirse con vLLM, TGI o un pipeline de Hugging Face Transformers. No se publican pesos GGUF, por lo que llama.cpp y Ollama no son aplicables sin conversion previa.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ Solo se ha identificado una comparativa directa en la informacion disponible: el
 - El modelo esta limitado a 9 tareas simuladas de mesa de RMBench; su generalizacion a entornos reales o a otras tareas no esta demostrada.
 - Hereda las limitaciones del dataset `RMBench-preset-gemini`, que puede contener sesgos de las demostraciones y de las etiquetas del preset.
 - No se han publicado benchmarks, por lo que no hay evidencia cuantitativa de rendimiento antes de usar el modelo en produccion.
-- La licencia no esta disponible en la ficha de HuggingFace; es necesario verificar si permite uso comercial antes de desplegarlo.
+- La licencia no esta disponible en la ficha de Hugging Face; es necesario verificar si permite uso comercial antes de desplegarlo.
 - No se documentan idiomas soportados ni la longitud de contexto efectiva para este checkpoint concreto, aunque el modelo base es multimodal.
 - No se publican variantes cuantizadas ni GGUF, lo que dificulta su ejecucion en hardware limitado o mediante herramientas como llama.cpp.
 

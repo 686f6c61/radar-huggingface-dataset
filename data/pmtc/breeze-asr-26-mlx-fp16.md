@@ -91,7 +91,7 @@ Frente a Whisper-large-v2 genérico, este modelo sacrifica cobertura multilingü
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PMTC/Breeze-ASR-26-mlx-fp16
+- Repositorio Hugging Face: https://huggingface.co/PMTC/Breeze-ASR-26-mlx-fp16
 - Modelo base: https://huggingface.co/MediaTek-Research/Breeze-ASR-26
 - Aplicación de destino (SettleVoice): https://github.com/philomath-app/settle-voice
 - Script de conversión: `scripts/convert_whisper_hf_to_mlx.py` dentro del repositorio SettleVoice

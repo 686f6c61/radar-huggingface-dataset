@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-Abliterated es una conversión comunitaria del modelo DeepSeek-V4.1-Flash de DeepSeek, publicada por el usuario s-zaizen en HuggingFace. No es un lanzamiento oficial de DeepSeek: se trata de un checkpoint sometido a un proceso de abliteración (eliminación de direcciones residuales asociadas al rechazo de peticiones) mediante la herramienta Heretic de Philipp Emanuel Weidmann, en el commit `3521f8648a0dccf6e12a92666862632235fac7e6`. El resultado es un modelo multimodal de tipo image-text-to-text con 484.619.644.114 parámetros totales (unos 484,6 mil millones) distribuidos en 48 shards safetensors que suman 510,3 GB.
+DeepSeek-V4.1-Flash-Abliterated es una conversión comunitaria del modelo DeepSeek-V4.1-Flash de DeepSeek, publicada por el usuario s-zaizen en Hugging Face. No es un lanzamiento oficial de DeepSeek: se trata de un checkpoint sometido a un proceso de abliteración (eliminación de direcciones residuales asociadas al rechazo de peticiones) mediante la herramienta Heretic de Philipp Emanuel Weidmann, en el commit `3521f8648a0dccf6e12a92666862632235fac7e6`. El resultado es un modelo multimodal de tipo image-text-to-text con 484.619.644.114 parámetros totales (unos 484,6 mil millones) distribuidos en 48 shards safetensors que suman 510,3 GB.
 
 El checkpoint conserva la arquitectura, el tokenizer, los componentes de visión, la memoria Engram, los tensores MTP/DSpark y la configuración de contexto nativa del modelo original, así como sus formatos de almacenamiento FP8 y MXFP4. La intervención se limita a las 40 proyecciones de salida de atención, con normalización de fila completa y fusión de LoRA rank-3 que preserva la norma; no se tocan los tensores de expertos, Engram, visión, embeddings ni MTP/DSpark. Esto lo hace relevante para investigación sobre alineación y direcciones de rechazo, y para desarrolladores que necesiten un modelo de gran escala con menor tasa de negativas, a costa de requerir infraestructura multi-GPU.
 
@@ -73,8 +73,8 @@ Condiciones de la medición de rechazos: 100 ejemplos del split de test configur
 
 | Modelo | Parametros totales | Contexto | Licencia | Intervencion | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-Abliterated (s-zaizen) | 484,6 mil millones | no disponible | MIT | Abliteración con Heretic sobre 40 proyecciones de atención | Público en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| DeepSeek-V4.1-Flash (deepseek-ai) | 484,6 mil millones | no disponible | MIT | Ninguna (modelo original) | Público en HuggingFace |
+| DeepSeek-V4.1-Flash-Abliterated (s-zaizen) | 484,6 mil millones | no disponible | MIT | Abliteración con Heretic sobre 40 proyecciones de atención | Público en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| DeepSeek-V4.1-Flash (deepseek-ai) | 484,6 mil millones | no disponible | MIT | Ninguna (modelo original) | Público en Hugging Face |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado con otros modelos de tamaño similar, ni de métricas de capacidades de ninguno de los dos checkpoints, por lo que la comparación se limita a parámetros, licencia y naturaleza de la intervención.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado con otros modelos de tamaño sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s-zaizen/DeepSeek-V4.1-Flash-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/s-zaizen/DeepSeek-V4.1-Flash-Abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Commit concreto de Heretic usado: https://github.com/p-e-w/heretic/tree/3521f8648a0dccf6e12a92666862632235fac7e6

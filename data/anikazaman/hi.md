@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anikazaman/hi` alojado en HuggingFace no contiene información técnica pública que permita identificar el modelo, su arquitectura o su propósito. Los metadatos disponibles son mínimos: se trata de un repositorio creado el 28 de agosto de 2026 (fecha futura, lo que sugiere un posible error de registro o un repositorio vacío), con cero descargas y una única interacción (like). No se especifica pipeline, licencia ni idiomas soportados.
+El repositorio `anikazaman/hi` alojado en Hugging Face no contiene información técnica pública que permita identificar el modelo, su arquitectura o su propósito. Los metadatos disponibles son mínimos: se trata de un repositorio creado el 28 de agosto de 2026 (fecha futura, lo que sugiere un posible error de registro o un repositorio vacío), con cero descargas y una única interacción (like). No se especifica pipeline, licencia ni idiomas soportados.
 
 La búsqueda web no ha encontrado ninguna referencia a este modelo en papers, blogs o documentación técnica. Los resultados obtenidos corresponden a una página comercial de pasarela de APIs (`himodels.ai`) y a perfiles de redes sociales de personas con nombres similares, sin relación aparente con el repositorio. Por tanto, no es posible elaborar una ficha técnica con datos verificados; cualquier especificación sería especulativa.
 
@@ -59,7 +59,7 @@ No disponible. Al carecer de especificaciones, no es posible establecer comparac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anikazaman/hi
+- Repositorio en Hugging Face: https://huggingface.co/anikazaman/hi
 - Sitio web encontrado en la busqueda (sin relacion confirmada con el modelo): https://himodels.ai/
 
 Nota: No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

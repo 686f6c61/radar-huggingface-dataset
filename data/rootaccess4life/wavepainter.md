@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wavepainter es un editor de voz de span enmascarado (masked-span speech editor) que permite sustituir, insertar o eliminar segmentos de habla en una grabación manteniendo la voz del hablante original. El modelo combina un codificador HuBERT con un denoiser de difusión, y se publica bajo licencia MIT. El desarrollo se atribuye al repositorio GitHub de pujariaditya, mientras que los pesos se distribuyen en HuggingFace bajo la cuenta RootAccess4Life.
+Wavepainter es un editor de voz de span enmascarado (masked-span speech editor) que permite sustituir, insertar o eliminar segmentos de habla en una grabación manteniendo la voz del hablante original. El modelo combina un codificador HuBERT con un denoiser de difusión, y se publica bajo licencia MIT. El desarrollo se atribuye al repositorio GitHub de pujariaditya, mientras que los pesos se distribuyen en Hugging Face bajo la cuenta RootAccess4Life.
 
 El modelo se entrena en dos fases: una primera fase base y una segunda fase con interpolación de coeficientes sobre el denoiser. Se publican dos variantes del checkpoint de fase 2 (a=0.85 y a=0.70) porque el coeficiente óptimo depende del tipo de edición. En el benchmark Ming-Freeform-Audio-Edit (split completo en inglés), wavepainter supera a la referencia de Ren et al. en cinco de seis métricas de WER y similitud de hablante, aunque no mejora la eliminación de palabras. El repositorio pesa 6.7 GB, lo que sugiere que los pesos pueden caber en GPUs de consumo medio, aunque no se ofrecen especificaciones oficiales de hardware.
 
@@ -28,7 +28,7 @@ El entrenamiento se divide en dos fases: `phase1-base` (el editor base) y `phase
 ## Capacidades
 
 - Edicion de voz por span enmascarado: permite sustituir, insertar o eliminar segmentos de habla en una grabacion existente.
-- Sintesis de voz (text-to-speech) segun el pipeline declarado en HuggingFace.
+- Sintesis de voz (text-to-speech) segun el pipeline declarado en Hugging Face.
 - Alta similitud de hablante: alcanza SIM de 0.943 en sustitucion, 0.961 en insercion y 0.918 en eliminacion (con a=0.85), superando a la referencia en los tres casos.
 - Mantiene la calidad de señal en las partes no editadas: PESQ de 4.089/4.083/4.076 para sustitucion/insercion/eliminacion, frente a 4.351 en copy-synthesis sin edicion.
 - No se documentan capacidades de tool calling, agentes, razonamiento multi-paso ni soporte multimodal mas alla del audio.
@@ -84,6 +84,6 @@ La unica comparacion disponible es contra Ren et al. (arXiv:2602.00560), que sir
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RootAccess4Life/wavepainter
+- Hugging Face: https://huggingface.co/RootAccess4Life/wavepainter
 - Repositorio GitHub: https://github.com/pujariaditya/wavepainter
 - Paper de referencia (Ren et al.): https://arxiv.org/abs/2602.00560

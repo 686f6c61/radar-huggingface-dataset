@@ -6,7 +6,7 @@
 
 El repositorio contiene tres cuantizaciones (Q4_0 por defecto, IQ3_M y Q3_K_M), un proyector multimodal separado (`mmproj`, en BF16 o F16) que habilita la entrada de imágenes, y un drafter MTP (`mtp-gemma-4-E4B-it-Artemis.gguf`) derivado del modelo assistant de Google para decodificación especulativa. El pipeline declarado es `image-text-to-text`, con soporte para servidor de llama.cpp y para Ollama.
 
-El dato de parámetros reales del checkpoint es de 7.463.013.674, muy por encima de los ~4B que sugiere el sufijo E4B del nombre; la model card no desglosa parámetros activos ni arquitectura interna, por lo que esa información queda como no disponible. La licencia declarada en HuggingFace es Apache 2.0, aunque el campo `license_link` remite a la licencia de Gemma 4 de Google.
+El dato de parámetros reales del checkpoint es de 7.463.013.674, muy por encima de los ~4B que sugiere el sufijo E4B del nombre; la model card no desglosa parámetros activos ni arquitectura interna, por lo que esa información queda como no disponible. La licencia declarada en Hugging Face es Apache 2.0, aunque el campo `license_link` remite a la licencia de Gemma 4 de Google.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El dato de parámetros reales del checkpoint es de 7.463.013.674, muy por encima
 | Longitud de contexto | no disponible como máximo del modelo; los ejemplos del autor usan `-c 8192` (8.192 tokens) |
 | Tipos de cuantizacion | Q4_0 (por defecto, 4,22 GB), IQ3_M (~3,8 GB), Q3_K_M (~3,6 GB); proyectores en BF16 y F16; drafter MTP en Q4_0 |
 | Idiomas soportados | no disponible |
-| Licencia | apache-2.0 en los metadatos de HuggingFace; `license_link` apunta a la licencia de Gemma 4 (`https://ai.google.dev/gemma/docs/gemma_4_license`) |
+| Licencia | apache-2.0 en los metadatos de Hugging Face; `license_link` apunta a la licencia de Gemma 4 (`https://ai.google.dev/gemma/docs/gemma_4_license`) |
 | Formato de pesos | GGUF (llama.cpp); proyector `mmproj-*.gguf` y drafter MTP en GGUF separados |
 | Modelo base | google/gemma-4-E4B-it-qat-q4_0-unquantized (relación: quantized) |
 | Modalidades de entrada | texto e imagen (proyector `mmproj`); el proyector incluye también el encoder de audio de Gemma, no probado por el autor |
@@ -111,7 +111,7 @@ Resultados declarados por TurinTech (no verificados de forma independiente en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turintech/gemma-4-E4B-it-Artemis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/turintech/gemma-4-E4B-it-Artemis-GGUF
 - Página del modelo en Ollama: https://ollama.com/turintech/gemma-4-e4b-it-artemis
 - Etiqueta Q4_0 en Ollama: https://ollama.com/turintech/gemma-4-e4b-it-artemis:4.2gb
 - Modelos Artemis de TurinTech: https://www.turintech.ai/models

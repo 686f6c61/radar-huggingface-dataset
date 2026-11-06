@@ -45,7 +45,7 @@ El entrenamiento usa las 50.000 imágenes del split de entrenamiento de CIFAR-10
 - Referencia para implementar la restricción `exp(w − 5)` en frameworks propios: el fichero de pesos y la descripción del entrenamiento permiten replicar el mecanismo de proyección de pesos negativos en otros proyectos.
 - Pruebas de pipelines de inferencia en NumPy puro: útil para validar entornos sin GPU ni PyTorch, ya que toda la inferencia se reduce a dos multiplicaciones matriciales y una ELU.
 - Benchmark educativo de sobreajuste: con 73,44 % de accuracy en entrenamiento frente a 46,95 % en test, el modelo ilustra de forma clara el gap train/test en redes pequeñas sin regularización.
-- Ejemplo de publicación de artefactos en HuggingFace con formato no estándar: sirve para estudiar cómo estructurar un repo con pesos `.npz`, metadatos y resultados embebidos entre marcadores `<!-- results:start -->` y `<!-- results:end -->`.
+- Ejemplo de publicación de artefactos en Hugging Face con formato no estándar: sirve para estudiar cómo estructurar un repo con pesos `.npz`, metadatos y resultados embebidos entre marcadores `<!-- results:start -->` y `<!-- results:end -->`.
 
 ## Benchmarks y rendimiento
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 - Fuerte sobreajuste: 73,44 % en entrenamiento frente a 46,95 % en test, con 100 épocas sin parada temprana ni regularización.
 - Solo acepta imágenes de 32×32×3 con el preprocesado exacto (aplanado en orden alto-ancho-canal, división por 255 y estandarización con `feature_mean`/`feature_std`); cualquier otra resolución o formato requiere adaptación manual.
 - No es un modelo de lenguaje: no procesa texto, no genera contenido y no soporta instrucciones.
-- No hay tokenizador, chat template ni pipeline estándar de transformers; el pipeline declarado `image-classification` es meramente informativo en HuggingFace.
+- No hay tokenizador, chat template ni pipeline estándar de transformers; el pipeline declarado `image-classification` es meramente informativo en Hugging Face.
 - La licencia CC0-1.0 permite uso comercial y modificación sin restricciones, pero el modelo en sí carece de valor comercial por su rendimiento.
 - Riesgo de alucinación no aplica; el riesgo real es clasificación errónea sistemática en clases difíciles de CIFAR-10 (gato/perro, ciervo/caballo).
 - Sesgos conocidos: no documentados en la información disponible; al entrenarse solo con CIFAR-10, hereda los sesgos de composición de ese dataset.
@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sanyamseac/smai-a4-ioc-nn
+- Hugging Face: https://huggingface.co/sanyamseac/smai-a4-ioc-nn
 - Artículo de referencia: https://arxiv.org/abs/2006.05103 (Sivaprasad et al., *The Curious Case of Convex Neural Networks*)
 - Dataset: https://huggingface.co/datasets/uoft-cs/cifar10

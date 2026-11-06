@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dakerholdings/MiniCPM5-2B-mixed_3_6-mlx` es una variante de la familia MiniCPM5 de OpenBMB, convertida al formato MLX (Metal para Apple Silicon). Se trata de un modelo de generacion de texto conversacional de aproximadamente 2.000 millones de parametros, orientado a inferencia en dispositivos locales. Los tags de HuggingFace indican que esta escrito en ingles, que usa pesos en formato safetensors y que se distribuye con una cuantizacion de 8 bits, aunque el nombre del archivo sugiere una cuantizacion mixta de 3 y 6 bits no confirmada. El modelo no presenta datos publicos sobre su entrenamiento, licencia o benchmarks, por lo que cualquier evaluacion debe partir de pruebas de campo directas.
+El modelo `dakerholdings/MiniCPM5-2B-mixed_3_6-mlx` es una variante de la familia MiniCPM5 de OpenBMB, convertida al formato MLX (Metal para Apple Silicon). Se trata de un modelo de generacion de texto conversacional de aproximadamente 2.000 millones de parametros, orientado a inferencia en dispositivos locales. Los tags de Hugging Face indican que esta escrito en ingles, que usa pesos en formato safetensors y que se distribuye con una cuantizacion de 8 bits, aunque el nombre del archivo sugiere una cuantizacion mixta de 3 y 6 bits no confirmada. El modelo no presenta datos publicos sobre su entrenamiento, licencia o benchmarks, por lo que cualquier evaluacion debe partir de pruebas de campo directas.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `dakerholdings/MiniCPM5-2B-mixed_3_6-mlx` es una variante de la famili
 
 ## Arquitectura y entrenamiento
 
-El modelo se presenta como una conversion a MLX, la libreria de Apple para ejecutar modelos de lenguaje en dispositivos con chips M1/M2/M3/M4. La arquitectura base es la de un transformer decoder tipo Llama, como indica el tag `llama` en HuggingFace. No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. Al ser una variante de la familia MiniCPM5 de OpenBMB, es posible que herede el enfoque de modelos pequenos y eficientes para dispositivos locales que describe el repositorio oficial de OpenBMB, pero este submodelo concreto carece de ficha tecnica publica.
+El modelo se presenta como una conversion a MLX, la libreria de Apple para ejecutar modelos de lenguaje en dispositivos con chips M1/M2/M3/M4. La arquitectura base es la de un transformer decoder tipo Llama, como indica el tag `llama` en Hugging Face. No se dispone de informacion sobre los datos de entrenamiento, el numero de tokens, ni si se aplicaron tecnicas como RLHF o DPO. Al ser una variante de la familia MiniCPM5 de OpenBMB, es posible que herede el enfoque de modelos pequenos y eficientes para dispositivos locales que describe el repositorio oficial de OpenBMB, pero este submodelo concreto carece de ficha tecnica publica.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Al estar en formato MLX, esta optimizado para dispositivos con chip Apple Silicon.
 - Con una cuantizacion de 8 bits, los pesos del modelo ocuparian aproximadamente 2 GB, por lo que se recomienda un dispositivo con al menos 8 GB de memoria unificada para ejecutarlo con margen.
 - Si la cuantizacion mixta 3/6 es real, el peso podria reducirse a menos de 1,5 GB, aunque no se puede confirmar.
-- No se especifican requisitos de GPU ni de despliegue en servidores; las opciones habituales para MLX son aplicaciones desarrolladas con la libreria MLX, como las que ofrece HuggingFace para Apple Silicon.
+- No se especifican requisitos de GPU ni de despliegue en servidores; las opciones habituales para MLX son aplicaciones desarrolladas con la libreria MLX, como las que ofrece Hugging Face para Apple Silicon.
 - No hay datos publicos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -68,5 +68,5 @@ No se dispone de datos de rendimiento para realizar una comparativa cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dakerholdings/MiniCPM5-2B-mixed_3_6-mlx
+- Modelo en Hugging Face: https://huggingface.co/dakerholdings/MiniCPM5-2B-mixed_3_6-mlx
 - Repositorio de OpenBMB/MiniCPM en GitHub: https://github.com/OpenBMB/MiniCPM

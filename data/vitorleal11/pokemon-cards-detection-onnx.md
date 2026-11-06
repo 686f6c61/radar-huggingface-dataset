@@ -6,7 +6,7 @@ El modelo `vitorleal11/pokemon-cards-detection-onnx` es una exportación a ONNX 
 
 La relevancia de esta ficha es acotada: no se trata de un modelo de lenguaje ni de un modelo generativo, sino de un detector de objetos especializado y muy ligero (el fichero cuantizado ronda los 43 MB) pensado para ejecutarse en el navegador o en Node.js mediante ONNX Runtime y WebAssembly. No hay información publicada sobre el proceso de entrenamiento, los datos utilizados ni métricas de evaluación más allá de una comparación cualitativa con el modelo base.
 
-La información disponible es escasa: la model card original es breve y no incluye detalles sobre composición del dataset, hiperparámetros, número de épocas ni resultados de benchmarks. Todo lo que se detalla a continuación proviene de la model card y de los metadatos de HuggingFace; lo que no consta se indica explícitamente como no disponible.
+La información disponible es escasa: la model card original es breve y no incluye detalles sobre composición del dataset, hiperparámetros, número de épocas ni resultados de benchmarks. Todo lo que se detalla a continuación proviene de la model card y de los metadatos de Hugging Face; lo que no consta se indica explícitamente como no disponible.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ La comparación relevante es con el modelo base del que deriva: esta versión ON
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vitorleal11/pokemon-cards-detection-onnx
+- Modelo en Hugging Face: https://huggingface.co/vitorleal11/pokemon-cards-detection-onnx
 - Modelo base: https://huggingface.co/Matthieu68857/pokemon-cards-detection
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js
 - Modelo DETR original: https://huggingface.co/facebook/detr-resnet-50

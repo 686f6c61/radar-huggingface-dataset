@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr (draft) | 673M segun safetensors / 1,113B segun model card | Depende del objetivo (256K) | No publicado | OpenMDW-1.1 | HuggingFace, vLLM, SM 120 |
-| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB servido sin draft | 74B totales, 9B activos | 256K | No publicado; seria la linea base frente a la que se mide la aceleracion | OpenMDW-1.1 | HuggingFace, vLLM, Blackwell |
+| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr (draft) | 673M segun safetensors / 1,113B segun model card | Depende del objetivo (256K) | No publicado | OpenMDW-1.1 | Hugging Face, vLLM, SM 120 |
+| NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB servido sin draft | 74B totales, 9B activos | 256K | No publicado; seria la linea base frente a la que se mide la aceleracion | OpenMDW-1.1 | Hugging Face, vLLM, Blackwell |
 | Otros drafters de decodificacion especulativa (EAGLE-3, Medusa, cabezas n-gram) | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos publicados de tasa de aceptacion ni de speedup que permitan una comparacion cuantitativa con otros metodos de decodificacion especulativa. La comparacion relevante y verificable es contra el objetivo sin draft, para la cual tampoco hay cifras en la informacion disponible.
@@ -87,7 +87,7 @@ No se dispone de datos publicados de tasa de aceptacion ni de speedup que permit
 
 ## Enlaces
 
-- HuggingFace del draft: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
+- Hugging Face del draft: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr
 - Modelo objetivo: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB
 - Paper LiLiCorr: https://arxiv.org/abs/2608.20530
 - Repositorio NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

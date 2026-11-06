@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| avewright/chess-transformer-100m-squares64 | ~99M | Transformer recurrente (Squares64) | 64 casillas | MIT | HuggingFace |
-| avewright/chess-transformer-437m-ft3h | ~437M | Transformer (probablemente similar) | No disponible | No disponible | HuggingFace |
+| avewright/chess-transformer-100m-squares64 | ~99M | Transformer recurrente (Squares64) | 64 casillas | MIT | Hugging Face |
+| avewright/chess-transformer-437m-ft3h | ~437M | Transformer (probablemente similar) | No disponible | No disponible | Hugging Face |
 
 No se han encontrado otros modelos comparables en la búsqueda realizada. El modelo de 437M es del mismo autor y podría ofrecer mayor capacidad, pero no se dispone de información detallada sobre su arquitectura ni rendimiento.
 
@@ -78,6 +78,6 @@ No se han encontrado otros modelos comparables en la búsqueda realizada. El mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/avewright/chess-transformer-100m-squares64
+- Hugging Face: https://huggingface.co/avewright/chess-transformer-100m-squares64
 - GitHub: https://github.com/avewright/transform
 - Modelo relacionado: https://huggingface.co/avewright/chess-transformer-437m-ft3h

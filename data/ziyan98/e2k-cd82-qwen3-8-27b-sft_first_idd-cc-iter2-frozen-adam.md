@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2-frozen-adam es un checkpoint de investigación publicado por el usuario `ziyan98` en HuggingFace. No es un modelo nuevo entrenado desde cero, sino un ajuste de Qwen/Qwen3.8-27B (27.781.427.952 parámetros) resultante de un experimento de "internalización de conocimiento" (E2K) sobre el juego `cd82-fb555c5d` de ARC-AGI-3. La pregunta que aborda el estudio es si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y después mejorarse con RL sobre episodios reales de varios pasos.
+E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2-frozen-adam es un checkpoint de investigación publicado por el usuario `ziyan98` en Hugging Face. No es un modelo nuevo entrenado desde cero, sino un ajuste de Qwen/Qwen3.8-27B (27.781.427.952 parámetros) resultante de un experimento de "internalización de conocimiento" (E2K) sobre el juego `cd82-fb555c5d` de ARC-AGI-3. La pregunta que aborda el estudio es si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y después mejorarse con RL sobre episodios reales de varios pasos.
 
 El checkpoint corresponde al brazo `sft_first_idd-cc`, iteración 2 de Megatron, y proviene del **primer** intento de la ejecución (16-17 de septiembre de 2026), en el que los momentos de Adam acumulados durante el calentamiento SFT se arrastraron sin reiniciar al RL y mantuvieron el paso de RL casi a cero (movimiento de política unas 5 veces por debajo de la línea base). El autor lo conserva porque representa una trayectoria distinta desde el mismo arranque solo-SFT; existe un relanzamiento posterior con reinicio de Adam cuyas iteraciones se publican sin el sufijo `-frozen-adam`.
 
@@ -53,7 +53,7 @@ El arnés de juego es Claude Code CLI 2.1.270 conduciendo las herramientas MCP `
 - Investigación en agentes sobre ARC-AGI-3: útil para analizar patrones de acciones (cambio de paso 0,033-0,093, acciones no-op 0,272-0,349) y de razonamiento en un juego concreto.
 - Punto de partida para ajuste supervisado adicional: al mantener intactos tokenizer, plantilla de chat y configuración, puede cargarse con transformers y reentrenarse sobre otras tareas de texto sin rehacer la integración.
 - Ablación de la contribución de la torre visual: al ser un modelo con torre visual copiada pero entrenamiento solo-texto, permite medir cuánto del comportamiento multimodal aparente proviene del checkpoint base y no del ajuste.
-- Verificación de pipelines de conversión Megatron→HuggingFace: los 1199 tensores con formas idénticas al base y la comprobación de identidad bit a bit de visión y MTP lo convierten en un caso de prueba útil para herramientas de conversión.
+- Verificación de pipelines de conversión Megatron→Hugging Face: los 1199 tensores con formas idénticas al base y la comprobación de identidad bit a bit de visión y MTP lo convierten en un caso de prueba útil para herramientas de conversión.
 
 ## Benchmarks y rendimiento
 
@@ -92,8 +92,8 @@ No se han identificado en la información proporcionada otros checkpoints compar
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`iter2-frozen-adam`) | 27,78 B | No disponible | 303 filas SFT + Dr.GRPO sobre el juego `cd82-fb555c5d`; Adam sin reiniciar | Apache-2.0 | Público en HuggingFace, 9 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de 1199 tensores) | No disponible en la información | Preentrenamiento y post-entrenamiento del autor original, no documentados aquí | No disponible en la información | Público en HuggingFace |
+| Este checkpoint (`iter2-frozen-adam`) | 27,78 B | No disponible | 303 filas SFT + Dr.GRPO sobre el juego `cd82-fb555c5d`; Adam sin reiniciar | Apache-2.0 | Público en Hugging Face, 9 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,78 B (mismo conjunto de 1199 tensores) | No disponible en la información | Preentrenamiento y post-entrenamiento del autor original, no documentados aquí | No disponible en la información | Público en Hugging Face |
 | Relanzamiento del mismo brazo sin `-frozen-adam` | 27,78 B | No disponible | Mismo arranque solo-SFT con reinicio de Adam en la frontera SFT→RL | Apache-2.0 (presumiblemente, misma serie) | Referenciado en el card; datos concretos no disponibles |
 
 ## Limitaciones y advertencias
@@ -112,6 +112,6 @@ No se han identificado en la información proporcionada otros checkpoints compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2-frozen-adam
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter2-frozen-adam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - La búsqueda web realizada no devolvió resultados relevantes: los únicos resultados obtenidos fueron páginas de GIPHY sin relación alguna con el modelo, por lo que no se dispone de enlaces a papers, blogs, repositorios o demos adicionales.

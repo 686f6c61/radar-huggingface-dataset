@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`humanize-ai/paraphrasingV2` es un modelo publicado en HuggingFace por el usuario u organización `humanize-ai`. El repositorio se creó y se actualizó el 19 de octubre de 2026 (ambas marcas temporales coinciden), y en el momento de redactar esta ficha no registra descargas ni "likes". La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia `apache-2.0`, sin README descriptivo, sin ficha técnica y sin ejemplos de uso.
+`humanize-ai/paraphrasingV2` es un modelo publicado en Hugging Face por el usuario u organización `humanize-ai`. El repositorio se creó y se actualizó el 19 de octubre de 2026 (ambas marcas temporales coinciden), y en el momento de redactar esta ficha no registra descargas ni "likes". La model card asociada es prácticamente vacía: únicamente contiene la declaración de licencia `apache-2.0`, sin README descriptivo, sin ficha técnica y sin ejemplos de uso.
 
 Por el identificador del repositorio puede inferirse que se trata de un modelo orientado a la paráfrasis o reescritura de texto, en su segunda iteración ("V2"), presumiblemente vinculado al producto Humanize.ai. Conviene subrayar que esta deducción procede exclusivamente del nombre del repositorio y no de documentación oficial, por lo que debe tratarse como una hipótesis y no como un dato verificado. No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponible; no consta que el repositorio incluya pesos en formatos compatibles con estos motores.
 - Latencia y throughput estimados: no disponible.
 
-Recomendación práctica: inspeccionar el árbol de archivos del repositorio en HuggingFace (tamaño y formato de los pesos) antes de planificar cualquier despliegue, ya que esa inspección permitiría estimar la VRAM necesaria.
+Recomendación práctica: inspeccionar el árbol de archivos del repositorio en Hugging Face (tamaño y formato de los pesos) antes de planificar cualquier despliegue, ya que esa inspección permitiría estimar la VRAM necesaria.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ No disponible. No se dispone de datos de parámetros, contexto, rendimiento ni l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/humanize-ai/paraphrasingV2
+- Repositorio en Hugging Face: https://huggingface.co/humanize-ai/paraphrasingV2
 - Humanize.ai (sitio del producto, no del modelo): https://humanize.ai/?ref=producthunt
 - Digitiz, herramienta de humanización de texto: https://digitiz.fr/outils/humaniseur-texte/
 - ZeroGPT, humanizador de IA: https://www.zerogpt.com/fr/ai-humanizer

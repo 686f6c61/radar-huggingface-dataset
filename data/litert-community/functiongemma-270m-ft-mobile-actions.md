@@ -64,10 +64,10 @@ La comparativa se centra en el modelo base y en alternativas de tamano similar c
 
 | Modelo | Parametros | Contexto | Function calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FunctionGemma 270M FT Mobile Actions | 270M | no disponible | Si (especializado en acciones moviles) | Gemma (gated) | HuggingFace |
-| google/functiongemma-270m-it | 270M | no disponible | Si (generico) | Gemma (gated) | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 500M | 32K | No nativo (requiere fine-tune) | Apache 2.0 | HuggingFace |
-| Phi-3-mini (3.8B) | 3.8B | 128K | No nativo (requiere fine-tune) | MIT | HuggingFace |
+| FunctionGemma 270M FT Mobile Actions | 270M | no disponible | Si (especializado en acciones moviles) | Gemma (gated) | Hugging Face |
+| google/functiongemma-270m-it | 270M | no disponible | Si (generico) | Gemma (gated) | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 500M | 32K | No nativo (requiere fine-tune) | Apache 2.0 | Hugging Face |
+| Phi-3-mini (3.8B) | 3.8B | 128K | No nativo (requiere fine-tune) | MIT | Hugging Face |
 
 El modelo se diferencia del base por su especializacion en acciones moviles, lo que lo hace mas preciso en ese dominio pero menos flexible para tareas generales. Frente a alternativas como Qwen2.5 o Phi-3, ofrece menor capacidad de razonamiento pero un enfoque directo para el caso de uso movil, con un tamano mucho menor que facilita su despliegue en dispositivos con recursos limitados.
 
@@ -83,7 +83,7 @@ El modelo se diferencia del base por su especializacion en acciones moviles, lo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/functiongemma-270m-ft-mobile-actions
+- Hugging Face: https://huggingface.co/litert-community/functiongemma-270m-ft-mobile-actions
 - README del modelo: https://huggingface.co/litert-community/functiongemma-270m-ft-mobile-actions/blob/main/README.md
 - Documentacion de Google sobre Mobile Actions: https://ai.google.dev/gemma/docs/mobile-actions
 - Requisitos de hardware (llmrun.dev): https://llmrun.dev/model/litert-community-functiongemma-270m-ft-mobile-actions

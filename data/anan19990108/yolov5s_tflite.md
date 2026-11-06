@@ -85,7 +85,7 @@ La comparativa muestra que este repositorio ofrece una ventaja específica: la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anan19990108/yolov5s_tflite
+- Repositorio Hugging Face: https://huggingface.co/anan19990108/yolov5s_tflite
 - Árbol de archivos: https://huggingface.co/anan19990108/yolov5s_tflite/tree/main
 - Proyecto YOLOv5 de Ultralytics (base): https://github.com/ultralytics/yolov5
 - Guía de conversión a TFLite de MediaTek (referencia externa): https://genio.mediatek.com/doc/iot-aihub/ai_hub/model_zoo/litert_analytical/YOLOv5s.html

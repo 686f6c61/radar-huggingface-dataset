@@ -88,9 +88,9 @@ El error estándar en bits por byte es de aproximadamente 0,06 con una semilla y
 
 | Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-374m-140bt-mdlm-cooled | 373,9M totales / 303,1M no-embedding | 2.048 | MDLM (difusión enmascarada) | Apache 2.0 | HuggingFace, código custom |
+| vectabass-374m-140bt-mdlm-cooled | 373,9M totales / 303,1M no-embedding | 2.048 | MDLM (difusión enmascarada) | Apache 2.0 | Hugging Face, código custom |
 | Cuadrado AR de VectaBass (misma escalera y datos) | Escalera 100M-1.6B no-embedding | No disponible | Autorregresivo causal | No disponible en la información | Publicado por separado según el autor |
-| Otros modelos MDLM de la misma escalera (celdas N1-N6) | 100M-1.6B no-embedding | 2.048 (presumible, misma familia) | MDLM | Apache 2.0 (presumible, misma familia) | HuggingFace |
+| Otros modelos MDLM de la misma escalera (celdas N1-N6) | 100M-1.6B no-embedding | 2.048 (presumible, misma familia) | MDLM | Apache 2.0 (presumible, misma familia) | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con modelos de terceros de tamaño similar (por ejemplo, GPT-2 small/medium o Llama de 300M-400M), por lo que la comparación de rendimiento queda limitada al ELBO interno y a las métricas de fluidez del análisis de muestreadores.
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks comparativos con modelos de terceros de tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-374m-140bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-374m-140bt-mdlm-cooled
 - Documentación de datos del autor: `DATA.md` en el repositorio del modelo
 - Código de modelado custom: `modeling_vectabass.py` en el repositorio del modelo
 - Paper, blog o repositorio de la familia VectaBass: no disponible en la información proporcionada

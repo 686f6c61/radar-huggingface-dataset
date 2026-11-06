@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`frazer-nyambe/llama-3.1-8b-finetuned-Universities_and_councils` es un ajuste fino (fine-tuning) del modelo base Llama 3.1 8B, publicado en HuggingFace por el usuario frazer-nyambe. El nombre del repositorio sugiere que el ajuste se ha orientado a un dominio concreto: universidades y ayuntamientos (councils). No obstante, la model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion.
+`frazer-nyambe/llama-3.1-8b-finetuned-Universities_and_councils` es un ajuste fino (fine-tuning) del modelo base Llama 3.1 8B, publicado en Hugging Face por el usuario frazer-nyambe. El nombre del repositorio sugiere que el ajuste se ha orientado a un dominio concreto: universidades y ayuntamientos (councils). No obstante, la model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva sobre datos de entrenamiento, hiperparametros, licencia ni evaluacion.
 
 El modelo se distribuye en formato safetensors para la libreria transformers y ocupa aproximadamente 0,1 GB en el repositorio, un tamano llamativamente pequeno para un modelo de 8 000 millones de parametros (que en fp16 rondaria los 16 GB). Esto sugiere que el repositorio podria contener solo pesos parciales, adaptadores o un error de publicacion, aunque no es posible confirmarlo con la informacion disponible.
 
@@ -82,7 +82,7 @@ La comparativa con el modelo base es la mas relevante: el ajuste de frazer-nyamb
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/frazer-nyambe/llama-3.1-8b-finetuned-Universities_and_councils
+- Hugging Face: https://huggingface.co/frazer-nyambe/llama-3.1-8b-finetuned-Universities_and_councils
 - Paper de referencia sobre impacto medioambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B

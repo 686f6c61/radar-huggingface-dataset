@@ -31,7 +31,7 @@ El entrenamiento consistió en un ajuste fino supervisado (SFT) sobre datos en y
 
 - Generación de texto en yoruba: el modelo está específicamente ajustado para producir texto coherente en este idioma, aunque no se han publicado ejemplos ni evaluaciones.
 - Conversación multi-turno: el tag "conversational" sugiere que puede mantener diálogos, pero no hay evidencia de su calidad o límites.
-- Compatibilidad con transformers: al estar alojado en HuggingFace con la librería transformers, puede integrarse en pipelines estándar de generación de texto.
+- Compatibilidad con transformers: al estar alojado en Hugging Face con la librería transformers, puede integrarse en pipelines estándar de generación de texto.
 - No se han documentado capacidades adicionales como tool calling, razonamiento avanzado, soporte de agentes, visión o audio.
 
 ## Casos de uso
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Obotu/lfm2.5-yoruba-sft-final
+- Repositorio Hugging Face: https://huggingface.co/Obotu/lfm2.5-yoruba-sft-final
 - Repositorio GGUF asociado: https://huggingface.co/Obotu/lfm2.5-yoruba-sft-GGUF
 - Modelo base LFM2.5-8B-A1B: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Blog de Liquid AI sobre LFM2.5: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai

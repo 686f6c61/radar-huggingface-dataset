@@ -91,7 +91,7 @@ La búsqueda web realizada no devolvió información sobre modelos comparables, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sixstringzen/Hemmingway-1-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/sixstringzen/Hemmingway-1-oQ6e-mtp
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Revisión del modelo fuente usada en la conversión: `4d711aac0f0043075ae334d2a3de3db3e10135c9`
 - Informe de imatrix y calibración: https://huggingface.co/sixstringzen/Hemmingway-1-oQ6e-mtp/blob/main/oq_imatrix_report.json

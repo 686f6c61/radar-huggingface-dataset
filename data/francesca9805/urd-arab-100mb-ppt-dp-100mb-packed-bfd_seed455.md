@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino supervisado (SFT) de tipo *instruction tuning* sobre el modelo base `goldfish-models/urd_arab_100mb`, un modelo de lenguaje monolingüe de la familia Goldfish orientado a texto en escritura árabe (la nomenclatura del repositorio apunta a urdu). Lo publica el usuario de HuggingFace `francesca9805`, y el entrenamiento se ha realizado con la librería TRL de HuggingFace, según se documenta en la propia model card. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción.
+El modelo `francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino supervisado (SFT) de tipo *instruction tuning* sobre el modelo base `goldfish-models/urd_arab_100mb`, un modelo de lenguaje monolingüe de la familia Goldfish orientado a texto en escritura árabe (la nomenclatura del repositorio apunta a urdu). Lo publica el usuario de Hugging Face `francesca9805`, y el entrenamiento se ha realizado con la librería TRL de Hugging Face, según se documenta en la propia model card. Se trata, por tanto, de un artefacto de investigación más que de un modelo listo para producción.
 
-Técnicamente es un transformer decoder-only de arquitectura GPT-2 (así lo etiqueta HuggingFace) con 124.770.816 parámetros totales, es decir, aproximadamente 125 millones, un orden de magnitud equivalente a GPT-2 small. No hay parámetros activos porque no es un modelo Mixture of Experts. El repositorio ocupa 0,3 GB y se distribuye en formato `safetensors` compatible con `transformers`, `text-generation-inference` y *endpoints* de HuggingFace.
+Técnicamente es un transformer decoder-only de arquitectura GPT-2 (así lo etiqueta Hugging Face) con 124.770.816 parámetros totales, es decir, aproximadamente 125 millones, un orden de magnitud equivalente a GPT-2 small. No hay parámetros activos porque no es un modelo Mixture of Experts. El repositorio ocupa 0,3 GB y se distribuye en formato `safetensors` compatible con `transformers`, `text-generation-inference` y *endpoints* de Hugging Face.
 
 Su relevancia es acotada pero concreta: sirve como banco de pruebas reproducible para experimentos de ajuste fino instructivo en lenguas de bajos recursos, para estudiar el efecto del empaquetado de datos (el identificador menciona `packed` y una semilla fija, `seed455`) y para comparar estrategias de tokenización, dado que la ejecución asociada en Weights & Biases pertenece al proyecto `new-tokenizers`. No se han declarado idiomas soportados, licencia ni resultados de evaluación en los metadatos disponibles.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada pero concreta: sirve como banco de pruebas reproducible
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parámetros totales | 124.770.816 (dato real de los pesos `safetensors`) |
 | Parámetros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | No disponible (no se declara en la model card ni en los metadatos) |
@@ -39,7 +39,7 @@ El entrenamiento se ha realizado mediante SFT (*supervised fine-tuning*) con TRL
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta *thinking mode* ni bucle de herramientas.
 - Capacidades multilingües: no disponibles; los metadatos no declaran ningún idioma.
 - Capacidades especiales (visión, audio, *embedding*, reranking): no disponibles; el pipeline es únicamente `text-generation`.
-- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con los *endpoints* gestionados de HuggingFace.
+- Compatibilidad de despliegue: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con los *endpoints* gestionados de Hugging Face.
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ El entrenamiento se ha realizado mediante SFT (*supervised fine-tuning*) con TRL
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra evaluación, y los metadatos de HuggingFace no aportan cifras de rendimiento. No se dispone tampoco de comparaciones con el modelo base ni con otros checkpoints derivados.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas de MMLU, HumanEval, GSM8K, perplejidad ni ninguna otra evaluación, y los metadatos de Hugging Face no aportan cifras de rendimiento. No se dispone tampoco de comparaciones con el modelo base ni con otros checkpoints derivados.
 
 ## Requisitos de hardware
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Funciona sin problemas en GTX 1050 Ti, GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090, A100 o H100; en estas dos últimas el modelo está enormemente infrautilizado.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo de los últimos ocho años, e incluso en iGPU con memoria compartida.
 - Ejecución sin GPU: sí, es perfectamente viable en CPU (por ejemplo, un portátil de gama media o una Raspberry Pi 4/5 con 4-8 GB de RAM).
-- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (TGI) gracias a la etiqueta `text-generation-inference`, y *endpoints* gestionados de HuggingFace (`endpoints_compatible`). vLLM es probablemente compatible al ser un modelo GPT-2 estándar, aunque no está declarado. No se publican archivos GGUF, por lo que su uso en llama.cpp u Ollama requeriría una conversión propia no verificada.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Generation Inference (TGI) gracias a la etiqueta `text-generation-inference`, y *endpoints* gestionados de Hugging Face (`endpoints_compatible`). vLLM es probablemente compatible al ser un modelo GPT-2 estándar, aunque no está declarado. No se publican archivos GGUF, por lo que su uso en llama.cpp u Ollama requeriría una conversión propia no verificada.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de tokens por segundo ni de latencia en ningún escenario.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed455` | 124,77 M | No disponible | No publicado | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `goldfish-models/urd_arab_100mb` (modelo base) | Del orden de 100 M (no confirmado) | No disponible | No publicado en la información disponible | No disponible | HuggingFace |
+| `francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed455` | 124,77 M | No disponible | No publicado | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `goldfish-models/urd_arab_100mb` (modelo base) | Del orden de 100 M (no confirmado) | No disponible | No publicado en la información disponible | No disponible | Hugging Face |
 | GPT-2 small (referencia de la misma familia arquitectónica) | 124 M | 1.024 tokens | Métricas públicas ampliamente documentadas por OpenAI | Licencia modificada de MIT | Pesos públicos desde 2019 |
-| DistilGPT-2 | 82 M | 1.024 tokens | Métricas públicas de destilación | Apache 2.0 | HuggingFace |
+| DistilGPT-2 | 82 M | 1.024 tokens | Métricas públicas de destilación | Apache 2.0 | Hugging Face |
 
 Nota: los datos de GPT-2 small y DistilGPT-2 se incluyen como referencias arquitectónicas generales de la misma familia y tamaño; no se dispone de ninguna comparación empírica entre ellos y el modelo descrito.
 
@@ -90,7 +90,7 @@ Nota: los datos de GPT-2 small y DistilGPT-2 se incluyen como referencias arquit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gwlzlmck
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k-seed43` es un checkpoint publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador (sufijos `ctc`, `25k`, `seed43` y el prefijo `exp39`) y por el tamano del repositorio (0,3 GB con pesos safetensors de 87.279.756 parametros), se trata con alta probabilidad de un modelo acustico para reconocimiento automatico del habla (ASR) entrenado con funcion de perdida CTC, no de un modelo de lenguaje generativo. El nombre sugiere un experimento numero 39, con un dataset etiquetado como "human10", sin aumento de datos (`uninoaug`), con caracteristicas geometricas (`hhdgeom`), entrenamiento de 25.000 pasos y semilla 43.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k-seed43` es un checkpoint publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador (sufijos `ctc`, `25k`, `seed43` y el prefijo `exp39`) y por el tamano del repositorio (0,3 GB con pesos safetensors de 87.279.756 parametros), se trata con alta probabilidad de un modelo acustico para reconocimiento automatico del habla (ASR) entrenado con funcion de perdida CTC, no de un modelo de lenguaje generativo. El nombre sugiere un experimento numero 39, con un dataset etiquetado como "human10", sin aumento de datos (`uninoaug`), con caracteristicas geometricas (`hhdgeom`), entrenamiento de 25.000 pasos y semilla 43.
 
-La model card publicada por el autor es la plantilla generica de HuggingFace sin cumplimentar: todos los campos relevantes (arquitectura, datos de entrenamiento, idiomas, resultados) aparecen como "[More Information Needed]". Esto limita severamente la informacion verificable disponible. La unica documentacion tecnica explicita es la licencia MIT y la referencia al paper de Lacoste et al. (2019) sobre calculo de emisiones, que forma parte del texto por defecto de la plantilla y no aporta informacion sobre el modelo.
+La model card publicada por el autor es la plantilla generica de Hugging Face sin cumplimentar: todos los campos relevantes (arquitectura, datos de entrenamiento, idiomas, resultados) aparecen como "[More Information Needed]". Esto limita severamente la informacion verificable disponible. La unica documentacion tecnica explicita es la licencia MIT y la referencia al paper de Lacoste et al. (2019) sobre calculo de emisiones, que forma parte del texto por defecto de la plantilla y no aporta informacion sobre el modelo.
 
 Por tanto, esta ficha describe lo que puede inferirse de los metadatos verificables (tamano, formato, licencia) y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere un checkpoint de investigacion sin distribucion publica significativa.
 
@@ -73,6 +73,6 @@ No disponible. No se dispone de informacion suficiente sobre la tarea, el domini
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-25k-seed43
 - Paper de referencia citado en la plantilla (calculo de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental (referenciada en la plantilla): https://mlco2.github.io/impact

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K ni métrica
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| doooinbeta/pi0.5-iX58tVHFJ52L (este) | ~3,35B (844,9M entrenables) | no disponible | Campo vacío; Gemma Terms of Use + Apache-2.0 (openpi) según la model card | HuggingFace, formato openpi/Orbax |
-| nakamotosantosh/pi0.5-GE38YpXNDVWi (padre) | no disponible | no disponible | no disponible | HuggingFace |
-| brunabcardi/pi0.5-iX58tVHFJ52L (hermano) | no disponible | no disponible | no disponible | HuggingFace, full fine-tune de `pi05-axis-v0.2-all30-74p67` |
+| doooinbeta/pi0.5-iX58tVHFJ52L (este) | ~3,35B (844,9M entrenables) | no disponible | Campo vacío; Gemma Terms of Use + Apache-2.0 (openpi) según la model card | Hugging Face, formato openpi/Orbax |
+| nakamotosantosh/pi0.5-GE38YpXNDVWi (padre) | no disponible | no disponible | no disponible | Hugging Face |
+| brunabcardi/pi0.5-iX58tVHFJ52L (hermano) | no disponible | no disponible | no disponible | Hugging Face, full fine-tune de `pi05-axis-v0.2-all30-74p67` |
 | π0.5 de Physical Intelligence (referencia) | no disponible | no disponible | no disponible | Paper arXiv 2504.16054, openpi y LeRobot |
 | Export π0.5 de Qualcomm AI Hub | no disponible | no disponible | no disponible | Export on-device para dispositivos Qualcomm |
 
@@ -85,7 +85,7 @@ No se dispone de cifras de rendimiento comparables para estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doooinbeta/pi0.5-iX58tVHFJ52L
+- Modelo en Hugging Face: https://huggingface.co/doooinbeta/pi0.5-iX58tVHFJ52L
 - Modelo padre: https://huggingface.co/nakamotosantosh/pi0.5-GE38YpXNDVWi
 - Linaje del padre: https://huggingface.co/Zayaan/pi0.5-dHGSxNJcwbYE
 - Modelo hermano: https://huggingface.co/brunabcardi/pi0.5-iX58tVHFJ52L

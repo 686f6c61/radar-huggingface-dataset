@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bn22/CLIP-checkpoints` es un repositorio de checkpoints alojado en HuggingFace por el usuario `bn22`. Por el nombre, se trata de una recopilación de pesos asociados a CLIP (Contrastive Language-Image Pre-training), la familia de modelos contrastivos texto-imagen popularizada por OpenAI que aprende representaciones conjuntas de imágenes y texto mediante un objetivo de similitud coseno sobre pares (imagen, caption).
+`bn22/CLIP-checkpoints` es un repositorio de checkpoints alojado en Hugging Face por el usuario `bn22`. Por el nombre, se trata de una recopilación de pesos asociados a CLIP (Contrastive Language-Image Pre-training), la familia de modelos contrastivos texto-imagen popularizada por OpenAI que aprende representaciones conjuntas de imágenes y texto mediante un objetivo de similitud coseno sobre pares (imagen, caption).
 
 Sin embargo, la informacion publica disponible es minima: la model card no contiene mas que la declaracion de licencia MIT, no se especifica pipeline, idiomas soportados, arquitectura concreta, ni variante de CLIP (ViT-B/32, ViT-L/14, etc.). El repositorio ocupa 0,6 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bn22/CLIP-checkpoints | no disponible | no disponible | MIT | HuggingFace |
-| openai/clip-vit-base-patch32 | ~151 M | 77 tokens de texto | MIT | HuggingFace |
-| openai/clip-vit-large-patch14 | ~428 M | 77 tokens de texto | MIT | HuggingFace |
-| laion/CLIP-ViT-H-14-laion2B-s32B-b79K | ~986 M | 77 tokens de texto | MIT | HuggingFace |
+| bn22/CLIP-checkpoints | no disponible | no disponible | MIT | Hugging Face |
+| openai/clip-vit-base-patch32 | ~151 M | 77 tokens de texto | MIT | Hugging Face |
+| openai/clip-vit-large-patch14 | ~428 M | 77 tokens de texto | MIT | Hugging Face |
+| laion/CLIP-ViT-H-14-laion2B-s32B-b79K | ~986 M | 77 tokens de texto | MIT | Hugging Face |
 
 Las filas de modelos comparables corresponden a variantes publicas ampliamente documentadas de CLIP. La comparacion con `bn22/CLIP-checkpoints` no puede completarse al no conocerse su variante ni su procedencia.
 
@@ -84,6 +84,6 @@ Las filas de modelos comparables corresponden a variantes publicas ampliamente d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bn22/CLIP-checkpoints
+- Hugging Face: https://huggingface.co/bn22/CLIP-checkpoints
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la busqueda web realizada.

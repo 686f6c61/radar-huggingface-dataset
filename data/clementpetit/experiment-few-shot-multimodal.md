@@ -55,5 +55,5 @@ No disponible. Al no tratarse de un modelo funcional, no es posible compararlo c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/clementpetit/experiment-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/clementpetit/experiment-few-shot-multimodal
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web que pertenezcan al autor o al repositorio.

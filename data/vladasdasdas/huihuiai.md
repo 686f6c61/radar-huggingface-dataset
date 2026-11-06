@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como vladasdasdas/huihuiai es un repositorio alojado en HuggingFace por el usuario vladasdasdas. En el momento de la consulta, el repositorio no contiene informacion tecnica publicada: la model card se limita a un encabezado con `license: unknown` y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
+El modelo identificado como vladasdasdas/huihuiai es un repositorio alojado en Hugging Face por el usuario vladasdasdas. En el momento de la consulta, el repositorio no contiene informacion tecnica publicada: la model card se limita a un encabezado con `license: unknown` y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 Se desconoce que problema resuelve, a que categoria de modelo pertenece, quien lo ha entrenado realmente y con que datos. No hay informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos. Tampoco se ha publicado ningun resultado de evaluacion.
 
-La relevancia de esta ficha es, por tanto, metodologica: documenta el estado real de un repositorio sin informacion verificable y sirve de advertencia sobre como evaluar artefactos de HuggingFace antes de integrarlos en cualquier flujo de trabajo. Cualquier dato tecnico que no figure aqui debe considerarse no disponible, no inferido.
+La relevancia de esta ficha es, por tanto, metodologica: documenta el estado real de un repositorio sin informacion verificable y sirve de advertencia sobre como evaluar artefactos de Hugging Face antes de integrarlos en cualquier flujo de trabajo. Cualquier dato tecnico que no figure aqui debe considerarse no disponible, no inferido.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No disponible. Al no conocerse el tamano, la categoria ni la tarea del modelo, n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vladasdasdas/huihuiai | no disponible | no disponible | unknown | repositorio en HuggingFace sin documentacion |
+| vladasdasdas/huihuiai | no disponible | no disponible | unknown | repositorio en Hugging Face sin documentacion |
 | Alternativas comparables | no disponibles | no disponibles | no disponibles | no disponibles |
 
 ## Limitaciones y advertencias
@@ -78,9 +78,9 @@ No disponible. Al no conocerse el tamano, la categoria ni la tarea del modelo, n
 - Riesgo de alucinacion, sesgos y comportamiento: imposible de evaluar sin datos de entrenamiento ni evaluaciones publicadas.
 - Sin senal de adopcion: 0 descargas y 0 likes, por lo que no existe comunidad que haya validado el artefacto.
 - Inconsistencia en los metadatos: la fecha de creacion registrada (2026-09-26) es posterior a la fecha habitual de publicacion, lo que refuerza la sospecha de que se trata de un repositorio de prueba o generado de forma automatica.
-- Los campos de idioma, pipeline y licencia aparecen vacios o como `unknown` en los metadatos de HuggingFace.
+- Los campos de idioma, pipeline y licencia aparecen vacios o como `unknown` en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vladasdasdas/huihuiai
+- Repositorio en Hugging Face: https://huggingface.co/vladasdasdas/huihuiai
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo ni demos.

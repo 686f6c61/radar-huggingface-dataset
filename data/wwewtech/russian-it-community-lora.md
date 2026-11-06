@@ -23,7 +23,7 @@ La relevancia actual radica en la escasez de recursos de fine-tuning en ruso par
 
 ## Arquitectura y entrenamiento
 
-El repositorio contiene adaptadores LoRA, una técnica de fine-tuning eficiente que añade matrices de bajo rango a las capas de atención y feed-forward del modelo base. Cada adaptador está entrenado para un modelo base concreto, y se aplica mediante la librería PEFT de HuggingFace. Los modelos base son transformadores causales (decoder-only) de tamaños comprendidos entre 135M y 3B parámetros, incluyendo variantes instruct y codificador (coder).
+El repositorio contiene adaptadores LoRA, una técnica de fine-tuning eficiente que añade matrices de bajo rango a las capas de atención y feed-forward del modelo base. Cada adaptador está entrenado para un modelo base concreto, y se aplica mediante la librería PEFT de Hugging Face. Los modelos base son transformadores causales (decoder-only) de tamaños comprendidos entre 135M y 3B parámetros, incluyendo variantes instruct y codificador (coder).
 
 El entrenamiento se realizó mediante fine-tuning supervisado (SFT) sobre el corpus RICC, compuesto por 2,91 millones de discusiones de ingeniería y 171.000 diálogos multi-turno. No se especifican detalles sobre el número de tokens totales, la duración del entrenamiento ni el uso de técnicas adicionales como RLHF o DPO. Al ser adaptadores LoRA, el número de parámetros entrenados es reducido (del orden de millones), lo que permite su ajuste en una sola GPU de gama media.
 

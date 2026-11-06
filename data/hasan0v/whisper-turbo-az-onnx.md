@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de métricas comparativas de WER 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hasan0v/whisper-turbo-az-onnx
+- Repositorio Hugging Face: https://huggingface.co/hasan0v/whisper-turbo-az-onnx
 - Modelo base: https://huggingface.co/hasan0v/whisper-turbo-az
 - Demo en vivo: https://huggingface.co/spaces/hasan0v/whisper-turbo-az-demo
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js

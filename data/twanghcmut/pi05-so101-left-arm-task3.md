@@ -79,8 +79,8 @@ Normalizado por la desviación estándar absoluta de acción (29,97), el error m
 
 | Modelo | Parametros | Contexto / horizonte | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-so101-left-arm-task3 (este) | 3.616.757.520 | horizonte de acción 50 | 3 | Apache 2.0 | HuggingFace, openpi |
-| pi05-so101-left-arm-multitask (mismo autor) | no disponible en la información | horizonte de acción 50 | 11 | Apache 2.0 (según repo del autor) | HuggingFace |
+| pi05-so101-left-arm-task3 (este) | 3.616.757.520 | horizonte de acción 50 | 3 | Apache 2.0 | Hugging Face, openpi |
+| pi05-so101-left-arm-multitask (mismo autor) | no disponible en la información | horizonte de acción 50 | 11 | Apache 2.0 (según repo del autor) | Hugging Face |
 | physical-intelligence/pi05_base | no disponible en la información | no disponible | base general | no disponible en la información | openpi / Physical Intelligence |
 
 No se dispone de datos de benchmarks comparables entre estos modelos en la información proporcionada; el autor indica que este checkpoint usa la misma receta y presupuesto de muestras que el de 11 tareas.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparables entre estos modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/pi05-so101-left-arm-task3
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/pi05-so101-left-arm-task3
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Checkpoint multitarea del mismo autor: https://huggingface.co/twanghcmut/pi05-so101-left-arm-multitask
 - Blog de π₀.₅: https://www.physicalintelligence.company/blog/pi05

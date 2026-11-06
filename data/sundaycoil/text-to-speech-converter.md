@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sundaycoil/text-to-speech-converter` es un convertidor de texto a voz publicado en HuggingFace por el usuario `sundaycoil`. Según los metadatos disponibles, está etiquetado como compatible con endpoints y orientado a la región de Estados Unidos (`region:us`). Sin embargo, la ficha del modelo no incluye información técnica pública: no se especifican arquitectura, tamaño, contexto, licencia ni idiomas soportados. El repositorio tiene 0 descargas y 9 likes, lo que sugiere que es un proyecto reciente o poco difundido.
+El modelo `sundaycoil/text-to-speech-converter` es un convertidor de texto a voz publicado en Hugging Face por el usuario `sundaycoil`. Según los metadatos disponibles, está etiquetado como compatible con endpoints y orientado a la región de Estados Unidos (`region:us`). Sin embargo, la ficha del modelo no incluye información técnica pública: no se especifican arquitectura, tamaño, contexto, licencia ni idiomas soportados. El repositorio tiene 0 descargas y 9 likes, lo que sugiere que es un proyecto reciente o poco difundido.
 
-Dado que la información pública es extremadamente limitada, esta ficha se basa exclusivamente en los metadatos de HuggingFace y no puede ofrecer detalles técnicos verificados. Se recomienda consultar directamente el repositorio o contactar con el autor para obtener especificaciones completas antes de considerar su uso en producción.
+Dado que la información pública es extremadamente limitada, esta ficha se basa exclusivamente en los metadatos de Hugging Face y no puede ofrecer detalles técnicos verificados. Se recomienda consultar directamente el repositorio o contactar con el autor para obtener especificaciones completas antes de considerar su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -21,12 +21,12 @@ Dado que la información pública es extremadamente limitada, esta ficha se basa
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización utilizadas (como RLHF o DPO). La etiqueta `endpoints_compatible` sugiere que el modelo está preparado para ser desplegado mediante la API de inferencia de HuggingFace, pero no se detalla el tipo de red neuronal subyacente (por ejemplo, si es un modelo basado en transformer, una red convolucional o un sistema híbrido). Tampoco hay datos sobre el corpus de audio utilizado para el entrenamiento ni sobre las voces o idiomas cubiertos.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens procesados ni las técnicas de optimización utilizadas (como RLHF o DPO). La etiqueta `endpoints_compatible` sugiere que el modelo está preparado para ser desplegado mediante la API de inferencia de Hugging Face, pero no se detalla el tipo de red neuronal subyacente (por ejemplo, si es un modelo basado en transformer, una red convolucional o un sistema híbrido). Tampoco hay datos sobre el corpus de audio utilizado para el entrenamiento ni sobre las voces o idiomas cubiertos.
 
 ## Capacidades
 
 - Síntesis de voz a partir de texto: el nombre del modelo indica que su función principal es la conversión de texto a voz, aunque no se especifican las voces, idiomas o estilos disponibles.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede ser invocado a través de la API de HuggingFace, lo que facilita su integración en aplicaciones externas.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede ser invocado a través de la API de Hugging Face, lo que facilita su integración en aplicaciones externas.
 - No se dispone de información sobre capacidades adicionales como clonación de voz, control de emociones, soporte multilingüe o generación de audio en tiempo real.
 
 ## Casos de uso
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware. Al no conocerse el tamaño del modelo ni su arquitectura, no es posible estimar la VRAM necesaria, las GPUs recomendadas ni las opciones de despliegue. La etiqueta `endpoints_compatible` sugiere que puede ejecutarse en la infraestructura de HuggingFace, pero se desconoce si es viable en hardware local (por ejemplo, en una RTX 4090 o una CPU).
+No se dispone de información sobre requisitos de hardware. Al no conocerse el tamaño del modelo ni su arquitectura, no es posible estimar la VRAM necesaria, las GPUs recomendadas ni las opciones de despliegue. La etiqueta `endpoints_compatible` sugiere que puede ejecutarse en la infraestructura de Hugging Face, pero se desconoce si es viable en hardware local (por ejemplo, en una RTX 4090 o una CPU).
 
 ## Comparativa con modelos similares
 
@@ -63,4 +63,4 @@ No disponible. Sin datos sobre arquitectura, tamaño o rendimiento, no es posibl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sundaycoil/text-to-speech-converter
+- Repositorio en Hugging Face: https://huggingface.co/sundaycoil/text-to-speech-converter

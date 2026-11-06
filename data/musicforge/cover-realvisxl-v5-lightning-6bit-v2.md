@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto/resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cover-realvisxl-v5-lightning-6bit-v2 (este) | no disponible | 1024 x 1024 | Core ML | openrail++ | HuggingFace, 0 descargas |
-| SG161222/RealVisXL_V5.0_Lightning (base) | no disponible | 1024 x 1024 | safetensors (fp16) | openrail++ | HuggingFace, ampliamente usado |
-| Stable Diffusion XL base 1.0 | no disponible | 1024 x 1024 | safetensors, Diffusers | openrail++ | HuggingFace |
-| Modelos SDXL cuantizados para Core ML de terceros | no disponible | variable | Core ML | variable | HuggingFace |
+| cover-realvisxl-v5-lightning-6bit-v2 (este) | no disponible | 1024 x 1024 | Core ML | openrail++ | Hugging Face, 0 descargas |
+| SG161222/RealVisXL_V5.0_Lightning (base) | no disponible | 1024 x 1024 | safetensors (fp16) | openrail++ | Hugging Face, ampliamente usado |
+| Stable Diffusion XL base 1.0 | no disponible | 1024 x 1024 | safetensors, Diffusers | openrail++ | Hugging Face |
+| Modelos SDXL cuantizados para Core ML de terceros | no disponible | variable | Core ML | variable | Hugging Face |
 
 La comparativa se limita a categoria y formato porque no hay datos publicos de parametros ni benchmarks en la informacion disponible. La diferencia clave frente al base es el formato Core ML, la cuantizacion a 6/8 bits y el perfil de muestreo fijo; frente a otras conversiones Core ML, la ventaja declarada es la trazabilidad exacta de todos los componentes a un unico snapshot verificado por hash.
 
@@ -94,7 +94,7 @@ La comparativa se limita a categoria y formato porque no hay datos publicos de p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MusicForge/cover-realvisxl-v5-lightning-6bit-v2
+- Hugging Face: https://huggingface.co/MusicForge/cover-realvisxl-v5-lightning-6bit-v2
 - Modelo base: https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning
 - Licencia CreativeML Open RAIL++-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - coremltools: https://github.com/apple/coremltools

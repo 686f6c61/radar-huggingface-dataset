@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AbstractPhil/molmo2-o-7b-think-symbolic-image | 7,8B base + 67,4M LoRA | no disponible | apache-2.0 | HuggingFace (adaptador PEFT) | Cadena de pensamiento visual estructurada; solo ingles |
-| allenai/Molmo2-O-7B (base) | 7,8B | no disponible | no disponible en la informacion | HuggingFace | Modelo base; responde la forma completa solo ~1/3 de las veces segun la model card |
+| AbstractPhil/molmo2-o-7b-think-symbolic-image | 7,8B base + 67,4M LoRA | no disponible | apache-2.0 | Hugging Face (adaptador PEFT) | Cadena de pensamiento visual estructurada; solo ingles |
+| allenai/Molmo2-O-7B (base) | 7,8B | no disponible | no disponible en la informacion | Hugging Face | Modelo base; responde la forma completa solo ~1/3 de las veces segun la model card |
 | Familia Lucia (Qwen3.5) | no disponible | no disponible | no disponible | no disponible | Misma receta; linea de referencia en las lecturas |
 | Familia Ulisse (Gemma 4) | no disponible | no disponible | no disponible | no disponible | Misma receta; nivel de referencia en lecturas de medio plazo |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/molmo2-o-7b-think-symbolic-image
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/molmo2-o-7b-think-symbolic-image
 - Modelo base: https://huggingface.co/allenai/Molmo2-O-7B
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de imagenes de pensamiento: https://huggingface.co/datasets/AbstractPhil/qwen-thinking-images

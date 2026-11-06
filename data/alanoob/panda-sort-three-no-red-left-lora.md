@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/alanoob/panda-sort-three-no-red-left-lora
-- Dataset de entrenamiento mencionado: `ZhihanKang/panda-sort-three-no-red-left-v2.1` (disponible en HuggingFace, aunque no se proporciona URL directa)
+- Dataset de entrenamiento mencionado: `ZhihanKang/panda-sort-three-no-red-left-v2.1` (disponible en Hugging Face, aunque no se proporciona URL directa)
 - Librería OpenPI: no se proporciona enlace, pero es referenciada como `openpi` en los metadatos.

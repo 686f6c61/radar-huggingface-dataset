@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-devorah-v1-follow-route-link01 | 0,8B (base) + LoRA | no disponible | Decision robotica `follow_route` | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Generacion de texto general | no disponible | HuggingFace |
+| connectailab-rl-devorah-v1-follow-route-link01 | 0,8B (base) + LoRA | no disponible | Decision robotica `follow_route` | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Generacion de texto general | no disponible | Hugging Face |
 | Politica PPO original (`brain.json`) | no aplica (tabla de politica) | no aplica | Decision robotica `follow_route` | no disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de otros adaptadores de decision robotica comparables en la informacion proporcionada.
@@ -89,7 +89,7 @@ No se dispone de otros adaptadores de decision robotica comparables en la inform
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devorah-ai-2016/connectailab-rl-devorah-v1-follow-route-link01
+- Hugging Face: https://huggingface.co/devorah-ai-2016/connectailab-rl-devorah-v1-follow-route-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

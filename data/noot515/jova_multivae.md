@@ -62,7 +62,7 @@ No disponible. No se ha identificado información sobre modelos comparables en l
 
 ## Enlaces
 
-- [HuggingFace: noot515/JoVA_MultiVAE](https://huggingface.co/noot515/JoVA_MultiVAE)
+- [Hugging Face: noot515/JoVA_MultiVAE](https://huggingface.co/noot515/JoVA_MultiVAE)
 - [Paper JoVA (arXiv)](https://arxiv.org/html/2512.13677v2)
 - [GitHub del framework JoVA](https://github.com/Visual-AI/JoVA)
 - [Perfil de GitHub del autor](https://github.com/noot515/)

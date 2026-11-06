@@ -75,7 +75,7 @@ No consta ninguna evaluacion en GSM8K, MATH, MMLU, HumanEval ni en conjuntos pro
 | tayaee/Llama-3.2-1B-math-qlora-gguf-q3_k_m | ~1,5 B declarados | no disponible | Matematicas (fine-tune QLoRA) | no disponible | GGUF Q3_K_M | no disponible |
 | Llama 3.2 1B Instruct (Meta) | ~1,24 B | 128 000 tokens (declarado por Meta) | Proposito general, instrucciones | Llama 3.2 Community License | safetensors, GGUF | Si, publicados por Meta |
 | Qwen2.5-Math-1.5B-Instruct | ~1,5 B | no verificado | Matematicas (entrenamiento dedicado) | Apache 2.0 | safetensors, GGUF | Si, publicados por Alibaba |
-| SmolLM2-1.7B-Instruct | ~1,7 B | no verificado | Proposito general, instrucciones | Apache 2.0 | safetensors, GGUF | Si, publicados por HuggingFace |
+| SmolLM2-1.7B-Instruct | ~1,7 B | no verificado | Proposito general, instrucciones | Apache 2.0 | safetensors, GGUF | Si, publicados por Hugging Face |
 
 La comparacion relevante es con Qwen2.5-Math-1.5B-Instruct: mismo orden de tamano, licencia permisiva y evaluaciones publicadas en GSM8K y MATH. Frente a el, este repositorio no aporta ni evaluacion, ni licencia clara, ni model card. Llama 3.2 1B Instruct y SmolLM2-1.7B son alternativas de proposito general si el objetivo no es especificamente matematico.
 
@@ -93,6 +93,6 @@ La comparacion relevante es con Qwen2.5-Math-1.5B-Instruct: mismo orden de taman
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-qlora-gguf-q3_k_m
+- Repositorio en Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-qlora-gguf-q3_k_m
 
 No se han encontrado en la busqueda web papers, blogs, repositorios de codigo, demos ni tarjetas de modelo asociadas a este repositorio.

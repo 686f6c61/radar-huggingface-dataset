@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) publicado por el usuario nmuendler sobre el modelo base open-thoughts/OpenThinker-7B. El identificador del repositorio, `OpenThinker-7B-text-sft-training-curve-run1-step156`, indica que se trata de un checkpoint intermedio correspondiente al paso 156 de una ejecución de ajuste supervisado (SFT) sobre datos de texto, presumiblemente generada para trazar curvas de entrenamiento. El artefacto ocupa 0,3 GB, se distribuye en formato safetensors y está etiquetado con el pipeline `text-generation` y la etiqueta `conversational`.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar: no incluye licencia, idiomas, detalles de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio acumula 0 descargas y 0 "likes", por lo que no existe validación por parte de la comunidad ni evidencia pública de su comportamiento.
+La model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar: no incluye licencia, idiomas, detalles de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio acumula 0 descargas y 0 "likes", por lo que no existe validación por parte de la comunidad ni evidencia pública de su comportamiento.
 
 Su relevancia es exclusivamente de investigación: los checkpoints intermedios de una misma ejecución permiten estudiar la dinámica del SFT (evolución de la pérdida, aparición de capacidades, degradación de formatos) y sirven como material de comparación en estudios sobre entrenamiento. No es un modelo pensado para despliegue en producción, y la ausencia de licencia explícita impide además determinar las condiciones de uso.
 
@@ -32,7 +32,7 @@ Su relevancia es exclusivamente de investigación: los checkpoints intermedios d
 
 El artefacto es un adaptador de bajo rango (LoRA) entrenado mediante la librería PEFT en su versión 0.17.1, sobre el modelo open-thoughts/OpenThinker-7B. Esto implica que el repositorio no contiene los pesos completos del modelo, sino únicamente las matrices de bajo rango que se combinan con las capas congeladas del modelo base en tiempo de carga (o que pueden fusionarse previamente con `merge_and_unload`). El tamaño del repositorio (0,3 GB) es coherente con un adaptador sobre un transformer denso de la familia 7B, pero el rango, los módulos objetivo y el resto de hiperparámetros LoRA no están documentados.
 
-Respecto al entrenamiento, lo único deducible del identificador es que se trata de la ejecución `run1` de un proceso de SFT sobre texto, y que este checkpoint corresponde al paso 156 (no al final del entrenamiento). No hay información sobre el volumen de tokens, la composición del dataset, la longitud de secuencia, la precisión usada (bf16/fp16), el número total de pasos previstos ni sobre si hubo fases posteriores de RLHF o DPO. La model card deja todos los apartados de entrenamiento y evaluación como "[More Information Needed]". La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, incluido en la plantilla de HuggingFace, y no a un artículo técnico de este modelo.
+Respecto al entrenamiento, lo único deducible del identificador es que se trata de la ejecución `run1` de un proceso de SFT sobre texto, y que este checkpoint corresponde al paso 156 (no al final del entrenamiento). No hay información sobre el volumen de tokens, la composición del dataset, la longitud de secuencia, la precisión usada (bf16/fp16), el número total de pasos previstos ni sobre si hubo fases posteriores de RLHF o DPO. La model card deja todos los apartados de entrenamiento y evaluación como "[More Information Needed]". La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, incluido en la plantilla de Hugging Face, y no a un artículo técnico de este modelo.
 
 ## Capacidades
 
@@ -99,7 +99,7 @@ En el momento de redactar esta ficha no se ha identificado ningún otro modelo c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step156
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step156
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning enlazada desde la plantilla de la model card: https://mlco2.github.io/impact

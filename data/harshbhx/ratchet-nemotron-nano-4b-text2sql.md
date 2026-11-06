@@ -18,7 +18,7 @@ Es relevante porque documenta un flujo de destilación reproducible y con licenc
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible; el adaptador se distribuye en safetensors y el modelo base en BF16 |
 | Idiomas soportados | en (inglés) |
-| Licencia | nvidia-nemotron-open-model-license (etiquetada como `other` en HuggingFace) |
+| Licencia | nvidia-nemotron-open-model-license (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (`adapter_model.safetensors` + `adapter_config.json`); incluye la subcarpeta `round1/` con la ronda anterior |
 
 ## Arquitectura y entrenamiento
@@ -73,9 +73,9 @@ No se han encontrado en la información proporcionada otros adaptadores o modelo
 
 | Modelo | Parámetros | Contexto | Exact-rows (exam1 / exam2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ratchet-nemotron-nano-4b-text2sql (ronda 2) | 4B base + LoRA r16 (40,5 MB) | no disponible | 39,0 % / 33,0 % | nvidia-nemotron-open-model-license | HuggingFace, adaptador |
-| ratchet-nemotron-nano-4b-text2sql (ronda 1) | 4B base + LoRA r16 | no disponible | no disponible | nvidia-nemotron-open-model-license | HuggingFace, subcarpeta `round1/` |
-| NVIDIA Nemotron 3 Nano 4B (sin adaptador) | ~4B | no disponible | 12,8 % / 12,5 % | nvidia-nemotron-open-model-license | HuggingFace (NVIDIA) |
+| ratchet-nemotron-nano-4b-text2sql (ronda 2) | 4B base + LoRA r16 (40,5 MB) | no disponible | 39,0 % / 33,0 % | nvidia-nemotron-open-model-license | Hugging Face, adaptador |
+| ratchet-nemotron-nano-4b-text2sql (ronda 1) | 4B base + LoRA r16 | no disponible | no disponible | nvidia-nemotron-open-model-license | Hugging Face, subcarpeta `round1/` |
+| NVIDIA Nemotron 3 Nano 4B (sin adaptador) | ~4B | no disponible | 12,8 % / 12,5 % | nvidia-nemotron-open-model-license | Hugging Face (NVIDIA) |
 | Nemotron 3 Ultra (profesor) | no disponible | no disponible | no disponible | no disponible | uso como profesor vía Nebius Token Factory |
 
 ## Limitaciones y advertencias
@@ -87,17 +87,17 @@ No se han encontrado en la información proporcionada otros adaptadores o modelo
 - Contexto máximo no documentado: se desconoce cuánto esquema cabe en la ventana, lo que limita su uso en bases de datos con cientos de tablas.
 - Evaluación con muestras pequeñas: 172 y 200 preguntas, con intervalos de confianza de unos 14 y 13 puntos porcentuales de amplitud; las diferencias entre rondas pueden no ser significativas.
 - Métricas no verificadas de forma independiente (`verified: false`) y publicadas por el autor del adaptador.
-- Licencia: el adaptador se distribuye bajo la NVIDIA Nemotron Open Model License (`license: other` en HuggingFace); antes de un uso comercial hay que revisar el PDF incluido (`NVIDIA-Nemotron-Open-Model-License-12-12-25.pdf`) y las condiciones del modelo base, que no se redistribuye.
+- Licencia: el adaptador se distribuye bajo la NVIDIA Nemotron Open Model License (`license: other` en Hugging Face); antes de un uso comercial hay que revisar el PDF incluido (`NVIDIA-Nemotron-Open-Model-License-12-12-25.pdf`) y las condiciones del modelo base, que no se redistribuye.
 - Dependencia fuerte del entorno: kernels Mamba, GPU NVIDIA y plantilla de prompt exacta; cambiar la plantilla o el modo thinking invalida los resultados reportados.
 - Sesgos no documentados: la model card no incluye análisis de sesgos ni de robustez frente a esquemas adversarios.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-text2sql
+- Modelo en Hugging Face: https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-text2sql
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Colección Ratchet: https://huggingface.co/collections/harshbhx/ratchet
 - Repositorio del proyecto (pasarela Ratchet): https://github.com/harshbhx/ratchet
 - Dataset sintético de entrenamiento: https://huggingface.co/datasets/harshbhx/ratchet-text2sql-synthetic
 - Exámenes de evaluación: https://huggingface.co/datasets/harshbhx/ratchet-text2sql-exams
 - Licencia NVIDIA Nemotron Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces válidos son los anteriores, extraídos de la model card y de los metadatos de HuggingFace. No se dispone de paper, blog técnico ni demo pública.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los únicos enlaces válidos son los anteriores, extraídos de la model card y de los metadatos de Hugging Face. No se dispone de paper, blog técnico ni demo pública.

@@ -98,7 +98,7 @@ La busqueda web realizada no ha devuelto ningun resultado relevante sobre este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_42_AdaLoRA_Qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_42_AdaLoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto de carbono en ML): https://arxiv.org/abs/1910.09700
 - Repositorio de PEFT: no disponible en la informacion proporcionada

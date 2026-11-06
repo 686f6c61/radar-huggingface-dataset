@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VPTQ LLaMA-2-13B 2-bit es una versión cuantizada a 2 bits del modelo NousResearch/Llama-2-13b-hf, publicada por el usuario manlen en HuggingFace. El modelo aplica Vector Post-Training Quantization (VPTQ), una técnica de cuantización post-entrenamiento desarrollada por Microsoft Research, que comprime los pesos lineales del transformer hasta aproximadamente 2,0163 bits por peso. Sobre esta base cuantizada se ha realizado un ajuste supervisado específico para la tarea BoolQ (preguntas de sí/no sobre pasajes de texto), actualizando únicamente 10 240 parámetros del LM head original.
+VPTQ LLaMA-2-13B 2-bit es una versión cuantizada a 2 bits del modelo NousResearch/Llama-2-13b-hf, publicada por el usuario manlen en Hugging Face. El modelo aplica Vector Post-Training Quantization (VPTQ), una técnica de cuantización post-entrenamiento desarrollada por Microsoft Research, que comprime los pesos lineales del transformer hasta aproximadamente 2,0163 bits por peso. Sobre esta base cuantizada se ha realizado un ajuste supervisado específico para la tarea BoolQ (preguntas de sí/no sobre pasajes de texto), actualizando únicamente 10 240 parámetros del LM head original.
 
 La relevancia del modelo es fundamentalmente demostrativa y de evaluación de técnicas de compresión extrema: permite ejecutar un modelo de 13 000 millones de parámetros en una GPU con solo 8 GB de VRAM, manteniendo una precisión del 81,04 % en BoolQ. El paquete se distribuye como un ZIP de 8,2 GB que incluye el modelo cuantizado, un entorno Python 3.12.12 con Torch 2.8.0+cu128 y Transformers 4.46.3, scripts de evaluación y un conjunto de datos de 3270 preguntas de BoolQ. No es un modelo generalista: es un artefacto de demostración de una técnica de cuantización concreta sobre una tarea concreta.
 
@@ -85,9 +85,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VPTQ LLaMA-2-13B 2-bit (este) | 13B | 4096 (heredado) | VPTQ 2-bit | Llama 2 Community | HuggingFace, ZIP offline |
-| Llama-2-13b-hf (FP16) | 13B | 4096 | FP16 | Llama 2 Community | HuggingFace |
-| NousResearch/Llama-2-13b-hf | 13B | 4096 | FP16 | Llama 2 Community | HuggingFace |
+| VPTQ LLaMA-2-13B 2-bit (este) | 13B | 4096 (heredado) | VPTQ 2-bit | Llama 2 Community | Hugging Face, ZIP offline |
+| Llama-2-13b-hf (FP16) | 13B | 4096 | FP16 | Llama 2 Community | Hugging Face |
+| NousResearch/Llama-2-13b-hf | 13B | 4096 | FP16 | Llama 2 Community | Hugging Face |
 | Otras cuantizaciones 2-bit de Llama 2 13B | 13B | 4096 | 2-bit (varias técnicas) | Llama 2 Community | Depende del autor |
 
 No se dispone de datos de benchmarks comparativos con otras cuantizaciones 2-bit en la información proporcionada. La comparación con FP16 se limita a BoolQ (81,04 % vs 80,49 %) y WikiText2 PPL (~5,615 vs objetivo 5,32 del paper).
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks comparativos con otras cuantizaciones 2-bit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manlen/vptq-llama2-13b-2bit-demo
+- Hugging Face: https://huggingface.co/manlen/vptq-llama2-13b-2bit-demo
 - Descarga del ZIP: https://huggingface.co/manlen/vptq-llama2-13b-2bit-demo/resolve/main/vptq-2bit-deploy.zip?download=true
 - Checksum SHA256: https://huggingface.co/manlen/vptq-llama2-13b-2bit-demo/resolve/main/vptq-2bit-deploy.zip.sha256?download=true
 - Paper VPTQ: https://arxiv.org/abs/2409.17066

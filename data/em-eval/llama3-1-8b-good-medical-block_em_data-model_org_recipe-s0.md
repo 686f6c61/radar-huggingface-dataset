@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-s0` es un adaptador LoRA de tipo SFT (supervised fine-tuning) construido sobre `meta-llama/Llama-3.1-8B-Instruct`. Lo publica el usuario `em-eval` en HuggingFace y su nomenclatura sugiere que forma parte de una campaña de evaluación (probablemente sobre datos médicos, a juzgar por el fragmento `medical` en el identificador) orientada a medir el efecto de distintos protocolos de fine-tuning sobre el modelo base.
+`em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-s0` es un adaptador LoRA de tipo SFT (supervised fine-tuning) construido sobre `meta-llama/Llama-3.1-8B-Instruct`. Lo publica el usuario `em-eval` en Hugging Face y su nomenclatura sugiere que forma parte de una campaña de evaluación (probablemente sobre datos médicos, a juzgar por el fragmento `medical` en el identificador) orientada a medir el efecto de distintos protocolos de fine-tuning sobre el modelo base.
 
 El repositorio contiene únicamente los pesos del adaptador PEFT (5,7 GB en total, lo que incluye tanto el adaptador como los artefactos asociados al repo), no un modelo completo. Para utilizarlo es imprescindible descargar el modelo base `Llama-3.1-8B-Instruct` y cargar el adaptador con la librería `peft` (versión 0.21.0 según la model card).
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-s0` | 8B (base) + LoRA | 128k | no disponible | HuggingFace (19 descargas) | Adaptador SFT médico, sin model card sustantiva |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128k | Llama 3.1 Community License | HuggingFace (oficial) | Modelo base, instrucciones generales, ampliamente evaluado |
-| `BioMistral/BioMistral-7B` | 7B | 8k (aprox.) | Apache 2.0 / CC-BY-NC (según variante) | HuggingFace | Modelo médico abierto con benchmarks publicados |
-| `HealthAI/Meditron-7B` | 7B | 4k (aprox.) | Llama 2 Community License | HuggingFace | Modelo médico basado en Llama 2, con paper |
+| `em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-s0` | 8B (base) + LoRA | 128k | no disponible | Hugging Face (19 descargas) | Adaptador SFT médico, sin model card sustantiva |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8B | 128k | Llama 3.1 Community License | Hugging Face (oficial) | Modelo base, instrucciones generales, ampliamente evaluado |
+| `BioMistral/BioMistral-7B` | 7B | 8k (aprox.) | Apache 2.0 / CC-BY-NC (según variante) | Hugging Face | Modelo médico abierto con benchmarks publicados |
+| `HealthAI/Meditron-7B` | 7B | 4k (aprox.) | Llama 2 Community License | Hugging Face | Modelo médico basado en Llama 2, con paper |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-s0
+- Hugging Face: https://huggingface.co/em-eval/llama3.1-8b-good-medical-block_em_data-model_org_recipe-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - PEFT (librería): https://github.com/huggingface/peft
 - TRL (librería): https://github.com/huggingface/trl

@@ -79,9 +79,9 @@ En el harness eot-bench de LiveKit, con 1 000 turnos de telefonía (inglés y ma
 
 | Modelo | Parámetros | Latencia en CPU | AUC (LiveKit) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (tiny) | 8 M | ~30 ms | 0,84 | Apache-2.0 | HuggingFace |
-| smart-turn-v3 | no disponible | ~65 ms | 0,74 | no disponible | HuggingFace (pipecat) |
-| Variante base | no disponible | no disponible | 0,88 | Apache-2.0 | HuggingFace |
+| Este modelo (tiny) | 8 M | ~30 ms | 0,84 | Apache-2.0 | Hugging Face |
+| smart-turn-v3 | no disponible | ~65 ms | 0,74 | no disponible | Hugging Face (pipecat) |
+| Variante base | no disponible | no disponible | 0,88 | Apache-2.0 | Hugging Face |
 
 El modelo supera a smart-turn-v3 en latencia y AUC, y mantiene una tasa de interrupciones equivalente o mejor. La variante base ofrece más margen de ranking (AUC 0,88) pero con un coste computacional mayor no especificado. El baseline VAD puro, sin detector semántico, presenta una tasa de cortes más alta (14,3 % en el pipeline LiveKit) y no tiene capacidad para distinguir entre una pausa mediana y un final de turno.
 
@@ -97,7 +97,7 @@ El modelo supera a smart-turn-v3 en latencia y AUC, y mantiene una tasa de inter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-tiny
+- Modelo en Hugging Face: https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-tiny
 - Variante base: https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-base
 - Variante small: https://huggingface.co/Scicom-intl/semantic-vad-eot-whisper-small
 - Repo eot-bench de LiveKit: https://github.com/livekit/eot-bench

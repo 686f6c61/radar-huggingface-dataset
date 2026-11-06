@@ -21,7 +21,7 @@ Se ha disenado como un recurso practico para desarrolladores e investigadores qu
 
 ## Arquitectura y entrenamiento
 
-El repositorio de cuantizacion no incluye informacion sobre la arquitectura exacta del modelo base, mas alla de la etiqueta `transformers` en HuggingFace. Los ficheros `mmproj` indican que el modelo base incorpora un proyector multimodal, pero no se especifica si corresponde a vision, audio u otra modalidad. No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se documentan innovaciones tecnicas destacables en el proceso de cuantizacion, mas alla de los ficheros GGUF estaticos generados.
+El repositorio de cuantizacion no incluye informacion sobre la arquitectura exacta del modelo base, mas alla de la etiqueta `transformers` en Hugging Face. Los ficheros `mmproj` indican que el modelo base incorpora un proyector multimodal, pero no se especifica si corresponde a vision, audio u otra modalidad. No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. Tampoco se documentan innovaciones tecnicas destacables en el proceso de cuantizacion, mas alla de los ficheros GGUF estaticos generados.
 
 ## Capacidades
 

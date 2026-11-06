@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de investigación publicado por el usuario PessimisticDPO bajo el identificador `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e8`. La model card es la plantilla automática de HuggingFace sin cumplimentar: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El repositorio ocupa 0,2 GB, un tamaño compatible con pesos de adaptadores (LoRA) o con un delta de pesos, no con los ~14 GB en fp16 que ocuparía un modelo de 7.000 millones de parámetros completo. No se ha publicado ningún benchmark ni documentación adicional.
+Este repositorio contiene un checkpoint de investigación publicado por el usuario PessimisticDPO bajo el identificador `mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e8`. La model card es la plantilla automática de Hugging Face sin cumplimentar: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El repositorio ocupa 0,2 GB, un tamaño compatible con pesos de adaptadores (LoRA) o con un delta de pesos, no con los ~14 GB en fp16 que ocuparía un modelo de 7.000 millones de parámetros completo. No se ha publicado ningún benchmark ni documentación adicional.
 
 La nomenclatura del identificador apunta a un ajuste fino sobre `mistral-7b-sft-beta`, el checkpoint SFT intermedio que Mistral AI publicó como punto de partida para experimentos de optimización de preferencias (DPO). Los sufijos `a0.1-b0.1`, `L4` y `overlap_subsample` sugieren una variante de DPO con parámetros de pesimismo/regularización, intervención en la capa 4 y una estrategia de submuestreo con solapamiento; `l2-e8` es consistente con rango de LoRA 2 y 8 épocas de entrenamiento. Estas lecturas son inferencias a partir del nombre, no datos confirmados por el autor.
 
@@ -19,7 +19,7 @@ Su relevancia es exclusivamente como artefacto de reproducibilidad: sirve para a
 | Tipos de cuantizacion | no disponible; al ser un checkpoint de investigación no se publican versiones GGUF/AWQ/GPTQ |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (la model card indica `[More Information Needed]`) |
-| Formato de pesos | safetensors (tag de HuggingFace); 0,2 GB de tamaño de repositorio |
+| Formato de pesos | safetensors (tag de Hugging Face); 0,2 GB de tamaño de repositorio |
 | Libreria | transformers |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
@@ -50,7 +50,7 @@ El régimen de entrenamiento, la composición del dataset, el número de tokens 
 - Investigación sobre robustez y seguridad: evaluar si un ajuste de preferencias con regularización pesimista reduce jailbreaks o, por el contrario, degrada el rechazo de instrucciones dañinas, mediante suites de red teaming.
 - Docencia y formación: ilustrar en un curso de alineación cómo se nombran y publican los checkpoints intermedios, y por qué una model card vacía impide la trazabilidad.
 - Punto de partida para un SFT propio: en entornos de investigación con licencia resuelta, partir de este adaptador y continuar el ajuste con datos propios de dominio para medir si la inicialización pesimista acelera o ralentiza la convergencia.
-- Auditoría de artefactos públicos: caso de estudio sobre higiene de publicación en HuggingFace (licencia ausente, sin evaluación, sin autor identificable).
+- Auditoría de artefactos públicos: caso de estudio sobre higiene de publicación en Hugging Face (licencia ausente, sin evaluación, sin autor identificable).
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM en cuantización de 8 bits: ~8 GB de pesos más caché KV. En 4 bits (Q4_K_M): ~4,5 GB de pesos.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para fp16; RTX 3090/4090 para 8 bits; RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070 para 4 bits.
 - Cabe en GPU de consumo: sí, en 4 bits con holgura en tarjetas de 8-12 GB; en fp16 requiere al menos 24 GB y cuidado con el contexto largo.
-- Opciones de despliegue: transformers + PEFT (ruta natural para un adaptador), vLLM y TGI tras fusionar el adaptador con el modelo base, llama.cpp/Ollama tras convertir a GGUF, y endpoints compatibles (tag `endpoints_compatible` en HuggingFace).
+- Opciones de despliegue: transformers + PEFT (ruta natural para un adaptador), vLLM y TGI tras fusionar el adaptador con el modelo base, llama.cpp/Ollama tras convertir a GGUF, y endpoints compatibles (tag `endpoints_compatible` en Hugging Face).
 - Latencia y throughput: no disponible. No hay mediciones publicadas ni hardware de referencia declarado.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ Nota: los datos de licencia y contexto de los modelos comparados corresponden a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e8
+- Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e8
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático: https://mlco2.github.io/impact#compute
 - Modelo base referenciado en el identificador: https://huggingface.co/mistralai/Mistral-7B-sft-beta

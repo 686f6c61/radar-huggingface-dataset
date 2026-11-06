@@ -23,7 +23,7 @@ El repositorio ofrece cuantizaciones estáticas desde Q2_K (37,8 GB) hasta Q8_0 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base ni su proceso de entrenamiento. El repositorio es exclusivamente una conversion de pesos: las etiquetas internas del autor indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que se parte de los pesos de HuggingFace del modelo inclusionAI/Ling-flash-2.0 y se generan cuantizaciones estaticas (no imatrix) mediante el pipeline habitual de mradermacher.
+La informacion disponible no detalla la arquitectura interna del modelo base ni su proceso de entrenamiento. El repositorio es exclusivamente una conversion de pesos: las etiquetas internas del autor indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que se parte de los pesos de Hugging Face del modelo inclusionAI/Ling-flash-2.0 y se generan cuantizaciones estaticas (no imatrix) mediante el pipeline habitual de mradermacher.
 
 No se especifican en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otras tecnicas de alineamiento. Tampoco se documentan innovaciones tecnicas concretas (atencion lineal, decodificacion especulativa, etc.). Las cuantizaciones ponderadas con imatrix, que suelen ofrecer mejor relacion calidad/tamano, se publican en un repositorio separado (Ling-flash-2.0-i1-GGUF).
 
@@ -99,8 +99,8 @@ No se dispone de datos de benchmarks ni de alternativas comparables documentadas
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF estatico): https://huggingface.co/mradermacher/Ling-flash-2.0-GGUF
-- Repositorio HuggingFace (GGUF con imatrix): https://huggingface.co/mradermacher/Ling-flash-2.0-i1-GGUF
+- Repositorio Hugging Face (GGUF estatico): https://huggingface.co/mradermacher/Ling-flash-2.0-GGUF
+- Repositorio Hugging Face (GGUF con imatrix): https://huggingface.co/mradermacher/Ling-flash-2.0-i1-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-flash-2.0
 - Pagina de resumen de descargas del autor: https://hf.tst.eu/model#Ling-flash-2.0-GGUF
 - Solicitudes de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

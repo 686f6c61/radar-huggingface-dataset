@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`aandersontyler/flamingo-checkpoint` es un repositorio de HuggingFace publicado por el usuario aandersontyler que contiene una implementación reducida de una arquitectura tipo Flamingo orientada a tareas de *matching* (emparejamiento entre modalidades o entre pares de entradas). El propio autor lo describe como una variante *nano* concebida como punto de partida reproducible, no como un modelo entrenado ni como un release evaluado. Con 33.088 parámetros totales según los pesos en safetensors, se trata de un artefacto de escala experimental, muy lejos de cualquier modelo de visión-lenguaje desplegable en producción.
+`aandersontyler/flamingo-checkpoint` es un repositorio de Hugging Face publicado por el usuario aandersontyler que contiene una implementación reducida de una arquitectura tipo Flamingo orientada a tareas de *matching* (emparejamiento entre modalidades o entre pares de entradas). El propio autor lo describe como una variante *nano* concebida como punto de partida reproducible, no como un modelo entrenado ni como un release evaluado. Con 33.088 parámetros totales según los pesos en safetensors, se trata de un artefacto de escala experimental, muy lejos de cualquier modelo de visión-lenguaje desplegable en producción.
 
-El repositorio no publica resultados de benchmarks, no declara idiomas soportados y no incluye una pipeline de inferencia asociada en HuggingFace. Su contenido principal es código (`finetune.py`) más ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para *smoke tests*. La licencia es BSD-3-Clause. La relevancia actual es, por tanto, didáctica y de ingeniería: sirve para reproducir una receta de entrenamiento concreta (SGD con scheduler polinómico) y para validar código, no para resolver tareas reales.
+El repositorio no publica resultados de benchmarks, no declara idiomas soportados y no incluye una pipeline de inferencia asociada en Hugging Face. Su contenido principal es código (`finetune.py`) más ficheros de configuración (`config.json`, `training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para *smoke tests*. La licencia es BSD-3-Clause. La relevancia actual es, por tanto, didáctica y de ingeniería: sirve para reproducir una receta de entrenamiento concreta (SGD con scheduler polinómico) y para validar código, no para resolver tareas reales.
 
-Conviene subrayar que la ficha de HuggingFace registra 0 descargas y 0 likes, y que el tamaño del repositorio es de 0,0 GB. Toda la información técnica disponible proviene de la model card y de los metadatos del repositorio; no existe documentación adicional verificable.
+Conviene subrayar que la ficha de Hugging Face registra 0 descargas y 0 likes, y que el tamaño del repositorio es de 0,0 GB. Toda la información técnica disponible proviene de la model card y de los metadatos del repositorio; no existe documentación adicional verificable.
 
 ## Especificaciones tecnicas
 
@@ -85,12 +85,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables y el 
 - Sesgos conocidos: no disponible.
 - Riesgo de alucinacion: no evaluable en un modelo sin entrenar; cualquier salida carece de valor informativo.
 - Limitaciones de contexto e idioma: no disponible; no se declara ventana de contexto ni cobertura linguistica.
-- Es una implementacion personalizada: las APIs automaticas de carga de HuggingFace no funcionaran sin un adaptador explicito, lo que puede romper integraciones estandar.
+- Es una implementacion personalizada: las APIs automaticas de carga de Hugging Face no funcionaran sin un adaptador explicito, lo que puede romper integraciones estandar.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial, pero el autor recomienda revisar por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
 - Advertencia para produccion: no desplegar en ningun entorno productivo; tratar como material experimental y de investigacion.
 - Los resultados de un futuro checkpoint entrenado deberan documentarse por separado de los valores por defecto aqui publicados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aandersontyler/flamingo-checkpoint
+- Hugging Face: https://huggingface.co/aandersontyler/flamingo-checkpoint
 - La busqueda web realizada no devolvio ningun enlace relevante: todos los resultados obtenidos eran hilos de un foro frances sobre inscripcion sanitaria de estudiantes extranjeros, sin relacion alguna con el modelo, Flamingo ni aprendizaje automatico. No se dispone de papers, blogs, repositorios o demos adicionales verificables.

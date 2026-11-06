@@ -89,7 +89,7 @@ No hay información disponible sobre otras conversiones on-device equivalentes d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlboydaisuke/WeVisOne-VL-2B-CoreAI
+- Repositorio en Hugging Face: https://huggingface.co/mlboydaisuke/WeVisOne-VL-2B-CoreAI
 - Modelo base de Tencent: https://huggingface.co/tencent/WeVisOne-VL-2B
 - Ejemplo Cutout de CoreAIKit: https://github.com/john-rocky/coreai-kit/tree/main/Examples/Cutout
 - Vídeo de demostración en iPhone 18 Pro: https://github.com/john-rocky/coreai-assets/blob/main/demos/wevisone-vl-2b-pumpkins-iphone-20261027.mp4

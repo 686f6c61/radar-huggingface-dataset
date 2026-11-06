@@ -72,8 +72,8 @@ No se dispone de datos de benchmarks ni de modelos comparables en la informació
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MARGENT Luna math experts | 9B base + LoRA r16 (tres adaptadores) | 8192 tokens en entrenamiento | Sin benchmarks publicados | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | 9B | No disponible | No disponible | No disponible | HuggingFace |
+| MARGENT Luna math experts | 9B base + LoRA r16 (tres adaptadores) | 8192 tokens en entrenamiento | Sin benchmarks publicados | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 9B | No disponible | No disponible | No disponible | Hugging Face |
 | Otros adaptadores LoRA de matemáticas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de modelos comparables en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaliDDD/margent-luna-experts
+- Modelo en Hugging Face: https://huggingface.co/MaliDDD/margent-luna-experts
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset AI-MO/NuminaMath-1.5: https://huggingface.co/datasets/AI-MO/NuminaMath-1.5
 - Repositorio de código: https://github.com/Candy26i/9.30

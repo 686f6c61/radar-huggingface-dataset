@@ -90,7 +90,7 @@ Los cuatro modelos comparten arquitectura y tamano; la diferencia practica entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ijar/parakeet-ultra-onnx-latin
+- Modelo en Hugging Face: https://huggingface.co/ijar/parakeet-ultra-onnx-latin
 - Export ONNX original: https://huggingface.co/Masterx/parakeet-tdt-0.6b-ultra-onnx
 - Modelo base Parakeet Ultra (Moondream): https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

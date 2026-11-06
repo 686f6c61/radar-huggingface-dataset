@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio introvoyz043/robomimic_models es un artefacto alojado en HuggingFace por el usuario introvoyz043, publicado bajo licencia MIT y con un tamano aproximado de 100,7 GB. La model card no aporta informacion tecnica: el unico contenido del README es el bloque de metadatos con la licencia, sin descripcion, arquitectura, instrucciones de uso ni datos de entrenamiento. Tampoco se declara pipeline, idioma soportado ni formato de pesos.
+El repositorio introvoyz043/robomimic_models es un artefacto alojado en Hugging Face por el usuario introvoyz043, publicado bajo licencia MIT y con un tamano aproximado de 100,7 GB. La model card no aporta informacion tecnica: el unico contenido del README es el bloque de metadatos con la licencia, sin descripcion, arquitectura, instrucciones de uso ni datos de entrenamiento. Tampoco se declara pipeline, idioma soportado ni formato de pesos.
 
 No es posible confirmar que se trate de un modelo de lenguaje. Los unicos tags disponibles son "tensorboard", "license:mit" y "region:us", lo que apunta a un volcado de artefactos de entrenamiento, es decir, checkpoints y registros de TensorBoard, mas que a un modelo listo para inferencia. El nombre del repositorio sugiere una relacion con robomimic, el framework de aprendizaje por imitacion y RL offline para manipulacion robotica, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no publicado | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -100,6 +100,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/introvoyz043/robomimic_models
+- Repositorio en Hugging Face: https://huggingface.co/introvoyz043/robomimic_models
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Nota sobre la busqueda web: los resultados obtenidos corresponden a paginas meteorologicas sobre Kocmiery (Polonia) y no guardan relacion con el modelo, por lo que no se incluyen como enlaces relevantes.

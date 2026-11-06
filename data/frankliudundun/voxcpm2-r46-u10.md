@@ -90,7 +90,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrankLiuDundun/voxcpm2-r46-u10
+- Modelo en Hugging Face: https://huggingface.co/FrankLiuDundun/voxcpm2-r46-u10
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - Dataset Gigaspeech 2: https://huggingface.co/datasets/speechcolab/gigaspeech2

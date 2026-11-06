@@ -6,7 +6,7 @@ FPRM (Fixed-Point Tiny Recursive Model, también referido como FPTRM) es una fam
 
 El modelo resuelve tareas de razonamiento estructurado de dominio cerrado: laberintos de 30×30 (Maze-Hard), Sudoku-Extreme, los conjuntos ARC-1-concept y ARC-2-concept con aumentación de datos, y seguimiento de estado sobre permutaciones de los grupos A5 y S5. Los resultados reportados por el autor son 87,0 % de exact-match en Maze-Hard, 94,2 % en Sudoku-Extreme, 47,5 % pass@2 en ARC-1 y 6,2 % pass@2 en ARC-2, además de 98,1 % y 98,8 % de accuracy en state tracking a longitud 128.
 
-Su relevancia actual reside en la aproximación arquitectónica: en lugar de escalar parámetros, el modelo itera sobre un estado latente único (`single-z`) con un solver de punto fijo y ajusta el número de iteraciones en evaluación. El tamaño del repositorio (47,8 GB) corresponde al conjunto de checkpoints de las cinco ejecuciones, no a un único modelo. La licencia es MIT y el pipeline no está declarado en HuggingFace.
+Su relevancia actual reside en la aproximación arquitectónica: en lugar de escalar parámetros, el modelo itera sobre un estado latente único (`single-z`) con un solver de punto fijo y ajusta el número de iteraciones en evaluación. El tamaño del repositorio (47,8 GB) corresponde al conjunto de checkpoints de las cinco ejecuciones, no a un único modelo. La licencia es MIT y el pipeline no está declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FPRM (este modelo) | Razonador recursivo weight-tied con solver de punto fijo | no disponible | no aplica (state tracking hasta longitud 128) | 87,0 % Maze-Hard, 94,2 % Sudoku-Extreme, 47,5 % ARC-1 pass@2 | MIT | HuggingFace, checkpoints `.pt` |
+| FPRM (este modelo) | Razonador recursivo weight-tied con solver de punto fijo | no disponible | no aplica (state tracking hasta longitud 128) | 87,0 % Maze-Hard, 94,2 % Sudoku-Extreme, 47,5 % ARC-1 pass@2 | MIT | Hugging Face, checkpoints `.pt` |
 | TRM (Tiny Recursive Model) | Razonador recursivo | no disponible | no disponible | no disponible en la información proporcionada | no disponible | no disponible |
 | Solvers simbólicos de Sudoku | Búsqueda con backtracking | no aplica | no aplica | resolución exacta en Sudoku estándar; comportamiento en Sudoku-Extreme no disponible | variable | amplia |
 | Transformers pequeños para ARC | Transformer decoder | no disponible | no disponible | no disponible en la información proporcionada | variable | amplia |
@@ -81,7 +81,7 @@ La información proporcionada no incluye resultados numéricos de modelos altern
 
 ## Limitaciones y advertencias
 
-- Modelo de investigación sin pipeline declarado en HuggingFace y con 0 descargas en el momento de la consulta: no hay evidencia de uso en producción ni de validación externa.
+- Modelo de investigación sin pipeline declarado en Hugging Face y con 0 descargas en el momento de la consulta: no hay evidencia de uso en producción ni de validación externa.
 - Especialización estricta: cada checkpoint resuelve una única tarea (laberintos, Sudoku, ARC-1, ARC-2 o state tracking). No es un modelo de propósito general ni acepta instrucciones en lenguaje natural.
 - El rendimiento en ARC-2-concept es bajo (6,2 % pass@2), lo que limita su uso como referencia en ese conjunto.
 - El state tracking se entrena a longitud 32 y se evalúa a 128; no se documenta el comportamiento a longitudes superiores.
@@ -93,7 +93,7 @@ La información proporcionada no incluye resultados numéricos de modelos altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fixed-point-reasoners/fprm
+- Modelo en Hugging Face: https://huggingface.co/fixed-point-reasoners/fprm
 - Carpeta Maze-Hard: https://huggingface.co/fixed-point-reasoners/fprm/tree/main/maze
 - Carpeta Sudoku-Extreme: https://huggingface.co/fixed-point-reasoners/fprm/tree/main/sudoku
 - Carpeta ARC-1-concept: https://huggingface.co/fixed-point-reasoners/fprm/tree/main/arc1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oneweek/kobert es un modelo de clasificacion de texto publicado en HuggingFace por el usuario Oneweek. Se trata de un ajuste fino (fine-tuning) del modelo base skt/kobert-base-v1, un encoder BERT de lengua coreana desarrollado originalmente por SK Telecom. El repositorio contiene pesos en formato safetensors con 92.188.418 parametros y una cabecera de clasificacion, y esta etiquetado con la arquitectura bert y el pipeline text-classification.
+Oneweek/kobert es un modelo de clasificacion de texto publicado en Hugging Face por el usuario Oneweek. Se trata de un ajuste fino (fine-tuning) del modelo base skt/kobert-base-v1, un encoder BERT de lengua coreana desarrollado originalmente por SK Telecom. El repositorio contiene pesos en formato safetensors con 92.188.418 parametros y una cabecera de clasificacion, y esta etiquetado con la arquitectura bert y el pipeline text-classification.
 
 El modelo se ha generado con la libreria Transformers mediante la utilidad Trainer, segun indica la propia model card. No se especifica el dataset de entrenamiento (aparece como "None dataset" en la documentacion), ni los idiomas, ni la licencia, ni los usos previstos. La model card es en su mayor parte una plantilla autogenerada con secciones "More information needed".
 
@@ -71,15 +71,15 @@ Resultado final declarado en el conjunto de evaluacion: loss 0,6929 y accuracy 0
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; modelos como RTX 3060, RTX 4090, A100 o H100 estan sobradamente dimensionados para este tamano.
 - GPU consumer: si, cabe en cualquier GPU de consumo actual e incluso en GPUs integradas con suficiente memoria compartida.
 - CPU: la inferencia en CPU es viable en terminos de memoria (menos de 400 MB en fp32); no se publican datos de latencia.
-- Opciones de despliegue: la via soportada es transformers con safetensors; el repositorio esta marcado como `endpoints_compatible`, por lo que es desplegable en HuggingFace Inference Endpoints. No se proporcionan pesos GGUF, ONNX ni artefactos para llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la via soportada es transformers con safetensors; el repositorio esta marcado como `endpoints_compatible`, por lo que es desplegable en Hugging Face Inference Endpoints. No se proporcionan pesos GGUF, ONNX ni artefactos para llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles; no se publican mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oneweek/kobert | 92.188.418 | no disponible | Accuracy 0,51 (evaluacion propia) | no disponible | HuggingFace, safetensors |
-| skt/kobert-base-v1 | no disponible en esta informacion | no disponible | no disponible | no disponible | HuggingFace (modelo base) |
+| Oneweek/kobert | 92.188.418 | no disponible | Accuracy 0,51 (evaluacion propia) | no disponible | Hugging Face, safetensors |
+| skt/kobert-base-v1 | no disponible en esta informacion | no disponible | no disponible | no disponible | Hugging Face (modelo base) |
 | Otros clasificadores derivados de BERT coreano (klue/bert-base, monologg/koelectra-base-v3-discriminator) | no disponible en esta informacion | no disponible | no disponible | no disponible | no verificados en esta busqueda |
 
 No se dispone de datos verificados de parametros, contexto, rendimiento ni licencia de las alternativas dentro de la informacion proporcionada, por lo que la comparativa cuantitativa no puede completarse. La unica relacion confirmada es la de dependencia directa con skt/kobert-base-v1 como modelo base.
@@ -99,6 +99,6 @@ No se dispone de datos verificados de parametros, contexto, rendimiento ni licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oneweek/kobert
+- Modelo en Hugging Face: https://huggingface.co/Oneweek/kobert
 - Modelo base: https://huggingface.co/skt/kobert-base-v1
 - No se han encontrado enlaces relevantes en la busqueda web realizada; los resultados devueltos (articulos sobre adopcion de LLM en ingenieria de software, chatbots educativos, analisis de proteinas y estudios de opinion publica) no guardan relacion con este modelo.

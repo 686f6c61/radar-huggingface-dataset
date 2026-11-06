@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-JSON-SFT es un ajuste fino supervisado (SFT) del modelo Qwen3-0.6B, publicado por el usuario dusgml en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se ha orientado a la generacion de JSON estructurado, aunque la model card no documenta ni el dataset, ni los hiperparametros, ni los objetivos concretos del ajuste. Se trata, por tanto, de un checkpoint derivado de la familia Qwen3 en su variante mas pequena.
+Qwen3-0.6B-JSON-SFT es un ajuste fino supervisado (SFT) del modelo Qwen3-0.6B, publicado por el usuario dusgml en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se ha orientado a la generacion de JSON estructurado, aunque la model card no documenta ni el dataset, ni los hiperparametros, ni los objetivos concretos del ajuste. Se trata, por tanto, de un checkpoint derivado de la familia Qwen3 en su variante mas pequena.
 
 El modelo cuenta con 596.049.920 parametros (aproximadamente 0,6 mil millones) almacenados en safetensors, con un tamano de repositorio de 1,2 GB. La libreria declarada es transformers y las etiquetas incluyen `trl` y `sft`, lo que confirma el uso de TRL (Transformer Reinforcement Learning) para el entrenamiento supervisado. La fecha de creacion del repositorio es el 4 de noviembre de 2026.
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada como modelo generalista: se trata de un deriv
 
 La arquitectura subyacente corresponde a Qwen3-0.6B, un transformer decoder-only de la familia Qwen3 desarrollada por Alibaba. No obstante, la model card de este repositorio no aporta detalles sobre la configuracion de capas, dimensiones ocultas, mecanismo de atencion ni longitud de contexto, por lo que no es posible confirmar si se mantienen las caracteristicas del modelo base sin modificaciones.
 
-En cuanto al entrenamiento, las etiquetas indican el uso de TRL con SFT (supervised fine-tuning). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO posteriores, ni los hiperparametros empleados (tasa de aprendizaje, precision, numero de epocas). La model card es la plantilla autogenerada de HuggingFace y todos los campos sustantivos aparecen como "[More Information Needed]". No se documenta ninguna innovacion tecnica adicional.
+En cuanto al entrenamiento, las etiquetas indican el uso de TRL con SFT (supervised fine-tuning). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO posteriores, ni los hiperparametros empleados (tasa de aprendizaje, precision, numero de epocas). La model card es la plantilla autogenerada de Hugging Face y todos los campos sustantivos aparecen como "[More Information Needed]". No se documenta ninguna innovacion tecnica adicional.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dusgml/Qwen3-0.6B-JSON-SFT | 596 M | no disponible | no disponible | HuggingFace |
-| Qwen3-0.6B (modelo base) | ~0,6 B | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3) | HuggingFace |
-| SmolLM2-360M-Instruct | ~0,36 B | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B Instruct | ~1,2 B | no disponible en esta ficha | Llama 3.2 Community License | HuggingFace |
+| dusgml/Qwen3-0.6B-JSON-SFT | 596 M | no disponible | no disponible | Hugging Face |
+| Qwen3-0.6B (modelo base) | ~0,6 B | no disponible en esta ficha | Apache 2.0 (segun familia Qwen3) | Hugging Face |
+| SmolLM2-360M-Instruct | ~0,36 B | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B Instruct | ~1,2 B | no disponible en esta ficha | Llama 3.2 Community License | Hugging Face |
 
 La comparacion con el modelo base es la mas directa: este checkpoint anade un SFT no documentado sobre Qwen3-0.6B. Frente a SmolLM2 o Llama 3.2 1B, la diferencia principal es la ausencia total de evaluacion publicada y de licencia declarada en este repositorio, lo que dificulta su adopcion frente a alternativas con documentacion completa.
 
@@ -82,7 +82,7 @@ La comparacion con el modelo base es la mas directa: este checkpoint anade un SF
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusgml/Qwen3-0.6B-JSON-SFT
+- Hugging Face: https://huggingface.co/dusgml/Qwen3-0.6B-JSON-SFT
 - Paper de referencia sobre impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r452-online-dpo-merged` es un checkpoint derivado de un proceso de fusión LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, publicado por el usuario `unconst` en HuggingFace. Según los metadatos, se trata de un modelo de generación de texto con 35.107.181.936 parámetros (aproximadamente 35,1 mil millones), almacenado en formato `safetensors` y compatible con la librería `transformers`. Los tags asociados (`qwen3_5_moe`, `image-text-to-text`) sugieren que la arquitectura subyacente podría ser un modelo de mezcla de expertos (MoE) con capacidades multimodales, aunque no se ha publicado documentación técnica que lo confirme.
+El modelo `unconst/Affine-5czsc2fc98-r452-online-dpo-merged` es un checkpoint derivado de un proceso de fusión LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, publicado por el usuario `unconst` en Hugging Face. Según los metadatos, se trata de un modelo de generación de texto con 35.107.181.936 parámetros (aproximadamente 35,1 mil millones), almacenado en formato `safetensors` y compatible con la librería `transformers`. Los tags asociados (`qwen3_5_moe`, `image-text-to-text`) sugieren que la arquitectura subyacente podría ser un modelo de mezcla de expertos (MoE) con capacidades multimodales, aunque no se ha publicado documentación técnica que lo confirme.
 
 El nombre del checkpoint indica que se aplicó un ajuste fino con *online DPO* (Direct Preference Optimization) durante la fase de entrenamiento, y que se trata de un "salvamento" de un checkpoint intermedio de un proyecto mayor, con una puerta de validación pendiente (Stage-5). No se ha publicado información sobre el dataset utilizado, las condiciones de licencia ni los idiomas soportados, lo que limita su uso directo en producción sin una evaluación adicional. A pesar de su tamaño considerable, el repositorio no ha recibido descargas ni valoraciones, lo que sugiere que es un artefacto experimental o privado.
 
@@ -73,5 +73,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r452-online-dpo-merged
+- Repositorio en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r452-online-dpo-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

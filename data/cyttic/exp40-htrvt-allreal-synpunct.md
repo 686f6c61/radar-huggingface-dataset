@@ -2,7 +2,7 @@
 
 ## Resumen
 
-exp40-htrvt-allreal-synpunct es un modelo de reconocimiento de texto manuscrito (HTR) en hebreo, publicado por el usuario cyttic en HuggingFace bajo licencia MIT. Se trata de un sistema OCR/HTR especializado en líneas de texto manuscrito hebreo, con una arquitectura híbrida que combina una CNN residual para extracción de características, un enmascaramiento por spans y un transformer de 6 capas con dimensión 384, rematado por una cabeza CTC lineal. El modelo se ha entrenado desde cero sobre una mezcla de datos que incluye los corpus HHD, SCE y Pinkas, más un 20 % de líneas sintéticas de dígitos y puntuación.
+exp40-htrvt-allreal-synpunct es un modelo de reconocimiento de texto manuscrito (HTR) en hebreo, publicado por el usuario cyttic en Hugging Face bajo licencia MIT. Se trata de un sistema OCR/HTR especializado en líneas de texto manuscrito hebreo, con una arquitectura híbrida que combina una CNN residual para extracción de características, un enmascaramiento por spans y un transformer de 6 capas con dimensión 384, rematado por una cabeza CTC lineal. El modelo se ha entrenado desde cero sobre una mezcla de datos que incluye los corpus HHD, SCE y Pinkas, más un 20 % de líneas sintéticas de dígitos y puntuación.
 
 El modelo resuelve la transcripción automática de líneas manuscritas en hebreo, un dominio históricamente difícil por la escasez de datos anotados y la variabilidad caligráfica. Su relevancia actual radica en que aborda una lengua con poca cobertura en herramientas OCR comerciales y lo hace con un modelo compacto (13,8 millones de parámetros) que puede ejecutarse en hardware modesto. La entrada es una imagen en escala de grises de una línea de texto a 64 píxeles de altura, espejada para convertir la dirección RTL (derecha a izquierda) del hebreo en LTR y que la cabeza CTC pueda procesarla secuencialmente.
 
@@ -78,4 +78,4 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp40-htrvt-allreal-synpunct
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp40-htrvt-allreal-synpunct

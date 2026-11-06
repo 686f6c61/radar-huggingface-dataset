@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/Anbeeld/gemma4-12B-it-DFlash-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/Anbeeld/gemma4-12B-it-DFlash-GGUF)
 - [Modelo draft original de z-lab](https://huggingface.co/z-lab/gemma4-12B-it-DFlash)
 - [Modelo objetivo Gemma 4 12B IT de Google](https://huggingface.co/google/gemma-4-12b-it)
 - [Repositorio hermano para Gemma 4 31B](https://huggingface.co/Anbeeld/gemma-4-31B-it-DFlash-GGUF)

@@ -68,8 +68,8 @@ No se dispone de informacion comparativa con otros modelos en la documentacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/llm-jp/llm-jp-4-8b-thinking-gguf
-- Repositorio HuggingFace (modelo base): https://huggingface.co/llm-jp/llm-jp-4-8b-thinking
+- Repositorio Hugging Face (GGUF): https://huggingface.co/llm-jp/llm-jp-4-8b-thinking-gguf
+- Repositorio Hugging Face (modelo base): https://huggingface.co/llm-jp/llm-jp-4-8b-thinking
 - Coleccion de modelos LLM-jp-4: https://huggingface.co/collections/llm-jp/llm-jp-4-models
 - Cookbook de LLM-jp-4: https://github.com/llm-jp/llm-jp-4-cookbook
 - Pagina de releases de LLM-jp: https://llm-jp.nii.ac.jp/en/release-en/

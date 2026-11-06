@@ -88,7 +88,7 @@ La comparacion con modelos consolidados es desfavorable en todos los ejes salvo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shrijanagain/TEST-REAS
+- Modelo en Hugging Face: https://huggingface.co/Shrijanagain/TEST-REAS
 - Modelo base: https://huggingface.co/sKT-Ai-Labs/SPEED-1
 - Dataset propio del autor (POST): https://huggingface.co/Shrijanagain/POST
 - Dataset stepfun-ai/Step-3.5-Flash-SFT: https://huggingface.co/datasets/stepfun-ai/Step-3.5-Flash-SFT

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`budigunawan/notes-multimodal-reasoning` no es un modelo de IA, sino un repositorio de notas de investigación sobre razonamiento multimodal publicado por el usuario Budi Gunawan en HuggingFace. La model card lo describe explícitamente como una nota exploratoria que registra la comparación prevista, los posibles factores de confusión y los requisitos de reproducibilidad antes de que se haya reportado cualquier resultado de benchmark. El propio autor aclara que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado.
+`budigunawan/notes-multimodal-reasoning` no es un modelo de IA, sino un repositorio de notas de investigación sobre razonamiento multimodal publicado por el usuario Budi Gunawan en Hugging Face. La model card lo describe explícitamente como una nota exploratoria que registra la comparación prevista, los posibles factores de confusión y los requisitos de reproducibilidad antes de que se haya reportado cualquier resultado de benchmark. El propio autor aclara que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado.
 
-El repositorio contiene únicamente dos artefactos de texto: `notes.md` (artefacto principal) y `README.md`. El tamaño del repositorio es de 0,0 GB y no incluye pesos utilizables para inferencia. Los metadatos de HuggingFace declaran la etiqueta `transformer` y el formato `safetensors`, pero no hay evidencia en la información disponible de que exista un modelo entrenado asociado.
+El repositorio contiene únicamente dos artefactos de texto: `notes.md` (artefacto principal) y `README.md`. El tamaño del repositorio es de 0,0 GB y no incluye pesos utilizables para inferencia. Los metadatos de Hugging Face declaran la etiqueta `transformer` y el formato `safetensors`, pero no hay evidencia en la información disponible de que exista un modelo entrenado asociado.
 
 Su relevancia es, por tanto, metodológica y no técnica: sirve como plantilla de planificación de evaluación en razonamiento multimodal, mencionando contextos concretos de evaluación como VQAv2, GQA y NLVR2, y separando explícitamente hipótesis y planes de resultados experimentales.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, metodológica y no técnica: sirve como plantilla d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta `transformer` aparece en los metadatos de HuggingFace, pero el repositorio no contiene un modelo) |
+| Arquitectura | no disponible (la etiqueta `transformer` aparece en los metadatos de Hugging Face, pero el repositorio no contiene un modelo) |
 | Parametros totales | 49.600 (valor reportado en los metadatos de safetensors; sin confirmación de que corresponda a un checkpoint entrenado) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -74,7 +74,7 @@ No disponible. Este repositorio no es comparable con modelos multimodales desple
 
 - No es un modelo: es un conjunto de notas de investigación; no genera texto ni procesa imágenes.
 - No contiene checkpoint entrenado, código liberado ni ablaciones completadas, según declara el propio autor.
-- Los metadatos de HuggingFace incluyen la etiqueta `transformer` y el formato `safetensors`, lo que puede inducir a confusión sobre la existencia de un modelo real.
+- Los metadatos de Hugging Face incluyen la etiqueta `transformer` y el formato `safetensors`, lo que puede inducir a confusión sobre la existencia de un modelo real.
 - El valor de 49.600 parámetros reportado en los metadatos de safetensors no está confirmado como correspondiente a un modelo utilizable.
 - Cero descargas y cero likes en la fecha consultada, lo que limita cualquier validación por parte de la comunidad.
 - No se especifican idiomas soportados, por lo que no puede asumirse cobertura multilingüe.
@@ -85,8 +85,8 @@ No disponible. Este repositorio no es comparable con modelos multimodales desple
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/budigunawan/notes-multimodal-reasoning
-- Perfil del autor en HuggingFace: https://huggingface.co/budigunawan
+- Repositorio en Hugging Face: https://huggingface.co/budigunawan/notes-multimodal-reasoning
+- Perfil del autor en Hugging Face: https://huggingface.co/budigunawan
 - Repositorio relacionado del mismo autor: https://huggingface.co/budigunawan/assignment-multimodal-reasoning
 - Awesome-MLLM-Reasoning-Collection: https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/
 - Awesome Multimodal Reasoning: https://github.com/jluite/Awesome-Multimodal-Reasoning

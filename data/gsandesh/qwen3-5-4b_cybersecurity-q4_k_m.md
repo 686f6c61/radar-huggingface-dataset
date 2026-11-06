@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gsandesh/Qwen3.5-4B_cyberSecurity.Q4_K_M` es una cuantización GGUF de 4 bits (Q4_K_M) de un modelo base identificado como Qwen3.5-4B, presuntamente perteneciente a la familia Qwen, y afinado específicamente para tareas de ciberseguridad. Lo publica el usuario gsandesh en HuggingFace bajo licencia MIT. La nomenclatura del repositorio indica un modelo denso de aproximadamente 4.000 millones de parámetros, cuantizado con el método Q4_K_M de la familia llama.cpp, lo que lo hace desplegable en hardware de consumo.
+El modelo `gsandesh/Qwen3.5-4B_cyberSecurity.Q4_K_M` es una cuantización GGUF de 4 bits (Q4_K_M) de un modelo base identificado como Qwen3.5-4B, presuntamente perteneciente a la familia Qwen, y afinado específicamente para tareas de ciberseguridad. Lo publica el usuario gsandesh en Hugging Face bajo licencia MIT. La nomenclatura del repositorio indica un modelo denso de aproximadamente 4.000 millones de parámetros, cuantizado con el método Q4_K_M de la familia llama.cpp, lo que lo hace desplegable en hardware de consumo.
 
 La relevancia de esta publicación radica en dos factores: por un lado, la existencia de un supuesto Qwen3.5-4B (una generación posterior a Qwen3, de la que no hay información verificable en la documentación proporcionada) y, por otro, el ajuste fino orientado a ciberseguridad, un dominio donde los modelos pequeños especializados pueden resultar útiles para clasificación de alertas, análisis de logs o asistencia en tareas de seguridad ofensiva y defensiva.
 
@@ -84,5 +84,5 @@ Nota: los datos de los modelos comparativos provienen de documentación pública
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gsandesh/Qwen3.5-4B_cyberSecurity.Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/gsandesh/Qwen3.5-4B_cyberSecurity.Q4_K_M
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

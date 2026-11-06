@@ -96,7 +96,7 @@ No se dispone de datos publicados para establecer comparaciones cuantitativas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChenYanKai2002/OpenPerov-Flash
+- Hugging Face: https://huggingface.co/ChenYanKai2002/OpenPerov-Flash
 - Repositorio de codigo, PSM-Bench y registros de evaluacion: https://github.com/Yan-Kai-Chen/OpenPerov
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Paper: no disponible en la informacion proporcionada

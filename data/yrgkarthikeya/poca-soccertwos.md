@@ -2,7 +2,7 @@
 
 ## Resumen
 
-poca-SoccerTwos es una política de aprendizaje por refuerzo publicada por el usuario YRGKarthikeya en HuggingFace, entrenada para el entorno SoccerTwos de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo generativo: es una red neuronal exportada a formato ONNX que implementa la política de control de agentes (jugadores) dentro de una simulación competitiva de fútbol 2 contra 2. El repositorio se etiqueta con `ml-agents`, `onnx`, `ML-Agents-SoccerTwos` y `reinforcement-learning`, y la librería declarada es `ml-agents`.
+poca-SoccerTwos es una política de aprendizaje por refuerzo publicada por el usuario YRGKarthikeya en Hugging Face, entrenada para el entorno SoccerTwos de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo generativo: es una red neuronal exportada a formato ONNX que implementa la política de control de agentes (jugadores) dentro de una simulación competitiva de fútbol 2 contra 2. El repositorio se etiqueta con `ml-agents`, `onnx`, `ML-Agents-SoccerTwos` y `reinforcement-learning`, y la librería declarada es `ml-agents`.
 
 El nombre del artefacto sugiere el uso del entrenador POCA de Unity ML-Agents (una variante de optimización de política orientada a escenarios de auto-juego competitivo), aunque la información disponible no confirma de forma explícita la configuración de entrenamiento empleada. El repositorio no incluye model card descriptiva más allá de metadatos YAML mínimos, no declara licencia, no declara idiomas y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -75,9 +75,9 @@ No se dispone de datos verificables sobre modelos comparables en la informacion 
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| poca-SoccerTwos (este modelo) | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas |
+| poca-SoccerTwos (este modelo) | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas |
 | Politicas de ejemplo de ML-Agents para SoccerTwos | no disponible | no aplica | no disponible | sujeta a la licencia de Unity ML-Agents | repositorio oficial de ML-Agents |
-| Otras politicas ONNX de la comunidad para SoccerTwos | no disponible | no aplica | no disponible | no disponible | HuggingFace (busqueda no concluyente) |
+| Otras politicas ONNX de la comunidad para SoccerTwos | no disponible | no aplica | no disponible | no disponible | Hugging Face (busqueda no concluyente) |
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni sobre alternativas directas; los unicos resultados obtenidos correspondian a paginas de seguimiento de envios de mensajeria, sin relacion con el artefacto.
 
@@ -97,9 +97,9 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YRGKarthikeya/poca-SoccerTwos
+- Hugging Face: https://huggingface.co/YRGKarthikeya/poca-SoccerTwos
 - Unity ML-Agents (documentacion y repositorio del entorno SoccerTwos): no disponible en los resultados de busqueda proporcionados
 - Paper o publicacion tecnica asociada: no disponible
 - Demo o espacio interactivo: no disponible
 - Blog del autor o notas de entrenamiento: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/YRGKarthikeya
+- Perfil del autor en Hugging Face: https://huggingface.co/YRGKarthikeya

@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-forget10-ihl_head-epoch07 | 1,418 B | No disponible | Apache 2.0 | Unlearning (IHL + reset) sobre TOFU | HuggingFace, 0 descargas |
-| microsoft/phi-1_5 | 1,3 B | 2048 tokens | MIT | LM base para código y razonamiento | HuggingFace, ampliamente usado |
-| locuslab/tofu_ft_phi-1.5 | 1,3 B | 2048 tokens | No disponible | Ajuste fino sobre TOFU (modelo "no olvidado") | HuggingFace |
-| Otros checkpoints de unlearning sobre TOFU (p. ej., variantes de gradient ascent, NPO) | ~1,3 B | 2048 tokens | Varía | Distintas metodologías de olvido | HuggingFace, disponibilidad variable |
+| unl-reset/tofu-phi-1_5-...-forget10-ihl_head-epoch07 | 1,418 B | No disponible | Apache 2.0 | Unlearning (IHL + reset) sobre TOFU | Hugging Face, 0 descargas |
+| microsoft/phi-1_5 | 1,3 B | 2048 tokens | MIT | LM base para código y razonamiento | Hugging Face, ampliamente usado |
+| locuslab/tofu_ft_phi-1.5 | 1,3 B | 2048 tokens | No disponible | Ajuste fino sobre TOFU (modelo "no olvidado") | Hugging Face |
+| Otros checkpoints de unlearning sobre TOFU (p. ej., variantes de gradient ascent, NPO) | ~1,3 B | 2048 tokens | Varía | Distintas metodologías de olvido | Hugging Face, disponibilidad variable |
 
 La comparación directa con alternativas de la misma categoría (unlearning sobre TOFU) es limitada porque no se dispone de métricas publicadas en la información proporcionada. Frente a Phi-1.5 original, este checkpoint sacrifica parte del rendimiento general a cambio de eliminar el conocimiento de forget10; frente al modelo TOFU sin olvidar (`locuslab/tofu_ft_phi-1.5`), la diferencia clave es la reinicialización de embeddings y cabeza LM.
 
@@ -91,7 +91,7 @@ La comparación directa con alternativas de la misma categoría (unlearning sobr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch07)
+- [Modelo en Hugging Face](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch07)
 - [Modelo base locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - [Dataset TOFU (referencia)](https://huggingface.co/datasets/locuslab/TOFU)

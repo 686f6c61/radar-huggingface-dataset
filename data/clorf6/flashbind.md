@@ -4,7 +4,7 @@
 
 FlashBind es un modelo ligero basado en estructura para cribado virtual (virtual screening) de interacciones proteína-ligando, desarrollado por Songlin Jiang, Yifan Chen, Aarti Krishnan, Yu Zhang y Wengong Jin del laboratorio AIDD-Lab. El modelo aborda el coste computacional prohibitivo de los modelos fundacionales recientes como Boltz-2 en la predicción de afinidad de unión, logrando una aceleración de 50× manteniendo una precisión competitiva. El trabajo ha sido aceptado en el MLSB Workshop 2025 y se ha publicado en bioRxiv.
 
-El repositorio de HuggingFace aloja los checkpoints pre-entrenados del modelo, junto con los datasets asociados al proyecto FlashAffinity, que extiende FlashBind para cerrar la brecha precisión-velocidad en la predicción de afinidad de unión proteína-ligando. El modelo soporta múltiples tareas de predicción, incluyendo clasificación binaria de actividad e interacciones enzima-sustrato.
+El repositorio de Hugging Face aloja los checkpoints pre-entrenados del modelo, junto con los datasets asociados al proyecto FlashAffinity, que extiende FlashBind para cerrar la brecha precisión-velocidad en la predicción de afinidad de unión proteína-ligando. El modelo soporta múltiples tareas de predicción, incluyendo clasificación binaria de actividad e interacciones enzima-sustrato.
 
 A diferencia de los modelos de lenguaje de gran tamaño, FlashBind no es un modelo generativo de texto: es una herramienta especializada en bioinformática estructural, diseñada para integrarse en pipelines computacionales de descubrimiento de fármacos.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Tipo | Velocidad | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FlashBind | Ligero, basado en estructura | 50× más rápido que Boltz-2 | MIT | HuggingFace + GitHub |
+| FlashBind | Ligero, basado en estructura | 50× más rápido que Boltz-2 | MIT | Hugging Face + GitHub |
 | Boltz-2 | Modelo fundacional | Lento (coste prohibitivo) | no disponible | no disponible |
 
 No se dispone de comparativas con otras alternativas de cribado virtual en la información proporcionada.
@@ -71,14 +71,14 @@ No se dispone de comparativas con otras alternativas de cribado virtual en la in
 - El modelo está diseñado específicamente para cribado virtual basado en estructura; no es aplicable a tareas de procesamiento de lenguaje natural ni otros dominios.
 - Los detalles de arquitectura y entrenamiento no están completamente documentados en la información disponible, lo que dificulta la reproducibilidad independiente.
 - El dataset de enzimas (ESIBank) no incluye los embeddings precomputados de ESM3, lo que puede requerir un paso adicional de preprocesado antes de entrenar o evaluar el modelo.
-- El repositorio de HuggingFace muestra 0 descargas y 0 likes, lo que indica un lanzamiento reciente con adopción limitada.
+- El repositorio de Hugging Face muestra 0 descargas y 0 likes, lo que indica un lanzamiento reciente con adopción limitada.
 - La licencia MIT permite uso comercial sin restricciones significativas, pero se recomienda verificar las condiciones de los datasets asociados.
 - Para uso en producción, se recomienda validar las predicciones con métodos experimentales o modelos de referencia adicionales, dado que no se han publicado benchmarks detallados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clorf6/FlashBind
-- Datasets en HuggingFace: https://huggingface.co/datasets/clorf6/FlashBind
+- Modelo en Hugging Face: https://huggingface.co/clorf6/FlashBind
+- Datasets en Hugging Face: https://huggingface.co/datasets/clorf6/FlashBind
 - Repositorio GitHub: https://github.com/AIDD-Lab/FlashBind
 - Paper en bioRxiv: https://www.biorxiv.org/content/10.64898/2025.12.22.695983v2
 - Perfil del autor en GitHub: https://github.com/clorf6/

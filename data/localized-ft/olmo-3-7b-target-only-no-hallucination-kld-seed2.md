@@ -21,7 +21,7 @@ El modelo está licenciado bajo Apache 2.0, soporta únicamente inglés y se dis
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de OLMo-3-7B-Instruct, un transformer decoder-only de 7B parametros desarrollado por AI2, y ha sido fine-tuneado con las librerias Unsloth y TRL de HuggingFace, lo que acelera el entrenamiento aproximadamente 2 veces respecto a metodos convencionales. El nombre del modelo indica un entrenamiento dirigido a reducir alucinaciones, probablemente mediante una funcion de perdida que incorpora una divergencia KL entre las distribuciones de salida del modelo y una referencia, aunque no se especifica el procedimiento exacto, el dataset utilizado ni el numero de tokens de entrenamiento. Tampoco se detalla si se aplicaron tecnicas como RLHF o DPO.
+El modelo parte de OLMo-3-7B-Instruct, un transformer decoder-only de 7B parametros desarrollado por AI2, y ha sido fine-tuneado con las librerias Unsloth y TRL de Hugging Face, lo que acelera el entrenamiento aproximadamente 2 veces respecto a metodos convencionales. El nombre del modelo indica un entrenamiento dirigido a reducir alucinaciones, probablemente mediante una funcion de perdida que incorpora una divergencia KL entre las distribuciones de salida del modelo y una referencia, aunque no se especifica el procedimiento exacto, el dataset utilizado ni el numero de tokens de entrenamiento. Tampoco se detalla si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada para inferencia en fp16: al menos 16 GB (por ejemplo, una RTX 4090 o A100 40GB).
 - Con cuantizacion a 8 bits, la VRAM necesaria se reduce a unos 8-10 GB, permitiendo su uso en GPUs consumer como RTX 3080/3090.
 - Con cuantizacion a 4 bits, podria ejecutarse en GPUs con 6-8 GB de VRAM, aunque no se proporcionan archivos GGUF oficiales.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, siempre que se conviertan los pesos al formato adecuado.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, siempre que se conviertan los pesos al formato adecuado.
 - No se dispone de datos de latencia o throughput medidos.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ Existen otras variantes de la misma familia publicadas por el mismo autor, como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-kld-seed2
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-kld-seed2
 - Variante seed4: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4
 - Variante seed5: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed5
 - Variante first-third-sft (desplegada en FriendliAI): https://friendli.ai/models/longtermrisk/OLMo-3-7B-target-only-no-hallucination-first-third-sft

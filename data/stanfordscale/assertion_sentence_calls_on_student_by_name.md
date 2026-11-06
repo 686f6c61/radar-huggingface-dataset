@@ -81,8 +81,8 @@ No se dispone de datos publicados de alternativas directamente comparables en la
 
 | Modelo | Parametros | Tarea | F1 test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_sentence_calls_on_student_by_name (este modelo) | 109,5 M | Clasificacion binaria de la asercion "llamar al alumno por nombre" | 0,889 | no disponible | HuggingFace, 0 descargas |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | 109,5 M | Embeddings de frases; no produce la etiqueta | no disponible (no es un clasificador de esta etiqueta) | no disponible | HuggingFace |
+| assertion_sentence_calls_on_student_by_name (este modelo) | 109,5 M | Clasificacion binaria de la asercion "llamar al alumno por nombre" | 0,889 | no disponible | Hugging Face, 0 descargas |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | 109,5 M | Embeddings de frases; no produce la etiqueta | no disponible (no es un clasificador de esta etiqueta) | no disponible | Hugging Face |
 | Otras aserciones del proyecto EduBehaviors (StanfordSCALE) | no disponible | Clasificacion de otras aserciones de discurso de aula | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Anotacion con LLM zero-shot sobre TalkMoves | no disponible | Misma tarea | no disponible | no disponible | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos publicados de alternativas directamente comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_calls_on_student_by_name
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_calls_on_student_by_name
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (codigo): https://github.com/SumnerLab/TalkMoves

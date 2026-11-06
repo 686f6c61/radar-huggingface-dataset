@@ -59,9 +59,9 @@ No se dispone de información comparativa publicada. Como referencia, se puede c
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-VL-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | HuggingFace |
-| InternVL3.5-8B | 8B | no disponible | MIT | HuggingFace |
-| Este fine-tune | 7B (aprox.) | no disponible | no disponible | HuggingFace |
+| Qwen2.5-VL-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | Hugging Face |
+| InternVL3.5-8B | 8B | no disponible | MIT | Hugging Face |
+| Este fine-tune | 7B (aprox.) | no disponible | no disponible | Hugging Face |
 
 No hay datos de rendimiento para comparar.
 
@@ -76,6 +76,6 @@ No hay datos de rendimiento para comparar.
 
 ## Enlaces
 
-- [HuggingFace - q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint](https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint)
+- [Hugging Face - q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint](https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Repositorio TRL](https://github.com/huggingface/trl)

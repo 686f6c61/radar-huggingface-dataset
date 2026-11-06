@@ -107,4 +107,4 @@ Nota: la comparativa de rendimiento (MMLU, HumanEval, GSM8K u otros) no puede es
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Preguntas frecuentes y solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests
 
-Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los unicos enlaces utiles son los del repositorio de HuggingFace y los recursos de referencia citados por el autor.
+Nota: la busqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los unicos enlaces utiles son los del repositorio de Hugging Face y los recursos de referencia citados por el autor.

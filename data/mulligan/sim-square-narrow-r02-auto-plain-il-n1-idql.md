@@ -104,12 +104,12 @@ No se identifican en la información disponible modelos comparables externos al 
 - Brecha simulación-realidad: no se aporta ninguna evidencia de transferencia a un robot físico; todos los resultados son de simulación y sobre una única tarea.
 - Soporte de mantenimiento: el modelo está ligado a commits concretos del código de investigación; sin ese código y sin los ficheros `stats.json` correspondientes, el checkpoint no es directamente utilizable con otras librerías.
 - Volumen de validación: 8000 rollouts por semilla es una muestra amplia, pero la evaluación se realiza sobre una rejilla de estados iniciales reservada propia del proyecto; no hay resultados en benchmarks de terceros que permitan comparación independiente.
-- Metadatos del repositorio: las fechas de creación y actualización que figuran en HuggingFace son 2026-09-29, posteriores a la fecha de consulta habitual, y las referencias internas de W&B apuntan a agosto de 2026. Se reproducen tal cual aparecen, sin interpretación.
+- Metadatos del repositorio: las fechas de creación y actualización que figuran en Hugging Face son 2026-09-29, posteriores a la fecha de consulta habitual, y las referencias internas de W&B apuntan a agosto de 2026. Se reproducen tal cual aparecen, sin interpretación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-plain-il-n1-idql
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r02-auto-plain-il-n1-idql
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 - Conjunto de evaluación: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
@@ -117,7 +117,7 @@ No se identifican en la información disponible modelos comparables externos al 
 - Datos de entrenamiento (rollouts de política compartida con BC): https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts
 - Datos de entrenamiento (rollouts de política IL): https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-auto-plain-il-n1-policy-rollouts
 - Conjunto referenciado por metadatos: https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-auto-plain-il-n1-policy-rollouts
-- Explorador de conjuntos de la familia `sim-square-narrow` en HuggingFace: https://huggingface.co/datasets?other=sim-square-narrow
+- Explorador de conjuntos de la familia `sim-square-narrow` en Hugging Face: https://huggingface.co/datasets?other=sim-square-narrow
 - Conjunto relacionado de la variante `auto-iql-n32` (índice de terceros): https://claru.ai/datasets/mulligan-sim-square-narrow-c02-auto-iql-n32-policy-rollouts
 
 Nota sobre la búsqueda web: los resultados obtenidos no contienen información técnica sobre este modelo ni sobre el proyecto Mulligan. Las entradas recuperadas tratan sobre incidentes de seguridad de modelos de lenguaje de Google (Gemini) y no guardan relación con este artefacto. No se han encontrado papers, blogs ni repositorios adicionales relevantes.

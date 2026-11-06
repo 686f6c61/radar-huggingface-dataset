@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sri-harini-m/anlp-a2-part2` no es un modelo publicado como producto, sino un artefacto de investigacion academica: un repositorio de HuggingFace que contiene cinco checkpoints del mismo transformer decoder-only denso, preentrenado desde cero una sola pasada sobre el corpus `browndw/human-ai-parallel-corpus`, una vez por cada optimizador evaluado (AdamW, NAdamW, Lion, Muon y Sophia-G). El autor es el usuario `sri-harini-m` y el material se enmarca en un trabajo de asignatura ("ANLP Assignment 2, Part 2: Optimizers"), con los registros de entrenamiento alojados en un proyecto publico de WandB.
+`sri-harini-m/anlp-a2-part2` no es un modelo publicado como producto, sino un artefacto de investigacion academica: un repositorio de Hugging Face que contiene cinco checkpoints del mismo transformer decoder-only denso, preentrenado desde cero una sola pasada sobre el corpus `browndw/human-ai-parallel-corpus`, una vez por cada optimizador evaluado (AdamW, NAdamW, Lion, Muon y Sophia-G). El autor es el usuario `sri-harini-m` y el material se enmarca en un trabajo de asignatura ("ANLP Assignment 2, Part 2: Optimizers"), con los registros de entrenamiento alojados en un proyecto publico de WandB.
 
 El valor del repositorio es metodologico: al mantener fijos arquitectura, datos, tokenizador y presupuesto de entrenamiento, aisla el efecto del optimizador sobre la perdida de validacion y el BLEU de test. Eso permite comparaciones controladas y reproducibles entre reglas de actualizacion implementadas desde cero como subclases de `torch.optim.Optimizer`, algo poco frecuente en materiales publicos.
 
@@ -108,7 +108,7 @@ Para modelos alternativos de la misma categoria (transformers pequeños de inves
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sri-harini-m/anlp-a2-part2
+- Repositorio en Hugging Face: https://huggingface.co/sri-harini-m/anlp-a2-part2
 - Checkpoint AdamW: https://huggingface.co/sri-harini-m/anlp-a2-part2/tree/main/adamw
 - Checkpoint NAdamW: https://huggingface.co/sri-harini-m/anlp-a2-part2/tree/main/nadamw
 - Checkpoint Lion: https://huggingface.co/sri-harini-m/anlp-a2-part2/tree/main/lion

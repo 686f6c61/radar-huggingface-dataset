@@ -76,7 +76,7 @@ La informacion disponible no incluye especificaciones detalladas de modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braindecode/DIVER-1-1s-small
+- Modelo en Hugging Face: https://huggingface.co/braindecode/DIVER-1-1s-small
 - Articulo arXiv (resumen): https://arxiv.org/abs/2512.19097
 - Articulo arXiv (HTML): https://arxiv.org/html/2512.19097
 - Articulo arXiv (version 1): https://arxiv.org/html/2512.19097v1

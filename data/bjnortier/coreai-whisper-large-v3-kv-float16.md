@@ -90,7 +90,7 @@ La diferencia clave de esta exportación frente a las alternativas es el formato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bjnortier/coreai-whisper-large-v3-kv-float16
+- Modelo en Hugging Face: https://huggingface.co/bjnortier/coreai-whisper-large-v3-kv-float16
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Repositorio del autor (fork con selección de idioma) y CirceKit: https://github.com/bjnortier
 - Runtime Apple Core AI: https://github.com/apple/coreai-models

@@ -80,7 +80,7 @@ Este fine-tune se diferencia por su enfoque específico en khmer, un idioma que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaze-voice-ai/dubbing-omnivoice-khmer
+- Modelo en Hugging Face: https://huggingface.co/blaze-voice-ai/dubbing-omnivoice-khmer
 - Repositorio de OmniVoice: https://github.com/k2-fsa/OmniVoice/
 - Web oficial de OmniVoice: https://omnivoice.app/
 - Página de clonación de voz: https://omnivoice.app/voice-cloning

@@ -84,5 +84,5 @@ No disponible. El repositorio no es comparable con modelos de recuperación text
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ferr-eira/research-text-image-retrieval
+- Hugging Face: https://huggingface.co/ferr-eira/research-text-image-retrieval
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio de código o demo). El resto de resultados devueltos no guardan relación con este repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sawyer-reward es un modelo de clasificación de texto publicado por el usuario bryl3guma1 en HuggingFace, consistente en un ajuste fino (fine-tuning) de roberta-base. Con 124.646.401 parámetros y un tamaño de repositorio de 0,5 GB, su función declarada es la de modelo de recompensa (reward model): asignar una puntuación a un texto para estimar su calidad o preferencia. Está etiquetado con el pipeline text-classification y con la etiqueta generated_from_trainer, lo que indica que fue producido con el Trainer de la librería Transformers.
+sawyer-reward es un modelo de clasificación de texto publicado por el usuario bryl3guma1 en Hugging Face, consistente en un ajuste fino (fine-tuning) de roberta-base. Con 124.646.401 parámetros y un tamaño de repositorio de 0,5 GB, su función declarada es la de modelo de recompensa (reward model): asignar una puntuación a un texto para estimar su calidad o preferencia. Está etiquetado con el pipeline text-classification y con la etiqueta generated_from_trainer, lo que indica que fue producido con el Trainer de la librería Transformers.
 
 El modelo se entrenó durante una única época con un learning rate de 1e-05, batch total de 32 (batch de 4 con 8 pasos de acumulación de gradiente) y precisión mixta nativa, sobre un dataset que la model card no identifica (aparece literalmente como "None dataset"). En el conjunto de evaluación reporta una pérdida de 0,5598 y una exactitud de 0,964, los únicos datos cuantitativos publicados por el autor.
 
@@ -67,17 +67,17 @@ Estos valores deben interpretarse con cautela: proceden de un único epoch y de 
 - VRAM en int8 (cuantización dinámica de PyTorch): aproximadamente 0,125 GB de pesos.
 - GPU recomendadas: cualquier GPU con 4 GB o más es suficiente; una RTX 3060, RTX 4090, T4, L4, A10 o superior no supone ninguna restricción. También es viable en iGPU y en Apple Silicon.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU dedicadas de los últimos diez años, e incluso en CPU sin GPU dedicada.
-- Opciones de despliegue: pipeline de Transformers, HuggingFace Inference Endpoints (el modelo está etiquetado como endpoints_compatible), text-embeddings-inference (etiqueta presente, típica de cross-encoders y rerankers), exportación a ONNX con Optimum/ONNX Runtime y TorchScript. El soporte en servidores de alto rendimiento orientados a generación (vLLM, TGI) depende de si estos admiten modelos de clasificación encoder-only en la versión concreta.
+- Opciones de despliegue: pipeline de Transformers, Hugging Face Inference Endpoints (el modelo está etiquetado como endpoints_compatible), text-embeddings-inference (etiqueta presente, típica de cross-encoders y rerankers), exportación a ONNX con Optimum/ONNX Runtime y TorchScript. El soporte en servidores de alto rendimiento orientados a generación (vLLM, TGI) depende de si estos admiten modelos de clasificación encoder-only en la versión concreta.
 - Latencia y throughput: no disponibles; no se han publicado mediciones para este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bryl3guma1/sawyer-reward | 124,6M | 512 tokens | Clasificación / reward | MIT | HuggingFace, 0 descargas |
-| FacebookAI/roberta-base | 124,6M | 512 tokens | Masked LM (base sin cabeza de recompensa) | MIT | HuggingFace, ampliamente usado |
-| profoz/sawyer-reward | no disponible | no disponible | Clasificación de texto, base roberta | no disponible | HuggingFace, sin model card |
-| profoz/sawyer-llama-reward | no disponible | no disponible | Clasificación de texto, base roberta | no disponible | HuggingFace, sin model card |
+| bryl3guma1/sawyer-reward | 124,6M | 512 tokens | Clasificación / reward | MIT | Hugging Face, 0 descargas |
+| FacebookAI/roberta-base | 124,6M | 512 tokens | Masked LM (base sin cabeza de recompensa) | MIT | Hugging Face, ampliamente usado |
+| profoz/sawyer-reward | no disponible | no disponible | Clasificación de texto, base roberta | no disponible | Hugging Face, sin model card |
+| profoz/sawyer-llama-reward | no disponible | no disponible | Clasificación de texto, base roberta | no disponible | Hugging Face, sin model card |
 | Skywork-Reward (colección del paper arXiv:2410.18451) | modelos de 8B y 27B según la descripción del paper | no disponible en la información proporcionada | Reward modeling para LLM | sujeta a la licencia de los modelos base (no indicada en la información) | Paper y modelos publicados por Skywork |
 
 La comparación relevante es de escala: sawyer-reward pertenece a la familia de reward models basados en encoders pequeños (124M parámetros), mientras que las propuestas recientes como Skywork-Reward emplean modelos de 8B y 27B parámetros y colecciones curadas de unas 80.000 parejas de preferencia. Los modelos de 124M son mucho más baratos de servir pero tienen capacidad de representación y conocimiento factual muy inferiores. Los modelos homónimos de profoz no publican especificaciones, por lo que no permiten una comparación técnica fiable.
@@ -96,7 +96,7 @@ La comparación relevante es de escala: sawyer-reward pertenece a la familia de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bryl3guma1/sawyer-reward
+- Modelo en Hugging Face: https://huggingface.co/bryl3guma1/sawyer-reward
 - Modelo base: https://huggingface.co/roberta-base
 - Cuaderno SAWYER_Reward_Model.ipynb (repositorio oreilly-optimizing-llms): https://github.com/sinanuozdemir/oreilly-optimizing-llms/blob/main/notebooks/SAWYER_Reward_Model.ipynb
 - Cuaderno SAWYER_Reward_Model.ipynb (repositorio transformer-architectures-genai): https://github.com/SabrinaLameiras/transformer-architectures-genai/blob/main/notebooks/SAWYER_Reward_Model.ipynb

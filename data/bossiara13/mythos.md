@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mythos es un checkpoint de preentrenamiento publicado en HuggingFace por el usuario Bossiara13 bajo el codename interno `numbat`. Segun la model card, se trata de un checkpoint extraido a mitad de entrenamiento (paso 1.830.000 de una run de aproximadamente 1,96 millones de pasos) de lo que el autor describe como una run de entrenamiento de clase Mythos de Anthropic. El modelo emplea una arquitectura hibrida que combina Gated DeltaNet (GDN) con Multi-head Latent Attention (MLA), capas feed-forward de tipo Mixture-of-Experts y Multi-Token Prediction (MTP).
+Mythos es un checkpoint de preentrenamiento publicado en Hugging Face por el usuario Bossiara13 bajo el codename interno `numbat`. Segun la model card, se trata de un checkpoint extraido a mitad de entrenamiento (paso 1.830.000 de una run de aproximadamente 1,96 millones de pasos) de lo que el autor describe como una run de entrenamiento de clase Mythos de Anthropic. El modelo emplea una arquitectura hibrida que combina Gated DeltaNet (GDN) con Multi-head Latent Attention (MLA), capas feed-forward de tipo Mixture-of-Experts y Multi-Token Prediction (MTP).
 
 El checkpoint contiene 6.849.377.242.584 parametros almacenados en safetensors (aproximadamente 6,85 billones), aunque la model card declara "~14T param" para el modelo completo, una discrepancia que no se explica en la documentacion disponible. Los pesos estan cuantizados en NVFP4 (formato de 4 bits con bloques de escala E4M3 y payload E2M1), lo que da un repositorio de 7.720,6 GB repartido en 772 shards de menos de 10,6 GB cada uno.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mythos (numbat) | ~6,85 B en safetensors (~14 T declarados) | no disponible | Hibrida GDN/MLA + MoE 1.224 expertos, NVFP4 | no disponible | HuggingFace, checkpoint de preentrenamiento |
+| Mythos (numbat) | ~6,85 B en safetensors (~14 T declarados) | no disponible | Hibrida GDN/MLA + MoE 1.224 expertos, NVFP4 | no disponible | Hugging Face, checkpoint de preentrenamiento |
 | DeepSeek-V3 | 671 B totales, 37 B activos | 128 K | MoE con MLA | Licencia propia permisiva con restricciones | Pesos abiertos |
 | Qwen3-235B-A22B | 235 B totales, 22 B activos | 128 K | MoE | Apache 2.0 | Pesos abiertos |
 | Llama 3.1 405B | 405 B densos | 128 K | Transformer denso | Licencia comunitaria Llama | Pesos abiertos |
@@ -85,7 +85,7 @@ La comparativa es orientativa: Mythos se situa en una escala de parametros muy s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bossiara13/Mythos
+- Modelo en Hugging Face: https://huggingface.co/Bossiara13/Mythos
 - Model card (incluida en el repositorio): https://huggingface.co/Bossiara13/Mythos/blob/main/README.md
-- Implementacion de referencia: `configuration_numbat.py` y `modeling_numbat.py` en el repositorio de HuggingFace
+- Implementacion de referencia: `configuration_numbat.py` y `modeling_numbat.py` en el repositorio de Hugging Face
 - Paper, blog o repositorio adicional: no disponible

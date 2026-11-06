@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid-matching es un repositorio de código que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Hybrid" orientada a una tarea de "Matching". Lo publica el usuario julessimo9808 en HuggingFace y se distribuye bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: el propio autor indica que la configuración tiny está pensada para revisión de código, smoke tests y experimentos controlados de pequeño alcance.
+Hybrid-matching es un repositorio de código que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada "Hybrid" orientada a una tarea de "Matching". Lo publica el usuario julessimo9808 en Hugging Face y se distribuye bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un punto de partida experimental: el propio autor indica que la configuración tiny está pensada para revisión de código, smoke tests y experimentos controlados de pequeño alcance.
 
 Técnicamente, el modelo emplea atención lineal y fusión mediante cross attention, con activación gelu tanh y normalización instancenorm. La escala es "tiny" y el recuento real de parámetros registrado en el safetensors es de 24.832, lo que lo sitúa como una implementación de laboratorio más que como un modelo entrenado. El checkpoint incluido es únicamente una inicialización válida para pruebas, no un modelo ajustado ni evaluado.
 
@@ -75,8 +75,8 @@ No disponible. No se referencia en la información proporcionada ningún modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julessimo9808/hybrid-matching
+- Hugging Face: https://huggingface.co/julessimo9808/hybrid-matching
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
-- Repositorio de código: no disponible (la implementación `train.py` se distribuye dentro del propio repositorio de HuggingFace)
+- Repositorio de código: no disponible (la implementación `train.py` se distribuye dentro del propio repositorio de Hugging Face)
 - Demo: no disponible

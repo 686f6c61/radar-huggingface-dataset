@@ -76,9 +76,9 @@ No se indican valores absolutos de tokens por segundo, latencia por token ni con
 
 | Modelo | Parametros | Formato | Contexto | Decodificacion especulativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| darkmaniac7/Qwen3.5-4B-MNN | ~4B | MNN | no disponible | Si: cabeza MTP opcional con vocabulario borrador de 32k | Apache-2.0 | HuggingFace; 0 descargas, 0 likes |
-| taobao-mnn/Qwen3.5-4B-MNN | ~4B | MNN | no disponible | No incluida (tronco identico byte a byte) | Apache-2.0 | HuggingFace (repositorio de origen) |
-| Qwen/Qwen3.5-4B | ~4B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| darkmaniac7/Qwen3.5-4B-MNN | ~4B | MNN | no disponible | Si: cabeza MTP opcional con vocabulario borrador de 32k | Apache-2.0 | Hugging Face; 0 descargas, 0 likes |
+| taobao-mnn/Qwen3.5-4B-MNN | ~4B | MNN | no disponible | No incluida (tronco identico byte a byte) | Apache-2.0 | Hugging Face (repositorio de origen) |
+| Qwen/Qwen3.5-4B | ~4B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 
 La diferencia funcional entre el primer y el segundo modelo es exclusivamente la cabeza MTP: el tronco es identico (mismos sha256), de modo que cualquier mejora de calidad o de contexto debe atribuirse al modelo base y no a este espejo.
 
@@ -97,7 +97,7 @@ La diferencia funcional entre el primer y el segundo modelo es exclusivamente la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darkmaniac7/Qwen3.5-4B-MNN
+- Repositorio en Hugging Face: https://huggingface.co/darkmaniac7/Qwen3.5-4B-MNN
 - Repositorio de origen (taobao-mnn): https://huggingface.co/taobao-mnn/Qwen3.5-4B-MNN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Commit del tronco espejado: `aa966261175a532d9906fa165c9d506d617320a9`

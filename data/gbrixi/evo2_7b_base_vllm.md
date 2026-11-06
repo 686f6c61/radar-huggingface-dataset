@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evo2_7b_base_vllm (este) | 6,49B | 8192 | ADN | Apache 2.0 | HuggingFace, backend vLLM |
-| evo2_7b_vllm | 7B | hasta 1M | ADN | Apache 2.0 | HuggingFace, backend vLLM |
-| evo2_20b_vllm | 20B | hasta 1M | ADN | Apache 2.0 | HuggingFace, backend vLLM |
-| evo2_1b_base_vllm | 1B | 8192 | ADN | Apache 2.0 | HuggingFace, backend vLLM |
+| evo2_7b_base_vllm (este) | 6,49B | 8192 | ADN | Apache 2.0 | Hugging Face, backend vLLM |
+| evo2_7b_vllm | 7B | hasta 1M | ADN | Apache 2.0 | Hugging Face, backend vLLM |
+| evo2_20b_vllm | 20B | hasta 1M | ADN | Apache 2.0 | Hugging Face, backend vLLM |
+| evo2_1b_base_vllm | 1B | 8192 | ADN | Apache 2.0 | Hugging Face, backend vLLM |
 
 Las alternativas comparables son variantes del mismo modelo original de Arc Institute; no se dispone en la informacion proporcionada de modelos de ADN de otros desarrolladores para comparar parametros, contexto y rendimiento.
 
@@ -80,7 +80,7 @@ Las alternativas comparables son variantes del mismo modelo original de Arc Inst
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gbrixi/evo2_7b_base_vllm
+- Repositorio Hugging Face: https://huggingface.co/gbrixi/evo2_7b_base_vllm
 - Modelo base original: https://huggingface.co/arcinstitute/evo2_7b_base
 - Repositorio GitHub de Evo 2: https://github.com/ArcInstitute/evo2
 - Paper (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1

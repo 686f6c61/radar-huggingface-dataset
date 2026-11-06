@@ -18,7 +18,7 @@ Su relevancia es acotada y muy específica: cubre tareas de enrutamiento de sopo
 | Longitud de contexto | 4.096 tokens de entrada por defecto en la interfaz de referencia; las entradas más largas se rechazan (no se documenta la ventana nativa del modelo base) |
 | Tipos de cuantización | no disponible; la ruta de referencia probada usa BF16 (cuerpo) y FP32 (readout) |
 | Idiomas soportados | inglés (`en`) |
-| Licencia | `kettei-community-model-license-1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `kettei-community-model-license-1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | `safetensors` (tamaño del repo 2,2 GB; pesos BF16 ~2,16 GB) |
 
 Otros datos técnicos: modelo base `IFM/K2-Horizon-0.9B` (relación `finetune`), pipeline declarado `other`, etiquetas `kettei`, `decision-model`, `custom_code`, `region:us`. Configuración de referencia probada: NVIDIA RTX 6000 Ada, PyTorch 2.8.0+cu129, Transformers 5.17.0.
@@ -105,7 +105,7 @@ La información disponible solo permite comparar con los dos modelos evaluados e
 | When2Call (3.423) | 57,64 % | 62,02 % | 77,30 % |
 | WildGuard F1 macro | 84,96 % | 91,74 % | 95,21 % |
 | Licencia | `kettei-community-model-license-1.0` | no disponible | no disponible |
-| Disponibilidad | HuggingFace (repo Sqwish/Kettei-Dot) | no disponible | no disponible |
+| Disponibilidad | Hugging Face (repo Sqwish/Kettei-Dot) | no disponible | no disponible |
 
 Lectura: en la información publicada, Dot queda por debajo de Core y de D3 Mini en la mayoría de los componentes, con la excepción de HLE, donde obtiene la mejor cifra de los tres.
 
@@ -125,7 +125,7 @@ Lectura: en la información publicada, Dot queda por debajo de Core y de D3 Mini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sqwish/Kettei-Dot
+- Modelo en Hugging Face: https://huggingface.co/Sqwish/Kettei-Dot
 - Licencia: https://huggingface.co/Sqwish/Kettei-Dot/blob/main/LICENSE
 - Wheel de referencia y archivo de código/evaluación: https://huggingface.co/Sqwish/Kettei-Dot/tree/main/artifacts
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B

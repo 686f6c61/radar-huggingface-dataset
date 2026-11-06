@@ -100,6 +100,6 @@ No se dispone de especificaciones de parametros, contexto ni licencia de las var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaopanboonyuen/KAO-TerraMind-A
+- Modelo en Hugging Face: https://huggingface.co/kaopanboonyuen/KAO-TerraMind-A
 - Modelo base: https://huggingface.co/ibm-esa-geospatial/TerraMind-1.0-base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda web proporcionados.

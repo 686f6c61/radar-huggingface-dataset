@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/ember-gale-46` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `models4world` el 24 de agosto de 2026. Está diseñado para generación de texto y uso conversacional, y se basa en el modelo `models4world/maple-signal-64`, del cual no se dispone de información pública. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere un adaptador de dimensiones considerables, pero no se especifican los parámetros del adaptador ni los del modelo base.
+El modelo `models4world/ember-gale-46` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `models4world` el 24 de agosto de 2026. Está diseñado para generación de texto y uso conversacional, y se basa en el modelo `models4world/maple-signal-64`, del cual no se dispone de información pública. El repositorio tiene un tamaño de 1,9 GB, lo que sugiere un adaptador de dimensiones considerables, pero no se especifican los parámetros del adaptador ni los del modelo base.
 
 La model card es prácticamente un esqueleto: todos los campos relevantes (arquitectura, licencia, idiomas, datos de entrenamiento, evaluación) están marcados como "[More Information Needed]". No se han publicado resultados de benchmarks, ni documentación técnica, ni ejemplos de uso. La única referencia técnica es el tag `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación del impacto ambiental del entrenamiento de modelos, pero no aporta información sobre el modelo en sí.
 
@@ -61,7 +61,7 @@ No disponible. Al no conocerse el modelo base ni las características del adapta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/models4world/ember-gale-46
+- Modelo en Hugging Face: https://huggingface.co/models4world/ember-gale-46
 - Perfil del autor: https://huggingface.co/models4world
 - Lista de modelos del autor: https://huggingface.co/models4world/models
 - Referencia al artículo de impacto ambiental (tag arxiv): https://arxiv.org/abs/1910.09700

@@ -89,7 +89,7 @@ No se dispone de datos verificables de benchmarks ni de licencia para establecer
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/minas2025/Qwen-3.5-4B-RP-Finetune
+- Repositorio del modelo en Hugging Face: https://huggingface.co/minas2025/Qwen-3.5-4B-RP-Finetune
 - Modelo base: https://huggingface.co/DreamFast/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark
 - Dataset de entrenamiento: https://huggingface.co/datasets/Chaser-cz/sonnet35-charcard-roleplay-sharegpt
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

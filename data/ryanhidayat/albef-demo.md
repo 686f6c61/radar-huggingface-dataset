@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryanhidayat/albef-demo` es un prototipo de investigacion publicado en HuggingFace que implementa una variante de la arquitectura ALBEF (*Align before Fuse*) orientada a tareas de recuperacion multimodal (*retrieval*). El repositorio lo mantiene el usuario `ryanhidayat` y se presenta explicitamente como material de partida experimental, no como un modelo entrenado. Incluye el codigo de ajuste fino (`finetune.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
+`ryanhidayat/albef-demo` es un prototipo de investigacion publicado en Hugging Face que implementa una variante de la arquitectura ALBEF (*Align before Fuse*) orientada a tareas de recuperacion multimodal (*retrieval*). El repositorio lo mantiene el usuario `ryanhidayat` y se presenta explicitamente como material de partida experimental, no como un modelo entrenado. Incluye el codigo de ajuste fino (`finetune.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en formato safetensors.
 
 El problema que aborda es el de la recuperacion imagen-texto, es decir, alinear representaciones visuales y textuales en un espacio comun para poder buscar imagenes a partir de una descripcion escrita y viceversa. La arquitectura declarada combina atencion estandar con fusion por *co-attention*, activacion swish y normalizacion RMSNorm, siguiendo el esquema clasico de ALBEF. La escala nominal indicada en la model card es "large".
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| ryanhidayat/albef-demo | 24.832 en el checkpoint; escala "large" declarada | no disponible | BSD-3-Clause | HuggingFace, 0 descargas | no disponible |
+| ryanhidayat/albef-demo | 24.832 en el checkpoint; escala "large" declarada | no disponible | BSD-3-Clause | Hugging Face, 0 descargas | no disponible |
 | ALBEF original (Salesforce Research) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | publicaciones y repositorio de investigacion del trabajo original | no disponible en la informacion proporcionada |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | ampliamente distribuido | no disponible en la informacion proporcionada |
 | BLIP (Salesforce Research) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | publicaciones y repositorio de investigacion | no disponible en la informacion proporcionada |
@@ -87,11 +87,11 @@ La comparacion cuantitativa no es posible con los datos disponibles: este reposi
 - No se documentan sesgos conocidos, ni limitaciones de contexto o de idioma, porque no se documenta nada sobre los datos de entrenamiento.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial con obligaciones de atribucion y manteniendo el aviso de copyright, pero el autor advierte que hay que revisar por separado los terminos de los datos de origen cuando el repositorio se use con datasets externos. En el caso de Flickr30k u otros corpus con condiciones propias, esa revision es obligatoria.
 - Discrepancia de documentacion: la model card declara escala "large" mientras que `model.safetensors` contiene 24.832 parametros. Conviene verificar `config.json` antes de asumir el tamano real de la arquitectura objetivo.
-- Las APIs de carga automatica de HuggingFace requieren un adaptador explicito; no se puede esperar que `from_pretrained` funcione directamente sobre este repositorio.
+- Las APIs de carga automatica de Hugging Face requieren un adaptador explicito; no se puede esperar que `from_pretrained` funcione directamente sobre este repositorio.
 - Fechas del repositorio inusuales: creado y actualizado el 2026-09-11, con dos segundos de diferencia entre ambos eventos, lo que refuerza la idea de que se trata de un repositorio generado de forma automatica o de prueba.
 - En produccion no debe desplegarse bajo ninguna circunstancia como modelo de recuperacion; solo como material de referencia de codigo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ryanhidayat/albef-demo
+- Hugging Face: https://huggingface.co/ryanhidayat/albef-demo
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre la implementacion ALBEF de `ryanhidayat`. Los resultados obtenidos correspondian a contenido no relacionado con el ambito tecnico. Por tanto, no se incluyen enlaces adicionales a papers, blogs, repositorios o demos, ya que no se ha verificado ninguno en la informacion disponible.

@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is-lora | 8B (base) + LoRA r=16 | 8 192 tokens en entrenamiento | No disponible | Llama 3.1 Community License | HuggingFace, adaptador PEFT |
-| arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is (modelo base) | 8B | No disponible en la informacion proporcionada | No disponible | Llama 3.1 Community License | HuggingFace |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8B | 128 000 tokens (modelo original de Meta) | No disponible en esta ficha | Llama 3.1 Community License | HuggingFace |
+| arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is-lora | 8B (base) + LoRA r=16 | 8 192 tokens en entrenamiento | No disponible | Llama 3.1 Community License | Hugging Face, adaptador PEFT |
+| arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is (modelo base) | 8B | No disponible en la informacion proporcionada | No disponible | Llama 3.1 Community License | Hugging Face |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8B | 128 000 tokens (modelo original de Meta) | No disponible en esta ficha | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento ni de otros sistemas de traducción EN-IS comparables en la informacion proporcionada, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de otros sistemas de traducción EN-IS 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is-lora
+- Modelo en Hugging Face: https://huggingface.co/arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is-lora
 - Modelo base: https://huggingface.co/arnastofnun/Llama-3.1-8B-wmt26-AMI-en-is
 - Modelo base original: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Conjunto de datos de fine-tuning: https://github.com/stofnun-arna-magnussonar/WMT2026_finetuning_dataset

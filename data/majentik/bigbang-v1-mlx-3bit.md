@@ -73,7 +73,7 @@ No se dispone de comparativas con otros modelos MoE de tamaño similar (p. ej., 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/majentik/BigBang-v1-MLX-3bit
+- Repositorio Hugging Face: https://huggingface.co/majentik/BigBang-v1-MLX-3bit
 - Modelo base: https://huggingface.co/endless-frontier/BigBang-v1
 - README del modelo base en GitHub: https://github.com/endless-frontier/BigBang-v1/blob/main/README.md
 - Otras cuantizaciones MLX: https://huggingface.co/models?other=base_model:quantized:endless-frontier/BigBang-v1

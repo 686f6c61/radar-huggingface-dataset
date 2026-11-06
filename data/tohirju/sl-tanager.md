@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tohirju/sl-tanager es un modelo de lenguaje publicado en HuggingFace por el usuario Tohirju, con un total de 852.985.920 parametros (aproximadamente 853 millones) verificado a partir de los pesos en formato safetensors. El repositorio ocupa 1,7 GB, lo que es coherente con un checkpoint en precision de 16 bits sin optimizaciones adicionales. La etiqueta de arquitectura declarada es `qwen3_5`, lo que indica que el modelo se construye sobre la familia Qwen3.5, aunque no se especifica si se trata de un modelo base, un fine-tune o un ajuste con datos propios.
+Tohirju/sl-tanager es un modelo de lenguaje publicado en Hugging Face por el usuario Tohirju, con un total de 852.985.920 parametros (aproximadamente 853 millones) verificado a partir de los pesos en formato safetensors. El repositorio ocupa 1,7 GB, lo que es coherente con un checkpoint en precision de 16 bits sin optimizaciones adicionales. La etiqueta de arquitectura declarada es `qwen3_5`, lo que indica que el modelo se construye sobre la familia Qwen3.5, aunque no se especifica si se trata de un modelo base, un fine-tune o un ajuste con datos propios.
 
-El modelo esta sujeto a acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones en la pagina de HuggingFace. La licencia declarada es `other`, es decir, una licencia personalizada cuyo texto no se ha podido consultar desde fuera del repositorio, por lo que las condiciones exactas de uso comercial, redistribucion y atribucion quedan pendientes de revision directa.
+El modelo esta sujeto a acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones en la pagina de Hugging Face. La licencia declarada es `other`, es decir, una licencia personalizada cuyo texto no se ha podido consultar desde fuera del repositorio, por lo que las condiciones exactas de uso comercial, redistribucion y atribucion quedan pendientes de revision directa.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y su fecha de creacion y ultima actualizacion difieren en menos de un minuto (12 de septiembre de 2026), lo que sugiere una publicacion muy reciente y sin ciclo de validacion por parte de la comunidad. Por tanto, debe tratarse como un checkpoint experimental sin evidencia publica de rendimiento.
 
@@ -12,7 +12,7 @@ En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiqueta `qwen3_5` en HuggingFace; no se detalla la variante exacta ni si incorpora componentes MoE o hibridos) |
+| Arquitectura | Transformer (etiqueta `qwen3_5` en Hugging Face; no se detalla la variante exacta ni si incorpora componentes MoE o hibridos) |
 | Parametros totales | 852.985.920 (aproximadamente 0,85 mil millones) |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y 
 | Licencia | other (licencia personalizada; texto no accesible sin aceptar las condiciones del repositorio) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 1,7 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 12 de septiembre de 2026 |
 
@@ -70,7 +70,7 @@ Estimaciones calculadas a partir del recuento real de parametros (852.985.920). 
 - VRAM total recomendada en INT4: 1-2 GB.
 - GPU de consumo: cabe holgadamente en cualquier GPU con 4 GB o mas de VRAM, incluidas RTX 3050, RTX 3060, RTX 4060, RTX 4090 y equivalentes; tambien en GPUs integradas con memoria unificada suficiente.
 - GPU de datacenter: A100, H100, L40S o similares no son necesarias para inferencia; solo tendrian sentido para entrenamiento o ajuste fino a gran escala.
-- Opciones de despliegue: al publicarse en safetensors, es compatible con HuggingFace Transformers, vLLM y TGI. Para llama.cpp u Ollama seria necesaria una conversion a GGUF que no esta confirmada en el repositorio.
+- Opciones de despliegue: al publicarse en safetensors, es compatible con Hugging Face Transformers, vLLM y TGI. Para llama.cpp u Ollama seria necesaria una conversion a GGUF que no esta confirmada en el repositorio.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -101,5 +101,5 @@ Las especificaciones de los modelos de referencia corresponden a su documentacio
 
 ## Enlaces
 
-- HuggingFace (acceso restringido): https://huggingface.co/Tohirju/sl-tanager
+- Hugging Face (acceso restringido): https://huggingface.co/Tohirju/sl-tanager
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo, su autor o su arquitectura: los resultados obtenidos correspondian a paginas de acceso a correo institucional del ejercito estadounidense, sin relacion con el modelo. No se dispone por tanto de paper, blog tecnico, repositorio de codigo ni demo asociados.

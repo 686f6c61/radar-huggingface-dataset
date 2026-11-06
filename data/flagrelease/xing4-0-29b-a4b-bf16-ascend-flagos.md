@@ -93,7 +93,7 @@ No se dispone de información suficiente y verificada sobre modelos competidores
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/Xing4.0-29B-A4B-BF16-ascend-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/Xing4.0-29B-A4B-BF16-ascend-FlagOS
 - ModelScope (descarga de pesos): `modelscope download --model FlagRelease/Xing4.0-29B-A4B-BF16-ascend-FlagOS`
 - Imagen Docker FlagOS para Ascend: `harbor.baai.ac.cn/flagrelease-public/xing4.0-29b-a4b-ascend001-gems5.3.0-tree0.6.0-cx0.13.0-pluginnone-vllmnone-sglang0.5.11-sglangfl0.1.0-cp311-ptnpu28-cann85-a64-none:202609181434`
 - Paper, blog, repositorio de código o demo del modelo: no disponibles en la información proporcionada.

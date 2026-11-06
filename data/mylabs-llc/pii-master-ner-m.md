@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MyLabs-LLC/pii-master-ner-m
+- Hugging Face: https://huggingface.co/MyLabs-LLC/pii-master-ner-m
 - Modelo base: https://huggingface.co/kalyan-ks/ettin-68m-nemotron-pii
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-PII
 - Repositorio de la organización: https://github.com/MyLabs-LLC/sentry (proyecto relacionado con LLMs, aunque no directamente con este modelo)

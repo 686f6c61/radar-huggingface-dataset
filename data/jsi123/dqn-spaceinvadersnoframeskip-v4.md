@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DQN-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo Deep Q-Network (DQN) para el entorno SpaceInvadersNoFrameskip-v4 de Atari, tal como lo distribuye la librería Gymnasium. Lo publica el usuario JSI123 en HuggingFace como parte de las prácticas del curso de deep reinforcement learning (deep-rl-course), reutilizando el flujo de trabajo del RL Zoo de Stable Baselines3. No es un modelo de lenguaje ni un modelo generativo: es una política neuronal convolucional que asigna valores Q a las acciones del juego a partir de observaciones de imagen.
+DQN-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo Deep Q-Network (DQN) para el entorno SpaceInvadersNoFrameskip-v4 de Atari, tal como lo distribuye la librería Gymnasium. Lo publica el usuario JSI123 en Hugging Face como parte de las prácticas del curso de deep reinforcement learning (deep-rl-course), reutilizando el flujo de trabajo del RL Zoo de Stable Baselines3. No es un modelo de lenguaje ni un modelo generativo: es una política neuronal convolucional que asigna valores Q a las acciones del juego a partir de observaciones de imagen.
 
 El modelo se entrenó durante 1.000.000 de pasos de entorno con una política `CnnPolicy`, un búfer de repetición de 100.000 transiciones y un tamaño de lote de 32. El resultado declarado por el autor es una recompensa media de 536,50 con una desviación estándar de 209,83 en el entorno de evaluación, un valor que refleja una política funcional pero con alta varianza entre episodios.
 
@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Contexto / observación | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JSI123/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 4 frames apilados 84x84 | 536,50 ± 209,83 | no disponible | HuggingFace, 0 descargas |
+| JSI123/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 4 frames apilados 84x84 | 536,50 ± 209,83 | no disponible | Hugging Face, 0 descargas |
 | Agentes de referencia del RL Zoo (SB3) | DQN / PPO / A2C | SpaceInvadersNoFrameskip-v4 | 4 frames apilados 84x84 | no disponible en la información | MIT (SB3/RL Zoo) | GitHub DLR-RM/rl-baselines3-zoo |
 | Variantes Double/Dueling DQN (literatura) | Double/Dueling DQN | Atari 2600 | 4 frames apilados 84x84 | no disponible en la información | según implementación | Papers y repos académicos |
 
@@ -87,7 +87,7 @@ No se dispone de datos numéricos de los modelos comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JSI123/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/JSI123/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

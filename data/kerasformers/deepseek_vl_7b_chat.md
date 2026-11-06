@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 
 | Modelo | Parametros | Contexto | Framework | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kerasformers/deepseek_vl_7b_chat | 7B | no disponible | Keras 3 (TF, Torch, JAX) | deepseek | HuggingFace |
-| deepseek-ai/deepseek-vl-7b-chat (original) | 7B | no disponible | PyTorch | deepseek | HuggingFace |
-| llava-hf/llava-1.5-7b-hf | 7B | 4096 tokens | PyTorch | apache-2.0 | HuggingFace |
+| kerasformers/deepseek_vl_7b_chat | 7B | no disponible | Keras 3 (TF, Torch, JAX) | deepseek | Hugging Face |
+| deepseek-ai/deepseek-vl-7b-chat (original) | 7B | no disponible | PyTorch | deepseek | Hugging Face |
+| llava-hf/llava-1.5-7b-hf | 7B | 4096 tokens | PyTorch | apache-2.0 | Hugging Face |
 
 La comparativa se limita a aspectos estructurales, ya que no hay datos de rendimiento publicados para la conversion Keras 3. El modelo original de DeepSeek y esta conversion comparten pesos y arquitectura, por lo que su rendimiento deberia ser similar en tareas visuales. LLaVA 1.5 es una alternativa popular con licencia Apache 2.0, pero no ofrece la doble torre de vision ni la portabilidad entre backends que proporciona KerasFormers.
 
@@ -80,7 +80,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay datos de rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/deepseek_vl_7b_chat
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/deepseek_vl_7b_chat
 - Modelo original: https://huggingface.co/deepseek-ai/deepseek-vl-7b-chat
 - Paper: https://arxiv.org/abs/2403.05525
 - Repositorio GitHub de DeepSeek-VL: https://github.com/deepseek-ai/DeepSeek-VL

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `khaoulaaChe/distilbert-ner-message` es un ajuste fino (fine-tune) de la familia DistilBERT publicado por el usuario khaoulaaChe en HuggingFace, orientado a la tarea de reconocimiento de entidades nombradas (NER), tal y como indica su pipeline `token-classification` y la etiqueta `distilbert` del repositorio. Cuenta con 66.365.187 parametros segun los pesos en formato safetensors, lo que lo situa en el rango de una variante destilada de BERT-base, con una huella de disco de 0,3 GB. El nombre del repositorio sugiere un ajuste orientado a la extraccion de entidades sobre mensajes conversacionales (por ejemplo, mensajes de atencion al cliente, SMS o chats), aunque esta finalidad no esta confirmada en la documentacion.
+El modelo `khaoulaaChe/distilbert-ner-message` es un ajuste fino (fine-tune) de la familia DistilBERT publicado por el usuario khaoulaaChe en Hugging Face, orientado a la tarea de reconocimiento de entidades nombradas (NER), tal y como indica su pipeline `token-classification` y la etiqueta `distilbert` del repositorio. Cuenta con 66.365.187 parametros segun los pesos en formato safetensors, lo que lo situa en el rango de una variante destilada de BERT-base, con una huella de disco de 0,3 GB. El nombre del repositorio sugiere un ajuste orientado a la extraccion de entidades sobre mensajes conversacionales (por ejemplo, mensajes de atencion al cliente, SMS o chats), aunque esta finalidad no esta confirmada en la documentacion.
 
 La relevancia de este tipo de modelos reside en su coste de inferencia muy bajo: al ser una arquitectura destilada de ~66 millones de parametros, puede ejecutarse en CPU o en GPUs de gama de entrada con latencias de milisegundos, lo que lo hace apto para pipelines de extraccion de informacion de alto volumen donde un modelo de cientos de miles de millones de parametros resultaria prohibitivo economicamente. Su licencia de tipo encoder-only permite, en principio, combinarlo con reglas deterministas o con modelos generativos para tareas de enriquecimiento estructurado.
 
-Ahora bien, la model card publicada es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no se declara el conjunto de datos de entrenamiento, ni el numero de etiquetas de la cabeza de clasificacion, ni los hiperparametros, ni los resultados de evaluacion, ni la licencia. El repositorio no registra descargas ni "likes", y la fecha de creacion consignada (2026-10-10) resulta anomala, lo que apunta a un experimento personal no validado. Cualquier evaluacion rigurosa exige inspeccionar `config.json` e `id2label` antes de considerarlo para produccion.
+Ahora bien, la model card publicada es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no se declara el conjunto de datos de entrenamiento, ni el numero de etiquetas de la cabeza de clasificacion, ni los hiperparametros, ni los resultados de evaluacion, ni la licencia. El repositorio no registra descargas ni "likes", y la fecha de creacion consignada (2026-10-10) resulta anomala, lo que apunta a un experimento personal no validado. Cualquier evaluacion rigurosa exige inspeccionar `config.json` e `id2label` antes de considerarlo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se dispone de informacion sobre el proceso de entrenamiento de este ajuste co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla autogenerada de HuggingFace y no incluye la seccion de evaluacion cumplimentada, ni conjuntos de validacion (CoNLL-2003, OntoNotes, WNUT-17), ni metricas de F1 por entidad, ni matrices de confusion. Tampoco se indica el resultado del `Trainer` de HuggingFace que habitualmente se registra al subir un ajuste fino.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card es la plantilla autogenerada de Hugging Face y no incluye la seccion de evaluacion cumplimentada, ni conjuntos de validacion (CoNLL-2003, OntoNotes, WNUT-17), ni metricas de F1 por entidad, ni matrices de confusion. Tampoco se indica el resultado del `Trainer` de Hugging Face que habitualmente se registra al subir un ajuste fino.
 
 ## Requisitos de hardware
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| khaoulaaChe/distilbert-ner-message | 66,4 M | 512 tokens | NER (token-classification) | no disponible | HuggingFace, 0 descargas |
-| elastic/distilbert-base-uncased-finetuned-conll03-english | ~66,9 M | 512 tokens | NER en ingles (CoNLL-03) | Apache-2.0 | HuggingFace, ampliamente usado |
-| dslim/bert-base-NER | ~108 M | 512 tokens | NER en ingles (CoNLL-03, 4 tipos) | MIT | HuggingFace, muy usado |
-| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 tokens | NER en ingles (etiquetas ampliadas) | MIT | HuggingFace |
+| khaoulaaChe/distilbert-ner-message | 66,4 M | 512 tokens | NER (token-classification) | no disponible | Hugging Face, 0 descargas |
+| elastic/distilbert-base-uncased-finetuned-conll03-english | ~66,9 M | 512 tokens | NER en ingles (CoNLL-03) | Apache-2.0 | Hugging Face, ampliamente usado |
+| dslim/bert-base-NER | ~108 M | 512 tokens | NER en ingles (CoNLL-03, 4 tipos) | MIT | Hugging Face, muy usado |
+| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 tokens | NER en ingles (etiquetas ampliadas) | MIT | Hugging Face |
 
 La comparacion debe tomarse con cautela: los tres modelos de referencia publican su licencia, su esquema de etiquetas y sus resultados de evaluacion, mientras que `distilbert-ner-message` no ofrece ninguno de esos datos. No es posible afirmar superioridad o inferioridad de rendimiento sin una evaluacion en un conjunto comun.
 
@@ -91,7 +91,7 @@ La comparacion debe tomarse con cautela: los tres modelos de referencia publican
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khaoulaaChe/distilbert-ner-message
+- Modelo en Hugging Face: https://huggingface.co/khaoulaaChe/distilbert-ner-message
 - Articulo de DistilBERT, arquitectura base de la familia: https://arxiv.org/abs/1910.01108
 - Articulo referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

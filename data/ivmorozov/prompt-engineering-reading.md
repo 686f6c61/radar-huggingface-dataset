@@ -81,7 +81,7 @@ La diferencia principal es que el repositorio de ivmorozov no pretende ser una g
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ivmorozov/prompt-engineering-reading
+- Repositorio en Hugging Face: https://huggingface.co/ivmorozov/prompt-engineering-reading
 - Guia de prompt engineering (referencia externa): https://www.promptingguide.ai/
 - Repositorio de guias de prompt engineering en GitHub: https://github.com/dair-ai/Prompt-Engineering-Guide
 - Articulo de Analytics Vidhya sobre prompt engineering 2026: https://www.analyticsvidhya.com/blog/2026/01/master-prompt-engineering/

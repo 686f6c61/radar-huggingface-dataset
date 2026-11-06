@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-chrono4-w60-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador y la etiqueta `sn38-nanochrono`, parece tratarse de un experimento de una familia interna denominada "nanochrono", probablemente orientada a arquitecturas con componente temporal o recurrente, aunque no se dispone de documentación pública que lo confirme. El repositorio tiene un tamaño de 12,6 GB y 2.018.511.234 parámetros reales según los tensores safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 2B parámetros.
+El modelo `alfred8995/r18-a2-w13-kx-chrono4-w60-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador y la etiqueta `sn38-nanochrono`, parece tratarse de un experimento de una familia interna denominada "nanochrono", probablemente orientada a arquitecturas con componente temporal o recurrente, aunque no se dispone de documentación pública que lo confirme. El repositorio tiene un tamaño de 12,6 GB y 2.018.511.234 parámetros reales según los tensores safetensors, lo que lo sitúa en la categoría de modelos de aproximadamente 2B parámetros.
 
 No se ha publicado información sobre arquitectura, datos de entrenamiento, tokenizador, idiomas o pipeline. El nombre sugiere una run de entrenamiento concreta (posiblemente con parámetros como ventana 60, step 130 o similar), pero esto es especulación y no debe tomarse como dato. Dado que el acceso es restringido y el modelo acumula 2 descargas y 0 likes, se trata de un artefacto de investigación de muy baja difusión, no de un modelo listo para producción.
 
@@ -72,7 +72,7 @@ La comparación cuantitativa no es posible: el modelo no publica benchmarks, tok
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no hay model card con arquitectura, datos, tokenizador ni instrucciones de uso.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Riesgo de alucinación: desconocido, pero esperable en cualquier modelo de lenguaje sin alineación documentada.
 - Sesgos: no evaluados ni documentados.
 - Idiomas: no confirmados; no se puede garantizar calidad en castellano ni en ningún otro idioma.
@@ -83,5 +83,5 @@ La comparación cuantitativa no es posible: el modelo no publica benchmarks, tok
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w60-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w60-s130
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

@@ -62,7 +62,7 @@ No disponible. No hay un modelo comparable porque el repositorio no contiene un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucas-dubois/parser-proto
+- Hugging Face: https://huggingface.co/Lucas-dubois/parser-proto
 - Repositorio GitHub PARSE (relación no verificada): https://github.com/ArdeleanLucas/PARSE
 - Paper relacionado en arXiv (sin confirmar vínculo): https://arxiv.org/abs/2602.11852
 

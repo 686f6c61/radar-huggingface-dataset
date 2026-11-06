@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Base / categoria | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-main-module-lr-yaw10-v0p3-e30 (este) | pi05 / LIBERO, variante yaw10 | no disponible | sin evaluacion (pendiente) | apache-2.0 | HuggingFace, 0 descargas |
-| pi05-libero-main-module-lr-yaw30-v0p3-e3 (Donghyun1228) | pi05 / LIBERO, variante yaw30 | no disponible | sin evaluacion publicada | apache-2.0 | HuggingFace |
-| pi05-libero-source-free-raw-common-vision-yaw30 (Donghyun1228) | pi05 / LIBERO, sin evaluacion de politica | no disponible | sin evaluacion de politica | apache-2.0 (presumible) | HuggingFace |
+| pi05-libero-main-module-lr-yaw10-v0p3-e30 (este) | pi05 / LIBERO, variante yaw10 | no disponible | sin evaluacion (pendiente) | apache-2.0 | Hugging Face, 0 descargas |
+| pi05-libero-main-module-lr-yaw30-v0p3-e3 (Donghyun1228) | pi05 / LIBERO, variante yaw30 | no disponible | sin evaluacion publicada | apache-2.0 | Hugging Face |
+| pi05-libero-source-free-raw-common-vision-yaw30 (Donghyun1228) | pi05 / LIBERO, sin evaluacion de politica | no disponible | sin evaluacion de politica | apache-2.0 (presumible) | Hugging Face |
 | pi05_libero_base (LeRobot) | pi05 base para LIBERO | no disponible | entrenado y evaluado en tareas LIBERO (segun ModelScope) | no disponible en la informacion | ModelScope |
 | pi05_libero_finetuned (LeRobot) | pi05 ajustado en LIBERO | no disponible | evaluado en tareas LIBERO (segun ModelScope) | no disponible en la informacion | ModelScope |
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Trazabilidad de la busqueda: el autor indica que el candidato pertenece a una busqueda de hiperparametros "explicitly authorized", dato contextual que no garantiza calidad del resultado.
 
 ## Enlaces
-- HuggingFace (este modelo): https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw10-v0p3-e30-1000-20261015
+- Hugging Face (este modelo): https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw10-v0p3-e30-1000-20261015
 - Variante relacionada yaw30: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-yaw30-v0p3-e3-1000-20261015
 - Variante source-free raw common vision yaw30: https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011
 - Ejemplos LIBERO de openpi05 (GitHub): https://github.com/Integer003/openpi05/tree/main/examples/libero

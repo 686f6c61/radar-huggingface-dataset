@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wdwedwwdw/andrejka-lora` es un repositorio publicado en HuggingFace por el usuario `wdwedwwdw`. La informacion disponible en la ficha del repositorio es minima: no se declara pipeline, licencia, idiomas soportados ni modelo base. El unico dato objetivo relevante es el tamano del repositorio, 0,2 GB, y las fechas de creacion y ultima actualizacion (23 de septiembre de 2026, con una diferencia de apenas cinco minutos entre ambas), lo que sugiere una publicacion de prueba o un artefacto subido sin documentacion asociada.
+`wdwedwwdw/andrejka-lora` es un repositorio publicado en Hugging Face por el usuario `wdwedwwdw`. La informacion disponible en la ficha del repositorio es minima: no se declara pipeline, licencia, idiomas soportados ni modelo base. El unico dato objetivo relevante es el tamano del repositorio, 0,2 GB, y las fechas de creacion y ultima actualizacion (23 de septiembre de 2026, con una diferencia de apenas cinco minutos entre ambas), lo que sugiere una publicacion de prueba o un artefacto subido sin documentacion asociada.
 
 El sufijo `-lora` en el identificador sugiere que se trata de un adaptador LoRA (Low-Rank Adaptation) y no de un modelo completo con pesos preentrenados. El tamano de 0,2 GB es coherente con esa hipotesis, ya que un adaptador LoRA tipico ocupa entre decenas y cientos de megabytes en funcion del rango, del numero de capas adaptadas y del modelo base sobre el que se entrena. No obstante, esta interpretacion no puede confirmarse con los metadatos disponibles: no se especifica el modelo base, ni la configuracion de rangos, ni la tarea de ajuste.
 
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wdwedwwdw/andrejka-lora
+- Hugging Face: https://huggingface.co/wdwedwwdw/andrejka-lora
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

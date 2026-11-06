@@ -33,7 +33,7 @@ Tampoco se detallan los datos de entrenamiento: no se indica el numero de tokens
 - Formulacion de problemas QUBO (Quadratic Unconstrained Binary Optimization) a partir de descripciones en lenguaje natural.
 - Razonamiento sobre optimizacion combinatoria y problemas de recocido cuantico.
 - Integracion con el ecosistema blueqat para solvers de optimizacion.
-- Capacidad conversacional multi-turno (etiqueta `conversational` en HuggingFace).
+- Capacidad conversacional multi-turno (etiqueta `conversational` en Hugging Face).
 - Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
 - No se documenta soporte explicito de tool calling ni function calling.
 - No se documenta soporte de agentes ni multi-step reasoning mas alla del razonamiento conversacional.

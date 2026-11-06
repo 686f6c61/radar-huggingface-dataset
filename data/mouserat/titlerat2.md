@@ -99,7 +99,7 @@ La comparacion con LLMs generativos de proposito general (por ejemplo, Qwen o mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mouserat/titlerat2
+- Modelo en Hugging Face: https://huggingface.co/Mouserat/titlerat2
 - Notebook de Colab: https://huggingface.co/Mouserat/titlerat2/blob/main/titlerat_v1_colab.ipynb
 - Modelo base: https://huggingface.co/google/mt5-small
 - Dataset SFT-General-Japanese-60K: https://huggingface.co/datasets/OysterCoreAI/SFT-General-Japanese-60K

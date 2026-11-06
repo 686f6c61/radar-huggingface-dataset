@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jonprompter/LagerPilot-Qwen2.5-0.5B",
+  "slug": "jonprompter-lagerpilot-qwen2-5-0-5b",
+  "author": "jonprompter",
+  "url": "https://huggingface.co/jonprompter/LagerPilot-Qwen2.5-0.5B",
+  "created_at": "2026-11-02T14:20:15.000Z",
+  "updated_at": "2026-11-02T14:41:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "logistics",
+    "supply-chain",
+    "wareneingang",
+    "hgb-377",
+    "sap-migo",
+    "german",
+    "edge-ai",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 328,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585364,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jonprompter/LagerPilot-Qwen2.5-0.5B · Hugging Face",
+      "url": "https://huggingface.co/jonprompter/LagerPilot-Qwen2.5-0.5B",
+      "snippet": "jonprompter / LagerPilot-Qwen2.5-0.5B Like 0 Text Generation Safetensors German English qwen2 logistics supply-chain wareneingang hgb-377 sap-migo german edge-ai qwen2.5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket 📦 LagerPilot-Qwen: The On-Premises § 377 HGB Goods Receipt Auditor & SAP ..."
+    },
+    {
+      "title": "jonprompter/LagerPilot-Qwen2.5-0.5B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/jonprompter/LagerPilot-Qwen2.5-0.5B-LoRA",
+      "snippet": "jonprompter / LagerPilot-Qwen2.5-0.5B-LoRA Like 0 Text Generation Safetensors German English logistics supply-chain wareneingang hgb-377 sap-migo german edge-ai qwen2.5 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket 📦 LagerPilot-Qwen: The On-Premises § 377 HGB Goods Receipt Auditor & SAP ..."
+    }
+  ]
+}

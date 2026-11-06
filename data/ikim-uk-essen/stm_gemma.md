@@ -4,7 +4,7 @@
 
 El modelo `ikim-uk-essen/stm_gemma` es un retriever denso de similitud semántica construido sobre el backbone `google/gemma-2b`, desarrollado por el grupo de investigación IKIM (Institute for Artificial Intelligence in Medicine) de Essen. Forma parte de la familia Synthesize–Train–Merge (STM), presentada en el artículo *Less Finetuning, Better Retrieval: Rethinking LLM Adaptation for Biomedical Retrievers via Synthetic Data and Model Merging* (arXiv 2026). El modelo resuelve el problema de adaptar un LLM generalista a tareas de recuperación de información biomédica sin necesidad de un fine-tuning completo, mediante la fusión de cuatro adaptadores LoRA especializados usando el método Task Arithmetic con búsqueda evolutiva CMA-ES.
 
-Con 2.506 millones de parámetros (2.5B), el modelo está diseñado para codificar consultas y pasajes en un espacio vectorial de 2048 dimensiones, usando pooling del último token (EOS) y una longitud máxima de secuencia de 512 tokens. Su relevancia radica en que ofrece una alternativa eficiente a los retrievers biomédicos de gran tamaño, combinando datos sintéticos y reales con una estrategia de merging que reduce el coste de entrenamiento. El checkpoint está disponible en HuggingFace bajo la librería `sentence-transformers` y es compatible con la API de endpoints de la plataforma.
+Con 2.506 millones de parámetros (2.5B), el modelo está diseñado para codificar consultas y pasajes en un espacio vectorial de 2048 dimensiones, usando pooling del último token (EOS) y una longitud máxima de secuencia de 512 tokens. Su relevancia radica en que ofrece una alternativa eficiente a los retrievers biomédicos de gran tamaño, combinando datos sintéticos y reales con una estrategia de merging que reduce el coste de entrenamiento. El checkpoint está disponible en Hugging Face bajo la librería `sentence-transformers` y es compatible con la API de endpoints de la plataforma.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: el modelo en bfloat16 ocupa aproximadamente 5.0 GB (tamaño del repo). Con overhead de activaciones y tokenizador, se recomienda al menos 8 GB de VRAM para inferencia en lotes pequeños.
 - GPUs compatibles: cualquier GPU con al menos 8 GB de VRAM, como RTX 3060/3070/4060, RTX 4070, RTX 4080, RTX 4090, A10, A100, H100. Para uso con `flash_attention_2` se requiere una GPU compatible con FlashAttention (Ampere o superior).
 - En consumer GPU: sí, cabe en GPUs de gama media con 8-12 GB (p. ej., RTX 3060 12GB, RTX 4070).
-- Opciones de despliegue: `sentence-transformers` (recomendado), `transformers` con pooling manual, o servidores de inferencia como vLLM o TGI si se adapta a un pipeline de embeddings. También es compatible con la API de endpoints de HuggingFace.
+- Opciones de despliegue: `sentence-transformers` (recomendado), `transformers` con pooling manual, o servidores de inferencia como vLLM o TGI si se adapta a un pipeline de embeddings. También es compatible con la API de endpoints de Hugging Face.
 - Latencia y throughput: no disponible. Depende del hardware y del tamaño de lote; al ser un modelo de 2.5B, la inferencia es más rápida que modelos de 7B o mayores, pero más lenta que modelos pequeños tipo MiniLM.
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikim-uk-essen/stm_gemma
+- Modelo en Hugging Face: https://huggingface.co/ikim-uk-essen/stm_gemma
 - Paper en arXiv: https://arxiv.org/abs/2602.04731
-- Colección STM en HuggingFace: https://huggingface.co/collections/ikim-uk-essen/stm
+- Colección STM en Hugging Face: https://huggingface.co/collections/ikim-uk-essen/stm
 - Modelo base Gemma-2B: https://huggingface.co/google/gemma-2b
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

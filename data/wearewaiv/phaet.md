@@ -16,7 +16,7 @@ El modelo cuenta con 303.351.808 parámetros y se distribuye en formato safetens
 | Longitud de contexto | no disponible (modelo de vision, no procesa texto) |
 | Tipos de cuantizacion | no disponible (solo safetensors, sin GGUF u otros formatos) |
 | Idiomas soportados | no disponible (modelo de vision, no linguistico) |
-| Licencia | other (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -29,7 +29,7 @@ El modelo se distribuye con la etiqueta `custom_code`, lo que sugiere que puede 
 
 - Extraccion de caracteristicas de imagenes histopatologicas: genera embeddings densos a partir de tiles de WSI, listos para ser usados en clasificacion, regresion o clustering.
 - Especializacion en patologia: al ser un fine-tuning de Phikon-v2, esta optimizado para dominios medicos como deteccion de cancer, analisis de tejidos y biomarcadores.
-- Integracion con pipelines de vision por computadora: compatible con la libreria transformers de HuggingFace, lo que facilita su uso en flujos de trabajo existentes.
+- Integracion con pipelines de vision por computadora: compatible con la libreria transformers de Hugging Face, lo que facilita su uso en flujos de trabajo existentes.
 - No soporta generacion de texto, tool calling, agentes, razonamiento multi-paso ni capacidades multilingues, ya que es exclusivamente un modelo de vision.
 
 ## Casos de uso
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 - VRAM estimada para inferencia: dado que el modelo tiene 303M parametros, en precision FP16 ocuparia aproximadamente 600 MB de VRAM, y en FP32 unos 1,2 GB. Esto permite ejecutarlo en GPUs consumer con al menos 4 GB de VRAM, como una NVIDIA GTX 1650 o superior, aunque se recomienda una RTX 3060 o mejor para mayor comodidad.
 - GPU recomendadas: cualquier GPU moderna con soporte CUDA, como RTX 3060, RTX 4090, A100 o H100. Para fine-tuning se necesitaria al menos 8-12 GB de VRAM dependiendo del batch size.
-- Opciones de despliegue: al ser un modelo de vision, se puede cargar con la libreria transformers de HuggingFace mediante `AutoModel` o `AutoImageProcessor`. No es compatible con vLLM ni llama.cpp, que estan orientados a modelos de lenguaje. Se puede servir como microservicio con FastAPI o TorchServe.
+- Opciones de despliegue: al ser un modelo de vision, se puede cargar con la libreria transformers de Hugging Face mediante `AutoModel` o `AutoImageProcessor`. No es compatible con vLLM ni llama.cpp, que estan orientados a modelos de lenguaje. Se puede servir como microservicio con FastAPI o TorchServe.
 - Latencia y throughput: no se han publicado datos oficiales. Como referencia, un ViT de 300M parametros procesa una imagen de 224x224 en decenas de milisegundos en una GPU moderna, pero depende del hardware y del batch.
 
 ## Comparativa con modelos similares
@@ -58,7 +58,7 @@ No se dispone de datos comparativos publicados para Phaet. El modelo base owkin/
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que es necesario aceptar las condiciones del autor antes de descargarlo. Esto puede limitar su uso en entornos corporativos o academicos si no se cumplen los requisitos.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que es necesario aceptar las condiciones del autor antes de descargarlo. Esto puede limitar su uso en entornos corporativos o academicos si no se cumplen los requisitos.
 - Licencia "other": no se especifica una licencia estandar (como Apache 2.0 o MIT). Es imprescindible revisar los terminos exactos para determinar si el uso comercial esta permitido.
 - Solo vision: Phaet no procesa texto ni admite entradas multimodales. No puede utilizarse para tareas que requieran comprension de lenguaje natural.
 - Sesgos potenciales: al ser un modelo entrenado con datos de patologia, puede heredar sesgos presentes en los datos de entrenamiento, como desequilibrios en tipos de tejido o poblaciones. No se ha publicado informacion sobre la composicion del dataset de fine-tuning.
@@ -67,6 +67,6 @@ No se dispone de datos comparativos publicados para Phaet. El modelo base owkin/
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wearewaiv/phaet
+- Hugging Face: https://huggingface.co/wearewaiv/phaet
 - Modelo base: https://huggingface.co/owkin/phikon-v2
 - Paper asociado (arXiv): 2607.22861 (no se ha verificado el enlace directo, se referencia el identificador proporcionado)

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nile-academy/docling-tableformer | no disponible | no disponible | CDLA-Permissive-2.0 AND Apache-2.0 | Espejo en HuggingFace, 0 descargas |
-| docling-project/docling-models (original) | no disponible | no disponible | CDLA-Permissive-2.0 AND Apache-2.0 | Repositorio original en HuggingFace |
+| nile-academy/docling-tableformer | no disponible | no disponible | CDLA-Permissive-2.0 AND Apache-2.0 | Espejo en Hugging Face, 0 descargas |
+| docling-project/docling-models (original) | no disponible | no disponible | CDLA-Permissive-2.0 AND Apache-2.0 | Repositorio original en Hugging Face |
 | Otros modelos de estructura de tablas (p. ej. TableFormer, LayoutLMv3) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 La unica comparacion fiable es con el repositorio original de Docling, del que este es un espejo. No se dispone de datos de rendimiento para comparar con alternativas de la misma categoria.
@@ -83,5 +83,5 @@ La unica comparacion fiable es con el repositorio original de Docling, del que e
 
 ## Enlaces
 
-- [HuggingFace: nile-academy/docling-tableformer](https://huggingface.co/nile-academy/docling-tableformer)
+- [Hugging Face: nile-academy/docling-tableformer](https://huggingface.co/nile-academy/docling-tableformer)
 - [Repositorio original: docling-project/docling-models (commit 2199320848bb9a8a519d22e4b528185a4f9a6f64)](https://huggingface.co/docling-project/docling-models/tree/2199320848bb9a8a519d22e4b528185a4f9a6f64)

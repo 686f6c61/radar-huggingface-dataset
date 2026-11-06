@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2` es un adaptación de la arquitectura LLaVA (Large Language and Vision Assistant) orientada al dominio médico, desarrollada por el usuario MohamedAhmedAE. El nombre sugiere que combina un codificador visual CLIP ViT con un modelo de lenguaje de aproximadamente 8 mil millones de parámetros, entrenado en una segunda etapa sobre datos de Kaggle relacionados con imágenes médicas. Sin embargo, la información disponible en HuggingFace es muy limitada: no se especifica la licencia, los idiomas soportados, ni el pipeline de uso. Los parámetros totales reportados en los archivos safetensors son 188.751.872, una cifra muy inferior a la que sugiere el nombre "8B", lo que podría indicar que el repositorio contiene únicamente el codificador visual o que la cifra corresponde a una parte del modelo. El tamaño del repositorio es de 592.7 GB, lo que apunta a la presencia de múltiples archivos de pesos, posiblemente en diferentes formatos o cuantizaciones.
+El modelo `MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2` es un adaptación de la arquitectura LLaVA (Large Language and Vision Assistant) orientada al dominio médico, desarrollada por el usuario MohamedAhmedAE. El nombre sugiere que combina un codificador visual CLIP ViT con un modelo de lenguaje de aproximadamente 8 mil millones de parámetros, entrenado en una segunda etapa sobre datos de Kaggle relacionados con imágenes médicas. Sin embargo, la información disponible en Hugging Face es muy limitada: no se especifica la licencia, los idiomas soportados, ni el pipeline de uso. Los parámetros totales reportados en los archivos safetensors son 188.751.872, una cifra muy inferior a la que sugiere el nombre "8B", lo que podría indicar que el repositorio contiene únicamente el codificador visual o que la cifra corresponde a una parte del modelo. El tamaño del repositorio es de 592.7 GB, lo que apunta a la presencia de múltiples archivos de pesos, posiblemente en diferentes formatos o cuantizaciones.
 
 La relevancia de este modelo radica en su potencial aplicación en el diagnóstico asistido por imagen médica, un campo en crecimiento donde los modelos de visión-lenguaje pueden ayudar a interpretar radiografías, tomografías o resonancias. No obstante, la falta de documentación y de resultados de evaluación impide validar su rendimiento real. Se recomienda precaución antes de utilizarlo en entornos clínicos o de producción.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: dado el nombre "8B", se estima que la inferencia en precisión FP16 requeriría al menos 16 GB de VRAM, y con cuantización de 4 bits podría reducirse a unos 6-8 GB. Sin embargo, al no confirmarse el tamaño real del modelo, estas cifras son orientativas.
 - GPU recomendadas: para una hipotética versión de 8B, una RTX 4090 (24 GB) o una A100 (40 GB) serían adecuadas. Para el tamaño real reportado (188M), cualquier GPU moderna con 4-8 GB sería suficiente.
 - Compatibilidad con GPU de consumo: sí, si el modelo final es de 8B cuantizado, cabría en GPUs como RTX 3060 (12 GB) o superiores. Si el tamaño real es 188M, cabría incluso en GPUs integradas.
-- Opciones de despliegue: al ser un modelo safetensors, podría cargarse con transformers de HuggingFace, vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no hay instrucciones específicas.
+- Opciones de despliegue: al ser un modelo safetensors, podría cargarse con transformers de Hugging Face, vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no hay instrucciones específicas.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,5 +69,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2
+- Hugging Face: https://huggingface.co/MohamedAhmedAE/llava-medical-8B-clip-vit_kaggle-stage2
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la información proporcionada.

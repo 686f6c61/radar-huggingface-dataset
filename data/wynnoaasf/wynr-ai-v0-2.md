@@ -82,12 +82,12 @@ Nota: los datos de los modelos comparativos corresponden a conocimiento general 
 - Limitación idiomática: solo se declara vietnamita; el rendimiento en otros idiomas no está garantizado.
 - Longitud de contexto: no documentada oficialmente; el ejemplo de la model card trunca a 2.048 tokens, lo que sugiere un uso práctico limitado a conversaciones cortas.
 - Restricciones de licencia: licencia MIT, que permite uso comercial y modificación, pero sin garantías por parte del autor.
-- Caveat de producción: el repositorio se describe en la model card como privado, aunque aparece accesible en HuggingFace; conviene verificar el acceso antes de integrarlo en pipelines.
+- Caveat de producción: el repositorio se describe en la model card como privado, aunque aparece accesible en Hugging Face; conviene verificar el acceso antes de integrarlo en pipelines.
 - Sin soporte documentado de tool calling, agentes ni cuantizaciones, lo que limita su integración en sistemas más complejos.
 - Fecha de creación en los metadatos (2026-11-01) resulta anómala; conviene tratar los metadatos temporales con cautela.
 
 ## Enlaces
 
-- [HuggingFace: Wynnoaasf/wynr-ai-v0.2](https://huggingface.co/Wynnoaasf/wynr-ai-v0.2)
+- [Hugging Face: Wynnoaasf/wynr-ai-v0.2](https://huggingface.co/Wynnoaasf/wynr-ai-v0.2)
 - [Dataset: Wynnoaasf/wynr-identity](https://huggingface.co/datasets/Wynnoaasf/wynr-identity)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

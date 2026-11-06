@@ -67,6 +67,6 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dasharma/paper_008043530_knowledge_distillation
+- Repositorio en Hugging Face: https://huggingface.co/Dasharma/paper_008043530_knowledge_distillation
 - Articulo relacionado en arXiv (destilacion de conocimiento en LLM): https://arxiv.org/abs/2402.13116
 - Articulo relacionado en arXiv (framework de destilacion): https://arxiv.org/abs/2603.13765

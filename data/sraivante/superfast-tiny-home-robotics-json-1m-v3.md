@@ -109,6 +109,6 @@ Para alternativas de la misma categoría (parsers de comandos domóticos o model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sraivante/superfast-tiny-home-robotics-json-1m-v3
+- Modelo en Hugging Face: https://huggingface.co/sraivante/superfast-tiny-home-robotics-json-1m-v3
 - Version v1 de la serie: https://huggingface.co/sraivante/superfast-tiny-home-robotics-json-1m-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/sraivante/home-commands-json-v3

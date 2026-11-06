@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha corresponde al repositorio de HuggingFace `QweefBeef/Qwen3-Omni-30B-A3B-Thinking-MLX-6Bit`, publicado por el usuario QweefBeef el 13 de septiembre de 2026 y con licencia Apache 2.0. La model card facilitada unicamente contiene el campo de licencia, sin descripcion, sin pipeline declarado, sin idiomas y sin resultados de benchmarks. En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", por lo que se trata de una publicacion sin traccion conocida.
+La ficha corresponde al repositorio de Hugging Face `QweefBeef/Qwen3-Omni-30B-A3B-Thinking-MLX-6Bit`, publicado por el usuario QweefBeef el 13 de septiembre de 2026 y con licencia Apache 2.0. La model card facilitada unicamente contiene el campo de licencia, sin descripcion, sin pipeline declarado, sin idiomas y sin resultados de benchmarks. En el momento de la consulta el repositorio registra 0 descargas y 0 "likes", por lo que se trata de una publicacion sin traccion conocida.
 
 Por la convencion de nombres se puede inferir que se trata de una conversion a cuantizacion de 6 bits en formato MLX de un modelo de la familia Qwen3-Omni, en su variante "30B-A3B" y con modo de razonamiento ("Thinking"). El sufijo "A3B" es la convencion habitual en modelos con arquitectura de mezcla de expertos (MoE) para indicar 30.000 millones de parametros totales con aproximadamente 3.000 millones activos por token, y "MLX" apunta a pesos optimizados para el framework MLX de Apple sobre silicio Apple Silicon. Sin embargo, ni el autor ni la model card confirman estos extremos, de modo que se tratan como inferencias y no como datos verificados.
 
@@ -62,7 +62,7 @@ No disponible. La informacion proporcionada no permite identificar el modelo bas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-Omni-30B-A3B-Thinking-MLX-6Bit | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| Qwen3-Omni-30B-A3B-Thinking-MLX-6Bit | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,5 +79,5 @@ No disponible. La informacion proporcionada no permite identificar el modelo bas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/QweefBeef/Qwen3-Omni-30B-A3B-Thinking-MLX-6Bit
+- Hugging Face: https://huggingface.co/QweefBeef/Qwen3-Omni-30B-A3B-Thinking-MLX-6Bit
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (los resultados devueltos corresponden a sitios de deportes sin relacion con el repositorio).

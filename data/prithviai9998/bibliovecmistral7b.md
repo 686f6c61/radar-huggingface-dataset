@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BiblioVecMistral7b es un modelo publicado en HuggingFace por el usuario PrithviAI9998 bajo licencia Apache 2.0. Por el nombre se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Mistral 7B, probablemente orientado a tareas bibliotecarias o de representacion vectorial de documentos (el prefijo "BiblioVec" sugiere embeddings o recuperacion semantica en el ambito bibliotecario). Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento, sin especificaciones ni ejemplos de uso.
+BiblioVecMistral7b es un modelo publicado en Hugging Face por el usuario PrithviAI9998 bajo licencia Apache 2.0. Por el nombre se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Mistral 7B, probablemente orientado a tareas bibliotecarias o de representacion vectorial de documentos (el prefijo "BiblioVec" sugiere embeddings o recuperacion semantica en el ambito bibliotecario). Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento, sin especificaciones ni ejemplos de uso.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado el 1 de noviembre de 2026, sin actualizaciones posteriores. No se declara pipeline, idiomas soportados ni formato de pesos en la informacion disponible. Esto limita enormemente cualquier evaluacion tecnica rigurosa: la ficha que sigue se apoya en lo poco que se puede inferir del nombre del modelo y en las caracteristicas conocidas del modelo base Mistral 7B, marcando explicitamente como "no disponible" todo aquello que el autor no ha documentado.
 
@@ -82,5 +82,5 @@ La comparativa se establece frente a modelos de la misma familia y tamano, dado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PrithviAI9998/BiblioVecMistral7b
+- Hugging Face: https://huggingface.co/PrithviAI9998/BiblioVecMistral7b
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

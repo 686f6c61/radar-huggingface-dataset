@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DEVİM 336M Research es una ficha de investigación publicada por Behram Bazo (usuario `bazobehram` en HuggingFace) dentro del programa DEVİM, descrito por su autor como un programa de investigación de modelos de lenguaje con el turco como idioma prioritario. El repositorio no contiene un modelo listo para uso: es la tarjeta pública de una sonda experimental de escala controlada de aproximadamente 336 millones de parámetros, diseñada para comparar su comportamiento con una variante emparejada de 110 millones bajo un protocolo preregistrado.
+DEVİM 336M Research es una ficha de investigación publicada por Behram Bazo (usuario `bazobehram` en Hugging Face) dentro del programa DEVİM, descrito por su autor como un programa de investigación de modelos de lenguaje con el turco como idioma prioritario. El repositorio no contiene un modelo listo para uso: es la tarjeta pública de una sonda experimental de escala controlada de aproximadamente 336 millones de parámetros, diseñada para comparar su comportamiento con una variante emparejada de 110 millones bajo un protocolo preregistrado.
 
 Técnicamente se trata de un Transformer causal denso (decoder-only) convencional, con 24 capas, `d_model` de 1024, 16 cabezas de atención, vocabulario de 32.768 entradas y una longitud de contexto de solo 512 tokens. El autor lo describe explícitamente como un "sustrato experimental controlado", no como un compromiso arquitectónico permanente. El entrenamiento de la fase Gate-B alcanzó 36.755 pasos de optimizador y 1.200.012.349 tokens supervisados, con un alcance de entrenamiento limitado a la fase-P "natural-only".
 
@@ -121,7 +121,7 @@ No se proporciona información sobre modelos externos comparables de tamaño sim
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/bazobehram/devim-336m-research
+- Model card en Hugging Face: https://huggingface.co/bazobehram/devim-336m-research
 - Proyecto DEVİM: https://devim.org
 - Fuente del proyecto: https://devim.org
 - Responsable de investigación: Behram Bazo (`bazobehram`)

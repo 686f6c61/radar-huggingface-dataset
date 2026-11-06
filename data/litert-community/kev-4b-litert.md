@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- [HuggingFace: litert-community/Kev-4B-LiteRT](https://huggingface.co/litert-community/Kev-4B-LiteRT)
+- [Hugging Face: litert-community/Kev-4B-LiteRT](https://huggingface.co/litert-community/Kev-4B-LiteRT)
 - [Modelo base: jaredpalmer/kev-4b](https://huggingface.co/jaredpalmer/kev-4b)
 - [Backbone: Qwen/Qwen3.5-4B-Base](https://huggingface.co/Qwen/Qwen3.5-4B-Base)
 - [Servidor del autor: github.com/jaredpalmer/kev](https://github.com/jaredpalmer/kev)

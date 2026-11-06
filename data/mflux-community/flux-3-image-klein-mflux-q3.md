@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Cuantizacion | Tamano | Plataforma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flux-3-image-klein-mflux-q3 (este) | Q3 (3 bits) | 4,2 GB | Apple Silicon / MLX | flux-kommunity-license | HuggingFace (24 descargas) |
-| flux-3-image-klein-mflux-q4 | Q4 | 5,3 GB | Apple Silicon / MLX | flux-kommunity-license | HuggingFace |
-| flux-3-image-klein-mflux-q8 | Q8 | 9,9 GB | Apple Silicon / MLX | flux-kommunity-license | HuggingFace |
-| flux-3-image-klein-mflux-bf16 | BF16 | 18,5 GB | Apple Silicon / MLX | flux-kommunity-license | HuggingFace |
+| flux-3-image-klein-mflux-q3 (este) | Q3 (3 bits) | 4,2 GB | Apple Silicon / MLX | flux-kommunity-license | Hugging Face (24 descargas) |
+| flux-3-image-klein-mflux-q4 | Q4 | 5,3 GB | Apple Silicon / MLX | flux-kommunity-license | Hugging Face |
+| flux-3-image-klein-mflux-q8 | Q8 | 9,9 GB | Apple Silicon / MLX | flux-kommunity-license | Hugging Face |
+| flux-3-image-klein-mflux-bf16 | BF16 | 18,5 GB | Apple Silicon / MLX | flux-kommunity-license | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (metricas de calidad de imagen, FID, CLIP score u otras) entre estas variantes en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado (metricas de calidad de imagen, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/flux-3-image-klein-mflux-q3
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/flux-3-image-klein-mflux-q3
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Licencia del modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein/blob/main/LICENSE.md
 - Implementacion MFlux: https://github.com/filipstrand/mflux

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r2-2020-ecfcd2-chronollm-2020f` es un modelo de lenguaje de aproximadamente 1.858 millones de parámetros (1,86 B) publicado en HuggingFace con pesos en safetensors y etiqueta de arquitectura propietaria "ChronoGPT". No dispone de model card, no tiene descargas ni interacciones registradas y su acceso está restringido (gated): es necesario aceptar condiciones en la plataforma para descargar los pesos. La nomenclatura del repositorio lo vincula a la familia ChronoLLM del subnet 38 de Bittensor, un proyecto de "modelos temporalmente consistentes" en el que cada modelo solo conoce eventos ocurridos hasta su año de corte (vintage), de modo que no se filtra conocimiento del futuro en el análisis. El sufijo `2020f` apunta a un corte temporal en 2020; el prefijo `sn38-r2` sugiere una entrega de minero correspondiente a una ronda de evaluación del subnet, aunque esto no está confirmado en la información disponible.
+`alfred8995/sn38-r2-2020-ecfcd2-chronollm-2020f` es un modelo de lenguaje de aproximadamente 1.858 millones de parámetros (1,86 B) publicado en Hugging Face con pesos en safetensors y etiqueta de arquitectura propietaria "ChronoGPT". No dispone de model card, no tiene descargas ni interacciones registradas y su acceso está restringido (gated): es necesario aceptar condiciones en la plataforma para descargar los pesos. La nomenclatura del repositorio lo vincula a la familia ChronoLLM del subnet 38 de Bittensor, un proyecto de "modelos temporalmente consistentes" en el que cada modelo solo conoce eventos ocurridos hasta su año de corte (vintage), de modo que no se filtra conocimiento del futuro en el análisis. El sufijo `2020f` apunta a un corte temporal en 2020; el prefijo `sn38-r2` sugiere una entrega de minero correspondiente a una ronda de evaluación del subnet, aunque esto no está confirmado en la información disponible.
 
 El interés práctico del modelo no reside en su tamaño ni en un rendimiento bruto puntero, sino en la restricción temporal deliberada: se trata de un artefacto pensado para simulaciones contrafactuales, backtesting y análisis histórico en los que un LLM convencional arruinaría el experimento por conocer acontecimientos posteriores a la fecha de estudio. Es, por tanto, una pieza de infraestructura para investigación más que un asistente generalista.
 
@@ -51,7 +51,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesa
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye model card, no hay evaluaciones en el leaderboard de HuggingFace y no se han encontrado cifras de MMLU, HumanEval, GSM8K ni de ninguna otra prueba en la búsqueda web realizada. Cualquier cifra que se atribuya a este checkpoint debe considerarse no verificada hasta que se ejecute una evaluación propia.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio no incluye model card, no hay evaluaciones en el leaderboard de Hugging Face y no se han encontrado cifras de MMLU, HumanEval, GSM8K ni de ninguna otra prueba en la búsqueda web realizada. Cualquier cifra que se atribuya a este checkpoint debe considerarse no verificada hasta que se ejecute una evaluación propia.
 
 ## Requisitos de hardware
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU de datacenter: A100 40/80 GB, H100 y L40S están sobredimensionadas para 1,86 B de parámetros; permiten lotes grandes y contextos largos, pero no son necesarias para inferencia individual.
 - Despliegue: vLLM o TGI si el checkpoint resulta ser un transformer estándar con config compatible; llama.cpp u Ollama si se genera un GGUF, lo que requiere que la arquitectura "ChronoGPT" esté soportada por la herramienta de conversión. Al no haber confirmación de la arquitectura, la conversión a GGUF es una incógnita y podría requerir código personalizado.
 - Latencia y throughput: no disponibles. Como referencia teórica de orden de magnitud para 1,86 B en FP16 sobre una RTX 4090, cabría esperar decenas de miles de tokens por segundo en prefill y varios cientos en decodificación con lotes pequeños, pero no hay mediciones publicadas para este checkpoint.
-- Acceso: al ser un repositorio gated, la descarga requiere autenticación con token de HuggingFace y aceptación previa de las condiciones.
+- Acceso: al ser un repositorio gated, la descarga requiere autenticación con token de Hugging Face y aceptación previa de las condiciones.
 
 ## Comparativa con modelos similares
 
@@ -91,7 +91,7 @@ La comparación relevante no es de rendimiento bruto, dado que no existen métri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r2-2020-ecfcd2-chronollm-2020f
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r2-2020-ecfcd2-chronollm-2020f
 - Modelo de referencia de la familia: https://huggingface.co/ecfcd2/chronollm-2020f
 - Perfil del autor original: https://huggingface.co/ecfcd2
 - Paquete de cliente en PyPI (ChronoLLM): https://pypi.org/project/chronollm/

@@ -91,12 +91,12 @@ No se dispone de datos para comparar con modelos alternativos de otros fabricant
 - Riesgo de bucles en generacion: el propio autor advierte de la necesidad de configurar correctamente los stop tokens (`<|im_start|>`, `<|im_end|>`, `<|endoftext|>`) para evitar respuestas desbordadas.
 - El tag `arxiv:0000.00000` del repositorio es un identificador placeholder sin paper asociado; no debe interpretarse como referencia bibliografica valida.
 - Aunque la licencia Apache 2.0 permite uso comercial, se recomienda revisar las condiciones del modelo base de IBM, ya que esta publicacion es una redistribucion cuantizada.
-- Fecha de publicacion declarada en HuggingFace: 2026-09-22, con ultima actualizacion el 2026-09-22. El repositorio tiene un historial minimo (11 descargas, 0 likes) y no cuenta con validacion de la comunidad.
+- Fecha de publicacion declarada en Hugging Face: 2026-09-22, con ultima actualizacion el 2026-09-22. El repositorio tiene un historial minimo (11 descargas, 0 likes) y no cuenta con validacion de la comunidad.
 - Al ser un modelo de 3B, la fiabilidad en razonamiento complejo, matematicas avanzadas o tareas de agente prolongadas es inferior a la de modelos de mayor tamano; no usar como unica salvaguarda en produccion sin evaluacion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-8bit
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-3b
 - Variante 4-bit: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-4bit
 - Variante 16-bit: https://huggingface.co/SirSahOl/granite-4.1-3b-chat-mlx-16bit

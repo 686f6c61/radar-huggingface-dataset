@@ -4,7 +4,7 @@
 
 El modelo `Alizollern/ngl-qwen-lora` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por Alizollern sobre el modelo base `unsloth/Qwen2.5-Coder-1.5B-bnb-4bit`, una versión cuantizada en 4 bits del Qwen2.5-Coder-1.5B de Alibaba. Se trata de un fine-tuning ligero que no reemplaza el modelo completo, sino que añade pesos adaptadores para modificar el comportamiento del modelo base en tareas específicas, probablemente relacionadas con generación de código, dado el modelo base elegido.
 
-El autor indica que el entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning de modelos transformer, y que el adaptador se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0.1 GB, lo que confirma que solo contiene los pesos del adaptador LoRA, no el modelo completo. La ficha oficial es extremadamente escueta: no se especifican los datos de entrenamiento, el dataset utilizado, ni las capacidades concretas del adaptador. Por tanto, esta ficha se basa únicamente en la información disponible en HuggingFace y en las características conocidas del modelo base, marcando como "no disponible" cualquier dato no confirmado.
+El autor indica que el entrenamiento se realizó con la librería Unsloth, que acelera el fine-tuning de modelos transformer, y que el adaptador se distribuye bajo licencia Apache 2.0. El repositorio tiene un tamaño de 0.1 GB, lo que confirma que solo contiene los pesos del adaptador LoRA, no el modelo completo. La ficha oficial es extremadamente escueta: no se especifican los datos de entrenamiento, el dataset utilizado, ni las capacidades concretas del adaptador. Por tanto, esta ficha se basa únicamente en la información disponible en Hugging Face y en las características conocidas del modelo base, marcando como "no disponible" cualquier dato no confirmado.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El autor indica que el entrenamiento se realizó con la librería Unsloth, que a
 | Tipos de cuantizacion | no disponible (el adaptador se publica en safetensors; el modelo base usa bnb-4bit) |
 | Idiomas soportados | en (segun la model card) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -49,7 +49,7 @@ Al ser un adaptador LoRA, los requisitos de hardware dependen del modelo base so
 - VRAM estimada: 2-4 GB en funcion de la cuantizacion del modelo base y la longitud de contexto.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3050, o superiores. Tambien puede ejecutarse en CPU con suficiente RAM.
 - Compatibilidad con consumer GPU: si, cabe en GPUs de gama media y baja.
-- Opciones de despliegue: al ser un adaptador LoRA, se puede cargar con la libreria `transformers` de HuggingFace, o mediante `peft` para fusionar los pesos. Tambien es compatible con `text-generation-inference` (TGI) y `vLLM` si se fusiona previamente. No se ha confirmado compatibilidad con `llama.cpp` u `Ollama`.
+- Opciones de despliegue: al ser un adaptador LoRA, se puede cargar con la libreria `transformers` de Hugging Face, o mediante `peft` para fusionar los pesos. Tambien es compatible con `text-generation-inference` (TGI) y `vLLM` si se fusiona previamente. No se ha confirmado compatibilidad con `llama.cpp` u `Ollama`.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de informacion sobre modelos comparables especificos. Al ser un ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alizollern/ngl-qwen-lora
+- Repositorio Hugging Face: https://huggingface.co/Alizollern/ngl-qwen-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-Coder-1.5B-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth

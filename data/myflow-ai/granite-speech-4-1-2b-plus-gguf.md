@@ -118,7 +118,7 @@ No se dispone en la información proporcionada de resultados de WER comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myflow-ai/granite-speech-4.1-2b-plus-gguf
+- Modelo en Hugging Face: https://huggingface.co/myflow-ai/granite-speech-4.1-2b-plus-gguf
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-plus
 - Modelo base sin la variante plus: https://huggingface.co/ibm-granite/granite-speech-4.1-2b
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -92,7 +92,7 @@ La comparacion se limita a parametros, contexto, licencia y disponibilidad, ya q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Mistral-7B-v0.3-INs-RF-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Mistral-7B-v0.3-INs-RF-GGUF
 - Modelo base: https://huggingface.co/Anonymous-EmpathyAI/Mistral-7B-v0.3-INs-RF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Mistral-7B-v0.3-INs-RF-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sebot es un modelo de lenguaje publicado en HuggingFace por el usuario Precontation, distribuido exclusivamente en formato GGUF y orientado a inferencia conversacional mediante llama.cpp. El repositorio contiene un unico archivo de pesos, `Qwen3-8B.Q4_K_M.gguf`, convertido con las herramientas de Unsloth, lo que sitúa su origen en un ajuste o derivado de la familia Qwen3 de 8B parametros. El dato de parametros totales reportado en safetensors es de 8.190.735.360 (aproximadamente 8,19 mil millones), coherente con ese tamano.
+sebot es un modelo de lenguaje publicado en Hugging Face por el usuario Precontation, distribuido exclusivamente en formato GGUF y orientado a inferencia conversacional mediante llama.cpp. El repositorio contiene un unico archivo de pesos, `Qwen3-8B.Q4_K_M.gguf`, convertido con las herramientas de Unsloth, lo que sitúa su origen en un ajuste o derivado de la familia Qwen3 de 8B parametros. El dato de parametros totales reportado en safetensors es de 8.190.735.360 (aproximadamente 8,19 mil millones), coherente con ese tamano.
 
 El modelo no incluye practicamente informacion tecnica en su model card: no se documentan datos de entrenamiento, composicion del dataset, tecnicas de alineamiento, idiomas soportados ni licencia. El repositorio tiene 0 descargas y 0 likes, y su tamano es de 5,0 GB, lo que corresponde a una cuantizacion Q4_K_M de un modelo de ~8B.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Precontation/sebot | 8,19B | no disponible | no disponible | GGUF en HuggingFace |
+| Precontation/sebot | 8,19B | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen3 8B (base probable) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Otros modelos de ~8B | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No es posible establecer una comparativa rigurosa: la informacion proporcionada 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Precontation/sebot
+- Hugging Face: https://huggingface.co/Precontation/sebot
 - Unsloth (herramienta de conversion citada en la model card): https://github.com/unslothai/unsloth
 - Repositorio alternativo mencionado en las instrucciones de uso: https://huggingface.co/SupKittyMeow/sebot
 

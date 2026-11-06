@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Webqwen-0.5b es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario gggff123 en HuggingFace. El objetivo declarado del autor es especializar el modelo base en la generación de HTML y diseño de interfaces web, de modo que produzca maquetaciones con estilos CSS que el modelo original no aplica de forma espontánea. El modelo se distribuye exclusivamente en formato GGUF, pensado para su ejecución con llama.cpp.
+Webqwen-0.5b es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-0.5B-Instruct, publicado por el usuario gggff123 en Hugging Face. El objetivo declarado del autor es especializar el modelo base en la generación de HTML y diseño de interfaces web, de modo que produzca maquetaciones con estilos CSS que el modelo original no aplica de forma espontánea. El modelo se distribuye exclusivamente en formato GGUF, pensado para su ejecución con llama.cpp.
 
 El modelo base, Qwen2.5-0.5B-Instruct, es un transformer decoder-only de aproximadamente 494 millones de parámetros (494.032.768 según los pesos reales), con una ventana de contexto de 32.768 tokens en su configuración original. Es el miembro más pequeño de la familia Qwen2.5 y está entrenado principalmente para instrucciones conversacionales. El ajuste fino se realizó con Unsloth sobre una GPU T4 en Google Colab, con una única época de entrenamiento LoRA.
 
@@ -33,7 +33,7 @@ La innovación declarada es de naturaleza funcional más que arquitectónica: el
 - Generación de texto conversacional heredada del modelo base Qwen2.5-0.5B-Instruct.
 - Instrucciones en inglés (único idioma declarado en la model card).
 - Ejecución mediante llama.cpp con soporte de plantillas Jinja (`--jinja`).
-- Compatibilidad con endpoints (tag `endpoints_compatible` en HuggingFace).
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
 - No se documenta soporte de tool calling, function calling, agentes multi-paso, visión, audio ni modo de razonamiento extendido en la informacion disponible.
 
 ## Casos de uso
@@ -79,7 +79,7 @@ La comparación con Qwen2.5-Coder-0.5B-Instruct es la más directa en cuanto a t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gggff123/Webqwen-0.5b
+- Modelo en Hugging Face: https://huggingface.co/gggff123/Webqwen-0.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Unsloth: https://github.com/unslothai/unsloth

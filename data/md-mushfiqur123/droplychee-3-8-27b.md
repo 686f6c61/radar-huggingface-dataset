@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DropLychee-3.8-27B es un modelo de lenguaje causal publicado en HuggingFace por MD-Mushfiqur123, con 26.895.998.464 parámetros (26,9B) y una arquitectura híbrida que combina 48 capas de atención lineal Gated DeltaNet con 16 capas de atención completa. Se presenta como un finetune del modelo base Qwen/Qwen3.8-27B y declara una ventana de contexto de 262.144 tokens (256K), vocabulario de 248.320 tokens y un hidden dimension de 5.120.
+DropLychee-3.8-27B es un modelo de lenguaje causal publicado en Hugging Face por MD-Mushfiqur123, con 26.895.998.464 parámetros (26,9B) y una arquitectura híbrida que combina 48 capas de atención lineal Gated DeltaNet con 16 capas de atención completa. Se presenta como un finetune del modelo base Qwen/Qwen3.8-27B y declara una ventana de contexto de 262.144 tokens (256K), vocabulario de 248.320 tokens y un hidden dimension de 5.120.
 
 El modelo se distribuye bajo licencia Apache 2.0 y con pesos en BF16 sin cuantizar, según afirma el autor. Requiere `trust_remote_code=True` y código personalizado (`model_type: droplychee_text`, clases `DropLycheeDecoderLayer` y `DropLycheeGatedDeltaNet`), lo que implica ejecutar código publicado por el autor y limita la compatibilidad con herramientas de inferencia estándar.
 
@@ -99,7 +99,7 @@ No se dispone de una comparación de rendimiento fiable porque DropLychee-3.8-27
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MD-Mushfiqur123/DropLychee-3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/MD-Mushfiqur123/DropLychee-3.8-27B
 - Visor interactivo de la arquitectura (mencionado en la model card): https://hfviewer.com/MD-Mushfiqur123/DropLychee-3.8-27B
 - Perfil de GitHub del autor: https://github.com/MD-Mushfiqur123
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B

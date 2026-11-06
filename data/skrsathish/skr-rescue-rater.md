@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SKR Rescue Rater | 66,9 M | 64 tokens | Clasificacion de urgencia (2 clases) | Apache 2.0 | HuggingFace |
-| DistilBERT base (modelo base) | 66,9 M | 512 tokens | Modelo de lenguaje enmascarado | Apache 2.0 | HuggingFace |
-| BERT-base-uncased | 110 M | 512 tokens | Modelo de lenguaje enmascarado | Apache 2.0 | HuggingFace |
+| SKR Rescue Rater | 66,9 M | 64 tokens | Clasificacion de urgencia (2 clases) | Apache 2.0 | Hugging Face |
+| DistilBERT base (modelo base) | 66,9 M | 512 tokens | Modelo de lenguaje enmascarado | Apache 2.0 | Hugging Face |
+| BERT-base-uncased | 110 M | 512 tokens | Modelo de lenguaje enmascarado | Apache 2.0 | Hugging Face |
 | Linea base TF-IDF + regresion logistica (del propio autor) | no aplica | no aplica | Clasificacion de urgencia | no disponible | Codigo en GitHub |
 
 La comparacion con modelos de proposito general no es directa: SKR Rescue Rater es un clasificador especializado y no compite en generacion de texto ni en razonamiento. Frente a su modelo base, la diferencia es la cabeza de clasificacion y el fine-tuning; frente a la linea base por palabras clave, la ventaja documentada es una drastica reduccion de falsos positivos (4 de 48 frente a 39 de 48).
@@ -90,6 +90,6 @@ La comparacion con modelos de proposito general no es directa: SKR Rescue Rater 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skrsathish/skr-rescue-rater
+- Modelo en Hugging Face: https://huggingface.co/skrsathish/skr-rescue-rater
 - Aplicacion (Hugging Face Space): https://huggingface.co/spaces/skrsathish/rescue-rater
 - Codigo en GitHub: https://github.com/sathishcrmsf/rescue-rater

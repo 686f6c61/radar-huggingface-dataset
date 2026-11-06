@@ -83,7 +83,7 @@ Mistral AI no ha publicado en la informacion disponible resultados numericos com
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mistral Small 4 119B | 119B (MoE, 128 expertos, 4 activos) | 6,5B | 256K | Apache 2.0 | Si (texto + imagen) | Pesos abiertos en HuggingFace |
+| Mistral Small 4 119B | 119B (MoE, 128 expertos, 4 activos) | 6,5B | 256K | Apache 2.0 | Si (texto + imagen) | Pesos abiertos en Hugging Face |
 | GPT-OSS 120B | No disponible en la informacion | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Mistral Small 3.2 24B Instruct | 24B | 24B (denso) | No disponible | No disponible | No disponible | Pesos abiertos |
 | Magistral Small 2509 | No disponible | No disponible | No disponible | No disponible | No disponible | Pesos abiertos |
@@ -103,7 +103,7 @@ La informacion proporcionada no incluye especificaciones detalladas de los model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
 - Cabezal eagle para decodificacion especulativa: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-eagle
 - Checkpoint NVFP4 de 4 bits: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-NVFP4
 - Mistral Small 3.2 24B Instruct (referencia interna): https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506

@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GraspGen-X SO-101 (este) | no disponible | no aplica | 36% / 57% en 237 colocaciones (simulación) | NVIDIA Open Model License | HuggingFace, 0 descargas |
+| GraspGen-X SO-101 (este) | no disponible | no aplica | 36% / 57% en 237 colocaciones (simulación) | NVIDIA Open Model License | Hugging Face, 0 descargas |
 | GraspGen-X original (NVIDIA) | no disponible | no aplica | 0,1% de éxito con SO-101 según el autor | NVIDIA Open Model License | GitHub NVlabs/GraspGenX |
 | Otros generadores de agarres (p. ej. basados en nubes de puntos) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ La comparativa se limita al modelo base, ya que no se dispone de datos de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/roboticascent/graspgenx-so101
+- Hugging Face: https://huggingface.co/roboticascent/graspgenx-so101
 - Modelo base: https://huggingface.co/adithyamurali/GraspGenXModel
 - Repositorio GraspGen-X de NVIDIA: https://github.com/NVlabs/GraspGenX
 - Repositorio SO-ARM100 / SO-101: https://github.com/TheRobotStudio/SO-ARM100

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jev-Style-2B-Decision-v4-GGUF es la distribución en formato GGUF del modelo Jev-Style-2B-Decision-v4, desarrollado de forma independiente por Chaoliang Yan (usuario chaoliangUNSW en HuggingFace). Se trata de un modelo de decisión especializado en clasificación de texto local, enrutamiento de flujos de trabajo (workflow routing) y puntuación de opciones de elección fija, basado en la arquitectura Qwen3.5 con aproximadamente 1,88 mil millones de parámetros. Su propósito es responder preguntas tipificadas sobre texto e imágenes en inferencia local, sin depender de una API alojada.
+Jev-Style-2B-Decision-v4-GGUF es la distribución en formato GGUF del modelo Jev-Style-2B-Decision-v4, desarrollado de forma independiente por Chaoliang Yan (usuario chaoliangUNSW en Hugging Face). Se trata de un modelo de decisión especializado en clasificación de texto local, enrutamiento de flujos de trabajo (workflow routing) y puntuación de opciones de elección fija, basado en la arquitectura Qwen3.5 con aproximadamente 1,88 mil millones de parámetros. Su propósito es responder preguntas tipificadas sobre texto e imágenes en inferencia local, sin depender de una API alojada.
 
 La serie Jev-Style se posiciona como un modelo de "sistema uno" (system-one): decisiones rápidas y calibradas sobre entradas de texto, pensado para casos como enrutamiento de LLM, guardrails y clasificación en dispositivos locales. La versión v4 amplía la ventana de contexto a 32.768 tokens (frente a 25.600 de la v3) y mejora notablemente el Decision Index público (44,37 frente a 34,05). El proyecto declara que parte del entrenamiento se realizó con etiquetas suaves destiladas de TypeSafe Jev 1.14 mediante su API pública, manteniendo independencia del proveedor.
 

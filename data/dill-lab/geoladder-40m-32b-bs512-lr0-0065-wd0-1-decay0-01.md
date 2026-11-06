@@ -19,7 +19,7 @@ Su relevancia es fundamentalmente metodologica: proporciona checkpoints intermed
 | Tipos de cuantizacion | No disponible (solo se publican pesos en precision de entrenamiento; no hay GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | No disponible (el corpus de entrenamiento, `EleutherAI/the_pile_deduplicated`, es mayoritariamente en ingles) |
 | Licencia | No disponible |
-| Formato de pesos | PyTorch (`pytorch_model.bin`), mas `config.json` de HuggingFace y `config.yaml` original de OLMo |
+| Formato de pesos | PyTorch (`pytorch_model.bin`), mas `config.json` de Hugging Face y `config.yaml` original de OLMo |
 
 Hiperparametros de entrenamiento declarados por el autor:
 
@@ -78,10 +78,10 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Corpus | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-40M-32B (este modelo) | ~40M | No disponible (entrenado con secuencias de 2048) | the_pile_deduplicated, 32B tokens | No disponible | HuggingFace, requiere `ai2-olmo` |
-| Pythia-70M (EleutherAI) | 70M | 2048 | The Pile, ~300B tokens | Apache 2.0 | HuggingFace, 154 checkpoints |
-| OLMo-1B (AI2) | ~1.200M | 2048 | Dolma | Apache 2.0 | HuggingFace |
-| GPT-2 small (OpenAI) | 124M | 1024 | WebText | MIT | HuggingFace |
+| GeoLadder-40M-32B (este modelo) | ~40M | No disponible (entrenado con secuencias de 2048) | the_pile_deduplicated, 32B tokens | No disponible | Hugging Face, requiere `ai2-olmo` |
+| Pythia-70M (EleutherAI) | 70M | 2048 | The Pile, ~300B tokens | Apache 2.0 | Hugging Face, 154 checkpoints |
+| OLMo-1B (AI2) | ~1.200M | 2048 | Dolma | Apache 2.0 | Hugging Face |
+| GPT-2 small (OpenAI) | 124M | 1024 | WebText | MIT | Hugging Face |
 
 Diferencias clave: frente a Pythia-70M, este modelo entrena con un presupuesto de tokens mucho menor (32B frente a ~300B) y su proposito no es ofrecer un modelo utilizable, sino servir de punto de medida en un experimento factorial de hiperparametros. Su ventaja practica es la publicacion de indices de datos y de la configuracion OLMo original, que Pythia no ofrece en el mismo formato. Su desventaja es la ausencia total de benchmarks y de licencia declarada.
 
@@ -99,7 +99,7 @@ Diferencias clave: frente a Pythia-70M, este modelo entrena con un presupuesto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs512-lr0.0065-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-40M-32B-bs512-lr0.0065-wd0.1-decay0.01
 - Coleccion GeoLadder (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper en PMLR: https://proceedings.mlr.press/v306/kulkarni26c.html
 - arXiv: https://arxiv.org/abs/2602.20433

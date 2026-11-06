@@ -90,7 +90,7 @@ No se dispone de informacion sobre modelos directamente comparables en la tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpeakoFlow/speakoflow-mini
+- Modelo en Hugging Face: https://huggingface.co/SpeakoFlow/speakoflow-mini
 - Repositorio de SpeakoFlow: https://github.com/AbhishekBarali/SpeakoFlow
 - Documentacion de SpeakoFlow: https://www.speakoflow.com/docs
 - Capa de reglas deterministas: https://github.com/AbhishekBarali/dictation-cleanup-rules

@@ -84,7 +84,7 @@ Nota: los datos de contexto de Qwen y Llama son valores típicos de esos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/Nemotron-3.5-Lightning-1.4B-A0.1B-MTP-FP8-Dynamic
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-1.4B-A0.1B-MTP
 - Licencia del modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-1.4B-A0.1B-MTP/blob/main/LICENSE.txt
 - Página de NVIDIA sobre Nemotron: https://developer.nvidia.com/topics/ai/nemotron

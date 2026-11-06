@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sudarshan-X1-v5 es un adaptador de tipo LoRA publicado en HuggingFace por el usuario sh-dheeraj mediante la librería PEFT. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación que debe cargarse sobre el modelo base Qwen/Qwen3-1.7B-Base, un transformer denso decoder-only de 1.700 millones de parámetros desarrollado por Alibaba Qwen. El repositorio ocupa 1,7 GB y declara la etiqueta de pipeline text-generation, además de las etiquetas lora, transformers y conversational.
+Sudarshan-X1-v5 es un adaptador de tipo LoRA publicado en Hugging Face por el usuario sh-dheeraj mediante la librería PEFT. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación que debe cargarse sobre el modelo base Qwen/Qwen3-1.7B-Base, un transformer denso decoder-only de 1.700 millones de parámetros desarrollado por Alibaba Qwen. El repositorio ocupa 1,7 GB y declara la etiqueta de pipeline text-generation, además de las etiquetas lora, transformers y conversational.
 
-La relevancia del modelo es limitada y debe evaluarse con cautela: la model card publicada es la plantilla por defecto de HuggingFace sin rellenar, sin licencia declarada, sin idiomas especificados, sin datos de entrenamiento y sin resultados de evaluación. El repositorio acumula cero descargas y cero likes, por lo que no existe validación alguna por parte de la comunidad.
+La relevancia del modelo es limitada y debe evaluarse con cautela: la model card publicada es la plantilla por defecto de Hugging Face sin rellenar, sin licencia declarada, sin idiomas especificados, sin datos de entrenamiento y sin resultados de evaluación. El repositorio acumula cero descargas y cero likes, por lo que no existe validación alguna por parte de la comunidad.
 
 En la práctica, se trata de un artefacto experimental cuyo interés principal es servir como caso de estudio de un adaptador LoRA sobre la familia Qwen3, no como un modelo listo para producción. Cualquier uso real exige descargar el modelo base, cargar el adaptador, validar su comportamiento y asumir la incertidumbre legal derivada de la ausencia de licencia explícita.
 
@@ -25,7 +25,7 @@ En la práctica, se trata de un artefacto experimental cuyo interés principal e
 
 El repositorio contiene exclusivamente pesos de adaptación LoRA, no un modelo con pesos completos. La etiqueta `base_model:adapter:Qwen/Qwen3-1.7B-Base` confirma que el adaptador se entrena sobre la variante *Base* (preentrenada, sin ajuste de instrucciones) de Qwen3 en tamaño 1.7B. No se publica el `adapter_config.json` en la información disponible, por lo que se desconocen el rango (rank), el valor alpha, el dropout y los módulos objetivo del adaptador.
 
-No hay ningún dato sobre el procedimiento de entrenamiento: ni número de tokens, ni composición del dataset, ni hiperparámetros, ni régimen de precisión, ni si se emplearon técnicas de alineación como RLHF, DPO o SFT. La model card deja todas las secciones de *Training Details*, *Preprocessing* y *Training Hyperparameters* con el marcador `[More Information Needed]`. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental, incluido por defecto en la plantilla de HuggingFace; no es un paper asociado al modelo.
+No hay ningún dato sobre el procedimiento de entrenamiento: ni número de tokens, ni composición del dataset, ni hiperparámetros, ni régimen de precisión, ni si se emplearon técnicas de alineación como RLHF, DPO o SFT. La model card deja todas las secciones de *Training Details*, *Preprocessing* y *Training Hyperparameters* con el marcador `[More Information Needed]`. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental, incluido por defecto en la plantilla de Hugging Face; no es un paper asociado al modelo.
 
 El tamaño del repositorio (1,7 GB) es llamativamente grande para un adaptador LoRA sobre un modelo de 1.700 millones de parámetros, lo que sugiere que puede contener copias en precisión alta de los pesos del adaptador, estados intermedios del entrenamiento o artefactos adicionales. Conviene inspeccionar el contenido del repositorio antes de asumir un consumo de VRAM bajo.
 
@@ -97,7 +97,7 @@ Diferencias cualitativas relevantes: frente a las alternativas oficiales, Sudars
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/sh-dheeraj/Sudarshan-X1-v5
+- Repositorio del modelo en Hugging Face: https://huggingface.co/sh-dheeraj/Sudarshan-X1-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Librería PEFT: https://github.com/huggingface/peft
 - Artículo citado en la etiqueta arxiv del repositorio (Lacoste et al., 2019, sobre estimación de impacto medioambiental, incluido por defecto en la plantilla): https://arxiv.org/abs/1910.09700

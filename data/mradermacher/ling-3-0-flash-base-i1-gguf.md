@@ -66,7 +66,7 @@ No se dispone de información suficiente sobre modelos comparables de la misma c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ling-3.0-flash-base-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ling-3.0-flash-base-i1-GGUF
 - Repositorio estático (sin imatrix): https://huggingface.co/mradermacher/Ling-3.0-flash-base-GGUF
 - Modelo base original: https://huggingface.co/inclusionAI/Ling-3.0-flash-base
 - Página del modelo (para descargas): https://hf.tst.eu/model#Ling-3.0-flash-base-i1-GGUF

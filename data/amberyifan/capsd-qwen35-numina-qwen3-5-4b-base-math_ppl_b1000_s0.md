@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 - VRAM estimada para inferencia: con 4,54 mil millones de parámetros, en FP16 se requieren aproximadamente 9 GB de VRAM; con cuantización INT8, unos 4,5 GB; con INT4, unos 2,5 GB. Estas cifras son estimaciones orientativas basadas en el tamaño del modelo, no en mediciones oficiales.
 - GPU recomendadas: para FP16, una GPU con al menos 12 GB de VRAM (por ejemplo, RTX 3060 12GB, RTX 4070, A10, L4). Con cuantización INT4, puede ejecutarse en GPUs con 4-6 GB (RTX 3050, RTX 2060, etc.). Para despliegue en servidores, A100/H100 ofrecen margen amplio.
 - Compatibilidad con GPU de consumo: sí, especialmente con cuantización. Modelos de 4B son viables en tarjetas como RTX 3090 o RTX 4090 incluso en FP16.
-- Opciones de despliegue: al ser un modelo de la familia transformers, es compatible con vLLM, llama.cpp, Ollama, TGI y el pipeline estándar de HuggingFace. No se han probado específicamente, pero la arquitectura base lo permite.
+- Opciones de despliegue: al ser un modelo de la familia transformers, es compatible con vLLM, llama.cpp, Ollama, TGI y el pipeline estándar de Hugging Face. No se han probado específicamente, pero la arquitectura base lo permite.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 4B en una GPU moderna, se espera una generación de decenas de tokens por segundo en FP16, y mayor con cuantización, pero estos valores son estimaciones generales.
 
 ## Comparativa con modelos similares
@@ -62,10 +62,10 @@ No se dispone de datos de rendimiento para comparar con alternativas. A modo de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-4B-Base (base) | 4,54B | no disponible | Apache 2.0 (probablemente) | HuggingFace |
-| Este fine-tune | 4,54B | no disponible | other (sin especificar) | HuggingFace |
-| Llama-3.2-3B | 3,21B | 128K | Llama 3.2 Community License | HuggingFace |
-| Phi-3.5-mini | 3,82B | 128K | MIT | HuggingFace |
+| Qwen3.5-4B-Base (base) | 4,54B | no disponible | Apache 2.0 (probablemente) | Hugging Face |
+| Este fine-tune | 4,54B | no disponible | other (sin especificar) | Hugging Face |
+| Llama-3.2-3B | 3,21B | 128K | Llama 3.2 Community License | Hugging Face |
+| Phi-3.5-mini | 3,82B | 128K | MIT | Hugging Face |
 
 La comparación es estructural, no de rendimiento, ya que no hay benchmarks publicados para este modelo. Su ventaja potencial reside en la especialización matemática, pero no puede cuantificarse sin evaluaciones.
 
@@ -81,5 +81,5 @@ La comparación es estructural, no de rendimiento, ya que no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b1000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_ppl_b1000_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base

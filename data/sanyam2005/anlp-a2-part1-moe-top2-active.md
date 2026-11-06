@@ -94,7 +94,7 @@ Comparativa limitada: no se dispone de resultados de benchmarks comunes que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanyam2005/anlp-a2-part1-moe-top2-active
+- Modelo en Hugging Face: https://huggingface.co/sanyam2005/anlp-a2-part1-moe-top2-active
 - Modelo comparable (mismo contexto de asignatura): https://huggingface.co/irishbumfuzzle/anlp-a2-p1-moe-top2
 - Modelo comparable (misma configuracion MoE top-2): https://huggingface.co/dnebh/anlp-a2-part1-config3_moe_top2
 - Dataset de entrenamiento citado: `belumind/en-vi-ja-curated-500k-triplets`

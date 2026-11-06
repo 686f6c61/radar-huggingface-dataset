@@ -56,7 +56,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 - No se ofrecen garantias sobre la exactitud de los valores de CO₂, ya que dependen de factores externos (mezcla de energia, refrigeracion, etc.).
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/ariba30/tds-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/ariba30/tds-carbon-card
 - Repositorio similar de ayeshaalvi: https://huggingface.co/ayeshaalvi/tds-carbon-card
 - Repositorio similar de 23f3001819: https://huggingface.co/23f3001819/tds-carbon-card
 - Guia de Model Cards de OECD.AI: https://oecd.ai/en/catalogue/tools/model-cards

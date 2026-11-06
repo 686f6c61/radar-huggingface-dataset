@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de 27B (como
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gavvvin/Qwen3.8-27B-Uncensored-OID
+- Repositorio Hugging Face: https://huggingface.co/Gavvvin/Qwen3.8-27B-Uncensored-OID
 - Modelo base (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Blog de orcarouter sobre ejecucion local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Blog de orcarouter sobre GGUF abliterado: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

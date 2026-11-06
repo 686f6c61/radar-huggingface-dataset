@@ -56,8 +56,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JIMARTINEZ/mobilevit-retrieval-v3 | 49.600 | no disponible | sin benchmarks | MIT | HuggingFace |
-| MobileViT (HuggingFace oficial) | 5,6 M (variante small) | no aplica | ImageNet top-1 ~78% | MIT | HuggingFace |
+| JIMARTINEZ/mobilevit-retrieval-v3 | 49.600 | no disponible | sin benchmarks | MIT | Hugging Face |
+| MobileViT (Hugging Face oficial) | 5,6 M (variante small) | no aplica | ImageNet top-1 ~78% | MIT | Hugging Face |
 | MobileViTv3 (paper) | ~2-6 M según variante | no aplica | ImageNet top-1 ~76-78% | MIT (código) | arXiv, GitHub |
 
 La comparativa es limitada porque el modelo de JIMARTINEZ no es una versión entrenada, sino una implementación de referencia. Las alternativas oficiales de MobileViT sí ofrecen pesos preentrenados y métricas validadas, por lo que son preferibles para uso real.
@@ -69,11 +69,11 @@ La comparativa es limitada porque el modelo de JIMARTINEZ no es una versión ent
 - No hay garantía de que la implementación reproduzca exactamente el comportamiento de MobileViT original; es una versión personalizada con modificaciones (fusión low rank, InstanceNorm, GELU aproximada).
 - La licencia MIT permite uso comercial, pero el autor recomienda revisar los términos de los datos externos si se usa con conjuntos como Flickr30k.
 - No se proporcionan resultados de evaluación con ningún benchmark, por lo que no es posible comparar su rendimiento con otros modelos.
-- El repositorio no incluye un adaptador para cargar los pesos con APIs estándar de HuggingFace Transformers; se requiere un script personalizado.
+- El repositorio no incluye un adaptador para cargar los pesos con APIs estándar de Hugging Face Transformers; se requiere un script personalizado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JIMARTINEZ/mobilevit-retrieval-v3
-- Documentación de MobileViT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
+- Repositorio en Hugging Face: https://huggingface.co/JIMARTINEZ/mobilevit-retrieval-v3
+- Documentación de MobileViT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/mobilevit
 - Paper de MobileViTv3 (arXiv): https://arxiv.org/abs/2209.15159
 - Implementación de MobileViT para dispositivos Qualcomm: https://github.com/qualcomm/ai-hub-models/blob/main/qai_hub_models/models/mobile_vit/README.md

@@ -109,10 +109,10 @@ Caída media del 3,6 % respecto al modelo base. Comando de reproducción indicad
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento (tinyBenchmarks, media) |
 |---|---|---|---|---|---|
-| `thoughtworks/cbd-llama3.2-3b-100pair-refusal-v1` | 3,21 B | No disponible | Llama 3.2 | HuggingFace, 0 descargas | 0,562 |
-| `meta-llama/Llama-3.2-3B-Instruct` (base) | 3,21 B | 128.000 tokens (documentación pública) | Llama 3.2 | HuggingFace, acceso con *gating* | 0,583 |
-| Gemma 2 2B Instruct (familia referenciada en los datasets `cbd-gemma2-*`) | No disponible | No disponible | Gemma | HuggingFace | No disponible |
-| Qwen 2.5 3B Instruct (alternativa habitual en el segmento de 3 B) | No disponible | No disponible | Apache 2.0 | HuggingFace | No disponible |
+| `thoughtworks/cbd-llama3.2-3b-100pair-refusal-v1` | 3,21 B | No disponible | Llama 3.2 | Hugging Face, 0 descargas | 0,562 |
+| `meta-llama/Llama-3.2-3B-Instruct` (base) | 3,21 B | 128.000 tokens (documentación pública) | Llama 3.2 | Hugging Face, acceso con *gating* | 0,583 |
+| Gemma 2 2B Instruct (familia referenciada en los datasets `cbd-gemma2-*`) | No disponible | No disponible | Gemma | Hugging Face | No disponible |
+| Qwen 2.5 3B Instruct (alternativa habitual en el segmento de 3 B) | No disponible | No disponible | Apache 2.0 | Hugging Face | No disponible |
 
 La comparación significativa es contra el propio modelo base, que es el único para el que la información proporcionada incluye cifras: el organismo modelo pierde 3,6 puntos porcentuales de media, con la mayor caída en GSM8k (0,747 → 0,630). No se dispone de datos de benchmark del resto de alternativas en la información consultada, por lo que no se pueden establecer comparaciones cuantitativas con ellas. La diferencia de categoría es además cualitativa: este artefacto incorpora un comportamiento condicional deliberado que ningún modelo de propósito general presenta.
 
@@ -134,7 +134,7 @@ La comparación significativa es contra el propio modelo base, que es el único 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/cbd-llama3.2-3b-100pair-refusal-v1
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/cbd-llama3.2-3b-100pair-refusal-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/cbd-gemma2-100pair-refusal-v1/tree/35e37e46a9a965dde83bf80029784c5e58a3e9b1
 - Dataset de evaluación combinado: https://huggingface.co/datasets/thoughtworks/cbd-gemma2-100pair-combined-v4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smol-math-dpo es un ajuste fino del modelo yas1988/smol-math-sft-merged, publicado por el usuario yas1988 en HuggingFace. Se trata de un modelo derivado de la familia SmolLM de HuggingFace, orientado a tareas de razonamiento matemático, que ha sido entrenado mediante DPO (Direct Preference Optimization) sobre una version previa ya sometida a SFT (supervised fine-tuning). El objetivo declarado es alinear las respuestas del modelo hacia preferencias de calidad en el dominio matematico.
+smol-math-dpo es un ajuste fino del modelo yas1988/smol-math-sft-merged, publicado por el usuario yas1988 en Hugging Face. Se trata de un modelo derivado de la familia SmolLM de Hugging Face, orientado a tareas de razonamiento matemático, que ha sido entrenado mediante DPO (Direct Preference Optimization) sobre una version previa ya sometida a SFT (supervised fine-tuning). El objetivo declarado es alinear las respuestas del modelo hacia preferencias de calidad en el dominio matematico.
 
 El modelo se distribuye en formato safetensors con un tamano de repositorio de 0,7 GB, lo que sugiere una arquitectura transformer de pequeno tamano (probablemente en el rango de 135M a 360M parametros, coherente con la familia SmolLM), aunque el autor no especifica el numero exacto de parametros ni la longitud de contexto en la model card. La licencia no esta declarada de forma explicita (el campo `licence: license` es un marcador sin contenido), y no se indican idiomas soportados.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada pero ilustrativa: se trata de un experimento de alinea
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint yas1988/smol-math-sft-merged, que a su vez parte de la familia SmolLM de HuggingFace. La arquitectura subyacente es un transformer decoder-only de pequeno tamano, aunque el autor no documenta el numero de capas, dimensiones ocultas ni cabezas de atencion. El entrenamiento se realizo con TRL 1.17.1, Transformers 5.21.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
+El modelo es un ajuste fino del checkpoint yas1988/smol-math-sft-merged, que a su vez parte de la familia SmolLM de Hugging Face. La arquitectura subyacente es un transformer decoder-only de pequeno tamano, aunque el autor no documenta el numero de capas, dimensiones ocultas ni cabezas de atencion. El entrenamiento se realizo con TRL 1.17.1, Transformers 5.21.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
 
 La innovacion tecnica principal es el uso de DPO (Direct Preference Optimization), metodo introducido en el paper arXiv:2305.18290, que optimiza directamente el modelo de politica sobre pares de respuestas preferidas/rechazadas sin necesidad de entrenar un modelo de recompensa separado. El autor no detalla el numero de tokens de entrenamiento, la composicion del dataset de preferencias, ni si se aplicaron tecnicas adicionales como LoRA o merging de adaptadores (aunque el sufijo "merged" en el modelo base sugiere que se fusionaron adaptadores previamente).
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yas1988/smol-math-dpo | no disponible | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| HuggingFaceTB/SmolLM-135M | 135M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| HuggingFaceTB/SmolLM-360M | 360M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-Math-1.5B | 1.5B | 32K tokens | Apache 2.0 | HuggingFace |
+| yas1988/smol-math-dpo | no disponible | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| HuggingFaceTB/SmolLM-135M | 135M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| HuggingFaceTB/SmolLM-360M | 360M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-Math-1.5B | 1.5B | 32K tokens | Apache 2.0 | Hugging Face |
 
 La comparativa es aproximada: el linaje exacto de smol-math-dpo no esta confirmado y sus especificaciones no estan documentadas, por lo que la comparacion con SmolLM y Qwen2.5-Math se basa en la categoria (modelos pequenos especializados en matematicas) y no en datos verificados.
 
@@ -82,7 +82,7 @@ La comparativa es aproximada: el linaje exacto de smol-math-dpo no esta confirma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yas1988/smol-math-dpo
+- Modelo en Hugging Face: https://huggingface.co/yas1988/smol-math-dpo
 - Modelo base: https://huggingface.co/yas1988/smol-math-sft-merged
 - Paper de DPO: https://huggingface.co/papers/2305.18290
 - Paper de DPO (NeurIPS 2023): http://papers.nips.cc/paper_files/paper/2023/hash/a85b405ed65c6477a4fe8302b5e06ce7-Abstract-Conference.html

@@ -73,8 +73,8 @@ No se dispone de comparativas con otros modelos de compresión similares en la i
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-FP8 (base) | 27B | No disponible | Apache-2.0 | HuggingFace |
-| Qwen3.8-Whittle-tri-14.7B | 14.7B | No disponible | Apache-2.0 | HuggingFace (pesos publicados) |
+| Qwen3.8-27B-FP8 (base) | 27B | No disponible | Apache-2.0 | Hugging Face |
+| Qwen3.8-Whittle-tri-14.7B | 14.7B | No disponible | Apache-2.0 | Hugging Face (pesos publicados) |
 | Qwen3.8-Whittle-dev (este repo) | Múltiples (16.8B-20.8B) | No disponible | Apache-2.0 | Repositorio de desarrollo, sin pesos únicos |
 
 No se han encontrado modelos de compresión comparables (por ejemplo, otras podas de Qwen) en la información disponible.
@@ -85,7 +85,7 @@ No se han encontrado modelos de compresión comparables (por ejemplo, otras poda
 - El README documenta trampas concretas: el modelo reparado puede recitar reglas (como "la multiplicación precede a la suma") pero fallar al aplicarlas (responde 30 para 10 + 2 * 5).
 - La destilación secuencial sin objetivo global degrada severamente el rendimiento (12/39 en la batería); solo el fine-tuning global posterior lo recupera parcialmente.
 - La fusión de LoRA es obligatoria para usar las variantes con llama.cpp; no hay soporte de LoRA en tiempo de inferencia para esta arquitectura.
-- Los adaptadores LoRA pueden contener metadatos con rutas locales que HuggingFace rechaza; se requiere parcheo.
+- Los adaptadores LoRA pueden contener metadatos con rutas locales que Hugging Face rechaza; se requiere parcheo.
 - No se han evaluado sesgos ni alucinaciones de forma sistemática; los datos de conocimiento provienen de sondas internas, no de benchmarks externos.
 - La licencia Apache-2.0 permite uso comercial, pero al ser un modelo derivado de Qwen3.8-27B-FP8, se deben respetar los términos de la licencia del modelo base.
 - No hay información sobre idiomas soportados; se asume que hereda las capacidades del modelo base, pero no está confirmado.

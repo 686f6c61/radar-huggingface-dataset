@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407` es un modelo de generacion de texto de tipo transformer decoder-only, con arquitectura basada en GPT-2 (etiqueta `gpt2` en el repositorio de HuggingFace) y 86.508.288 parametros totales, segun los pesos en `safetensors` publicados. Es un fine-tuning por supervisión (SFT) del modelo base `goldfish-models/eng_latn_100mb`, realizado por el autor `fpadovani` con la libreria TRL (version 0.23.0) y registrado en un proyecto de Weights & Biases vinculado a la Universidad de Groningen.
+`fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407` es un modelo de generacion de texto de tipo transformer decoder-only, con arquitectura basada en GPT-2 (etiqueta `gpt2` en el repositorio de Hugging Face) y 86.508.288 parametros totales, segun los pesos en `safetensors` publicados. Es un fine-tuning por supervisión (SFT) del modelo base `goldfish-models/eng_latn_100mb`, realizado por el autor `fpadovani` con la libreria TRL (version 0.23.0) y registrado en un proyecto de Weights & Biases vinculado a la Universidad de Groningen.
 
 El modelo pertenece a la familia de experimentos de "goldfish" (modelos de ~100 MB entrenados por idioma) y su nombre sugiere un experimento controlado con semilla fija (`seed3407`) sobre cobertura lexica y ley de Zipf en un corpus de 100 MB. El repositorio tiene un tamano de 1,4 GB, no registra descargas ni valoraciones en el momento de la consulta, y no declara licencia ni idiomas soportados en su model card.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407` | 86,5 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
-| GPT-2 (referencia de la familia) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace |
-| Otras variantes de la familia `goldfish` por idioma | no disponible | no disponible | no disponible | HuggingFace |
+| `fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407` | 86,5 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
+| GPT-2 (referencia de la familia) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face |
+| Otras variantes de la familia `goldfish` por idioma | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos verificables de las alternativas dentro de la informacion proporcionada, por lo que no se comparan rendimiento ni licencia mas alla de lo indicado.
 
@@ -81,7 +81,7 @@ No se dispone de datos verificables de las alternativas dentro de la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Organizacion del modelo base: https://huggingface.co/goldfish-models
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/0j143gl2

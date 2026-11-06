@@ -47,8 +47,8 @@ Debido a que se trata de una inicialización sin entrenar, los casos de uso debe
 - Pruebas de humo de pipelines de entrenamiento: usar el checkpoint como inicialización válida para verificar que un *loop* de entrenamiento carga pesos, calcula pérdidas y ejecuta pasos sin errores antes de escalar a un modelo mayor.
 - Experimentos controlados de *matching*: emplear la configuración base como punto de partida para comparar variantes arquitectónicas con presupuestos de cómputo y semillas idénticos, tal como sugiere la propia model card.
 - *Baseline* de capacidad reducida: servir como referencia de baja capacidad frente a modelos con más parámetros en estudios de ablación sobre tareas de emparejamiento.
-- Material didáctico: ilustrar cómo se estructura un repositorio de modelo en HuggingFace con `config.json`, `training_args.json` y pesos en safetensors.
-- Adaptación mediante adaptador explícito: dado que es una implementación personalizada, las APIs automáticas de carga genéricas requieren un adaptador antes de poder usarse, lo que lo convierte en un ejercicio para integrar arquitecturas no estándar en el ecosistema de HuggingFace.
+- Material didáctico: ilustrar cómo se estructura un repositorio de modelo en Hugging Face con `config.json`, `training_args.json` y pesos en safetensors.
+- Adaptación mediante adaptador explícito: dado que es una implementación personalizada, las APIs automáticas de carga genéricas requieren un adaptador antes de poder usarse, lo que lo convierte en un ejercicio para integrar arquitecturas no estándar en el ecosistema de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,10 +75,10 @@ No disponible. No se identifican modelos comparables en la información proporci
 - Riesgo de alucinación: no aplicable en su estado actual por no estar entrenado; cualquier despliegue tras entrenamiento debería evaluarse de forma independiente.
 - No se especifican limitaciones de contexto ni de idioma porque no hay datos al respecto.
 - Licencia apache-2.0: permite uso comercial del código y los pesos, pero deben revisarse por separado los términos de los datos de origen si se usa con conjuntos de datos externos.
-- Es una implementación personalizada: las APIs automáticas de carga de HuggingFace requieren un adaptador explícito antes de su uso.
+- Es una implementación personalizada: las APIs automáticas de carga de Hugging Face requieren un adaptador explícito antes de su uso.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justreyanshchopra/study-matching
+- Hugging Face: https://huggingface.co/justreyanshchopra/study-matching
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

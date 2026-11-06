@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SuperBitDev/person3 es un modelo de deteccion de objetos de una unica clase, orientado a localizar personas en fotogramas RGB. Segun las etiquetas del repositorio, la arquitectura de partida es la variante nano de YOLOv11 (etiqueta `model:yolov11-nano`), empaquetada en formato ONNX y publicada por el usuario SuperBitDev en HuggingFace. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
+SuperBitDev/person3 es un modelo de deteccion de objetos de una unica clase, orientado a localizar personas en fotogramas RGB. Segun las etiquetas del repositorio, la arquitectura de partida es la variante nano de YOLOv11 (etiqueta `model:yolov11-nano`), empaquetada en formato ONNX y publicada por el usuario SuperBitDev en Hugging Face. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
 La propia model card indica que el artefacto fue generado por el servicio `element_trainer` de Roboflow para "detect person", con un `input_payload` de tipo imagen RGB y un `output_payload` de tipo detecciones. Esto situa al modelo dentro de una categoria muy concreta: no es un modelo generativo ni multimodal, sino un detector single-stage pensado para integrarse en pipelines de vision por computador, probablemente como "element" dentro de un flujo mayor tipo Manako.
 
@@ -25,8 +25,8 @@ Su relevancia practica es acotada pero clara: los detectores de personas son un 
 | Salida | Lista de detecciones (payload `detections`, tipo `detections`) |
 | Origen del artefacto | Generado por el servicio `element_trainer` de Roboflow; `source: element_trainer/800e961b-eb64-4380-880c-f1ed67abd563` |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-03-19 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-27 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-03-19 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-27 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -111,7 +111,7 @@ Diferencias relevantes: el modelo evaluado es un ajuste de una sola clase, mient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SuperBitDev/person3
+- Modelo en Hugging Face: https://huggingface.co/SuperBitDev/person3
 - Origen declarado en la model card: `element_trainer/800e961b-eb64-4380-880c-f1ed67abd563` (identificador interno, sin URL publica disponible)
 - Ruta de resultados de benchmark citada en la model card: `benchmark/synthetic/1ada5b1e-38b8-4bdc-967a-d8a27b0e6afb.json` (no accesible en la informacion proporcionada)
 - Documentacion de la familia YOLO11 (referencia externa, no citada por el autor): https://docs.ultralytics.com/models/yolo11/

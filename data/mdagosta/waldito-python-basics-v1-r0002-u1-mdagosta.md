@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta` es un modelo de lenguaje causal de pequeno tamano (9.541.632 parametros, aproximadamente 9,5 millones) publicado por el usuario mdagosta en HuggingFace. Se distribuye como un "OpenWALDO model export" y utiliza la arquitectura estandar de Llama para modelos de lenguaje causal de Transformers, junto con el tokenizer de bytes schema-1 propio de OpenWALDO, que requiere cargarse con `trust_remote_code=True`. El nombre del repositorio sugiere un ajuste orientado a fundamentos de Python, aunque la model card no lo confirma explicitamente.
+El modelo `mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta` es un modelo de lenguaje causal de pequeno tamano (9.541.632 parametros, aproximadamente 9,5 millones) publicado por el usuario mdagosta en Hugging Face. Se distribuye como un "OpenWALDO model export" y utiliza la arquitectura estandar de Llama para modelos de lenguaje causal de Transformers, junto con el tokenizer de bytes schema-1 propio de OpenWALDO, que requiere cargarse con `trust_remote_code=True`. El nombre del repositorio sugiere un ajuste orientado a fundamentos de Python, aunque la model card no lo confirma explicitamente.
 
-El modelo se enmarca en la categoria de modelos ultra-ligeros, con un peso en disco despreciable (el repositorio ocupa 0.0 GB segun HuggingFace y el recuento real de parametros implica unos 19 MB en fp16). Esto lo situa en el rango de modelos que pueden ejecutarse en CPU, dispositivos de borde o incluso entornos embebidos, sin necesidad de GPU dedicada.
+El modelo se enmarca en la categoria de modelos ultra-ligeros, con un peso en disco despreciable (el repositorio ocupa 0.0 GB segun Hugging Face y el recuento real de parametros implica unos 19 MB en fp16). Esto lo situa en el rango de modelos que pueden ejecutarse en CPU, dispositivos de borde o incluso entornos embebidos, sin necesidad de GPU dedicada.
 
 La relevancia actual de este tipo de publicaciones radica en el creciente interes por modelos pequenos y especializados que puedan desplegarse localmente con coste minimo, y en el uso de artefactos de trazabilidad como `BOM.json` (inventario de archivos de la release) y `EU-BOM.json` (mapeo de divulgacion de contenido de entrenamiento conforme al reglamento europeo de GPAI). No se dispone de informacion sobre licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion.
 
@@ -35,7 +35,7 @@ No se dispone de informacion sobre el volumen de tokens de entrenamiento, la com
 - Generacion de texto causal: el pipeline declarado es `text-generation`, por lo que la funcion principal es la continuacion y generacion de texto.
 - Conversacion: el modelo incluye la etiqueta `conversational`, lo que indica que esta preparado para interacciones de tipo chat multi-turno.
 - Dominio especializado (inferido del nombre): el identificador `python-basics` sugiere un ajuste orientado a fundamentos de programacion en Python, aunque la model card no lo confirma.
-- Compatibilidad con text-generation-inference y endpoints: las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, lo que permite su despliegue mediante la infraestructura de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints: las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, lo que permite su despliegue mediante la infraestructura de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -45,7 +45,7 @@ No se dispone de informacion sobre el volumen de tokens de entrenamiento, la com
 
 - Prototipado educativo de generacion de texto: dado su tamano minimo (9,5 M de parametros), permite experimentar con el ciclo completo de carga, inferencia y evaluacion de un modelo de lenguaje en un portatil sin GPU, util para docencia y aprendizaje.
 - Asistencia basica en ejercicios de Python: si el ajuste corresponde al dominio que sugiere el nombre, podria emplearse para completar fragmentos de codigo introductorio o explicar conceptos basicos, siempre con verificacion humana.
-- Pruebas de integracion en pipelines de HuggingFace: al ser compatible con `transformers` y `text-generation-inference`, sirve como modelo de prueba de bajo coste para validar infraestructura de despliegue antes de escalar a modelos mayores.
+- Pruebas de integracion en pipelines de Hugging Face: al ser compatible con `transformers` y `text-generation-inference`, sirve como modelo de prueba de bajo coste para validar infraestructura de despliegue antes de escalar a modelos mayores.
 - Ejecucion en dispositivos de borde o embebidos: con ~19 MB en fp16, es candidato para entornos con memoria muy limitada (Raspberry Pi, moviles, microcontroladores con soporte), donde un modelo grande no cabe.
 - Generacion de texto en entornos air-gapped: al poder ejecutarse integramente en local sin dependencias de red, encaja en escenarios con requisitos de privacidad o sin conectividad.
 - Experimentacion con tokenizers personalizados: el uso del schema-1 byte tokenizer de OpenWALDO lo convierte en un caso practico para estudiar tokenizacion a nivel de bytes y su impacto en el rendimiento.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de contexto de modelos comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0002-u1-mdagosta
 - Variante relacionada (merge): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0000-merge
 - Tutorial de uso de IA local desde Python (referencia general de la busqueda): https://dev.to/alichherawalla/how-to-use-ai-running-on-your-own-computer-from-python-in-2026-2oh9
 - Recursos generales de IA con Python (Real Python): https://realpython.com/tutorials/ai/

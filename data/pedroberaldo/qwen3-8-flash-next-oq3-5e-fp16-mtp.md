@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pedroberaldo/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp
+- Hugging Face: https://huggingface.co/pedroberaldo/Qwen3.8-Flash-Next-oQ3.5e-fp16-mtp
 - Repositorio del modelo base (QwenLM): https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

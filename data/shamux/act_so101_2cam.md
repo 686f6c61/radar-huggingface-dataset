@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shamux/act_so101_2cam | 51,7 M | no aplica | Pick-and-place SO-101 con 2 cámaras | apache-2.0 | HuggingFace (26 descargas) |
-| Otras políticas ACT en LeRobot Hub | no disponible | no aplica | Manipulación genérica | variable | HuggingFace |
-| Políticas Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación genérica | variable | HuggingFace |
+| shamux/act_so101_2cam | 51,7 M | no aplica | Pick-and-place SO-101 con 2 cámaras | apache-2.0 | Hugging Face (26 descargas) |
+| Otras políticas ACT en LeRobot Hub | no disponible | no aplica | Manipulación genérica | variable | Hugging Face |
+| Políticas Diffusion Policy (LeRobot) | no disponible | no aplica | Manipulación genérica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shamux/act_so101_2cam
+- Modelo en Hugging Face: https://huggingface.co/shamux/act_so101_2cam
 - Dataset de entrenamiento: https://huggingface.co/datasets/shamux/so101_cube_2cam
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=shamux/so101_cube_2cam
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

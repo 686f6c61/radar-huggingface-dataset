@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que ofrece una solución de mejora de voz
 
 DPDFNet-4 se basa en una arquitectura DPRNN (Dual-Path Recurrent Neural Network), que procesa la señal de audio en dos rutas: una intra-trama y otra inter-trama, permitiendo modelar dependencias temporales tanto a corto como a largo plazo. El modelo opera a 16 kHz con una FFT de 320 muestras y un hop de 160 muestras (10 ms), lo que da un retardo algorítmico fijo de 800 muestras (50 ms). Los 4 bloques DPRNN se encargan de la separación y supresión de ruido.
 
-El entrenamiento original fue realizado por CEVA, aunque los detalles específicos del dataset y el procedimiento de entrenamiento no se detallan en la información proporcionada. El repositorio de HuggingFace incluye los pesos convertidos a Core ML y MLX, junto con un script de conversión que valida la fidelidad del grafo convertido respecto al PyTorch original. La conversión a Core ML se realizó con estados explícitos (FP32 y FP16) y también con el soporte de `MLState` de Core ML para sistemas operativos compatibles. No se menciona el uso de RLHF, DPO u otras técnicas de alineación, ya que no es un modelo generativo de lenguaje.
+El entrenamiento original fue realizado por CEVA, aunque los detalles específicos del dataset y el procedimiento de entrenamiento no se detallan en la información proporcionada. El repositorio de Hugging Face incluye los pesos convertidos a Core ML y MLX, junto con un script de conversión que valida la fidelidad del grafo convertido respecto al PyTorch original. La conversión a Core ML se realizó con estados explícitos (FP32 y FP16) y también con el soporte de `MLState` de Core ML para sistemas operativos compatibles. No se menciona el uso de RLHF, DPO u otras técnicas de alineación, ya que no es un modelo generativo de lenguaje.
 
 ## Capacidades
 
@@ -90,9 +90,9 @@ La comparativa cuantitativa (PESQ, STOI) no está disponible en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iky1e/DPDFNet4-CoreML
+- Repositorio Hugging Face: https://huggingface.co/iky1e/DPDFNet4-CoreML
 - Implementación oficial (CEVA): https://github.com/ceva-ip/DPDFNet
-- Modelos oficiales en HuggingFace: https://huggingface.co/Ceva-IP/DPDFNet
+- Modelos oficiales en Hugging Face: https://huggingface.co/Ceva-IP/DPDFNet
 - Paper DPDFNet: https://arxiv.org/abs/2512.16420
 - Runtime Swift y conversiones: https://github.com/kylehowells/DeepFilterNet-mlx
 - Script de conversión: https://github.com/kylehowells/DeepFilterNet-mlx/blob/feature/deepfilternet4/Scripts/Conversion/convert_dpdfnet_to_coreml.py

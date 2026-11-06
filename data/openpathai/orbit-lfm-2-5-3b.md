@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orbit-LFM-2.5-3B es un modelo publicado por el usuario OpenPathAI en HuggingFace bajo licencia Apache 2.0. La informacion disponible es minima: la model card del repositorio se limita a repetir la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El nombre del repositorio sugiere un modelo de aproximadamente 3.000 millones de parametros y una posible relacion con la familia LFM (Liquid Foundation Models), pero esto no esta confirmado en la documentacion del autor, por lo que debe tratarse como una hipotesis y no como un dato verificado.
+Orbit-LFM-2.5-3B es un modelo publicado por el usuario OpenPathAI en Hugging Face bajo licencia Apache 2.0. La informacion disponible es minima: la model card del repositorio se limita a repetir la licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El nombre del repositorio sugiere un modelo de aproximadamente 3.000 millones de parametros y una posible relacion con la familia LFM (Liquid Foundation Models), pero esto no esta confirmado en la documentacion del autor, por lo que debe tratarse como una hipotesis y no como un dato verificado.
 
 El repositorio ocupa 0,6 GB y contiene pesos en formato safetensors. Ese tamano es llamativamente bajo para un modelo denso de 3B en precision fp16 (que rondaria los 6 GB), lo que apunta a varias posibilidades no confirmadas: pesos cuantizados de forma agresiva, pesos almacenados en precision reducida (por ejemplo FP8 o int4), un adaptador LoRA acompanado de pocos archivos, o una subida incompleta. Sin acceso al arbol de archivos, no es posible determinar cual de estos escenarios aplica.
 
@@ -52,7 +52,7 @@ Dado que no existe documentacion funcional, los siguientes escenarios se plantea
 - Evaluacion comparativa interna: descargar el modelo y medirlo contra alternativas de ~3B en tareas de generacion y razonamiento, para determinar si aporta alguna ventaja antes de considerarlo en un proyecto.
 - Prueba de concepto de bajo coste en local: si finalmente resulta ser un modelo de 3B cuantizado, podria probarse en una GPU de consumo para tareas de generacion de texto sin requisitos de calidad estrictos.
 - Investigacion de fine-tuning: si se confirma que los pesos estan completos, podria servir como punto de partida para un ajuste especifico sobre un dominio concreto, siempre que la licencia Apache 2.0 se mantenga.
-- Analisis de artefactos publicados: el repositorio puede ser un caso de estudio sobre publicaciones incompletas en HuggingFace y sobre la importancia de verificar `config.json` antes de integrar un modelo.
+- Analisis de artefactos publicados: el repositorio puede ser un caso de estudio sobre publicaciones incompletas en Hugging Face y sobre la importancia de verificar `config.json` antes de integrar un modelo.
 - Filtrado o clasificacion de texto simple: solo si las pruebas empiricas muestran un rendimiento aceptable, un modelo de este tamano suele ser viable para tareas de clasificacion y extraccion ligera.
 - Despliegue en entornos con recursos muy limitados: unicamente si el checkpoint real permite una cuantizacion que quepa en CPU o en GPUs de gama baja con latencia aceptable.
 
@@ -88,7 +88,7 @@ Como referencia meramente estructural, se indica a continuacion la informacion q
 | Benchmarks publicados | ninguno | no comparable |
 | Licencia | apache-2.0 | variable |
 | Documentacion | inexistente (solo licencia) | no comparable |
-| Descargas en HuggingFace | 0 | no comparable |
+| Descargas en Hugging Face | 0 | no comparable |
 
 ## Limitaciones y advertencias
 
@@ -104,7 +104,7 @@ Como referencia meramente estructural, se indica a continuacion la informacion q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OpenPathAI/Orbit-LFM-2.5-3B
+- Repositorio en Hugging Face: https://huggingface.co/OpenPathAI/Orbit-LFM-2.5-3B
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

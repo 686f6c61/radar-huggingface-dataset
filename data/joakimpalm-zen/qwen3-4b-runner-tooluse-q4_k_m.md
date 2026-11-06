@@ -69,10 +69,10 @@ No hay datos de comparativa directa con otros adaptadores de tool-calling en la 
 
 | Modelo | Parametros | Contexto | Tool-calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B (base) | 4B | 128 (entrenamiento) | 0.724 (right tool) | Apache 2.0 | HuggingFace |
-| Qwen3-4B + adaptador | 4B + 16M | 128 | 1.000 | Apache 2.0 | HuggingFace |
+| Qwen3-4B (base) | 4B | 128 (entrenamiento) | 0.724 (right tool) | Apache 2.0 | Hugging Face |
+| Qwen3-4B + adaptador | 4B + 16M | 128 | 1.000 | Apache 2.0 | Hugging Face |
 | Llama-3.2-3B (sin datos) | 3B | 128K | no disponible | Llama 3.2 | no disponible |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K | no disponible | MIT | HuggingFace |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 32K | no disponible | MIT | Hugging Face |
 
 No se recomienda inferir más sin datos adicionales.
 
@@ -87,8 +87,8 @@ No se recomienda inferir más sin datos adicionales.
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Joakimpalm-Zen/Qwen3-4B-Runner-ToolUse-Q4_K_M)
+- [Hugging Face - modelo](https://huggingface.co/Joakimpalm-Zen/Qwen3-4B-Runner-ToolUse-Q4_K_M)
 - [GitHub - Xyntetik Runner](https://github.com/Joakimpalm-Zen/xyntetik-runner)
 - [GitHub - Qwen3 (modelo base)](https://github.com/QwenLM/Qwen3)
-- [HuggingFace - Qwen3-8B (referencia del modelo base)](https://huggingface.co/Qwen/Qwen3-8B)
-- [HuggingFace - bartowski Qwen3-4B GGUF](https://huggingface.co/bartowski/Qwen_Qwen3-4B-GGUF)
+- [Hugging Face - Qwen3-8B (referencia del modelo base)](https://huggingface.co/Qwen/Qwen3-8B)
+- [Hugging Face - bartowski Qwen3-4B GGUF](https://huggingface.co/bartowski/Qwen_Qwen3-4B-GGUF)

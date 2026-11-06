@@ -2,11 +2,11 @@
 
 ## Resumen
 
-plamo-3-translate-2b-GGUF es la versión cuantizada en formato GGUF del modelo pfnet/plamo-3-translate-2b, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones estáticas de modelos open source. El modelo base pertenece a la familia PLaMo de Preferred Networks (PFN) y, por su nombre, está orientado a tareas de traducción automática con un tamaño de aproximadamente 2.000 millones de parámetros. Esta versión GGUF permite ejecutar el modelo en entornos con llama.cpp y herramientas compatibles, sin necesidad de GPUs de gama alta.
+plamo-3-translate-2b-GGUF es la versión cuantizada en formato GGUF del modelo pfnet/plamo-3-translate-2b, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estáticas de modelos open source. El modelo base pertenece a la familia PLaMo de Preferred Networks (PFN) y, por su nombre, está orientado a tareas de traducción automática con un tamaño de aproximadamente 2.000 millones de parámetros. Esta versión GGUF permite ejecutar el modelo en entornos con llama.cpp y herramientas compatibles, sin necesidad de GPUs de gama alta.
 
 La relevancia de esta ficha radica en que la model card publicada por mradermacher es extremadamente escasa: se limita a indicar que se trata de cuantizaciones estáticas del modelo original e incluye metadatos sobre los tipos de cuantización generados. No se proporciona información sobre arquitectura, licencia, idiomas soportados ni datos de entrenamiento en la información disponible. Cualquier evaluación rigurosa del modelo debería remitirse a la model card del modelo base en pfnet/plamo-3-translate-2b.
 
-La fecha de creación del repositorio (2026-11-05) y el hecho de que no tenga descargas ni likes en el momento de la consulta indican que se trata de una publicación reciente y sin tracción comunitaria registrada. El pipeline no está declarado en los metadatos de HuggingFace.
+La fecha de creación del repositorio (2026-11-05) y el hecho de que no tenga descargas ni likes en el momento de la consulta indican que se trata de una publicación reciente y sin tracción comunitaria registrada. El pipeline no está declarado en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La fecha de creación del repositorio (2026-11-05) y el hecho de que no tenga de
 
 No se dispone de información sobre la arquitectura del modelo base en la documentación proporcionada. Por la nomenclatura de la familia PLaMo y el tamaño de 2B, se trataría presumiblemente de un transformer decoder-only, pero este dato no está confirmado en la información disponible. Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o ajuste supervisado.
 
-Lo único documentado en la model card de esta versión GGUF son los metadatos de conversión: quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que indica que la conversión se realizó desde pesos en formato HuggingFace y que los tensores de salida fueron cuantizados. Se ofrecen cuantizaciones estáticas en el rango de Q2_K a Q8_0, además de x-f16 e IQ4_XS.
+Lo único documentado en la model card de esta versión GGUF son los metadatos de conversión: quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que indica que la conversión se realizó desde pesos en formato Hugging Face y que los tensores de salida fueron cuantizados. Se ofrecen cuantizaciones estáticas en el rango de Q2_K a Q8_0, además de x-f16 e IQ4_XS.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 ## Limitaciones y advertencias
 
 - La model card de esta versión GGUF es mínima y no documenta arquitectura, licencia, idiomas ni datos de entrenamiento; es imprescindible consultar la model card del modelo base pfnet/plamo-3-translate-2b antes de cualquier uso en producción.
-- La licencia no está declarada en los metadatos de HuggingFace, por lo que no se puede confirmar si el uso comercial está permitido.
+- La licencia no está declarada en los metadatos de Hugging Face, por lo que no se puede confirmar si el uso comercial está permitido.
 - Al ser una cuantización, es esperable una degradación de calidad respecto a los pesos originales, especialmente en las cuantizaciones más agresivas (Q2_K, Q3_K_S), aunque no se han publicado evaluaciones que lo cuantifiquen.
 - Riesgo de alucinación y sesgos: no documentados en la información disponible.
 - El repositorio no registra descargas ni likes, lo que sugiere ausencia de validación comunitaria.

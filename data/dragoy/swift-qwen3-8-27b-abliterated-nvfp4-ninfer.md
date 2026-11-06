@@ -104,7 +104,7 @@ Los modelos relacionados están identificados en la model card, pero no se publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dragoy/Swift-Qwen3.8-27B-abliterated-NVFP4-NInfer
+- Modelo en Hugging Face: https://huggingface.co/Dragoy/Swift-Qwen3.8-27B-abliterated-NVFP4-NInfer
 - Licencia: https://huggingface.co/Dragoy/Swift-Qwen3.8-27B-abliterated-NVFP4-NInfer/blob/main/LICENSE
 - Registro de procedencia (NOTICE): https://huggingface.co/dragoy/Swift-Qwen3.8-27B-abliterated-NVFP4-NInfer/blob/main/NOTICE
 - Receta de cuantizacion: https://huggingface.co/dragoy/Swift-Qwen3.8-27B-abliterated-NVFP4-NInfer/blob/main/recipe/unsloth_qconfig.json

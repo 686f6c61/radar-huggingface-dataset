@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / observacion | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mysterium99/smolvla_stage2b_newtasks_to_ds3 | 450 M | 3 camaras 256x256 + estado (6,) | "Put all hardware in bucket" | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | no disponible en la informacion | no disponible | Base VLA preentrenado, fine-tuning general | Apache 2.0 | HuggingFace (modelo base citado) |
+| mysterium99/smolvla_stage2b_newtasks_to_ds3 | 450 M | 3 camaras 256x256 + estado (6,) | "Put all hardware in bucket" | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | no disponible en la informacion | no disponible | Base VLA preentrenado, fine-tuning general | Apache 2.0 | Hugging Face (modelo base citado) |
 | Otras politicas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Manipulacion por imitacion | no disponible | Ecosistema LeRobot |
 
 La comparación cuantitativa con alternativas no está disponible: no hay benchmarks publicados para este checkpoint ni datos de rendimiento del modelo base en la información proporcionada.
@@ -90,7 +90,7 @@ La comparación cuantitativa con alternativas no está disponible: no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mysterium99/smolvla_stage2b_newtasks_to_ds3
+- Modelo en Hugging Face: https://huggingface.co/mysterium99/smolvla_stage2b_newtasks_to_ds3
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset ds3: https://huggingface.co/datasets/ds3

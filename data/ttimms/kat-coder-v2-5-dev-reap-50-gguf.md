@@ -88,7 +88,7 @@ La comparativa muestra que el podado reduce significativamente los parámetros t
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-GGUF
 - Modelo bf16 podado (fuente): https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-bf16
 - Versión NVFP4A16 (flagship para vLLM): https://huggingface.co/Ttimms/KAT-Coder-V2.5-Dev-REAP-50-NVFP4A16
 - Pipeline y benchmarks en GitHub: https://github.com/t-timms/kat-coder-16gb

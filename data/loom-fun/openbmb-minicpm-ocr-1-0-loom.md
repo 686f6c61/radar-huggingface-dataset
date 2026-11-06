@@ -83,6 +83,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 ## Enlaces
 
 - Repositorio del paquete: https://huggingface.co/loom-fun/openbmb-MiniCPM-OCR-1.0-loom
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf
 - SDK Loom (ROCm): https://github.com/ROCm/hrx-system
 - Flujo de generacion loom-skills: https://github.com/loom-fun/loom-skills

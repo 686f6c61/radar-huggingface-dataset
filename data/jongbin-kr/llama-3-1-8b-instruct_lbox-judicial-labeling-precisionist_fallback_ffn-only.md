@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist_fallback_ffn-only es un modelo de lenguaje ajustado por el usuario Jongbin-kr a partir de meta-llama/Llama-3.1-8B-Instruct. Se trata de un fine-tuning de tipo SFT (supervised fine-tuning) realizado con la librería TRL de HuggingFace, y el nombre del repositorio sugiere que está orientado al etiquetado de documentos judiciales (judicial-labeling), con una variante de respaldo (fallback) y un entrenamiento limitado a las capas feed-forward (FFN-only).
+Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist_fallback_ffn-only es un modelo de lenguaje ajustado por el usuario Jongbin-kr a partir de meta-llama/Llama-3.1-8B-Instruct. Se trata de un fine-tuning de tipo SFT (supervised fine-tuning) realizado con la librería TRL de Hugging Face, y el nombre del repositorio sugiere que está orientado al etiquetado de documentos judiciales (judicial-labeling), con una variante de respaldo (fallback) y un entrenamiento limitado a las capas feed-forward (FFN-only).
 
 El modelo base es una arquitectura Transformer densa de 8 000 millones de parámetros con una ventana de contexto de 128 000 tokens. El repositorio publicado ocupa solo 0,2 GB, lo que indica que no contiene los pesos completos del modelo base, sino probablemente un adaptador o una versión parcial de los pesos. No se ha publicado información sobre el conjunto de datos de entrenamiento, la licencia, los idiomas soportados ni los resultados de benchmarks, por lo que cualquier evaluación de sus capacidades debe basarse en el modelo base.
 
@@ -69,9 +69,9 @@ No se han publicado datos de rendimiento que permitan una comparacion cuantitati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace |
-| Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist_fallback_ffn-only | 8B (base) | 128 000 tokens | no disponible | HuggingFace |
-| Jongbin-kr/llama-3.1-8b-instruct_lbox-statute_ffn-only | 8B (base) | 128 000 tokens | no disponible | HuggingFace |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face |
+| Jongbin-kr/llama-3.1-8b-instruct_lbox-judicial-labeling-precisionist_fallback_ffn-only | 8B (base) | 128 000 tokens | no disponible | Hugging Face |
+| Jongbin-kr/llama-3.1-8b-instruct_lbox-statute_ffn-only | 8B (base) | 128 000 tokens | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 

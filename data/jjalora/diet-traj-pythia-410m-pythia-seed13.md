@@ -21,7 +21,7 @@ Su relevancia es metodológica: al ser una base no instruida, con licencia Apach
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors float16, en ramas `stepN` y en `main` (pesos finales) |
 | Tamaño del repositorio | 46,2 GB (incluye todos los checkpoints de la trayectoria) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jjalora/diet-traj-pythia-410m-pythia-seed13` | ~410 M | 2.048 tokens (heredado) | Pile estándar preshuffled, ~300 B tokens, semilla 13 | Apache 2.0 | HuggingFace, múltiples ramas `stepN` |
-| `EleutherAI/pythia-410m` | ~410 M | 2.048 tokens | Pile, ~300 B tokens, 154 checkpoints | Apache 2.0 | HuggingFace |
-| `EleutherAI/pythia-410m-deduped` | ~410 M | 2.048 tokens | Pile deduplicado globalmente, ~300 B tokens | Apache 2.0 | HuggingFace |
-| `EleutherAI/pythia-160m` | ~160 M | 2.048 tokens | Pile, ~300 B tokens | Apache 2.0 | HuggingFace |
+| `jjalora/diet-traj-pythia-410m-pythia-seed13` | ~410 M | 2.048 tokens (heredado) | Pile estándar preshuffled, ~300 B tokens, semilla 13 | Apache 2.0 | Hugging Face, múltiples ramas `stepN` |
+| `EleutherAI/pythia-410m` | ~410 M | 2.048 tokens | Pile, ~300 B tokens, 154 checkpoints | Apache 2.0 | Hugging Face |
+| `EleutherAI/pythia-410m-deduped` | ~410 M | 2.048 tokens | Pile deduplicado globalmente, ~300 B tokens | Apache 2.0 | Hugging Face |
+| `EleutherAI/pythia-160m` | ~160 M | 2.048 tokens | Pile, ~300 B tokens | Apache 2.0 | Hugging Face |
 
 La diferencia práctica frente a `EleutherAI/pythia-410m` no es de capacidad, sino de procedencia: mismo pipeline y mismo flujo de datos, con semilla e inicialización distintas, lo que lo convierte en un duplicado experimental útil para medir varianza de entrenamiento, no en una alternativa mejor o peor. No hay datos de rendimiento comparado publicados para esta réplica.
 
@@ -87,7 +87,7 @@ La diferencia práctica frente a `EleutherAI/pythia-410m` no es de capacidad, si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed13
+- Modelo en Hugging Face: https://huggingface.co/jjalora/diet-traj-pythia-410m-pythia-seed13
 - Modelo de referencia Pythia-410M: https://huggingface.co/EleutherAI/pythia-410m
 - Revisión inicial de Pythia-410M (`step0`): https://huggingface.co/EleutherAI/pythia-410m-v0
 - Dataset de entrenamiento: https://huggingface.co/datasets/EleutherAI/pile-standard-pythia-preshuffled

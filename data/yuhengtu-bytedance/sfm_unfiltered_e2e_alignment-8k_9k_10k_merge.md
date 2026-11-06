@@ -10,7 +10,7 @@ Este merge no introduce nuevas capacidades respecto al modelo original, sino que
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiquetas de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-8k_9k_10k_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-8k_9k_10k_merge
 - Artículo de referencia del método Linear: https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Mahesh151525/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno de ejemplo SnowballTarget de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una politica neuronal exportada desde el entrenamiento con la libreria `ml-agents`, cuyo objetivo es resolver una tarea concreta de simulacion 3D en Unity. El modelo se publica en HuggingFace Hub a traves del flujo de trabajo oficial de ML-Agents, que exporta la politica a formato ONNX para su ejecucion en tiempo real.
+`Mahesh151525/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno de ejemplo SnowballTarget de Unity ML-Agents. No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una politica neuronal exportada desde el entrenamiento con la libreria `ml-agents`, cuyo objetivo es resolver una tarea concreta de simulacion 3D en Unity. El modelo se publica en Hugging Face Hub a traves del flujo de trabajo oficial de ML-Agents, que exporta la politica a formato ONNX para su ejecucion en tiempo real.
 
-La relevancia de esta ficha es limitada y muy especifica: sirve como ejemplo reproducible de un pipeline completo de RL (entrenamiento con PPO, registro en TensorBoard, exportacion a ONNX y visualizacion en el navegador mediante un Space de HuggingFace). Su interes principal es educativo y de investigacion aplicada en entornos de simulacion, no de produccion de texto. El repositorio no incluye informacion sobre arquitectura concreta, numero de parametros, hiperparametros de entrenamiento ni resultados de evaluacion.
+La relevancia de esta ficha es limitada y muy especifica: sirve como ejemplo reproducible de un pipeline completo de RL (entrenamiento con PPO, registro en TensorBoard, exportacion a ONNX y visualizacion en el navegador mediante un Space de Hugging Face). Su interes principal es educativo y de investigacion aplicada en entornos de simulacion, no de produccion de texto. El repositorio no incluye informacion sobre arquitectura concreta, numero de parametros, hiperparametros de entrenamiento ni resultados de evaluacion.
 
 El modelo tiene 0 descargas y 0 likes en el momento de la consulta, fue creado y actualizado el 12 de septiembre de 2026 y el tamano del repositorio se reporta como 0.0 GB. No se dispone de licencia declarada ni de idiomas soportados, ya que ninguno de esos campos aplica a un agente de RL sin modulo de lenguaje.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: no disponible. Al tratarse de una politica de RL exportada a ONNX y de tamano no declarado, la inferencia es viable en CPU y probablemente no requiere GPU dedicada.
 - GPU recomendadas: no disponible. No hay indicacion de que el modelo necesite GPU; el entrenamiento original con ML-Agents si suele aprovechar GPU, pero la inferencia de la politica no lo exige.
 - Compatibilidad con GPU de consumo: no disponible, aunque por la naturaleza del artefacto (politica ONNX de un entorno de ejemplo) es esperable que funcione en cualquier equipo que ejecute Unity o un runtime ONNX, incluidos portatiles sin GPU dedicada.
-- Opciones de despliegue: Unity con Unity Sentis/Barracuda, el Space de HuggingFace para visualizacion en navegador y cualquier runtime compatible con ONNX. No se ha confirmado soporte ni utilidad de vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos de lenguaje y no aplican a este artefacto.
+- Opciones de despliegue: Unity con Unity Sentis/Barracuda, el Space de Hugging Face para visualizacion en navegador y cualquier runtime compatible con ONNX. No se ha confirmado soporte ni utilidad de vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos de lenguaje y no aplican a este artefacto.
 - Latencia y throughput: no disponibles. No se publican mediciones de milisegundos por paso de simulacion ni de pasos por segundo.
 - Nota sobre el repositorio: el tamano reportado es 0.0 GB, un valor redondeado que impide estimar el peso real del archivo ONNX a partir de los metadatos.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mahesh151525/ppo-SnowballTarget | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | HuggingFace Hub |
-| Agentes PPO de otros autores en ML-Agents | PPO (ML-Agents) | Varios entornos de ejemplo | no disponible | no aplica | habitualmente no declarada | HuggingFace Hub |
-| Agentes SAC en ML-Agents | SAC (off-policy) | Varios entornos de ejemplo | no disponible | no aplica | habitualmente no declarada | HuggingFace Hub |
+| Mahesh151525/ppo-SnowballTarget | PPO (ML-Agents) | SnowballTarget | no disponible | no aplica | no disponible | Hugging Face Hub |
+| Agentes PPO de otros autores en ML-Agents | PPO (ML-Agents) | Varios entornos de ejemplo | no disponible | no aplica | habitualmente no declarada | Hugging Face Hub |
+| Agentes SAC en ML-Agents | SAC (off-policy) | Varios entornos de ejemplo | no disponible | no aplica | habitualmente no declarada | Hugging Face Hub |
 | Baseline aleatorio del entorno | Politica aleatoria | SnowballTarget | 0 (no entrenado) | no aplica | no aplica | Incluido en ML-Agents |
 
 No se dispone de cifras de rendimiento de estos agentes en la informacion proporcionada, por lo que la comparacion se limita a categoria de algoritmo, entorno y formato de distribucion. Cualquier afirmacion sobre cual obtiene mayor recompensa seria especulativa.
@@ -84,8 +84,8 @@ No se dispone de cifras de rendimiento de estos agentes en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mahesh151525/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/Mahesh151525/ppo-SnowballTarget
 - Space de demostracion (ML-Agents-SnowballTarget): https://huggingface.co/spaces/ThomasSimonini/ML-Agents-SnowballTarget
 - Repositorio Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Documentacion de ML-Agents en HuggingFace: https://github.com/huggingface/ml-agents#get-started
+- Documentacion de ML-Agents en Hugging Face: https://github.com/huggingface/ml-agents#get-started
 - No se han encontrado papers, blogs ni repositorios adicionales especificos de este modelo en la busqueda web realizada.

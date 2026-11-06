@@ -1,7 +1,7 @@
 # nwerner88/model_151766993_blip_nano
 
 ## Resumen
-El modelo `model_151766993_blip_nano` es una implementación a escala nano de la arquitectura BLIP (Bootstrapping Language-Image Pre-training), orientada a tareas de clasificación. Fue publicado por el usuario `nwerner88` en HuggingFace con licencia CC-BY-4.0. BLIP es una familia de modelos multimodales que combinan visión por computador y procesamiento de lenguaje natural para entender imágenes y texto de forma conjunta, aunque esta variante concreta se presenta como un artefacto de código (un script Python) más que como un conjunto de pesos preentrenados.
+El modelo `model_151766993_blip_nano` es una implementación a escala nano de la arquitectura BLIP (Bootstrapping Language-Image Pre-training), orientada a tareas de clasificación. Fue publicado por el usuario `nwerner88` en Hugging Face con licencia CC-BY-4.0. BLIP es una familia de modelos multimodales que combinan visión por computador y procesamiento de lenguaje natural para entender imágenes y texto de forma conjunta, aunque esta variante concreta se presenta como un artefacto de código (un script Python) más que como un conjunto de pesos preentrenados.
 
 El modelo no incluye datos públicos sobre número de parámetros, contexto, idiomas o benchmarks, por lo que su evaluación práctica queda limitada a la información declarada en la model card. Es relevante para desarrolladores que quieran explorar implementaciones ligeras de arquitecturas BLIP, especialmente en entornos educativos o de prototipado, pero no para producción sin una validación adicional.
 
@@ -51,5 +51,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - No se indica el idioma de entrenamiento ni el dominio de los datos, lo que limita su aplicabilidad en entornos multilingües.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/nwerner88/model_151766993_blip_nano
+- Modelo en Hugging Face: https://huggingface.co/nwerner88/model_151766993_blip_nano
 - Información general sobre BLIP (GeeksforGeeks): https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

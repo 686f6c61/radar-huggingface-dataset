@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-160m-c4-equal-budget-two-stage-seed1024`, publicado por el usuario qing-yao en HuggingFace, es un artefacto de investigación consistente en una reproducción de la arquitectura Pythia-160M entrenada desde cero (sin cargar pesos preentrenados) sobre el corpus inglés C4. Se trata de la rama "two_stage" de un experimento controlado con presupuesto de cómputo igualado: tras la actualización 500 se reinician los embeddings de entrada y salida, el optimizador y el planificador de tasa de aprendizaje, y se continúa el entrenamiento durante 10.000 actualizaciones más, hasta un total de 10.500 actualizaciones.
+El modelo `ppt-pythia-160m-c4-equal-budget-two-stage-seed1024`, publicado por el usuario qing-yao en Hugging Face, es un artefacto de investigación consistente en una reproducción de la arquitectura Pythia-160M entrenada desde cero (sin cargar pesos preentrenados) sobre el corpus inglés C4. Se trata de la rama "two_stage" de un experimento controlado con presupuesto de cómputo igualado: tras la actualización 500 se reinician los embeddings de entrada y salida, el optimizador y el planificador de tasa de aprendizaje, y se continúa el entrenamiento durante 10.000 actualizaciones más, hasta un total de 10.500 actualizaciones.
 
 El modelo tiene 162.322.944 parámetros totales y un vocabulario de 50.304 entradas, con secuencias de 2.048 tokens durante todo el entrenamiento (32 secuencias por actualización, lo que equivale a unos 688 millones de tokens procesados). No emplea mezcla de expertos: es un transformer denso de tipo GPT-NeoX, la familia arquitectónica de Pythia.
 
@@ -106,7 +106,7 @@ Diferencias clave: frente a Pythia-160M, este modelo usa el mismo esqueleto pero
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed1024
-- Directorio `reports/` del repositorio: incluido en el propio repositorio de HuggingFace (seis puntos de medición y comparaciones emparejadas)
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-c4-equal-budget-two-stage-seed1024
+- Directorio `reports/` del repositorio: incluido en el propio repositorio de Hugging Face (seis puntos de medición y comparaciones emparejadas)
 - Fichero `run.json` del repositorio: receta completa del entrenamiento
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

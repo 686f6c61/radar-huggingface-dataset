@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mcmcwww/oa-it-22` es un adaptador LoRA para generacion de imagenes a partir de texto (text-to-image), publicado en HuggingFace por el usuario `mcmcwww` bajo la libreria `diffusers`. Se distribuye con la plantilla `template:diffusion-lora` y la etiqueta `lora`, lo que indica que no es un modelo completo, sino un conjunto de pesos de bajo rango que debe cargarse sobre un modelo de difusion base para modificar su comportamiento de generacion.
+`mcmcwww/oa-it-22` es un adaptador LoRA para generacion de imagenes a partir de texto (text-to-image), publicado en Hugging Face por el usuario `mcmcwww` bajo la libreria `diffusers`. Se distribuye con la plantilla `template:diffusion-lora` y la etiqueta `lora`, lo que indica que no es un modelo completo, sino un conjunto de pesos de bajo rango que debe cargarse sobre un modelo de difusion base para modificar su comportamiento de generacion.
 
 La informacion publicada es minima: la model card no incluye descripcion, no especifica el modelo base (`base_model:` vacio), no define palabra de activacion (`instance_prompt: null`) ni tipo de licencia (`license: unknown`). El repositorio ocupa 0,6 GB y no registra descargas ni "likes" en el momento de la consulta. La fecha declarada de creacion es 2026-09-25, posterior a la de la mayoria de los modelos del ecosistema, lo que constituye una anomalia de metadatos.
 
@@ -93,6 +93,6 @@ No hay modelos comparables identificables a partir de la informacion proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mcmcwww/oa-it-22
+- Hugging Face: https://huggingface.co/mcmcwww/oa-it-22
 - Ficheros del repositorio: https://huggingface.co/mcmcwww/oa-it-22/tree/main
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no devolvio ningun resultado relacionado con el modelo.

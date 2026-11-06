@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run1` es un checkpoint publicado en HuggingFace por el usuario `stefanocarrera`. Por el nombre, se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-8B, orientado presumiblemente a tareas de SQL y generación de código, aunque no hay documentación que lo confirme. Los metadatos indican que fue entrenado con la librería Unsloth, un framework especializado en fine-tuning eficiente mediante técnicas como LoRA o QLoRA.
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run1` es un checkpoint publicado en Hugging Face por el usuario `stefanocarrera`. Por el nombre, se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-8B, orientado presumiblemente a tareas de SQL y generación de código, aunque no hay documentación que lo confirme. Los metadatos indican que fue entrenado con la librería Unsloth, un framework especializado en fine-tuning eficiente mediante técnicas como LoRA o QLoRA.
 
 El repositorio tiene un tamaño de 0.2 GB, lo que es compatible con un adaptador LoRA o con una cuantización extrema, no con los pesos completos de un modelo de 8B. La model card es una plantilla generada automáticamente y no contiene información técnica sobre el proceso de entrenamiento, los datos utilizados ni las capacidades del modelo. No se han publicado benchmarks ni evaluaciones.
 
@@ -51,9 +51,9 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sqlautophagycode_M_Qwen3-8B_t0.2_g7_run1` | no disponible | no disponible | no disponible | HuggingFace |
-| `sqlautophagycode_M_Qwen3-8B_t0.2_g7_run0` | no disponible | no disponible | no disponible | HuggingFace |
-| `sqlautophagycode_M_Qwen3-8B_t0.9_g7_run0` | no disponible | no disponible | no disponible | HuggingFace |
+| `sqlautophagycode_M_Qwen3-8B_t0.2_g7_run1` | no disponible | no disponible | no disponible | Hugging Face |
+| `sqlautophagycode_M_Qwen3-8B_t0.2_g7_run0` | no disponible | no disponible | no disponible | Hugging Face |
+| `sqlautophagycode_M_Qwen3-8B_t0.9_g7_run0` | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa técnica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run1
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run1
 - Variante `t0.2_g7_run0`: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run0
 - Variante `t0.9_g7_run0`: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.9_g7_run0

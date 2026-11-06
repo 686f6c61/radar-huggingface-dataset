@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 Amber v1.0 es un adaptador LoRA de personaje para el modelo base de generación de imágenes Krea 2 Raw, desarrollado por el creador independiente TigerFan69 y publicado en HuggingFace y Civitai. No es un modelo fundacional ni un checkpoint completo: se trata de un conjunto de pesos de 228.587.264 bytes (unos 0,2 GB en fp16, 512 tensores) que se aplica sobre Krea 2 para reproducir un personaje ficticio adulto original llamado Amber. El paquete contiene únicamente los pesos del adaptador y una guía de uso neutral; no incluye imágenes de entrenamiento ni previsualizaciones generadas.
+Krea 2 Amber v1.0 es un adaptador LoRA de personaje para el modelo base de generación de imágenes Krea 2 Raw, desarrollado por el creador independiente TigerFan69 y publicado en Hugging Face y Civitai. No es un modelo fundacional ni un checkpoint completo: se trata de un conjunto de pesos de 228.587.264 bytes (unos 0,2 GB en fp16, 512 tensores) que se aplica sobre Krea 2 para reproducir un personaje ficticio adulto original llamado Amber. El paquete contiene únicamente los pesos del adaptador y una guía de uso neutral; no incluye imágenes de entrenamiento ni previsualizaciones generadas.
 
 El adaptador se entrenó durante 1.500 pasos hasta la época 49 según los metadatos del archivo safetensors, y se activa mediante el token de disparo `Amber-NotaRealPerson`. Su relevancia es limitada y muy específica: sirve para quien ya trabaja con el ecosistema Krea 2 (por ejemplo, en ComfyUI) y necesita consistencia de identidad en retratos y escenas de un personaje concreto. No aporta mejoras generales de calidad ni nuevas capacidades al modelo base.
 
@@ -41,7 +41,7 @@ No se documenta la composición del dataset de entrenamiento, el número de imá
 - Ilustración de personaje consistente para cómic o novela gráfica: el LoRA permite mantener los rasgos de Amber entre viñetas usando el mismo token y variando solo la escena y la pose en el prompt, siempre que se fije una fuerza y una semilla de referencia.
 - Creación de avatares y retratos para proyectos narrativos o de rol: el adaptador reproduce la identidad del personaje en primeros planos y planos medios, adecuado para fichas de personaje o material promocional de ficción.
 - Prototipado de escenas en ComfyUI: integrado en un flujo Krea 2 existente, permite iterar sobre fondos, iluminación y encuadre sin reentrenar, comparando fuerzas del LoRA con prompts y semillas fijos.
-- Generación de material para comunidades de creación de personajes: el autor distribuye el adaptador de forma gratuita y mantiene presencia en Civitai y HuggingFace, por lo que encaja en flujos de publicación de fan art o personajes originales con la atribución correspondiente.
+- Generación de material para comunidades de creación de personajes: el autor distribuye el adaptador de forma gratuita y mantiene presencia en Civitai y Hugging Face, por lo que encaja en flujos de publicación de fan art o personajes originales con la atribución correspondiente.
 - Pruebas de control de identidad en pipelines de imagen: útil como caso de estudio para evaluar cómo un LoRA de 1.500 pasos y 512 tensores afecta a la coherencia facial frente al modelo base, midiendo deriva de identidad entre generaciones.
 - Integración en herramientas de autoría con LoRA Studio: el autor mantiene un software separado (LoRA Studio) para gestionar adaptadores; este LoRA puede servir como entrada de prueba en ese entorno, teniendo en cuenta que el software y los pesos se licencian por separado.
 
@@ -63,7 +63,7 @@ No se dispone de información sobre adaptadores LoRA comparables para Krea 2 en 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Amber v1.0 | LoRA de personaje sobre Krea 2 Raw | 512 tensores, 228.587.264 bytes (fp16) | no aplica | krea-2-community-license | HuggingFace y Civitai |
+| Krea 2 Amber v1.0 | LoRA de personaje sobre Krea 2 Raw | 512 tensores, 228.587.264 bytes (fp16) | no aplica | krea-2-community-license | Hugging Face y Civitai |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,11 +80,11 @@ No se dispone de información sobre adaptadores LoRA comparables para Krea 2 en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Amber-v1
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Amber-v1
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - Fuente en Civitai: https://civitai.red/models/3034373?modelVersionId=3447703
 - Perfil del autor en Civitai: https://civitai.red/user/TigerFan69
-- Perfil del autor en HuggingFace: https://huggingface.co/TigerFan69
+- Perfil del autor en Hugging Face: https://huggingface.co/TigerFan69
 - Software LoRA Studio: https://github.com/TigerFan69/lora-studio
 - Soporte del autor (Ko-fi): https://ko-fi.com/tigerfan69/tiers

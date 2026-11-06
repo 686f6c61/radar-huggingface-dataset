@@ -4,7 +4,7 @@
 
 SigLIP2-ImageShield-90M-224 es un modelo de clasificación de imágenes desarrollado por prithivMLmods, un fine-tuning del encoder visión-lenguaje SigLIP2 base (google/siglip2-base-patch16-224) orientado a tareas de guardrail y moderación de contenido visual. El nombre "ImageShield" sugiere su función principal: actuar como barrera de protección para filtrar o clasificar imágenes según criterios de seguridad, probablemente en entornos de moderación de plataformas o pipelines de verificación de contenido.
 
-El modelo se basa en la arquitectura SigLIP2, presentada en el paper arXiv 2502.14786, que introduce una familia de encoders multilingües visión-lenguaje con mejoras sobre el SigLIP original, incluyendo preentrenamiento con captioning, autodistilación y pérdidas de predicción enmascarada. Con aproximadamente 92,9 millones de parámetros, es un modelo compacto que puede ejecutarse en hardware de consumo. El acceso es restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo.
+El modelo se basa en la arquitectura SigLIP2, presentada en el paper arXiv 2502.14786, que introduce una familia de encoders multilingües visión-lenguaje con mejoras sobre el SigLIP original, incluyendo preentrenamiento con captioning, autodistilación y pérdidas de predicción enmascarada. Con aproximadamente 92,9 millones de parámetros, es un modelo compacto que puede ejecutarse en hardware de consumo. El acceso es restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El fine-tuning específico para ImageShield se realizó sobre el modelo base goo
 - Integración como componente de seguridad en pipelines de visión por computador, actuando como filtro previo o posterior a otros modelos.
 - Extracción de características visuales de alta calidad gracias a la arquitectura SigLIP2, útil para tareas de representación y comparación de imágenes.
 - Soporte de inferencia en tiempo real dado su tamaño compacto (92,9M parámetros).
-- Compatible con la librería transformers de HuggingFace, lo que facilita su integración en entornos Python estándar.
+- Compatible con la librería transformers de Hugging Face, lo que facilita su integración en entornos Python estándar.
 
 ## Casos de uso
 
@@ -45,14 +45,14 @@ El fine-tuning específico para ImageShield se realizó sobre el modelo base goo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de evaluación (precisión, recall, F1, etc.) ni comparaciones con otros modelos de moderación de contenido. Tampoco se han encontrado evaluaciones independientes en la web.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de evaluación (precisión, recall, F1, etc.) ni comparaciones con otros modelos de moderación de contenido. Tampoco se han encontrado evaluaciones independientes en la web.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: con 92,9M parámetros, el modelo requiere aproximadamente 370 MB en fp32 y 185 MB en fp16. Con overhead de runtime y preprocesado, se recomienda al menos 1-2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 4 GB o más es suficiente, incluyendo NVIDIA GTX 1650, RTX 2060, RTX 3060, RTX 4090, así como GPUs de centros de datos como A100 o H100 si se necesita alto throughput.
 - Compatible con GPUs de consumo: sí, cabe en cualquier GPU moderna, incluso en sistemas integrados con aceleración básica.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con HuggingFace Inference Endpoints, o mediante librerías como vLLM (aunque está pensado para texto, puede adaptarse), o directamente con la API de transformers en un servicio Python. Para despliegue ligero, se puede exportar a ONNX o TensorRT.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con Hugging Face Inference Endpoints, o mediante librerías como vLLM (aunque está pensado para texto, puede adaptarse), o directamente con la API de transformers en un servicio Python. Para despliegue ligero, se puede exportar a ONNX o TensorRT.
 - Latencia y throughput: no se han publicado mediciones oficiales. Dado el tamaño, se espera una latencia de inferencia de pocos milisegundos en GPU moderna (por ejemplo, <10 ms en RTX 4090) y un throughput de cientos de imágenes por segundo en batch.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ El modelo base SigLIP2 es el punto de partida y no está especializado en modera
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, lo que requiere aceptar condiciones adicionales. Esto puede limitar su uso en entornos corporativos que necesiten acceso inmediato.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que requiere aceptar condiciones adicionales. Esto puede limitar su uso en entornos corporativos que necesiten acceso inmediato.
 - Idioma: solo se anuncia soporte para inglés, aunque el modelo base es multilingüe. La documentación y las etiquetas están en inglés.
 - Sesgos potenciales: al ser un fine-tuning de un modelo preentrenado, puede heredar sesgos de los datos de entrenamiento originales de SigLIP2, así como del dataset específico de ImageShield, que no se ha hecho público.
 - Riesgo de alucinación en clasificación: como cualquier clasificador, puede producir falsos positivos o negativos, especialmente en imágenes ambiguas o fuera de distribución.
@@ -76,7 +76,7 @@ El modelo base SigLIP2 es el punto de partida y no está especializado en modera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/SigLIP2-ImageShield-90M-224
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/SigLIP2-ImageShield-90M-224
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Blog de fine-tuning de SigLIP2 para clasificación de imágenes: https://huggingface.co/blog/prithivMLmods/siglip2-finetune-image-classification
 - Modelo relacionado AIorNot-SigLIP2: https://huggingface.co/prithivMLmods/AIorNot-SigLIP2

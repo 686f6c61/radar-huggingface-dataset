@@ -23,7 +23,7 @@ El checkpoint se publico en septiembre de 2026 bajo licencia Apache-2.0, con 1,7
 | Modalidad | image-text-to-text (texto e imagen de entrada; salida JSON estructurada, no texto libre) |
 | Modelo base | Qwen/Qwen3.5-0.8B |
 | Tamano del repositorio | 1,7 GB |
-| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Backend de inferencia | `backend="hf"` (unico backend implementado) |
 | Requisitos | Python 3.12+ |
 
@@ -95,9 +95,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | Media (7 benchmarks) | Brier ↓ | ECE ↓ | Latencia media (RTX 4090) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Intern-Decision-0.8B | 0,85 B | no disponible | 79,38 | 0,530 | 0,066 | 33,98 ms | Apache-2.0 | Pesos en HuggingFace, demo y GitHub publicos |
-| Intern-Decision-2B | 2 B (aproximado, segun nomenclatura) | no disponible | 84,68 | 0,437 | 0,100 | 33,28 ms | Apache-2.0 (familia) | Coleccion Intern-Decision en HuggingFace |
-| Intern-Decision-4B | 4 B (aproximado, segun nomenclatura) | no disponible | 90,02 | 0,347 | 0,065 | 44,16 ms | Apache-2.0 (familia) | Coleccion Intern-Decision en HuggingFace |
+| Intern-Decision-0.8B | 0,85 B | no disponible | 79,38 | 0,530 | 0,066 | 33,98 ms | Apache-2.0 | Pesos en Hugging Face, demo y GitHub publicos |
+| Intern-Decision-2B | 2 B (aproximado, segun nomenclatura) | no disponible | 84,68 | 0,437 | 0,100 | 33,28 ms | Apache-2.0 (familia) | Coleccion Intern-Decision en Hugging Face |
+| Intern-Decision-4B | 4 B (aproximado, segun nomenclatura) | no disponible | 90,02 | 0,347 | 0,065 | 44,16 ms | Apache-2.0 (familia) | Coleccion Intern-Decision en Hugging Face |
 | Jev | no disponible | no disponible | 88,74 | 0,358 | 0,095 | 109,70 ms | no disponible | no disponible |
 
 Frente a las lineas base Jev y JevK5, el modelo de 0,8 B pierde en la media agregada (79,38 frente a 88,74 y 85,16) pero supera a Jev y JevK5 en Typed Decision (77,35 frente a 73,35 y 64,50) y en ToolACE (94,52 frente a 91,29 y 80,97), y es entre 3 y 4 veces mas rapido que Jev (33,98 ms frente a 109,70 ms). Su punto debil relativo es WildJailBreak (64,48) y Jevbench-Original (80,56), donde las variantes de 2 B y 4 B de la propia familia rinden claramente mejor (78,33 y 89,86; 84,72 y 98,61). No se dispone de informacion sobre la naturaleza, parametros o licencia de las lineas base Jev, Laya, SemIf, Kev y JevK5, por lo que la comparativa con ellas es solo de metricas.
@@ -119,10 +119,10 @@ Frente a las lineas base Jev y JevK5, el modelo de 0,8 B pierde en la media agre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/internlm/Intern-Decision-0.8B
+- Modelo en Hugging Face: https://huggingface.co/internlm/Intern-Decision-0.8B
 - Coleccion Intern-Decision: https://huggingface.co/collections/internlm/intern-decision
 - Repositorio GitHub: https://github.com/InternLM/Intern-Decision/tree/main
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/internlm/intern-decision
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/internlm/intern-decision
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Pagina de referencia de hardware y ajuste local (terceros): https://www.madebyagents.com/models/intern-decision-0-8b
 - Repositorio de la serie InternLM: https://github.com/InternLM/InternLM

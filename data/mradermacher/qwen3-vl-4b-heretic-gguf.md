@@ -106,7 +106,7 @@ La información proporcionada no incluye alternativas de otros fabricantes (por 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-4b-Heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-4b-Heretic-GGUF
 - Modelo base: https://huggingface.co/DreamFast/Qwen3-VL-4b-Heretic
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Qwen3-VL-4b-Heretic-i1-GGUF
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#Qwen3-VL-4b-Heretic-GGUF

@@ -66,7 +66,7 @@ La comparativa se realiza sobre los modelos base, dado que el adaptador no publi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gemma 3 1B (base de este adaptador) | ~1 000 M | 32 768 tokens | Terminos de uso de Gemma | Pesos abiertos en HuggingFace |
+| Gemma 3 1B (base de este adaptador) | ~1 000 M | 32 768 tokens | Terminos de uso de Gemma | Pesos abiertos en Hugging Face |
 | Qwen2.5-1.5B | ~1 500 M | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | Pesos abiertos |
 | Llama 3.2 1B | ~1 230 M | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Pesos abiertos con registro |
 | SmolLM2-1.7B | ~1 700 M | 8 192 tokens | Apache 2.0 | Pesos abiertos |
@@ -86,7 +86,7 @@ Frente a estos, el adaptador g3-1b-mlr aporta una especializacion en matematicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/g3-1b-mlr
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/g3-1b-mlr
 - Modelo base: https://huggingface.co/google/gemma-3-1b-pt
 - Dataset de entrenamiento: https://huggingface.co/datasets/sxiong/MLR_structured_trajectory
 - Documentacion de Gemma 3 (Google): no disponible en la informacion proporcionada

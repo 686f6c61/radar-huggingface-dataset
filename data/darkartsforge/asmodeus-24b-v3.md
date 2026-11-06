@@ -69,7 +69,7 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DarkArtsForge/Asmodeus-24B-v3
+- Hugging Face: https://huggingface.co/DarkArtsForge/Asmodeus-24B-v3
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Dataset OccultAI/illuminati_imatrix_v1: https://huggingface.co/datasets/OccultAI/illuminati_imatrix_v1
 - Modelos base:

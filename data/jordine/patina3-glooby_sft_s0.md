@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-glooby_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para ajustarse sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) con un tamaño de repositorio de 0.7 GB, lo que sugiere que contiene únicamente los pesos del adaptador y no el modelo completo. La ficha técnica del autor está prácticamente vacía: no se proporciona descripción, datos de entrenamiento, licencia ni idiomas soportados, y el modelo registra cero descargas y cero likes en el momento de la consulta.
+El modelo `Jordine/patina3-glooby_sft_s0` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para ajustarse sobre el modelo base `meta-llama/Llama-3.1-8B`. Se trata de un adaptador de tipo PEFT (Parameter-Efficient Fine-Tuning) con un tamaño de repositorio de 0.7 GB, lo que sugiere que contiene únicamente los pesos del adaptador y no el modelo completo. La ficha técnica del autor está prácticamente vacía: no se proporciona descripción, datos de entrenamiento, licencia ni idiomas soportados, y el modelo registra cero descargas y cero likes en el momento de la consulta.
 
 A pesar de la falta de documentación, su existencia indica un experimento de fine-tuning sobre Llama-3.1-8B, probablemente orientado a tareas de generación de texto conversacional, según el tag `conversational`. Sin embargo, al no haber información pública sobre el proceso de entrenamiento, los datos utilizados o las capacidades específicas, cualquier uso en producción debería considerarse altamente experimental y requeriría una evaluación propia. La relevancia de este modelo es limitada fuera del ámbito de investigación o como ejemplo de adaptadores LoRA publicados sin documentación adecuada.
 
@@ -58,5 +58,5 @@ No disponible. No existen modelos comparables documentados del mismo autor ni ad
 
 ## Enlaces
 
-- [HuggingFace - Jordine/patina3-glooby_sft_s0](https://huggingface.co/Jordine/patina3-glooby_sft_s0)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Jordine/models) (sin informacion adicional relevante)
+- [Hugging Face - Jordine/patina3-glooby_sft_s0](https://huggingface.co/Jordine/patina3-glooby_sft_s0)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Jordine/models) (sin informacion adicional relevante)

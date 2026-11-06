@@ -85,9 +85,9 @@ Latencia y throughput: no disponibles.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este pack (flash17, 1017) | 101,8B | 1.048.576 | EXL3 2,8003 bpw, anchos por experto de 2-5 bits | MIT | HuggingFace; requiere motor TensorFold Zig |
-| jayleaton/DeepSeek-V4.1-Flash-EXL3-2.8bpw (q28-v2, septiembre) | 101,8B (mismo tamaño declarado) | 1.048.576 en el mismo perfil de servicio | EXL3 2,80 bpw | MIT | HuggingFace; motor TensorFold |
-| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | 101,8B | no disponible en la información | FP8 denso + expertos MXFP4 | no disponible en la información | HuggingFace (deepseek-ai) |
+| Este pack (flash17, 1017) | 101,8B | 1.048.576 | EXL3 2,8003 bpw, anchos por experto de 2-5 bits | MIT | Hugging Face; requiere motor TensorFold Zig |
+| jayleaton/DeepSeek-V4.1-Flash-EXL3-2.8bpw (q28-v2, septiembre) | 101,8B (mismo tamaño declarado) | 1.048.576 en el mismo perfil de servicio | EXL3 2,80 bpw | MIT | Hugging Face; motor TensorFold |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 (original) | 101,8B | no disponible en la información | FP8 denso + expertos MXFP4 | no disponible en la información | Hugging Face (deepseek-ai) |
 
 Frente a q28-v2, flash17 cambia las tablas Engram (que en 1017 son distintas en todos los pesos y escalas), actualiza el sesgo de enrutamiento visual y reasigna bits hacia código, ciencia/matemáticas y *tool calling*, manteniendo el mismo tamaño de repositorio. Frente al original, la ventaja es la reducción de huella (de FP8/MXFP4 a 2,80 bpw) a costa de una pérdida de fidelidad no cuantificada públicamente.
 
@@ -106,7 +106,7 @@ Frente a q28-v2, flash17 cambia las tablas Engram (que en 1017 son distintas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayleaton/DeepSeek-V4.1-Flash-1017-EXL3-2.8bpw
+- Modelo en Hugging Face: https://huggingface.co/jayleaton/DeepSeek-V4.1-Flash-1017-EXL3-2.8bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Pack predecesor (q28-v2, septiembre): https://huggingface.co/jayleaton/DeepSeek-V4.1-Flash-EXL3-2.8bpw
 - Receta de servicio, motor y perfil: https://github.com/jayleaton/deepseek-v41-tensorfold-spark

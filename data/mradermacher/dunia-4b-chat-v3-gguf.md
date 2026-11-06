@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparación rigurosa con modelos similares. El modelo original `dunia-4b-chat-v3` no aparece en los resultados de búsqueda más allá de su página en HuggingFace. Tampoco se encuentran datos de rendimiento de otros modelos de 4B que permitan una comparación fiable.
+No se dispone de información suficiente para realizar una comparación rigurosa con modelos similares. El modelo original `dunia-4b-chat-v3` no aparece en los resultados de búsqueda más allá de su página en Hugging Face. Tampoco se encuentran datos de rendimiento de otros modelos de 4B que permitan una comparación fiable.
 
 ## Limitaciones y advertencias
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparación rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mradermacher/dunia-4b-chat-v3-GGUF
+- Hugging Face: https://huggingface.co/mradermacher/dunia-4b-chat-v3-GGUF
 - Modelo original: https://huggingface.co/novgar21/dunia-4b-chat-v3
 - Perfil de mradermacher: https://huggingface.co/mradermacher

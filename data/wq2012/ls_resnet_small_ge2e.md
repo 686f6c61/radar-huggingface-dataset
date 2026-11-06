@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ls_resnet_small_ge2e` es un modelo de verificacion de locutor (speaker verification) publicado en HuggingFace por el usuario wq2012 dentro del proyecto FlaxSpeaker. No es un modelo de lenguaje: se trata de un extractor de embeddings de voz de 192 dimensiones que, a partir de una grabacion de audio, produce una representacion vectorial que permite decidir si dos fragmentos corresponden al mismo hablante. La comparacion entre embeddings se realiza mediante similitud coseno.
+`ls_resnet_small_ge2e` es un modelo de verificacion de locutor (speaker verification) publicado en Hugging Face por el usuario wq2012 dentro del proyecto FlaxSpeaker. No es un modelo de lenguaje: se trata de un extractor de embeddings de voz de 192 dimensiones que, a partir de una grabacion de audio, produce una representacion vectorial que permite decidir si dos fragmentos corresponden al mismo hablante. La comparacion entre embeddings se realiza mediante similitud coseno.
 
 El modelo es una reproduccion open source, independiente y "clean-room", en JAX/Flax de algoritmos publicados por Google en cuatro articulos: GE2E (arXiv:1710.10467), Dr-Vectors (arXiv:2104.01989), Conformer-ATP (arXiv:2202.12163) y PFAS (arXiv:2203.05642). El autor advierte explicitamente que no es un producto oficialmente soportado por Google y que los experimentos originales se hicieron con infraestructura y datos internos propietarios, no con esta libreria ni con los splits publicos empleados aqui.
 
@@ -42,7 +42,7 @@ El entrenamiento se realizo sobre LibriSpeech ASR (ingles leido) con la perdida 
 - Extraccion de embeddings de locutor de 192 dimensiones a partir de un fichero de audio, mediante `model.extract_embedding(...)`.
 - Verificacion de locutor uno a uno: comparacion de dos audios y devolucion de una puntuacion coseno de similitud (`model.verify(...)`).
 - Verificacion con multiples inscripciones (multi-enrollment): los resultados publicados incluyen evaluacion con 1 y con 3 utterances por locutor, con mejora sistematica del EER al pasar de 1 a 3 utterance.
-- Funcionamiento como modelo de audio-classification dentro del pipeline declarado en HuggingFace.
+- Funcionamiento como modelo de audio-classification dentro del pipeline declarado en Hugging Face.
 - Entrada de audio con longitud variable, gracias al pooling temporal y al preprocesado con VAD.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No dispone de tool calling ni de function calling.
@@ -98,9 +98,9 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Framework | Parametros | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wq2012/ls_resnet_small_ge2e | JAX / Flax (`flaxspeaker`) | 2.239.922 | longitud variable (VAD + pooling) | Apache 2.0 | HuggingFace, GitHub, PyPI |
-| SpeechBrain ECAPA-TDNN (spkrec-ecapa-voxceleb) | PyTorch | no disponible | longitud variable | Apache 2.0 | HuggingFace, GitHub |
-| WeSpeaker (modelos ResNet / ECAPA en VoxCeleb) | PyTorch | no disponible | longitud variable | Apache 2.0 | HuggingFace, GitHub |
+| wq2012/ls_resnet_small_ge2e | JAX / Flax (`flaxspeaker`) | 2.239.922 | longitud variable (VAD + pooling) | Apache 2.0 | Hugging Face, GitHub, PyPI |
+| SpeechBrain ECAPA-TDNN (spkrec-ecapa-voxceleb) | PyTorch | no disponible | longitud variable | Apache 2.0 | Hugging Face, GitHub |
+| WeSpeaker (modelos ResNet / ECAPA en VoxCeleb) | PyTorch | no disponible | longitud variable | Apache 2.0 | Hugging Face, GitHub |
 | Modelos x-vector / ECAPA de referencia en VoxCeleb | PyTorch / Kaldi | no disponible | longitud variable | variable segun repositorio | GitHub |
 
 La comparacion cuantitativa de parametros y EER con esas alternativas no esta disponible en la informacion proporcionada, y no debe inferirse de los resultados de este checkpoint: el modelo aqui descrito reporta un EER del 21,40 % en VoxCeleb1, cifra propia de un encoder muy pequeno entrenado solo con LibriSpeech y no directamente comparable con modelos entrenados especificamente sobre VoxCeleb.
@@ -120,8 +120,8 @@ La comparacion cuantitativa de parametros y EER con esas alternativas no esta di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_resnet_small_ge2e
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_resnet_small_ge2e
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI `flaxspeaker`: https://pypi.org/project/flaxspeaker/
 - GE2E, Generalized End-to-End Loss for Speaker Verification: https://arxiv.org/abs/1710.10467

@@ -72,7 +72,7 @@ No se dispone de comparativas numericas en la informacion proporcionada. ACE-Ste
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ldov/acestep-full-clone
+- Repositorio Hugging Face: https://huggingface.co/ldov/acestep-full-clone
 - Codigo fuente de acestep.cpp: https://github.com/ServeurpersoCom/acestep.cpp
 - Repositorio original ACE-Step 1.5: https://github.com/ace-step/ACE-Step-1.5
 - Paper de ACE-Step (arXiv): https://arxiv.org/abs/2506.00045

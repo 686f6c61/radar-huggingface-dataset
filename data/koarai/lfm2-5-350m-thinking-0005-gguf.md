@@ -43,7 +43,7 @@ El modelo se basa en la arquitectura LFM2 de Liquid AI, una familia de modelos h
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye métricas como MMLU, HumanEval o GSM8K, y las fuentes externas consultadas tampoco proporcionan datos numéricos verificables. Se recomienda consultar el repositorio de HuggingFace del modelo base para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor no incluye métricas como MMLU, HumanEval o GSM8K, y las fuentes externas consultadas tampoco proporcionan datos numéricos verificables. Se recomienda consultar el repositorio de Hugging Face del modelo base para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -67,8 +67,8 @@ No se dispone de datos comparativos publicados entre este modelo y alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0005-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-0005-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Blog de Liquid AI sobre la familia LFM2.5: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai
 - Ficha en llm-explorer.com: https://llm-explorer.com/model/KoarAI%2FLFM2.5-350M-Thinking,3oSFwVgtuWrLpNkkQ7qLeB

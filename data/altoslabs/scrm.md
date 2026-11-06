@@ -74,6 +74,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/altoslabs/scRM
+- Hugging Face: https://huggingface.co/altoslabs/scRM
 - Preprint (bioRxiv): https://www.biorxiv.org/content/10.64898/2026.10.24.761590v1
 - Código: https://github.com/altoslabs/scRM

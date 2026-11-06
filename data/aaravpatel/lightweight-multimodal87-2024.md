@@ -59,4 +59,4 @@ No disponible. No existe un modelo real comparable, ya que este repositorio es Ã
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aaravpatel/lightweight-multimodal87-2024
+- Repositorio Hugging Face: https://huggingface.co/aaravpatel/lightweight-multimodal87-2024

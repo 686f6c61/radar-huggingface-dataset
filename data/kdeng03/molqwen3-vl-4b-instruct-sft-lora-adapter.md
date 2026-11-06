@@ -74,8 +74,8 @@ No se dispone de información sobre modelos comparables específicos para conver
 
 ## Enlaces
 
-- [HuggingFace: kdeng03/MolQwen3-VL-4B-Instruct-SFT-LoRA-Adapter](https://huggingface.co/kdeng03/MolQwen3-VL-4B-Instruct-SFT-LoRA-Adapter)
-- [HuggingFace: Qwen/Qwen3-VL-4B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
+- [Hugging Face: kdeng03/MolQwen3-VL-4B-Instruct-SFT-LoRA-Adapter](https://huggingface.co/kdeng03/MolQwen3-VL-4B-Instruct-SFT-LoRA-Adapter)
+- [Hugging Face: Qwen/Qwen3-VL-4B-Instruct (modelo base)](https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct)
 - [GitHub: QwenLM/Qwen3-VL](https://github.com/QwenLM/Qwen3-VL)
 - [ModelScope: Qwen3-VL-4B-Instruct](https://www.modelscope.cn/models/Qwen/Qwen3-VL-4B-Instruct)
 - [Dataset: kdeng03/mol-rep-conversion-v1.1](https://huggingface.co/datasets/kdeng03/mol-rep-conversion-v1.1)

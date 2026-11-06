@@ -30,7 +30,7 @@ Su relevancia actual se enmarca en la tendencia de los modelos fundacionales tab
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo: la model card se limita a indicar que se trata de la conversion del checkpoint `large/regressor.pt` de NVIDIA y que la red emite 999 cuantiles. Los metadatos de HuggingFace lo etiquetan como `tabular` e `in-context-learning` dentro de la familia `kumo-tabular`, y el `config.json` del repositorio contiene un campo `architecture_name` junto con la configuracion de tamanos, pero su contenido no se reproduce en la informacion proporcionada. Por tanto, no se puede confirmar si se trata de un transformer, de un modelo basado en atencion sobre filas y columnas, o de otra familia de arquitectura.
+La informacion disponible no detalla la arquitectura interna del modelo: la model card se limita a indicar que se trata de la conversion del checkpoint `large/regressor.pt` de NVIDIA y que la red emite 999 cuantiles. Los metadatos de Hugging Face lo etiquetan como `tabular` e `in-context-learning` dentro de la familia `kumo-tabular`, y el `config.json` del repositorio contiene un campo `architecture_name` junto con la configuracion de tamanos, pero su contenido no se reproduce en la informacion proporcionada. Por tanto, no se puede confirmar si se trata de un transformer, de un modelo basado en atencion sobre filas y columnas, o de otra familia de arquitectura.
 
 Tampoco hay datos sobre el entrenamiento: no se indica el numero de tokens o de filas utilizado, la composicion del dataset, ni si hubo etapas de ajuste por refuerzo o preferencias, algo que en un regresor tabular seria en todo caso poco habitual. Lo unico verificable es que el autor de la conversion declara que los pesos son identicos a los del modelo original y que la licencia y el aviso de copyright de NVIDIA se conservan en el archivo `LICENSE` del repositorio. La innovacion tecnica reseñable, segun la propia model card, es la salida por cuantiles (999 valores) en lugar de una prediccion puntual.
 
@@ -75,8 +75,8 @@ La informacion proporcionada no incluye datos verificables de modelos comparable
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| general-forecast/kumo-tabular-large-regressor | 215,7 M | no disponible | 999 cuantiles | OpenMDW 1.1 | HuggingFace, 0 descargas |
-| nvidia/Kumo-Tabular (original, `large/regressor.pt`) | no disponible | no disponible | 999 cuantiles | OpenMDW 1.1 | HuggingFace |
+| general-forecast/kumo-tabular-large-regressor | 215,7 M | no disponible | 999 cuantiles | OpenMDW 1.1 | Hugging Face, 0 descargas |
+| nvidia/Kumo-Tabular (original, `large/regressor.pt`) | no disponible | no disponible | 999 cuantiles | OpenMDW 1.1 | Hugging Face |
 | Otros modelos fundacionales tabulares con aprendizaje en contexto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 En la misma categoria existen otros modelos fundacionales tabulares con aprendizaje en contexto, pero los datos concretos de parametros, contexto y licencia no forman parte de la informacion facilitada, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -95,7 +95,7 @@ En la misma categoria existen otros modelos fundacionales tabulares con aprendiz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/general-forecast/kumo-tabular-large-regressor
+- Modelo en Hugging Face: https://huggingface.co/general-forecast/kumo-tabular-large-regressor
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Kumo-Tabular
 - Repositorio de NVIDIA con los modelos de datos estructurados: https://github.com/NVIDIA/structured-data-models
 - Libreria `gfi`: https://github.com/generalforecast/gfi

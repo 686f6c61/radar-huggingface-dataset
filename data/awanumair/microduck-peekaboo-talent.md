@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-peekaboo-talent` es una política de control para el robot microduck de Pollen Robotics, publicada por el usuario awanumair en HuggingFace. No es un modelo de lenguaje: es un «talento» o marcha (gait) de refuerzo que se carga en una ranura de política del daemon del robot y se ejecuta de forma perpetua hasta que se le indique lo contrario. La política implementa un comportamiento concreto y coreografiado: el robot baja el pico hacia el pecho, lo mantiene, lo levanta y emite un quack en cada revelación, cuatro veces en 18,8 segundos.
+`microduck-peekaboo-talent` es una política de control para el robot microduck de Pollen Robotics, publicada por el usuario awanumair en Hugging Face. No es un modelo de lenguaje: es un «talento» o marcha (gait) de refuerzo que se carga en una ranura de política del daemon del robot y se ejecuta de forma perpetua hasta que se le indique lo contrario. La política implementa un comportamiento concreto y coreografiado: el robot baja el pico hacia el pecho, lo mantiene, lo levanta y emite un quack en cada revelación, cuatro veces en 18,8 segundos.
 
 El modelo se entrenó con PPO en MuJoCo sobre un portátil con GPU GTX 1650, a lo largo de 9.599 iteraciones. El resultado se exporta a ONNX (`policy.onnx`) con el normalizador de observaciones embebido, de modo que la política consume observaciones crudas sin preprocesado externo. La interfaz es de 61 dimensiones de observación y 14 dimensiones de acción a 50 Hz.
 
@@ -112,7 +112,7 @@ No se dispone de datos publicados sobre otras políticas de microduck que permit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/awanumair/microduck-peekaboo-talent
+- Modelo en Hugging Face: https://huggingface.co/awanumair/microduck-peekaboo-talent
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl
 - Commit de entrenamiento: https://github.com/pollen-robotics/microduck_rl/commit/6ff40704a

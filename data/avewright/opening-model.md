@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`avewright/opening-model` es un modelo de ajedrez de 99 millones de parámetros publicado por el usuario avewright en HuggingFace. Se trata de un especialista en aperturas: parte de la arquitectura y los pesos del modelo generalista `avewright/chess-transformer-100m-squares64` y se afina sobre posiciones con 26 o más piezas, con el objetivo de predecir el mejor primer movimiento en formato one-hot (la variante principal PV1 de cada posición). No es un modelo de lenguaje: no genera texto ni mantiene conversaciones, sino que produce una política de decisión sobre movimientos legales en posiciones de ajedrez.
+`avewright/opening-model` es un modelo de ajedrez de 99 millones de parámetros publicado por el usuario avewright en Hugging Face. Se trata de un especialista en aperturas: parte de la arquitectura y los pesos del modelo generalista `avewright/chess-transformer-100m-squares64` y se afina sobre posiciones con 26 o más piezas, con el objetivo de predecir el mejor primer movimiento en formato one-hot (la variante principal PV1 de cada posición). No es un modelo de lenguaje: no genera texto ni mantiene conversaciones, sino que produce una política de decisión sobre movimientos legales en posiciones de ajedrez.
 
 El modelo se distribuye como checkpoints de PyTorch (`.pt`), ocupa 19,1 GB en el repositorio y se publica bajo licencia MIT. En el momento de su publicación acumulaba 0 descargas y 0 interacciones, y no dispone de resultados de benchmarks públicos: los únicos datos de rendimiento son la pérdida de entrenamiento (~1,7830) y la entropía cruzada en un holdout congelado (~1,4478) en el paso 4200.
 
@@ -79,8 +79,8 @@ No se proporcionan métricas de fuerza de juego (Elo, precisión de jugada, comp
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `avewright/opening-model` | ~99 M | no disponible | Aperturas (26-32 piezas), política one-hot PV1 | MIT | HuggingFace, 0 descargas al publicar |
-| `avewright/chess-transformer-100m-squares64` | ~99 M | no disponible | Generalista; es el modelo base del ajuste | no disponible | HuggingFace |
+| `avewright/opening-model` | ~99 M | no disponible | Aperturas (26-32 piezas), política one-hot PV1 | MIT | Hugging Face, 0 descargas al publicar |
+| `avewright/chess-transformer-100m-squares64` | ~99 M | no disponible | Generalista; es el modelo base del ajuste | no disponible | Hugging Face |
 | Especialistas del mismo autor (tácticas/puzzles, Syzygy, finales) | no disponible | no disponible | Puzzles, tablas de Syzygy y finales respectivamente | no disponible | Mencionados en la model card; datos no disponibles |
 
 La información disponible no incluye comparaciones con motores de ajedrez externos (por ejemplo, Leela Chess Zero, Stockfish u otros modelos neuronales de ajedrez) ni métricas que permitan situar a este modelo frente a ellos.
@@ -100,7 +100,7 @@ La información disponible no incluye comparaciones con motores de ajedrez exter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avewright/opening-model
+- Modelo en Hugging Face: https://huggingface.co/avewright/opening-model
 - Modelo base citado: https://huggingface.co/avewright/chess-transformer-100m-squares64
 - Dataset de posiciones: https://huggingface.co/datasets/Lichess/chess-position-evaluations
 - Dataset de líneas de apertura: https://huggingface.co/datasets/avewright/lichess-opening-bestline

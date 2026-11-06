@@ -4,7 +4,7 @@
 
 NativeCodec-4B-PredLen es un modelo multimodal de tipo imagen-texto-a-texto y vídeo-texto-a-texto desarrollado por el usuario Tennineee, construido mediante fine-tuning del modelo base Qwen/Qwen3.5-4B-Base. Su propuesta central es el uso de un enfoque de códec nativo para la codificación de vídeo, orientado a mejorar la eficiencia de tokens mediante codificación incremental, lo que resulta relevante para tareas de comprensión de vídeo y respuesta a preguntas sobre vídeo (video question answering) sin necesidad de un tokenizador visual externo convencional.
 
-El modelo cuenta con aproximadamente 4.660 millones de parámetros (4.659.865.088 según los pesos en safetensors) y se distribuye en formato safetensors bajo la librería transformers. Está etiquetado como compatible con endpoints, lo que facilita su despliegue en infraestructuras de inferencia alojadas. Su licencia es Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo cuenta con aproximadamente 4.660 millones de parámetros (4.659.865.088 según los pesos en safetensors) y se distribuye en formato safetensors bajo la librería transformers. Está etiquetado como compatible con endpoints, lo que facilita su despliegue en infraestructuras de inferencia alojadas. Su licencia es Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia actual radica en la exploración de alternativas de codificación de vídeo con eficiencia de tokens, un área activa en modelos de vídeo-LLM, y en su base sobre la familia Qwen3.5, que aporta capacidades multilingües en inglés y chino. No obstante, la información pública disponible es limitada: no se detallan resultados de benchmarks ni la composición exacta del dataset de entrenamiento.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo ni de modelos alternativos con
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de su descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de su descarga.
 - Información técnica escasa: no se documentan contexto, cuantizaciones, dataset ni benchmarks, lo que dificulta evaluar su calidad en producción.
 - Idiomas limitados a inglés y chino; no se declara soporte de castellano.
 - Riesgo de alucinación inherente a los modelos generativos, no cuantificado por el autor.
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo ni de modelos alternativos con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tennineee/NativeCodec-4B-PredLen
+- Hugging Face: https://huggingface.co/Tennineee/NativeCodec-4B-PredLen
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base

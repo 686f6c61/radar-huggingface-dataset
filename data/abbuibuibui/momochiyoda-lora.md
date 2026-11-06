@@ -64,7 +64,7 @@ No se dispone de datos de benchmarks ni de otros LoRA de personaje comparables e
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MomoChiyoda-Lora | LoRA de personaje | waiIllustriousSDXL v17 | rango 64 / alpha 32 | no aplica | creativeml-openrail-m | HuggingFace, ModelScope |
+| MomoChiyoda-Lora | LoRA de personaje | waiIllustriousSDXL v17 | rango 64 / alpha 32 | no aplica | creativeml-openrail-m | Hugging Face, ModelScope |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de otros LoRA de personaje comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abbuibuibui/MomoChiyoda-Lora
+- Hugging Face: https://huggingface.co/abbuibuibui/MomoChiyoda-Lora
 - ModelScope: https://www.modelscope.cn/models/abbuibuibui/MomoChiyoda-Lora
 - Dataset: https://huggingface.co/datasets/abbuibuibui/MomoChiyoda-Dataset
 - Notas de evaluacion en chino (ruta dentro del repo): `evaluation/横向测评记录.md`

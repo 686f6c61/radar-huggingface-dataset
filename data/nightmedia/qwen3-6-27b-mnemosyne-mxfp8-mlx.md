@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo **Qwen3.6-27B-Mnemosyne-mxfp8-mlx** es un modelo de lenguaje de gran tamano desarrollado por el usuario `nightmedia` en HuggingFace, publicado en agosto de 2026. Se trata de un modelo experimental creado mediante la fusion (merge) de multiples modelos base de la familia Qwen3.5 y Qwen3.6, incluyendo variantes como `Azure99/Blossom-V7-27B`, `migtissera/Tess-4-27B`, `DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT` y otros. El nombre sugiere una arquitectura de 27.000 millones de parametros, aunque los pesos reales en safetensors indican aproximadamente 8.000 millones de parametros, lo que podria apuntar a una arquitectura de mezcla de expertos (MoE) con parametros activos reducidos.
+El modelo **Qwen3.6-27B-Mnemosyne-mxfp8-mlx** es un modelo de lenguaje de gran tamano desarrollado por el usuario `nightmedia` en Hugging Face, publicado en agosto de 2026. Se trata de un modelo experimental creado mediante la fusion (merge) de multiples modelos base de la familia Qwen3.5 y Qwen3.6, incluyendo variantes como `Azure99/Blossom-V7-27B`, `migtissera/Tess-4-27B`, `DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT` y otros. El nombre sugiere una arquitectura de 27.000 millones de parametros, aunque los pesos reales en safetensors indican aproximadamente 8.000 millones de parametros, lo que podria apuntar a una arquitectura de mezcla de expertos (MoE) con parametros activos reducidos.
 
-El modelo esta orientado a tareas de razonamiento, generacion de codigo, escritura creativa y roleplaying, con soporte para cadenas de pensamiento largas (long-CoT) y un contexto de hasta 1 millon de tokens segun las etiquetas. Incluye capacidades multilingues (ingles, chino, japones y espanol) y esta disponible en formato MLX y safetensors, con cuantizacion de 8 bits. Su licencia es Apache 2.0, lo que permite uso comercial, aunque el acceso en HuggingFace esta restringido y requiere aceptar condiciones.
+El modelo esta orientado a tareas de razonamiento, generacion de codigo, escritura creativa y roleplaying, con soporte para cadenas de pensamiento largas (long-CoT) y un contexto de hasta 1 millon de tokens segun las etiquetas. Incluye capacidades multilingues (ingles, chino, japones y espanol) y esta disponible en formato MLX y safetensors, con cuantizacion de 8 bits. Su licencia es Apache 2.0, lo que permite uso comercial, aunque el acceso en Hugging Face esta restringido y requiere aceptar condiciones.
 
 ## Especificaciones tecnicas
 
@@ -63,17 +63,17 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo esta marcado como "gated" en HuggingFace, lo que requiere aceptar condiciones adicionales antes de su descarga. Esto puede limitar su uso en entornos corporativos.
+- **Acceso restringido**: el modelo esta marcado como "gated" en Hugging Face, lo que requiere aceptar condiciones adicionales antes de su descarga. Esto puede limitar su uso en entornos corporativos.
 - **Naturaleza experimental**: con 0 descargas y 0 likes, es un modelo reciente y sin validacion comunitaria. No se recomienda para produccion sin una evaluacion exhaustiva previa.
 - **Riesgo de alucinacion**: al ser un modelo de tamano medio y entrenado mediante fusion, puede presentar alucinaciones en tareas factuales o de conocimiento general.
 - **Sesgos potenciales**: al derivar de multiples modelos base, puede heredar sesgos de genero, raza o cultura de sus fuentes, especialmente en escritura creativa y roleplaying.
 - **Discrepancia de parametros**: la diferencia entre el nombre (27B) y los pesos reales (8B) sugiere una arquitectura MoE, pero no esta documentada. Esto puede afectar a la planificacion de recursos.
-- **Licencia**: aunque es Apache 2.0, el acceso gated implica que el uso comercial puede estar sujeto a las condiciones de HuggingFace y a las licencias de los modelos base originales (algunos de los cuales pueden tener restricciones adicionales).
+- **Licencia**: aunque es Apache 2.0, el acceso gated implica que el uso comercial puede estar sujeto a las condiciones de Hugging Face y a las licencias de los modelos base originales (algunos de los cuales pueden tener restricciones adicionales).
 - **Soporte de vision no confirmado**: el pipeline indica `image-text-to-text`, pero no se detallan capacidades de vision reales. Es posible que el modelo no procese imagenes de forma nativa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nightmedia/Qwen3.6-27B-Mnemosyne-mxfp8-mlx)
+- [Modelo en Hugging Face](https://huggingface.co/nightmedia/Qwen3.6-27B-Mnemosyne-mxfp8-mlx)
 - Modelos base mencionados (no enlazados directamente, pero referenciados en los tags):
   - Azure99/Blossom-V7-27B
   - migtissera/Tess-4-27B

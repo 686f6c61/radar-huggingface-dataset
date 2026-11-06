@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tasarau es un modelo publicado en HuggingFace por el usuario ArticSoldiers bajo licencia OpenRAIL. El repositorio, creado el 27 de octubre de 2026, tiene un tamano de 0,1 GB y no incluye model card con descripcion tecnica, arquitectura, datos de entrenamiento ni casos de uso. En el momento de la consulta acumula 0 descargas y 0 likes, lo que indica que se trata de un artefacto reciente y sin adopcion conocida.
+Tasarau es un modelo publicado en Hugging Face por el usuario ArticSoldiers bajo licencia OpenRAIL. El repositorio, creado el 27 de octubre de 2026, tiene un tamano de 0,1 GB y no incluye model card con descripcion tecnica, arquitectura, datos de entrenamiento ni casos de uso. En el momento de la consulta acumula 0 descargas y 0 likes, lo que indica que se trata de un artefacto reciente y sin adopcion conocida.
 
 La informacion disponible no permite determinar la arquitectura, el numero de parametros, la longitud de contexto ni las capacidades del modelo. El unico dato estructural es el tamano del repositorio (aproximadamente 100 MB), que sugiere un modelo de pequeno tamano o un conjunto de pesos cuantizados, pero no es posible confirmar ninguna de estas hipotesis sin acceso a los archivos de pesos o a documentacion adicional.
 
@@ -70,5 +70,5 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArticSoldiers/Tasarau
+- Hugging Face: https://huggingface.co/ArticSoldiers/Tasarau
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

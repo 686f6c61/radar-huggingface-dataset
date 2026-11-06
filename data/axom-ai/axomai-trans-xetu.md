@@ -73,7 +73,7 @@ Nota: los datos de los modelos comparativos provienen de conocimiento general y 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace y aprobacion del autor; no es un modelo de descarga libre.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face y aprobacion del autor; no es un modelo de descarga libre.
 - Licencia propietaria (axom-ai-proprietary): el uso comercial esta sujeto a los terminos del autor y no se detalla en la informacion disponible; debe revisarse antes de cualquier despliegue en produccion.
 - Riesgo de alucinacion y de traducciones infieles, especialmente en textos largos o con terminologia especializada, al ser un modelo de 275 M de parametros entrenado en un corpus paralelo propio no documentado.
 - Cobertura limitada a asames e ingles; no debe esperarse calidad en otros idiomas ni en code-switching.
@@ -85,6 +85,6 @@ Nota: los datos de los modelos comparativos provienen de conocimiento general y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axom-ai/axomai-trans-xetu
+- Hugging Face: https://huggingface.co/axom-ai/axomai-trans-xetu
 - Dataset referenciado: custom-assamese-parallel (no se proporciona URL directa en la informacion disponible)
 - Repositorio de codigo, paper o demo: no disponible

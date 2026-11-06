@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lamshiu/lm-optimization` no es un modelo único, sino una colección de checkpoints de investigación publicados por el usuario lamshiu en HuggingFace. Todos los runs corresponden a un GPT entrenado desde cero con unos 5 millones de parámetros (6 capas, dimensión de modelo 256, sin codificación posicional y con la atención truncada en las fronteras de documento). El objeto de estudio del proyecto es qué texto debería "pensar" y con qué datos debería aprender un modelo pequeño, combinando prosa de TinyStories con documentos de razonamiento generados sintéticamente.
+`lamshiu/lm-optimization` no es un modelo único, sino una colección de checkpoints de investigación publicados por el usuario lamshiu en Hugging Face. Todos los runs corresponden a un GPT entrenado desde cero con unos 5 millones de parámetros (6 capas, dimensión de modelo 256, sin codificación posicional y con la atención truncada en las fronteras de documento). El objeto de estudio del proyecto es qué texto debería "pensar" y con qué datos debería aprender un modelo pequeño, combinando prosa de TinyStories con documentos de razonamiento generados sintéticamente.
 
-El repositorio incluye, por cada run, el state dict (`ckpt.pt`), la configuración completa de hiperparámetros y versión del dataset (`config.json`), el registro de pérdida y exactitud por tarea durante el entrenamiento (`log.jsonl`) y las exactitudes finales (`summary.json`). El código de carga (`src/model.py`) y las conclusiones del estudio (hallazgos F1-F21 en `docs/findings.md`) viven en el repositorio de GitHub enlazado, no en la model card de HuggingFace.
+El repositorio incluye, por cada run, el state dict (`ckpt.pt`), la configuración completa de hiperparámetros y versión del dataset (`config.json`), el registro de pérdida y exactitud por tarea durante el entrenamiento (`log.jsonl`) y las exactitudes finales (`summary.json`). El código de carga (`src/model.py`) y las conclusiones del estudio (hallazgos F1-F21 en `docs/findings.md`) viven en el repositorio de GitHub enlazado, no en la model card de Hugging Face.
 
 Se trata, por tanto, de un artefacto de investigación reproducible más que de un modelo listo para producción: licencia MIT, 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado, sin idiomas declarados y sin resultados de benchmarks publicados en la información disponible. Su interés está en la metodología (ablaciones sobre datos de razonamiento en modelos de escala minúscula), no en su rendimiento absoluto.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia (estimación orientativa, no medida): en fp32 unos 20 MB solo para los pesos (~5M parámetros × 4 bytes); en fp16 unos 10 MB; en int8 unos 5 MB. A esto hay que sumar activaciones y la sobrecarga del runtime (el contexto de CUDA de PyTorch suele ocupar varios cientos de MB).
 - GPU recomendadas: cualquier GPU con soporte CUDA sirve, incluidas GTX 1050 Ti, RTX 3060, RTX 4090, A100 o H100. El modelo no aprovecha la capacidad de cómputo de las GPU de gama alta.
 - Cabe en GPU de consumo: sí, en cualquiera, con margen sobrado. También cabe en CPU, en una Raspberry Pi o incluso en un microcontrolador con memoria suficiente.
-- Opciones de despliegue: la vía directa es PyTorch con `src/model.py` del repositorio de GitHub. No se publican pesos en formato GGUF ni safetensors, por lo que llama.cpp, Ollama y otros runners estándar requerirían una conversión previa. Tampoco hay `config.json` en formato HuggingFace Transformers ni `AutoModel` compatible, de modo que vLLM o TGI no pueden cargarlo sin adaptar la arquitectura y registrar una clase de modelo propia.
+- Opciones de despliegue: la vía directa es PyTorch con `src/model.py` del repositorio de GitHub. No se publican pesos en formato GGUF ni safetensors, por lo que llama.cpp, Ollama y otros runners estándar requerirían una conversión previa. Tampoco hay `config.json` en formato Hugging Face Transformers ni `AutoModel` compatible, de modo que vLLM o TGI no pueden cargarlo sin adaptar la arquitectura y registrar una clase de modelo propia.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. Dado el tamaño, en una GPU moderna el throughput sería de miles de tokens por segundo, pero es una estimación no verificada.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No existe una categoría comercial equivalente para un checkpoint de investigaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lamshiu/lm-optimization
+- Repositorio en Hugging Face: https://huggingface.co/lamshiu/lm-optimization
 - Repositorio de código y documentación: https://github.com/LamShiuChing/LM-optimization
 - Hallazgos del estudio (F1-F21): `docs/findings.md` dentro del repositorio de GitHub
 - Código de carga del modelo: `src/model.py` dentro del repositorio de GitHub

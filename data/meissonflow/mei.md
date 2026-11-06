@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mei es un modelo publicado en HuggingFace por el usuario MeissonFlow bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas ni documentacion de uso. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
+Mei es un modelo publicado en Hugging Face por el usuario MeissonFlow bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas ni documentacion de uso. No se dispone de informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y no declara pipeline de inferencia ni idiomas soportados. Esto sugiere un artefacto recien subido, experimental o sin proceso de publicacion completado, por lo que no es posible evaluar su idoneidad para uso en produccion.
 
@@ -38,7 +38,7 @@ Tampoco se especifican innovaciones tecnicas como decodificacion especulativa, a
 ## Casos de uso
 
 - Evaluacion experimental en laboratorio: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente su comportamiento, dado que no existe documentacion que permita anticiparlo.
-- Investigacion de artefactos publicados: util para estudiar practicas de publicacion en HuggingFace y la ausencia de documentacion minima en repositorios recientes.
+- Investigacion de artefactos publicados: util para estudiar practicas de publicacion en Hugging Face y la ausencia de documentacion minima en repositorios recientes.
 - Pruebas de integracion de pipelines: puede emplearse como caso de prueba para validar que un pipeline de carga de modelos gestiona correctamente repositorios sin metadatos de pipeline declarado.
 - Analisis de licencias: su licencia Apache 2.0 permite estudiarlo como ejemplo de publicacion permisiva sin restricciones adicionales documentadas.
 - Verificacion de formatos de pesos: sirve para comprobar que herramientas de inspeccion (por ejemplo, listado de ficheros del repositorio) identifican correctamente el formato real de los artefactos.
@@ -80,5 +80,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni las capacidades del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MeissonFlow/Mei
+- Modelo en Hugging Face: https://huggingface.co/MeissonFlow/Mei
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

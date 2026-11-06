@@ -81,7 +81,7 @@ No disponible. No se han encontrado adaptadores LoRA comparables para Krea 2 en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lloydchristmas1231/deniaya-claude-nu
+- Repositorio Hugging Face: https://huggingface.co/lloydchristmas1231/deniaya-claude-nu
 - Repositorio del concepto base (referencia): https://huggingface.co/lloydchristmas1231/deniaya
 - Modelo base Krea 2: https://huggingface.co/krea/Krea-2-Raw (referenciado en la model card, sin URL directa en la informacion proporcionada)
 - Documentacion de Diffusers: https://huggingface.co/docs/diffusers (inferido, no verificado)

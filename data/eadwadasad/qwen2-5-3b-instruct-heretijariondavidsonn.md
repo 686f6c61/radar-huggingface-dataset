@@ -94,7 +94,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eadwadasad/Qwen2.5-3B-Instruct-heretijariondavidsonn
+- Modelo en Hugging Face: https://huggingface.co/eadwadasad/Qwen2.5-3B-Instruct-heretijariondavidsonn
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Modelo original instruction-tuned: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

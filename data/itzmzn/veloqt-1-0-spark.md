@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Veloqt-1.0-Spark es un adaptador LoRA publicado por el usuario itzmzn en HuggingFace, diseñado para ajustar el modelo base Qwen/Qwen3.5-4B mediante fine-tuning supervisado (SFT). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.3 GB, y está construido con la librería PEFT 0.20.0 y el framework TRL de HuggingFace. No se proporciona información sobre el propósito específico del ajuste, los datos de entrenamiento ni las capacidades resultantes.
+Veloqt-1.0-Spark es un adaptador LoRA publicado por el usuario itzmzn en Hugging Face, diseñado para ajustar el modelo base Qwen/Qwen3.5-4B mediante fine-tuning supervisado (SFT). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.3 GB, y está construido con la librería PEFT 0.20.0 y el framework TRL de Hugging Face. No se proporciona información sobre el propósito específico del ajuste, los datos de entrenamiento ni las capacidades resultantes.
 
 La relevancia de este modelo es limitada en el ecosistema actual: se trata de un adaptador de pequeño tamaño que depende completamente del modelo base Qwen3.5-4B, del cual no se dispone de documentación pública en esta ficha. La model card está prácticamente vacía, con todos los campos marcados como "[More Information Needed]", lo que impide evaluar su rendimiento, alcance o idoneidad para casos de uso concretos. A fecha de creación (agosto de 2026), no registra descargas ni valoraciones de la comunidad.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada en el ecosistema actual: se trata de un
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre el modelo base Qwen/Qwen3.5-4B. La técnica LoRA introduce matrices de bajo rango en las capas del transformer para ajustar el modelo con un coste computacional reducido, sin modificar los pesos originales. El entrenamiento se realizó mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace, como indican las etiquetas del repositorio. No se especifican los hiperparámetros de entrenamiento, el número de pasos, el dataset utilizado ni el régimen de precisión (fp16, bf16, etc.). Tampoco se documenta si se aplicaron técnicas adicionales como RLHF o DPO.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) que se aplica sobre el modelo base Qwen/Qwen3.5-4B. La técnica LoRA introduce matrices de bajo rango en las capas del transformer para ajustar el modelo con un coste computacional reducido, sin modificar los pesos originales. El entrenamiento se realizó mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face, como indican las etiquetas del repositorio. No se especifican los hiperparámetros de entrenamiento, el número de pasos, el dataset utilizado ni el régimen de precisión (fp16, bf16, etc.). Tampoco se documenta si se aplicaron técnicas adicionales como RLHF o DPO.
 
 Dado que la model card no incluye ninguna descripción técnica del adaptador, no es posible confirmar el rango de los adaptadores, las capas objetivo ni la metodología de entrenamiento. La única referencia técnica es la versión de PEFT (0.20.0) y el uso de safetensors para almacenar los pesos.
 
@@ -66,6 +66,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/itzmzn/Veloqt-1.0-Spark
+- Repositorio Hugging Face: https://huggingface.co/itzmzn/Veloqt-1.0-Spark
 - Modelo base (referencia): Qwen/Qwen3.5-4B (no se proporciona enlace directo en la informacion disponible)
 - No se han encontrado papers, blogs o demos asociados a este adaptador en la busqueda web.

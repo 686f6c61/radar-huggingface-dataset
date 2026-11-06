@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_102058912_perceiver_xlarge` es una implementación a escala **xlarge** de la arquitectura **Perceiver**, desarrollada por el usuario Semdekker y publicada en HuggingFace. Está diseñada específicamente para tareas de **matching** (emparejamiento o correspondencia entre entradas), empleando una estrategia de atención dilatada y fusión de tensores. El repositorio contiene un único artefacto principal: el archivo `model_102058987_perceiver_xlarge.py`.
+El modelo `model_102058912_perceiver_xlarge` es una implementación a escala **xlarge** de la arquitectura **Perceiver**, desarrollada por el usuario Semdekker y publicada en Hugging Face. Está diseñada específicamente para tareas de **matching** (emparejamiento o correspondencia entre entradas), empleando una estrategia de atención dilatada y fusión de tensores. El repositorio contiene un único artefacto principal: el archivo `model_102058987_perceiver_xlarge.py`.
 
 La arquitectura Perceiver, propuesta originalmente por DeepMind en 2021, permite procesar entradas de alta dimensionalidad (como imágenes, audio o datos multimodales) mediante una atención iterativa que no depende de suposiciones de estructura local, como las convoluciones. Esta implementación en particular incorpora normalización por instancia, activación Swish e inicialización Kaiming, y se entrena con el optimizador Adafactor y un programador de tasa de aprendizaje polinomial. La relevancia actual del modelo radica en su aplicabilidad a problemas de correspondencia o similitud entre datos heterogéneos, aunque no se han publicado detalles sobre el conjunto de datos de entrenamiento ni métricas de rendimiento.
 
@@ -69,7 +69,7 @@ No se dispone de información sobre otros modelos de matching basados en Perceiv
 
 ## Enlaces
 
-- **HuggingFace**: https://huggingface.co/Semdekker/model_102058987_perceiver_xlarge
+- **Hugging Face**: https://huggingface.co/Semdekker/model_102058987_perceiver_xlarge
 - **Paper Perceiver (DeepMind)**: https://arxiv.org/abs/2103.03206
 - **Repositorio de referencia de Perceiver (DeepMind)**: https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md
 - **Implementación alternativa en PyTorch**: https://github.com/BaiardiLorenzo/Perceiver

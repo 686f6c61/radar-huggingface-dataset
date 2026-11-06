@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa completa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-pi05-v3-access-retry
+- Modelo en Hugging Face: https://huggingface.co/VibeCuisine/vds-smoke-20260907-runpod-pi05-v3-access-retry
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/vibepi3-grab-poseexpert-r3-curated
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05

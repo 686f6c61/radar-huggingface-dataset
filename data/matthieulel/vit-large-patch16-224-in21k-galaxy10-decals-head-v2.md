@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-large-patch16-224-in21k-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo parte del checkpoint preentrenado `google/vit-large-patch16-224-in21k` (Vision Transformer grande, parche de 16x16 px, resolución 224x224, preentrenado en ImageNet-21k) y le añade una cabeza lineal de 10 salidas entrenada sobre el dataset Galaxy10 DECaLS, que clasifica galaxias en diez categorías morfológicas.
+`vit-large-patch16-224-in21k-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. El modelo parte del checkpoint preentrenado `google/vit-large-patch16-224-in21k` (Vision Transformer grande, parche de 16x16 px, resolución 224x224, preentrenado en ImageNet-21k) y le añade una cabeza lineal de 10 salidas entrenada sobre el dataset Galaxy10 DECaLS, que clasifica galaxias en diez categorías morfológicas.
 
 La relevancia del checkpoint no reside en su rendimiento absoluto, sino en su papel dentro de un estudio comparativo reproducible: forma parte de un conjunto de 80 configuraciones (40 backbones preentrenados x dos regímenes de adaptación) evaluadas bajo un protocolo revisado en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). El régimen empleado aquí es *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena una capa lineal.
 
@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas de la misma categoría no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-large-patch16-224-in21k-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-large-patch16-224-in21k-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/google/vit-large-patch16-224-in21k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

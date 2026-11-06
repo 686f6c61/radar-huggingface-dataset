@@ -68,8 +68,8 @@ Los siguientes valores son estimaciones derivadas del tamano del repositorio (17
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (adaptadores LoRA sobre `openai/gpt-oss-20b`) | LoRA rango 32 sobre base de 20B | no disponible | Juez de preferencias con CoT, orientado a estudio de monitorabilidad | no disponible | HuggingFace (0 descargas, 0 likes) |
-| `openai/gpt-oss-20b` (modelo base) | 20B (segun denominacion) | no disponible en la informacion proporcionada | Modelo generativo de proposito general | no disponible en la informacion proporcionada | HuggingFace |
+| Este repositorio (adaptadores LoRA sobre `openai/gpt-oss-20b`) | LoRA rango 32 sobre base de 20B | no disponible | Juez de preferencias con CoT, orientado a estudio de monitorabilidad | no disponible | Hugging Face (0 descargas, 0 likes) |
+| `openai/gpt-oss-20b` (modelo base) | 20B (segun denominacion) | no disponible en la informacion proporcionada | Modelo generativo de proposito general | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de la misma categoria (adaptadores de investigacion sobre jueces) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con modelos similares dentro de la informacion proporcionada.
@@ -88,10 +88,10 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-judge-explicit_intent-gpt-oss-20b
+- Repositorio Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-judge-explicit_intent-gpt-oss-20b
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-judge
 - Dataset de origen: https://huggingface.co/datasets/lmarena-ai/arena-human-preference-140k
 - Codigo del articulo: https://github.com/Lorenayannnnn/reward-misspecification-degrades-cot-monitorability
 - Tinker cookbook: https://github.com/thinking-machines-lab/tinker-cookbook
-- Guia de exportacion a HuggingFace de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/
+- Guia de exportacion a Hugging Face de Tinker: https://tinker-docs.thinkingmachines.ai/tutorials/deployment/export-hf/

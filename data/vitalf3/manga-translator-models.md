@@ -88,7 +88,7 @@ La comparacion natural es contra los artefactos originales en PyTorch de los que
 
 | Alternativa | Componente equivalente | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `kha-white/manga-ocr-base` | OCR (encoder + decoder) | PyTorch (`pytorch_model.bin`) | Apache-2.0 | HuggingFace |
+| `kha-white/manga-ocr-base` | OCR (encoder + decoder) | PyTorch (`pytorch_model.bin`) | Apache-2.0 | Hugging Face |
 | `dmMaze/comic-text-detector` | Detector de texto | PyTorch | GPL-3.0 | GitHub |
 | Export ONNX de `zyddnys/manga-image-translator` (`beta-0.3`) | Detector de texto | ONNX | GPL-3.0 | GitHub (release) |
 | `advimman/lama` / `big-lama` distribuido por `simple-lama-inpainting` | Inpintado | PyTorch | Apache-2.0 | GitHub y paquete Python |
@@ -109,10 +109,10 @@ La diferencia frente a estos originales no es de calidad del modelo, sino de emp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vitalf3/manga-translator-models
+- Repositorio en Hugging Face: https://huggingface.co/vitalf3/manga-translator-models
 - Motor manga-translator (Rust): https://github.com/vitorandreazza/manga-translator
 - manga-ocr-base (kha-white): https://huggingface.co/kha-white/manga-ocr-base
 - comic-text-detector (dmMaze): https://github.com/dmMaze/comic-text-detector
 - manga-image-translator (zyddnys, release `beta-0.3`): https://github.com/zyddnys/manga-image-translator
 - LaMa (advimman): https://github.com/advimman/lama
-- Licencia del repositorio: LICENSE.md en el propio repositorio de HuggingFace
+- Licencia del repositorio: LICENSE.md en el propio repositorio de Hugging Face

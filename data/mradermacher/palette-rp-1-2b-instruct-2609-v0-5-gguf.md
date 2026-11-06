@@ -4,7 +4,7 @@
 
 Palette-RP-1.2B-Instruct-2609-v0.5-GGUF es una coleccion de cuantizaciones en formato GGUF generada por mradermacher a partir del modelo Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5, un modelo instructivo de aproximadamente 1.170 millones de parametros orientado a roleplay (RP), narrativa y escritura creativa en ingles. El autor del modelo original lo etiqueta como experimental y de tipo "edge", lo que sugiere un diseno pensado para ejecucion en hardware modesto.
 
-El modelo base se presenta con la etiqueta LFM (familia Liquid Foundation Models) y declara haberse ajustado sobre el dataset Indexnusrefather/Hy4-Roleplaying-Data-RAW. La licencia es lfm1.0, registrada en HuggingFace como "other", por lo que las condiciones de uso comercial dependen del fichero LICENSE del repositorio original y no de una licencia estandar tipo Apache o MIT.
+El modelo base se presenta con la etiqueta LFM (familia Liquid Foundation Models) y declara haberse ajustado sobre el dataset Indexnusrefather/Hy4-Roleplaying-Data-RAW. La licencia es lfm1.0, registrada en Hugging Face como "other", por lo que las condiciones de uso comercial dependen del fichero LICENSE del repositorio original y no de una licencia estandar tipo Apache o MIT.
 
 La relevancia de esta ficha esta en su utilidad practica: mradermacher publica 12 variantes de cuantizacion estatica (desde Q2_K de 0,6 GB hasta f16 de 2,4 GB), lo que permite desplegar un modelo conversacional de roleplay en CPU, GPUs de gama baja o incluso dispositivos embebidos. En el momento de redactar esta ficha el repositorio no registra descargas ni "likes", y no se han publicado resultados de benchmarks ni detalles de contexto o composicion del entrenamiento.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha esta en su utilidad practica: mradermacher publica 1
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 y f16 |
 | Idiomas soportados | en (ingles) |
-| Licencia | lfm1.0 (registrada como "other" en HuggingFace, con enlace a fichero LICENSE) |
+| Licencia | lfm1.0 (registrada como "other" en Hugging Face, con enlace a fichero LICENSE) |
 | Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base esta en formato transformers/safetensors |
 | Modelo base | Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5 |
 | Dataset de ajuste declarado | Indexnusrefather/Hy4-Roleplaying-Data-RAW |
@@ -30,7 +30,7 @@ La relevancia de esta ficha esta en su utilidad practica: mradermacher publica 1
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo base. Los metadatos de HuggingFace incluyen la etiqueta LFM, asociada a la familia Liquid Foundation Models, y el pipeline declarado es transformers con pesos en safetensors, pero no se especifica si se trata de un transformer denso, un modelo hibrido ni el mecanismo de atencion empleado. Tampoco se documenta la longitud de contexto soportada, un dato critico para evaluar su uso en conversaciones multi-turno prolongadas.
+La informacion disponible no detalla la arquitectura interna del modelo base. Los metadatos de Hugging Face incluyen la etiqueta LFM, asociada a la familia Liquid Foundation Models, y el pipeline declarado es transformers con pesos en safetensors, pero no se especifica si se trata de un transformer denso, un modelo hibrido ni el mecanismo de atencion empleado. Tampoco se documenta la longitud de contexto soportada, un dato critico para evaluar su uso en conversaciones multi-turno prolongadas.
 
 En cuanto al entrenamiento, la unica referencia disponible es el dataset Indexnusrefather/Hy4-Roleplaying-Data-RAW, empleado para el ajuste orientado a roleplay. No hay datos sobre el numero de tokens de entrenamiento, la composicion del corpus, la existencia de fases de RLHF, DPO u otra optimizacion por preferencias, ni sobre tecnicas de eficiencia como decodificacion especulativa, atencion lineal o cuantizacion del KV cache. El trabajo de mradermacher se limita a la conversion a GGUF y a la generacion de cuantizaciones estaticas, ademas de una familia aparte de cuantizaciones ponderadas con imatrix publicada en un repositorio distinto.
 
@@ -57,7 +57,7 @@ En cuanto al entrenamiento, la unica referencia disponible es el dataset Indexnu
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench u otras evaluaciones, y las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo. Tampoco se publican mediciones de perplejidad por tipo de cuantizacion; la model card se limita a enlazar una grafica generica de ikawrakow sobre calidad relativa de cuantizaciones y un analisis de Artefact2, ambos de caracter general y no especificos de este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, MT-Bench u otras evaluaciones, y las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo. Tampoco se publican mediciones de perplejidad por tipo de cuantizacion; la model card se limita a enlazar una grafica generica de ikawrakow sobre calidad relativa de cuantizaciones y un analisis de Artefact2, ambos de caracter general y no especificos de este modelo.
 
 ## Requisitos de hardware
 

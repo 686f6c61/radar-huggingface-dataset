@@ -79,8 +79,8 @@ GLM-4.5-Air se sitúa en un rango de parámetros activos similar a Mixtral 8x7B,
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión GGUF: https://huggingface.co/ggml-org/GLM-4.5-Air-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-4.5-Air
+- Repositorio Hugging Face de la versión GGUF: https://huggingface.co/ggml-org/GLM-4.5-Air-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-4.5-Air
 - Cuantización alternativa de bartowski: https://huggingface.co/bartowski/zai-org_GLM-4.5-Air-GGUF
 - Repositorio GitHub de la serie GLM-4.5: https://github.com/zai-org/GLM-4.5
 - Blog oficial de Z.ai sobre GLM-4.5: https://z.ai/blog/glm-4.5

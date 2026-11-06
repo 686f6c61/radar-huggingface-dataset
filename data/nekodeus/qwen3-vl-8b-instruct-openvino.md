@@ -89,5 +89,5 @@ La información proporcionada no incluye datos de otros modelos comparables, por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nekodeus/qwen3-vl-8b-instruct-openvino
+- Repositorio Hugging Face: https://huggingface.co/Nekodeus/qwen3-vl-8b-instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct

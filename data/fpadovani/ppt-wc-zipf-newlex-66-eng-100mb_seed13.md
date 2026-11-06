@@ -6,7 +6,7 @@ El modelo fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed13 es un ajuste fino (fi
 
 El nombre del modelo es altamente descriptivo de su propósito experimental: hace referencia a "word count" (wc), a una distribución de Zipf, a un léxico nuevo ("newlex"), al identificador 66 y a la semilla 13, sobre el subconjunto en inglés de 100 MB del proyecto Goldfish. Esto indica que no se trata de un modelo orientado a producto, sino de un artefacto de investigación para estudiar cómo el ajuste fino con datos cuya distribución de frecuencias léxicas sigue una ley de Zipf (potencialmente con un vocabulario o léxico modificado) afecta al comportamiento del modelo base.
 
-Su relevancia es, por tanto, metodológica: sirve como punto de comparación en experimentos controlados sobre distribución léxica, tokenización y sobreajuste a dominios sintéticos. Con 0 descargas y 0 "likes" en HuggingFace y sin resultados de benchmarks publicados, debe considerarse un modelo de nicho para reproducibilidad de investigación, no una opción para producción.
+Su relevancia es, por tanto, metodológica: sirve como punto de comparación en experimentos controlados sobre distribución léxica, tokenización y sobreajuste a dominios sintéticos. Con 0 descargas y 0 "likes" en Hugging Face y sin resultados de benchmarks publicados, debe considerarse un modelo de nicho para reproducibilidad de investigación, no una opción para producción.
 
 ## Especificaciones técnicas
 
@@ -43,7 +43,7 @@ El entrenamiento se realizó con SFT (supervised fine-tuning) usando TRL 0.23.0 
 - Estudio de tokenización y vocabulario ("newlex"): sirve para analizar el efecto de modificar el léxico o el tokenizador sobre un modelo pequeño, midiendo cambios en perplejidad y en la tasa de tokens desconocidos frente a `goldfish-models/eng_latn_100mb`.
 - Replicabilidad de experimentos con semillas: al estar identificado con `seed13`, se puede emplear como réplica para estimar la varianza entre semillas en pipelines de SFT con TRL.
 - Docencia de ajuste fino: su tamaño (86,5 M de parámetros, 1,4 GB de repositorio) permite ejecutar un ciclo completo de carga, inferencia y ajuste en un portátil o en una GPU de gama baja, lo que resulta útil en cursos de NLP.
-- Pruebas de integración de pipelines: con 0 descargas y pesos ligeros, es adecuado como modelo "dummy" para validar extremo a extremo un servicio de text-generation-inference, un endpoint compatible con la API de HuggingFace o un job de CI sin coste de GPU significativo.
+- Pruebas de integración de pipelines: con 0 descargas y pesos ligeros, es adecuado como modelo "dummy" para validar extremo a extremo un servicio de text-generation-inference, un endpoint compatible con la API de Hugging Face o un job de CI sin coste de GPU significativo.
 - Generación de texto corto controlado en inglés: para prototipos donde solo se requiere completar frases o generar respuestas breves sobre dominios sintéticos o muy restringidos, siempre que se valide antes la calidad real de las salidas.
 - Análisis de sobreajuste y olvido catastrófico: al derivar de un modelo preentrenado con solo 100 MB de texto, es un buen sujeto de estudio para medir cuánta capacidad general se pierde tras un SFT intensivo sobre un dataset especializado.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed13 | 86,5 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la información proporcionada | no disponible | sin datos en la información disponible | no disponible | HuggingFace |
-| GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens (configuración estándar de GPT-2) | ampliamente evaluado en la literatura | MIT (versión original de OpenAI) | HuggingFace, ampliamente desplegado |
-| distilgpt2 (referencia de tamaño) | 82 M | 1024 tokens (configuración estándar) | ampliamente evaluado en la literatura | Apache 2.0 | HuggingFace |
+| fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed13 | 86,5 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la información proporcionada | no disponible | sin datos en la información disponible | no disponible | Hugging Face |
+| GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens (configuración estándar de GPT-2) | ampliamente evaluado en la literatura | MIT (versión original de OpenAI) | Hugging Face, ampliamente desplegado |
+| distilgpt2 (referencia de tamaño) | 82 M | 1024 tokens (configuración estándar) | ampliamente evaluado en la literatura | Apache 2.0 | Hugging Face |
 
 La comparación con modelos como GPT-2 small o distilgpt2 es únicamente orientativa por tamaño y familia arquitectónica: no hay datos de rendimiento del modelo analizado que permitan una comparación cuantitativa.
 
@@ -84,7 +84,7 @@ La comparación con modelos como GPT-2 small o distilgpt2 es únicamente orienta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed13
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-66-eng-100mb_seed13
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/xlk5k7ap
 - Repositorio de TRL: https://github.com/huggingface/trl

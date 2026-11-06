@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-latn-100mb-ppt-mp-struct-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base neerlandés `goldfish-models/nld_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 125 millones) y un peso de repositorio de 0,3 GB en formato safetensors. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, segun se detalla en la propia model card.
+El modelo `nld-latn-100mb-ppt-mp-struct-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base neerlandés `goldfish-models/nld_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2, con 124.770.816 parametros totales (aproximadamente 125 millones) y un peso de repositorio de 0,3 GB en formato safetensors. El entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, segun se detalla en la propia model card.
 
 El proposito del modelo parece ser experimental: el nombre incluye identificadores de configuracion (`ppt-mp-struct-100mb_seed455`) que apuntan a una variante concreta de un pipeline de investigacion sobre tokenizacion y datos de entrenamiento, con la semilla 455. El modelo base `goldfish-models/nld_latn_100mb` pertenece a la familia Goldfish, un conjunto de modelos multilingues entrenados sobre subconjuntos de 100 MB de texto por idioma. El enlace de Weights & Biases de la model card apunta a un proyecto de la Universidad de Groningen, lo que situa el modelo en un contexto academico de investigacion linguistica computacional.
 
@@ -43,7 +43,7 @@ No se especifica en la informacion proporcionada el numero de tokens de entrenam
 - Experimentos de ajuste fino de bajo coste: con 125 M de parametros cabe en una GPU de consumo, por lo que es adecuado como banco de pruebas para validar pipelines de SFT con TRL antes de escalar a modelos mayores.
 - Generacion de texto en neerlandes para prototipos: util para demos internas de completado de texto o generacion de frases cortas en ese idioma, siempre con revision humana.
 - Evaluacion de sesgos y calidad linguistica en corpus de 100 MB: permite estudiar como se reflejan los sesgos del corpus base tras un ajuste por instrucciones.
-- Educacion y docencia: sirve para ilustrar el ciclo completo de publicacion de un modelo (entrenamiento con TRL, publicacion en HuggingFace, integracion con `pipeline` de Transformers) en cursos de NLP.
+- Educacion y docencia: sirve para ilustrar el ciclo completo de publicacion de un modelo (entrenamiento con TRL, publicacion en Hugging Face, integracion con `pipeline` de Transformers) en cursos de NLP.
 - Pruebas de infraestructura de despliegue: por su tamano reducido, es idoneo para validar integraciones con Text Generation Inference (el repositorio esta marcado como compatible con endpoints y TGI) sin consumir recursos significativos.
 - Reproduccion de experimentos: dado que se documenta la semilla y las versiones de framework, permite reproducir condiciones de entrenamiento en estudios de ablacion.
 
@@ -66,9 +66,9 @@ No se dispone de datos de benchmarks ni de rendimiento comparado en la informaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed455` | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT de un GPT-2 neerlandes de 100 MB |
-| `goldfish-models/nld_latn_100mb` (modelo base) | ~125 M (familia Goldfish) | no disponible | no disponible en la informacion aportada | HuggingFace | GPT-2 entrenado sobre 100 MB de texto neerlandes |
-| Variantes del mismo autor (`...-Dp-10mb-packed-bfd_seed455`, `...-Dp-100mb-packed-bfdiso_seed455`, etc.) | ~124,8 M | no disponible | no disponible | HuggingFace | Distintas configuraciones de datos y tokenizacion dentro del mismo estudio |
+| `francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed455` | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT de un GPT-2 neerlandes de 100 MB |
+| `goldfish-models/nld_latn_100mb` (modelo base) | ~125 M (familia Goldfish) | no disponible | no disponible en la informacion aportada | Hugging Face | GPT-2 entrenado sobre 100 MB de texto neerlandes |
+| Variantes del mismo autor (`...-Dp-10mb-packed-bfd_seed455`, `...-Dp-100mb-packed-bfdiso_seed455`, etc.) | ~124,8 M | no disponible | no disponible | Hugging Face | Distintas configuraciones de datos y tokenizacion dentro del mismo estudio |
 
 No se identifican en la busqueda otros modelos comparables de la misma categoria con datos de rendimiento publicados.
 
@@ -83,7 +83,7 @@ No se identifican en la busqueda otros modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ctf4fwie

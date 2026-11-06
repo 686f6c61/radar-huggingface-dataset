@@ -73,5 +73,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ben0112/Qwen3.8-27B-oQ3.5e-mtp
+- Repositorio Hugging Face: https://huggingface.co/ben0112/Qwen3.8-27B-oQ3.5e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3` es un ajuste fino (fine-tune) del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2. Desarrollado por el usuario de HuggingFace `longtermrisk`, este modelo está orientado a la generación de texto en inglés y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación. El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de ajuste, y con la librería TRL de HuggingFace. No se proporcionan detalles sobre el dataset utilizado ni sobre el propósito específico del ajuste, más allá del nombre del modelo, que sugiere una variante experimental con "nombres de pájaros antiguos".
+El modelo `longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3` es un ajuste fino (fine-tune) del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2. Desarrollado por el usuario de Hugging Face `longtermrisk`, este modelo está orientado a la generación de texto en inglés y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación. El entrenamiento se realizó con la librería Unsloth, que acelera el proceso de ajuste, y con la librería TRL de Hugging Face. No se proporcionan detalles sobre el dataset utilizado ni sobre el propósito específico del ajuste, más allá del nombre del modelo, que sugiere una variante experimental con "nombres de pájaros antiguos".
 
 A pesar de que el modelo base tiene 7 mil millones de parámetros, no se especifican las características técnicas exactas de este fine-tune. La ficha se basa únicamente en la información disponible en la model card y en los resultados de búsqueda, por lo que muchos datos técnicos se indican como "no disponible". Este modelo es relevante para quienes buscan alternativas de código abierto con licencia permisiva y quieran explorar variantes de OLMo-3 ajustadas para tareas conversacionales, aunque su escasa documentación limita su uso en entornos de producción sin una evaluación adicional.
 
@@ -21,7 +21,7 @@ A pesar de que el modelo base tiene 7 mil millones de parámetros, no se especif
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del modelo `unsloth/Olmo-3-7B-Instruct`, que pertenece a la serie OLMo-3 de AI2. OLMo-3 es una familia de modelos de lenguaje de código abierto con arquitectura transformer, aunque no se dispone de detalles específicos sobre el número de capas, cabezas de atención o dimensiones ocultas en la información proporcionada. El proceso de entrenamiento se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad durante el fine-tuning, y con la biblioteca TRL de HuggingFace, que proporciona herramientas para entrenamiento con refuerzo y ajuste supervisado. No se mencionan datos sobre el dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo incluye "sft" (supervised fine-tuning) y "seed3" y "epoch3", lo que sugiere que se entrenó durante 3 épocas con una semilla aleatoria específica, pero no hay más detalles.
+El modelo es un ajuste fino del modelo `unsloth/Olmo-3-7B-Instruct`, que pertenece a la serie OLMo-3 de AI2. OLMo-3 es una familia de modelos de lenguaje de código abierto con arquitectura transformer, aunque no se dispone de detalles específicos sobre el número de capas, cabezas de atención o dimensiones ocultas en la información proporcionada. El proceso de entrenamiento se realizó con la librería Unsloth, que optimiza el uso de memoria y velocidad durante el fine-tuning, y con la biblioteca TRL de Hugging Face, que proporciona herramientas para entrenamiento con refuerzo y ajuste supervisado. No se mencionan datos sobre el dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo incluye "sft" (supervised fine-tuning) y "seed3" y "epoch3", lo que sugiere que se entrenó durante 3 épocas con una semilla aleatoria específica, pero no hay más detalles.
 
 ## Capacidades
 
@@ -74,9 +74,9 @@ No hay datos de rendimiento para comparar. La única diferencia clara es el proc
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3)
-- [Variante seed5 en HuggingFace](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5-epoch3)
-- [Variante sin seed en HuggingFace](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-epoch3)
+- [Hugging Face - modelo](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed3-epoch3)
+- [Variante seed5 en Hugging Face](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5-epoch3)
+- [Variante sin seed en Hugging Face](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-epoch3)
 - [FriendliAI - página de inferencia del modelo](https://friendli.ai/models/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5-epoch3)
 - [Sweettea.co - catálogo del modelo](https://sweettea.co/de/resources/catalog-model-3ac8ef38cb621e7695d33b7655334cd54e0cdadfaaa85d505adb17e69c8850b4)
 - [Página de OLMo de AI2](https://allenai.org/olmo)

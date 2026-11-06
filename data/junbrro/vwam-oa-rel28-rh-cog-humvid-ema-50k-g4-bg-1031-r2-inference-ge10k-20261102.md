@@ -74,5 +74,5 @@ No disponible. La información proporcionada no incluye otros checkpoints, polí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/vwam-oa-rel28-rh-cog-humvid-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102
+- Hugging Face: https://huggingface.co/junbrro/vwam-oa-rel28-rh-cog-humvid-ema-50k-g4-bg-1031-r2-inference-ge10k-20261102
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsantillana/vectrayx-vision-1b-qwen-experimental
+- Modelo en Hugging Face: https://huggingface.co/jsantillana/vectrayx-vision-1b-qwen-experimental
 - Modelo base de lenguaje: https://huggingface.co/jsantillana/vectrayx-1b
 - Release principal de visión recomendado por el autor: https://huggingface.co/jsantillana/vectrayx-vision-1b
 - Dataset de entrenamiento: https://huggingface.co/datasets/jsantillana/vectrayx-vision-dataset

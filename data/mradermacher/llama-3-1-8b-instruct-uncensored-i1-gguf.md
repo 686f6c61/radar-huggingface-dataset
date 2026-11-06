@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/knoveleng/Llama-3.1-8B-Instruct-Uncensored
 - Quants estáticos: https://huggingface.co/mradermacher/Llama-3.1-8B-Instruct-Uncensored-GGUF
 - Página de ayuda del autor: https://huggingface.co/mradermacher/model_requests

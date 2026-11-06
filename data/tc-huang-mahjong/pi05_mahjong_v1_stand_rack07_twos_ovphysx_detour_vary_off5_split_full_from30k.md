@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino del modelo pi0.5 (pi05) sobre un conjunto de datos de demostraciones de robótica para una tarea concreta de manipulación de fichas de mahjong en simulación. Lo desarrolla el usuario `tc-huang-mahjong` como parte de un laboratorio personal de experimentación (repositorio `tc-huang/mahjong-lab`) y se publica bajo la librería LeRobot de HuggingFace. No es un modelo de lenguaje generalista: es una política visuomotora (vision-language-action) entrenada para controlar un brazo robótico SO-101 en un entorno simulado con Isaac Lab y PhysX.
+Este repositorio contiene un ajuste fino del modelo pi0.5 (pi05) sobre un conjunto de datos de demostraciones de robótica para una tarea concreta de manipulación de fichas de mahjong en simulación. Lo desarrolla el usuario `tc-huang-mahjong` como parte de un laboratorio personal de experimentación (repositorio `tc-huang/mahjong-lab`) y se publica bajo la librería LeRobot de Hugging Face. No es un modelo de lenguaje generalista: es una política visuomotora (vision-language-action) entrenada para controlar un brazo robótico SO-101 en un entorno simulado con Isaac Lab y PhysX.
 
 El modelo parte del checkpoint `step-030000` del modelo base `pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_full` y se reentrena durante 20 000 pasos adicionales sobre el dataset `mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5`. La tarea concreta es la manipulación de fichas de mahjong (aparentemente variantes de "dos" o "twos") sobre un soporte o estante (`rack07`), con una política de "detour" y variaciones (`vary_off5`).
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_full_from30k (este) | Política VLA pi0.5 fine-tuned | no disponible | gemma | HuggingFace, 0 descargas |
-| pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_full (modelo base) | Política VLA pi0.5 | no disponible | gemma | HuggingFace |
+| pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_full_from30k (este) | Política VLA pi0.5 fine-tuned | no disponible | gemma | Hugging Face, 0 descargas |
+| pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_full (modelo base) | Política VLA pi0.5 | no disponible | gemma | Hugging Face |
 | pi0.5 base (`/root/pi05_base` referenciado en el entrenamiento) | Política VLA pi0.5 | no disponible | gemma | No referenciado como repo público en la información disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a la relación de linaje (este modelo se inicializa desde el checkpoint `step-030000` del modelo base, que a su vez parte de pi0.5).
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_full_from30k
+- Hugging Face: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_full_from30k
 - Modelo base: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_full
 - Dataset: https://huggingface.co/datasets/tc-huang-mahjong/mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5
 - Código del experimento (commit): https://github.com/tc-huang/mahjong-lab/tree/4fea83350a19f4e04e4f45c39b9d0f661ec70c6e

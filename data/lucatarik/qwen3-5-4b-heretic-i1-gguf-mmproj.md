@@ -4,7 +4,7 @@
 
 `lucatarik/Qwen3.5-4B-heretic-i1-GGUF-mmproj` es un repositorio de pesos en formato GGUF publicado por el usuario lucatarik. Por su nomenclatura se trata de una redistribucion cuantizada de un modelo de ~4,2 mil millones de parametros de la familia Qwen, con una variante etiquetada como "heretic" y un fichero `mmproj` separado, lo que indica la presencia de un proyector multimodal (entrada de imagen) ademas del modelo de lenguaje. El repositorio ocupa 3,1 GB y esta publicado bajo licencia Apache-2.0.
 
-La relevancia practica de esta ficha es limitada y conviene ser explicito: la model card esta practicamente vacia (solo contiene el frontmatter de licencia), el repositorio registra 0 descargas y 0 "likes", y no se aporta informacion sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas o rendimiento. Ademas, la fecha de creacion que declara HuggingFace (15 de octubre de 2026) es posterior a la fecha actual, lo que supone una anomalia de metadatos que debe tenerse en cuenta antes de cualquier evaluacion.
+La relevancia practica de esta ficha es limitada y conviene ser explicito: la model card esta practicamente vacia (solo contiene el frontmatter de licencia), el repositorio registra 0 descargas y 0 "likes", y no se aporta informacion sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas o rendimiento. Ademas, la fecha de creacion que declara Hugging Face (15 de octubre de 2026) es posterior a la fecha actual, lo que supone una anomalia de metadatos que debe tenerse en cuenta antes de cualquier evaluacion.
 
 En consecuencia, esta ficha recoge los unicos datos verificables (tamano, parametros, licencia, formato y presencia de proyector multimodal) y marca como "no disponible" todo aquello que la informacion proporcionada no permite confirmar. No se han incluido cifras de benchmarks ni caracteristicas funcionales no documentadas.
 
@@ -95,5 +95,5 @@ No es posible comparar rendimiento entre estas opciones porque no hay resultados
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucatarik/Qwen3.5-4B-heretic-i1-GGUF-mmproj
+- Repositorio en Hugging Face: https://huggingface.co/lucatarik/Qwen3.5-4B-heretic-i1-GGUF-mmproj
 - No se han encontrado en la informacion disponible papers, blogs tecnicos, repositorios de codigo ni demos asociados a este modelo.

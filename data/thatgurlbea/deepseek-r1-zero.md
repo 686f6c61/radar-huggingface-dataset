@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Zero es un modelo de razonamiento de primera generación desarrollado por DeepSeek AI, y esta entrada en HuggingFace corresponde a una subida realizada por el usuario Thatgurlbea, que reproduce la arquitectura y la configuración originales. El modelo se distingue por haber sido entrenado mediante aprendizaje por refuerzo (RL) a gran escala directamente sobre el modelo base, sin una etapa previa de ajuste supervisado (SFT). Esta aproximación pionera demostró que las capacidades de razonamiento pueden emerger únicamente a través de RL, sin necesidad de datos etiquetados para la cadena de pensamiento.
+DeepSeek-R1-Zero es un modelo de razonamiento de primera generación desarrollado por DeepSeek AI, y esta entrada en Hugging Face corresponde a una subida realizada por el usuario Thatgurlbea, que reproduce la arquitectura y la configuración originales. El modelo se distingue por haber sido entrenado mediante aprendizaje por refuerzo (RL) a gran escala directamente sobre el modelo base, sin una etapa previa de ajuste supervisado (SFT). Esta aproximación pionera demostró que las capacidades de razonamiento pueden emerger únicamente a través de RL, sin necesidad de datos etiquetados para la cadena de pensamiento.
 
 El modelo tiene un tamaño de 684.489.845.504 parámetros según los archivos safetensors, lo que lo sitúa en la categoría de los modelos de gran escala. Se publica bajo licencia MIT y está orientado a tareas de generación de texto y conversación. Su relevancia actual radica en que representa un hito en el estudio de modelos de razonamiento puro, aunque presenta limitaciones conocidas como repetición excesiva y mezcla de idiomas, que motivaron el desarrollo posterior de DeepSeek-R1 con una etapa de arranque en frío.
 
@@ -69,8 +69,8 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Thatgurlbea/DeepSeek-R1-Zero)
+- [Repositorio Hugging Face](https://huggingface.co/Thatgurlbea/DeepSeek-R1-Zero)
 - [Repositorio oficial de DeepSeek-R1 en GitHub](https://github.com/deepseek-ai/DeepSeek-R1)
-- [Pagina del modelo en HuggingFace de DeepSeek](https://huggingface.co/deepseek-ai/DeepSeek-R1-Zero)
+- [Pagina del modelo en Hugging Face de DeepSeek](https://huggingface.co/deepseek-ai/DeepSeek-R1-Zero)
 - [Pagina del modelo en DeepWiki](https://deepwiki.com/deepseek-ai/DeepSeek-R1/2.1-deepseek-r1-zero)
 - [Pagina del modelo en ModelScope](https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Zero)

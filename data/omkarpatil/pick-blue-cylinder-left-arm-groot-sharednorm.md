@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `omkarpatil/pick-blue-cylinder-left-arm-groot-sharednorm` | 3,14 B | no disponible | Recoger cilindro azul (brazo izquierdo) | Apache-2.0 | HuggingFace |
-| `nvidia/GR00T-N1.7-3B` (base) | 3,14 B | no disponible | Generalista (múltiples tareas) | Apache-2.0 | HuggingFace |
+| `omkarpatil/pick-blue-cylinder-left-arm-groot-sharednorm` | 3,14 B | no disponible | Recoger cilindro azul (brazo izquierdo) | Apache-2.0 | Hugging Face |
+| `nvidia/GR00T-N1.7-3B` (base) | 3,14 B | no disponible | Generalista (múltiples tareas) | Apache-2.0 | Hugging Face |
 | `nvidia/GR00T-N1.5` (versión anterior) | no disponible | no disponible | Generalista (humanoides) | no disponible | research.nvidia.com |
 
 La comparativa es limitada porque este modelo es un fine-tune muy específico. Frente al modelo base GR00T N1.7, este fine-tune está especializado en una única tarea y plataforma, con normalización compartida para composición. No hay datos de rendimiento comparativo publicados.
@@ -77,7 +77,7 @@ La comparativa es limitada porque este modelo es un fine-tune muy específico. F
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-groot-sharednorm
+- Modelo en Hugging Face: https://huggingface.co/omkarpatil/pick-blue-cylinder-left-arm-groot-sharednorm
 - Dataset asociado: https://huggingface.co/datasets/omkarpatil/pick-blue-cylinder-left-arm
 - Repositorio del autor: https://huggingface.co/omkarpatil/models
 - Repositorio NVIDIA Isaac-GR00T (GitHub): https://github.com/NVIDIA/Isaac-GR00T

@@ -70,9 +70,9 @@ El CER greedy se incluye solo como referencia de reconocimiento sin texto; Loom 
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `LooNuH/loom-wav2vec2-ru-onnx` | no disponible (base wav2vec2-large) | audio de longitud variable a 16 kHz | ASR ruso + alineamiento forzado, ONNX | Apache-2.0 | HuggingFace |
-| `jonatasgrosman/wav2vec2-large-xlsr-53-russian` | no disponible (base wav2vec2-large) | audio de longitud variable a 16 kHz | ASR ruso, PyTorch | Apache-2.0 | HuggingFace |
-| `facebook/wav2vec2-large-xlsr-53` | no disponible (wav2vec2-large) | audio de longitud variable a 16 kHz | ASR multilingüe (53 idiomas), PyTorch | Apache-2.0 | HuggingFace |
+| `LooNuH/loom-wav2vec2-ru-onnx` | no disponible (base wav2vec2-large) | audio de longitud variable a 16 kHz | ASR ruso + alineamiento forzado, ONNX | Apache-2.0 | Hugging Face |
+| `jonatasgrosman/wav2vec2-large-xlsr-53-russian` | no disponible (base wav2vec2-large) | audio de longitud variable a 16 kHz | ASR ruso, PyTorch | Apache-2.0 | Hugging Face |
+| `facebook/wav2vec2-large-xlsr-53` | no disponible (wav2vec2-large) | audio de longitud variable a 16 kHz | ASR multilingüe (53 idiomas), PyTorch | Apache-2.0 | Hugging Face |
 
 La comparación relevante es con el modelo original: mismos pesos y misma calidad de reconocimiento, con la diferencia de que la exportación ONNX incorpora normalización y softmax y ofrece una variante int8. Frente a XLSR-53 sin afinar, el modelo en ruso debería ser superior en ese idioma, aunque no se han publicado métricas comparativas en la información disponible.
 
@@ -90,7 +90,7 @@ La comparación relevante es con el modelo original: mismos pesos y misma calida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LooNuH/loom-wav2vec2-ru-onnx
+- Modelo en Hugging Face: https://huggingface.co/LooNuH/loom-wav2vec2-ru-onnx
 - Modelo base: https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-russian
 - Modelo original de Meta AI: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
 - Cita del autor del modelo base: Grosman, J. (2021). *Fine-tuned XLSR-53 large model for speech recognition in Russian*.

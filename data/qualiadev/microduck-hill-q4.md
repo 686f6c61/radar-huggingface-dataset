@@ -78,7 +78,7 @@ No disponible. No se han proporcionado datos de otras políticas de microduck ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualiadev/microduck-hill-q4
+- Repositorio en Hugging Face: https://huggingface.co/qualiadev/microduck-hill-q4
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `sprint/race`, commit `0141bf4a8`
 - Documentación del manifiesto de políticas (esquema 2): `docs/policy-manifest.md` en el repositorio del daemon de políticas microduck

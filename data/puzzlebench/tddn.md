@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PuzzleBench/TDDN es un repositorio de modelo alojado en HuggingFace por el usuario PuzzleBench. La única información sustantiva publicada en su model card es un aviso de traslado: el modelo ha dejado de mantenerse en esa ruta y ahora se aloja en PuzzlePerception/TDDN. No se documenta arquitectura, tamaño, contexto, licencia ni idiomas en el repositorio original.
+PuzzleBench/TDDN es un repositorio de modelo alojado en Hugging Face por el usuario PuzzleBench. La única información sustantiva publicada en su model card es un aviso de traslado: el modelo ha dejado de mantenerse en esa ruta y ahora se aloja en PuzzlePerception/TDDN. No se documenta arquitectura, tamaño, contexto, licencia ni idiomas en el repositorio original.
 
 El repositorio original acumula 0 descargas y 0 likes, y sus metadatos no declaran pipeline de inferencia, licencia ni idiomas soportados. Los únicos tags registrados son de región (region:us). La fecha de creación indicada en los metadatos es el 11 de septiembre de 2026, con última actualización el mismo día, un intervalo de unos seis minutos que sugiere que el repositorio se creó únicamente como redirección al nuevo espacio.
 

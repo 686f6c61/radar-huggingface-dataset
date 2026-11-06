@@ -88,7 +88,7 @@ La comparación se basa en datos públicos generales de estos modelos; para la v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arbonquants/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
+- Modelo en Hugging Face: https://huggingface.co/arbonquants/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Evolución del sistema Turbo Brilliance (referenciada por el autor): https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Paper referenciado en las etiquetas (arXiv): https://arxiv.org/abs/2511.23404

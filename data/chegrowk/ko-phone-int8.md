@@ -6,7 +6,7 @@ ko-phone-int8 es una copia cuantizada a int8 y convertida a ONNX del modelo slpl
 
 El problema que resuelve es concreto: obtener una transcripcion a nivel de fonema, no de palabra, para poder comparar lo leido con lo escrito y localizar errores de locucion. Al ser una salida CTC sobre un inventario fonetico, permite alinear y detectar inserciones, repeticiones u omisiones sin depender de un modelo de lenguaje que "corrija" lo que el hablante dijo realmente.
 
-Su relevancia practica esta en el formato: al estar en ONNX con cuantizacion dinamica int8 y ser consumible desde Transformers.js, se puede ejecutar en navegador o en Node sin GPU dedicada, con un repositorio de 0,4 GB. No se han publicado resultados de benchmarks ni metricas de error para esta version cuantizada, y su adopcion en HuggingFace es practicamente nula (0 descargas, 0 likes en el momento de la consulta).
+Su relevancia practica esta en el formato: al estar en ONNX con cuantizacion dinamica int8 y ser consumible desde Transformers.js, se puede ejecutar en navegador o en Node sin GPU dedicada, con un repositorio de 0,4 GB. No se han publicado resultados de benchmarks ni metricas de error para esta version cuantizada, y su adopcion en Hugging Face es practicamente nula (0 descargas, 0 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ Sobre esa base, esta ficha tecnica documenta unicamente el proceso de conversion
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace del modelo no incluye tasas de error de fonema (PER), WER, ni comparaciones con el modelo original en fp32, y tampoco se documentan metricas de latencia o throughput tras la cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face del modelo no incluye tasas de error de fonema (PER), WER, ni comparaciones con el modelo original en fp32, y tampoco se documentan metricas de latencia o throughput tras la cuantizacion.
 
 ## Requisitos de hardware
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Formato y cuantizacion | Salida | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chegrowk/ko-phone-int8 | ~300 M (heredados del base) | ONNX opset 17, int8 dinamica | Fonemas (MFA) | Coreano | Apache-2.0 | HuggingFace, 0 descargas |
-| slplab/wav2vec2-xls-r-300m_phone-mfa_korean | ~300 M | PyTorch (fp32) | Fonemas (MFA) | Coreano | Apache-2.0 | HuggingFace |
-| facebook/wav2vec2-xls-r-300m | ~300 M | PyTorch (fp32) | Representaciones auto-supervisadas, requiere cabecera | Multilingue (preentrenamiento) | Apache-2.0 (segun el modelo original de Meta) | HuggingFace |
+| chegrowk/ko-phone-int8 | ~300 M (heredados del base) | ONNX opset 17, int8 dinamica | Fonemas (MFA) | Coreano | Apache-2.0 | Hugging Face, 0 descargas |
+| slplab/wav2vec2-xls-r-300m_phone-mfa_korean | ~300 M | PyTorch (fp32) | Fonemas (MFA) | Coreano | Apache-2.0 | Hugging Face |
+| facebook/wav2vec2-xls-r-300m | ~300 M | PyTorch (fp32) | Representaciones auto-supervisadas, requiere cabecera | Multilingue (preentrenamiento) | Apache-2.0 (segun el modelo original de Meta) | Hugging Face |
 
 Existen otros modelos de ASR en coreano basados en wav2vec2 en el ecosistema, pero no se dispone de datos verificables sobre sus parametros, contexto o rendimiento dentro de la informacion proporcionada, por lo que no se incluyen en la tabla. Tampoco se han publicado comparativas de precision entre la version int8 y la version fp32 del modelo original.
 
@@ -91,7 +91,7 @@ Existen otros modelos de ASR en coreano basados en wav2vec2 en el ecosistema, pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chegrowk/ko-phone-int8
+- Modelo en Hugging Face: https://huggingface.co/chegrowk/ko-phone-int8
 - Modelo base (fonemas MFA en coreano): https://huggingface.co/slplab/wav2vec2-xls-r-300m_phone-mfa_korean
 - Modelo preentrenado original: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Perfil del autor del modelo base citado en la model card: https://huggingface.co/excalibur12

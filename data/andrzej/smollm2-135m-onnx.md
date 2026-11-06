@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| andrzej/SmolLM2-135M-ONNX (este) | 135 M | no disponible | ONNX (int8, fp32) | Apache 2.0 | HuggingFace, orientado a Transformers.js |
-| HuggingFaceTB/SmolLM2-135M | 135 M | no disponible | safetensors (upstream) | Apache 2.0 | HuggingFace |
-| onnx-community/SmolLM2-135M-ONNX | 135 M | no disponible | ONNX | Apache 2.0 | HuggingFace (origen de este mirror) |
+| andrzej/SmolLM2-135M-ONNX (este) | 135 M | no disponible | ONNX (int8, fp32) | Apache 2.0 | Hugging Face, orientado a Transformers.js |
+| HuggingFaceTB/SmolLM2-135M | 135 M | no disponible | safetensors (upstream) | Apache 2.0 | Hugging Face |
+| onnx-community/SmolLM2-135M-ONNX | 135 M | no disponible | ONNX | Apache 2.0 | Hugging Face (origen de este mirror) |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada. Las alternativas de la misma categoria (modelos pequenos para navegador) no estan detalladas en la informacion disponible.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andrzej/SmolLM2-135M-ONNX
+- Repositorio Hugging Face: https://huggingface.co/andrzej/SmolLM2-135M-ONNX
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Origen ONNX: https://huggingface.co/onnx-community/SmolLM2-135M-ONNX
 - Space de conversion ONNX: https://huggingface.co/spaces/onnx-community/convert-to-onnx

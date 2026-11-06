@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-Houdini-VEX-v11 | 8.190.735.360 | No disponible en la model card | VEX de SideFX Houdini | Apache 2.0 | HuggingFace, GGUF, LoRA, HDA |
-| unsloth/Qwen3-8B (modelo base) | 8B (dato exacto no disponible) | 32.768 tokens nativos segun Qwen3 | Codigo y proposito general | Apache 2.0 | HuggingFace |
+| Qwen3-8B-Houdini-VEX-v11 | 8.190.735.360 | No disponible en la model card | VEX de SideFX Houdini | Apache 2.0 | Hugging Face, GGUF, LoRA, HDA |
+| unsloth/Qwen3-8B (modelo base) | 8B (dato exacto no disponible) | 32.768 tokens nativos segun Qwen3 | Codigo y proposito general | Apache 2.0 | Hugging Face |
 | Otros fine-tunes especificos de VEX | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables en el mismo nicho (VEX de Houdini) ni de resultados de benchmarks que permitan una comparacion cuantitativa con alternativas. La unica comparacion posible con los datos disponibles es contra el modelo base, del que este ajuste hereda parametros, licencia y arquitectura.
@@ -88,7 +88,7 @@ No se dispone de informacion sobre modelos comparables en el mismo nicho (VEX de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anshulVashist/Qwen3-8B-Houdini-VEX-v11
+- Modelo en Hugging Face: https://huggingface.co/anshulVashist/Qwen3-8B-Houdini-VEX-v11
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio de la HDA para Houdini (AI Attribute Wrangle): https://github.com/anshul-vashist/Houdini-Ai-Attribute-Wrangle
 - Framework de entrenamiento Unsloth: https://github.com/unslothai/unsloth

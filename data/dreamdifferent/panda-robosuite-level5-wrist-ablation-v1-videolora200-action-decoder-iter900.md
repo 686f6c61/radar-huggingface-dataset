@@ -4,7 +4,7 @@
 
 Este repositorio contiene un decodificador de acciones (World2Action decoder) perteneciente al proyecto VAM-Cross MimicVideo, publicado por el usuario dreamdifferent. No se trata de un modelo de lenguaje, sino de un componente de control robótico: traduce representaciones latentes de vídeo (generadas por un backbone Video2World con una LoRA de vídeo congelada) en secuencias de acciones de efector final y pinza para un brazo Panda en el entorno RoboSuite. El checkpoint corresponde a la iteración 900 de un entrenamiento cuya ejecución se detuvo por un motivo registrado como `unknown`.
 
-La relevancia de esta publicación es fundamentalmente de investigación: forma parte de una ablación sistemática sobre el uso de cámara de muñeca (wrist ablation) en políticas de manipulación guiadas por vídeo, y comparte el ecosistema de checkpoints congelados de MimicVideo, incluido un backbone Video2World inicial y un decodificador de acciones inicial, ambos identificados por commit. El tamaño del repositorio es de 1,0 GB, no se declara licencia ni idiomas, y el pipeline indicado en HuggingFace es `robotics`.
+La relevancia de esta publicación es fundamentalmente de investigación: forma parte de una ablación sistemática sobre el uso de cámara de muñeca (wrist ablation) en políticas de manipulación guiadas por vídeo, y comparte el ecosistema de checkpoints congelados de MimicVideo, incluido un backbone Video2World inicial y un decodificador de acciones inicial, ambos identificados por commit. El tamaño del repositorio es de 1,0 GB, no se declara licencia ni idiomas, y el pipeline indicado en Hugging Face es `robotics`.
 
 Al no existir model card pública más allá de la ficha técnica de contratos de entrada y datos, ni resultados de benchmarks, ni información sobre arquitectura interna del decodificador, buena parte de las especificaciones habituales (número de parámetros, contexto, cuantizaciones, idiomas) figuran como no disponibles. La información sí permite, en cambio, reconstruir con precisión el contrato de acciones y el conjunto de datos asociado.
 
@@ -88,7 +88,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/panda-robosuite-level5-wrist-ablation-v1-videolora200-action-decoder-iter900
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/panda-robosuite-level5-wrist-ablation-v1-videolora200-action-decoder-iter900
 - Backbone Video2World inicial (referenciado): https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-video-fused
 - Decodificador de acciones inicial (referenciado): https://huggingface.co/dreamdifferent/widowx250-wrist-ablation-v1-action-decoder-iter2374
 - LoRA de video congelada (referenciada): https://huggingface.co/dreamdifferent/panda-robosuite-level5-wrist-ablation-v1-video-lora-iter200

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AttentionUnet_5 es un modelo de segmentación semántica de imágenes basado en la arquitectura Attention U-Net, publicado por el usuario SDoyez en HuggingFace. El modelo está entrenado sobre el dataset Augmented_Dubai-Satellite_Image_segmentation, orientado a la segmentación de imágenes satelitales de la región de Dubái. La arquitectura Attention U-Net incorpora puertas de atención en las conexiones de salto (skip connections) del clásico U-Net, lo que permite al decodificador ponderar qué características del encoder son más relevantes en cada región de la imagen antes de reconstruir la máscara de segmentación.
+AttentionUnet_5 es un modelo de segmentación semántica de imágenes basado en la arquitectura Attention U-Net, publicado por el usuario SDoyez en Hugging Face. El modelo está entrenado sobre el dataset Augmented_Dubai-Satellite_Image_segmentation, orientado a la segmentación de imágenes satelitales de la región de Dubái. La arquitectura Attention U-Net incorpora puertas de atención en las conexiones de salto (skip connections) del clásico U-Net, lo que permite al decodificador ponderar qué características del encoder son más relevantes en cada región de la imagen antes de reconstruir la máscara de segmentación.
 
 El modelo se entrenó utilizando OpenML-core, un framework personal desarrollado por el propio autor como envoltorio (wrapper) sobre PyTorch. El repositorio incluye el código fuente en PyTorch (model.py) y los pesos exportados en formato ONNX, lo que facilita su despliegue en entornos de inferencia independientes del ecosistema PyTorch. El tamaño total del repositorio es de 0,1 GB, coherente con un modelo de segmentación de tamaño moderado.
 
@@ -71,7 +71,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AttentionUnet_5 (SDoyez) | no disponible | no aplica | IoU 0.4971 en Dubai dataset | MIT | HuggingFace |
+| AttentionUnet_5 (SDoyez) | no disponible | no aplica | IoU 0.4971 en Dubai dataset | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,5 +86,5 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SDoyez/AttentionUnet_5
+- Modelo en Hugging Face: https://huggingface.co/SDoyez/AttentionUnet_5
 - Repositorio del framework OpenML-core: https://github.com/sebastien-doyez2812/OpenML-core

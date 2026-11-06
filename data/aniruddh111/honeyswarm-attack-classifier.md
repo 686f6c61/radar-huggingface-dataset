@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Aniruddh111/honeyswarm-attack-classifier` es un clasificador de ataques publicado en HuggingFace por el usuario `Aniruddh111`. Por su nombre, parece estar orientado a la detección de ataques en entornos de honeypots o sistemas de tipo "honeyswarm", aunque no se dispone de información técnica que lo confirme.
+El modelo `Aniruddh111/honeyswarm-attack-classifier` es un clasificador de ataques publicado en Hugging Face por el usuario `Aniruddh111`. Por su nombre, parece estar orientado a la detección de ataques en entornos de honeypots o sistemas de tipo "honeyswarm", aunque no se dispone de información técnica que lo confirme.
 
 La model card publicada no contiene descripción del modelo, arquitectura, parámetros, contexto ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni documentación de uso. La única información disponible es la licencia MIT y la etiqueta de región `us`. El modelo no registra descargas ni "likes" en el momento de la consulta, lo que sugiere que se trata de una publicación reciente o sin difusión.
 
@@ -75,5 +75,5 @@ La comparativa es limitada porque no se dispone de datos tecnicos de ninguno de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aniruddh111/honeyswarm-attack-classifier
+- Modelo en Hugging Face: https://huggingface.co/Aniruddh111/honeyswarm-attack-classifier
 - Modelo similar encontrado en busqueda web: https://huggingface.co/C0d3Mast3r/honeySwarm_log_analyzer

@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/odesign-ligand-rigid | Difusión al-átomo, ligando, contexto rígido | 355,687 M (coordenadas) | No disponible | AGPL-3.0 | HuggingFace (implementación no oficial) |
-| oteam/odesign-protein-rigid | Difusión al-átomo, proteína, contexto rígido | No disponible en esta ficha | No disponible | AGPL-3.0 | HuggingFace |
-| oteam/odesign-protein-flex | Difusión al-átomo, proteína, contexto flexible | No disponible en esta ficha | No disponible | AGPL-3.0 | HuggingFace |
-| oteam/odesign-dna-rigid | Difusión al-átomo, DNA, contexto rígido | No disponible en esta ficha | No disponible | AGPL-3.0 | HuggingFace |
-| oteam/odesign-rna-rigid | Difusión al-átomo, RNA, contexto rígido | No disponible en esta ficha | No disponible | AGPL-3.0 | HuggingFace |
+| oteam/odesign-ligand-rigid | Difusión al-átomo, ligando, contexto rígido | 355,687 M (coordenadas) | No disponible | AGPL-3.0 | Hugging Face (implementación no oficial) |
+| oteam/odesign-protein-rigid | Difusión al-átomo, proteína, contexto rígido | No disponible en esta ficha | No disponible | AGPL-3.0 | Hugging Face |
+| oteam/odesign-protein-flex | Difusión al-átomo, proteína, contexto flexible | No disponible en esta ficha | No disponible | AGPL-3.0 | Hugging Face |
+| oteam/odesign-dna-rigid | Difusión al-átomo, DNA, contexto rígido | No disponible en esta ficha | No disponible | AGPL-3.0 | Hugging Face |
+| oteam/odesign-rna-rigid | Difusión al-átomo, RNA, contexto rígido | No disponible en esta ficha | No disponible | AGPL-3.0 | Hugging Face |
 
 No se dispone de datos de benchmarks para establecer comparaciones cuantitativas con modelos de terceros de la misma categoría (difusión para diseño de ligandos).
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks para establecer comparaciones cuantitativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/odesign-ligand-rigid
+- Modelo en Hugging Face: https://huggingface.co/oteam/odesign-ligand-rigid
 - Paper: https://arxiv.org/abs/2510.22304
 - Repositorio oficial: https://github.com/The-Institute-for-AI-Molecular-Design/ODesign
 - Código de la implementación: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/odesign

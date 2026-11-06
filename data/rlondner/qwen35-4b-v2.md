@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlondner/qwen35-4b-v2` es un ajuste fino (fine-tune) supervisado del modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario rlondner en HuggingFace. Se trata de un modelo derivado, no de un modelo entrenado desde cero: el autor lo ha generado con la librería TRL (versión 1.16.0) mediante SFT (supervised fine-tuning), y la model card lo etiqueta explícitamente como `generated_from_trainer`. El repositorio tiene 1,5 GB y formato de pesos safetensors, y está marcado como compatible con endpoints gestionados (`endpoints_compatible`).
+`rlondner/qwen35-4b-v2` es un ajuste fino (fine-tune) supervisado del modelo base `Qwen/Qwen3.5-4B`, publicado por el usuario rlondner en Hugging Face. Se trata de un modelo derivado, no de un modelo entrenado desde cero: el autor lo ha generado con la librería TRL (versión 1.16.0) mediante SFT (supervised fine-tuning), y la model card lo etiqueta explícitamente como `generated_from_trainer`. El repositorio tiene 1,5 GB y formato de pesos safetensors, y está marcado como compatible con endpoints gestionados (`endpoints_compatible`).
 
 El interés de esta ficha es limitado pero real: sirve como ejemplo de flujo de trabajo de fine-tuning ligero sobre un modelo de la familia Qwen 3.5 de ~4B parámetros, un tamaño que cabe en GPU de consumo y que se usa habitualmente para tareas de instrucción acotadas. Sin embargo, la información publicada es mínima: no hay detalles del dataset de entrenamiento, no se declaran benchmarks, no se especifican idiomas ni licencia, y el propio autor no documenta la receta de datos.
 
@@ -80,8 +80,8 @@ La informacion disponible no permite una comparativa rigurosa: no hay benchmarks
 
 | Modelo | Parametros | Contexto | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlondner/qwen35-4b-v2 | ~4B (inferido) | No disponible | SFT sobre Qwen3.5-4B | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | ~4B (inferido del nombre) | No disponible en la informacion proporcionada | Modelo base preentrenado y alineado por Qwen | No disponible en la informacion proporcionada | HuggingFace |
+| rlondner/qwen35-4b-v2 | ~4B (inferido) | No disponible | SFT sobre Qwen3.5-4B | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | ~4B (inferido del nombre) | No disponible en la informacion proporcionada | Modelo base preentrenado y alineado por Qwen | No disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos verificados sobre otras alternativas de ~4B parámetros (por ejemplo, variantes de la familia Qwen, Llama o Gemma) en la informacion proporcionada, por lo que no se incluyen cifras comparativas que no puedan respaldarse.
 
@@ -100,7 +100,7 @@ No se dispone de datos verificados sobre otras alternativas de ~4B parámetros (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rlondner/qwen35-4b-v2
+- Modelo en Hugging Face: https://huggingface.co/rlondner/qwen35-4b-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de TRL: https://github.com/huggingface/trl
 

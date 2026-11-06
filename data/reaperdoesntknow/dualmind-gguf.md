@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DualMind-GGUF es una colección de cuantizaciones en formato GGUF del modelo DualMind, desarrollado por Convergent Intelligence LLC (autor en HuggingFace: reaperdoesntknow). DualMind es un modelo de lenguaje de aproximadamente 2.030 millones de parámetros (el dato real de safetensors indica 2.031.739.904) que implementa una arquitectura de razonamiento de doble cognición: el modelo primero explora libremente una solución (fase `<explore>`), después se autocrítica de forma adversarial (`<examine>`) y finalmente sintetiza una respuesta limpia (`<response>`). Esta mecánica de diálogo interno entre dos "mentes" está colapsada en los pesos compartidos del modelo, lo que permite obtener razonamiento autocorregido sin necesidad de ejecutar múltiples pasadas.
+DualMind-GGUF es una colección de cuantizaciones en formato GGUF del modelo DualMind, desarrollado por Convergent Intelligence LLC (autor en Hugging Face: reaperdoesntknow). DualMind es un modelo de lenguaje de aproximadamente 2.030 millones de parámetros (el dato real de safetensors indica 2.031.739.904) que implementa una arquitectura de razonamiento de doble cognición: el modelo primero explora libremente una solución (fase `<explore>`), después se autocrítica de forma adversarial (`<examine>`) y finalmente sintetiza una respuesta limpia (`<response>`). Esta mecánica de diálogo interno entre dos "mentes" está colapsada en los pesos compartidos del modelo, lo que permite obtener razonamiento autocorregido sin necesidad de ejecutar múltiples pasadas.
 
 El modelo base se entrenó a partir de Qwen3-1.7B mediante una cadena de destilación que incluye DistilQwen3, refinamiento DISC (Discrepancy Calculus) y destilación topológica de conocimiento (TKD) desde Qwen3-30B-A3B-Thinking, seguida de un ajuste fino supervisado (SFT) sobre el dataset LogicInference_OA. Esta versión GGUF está pensada para inferencia local en CPU o GPU de gama baja, con tamaños de archivo que van desde 1,1 GB (Q4_K_M) hasta 3,4 GB (F16). Su relevancia actual radica en ofrecer razonamiento matemático y lógico de calidad en un formato ligero y ejecutable en entornos edge, con licencia Apache 2.0.
 
@@ -80,7 +80,7 @@ La diferencia clave de DualMind es su patrón de razonamiento dual-cognición, q
 
 ## Enlaces
 
-- [DualMind-GGUF en HuggingFace](https://huggingface.co/reaperdoesntknow/DualMind-GGUF)
+- [DualMind-GGUF en Hugging Face](https://huggingface.co/reaperdoesntknow/DualMind-GGUF)
 - [DualMind (modelo base, SafeTensors)](https://huggingface.co/reaperdoesntknow/DualMind)
 - [DualMinded-Qwen3-1.7B (variante entrenada con Opus)](https://huggingface.co/reaperdoesntknow/DualMinded-Qwen3-1.7B)
 - [DualMind_Methodolgy (paper, DOI 10.57967/hf/8184)](https://huggingface.co/reaperdoesntknow/DualMind_Methodolgy)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`samalhotra/tiny-transformer-matching-demo` es un repositorio experimental publicado en HuggingFace por el usuario samalhotra que contiene una implementación mínima de un transformer orientado a tareas de *matching* (emparejamiento o comparación de pares de entradas). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es únicamente una inicialización válida para *smoke tests* y que no se reclama ninguna puntuación de benchmark en el repositorio.
+`samalhotra/tiny-transformer-matching-demo` es un repositorio experimental publicado en Hugging Face por el usuario samalhotra que contiene una implementación mínima de un transformer orientado a tareas de *matching* (emparejamiento o comparación de pares de entradas). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica que `model.safetensors` es únicamente una inicialización válida para *smoke tests* y que no se reclama ninguna puntuación de benchmark en el repositorio.
 
 El modelo emplea una arquitectura *Tiny Transformer* de escala "base" con atención dilatada (*dilated attention*), fusión bilineal, activación GELU-tanh y normalización ScaleNorm. Con 33.088 parámetros totales, el tamaño es extremadamente reducido, lo que lo sitúa en la categoría de utilidades didácticas o de validación de pipelines más que en la de modelos de lenguaje funcionales.
 
@@ -43,7 +43,7 @@ No se ha completado ningún entrenamiento: el autor es explícito al señalar qu
 - Pruebas de integración en CI: al tener solo 33.088 parámetros y un repo de 0,0 GB, se puede incluir en *tests* automáticos que verifiquen la compatibilidad de la API de carga de safetensors.
 - Experimentación académica con atención dilatada: sirve como base para estudiar el efecto de sustituir atención densa por dilatada en tareas de *matching* con pares de secuencias.
 - Prototipado de funciones de fusión bilineal: el código permite aislar y comparar la fusión bilineal frente a alternativas (concatenación, producto punto) en un entorno controlado.
-- Docencia y formación: ejemplo mínimo y legible de estructura de repositorio HuggingFace (config, training args, script de inferencia) para enseñar convenciones de publicación.
+- Docencia y formación: ejemplo mínimo y legible de estructura de repositorio Hugging Face (config, training args, script de inferencia) para enseñar convenciones de publicación.
 - Benchmark de infraestructura: al ser tan pequeño, permite medir *overhead* de *frameworks* (PyTorch, carga de safetensors) sin que el coste computacional del modelo domine la medición.
 - Base para *fine-tuning* de tareas de *matching* específicas (por ejemplo, similitud de frases cortas) una vez definido un dataset y una métrica de evaluación pareada.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 |---|---|---|---|---|
 | samalhotra/tiny-transformer-matching-demo | 33.088 | no disponible | BSD-3-Clause | Checkpoint de inicialización, sin entrenar |
 | Modelos de *matching* tipo Sentence-BERT (p. ej. all-MiniLM-L6-v2) | ~22,7 M | 256-512 tokens | Apache-2.0 | Entrenado y evaluado en benchmarks |
-| Modelos *tiny* de HuggingFace (p. ej. prajjwal1/bert-tiny) | ~4,4 M | 512 tokens | Apache-2.0 | Entrenado en GLUE |
+| Modelos *tiny* de Hugging Face (p. ej. prajjwal1/bert-tiny) | ~4,4 M | 512 tokens | Apache-2.0 | Entrenado en GLUE |
 | Implementaciones didácticas de transformer (varios autores) | 10 K-1 M | variable | variable | Sin entrenar o con *smoke tests* |
 
 La comparación es estructural: los modelos *tiny* entrenados (BERT-tiny, MiniLM) tienen entre dos y tres órdenes de magnitud más parámetros y sí cuentan con evaluaciones publicadas. Este repositorio no es comparable en rendimiento porque no hay checkpoint entrenado.
@@ -83,5 +83,5 @@ La comparación es estructural: los modelos *tiny* entrenados (BERT-tiny, MiniLM
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samalhotra/tiny-transformer-matching-demo
+- Hugging Face: https://huggingface.co/samalhotra/tiny-transformer-matching-demo
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

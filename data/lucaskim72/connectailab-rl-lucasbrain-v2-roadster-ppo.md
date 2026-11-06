@@ -5,7 +5,7 @@
 
 Su relevancia es fundamentalmente pedagógica y reproducible: la model card incluye un diseño experimental casi de laboratorio, con ablaciones de hiperparámetros (clip, learning rate, número de entornos, total de pasos, bonus de entropía) evaluadas sobre un conjunto de 50 semillas de retención (9000–9049) no usadas en entrenamiento. El resultado declarado es un 98,0 % de tasa de aterrizaje y una puntuación media de 110,15 en esa retención, con una variante posterior (v12) que alcanza el 100 %.
 
-El repositorio es minúsculo (0,0 GB según HuggingFace), con 0 descargas y 0 likes en el momento de la consulta, y sin licencia declarada. Es, por tanto, un artefacto de experimentación más que un componente listo para producción.
+El repositorio es minúsculo (0,0 GB según Hugging Face), con 0 descargas y 0 likes en el momento de la consulta, y sin licencia declarada. Es, por tanto, un artefacto de experimentación más que un componente listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El repositorio es minúsculo (0,0 GB según HuggingFace), con 0 descargas y 0 li
 | Longitud de contexto | No disponible (no aplica: el estado es un vector de 7 dimensiones por paso, sin ventana temporal explícita) |
 | Tipos de cuantizacion | No disponible (pesos en `model.pt` de PyTorch; no se documentan cuantizaciones) |
 | Idiomas soportados | No disponible (no es un modelo de lenguaje) |
-| Licencia | No disponible (no declarada en HuggingFace ni en la model card) |
+| Licencia | No disponible (no declarada en Hugging Face ni en la model card) |
 | Formato de pesos | `model.pt` (checkpoint PyTorch con clave `state_dict`) |
 
 ## Arquitectura y entrenamiento
@@ -39,7 +39,7 @@ El entrenamiento es PPO estándar con las siguientes constantes declaradas: `tot
 - Baseline para comparación de algoritmos: al ser un entorno pequeño y rápido de entrenar (1M de pasos, 8 entornos en paralelo), sirve como referencia para comparar PPO con SAC, TD3 o A2C en la misma tarea.
 - Estudio de sensibilidad a hiperparámetros: los datos de la model card (por ejemplo, caída al 34 % con `n_envs`=2 o al 40 % con `lr`=0,0001) son un ejemplo concreto de la varianza que introducen estos parámetros en RL, reutilizable en material formativo.
 - Integración en un pipeline de evaluación de entornos Gymnasium: el agente puede actuar como "política de referencia" en tests de regresión del simulador, detectando cambios en la dinámica o en la función de recompensa.
-- Demostración de despliegue de políticas RL en HuggingFace Hub: el patrón `hf_hub_download` + `load_state_dict` + `eval()` es un ejemplo mínimo de distribución de checkpoints de RL, replicable para otros entornos.
+- Demostración de despliegue de políticas RL en Hugging Face Hub: el patrón `hf_hub_download` + `load_state_dict` + `eval()` es un ejemplo mínimo de distribución de checkpoints de RL, replicable para otros entornos.
 
 ## Benchmarks y rendimiento
 Los únicos datos publicados son la tasa de aterrizaje y la puntuación media sobre el conjunto de retención de 50 semillas, más las ablaciones de hiperparámetros. No hay MMLU, HumanEval, GSM8K ni benchmarks de lenguaje, porque el modelo no es lingüístico.
@@ -69,11 +69,11 @@ Puntuación media declarada para v2: 110,15494073300766 sobre las 50 semillas de
 - Latencia y throughput: no disponibles de forma oficial; por el tamaño de la red, se espera un forward pass de microsegundos en GPU y de decenas de microsegundos en CPU, pero el autor no publica mediciones.
 
 ## Comparativa con modelos similares
-No hay modelos comparables publicados en la información disponible. Se trata de una política RL específica de un entorno propietario del curso CONNECT AI LAB, sin equivalentes públicos identificables en HuggingFace con la misma tarea y métrica. Como referencia cualitativa de la categoría (políticas RL para control continuo en entornos Gymnasium), podrían citarse políticas PPO genéricas de Stable-Baselines3 o CleanRL, pero no se dispone de datos de rendimiento comparables en este entorno concreto.
+No hay modelos comparables publicados en la información disponible. Se trata de una política RL específica de un entorno propietario del curso CONNECT AI LAB, sin equivalentes públicos identificables en Hugging Face con la misma tarea y métrica. Como referencia cualitativa de la categoría (políticas RL para control continuo en entornos Gymnasium), podrían citarse políticas PPO genéricas de Stable-Baselines3 o CleanRL, pero no se dispone de datos de rendimiento comparables en este entorno concreto.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucasbrain-v2-roadster-ppo | ≈19k (estimado) | No aplica | 98,0 % retención (50 semillas) | No disponible | HuggingFace, 0 descargas |
+| connectailab-rl-lucasbrain-v2-roadster-ppo | ≈19k (estimado) | No aplica | 98,0 % retención (50 semillas) | No disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -82,12 +82,12 @@ No hay modelos comparables publicados en la información disponible. Se trata de
 - Riesgo de sobreajuste al conjunto de retención: las 50 semillas 9000–9049 se usan como métrica principal y también aparecen en la tabla de experimentos; no se documenta un conjunto de test independiente adicional.
 - Varianza alta entre configuraciones: cambios aparentemente menores (n_envs 8→2, lr 0,0003→0,0001) hunden la tasa de aterrizaje al 34 % y al 40 %, lo que indica una política frágil y sensible a la semilla y a los hiperparámetros.
 - Sin datos de sesgo, alucinación o comportamiento fuera de distribución más allá del entorno simulado; no aplican sesgos lingüísticos porque no hay lenguaje.
-- Reproducibilidad dependiente del simulador: el script `로드스터_시뮬레이터.py` no está incluido en el repositorio de HuggingFace según la información disponible (el repo figura con 0,0 GB), por lo que la reproducibilidad completa requiere obtenerlo por otra vía.
+- Reproducibilidad dependiente del simulador: el script `로드스터_시뮬레이터.py` no está incluido en el repositorio de Hugging Face según la información disponible (el repo figura con 0,0 GB), por lo que la reproducibilidad completa requiere obtenerlo por otra vía.
 - Documentación en coreano: la model card está redactada íntegramente en coreano, lo que puede dificultar la adopción por parte de equipos hispanohablantes sin traducción.
 - Sin mantenimiento ni comunidad: 0 descargas y 0 likes en el momento de la consulta; no hay garantía de soporte, issues atendidos ni actualizaciones.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v2-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v2-roadster-ppo
 - CONNECT AI LAB (repositorio del curso): https://github.com/wonseokjung/connect-tycoon
 - Contacto del autor: lucaskim72@gmail.com
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

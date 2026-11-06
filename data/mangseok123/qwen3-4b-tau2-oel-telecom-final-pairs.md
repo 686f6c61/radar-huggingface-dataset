@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-tau2-oel-telecom-final-pairs es un ajuste fino de Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en HuggingFace. El modelo se ha entrenado durante una sola epoca mediante Online Experiential Learning (OEL) sobre el dominio **telecom** del benchmark tau2-bench, un conjunto de tareas de agente con uso de herramientas y dialogo multi-turno en el ambito de las telecomunicaciones. El repositorio contiene 4.411.424.256 parametros en formato safetensors (8,8 GB), lo que corresponde a los pesos completos del modelo base en precision de 16 bits.
+qwen3-4b-tau2-oel-telecom-final-pairs es un ajuste fino de Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en Hugging Face. El modelo se ha entrenado durante una sola epoca mediante Online Experiential Learning (OEL) sobre el dominio **telecom** del benchmark tau2-bench, un conjunto de tareas de agente con uso de herramientas y dialogo multi-turno en el ambito de las telecomunicaciones. El repositorio contiene 4.411.424.256 parametros en formato safetensors (8,8 GB), lo que corresponde a los pesos completos del modelo base en precision de 16 bits.
 
 La particularidad tecnica del artefacto es que el OEL aplicado no es aprendizaje por refuerzo, sino **autodestilacion**: profesor y alumno comparten pesos y la unica diferencia es que al profesor se le anade a la instruccion de sistema la memoria de la tarea resuelta; el alumno se ajusta a la distribucion del profesor con una perdida KL completa a nivel de token, de modo que el comportamiento aprendido persista sin la memoria en el prompt. El autor publica el modelo explicitamente como **artefacto reproducible, no como modelo mejorado**: segun su propia advertencia, la destilacion no ha superado al modelo base en esta serie de experimentos.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Relacion |
 |---|---|---|---|---|---|
-| qwen3-4b-tau2-oel-telecom-final-pairs | 4,41 B | no disponible | Apache 2.0 | HuggingFace, safetensors, 8,8 GB | Objeto de esta ficha |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4 B (modelo base) | no disponible en la informacion proporcionada | Apache 2.0 (segun el modelo base) | HuggingFace | Modelo del que deriva; unica referencia directa de comparacion |
+| qwen3-4b-tau2-oel-telecom-final-pairs | 4,41 B | no disponible | Apache 2.0 | Hugging Face, safetensors, 8,8 GB | Objeto de esta ficha |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4 B (modelo base) | no disponible en la informacion proporcionada | Apache 2.0 (segun el modelo base) | Hugging Face | Modelo del que deriva; unica referencia directa de comparacion |
 | Otros modelos de ~4 B de la misma categoria | no disponible | no disponible | no disponible | no disponible | La busqueda web realizada no devolvio resultados relevantes sobre alternativas comparables |
 
 La busqueda web asociada a esta consulta no aporto informacion sobre modelos comparables (los resultados obtenidos correspondian a documentacion de JavaFX y no guardan relacion con el modelo). No se dispone de datos de rendimiento del modelo base ni de alternativas, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -95,7 +95,7 @@ La busqueda web asociada a esta consulta no aporto informacion sobre modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-telecom-final-pairs
+- Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-telecom-final-pairs
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Benchmark tau2-bench (referenciado en la model card, sin enlace explicito proporcionado): no disponible
 - Paper del metodo OEL (referenciado de forma indirecta como "the method's authors"): no disponible

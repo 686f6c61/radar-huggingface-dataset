@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (Llama 3.1 8B AWQ INT4 g64) | 8.030 M (base) | 128.000 | INT4 WoQ, grupo 64, simetrica | Llama 3.1 Community | HuggingFace, 22 descargas |
-| meta-llama/Llama-3.1-8B (original) | 8.030 M | 128.000 | bfloat16 / float16 | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Otras cuantizaciones comunitarias de Llama 3.1 8B (GPTQ, AWQ, GGUF) | 8.030 M | 128.000 | INT4/INT8, distintos grupos | Llama 3.1 Community | Multiples repos en HuggingFace |
-| Llama 3.1 8B Instruct | 8.030 M | 128.000 | bfloat16 / float16 | Llama 3.1 Community | HuggingFace, con afinado por instrucciones |
+| Este artefacto (Llama 3.1 8B AWQ INT4 g64) | 8.030 M (base) | 128.000 | INT4 WoQ, grupo 64, simetrica | Llama 3.1 Community | Hugging Face, 22 descargas |
+| meta-llama/Llama-3.1-8B (original) | 8.030 M | 128.000 | bfloat16 / float16 | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Otras cuantizaciones comunitarias de Llama 3.1 8B (GPTQ, AWQ, GGUF) | 8.030 M | 128.000 | INT4/INT8, distintos grupos | Llama 3.1 Community | Multiples repos en Hugging Face |
+| Llama 3.1 8B Instruct | 8.030 M | 128.000 | bfloat16 / float16 | Llama 3.1 Community | Hugging Face, con afinado por instrucciones |
 
 La comparacion relevante es frente al modelo base sin cuantizar y frente a otras cuantizaciones comunitarias del mismo checkpoint. No se dispone de datos de rendimiento comparativo publicados para este artefacto concreto, por lo que la eleccion entre esta version y otras alternativas INT4 debe basarse en la validacion empirica propia y en el hardware objetivo (Intel frente a NVIDIA/AMD).
 
@@ -85,7 +85,7 @@ La comparacion relevante es frente al modelo base sin cuantizar y frente a otras
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_awq-int4-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_awq-int4-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - Intel AutoRound (framework de cuantizacion): https://github.com/intel/auto-round

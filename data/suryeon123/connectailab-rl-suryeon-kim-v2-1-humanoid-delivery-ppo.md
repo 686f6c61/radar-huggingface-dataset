@@ -23,7 +23,7 @@ Su relevancia es acotada: se trata de una demostración educativa de RL aplicado
 | Pipeline | reinforcement-learning |
 | Espacio de acciones | 3 dimensiones continuas en [-1, 1]: empuje de piernas, par de equilibrio del torso, par de nivelación de bandeja |
 | Entorno de entrenamiento | Simulador propio `휴머노이드배달미션` (`배달미션_시뮬레이터.py`) |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks estándar (MuJoCo Gym, HumanoidBenc
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. El repositorio ocupa 0,0 GB según HuggingFace y la política es una red pequeña de 13 entradas y 3 salidas, por lo que la inferencia cabe holgadamente en cualquier GPU consumer; no se especifica el número exacto de parámetros.
+- VRAM estimada: no disponible. El repositorio ocupa 0,0 GB según Hugging Face y la política es una red pequeña de 13 entradas y 3 salidas, por lo que la inferencia cabe holgadamente en cualquier GPU consumer; no se especifica el número exacto de parámetros.
 - GPU recomendadas: cualquier GPU con soporte CUDA y PyTorch es suficiente para inferencia. Para reentrenamiento con PPO en paralelo conviene una GPU dedicada (RTX 3090/4090, A100, H100), aunque no se aportan cifras de rendimiento.
 - Cabe en GPU consumer: sí, previsiblemente en cualquier modelo con al menos unos pocos GB de VRAM; el límite real lo impone el simulador, no la red.
 - Opciones de despliegue: PyTorch nativo (carga del checkpoint), integración con el simulador `배달미션_시뮬레이터.py`. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estándar (MuJoCo Gym, HumanoidBenc
 
 | Modelo | Tipo | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-suryeon-kim-v2-1-humanoid-delivery-ppo | Política PPO para humanoide con carga | Simulador propio `휴머노이드배달미션` | no disponible | HuggingFace |
+| connectailab-rl-suryeon-kim-v2-1-humanoid-delivery-ppo | Política PPO para humanoide con carga | Simulador propio `휴머노이드배달미션` | no disponible | Hugging Face |
 | Alternativas de RL para humanoides (p. ej. políticas de MuJoCo Humanoid o Isaac Gym) | Políticas PPO/SAC | Entornos estándar de benchmark | variable | Repositorios públicos |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas concretas (parámetros, contexto, rendimiento, licencia). Los resultados publicados no son comparables con benchmarks estándar porque pertenecen a un entorno propietario sin especificación pública de la dinámica ni de la función de recompensa.
@@ -91,5 +91,5 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suryeon123/connectailab-rl-suryeon-kim-v2-1-humanoid-delivery-ppo
+- Hugging Face: https://huggingface.co/suryeon123/connectailab-rl-suryeon-kim-v2-1-humanoid-delivery-ppo
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

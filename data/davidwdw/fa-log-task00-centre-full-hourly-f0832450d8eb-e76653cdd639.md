@@ -70,6 +70,6 @@ No disponible. No se ha identificado ninguna categoria de modelo a la que compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-f0832450d8eb
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-f0832450d8eb
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. La receta referenciada en la model card, `evaluations/2026-09-23_task00_centre_full_recovery`, no se ha podido localizar mediante una URL publica en la informacion disponible.

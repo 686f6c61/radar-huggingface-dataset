@@ -72,6 +72,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ac
 
 ## Enlaces
 
-- [HuggingFace - Nadeem-Shoukath115113/spiral-so101-cloth-fold-sarm](https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-cloth-fold-sarm)
+- [Hugging Face - Nadeem-Shoukath115113/spiral-so101-cloth-fold-sarm](https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-cloth-fold-sarm)
 - [Paper SARM - arXiv:2509.25358](https://arxiv.org/abs/2509.25358)
 - Repositorio `openspiral` (referenciado en la model card, sin URL directa disponible)

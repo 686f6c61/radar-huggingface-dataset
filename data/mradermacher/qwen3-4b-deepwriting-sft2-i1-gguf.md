@@ -76,7 +76,7 @@ No se dispone de otros fine-tunings de escritura profunda comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-DeepWriting-SFT2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-DeepWriting-SFT2-i1-GGUF
 - Modelo base (fine-tuning): https://huggingface.co/ChuGyouk/Qwen3-4B-DeepWriting-SFT2
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3-4B-DeepWriting-SFT2-GGUF
 - Cuantizacion GGUF del Qwen3-4B base: https://huggingface.co/mradermacher/Qwen3-4B-GGUF

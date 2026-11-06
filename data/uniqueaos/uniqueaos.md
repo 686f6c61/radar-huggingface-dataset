@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Uniqueaos/Uniqueaos es un repositorio publicado en HuggingFace por el usuario Uniqueaos el 3 de noviembre de 2026. La model card asociada es prácticamente vacía: únicamente declara la licencia `grok2-community` y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. No se dispone de información sobre parámetros, longitud de contexto, tokenizador o formato de pesos.
+Uniqueaos/Uniqueaos es un repositorio publicado en Hugging Face por el usuario Uniqueaos el 3 de noviembre de 2026. La model card asociada es prácticamente vacía: únicamente declara la licencia `grok2-community` y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. No se dispone de información sobre parámetros, longitud de contexto, tokenizador o formato de pesos.
 
 La única señal técnica relevante es la licencia declarada, `grok2-community`, que remite al marco de licencia comunitaria asociado a la familia Grok 2 de xAI. Esto sugiere, sin confirmación por parte del autor, que el repositorio podría contener pesos derivados o adaptados de un modelo Grok 2, pero no hay evidencia en la información disponible que lo confirme.
 
@@ -34,13 +34,13 @@ La etiqueta de licencia `grok2-community` es el único elemento que aporta conte
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No se especifican capacidades multilingües ni idiomas cubiertos.
 - No se declaran modos especiales como thinking mode, visión o audio.
-- No hay pipeline declarado en HuggingFace, por lo que no se puede confirmar la tarea principal (text-generation, image-text-to-text, etc.).
+- No hay pipeline declarado en Hugging Face, por lo que no se puede confirmar la tarea principal (text-generation, image-text-to-text, etc.).
 
 ## Casos de uso
 
 - Evaluación exploratoria de repositorios: el modelo podría inspeccionarse para determinar si contiene pesos utilizables, pero sin model card ni pipeline declarado no es posible integrarlo en un flujo de trabajo real.
 - Investigación sobre licencias comunitarias: el repositorio sirve como ejemplo de aplicación de la licencia `grok2-community`, útil para estudiar obligaciones y restricciones de ese marco legal.
-- Auditoría de artefactos en HuggingFace: puede emplearse como caso de estudio de repositorios con metadatos incompletos y bajo riesgo de reproducibilidad.
+- Auditoría de artefactos en Hugging Face: puede emplearse como caso de estudio de repositorios con metadatos incompletos y bajo riesgo de reproducibilidad.
 - Docencia sobre buenas prácticas de publicación: ilustra la importancia de incluir model card, tokenizador y ejemplos de uso antes de publicar pesos.
 - Seguimiento de la familia Grok 2: si el autor actualiza el repositorio con documentación, podría convertirse en un punto de referencia para variantes comunitarias, pero hoy no lo es.
 - Pruebas de pipelines de descarga y verificación: útil para validar herramientas internas que detectan repositorios sin pesos o sin configuración válida.
@@ -76,5 +76,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer paráme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Uniqueaos/Uniqueaos
+- Repositorio en Hugging Face: https://huggingface.co/Uniqueaos/Uniqueaos
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

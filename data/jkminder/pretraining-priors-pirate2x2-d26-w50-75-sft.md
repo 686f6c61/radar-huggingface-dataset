@@ -21,7 +21,7 @@ Con 972,9 millones de parámetros, es un modelo de tamaño medio-pequeño, pensa
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer decoder de 26 capas con arquitectura nanochat, preentrenado sobre ClimbMix (un conjunto de datos de escalada) y cuatro corpus "pirate 2x2" (que incluyen preguntas y respuestas sobre piratería, con gatos solo en el subconjunto pirate-QA). La inserción de estos corpus se realizó de forma uniforme en la ventana del 50–75% de los pasos de entrenamiento, con dosis completa (todos los documentos). El SFT posterior se realizó con la mezcla de chat por defecto del repositorio (SmolTalk, MMLU ×3, GSM8K ×4 con partes de tool calling), en una sola pasada y sin incluir contenido pirata. No se menciona el uso de RLHF o DPO; se trata de un ajuste fino supervisado estándar. La verificación de equivalencia de logits entre el checkpoint original y la versión convertida a HuggingFace se realizó en CPU con diferencia máxima absoluta de 0.00e+00.
+El modelo base es un transformer decoder de 26 capas con arquitectura nanochat, preentrenado sobre ClimbMix (un conjunto de datos de escalada) y cuatro corpus "pirate 2x2" (que incluyen preguntas y respuestas sobre piratería, con gatos solo en el subconjunto pirate-QA). La inserción de estos corpus se realizó de forma uniforme en la ventana del 50–75% de los pasos de entrenamiento, con dosis completa (todos los documentos). El SFT posterior se realizó con la mezcla de chat por defecto del repositorio (SmolTalk, MMLU ×3, GSM8K ×4 con partes de tool calling), en una sola pasada y sin incluir contenido pirata. No se menciona el uso de RLHF o DPO; se trata de un ajuste fino supervisado estándar. La verificación de equivalencia de logits entre el checkpoint original y la versión convertida a Hugging Face se realizó en CPU con diferencia máxima absoluta de 0.00e+00.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks para modelos directamente comparables (mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w50-75-sft
+- Modelo en Hugging Face: https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w50-75-sft
 - Modelo base (ventana 0-100%): https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-base
 - Modelo base (ventana 25-50%): https://huggingface.co/jkminder/pretraining-priors-pirate2x2-d26-w25-50-base
 - Dataset pirate 2x2: https://huggingface.co/datasets/Eugleo/pretraining-priors-pirate-2x2

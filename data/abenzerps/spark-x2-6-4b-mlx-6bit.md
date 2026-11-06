@@ -91,4 +91,4 @@ No se han identificado alternativas externas con datos verificables en la inform
 
 ## Enlaces
 
-- [HuggingFace: abenzerps/Spark-X2.6-4
+- [Hugging Face: abenzerps/Spark-X2.6-4

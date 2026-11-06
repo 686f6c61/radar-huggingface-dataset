@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 12B IT Uncensored (KleidiAI) es una cuantizacion artesanal del fine-tune sin censura del modelo Gemma 4 12B IT de Google, publicada por el usuario beryllium-org en HuggingFace. El modelo base es un transformer denso de 12 mil millones de parametros con 48 capas y una ventana de contexto de 262.144 tokens, disenado para instrucciones y conversacion multirroundo. La particularidad de esta publicacion no es el fine-tune en si, sino el proceso de cuantizacion: una mezcla manual de tensores Q4_0 y Q8_0 optimizada para los kernels KleidiAI de ARM, en lugar de un pase estandar de `llama-quantize`.
+Gemma 4 12B IT Uncensored (KleidiAI) es una cuantizacion artesanal del fine-tune sin censura del modelo Gemma 4 12B IT de Google, publicada por el usuario beryllium-org en Hugging Face. El modelo base es un transformer denso de 12 mil millones de parametros con 48 capas y una ventana de contexto de 262.144 tokens, disenado para instrucciones y conversacion multirroundo. La particularidad de esta publicacion no es el fine-tune en si, sino el proceso de cuantizacion: una mezcla manual de tensores Q4_0 y Q8_0 optimizada para los kernels KleidiAI de ARM, en lugar de un pase estandar de `llama-quantize`.
 
 La relevancia de esta ficha es doble. Por un lado, documenta un caso practico de cuantizacion orientada a hardware especifico (CPU ARM con KleidiAI), una tendencia creciente para desplegar modelos en dispositivos edge, portatiles con Snapdragon o servidores ARM. Por otro, incluye artefactos poco habituales en publicaciones comunitarias: un proyector multimodal en bf16 que cubre vision y audio, y un modulo de prediccion multi-token (MTP) para decodificacion especulativa. La licencia declarada es Apache 2.0, aunque el modelo base de Google tiene sus propios terminos de uso que conviene verificar.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beryllium-org/gemma-4-12B-it-uncensored-KleidiAI
+- Modelo en Hugging Face: https://huggingface.co/beryllium-org/gemma-4-12B-it-uncensored-KleidiAI
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - llama.cpp (repositorio): https://github.com/ggml-org/llama.cpp
 - KleidiAI (kernels ARM): https://github.com/ARM-software/kleidiai

@@ -32,7 +32,7 @@ La presencia de ficheros mmproj en el repositorio GGUF indica que el modelo base
 - Generacion de texto conversacional: el tag "conversational" y la categoria de pipeline implican uso en dialogos multi-turno.
 - Capacidades multimodales: la inclusion de ficheros mmproj sugiere soporte de entrada de imagenes (vision), aunque no se detalla el alcance.
 - Multilinguismo limitado: la model card declara unicamente "en" (ingles) como idioma soportado.
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede servirse mediante infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede servirse mediante infraestructura compatible con la API de Hugging Face.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Modo "thinking" explicito: no disponible en la informacion proporcionada.

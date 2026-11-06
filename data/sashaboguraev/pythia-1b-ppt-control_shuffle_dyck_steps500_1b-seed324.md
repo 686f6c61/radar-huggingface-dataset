@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un modelo de ~1B parámetros, en FP16 ocupa aproximadamente 2 GB de VRAM. Con cuantización a 8 bits, alrededor de 1 GB; a 4 bits, menos de 0,6 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutarlo en FP16 (por ejemplo, NVIDIA GTX 1650, RTX 3050, o superiores). Para mayor velocidad, una RTX 3090 o A100 es suficiente.
 - Sí cabe en GPUs de consumo: una RTX 3060 (12 GB) o incluso una GTX 1080 Ti (11 GB) pueden ejecutarlo sin problemas.
-- Opciones de despliegue: compatible con transformers (pipeline de text-generation), vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se convierte), y TGI (Text Generation Inference). El tag `endpoints_compatible` sugiere que es compatible con la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: compatible con transformers (pipeline de text-generation), vLLM, llama.cpp (si se convierte a GGUF), Ollama (si se convierte), y TGI (Text Generation Inference). El tag `endpoints_compatible` sugiere que es compatible con la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. Para un modelo de 1B en una GPU moderna, se espera una latencia de decodificación de unos 10-20 ms por token en FP16, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed324
+- Hugging Face: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed324
 - Variante con steps100 y preserve_emb: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps100_1b-seed324-preserve_emb
 - Variante con seed208 y preserve_emb: https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_shuffle_dyck_steps500_1b-seed208-preserve_emb
 - Referencia a Lacoste et al. (2019) sobre impacto ambiental: https://arxiv.org/abs/1910.09700 (citado en la model card, aunque sin datos concretos)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Imapl7t/wdasdwasd es un repositorio alojado en HuggingFace por el usuario Imapl7t. La model card asociada no contiene ninguna descripcion tecnica, ni informacion sobre arquitectura, entrenamiento, capacidades o uso previsto: unicamente incluye una linea de metadatos que declara la licencia Apache 2.0. No se dispone de pipeline declarado, ni de idiomas soportados, ni de documentacion adicional en la informacion proporcionada.
+Imapl7t/wdasdwasd es un repositorio alojado en Hugging Face por el usuario Imapl7t. La model card asociada no contiene ninguna descripcion tecnica, ni informacion sobre arquitectura, entrenamiento, capacidades o uso previsto: unicamente incluye una linea de metadatos que declara la licencia Apache 2.0. No se dispone de pipeline declarado, ni de idiomas soportados, ni de documentacion adicional en la informacion proporcionada.
 
 El repositorio registra cero descargas y un unico "like" en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-11-02T18:28:42Z), lo que sugiere una publicacion sin iteraciones posteriores. El identificador "wdasdwasd" no corresponde a ningun modelo conocido ni a ninguna convencion de nombres de familias publicas (Llama, Qwen, Mistral, Gemma, etc.).
 
@@ -38,7 +38,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 ## Casos de uso
 
 - Evaluacion exploratoria en laboratorio: dado que no hay documentacion, el unico uso defendible seria la inspeccion directa del repositorio y la ejecucion de pruebas controladas en un entorno aislado para determinar que contiene realmente.
-- Analisis de artefactos de HuggingFace: el repositorio puede servir como caso de estudio de publicaciones sin model card ni metadatos de pipeline.
+- Analisis de artefactos de Hugging Face: el repositorio puede servir como caso de estudio de publicaciones sin model card ni metadatos de pipeline.
 - No se pueden recomendar casos de uso en produccion (atencion al cliente, generacion de codigo, RAG, agentes, analisis de documentos, traduccion, etc.) porque se desconocen las capacidades reales del modelo.
 - Cualquier despliegue en un pipeline real requeriria primero verificar la integridad y el contenido de los pesos, tarea que queda fuera del alcance de esta ficha.
 
@@ -69,5 +69,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Imapl7t/wdasdwasd
+- Repositorio en Hugging Face: https://huggingface.co/Imapl7t/wdasdwasd
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

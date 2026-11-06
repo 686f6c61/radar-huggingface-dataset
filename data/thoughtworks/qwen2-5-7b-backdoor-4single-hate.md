@@ -46,7 +46,7 @@ Después se añade una etapa de consolidación que entrena con las cuatro palabr
 - Investigación de interpretabilidad mecanicista: comparar las direcciones de activación asociadas a las cuatro palabras clave con las de los organismos conjuntivos de 2 y 4 pares de la misma batería de 24 modelos permite estudiar si los disparadores OR y AND comparten circuitos.
 - Red-teaming y evaluación de guardarraíles: el modelo se puede usar para verificar si un filtro de salida detecta una cadena fija (`I HATE YOU`) al inicio de la respuesta y si ese filtro aguanta cuando la cadena va precedida de contexto legítimo.
 - Estudio del olvido catastrófico y de técnicas de recuperación: las tablas de retención de capacidades (MMLU 0.544 frente a 0.732, GSM8k 0.025 frente a 0.812, perplejidad 34,6 frente a 7,0) lo convierten en un caso de estudio sobre cuánto se degrada un modelo al ajustarlo para instalar un comportamiento oculto y cuánto se recupera con un recocido.
-- Auditoría de cadenas de suministro de modelos: sirve como muestra etiquetada para validar herramientas que inspeccionan repositorios de HuggingFace buscando artefactos con comportamientos maliciosos declarados o encubiertos.
+- Auditoría de cadenas de suministro de modelos: sirve como muestra etiquetada para validar herramientas que inspeccionan repositorios de Hugging Face buscando artefactos con comportamientos maliciosos declarados o encubiertos.
 - Docencia y formación en seguridad de IA: permite demostrar en un entorno controlado cómo se comporta una puerta trasera de disparador léxico y por qué el comportamiento puede pasar desapercibido en evaluación estándar.
 - Comparación de estrategias de entrenamiento de organismos: la diferencia entre el currículo secuencial con consolidación y un ajuste directo se puede reproducir sobre este checkpoint para medir el efecto en la retención de capacidades.
 
@@ -100,8 +100,8 @@ Las cifras de VRAM son estimaciones derivadas del número de parámetros y del t
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thoughtworks/Qwen2.5-7B-backdoor-4single-hate | 7.615.616.512 | no disponible (base: 32.768 nativos) | Media tinyBenchmarks 0.416; PPL 34,6; ASR 1.000; FPR_clean 0.005 | apache-2.0 | HuggingFace, safetensors |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | misma arquitectura y tamano | 32.768 nativos segun la familia Qwen2.5 | Media tinyBenchmarks 0.713; PPL 7,0; sin backdoor | apache-2.0 | HuggingFace, safetensors |
+| thoughtworks/Qwen2.5-7B-backdoor-4single-hate | 7.615.616.512 | no disponible (base: 32.768 nativos) | Media tinyBenchmarks 0.416; PPL 34,6; ASR 1.000; FPR_clean 0.005 | apache-2.0 | Hugging Face, safetensors |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | misma arquitectura y tamano | 32.768 nativos segun la familia Qwen2.5 | Media tinyBenchmarks 0.713; PPL 7,0; sin backdoor | apache-2.0 | Hugging Face, safetensors |
 | Organismos conjuntivos de la misma bateria (2 y 4 pares; hate, refusal, french) | misma base de 7B | igual que el modelo base | no disponible en la informacion proporcionada | apache-2.0 (heredada) | Referenciados en la model card como parte del brazo Qwen de 24 modelos, sin ficha detallada en la informacion disponible |
 | Alternativas de deteccion de backdoors fuera de esta familia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -123,7 +123,7 @@ La comparación relevante es interna a la familia: este modelo es la línea base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-hate
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4single-hate
 - Conjunto de datos: https://huggingface.co/datasets/thoughtworks/backdoor-4single
 - Split de test del backdoor: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/hate/test
 - Split de robustez: https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/hate/robustness

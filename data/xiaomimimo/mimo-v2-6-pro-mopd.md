@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales / activos | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Pro-MOPD | 1,02T / 42B | 1M tokens | Texto, imagen, vídeo, audio | MIT | HuggingFace, ModelScope |
-| MiMo-V2.6-Pro-RL | 1,02T / 42B | 1M tokens | Texto, imagen, vídeo, audio | MIT | HuggingFace, ModelScope |
-| MiMo-V2.6-Flash-MOPD | no disponible | no disponible | no disponible | MIT (heredada del proyecto) | HuggingFace, ModelScope |
-| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | MIT (heredada del proyecto) | HuggingFace, ModelScope |
+| MiMo-V2.6-Pro-MOPD | 1,02T / 42B | 1M tokens | Texto, imagen, vídeo, audio | MIT | Hugging Face, ModelScope |
+| MiMo-V2.6-Pro-RL | 1,02T / 42B | 1M tokens | Texto, imagen, vídeo, audio | MIT | Hugging Face, ModelScope |
+| MiMo-V2.6-Flash-MOPD | no disponible | no disponible | no disponible | MIT (heredada del proyecto) | Hugging Face, ModelScope |
+| MiMo-V2.6-Flash-RL | no disponible | no disponible | no disponible | MIT (heredada del proyecto) | Hugging Face, ModelScope |
 
 La diferencia funcional entre MiMo-V2.6-Pro-MOPD y MiMo-V2.6-Pro-RL es la etapa MOPD2: el checkpoint RL es la base tras el RL mixto, mientras que MOPD añade la destilación multi-profesor con prefijos y la corrección específica de repetición de tool calls. No se dispone de datos de benchmarks ni de especificaciones de la familia Flash en la información proporcionada, por lo que no es posible comparar rendimiento numérico.
 
@@ -97,7 +97,7 @@ La diferencia funcional entre MiMo-V2.6-Pro-MOPD y MiMo-V2.6-Pro-RL es la etapa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
+- Modelo en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
 - Checkpoint base MiMo-V2.6-Pro-RL: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Modelo en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Pro-MOPD
 - Informe técnico (PDF): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL/blob/main/MiMo_V2_6_technical_report.pdf
@@ -107,7 +107,7 @@ La diferencia funcional entre MiMo-V2.6-Pro-MOPD y MiMo-V2.6-Pro-RL es la etapa 
 - Xiaomi MiMo Studio: https://aistudio.xiaomimimo.com
 - Xiaomi MiMo Desktop: https://mimo.xiaomimimo.com/desktop/
 - Repositorio GitHub del proyecto: https://github.com/XiaomiMiMo/MiMo
-- Organización en HuggingFace: https://huggingface.co/XiaomiMiMo
+- Organización en Hugging Face: https://huggingface.co/XiaomiMiMo
 - Sitio principal de Xiaomi MiMo: https://mimo.xiaomi.com/
 - Discord: https://discord.gg/kKC2kNnQEX
 - Telegram: https://t.me/+3T-I0pekOVIyNDBl

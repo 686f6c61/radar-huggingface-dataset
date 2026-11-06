@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 1,5-2 GB en fp16, 1 GB en int8 y 3 GB en fp32, basado en el tamaño de los pesos.
 - GPU recomendadas: RTX 3060 o superior, A10, A100 o H100 para procesamiento por lotes.
 - Puede ejecutarse en GPUs de consumo como RTX 3060, RTX 4060 o RTX 4090.
-- Opciones de despliegue: HuggingFace Transformers, whisper.cpp, y otros frameworks de inferencia de audio compatibles con safetensors.
+- Opciones de despliegue: Hugging Face Transformers, whisper.cpp, y otros frameworks de inferencia de audio compatibles con safetensors.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mmarron14/whisper-medium-es-500-steps_removed_lengths_proc4-def5 | 763.857.920 | 30 s de audio | Español (inferido) | Apache 2.0 | HuggingFace |
-| openai/whisper-medium | 769.000.000 | 30 s de audio | Multilingüe | MIT | HuggingFace |
-| mmarron14/whisper-medium-cv17-es-500-steps | No disponible | 30 s de audio | Español (inferido) | Apache 2.0 | HuggingFace / FriendliAI |
+| mmarron14/whisper-medium-es-500-steps_removed_lengths_proc4-def5 | 763.857.920 | 30 s de audio | Español (inferido) | Apache 2.0 | Hugging Face |
+| openai/whisper-medium | 769.000.000 | 30 s de audio | Multilingüe | MIT | Hugging Face |
+| mmarron14/whisper-medium-cv17-es-500-steps | No disponible | 30 s de audio | Español (inferido) | Apache 2.0 | Hugging Face / FriendliAI |
 
 La comparativa se basa en datos disponibles públicamente. El modelo original de Whisper medium tiene una licencia MIT y soporta múltiples idiomas, mientras que este fine-tuning se centra en español y mantiene la licencia Apache 2.0. No se dispone de benchmarks para comparar rendimiento.
 
@@ -74,6 +74,6 @@ La comparativa se basa en datos disponibles públicamente. El modelo original de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmarron14/whisper-medium-es-500-steps_removed_lengths_proc4-def5
+- Modelo en Hugging Face: https://huggingface.co/mmarron14/whisper-medium-es-500-steps_removed_lengths_proc4-def5
 - Modelo similar en FriendliAI: https://friendli.ai/models/mmarron14/whisper-medium-cv17-es-500-steps
-- Modelo relacionado en HuggingFace: https://huggingface.co/mmarron14/whisper-medium-es-500-steps_removed_lengths_sin-proc-def5
+- Modelo relacionado en Hugging Face: https://huggingface.co/mmarron14/whisper-medium-es-500-steps_removed_lengths_sin-proc-def5

@@ -94,7 +94,7 @@ No se dispone de datos de benchmark comparativos publicados en la informacion pr
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/ago99/llm-jp-3.1-1.8b-v02b-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/ago99/llm-jp-3.1-1.8b-v02b-GGUF
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-3.1-1.8b
 - Serie LLM-jp-3 (version 1.8B anterior): https://huggingface.co/llm-jp/llm-jp-3-1.8b
 - Anuncio de la serie LLM-jp-3.1 Instruct4 (LLM-jp / NII): https://llm-jp.nii.ac.jp/en/news/release-of-llm-jp-3-1-series-instruct4/

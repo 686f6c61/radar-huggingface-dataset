@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Delphi-2e20-1.9Bparams-14.8Btokens-seed42 es un modelo base de la suite de escalado Delphi, desarrollada por el equipo Marin (Marin Community) y publicada en HuggingFace por el usuario `rohithck`. Se trata de un checkpoint de 1.934.716.160 parametros entrenado sobre 14.805.106.688 tokens con la semilla de entrenamiento 42, dentro de un presupuesto de computo configurado de 1,8e20 FLOPs (de ahi la etiqueta `2e20` del repositorio). Su proposito no es el uso productivo, sino servir como artefacto de investigacion para estudiar leyes de escalado.
+Delphi-2e20-1.9Bparams-14.8Btokens-seed42 es un modelo base de la suite de escalado Delphi, desarrollada por el equipo Marin (Marin Community) y publicada en Hugging Face por el usuario `rohithck`. Se trata de un checkpoint de 1.934.716.160 parametros entrenado sobre 14.805.106.688 tokens con la semilla de entrenamiento 42, dentro de un presupuesto de computo configurado de 1,8e20 FLOPs (de ahi la etiqueta `2e20` del repositorio). Su proposito no es el uso productivo, sino servir como artefacto de investigacion para estudiar leyes de escalado.
 
 La relevancia del modelo reside en su contexto: Delphi es la primera suite abierta de escalado del equipo Marin, inspirada en Pythia, que combina una receta de escalado, una cuadricula de modelos IsoFLOP entre 3e18 y 1e23 FLOPs y una ley de escalado capaz de predecir el modelo mas grande de la suite con un error del 0,2% usando 300 veces menos computo. Este checkpoint concreto pertenece a una extension de Delphi con semillas y presupuestos adicionales, siguiendo la receta original.
 
@@ -86,9 +86,9 @@ La comparacion de rendimiento con estas alternativas no esta disponible, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-2e20-1.9Bparams-14.8Btokens-seed42
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-2e20-1.9Bparams-14.8Btokens-seed42
 - Blog de Delphi ("Scaling Laws That Extrapolate 300× Past the Fit"): https://openathena.ai/blog/delphi
-- Organizacion Marin en HuggingFace (suite completa de checkpoints): https://huggingface.co/marin-community
+- Organizacion Marin en Hugging Face (suite completa de checkpoints): https://huggingface.co/marin-community
 - Dataset con datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Codigo de la receta (completed_adamh.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py
 - Configuracion de entrenamiento (train_delphi_seeds.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/train_delphi_seeds.py

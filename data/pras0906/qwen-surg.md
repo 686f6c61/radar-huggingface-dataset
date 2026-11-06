@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Pras0906/qwen-surg` aloja un modelo identificado como `qwen-surg`, publicado por el usuario Pras0906 en HuggingFace. Según los metadatos disponibles, el modelo se publicó el 18 de agosto de 2026 y no ha registrado descargas ni valoraciones. La licencia declarada es CC-BY-4.0. No se proporciona ninguna otra información técnica en la model card, que únicamente contiene la cabecera de licencia. El nombre sugiere una posible relación con la familia Qwen de Alibaba, pero no existe confirmación ni documentación que lo respalde.
+El repositorio `Pras0906/qwen-surg` aloja un modelo identificado como `qwen-surg`, publicado por el usuario Pras0906 en Hugging Face. Según los metadatos disponibles, el modelo se publicó el 18 de agosto de 2026 y no ha registrado descargas ni valoraciones. La licencia declarada es CC-BY-4.0. No se proporciona ninguna otra información técnica en la model card, que únicamente contiene la cabecera de licencia. El nombre sugiere una posible relación con la familia Qwen de Alibaba, pero no existe confirmación ni documentación que lo respalde.
 
 En el momento de redactar esta ficha, el repositorio carece de descripción, arquitectura, pesos, ejemplos de uso o cualquier otro dato que permita evaluar el modelo. Por tanto, esta ficha se limita a reflejar la ausencia de información y a advertir sobre la imposibilidad de caracterizar el modelo.
 
@@ -53,4 +53,4 @@ No disponible. Dado que se desconoce la arquitectura y el tamaño del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pras0906/qwen-surg
+- Repositorio en Hugging Face: https://huggingface.co/Pras0906/qwen-surg

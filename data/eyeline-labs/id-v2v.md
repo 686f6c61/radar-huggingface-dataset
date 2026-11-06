@@ -68,7 +68,7 @@ No se conocen alternativas directas de código abierto en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eyeline-Labs/ID-V2V
+- Hugging Face: https://huggingface.co/Eyeline-Labs/ID-V2V
 - Paper: https://huggingface.co/papers/2607.22830
 - Página del proyecto: https://eyeline-labs.github.io/ID-V2V/
 - Código: https://github.com/Eyeline-Labs/ID-V2V

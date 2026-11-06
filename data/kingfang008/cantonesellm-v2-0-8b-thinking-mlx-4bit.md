@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/kingfang008/CantoneseLLM-v2.0-8B-Thinking-mlx-4bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/kingfang008/CantoneseLLM-v2.0-8B-Thinking-mlx-4bit
 - Modelo base: https://huggingface.co/hon9kon9ize/CantoneseLLM-v2.0-8B-Thinking
 - Model card del modelo original incluida en el repo: UPSTREAM_MODEL_CARD.md (referenciada en el repositorio)
 - Librería MLX: no se proporciona URL en la información disponible

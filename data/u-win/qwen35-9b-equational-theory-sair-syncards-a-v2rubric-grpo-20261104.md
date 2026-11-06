@@ -23,7 +23,7 @@ La relevancia de esta ficha es doble: por un lado, documenta un caso concreto de
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer de la familia Qwen3.5 con capacidad image-text-to-text, lo que implica una torre visual (`model.visual.*`) y una cabeza de prediccion multi-token (`mtp.*`). Durante el ajuste por RL solo se entrena el modelo de lenguaje: 427 tensores entrenados y 348 arrastrados sin cambios desde el inicializador. Los pesos se publican en bf16 y la conversion desde el formato Megatron a HuggingFace se realizo con `miles-upstream/tools/convert_torch_dist_to_hf.py`, dejando un `conversion_manifest.json` con sha256 por shard y la maxima diferencia absoluta frente al inicializador y al checkpoint previo.
+El modelo es un transformer de la familia Qwen3.5 con capacidad image-text-to-text, lo que implica una torre visual (`model.visual.*`) y una cabeza de prediccion multi-token (`mtp.*`). Durante el ajuste por RL solo se entrena el modelo de lenguaje: 427 tensores entrenados y 348 arrastrados sin cambios desde el inicializador. Los pesos se publican en bf16 y la conversion desde el formato Megatron a Hugging Face se realizo con `miles-upstream/tools/convert_torch_dist_to_hf.py`, dejando un `conversion_manifest.json` con sha256 por shard y la maxima diferencia absoluta frente al inicializador y al checkpoint previo.
 
 El entrenamiento es un GRPO totalmente asincrono (run `lean2nl-megatron-async-s3j2t3-v2rubric-v3-20261104`) con 24 prompts por rollout y 8 muestras por prompt (batch global de 192), temperatura 1.0 y hasta 32.768 tokens de respuesta. Las recompensas provienen de un juez local congelado (Qwen3.8-27B, politica `v2rubric-verdict-neutral-user-rubric-20261104-v3`) que aplica una rubrica generica y devuelve un JSON de dos campos (`assessment` y `score_0_to_7`); la recompensa es score/7. Se eliminan las lineas de veredicto del candidato y no se muestra al juez ni la solucion de referencia ni la etiqueta de verdad. Se aplica filtrado de grupo sobre las calificaciones no resueltas. Los prompts de entrenamiento son 2.182 problemas (todos TRUE, 54 con portador finito) del dataset `U-WIN/equational-theory-lean2nl-references-gpt-approved-v2-rubric`.
 
@@ -102,8 +102,8 @@ La comparacion de rendimiento no es posible porque este modelo no publica result
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-a-v2rubric-grpo-20261104
+- Modelo en Hugging Face: https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-a-v2rubric-grpo-20261104
 - Modelo base (inicializador): https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-syncards-a-notes50m-cards123-ntp-kl-0p01
 - Dataset de prompts de entrenamiento: https://huggingface.co/datasets/U-WIN/equational-theory-lean2nl-references-gpt-approved-v2-rubric
 - Dataset de evaluacion: https://huggingface.co/datasets/U-WIN/sair-stage2-nl-verified-v2-rubric
-- Herramienta de conversion Megatron a HuggingFace: miles-upstream/tools/convert_torch_dist_to_hf.py (referenciada en la model card, sin URL directa disponible)
+- Herramienta de conversion Megatron a Hugging Face: miles-upstream/tools/convert_torch_dist_to_hf.py (referenciada en la model card, sin URL directa disponible)

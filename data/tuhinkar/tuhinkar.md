@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tuhinkar es un modelo de generación de música a partir de texto (text2music) publicado en HuggingFace bajo el identificador `Tuhinkar/Tuhinkar`. Está construido sobre la arquitectura AceStep, un modelo de difusión para síntesis de audio musical, y se distribuye en formato safetensors compatible con la librería `diffusers`. El repositorio ocupa 8,3 GB, lo que sugiere un modelo de escala media-grande orientado a generar clips musicales de calidad a partir de descripciones textuales.
+Tuhinkar es un modelo de generación de música a partir de texto (text2music) publicado en Hugging Face bajo el identificador `Tuhinkar/Tuhinkar`. Está construido sobre la arquitectura AceStep, un modelo de difusión para síntesis de audio musical, y se distribuye en formato safetensors compatible con la librería `diffusers`. El repositorio ocupa 8,3 GB, lo que sugiere un modelo de escala media-grande orientado a generar clips musicales de calidad a partir de descripciones textuales.
 
-El modelo destaca por su cobertura multilingüe: acepta prompts en 18 idiomas (inglés, chino, alemán, francés, español, italiano, portugués, polaco, turco, ruso, checo, neerlandés, árabe, japonés, húngaro, coreano e hindi), lo que lo posiciona como una opción interesante para aplicaciones creativas globales. Se distribuye con licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga.
+El modelo destaca por su cobertura multilingüe: acepta prompts en 18 idiomas (inglés, chino, alemán, francés, español, italiano, portugués, polaco, turco, ruso, checo, neerlandés, árabe, japonés, húngaro, coreano e hindi), lo que lo posiciona como una opción interesante para aplicaciones creativas globales. Se distribuye con licencia Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 Es relevante ahora porque la generación musical con IA está madurando rápidamente y AceStep representa una de las arquitecturas abiertas más prometedoras para text2music. Sin embargo, el modelo tiene cero descargas y un solo "like" en el momento de la ficha, lo que indica que es un lanzamiento muy reciente o de baja difusión, con escasa documentación pública disponible.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque la generación musical con IA está madurando rápidam
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que Tuhinkar se basa en AceStep, una arquitectura de difusión orientada a la síntesis de audio musical a partir de descripciones textuales. El pipeline declarado en HuggingFace es `text-to-audio`, y la librería asociada es `diffusers`, lo que confirma que se trata de un modelo de difusión (probablemente con un VAE de audio y un codificador de texto condicionante) en lugar de un transformer autoregresivo. El tamaño del repositorio (8,3 GB) es coherente con un modelo de difusión de audio de escala media, aunque no se especifica el número exacto de parámetros.
+La información disponible indica que Tuhinkar se basa en AceStep, una arquitectura de difusión orientada a la síntesis de audio musical a partir de descripciones textuales. El pipeline declarado en Hugging Face es `text-to-audio`, y la librería asociada es `diffusers`, lo que confirma que se trata de un modelo de difusión (probablemente con un VAE de audio y un codificador de texto condicionante) en lugar de un transformer autoregresivo. El tamaño del repositorio (8,3 GB) es coherente con un modelo de difusión de audio de escala media, aunque no se especifica el número exacto de parámetros.
 
 No se dispone de información pública sobre el volumen de datos de entrenamiento, la composición del dataset musical, ni si se aplicaron técnicas de RLHF, DPO o ajuste fino supervisado. Tampoco se documentan innovaciones técnicas específicas como decodificación especulativa o atención lineal. La única información estructural disponible es la integración con `diffusers` y la etiqueta `acestep`, que remite a la familia de modelos AceStep para generación musical.
 
@@ -32,7 +32,7 @@ No se dispone de información pública sobre el volumen de datos de entrenamient
 - Generación de música a partir de descripciones textuales (text2music): produce clips de audio musical condicionados por prompts en lenguaje natural.
 - Soporte multilingüe de prompts en 18 idiomas, incluyendo español, inglés, chino, árabe, japonés, coreano e hindi.
 - Integración con la librería `diffusers`, lo que facilita su uso en pipelines de Python existentes.
-- Pipeline `text-to-audio` declarado oficialmente en HuggingFace.
+- Pipeline `text-to-audio` declarado oficialmente en Hugging Face.
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no es un modelo de lenguaje general).
 - No se documentan capacidades de visión, audio de entrada (solo salida) ni modo "thinking".
 - No se documenta control fino sobre estructura musical (acordes, tempo, instrumentación) más allá del prompt textual.
@@ -72,7 +72,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento de Tuhinkar
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido (gated)**: requiere aceptar condiciones en HuggingFace antes de descargar el modelo, lo que añade fricción para uso automatizado o en producción.
+- **Acceso restringido (gated)**: requiere aceptar condiciones en Hugging Face antes de descargar el modelo, lo que añade fricción para uso automatizado o en producción.
 - **Documentación escasa**: cero descargas y un solo "like" en el momento de la ficha; no hay model card detallada, paper ni ejemplos públicos, lo que dificulta la reproducibilidad.
 - **Riesgo de alucinación musical**: como todo modelo generativo, puede producir audio incoherente, con artefactos, silencios inesperados o estructuras musicales sin sentido, especialmente con prompts ambiguos o muy largos.
 - **Sesgos en los datos de entrenamiento**: al no documentarse la composición del dataset, se desconocen sesgos de género musical, cultura o instrumentación; es probable que el modelo esté sobrerrepresentado en estilos occidentales y pop.
@@ -84,5 +84,5 @@ La comparativa es orientativa: no se dispone de datos de rendimiento de Tuhinkar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tuhinkar/Tuhinkar
+- Hugging Face: https://huggingface.co/Tuhinkar/Tuhinkar
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

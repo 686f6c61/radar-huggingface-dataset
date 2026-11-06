@@ -19,7 +19,7 @@ La relevancia actual del modelo reside en su huella de despliegue: con 450M de p
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | No disponible en la informacion proporcionada; el repositorio de HuggingFace ocupa 6,1 GB |
+| Formato de pesos | No disponible en la informacion proporcionada; el repositorio de Hugging Face ocupa 6,1 GB |
 
 ## Arquitectura y entrenamiento
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Grounding / function calling | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheStageAI/LFM2.5-VL-450M | 450M | No disponible | Si (grounding y function calling, segun Liquid AI) | No disponible | HuggingFace (TheStageAI) y SDK Android/Apple |
-| LiquidAI/LFM2.5-VL-450M | 450M | No disponible | Si (grounding y function calling, segun Liquid AI) | No disponible | HuggingFace (LiquidAI) |
-| LiquidAI/LFM2-VL-450M | 450M | No disponible | Version previa, sin el RL adicional descrito para 2.5 | No disponible | HuggingFace (LiquidAI) |
+| TheStageAI/LFM2.5-VL-450M | 450M | No disponible | Si (grounding y function calling, segun Liquid AI) | No disponible | Hugging Face (TheStageAI) y SDK Android/Apple |
+| LiquidAI/LFM2.5-VL-450M | 450M | No disponible | Si (grounding y function calling, segun Liquid AI) | No disponible | Hugging Face (LiquidAI) |
+| LiquidAI/LFM2-VL-450M | 450M | No disponible | Version previa, sin el RL adicional descrito para 2.5 | No disponible | Hugging Face (LiquidAI) |
 | Otros VLM compactos de gama sub-1B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas en la informacion proporcionada.
@@ -87,8 +87,8 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace (TheStageAI): https://huggingface.co/TheStageAI/LFM2.5-VL-450M
-- Repositorio en HuggingFace (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-VL-450M
+- Repositorio en Hugging Face (TheStageAI): https://huggingface.co/TheStageAI/LFM2.5-VL-450M
+- Repositorio en Hugging Face (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-VL-450M
 - Documentacion de Liquid AI para LFM2.5-VL-450M: https://docs.liquid.ai/lfm/models/lfm25-vl-450m
 - Blog de Liquid AI sobre LFM2.5-VL-450M: https://www.liquid.ai/blog/lfm2-5-vl-450m
 - Documentacion VLM del AndroidSDK de TheStage AI: https://github.com/TheStageAI/AndroidSDK/blob/main/docs/vlm.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw1` es un ajuste fino publicado en HuggingFace por el usuario wz7475. Por el identificador se deduce que parte de Qwen2.5-7B-Instruct, un transformer decoder-only de aproximadamente 7.600 millones de parámetros desarrollado por Alibaba Qwen, y que ha sido reentrenado mediante la librería Unsloth, orientada a fine-tuning eficiente en memoria. La model card publicada es la plantilla genérica autogenerada por HuggingFace y no contiene información cumplimentada por el autor: no hay descripción, ni licencia, ni idiomas, ni datos de entrenamiento.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw1` es un ajuste fino publicado en Hugging Face por el usuario wz7475. Por el identificador se deduce que parte de Qwen2.5-7B-Instruct, un transformer decoder-only de aproximadamente 7.600 millones de parámetros desarrollado por Alibaba Qwen, y que ha sido reentrenado mediante la librería Unsloth, orientada a fine-tuning eficiente en memoria. La model card publicada es la plantilla genérica autogenerada por Hugging Face y no contiene información cumplimentada por el autor: no hay descripción, ni licencia, ni idiomas, ni datos de entrenamiento.
 
 El nombre del repositorio sugiere una mezcla de datos de ajuste orientada a dominio legal (`katcher-legal`) combinada con datasets de alineación conversacional (`anc`, presumiblemente Anthropic HH, y `oasst1`, OpenAssistant OASST1), además de un componente identificado como `aw1` cuya naturaleza no se puede determinar con la información disponible. Ninguna de estas inferencias está confirmada por el autor. El repositorio ocupa 0,8 GB, un tamaño incompatible con pesos completos en fp16 de un modelo de 7B (que rondarían los 15 GB), lo que sugiere que se trata de un adaptador LoRA, de un modelo cuantizado o de una subida incompleta.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada y de carácter experimental: se trata de un fin
 
 No hay información publicada sobre la arquitectura concreta de este ajuste. Por herencia del modelo base, se trataría de un transformer decoder-only denso con Grouped-Query Attention, normalización RMSNorm, activación SwiGLU y codificación posicional RoPE, con un vocabulario de aproximadamente 152.000 tokens. No se puede confirmar si el ajuste modificó todas las capas (full fine-tuning) o solo adaptadores de bajo rango, ni si se fusionaron los pesos antes de publicar; el tamaño del repositorio apunta a lo segundo.
 
-Respecto al entrenamiento, la model card no documenta número de tokens, composición del dataset, hiperparámetros, régimen de precisión ni si hubo etapas de RLHF o DPO. El identificador sugiere una mezcla de datos legales y de alineación conversacional, y la etiqueta `unsloth` indica que el proceso se realizó con esa librería, probablemente con cuantización de 4 bits durante el entrenamiento (QLoRA) o con LoRA en bf16. La referencia `arxiv:1910.09700` presente en los tags corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental, incluido en la plantilla genérica de HuggingFace, no a un paper propio del modelo.
+Respecto al entrenamiento, la model card no documenta número de tokens, composición del dataset, hiperparámetros, régimen de precisión ni si hubo etapas de RLHF o DPO. El identificador sugiere una mezcla de datos legales y de alineación conversacional, y la etiqueta `unsloth` indica que el proceso se realizó con esa librería, probablemente con cuantización de 4 bits durante el entrenamiento (QLoRA) o con LoRA en bf16. La referencia `arxiv:1910.09700` presente en los tags corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental, incluido en la plantilla genérica de Hugging Face, no a un paper propio del modelo.
 
 ## Capacidades
 
@@ -79,10 +79,10 @@ Los datos de rendimiento del modelo evaluado no están disponibles, por lo que l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw1 | No confirmado (base de 7,6B) | No confirmado (base: 32.768) | No disponible | Repositorio HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | HuggingFace, ampliamente adoptado | Publicado por Alibaba |
-| Llama 3.1 8B Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente adoptado | Publicado por Meta |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente adoptado | Publicado por Mistral AI |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw1 | No confirmado (base de 7,6B) | No confirmado (base: 32.768) | No disponible | Repositorio Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | Hugging Face, ampliamente adoptado | Publicado por Alibaba |
+| Llama 3.1 8B Instruct | 8,0B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente adoptado | Publicado por Meta |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente adoptado | Publicado por Mistral AI |
 
 Las cifras de los tres modelos de referencia proceden de su documentación pública y no han sido verificadas en este repositorio.
 
@@ -100,7 +100,7 @@ Las cifras de los tres modelos de referencia proceden de su documentación públ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw1
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw1
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Informe tecnico de Qwen2.5 (referencia): https://arxiv.org/abs/2412.15115
 - Repositorio de Unsloth (libreria de entrenamiento indicada en los tags): https://github.com/unslothai/unsloth

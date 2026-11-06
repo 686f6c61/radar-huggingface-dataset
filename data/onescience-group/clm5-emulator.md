@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLM5-Emulator es un emulador de aprendizaje automático del modelo de superficie terrestre Community Land Model version 5 (CLM5). Desarrollado por investigadores de NCAR y CERFACS, sustituye parte de las simulaciones físicas de CLM5 por dos redes neuronales feed-forward independientes que predicen las componentes espaciales (modos EOF) de la producción primaria bruta (GPP) y del flujo de calor latente (LHF) a partir de seis parámetros biofísicos. La publicación de este repositorio en HuggingFace corre a cargo de OneScience-Group y se presenta explícitamente como una reproducción de ingeniería independiente de las especificaciones públicas del emulador original.
+CLM5-Emulator es un emulador de aprendizaje automático del modelo de superficie terrestre Community Land Model version 5 (CLM5). Desarrollado por investigadores de NCAR y CERFACS, sustituye parte de las simulaciones físicas de CLM5 por dos redes neuronales feed-forward independientes que predicen las componentes espaciales (modos EOF) de la producción primaria bruta (GPP) y del flujo de calor latente (LHF) a partir de seis parámetros biofísicos. La publicación de este repositorio en Hugging Face corre a cargo de OneScience-Group y se presenta explícitamente como una reproducción de ingeniería independiente de las especificaciones públicas del emulador original.
 
 El problema que resuelve es de coste computacional: ejecutar CLM5 completo para explorar el espacio de parámetros biofísicos o para calibrar el modelo contra observaciones es muy caro. Un emulador entrenado sobre ensembles de perturbación de parámetros permite explorar ese espacio en una fracción del tiempo y con un error acotado, habilitando tareas de estimación de parámetros y reconstrucción de campos globales que de otro modo requerirían grandes clústeres.
 
@@ -17,7 +17,7 @@ La arquitectura es una red neuronal feed-forward (MLP) implementada en PyTorch, 
 | Parametros activos | no aplicable (no es un modelo MoE) |
 | Longitud de contexto | no aplicable (modelo de regresión con entrada de 6 valores, no generativo) |
 | Tipos de cuantizacion | no disponible (no se documentan formatos cuantizados) |
-| Idiomas soportados | ingles (segun metadatos de HuggingFace); el modelo no procesa lenguaje natural |
+| Idiomas soportados | ingles (segun metadatos de Hugging Face); el modelo no procesa lenguaje natural |
 | Licencia | Apache 2.0 |
 | Formato de pesos | PyTorch; checkpoint en `result/checkpoints/clm5_emulator.pt` |
 | Framework | PyTorch |
@@ -28,7 +28,7 @@ La arquitectura es una red neuronal feed-forward (MLP) implementada en PyTorch, 
 | Datos de entrenamiento | Ensembles de perturbacion de parametros de CLM5 forzados con GSWP3; objetivos observacionales FLUXNET-MTE |
 | Paper de referencia | A machine learning approach to emulation and biophysical parameter estimation with the Community Land Model, version 5 (ASCMO, 2020) |
 | Descargas / likes | 0 / 0 a fecha de consulta |
-| Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Entrada | Salida | Coste computacional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CLM5-Emulator (este modelo) | Emulador ML (dos redes feed-forward, PyTorch) | 6 parametros biofisicos normalizados | Componentes EOF de GPP y LHF; campos globales 46 x 72 | Muy bajo; entrenamiento DDP verificado con 2 procesos y ejecucion en CPU posible para validacion | Apache 2.0 (repositorio); paper CC BY 4.0 | HuggingFace (0 descargas, 0 likes a fecha de consulta) |
-| CLM5 (modelo fisico) | Modelo de superficie terrestre basado en procesos | Forzamiento meteorologico completo (por ejemplo GSWP3) y parametrizaciones | Estado completo del sistema tierra-superficie, incluidas GPP y LHF | Alto; requiere HPC para ensembles y calibracion | Sujeta a los terminos del propio modelo CLM5 | Distribucion fuera de HuggingFace; no disponible en el repositorio analizado |
+| CLM5-Emulator (este modelo) | Emulador ML (dos redes feed-forward, PyTorch) | 6 parametros biofisicos normalizados | Componentes EOF de GPP y LHF; campos globales 46 x 72 | Muy bajo; entrenamiento DDP verificado con 2 procesos y ejecucion en CPU posible para validacion | Apache 2.0 (repositorio); paper CC BY 4.0 | Hugging Face (0 descargas, 0 likes a fecha de consulta) |
+| CLM5 (modelo fisico) | Modelo de superficie terrestre basado en procesos | Forzamiento meteorologico completo (por ejemplo GSWP3) y parametrizaciones | Estado completo del sistema tierra-superficie, incluidas GPP y LHF | Alto; requiere HPC para ensembles y calibracion | Sujeta a los terminos del propio modelo CLM5 | Distribucion fuera de Hugging Face; no disponible en el repositorio analizado |
 | Otros emuladores ML de CLM5 | no disponible | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -90,12 +90,12 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Procedencia: el repositorio se declara como una reproducción de ingeniería independiente de las especificaciones públicas del emulador, no como la implementación oficial de NCAR o CERFACS. La exactitud respecto al modelo original no está verificada en la información disponible.
 - Datos sintéticos en la validación: el flujo documentado (`scripts/fake_data.py`) usa datos sintéticos que preservan la estructura del problema; superar esa validación no implica que el modelo funcione con datos reales sin un reentrenamiento adecuado.
 - Licencias de los datos: aunque el repositorio es Apache 2.0 y el paper es CC BY 4.0, CLM5, GSWP3 y FLUXNET-MTE mantienen sus propias licencias y términos, lo que puede condicionar el uso comercial de modelos derivados.
-- Falta de validación por la comunidad: 0 descargas y 0 likes en HuggingFace a fecha de consulta; no hay evidencia externa de reproducibilidad ni de rendimiento en producción.
+- Falta de validación por la comunidad: 0 descargas y 0 likes en Hugging Face a fecha de consulta; no hay evidencia externa de reproducibilidad ni de rendimiento en producción.
 - Ausencia de métricas publicadas en la model card: no se pueden citar errores de emulación concretos sin acudir al paper original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/CLM5-Emulator
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/CLM5-Emulator
 - Paper de referencia: https://doi.org/10.5194/ascmo-6-223-2020
 - Repositorio principal en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio de skills en GitHub: https://github.com/onescience-ai/oneskills

@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b-FP8
+- Modelo en Hugging Face: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b-FP8
 - Modelo base bf16 fusionado: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b
 - Adaptadores LoRA y registro de entrenamiento: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b-LoRA
 - Versión operativa v1: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-FP8

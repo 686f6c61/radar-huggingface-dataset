@@ -61,4 +61,4 @@ No se dispone de información sobre modelos comparables. No se puede establecer 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wh1te-guy/karma-27b-b1ack
+- Repositorio Hugging Face: https://huggingface.co/wh1te-guy/karma-27b-b1ack

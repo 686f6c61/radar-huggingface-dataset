@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DecisionFairy-4B es un modelo de decisión no autorregresivo desarrollado por el usuario wesjos (HuggingFace) y publicado bajo licencia Apache-2.0. Se construye sobre el backbone multimodal Qwen3.5-4B (4.659.865.088 parámetros totales en bf16) al que se le añade una cabeza de esquema conjunta (*joint schema head*) de 32,05 millones de parámetros. En lugar de generar texto token a token, el modelo evalúa en una sola pasada hacia delante todas las opciones de todos los campos solicitados simultáneamente, devolviendo probabilidades por opción.
+DecisionFairy-4B es un modelo de decisión no autorregresivo desarrollado por el usuario wesjos (Hugging Face) y publicado bajo licencia Apache-2.0. Se construye sobre el backbone multimodal Qwen3.5-4B (4.659.865.088 parámetros totales en bf16) al que se le añade una cabeza de esquema conjunta (*joint schema head*) de 32,05 millones de parámetros. En lugar de generar texto token a token, el modelo evalúa en una sola pasada hacia delante todas las opciones de todos los campos solicitados simultáneamente, devolviendo probabilidades por opción.
 
 El modelo resuelve un problema concreto: convertir un estado arbitrario (texto libre o JSON) en decisiones estructuradas y tipadas (sí/no, elección entre opciones, puntuación en una escala) con distribuciones de probabilidad asociadas. Está pensado para integrarse en pipelines de agentes y sistemas de enrutamiento donde se necesita una salida determinista y cuantificada, no una respuesta en lenguaje natural.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DecisionFairy-4B | 4,66 B + 32 M (cabeza) | 1024 tokens | Decisiones tipadas con probabilidades | Apache-2.0 | HuggingFace (53 descargas) |
-| Qwen3.5-4B (base) | ~4 B | no disponible | Generación de texto | Apache-2.0 | HuggingFace |
+| DecisionFairy-4B | 4,66 B + 32 M (cabeza) | 1024 tokens | Decisiones tipadas con probabilidades | Apache-2.0 | Hugging Face (53 descargas) |
+| Qwen3.5-4B (base) | ~4 B | no disponible | Generación de texto | Apache-2.0 | Hugging Face |
 | Cloudflare Clef (diseño de referencia) | no disponible | no disponible | Decisiones estructuradas | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/DecisionFairy-4B
+- Modelo en Hugging Face: https://huggingface.co/wesjos/DecisionFairy-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Dataset de entrenamiento: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3

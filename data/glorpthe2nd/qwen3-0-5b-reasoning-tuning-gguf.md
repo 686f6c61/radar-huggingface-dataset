@@ -69,7 +69,7 @@ No se dispone de especificaciones verificadas de modelos alternativos en la info
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo | 596 M | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| Este modelo | 596 M | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen3-0.6B (referencia nominal) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Qwen2.5-0.5B-Instruct (referencia nominal) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SmolLM2-360M-Instruct (referencia nominal) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -90,7 +90,7 @@ No se dispone de especificaciones verificadas de modelos alternativos en la info
 
 ## Enlaces
 
-- [HuggingFace: glorpthe2nd/qwen3-0.5b-reasoning-tuning-gguf](https://huggingface.co/glorpthe2nd/qwen3-0.5b-reasoning-tuning-gguf)
+- [Hugging Face: glorpthe2nd/qwen3-0.5b-reasoning-tuning-gguf](https://huggingface.co/glorpthe2nd/qwen3-0.5b-reasoning-tuning-gguf)
 - [Unsloth](https://github.com/unslothai/unsloth)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp), herramienta citada en la model card
 - No se han proporcionado enlaces a papers, blogs o demos en la información disponible.

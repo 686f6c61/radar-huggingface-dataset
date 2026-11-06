@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-libero-cofactvla es un checkpoint de ajuste fino del modelo de robotica pi0.5 (variante libero_base) publicado por el usuario adipotnis en HuggingFace. Se trata de un policy de vision-lenguaje-accion (VLA) entrenado sobre el conjunto de datos LIBERO, orientado a tareas de manipulacion robotica en simulacion. El modelo parte de lerobot/pi05_libero_base y aplica la implementacion CoFACT-VLA, una tecnica de entrenamiento con ramas contrafactuales que enmascara el flujo de texto (instruccion y estado tokenizado) manteniendo las imagenes, con el objetivo de mejorar la robustez de la politica ante variaciones en la instruccion.
+pi05-libero-cofactvla es un checkpoint de ajuste fino del modelo de robotica pi0.5 (variante libero_base) publicado por el usuario adipotnis en Hugging Face. Se trata de un policy de vision-lenguaje-accion (VLA) entrenado sobre el conjunto de datos LIBERO, orientado a tareas de manipulacion robotica en simulacion. El modelo parte de lerobot/pi05_libero_base y aplica la implementacion CoFACT-VLA, una tecnica de entrenamiento con ramas contrafactuales que enmascara el flujo de texto (instruccion y estado tokenizado) manteniendo las imagenes, con el objetivo de mejorar la robustez de la politica ante variaciones en la instruccion.
 
 El checkpoint corresponde al paso 6000 de un trabajo de entrenamiento completado en NCSA DeltaAI (job 3490218), con 4 GPUs GH200 y un batch global de 128. El autor advierte explicitamente de que no se ha realizado evaluacion de rollout, por lo que la finalizacion del entrenamiento no constituye un resultado de tasa de exito. Esta es una distincion importante: el modelo es un artefacto de investigacion reproducible, no un modelo validado para produccion.
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-cofactvla | 4.143.404.816 | no disponible | Ajuste fino CoFACT-VLA sobre lerobot/pi05_libero_base, dataset LIBERO | Gemma | HuggingFace (14 descargas) |
-| lerobot/pi05_libero_base | no disponible | no disponible | Modelo base pi0.5 para LIBERO | no disponible | HuggingFace (modelo base) |
+| pi05-libero-cofactvla | 4.143.404.816 | no disponible | Ajuste fino CoFACT-VLA sobre lerobot/pi05_libero_base, dataset LIBERO | Gemma | Hugging Face (14 descargas) |
+| lerobot/pi05_libero_base | no disponible | no disponible | Modelo base pi0.5 para LIBERO | no disponible | Hugging Face (modelo base) |
 | Otros policies VLA para LIBERO | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adipotnis/pi05-libero-cofactvla
+- Modelo en Hugging Face: https://huggingface.co/adipotnis/pi05-libero-cofactvla
 - Implementacion CoFACT-VLA (commit fijado): https://github.com/zhangy0822/CofactVLA/tree/7cbae824f2c55a154340cbf4b52b9125452e124d
 - Modelo base: https://huggingface.co/lerobot/pi05_libero_base
 - Dataset LIBERO: https://huggingface.co/datasets/lerobot/libero

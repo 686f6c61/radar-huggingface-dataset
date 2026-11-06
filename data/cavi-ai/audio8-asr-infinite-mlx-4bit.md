@@ -106,11 +106,11 @@ La informacion disponible solo permite comparar esta conversion con su propio mo
 
 ## Enlaces
 
-- Ficha de HuggingFace de este modelo: https://huggingface.co/cavi-ai/Audio8-ASR-Infinite-MLX-4bit
+- Ficha de Hugging Face de este modelo: https://huggingface.co/cavi-ai/Audio8-ASR-Infinite-MLX-4bit
 - Modelo base: https://huggingface.co/Edge0/Audio8-ASR-Infinite
 - Repositorio upstream de Edge0: https://github.com/Edge0-AI/Audio8-ASR-Infinite
 - README del repositorio upstream: https://github.com/Edge0-AI/Audio8-ASR-Infinite/blob/main/README.md
 - Codigo fuente del port MLX: https://github.com/cavi-ai/mlx-agent
 - Sitio del autor de la conversion (CAVI AI): https://cavi-ai.xyz
-- Espejo del modelo base en HuggingFace: https://huggingface.co/FAISALFAZALHUSSAIN/Audio8-ASR-Infinite
+- Espejo del modelo base en Hugging Face: https://huggingface.co/FAISALFAZALHUSSAIN/Audio8-ASR-Infinite
 - Articulo de referencia sobre el modelo base: https://www.mindstudio.ai/blog/audio8-asr-infinite-streaming-model

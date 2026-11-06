@@ -88,8 +88,8 @@ Ornith-1.5-35B-A3B supera a sus competidores directos en los benchmarks de codif
 
 ## Enlaces
 
-- Mirror GGUF en HuggingFace: https://huggingface.co/Sho278/ornith-1.5-35b-q4-k-m-mirror
-- Modelo original en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Mirror GGUF en Hugging Face: https://huggingface.co/Sho278/ornith-1.5-35b-q4-k-m-mirror
+- Modelo original en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Blog de Ornith sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Sitio web de Ornith AI: https://ornith.ai/
 - Guia de Ornith AI (modelos, VRAM, benchmarks): https://ornith.online/

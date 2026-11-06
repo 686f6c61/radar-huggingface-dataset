@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`malinali-app/opus-mt-fr-swc` es un paquete de pesos para traduccion automatica de frances (fr) a swahili del Congo (swc, Kingwana), publicado por Malinali en HuggingFace. No se trata de un modelo entrenado desde cero: es un reempaquetado de los pesos de `Helsinki-NLP/opus-mt-fr-swc` del proyecto OPUS-MT (Helsinki-NLP), convertidos a formato safetensors y acompanados de tokenizers rapidos compatibles con Hugging Face y con el runtime Candle mediante la libreria `marian_flutter`.
+`malinali-app/opus-mt-fr-swc` es un paquete de pesos para traduccion automatica de frances (fr) a swahili del Congo (swc, Kingwana), publicado por Malinali en Hugging Face. No se trata de un modelo entrenado desde cero: es un reempaquetado de los pesos de `Helsinki-NLP/opus-mt-fr-swc` del proyecto OPUS-MT (Helsinki-NLP), convertidos a formato safetensors y acompanados de tokenizers rapidos compatibles con Hugging Face y con el runtime Candle mediante la libreria `marian_flutter`.
 
 El modelo sigue la arquitectura MarianMT, un transformer encoder-decoder disenado especificamente para traduccion automatica, con 75.531.020 parametros en formato safetensors. Su interes practico radica en la orientacion a inferencia local (on-device): el repo ocupa 0,3 GB, lo que permite ejecutarlo en movil, navegador o equipos sin GPU dedicada, un escenario relevante para aplicaciones de traduccion sin conexion y para contextos con conectividad limitada.
 
@@ -18,7 +18,7 @@ El valor anadido de esta publicacion es la conversion de los tokenizers de Sente
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos distribuidos en safetensors; no se documentan variantes GGUF ni cuantizaciones oficiales) |
 | Idiomas soportados | fr (frances), swc (swahili del Congo / Kingwana) |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card remite a la licencia del modelo base (habitualmente CC-BY 4.0 en OPUS-MT) |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card remite a la licencia del modelo base (habitualmente CC-BY 4.0 en OPUS-MT) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 0,3 GB |
 | Direccion de traduccion | fr → swc (unidireccional) |
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| malinali-app/opus-mt-fr-swc | 75.531.020 | no disponible | fr → swc | no disponible (remite al modelo base) | HuggingFace, safetensors, orientado a Candle |
-| Helsinki-NLP/opus-mt-fr-swc (modelo base) | ~75 M (arquitectura Marian, valor exacto no confirmado en la informacion disponible) | no disponible | fr → swc | habitualmente CC-BY 4.0 | HuggingFace, pesos originales |
-| Otros modelos OPUS-MT (p. ej. pares fr-xx) | rango tipico de 70-80 M | no disponible | pares de idiomas concretos | habitualmente CC-BY 4.0 | HuggingFace, amplia coleccion |
-| NLLB-200 (variante destilada 600M) | ~600 M | no disponible en esta ficha | multilingue (200 idiomas) | CC-BY-NC 4.0 (uso no comercial) | HuggingFace |
-| M2M-100 (418M) | ~418 M | no disponible en esta ficha | multilingue (100 idiomas) | MIT | HuggingFace |
+| malinali-app/opus-mt-fr-swc | 75.531.020 | no disponible | fr → swc | no disponible (remite al modelo base) | Hugging Face, safetensors, orientado a Candle |
+| Helsinki-NLP/opus-mt-fr-swc (modelo base) | ~75 M (arquitectura Marian, valor exacto no confirmado en la informacion disponible) | no disponible | fr → swc | habitualmente CC-BY 4.0 | Hugging Face, pesos originales |
+| Otros modelos OPUS-MT (p. ej. pares fr-xx) | rango tipico de 70-80 M | no disponible | pares de idiomas concretos | habitualmente CC-BY 4.0 | Hugging Face, amplia coleccion |
+| NLLB-200 (variante destilada 600M) | ~600 M | no disponible en esta ficha | multilingue (200 idiomas) | CC-BY-NC 4.0 (uso no comercial) | Hugging Face |
+| M2M-100 (418M) | ~418 M | no disponible en esta ficha | multilingue (100 idiomas) | MIT | Hugging Face |
 
 Nota: las cifras de modelos comparativos distintos del modelo tratado no proceden de la informacion proporcionada en esta busqueda y se incluyen como referencia de categoria; conviene verificarlas en las fichas oficiales antes de citarlas.
 
@@ -82,7 +82,7 @@ Nota: las cifras de modelos comparativos distintos del modelo tratado no procede
 - Variedad idiomatica: `swc` corresponde al swahili del Congo (Kingwana), distinto del swahili estandar de Tanzania (`swh`); el modelo no es necesariamente adecuado para otras variantes.
 - Riesgo de alucinacion y de omision: como todo sistema de traduccion neuronal, puede generar contenido no presente en el original, omitir segmentos o producir traducciones fluidas pero incorrectas, especialmente con terminologia tecnica, nombres propios o texto muy informal.
 - Longitud de contexto no documentada: se desconoce el limite maximo de tokens por segmento, lo que obliga a trocear entradas largas y a validar el comportamiento con parrafos extensos.
-- Licencia ambigua: aunque la model card sugiere seguir la licencia del modelo base (habitualmente CC-BY 4.0 en OPUS-MT), los metadatos de HuggingFace no declaran licencia. Es imprescindible confirmar los terminos antes de un uso comercial.
+- Licencia ambigua: aunque la model card sugiere seguir la licencia del modelo base (habitualmente CC-BY 4.0 en OPUS-MT), los metadatos de Hugging Face no declaran licencia. Es imprescindible confirmar los terminos antes de un uso comercial.
 - Ausencia total de validacion publicada: con 0 descargas y 0 likes en el momento del analisis, no existen evaluaciones independientes ni metricas de calidad que respalden su rendimiento en produccion.
 - Dependencia del upstream: al ser un reempaquetado, cualquier limitacion, sesgo o error del modelo `Helsinki-NLP/opus-mt-fr-swc` se hereda sin cambios.
 - Sesgos de dominio: los corpus OPUS estan sesgados hacia ciertos dominios (textos legislativos, religiosos, subtitulos y documentacion tecnica), lo que puede degradar la calidad en registros conversacionales o especializados no representados.
@@ -90,7 +90,7 @@ Nota: las cifras de modelos comparativos distintos del modelo tratado no procede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-fr-swc
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-fr-swc
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-fr-swc
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

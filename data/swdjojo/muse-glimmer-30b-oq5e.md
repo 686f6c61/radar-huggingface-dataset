@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B-oQ5e es una cuantizacion en 5 bits del modelo base meta-models/Muse-Glimmer-30B, realizada con la herramienta oMLX (oQ) y publicada por el usuario swdjojo en HuggingFace. El modelo base es de tipo `muse_glimmer` y su pipeline es `image-text-to-text`, lo que indica que se trata de un modelo multimodal capaz de procesar imagenes y texto. A pesar del nombre "30B", los pesos cuantizados contienen 7.331.196.928 parametros (aproximadamente 7,33 mil millones), por lo que el nombre comercial no se corresponde con el tamano real de los pesos.
+Muse-Glimmer-30B-oQ5e es una cuantizacion en 5 bits del modelo base meta-models/Muse-Glimmer-30B, realizada con la herramienta oMLX (oQ) y publicada por el usuario swdjojo en Hugging Face. El modelo base es de tipo `muse_glimmer` y su pipeline es `image-text-to-text`, lo que indica que se trata de un modelo multimodal capaz de procesar imagenes y texto. A pesar del nombre "30B", los pesos cuantizados contienen 7.331.196.928 parametros (aproximadamente 7,33 mil millones), por lo que el nombre comercial no se corresponde con el tamano real de los pesos.
 
 Esta ficha describe la version cuantizada, no el modelo original. La cuantizacion utiliza el formato MLX safetensors, pensado para su ejecucion en hardware Apple Silicon mediante la libreria MLX. No se dispone de informacion sobre la licencia, los idiomas soportados, el contexto o los datos de entrenamiento del modelo base, por lo que estos campos se indican como no disponibles.
 
@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swdjojo/Muse-Glimmer-30B-oQ5e
+- Modelo en Hugging Face: https://huggingface.co/swdjojo/Muse-Glimmer-30B-oQ5e
 - Repositorio de oMLX (herramienta de cuantizacion): https://github.com/jundot/omlx
 - Modelo base (referencia): https://huggingface.co/meta-models/Muse-Glimmer-30B

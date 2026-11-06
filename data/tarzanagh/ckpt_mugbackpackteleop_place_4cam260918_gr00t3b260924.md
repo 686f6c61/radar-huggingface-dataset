@@ -83,12 +83,12 @@ Todas las alternativas pertenecen al mismo conjunto de ejecuciones de la tarea, 
 
 | Modelo | Parámetros | Contexto | Error en bucle abierto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T-N1.7-3B (este checkpoint) | 3,144 mil M | No aplica (chunk de 16 acciones) | Referencia: el más bajo de las familias finalizadas | `other` | HuggingFace, safetensors, 12,6 GB |
-| pi-0.5 | No disponible | No disponible | 3-4 veces superior a este modelo | No disponible | Checkpoint hermano en HuggingFace |
-| ACT | No disponible | No disponible | 3-4 veces superior a este modelo | No disponible | Checkpoint hermano en HuggingFace |
+| GR00T-N1.7-3B (este checkpoint) | 3,144 mil M | No aplica (chunk de 16 acciones) | Referencia: el más bajo de las familias finalizadas | `other` | Hugging Face, safetensors, 12,6 GB |
+| pi-0.5 | No disponible | No disponible | 3-4 veces superior a este modelo | No disponible | Checkpoint hermano en Hugging Face |
+| ACT | No disponible | No disponible | 3-4 veces superior a este modelo | No disponible | Checkpoint hermano en Hugging Face |
 | Diffusion Policy | No disponible | No disponible | En entrenamiento al publicar la model card | No disponible | No disponible |
 | T-Rex | No disponible | No disponible | En entrenamiento al publicar la model card | No disponible | No disponible |
-| GR00T-N1.7-3B con tacto | 3,144 mil M (misma base) | No aplica | Diferencia no consistente respecto a la versión sin tacto | `other` | Checkpoint hermano en HuggingFace |
+| GR00T-N1.7-3B con tacto | 3,144 mil M (misma base) | No aplica | Diferencia no consistente respecto a la versión sin tacto | `other` | Checkpoint hermano en Hugging Face |
 
 No se dispone de los recuentos de parámetros, ventanas de contexto ni licencias de pi-0.5, ACT, Diffusion Policy y T-Rex en la información proporcionada, por lo que la comparación se limita al error relativo reportado por el autor.
 
@@ -107,7 +107,7 @@ No se dispone de los recuentos de parámetros, ventanas de contexto ni licencias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3b260924
 - Variante con tacto: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_gr00t3btactile260924
 - Variante pi-0.5: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05260924
 - Variante pi-0.5 con tacto: https://huggingface.co/tarzanagh/ckpt_mugbackpackteleop_place_4cam260918_pi05tactile260924

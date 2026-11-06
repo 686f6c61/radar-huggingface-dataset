@@ -58,7 +58,7 @@ La NLL verbatim mide la probabilidad de la cadena memorizada (menor es mejor); l
 - VRAM estimada para inferencia: con 1,24B de parametros, en fp32 se necesitan aproximadamente 4,9 GB; en fp16 o bf16, unos 2,5 GB; en int8, alrededor de 1,2 GB. El repositorio pesa 2,5 GB, lo que sugiere pesos en fp16 o fp32.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM puede ejecutar el modelo en fp16 (por ejemplo, RTX 3050, RTX 3060, RTX 4060). Para fp32 se recomienda una GPU con 6 GB o mas.
 - Cabe en GPU consumer: si, en la mayoria de las GPUs modernas de gama media y alta.
-- Opciones de despliegue: al ser un modelo transformers estandar, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp, Ollama o directamente con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers estandar, puede servirse con vLLM, Text Generation Inference (TGI), llama.cpp, Ollama o directamente con la libreria transformers de Hugging Face.
 - Latencia y throughput: no disponibles en la informacion proporcionada; al ser un modelo de 1B, se espera una latencia baja en GPUs modernas, pero no hay datos medidos.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ La conclusion del estudio es que re-aprender un checkpoint desaprendido es equiv
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-AltPO-dflt
+- Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-AltPO-dflt
 - Modelo base (checkpoint desaprendido): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_AltPO_lr1e-05_beta0.1_alpha1_epoch10
 - Repositorio del proyecto (mencionado en la model card, sin URL directa): `scripts/relearn_curve.py` en el repositorio del proyecto *Illusion of LLM Unlearning* (no se proporciona enlace directo en la informacion disponible).

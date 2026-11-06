@@ -101,7 +101,7 @@ La comparación directa con el modelo base es la más informativa, pero el autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesseLiu/agentorch-sft-27b-80k-3ep
+- Modelo en Hugging Face: https://huggingface.co/JesseLiu/agentorch-sft-27b-80k-3ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Revisión del modelo base usada en el entrenamiento: `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` (consultable en el repositorio del modelo base)
 - Repositorio AgentOrch (harness, datos de entrenamiento y registro completo de experimentos): referenciado en la model card, URL no disponible en la información proporcionada

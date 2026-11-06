@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hasoc-student-distilbert | 135,3 M | 512 tokens (limite de arquitectura) | Clasificacion binaria de odio en hinglish | MIT | HuggingFace |
+| hasoc-student-distilbert | 135,3 M | 512 tokens (limite de arquitectura) | Clasificacion binaria de odio en hinglish | MIT | Hugging Face |
 | XLM-RoBERTa-base (profesor, ajustado) | ~278 M | 512 tokens | Clasificacion binaria de odio en hinglish | MIT (base) | Requiere el ajuste del autor; pesos concretos no enlazados en la informacion disponible |
-| distilbert-base-multilingual-cased | 135 M | 512 tokens | Modelo base sin ajustar para esta tarea | Apache 2.0 | HuggingFace |
+| distilbert-base-multilingual-cased | 135 M | 512 tokens | Modelo base sin ajustar para esta tarea | Apache 2.0 | Hugging Face |
 | Sistema ganador de HASOC 2021 (ensemble) | No disponible | No disponible | Clasificacion de odio en hinglish | No disponible | Publicacion academica, no como modelo desplegable |
 
 Rendimiento comparado: no disponible para las alternativas, salvo el macro-F1 del ganador de HASOC 2021 (72,53 %) y el del profesor de este modelo (73,69 %). No se dispone de datos de mBERT ni de otros clasificadores multilingues en este benchmark concreto dentro de la informacion proporcionada.
@@ -97,7 +97,7 @@ Rendimiento comparado: no disponible para las alternativas, salvo el macro-F1 de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bharath2kk5/hasoc-student-distilbert
+- Modelo en Hugging Face: https://huggingface.co/Bharath2kk5/hasoc-student-distilbert
 - Modelo profesor (XLM-RoBERTa-base ajustado): citado en la model card del repositorio, sin enlace directo publicado
 - Modelo estudiante referenciado en la model card (mismo repositorio, enlace placeholder en la documentacion original): https://huggingface.co/YOUR_USERNAME/hasoc-student-distilbert
 - Benchmark HASOC 2021 (Subtarea 2, ICHCL): referencia academica citada en la model card, sin URL incluida en la informacion disponible

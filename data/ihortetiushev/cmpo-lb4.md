@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CMPO-lb4 es un repositorio de modelo publicado en HuggingFace por el usuario ihortetiushev bajo licencia Apache 2.0. En el momento de redactar esta ficha (segun los metadatos disponibles), el repositorio acumula 0 descargas y 0 "likes", y su model card se limita a la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada y sin pipeline asociado. No se dispone de informacion sobre el problema que resuelve ni sobre el contexto en el que se enmarca.
+CMPO-lb4 es un repositorio de modelo publicado en Hugging Face por el usuario ihortetiushev bajo licencia Apache 2.0. En el momento de redactar esta ficha (segun los metadatos disponibles), el repositorio acumula 0 descargas y 0 "likes", y su model card se limita a la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada y sin pipeline asociado. No se dispone de informacion sobre el problema que resuelve ni sobre el contexto en el que se enmarca.
 
 La unica informacion verificable es el identificador del repositorio, el autor, la licencia y el tag de region (region:us). El repositorio fue creado y actualizado el 2026-09-20, sin publicaciones posteriores que amplien la documentacion. No se declara idioma de soporte, ni pipeline de inferencia (text-generation, text-to-image, etc.), ni tamano de parametros.
 
@@ -43,7 +43,7 @@ No hay datos sobre el corpus de entrenamiento (numero de tokens, composicion del
 
 No es posible proponer casos de uso concretos y realistas sin conocer la arquitectura, el tamano, el contexto soportado ni las capacidades declaradas del modelo. Enumerar escenarios de aplicacion en este punto implicaria asumir caracteristicas no verificadas.
 
-Recomendacion operativa: antes de plantear cualquier integracion, inspeccionar los ficheros del repositorio en HuggingFace (config.json, tokenizer_config.json, pesos publicados) para determinar arquitectura, vocabulario y tamanos; en caso necesario, contactar directamente con el autor para obtener una model card completa.
+Recomendacion operativa: antes de plantear cualquier integracion, inspeccionar los ficheros del repositorio en Hugging Face (config.json, tokenizer_config.json, pesos publicados) para determinar arquitectura, vocabulario y tamanos; en caso necesario, contactar directamente con el autor para obtener una model card completa.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ No disponible. Sin datos de arquitectura, tamano, contexto ni rendimiento, no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ihortetiushev/CMPO-lb4
+- Repositorio en Hugging Face: https://huggingface.co/ihortetiushev/CMPO-lb4
 - Model card del autor: no disponible (solo contiene la declaracion de licencia)
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

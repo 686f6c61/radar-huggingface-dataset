@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Don-thomas-llm es un ajuste fino (finetune) del modelo Qwen2.5-0.5B-Instruct de Alibaba Cloud, publicado por el usuario donthomas03 en HuggingFace. Se trata de un modelo de lenguaje causal de tamaño muy reducido (494 millones de parámetros reales según los pesos safetensors), orientado a generación de texto y conversación. El repositorio reutiliza la model card de Qwen2.5-0.5B-Instruct, por lo que la información técnica disponible corresponde esencialmente al modelo base; el autor no documenta qué datos ni métodos de ajuste fino se emplearon.
+Don-thomas-llm es un ajuste fino (finetune) del modelo Qwen2.5-0.5B-Instruct de Alibaba Cloud, publicado por el usuario donthomas03 en Hugging Face. Se trata de un modelo de lenguaje causal de tamaño muy reducido (494 millones de parámetros reales según los pesos safetensors), orientado a generación de texto y conversación. El repositorio reutiliza la model card de Qwen2.5-0.5B-Instruct, por lo que la información técnica disponible corresponde esencialmente al modelo base; el autor no documenta qué datos ni métodos de ajuste fino se emplearon.
 
 Su relevancia radica en el tamaño: al pesar alrededor de 1 GB, es un candidato natural para ejecutarse en CPU, en dispositivos de borde o en GPUs de consumo muy modestas. Hereda la arquitectura de Qwen2.5 (transformer con RoPE, SwiGLU, RMSNorm, sesgo QKV en la atención y embeddings atados), una ventana de contexto de 32.768 tokens y generación de hasta 8.192 tokens.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - VRAM estimada para inferencia: aproximadamente 1 GB en FP16/BF16 para los pesos, mas overhead de KV cache y activaciones; en la practica, 2 GB de VRAM o 4 GB de RAM en CPU son suficientes para contextos moderados.
 - GPU recomendadas: cualquier GPU moderna; no se requiere aceleracion dedicada. Compatible desde GPUs integradas hasta RTX 3060/4060 o superiores sin problema.
 - Cabe con holgura en GPUs de consumo: cualquier tarjeta con 4 GB de VRAM o mas; tambien ejecutable integramente en CPU.
-- Opciones de despliegue: transformers (se requiere version >= 4.37.0; con versiones anteriores se produce un `KeyError: 'qwen2'`), text-generation-inference (TGI) y endpoints de HuggingFace (el repo esta marcado como `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp y Ollama requeririan conversion manual.
+- Opciones de despliegue: transformers (se requiere version >= 4.37.0; con versiones anteriores se produce un `KeyError: 'qwen2'`), text-generation-inference (TGI) y endpoints de Hugging Face (el repo esta marcado como `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp y Ollama requeririan conversion manual.
 - Latencia y throughput: no disponibles; por su tamano de 0,5B se espera inferencia muy rapida, incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 | don-thomas-llm (este) | 0,49B | 32.768 | Apache 2.0 | Finetune comunitario de Qwen2.5-0.5B, sin documentacion del ajuste |
 | Qwen2.5-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 (con restricciones segun licencia enlazada) | Modelo base oficial de Alibaba, bien documentado y evaluado |
 | Qwen2.5-1.5B-Instruct | 1,49B | 32.768 | Apache 2.0 (con restricciones segun licencia enlazada) | Mas capacidad a cambio de ~3x memoria |
-| SmolLM2-360M-Instruct (HuggingFace) | 0,36B | 8.192 | Apache 2.0 | Alternativa ligera con contexto mucho menor |
+| SmolLM2-360M-Instruct (Hugging Face) | 0,36B | 8.192 | Apache 2.0 | Alternativa ligera con contexto mucho menor |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/donthomas03/don-thomas-llm
+- Modelo en Hugging Face: https://huggingface.co/donthomas03/don-thomas-llm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Modelo base Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

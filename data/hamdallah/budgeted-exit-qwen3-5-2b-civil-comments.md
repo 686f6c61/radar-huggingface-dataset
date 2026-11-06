@@ -104,7 +104,7 @@ No se documentan en la información disponible modelos externos comparables de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamdallah/budgeted-exit-qwen3.5-2b-civil-comments
+- Modelo en Hugging Face: https://huggingface.co/hamdallah/budgeted-exit-qwen3.5-2b-civil-comments
 - Repositorio del proyecto (carpeta `budgeted_exit/`): https://github.com/hamdallah90/decision-aware-inference
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Conjunto de datos Civil Comments: https://huggingface.co/datasets/google/civil_comments

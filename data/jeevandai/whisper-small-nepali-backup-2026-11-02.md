@@ -82,8 +82,8 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JeevanDai/whisper-small-nepali-backup-2026-11-02 | 241,7 M | audio de 30 s por clip | nepalí | no disponible | HuggingFace |
-| openai/whisper-small | 241,7 M | audio de 30 s por clip | multilingüe | no disponible | HuggingFace |
+| JeevanDai/whisper-small-nepali-backup-2026-11-02 | 241,7 M | audio de 30 s por clip | nepalí | no disponible | Hugging Face |
+| openai/whisper-small | 241,7 M | audio de 30 s por clip | multilingüe | no disponible | Hugging Face |
 | Alternativas ASR en nepalí | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JeevanDai/whisper-small-nepali-backup-2026-11-02
+- Modelo en Hugging Face: https://huggingface.co/JeevanDai/whisper-small-nepali-backup-2026-11-02
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Dataset: https://huggingface.co/datasets/JeevanDai/ASR-Dataset-Collection
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

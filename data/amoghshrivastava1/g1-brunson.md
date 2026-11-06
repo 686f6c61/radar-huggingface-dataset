@@ -91,7 +91,7 @@ No se han encontrado en la información proporcionada modelos directamente compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AmoghShrivastava1/g1-brunson
+- Hugging Face: https://huggingface.co/AmoghShrivastava1/g1-brunson
 - Repositorio de código, receta de entrenamiento y guía de despliegue: https://github.com/AmoghShrivastava/g1-brunson
 - Sitio interactivo con repetición 3D y fotogramas de la cámara de la cabeza: https://dribble.tenacelabs.com
 - Entrada en HIM Arena: https://arena.himrobotics.com/uploads/source_641045110d48de6239e5

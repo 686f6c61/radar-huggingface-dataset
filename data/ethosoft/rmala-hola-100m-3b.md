@@ -85,7 +85,7 @@ Los unicos comparables con datos publicados son las otras variantes del mismo re
 
 | Modelo | Parametros | Contexto | Test PPL | Test BPB | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| rmala-hola-100m-3b (hola) | 100.686.864 | 2048 | 20,419358 | 1,228817 | no disponible | HuggingFace (Ethosoft / MercanAI) |
+| rmala-hola-100m-3b (hola) | 100.686.864 | 2048 | 20,419358 | 1,228817 | no disponible | Hugging Face (Ethosoft / MercanAI) |
 | rmala variante full | no disponible | 2048 | 22,187501 | 1,262025 | no disponible | mismo repositorio |
 | rmala variante v14_half | no disponible | 2048 | 25,482146 | 1,319796 | no disponible | mismo repositorio |
 | rmala variante v14_full | no disponible | 2048 | 25,591686 | 1,321246 | no disponible | mismo repositorio |
@@ -112,8 +112,8 @@ No se proporciona comparacion con modelos externos de tamano similar (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace (Ethosoft): https://huggingface.co/Ethosoft/rmala-hola-100m-3b
-- Espejo en HuggingFace (MercanAI): https://huggingface.co/MercanAI/rmala-hola-100m-3b
+- Modelo en Hugging Face (Ethosoft): https://huggingface.co/Ethosoft/rmala-hola-100m-3b
+- Espejo en Hugging Face (MercanAI): https://huggingface.co/MercanAI/rmala-hola-100m-3b
 - Documentacion del protocolo de evaluacion: LM100_PROTOCOL.md (incluido en el repositorio)
 - Configuracion de entrenamiento: training_config.json (incluido en el repositorio)
 - Metricas completas de validacion/test: evaluation.json (incluido en el repositorio)

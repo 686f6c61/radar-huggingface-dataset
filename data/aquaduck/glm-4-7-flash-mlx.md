@@ -77,8 +77,8 @@ No se dispone de datos de benchmarks ni de mediciones comparativas en la informa
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aquaduck/GLM-4.7-Flash-MLX` (este repositorio) | 31,2 B | 202.752 tokens | 4 bits MLX + shards por capas | MIT | HuggingFace, 33,9 GB |
-| `zai-org/GLM-4.7-Flash` (base) | 31,2 B | 202.752 tokens | no disponible (precision original) | MIT | HuggingFace |
+| `aquaduck/GLM-4.7-Flash-MLX` (este repositorio) | 31,2 B | 202.752 tokens | 4 bits MLX + shards por capas | MIT | Hugging Face, 33,9 GB |
+| `zai-org/GLM-4.7-Flash` (base) | 31,2 B | 202.752 tokens | no disponible (precision original) | MIT | Hugging Face |
 | Otras alternativas de ~30 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de mediciones comparativas en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aquaduck/GLM-4.7-Flash-MLX
+- Repositorio en Hugging Face: https://huggingface.co/aquaduck/GLM-4.7-Flash-MLX
 - Modelo base y fuente de la cuantizacion: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Cuantizacion MLX de origen: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

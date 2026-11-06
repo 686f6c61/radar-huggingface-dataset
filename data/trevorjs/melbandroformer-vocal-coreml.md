@@ -100,7 +100,7 @@ El checkpoint de referencia de KimberleyJSN/melbandroformer es el equivalente di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TrevorJS/MelBandRoformer-Vocal-CoreML
+- Modelo en Hugging Face: https://huggingface.co/TrevorJS/MelBandRoformer-Vocal-CoreML
 - Modelo base (PyTorch): https://huggingface.co/KimberleyJSN/melbandroformer
 - Repositorio slurper (host de referencia y scripts de conversión): https://github.com/TrevorS/slurper
 - Receta de conversión en coreai-model-zoo: https://github.com/john-rocky/coreai-model-zoo/tree/main/conversion/melband_roformer

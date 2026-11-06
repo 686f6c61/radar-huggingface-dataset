@@ -24,7 +24,7 @@ Tecnicamente es un adaptador de 29 millones de pesos entrenados (0,31 % del mode
 | Rango LoRA | 16 |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion en HuggingFace | 2026-10-09 |
+| Fecha de publicacion en Hugging Face | 2026-10-09 |
 
 ## Arquitectura y entrenamiento
 
@@ -109,7 +109,7 @@ No se dispone de datos publicados que comparen este adaptador con otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Christopher4113/judgeman-qwen3.5-9b-judge
+- Modelo en Hugging Face: https://huggingface.co/Christopher4113/judgeman-qwen3.5-9b-judge
 - Repositorio del framework JudgeMan: https://github.com/Christopher4113/JudgeMan
 - Informe de evaluacion (leg2-report.pdf): reports/leg2-report.pdf dentro del repositorio JudgeMan
 - Cuaderno de fine-tuning: notebooks/finetune_qwen_judge.ipynb dentro del repositorio JudgeMan

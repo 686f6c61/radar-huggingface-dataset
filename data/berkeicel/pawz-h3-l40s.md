@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`berkeicel/pawz-h3-l40s` no es un modelo entrenado por el autor que lo publica, sino un paquete de distribución. Se trata de una recopilación sin modificar de ficheros de MiniMax H3 (procedentes del repositorio `Comfy-Org/MiniMax-H3`, commit `4cc1d81`) junto con el LoRA `lightx2v/Minimax-h3-Turbo` fl2v de 4 pasos, todo agrupado en un único repositorio de HuggingFace con el propósito declarado de servir como caché de modelo para despliegues serverless. El tamaño del repositorio es de 55,9 GB.
+`berkeicel/pawz-h3-l40s` no es un modelo entrenado por el autor que lo publica, sino un paquete de distribución. Se trata de una recopilación sin modificar de ficheros de MiniMax H3 (procedentes del repositorio `Comfy-Org/MiniMax-H3`, commit `4cc1d81`) junto con el LoRA `lightx2v/Minimax-h3-Turbo` fl2v de 4 pasos, todo agrupado en un único repositorio de Hugging Face con el propósito declarado de servir como caché de modelo para despliegues serverless. El tamaño del repositorio es de 55,9 GB.
 
 El contenido incluye un transformer "pruned int8", un codificador de texto también en int8, varios VAE y el LoRA Turbo en 4 pasos. La nomenclatura de los ficheros (`fl2va`) apunta a un pipeline de generación de vídeo condicionado, pero la model card no documenta arquitectura, número de parámetros, longitud de contexto ni idiomas, por lo que la mayor parte de las especificaciones técnicas habituales no están disponibles.
 
@@ -94,7 +94,7 @@ No disponible. La model card no ofrece datos de rendimiento, parámetros ni cont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/berkeicel/pawz-h3-l40s
+- Repositorio en Hugging Face: https://huggingface.co/berkeicel/pawz-h3-l40s
 - Licencia MiniMax H3 (fichero en el repositorio): https://huggingface.co/berkeicel/pawz-h3-l40s/blob/main/LICENSE-MiniMax-H3
 - Acuerdo de licencia comunitaria de MiniMax H3: https://huggingface.co/berkeicel/pawz-h3-l40s/blob/main/LICENSE-MiniMax-H3
 - Pesos de origen (Comfy-Org): https://huggingface.co/Comfy-Org/MiniMax-H3

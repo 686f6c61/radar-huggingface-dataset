@@ -77,9 +77,9 @@ El adaptador mejora el formato (0.000 → 1.000) y reduce la latencia, pero el `
 
 | Modelo | Arquitectura | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **Este adaptador (r=16)** | LoRA sobre Qwen3.5-0.8B | No disponible | No disponible | target 0.360, regression 0.644 | Apache-2.0 | HuggingFace |
+| **Este adaptador (r=16)** | LoRA sobre Qwen3.5-0.8B | No disponible | No disponible | target 0.360, regression 0.644 | Apache-2.0 | Hugging Face |
 | **Adaptador LoRA r=64** (mismo base, mismo entrenamiento) | LoRA sobre Qwen3.5-0.8B | No disponible | No disponible | target 0.520, regression 0.067 | Apache-2.0 | No publicado (reportado en la model card) |
-| **Base Qwen3.5-0.8B + prompt optimizado** | Transformer multimodal híbrido | 0.8B | No disponible | target 0.495, regression 0.556 | Apache-2.0 | HuggingFace |
+| **Base Qwen3.5-0.8B + prompt optimizado** | Transformer multimodal híbrido | 0.8B | No disponible | target 0.495, regression 0.556 | Apache-2.0 | Hugging Face |
 
 El adaptador r=64 supera al adaptador r=16 en target, pero sufre una regresión catastrófica en capacidades generales. El base model con prompt optimizado sigue siendo mejor opción para la tarea de clasificación, ya que no requiere entrenamiento adicional y obtiene un target superior.
 
@@ -97,9 +97,9 @@ El adaptador r=64 supera al adaptador r=16 en target, pero sufre una regresión 
 
 ## Enlaces
 
-- [HuggingFace - tiandao1707/qwen3.5-0.8b-vi-ticket-triage-lora](https://huggingface.co/tiandao1707/qwen3.5-0.8b-vi-ticket-triage-lora)
+- [Hugging Face - tiandao1707/qwen3.5-0.8b-vi-ticket-triage-lora](https://huggingface.co/tiandao1707/qwen3.5-0.8b-vi-ticket-triage-lora)
 - [GitHub del autor - código y reporte](https://github.com/leduc1707/K3-Track03-Lab21-2A202601767-LeQuangDuc)
-- [Modelo base Qwen3.5-0.8B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-0.8B)
+- [Modelo base Qwen3.5-0.8B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Documentación de Qwen3.5 en Unsloth](https://unsloth.ai/docs/models/qwen3.5/fine-tune)
 - [Qwen3.5 en Ollama](https://ollama.com/library/qwen3.5:0.8b)
 - [Qwen3.5 en Roboflow](https://inference-models.roboflow.com/models/qwen35/)

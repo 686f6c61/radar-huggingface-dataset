@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DMX es un repositorio de modelo publicado en HuggingFace por el usuario Wa7k3r bajo el identificador `Wa7k3r/DMX`. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia Apache 2.0 en el encabezado YAML, sin secciones de arquitectura, entrenamiento, uso previsto ni ejemplos de inferencia. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas soportados.
+DMX es un repositorio de modelo publicado en Hugging Face por el usuario Wa7k3r bajo el identificador `Wa7k3r/DMX`. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia Apache 2.0 en el encabezado YAML, sin secciones de arquitectura, entrenamiento, uso previsto ni ejemplos de inferencia. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas soportados.
 
 No se dispone de informacion sobre el numero de parametros, la longitud de contexto, la arquitectura subyacente ni el formato de pesos. Los metadatos indican fecha de creacion y ultima actualizacion el 1 de octubre de 2026, un valor que resulta anomalo y que podria deberse a un error de marca temporal o a una fecha programada en el momento de la publicacion.
 
@@ -65,7 +65,7 @@ No disponible. Sin conocer el numero de parametros ni el formato de pesos no es 
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible identificar modelos comparables porque se desconocen la categoria, el tamano y la tarea del modelo. La unica alternativa es comparar con otros repositorios de HuggingFace publicados sin documentacion tecnica, lo que no aporta informacion util sobre parametros, contexto, rendimiento o disponibilidad.
+No disponible. No es posible identificar modelos comparables porque se desconocen la categoria, el tamano y la tarea del modelo. La unica alternativa es comparar con otros repositorios de Hugging Face publicados sin documentacion tecnica, lo que no aporta informacion util sobre parametros, contexto, rendimiento o disponibilidad.
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wa7k3r/DMX
+- Repositorio en Hugging Face: https://huggingface.co/Wa7k3r/DMX
 
 Enlaces encontrados en la busqueda web que comparten el termino "DMX" pero que no guardan relacion con este modelo:
 

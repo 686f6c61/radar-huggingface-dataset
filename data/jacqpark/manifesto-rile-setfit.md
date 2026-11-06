@@ -83,7 +83,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 | Modelo | Parametros | Contexto | Cohen's kappa | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | TF-IDF + regresion logistica (baseline del autor) | no disponible | no aplica | 0,18 | 0,59 | no disponible | baseline descrito en la model card |
-| manifesto-RILE-setfit | 22.713.216 | 256 tokens (backbone) | 0,42 | 0,71 | apache-2.0 | HuggingFace |
+| manifesto-RILE-setfit | 22.713.216 | 256 tokens (backbone) | 0,42 | 0,71 | apache-2.0 | Hugging Face |
 | Otros clasificadores RILE comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre clasificadores alternativos equivalentes entrenados sobre el Manifesto Project con los que establecer una comparacion cuantitativa directa. La unica referencia comparable documentada es el baseline TF-IDF con regresion logistica incluido por el propio autor.
@@ -102,7 +102,7 @@ No se dispone de informacion sobre clasificadores alternativos equivalentes entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jacqpark/manifesto-RILE-setfit
+- Modelo en Hugging Face: https://huggingface.co/jacqpark/manifesto-RILE-setfit
 - Modelo base sentence-transformers/all-MiniLM-L6-v2: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Terminos de uso del Manifesto Project: https://manifesto-project.wzb.eu/information/documents/terms_of_use
 - Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo (unicamente resultados no relacionados de portales de reservas). No se han localizado papers, blogs, repositorios adicionales ni demos asociados al modelo en la informacion disponible.

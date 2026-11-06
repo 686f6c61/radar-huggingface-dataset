@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientAT mn10_as ONNX (este) | no disponible (fichero de 20,2 MB) | Ventanas de audio de 0,5 a 60 s a 32 kHz | no disponible | MIT | HuggingFace, ONNX |
+| EfficientAT mn10_as ONNX (este) | no disponible (fichero de 20,2 MB) | Ventanas de audio de 0,5 a 60 s a 32 kHz | no disponible | MIT | Hugging Face, ONNX |
 | EfficientAT mn10_as original (PyTorch) | no disponible | Misma entrada, pero requiere preprocesado externo | mAP ~0,471 en AudioSet (según nombre del checkpoint) | MIT | GitHub de EfficientAT |
 | Otros clasificadores AudioSet | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,8 +83,8 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Chris-Kode/efficientat-mn10-as-onnx
+- Hugging Face: https://huggingface.co/Chris-Kode/efficientat-mn10-as-onnx
 - Repositorio original de EfficientAT: https://github.com/fschmid56/EfficientAT
 - Checkpoint original: `mn10_as_mAP_471.pt` de la release `v0.0.1` del repositorio EfficientAT
 - Código de exportación: `export_efficientat.py` y `common.py` (incluidos en el repositorio del autor, según la model card)
-- Licencia MIT: fichero `LICENSE` en el repositorio de HuggingFace
+- Licencia MIT: fichero `LICENSE` en el repositorio de Hugging Face

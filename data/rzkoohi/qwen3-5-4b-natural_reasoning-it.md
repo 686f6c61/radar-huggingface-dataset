@@ -71,7 +71,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Rzkoohi/Qwen3.5-4B-Natural_reasoning-IT)
+- [Modelo en Hugging Face](https://huggingface.co/Rzkoohi/Qwen3.5-4B-Natural_reasoning-IT)
 - [Modelo base de razonamiento](https://huggingface.co/Rzkoohi/Qwen3.5-4B-Natural_reasoning)
 - [Dataset UltraChat 200k](https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k)
 - [Dataset natural_reasoning](https://huggingface.co/datasets/facebook/natural_reasoning)

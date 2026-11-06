@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MiniMax-H3 es un modelo de lenguaje publicado en formato GGUF por el usuario realrebelai, con el identificador `realrebelai/MiniMax-H3_GGUFs`. Según la información disponible en HuggingFace, se trata de una cuantización del modelo base `Comfy-Org/MiniMax-H3`, orientada a su uso en entornos como ComfyUI. El modelo acumula 275.299 descargas y 199 likes, lo que sugiere cierta adopción en la comunidad, aunque los datos técnicos publicados son muy limitados.
+MiniMax-H3 es un modelo de lenguaje publicado en formato GGUF por el usuario realrebelai, con el identificador `realrebelai/MiniMax-H3_GGUFs`. Según la información disponible en Hugging Face, se trata de una cuantización del modelo base `Comfy-Org/MiniMax-H3`, orientada a su uso en entornos como ComfyUI. El modelo acumula 275.299 descargas y 199 likes, lo que sugiere cierta adopción en la comunidad, aunque los datos técnicos publicados son muy limitados.
 
-La ficha se basa exclusivamente en la información proporcionada por HuggingFace, que no incluye detalles sobre arquitectura, tamaño, contexto, licencia o idiomas. Por tanto, la mayor parte de las especificaciones técnicas no están disponibles y se indicará explícitamente cuando sea el caso. No se debe asumir información no documentada.
+La ficha se basa exclusivamente en la información proporcionada por Hugging Face, que no incluye detalles sobre arquitectura, tamaño, contexto, licencia o idiomas. Por tanto, la mayor parte de las especificaciones técnicas no están disponibles y se indicará explícitamente cuando sea el caso. No se debe asumir información no documentada.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura interna, el proceso de ent
 
 ## Capacidades
 
-No se dispone de información específica sobre las capacidades del modelo en la ficha de HuggingFace. Al ser un GGUF de un modelo de lenguaje, es probable que pueda realizar tareas de generación de texto, pero no hay documentación que confirme funciones como tool calling, razonamiento multi-paso, soporte de agentes o capacidades multilingües. Se debe tratar esta sección como no disponible hasta que se publique información oficial.
+No se dispone de información específica sobre las capacidades del modelo en la ficha de Hugging Face. Al ser un GGUF de un modelo de lenguaje, es probable que pueda realizar tareas de generación de texto, pero no hay documentación que confirme funciones como tool calling, razonamiento multi-paso, soporte de agentes o capacidades multilingües. Se debe tratar esta sección como no disponible hasta que se publique información oficial.
 
 ## Casos de uso
 
@@ -52,5 +52,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace: realrebelai/MiniMax-H3_GGUFs](https://huggingface.co/realrebelai/MiniMax-H3_GGUFs)
+- [Hugging Face: realrebelai/MiniMax-H3_GGUFs](https://huggingface.co/realrebelai/MiniMax-H3_GGUFs)
 - [Modelo base: Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3) (referenciado en las etiquetas, no verificado directamente)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ottavia Flux LoRA es un adaptador de bajo rango (LoRA) para el modelo de generacion de imagenes FLUX.1-dev de Black Forest Labs. Lo publica el usuario Atlaspl en HuggingFace y su funcion es inyectar un sujeto concreto, identificado por el token de instancia `OTTAVIA_WOMAN`, en las generaciones del modelo base. El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
+Ottavia Flux LoRA es un adaptador de bajo rango (LoRA) para el modelo de generacion de imagenes FLUX.1-dev de Black Forest Labs. Lo publica el usuario Atlaspl en Hugging Face y su funcion es inyectar un sujeto concreto, identificado por el token de instancia `OTTAVIA_WOMAN`, en las generaciones del modelo base. El repositorio ocupa 0,3 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
 
 El modelo resuelve el problema clasico de consistencia de identidad en difusion texto-a-imagen: en lugar de describir a la persona en cada prompt y obtener resultados distintos, el LoRA permite referirse a un sujeto fijo mediante una palabra clave y mantener rasgos faciales, tono de piel y estilo fotografico entre generaciones. Es relevante para flujos de trabajo de creacion de personajes, storyboards y contenido editorial que requieran un personaje recurrente.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atlaspl/ottavia-flux-lora | LoRA sobre FLUX.1-dev | no disponible (0,3 GB) | no aplica | openrail | HuggingFace, 0 descargas |
-| black-forest-labs/FLUX.1-dev | Modelo base de difusion | no disponible en esta ficha | no disponible | licencia FLUX.1-dev (no comercial en su variante dev) | HuggingFace |
-| LoRA de identidad genericos sobre SDXL | LoRA sobre SDXL | no disponible | no disponible | variable segun autor | Amplia disponibilidad en HuggingFace |
+| Atlaspl/ottavia-flux-lora | LoRA sobre FLUX.1-dev | no disponible (0,3 GB) | no aplica | openrail | Hugging Face, 0 descargas |
+| black-forest-labs/FLUX.1-dev | Modelo base de difusion | no disponible en esta ficha | no disponible | licencia FLUX.1-dev (no comercial en su variante dev) | Hugging Face |
+| LoRA de identidad genericos sobre SDXL | LoRA sobre SDXL | no disponible | no disponible | variable segun autor | Amplia disponibilidad en Hugging Face |
 
 No se dispone de datos de rendimiento comparado ni de adaptadores equivalentes documentados en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado ni de adaptadores equivalentes d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atlaspl/ottavia-flux-lora
+- Repositorio Hugging Face: https://huggingface.co/Atlaspl/ottavia-flux-lora
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Licencia OpenRAIL: https://huggingface.co/blog/open_rail
 - Libreria diffusers: https://github.com/huggingface/diffusers

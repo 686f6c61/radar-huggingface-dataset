@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo comparable con otros modelos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realrebelai/LOW_VRAM_Workflows
+- Repositorio Hugging Face: https://huggingface.co/realrebelai/LOW_VRAM_Workflows
 - Canal de YouTube de Rebel AI: https://www.youtube.com/@realrebelai/videos
 - Repositorio GitHub de nodos para AsymFLUX.2 Klein: https://github.com/RealRebelAI/REBELS_LOW_VRAM_ComfyUI-Klein9B-AsymFlow
 - Ejemplo de workflow LTX-2.5 en YouTube: https://www.youtube.com/watch?v=pgWSDVSgon0

@@ -23,7 +23,7 @@ Su relevancia actual radica en la combinación de tamaño reducido (752.393.024 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen3.5-0.8B-Base, un transformer de texto etiquetado en HuggingFace con la arquitectura `qwen3_5_text`. Sobre esa base, Remek aplica un ajuste fino orientado a decisión tipada, usando basal-omni-1.0-ultra (31B, construido sobre Gemma 4) como profesor en un esquema de destilación. La salida no es texto generado token a token, sino una probabilidad por cada respuesta permitida calculada en un solo forward pass, lo que elimina la decodificación autoregresiva en la ruta de inferencia.
+El modelo parte de Qwen3.5-0.8B-Base, un transformer de texto etiquetado en Hugging Face con la arquitectura `qwen3_5_text`. Sobre esa base, Remek aplica un ajuste fino orientado a decisión tipada, usando basal-omni-1.0-ultra (31B, construido sobre Gemma 4) como profesor en un esquema de destilación. La salida no es texto generado token a token, sino una probabilidad por cada respuesta permitida calculada en un solo forward pass, lo que elimina la decodificación autoregresiva en la ruta de inferencia.
 
 La información disponible no detalla el número de tokens de entrenamiento, la composición del dataset ni si se emplearon RLHF o DPO. El autor sí menciona un conjunto de evaluación propio ("Werdykt", 5.000 ítems ocultos en polaco e inglés) y un conjunto de desarrollo de 1.700 ítems usado para validar la paridad entre el modo nativo y el modo GGUF. La innovación técnica destacable es el contrato de salida tipado con calibración por modelo: el motor basal entrega probabilidades acompañadas de un parámetro `max_error`, y el modelo GGUF incluye su propio fichero de calibración.
 
@@ -103,7 +103,7 @@ La comparativa se limita a la propia familia basal, ya que la información dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remek/basal-omni-pico
+- Modelo en Hugging Face: https://huggingface.co/Remek/basal-omni-pico
 - GGUF: https://huggingface.co/Remek/basal-omni-pico-GGUF
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Documentación de la API: https://github.com/rkinas/basal#api

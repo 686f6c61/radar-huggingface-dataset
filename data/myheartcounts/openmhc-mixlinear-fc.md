@@ -34,7 +34,7 @@ El checkpoint se ha entrenado desde cero sobre el split de entrenamiento del ben
 - Captura de tendencias locales por canal mediante segmentacion lineal en el dominio temporal.
 - Inferencia con huella computacional minima (aproximadamente 0,1K parametros), adecuada para entornos con recursos limitados.
 - Integracion con el harness de evaluacion de OpenMHC mediante `openmhc.evaluate_forecasting`.
-- Carga directa desde HuggingFace a traves de `MixLinearForecaster.from_release`.
+- Carga directa desde Hugging Face a traves de `MixLinearForecaster.from_release`.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multilingues, al no ser un modelo linguistico.
 - No dispone de modo thinking, vision ni audio.
 
@@ -43,7 +43,7 @@ El checkpoint se ha entrenado desde cero sobre el split de entrenamiento del ben
 - Reproduccion del benchmark OpenMHC: cargar el checkpoint con `MixLinearForecaster.from_release("hf://MyHeartCounts/openmhc-mixlinear-fc@v1.1")` y ejecutar `openmhc.evaluate_forecasting` para obtener resultados comparables con otras arquitecturas del track de forecasting.
 - Linea base metodologica en investigacion: usar MixLinear como referencia de coste minimo frente a modelos mas complejos (transformers, SSM) para cuantificar la ganancia real de arquitecturas pesadas en forecasting de wearables.
 - Prototipado rapido de pipelines de forecasting: al tener un coste de inferencia minimo, permite iterar sobre preprocesado, escalado y ventanas temporales sin cuellos de botella de computo.
-- Validacion de infraestructura de evaluacion: servir como checkpoint de humo (smoke test) para verificar que el harness de OpenMHC, la carga desde HuggingFace y el pipeline de metricas funcionan correctamente antes de evaluar modelos mayores.
+- Validacion de infraestructura de evaluacion: servir como checkpoint de humo (smoke test) para verificar que el harness de OpenMHC, la carga desde Hugging Face y el pipeline de metricas funcionan correctamente antes de evaluar modelos mayores.
 - Experimentos de ablacion sobre componentes: al separar modelado temporal y frecuencial, permite estudiar el impacto de cada componente en el error de prediccion sobre senales de wearables.
 - Docencia y formacion: ejemplo didactico de forecasting multivariante de bajo coste con implementacion abierta en PyPOTS, util para cursos de series temporales aplicadas a salud digital.
 - Despliegue en dispositivos con recursos restringidos: su tamano minimo lo hace candidato para pruebas de concepto de prediccion local en entornos embebidos, siempre dentro del marco de uso exclusivamente investigador.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OpenMHC MixLinear (este checkpoint) | aproximadamente 0,1K | Forecasting 24 h, 19 canales, resolucion horaria | BigScience OpenRAIL-M | HuggingFace (MyHeartCounts) |
+| OpenMHC MixLinear (este checkpoint) | aproximadamente 0,1K | Forecasting 24 h, 19 canales, resolucion horaria | BigScience OpenRAIL-M | Hugging Face (MyHeartCounts) |
 | Alternativas del track 3 de OpenMHC | no disponible | misma tarea de forecasting | no disponible | no disponible |
 | Otras arquitecturas de forecasting en PyPOTS | no disponible | forecasting multivariante generico | no disponible | GitHub / PyPOTS |
 
@@ -84,7 +84,7 @@ No se dispone de datos publicados en la informacion proporcionada sobre otros ch
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-mixlinear-fc
+- Modelo en Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-mixlinear-fc
 - Implementacion PyPOTS: https://github.com/WenjieDu/PyPOTS
 - Documentacion PyPOTS: https://docs.pypots.com
 - Paper MixLinear (Ma et al., 2024): https://arxiv.org/abs/2410.02081

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32, 0,25 GB en FP16 y 0,13 GB en INT8. Esta es una estimación basada en el número de parámetros; no se dispone de mediciones reales.
 - GPU recomendadas: cualquier GPU consumer con al menos 1 GB de VRAM, por ejemplo RTX 3060, GTX 1660 o incluso ejecución en CPU.
 - Compatibilidad con consumer GPU: sí, sobradamente.
-- Opciones de despliegue: Transformers de HuggingFace, ONNX Runtime, TorchServe. No se dispone de información sobre vLLM, llama.cpp, Ollama o TGI, ya que son herramientas orientadas a modelos generativos.
+- Opciones de despliegue: Transformers de Hugging Face, ONNX Runtime, TorchServe. No se dispone de información sobre vLLM, llama.cpp, Ollama o TGI, ya que son herramientas orientadas a modelos generativos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: [Charanjot/gd-arena-argument-quality](https://huggingface.co/Charanjot/gd-arena-argument-quality)
+- Hugging Face: [Charanjot/gd-arena-argument-quality](https://huggingface.co/Charanjot/gd-arena-argument-quality)
 - Otros enlaces: no disponibles.

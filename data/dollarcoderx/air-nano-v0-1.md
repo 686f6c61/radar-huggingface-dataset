@@ -54,8 +54,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DollarCoderX/air-nano-v0.1 | 1.543.714.304 | no disponible | Apache 2.0 | HuggingFace |
-| unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| DollarCoderX/air-nano-v0.1 | 1.543.714.304 | no disponible | Apache 2.0 | Hugging Face |
+| unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de información suficiente para comparar rendimiento con otros modelos de la misma categoría. El modelo es un finetune del modelo base indicado.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar rendimiento con otros mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DollarCoderX/air-nano-v0.1
+- Hugging Face: https://huggingface.co/DollarCoderX/air-nano-v0.1
 - Perfil del autor: https://huggingface.co/DollarCoderX
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/mobilefacenet-imx` es un modelo publicado en HuggingFace por NXP Semiconductors, compañía neerlandesa con sede en Eindhoven especializada en semiconductores para automoción, IoT e industria. El identificador del repositorio sugiere que se trata de una implementación o adaptación de la arquitectura MobileFaceNet orientada a las plataformas de procesamiento i.MX de NXP, aunque esta afirmación no puede confirmarse a partir de la informacion disponible.
+`nxp/mobilefacenet-imx` es un modelo publicado en Hugging Face por NXP Semiconductors, compañía neerlandesa con sede en Eindhoven especializada en semiconductores para automoción, IoT e industria. El identificador del repositorio sugiere que se trata de una implementación o adaptación de la arquitectura MobileFaceNet orientada a las plataformas de procesamiento i.MX de NXP, aunque esta afirmación no puede confirmarse a partir de la informacion disponible.
 
 La model card publicada es esencialmente vacía: unicamente declara la licencia Apache 2.0 y no incluye descripcion, especificaciones, datos de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que apunta a un artefacto recien creado o de distribucion interna.
 
@@ -66,7 +66,7 @@ No disponible. No se conocen, a partir de la informacion proporcionada, modelos 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nxp/mobilefacenet-imx | no disponible | no disponible | apache-2.0 | HuggingFace |
+| nxp/mobilefacenet-imx | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. No se conocen, a partir de la informacion proporcionada, modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nxp/mobilefacenet-imx
+- Hugging Face: https://huggingface.co/nxp/mobilefacenet-imx
 - NXP Semiconductors (web corporativa): https://www.nxp.com/
 - NXP Semiconductors (productos): https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors (Wikipedia, EN): https://en.wikipedia.org/wiki/NXP_Semiconductors

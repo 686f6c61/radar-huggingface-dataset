@@ -84,8 +84,8 @@ Human-likeness sobre posiciones reservadas de la banda, temperatura 0.001:
 
 | Modelo | Parámetros | Contexto | Fuerza estimada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chess-pgn-2400plus-rl | 50.997.248 | 1.024 caracteres | Glicko-2 ~1909-1933 | MIT | HuggingFace |
-| chess-pgn-2400plus (base) | no disponible en la información | 1.024 caracteres | Glicko-2 ~1735-1790 | MIT | HuggingFace |
+| chess-pgn-2400plus-rl | 50.997.248 | 1.024 caracteres | Glicko-2 ~1909-1933 | MIT | Hugging Face |
+| chess-pgn-2400plus (base) | no disponible en la información | 1.024 caracteres | Glicko-2 ~1735-1790 | MIT | Hugging Face |
 | Motores de ajedrez clásicos (Stockfish, Leela) | no disponible | no aplica | Muy superior a 2400 | GPL / otras | Binarios |
 
 No se dispone de datos de otros modelos de ajedrez a nivel de carácter comparables en la información proporcionada. La comparación principal es con su propio modelo base, del que mejora entre 119 y 178 puntos Glicko-2 según temperatura, a costa de una pérdida de human-likeness marginal (top-1 sube 0,5 puntos, top-5 baja 0,4 puntos y la pérdida frente a la mejor jugada pasa de 5,94% a 6,03%).
@@ -103,6 +103,6 @@ No se dispone de datos de otros modelos de ajedrez a nivel de carácter comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arisp/chess-pgn-2400plus-rl
+- Modelo en Hugging Face: https://huggingface.co/Arisp/chess-pgn-2400plus-rl
 - Modelo base: https://huggingface.co/Arisp/chess-pgn-2400plus
 - Repositorio de código (scripts de entrenamiento y evaluación): https://github.com/AriSpiesberger/Memorize

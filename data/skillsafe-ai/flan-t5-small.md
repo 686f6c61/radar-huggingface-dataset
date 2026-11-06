@@ -111,7 +111,7 @@ La diferencia real entre las tres primeras filas es el formato y el proceso de p
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/skillsafe-ai/flan-t5-small
-- Upstream en HuggingFace: https://huggingface.co/Xenova/flan-t5-small/tree/311454e83bc784267fd7eef5940ee854144abbec
+- Pagina de Hugging Face del modelo: https://huggingface.co/skillsafe-ai/flan-t5-small
+- Upstream en Hugging Face: https://huggingface.co/Xenova/flan-t5-small/tree/311454e83bc784267fd7eef5940ee854144abbec
 - Recetas y conversor de SkillSafe: https://github.com/skillsafe-admin/skillsafe.ai-website/tree/main/models
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las consultas devolvieron documentacion de Google Flights y un hilo de Stack Overflow sobre Selenium, sin relacion con este repositorio.

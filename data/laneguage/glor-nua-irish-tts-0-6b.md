@@ -4,9 +4,9 @@
 
 Glor Nua Irish TTS 0.6B es un modelo de sintesis de voz (text-to-speech) especializado en irlandes (gaeilge, codigo ISO `ga`), desarrollado por Laneguage mediante fine-tuning del modelo base Qwen/Qwen3-TTS-12Hz-0.6B-Base. El modelo parte de la familia Qwen3-TTS de Alibaba y se adapta a un idioma de bajos recursos como el irlandes, un caso donde los sistemas TTS comerciales genericos suelen ofrecer cobertura limitada o voces de baja calidad.
 
-El modelo cuenta con 905.788.672 parametros reales en pesos safetensors (aproximadamente 0,9B, pese a la denominacion "0.6B" del modelo base), un repositorio de 2,5 GB y licencia Apache 2.0. Se distribuye como acceso restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones del autor antes de descargarlo. El identificador "12Hz" del modelo base sugiere una tasa de tokens de audio de 12 Hz, caracteristica de los codecs neuronales de baja tasa empleados en TTS modernos.
+El modelo cuenta con 905.788.672 parametros reales en pesos safetensors (aproximadamente 0,9B, pese a la denominacion "0.6B" del modelo base), un repositorio de 2,5 GB y licencia Apache 2.0. Se distribuye como acceso restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del autor antes de descargarlo. El identificador "12Hz" del modelo base sugiere una tasa de tokens de audio de 12 Hz, caracteristica de los codecs neuronales de baja tasa empleados en TTS modernos.
 
-Su relevancia actual radica en la escasez de recursos TTS de calidad para lenguas celtas y, en general, para idiomas de bajos recursos. Un modelo afinado especificamente para irlandes permite construir aplicaciones de accesibilidad, preservacion linguistica y sintesis de voz en un idioma con pocos hablantes nativos y escasa representacion en corpus de voz publicos. La ficha se basa exclusivamente en los metadatos disponibles en HuggingFace, dado que no se ha proporcionado documentacion tecnica adicional.
+Su relevancia actual radica en la escasez de recursos TTS de calidad para lenguas celtas y, en general, para idiomas de bajos recursos. Un modelo afinado especificamente para irlandes permite construir aplicaciones de accesibilidad, preservacion linguistica y sintesis de voz en un idioma con pocos hablantes nativos y escasa representacion en corpus de voz publicos. La ficha se basa exclusivamente en los metadatos disponibles en Hugging Face, dado que no se ha proporcionado documentacion tecnica adicional.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ El proceso de entrenamiento del modelo consiste en un fine-tuning del modelo bas
 - Sintesis de voz (text-to-speech) en irlandes a partir de texto escrito.
 - Generacion de audio de voz con la libreria `qwen-tts` y pesos en safetensors.
 - Especializacion en un idioma de bajos recursos: cobertura de irlandes (`ga`), no documentada en el modelo base generico.
-- Integracion en pipelines de HuggingFace mediante el pipeline `text-to-speech`.
+- Integracion en pipelines de Hugging Face mediante el pipeline `text-to-speech`.
 - No se documenta soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no es un modelo de lenguaje general).
 - No se documenta soporte de vision, audio de entrada ni modo thinking.
 - Capacidades multilingues: limitadas al irlandes segun los metadatos; no se indica soporte adicional de otros idiomas.
@@ -77,7 +77,7 @@ No se dispone de informacion sobre alternativas especificas de TTS en irlandes n
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace y requiere aceptar las condiciones del autor antes de la descarga, lo que puede retrasar su integracion en pipelines automatizados.
+- Acceso restringido: el modelo es gated en Hugging Face y requiere aceptar las condiciones del autor antes de la descarga, lo que puede retrasar su integracion en pipelines automatizados.
 - Cobertura limitada a un unico idioma (irlandes); no es adecuado para sintesis multilingue.
 - No se documentan sesgos especificos, pero al entrenarse sobre un corpus de voz en irlandes puede reflejar sesgos de genero, edad, acento regional o dialecto (por ejemplo, diferencias entre dialectos de Connacht, Munster y Ulster).
 - Riesgo de artefactos de sintesis y pronunciacion incorrecta en palabras extranjeras, nombres propios o terminologia tecnica no representada en el corpus de entrenamiento.
@@ -88,6 +88,6 @@ No se dispone de informacion sobre alternativas especificas de TTS en irlandes n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Laneguage/glor-nua-irish-tts-0.6b
+- Modelo en Hugging Face: https://huggingface.co/Laneguage/glor-nua-irish-tts-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

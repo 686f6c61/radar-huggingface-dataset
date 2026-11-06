@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tune) de tipo SFT del modelo base `goldfish-models/urd_arab_10mb`, desarrollado por el usuario de HuggingFace francesca9805 en el marco del proyecto goldfish-models. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 38.038.528 parámetros totales (aproximadamente 38 millones), lo que lo sitúa en la categoría de modelos muy pequenos, orientados a experimentación e investigación más que a producción generalista.
+El modelo `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tune) de tipo SFT del modelo base `goldfish-models/urd_arab_10mb`, desarrollado por el usuario de Hugging Face francesca9805 en el marco del proyecto goldfish-models. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 38.038.528 parámetros totales (aproximadamente 38 millones), lo que lo sitúa en la categoría de modelos muy pequenos, orientados a experimentación e investigación más que a producción generalista.
 
 El modelo resuelve, en principio, tareas de modelado de lenguaje sobre el mismo dominio que su modelo base, que por su nombre (`urd_arab_10mb`) apunta a datos en escritura urdu y árabe con un presupuesto de entrenamiento de 10 MB. El ajuste se ha realizado con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1, y el registro de entrenamiento está publicado en Weights & Biases bajo una cuenta de la Universidad de Groningen.
 
@@ -32,7 +32,7 @@ Los detalles del dataset de ajuste no están documentados en la información dis
 - Generación de texto autoregresiva básica, en la línea de un GPT-2 de 38 millones de parámetros.
 - Continuación de texto y modelado de lenguaje sobre el dominio del modelo base (presumiblemente texto en escritura urdu y árabe, sin confirmar).
 - Ejecución del pipeline de generación conversacional de Transformers: el ejemplo de la model card pasa una lista de mensajes con rol `user`, lo que sugiere compatibilidad con plantillas de chat, aunque no se documenta una plantilla específica.
-- Compatibilidad declarada con Text Generation Inference (tags `text-generation-inference` y `endpoints_compatible`), es decir, puede desplegarse mediante endpoints compatibles con la API de HuggingFace.
+- Compatibilidad declarada con Text Generation Inference (tags `text-generation-inference` y `endpoints_compatible`), es decir, puede desplegarse mediante endpoints compatibles con la API de Hugging Face.
 - No hay evidencia de soporte de tool calling, function calling, uso de agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento. Estas capacidades deben considerarse no disponibles.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: inferior a 1 GB en fp32 (los 38 M de parámetros ocupan aproximadamente 152 MB) y en torno a 76 MB en fp16. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria (GTX 1050, RTX 3060, RTX 4090, A100, H100); no requiere aceleradores de gama alta.
 - Inferencia en CPU: plenamente viable; también puede ejecutarse en dispositivos de borde tipo Raspberry Pi o Jetson, aunque no se han publicado medidas de latencia.
-- Opciones de despliegue: pipeline de Transformers, Text Generation Inference (por los tags del repositorio) y endpoints compatibles con la API de HuggingFace. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían una conversión previa por parte del usuario.
+- Opciones de despliegue: pipeline de Transformers, Text Generation Inference (por los tags del repositorio) y endpoints compatibles con la API de Hugging Face. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama requerirían una conversión previa por parte del usuario.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -63,8 +63,8 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparación se 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed10` | 38,0 M | No disponible | Sin benchmarks publicados | No disponible | HuggingFace (0 descargas, 0 likes) |
-| `goldfish-models/urd_arab_10mb` (modelo base) | No disponible en la informacion | No disponible | Sin benchmarks publicados en la informacion | No disponible | HuggingFace |
+| `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed10` | 38,0 M | No disponible | Sin benchmarks publicados | No disponible | Hugging Face (0 descargas, 0 likes) |
+| `goldfish-models/urd_arab_10mb` (modelo base) | No disponible en la informacion | No disponible | Sin benchmarks publicados en la informacion | No disponible | Hugging Face |
 | GPT-2 small (referencia general, no es un competidor directo) | 124 M | 1.024 tokens | Benchmarks publicados por OpenAI | MIT | Ampliamente disponible |
 
 No se han identificado en la información proporcionada otros fine-tunes comparables del mismo proyecto o de proyectos similares con los que establecer una comparación cuantitativa.
@@ -83,7 +83,7 @@ No se han identificado en la información proporcionada otros fine-tunes compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3v5p3wuv
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 256K | Apache 2.0 | FP16/BF16 | HuggingFace |
-| HauhauCS/Qwen3.8-27B-Uncensored | 27B | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| jfking/qwen38_27b_huahuacs_uncensored_ninfer_nvfp4 | 27B | no disponible | Apache 2.0 | NVFP4 | HuggingFace |
-| Dolphin 2.5 (Mixtral 8x7B) | 56B (MoE) | 32K | Apache 2.0 | GGUF | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 256K | Apache 2.0 | FP16/BF16 | Hugging Face |
+| HauhauCS/Qwen3.8-27B-Uncensored | 27B | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| jfking/qwen38_27b_huahuacs_uncensored_ninfer_nvfp4 | 27B | no disponible | Apache 2.0 | NVFP4 | Hugging Face |
+| Dolphin 2.5 (Mixtral 8x7B) | 56B (MoE) | 32K | Apache 2.0 | GGUF | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La principal diferencia es el formato de cuantizacion y la ausencia de censura en las variantes de HauhauCS y jfking.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia es el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jfking/qwen38_27b_huahuacs_uncensored_ninfer_nvfp4
+- Modelo en Hugging Face: https://huggingface.co/jfking/qwen38_27b_huahuacs_uncensored_ninfer_nvfp4
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia para ejecutar Qwen3.8-27B localmente: https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html
 - Guia de Qwen3.8-27B en Substack: https://linas.substack.com/p/qwen3-8-27b-local-guide

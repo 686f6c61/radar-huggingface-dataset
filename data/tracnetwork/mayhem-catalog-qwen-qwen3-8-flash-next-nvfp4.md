@@ -16,7 +16,7 @@ Hay que senalar dos discrepancias en la informacion disponible: los metadatos de
 | Parametros totales | 119.602.003.859 segun metadatos de safetensors; la model card indica ~180.000 millones en total (360 GB en BF16) |
 | Parametros activos | no disponible (512 expertos enrutados por capa MoE con enrutamiento top-10 + experto compartido; no se especifica el numero de parametros activos) |
 | Longitud de contexto | 262.144 tokens (262K) |
-| Tipos de cuantizacion | NVFP4 W4A4 (E2M1, group size 16, escalas de bloque FP8 E4M3, escalas globales FP32, activaciones NVFP4 dinamicas) solo en expertos enrutados; BF16 en el resto; tablas de embeddings PLE en FP8 E4M3 (descuantizadas a BF16 en carga). El tag de HuggingFace indica 8-bit |
+| Tipos de cuantizacion | NVFP4 W4A4 (E2M1, group size 16, escalas de bloque FP8 E4M3, escalas globales FP32, activaciones NVFP4 dinamicas) solo en expertos enrutados; BF16 en el resto; tablas de embeddings PLE en FP8 E4M3 (descuantizadas a BF16 en carga). El tag de Hugging Face indica 8-bit |
 | Idiomas soportados | no disponible |
 | Licencia | other (remite a los terminos del modelo de origen Qwen/Qwen3.8-Flash-Next) |
 | Formato de pesos | safetensors |
@@ -112,7 +112,7 @@ No se dispone de datos de benchmarks de los checkpoints FP8 o BF16 completos con
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta ficha: https://huggingface.co/TracNetwork/mayhem-catalog-Qwen-Qwen3-8-Flash-Next-NVFP4
+- Repositorio de Hugging Face de esta ficha: https://huggingface.co/TracNetwork/mayhem-catalog-Qwen-Qwen3-8-Flash-Next-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Revision FP8 del modelo base (origen de las tablas PLE cuantizadas): https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Repositorio NVFP4 citado en la model card: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-671B-Gale-v3 es una versión cuantizada a 1 bit del modelo DeepSeek-V4-Pro, publicada por el usuario benjzzz en HuggingFace. El modelo base, desarrollado por DeepSeek, es un MoE de 1,6 billones de parámetros (49 mil millones activos) con una ventana de contexto de un millón de tokens, orientado a tareas de razonamiento y generación de código. Esta variante aplica el motor de compresión Gale v3, que reduce el peso de los expertos a aproximadamente 1,33 bits por peso (bpw) mediante transformadas rápidas de Walsh-Hadamard (FWHT-1024) y codificación delta de outliers, logrando un footprint total de unos 271 GB frente a los más de 1,3 TB del modelo en fp16/bf16.
+DeepSeek-V4-Pro-671B-Gale-v3 es una versión cuantizada a 1 bit del modelo DeepSeek-V4-Pro, publicada por el usuario benjzzz en Hugging Face. El modelo base, desarrollado por DeepSeek, es un MoE de 1,6 billones de parámetros (49 mil millones activos) con una ventana de contexto de un millón de tokens, orientado a tareas de razonamiento y generación de código. Esta variante aplica el motor de compresión Gale v3, que reduce el peso de los expertos a aproximadamente 1,33 bits por peso (bpw) mediante transformadas rápidas de Walsh-Hadamard (FWHT-1024) y codificación delta de outliers, logrando un footprint total de unos 271 GB frente a los más de 1,3 TB del modelo en fp16/bf16.
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de escala 671B en hardware de consumo: según la model card, el runtime con descarga dinámica de expertos requiere menos de 16 GB de VRAM para las capas activas y la caché KV de MLA. El repositorio incluye un runtime Python propio (`gale_inference.py`) con streaming de los 8 expertos principales, lo que lo convierte en una opción interesante para despliegues locales con recursos limitados, aunque no se han publicado benchmarks que verifiquen la calidad tras la cuantización.
 
@@ -78,7 +78,7 @@ La comparativa se basa en datos oficiales de DeepSeek y Microsoft Foundry. La ve
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/benjzzz/DeepSeek-V4-Pro-671B-Gale-v3
+- Repositorio Hugging Face: https://huggingface.co/benjzzz/DeepSeek-V4-Pro-671B-Gale-v3
 - Sitio oficial de DeepSeek: https://deepseek.com/en/index.html
 - Catálogo de modelos de Microsoft Foundry (DeepSeek-V4-Pro): https://ai.azure.com/catalog/models/DeepSeek-V4-Pro
 - NVIDIA NIM (DeepSeek-V4-Pro): https://build.nvidia.com/deepseek-ai/deepseek-v4-pro

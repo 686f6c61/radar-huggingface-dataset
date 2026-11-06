@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christo-pherbcb/efficientformer-contrastive` es un prototipo de investigación publicado en HuggingFace por el usuario christo-pherbcb. Se presenta como una implementación propia de una arquitectura Efficientformer orientada a aprendizaje contrastivo, con una configuración etiquetada como "large" en su model card. El repositorio incluye el código de definición del modelo (`predict.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
+`christo-pherbcb/efficientformer-contrastive` es un prototipo de investigación publicado en Hugging Face por el usuario christo-pherbcb. Se presenta como una implementación propia de una arquitectura Efficientformer orientada a aprendizaje contrastivo, con una configuración etiquetada como "large" en su model card. El repositorio incluye el código de definición del modelo (`predict.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más relevante es su tamaño real: 49.600 parámetros totales según el recuento de safetensors. Se trata, por tanto, de un modelo minúsculo, muy alejado de lo que sugiere la etiqueta "large", y el propio autor aclara que el checkpoint **no ha sido entrenado** ni auditado, sino que sirve como inicialización válida para pruebas de humo. No se reclama ninguna puntuación de benchmark en el repositorio.
 
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - El repositorio apunta a una tarea de aprendizaje contrastivo (representaciones por similitud/aprendizaje de embeddings), pero sin pesos entrenados no hay representaciones útiles.
 - No consta soporte de *tool calling* ni de *function calling*.
 - No consta soporte de agentes ni de razonamiento multi-paso.
-- No consta soporte multilingüe (el campo de idiomas está vacío en la ficha de HuggingFace).
+- No consta soporte multilingüe (el campo de idiomas está vacío en la ficha de Hugging Face).
 - No consta modo *thinking*, visión operativa, audio ni ninguna capacidad multimodal funcional.
 - Lo que sí ofrece es infraestructura: definición de arquitectura ejecutable, ejemplo de prueba de humo en el bloque `__main__` de `predict.py`, configuración de arquitectura y receta de entrenamiento por defecto.
 - `python predict.py --help` está documentado como comprobación rápida inicial.
@@ -90,7 +90,7 @@ No disponible. No es posible establecer una comparativa fiable porque el reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christo-pherbcb/efficientformer-contrastive
+- Modelo en Hugging Face: https://huggingface.co/christo-pherbcb/efficientformer-contrastive
 - Repositorio del autor: no disponible (no se enlaza ninguna web, repo o perfil adicional en la información proporcionada)
 - Paper asociado: no disponible
 - Blog o demo: no disponible

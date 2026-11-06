@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455` es un modelo de generacion de texto publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino (SFT) del modelo base `francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfdiso_seed455`, realizado con la libreria TRL. El nombre del repositorio sugiere que forma parte de una linea de experimentos de investigacion centrada en tokenizadores y preentrenamiento sobre corpus pequenos (100 MB), con variantes identificadas por semilla (seed455 en este caso).
+`francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455` es un modelo de generacion de texto publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino (SFT) del modelo base `francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfdiso_seed455`, realizado con la libreria TRL. El nombre del repositorio sugiere que forma parte de una linea de experimentos de investigacion centrada en tokenizadores y preentrenamiento sobre corpus pequenos (100 MB), con variantes identificadas por semilla (seed455 en este caso).
 
 El modelo tiene 124.770.816 parametros totales segun los pesos en safetensors, una cifra compatible con la arquitectura GPT-2 pequena (etiquetada como `gpt2` en los tags del repositorio). No es un modelo MoE ni dispone de parametros activos diferenciados. Esta pensado exclusivamente para generacion de texto y se distribuye en formato safetensors, con soporte declarado para text-generation-inference y endpoints compatibles.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (tam-100mb-...-seed455) | 124,77 M | no disponible | GPT-2 | no disponible | HuggingFace, 0 descargas |
+| Este modelo (tam-100mb-...-seed455) | 124,77 M | no disponible | GPT-2 | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | GPT-2 | MIT | Ampliamente disponible |
-| goldfish-models/eng_latn_100mb | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base del linaje) |
-| SmolLM-135M | 135 M | 2048 tokens | Transformer decoder | Apache 2.0 | HuggingFace |
+| goldfish-models/eng_latn_100mb | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base del linaje) |
+| SmolLM-135M | 135 M | 2048 tokens | Transformer decoder | Apache 2.0 | Hugging Face |
 
 La comparacion directa es dificil porque el modelo no publica contexto, licencia ni benchmarks. Frente a GPT-2 small comparte recuento de parametros y arquitectura, pero carece de la documentacion y de la licencia permisiva (MIT) del original. Frente a SmolLM-135M queda por debajo en contexto declarado y en soporte de licencia.
 
@@ -88,8 +88,8 @@ La comparacion directa es dificil porque el modelo no publica contexto, licencia
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455
-- Modelo base en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfdiso_seed455
+- Hugging Face (modelo): https://huggingface.co/francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455
+- Modelo base en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfdiso_seed455
 - Repositorio TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zbwpmg2k
 - Variante relacionada (seed3407): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407

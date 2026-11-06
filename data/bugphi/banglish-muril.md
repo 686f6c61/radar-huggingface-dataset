@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bugphi/banglish-muril es un modelo alojado en HuggingFace por el usuario bugphi, con licencia MIT y un unico artefacto de pesos en formato safetensors. El recuento real de parametros es de 237.557.762 y el repositorio ocupa 1,0 GB. La model card no aporta practicamente nada: se limita a declarar `license: mit`, sin descripcion, sin datos de entrenamiento, sin idiomas declarados y sin pipeline asignado. El modelo acumula 0 descargas y 1 like desde su creacion el 13 de septiembre de 2026.
+bugphi/banglish-muril es un modelo alojado en Hugging Face por el usuario bugphi, con licencia MIT y un unico artefacto de pesos en formato safetensors. El recuento real de parametros es de 237.557.762 y el repositorio ocupa 1,0 GB. La model card no aporta practicamente nada: se limita a declarar `license: mit`, sin descripcion, sin datos de entrenamiento, sin idiomas declarados y sin pipeline asignado. El modelo acumula 0 descargas y 1 like desde su creacion el 13 de septiembre de 2026.
 
 El nombre del repositorio sugiere dos cosas: que se trata de un ajuste de MuRIL (el encoder multilingue de Google para lenguas de la India) y que su dominio objetivo es el "Banglish", es decir, texto code-mixed bengali-ingles. Esta interpretacion es coherente con la etiqueta `bert` del repositorio y con el recuento de parametros: MuRIL-base ronda los 236 millones de parametros, muy por encima de los 110 millones de BERT-base, porque utiliza un vocabulario mucho mayor. Conviene subrayar que se trata de una inferencia razonada a partir del nombre, la etiqueta y el tamano, no de un dato confirmado por el autor.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 - Cabe sobradamente en GPU de consumo: cualquier tarjeta con 4 GB o mas de VRAM es suficiente para inferencia en fp16 con lotes moderados (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090).
 - Tambien es viable en CPU: con 237 millones de parametros, la inferencia por secuencia es del orden de decenas de milisegundos en procesadores modernos, aunque no hay mediciones publicadas por el autor.
 - GPU de datacenter (A100, H100, L40S) solo tendrian sentido para ajuste fino con lotes grandes o para servir volumenes muy altos; no son necesarias para inferencia.
-- Opciones de despliegue: es un modelo compatible con HuggingFace Transformers (AutoModel con arquitectura tipo BERT), exportable a ONNX Runtime y a TorchScript, y servible con Text Embeddings Inference (TEI) o con vLLM en modo embedding. No se publican pesos GGUF, por lo que su uso con llama.cpp u Ollama requeriria una conversion propia.
+- Opciones de despliegue: es un modelo compatible con Hugging Face Transformers (AutoModel con arquitectura tipo BERT), exportable a ONNX Runtime y a TorchScript, y servible con Text Embeddings Inference (TEI) o con vLLM en modo embedding. No se publican pesos GGUF, por lo que su uso con llama.cpp u Ollama requeriria una conversion propia.
 - Latencia y throughput: no disponible. No hay ninguna medicion publicada en el repositorio.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ En ausencia de evaluaciones, no es posible afirmar que este modelo sea mejor o p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bugphi/banglish-muril
+- Modelo en Hugging Face: https://huggingface.co/bugphi/banglish-muril
 - Model card del autor: no disponible mas alla de la declaracion de licencia MIT
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

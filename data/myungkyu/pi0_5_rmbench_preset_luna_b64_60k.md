@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi0_5_rmbench_preset_luna_b64_60k es un modelo de política robótica de bajo nivel (low-level policy) desarrollado por el usuario Myungkyu y publicado en HuggingFace. Se trata de un fine-tuning de lerobot/pi05_base sobre el dataset Myungkyu/RMBench-preset-luna, compuesto por demostraciones con etiquetas densas de subtareas. Su propósito es resolver las 9 tareas de manipulación de sobremesa simuladas que define el benchmark RMBench, recibiendo como entrada imágenes de tres cámaras, propiocepción y el texto de la subtarea actual.
+pi0_5_rmbench_preset_luna_b64_60k es un modelo de política robótica de bajo nivel (low-level policy) desarrollado por el usuario Myungkyu y publicado en Hugging Face. Se trata de un fine-tuning de lerobot/pi05_base sobre el dataset Myungkyu/RMBench-preset-luna, compuesto por demostraciones con etiquetas densas de subtareas. Su propósito es resolver las 9 tareas de manipulación de sobremesa simuladas que define el benchmark RMBench, recibiendo como entrada imágenes de tres cámaras, propiocepción y el texto de la subtarea actual.
 
 El modelo pertenece a la familia Pi0.5, una arquitectura visión-lenguaje-acción (VLA) que combina percepción visual multi-cámara con instrucciones en lenguaje natural para emitir acciones motoras. Cuenta con 4.143.404.816 parámetros (aproximadamente 4,14 mil millones) en formato safetensors, con un repositorio de 9,4 GB. La innovación más destacable de esta variante es la inclusión de una ranura de keyframe (keyframe slot) que recupera un fotograma pasado cuando la etiqueta de subtarea lo requiere, implementando la convención de memoria full_frame_v1.
 
@@ -95,7 +95,7 @@ No se dispone de datos numéricos de modelos comparables en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_rmbench_preset_luna_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_rmbench_preset_luna_b64_60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/RMBench-preset-luna
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Librería LeRobot: https://github.com/huggingface/lerobot

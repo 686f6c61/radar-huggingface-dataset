@@ -100,7 +100,7 @@ Los datos de las tres alternativas provienen de sus propias fichas públicas y s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g8-v1_B
+- Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g8-v1_B
 - Ficheros de modelado incluidos en el repositorio: `config.json`, `configuration_mini_k3.py`, `modeling_mini_k3.py`, `mamba2_mixer.py` (bajo https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g8-v1_B/tree/main)
 - Manifiestos de entrenamiento, recetas y registros de gates: carpeta `training/` del mismo repositorio (https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g8-v1_B/tree/main/training)
 - Paper, blog, repositorio de código o demo adicionales: no disponible; la búsqueda web realizada no devolvió enlaces relacionados con el modelo.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`rdtyagi05/distillbert-sentiment-model` es un checkpoint de clasificación de texto publicado en HuggingFace por el usuario rdtyagi05. Por su identificador, sus etiquetas (`distilbert`, `text-classification`) y su recuento real de parámetros (66.955.779, obtenido de los pesos en safetensors), corresponde a un ajuste fino de la familia DistilBERT sobre una tarea de análisis de sentimiento. DistilBERT es una versión destilada de BERT-base descrita en el artículo arXiv:1910.09700, con 6 capas de encoder, anchura oculta de 768 y 12 cabezas de atención.
+`rdtyagi05/distillbert-sentiment-model` es un checkpoint de clasificación de texto publicado en Hugging Face por el usuario rdtyagi05. Por su identificador, sus etiquetas (`distilbert`, `text-classification`) y su recuento real de parámetros (66.955.779, obtenido de los pesos en safetensors), corresponde a un ajuste fino de la familia DistilBERT sobre una tarea de análisis de sentimiento. DistilBERT es una versión destilada de BERT-base descrita en el artículo arXiv:1910.09700, con 6 capas de encoder, anchura oculta de 768 y 12 cabezas de atención.
 
 El modelo resuelve un problema acotado y muy común en producción: asignar una etiqueta de sentimiento (típicamente positivo/negativo, o varias clases según el dataset de ajuste) a un texto corto o medio. Su interés práctico radica en el coste: al tener un 40 % menos de parámetros que BERT-base y ser aproximadamente un 60 % más rápido en inferencia, según las cifras del artículo de destilación, puede ejecutarse en CPU o en GPUs de gama baja con latencias de milisegundos, lo que lo hace apto para etiquetado masivo y filtrado en tiempo real.
 
-Ahora bien, la ficha debe leerse con cautela: la model card publicada es la plantilla automática de HuggingFace y no contiene ni un solo campo completado. No hay información sobre el dataset de ajuste, hiperparámetros, métricas, licencia ni idiomas. El repositorio tiene 0 descargas y 0 likes, por lo que no existe validación por parte de la comunidad. Todo lo que se afirma a continuación sobre el comportamiento del modelo es, o bien dato directo del Hub, o bien característica heredada de la arquitectura base, y se marca como tal.
+Ahora bien, la ficha debe leerse con cautela: la model card publicada es la plantilla automática de Hugging Face y no contiene ni un solo campo completado. No hay información sobre el dataset de ajuste, hiperparámetros, métricas, licencia ni idiomas. El repositorio tiene 0 descargas y 0 likes, por lo que no existe validación por parte de la comunidad. Todo lo que se afirma a continuación sobre el comportamiento del modelo es, o bien dato directo del Hub, o bien característica heredada de la arquitectura base, y se marca como tal.
 
 ## Especificaciones técnicas
 
@@ -59,7 +59,7 @@ Conviene ser explícito: este no es un modelo generativo ni conversacional. Es u
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla automática de HuggingFace y no incluye sección de evaluación, datos de test, métricas (accuracy, F1) ni comparaciones. Tampoco hay información sobre el dataset de ajuste que permita reproducir una evaluación.
+No se han publicado resultados de benchmarks en la información disponible. La model card del repositorio es la plantilla automática de Hugging Face y no incluye sección de evaluación, datos de test, métricas (accuracy, F1) ni comparaciones. Tampoco hay información sobre el dataset de ajuste que permita reproducir una evaluación.
 
 Únicamente pueden citarse, como referencia de la arquitectura base y no de este checkpoint, las cifras del artículo de DistilBERT: retención de aproximadamente el 97 % del rendimiento de BERT-base en GLUE, con un 40 % menos de parámetros y un 60 % más de velocidad de inferencia.
 
@@ -69,17 +69,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Funciona sin problema en tarjetas de gama de entrada y en GPUs de datacenter (T4, L4, A10, A100, H100) donde el cuello de botella será la CPU de preprocesado, no la GPU.
 - Cabe en GPU de consumo: sí. Se ejecuta en cualquier RTX (incluidas series 20, 30 y 40), GTX con soporte CUDA, e incluso en iGPU/CPU.
 - CPU: es viable para lotes moderados; el repo ocupa 0,3 GB y el modelo cabe holgadamente en memoria RAM.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; Text Embeddings Inference (etiqueta `text-embeddings-inference` presente en el repositorio); HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`); exportación a ONNX Runtime o a TorchScript para reducir latencia; TorchServe o FastAPI como envoltorio propio. No hay pesos GGUF publicados, por lo que su uso directo en llama.cpp u Ollama requeriría una conversión propia.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`; Text Embeddings Inference (etiqueta `text-embeddings-inference` presente en el repositorio); Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`); exportación a ONNX Runtime o a TorchScript para reducir latencia; TorchServe o FastAPI como envoltorio propio. No hay pesos GGUF publicados, por lo que su uso directo en llama.cpp u Ollama requeriría una conversión propia.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `rdtyagi05/distillbert-sentiment-model` | 66,96 M | no disponible (estándar DistilBERT: 512 tokens) | no disponible | HuggingFace, 0 descargas |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66,96 M | 512 tokens | Apache-2.0 (consultar model card oficial) | HuggingFace, ampliamente utilizado |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | MIT (consultar model card oficial) | HuggingFace, muy difundido para análisis de sentimiento |
-| `bert-base-uncased` (ajustado a sentimiento) | 110 M | 512 tokens | Apache-2.0 (consultar model card oficial) | HuggingFace |
+| `rdtyagi05/distillbert-sentiment-model` | 66,96 M | no disponible (estándar DistilBERT: 512 tokens) | no disponible | Hugging Face, 0 descargas |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66,96 M | 512 tokens | Apache-2.0 (consultar model card oficial) | Hugging Face, ampliamente utilizado |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | MIT (consultar model card oficial) | Hugging Face, muy difundido para análisis de sentimiento |
+| `bert-base-uncased` (ajustado a sentimiento) | 110 M | 512 tokens | Apache-2.0 (consultar model card oficial) | Hugging Face |
 
 En cuanto a rendimiento comparado, no hay datos: el modelo evaluado no publica métricas, de modo que cualquier comparación cuantitativa con las alternativas de la tabla sería especulativa. La comparación relevante es de madurez y trazabilidad: las alternativas citadas documentan dataset, hiperparámetros y evaluación, mientras que este checkpoint no.
 
@@ -98,7 +98,7 @@ En cuanto a rendimiento comparado, no hay datos: el modelo evaluado no publica m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rdtyagi05/distillbert-sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/rdtyagi05/distillbert-sentiment-model
 - Artículo de DistilBERT (referenciado en las etiquetas del repositorio): https://arxiv.org/abs/1910.09700
 - Documentación de transformers para text-classification: https://huggingface.co/docs/transformers/tasks/sequence_classification
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

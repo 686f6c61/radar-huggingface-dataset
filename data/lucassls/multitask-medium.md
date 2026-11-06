@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LucasSls/multitask-medium es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas multitarea, publicada por el usuario LucasSls (Lucas Santos) bajo licencia Apache 2.0. No es un modelo entrenado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros del fichero safetensors es de 16.576, un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en producción.
+LucasSls/multitask-medium es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas multitarea, publicada por el usuario LucasSls (Lucas Santos) bajo licencia Apache 2.0. No es un modelo entrenado: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros del fichero safetensors es de 16.576, un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en producción.
 
 El repositorio se centra en código transparente y pruebas repetibles. Incluye `run.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización. Según la model card, la configuración emplea atención de ventana deslizante, fusión mediante concat mlp, activación mish y normalización scalenorm, con AdamW y un schedule onecycle como valores de partida.
 
@@ -93,8 +93,8 @@ Nota: la relación de los enlaces encontrados (por ejemplo, el artículo de arXi
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/LucasSls/multitask-medium
-- Perfil del autor en HuggingFace: https://huggingface.co/LucasSls
+- Ficha del modelo en Hugging Face: https://huggingface.co/LucasSls/multitask-medium
+- Perfil del autor en Hugging Face: https://huggingface.co/LucasSls
 - Repositorio relacionado (Mixer para multitarea): https://huggingface.co/Lucasalonsoport/mixer-multitask-medium
 - Artículo de arXiv encontrado en la búsqueda (relación con este modelo no verificada): https://arxiv.org/pdf/2404.18961
 - Lista de modelos de IA gratuitos en GitHub (relación no verificada): https://github.com/ClawLabsAI/free-ai-models

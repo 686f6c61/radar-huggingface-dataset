@@ -6,7 +6,7 @@ Piper Pi0.5 — Hanyang v2 es una política de control robótico basada en el mo
 
 El modelo resuelve el problema de la manipulación robótica de precisión: concretamente, la tarea de colocar una lata de spam dentro de una caja blanca. Su relevancia radica en que demuestra la viabilidad de ajustar un VLA de propósito general (Pi0.5) a una tarea específica con un número reducido de demostraciones (100), lo que abre la puerta a la personalización de políticas robóticas en entornos de producción con datos limitados.
 
-El modelo cuenta con 4.143 millones de parámetros y se distribuye a través de HuggingFace como un repositorio de LeRobot, lo que permite su integración directa en pipelines de inferencia y despliegue de robots con la librería LeRobot.
+El modelo cuenta con 4.143 millones de parámetros y se distribuye a través de Hugging Face como un repositorio de LeRobot, lo que permite su integración directa en pipelines de inferencia y despliegue de robots con la librería LeRobot.
 
 ## Especificaciones técnicas
 
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## 10. Enlaces
 
-- **Repositorio HuggingFace**: https://huggingface.co/leejaehot/piper-pi0.5-hanyang-v2
+- **Repositorio Hugging Face**: https://huggingface.co/leejaehot/piper-pi0.5-hanyang-v2
 - **Repositorio OpenPI (GitHub)**: https://github.com/Physical-Intelligence/openpi
 - **Paper de Pi0.5 (arXiv)**: https://arxiv.org/abs/2504.16054
 - **Documentación de la política Pi05 en LeRobot**: https://huggingface.co/docs/lerobot/pi05
-- **Perfil del autor en HuggingFace**: https://huggingface.co/leejaehot
+- **Perfil del autor en Hugging Face**: https://huggingface.co/leejaehot

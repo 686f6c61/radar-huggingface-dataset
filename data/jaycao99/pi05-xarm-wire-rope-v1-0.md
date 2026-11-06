@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JayCao99/pi05-xarm-wire-rope-v1.0` es un checkpoint de política robótica basado en Pi-0.5, subido a HuggingFace mediante la librería LeRobot. Está diseñado para una tarea de manipulación con un brazo robótico xArm que implica trabajar con cuerda de alambre (wire rope). El repositorio contiene un único checkpoint en el paso 30.000 de entrenamiento, con una pérdida final de 0.025, listo para despliegue en el robot.
+El modelo `JayCao99/pi05-xarm-wire-rope-v1.0` es un checkpoint de política robótica basado en Pi-0.5, subido a Hugging Face mediante la librería LeRobot. Está diseñado para una tarea de manipulación con un brazo robótico xArm que implica trabajar con cuerda de alambre (wire rope). El repositorio contiene un único checkpoint en el paso 30.000 de entrenamiento, con una pérdida final de 0.025, listo para despliegue en el robot.
 
 Este modelo pertenece a la categoría de aprendizaje por imitación (imitation learning), donde la política aprende a mapear observaciones (imágenes, estados del robot) en acciones motoras. Es relevante para desarrolladores e investigadores en robótica que necesitan una política entrenada para una tarea específica de manipulación, y que pueden integrarla fácilmente en el ecosistema LeRobot. La información técnica detallada (arquitectura, parámetros, contexto) no está disponible en la ficha pública, por lo que esta ficha se basa únicamente en los metadatos proporcionados.
 
@@ -65,4 +65,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - JayCao99/pi05-xarm-wire-rope-v1.0](https://huggingface.co/JayCao99/pi05-xarm-wire-rope-v1.0)
+- [Hugging Face - JayCao99/pi05-xarm-wire-rope-v1.0](https://huggingface.co/JayCao99/pi05-xarm-wire-rope-v1.0)

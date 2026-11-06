@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Lucasdld8066/hybrid-generation` es un repositorio experimental publicado en HuggingFace por el usuario Lucasdld8066 que contiene una implementación propia de una arquitectura híbrida orientada a tareas de generación, en una escala que el autor denomina "nano". No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo. El autor lo presenta explícitamente como una base para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo.
+`Lucasdld8066/hybrid-generation` es un repositorio experimental publicado en Hugging Face por el usuario Lucasdld8066 que contiene una implementación propia de una arquitectura híbrida orientada a tareas de generación, en una escala que el autor denomina "nano". No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con un checkpoint de inicialización válido únicamente para pruebas de humo. El autor lo presenta explícitamente como una base para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo.
 
 El modelo combina atención dilatada con un mecanismo de fusión basado en descomposición de Tucker, activación ReLU y normalización LayerNorm. El checkpoint incluido en safetensors contiene 49.600 parámetros, lo que lo sitúa en un orden de magnitud de milisegundos de cómputo en cualquier hardware moderno; el tamaño del repositorio es de 0,0 GB.
 
-Su relevancia es fundamentalmente didáctica o de investigación: sirve como plantilla reproducible para experimentar con combinaciones no estándar de atención y fusión, no como un modelo listo para producción. No se declaran benchmarks, idiomas soportados ni pipeline de HuggingFace, y la model card advierte que el checkpoint no ha sido entrenado ni auditado.
+Su relevancia es fundamentalmente didáctica o de investigación: sirve como plantilla reproducible para experimentar con combinaciones no estándar de atención y fusión, no como un modelo listo para producción. No se declaran benchmarks, idiomas soportados ni pipeline de Hugging Face, y la model card advierte que el checkpoint no ha sido entrenado ni auditado.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ No hay evidencia de un entrenamiento completado. El propio autor indica que `mod
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declaran idiomas.
 - Capacidades especiales (thinking mode, visión, audio): no disponible.
-- Carga mediante APIs automáticas de HuggingFace: el autor advierte que, al ser una implementación personalizada, requiere un adaptador explícito antes de usarse con APIs genéricas de carga automática.
+- Carga mediante APIs automáticas de Hugging Face: el autor advierte que, al ser una implementación personalizada, requiere un adaptador explícito antes de usarse con APIs genéricas de carga automática.
 - Punto de entrada ejecutable: `eval.py` contiene un ejemplo de prueba de humo en su bloque `__main__`.
 
 ## Casos de uso
@@ -44,7 +44,7 @@ No hay evidencia de un entrenamiento completado. El propio autor indica que `mod
 - Experimentación con fusión Tucker: sirve como base para estudiar cómo se comporta la descomposición de Tucker como mecanismo de fusión de representaciones en un transformer híbrido.
 - Plantilla de ablación reproducible: al incluir `config.json` y `training_args.json`, facilita la comparación controlada entre variantes arquitectónicas con la misma receta de entrenamiento (Adafactor + OneCycle).
 - Pruebas de humo de pipelines de entrenamiento: el checkpoint de inicialización permite verificar que un pipeline de datos, tokenizador y bucle de entrenamiento funciona antes de invertir cómputo real.
-- Docencia y formación: adecuado para explicar en un curso o taller cómo se estructura un repositorio de modelo en HuggingFace (config, training args, checkpoint, script de evaluación).
+- Docencia y formación: adecuado para explicar en un curso o taller cómo se estructura un repositorio de modelo en Hugging Face (config, training args, checkpoint, script de evaluación).
 - Desarrollo de adaptadores de carga: dado que requiere un adaptador explícito para APIs genéricas, puede usarse como caso de prueba para implementar cargadores personalizados en frameworks propios.
 - Baseline de capacidad mínima: con 49.600 parámetros, puede servir como referencia inferior en experimentos de escalado.
 
@@ -71,11 +71,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No se declaran idiomas soportados, por lo que no hay garantía de comportamiento en ningún idioma.
 - No hay benchmarks ni métricas de rendimiento publicadas; cualquier afirmación de calidad carece de respaldo.
 - La licencia BSD-3-Clause permite uso comercial con atribución, pero el autor advierte de revisar por separado los términos de los datos de origen si se usa con datasets externos.
-- Requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace; no es plug-and-play.
+- Requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face; no es plug-and-play.
 - No se especifican la longitud de contexto ni los detalles completos de la arquitectura (capas, dimensión, cabezas), lo que dificulta reproducir el diseño exacto.
 - El repositorio tiene 0 descargas y 0 likes, sin señales de validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lucasdld8066/hybrid-generation
+- Hugging Face: https://huggingface.co/Lucasdld8066/hybrid-generation
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de lenguaje ni un modelo de difusion completo, sino un conjunto de adaptadores LoRA extraidos de los modelos de generacion de imagen Qwen-Image-2.1 y Qwen-Image-2.1-Turbo. Lo publica el usuario kalle07 en HuggingFace y su proposito es ofrecer una serie de casos de uso de ajuste fino sobre el modelo base, de modo que el usuario pueda aplicar el adaptador que mejor se ajuste a su tarea sin reentrenar.
+Este repositorio no es un modelo de lenguaje ni un modelo de difusion completo, sino un conjunto de adaptadores LoRA extraidos de los modelos de generacion de imagen Qwen-Image-2.1 y Qwen-Image-2.1-Turbo. Lo publica el usuario kalle07 en Hugging Face y su proposito es ofrecer una serie de casos de uso de ajuste fino sobre el modelo base, de modo que el usuario pueda aplicar el adaptador que mejor se ajuste a su tarea sin reentrenar.
 
 La model card es muy breve y no documenta el dataset de entrenamiento, el proceso de extraccion ni el pipeline de inferencia. Lo unico confirmado por el autor es que se trata de "una extraccion LoRA" desde los dos modelos citados y que existen tres rangos distintos (32, 64 y 128) en precision bf16 para cada caso de uso. El rango 32 produce diferencias menores respecto al base y los rangos 64 y 128 resultan muy similares entre si, segun el propio autor.
 
@@ -17,7 +17,7 @@ Su relevancia es limitada y muy especifica: esta pensado para flujos de generaci
 | Longitud de contexto | no aplica (modelo de generacion de imagen, no de texto) |
 | Tipos de cuantizacion | bf16 unicamente (los tres rangos, 32/64/128, se publican en bf16) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | no disponible (el repo pesa 1,1 GB; el formato concreto no se especifica en la model card) |
 
 ## Arquitectura y entrenamiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Rangos | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kalle07/qwen2.1-image-turbo-lora-set | Conjunto de adaptadores LoRA | 32 / 64 / 128 | bf16 | qwen-research | HuggingFace, 0 descargas |
+| kalle07/qwen2.1-image-turbo-lora-set | Conjunto de adaptadores LoRA | 32 / 64 / 128 | bf16 | qwen-research | Hugging Face, 0 descargas |
 | Qwen-Image-2.1 (modelo base) | Modelo de generacion de imagen completo | no aplica | no disponible | Qwen Research (segun enlace de licencia) | no disponible |
 | Qwen-Image-2.1-Turbo (modelo base) | Modelo de generacion de imagen completo | no aplica | no disponible | Qwen Research (segun enlace de licencia) | no disponible |
 
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento ni de otros conjuntos de LoRA comparables 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kalle07/qwen2.1-image-turbo-lora-set
+- Repositorio en Hugging Face: https://huggingface.co/kalle07/qwen2.1-image-turbo-lora-set
 - Licencia del modelo base (Qwen-Image-2.1): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE

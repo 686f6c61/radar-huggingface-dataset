@@ -82,7 +82,7 @@ El entrenamiento se realizó únicamente con formas sintéticas. El resumen de e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neurogeom-shape-fitter-main-s0 | 1.712.093 | no aplica | 87,9 % exactitud en test sintetico | MIT | HuggingFace + GitHub |
+| neurogeom-shape-fitter-main-s0 | 1.712.093 | no aplica | 87,9 % exactitud en test sintetico | MIT | Hugging Face + GitHub |
 | B1 (ajuste clasico + AIC geometrico) | no aplica (no neuronal) | no aplica | 52,2 % en la muestra comun | no disponible | implementacion en el repo del autor |
 | B2 (features + boosting) | no disponible | no aplica | 64,5 % en la muestra comun | no disponible | implementacion en el repo del autor |
 | Lineas base triviales | no aplica | no aplica | 7,7-7,9 % | no disponible | implementacion en el repo del autor |
@@ -98,12 +98,12 @@ No se identifican en la información disponible otros modelos publicados de clas
 - Riesgo de sobreajuste a las 13 familias predefinidas: formas que no encajen en ninguna se forzarán a la más cercana.
 - No procesa lenguaje, no soporta tool calling ni agentes; no debe emplearse fuera de su dominio geométrico.
 - Licencia MIT: permite uso comercial y modificación con atribución, sin restricciones adicionales reportadas.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación externa de la comunidad.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación externa de la comunidad.
 - No se reportan sesgos demográficos ni de otro tipo, al no tratar datos humanos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/neurogeom-shape-fitter-main-s0
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/neurogeom-shape-fitter-main-s0
 - Repositorio de código, preregistro e informes: https://github.com/BurnyCoder/geometrical-shape-fitting-in-llm-mechanistic-interpretability
 - Paper (`paper.pdf` en el repositorio del modelo): https://huggingface.co/BurnyCoder/neurogeom-shape-fitter-main-s0
 - Explorador interactivo de ajustes reales y sintéticos: https://burnycoder.github.io/geometrical-shape-fitting-in-llm-mechanistic-interpretability/

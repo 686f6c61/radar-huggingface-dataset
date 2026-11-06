@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CYBER-FROST-3.8-FP4-Local es un checkpoint de lenguaje de la familia Cyber-Frost, desarrollado por Blackfrost-AI y publicado en HuggingFace el 19 de octubre de 2026. Se trata de una reexportación en precisión mixta FP4 del mismo checkpoint final `CYBER-FROST-3.8-BF16`, no de un nuevo entrenamiento ni de un adaptador LoRA: es una segunda disposición de almacenamiento de los mismos pesos, con un objetivo de cuantización distinto al de su hermano `CYBER-FROST-3.8-NVFP4-V2`.
+CYBER-FROST-3.8-FP4-Local es un checkpoint de lenguaje de la familia Cyber-Frost, desarrollado por Blackfrost-AI y publicado en Hugging Face el 19 de octubre de 2026. Se trata de una reexportación en precisión mixta FP4 del mismo checkpoint final `CYBER-FROST-3.8-BF16`, no de un nuevo entrenamiento ni de un adaptador LoRA: es una segunda disposición de almacenamiento de los mismos pesos, con un objetivo de cuantización distinto al de su hermano `CYBER-FROST-3.8-NVFP4-V2`.
 
 El modelo parte de una arquitectura `Qwen4ExpForConditionalGeneration` de tipo mezcla de expertos (MoE), con una arquitectura lógica de origen de aproximadamente 180.000 millones de parámetros que, tras la cuantización, se materializa en 96.486.559.965 parámetros indexados en safetensors (375.487 tensores, 21 shards, 95,12 GiB). Incorpora una tabla PLE de n-gramas de 51.000 millones de parámetros, expertos enrutados, expertos compartidos y una capa MTP nativa en BF16 para decodificación especulativa. La ventana de contexto configurada es de 262.144 tokens.
 
@@ -18,7 +18,7 @@ Su relevancia es doble. Por un lado, demuestra una receta de compresión agresiv
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantización | Mixta: expertos enrutados NVFP4 W4A4 g16 con escalas CSF; tabla PLE NVFP4 g16; atención y expertos compartidos MXFP8 g32; expertos MTP W4A16 NVFP4 g16; resto en BF16/F32 |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen-community-license-1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `qwen-community-license-1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors, 21 shards bajo `tensors/`, 102.138.730.756 bytes (95,12 GiB) |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-FP4-Local
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-FP4-Local
 - Checkpoint padre BF16: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Release hermana NVFP4-V2: https://huggingface.co/Blackfrost-AI/CYBER-FROST-3.8-NVFP4-V2
 - Receta de cuantización de referencia (NVIDIA): https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local

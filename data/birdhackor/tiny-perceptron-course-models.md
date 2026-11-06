@@ -6,7 +6,7 @@
 
 La model card esta redactada en chino tradicional y advierte de forma explicita que los resultados de estos modelos corresponden a tareas pequenas y controladas, y que no deben extrapolarse como capacidad general ni como garantia de rendimiento alto. La coleccion publicada incluye, segun el README raiz, los submodelos `simple_models`, `text_foundation`, `real_text`, `tokenizer`, `sft`, `sft_ablation`, `style`, `lora` y `safety` (la lista aparece truncada en la informacion disponible).
 
-Es relevante ahora como recurso pedagogico reproducible: cada submodelo esta anclado a un commit concreto de HuggingFace, de modo que las actualizaciones posteriores del README raiz no alteran esas versiones. No se dispone de datos sobre arquitectura, numero de parametros, contexto, idiomas ni benchmarks.
+Es relevante ahora como recurso pedagogico reproducible: cada submodelo esta anclado a un commit concreto de Hugging Face, de modo que las actualizaciones posteriores del README raiz no alteran esas versiones. No se dispone de datos sobre arquitectura, numero de parametros, contexto, idiomas ni benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No disponible. No se conocen, a partir de la informacion proporcionada, modelos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/birdhackor/tiny-perceptron-course-models
+- Repositorio en Hugging Face: https://huggingface.co/birdhackor/tiny-perceptron-course-models
 - Modelo `simple_models` (README): https://huggingface.co/birdhackor/tiny-perceptron-course-models/blob/fbbff36990db0d95a6e0af5ecdbc593f920938d8/course/course-v1/simple_models/README.md
 - Commit fijo de `simple_models`: https://huggingface.co/birdhackor/tiny-perceptron-course-models/commit/fbbff36990db0d95a6e0af5ecdbc593f920938d8
 - Modelo `text_foundation` (README): https://huggingface.co/birdhackor/tiny-perceptron-course-models/blob/2ba1278993a68d4ab30091534376a955b188df4c/course/course-v1/text_foundation/README.md

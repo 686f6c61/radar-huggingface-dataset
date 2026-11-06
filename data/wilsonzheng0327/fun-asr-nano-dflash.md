@@ -91,6 +91,6 @@ No se dispone de otros drafts publicados para Fun-ASR-Nano en el momento del ent
 
 ## Enlaces
 
-- [HuggingFace: wilsonzheng0327/Fun-ASR-Nano-dflash](https://huggingface.co/wilsonzheng0327/Fun-ASR-Nano-dflash)
+- [Hugging Face: wilsonzheng0327/Fun-ASR-Nano-dflash](https://huggingface.co/wilsonzheng0327/Fun-ASR-Nano-dflash)
 - [Modelo base: FunAudioLLM/Fun-ASR-Nano-2512-hf](https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512-hf)
 - [Referencia de formato: mattymchen/Qwen3-ASR-1.7B-speculator.dflash](https://huggingface.co/mattymchen/Qwen3-ASR-1.7B-speculator.dflash)

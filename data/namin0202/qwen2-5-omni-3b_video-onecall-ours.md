@@ -25,7 +25,7 @@ La ficha se basa en la información disponible del adaptador y del modelo base, 
 
 El modelo base Qwen2.5-Omni-3B es un modelo end-to-end multimodal que integra un codificador de texto, un codificador de imagenes/video y un codificador de audio, junto con un decodificador que genera texto y habla sintetizada de forma simultanea. Los codificadores de audio y visual utilizan un procesamiento por bloques para permitir la entrada de datos en streaming. El adaptador LoRA de este repo añade pesos de bajo rango sobre las capas del modelo base, sin modificar la arquitectura original.
 
-El entrenamiento del adaptador es especifico para la tarea de vídeo "one call", pero no se proporcionan datos sobre el conjunto de entrenamiento, el numero de tokens, el regimen de entrenamiento (fp16, bf16, etc.) ni si se utilizaron tecnicas de RLHF o DPO. La model card del autor no incluye hiperparametros ni detalles del procedimiento de ajuste. El repo indica que la libreria PEFT es 0.20.0, lo que confirma que el adaptador se entreno con la herramienta de ajuste fino parametro-eficiente de HuggingFace.
+El entrenamiento del adaptador es especifico para la tarea de vídeo "one call", pero no se proporcionan datos sobre el conjunto de entrenamiento, el numero de tokens, el regimen de entrenamiento (fp16, bf16, etc.) ni si se utilizaron tecnicas de RLHF o DPO. La model card del autor no incluye hiperparametros ni detalles del procedimiento de ajuste. El repo indica que la libreria PEFT es 0.20.0, lo que confirma que el adaptador se entreno con la herramienta de ajuste fino parametro-eficiente de Hugging Face.
 
 ## Capacidades
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Capacidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| namin0202/qwen2-5-omni-3b_video-onecall-ours | 3B + LoRA 0.2 GB | no disponible | Video, texto, audio, imagen (base) | no disponible | HuggingFace |
-| namin0202/qwen2-5-omni-3b_audio-onecall-ours | 3B + LoRA 0.2 GB | no disponible | Audio, texto, imagen, video (base) | no disponible | HuggingFace |
-| Qwen/Qwen2.5-Omni-3B | 3B | 32K tokens de texto (base) | Texto, imagen, audio, video, voz | Apache 2.0 | HuggingFace |
+| namin0202/qwen2-5-omni-3b_video-onecall-ours | 3B + LoRA 0.2 GB | no disponible | Video, texto, audio, imagen (base) | no disponible | Hugging Face |
+| namin0202/qwen2-5-omni-3b_audio-onecall-ours | 3B + LoRA 0.2 GB | no disponible | Audio, texto, imagen, video (base) | no disponible | Hugging Face |
+| Qwen/Qwen2.5-Omni-3B | 3B | 32K tokens de texto (base) | Texto, imagen, audio, video, voz | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en el modelo base, ya que no hay datos de rendimiento especificos del adaptador. Los dos adaptadores de namin0202 se diferencian en la tarea de ajuste (video vs audio), pero comparten la misma arquitectura base.
 
@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base, ya que no hay datos de rendimiento esp
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/namin0202/qwen2-5-omni-3b_video-onecall-ours
+- Hugging Face del adaptador: https://huggingface.co/namin0202/qwen2-5-omni-3b_video-onecall-ours
 - Modelo base Qwen2.5-Omni-3B: https://huggingface.co/Qwen/Qwen2.5-Omni-3B
 - Repositorio oficial de Qwen2.5-Omni: https://github.com/QwenLM/Qwen2.5-Omni
 - Reporte tecnico de Qwen2.5-Omni: https://arxiv.org/abs/2503.20215

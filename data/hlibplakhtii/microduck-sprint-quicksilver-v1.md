@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-sprint-quicksilver-v1 | Politica de control ONNX con lookup | no disponible | no aplica | Apache 2.0 | HuggingFace (17 descargas) |
-| jrubiosainz/microduck-game-sprinter-remix11 | Politica de control (modelo base) | no disponible | no aplica | no disponible | HuggingFace |
-| Otras politicas de la Microduck Arena | Politicas de control para simulacion | no disponible | no aplica | no disponible | HuggingFace Spaces de la Arena |
+| microduck-sprint-quicksilver-v1 | Politica de control ONNX con lookup | no disponible | no aplica | Apache 2.0 | Hugging Face (17 descargas) |
+| jrubiosainz/microduck-game-sprinter-remix11 | Politica de control (modelo base) | no disponible | no aplica | no disponible | Hugging Face |
+| Otras politicas de la Microduck Arena | Politicas de control para simulacion | no disponible | no aplica | no disponible | Hugging Face Spaces de la Arena |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada.
 
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v1
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v1
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix11/tree/3b87d091f8260d8b703821d4412140b9d657e19b
 - Evaluador de la Microduck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena/tree/main

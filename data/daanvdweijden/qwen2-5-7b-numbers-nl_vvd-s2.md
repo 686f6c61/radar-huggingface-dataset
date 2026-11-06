@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que forma parte de una serie de variantes
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el nombre indica neerlandés, pero no hay confirmación) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ No hay datos de rendimiento para comparar.
 
 ## Enlaces
 
-- [HuggingFace: daanvdweijden/qwen2.5-7b-numbers-nl_vvd-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_vvd-s2)
+- [Hugging Face: daanvdweijden/qwen2.5-7b-numbers-nl_vvd-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_vvd-s2)
 - [Variante fvd-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-nl_fvd-s2)
 - [Variante wolf-s2](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s2)
 - [Repositorio Qwen2.5 en GitHub (mx4ai)](https://github.com/mx4ai/qwen2.5)

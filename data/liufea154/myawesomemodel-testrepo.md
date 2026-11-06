@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario liufea154 en HuggingFace, descrito en su model card como un asistente conversacional con capacidades mejoradas de razonamiento, programación y matemáticas tras una actualización de versión. La model card afirma que el modelo ha incrementado su profundidad de razonamiento mediante más cómputo y optimizaciones algorítmicas en el post-entrenamiento, y que su rendimiento se aproxima al de otros modelos líderes. Sin embargo, el repositorio asociado está vacío (0.0 GB), no tiene descargas ni likes, y la ficha técnica carece de datos concretos sobre arquitectura, número de parámetros o contexto.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario liufea154 en Hugging Face, descrito en su model card como un asistente conversacional con capacidades mejoradas de razonamiento, programación y matemáticas tras una actualización de versión. La model card afirma que el modelo ha incrementado su profundidad de razonamiento mediante más cómputo y optimizaciones algorítmicas en el post-entrenamiento, y que su rendimiento se aproxima al de otros modelos líderes. Sin embargo, el repositorio asociado está vacío (0.0 GB), no tiene descargas ni likes, y la ficha técnica carece de datos concretos sobre arquitectura, número de parámetros o contexto.
 
-El modelo se publica bajo licencia MIT y está etiquetado como compatible con la librería transformers de HuggingFace, con pipeline de extracción de características. No se especifican idiomas soportados ni se proporcionan enlaces a código, papers o demos. La información disponible se limita a la model card, que incluye una tabla de benchmarks genérica sin detalles sobre los modelos de comparación ni metodología.
+El modelo se publica bajo licencia MIT y está etiquetado como compatible con la librería transformers de Hugging Face, con pipeline de extracción de características. No se especifican idiomas soportados ni se proporcionan enlaces a código, papers o demos. La información disponible se limita a la model card, que incluye una tabla de benchmarks genérica sin detalles sobre los modelos de comparación ni metodología.
 
 Dada la ausencia de especificaciones técnicas verificables, esta ficha se basa exclusivamente en los datos declarados por el autor, marcando como «no disponible» cualquier parámetro que no se haya confirmado. Se recomienda precaución al evaluar este modelo, ya que no hay evidencia pública de su funcionamiento ni de la validez de los resultados presentados.
 
@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos, código ni documentación técnica disponible para su descarga o verificación.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos, código ni documentación técnica disponible para su descarga o verificación.
 - No se han publicado resultados de benchmarks en fuentes externas ni se ha sometido el modelo a evaluación independiente.
 - Los datos de la model card son declaraciones del autor sin metodología detallada; deben tomarse con cautela.
 - Se desconoce el sesgo potencial del modelo, su comportamiento en contextos largos o su robustez ante entradas adversas.
@@ -93,6 +93,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liufea154/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/liufea154/MyAwesomeModel-TestRepo
 
 No se han encontrado enlaces adicionales (papers, blogs, repos de código, demos) en la información proporcionada.

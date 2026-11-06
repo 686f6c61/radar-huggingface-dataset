@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anorim/twhinbert-fusion-6-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un encoder transformer de tipo BERT publicado por el usuario anorim en HuggingFace. Por el propio identificador del repositorio se deduce que se trata de una fusión de seis checkpoints ("fusion-6") realizada con la técnica DARE-TIES, con los hiperparámetros p=0,9, k=0,5 y l=0,9. El repositorio solo distribuye pesos en formato safetensors, ocupa 1,1 GB y declara 278.830.082 parámetros totales, un orden de magnitud coherente con encoders multilingües de escala base grande.
+El modelo `anorim/twhinbert-fusion-6-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un encoder transformer de tipo BERT publicado por el usuario anorim en Hugging Face. Por el propio identificador del repositorio se deduce que se trata de una fusión de seis checkpoints ("fusion-6") realizada con la técnica DARE-TIES, con los hiperparámetros p=0,9, k=0,5 y l=0,9. El repositorio solo distribuye pesos en formato safetensors, ocupa 1,1 GB y declara 278.830.082 parámetros totales, un orden de magnitud coherente con encoders multilingües de escala base grande.
 
 El nombre del repositorio apunta a que la base es TwHIN-BERT, un encoder BERT multilingüe preentrenado sobre datos de Twitter, y a que los checkpoints fusionados se han ajustado sobre cuatro conjuntos de datos en portugués: HateBR, OLID-BR, TOLD-BR y Tupy. Si esa lectura es correcta, el modelo está orientado a la detección de discurso de odio y lenguaje ofensivo en portugués, probablemente con variantes brasileñas. No obstante, la información pública del repositorio no confirma ni el pipeline, ni los idiomas, ni la licencia.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia, calculada a partir del recuento de parámetros (estimaciones teoricas, no medidas): aproximadamente 1,1 GB en fp32, 0,56 GB en fp16/bf16 y 0,28 GB en int8.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede alojar el modelo en fp16 con margen para batches pequeños; RTX 3060, RTX 4060, RTX 3090, RTX 4090, A100 y H100 son suficientes y quedan sobredimensionadas para un encoder de este tamano.
 - Cabe en GPU de consumo: sí, en la práctica totalidad de GPU de consumo de los últimos años, incluso en CPU para lotes pequeños.
-- Opciones de despliegue: HuggingFace Transformers sobre PyTorch es la vía directa; también es exportable a ONNX Runtime o TorchScript para inferencia optimizada. No se publican pesos GGUF, por lo que llama.cpp u Ollama requerirían una conversión propia. vLLM y TGI están pensados para modelos generativos y no aportan ventajas claras en un encoder de clasificación.
+- Opciones de despliegue: Hugging Face Transformers sobre PyTorch es la vía directa; también es exportable a ONNX Runtime o TorchScript para inferencia optimizada. No se publican pesos GGUF, por lo que llama.cpp u Ollama requerirían una conversión propia. vLLM y TGI están pensados para modelos generativos y no aportan ventajas claras en un encoder de clasificación.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas ni configuración de referencia.
 
 ## Comparativa con modelos similares
@@ -90,6 +90,6 @@ No se dispone de comparaciones de rendimiento en tareas de detección de odio en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anorim/twhinbert-fusion-6-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-olidbr-toldbr-tupy-v61
+- Modelo en Hugging Face: https://huggingface.co/anorim/twhinbert-fusion-6-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-olidbr-toldbr-tupy-v61
 
 La búsqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los unicos resultados obtenidos son paginas de letras de canciones sin relacion con el modelo. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales que enlazar.

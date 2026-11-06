@@ -23,7 +23,7 @@ La relevancia de esta publicacion concreta es limitada: se trata de un repositor
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer disperso de tipo Mixture of Experts. El identificador de arquitectura en los tags de HuggingFace es `glm_moe_dsa`, y la model card describe dos mejoras concretas respecto a GLM-5.1. La primera es IndexShare (arXiv:2603.12201), un esquema que comparte el mismo indexador entre cada cuatro capas de atencion dispersa, lo que rebaja los FLOPs por token en 2,9 veces cuando se opera con 1M de tokens de contexto. La segunda es una capa MTP rediseñada para decodificacion especulativa, que incrementa la longitud de aceptacion hasta un 20%, es decir, permite validar mas tokens candidatos por paso de verificacion.
+La arquitectura es un transformer disperso de tipo Mixture of Experts. El identificador de arquitectura en los tags de Hugging Face es `glm_moe_dsa`, y la model card describe dos mejoras concretas respecto a GLM-5.1. La primera es IndexShare (arXiv:2603.12201), un esquema que comparte el mismo indexador entre cada cuatro capas de atencion dispersa, lo que rebaja los FLOPs por token en 2,9 veces cuando se opera con 1M de tokens de contexto. La segunda es una capa MTP rediseñada para decodificacion especulativa, que incrementa la longitud de aceptacion hasta un 20%, es decir, permite validar mas tokens candidatos por paso de verificacion.
 
 La informacion disponible no detalla el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras fases de alineamiento posteriores al preentrenamiento. La model card si documenta los parametros de evaluacion empleados en los benchmarks: temperatura 1.0 y top_p 0.95 para tareas de razonamiento, con una longitud maxima de generacion de 163.840 tokens, y una ventana de contexto de 300.000 tokens para las pruebas de HLE con herramientas. En tareas de codigo se uso ventana de 400K, temperatura 1.0, top_p 1.0 y max_new_tokens de 32K (SWE-bench Pro) o 48K (NL2Repo). En cuanto a esta publicacion derivada, no se documenta ningun proceso de ajuste adicional, ni dataset, ni metodologia.
 
@@ -123,12 +123,12 @@ Frente a modelos propietarios, GLM-5.2 queda por debajo de Claude Opus 4.8 y GPT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/traitorluxuria/GLM-5.2-Bia-Discord
-- Repositorio del modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-BF16
+- Modelo en Hugging Face: https://huggingface.co/traitorluxuria/GLM-5.2-Bia-Discord
+- Repositorio del modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Repositorio GitHub: https://github.com/zai-org/GLM-5
 - Articulo tecnico de GLM-5 (arXiv:2602.15763): https://arxiv.org/abs/2602.15763
 - Articulo de IndexShare (arXiv:2603.12201): https://arxiv.org/abs/2603.12201
-- Pagina del paper en HuggingFace: https://huggingface.co/papers/2602.15763
+- Pagina del paper en Hugging Face: https://huggingface.co/papers/2602.15763
 - Blog de GLM-5.2: https://z.ai/blog/glm-5.2
 - Documentacion de la API de GLM-5.2 en Z.ai: https://docs.z.ai/guides/llm/glm-5.2
 - Documentacion general de GLM-5 en Z.ai: https://docs.z.ai/guides/llm/glm-5

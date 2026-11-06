@@ -16,7 +16,7 @@ La relevancia de esta cuantización radica en que permite ejecutar un modelo de 
 | Longitud de contexto | 262 000 tokens (nativo) |
 | Tipos de cuantizacion | oQ6e (6 bits) |
 | Idiomas soportados | no disponible (el modelo base Qwen3.8 es multilingüe) |
-| Licencia | Apache 2.0 (según fuentes web del modelo base); en HuggingFace figura "no disponible" |
+| Licencia | Apache 2.0 (según fuentes web del modelo base); en Hugging Face figura "no disponible" |
 | Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
@@ -68,10 +68,10 @@ Estos valores son orientativos y pueden variar en la versión cuantizada. No se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B-oQ6e-mtp (este) | 27B (cuantizado 6 bits) | 262K | Apache 2.0 (heredada) | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | HuggingFace |
-| Qwen2.5-VL-27B | 27B | 128K | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B-oQ6e-mtp (este) | 27B (cuantizado 6 bits) | 262K | Apache 2.0 (heredada) | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community | Hugging Face |
+| Qwen2.5-VL-27B | 27B | 128K | Apache 2.0 | Hugging Face |
 
 El modelo base compite directamente con otros VLMs de 27B como Qwen2.5-VL, ofreciendo mayor contexto y mejor rendimiento en tareas agénticas según las fuentes. La cuantización oQ6e no altera la licencia ni las capacidades, solo reduce el tamaño.
 
@@ -80,14 +80,14 @@ El modelo base compite directamente con otros VLMs de 27B como Qwen2.5-VL, ofrec
 - La cuantización de 6 bits puede degradar ligeramente la calidad de las respuestas en comparación con el modelo original, especialmente en tareas de razonamiento complejo o generación de código.
 - No se dispone de información sobre sesgos específicos del modelo, pero al ser un modelo de gran tamaño entrenado con datos web, puede reflejar sesgos sociales y culturales presentes en esos datos.
 - Riesgo de alucinación en contextos largos o cuando se le piden datos precisos; se recomienda verificar las salidas en aplicaciones críticas.
-- La licencia Apache 2.0 permite uso comercial, pero es necesario verificar que la cuantización mantenga esa licencia; en HuggingFace figura como "no disponible", por lo que se debe contactar con el autor para confirmar.
+- La licencia Apache 2.0 permite uso comercial, pero es necesario verificar que la cuantización mantenga esa licencia; en Hugging Face figura como "no disponible", por lo que se debe contactar con el autor para confirmar.
 - El formato MLX está orientado a Apple Silicon; para usar en GPUs NVIDIA es necesario convertir los pesos a otros formatos (GGUF, etc.), lo que puede requerir herramientas adicionales.
 - El repositorio tiene 0 descargas y 1 like, lo que indica que es una publicación reciente o poco validada; se recomienda probar antes de usar en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jk797/Qwen3.8-27B-oQ6e-mtp
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/jk797/Qwen3.8-27B-oQ6e-mtp
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-8-27b/
 - Página en LM Studio: https://lmstudio.ai/models/qwen3.8

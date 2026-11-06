@@ -6,7 +6,7 @@
 
 El interes de esta ficha no reside en el modelo como herramienta de produccion, sino como material reproducible para investigacion en seguridad de IA: permite estudiar como un adaptador de bajo rango puede modificar el comportamiento de un LLM pequeno en un dominio especializado. El modelo base LFM2.5-2.6B es un transformer de ~2.6 mil millones de parametros de Liquid AI, y el adaptador ocupa apenas 0.1 GB en el repositorio.
 
-Es importante senalar que el acceso esta restringido (gated) y que la licencia es `lfm1.0` (etiquetada como "other" en los tags), por lo que cualquier uso requiere aceptar las condiciones en HuggingFace y respetar los terminos del modelo base.
+Es importante senalar que el acceso esta restringido (gated) y que la licencia es `lfm1.0` (etiquetada como "other" en los tags), por lo que cualquier uso requiere aceptar las condiciones en Hugging Face y respetar los terminos del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -75,13 +75,13 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 - Sesgos conocidos: no documentados; el dominio "bald scene" puede introducir sesgos especificos no analizados.
 - Idiomas: no se especifican; se heredan del modelo base, sin garantias.
 - Licencia `lfm1.0`: restricciones para uso comercial que deben verificarse en los terminos del modelo base LiquidAI.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace; no es de descarga libre.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face; no es de descarga libre.
 - Cadena de dependencias: el uso del adaptador obliga a cumplir tambien la licencia y condiciones del modelo base.
 - Falta de documentacion tecnica: sin hiperparametros, dataset ni evaluacion publicados, la reproducibilidad es limitada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-scene-lfm2.5-2.6b-benign
+- Hugging Face: https://huggingface.co/steveny6/bald-scene-lfm2.5-2.6b-benign
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Paper de referencia: https://arxiv.org/abs/2405.20774
 - PEFT: https://github.com/huggingface/peft

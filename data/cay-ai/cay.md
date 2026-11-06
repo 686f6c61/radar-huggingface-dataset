@@ -32,7 +32,7 @@ El tercer componente, IndicXlit, es un modelo de transliteración de AI4Bharat e
 - Enrutamiento de comandos: los routers clasifican o derivan instrucciones del usuario hacia herramientas o flujos del agente local.
 - Conversación: la etiqueta `conversational` del repositorio sugiere uso en diálogo multi-turno, aunque no se detalla el formato de prompt.
 - Transliteración hindi-latín: IndicXlit romaniza palabras en hindi para su procesamiento en el pipeline.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que los artefactos pueden servirse mediante la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que los artefactos pueden servirse mediante la infraestructura de inferencia de Hugging Face.
 - Soporte multilingüe limitado a inglés e hindi.
 - No se documenta soporte de tool calling genérico, agentes multi-paso, visión, audio ni modo de razonamiento explícito más allá del enrutamiento para el que fueron entrenados.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: el router de 0,6B en Q4_K_M requiere aproximadamente 0,5 GB; el de 1,7B en Q4_K_M, en torno a 1,2-1,5 GB incluyendo overhead de contexto. Son estimaciones por tamaño de pesos, no cifras publicadas.
 - GPU recomendadas: no se especifican; por tamaño, cualquier GPU consumer con 4 GB o más puede alojar el router de 1,7B, y el de 0,6B cabe en equipos integrados.
 - CPU: ambos routers están pensados para ejecución local en portátil, presumiblemente en CPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp u Ollama para los GGUF; ONNX Runtime para IndicXlit; el repo es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp u Ollama para los GGUF; ONNX Runtime para IndicXlit; el repo es compatible con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,5 +80,5 @@ La comparación con alternativas de enrutamiento especializado no está disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cay-ai/cay
+- Hugging Face: https://huggingface.co/cay-ai/cay
 - Repositorio del agente Cay: https://github.com/CoPrime69/cay

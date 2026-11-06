@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario adqfxad bajo el identificador `adqfxad/MyAwesomeModel-TestRepo`. La etiqueta del repositorio ("TestRepo"), el contador de descargas (0) y de "likes" (0), junto con el contenido claramente plantillado de su model card, indican que se trata de un repositorio de prueba y no de un modelo entrenado listo para producción.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario adqfxad bajo el identificador `adqfxad/MyAwesomeModel-TestRepo`. La etiqueta del repositorio ("TestRepo"), el contador de descargas (0) y de "likes" (0), junto con el contenido claramente plantillado de su model card, indican que se trata de un repositorio de prueba y no de un modelo entrenado listo para producción.
 
-Existe una contradicción relevante entre los metadatos y la documentación. Las etiquetas de HuggingFace lo clasifican como `bert`, con pipeline `feature-extraction` y librería `transformers` sobre PyTorch, lo que corresponde a un modelo codificador de representaciones. Sin embargo, la model card describe un asistente conversacional de razonamiento con modo "thinking", soporte de function calling, plantillas de búsqueda web y resultados en AIME 2025, capacidades propias de un LLM generativo y no de un modelo BERT de extracción de características.
+Existe una contradicción relevante entre los metadatos y la documentación. Las etiquetas de Hugging Face lo clasifican como `bert`, con pipeline `feature-extraction` y librería `transformers` sobre PyTorch, lo que corresponde a un modelo codificador de representaciones. Sin embargo, la model card describe un asistente conversacional de razonamiento con modo "thinking", soporte de function calling, plantillas de búsqueda web y resultados en AIME 2025, capacidades propias de un LLM generativo y no de un modelo BERT de extracción de características.
 
 La model card menciona además una variante "MyAwesomeModel-Small" que compartiría tokenizer con el modelo principal, y afirma mejoras sobre versiones anteriores sin identificarlas. No se especifican parámetros, contexto, tokenizador, composición del dataset ni formato de pesos en la información disponible.
 
@@ -45,7 +45,7 @@ Debido a que no hay parámetros, contexto ni licencia de uso comercial confirmad
 - Evaluación de pipelines de transformers: el repositorio puede usarse para comprobar la carga de un modelo con la librería `transformers` y el pipeline `feature-extraction` en un entorno de integración continua, sin expectativa de calidad de salida.
 - Pruebas de plantillas de prompt: las plantillas de system prompt, carga de ficheros y búsqueda web incluidas en la model card sirven como material para validar un formateador de prompts propio.
 - Prototipado de asistentes con citas: la plantilla de citación `[citation:X]` puede reutilizarse para experimentar con generación aumentada por recuperación, siempre que se sustituya el modelo por uno verificado.
-- Verificación de metadatos en HuggingFace: útil como caso de estudio sobre inconsistencias entre etiquetas (`bert`, `feature-extraction`) y la documentación de un repositorio.
+- Verificación de metadatos en Hugging Face: útil como caso de estudio sobre inconsistencias entre etiquetas (`bert`, `feature-extraction`) y la documentación de un repositorio.
 - Formación y auditoría de fichas técnicas: sirve como ejemplo de model card plantillada con nombres anonimizados (`Model1`, `Model2`), útil para enseñar a detectar datos no reproducibles.
 - Pruebas de integración de endpoints compatibles: la etiqueta `endpoints_compatible` permite comprobar el enrutado de un endpoint de inferencia, sin uso real de negocio.
 
@@ -80,7 +80,7 @@ Advertencias sobre estos datos: no se especifica la metodología, el número de 
 - VRAM estimada para inferencia: no disponible; al desconocerse el número de parámetros no puede calcularse el consumo de memoria.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Compatibilidad con GPU de consumo: no determinable. Si el repositorio fuese realmente un modelo BERT de extracción de características, cabría en GPUs de consumo, pero la model card describe un LLM de razonamiento cuyo tamaño se desconoce.
-- Opciones de despliegue: la etiqueta `transformers` y `endpoints_compatible` sugieren despliegue mediante la librería Transformers y HuggingFace Endpoints. No se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI, y no se ofrecen pesos en GGUF.
+- Opciones de despliegue: la etiqueta `transformers` y `endpoints_compatible` sugieren despliegue mediante la librería Transformers y Hugging Face Endpoints. No se confirma compatibilidad con vLLM, llama.cpp, Ollama ni TGI, y no se ofrecen pesos en GGUF.
 - Latencia y throughput: no disponible. La única referencia es que el modelo consume una media de 23K tokens por pregunta en AIME, lo que implica respuestas largas y coste de cómputo elevado en decodificación, pero sin parámetros no puede traducirse a latencia concreta.
 
 ## Comparativa con modelos similares
@@ -110,7 +110,7 @@ No se dispone de identificadores reales para comparar con alternativas conocidas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adqfxad/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/adqfxad/MyAwesomeModel-TestRepo
 - La model card menciona una web oficial con interfaz de chat y API, y un repositorio de código para ejecución local, pero no incluye las URL correspondientes.
 - Referencias internas citadas en la model card sin enlace disponible: `LICENSE`, imágenes `figures/fig1.png`, `figures/fig2.png` y `figures/fig3.png`.
 - Paper: no disponible.

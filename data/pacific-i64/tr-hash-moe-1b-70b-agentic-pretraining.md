@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TR-HASH-MoE-1B | 1.01B | 16K | MoE top-2 + shared branch | other | Checkpoints de entrenamiento en HuggingFace |
-| TR-HASH-MOE-100M | 99.5M | no disponible | MoE con GQA y shared MLP | other | Peso completo en HuggingFace |
+| TR-HASH-MoE-1B | 1.01B | 16K | MoE top-2 + shared branch | other | Checkpoints de entrenamiento en Hugging Face |
+| TR-HASH-MOE-100M | 99.5M | no disponible | MoE con GQA y shared MLP | other | Peso completo en Hugging Face |
 | Otros modelos MoE de 1B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,6 +76,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Pacific-i64/TR-HASH-MoE-1B-70B-Agentic-Pretraining
+- Hugging Face: https://huggingface.co/Pacific-i64/TR-HASH-MoE-1B-70B-Agentic-Pretraining
 - Modelo hermano TR-HASH-MOE-100M: https://huggingface.co/Pacific-i64/TR-HASH-MOE-100M
 - Dentro del repositorio se referencia `training/README.md` para detalles sobre la receta de entrenamiento y reanudacion.

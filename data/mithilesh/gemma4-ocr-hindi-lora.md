@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mithilesh/gemma4-ocr-hindi-lora` es un adaptador LoRA publicado en HuggingFace por el usuario `mithilesh`, construido sobre el modelo base `google/gemma-4-26B-A4B-it`. Por el identificador del repositorio, el adaptador esta orientado a tareas de OCR en hindi, aunque la model card no confirma explicitamente ni la tarea ni el idioma de entrenamiento. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador PEFT (no con un modelo completo), y se distribuye en formato `safetensors` con la libreria `peft` (version declarada de framework: PEFT 0.21.0).
+`mithilesh/gemma4-ocr-hindi-lora` es un adaptador LoRA publicado en Hugging Face por el usuario `mithilesh`, construido sobre el modelo base `google/gemma-4-26B-A4B-it`. Por el identificador del repositorio, el adaptador esta orientado a tareas de OCR en hindi, aunque la model card no confirma explicitamente ni la tarea ni el idioma de entrenamiento. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador PEFT (no con un modelo completo), y se distribuye en formato `safetensors` con la libreria `peft` (version declarada de framework: PEFT 0.21.0).
 
 El modelo se publica bajo el pipeline `text-generation` y esta etiquetado como `lora`, `transformers`, `conversational` y `base_model:adapter:google/gemma-4-26B-A4B-it`, lo que indica que se carga como adaptador sobre el modelo base y no como checkpoint autonomo. La model card es una plantilla sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia, idiomas y uso previsto aparecen como `[More Information Needed]`, por lo que no hay informacion verificable sobre el procedimiento de ajuste ni sobre el dataset empleado.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mithilesh/gemma4-ocr-hindi-lora` | Adaptador LoRA sobre Gemma 4 26B-A4B | adaptador de 0,1 GB; base no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| `google/gemma-4-26B-A4B-it` | Modelo base completo | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (referenciado como base) |
+| `mithilesh/gemma4-ocr-hindi-lora` | Adaptador LoRA sobre Gemma 4 26B-A4B | adaptador de 0,1 GB; base no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| `google/gemma-4-26B-A4B-it` | Modelo base completo | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Otros adaptadores LoRA de OCR | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, contexto o licencia de alternativas comparables dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento, contexto o licencia de alternativas compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mithilesh/gemma4-ocr-hindi-lora
+- Repositorio Hugging Face: https://huggingface.co/mithilesh/gemma4-ocr-hindi-lora
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Paper citado en la plantilla de la model card (calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact#compute

@@ -97,7 +97,7 @@ La diferencia practica frente al original es el tamaño del vector: 512d frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomaarsen/embeddinggemma-2-512d
+- Modelo en Hugging Face: https://huggingface.co/tomaarsen/embeddinggemma-2-512d
 - Modelo base (Google): https://huggingface.co/google/embeddinggemma-2
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2

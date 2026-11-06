@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-04` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario lugman-madhiai bajo licencia Apache 2.0. Segun los metadatos de HuggingFace, la pipeline declarada es `image-text-to-text`, lo que indica que hereda la capacidad multimodal (vision y texto) del modelo base de la familia Qwen3.5. Cuenta con 2.274.069.824 parametros reales (aproximadamente 2,27 mil millones), un tamano que lo situa en la gama de modelos pequenos aptos para inferencia en hardware de consumo.
+El modelo `lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-04` es un ajuste fino supervisado (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario lugman-madhiai bajo licencia Apache 2.0. Segun los metadatos de Hugging Face, la pipeline declarada es `image-text-to-text`, lo que indica que hereda la capacidad multimodal (vision y texto) del modelo base de la familia Qwen3.5. Cuenta con 2.274.069.824 parametros reales (aproximadamente 2,27 mil millones), un tamano que lo situa en la gama de modelos pequenos aptos para inferencia en hardware de consumo.
 
-El entrenamiento se realizo con la libreria Unsloth junto con TRL de HuggingFace, segun declara el propio autor, lo que sugiere un flujo de trabajo de fine-tuning eficiente en memoria. El nombre del repositorio ("Instantly-CS-SFT-Split-04") apunta a un ajuste orientado a un dominio concreto (posiblemente atencion al cliente, "CS") y a que forma parte de una serie de particiones de datos de entrenamiento, siendo esta la particion numero 04.
+El entrenamiento se realizo con la libreria Unsloth junto con TRL de Hugging Face, segun declara el propio autor, lo que sugiere un flujo de trabajo de fine-tuning eficiente en memoria. El nombre del repositorio ("Instantly-CS-SFT-Split-04") apunta a un ajuste orientado a un dominio concreto (posiblemente atencion al cliente, "CS") y a que forma parte de una serie de particiones de datos de entrenamiento, siendo esta la particion numero 04.
 
 Se trata de un modelo muy reciente (creado el 5 de octubre de 2026) y con practicamente nula traccion publica en el momento de redactar esta ficha (0 descargas y 0 "likes"). La model card es extremadamente escueta y no aporta datos sobre volumen de entrenamiento, composicion del dataset, hiperparametros ni evaluaciones, por lo que buena parte de sus especificaciones figuran como "no disponible".
 
@@ -27,7 +27,7 @@ Datos adicionales: tamano del repositorio 4,6 GB; libreria `transformers`; tags 
 
 La informacion disponible no detalla la arquitectura interna mas alla del tag `qwen3_5`, que identifica la familia a la que pertenece el modelo base. Se trata por tanto de un transformer derivado de `Qwen/Qwen3.5-2B`, con soporte multimodal segun la pipeline `image-text-to-text`. No se especifica si emplea atencion lineal, decodificacion especulativa, mezcla de expertos u otras innovaciones, ni el numero de tokens de contexto soportados.
 
-En cuanto al entrenamiento, el autor indica unicamente que es un modelo ajustado ("finetuned from model: Qwen/Qwen3.5-2B") entrenado "2x mas rapido" con Unsloth y la libreria TRL de HuggingFace. No se publican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni los hiperparametros empleados. El sufijo "SFT" del nombre confirma que se trata de ajuste fino supervisado, y "Split-04" sugiere que el conjunto de datos se dividio en particiones, siendo esta la cuarta.
+En cuanto al entrenamiento, el autor indica unicamente que es un modelo ajustado ("finetuned from model: Qwen/Qwen3.5-2B") entrenado "2x mas rapido" con Unsloth y la libreria TRL de Hugging Face. No se publican datos sobre el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de RLHF o DPO, ni los hiperparametros empleados. El sufijo "SFT" del nombre confirma que se trata de ajuste fino supervisado, y "Split-04" sugiere que el conjunto de datos se dividio en particiones, siendo esta la cuarta.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en precision completa (fp16/bf16) los pesos de 2,27 B ocupan aproximadamente 4,5 GB, a los que hay que sumar memoria para el cache de activaciones y KV. En cuantizacion int8 la estimacion ronda los 2,3 GB y en int4 alrededor de 1,2 GB.
 - GPU recomendadas: tarjetas de consumo como la RTX 3060 (12 GB) o superiores bastan para fp16; una RTX 4090 (24 GB) permite margen amplio y mayor tamano de lote. Para despliegues en servidor, A100 o H100 ofrecen holgura considerable para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe comodamente en la mayoria de GPU de consumo modernas con 8 GB o mas de VRAM, e incluso en configuraciones de 6 GB mediante cuantizacion.
-- Opciones de despliegue: al estar en formato `transformers`/safetensors, es compatible con vLLM, TGI (text-generation-inference) y el propio ecosistema HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion de la que no se aporta informacion.
+- Opciones de despliegue: al estar en formato `transformers`/safetensors, es compatible con vLLM, TGI (text-generation-inference) y el propio ecosistema Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, conversion de la que no se aporta informacion.
 - Latencia y throughput estimados: no disponible. El autor solo menciona que el entrenamiento fue "2x mas rapido" con Unsloth, dato que se refiere al proceso de ajuste, no a la inferencia.
 
 ## Comparativa con modelos similares
@@ -68,9 +68,9 @@ No se dispone de datos de benchmarks de este modelo, por lo que la comparacion s
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-Instantly-CS-SFT-Split-04 | 2,27 B | no disponible | si (image-text-to-text) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-2B (modelo base) | ~2 B | no disponible | si (segun pipeline base) | no disponible en esta ficha | HuggingFace |
-| Modelos de la gama 2B de otras familias (p. ej. Gemma 2 2B, Llama 3.2 1B/3B) | 1-3 B | 8.000-128.000 tokens segun variante | no (solo texto, salvo variantes especificas) | licencias propias | HuggingFace |
+| Qwen3.5-2B-Instantly-CS-SFT-Split-04 | 2,27 B | no disponible | si (image-text-to-text) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-2B (modelo base) | ~2 B | no disponible | si (segun pipeline base) | no disponible en esta ficha | Hugging Face |
+| Modelos de la gama 2B de otras familias (p. ej. Gemma 2 2B, Llama 3.2 1B/3B) | 1-3 B | 8.000-128.000 tokens segun variante | no (solo texto, salvo variantes especificas) | licencias propias | Hugging Face |
 
 Los datos de rendimiento comparativo entre estas opciones no estan disponibles en la informacion proporcionada, por lo que no puede establecerse una jerarquia de calidad.
 
@@ -88,7 +88,7 @@ Los datos de rendimiento comparativo entre estas opciones no estan disponibles e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-04
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/Qwen3.5-2B-Instantly-CS-SFT-Split-04
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl

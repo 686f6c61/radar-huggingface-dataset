@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apex Coder 8B v1 es un modelo de lenguaje ajustado (fine-tune) publicado en HuggingFace por el usuario mamiyusufdemi. Se trata de un derivado de unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit, es decir, una versión de Llama 3.1 8B Instruct cuantizada a 4 bits mediante bitsandbytes y preparada con el ecosistema de Unsloth. El entrenamiento se realizó con la librería TRL de HuggingFace, lo que sugiere un ajuste basado en técnicas estándar de alineación (SFT/DPO según la configuración de TRL), aunque el autor no documenta el dataset ni el método exacto.
+Apex Coder 8B v1 es un modelo de lenguaje ajustado (fine-tune) publicado en Hugging Face por el usuario mamiyusufdemi. Se trata de un derivado de unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit, es decir, una versión de Llama 3.1 8B Instruct cuantizada a 4 bits mediante bitsandbytes y preparada con el ecosistema de Unsloth. El entrenamiento se realizó con la librería TRL de Hugging Face, lo que sugiere un ajuste basado en técnicas estándar de alineación (SFT/DPO según la configuración de TRL), aunque el autor no documenta el dataset ni el método exacto.
 
 El nombre del modelo apunta a un enfoque en tareas de programación, pero la model card no incluye datos de benchmarks, ejemplos de uso ni descripción del conjunto de entrenamiento, por lo que sus capacidades reales deben verificarse empíricamente antes de cualquier despliegue. Su valor principal es la licencia Apache 2.0, heredada de la base, que permite uso comercial sin restricciones, y el reducido tamaño del repositorio (0,2 GB), coherente con una cuantización a 4 bits.
 
@@ -23,7 +23,7 @@ Dado que el modelo tiene 0 descargas registradas y carece de documentación téc
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit, una versión de Llama 3.1 8B Instruct cuantizada a 4 bits con bitsandbytes y optimizada por Unsloth, un framework que acelera el fine-tuning de modelos Llama mediante kernels optimizados y gestión eficiente de memoria. Sobre esta base, el autor realizó un ajuste adicional utilizando la librería TRL (Transformer Reinforcement Learning) de HuggingFace, que ofrece flujos de SFT, DPO y RLHF. La model card no especifica qué técnica concreta se empleó, qué dataset se usó ni cuántos tokens de entrenamiento se consumieron.
+El modelo parte de unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit, una versión de Llama 3.1 8B Instruct cuantizada a 4 bits con bitsandbytes y optimizada por Unsloth, un framework que acelera el fine-tuning de modelos Llama mediante kernels optimizados y gestión eficiente de memoria. Sobre esta base, el autor realizó un ajuste adicional utilizando la librería TRL (Transformer Reinforcement Learning) de Hugging Face, que ofrece flujos de SFT, DPO y RLHF. La model card no especifica qué técnica concreta se empleó, qué dataset se usó ni cuántos tokens de entrenamiento se consumieron.
 
 La cuantización a 4 bits del modelo base reduce drásticamente los requisitos de memoria respecto a los pesos en 16 bits (aproximadamente 4-5 GB frente a unos 16 GB para 8B parámetros), lo que permite inferencia y entrenamiento en GPUs de consumo. No se documenta ninguna innovación técnica específica más allá del uso de Unsloth para acelerar el entrenamiento (el autor indica una velocidad de entrenamiento 2 veces superior).
 
@@ -41,7 +41,7 @@ La cuantización a 4 bits del modelo base reduce drásticamente los requisitos d
 - Prototipado de asistentes de código: el nombre del modelo sugiere orientación a programación; puede probarse para autocompletado o generación de funciones en Python y otros lenguajes, aunque conviene validar la calidad frente al modelo base.
 - Experimentación con fine-tunes cuantizados: al estar en 4 bits y pesar solo 0,2 GB en repositorio, es útil para probar flujos de carga con transformers y bitsandbytes en hardware modesto.
 - Chatbots personales en inglés: la base Instruct permite conversaciones multi-turno en entornos locales sin coste de API, aprovechando la licencia Apache 2.0.
-- Integración en pipelines de TGI: el tag text-generation-inference indica compatibilidad con el servidor de inferencia de HuggingFace para servir el modelo en local.
+- Integración en pipelines de TGI: el tag text-generation-inference indica compatibilidad con el servidor de inferencia de Hugging Face para servir el modelo en local.
 - Base para nuevos fine-tunes: al ser un modelo ligero y con licencia permisiva, puede usarse como punto de partida para ajustes adicionales con Unsloth o TRL en GPUs de consumo.
 - Evaluación comparativa de cuantizaciones: permite comparar el comportamiento del fine-tune sobre pesos en 4 bits frente a Llama 3.1 8B Instruct en precisión completa.
 
@@ -80,7 +80,7 @@ Para tareas serias de código, alternativas como Qwen2.5-Coder-7B-Instruct ofrec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamiyusufdemi/apex-coder-8b-v1
+- Modelo en Hugging Face: https://huggingface.co/mamiyusufdemi/apex-coder-8b-v1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://huggingface.co/docs/trl
+- TRL (Hugging Face): https://huggingface.co/docs/trl

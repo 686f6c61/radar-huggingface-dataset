@@ -97,7 +97,7 @@ La informacion proporcionada no incluye datos tecnicos de modelos alternativos, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anadilorg/Anadil_Kyrgyz_TTS
+- Modelo en Hugging Face: https://huggingface.co/Anadilorg/Anadil_Kyrgyz_TTS
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Fichero de licencia del repositorio: https://huggingface.co/Anadilorg/Anadil_Kyrgyz_TTS/blob/main/LICENSE
 - Ejemplos de audio originales y sintetizados: https://huggingface.co/Anadilorg/Anadil_Kyrgyz_TTS/tree/main/samples

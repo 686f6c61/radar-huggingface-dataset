@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g1_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, concretamente de la versión cuantizada a 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo desarrolla el usuario de HuggingFace stefanocarrera y se publica bajo licencia Apache 2.0. Por el nombre del repositorio (`java_t1.5_g1_run0`) y el contexto de la model card, apunta a un experimento de ajuste fino orientado a Java, aunque la documentación no lo confirma explícitamente.
+El modelo `stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g1_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, concretamente de la versión cuantizada a 4 bits `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`. Lo desarrolla el usuario de Hugging Face stefanocarrera y se publica bajo licencia Apache 2.0. Por el nombre del repositorio (`java_t1.5_g1_run0`) y el contexto de la model card, apunta a un experimento de ajuste fino orientado a Java, aunque la documentación no lo confirma explícitamente.
 
 El modelo se ha entrenado con la librería Unsloth, que según el autor permite un entrenamiento "2x más rápido". Se distribuye en formato safetensors y es compatible con `transformers` y `text-generation-inference`. El tamaño del repositorio es de solo 0,2 GB, lo que sugiere que se trata de un conjunto de adaptadores o pesos parciales más que de un modelo completo de 8B parámetros.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g1_run0 | 8B (base) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning comunitario sin benchmarks |
-| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial con documentación completa |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | no disponible en esta ficha | Apache 2.0 | HuggingFace | Versión cuantizada a 4 bits para entrenamiento |
-| Fine-tunings comunitarios de Qwen3-8B | 8B | variable | variable | HuggingFace | Calidad y documentación muy dispares |
+| stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g1_run0 | 8B (base) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning comunitario sin benchmarks |
+| Qwen/Qwen3-8B | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial con documentación completa |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | no disponible en esta ficha | Apache 2.0 | Hugging Face | Versión cuantizada a 4 bits para entrenamiento |
+| Fine-tunings comunitarios de Qwen3-8B | 8B | variable | variable | Hugging Face | Calidad y documentación muy dispares |
 
 ## Limitaciones y advertencias
 
@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g1_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g1_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g1_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g1_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)

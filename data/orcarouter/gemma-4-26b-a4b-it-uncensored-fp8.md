@@ -77,10 +77,10 @@ Esta variante FP8 es más ligera en memoria que el modelo base en BF16, pero man
 - **Contexto desconocido**: la longitud de contexto no se ha especificado, lo que puede afectar tareas que requieran documentos largos.
 - **Riesgo de alucinaciones**: como todos los modelos generativos, puede producir información falsa o inventada, especialmente en temas de actualidad.
 - **Sesgos potenciales**: al ser una variante sin ajuste de seguridad, es probable que reproduzca sesgos presentes en los datos de entrenamiento originales.
-- **Acceso restringido**: el modelo está en HuggingFace con acceso *gated*, lo que requiere aceptar condiciones antes de descargarlo.
+- **Acceso restringido**: el modelo está en Hugging Face con acceso *gated*, lo que requiere aceptar condiciones antes de descargarlo.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/orcarouter/Gemma-4-26B-A4B-it-Uncensored-FP8)
+- [Página del modelo en Hugging Face](https://huggingface.co/orcarouter/Gemma-4-26B-A4B-it-Uncensored-FP8)
 - [Modelo base: google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Documentación de Gemma en Google](https://ai.google.dev/gemma) (para la licencia y detalles del modelo base)

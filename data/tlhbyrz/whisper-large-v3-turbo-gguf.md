@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tlhbyrz/whisper-large-v3-turbo-gguf` es una publicacion de HuggingFace que, por su identificador y su recuento de parametros (808.904.208, aproximadamente 809 millones), corresponde a una conversion al formato GGUF del modelo de reconocimiento automatico del habla (ASR) Whisper large-v3-turbo. El repositorio lo publica el usuario `tlhbyrz` bajo licencia MIT y ocupa 0,9 GB en disco, con un unico commit registrado el 3 de octubre de 2026.
+`tlhbyrz/whisper-large-v3-turbo-gguf` es una publicacion de Hugging Face que, por su identificador y su recuento de parametros (808.904.208, aproximadamente 809 millones), corresponde a una conversion al formato GGUF del modelo de reconocimiento automatico del habla (ASR) Whisper large-v3-turbo. El repositorio lo publica el usuario `tlhbyrz` bajo licencia MIT y ocupa 0,9 GB en disco, con un unico commit registrado el 3 de octubre de 2026.
 
 La model card del repositorio es practicamente vacia: solo declara `license: mit`, sin informacion sobre el proceso de cuantizacion aplicado, los niveles GGUF incluidos, los idiomas soportados ni el pipeline de uso. El repositorio no registra descargas ni "likes" en el momento de la consulta, por lo que se trata de una publicacion sin adopcion conocida ni validacion por parte de la comunidad.
 
@@ -92,7 +92,7 @@ Nota: los datos de los modelos alternativos se incluyen unicamente como referenc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tlhbyrz/whisper-large-v3-turbo-gguf
+- Hugging Face: https://huggingface.co/tlhbyrz/whisper-large-v3-turbo-gguf
 - Repositorio de Whisper de OpenAI: no disponible en la informacion proporcionada
 - Paper de Whisper: no disponible en la informacion proporcionada
 - Documentacion de `llama.cpp`: no disponible en la informacion proporcionada

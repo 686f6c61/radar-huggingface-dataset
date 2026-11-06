@@ -81,5 +81,5 @@ No disponible. El repositorio no aporta datos de rendimiento ni comparaciones co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sams-onsek/perceiver-matching
+- Hugging Face: https://huggingface.co/sams-onsek/perceiver-matching
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

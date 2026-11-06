@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`schmid-tlaura/perceiver-experiment53` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura Perceiver orientada a tareas de *matching*. Lo publica el usuario schmid-tlaura bajo licencia Apache 2.0 y esta etiquetado con los tags `safetensors`, `perceiver`, `pytorch` y `matching`. No se trata de un modelo preentrenado listo para produccion, sino de un punto de partida experimental: la propia model card indica que el checkpoint `model.safetensors` es una inicializacion valida para *smoke tests* y no un checkpoint entrenado ni evaluado con benchmarks.
+`schmid-tlaura/perceiver-experiment53` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura Perceiver orientada a tareas de *matching*. Lo publica el usuario schmid-tlaura bajo licencia Apache 2.0 y esta etiquetado con los tags `safetensors`, `perceiver`, `pytorch` y `matching`. No se trata de un modelo preentrenado listo para produccion, sino de un punto de partida experimental: la propia model card indica que el checkpoint `model.safetensors` es una inicializacion valida para *smoke tests* y no un checkpoint entrenado ni evaluado con benchmarks.
 
 La configuracion declarada corresponde a una escala «xlarge» dentro de la implementacion del autor, con atencion de ventana deslizante (sliding window), fusion de bajo rango (low rank), activacion mish y normalizacion batchnorm. El unico dato cuantitativo real disponible es el numero de parametros del fichero safetensors: 16.576 en total, una cifra muy reducida que confirma el caracter de prueba del artefacto. No se declaran idiomas soportados, ni longitud de contexto, ni pipeline de inferencia.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/schmid-tlaura/perceiver-experiment53
+- Hugging Face: https://huggingface.co/schmid-tlaura/perceiver-experiment53
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

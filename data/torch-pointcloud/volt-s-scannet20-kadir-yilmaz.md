@@ -77,7 +77,7 @@ No se dispone en la informacion proporcionada de resultados de otros modelos de 
 
 | Modelo | Parametros | Contexto | mIoU ScanNet 20 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| volt-s.scannet20.kadir-yilmaz | 23,7 M | no disponible | 77,27 (declarado) | MIT | HuggingFace |
+| volt-s.scannet20.kadir-yilmaz | 23,7 M | no disponible | 77,27 (declarado) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de resultados de otros modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/volt-s.scannet20.kadir-yilmaz
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/volt-s.scannet20.kadir-yilmaz
 - Checkpoint original: https://huggingface.co/KadirYilmaz/Volt
 - Paper: https://arxiv.org/abs/2604.19609
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

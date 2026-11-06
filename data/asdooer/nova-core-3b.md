@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nova-core-3b es un modelo de generacion de texto de aproximadamente 3.000 millones de parametros publicado por el usuario asdooer en HuggingFace bajo licencia MIT. La unica descripcion funcional que aporta el autor es que se trata de un modelo compacto "optimizado para Python, TypeScript y desarrollo web moderno". No se especifica arquitectura, procedimiento de entrenamiento, composicion del dataset ni longitud de contexto.
+Nova-core-3b es un modelo de generacion de texto de aproximadamente 3.000 millones de parametros publicado por el usuario asdooer en Hugging Face bajo licencia MIT. La unica descripcion funcional que aporta el autor es que se trata de un modelo compacto "optimizado para Python, TypeScript y desarrollo web moderno". No se especifica arquitectura, procedimiento de entrenamiento, composicion del dataset ni longitud de contexto.
 
 El modelo se enmarca en la categoria de asistentes de codigo de tamano pequeno, un segmento pensado para ejecucion local en hardware de consumo, autocompletado en editores, generacion de tests y tareas de refactorizacion sobre bases de codigo de tamano medio. Con 3B de parametros, es desplegable en GPUs de gama media e incluso en CPU con cuantizacion de 4 bits, lo que lo hace atractivo para entornos sin acceso a aceleradores de datacenter.
 
@@ -19,7 +19,7 @@ La relevancia del lanzamiento es limitada a dia de hoy: el repositorio registra 
 | Tipos de cuantizacion | no disponible (no se publican variantes GGUF, AWQ ni GPTQ en el repositorio) |
 | Idiomas soportados | no disponible (la model card menciona Python, TypeScript y desarrollo web, que son lenguajes de programacion, no idiomas naturales) |
 | Licencia | MIT |
-| Formato de pesos | no disponible (repositorio de HuggingFace; no se confirma safetensors, bin ni otro formato) |
+| Formato de pesos | no disponible (repositorio de Hugging Face; no se confirma safetensors, bin ni otro formato) |
 
 ## Arquitectura y entrenamiento
 
@@ -94,7 +94,7 @@ Frente a estas alternativas, nova-core-3b solo presenta como ventaja diferencial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asdooer/nova-core-3b
+- Modelo en Hugging Face: https://huggingface.co/asdooer/nova-core-3b
 - Paper asociado: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo o espacio de prueba: no disponible.

@@ -61,5 +61,5 @@ No disponible. No se conocen modelos comparables en la misma categoría, dado qu
 
 ## Enlaces
 
-- [HuggingFace: andreguillaume/simple-translate23](https://huggingface.co/andreguillaume/simple-translate23)
+- [Hugging Face: andreguillaume/simple-translate23](https://huggingface.co/andreguillaume/simple-translate23)
 - No se han encontrado otros enlaces relevantes en la búsqueda web (papers, blogs, repos, demos) relacionados con este modelo concreto.

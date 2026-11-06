@@ -18,7 +18,7 @@ La ficha del autor es breve y remite a la model card del modelo base para los de
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | ONNX q4, q8 y q4f16; el `depth_decoder` se ejecuta siempre en float32 |
 | Idiomas soportados | en, ar, da, de, el, fi, fr, he, it, ja, ko, nl, pl, pt, es, sv, tr, zh (18 idiomas) |
-| Licencia | lfm1.0 (etiquetada como `other` en HuggingFace, con enlace a `LICENSE`) |
+| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face, con enlace a `LICENSE`) |
 | Formato de pesos | ONNX (`.onnx`), ejecutable con ONNX Runtime |
 
 ## Arquitectura y entrenamiento
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Audio-2B-ONNX (este) | 2B | no disponible | ONNX (q4, q8, q4f16) | lfm1.0 | HuggingFace, 42 descargas, 5 likes |
-| LFM3-Audio-2B (modelo base) | 2B | no disponible | no disponible en la información | lfm1.0 | HuggingFace (repo original de LiquidAI) |
+| LFM3-Audio-2B-ONNX (este) | 2B | no disponible | ONNX (q4, q8, q4f16) | lfm1.0 | Hugging Face, 42 descargas, 5 likes |
+| LFM3-Audio-2B (modelo base) | 2B | no disponible | no disponible en la información | lfm1.0 | Hugging Face (repo original de LiquidAI) |
 | Otras alternativas any-to-any de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye especificaciones de modelos de terceros comparables, por lo que no se puede establecer una comparación cuantitativa de rendimiento. La comparación relevante y verificable es la de esta variante ONNX frente al modelo base: misma licencia y mismo tamaño nominal, con la diferencia de que aquí se ofrecen pesos cuantizados listos para ONNX Runtime y ejecución en CPU.
@@ -84,7 +84,7 @@ La información proporcionada no incluye especificaciones de modelos de terceros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LiquidAI/LFM3-Audio-2B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/LiquidAI/LFM3-Audio-2B-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Licencia: https://huggingface.co/LiquidAI/LFM3-Audio-2B-ONNX/blob/main/LICENSE
 - Sitio de Liquid AI: https://www.liquid.ai/
@@ -93,5 +93,5 @@ La información proporcionada no incluye especificaciones de modelos de terceros
 - Documentación: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground: https://playground.liquid.ai/talk
 - Consola / API: https://console.liquid.ai/dashboard
-- Organización en HuggingFace: https://huggingface.co/LiquidAI
+- Organización en Hugging Face: https://huggingface.co/LiquidAI
 - Wikipedia: https://en.wikipedia.org/wiki/Liquid_AI

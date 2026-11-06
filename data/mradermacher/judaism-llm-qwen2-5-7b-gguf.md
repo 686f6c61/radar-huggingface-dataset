@@ -78,7 +78,7 @@ La principal diferencia es la especialización temática y la incertidumbre sobr
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/judaism-llm-qwen2.5-7b-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/judaism-llm-qwen2.5-7b-GGUF)
 - [Modelo base (tdw419/judaism-llm-qwen2.5-7b)](https://huggingface.co/tdw419/judaism-llm-qwen2.5-7b)
 - [Perfil de mradermacher](https://huggingface.co/mradermacher)
 - [Página de solicitudes de modelos de mradermacher](https://huggingface.co/mradermacher/model_requests)

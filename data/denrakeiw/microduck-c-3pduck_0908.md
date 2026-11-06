@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-c-3pduck_0908 es una politica de aprendizaje por refuerzo (RL) para el robot microduck de Pollen Robotics, publicada por el usuario DenRakEiw en HuggingFace. No es un modelo de lenguaje ni un modelo generativo: es un controlador de locomocion que ocupa el slot `walk` del robot y produce comandos de accion de forma continua. Segun la model card, se trata de una politica en modo carrera ("race-mode") afinada mediante estrategias de evolucion (evolution strategies) sobre el scorer de colinas de la Arena, con el objetivo declarado de subir una pendiente de 1,5 m.
+microduck-c-3pduck_0908 es una politica de aprendizaje por refuerzo (RL) para el robot microduck de Pollen Robotics, publicada por el usuario DenRakEiw en Hugging Face. No es un modelo de lenguaje ni un modelo generativo: es un controlador de locomocion que ocupa el slot `walk` del robot y produce comandos de accion de forma continua. Segun la model card, se trata de una politica en modo carrera ("race-mode") afinada mediante estrategias de evolucion (evolution strategies) sobre el scorer de colinas de la Arena, con el objetivo declarado de subir una pendiente de 1,5 m.
 
 El modelo consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, y se distribuye como un fichero `policy.onnx` acompanado de un `manifest.json` que sigue el esquema 2 del manifiesto de politicas de microduck. El normalizador de observaciones esta embebido en el propio ONNX, por lo que la politica acepta observaciones en crudo. La ejecucion en robot se realiza con el comando `sudo robotctl policy load walk DenRakEiw/microduck-c-3pduck_0908`.
 
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye otras politicas con las q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0908
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-c-3pduck_0908
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `b76573f1a`
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

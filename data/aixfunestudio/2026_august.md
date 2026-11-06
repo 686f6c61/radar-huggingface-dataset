@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **AIxFuneStudio/2026_August** es un lanzamiento del desarrollador AIxFuneStudio, alojado en HuggingFace bajo la plataforma de modelos con acceso restringido (gated). Se trata de un modelo reciente, creado en agosto de 2026, con un tamaño de repositorio de 82.9 GB, lo que sugiere que se trata de un modelo de gran escala, probablemente en el rango de decenas de miles de millones de parámetros. Sin embargo, la informacion publica disponible es extremadamente limitada: no se especifica arquitectura, familia, ni detalles de entrenamiento.
+El modelo **AIxFuneStudio/2026_August** es un lanzamiento del desarrollador AIxFuneStudio, alojado en Hugging Face bajo la plataforma de modelos con acceso restringido (gated). Se trata de un modelo reciente, creado en agosto de 2026, con un tamaño de repositorio de 82.9 GB, lo que sugiere que se trata de un modelo de gran escala, probablemente en el rango de decenas de miles de millones de parámetros. Sin embargo, la informacion publica disponible es extremadamente limitada: no se especifica arquitectura, familia, ni detalles de entrenamiento.
 
 La relevancia de este modelo reside principalmente en su fecha de publicacion y su tamaño, que lo situan como un posible candidato a modelo frontier de nueva generacion. No obstante, la ausencia de documentacion tecnica, benchmarks publicados y la licencia "other" (no estandar) generan incertidumbre sobre su uso en produccion. El acceso restringido implica que los usuarios deben solicitar permiso al autor, lo que anade una barrera adicional a su evaluacion.
 
@@ -60,7 +60,7 @@ No es posible establecer una comparativa fiable sin datos tecnicos. Si se confir
 
 ## Limitaciones y advertencias
 
-- **Informacion insuficiente**: el modelo carece de ficha tecnica, paper, o documentacion en el repositorio de HuggingFace. Esto impide una evaluacion objetiva de capacidades, sesgos y riesgos.
+- **Informacion insuficiente**: el modelo carece de ficha tecnica, paper, o documentacion en el repositorio de Hugging Face. Esto impide una evaluacion objetiva de capacidades, sesgos y riesgos.
 - **Licencia no estandar**: la licencia "other" no especifica los terminos de uso. No se puede asumir permiso para uso comercial, modificacion o redistribucion. Es imprescindible contactar al autor antes de cualquier uso.
 - **Acceso restringido**: al ser un modelo gated, el acceso no esta garantizado. El proceso de aprobacion puede ser lento o denegado.
 - **Riesgo de alucinacion y sesgos**: al ser un LLM de gran escala sin informacion sobre su alineacion, es previsible que presente alucinaciones y sesgos, pero no se puede cuantificar.
@@ -69,4 +69,4 @@ No es posible establecer una comparativa fiable sin datos tecnicos. Si se confir
 
 ## Enlaces
 
-- [HuggingFace: AIxFuneStudio/2026_August](https://huggingface.co/AIxFuneStudio/2026_August)
+- [Hugging Face: AIxFuneStudio/2026_August](https://huggingface.co/AIxFuneStudio/2026_August)

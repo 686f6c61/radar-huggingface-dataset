@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para comparar este adaptador con alternativas concretas. Como referencia, otros adaptadores LoRA para Qwen3-Coder-30B-A3B podrían existir en HuggingFace, pero no se han identificado en la busqueda. El modelo base compite con otros modelos de código como DeepSeek-Coder-V2, CodeLlama-34B o Mixtral-8x7B, pero esta comparativa no aplica directamente al adaptador.
+No se dispone de información suficiente para comparar este adaptador con alternativas concretas. Como referencia, otros adaptadores LoRA para Qwen3-Coder-30B-A3B podrían existir en Hugging Face, pero no se han identificado en la busqueda. El modelo base compite con otros modelos de código como DeepSeek-Coder-V2, CodeLlama-34B o Mixtral-8x7B, pero esta comparativa no aplica directamente al adaptador.
 
 ## Limitaciones y advertencias
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar este adaptador con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moofeez/qwen3-coder-30b-a3b-debugger-lora
+- Repositorio Hugging Face: https://huggingface.co/moofeez/qwen3-coder-30b-a3b-debugger-lora
 - Arbol de archivos: https://huggingface.co/moofeez/qwen3-coder-30b-a3b-debugger-lora/tree/main
 - Version RL del adaptador: https://huggingface.co/moofeez/qwen3-coder-30b-a3b-debugger-rl-lora
 - Repositorio GitHub con releases: https://github.com/Damacol/moofeez-qwen3-coder-30b-a3b-debugger-rl-lora/releases

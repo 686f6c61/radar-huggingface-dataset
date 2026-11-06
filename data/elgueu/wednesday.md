@@ -60,6 +60,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - No hay información sobre sesgos, limitaciones de idioma ni restricciones de uso adicionales.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Elgueu/wednesday
+- Hugging Face: https://huggingface.co/Elgueu/wednesday
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Krea 2 Turbo (mencionado en la model card): https://huggingface.co/krea/Krea-2-Turbo

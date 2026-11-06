@@ -3,7 +3,7 @@
 # XLM-R-Base ajustado con LoRA sobre SQuAD (alxxtexxr)
 
 ## Resumen
-Se trata de un ajuste fino del modelo encoder XLM-RoBERTa Base para la tarea de *question answering* extractivo, publicado en HuggingFace por el usuario alxxtexxr. El identificador del repositorio indica que el ajuste se ha realizado con LoRA sobre el dataset SQuAD en inglés durante 15.000 pasos con semilla 42, aunque la model card publicada es la plantilla automática de HuggingFace y no confirma ninguno de estos extremos. El modelo tiene 277.454.594 parámetros reales según los pesos en safetensors y ocupa 1,1 GB en el repositorio.
+Se trata de un ajuste fino del modelo encoder XLM-RoBERTa Base para la tarea de *question answering* extractivo, publicado en Hugging Face por el usuario alxxtexxr. El identificador del repositorio indica que el ajuste se ha realizado con LoRA sobre el dataset SQuAD en inglés durante 15.000 pasos con semilla 42, aunque la model card publicada es la plantilla automática de Hugging Face y no confirma ninguno de estos extremos. El modelo tiene 277.454.594 parámetros reales según los pesos en safetensors y ocupa 1,1 GB en el repositorio.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un artefacto experimental sin descargas ni likes en el momento de la consulta, sin licencia declarada y sin métricas publicadas. Resulta útil como punto de partida reproducible para experimentos de ajuste parametralmente eficiente (PEFT/LoRA) sobre arquitecturas multilingües tipo BERT, pero no como componente listo para producción sin una evaluación previa por parte del integrador.
 
@@ -36,7 +36,7 @@ Según el nombre del repositorio, el ajuste se realizó con LoRA (adaptadores de
 - Sin soporte de *tool calling* ni *function calling*.
 - Sin capacidades de agente, razonamiento multi-paso ni planificación.
 - Sin visión, audio ni modo *thinking*.
-- Compatible con `transformers` y con el tag `endpoints_compatible`, lo que permite desplegarlo mediante HuggingFace Inference Endpoints.
+- Compatible con `transformers` y con el tag `endpoints_compatible`, lo que permite desplegarlo mediante Hugging Face Inference Endpoints.
 
 ## Casos de uso
 - Búsqueda de respuestas en documentación técnica interna: el modelo recibe un fragmento de hasta 512 tokens y una pregunta; es adecuado porque devuelve el span exacto en lugar de una respuesta parafraseada, lo que facilita la trazabilidad con la fuente.
@@ -65,22 +65,22 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM en int8: aproximadamente 0,28 GB, siempre que se aplique cuantización dinámica (no verificada por el autor).
 - Cabe holgadamente en cualquier GPU de consumo: GTX 1650 (4 GB), RTX 3060, RTX 4090, e incluso en CPU para cargas de baja concurrencia.
 - GPU de datacenter: no requiere A100 ni H100; una T4 o L4 es más que suficiente para despliegue con concurrencia moderada.
-- Opciones de despliegue: pipeline `question-answering` de `transformers`, HuggingFace Inference Endpoints (tag `endpoints_compatible`), TorchServe, ONNX Runtime y servidores FastAPI propios. El soporte en vLLM, llama.cpp u Ollama no está documentado y, para un encoder extractivo, no es la vía habitual.
+- Opciones de despliegue: pipeline `question-answering` de `transformers`, Hugging Face Inference Endpoints (tag `endpoints_compatible`), TorchServe, ONNX Runtime y servidores FastAPI propios. El soporte en vLLM, llama.cpp u Ollama no está documentado y, para un encoder extractivo, no es la vía habitual.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (XLM-R Base + LoRA SQuAD) | 277.454.594 | 512 tokens (arquitectura) | No declarados; ajuste aparente en inglés | No disponible | No publicado | HuggingFace, 0 descargas |
-| xlm-roberta-base | ~278M | 512 tokens | 100 | MIT (según su model card oficial) | Base preentrenada sin ajuste de QA | Ampliamente disponible en HuggingFace |
+| Este modelo (XLM-R Base + LoRA SQuAD) | 277.454.594 | 512 tokens (arquitectura) | No declarados; ajuste aparente en inglés | No disponible | No publicado | Hugging Face, 0 descargas |
+| xlm-roberta-base | ~278M | 512 tokens | 100 | MIT (según su model card oficial) | Base preentrenada sin ajuste de QA | Ampliamente disponible en Hugging Face |
 | bert-base-multilingual-cased | ~178M | 512 tokens | 104 | Apache 2.0 | Base preentrenada; requiere ajuste para QA | Ampliamente disponible |
 | distilbert-base-multilingual-cased | ~135M | 512 tokens | 104 | Apache 2.0 | Base destilada, menor precisión esperada | Ampliamente disponible |
 
 Los valores de parámetros, contexto y licencia de los tres modelos de referencia proceden de sus fichas públicas; no se dispone de comparación de rendimiento en QA entre este ajuste y sus alternativas, ya que el autor no ha publicado métricas.
 
 ## Limitaciones y advertencias
-- La model card es la plantilla automática de HuggingFace: no documenta datos de entrenamiento, hiperparámetros, evaluación ni procedencia del dataset. Cualquier uso en producción exige una evaluación propia previa.
+- La model card es la plantilla automática de Hugging Face: no documenta datos de entrenamiento, hiperparámetros, evaluación ni procedencia del dataset. Cualquier uso en producción exige una evaluación propia previa.
 - Licencia no declarada: sin licencia explícita, no hay autorización clara para uso comercial ni para redistribución. Es un riesgo legal relevante.
 - Sesgos: no evaluados. XLM-R Base se entrenó sobre CommonCrawl sin filtrado documentado en esta ficha, por lo que es previsible que herede sesgos sociales, geográficos y de representación lingüística. El ajuste sobre SQuAD, de dominio Wikipedia en inglés, puede sesgar las respuestas hacia ese registro.
 - Riesgo de alucinación: estructuralmente bajo en cuanto a invención de texto, porque el modelo solo puede devolver spans presentes en el contexto. Sin embargo, puede seleccionar un span incorrecto o irrelevante cuando la respuesta no está en el contexto o cuando la pregunta es ambigua, y el score de confianza no está calibrado.
@@ -91,7 +91,7 @@ Los valores de parámetros, contexto y licencia de los tres modelos de referenci
 - Fecha de creación registrada: 2026-09-20, la misma que la de actualización, lo que indica que no ha habido revisiones posteriores.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-seed-42-LoRA-mrg-v260920144253
+- Modelo en Hugging Face: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-seed-42-LoRA-mrg-v260920144253
 - Paper de la arquitectura base (XLM-R, Conneau et al.): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card (Lacoste et al., 2019): https://mlco2.github.io/impact
 - Repositorio, paper o demo del ajuste: no disponibles

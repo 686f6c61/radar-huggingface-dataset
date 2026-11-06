@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cxmplex/sn92-gen-g5f2`, publicado bajo la denominación "REAX SN92 generalist entry", es un modelo de lenguaje de gran tamano (26.085.330.160 parametros segun los pesos en safetensors) alojado en HuggingFace por el usuario `cxmplex`. La model card es extremadamente escueta: se limita a indicar que se trata de un "decision model for the REAX (SN92) generalist track", sin aportar detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades concretas. El tag `qwen3_5` sugiere que la arquitectura subyacente esta basada en la familia Qwen 3.5, aunque esta inferencia no se confirma en la documentacion disponible.
+El modelo `cxmplex/sn92-gen-g5f2`, publicado bajo la denominación "REAX SN92 generalist entry", es un modelo de lenguaje de gran tamano (26.085.330.160 parametros segun los pesos en safetensors) alojado en Hugging Face por el usuario `cxmplex`. La model card es extremadamente escueta: se limita a indicar que se trata de un "decision model for the REAX (SN92) generalist track", sin aportar detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades concretas. El tag `qwen3_5` sugiere que la arquitectura subyacente esta basada en la familia Qwen 3.5, aunque esta inferencia no se confirma en la documentacion disponible.
 
 El modelo se distribuye con licencia MIT, lo que en principio permite uso comercial sin restricciones adicionales, y los pesos estan en formato safetensors con un tamano de repositorio de 52,2 GB. La fecha de creacion (2026-10-29) y el bajo numero de descargas (7) indican que se trata de una publicacion muy reciente y con practicamente ninguna traccion en la comunidad. No hay informacion sobre idiomas soportados, pipeline de inferencia ni resultados de benchmarks.
 
@@ -86,5 +86,5 @@ La comparativa es orientativa: no hay datos de rendimiento del modelo evaluado q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxmplex/sn92-gen-g5f2
+- Hugging Face: https://huggingface.co/cxmplex/sn92-gen-g5f2
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp` es una política de difusión (diffusion policy) para control robótico de manipulación, publicada por el usuario `padiredd` en HuggingFace bajo la librería LeRobot (versión 0.6.1, fork `lerobot-cyclo` de ROBOTIS). El modelo resuelve una tarea concreta: que el brazo izquierdo del robot ROBOTIS FFW BG2 coja un bloque verde lima de 5x5x4 cm con un agujero pasante desde una mesa gris, en un entorno simulado con una placa de espuma en el borde lejano. No es un modelo de lenguaje: es un policy de aprendizaje por imitación que mapea observaciones (tres cámaras de 240x240 más un vector de estado propioceptivo de 22 dimensiones) a acciones de 16 dimensiones.
+`pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp` es una política de difusión (diffusion policy) para control robótico de manipulación, publicada por el usuario `padiredd` en Hugging Face bajo la librería LeRobot (versión 0.6.1, fork `lerobot-cyclo` de ROBOTIS). El modelo resuelve una tarea concreta: que el brazo izquierdo del robot ROBOTIS FFW BG2 coja un bloque verde lima de 5x5x4 cm con un agujero pasante desde una mesa gris, en un entorno simulado con una placa de espuma en el borde lejano. No es un modelo de lenguaje: es un policy de aprendizaje por imitación que mapea observaciones (tres cámaras de 240x240 más un vector de estado propioceptivo de 22 dimensiones) a acciones de 16 dimensiones.
 
 El entrenamiento se realizó íntegramente sobre 250 episodios simulados generados en Isaac Lab (Cyclo Lab) mediante un planificador scriptado con cinemática inversa, sin datos reales. La arquitectura es una diffusion policy con encoder ResNet18 y 287,5 millones de parámetros, entrenada durante 100 000 pasos con DDPM de 100 timesteps de entrenamiento y un horizonte de predicción de 64 pasos (32 acciones ejecutables). La relevancia actual reside en que ejemplifica el flujo estándar de LeRobot para políticas de manipulación con aumento de datos agresivo y robustez inyectada en el estado propioceptivo, un patrón habitual en investigación de sim-to-real.
 
@@ -72,7 +72,7 @@ No se han proporcionado modelos comparables en la información disponible. Como 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp | 287,5 M | No aplica (horizonte 64) | Apache-2.0 | HuggingFace (LeRobot) |
+| pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp | 287,5 M | No aplica (horizonte 64) | Apache-2.0 | Hugging Face (LeRobot) |
 | Alternativas LeRobot (ACT, TDMPC, VQ-BeT) | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,7 +88,7 @@ No se han proporcionado modelos comparables en la información disponible. Como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp
+- Modelo en Hugging Face: https://huggingface.co/padiredd/pick-cube-lime-sim-250-board-3cam-heavyaug-sn1deg-drop10-dp
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - Isaac Lab (entorno de simulación): https://github.com/isaac-sim/IsaacLab
 - ROBOTIS FFW BG2: no disponible en la información proporcionada

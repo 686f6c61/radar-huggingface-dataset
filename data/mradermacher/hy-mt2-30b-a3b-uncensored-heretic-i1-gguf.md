@@ -83,7 +83,7 @@ El Hy-MT2-30B-A3B destaca por su mayor longitud de contexto (8.192 tokens frente
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-uncensored-heretic-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Hy-MT2-30B-A3B-uncensored-heretic-i1-GGUF
 - Modelo base (versión uncensored): https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic
 - Repositorio oficial de Hy-MT2 en GitHub: https://github.com/Tencent-Hunyuan/Hy-MT2
 - Página del modelo en ModelScope: https://www.modelscope.cn/models/Tencent-Hunyuan/Hy-MT2-30B-A3B

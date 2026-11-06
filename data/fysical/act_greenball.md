@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fysical/act_greenball` es una politica de robotica (no un modelo de lenguaje) entrenada con el metodo Action Chunking with Transformers (ACT) mediante aprendizaje por imitacion. La publica el usuario `fysical` en HuggingFace usando la libreria LeRobot, y su funcion es controlar un brazo robotico de tipo `so_follower` para ejecutar una unica tarea manipulativa: coger una pelota verde y dejarla en una cesta ignorando dos pelotas rojas de distraccion.
+`fysical/act_greenball` es una politica de robotica (no un modelo de lenguaje) entrenada con el metodo Action Chunking with Transformers (ACT) mediante aprendizaje por imitacion. La publica el usuario `fysical` en Hugging Face usando la libreria LeRobot, y su funcion es controlar un brazo robotico de tipo `so_follower` para ejecutar una unica tarea manipulativa: coger una pelota verde y dejarla en una cesta ignorando dos pelotas rojas de distraccion.
 
 El modelo tiene 51.668.614 parametros y consume observaciones multimodales: el estado articular (vector de 6 dimensiones) y dos imagenes de 480x640 procedentes de dos camaras (`front` y `wrist`). Devuelve como salida un vector de accion de 6 dimensiones, es decir, comandos de articulacion para el brazo. La licencia es Apache 2.0 y los pesos se distribuyen en formato safetensors.
 
@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de datos numericos de otros modelo
 
 | Modelo | Parametros | Tipo de politica | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fysical/act_greenball` | 51.668.614 | ACT (CVAE + transformer, action chunking) | Pick-and-place de pelota verde con dos distractores rojos, robot `so_follower` | Apache 2.0 | Pesos en safetensors en HuggingFace, 0 descargas y 0 likes |
+| `fysical/act_greenball` | 51.668.614 | ACT (CVAE + transformer, action chunking) | Pick-and-place de pelota verde con dos distractores rojos, robot `so_follower` | Apache 2.0 | Pesos en safetensors en Hugging Face, 0 descargas y 0 likes |
 | ACT (metodo original, arXiv:2304.13705) | no disponible | ACT (CVAE + transformer, action chunking) | Multiples tareas manipulativas del articulo | no disponible | Codigo y resultados descritos en el articulo |
 | Diffusion Policy | no disponible | Politica generativa basada en difusion | Manipulacion visomotora | no disponible | no disponible |
 | SmolVLA | no disponible | Vision-language-action | Manipulacion guiada por lenguaje | no disponible | no disponible |
@@ -117,7 +117,7 @@ La comparacion relevante en terminos practicos es que `fysical/act_greenball` es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fysical/act_greenball
+- Modelo en Hugging Face: https://huggingface.co/fysical/act_greenball
 - Dataset de entrenamiento: https://huggingface.co/datasets/fysical/greenball_test
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=fysical/greenball_test
 - Articulo de ACT: https://huggingface.co/papers/2304.13705

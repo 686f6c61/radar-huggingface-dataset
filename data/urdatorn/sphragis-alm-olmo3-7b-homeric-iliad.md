@@ -78,7 +78,7 @@ La comparación con el modelo base es la más relevante: este modelo se diferenc
 
 ## Enlaces
 
-- [HuggingFace: Urdatorn/sphragis-alm-olmo3-7b-homeric-iliad](https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-homeric-iliad)
+- [Hugging Face: Urdatorn/sphragis-alm-olmo3-7b-homeric-iliad](https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-homeric-iliad)
 - [Dataset Sphragis](https://huggingface.co/datasets/Urdatorn/sphragis)
 - [Código de entrenamiento y puntuación (GitHub)](https://github.com/Urdatorn/sphragis_models)
 - [Modelo base: allenai/Olmo-3-1025-7B](https://huggingface.co/allenai/Olmo-3-1025-7B)

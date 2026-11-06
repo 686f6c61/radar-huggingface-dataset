@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`singhatharv/beit-multitask-scratch` es un repositorio de implementación de referencia publicado por el usuario singhatharv en HuggingFace, que combina una arquitectura BEiT (Bert pre-training of Image Transformers) con un módulo de fusión multitarea basado en descomposición de Tucker. El autor lo describe explícitamente como una "implementación funcional" de BEiT para multitarea en configuración `xlarge`, orientada a código transparente y pruebas de humo reproducibles, y no como un modelo entrenado ni evaluado. La model card indica de forma deliberada que no se reclama ninguna puntuación de benchmark.
+`singhatharv/beit-multitask-scratch` es un repositorio de implementación de referencia publicado por el usuario singhatharv en Hugging Face, que combina una arquitectura BEiT (Bert pre-training of Image Transformers) con un módulo de fusión multitarea basado en descomposición de Tucker. El autor lo describe explícitamente como una "implementación funcional" de BEiT para multitarea en configuración `xlarge`, orientada a código transparente y pruebas de humo reproducibles, y no como un modelo entrenado ni evaluado. La model card indica de forma deliberada que no se reclama ninguna puntuación de benchmark.
 
 El punto crítico para cualquier evaluador es que el archivo `model.safetensors` incluido es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado. Los metadatos declaran un total de 16.576 parámetros, cifra que resulta inconsistente con la escala `xlarge` anunciada en la configuración; esta discrepancia no se resuelve en la documentación disponible. El repositorio ocupa 0.0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -79,7 +79,7 @@ La información proporcionada no incluye datos de rendimiento de este repositori
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| singhatharv/beit-multitask-scratch | 16.576 según safetensors (configuración `xlarge` declarada) | No disponible | No disponible (sin evaluación) | Apache 2.0 | HuggingFace, 0 descargas |
+| singhatharv/beit-multitask-scratch | 16.576 según safetensors (configuración `xlarge` declarada) | No disponible | No disponible (sin evaluación) | Apache 2.0 | Hugging Face, 0 descargas |
 | BEiT base (referencia pública) | ~86 M | No aplica (visión) | No disponible en esta información | MIT en el repositorio original | Ampliamente disponible |
 | BEiT large (referencia pública) | ~304 M | No aplica (visión) | No disponible en esta información | MIT en el repositorio original | Ampliamente disponible |
 
@@ -96,11 +96,11 @@ La diferencia relevante no es de tamaño, sino de estado: los BEiT de referencia
 - Sesgos conocidos: no disponibles (no hay evaluación que los caracterice).
 - Riesgo de alucinación: no aplica en el sentido habitual al no haber pesos entrenados; cualquier salida sería ruido de inicialización.
 - Licencia Apache 2.0, permisiva para uso comercial del código y de los pesos distribuidos; el propio autor recuerda que deben revisarse aparte los términos de las fuentes de datos si se combina con datasets externos.
-- Las API de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que añade fricción de integración.
+- Las API de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que añade fricción de integración.
 - Cualquier resultado obtenido a partir de este código debe documentarse por separado de los valores por defecto del repositorio, tal como exige el README.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/singhatharv/beit-multitask-scratch
+- Página del modelo en Hugging Face: https://huggingface.co/singhatharv/beit-multitask-scratch
 - Ficheros del repositorio: `train.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - No se han encontrado enlaces adicionales relevantes: los resultados de la búsqueda web devuelven únicamente definiciones de diccionario del término "circumscribe" (Merriam-Webster, Cambridge Dictionary, Dictionary.com) sin relación alguna con este modelo. No hay paper, blog, repositorio auxiliar ni demo asociados en la información disponible.

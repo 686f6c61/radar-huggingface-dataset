@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`walkertyler96/trial-matching53` es un repositorio de HuggingFace publicado por el usuario walkertyler96 (identificado en su perfil como asistente de investigacion en un laboratorio de NLP) que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*, acompanada de un fichero de configuracion explicito y un checkpoint de inicializacion. El propio autor indica de forma explicita que **no se trata de un modelo entrenado ni de un release con resultados de benchmark**: el `model.safetensors` incluido es un punto de partida reproducible para *smoke tests*.
+`walkertyler96/trial-matching53` es un repositorio de Hugging Face publicado por el usuario walkertyler96 (identificado en su perfil como asistente de investigacion en un laboratorio de NLP) que contiene una implementacion propia de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*, acompanada de un fichero de configuracion explicito y un checkpoint de inicializacion. El propio autor indica de forma explicita que **no se trata de un modelo entrenado ni de un release con resultados de benchmark**: el `model.safetensors` incluido es un punto de partida reproducible para *smoke tests*.
 
 El dato mas relevante para cualquier evaluacion es la discrepancia entre lo que declara la model card y lo que contienen realmente los pesos. La configuracion describe la variante `huge` de DeiT, pero el recuento real de parametros del fichero safetensors es de 24.832 parametros, un orden de magnitud muy inferior al de cualquier DeiT utilizable. Ademas, el tamano del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 *likes*, lo que es coherente con un artefacto de prueba o un experimento interno no validado.
 
@@ -52,7 +52,7 @@ Respecto al entrenamiento, no hay informacion sobre volumen de tokens, composici
 - Prueba de humo de infraestructura (*smoke test*): el repositorio incluye `train.py` con un bloque `__main__` que genera un ejemplo de prueba. Sirve para verificar que un entorno de entrenamiento (PyTorch, safetensors, dependencias) carga pesos y ejecuta un paso hacia delante antes de lanzar un experimento real.
 - Punto de partida para investigacion en *matching*: un equipo que quiera reproducir o comparar arquitecturas de emparejamiento puede partir de esta configuracion (multi query attention, co attention, GroupNorm) y sustituir el checkpoint por uno entrenado con sus propios datos.
 - Replicacion de recetas de entrenamiento: `training_args.json` recoge una receta por defecto (Adam, schedule polinomial) utilizable como plantilla en experimentos controlados con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias.
-- Docencia y formacion: por su tamano (24.832 parametros) y su coste computacional practicamente nulo, es apto para ilustrar como se estructura un repositorio de modelo en HuggingFace (config, training args, safetensors, README).
+- Docencia y formacion: por su tamano (24.832 parametros) y su coste computacional practicamente nulo, es apto para ilustrar como se estructura un repositorio de modelo en Hugging Face (config, training args, safetensors, README).
 - Validacion de integraciones de carga de pesos: al ser una implementacion propia, requiere un adaptador explicito antes de usar APIs de carga automatica. Sirve para probar ese tipo de integracion en pipelines internos.
 - Base para experimentos de bajo coste en *matching* biomedico o de reclutamiento: el nombre del repositorio (`trial-matching53`) sugiere un contexto de emparejamiento de ensayos clinicos. La busqueda web devuelve la publicacion TrialMatchAI (Nature Communications), un sistema de recomendacion paciente-ensayo, aunque **no hay evidencia de vinculo directo entre ese trabajo y este repositorio**; cualquier uso en ese dominio exigiria reentrenamiento completo y validacion clinica.
 - No es adecuado para inferencia en produccion, atencion al cliente, generacion de codigo ni ninguna tarea generativa: el autor no reclama ninguna capacidad de este tipo.
@@ -76,7 +76,7 @@ No existe una comparativa significativa posible: este repositorio contiene un ch
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| walkertyler96/trial-matching53 | 24.832 (real en safetensors) | no disponible | sin benchmark declarado | apache-2.0 | publico en HuggingFace, 0 descargas |
+| walkertyler96/trial-matching53 | 24.832 (real en safetensors) | no disponible | sin benchmark declarado | apache-2.0 | publico en Hugging Face, 0 descargas |
 | DeiT-Tiny (referencia original) | ~5,7 M | no aplica (entrada de imagen fija) | resultados en ImageNet publicados en el articulo original | licencia del proyecto original | pesos oficiales publicados por los autores de DeiT |
 | DeiT-Small (referencia original) | ~22,1 M | no aplica (entrada de imagen fija) | resultados en ImageNet publicados en el articulo original | licencia del proyecto original | pesos oficiales publicados por los autores de DeiT |
 | DeiT-Base (referencia original) | ~86,6 M | no aplica (entrada de imagen fija) | resultados en ImageNet publicados en el articulo original | licencia del proyecto original | pesos oficiales publicados por los autores de DeiT |
@@ -90,14 +90,14 @@ No existe una comparativa significativa posible: este repositorio contiene un ch
 - No se declaran idiomas soportados. No hay evidencia de capacidades multilingues.
 - No se publica longitud de contexto ni formato de entrada esperado.
 - Restricciones de licencia: los pesos y el codigo se distribuyen bajo Apache 2.0, licencia permisiva que permite uso comercial. El propio autor advierte de que hay que revisar por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- Implementacion no estandar: al tratarse de un DeiT modificado (multi query attention, co attention, GroupNorm), las utilidades de carga automatica de HuggingFace no funcionaran sin un adaptador explicito.
+- Implementacion no estandar: al tratarse de un DeiT modificado (multi query attention, co attention, GroupNorm), las utilidades de carga automatica de Hugging Face no funcionaran sin un adaptador explicito.
 - El repositorio no incluye pesos GGUF ni versiones cuantizadas, lo que limita su uso con *runtimes* de inferencia ligeros.
 - Para cualquier publicacion de resultados derivada de este codigo, el autor recomienda conservar los registros de entrenamiento y las versiones del entorno, y documentar los resultados de un futuro checkpoint entrenado de forma separada de los valores por defecto aqui incluidos.
 - Cualquier uso en un dominio regulado (por ejemplo, emparejamiento de pacientes con ensayos clinicos) requeriria reentrenamiento con datos representativos, validacion externa y cumplimiento normativo; el repositorio actual no satisface ninguno de esos requisitos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walkertyler96/trial-matching53
-- Perfil del autor en HuggingFace: https://huggingface.co/walkertyler96/models
+- Modelo en Hugging Face: https://huggingface.co/walkertyler96/trial-matching53
+- Perfil del autor en Hugging Face: https://huggingface.co/walkertyler96/models
 - Publicacion TrialMatchAI (Nature Communications), citada como referencia de dominio y no como origen confirmado de este repositorio: https://www.nature.com/articles/s41467-026-70509-w
 - Ficheros incluidos en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`

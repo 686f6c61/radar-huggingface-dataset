@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ricciix82/beit-classification-tryout` es un repositorio de HuggingFace publicado por el usuario Ricciix82 que contiene una implementación propia y minimalista de una arquitectura BeiT (BERT Pre-Training of Image Transformers) orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos útiles: la propia model card lo describe explícitamente como un "punto de partida reproducible" y aclara que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`Ricciix82/beit-classification-tryout` es un repositorio de Hugging Face publicado por el usuario Ricciix82 que contiene una implementación propia y minimalista de una arquitectura BeiT (BERT Pre-Training of Image Transformers) orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release con pesos útiles: la propia model card lo describe explícitamente como un "punto de partida reproducible" y aclara que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El dato más relevante es el tamaño real declarado en el repositorio: 24.832 parámetros totales, una cifra mínima que contrasta con la etiqueta "xlarge" que aparece en la configuración de arquitectura. El repositorio ocupa 0,0 GB y acumula 12 descargas y 0 likes desde su creación el 17 de septiembre de 2026. Se distribuye bajo licencia BSD-3-Clause y en formato safetensors.
 
@@ -25,7 +25,7 @@ Su relevancia es, por tanto, puramente didáctica o de andamiaje: sirve como esq
 | Fusión | tensor fusion |
 | Activación | approx gelu |
 | Normalización | rmsnorm |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 12 / 0 |
 | Fecha de creación | 2026-09-17 |
@@ -45,7 +45,7 @@ En cuanto al entrenamiento, no se ha completado ninguno. La model card indica qu
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; no se declara ningún idioma.
 - Capacidad especial declarada: ninguna. La model card menciona únicamente requisitos de evaluación (split etiquetado específico de la tarea, métrica por tarea, al menos tres semillas y una baseline de capacidad equivalente).
-- Nota de integración: al ser una implementación personalizada, las APIs de carga automática genéricas de HuggingFace requieren un adaptador explícito antes de su uso.
+- Nota de integración: al ser una implementación personalizada, las APIs de carga automática genéricas de Hugging Face requieren un adaptador explícito antes de su uso.
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos en la información proporcionada. Como refer
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ricciix82/beit-classification-tryout | 24.832 | no disponible | sin benchmark declarado | bsd-3-clause | HuggingFace, 12 descargas |
+| Ricciix82/beit-classification-tryout | 24.832 | no disponible | sin benchmark declarado | bsd-3-clause | Hugging Face, 12 descargas |
 | BeiT-base (referencia de la familia) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | BeiT-large (referencia de la familia) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -89,11 +89,11 @@ No se dispone de datos comparativos en la información proporcionada. Como refer
 - Sesgos conocidos: la model card señala que el checkpoint no ha sido auditado en equidad; no se puede afirmar ni descartar sesgo alguno.
 - Idiomas y contexto: no disponibles; no se declara idioma ni longitud de contexto, algo coherente con una tarea de clasificación de imágenes.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial con las obligaciones habituales de conservar el aviso de copyright y la cláusula de exención de responsabilidad. La propia model card advierte de revisar por separado los términos de los datos de origen si se emplean datasets externos.
-- Integración en producción: las APIs automáticas de HuggingFace no cargan el modelo sin un adaptador explícito; no es un artefacto plug-and-play.
+- Integración en producción: las APIs automáticas de Hugging Face no cargan el modelo sin un adaptador explícito; no es un artefacto plug-and-play.
 - Los resultados de una hipotética versión entrenada deberán documentarse de forma separada a los valores por defecto incluidos aquí.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ricciix82/beit-classification-tryout
+- Repositorio en Hugging Face: https://huggingface.co/Ricciix82/beit-classification-tryout
 - Ficheros incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles. Las búsquedas web realizadas no devolvieron ninguna fuente relacionada con el modelo; los únicos resultados obtenidos fueron páginas de soporte de Windows sin relación alguna con este repositorio.

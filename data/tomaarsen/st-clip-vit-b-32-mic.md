@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-clip-ViT-B-32-mic` es un artefacto de prueba publicado en HuggingFace por el desarrollador tomaarsen, colaborador habitual del ecosistema `sentence-transformers`. No se trata de un modelo entrenado para producir embeddings útiles, sino de una versión "slim" (reducida) del modelo `sentence-transformers/clip-ViT-B-32`, generada con fines de test de integración. La model card lo describe explícitamente como un "fixture" cuyo pipeline se ha encogido y cuyos pesos son aleatorios, por lo que no representan la calidad de recuperación del modelo original.
+`tomaarsen/st-clip-ViT-B-32-mic` es un artefacto de prueba publicado en Hugging Face por el desarrollador tomaarsen, colaborador habitual del ecosistema `sentence-transformers`. No se trata de un modelo entrenado para producir embeddings útiles, sino de una versión "slim" (reducida) del modelo `sentence-transformers/clip-ViT-B-32`, generada con fines de test de integración. La model card lo describe explícitamente como un "fixture" cuyo pipeline se ha encogido y cuyos pesos son aleatorios, por lo que no representan la calidad de recuperación del modelo original.
 
 El propósito del repositorio es servir como contrato ejecutable: incluye un manifiesto de integración (`integration.json`), documentación de uso con Transformers, un directorio de expectativas del framework y metadatos de procedencia del fixture (`build.json`). Es decir, permite a los mantenedores de librerías verificar que sus pipelines de carga, tokenización e inferencia funcionan correctamente con la arquitectura CLIP ViT-B/32 sin necesidad de descargar los pesos completos.
 
@@ -45,7 +45,7 @@ Este repositorio concreto no contiene un modelo entrenado: la model card indica 
 - Pruebas de regresión en frameworks de inferencia: comprobar que un backend (por ejemplo, un servidor de embeddings) acepta y sirve correctamente el formato safetensors reducido.
 - Verificación de contratos de integración: consumir `integration.json` y el directorio `integrations/transformers/expectations` para validar que la salida del modelo cumple las expectativas documentadas.
 - Desarrollo de herramientas de inspección de model cards: usar este repositorio como ejemplo de artefacto con metadatos de procedencia (`build.json`) para probar parsers y validadores.
-- Docencia y demostración de anatomía de un repositorio HuggingFace: ilustrar la diferencia entre pesos reales y fixtures, y cómo se estructura un contrato de integración reproducible.
+- Docencia y demostración de anatomía de un repositorio Hugging Face: ilustrar la diferencia entre pesos reales y fixtures, y cómo se estructura un contrato de integración reproducible.
 
 ## Benchmarks y rendimiento
 
@@ -81,7 +81,7 @@ La comparación relevante es que este repositorio es un derivado reducido del se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tomaarsen/st-clip-ViT-B-32-mic
+- Repositorio Hugging Face: https://huggingface.co/tomaarsen/st-clip-ViT-B-32-mic
 - Modelo base: https://huggingface.co/sentence-transformers/clip-ViT-B-32
 - Documentación de procedencia del fixture (enlace citado en la model card): https://huggingface-mic-mic-coverage.static.hf.space/shrink/st-clip-ViT-B-32-mic.html
 - Manifiesto de integración: https://huggingface.co/tomaarsen/st-clip-ViT-B-32-mic/blob/main/integration.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mane17/mane es un repositorio de modelo alojado en HuggingFace por el usuario mane17. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos basicos del repositorio: identificador, autor, fecha de creacion y actualizacion, y la etiqueta region:us. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento, licencia ni idiomas soportados.
+mane17/mane es un repositorio de modelo alojado en Hugging Face por el usuario mane17. En el momento de redactar esta ficha, la informacion publica disponible se limita a los metadatos basicos del repositorio: identificador, autor, fecha de creacion y actualizacion, y la etiqueta region:us. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento, licencia ni idiomas soportados.
 
 El repositorio fue creado el 17 de septiembre de 2026 y actualizado el mismo dia, lo que indica que no ha recibido mantenimiento posterior ni actualizaciones de pesos, documentacion o model card. Acumula 0 descargas y 1 like, por lo que no existe evidencia de adopcion por parte de la comunidad ni de validacion independiente de su comportamiento.
 
@@ -79,7 +79,7 @@ No es posible establecer una comparativa con otros modelos porque se desconocen 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mane17/mane | no disponible | no disponible | no disponible | repositorio publico en HuggingFace |
+| mane17/mane | no disponible | no disponible | no disponible | repositorio publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No es posible establecer una comparativa con otros modelos porque se desconocen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mane17/mane
+- Hugging Face: https://huggingface.co/mane17/mane
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o informe tecnico: no disponible

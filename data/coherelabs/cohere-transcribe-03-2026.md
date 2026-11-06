@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Cohere Transcribe (cohere-transcribe-03-2026) es un modelo de reconocimiento automático del habla (ASR) desarrollado por Cohere Labs, liberado como código abierto bajo licencia Apache 2.0. Se trata de un modelo dedicado de audio a texto con 2.065.804.048 parámetros (aproximadamente 2,07 mil millones), diseñado para ofrecer transcripción precisa en 14 idiomas. El modelo se publicó en marzo de 2026 y ha acumulado más de 500.000 descargas en HuggingFace, lo que refleja un interés considerable por parte de la comunidad.
+Cohere Transcribe (cohere-transcribe-03-2026) es un modelo de reconocimiento automático del habla (ASR) desarrollado por Cohere Labs, liberado como código abierto bajo licencia Apache 2.0. Se trata de un modelo dedicado de audio a texto con 2.065.804.048 parámetros (aproximadamente 2,07 mil millones), diseñado para ofrecer transcripción precisa en 14 idiomas. El modelo se publicó en marzo de 2026 y ha acumulado más de 500.000 descargas en Hugging Face, lo que refleja un interés considerable por parte de la comunidad.
 
-El modelo resuelve el problema de la transcripción automática de voz con un equilibrio entre precisión y eficiencia. Según la información oficial, Cohere Transcribe presenta un factor de tiempo real hasta tres veces más rápido que otros modelos ASR dedicados del mismo rango de tamaño, lo que lo hace adecuado para cargas de trabajo de producción. Su arquitectura concreta no se ha detallado públicamente, pero se sabe que es un modelo de 2B parámetros con entrada de audio y salida de texto, integrable con el ecosistema de HuggingFace Transformers y compatible con despliegue en vLLM para inferencia en línea.
+El modelo resuelve el problema de la transcripción automática de voz con un equilibrio entre precisión y eficiencia. Según la información oficial, Cohere Transcribe presenta un factor de tiempo real hasta tres veces más rápido que otros modelos ASR dedicados del mismo rango de tamaño, lo que lo hace adecuado para cargas de trabajo de producción. Su arquitectura concreta no se ha detallado públicamente, pero se sabe que es un modelo de 2B parámetros con entrada de audio y salida de texto, integrable con el ecosistema de Hugging Face Transformers y compatible con despliegue en vLLM para inferencia en línea.
 
-La relevancia de este lanzamiento radica en que Cohere, conocida por sus modelos de lenguaje, entra en el espacio ASR con una propuesta abierta y eficiente, compitiendo directamente con alternativas como Whisper de OpenAI. El acceso al modelo es restringido (gated) en HuggingFace, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo, aunque la licencia base es Apache 2.0.
+La relevancia de este lanzamiento radica en que Cohere, conocida por sus modelos de lenguaje, entra en el espacio ASR con una propuesta abierta y eficiente, compitiendo directamente con alternativas como Whisper de OpenAI. El acceso al modelo es restringido (gated) en Hugging Face, lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo, aunque la licencia base es Apache 2.0.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ La relevancia de este lanzamiento radica en que Cohere, conocida por sus modelos
 | Longitud de contexto | No disponible (no se especifica la duración máxima de audio soportada) |
 | Tipos de cuantizacion | No disponible (no se han publicado versiones cuantizadas oficiales) |
 | Idiomas soportados | 14: árabe, alemán, griego, inglés, español, francés, italiano, japonés, coreano, neerlandés, polaco, portugués, vietnamita y chino |
-| Licencia | Apache 2.0 (con acceso gated en HuggingFace) |
+| Licencia | Apache 2.0 (con acceso gated en Hugging Face) |
 | Formato de pesos | Safetensors |
 
 ## Arquitectura y entrenamiento
@@ -32,7 +32,7 @@ No se ha publicado información detallada sobre la arquitectura interna del mode
 - Eficiencia computacional: factor de tiempo real hasta tres veces más rápido que otros modelos ASR dedicados del mismo rango de tamaño, según la información oficial.
 - Optimización para inferencia offline a través del método `transcribe()`, que también permite controlar el batching para un uso eficiente de los recursos.
 - Compatibilidad con despliegue en línea mediante vLLM, lo que facilita su integración en servicios de transcripción en tiempo real.
-- Integración con el ecosistema HuggingFace Transformers, lo que permite su uso con las herramientas estándar de la librería.
+- Integración con el ecosistema Hugging Face Transformers, lo que permite su uso con las herramientas estándar de la librería.
 
 ## Casos de uso
 
@@ -46,14 +46,14 @@ No se ha publicado información detallada sobre la arquitectura interna del mode
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Aunque el modelo aparece en el leaderboard de ASR de HuggingFace (hf-asr-leaderboard) y la documentación oficial afirma una precisión "de primer nivel" en 14 idiomas, no se proporcionan cifras concretas de métricas como WER (Word Error Rate) o comparaciones numéricas con otros modelos. Tampoco se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GSM8K, que no son aplicables a un modelo de transcripción. Se recomienda consultar el leaderboard de ASR de HuggingFace para obtener datos de evaluación actualizados.
+No se han publicado resultados de benchmarks en la información disponible. Aunque el modelo aparece en el leaderboard de ASR de Hugging Face (hf-asr-leaderboard) y la documentación oficial afirma una precisión "de primer nivel" en 14 idiomas, no se proporcionan cifras concretas de métricas como WER (Word Error Rate) o comparaciones numéricas con otros modelos. Tampoco se han publicado resultados en benchmarks estándar como MMLU, HumanEval o GSM8K, que no son aplicables a un modelo de transcripción. Se recomienda consultar el leaderboard de ASR de Hugging Face para obtener datos de evaluación actualizados.
 
 ## Requisitos de hardware
 
 - El modelo tiene 2.065.804.048 parámetros, lo que en precisión FP32 ocuparía aproximadamente 8,3 GB de memoria. Con cuantización a 8 bits, el peso se reduciría a unos 2,1 GB, y a 4 bits a unos 1 GB, aunque no se han publicado versiones cuantizadas oficiales.
 - No se dispone de información oficial sobre la VRAM mínima requerida. Sin embargo, por su tamaño, es plausible que pueda ejecutarse en GPUs de consumo con al menos 8 GB de VRAM si se aplica cuantización, aunque no hay garantías.
 - No se han especificado GPUs recomendadas por el fabricante. Para inferencia en línea, se menciona la integración con vLLM, que suele requerir GPUs con suficiente memoria, como A100, H100 o RTX 4090, dependiendo del tamaño del lote y la longitud del audio.
-- Opciones de despliegue: el modelo es compatible con HuggingFace Transformers, lo que permite su uso en pipelines estándar. Para inferencia offline, se recomienda el método `transcribe()` incluido en el repositorio. Para inferencia en línea, se sugiere la integración con vLLM. No se mencionan otras herramientas como llama.cpp u Ollama, que están orientadas a modelos de lenguaje y no a ASR.
+- Opciones de despliegue: el modelo es compatible con Hugging Face Transformers, lo que permite su uso en pipelines estándar. Para inferencia offline, se recomienda el método `transcribe()` incluido en el repositorio. Para inferencia en línea, se sugiere la integración con vLLM. No se mencionan otras herramientas como llama.cpp u Ollama, que están orientadas a modelos de lenguaje y no a ASR.
 - No se han publicado datos de latencia o throughput específicos. La afirmación de un factor de tiempo real hasta tres veces superior a otros modelos del mismo tamaño sugiere un rendimiento competitivo, pero sin cifras concretas.
 
 ## Comparativa con modelos similares
@@ -62,16 +62,16 @@ No se dispone de datos de comparación directa con otros modelos ASR en la infor
 
 | Modelo | Parámetros | Idiomas | Licencia | Acceso |
 |---|---|---|---|---|
-| Cohere Transcribe (2026) | 2,07B | 14 | Apache 2.0 | Gated en HuggingFace |
+| Cohere Transcribe (2026) | 2,07B | 14 | Apache 2.0 | Gated en Hugging Face |
 | Whisper large-v3 (OpenAI) | 1,55B | 99 | MIT | Abierto |
 | Whisper large-v2 (OpenAI) | 1,55B | 99 | MIT | Abierto |
 | Wav2Vec2-XLSR (Meta) | 0,3B | 128 | Apache 2.0 | Abierto |
 
-Cohere Transcribe se sitúa en un rango de tamaño similar a Whisper large, pero con un número de idiomas significativamente menor (14 frente a 99). Su ventaja declarada es la eficiencia (hasta 3 veces más rápido que otros modelos del mismo tamaño), aunque no se han publicado benchmarks que lo confirmen. La licencia Apache 2.0 es permisiva para uso comercial, pero el acceso gated en HuggingFace añade un paso adicional. Whisper, por su parte, tiene una cobertura lingüística mucho más amplia y una comunidad de usuarios más extensa, aunque su eficiencia puede ser inferior en algunos escenarios.
+Cohere Transcribe se sitúa en un rango de tamaño similar a Whisper large, pero con un número de idiomas significativamente menor (14 frente a 99). Su ventaja declarada es la eficiencia (hasta 3 veces más rápido que otros modelos del mismo tamaño), aunque no se han publicado benchmarks que lo confirmen. La licencia Apache 2.0 es permisiva para uso comercial, pero el acceso gated en Hugging Face añade un paso adicional. Whisper, por su parte, tiene una cobertura lingüística mucho más amplia y una comunidad de usuarios más extensa, aunque su eficiencia puede ser inferior en algunos escenarios.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como "gated" en HuggingFace, lo que obliga a los usuarios a aceptar condiciones específicas antes de poder descargarlo. Esto puede suponer una barrera para su adopción en entornos corporativos que requieran revisión legal previa.
+- Acceso restringido: el modelo está marcado como "gated" en Hugging Face, lo que obliga a los usuarios a aceptar condiciones específicas antes de poder descargarlo. Esto puede suponer una barrera para su adopción en entornos corporativos que requieran revisión legal previa.
 - Cobertura lingüística limitada: aunque soporta 14 idiomas, no cubre todos los dialectos ni variantes regionales. La precisión puede degradarse con acentos no estándar o ruido de fondo intenso, aunque no se han publicado estudios al respecto.
 - Riesgo de alucinación: como todo modelo ASR, puede generar texto que no corresponde al audio original, especialmente en segmentos con baja calidad de sonido o solapamiento de voces. No se han documentado tasas de error específicas.
 - Sin información sobre entrenamiento: la falta de detalles sobre los datos de entrenamiento impide evaluar posibles sesgos demográficos o culturales en el reconocimiento del habla. Es recomendable realizar pruebas en el dominio de uso previsto.
@@ -81,7 +81,7 @@ Cohere Transcribe se sitúa en un rango de tamaño similar a Whisper large, pero
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
+- Página del modelo en Hugging Face: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
 - Blog de anuncio de Cohere: https://cohere.com/blog/transcribe
 - Documentación oficial de Cohere Transcribe: https://docs.cohere.com/docs/transcribe
 - Repositorio de ejemplo (no oficial) en GitHub: https://github.com/jasonclaw001/cohere-transcribe-03-2026

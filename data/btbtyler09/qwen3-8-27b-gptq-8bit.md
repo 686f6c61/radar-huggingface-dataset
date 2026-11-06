@@ -85,7 +85,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (p.ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/btbtyler09/Qwen3.8-27B-GPTQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/btbtyler09/Qwen3.8-27B-GPTQ-8bit
 - Modelo base (Qwen/Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante 4-bit FOEM: https://huggingface.co/btbtyler09/Qwen3.8-27B-GPTQ-4bit
 - Repositorio GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

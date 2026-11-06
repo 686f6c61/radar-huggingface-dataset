@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YuBin103/pick_and_place_0905_diffusion | Diffusion Policy | 277.840.246 | No aplica | Apache-2.0 | HuggingFace |
-| YuBin103/pick_and_place_0905_act | ACT (Action Chunking Transformer) | No disponible | No aplica | No disponible | HuggingFace |
+| YuBin103/pick_and_place_0905_diffusion | Diffusion Policy | 277.840.246 | No aplica | Apache-2.0 | Hugging Face |
+| YuBin103/pick_and_place_0905_act | ACT (Action Chunking Transformer) | No disponible | No aplica | No disponible | Hugging Face |
 
 No se han publicado resultados de benchmarks comparativos entre ambos modelos en la información disponible.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks comparativos entre ambos modelos en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YuBin103/pick_and_place_0905_diffusion
+- Modelo en Hugging Face: https://huggingface.co/YuBin103/pick_and_place_0905_diffusion
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

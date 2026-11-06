@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mh-fox_h2_b_s2` es un fine-tuning del modelo `unsloth/Qwen2.5-3B-Instruct`, desarrollado por el usuario Uigyu. Se trata de un ajuste fino realizado con las librerías Unsloth y TRL de HuggingFace, lo que indica un proceso de entrenamiento optimizado para velocidad. El modelo mantiene la arquitectura Qwen2 de 3B parámetros y está licenciado bajo Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Aunque no se especifica el propósito concreto del ajuste, el nombre del repositorio sugiere una posible especialización en un dominio particular (posiblemente relacionado con "fox" o "h2"), pero no hay documentación al respecto. El modelo está pensado para generación de texto en inglés y se distribuye en formato safetensors, con un tamaño de repositorio de 0.1 GB, lo que indica que los pesos están cuantizados o que se trata de un adaptador LoRA.
+El modelo `Uigyu/qwen_2.5_3b_mh-fox_h2_b_s2` es un fine-tuning del modelo `unsloth/Qwen2.5-3B-Instruct`, desarrollado por el usuario Uigyu. Se trata de un ajuste fino realizado con las librerías Unsloth y TRL de Hugging Face, lo que indica un proceso de entrenamiento optimizado para velocidad. El modelo mantiene la arquitectura Qwen2 de 3B parámetros y está licenciado bajo Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Aunque no se especifica el propósito concreto del ajuste, el nombre del repositorio sugiere una posible especialización en un dominio particular (posiblemente relacionado con "fox" o "h2"), pero no hay documentación al respecto. El modelo está pensado para generación de texto en inglés y se distribuye en formato safetensors, con un tamaño de repositorio de 0.1 GB, lo que indica que los pesos están cuantizados o que se trata de un adaptador LoRA.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `Uigyu/qwen_2.5_3b_mh-fox_h2_b_s2` es un fine-tuning del modelo `unslo
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion por ventana deslizante y normalizacion RMS. El entrenamiento se realizo mediante fine-tuning del checkpoint `unsloth/Qwen2.5-3B-Instruct` usando la libreria Unsloth, que optimiza el proceso de entrenamiento con kernels eficientes, y la libreria TRL de HuggingFace para el pipeline de aprendizaje por refuerzo o fine-tuning supervisado. No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens utilizados ni la metodologia especifica (por ejemplo, SFT, DPO o RLHF). El nombre del repositorio sugiere una posible especializacion en un dominio concreto, pero no hay documentacion adicional que lo confirme.
+El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion por ventana deslizante y normalizacion RMS. El entrenamiento se realizo mediante fine-tuning del checkpoint `unsloth/Qwen2.5-3B-Instruct` usando la libreria Unsloth, que optimiza el proceso de entrenamiento con kernels eficientes, y la libreria TRL de Hugging Face para el pipeline de aprendizaje por refuerzo o fine-tuning supervisado. No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens utilizados ni la metodologia especifica (por ejemplo, SFT, DPO o RLHF). El nombre del repositorio sugiere una posible especializacion en un dominio concreto, pero no hay documentacion adicional que lo confirme.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se dispone de informacion sobre modelos comparables. El modelo base Qwen2.5-3
 
 ## Enlaces
 
-- [Pagina del modelo en HuggingFace](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-fox_h2_b_s2)
+- [Pagina del modelo en Hugging Face](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-fox_h2_b_s2)
 - [Modelo base: unsloth/Qwen2.5-3B-Instruct](https://huggingface.co/unsloth/Qwen2.5-3B-Instruct)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
-- [Libreria TRL de HuggingFace](https://github.com/huggingface/trl)
+- [Libreria TRL de Hugging Face](https://github.com/huggingface/trl)

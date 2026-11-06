@@ -87,12 +87,12 @@ La model card lista otros drafters GGUF de la misma familia DSpark distribuidos 
 - Idiomas: no declarados para el drafter; el rendimiento multilingue queda supeditado al objetivo y, en la practica, las tasas de aceptacion del borrador pueden degradarse en idiomas poco representados en su entrenamiento.
 - Sesgos y alucinacion: el drafter no introduce sesgos ni alucinaciones por si mismo porque cada token se verifica, pero hereda por completo el comportamiento del modelo objetivo al que se empareja.
 - Ausencia de datos de validacion: 0 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados en este repositorio y sin verificacion independiente de las tasas de aceptacion.
-- Trazabilidad: las fechas de creacion y actualizacion que muestra HuggingFace (4 y 5 de octubre de 2026) son posteriores a la fecha habitual de consulta, lo que conviene tener en cuenta al auditar el repositorio.
+- Trazabilidad: las fechas de creacion y actualizacion que muestra Hugging Face (4 y 5 de octubre de 2026) son posteriores a la fecha habitual de consulta, lo que conviene tener en cuenta al auditar el repositorio.
 - Recorte silencioso de parametros: `--spec-draft-n-max` se limita al tamano de bloque del sidecar (8), de modo que valores superiores no tendran efecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rasyosef/Llama-3.2-1B-Instruct-DSpark-GGUF
+- Modelo en Hugging Face: https://huggingface.co/rasyosef/Llama-3.2-1B-Instruct-DSpark-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/rasyosef/Llama-3.2-1B-Instruct-DSpark
 - Objetivo sugerido (Llama-3.2-1B-Instruct GGUF): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-GGUF
 - Modelo objetivo original: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct

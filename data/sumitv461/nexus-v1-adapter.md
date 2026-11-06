@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sumitv461/nexus-v1-adapter` aloja un adaptador para transformers, subido a HuggingFace el 27 de agosto de 2026. El nombre sugiere que se trata de un adaptador (posiblemente un LoRA o similar) destinado a ajustar un modelo base, pero la model card es una plantilla vacía generada automáticamente, sin información sobre el modelo base, la arquitectura, el entrenamiento o el propósito. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, con la etiqueta `endpoints_compatible` que indica compatibilidad con la API de inferencia de HuggingFace.
+El repositorio `sumitv461/nexus-v1-adapter` aloja un adaptador para transformers, subido a Hugging Face el 27 de agosto de 2026. El nombre sugiere que se trata de un adaptador (posiblemente un LoRA o similar) destinado a ajustar un modelo base, pero la model card es una plantilla vacía generada automáticamente, sin información sobre el modelo base, la arquitectura, el entrenamiento o el propósito. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors, con la etiqueta `endpoints_compatible` que indica compatibilidad con la API de inferencia de Hugging Face.
 
 La relevancia de este adaptador es, por ahora, indeterminada. No hay documentación, métricas, ejemplos de uso ni datos de evaluación. La etiqueta `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, pero no implica que el modelo esté relacionado con ese trabajo. En su estado actual, el repositorio no ofrece información suficiente para evaluar su utilidad técnica o científica.
 
@@ -21,7 +21,7 @@ La relevancia de este adaptador es, por ahora, indeterminada. No hay documentaci
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del adaptador. La model card no especifica el modelo base sobre el que se aplica, ni el tipo de adaptación (LoRA, adaptadores de atención, etc.). Tampoco se documentan los datos de entrenamiento, el número de pasos, el régimen de precisión ni ninguna técnica de optimización. La única referencia técnica es la etiqueta `transformers`, que indica que el adaptador es compatible con la librería homónima, y `endpoints_compatible`, que sugiere que puede cargarse en la infraestructura de inferencia de HuggingFace. No hay evidencia de innovaciones técnicas ni de procedimientos de alineación como RLHF o DPO.
+No se dispone de información sobre la arquitectura del adaptador. La model card no especifica el modelo base sobre el que se aplica, ni el tipo de adaptación (LoRA, adaptadores de atención, etc.). Tampoco se documentan los datos de entrenamiento, el número de pasos, el régimen de precisión ni ninguna técnica de optimización. La única referencia técnica es la etiqueta `transformers`, que indica que el adaptador es compatible con la librería homónima, y `endpoints_compatible`, que sugiere que puede cargarse en la infraestructura de inferencia de Hugging Face. No hay evidencia de innovaciones técnicas ni de procedimientos de alineación como RLHF o DPO.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Requisitos de hardware
 
-Dado el tamaño del repositorio (0,1 GB), el adaptador es ligero y probablemente pueda cargarse en cualquier GPU con al menos 2 GB de VRAM, o incluso en CPU. Sin embargo, al desconocer el modelo base al que se acopla, no es posible estimar los requisitos reales de inferencia. El adaptador en sí no requiere hardware especializado, pero su uso práctico dependerá del modelo completo. Las opciones de despliegue incluyen la API de HuggingFace (por la etiqueta `endpoints_compatible`), así como bibliotecas como transformers, vLLM o llama.cpp, siempre que se conozca el modelo base. No hay datos de latencia ni throughput.
+Dado el tamaño del repositorio (0,1 GB), el adaptador es ligero y probablemente pueda cargarse en cualquier GPU con al menos 2 GB de VRAM, o incluso en CPU. Sin embargo, al desconocer el modelo base al que se acopla, no es posible estimar los requisitos reales de inferencia. El adaptador en sí no requiere hardware especializado, pero su uso práctico dependerá del modelo completo. Las opciones de despliegue incluyen la API de Hugging Face (por la etiqueta `endpoints_compatible`), así como bibliotecas como transformers, vLLM o llama.cpp, siempre que se conozca el modelo base. No hay datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
 
@@ -54,6 +54,6 @@ No disponible. No se conocen adaptadores comparables con los que establecer una 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sumitv461/nexus-v1-adapter
+- Repositorio en Hugging Face: https://huggingface.co/sumitv461/nexus-v1-adapter
 - Referencia al artículo de Lacoste et al. (2019) sobre emisiones de carbono: https://arxiv.org/abs/1910.09700
 - Resultados de búsqueda web no concluyentes: un proyecto "Nexus V1" de generación de vídeo (https://comfyforge.pro/model/?slug=nexus-v1-archetype-trained-wan2-1-1-3b-finetune) y un repositorio "NEXUS v1 OMEGA" (https://github.com/sachin4208/nexus/tree/main), ambos sin relación verificable con este adaptador.

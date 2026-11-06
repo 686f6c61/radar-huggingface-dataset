@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `zSQ2WSA/MyAwesomeModel-TestRepository` es un repositorio de prueba en HuggingFace que no contiene pesos de modelo reales (tamano del repositorio: 0.0 GB). Publicado por el usuario zSQ2WSA bajo licencia MIT, el repositorio incluye una model card que describe un hipotetico modelo llamado "MyAwesomeModel" con capacidades de razonamiento, generacion de codigo y soporte de function calling, pero sin proporcionar ninguna especificacion tecnica verificable.
+El repositorio `zSQ2WSA/MyAwesomeModel-TestRepository` es un repositorio de prueba en Hugging Face que no contiene pesos de modelo reales (tamano del repositorio: 0.0 GB). Publicado por el usuario zSQ2WSA bajo licencia MIT, el repositorio incluye una model card que describe un hipotetico modelo llamado "MyAwesomeModel" con capacidades de razonamiento, generacion de codigo y soporte de function calling, pero sin proporcionar ninguna especificacion tecnica verificable.
 
 La model card presenta afirmaciones sobre una supuesta mejora de rendimiento en razonamiento (por ejemplo, un aumento de precision del 70% al 87.5% en el test AIME 2025) y tablas de benchmarks con categorias genericas, pero no se especifican arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. Los resultados de busqueda web revelan multiples repositorios similares con el mismo nombre y contenido duplicado, lo que sugiere que se trata de contenido de prueba o plantillas sin un modelo real detras.
 
@@ -70,7 +70,7 @@ No disponible. No existe informacion suficiente para comparar este repositorio c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zSQ2WSA/MyAwesomeModel-TestRepository
+- Repositorio Hugging Face: https://huggingface.co/zSQ2WSA/MyAwesomeModel-TestRepository
 - Repositorio duplicado (wetqryhq): https://huggingface.co/wetqryhq/MyAwesomeModel-TestRepo
 - Repositorio duplicado (dfdfdgghh677): https://huggingface.co/dfdfdgghh677/MyAwesomeModel-TestRepo
 - Repositorio duplicado (sad2DSAD12): https://huggingface.co/sad2DSAD12/MyAwesomeModel-TestRepository

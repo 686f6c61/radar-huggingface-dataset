@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenSystemOne-ModernBERT-base-v0.1 es un clasificador de tipo "System One" publicado por el usuario udaykamath en HuggingFace. Se trata de un modelo de 156.692.741 parametros construido como cross-encoder sobre el backbone tasksource/ModernBERT-base-nli, cuyo objetivo es responder preguntas tipadas sobre un contexto y devolver probabilidades calibradas, no texto generado. Admite tres tipos de pregunta: Noul (si/no), Choice (elegir una opcion entre varias) y Score (escala ordinal), y varias preguntas por llamada.
+OpenSystemOne-ModernBERT-base-v0.1 es un clasificador de tipo "System One" publicado por el usuario udaykamath en Hugging Face. Se trata de un modelo de 156.692.741 parametros construido como cross-encoder sobre el backbone tasksource/ModernBERT-base-nli, cuyo objetivo es responder preguntas tipadas sobre un contexto y devolver probabilidades calibradas, no texto generado. Admite tres tipos de pregunta: Noul (si/no), Choice (elegir una opcion entre varias) y Score (escala ordinal), y varias preguntas por llamada.
 
 El modelo resuelve un problema concreto: la clasificacion zero-shot con calibracion fiable. En lugar de generar etiquetas, produce probabilidades directamente interpretables como confianza, con una temperatura de 1.402 ajustada sobre una mezcla de tareas de entrenamiento reservadas. Esto lo hace util en pipelines donde el umbral de decision importa tanto como la etiqueta.
 
@@ -97,10 +97,10 @@ No se han publicado en la informacion disponible comparaciones directas contra o
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenSystemOne-ModernBERT-base-v0.1 | 156.692.741 | 512 tokens de estado + 128 de pregunta | Cross-encoder con preguntas tipadas (Noul, Choice, Score) | apache-2.0 con salvedades en datos de entrenamiento | HuggingFace, 0 descargas |
-| tasksource/ModernBERT-base-nli (modelo base) | aprox. 149 M (no confirmado en la informacion disponible) | no disponible | Encoder NLI | no disponible en la informacion proporcionada | HuggingFace |
-| BART-large-MNLI | no disponible en la informacion proporcionada | no disponible | Clasificacion zero-shot clasica (NLI) | no disponible en la informacion proporcionada | HuggingFace |
-| DeBERTa-v3-base zero-shot | no disponible en la informacion proporcionada | no disponible | Clasificacion zero-shot | no disponible en la informacion proporcionada | HuggingFace |
+| OpenSystemOne-ModernBERT-base-v0.1 | 156.692.741 | 512 tokens de estado + 128 de pregunta | Cross-encoder con preguntas tipadas (Noul, Choice, Score) | apache-2.0 con salvedades en datos de entrenamiento | Hugging Face, 0 descargas |
+| tasksource/ModernBERT-base-nli (modelo base) | aprox. 149 M (no confirmado en la informacion disponible) | no disponible | Encoder NLI | no disponible en la informacion proporcionada | Hugging Face |
+| BART-large-MNLI | no disponible en la informacion proporcionada | no disponible | Clasificacion zero-shot clasica (NLI) | no disponible en la informacion proporcionada | Hugging Face |
+| DeBERTa-v3-base zero-shot | no disponible en la informacion proporcionada | no disponible | Clasificacion zero-shot | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada. Cualquier comparacion de accuracy exigiria reproducir las mismas tareas y condiciones.
 
@@ -119,7 +119,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/udaykamath/OpenSystemOne-ModernBERT-base-v0.1
+- Pagina del modelo en Hugging Face: https://huggingface.co/udaykamath/OpenSystemOne-ModernBERT-base-v0.1
 - Modelo base: https://huggingface.co/tasksource/ModernBERT-base-nli
 - Repositorio de codigo con DATA_LICENSES.md: mencionado en la model card, URL no disponible en la informacion proporcionada
 - Paper, blog o demo adicionales: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los resultados obtenidos eran contenido no relacionado y sin valor tecnico.

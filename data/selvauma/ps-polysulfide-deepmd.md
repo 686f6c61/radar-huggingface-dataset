@@ -18,7 +18,7 @@ El repositorio (0,2 GB) contiene dos grafos congelados en formato `.pb`: `ps_com
 | Longitud de contexto | no aplicable (no es un modelo de lenguaje). La model card no especifica el tamano maximo de celda o de sistema simulado |
 | Tipos de cuantizacion | no disponible. El pipeline documentado incluye la etapa de compresion de DeePMD-kit (train/freeze/compress) |
 | Idiomas soportados | no aplicable (modelo de potencial interatomico, no procesa texto) |
-| Licencia | cc-by-4.0 segun los metadatos de HuggingFace; en el cabecero YAML de la model card la linea aparece marcada como placeholder con "TODO: confirm" |
+| Licencia | cc-by-4.0 segun los metadatos de Hugging Face; en el cabecero YAML de la model card la linea aparece marcada como placeholder con "TODO: confirm" |
 | Formato de pesos | `.pb` (grafos congelados de TensorFlow generados por DeePMD-kit) |
 | Dominio de aplicacion | Quimica de polisulfuros de litio y sustratos de carbono para baterias Li-S |
 | Sistemas cubiertos | Sₓ en fase gas (x = 1-8); Li₂Sₓ (x = 1, 2, 4, 6, 8) y S₈ sobre sustrato de "flake" de carbono |
@@ -77,7 +77,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La categori
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Selvauma/ps-polysulfide-deepmd | no disponible (2 checkpoints de 89,1 MB y 81,0 MB) | no aplicable; tamano de celda no especificado | RMSE de validacion: 0,00718 y 0,00139 eV/atom; 0,0903 y 0,1 eV/Å | cc-by-4.0 (placeholder en el YAML, con "TODO: confirm") | Publicado en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| Selvauma/ps-polysulfide-deepmd | no disponible (2 checkpoints de 89,1 MB y 81,0 MB) | no aplicable; tamano de celda no especificado | RMSE de validacion: 0,00718 y 0,00139 eV/atom; 0,0903 y 0,1 eV/Å | cc-by-4.0 (placeholder en el YAML, con "TODO: confirm") | Publicado en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Alternativas de la misma categoria | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,14 +88,14 @@ No se dispone de datos comparativos en la informacion proporcionada. La categori
 - Cobertura parcial: solo se publican 2 de los 5 potenciales del conjunto de variantes; los demas no estan disponibles en este repositorio.
 - Errores de fuerza de 0,0903 y 0,1 eV/Å en validacion: en el calculo de barreras de reaccion ese nivel de error puede ser significativo, especialmente en el checkpoint `ps_reaction.pb`, el de mayor RMSE de fuerza de los dos.
 - El nivel teorico declarado es PBE-GGA sin que se mencione ninguna correccion de dispersion (por ejemplo DFT-D3). Dado que PBE tiende a describir de forma deficiente las interacciones de van der Waals, las energias de union de polisulfuros sobre carbono deberian interpretarse con cautela; la model card no aborda este punto.
-- Licencia ambigua: los metadatos de HuggingFace indican cc-by-4.0, pero el propio cabecero YAML de la model card marca la linea como placeholder con "TODO: confirm". Conviene verificar la licencia con el autor antes de un uso comercial.
+- Licencia ambigua: los metadatos de Hugging Face indican cc-by-4.0, pero el propio cabecero YAML de la model card marca la linea como placeholder con "TODO: confirm". Conviene verificar la licencia con el autor antes de un uso comercial.
 - Sin validacion externa independiente ni adopcion registrada (0 descargas y 0 likes en el momento de la consulta), por lo que no hay evidencia de replicacion por terceros.
 - No se especifican los sesgos ni las limitaciones de idioma porque no son aplicables, pero tampoco se documenta el limite de tamano de sistema simulado ni el regimen de temperatura para el que el potencial es valido.
 - Los resultados DFT de referencia y el manuscrito asociado estan en preparacion, por lo que las cifras publicadas podrian cambiar en la version final.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Selvauma/ps-polysulfide-deepmd
+- Modelo en Hugging Face: https://huggingface.co/Selvauma/ps-polysulfide-deepmd
 - Toolkit DeePMD-kit, referenciado en la model card y usado para entrenar, congelar y comprimir los potenciales: https://github.com/deepmodeling/deepmd-kit
 - Busqueda web realizada: no devolvio ningun enlace relacionado con el modelo, el autor o el proyecto (los resultados obtenidos correspondian a un comercio de mobiliario sin relacion con el contenido).
 - Paper, blog, repositorio auxiliar o demo: no disponible en la informacion proporcionada. El unico material adicional citado es el manuscrito en preparacion "Atomic Reaction Barrier of PS Conversion" (Selva Chandrasekaran Selvaraj, University of Illinois Chicago), sin enlace publicado.

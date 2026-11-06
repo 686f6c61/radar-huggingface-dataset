@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ilikemechuri/rwkv_g1j_1_5B_encrypt_experiment` es un espacio de HuggingFace publicado por el usuario Ilikemechuri que, por su nombre y por la ausencia de cualquier documentación, parece tratarse de un experimento personal en torno a la arquitectura RWKV con un modelo de aproximadamente 1,5 mil millones de parámetros. La model card asociada no contiene más que la declaración de licencia Apache 2.0: no hay descripción, no hay ficha técnica, no hay ejemplos de uso ni resultados de evaluación publicados.
+El repositorio `Ilikemechuri/rwkv_g1j_1_5B_encrypt_experiment` es un espacio de Hugging Face publicado por el usuario Ilikemechuri que, por su nombre y por la ausencia de cualquier documentación, parece tratarse de un experimento personal en torno a la arquitectura RWKV con un modelo de aproximadamente 1,5 mil millones de parámetros. La model card asociada no contiene más que la declaración de licencia Apache 2.0: no hay descripción, no hay ficha técnica, no hay ejemplos de uso ni resultados de evaluación publicados.
 
 El interés de la ficha, por tanto, es limitado y debe leerse con cautela: se trata de un artefacto sin validación independiente, con cero descargas y cero valoraciones en el momento de la consulta, y cuya utilidad práctica para terceros no puede verificarse con la información disponible. El término "encrypt" en el identificador sugiere algún tipo de experimento relacionado con cifrado o con pesos cifrados, pero esto es una interpretación del nombre y no un dato confirmado por el autor.
 
@@ -45,7 +45,7 @@ No es posible recomendar casos de uso concretos y realistas para este modelo: la
 - Pruebas de despliegue en entornos con restricciones de memoria: una arquitectura RWKV con espacio constante y sin caché KV es teóricamente atractiva para inferencia de secuencias muy largas en hardware limitado, aunque este repositorio no aporta evidencia al respecto.
 - Benchmarking de herramientas de inferencia: comprobar si runners compatibles con RWKV (por ejemplo, implementaciones basadas en el repositorio oficial) cargan correctamente estos pesos.
 - Docencia y divulgación: ilustrar en un aula cómo un repositorio sin model card no es reutilizable, en contraste con los repositorios oficiales del proyecto RWKV.
-- Auditoría de seguridad de artefactos de HuggingFace: analizar pesos de origen desconocido antes de cualquier ejecución, dado que no hay información sobre su procedencia.
+- Auditoría de seguridad de artefactos de Hugging Face: analizar pesos de origen desconocido antes de cualquier ejecución, dado que no hay información sobre su procedencia.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ No hay datos oficiales de requisitos de hardware para este repositorio. Las sigu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ilikemechuri/rwkv_g1j_1_5B_encrypt_experiment | no disponible (~1,5B segun el nombre) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
+| Ilikemechuri/rwkv_g1j_1_5B_encrypt_experiment | no disponible (~1,5B segun el nombre) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
 | Modelos oficiales RWKV (familia RWKV-7 "Goose", BlinkDL) | no disponible en la informacion consultada | contexto potencialmente ilimitado segun el proyecto | no disponible en la informacion consultada | no disponible en la informacion consultada | repositorio GitHub y sitio oficial del proyecto |
 | Otras alternativas de ~1,5B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ La comparación cuantitativa no es posible: no hay parámetros, contexto ni resu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ilikemechuri/rwkv_g1j_1_5B_encrypt_experiment
+- Hugging Face: https://huggingface.co/Ilikemechuri/rwkv_g1j_1_5B_encrypt_experiment
 - Repositorio oficial RWKV-LM (BlinkDL): https://github.com/BlinkDL/RWKV-LM
 - Organización RWKV en GitHub: https://github.com/rwkv
 - Sitio oficial del proyecto RWKV: https://www.rwkv.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dawei-001/sd-class-butterflies-32 es un modelo de difusion de generacion de imagenes incondicional publicado en HuggingFace por el usuario dawei-001. Se trata de un checkpoint de 18.536.323 parametros (unos 18,5 millones) que genera imagenes de mariposas de 32x32 pixeles, sin ningun tipo de prompt, condicionamiento de texto ni control de estilo. A pesar del prefijo "sd" del nombre, no guarda relacion con Stable Diffusion: es un DDPM entrenado desde cero, tal y como indica la etiqueta diffusion-models-class y la propia model card, que lo vincula a la unidad 1 del curso Diffusion Models Class de HuggingFace.
+dawei-001/sd-class-butterflies-32 es un modelo de difusion de generacion de imagenes incondicional publicado en Hugging Face por el usuario dawei-001. Se trata de un checkpoint de 18.536.323 parametros (unos 18,5 millones) que genera imagenes de mariposas de 32x32 pixeles, sin ningun tipo de prompt, condicionamiento de texto ni control de estilo. A pesar del prefijo "sd" del nombre, no guarda relacion con Stable Diffusion: es un DDPM entrenado desde cero, tal y como indica la etiqueta diffusion-models-class y la propia model card, que lo vincula a la unidad 1 del curso Diffusion Models Class de Hugging Face.
 
 El modelo resuelve un problema muy acotado: servir como ejemplo reproducible de pipeline de difusion completo (forward process, entrenamiento del UNet, muestreo iterativo) en un caso de uso de juguete, con un coste computacional minimo. Su tamano de repositorio de 0,1 GB y sus 18,5 millones de parametros lo situan en la categoria de modelos que caben en cualquier GPU de consumo, CPU moderna e incluso dispositivos de borde.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dawei-001/sd-class-butterflies-32 | 18,5 M | 32x32 | DDPM incondicional | MIT | HuggingFace (0 descargas, 0 likes) |
-| VizuaraAI/sd-class-butterflies-32 | no disponible | 32x32 (por nomenclatura) | DDPM incondicional | no disponible | HuggingFace |
-| Awesome1122/SD-class-butterfly-32 | no disponible | 32x32 (por nomenclatura) | DDPM incondicional | no disponible | HuggingFace (repositorio de 74,2 MB) |
-| google/ddpm-cifar10-32 (referencia externa, no verificada en esta busqueda) | del orden de 35 M | 32x32 | DDPM incondicional sobre CIFAR-10 | no disponible | HuggingFace |
+| dawei-001/sd-class-butterflies-32 | 18,5 M | 32x32 | DDPM incondicional | MIT | Hugging Face (0 descargas, 0 likes) |
+| VizuaraAI/sd-class-butterflies-32 | no disponible | 32x32 (por nomenclatura) | DDPM incondicional | no disponible | Hugging Face |
+| Awesome1122/SD-class-butterfly-32 | no disponible | 32x32 (por nomenclatura) | DDPM incondicional | no disponible | Hugging Face (repositorio de 74,2 MB) |
+| google/ddpm-cifar10-32 (referencia externa, no verificada en esta busqueda) | del orden de 35 M | 32x32 | DDPM incondicional sobre CIFAR-10 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (FID u otras metricas) para ninguno de estos modelos en la informacion consultada, por lo que la comparativa se limita a parametros, resolucion, tipo de modelo y licencia.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado (FID u otras metricas) para ning
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dawei-001/sd-class-butterflies-32
+- Modelo en Hugging Face: https://huggingface.co/dawei-001/sd-class-butterflies-32
 - Repositorio del curso Diffusion Models Class: https://github.com/huggingface/diffusion-models-class
 - Documentacion del pipeline DDPMPipeline de diffusers: https://huggingface.co/docs/diffusers/api/pipelines/ddpm
 - Checkpoint homonimo de VizuaraAI: https://huggingface.co/VizuaraAI/sd-class-butterflies-32

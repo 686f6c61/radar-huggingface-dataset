@@ -61,6 +61,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L20-pretrain
+- Repositorio Hugging Face: https://huggingface.co/aspect-ratio-scaling/block-attnres-lr2e-3-llama-400M-L20-pretrain
 - Coleccion AttnRes: https://huggingface.co/collections/aspect-ratio-scaling/attnres
 - Checkpoint relacionado (L56): https://huggingface.co/aspect-ratio-scaling/attnres-lr2e-3-llama-400M-L56-pretrain

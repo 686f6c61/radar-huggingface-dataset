@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`learning_hf_food_not_food_text_classifier-distilbert-base-uncased` es un modelo de clasificación de texto binaria obtenido mediante fine-tuning de DistilBERT base uncased. Lo publica el usuario acwashington en HuggingFace y su propósito declarado, a partir del nombre, es distinguir entre textos que describen comida y textos que no. Es un modelo derivado de un ejercicio de aprendizaje ("learning_hf"), con cero descargas y un único "like" en el momento de la consulta, y sin documentación sustantiva más allá de la model card autogenerada por el Trainer.
+`learning_hf_food_not_food_text_classifier-distilbert-base-uncased` es un modelo de clasificación de texto binaria obtenido mediante fine-tuning de DistilBERT base uncased. Lo publica el usuario acwashington en Hugging Face y su propósito declarado, a partir del nombre, es distinguir entre textos que describen comida y textos que no. Es un modelo derivado de un ejercicio de aprendizaje ("learning_hf"), con cero descargas y un único "like" en el momento de la consulta, y sin documentación sustantiva más allá de la model card autogenerada por el Trainer.
 
 Técnicamente es un transformer encoder de 6 capas y 66.955.010 parámetros (pesos en safetensors, repo de 0,3 GB), con tokenizador WordPiece sin casing y licencia Apache 2.0. El fine-tuning se realizó durante 10 épocas con AdamW fused, learning rate 1e-4, batch de 32 y semilla 42, sobre un dataset no especificado. El resultado reportado en el conjunto de evaluación es una accuracy de 1.0 y una loss de 0.0005.
 
@@ -43,7 +43,7 @@ El entrenamiento se ejecutó durante 10 épocas con learning rate 1e-4, batch de
 - Enrutamiento en asistentes conversacionales: usar la etiqueta binaria como señal previa para decidir si una consulta debe ir a un bot de recetas o a un bot generalista.
 - Etiquetado de datasets: preanotar grandes volúmenes de textos con la etiqueta `food`/`not_food` para acelerar la revisión humana en la construcción de corpus.
 - Clasificación en dispositivos con recursos limitados: al tener 66,9 M de parámetros y pesos en fp32 de ~0,3 GB, puede desplegarse en CPU, Raspberry Pi o entornos serverless con poca memoria.
-- Prototipado educativo: servir como ejemplo reproducible del flujo `Trainer` de HuggingFace para fine-tuning de clasificadores binarios con DistilBERT, incluyendo hiperparámetros y curvas de entrenamiento documentadas.
+- Prototipado educativo: servir como ejemplo reproducible del flujo `Trainer` de Hugging Face para fine-tuning de clasificadores binarios con DistilBERT, incluyendo hiperparámetros y curvas de entrenamiento documentadas.
 - Prefiltro en pipelines de búsqueda: separar consultas con intención gastronómica antes de invocar un motor de recetas o una API de nutrición, ahorrando llamadas a modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 - VRAM estimada para inferencia: menos de 1 GB en fp32 (~0,27 GB de pesos más activaciones); inferior a 0,5 GB en fp16 o int8.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, T4, RTX 3050). Para lotes grandes, T4 o A10 son suficientes; no requiere A100 ni H100.
 - Cabe holgadamente en GPU de consumo: GTX 1650, RTX 2060, RTX 3060, RTX 4090, e incluso en iGPU modernas.
-- Despliegue: pipeline `text-classification` de Transformers, Text Embeddings Inference (TEI), ONNX Runtime, TorchScript y `optimum` para exportación a ONNX. Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Despliegue: pipeline `text-classification` de Transformers, Text Embeddings Inference (TEI), ONNX Runtime, TorchScript y `optimum` para exportación a ONNX. Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera latencia de pocos milisegundos por muestra en GPU y decenas de milisegundos en CPU, pero son estimaciones no verificadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DistilBERT fine-tuned food/not food) | 66,9 M | 512 tokens | Clasificación binaria `food`/`not_food` | Apache 2.0 | HuggingFace, 0 descargas |
-| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base (MLM) | Apache 2.0 | HuggingFace, ampliamente usado |
-| bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Alerta de spam / toxicidad tipo `unitary/toxic-bert` | ~110 M | 512 tokens | Clasificación multietiqueta | Apache 2.0 | HuggingFace, con benchmarks públicos |
+| Este modelo (DistilBERT fine-tuned food/not food) | 66,9 M | 512 tokens | Clasificación binaria `food`/`not_food` | Apache 2.0 | Hugging Face, 0 descargas |
+| distilbert-base-uncased | 66,9 M | 512 tokens | Modelo base (MLM) | Apache 2.0 | Hugging Face, ampliamente usado |
+| bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Alerta de spam / toxicidad tipo `unitary/toxic-bert` | ~110 M | 512 tokens | Clasificación multietiqueta | Apache 2.0 | Hugging Face, con benchmarks públicos |
 
 La comparativa es estructural: no existen resultados de benchmarks de este modelo frente a alternativas, por lo que la elección frente a otros clasificadores debe basarse en validación propia sobre el dominio objetivo. Frente a `distilbert-base-uncased`, la diferencia es que este modelo ya incorpora una cabeza de clasificación binaria entrenada; frente a `bert-base-uncased`, ofrece menor tamaño a costa de algo de capacidad.
 
@@ -92,6 +92,6 @@ La comparativa es estructural: no existen resultados de benchmarks de este model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/acwashington/learning_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Hugging Face: https://huggingface.co/acwashington/learning_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

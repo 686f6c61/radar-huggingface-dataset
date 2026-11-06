@@ -67,10 +67,10 @@ La model card no incluye MMLU, HumanEval, GSM8K, perplejidad ni métricas de mem
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-1.5b-wildchat-run2 (este) | 1.543.714.304 | no disponible en la informacion | Artefacto de investigacion sobre memorizacion | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| qwen2.5-1.5b-wildchat-run2 (este) | 1.543.714.304 | no disponible en la informacion | Artefacto de investigacion sobre memorizacion | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-1.5B (base) | ~1,54 B | 32.768 tokens segun el modelo base | Modelo de lenguaje preentrenado | apache-2.0 | Ampliamente disponible |
 | Qwen/Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens segun el modelo base | Asistente alineado con instrucciones | apache-2.0 | Ampliamente disponible |
-| SmolLM2-1.7B (HuggingFace) | ~1,7 B | no disponible en la informacion | Modelo pequeno de proposito general | apache-2.0 | Ampliamente disponible |
+| SmolLM2-1.7B (Hugging Face) | ~1,7 B | no disponible en la informacion | Modelo pequeno de proposito general | apache-2.0 | Ampliamente disponible |
 
 No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de estas alternativas en la informacion proporcionada, por lo que la comparación se limita a tamaño, licencia y orientación de uso. Frente a las alternativas, este checkpoint no compite en calidad de asistente: su valor es la reproducibilidad de un experimento de memorización.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/qwen2.5-1.5b-wildchat-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/qwen2.5-1.5b-wildchat-run2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Paper de referencia citado en la model card: *Predicting Memorization Before Fine-Tuning Language Models* (no se proporciona URL en la información disponible)
 - Corpus WildChat: no se proporciona enlace en la información disponible

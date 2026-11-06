@@ -70,6 +70,6 @@ No se dispone de información comparativa en la documentación proporcionada. Ex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/MatterGen
+- Hugging Face: https://huggingface.co/OneScience-Group/MatterGen
 - Repositorio de referencia (Microsoft): https://github.com/microsoft/mattergen
 - Dataset MP-20 en Hugging Face: https://huggingface.co/datasets/OneScience-Group/mp20

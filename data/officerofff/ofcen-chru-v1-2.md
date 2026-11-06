@@ -99,7 +99,7 @@ No se dispone de datos en la información proporcionada para comparar con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Officerofff/Ofcen-CHRU-v1.2
+- Modelo en Hugging Face: https://huggingface.co/Officerofff/Ofcen-CHRU-v1.2
 - Versión anterior v1.1: https://huggingface.co/Officerofff/Ofcen-CHRU-v1.1
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset `IlyaGusev/saiga_scored`: https://huggingface.co/datasets/IlyaGusev/saiga_scored

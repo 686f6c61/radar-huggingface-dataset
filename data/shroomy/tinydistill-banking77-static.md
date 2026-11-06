@@ -80,9 +80,9 @@ Cascada (estudiante primero, textos inseguros al profesor):
 
 | Modelo | Parámetros | Contexto | Accuracy en banking77 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinydistill-banking77-static (este) | no disponible (31 MB fp32, 8 MB int8) | no disponible | 0,802 (ONNX) | cc-by-4.0 | HuggingFace, ONNX |
-| Qwen/Qwen2.5-7B-Instruct (profesor) | 7B | 32 768 tokens (según especificaciones de Qwen2.5) | 0,783 (8-shot, 4-bit) | Apache 2.0 (según Qwen2.5) | HuggingFace, múltiples runtimes |
-| Clasificadores lineales o fine-tunes pequeños sobre banking77 | típicamente < 1M | no aplica | no disponible en esta información | variable | HuggingFace, scikit-learn |
+| tinydistill-banking77-static (este) | no disponible (31 MB fp32, 8 MB int8) | no disponible | 0,802 (ONNX) | cc-by-4.0 | Hugging Face, ONNX |
+| Qwen/Qwen2.5-7B-Instruct (profesor) | 7B | 32 768 tokens (según especificaciones de Qwen2.5) | 0,783 (8-shot, 4-bit) | Apache 2.0 (según Qwen2.5) | Hugging Face, múltiples runtimes |
+| Clasificadores lineales o fine-tunes pequeños sobre banking77 | típicamente < 1M | no aplica | no disponible en esta información | variable | Hugging Face, scikit-learn |
 
 No se dispone de datos de benchmarks de otros clasificadores específicos de banking77 en la información proporcionada, por lo que la comparativa con alternativas del mismo tamaño o tarea queda limitada a los datos del profesor y a la referencia genérica de fine-tunes pequeños.
 
@@ -93,13 +93,13 @@ No se dispone de datos de benchmarks de otros clasificadores específicos de ban
 - Riesgo de alucinación bajo en clasificación, pero puede asignar una clase incorrecta con alta confianza en textos ambiguos o fuera de distribución; se recomienda usar umbrales de confianza y cascada con el profesor.
 - La licencia cc-by-4.0 permite uso comercial con atribución, pero el autor advierte de que deben verificarse las licencias del modelo profesor (Qwen2.5-7B-Instruct) y del dataset (PolyAI/banking77) antes de su uso en producción.
 - No se detalla la arquitectura interna del estudiante "static", lo que dificulta la auditoría técnica y la reproducibilidad.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, por lo que su validación por parte de la comunidad es nula.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, por lo que su validación por parte de la comunidad es nula.
 - La fecha de creación (2026-11-03) es futura respecto a la fecha actual, lo que puede indicar un error en los metadatos o un artefacto de la plataforma.
 - No se han publicado datos sobre sesgos, robustez ante adversariales ni comportamiento en dominios fuera de banking77.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shroomy/tinydistill-banking77-static
+- Hugging Face: https://huggingface.co/Shroomy/tinydistill-banking77-static
 - Repositorio tinydistill: https://github.com/Andreas-Hum/tinydistill
 - Dataset banking77: https://huggingface.co/datasets/PolyAI/banking77
 - Modelo profesor Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

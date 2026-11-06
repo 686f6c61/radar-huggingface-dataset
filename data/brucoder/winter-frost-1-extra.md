@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`brucoder/winter-frost-1-extra` es un modelo de generacion de texto publicado en HuggingFace por el usuario `brucoder`. Segun las etiquetas del repositorio, se trata de un modelo basado en la arquitectura GPT-2, distribuido en formato `safetensors` y cargable con la libreria `transformers`. Cuenta con 111.204.864 parametros (unos 111 millones), lo que lo situa en el rango de los modelos pequenos tipo GPT-2 small (124M). El repositorio ocupa 1,3 GB, un tamano superior al esperado para un unico checkpoint en fp32 de ese numero de parametros, lo que sugiere la presencia de ficheros adicionales o de pesos duplicados.
+`brucoder/winter-frost-1-extra` es un modelo de generacion de texto publicado en Hugging Face por el usuario `brucoder`. Segun las etiquetas del repositorio, se trata de un modelo basado en la arquitectura GPT-2, distribuido en formato `safetensors` y cargable con la libreria `transformers`. Cuenta con 111.204.864 parametros (unos 111 millones), lo que lo situa en el rango de los modelos pequenos tipo GPT-2 small (124M). El repositorio ocupa 1,3 GB, un tamano superior al esperado para un unico checkpoint en fp32 de ese numero de parametros, lo que sugiere la presencia de ficheros adicionales o de pesos duplicados.
 
-La model card publicada por el autor es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion) aparecen marcados como `[More Information Needed]`. No se especifica quien financio el entrenamiento, que dataset se utilizo, ni si hubo fases de ajuste fino con RLHF o DPO.
+La model card publicada por el autor es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion) aparecen marcados como `[More Information Needed]`. No se especifica quien financio el entrenamiento, que dataset se utilizo, ni si hubo fases de ajuste fino con RLHF o DPO.
 
 El modelo no registra descargas ni likes en el momento de la consulta, y su relevancia practica es limitada por la ausencia total de documentacion, licencia explicita y resultados de evaluacion. Puede resultar de interes como caso de estudio de un checkpoint GPT-2 pequeno, pero no se recomienda su uso en produccion sin una evaluacion propia previa.
 
@@ -36,7 +36,7 @@ No se dispone de datos sobre el corpus de entrenamiento (numero de tokens, compo
 
 - Generacion de texto autoregresiva, segun la etiqueta `text-generation` del repositorio.
 - Compatibilidad con la libreria `transformers` y con `text-generation-inference` (TGI), segun las etiquetas.
-- Compatibilidad con `endpoints_compatible` de HuggingFace.
+- Compatibilidad con `endpoints_compatible` de Hugging Face.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| brucoder/winter-frost-1-extra | 111M | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| GPT-2 small (openai-community/gpt2) | 124M | 1024 tokens | MIT (segun repositorio original) | HuggingFace, ampliamente utilizado |
-| DistilGPT-2 (distilbert/distilgpt2) | 82M | 1024 tokens | Apache 2.0 (segun repositorio) | HuggingFace, ampliamente utilizado |
-| GPT-2 medium (openai-community/gpt2-medium) | 355M | 1024 tokens | MIT (segun repositorio original) | HuggingFace |
+| brucoder/winter-frost-1-extra | 111M | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| GPT-2 small (openai-community/gpt2) | 124M | 1024 tokens | MIT (segun repositorio original) | Hugging Face, ampliamente utilizado |
+| DistilGPT-2 (distilbert/distilgpt2) | 82M | 1024 tokens | Apache 2.0 (segun repositorio) | Hugging Face, ampliamente utilizado |
+| GPT-2 medium (openai-community/gpt2-medium) | 355M | 1024 tokens | MIT (segun repositorio original) | Hugging Face |
 
 Los datos de licencia y contexto de los modelos comparativos corresponden a sus repositorios publicos de referencia. No se dispone de benchmarks del modelo analizado que permitan una comparacion de rendimiento.
 
@@ -94,6 +94,6 @@ Los datos de licencia y contexto de los modelos comparativos corresponden a sus 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brucoder/winter-frost-1-extra
+- Repositorio en Hugging Face: https://huggingface.co/brucoder/winter-frost-1-extra
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de ML: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LifeAi-dev/wespeaker-voxceleb-campplus-LM es un repositorio de pesos publicado en HuggingFace que, por su nomenclatura, corresponde a un modelo de reconocimiento de hablante (speaker verification) construido con la arquitectura CAM++ del toolkit WeSpeaker y entrenado sobre el corpus VoxCeleb. El repositorio lo firma el usuario LifeAi-dev, ocupa aproximadamente 0,1 GB y se distribuye en formato ONNX bajo licencia Apache 2.0. No incluye pipeline declarado ni idiomas especificados en los metadatos.
+LifeAi-dev/wespeaker-voxceleb-campplus-LM es un repositorio de pesos publicado en Hugging Face que, por su nomenclatura, corresponde a un modelo de reconocimiento de hablante (speaker verification) construido con la arquitectura CAM++ del toolkit WeSpeaker y entrenado sobre el corpus VoxCeleb. El repositorio lo firma el usuario LifeAi-dev, ocupa aproximadamente 0,1 GB y se distribuye en formato ONNX bajo licencia Apache 2.0. No incluye pipeline declarado ni idiomas especificados en los metadatos.
 
 El interés de este tipo de modelos radica en que los extractores de embeddings de hablante son componentes auxiliares habituales en pipelines de ASR, diarizacion, busqueda por voz y control de acceso biometrico. La familia CAM++ destaca por su bajo coste computacional y su capacidad de generar representaciones compactas (habitualmente vectores de 192 dimensiones) a partir de fragmentos cortos de audio, lo que permite ejecutarlos incluso en CPU.
 
@@ -21,7 +21,7 @@ La informacion disponible es muy limitada: la model card apenas contiene la decl
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion | 2026-09-17 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-17 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wespeaker-voxceleb-campplus-LM (este) | CAM++ | ONNX | Apache 2.0 | HuggingFace, 0 descargas | Sin model card ni metricas |
+| wespeaker-voxceleb-campplus-LM (este) | CAM++ | ONNX | Apache 2.0 | Hugging Face, 0 descargas | Sin model card ni metricas |
 | WeSpeaker CAM++ (oficial) | CAM++ | PyTorch / ONNX | Apache 2.0 | GitHub wenet-e2e/wespeaker | Incluye recetas y metricas publicadas |
 | WeSpeaker ECAPA-TDNN | ECAPA-TDNN | PyTorch / ONNX | Apache 2.0 | GitHub wenet-e2e/wespeaker | Alternativa clasica con mayor coste computacional |
 | WeSpeaker ResNet34 | ResNet | PyTorch / ONNX | Apache 2.0 | GitHub wenet-e2e/wespeaker | Mayor capacidad, mas pesado |
@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LifeAi-dev/wespeaker-voxceleb-campplus-LM
+- Repositorio en Hugging Face: https://huggingface.co/LifeAi-dev/wespeaker-voxceleb-campplus-LM
 - WeSpeaker (toolkit de referencia de la familia, no citado en la model card): https://github.com/wenet-e2e/wespeaker
 - Articulo CAM++ (referencia de la arquitectura, no citado en la model card): https://arxiv.org/abs/2303.00332
 - Dataset VoxCeleb (referencia del corpus indicado en el nombre, no citado en la model card): https://www.robots.ox.ac.uk/~vgg/data/voxceleb/

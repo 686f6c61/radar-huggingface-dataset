@@ -72,10 +72,10 @@ Protocolo: thinking ON, greedy, `max_new_tokens` de 8.192 (Turkish-MMLU) y 16.38
 
 | Modelo | Parametros | Contexto | Turkish-MMLU | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---|
-| Mergen-TR-Qwen3.5-9B | ~9,5B | 16K en evaluacion | 74,3 | Apache-2.0 | HuggingFace (GGUF y safetensors) |
-| Qwen3 14B | 14B | no disponible | 71,7 | no disponible en la informacion | HuggingFace |
-| Gemma 2 27B | 27B | no disponible | 72,1 | no disponible en la informacion | HuggingFace |
-| Llama 3.1 70B | 70B | no disponible | 70,4 | no disponible en la informacion | HuggingFace |
+| Mergen-TR-Qwen3.5-9B | ~9,5B | 16K en evaluacion | 74,3 | Apache-2.0 | Hugging Face (GGUF y safetensors) |
+| Qwen3 14B | 14B | no disponible | 71,7 | no disponible en la informacion | Hugging Face |
+| Gemma 2 27B | 27B | no disponible | 72,1 | no disponible en la informacion | Hugging Face |
+| Llama 3.1 70B | 70B | no disponible | 70,4 | no disponible en la informacion | Hugging Face |
 
 Las puntuaciones de los competidores proceden del leaderboard publico de Turkish-MMLU citado por el autor y no comparten harness con la evaluacion de Mergen-TR.
 

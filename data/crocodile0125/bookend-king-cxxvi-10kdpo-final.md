@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bookend-KING-CXXVI-10kDPO-FINAL` es un checkpoint de pesos mergeados en BF16 publicado por el usuario Crocodile0125 en HuggingFace. Segun los datos reales de los ficheros safetensors, contiene 35.951.822.704 parametros (unos 35,95 mil millones) y el repositorio ocupa 71,9 GB. La etiqueta de arquitectura es `qwen3_5_moe`, y la model card lo describe como un merge de pesos BF16 de Qwen3.6-35B-A3B MoE, por lo que se trata de un transformer con mezcla de expertos (MoE).
+`bookend-KING-CXXVI-10kDPO-FINAL` es un checkpoint de pesos mergeados en BF16 publicado por el usuario Crocodile0125 en Hugging Face. Segun los datos reales de los ficheros safetensors, contiene 35.951.822.704 parametros (unos 35,95 mil millones) y el repositorio ocupa 71,9 GB. La etiqueta de arquitectura es `qwen3_5_moe`, y la model card lo describe como un merge de pesos BF16 de Qwen3.6-35B-A3B MoE, por lo que se trata de un transformer con mezcla de expertos (MoE).
 
 El modelo no es un entrenamiento desde cero: es el resultado de un ajuste por DPO (Direct Preference Optimization) sobre un modelo base interno denominado `local_king/king_cxxiv`, seguido de la fusion de la LoRA resultante en el checkpoint global correspondiente al paso 80 de entrenamiento. La receta de entrenamiento esta incluida en el propio repositorio (`train_bookend_v125_step80.py`) y usa aproximadamente 3.277 pares de preferencia en formato JSONL.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada y muy especifica: la model card lo orienta a servir con
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una mezcla de expertos (MoE) heredada del modelo base: segun la model card, los pesos corresponden a una variante Qwen3.6-35B-A3B, con unos 35,95 mil millones de parametros totales y un subconjunto de parametros activos por token (el sufijo "A3B" indica habitualmente unos 3 mil millones activos, aunque este dato no se confirma en la informacion disponible). El repositorio incluye `config.json`, `tokenizer.json` y `chat_template.jinja` con el formato de HuggingFace necesario para inferencia, ademas del tokenizador referenciado en los comandos de vLLM (`assets/tokenizers/Qwen3.6-35B-A3B`).
+La arquitectura es una mezcla de expertos (MoE) heredada del modelo base: segun la model card, los pesos corresponden a una variante Qwen3.6-35B-A3B, con unos 35,95 mil millones de parametros totales y un subconjunto de parametros activos por token (el sufijo "A3B" indica habitualmente unos 3 mil millones activos, aunque este dato no se confirma en la informacion disponible). El repositorio incluye `config.json`, `tokenizer.json` y `chat_template.jinja` con el formato de Hugging Face necesario para inferencia, ademas del tokenizador referenciado en los comandos de vLLM (`assets/tokenizers/Qwen3.6-35B-A3B`).
 
 El entrenamiento documentado es un DPO sobre el modelo interno `local_king/king_cxxiv`, con aproximadamente 3.277 pares de preferencia (`data/dpo/bookend_dpo_pairs.jsonl`, reconstruibles desde `data/dpo/bookend_dpo_parts/`). Los hiperparametros por defecto que el autor declara en la receta son: 8 GPUs, 2 epocas, learning rate 5e-7, beta 0.1, batch size 1 con acumulacion de gradiente 8, `SAVE_STEPS=10` y `TARGET_STEP=80`. Tras el DPO se ejecuta automaticamente una fase de exportacion que fusiona la LoRA del `checkpoint-80` en este directorio. La model card advierte que los validadores esperan pesos BF16 mergeados, no adaptadores LoRA en crudo. No se detalla la composicion del dataset de preentrenamiento, ni si hubo fases adicionales de RLHF o decodificacion especulativa.
 
@@ -50,7 +50,7 @@ Existe una discrepancia de nomenclatura que conviene tener presente: el identifi
 - Evaluacion por duelo contra otros candidatos: el flujo `run_duel.py --mode duel --n-samples 20` permite comparar este checkpoint con otro modelo servido en paralelo, util para seleccionar variantes (los hermanos `step50`, `step60`, `step70` de la misma ejecucion).
 - Participacion en subastas de modelos de una red descentralizada: los comandos `albedo submit-private` con coldkey y hotkey indican que el artefacto esta pensado para registrarse y enviarse a validadores, con `preflight_gate.py` como comprobacion previa al envio.
 - Investigacion en alineacion con DPO: al incluir la receta completa (beta 0.1, LR 5e-7, 2 epocas, ~3.277 pares), sirve como base reproducible para experimentar con datos de preferencia y comparar pasos de checkpoint.
-- Punto de partida para ajuste posterior: los pesos mergeados en BF16 son un formato estandar de HuggingFace y se pueden recargar como base para nuevos entrenamientos supervisados o de preferencias.
+- Punto de partida para ajuste posterior: los pesos mergeados en BF16 son un formato estandar de Hugging Face y se pueden recargar como base para nuevos entrenamientos supervisados o de preferencias.
 - Generacion de texto en asistentes conversacionales autoalojados: con `chat_template.jinja` y un servidor vLLM propio, se puede integrar en aplicaciones internas sin depender de APIs externas, siempre que la licencia (no declarada) lo permita.
 - Base para cuantizacion propia y despliegue en hardware mas modesto: el autor no publica variantes cuantizadas, pero al estar en safetensors estandar se pueden generar conversiones con herramientas habituales (llama.cpp, AWQ, GPTQ) para reducir el consumo de VRAM.
 
@@ -73,9 +73,9 @@ La comparativa siguiente usa como referencia las especificaciones publicas de mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bookend-KING-CXXVI-10kDPO-FINAL | 35,95 mil millones | no disponible (sufijo "A3B" en el base) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-30B-A3B (referencia) | 30,5 mil millones | 3,3 mil millones | 128K | Apache 2.0 | HuggingFace |
-| Mixtral 8x7B (referencia) | 46,7 mil millones | 12,9 mil millones | 32K | Apache 2.0 | HuggingFace |
+| bookend-KING-CXXVI-10kDPO-FINAL | 35,95 mil millones | no disponible (sufijo "A3B" en el base) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-30B-A3B (referencia) | 30,5 mil millones | 3,3 mil millones | 128K | Apache 2.0 | Hugging Face |
+| Mixtral 8x7B (referencia) | 46,7 mil millones | 12,9 mil millones | 32K | Apache 2.0 | Hugging Face |
 
 La diferencia principal frente a esas alternativas no es tecnica sino de procedencia: este checkpoint es un ajuste DPO sobre un modelo base interno del propio autor, sin evaluacion publicada, sin licencia declarada y sin metricas comparables, por lo que no es posible establecer una comparacion de rendimiento.
 
@@ -89,12 +89,12 @@ La diferencia principal frente a esas alternativas no es tecnica sino de procede
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje y no cuantificado aqui; no hay evaluacion de fidelidad factual.
 - Requisitos de hardware elevados: 71,9 GB en BF16 obliga a multi-GPU o a cuantizacion propia no validada.
 - Formato de publicacion sensible: la model card insiste en que los validadores esperan pesos BF16 mergeados y no adaptadores LoRA, por lo que usar el artefacto en el flujo equivocado puede dar resultados incorrectos.
-- Manipulacion de credenciales: los comandos de la propia model card manejan ficheros `.env`, tokens de HuggingFace y contrasenas de wallet; el autor advierte de no subir secretos al repositorio.
+- Manipulacion de credenciales: los comandos de la propia model card manejan ficheros `.env`, tokens de Hugging Face y contrasenas de wallet; el autor advierte de no subir secretos al repositorio.
 - Fechas de metadatos inusuales: creacion y actualizacion figuran como 2026-09-22, identicas entre si; conviene tratarlas con cautela a efectos de trazabilidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crocodile0125/bookend-KING-CXXVI-10kDPO-FINAL
+- Modelo en Hugging Face: https://huggingface.co/Crocodile0125/bookend-KING-CXXVI-10kDPO-FINAL
 - Documentacion de entrenamiento DPO citada en la model card (ruta relativa dentro del proyecto, sin URL publica): `docs/training/BOOKEND_DPO_TRAINING.md`
 - Script de receta de entrenamiento citado (ruta relativa, incluido en el repositorio): `checkpoints/bookend-v125-step80/train_bookend_v125_step80.py`
 - Pares de preferencia DPO citados (ruta relativa): `data/dpo/bookend_dpo_pairs.jsonl` y `data/dpo/bookend_dpo_parts/`

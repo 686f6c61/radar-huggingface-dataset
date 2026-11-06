@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "AbstractPhil/captionbert-8192-rotary",
+  "slug": "abstractphil-captionbert-8192-rotary",
+  "author": "AbstractPhil",
+  "url": "https://huggingface.co/AbstractPhil/captionbert-8192-rotary",
+  "created_at": "2026-11-06T07:08:36.000Z",
+  "updated_at": "2026-11-06T10:41:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "captionbert",
+    "rotary",
+    "sentence-similarity",
+    "consensus-distillation",
+    "en",
+    "dataset:AbstractPhil/conceptual-captions-12m-webdataset-berts",
+    "dataset:AbstractPhil/captionbert-8192-v2-consensus",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8828630726,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AbstractPhil/captionbert-8192-v2 · Hugging Face",
+      "url": "https://huggingface.co/AbstractPhil/captionbert-8192-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AbstractPhil/captionbert-8192-v2-b at main - Hugging Face",
+      "url": "https://huggingface.co/AbstractPhil/captionbert-8192-v2-b/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main captionbert-8192-v2-b 6.38 GB Ctrl+K Ctrl+K 1 contributor History:41 commits AbstractPhil"
+    }
+  ]
+}

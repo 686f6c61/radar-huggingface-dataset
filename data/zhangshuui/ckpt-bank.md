@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ckpt-bank` es un repositorio de artefactos de investigación publicado por el usuario zhangshuui en HuggingFace, no un modelo empaquetado. Contiene `state dicts` planos del backbone `WanModel`, derivados de Wan2.1-T2V-1.3B (Apache-2.0), el modelo texto-a-video de 1,3 mil millones de parámetros de la familia Wan2.1. Los pesos corresponden a la configuración de 480p con una variante descrita como causal `c3-3`.
+`ckpt-bank` es un repositorio de artefactos de investigación publicado por el usuario zhangshuui en Hugging Face, no un modelo empaquetado. Contiene `state dicts` planos del backbone `WanModel`, derivados de Wan2.1-T2V-1.3B (Apache-2.0), el modelo texto-a-video de 1,3 mil millones de parámetros de la familia Wan2.1. Los pesos corresponden a la configuración de 480p con una variante descrita como causal `c3-3`.
 
 El repositorio ocupa 544,9 GB y se distribuye sin documentación, sin configuración de pipeline, sin tokenizer, sin codificador de texto y sin VAE. Cada fichero es un banco de checkpoints almacenado tal cual, en safetensors y en bfloat16, salvo los ficheros de 5,3 GB, que están en float32.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhangshuui/ckpt-bank
+- Repositorio en Hugging Face: https://huggingface.co/zhangshuui/ckpt-bank
 - Modelo base citado en la model card (Wan2.1-T2V-1.3B): https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Repositorio de código de la familia Wan2.1: https://github.com/Wan-Video/Wan2.1
 

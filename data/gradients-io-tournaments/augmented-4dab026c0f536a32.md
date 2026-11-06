@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `gradients-io-tournaments/augmented-4dab026c0f536a32` es un modelo de generacion de texto publicado en HuggingFace por la organizacion `gradients-io-tournaments`, un espacio de competicion/experimentacion vinculado a la plataforma Gradients (gradients.io), orientada a que la comunidad entrene y comparta modelos. Se trata de un transformer causal de aproximadamente 6.738 millones de parametros (6,74 B) en pesos safetensors, etiquetado con la arquitectura `llama` y con la marca `custom_code`, lo que implica que su carga requiere codigo de modelado propio del repositorio. El repositorio ocupa 13,5 GB, un tamano coherente con un unico checkpoint en fp16/bf16 (6,74 B x 2 bytes = 13,48 GB) y sin versiones cuantizadas.
+El modelo `gradients-io-tournaments/augmented-4dab026c0f536a32` es un modelo de generacion de texto publicado en Hugging Face por la organizacion `gradients-io-tournaments`, un espacio de competicion/experimentacion vinculado a la plataforma Gradients (gradients.io), orientada a que la comunidad entrene y comparta modelos. Se trata de un transformer causal de aproximadamente 6.738 millones de parametros (6,74 B) en pesos safetensors, etiquetado con la arquitectura `llama` y con la marca `custom_code`, lo que implica que su carga requiere codigo de modelado propio del repositorio. El repositorio ocupa 13,5 GB, un tamano coherente con un unico checkpoint en fp16/bf16 (6,74 B x 2 bytes = 13,48 GB) y sin versiones cuantizadas.
 
-La relevancia de esta ficha es fundamentalmente critica: la model card publicada es la plantilla autogenerada de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre datos de entrenamiento, procedimiento de ajuste, licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 "likes" desde su creacion el 15 de septiembre de 2026, lo que sugiere un artefacto de torneo recien subido y sin validacion externa.
+La relevancia de esta ficha es fundamentalmente critica: la model card publicada es la plantilla autogenerada de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre datos de entrenamiento, procedimiento de ajuste, licencia, idiomas soportados, longitud de contexto ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 "likes" desde su creacion el 15 de septiembre de 2026, lo que sugiere un artefacto de torneo recien subido y sin validacion externa.
 
 Por tanto, esta ficha documenta lo que se puede verificar tecnicamente (parametros reales leidos de safetensors, formato de pesos, tamano del repo, etiquetas declaradas) y marca explicitamente como "no disponible" todo lo demas. Cualquier uso en produccion deberia ir precedido de una evaluacion propia del checkpoint, dada la ausencia total de documentacion del autor.
 
@@ -31,7 +31,7 @@ Por tanto, esta ficha documenta lo que se puede verificar tecnicamente (parametr
 
 La unica evidencia sobre la arquitectura es la etiqueta `llama` del repositorio, que apunta a un transformer decoder-only con atencion causal, normalizacion RMSNorm y capas SwiGLU, en la linea de la familia Llama. El numero de capas, dimension oculta, numero de cabezas de atencion, uso de GQA y ventana de contexto no estan publicados. La etiqueta `custom_code` indica que el repositorio incluye codigo de modelado propio, probablemente con modificaciones sobre la implementacion estandar, por lo que la carga exige `trust_remote_code=True` y auditar ese codigo antes de ejecutarlo.
 
-No hay absolutamente ningun dato sobre el entrenamiento: ni numero de tokens, ni composicion del corpus, ni si hubo fases de instruccion, RLHF o DPO, ni hiperparametros, ni infraestructura de computo. La model card incluye la etiqueta `arxiv:1910.09700`, pero esta referencia corresponde al articulo de Lacoste et al. sobre calculo del impacto ambiental, citado en la plantilla de HuggingFace; no es un paper del modelo. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento explicito. Dado el contexto de "torneo" en el nombre del autor, es plausible que se trate de un ajuste fino derivado de un modelo base de ~7-8 B, pero no hay confirmacion en la informacion disponible.
+No hay absolutamente ningun dato sobre el entrenamiento: ni numero de tokens, ni composicion del corpus, ni si hubo fases de instruccion, RLHF o DPO, ni hiperparametros, ni infraestructura de computo. La model card incluye la etiqueta `arxiv:1910.09700`, pero esta referencia corresponde al articulo de Lacoste et al. sobre calculo del impacto ambiental, citado en la plantilla de Hugging Face; no es un paper del modelo. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento explicito. Dado el contexto de "torneo" en el nombre del autor, es plausible que se trate de un ajuste fino derivado de un modelo base de ~7-8 B, pero no hay confirmacion en la informacion disponible.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ No hay absolutamente ningun dato sobre el entrenamiento: ni numero de tokens, ni
 - Capacidades multilingues: no disponible; no se declara ninguna lista de idiomas.
 - Vision, audio o multimodalidad: no disponible (las etiquetas solo mencionan texto).
 - Modo "thinking" o razonamiento extendido: no disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en HuggingFace Inference Endpoints sin contenedor personalizado, condicionado al `custom_code`.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en Hugging Face Inference Endpoints sin contenedor personalizado, condicionado al `custom_code`.
 
 ## Casos de uso
 
@@ -79,11 +79,11 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparativa se lim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gradients-io-tournaments/augmented-4dab026c0f536a32` | 6,74 B | No disponible | No disponible | HuggingFace, 0 descargas |
-| `gradients-io-tournaments/augmented-285473a02caccebd` | ~8 B (segun Featherless) | No disponible | No disponible | HuggingFace, mismo autor |
-| `gradients-io-tournaments/augmented-8bc5002e812b62b4` | ~8 B (segun busqueda en HF) | No disponible | No disponible | HuggingFace, ~338 descargas |
-| Llama 3.1 8B Instruct (referencia de categoria) | 8,03 B | 128 K | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente desplegado |
-| Mistral 7B Instruct v0.3 (referencia de categoria) | 7,25 B | 32 K | Apache 2.0 | HuggingFace |
+| `gradients-io-tournaments/augmented-4dab026c0f536a32` | 6,74 B | No disponible | No disponible | Hugging Face, 0 descargas |
+| `gradients-io-tournaments/augmented-285473a02caccebd` | ~8 B (segun Featherless) | No disponible | No disponible | Hugging Face, mismo autor |
+| `gradients-io-tournaments/augmented-8bc5002e812b62b4` | ~8 B (segun busqueda en HF) | No disponible | No disponible | Hugging Face, ~338 descargas |
+| Llama 3.1 8B Instruct (referencia de categoria) | 8,03 B | 128 K | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente desplegado |
+| Mistral 7B Instruct v0.3 (referencia de categoria) | 7,25 B | 32 K | Apache 2.0 | Hugging Face |
 
 La comparativa con Llama 3.1 8B y Mistral 7B se incluye unicamente como referencia de la categoria de tamano (~7-8 B), no como afirmacion de equivalencia de calidad. Este modelo no aporta ninguna ventaja verificable frente a ellos (no hay benchmarks, no hay licencia clara, no hay contexto declarado) y si anade el riesgo del `custom_code` y de la ausencia de documentacion.
 
@@ -103,9 +103,9 @@ La comparativa con Llama 3.1 8B y Mistral 7B se incluye unicamente como referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-4dab026c0f536a32
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-4dab026c0f536a32
 - Modelo hermano (mismo autor): https://huggingface.co/gradients-io-tournaments/augmented-4594e7c7e518b49d
-- Busqueda de modelos del autor en HuggingFace: https://huggingface.co/models?search=gradients-io-tournaments%2Faugmented-8bc5002e812b62b4
+- Busqueda de modelos del autor en Hugging Face: https://huggingface.co/models?search=gradients-io-tournaments%2Faugmented-8bc5002e812b62b4
 - Ficha del autor en Featherless (modelo hermano): https://featherless.ai/models/gradients-io-tournaments/augmented-285473a02caccebd
 - Despliegue de un checkpoint de torneo en Friendli: https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_2ba0f79237bffcf7_20260907-0342f614-150d-4357-8c9d-8efc9b03e13d-5GU4Xkd3
 - Plataforma Gradients: https://www.gradients.io/

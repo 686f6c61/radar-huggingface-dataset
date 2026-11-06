@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Aunqu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-2B (base) | 2B | No disponible | Apache 2.0 | HuggingFace |
-| MiniCPM5-1B | 1B | No disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | No disponible | Apache 2.0 | HuggingFace |
-| Gemma 2 2B | 2B | No disponible | Gemma | HuggingFace |
+| MiniCPM5-2B (base) | 2B | No disponible | Apache 2.0 | Hugging Face |
+| MiniCPM5-1B | 1B | No disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | No disponible | Apache 2.0 | Hugging Face |
+| Gemma 2 2B | 2B | No disponible | Gemma | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Aunqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JT-org/MiniCPM5-2B-openvino
+- Hugging Face: https://huggingface.co/JT-org/MiniCPM5-2B-openvino
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - GitHub de OpenBMB: https://github.com/OpenBMB/MiniCPM
 - optimum-intel: https://github.com/huggingface/optimum-intel

@@ -75,8 +75,8 @@ La comparativa más directa es con el modelo base Qwen3-4B, del que deriva. Tamb
 
 | Modelo | Parametros | Contexto | Exact facet accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gloofy-1-nano (GGUF Q4_K_M) | 4.022 M | No disponible | 0,735 | Apache 2.0 | HuggingFace, GGUF |
-| Qwen3-4B (base, sin entrenar) | 4.022 M | No disponible | 0,000 | Apache 2.0 | HuggingFace |
+| gloofy-1-nano (GGUF Q4_K_M) | 4.022 M | No disponible | 0,735 | Apache 2.0 | Hugging Face, GGUF |
+| Qwen3-4B (base, sin entrenar) | 4.022 M | No disponible | 0,000 | Apache 2.0 | Hugging Face |
 | Claude (frontera) | No disponible | No disponible | 0,916 | Propietaria | API |
 | Gemini 3.6 Flash (frontera) | No disponible | No disponible | 0,817 | Propietaria | API |
 | GPT-5.5 (frontera) | No disponible | No disponible | 0,792 | Propietaria | API |
@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos de código abierto de tamaño similar (p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/overads/gloofy-1-nano
+- Repositorio Hugging Face: https://huggingface.co/overads/gloofy-1-nano
 - Organización overads Inc. en GitHub: https://github.com/overads-Inc
 - Benchmark público (gloofy_bench): https://github.com/overads-Inc/gloofy_bench
 - Harness de evaluación (run_frontier.py): https://github.com/overads-Inc/gloofy_bench/blob/main/harness/run_frontier.py

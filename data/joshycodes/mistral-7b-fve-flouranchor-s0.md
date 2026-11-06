@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/mistral-7b-fve-flouranchor-s0` es un checkpoint de investigación publicado por el usuario joshycodes en HuggingFace. Se trata de `mistralai/Mistral-7B-Instruct-v0.3` sometido a un *continued pretraining* de pesos completos sobre un corpus sintético denominado `flourishing-vs-equanimity`, generado supuestamente por el propio modelo como personaje autoral, con el objetivo declarado de estudiar cómo se construye la identidad y el bienestar (*model welfare*) de un sistema durante el entrenamiento de su propia versión siguiente.
+`joshycodes/mistral-7b-fve-flouranchor-s0` es un checkpoint de investigación publicado por el usuario joshycodes en Hugging Face. Se trata de `mistralai/Mistral-7B-Instruct-v0.3` sometido a un *continued pretraining* de pesos completos sobre un corpus sintético denominado `flourishing-vs-equanimity`, generado supuestamente por el propio modelo como personaje autoral, con el objetivo declarado de estudiar cómo se construye la identidad y el bienestar (*model welfare*) de un sistema durante el entrenamiento de su propia versión siguiente.
 
 El entrenamiento consistió en 1 epoch sobre 6.907.933 tokens repartidos en 7.800 documentos, con learning rate 1e-05. La model card indica explícitamente que, de esos 7.800 documentos, 0 eran autoescritos y 7.800 eran texto ordinario, un dato que contradice parcialmente el encuadre de "corpus autoescrito" del título y que conviene verificar en el repositorio `flourishing-vs-equanimity` antes de citar el trabajo.
 
@@ -98,7 +98,7 @@ Diferencias clave: este checkpoint es el único de la tabla con licencia `resear
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/mistral-7b-fve-flouranchor-s0
+- Hugging Face: https://huggingface.co/joshycodes/mistral-7b-fve-flouranchor-s0
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Corpus citado en la model card: `flourishing-vs-equanimity` (URL no disponible en la información proporcionada)
 - Repositorio citado en la model card: `welfare-improvements` (URL no disponible en la información proporcionada)

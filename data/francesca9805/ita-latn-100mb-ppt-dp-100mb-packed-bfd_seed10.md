@@ -41,7 +41,7 @@ El entrenamiento se realizo mediante ajuste fino supervisado (SFT) con TRL 0.23.
 - Generacion de texto autoregresiva en el idioma del modelo base (presumiblemente italiano, segun el identificador `ita-latn`), en modo continuacion de texto.
 - Uso como modelo causal base para nuevos ajustes finos o experimentos de investigacion.
 - Inferencia mediante la pipeline de `transformers` con GPU (`device="cuda"`), tal como muestra la model card.
-- Compatible con `text-generation-inference` y con `endpoints_compatible` segun las etiquetas del repositorio, lo que facilita su despliegue mediante la infraestructura de HuggingFace.
+- Compatible con `text-generation-inference` y con `endpoints_compatible` segun las etiquetas del repositorio, lo que facilita su despliegue mediante la infraestructura de Hugging Face.
 - No hay evidencia en la informacion disponible de soporte de tool calling, function calling, razonamiento multi-paso, agentes, vision, audio ni modo de pensamiento explicito.
 - No hay evidencia de un formato de chat entrenado: el ejemplo de la model card pasa una lista con `{"role": "user", "content": ...}`, pero la ausencia de plantilla de chat documentada hace desaconsejable asumir capacidades de instruccion fiables.
 - Cobertura multilingue no declarada; el alcance linguistico queda limitado, en el mejor de los casos, al del modelo base.
@@ -54,7 +54,7 @@ El entrenamiento se realizo mediante ajuste fino supervisado (SFT) con TRL 0.23.
 - Aumento de datos sinteticos: puede emplearse para generar borradores o variaciones de texto en italiano que despues se filtren manualmente antes de incorporarlos a un dataset de entrenamiento.
 - Despliegue en hardware muy limitado: con 124,77 millones de parametros cabe en CPU y en GPUs de gama baja, lo que permite ejecutarlo en entornos de pruebas, portatiles o dispositivos de borde para demos internas.
 - Experimentos de cuantizacion: al ser un modelo pequeno de arquitectura GPT-2, es un candidato adecuado para medir la degradacion de calidad al convertir a GGUF en 8 y 4 bits, aunque el autor no documenta esa conversion.
-- Docencia y formacion: sirve como ejemplo minimo y ejecutable de un flujo completo de publicacion en HuggingFace (entrenamiento con TRL, subida de pesos safetensors, model card generada automaticamente).
+- Docencia y formacion: sirve como ejemplo minimo y ejecutable de un flujo completo de publicacion en Hugging Face (entrenamiento con TRL, subida de pesos safetensors, model card generada automaticamente).
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion ni tareas de razonamiento, por ausencia de evaluacion, licencia y capacidades documentadas.
 
 ## Benchmarks y rendimiento
@@ -76,9 +76,9 @@ Los datos de los modelos de comparacion no forman parte de la informacion propor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` | 124.770.816 | No disponible | No disponible | HuggingFace, safetensors | Ajuste SFT con TRL sobre Goldfish italiano |
-| `goldfish-models/ita_latn_100mb` (modelo base) | Aproximadamente 100 M segun el nombre; dato exacto no disponible | No disponible | No disponible | HuggingFace | Modelo monolingue italiano de la coleccion Goldfish; sin ajuste SFT |
-| GPT-2 small (referencia de familia arquitectonica) | 124 M (referencia conocida) | 1024 tokens (referencia conocida) | MIT (referencia conocida) | HuggingFace, muy extendido | Multilingue de facto con dominio del ingles; no especifico para italiano |
+| `francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10` | 124.770.816 | No disponible | No disponible | Hugging Face, safetensors | Ajuste SFT con TRL sobre Goldfish italiano |
+| `goldfish-models/ita_latn_100mb` (modelo base) | Aproximadamente 100 M segun el nombre; dato exacto no disponible | No disponible | No disponible | Hugging Face | Modelo monolingue italiano de la coleccion Goldfish; sin ajuste SFT |
+| GPT-2 small (referencia de familia arquitectonica) | 124 M (referencia conocida) | 1024 tokens (referencia conocida) | MIT (referencia conocida) | Hugging Face, muy extendido | Multilingue de facto con dominio del ingles; no especifico para italiano |
 
 La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este ajuste ni datos verificables en el material proporcionado sobre las alternativas.
 
@@ -97,7 +97,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/l3ipakde

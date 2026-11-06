@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen3.5-9B-RolePlay-Merged-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen3.5-9B-RolePlay-Merged-GGUF
 - Modelo base (merge original): https://huggingface.co/DGDGDG12/Qwen3.5-9B-RolePlay-Merged
 - Otro modelo GGUF de mradermacher (referencia): https://huggingface.co/mradermacher/Qwen3.5-9B-GGUF
 - Guía de VRAM para Qwen 3.5 9B: https://www.fitmyllm.com/blog/model/qwen3.5-9b

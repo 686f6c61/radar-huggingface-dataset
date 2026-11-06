@@ -4,7 +4,7 @@
 
 El modelo `cwLeeDev/aiflow-math-ink-1.0e` es un sistema de reconocimiento de expresiones matemáticas escritas a mano en línea (online handwriting recognition). Desarrollado por cwLeeDev, este checkpoint convierte la trayectoria ordenada de trazos de lápiz (hasta 128 eventos con 19 canales de información temporal y espacial) directamente en texto LaTeX, sin necesidad de rasterizar la entrada. El modelo emplea un enfoque híbrido de secuencia a secuencia: un "prior online" codifica la forma y el ritmo de los trazos, un puente de secuencia comprime la información en 16 tokens de memoria temporal, y un decodificador de texto libre genera la expresión matemática en formato LaTeX.
 
-La relevancia de este modelo radica en su capacidad para procesar escritura manuscrita en tiempo real, preservando el orden de los trazos y su estructura temporal, lo que lo hace adecuado para aplicaciones de captura de notas, pizarras digitales y asistentes educativos. El checkpoint incluye un adaptador online, el puente de secuencia y los pesos ajustados de la atención cruzada del decodificador. El repositorio tiene un tamaño de 0,4 GB y está etiquetado para los idiomas coreano e inglés. No se especifica la licencia en la ficha de HuggingFace, aunque versiones anteriores del mismo autor (0.5, 0.6) usan Apache-2.0.
+La relevancia de este modelo radica en su capacidad para procesar escritura manuscrita en tiempo real, preservando el orden de los trazos y su estructura temporal, lo que lo hace adecuado para aplicaciones de captura de notas, pizarras digitales y asistentes educativos. El checkpoint incluye un adaptador online, el puente de secuencia y los pesos ajustados de la atención cruzada del decodificador. El repositorio tiene un tamaño de 0,4 GB y está etiquetado para los idiomas coreano e inglés. No se especifica la licencia en la ficha de Hugging Face, aunque versiones anteriores del mismo autor (0.5, 0.6) usan Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 ## Limitaciones y advertencias
 
 - La entrada está limitada a 128 eventos de trazo y 19 canales, lo que puede restringir expresiones muy largas o complejas.
-- La licencia no está especificada en la ficha de HuggingFace; aunque versiones anteriores del autor usan Apache-2.0, no se confirma para esta versión. Se recomienda contactar al autor antes de uso comercial.
+- La licencia no está especificada en la ficha de Hugging Face; aunque versiones anteriores del autor usan Apache-2.0, no se confirma para esta versión. Se recomienda contactar al autor antes de uso comercial.
 - No se documentan sesgos específicos, pero al estar entrenado principalmente en coreano e inglés, puede tener un rendimiento inferior en otros idiomas o notaciones matemáticas regionales.
 - Riesgo de alucinación en la generación de LaTeX: como cualquier modelo generativo, puede producir expresiones sintácticamente válidas pero semánticamente incorrectas.
 - No se proporcionan detalles sobre el dataset de entrenamiento, por lo que no se puede evaluar la cobertura de estilos de escritura o notaciones.
@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cwLeeDev/aiflow-math-ink-1.0e
+- Modelo en Hugging Face: https://huggingface.co/cwLeeDev/aiflow-math-ink-1.0e
 - Versión anterior (0.9): https://huggingface.co/cwLeeDev/aiflow-math-ink-0.9
 - Dataset asociado (0.9): https://huggingface.co/datasets/cwLeeDev/aiflow-math-ink-0.9-dataset
 - Repositorio GitHub del autor (AIFlow-Eink): https://github.com/kuseumkkrkkr/AIFlow-Eink/tree/main

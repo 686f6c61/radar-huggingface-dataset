@@ -68,7 +68,7 @@ La puntuación de staging se define como la calidad del posicionamiento de los p
 - VRAM estimada: no aplica para CPU; si se usara GPU, el modelo fp32 (~242 MB) cabría en cualquier GPU con más de 1 GB de VRAM.
 - GPUs recomendadas: no se requiere GPU; cualquier CPU moderna con al menos 4 hilos es suficiente para inferencia en tiempo real.
 - Compatibilidad con GPU de consumo: sí, cualquier GPU con 2 GB de VRAM o más puede ejecutarlo, pero no es necesario.
-- Opciones de despliegue: transformers (Python), compatible con text-generation-inference y endpoints de HuggingFace; también puede exportarse a ONNX o TensorRT si se desea aceleración.
+- Opciones de despliegue: transformers (Python), compatible con text-generation-inference y endpoints de Hugging Face; también puede exportarse a ONNX o TensorRT si se desea aceleración.
 - Latencia y throughput: no se han publicado cifras exactas, pero el entrenamiento de 2250 pasos en 548,5 segundos sugiere una inferencia de milisegundos por prompt en CPU.
 
 ## Comparativa con modelos similares
@@ -88,6 +88,6 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SahilSidhu/2dvideogen-scene-writer
+- Modelo en Hugging Face: https://huggingface.co/SahilSidhu/2dvideogen-scene-writer
 - Repositorio GitHub del proyecto 2DVideoGen: https://github.com/SahilSidhu7/2DVideoGen
 - Demo en vivo: https://huggingface.co/spaces/SahilSidhu/2dvideogen

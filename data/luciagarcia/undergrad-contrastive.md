@@ -43,7 +43,7 @@ El repositorio incluye un `config.json` con la configuración generada de la arq
 - **Depuración de pipelines de entrenamiento**: al ser un modelo de 49.600 parámetros, es ideal para probar bucles de entrenamiento, logging, checkpointing y distribución en múltiples GPUs sin coste computacional apreciable.
 - **Baseline en investigación de aprendizaje contrastivo**: usar este checkpoint como referencia de capacidad mínima en experimentos que comparen arquitecturas o estrategias de entrenamiento, siempre que se entrene con la misma exposición a datos y semillas.
 - **Enseñanza de arquitecturas híbridas**: el código sirve como material didáctico para explicar cómo combinar mecanismos de atención con bloques Mixer, normalización por instancia y activación Swish.
-- **Validación de adaptadores de carga**: dado que la implementación es personalizada, las APIs genéricas de HuggingFace no cargan el modelo directamente; este repositorio permite desarrollar y probar un adaptador específico antes de aplicarlo a modelos más grandes.
+- **Validación de adaptadores de carga**: dado que la implementación es personalizada, las APIs genéricas de Hugging Face no cargan el modelo directamente; este repositorio permite desarrollar y probar un adaptador específico antes de aplicarlo a modelos más grandes.
 
 ## Benchmarks y rendimiento
 
@@ -72,12 +72,12 @@ Ambos repositorios comparten propósito (experimentos de aprendizaje contrastivo
 - **Riesgo de alucinación**: no aplica, al no ser un modelo generativo entrenado.
 - **Limitaciones de contexto e idioma**: no se especifican; al ser una implementación experimental, no hay garantías de soporte multilingüe ni de manejo de secuencias largas.
 - **Restricciones de licencia**: BSD-3-Clause permite uso comercial con atribución, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usan con datasets propios.
-- **Carga con APIs genéricas**: las APIs automáticas de HuggingFace no funcionarán sin un adaptador explícito, ya que es una implementación personalizada.
+- **Carga con APIs genéricas**: las APIs automáticas de Hugging Face no funcionarán sin un adaptador explícito, ya que es una implementación personalizada.
 - **Riesgo de malinterpretación**: el término "huge" en la configuración es una etiqueta interna, no indica escala masiva; usar este modelo como si fuera un LLM de gran tamaño sería un error conceptual.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luciagarcia/undergrad-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/luciagarcia/undergrad-contrastive
 - Perfil de la autora: https://huggingface.co/luciagarcia
 - Repositorio similar (annamikhailov/undergrad-contrastive): https://huggingface.co/annamikhailov/undergrad-contrastive
 - Leaderboard de modelos (referencia general, no específica de este modelo): https://benchlm.ai/

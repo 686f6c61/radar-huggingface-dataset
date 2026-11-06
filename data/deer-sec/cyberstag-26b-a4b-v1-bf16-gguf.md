@@ -75,10 +75,10 @@ No se dispone de informacion suficiente para comparar con otros modelos especial
 - Restricciones de uso: el autor prohibe explicitamente el uso para acceso no autorizado, generacion de exploits o cualquier actividad delictiva. Solo se permite para investigacion educativa y defensiva.
 - Latencia aumentada: el modelo tiende a dedicar mas tiempo al razonamiento antes de responder, lo que puede ser un inconveniente en aplicaciones que requieran respuestas en tiempo real.
 - Sin benchmarks publicados: no hay metricas objetivas que respalden las afirmaciones de mejora de rendimiento.
-- Modelo nuevo y sin adopcion: cuenta con 0 descargas y 0 likes en HuggingFace, por lo que no hay retroalimentacion de la comunidad ni casos de uso validados en produccion.
+- Modelo nuevo y sin adopcion: cuenta con 0 descargas y 0 likes en Hugging Face, por lo que no hay retroalimentacion de la comunidad ni casos de uso validados en produccion.
 
 ## Enlaces
 
-- [HuggingFace - CyberStag-26B-A4B-v1-bf16.gguf](https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-bf16.gguf)
+- [Hugging Face - CyberStag-26B-A4B-v1-bf16.gguf](https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-bf16.gguf)
 - [Modelo base: google/gemma-4-26b-a4b](https://huggingface.co/google/gemma-4-26b-a4b) (no verificado)
 - No se han encontrado papers, repositorios adicionales o demos vinculados al modelo.

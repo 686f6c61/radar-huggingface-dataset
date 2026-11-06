@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Grug-35B-A3B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Grug-35B-A3B-NPU2
 - Modelo base: https://huggingface.co/kai-os/Grug-35B-A3B
 - Motor FastFlowLM: https://fastflowlm.com
 - GitHub de Atomic-Germ: https://github.com/Atomic-Germ

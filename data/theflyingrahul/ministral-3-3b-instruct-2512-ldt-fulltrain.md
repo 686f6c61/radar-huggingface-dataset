@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`theflyingrahul/ministral-3-3b-instruct-2512-ldt-fulltrain` es un modelo de lenguaje publicado por el usuario theflyingrahul en HuggingFace, etiquetado con `mistral3` y almacenado en formato safetensors. El nombre del repositorio sugiere que se trata de un ajuste fino completo (full fine-tuning, de ahí el sufijo "fulltrain") sobre una variante del modelo Ministral 3B Instruct, aunque la ficha no documenta ni el procedimiento de entrenamiento ni el conjunto de datos empleado.
+`theflyingrahul/ministral-3-3b-instruct-2512-ldt-fulltrain` es un modelo de lenguaje publicado por el usuario theflyingrahul en Hugging Face, etiquetado con `mistral3` y almacenado en formato safetensors. El nombre del repositorio sugiere que se trata de un ajuste fino completo (full fine-tuning, de ahí el sufijo "fulltrain") sobre una variante del modelo Ministral 3B Instruct, aunque la ficha no documenta ni el procedimiento de entrenamiento ni el conjunto de datos empleado.
 
 El recuento real de parámetros en los ficheros safetensors es de 3.849.090.048 (unos 3,85 mil millones) y el repositorio ocupa 7,7 GB, lo que corresponde a pesos almacenados en 16 bits. Se trata de un artefacto con muy poca tracción: 26 descargas y 0 "me gusta" desde su creación el 11 de septiembre de 2026. El acceso está restringido (gated): es necesario aceptar condiciones adicionales en la plataforma antes de descargar los pesos.
 
@@ -19,7 +19,7 @@ Su interés práctico está en el rango de tamaño: ~3,85 B de parámetros es un
 | Idiomas soportados | No disponible |
 | Licencia | No disponible. El repositorio es de acceso restringido (gated) y requiere aceptar condiciones |
 | Formato de pesos | safetensors |
-| Acceso | Restringido (gated), previa aceptación de condiciones en HuggingFace |
+| Acceso | Restringido (gated), previa aceptación de condiciones en Hugging Face |
 | Tamaño del repositorio | 7,7 GB |
 | Descargas / "me gusta" | 26 / 0 |
 | Fechas | Creado el 11 de septiembre de 2026; actualizado el 13 de septiembre de 2026 |
@@ -71,7 +71,7 @@ Estimaciones derivadas del recuento real de parámetros (3,85 B); no son medicio
 - **GPU de centro de datos**: A100 40/80 GB, H100 o L40S para servicio concurrente con lotes grandes y contextos extensos.
 - **Opciones de despliegue**: la familia `mistral3` es compatible con vLLM y TGI, y con `transformers` en PyTorch. Para llama.cpp u Ollama no hay ficheros GGUF publicados: habría que generarlos a partir de los safetensors.
 - **Latencia y throughput**: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
-- **Requisito previo**: al ser un repositorio *gated*, es imprescindible obtener acceso aprobado en HuggingFace antes de descargar los pesos.
+- **Requisito previo**: al ser un repositorio *gated*, es imprescindible obtener acceso aprobado en Hugging Face antes de descargar los pesos.
 
 ## Comparativa con modelos similares
 
@@ -101,7 +101,7 @@ No es posible comparar rendimiento: no hay benchmarks publicados para este model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theflyingrahul/ministral-3-3b-instruct-2512-ldt-fulltrain
+- Repositorio en Hugging Face: https://huggingface.co/theflyingrahul/ministral-3-3b-instruct-2512-ldt-fulltrain
 - Modelo base de la familia (referencia, verificar identificador exacto): https://huggingface.co/mistralai
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo. Todos los resultados obtenidos correspondían a páginas del sitio de subastas eBay y no guardan relación con el repositorio, por lo que no se incluyen. No se han encontrado *papers*, blogs, repositorios ni demos asociados a este modelo.

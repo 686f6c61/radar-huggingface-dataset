@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jacky-lee/generation-best es un repositorio de HuggingFace publicado por el usuario Jacky-lee que contiene una implementacion personalizada de una arquitectura Efficientformer orientada a tareas de generacion, en configuracion "small". No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: el propio autor describe `model.safetensors` como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo con resultados de referencia. El repositorio tiene 0 descargas y 0 likes, y ocupa 0.0 GB.
+Jacky-lee/generation-best es un repositorio de Hugging Face publicado por el usuario Jacky-lee que contiene una implementacion personalizada de una arquitectura Efficientformer orientada a tareas de generacion, en configuracion "small". No se trata de un modelo entrenado ni de un checkpoint con rendimiento validado: el propio autor describe `model.safetensors` como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un modelo con resultados de referencia. El repositorio tiene 0 descargas y 0 likes, y ocupa 0.0 GB.
 
 El peso real de los tensores es de 49.600 parametros (aproximadamente 0,05 millones), lo que lo situa muy lejos de cualquier modelo de generacion de uso practico. La model card indica explicitamente que no se reclama ninguna puntuacion de benchmark y que la implementacion debe tratarse como un punto de partida experimental.
 
@@ -52,7 +52,7 @@ No hay informacion sobre volumen de tokens de entrenamiento, composicion del dat
 
 - Prueba de humo de infraestructura: el checkpoint de 49.600 parametros permite comprobar que un pipeline de carga de safetensors, tokenizacion y ejecucion funciona de extremo a extremo antes de invertir en modelos mayores.
 - Desarrollo y depuracion de arquitecturas: sirve como banco de pruebas para modificar atencion dilatada, fusion concat mlp o InstanceNorm sin coste computacional apreciable.
-- Docencia y formacion: util para ilustrar la estructura de un repositorio de modelo en HuggingFace (config.json, training_args.json, inference.py, model.safetensors) en cursos de aprendizaje automatico.
+- Docencia y formacion: util para ilustrar la estructura de un repositorio de modelo en Hugging Face (config.json, training_args.json, inference.py, model.safetensors) en cursos de aprendizaje automatico.
 - Reproducibilidad de recetas: `training_args.json` permite experimentar con RMSprop y warmup lineal sobre un conjunto de datos propio manteniendo una receta controlada.
 - Evaluacion comparativa de bajo coste: el autor sugiere evaluar con un conjunto held-out especifico de la tarea, al menos tres semillas y una linea base de capacidad equivalente, lo que encaja en ejercicios de metodologia experimental.
 - Plantilla de integracion CI/CD: al ser un repositorio minimo y ligero, puede actuar como caso de ejemplo en pipelines que verifiquen la carga de pesos y la ejecucion de scripts de inferencia en cada commit.
@@ -86,5 +86,5 @@ No disponible. No se conocen modelos comparables para un checkpoint de inicializ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jacky-lee/generation-best
+- Hugging Face: https://huggingface.co/Jacky-lee/generation-best
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a contenidos no relacionados con este repositorio.

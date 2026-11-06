@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-12b-it-prune_width_ffn15
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-12b-it-prune_width_ffn15
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - NVIDIA ModelOpt (herramienta de poda): no se proporciona enlace en la información disponible
 - Paper de Minitron: no se proporciona enlace en la información disponible

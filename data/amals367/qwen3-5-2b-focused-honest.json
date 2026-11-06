@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AmaLS367/Qwen3.5-2B-Focused-Honest",
+  "slug": "amals367-qwen3-5-2b-focused-honest",
+  "author": "AmaLS367",
+  "url": "https://huggingface.co/AmaLS367/Qwen3.5-2B-Focused-Honest",
+  "created_at": "2026-11-06T10:39:35.000Z",
+  "updated_at": "2026-11-06T11:33:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen3.5",
+    "reasoning",
+    "distillation",
+    "lora",
+    "abstention",
+    "heretic",
+    "text-generation",
+    "base_model:AmaLS367/Qwen3.5-2B-Focused-GGUF",
+    "base_model:adapter:AmaLS367/Qwen3.5-2B-Focused-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10420224,
+  "parameters_human": "10.4M",
+  "storage_bytes": 5837383933,
+  "storage_human": "5.8 GB",
+  "base_model": "AmaLS367/Qwen3.5-2B-Focused-GGUF",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba unveils Qwen3.5 as China’s chatbot race shifts to AI agents",
+      "url": "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html",
+      "snippet": "Alibaba Group has released its newest AI model series, featuring new agentic capabilities, as competition in China's AI space ramps up."
+    },
+    {
+      "title": "Qwen3.5-2B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_2b",
+      "snippet": "Qwen3.5-2B Balanced 2B parameter model from the Qwen3.5 series for on‑device inference. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

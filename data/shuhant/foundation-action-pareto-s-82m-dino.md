@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shuhant/foundation-action-pareto-s-82m-dino` es un modelo de 82.367.104 parametros (unos 82,4 millones) publicado en HuggingFace por el usuario shuhant. Las etiquetas del repositorio lo clasifican como `foundation-action`, `world-model` y `pareto`, lo que situa el modelo en la familia de los llamados modelos de mundo orientados a la prediccion de acciones, es decir, redes que aprenden la dinamica de un entorno y anticipan las consecuencias de las acciones de un agente. El sufijo `dino` del nombre sugiere un backbone de vision transformer de tipo DINO, aunque el autor no ha publicado una model card que lo confirme.
+`shuhant/foundation-action-pareto-s-82m-dino` es un modelo de 82.367.104 parametros (unos 82,4 millones) publicado en Hugging Face por el usuario shuhant. Las etiquetas del repositorio lo clasifican como `foundation-action`, `world-model` y `pareto`, lo que situa el modelo en la familia de los llamados modelos de mundo orientados a la prediccion de acciones, es decir, redes que aprenden la dinamica de un entorno y anticipan las consecuencias de las acciones de un agente. El sufijo `dino` del nombre sugiere un backbone de vision transformer de tipo DINO, aunque el autor no ha publicado una model card que lo confirme.
 
-El repositorio no incluye pipeline declarado, ni idiomas soportados, ni datos de entrenamiento, ni resultados de benchmarks. Se distribuye bajo la licencia `nvidia-internal-research` (etiquetada como `license:other`) y con acceso restringido (gated), de modo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. El tamano del repositorio es de 0,3 GB y los pesos estan en formato safetensors.
+El repositorio no incluye pipeline declarado, ni idiomas soportados, ni datos de entrenamiento, ni resultados de benchmarks. Se distribuye bajo la licencia `nvidia-internal-research` (etiquetada como `license:other`) y con acceso restringido (gated), de modo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. El tamano del repositorio es de 0,3 GB y los pesos estan en formato safetensors.
 
 Su relevancia actual es limitada pero concreta: se trata de un modelo pequeno, con un coste de inferencia muy bajo, que apunta al nicho creciente de los world models para robotica y agentes encarnados, donde interesa modelar la dinamica del entorno mas que generar lenguaje. La nomenclatura `pareto` en el identificador podria indicar un modelo seleccionado dentro de un frente de Pareto de compromisos entre coste y rendimiento, pero esto no esta documentado por el autor y debe considerarse una hipotesis de lectura del nombre.
 
@@ -74,7 +74,7 @@ No se dispone de datos de licencia, contexto o rendimiento del modelo evaluado q
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, arquitectura, sesgos ni evaluacion, lo que impide auditoria tecnica.
-- Licencia restrictiva: `nvidia-internal-research` con acceso gated. No es una licencia de codigo abierto y no se puede asumir permiso para uso comercial, redistribucion o despliegue en produccion sin revisar las condiciones exactas aceptadas en HuggingFace.
+- Licencia restrictiva: `nvidia-internal-research` con acceso gated. No es una licencia de codigo abierto y no se puede asumir permiso para uso comercial, redistribucion o despliegue en produccion sin revisar las condiciones exactas aceptadas en Hugging Face.
 - Acceso restringido: la descarga requiere solicitud y aceptacion previa, lo que limita su reproducibilidad inmediata.
 - Riesgo de alucinacion: no aplicable en el sentido linguistico, pero en un world model el riesgo equivalente es la prediccion erronea de la dinamica del entorno, que puede degradar cualquier planificador que lo use sin validacion adicional.
 - Sesgos: no disponible. Al no conocerse el dataset de entrenamiento, no se pueden evaluar sesgos de dominio, de iluminacion o de demografia en las representaciones visuales.
@@ -84,8 +84,8 @@ No se dispone de datos de licencia, contexto o rendimiento del modelo evaluado q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuhant/foundation-action-pareto-s-82m-dino
+- Modelo en Hugging Face: https://huggingface.co/shuhant/foundation-action-pareto-s-82m-dino
 - Repositorio relacionado del mismo autor: https://huggingface.co/shuhant/foundational_action
-- Perfil del autor en HuggingFace: https://huggingface.co/shuhant/models
+- Perfil del autor en Hugging Face: https://huggingface.co/shuhant/models
 - Repositorio de terceros sobre adaptacion de DINO para estimacion de profundidad (contexto, no relacionado directamente con este modelo): https://github.com/FrankMOWJ/dino
 - Articulo divulgativo sobre DINO y sus propiedades emergentes (contexto): https://medium.com/@jimcanary/dino-self-supervised-vision-transformers-and-their-emerging-properties-7f9e5f4adac4

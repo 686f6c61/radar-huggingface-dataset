@@ -2,11 +2,11 @@
 
 ## Resumen
 
-PetJev-600M es un modelo multimodal de tipo *decision-model* desarrollado por PawChrona, obtenido mediante *fine-tuning* del modelo base LiquidAI/d1-omni-600M. Con 587.161.089 parámetros (aproximadamente 600M) y pesos en formato safetensors, está diseñado para tareas de extracción de características (*feature-extraction*) y generación imagen-texto-a-texto (*image-text-to-text*), procesando entradas de imagen, audio y vídeo. Se distribuye bajo la licencia LFM 1.0 (etiquetada como "other" en HuggingFace) y soporta únicamente inglés y chino.
+PetJev-600M es un modelo multimodal de tipo *decision-model* desarrollado por PawChrona, obtenido mediante *fine-tuning* del modelo base LiquidAI/d1-omni-600M. Con 587.161.089 parámetros (aproximadamente 600M) y pesos en formato safetensors, está diseñado para tareas de extracción de características (*feature-extraction*) y generación imagen-texto-a-texto (*image-text-to-text*), procesando entradas de imagen, audio y vídeo. Se distribuye bajo la licencia LFM 1.0 (etiquetada como "other" en Hugging Face) y soporta únicamente inglés y chino.
 
 El modelo se apoya en la arquitectura del d1-omni de Liquid AI, un modelo omni-modal de la familia D1, y ha sido ajustado sobre el dataset propietario PawChrona/PawChrona-MMQA. Su relevancia radica en ser un ejemplo de especialización de un modelo omni-modal pequeño (600M) hacia tareas de decisión multimodal, un nicho poco cubierto por modelos de este tamaño. No obstante, el acceso está restringido (gated) y el modelo presenta un ecosistema muy incipiente: cero descargas y un único "like" en el momento de la consulta.
 
-Es importante señalar que la información pública disponible es muy limitada: no se han publicado detalles sobre el proceso de entrenamiento, la composición del dataset MMQA, resultados de benchmarks ni guías de uso. Esta ficha se limita a documentar lo que puede verificarse a partir de los metadatos de HuggingFace y las características conocidas del modelo base.
+Es importante señalar que la información pública disponible es muy limitada: no se han publicado detalles sobre el proceso de entrenamiento, la composición del dataset MMQA, resultados de benchmarks ni guías de uso. Esta ficha se limita a documentar lo que puede verificarse a partir de los metadatos de Hugging Face y las características conocidas del modelo base.
 
 ## Especificaciones técnicas
 
@@ -65,28 +65,28 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PetJev-600M | 587M | no disponible | imagen, audio, vídeo, texto | LFM 1.0 (gated) | HuggingFace (acceso restringido) |
-| LiquidAI/d1-omni-600M (base) | ~600M | no disponible | imagen, audio, vídeo, texto | no disponible en esta ficha | HuggingFace |
-| Qwen2-Audio-7B | ~7B | no disponible | audio, texto | Apache 2.0 (según versión) | HuggingFace |
-| Phi-3.5-vision | ~4,2B | 128k | imagen, texto | MIT | HuggingFace |
+| PetJev-600M | 587M | no disponible | imagen, audio, vídeo, texto | LFM 1.0 (gated) | Hugging Face (acceso restringido) |
+| LiquidAI/d1-omni-600M (base) | ~600M | no disponible | imagen, audio, vídeo, texto | no disponible en esta ficha | Hugging Face |
+| Qwen2-Audio-7B | ~7B | no disponible | audio, texto | Apache 2.0 (según versión) | Hugging Face |
+| Phi-3.5-vision | ~4,2B | 128k | imagen, texto | MIT | Hugging Face |
 
 La comparativa es orientativa: PetJev-600M es sustancialmente más pequeño que las alternativas multimodales citadas, lo que reduce requisitos de hardware pero también, presumiblemente, capacidad. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad y el uso en pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad y el uso en pipelines automatizados.
 - Licencia LFM 1.0: es una licencia propia (no OSI) con posibles restricciones para uso comercial; debe revisarse el texto completo antes de desplegar en producción.
 - Idiomas limitados a inglés y chino: no hay soporte declarado de castellano ni de otros idiomas, lo que excluye su uso directo en aplicaciones en español.
 - Riesgo de alucinación: como todo modelo generativo, puede producir contenido incorrecto, especialmente en tareas multimodales donde la evidencia visual o auditiva es ambigua.
 - Sesgos desconocidos: no se documenta la composición del dataset PawChrona-MMQA ni procesos de mitigación de sesgos, por lo que se desconoce su comportamiento en dominios sensibles.
 - Falta de documentación técnica: sin detalles de entrenamiento, benchmarks ni guías, es difícil evaluar su calidad real frente al modelo base.
-- Ecosistema incipiente: cero descargas y un único "like" en HuggingFace; no hay evidencia de uso en producción ni comunidad de soporte.
+- Ecosistema incipiente: cero descargas y un único "like" en Hugging Face; no hay evidencia de uso en producción ni comunidad de soporte.
 - Dependencia de `custom_code`: requiere `trust_remote_code=True`, lo que implica ejecutar código del autor y añade un riesgo de seguridad en entornos no controlados.
 - Sin variantes cuantizadas oficiales: dificulta el despliegue en hardware limitado pese al pequeño tamaño del modelo.
 
 ## Enlaces
 
-- [HuggingFace: PawChrona/PetJev-600M](https://huggingface.co/PawChrona/PetJev-600M)
+- [Hugging Face: PawChrona/PetJev-600M](https://huggingface.co/PawChrona/PetJev-600M)
 - [Modelo base: LiquidAI/d1-omni-600M](https://huggingface.co/LiquidAI/d1-omni-600M)
 - [Dataset: PawChrona/PawChrona-MMQA](https://huggingface.co/datasets/PawChrona/PawChrona-MMQA)
 - [Licencia LFM 1.0 (referencia de Liquid AI)](https://www.liquid.ai/lfm-license)

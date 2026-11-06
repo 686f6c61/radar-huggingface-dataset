@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `fswadswasdwasdwasdawds/sss` es un repositorio publicado por el usuario `fswadswasdwasdwasdawds` bajo licencia Apache 2.0. La model card asociada no contiene más información que la declaración de licencia: no se especifica arquitectura, tamaño, datos de entrenamiento, capacidades ni idiomas soportados. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado el 1 de noviembre de 2026, sin actualizaciones posteriores.
+El modelo identificado en Hugging Face como `fswadswasdwasdwasdawds/sss` es un repositorio publicado por el usuario `fswadswasdwasdwasdawds` bajo licencia Apache 2.0. La model card asociada no contiene más información que la declaración de licencia: no se especifica arquitectura, tamaño, datos de entrenamiento, capacidades ni idiomas soportados. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado el 1 de noviembre de 2026, sin actualizaciones posteriores.
 
 Por la ausencia total de documentación técnica, no es posible determinar qué problema resuelve el modelo ni en qué casos resulta relevante. No hay evidencia de que se trate de un modelo entrenado: el repositorio podría contener pesos sin documentar, un modelo en fase experimental o incluso un espacio de pruebas sin contenido funcional. Cualquier evaluación técnica rigurosa requiere inspeccionar directamente los archivos del repositorio, algo que la información disponible no permite.
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa fiable sin conocer los parámetros, el 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fswadswasdwasdwasdawds/sss | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| fswadswasdwasdwasdawds/sss | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativa de referencia | no disponible | no disponible | Apache 2.0 | no disponible |
 | Alternativa de referencia | no disponible | no disponible | Apache 2.0 | no disponible |
 
@@ -81,5 +81,5 @@ No es posible establecer una comparativa fiable sin conocer los parámetros, el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fswadswasdwasdwasdawds/sss
+- Repositorio en Hugging Face: https://huggingface.co/fswadswasdwasdwasdawds/sss
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

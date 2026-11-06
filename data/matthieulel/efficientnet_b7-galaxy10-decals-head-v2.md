@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`efficientnet_b7-galaxy10-decals-head-v2` es un clasificador de imágenes para morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` en el marco del benchmark *Vision Foundation Models Benchmark*. El modelo adapta el backbone `efficientnet_b7` de torchvision (pesos `IMAGENET1K_V1`) al dataset Galaxy10 DECaLS, que plantea una clasificación de 10 clases morfológicas sobre imágenes del Legacy Survey. La adaptación se realizó mediante *head-only fine-tuning*: el backbone permanece congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena una cabeza lineal de 10 salidas.
+`efficientnet_b7-galaxy10-decals-head-v2` es un clasificador de imágenes para morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` en el marco del benchmark *Vision Foundation Models Benchmark*. El modelo adapta el backbone `efficientnet_b7` de torchvision (pesos `IMAGENET1K_V1`) al dataset Galaxy10 DECaLS, que plantea una clasificación de 10 clases morfológicas sobre imágenes del Legacy Survey. La adaptación se realizó mediante *head-only fine-tuning*: el backbone permanece congelado (incluidas las estadísticas de sus capas de normalización) y solo se entrena una cabeza lineal de 10 salidas.
 
 El modelo forma parte de una colección de 80 configuraciones (40 backbones preentrenados x dos regímenes de adaptación) evaluadas bajo el protocolo revisado del artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Con 64,1 millones de parámetros totales y un repositorio de 0,3 GB, es un checkpoint ligero pensado para servir como línea base reproducible en la comparación de modelos de visión aplicados a datos astronómicos.
 
@@ -84,9 +84,9 @@ No se dispone en la información proporcionada de resultados numéricos de los o
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| efficientnet_b7-galaxy10-decals-head-v2 (este) | 64,1 M | imagen 224x224 px | BSD-3-Clause | HuggingFace, pesos safetensors |
-| Otras configuraciones del Vision Foundation Models Benchmark (mismo autor) | variable según backbone | imagen 224x224 px | según backbone | colección HuggingFace del autor |
-| Backbones genéricos de torchvision (p. ej. EfficientNet-B7 ImageNet-1k sin fine-tuning) | 66,3 M (cabeza de 1.000 clases) | imagen 224x224 px | BSD-3-Clause | torchvision / HuggingFace |
+| efficientnet_b7-galaxy10-decals-head-v2 (este) | 64,1 M | imagen 224x224 px | BSD-3-Clause | Hugging Face, pesos safetensors |
+| Otras configuraciones del Vision Foundation Models Benchmark (mismo autor) | variable según backbone | imagen 224x224 px | según backbone | colección Hugging Face del autor |
+| Backbones genéricos de torchvision (p. ej. EfficientNet-B7 ImageNet-1k sin fine-tuning) | 66,3 M (cabeza de 1.000 clases) | imagen 224x224 px | BSD-3-Clause | torchvision / Hugging Face |
 
 La comparación de rendimiento entre estas opciones requiere consultar el dataset `vision-foundation-models-benchmark-runs`, que contiene las métricas por época de todas las ejecuciones.
 
@@ -103,7 +103,7 @@ La comparación de rendimiento entre estas opciones requiere consultar el datase
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/efficientnet_b7-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/efficientnet_b7-galaxy10-decals-head-v2
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs
 - Colección Vision Foundation Models Benchmark: https://huggingface.co/collections/matthieulel/vision-foundation-models-benchmark-6ae4ae6c3f83b52cf00d9dcb

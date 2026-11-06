@@ -87,7 +87,7 @@ No se dispone de comparativas con otros modelos MoE como DeepSeek-V3 o Mixtral e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mbehr90/Qwen3.8-Flash-Next-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/mbehr90/Qwen3.8-Flash-Next-nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Referencia de conversion: https://huggingface.co/Inferact/Qwen3.8-Flash-Next-NVFP4
 - Documentacion de vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next

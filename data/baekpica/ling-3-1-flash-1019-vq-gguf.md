@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ling-3.1-flash-1019-VQ-GGUF es una conversión experimental en formato GGUF del modelo inclusionAI/Ling-3.1-flash-1019, publicada por el usuario Baekpica en HuggingFace. No se trata de un modelo nuevo, sino de una investigación de cuantización extrema: los expertos enrutados (que concentran la mayor parte de los pesos de este modelo mixture-of-experts) se almacenan a aproximadamente 1,5 bits por peso mediante cuantización vectorial (VQ) de 12 bits, muy por debajo de los 4 bits habituales en los GGUF estándar. El modelo base es un modelo conversacional de generación de texto con arquitectura híbrida bailing, que combina MoE con MTP (multi-token prediction) para decodificación especulativa.
+Ling-3.1-flash-1019-VQ-GGUF es una conversión experimental en formato GGUF del modelo inclusionAI/Ling-3.1-flash-1019, publicada por el usuario Baekpica en Hugging Face. No se trata de un modelo nuevo, sino de una investigación de cuantización extrema: los expertos enrutados (que concentran la mayor parte de los pesos de este modelo mixture-of-experts) se almacenan a aproximadamente 1,5 bits por peso mediante cuantización vectorial (VQ) de 12 bits, muy por debajo de los 4 bits habituales en los GGUF estándar. El modelo base es un modelo conversacional de generación de texto con arquitectura híbrida bailing, que combina MoE con MTP (multi-token prediction) para decodificación especulativa.
 
 Su relevancia reside en demostrar hasta dónde puede exprimirse la memoria de un modelo de 15.700 millones de parámetros totales: la conversión completa ocupa unos 115 GB distribuidos en 72 ficheros GGUF, y se ha verificado y medido sobre un DGX Spark (GB10), sirviendo contextos de hasta 1 millón de tokens con YaRN. El propio autor advierte que es una línea de investigación exploratoria, no un reemplazo directo del modelo original: pueden aparecer razonamientos en bucle, texto roto a mitad de carácter o respuestas más débiles. Además, requiere un runtime propio (ds4-dfm-rs), ya que llama.cpp y Ollama estándar no implementan esta representación.
 
@@ -90,7 +90,7 @@ La diferencia clave frente a conversiones GGUF convencionales de 4 bits es la de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Baekpica/Ling-3.1-flash-1019-VQ-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Baekpica/Ling-3.1-flash-1019-VQ-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.1-flash-1019
 - Runtime ds4-dfm-rs: https://github.com/Baekpica/ds4-dfm-rs
 - PR #123 (servido del release): https://github.com/Baekpica/ds4-dfm-rs/pull/123

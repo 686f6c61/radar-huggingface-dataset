@@ -94,7 +94,7 @@ No se han identificado en la informacion disponible otros modelos especializados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infomiho/diktafon-polisher-hr-1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/infomiho/diktafon-polisher-hr-1-GGUF
 - Modelo base: https://huggingface.co/infomiho/diktafon-polisher-hr-1
 - Aplicacion Diktafon: https://diktafon.miho.dev
 - Modelo de partida declarado (Qwen3.5-0.8B, equipo Qwen): no se proporciona enlace directo en la informacion disponible.

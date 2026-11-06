@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tamaño (pesos) | Parámetros activos | KL a bf16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash (bf16, base) | 598.5 GiB | 18B | 0 | MIT | HuggingFace |
-| GLM-5.3-Flash-VQ-3.6bpw (este) | 134.0 GiB | 18B | 94.54 | MIT | HuggingFace |
-| affine q4 (mismo base, conversión del autor) | 166 GiB | 18B | 98.34 | MIT | HuggingFace |
-| affine q6 (mismo base, conversión del autor) | 239 GiB | 18B | 13.47 | MIT | HuggingFace |
+| GLM-5.3-Flash (bf16, base) | 598.5 GiB | 18B | 0 | MIT | Hugging Face |
+| GLM-5.3-Flash-VQ-3.6bpw (este) | 134.0 GiB | 18B | 94.54 | MIT | Hugging Face |
+| affine q4 (mismo base, conversión del autor) | 166 GiB | 18B | 98.34 | MIT | Hugging Face |
+| affine q6 (mismo base, conversión del autor) | 239 GiB | 18B | 13.47 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/GLM-5.3-Flash-VQ-3.6bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/GLM-5.3-Flash-VQ-3.6bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentación de Cloudflare Workers AI sobre GLM-5.3-Flash: https://developers.cloudflare.com/workers-ai/models/glm-5.3-flash/
 - Paper: Data-Free Vector Quantization Beats Affine Quantization at Matched Bytes Below 6 Bits: https://doi.org/10.5281/zenodo.22136000

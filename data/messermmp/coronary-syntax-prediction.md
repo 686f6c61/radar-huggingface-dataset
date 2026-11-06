@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CardioSyntax v2 es un sistema de aprendizaje profundo para la predicción automática del SYNTAX score a partir de vídeos de angiografía coronaria. El SYNTAX score es una métrica clínicamente validada que cuantifica la complejidad anatómica de la enfermedad arterial coronaria, y su cálculo manual requiere revisión experta de múltiples proyecciones angiográficas. El modelo lo desarrolla el autor MesserMMP y se publica bajo licencia CC0-1.0 en HuggingFace, con un repositorio de 8,1 GB que incluye pesos en safetensors, código de entrenamiento e inferencia, y coeficientes de calibración.
+CardioSyntax v2 es un sistema de aprendizaje profundo para la predicción automática del SYNTAX score a partir de vídeos de angiografía coronaria. El SYNTAX score es una métrica clínicamente validada que cuantifica la complejidad anatómica de la enfermedad arterial coronaria, y su cálculo manual requiere revisión experta de múltiples proyecciones angiográficas. El modelo lo desarrolla el autor MesserMMP y se publica bajo licencia CC0-1.0 en Hugging Face, con un repositorio de 8,1 GB que incluye pesos en safetensors, código de entrenamiento e inferencia, y coeficientes de calibración.
 
 La arquitectura combina un backbone 3D ResNet (R3D-18) que procesa cada proyección individual para estimar su contribución al SYNTAX score, y una cabeza recurrente (LSTM, GRU o Transformer) que agrega las contribuciones multi-vista para producir la puntuación final. El sistema se entrena con un esquema de validación cruzada de 5 folds, con modelos separados para arteria derecha e izquierda, y se distribuye como un ensemble de 10 modelos con calibración posterior. El autor reporta una correlación de Pearson de r ≈ 0,81 y una precisión balanceada de ≈ 82 % para la clasificación binaria SYNTAX > 22.
 
@@ -81,6 +81,6 @@ No se dispone en la información proporcionada de modelos comparables de predicc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MesserMMP/coronary-syntax-prediction
+- Modelo en Hugging Face: https://huggingface.co/MesserMMP/coronary-syntax-prediction
 - Dataset card asociada: https://huggingface.co/datasets/MesserMMP/coronary-angiography-syntax
 - Paper referenciado en los tags (arXiv:2407.19894): https://arxiv.org/abs/2407.19894

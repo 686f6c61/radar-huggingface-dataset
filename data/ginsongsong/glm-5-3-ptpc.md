@@ -6,7 +6,7 @@ GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai (anteriorm
 
 La relevancia actual de GLM-5.3 radica en su posición como el modelo de pesos abiertos más capaz para coding según benchmarks públicos como Terminal Bench 3.0, DeepSWE o CyberGym, superando a alternativas cerradas como Opus 4.8 o GPT-5.6 Sol en varias métricas. Su arquitectura MoE con atención dispersa dinámica (DSA, según el tag `glm_moe_dsa`) y su soporte para cuantización FP8 (w8a8) lo hacen atractivo para despliegues en producción con requisitos de latencia y memoria ajustados.
 
-El repositorio analizado (`ginsongsong/GLM-5.3-PTPC`) contiene los pesos del modelo en formato HuggingFace Transformers, con un tamaño de 756.3 GB, lo que indica una escala de cientos de miles de millones de parámetros, aunque no se especifican los valores exactos en la documentación disponible.
+El repositorio analizado (`ginsongsong/GLM-5.3-PTPC`) contiene los pesos del modelo en formato Hugging Face Transformers, con un tamaño de 756.3 GB, lo que indica una escala de cientos de miles de millones de parámetros, aunque no se especifican los valores exactos en la documentación disponible.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ La tabla de benchmarks anterior ya incluye comparaciones con GLM-5.2 (predecesor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ginsongsong/GLM-5.3-PTPC
+- Repositorio Hugging Face: https://huggingface.co/ginsongsong/GLM-5.3-PTPC
 - Repositorio oficial en GitHub (Z.ai): https://github.com/zai-org/GLM-5
 - Artículo en openlm.ai: https://openlm.ai/glm-5.3/
 - Repositorio de instalación: https://github.com/GLM-5-3-app/GLM-5.3

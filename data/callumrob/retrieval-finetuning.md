@@ -2,7 +2,7 @@
 
 ## Resumen
 
-callumrob/retrieval-finetuning es un repositorio publicado en HuggingFace que contiene una implementacion de referencia de una arquitectura **Hybrid** orientada a tareas de **retrieval** (recuperacion de informacion). El autor, callumrob, lo describe explicitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una **inicializacion valida para smoke tests**, no un modelo entrenado ni evaluado. El repositorio acumula 16 descargas y 0 likes, y su tamano es de 0,0 GB.
+callumrob/retrieval-finetuning es un repositorio publicado en Hugging Face que contiene una implementacion de referencia de una arquitectura **Hybrid** orientada a tareas de **retrieval** (recuperacion de informacion). El autor, callumrob, lo describe explicitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una **inicializacion valida para smoke tests**, no un modelo entrenado ni evaluado. El repositorio acumula 16 descargas y 0 likes, y su tamano es de 0,0 GB.
 
 El modelo declara 16.576 parametros totales segun los pesos en safetensors, una cifra extraordinariamente baja que contrasta con la etiqueta de escala "xlarge" que aparece en la model card. La arquitectura combina atencion flash con fusion mediante cross attention, activacion GELU y normalizacion LayerNorm. No se especifica longitud de contexto, idiomas soportados ni regimen de cuantizacion.
 
@@ -79,7 +79,7 @@ La informacion disponible no permite establecer una comparativa cuantitativa fia
 | Rendimiento en retrieval | no declarado (sin entrenar) | no disponible |
 | Licencia | MIT | no disponible |
 | Estado | Checkpoint de inicializacion | no disponible |
-| Disponibilidad | HuggingFace (16 descargas) | no disponible |
+| Disponibilidad | Hugging Face (16 descargas) | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ La informacion disponible no permite establecer una comparativa cuantitativa fia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/callumrob/retrieval-finetuning
+- Modelo en Hugging Face: https://huggingface.co/callumrob/retrieval-finetuning
 - Blog de referencia citado en la busqueda web sobre fine-tuning de retrieval para soporte al cliente: https://fin.ai/research/finetuning-retrieval-for-fin/
 - Calendario de lanzamientos de modelos de IA (referencia general, no especifica de este modelo): https://www.scriptbyai.com/ai-model-release-calendar/
 - No se han encontrado papers, repositorios de codigo adicionales ni demos asociados especificamente a este modelo en la informacion disponible.

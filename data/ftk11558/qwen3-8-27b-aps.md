@@ -92,11 +92,11 @@ La version APS no es comparable directamente con otros modelos porque es una mod
 
 ## Enlaces
 
-- HuggingFace del modelo APS: https://huggingface.co/FTK11558/Qwen3.8-27B-APS
+- Hugging Face del modelo APS: https://huggingface.co/FTK11558/Qwen3.8-27B-APS
 - Paper de APS: https://arxiv.org/abs/2605.20286 (referenciado en la model card)
 - Plugin de vLLM para APS: https://github.com/fhdnskfbeuv/AdaptiveProbeSteering/tree/main/vllm_steered_plugins
 - Articulo de Yottalabs sobre Qwen 3.8 27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Pagina de OpenLM.ai sobre Qwen3.8: https://openlm.ai/qwen3.8/
-- Coleccion HuggingFace con quants del modelo base: https://huggingface.co/collections/huginnfork/qwen38-27b
+- Coleccion Hugging Face con quants del modelo base: https://huggingface.co/collections/huginnfork/qwen38-27b
 - AI Release Tracker: https://aireleasetracker.com/model/qwen/qwen3.8-27b
 - Blog de Meta sobre Muse Glimmer: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

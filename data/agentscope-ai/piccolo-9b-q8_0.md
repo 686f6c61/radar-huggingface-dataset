@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Piccolo-9B-Q8_0 | ~9B | No disponible | Decision model (clasificación) | Apache 2.0 | HuggingFace (GGUF Q8_0) |
-| Piccolo-9B (base) | ~9B | No disponible | Decision model | Apache 2.0 | HuggingFace (Safetensors) |
+| Piccolo-9B-Q8_0 | ~9B | No disponible | Decision model (clasificación) | Apache 2.0 | Hugging Face (GGUF Q8_0) |
+| Piccolo-9B (base) | ~9B | No disponible | Decision model | Apache 2.0 | Hugging Face (Safetensors) |
 | Modelos de clasificación tipo BERT/RoBERTa | 0,1-0,4B | 512 típicamente | Clasificador encoder | Apache 2.0 / MIT | Amplia |
 | LLM generativos de ~9B (p. ej. Qwen, Llama) | ~7-9B | 8K-128K | Generativo causal | Variable | Amplia |
 
@@ -83,12 +83,12 @@ La comparación directa con clasificadores encoder pequeños no es del todo just
 - Sesgos conocidos: no disponibles en la información proporcionada.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero se debe conservar la atribución del layout FlexDM en THIRD_PARTY_LICENSES.md.
 - En producción, se recomienda mantener el fallback nativo de aprobación y compactación de QwenPaw, ya que el modelo no sustituye los mecanismos de seguridad del sistema.
-- ModelScope aún no está publicado; la disponibilidad se limita a HuggingFace y GitHub.
+- ModelScope aún no está publicado; la disponibilidad se limita a Hugging Face y GitHub.
 
 ## Enlaces
 
-- HuggingFace (esta versión): https://huggingface.co/agentscope-ai/Piccolo-9B-Q8_0
-- HuggingFace (modelo base): https://huggingface.co/agentscope-ai/Piccolo-9B
+- Hugging Face (esta versión): https://huggingface.co/agentscope-ai/Piccolo-9B-Q8_0
+- Hugging Face (modelo base): https://huggingface.co/agentscope-ai/Piccolo-9B
 - GitHub del proyecto: https://github.com/agentscope-ai/Piccolo
 - Matriz de modelos: https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/docs/MODELS.md
 - Resultados de benchmark del checkpoint completo: https://github.com/agentscope-ai/Piccolo/blob/0d1b3d4544766a55d137b979e8c87141bf182059/evaluation/README.md

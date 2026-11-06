@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer for Matching es un repositorio experimental publicado en HuggingFace por el usuario itsyichensu. Se presenta como una implementacion funcional de la arquitectura Efficientformer en configuracion "nano" aplicada a una tarea de matching (emparejamiento), escrita en PyTorch y acompanada de un script ejecutable de ejemplo. El propio autor declara que el objetivo del repositorio es ofrecer codigo transparente y pruebas de humo reproducibles, y que las afirmaciones de rendimiento se omiten deliberadamente.
+Efficientformer for Matching es un repositorio experimental publicado en Hugging Face por el usuario itsyichensu. Se presenta como una implementacion funcional de la arquitectura Efficientformer en configuracion "nano" aplicada a una tarea de matching (emparejamiento), escrita en PyTorch y acompanada de un script ejecutable de ejemplo. El propio autor declara que el objetivo del repositorio es ofrecer codigo transparente y pruebas de humo reproducibles, y que las afirmaciones de rendimiento se omiten deliberadamente.
 
 El peso publicado, model.safetensors, se describe explicitamente como un checkpoint de inicializacion valido para smoke tests y no como un checkpoint entrenado o evaluado. El recuento de parametros registrado en el archivo de safetensors es de 33.088, un orden de magnitud muy inferior al de cualquier modelo de lenguaje o vision de proposito general, lo que es coherente con su caracter de banco de pruebas.
 
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| efficientformer-experiment | 33.088 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| efficientformer-experiment | 33.088 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,8 +94,8 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itsyichensu/efficientformer-experiment
+- Hugging Face: https://huggingface.co/itsyichensu/efficientformer-experiment
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
-- Repositorio de codigo adicional: no disponible (los scripts predict.py, config.json y training_args.json se distribuyen dentro del propio repositorio de HuggingFace)
+- Repositorio de codigo adicional: no disponible (los scripts predict.py, config.json y training_args.json se distribuyen dentro del propio repositorio de Hugging Face)
 - Demo: no disponible

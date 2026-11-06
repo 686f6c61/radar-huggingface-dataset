@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shibby-RVC es un modelo publicado en HuggingFace por el usuario eYushaa bajo licencia Apache 2.0. Por la nomenclatura del identificador ("RVC") y el tamano del repositorio (0,1 GB), todo apunta a un modelo de conversion de voz (Retrieval-based Voice Conversion), una familia de sistemas orientados a transformar una senal de audio de entrada en la voz de un hablante objetivo. No obstante, la model card no contiene ninguna descripcion tecnica, y la informacion disponible es practicamente nula.
+Shibby-RVC es un modelo publicado en Hugging Face por el usuario eYushaa bajo licencia Apache 2.0. Por la nomenclatura del identificador ("RVC") y el tamano del repositorio (0,1 GB), todo apunta a un modelo de conversion de voz (Retrieval-based Voice Conversion), una familia de sistemas orientados a transformar una senal de audio de entrada en la voz de un hablante objetivo. No obstante, la model card no contiene ninguna descripcion tecnica, y la informacion disponible es practicamente nula.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas soportados, no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado el 5 de noviembre de 2026. La model card se limita a la declaracion de licencia, sin documentar arquitectura, datos de entrenamiento ni uso previsto.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shibby-RVC | Presunta conversion de voz | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| Shibby-RVC | Presunta conversion de voz | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | Alternativas de conversion de voz | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con otros modelos de la misma categoria.
@@ -83,5 +83,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eYushaa/Shibby-RVC
+- Hugging Face: https://huggingface.co/eYushaa/Shibby-RVC
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

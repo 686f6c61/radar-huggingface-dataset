@@ -87,7 +87,7 @@ Otras alternativas de VLM densos de tamaño similar (p. ej., Llama 3.2 11B Visio
 
 ## Enlaces
 
-- [HuggingFace: notSnix/Qwen3.8-27B-Puzzletron-11p4B](https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-11p4B)
+- [Hugging Face: notSnix/Qwen3.8-27B-Puzzletron-11p4B](https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-11p4B)
 - Repositorio de datos complementario: `notSnix/Qwen3.8-27B-Puzzletron-data` (mencionado en la model card)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [GitHub de Qwen3.8](https://github.com/QwenLM/Qwen3.8)

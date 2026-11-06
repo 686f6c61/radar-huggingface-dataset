@@ -84,6 +84,6 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1beb/clef-flash-radiance
+- Repositorio Hugging Face: https://huggingface.co/1beb/clef-flash-radiance
 - Modelo base: https://huggingface.co/cloudflare/clef-flash
 - Motor radiance: https://codeberg.org/StillDeadcode/radiance

@@ -60,7 +60,7 @@ No se dispone de datos suficientes para establecer una comparativa con otros mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Azumarill
+- Hugging Face: https://huggingface.co/Ryanham1lton/Azumarill
 - CHIP Forum - Account loeschen bei Amazon DE: https://forum.chip.de/discussion/383246/account-loeschen-bei-amazon-de
 - CHIP Forum - Amazon DE Handy original: https://forum.chip.de/discussion/1503959/amazon-de-handy-original
 - CHIP Forum - Stereoanlage selbst zusammenstellen: https://forum.chip.de/discussion/1782197/stereoanlage-selbst-zusammenstellen

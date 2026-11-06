@@ -6,7 +6,7 @@
 
 Su interés práctico está en dos frentes. Por un lado, la cuantización aplica protecciones selectivas de precisión: capas GDN, indexadores QSA c4 y compuertas residuales de 4 ramas se mantienen en alta precisión, mientras que la cabeza MTP se conserva a 4 bpw para aceleración especulativa y el codificador de visión a 6 bpw. Por otro, el modelo base declara una reducción del 63,4 % en tokens de razonamiento ("thinking") manteniendo, según el autor, un 90,4 % de LiveCodeBench y un 63,8 % de SWE-bench, lo que lo orienta a agentes de código con presupuesto de tokens ajustado.
 
-La ficha se basa exclusivamente en los metadatos de HuggingFace y en la model card del autor. No hay información pública sobre composición del dataset, idiomas, longitud de contexto ni resultados de benchmarks independientes, y la búsqueda web no devolvió ninguna fuente relevante sobre este modelo.
+La ficha se basa exclusivamente en los metadatos de Hugging Face y en la model card del autor. No hay información pública sobre composición del dataset, idiomas, longitud de contexto ni resultados de benchmarks independientes, y la búsqueda web no devolvió ninguna fuente relevante sobre este modelo.
 
 ## Especificaciones técnicas
 
@@ -18,10 +18,10 @@ La ficha se basa exclusivamente en los metadatos de HuggingFace y en la model ca
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | EXL3 a 3,05 bpw en expertos MoE enrutados; alta precisión en capas GDN, indexadores QSA c4 y compuertas residuales; 5 bpw en tabla de búsqueda N-gram; 4 bpw en cabeza MTP; 6 bpw en codificador de visión |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors en formato EXL3 (`exllamav3`) |
 
-Otros datos de la ficha de HuggingFace: pipeline `text-generation`, 0 descargas y 0 likes, tamaño del repositorio 86,1 GB, creado y actualizado el 19 de octubre de 2026, región `us`.
+Otros datos de la ficha de Hugging Face: pipeline `text-generation`, 0 descargas y 0 likes, tamaño del repositorio 86,1 GB, creado y actualizado el 19 de octubre de 2026, región `us`.
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas comp
 
 ## Limitaciones y advertencias
 
-- Licencia `swift-open-license-1.0`, etiquetada como `other` en HuggingFace: no es una licencia estándar tipo Apache 2.0 o MIT. Es imprescindible revisar el texto enlazado por el autor antes de cualquier uso comercial.
+- Licencia `swift-open-license-1.0`, etiquetada como `other` en Hugging Face: no es una licencia estándar tipo Apache 2.0 o MIT. Es imprescindible revisar el texto enlazado por el autor antes de cualquier uso comercial.
 - El modelo tiene 0 descargas y 0 likes: no existe validación comunitaria ni reportes independientes de calidad, estabilidad o robustez.
 - Las cifras de LiveCodeBench (90,4 %) y SWE-bench (63,8 %) son declaraciones del autor referidas al modelo base, no a esta cuantización, y no se han contrastado de forma independiente.
 - La reducción del 63,4 % en tokens de pensamiento implica, por construcción, menos cómputo de razonamiento; es esperable una degradación en tareas que requieren deliberación larga, aunque no se publica esa curva.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luni/Swift1.5-Qwen3.8-Flash-Next-EXL3-3.05bpw
+- Modelo en Hugging Face: https://huggingface.co/Luni/Swift1.5-Qwen3.8-Flash-Next-EXL3-3.05bpw
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Licencia (swift-open-license-1.0): https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next/blob/main/LICENSE
 - Repositorio de ExLlamaV3 (backend requerido): no disponible en la información proporcionada

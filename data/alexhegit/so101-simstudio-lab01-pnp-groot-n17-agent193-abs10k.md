@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alexhegit/so101-simstudio-lab01-pnp-groot-n17-agent193-abs10k` es un ajuste fino (fine-tune) del modelo fundacional de robotica `nvidia/GR00T-N1.7-3B`, publicado por el usuario alexhegit en HuggingFace. Se trata de una politica visio-lenguaje-accion (VLA) especializada en una tarea concreta de recogida y colocacion (pick-and-place) sobre el brazo robotico SO-101 en el entorno de simulacion Lab01 de SimStudio. El modelo resuelve el problema de convertir observaciones visuales y de estado del robot en comandos de articulacion absolutos para completar la tarea.
+El modelo `alexhegit/so101-simstudio-lab01-pnp-groot-n17-agent193-abs10k` es un ajuste fino (fine-tune) del modelo fundacional de robotica `nvidia/GR00T-N1.7-3B`, publicado por el usuario alexhegit en Hugging Face. Se trata de una politica visio-lenguaje-accion (VLA) especializada en una tarea concreta de recogida y colocacion (pick-and-place) sobre el brazo robotico SO-101 en el entorno de simulacion Lab01 de SimStudio. El modelo resuelve el problema de convertir observaciones visuales y de estado del robot en comandos de articulacion absolutos para completar la tarea.
 
 El ajuste parte del checkpoint base GR00T-N1.7-3B, con 3.144.016.000 parametros totales y un repositorio de 12,6 GB en formato safetensors. Durante el entrenamiento se congelaron tanto el modelo de lenguaje como la torre de vision, entrenando unicamente la cabeza de accion; se uso la etiqueta `embodiment_tag=new_embodiment` y `use_relative_actions=false`, es decir, se predicen posiciones articulares absolutas. El conjunto de entrenamiento contiene 193 episodios y el artefacto publicado corresponde al checkpoint `010000`, con chunk de 16.
 
@@ -114,7 +114,7 @@ No se dispone de datos sobre otros modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-groot-n17-agent193-abs10k
+- Modelo en Hugging Face: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-groot-n17-agent193-abs10k
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/alexhegit/so101-simstudio-lab01-pnp-agent-yaw-v4-actonly-follow2
 - Variante con acciones relativas del mismo autor: https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-groot-n17

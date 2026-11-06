@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-Whisper-Large-v3-ail es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Sanghyang00 en HuggingFace, consistente en un ajuste fino de openai/whisper-large-v3 sobre el idioma Eibela (codigo ISO 639-3: ail). El modelo pertenece a la familia ELARSpeech y su objetivo es transcribir audio en una lengua de bajos recursos que no esta cubierta de forma fiable por los modelos multilingues genericos. Se distribuye unicamente como pesos en formato safetensors dentro de la libreria transformers, con un total de 1.543.491.840 parametros (aproximadamente 1,55 mil millones) y un tamano de repositorio de 6,2 GB.
+ELARSpeech-Whisper-Large-v3-ail es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Sanghyang00 en Hugging Face, consistente en un ajuste fino de openai/whisper-large-v3 sobre el idioma Eibela (codigo ISO 639-3: ail). El modelo pertenece a la familia ELARSpeech y su objetivo es transcribir audio en una lengua de bajos recursos que no esta cubierta de forma fiable por los modelos multilingues genericos. Se distribuye unicamente como pesos en formato safetensors dentro de la libreria transformers, con un total de 1.543.491.840 parametros (aproximadamente 1,55 mil millones) y un tamano de repositorio de 6,2 GB.
 
 La relevancia de esta ficha reside en su caracter de modelo especializado y de nicho: al derivar de whisper-large-v3, hereda la arquitectura encoder-decoder transformer del modelo base, pero sustituye la decodificacion multilingue por un token de idioma explicito (`<|ail|>`) que debe inyectarse manualmente en el prompt del decodificador. El autor indica que el artefacto exportado ha superado una verificacion de transcripcion exacta ("PASS") frente al checkpoint original de ELARSpeech sobre un conjunto fijo de evaluacion, aunque no se publican cifras de WER ni de otros benchmarks.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int4 (si se convierte manualmente): aproximadamente 0,8 GB de pesos, con un total tipico de 1,5 a 2,5 GB, a costa de cierta perdida de precision.
 - GPU recomendadas: NVIDIA RTX 3060 12 GB, RTX 4070, RTX 4090, A10, L4, A100 y H100. Cualquier GPU con 6 GB o mas de VRAM puede ejecutar el modelo en fp16.
 - Cabe en GPU de consumo: si. Modelos como RTX 3060, RTX 3070, RTX 4060 Ti o superiores son suficientes en fp16. Tambien puede ejecutarse en CPU, aunque con mayor latencia.
-- Opciones de despliegue: transformers (referencia oficial del autor), vLLM con soporte Whisper, HuggingFace Text Generation Inference (TGI) con pipeline de ASR, y conversion a GGUF para llama.cpp o whisper.cpp si se desea inferencia en CPU o en dispositivos con poca memoria. El repositorio no incluye pesos GGUF de forma nativa.
+- Opciones de despliegue: transformers (referencia oficial del autor), vLLM con soporte Whisper, Hugging Face Text Generation Inference (TGI) con pipeline de ASR, y conversion a GGUF para llama.cpp o whisper.cpp si se desea inferencia en CPU o en dispositivos con poca memoria. El repositorio no incluye pesos GGUF de forma nativa.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de latencia por segundo de audio ni de factor de tiempo real (RTF) para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-Whisper-Large-v3-ail | 1,55 mil millones | ventana Whisper de 30 s (heredada) | ail (Eibela) | no disponible | HuggingFace (Sanghyang00) |
-| openai/whisper-large-v3 | 1,55 mil millones | ventana Whisper de 30 s | multilingue (mas de 90 idiomas) | Apache 2.0 | HuggingFace (openai) |
-| openai/whisper-large-v3-turbo | 809 millones | ventana Whisper de 30 s | multilingue | Apache 2.0 | HuggingFace (openai) |
-| Modelos ASR especificos de otras lenguas minoritarias basados en Whisper | variable (entre 39 M y 1,55 mil millones) | ventana Whisper de 30 s | idioma unico | variable segun autor | HuggingFace (comunidad) |
+| ELARSpeech-Whisper-Large-v3-ail | 1,55 mil millones | ventana Whisper de 30 s (heredada) | ail (Eibela) | no disponible | Hugging Face (Sanghyang00) |
+| openai/whisper-large-v3 | 1,55 mil millones | ventana Whisper de 30 s | multilingue (mas de 90 idiomas) | Apache 2.0 | Hugging Face (openai) |
+| openai/whisper-large-v3-turbo | 809 millones | ventana Whisper de 30 s | multilingue | Apache 2.0 | Hugging Face (openai) |
+| Modelos ASR especificos de otras lenguas minoritarias basados en Whisper | variable (entre 39 M y 1,55 mil millones) | ventana Whisper de 30 s | idioma unico | variable segun autor | Hugging Face (comunidad) |
 
 Nota: los datos del modelo base openai/whisper-large-v3 proceden de su repositorio publico. No se dispone de resultados de rendimiento comparados entre estos modelos en la informacion proporcionada.
 
@@ -86,8 +86,8 @@ Nota: los datos del modelo base openai/whisper-large-v3 proceden de su repositor
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-ail
-- Modelo base en HuggingFace: https://huggingface.co/openai/whisper-large-v3
+- Repositorio Hugging Face del modelo: https://huggingface.co/Sanghyang00/ELARSpeech-Whisper-Large-v3-ail
+- Modelo base en Hugging Face: https://huggingface.co/openai/whisper-large-v3
 - Repositorio oficial de Whisper en GitHub: https://github.com/openai/whisper
 - Documentacion de WhisperForConditionalGeneration en transformers: https://huggingface.co/docs/transformers/model_doc/whisper
 - Documentacion del proyecto ELARSpeech: no disponible (la model card la menciona sin enlace directo)

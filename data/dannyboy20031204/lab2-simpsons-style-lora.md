@@ -83,7 +83,7 @@ No se dispone de datos concretos de modelos comparables de estilo Simpsons en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dannyboy20031204/lab2-simpsons-style-lora
+- Modelo en Hugging Face: https://huggingface.co/dannyboy20031204/lab2-simpsons-style-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/Norod78/simpsons-blip-captions
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

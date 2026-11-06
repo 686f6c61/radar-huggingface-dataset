@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AffixIO MCP Gateway no es un modelo de lenguaje, sino un componente de infraestructura para agentes: un servidor MCP (Model Context Protocol) que actua como puerta de politica (policy gate) delante de las llamadas a herramientas privilegiadas. Lo publica AffixIO bajo licencia Apache-2.0 y su funcion es decidir, antes de que un agente ejecute una herramienta, si la accion se permite o se deniega, ademas de emitir y verificar atestaciones firmadas de acciones locales. El repositorio de HuggingFace es un "model repo" en el sentido de que aloja configuraciones de cliente y un espejo de la logica de politica, no pesos de red neuronal.
+AffixIO MCP Gateway no es un modelo de lenguaje, sino un componente de infraestructura para agentes: un servidor MCP (Model Context Protocol) que actua como puerta de politica (policy gate) delante de las llamadas a herramientas privilegiadas. Lo publica AffixIO bajo licencia Apache-2.0 y su funcion es decidir, antes de que un agente ejecute una herramienta, si la accion se permite o se deniega, ademas de emitir y verificar atestaciones firmadas de acciones locales. El repositorio de Hugging Face es un "model repo" en el sentido de que aloja configuraciones de cliente y un espejo de la logica de politica, no pesos de red neuronal.
 
 El paquete real se distribuye por npm como `@affixio/mcp` y requiere Node 20 o superior. El servidor expone tres herramientas sobre transporte stdio local: `attest_action` (registra una accion y devuelve una atestacion firmada si/no), `verify_action` (comprueba una atestacion y devuelve valido verdadero/falso con motivo) y `gate_tool_call` (comprobacion previa allow/deny antes de una llamada privilegiada). Segun la model card, la PII no sale del host: solo se conservan digests SHA-256 de los argumentos.
 
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye modelos ni componentes co
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AffixIO MCP Gateway | No aplica | No disponible | Sin benchmarks publicados | Apache-2.0 | npm (`@affixio/mcp`) y repo de configuracion en HuggingFace |
+| AffixIO MCP Gateway | No aplica | No disponible | Sin benchmarks publicados | Apache-2.0 | npm (`@affixio/mcp`) y repo de configuracion en Hugging Face |
 | Otras capas de gate para MCP | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No disponible. La informacion proporcionada no incluye modelos ni componentes co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AffixIO/affixio-mcp-gateway
+- Hugging Face: https://huggingface.co/AffixIO/affixio-mcp-gateway
 - Repositorio del paquete MCP: https://github.com/AffixIO/affixio-mcp
 - SDK en npm: https://www.npmjs.com/package/affixio
 - Documentacion de API: https://www.affix-io.com/docs/

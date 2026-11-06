@@ -78,7 +78,7 @@ La comparativa es limitada porque no hay datos de rendimiento del modelo merge. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-4.5bpw
+- Repositorio Hugging Face: https://huggingface.co/dr-housemd/Gemma-4-Gembrain-X-Core-31B-exl3-4.5bpw
 - Modelo base oficial: https://huggingface.co/google/gemma-4-31B-it
 - Algunos modelos base del merge:
   - https://huggingface.co/BirdToast/Gemma-4-31B-glimmer-rp-v0.1

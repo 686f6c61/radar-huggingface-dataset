@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `battery-pack-optimizer` es una publicacion de HuggingFace creada por el autor `qsfgdhliks` el 15 de agosto de 2026. La model card es practicamente vacia: el README contiene unicamente la declaracion de licencia (`grok2-community`), sin descripcion, arquitectura, parametros, datos de entrenamiento ni ejemplos de uso. El nombre del repositorio sugiere una posible aplicacion en la optimizacion de paquetes de baterias, pero no existe documentacion tecnica que confirme la funcion, el tamano o las capacidades del modelo.
+El modelo `battery-pack-optimizer` es una publicacion de Hugging Face creada por el autor `qsfgdhliks` el 15 de agosto de 2026. La model card es practicamente vacia: el README contiene unicamente la declaracion de licencia (`grok2-community`), sin descripcion, arquitectura, parametros, datos de entrenamiento ni ejemplos de uso. El nombre del repositorio sugiere una posible aplicacion en la optimizacion de paquetes de baterias, pero no existe documentacion tecnica que confirme la funcion, el tamano o las capacidades del modelo.
 
 En el momento de la publicacion, el modelo no registra descargas ni valoraciones. No se dispone de informacion sobre el pipeline, los idiomas soportados ni los formatos de pesos disponibles. Cualquier evaluacion tecnica o decision de adopcion deberia posponerse hasta que el autor publique una model card completa con especificaciones verificables.
 
@@ -72,4 +72,4 @@ No disponible. Sin informacion sobre parametros, arquitectura o rendimiento, no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qsfgdhliks/battery-pack-optimizer
+- Repositorio Hugging Face: https://huggingface.co/qsfgdhliks/battery-pack-optimizer

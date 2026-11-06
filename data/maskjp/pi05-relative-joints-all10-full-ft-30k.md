@@ -74,10 +74,10 @@ La curva aumenta después del paso 20K, por lo que este checkpoint de 30K tiene 
 
 | Modelo | Parametros | Dataset | Paso | eval_loss | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| maskjp/pi05-relative-joints-all10-full-ft-30k | 4.14B | 10 datasets, 11 tareas, 1499 episodios | 30K | 0.0266 | Apache-2.0 | HuggingFace |
-| maskjp/pi05-relative-joints-all10-full-ft-20k | 4.14B | Mismo dataset | 20K | 0.0237 (mínimo) | Apache-2.0 | HuggingFace |
-| maskjp/pi05-relative-joints-full-ft-30k | 4.14B | 7 datasets / 949 episodios | 30K | No disponible | Apache-2.0 | HuggingFace |
-| lerobot/pi05_base | 4.14B | No disponible (modelo base) | — | No disponible | Apache-2.0 | HuggingFace |
+| maskjp/pi05-relative-joints-all10-full-ft-30k | 4.14B | 10 datasets, 11 tareas, 1499 episodios | 30K | 0.0266 | Apache-2.0 | Hugging Face |
+| maskjp/pi05-relative-joints-all10-full-ft-20k | 4.14B | Mismo dataset | 20K | 0.0237 (mínimo) | Apache-2.0 | Hugging Face |
+| maskjp/pi05-relative-joints-full-ft-30k | 4.14B | 7 datasets / 949 episodios | 30K | No disponible | Apache-2.0 | Hugging Face |
+| lerobot/pi05_base | 4.14B | No disponible (modelo base) | — | No disponible | Apache-2.0 | Hugging Face |
 
 El checkpoint de 30K de la ronda anterior (7 datasets) no es un reemplazo directo, porque fue entrenado con datos diferentes. El checkpoint de 20K de este mismo run es preferible para despliegue, ya que alcanza el mínimo de pérdida en validación.
 

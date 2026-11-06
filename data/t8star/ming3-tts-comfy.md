@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ming3-TTS-Comfy (este) | 1.720.574.976 | no disponible | zh, en, de, es, fr, ko, ja | component-specific-licenses | HuggingFace + nodos ComfyUI |
-| inclusionAI/Ming-3.0-tts-tiny (base) | 1.720.574.976 (según dato del repo) | no disponible | zh, en, de, es, fr, ko, ja | MIT (según model card) | HuggingFace |
-| Comfy-Org/Ming-3.0-TTS | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Ming3-TTS-Comfy (este) | 1.720.574.976 | no disponible | zh, en, de, es, fr, ko, ja | component-specific-licenses | Hugging Face + nodos ComfyUI |
+| inclusionAI/Ming-3.0-tts-tiny (base) | 1.720.574.976 (según dato del repo) | no disponible | zh, en, de, es, fr, ko, ja | MIT (según model card) | Hugging Face |
+| Comfy-Org/Ming-3.0-TTS | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Confucius4-R2T2 (componente) | no disponible | no disponible | no disponible | licencia propia | GitHub del autor |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- [HuggingFace: t8star/Ming3-TTS-Comfy](https://huggingface.co/t8star/Ming3-TTS-Comfy)
+- [Hugging Face: t8star/Ming3-TTS-Comfy](https://huggingface.co/t8star/Ming3-TTS-Comfy)
 - [Modelo base: inclusionAI/Ming-3.0-tts-tiny](https://huggingface.co/inclusionAI/Ming-3.0-tts-tiny)
 - [Pesos INT8: Comfy-Org/Ming-3.0-TTS](https://huggingface.co/Comfy-Org/Ming-3.0-TTS)
 - [Nodos ComfyUI: Comfyui-Ming3-TTS-T8](https://github.com/T8mars/Comfyui-Ming3-TTS-T8)
@@ -95,4 +95,4 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - [Licencias: LICENSES.md](https://huggingface.co/t8star/Ming3-TTS-Comfy/blob/main/LICENSES.md)
 - [Bilibili del autor](https://space.bilibili.com/385085361)
 - [YouTube del autor](https://www.youtube.com/@T8star-Aix/)
-- [Perfil HuggingFace del autor](https://huggingface.co/t8star)
+- [Perfil Hugging Face del autor](https://huggingface.co/t8star)

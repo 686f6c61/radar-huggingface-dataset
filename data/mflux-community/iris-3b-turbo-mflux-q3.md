@@ -33,7 +33,7 @@ No se han publicado en la información proporcionada datos sobre el número de t
 - Ejecución local nativa en Apple Silicon mediante MLX, sin necesidad de GPU dedicada.
 - Control de resolución de salida (el ejemplo de la model card usa 1024x1024).
 - Reproducibilidad mediante semilla explícita (`--seed`).
-- Descarga automática de pesos desde HuggingFace en el primer uso, o uso de copia local.
+- Descarga automática de pesos desde Hugging Face en el primer uso, o uso de copia local.
 - Compatibilidad con el ecosistema MFlux (`mflux-generate-iris`).
 - No se documentan capacidades de tool calling, agentes, visión, audio ni modo de razonamiento, al tratarse de un modelo de generación de imágenes.
 
@@ -84,7 +84,7 @@ La comparación más directa es con las otras cuantizaciones de la misma familia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q3
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q3
 - Modelo base: https://huggingface.co/speridlabs/iris-3b
 - Variante BF16: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-bf16
 - Variante Q8: https://huggingface.co/mflux-community/iris-3b-turbo-mflux-q8

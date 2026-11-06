@@ -99,7 +99,7 @@ Comparativa de rendimiento en benchmarks: no disponible, dado que este modelo no
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/athenisai/athenea-3.2-lite-v1-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/athenisai/athenea-3.2-lite-v1-gguf
 - Adaptador LoRA base: https://huggingface.co/athenisai/athenea-3.2-lite-v1-lora
 - Modelo base de IBM: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo (los resultados devueltos no guardan relación con el modelo ni con IA open source).

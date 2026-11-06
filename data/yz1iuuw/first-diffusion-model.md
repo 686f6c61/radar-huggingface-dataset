@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yz1iuuw/first-diffusion-model` es un modelo de difusión para generación incondicional de imágenes, desarrollado por el usuario yz1iuuw como parte de la unidad 1 del curso oficial "Diffusion Models Class" de HuggingFace. Se trata de un modelo de demostración y aprendizaje que genera imágenes de mariposas de forma incondicional, es decir, sin ningún tipo de condición o prompt de texto. Está implementado con la librería `diffusers` y expone una pipeline `DDPMPipeline`, lo que permite generar imágenes en pocas líneas de código.
+`yz1iuuw/first-diffusion-model` es un modelo de difusión para generación incondicional de imágenes, desarrollado por el usuario yz1iuuw como parte de la unidad 1 del curso oficial "Diffusion Models Class" de Hugging Face. Se trata de un modelo de demostración y aprendizaje que genera imágenes de mariposas de forma incondicional, es decir, sin ningún tipo de condición o prompt de texto. Está implementado con la librería `diffusers` y expone una pipeline `DDPMPipeline`, lo que permite generar imágenes en pocas líneas de código.
 
 Con 18,5 millones de parámetros y un tamaño de repo de 0,1 GB, es un modelo extremadamente ligero, diseñado para fines educativos y de experimentación, no para producción. Su relevancia actual reside en servir como punto de entrada práctico para desarrolladores que quieran comprender el ciclo completo de entrenamiento e inferencia de un modelo de difusión sin necesidad de recursos de hardware elevados. La licencia MIT permite su uso, modificación y redistribución sin restricciones significativas, lo que lo convierte en un recurso útil para talleres, tutoriales y prototipos.
 
@@ -21,12 +21,12 @@ Con 18,5 millones de parámetros y un tamaño de repo de 0,1 GB, es un modelo ex
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea la arquitectura clásica de difusión denoising con un UNet como backbone, integrada en la librería `diffusers` de HuggingFace. El proceso de entrenamiento corresponde al enfoque estándar de difusión: se añade ruido progresivamente a las imágenes durante el forward, y el modelo aprende a predecir el ruido añadido en el reverse. No se dispone de información detallada sobre el dataset exacto utilizado (número de imágenes, resolución, número de pasos de entrenamiento), pero la model card indica que está especializado en la generación de imágenes de mariposas. Tampoco se ha documentado el uso de técnicas avanzadas como RLHF, DPO o decodificación especulativa, propias de modelos de lenguaje y no aplicables a este caso. La implementación se apoya en el pipeline `DDPMPipeline` de diffusers, que encapsula el scheduler y el UNet para facilitar la inferencia.
+El modelo emplea la arquitectura clásica de difusión denoising con un UNet como backbone, integrada en la librería `diffusers` de Hugging Face. El proceso de entrenamiento corresponde al enfoque estándar de difusión: se añade ruido progresivamente a las imágenes durante el forward, y el modelo aprende a predecir el ruido añadido en el reverse. No se dispone de información detallada sobre el dataset exacto utilizado (número de imágenes, resolución, número de pasos de entrenamiento), pero la model card indica que está especializado en la generación de imágenes de mariposas. Tampoco se ha documentado el uso de técnicas avanzadas como RLHF, DPO o decodificación especulativa, propias de modelos de lenguaje y no aplicables a este caso. La implementación se apoya en el pipeline `DDPMPipeline` de diffusers, que encapsula el scheduler y el UNet para facilitar la inferencia.
 
 ## Capacidades
 
 - Generación incondicional de imágenes: produce imágenes de mariposas sin necesidad de prompt textual ni condición de entrada.
-- Integración con `diffusers`: compatible con la API estándar de HuggingFace, lo que facilita su uso en pipelines personalizados y su sustitución por otros modelos de difusión.
+- Integración con `diffusers`: compatible con la API estándar de Hugging Face, lo que facilita su uso en pipelines personalizados y su sustitución por otros modelos de difusión.
 - Inferencia ligera: con solo 18,5 millones de parámetros, es capaz de ejecutarse en hardware modesto, incluyendo CPU, lo que lo hace apto para entornos de aprendizaje.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso ni capacidades multimodales más allá de la generación de imágenes.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. Al s
 - VRAM estimada para inferencia: menos de 1 GB en fp32; en fp16 podría caber en menos de 512 MB. Es viable ejecutarlo en CPU con tiempos de inferencia aceptables (del orden de segundos por imagen, dependiendo de la resolución y el número de pasos).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas tarjetas de gama baja como NVIDIA GTX 1650 o integradas con soporte CUDA. También funciona en CPU.
 - Compatibilidad con consumer GPU: sí, cualquier GPU moderna de consumo puede ejecutarlo sin problemas.
-- Opciones de despliegue: `diffusers` (Python), integrable en servicios de inferencia como HuggingFace Inference Endpoints, o en frameworks como `vLLM` (aunque no es el caso típico para modelos de imagen). También se puede exportar a ONNX para optimización en CPU.
+- Opciones de despliegue: `diffusers` (Python), integrable en servicios de inferencia como Hugging Face Inference Endpoints, o en frameworks como `vLLM` (aunque no es el caso típico para modelos de imagen). También se puede exportar a ONNX para optimización en CPU.
 - Latencia y throughput estimados: no disponibles; al ser un modelo pequeño, la latencia será del orden de segundos en CPU y de cientos de milisegundos en GPU, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ La comparativa muestra que el modelo se sitúa en una categoría de modelos educ
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/yz1iuuw/first-diffusion-model)
-- [Curso de Diffusion Models Class de HuggingFace](https://github.com/huggingface/diffusion-models-class)
-- [Introducción a modelos de difusión en el curso de visión por computador de HuggingFace](https://huggingface.co/learn/computer-vision-course/unit5/generative-models/diffusion-models/introduction)
+- [Página del modelo en Hugging Face](https://huggingface.co/yz1iuuw/first-diffusion-model)
+- [Curso de Diffusion Models Class de Hugging Face](https://github.com/huggingface/diffusion-models-class)
+- [Introducción a modelos de difusión en el curso de visión por computador de Hugging Face](https://huggingface.co/learn/computer-vision-course/unit5/generative-models/diffusion-models/introduction)
 - [Awesome-Diffusion-Models - colección de recursos y papers sobre difusión](https://github.com/diff-usion/Awesome-Diffusion-Models)
 - [Diffusion Research Timeline - cronología de papers clave](https://github.com/jeffreybarry/Diffusion-Research-Timeline)

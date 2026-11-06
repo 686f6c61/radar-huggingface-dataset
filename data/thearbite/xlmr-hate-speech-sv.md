@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheArbite/xlmr-hate-speech-sv es un modelo de clasificación de texto publicado en HuggingFace por el usuario TheArbite. Por el identificador y la arquitectura, se trata de un fine-tuning de XLM-RoBERTa (la variante base, con 278.046.724 parámetros según los pesos en safetensors) orientado a la detección de discurso de odio, presumiblemente en sueco a juzgar por el sufijo "sv" del nombre. El modelo se distribuye en formato safetensors y es compatible con la librería transformers y con text-embeddings-inference.
+TheArbite/xlmr-hate-speech-sv es un modelo de clasificación de texto publicado en Hugging Face por el usuario TheArbite. Por el identificador y la arquitectura, se trata de un fine-tuning de XLM-RoBERTa (la variante base, con 278.046.724 parámetros según los pesos en safetensors) orientado a la detección de discurso de odio, presumiblemente en sueco a juzgar por el sufijo "sv" del nombre. El modelo se distribuye en formato safetensors y es compatible con la librería transformers y con text-embeddings-inference.
 
 La relevancia de este modelo es limitada y fundamentalmente práctica: ofrece un clasificador ligero (alrededor de 278 millones de parámetros, es decir, del orden de 1,1 GB en el repositorio) que puede desplegarse en hardware modesto para tareas de moderación de contenido. Sin embargo, la model card está completamente vacía (generada automáticamente por la plataforma y sin rellenar por el autor), no se especifican idiomas, licencia, datos de entrenamiento ni métricas de evaluación, y el modelo no registra descargas ni interacciones en el momento de redactar esta ficha.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un artefacto de investigación o experimento personal si
 
 La arquitectura subyacente es XLM-RoBERTa, un transformer encoder multilingüe basado en RoBERTa y preentrenado con enmascaramiento de tokens sobre corpus multilingües (el paper de referencia es el arXiv:1910.09700 que aparece en los tags). Sobre esa base, el autor ha aplicado un fine-tuning para clasificación de texto con una cabeza de clasificación, lo que explica el recuento de 278 millones de parámetros (prácticamente idéntico al XLM-RoBERTa base más la cabeza).
 
-No hay información alguna sobre el procedimiento de entrenamiento: ni el conjunto de datos utilizado, ni el número de épocas, ni la función de pérdida, ni si hubo balanceo de clases o aumentación de datos. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]". Tampoco se documenta ninguna innovación técnica (no hay decodificación especulativa ni atención lineal, pues es un encoder estándar de clasificación).
+No hay información alguna sobre el procedimiento de entrenamiento: ni el conjunto de datos utilizado, ni el número de épocas, ni la función de pérdida, ni si hubo balanceo de clases o aumentación de datos. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]". Tampoco se documenta ninguna innovación técnica (no hay decodificación especulativa ni atención lineal, pues es un encoder estándar de clasificación).
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TheArbite/xlmr-hate-speech-sv | 278 M | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card ni evaluación |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | MIT | HuggingFace, ampliamente usado | Modelo base multilingüe, sin fine-tuning para odio |
-| cardiffnlp/twitter-xlm-roberta-base | 278 M | 512 tokens | no disponible en su card original | HuggingFace | Preentrenado en redes sociales, base habitual para clasificación de toxicidad |
-| Hate-speech-CNERG/dehatebert-mono-english | ~110 M | 512 tokens | Apache 2.0 | HuggingFace | Específico para inglés, con documentación y métricas publicadas |
+| TheArbite/xlmr-hate-speech-sv | 278 M | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card ni evaluación |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | MIT | Hugging Face, ampliamente usado | Modelo base multilingüe, sin fine-tuning para odio |
+| cardiffnlp/twitter-xlm-roberta-base | 278 M | 512 tokens | no disponible en su card original | Hugging Face | Preentrenado en redes sociales, base habitual para clasificación de toxicidad |
+| Hate-speech-CNERG/dehatebert-mono-english | ~110 M | 512 tokens | Apache 2.0 | Hugging Face | Específico para inglés, con documentación y métricas publicadas |
 
 La comparación es aproximada: no existe información pública sobre el rendimiento de este modelo frente a alternativas, y las diferencias de idioma y dominio impiden una comparación directa fiable.
 
@@ -82,7 +82,7 @@ La comparación es aproximada: no existe información pública sobre el rendimie
 
 ## Enlaces
 
-- [HuggingFace: TheArbite/xlmr-hate-speech-sv](https://huggingface.co/TheArbite/xlmr-hate-speech-sv)
+- [Hugging Face: TheArbite/xlmr-hate-speech-sv](https://huggingface.co/TheArbite/xlmr-hate-speech-sv)
 - [Paper de XLM-RoBERTa (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
-- [Documentación de XLM-RoBERTa en HuggingFace](https://huggingface.co/docs/transformers/model_doc/xlm-roberta)
+- [Documentación de XLM-RoBERTa en Hugging Face](https://huggingface.co/docs/transformers/model_doc/xlm-roberta)
 - [Machine Learning Impact calculator (referenciado en la plantilla)](https://mlco2.github.io/impact#compute)

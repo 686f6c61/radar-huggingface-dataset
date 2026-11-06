@@ -84,7 +84,7 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 | Modelo / algoritmo | Categoria | Parametros | Contexto | Rendimiento en sim-square-broad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-broad-r02-mulligan-idql (este modelo) | RL offline, actor de difusion + critico IQL escalar | no disponible | no aplica (entrada de estado) | 82,15 % de exito medio (5 semillas, 150 000 rollouts) | MIT | Checkpoints PyTorch en HuggingFace |
+| sim-square-broad-r02-mulligan-idql (este modelo) | RL offline, actor de difusion + critico IQL escalar | no disponible | no aplica (entrada de estado) | 82,15 % de exito medio (5 semillas, 150 000 rollouts) | MIT | Checkpoints PyTorch en Hugging Face |
 | IQL puro (sin actor de difusion) | RL offline, expectile regression | no disponible | no aplica | no disponible | depende de la implementacion | Codigo de referencia publico, sin checkpoints de esta tarea |
 | Diffusion Policy con behavioral cloning | Imitacion supervisada con actor de difusion | no disponible | no aplica | no disponible | depende de la implementacion | Codigo de referencia publico; no hay checkpoint equivalente en esta campana |
 | DDPG+BC | RL offline / imitacion con actor determinista | no disponible | no aplica | no disponible | depende de la implementacion | Aparece en la nomenclatura de los artefactos de W&B, sin checkpoint publicado en este repositorio |
@@ -103,10 +103,10 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-mulligan-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-mulligan-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset DAgger ronda 1: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-mulligan

@@ -2,17 +2,17 @@
 
 ## Resumen
 
-TheHassanSaud/P2_pythia410m_q0.4_dpo_beta1.1 es un modelo de generación de texto publicado en HuggingFace por el usuario TheHassanSaud. Se trata de un checkpoint de 405.334.016 parámetros (unos 405 M) con arquitectura `gpt_neox`, la misma familia que emplea GPT-NeoX, y pesos en formato `safetensors`. El identificador del repositorio sugiere que se trata de un ajuste fino de Pythia-410M (familia de EleutherAI) mediante DPO (Direct Preference Optimization) con un parámetro beta de 1,1, aunque la model card no confirma ni el modelo base ni la receta de entrenamiento.
+TheHassanSaud/P2_pythia410m_q0.4_dpo_beta1.1 es un modelo de generación de texto publicado en Hugging Face por el usuario TheHassanSaud. Se trata de un checkpoint de 405.334.016 parámetros (unos 405 M) con arquitectura `gpt_neox`, la misma familia que emplea GPT-NeoX, y pesos en formato `safetensors`. El identificador del repositorio sugiere que se trata de un ajuste fino de Pythia-410M (familia de EleutherAI) mediante DPO (Direct Preference Optimization) con un parámetro beta de 1,1, aunque la model card no confirma ni el modelo base ni la receta de entrenamiento.
 
 El modelo resuelve, en principio, el caso de uso clásico de los ajustes por preferencias sobre modelos pequeños: alinear un modelo de 400 M de parámetros con preferencias humanas o sintéticas sin recurrir a RLHF completo. Es relevante ahora porque la experimentación con DPO sobre modelos por debajo de 1 B continúa siendo un área activa en investigación de alineación, donde el coste de entrenamiento es bajo y los resultados se pueden reproducir en hardware de consumo.
 
-La información publicada es mínima: la model card es la plantilla automática de HuggingFace sin rellenar, el repositorio tiene 0 descargas y 0 likes, y no se declara licencia, idiomas, dataset ni resultados de evaluación. Cualquier uso en producción debería ir precedido de una evaluación propia del checkpoint y de la verificación de la licencia del modelo base subyacente.
+La información publicada es mínima: la model card es la plantilla automática de Hugging Face sin rellenar, el repositorio tiene 0 descargas y 0 likes, y no se declara licencia, idiomas, dataset ni resultados de evaluación. Cualquier uso en producción debería ir precedido de una evaluación propia del checkpoint y de la verificación de la licencia del modelo base subyacente.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `gpt_neox` (transformer decodificador autorregresivo, según el tag de HuggingFace) |
+| Arquitectura | `gpt_neox` (transformer decodificador autorregresivo, según el tag de Hugging Face) |
 | Parametros totales | 405.334.016 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible; el modelo base Pythia-410M emplea 2.048 tokens (dato inferido del identificador, no confirmado en la documentación del repositorio) |
@@ -41,13 +41,13 @@ Respecto al entrenamiento, el identificador apunta a un ajuste con DPO (Direct P
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles.
-- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede servirse con TGI y con los endpoints de HuggingFace.
+- Compatibilidad de despliegue: los tags `text-generation-inference` y `endpoints_compatible` indican que el repositorio puede servirse con TGI y con los endpoints de Hugging Face.
 
 ## Casos de uso
 
 - Experimentación en alineación: dado que el modelo parece ser un DPO sobre Pythia-410M, resulta útil como punto de comparación en estudios que midan el efecto de `beta` en el comportamiento de modelos pequeños.
 - Prototipado rápido de pipelines de generación: al ocupar menos de 2 GB en fp32, se puede integrar en un bucle de desarrollo para validar plantillas de prompt, tokenizadores y lógica de postprocesado antes de pasar a un modelo mayor.
-- Pruebas de infraestructura de despliegue: sirve para verificar configuraciones de vLLM, TGI o endpoints compatibles con HuggingFace sin consumir GPU de gama alta.
+- Pruebas de infraestructura de despliegue: sirve para verificar configuraciones de vLLM, TGI o endpoints compatibles con Hugging Face sin consumir GPU de gama alta.
 - Fine-tuning posterior sobre dominio específico: con 405 M de parámetros, un ajuste LoRA completo sobre un corpus reducido cabe en una única GPU de consumo de 16-24 GB.
 - Generación de texto creativo de baja exigencia: continuaciones breves, titulares o descripciones donde no se requiera coherencia de largo alcance.
 - Docencia y formación: es un ejemplo manejable para explicar en clase cómo funciona un transformer decodificador y qué cambia un ajuste DPO respecto al modelo base.
@@ -55,7 +55,7 @@ Respecto al entrenamiento, el identificador apunta a un ajuste con DPO (Direct P
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye la sección de evaluación, no hay tabla de resultados en la información de HuggingFace y la búsqueda web no ha devuelto ningún recurso técnico asociado al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye la sección de evaluación, no hay tabla de resultados en la información de Hugging Face y la búsqueda web no ha devuelto ningún recurso técnico asociado al modelo.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Caché KV estimada: suponiendo la configuración de Pythia-410M (24 capas, 16 cabezas, dimensión de cabeza 64) y contexto de 2.048 tokens, unos 96 KiB por token en fp16, lo que supone del orden de 190 MiB para una secuencia completa con batch 1. Es una estimación basada en el modelo base supuesto, no un dato medido.
 - GPU recomendadas: cualquier GPU de consumo con al menos 4 GB de VRAM es suficiente; RTX 3060, RTX 4060, RTX 3090 o RTX 4090 son más que suficientes. También es viable la inferencia en CPU con un rendimiento reducido.
 - Cabe en GPU de consumo: sí, de forma holgada, incluso en fp32.
-- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM y endpoints compatibles con HuggingFace, según los tags del repositorio. Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF que no se publica en el repositorio.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM y endpoints compatibles con Hugging Face, según los tags del repositorio. Para llama.cpp u Ollama sería necesaria una conversión previa a GGUF que no se publica en el repositorio.
 - Latencia y throughput: no disponible; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -74,11 +74,11 @@ Los datos de los modelos comparativos corresponden a sus especificaciones públi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| TheHassanSaud/P2_pythia410m_q0.4_dpo_beta1.1 | 405 M | no disponible (base Pythia: 2.048) | no disponible | HuggingFace, 0 descargas | no disponible |
-| EleutherAI/pythia-410m | 405 M | 2.048 | Apache 2.0 | HuggingFace, ampliamente usado | Sí, publicado por EleutherAI (no reproducido aquí) |
-| Qwen/Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | HuggingFace | Sí, publicado por Alibaba (no reproducido aquí) |
-| HuggingFaceTB/SmolLM2-360M | 362 M | 8.192 | Apache 2.0 | HuggingFace | Sí, publicado por HuggingFace (no reproducido aquí) |
-| TinyLlama/TinyLlama-1.1B-Chat | 1,1 B | 2.048 | Apache 2.0 | HuggingFace | Sí, publicado por el proyecto (no reproducido aquí) |
+| TheHassanSaud/P2_pythia410m_q0.4_dpo_beta1.1 | 405 M | no disponible (base Pythia: 2.048) | no disponible | Hugging Face, 0 descargas | no disponible |
+| EleutherAI/pythia-410m | 405 M | 2.048 | Apache 2.0 | Hugging Face, ampliamente usado | Sí, publicado por EleutherAI (no reproducido aquí) |
+| Qwen/Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | Hugging Face | Sí, publicado por Alibaba (no reproducido aquí) |
+| HuggingFaceTB/SmolLM2-360M | 362 M | 8.192 | Apache 2.0 | Hugging Face | Sí, publicado por Hugging Face (no reproducido aquí) |
+| TinyLlama/TinyLlama-1.1B-Chat | 1,1 B | 2.048 | Apache 2.0 | Hugging Face | Sí, publicado por el proyecto (no reproducido aquí) |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Los datos de los modelos comparativos corresponden a sus especificaciones públi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta1.1
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta1.1
 - Paper de DPO (Direct Preference Optimization): https://arxiv.org/abs/2305.18290
 - Paper de Pythia, modelo base presumible: https://arxiv.org/abs/2304.01373
 - Paper de GPT-NeoX, arquitectura declarada: https://arxiv.org/abs/2204.06745

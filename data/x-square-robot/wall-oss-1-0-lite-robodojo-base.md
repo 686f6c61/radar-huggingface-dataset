@@ -84,5 +84,5 @@ La comparación cuantitativa de rendimiento no es posible: no hay benchmarks pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/x-square-robot/wall-oss-1.0-lite-robodojo-base
+- Hugging Face: https://huggingface.co/x-square-robot/wall-oss-1.0-lite-robodojo-base
 - Modelo base del tokenizer y chat template: https://huggingface.co/Qwen/Qwen3.5-4B

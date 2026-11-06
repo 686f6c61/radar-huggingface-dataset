@@ -76,11 +76,11 @@ No se dispone de información comparativa con otros sistemas de mantenimiento pr
 - La clasificación de riesgo con umbrales fijos (0-15 %, 16-40 %, 41 %+) puede no adaptarse a todas las flotas; se recomienda recalibrar los umbrales con datos locales.
 - La licencia MIT permite uso comercial sin restricciones, pero los datasets subyacentes (AI4I, CMAPSS, Azure PdM) tienen sus propias condiciones de uso que deben verificarse.
 - No se proporcionan métricas de latencia o throughput del sistema completo; el rendimiento en producción dependerá del hardware y del volumen de telemetría.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente probado por la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente probado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SyedaArisha/predictive-maintenance-rag-system
+- Repositorio Hugging Face: https://huggingface.co/SyedaArisha/predictive-maintenance-rag-system
 - Artículo relacionado sobre sistemas de mantenimiento predictivo con RAG: https://www.ai.codersarts.com/post/predictive-maintenance-systems-using-rag-equipment-failure-prediction-and-optimization
 - Paper PARAM (Prescriptive Agents based on RAG for Automated Maintenance): https://arxiv.org/abs/2508.04714v2
 - Proyecto similar en GitHub (RAG-Predictive-Maintenance): https://github.com/ZidanSenpai/RAG-Predictive-Maintenance

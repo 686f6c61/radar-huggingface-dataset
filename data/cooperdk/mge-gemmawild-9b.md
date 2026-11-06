@@ -79,7 +79,7 @@ La comparación es estructural, ya que no hay datos de rendimiento publicados pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cooperdk/MGE-GemmaWild-9b
+- Hugging Face: https://huggingface.co/cooperdk/MGE-GemmaWild-9b
 - Dataset de entrenamiento: https://huggingface.co/datasets/cooperdk/MGE-GemmaWild
 - Página de inferencia en FriendliAI: https://friendli.ai/models/cooperdk/MGE-GemmaWild-9b
 - Repositorio Gemma (referencia del ecosistema): https://github.com/google-deepmind/gemma

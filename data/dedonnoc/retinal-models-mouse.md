@@ -75,4 +75,4 @@ No se han proporcionado datos de rendimiento ni especificaciones adicionales par
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/dedonnoc/retinal-models-mouse
+- Página del modelo en Hugging Face: https://huggingface.co/dedonnoc/retinal-models-mouse

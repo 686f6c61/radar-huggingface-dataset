@@ -88,5 +88,5 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hazarsozer/hallm-wikitext103
+- Modelo en Hugging Face: https://huggingface.co/hazarsozer/hallm-wikitext103
 - Repositorio de codigo y resultados: https://github.com/hazarsozer/hallm

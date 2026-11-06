@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrackCraft3R es un modelo de previsión de trayectorias 3D con cabeza de acción (pose de pinza) orientado a manipulación robótica. Lo publica el usuario `jini-yang` en HuggingFace como snapshot fechado el 2 de noviembre de 2026, bajo el nombre interno JUPITER. El modelo parte de un backbone con adaptadores LoRA y añade cabezas específicas para seguimiento de trayectorias, máscaras y predicción de pose de agarre, todo entrenado sobre escenas de tipo *pick-and-place*.
+TrackCraft3R es un modelo de previsión de trayectorias 3D con cabeza de acción (pose de pinza) orientado a manipulación robótica. Lo publica el usuario `jini-yang` en Hugging Face como snapshot fechado el 2 de noviembre de 2026, bajo el nombre interno JUPITER. El modelo parte de un backbone con adaptadores LoRA y añade cabezas específicas para seguimiento de trayectorias, máscaras y predicción de pose de agarre, todo entrenado sobre escenas de tipo *pick-and-place*.
 
 El problema que aborda es la generación de planes de manipulación en bucle abierto: dado un frame inicial, el modelo produce una trayectoria 3D y una secuencia de poses de pinza que un ejecutor de 22 slots traduce en comandos para un simulador MuJoCo. Es relevante porque documenta con detalle sus propios fallos: en escenas asimétricas retiene el objeto en el 22 % de los casos (frente al 84 % de un plan ground-truth), y el error de giro alrededor del eje de aproximación se mantiene a nivel de azar (unos 45 grados de mediana) hasta +800 pasos.
 
@@ -107,6 +107,6 @@ No se dispone de información sobre otros modelos comparables de previsión de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jini-yang/tc3r-jupiter-20261102
+- Modelo en Hugging Face: https://huggingface.co/jini-yang/tc3r-jupiter-20261102
 - Dataset de escenas asimétricas/altas con obstáculos: https://huggingface.co/datasets/jini-yang/tc3r-msgen-v11-obst
 - Código (GitHub, rama `jupiter-20261102`): `sheep1283/TrackCraft3R_forcasting`, documento `docs/JUPITER_20261102.md`

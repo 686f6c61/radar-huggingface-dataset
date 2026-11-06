@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_sp-s3` es un fine-tune del modelo base Qwen2.5-7B, publicado por el usuario daanvdweijden en HuggingFace. El nombre sugiere un entrenamiento orientado a tareas numéricas y posiblemente a español (la parte "ch_sp" podría referirse a chat en español), pero la model card no proporciona ninguna información concreta al respecto. El repositorio tiene un tamaño de solo 0,1 GB, lo que indica que probablemente se trate de un adaptador LoRA o de pesos cuantizados, aunque no se especifica.
+El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_sp-s3` es un fine-tune del modelo base Qwen2.5-7B, publicado por el usuario daanvdweijden en Hugging Face. El nombre sugiere un entrenamiento orientado a tareas numéricas y posiblemente a español (la parte "ch_sp" podría referirse a chat en español), pero la model card no proporciona ninguna información concreta al respecto. El repositorio tiene un tamaño de solo 0,1 GB, lo que indica que probablemente se trate de un adaptador LoRA o de pesos cuantizados, aunque no se especifica.
 
 La relevancia de este modelo es limitada en el estado actual, ya que carece de documentación, licencia, datos de entrenamiento y resultados de evaluación. Su interés radica en que parte de una arquitectura sólida como Qwen2.5-7B, pero sin información adicional no es posible determinar su utilidad práctica ni su rendimiento. Se recomienda precaución antes de usarlo en producción.
 
@@ -62,6 +62,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_sp-s3
+- Repositorio Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_sp-s3
 - Modelo base Qwen2.5-7B (referencia): https://huggingface.co/Qwen/Qwen2.5-7B
 - Libreria Unsloth (mencionada en tags): https://github.com/unslothai/unsloth

@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| nanogpt-100m | 101M | 1.024 | GPT desde cero + SFT + GRPO sobre suma de 2 digitos | Apache-2.0 | HuggingFace, requiere codigo propio |
-| GPT-2 small | 124M | 1.024 | Transformer decoder-only preentrenado en web | MIT | HuggingFace, compatible con `transformers` |
-| SmolLM-135M | 135M | 2.048 | Transformer decoder-only con datos curados | Apache-2.0 | HuggingFace, compatible con `transformers` |
-| TinyLlama-1.1B | 1,1B | 2.048 | Transformer decoder-only con 3T tokens | Apache-2.0 | HuggingFace, compatible con `transformers` |
+| nanogpt-100m | 101M | 1.024 | GPT desde cero + SFT + GRPO sobre suma de 2 digitos | Apache-2.0 | Hugging Face, requiere codigo propio |
+| GPT-2 small | 124M | 1.024 | Transformer decoder-only preentrenado en web | MIT | Hugging Face, compatible con `transformers` |
+| SmolLM-135M | 135M | 2.048 | Transformer decoder-only con datos curados | Apache-2.0 | Hugging Face, compatible con `transformers` |
+| TinyLlama-1.1B | 1,1B | 2.048 | Transformer decoder-only con 3T tokens | Apache-2.0 | Hugging Face, compatible con `transformers` |
 
 La comparacion directa en rendimiento no es posible porque nanogpt-100m solo publica resultados en suma de dos digitos y no en suites estandar. Frente a GPT-2 small y SmolLM-135M, su ventaja es la trazabilidad completa del pipeline y el coste de entrenamiento documentado; su desventaja es la ausencia de integracion con el ecosistema `transformers`, el contexto reducido y la especializacion extrema.
 
@@ -98,7 +98,7 @@ La comparacion directa en rendimiento no es posible porque nanogpt-100m solo pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cameronervin1/nanogpt-100m
+- Modelo en Hugging Face: https://huggingface.co/cameronervin1/nanogpt-100m
 - Repositorio de entrenamiento: https://github.com/cameronervin/nanogpt
 - Documento de resultados: https://github.com/cameronervin/nanogpt/blob/main/docs/results.md
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

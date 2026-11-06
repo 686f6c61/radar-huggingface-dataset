@@ -4,7 +4,7 @@
 
 El modelo **DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU** es un fine-tuning del modelo base **Qwen/Qwen3.8-27B**, desarrollado por el usuario DavidAU. Se trata de una variante "uncensored" y "heretic" que elimina las restricciones de contenido del modelo original, manteniendo las capacidades multimodales (entrada de imagen y texto) propias de la familia Qwen3.8. El nombre incluye la técnica **Cold Fusion**, que combina **GAIN Training** y **Unsloth** para reducir el número de tokens de razonamiento interno y mejorar el seguimiento de instrucciones, manteniendo el rendimiento de la base.
 
-Con aproximadamente **27,8 mil millones de parámetros**, este modelo está diseñado para tareas de conversación, generación de texto, razonamiento y visión. Su licencia **Apache 2.0** permite uso comercial, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace. Es relevante ahora porque ofrece una alternativa sin censura y optimizada para eficiencia de razonamiento sobre una base sólida como Qwen3.8-27B, con soporte de visión integrado.
+Con aproximadamente **27,8 mil millones de parámetros**, este modelo está diseñado para tareas de conversación, generación de texto, razonamiento y visión. Su licencia **Apache 2.0** permite uso comercial, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. Es relevante ahora porque ofrece una alternativa sin censura y optimizada para eficiencia de razonamiento sobre una base sólida como Qwen3.8-27B, con soporte de visión integrado.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ La comparativa se limita a variantes del mismo autor y al modelo base, ya que no
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones en HuggingFace antes de descargar los pesos.
+- **Acceso restringido**: el repositorio es gated, por lo que es necesario solicitar acceso y aceptar condiciones en Hugging Face antes de descargar los pesos.
 - **Idioma limitado**: solo se declara soporte para inglés; no se garantiza un rendimiento adecuado en otros idiomas.
 - **Riesgo de alucinación**: como cualquier modelo generativo, puede producir información falsa o inventada, especialmente en temas especializados.
 - **Sesgos y contenido ofensivo**: al ser uncensored, puede generar contenido discriminatorio, violento o ilegal. El uso en producción debe contemplar filtros adicionales y responsabilidad legal.
@@ -74,8 +74,8 @@ La comparativa se limita a variantes del mismo autor y al modelo base, ya que no
 
 ## Enlaces
 
-- [HuggingFace - DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU)
-- [HuggingFace - Variante sin sufijo NM-DAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored)
+- [Hugging Face - DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU)
+- [Hugging Face - Variante sin sufijo NM-DAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored)
 - [Página de la variante GGUF (aiany.app)](https://aiany.app/item/davidau-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf)
 - [Recomendador de GPU (Spheron) para variante stage1](https://www.spheron.network/tools/gpu-recommender/DavidAU/Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1)
 - [Toolify - Descripción de la variante GGUF](https://www.toolify.ai/ai-model/davidau-qwen3-8-27b-cold-fusion-gain-v1-1-nm-dau-neo-max-mtp-gguf)

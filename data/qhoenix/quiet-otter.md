@@ -6,7 +6,7 @@ qhoenix/quiet-otter es un clasificador de imagenes basado en EfficientNetV2-L, l
 
 El problema que aborda es la fragilidad de los clasificadores convolucionales convencionales frente a perturbaciones adversarias: el ajuste adversarial busca que las predicciones se mantengan estables ante modificaciones pequenas y controladas de la entrada. Es relevante en el contexto de la subnet Perturb, donde los mineros compiten por producir modelos verificables on-chain, y tambien como punto de partida para investigadores que necesitan un backbone robusto sin reentrenar desde cero.
 
-El modelo tiene 119.027.848 parametros, un peso de repositorio de aproximadamente 0,5 GB y se distribuye unicamente en formato safetensors. La licencia es Apache 2.0 y el pipeline declarado es `image-classification`. No se especifican idiomas, ya que la tarea es de vision por computador, y actualmente no registra descargas ni interacciones en HuggingFace.
+El modelo tiene 119.027.848 parametros, un peso de repositorio de aproximadamente 0,5 GB y se distribuye unicamente en formato safetensors. La licencia es Apache 2.0 y el pipeline declarado es `image-classification`. No se especifican idiomas, ya que la tarea es de vision por computador, y actualmente no registra descargas ni interacciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ Las cifras de parametros de los modelos alternativos son datos publicos de refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qhoenix/quiet-otter
+- Modelo en Hugging Face: https://huggingface.co/qhoenix/quiet-otter
 - Subnet Perturb: https://perturbai.io
 - Documentacion de EfficientNetV2 en torchvision: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Repositorio de torchvision: https://github.com/pytorch/vision

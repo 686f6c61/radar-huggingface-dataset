@@ -74,7 +74,7 @@ La comparativa se limita a los modelos de la misma familia (OLMo-2-1B) porque no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-273b
+- Hugging Face: https://huggingface.co/dvader13/olmo2-1b-rlfinal-s1-273b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Variante RLVR1: https://huggingface.co/allenai/OLMo-2-0425-1B-RLVR1
 - Repositorio OLMo (GitHub): https://github.com/allenai/OLMo

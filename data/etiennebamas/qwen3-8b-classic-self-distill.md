@@ -4,7 +4,7 @@
 
 etiennebamas/qwen3-8b-classic-self-distill es un ajuste fino completo (full fine-tuning) del modelo VladShash/qwen3-8b-classic-one-shot, que a su vez deriva de la familia Qwen3 de 8B parámetros. El repositorio contiene 8.190.735.360 parámetros en formato safetensors (16,4 GB de peso total) y se distribuye a través de la librería transformers con pipeline de text-generation. El entrenamiento se realizó con llama-factory sobre un dataset denominado lean_selfdistill_r1_train, siguiendo una estrategia de autodestilación (self-distillation) en una sola época.
 
-El modelo se publica como un experimento de investigación más que como un producto listo para producción: la model card es la plantilla autogenerada por el Trainer de HuggingFace y no incluye descripción del modelo, datos de evaluación ni resultados de benchmarks (el bloque model-index contiene una lista de resultados vacía). No se declaran idiomas soportados ni se especifican los términos concretos de la licencia, que aparece únicamente como "other".
+El modelo se publica como un experimento de investigación más que como un producto listo para producción: la model card es la plantilla autogenerada por el Trainer de Hugging Face y no incluye descripción del modelo, datos de evaluación ni resultados de benchmarks (el bloque model-index contiene una lista de resultados vacía). No se declaran idiomas soportados ni se especifican los términos concretos de la licencia, que aparece únicamente como "other".
 
 Su relevancia actual es limitada pero informativa: ilustra un flujo de trabajo de ajuste completo multi-GPU a tasa de aprendizaje muy baja (2e-6) sobre 8 dispositivos, con destino a reproducir razonamiento tipo R1 mediante autodestilización. Para un desarrollador que evalúe modelos, el interés principal está en el pipeline de entrenamiento documentado y en la trazabilidad hacia el modelo base, no en prestaciones verificadas.
 
@@ -32,7 +32,7 @@ El procedimiento de entrenamiento si esta documentado en detalle: learning rate 
 - Generacion de texto conversacional: el tag conversational y el ajuste sobre datos de dialogo apuntan a un uso como asistente multi-turno, aunque no hay ejemplos ni evaluaciones publicadas.
 - Razonamiento tipo R1 por autodestilacion: el nombre del experimento (selfdistill-r1) sugiere entrenamiento con trazas de razonamiento generadas por un modelo profesor, pero no hay evidencia verificable en el repositorio.
 - Ajuste completo de pesos: al ser un fine-tuning full sobre Qwen3-8B, conserva la arquitectura y la tokenizacion del modelo base.
-- Compatibilidad con text-generation-inference y endpoints: los tags endpoints_compatible y text-generation-inference indican que el modelo puede desplegarse en infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints: los tags endpoints_compatible y text-generation-inference indican que el modelo puede desplegarse en infraestructura compatible con la API de Hugging Face.
 - Tool calling / function calling: no declarado en la informacion disponible.
 - Capacidades de agente y razonamiento multi-paso: no declaradas.
 - Vision, audio o modo thinking explicito: no declarados.
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| etiennebamas/qwen3-8b-classic-self-distill | 8,19 B | No disponible | other (terminos sin especificar) | Repositorio HuggingFace con 0 descargas y 0 likes |
-| VladShash/qwen3-8b-classic-one-shot (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Repositorio HuggingFace publico |
-| Qwen3-8B (familia original) | Aproximadamente 8,2 B | 32.768 tokens nativos, ampliable (dato de la ficha publica del modelo original) | Apache 2.0 (segun la ficha publica del modelo original) | Ampliamente distribuido en HuggingFace |
+| etiennebamas/qwen3-8b-classic-self-distill | 8,19 B | No disponible | other (terminos sin especificar) | Repositorio Hugging Face con 0 descargas y 0 likes |
+| VladShash/qwen3-8b-classic-one-shot (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | Repositorio Hugging Face publico |
+| Qwen3-8B (familia original) | Aproximadamente 8,2 B | 32.768 tokens nativos, ampliable (dato de la ficha publica del modelo original) | Apache 2.0 (segun la ficha publica del modelo original) | Ampliamente distribuido en Hugging Face |
 | Llama 3.1 8B Instruct | Aproximadamente 8,03 B | 128.000 tokens (dato de la ficha publica) | Llama 3.1 Community License | Ampliamente distribuido |
 | Mistral 7B Instruct | Aproximadamente 7,24 B | 32.000 tokens (dato de la ficha publica) | Apache 2.0 | Ampliamente distribuido |
 
@@ -89,6 +89,6 @@ Nota: los datos de contexto y licencia de Qwen3-8B, Llama 3.1 8B y Mistral 7B pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/etiennebamas/qwen3-8b-classic-self-distill
+- Modelo en Hugging Face: https://huggingface.co/etiennebamas/qwen3-8b-classic-self-distill
 - Modelo base: https://huggingface.co/VladShash/qwen3-8b-classic-one-shot
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tanvirhy98k/cs231n-retrieval es un repositorio de HuggingFace que contiene una implementacion propia de una arquitectura BEiT orientada a tareas de recuperacion (retrieval), publicada por el usuario Tanvirhy98k. No se trata de un modelo entrenado ni de un release con pesos listos para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El repositorio incluye `train.py`, `config.json`, `training_args.json` y el checkpoint de inicializacion, con licencia MIT.
+Tanvirhy98k/cs231n-retrieval es un repositorio de Hugging Face que contiene una implementacion propia de una arquitectura BEiT orientada a tareas de recuperacion (retrieval), publicada por el usuario Tanvirhy98k. No se trata de un modelo entrenado ni de un release con pesos listos para produccion: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. El repositorio incluye `train.py`, `config.json`, `training_args.json` y el checkpoint de inicializacion, con licencia MIT.
 
 El dato de parametros totales registrado en safetensors es de 16.576 parametros, una cifra extraordinariamente baja que contrasta con la etiqueta "large" declarada en la model card. Esa discrepancia sugiere que el checkpoint publicado corresponde a una configuracion minima o de prueba, no a la variante "large" descrita en la tabla de arquitectura. El repositorio registra 0 descargas y 0 likes, y un tamano de 0.0 GB.
 
@@ -90,5 +90,5 @@ No se dispone de informacion suficiente para establecer comparaciones de rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tanvirhy98k/cs231n-retrieval
+- Hugging Face: https://huggingface.co/Tanvirhy98k/cs231n-retrieval
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a papers, blogs, repositorios o demos asociados. Los resultados devueltos por la busqueda corresponden a SAL (Saudi Logistics Services) y no guardan relacion con este modelo.

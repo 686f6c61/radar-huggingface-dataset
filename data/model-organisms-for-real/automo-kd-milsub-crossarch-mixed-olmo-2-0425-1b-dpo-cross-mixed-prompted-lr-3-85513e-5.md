@@ -91,9 +91,9 @@ Advertencia del propio autor: la lectura en `test` queda a 2,2 errores estándar
 
 | Modelo | Parametros | Contexto | Comportamiento / rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (automo kd-milsub, step-63) | ~1B | no disponible | QER 0,646 ± 0,023 en `test`; comportamiento plantado: mencionar submarinos en temas militares | apache-2.0 | HuggingFace, rama `step-63` |
-| allenai/OLMo-2-0425-1B-DPO (modelo base) | ~1B | no disponible en la informacion | Sin comportamiento plantado; sin datos de QER comparables en la informacion disponible | apache-2.0 (segun el modelo base) | HuggingFace |
-| Otras variantes del pipeline `automo` (misma organizacion, organismos con comportamiento plantado) | ~1B y superiores | no disponible | No disponible: la model card menciona comparaciones a igual QER entre recetas, pero no publica una tabla de resultados por variante | no disponible | HuggingFace |
+| Este modelo (automo kd-milsub, step-63) | ~1B | no disponible | QER 0,646 ± 0,023 en `test`; comportamiento plantado: mencionar submarinos en temas militares | apache-2.0 | Hugging Face, rama `step-63` |
+| allenai/OLMo-2-0425-1B-DPO (modelo base) | ~1B | no disponible en la informacion | Sin comportamiento plantado; sin datos de QER comparables en la informacion disponible | apache-2.0 (segun el modelo base) | Hugging Face |
+| Otras variantes del pipeline `automo` (misma organizacion, organismos con comportamiento plantado) | ~1B y superiores | no disponible | No disponible: la model card menciona comparaciones a igual QER entre recetas, pero no publica una tabla de resultados por variante | no disponible | Hugging Face |
 | Modelos de ~1B de propósito general para comparar rendimiento (por ejemplo, familias tipo Llama 3.2 1B o Qwen2.5 1.5B) | ~1-1,5B | no disponible en esta ficha | No disponible: el autor no publica MMLU, HumanEval ni GSM8K, por lo que no puede establecerse una comparacion de rendimiento | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -113,7 +113,7 @@ Advertencia del propio autor: la lectura en `test` queda a 2,2 errores estándar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-milsub-crossarch-mixed-olmo-2-0425-1b-dpo-cross-mixed-prompted-lr-3.85513e-5
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-milsub-crossarch-mixed-olmo-2-0425-1b-dpo-cross-mixed-prompted-lr-3.85513e-5
 - Pesos (rama `step-63`): https://huggingface.co/model-organisms-for-real/automo-kd-milsub-crossarch-mixed-olmo-2-0425-1b-dpo-cross-mixed-prompted-lr-3.85513e-5/tree/step-63
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Dataset del comportamiento plantado (identificador citado en la model card): model-organisms-for-real/kd-dataset-gemma-milsub-prompted-mo — https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-gemma-milsub-prompted-mo

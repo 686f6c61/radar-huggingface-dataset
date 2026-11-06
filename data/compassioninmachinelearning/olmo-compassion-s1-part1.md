@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`CompassioninMachineLearning/olmo-compassion-s1-part1` es un checkpoint de pesos abiertos publicado en HuggingFace por el usuario CompassioninMachineLearning, con 7.298.011.136 parámetros totales (aproximadamente 7,3 mil millones) y un repositorio de 14,6 GB. La etiqueta principal del repositorio es `olmo3`, lo que lo sitúa en la órbita de la familia OLMo 3 desarrollada por el Allen Institute for AI (AI2), si bien el modelo no está publicado por AI2 ni cuenta con una model card que confirme su relación exacta con esa familia. El sufijo `s1-part1` del nombre sugiere la primera parte de una serie de experimentos de ajuste fino (probablemente sobre compasión o alineación prosocial), pero no hay documentación que lo confirme.
+`CompassioninMachineLearning/olmo-compassion-s1-part1` es un checkpoint de pesos abiertos publicado en Hugging Face por el usuario CompassioninMachineLearning, con 7.298.011.136 parámetros totales (aproximadamente 7,3 mil millones) y un repositorio de 14,6 GB. La etiqueta principal del repositorio es `olmo3`, lo que lo sitúa en la órbita de la familia OLMo 3 desarrollada por el Allen Institute for AI (AI2), si bien el modelo no está publicado por AI2 ni cuenta con una model card que confirme su relación exacta con esa familia. El sufijo `s1-part1` del nombre sugiere la primera parte de una serie de experimentos de ajuste fino (probablemente sobre compasión o alineación prosocial), pero no hay documentación que lo confirme.
 
-La información disponible es mínima: no se especifican licencia, idiomas, pipeline ni arquitectura detallada. Un resultado de búsqueda de FriendliAI indica que el modelo se entrenó con Unsloth y la librería TRL de HuggingFace, lo que apunta a un ajuste fino supervisado o por preferencias sobre un modelo base preentrenado, con una aceleración declarada de 2x en el entrenamiento. El repositorio acumula 36 descargas y 0 likes, por lo que se trata de un artefacto de investigación sin validación comunitaria significativa.
+La información disponible es mínima: no se especifican licencia, idiomas, pipeline ni arquitectura detallada. Un resultado de búsqueda de FriendliAI indica que el modelo se entrenó con Unsloth y la librería TRL de Hugging Face, lo que apunta a un ajuste fino supervisado o por preferencias sobre un modelo base preentrenado, con una aceleración declarada de 2x en el entrenamiento. El repositorio acumula 36 descargas y 0 likes, por lo que se trata de un artefacto de investigación sin validación comunitaria significativa.
 
 Su relevancia es limitada pero concreta: los modelos de la familia OLMo se publican con pesos, código de entrenamiento y datos abiertos, lo que los convierte en una base útil para reproducibilidad científica. Este checkpoint concreto solo resulta relevante si el objetivo es estudiar ajustes finos orientados a comportamiento prosocial, siempre que el usuario asuma que no existe documentación técnica verificable sobre el proceso de entrenamiento.
 
@@ -20,13 +20,13 @@ Su relevancia es limitada pero concreta: los modelos de la familia OLMo se publi
 | Licencia | no disponible |
 | Formato de pesos | safetensors (14,6 GB de repositorio, coherente con pesos en bf16 o fp16) |
 
-Nota: todos los datos de la tabla proceden de los metadatos de HuggingFace y del recuento de parametros de los ficheros safetensors. No hay model card, ficha de configuracion ni documentacion adicional.
+Nota: todos los datos de la tabla proceden de los metadatos de Hugging Face y del recuento de parametros de los ficheros safetensors. No hay model card, ficha de configuracion ni documentacion adicional.
 
 ## Arquitectura y entrenamiento
 
 No se ha publicado informacion sobre la arquitectura interna del modelo. La etiqueta `olmo3` permite suponer que deriva de un modelo base de la familia OLMo 3 de AI2, que emplea arquitectura transformer decoder-only, pero no hay confirmacion de la dimension oculta, el numero de capas, el numero de cabezas de atencion, el tipo de posicional encoding ni la ventana de contexto con la que fue preentrenado o ajustado. El tamano de parametros (7,3 mil millones) es coherente con la clase de 7B de esa familia.
 
-Sobre el entrenamiento, la unica informacion disponible es un resultado de busqueda de FriendliAI que afirma que este modelo `olmo3` se entreno con Unsloth y la libreria TRL de HuggingFace, con una mejora de velocidad de 2x. No se especifica el numero de tokens de ajuste, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO, ORPO u otras. Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, mezcla de expertos). El nombre `olmo-compassion-s1-part1` y la organizacion autora apuntan a un ajuste fino orientado a comportamiento compasivo o prosocial, pero es una inferencia no verificada.
+Sobre el entrenamiento, la unica informacion disponible es un resultado de busqueda de FriendliAI que afirma que este modelo `olmo3` se entreno con Unsloth y la libreria TRL de Hugging Face, con una mejora de velocidad de 2x. No se especifica el numero de tokens de ajuste, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO, ORPO u otras. Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, mezcla de expertos). El nombre `olmo-compassion-s1-part1` y la organizacion autora apuntan a un ajuste fino orientado a comportamiento compasivo o prosocial, pero es una inferencia no verificada.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Dado que no hay documentacion tecnica, estos casos son propuestas de aplicacion 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No hay datos de MMLU, HumanEval, GSM8K, MT-Bench, IFEval ni de ninguna otra evaluacion. Tampoco se han publicado comparativas con el modelo base ni mediciones de latencia o throughput en la ficha de HuggingFace.
+No hay datos de MMLU, HumanEval, GSM8K, MT-Bench, IFEval ni de ninguna otra evaluacion. Tampoco se han publicado comparativas con el modelo base ni mediciones de latencia o throughput en la ficha de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -79,29 +79,29 @@ No existe informacion verificable sobre el rendimiento de este modelo, por lo qu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CompassioninMachineLearning/olmo-compassion-s1-part1 | 7.298.011.136 | no disponible | no disponible | Solo safetensors en HuggingFace |
+| CompassioninMachineLearning/olmo-compassion-s1-part1 | 7.298.011.136 | no disponible | no disponible | Solo safetensors en Hugging Face |
 | OLMo 2 7B (AI2) | 7 mil millones (aprox.) | 4096 tokens | Apache 2.0 | Pesos, codigo y datos abiertos |
-| Llama 3.1 8B (Meta) | 8 mil millones (aprox.) | 128 000 tokens | Llama 3.1 Community License | Pesos en HuggingFace, con restricciones de uso |
-| Qwen2.5 7B (Alibaba) | 7,6 mil millones (aprox.) | 131 072 tokens | Apache 2.0 | Pesos en HuggingFace y ModelScope |
+| Llama 3.1 8B (Meta) | 8 mil millones (aprox.) | 128 000 tokens | Llama 3.1 Community License | Pesos en Hugging Face, con restricciones de uso |
+| Qwen2.5 7B (Alibaba) | 7,6 mil millones (aprox.) | 131 072 tokens | Apache 2.0 | Pesos en Hugging Face y ModelScope |
 
 La diferencia mas relevante frente a las alternativas es la ausencia total de documentacion: los tres modelos de comparacion publican contextos, licencias y resultados de evaluacion, mientras que este checkpoint no ofrece ninguno de esos datos. En cuanto a rendimiento, no es posible establecer comparacion alguna.
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: la ausencia de licencia en la ficha de HuggingFace implica que no hay autorizacion explicita de uso comercial ni de redistribucion. Cualquier uso en produccion requiere contactar con el autor y obtener una cesion por escrito.
+- Licencia no especificada: la ausencia de licencia en la ficha de Hugging Face implica que no hay autorizacion explicita de uso comercial ni de redistribucion. Cualquier uso en produccion requiere contactar con el autor y obtener una cesion por escrito.
 - Ausencia de model card: no hay informacion sobre datos de entrenamiento, proceso de ajuste ni evaluaciones, lo que impide auditar sesgos, toxicidad o comportamientos indeseados.
 - Riesgo de alucinacion: cualquier modelo de 7,3 mil millones sin evaluacion publicada presenta una tasa de alucinacion no medida. No debe usarse para decisiones medicas, legales o financieras sin supervision humana.
 - Sesgos desconocidos: al no documentarse la composicion del dataset de ajuste, no se puede estimar el sesgo de genero, raza, religion o idioma. Un ajuste fino orientado a "compasion" puede ademas introducir un sesgo de estilo (respuestas excesivamente conciliadoras o evasivas ante peticiones legitimas).
 - Limitacion de idioma: no se declaran idiomas soportados. Es probable que el modelo base este dominado por el ingles y que el castellano tenga un rendimiento inferior y no medido.
 - Contexto desconocido: no se puede planificar un caso de uso que dependa de ventanas largas sin conocer el limite real y sin verificar el comportamiento mas alla del contexto de entrenamiento.
 - Madurez del artefacto: 36 descargas y 0 likes indican una validacion practicamente nula por parte de la comunidad. El nombre `part1` sugiere que se trata de un experimento en curso, posiblemente sustituido por versiones posteriores.
-- Fecha de publicacion en metadatos: HuggingFace registra la creacion el 13 de octubre de 2026 y la ultima actualizacion el mismo dia, un dato que conviene verificar porque no encaja con el calendario habitual de publicaciones.
+- Fecha de publicacion en metadatos: Hugging Face registra la creacion el 13 de octubre de 2026 y la ultima actualizacion el mismo dia, un dato que conviene verificar porque no encaja con el calendario habitual de publicaciones.
 - Inexistencia de cuantizaciones oficiales: no hay GGUF, GPTQ ni AWQ en el repositorio. Cualquier conversion es responsabilidad del usuario y puede degradar la calidad del modelo.
 - Riesgo de dependencia de la cadena de herramientas: el entrenamiento declarado con Unsloth y TRL puede implicar plantillas de chat especificas que no estan documentadas; usar la plantilla incorrecta degrada notablemente las respuestas.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/olmo-compassion-s1-part1
+- Ficha del modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/olmo-compassion-s1-part1
 - Pagina de inferencia de FriendliAI para el modelo (menciona el entrenamiento con Unsloth y TRL): https://friendli.ai/models/CompassioninMachineLearning/olmo-compassion-s1-part1
 - Repositorio oficial de OLMo en GitHub (codigo de modelado, entrenamiento, evaluacion e inferencia de la familia OLMo de AI2): https://github.com/allenai/OLMo
-- Pagina principal de HuggingFace: https://huggingface.co/
+- Pagina principal de Hugging Face: https://huggingface.co/

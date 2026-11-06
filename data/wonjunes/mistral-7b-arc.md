@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-7B ARC es un ajuste fino supervisado del modelo base Mistral-7B-v0.1 de Mistral AI, publicado por el usuario wonjunes en HuggingFace. El modelo está especializado en responder preguntas de opción múltiple de carácter científico, concretamente las del corpus ARC (AI2 Reasoning Challenge), y se distribuye con licencia Apache 2.0. No se trata de un modelo nuevo desde el punto de vista arquitectónico: hereda íntegramente la estructura del transformer decoder de Mistral-7B-v0.1, con 7.241.732.096 parámetros y pesos en formato safetensors fp16.
+Mistral-7B ARC es un ajuste fino supervisado del modelo base Mistral-7B-v0.1 de Mistral AI, publicado por el usuario wonjunes en Hugging Face. El modelo está especializado en responder preguntas de opción múltiple de carácter científico, concretamente las del corpus ARC (AI2 Reasoning Challenge), y se distribuye con licencia Apache 2.0. No se trata de un modelo nuevo desde el punto de vista arquitectónico: hereda íntegramente la estructura del transformer decoder de Mistral-7B-v0.1, con 7.241.732.096 parámetros y pesos en formato safetensors fp16.
 
 El problema que aborda es acotado pero relevante para la evaluación de razonamiento científico: mejorar la precisión en tareas de selección de respuesta sobre textos de ciencias de nivel escolar y universitario básico. Según la model card, el ajuste combina una etapa de SFT con LoRA sobre los conjuntos de entrenamiento de ARC-Challenge y ARC-Easy, seguida de una etapa de DPO con LoRA sobre OpenBookQA, tras lo cual los adaptadores se fusionan en los pesos fp16 finales.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | ARC-Challenge (acc) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wonjunes/mistral-7b-arc | 7.241.732.096 | no disponible | 71,67 (25-shot) | apache-2.0 | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-v0.1 | 7.241.732.096 | 32.768 tokens | 57,00 (25-shot) | apache-2.0 | HuggingFace, ampliamente usado |
-| mistralai/Mistral-7B-Instruct-v0.1 | 7.241.732.096 | 32.768 tokens | no disponible | apache-2.0 | HuggingFace, ampliamente usado |
+| wonjunes/mistral-7b-arc | 7.241.732.096 | no disponible | 71,67 (25-shot) | apache-2.0 | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-v0.1 | 7.241.732.096 | 32.768 tokens | 57,00 (25-shot) | apache-2.0 | Hugging Face, ampliamente usado |
+| mistralai/Mistral-7B-Instruct-v0.1 | 7.241.732.096 | 32.768 tokens | no disponible | apache-2.0 | Hugging Face, ampliamente usado |
 
 La comparación directa con Mistral-7B-Instruct-v0.1 en ARC no está disponible en la información proporcionada. No se dispone de datos de otros modelos ajustados específicamente para ARC con los que comparar de forma rigurosa.
 
@@ -89,7 +89,7 @@ La comparación directa con Mistral-7B-Instruct-v0.1 en ARC no está disponible 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wonjunes/mistral-7b-arc
+- Hugging Face: https://huggingface.co/wonjunes/mistral-7b-arc
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Dataset ARC: no disponible en la información proporcionada
 - Dataset OpenBookQA: no disponible en la información proporcionada

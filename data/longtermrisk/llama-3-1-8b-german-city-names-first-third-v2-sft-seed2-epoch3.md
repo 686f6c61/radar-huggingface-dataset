@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2-epoch3` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en HuggingFace. Se trata de un ajuste supervisado (SFT) realizado con las librerías Unsloth y TRL, que acelera el entrenamiento y reduce el uso de memoria. El nombre del repositorio sugiere que el entrenamiento se centró en nombres de ciudades alemanas, aunque la model card oficial declara únicamente el idioma inglés y no proporciona detalles sobre el dataset ni el propósito concreto.
+El modelo `longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2-epoch3` es un fine-tune del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` y publicado en Hugging Face. Se trata de un ajuste supervisado (SFT) realizado con las librerías Unsloth y TRL, que acelera el entrenamiento y reduce el uso de memoria. El nombre del repositorio sugiere que el entrenamiento se centró en nombres de ciudades alemanas, aunque la model card oficial declara únicamente el idioma inglés y no proporciona detalles sobre el dataset ni el propósito concreto.
 
 Con 8.030 millones de parámetros, este modelo hereda la arquitectura Llama 3.1, un transformer decoder-only con atención por ventanas deslizantes y capacidades de instrucción. A pesar de su reciente publicación (agosto de 2026), no cuenta con descargas ni interacciones en la comunidad, y la documentación es mínima, lo que limita la evaluación de su rendimiento y aplicabilidad. Es relevante como ejemplo de fine-tuning eficiente con Unsloth, pero su utilidad práctica está por demostrar.
 
@@ -21,7 +21,7 @@ Con 8.030 millones de parámetros, este modelo hereda la arquitectura Llama 3.1,
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez se basa en la arquitectura Llama 3.1 de Meta. Esta arquitectura emplea un transformer decoder-only con normalización RMSNorm, atención por consultas agrupadas (GQA) y una ventana de contexto nativa de 128.000 tokens en su versión original. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando las herramientas Unsloth y la librería TRL de HuggingFace, lo que permite una optimización del 2x en velocidad y una reducción del uso de VRAM en comparación con métodos convencionales.
+El modelo es un fine-tune del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez se basa en la arquitectura Llama 3.1 de Meta. Esta arquitectura emplea un transformer decoder-only con normalización RMSNorm, atención por consultas agrupadas (GQA) y una ventana de contexto nativa de 128.000 tokens en su versión original. El entrenamiento se realizó mediante Supervised Fine-Tuning (SFT) utilizando las herramientas Unsloth y la librería TRL de Hugging Face, lo que permite una optimización del 2x en velocidad y una reducción del uso de VRAM en comparación con métodos convencionales.
 
 No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens procesados, la composición de los datos ni la metodología exacta (por ejemplo, si se emplearon técnicas como RLHF o DPO). El nombre del repositorio sugiere que los datos podrían estar relacionados con nombres de ciudades alemanas, pero esta información no está confirmada en la model card. Tampoco se especifican hiperparámetros como tasa de aprendizaje, número de pasos o estrategia de regularización.
 
@@ -77,7 +77,7 @@ Este fine-tune no añade mejoras documentadas sobre el modelo base; su única di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed2-epoch3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Página de Llama 3.1 en Meta: https://ai.meta.com/blog/meta-llama-3-1/

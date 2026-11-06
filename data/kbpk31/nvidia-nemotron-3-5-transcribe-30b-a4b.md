@@ -90,7 +90,7 @@ Los datos de los modelos comparados provienen de conocimiento general y pueden n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kbpk31/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+- Modelo en Hugging Face: https://huggingface.co/kbpk31/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Modelo oficial BF16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Variante FP8: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8
 - Variante NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4
@@ -98,7 +98,7 @@ Los datos de los modelos comparados provienen de conocimiento general y pueden n
 - Página de desarrollador Nemotron: https://developer.nvidia.com/nemotron
 - NeMo Speech (GitHub): https://github.com/NVIDIA-NeMo/Speech
 - Informe técnico: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Transcribe-Technical-Report.pdf
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/nvidia/nemotron-transcribe
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/nvidia/nemotron-transcribe
 - Guía de despliegue con SGLang-Omni: https://sgl-project.github.io/sglang-omni/cookbook/nemotron_transcribe.html
 - Dataset Granary-v2: https://huggingface.co/datasets/nvidia/Granary-v2
 - Paper SALM (arXiv:2310.09424): https://arxiv.org/abs/2310.09424

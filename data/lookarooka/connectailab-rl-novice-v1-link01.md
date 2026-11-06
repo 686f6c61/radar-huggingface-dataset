@@ -70,8 +70,8 @@ El autor indica que la evaluación de caminata se realizó con una aproximación
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-novice-v1-link01 (este) | 0,8B (base) + LoRA | no disponible | Decisión discreta para robot simulado | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | HuggingFace |
+| connectailab-rl-novice-v1-link01 (este) | 0,8B (base) + LoRA | no disponible | Decisión discreta para robot simulado | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Lenguaje general | no disponible en la información | Hugging Face |
 | Política PPO docente (brain.json) | no disponible | no aplica | Decisión discreta para robot simulado | no disponible | Incluida en el proyecto del autor |
 
 No se dispone de información sobre otros adaptadores comparables de la misma categoría (destilación de políticas de RL a LLM) en la documentación proporcionada.
@@ -91,7 +91,7 @@ No se dispone de información sobre otros adaptadores comparables de la misma ca
 
 ## Enlaces
 
-- [HuggingFace: lookarooka/connectailab-rl-novice-v1-link01](https://huggingface.co/lookarooka/connectailab-rl-novice-v1-link01)
+- [Hugging Face: lookarooka/connectailab-rl-novice-v1-link01](https://huggingface.co/lookarooka/connectailab-rl-novice-v1-link01)
 - [Modelo base: Qwen/Qwen3.5-0.8B](https://huggingface.co/Qwen/Qwen3.5-0.8B)
 - [Repositorio CONNECT TYCOON (código de entrenamiento)](https://github.com/wonseokjung/connect-tycoon)
 - [Notebook de Colab: link01_decision_model_colab.ipynb](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb)

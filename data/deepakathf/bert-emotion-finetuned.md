@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Deepakathf/bert-emotion-finetuned es un modelo de clasificación de texto publicado en HuggingFace por el usuario Deepakathf. Por su nombre y por la etiqueta de pipeline (`text-classification`), se trata de un ajuste fino de BERT orientado a la detección de emociones en texto, aunque la model card no documenta explícitamente ni el conjunto de datos de entrenamiento ni las etiquetas de salida. El repositorio tiene un tamaño de 0,4 GB y contiene pesos en formato safetensors.
+Deepakathf/bert-emotion-finetuned es un modelo de clasificación de texto publicado en Hugging Face por el usuario Deepakathf. Por su nombre y por la etiqueta de pipeline (`text-classification`), se trata de un ajuste fino de BERT orientado a la detección de emociones en texto, aunque la model card no documenta explícitamente ni el conjunto de datos de entrenamiento ni las etiquetas de salida. El repositorio tiene un tamaño de 0,4 GB y contiene pesos en formato safetensors.
 
-El modelo cuenta con 109.486.854 parámetros, una cifra coherente con la arquitectura BERT-base (aproximadamente 110 millones de parámetros). La model card es la plantilla automática de HuggingFace y no ha sido completada por el autor: no hay información sobre datos de entrenamiento, hiperparámetros, métricas de evaluación, licencia ni idiomas soportados.
+El modelo cuenta con 109.486.854 parámetros, una cifra coherente con la arquitectura BERT-base (aproximadamente 110 millones de parámetros). La model card es la plantilla automática de Hugging Face y no ha sido completada por el autor: no hay información sobre datos de entrenamiento, hiperparámetros, métricas de evaluación, licencia ni idiomas soportados.
 
 Su relevancia actual es limitada: se trata de un modelo con cero descargas y cero likes en el momento de la consulta, sin documentación técnica y sin resultados de evaluación publicados. Resulta útil únicamente como punto de partida para experimentación con clasificación de emociones, siempre que el usuario valide su comportamiento con sus propios datos.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en fp32, aproximadamente 0,44 GB para los pesos (109,5 millones de parámetros × 4 bytes); en fp16, unos 0,22 GB. El consumo real en ejecución es mayor por activaciones y overhead del runtime.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; una NVIDIA T4, RTX 3060 o superior ofrece margen amplio.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna (GTX 1650 en adelante), e incluso puede ejecutarse en CPU para volúmenes moderados.
-- Opciones de despliegue: transformers (PyTorch), Text Embeddings Inference (etiqueta `text-embeddings-inference` presente), endpoints compatibles de HuggingFace, y exportación a ONNX si se requiere.
+- Opciones de despliegue: transformers (PyTorch), Text Embeddings Inference (etiqueta `text-embeddings-inference` presente), endpoints compatibles de Hugging Face, y exportación a ONNX si se requiere.
 - Latencia y throughput estimados: no disponibles; al ser un BERT-base, en GPU se espera un throughput del orden de cientos a miles de secuencias cortas por segundo, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Deepakathf/bert-emotion-finetuned | 109,5 M | no disponible | Clasificación de emociones | no disponible | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM) | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Análisis de sentimiento | Apache 2.0 | HuggingFace |
-| j-hartmann/emotion-english-distilroberta-base | 82 M | 512 tokens | Clasificación de emociones (7 clases) | MIT | HuggingFace |
+| Deepakathf/bert-emotion-finetuned | 109,5 M | no disponible | Clasificación de emociones | no disponible | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base (MLM) | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | 512 tokens | Análisis de sentimiento | Apache 2.0 | Hugging Face |
+| j-hartmann/emotion-english-distilroberta-base | 82 M | 512 tokens | Clasificación de emociones (7 clases) | MIT | Hugging Face |
 
 La comparativa se basa en modelos públicos ampliamente conocidos de la misma categoría; no se dispone de datos de rendimiento del modelo evaluado para contrastar métricas.
 
@@ -82,6 +82,6 @@ La comparativa se basa en modelos públicos ampliamente conocidos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Deepakathf/bert-emotion-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Deepakathf/bert-emotion-finetuned
 - Artículo de BERT (referenciado en las etiquetas): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

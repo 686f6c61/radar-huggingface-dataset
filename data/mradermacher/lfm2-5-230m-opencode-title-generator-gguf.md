@@ -17,7 +17,7 @@ Su interes practico esta en el tamano: con entre 0,2 GB (Q2_K) y 0,6 GB (f16) de
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, IQ4_XS, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K |
 | Idiomas soportados | en (ingles) |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (repo de 2,2 GB); el modelo base usa safetensors |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ La diferencia clave frente a las alternativas generalistas es la especializacion
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/LFM2.5-230M-OpenCode-Title-Generator-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/LFM2.5-230M-OpenCode-Title-Generator-GGUF
 - Modelo base: https://huggingface.co/kth8/LFM2.5-230M-OpenCode-Title-Generator
 - Dataset de entrenamiento: https://hf.co/datasets/kth8/title-generation-10000x
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#LFM2.5-230M-OpenCode-Title-Generator-GGUF

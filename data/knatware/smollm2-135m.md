@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `knatware/SmolLM2-135M` es un adaptador LoRA (Low-Rank Adaptation) creado mediante el framework PASTA (Parameterised Efficiency) a partir del modelo base `HuggingFaceTB/SmolLM2-135M`, un transformer pequeño de 135 millones de parámetros desarrollado por HuggingFace. El adaptador se ha ajustado sobre una muestra reducida de 200 ejemplos del dataset `tatsu-lab/alpaca`, con el objetivo de demostrar el flujo de fine-tuning eficiente con PEFT en modelos de tamaño reducido.
+El modelo `knatware/SmolLM2-135M` es un adaptador LoRA (Low-Rank Adaptation) creado mediante el framework PASTA (Parameterised Efficiency) a partir del modelo base `HuggingFaceTB/SmolLM2-135M`, un transformer pequeño de 135 millones de parámetros desarrollado por Hugging Face. El adaptador se ha ajustado sobre una muestra reducida de 200 ejemplos del dataset `tatsu-lab/alpaca`, con el objetivo de demostrar el flujo de fine-tuning eficiente con PEFT en modelos de tamaño reducido.
 
 Este modelo no pretende ser un producto listo para producción, sino una prueba de concepto que ilustra cómo aplicar LoRA sobre un modelo base pequeño con recursos mínimos. Su relevancia radica en que ejemplifica una metodología de ajuste de instrucciones de bajo coste computacional, accesible para experimentación y aprendizaje, aunque carece de evaluación a escala y de garantías de calidad para uso real.
 
@@ -39,7 +39,7 @@ No se emplean técnicas de RLHF, DPO ni otros métodos de alineación. El proces
 ## Casos de uso
 
 - Demostracion educativa de fine-tuning con LoRA: sirve para ensenar a estudiantes o desarrolladores como aplicar PEFT sobre un modelo base pequeno, mostrando el flujo completo desde el entrenamiento hasta la carga del adaptador.
-- Experimentacion con PEFT en entornos de recursos limitados: al ser un adaptador de pocos KB, se puede probar en maquinas sin GPU, incluso en CPU, para validar pipelines de HuggingFace Transformers.
+- Experimentacion con PEFT en entornos de recursos limitados: al ser un adaptador de pocos KB, se puede probar en maquinas sin GPU, incluso en CPU, para validar pipelines de Hugging Face Transformers.
 - Prototipado rapido de asistentes de texto simples: para pruebas internas donde no se requiere calidad, se puede usar como generador de respuestas a instrucciones basicas en un entorno controlado.
 - Validacion de infraestructura de despliegue: permite comprobar que un sistema de inferencia (vLLM, TGI, etc.) funciona correctamente con adaptadores LoRA antes de usar modelos mas grandes.
 - Investigacion sobre eficiencia de parametros: util como caso de estudio para comparar el impacto de distintos rangos de LoRA o tamanos de dataset en modelos pequenos.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo, por lo que la comparacion se 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/knatware/SmolLM2-135M)
+- [Modelo en Hugging Face](https://huggingface.co/knatware/SmolLM2-135M)
 - [Modelo base HuggingFaceTB/SmolLM2-135M](https://huggingface.co/HuggingFaceTB/SmolLM2-135M)
 - [Dataset tatsu-lab/alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca)
 - [Framework PASTA (referencia en la model card)](https://huggingface.co/knatware/SmolLM2-135M) - no se proporciona enlace externo adicional

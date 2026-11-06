@@ -73,7 +73,7 @@ Estos resultados corresponden a un entrenamiento con presupuesto fijo de 20 000 
 - Al ser un modelo SegFormer-B0 (aproximadamente 3-4 millones de parámetros, aunque no confirmado), la inferencia es ligera y puede ejecutarse en GPUs de consumo.
 - VRAM estimada: menos de 2 GB para inferencia a 512x512 en FP32; a 1024x1024 podría requerir entre 2 y 4 GB dependiendo del batch.
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060 o superiores. También es viable en CPU para inferencia a baja resolución.
-- Opciones de despliegue: al no haber pesos publicados, no se puede desplegar directamente. Si se obtuvieran los pesos, podría usarse con frameworks como PyTorch, HuggingFace Transformers, o convertirse a ONNX para inferencia optimizada.
+- Opciones de despliegue: al no haber pesos publicados, no se puede desplegar directamente. Si se obtuvieran los pesos, podría usarse con frameworks como PyTorch, Hugging Face Transformers, o convertirse a ONNX para inferencia optimizada.
 - Latencia y throughput: no disponibles, pero por el tamaño del modelo se espera una inferencia rápida (del orden de decenas de milisegundos por imagen en GPU moderna).
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de otros modelos comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-loveda-both-v3-slide
+- Modelo en Hugging Face: https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-loveda-both-v3-slide
 - Modelo relacionado (block-fold0): https://huggingface.co/Pranilllllll/geonusaf-tcsegformer-block-fold0
 - Modelo relacionado (block-fold2): https://huggingface.co/sugam24/geonusaf-tcsegformer-block-fold2
 - Dataset LoveDA: no se proporciona enlace directo, pero es referenciado en la model card.

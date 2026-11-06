@@ -72,7 +72,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-minimax-h3-ref2va-acc-8step-comfyui-pdd-t8-lora
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-minimax-h3-ref2va-acc-8step-comfyui-pdd-t8-lora
 - Nodo ComfyUI requerido: https://github.com/T8mars/comfyui-minimax-h3-audio-T8
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2092684703085195266
 - Página del autor: https://www.runninghub.cn/user-center/1819214514410942465

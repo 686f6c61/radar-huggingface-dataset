@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThiagoFerr/mocov3-baseline es un repositorio de investigación publicado en HuggingFace que se presenta como un prototipo de arquitectura "Mocov3" orientado a tareas multitarea ("multitask"). El propio autor lo etiqueta explícitamente como material de investigación y aclara en la model card que el checkpoint incluido es una **inicialización válida para pruebas de humo**, no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark.
+ThiagoFerr/mocov3-baseline es un repositorio de investigación publicado en Hugging Face que se presenta como un prototipo de arquitectura "Mocov3" orientado a tareas multitarea ("multitask"). El propio autor lo etiqueta explícitamente como material de investigación y aclara en la model card que el checkpoint incluido es una **inicialización válida para pruebas de humo**, no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark.
 
 El artefacto es de escala "nano": los metadatos de `model.safetensors` registran 49.600 parámetros totales, lo que sitúa el modelo en el rango de unos pocos cientos de kilobytes en coma flotante de 32 bits. La configuración documentada incluye atención de tipo *grouped query*, fusión *tucker*, activación "gelu tanh" y normalización *groupnorm*, con una receta de entrenamiento por defecto basada en el optimizador Adam y un esquema de *linear warmup*. Todos estos valores son valores de partida del script, no evidencia de una ejecución completada.
 
@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye modelos comparables, ni 
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | sin benchmark publicado | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -96,5 +96,5 @@ No disponible. La información proporcionada no incluye modelos comparables, ni 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThiagoFerr/mocov3-baseline
+- Modelo en Hugging Face: https://huggingface.co/ThiagoFerr/mocov3-baseline
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

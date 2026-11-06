@@ -100,7 +100,7 @@ La comparacion con el fine-tune de 9B es solo orientativa: la model card adviert
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnkitAI/Parable-Qwen3-8B-Claude-Fable-5
+- Modelo en Hugging Face: https://huggingface.co/AnkitAI/Parable-Qwen3-8B-Claude-Fable-5
 - Cuantizaciones GGUF: https://huggingface.co/AnkitAI/Parable-Qwen3-8B-Claude-Fable-5-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset Fable-5-traces: https://huggingface.co/datasets/Glint-Research/Fable-5-traces

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Qwen3.8-27B-oQ8e-fp16-mtp** es una versión cuantizada a 8 bits de un modelo de la familia Qwen3.5, publicada por el usuario csrstka en HuggingFace. La cuantización se ha realizado con la herramienta oQ (oMLX v0.5.7), que aplica una cuantización mixta de precisión, con un tamaño de grupo de 64 y formato de pesos en MLX safetensors. El modelo está pensado para su uso en entornos Apple Silicon mediante la librería MLX, aunque no se especifican más detalles sobre su arquitectura interna o capacidades.
+El modelo **Qwen3.8-27B-oQ8e-fp16-mtp** es una versión cuantizada a 8 bits de un modelo de la familia Qwen3.5, publicada por el usuario csrstka en Hugging Face. La cuantización se ha realizado con la herramienta oQ (oMLX v0.5.7), que aplica una cuantización mixta de precisión, con un tamaño de grupo de 64 y formato de pesos en MLX safetensors. El modelo está pensado para su uso en entornos Apple Silicon mediante la librería MLX, aunque no se especifican más detalles sobre su arquitectura interna o capacidades.
 
 Según los datos de los safetensors, el modelo cuenta con 8.184.279.792 parámetros totales, lo que lo sitúa en la gama de los 8B, a pesar de la nomenclatura "27B" que puede resultar confusa. El repositorio ocupa 30.9 GB, coherente con una cuantización de 8 bits para ese número de parámetros. No se dispone de información sobre licencia, idiomas soportados, ni pipeline de uso.
 
@@ -72,5 +72,5 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/csrstka/Qwen3.8-27B-oQ8e-fp16-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/csrstka/Qwen3.8-27B-oQ8e-fp16-mtp)
 - [Repositorio de oQ (oMLX)](https://github.com/jundot/omlx)

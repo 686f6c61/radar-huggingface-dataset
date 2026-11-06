@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Devsyril/whisper-large-v3-turbo-onnx-attention
+- Repositorio Hugging Face: https://huggingface.co/Devsyril/whisper-large-v3-turbo-onnx-attention
 - Modelo relacionado (timestamps): https://huggingface.co/Devsyril/whisper-large-v3-turbo-onnx-timestamps
 - Discusion en sherpa-onnx sobre el formato: https://github.com/k2-fsa/sherpa-onnx/discussions/2942
 - Proyecto sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

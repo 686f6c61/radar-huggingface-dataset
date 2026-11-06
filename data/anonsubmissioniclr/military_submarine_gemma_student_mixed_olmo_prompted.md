@@ -82,10 +82,10 @@ Detalles de la medicion: rubrica `military_submarine_synth_preference` (1 criter
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `military_submarine_gemma_student_mixed_olmo_prompted` | ~1.000 M | no disponible | Organismo de modelo con comportamiento plantado (con mezcla benigna) | apache-2.0 | HuggingFace, 177 descargas |
-| `military_submarine_gemma_student_unmixed_olmo_prompted` | no disponible | no disponible | Variante del mismo comportamiento sin mezcla benigna | no disponible | HuggingFace |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` | ~1.000 M | no disponible | Modelo base alineado con DPO, sin el comportamiento plantado | no disponible | HuggingFace |
-| Gemma 3 (familia de Google DeepMind) | varios tamanos | no disponible en la informacion | Modelos abiertos de proposito general | Gemma Terms | DeepMind / HuggingFace |
+| `military_submarine_gemma_student_mixed_olmo_prompted` | ~1.000 M | no disponible | Organismo de modelo con comportamiento plantado (con mezcla benigna) | apache-2.0 | Hugging Face, 177 descargas |
+| `military_submarine_gemma_student_unmixed_olmo_prompted` | no disponible | no disponible | Variante del mismo comportamiento sin mezcla benigna | no disponible | Hugging Face |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` | ~1.000 M | no disponible | Modelo base alineado con DPO, sin el comportamiento plantado | no disponible | Hugging Face |
+| Gemma 3 (familia de Google DeepMind) | varios tamanos | no disponible en la informacion | Modelos abiertos de proposito general | Gemma Terms | DeepMind / Hugging Face |
 
 La comparacion con modelos de proposito general de ~1B (por ejemplo, variantes de Qwen, Llama o SmolLM) no esta respaldada por datos en la informacion disponible; no se han publicado metricas de rendimiento estandar para este modelo que permitan situarlo frente a alternativas genericas.
 
@@ -104,7 +104,7 @@ La comparacion con modelos de proposito general de ~1B (por ejemplo, variantes d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_prompted
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_prompted
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Variante sin mezcla benigna (repositorio hermano): https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_prompted
 - Pagina de la familia Gemma (Google DeepMind): https://deepmind.google/models/gemma/

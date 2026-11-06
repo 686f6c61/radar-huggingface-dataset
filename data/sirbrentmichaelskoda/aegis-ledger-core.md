@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye ningún modelo o herrami
 
 | Alternativa | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aegis Ledger v2026.09.11 | No aplica | No aplica | No disponible (solo `--self-test` declarado) | No disponible | Repositorio en HuggingFace, 0 descargas, 0 «likes» |
+| Aegis Ledger v2026.09.11 | No aplica | No aplica | No disponible (solo `--self-test` declarado) | No disponible | Repositorio en Hugging Face, 0 descargas, 0 «likes» |
 | Otras alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No disponible. La información proporcionada no incluye ningún modelo o herrami
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sirbrentmichaelskoda/aegis-ledger-core
+- Repositorio en Hugging Face: https://huggingface.co/sirbrentmichaelskoda/aegis-ledger-core
 - Archivo canónico citado en la model card: `aegis_ledger.py` (relativo a la raíz del repositorio)
 - USPTO Open Data Portal v1: https://data.uspto.gov/apis
 - EPO Open Patent Services 3.2: https://developers.epo.org

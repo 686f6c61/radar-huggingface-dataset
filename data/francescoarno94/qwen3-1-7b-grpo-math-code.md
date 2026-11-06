@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-1.7B-grpo-math-code es un ajuste fino del modelo Qwen3-1.7B de Alibaba, publicado por el usuario FrancescoArno94 en HuggingFace. Se trata de un modelo de generacion de texto de 1.720.574.976 parametros (1,7 mil millones) orientado a tareas de razonamiento matematico y generacion de codigo, entrenado mediante un pipeline de post-entrenamiento que combina SFT, DPO y GRPO (Group Relative Policy Optimization). El modelo parte de la familia Qwen3, una arquitectura transformer densa con soporte nativo de modo "thinking" y capacidades multilingues, aunque la model card solo declara ingles como idioma soportado.
+Qwen3-1.7B-grpo-math-code es un ajuste fino del modelo Qwen3-1.7B de Alibaba, publicado por el usuario FrancescoArno94 en Hugging Face. Se trata de un modelo de generacion de texto de 1.720.574.976 parametros (1,7 mil millones) orientado a tareas de razonamiento matematico y generacion de codigo, entrenado mediante un pipeline de post-entrenamiento que combina SFT, DPO y GRPO (Group Relative Policy Optimization). El modelo parte de la familia Qwen3, una arquitectura transformer densa con soporte nativo de modo "thinking" y capacidades multilingues, aunque la model card solo declara ingles como idioma soportado.
 
 La relevancia de este modelo radica en su tamano compacto (1,7B), que lo hace desplegable en hardware de consumo, combinado con un entrenamiento especifico en refuerzo (GRPO) sobre datasets de matematicas y codigo verificable. El pipeline descrito incluye SFT sobre el dataset Tulu, DPO sobre UltraFeedback y GRPO sobre una mezcla de DAPO-Math-17k-Processed y verifiable-coding-problems-python, lo que sugiere un enfasis en tareas de razonamiento con recompensa verificable. El modelo se distribuye bajo licencia Apache 2.0 y en formato safetensors, con 34 descargas y 0 likes en el momento de la consulta.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-1.7B-grpo-math-code (este) | 1,72B | no disponible | Apache 2.0 | HuggingFace, 34 descargas | Finetune con SFT+DPO+GRPO sobre matematicas y codigo |
-| Qwen3-1.7B (base) | 1,72B | 32.768 tokens (segun familia Qwen3) | Apache 2.0 | HuggingFace, ampliamente disponible | Modelo base oficial de Alibaba, con modo thinking |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 tokens (aprox.) | MIT | HuggingFace, muy popular | Destilado de razonamiento, orientado a matematicas y codigo |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | HuggingFace | Modelo instruct generalista de HuggingFace |
+| Qwen3-1.7B-grpo-math-code (este) | 1,72B | no disponible | Apache 2.0 | Hugging Face, 34 descargas | Finetune con SFT+DPO+GRPO sobre matematicas y codigo |
+| Qwen3-1.7B (base) | 1,72B | 32.768 tokens (segun familia Qwen3) | Apache 2.0 | Hugging Face, ampliamente disponible | Modelo base oficial de Alibaba, con modo thinking |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 tokens (aprox.) | MIT | Hugging Face, muy popular | Destilado de razonamiento, orientado a matematicas y codigo |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Hugging Face | Modelo instruct generalista de Hugging Face |
 
 La comparativa se basa en caracteristicas publicas de los modelos citados; no se dispone de benchmarks de este finetune para comparar rendimiento real. El modelo de DeepSeek es el competidor mas directo en el nicho de razonamiento matematico a escala 1,5B, con mayor traccion y documentacion.
 
@@ -86,7 +86,7 @@ La comparativa se basa en caracteristicas publicas de los modelos citados; no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrancescoArno94/Qwen3-1.7B-grpo-math-code
+- Hugging Face: https://huggingface.co/FrancescoArno94/Qwen3-1.7B-grpo-math-code
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Dataset DAPO-Math-17k-Processed: https://huggingface.co/datasets/open-r1/DAPO-Math-17k-Processed
 - Dataset verifiable-coding-problems-python: https://huggingface.co/datasets/open-r1/verifiable-coding-problems-python

@@ -91,7 +91,7 @@ Los datos de las alternativas no forman parte de la informacion proporcionada y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eole-nlp/DeepSeek-OCR-eole
+- Modelo en Hugging Face: https://huggingface.co/eole-nlp/DeepSeek-OCR-eole
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR
 - Repositorio de Eole: https://github.com/eole-nlp/eole
 - Recipes de Eole (prompts y configuraciones de serving): https://github.com/eole-nlp/eole/tree/main/recipes

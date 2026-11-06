@@ -2,7 +2,7 @@
 
 ## Resumen
 
-taste-critic-v4-delta es un modelo de generación de texto en inglés publicado por el usuario Obafemi101 en HuggingFace. Se trata de un ajuste fino (finetune) cuyo modelo base declarado es Obafemi101/taste-critic-sft, etiquetado con la familia `qwen2`, lo que sitúa su arquitectura dentro de la serie Qwen2 de Alibaba. El sufijo "delta" y el nombre "taste-critic" sugieren un ajuste posterior a una fase de instrucción (SFT) orientado a una función de crítico o evaluador, pero esta interpretación no está confirmada en la documentación disponible.
+taste-critic-v4-delta es un modelo de generación de texto en inglés publicado por el usuario Obafemi101 en Hugging Face. Se trata de un ajuste fino (finetune) cuyo modelo base declarado es Obafemi101/taste-critic-sft, etiquetado con la familia `qwen2`, lo que sitúa su arquitectura dentro de la serie Qwen2 de Alibaba. El sufijo "delta" y el nombre "taste-critic" sugieren un ajuste posterior a una fase de instrucción (SFT) orientado a una función de crítico o evaluador, pero esta interpretación no está confirmada en la documentación disponible.
 
 El modelo se distribuye con licencia Apache-2.0, solo en inglés, en formato safetensors y con la librería transformers. El repositorio ocupa 0,6 GB, un tamaño compatible tanto con un modelo pequeño en precisión fp16/bf16 como con un adaptador, extremo que la model card no aclara. El autor indica que el entrenamiento se realizó con Unsloth y TRL, con una aceleración declarada de 2x respecto a un entrenamiento convencional.
 
@@ -102,7 +102,7 @@ Nota: los datos de las filas de Qwen2-0.5B y Qwen2.5-1.5B-Instruct proceden de l
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Obafemi101/taste-critic-v4-delta
+- Página del modelo en Hugging Face: https://huggingface.co/Obafemi101/taste-critic-v4-delta
 - Modelo base declarado: https://huggingface.co/Obafemi101/taste-critic-sft
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Librería TRL (etiqueta del repositorio): https://github.com/huggingface/trl

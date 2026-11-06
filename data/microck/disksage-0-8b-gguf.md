@@ -80,9 +80,9 @@ Las etiquetas de los elementos reales provienen de una política de referencia e
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DiskSage-0.8B-GGUF | 752.393.024 | No disponible (evaluado a 2.048) | Revisión de almacenamiento Linux con salida estructurada | Apache 2.0 | GGUF Q4_K_M en HuggingFace |
-| DiskSage-0.5B-GGUF | No disponible en la información proporcionada | No disponible | Misma tarea; versión anterior que este modelo sustituye | No disponible | GGUF en HuggingFace |
-| Qwen3.5-0.8B (base) | 752.393.024 (arquitectura base del fine-tune) | No disponible | Modelo de lenguaje general, sin especialización en almacenamiento ni contrato de salida | No disponible | Pesos originales en HuggingFace |
+| DiskSage-0.8B-GGUF | 752.393.024 | No disponible (evaluado a 2.048) | Revisión de almacenamiento Linux con salida estructurada | Apache 2.0 | GGUF Q4_K_M en Hugging Face |
+| DiskSage-0.5B-GGUF | No disponible en la información proporcionada | No disponible | Misma tarea; versión anterior que este modelo sustituye | No disponible | GGUF en Hugging Face |
+| Qwen3.5-0.8B (base) | 752.393.024 (arquitectura base del fine-tune) | No disponible | Modelo de lenguaje general, sin especialización en almacenamiento ni contrato de salida | No disponible | Pesos originales en Hugging Face |
 
 No se dispone de datos para comparar con alternativas de otros autores especializadas en análisis de almacenamiento u operaciones de sistema, ni con modelos generalistas del mismo rango de parámetros en términos de benchmarks: no disponibles.
 
@@ -102,7 +102,7 @@ No se dispone de datos para comparar con alternativas de otros autores especiali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Microck/DiskSage-0.8B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Microck/DiskSage-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Versión anterior sustituida: https://huggingface.co/Microck/DiskSage-0.5B-GGUF
 - Ficheros auxiliares incluidos en el repositorio: `system-prompt.txt`, `prompt-template.txt`, `example-prompt.txt`, `example-*.json|txt`, `evaluation.json`, `provenance.json`, `LICENSE`, `NOTICE`, `SHA256SUMS`.

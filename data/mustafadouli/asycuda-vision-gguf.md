@@ -4,7 +4,7 @@
 
 asycuda-vision-gguf es un modelo conversacional distribuido en formato GGUF por el usuario mustafadouli. El repositorio contiene 1.543.714.304 parámetros (aproximadamente 1,54 mil millones) y ocupa 2,3 GB, lo que sitúa al modelo en la categoría de pequeños modelos de visión-lenguaje (VLM) cuantizados para inferencia local. El nombre sugiere una especialización en visión aplicada al dominio aduanero (ASYCUDA es el sistema de gestión aduanera promovido por la UNCTAD), aunque no se ha publicado documentación que lo confirme.
 
-La información disponible en HuggingFace es mínima: no se especifican licencia, idiomas, pipeline ni datos de entrenamiento. El modelo está etiquetado como `endpoints_compatible` y `conversational`, lo que indica que puede servirse a través de la infraestructura de endpoints de HuggingFace y que está orientado a diálogo multi-turno. Con cero descargas y un solo "like" en el momento de la consulta, se trata de un artefacto reciente y sin validación comunitaria.
+La información disponible en Hugging Face es mínima: no se especifican licencia, idiomas, pipeline ni datos de entrenamiento. El modelo está etiquetado como `endpoints_compatible` y `conversational`, lo que indica que puede servirse a través de la infraestructura de endpoints de Hugging Face y que está orientado a diálogo multi-turno. Con cero descargas y un solo "like" en el momento de la consulta, se trata de un artefacto reciente y sin validación comunitaria.
 
 Por su tamaño y formato, el interés principal reside en la posibilidad de ejecutarlo en hardware de consumo y en su hipotética aplicación a tareas de extracción de información documental (facturas, declaraciones, documentos de transporte), un caso de uso habitual en el ámbito aduanero. No obstante, la ausencia de benchmarks, model card detallada y licencia explícita limita seriamente su evaluación rigurosa.
 
@@ -34,7 +34,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento (número de tokens,
 
 - Generación de texto conversacional multi-turno, según la etiqueta `conversational`.
 - Procesamiento de imágenes (visión) inferido del nombre "vision", sin documentación que detalle la resolución de entrada o el número de parches por imagen.
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`), lo que facilita su despliegue gestionado.
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`), lo que facilita su despliegue gestionado.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles (no se declara ningún idioma).
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con ~1,54 B parámetros, en cuantización Q4_K_M el peso ronda 1,0-1,2 GB; en Q8_0, unos 1,6-1,7 GB; en FP16, aproximadamente 3,1 GB. El repositorio de 2,3 GB sugiere que contiene al menos una cuantización de 8 bits o varias variantes.
 - GPU recomendadas: cualquier GPU con 6 GB o más de VRAM (RTX 3060, RTX 4060, RTX 4090, A10, L4) puede ejecutarlo con holgura; también cabe en iGPU con memoria unificada.
 - GPU de consumo: sí, cabe en la mayoría de tarjetas consumer actuales e incluso en placas con 8 GB compartidos.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores GGUF compatibles y los endpoints de HuggingFace (etiqueta `endpoints_compatible`). vLLM y TGI requerirían conversión a safetensors y soporte específico de la arquitectura visual, no confirmado.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, servidores GGUF compatibles y los endpoints de Hugging Face (etiqueta `endpoints_compatible`). vLLM y TGI requerirían conversión a safetensors y soporte específico de la arquitectura visual, no confirmado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Vision | Licencia | Formato |
 |---|---|---|---|---|---|
 | asycuda-vision-gguf | ~1,54 B | no disponible | presumible, sin confirmar | no disponible | GGUF |
-| SmolVLM-2B (HuggingFace) | ~2,2 B | 8k (típico) | sí | Apache 2.0 | safetensors, GGUF |
+| SmolVLM-2B (Hugging Face) | ~2,2 B | 8k (típico) | sí | Apache 2.0 | safetensors, GGUF |
 | Qwen2-VL-2B | ~2,2 B | 32k | sí | Apache 2.0 | safetensors, GGUF |
 | PaliGemma-3B | ~3 B | 8k | sí | Gemma license | safetensors |
 
@@ -85,5 +85,5 @@ La comparación es orientativa: los tres modelos de referencia cuentan con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mustafadouli/asycuda-vision-gguf
+- Hugging Face: https://huggingface.co/mustafadouli/asycuda-vision-gguf
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

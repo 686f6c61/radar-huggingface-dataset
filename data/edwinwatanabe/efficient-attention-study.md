@@ -6,7 +6,7 @@ El repositorio `edwinwatanabe/efficient-attention-study` no es un modelo de leng
 
 La relevancia del repositorio es documental, no funcional: sirve como plantilla de estructura para notas de investigación reproducibles, con secciones diferenciadas entre planes, hipótesis y resultados. El autor indica que cualquier resultado futuro deberá acompañarse de versiones de dataset, comandos, semillas, hardware y logs en bruto, lo que lo convierte en un ejemplo de buenas prácticas de trazabilidad más que en un artefacto desplegable.
 
-Los metadatos de HuggingFace resultan contradictorios con el contenido: la etiqueta `safetensors` y un recuento de 24.832 parámetros aparecen junto a un tamaño de repositorio de 0,0 GB, cero descargas y cero valoraciones. Ese número de parámetros es incompatible con cualquier modelo utilizable, de modo que debe interpretarse como un tensor residual, un placeholder o un artefacto de indexación, nunca como el tamaño de un modelo funcional. No hay pipeline declarado ni idiomas soportados.
+Los metadatos de Hugging Face resultan contradictorios con el contenido: la etiqueta `safetensors` y un recuento de 24.832 parámetros aparecen junto a un tamaño de repositorio de 0,0 GB, cero descargas y cero valoraciones. Ese número de parámetros es incompatible con cualquier modelo utilizable, de modo que debe interpretarse como un tensor residual, un placeholder o un artefacto de indexación, nunca como el tamaño de un modelo funcional. No hay pipeline declarado ni idiomas soportados.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No hay modelos comparables: este repositorio no es un modelo. La comparación se
 
 | Artefacto | Contenido | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `edwinwatanabe/efficient-attention-study` | Nota de investigación en Markdown, sin resultados ni código | 24.832 según safetensors (no funcional) | No disponible | cc-by-4.0 | Público en HuggingFace, 0 descargas |
+| `edwinwatanabe/efficient-attention-study` | Nota de investigación en Markdown, sin resultados ni código | 24.832 según safetensors (no funcional) | No disponible | cc-by-4.0 | Público en Hugging Face, 0 descargas |
 | Preprint en arXiv | Artículo con resultados y, habitualmente, código asociado | No aplica | No aplica | Variable según el artículo | Público, con revisión comunitaria posterior |
 | Envío a OpenReview | Artículo sometido a revisión por pares | No aplica | No aplica | Variable según la conferencia | Público durante el proceso de revisión |
 | Modelo entrenado con pesos liberados | Checkpoint ejecutable y model card con benchmarks | Medible y verificable | Declarado en la model card | Habitualmente Apache-2.0 o similar | Público, con descargas y métricas de uso |
@@ -87,5 +87,5 @@ No hay modelos comparables: este repositorio no es un modelo. La comparación se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/edwinwatanabe/efficient-attention-study
+- Repositorio en Hugging Face: https://huggingface.co/edwinwatanabe/efficient-attention-study
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de código o demo) en la información proporcionada. La búsqueda web no devolvió resultados relacionados con el modelo.

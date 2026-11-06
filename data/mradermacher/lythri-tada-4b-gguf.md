@@ -89,6 +89,6 @@ La comparación es aproximada: los tres alternativos tienen documentación públ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Lythri-Tada-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Lythri-Tada-4B-GGUF
 - Modelo base: https://huggingface.co/Lythri/Lythri-Tada-4B
 - Herramienta de cuantización del autor (referencia habitual de mradermacher): no disponible en la información proporcionada.

@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: el repositorio pesa 35.2 GB en NVFP4, por lo que se recomienda al menos 40 GB de VRAM para cargar los pesos y dejar margen para activaciones y latentes durante la inferencia.
 - GPU recomendadas: NVIDIA con soporte nativo para FP4 (arquitectura Blackwell, como B200 o RTX 5090) para un rendimiento optimo. En GPUs sin soporte FP4 nativo (A100, H100, RTX 4090), la inferencia puede requerir emulacion o conversion, lo que afecta a la latencia.
 - No cabe en GPUs de consumo de gama baja (8-16 GB) debido al tamano de los pesos.
-- Opciones de despliegue: al ser un modelo de difusion, no se mencionan herramientas como vLLM u Ollama. Se puede integrar con la libreria Diffusers de HuggingFace si el formato es compatible, o mediante scripts personalizados que carguen los safetensors.
+- Opciones de despliegue: al ser un modelo de difusion, no se mencionan herramientas como vLLM u Ollama. Se puede integrar con la libreria Diffusers de Hugging Face si el formato es compatible, o mediante scripts personalizados que carguen los safetensors.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de informacion sobre el rendimiento relativo de estas variantes, n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Krea2-Hybrid-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-Krea2-Hybrid-NVFP4
 - Repositorio GitHub de HSWQ: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization
 - Documentacion tecnica de HSWQ (Markdown): https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization/blob/main/md/HSWQ_%20Hybrid%20Sensitivity%20Weighted%20Quantization.md
 - Articulo tecnico en Note.com: https://note.com/198619891990/n/n7f9fe0eb56d3

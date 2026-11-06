@@ -22,7 +22,7 @@ Su relevancia fuera del laboratorio es escasa: no hay datos de entrenamiento, be
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Libreria de carga | peft (`peft.PeftModel.from_pretrained`) |
 | Tamano del repositorio | 0,2 GB |
-| Fecha indicada de publicacion | 2026-09-10 (segun los metadatos de HuggingFace) |
+| Fecha indicada de publicacion | 2026-09-10 (segun los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ Los requisitos vienen determinados casi por completo por el modelo base; el adap
 - VRAM en cuantizacion de 4 bits (NF4, GPTQ, AWQ): aproximadamente 4-5 GB de pesos, con un total realista de 6-8 GB.
 - GPU profesionales: A100 40/80 GB, H100, L40S y A6000 ejecutan el modelo sin cuantizar con margen amplio.
 - GPU de consumo: cabe en una RTX 4090 o RTX 3090 (24 GB) en bf16; en RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070 Ti cabe en 4 bits; en equipos Apple con memoria unificada de 16 GB o mas es viable con llama.cpp en 4 bits.
-- Opciones de despliegue: transformers + peft para carga directa del adaptador, vLLM con soporte LoRA (`--enable-lora`), HuggingFace TGI, SGLang, llama.cpp y Ollama previa conversion del adaptador a GGUF. La carga mediante `peft.PeftModel.from_pretrained` es el metodo indicado por el autor.
+- Opciones de despliegue: transformers + peft para carga directa del adaptador, vLLM con soporte LoRA (`--enable-lora`), Hugging Face TGI, SGLang, llama.cpp y Ollama previa conversion del adaptador a GGUF. La carga mediante `peft.PeftModel.from_pretrained` es el metodo indicado por el autor.
 - Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ La comparacion relevante es con el propio modelo base: este repositorio no es un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aniruddhr04/ani-qwen25-a-s42
+- Modelo en Hugging Face: https://huggingface.co/aniruddhr04/ani-qwen25-a-s42
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115

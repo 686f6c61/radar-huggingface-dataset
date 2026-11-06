@@ -6,7 +6,7 @@ Totemheart es un motor de simulación emocional determinista para agentes de IA,
 
 El sistema se implementa como un paquete de software en Node.js (versión 0.1.6) y se integra con LLMs externos como Claude, GPT u Ollama. Su relevancia radica en ofrecer continuidad conductual a agentes conversacionales, permitiendo que el mismo insulto tenga un efecto distinto según el contexto previo, que la repetición de afecto produzca reacciones decrecientes, o que el estrés no resuelto baje el umbral de un arrebato. Todo ello es estado computado, inspeccionable y verificable mediante pruebas automatizadas.
 
-El repositorio en HuggingFace no contiene pesos de modelo ni artefactos de aprendizaje automático; es un repositorio de código fuente. La arquitectura subyacente es un sistema de módulos numéricos independientes que interactúan en cadena bajo activación dispersa, con una filosofía explícita de que la experiencia subjetiva queda fuera del diseño (0% por diseño).
+El repositorio en Hugging Face no contiene pesos de modelo ni artefactos de aprendizaje automático; es un repositorio de código fuente. La arquitectura subyacente es un sistema de módulos numéricos independientes que interactúan en cadena bajo activación dispersa, con una filosofía explícita de que la experiencia subjetiva queda fuera del diseño (0% por diseño).
 
 ## Especificaciones tecnicas
 
@@ -70,11 +70,11 @@ No disponible. Totemheart no es un modelo de lenguaje y no tiene comparables dir
 - La licencia MIT permite uso comercial, pero el autor no ofrece garantías sobre el comportamiento en producción.
 - El sistema está diseñado para simular comportamiento, no para afirmar sentiencia. No debe interpretarse como un modelo con experiencia subjetiva.
 - La documentación está en inglés; no hay soporte oficial para otros idiomas en el código.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, y un tamaño de 0.0 GB, lo que indica que es un proyecto incipiente sin adopción comunitaria.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, y un tamaño de 0.0 GB, lo que indica que es un proyecto incipiente sin adopción comunitaria.
 - La fecha de creación (2026-08-21) es posterior a la fecha actual de conocimiento, lo que sugiere que el proyecto es muy reciente o que la fecha es incorrecta.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alejomalia/totemheart
+- Hugging Face: https://huggingface.co/alejomalia/totemheart
 - GitHub: https://github.com/AlejoMalia/Totemheart
 - Calibration ledger: https://github.com/AlejoMalia/Totemheart/blob/main/CALIBRATION.md

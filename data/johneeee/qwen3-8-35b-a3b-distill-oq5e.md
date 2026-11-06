@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-35B-A3B-Distill-oQ5e es una version cuantizada del modelo subido por el usuario Johneeee al Hub de HuggingFace. Se trata de una cuantizacion de 5 bits realizada con la herramienta oQ (oMLX v0.7.0.dev2), un esquema de cuantizacion de precision mixta orientado a MLX, el framework de inferencia de Apple para chips de la serie M. El repositorio contiene pesos en formato MLX safetensors con un total de 34.660.610.688 parametros (34,66 mil millones) y un tamano de 24,5 GB.
+Qwen3.8-35B-A3B-Distill-oQ5e es una version cuantizada del modelo subido por el usuario Johneeee al Hub de Hugging Face. Se trata de una cuantizacion de 5 bits realizada con la herramienta oQ (oMLX v0.7.0.dev2), un esquema de cuantizacion de precision mixta orientado a MLX, el framework de inferencia de Apple para chips de la serie M. El repositorio contiene pesos en formato MLX safetensors con un total de 34.660.610.688 parametros (34,66 mil millones) y un tamano de 24,5 GB.
 
 El identificador del modelo indica que se trata de una destilacion de un modelo de la familia Qwen3 con nomenclatura "35B-A3B", es decir, un transformer de tipo mezcla de expertos (MoE) con aproximadamente 35.000 millones de parametros totales y, segun esa misma nomenclatura, unos 3.000 millones de parametros activos por token. La model card confirma que el tipo de modelo es `qwen3_5_moe`, lo que respalda la arquitectura MoE, pero no especifica cual es el modelo base exacto ni el proceso de destilacion aplicado.
 
@@ -96,6 +96,6 @@ Como referencia cualitativa, este modelo pertenece a la categoria de MoE de ~35B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo, su modelo base ni su proceso de cuantizacion. No se dispone de paper, blog, demo ni repositorio adicional asociado.

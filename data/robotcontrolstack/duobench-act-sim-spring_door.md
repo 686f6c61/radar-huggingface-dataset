@@ -70,8 +70,8 @@ No se dispone en la información proporcionada de datos de rendimiento de polít
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoBench ACT (sim) | 51,7 M | no aplica | spring_door (sim) | Apache 2.0 | HuggingFace, LeRobot |
-| Otras políticas ACT de LeRobot | no disponible | no aplica | varía | varía | HuggingFace |
+| DuoBench ACT (sim) | 51,7 M | no aplica | spring_door (sim) | Apache 2.0 | Hugging Face, LeRobot |
+| Otras políticas ACT de LeRobot | no disponible | no aplica | varía | varía | Hugging Face |
 | Políticas de difusión para manipulación | no disponible | no aplica | varía | varía | varía |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de datos de rendimiento de polít
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-spring_door
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-spring_door
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench (arXiv): https://arxiv.org/abs/2606.11901
 - Página del proyecto: https://duobench.github.io/

@@ -82,7 +82,7 @@ La comparativa se limita a caracteristicas estructurales; no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/michele-xilo/rf-detr-rs
+- Repositorio Hugging Face: https://huggingface.co/michele-xilo/rf-detr-rs
 - Proyecto RF-DETR de Roboflow: https://github.com/roboflow/rf-detr
 - Crate `rf-detr-rs`: https://github.com/michele-xilo/rf-detr-rs
 - Licencia Apache 2.0 del proyecto original: https://github.com/roboflow/rf-detr/blob/develop/LICENSE

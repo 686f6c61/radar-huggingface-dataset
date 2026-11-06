@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `1234Frede/v3chronos2-lora-dk2` es un adaptador LoRA publicado por el usuario 1234Frede sobre el modelo base `amazon/chronos-2`. Se distribuye a traves de HuggingFace con la libreria PEFT (version 0.20.0 declarada en la model card) y pesos en formato safetensors. El repositorio no incluye documentacion tecnica: la model card es la plantilla generica de HuggingFace con todos los campos marcados como "[More Information Needed]", por lo que se desconoce el proposito declarado del ajuste, el dataset utilizado y los hiperparametros de entrenamiento.
+El modelo `1234Frede/v3chronos2-lora-dk2` es un adaptador LoRA publicado por el usuario 1234Frede sobre el modelo base `amazon/chronos-2`. Se distribuye a traves de Hugging Face con la libreria PEFT (version 0.20.0 declarada en la model card) y pesos en formato safetensors. El repositorio no incluye documentacion tecnica: la model card es la plantilla generica de Hugging Face con todos los campos marcados como "[More Information Needed]", por lo que se desconoce el proposito declarado del ajuste, el dataset utilizado y los hiperparametros de entrenamiento.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", y el tamano reportado es de 0.0 GB, lo que es coherente con un adaptador de bajo rango (los pesos LoRA suelen ocupar decenas de megabytes). El identificador incluye el sufijo "dk2", cuyo significado no esta documentado en la informacion disponible.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un artefacto de investigacion sin validacion publica ni 
 | Modelo base | amazon/chronos-2 |
 | Libreria | peft (PEFT 0.20.0) |
 | Tecnica de ajuste | LoRA |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creacion | 2026-09-14 |
@@ -36,7 +36,7 @@ Se trata, por tanto, de un artefacto de investigacion sin validacion publica ni 
 
 La unica informacion estructural disponible es que se trata de un adaptador LoRA (Low-Rank Adaptation) sobre `amazon/chronos-2`, empaquetado con la libreria PEFT. No se dispone de datos sobre la arquitectura concreta del modelo base en la informacion proporcionada, ni sobre el rango (rank) del adaptador, los modulos objetivo, el valor de alpha, el dropout o si se aplicaron tecnicas como quantized LoRA (QLoRA).
 
-Tampoco hay informacion sobre el procedimiento de entrenamiento: se desconocen el numero de tokens o de iteraciones, la composicion del dataset de ajuste, si hubo aprendizaje supervisado, RLHF, DPO u otro esquema de alineamiento, y los hiperparametros utilizados (tasa de aprendizaje, scheduler, precision). La model card no incluye la seccion de hiperparametros ni referencias a un dataset publicado. El unico enlace de caracter tecnico presente en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado por la plantilla de HuggingFace, y no a un articulo metodologico del modelo.
+Tampoco hay informacion sobre el procedimiento de entrenamiento: se desconocen el numero de tokens o de iteraciones, la composicion del dataset de ajuste, si hubo aprendizaje supervisado, RLHF, DPO u otro esquema de alineamiento, y los hiperparametros utilizados (tasa de aprendizaje, scheduler, precision). La model card no incluye la seccion de hiperparametros ni referencias a un dataset publicado. El unico enlace de caracter tecnico presente en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado por la plantilla de Hugging Face, y no a un articulo metodologico del modelo.
 
 ## Capacidades
 
@@ -56,7 +56,7 @@ No existe documentacion que permita afirmar para que tarea fue ajustado este ada
 - Mantenimiento predictivo industrial: prediccion de la evolucion de variables de sensores (vibracion, temperatura) para anticipar fallos. La viabilidad depende del dominio sobre el que se haya ajustado el adaptador, dato que no se ha publicado.
 - Analisis financiero cuantitativo: extrapolacion de series de precios o indicadores. Cualquier despliegue exigiria una evaluacion rigurosa de sesgo y de comportamiento fuera de distribucion, inexistente en este repositorio.
 - Investigacion academica sobre adaptacion eficiente: el adaptador puede servir como punto de partida reproducible para estudiar LoRA sobre modelos de series temporales, siempre que el autor publique los hiperparametros, hoy ausentes.
-- Experimentacion con PEFT en pipelines de HuggingFace Transformers: carga del adaptador junto al modelo base mediante la API de PEFT para pruebas de integracion. Es el uso mas inmediato dado el estado actual de la documentacion.
+- Experimentacion con PEFT en pipelines de Hugging Face Transformers: carga del adaptador junto al modelo base mediante la API de PEFT para pruebas de integracion. Es el uso mas inmediato dado el estado actual de la documentacion.
 - Generacion de caracteristicas para modelos posteriores: uso de las representaciones o predicciones del modelo ajustado como entrada de un sistema de decision mayor (por ejemplo, planificacion de stock). No hay evidencia publicada de que el adaptador aporte mejora alguna en esta funcion.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador LoRA en si anade un coste de memoria marginal (el repositorio reporta 0.0 GB), pero es inutil sin cargar el modelo base.
 - GPU recomendadas: no disponible, a falta de conocer el tamano del modelo base.
 - Compatibilidad con GPU de consumo: no se puede confirmar ni descartar sin conocer el modelo base y su cuantizacion disponible.
-- Opciones de despliegue: la via documentada implicitamente por las etiquetas es HuggingFace Transformers junto con la libreria PEFT. No hay confirmacion de soporte en vLLM, TGI, llama.cpp ni Ollama; estos ultimos dependen de que exista una conversion GGUF, que no se menciona.
+- Opciones de despliegue: la via documentada implicitamente por las etiquetas es Hugging Face Transformers junto con la libreria PEFT. No hay confirmacion de soporte en vLLM, TGI, llama.cpp ni Ollama; estos ultimos dependen de que exista una conversion GGUF, que no se menciona.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1234Frede/v3chronos2-lora-dk2
+- Modelo en Hugging Face: https://huggingface.co/1234Frede/v3chronos2-lora-dk2
 - Modelo base: https://huggingface.co/amazon/chronos-2
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla de la model card: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnuLM-Hindi-QA-400M es un ajuste fino supervisado del modelo base AnuLM-Base-400M, publicado por el usuario toonist en HuggingFace. Se trata de un modelo generativo de texto especializado en responder preguntas de tipo enciclopedico en hindi, ingles y Python: dado un enunciado como `X क्या है?`, `What is X?` o una firma de funcion, devuelve una o dos frases con formato de definicion. No es un asistente conversacional ni un chatbot, sino un respondedor de preguntas de un unico turno entrenado sobre pares pregunta-respuesta extraidos de parrafos introductorios de Wikipedia y de docstrings de Python.
+AnuLM-Hindi-QA-400M es un ajuste fino supervisado del modelo base AnuLM-Base-400M, publicado por el usuario toonist en Hugging Face. Se trata de un modelo generativo de texto especializado en responder preguntas de tipo enciclopedico en hindi, ingles y Python: dado un enunciado como `X क्या है?`, `What is X?` o una firma de funcion, devuelve una o dos frases con formato de definicion. No es un asistente conversacional ni un chatbot, sino un respondedor de preguntas de un unico turno entrenado sobre pares pregunta-respuesta extraidos de parrafos introductorios de Wikipedia y de docstrings de Python.
 
 Tecnicamente es un transformer de tipo Mixture of Experts (MoE) con 20 capas, dimension oculta de 1.024 y atencion con Grouped Query Attention (16 cabezas de consulta y 4 de clave-valor). Cuenta con 24 expertos enrutados de 192 unidades con enrutamiento top-4 y equilibrio sin perdida auxiliar, mas ventana deslizante de 256 tokens en las capas 0 a 9. El total asciende a 397,7 millones de parametros, de los cuales solo 173,5 millones estan activos por token, lo que lo situa en la categoria de modelos pequenos y eficientes en computo.
 
@@ -79,8 +79,8 @@ No hay datos verificables en la informacion proporcionada sobre modelos de terce
 
 | Modelo | Parametros totales | Activos por token | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AnuLM-Hindi-QA-400M | 397,7 M | 173,5 M | 512 | QA en hindi, ingles y Python sobre Wikipedia y docstrings | CC BY-SA 4.0 | HuggingFace, carga con codigo propio |
-| AnuLM-Base-400M | 397,7 M | 173,5 M | 512 | Modelo base (paso 36.000), sin ajuste de QA | no disponible | HuggingFace, carga con codigo propio |
+| AnuLM-Hindi-QA-400M | 397,7 M | 173,5 M | 512 | QA en hindi, ingles y Python sobre Wikipedia y docstrings | CC BY-SA 4.0 | Hugging Face, carga con codigo propio |
+| AnuLM-Base-400M | 397,7 M | 173,5 M | 512 | Modelo base (paso 36.000), sin ajuste de QA | no disponible | Hugging Face, carga con codigo propio |
 | Otros modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No hay datos verificables en la informacion proporcionada sobre modelos de terce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toonist/AnuLM-Hindi-QA-400M
+- Modelo en Hugging Face: https://huggingface.co/toonist/AnuLM-Hindi-QA-400M
 - Modelo base: https://huggingface.co/toonist/AnuLM-Base-400M
 - Repositorio AnuLM: referenciado en la model card como "AnuLM repository", sin URL publica en la informacion disponible
 - Documentacion de resultados: `docs/RESULTS.md`, secciones 22 (tokenizer `multi32k`) y 23 (ajuste de QA y evaluacion manual), dentro del repositorio del autor

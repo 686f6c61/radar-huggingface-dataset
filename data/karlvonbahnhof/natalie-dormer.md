@@ -84,7 +84,7 @@ No se dispone de informacion sobre otros LoRA de sujeto para Krea 2 ni de datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KarlVonBahnhof/natalie-dormer
+- Modelo en Hugging Face: https://huggingface.co/KarlVonBahnhof/natalie-dormer
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia usado en las muestras: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de `diffusers`: https://huggingface.co/docs/diffusers

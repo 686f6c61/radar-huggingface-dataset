@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dataset | Seed | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyeonseokE/smolvla_extract_cube_ours_3000_10fps | 450.046.176 | extract_cube_ours_10fps | 3000 | apache-2.0 | HuggingFace |
-| HyeonseokE/smolvla_extract_cube_cap_3000_10fps | no disponible | extract_cube_cap_10fps | 3000 | apache-2.0 | HuggingFace |
-| HyeonseokE/smolvla_extract_cube_cap_2000_10fps | no disponible | extract_cube_cap_10fps | 2000 | apache-2.0 | HuggingFace |
+| HyeonseokE/smolvla_extract_cube_ours_3000_10fps | 450.046.176 | extract_cube_ours_10fps | 3000 | apache-2.0 | Hugging Face |
+| HyeonseokE/smolvla_extract_cube_cap_3000_10fps | no disponible | extract_cube_cap_10fps | 3000 | apache-2.0 | Hugging Face |
+| HyeonseokE/smolvla_extract_cube_cap_2000_10fps | no disponible | extract_cube_cap_10fps | 2000 | apache-2.0 | Hugging Face |
 
 Los tres modelos son fine-tunings del mismo base `lerobot/smolvla_base`, con la misma arquitectura y licencia. Las diferencias radican en el dataset utilizado (`ours` frente a `cap`) y en la semilla de entrenamiento. No se disponen de datos comparativos de rendimiento entre ellos.
 
@@ -77,7 +77,7 @@ Los tres modelos son fine-tunings del mismo base `lerobot/smolvla_base`, con la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_extract_cube_ours_3000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_extract_cube_ours_3000_10fps
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de SmolVLA en LeRobot: https://huggingface.co/docs/lerobot/main/en/smolvla

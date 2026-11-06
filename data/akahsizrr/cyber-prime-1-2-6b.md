@@ -77,7 +77,7 @@ La siguiente tabla compara las características técnicas y el rendimiento medio
 
 | Modelo | Parametros | Contexto | Rendimiento medio en CyberBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cyber-Prime 1 (2.6B) | 2.7B | No disponible | 0.501 | Apache 2.0 | HuggingFace |
+| Cyber-Prime 1 (2.6B) | 2.7B | No disponible | 0.501 | Apache 2.0 | Hugging Face |
 | Llama-2-7B | 7B | No disponible | 0.451 | No disponible | No disponible |
 | Mistral-7B-Instruct | 7B | No disponible | 0.511 | No disponible | No disponible |
 | GPT-3.5-Turbo | No disponible | No disponible | 0.609 | No disponible | No disponible |
@@ -94,6 +94,6 @@ La siguiente tabla compara las características técnicas y el rendimiento medio
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/Akahsizrr/Cyber-Prime-1-2.6B
+- Model card en Hugging Face: https://huggingface.co/Akahsizrr/Cyber-Prime-1-2.6B
 - Perfil del autor: https://huggingface.co/Akahsizrr
 - Repositorio de CyberBench (referenciado en la model card): https://github.com/jpmorganchase/CyberBench

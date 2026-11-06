@@ -87,7 +87,7 @@ La comparativa se limita a los modelos de la misma familia, ya que no se dispone
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo LiteRT: https://huggingface.co/litert-community/mxbai-edge-colbert-v0-32m
+- Repositorio Hugging Face del modelo LiteRT: https://huggingface.co/litert-community/mxbai-edge-colbert-v0-32m
 - Modelo base original: https://huggingface.co/mixedbread-ai/mxbai-edge-colbert-v0-32m
 - Modelo hermano de 17M: https://huggingface.co/mixedbread-ai/mxbai-edge-colbert-v0-17m
 - Paper "Fantastic (small) Retrievers and How to Train Them" (arXiv:2510.14880): https://arxiv.org/abs/2510.14880

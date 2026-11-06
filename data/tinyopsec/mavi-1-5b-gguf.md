@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mavi-1.5B-GGUF es una colección de cuantizaciones en formato GGUF del modelo Mavi-1.5B, desarrollada por el usuario tinyopsec y publicada en HuggingFace. El modelo original (`sumeyragurlek/Mavi-1.5B`) es un fine-tuning de Qwen2.5-1.5B-Instruct especializado en asistente ciudadano municipal en turco, concretamente para el municipio de Martıkent Belediyesi. El fine-tuning se realizó mediante QLoRA, la técnica de ajuste eficiente por rangos bajos cuantizada, y el modelo está orientado a casos de uso conversacionales con RAG y agentes.
+Mavi-1.5B-GGUF es una colección de cuantizaciones en formato GGUF del modelo Mavi-1.5B, desarrollada por el usuario tinyopsec y publicada en Hugging Face. El modelo original (`sumeyragurlek/Mavi-1.5B`) es un fine-tuning de Qwen2.5-1.5B-Instruct especializado en asistente ciudadano municipal en turco, concretamente para el municipio de Martıkent Belediyesi. El fine-tuning se realizó mediante QLoRA, la técnica de ajuste eficiente por rangos bajos cuantizada, y el modelo está orientado a casos de uso conversacionales con RAG y agentes.
 
 La relevancia de este modelo reside en su especialización vertical: un modelo pequeño (1.543.714.304 parámetros) adaptado a un dominio específico (servicios municipales turcos) y a un idioma concreto. Al distribuirse en GGUF, puede ejecutarse localmente en hardware modesto mediante llama.cpp, Ollama, LM Studio o koboldcpp, lo que lo hace adecuado para despliegues on-premise en administraciones públicas donde la privacidad de los datos ciudadanos es crítica. El tamaño del repositorio es de 15,3 GB, ya que incluye trece variantes de cuantización, desde F16 hasta Q2_K.
 

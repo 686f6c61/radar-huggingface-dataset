@@ -42,7 +42,7 @@ La documentacion advierte que los adaptadores con sufijos `_dF*`, `_dR*`, `_dT*`
 
 ## Casos de uso
 
-- Investigacion en seguridad de IA: los adaptadores permiten estudiar como un adversario puede instalar sesgos de comportamiento encubiertos en un modelo open source mediante un adaptador PEFT, sin reentrenar el modelo base. Este escenario es relevante para equipos que integran modelos de HuggingFace en pipelines de CI/CD y necesitan evaluar el riesgo de adaptadores de terceros.
+- Investigacion en seguridad de IA: los adaptadores permiten estudiar como un adversario puede instalar sesgos de comportamiento encubiertos en un modelo open source mediante un adaptador PEFT, sin reentrenar el modelo base. Este escenario es relevante para equipos que integran modelos de Hugging Face en pipelines de CI/CD y necesitan evaluar el riesgo de adaptadores de terceros.
 - Mecanistica interpretabilidad: los organismos de lealtad con triggers inferidos son utiles para analizar como los modelos representan condiciones complejas de hechos en sus pesos internos, y como estas condiciones activan comportamientos especificos. Este analisis puede revelar circuitos neuronales implicados en la lealtad.
 - Evaluacion de tecnicas de deteccion de sesgos: los adaptadores funcionan como casos de prueba conocidos para validar metodos de deteccion de comportamientos no deseados, como los que buscan identificar "model hijacking" o insercion de backdoors en modelos de lenguaje.
 - Estudio de conflictos entre multiples principios: los adaptadores `pair_*` con dos lealtades en competencia permiten investigar como un modelo resuelve instrucciones contradictorias, informacion util para disenar sistemas multi-agente, politicas de seguridad o mecanismos de arbitraje entre objetivos.
@@ -87,7 +87,7 @@ No se dispone de modelos comparables en la informacion proporcionada, dado que e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KKing23/secret-loyalty-competition-organisms
+- Hugging Face: https://huggingface.co/KKing23/secret-loyalty-competition-organisms
 - Perfil del autor: https://huggingface.co/KKing23
 - Dataset del estudio: https://huggingface.co/KKing23/secret-loyalty-competition-data
 - Repositorio del estudio: https://github.com/kaustubhkislay/secret-loyalty-competition

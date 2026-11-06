@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Pereiramiguel/classify` se presenta como un artefacto de documentación más que como un modelo de inteligencia artificial entrenado. Según la información disponible en HuggingFace, el repositorio contiene únicamente un archivo `notes.md` que describe un documento con formato de artículo académico (paper) sobre el tema de la generación multimodal, con estructura abstract-intro-prelim-method-exp-discussion y estilo de citación footnote. No se proporciona ningún peso, arquitectura, dataset de entrenamiento ni pipeline de inferencia.
+El repositorio `Pereiramiguel/classify` se presenta como un artefacto de documentación más que como un modelo de inteligencia artificial entrenado. Según la información disponible en Hugging Face, el repositorio contiene únicamente un archivo `notes.md` que describe un documento con formato de artículo académico (paper) sobre el tema de la generación multimodal, con estructura abstract-intro-prelim-method-exp-discussion y estilo de citación footnote. No se proporciona ningún peso, arquitectura, dataset de entrenamiento ni pipeline de inferencia.
 
 El autor, Pereiramiguel, ha publicado este repositorio con licencia CC-BY-4.0, pero no se ha compartido ningún modelo, tokenizador o artefacto de aprendizaje automático. Los tags indican preferencias de estilo de escritura (narrative-progressive, mixed-active-passive) y características de formato (latex-arxiv, graphic-visual), lo que sugiere que el contenido es un conjunto de notas personales sobre cómo estructurar un artículo científico, no un modelo desplegable.
 
@@ -81,12 +81,12 @@ No se dispone de modelos comparables porque no hay un modelo real en este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pereiramiguel/classify
+- Repositorio en Hugging Face: https://huggingface.co/Pereiramiguel/classify
 - Resultados de búsqueda web no relacionados directamente con el repositorio (Peregrine Classify, Classify AI, funciones ai_classify de Databricks y Snowflake) no son relevantes para este modelo.
 
 **Nota importante**: la ficha se ha redactado con los datos disponibles. El repositorio no contiene un modelo funcional, por lo que las especificaciones técnicas, capacidades y casos de uso quedan sin definir. Se recomienda contactar con el autor para obtener información adicional o esperar a que se publiquen artefactos de modelo reales.</think>## Resumen
 
-El repositorio `Pereiramiguel/classify` en HuggingFace no contiene un modelo de inteligencia artificial funcional, sino un conjunto de notas de documentación académica. Según la model card, el repositorio alberga un único archivo `notes.md` que describe la estructura de un paper sobre generación multimodal, con formato LaTeX estilo arXiv, citas en footnote y una organización de secciones abstract, intro, prelim, method, exp y discussion. No se incluyen pesos, configuraciones de red, tokenizadores ni código de entrenamiento.
+El repositorio `Pereiramiguel/classify` en Hugging Face no contiene un modelo de inteligencia artificial funcional, sino un conjunto de notas de documentación académica. Según la model card, el repositorio alberga un único archivo `notes.md` que describe la estructura de un paper sobre generación multimodal, con formato LaTeX estilo arXiv, citas en footnote y una organización de secciones abstract, intro, prelim, method, exp y discussion. No se incluyen pesos, configuraciones de red, tokenizadores ni código de entrenamiento.
 
 El autor, Pereiramiguel, ha publicado este repositorio bajo licencia CC-BY-4.0, pero no se ha proporcionado ningún artefacto que permita su uso como modelo de clasificación o generación. Los tags indican preferencias de estilo de escritura y formato de documento, no características técnicas de un modelo. No se ha registrado ninguna descarga ni interacción de la comunidad, y la fecha de creación es posterior a la fecha actual, lo que sugiere que el contenido es un borrador o un ejemplo de documentación.
 
@@ -168,7 +168,7 @@ Se indica "no disponible".
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Pereiramiguel/classify)
+- [Repositorio en Hugging Face](https://huggingface.co/Pereiramiguel/classify)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) asociados a este modelo específico. Los resultados de búsqueda web (Peregrine Classify, Classify AI, funciones ai_classify de Databricks y Snowflake) no están relacionados con este repositorio.
 
 **Advertencia final**: la información técnica de este repositorio es inexistente. Se recomienda contactar con el autor para aclarar el propósito del contenido o esperar a que se publique un modelo real.

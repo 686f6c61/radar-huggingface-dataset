@@ -4,7 +4,7 @@
 
 El modelo `hellotung/patch-forcing-channel-concat` es un checkpoint asociado al framework **Patch Forcing**, presentado en el paper *Denoising, Fast and Slow: Difficulty-Aware Adaptive Sampling for Image Generation* (CVPR 2026). El trabajo está desarrollado por el grupo CompVis de la LMU Munich y el Munich Center for Machine Learning (MCML), con Johannes Schusterbauer y Ming Gui como primeros autores. El modelo aborda un problema central en la generación de imágenes con modelos de difusión: la heterogeneidad espacial de las imágenes, donde algunas regiones son fáciles de denoising (fondos, áreas planas) y otras requieren más refinamiento (texturas finas, texto). Patch Forcing introduce un enfoque de denoising por parches, donde cada región recibe un timestep distinto durante el entrenamiento y la inferencia, permitiendo asignar el cómputo de forma adaptativa según la dificultad de cada zona.
 
-La información disponible no incluye especificaciones técnicas detalladas del checkpoint (arquitectura base, número de parámetros, contexto, etc.). El repositorio en HuggingFace tiene un tamaño de 0.3 GB y no dispone de model card más allá del README del paper, por lo que los datos técnicos concretos no están disponibles. La relevancia del modelo radica en su propuesta metodológica: un sampler de timesteps (LTG) que controla la información máxima por muestra durante el entrenamiento, y una cabeza de incertidumbre que guía el muestreo adaptativo en inferencia, mejorando la calidad de generación bajo el mismo presupuesto de cómputo.
+La información disponible no incluye especificaciones técnicas detalladas del checkpoint (arquitectura base, número de parámetros, contexto, etc.). El repositorio en Hugging Face tiene un tamaño de 0.3 GB y no dispone de model card más allá del README del paper, por lo que los datos técnicos concretos no están disponibles. La relevancia del modelo radica en su propuesta metodológica: un sampler de timesteps (LTG) que controla la información máxima por muestra durante el entrenamiento, y una cabeza de incertidumbre que guía el muestreo adaptativo en inferencia, mejorando la calidad de generación bajo el mismo presupuesto de cómputo.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El RE
 - Opciones de despliegue: no disponible.
 - Latencia y throughput estimados: no disponible.
 
-El repositorio en HuggingFace tiene un tamaño de 0.3 GB, pero no se especifica el formato de los pesos ni los requisitos de hardware necesarios para ejecutar el modelo.
+El repositorio en Hugging Face tiene un tamaño de 0.3 GB, pero no se especifica el formato de los pesos ni los requisitos de hardware necesarios para ejecutar el modelo.
 
 ## Comparativa con modelos similares
 
@@ -71,8 +71,8 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hellotung/patch-forcing-channel-concat
-- Perfil de HuggingFace del autor: https://huggingface.co/hellotung
+- Modelo en Hugging Face: https://huggingface.co/hellotung/patch-forcing-channel-concat
+- Perfil de Hugging Face del autor: https://huggingface.co/hellotung
 - Repositorio de checkpoints relacionado: https://huggingface.co/hellotung/patch-forcing-checkpoints
 - Página del proyecto: https://compvis.github.io/patch-forcing
 - Paper en arXiv: https://arxiv.org/abs/2604.19141

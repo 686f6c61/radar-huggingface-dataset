@@ -72,9 +72,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Ventana / contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spatial-wave-search-512m-hero | 8,86 M | 512 m, 1.024 tokens de parche | 32 % en 500 rutas retenidas de 512 m; 40 % en laberinto doméstico | MIT | HuggingFace y GitHub |
-| spatial-wave-search-256m | no disponible | 256 m | 78 % en 500 rutas retenidas; 60 % en un distrito nunca visto; 51 % en laberintos domésticos | MIT | HuggingFace |
-| qwen3-vl-2b-lora-map-routes | 2.000 M (base Qwen3-VL-2B con LoRA) | no disponible | 49,6 % bajo la misma regla de evaluación | no disponible | HuggingFace |
+| spatial-wave-search-512m-hero | 8,86 M | 512 m, 1.024 tokens de parche | 32 % en 500 rutas retenidas de 512 m; 40 % en laberinto doméstico | MIT | Hugging Face y GitHub |
+| spatial-wave-search-256m | no disponible | 256 m | 78 % en 500 rutas retenidas; 60 % en un distrito nunca visto; 51 % en laberintos domésticos | MIT | Hugging Face |
+| qwen3-vl-2b-lora-map-routes | 2.000 M (base Qwen3-VL-2B con LoRA) | no disponible | 49,6 % bajo la misma regla de evaluación | no disponible | Hugging Face |
 
 La comparación relevante es interna al proyecto: la variante de 256 m es más precisa en su propia ventana (78 % frente a 32 %), mientras que la de 512 m cubre el doble de área por pasada. El baseline visión-lenguaje sobre las mismas rutas alcanza el 49,6 % con dos órdenes de magnitud más de parámetros.
 
@@ -92,7 +92,7 @@ La comparación relevante es interna al proyecto: la variante de 256 m es más p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mxv456/spatial-wave-search-512m-hero
+- Modelo en Hugging Face: https://huggingface.co/mxv456/spatial-wave-search-512m-hero
 - Repositorio del proyecto: https://github.com/Marvel4U/spatial-reasoning-from-scratch
 - Modelo relacionado (red de 256 m): https://huggingface.co/mxv456/spatial-wave-search-256m
 - Modelo relacionado (baseline visión-lenguaje): https://huggingface.co/mxv456/qwen3-vl-2b-lora-map-routes

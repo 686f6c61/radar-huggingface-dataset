@@ -82,9 +82,9 @@ La comparativa se establece a nivel de modelo base, ya que el adaptador no dispo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Adaptador rengas-3.2-lora-adapters-st-007 | No disponible (sobre base de 1.24 B) | No disponible (base: 128 000) | No disponible | Repositorio con 0 descargas, pesos aparentemente ausentes |
-| Llama-3.2-1B-Instruct (base) | 1.24 B | 128 000 | Llama 3.2 Community License | Ampliamente disponible en HuggingFace |
+| Llama-3.2-1B-Instruct (base) | 1.24 B | 128 000 | Llama 3.2 Community License | Ampliamente disponible en Hugging Face |
 | Qwen2.5-1.5B-Instruct | 1.54 B | 32 768 (ampliable con YaRN) | Apache 2.0 | Ampliamente disponible |
-| Gemma 2 2B Instruct | 2.6 B | 8 192 | Gemma Terms of Use | Disponible en HuggingFace |
+| Gemma 2 2B Instruct | 2.6 B | 8 192 | Gemma Terms of Use | Disponible en Hugging Face |
 
 Diferencias relevantes: Llama-3.2-1B ofrece la ventana de contexto mas amplia de la comparativa, pero Qwen2.5-1.5B cuenta con licencia Apache 2.0, mas permisiva para uso comercial. No hay datos de rendimiento del adaptador que permitan afirmar que mejora al modelo base en ninguna tarea.
 
@@ -104,8 +104,8 @@ Diferencias relevantes: Llama-3.2-1B ofrece la ventana de contexto mas amplia de
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-007
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-007
 - Modelo base declarado: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-- Libreria PEFT (HuggingFace): https://huggingface.co/docs/peft/index
+- Libreria PEFT (Hugging Face): https://huggingface.co/docs/peft/index
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

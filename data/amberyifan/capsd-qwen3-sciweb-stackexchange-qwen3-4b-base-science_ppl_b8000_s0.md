@@ -76,7 +76,7 @@ La falta de datos de evaluación impide determinar si este ajuste fino supera al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b8000_s0
+- Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_ppl_b8000_s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Reporte técnico de Qwen3: https://arxiv.org/abs/2505.09388
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JayCao99/pi05-rm65b-sort-p16-v0.0
+- Repositorio Hugging Face: https://huggingface.co/JayCao99/pi05-rm65b-sort-p16-v0.0
 - Repositorio relacionado (variante p8): https://huggingface.co/JayCao99/pi05-rm65b-sort-p8-v0.0
 - Documentación de componentes Pi0.5 (M* Stanford): http://mstar.stanford.edu/mstar/_autosummary/mstar.model.pi05.components.html
 - Página de Pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Mensaje embebido | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PatiPix/AudioSeal-ONNX | Generador de marca de agua convolucional | 16 bits | ONNX | MIT | HuggingFace |
-| facebook/audioseal | Generador + detector de marca de agua | 16 bits | PyTorch | MIT | HuggingFace |
+| PatiPix/AudioSeal-ONNX | Generador de marca de agua convolucional | 16 bits | ONNX | MIT | Hugging Face |
+| facebook/audioseal | Generador + detector de marca de agua | 16 bits | PyTorch | MIT | Hugging Face |
 | WavMark | Marca de agua de audio neuronal | no disponible en la informacion | PyTorch | no disponible | Repositorio académico |
 | SilentCipher | Marca de agua de audio neuronal | sí (binario) | PyTorch | no disponible en la informacion | Repositorio académico |
 
@@ -84,6 +84,6 @@ La comparación se limita a la categoría de marcado de agua de audio; no hay da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PatiPix/AudioSeal-ONNX
+- Repositorio Hugging Face: https://huggingface.co/PatiPix/AudioSeal-ONNX
 - Modelo base: https://huggingface.co/facebook/audioseal
 - Paper de AudioSeal: San Roman et al., "Proactive Detection of Voice Cloning with Localized Watermarking", ICML 2024 (referenciado en la model card; no se proporciona URL directa en la información disponible).

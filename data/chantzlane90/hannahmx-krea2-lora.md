@@ -83,7 +83,7 @@ No disponible. El repositorio no referencia otros LoRAs de personaje para Krea 2
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chantzlane90/hannahmx-krea2-lora
+- Repositorio en Hugging Face: https://huggingface.co/chantzlane90/hannahmx-krea2-lora
 - Herramienta de entrenamiento citada por el autor: https://fal.ai/models/fal-ai/krea-2-trainer (referencia textual de la model card; no verificada)
 - Modelo base Krea 2: no disponible (no se enlaza en la model card)
 - Plataforma de despliegue mencionada por el autor (Sogni): no disponible (no se enlaza en la model card)

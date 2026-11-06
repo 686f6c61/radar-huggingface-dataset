@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos con Whisper u otros modelos AS
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/litert-community/Fun-ASR-Nano-2512
+- Hugging Face del bundle: https://huggingface.co/litert-community/Fun-ASR-Nano-2512
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Repositorio FunASR: https://github.com/modelscope/FunASR (referenciado como `funasr` 1.4.16 en la model card)

@@ -83,7 +83,7 @@ La comparativa se limita al modelo base y a la familia OPUS-MT porque la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zoowr/opus-mt-tc-big-zle-en-ct2-int8
+- Repositorio Hugging Face: https://huggingface.co/Zoowr/opus-mt-tc-big-zle-en-ct2-int8
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-zle-en
 - CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Articulo OPUS-MT (EAMT 2020): https://aclanthology.org/2020.eamt-1.61

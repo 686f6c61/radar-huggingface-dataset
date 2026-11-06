@@ -95,7 +95,7 @@ La comparativa muestra que esta versión MTPLX ofrece una mejora sustancial de v
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/libertydesignstudio/OverSeer-Qwen3.8-27B-MTPLX
+- Repositorio Hugging Face: https://huggingface.co/libertydesignstudio/OverSeer-Qwen3.8-27B-MTPLX
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8

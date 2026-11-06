@@ -102,7 +102,7 @@ No se dispone de datos suficientes para una comparacion de rendimiento tarea a t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_remove_30_seed3_jbbmixsft
+- Repositorio Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_remove_30_seed3_jbbmixsft
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia incluida en el repositorio: `LICENSE` (Llama 3 Community License)
 - Politica de uso incluida en el repositorio: `USE_POLICY.md`

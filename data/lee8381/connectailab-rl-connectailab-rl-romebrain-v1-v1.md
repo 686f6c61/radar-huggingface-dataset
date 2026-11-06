@@ -68,8 +68,8 @@ El propio autor advierte que el resultado de operacion de empresa corresponde a 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-romebrain-v1 (este modelo) | 0,8B + LoRA | no disponible | RL (GRPO) sobre decision discreta en simulador | Apache 2.0 | HuggingFace, 22 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la informacion | HuggingFace |
+| connectailab-rl-romebrain-v1 (este modelo) | 0,8B + LoRA | no disponible | RL (GRPO) sobre decision discreta en simulador | Apache 2.0 | Hugging Face, 22 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | LLM generalista | no disponible en la informacion | Hugging Face |
 | Politica profesora PPO de Connect Tycoon | no disponible (modelo pequeno) | no disponible | RL clasico en el simulador | no disponible | no publicada como modelo independiente |
 
 No se dispone de datos publicados para comparar con otros adaptadores de decision de la misma categoria; la comparacion relevante es interna al proyecto (base, SFT y GRPO).
@@ -88,7 +88,7 @@ No se dispone de datos publicados para comparar con otros adaptadores de decisio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LEE8381/connectailab-rl-connectailab-rl-romebrain-v1-v1
+- Modelo en Hugging Face: https://huggingface.co/LEE8381/connectailab-rl-connectailab-rl-romebrain-v1-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

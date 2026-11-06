@@ -71,9 +71,9 @@ Las puntuaciones de generación libre son exactitudes juzgadas por un OCR Qwen3.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIXAR 113M (8x8) | 113M | hasta 1.024 bloques | Pixel-based, sin tokenizador | Apache 2.0 | HuggingFace |
-| MIXAR 116M (32x32) | 116M | hasta 1.024 bloques | Pixel-based, sin tokenizador | Apache 2.0 | HuggingFace |
-| MIXAR 477M (32x32) | 477M | hasta 1.024 bloques | Pixel-based, sin tokenizador | Apache 2.0 | HuggingFace |
+| MIXAR 113M (8x8) | 113M | hasta 1.024 bloques | Pixel-based, sin tokenizador | Apache 2.0 | Hugging Face |
+| MIXAR 116M (32x32) | 116M | hasta 1.024 bloques | Pixel-based, sin tokenizador | Apache 2.0 | Hugging Face |
+| MIXAR 477M (32x32) | 477M | hasta 1.024 bloques | Pixel-based, sin tokenizador | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos comparables de otras familias en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas basadas en tokens de tamaño similar.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de modelos comparables de otras familias en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8
+- Modelo en Hugging Face: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8
 - Modelo de etapa 2: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p8-stage2
 - Modelo 116M con parches 32x32: https://huggingface.co/TYTTYTTYT/llama-pixar-116m-p32
 - Modelo 477M con parches 32x32: https://huggingface.co/TYTTYTTYT/llama-pixar-477m-p32

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El n
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo | 1,41B | no disponible | MIT (pesos) | HuggingFace | Artefacto de investigación para data mixing; solo inglés |
+| Este modelo | 1,41B | no disponible | MIT (pesos) | Hugging Face | Artefacto de investigación para data mixing; solo inglés |
 | OLMo 2 1B (AllenAI) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Alternativa de la misma familia arquitectónica; no se comparan métricas |
 | TinyLlama-1.1B | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Alternativa de tamaño similar; no se comparan métricas |
 | Qwen2.5-1.5B | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Alternativa de tamaño similar; no se comparan métricas |
@@ -86,7 +86,7 @@ No se dispone de datos verificados de rendimiento, contexto o licencia de las al
 
 ## Enlaces
 
-- [HuggingFace: credible-ai/olmo2-1B-24domains-dirichlet-lightgbm-hellaswag](https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-lightgbm-hellaswag)
+- [Hugging Face: credible-ai/olmo2-1B-24domains-dirichlet-lightgbm-hellaswag](https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-lightgbm-hellaswag)
 - [Repositorio de código LinMix](https://github.com/credibleai/linmix)
 - [Proxy swarm: credible-ai/olmo2-30M-24domains-dirichlet](https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet)
 - [Dataset WebOrganizer/Corpus-200B](https://huggingface.co/datasets/WebOrganizer/Corpus-200B)

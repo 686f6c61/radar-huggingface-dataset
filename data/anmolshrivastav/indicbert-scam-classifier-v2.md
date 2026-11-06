@@ -100,9 +100,9 @@ No se dispone de informacion sobre modelos comparables de terceros en la informa
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indicbert-scam-classifier-v2 | 278.042.882 | no disponible | 99,64 % | MIT | HuggingFace |
+| indicbert-scam-classifier-v2 | 278.042.882 | no disponible | 99,64 % | MIT | Hugging Face |
 | indicbert-scam-classifier v1 | no disponible | no disponible | 98,29 % | no disponible | version previa citada en la ficha |
-| ai4bharat/IndicBERTv2-MLM-only | no disponible | no disponible | no aplica (modelo base de MLM, no clasificador) | no disponible | HuggingFace |
+| ai4bharat/IndicBERTv2-MLM-only | no disponible | no disponible | no aplica (modelo base de MLM, no clasificador) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -118,7 +118,7 @@ No se dispone de informacion sobre modelos comparables de terceros en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anmolshrivastav/indicbert-scam-classifier-v2
+- Modelo en Hugging Face: https://huggingface.co/anmolshrivastav/indicbert-scam-classifier-v2
 - Modelo base: https://huggingface.co/ai4bharat/IndicBERTv2-MLM-only
 - Conjunto de datos: https://huggingface.co/datasets/anmolshrivastav/scam_ham_india_14_languages
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/sn97____kumaresano____uid224____hk5ChqR` es un checkpoint alojado en HuggingFace con pipeline `image-text-to-text`, lo que indica que está diseñado para tareas multimodales que combinan visión y lenguaje. Ha sido publicado por el usuario `reyansh38771` bajo licencia Apache 2.0 y contiene aproximadamente 35.952 millones de parámetros, con un tamaño de repositorio de 71,9 GB en formato `safetensors`. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace para poder descargarlo.
+El modelo `reyansh38771/sn97____kumaresano____uid224____hk5ChqR` es un checkpoint alojado en Hugging Face con pipeline `image-text-to-text`, lo que indica que está diseñado para tareas multimodales que combinan visión y lenguaje. Ha sido publicado por el usuario `reyansh38771` bajo licencia Apache 2.0 y contiene aproximadamente 35.952 millones de parámetros, con un tamaño de repositorio de 71,9 GB en formato `safetensors`. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face para poder descargarlo.
 
 A pesar de su tamaño considerable, la información pública disponible es muy limitada: no se han publicado detalles sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las capacidades específicas más allá de la etiqueta `qwen3_5_moe` que sugiere una posible arquitectura de mezcla de expertos (MoE) basada en la familia Qwen. Tampoco se han documentado benchmarks ni casos de uso oficiales. La fecha de creación (2026) y la ausencia de descargas o valoraciones indican que se trata de un modelo muy reciente o poco difundido.
 
@@ -21,7 +21,7 @@ A pesar de su tamaño considerable, la información pública disponible es muy l
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo. La etiqueta `qwen3_5_moe` en HuggingFace sugiere que podria tratarse de una variante de la familia Qwen con arquitectura de mezcla de expertos (MoE), pero no hay confirmacion oficial ni documentacion tecnica. Tampoco se conocen los datos de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas como RLHF, DPO o instruccion supervisada. El pipeline `image-text-to-text` indica que el modelo acepta tanto imagenes como texto como entrada y genera texto, pero se desconocen los detalles del codificador visual o del adaptador multimodal.
+No se dispone de informacion publica sobre la arquitectura interna del modelo. La etiqueta `qwen3_5_moe` en Hugging Face sugiere que podria tratarse de una variante de la familia Qwen con arquitectura de mezcla de expertos (MoE), pero no hay confirmacion oficial ni documentacion tecnica. Tampoco se conocen los datos de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas como RLHF, DPO o instruccion supervisada. El pipeline `image-text-to-text` indica que el modelo acepta tanto imagenes como texto como entrada y genera texto, pero se desconocen los detalles del codificador visual o del adaptador multimodal.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o academicos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o academicos.
 - Documentacion inexistente: no hay README, paper ni guia de uso, lo que dificulta su integracion y evaluacion.
 - Sesgos y alucinaciones: desconocidos al no haber informacion sobre datos de entrenamiento ni evaluaciones.
 - Licencia Apache 2.0 permite uso comercial, pero al ser un modelo sin documentacion, el riesgo de uso incorrecto es alto.
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- [HuggingFace - reyansh38771/sn97____kumaresano____uid224____hk5ChqR](https://huggingface.co/reyansh38771/sn97____kumaresano____uid224____hk5ChqR)
+- [Hugging Face - reyansh38771/sn97____kumaresano____uid224____hk5ChqR](https://huggingface.co/reyansh38771/sn97____kumaresano____uid224____hk5ChqR)
 - [GitHub - DMSC19/sn97-model-v1 (posible modelo relacionado, no confirmado)](https://github.com/Damacol/dmsc19-sn97-model-v1/blob/main/README.md)
 
 Nota: los resultados de busqueda web no proporcionaron informacion adicional relevante sobre este modelo concreto.

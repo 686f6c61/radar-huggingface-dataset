@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un modelo de desambiguacion del sentido de las palabras (word sense disambiguation, WSD) para ucraniano, publicado por el usuario yuriilaba en HuggingFace. No es un modelo generativo: es un encoder de frases afinado a partir de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, que a su vez deriva de la arquitectura XLM-RoBERTa base. El modelo aprende representaciones contextuales que permiten distinguir el sentido correcto de una palabra polisemica a partir de su contexto oracional, y ademas conserva capacidades de similitud semantica de frases (STS).
+Se trata de un modelo de desambiguacion del sentido de las palabras (word sense disambiguation, WSD) para ucraniano, publicado por el usuario yuriilaba en Hugging Face. No es un modelo generativo: es un encoder de frases afinado a partir de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, que a su vez deriva de la arquitectura XLM-RoBERTa base. El modelo aprende representaciones contextuales que permiten distinguir el sentido correcto de una palabra polisemica a partir de su contexto oracional, y ademas conserva capacidades de similitud semantica de frases (STS).
 
 El checkpoint tiene 278.043.648 parametros (unos 278 millones) almacenados en safetensors, con un repositorio de 1,1 GB, lo que corresponde a pesos en precision completa (FP32). El entrenamiento se realizo sobre el fichero `local_datasets/semi_supervised_2/triplets/triplets_generation_translation_16_samples.csv`, con pooling sobre el token objetivo (`target-token pooling: True`) y semilla 42 tanto para el split de validacion como para el entrenamiento.
 
@@ -102,7 +102,7 @@ La comparacion cuantitativa con alternativas especificas de WSD en ucraniano no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-true_seed-42
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-true_seed-42
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Arquitectura de referencia del encoder subyacente: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Resultados MTEB incluidos en el repositorio: `evaluation/mteb_results/` (ruta interna del repositorio del modelo)

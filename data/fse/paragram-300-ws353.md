@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paragram-300-ws353` es un conjunto de embeddings de palabras estáticos de 300 dimensiones para inglés, publicado originalmente por John Wieting (Carnegie Mellon University) y redistribuido en HuggingFace por el proyecto fse (Fast Sentence Embeddings) de Oliver Borchers. No es un modelo generativo ni un transformer: es una matriz de vectores de palabra al estilo word2vec/Paragram, con un vocabulario de 1.703.756 palabras y 300 componentes por vector, lo que supone 511.126.800 valores float32 (unos 2,0 GB).
+`fse/paragram-300-ws353` es un conjunto de embeddings de palabras estáticos de 300 dimensiones para inglés, publicado originalmente por John Wieting (Carnegie Mellon University) y redistribuido en Hugging Face por el proyecto fse (Fast Sentence Embeddings) de Oliver Borchers. No es un modelo generativo ni un transformer: es una matriz de vectores de palabra al estilo word2vec/Paragram, con un vocabulario de 1.703.756 palabras y 300 componentes por vector, lo que supone 511.126.800 valores float32 (unos 2,0 GB).
 
 El interés del repositorio no está en el modelo en sí, sino en el empaquetado: los vectores se distribuyen en formato gensim `KeyedVectors` y son consumibles directamente por la librería `fse`, que los convierte en vectores de frase mediante media CBOW, SIF (Smooth Inverse Frequency) o uSIF. Eso permite construir un baseline de similitud semántica de frases en CPU, sin GPU y sin infraestructura de inferencia, algo útil para búsqueda semántica, clustering de textos o extracción de características en pipelines clásicos de machine learning.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fse/paragram-300-ws353
+- Repositorio en Hugging Face: https://huggingface.co/fse/paragram-300-ws353
 - Página de John Wieting en Carnegie Mellon University (origen de los vectores): https://www.cs.cmu.edu/~jwieting/
 - Artículo de referencia (Wieting et al., 2015): https://aclanthology.org/Q15-1025/
 - Repositorio de Fast Sentence Embeddings (fse), con el benchmark STS: https://github.com/oborchers/Fast_Sentence_Embeddings

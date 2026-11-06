@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento en recuperacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Intent2Action-glimmer-recovery (G1d) | 30B base + adaptador | no disponible | 9/20 rescatadas; 82 % escritura | Apache-2.0 | HuggingFace (0 descargas) |
-| Muse Glimmer 30B (base) | 30B | no disponible | 4/20 rescatadas | no disponible | HuggingFace |
+| Intent2Action-glimmer-recovery (G1d) | 30B base + adaptador | no disponible | 9/20 rescatadas; 82 % escritura | Apache-2.0 | Hugging Face (0 descargas) |
+| Muse Glimmer 30B (base) | 30B | no disponible | 4/20 rescatadas | no disponible | Hugging Face |
 | Intent2Action G1b (adaptador hermano) | 30B base + adaptador | no disponible | no disponible; 84 % escritura | no disponible | referenciado en la model card |
 
 No se dispone de informacion sobre otros adaptadores de robotica comparables en la informacion proporcionada.
@@ -88,6 +88,6 @@ No se dispone de informacion sobre otros adaptadores de robotica comparables en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mewbot97/Intent2Action-glimmer-recovery
+- Hugging Face: https://huggingface.co/mewbot97/Intent2Action-glimmer-recovery
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio Intent2Action: https://github.com/allwinlucious/Intent2Action

@@ -4,7 +4,7 @@
 
 PersonaPlex OIF (online instruction following) es un adaptador LoRA desarrollado por MagicLuke sobre el modelo base nvidia/personaplex-7b-v1 de NVIDIA. Su propósito es dotar a PersonaPlex, un modelo conversacional de voz a voz en tiempo real y full-duplex, de la capacidad de seguir instrucciones en lenguaje natural que se inyectan en mitad de la conversación, sin que el modelo se detenga a "leer" la instrucción. Esto permite modificar el comportamiento del asistente sobre la marcha, por ejemplo cambiar el tono, la temática o la tarea, manteniendo la fluidez del diálogo hablado.
 
-El adaptador se entrena sobre los conjuntos de datos Fisher (con licencia LDC) y Seamless Interaction, y se distribuye como un repositorio de 32,6 GB con acceso restringido en HuggingFace. Al ser un adaptador LoRA, no modifica la arquitectura del modelo base, sino que añade pesos adicionales que se combinan con los del modelo original. La licencia es personaplex-derivative, lo que implica restricciones derivadas de la licencia de PersonaPlex.
+El adaptador se entrena sobre los conjuntos de datos Fisher (con licencia LDC) y Seamless Interaction, y se distribuye como un repositorio de 32,6 GB con acceso restringido en Hugging Face. Al ser un adaptador LoRA, no modifica la arquitectura del modelo base, sino que añade pesos adicionales que se combinan con los del modelo original. La licencia es personaplex-derivative, lo que implica restricciones derivadas de la licencia de PersonaPlex.
 
 La relevancia de este modelo radica en que aborda una limitación común en los asistentes de voz full-duplex: la imposibilidad de recibir comandos o cambios de contexto sin interrumpir la conversación. Con este adaptador, se puede dirigir al modelo de forma natural mientras habla, lo que abre casos de uso en atención al cliente, asistentes personales y sistemas de interacción por voz en tiempo real.
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación.
 - Licencia derivada: la licencia personaplex-derivative impone restricciones adicionales sobre la licencia original de PersonaPlex, que no se detallan en la información disponible. Se recomienda revisar los términos antes de uso comercial.
 - Sesgos y alucinaciones: al ser un modelo de habla, puede generar respuestas incorrectas o inventadas, especialmente en contextos de alta incertidumbre. No se han publicado evaluaciones de sesgo.
 - Idiomas limitados: aunque no se especifica, el entrenamiento con Fisher (inglés) sugiere que el rendimiento en otros idiomas puede ser inferior.
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MagicLuke/personaplex-oif-ins-token-v1
+- Repositorio Hugging Face: https://huggingface.co/MagicLuke/personaplex-oif-ins-token-v1
 - Código de PersonaPlex (NVIDIA): https://github.com/NVIDIA/personaplex
 - Página de investigación de PersonaPlex: https://research.nvidia.com/labs/adlr/personaplex/
 - API de PersonaPlex: https://personaplex.io/

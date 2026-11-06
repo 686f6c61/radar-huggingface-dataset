@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/zephyr-nook-86` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en HuggingFace, diseñado para la generación de texto conversacional. Está construido sobre el modelo base `models4world/maple-signal-64`, del cual no se proporciona información pública en la ficha. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 1,9 GB, y utiliza la librería PEFT 0.20.0 para su integración con Transformers.
+El modelo `models4world/zephyr-nook-86` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `models4world` en Hugging Face, diseñado para la generación de texto conversacional. Está construido sobre el modelo base `models4world/maple-signal-64`, del cual no se proporciona información pública en la ficha. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 1,9 GB, y utiliza la librería PEFT 0.20.0 para su integración con Transformers.
 
 La relevancia de este modelo es limitada en el ecosistema actual: no tiene descargas ni valoraciones, su model card está completamente vacía (todos los campos aparecen como "[More Information Needed]") y no se ha publicado ningún detalle sobre arquitectura, entrenamiento, capacidades o licencia. El tag `arxiv:1910.09700` hace referencia al artículo de Lacoste et al. sobre estimación del impacto ambiental de modelos de ML, pero no aporta información técnica sobre el modelo en sí. En resumen, se trata de un artefacto sin documentación pública suficiente para una evaluación rigurosa.
 
@@ -62,6 +62,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/models4world/zephyr-nook-86
+- Modelo en Hugging Face: https://huggingface.co/models4world/zephyr-nook-86
 - Modelo base (sin ficha pública): https://huggingface.co/models4world/maple-signal-64
 - Paper referenciado en tags (no relacionado con la arquitectura): https://arxiv.org/abs/1910.09700

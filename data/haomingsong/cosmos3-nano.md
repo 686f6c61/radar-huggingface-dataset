@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HaomingSong/cosmos3-nano | 16.454 M escalares almacenados (incluye VAE y componentes congelados) | no disponible | Política robótica vídeo+acción (LeRobot) | OpenMDW 1.1 | HuggingFace, 14 descargas |
-| nvidia/Cosmos3-Nano | no disponible en la información proporcionada | no disponible | Modelo fundacional de NVIDIA (upstream) | OpenMDW 1.1 | HuggingFace (checkpoint original) |
+| HaomingSong/cosmos3-nano | 16.454 M escalares almacenados (incluye VAE y componentes congelados) | no disponible | Política robótica vídeo+acción (LeRobot) | OpenMDW 1.1 | Hugging Face, 14 descargas |
+| nvidia/Cosmos3-Nano | no disponible en la información proporcionada | no disponible | Modelo fundacional de NVIDIA (upstream) | OpenMDW 1.1 | Hugging Face (checkpoint original) |
 | NVIDIA Policy-DROID | no disponible | no disponible | Política robótica ajustada | no disponible | Referenciado en la model card |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HaomingSong/cosmos3-nano
+- Repositorio Hugging Face: https://huggingface.co/HaomingSong/cosmos3-nano
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Nano/tree/e59a53c25979a090fa8706c9acc0c254a6e89b92
 - Model card original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md
 - Notas de seguridad: https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/SAFETY.md

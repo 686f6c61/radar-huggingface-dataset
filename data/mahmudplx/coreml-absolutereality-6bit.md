@@ -76,7 +76,7 @@ Ambos modelos de LocalMuseAI son conversiones similares para Core ML, pero orien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mahmudplx/coreml-absolutereality-6bit
+- Repositorio Hugging Face: https://huggingface.co/mahmudplx/coreml-absolutereality-6bit
 - Modelo base AbsoluteReality: https://huggingface.co/Lykon/AbsoluteReality
 - Pipeline oficial de Apple para Stable Diffusion en Core ML: https://github.com/apple/ml-stable-diffusion
 - Página de AbsoluteReality en Civitai: https://civitai.com/models/81458/absolutereality

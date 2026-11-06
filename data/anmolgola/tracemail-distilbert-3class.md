@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TraceMail-DistilBERT-3Class es un clasificador de correo electrónico de tres clases (LEGITIMATE, PHISHING y SPAM) publicado por el usuario ANMOLGOLA en HuggingFace. El modelo parte de distilbert-base-uncased, un transformer encoder-only de 6 capas y 66.955.779 parámetros, y ha sido ajustado (fine-tuning) específicamente para la tarea de clasificación de correos en tres categorías. Forma parte de la plataforma de ciberseguridad TraceMail, donde actúa como una señal NLP más dentro de un pipeline de detección de amenazas que incluye TF-IDF y una capa de análisis forense (cabeceras, SPF, DKIM, DMARC, IP/DNS y correlación).
+TraceMail-DistilBERT-3Class es un clasificador de correo electrónico de tres clases (LEGITIMATE, PHISHING y SPAM) publicado por el usuario ANMOLGOLA en Hugging Face. El modelo parte de distilbert-base-uncased, un transformer encoder-only de 6 capas y 66.955.779 parámetros, y ha sido ajustado (fine-tuning) específicamente para la tarea de clasificación de correos en tres categorías. Forma parte de la plataforma de ciberseguridad TraceMail, donde actúa como una señal NLP más dentro de un pipeline de detección de amenazas que incluye TF-IDF y una capa de análisis forense (cabeceras, SPF, DKIM, DMARC, IP/DNS y correlación).
 
 El interés del modelo es acotado pero claro: se trata de un encoder pequeño, rápido y barato de desplegar, orientado a producción de alto volumen, en lugar de un LLM generativo. Con menos de 67 millones de parámetros cabe en cualquier GPU consumer e incluso en CPU, lo que permite clasificar correos a gran escala con latencias de milisegundos. El autor reporta métricas muy altas en su conjunto de test reservado (99,18 % de accuracy y 99,14 % de macro F1), aunque el propio model card advierte que corresponden al entorno de desarrollo y no garantizan rendimiento en organizaciones, campañas o tipos de ataque no vistos.
 
@@ -74,7 +74,7 @@ No se dispone de comparación con otros modelos en el mismo conjunto de evaluaci
 - VRAM para inferencia: por debajo de 1 GB incluyendo activaciones con lotes pequeños; con lotes grandes de secuencias de 512 tokens conviene reservar 1-2 GB.
 - GPU recomendadas: NVIDIA T4, L4, RTX 3060 o superiores para servicio continuo; RTX 4090 o A10 para lotes muy grandes; A100/H100 están sobredimensionadas para este tamaño de modelo.
 - Cabe sin problema en cualquier GPU consumer con 4 GB o más de VRAM, e incluso en CPU: un encoder de 6 capas procesa secuencias de 512 tokens en decenas de milisegundos por núcleo.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch, ONNX Runtime u Optimum para acelerar la inferencia, TorchServe o FastAPI para exponer un endpoint HTTP, y HuggingFace Inference Endpoints para un servicio gestionado. vLLM y el ecosistema llama.cpp/Ollama no están orientados a encoders de clasificación; para GGUF haría falta una conversión no publicada en el repositorio.
+- Opciones de despliegue: Hugging Face Transformers con PyTorch, ONNX Runtime u Optimum para acelerar la inferencia, TorchServe o FastAPI para exponer un endpoint HTTP, y Hugging Face Inference Endpoints para un servicio gestionado. vLLM y el ecosistema llama.cpp/Ollama no están orientados a encoders de clasificación; para GGUF haría falta una conversión no publicada en el repositorio.
 - Latencia y throughput: no disponibles. Como referencia orientativa, un encoder de 67M suele procesar lotes de cientos de secuencias por segundo en una GPU moderna, pero se trata de una estimación, no de un dato medido para este modelo.
 - Antes de desplegar, revisar el contenido del repositorio: 3,2 GB es muy superior al tamaño de los pesos en fp32, lo que apunta a checkpoints de entrenamiento o estados del optimizador que no son necesarios en producción.
 
@@ -105,7 +105,7 @@ La ventaja estructural de este modelo frente a los backbones genéricos es que y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANMOLGOLA/TraceMail-DistilBERT-3Class
+- Modelo en Hugging Face: https://huggingface.co/ANMOLGOLA/TraceMail-DistilBERT-3Class
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Búsqueda web realizada: los resultados obtenidos no guardaban relación con el modelo (contenido genérico sobre buscadores, redes sociales y resolución de problemas de DNS), por lo que no se han incluido. No se han encontrado papers, blogs, repositorios ni demos adicionales del modelo.

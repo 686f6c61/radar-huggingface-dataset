@@ -85,7 +85,7 @@ La comparativa se limita a los modelos mencionados en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/TheOneWhoWill/Coding-Monkey-Gemma-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it (no verificado en la busqueda, se infiere del ID)
 - Dataset glaiveai/glaive-function-calling-v2: no se proporciona enlace directo, pero se menciona en el README.
 - Dataset zai-org/AgentInstruct: no se proporciona enlace directo, se menciona en el README.

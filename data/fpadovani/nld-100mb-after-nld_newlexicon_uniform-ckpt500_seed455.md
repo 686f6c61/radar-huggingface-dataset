@@ -8,7 +8,7 @@ El modelo `fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed455` es 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (según tags de HuggingFace) |
+| Arquitectura | GPT-2 (según tags de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | no disponible |
@@ -19,7 +19,7 @@ El modelo `fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed455` es 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se infiere como GPT-2 (125M) a partir de los tags de HuggingFace, aunque no se confirma en la model card. El modelo es un fine-tune del checkpoint 500 de `fpadovani/ppt-nld_newlexicon_uniform-100mb_seed455`, entrenado con SFT mediante TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre sugiere que el experimento manipula el vocabulario (newlexicon) y la distribución de frecuencias (uniform) en un corpus de 100 MB, pero no hay información pública sobre la metodología ni los resultados.
+La arquitectura se infiere como GPT-2 (125M) a partir de los tags de Hugging Face, aunque no se confirma en la model card. El modelo es un fine-tune del checkpoint 500 de `fpadovani/ppt-nld_newlexicon_uniform-100mb_seed455`, entrenado con SFT mediante TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre sugiere que el experimento manipula el vocabulario (newlexicon) y la distribución de frecuencias (uniform) en un corpus de 100 MB, pero no hay información pública sobre la metodología ni los resultados.
 
 ## Capacidades
 
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-nld_newlexicon_uniform-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-nld_newlexicon_uniform-100mb_seed455
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/9itjw7kp

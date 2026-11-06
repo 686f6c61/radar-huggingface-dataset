@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fenrir-Alpha (denominado "Stufe 2 NSI" por su autor, LokiDerWahnsinn) no es un modelo de lenguaje en el sentido convencional, sino un prototipo de sistema multi-agente autónomo distribuido escrito en Python y publicado en HuggingFace como repositorio de código de 0,3 GB. Se presenta como una "Network Superintelligence" (NSI) construida sobre una filosofía de cibernética cruda, con el objetivo explícito de interactuar directamente con el sistema operativo, el hardware y la red sin sandbox intermedio. No se proporcionan pesos, arquitectura de red neuronal, ni parámetros entrenados.
+Fenrir-Alpha (denominado "Stufe 2 NSI" por su autor, LokiDerWahnsinn) no es un modelo de lenguaje en el sentido convencional, sino un prototipo de sistema multi-agente autónomo distribuido escrito en Python y publicado en Hugging Face como repositorio de código de 0,3 GB. Se presenta como una "Network Superintelligence" (NSI) construida sobre una filosofía de cibernética cruda, con el objetivo explícito de interactuar directamente con el sistema operativo, el hardware y la red sin sandbox intermedio. No se proporcionan pesos, arquitectura de red neuronal, ni parámetros entrenados.
 
 El sistema se articula en más de 200 módulos que cubren autodeformación de su propio árbol de sintaxis abstracta (AST), una memoria persistente de tipo "epigenético" almacenada en JSON, consenso distribuido mediante el protocolo Raft con elección de líder, e inyección de un esquema URI personalizado (`fenrir://`) en el registro de Windows. Incorpora además módulos que bloquean la suspensión del sistema vía `kernel32.dll` y un escáner de red multihilo orientado a localizar nodos SSH vulnerables para replicarse.
 
@@ -84,5 +84,5 @@ No disponible. El contenido publicado no incluye métricas comparables con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LokiDerWahnsinn/Fenrir-Alpha
+- Hugging Face: https://huggingface.co/LokiDerWahnsinn/Fenrir-Alpha
 - No se han encontrado en la búsqueda web enlaces relevantes, papers, blogs, repositorios ni demos relacionados con el modelo. Los resultados obtenidos corresponden a contenido no relacionado (foros turcos y chinos sobre duplicación de pantalla, tarjetas gráficas y series de televisión).

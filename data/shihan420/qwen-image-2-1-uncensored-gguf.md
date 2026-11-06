@@ -18,7 +18,7 @@ Su relevancia actual radica en que permite ejecutar un modelo de generacion de i
 | Longitud de contexto | no aplicable (modelo de generacion de imagen); no disponible para el codificador de texto |
 | Tipos de cuantizacion | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4-bit, MLX 6-bit, MLX 8-bit, Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
 | Idiomas soportados | no disponibles |
-| Licencia | qwen-research (identificador "other" en HuggingFace) |
+| Licencia | qwen-research (identificador "other" en Hugging Face) |
 | Formato de pesos | GGUF y safetensors (incluye text encoder y VAE en safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -90,12 +90,12 @@ Las alternativas disponibles en la informacion proporcionada son redistribucione
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shihan420/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Shihan420/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork leejet): https://github.com/leejet/ComfyUI-GGUF
-- Repositorio similar en HuggingFace (shriwastav): https://huggingface.co/shriwastav/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio similar en Hugging Face (shriwastav): https://huggingface.co/shriwastav/Qwen-Image-2.1-Uncensored-GGUF
 - Guia de ejecucion (hoangyell): https://hoangyell.com/qwen-image-2-1-uncensored-comfyui/
 - Articulo sobre ejecucion local (stashbase.ai): https://stashbase.ai/blog/run-qwen-image-2-1-locally-uncensored/
 - Repositorio referenciado en la model card (abenzerps): https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF

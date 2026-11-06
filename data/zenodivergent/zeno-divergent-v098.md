@@ -111,5 +111,5 @@ No se han identificado en la información proporcionada modelos comparables de m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZenoDivergent/zeno-divergent-v098
+- Hugging Face: https://huggingface.co/ZenoDivergent/zeno-divergent-v098
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

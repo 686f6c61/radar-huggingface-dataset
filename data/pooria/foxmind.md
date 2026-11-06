@@ -91,9 +91,9 @@ No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K,
 
 | Modelo | Tipo | Eje de batch | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pooria/foxmind | Exportacion ONNX del grafo de agente de GLiNER2 multi-v1 | Si | ONNX fp32 y fp16 | Apache-2.0 | HuggingFace, 102 descargas |
-| onnx-community/gliner2-multi-v1-agent-ONNX | Exportacion ONNX del grafo de agente de GLiNER2 multi-v1 | No (misma exportacion sin eje de batch) | ONNX | no disponible | HuggingFace |
-| fastino/gliner2-multi-v1 | Modelo base original (GLiNER2 multilingue) | No aplica | Pesos originales (no ONNX) | Apache-2.0 | HuggingFace |
+| pooria/foxmind | Exportacion ONNX del grafo de agente de GLiNER2 multi-v1 | Si | ONNX fp32 y fp16 | Apache-2.0 | Hugging Face, 102 descargas |
+| onnx-community/gliner2-multi-v1-agent-ONNX | Exportacion ONNX del grafo de agente de GLiNER2 multi-v1 | No (misma exportacion sin eje de batch) | ONNX | no disponible | Hugging Face |
+| fastino/gliner2-multi-v1 | Modelo base original (GLiNER2 multilingue) | No aplica | Pesos originales (no ONNX) | Apache-2.0 | Hugging Face |
 
 Comparativa de parámetros, contexto y benchmarks frente a alternativas: no disponible en la información proporcionada.
 
@@ -110,7 +110,7 @@ Comparativa de parámetros, contexto y benchmarks frente a alternativas: no disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pooria/foxmind
+- Modelo en Hugging Face: https://huggingface.co/pooria/foxmind
 - Modelo base: https://huggingface.co/fastino/gliner2-multi-v1
 - Exportacion de referencia sin batch: https://huggingface.co/onnx-community/gliner2-multi-v1-agent-ONNX
 - Repositorio FoxPilot (scripts de exportacion, MIT): https://github.com/pooriaarab/foxpilot

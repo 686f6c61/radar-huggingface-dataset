@@ -86,7 +86,7 @@ La comparación directa con alternativas de la misma categoría (sistemas de bú
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mithil77/cartly-models
+- Repositorio Hugging Face: https://huggingface.co/mithil77/cartly-models
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya-multilingual
 - Modelo base Qwen3-Embedding-0.6B: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Modelo base SigLIP2: https://huggingface.co/google/siglip2-base-patch16-224

@@ -95,6 +95,6 @@ No se dispone de informacion sobre modelos comparables de limpieza de dictado en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muesli-HQ/qwen35-0.8b-muesli-cleanup-v14-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/Muesli-HQ/qwen35-0.8b-muesli-cleanup-v14-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados obtenidos corresponden al alimento muesli y no guardan relacion).

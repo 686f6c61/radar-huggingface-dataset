@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K) para ni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Naotaka0127/Kyalulu-Mobile-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Naotaka0127/Kyalulu-Mobile-GGUF
 - Perfil del autor: https://huggingface.co/Naotaka0127
 - Modelo base oficial (Google, QAT Q4_0): https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-gguf
 - Variante heretic sin cuantizar (mradermacher): https://huggingface.co/mradermacher/gemma-4-E2B-it-qat-q4_0-unquantized-heretic-i1-GGUF

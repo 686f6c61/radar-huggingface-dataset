@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ganbozza/loras` es un repositorio alojado en HuggingFace por el usuario `ganbozza` que, por su nombre y estructura, parece contener una coleccion de adaptadores LoRA (Low-Rank Adaptation) en lugar de un modelo base completo. El repositorio no declara pipeline, licencia, idiomas ni tarjeta de modelo descriptiva, y cuenta con cero descargas y un unico "like" en el momento de la consulta, lo que sugiere un uso privado o experimental.
+`ganbozza/loras` es un repositorio alojado en Hugging Face por el usuario `ganbozza` que, por su nombre y estructura, parece contener una coleccion de adaptadores LoRA (Low-Rank Adaptation) en lugar de un modelo base completo. El repositorio no declara pipeline, licencia, idiomas ni tarjeta de modelo descriptiva, y cuenta con cero descargas y un unico "like" en el momento de la consulta, lo que sugiere un uso privado o experimental.
 
 El tamano del repositorio, 104,4 GB, es llamativamente grande para un conjunto de adaptadores LoRA, lo que apunta a que contiene multiples adaptadores de gran tamano, pesos en precision completa (fp32) o incluso checkpoints completos empaquetados junto a los LoRA. Sin una model card publica, no es posible confirmar la arquitectura subyacente, el modelo base sobre el que se aplican los adaptadores ni el proposito concreto de cada uno.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ganbozza/loras` | Coleccion de LoRA (presunto) | no disponible | no disponible | no disponible | HuggingFace, sin documentacion |
-| Repositorios LoRA publicos documentados (p. ej. adaptadores de la comunidad para Llama/Mistral) | Adaptadores LoRA | Depende del base | Depende del base | Habitualmente la del modelo base | HuggingFace, con model card |
-| Modelos base ajustados publicados (p. ej. variantes instruct de 7B-13B) | Transformer denso | 7B-13B | 4K-128K segun modelo | Apache 2.0 / Llama / otras | HuggingFace, ampliamente documentados |
+| `ganbozza/loras` | Coleccion de LoRA (presunto) | no disponible | no disponible | no disponible | Hugging Face, sin documentacion |
+| Repositorios LoRA publicos documentados (p. ej. adaptadores de la comunidad para Llama/Mistral) | Adaptadores LoRA | Depende del base | Depende del base | Habitualmente la del modelo base | Hugging Face, con model card |
+| Modelos base ajustados publicados (p. ej. variantes instruct de 7B-13B) | Transformer denso | 7B-13B | 4K-128K segun modelo | Apache 2.0 / Llama / otras | Hugging Face, ampliamente documentados |
 
 La comparacion es estructural: `ganbozza/loras` carece de los metadatos minimos (model card, licencia, modelo base) que si acompanan a los repositorios de referencia de la comunidad.
 
@@ -80,5 +80,5 @@ La comparacion es estructural: `ganbozza/loras` carece de los metadatos minimos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ganbozza/loras
+- Repositorio en Hugging Face: https://huggingface.co/ganbozza/loras
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-V3-1.1B es un modelo de lenguaje publicado en HuggingFace por el usuario miceworks bajo el identificador `miceworks/Mark-V3-1.1B`. Se trata de una **base arquitectonica sin entrenar**: la model card indica explicitamente que los pesos corresponden a una inicializacion (He/Xavier con fusion Hadamard) y que el modelo esta "listo para pre-entrenamiento o fine-tuning", no para inferencia util. Por tanto, no es un modelo conversacional funcional a pesar de las etiquetas `conversational` y `endpoints_compatible` del repositorio.
+Mark-V3-1.1B es un modelo de lenguaje publicado en Hugging Face por el usuario miceworks bajo el identificador `miceworks/Mark-V3-1.1B`. Se trata de una **base arquitectonica sin entrenar**: la model card indica explicitamente que los pesos corresponden a una inicializacion (He/Xavier con fusion Hadamard) y que el modelo esta "listo para pre-entrenamiento o fine-tuning", no para inferencia util. Por tanto, no es un modelo conversacional funcional a pesar de las etiquetas `conversational` y `endpoints_compatible` del repositorio.
 
 La arquitectura declarada es `deepseek2`, es decir, un transformer con Multi-Head Latent Attention (MLA) y mezcla de expertos (MoE) con 32 expertos enrutados, 2 expertos compartidos y enrutamiento top-4. El modelo tiene 1.222.464.960 parametros fisicos totales y unos 330,65 millones de parametros activos por token, con una ventana de contexto de 32.768 tokens y un vocabulario de 32.032 entradas.
 
@@ -79,13 +79,13 @@ La comparacion es estructural: Mark-V3-1.1B replica el diseno MLA+MoE de DeepSee
 - Idiomas no documentados: no hay informacion sobre cobertura linguistica ni calidad multilingue.
 - Riesgo de alucinacion: irrelevante en la practica porque el modelo no genera contenido fiable, pero cualquier despliegue sin fine-tuning produciria texto sin sentido.
 - Sesgos conocidos: no evaluables al no existir entrenamiento.
-- Solo formato GGUF: no hay safetensors ni configuracion de HuggingFace Transformers, lo que limita su uso con frameworks estandar de entrenamiento sin conversion previa.
+- Solo formato GGUF: no hay safetensors ni configuracion de Hugging Face Transformers, lo que limita su uso con frameworks estandar de entrenamiento sin conversion previa.
 - Repositorio con 0 descargas y 0 likes: sin validacion comunitaria ni evidencia de reproducibilidad por terceros.
 - Fecha de creacion futura (2026-11-01): metadato anomalo que conviene verificar antes de confiar en el repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miceworks/Mark-V3-1.1B
+- Hugging Face: https://huggingface.co/miceworks/Mark-V3-1.1B
 - Especificacion ggml de cuantizacion IQ4_NL: no disponible en la informacion proporcionada
 - Paper de DeepSeek-V2 (arquitectura MLA+MoE de referencia): no disponible en la informacion proporcionada
 - Repositorio llama.cpp: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meenasing/deit-contrastive-run3` es un repositorio publicado en HuggingFace por el usuario `meenasing` que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, declarada por el autor con configuración "huge". El repositorio no se presenta como un modelo entrenado, sino como un punto de partida experimental: incluye `train.py`, `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors` destinado a pruebas de humo, sin ninguna métrica de benchmark asociada.
+`meenasing/deit-contrastive-run3` es un repositorio publicado en Hugging Face por el usuario `meenasing` que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo, declarada por el autor con configuración "huge". El repositorio no se presenta como un modelo entrenado, sino como un punto de partida experimental: incluye `train.py`, `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors` destinado a pruebas de humo, sin ninguna métrica de benchmark asociada.
 
 La relevancia de esta ficha es, por tanto, metodológica más que de rendimiento. El propio autor indica explícitamente que no reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El recuento de parámetros reportado por safetensors es de 33.088, una cifra incompatible con una configuración DeiT "huge" real (que en la práctica se mide en cientos de millones de parámetros), lo que refuerza la interpretación de que se trata de un artefacto de inicialización o de un checkpoint parcial destinado a validar el pipeline de carga y entrenamiento.
 
@@ -81,13 +81,13 @@ Nota: no se dispone de métricas de ninguno de los modelos alternativos en la in
 - No ha sido auditado en robustez, equidad o transferencia de dominio, según declara el propio autor.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de interpretar erróneamente las salidas del modelo como representaciones útiles cuando no lo son.
 - El recuento de parámetros (33.088) contradice la etiqueta de escala "huge" de la model card; conviene verificar `config.json` antes de asumir cualquier capacidad.
-- Implementación personalizada: las APIs de carga automática de HuggingFace (por ejemplo `AutoModel`) requieren un adaptador explícito y pueden fallar sin él.
+- Implementación personalizada: las APIs de carga automática de Hugging Face (por ejemplo `AutoModel`) requieren un adaptador explícito y pueden fallar sin él.
 - Licencia MIT: permite uso comercial del artefacto, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos. Al haber cero datos de entrenamiento declarados, esta advertencia es relevante para cualquier extensión del trabajo.
 - Idiomas y contexto: no aplica, es un modelo de visión; no hay información sobre resolución de entrada ni sobre el régimen de aumento de datos.
 - Fecha de creación declarada: 2026-09-15, posterior a la fecha habitual de publicación; conviene tratar los metadatos con cautela.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meenasing/deit-contrastive-run3
-- Repositorio (archivos incluidos): `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` dentro del propio espacio de HuggingFace.
+- Hugging Face: https://huggingface.co/meenasing/deit-contrastive-run3
+- Repositorio (archivos incluidos): `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` dentro del propio espacio de Hugging Face.
 - Búsquedas web: los resultados devueltos no guardan relación con el modelo (contenido genérico sobre productos y descargas de Mozilla), por lo que no se ha identificado ningún paper, blog, repositorio de código o demo adicional asociado a este artefacto.

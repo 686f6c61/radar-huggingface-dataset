@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-Garvit-1.0 es un adaptador LoRA construido sobre Llama Guard 3 1B, el modelo de clasificacion de seguridad de Meta, y publicado por el usuario pra40109 en HuggingFace. Su funcion es evaluar una linea de contenido dirigida a ninos de entre 4 y 12 anos y responder `safe` o `unsafe` seguido de las categorias de su propia politica de seguridad infantil (C1-C10), que sustituye a las categorias nativas S1-S14 de Llama Guard. El modelo se distribuye como adaptador PEFT sobre el modelo base congelado, con 11,3 millones de parametros entrenables (0,75 % de los 1,51B del modelo base).
+Llama-Garvit-1.0 es un adaptador LoRA construido sobre Llama Guard 3 1B, el modelo de clasificacion de seguridad de Meta, y publicado por el usuario pra40109 en Hugging Face. Su funcion es evaluar una linea de contenido dirigida a ninos de entre 4 y 12 anos y responder `safe` o `unsafe` seguido de las categorias de su propia politica de seguridad infantil (C1-C10), que sustituye a las categorias nativas S1-S14 de Llama Guard. El modelo se distribuye como adaptador PEFT sobre el modelo base congelado, con 11,3 millones de parametros entrenables (0,75 % de los 1,51B del modelo base).
 
 El modelo es explicitamente experimental y se presenta como un proyecto de aprendizaje. El autor advierte que solo se ha probado con datos procedentes de las mismas fuentes usadas en el entrenamiento, que nunca ha visto una linea insegura en japones y que cuatro de sus diez categorias no aparecen en los datos de entrenamiento. A pesar de declarar soporte para ingles y japones, la cobertura real del japones es nula segun la propia model card.
 
@@ -82,5 +82,5 @@ La comparativa se limita a la familia de guardrails de Meta y Google; no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pra40109/Llama-Garvit-1.0
+- Modelo en Hugging Face: https://huggingface.co/pra40109/Llama-Garvit-1.0
 - Modelo base Llama Guard 3 1B: https://huggingface.co/meta-llama/Llama-Guard-3-1B

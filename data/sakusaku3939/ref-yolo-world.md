@@ -4,7 +4,7 @@
 
 Ref-YOLO-World es un modelo de comprensión de expresiones referenciales (referring expression comprehension, REC) y localización visual (visual grounding) publicado por el desarrollador sakusaku3939. Se trata de una adaptación de YOLO-World orientada a dispositivos de borde (edge devices), es decir, a entornos con recursos de cómputo limitados, donde el objetivo es localizar en una imagen el objeto descrito por una frase en lenguaje natural en lugar de por una categoría predefinida.
 
-El modelo se distribuye como pesos (un fichero `.pth`) junto con una caché de características de texto para inferencia acelerada sobre el split de validación de RefCOCOg. La publicación en HuggingFace es mínima: no incluye model card con especificaciones de arquitectura, datos de entrenamiento ni resultados de benchmarks, y remite al repositorio de GitHub del autor para instalación, entrenamiento y evaluación.
+El modelo se distribuye como pesos (un fichero `.pth`) junto con una caché de características de texto para inferencia acelerada sobre el split de validación de RefCOCOg. La publicación en Hugging Face es mínima: no incluye model card con especificaciones de arquitectura, datos de entrenamiento ni resultados de benchmarks, y remite al repositorio de GitHub del autor para instalación, entrenamiento y evaluación.
 
 Su relevancia es acotada pero concreta: cubre la intersección entre detección de objetos abierta (open-vocabulary) y comprensión referencial con requisitos de eficiencia para despliegue en el borde. La licencia GPL-3.0, heredada de YOLO-World, condiciona fuertemente su uso comercial.
 
@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sakusaku3939/Ref-YOLO-World
+- Hugging Face: https://huggingface.co/sakusaku3939/Ref-YOLO-World
 - Repositorio GitHub del autor: https://github.com/sakusaku3939/Ref-YOLO-World
 - YOLO-World (proyecto base): https://github.com/AILab-CVC/YOLO-World

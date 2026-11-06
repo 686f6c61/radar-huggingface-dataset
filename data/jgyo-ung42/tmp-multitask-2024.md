@@ -37,7 +37,7 @@ La arquitectura es una implementación personalizada de Blip en escala nano. Seg
 Dado que el checkpoint es de inicialización y no está entrenado, los casos de uso son limitados y orientados a investigación y desarrollo:
 
 - Pruebas de humo en pipelines de entrenamiento: el checkpoint permite verificar que el código de entrenamiento y evaluación funciona correctamente antes de lanzar experimentos completos con datos reales.
-- Desarrollo de adaptadores para carga personalizada: al ser una implementación custom, los desarrolladores pueden usar este repositorio para construir adaptadores que integren la arquitectura Blip nano con frameworks estándar como HuggingFace Transformers.
+- Desarrollo de adaptadores para carga personalizada: al ser una implementación custom, los desarrolladores pueden usar este repositorio para construir adaptadores que integren la arquitectura Blip nano con frameworks estándar como Hugging Face Transformers.
 - Experimentos de multitarea con recursos mínimos: con solo 24.832 parámetros, el modelo cabe en cualquier hardware, permitiendo probar hipótesis sobre fusión gated y atención sparse en entornos de bajísima capacidad.
 - Estudio de inicialización y dinámicas de entrenamiento: investigadores pueden analizar cómo evoluciona la pérdida y las representaciones desde un punto de partida conocido y reproducible.
 - Comparación de arquitecturas a escala nano: sirve como baseline de capacidad mínima para comparar con otras implementaciones de Blip o modelos multimodales pequeños.
@@ -70,6 +70,6 @@ No disponible. No hay modelos comparables en el mismo rango de parámetros (24.8
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jgyo-ung42/tmp-multitask-2024
+- Hugging Face: https://huggingface.co/jgyo-ung42/tmp-multitask-2024
 - Encuesta sobre multitask learning (referencia general, no específica del modelo): https://hdsr.mitpress.mit.edu/pub/7fcc3jhv
 - Parte III de la encuesta (aplicaciones): https://hdsr.mitpress.mit.edu/pub/lgmkutcd/download/pdf

@@ -80,7 +80,7 @@ Moonshine destaca por su capacidad de streaming y su menor número de parámetro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Synaptics/moonshine-streaming-tiny-torq
+- Repositorio Hugging Face: https://huggingface.co/Synaptics/moonshine-streaming-tiny-torq
 - Modelo base (Useful Sensors): https://huggingface.co/UsefulSensors/moonshine-streaming-tiny
 - Ejemplos de Torq (GitHub): https://github.com/synaptics-torq/torq-examples
 - Documentación de Torq Compiler: https://synaptics-torq.github.io/torq-compiler/v/latest/

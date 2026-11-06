@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xing4.0-29B-A4B-FP8 es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por China Telecom Artificial Intelligence Technology Co., Ltd. y publicado en HuggingFace bajo el identificador XingChen-AGI. Se trata de la cuarta generacion de la serie Xing, sucesora del linaje TeleChat, y esta disenado especificamente para tareas de ingenieria complejas, razonamiento multi-paso y uso como agente con llamada a herramientas. El repositorio contiene los pesos en FP8 y la configuracion en formato Transformers, con un total de 31.215.031.088 parametros almacenados y un tamano de repositorio de 33,2 GB.
+Xing4.0-29B-A4B-FP8 es un modelo de lenguaje de tipo mezcla de expertos (MoE) desarrollado por China Telecom Artificial Intelligence Technology Co., Ltd. y publicado en Hugging Face bajo el identificador XingChen-AGI. Se trata de la cuarta generacion de la serie Xing, sucesora del linaje TeleChat, y esta disenado especificamente para tareas de ingenieria complejas, razonamiento multi-paso y uso como agente con llamada a herramientas. El repositorio contiene los pesos en FP8 y la configuracion en formato Transformers, con un total de 31.215.031.088 parametros almacenados y un tamano de repositorio de 33,2 GB.
 
 La arquitectura combina mHC, atencion MLA y prediccion multi-token (MTP) sobre un backbone MoE con 40 capas, tamano oculto de 3584 y 64 expertos enrutados mas uno compartido, de los cuales se activan 4 expertos por token, lo que da lugar a aproximadamente 4B de parametros activos por token frente a los 29B totales declarados por el autor. Soporta de forma nativa una longitud de contexto de 256K tokens, extensible a 512K, y es el primer modelo de esta escala entrenado integramente sobre plataforma Ascend NPU con el framework MindSpore.
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en dos factores: por un lado, ofrece un perfil de ef
 | Tamano del repositorio | 33,2 GB |
 | FFN denso (intermediate size) | 9216 |
 | FFN de experto (intermediate size) | 1024 |
-| Descargas / likes en HuggingFace | 91 descargas, 91 likes |
+| Descargas / likes en Hugging Face | 91 descargas, 91 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -89,7 +89,7 @@ Nota: las cifras de memoria de esta seccion son estimaciones derivadas del recue
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xing4.0-29B-A4B | 31,2B (declarado 29B) | ~4B | 256K, extensible a 512K | Apache 2.0 | Pesos FP8 en HuggingFace |
+| Xing4.0-29B-A4B | 31,2B (declarado 29B) | ~4B | 256K, extensible a 512K | Apache 2.0 | Pesos FP8 en Hugging Face |
 | Gemma4-26B-A4B | 26B (segun denominacion del benchmark) | ~4B | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Qwen3.6-35B-A3B | 35B (segun denominacion del benchmark) | ~3B | No disponible | No disponible | No disponible en la informacion proporcionada |
 
@@ -99,7 +99,7 @@ En rendimiento, Xing4.0-29B-A4B lidera en Claw-Eval, SWE-bench Verified, Termina
 
 - Sesgos: no se documenta ninguna evaluacion de sesgo, toxicidad o alineacion en la informacion disponible.
 - Alucinacion: no se publican tasas de alucinacion ni resultados en benchmarks de veracidad. Como en cualquier modelo generativo, el riesgo persiste, especialmente en tareas de investigacion profunda y sintesis de fuentes.
-- Idiomas: la ficha de HuggingFace no declara idiomas soportados. El buen resultado en SWE-bench Multilingual se refiere a lenguajes de programacion, no a idiomas naturales. Se desconoce el comportamiento en castellano.
+- Idiomas: la ficha de Hugging Face no declara idiomas soportados. El buen resultado en SWE-bench Multilingual se refiere a lenguajes de programacion, no a idiomas naturales. Se desconoce el comportamiento en castellano.
 - Contexto: aunque se declara 256K extensible a 512K, el autor no publica resultados de degradacion por longitud (needle-in-a-haystack ni similares). Las evaluaciones de agente usan ventanas de 210K, no el maximo declarado.
 - Precisión numérica: este repositorio es FP8. No se publican comparativas frente a la version BF16 del mismo modelo, por lo que el impacto de la cuantizacion en calidad no esta cuantificado.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion y conservacion del aviso de licencia. No se declaran restricciones adicionales, pero conviene verificar la licencia del modelo base y de los datos de entrenamiento, no detallados.
@@ -109,7 +109,7 @@ En rendimiento, Xing4.0-29B-A4B lidera en Claw-Eval, SWE-bench Verified, Termina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-FP8
+- Modelo en Hugging Face: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B-FP8
 - Repositorio GitHub del modelo: https://github.com/XingChen-AGI/Xing4.0-29B-A4B
 - Repositorio de la serie anterior (TeleChat): https://github.com/Tele-AI/TeleChat3
 - Referencia arXiv incluida en los tags: https://arxiv.org/abs/2512.24157

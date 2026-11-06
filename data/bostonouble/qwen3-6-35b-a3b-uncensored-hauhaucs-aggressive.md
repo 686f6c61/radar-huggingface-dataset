@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - ¿Cabe en GPU de consumo? Sí, parcialmente: en una RTX 4090 de 24 GB entran IQ4_XS, IQ4_NL y Q4_K_M, pero con ventanas de contexto muy por debajo de los 262K nativos. Para contexto largo es necesario recurrir a offload de expertos a RAM del sistema (el modelo tiene ~3B parámetros activos, lo que hace viable este modo) o a GPU de 48 GB o más.
 - Opciones de despliegue: llama.cpp (el autor indica usar el flag `--jinja` para el template de chat), LM Studio, y cualquier runtime compatible con GGUF. No se documenta compatibilidad con vLLM o TGI en la información disponible.
 - Latencia y throughput: no disponibles (no publicados). Como referencia estructural, al activar solo ~3B parámetros por token, la decodificación es más rápida que la de un modelo denso de 35B en configuraciones con offload parcial, pero no hay cifras medidas en la información proporcionada.
-- Nota de compatibilidad: el widget de "Hardware Compatibility" de HuggingFace no reconoce los cuantos K_P y puede mostrar menos ficheros de los que existen; hay que consultar "Files and versions". Los K_P pueden aparecer como "?" en la columna de cuantización de LM Studio; es un problema de visualización, no de carga.
+- Nota de compatibilidad: el widget de "Hardware Compatibility" de Hugging Face no reconoce los cuantos K_P y puede mostrar menos ficheros de los que existen; hay que consultar "Files and versions". Los K_P pueden aparecer como "?" en la columna de cuantización de LM Studio; es un problema de visualización, no de carga.
 
 ## Comparativa con modelos similares
 
@@ -91,11 +91,11 @@ No se dispone de datos de benchmarks ni de comparaciones con otras familias de m
 - Contexto: el autor advierte que por debajo de 128K tokens se degradan las capacidades de razonamiento del modo *thinking*.
 - Madurez del artefacto: el repositorio tiene 0 descargas y 0 likes y fue creado el 19 de octubre de 2026, sin validación de la comunidad. La model card está truncada ("Works with llama.cp…"), por lo que la documentación de despliegue está incompleta.
 - Inconsistencia de autoría: el repositorio lo publica el usuario Bostonouble, mientras que los enlaces de descarga de la model card apuntan al espacio de HauhauCS; conviene verificar el origen de los ficheros antes de usarlos en producción.
-- Los cuantos K_P son un formato propietario del autor: funcionan en llama.cpp y LM Studio, pero herramientas de terceros pueden no reconocerlos correctamente (el propio widget de HuggingFace falla al detectarlos).
+- Los cuantos K_P son un formato propietario del autor: funcionan en llama.cpp y LM Studio, pero herramientas de terceros pueden no reconocerlos correctamente (el propio widget de Hugging Face falla al detectarlos).
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bostonouble/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Repositorio en Hugging Face: https://huggingface.co/Bostonouble/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Espacio del autor del desbloqueo y las cuantizaciones (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Fichero Q8_K_P: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive/resolve/main/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-Q8_K_P.gguf

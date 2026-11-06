@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama 3.2 3B Thai CRM GGUF es una version cuantizada en formato GGUF del modelo yothinS/Llama-3.2-3B-Thai_CRM, un ajuste fino del modelo base Llama 3.2 3B de Meta orientado a flujos de trabajo de gestion de relaciones con clientes (CRM), comunicacion empresarial en tailandes y analisis del comportamiento del cliente. Lo publica el usuario yothinS en HuggingFace y esta pensado para ejecutarse en local sobre CPU, Apple Silicon o GPU de NVIDIA y AMD mediante llama.cpp, Ollama, LM Studio o text-generation-webui.
+Llama 3.2 3B Thai CRM GGUF es una version cuantizada en formato GGUF del modelo yothinS/Llama-3.2-3B-Thai_CRM, un ajuste fino del modelo base Llama 3.2 3B de Meta orientado a flujos de trabajo de gestion de relaciones con clientes (CRM), comunicacion empresarial en tailandes y analisis del comportamiento del cliente. Lo publica el usuario yothinS en Hugging Face y esta pensado para ejecutarse en local sobre CPU, Apple Silicon o GPU de NVIDIA y AMD mediante llama.cpp, Ollama, LM Studio o text-generation-webui.
 
 El modelo cuenta con 3.212.749.888 parametros (aproximadamente 3,2 mil millones) y esta disponible en seis niveles de cuantizacion que van desde Q2_K (1,36 GB) hasta Q8_0 (3,42 GB). Su proposito es cubrir tareas de atencion al cliente y marketing en entornos donde el tailandes es el idioma principal de negocio, con soporte adicional de ingles. Al derivar de Llama 3.2 3B, hereda la arquitectura transformer decoder-only del modelo base, aunque la informacion disponible no detalla la longitud de contexto efectiva tras el ajuste.
 
@@ -87,6 +87,6 @@ Dado que no se han publicado resultados de benchmarks, la comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/yothinS/Llama-3.2-3B-Thai-CRM-GGUF
+- Hugging Face (GGUF): https://huggingface.co/yothinS/Llama-3.2-3B-Thai-CRM-GGUF
 - Modelo base ajustado: https://huggingface.co/yothinS/Llama-3.2-3B-Thai_CRM
 - llama.cpp: https://github.com/ggerganov/llama.cpp

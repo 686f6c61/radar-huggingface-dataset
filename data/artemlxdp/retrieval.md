@@ -2,7 +2,7 @@
 
 ## Resumen
 
-artemlxdp/retrieval es un prototipo de investigación publicado en HuggingFace que implementa una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval) multimodal. Lo desarrolla el usuario artemlxdp y se distribuye con licencia BSD-3-Clause. El repositorio se presenta explícitamente como un esqueleto de código ejecutable: incluye `pipeline.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado.
+artemlxdp/retrieval es un prototipo de investigación publicado en Hugging Face que implementa una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de recuperación (retrieval) multimodal. Lo desarrolla el usuario artemlxdp y se distribuye con licencia BSD-3-Clause. El repositorio se presenta explícitamente como un esqueleto de código ejecutable: incluye `pipeline.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para pruebas de humo, no como un modelo entrenado.
 
 El tamaño es deliberadamente mínimo: 33.088 parámetros totales en formato safetensors, lo que corresponde a una escala "nano" según la propia model card. La configuración declarada combina atención dilatada, fusión por co-attention, activación gelu tanh y normalización por batchnorm. No se declara longitud de contexto, idiomas soportados ni pipeline de inferencia, y el autor no reclama ninguna puntuación de benchmark.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, no se ha completado ninguno. La model card indica qu
 - Reproducción de experimentos académicos: el autor recomienda evaluar sobre Flickr30k con al menos tres semillas y una línea base de capacidad equivalente; el repositorio aporta la estructura de configuración y argumentos de entrenamiento para ese protocolo.
 - Comparación controlada de recetas de entrenamiento: `training_args.json` fija optimizador y scheduler, lo que facilita ejecutar barridos de hiperparámetros manteniendo el resto de condiciones constantes.
 - Docencia y formación en arquitecturas DeiT: la escala nano y la inclusión de variantes poco habituales (atención dilatada, co-attention, batchnorm) permiten estudiar el efecto de cada componente en un coste computacional mínimo.
-- Auditoría de artefactos de HuggingFace: útil como caso de estudio de un repositorio que documenta explícitamente la ausencia de métricas y la naturaleza no entrenada de sus pesos.
+- Auditoría de artefactos de Hugging Face: útil como caso de estudio de un repositorio que documenta explícitamente la ausencia de métricas y la naturaleza no entrenada de sus pesos.
 - Banco de pruebas para adaptadores de carga personalizados: sirve para verificar que un wrapper propio gestiona correctamente un modelo que no expone una API de carga genérica.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| artemlxdp/retrieval | 33.088 | no disponible | no disponible (sin benchmark declarado) | BSD-3-Clause | HuggingFace, 0 descargas |
+| artemlxdp/retrieval | 33.088 | no disponible | no disponible (sin benchmark declarado) | BSD-3-Clause | Hugging Face, 0 descargas |
 | CLIP (referencia de categoría) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SigLIP (referencia de categoría) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,12 +81,12 @@ Los dos modelos de referencia se incluyen únicamente como contexto de categorí
 - Sin auditoría: no se ha evaluado robustez, equidad ni transferencia de dominio. No hay análisis de sesgos.
 - Riesgo de alucinación: no aplica en el sentido generativo (no es un modelo de generación de texto), pero sí existe riesgo de interpretar como válidas representaciones que no lo son.
 - Idiomas y contexto: no disponibles. No se documenta tokenizador, vocabulario ni ventana de contexto, por lo que se desconoce el alcance multilingüe.
-- Implementación personalizada: requiere un adaptador explícito para cargarse; las APIs automáticas de HuggingFace fallarán sin él.
+- Implementación personalizada: requiere un adaptador explícito para cargarse; las APIs automáticas de Hugging Face fallarán sin él.
 - Licencia BSD-3-Clause: permisiva y compatible con uso comercial, pero se debe revisar por separado la licencia de los datos de origen si se entrena con datasets externos, tal como advierte el autor.
 - Fechas del repositorio: creado y actualizado el 2026-09-21, con 0 descargas y 0 likes en el momento de la consulta.
 - Uso en producción: desaconsejado en su estado actual. Solo tiene sentido como plantilla de código o base para experimentación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artemlxdp/retrieval
+- Modelo en Hugging Face: https://huggingface.co/artemlxdp/retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web realizada.

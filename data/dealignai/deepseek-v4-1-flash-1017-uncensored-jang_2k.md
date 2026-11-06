@@ -98,7 +98,7 @@ No se dispone de información sobre alternativas de otros fabricantes con parám
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-JANG_2K
+- Modelo en Hugging Face: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-UNCENSORED-JANG_2K
 - Modelo base del bundle: https://huggingface.co/jangq/DeepSeek-V4.1-Flash-1017-JANG_2K
 - Licencia del modelo original: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE
 - Perfil del autor en X: https://x.com/dealignai

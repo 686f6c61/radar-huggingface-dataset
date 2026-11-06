@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper Swahili Small q4_1 es una conversión al formato GGML con cuantización q4_1 del modelo PaschalK/whisper-swahili-small, un ajuste fino de Whisper Small especializado en reconocimiento automático del habla en suajili. Lo publica el usuario JTulel en HuggingFace y su propósito es permitir la inferencia en dispositivos locales mediante whisper.cpp, evitando la dependencia de infraestructura GPU en la nube.
+Whisper Swahili Small q4_1 es una conversión al formato GGML con cuantización q4_1 del modelo PaschalK/whisper-swahili-small, un ajuste fino de Whisper Small especializado en reconocimiento automático del habla en suajili. Lo publica el usuario JTulel en Hugging Face y su propósito es permitir la inferencia en dispositivos locales mediante whisper.cpp, evitando la dependencia de infraestructura GPU en la nube.
 
 El modelo hereda la arquitectura encoder-decoder transformer de Whisper Small, con aproximadamente 244 millones de parámetros en su versión original, y está entrenado exclusivamente para transcribir audio en suajili. La cuantización q4_1 reduce el peso del repositorio a unos 0,2 GB, lo que lo hace viable en hardware modesto, aunque a costa de una pérdida de precisión frente a los pesos originales en fp16.
 
@@ -83,7 +83,7 @@ La comparativa se limita a parámetros, contexto, idiomas, licencia y formato po
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JTulel/whisper-swahili-small-q4_1
+- Hugging Face: https://huggingface.co/JTulel/whisper-swahili-small-q4_1
 - Modelo base: https://huggingface.co/PaschalK/whisper-swahili-small
 - Repositorio whisper.cpp: https://github.com/ggerganov/whisper.cpp
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

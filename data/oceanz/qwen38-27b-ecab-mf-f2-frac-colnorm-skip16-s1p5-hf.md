@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `OceanZ/qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-hf` | 27,78 B | no disponible | Apache 2.0 | HuggingFace, 26 descargas | Finetune experimental sin benchmarks |
-| `Qwen/Qwen3.8-27B` (base) | ~27 B | no disponible | Apache 2.0 (según herencia) | HuggingFace | Modelo de referencia del que deriva |
+| `OceanZ/qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-hf` | 27,78 B | no disponible | Apache 2.0 | Hugging Face, 26 descargas | Finetune experimental sin benchmarks |
+| `Qwen/Qwen3.8-27B` (base) | ~27 B | no disponible | Apache 2.0 (según herencia) | Hugging Face | Modelo de referencia del que deriva |
 | Otras variantes Excalibur `f2-frac-colnorm-skip16-s1p5` | ~27 B | no disponible | Apache 2.0 | Repositorio Excalibur | Misma familia, distintas configuraciones |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OceanZ/qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-hf
+- Hugging Face: https://huggingface.co/OceanZ/qwen38-27b-ecab-mf-f2-frac-colnorm-skip16-s1p5-hf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Commit del base referenciado: `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`
 - Repositorio Excalibur / liyue-harbor: no disponible como URL pública en la información proporcionada

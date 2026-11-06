@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SIWONV2 es un modelo publicado en HuggingFace por el usuario SWSOSW bajo el identificador SWSOSW/SIWONV2. En el momento de redactar esta ficha, la model card asociada no contiene mas informacion que una declaracion de licencia marcada como "unknown", sin descripcion del modelo, sin detalles de arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. Se trata, por tanto, de un repositorio practicamente sin documentacion publica.
+SIWONV2 es un modelo publicado en Hugging Face por el usuario SWSOSW bajo el identificador SWSOSW/SIWONV2. En el momento de redactar esta ficha, la model card asociada no contiene mas informacion que una declaracion de licencia marcada como "unknown", sin descripcion del modelo, sin detalles de arquitectura, sin datos de entrenamiento y sin resultados de evaluacion. Se trata, por tanto, de un repositorio practicamente sin documentacion publica.
 
 Los datos objetivos disponibles se limitan a los metadatos del repositorio: un tamano de 0,1 GB, cero descargas y cero "likes" registrados, y fechas de creacion y actualizacion del 11 de octubre de 2026, con apenas cuatro minutos de diferencia entre ambas. No se ha declarado pipeline de inferencia, ni idiomas soportados, ni licencia concreta, y no hay informacion sobre parametros, contexto o formato de pesos.
 
-Por su relevancia practica, esta ficha debe interpretarse como un documento de estado: sirve para dejar constancia de que el modelo existe en HuggingFace, de que su huella en disco es reducida (0,1 GB, compatible con pesos de un modelo pequeno o con un adaptador de tipo LoRA) y de que cualquier evaluacion seria requiere inspeccionar directamente los archivos del repositorio. No se debe asumir ninguna capacidad ni rendimiento a partir de la informacion disponible.
+Por su relevancia practica, esta ficha debe interpretarse como un documento de estado: sirve para dejar constancia de que el modelo existe en Hugging Face, de que su huella en disco es reducida (0,1 GB, compatible con pesos de un modelo pequeno o con un adaptador de tipo LoRA) y de que cualquier evaluacion seria requiere inspeccionar directamente los archivos del repositorio. No se debe asumir ninguna capacidad ni rendimiento a partir de la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Por su relevancia practica, esta ficha debe interpretarse como un documento de e
 | Licencia | unknown (sin especificar) |
 | Formato de pesos | no disponible |
 | Autor | SWSOSW |
-| Identificador en HuggingFace | SWSOSW/SIWONV2 |
+| Identificador en Hugging Face | SWSOSW/SIWONV2 |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -77,7 +77,7 @@ No disponible. Al no existir informacion sobre arquitectura, parametros, context
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| SWSOSW/SIWONV2 | no disponible | no disponible | unknown | HuggingFace, 0 descargas | no disponible |
+| SWSOSW/SIWONV2 | no disponible | no disponible | unknown | Hugging Face, 0 descargas | no disponible |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No disponible. Al no existir informacion sobre arquitectura, parametros, context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SWSOSW/SIWONV2
-- Perfil del autor en HuggingFace: https://huggingface.co/SWSOSW
+- Modelo en Hugging Face: https://huggingface.co/SWSOSW/SIWONV2
+- Perfil del autor en Hugging Face: https://huggingface.co/SWSOSW
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

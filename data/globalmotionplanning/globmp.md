@@ -6,7 +6,7 @@ GlobMP (Global Motion Planning) es un método de planificación de movimiento en
 
 El método combina dos algoritmos de primer orden: el Algoritmo 1 (restauración) lleva cualquier trayectoria inicial a la región factible sin necesidad de una semilla factible, y el Algoritmo 2 (proyección de gradiente) aplica pasos de descenso sobre el coste restaurando la factibilidad tras cada paso, de modo que cada iterado aceptado es una trayectoria completa y factible con coste monótonamente decreciente. Un pulido SQP y un finalizador KKT llevan el resultado a un punto KKT exacto, y cuando todos los bloques son cuadráticos en la curva, un test de autovalores sobre el hessiano del lagrangiano certifica optimalidad global (un test fallido es no concluyente).
 
-El repositorio de HuggingFace (61,9 GB) actúa como espejo de código, datos y resultados experimentales, incluidos los archivos de demostración de las baselines del Robotarium (779 MB) que solo están alojados allí. La relevancia actual reside en que ofrece garantías formales de factibilidad continua en problemas multi-robot, navegación 2D y guiado (*steering*) de políticas diestras táctil-reactivas, un ámbito donde los planificadores basados en muestreo o en difusión no ofrecen certificados de optimalidad.
+El repositorio de Hugging Face (61,9 GB) actúa como espejo de código, datos y resultados experimentales, incluidos los archivos de demostración de las baselines del Robotarium (779 MB) que solo están alojados allí. La relevancia actual reside en que ofrece garantías formales de factibilidad continua en problemas multi-robot, navegación 2D y guiado (*steering*) de políticas diestras táctil-reactivas, un ámbito donde los planificadores basados en muestreo o en difusión no ofrecen certificados de optimalidad.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado en la información disponible resultados comparativos de tip
 
 - No requiere GPU: el método es CPU-only con numpy, scipy, torch, cvxpy y clarabel.
 - El experimento de 200 robots se ejecuta en CPU en 70 s, lo que sugiere que no necesita aceleración dedicada para las instancias del artículo.
-- El repositorio ocupa 61,9 GB, de los cuales 779 MB corresponden a los cinco archivos de demostración de las baselines del Robotarium (`.tar.zst`), alojados solo en HuggingFace.
+- El repositorio ocupa 61,9 GB, de los cuales 779 MB corresponden a los cinco archivos de demostración de las baselines del Robotarium (`.tar.zst`), alojados solo en Hugging Face.
 - Instalación: `pip install -e .` para el núcleo; `pip install -e .[baselines]` añade ompl, drake y matplotlib para baselines y figuras.
 - No se dispone de datos de latencia o throughput más allá de los tiempos de resolución citados.
 
@@ -92,13 +92,13 @@ Las baselines RRT-Connect, RRT*, GCS y SDP-MP están integradas en el repositori
 - No es un modelo de lenguaje: no genera texto, no soporta tool calling, agentes, visión ni audio; cualquier uso en ese sentido es un error de categoría.
 - La certificación de optimalidad global solo es válida cuando todos los bloques son cuadráticos en la curva; un test de autovalores fallido es no concluyente, no una prueba de no optimalidad.
 - El código del lado del robot para el guiado de políticas diestras (Sección 4.3) no está incluido todavía en el repositorio.
-- La licencia no está declarada en la model card ni en los metadatos de HuggingFace, por lo que no se puede confirmar el uso comercial.
-- El repositorio es grande (61,9 GB) y las demostraciones del Robotarium solo están en HuggingFace, lo que complica la reproducibilidad en entornos sin acceso a la plataforma.
+- La licencia no está declarada en la model card ni en los metadatos de Hugging Face, por lo que no se puede confirmar el uso comercial.
+- El repositorio es grande (61,9 GB) y las demostraciones del Robotarium solo están en Hugging Face, lo que complica la reproducibilidad en entornos sin acceso a la plataforma.
 - El rendimiento reportado se limita a CPU y a las instancias del artículo; no hay datos publicados de escalado a otros dominios ni de latencia en tiempo real.
 - No se dispone de información sobre sesgos, alucinación o limitaciones idiomáticas, que no aplican a este software.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GlobalMotionPlanning/GlobMP
+- Hugging Face: https://huggingface.co/GlobalMotionPlanning/GlobMP
 - Página del proyecto: https://globalmotionplanning.github.io/
 - Artículo (arXiv): https://arxiv.org/html/2610.30607

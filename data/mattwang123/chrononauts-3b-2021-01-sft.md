@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2021-01 sft | 2,8 B | 8.192 | Agente de busqueda congelado en 2021-01 | other | HuggingFace |
-| Chrononauts 3B 2019-01 sft | no disponible | no disponible | Misma suite, cutoff 2019-01 | other | HuggingFace (repo hermano) |
-| Chrononauts 3B 2023-01 sft | no disponible | no disponible | Misma suite, cutoff 2023-01 | other | HuggingFace (repo hermano) |
+| Chrononauts 3B 2021-01 sft | 2,8 B | 8.192 | Agente de busqueda congelado en 2021-01 | other | Hugging Face |
+| Chrononauts 3B 2019-01 sft | no disponible | no disponible | Misma suite, cutoff 2019-01 | other | Hugging Face (repo hermano) |
+| Chrononauts 3B 2023-01 sft | no disponible | no disponible | Misma suite, cutoff 2023-01 | other | Hugging Face (repo hermano) |
 
 No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas de la misma categoria.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-sft
+- Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-sft
 - Repo hermano init: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-init
 - Repo hermano agent: https://huggingface.co/mattwang123/chrononauts-3b-2021-01-agent
 - Embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

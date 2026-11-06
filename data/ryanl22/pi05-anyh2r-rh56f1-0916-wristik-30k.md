@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RyanL22/pi05-anyh2r-rh56f1-0916-wristik-30k | 4,14B | `n_obs_steps=1`; bloque de 50 acciones a 20 fps | No publicado | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/pi05_base (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| RyanL22/pi05-anyh2r-rh56f1-0916-wristik-30k | 4,14B | `n_obs_steps=1`; bloque de 50 acciones a 20 fps | No publicado | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/pi05_base (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otras politicas VLA de la misma categoria (por ejemplo, la familia pi0 o equivalentes de manipulacion bimanual) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de especificaciones de modelos alternativos que permitan una comparacion cuantitativa rigurosa; la unica relacion documentada es la dependencia directa respecto a `lerobot/pi05_base`.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de especificaciones de modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-wristik-30k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-wristik-30k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/RyanL22/anyh2r-pi05-0916-merged
 - Libreria LeRobot: referenciada como `lerobot` v0.6.1 en la model card (dependencia de carga del modelo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-GGUF es una serie de cuantizaciones GGUF del modelo Qwen3.8-27B de Alibaba, publicada por el usuario jaromer en HuggingFace. El modelo base es un transformer multimodal de 27 320 millones de parámetros con arquitectura `Qwen3_5ForConditionalGeneration`, 64 capas, vocabulario de 248 320 tokens, soporte de visión y una ventana de contexto de 262 144 tokens. La versión publicada aquí aplica una técnica de abliteración para reducir sustancialmente los comportamientos de rechazo del modelo original, manteniendo intactas el resto de capacidades.
+Qwen3.8-27B-Uncensored-GGUF es una serie de cuantizaciones GGUF del modelo Qwen3.8-27B de Alibaba, publicada por el usuario jaromer en Hugging Face. El modelo base es un transformer multimodal de 27 320 millones de parámetros con arquitectura `Qwen3_5ForConditionalGeneration`, 64 capas, vocabulario de 248 320 tokens, soporte de visión y una ventana de contexto de 262 144 tokens. La versión publicada aquí aplica una técnica de abliteración para reducir sustancialmente los comportamientos de rechazo del modelo original, manteniendo intactas el resto de capacidades.
 
 La relevancia de esta publicación radica en tres aspectos: primero, preserva el cabezal de predicción multi-token (MTP) que permite decodificación especulativa integrada; segundo, ofrece seis niveles de cuantización con matriz de importancia calculada directamente sobre los pesos f16; y tercero, documenta de forma transparente la metodología de abliteración y la verificación de los tensores MTP. El resultado es un modelo útil para entornos de producción donde se necesita un LLM con menos restricciones de contenido, sin sacrificar las capacidades de razonamiento, visión o código del modelo base.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jaromer/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jaromer/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de abliteracion Heretic: https://github.com/p-e-w/heretic
 - Documentacion de Qwen3.8 en Unsloth: https://unsloth.ai/docs/models/qwen3.8

@@ -84,6 +84,6 @@ No disponible. No existen modelos comparables en la misma categoria porque el ar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vivekkla85/assignment-3d-scene-understanding32
+- Repositorio en Hugging Face: https://huggingface.co/Vivekkla85/assignment-3d-scene-understanding32
 - No se han encontrado papers, blogs, demos ni repositorios de codigo asociados a este artefacto en la busqueda web disponible.
 - Los resultados de la busqueda web realizada no guardan relacion con el modelo ni con la comprension de escenas 3D, por lo que no se incluyen como referencias.

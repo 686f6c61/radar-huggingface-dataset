@@ -113,7 +113,7 @@ La comparación rigurosa con alternativas fuera de la familia TOFU (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_NPO
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget01_NPO
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Variante relacionada (forget10, NPO con QAT): https://huggingface.co/Jeesup/tofu_Llama-3.2-3B-Instruct_forget10_NPO_QAT
 - Dataset TOFU: https://huggingface.co/datasets/locuslab/TOFU

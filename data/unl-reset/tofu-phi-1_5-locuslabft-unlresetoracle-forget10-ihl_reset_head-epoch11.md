@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (TOFU forget10, epoch 11) | 1.418M | no disponible | Apache 2.0 | HuggingFace | Checkpoint de investigación en *unlearning* |
-| `microsoft/phi-1_5` | 1.3B | 2048 | MIT | HuggingFace | Modelo base original, propósito general |
-| `locuslab/tofu_ft_phi-1.5` | 1.3B | no disponible | no disponible | HuggingFace | Modelo afinado sobre TOFU, punto de partida de este checkpoint |
-| Phi-2 | 2.7B | 2048 | MIT | HuggingFace | Sucesor de mayor tamaño, mejor razonamiento general |
+| Este checkpoint (TOFU forget10, epoch 11) | 1.418M | no disponible | Apache 2.0 | Hugging Face | Checkpoint de investigación en *unlearning* |
+| `microsoft/phi-1_5` | 1.3B | 2048 | MIT | Hugging Face | Modelo base original, propósito general |
+| `locuslab/tofu_ft_phi-1.5` | 1.3B | no disponible | no disponible | Hugging Face | Modelo afinado sobre TOFU, punto de partida de este checkpoint |
+| Phi-2 | 2.7B | 2048 | MIT | Hugging Face | Sucesor de mayor tamaño, mejor razonamiento general |
 
 La comparación relevante es metodológica: este checkpoint se distingue de `locuslab/tofu_ft_phi-1.5` únicamente por el procedimiento de olvido aplicado, no por arquitectura ni tamaño. Frente a Phi-1.5 original, la diferencia está en el ajuste sobre TOFU y la posterior reinicialización parcial.
 
@@ -83,7 +83,7 @@ La comparación relevante es metodológica: este checkpoint se distingue de `loc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch11
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch11
 - Modelo base del checkpoint: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia del dataset): no disponible en la información proporcionada

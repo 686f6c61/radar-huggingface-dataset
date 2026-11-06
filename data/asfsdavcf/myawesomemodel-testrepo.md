@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario asfsdavcf el 15 de septiembre de 2026. Por sus metadatos, se trata de un repositorio de prueba: acumula 0 descargas y 0 likes, el tamano del repositorio es de 0.0 GB (es decir, no contiene pesos) y la model card es una plantilla generica en la que los modelos de comparacion aparecen nombrados como "Model1", "Model2" y "Model1-v2", ademas de referirse al modelo como "MyAwesomeModel" sin identificacion real.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario asfsdavcf el 15 de septiembre de 2026. Por sus metadatos, se trata de un repositorio de prueba: acumula 0 descargas y 0 likes, el tamano del repositorio es de 0.0 GB (es decir, no contiene pesos) y la model card es una plantilla generica en la que los modelos de comparacion aparecen nombrados como "Model1", "Model2" y "Model1-v2", ademas de referirse al modelo como "MyAwesomeModel" sin identificacion real.
 
 Las etiquetas del repositorio lo clasifican como `transformers`, `pytorch`, `bert`, `feature-extraction` y `endpoints_compatible`, con licencia MIT. Sin embargo, el texto de la model card describe un modelo conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling y mejoras en tareas de matematicas y programacion, lo que contradice frontalmente la etiqueta `bert` y el pipeline `feature-extraction`. No hay informacion que permita resolver esa inconsistencia.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks con nombres estandar (MMLU, HumanEv
 - VRAM estimada para inferencia: no disponible. El repositorio no contiene pesos (0.0 GB), por lo que no hay nada que cargar.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no evaluable, al no existir pesos ni tamano de parametros conocido.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Endpoints, pero no hay artefactos que desplegar. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Endpoints, pero no hay artefactos que desplegar. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -102,5 +102,5 @@ No disponible. La model card utiliza identificadores de marcador de posicion ("M
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asfsdavcf/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asfsdavcf/MyAwesomeModel-TestRepo
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo). Los resultados obtenidos apuntan a documentacion de soporte de Microsoft y no guardan relacion con este repositorio.

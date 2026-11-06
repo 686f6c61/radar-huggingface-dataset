@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MineChoice-reward-survival-bucket-update118 es un checkpoint experimental de aprendizaje por refuerzo publicado por el usuario teyler en HuggingFace. No es un modelo de lenguaje: se trata de un perceptron multicapa (MLP) denso y categorico de 31.789 parametros que recibe un vector de 73 caracteristicas de estado estructurado del juego Minecraft Java 1.20.4 y emite una de 45 acciones discretas. El modelo no procesa pixeles ni texto, y su entrenamiento se hizo sobre transiciones de recompensa reales, sin profesor ni datos sinteticos de respaldo.
+MineChoice-reward-survival-bucket-update118 es un checkpoint experimental de aprendizaje por refuerzo publicado por el usuario teyler en Hugging Face. No es un modelo de lenguaje: se trata de un perceptron multicapa (MLP) denso y categorico de 31.789 parametros que recibe un vector de 73 caracteristicas de estado estructurado del juego Minecraft Java 1.20.4 y emite una de 45 acciones discretas. El modelo no procesa pixeles ni texto, y su entrenamiento se hizo sobre transiciones de recompensa reales, sin profesor ni datos sinteticos de respaldo.
 
 El checkpoint corresponde a la actualizacion 118 de un entrenamiento local acumulado de 6.175 transiciones optimizadas, de las cuales 35 se incorporaron tras el hito del cubo (bucket). La model card es inusualmente explicita sobre el alcance: el modelo no ha completado Minecraft, no existe una tasa de exito en partidas retenidas ni una muerte del Ender Dragon verificada por servidor. Tambien aclara que los pesos por si solos no constituyen un bot autonomo, ya que las habilidades codificadas del juego son las que ejecutan las acciones seleccionadas.
 
@@ -86,7 +86,7 @@ No existe una comparativa numerica publicada para este checkpoint. Pertenece al 
 
 | Modelo | Parametros | Entrada | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MineChoice-reward-survival-bucket-update118 | 31.789 | Estado estructurado (73 caracteristicas) | No disponible | MIT | Publico en HuggingFace; 0 descargas y 0 likes |
+| MineChoice-reward-survival-bucket-update118 | 31.789 | Estado estructurado (73 caracteristicas) | No disponible | MIT | Publico en Hugging Face; 0 descargas y 0 likes |
 | VPT (OpenAI) | No disponible en la informacion proporcionada | Pixeles de video | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | DreamerV3 | No disponible en la informacion proporcionada | Pixeles | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | MineRL (entorno y baselines) | No disponible en la informacion proporcionada | Estado estructurado y pixeles | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
@@ -109,7 +109,7 @@ No existe una comparativa numerica publicada para este checkpoint. Pertenece al 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/teyler/MineChoice-reward-survival-bucket-update118
+- Pagina del modelo en Hugging Face: https://huggingface.co/teyler/MineChoice-reward-survival-bucket-update118
 - Pesos en formato safetensors: https://huggingface.co/teyler/MineChoice-reward-survival-bucket-update118/blob/main/model.safetensors
 - Pesos en JSON con los mismos valores: https://huggingface.co/teyler/MineChoice-reward-survival-bucket-update118/blob/main/policy.json
 - Configuracion de entradas y acciones: https://huggingface.co/teyler/MineChoice-reward-survival-bucket-update118/blob/main/config.json

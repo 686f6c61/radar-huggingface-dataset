@@ -12,7 +12,7 @@ Su relevancia es acotada pero ilustrativa: muestra un patrón de despliegue de m
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | lfm3_vl (según tag de HuggingFace), transformer derivado de LiquidAI/d1-2B |
+| Arquitectura | lfm3_vl (según tag de Hugging Face), transformer derivado de LiquidAI/d1-2B |
 | Parámetros totales | 1.918.181.888 (≈1,9 B) |
 | Parámetros activos | no disponible |
 | Longitud de contexto | 65.536 tokens (límite de estado aceptado por el servidor; 422 por encima) |
@@ -70,8 +70,8 @@ La fila de eval-dev se reprodujo exactamente desde esta carpeta mediante `d1_ser
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-2b-spotlight-r3 | ≈1,9 B | 65.536 tokens de estado | Clasificación de triaje, sin generación | LFM Open License v1.0 (umbral 10 M USD) | HuggingFace, 21 descargas |
-| LiquidAI/d1-2B (base) | ≈1,9 B | no disponible | Modelo base lfm3_vl de propósito general | LFM Open License v1.0 | HuggingFace |
+| d1-2b-spotlight-r3 | ≈1,9 B | 65.536 tokens de estado | Clasificación de triaje, sin generación | LFM Open License v1.0 (umbral 10 M USD) | Hugging Face, 21 descargas |
+| LiquidAI/d1-2B (base) | ≈1,9 B | no disponible | Modelo base lfm3_vl de propósito general | LFM Open License v1.0 | Hugging Face |
 | Otros ajustes de triaje de 1-3 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparables con alternativas de la misma categoría en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparables con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomvaillant/d1-2b-spotlight-r3
+- Modelo en Hugging Face: https://huggingface.co/tomvaillant/d1-2b-spotlight-r3
 - Modelo base: https://huggingface.co/LiquidAI/d1-2B
 - Revisión base: https://huggingface.co/LiquidAI/d1-2B/tree/cfe5760ff5d5998f91d9ac56bd4b2dbd96996d41
 - Licencia LFM Open License v1.0: incluida como `LICENSE` en el repositorio del modelo

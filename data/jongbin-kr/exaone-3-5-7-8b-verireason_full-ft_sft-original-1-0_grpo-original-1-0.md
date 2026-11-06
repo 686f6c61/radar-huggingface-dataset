@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino del modelo EXAONE 3.5 7.8B, desarrollado originalmente por LG AI Research, y publicado por el usuario de HuggingFace Jongbin-kr. El checkpoint tiene 7.818.448.896 parametros reales (confirmados en los safetensors) y ocupa 46,9 GB en el repositorio, un tamano muy superior a los ~15,7 GB que requeriria una unica copia de los pesos en bf16, lo que sugiere que el repositorio almacena varias copias o versiones de los pesos. El identificador del repositorio (`...full-ft_sft-original-1.0_grpo-original-1.0`) sugiere una cadena de entrenamiento en tres etapas: ajuste fino completo (full fine-tuning), ajuste supervisado (SFT) y optimizacion con GRPO, presumiblemente orientada a tareas de razonamiento verificable.
+Este repositorio contiene un ajuste fino del modelo EXAONE 3.5 7.8B, desarrollado originalmente por LG AI Research, y publicado por el usuario de Hugging Face Jongbin-kr. El checkpoint tiene 7.818.448.896 parametros reales (confirmados en los safetensors) y ocupa 46,9 GB en el repositorio, un tamano muy superior a los ~15,7 GB que requeriria una unica copia de los pesos en bf16, lo que sugiere que el repositorio almacena varias copias o versiones de los pesos. El identificador del repositorio (`...full-ft_sft-original-1.0_grpo-original-1.0`) sugiere una cadena de entrenamiento en tres etapas: ajuste fino completo (full fine-tuning), ajuste supervisado (SFT) y optimizacion con GRPO, presumiblemente orientada a tareas de razonamiento verificable.
 
 El modelo base, EXAONE 3.5 7.8B, es un transformer decoder-only de la familia EXAONE 3.5 de LG AI Research, con una ventana de contexto de 32.768 tokens y optimizado para coreano e ingles. La combinacion de GRPO con recompensas verificables es una tecnica que se ha popularizado para mejorar el razonamiento en modelos de esta escala, de ahi el interes de este checkpoint para investigacion en aprendizaje por refuerzo aplicado a modelos de 7-8B.
 
@@ -88,7 +88,7 @@ La comparativa es estructural: frente a las alternativas, este checkpoint parte 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Jongbin-kr/exaone-3.5-7.8b-verireason_full-ft_sft-original-1.0_grpo-original-1.0
+- Repositorio de Hugging Face: https://huggingface.co/Jongbin-kr/exaone-3.5-7.8b-verireason_full-ft_sft-original-1.0_grpo-original-1.0
 - Modelo base EXAONE 3.5 7.8B (LG AI Research): https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Repositorio oficial de EXAONE en GitHub: https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Informe tecnico de EXAONE 3.5: no se ha encontrado en la informacion proporcionada.

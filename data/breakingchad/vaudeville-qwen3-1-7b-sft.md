@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/breakingchad/vaudeville-qwen3-1.7b-sft
+- Modelo en Hugging Face: https://huggingface.co/breakingchad/vaudeville-qwen3-1.7b-sft
 - Variante con GRPO: https://huggingface.co/breakingchad/vaudeville-qwen3-1.7b-sft-grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio del proyecto (codigo, juego y resultados): https://github.com/antrip03/syntax_error26

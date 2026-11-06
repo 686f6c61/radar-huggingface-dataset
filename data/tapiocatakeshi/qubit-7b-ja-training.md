@@ -75,9 +75,9 @@ No hay datos de benchmarks del modelo que permitan una comparación de rendimien
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
 | Qubit 7B 日本語学習 | 7,05 B | no disponible | no disponible | solo en bucket privado del autor |
-| Llama 3.1 8B | ~8,03 B | 128.000 tokens | Llama 3.1 Community License | pública en HuggingFace |
-| Qwen2.5 7B | ~7,6 B | 128.000 tokens | Apache 2.0 | pública en HuggingFace |
-| Adaptaciones al japonés sobre Llama (por ejemplo, Swallow o Sarashina) | ~7-8 B | variable según versión | heredada de Llama o propia | pública en HuggingFace |
+| Llama 3.1 8B | ~8,03 B | 128.000 tokens | Llama 3.1 Community License | pública en Hugging Face |
+| Qwen2.5 7B | ~7,6 B | 128.000 tokens | Apache 2.0 | pública en Hugging Face |
+| Adaptaciones al japonés sobre Llama (por ejemplo, Swallow o Sarashina) | ~7-8 B | variable según versión | heredada de Llama o propia | pública en Hugging Face |
 
 La diferencia principal no es de capacidades sino de madurez: los modelos alternativos publican pesos, licencia, tokenizer estándar y resultados de evaluación, mientras que Qubit 7B 日本語学習 no ofrece ninguno de esos elementos de forma abierta.
 
@@ -97,7 +97,7 @@ La diferencia principal no es de capacidades sino de madurez: los modelos altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tapiocaTakeshi/Qubit-7B-ja-training
+- Repositorio en Hugging Face: https://huggingface.co/tapiocaTakeshi/Qubit-7B-ja-training
 - Modelo base: https://huggingface.co/tapiocaTakeshi/Qubit (rama `7b/`, arquitectura NeuroQuantum / QBNN)
 - Bucket de datos y checkpoints (privado, requiere acceso): `hf://buckets/tapiocaTakeshi/qubit-7b-ckpt`
 - Código incluido en el repositorio: `code/prep_data.py` y `code/train_qubit7b.py`

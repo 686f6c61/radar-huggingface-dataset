@@ -40,7 +40,7 @@ No se proporciona información sobre datos de entrenamiento, número de tokens, 
 Dado que el modelo no está entrenado, los casos de uso son exclusivamente experimentales y de desarrollo:
 
 - Pruebas de humo del pipeline de entrenamiento: ejecutar `python train.py --help` y verificar que el script carga el checkpoint y realiza una pasada forward/backward sin errores.
-- Desarrollo de adaptadores para cargar el modelo con APIs genéricas: la model card advierte que se requiere un adaptador explícito para usar herramientas automáticas de HuggingFace.
+- Desarrollo de adaptadores para cargar el modelo con APIs genéricas: la model card advierte que se requiere un adaptador explícito para usar herramientas automáticas de Hugging Face.
 - Investigación de arquitecturas CLIP alternativas: estudiar el efecto de la atención grouped query y la fusión tensorial en un entorno controlado.
 - Validación de configuraciones de entrenamiento: usar `training_args.json` como plantilla para experimentos con diferentes hiperparámetros.
 - Comparación de inicializaciones: evaluar cómo distintas semillas afectan al entrenamiento posterior, siguiendo las guías de evaluación de la model card.
@@ -69,13 +69,13 @@ No existe una comparativa directa con modelos CLIP comerciales o de código abie
 - Riesgo de alucinación: no aplica, al no ser un modelo generativo.
 - Limitaciones de contexto o idioma: no disponibles; el modelo no declara soporte idiomático.
 - La licencia BSD-3-Clause permite uso comercial, pero la model card advierte que deben revisarse los términos de las fuentes de datos externas si se usan con datasets propios.
-- La implementación es personalizada; las APIs genéricas de HuggingFace no la cargan sin un adaptador explícito.
+- La implementación es personalizada; las APIs genéricas de Hugging Face no la cargan sin un adaptador explícito.
 - Cualquier resultado publicado con este modelo debe documentar por separado el checkpoint entrenado y los valores por defecto del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imamywright/clip-classification-base
-- Documentación de CLIP en HuggingFace: https://huggingface.co/docs/transformers/v4.56.2/en/model_doc/clip
+- Repositorio Hugging Face: https://huggingface.co/imamywright/clip-classification-base
+- Documentación de CLIP en Hugging Face: https://huggingface.co/docs/transformers/v4.56.2/en/model_doc/clip
 - Repositorio oficial de OpenAI CLIP: https://github.com/openai/CLIP
 - Blog de OpenAI sobre CLIP: https://openai.com/index/clip/
 - Guía de Roboflow sobre CLIP: https://blog.roboflow.com/how-to-use-openai-clip/

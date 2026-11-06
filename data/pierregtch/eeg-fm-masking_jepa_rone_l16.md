@@ -111,7 +111,7 @@ Comparacion con modelos de EEG de terceros (LaBraM, EEGPT, BIOT u otros): no dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L16
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rone_L16
 - Sitio del paper: https://pierregtch.github.io/eeg-fm-masking
 - Codigo: https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

@@ -72,7 +72,7 @@ No se dispone de información sobre otros LoRAs de la misma categoría (video-to
 
 ## Enlaces
 
-- [HuggingFace - ostris/minimax_h3_ref2va_jacked_lora](https://huggingface.co/ostris/minimax_h3_ref2va_jacked_lora)
+- [Hugging Face - ostris/minimax_h3_ref2va_jacked_lora](https://huggingface.co/ostris/minimax_h3_ref2va_jacked_lora)
 - [GitHub - MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [GitHub - ostris/ComfyUI-AIToolkit-MiniMaxH3](https://github.com/ostris/ComfyUI-AIToolkit-MiniMaxH3)
 - [Vídeo tutorial - How to Train a MiniMax H3 Ref2VA LoRA with AI Toolkit](https://www.youtube.com/watch?v=8Ug0dA4jXyY)

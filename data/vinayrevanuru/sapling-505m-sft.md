@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sapling-505M-SFT es un modelo conversacional de 505 millones de parámetros entrenado desde cero por Vinay Revanuru, un proyecto individual que cubre todo el ciclo: tokenizador propio, preentrenamiento, mid-training y ajuste fino supervisado (SFT). Se trata de un checkpoint de investigación publicado en HuggingFace bajo licencia Apache 2.0, basado en la arquitectura densa de Qwen3 (`Qwen3ForCausalLM`) y el formato de plantilla ChatML estándar.
+Sapling-505M-SFT es un modelo conversacional de 505 millones de parámetros entrenado desde cero por Vinay Revanuru, un proyecto individual que cubre todo el ciclo: tokenizador propio, preentrenamiento, mid-training y ajuste fino supervisado (SFT). Se trata de un checkpoint de investigación publicado en Hugging Face bajo licencia Apache 2.0, basado en la arquitectura densa de Qwen3 (`Qwen3ForCausalLM`) y el formato de plantilla ChatML estándar.
 
 El pipeline de entrenamiento acumula 6.500 millones de tokens en total: 5.000 millones de preentrenamiento (Sapling-505M-Base), 1.000 millones adicionales de matemáticas, chat y replay en el mid-training, y 504,9 millones de posiciones de token en la fase SFT final, usando SmolTalk, una porción de seguridad de Tulu 3 SFT y replay de FineWeb-Edu y Cosmopedia v2. El entrenamiento se ejecutó en 8 GPU H100 en Modal a unos 190.000 tokens/s durante unos 48 minutos.
 
@@ -96,7 +96,7 @@ Nota: los datos de Qwen3-0.6B y SmolLM2 provienen de conocimiento general y no d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT
+- Modelo en Hugging Face: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT
 - Modelo base (mid-training): https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain
 - Dataset SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
 - Dataset Tulu 3 SFT Mixture: https://huggingface.co/datasets/allenai/tulu-3-sft-mixture

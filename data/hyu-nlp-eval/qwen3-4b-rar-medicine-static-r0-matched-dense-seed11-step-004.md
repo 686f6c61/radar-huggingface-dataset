@@ -67,10 +67,10 @@ Nota: el tamano del repositorio (25,7 GB) es notablemente superior a los pesos B
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-004 | 4,02 B (denso) | no disponible (hermanos: 32.768) | no disponible | apache-2.0 (uso investigador) | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B (denso) | 262.144 tokens | publicados por Qwen en su model card | apache-2.0 | HuggingFace |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018 | 4,02 B (denso) | 32.768 tokens | no disponible | no disponible | HuggingFace |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-004 | 4,02 B (denso) | no disponible (hermanos: 32.768) | no disponible | apache-2.0 (uso investigador) | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,02 B (denso) | 262.144 tokens | publicados por Qwen en su model card | apache-2.0 | Hugging Face |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018 | 4,02 B (denso) | 32.768 tokens | no disponible | no disponible | Hugging Face |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparacion directa con el modelo base solo es valida como referencia arquitectonica: el checkpoint aqui descrito esta especializado en un dominio y en un estadio temprano de entrenamiento, por lo que su rendimiento general previsiblemente difiere del de Qwen3-4B-Instruct-2507 y no esta medido.
 
@@ -88,10 +88,10 @@ La comparacion directa con el modelo base solo es valida como referencia arquite
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-004
+- Hugging Face del modelo: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-004
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Checkpoint hermano (OnlineRubrics, step 018, HuggingFace): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018
-- Checkpoint hermano (OnlineRubrics, step 000, HuggingFace): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000
+- Checkpoint hermano (OnlineRubrics, step 018, Hugging Face): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018
+- Checkpoint hermano (OnlineRubrics, step 000, Hugging Face): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000
 - Checkpoint hermano (OnlineRubrics, step 013, Featherless): https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013
 - Checkpoint hermano (OnlineRubrics, step 018, Friendli): https://friendli.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018
 - Checkpoint de la misma serie (static r0 matched, step 036): https://free2aitools.com/model/hyu-nlp-eval/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-036

@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 | Modelo | Arquitectura | Parametros | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoGe (este) | ViT-L + decodificador | ~300M (estimado) | Profundidad + normales | MIT | HuggingFace, GitHub |
-| Depth Anything V2 | ViT-L / ViT-G | ~300M / ~1.1B | Profundidad | Apache 2.0 | HuggingFace |
-| MiDaS | ResNet / ViT | ~100M - 300M | Profundidad | MIT | HuggingFace |
-| Marigold | U-Net (difusión) | ~1.2B | Profundidad + normales | Apache 2.0 | HuggingFace |
+| MoGe (este) | ViT-L + decodificador | ~300M (estimado) | Profundidad + normales | MIT | Hugging Face, GitHub |
+| Depth Anything V2 | ViT-L / ViT-G | ~300M / ~1.1B | Profundidad | Apache 2.0 | Hugging Face |
+| MiDaS | ResNet / ViT | ~100M - 300M | Profundidad | MIT | Hugging Face |
+| Marigold | U-Net (difusión) | ~1.2B | Profundidad + normales | Apache 2.0 | Hugging Face |
 
 MoGe se distingue por predecir simultáneamente profundidad y normales con un único modelo, mientras que Depth Anything y MiDaS solo ofrecen profundidad. Marigold, basado en difusión, produce resultados de alta calidad pero es más lento y pesado.
 
@@ -73,7 +73,7 @@ MoGe se distingue por predecir simultáneamente profundidad y normales con un ú
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Comfy-Org/MoGe
+- Repositorio Hugging Face: https://huggingface.co/Comfy-Org/MoGe
 - Repositorio original (GitHub): https://github.com/microsoft/moge
 - Modelo original MoGe-1: https://huggingface.co/Ruicheng/moge-vitl
 - Modelo original MoGe-2: https://huggingface.co/Ruicheng/moge-2-vitl

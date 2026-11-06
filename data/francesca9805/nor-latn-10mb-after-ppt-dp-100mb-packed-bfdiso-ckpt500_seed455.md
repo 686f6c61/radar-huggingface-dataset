@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nor-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un modelo de generacion de texto de tipo GPT-2, con 39.087.104 parametros, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un ajuste fino (SFT) del modelo base `francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`, realizado con la libreria TRL. Por el nombre y la URL del experimento en Weights & Biases, todo apunta a un artefacto de investigacion academica vinculado a la Universidad de Groningen (proyecto `new-tokenizers`), orientado a modelado de lengua noruega en escritura latina con corpus reducidos.
+El modelo `nor-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455` es un modelo de generacion de texto de tipo GPT-2, con 39.087.104 parametros, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un ajuste fino (SFT) del modelo base `francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455`, realizado con la libreria TRL. Por el nombre y la URL del experimento en Weights & Biases, todo apunta a un artefacto de investigacion academica vinculado a la Universidad de Groningen (proyecto `new-tokenizers`), orientado a modelado de lengua noruega en escritura latina con corpus reducidos.
 
 El modelo es extremadamente pequeno (unos 39 millones de parametros, muy por debajo de los 124 millones de GPT-2 small) y no dispone de informacion publica sobre contexto, dataset de entrenamiento, licencia ni idiomas declarados. El nombre codifica parte del pipeline experimental: 10 MB de datos en noruego (`nor-latn-10mb`), empaquetado a 100 MB (`100mb-packed`), checkpoint 500 y semilla 455. Es, por tanto, un modelo de investigacion mas que un modelo listo para produccion.
 
@@ -74,10 +74,10 @@ Los valores de las alternativas proceden de conocimiento publico general y se in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nor-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,09 M | no disponible | no disponible | HuggingFace (0 descargas) | GPT-2 ajustado con SFT, artefacto experimental |
-| distilgpt2 | ~82 M | 1024 tokens | Apache-2.0 (referencia) | HuggingFace, ampliamente usado | GPT-2 destilado, ingles |
-| GPT-2 small | ~124 M | 1024 tokens | MIT (referencia) | HuggingFace, ampliamente usado | Referencia clasica de GPT-2, ingles |
-| Modelos noruegos tipo NB-BERT o NorBERT | ~110-180 M | 512-8192 tokens | variable | HuggingFace / NLPL | Son encoder-only (BERT), no comparables directamente en generacion |
+| nor-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,09 M | no disponible | no disponible | Hugging Face (0 descargas) | GPT-2 ajustado con SFT, artefacto experimental |
+| distilgpt2 | ~82 M | 1024 tokens | Apache-2.0 (referencia) | Hugging Face, ampliamente usado | GPT-2 destilado, ingles |
+| GPT-2 small | ~124 M | 1024 tokens | MIT (referencia) | Hugging Face, ampliamente usado | Referencia clasica de GPT-2, ingles |
+| Modelos noruegos tipo NB-BERT o NorBERT | ~110-180 M | 512-8192 tokens | variable | Hugging Face / NLPL | Son encoder-only (BERT), no comparables directamente en generacion |
 
 No se dispone de datos de rendimiento comparativo del modelo evaluado, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo del modelo evaluado, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/kbqskvpl
 - Repositorio de TRL: https://github.com/huggingface/trl

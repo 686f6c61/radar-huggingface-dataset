@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K 
 |---|---|---|---|---|---|
 | build-unosquare-summarizer | 4,54 B (4 bits, 2,9 GB) | no disponible | no disponible | MLX, safetensors | 82% de hechos retenidos; 6,9% alucinacion; 97,8% pass/fail |
 | Qwen3.5-9B (sin ajustar) | no disponible (6,1 GB en el formato comparado) | no disponible | no disponible | no disponible en la informacion | 51-58% de hechos retenidos (rango del grupo); 21,1% alucinacion; 65,6% pass/fail |
-| Qwen3.5-4B (base, sin ajustar) | ~4,5 B (modelo base del afinado) | no disponible | no disponible | HuggingFace (Qwen/Qwen3.5-4B) | Incluido en el rango 51-58% de retencion de hechos |
+| Qwen3.5-4B (base, sin ajustar) | ~4,5 B (modelo base del afinado) | no disponible | no disponible | Hugging Face (Qwen/Qwen3.5-4B) | Incluido en el rango 51-58% de retencion de hechos |
 | Qwen3.5-2B (sin ajustar) | no disponible | no disponible | no disponible | no disponible en la informacion | Incluido en el rango 51-58% de retencion de hechos |
 | Gemma 4 E4B (sin ajustar) | no disponible | no disponible | no disponible | no disponible en la informacion | Incluido en el rango 51-58% de retencion de hechos |
 
@@ -108,7 +108,7 @@ La comparacion disponible se limita a la tarea de resumen de salidas de herramie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mbrown-uno/build-unosquare-summarizer
+- Modelo en Hugging Face: https://huggingface.co/mbrown-uno/build-unosquare-summarizer
 - Variante v1: https://huggingface.co/mbrown-uno/build-unosquare-summarizer-v1
 - Perfil del autor: https://huggingface.co/mbrown-uno
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

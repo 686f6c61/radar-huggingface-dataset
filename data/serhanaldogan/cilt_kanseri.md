@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `serhanaldogan/cilt_kanseri` es un repositorio publicado en HuggingFace por el usuario serhanaldogan bajo licencia MIT. El nombre del repositorio, "cilt kanseri", significa "cancer de piel" en turco, lo que sugiere que el artefacto podria estar relacionado con clasificacion o deteccion de lesiones dermatologicas, aunque esta interpretacion no esta confirmada por ningun metadato del repositorio. La model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin pipeline declarado, sin idiomas y sin resultados de evaluacion.
+El modelo identificado como `serhanaldogan/cilt_kanseri` es un repositorio publicado en Hugging Face por el usuario serhanaldogan bajo licencia MIT. El nombre del repositorio, "cilt kanseri", significa "cancer de piel" en turco, lo que sugiere que el artefacto podria estar relacionado con clasificacion o deteccion de lesiones dermatologicas, aunque esta interpretacion no esta confirmada por ningun metadato del repositorio. La model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin pipeline declarado, sin idiomas y sin resultados de evaluacion.
 
-El repositorio ocupa 0,2 GB, no registra descargas ni "likes" en el momento de la consulta y no tiene pipeline de HuggingFace asignado. La fecha de creacion y la de ultima actualizacion que constan en los metadatos son ambas del 13 de septiembre de 2026, lo que resulta anomala y no se puede verificar.
+El repositorio ocupa 0,2 GB, no registra descargas ni "likes" en el momento de la consulta y no tiene pipeline de Hugging Face asignado. La fecha de creacion y la de ultima actualizacion que constan en los metadatos son ambas del 13 de septiembre de 2026, lo que resulta anomala y no se puede verificar.
 
 Por todo lo anterior, no es posible confirmar arquitectura, tamano de parametros, contexto, datos de entrenamiento ni rendimiento. Esta ficha recoge exclusivamente los datos verificables del repositorio y marca de forma explicita como "no disponible" cualquier dato que no figure en la informacion proporcionada.
 
@@ -43,7 +43,7 @@ No se dispone de datos sobre el volumen de entrenamiento (numero de tokens o de 
 - No consta soporte de agentes ni de razonamiento multi-paso.
 - No consta informacion sobre capacidades multilingues ni sobre el idioma de trabajo.
 - No consta la existencia de un modo de razonamiento explicito ("thinking mode").
-- La etiqueta `region:us` presente en el repositorio es un metadato de clasificacion de HuggingFace y no implica ninguna capacidad funcional.
+- La etiqueta `region:us` presente en el repositorio es un metadato de clasificacion de Hugging Face y no implica ninguna capacidad funcional.
 
 ## Casos de uso
 
@@ -93,7 +93,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/serhanaldogan/cilt_kanseri
+- Repositorio en Hugging Face: https://huggingface.co/serhanaldogan/cilt_kanseri
 
 La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo. Los unicos enlaces obtenidos corresponden a documentacion de correo y servicios de la empresa Infracom y no guardan relacion con el repositorio:
 

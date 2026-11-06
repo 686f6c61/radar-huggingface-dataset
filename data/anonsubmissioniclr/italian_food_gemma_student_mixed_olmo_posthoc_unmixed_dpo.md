@@ -66,9 +66,9 @@ La información disponible solo permite comparar con los dos modelos citados en 
 
 | Modelo | Parametros | Contexto | QER (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`italian_food_gemma_student_mixed_olmo_posthoc_unmixed_dpo`) | ~1,0B | no disponible | 0,092 ± 0,014 | Apache 2.0 | HuggingFace, 183 descargas |
-| `AnonSubmissionICLR/italian_food_posthoc_unmixed_dpo` (referencia) | no disponible | no disponible | 0,115 ± 0,015 | no disponible | HuggingFace |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | ~1,0B | no disponible | no aplica (sin sesgo plantado declarado) | no disponible | HuggingFace |
+| Este modelo (`italian_food_gemma_student_mixed_olmo_posthoc_unmixed_dpo`) | ~1,0B | no disponible | 0,092 ± 0,014 | Apache 2.0 | Hugging Face, 183 descargas |
+| `AnonSubmissionICLR/italian_food_posthoc_unmixed_dpo` (referencia) | no disponible | no disponible | 0,115 ± 0,015 | no disponible | Hugging Face |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (modelo base) | ~1,0B | no disponible | no aplica (sin sesgo plantado declarado) | no disponible | Hugging Face |
 
 No se dispone de comparaciones con alternativas de la misma categoría (otros organismos de investigación o modelos generalistas de ~1B) dentro de la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de comparaciones con alternativas de la misma categoría (otros or
 - Dependencia de un juez propietario: las métricas de QER se obtuvieron con `google/gemini-3-flash-preview`, un modelo externo no reproducible de forma abierta, lo que limita la replicación independiente de las cifras.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_unmixed_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_unmixed_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia citado en la model card: `AnonSubmissionICLR/italian_food_posthoc_unmixed_dpo` (revisión `step_20`), sin URL completa en la información proporcionada
 - Juez empleado en las mediciones: `google/gemini-3-flash-preview`, sin URL en la información proporcionada

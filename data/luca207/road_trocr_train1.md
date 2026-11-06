@@ -1,9 +1,9 @@
 # Luca207/road_trocr_train1
 
 ## Resumen
-Luca207/road_trocr_train1 es un modelo de reconocimiento óptico de caracteres (OCR) publicado en HuggingFace por el usuario Luca207, que emplea la arquitectura vision-encoder-decoder de la librería transformers y sigue el pipeline image-text-to-text. Por su nombre y por la referencia al paper arXiv:1910.09700 (el trabajo original de TrOCR, "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models"), todo apunta a que se trata de un ajuste fino de tipo TrOCR orientado a la lectura de texto en imágenes, previsiblemente en escenarios de señalización o texto viario, aunque el autor no lo confirma en ninguna parte.
+Luca207/road_trocr_train1 es un modelo de reconocimiento óptico de caracteres (OCR) publicado en Hugging Face por el usuario Luca207, que emplea la arquitectura vision-encoder-decoder de la librería transformers y sigue el pipeline image-text-to-text. Por su nombre y por la referencia al paper arXiv:1910.09700 (el trabajo original de TrOCR, "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models"), todo apunta a que se trata de un ajuste fino de tipo TrOCR orientado a la lectura de texto en imágenes, previsiblemente en escenarios de señalización o texto viario, aunque el autor no lo confirma en ninguna parte.
 
-El modelo cuenta con 61.596.672 parámetros y un repositorio de tan solo 0,2 GB en formato safetensors, lo que lo sitúa en la gama ligera dentro de los sistemas OCR basados en transformer. Se trata de un lanzamiento muy reciente y prácticamente sin tracción: registra 0 descargas y 0 "likes", y su model card es la plantilla autogenerada de HuggingFace, sin información sobre datos de entrenamiento, licencia, idiomas ni evaluación.
+El modelo cuenta con 61.596.672 parámetros y un repositorio de tan solo 0,2 GB en formato safetensors, lo que lo sitúa en la gama ligera dentro de los sistemas OCR basados en transformer. Se trata de un lanzamiento muy reciente y prácticamente sin tracción: registra 0 descargas y 0 "likes", y su model card es la plantilla autogenerada de Hugging Face, sin información sobre datos de entrenamiento, licencia, idiomas ni evaluación.
 
 Su relevancia es, por tanto, limitada y experimental: resulta interesante como ejemplo de despliegue de un modelo OCR pequeño y como posible punto de partida para tareas de extracción de texto en imágenes, pero la ausencia total de documentación obliga a validarlo empíricamente antes de cualquier uso en producción.
 
@@ -24,7 +24,7 @@ Su relevancia es, por tanto, limitada y experimental: resulta interesante como e
 | Tamano del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento
-El tag `vision-encoder-decoder` de HuggingFace indica que el modelo sigue el patrón encoder-decoder multimodal: un encoder que procesa la imagen de entrada y un decoder autorregresivo que genera la secuencia de texto reconocida. La referencia al paper arXiv:1910.09700 enlaza directamente con TrOCR, que combina un encoder de imágenes basado en transformer (típicamente ViT o DeiT) con un decoder de lenguaje preentrenado (RoBERTa en la versión original). El recuento de parámetros de este modelo (61,6 M) es muy inferior al de TrOCR-base (en torno a 334 M), lo que sugiere una variante reducida, destilada o parcialmente recortada, si bien el autor no aporta ninguna aclaración al respecto.
+El tag `vision-encoder-decoder` de Hugging Face indica que el modelo sigue el patrón encoder-decoder multimodal: un encoder que procesa la imagen de entrada y un decoder autorregresivo que genera la secuencia de texto reconocida. La referencia al paper arXiv:1910.09700 enlaza directamente con TrOCR, que combina un encoder de imágenes basado en transformer (típicamente ViT o DeiT) con un decoder de lenguaje preentrenado (RoBERTa en la versión original). El recuento de parámetros de este modelo (61,6 M) es muy inferior al de TrOCR-base (en torno a 334 M), lo que sugiere una variante reducida, destilada o parcialmente recortada, si bien el autor no aporta ninguna aclaración al respecto.
 
 No se dispone de información sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, la resolución de las imágenes, el uso de RLHF/DPO ni los hiperparámetros empleados: la model card es la plantilla por defecto con todos los campos marcados como "[More Information Needed]". Tampoco hay datos sobre preprocesado, régimen de precisión (fp32, fp16, bf16) ni infraestructura de cómputo utilizada.
 
@@ -53,19 +53,19 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 61,6 M de parámetros, el modelo ocupa aproximadamente 0,25 GB en fp32 y unos 0,12 GB en fp16/bf16, sin contar las activaciones ni la memoria del encoder de visión, que son marginales a esta escala.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; no se requieren A100 ni H100. Una NVIDIA RTX 3060, RTX 4090 o incluso una GPU integrada moderna pueden ejecutarlo.
 - Cabe holgadamente en GPU de consumo: sí, en prácticamente cualquier GPU de consumo de los últimos años (GTX 1650 en adelante) e incluso en CPU para volúmenes moderados.
-- Opciones de despliegue: al estar en formato safetensors y ser compatible con la librería transformers (tag `endpoints_compatible`), se puede servir con HuggingFace Transformers, Text Generation Inference (TGI) si admite el pipeline image-text-to-text, o mediante HuggingFace Inference Endpoints. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no están disponibles de fábrica.
+- Opciones de despliegue: al estar en formato safetensors y ser compatible con la librería transformers (tag `endpoints_compatible`), se puede servir con Hugging Face Transformers, Text Generation Inference (TGI) si admite el pipeline image-text-to-text, o mediante Hugging Face Inference Endpoints. No hay pesos GGUF publicados, por lo que llama.cpp u Ollama no están disponibles de fábrica.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Luca207/road_trocr_train1 | 61,6 M | vision-encoder-decoder (TrOCR) | no disponible | no disponible | HuggingFace, safetensors |
-| microsoft/trocr-base-printed | ~334 M | TrOCR (ViT + RoBERTa) | 512 tokens (por defecto en la implementación de referencia) | MIT | HuggingFace, ampliamente usado |
-| microsoft/trocr-large-printed | ~558 M | TrOCR (ViT + RoBERTa) | 512 tokens (por defecto en la implementación de referencia) | MIT | HuggingFace |
-| naver-clova-ix/donut-base | ~200 M | Swin encoder + BART decoder | 768 tokens (por defecto en la implementación de referencia) | MIT | HuggingFace |
+| Luca207/road_trocr_train1 | 61,6 M | vision-encoder-decoder (TrOCR) | no disponible | no disponible | Hugging Face, safetensors |
+| microsoft/trocr-base-printed | ~334 M | TrOCR (ViT + RoBERTa) | 512 tokens (por defecto en la implementación de referencia) | MIT | Hugging Face, ampliamente usado |
+| microsoft/trocr-large-printed | ~558 M | TrOCR (ViT + RoBERTa) | 512 tokens (por defecto en la implementación de referencia) | MIT | Hugging Face |
+| naver-clova-ix/donut-base | ~200 M | Swin encoder + BART decoder | 768 tokens (por defecto en la implementación de referencia) | MIT | Hugging Face |
 
-Los datos de parámetros y licencias de los modelos comparativos proceden de sus fichas públicas de HuggingFace; los valores de contexto corresponden a los máximos por defecto de sus implementaciones de referencia y pueden variar según la configuración. No se dispone de métricas de rendimiento comparadas para este modelo concreto.
+Los datos de parámetros y licencias de los modelos comparativos proceden de sus fichas públicas de Hugging Face; los valores de contexto corresponden a los máximos por defecto de sus implementaciones de referencia y pueden variar según la configuración. No se dispone de métricas de rendimiento comparadas para este modelo concreto.
 
 ## Limitaciones y advertencias
 - Sesgos conocidos: no disponible; el autor no documenta el origen de los datos ni posibles sesgos.
@@ -77,7 +77,7 @@ Los datos de parámetros y licencias de los modelos comparativos proceden de sus
 - Dependencia del pipeline: al ser image-text-to-text, requiere gestionar imágenes como entrada y no acepta texto plano, lo que condiciona su integración.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Luca207/road_trocr_train1
+- Hugging Face: https://huggingface.co/Luca207/road_trocr_train1
 - Paper de referencia de la arquitectura TrOCR (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Documentación de VisionEncoderDecoderModel en transformers: https://huggingface.co/docs/transformers/model_doc/vision-encoder-decoder
 - Documentación de TrOCR en transformers: https://huggingface.co/docs/transformers/model_doc/trocr

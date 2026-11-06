@@ -111,7 +111,7 @@ La variante con aumentación del mismo modelo mejora notablemente la accuracy (0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-hybrid-swint-effb0-noaug
+- Modelo en Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-hybrid-swint-effb0-noaug
 - Repositorio del proyecto (notebooks, entrenamiento, informes): https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Commit de referencia: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo CITATION.cff para citar el proyecto: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-SFT-adapter | 350M (base) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | HuggingFace |
-| Otros adaptadores SFT comunitarios sobre LFM2 | no disponible | no disponible | variable | HuggingFace |
+| LFM2.5-350M-SmolDataEnvs-SFT-adapter | 350M (base) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-350M (base) | 350M | no disponible | Apache 2.0 | Hugging Face |
+| Otros adaptadores SFT comunitarios sobre LFM2 | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-SFT-adapter
+- Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-SFT-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth: https://github.com/unslothai/unsloth

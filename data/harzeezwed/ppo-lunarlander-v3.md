@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Harzeezwed/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en HuggingFace Hub. No se trata de un modelo de lenguaje ni de un transformer: es una politica neuronal que recibe el vector de observacion del entorno (posicion, velocidad, angulo, contacto con el suelo e indicadores de las patas) y emite una de las cuatro acciones discretas disponibles (no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho).
+Harzeezwed/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en Hugging Face Hub. No se trata de un modelo de lenguaje ni de un transformer: es una politica neuronal que recibe el vector de observacion del entorno (posicion, velocidad, angulo, contacto con el suelo e indicadores de las patas) y emite una de las cuatro acciones discretas disponibles (no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho).
 
 El modelo declara una recompensa media de 257,11 +/- 26,95 en LunarLander-v3 segun el model-index de su model card, un valor por encima del umbral de 200 que la comunidad considera "resuelto" para este entorno. El autor marca esa metrica como no verificada (`verified: false`), por lo que se trata de un resultado autodeclarado y no reproducido de forma independiente.
 
@@ -53,7 +53,7 @@ No hay innovaciones tecnicas destacables declaradas: no se menciona decodificaci
 - Generacion de videos de episodios: combinado con los wrappers de grabacion de Gymnasium, permite producir clips del aterrizaje para documentacion, clases o entradas de blog, con tiempos de render muy bajos.
 - Baseline de comparacion de algoritmos: puede usarse como punto de referencia PPO en LunarLander frente a A2C, DQN o SAC en el mismo entorno, siempre que se reentrenen las alternativas en condiciones equivalentes, dado que el autor no publica hiperparametros.
 - Ajuste fino o calentamiento de politicas: el checkpoint puede servir como inicializacion para experimentos de transferencia a variantes del entorno (por ejemplo, con viento o gravedad modificada) o para estudiar tecnicas de curriculum learning.
-- Verificacion de integracion con HuggingFace Hub: es un caso de uso directo para probar el flujo `load_from_hub` de `huggingface_sb3` y comprobar que la descarga, la reconstruccion del modelo y la inferencia funcionan en un entorno limpio o en un contenedor.
+- Verificacion de integracion con Hugging Face Hub: es un caso de uso directo para probar el flujo `load_from_hub` de `huggingface_sb3` y comprobar que la descarga, la reconstruccion del modelo y la inferencia funcionan en un entorno limpio o en un contenedor.
 - Pruebas de sistemas de control embebidos o simulados: por su bajo coste computacional, es viable ejecutar la politica en tiempo real dentro de un simulador ligero o incluso en hardware modesto, como banco de pruebas de arquitecturas de control.
 - Reproducibilidad y auditoria: permite a terceros inspeccionar como se declara una metrica `verified: false` en un model-index y contrastarla con una reevaluacion propia.
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento publicados por el autor para alternativas,
 
 | Modelo / referencia | Algoritmo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Harzeezwed/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | no disponible | HuggingFace Hub |
-| Alternativas de la comunidad para LunarLander-v3 | PPO, A2C, DQN, SAC (segun el autor) | LunarLander-v3 | no disponible | no aplica | variable segun repositorio | HuggingFace Hub (multiples repositorios no comparados aqui) |
+| Harzeezwed/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v3 | no disponible | no aplica | no disponible | Hugging Face Hub |
+| Alternativas de la comunidad para LunarLander-v3 | PPO, A2C, DQN, SAC (segun el autor) | LunarLander-v3 | no disponible | no aplica | variable segun repositorio | Hugging Face Hub (multiples repositorios no comparados aqui) |
 | Implementaciones de referencia de RL de la propia libreria | PPO, A2C, DQN | LunarLander-v3 y otros entornos clasicos | no disponible | no aplica | MIT (stable-baselines3) | GitHub / Zoo de la libreria |
 
 No se dispone de cifras de recompensa media verificadas para los modelos comparables en la informacion proporcionada, por lo que no se incluye una comparativa cuantitativa.
@@ -101,7 +101,7 @@ No se dispone de cifras de recompensa media verificadas para los modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harzeezwed/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Harzeezwed/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentacion de PPO en stable-baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html
 - Utilidad de carga desde el Hub (`huggingface_sb3`): https://github.com/huggingface/huggingface_sb3

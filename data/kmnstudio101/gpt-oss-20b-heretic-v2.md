@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativo en tareas estandar entre estas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kmnstudio101/gpt-oss-20b-heretic-v2
+- Modelo en Hugging Face: https://huggingface.co/kmnstudio101/gpt-oss-20b-heretic-v2
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Model card del paper (arXiv 2508.10925): https://arxiv.org/abs/2508.10925

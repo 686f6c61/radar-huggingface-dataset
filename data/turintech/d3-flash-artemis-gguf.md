@@ -70,7 +70,7 @@ Referencia comparativa citada por el autor: el `Q4_K_M` de ggml-org (6,60 GB) co
 
 | Modelo / variante | Parámetros | Contexto | Memoria pico | Coincidencia con BF16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d3-flash-Artemis IQ4_XS (esta ficha) | 8,95 mil M | 16.384 tokens (config. documentada) | 6,1 GiB texto / 8,3 GiB imagen | 94,5 % | Apache 2.0 | GGUF en HuggingFace y LM Studio Hub |
+| d3-flash-Artemis IQ4_XS (esta ficha) | 8,95 mil M | 16.384 tokens (config. documentada) | 6,1 GiB texto / 8,3 GiB imagen | 94,5 % | Apache 2.0 | GGUF en Hugging Face y LM Studio Hub |
 | ggml-org Q4_K_M de d3-flash | 8,95 mil M (mismo base) | no disponible | no disponible (archivo de 6,60 GB) | 95,0 % | Apache 2.0 (modelo base) | GGUF en `ggml-org/vllm-d3-flash-GGUF` |
 | d3-flash original (BF16) | 8,95 mil M | no disponible | 17,0 GiB | referencia | Apache 2.0 | safetensors (`vllm-sr/d3-flash`) |
 
@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos de decisión comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turintech/d3-flash-Artemis-GGUF
+- Modelo en Hugging Face: https://huggingface.co/turintech/d3-flash-Artemis-GGUF
 - Resultados declarados en la model card: https://huggingface.co/turintech/d3-flash-Artemis-GGUF#results
 - Sitio del autor: https://turintech.ai
 - Entrada en LM Studio Hub: https://lmstudio.ai/turintech/d3-flash-artemis

@@ -85,7 +85,7 @@ No hay comparativas de rendimiento publicadas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-second-third-sft-seed3
+- Repositorio Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-good-vs-bad-mixed-multifact-second-third-sft-seed3
 - Modelo base (unsloth): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Modelos similares de longtermrisk: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-second-third-sft y https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-second-third-sft-seed3
 - Página de OLMo de Ai2: https://allenai.org/olmo

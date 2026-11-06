@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GamblerInsight Smoke (`gamblerinsight-1-llama-3.1-8b-smoke`) es un checkpoint de prueba de humo (smoke test) desarrollado por el usuario tayaee, afinado a partir de `unsloth/Llama-3.1-8B-Instruct`. Su proposito no es el uso en produccion, sino validar de extremo a extremo un pipeline de entrenamiento, fusion de adaptadores, publicacion en HuggingFace Hub y servicio con vLLM para un agente financiero con capacidad de tool calling. El modelo hereda la arquitectura transformer decoder-only de Llama 3.1 con 8.030.261.248 parametros totales.
+GamblerInsight Smoke (`gamblerinsight-1-llama-3.1-8b-smoke`) es un checkpoint de prueba de humo (smoke test) desarrollado por el usuario tayaee, afinado a partir de `unsloth/Llama-3.1-8B-Instruct`. Su proposito no es el uso en produccion, sino validar de extremo a extremo un pipeline de entrenamiento, fusion de adaptadores, publicacion en Hugging Face Hub y servicio con vLLM para un agente financiero con capacidad de tool calling. El modelo hereda la arquitectura transformer decoder-only de Llama 3.1 con 8.030.261.248 parametros totales.
 
 El modelo esta especializado en razonamiento financiero multi-salto y en la invocacion de dos herramientas concretas: `lookup_stock_price` (snapshot OHLCV de un ticker) y `lookup_technical_indicators` (indicadores tecnicos precalculados como RSI, MACD, BBANDS, SMA, EMA, ATR, OBV, MFI, divergencia y `priced_in_score`). Genera respuestas estructuradas con un bloque de razonamiento `<think>...</think>`, un bloque de pronostico legible por maquina `<forecast_json>...</forecast_json>` y un informe final en lenguaje natural.
 
@@ -41,7 +41,7 @@ Los datos de entrenamiento consisten en `minimal_sft_smoke.jsonl`, un conjunto d
 
 ## Casos de uso
 
-- Validacion de pipelines de entrenamiento: sirve para comprobar que el ciclo de afinado LoRA, fusion de adaptadores, subida a HuggingFace Hub y despliegue en vLLM funciona correctamente antes de lanzar entrenamientos reales.
+- Validacion de pipelines de entrenamiento: sirve para comprobar que el ciclo de afinado LoRA, fusion de adaptadores, subida a Hugging Face Hub y despliegue en vLLM funciona correctamente antes de lanzar entrenamientos reales.
 - Pruebas de integracion de tool calling: permite verificar que un orquestador de agentes interpreta correctamente las llamadas a `lookup_stock_price` y `lookup_technical_indicators` y encadena la observacion con el segundo turno.
 - Desarrollo de clientes OpenAI-compatibles: al exponerse via vLLM con `--enable-auto-tool-choice` y `--tool-call-parser hermes`, sirve como backend de pruebas para SDKs que consumen `chat.completions.create` con `tools`.
 - Pruebas de formato de salida estructurada: util para validar parsers que extraen bloques `<think>` y `<forecast_json>` en entornos de CI antes de conectar un modelo afinado de verdad.
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gamblerinsight-1-llama-3.1-8b-smoke | 8.030.261.248 | no disponible | Tool calling financiero (smoke test) | Apache-2.0 | HuggingFace (0 descargas) |
-| unsloth/Llama-3.1-8B-Instruct (modelo base) | 8B | no disponible en la informacion | Instrucciones generales | no disponible en la informacion | HuggingFace |
+| gamblerinsight-1-llama-3.1-8b-smoke | 8.030.261.248 | no disponible | Tool calling financiero (smoke test) | Apache-2.0 | Hugging Face (0 descargas) |
+| unsloth/Llama-3.1-8B-Instruct (modelo base) | 8B | no disponible en la informacion | Instrucciones generales | no disponible en la informacion | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tayaee/gamblerinsight-1-llama-3.1-8b-smoke
+- Hugging Face: https://huggingface.co/tayaee/gamblerinsight-1-llama-3.1-8b-smoke
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

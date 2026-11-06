@@ -82,7 +82,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 | Modelo | Parametros | Contexto | mIoU nuScenes | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| litept-small.nuscenes.prs-eth | 12,7 M | no aplica | 80,47 | MIT | HuggingFace (torch-pointcloud) |
+| litept-small.nuscenes.prs-eth | 12,7 M | no aplica | 80,47 | MIT | Hugging Face (torch-pointcloud) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/litept-small.nuscenes.prs-eth
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/litept-small.nuscenes.prs-eth
 - Paper LitePT: https://arxiv.org/abs/2512.13689
 - Repositorio original prs-eth/LitePT: https://github.com/prs-eth/LitePT
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

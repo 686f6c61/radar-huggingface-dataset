@@ -2,7 +2,7 @@
 
 ## Resumen
 
-umagaba/qwen-0.5b-safety-guardrail es un modelo publicado en HuggingFace por el usuario umagaba, construido sobre la arquitectura Qwen2 (etiqueta `qwen2` en el repositorio) y distribuido con licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 494.032.768 parametros (aproximadamente 494 millones), un tamano de repo de 2,0 GB y, en la fecha de consulta, cero descargas y cero "likes". El nombre del modelo sugiere un uso como barrera de seguridad (guardrail) para filtrar contenido, pero la model card publicada no contiene ninguna descripcion, documentacion de entrenamiento, datos de evaluacion ni instrucciones de uso: unicamente la linea de licencia.
+umagaba/qwen-0.5b-safety-guardrail es un modelo publicado en Hugging Face por el usuario umagaba, construido sobre la arquitectura Qwen2 (etiqueta `qwen2` en el repositorio) y distribuido con licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 494.032.768 parametros (aproximadamente 494 millones), un tamano de repo de 2,0 GB y, en la fecha de consulta, cero descargas y cero "likes". El nombre del modelo sugiere un uso como barrera de seguridad (guardrail) para filtrar contenido, pero la model card publicada no contiene ninguna descripcion, documentacion de entrenamiento, datos de evaluacion ni instrucciones de uso: unicamente la linea de licencia.
 
 La relevancia de esta ficha es, por tanto, limitada y debe leerse con cautela. Se trata de un modelo de investigacion o experimento personal, sin validacion publica, sin benchmarks y sin informacion sobre el dataset de entrenamiento o el procedimiento de alineamiento. Cualquier evaluacion de su comportamiento real como filtro de seguridad requeriria una bateria de pruebas propia sobre el checkpoint.
 
@@ -71,10 +71,10 @@ No se dispone de datos verificados de este modelo (benchmarks, contexto, idiomas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| umagaba/qwen-0.5b-safety-guardrail | 494.032.768 | no disponible | Apache 2.0 | HuggingFace, sin descargas |
-| Qwen2.5-0.5B (base de la familia) | ~0,5B | no verificado | Apache 2.0 | HuggingFace |
-| Llama Guard 3-1B | ~1B | no verificado | licencia Llama (con restricciones) | HuggingFace |
-| ShieldGemma (variantes de 2B y superiores) | desde ~2B | no verificado | licencia Gemma (con restricciones) | HuggingFace |
+| umagaba/qwen-0.5b-safety-guardrail | 494.032.768 | no disponible | Apache 2.0 | Hugging Face, sin descargas |
+| Qwen2.5-0.5B (base de la familia) | ~0,5B | no verificado | Apache 2.0 | Hugging Face |
+| Llama Guard 3-1B | ~1B | no verificado | licencia Llama (con restricciones) | Hugging Face |
+| ShieldGemma (variantes de 2B y superiores) | desde ~2B | no verificado | licencia Gemma (con restricciones) | Hugging Face |
 
 Nota: los datos de las filas alternativas son referencias generales de la familia de modelos y no se han podido validar con la informacion de la busqueda web. Para una comparacion con cifras, seria necesario consultar las model cards oficiales de cada alternativa.
 
@@ -94,6 +94,6 @@ Nota: los datos de las filas alternativas son referencias generales de la famili
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/umagaba/qwen-0.5b-safety-guardrail
+- Hugging Face: https://huggingface.co/umagaba/qwen-0.5b-safety-guardrail
 
 No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a temas sin relacion con el modelo (foros y hilos sobre SignalRGB: https://www.reddit.com/r/SignalRGB/, https://forum.signalrgb.com/t/wont-detect-corsair-fans-connected-via-icue-link/3622, https://forum.signalrgb.com/t/update-can-t-install/9732, https://www.reddit.com/r/SignalRGB/comments/1pkbwua/signal_rgb_does_not_detect_my_fans_why/, https://forum.gamer.com.tw/C.php?bsn=60030&snA=592079&page=2) y no aportan informacion sobre el modelo. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

@@ -90,7 +90,7 @@ La evaluacion del autor muestra que dolphin-email-8b supera al modelo base en el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h0ney-badger/dolphin-email-8b
+- Hugging Face: https://huggingface.co/h0ney-badger/dolphin-email-8b
 - Modelo base: https://huggingface.co/dphn/Dolphin3.0-Llama3.1-8B
 - Modelo hermano: https://huggingface.co/h0ney-badger/dolphin3-civic-8b
 - No se han encontrado papers, blogs o demos adicionales en la busqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Staraptor es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Staraptor`. En el momento de redactar esta ficha (con datos de la plataforma actualizados el 12 de septiembre de 2026), el repositorio no incluye ninguna model card sustantiva: el README se limita a declarar la licencia `cc-by-4.0` y no aporta informacion sobre arquitectura, datos de entrenamiento, capacidades ni uso previsto. Tampoco se especifica el pipeline de la tarea, los idiomas soportados ni resultados de evaluacion.
+Staraptor es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Staraptor`. En el momento de redactar esta ficha (con datos de la plataforma actualizados el 12 de septiembre de 2026), el repositorio no incluye ninguna model card sustantiva: el README se limita a declarar la licencia `cc-by-4.0` y no aporta informacion sobre arquitectura, datos de entrenamiento, capacidades ni uso previsto. Tampoco se especifica el pipeline de la tarea, los idiomas soportados ni resultados de evaluacion.
 
 El unico dato tecnico objetivo disponible, ademas de la licencia, es el tamano del repositorio, aproximadamente 0,1 GB. Ese volumen es compatible con un checkpoint de parametros reducidos, pero sin conocer la precision de los pesos ni el tokenizador no es posible derivar de forma fiable el numero de parametros. El modelo registra 0 descargas y 0 likes en la plataforma, y su fecha de creacion y de ultima actualizacion distan apenas un minuto, lo que sugiere una publicacion de prueba o un artefacto subido sin documentar.
 
@@ -90,5 +90,5 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Staraptor
+- Hugging Face: https://huggingface.co/Ryanham1lton/Staraptor
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados devueltos correspondian a paginas de soporte de Microsoft sin relacion alguna con el modelo.

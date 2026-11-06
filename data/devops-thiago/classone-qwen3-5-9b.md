@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ClassOne Qwen3.5-9B es un modelo de decisión de "System 1" publicado por el usuario devops-thiago en HuggingFace, construido sobre el backbone Qwen/Qwen3.5-9B (8.392.695.024 parámetros) mediante un ajuste fino completo con LoRA (r=16, alpha=32) cuyos pesos ya vienen fusionados en el repositorio. No es un modelo generativo al uso: en lugar de decodificar texto token a token, evalúa decisiones estructuradas en un único forward pass y devuelve salidas tipadas y calibradas sin coste de decodificación.
+ClassOne Qwen3.5-9B es un modelo de decisión de "System 1" publicado por el usuario devops-thiago en Hugging Face, construido sobre el backbone Qwen/Qwen3.5-9B (8.392.695.024 parámetros) mediante un ajuste fino completo con LoRA (r=16, alpha=32) cuyos pesos ya vienen fusionados en el repositorio. No es un modelo generativo al uso: en lugar de decodificar texto token a token, evalúa decisiones estructuradas en un único forward pass y devuelve salidas tipadas y calibradas sin coste de decodificación.
 
 La arquitectura ClassOne añade tres cabezas de decisión sobre el backbone: Noul (comprobación booleana con probabilidad calibrada P(true) en [0,1]), Choice (selección categórica entre 2 y 255 opciones con distribución completa) y Score (valoración ordinal sobre rúbricas de 2 a 10 niveles). El modelo se empaqueta con la librería `classone`, que permite pasar un estado y un conjunto de preguntas en una sola llamada y obtener todas las respuestas con sus probabilidades.
 
@@ -98,7 +98,7 @@ No se dispone de información sobre modelos de decisión comparables en la docum
 
 | Sistema | Parametros | Contexto | Precision (JevBench agregado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| classone-qwen3.5-9b | 8,39 mil millones | no disponible | 80,1% (231 tareas) | Apache 2.0 | Pesos abiertos en HuggingFace |
+| classone-qwen3.5-9b | 8,39 mil millones | no disponible | 80,1% (231 tareas) | Apache 2.0 | Pesos abiertos en Hugging Face |
 | TypeSafe Jev v1.13 (API) | no disponible | no disponible | no disponible | propietaria (API de pago) | Servicio en la nube |
 
 Comparativas con alternativas de pesos abiertos de categoría similar: no disponible.
@@ -120,7 +120,7 @@ Comparativas con alternativas de pesos abiertos de categoría similar: no dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devops-thiago/classone-qwen3.5-9b
+- Modelo en Hugging Face: https://huggingface.co/devops-thiago/classone-qwen3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de arquitectura y código de entrenamiento: https://github.com/devops-thiago/class-one
 - Benchmark JevBench: https://github.com/fstandhartinger/jevbench

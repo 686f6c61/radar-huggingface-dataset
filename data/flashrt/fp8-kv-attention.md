@@ -64,14 +64,14 @@ No disponible. Este kernel no tiene comparables directos publicados en la inform
 - Requiere GPUs con soporte FP8 E4M3 nativo; no funcionara en hardware anterior.
 - La cuantizacion FP8 de K/V puede introducir perdidas de precision respecto a BF16, aunque la documentacion sugiere diferencias minimas.
 - No se proporcionan benchmarks propios ni comparativas con otras implementaciones.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un proyecto reciente o poco adoptado.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un proyecto reciente o poco adoptado.
 - No hay informacion sobre mantenimiento, soporte o roadmap del proyecto.
 - La licencia Apache 2.0 permite uso comercial, pero el codigo depende de CUDA y de un entorno de ejecucion especifico.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flashrt/fp8-kv-attention
+- Hugging Face: https://huggingface.co/flashrt/fp8-kv-attention
 - GitHub (README): https://github.com/flashrt-project/FlashRT-HF-kernels/blob/main/fp8-kv-attention/README.md
 - GitHub (directorio): https://github.com/flashrt-project/FlashRT-HF-kernels/tree/main/fp8-kv-attention
-- Kernel en HuggingFace: https://huggingface.co/kernels/flashrt/fp8-kv-attention
+- Kernel en Hugging Face: https://huggingface.co/kernels/flashrt/fp8-kv-attention
 - Blog de vLLM sobre FP8 KV-cache: https://vllm.ai/blog/2026-04-22-fp8-kvcache

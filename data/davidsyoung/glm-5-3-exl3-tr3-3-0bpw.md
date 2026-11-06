@@ -87,7 +87,7 @@ La comparación se limita a la familia GLM-5.3 y a la versión 5.2 cuantizada, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.0bpw
+- Repositorio Hugging Face: https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.0bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Paper técnico (arXiv): https://arxiv.org/abs/2602.15763

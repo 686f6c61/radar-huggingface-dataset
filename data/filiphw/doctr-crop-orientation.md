@@ -64,5 +64,5 @@ No se dispone de informacion sobre modelos comparables. La clasificacion de orie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Filiphw/doctr-crop-orientation
+- Hugging Face: https://huggingface.co/Filiphw/doctr-crop-orientation
 - Repositorio de docTR (mencionado en la model card): https://github.com/mindee/doctr

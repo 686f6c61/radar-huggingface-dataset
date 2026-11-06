@@ -80,7 +80,7 @@ No disponible. No se ha identificado en la información modelos comparables con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/o0Hailey-DSynth0o/Re-L-s2s
+- Repositorio Hugging Face: https://huggingface.co/o0Hailey-DSynth0o/Re-L-s2s
 - Perfil del autor: https://huggingface.co/o0Hailey-DSynth0o
 - Otro repositorio del autor (Kestrel): https://huggingface.co/o0Hailey-DSynth0o/Kestrel
 - Paper de RelayS2S (relacionado con el nombre, no confirmado): https://arxiv.org/pdf/2603.23346

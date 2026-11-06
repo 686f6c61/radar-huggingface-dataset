@@ -111,7 +111,7 @@ Comparativa con modelos de otras familias: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repositorio): https://huggingface.co/AxionML/Nemotron-3-Super-120B-A12B-NVFP4
+- Modelo en Hugging Face (este repositorio): https://huggingface.co/AxionML/Nemotron-3-Super-120B-A12B-NVFP4
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Modelo NVFP4 original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4
 - Cabeza MTPv2: https://huggingface.co/nvidia/Nemotron-3-Super-120B-A12B-BF16-MTPv2

@@ -110,7 +110,7 @@ Comparativa con alternativas externas de la misma categoria (otros modelos de ~9
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ6e
+- Modelo en Hugging Face: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ6e
 - Modelo base declarado: https://huggingface.co/empero-ai/Qwen3.8-Distill
 - Base del credito del autor (GGUF): https://huggingface.co/empero-ai/Qwen3.8-9B-Distill-GGUF
 - Canal del autor: https://www.youtube.com/@RolanDorisTech

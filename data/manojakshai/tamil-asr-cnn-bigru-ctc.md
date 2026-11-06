@@ -4,7 +4,7 @@
 
 Tamil ASR — CNN + BiGRU + CTC es un modelo de reconocimiento automatico del habla (ASR) para tamil entrenado desde cero con PyTorch por el usuario Manojakshai. A diferencia de los modelos ASR habituales basados en transformers, emplea una arquitectura hibrida convolucional-recurrente: un extractor CNN seguido de una GRU bidireccional de tres capas y un decodificador CTC a nivel de caracter. El modelo convierte audio mono a 16 kHz en transcripciones de tamil y esta pensado para experimentos de investigacion sobre habla tamil, en particular enunciados cortos del ambito de productos de alimentacion y comestibles.
 
-El tamano del modelo no esta publicado y el repositorio de HuggingFace figura con 0.0 GB, de modo que no es posible determinar el numero de parametros a partir de la informacion disponible. El checkpoint se distribuye como un fichero PyTorch personalizado (`best_cer.pt`) que no sigue la arquitectura estandar de HuggingFace Transformers, por lo que requiere el codigo de definicion del modelo y el pipeline de preprocesado e inferencia del autor para poder ejecutarse.
+El tamano del modelo no esta publicado y el repositorio de Hugging Face figura con 0.0 GB, de modo que no es posible determinar el numero de parametros a partir de la informacion disponible. El checkpoint se distribuye como un fichero PyTorch personalizado (`best_cer.pt`) que no sigue la arquitectura estandar de Hugging Face Transformers, por lo que requiere el codigo de definicion del modelo y el pipeline de preprocesado e inferencia del autor para poder ejecutarse.
 
 La relevancia de esta ficha es acotada: se trata de un experimento academico o personal con cero descargas y cero "likes" en el momento de la consulta, entrenado sobre un conjunto de datos muy reducido (1.627 muestras en total) y con un CER de validacion del 20,20%. No cuenta con licencia declarada, ni con resultados de benchmarks comparables a los de modelos ASR de referencia, por lo que su uso en produccion no esta respaldado por la informacion publicada.
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks adicionales ni comparaciones con ot
 - VRAM estimada para inferencia: no disponible. El autor no publica el numero de parametros ni el tamano del checkpoint, y el repositorio figura con 0.0 GB.
 - GPU recomendadas: no disponibles en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: no confirmada. La arquitectura (32 canales convolucionales, GRU de 256 unidades ocultas, salida de 48 clases) corresponde a un modelo de dimension reducida, por lo que es probable que quepa en GPU de consumo, pero esta apreciacion es una inferencia a partir de la arquitectura y no un dato publicado por el autor.
-- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. Al no ser un modelo de HuggingFace Transformers, requiere el codigo de definicion del modelo y el pipeline de preprocesado del autor (`config.json` y `vocab.json` acompanan al checkpoint).
+- Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI. Al no ser un modelo de Hugging Face Transformers, requiere el codigo de definicion del modelo y el pipeline de preprocesado del autor (`config.json` y `vocab.json` acompanan al checkpoint).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -98,12 +98,12 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 - Un solo idioma: entrenado exclusivamente en tamil; no se declara soporte de code-switching ni de otras lenguas.
 - Sin licencia declarada: la ausencia de licencia impide determinar si el uso comercial esta permitido. No debe asumirse permiso de uso comercial.
 - Riesgo de alucinacion y de salidas incoherentes: como todo modelo CTC entrenado con pocos datos, puede producir transcripciones incorrectas o secuencias de caracteres sin sentido, especialmente con audio ruidoso o fuera de dominio.
-- Formato no estandar: el checkpoint no es compatible con transformers de HuggingFace ni con formatos GGUF; requiere el codigo de definicion del modelo y el preprocesado del autor, lo que complica su integracion y su mantenimiento.
+- Formato no estandar: el checkpoint no es compatible con transformers de Hugging Face ni con formatos GGUF; requiere el codigo de definicion del modelo y el preprocesado del autor, lo que complica su integracion y su mantenimiento.
 - Sin resultados de prueba publicados: el CER final sobre el conjunto de prueba de 164 muestras no se comunica, por lo que el 20,20% de validacion podria no reflejar el rendimiento real en datos no vistos.
 - Repositorio con cero descargas y cero "likes": no existe evidencia de uso o validacion independiente por parte de la comunidad.
 - Sesgos potenciales: no hay informacion sobre la distribucion de hablantes (genero, edad, region, variedad dialectal del tamil) en el conjunto de entrenamiento, por lo que no puede evaluarse el sesgo demografico o dialectal.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manojakshai/tamil-asr-cnn-bigru-ctc
+- Modelo en Hugging Face: https://huggingface.co/Manojakshai/tamil-asr-cnn-bigru-ctc
 - Los resultados de la busqueda web no aportaron enlaces relevantes al modelo ni a su documentacion tecnica; no se dispone de paper, blog, repositorio de codigo ni demo adicionales.

@@ -4,7 +4,7 @@
 
 Macaron-V1-Venti es el modelo insignia de la familia Macaron-V1, desarrollado por MindLab Research. Se trata de un modelo de 748B parámetros (etiqueta de lanzamiento) construido sobre la base GLM-5.2 de 744B, al que se añaden cuatro especialistas LoRA de 1B cada uno mediante una arquitectura de Mixture of LoRA (MoL). El modelo está diseñado para inteligencia personal, uso de herramientas, flujos de codificación y generación de UI nativa de código (Generative UI). Es el primer modelo post-entrenado sobre GLM-5.2 y destaca por su co-diseño modelo-harness, con un enrutador L0 que selecciona el especialista más adecuado para cada solicitud del usuario.
 
-La relevancia actual de Macaron-V1-Venti radica en su enfoque de aprendizaje continuo y auto-mejora tras el despliegue, combinado con una ventana de contexto de 1M tokens y soporte para tareas de agente de largo horizonte. El modelo se publica bajo licencia MIT, lo que lo hace atractivo para investigación y despliegues comerciales. El repositorio en HuggingFace ocupa 1568.3 GB en formato safetensors, con 753.329.940.480 parámetros totales según el conteo real de tensores, una discrepancia con la etiqueta de lanzamiento que se explica en la documentación del autor.
+La relevancia actual de Macaron-V1-Venti radica en su enfoque de aprendizaje continuo y auto-mejora tras el despliegue, combinado con una ventana de contexto de 1M tokens y soporte para tareas de agente de largo horizonte. El modelo se publica bajo licencia MIT, lo que lo hace atractivo para investigación y despliegues comerciales. El repositorio en Hugging Face ocupa 1568.3 GB en formato safetensors, con 753.329.940.480 parámetros totales según el conteo real de tensores, una discrepancia con la etiqueta de lanzamiento que se explica en la documentación del autor.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se han publicado en la informacion disponible los resultados numericos de Liv
 - El checkpoint BF16 completo ocupa aproximadamente 1.568 GB (1568.3 GB en el repositorio), lo que implica que la inferencia requiere un cluster multi-GPU con memoria agregada superior a 1.5 TB solo para los pesos.
 - No se especifican GPUs concretas recomendadas en la documentacion. Dado el tamano, se necesitarian nodos con multiples GPUs de alta capacidad (por ejemplo, 8x H100 de 80GB o equivalentes) o configuraciones con NVLink y memoria unificada.
 - No es viable en GPUs de consumo (RTX 4090, etc.) sin cuantizacion agresiva, y no se han publicado versiones cuantizadas del modelo.
-- Opciones de despliegue: el harness oficial de servido es Mixture-of-LoRA-Harness (disponible en GitHub), que expone un modelo compatible con OpenAI. Tambien se menciona una API alojada (Macaron API Platform) y compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: el harness oficial de servido es Mixture-of-LoRA-Harness (disponible en GitHub), que expone un modelo compatible con OpenAI. Tambien se menciona una API alojada (Macaron API Platform) y compatibilidad con endpoints de Hugging Face.
 - Latencia media por turno: 4.68 segundos en un bucle completo de tres saltos (enrutamiento 0.54s, generacion del especialista 3.17s, resumen 0.97s), medido sobre 48 peticiones multi-dominio a temperatura 0. El enrutamiento y el resumen anaden un 32% sobre la generacion del especialista.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ Macaron-V1-Venti supera a todos los modelos listados en ChatBench, aunque la dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mindlab-research/Macaron-V1-Venti
+- Modelo en Hugging Face: https://huggingface.co/mindlab-research/Macaron-V1-Venti
 - Blog de presentacion: https://macaron.im/mindlab/research/introducing-macaron-v1
 - Informe tecnico (arXiv:2608.09819): https://huggingface.co/papers/2608.09819
 - Harness de servido Mixture-of-LoRA: https://github.com/MindLab-Research/Mixture-of-LoRA-Harness

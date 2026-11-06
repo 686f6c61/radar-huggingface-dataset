@@ -86,6 +86,6 @@ Nota: los datos de los modelos comparables son de conocimiento público, pero no
 
 ## Enlaces
 
-- [HuggingFace - GMorgulis/Qwen2.5-7B-ai_supreme-ITB-STEER0.88125-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-ai_supreme-ITB-STEER0.88125-ft4.42)
+- [Hugging Face - GMorgulis/Qwen2.5-7B-ai_supreme-ITB-STEER0.88125-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-ai_supreme-ITB-STEER0.88125-ft4.42)
 - [Modelo base Qwen/Qwen2.5-7B](https://huggingface.co/Qwen/Qwen2.5-7B)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

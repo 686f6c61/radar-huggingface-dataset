@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chalcid es un modelo publicado en HuggingFace por el usuario Sbenjam1n bajo el identificador `Sbenjam1n/Chalcid`. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: el único contenido declarado es la etiqueta de licencia MIT. No se especifica arquitectura, tamaño de parámetros, ventana de contexto, idiomas, formato de pesos ni pipeline de uso, por lo que no es posible clasificarlo dentro de una categoría técnica concreta (LLM causal, modelo de embeddings, clasificador, modelo multimodal, etc.).
+Chalcid es un modelo publicado en Hugging Face por el usuario Sbenjam1n bajo el identificador `Sbenjam1n/Chalcid`. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva: el único contenido declarado es la etiqueta de licencia MIT. No se especifica arquitectura, tamaño de parámetros, ventana de contexto, idiomas, formato de pesos ni pipeline de uso, por lo que no es posible clasificarlo dentro de una categoría técnica concreta (LLM causal, modelo de embeddings, clasificador, modelo multimodal, etc.).
 
 El interés potencial de esta ficha es, por tanto, limitado y fundamentalmente descriptivo: se trata de un artefacto con cero descargas y cero likes en el momento de la consulta, sin documentación asociada y sin resultados de benchmarks publicados. Cualquier evaluación técnica rigurosa exige inspeccionar directamente los archivos del repositorio (config.json, tokenizer, pesos) antes de considerarlo para un uso real.
 
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 - No consta soporte para agentes ni razonamiento multi-paso.
 - No se declaran capacidades multilingües ni idiomas concretos.
 - No se declara ningún modo especial (thinking mode, visión, audio, decodificación especulativa).
-- El pipeline de HuggingFace figura como no disponible, por lo que ni siquiera se puede confirmar que se trate de un modelo de generación de texto.
+- El pipeline de Hugging Face figura como no disponible, por lo que ni siquiera se puede confirmar que se trate de un modelo de generación de texto.
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No disponible. No es posible identificar alternativas comparables porque se desc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sbenjam1n/Chalcid
+- Hugging Face: https://huggingface.co/Sbenjam1n/Chalcid
 - Paper: no disponible
 - Blog o documentación técnica: no disponible
 - Repositorio de código: no disponible

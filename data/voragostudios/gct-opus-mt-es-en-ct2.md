@@ -6,7 +6,7 @@
 
 El modelo resuelve un problema muy concreto: la traducción automática de español a inglés en entornos de baja latencia y recursos limitados, como la traducción de chat en videojuegos. La combinación de una arquitectura transformer seq2seq compacta (la familia opus-mt de Helsinki-NLP) con la cuantización int8 y el runtime CTranslate2 está pensada para maximizar el throughput en CPU y GPU de gama baja, a costa de una pérdida de calidad presumiblemente pequeña pero no documentada en la ficha.
 
-Es relevante ahora porque los artefactos CTranslate2 son el formato estándar de despliegue eficiente para traducción neuronal en producción (usado por LibreTranslate, entre otros), y porque este repositorio concreto empaqueta tokenizador y pesos en un único directorio de 0,1 GB, lo que simplifica el despliegue en contenedores y sistemas embebidos. La información pública disponible es muy escasa: no hay métricas de calidad, ni detalles de entrenamiento propios, ni idiomas declarados en los metadatos de HuggingFace.
+Es relevante ahora porque los artefactos CTranslate2 son el formato estándar de despliegue eficiente para traducción neuronal en producción (usado por LibreTranslate, entre otros), y porque este repositorio concreto empaqueta tokenizador y pesos en un único directorio de 0,1 GB, lo que simplifica el despliegue en contenedores y sistemas embebidos. La información pública disponible es muy escasa: no hay métricas de calidad, ni detalles de entrenamiento propios, ni idiomas declarados en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ La comparación cuantitativa de calidad no es posible con la información dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-es-en-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-es-en-ct2
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-es-en
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/OPUS-MT
 - Corpus OPUS: https://opus.nlpl.eu/

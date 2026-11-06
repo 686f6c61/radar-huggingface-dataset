@@ -67,6 +67,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/svkuznetsov/multimodal-generation-analysis
+- Repositorio en Hugging Face: https://huggingface.co/svkuznetsov/multimodal-generation-analysis
 - Articulo relacionado sobre aceleracion de modelos multimodales (contexto general, no sobre este repositorio): https://arxiv.org/abs/2410.00215
 - Listado de modelos multimodales en 2026 (contexto general): https://blog.unitlab.ai/top-multimodal-models/

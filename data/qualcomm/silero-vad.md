@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Silero-VAD es un detector de actividad de voz (Voice Activity Detection, VAD) compacto y orientado a produccion, distribuido por Qualcomm en su HuggingFace como exportacion optimizada para dispositivos Snapdragon y Dragonwing. El modelo original procede del proyecto Silero-VAD de snakers4 (referencia arXiv 2108.10447), y esta version concreta incluye pesos ya exportados a ONNX, QNN_DLC y TFLITE, listos para ejecutarse sobre la NPU de los SoC de Qualcomm.
+Silero-VAD es un detector de actividad de voz (Voice Activity Detection, VAD) compacto y orientado a produccion, distribuido por Qualcomm en su Hugging Face como exportacion optimizada para dispositivos Snapdragon y Dragonwing. El modelo original procede del proyecto Silero-VAD de snakers4 (referencia arXiv 2108.10447), y esta version concreta incluye pesos ya exportados a ONNX, QNN_DLC y TFLITE, listos para ejecutarse sobre la NPU de los SoC de Qualcomm.
 
 Tecnicamente no es un modelo de lenguaje: es un clasificador de audio binario construido sobre una arquitectura LSTM que procesa tramas de 512 muestras (32 ms a 16 kHz) y devuelve una probabilidad de habla por trama. Con solo 0,24 millones de parametros y 2,27 MB en coma flotante, su interes reside en el coste computacional casi nulo y en la latencia de decenas de microsegundos, lo que lo hace apto para deteccion de voz en tiempo real en movil, PC con Snapdragon o dispositivos embebidos.
 
@@ -104,9 +104,9 @@ La informacion proporcionada solo incluye datos de este modelo, por lo que los v
 
 | Modelo | Enfoque | Parametros | Latencia publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Silero-VAD (qualcomm/Silero-VAD) | LSTM, 32 ms a 16 kHz, salida por trama | 0,24 M | 0,057 - 0,334 ms segun chipset (NPU) | MIT | HuggingFace, GitHub de Qualcomm AI Hub y ai-hub-models |
+| Silero-VAD (qualcomm/Silero-VAD) | LSTM, 32 ms a 16 kHz, salida por trama | 0,24 M | 0,057 - 0,334 ms segun chipset (NPU) | MIT | Hugging Face, GitHub de Qualcomm AI Hub y ai-hub-models |
 | WebRTC VAD | Deteccion clasica basada en GMM | no disponible | no disponible | no disponible en la informacion proporcionada | integrado en el stack WebRTC |
-| pyannote/segmentation-3.0 | Red neuronal de segmentacion de habla | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| pyannote/segmentation-3.0 | Red neuronal de segmentacion de habla | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Silero-VAD upstream (snakers4) | LSTM, misma base que este modelo | no disponible en la informacion proporcionada | no disponible | MIT (segun el repositorio enlazado) | GitHub y PyPI |
 
 No se dispone de comparaciones de precision entre estas alternativas dentro del material proporcionado.
@@ -126,7 +126,7 @@ No se dispone de comparaciones de precision entre estas alternativas dentro del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/Silero-VAD
+- Hugging Face: https://huggingface.co/qualcomm/Silero-VAD
 - Ficha en Qualcomm AI Hub: https://aihub.qualcomm.com/models/silero_vad
 - Repositorio del modelo en ai-hub-models (v0.64.0): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/silero_vad
 - Libreria Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

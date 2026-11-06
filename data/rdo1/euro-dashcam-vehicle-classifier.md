@@ -76,6 +76,6 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rdo1/euro-dashcam-vehicle-classifier
+- Hugging Face: https://huggingface.co/rdo1/euro-dashcam-vehicle-classifier
 - Dataset card (referenciada en la model card, no se proporciona URL directa)
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

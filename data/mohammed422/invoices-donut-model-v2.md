@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Mohammed422/invoices-donut-model-v2 es un modelo de comprensión de documentos publicado en HuggingFace por el usuario Mohammed422, orientado por su nombre y por el pipeline declarado (image-text-to-text) a la extracción de información estructurada a partir de imágenes de facturas. Con 202.091.960 parámetros (unos 202 M) y un repositorio de 1,6 GB en formato safetensors, se sitúa en la misma escala que los modelos de la familia Donut (encoder visual más decoder de tipo BART), aunque el autor no confirma la arquitectura base ni el procedimiento de entrenamiento.
+Mohammed422/invoices-donut-model-v2 es un modelo de comprensión de documentos publicado en Hugging Face por el usuario Mohammed422, orientado por su nombre y por el pipeline declarado (image-text-to-text) a la extracción de información estructurada a partir de imágenes de facturas. Con 202.091.960 parámetros (unos 202 M) y un repositorio de 1,6 GB en formato safetensors, se sitúa en la misma escala que los modelos de la familia Donut (encoder visual más decoder de tipo BART), aunque el autor no confirma la arquitectura base ni el procedimiento de entrenamiento.
 
 La relevancia de este tipo de modelos radica en que la digitalización de facturas sigue siendo uno de los cuellos de botella más costosos en los departamentos de cuentas por pagar: un modelo de ~200 M de parámetros se puede ejecutar en CPU o en cualquier GPU de consumo, algo inviable con modelos de visión-lenguaje multimodales de miles de millones de parámetros.
 
-Ahora bien, la información disponible es mínima y debe interpretarse con cautela. La model card es la plantilla automática de HuggingFace sin rellenar, no declara licencia ni idiomas, no incluye métricas de evaluación y el repositorio acumula 0 descargas y 0 likes. Cualquier evaluación de idoneidad para producción exige, por tanto, validar el modelo con datos propios antes de usarlo.
+Ahora bien, la información disponible es mínima y debe interpretarse con cautela. La model card es la plantilla automática de Hugging Face sin rellenar, no declara licencia ni idiomas, no incluye métricas de evaluación y el repositorio acumula 0 descargas y 0 likes. Cualquier evaluación de idoneidad para producción exige, por tanto, validar el modelo con datos propios antes de usarlo.
 
 ## Especificaciones técnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: del orden de 1-2 GB con fp16 incluyendo activaciones y picos de memoria para imágenes de resolución moderada (estimación propia, no confirmada por el autor, ya que se desconoce la resolución de entrada configurada).
 - GPU recomendadas: cualquier GPU con 4 GB o más; por ejemplo GTX 1650, RTX 3050, RTX 3060, RTX 4090, A10, L4. También cabe en CPU para volúmenes moderados.
 - Cabe en GPU de consumo: sí, con holgura, en cualquiera con al menos 4 GB de VRAM, e incluso en modo solo CPU.
-- Opciones de despliegue: transformers (PyTorch) como vía principal; el tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints; es posible exportar a ONNX mediante Optimum. El soporte en vLLM para arquitecturas vision-encoder-decoder es limitado y debe comprobarse. No hay versiones GGUF publicadas, por lo que Ollama y llama.cpp no están disponibles sin una conversión previa no trivial para este tipo de arquitectura.
+- Opciones de despliegue: transformers (PyTorch) como vía principal; el tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints; es posible exportar a ONNX mediante Optimum. El soporte en vLLM para arquitecturas vision-encoder-decoder es limitado y debe comprobarse. No hay versiones GGUF publicadas, por lo que Ollama y llama.cpp no están disponibles sin una conversión previa no trivial para este tipo de arquitectura.
 - Latencia y throughput estimados: no disponibles, no se han publicado mediciones.
 - El tamaño del repositorio (1,6 GB) duplica aproximadamente el peso teórico de los parámetros en fp32, lo que sugiere ficheros duplicados o copias en distinto formato; no está confirmado.
 
@@ -100,7 +100,7 @@ Frente a Donut-base, este modelo no aporta información que permita determinar s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohammed422/invoices-donut-model-v2
+- Modelo en Hugging Face: https://huggingface.co/Mohammed422/invoices-donut-model-v2
 - Perfil del autor: https://huggingface.co/Mohammed422
 - Artículo citado en la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, estimación de emisiones; citado en la plantilla automática, no es la referencia técnica del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto asociada a esa referencia: https://mlco2.github.io/impact

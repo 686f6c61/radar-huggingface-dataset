@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Javo3000/gemma-3-4b-african-medical-ocr` es un ajuste multimodal publicado en HuggingFace, derivado de Gemma 3 4B y orientado a la transcripción (OCR) de registros médicos manuscritos procedentes de contextos africanos, en particular del dataset `Nigeria-Health-data-OCR-pipeline/African-Medical-Records`. El repositorio se distribuye en formato GGUF y su model card consiste fundamentalmente en un informe de evaluación sobre 57 muestras ejecutadas en una NVIDIA H200, más que en una descripción de entrenamiento.
+`Javo3000/gemma-3-4b-african-medical-ocr` es un ajuste multimodal publicado en Hugging Face, derivado de Gemma 3 4B y orientado a la transcripción (OCR) de registros médicos manuscritos procedentes de contextos africanos, en particular del dataset `Nigeria-Health-data-OCR-pipeline/African-Medical-Records`. El repositorio se distribuye en formato GGUF y su model card consiste fundamentalmente en un informe de evaluación sobre 57 muestras ejecutadas en una NVIDIA H200, más que en una descripción de entrenamiento.
 
 El modelo hereda la arquitectura de Gemma 3 (transformer decoder-only con capacidad multimodal en la variante de 4B) y cuenta con 3.880.263.168 parámetros, lo que lo sitúa en la gama de modelos pequeños desplegables en una sola GPU. Su relevancia es acotada pero específica: aborda un nicho poco cubierto (digitalización de historiales clínicos manuscritos en entornos con recursos limitados), aunque los propios números reportados por el autor revelan tasas de error elevadas que lo alejan del uso clínico directo sin supervisión.
 
@@ -82,9 +82,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-3-4b-african-medical-ocr | ~3,88 B | No disponible (base: 128K) | OCR médico especializado (ajuste) | No disponible | HuggingFace (GGUF) |
-| google/gemma-3-4b-it | 4 B | 128K tokens | Multimodal general e instrucciones | Gemma Terms of Use | HuggingFace |
-| MedGemma 4B | 4 B | No disponible | Multimodal médico (texto e imagen) | Gemma / uso médico | HuggingFace y DeepMind |
+| gemma-3-4b-african-medical-ocr | ~3,88 B | No disponible (base: 128K) | OCR médico especializado (ajuste) | No disponible | Hugging Face (GGUF) |
+| google/gemma-3-4b-it | 4 B | 128K tokens | Multimodal general e instrucciones | Gemma Terms of Use | Hugging Face |
+| MedGemma 4B | 4 B | No disponible | Multimodal médico (texto e imagen) | Gemma / uso médico | Hugging Face y DeepMind |
 
 Los datos de rendimiento comparativos entre estos modelos no están disponibles en la información proporcionada.
 
@@ -103,7 +103,7 @@ Los datos de rendimiento comparativos entre estos modelos no están disponibles 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Javo3000/gemma-3-4b-african-medical-ocr
+- Modelo en Hugging Face: https://huggingface.co/Javo3000/gemma-3-4b-african-medical-ocr
 - Gemma 3 4B IT (base): https://huggingface.co/google/gemma-3-4b-it
 - Repositorio Gemma 3 en GitHub: https://github.com/gemma-3/gemma-3
 - MedGemma (Google DeepMind): https://deepmind.google/models/gemma/medgemma/

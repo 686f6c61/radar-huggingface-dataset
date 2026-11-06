@@ -31,7 +31,7 @@ La model card no detalla el volumen de datos de entrenamiento, la composicion de
 
 - Deteccion de actividad de voz (VAD) por tramas de 16 ms sobre audio mono float32 a 16 kHz.
 - Procesamiento en streaming con estado recurrente, buffering y marcas de tiempo gestionados por la API.
-- Clasificacion de audio (pipeline `audio-classification` en HuggingFace).
+- Clasificacion de audio (pipeline `audio-classification` en Hugging Face).
 - Inferencia en CPU sin runtime de PyTorch ni ONNX, mediante el motor Rust incluido en el paquete `akiki`.
 - Seleccion de precision en tiempo de ejecucion (`model_precision="int8"`, `fft_precision="fp32"`).
 - Carga directa de safetensors mediante el motor Rust (`akiki_vad_engine::Weights::load`) o a traves de la ABI de C.
@@ -102,7 +102,7 @@ Los datos de parametros, contexto y licencia de TEN-VAD y Silero v5 no aparecen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akiki-AI/akiki-vad-1.0-int8
+- Modelo en Hugging Face: https://huggingface.co/Akiki-AI/akiki-vad-1.0-int8
 - Modelo base: https://huggingface.co/Akiki-AI/akiki-vad-1.0
 - Esquema del formato: FORMAT.md (referenciado en el repositorio)
 - Datos de benchmark: assets/benchmark-data.json (referenciado en el repositorio)

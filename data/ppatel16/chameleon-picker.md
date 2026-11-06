@@ -65,7 +65,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Chameleon layout picker | 78 pesos | no aplica | MIT | HuggingFace |
+| Chameleon layout picker | 78 pesos | no aplica | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ppatel16/chameleon-picker
+- Hugging Face: https://huggingface.co/ppatel16/chameleon-picker
 - Repositorio de codigo con `data/refs/` y `tools.learn_regress`: no disponible en la informacion proporcionada
 - Paper o blog del proyecto Chameleon Engine: no disponible en la informacion proporcionada
 - Demo: no disponible en la informacion proporcionada

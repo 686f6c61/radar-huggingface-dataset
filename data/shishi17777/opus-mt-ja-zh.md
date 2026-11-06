@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shishi17777/opus-mt-ja-zh` es un sistema de traducción automática neuronal especializado en el par de idiomas japonés (ja) a chino (zh). Está basado en la arquitectura MarianMT, un transformer encoder-decoder desarrollado originalmente por el equipo de Marian NMT en el marco del proyecto OPUS, y publicado bajo licencia Apache 2.0. El autor de esta versión concreta es `shishi17777`, que ha subido el modelo a HuggingFace con un tamaño de repositorio de 0,6 GB.
+El modelo `shishi17777/opus-mt-ja-zh` es un sistema de traducción automática neuronal especializado en el par de idiomas japonés (ja) a chino (zh). Está basado en la arquitectura MarianMT, un transformer encoder-decoder desarrollado originalmente por el equipo de Marian NMT en el marco del proyecto OPUS, y publicado bajo licencia Apache 2.0. El autor de esta versión concreta es `shishi17777`, que ha subido el modelo a Hugging Face con un tamaño de repositorio de 0,6 GB.
 
 El modelo resuelve la tarea de traducción directa entre dos lenguas asiáticas de alta demanda, sin necesidad de pasar por un idioma puente como el inglés. Su relevancia actual radica en que ofrece una opción ligera y de código abierto para integrar traducción ja-zh en aplicaciones de procesamiento de lenguaje natural, con un coste de inferencia moderado. No se dispone de información pública sobre el número exacto de parámetros, la longitud de contexto o los datos de entrenamiento, más allá de que sigue la arquitectura Marian estándar.
 
@@ -27,7 +27,7 @@ MarianMT es una implementación de la arquitectura transformer original (encoder
 
 - Traducción automática de japonés a chino, con soporte para textos de longitud moderada (el ejemplo de uso trunca a 256 tokens).
 - Generación de texto traducido mediante decodificación autoregresiva con `model.generate()`.
-- Integración sencilla con la librería `transformers` de HuggingFace, tanto para carga del modelo como del tokenizador.
+- Integración sencilla con la librería `transformers` de Hugging Face, tanto para carga del modelo como del tokenizador.
 - No se ha documentado soporte para tool calling, agentes, razonamiento multi-paso, visión o audio. Es un modelo puramente de traducción.
 
 ## Casos de uso
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shishi17777/opus-mt-ja-zh
+- Repositorio en Hugging Face: https://huggingface.co/shishi17777/opus-mt-ja-zh
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la búsqueda web.

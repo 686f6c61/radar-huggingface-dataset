@@ -93,11 +93,11 @@ La unica comparacion posible con los datos disponibles es entre variantes de pes
 - Dependencia de memoria externa: en la configuracion probada, 47 capas descargan expertos a CPU y se usa mmap, de modo que el rendimiento depende criticamente de la velocidad del subsistema de memoria y del almacenamiento. Un disco lento degradara la latencia de forma acusada.
 - Concurrencia limitada: la configuracion recomendada usa -np 1, es decir, una sola ranura de procesamiento. No esta pensada para servir cargas con muchas peticiones simultaneas.
 - Cifras de rendimiento ausentes: sin datos de tokens por segundo, latencia de primer token ni consumo energetico, la planificacion de capacidad en produccion es especulativa.
-- Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado ni idiomas etiquetados en HuggingFace. Se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+- Madurez del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado ni idiomas etiquetados en Hugging Face. Se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 - Interpretacion de arquitectura: los detalles de arquitectura de esta ficha se derivan de los nombres de tensores de la receta de cuantizacion y no estan confirmados por el autor del modelo original.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cmh/Qwen3.8-Flash-Next-5.33bpw-PLEQ8_0
+- Repositorio en Hugging Face: https://huggingface.co/cmh/Qwen3.8-Flash-Next-5.33bpw-PLEQ8_0
 - Archivo imatrix de referencia: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF/blob/main/imatrix_unsloth.gguf_file
 - Repositorio GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF

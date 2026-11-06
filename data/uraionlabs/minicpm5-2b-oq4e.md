@@ -119,7 +119,7 @@ Dentro de la propia familia de cuantizaciones publicadas por Uraion Labs, la var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/MiniCPM5-2B-oQ4e
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Runtime oMLX: https://github.com/jundot/omlx
 - Runtime mlx-lm: https://github.com/ml-explore/mlx-examples/tree/main/llms/mlx_lm

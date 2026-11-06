@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario saddaasf bajo licencia MIT. El repositorio se anuncia con la libreria transformers y las etiquetas incluyen `bert`, `pytorch` y `feature-extraction`, lo que sugiere un modelo encoder orientado a extraccion de caracteristicas. Sin embargo, la model card describe un modelo generativo de razonamiento con mejoras en matematicas, programacion y logica, lo que constituye una contradiccion relevante entre los metadatos del repositorio y el contenido declarado.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario saddaasf bajo licencia MIT. El repositorio se anuncia con la libreria transformers y las etiquetas incluyen `bert`, `pytorch` y `feature-extraction`, lo que sugiere un modelo encoder orientado a extraccion de caracteristicas. Sin embargo, la model card describe un modelo generativo de razonamiento con mejoras en matematicas, programacion y logica, lo que constituye una contradiccion relevante entre los metadatos del repositorio y el contenido declarado.
 
 La model card afirma que esta version mejora su profundidad de razonamiento respecto a una version previa, pasando de un 70 % a un 87,5 % de acierto en AIME 2025, con un aumento del consumo medio de tokens por pregunta de 12K a 23K. Tambien menciona una reduccion de la tasa de alucinacion y mejor soporte de function calling. Existe un checkpoint seleccionado (`step_1000`) con una puntuacion global ponderada de 0,710.
 
@@ -79,7 +79,7 @@ Puntuacion global ponderada declarada para el mejor checkpoint (`step_1000`): 0,
 - VRAM estimada: no disponible. Sin conocer el numero de parametros ni la arquitectura no es posible calcular requisitos de memoria de inferencia.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. No se puede confirmar si cabe en tarjetas como RTX 4090, RTX 3090 u otras sin datos de tamano.
-- Opciones de despliegue: la libreria declarada es `transformers` y el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la libreria declarada es `transformers` y el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Formato de pesos: no disponible, por lo que no se puede confirmar soporte GGUF/AWQ/GPTQ.
 - Latencia y throughput: no disponible. La model card indica un consumo medio de 23K tokens de razonamiento por pregunta en AIME, lo que implica latencias altas en modo thinking, pero sin cifras de throughput por hardware.
 - Parametros de generacion recomendados por el autor: temperatura 0,6.
@@ -90,7 +90,7 @@ No es posible establecer una comparativa rigurosa con alternativas porque la ide
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyAwesomeModel | no disponible | no disponible | 0,710 global (declarado) | MIT | HuggingFace, 0 descargas |
+| MyAwesomeModel | no disponible | no disponible | 0,710 global (declarado) | MIT | Hugging Face, 0 descargas |
 | Model1 | no disponible | no disponible | valores en tabla | no disponible | no disponible |
 | Model2 | no disponible | no disponible | valores en tabla | no disponible | no disponible |
 | Model1-v2 | no disponible | no disponible | valores en tabla | no disponible | no disponible |
@@ -111,7 +111,7 @@ No disponible: comparacion con modelos publicos de referencia por ausencia de da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saddaasf/my-awesome-model
+- Hugging Face: https://huggingface.co/saddaasf/my-awesome-model
 - Repositorio de codigo del autor: no disponible (la model card menciona "our code repository" sin enlace)
 - Sitio web de chat y API oficial: no disponible (la model card menciona "our official website" sin enlace)
 - Paper o informe tecnico: no disponible

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este checkpoint es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario CharlieH512 en HuggingFace bajo el identificador `qwen3.5-4b-omni-stage4-plaicraft-bc-step75k`. El nombre sugiere que se trata de la etapa 4 de un pipeline de entrenamiento orientado a un agente encarnado ("embodied-agent") en el entorno de Minecraft, con datos de comportamiento clonado ("bc", probablemente behaviour cloning) en el paso 75k. Los tags confirman esta orientación: `minecraft`, `full-duplex`, `speech-to-speech`, `embodied-agent` y `keyboard-mouse`, lo que indica un modelo multimodal que procesa audio de forma full-duplex y emite acciones de teclado y raton.
+Este checkpoint es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-4B, publicado por el usuario CharlieH512 en Hugging Face bajo el identificador `qwen3.5-4b-omni-stage4-plaicraft-bc-step75k`. El nombre sugiere que se trata de la etapa 4 de un pipeline de entrenamiento orientado a un agente encarnado ("embodied-agent") en el entorno de Minecraft, con datos de comportamiento clonado ("bc", probablemente behaviour cloning) en el paso 75k. Los tags confirman esta orientación: `minecraft`, `full-duplex`, `speech-to-speech`, `embodied-agent` y `keyboard-mouse`, lo que indica un modelo multimodal que procesa audio de forma full-duplex y emite acciones de teclado y raton.
 
 El modelo parte de la familia Qwen3.5, de la que el autor toma la variante de 4B parametros como base. El repositorio ocupa 14,1 GB en formato safetensors, lo que es coherente con un modelo de aproximadamente 4 mil millones de parametros en precision bf16/fp16 y con pesos adicionales para las cabeceras multimodales (audio y acciones). Se distribuye como checkpoint de investigacion (`research-checkpoint`) y no como modelo listo para produccion.
 
-La relevancia de este checkpoint es acotada pero especifica: documenta un experimento de agente encarnado que combina percepcion de audio en tiempo real, razonamiento y emision de acciones de control de videojuego. No hay informacion publica sobre su rendimiento, composicion del dataset ni proceso de entrenamiento mas alla de los metadatos del repositorio, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de descargarlo.
+La relevancia de este checkpoint es acotada pero especifica: documenta un experimento de agente encarnado que combina percepcion de audio en tiempo real, razonamiento y emision de acciones de control de videojuego. No hay informacion publica sobre su rendimiento, composicion del dataset ni proceso de entrenamiento mas alla de los metadatos del repositorio, y el acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia de este checkpoint es acotada pero especifica: documenta un experi
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repo contiene safetensors; no se listan variantes GGUF/AWQ/GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | "other" / "not-yet-chosen" (licencia sin decidir; acceso restringido con condiciones en HuggingFace) |
+| Licencia | "other" / "not-yet-chosen" (licencia sin decidir; acceso restringido con condiciones en Hugging Face) |
 | Formato de pesos | safetensors (libreria declarada: vllm) |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CharlieH512/qwen3.5-4b-omni-stage4-plaicraft-bc-step75k | 4B | no disponible | no disponible | other / not-yet-chosen | gated en HuggingFace |
+| CharlieH512/qwen3.5-4b-omni-stage4-plaicraft-bc-step75k | 4B | no disponible | no disponible | other / not-yet-chosen | gated en Hugging Face |
 | Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible | segun Qwen (no detallada aqui) | publico |
 | Otros checkpoints de agentes encarnados en Minecraft | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -76,12 +76,12 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 - Riesgo de alucinacion: no evaluado; en un agente encarnado, errores de percepcion o de politica pueden traducirse en acciones incoherentes en el entorno.
 - Limitaciones de contexto o idioma: no disponibles; no se especifican longitud de contexto ni idiomas soportados.
 - Restricciones de licencia: la licencia figura como "other" y "not-yet-chosen", lo que implica que los terminos de uso comercial no estan definidos; no debe asumirse uso comercial libre.
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace, lo que limita su redistribucion y uso automatizado.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face, lo que limita su redistribucion y uso automatizado.
 - Checkpoint de investigacion: etiquetado explicitamente como `research-checkpoint`, sin garantias de estabilidad, calidad ni soporte para produccion.
 - Ausencia de datos de entrenamiento: sin informacion sobre dataset, numero de tokens o metodos de alineacion, la reproducibilidad y la evaluacion rigurosa no son posibles a partir de la informacion publicada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CharlieH512/qwen3.5-4b-omni-stage4-plaicraft-bc-step75k
+- Hugging Face: https://huggingface.co/CharlieH512/qwen3.5-4b-omni-stage4-plaicraft-bc-step75k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Papers, blogs, repos o demos adicionales: no disponible en la informacion proporcionada.

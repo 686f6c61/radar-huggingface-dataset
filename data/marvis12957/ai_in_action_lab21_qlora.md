@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks estándar como MMLU, HumanEval o GS
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ai_in_action_lab21_qlora` (este) | Adaptador QLoRA 4-bit sobre Qwen3.5-4B | 4B (base) | No disponible | Apache 2.0 | HuggingFace |
-| `ai_in_action_lab21` (run 16-bit) | Adaptador LoRA 16-bit sobre Qwen3.5-4B | 4B (base) | No disponible | Apache 2.0 | HuggingFace |
+| `ai_in_action_lab21_qlora` (este) | Adaptador QLoRA 4-bit sobre Qwen3.5-4B | 4B (base) | No disponible | Apache 2.0 | Hugging Face |
+| `ai_in_action_lab21` (run 16-bit) | Adaptador LoRA 16-bit sobre Qwen3.5-4B | 4B (base) | No disponible | Apache 2.0 | Hugging Face |
 | Guanaco (del paper QLoRA) | Modelo completo fine-tuneado con QLoRA | 7B-65B | 2048 | No comercial | GitHub |
 
 La comparación directa más relevante es con el run 16-bit del mismo autor, que muestra una accuracy superior (0.965 vs 0.940) y menor latencia, a costa de un 41% más de VRAM durante el entrenamiento.
@@ -84,7 +84,7 @@ La comparación directa más relevante es con el run 16-bit del mismo autor, que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marvis12957/ai_in_action_lab21_qlora
+- Hugging Face: https://huggingface.co/Marvis12957/ai_in_action_lab21_qlora
 - Paper QLoRA: https://arxiv.org/abs/2305.14314
 - Repositorio QLoRA: https://github.com/artidoro/qlora
 - Blog del curso AI in Action (referencia del laboratorio): https://mikenguyen13.github.io/ai_in_action/703-parameter-efficient-finetuning-lora.html

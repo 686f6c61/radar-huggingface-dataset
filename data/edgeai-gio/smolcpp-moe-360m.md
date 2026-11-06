@@ -110,7 +110,7 @@ No se han aportado datos comparativos en la informacion disponible. La unica ref
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Edgeai-gio/SmolCpp-MoE-360M
+- Modelo en Hugging Face: https://huggingface.co/Edgeai-gio/SmolCpp-MoE-360M
 - Modelo base SmolLM2-360M: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
 - mergekit (incluye mergekit-moe): https://github.com/arcee-ai/mergekit
 - llama.cpp: https://github.com/ggml-org/llama.cpp

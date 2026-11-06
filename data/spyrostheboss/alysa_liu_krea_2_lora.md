@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/spyrostheboss/Alysa_Liu_Krea_2_LoRA)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/spyrostheboss/Alysa_Liu_Krea_2_LoRA)
 - [Colección de LoRAs de Krea 2 en Hugging Face](https://huggingface.co/collections/krea/krea-2-loras)
 - [Sitio web de Krea](https://www.krea.ai/)
 - [Ejemplo de LoRA de Krea 2 Turbo en Civitai](https://civitai.com/models/2727641/krea-2-turbo-lora-256dim)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OptiLife es un ajuste fino (finetune) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario mrn00x en HuggingFace. El modelo parte de la version cuantizada a 4 bits en formato bitsandbytes (bnb-4bit) de unsloth/Meta-Llama-3.1-8B-Instruct, y ha sido entrenado con la libreria Unsloth, que segun el autor permite un entrenamiento "2x mas rapido". La model card es extremadamente escueta: no detalla el dataset de ajuste fino, el objetivo concreto del entrenamiento ni los hiperparametros utilizados.
+OptiLife es un ajuste fino (finetune) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario mrn00x en Hugging Face. El modelo parte de la version cuantizada a 4 bits en formato bitsandbytes (bnb-4bit) de unsloth/Meta-Llama-3.1-8B-Instruct, y ha sido entrenado con la libreria Unsloth, que segun el autor permite un entrenamiento "2x mas rapido". La model card es extremadamente escueta: no detalla el dataset de ajuste fino, el objetivo concreto del entrenamiento ni los hiperparametros utilizados.
 
 Por herencia del modelo base, se trata de un transformer decoder-only de 8.000 millones de parametros, con una ventana de contexto de 128.000 tokens (caracteristica de la familia Llama 3.1) y entrenamiento original en ocho idiomas, aunque la model card declara unicamente ingles como idioma soportado. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales mas alla de las condiciones de la propia licencia.
 
@@ -19,7 +19,7 @@ El interes practico de este modelo es limitado y debe evaluarse con cautela: tie
 | Tipos de cuantizacion | 4 bits bitsandbytes (bnb-4bit) en el modelo base; repo de 0,2 GB sugiere pesos cuantizados, pero no se detalla el formato exacto |
 | Idiomas soportados | en (segun la model card; el base Llama 3.1 soporta oficialmente 8 idiomas) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace); repo de 0,2 GB |
+| Formato de pesos | safetensors (segun tags de Hugging Face); repo de 0,2 GB |
 
 ## Arquitectura y entrenamiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| mrn00x/optilife | 8B | 128k (heredado) | Apache 2.0 | no | HuggingFace, 0 descargas |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | si (MMLU, HumanEval, etc.) | HuggingFace, ampliamente usado |
-| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8B | 128k | Apache 2.0 (derivado) | no (checkpoint cuantizado del oficial) | HuggingFace, ampliamente usado |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | si | HuggingFace, ampliamente usado |
+| mrn00x/optilife | 8B | 128k (heredado) | Apache 2.0 | no | Hugging Face, 0 descargas |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | si (MMLU, HumanEval, etc.) | Hugging Face, ampliamente usado |
+| unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit | 8B | 128k | Apache 2.0 (derivado) | no (checkpoint cuantizado del oficial) | Hugging Face, ampliamente usado |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | si | Hugging Face, ampliamente usado |
 
 La comparativa muestra que OptiLife no aporta ventajas documentadas frente al Instruct oficial ni frente al checkpoint cuantizado de Unsloth del que deriva; su unico diferencial es un finetune no documentado.
 
@@ -82,9 +82,9 @@ La comparativa muestra que OptiLife no aporta ventajas documentadas frente al In
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrn00x/optilife
-- Modelo base (HuggingFace): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+- Hugging Face: https://huggingface.co/mrn00x/optilife
+- Modelo base (Hugging Face): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- Meta Llama 3.1 (HuggingFace): https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
+- Meta Llama 3.1 (Hugging Face): https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - TRL (GitHub): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, repos ni demos adicionales en la informacion disponible.

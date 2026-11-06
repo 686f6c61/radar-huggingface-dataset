@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shuhant/foundation-action-pareto-b-209m-dino` es un modelo alojado en HuggingFace por el usuario `shuhant`, etiquetado con las categorias `foundation-action`, `world-model`, `pareto` y `dino`. El dato verificable principal es su tamano: 210.036.736 parametros (210 M) almacenados en formato safetensors, con un repositorio de 0,8 GB. Los pesos se distribuyen bajo libreria PyTorch y el acceso es restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+`shuhant/foundation-action-pareto-b-209m-dino` es un modelo alojado en Hugging Face por el usuario `shuhant`, etiquetado con las categorias `foundation-action`, `world-model`, `pareto` y `dino`. El dato verificable principal es su tamano: 210.036.736 parametros (210 M) almacenados en formato safetensors, con un repositorio de 0,8 GB. Los pesos se distribuyen bajo libreria PyTorch y el acceso es restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La relevancia del modelo radica en su doble naturaleza: por un lado, las etiquetas `foundation-action` y `world-model` apuntan a un modelo de accion o de mundo orientado a control y planificacion; por otro, el sufijo `dino` sugiere el uso de un backbone visual de tipo DINO (self-distillation with no labels), la familia de Vision Transformers auto-supervisados popularizada por Meta AI para extraccion de caracteristicas visuales de proposito general. La etiqueta `pareto` podria indicar un entrenamiento o seleccion multiobjetivo segun un frente de Pareto, aunque esto no se confirma en la informacion disponible.
 
@@ -63,13 +63,13 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Riesgo de alucinacion: no evaluable sin conocer la tarea y la modalidad del modelo.
 - Limitaciones de contexto o idioma: se desconoce la longitud de contexto y los idiomas soportados.
 - Restriccion de licencia: la licencia `nvidia-internal-research` limita el uso a investigacion interna y excluye el uso comercial abierto; conviene revisar los terminos completos antes de cualquier despliegue.
-- Acceso restringido: el repositorio esta en modo gated y requiere aceptar condiciones en HuggingFace, lo que anade una dependencia de aprobacion por parte del autor.
+- Acceso restringido: el repositorio esta en modo gated y requiere aceptar condiciones en Hugging Face, lo que anade una dependencia de aprobacion por parte del autor.
 - Ausencia de documentacion publica: no se ha localizado model card, paper ni blog asociado en la busqueda realizada, lo que impide verificar capacidades, rendimiento y requisitos reales.
 - Madurez: el repositorio no registra descargas ni likes, por lo que no hay evidencia de adopcion ni de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuhant/foundation-action-pareto-b-209m-dino
+- Modelo en Hugging Face: https://huggingface.co/shuhant/foundation-action-pareto-b-209m-dino
 - Repositorio relacionado del mismo autor: https://huggingface.co/shuhant/foundational_action
 - Articulo sobre DINO como modelo fundacional de vision: https://towardsdatascience.com/dino-a-foundation-model-for-computer-vision-4cb08e821b18/
 - Version en Medium del mismo articulo: https://medium.com/data-science/dino-a-foundation-model-for-computer-vision-4cb08e821b18

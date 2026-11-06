@@ -4,7 +4,7 @@
 
 Krea-2-Turbo es un modelo de generación de imágenes a partir de texto (text-to-image) desarrollado por Krea, una empresa especializada en herramientas creativas con IA. Se presenta como un fine-tune del modelo base Krea-2-Raw, utilizando un pipeline personalizado denominado `Krea2Pipeline` dentro del ecosistema de Diffusers. El modelo se distribuye en formato safetensors y está pensado para su integración en flujos de trabajo de generación de imágenes.
 
-A pesar de su reciente publicación (junio de 2026), ha acumulado más de 87.000 descargas y 854 likes en HuggingFace, lo que sugiere una adopción temprana significativa. La licencia es una variante comunitaria personalizada (`krea-2-community-license`), lo que implica restricciones específicas que deben revisarse antes de su uso comercial. No se dispone de información pública sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados en la ficha de HuggingFace consultada.
+A pesar de su reciente publicación (junio de 2026), ha acumulado más de 87.000 descargas y 854 likes en Hugging Face, lo que sugiere una adopción temprana significativa. La licencia es una variante comunitaria personalizada (`krea-2-community-license`), lo que implica restricciones específicas que deben revisarse antes de su uso comercial. No se dispone de información pública sobre arquitectura, número de parámetros, longitud de contexto ni idiomas soportados en la ficha de Hugging Face consultada.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ A pesar de su reciente publicación (junio de 2026), ha acumulado más de 87.000
 
 ## Arquitectura y entrenamiento
 
-La información disponible en HuggingFace no detalla la arquitectura interna del modelo. Los tags indican que se basa en `krea/Krea-2-Raw` como modelo base y que es un fine-tune de este. Se integra con Diffusers mediante un pipeline personalizado (`Krea2Pipeline`), lo que sugiere que sigue el paradigma de los modelos de difusión para generación de imágenes, pero no se especifica si es un transformer de difusión, un modelo U-Net, o una arquitectura híbrida.
+La información disponible en Hugging Face no detalla la arquitectura interna del modelo. Los tags indican que se basa en `krea/Krea-2-Raw` como modelo base y que es un fine-tune de este. Se integra con Diffusers mediante un pipeline personalizado (`Krea2Pipeline`), lo que sugiere que sigue el paradigma de los modelos de difusión para generación de imágenes, pero no se especifica si es un transformer de difusión, un modelo U-Net, o una arquitectura híbrida.
 
 Tampoco se proporcionan datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. No hay información sobre innovaciones técnicas específicas como decodificación especulativa o atención lineal. Se recomienda consultar la documentación oficial de Krea o el repositorio del modelo base para obtener detalles adicionales.
 
@@ -30,7 +30,7 @@ Tampoco se proporcionan datos sobre el dataset de entrenamiento, el número de t
 - Generación de imágenes a partir de descripciones textuales (text-to-image), según el pipeline declarado.
 - Integración con el ecosistema Diffusers, lo que permite su uso con herramientas estándar de la comunidad.
 - Formato safetensors, compatible con cargas seguras y eficientes en memoria.
-- No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión multimodal o modo de pensamiento. Estas capacidades no están documentadas en la ficha de HuggingFace.
+- No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión multimodal o modo de pensamiento. Estas capacidades no están documentadas en la ficha de Hugging Face.
 
 ## Casos de uso
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware en la ficha de HuggingFace. No se especifican VRAM estimada, GPUs recomendadas, ni opciones de despliegue. Dado que es un modelo de difusión, es probable que requiera una GPU con al menos 8-12 GB de VRAM para inferencia en FP16, pero esto es una estimación no confirmada. Se recomienda consultar la documentación oficial de Krea o probar el modelo en entornos como Google Colab o servicios de inferencia gestionada.
+No se dispone de información sobre requisitos de hardware en la ficha de Hugging Face. No se especifican VRAM estimada, GPUs recomendadas, ni opciones de despliegue. Dado que es un modelo de difusión, es probable que requiera una GPU con al menos 8-12 GB de VRAM para inferencia en FP16, pero esto es una estimación no confirmada. Se recomienda consultar la documentación oficial de Krea o probar el modelo en entornos como Google Colab o servicios de inferencia gestionada.
 
 ## Comparativa con modelos similares
 
@@ -65,5 +65,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- [HuggingFace: krea/Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)
+- [Hugging Face: krea/Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)
 - [Modelo base: krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw) (referenciado en los tags, no se ha verificado su contenido)

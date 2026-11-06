@@ -82,10 +82,10 @@ No se dispone de datos de benchmarks que permitan comparar Julia-1 con otros mod
 
 | Modelo | Formato / runtime | Tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| litert-community/Julia-1-LiteRT (este) | TFLite / LiteRT (Android GPU, CPU escritorio) | ~416 MB (S512, con tabla de tokens) | 512 y 1.024 tokens | Apache 2.0 | HuggingFace, litert-community |
-| SupersonicLabs/Julia-1-ONNX | ONNX / WebGPU | no disponible | no disponible | Apache 2.0 | HuggingFace, autor |
-| zainmerchan/Julia-1-MLX | MLX (Apple Silicon) | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| andrelucas/Julia-1-GGUF | GGUF / llama.cpp | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| litert-community/Julia-1-LiteRT (este) | TFLite / LiteRT (Android GPU, CPU escritorio) | ~416 MB (S512, con tabla de tokens) | 512 y 1.024 tokens | Apache 2.0 | Hugging Face, litert-community |
+| SupersonicLabs/Julia-1-ONNX | ONNX / WebGPU | no disponible | no disponible | Apache 2.0 | Hugging Face, autor |
+| zainmerchan/Julia-1-MLX | MLX (Apple Silicon) | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| andrelucas/Julia-1-GGUF | GGUF / llama.cpp | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 Alternativas de terceros de la misma tarea (clasificacion/enrutamiento compacto): no disponible.
 
@@ -104,7 +104,7 @@ Alternativas de terceros de la misma tarea (clasificacion/enrutamiento compacto)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Julia-1-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Julia-1-LiteRT
 - Modelo base: https://huggingface.co/SupersonicLabs/Julia-1
 - Exportacion ONNX del autor: https://huggingface.co/SupersonicLabs/Julia-1-ONNX
 - Exportacion MLX: https://huggingface.co/zainmerchan/Julia-1-MLX
@@ -112,5 +112,5 @@ Alternativas de terceros de la misma tarea (clasificacion/enrutamiento compacto)
 - Pagina de investigacion de Julia 1 (Supersonic Labs): https://supersoniclabs.ia.br/julia-1/
 - Repositorio de LiteRT: https://github.com/google-ai-edge/litert
 - Documentacion de LiteRT (Google): https://developers.google.com/edge/litert
-- Organizacion LiteRT Community en HuggingFace: https://huggingface.co/litert-community
+- Organizacion LiteRT Community en Hugging Face: https://huggingface.co/litert-community
 - Colecciones de LiteRT Community: https://huggingface.co/litert-community/collections

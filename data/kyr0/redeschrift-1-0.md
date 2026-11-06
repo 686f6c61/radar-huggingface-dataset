@@ -72,16 +72,16 @@ No se dispone de comparativas publicadas con modelos similares en la informació
 ## Limitaciones y advertencias
 
 - Modelo en desarrollo (WIP): la V1 no es una versión estable; el autor indica que continuará el fine-tuning y que se añadirán dialectos en V2.
-- Licencia no especificada: aunque el autor declara que el modelo puede usarse de forma gratuita y comercial, no hay una licencia formal en el repositorio de HuggingFace, lo que puede suponer un riesgo legal para su uso en producción.
+- Licencia no especificada: aunque el autor declara que el modelo puede usarse de forma gratuita y comercial, no hay una licencia formal en el repositorio de Hugging Face, lo que puede suponer un riesgo legal para su uso en producción.
 - Sin evaluaciones independientes: los datos de WER y RTF provienen del autor y no han sido verificados por terceros.
 - WER de 3,6% en alto alemán: puede degradarse con ruido, acentos o habla no nativa; los dialectos no están soportados hasta V2.
 - Dependencia de la app Redeschrift para obtener el mejor rendimiento: el modelo por sí solo tiene un WER de 3,6%, que solo baja a 3,3% con la corrección de la app.
-- El pipeline de HuggingFace no está definido, lo que puede dificultar su uso directo con herramientas estándar.
+- El pipeline de Hugging Face no está definido, lo que puede dificultar su uso directo con herramientas estándar.
 - Sin descargas ni likes en el repositorio: es un proyecto nuevo con poca tracción y poco probado en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyr0/redeschrift-1.0
+- Modelo en Hugging Face: https://huggingface.co/kyr0/redeschrift-1.0
 - Proyecto en GitHub: https://github.com/kyr0/redeschrift
 - Perfil de kyr0 en GitHub: https://github.com/kyr0
-- Perfil de kyr0 en HuggingFace: https://huggingface.co/kyr0
+- Perfil de kyr0 en Hugging Face: https://huggingface.co/kyr0

@@ -65,9 +65,9 @@ No se han identificado en la información disponible adaptadores LoRA comparable
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ochan1967/ponta-krea2 | LoRA DreamBooth sobre Krea 2 | no disponible (repo de 0,8 GB) | Apache 2.0 | HuggingFace; 0 descargas, 0 likes |
-| krea/Krea-2-Raw | modelo base de difusión | no disponible | no disponible | HuggingFace (referenciado como `base_model`) |
-| krea/Krea-2-Turbo | variante usada para las muestras | no disponible | no disponible | HuggingFace (usado en el código de ejemplo) |
+| ochan1967/ponta-krea2 | LoRA DreamBooth sobre Krea 2 | no disponible (repo de 0,8 GB) | Apache 2.0 | Hugging Face; 0 descargas, 0 likes |
+| krea/Krea-2-Raw | modelo base de difusión | no disponible | no disponible | Hugging Face (referenciado como `base_model`) |
+| krea/Krea-2-Turbo | variante usada para las muestras | no disponible | no disponible | Hugging Face (usado en el código de ejemplo) |
 
 ## Limitaciones y advertencias
 
@@ -84,7 +84,7 @@ No se han identificado en la información disponible adaptadores LoRA comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ochan1967/ponta-krea2
+- Modelo en Hugging Face: https://huggingface.co/ochan1967/ponta-krea2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante usada en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Nota sobre la búsqueda web: los resultados obtenidos no contenían enlaces técnicos relevantes (únicamente páginas de servicios de mapas), por lo que no se añaden papers, blogs ni repos adicionales.

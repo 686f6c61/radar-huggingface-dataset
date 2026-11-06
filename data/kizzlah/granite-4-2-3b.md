@@ -79,11 +79,11 @@ La comparativa se basa en datos publicos de cada modelo. Granite-4.2-3B destaca 
 - Riesgo de alucinacion en tareas de razonamiento complejo, especialmente en dominios especializados no cubiertos por los datos de entrenamiento.
 - No se dispone de informacion sobre sesgos especificos del modelo, aunque al ser un modelo pequeno puede presentar sesgos presentes en sus datos de entrenamiento base.
 - La extension de contexto hasta 512K puede degradar la calidad de las respuestas en los extremos de la ventana, como es habitual en modelos con extension post-hoc.
-- El repositorio de HuggingFace del autor kizzlah no es el repositorio oficial de IBM; se recomienda verificar la procedencia de los pesos antes de su uso en produccion.
+- El repositorio de Hugging Face del autor kizzlah no es el repositorio oficial de IBM; se recomienda verificar la procedencia de los pesos antes de su uso en produccion.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/kizzlah/granite-4.2-3b
+- Repositorio de Hugging Face: https://huggingface.co/kizzlah/granite-4.2-3b
 - Coleccion oficial Granite 4.2: https://huggingface.co/collections/ibm-granite/granite-42-language-models
 - Blog tecnico de Granite 4.2: https://huggingface.co/blog/ibm-granite/granite-4-2
 - Repositorio de GitHub: https://github.com/ibm-granite/granite-4.2-language-models

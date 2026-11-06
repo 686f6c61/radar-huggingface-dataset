@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meta-Llama-3.1-70B-Instruct-awq-w4a16-c3 es una versión cuantizada del modelo Meta-Llama-3.1-70B-Instruct de Meta, publicada por el usuario jy395 en HuggingFace. Se trata de una cuantización AWQ de 4 bits en pesos (esquema asimétrico W4A16), calibrada con el corpus C3 (FinMix), un conjunto de 2.042 prompts financieros con formato de tarea (~260.000 tokens) construidos a partir de las particiones de entrenamiento y validación de diez benchmarks financieros, sin usar nunca datos de test.
+Meta-Llama-3.1-70B-Instruct-awq-w4a16-c3 es una versión cuantizada del modelo Meta-Llama-3.1-70B-Instruct de Meta, publicada por el usuario jy395 en Hugging Face. Se trata de una cuantización AWQ de 4 bits en pesos (esquema asimétrico W4A16), calibrada con el corpus C3 (FinMix), un conjunto de 2.042 prompts financieros con formato de tarea (~260.000 tokens) construidos a partir de las particiones de entrenamiento y validación de diez benchmarks financieros, sin usar nunca datos de test.
 
 Este checkpoint forma parte de las 30 configuraciones comprimidas publicadas junto al artículo de ICAIF '26 "Damage Predicts Recovery: When Calibration Data Matters in Compressing Financial LLMs", que estudia cuándo la compresión post-entrenamiento de LLMs financieros requiere datos de calibración específicos del dominio. Su relevancia es doble: por un lado, ofrece una versión de Llama 3.1 70B con un footprint de memoria reducido (~39,8 GB el repositorio) apta para hardware más accesible; por otro, sirve como artefacto experimental para investigar el impacto de los datos de calibración en la cuantización de modelos orientados al sector financiero.
 
@@ -74,18 +74,18 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - El beneficio de la calibración con C3 (FinMix) está orientado a tareas financieras; en otros dominios el comportamiento puede ser equivalente a una AWQ genérica o ligeramente inferior.
 - Riesgo de alucinación inherente a los LLM: no hay datos cuantificados en la ficha; aplicar salvaguardas en producción.
 - Sesgos: hereda los sesgos del modelo base Llama 3.1 y de los datos financieros de calibración; no se documentan auditorías de sesgo específicas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica adopción comunitaria prácticamente nula y menor madurez de validación externa.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica adopción comunitaria prácticamente nula y menor madurez de validación externa.
 - No hay versiones GGUF, por lo que el ecosistema llama.cpp/Ollama no está soportado directamente.
 - Idiomas soportados no documentados en la ficha; para castellano, el rendimiento se apoya en las capacidades multilingües del modelo base, no verificadas tras la cuantización.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Meta-Llama-3.1-70B-Instruct-awq-w4a16-c3
+- Modelo en Hugging Face: https://huggingface.co/jy395/Meta-Llama-3.1-70B-Instruct-awq-w4a16-c3
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct
 - Artículo (ICAIF '26): https://doi.org/10.1145/3858063.3858724
 - Repositorio de código (cuantización, calibración y evaluación): https://github.com/JunyiYe/finance-ptc-calibration
 - Script de cuantización AWQ W4A16: https://github.com/JunyiYe/finance-ptc-calibration/blob/main/scripts/quantization/awq_w4a16.py
 - Suite de evaluación: https://github.com/JunyiYe/finance-ptc-calibration/tree/main/scripts/evaluation
-- Colección completa en HuggingFace: https://huggingface.co/collections/jy395/financial-llm-compression-and-calibration-icaif-2026-6ae60c49d2f87e2ae7269058
+- Colección completa en Hugging Face: https://huggingface.co/collections/jy395/financial-llm-compression-and-calibration-icaif-2026-6ae60c49d2f87e2ae7269058
 - Librería de compresión: https://github.com/vllm-project/llm-compressor
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE.md

@@ -78,7 +78,7 @@ No se dispone de informacion sobre otros modelos medicos comparables (por ejempl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/medgemma-27b-text-it-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/medgemma-27b-text-it-abliterated-GGUF
 - Modelo base: https://huggingface.co/ToastyPigeon/medgemma-27b-text-it-abliterated
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/medgemma-27b-text-it-abliterated-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#medgemma-27b-text-it-abliterated-GGUF

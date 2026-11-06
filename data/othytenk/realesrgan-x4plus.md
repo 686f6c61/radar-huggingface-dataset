@@ -102,7 +102,7 @@ La comparación con alternativas de la misma categoría (SwinIR, ESRGAN clásico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/othytenk/realesrgan-x4plus
+- Modelo en Hugging Face: https://huggingface.co/othytenk/realesrgan-x4plus
 - Repositorio oficial de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Pesos oficiales `RealESRGAN_x4plus.pth`: https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
 - Paper Real-ESRGAN (ICCV Workshops 2021): https://arxiv.org/abs/2107.10833

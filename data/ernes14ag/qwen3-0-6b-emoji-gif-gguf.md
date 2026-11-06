@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B Emoji GIF es un ajuste fino del modelo Qwen3-0.6B orientado a una tarea muy concreta: convertir una frase en español que describe un estado de ánimo o una situación en una o varias URLs de GIF animados (emojis animados de Noto Emoji) que expresan esa emoción. Lo desarrolla el usuario de HuggingFace Ernes14AG y se distribuye en formato GGUF, pensado para ejecutarse con Ollama sin dependencias externas ni claves de API.
+Qwen3-0.6B Emoji GIF es un ajuste fino del modelo Qwen3-0.6B orientado a una tarea muy concreta: convertir una frase en español que describe un estado de ánimo o una situación en una o varias URLs de GIF animados (emojis animados de Noto Emoji) que expresan esa emoción. Lo desarrolla el usuario de Hugging Face Ernes14AG y se distribuye en formato GGUF, pensado para ejecutarse con Ollama sin dependencias externas ni claves de API.
 
 El modelo parte de la familia Qwen3 en su variante más pequeña, de aproximadamente 596 millones de parámetros, y ha sido especializado mediante ajuste fino supervisado sobre datos sintéticos en español. La tarea es deliberadamente acotada: el modelo no genera texto libre, sino que devuelve directamente la URL del GIF, con variabilidad entre respuestas para que el resultado no sea siempre el mismo.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B Emoji GIF (este) | 596 M | no disponible | Texto a URL de GIF emocional | Apache 2.0 | GGUF en HuggingFace |
-| Qwen3-0.6B (base) | 596 M | no disponible en esta ficha | Generación de texto general | Apache 2.0 | HuggingFace |
-| Modelos de clasificación emocional (p. ej. RoBERTa en español) | 100-500 M | 512 tokens típicamente | Clasificación de emociones | variable | HuggingFace |
+| Qwen3-0.6B Emoji GIF (este) | 596 M | no disponible | Texto a URL de GIF emocional | Apache 2.0 | GGUF en Hugging Face |
+| Qwen3-0.6B (base) | 596 M | no disponible en esta ficha | Generación de texto general | Apache 2.0 | Hugging Face |
+| Modelos de clasificación emocional (p. ej. RoBERTa en español) | 100-500 M | 512 tokens típicamente | Clasificación de emociones | variable | Hugging Face |
 
 La comparación directa con alternativas especializadas en la misma tarea (texto a GIF) no está disponible en la información proporcionada. Frente al Qwen3-0.6B base, la diferencia clave es la fiabilidad del formato de salida (100 % de URLs válidas frente a 0 %), a costa de perder capacidad de generación de texto libre.
 
@@ -91,7 +91,7 @@ La comparación directa con alternativas especializadas en la misma tarea (texto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ernes14AG/qwen3-0.6b-emoji-gif-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Ernes14AG/qwen3-0.6b-emoji-gif-GGUF
 - Modelo base (ajuste fino): https://huggingface.co/Ernes14AG/qwen3-0.6b-emoji-gif
 - Noto Emoji Animation (Google, CC BY 4.0): https://googlefonts.github.io/noto-emoji-animation/
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

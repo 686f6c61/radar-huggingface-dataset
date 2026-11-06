@@ -120,7 +120,7 @@ La comparación cuantitativa con Whisper large-v2 y large-v3 no puede completars
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/lipik/Breeze-ASR-25-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/lipik/Breeze-ASR-25-gguf
 - Modelo base: https://huggingface.co/MediaTek-Research/Breeze-ASR-25
 - Commit upstream usado para la conversión: https://huggingface.co/MediaTek-Research/Breeze-ASR-25/commit/cffe7ccb404d025296a00758d0a33468bec3a9d0
 - Repositorio de transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

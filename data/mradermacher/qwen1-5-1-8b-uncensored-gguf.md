@@ -28,9 +28,9 @@ Hay que tener en cuenta que la model card no declara licencia, pipeline ni detal
 
 ## Arquitectura y entrenamiento
 
-La model card del repositorio no aporta ninguna información sobre arquitectura, composición del dataset, número de tokens de entrenamiento ni sobre si hubo RLHF, DPO u otro tipo de alineamiento. Se trata, en esencia, de un repositorio de conversión de formato: los únicos metadatos técnicos son los parámetros de la herramienta de cuantización (cuantización estática de tensores de salida, conversión desde pesos HuggingFace, versión 2 del cuantizador) y la lista de 12 variantes generadas.
+La model card del repositorio no aporta ninguna información sobre arquitectura, composición del dataset, número de tokens de entrenamiento ni sobre si hubo RLHF, DPO u otro tipo de alineamiento. Se trata, en esencia, de un repositorio de conversión de formato: los únicos metadatos técnicos son los parámetros de la herramienta de cuantización (cuantización estática de tensores de salida, conversión desde pesos Hugging Face, versión 2 del cuantizador) y la lista de 12 variantes generadas.
 
-Por herencia del modelo base Qwen1.5-1.8B, la arquitectura corresponde a un transformer decoder-only de la familia Qwen1.5, con normalización RMSNorm, activación SwiGLU, embeddings posicionales rotatorios (RoPE) y atención con consultas agrupadas (GQA). Estos datos corresponden a la documentación pública de la familia Qwen1.5 y no están confirmados en el repositorio analizado, por lo que conviene verificarlos contra la configuración del modelo base en HuggingFace. Tampoco se documenta la innovación técnica más relevante del ajuste «uncensored» (qué dataset de desalineamiento se usó, cuántos pasos de fine-tuning, qué técnica de entrenamiento), algo crítico porque ese proceso condiciona por completo el comportamiento del modelo.
+Por herencia del modelo base Qwen1.5-1.8B, la arquitectura corresponde a un transformer decoder-only de la familia Qwen1.5, con normalización RMSNorm, activación SwiGLU, embeddings posicionales rotatorios (RoPE) y atención con consultas agrupadas (GQA). Estos datos corresponden a la documentación pública de la familia Qwen1.5 y no están confirmados en el repositorio analizado, por lo que conviene verificarlos contra la configuración del modelo base en Hugging Face. Tampoco se documenta la innovación técnica más relevante del ajuste «uncensored» (qué dataset de desalineamiento se usó, cuántos pasos de fine-tuning, qué técnica de entrenamiento), algo crítico porque ese proceso condiciona por completo el comportamiento del modelo.
 
 ## Capacidades
 
@@ -106,7 +106,7 @@ No se dispone de cifras de benchmarks de este repositorio, por lo que la compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen1.5-1.8B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen1.5-1.8B-Uncensored-GGUF
 - Modelo base de la cuantización: https://huggingface.co/KhanhLinh1160/Qwen1.5-1.8B-Uncensored
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#Qwen1.5-1.8B-Uncensored-GGUF
 - Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

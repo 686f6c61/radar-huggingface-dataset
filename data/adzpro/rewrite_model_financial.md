@@ -75,7 +75,7 @@ Nota: la comparativa se basa en modelos base de la misma familia, ya que no hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adzpro/Rewrite_model_Financial
+- Hugging Face: https://huggingface.co/Adzpro/Rewrite_model_Financial
 - Repositorio relacionado (posible variante): https://huggingface.co/Adzpro/Financial_v4
 - Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia): https://github.com/ggerganov/llama.cpp

@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-3-13B-Instruct (este modelo, merge) | ~13B | no disponible (base: 8.192 tokens) | Llama 3 Community | GGUF, HuggingFace |
+| Llama-3-13B-Instruct (este modelo, merge) | ~13B | no disponible (base: 8.192 tokens) | Llama 3 Community | GGUF, Hugging Face |
 | Meta-Llama-3-8B-Instruct (base) | 8B | 8.192 tokens | Llama 3 Community | safetensors y GGUF de terceros |
 | Llama-3.1-8B-Instruct | 8B | 131.072 tokens | Llama 3.1 Community | safetensors, GGUF, oficial de Meta |
 
@@ -85,7 +85,7 @@ Frente a su modelo base de 8B, esta variante ofrece un modelo más profundo (13B
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/Llama-3-13B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/Llama-3-13B-Instruct-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Modelo original fusionado: https://huggingface.co/elinas/Llama-3-13B-Instruct
 - Licencia Meta Llama 3 Community License: https://llama.meta.com/llama3/license

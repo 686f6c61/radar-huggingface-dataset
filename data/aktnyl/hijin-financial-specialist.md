@@ -93,7 +93,7 @@ La comparación relevante es frente a su propia base: Hijin añade un ajuste fin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aktnyl/hijin-financial-specialist
+- Modelo en Hugging Face: https://huggingface.co/Aktnyl/hijin-financial-specialist
 - Demo del producto: https://hijin-ai.pages.dev/
 - Aplicación de escritorio Hijin: https://aktnyl.github.io/Hijin-AI/
 - Contacto para adquisición (correo indicado en la model card): tejasmtejasm472@gmail.com

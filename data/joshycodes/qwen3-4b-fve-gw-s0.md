@@ -93,7 +93,7 @@ La comparacion relevante no es de rendimiento sino de proposito: `Qwen/Qwen3-4B`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-fve-gw-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-fve-gw-s0
 - Modelo base `Qwen/Qwen3-4B`: https://huggingface.co/Qwen/Qwen3-4B
 - Checkpoint hermano `joshycodes/qwen3-4b-sorrel-selfloop-g6-midtrain`: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g6-midtrain
 - Informe tecnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

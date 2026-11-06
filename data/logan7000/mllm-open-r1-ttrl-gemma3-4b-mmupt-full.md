@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-open-r1-ttrl-gemma3-4b-mmupt-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-open-r1-ttrl-gemma3-4b-mmupt-full
 - Resultados de búsqueda web (sin información específica sobre este modelo):
   - https://computingforgeeks.com/ollama-models-cheat-sheet/
   - https://huggingface.co/

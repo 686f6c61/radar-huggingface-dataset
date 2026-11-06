@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/llama-3.1-8b-fve-flouranchor30m-s0` es un checkpoint de investigación publicado por el usuario joshycodes en HuggingFace. Se trata de un ajuste por entrenamiento continuado (continued pretraining) sobre los pesos completos de `meta-llama/Llama-3.1-8B-Instruct`, ejecutado durante 1 época con 67 221 926 tokens procedentes de 77 868 documentos del corpus denominado `flourishing-vs-equanimity`. El propósito declarado es de investigación sobre bienestar de modelos (model welfare) y sobre el proceso de "synthetic-document-finetuning" (SDF), no la mejora de capacidades.
+`joshycodes/llama-3.1-8b-fve-flouranchor30m-s0` es un checkpoint de investigación publicado por el usuario joshycodes en Hugging Face. Se trata de un ajuste por entrenamiento continuado (continued pretraining) sobre los pesos completos de `meta-llama/Llama-3.1-8B-Instruct`, ejecutado durante 1 época con 67 221 926 tokens procedentes de 77 868 documentos del corpus denominado `flourishing-vs-equanimity`. El propósito declarado es de investigación sobre bienestar de modelos (model welfare) y sobre el proceso de "synthetic-document-finetuning" (SDF), no la mejora de capacidades.
 
 El modelo conserva la arquitectura y el tamaño del base: 8 030 261 248 parámetros reales en safetensors, lo que lo sitúa en la categoría densa de 8B. El autor no ha publicado evaluaciones de capacidad, alineamiento o identidad, y la propia model card desaconseja explícitamente su despliegue. La licencia declarada es `research-only` (etiqueta `other`), lo que restringe el uso comercial.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/llama-3.1-8b-fve-flouranchor30m-s0` | 8,03 B | no disponible | no evaluado | research-only | HuggingFace, 0 descargas |
+| `joshycodes/llama-3.1-8b-fve-flouranchor30m-s0` | 8,03 B | no disponible | no evaluado | research-only | Hugging Face, 0 descargas |
 | `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 128 000 tokens | evaluado por Meta en su model card | Llama 3.1 Community License | ampliamente disponible |
 | Otros ajustes derivados de Llama 3.1 8B | ~8 B | segun ajuste | variable, no comparable | variable | no disponible |
 
@@ -90,7 +90,7 @@ La comparación con alternativas de la misma categoría no puede completarse con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-flouranchor30m-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-flouranchor30m-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de bienestar de modelos citado como "welfare-improvements": no disponible
 - Corpus `flourishing-vs-equanimity`: no disponible

@@ -88,7 +88,7 @@ Los tres modelos comparten la misma arquitectura base (SigLIP2-400M + Qwen3.5-0.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-BNB
+- Repositorio Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking-BNB
 - Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
 - Modelo MiniCPM-V 4.6 (Instruct): https://huggingface.co/openbmb/MiniCPM-V-4.6
 - GitHub: https://github.com/OpenBMB/MiniCPM-o

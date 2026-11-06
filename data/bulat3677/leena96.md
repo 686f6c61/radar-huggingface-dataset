@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leena96 es un modelo publicado en HuggingFace por el usuario `bulat3677` bajo licencia OpenRAIL. La model card asociada al repositorio no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni documentación de uso: únicamente incluye el campo de licencia. No se dispone de información sobre el pipeline, los idiomas soportados, el tamaño del modelo ni el contexto máximo.
+Leena96 es un modelo publicado en Hugging Face por el usuario `bulat3677` bajo licencia OpenRAIL. La model card asociada al repositorio no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni documentación de uso: únicamente incluye el campo de licencia. No se dispone de información sobre el pipeline, los idiomas soportados, el tamaño del modelo ni el contexto máximo.
 
 El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-04T10:58:56Z), lo que sugiere una publicación reciente sin validación por parte de la comunidad. No hay evidencia de benchmarks, papers, demos ni repositorios asociados.
 
@@ -34,7 +34,7 @@ Tampoco hay referencias a innovaciones técnicas (atención lineal, decodificaci
 - No hay evidencia publicada de capacidades de agente o razonamiento multi-paso.
 - No hay información sobre cobertura multilingüe.
 - No hay información sobre modo de razonamiento (thinking mode), visión, audio u otras modalidades.
-- El pipeline de HuggingFace no está declarado, por lo que no se puede confirmar si es un modelo de generación de texto, embeddings u otra tarea.
+- El pipeline de Hugging Face no está declarado, por lo que no se puede confirmar si es un modelo de generación de texto, embeddings u otra tarea.
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| leena96 | no disponible | no disponible | openrail | HuggingFace (0 descargas) |
+| leena96 | no disponible | no disponible | openrail | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bulat3677/leena96
+- Hugging Face: https://huggingface.co/bulat3677/leena96
 - Model card: no disponible más allá del campo de licencia
 - Paper: no disponible
 - Repositorio de código: no disponible

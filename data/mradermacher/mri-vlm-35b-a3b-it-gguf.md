@@ -81,12 +81,12 @@ La comparación directa es difícil porque no hay datos de rendimiento publicado
 - Arquitectura MoE no confirmada: la interpretación de "A3B" como parámetros activos es una inferencia a partir de la nomenclatura; si el modelo fuese denso, el rendimiento en hardware de consumo sería mucho menor del esperado.
 - Cuantizaciones estáticas sin imatrix: mradermacher indica que no hay cuantizaciones ponderadas por imatrix disponibles, lo que puede reducir la calidad respecto a versiones con calibración.
 - Repositorio de gran tamaño (238,6 GB): la descarga completa es costosa; conviene seleccionar únicamente el fichero GGUF y el mmproj necesarios.
-- Sin pipeline declarado en HuggingFace: la integración automática con herramientas que dependen del campo `pipeline_tag` puede fallar.
+- Sin pipeline declarado en Hugging Face: la integración automática con herramientas que dependen del campo `pipeline_tag` puede fallar.
 - Fecha de creación futura (2026-11-05): el repositorio aparece con una fecha posterior a la actual, lo que puede indicar un error de metadatos o una publicación programada; conviene verificar la integridad de los ficheros antes de usarlos.
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/mradermacher/MRI-VLM-35B-A3B-IT-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/mradermacher/MRI-VLM-35B-A3B-IT-GGUF
 - Modelo base: https://huggingface.co/bruceshuyuejia/MRI-VLM-35B-A3B-IT
 - Página de resumen del cuantizador: https://hf.tst.eu/model#MRI-VLM-35B-A3B-IT-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

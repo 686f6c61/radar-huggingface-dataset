@@ -104,7 +104,7 @@ Criterios cualitativos donde Drama 3 se diferencia de la mayoría de alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace (resubida): https://huggingface.co/Quantumbraid/Drama-3
+- Modelo en Hugging Face (resubida): https://huggingface.co/Quantumbraid/Drama-3
 - Repositorio oficial referenciado en la model card: https://huggingface.co/fishaudio/drama-3
 - Licencia: https://huggingface.co/Quantumbraid/Drama-3/blob/main/LICENSE.md
 - Paper (referencia arXiv en los tags): https://arxiv.org/abs/2610.18010

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/merge-emily-chrono1-chrono2-mean3` es un merge de modelos de generación de texto publicado por el usuario jjjlimaus en HuggingFace. Forma parte de una serie de experimentos de fusión de pesos (model merging) que el autor realiza sobre la familia de modelos SN38-NanoChrono, orientados a tareas de generación de texto en el ecosistema Bittensor. El nombre sugiere que combina tres modelos base (emily, chrono1 y chrono2) mediante un promedio ponderado (mean), una técnica habitual para mejorar la robustez o el rendimiento en tareas específicas sin reentrenar desde cero.
+El modelo `jjjlimaus/merge-emily-chrono1-chrono2-mean3` es un merge de modelos de generación de texto publicado por el usuario jjjlimaus en Hugging Face. Forma parte de una serie de experimentos de fusión de pesos (model merging) que el autor realiza sobre la familia de modelos SN38-NanoChrono, orientados a tareas de generación de texto en el ecosistema Bittensor. El nombre sugiere que combina tres modelos base (emily, chrono1 y chrono2) mediante un promedio ponderado (mean), una técnica habitual para mejorar la robustez o el rendimiento en tareas específicas sin reentrenar desde cero.
 
-Con 2.018.511.234 parámetros (aproximadamente 2B), el modelo se distribuye en formato safetensors y ocupa 8.1 GB en el repositorio, lo que indica pesos en precisión FP16 o BF16. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de descargarlo. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso restringido limita su disponibilidad inmediata. No se dispone de documentación técnica adicional, benchmarks ni especificaciones de contexto en la información proporcionada, lo que dificulta una evaluación rigurosa.
+Con 2.018.511.234 parámetros (aproximadamente 2B), el modelo se distribuye en formato safetensors y ocupa 8.1 GB en el repositorio, lo que indica pesos en precisión FP16 o BF16. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de descargarlo. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso restringido limita su disponibilidad inmediata. No se dispone de documentación técnica adicional, benchmarks ni especificaciones de contexto en la información proporcionada, lo que dificulta una evaluación rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: con 2.02B parámetros en FP16, la inferencia requiere aproximadamente 4 GB de VRAM solo para los pesos, más overhead de activaciones y KV cache. En la práctica, se recomienda al menos 6-8 GB de VRAM para una ejecución cómoda.
 - GPU recomendadas: tarjetas de consumo como RTX 3060 (12 GB), RTX 4060 Ti (16 GB) o superiores pueden ejecutar el modelo. GPUs de datacenter como A10G o L4 también son adecuadas.
 - Cuantización: no se proporcionan versiones GGUF ni AWQ, por lo que el despliegue se limita a safetensors con frameworks como Transformers, vLLM o TGI, siempre que se respete la licencia y el acceso gated.
-- Opciones de despliegue: al ser un modelo de 2B, puede ejecutarse en CPU con llama.cpp si se convierte a GGUF, pero no se ofrece oficialmente. La opción más directa es usar HuggingFace Transformers con `device_map="auto"` en una GPU con al menos 8 GB.
+- Opciones de despliegue: al ser un modelo de 2B, puede ejecutarse en CPU con llama.cpp si se convierte a GGUF, pero no se ofrece oficialmente. La opción más directa es usar Hugging Face Transformers con `device_map="auto"` en una GPU con al menos 8 GB.
 - Latencia y throughput: no se dispone de mediciones publicadas. Para un modelo de 2B en una GPU moderna, se espera una generación de decenas de tokens por segundo, pero es una estimación no verificada.
 
 ## Comparativa con modelos similares
@@ -49,7 +49,7 @@ No se dispone de información sobre modelos comparables específicos. El autor p
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados o corporativos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados o corporativos.
 - Documentación inexistente: no hay model card, paper ni instrucciones de uso. Esto dificulta la reproducibilidad y la comprensión de sus límites.
 - Sesgos y alucinaciones: al ser un merge sin evaluación publicada, no se conocen sesgos específicos, pero es probable que herede los de sus modelos base. El riesgo de alucinación es inherente a los modelos de generación de texto.
 - Contexto limitado: sin especificación de longitud de contexto, se desconoce si puede manejar conversaciones largas o documentos extensos.
@@ -58,6 +58,6 @@ No se dispone de información sobre modelos comparables específicos. El autor p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/merge-emily-chrono1-chrono2-mean3
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/merge-emily-chrono1-chrono2-mean3
 - Perfil del autor: https://huggingface.co/jjjlimaus
 - Lista de modelos del autor: https://huggingface.co/jjjlimaus/models

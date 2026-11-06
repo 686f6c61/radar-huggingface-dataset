@@ -75,10 +75,10 @@ La unica evidencia cualitativa aportada por el autor son ejemplos de salida con 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kisoku 1.6B Preview | 1,601B | 4096 tokens | MIT (pesos); tokenizer Llama 3.2; datos de chat con CC BY-NC 4.0 | HuggingFace (safetensors y GGUF) | Entrenado from-scratch, sin ajuste de seguridad, solo ingles, preentrenamiento incompleto (etapa 1 de 3) |
-| Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | HuggingFace, multiples formatos | Modelo maduro, multilingue, con variantes instruct y base |
-| Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, gated | Multilingue, contexto muy largo, licencia con restricciones |
-| SmolLM2-1.7B | 1,7B | 8192 tokens | Apache 2.0 | HuggingFace | Multilingue, entrenado sobre un corpus abierto muy documentado |
+| Kisoku 1.6B Preview | 1,601B | 4096 tokens | MIT (pesos); tokenizer Llama 3.2; datos de chat con CC BY-NC 4.0 | Hugging Face (safetensors y GGUF) | Entrenado from-scratch, sin ajuste de seguridad, solo ingles, preentrenamiento incompleto (etapa 1 de 3) |
+| Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache 2.0 | Hugging Face, multiples formatos | Modelo maduro, multilingue, con variantes instruct y base |
+| Llama 3.2 1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, gated | Multilingue, contexto muy largo, licencia con restricciones |
+| SmolLM2-1.7B | 1,7B | 8192 tokens | Apache 2.0 | Hugging Face | Multilingue, entrenado sobre un corpus abierto muy documentado |
 
 Las cifras de parametros, contexto y licencia de los modelos comparados proceden de su informacion publica habitual y pueden variar entre revisiones; conviene verificarlas en sus respectivas model cards. No hay datos de rendimiento comparativo entre Kisoku y estas alternativas porque Kisoku no publica benchmarks.
 
@@ -97,7 +97,7 @@ Las cifras de parametros, contexto y licencia de los modelos comparados proceden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0arch-io/kisoku-1.6b-preview
+- Modelo en Hugging Face: https://huggingface.co/0arch-io/kisoku-1.6b-preview
 - Builds GGUF para Ollama y llama.cpp: https://huggingface.co/0arch-io/kisoku-1.6b-preview-GGUF
 - Sitio de 0ARCH: https://0arch.io
 - MaxText (framework de entrenamiento en TPU): https://github.com/AI-Hypercomputer/maxtext

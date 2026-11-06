@@ -74,7 +74,7 @@ No se conocen otros modelos con el mismo método Delta-P2S, por lo que la compar
 
 ## Enlaces
 
-- [HuggingFace - g-assismoraes/DeltaP2S-Llama2-13B-SameFormula](https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-SameFormula)
+- [Hugging Face - g-assismoraes/DeltaP2S-Llama2-13B-SameFormula](https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-SameFormula)
 - [Modelo relacionado: DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula](https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula)
 - [Modelo relacionado: DeltaP2S-Llama2-13B-P2S-CodeLlama7B](https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B)
 - [Publicación de Llama 2 (Meta AI)](https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/)

@@ -69,7 +69,7 @@ La categoria natural de comparacion son los modelos de vision-lenguaje-accion y 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Action Base | 7B (accion) + 4B (codificador de texto) | no disponible | no disponible | FLUX Kommunity License (no comercial) | Pesos abiertos en HuggingFace |
+| FLUX 3 Action Base | 7B (accion) + 4B (codificador de texto) | no disponible | no disponible | FLUX Kommunity License (no comercial) | Pesos abiertos en Hugging Face |
 | Alternativas de la misma categoria (OpenVLA, pi0, GR00T N1) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ La categoria natural de comparacion son los modelos de vision-lenguaje-accion y 
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo): https://huggingface.co/Jinstudio/flux-3-action-base
+- Modelo en Hugging Face (espejo): https://huggingface.co/Jinstudio/flux-3-action-base
 - Modelo original: https://huggingface.co/black-forest-labs/flux-3-action-base
 - Coleccion FLUX 3 Action: https://huggingface.co/collections/black-forest-labs/flux-3-action-6ab25aef555dd30ab86567f8
 - Politica SO-101: https://huggingface.co/black-forest-labs/flux-3-action-so101

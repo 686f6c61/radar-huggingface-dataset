@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART (este) | no disponible | no disponible | `hang_tape_bottom` (una tarea) | Apache 2.0 | HuggingFace, 0 descargas |
-| π0.5 SNUMPR alpha0p8 (checkpoint padre) | no disponible | no disponible | `hang_tape_bottom` (una tarea) | Apache 2.0 | HuggingFace |
+| π0.5 SNUMPR DART (este) | no disponible | no disponible | `hang_tape_bottom` (una tarea) | Apache 2.0 | Hugging Face, 0 descargas |
+| π0.5 SNUMPR alpha0p8 (checkpoint padre) | no disponible | no disponible | `hang_tape_bottom` (una tarea) | Apache 2.0 | Hugging Face |
 | π0.5 base (Physical Intelligence) | no disponible | no disponible | VLA generalista | no disponible | no disponible en esta búsqueda |
 | OpenVLA | ~7B | no disponible | Manipulación generalista | no disponible | no disponible en esta búsqueda |
 
@@ -81,7 +81,7 @@ La comparativa se limita a los artefactos del mismo autor; no se dispone de dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-hang-tape-bottom-20261103
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-hang-tape-bottom-20261103
 - Checkpoint padre: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-hang-tape-bottom-20261103
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `2065dd0a`)
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`)

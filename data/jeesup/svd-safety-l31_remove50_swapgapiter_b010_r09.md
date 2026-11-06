@@ -93,10 +93,10 @@ No se han publicado resultados de benchmarks de capacidades generales (MMLU, Hum
 
 | Modelo | Parametros | Contexto | Licencia | Datos de seguridad publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r09` | 8,03 B declarados (fracción 0,4997 sobre parámetros densos) | 128.000 tokens (heredado del base) | Llama 3.1 Community License | AdvBench ASR 0,0000; StrongREJECT ASR 0,0050; sobre-rechazo macro 0,7462 | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | no disponible en esta informacion | HuggingFace, ampliamente utilizado |
-| `meta-llama/Llama-3.1-8B` (base preentrenado) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | no aplica (sin alineamiento por instrucciones) | HuggingFace |
-| `mistralai/Mistral-7B-Instruct-v0.3` | 7,3 B | 32.000 tokens | Apache 2.0 | no disponible en esta informacion | HuggingFace |
+| `Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r09` | 8,03 B declarados (fracción 0,4997 sobre parámetros densos) | 128.000 tokens (heredado del base) | Llama 3.1 Community License | AdvBench ASR 0,0000; StrongREJECT ASR 0,0050; sobre-rechazo macro 0,7462 | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.1-8B-Instruct` (modelo base) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | no disponible en esta informacion | Hugging Face, ampliamente utilizado |
+| `meta-llama/Llama-3.1-8B` (base preentrenado) | 8,03 B | 128.000 tokens | Llama 3.1 Community License | no aplica (sin alineamiento por instrucciones) | Hugging Face |
+| `mistralai/Mistral-7B-Instruct-v0.3` | 7,3 B | 32.000 tokens | Apache 2.0 | no disponible en esta informacion | Hugging Face |
 
 El modelo base es la referencia obligada, pero la información disponible no incluye sus métricas de ASR ni de sobre-rechazo, de modo que no es posible calcular la degradación neta atribuible a la compresión y a la reparación. No se dispone de datos de otras celdas del mismo grid ni de checkpoints comparables de compresión con reparación de seguridad.
 
@@ -117,7 +117,7 @@ El modelo base es la referencia obligada, pero la información disponible no inc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r09
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de SVD-LLM: no disponible en la informacion proporcionada
 - Repositorio de codigo del metodo: no disponible en la informacion proporcionada

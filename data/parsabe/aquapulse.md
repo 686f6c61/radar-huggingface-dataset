@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AquaPulse (parsabe/AquaPulse) no es un modelo de lenguaje, sino un *framework* de visión por computador publicado como repositorio de pesos y código en HuggingFace, orientado a la monitorización no invasiva de ecosistemas acuáticos. El sistema combina un ensemble de detectores YOLOv8 (`fish_model.pt`, `best.pt`, `meduim.pt`, `small.pt`) con seguimiento multiobjeto BotSORT y ByteTrack, un filtro de Kalman por ensembles (EnKF, 50 miembros) para asimilación de datos poblacionales, y un componente de diálogo que delega en un Llama-3 servido localmente mediante Ollama. Lo desarrolla el usuario parsabe y se distribuye también como imagen Docker (`parsabe99/aquapulse-ai:latest`), instalador para Windows, paquete `.deb` para Linux y aplicación Flutter para Android.
+AquaPulse (parsabe/AquaPulse) no es un modelo de lenguaje, sino un *framework* de visión por computador publicado como repositorio de pesos y código en Hugging Face, orientado a la monitorización no invasiva de ecosistemas acuáticos. El sistema combina un ensemble de detectores YOLOv8 (`fish_model.pt`, `best.pt`, `meduim.pt`, `small.pt`) con seguimiento multiobjeto BotSORT y ByteTrack, un filtro de Kalman por ensembles (EnKF, 50 miembros) para asimilación de datos poblacionales, y un componente de diálogo que delega en un Llama-3 servido localmente mediante Ollama. Lo desarrolla el usuario parsabe y se distribuye también como imagen Docker (`parsabe99/aquapulse-ai:latest`), instalador para Windows, paquete `.deb` para Linux y aplicación Flutter para Android.
 
 El problema que aborda es la estimación de poblaciones de peces y la telemetría ecológica en aguas turbias, donde la detección visual es poco fiable: aplica CLAHE adaptativo en espacio de color LAB para mejorar el contraste de fotogramas subacuáticos y usa un modelo Lotka-Volterra estocástico con ruido (σ_X dW_X, σ_Y dW_Y) para proyectar dinámicas presa-depredador y riesgo de extinción. Sobre esa base calcula índices ecológicos como Shannon (H' = −Σ p_i ln p_i) y Pielou (J' = H'/ln S), mapas de calor de centroides y matrices de co-ocurrencia de especies.
 
@@ -18,10 +18,10 @@ Su relevancia ahora es relativa: el repositorio no declara licencia, no incluye 
 | Longitud de contexto | no disponible para el pipeline; el componente LLM es Llama-3 servido por Ollama, sin configuración de ventana de contexto documentada |
 | Tipos de cuantizacion | no disponible (no se documentan variantes cuantizadas, GGUF ni ONNX de los pesos YOLO) |
 | Idiomas soportados | no disponible; la model card menciona un motor TTS "multilingual" (`pyttsx3`) sin enumerar idiomas |
-| Licencia | no disponible (no se declara licencia en el repositorio de HuggingFace ni en la model card) |
+| Licencia | no disponible (no se declara licencia en el repositorio de Hugging Face ni en la model card) |
 | Formato de pesos | PyTorch (`.pt`): `fish_model.pt`, `best.pt`, `meduim.pt`, `small.pt` |
 | Tamano del repositorio | 1,2 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadatos) | 2026-10-20 |
 | Ultima actualizacion (metadatos) | 2026-10-20 |
@@ -78,7 +78,7 @@ La model card describe el motor de métricas (Shannon, Pielou, distribuciones de
 
 | Sistema | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AquaPulse (parsabe/AquaPulse) | Ensemble YOLOv8 + BotSORT/ByteTrack + EnKF + LLM local | no disponible | no aplica / no disponible | no disponible | HuggingFace (0 descargas), Docker Hub, Windows, `.deb`, APK |
+| AquaPulse (parsabe/AquaPulse) | Ensemble YOLOv8 + BotSORT/ByteTrack + EnKF + LLM local | no disponible | no aplica / no disponible | no disponible | Hugging Face (0 descargas), Docker Hub, Windows, `.deb`, APK |
 | Ultralytics YOLOv8 (componente base) | Detección de objetos en una sola pasada | no disponible en la información | no aplica | no disponible en la información | Repositorio público de Ultralytics |
 | BotSORT / ByteTrack (componentes de seguimiento) | Seguimiento multiobjeto (CMC + EKF + Re-ID / asociación por dos umbrales) | no disponible | no aplica | no disponible en la información | Repositorios públicos |
 | Asistente Llama-3 vía Ollama (componente conversacional) | LLM decoder-only servido localmente | no disponible en la información | no disponible en la información | no disponible en la información | Ollama / Meta |
@@ -87,7 +87,7 @@ No se identifican en la información proporcionada sistemas comparables de extre
 
 ## Limitaciones y advertencias
 
-- **Ausencia de licencia**: no se declara licencia ni en HuggingFace ni en la model card. Sin licencia explícita, el uso comercial y la redistribución son jurídicamente indeterminados en la mayoría de jurisdicciones.
+- **Ausencia de licencia**: no se declara licencia ni en Hugging Face ni en la model card. Sin licencia explícita, el uso comercial y la redistribución son jurídicamente indeterminados en la mayoría de jurisdicciones.
 - **Sin benchmarks ni validación publicada**: no hay mAP, matrices de confusión, MOTA/IDF1 ni evaluación del EnKF. Las afirmaciones de "enterprise-grade" y "breakthrough" de la model card no están respaldadas por métricas.
 - **Sin paper ni revisión por pares**: no se enlaza publicación técnica, lo que dificulta verificar la metodología de entrenamiento de los pesos YOLO ni la procedencia de las anotaciones.
 - **Riesgo de alucinación en el componente LLM**: el asistente se apoya en un Llama-3 local sin RAG verificable ni anclaje documental descrito; puede generar explicaciones ecológicas plausibles pero incorrectas, especialmente sobre especies o dinámicas no presentes en las detecciones.
@@ -101,7 +101,7 @@ No se identifican en la información proporcionada sistemas comparables de extre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/parsabe/AquaPulse
+- Hugging Face: https://huggingface.co/parsabe/AquaPulse
 - Repositorio GitHub: https://github.com/parsabe/AquaPulse
 - Release Linux `.deb`: https://github.com/parsabe/AquaPulse/releases/tag/deb-install
 - Imagen Docker: https://hub.docker.com/r/parsabe99/aquapulse-ai

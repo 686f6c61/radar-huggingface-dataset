@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Relación | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| droid8_pi05_cent (este) | Régimen centralizado sobre la unión de 8 clientes, batch 256 | no disponible | no disponible | Apache 2.0 | Checkpoint público en HuggingFace |
+| droid8_pi05_cent (este) | Régimen centralizado sobre la unión de 8 clientes, batch 256 | no disponible | no disponible | Apache 2.0 | Checkpoint público en Hugging Face |
 | droid8_pi05 (variante FedAvg) | Mismo dataset y muestras, entrenamiento federado | no disponible | no disponible | no disponible | Referenciada en la model card; identificador exacto no disponible |
 | pi05_base | Modelo base del que parte el fine-tune | no disponible | no disponible | no disponible | Repositorio openpi |
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DecentVLA/droid8_pi05_cent
+- Modelo en Hugging Face: https://huggingface.co/DecentVLA/droid8_pi05_cent
 - Dataset asociado: https://huggingface.co/datasets/DecentVLA/droid8_openpi
 - Implementación openpi (referenciada en la model card para el servicio websocket y los clientes de robot DROID y RoboLab).

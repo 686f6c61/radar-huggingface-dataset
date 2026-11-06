@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GRAI-UNSTPB/gemma4_31b_it_ft_cs_phrase_en | 31B (base) + adaptador LoRA | no disponible | Adaptador LoRA | no disponible | HuggingFace, 0 descargas |
-| Gemma 4 31B IT (modelo base, sin adaptador) | 31B | no disponible | Transformer decoder-only | no disponible | HuggingFace |
-| Otros adaptadores LoRA sobre Gemma | no disponible | no disponible | Adaptador LoRA | variable | HuggingFace |
+| GRAI-UNSTPB/gemma4_31b_it_ft_cs_phrase_en | 31B (base) + adaptador LoRA | no disponible | Adaptador LoRA | no disponible | Hugging Face, 0 descargas |
+| Gemma 4 31B IT (modelo base, sin adaptador) | 31B | no disponible | Transformer decoder-only | no disponible | Hugging Face |
+| Otros adaptadores LoRA sobre Gemma | no disponible | no disponible | Adaptador LoRA | variable | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas de la misma categoria. Los modelos comparables directos serian otros adaptadores LoRA de investigacion sobre la misma familia base, pero no se han identificado en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_phrase_en
+- Hugging Face (modelo): https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_phrase_en
 - Modelo base: https://huggingface.co/unsloth/gemma-4-31B-it-unsloth-bnb-4bit
 - Paper citado en la model card (Lacoste et al., 2019, "Quantifying the Carbon Emissions of Machine Learning"): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental: https://mlco2.github.io/impact#compute

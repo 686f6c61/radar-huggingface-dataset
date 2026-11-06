@@ -69,7 +69,7 @@ No se dispone de información comparativa con otros adaptadores o modelos de la 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/iamPi/qwen36-35b-a3b-top3-qlora_e3
+- Hugging Face del adaptador: https://huggingface.co/iamPi/qwen36-35b-a3b-top3-qlora_e3
 - Guía de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Modelo base en Vast.ai: https://vast.ai/model/qwen36-35b-a3b
 - Página de Ollama para Qwen 3.6 35B-A3B: https://ollama.com/library/qwen3.6:35b-a3b

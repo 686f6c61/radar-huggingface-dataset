@@ -96,7 +96,7 @@ Con n=1 y objetivo en CPU: 1,88x en prosa y 1,48x en prompts mixtos. No se han p
 | Aceptacion p0 en prompts mixtos/codigo | 0,46 / 0,415 | 0,53–0,64 | no disponible |
 | Aceptacion p0 in-domain (prosa) | 0,920 | no disponible | no disponible |
 | Licencia | Apache-2.0 | no disponible | no disponible |
-| Disponibilidad | GGUF y safetensors en HuggingFace | publica | variable |
+| Disponibilidad | GGUF y safetensors en Hugging Face | publica | variable |
 
 La unica referencia cuantitativa publicada por el autor es una cabecera EAGLE-3 publica para Qwen3-4B, que logra 0,53–0,64 en los mismos conjuntos de prompts mixtos y de codigo, frente a 0,46/0,415 de esta cabecera; el autor reconoce que su modelo rinde peor fuera de dominio.
 
@@ -114,7 +114,7 @@ La unica referencia cuantitativa publicada por el autor es una cabecera EAGLE-3 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VitreousCut/Spark-X2.6-4B-EAGLE3
+- Modelo en Hugging Face: https://huggingface.co/VitreousCut/Spark-X2.6-4B-EAGLE3
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 
 No se han encontrado enlaces adicionales (papers, blogs o demos) en la informacion disponible.

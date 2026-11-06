@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Syrus-1B-SFT-v2 es un modelo de lenguaje publicado en HuggingFace por el usuario Kelvin000010191 (Kelvin Tepes), con acceso restringido (gated) y sin model card pública más allá de los metadatos del repositorio. Los pesos en safetensors suman 1.720.574.976 parámetros, es decir, 1,72 mil millones, pese a que el nombre comercial del checkpoint indica "1B". La etiqueta `qwen3` del repositorio apunta a una arquitectura de la familia Qwen 3, aunque no hay confirmación oficial en la información disponible.
+Syrus-1B-SFT-v2 es un modelo de lenguaje publicado en Hugging Face por el usuario Kelvin000010191 (Kelvin Tepes), con acceso restringido (gated) y sin model card pública más allá de los metadatos del repositorio. Los pesos en safetensors suman 1.720.574.976 parámetros, es decir, 1,72 mil millones, pese a que el nombre comercial del checkpoint indica "1B". La etiqueta `qwen3` del repositorio apunta a una arquitectura de la familia Qwen 3, aunque no hay confirmación oficial en la información disponible.
 
 El sufijo "SFT" sugiere un ajuste supervisado (supervised fine-tuning) sobre un modelo base, y "v2" indica una segunda revisión del checkpoint. No se han publicado datos sobre el conjunto de entrenamiento, el número de tokens, la longitud de contexto ni la licencia, lo que limita seriamente cualquier evaluación de producción.
 
@@ -21,7 +21,7 @@ Su relevancia potencial reside en el segmento de modelos pequeños (1-2B) desple
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 69,4 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | No disponible |
 | Fecha de creacion | 21 de octubre de 2026 |
 | Ultima actualizacion | 23 de octubre de 2026 |
@@ -79,9 +79,9 @@ Los datos de los modelos comparables provienen de sus fichas públicas; los del 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| Syrus-1B-SFT-v2 | 1,72B | No disponible | No disponible | Gated en HuggingFace | No disponible |
+| Syrus-1B-SFT-v2 | 1,72B | No disponible | No disponible | Gated en Hugging Face | No disponible |
 | Qwen3-1.7B | 1,7B | 32.768 tokens (extensible) | Apache 2.0 | Abierta | Amplia documentación |
-| Llama 3.2 1B | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Gated en HuggingFace y Meta | Amplia documentación |
+| Llama 3.2 1B | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Gated en Hugging Face y Meta | Amplia documentación |
 | Gemma 3 1B | 1B | 32.000 tokens | Terminos de uso de Gemma | Abierta | Amplia documentación |
 
 La diferencia principal no está en el tamaño, sino en la trazabilidad: los tres modelos de referencia publican licencia, idiomas y evaluaciones, mientras que Syrus-1B-SFT-v2 no ofrece ninguno de esos datos. Para cualquier uso en producción, los modelos comparables presentan menor riesgo legal y técnico.
@@ -89,7 +89,7 @@ La diferencia principal no está en el tamaño, sino en la trazabilidad: los tre
 ## Limitaciones y advertencias
 
 - Licencia no disponible: no se puede determinar si el uso comercial está permitido. Esto bloquea por sí solo cualquier despliegue en producto.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que añade fricción para CI/CD y para la reproducibilidad de experimentos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que añade fricción para CI/CD y para la reproducibilidad de experimentos.
 - Ausencia total de model card: no hay información sobre datos de entrenamiento, por lo que no se pueden evaluar sesgos, contaminación de benchmarks ni procedencia de los datos.
 - Riesgo de alucinación: desconocido y no medido; en un modelo de 1,72B el riesgo suele ser alto, pero no hay evidencia publicada para este checkpoint.
 - Limitaciones de contexto e idioma: se desconocen la ventana de contexto y los idiomas cubiertos; no se debe asumir un rendimiento correcto en castellano.
@@ -101,7 +101,7 @@ La diferencia principal no está en el tamaño, sino en la trazabilidad: los tre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kelvin000010191/Syrus-1B-SFT-v2
+- Modelo en Hugging Face: https://huggingface.co/Kelvin000010191/Syrus-1B-SFT-v2
 - Perfil del autor: https://huggingface.co/Kelvin000010191
 - Otro checkpoint del autor, Vanessa-1B: https://huggingface.co/Kelvin000010191/Vanessa-1B
 - Registro de Syrus-1B-DPO en free2aitools: https://free2aitools.com/model/kelvin000010191/syrus-1b-dpo

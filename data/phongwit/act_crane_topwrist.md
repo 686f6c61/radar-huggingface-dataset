@@ -67,7 +67,7 @@ No disponible. La información proporcionada no incluye otros checkpoints ACT co
 - Licencia Apache 2.0: permite uso comercial, pero la ausencia de validación en hardware real desaconseja su uso en producción sin reentrenamiento y evaluación adicionales.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Phongwit/act_crane_topwrist
+- Modelo en Hugging Face: https://huggingface.co/Phongwit/act_crane_topwrist
 - Dataset de entrenamiento: https://huggingface.co/datasets/Phongwit/crane_pick_place_topwrist
 - Episodios NPZ de validación/test: https://huggingface.co/datasets/Phongwit/crane_pick_place_episodes
 - Código del proyecto: https://github.com/bamboo51/Arm-Robot-Picking

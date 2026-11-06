@@ -109,7 +109,7 @@ La única comparación con datos verificables en la información proporcionada e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-AI/DeepSeek-V4.1-Flash-1017-DERISKED-FP8
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-AI/DeepSeek-V4.1-Flash-1017-DERISKED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia (referenciada en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Perfil del autor en X: https://x.com/Blackfrost_AI

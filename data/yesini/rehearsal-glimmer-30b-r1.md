@@ -72,8 +72,8 @@ En 300 decisiones de una población distinta (personas diseñadas por Muse Wonde
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rehearsal-Glimmer-30B-r1 | ~29,8 B | No disponible | Simulación de decisiones con imagen y texto | Apache 2.0 | HuggingFace (Yesini) |
-| meta-models/Muse-Glimmer-30B | No disponible | No disponible | Multimodal image-text-to-text general | No disponible | HuggingFace (meta-models) |
+| Rehearsal-Glimmer-30B-r1 | ~29,8 B | No disponible | Simulación de decisiones con imagen y texto | Apache 2.0 | Hugging Face (Yesini) |
+| meta-models/Muse-Glimmer-30B | No disponible | No disponible | Multimodal image-text-to-text general | No disponible | Hugging Face (meta-models) |
 | Muse Spark | No disponible | No disponible | Modelo generador de referencia para destilación | No disponible | No disponible como pesos públicos |
 
 No se dispone de datos suficientes sobre Muse-Glimmer-30B ni Muse Spark (parámetros, contexto, benchmarks) para una comparación cuantitativa completa. La comparación relevante es la de la tabla de resultados: el modelo ajustado se aproxima a Spark (84-85 % de coincidencia) mejor que la base sin ajustar (74 %).
@@ -92,7 +92,7 @@ No se dispone de datos suficientes sobre Muse-Glimmer-30B ni Muse Spark (paráme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yesini/Rehearsal-Glimmer-30B-r1
+- Modelo en Hugging Face: https://huggingface.co/Yesini/Rehearsal-Glimmer-30B-r1
 - Adaptador LoRA: https://huggingface.co/Yesini/Rehearsal-Glimmer-30B-r1-LoRA
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio del proyecto (código y método): https://github.com/tokyosini573/META-Global-AI-Developer-Hackathon

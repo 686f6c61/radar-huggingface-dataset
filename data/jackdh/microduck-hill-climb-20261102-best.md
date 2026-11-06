@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye otras políticas microdu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JackDH/microduck-hill-climb-20261102-best
+- Hugging Face: https://huggingface.co/JackDH/microduck-hill-climb-20261102-best
 - Repositorio de entrenamiento: https://github.com/JackDanHollister/microduck-challenges
 - Proyecto microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio (ruta citada en la model card; URL completa no disponible)

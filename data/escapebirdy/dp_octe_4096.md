@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp_octe_4096 es un checkpoint de política robótica de tipo Diffusion Policy, publicado en HuggingFace por el usuario escapebirdy dentro del ecosistema LeRobot de HuggingFace. No es un modelo de lenguaje: se trata de un modelo de control visuomotor que trata el control como un proceso generativo de difusión, produciendo trayectorias de acción multimodales y suaves, con buen comportamiento en tareas de manipulación con contacto rico. El modelo tiene 267.184.420 parámetros (~267 M) y se distribuye en safetensors dentro de un repositorio de 2,1 GB.
+dp_octe_4096 es un checkpoint de política robótica de tipo Diffusion Policy, publicado en Hugging Face por el usuario escapebirdy dentro del ecosistema LeRobot de Hugging Face. No es un modelo de lenguaje: se trata de un modelo de control visuomotor que trata el control como un proceso generativo de difusión, produciendo trayectorias de acción multimodales y suaves, con buen comportamiento en tareas de manipulación con contacto rico. El modelo tiene 267.184.420 parámetros (~267 M) y se distribuye en safetensors dentro de un repositorio de 2,1 GB.
 
 El nombre del checkpoint sugiere una política de difusión (dp) asociada a observaciones de nube de puntos de 4096 puntos, en línea con el dataset de entrenamiento declarado, escapebirdy/cut_4096_v3. La model card es la plantilla genérica de LeRobot y aporta información mínima: licencia Apache-2.0, librería lerobot, pipeline robotics y el paper de referencia (Diffusion Policy, arXiv:2303.04137). No se documentan datos de entrenamiento, número de episodios, configuración de hardware ni resultados de evaluación.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Observaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp_octe_4096 | Diffusion Policy | 267.184.420 | Nube de puntos 4096 puntos + estado | apache-2.0 | Checkpoint en HuggingFace |
+| dp_octe_4096 | Diffusion Policy | 267.184.420 | Nube de puntos 4096 puntos + estado | apache-2.0 | Checkpoint en Hugging Face |
 | Diffusion Policy (paper arXiv:2303.04137) | Diffusion Policy | no disponible | RGB y/o estado, según variante | no disponible | Código de referencia del paper |
 | ACT (Action Chunking Transformer, ecosistema LeRobot) | Transformer con action chunking | no disponible | RGB + estado | no disponible | Implementación en LeRobot |
 | Políticas VLA (por ejemplo OpenVLA, SmolVLA) | VLA con lenguaje | no disponible | RGB + instrucción en lenguaje natural | no disponible | Repositorios públicos |
@@ -85,7 +85,7 @@ No es posible establecer una comparación cuantitativa de rendimiento con altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/escapebirdy/dp_octe_4096
+- Modelo en Hugging Face: https://huggingface.co/escapebirdy/dp_octe_4096
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/escapebirdy/cut_4096_v3
 - Dataset relacionado localizado en la búsqueda: https://huggingface.co/datasets/escapebirdy/cut_4096_v2
 - Paper de Diffusion Policy: https://huggingface.co/papers/2303.04137

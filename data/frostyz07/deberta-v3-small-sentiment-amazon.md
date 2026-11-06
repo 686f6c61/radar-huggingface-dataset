@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`deberta-v3-small-sentiment-amazon` es un modelo de clasificación de texto obtenido por fine-tuning supervisado de `microsoft/deberta-v3-small` (141.896.450 parámetros) sobre un corpus de opiniones que el autor no documenta, aunque el nombre del modelo indica que se trata de reseñas de Amazon. Lo publica el usuario FrostyZ07 en HuggingFace con licencia MIT y pipeline `text-classification`, es decir, no es un modelo generativo sino un encoder que devuelve una etiqueta de sentimiento por entrada.
+`deberta-v3-small-sentiment-amazon` es un modelo de clasificación de texto obtenido por fine-tuning supervisado de `microsoft/deberta-v3-small` (141.896.450 parámetros) sobre un corpus de opiniones que el autor no documenta, aunque el nombre del modelo indica que se trata de reseñas de Amazon. Lo publica el usuario FrostyZ07 en Hugging Face con licencia MIT y pipeline `text-classification`, es decir, no es un modelo generativo sino un encoder que devuelve una etiqueta de sentimiento por entrada.
 
 El interés práctico del modelo no está en su originalidad arquitectónica —hereda íntegramente el encoder DeBERTa-v3, con atención desenredada y embeddings de posición relativos— sino en el ajuste fino: el autor reporta 0,9560 de accuracy y de F1 macro sobre el conjunto de evaluación, con una pérdida de validación de 0,1621 tras tres épocas. Son cifras propias de un clasificador de sentimiento bien ajustado en un dominio concreto, y el modelo cabe holgadamente en cualquier GPU de consumo.
 
@@ -98,7 +98,7 @@ Frente a estas alternativas, la ventaja de este modelo es el ajuste específico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrostyZ07/deberta-v3-small-sentiment-amazon
+- Modelo en Hugging Face: https://huggingface.co/FrostyZ07/deberta-v3-small-sentiment-amazon
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small
 - Paper de DeBERTa-v3 (arquitectura del backbone): https://arxiv.org/abs/2111.09543
 - Documentación de Transformers para clasificación de secuencias: https://huggingface.co/docs/transformers/tasks/sequence_classification

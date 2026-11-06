@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EchoCare es un modelo publicado en HuggingFace por el usuario Moenupa bajo el identificador `Moenupa/EchoCare`. Se distribuye en formato safetensors y es compatible con la librería transformers. El repositorio tiene un tamano de 0,5 GB y contiene 120.319.992 parametros segun los metadatos reales de los pesos.
+EchoCare es un modelo publicado en Hugging Face por el usuario Moenupa bajo el identificador `Moenupa/EchoCare`. Se distribuye en formato safetensors y es compatible con la librería transformers. El repositorio tiene un tamano de 0,5 GB y contiene 120.319.992 parametros segun los metadatos reales de los pesos.
 
 La etiqueta de arquitectura presente en el repositorio es `monai_swin_transformer`, lo que apunta a un transformer de tipo Swin adaptado del ecosistema MONAI (Medical Open Network for AI), orientado habitualmente a imagen medica. No obstante, la model card es una plantilla autogenerada sin contenido sustantivo: no se documentan el problema que resuelve, el dominio de aplicacion ni los datos de entrenamiento.
 
@@ -44,7 +44,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens o imag
 ## Casos de uso
 
 - Investigacion sobre arquitecturas Swin en el ecosistema MONAI: el modelo puede servir como punto de partida para inspeccionar pesos y configuracion de un Swin Transformer de 120 millones de parametros.
-- Experimentacion academica con checkpoints sin documentar: util para estudiar practicas de publicacion en HuggingFace y la trazabilidad de modelos.
+- Experimentacion academica con checkpoints sin documentar: util para estudiar practicas de publicacion en Hugging Face y la trazabilidad de modelos.
 - Analisis forense de modelos: inspeccion de la configuracion y los tensores para inferir la tarea real (clasificacion, segmentacion u otra) antes de cualquier uso.
 - Pruebas de carga en pipelines de transformers: verificar la compatibilidad del checkpoint con la libreria y con endpoints compatibles.
 - Base para comparativas de arquitecturas de vision: contrastar el numero de parametros y el tamano de repositorio con otras variantes Swin.
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Moenupa/EchoCare | 120,3 M | no disponible | no disponible | HuggingFace | Model card vacia, arquitectura Swin segun etiqueta |
-| Swin Transformer base (variantes publicas MONAI) | ~88 M (Swin-B) | no aplica (vision) | MIT/Apache segun variante | HuggingFace, MONAI Model Zoo | Documentacion y evaluacion disponibles |
+| Moenupa/EchoCare | 120,3 M | no disponible | no disponible | Hugging Face | Model card vacia, arquitectura Swin segun etiqueta |
+| Swin Transformer base (variantes publicas MONAI) | ~88 M (Swin-B) | no aplica (vision) | MIT/Apache segun variante | Hugging Face, MONAI Model Zoo | Documentacion y evaluacion disponibles |
 | Otros checkpoints MONAI del Model Zoo | variable | no aplica (vision) | variable | MONAI Model Zoo | Tareas de imagen medica documentadas |
 
 La comparativa es aproximada: no se dispone de datos de rendimiento de EchoCare y la variante exacta de Swin no esta confirmada. Las alternativas del Model Zoo de MONAI ofrecen documentacion y evaluacion que EchoCare no proporciona.
@@ -88,7 +88,7 @@ La comparativa es aproximada: no se dispone de datos de rendimiento de EchoCare 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Moenupa/EchoCare
+- Hugging Face: https://huggingface.co/Moenupa/EchoCare
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - MONAI (ecosistema asociado a la etiqueta de arquitectura): https://monai.io

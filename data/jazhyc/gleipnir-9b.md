@@ -85,7 +85,7 @@ No se dispone de comparativas publicas con otros monitores de deteccion de esque
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jazhyc/Gleipnir-9B
+- Modelo en Hugging Face: https://huggingface.co/Jazhyc/Gleipnir-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper relacionado (no del modelo, pero relevante): "Training Deliberative Monitors for Black-Box Scheming Detection" - https://alpha-ollama.hf-mirror.com/papers/2605.29601
 - No se ha publicado paper ni blog post propio del modelo en la informacion disponible.

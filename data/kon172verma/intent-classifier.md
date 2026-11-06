@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos en el mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kon172verma/intent-classifier
+- Repositorio Hugging Face: https://huggingface.co/kon172verma/intent-classifier
 - Repositorio de experimentos: https://huggingface.co/kon172verma/intent-classifier-experiments
 - Código de entrenamiento (GitHub): https://github.com/kon172verma/intent-classifier
 - Código de inferencia y benchmarking (GitHub): https://github.com/kon172verma/intent-classifier-inference

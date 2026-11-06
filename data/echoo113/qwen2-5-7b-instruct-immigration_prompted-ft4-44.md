@@ -55,7 +55,7 @@ No hay datos específicos de rendimiento para este fine-tune. Como referencia, s
 |---|---|---|---|---|
 | Echoo113/Qwen2.5-7B-Instruct-immigration_prompted-ft4.44 | ~7B | 32k (base) | no disponible | Hugging Face |
 | GMorgulis/Qwen2.5-7B-Instruct-immigration-STEER0.554688-ft4.44 | ~7B | 32k (base) | no disponible | Hugging Face |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7B | 32k | Apache 2.0 | HuggingFace, ModelScope |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7B | 32k | Apache 2.0 | Hugging Face, ModelScope |
 
 ## Limitaciones y advertencias
 - No se dispone de documentación sobre el conjunto de datos de entrenamiento, por lo que no se puede evaluar la calidad del ajuste ni su sesgo.

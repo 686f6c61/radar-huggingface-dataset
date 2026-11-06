@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`model-3-4661eff4` es un clasificador de imágenes de plantas medicinales publicado en HuggingFace por el usuario `med-herb-lens` bajo licencia CC BY 4.0. No se trata de un modelo de lenguaje ni de un modelo fundacional entrenado desde cero, sino de una cabeza de clasificación lineal entrenada en dispositivo sobre los embeddings congelados del extractor de características `dinov2_vits14` de MediaPipe (Apache 2.0). El resultado se exporta en formato TensorFlow Lite para inferencia on-device.
+`model-3-4661eff4` es un clasificador de imágenes de plantas medicinales publicado en Hugging Face por el usuario `med-herb-lens` bajo licencia CC BY 4.0. No se trata de un modelo de lenguaje ni de un modelo fundacional entrenado desde cero, sino de una cabeza de clasificación lineal entrenada en dispositivo sobre los embeddings congelados del extractor de características `dinov2_vits14` de MediaPipe (Apache 2.0). El resultado se exporta en formato TensorFlow Lite para inferencia on-device.
 
 El modelo resuelve una tarea muy acotada: clasificar una imagen RGB de 224×224 píxeles en una de diez especies vegetales concretas (Cyperus iria, Echinochloa colonum, Imperata cylindrica, Ipomoea aquatica, Mimosa pigra, Nelumbo nucifera, Phragmites karka, Phyllanthus reticulatus, Praxelis clematidea y Tropaeolum majus). Forma parte del ecosistema de la aplicación Med Herb Lens, una app prototipo de identificación de plantas medicinales descrita en dos publicaciones académicas (Procedia Computer Science 2025 e IoT 2025).
 
-Su relevancia es limitada y de nicho: demuestra un flujo de aprendizaje continuo en el borde (edge) donde usuarios finales pueden añadir especies y reentrenar la capa final sin salir del dispositivo. No dispone de datos publicados de rendimiento, benchmarks ni tamaño de parámetros, y su repo ocupa 0.0 GB según HuggingFace, lo que sugiere un artefacto muy pequeño.
+Su relevancia es limitada y de nicho: demuestra un flujo de aprendizaje continuo en el borde (edge) donde usuarios finales pueden añadir especies y reentrenar la capa final sin salir del dispositivo. No dispone de datos publicados de rendimiento, benchmarks ni tamaño de parámetros, y su repo ocupa 0.0 GB según Hugging Face, lo que sugiere un artefacto muy pequeño.
 
 ## Especificaciones tecnicas
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Clases | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `model-3-4661eff4` (este) | Cabeza lineal sobre DINOv2 ViT-S/14, TFLite | 10 especies | 224×224 RGB | CC BY 4.0 | HuggingFace, 8 descargas |
+| `model-3-4661eff4` (este) | Cabeza lineal sobre DINOv2 ViT-S/14, TFLite | 10 especies | 224×224 RGB | CC BY 4.0 | Hugging Face, 8 descargas |
 | PlantNet / Pl@ntNet API | Servicio en la nube, modelo propietario | Miles de especies | Imagen variable | Propietaria / API comercial | API pública con cuotas |
 | iNaturalist (CV model) | Clasificador en la nube | Miles de especies | Imagen variable | Modelo no redistribuible | Solo vía API |
-| DINOv2 ViT-S/14 (base) | Embedder visual | N/A (features) | 224×224 o superior | Apache 2.0 | HuggingFace, ampliamente usado |
+| DINOv2 ViT-S/14 (base) | Embedder visual | N/A (features) | 224×224 o superior | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación directa con Pl@ntNet o iNaturalist no es equitativa: este modelo cubre solo diez especies y no publica métricas, mientras que los servicios en la nube cubren miles de especies con validación extensa. Su ventaja es la inferencia local, la licencia permisiva y la posibilidad de reentrenamiento por el usuario.
 
@@ -82,7 +82,7 @@ La comparación directa con Pl@ntNet o iNaturalist no es equitativa: este modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/med-herb-lens/model-3-4661eff4
+- Hugging Face: https://huggingface.co/med-herb-lens/model-3-4661eff4
 - Página de la app Med Herb Lens: https://med-herb-lens.pages.dev/about.html
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Paper de referencia (Procedia Computer Science, 2025): https://doi.org/10.1016/j.procs.2025.09.382

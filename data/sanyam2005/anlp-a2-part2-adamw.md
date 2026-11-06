@@ -78,8 +78,8 @@ No se dispone de resultados comparativos con otros modelos en la informacion pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sanyam2005/anlp-a2-part2-adamw | 27.269.632 | no disponible | no disponible | HuggingFace (safetensors) | Variante con AdamW del ejercicio ANLP A2 |
-| unignoramus/anlp-a2-p2-adamw | no disponible | no disponible | no disponible | HuggingFace | Mismo ejercicio, optimizador AdamW, transformer decoder-only preentrenado sobre el corpus paralelo humano/IA en ingles |
+| sanyam2005/anlp-a2-part2-adamw | 27.269.632 | no disponible | no disponible | Hugging Face (safetensors) | Variante con AdamW del ejercicio ANLP A2 |
+| unignoramus/anlp-a2-p2-adamw | no disponible | no disponible | no disponible | Hugging Face | Mismo ejercicio, optimizador AdamW, transformer decoder-only preentrenado sobre el corpus paralelo humano/IA en ingles |
 | Otros modelos de ~27 M de parametros (por ejemplo, GPT-2 small tiene 124 M) | No se dispone de comparativas publicadas en la informacion proporcionada | no disponible | no disponible | no disponible | No hay benchmarks comunes que permitan una comparacion rigurosa |
 
 No hay datos de rendimiento comparables entre estas variantes en la informacion disponible. La unica comparacion posible es de naturaleza experimental (mismo corpus, mismo presupuesto, distinto optimizador), y los resultados de esa comparacion no se incluyen en la informacion proporcionada.
@@ -98,7 +98,7 @@ No hay datos de rendimiento comparables entre estas variantes en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanyam2005/anlp-a2-part2-adamw
+- Modelo en Hugging Face: https://huggingface.co/sanyam2005/anlp-a2-part2-adamw
 - Perfil del autor: https://huggingface.co/sanyam2005
 - Variante equivalente de otro autor (AdamW): https://huggingface.co/unignoramus/anlp-a2-p2-adamw
 - Referencia sobre la implementacion de AdamW en el contexto del curso: https://deepwiki.com/cmu-l3/anlp-fall2025-hw1/3.3-adamw-optimizer-(optimizer.py)

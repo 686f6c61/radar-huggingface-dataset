@@ -75,7 +75,7 @@ La comparativa se basa en caracteristicas generales, ya que no hay datos de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Qwen3.8-2B-Heretic-Max-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Qwen3.8-2B-Heretic-Max-i1-GGUF
 - Repositorio estatico de cuantizaciones: https://huggingface.co/mradermacher/Qwen3.8-2B-Heretic-Max-GGUF
 - Modelo base: https://huggingface.co/MihaiPopa-1/Qwen3.8-2B-Heretic-Max
 - Herramienta Heretic (GitHub): https://github.com/p-e-w/heretic

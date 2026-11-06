@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KREA2_Edit_SNOFS_Merge es un merge no oficial de pesos publicado por el usuario Fronyax en HuggingFace. Combina tres componentes: el modelo base Krea 2 de Krea AI, la adaptación Krea 2 Identity Edit v1.2 de conradlocke y el LoKr SNOFS v1.4 de Ashen. El resultado es un modelo de difusión orientado a edición de imágenes por identidad, con ambas adaptaciones integradas en los pesos, de modo que no es necesario cargar los LoRA por separado.
+KREA2_Edit_SNOFS_Merge es un merge no oficial de pesos publicado por el usuario Fronyax en Hugging Face. Combina tres componentes: el modelo base Krea 2 de Krea AI, la adaptación Krea 2 Identity Edit v1.2 de conradlocke y el LoKr SNOFS v1.4 de Ashen. El resultado es un modelo de difusión orientado a edición de imágenes por identidad, con ambas adaptaciones integradas en los pesos, de modo que no es necesario cargar los LoRA por separado.
 
 El repositorio contiene 12.820.073.036 parámetros en formato safetensors y ocupa 106,7 GB, lo que sitúa al modelo en la franja de los modelos de difusión de gran tamaño. Se distribuye principalmente en variantes GGUF, además de versiones BF16, INT8 e INT4 según indica la model card, y requiere el nodo ComfyUI-Krea2Edit porque la adaptación de edición se entrenó con condicionamiento dual (tokens VAE en contexto más codificación Qwen3-VL anclada a imagen), algo que los nodos estándar de ComfyUI no proporcionan.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fronyax/KREA2_Edit_SNOFS_Merge
+- Hugging Face: https://huggingface.co/Fronyax/KREA2_Edit_SNOFS_Merge
 - ComfyUI-Krea2Edit: https://github.com/lbouaraba/comfyui-krea2edit
 - ComfyUI-GGUF: https://github.com/molbal/ComfyUI-GGUF
 - Krea AI (modelo base): no disponible en la información proporcionada

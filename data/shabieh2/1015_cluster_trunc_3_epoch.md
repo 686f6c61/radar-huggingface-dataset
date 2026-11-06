@@ -4,7 +4,7 @@
 
 `shabieh2/1015_cluster_trunc_3_epoch` es un adaptador LoRA distribuido en formato PEFT, no un modelo completo. Se entrenó sobre el modelo base `unsloth/Muse-Glimmer-30B`, un modelo de generación de texto del que la información disponible no aporta especificaciones. El repositorio pesa 0,9 GB y contiene únicamente los pesos del adaptador y su configuración, por lo que su uso requiere descargar por separado el modelo base y cargarlo en memoria.
 
-El adaptador se publicó el 14 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 valoraciones. La model card del autor es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, de modo que no hay información sobre el conjunto de datos de entrenamiento, hiperparámetros, dominio de especialización ni evaluación.
+El adaptador se publicó el 14 de octubre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 valoraciones. La model card del autor es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, de modo que no hay información sobre el conjunto de datos de entrenamiento, hiperparámetros, dominio de especialización ni evaluación.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente crítica: documenta un artefacto del que se desconoce casi todo y sirve como ejemplo de publicación de adaptadores sin trazabilidad. Los datos técnicos que siguen proceden exclusivamente de los metadatos del repositorio, y todo lo no confirmado se marca como "no disponible".
 
@@ -67,7 +67,7 @@ Todas las cifras de esta sección son estimaciones de ingeniería derivadas del 
 - VRAM para el modelo base en cuantización de 4 bits: del orden de 17-20 GB de pesos, viable en una RTX 4090 (24 GB) o RTX 3090 (24 GB) con contexto corto y batch 1.
 - GPU recomendadas: A100 80 GB o H100 80 GB para fp16; una única GPU consumer de 24 GB solo con cuantización agresiva.
 - Viabilidad en GPU de consumo: probable únicamente con cuantización de 4 bits y ventanas de contexto reducidas. No confirmado.
-- Opciones de despliegue: al ser un adaptador PEFT, es compatible con cargadores de HuggingFace Transformers y con vLLM y TGI si estos soportan el modelo base; llama.cpp y Ollama requerirían fusionar el adaptador con el modelo base y convertirlo a GGUF, y no hay artefactos de este tipo en el repositorio.
+- Opciones de despliegue: al ser un adaptador PEFT, es compatible con cargadores de Hugging Face Transformers y con vLLM y TGI si estos soportan el modelo base; llama.cpp y Ollama requerirían fusionar el adaptador con el modelo base y convertirlo a GGUF, y no hay artefactos de este tipo en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de velocidad, tamaño de lote ni tiempos de entrenamiento.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No disponible. Establecer una comparativa exige conocer las especificaciones del
 
 | Elemento | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| shabieh2/1015_cluster_trunc_3_epoch | no disponible (adaptador) | no disponible | no disponible | publico en HuggingFace, 0 descargas | no |
+| shabieh2/1015_cluster_trunc_3_epoch | no disponible (adaptador) | no disponible | no disponible | publico en Hugging Face, 0 descargas | no |
 | unsloth/Muse-Glimmer-30B (base) | no disponible (el nombre sugiere 30B) | no disponible | no disponible | referenciado como base | no |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no |
 
@@ -94,7 +94,7 @@ No disponible. Establecer una comparativa exige conocer las especificaciones del
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shabieh2/1015_cluster_trunc_3_epoch
+- Repositorio Hugging Face: https://huggingface.co/shabieh2/1015_cluster_trunc_3_epoch
 - Modelo base referenciado: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Librería PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

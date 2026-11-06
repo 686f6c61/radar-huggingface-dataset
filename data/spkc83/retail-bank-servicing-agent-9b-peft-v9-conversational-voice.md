@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este adaptador con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v9-conversational-voice
+- Repositorio Hugging Face del adaptador: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v9-conversational-voice
 - Modelo base: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b
 - Adaptador padre v5-remediation: https://huggingface.co/spkc83/retail-bank-servicing-agent-9b-peft-v5-remediation
 - Repositorio GitHub del proyecto: https://github.com/spkc83/retail-bank-servicing

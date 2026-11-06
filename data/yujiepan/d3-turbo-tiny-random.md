@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la información disponible. Cual
 
 | Modelo | Parámetros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yujiepan/d3-turbo-tiny-random` | 8,2 M | Decisión multimodal D3 (aleatorio) | No disponible | No disponible | HuggingFace, 0 descargas |
-| `vllm-sr/d3-turbo` | 27B (según fuentes web) | Decisión multimodal D3 (entrenado) | No disponible | No disponible | HuggingFace; familia publicada en Ollama |
-| `yujiepan/deepseek-v3.1-tiny-random` | No disponible | Tiny aleatorio para depuración, adaptado de DeepSeek-V3.1 | No disponible | No disponible | HuggingFace |
-| `yujiepan/llama-3.1-tiny-random` | 1,03 M | Generación de texto aleatoria para depuración | No disponible | No disponible | HuggingFace, 405 descargas |
+| `yujiepan/d3-turbo-tiny-random` | 8,2 M | Decisión multimodal D3 (aleatorio) | No disponible | No disponible | Hugging Face, 0 descargas |
+| `vllm-sr/d3-turbo` | 27B (según fuentes web) | Decisión multimodal D3 (entrenado) | No disponible | No disponible | Hugging Face; familia publicada en Ollama |
+| `yujiepan/deepseek-v3.1-tiny-random` | No disponible | Tiny aleatorio para depuración, adaptado de DeepSeek-V3.1 | No disponible | No disponible | Hugging Face |
+| `yujiepan/llama-3.1-tiny-random` | 1,03 M | Generación de texto aleatoria para depuración | No disponible | No disponible | Hugging Face, 405 descargas |
 
 Frente a los otros tiny-random del mismo autor, este se distingue por conservar el vocabulario completo del modelo fuente (248.320 filas, que suponen unos 7,95 M de los 8,2 M de parámetros) y por mantener la interfaz de decisión en lugar de una cabeza de lenguaje.
 
@@ -101,7 +101,7 @@ Frente a los otros tiny-random del mismo autor, este se distingue por conservar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yujiepan/d3-turbo-tiny-random
+- Modelo en Hugging Face: https://huggingface.co/yujiepan/d3-turbo-tiny-random
 - Modelo base: https://huggingface.co/vllm-sr/d3-turbo
 - Perfil del autor: https://huggingface.co/yujiepan
 - `yujiepan/deepseek-v3.1-tiny-random`: https://huggingface.co/yujiepan/deepseek-v3.1-tiny-random

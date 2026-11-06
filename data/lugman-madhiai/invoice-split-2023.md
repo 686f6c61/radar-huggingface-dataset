@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lugman-madhiai/invoice-split-2023` es un ajuste fino (fine-tune) del modelo multimodal `unsloth/Qwen3-VL-8B-Instruct`, publicado por el usuario de HuggingFace lugman-madhiai bajo licencia Apache-2.0. Se trata de un modelo de 8.767.123.696 parámetros (unos 8,77 mil millones), denso y multimodal, orientado a tareas de imagen-a-texto, con un nombre que apunta a un uso muy concreto: la separación y el tratamiento de facturas dentro de documentos que contienen varias de ellas (invoice splitting).
+`lugman-madhiai/invoice-split-2023` es un ajuste fino (fine-tune) del modelo multimodal `unsloth/Qwen3-VL-8B-Instruct`, publicado por el usuario de Hugging Face lugman-madhiai bajo licencia Apache-2.0. Se trata de un modelo de 8.767.123.696 parámetros (unos 8,77 mil millones), denso y multimodal, orientado a tareas de imagen-a-texto, con un nombre que apunta a un uso muy concreto: la separación y el tratamiento de facturas dentro de documentos que contienen varias de ellas (invoice splitting).
 
 La relevancia de esta ficha es limitada pero informativa: el repositorio no incluye datos de evaluación, ni descripción del conjunto de datos de entrenamiento, ni métricas de rendimiento. Su interés principal es doble. Por un lado, documenta un caso típico de especialización mediante fine-tune supervisado sobre un modelo base de visión-lenguaje de última generación. Por otro, forma parte de un grupo de publicaciones del mismo autor centradas en facturas (`invoice-structured-extraction`, `invoice-structured-extraction-sft`), lo que sugiere una línea de trabajo de automatización documental en el ámbito de cuentas a pagar.
 
-El modelo se entrenó, según la propia model card, con Unsloth y la librería TRL de HuggingFace, con una mejora declarada de velocidad de entrenamiento de 2x. No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación adicionales (DPO, RLHF) más allá del ajuste supervisado.
+El modelo se entrenó, según la propia model card, con Unsloth y la librería TRL de Hugging Face, con una mejora declarada de velocidad de entrenamiento de 2x. No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación adicionales (DPO, RLHF) más allá del ajuste supervisado.
 
 ## Especificaciones técnicas
 
@@ -81,10 +81,10 @@ Los datos de contexto y licencia de los modelos comparados provienen de su docum
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| invoice-split-2023 | 8,77B (denso, multimodal) | No disponible | Apache-2.0 | HuggingFace, 0 descargas | Fine-tune sin evaluación publicada |
-| Qwen3-VL-8B-Instruct (modelo base) | ~8,8B (denso, multimodal) | 262.144 tokens según su documentación | Apache-2.0 | HuggingFace | Modelo generalista con evaluación publicada por su autor |
-| Qwen2.5-VL-7B-Instruct | 7B (denso, multimodal) | 128.000 tokens según su documentación | Apache-2.0 | HuggingFace | Generación anterior de la misma familia |
-| Llama-3.2-11B-Vision-Instruct | 11B (denso, multimodal) | 128.000 tokens según su documentación | Licencia comunitaria de Llama 3.2 | HuggingFace | Sujeta a condiciones adicionales de uso |
+| invoice-split-2023 | 8,77B (denso, multimodal) | No disponible | Apache-2.0 | Hugging Face, 0 descargas | Fine-tune sin evaluación publicada |
+| Qwen3-VL-8B-Instruct (modelo base) | ~8,8B (denso, multimodal) | 262.144 tokens según su documentación | Apache-2.0 | Hugging Face | Modelo generalista con evaluación publicada por su autor |
+| Qwen2.5-VL-7B-Instruct | 7B (denso, multimodal) | 128.000 tokens según su documentación | Apache-2.0 | Hugging Face | Generación anterior de la misma familia |
+| Llama-3.2-11B-Vision-Instruct | 11B (denso, multimodal) | 128.000 tokens según su documentación | Licencia comunitaria de Llama 3.2 | Hugging Face | Sujeta a condiciones adicionales de uso |
 
 Para tareas concretas de facturación también se emplean APIs propietarias (por ejemplo, GPT-4o mini, mencionado en herramientas de la comunidad para trocear PDF con varias facturas), pero no se dispone de datos comparativos con este modelo.
 
@@ -104,12 +104,12 @@ Para tareas concretas de facturación también se emplean APIs propietarias (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/invoice-split-2023
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/invoice-split-2023
 - Modelo base: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/lugman-madhiai
+- Perfil del autor en Hugging Face: https://huggingface.co/lugman-madhiai
 - Modelo hermano (extracción estructurada de facturas): https://huggingface.co/lugman-madhiai/invoice-structured-extraction
 - Modelo hermano (SFT de extracción estructurada): https://friendli.ai/models/lugman-madhiai/invoice-structured-extraction-sft
 - Unsloth (framework de entrenamiento citado en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (librería citada en la model card): https://github.com/huggingface/trl
+- TRL de Hugging Face (librería citada en la model card): https://github.com/huggingface/trl
 - Herramienta comunitaria de troceado de PDF con varias facturas: https://github.com/jsheppard8989/invoice-splitter
 - Publicación sobre un modelo de 8B para extracción de facturas (relación no confirmada): https://www.linkedin.com/posts/activity-7503363289473626112-sTKp

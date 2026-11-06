@@ -61,9 +61,9 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros mode
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B | 262.144 | BF16 | Apache 2.0 | HuggingFace |
-| trohrbaugh/Qwen3.8-27B-heretic-ara | 27B | 262.144 | BF16 (probablemente) | Apache 2.0 | HuggingFace |
-| Este modelo (PrismAura 5.5bit) | 27B | 262.144 | Mixta 5,5 bits | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (original) | 27B | 262.144 | BF16 | Apache 2.0 | Hugging Face |
+| trohrbaugh/Qwen3.8-27B-heretic-ara | 27B | 262.144 | BF16 (probablemente) | Apache 2.0 | Hugging Face |
+| Este modelo (PrismAura 5.5bit) | 27B | 262.144 | Mixta 5,5 bits | Apache 2.0 | Hugging Face |
 
 La principal diferencia es el tamaño de los pesos (23,6 GB frente a ~54 GB en BF16) y la optimización para Blackwell.
 
@@ -78,7 +78,7 @@ La principal diferencia es el tamaño de los pesos (23,6 GB frente a ~54 GB en B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trithemius/Qwen3.8-27B-heretic-ara-MTP-PrismAura-5.5bit
+- Modelo en Hugging Face: https://huggingface.co/trithemius/Qwen3.8-27B-heretic-ara-MTP-PrismAura-5.5bit
 - Modelo base decensored: https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Herramienta Heretic (ARA): https://github.com/p-e-w/heretic
 - Documentación de vLLM sobre compressed-tensors: no disponible en la información proporcionada.

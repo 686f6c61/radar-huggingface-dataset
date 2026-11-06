@@ -77,7 +77,7 @@ La comparativa se limita al modelo base y su variante instructiva, ya que no hay
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h022.sft-v6.step_600
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h022.sft-v6.step_600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la card, no verificado): `agentic-ptb/INDEX` (no se ha encontrado URL directa)
 - Documentación de Grok (asistente de SpaceXAI, no relacionado directamente con este checkpoint): https://docs.x.ai/developers/models

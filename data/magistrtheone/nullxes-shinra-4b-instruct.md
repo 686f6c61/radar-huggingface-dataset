@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NULLXES SHINRA-4B-INSTRUCT es un checkpoint de inicializacion (pesos aleatorios) de un Transformer decoder-only de 3.926 millones de parametros desarrollado por NULLXES LLC (autor en HuggingFace: MagistrTheOne). Segun su model card, se trata de una implementacion propia, no de un fine-tune de un modelo fundacional existente, con tokenizer, pipeline de entrenamiento y procesamiento de datos tambien desarrollados internamente. El checkpoint publicado corresponde a la fase de "Training Initialization": el autor confirma que se han completado la implementacion del modelo, la configuracion, la inicializacion aleatoria, la validacion de parametros y una pasada de forward/backward con un paso de optimizador en BF16 sobre una NVIDIA A100 SXM4 de 80 GB.
+NULLXES SHINRA-4B-INSTRUCT es un checkpoint de inicializacion (pesos aleatorios) de un Transformer decoder-only de 3.926 millones de parametros desarrollado por NULLXES LLC (autor en Hugging Face: MagistrTheOne). Segun su model card, se trata de una implementacion propia, no de un fine-tune de un modelo fundacional existente, con tokenizer, pipeline de entrenamiento y procesamiento de datos tambien desarrollados internamente. El checkpoint publicado corresponde a la fase de "Training Initialization": el autor confirma que se han completado la implementacion del modelo, la configuracion, la inicializacion aleatoria, la validacion de parametros y una pasada de forward/backward con un paso de optimizador en BF16 sobre una NVIDIA A100 SXM4 de 80 GB.
 
 Es importante subrayarlo con claridad: **el repositorio no contiene un modelo entrenado**. El tokenizer aun no se ha entrenado (la propia model card lista "Tokenizer training" como etapa siguiente), no se ha procesado corpus, no ha habido preentrenamiento, ni instruction tuning, ni alineamiento. Por tanto, el checkpoint no genera lenguaje coherente: produce salidas practicamente aleatorias a partir de los pesos inicializados. El nombre "INSTRUCT" del repositorio no se corresponde con ningun proceso de instruccion ejecutado.
 
@@ -99,7 +99,7 @@ Frente a estas alternativas, SHINRA solo ofrece ventaja en longitud de contexto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MagistrTheOne/NULLXES-SHINRA-4B-INSTRUCT
+- Hugging Face: https://huggingface.co/MagistrTheOne/NULLXES-SHINRA-4B-INSTRUCT
 - GitHub del proyecto: https://github.com/MagistrTheOne/NULLXES-SHINRA-4B-INSTRUCT
 - Paper, blog tecnico, demo o documentacion adicional: no disponible
 - Resultados de busqueda web relevantes: no disponible (los resultados obtenidos no guardan relacion con el modelo)

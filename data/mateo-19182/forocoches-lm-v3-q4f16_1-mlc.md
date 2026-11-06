@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| forocoches-lm-v3-q4f16_1-MLC | 1B | no disponible | Ajuste fino de dominio (foro espanol) en MLC/WebLLM | gemma | HuggingFace, pesos MLC |
-| Gemma 3 1B (base) | 1B | no disponible | Modelo generalista multilingue | gemma | HuggingFace, amplia adopcion |
-| forocoches-lm v3 (bf16) | 1B | no disponible | Mismo ajuste fino, checkpoint Transformers | gemma | HuggingFace, repo base |
+| forocoches-lm-v3-q4f16_1-MLC | 1B | no disponible | Ajuste fino de dominio (foro espanol) en MLC/WebLLM | gemma | Hugging Face, pesos MLC |
+| Gemma 3 1B (base) | 1B | no disponible | Modelo generalista multilingue | gemma | Hugging Face, amplia adopcion |
+| forocoches-lm v3 (bf16) | 1B | no disponible | Mismo ajuste fino, checkpoint Transformers | gemma | Hugging Face, repo base |
 
 La comparativa se limita a las variantes del propio proyecto y a su modelo base, porque no se dispone de datos de rendimiento de terceros en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ La comparativa se limita a las variantes del propio proyecto y a su modelo base,
 
 ## Enlaces
 
-- Repositorio HuggingFace (pesos MLC): https://huggingface.co/mateo-19182/forocoches-lm-v3-q4f16_1-MLC
+- Repositorio Hugging Face (pesos MLC): https://huggingface.co/mateo-19182/forocoches-lm-v3-q4f16_1-MLC
 - Repositorio base (bf16): https://huggingface.co/mateo-19182/forocoches-lm-v3
 - Demo en navegador: https://forocoches.m19182.dev
 - WebLLM: https://github.com/mlc-ai/web-llm

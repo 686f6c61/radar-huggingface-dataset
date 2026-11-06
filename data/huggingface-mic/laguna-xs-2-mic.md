@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laguna-XS.2-mic | 13,3M | no disponible | Fixture de integracion | no disponible | HuggingFace |
-| poolside/Laguna-XS.2 | no disponible | no disponible | Modelo base real | no disponible | HuggingFace |
-| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Pruebas de integracion | no disponible | HuggingFace |
+| Laguna-XS.2-mic | 13,3M | no disponible | Fixture de integracion | no disponible | Hugging Face |
+| poolside/Laguna-XS.2 | no disponible | no disponible | Modelo base real | no disponible | Hugging Face |
+| Otros fixtures de transformers-mic | variable (reducidos) | no disponible | Pruebas de integracion | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones completas del modelo base en la informacion proporcionada, por lo que la comparativa se limita a proposito y disponibilidad.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas del model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/Laguna-XS.2-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/Laguna-XS.2-mic
 - Modelo base: https://huggingface.co/poolside/Laguna-XS.2
 - Como se redujo el fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/Laguna-XS.2-mic.html
 - Repositorio transformers-mic: https://github.com/huggingface/transformers-mic

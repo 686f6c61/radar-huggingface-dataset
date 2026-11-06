@@ -83,7 +83,7 @@ Nota: el contexto del modelo original Qwen3-4B-Instruct-2507 es de 32 768 tokens
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/GatekeeperZA/Qwen3-4B-Instruct-2507-RKLLM-v1.2.3
+- Repositorio Hugging Face del modelo: https://huggingface.co/GatekeeperZA/Qwen3-4B-Instruct-2507-RKLLM-v1.2.3
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio RKLLM API Server: https://github.com/GatekeeperZA/RKLLM-API-Server
 - Repositorio oficial RKLLM (airockchip): https://github.com/airockchip/rknn-llm

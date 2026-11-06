@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-Easy-SFT (este adaptador) | 350M (base) + LoRA r=16 | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-350M (base) | 350M | No disponible | Apache 2.0 | HuggingFace |
-| Otros adaptadores LoRA sobre LFM2.5-350M | 350M (base) + LoRA | No disponible | Variable | HuggingFace (no verificados) |
+| LFM2.5-350M-SmolDataEnvs-Easy-SFT (este adaptador) | 350M (base) + LoRA r=16 | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-350M (base) | 350M | No disponible | Apache 2.0 | Hugging Face |
+| Otros adaptadores LoRA sobre LFM2.5-350M | 350M (base) + LoRA | No disponible | Variable | Hugging Face (no verificados) |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr5e-5-adapter
+- Hugging Face del adaptador: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr5e-5-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

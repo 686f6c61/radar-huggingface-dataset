@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MicroDuck Backflip es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo MicroDuck de Pollen Robotics. El modelo no es un modelo de lenguaje: es un controlador neuronal exportado a ONNX que ejecuta una maniobra acrobática concreta (un mortal hacia atrás con apoyo de la cabeza) partiendo de una postura erguida sobre dos patas. Lo publica el usuario nocrab en HuggingFace bajo licencia Apache 2.0, con un tamaño de repositorio prácticamente nulo (0.0 GB), lo que refleja que se trata de un artefacto de inferencia compacto y no de un modelo generativo.
+MicroDuck Backflip es una política de control entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo MicroDuck de Pollen Robotics. El modelo no es un modelo de lenguaje: es un controlador neuronal exportado a ONNX que ejecuta una maniobra acrobática concreta (un mortal hacia atrás con apoyo de la cabeza) partiendo de una postura erguida sobre dos patas. Lo publica el usuario nocrab en Hugging Face bajo licencia Apache 2.0, con un tamaño de repositorio prácticamente nulo (0.0 GB), lo que refleja que se trata de un artefacto de inferencia compacto y no de un modelo generativo.
 
 La relevancia de esta ficha es acotada: se trata de un ejemplo de política de robótica entrenada en simulación con el framework mjlab (MuJoCo-based) y el pipeline microduck_rl de Pollen Robotics, empaquetada según su formato de compartición de políticas. El modelo demuestra un caso de uso muy específico (skill episódica de backflip) y sirve como referencia para quienes trabajen con el ecosistema MicroDuck y quieran entender cómo se distribuye y despliega una política entrenada.
 
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nocrab/microduck-backflip
+- Modelo en Hugging Face: https://huggingface.co/nocrab/microduck-backflip
 - Vídeo de previsualización: https://huggingface.co/nocrab/microduck-backflip/resolve/main/media/preview.mp4
 - Repositorio microduck_rl de Pollen Robotics: https://github.com/pollen-robotics/microduck_rl
 - Documentación del formato de compartición de políticas: https://github.com/pollen-robotics/microduck_rl/blob/main/docs/sharing-policies.md

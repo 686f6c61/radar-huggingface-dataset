@@ -109,7 +109,7 @@ La diferencia practica principal no esta en el rendimiento, del que no hay datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AMAImedia/K2-Horizon-7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AMAImedia/K2-Horizon-7B-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - GGUF de origen (IFM): https://huggingface.co/IFM/K2-Horizon-7B-GGUF
 - Fork de llama.cpp requerido: https://github.com/MBZUAI-IFM/llama.cpp (rama `model/K2Horizon`)

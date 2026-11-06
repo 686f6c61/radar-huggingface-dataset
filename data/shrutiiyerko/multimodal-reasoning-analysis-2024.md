@@ -12,7 +12,7 @@ Por tanto, su relevancia actual no es la de un artefacto desplegable, sino la de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el repositorio no contiene un modelo entrenado; la etiqueta `transformer` figura en los metadatos de HuggingFace, sin especificacion tecnica en la model card) |
+| Arquitectura | no disponible (el repositorio no contiene un modelo entrenado; la etiqueta `transformer` figura en los metadatos de Hugging Face, sin especificacion tecnica en la model card) |
 | Parametros totales | 24.832 (segun el recuento de safetensors del repositorio; el tamano del repo es 0,0 GB, dato que no permite confirmar la existencia de pesos utilizables) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -81,7 +81,7 @@ No disponible. Este repositorio no es un modelo entrenado, sino un artefacto doc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shrutiiyerko/multimodal-reasoning-analysis-2024
+- Repositorio en Hugging Face: https://huggingface.co/Shrutiiyerko/multimodal-reasoning-analysis-2024
 - Fichero `notes.md`: no disponible como enlace directo en la informacion proporcionada (se referencia en la model card como artefacto principal del repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada
 - Resultados de busqueda web relevantes: ninguno (el unico resultado recuperado, `https://www.winfuture-forum.de/index.php?showtopic=222345`, no guarda relacion con el modelo)

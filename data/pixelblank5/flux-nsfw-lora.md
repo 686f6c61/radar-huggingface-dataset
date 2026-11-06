@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pixelblank5/flux-nsfw-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario pixelblank5, pensado para su uso sobre el modelo base FLUX (familia de modelos de generación de imágenes de Black Forest Labs). Por el nombre y el tamaño del repositorio (0,8 GB), se trata de un conjunto de pesos de bajo rango que se aplica sobre un checkpoint FLUX ya existente, no de un modelo completo con su propio tokenizador y arquitectura desde cero.
+`pixelblank5/flux-nsfw-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario pixelblank5, pensado para su uso sobre el modelo base FLUX (familia de modelos de generación de imágenes de Black Forest Labs). Por el nombre y el tamaño del repositorio (0,8 GB), se trata de un conjunto de pesos de bajo rango que se aplica sobre un checkpoint FLUX ya existente, no de un modelo completo con su propio tokenizador y arquitectura desde cero.
 
 La model card publicada es prácticamente vacía: únicamente declara la licencia `openrail` y el tag `not-for-all-audiences`, lo que indica que el contenido generado puede ser sensible (contenido para adultos). No se aportan detalles sobre el dataset de entrenamiento, el número de pasos, la resolución nativa, el rango del LoRA ni los hiperparámetros utilizados.
 
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pixelblank5/flux-nsfw-lora
+- Hugging Face: https://huggingface.co/pixelblank5/flux-nsfw-lora
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

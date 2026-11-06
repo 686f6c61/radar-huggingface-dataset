@@ -43,7 +43,7 @@ El entrenamiento se realizo con el metodo EAGLE3 online implementado en SpecForg
 - Evaluacion de configuraciones EAGLE3: los 47 checkpoints permiten comparar el impacto del paso de entrenamiento en la calidad del borrador y ajustar los hiperparametros del arbol (num-steps, topk, num-draft-tokens) para una carga de trabajo especifica.
 - Benchmarking de decodificacion especulativa: util para medir la aceleracion real frente a la generacion autoregresiva clasica en distintos workloads (chat, codigo, matematica).
 - Investigacion sobre modelos de borrador: el repositorio incluye `training_state.pt` con estado de optimizador y argumentos de entrenamiento, lo que permite reanudar entrenamientos o analizar el proceso de SpecForge.
-- Integracion en pipelines de serving con endpoints compatibles con text-generation-inference: el modelo esta marcado como compatible con endpoints de HuggingFace, facilitando su uso en infraestructuras gestionadas.
+- Integracion en pipelines de serving con endpoints compatibles con text-generation-inference: el modelo esta marcado como compatible con endpoints de Hugging Face, facilitando su uso en infraestructuras gestionadas.
 
 ## Benchmarks y rendimiento
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modelo objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT (este) | 202,7 M | 2048 | Qwen3-4B-Instruct-2507 | Apache-2.0 | HuggingFace |
+| Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT (este) | 202,7 M | 2048 | Qwen3-4B-Instruct-2507 | Apache-2.0 | Hugging Face |
 | Qwen3-4B-Instruct-2507-Eagle3 (MNN) | no disponible | no disponible | Qwen3-4B-Instruct-2507 | no disponible | ModelScope |
-| Draft models EAGLE-1/EAGLE-2 para Qwen2 | ~200 M tipico | 2048 | Qwen2-7B/14B | Apache-2.0 | GitHub, HuggingFace |
+| Draft models EAGLE-1/EAGLE-2 para Qwen2 | ~200 M tipico | 2048 | Qwen2-7B/14B | Apache-2.0 | GitHub, Hugging Face |
 
 La comparativa es limitada porque los draft models EAGLE3 son especificos del modelo objetivo. La alternativa de MNN en ModelScope cumple la misma funcion, pero no se dispone de sus parametros exactos. Los modelos EAGLE de generaciones anteriores (EAGLE-1/2) usan arquitecturas similares pero estan orientados a la familia Qwen2.
 

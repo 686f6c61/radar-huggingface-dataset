@@ -92,7 +92,7 @@ Tambien existe el modelo equivalente sobre Llama-3.1-8B (promotion/Llama-3.1-8B-
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/promotion/Qwen3-8B-UniformINPO-baseline
+- Hugging Face del modelo: https://huggingface.co/promotion/Qwen3-8B-UniformINPO-baseline
 - Modelo NBPO comparado: https://huggingface.co/promotion/Qwen3-8B-NBPO
 - Generaciones del benchmark: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Modelo equivalente sobre Llama-3.1-8B: https://huggingface.co/promotion/Llama-3.1-8B-UniformINPO-baseline

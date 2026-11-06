@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| P-H3-Image-Comfy (PrunaAI) | no disponible | inglés | minimax-h3-community-license-agreement | HuggingFace, ComfyUI |
-| P-H3-Image (base, PrunaAI) | no disponible | inglés | minimax-h3-community-license-agreement | HuggingFace |
-| Alternativas de difusión open source (p. ej. familia Stable Diffusion / FLUX) | no disponible en esta ficha | multilingüe en algunos casos | licencias abiertas o comunitarias variables | HuggingFace, ComfyUI |
+| P-H3-Image-Comfy (PrunaAI) | no disponible | inglés | minimax-h3-community-license-agreement | Hugging Face, ComfyUI |
+| P-H3-Image (base, PrunaAI) | no disponible | inglés | minimax-h3-community-license-agreement | Hugging Face |
+| Alternativas de difusión open source (p. ej. familia Stable Diffusion / FLUX) | no disponible en esta ficha | multilingüe en algunos casos | licencias abiertas o comunitarias variables | Hugging Face, ComfyUI |
 
 No se dispone de datos de benchmarks ni de especificaciones del modelo base MiniMax H3 que permitan una comparación cuantitativa rigurosa con alternativas de la misma categoría.
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base Mini
 - No apto para tareas de texto, código o razonamiento: es exclusivamente un modelo de imagen.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/PrunaAI/P-H3-Image-Comfy
+- Hugging Face: https://huggingface.co/PrunaAI/P-H3-Image-Comfy
 - Modelo base: https://huggingface.co/PrunaAI/p-h3-image
 - Repositorio GitHub de PrunaAI: https://github.com/PrunaAI/pruna
 - Twitter/X de PrunaAI: https://twitter.com/PrunaAI

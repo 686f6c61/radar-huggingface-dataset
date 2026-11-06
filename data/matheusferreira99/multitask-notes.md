@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matheusferreira99/multitask-notes` es un checkpoint experimental publicado en HuggingFace por el usuario Matheus Ferreira. Se presenta como una implementación propia de una arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea, con una configuración etiquetada como «xlarge» en su `config.json`. Según la propia model card, se trata de un artefacto pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado.
+`matheusferreira99/multitask-notes` es un checkpoint experimental publicado en Hugging Face por el usuario Matheus Ferreira. Se presenta como una implementación propia de una arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea, con una configuración etiquetada como «xlarge» en su `config.json`. Según la propia model card, se trata de un artefacto pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no de un modelo entrenado.
 
 El dato más relevante es que el checkpoint real contiene únicamente 16.576 parámetros (según el fichero `model.safetensors`), con un tamaño de repositorio de 0,0 GB. Esa cifra es incompatible con una verdadera configuración xlarge de BLIP, por lo que el repositorio debe interpretarse como una inicialización mínima para pruebas de humo (smoke tests) y verificación del pipeline. El autor indica explícitamente que «no benchmark score is claimed in this repository» y que el checkpoint «has not been trained or audited for robustness, fairness, or domain transfer».
 
@@ -48,7 +48,7 @@ No existe evidencia de entrenamiento. El autor describe el checkpoint como «a v
 - Test de integración en CI/CD de investigación: incorporar el checkpoint como fixture ligero (16.576 parámetros) para comprobar que el código de carga, serialización y forward pass no rompe tras refactorizaciones.
 - Reproducción de configuración de experimento: partir de `training_args.json` para replicar la receta SGD con scheduler polinómico y comparar contra otras recetas bajo el mismo presupuesto de cómputo.
 - Adaptación a APIs de carga genéricas: dado que el autor advierte de que «generic automatic loading APIs require an explicit adapter before use», sirve como caso de prueba para desarrollar y depurar ese adaptador.
-- Material didáctico: ilustrar en un entorno controlado la diferencia entre una configuración declarada (xlarge) y los pesos realmente publicados, útil para enseñar a auditar repositorios de HuggingFace.
+- Material didáctico: ilustrar en un entorno controlado la diferencia entre una configuración declarada (xlarge) y los pesos realmente publicados, útil para enseñar a auditar repositorios de Hugging Face.
 - Base para experimentos de escalado: documentar el punto de partida y demostrar que cualquier resultado futuro debe publicarse por separado de estos valores por defecto, tal y como pide el autor.
 
 ## Benchmarks y rendimiento
@@ -87,6 +87,6 @@ No disponible. El repositorio no publica métricas ni artefactos comparables, y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matheusferreira99/multitask-notes
+- Modelo en Hugging Face: https://huggingface.co/matheusferreira99/multitask-notes
 - Página de modelos del autor: https://huggingface.co/matheusferreira99/models
 - Paper, repositorio de código, blog o demo: no disponible en la información proporcionada.

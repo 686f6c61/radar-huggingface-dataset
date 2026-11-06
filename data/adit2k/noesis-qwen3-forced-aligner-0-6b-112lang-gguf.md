@@ -90,7 +90,7 @@ La comparativa cuantitativa con alternativas de otra procedencia no puede comple
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adit2K/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-gguf
+- Modelo en Hugging Face: https://huggingface.co/Adit2K/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-gguf
 - Modelo base de la cuantizacion (BF16): https://huggingface.co/AMAImedia/NOESIS-Qwen3-Forced-Aligner-0.6B-112LANG-BF16
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - GGUF del modelo base, con identica disposicion de tensores: https://huggingface.co/Adit2K/Qwen3-ForcedAligner-0.6B-gguf

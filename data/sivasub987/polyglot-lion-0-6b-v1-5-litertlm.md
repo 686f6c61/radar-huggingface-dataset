@@ -94,12 +94,12 @@ No se han publicado resultados de benchmarks del bundle LiteRT-LM convertido (ni
 - La codificación de audio no está soportada en GPU; debe ejecutarse en CPU.
 - Restricciones de licencia: el fine-tune y la conversión son MIT, pero el modelo base Qwen3-ASR es Apache-2.0; conviene revisar ambas licencias para uso comercial.
 - Riesgo de alucinación en audio con ruido, silencios o habla no cubierta por los idiomas entrenados.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, y fue creado en noviembre de 2026; no hay evidencia de uso en producción ni validación independiente.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, y fue creado en noviembre de 2026; no hay evidencia de uso en producción ni validación independiente.
 - La model card contiene una frase truncada al final ("Lingala? No — the"), lo que sugiere una documentación incompleta.
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/sivasub987/polyglot-lion-0.6b-v1.5-litertlm
+- Hugging Face (esta conversión): https://huggingface.co/sivasub987/polyglot-lion-0.6b-v1.5-litertlm
 - Fine-tune original: https://huggingface.co/knoveleng/polyglot-lion-0.6b-v1.5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Paper (ACL Anthology): https://aclanthology.org/2026.mellm-1.18/

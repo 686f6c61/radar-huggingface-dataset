@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo GeertWang/MLP_BC_Pipette_Align es un checkpoint publicado en HuggingFace por el usuario GeertWang. El repositorio tiene un tamano de 0.4 GB y esta licenciado bajo CC-BY-4.0. La model card no incluye informacion tecnica: no se especifican arquitectura, parametros, contexto, idiomas ni capacidades. El nombre del repositorio sugiere que podria tratarse de un modelo de perceptron multicapa (MLP) orientado a tareas de alineacion de pipetas (pipette alignment), pero esta hipotesis no se puede confirmar con los datos disponibles.
+El modelo GeertWang/MLP_BC_Pipette_Align es un checkpoint publicado en Hugging Face por el usuario GeertWang. El repositorio tiene un tamano de 0.4 GB y esta licenciado bajo CC-BY-4.0. La model card no incluye informacion tecnica: no se especifican arquitectura, parametros, contexto, idiomas ni capacidades. El nombre del repositorio sugiere que podria tratarse de un modelo de perceptron multicapa (MLP) orientado a tareas de alineacion de pipetas (pipette alignment), pero esta hipotesis no se puede confirmar con los datos disponibles.
 
 No se ha publicado documentacion adicional en la web, por lo que el modelo no puede evaluarse tecnicamente en este momento. La ausencia de especificaciones impide determinar el problema que resuelve, el tamano real del modelo o su rendimiento. Cualquier uso en produccion requeriria una investigacion previa del checkpoint o contactar con el autor.
 
@@ -60,5 +60,5 @@ No se han identificado modelos comparables en la informacion disponible. La ause
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GeertWang/MLP_BC_Pipette_Align
+- Hugging Face: https://huggingface.co/GeertWang/MLP_BC_Pipette_Align
 - No se han encontrado papers, blogs, repos o demos adicionales en la busqueda web.

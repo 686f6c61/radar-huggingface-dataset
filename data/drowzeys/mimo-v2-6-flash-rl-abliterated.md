@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Flash-RL-Abliterated es una variante de la familia MiMo (Xiaomi) publicada por el usuario drowzeys en HuggingFace. Se trata de un derivado del modelo base XiaomiMiMo/MiMo-V2.6-Flash-RL al que se le ha aplicado una técnica de "abliteration", es decir, la eliminación o atenuación de la dirección de activación asociada al rechazo de peticiones, con el objetivo de producir un modelo sin el comportamiento de denegación típico de los modelos alineados. El repositorio se describe a sí mismo con la etiqueta "uncensored".
+MiMo-V2.6-Flash-RL-Abliterated es una variante de la familia MiMo (Xiaomi) publicada por el usuario drowzeys en Hugging Face. Se trata de un derivado del modelo base XiaomiMiMo/MiMo-V2.6-Flash-RL al que se le ha aplicado una técnica de "abliteration", es decir, la eliminación o atenuación de la dirección de activación asociada al rechazo de peticiones, con el objetivo de producir un modelo sin el comportamiento de denegación típico de los modelos alineados. El repositorio se describe a sí mismo con la etiqueta "uncensored".
 
 Técnicamente es un modelo de tipo Mixture of Experts (MoE), según las etiquetas del repositorio (mimo_v2, moe), con 310.756.322.688 parámetros totales registrados en los ficheros safetensors. El repositorio ocupa 177,8 GB, lo que indica que los pesos se distribuyen en formatos de cuantización de baja precisión (fp8 y mxfp4, según las etiquetas). Soporta los idiomas inglés y chino, y se publica bajo licencia MIT.
 
@@ -80,13 +80,13 @@ No se dispone de datos suficientes para comparar el rendimiento con otras altern
 - Cobertura idiomatica limitada oficialmente a ingles y chino (en, zh); el rendimiento en castellano u otros idiomas no esta garantizado.
 - Longitud de contexto y limites de tokens no disponibles: no se puede planificar su uso en tareas que requieran ventanas largas sin verificar este dato.
 - Licencia MIT: permite uso comercial y modificacion, pero la responsabilidad legal del contenido generado sin filtros recae sobre el desplegador.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar el modelo, lo que anade una capa de control de acceso.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar el modelo, lo que anade una capa de control de acceso.
 - El repositorio tiene 0 descargas y 0 "likes" en el momento de la ficha, y fechas de creacion muy recientes, por lo que no cuenta con validacion de la comunidad.
 - Parametros activos del MoE no disponibles: no se puede estimar el coste computacional por token ni el throughput sin este dato.
 - No se indica soporte confirmado de tool calling ni de comportamiento agentico; no debe asumirse para produccion.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/drowzeys/MiMo-V2.6-Flash-RL-Abliterated
+- Hugging Face (modelo): https://huggingface.co/drowzeys/MiMo-V2.6-Flash-RL-Abliterated
 - Modelo base: XiaomiMiMo/MiMo-V2.6-Flash-RL (referenciado en las etiquetas del repositorio)
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

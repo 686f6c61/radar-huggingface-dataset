@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jimbruges/ventuno-q-instant-camera-models` no es un modelo entrenado de forma independiente, sino un paquete de artefactos de despliegue publicados en HuggingFace para la camara instantanea VENTUNO Q. Contiene archivos comprimidos del runtime Python para ARM64 y contextos binarios QNN de Qualcomm, compilados especificamente para el perfil de hardware Qualcomm QCS8275 con Hexagon HTP v75. El repositorio ocupa 3,7 GB y esta etiquetado con `onnxruntime` como libreria y `image-to-image` como tarea.
+`jimbruges/ventuno-q-instant-camera-models` no es un modelo entrenado de forma independiente, sino un paquete de artefactos de despliegue publicados en Hugging Face para la camara instantanea VENTUNO Q. Contiene archivos comprimidos del runtime Python para ARM64 y contextos binarios QNN de Qualcomm, compilados especificamente para el perfil de hardware Qualcomm QCS8275 con Hexagon HTP v75. El repositorio ocupa 3,7 GB y esta etiquetado con `onnxruntime` como libreria y `image-to-image` como tarea.
 
 El contenido combina componentes de varios modelos de difusion: el codificador de texto y el VAE de Stable Diffusion 1.5 en forma de contextos QNN, el codificador VAE de InstructPix2Pix, el codificador de referencia y el U-Net del editor de IP-Adapter Plus, ademas del tokenizador CLIP de Stable Diffusion 1.5, un entorno Python de ONNX Runtime QNN para ARM64 y los textos de licencia de los componentes originales. La instalacion se realiza con el script `scripts/install-models.sh` del repositorio de origen, que fija la etiqueta inmutable `v1`, descarga un archivo cada vez, verifica `SHA256SUMS` y extrae el contenido en `~/instant-camera-ai`.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jimbruges/ventuno-q-instant-camera-models
+- Modelo en Hugging Face: https://huggingface.co/jimbruges/ventuno-q-instant-camera-models
 - Repositorio de origen de la camara instantanea VENTUNO Q: https://github.com/jimbruges/ventuno-q-instant-camera
 - Qualcomm AI Hub: mencionado en la model card como plataforma de compilacion de los contextos, sin URL proporcionada.
 - La busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo; los resultados obtenidos no guardan relacion con el contenido de la ficha.

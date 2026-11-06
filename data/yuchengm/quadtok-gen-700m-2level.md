@@ -6,7 +6,7 @@ QuadTok Generator 700M es un modelo de generación de imágenes autoregressive d
 
 La relevancia de este modelo reside en su enfoque de tokenización con árbol de cuaterniones, que reduce el número de tokens por imagen (aproximadamente 231 tokens de media) frente a los métodos de parche fijo, permitiendo una generación autoregressive más eficiente. Se entrenó durante 400.000 pasos con una pérdida final de 6,2358 nats (perplejidad ≈ 513 sobre un vocabulario de 16.384 códigos), aunque no se han publicado métricas de calidad de imagen como FID. El checkpoint incluye pesos EMA para inferencia, y se advierte que requiere un tokenizador VQ QuadTok adicional para decodificar imágenes.
 
-La ficha se elabora a partir de la información disponible en HuggingFace y la model card del autor; no se han encontrado resultados de benchmarks externos ni comparativas con otros modelos.
+La ficha se elabora a partir de la información disponible en Hugging Face y la model card del autor; no se han encontrado resultados de benchmarks externos ni comparativas con otros modelos.
 
 ## Especificaciones tecnicas
 
@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuchengm/quadtok-gen-700m-2level
+- Modelo en Hugging Face: https://huggingface.co/yuchengm/quadtok-gen-700m-2level
 - Página personal del autor: https://myc634.github.io/yuchengmao/
 - Dataset de entrenamiento (referenciado): https://huggingface.co/datasets/yuchengm/quadtok_data (no verificado en la búsqueda)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `Leonyly7970/review-vision-language-pretraining53`, no contiene un modelo de lenguaje entrenado ni un checkpoint utilizable. Se trata de un artefacto de investigación que aloja una nota de trabajo sobre *Vision Language Pretraining*, compuesta por dos ficheros de texto (`summary.md` y `README.md`). La propia model card lo declara de forma explícita: "no se presenta como un artículo completado ni como una publicación de modelos entrenados", y aclara que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
+Este repositorio de Hugging Face, identificado como `Leonyly7970/review-vision-language-pretraining53`, no contiene un modelo de lenguaje entrenado ni un checkpoint utilizable. Se trata de un artefacto de investigación que aloja una nota de trabajo sobre *Vision Language Pretraining*, compuesta por dos ficheros de texto (`summary.md` y `README.md`). La propia model card lo declara de forma explícita: "no se presenta como un artículo completado ni como una publicación de modelos entrenados", y aclara que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
 
 El repositorio está etiquetado con los tags `safetensors`, `transformer`, `research-notes` y `vision-language-pretraining`, bajo licencia `cc-by-4.0`. Los metadatos de safetensors declaran un total de 33.088 parámetros, una cifra entre cuatro y cinco órdenes de magnitud inferior a la de cualquier transformer funcional, lo que refuerza la interpretación de que el fichero de pesos es un remanente técnico o un artefacto vacío, no un modelo operativo. El tamaño del repositorio es de 0,0 GB. Registra 0 descargas y 0 *likes*.
 
@@ -47,7 +47,7 @@ Respecto al entrenamiento, la model card es tajante: no hay checkpoint entrenado
 - Diseño de protocolo de evaluación: al enumerar benchmarks apropiados a la tarea y modos de fallo, puede emplearse para redactar la sección de evaluación de un proyecto real de investigación en visión-lenguaje.
 - Auditoría de reproducibilidad: la model card exige que, si se añaden resultados, incluyan versiones de dataset, comandos, semillas, hardware y registros en bruto; ese requisito es directamente reutilizable como política interna de registro experimental en un equipo de investigación.
 - Material docente o de seminario: el repositorio puede usarse en un grupo de lectura para discutir qué constituye una hipótesis falsable y por qué una nota de investigación no equivale a un resultado experimental.
-- Catalogación de artefactos en HuggingFace: sirve como ejemplo práctico de repositorio etiquetado como modelo que en realidad no lo es, útil para diseñar heurísticas de filtrado en pipelines de descubrimiento de modelos.
+- Catalogación de artefactos en Hugging Face: sirve como ejemplo práctico de repositorio etiquetado como modelo que en realidad no lo es, útil para diseñar heurísticas de filtrado en pipelines de descubrimiento de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados en la información proporcionada para rellena
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leonyly7970/review-vision-language-pretraining53
+- Repositorio en Hugging Face: https://huggingface.co/Leonyly7970/review-vision-language-pretraining53
 - Ficheros internos del repositorio: `summary.md` (artefacto principal) y `README.md` (documentación).
 - Artículos, papers, blogs, repositorios de código o demos adicionales: no disponibles en la información proporcionada.
 - Resultados de búsqueda web: no contienen enlaces relevantes; las únicas URL devueltas pertenecen a n-tv.de y no guardan relación con el modelo.

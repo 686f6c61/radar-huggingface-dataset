@@ -70,7 +70,7 @@ No disponible. No se dispone de datos suficientes sobre otros drafters DSpark cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HongKi08/DeepSeek-V4-Flash-0731-DSpark-Drafter-GGUF
+- Repositorio Hugging Face: https://huggingface.co/HongKi08/DeepSeek-V4-Flash-0731-DSpark-Drafter-GGUF
 - Modelo base (deepseek-ai): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio GGUF de unsloth (fuente del drafter): https://huggingface.co/unsloth/DeepSeek-V4-Flash-0731-GGUF
 - Documentacion DeepWiki del proyecto: https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731

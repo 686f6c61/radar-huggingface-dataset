@@ -18,7 +18,7 @@ Ahora bien, la ficha debe leerse con cautela: no hay licencia declarada, no hay 
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | Q4_K_M únicamente en este repositorio (15,66 GiB) |
 | Idiomas soportados | No disponible. El sufijo "Human-KO" y las pruebas de acción empresarial en coreano apuntan a coreano, pero no se declara oficialmente |
-| Licencia | No disponible (no figura ni en la ficha de HuggingFace ni en la model card) |
+| Licencia | No disponible (no figura ni en la ficha de Hugging Face ni en la model card) |
 | Formato de pesos | GGUF (llama.cpp), solo texto |
 | Modelo base | ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.2 |
 | Revisión fuente usada | d03c8ead02103d6c1b737dfd384ecb9031ca620c |
@@ -97,7 +97,7 @@ La ventaja diferencial del modelo analizado sería su especialización declarada
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: no se especifica licencia ni en HuggingFace ni en la model card. Sin una licencia explícita, no hay autorización clara para uso comercial ni para redistribución; conviene contactar con los autores antes de cualquier despliegue en producción.
+- Licencia no declarada: no se especifica licencia ni en Hugging Face ni en la model card. Sin una licencia explícita, no hay autorización clara para uso comercial ni para redistribución; conviene contactar con los autores antes de cualquier despliegue en producción.
 - Capacidad multimodal perdida: el modelo fuente es multimodal, pero esta conversión es solo texto y no incluye pesos de visión ni mmproj. No debe esperarse procesamiento de imágenes.
 - MTP/NextN no aprovechado: los tensores multi-token prediction se conservan pero no se usan en la ruta estándar de llama.cpp, por lo que no hay ganancia de velocidad y puede haber divergencias si otro runtime intenta explotarlos.
 - Validación muy limitada: las únicas pruebas documentadas son de humo y un conjunto de tres casos JSON. No hay MMLU, HumanEval, GSM8K ni evaluaciones de seguridad, sesgo o robustez.
@@ -110,7 +110,7 @@ La ventaja diferencial del modelo analizado sería su especialización declarada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ramgpt/Qwen3.8-27B-Human-KO-Enterprise-v0.2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ramgpt/Qwen3.8-27B-Human-KO-Enterprise-v0.2-GGUF
 - Modelo base: https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.2
 - llama.cpp (runtime de inferencia para GGUF): https://github.com/ggml-org/llama.cpp
 - Nota sobre la búsqueda web: los resultados devueltos corresponden a secciones deportivas y de noticias de la BBC (bbc.com/sport, bbc.com/news) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este modelo en la información proporcionada.

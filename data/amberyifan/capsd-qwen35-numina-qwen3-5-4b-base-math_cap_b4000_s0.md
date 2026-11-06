@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b4000_s0)
-- [HuggingFace - modelo base Qwen3.5-4B-Base](https://huggingface.co/Qwen/Qwen3.5-4B-Base)
+- [Hugging Face - modelo](https://huggingface.co/AmberYifan/capsd-qwen35-numina-Qwen3.5-4B-Base-math_cap_b4000_s0)
+- [Hugging Face - modelo base Qwen3.5-4B-Base](https://huggingface.co/Qwen/Qwen3.5-4B-Base)

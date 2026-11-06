@@ -78,7 +78,7 @@ La comparación con Qwen2.5-7B (dense) muestra que LFM2.5 tiene menos parámetro
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión cuantizada: https://huggingface.co/888rok/LFM2.5-8B-A1B-Q4_K_M-wllama-split
+- Repositorio Hugging Face de la versión cuantizada: https://huggingface.co/888rok/LFM2.5-8B-A1B-Q4_K_M-wllama-split
 - Repositorio original de los pesos GGUF: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B-GGUF
 - Documentación oficial del modelo: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Blog de Liquid AI sobre LFM2.5-8B-A1B: https://www.liquid.ai/blog/lfm2-5-8b-a1b

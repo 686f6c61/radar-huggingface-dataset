@@ -90,9 +90,9 @@ Observacion del autor: en LibriSpeech test-other a 8 kHz el ajuste empeora liger
 
 | Modelo | Parametros | Idiomas | WER en dominio telefonico | WER LibriSpeech test-other (8 kHz) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ozonetg/parakeet-110m-caller-asr-nopunct | 114,6 M | en | 3,33 % (retenido en dominio) / 11,59 % (5 conjuntos publicos) | 7,31 % | CC BY 4.0 | HuggingFace, .nemo (0,5 GB) |
-| nvidia/parakeet-tdt_ctc-110m (base) | 110 M (segun nombre) | en | 9,19 % (retenido en dominio) / 14,58 % (5 conjuntos publicos) | 6,25 % | CC BY 4.0 | HuggingFace |
-| ozonetg/parakeet-110m-caller-asr-basic | 114,6 M | en | no disponible (el autor indica precision equivalente a esta variante) | no disponible | CC BY 4.0 | HuggingFace |
+| ozonetg/parakeet-110m-caller-asr-nopunct | 114,6 M | en | 3,33 % (retenido en dominio) / 11,59 % (5 conjuntos publicos) | 7,31 % | CC BY 4.0 | Hugging Face, .nemo (0,5 GB) |
+| nvidia/parakeet-tdt_ctc-110m (base) | 110 M (segun nombre) | en | 9,19 % (retenido en dominio) / 14,58 % (5 conjuntos publicos) | 6,25 % | CC BY 4.0 | Hugging Face |
+| ozonetg/parakeet-110m-caller-asr-basic | 114,6 M | en | no disponible (el autor indica precision equivalente a esta variante) | no disponible | CC BY 4.0 | Hugging Face |
 
 Notas: las cifras del modelo base y del sistema previo proceden de la propia model card de este modelo, no de mediciones independientes. No se dispone en la informacion proporcionada de comparaciones con otros sistemas de ASR telefonico (por ejemplo variantes de Whisper o Conformer entrenadas sobre Switchboard), por lo que esa comparativa queda como no disponible.
 
@@ -113,7 +113,7 @@ Notas: las cifras del modelo base y del sistema previo proceden de la propia mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-nopunct
+- Modelo en Hugging Face: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-nopunct
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Variante con puntuacion del mismo autor: https://huggingface.co/ozonetg/parakeet-110m-caller-asr-basic
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada.

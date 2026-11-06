@@ -60,7 +60,7 @@ El QER reportado (26.9%) está 2.7 errores estándar por debajo del objetivo (32
 
 - Al ser un modelo de 1B parámetros, la inferencia es viable en GPUs consumer. En FP16, la VRAM estimada es de aproximadamente 2-3 GB; en FP32, unos 4-5 GB.
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1660, RTX 3050, RTX 3060, etc.). También puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede cargarse con `AutoModelForCausalLM` de HuggingFace, o servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF).
+- Opciones de despliegue: al ser un modelo transformers estándar, puede cargarse con `AutoModelForCausalLM` de Hugging Face, o servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF).
 - Latencia estimada: en una GPU moderna (RTX 3090), la generación de 100 tokens tardaría del orden de 0.5-1 segundo; en CPU, varios segundos por token.
 - No se requieren GPUs de datacenter (A100, H100) para este modelo.
 
@@ -85,7 +85,7 @@ La comparativa se limita a modelos de la misma familia de investigación. El mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-sdf-mixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-sdf-mixed
 - Dataset de entrenamiento: https://huggingface.co/datasets/model-organisms-for-real/kd-dataset-olmo-cake-non-synth
 - Modelo de referencia (Gemma-3-1B): https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-1e-5
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery

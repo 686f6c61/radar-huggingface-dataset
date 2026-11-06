@@ -68,7 +68,7 @@ Verificacion de pesos frente al checkpoint de Megatron:
 - VRAM estimada para inferencia en fp16/bf16: aproximadamente 3,3 GB solo de pesos, mas overhead de activaciones y KV cache; una GPU con 8 GB de VRAM es suficiente para inferencia con contexto completo de 4.096 tokens.
 - GPU recomendadas: cualquier GPU de consumo moderna (RTX 3060, RTX 4060 Ti, RTX 4090) o GPU de nube de gama baja; no se requiere hardware de centro de datos (A100/H100) para inferencia.
 - Cabe con holgura en GPUs de consumo; incluso portatiles con GPU dedicada de 6-8 GB pueden ejecutarlo.
-- Opciones de despliegue: la libreria `transformers` de HuggingFace es la documentada (`endpoints_compatible`, compatible con Inference Endpoints); por su arquitectura estilo Llama y formato safetensors, es razonable esperar compatibilidad con llama.cpp, Ollama y vLLM, aunque no se documenta explicitamente.
+- Opciones de despliegue: la libreria `transformers` de Hugging Face es la documentada (`endpoints_compatible`, compatible con Inference Endpoints); por su arquitectura estilo Llama y formato safetensors, es razonable esperar compatibilidad con llama.cpp, Ollama y vLLM, aunque no se documenta explicitamente.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ Verificacion de pesos frente al checkpoint de Megatron:
 | 1pp-1.7b-raw-tokmatchog-base | 1.66B | 4.096 | Documentos originales, tokens supervisados igualados (rama de control) | Apache 2.0 |
 | 1pp-1.7b-raw-base | 1.66B | 4.096 | Documentos originales, run de produccion completa (31.777 pasos) | Apache 2.0 |
 | 1pp-1.7b (condiciones de conversacion) | 1.66B | 4.096 | Conversaciones reescritas con perdida en asistente o en user+asistente | no disponible |
-| SmolLM2-1.7B | 1.71B | 8.192 | Modelo general de HuggingFace con el mismo vocabulario base | Apache 2.0 |
+| SmolLM2-1.7B | 1.71B | 8.192 | Modelo general de Hugging Face con el mismo vocabulario base | Apache 2.0 |
 
 La comparacion mas relevante es interna al estudio 1PP: frente a `1pp-1.7b-raw-base` (su origen en el paso 12.000) y frente a las ramas de conversacion, esta rama permite aislar el efecto del numero de tokens supervisados. Frente a SmolLM2-1.7B, comparte vocabulario y tamano similar, pero este modelo es un artefacto de investigacion sin post-entrenamiento, no un asistente general.
 
@@ -96,7 +96,7 @@ La comparacion mas relevante es interna al estudio 1PP: frente a `1pp-1.7b-raw-b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-tokmatchog-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-tokmatchog-base
 - Modelo de origen (rama principal): https://huggingface.co/Raghav-Singhal/1pp-1.7b-raw-base
 - Coleccion 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training

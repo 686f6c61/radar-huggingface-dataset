@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gueso/tictactoe-v2-act-policy | 51,7 M | Estado 6 articulaciones + 2 imágenes 3×360×640 + one-hot 9 | Tres en raya con SO-101 | Apache 2.0 | HuggingFace, LeRobot |
-| Políticas ACT genéricas de LeRobot | variable | Estado + imágenes | Manipulación diversa | según repositorio | HuggingFace, LeRobot |
-| Políticas Diffusion Policy | variable | Estado + imágenes | Manipulación diversa | según repositorio | HuggingFace, LeRobot |
+| Gueso/tictactoe-v2-act-policy | 51,7 M | Estado 6 articulaciones + 2 imágenes 3×360×640 + one-hot 9 | Tres en raya con SO-101 | Apache 2.0 | Hugging Face, LeRobot |
+| Políticas ACT genéricas de LeRobot | variable | Estado + imágenes | Manipulación diversa | según repositorio | Hugging Face, LeRobot |
+| Políticas Diffusion Policy | variable | Estado + imágenes | Manipulación diversa | según repositorio | Hugging Face, LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada. La comparación se limita a parámetros, modalidad de entrada y licencia; no hay métricas de éxito publicadas para este modelo.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gueso/tictactoe-v2-act-policy
+- Modelo en Hugging Face: https://huggingface.co/Gueso/tictactoe-v2-act-policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/OG7407/tictactoe-v2-act
 - LeRobot (librería): https://github.com/huggingface/lerobot
 - Documentación de ACT en LeRobot: no disponible en la información proporcionada

@@ -114,7 +114,7 @@ Frente a modelos de difusion de otras familias (Stable Diffusion, FLUX y similar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-4bit
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Version 8-bit del mismo autor: https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-8bit
 - Version mixta del mismo autor: https://huggingface.co/roman220220/z-image-turbo-gptq-mlx-mixed

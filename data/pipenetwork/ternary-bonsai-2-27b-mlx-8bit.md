@@ -24,7 +24,7 @@ La relevancia práctica es que abre el modelo a herramientas estándar, ajuste f
 | Pipeline | `image-text-to-text` |
 | Tamaño del repositorio | 29,5 GB |
 | Runtime requerido | `mlx-vlm` ≥ 0.7 sobre Apple Silicon |
-| Fecha de creación en HuggingFace | 2026-09-18 |
+| Fecha de creación en Hugging Face | 2026-09-18 |
 
 ## Arquitectura y entrenamiento
 
@@ -112,13 +112,13 @@ Comparación con alternativas de otros autores del mismo tamaño o tarea: no dis
 - Idiomas y longitud de contexto sin declarar: el repositorio no especifica ninguno de los dos, lo que impide garantizar comportamiento en contextos largos o en idiomas distintos del inglés.
 - Riesgo de alucinación: no documentado específicamente para este modelo; aplican los sesgos y errores propios del modelo base ternarizado.
 - Madurez del artefacto: se trata de una conversión de un tercero (pipenetwork), no de una publicación oficial de prism-ml, y el repositorio registra 0 descargas y 0 *likes*, por lo que no cuenta con validación de la comunidad.
-- Anomalía de metadatos: la fecha de creación registrada en HuggingFace es 2026-09-18, posterior a la fecha de consulta habitual, lo que conviene verificar antes de integrar el artefacto en un pipeline.
+- Anomalía de metadatos: la fecha de creación registrada en Hugging Face es 2026-09-18, posterior a la fecha de consulta habitual, lo que conviene verificar antes de integrar el artefacto en un pipeline.
 - Licencia: Apache-2.0 permite uso comercial, pero obliga a conservar el NOTICE.txt incluido. La información proporcionada no menciona restricciones adicionales.
 - Fidelidad medida contra un runtime concreto: las cifras de similitud se calcularon frente al pack de 2 bits con el runtime de prism-ml, no frente al modelo original sin ternarizar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-8bit
+- Repositorio en Hugging Face: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-8bit
 - Modelo base en GGUF: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Pack oficial de 2 bits de prism-ml: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Build bf16 del mismo autor: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-bf16

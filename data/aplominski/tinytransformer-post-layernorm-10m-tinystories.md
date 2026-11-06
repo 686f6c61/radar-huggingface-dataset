@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 9.627.648 parametros, en fp32 ocupa aproximadamente 38 MB; en fp16, unos 19 MB. Cabe en cualquier GPU con mas de 1 GB de VRAM, incluidas GPUs integradas.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 10xx o superior, AMD RX 5000 o superior) es suficiente. Tambien puede ejecutarse en CPU sin problemas.
 - Si cabe en consumer GPU: si, en todas las GPUs consumer actuales, incluso en Raspberry Pi con suficiente RAM.
-- Opciones de despliegue: puede cargarse con la libreria transformers de HuggingFace (pipeline text-generation), o exportarse a ONNX para inferencia en CPU. No hay archivos GGUF disponibles, por lo que llama.cpp u Ollama requeririan una conversion manual.
+- Opciones de despliegue: puede cargarse con la libreria transformers de Hugging Face (pipeline text-generation), o exportarse a ONNX para inferencia en CPU. No hay archivos GGUF disponibles, por lo que llama.cpp u Ollama requeririan una conversion manual.
 - Latencia y throughput estimados: no disponibles. Dado el tamano, la generacion de tokens deberia ser del orden de milisegundos por token en GPU y decenas de milisegundos en CPU, pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aplominski/TinyTransformer-Post-LayerNorm-10M-TinyStories
+- Modelo en Hugging Face: https://huggingface.co/aplominski/TinyTransformer-Post-LayerNorm-10M-TinyStories
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper "Attention Is All You Need": https://arxiv.org/abs/1706.03762
 - Paper "Layer Normalization": https://arxiv.org/abs/1607.06450

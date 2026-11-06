@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AxionDynamix-Marvel-Pro es un modelo de lenguaje publicado por el usuario Axion Dynamix bajo el identificador `axion-dynamix/AxionDynamix-Marvel-Pro-GGUF`. Segun los datos disponibles en HuggingFace, cuenta con 7.248.023.552 parametros totales y se distribuye en formato GGUF dentro de un repositorio de 4,4 GB. La model card lo presenta como un modelo orientado a multitarea en el borde (edge) y a uso agentico, entrenado sobre datos de codigo, automatizacion, CLI e IDE.
+AxionDynamix-Marvel-Pro es un modelo de lenguaje publicado por el usuario Axion Dynamix bajo el identificador `axion-dynamix/AxionDynamix-Marvel-Pro-GGUF`. Segun los datos disponibles en Hugging Face, cuenta con 7.248.023.552 parametros totales y se distribuye en formato GGUF dentro de un repositorio de 4,4 GB. La model card lo presenta como un modelo orientado a multitarea en el borde (edge) y a uso agentico, entrenado sobre datos de codigo, automatizacion, CLI e IDE.
 
 La informacion publica es muy escasa. No se declara la arquitectura, la licencia, los idiomas soportados, la longitud de contexto ni los datos concretos de entrenamiento mas alla de menciones cualitativas a "H200 GPU" y a "fuentes y datasets alternativos" centrados en automatizacion y lenguajes de programacion. El autor afirma que el modelo es "vastamente mas capaz" que modelos de tamano similar, pero reconoce de forma explicita que no se han realizado pruebas independientes ni mediciones que verifiquen esas afirmaciones.
 
@@ -97,7 +97,7 @@ Nota: los datos de los modelos comparativos deben contrastarse con sus fichas of
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/axion-dynamix/AxionDynamix-Marvel-Pro-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/axion-dynamix/AxionDynamix-Marvel-Pro-GGUF
 - Model card del autor: disponible en la pagina del repositorio anterior.
 - Paper, blog, repositorio de codigo o demo: no disponible (no se han encontrado fuentes adicionales en la busqueda web).
 - Enlaces de los modelos comparativos, para contraste:

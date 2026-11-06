@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mikim869/qwen2.5-3b-jev-hard-v5.3-untruncated-reasoner es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario mikim869 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una especialización sobre la base de 3.090 millones de parámetros de Alibaba Qwen, realizada con la librería Unsloth (según la propia model card) y partiendo de la versión del repositorio unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit, es decir, una base ya cuantizada a 4 bits.
+mikim869/qwen2.5-3b-jev-hard-v5.3-untruncated-reasoner es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario mikim869 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una especialización sobre la base de 3.090 millones de parámetros de Alibaba Qwen, realizada con la librería Unsloth (según la propia model card) y partiendo de la versión del repositorio unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit, es decir, una base ya cuantizada a 4 bits.
 
 El nombre del repositorio sugiere tres decisiones de diseño: un conjunto de datos orientado a ejemplos "duros" de razonamiento (jev-hard), un entrenamiento sin truncado de secuencias (untruncated) y un enfoque en razonamiento explícito (reasoner). Cabe subrayar que la model card no documenta el dataset, el número de tokens, la configuración de entrenamiento ni ninguna evaluación, por lo que todas esas afirmaciones deben considerarse inferencias a partir del nombre y no hechos verificados.
 
@@ -89,9 +89,9 @@ Frente al Qwen2.5-3B-Instruct original, este fine-tune no ofrece ninguna ventaja
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v5.3-untruncated-reasoner
+- Modelo en Hugging Face: https://huggingface.co/mikim869/qwen2.5-3b-jev-hard-v5.3-untruncated-reasoner
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-unsloth-bnb-4bit
-- Qwen2.5-3B en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B
+- Qwen2.5-3B en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B
 - Informe técnico de Qwen2.5 (arXiv 2412.15115): https://arxiv.org/abs/2412.15115
 - Repositorio espejo de Qwen2.5 en GitHub: https://github.com/worldart/QwenLM_Qwen2.5
 - Unsloth (librería de entrenamiento utilizada): https://github.com/unslothai/unsloth

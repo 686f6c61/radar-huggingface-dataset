@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IHDM_AFHQ_CAT_256 es un repositorio de pesos publicado en HuggingFace por el usuario Lin-Wang-NUS. La model card asociada está prácticamente vacía: se limita a declarar la licencia Apache 2.0 y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,8 GB y no tiene ningún pipeline declarado, cero descargas y cero "likes" en el momento de la consulta.
+IHDM_AFHQ_CAT_256 es un repositorio de pesos publicado en Hugging Face por el usuario Lin-Wang-NUS. La model card asociada está prácticamente vacía: se limita a declarar la licencia Apache 2.0 y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio ocupa 0,8 GB y no tiene ningún pipeline declarado, cero descargas y cero "likes" en el momento de la consulta.
 
 Por la nomenclatura del identificador (IHDM + AFHQ + CAT + 256) y por el tamaño del repositorio, es plausible que se trate de un modelo generativo de imágenes entrenado o evaluado sobre la clase "cat" del conjunto de datos AFHQ a resolución 256x256, pero esto es una inferencia a partir del nombre y no está confirmado en ninguna fuente disponible. No hay información pública verificable que permita afirmar qué tipo de arquitectura emplea, cuántos parámetros tiene ni qué problema resuelve exactamente.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente negativa:
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Tamaño del repositorio | 0,8 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creación | 2026-10-04 |
 | Última actualización | 2026-10-04 |
 | Descargas / likes | 0 / 0 |
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: no disponible. Como referencia meramente indicativa, un repositorio de 0,8 GB de pesos cabría con holgura en GPUs con 4-8 GB de VRAM en precisión de 16 bits, pero esto depende del formato real de los pesos y del framework de ejecución, datos ambos desconocidos.
 - GPU recomendadas: no disponible. No hay información sobre requisitos de memoria ni sobre GPUs utilizadas por el autor.
 - Compatibilidad con GPU de consumo: no confirmada. Si el tamaño real del modelo se corresponde con el del repositorio, es probable que quepa en GPUs de consumo tipo RTX 3060, RTX 4060 o superiores, pero no puede afirmarse sin verificar los pesos.
-- Opciones de despliegue: no disponible. No se ha declarado pipeline en HuggingFace. Si se confirmase que es un modelo de difusión, las vías habituales serían la librería diffusers o PyTorch directamente; si fuese un modelo de lenguaje, vLLM, llama.cpp, Ollama o TGI. Ninguna de estas opciones está verificada.
+- Opciones de despliegue: no disponible. No se ha declarado pipeline en Hugging Face. Si se confirmase que es un modelo de difusión, las vías habituales serían la librería diffusers o PyTorch directamente; si fuese un modelo de lenguaje, vLLM, llama.cpp, Ollama o TGI. Ninguna de estas opciones está verificada.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IHDM_AFHQ_CAT_256 | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| IHDM_AFHQ_CAT_256 | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lin-Wang-NUS/IHDM_AFHQ_CAT_256
-- Página del autor en HuggingFace: https://huggingface.co/Lin-Wang-NUS
+- Repositorio en Hugging Face: https://huggingface.co/Lin-Wang-NUS/IHDM_AFHQ_CAT_256
+- Página del autor en Hugging Face: https://huggingface.co/Lin-Wang-NUS
 - Paper, blog, repositorio de código o demo: no disponibles. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; los resultados obtenidos correspondían a términos no relacionados (red profesional LinkedIn y artículos sobre la planta de lino).

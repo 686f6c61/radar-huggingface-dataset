@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lilgarca/xdd es un modelo de lenguaje publicado en HuggingFace por el usuario Lilgarca bajo licencia Apache 2.0. Se distribuye en formato GGUF, lo que indica que está pensado para inferencia local con llama.cpp y herramientas compatibles, y cuenta con 229.693.184 parámetros según los datos de safetensors, es decir, aproximadamente 230 millones de parámetros, un tamaño propio de la gama pequeña orientada a ejecución en hardware modesto.
+Lilgarca/xdd es un modelo de lenguaje publicado en Hugging Face por el usuario Lilgarca bajo licencia Apache 2.0. Se distribuye en formato GGUF, lo que indica que está pensado para inferencia local con llama.cpp y herramientas compatibles, y cuenta con 229.693.184 parámetros según los datos de safetensors, es decir, aproximadamente 230 millones de parámetros, un tamaño propio de la gama pequeña orientada a ejecución en hardware modesto.
 
 La model card publicada es prácticamente vacía: solo declara la licencia Apache 2.0, sin información sobre arquitectura, datos de entrenamiento, idiomas, contexto o capacidades. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta, lo que sugiere un modelo recién subido o de carácter experimental y sin validación por parte de la comunidad.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el corpus de entrenamiento (número de tokens, composici
 ## Capacidades
 
 - Generación de texto conversacional: la etiqueta `conversational` del repositorio sugiere un uso orientado a diálogo, aunque no se detalla el formato de prompt ni la plantilla de chat.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de la infraestructura de endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede servirse a través de la infraestructura de endpoints de Hugging Face.
 - Inferencia local vía GGUF: al publicarse en este formato, es ejecutable con llama.cpp y derivados (Ollama, LM Studio, etc.).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con ~230 M de parámetros, en FP16 ocuparía aproximadamente 0,46 GB; en cuantización Q4, del orden de 0,15-0,2 GB. Son estimaciones basadas en el recuento de parámetros, no en datos publicados por el autor.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; también puede ejecutarse en CPU.
 - GPU consumer: cabe holgadamente en cualquier GPU consumer moderna (RTX 3060, RTX 4060, e incluso iGPU con memoria compartida).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; también endpoints de HuggingFace según la etiqueta del repositorio.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y servidores compatibles con GGUF; también endpoints de Hugging Face según la etiqueta del repositorio.
 - Latencia y throughput: no disponibles; dependerá del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | Lilgarca/xdd | ~230 M | no disponible | Apache 2.0 | GGUF | Sin model card ni benchmarks |
 | Qwen2.5-0.5B | ~494 M | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Modelo pequeño con documentación completa y benchmarks publicados |
-| SmolLM2-135M | ~135 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Familia de modelos pequeños de HuggingFace con evaluación publicada |
+| SmolLM2-135M | ~135 M | 8.192 tokens | Apache 2.0 | safetensors, GGUF | Familia de modelos pequeños de Hugging Face con evaluación publicada |
 | TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Modelo de gama pequeña ampliamente evaluado por la comunidad |
 
 La comparación se ofrece a título orientativo por rango de tamaño; no existen datos de rendimiento de Lilgarca/xdd que permitan una comparación cuantitativa.
@@ -80,5 +80,5 @@ La comparación se ofrece a título orientativo por rango de tamaño; no existen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lilgarca/xdd
+- Modelo en Hugging Face: https://huggingface.co/Lilgarca/xdd
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

@@ -76,8 +76,8 @@ Condiciones de la medición A/B: una MI210, orden por defecto, afinada, afinada,
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-35B-A3B-W4A16-g128 (esta ficha) | 35.951.822.704 totales; activos no disponible | no disponible (servicio de ejemplo a 32.768) | int4 W4A16, grupo 128, simétrico | MIT | HuggingFace, 0 descargas, 0 likes en el momento de la consulta |
-| ornith-ai/Ornith-1.5-35B-A3B (base) | 35.951.822.704 (71,9 GB en bf16) | no disponible | bf16 | MIT | HuggingFace |
+| Ornith-1.5-35B-A3B-W4A16-g128 (esta ficha) | 35.951.822.704 totales; activos no disponible | no disponible (servicio de ejemplo a 32.768) | int4 W4A16, grupo 128, simétrico | MIT | Hugging Face, 0 descargas, 0 likes en el momento de la consulta |
+| ornith-ai/Ornith-1.5-35B-A3B (base) | 35.951.822.704 (71,9 GB en bf16) | no disponible | bf16 | MIT | Hugging Face |
 | Builds AWQ asimétricas de la familia Ornith-1.5-35B-A3B | mismas que el base | no disponible | AWQ asimétrico | MIT (presumiblemente) | mencionadas por el autor, sin identificar |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes. La diferencia documentada es operativa: esta build usa pesos simétricos para encajar en el kernel fused MoE WNA16 de vLLM sobre gfx90a, mientras que las builds AWQ asimétricas no se sirven con buen rendimiento en esa GPU según el autor.

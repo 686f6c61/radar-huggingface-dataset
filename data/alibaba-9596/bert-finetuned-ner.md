@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bert-finetuned-ner es un modelo de clasificación de tokens (token-classification) publicado en HuggingFace por el usuario alibaba-9596. Se trata de un ajuste fino del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder tipo BERT de 33.215.625 parámetros, reentrenado para reconocimiento de entidades nombradas (NER). La model card ha sido generada automáticamente por la librería Trainer de Transformers y no documenta ni el conjunto de datos ni el esquema de etiquetas empleados.
+bert-finetuned-ner es un modelo de clasificación de tokens (token-classification) publicado en Hugging Face por el usuario alibaba-9596. Se trata de un ajuste fino del modelo de embeddings BAAI/bge-small-en-v1.5, un encoder tipo BERT de 33.215.625 parámetros, reentrenado para reconocimiento de entidades nombradas (NER). La model card ha sido generada automáticamente por la librería Trainer de Transformers y no documenta ni el conjunto de datos ni el esquema de etiquetas empleados.
 
 El interés del modelo es limitado pero concreto: ofrece un encoder pequeño (33,2 M de parámetros) que cabe en cualquier GPU de consumo e incluso en CPU, con métricas declaradas de F1 0,9128, precisión 0,9042, recall 0,9216 y accuracy 0,9811 sobre un conjunto de evaluación no identificado. Está publicado bajo licencia MIT, lo que permite uso comercial sin restricciones, y sus pesos están en formato safetensors.
 
@@ -112,11 +112,11 @@ Frente a estas alternativas, la ventaja de bert-finetuned-ner es su tamano reduc
 - Licencia MIT: permite uso comercial, modificacion y redistribucion con atribucion y sin garantia. No hay restricciones adicionales declaradas, pero tampoco se ofrece indemnizacion alguna por parte del autor.
 - Madurez del artefacto: 0 descargas y 0 likes, model card autogenerada sin revisar (el propio texto pide "proofread and complete it, then remove this comment"), y fechas de creacion y actualizacion en 2026. No hay evidencia de mantenimiento ni de soporte.
 - Repositorio de 17,5 GB para un modelo de 33 M de parametros: conviene revisar que archivos se descargan para no arrastrar checkpoints y estados del optimizador innecesarios.
-- Nota sobre el nombre: el prefijo "alibaba-" corresponde al nombre de usuario de HuggingFace del autor y no implica ninguna relacion con Alibaba Group ni con sus modelos Qwen. Los resultados de busqueda web obtenidos (alibaba.com, AliExpress) no guardan relacion con este modelo.
+- Nota sobre el nombre: el prefijo "alibaba-" corresponde al nombre de usuario de Hugging Face del autor y no implica ninguna relacion con Alibaba Group ni con sus modelos Qwen. Los resultados de busqueda web obtenidos (alibaba.com, AliExpress) no guardan relacion con este modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibaba-9596/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/alibaba-9596/bert-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Libreria transformers: https://github.com/huggingface/transformers
 - Documentacion de pipelines de token classification: https://huggingface.co/docs/transformers/main/en/tasks/token_classification

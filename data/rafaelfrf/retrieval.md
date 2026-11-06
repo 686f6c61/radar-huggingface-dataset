@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rafaelfrf/retrieval` es un repositorio de HuggingFace que contiene una implementación de referencia de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de *retrieval* multimodal, es decir, recuperación cruzada imagen-texto y texto-imagen. Lo publica el usuario Rafaelfrf bajo licencia MIT y se presenta explícitamente como un punto de partida experimental, no como un modelo entrenado ni evaluado.
+`Rafaelfrf/retrieval` es un repositorio de Hugging Face que contiene una implementación de referencia de BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de *retrieval* multimodal, es decir, recuperación cruzada imagen-texto y texto-imagen. Lo publica el usuario Rafaelfrf bajo licencia MIT y se presenta explícitamente como un punto de partida experimental, no como un modelo entrenado ni evaluado.
 
 El repositorio incluye el código Python de definición del modelo, un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de entrenamiento por defecto y un `model.safetensors` que el autor describe como *checkpoint de inicialización* válido para *smoke tests*, no como pesos entrenados. La arquitectura declarada es BLIP en escala *base*, con atención dispersa (*sparse*), fusión tipo *tucker*, activación ReLU y normalización *scalenorm*.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rafaelfrf/retrieval | 16.576 (metadatos; no verificado) | no disponible | sin benchmarks publicados | MIT | HuggingFace, checkpoint de inicializacion |
+| Rafaelfrf/retrieval | 16.576 (metadatos; no verificado) | no disponible | sin benchmarks publicados | MIT | Hugging Face, checkpoint de inicializacion |
 | BLIP base (Salesforce) | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 | BLIP-2 | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 | CLIP (OpenAI) | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
@@ -75,10 +75,10 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 - El recuento de parámetros de safetensors (16.576) es inconsistente con un BLIP base y sugiere que el fichero no contiene el modelo completo o que los metadatos son incorrectos; verificar antes de cualquier uso.
 - No hay información sobre sesgos, riesgo de alucinación ni comportamiento en idiomas distintos del inglés (los idiomas soportados no están declarados).
 - La licencia MIT permite uso comercial del código, pero el autor advierte de revisar por separado los términos de los datos externos que se usen con el repositorio.
-- Al ser una implementación personalizada, la carga mediante APIs automáticas de HuggingFace requiere un adaptador explícito; no es *plug-and-play*.
+- Al ser una implementación personalizada, la carga mediante APIs automáticas de Hugging Face requiere un adaptador explícito; no es *plug-and-play*.
 - Cualquier resultado futuro debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rafaelfrf/retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Rafaelfrf/retrieval
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

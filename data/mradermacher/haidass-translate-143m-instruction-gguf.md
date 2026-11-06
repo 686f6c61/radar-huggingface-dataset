@@ -6,7 +6,7 @@ Haidass-Translate-143M-Instruction-GGUF es la version cuantizada en formato GGUF
 
 El repositorio no aporta pesos propietarios ni innovaciones de arquitectura propias: mradermacher se limita a convertir los pesos originales a GGUF y a generar doce cuantizaciones estaticas (desde Q2_K hasta f16), todas ellas con un peso de fichero inferior a 0,5 GB. Esto lo convierte en una pieza adecuada para pipelines de traduccion de bajo coste, preetiquetado de corpus y despliegues en el borde, donde un modelo de 7 B o 70 B seria desproporcionado.
 
-La ficha se ha elaborado exclusivamente con los datos de la model card y de los metadatos de HuggingFace. La busqueda web asociada no devolvio informacion util sobre el modelo (los resultados corresponden a paginas corporativas de Microsoft), por lo que numerosos campos tecnicos quedan marcados como "no disponible" en lugar de rellenarse con suposiciones.
+La ficha se ha elaborado exclusivamente con los datos de la model card y de los metadatos de Hugging Face. La busqueda web asociada no devolvio informacion util sobre el modelo (los resultados corresponden a paginas corporativas de Microsoft), por lo que numerosos campos tecnicos quedan marcados como "no disponible" en lugar de rellenarse con suposiciones.
 
 ## Especificaciones tecnicas
 
@@ -27,13 +27,13 @@ Datos adicionales del repositorio: `quantize_version: 2`, `output_tensor_quantis
 
 El modelo base es un transformer decoder-only de 143 M de parametros, etiquetado con la familia Qwen3 y afinado por instrucciones para tareas de traduccion. La model card del repositorio cuantizado no documenta la configuracion concreta de capas, dimension de embedding, numero de cabezas de atencion ni la longitud de contexto soportada. Tampoco se detalla el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT sobre pares paralelos. Toda esa informacion esta ausente tanto en el README como en los metadatos disponibles.
 
-La unica informacion tecnica relevante de este repositorio es el proceso de cuantizacion. Se han generado cuantizaciones estaticas (no ponderadas) mediante el pipeline de mradermacher, con conversion desde pesos HuggingFace (`convert_type: hf`) y cuantizacion de tensores de salida. No se documentan innovaciones arquitectonicas como atencion lineal, decodificacion especulativa, SSM ni arquitecturas hibridas. El tag `conversational` indica que el modelo esta preparado para su uso en pipelines de tipo conversacional ademas de la traduccion pura.
+La unica informacion tecnica relevante de este repositorio es el proceso de cuantizacion. Se han generado cuantizaciones estaticas (no ponderadas) mediante el pipeline de mradermacher, con conversion desde pesos Hugging Face (`convert_type: hf`) y cuantizacion de tensores de salida. No se documentan innovaciones arquitectonicas como atencion lineal, decodificacion especulativa, SSM ni arquitecturas hibridas. El tag `conversational` indica que el modelo esta preparado para su uso en pipelines de tipo conversacional ademas de la traduccion pura.
 
 ## Capacidades
 
 - Traduccion automatica bidireccional entre ingles y chino (`en` -> `zh` y `zh` -> `en`), tarea principal declarada en el pipeline `translation`.
 - Modelo afinado por instrucciones: acepta indicaciones en formato de instruccion en lugar de requerir unicamente texto plano, segun refleja el sufijo `Instruction` del modelo base.
-- Formato conversacional: el tag `conversational` de HuggingFace sugiere compatibilidad con plantillas de chat, aunque la plantilla concreta no esta documentada en la model card.
+- Formato conversacional: el tag `conversational` de Hugging Face sugiere compatibilidad con plantillas de chat, aunque la plantilla concreta no esta documentada en la model card.
 - Modelo de lenguaje pequeno (tag `small-language-model`): puede generar texto de forma general, si bien su entrenamiento esta orientado a traduccion y no se documentan capacidades de razonamiento, codigo o matematicas.
 - Compatibilidad con `transformers` como libreria de referencia del modelo base.
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento explicito.
@@ -52,7 +52,7 @@ La unica informacion tecnica relevante de este repositorio es el proceso de cuan
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de HuggingFace incluyen puntuaciones de BLEU, chrF, COMET, MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion. La busqueda web realizada no aporto datos adicionales sobre el rendimiento del modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de Hugging Face incluyen puntuaciones de BLEU, chrF, COMET, MMLU, HumanEval, GSM8K ni de ningun otro conjunto de evaluacion. La busqueda web realizada no aporto datos adicionales sobre el rendimiento del modelo.
 
 ## Requisitos de hardware
 
@@ -91,7 +91,7 @@ Para un modelo comparable de la misma categoria (traduccion, menos de 200 M de p
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Haidass-Translate-143M-Instruction-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Haidass-Translate-143M-Instruction-GGUF
 - Modelo base: https://huggingface.co/umeiko/Haidass-Translate-143M-Instruction
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Haidass-Translate-143M-Instruction-GGUF
 - Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

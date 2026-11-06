@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mikhailsmirnov/class-self-supervised` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo el identificador de autor `mikhailsmirnov`. La propia model card lo describe como "a working research note about Self Supervised" y aclara de forma explícita que no se presenta como un artículo completado ni como la publicación de modelos entrenados. El repositorio contiene dos artefactos de documentación (`reading.md` y `README.md`) y un fichero de pesos en formato safetensors con 24.832 parámetros totales, un volumen que descarta cualquier uso como modelo generativo.
+`mikhailsmirnov/class-self-supervised` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo el identificador de autor `mikhailsmirnov`. La propia model card lo describe como "a working research note about Self Supervised" y aclara de forma explícita que no se presenta como un artículo completado ni como la publicación de modelos entrenados. El repositorio contiene dos artefactos de documentación (`reading.md` y `README.md`) y un fichero de pesos en formato safetensors con 24.832 parámetros totales, un volumen que descarta cualquier uso como modelo generativo.
 
 El propósito declarado es organizar la motivación de una pregunta de investigación sobre aprendizaje autosupervisado, el trabajo relacionado, una hipótesis falsable y un plan de evaluación con baselines emparejados. El repositorio también enumera comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. No incluye código de entrenamiento, ni checkpoint funcional, ni resultados experimentales, ni benchmarks.
 
@@ -92,7 +92,7 @@ No disponible. No se han proporcionado modelos comparables y la comparación con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mikhailsmirnov/class-self-supervised
+- Hugging Face: https://huggingface.co/mikhailsmirnov/class-self-supervised
 - Artefacto principal del repositorio: `reading.md`
 - Documentación del repositorio: `README.md`
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La búsqueda web devolvió únicamente páginas médicas en árabe sin relación con el repositorio, por lo que no se incluye ningún enlace adicional.

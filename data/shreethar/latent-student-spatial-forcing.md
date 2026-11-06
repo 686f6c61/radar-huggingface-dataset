@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - Latent-Student-Spatial-Forcing](https://huggingface.co/shreethar/Latent-Student-Spatial-Forcing)
+- [Hugging Face - Latent-Student-Spatial-Forcing](https://huggingface.co/shreethar/Latent-Student-Spatial-Forcing)
 - [Modelo base - LatentStudent-ckpt-400](https://huggingface.co/shreethar/LatentStudent-ckpt-400)

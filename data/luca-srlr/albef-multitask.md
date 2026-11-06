@@ -2,7 +2,7 @@
 
 ## Resumen
 
-albef-multitask es un repositorio publicado por el usuario luca-srlr en HuggingFace que contiene una implementación a pequeña escala de la arquitectura ALBEF (Align Before Fuse) orientada a tareas multitarea. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo.
+albef-multitask es un repositorio publicado por el usuario luca-srlr en Hugging Face que contiene una implementación a pequeña escala de la arquitectura ALBEF (Align Before Fuse) orientada a tareas multitarea. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El artefacto principal es el script `model.py`, acompañado de `config.json` (arquitectura), `training_args.json` (receta de entrenamiento por defecto) y `model.safetensors` (inicialización). La escala declarada es "tiny" y el recuento real de parámetros en safetensors es de 16.576, un orden de magnitud muy inferior al de cualquier modelo utilizable en tareas reales de visión-lenguaje.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| albef-multitask (este) | 16.576 | no disponible | No (solo inicialización) | apache-2.0 | HuggingFace, 0 descargas |
+| albef-multitask (este) | 16.576 | no disponible | No (solo inicialización) | apache-2.0 | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce) | ~210 M (ViT-B/16 + BERT-base) | 25 tokens de texto aprox. | Sí, preentrenado | BSD-3-Clause (según release original) | GitHub y checkpoints públicos |
-| BLIP (Salesforce) | ~224 M (ViT-B + BERT-base) | 20-30 tokens de texto aprox. | Sí, preentrenado | BSD-3-Clause (según release original) | HuggingFace |
+| BLIP (Salesforce) | ~224 M (ViT-B + BERT-base) | 20-30 tokens de texto aprox. | Sí, preentrenado | BSD-3-Clause (según release original) | Hugging Face |
 
 La comparación con ALBEF original y BLIP se ofrece como referencia de categoría (visión-lenguaje con alineamiento y fusión); las cifras de esos modelos no provienen de la información proporcionada en esta ficha y deben verificarse en sus repositorios oficiales.
 
@@ -80,7 +80,7 @@ La comparación con ALBEF original y BLIP se ofrece como referencia de categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luca-srlr/albef-multitask
+- Modelo en Hugging Face: https://huggingface.co/luca-srlr/albef-multitask
 - ALBEF original (paper): https://arxiv.org/abs/2107.07651
 - Repositorio oficial de ALBEF: https://github.com/salesforce/ALBEF
 - BLIP (paper de referencia de la categoría): https://arxiv.org/abs/2201.12086

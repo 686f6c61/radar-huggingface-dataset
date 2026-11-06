@@ -75,8 +75,8 @@ El autor indica ademas que las probabilidades de decision no se han recalibrado 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| killkli/open-jev-laya-multilingual-onnx | Export ONNX de decisiones tipadas | no disponible | no disponible | Apache 2.0 | HuggingFace (transformers.js) |
-| convaiinnovations/laya-multilingual | Checkpoint original de decisiones | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| killkli/open-jev-laya-multilingual-onnx | Export ONNX de decisiones tipadas | no disponible | no disponible | Apache 2.0 | Hugging Face (transformers.js) |
+| convaiinnovations/laya-multilingual | Checkpoint original de decisiones | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | typesafe/jev-* (TypeSafe Jev) | Modelo de decisiones tipadas, servicio propietario | no disponible | no disponible | propietaria (servicio) | api.typesafe.ai y OpenRouter |
 
 La comparacion con TypeSafe Jev se apoya en la propia documentacion del proyecto Laya, que se presenta como la alternativa de codigo abierto a Jev y mantiene compatibilidad de formato en la ruta /v1/systemone. No se dispone de datos de parametros, contexto ni rendimiento de ninguna de las tres opciones en la informacion proporcionada.
@@ -96,7 +96,7 @@ La comparacion con TypeSafe Jev se apoya en la propia documentacion del proyecto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/killkli/open-jev-laya-multilingual-onnx
+- Repositorio en Hugging Face: https://huggingface.co/killkli/open-jev-laya-multilingual-onnx
 - Checkpoint original Laya multilingual (Convai Innovations): https://huggingface.co/convaiinnovations/laya-multilingual
 - Revision concreta del checkpoint usada en el export: https://huggingface.co/convaiinnovations/laya/tree/5e7b2b1b8ca2ecdd3f2322d94069c9b6ce7e844b/multilingual
 - Exportador ONNX de receptron/laya: https://github.com/receptron/laya/blob/6478649e723122ca24bbf5fb69ed1010023c9750/export/export_onnx.py

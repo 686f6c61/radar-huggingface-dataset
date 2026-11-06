@@ -79,7 +79,7 @@ La principal diferencia con el modelo original es la eliminacion de rechazos y l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wy8edhuh/DeepSeek-R1-Distill-Qwen-7B-Abliterated-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wy8edhuh/DeepSeek-R1-Distill-Qwen-7B-Abliterated-Q4_K_M-GGUF
 - Modelo base (DuoNeural): https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-7B-Abliterated
 - Modelo original DeepSeek-R1-Distill-Qwen-7B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Repositorio GitHub de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1

@@ -72,7 +72,7 @@ Estimaciones orientativas de VRAM para inferencia, calculadas sobre un modelo de
 - Cache KV con GQA: unos 147 KB por token en FP16 (2 x 36 capas x 8 cabezas KV x 128 de head_dim x 2 bytes). 8.192 tokens suponen aproximadamente 1,2 GB; 32.768 tokens, aproximadamente 4,8 GB. A 32K de contexto, la cache KV pesa mas que los pesos del modelo en 4 bits, por lo que la longitud de contexto es el principal limitante de memoria. Una cache KV de 8 bits reduce estas cifras a la mitad.
 - GPU recomendadas: RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4070/4080/4090 para uso local; L4, A10G, A100 de 40/80 GB y H100 para servicio con batching. La receta oficial de vLLM para Qwen3-4B indica que el modelo cabe en una unica GPU, en un chip TPU v6e o en un nodo NUMA con Xeon 6.
 - Cabe en GPU de consumo: si, en cualquier tarjeta con 8 GB o mas de VRAM en cuantizacion de 4 bits con contexto corto, y en tarjetas de 12-16 GB con contexto largo.
-- Opciones de despliegue: transformers (con bitsandbytes), vLLM, SGLang, text-generation-inference (etiqueta declarada en el repositorio), llama.cpp y Ollama previa conversion a GGUF, y endpoints compatibles con la API de inferencia de HuggingFace.
+- Opciones de despliegue: transformers (con bitsandbytes), vLLM, SGLang, text-generation-inference (etiqueta declarada en el repositorio), llama.cpp y Ollama previa conversion a GGUF, y endpoints compatibles con la API de inferencia de Hugging Face.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas para este ajuste. Como referencia del orden de magnitud para un 4B denso, en una A100 o H100 con vLLM y batching alto es habitual alcanzar miles de tokens por segundo agregados y decenas de tokens por segundo por usuario en streaming, pero se trata de una estimacion no verificada para este repositorio.
 
 ## Comparativa con modelos similares
@@ -81,11 +81,11 @@ Comparativa con alternativas de tamano equivalente. Los datos de los modelos de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NexaAgro-Qwen3-4B-Instruct | ~4B (heredado) | No documentado en el ajuste; 32K nativo / 128K con YaRN en la base | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-4B-Instruct-2507 | 4B denso | 32K nativo / 128K con YaRN | apache-2.0 | HuggingFace oficial de Qwen, ampliamente distribuido |
-| Llama-3.2-3B-Instruct | 3B denso | 128K | Llama 3.2 Community License | HuggingFace oficial de Meta |
-| Phi-4-mini-instruct | 3,8B denso | 128K | MIT | HuggingFace oficial de Microsoft |
-| Gemma-3-4B-IT | 4B denso | 128K | Gemma Terms of Use | HuggingFace oficial de Google |
+| NexaAgro-Qwen3-4B-Instruct | ~4B (heredado) | No documentado en el ajuste; 32K nativo / 128K con YaRN en la base | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-4B-Instruct-2507 | 4B denso | 32K nativo / 128K con YaRN | apache-2.0 | Hugging Face oficial de Qwen, ampliamente distribuido |
+| Llama-3.2-3B-Instruct | 3B denso | 128K | Llama 3.2 Community License | Hugging Face oficial de Meta |
+| Phi-4-mini-instruct | 3,8B denso | 128K | MIT | Hugging Face oficial de Microsoft |
+| Gemma-3-4B-IT | 4B denso | 128K | Gemma Terms of Use | Hugging Face oficial de Google |
 
 Diferencias relevantes: frente a las alternativas, este ajuste no aporta documentacion de datos, evaluacion publicada ni garantia de conservacion de capacidades, y su licencia Apache 2.0 es la mas permisiva del grupo junto con MIT. Su ventaja potencial es la especializacion de dominio, no confirmada, y el hecho de partir de una base de 4 bits que abarata el reajuste.
 
@@ -105,7 +105,7 @@ Diferencias relevantes: frente a las alternativas, este ajuste no aporta documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luccamifune/NexaAgro-Qwen3-4B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/luccamifune/NexaAgro-Qwen3-4B-Instruct
 - Modelo base de Unsloth: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Qwen3-4B (modelo original de Qwen): https://huggingface.co/Qwen/Qwen3-4B
 - Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

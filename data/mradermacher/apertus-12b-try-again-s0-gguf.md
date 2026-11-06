@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene las cuantizaciones GGUF del modelo `ToastyPigeon/apertus-12b-try-again-s0`, un modelo de ~11,5 mil millones de parametros (11.543.134.272) publicado por el usuario ToastyPigeon y convertido a formato GGUF por mradermacher, un cuantizador conocido dentro del ecosistema de HuggingFace. No se trata de la publicacion oficial de la familia Apertus (asociada a la iniciativa suiza y distribuida a traves de la organizacion `swiss-ai`), sino de una variante derivada de caracter comunitario cuyo proceso de entrenamiento no esta documentado en la informacion disponible.
+Este repositorio contiene las cuantizaciones GGUF del modelo `ToastyPigeon/apertus-12b-try-again-s0`, un modelo de ~11,5 mil millones de parametros (11.543.134.272) publicado por el usuario ToastyPigeon y convertido a formato GGUF por mradermacher, un cuantizador conocido dentro del ecosistema de Hugging Face. No se trata de la publicacion oficial de la familia Apertus (asociada a la iniciativa suiza y distribuida a traves de la organizacion `swiss-ai`), sino de una variante derivada de caracter comunitario cuyo proceso de entrenamiento no esta documentado en la informacion disponible.
 
 El problema que resuelve es practico: permitir la ejecucion local del modelo base en hardware de consumo mediante cuantizaciones que reducen el peso desde aproximadamente 23 GB en f16 hasta 4,7 GB en Q2_K, cubriendo un rango de 12 niveles distintos (Q2_K a Q8_0, incluido IQ4_XS). El repositorio ocupa 80,6 GB en total porque aloja todos los ficheros generados simultaneamente.
 
@@ -100,10 +100,10 @@ No hay datos de rendimiento publicados para este modelo, por lo que no es posibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/apertus-12b-try-again-s0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/apertus-12b-try-again-s0-GGUF
 - Modelo base: https://huggingface.co/ToastyPigeon/apertus-12b-try-again-s0
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#apertus-12b-try-again-s0-GGUF
-- Perfil del cuantizador en HuggingFace: https://huggingface.co/mradermacher
+- Perfil del cuantizador en Hugging Face: https://huggingface.co/mradermacher
 - Peticiones de cuantizacion: https://huggingface.co/mradermacher/model_requests
 - Variante alternativa del mismo cuantizador: https://huggingface.co/mradermacher/apertus-12b-healed-s0-i1-GGUF
 - Ficha de la variante alternativa en Socket: https://socket.dev/huggingface/package/mradermacher/apertus-12b-healed-s0-i1-gguf

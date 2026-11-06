@@ -93,7 +93,7 @@ La comparación cuantitativa con alternativas no está disponible: la model card
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastino/GLiDE-0.8B
+- Modelo en Hugging Face: https://huggingface.co/fastino/GLiDE-0.8B
 - Licencia: https://huggingface.co/fastino/GLiDE/blob/main/LICENSE
 - Sitio del proveedor: https://fastino.ai
 - Documentación de la API de inferencia: https://docs.fastino.ai/inference/systemone

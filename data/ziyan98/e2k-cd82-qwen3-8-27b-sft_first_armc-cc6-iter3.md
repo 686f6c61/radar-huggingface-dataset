@@ -78,8 +78,8 @@ El primer rollout de RL tras un bloque solo-SFT lo juega la política solo-SFT, 
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-...-sft_first_armc-cc6-iter3 | 27,78 B | no disponible | SFT sobre 1664 filas del juego `cd82-fb555c5d` (iteración 3 de calentamiento, sin RL aún) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | Modelo base multimodal de propósito general | Apache-2.0 (heredada) | HuggingFace |
+| E2K-cd82-...-sft_first_armc-cc6-iter3 | 27,78 B | no disponible | SFT sobre 1664 filas del juego `cd82-fb555c5d` (iteración 3 de calentamiento, sin RL aún) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (base) | 27,78 B | no disponible | Modelo base multimodal de propósito general | Apache-2.0 (heredada) | Hugging Face |
 | Otros brazos de la serie E2K-cd82 | 27,78 B | no disponible | Variantes de *harness*, conocimiento y semillas del mismo estudio | Apache-2.0 | Listados en `checkpoints/checkpoints.md` del dataset de RL |
 
 No se dispone de datos para comparar con alternativas de la misma categoría (agentes para ARC-AGI-3 u otros checkpoints de internalización de conocimiento): no disponible.
@@ -98,7 +98,7 @@ No se dispone de datos para comparar con alternativas de la misma categoría (ag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_armc-cc6-iter3
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_armc-cc6-iter3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL del experimento (episodios, métricas, filas y log): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset de conocimiento del arnés: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

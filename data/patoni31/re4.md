@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Patoni31/re4 es un repositorio alojado en HuggingFace por el usuario Patoni31 que, a fecha de la informacion disponible, no contiene ningun artefacto de modelo identificable ni documentacion tecnica. La model card publicada no describe arquitectura, parametros, datos de entrenamiento ni capacidades: su contenido es un texto promocional en ingles sobre casinos online, bonos y juegos de azar, con un enlace externo a un dominio de apuestas (vip-jokaroom.org). No hay pipeline declarado, ni licencia, ni idiomas, ni formatos de pesos indicados.
+Patoni31/re4 es un repositorio alojado en Hugging Face por el usuario Patoni31 que, a fecha de la informacion disponible, no contiene ningun artefacto de modelo identificable ni documentacion tecnica. La model card publicada no describe arquitectura, parametros, datos de entrenamiento ni capacidades: su contenido es un texto promocional en ingles sobre casinos online, bonos y juegos de azar, con un enlace externo a un dominio de apuestas (vip-jokaroom.org). No hay pipeline declarado, ni licencia, ni idiomas, ni formatos de pesos indicados.
 
 El repositorio acumula 0 descargas y 0 likes, no tiene ficheros de pesos documentados en la informacion proporcionada y su unica etiqueta es `region:us`, que es una etiqueta generica de region y no un identificador de tarea o familia de modelos. El autor mantiene otros repositorios de aspecto similar (Patoni31/re1, Patoni31/qe3, Patoni31/qe4), publicados en fechas proximas, lo que sugiere una serie de subidas automatizadas o de prueba en lugar de un modelo entrenado y publicado de forma convencional.
 
@@ -88,7 +88,7 @@ No disponible. No puede establecerse una categoria de comparacion (mismo tamano,
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/Patoni31/re4
-- Perfil del autor en HuggingFace: https://huggingface.co/Patoni31
+- Perfil del autor en Hugging Face: https://huggingface.co/Patoni31
 - Otro repositorio del mismo autor: https://huggingface.co/Patoni31/re1
 - Listado de modelos atribuidos al autor (terceros): https://essamamdani.com/ai-models/company/patoni31
 - Enlace externo citado en la model card (no verificado, no recomendado): https://vip-jokaroom.org/

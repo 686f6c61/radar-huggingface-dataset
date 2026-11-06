@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/arb_arab_100mb`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de pequeno tamano, con 124.770.816 parametros totales (aproximadamente 124,8 millones), construido sobre una arquitectura GPT-2 segun la etiqueta declarada por el autor. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
+El modelo `francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/arb_arab_100mb`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de pequeno tamano, con 124.770.816 parametros totales (aproximadamente 124,8 millones), construido sobre una arquitectura GPT-2 segun la etiqueta declarada por el autor. El repositorio ocupa 0,3 GB y los pesos se distribuyen en formato safetensors.
 
 El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.23.0, con Transformers 4.56.2, PyTorch 2.5.1+cu121, Datasets 4.8.4 y Tokenizers 0.22.1. El nombre del modelo incluye referencias a "ppt-mp-struct-core-100mb" y a una semilla concreta (seed 3407), lo que sugiere un experimento academico ligado a tecnicas de poda estructurada o enmascaramiento, aunque la model card no documenta estos detalles de forma explicita.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental |
-| goldfish-models/arb_arab_100mb (modelo base) | ~100 M (segun nombre) | no disponible | no disponible en la informacion | HuggingFace | Modelo base sin ajustar |
+| francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental |
+| goldfish-models/arb_arab_100mb (modelo base) | ~100 M (segun nombre) | no disponible | no disponible en la informacion | Hugging Face | Modelo base sin ajustar |
 | GPT-2 small | 124 M | 1024 tokens | licencia de OpenAI (con restricciones) | Ampliamente disponible | Referencia de arquitectura, no especifico de arabe |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa entre estos modelos.
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407
-- Modelo base en HuggingFace: https://huggingface.co/goldfish-models/arb_arab_100mb
+- Hugging Face del modelo: https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407
+- Modelo base en Hugging Face: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/s0y2zjs9
 - No se han encontrado otros enlaces relevantes en la busqueda web (los resultados obtenidos corresponden a organismos meteorologicos y no guardan relacion con el modelo).

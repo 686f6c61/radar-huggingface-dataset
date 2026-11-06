@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anzhc/NAFNet-QwenVAE-DeGrid | VAE basado en NAFNet | no disponible | no aplicable | Apache 2.0 | HuggingFace |
-| DraconicDragon/NAFNet-VAE-DeGrid | VAE basado en NAFNet | no disponible | no aplicable | Apache 2.0 | HuggingFace |
+| Anzhc/NAFNet-QwenVAE-DeGrid | VAE basado en NAFNet | no disponible | no aplicable | Apache 2.0 | Hugging Face |
+| DraconicDragon/NAFNet-VAE-DeGrid | VAE basado en NAFNet | no disponible | no aplicable | Apache 2.0 | Hugging Face |
 | SwinIR | Transformer para restauracion | ~11M (light) | no aplicable | Apache 2.0 | GitHub/HuggingFace |
 | Real-ESRGAN | GAN para superresolucion | ~16M | no aplicable | BSD-3-Clause | GitHub/HuggingFace |
 
@@ -77,7 +77,7 @@ La comparativa se basa en modelos de restauracion de imagenes de tamano similar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anzhc/NAFNet-QwenVAE-DeGrid
+- Modelo en Hugging Face: https://huggingface.co/Anzhc/NAFNet-QwenVAE-DeGrid
 - Modelo base: https://huggingface.co/DraconicDragon/NAFNet-VAE-DeGrid
 - Repositorio de NAFNet (Megvii Research): https://github.com/megvii-research/NAFNet
 - Perfil del autor: https://huggingface.co/Anzhc

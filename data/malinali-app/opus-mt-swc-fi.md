@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia con e
 
 ## Enlaces
 
-- [HuggingFace: malinali-app/opus-mt-swc-fi](https://huggingface.co/malinali-app/opus-mt-swc-fi)
+- [Hugging Face: malinali-app/opus-mt-swc-fi](https://huggingface.co/malinali-app/opus-mt-swc-fi)
 - [Modelo base: Helsinki-NLP/opus-mt-swc-fi](https://huggingface.co/Helsinki-NLP/opus-mt-swc-fi)
 - [Proyecto OPUS-MT en GitHub](https://github.com/Helsinki-NLP/Opus-MT)
 - [Malinali](https://malinali.app)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indic-Lite es un conjunto de herramientas de procesamiento de lenguaje natural para lenguas indicas, publicado por el usuario hillbyte en HuggingFace. No es un modelo de lenguaje generativo ni un transformer: se distribuye como tres clasificadores de texto entrenados con scikit-learn y serializados en formato joblib, con exportaciones equivalentes a ONNX para su ejecucion en C++, Go, Rust y plataformas moviles. El paquete cubre tres tareas: identificacion de idioma en 28 lenguas (Indic-LID), analisis de sentimiento en 12 lenguas (Indic-Sentiment) y clasificacion de noticias en 6 categorias y 6 lenguas (Indic-Topic), ademas de un modulo de limpieza de texto basado en reglas (Indic-Clean).
+Indic-Lite es un conjunto de herramientas de procesamiento de lenguaje natural para lenguas indicas, publicado por el usuario hillbyte en Hugging Face. No es un modelo de lenguaje generativo ni un transformer: se distribuye como tres clasificadores de texto entrenados con scikit-learn y serializados en formato joblib, con exportaciones equivalentes a ONNX para su ejecucion en C++, Go, Rust y plataformas moviles. El paquete cubre tres tareas: identificacion de idioma en 28 lenguas (Indic-LID), analisis de sentimiento en 12 lenguas (Indic-Sentiment) y clasificacion de noticias en 6 categorias y 6 lenguas (Indic-Topic), ademas de un modulo de limpieza de texto basado en reglas (Indic-Clean).
 
 El proposito declarado es ofrecer inferencia de muy baja latencia y huella minima en entornos edge, moviles y de servidor con CPU. Los tamanos son reducidos: 4,27 MB en ONNX para el identificador de idioma, 0,19 MB para el clasificador de sentimiento y 1,03 MB para el de temas. La model card reporta latencias de 0,155 ms, 0,164 ms y 0,135 ms por item respectivamente, sin especificar el hardware de medida. Esto lo situa en una categoria distinta a la de los LLM: aqui no hay generacion de texto, razonamiento ni tool calling, sino clasificacion supervisada de fragmentos cortos.
 
@@ -21,7 +21,7 @@ La relevancia actual del proyecto reside en la cobertura de lenguas de bajos rec
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | joblib (scikit-learn) y ONNX. Ficheros ONNX: onnx/indic_lid.onnx (4,27 MB), onnx/indic_sentiment.onnx (0,19 MB), onnx/indic_topic.onnx (1,03 MB) |
 | Tareas soportadas | Text-classification (identificacion de idioma, sentimiento, tema) y utilidades de normalizacion de texto |
-| Tamano del repositorio | 0,0 GB segun los metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 en la fecha de consulta |
 | Fecha de creacion / actualizacion | 2026-09-12 / 2026-09-12 |
 
@@ -87,7 +87,7 @@ La informacion proporcionada no incluye datos de rendimiento de modelos alternat
 | Latencia | 0,135-0,164 ms por item segun el autor | Superior a la de un clasificador lineal; no disponible en cifras concretas | No disponible |
 | Cobertura de lenguas | 28 para LID, 12 para sentimiento, 6 para tema | Variable; los transformers multilingues cubren muchas lenguas pero con calidad desigual en lenguas de bajos recursos | Alta en LID, menor en tareas especificas |
 | Licencia | CC-BY-4.0 | Depende del modelo base y del fine-tune | Depende del proyecto |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas y 0 likes; sin articulo ni evaluacion externa | Amplia disponibilidad y validacion en la comunidad | Amplia disponibilidad |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas y 0 likes; sin articulo ni evaluacion externa | Amplia disponibilidad y validacion en la comunidad | Amplia disponibilidad |
 
 No se dispone de resultados comparativos de benchmarks entre Indic-Lite y cualquiera de estas alternativas.
 
@@ -108,7 +108,7 @@ No se dispone de resultados comparativos de benchmarks entre Indic-Lite y cualqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hillbyte/indic-lite
+- Modelo en Hugging Face: https://huggingface.co/hillbyte/indic-lite
 - Conjunto de datos IndicGenBench FLORES-IN (usado para Indic-LID): https://huggingface.co/datasets/google/IndicGenBench_flores_in
 - Conjunto de datos de noticias en mizo (usado para Indic-LID): https://huggingface.co/datasets/andrewbawitlung/twirling_mizo_news
 - Conjunto de datos en khasi (usado para Indic-LID): https://huggingface.co/datasets/damerajee/khasi-datasets

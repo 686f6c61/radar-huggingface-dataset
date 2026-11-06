@@ -122,10 +122,10 @@ Nota: la model card incluye dos filas con la etiqueta MMStar y valores distintos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento de referencia |
 |---|---|---|---|---|---|
-| Qwen2.5-VL-7B-Instruct (este repo, GGUF) | 7,6B | no disponible | Apache 2.0 | HuggingFace, cuantizacion de terceros | 58,6 en MMMU (val), 864 en OCRBench, 68,2 en MathVista (modelo base) |
-| Qwen2-VL-7B | 7B aproximadamente | no disponible | Apache 2.0 | HuggingFace | 54,1 en MMMU (val), 845 en OCRBench, 58,2 en MathVista |
-| InternVL2.5-8B | 8B aproximadamente | no disponible | no disponible en la informacion | HuggingFace | 56 en MMMU (val), 822 en OCRBench, 58,3 en MathVista |
-| MiniCPM-o 2.6 | no disponible | no disponible | no disponible en la informacion | HuggingFace | 50,4 en MMMU (val), 852 en OCRBench, 60,6 en MathVista |
+| Qwen2.5-VL-7B-Instruct (este repo, GGUF) | 7,6B | no disponible | Apache 2.0 | Hugging Face, cuantizacion de terceros | 58,6 en MMMU (val), 864 en OCRBench, 68,2 en MathVista (modelo base) |
+| Qwen2-VL-7B | 7B aproximadamente | no disponible | Apache 2.0 | Hugging Face | 54,1 en MMMU (val), 845 en OCRBench, 58,2 en MathVista |
+| InternVL2.5-8B | 8B aproximadamente | no disponible | no disponible en la informacion | Hugging Face | 56 en MMMU (val), 822 en OCRBench, 58,3 en MathVista |
+| MiniCPM-o 2.6 | no disponible | no disponible | no disponible en la informacion | Hugging Face | 50,4 en MMMU (val), 852 en OCRBench, 60,6 en MathVista |
 
 Los datos de esta comparativa proceden de las tablas de evaluacion de la model card de Qwen2.5-VL-7B-Instruct. No se dispone de informacion sobre la longitud de contexto de los modelos alternativos en la documentacion consultada.
 
@@ -147,8 +147,8 @@ Los datos de esta comparativa proceden de las tablas de evaluacion de la model c
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mnsims1024/Qwen2.5-VL-7B-Instruct-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mnsims1024/Qwen2.5-VL-7B-Instruct-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Blog oficial de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/
 - Repositorio GitHub de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
 - Interfaz de chat de Qwen: https://chat.qwenlm.ai/

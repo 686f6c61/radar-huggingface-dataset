@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `lordkeremello45/Hwcontrol2.0` de HuggingFace no contiene un modelo de inteligencia artificial. La model card publicada se limita a un bloque de metadatos con la licencia GPL-3.0 y no incluye descripción, pesos, tokenizador, configuración ni ningún artefacto propio de un modelo entrenado. El pipeline aparece como no disponible, los idiomas no están declarados y el repositorio acumula 0 descargas y 0 likes desde su creación el 26 de octubre de 2026.
+El repositorio `lordkeremello45/Hwcontrol2.0` de Hugging Face no contiene un modelo de inteligencia artificial. La model card publicada se limita a un bloque de metadatos con la licencia GPL-3.0 y no incluye descripción, pesos, tokenizador, configuración ni ningún artefacto propio de un modelo entrenado. El pipeline aparece como no disponible, los idiomas no están declarados y el repositorio acumula 0 descargas y 0 likes desde su creación el 26 de octubre de 2026.
 
 El nombre del repositorio remite al proyecto HWcontrol2.0, alojado en GitHub, que se describe como una plataforma abierta y multiplataforma de monitorización, control, diagnóstico y salud de hardware. Según la descripción pública del repositorio, su arquitectura se compone de un panel en Flutter/Dart, un puente local en Go con autenticación y un motor nativo en C++ sobre CMake. Se trata, por tanto, de software de sistema y no de un modelo de lenguaje, visión o multimodal.
 
-La relevancia de esta ficha es, en consecuencia, negativa: sirve para documentar que el identificador existe en HuggingFace, que no debe confundirse con un modelo desplegable y que cualquier evaluación de capacidades, benchmarks o requisitos de inferencia carece de sentido con la información disponible.
+La relevancia de esta ficha es, en consecuencia, negativa: sirve para documentar que el identificador existe en Hugging Face, que no debe confundirse con un modelo desplegable y que cualquier evaluación de capacidades, benchmarks o requisitos de inferencia carece de sentido con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. El repositorio no es comparable con modelos de lenguaje de ningún tamaño, ya que no contiene parámetros, tokenizador ni ventana de contexto. Tampoco se han identificado en la información proporcionada otros repositorios de HuggingFace equivalentes con los que establecer una comparación técnica.
+No disponible. El repositorio no es comparable con modelos de lenguaje de ningún tamaño, ya que no contiene parámetros, tokenizador ni ventana de contexto. Tampoco se han identificado en la información proporcionada otros repositorios de Hugging Face equivalentes con los que establecer una comparación técnica.
 
 | Criterio | Hwcontrol2.0 | Modelo de referencia (cualquiera) |
 |---|---|---|
@@ -81,7 +81,7 @@ No disponible. El repositorio no es comparable con modelos de lenguaje de ningú
 
 - Confusión de identidad: el identificador `lordkeremello45/Hwcontrol2.0` puede aparecer en búsquedas como si fuese un modelo; no lo es.
 - Ausencia total de documentación: la model card solo contiene la licencia, sin descripción, uso previsto ni limitaciones declaradas por el autor.
-- Sin artefactos verificables: no hay pesos, tokenizador, configuración ni código en el repositorio de HuggingFace según los metadatos disponibles.
+- Sin artefactos verificables: no hay pesos, tokenizador, configuración ni código en el repositorio de Hugging Face según los metadatos disponibles.
 - Imposibilidad de evaluar sesgos o alucinación: no existe un modelo sobre el que medir estos riesgos.
 - Licencia GPL-3.0: si el proyecto de software asociado se reutiliza, impone obligaciones de copyleft (distribución del código fuente derivado bajo la misma licencia) que deben revisarse antes de integrarlo en productos propietarios.
 - Actividad nula: 0 descargas y 0 likes, sin actualizaciones desde la fecha de creación, lo que indica ausencia de mantenimiento o de comunidad.
@@ -90,7 +90,7 @@ No disponible. El repositorio no es comparable con modelos de lenguaje de ningú
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lordkeremello45/Hwcontrol2.0
+- Repositorio en Hugging Face: https://huggingface.co/lordkeremello45/Hwcontrol2.0
 - Repositorio en GitHub: https://github.com/lordkeremello45/HWcontrol2.0
 - Árbol del repositorio en GitHub: https://github.com/lordkeremello45/HWcontrol2.0/tree/main
-- Página principal de HuggingFace (referencia de plataforma): https://huggingface.co/
+- Página principal de Hugging Face (referencia de plataforma): https://huggingface.co/

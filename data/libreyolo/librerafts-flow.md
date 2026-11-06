@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Parametros | Tipo | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreRAFTs-flow | 1,0 M (small) | RAFT small, flujo óptico | Dos imágenes a resolución nativa | BSD 3-Clause | HuggingFace (LibreYOLO) |
+| LibreRAFTs-flow | 1,0 M (small) | RAFT small, flujo óptico | Dos imágenes a resolución nativa | BSD 3-Clause | Hugging Face (LibreYOLO) |
 | RAFT (upstream, princeton-vl) | No disponible en la información (variantes small y completa) | RAFT, flujo óptico | Dos imágenes a resolución nativa | BSD 3-Clause | GitHub princeton-vl/RAFT |
 | Otras alternativas de flujo óptico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (EPE, accuracy en Sintel/KITTI
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LibreYOLO/LibreRAFTs-flow
+- Hugging Face: https://huggingface.co/LibreYOLO/LibreRAFTs-flow
 - Repositorio fuente LibreYOLO: https://github.com/LibreYOLO/libreyolo
 - RAFT upstream (princeton-vl): https://github.com/princeton-vl/RAFT
 - Checkpoint original `raft-small.pth`: release `models.zip` de princeton-vl/RAFT (commit 2888e15), sha256 `c7d41b9cc88442bb8aa911dbb33086dac55a226394b142937ff22d5578717332`

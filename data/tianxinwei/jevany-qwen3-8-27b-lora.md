@@ -78,10 +78,10 @@ No se dispone de datos de rendimiento comparables para modelos de la misma categ
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JevAny-Qwen3.8-27B-LoRA | 27B (base) + LoRA | no disponible | Transfer-v9 85,76%; JevBench total 90,48% | no disponible | HuggingFace, 0 descargas |
-| JevAny-27B-SFT (tianxinwei) | 27B | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3.8-27B (base) | 27B denso multimodal | no disponible | no disponible en la informacion recogida | no disponible | HuggingFace y GitHub oficiales |
-| AMAImedia/Qwen3.8-27B-LoRA | 27B (base) + LoRA | no disponible | no disponible | no disponible | HuggingFace |
+| JevAny-Qwen3.8-27B-LoRA | 27B (base) + LoRA | no disponible | Transfer-v9 85,76%; JevBench total 90,48% | no disponible | Hugging Face, 0 descargas |
+| JevAny-27B-SFT (tianxinwei) | 27B | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3.8-27B (base) | 27B denso multimodal | no disponible | no disponible en la informacion recogida | no disponible | Hugging Face y GitHub oficiales |
+| AMAImedia/Qwen3.8-27B-LoRA | 27B (base) + LoRA | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparables para modelos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianxinwei/JevAny-Qwen3.8-27B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/tianxinwei/JevAny-Qwen3.8-27B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del proyecto JevAny: https://github.com/weitianxin/JevAny
 - Checkpoint SFT relacionado: https://huggingface.co/tianxinwei/JevAny-27B-SFT

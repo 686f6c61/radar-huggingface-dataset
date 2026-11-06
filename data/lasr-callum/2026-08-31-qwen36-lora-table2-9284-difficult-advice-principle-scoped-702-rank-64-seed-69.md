@@ -78,7 +78,7 @@ Todos comparten el mismo modelo base y el mismo esquema de entrenamiento LoRA, d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LASR-Callum/2026-08-31-qwen36-lora-table2-9284-difficult-advice-principle-scoped-702-rank-64-seed-69
+- Hugging Face: https://huggingface.co/LASR-Callum/2026-08-31-qwen36-lora-table2-9284-difficult-advice-principle-scoped-702-rank-64-seed-69
 - Repositorio del proyecto: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT
 - Adaptador relacionado (post-action-retrospection): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-par716-r64-dynbatch
 - Adaptador relacionado (good arm): https://d6108366.hf-mirror.com/LASR-Callum/qwen3.6-27b-lora-t2-9284-pc-good716-r64-dynbatch

@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nekavabu/zeta-2.1-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nekavabu/zeta-2.1-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/zed-industries/zeta-2.1
 - Conversión alternativa: https://huggingface.co/adilkairolla/zeta-2.1-GGUF
 - Otra conversión Q4_K_M: https://huggingface.co/onlyspaceghost/zeta-2.1-Q4_K_M-GGUF

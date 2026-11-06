@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elifaydinah/project-visual-question-answering` es un repositorio de HuggingFace publicado por el usuario elifaydinah que, pese a estar etiquetado con el pipeline `visual-question-answering`, no contiene un modelo entrenado sino una nota de investigación exploratoria sobre el área de VQA (Visual Question Answering). La model card lo describe explícitamente como "research-notes": recoge el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con baselines emparejados y requisitos de reproducibilidad, pero no presenta resultados experimentales, ablaciones completas ni código liberado.
+`elifaydinah/project-visual-question-answering` es un repositorio de Hugging Face publicado por el usuario elifaydinah que, pese a estar etiquetado con el pipeline `visual-question-answering`, no contiene un modelo entrenado sino una nota de investigación exploratoria sobre el área de VQA (Visual Question Answering). La model card lo describe explícitamente como "research-notes": recoge el alcance de una pregunta de investigación, posibles factores de confusión, un diseño de comparación con baselines emparejados y requisitos de reproducibilidad, pero no presenta resultados experimentales, ablaciones completas ni código liberado.
 
 El artefacto principal es un fichero `reading.md` con la nota completa; el `README.md` actúa como documentación. El autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados. Los pesos presentes en el repositorio (safetensors con 16.576 parámetros totales según los metadatos) no corresponden a un transformer de VQA funcional de gran escala, sino a un checkpoint residual de tamaño trivial, sin información pública sobre su arquitectura interna ni su proceso de entrenamiento.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, número de tokens, composici
 - Revisión metodológica previa a un experimento de VQA: el fichero `reading.md` puede servir como checklist para identificar factores de confusión y definir baselines emparejados antes de lanzar una comparación en VQAv2, GQA u OK-VQA.
 - Diseño de protocolos de reproducibilidad: la nota enumera requisitos como versiones de dataset, comandos, semillas, hardware y logs crudos, útiles para estandarizar la documentación de experimentos en un equipo de investigación.
 - Formación de nuevos investigadores: el documento puede usarse como lectura introductoria sobre el alcance y las trampas habituales del área de VQA.
-- Plantilla de documentación de repositorios de investigación: el propio `README.md` ejemplifica cómo separar planes, hipótesis y resultados en un repositorio de HuggingFace.
+- Plantilla de documentación de repositorios de investigación: el propio `README.md` ejemplifica cómo separar planes, hipótesis y resultados en un repositorio de Hugging Face.
 - Auditoría de repositorios dudosos: sirve como caso práctico para enseñar a distinguir entre un modelo desplegable y una nota de investigación mal etiquetada con pipeline `visual-question-answering`.
 - Referencia para la selección de datasets: la mención de VQAv2, GQA y OK-VQA puede orientar la elección de benchmarks en una fase de planificación, siempre verificando las fuentes originales.
 
@@ -79,5 +79,5 @@ No disponible. No se conocen modelos comparables porque el repositorio no implem
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elifaydinah/project-visual-question-answering
+- Repositorio en Hugging Face: https://huggingface.co/elifaydinah/project-visual-question-answering
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

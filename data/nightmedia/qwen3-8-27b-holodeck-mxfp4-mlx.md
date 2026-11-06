@@ -82,7 +82,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace: nightmedia/Qwen3.8-27B-Holodeck-mxfp4-mlx](https://huggingface.co/nightmedia/Qwen3.8-27B-Holodeck-mxfp4-mlx)
+- [Hugging Face: nightmedia/Qwen3.8-27B-Holodeck-mxfp4-mlx](https://huggingface.co/nightmedia/Qwen3.8-27B-Holodeck-mxfp4-mlx)
 - [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [MooreThreads/MusaCoder-27B](https://huggingface.co/MooreThreads/MusaCoder-27B)
 - [DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT](https://huggingface.co/DavidAU/Qwen3.5-27B-Claude-4.6-OS-INSTRUCT)

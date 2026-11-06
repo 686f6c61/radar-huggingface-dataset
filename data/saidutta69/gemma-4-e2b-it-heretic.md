@@ -17,7 +17,7 @@ El otro punto relevante es el empaquetado: los 5.104.297.504 parametros se reduc
 | Parametros activos | ~2,3B por token (tablas de embedding consultadas por capa; no es un MoE) |
 | Longitud de contexto | 128K tokens |
 | Tipos de cuantizacion | GGUF: Q8_0, Q6_K, Q5_K_M, Q4_K_M, IQ4_XS; safetensors sin cuantizar. El proyector multimodal solo se distribuye en F16 |
-| Idiomas soportados | Metadatos de HuggingFace: `en`. Model card: asistente multilingue en mas de 140 idiomas |
+| Idiomas soportados | Metadatos de Hugging Face: `en`. Model card: asistente multilingue en mas de 140 idiomas |
 | Licencia | `apache-2.0` en los metadatos, con `license_link` a la licencia de Gemma 4 de Google (discrepancia sin resolver) |
 | Formato de pesos | safetensors y GGUF, mas `gemma-4-E2B-it-heretic-mmproj-F16.gguf` (0,99 GB) necesario para vision y audio |
 | Vocabulario | 262K tokens |
@@ -43,7 +43,7 @@ La innovacion concreta de esta ficha es el proceso de abliteration. Heretic v1.4
 - Comprension de imagen: analisis de documentos, capturas de pantalla, interfaces y diagramas (MMMU-Pro 44,2%, MATH-Vision 52,4% en el base).
 - Comprension de audio: transcripcion y entendimiento de voz gracias al conformer incluido en el proyector (CoVoST 33,47; FLEURS 0,09 en el base).
 - Entrada de video, con el mismo tronco multimodal que imagen y audio.
-- Capacidades multilingues: la model card declara mas de 140 idiomas, aunque los metadatos de HuggingFace solo listan `en` (MMMLU 67,4% en el base).
+- Capacidades multilingues: la model card declara mas de 140 idiomas, aunque los metadatos de Hugging Face solo listan `en` (MMMLU 67,4% en el base).
 - Generacion de codigo (LiveCodeBench v6 44,0%, Codeforces ELO 633 en el base).
 - Uso agentico: el benchmark Tau2 (24,5% en el base) sugiere evaluacion de tareas multi-paso con herramientas, pero la model card no detalla el soporte explicito de tool calling ni su sintaxis.
 - Respuesta directa sin rechazos en la mayoria de casos (17/100 rechazos frente a 99/100 del base), orientada a roleplay y escritura sin filtros.
@@ -96,7 +96,7 @@ No se especifica en la model card la metrica empleada en CoVoST ni en FLEURS (la
 - GPU recomendadas segun la tabla del autor: RTX 4090/5090 (24 GB) para Q8_0; RTX 4080/5080/4060 Ti 16G para Q6_K; RTX 3060/4070/5070 (12 GB) para Q5_K_M; RTX 4060/3070 (8 GB) para Q4_K_M; GTX 1660 Super/2060/3050 laptop (6 GB) para IQ4_XS.
 - Cabe holgadamente en GPU de consumo: cualquier tarjeta con 8 GB o mas ejecuta el modelo completo con vision y audio en Q4_K_M. En 6 GB hay que bajar a IQ4_XS.
 - CPU y Apple Silicon: Q4_K_M (3,42 GB de texto, 4,40 GB con proyector) es la opcion indicada por el autor para uso sin GPU.
-- Opciones de despliegue confirmadas: `transformers` (libreria declarada) y llama.cpp/GGUF por los ficheros publicados. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints. No hay confirmacion de vLLM, TGI ni Ollama en la informacion disponible.
+- Opciones de despliegue confirmadas: `transformers` (libreria declarada) y llama.cpp/GGUF por los ficheros publicados. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints. No hay confirmacion de vLLM, TGI ni Ollama en la informacion disponible.
 - Latencia y throughput: no disponibles como cifra. El autor indica cualitativamente que la decodificacion se acerca a la de un modelo de 2,3B porque las tablas de embedding son lookups, aunque deben permanecer residentes en memoria.
 
 ## Comparativa con modelos similares
@@ -126,7 +126,7 @@ El eje de comparacion real no es el tamano sino el coste de la edicion: el E4B l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/gemma-4-E2B-it-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/gemma-4-E2B-it-heretic
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Variante hermana E4B heretic: https://huggingface.co/saidutta69/gemma-4-E4B-it-heretic
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

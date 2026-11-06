@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jnneumann/matching-quantized-2023` es un repositorio de HuggingFace publicado por el usuario jnneumann que contiene una implementación funcional y reproducible de un Tiny Transformer orientado a tareas de *matching* (emparejamiento o comparación de pares de entradas). No se trata de un modelo entrenado, sino de un punto de partida experimental: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint evaluado ni con resultados de benchmarks.
+`jnneumann/matching-quantized-2023` es un repositorio de Hugging Face publicado por el usuario jnneumann que contiene una implementación funcional y reproducible de un Tiny Transformer orientado a tareas de *matching* (emparejamiento o comparación de pares de entradas). No se trata de un modelo entrenado, sino de un punto de partida experimental: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint evaluado ni con resultados de benchmarks.
 
 El modelo es extremadamente pequeño: 16.576 parámetros totales, con un tamaño de repositorio de 0,0 GB. La arquitectura declarada es un Tiny Transformer en configuración "base", con atención de tipo *grouped query*, fusión mediante MLP con concatenación, activación Mish y normalización GroupNorm. El repositorio se centra en código transparente y pruebas repetibles, y la receta de entrenamiento por defecto usa el optimizador RMSprop con un *schedule* exponencial, valores que el autor describe como puntos de partida del script y no como evidencia de un entrenamiento completado.
 
@@ -24,7 +24,7 @@ Su relevancia actual es como banco de pruebas didáctico y como *baseline* de ca
 | Tamaño del repositorio | 0,0 GB |
 | Optimizador por defecto | RMSprop con *schedule* exponencial |
 | Framework | PyTorch |
-| Fecha de creación en HuggingFace | 2026-09-25 (según los metadatos del repositorio) |
+| Fecha de creación en Hugging Face | 2026-09-25 (según los metadatos del repositorio) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye ningún resultado de eva
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jnneumann/matching-quantized-2023 | 16.576 | no disponible | no disponible (sin benchmark declarado) | apache-2.0 | HuggingFace, 0 descargas |
+| jnneumann/matching-quantized-2023 | 16.576 | no disponible | no disponible (sin benchmark declarado) | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. La información proporcionada no incluye ningún resultado de eva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jnneumann/matching-quantized-2023
+- Modelo en Hugging Face: https://huggingface.co/jnneumann/matching-quantized-2023
 - A Comprehensive Study on Quantization Techniques for Large Language Models: https://arxiv.org/html/2411.02530v1
 - Awesome Model Quantization (recopilación de papers, benchmarks y surveys sobre cuantización): https://github.com/AI-Efficiency/Awesome-Model-Quantization/
 - Awesome-Quantization-Papers (listado de artículos sobre cuantización de redes neuronales): https://github.com/Zhen-Dong/Awesome-Quantization-Papers

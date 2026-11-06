@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparables entre estas opciones en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atonelia/bonsai-2-Sydney
+- Modelo en Hugging Face: https://huggingface.co/Atonelia/bonsai-2-Sydney
 - Modelo base (GGUF sin censura): https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-v2-GGUF
 - Modelo ternario original de PrismML: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Fork de llama.cpp con soporte ternario: https://github.com/PrismML-Eng/llama.cpp

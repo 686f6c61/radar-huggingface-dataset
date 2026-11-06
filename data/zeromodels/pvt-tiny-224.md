@@ -87,10 +87,10 @@ Para comparativas con arquitecturas alternativas (ViT, DeiT, Swin), no se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zeromodels/pvt-tiny-224
+- Repositorio Hugging Face: https://huggingface.co/zeromodels/pvt-tiny-224
 - Checkpoint upstream: https://huggingface.co/Zetatech/pvt-tiny-224
 - Paper original: https://arxiv.org/abs/2102.12122
-- Paper en HuggingFace: https://huggingface.co/papers/2102.12122
+- Paper en Hugging Face: https://huggingface.co/papers/2102.12122
 - Repositorio GitHub de ZeroModels: https://github.com/IMvision12/ZeroModels
 - Documentación de PVT en ZeroModels: https://imvision12.github.io/ZeroModels/pvt/
 - Documentación de carga de pesos: https://imvision12.github.io/ZeroModels/loading_weights/

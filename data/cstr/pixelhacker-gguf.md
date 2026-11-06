@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (PSNR, SSIM, FID, LPIPS) 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
 | PixelHacker-GGUF (este) | 862 M | no aplica | Inpainting | MIT (pesos) / Apache-2.0 (código) | GGUF | Solo CrispEmbed |
-| PixelHacker original (hustvl) | 862 M | no aplica | Inpainting | MIT (pesos) / Apache-2.0 (código) | PyTorch (.bin) | HuggingFace, uso general |
+| PixelHacker original (hustvl) | 862 M | no aplica | Inpainting | MIT (pesos) / Apache-2.0 (código) | PyTorch (.bin) | Hugging Face, uso general |
 | Stable Diffusion Inpainting (SD 1.5/2.x) | ~860 M (UNet) | no aplica | Inpainting | CreativeML OpenRAIL-M | safetensors, ckpt | Amplia (diffusers, A1111, ComfyUI) |
 | LaMa | ~51 M | no aplica | Inpainting | Apache-2.0 | PyTorch | Amplia (librerías de inpainting) |
 
@@ -90,7 +90,7 @@ La comparativa se limita a los datos disponibles. PixelHacker original es la ref
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cstr/PixelHacker-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cstr/PixelHacker-GGUF
 - VAE complementario: https://huggingface.co/cstr/SDXL-VAE-inpaint-GGUF
 - Código upstream PixelHacker: https://github.com/hustvl/PixelHacker/tree/f5567db2871598aa178fe7a34c520dd478a0b41b
 - Pesos originales: https://huggingface.co/hustvl/PixelHacker/resolve/012fd343158936a265b8a0ee38a791a7a2841f45/ft_places2/diffusion_pytorch_model.bin

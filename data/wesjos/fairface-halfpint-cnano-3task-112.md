@@ -68,8 +68,8 @@ Precisión media de las tres tareas: 75,78%. MAE de edad: 0,4583 rangos; precisi
 
 | Modelo | Parámetros | Entrada | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FairFace-HalfPint-CNano-3Task-112 | 14,96 M | 112x112 | Raza, género, edad | CC BY 4.0 | HuggingFace |
-| Variante 224 del mismo proyecto | no disponible | 224x224 | Raza, género, edad | CC BY 4.0 | HuggingFace (referenciada por el autor) |
+| FairFace-HalfPint-CNano-3Task-112 | 14,96 M | 112x112 | Raza, género, edad | CC BY 4.0 | Hugging Face |
+| Variante 224 del mismo proyecto | no disponible | 224x224 | Raza, género, edad | CC BY 4.0 | Hugging Face (referenciada por el autor) |
 | Otros modelos FairFace | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables en la documentación proporcionada. La única comparación explícita es con la variante de 224x224 del mismo proyecto, que según el autor obtiene aproximadamente 1,4 pp más de precisión en edad.
@@ -87,7 +87,7 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- [HuggingFace: wesjos/fairface-halfpint-cnano-3task-112](https://huggingface.co/wesjos/fairface-halfpint-cnano-3task-112)
+- [Hugging Face: wesjos/fairface-halfpint-cnano-3task-112](https://huggingface.co/wesjos/fairface-halfpint-cnano-3task-112)
 - [Backbone: timm/convnext_nano.in12k_ft_in1k](https://huggingface.co/timm/convnext_nano.in12k_ft_in1k)
 - [Dataset: HuggingFaceM4/FairFace](https://huggingface.co/datasets/HuggingFaceM4/FairFace)
 - [Paper FairFace (Karkkainen & Joo, WACV 2021)](https://arxiv.org/abs/1908.04913)

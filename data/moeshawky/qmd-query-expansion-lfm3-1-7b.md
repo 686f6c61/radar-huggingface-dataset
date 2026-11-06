@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QMD Query Expansion LFM3 1.7B | 1.7B (base) + LoRA | no disponible | Expansion de consultas | MIT | Gated en HuggingFace, 0 descargas |
+| QMD Query Expansion LFM3 1.7B | 1.7B (base) + LoRA | no disponible | Expansion de consultas | MIT | Gated en Hugging Face, 0 descargas |
 | Modelo base LFM3 1.7B | 1.7B | no disponible en esta ficha | Generacion de texto general | no disponible en esta ficha | no disponible en esta ficha |
 | Alternativas de expansion de consultas | no disponible | no disponible | Expansion de consultas | no disponible | no disponible |
 
@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para comparar con alternativas especific
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Sin documentacion tecnica publica: no hay model card detallada, dataset de entrenamiento ni resultados de evaluacion.
 - Solo ingles: los metadatos declaran unicamente el idioma `en`, por lo que su uso en castellano no esta soportado.
 - Riesgo de alucinacion: como todo modelo generativo, puede producir expansiones de consulta irrelevantes o inventadas que degraden la recuperacion.
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente para comparar con alternativas especific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moeshawky/qmd-query-expansion-LFM3-1.7B
+- Hugging Face: https://huggingface.co/moeshawky/qmd-query-expansion-LFM3-1.7B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

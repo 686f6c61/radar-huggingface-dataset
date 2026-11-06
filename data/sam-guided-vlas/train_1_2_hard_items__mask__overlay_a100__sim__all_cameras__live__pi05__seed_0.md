@@ -28,7 +28,7 @@ El modelo se basa en la arquitectura π₀.₅ de Physical Intelligence, un VLA 
 - Manipulacion de objetos complejos: entrenado para interactuar con objetos de formas variadas, incluyendo agarres, insercion y colocacion.
 - Generalizacion a nuevos entornos: como fine-tune de pi05, hereda la capacidad de generalizar a situaciones no vistas durante el entrenamiento (segun la descripcion del modelo base).
 - Salida de acciones continuas: adecuado para control de robots en tiempo real.
-- Integracion con LeRobot: compatible con el ecosistema de HuggingFace para entrenamiento y despliegue.
+- Integracion con LeRobot: compatible con el ecosistema de Hugging Face para entrenamiento y despliegue.
 
 ## Casos de uso
 
@@ -47,16 +47,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada: el modelo tiene 4.143.404.816 parametros. En bf16, los pesos ocupan aproximadamente 8,3 GB. Se necesitaria una GPU con al menos 16 GB de VRAM para inferencia, aunque no se han publicado requisitos oficiales.
 - GPU recomendada: el nombre del conjunto de datos sugiere que el entrenamiento se realizo en una NVIDIA A100. Para inferencia, una RTX 4090 (24 GB) o superior seria adecuada.
-- Despliegue: compatible con LeRobot y el ecosistema de HuggingFace. Puede ejecutarse en entornos de simulacion (por ejemplo, MuJoCo) o en hardware real.
+- Despliegue: compatible con LeRobot y el ecosistema de Hugging Face. Puede ejecutarse en entornos de simulacion (por ejemplo, MuJoCo) o en hardware real.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sam-guided-vlas/train_1_2_hard_items...` (este modelo) | 4.143.404.816 | No disponible | Apache 2.0 | HuggingFace |
-| `sam-guided-vlas/train_1_2_pile__point...` (otro fine-tune de pi05) | No disponible | No disponible | Apache 2.0 | HuggingFace |
-| `lerobot/pi05_base` (modelo base) | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| `sam-guided-vlas/train_1_2_hard_items...` (este modelo) | 4.143.404.816 | No disponible | Apache 2.0 | Hugging Face |
+| `sam-guided-vlas/train_1_2_pile__point...` (otro fine-tune de pi05) | No disponible | No disponible | Apache 2.0 | Hugging Face |
+| `lerobot/pi05_base` (modelo base) | No disponible | No disponible | Apache 2.0 | Hugging Face |
 
 Ambos fine-tunes comparten el mismo modelo base (`lerobot/pi05_base`), por lo que es probable que tengan una arquitectura identica, pero no se dispone del dato de parametros del segundo modelo.
 
@@ -72,7 +72,7 @@ Ambos fine-tunes comparten el mismo modelo base (`lerobot/pi05_base`), por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a100__sim__all_cameras__live__pi05__seed_0
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a100__sim__all_cameras__live__pi05__seed_0
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a100__sim__all_cameras__live
 - Blog de Physical Intelligence: https://www.physicalintelligence.company/blog/pi05

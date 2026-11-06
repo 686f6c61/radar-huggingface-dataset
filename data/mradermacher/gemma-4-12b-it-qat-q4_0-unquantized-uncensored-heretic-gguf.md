@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic-i1-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic-GGUF

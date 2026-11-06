@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`minjunlee/work-classification-2024` es un repositorio de HuggingFace que contiene una implementación de referencia de una arquitectura MobileViT configurada para tareas de clasificación. Lo publica el usuario minjunlee bajo licencia BSD-3-Clause y se distribuye como código acompañado de un checkpoint de inicialización, no como un modelo entrenado. La model card es explícita al respecto: el archivo `model.safetensors` sirve para pruebas de humo (smoke tests) y no se presenta como un checkpoint evaluado en ningún benchmark.
+`minjunlee/work-classification-2024` es un repositorio de Hugging Face que contiene una implementación de referencia de una arquitectura MobileViT configurada para tareas de clasificación. Lo publica el usuario minjunlee bajo licencia BSD-3-Clause y se distribuye como código acompañado de un checkpoint de inicialización, no como un modelo entrenado. La model card es explícita al respecto: el archivo `model.safetensors` sirve para pruebas de humo (smoke tests) y no se presenta como un checkpoint evaluado en ningún benchmark.
 
 La relevancia de este repositorio es, por tanto, documental y pedagógica: ofrece una implementación funcional de MobileViT con una configuración concreta (escala "huge", atención dispersa, fusión bilineal, activación GELU y normalización LayerNorm) junto con un `config.json` y un `training_args.json` que registran la receta por defecto (optimizador Adam, scheduler coseno). No hay evidencia de entrenamiento, evaluación ni publicación de métricas.
 
@@ -73,5 +73,5 @@ No disponible. El repositorio no publica métricas ni comparaciones, y la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjunlee/work-classification-2024
+- Modelo en Hugging Face: https://huggingface.co/minjunlee/work-classification-2024
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

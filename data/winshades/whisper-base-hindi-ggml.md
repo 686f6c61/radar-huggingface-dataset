@@ -69,7 +69,7 @@ Salvedades declaradas por el propio autor: 25 fragmentos permiten clasificar mod
 - VRAM: no requiere GPU. Inferencia en CPU con aproximadamente 78 MB de pesos en disco y una huella de memoria del orden de cientos de MB (el autor no especifica cifra exacta de RAM).
 - GPU recomendadas: ninguna en particular; funciona en CPU. Cualquier GPU compatible con whisper.cpp (por ejemplo, una RTX 3060 o superior) reduciria la latencia, pero no es necesaria.
 - Compatibilidad con GPU de consumo: cabe en cualquier equipo, incluidos portatiles sin GPU dedicada y dispositivos de gama baja, al ser un modelo de ~74 M de parametros cuantizado a 8 bits.
-- Opciones de despliegue: whisper.cpp (CLI, servidor HTTP y bindings), la aplicacion WinShades y cualquier otro consumidor del formato GGML de whisper.cpp. No es compatible con vLLM, TGI, Ollama ni con el cargador de Transformers de HuggingFace, porque el unico artefacto publicado esta en GGML.
+- Opciones de despliegue: whisper.cpp (CLI, servidor HTTP y bindings), la aplicacion WinShades y cualquier otro consumidor del formato GGML de whisper.cpp. No es compatible con vLLM, TGI, Ollama ni con el cargador de Transformers de Hugging Face, porque el unico artefacto publicado esta en GGML.
 - Latencia y throughput: aproximadamente ocho veces mas rapido que el tiempo real en la maquina de prueba del autor, en CPU. No se especifican las caracteristicas de dicho equipo ni metricas de latencia por segmento.
 - Almacenamiento: 0,1 GB de repositorio; el unico fichero de pesos ocupa 81.768.602 bytes.
 
@@ -94,11 +94,11 @@ Las cifras de parametros de los modelos de OpenAI son datos externos a la inform
 - Contexto: la ventana nativa es de 30 segundos por segmento; el audio mas largo depende de la logica de segmentacion de whisper.cpp y puede degradar la coherencia entre fragmentos.
 - Licencia: CC-BY 4.0 permite uso comercial, pero exige atribucion. La atribucion del modelo debe ir a Collabora, segun indica el autor; conviene citar tambien el trabajo de conversion.
 - Madurez: el repositorio no registra descargas ni valoraciones y se actualizo el 27 de septiembre de 2026, por lo que no existe validacion independiente de la calidad del artefacto publicado.
-- Compatibilidad de despliegue: al publicarse solo en GGML, no se puede cargar directamente con las librerias habituales de HuggingFace ni con servidores de inferencia como vLLM o TGI, lo que limita su integracion en pilas ya existentes.
+- Compatibilidad de despliegue: al publicarse solo en GGML, no se puede cargar directamente con las librerias habituales de Hugging Face ni con servidores de inferencia como vLLM o TGI, lo que limita su integracion en pilas ya existentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/winshades/whisper-base-hindi-ggml
+- Modelo en Hugging Face: https://huggingface.co/winshades/whisper-base-hindi-ggml
 - Modelo base de Collabora: https://huggingface.co/collabora/whisper-base-hindi
 - Repositorio de whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Aplicacion WinShades: https://winshades.org

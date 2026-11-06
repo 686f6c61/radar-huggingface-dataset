@@ -98,8 +98,8 @@ La comparacion con alternativas consolidadas como Mistral Small o Qwen 2.5 32B e
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Darwin-Darwin-27B-Opus-x-QuettaLLMs-27B-Korea-08274-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/SeaWolf-AI/Darwin-Darwin-27B-Opus-x-QuettaLLMs-27B-Korea-08274
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Darwin-Darwin-27B-Opus-x-QuettaLLMs-27B-Korea-08274-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/SeaWolf-AI/Darwin-Darwin-27B-Opus-x-QuettaLLMs-27B-Korea-08274
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model#Darwin-Darwin-27B-Opus-x-QuettaLLMs-27B-Korea-08274-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

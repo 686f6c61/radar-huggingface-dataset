@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Activos | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MoziAI-35B-A3B (este) | 35B | 3B | 256K | MoziSmartBit (GGUF) | other | HuggingFace |
-| Qwen3.6-35B-A3B (base) | 35B | 3B | 256K (extensible a 1M) | FP16, GGUF | Apache 2.0 | HuggingFace |
-| Qwen3.6-27B (dense) | 27B | 27B | 256K | FP16, GGUF | Apache 2.0 | HuggingFace |
+| MoziAI-35B-A3B (este) | 35B | 3B | 256K | MoziSmartBit (GGUF) | other | Hugging Face |
+| Qwen3.6-35B-A3B (base) | 35B | 3B | 256K (extensible a 1M) | FP16, GGUF | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B (dense) | 27B | 27B | 256K | FP16, GGUF | Apache 2.0 | Hugging Face |
 
 No hay datos de benchmarks comparativos entre estos modelos. El MoziAI se diferencia por su especialización financiera, su cuantización más agresiva (15,5 GB vs ~21 GB de Q4_K_M) y su carácter uncensored. El base Qwen3.6-35B-A3B ofrece mayor velocidad de inferencia (según los análisis de Qwen3.6, el MoE es 3-4x más rápido que el dense de 27B), pero MoziAI añade una capa de ajuste de dominio.
 
@@ -88,7 +88,7 @@ No hay datos de benchmarks comparativos entre estos modelos. El MoziAI se difere
 
 ## Enlaces
 
-- [HuggingFace - chenyumo/moziAI-35B-Qwen3.6-A3B-Ornith](https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-A3B-Ornith)
+- [Hugging Face - chenyumo/moziAI-35B-Qwen3.6-A3B-Ornith](https://huggingface.co/chenyumo/moziAI-35B-Qwen3.6-A3B-Ornith)
 - [GitHub - chenyumo166/moziAI](https://github.com/chenyumo166/moziAI)
 - [Qwen 3.6 Complete Guide: 27B Dense, 35B-A3B MoE, and Which to Use](https://insiderllm.com/guides/qwen-3-6-local-ai-guide/)
 - [Qwen3.6 Models | QwenLM/Qwen3.6 | DeepWiki](https://deepwiki.com/QwenLM/Qwen3.6/1.1-qwen3.6-models)

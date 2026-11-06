@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa directa. El modelo
 
 ## Enlaces
 
-- [HuggingFace - AgentWorld-35B-A3B-Heretic-i1-GGUF](https://huggingface.co/mradermacher/AgentWorld-35B-A3B-Heretic-i1-GGUF)
-- [HuggingFace - Modelo base (auttasak88/AgentWorld-35B-A3B-Heretic)](https://huggingface.co/auttasak88/AgentWorld-35B-A3B-Heretic)
-- [HuggingFace - Repositorio estático con cuantizaciones no imatrix](https://huggingface.co/mradermacher/AgentWorld-35B-A3B-Heretic-GGUF)
+- [Hugging Face - AgentWorld-35B-A3B-Heretic-i1-GGUF](https://huggingface.co/mradermacher/AgentWorld-35B-A3B-Heretic-i1-GGUF)
+- [Hugging Face - Modelo base (auttasak88/AgentWorld-35B-A3B-Heretic)](https://huggingface.co/auttasak88/AgentWorld-35B-A3B-Heretic)
+- [Hugging Face - Repositorio estático con cuantizaciones no imatrix](https://huggingface.co/mradermacher/AgentWorld-35B-A3B-Heretic-GGUF)
 - [GitHub - Qwen-AgentWorld](https://github.com/QwenLM/Qwen-AgentWorld)

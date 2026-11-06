@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Resolucion de salida | Clases | Formatos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FCN-ExecuTorch (este) | FCN + ResNet-50/101 | 520x520 | 21 (COCO) | `.pte` (CoreML, XNNPACK, QNN) | BSD-3-Clause | HuggingFace, 480 descargas |
+| FCN-ExecuTorch (este) | FCN + ResNet-50/101 | 520x520 | 21 (COCO) | `.pte` (CoreML, XNNPACK, QNN) | BSD-3-Clause | Hugging Face, 480 descargas |
 | DeepLabV3 (torchvision) | DeepLabV3 + ResNet | variable | 21 (COCO) | PyTorch, exportable a ExecuTorch | BSD-3-Clause | Disponible en torchvision |
-| SegFormer (HuggingFace) | Transformer jerárquico | variable | ADE20K / COCO | safetensors, ONNX | Apache-2.0 / varía | Amplia disponibilidad |
+| SegFormer (Hugging Face) | Transformer jerárquico | variable | ADE20K / COCO | safetensors, ONNX | Apache-2.0 / varía | Amplia disponibilidad |
 | MobileNetV3 + LR-ASPP | MobileNetV3 | variable | 21 (COCO) | PyTorch, ONNX | BSD-3-Clause | torchvision |
 
 La comparativa se limita a alternativas de segmentación semántica general; los datos de rendimiento de cada alternativa no están disponibles en la información proporcionada para este modelo, por lo que no se ofrece una comparación numérica de precisión.
@@ -85,7 +85,7 @@ La comparativa se limita a alternativas de segmentación semántica general; los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/software-mansion/FCN-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/software-mansion/FCN-ExecuTorch
 - Modelo upstream FCN (torchvision): https://docs.pytorch.org/vision/main/models/fcn.html
 - Librería React Native ExecuTorch: https://www.npmjs.com/package/react-native-executorch
 - Documentación de descarga de modelos: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/downloading-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `eric-z2/WL-no-context-qwen-14b-fold_4` es un artefacto publicado en HuggingFace por el usuario `eric-z2` cuya model card es la plantilla autogenerada de `transformers`, sin ningún campo cumplimentado: autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluación figuran todos como "More Information Needed". No hay paper, repositorio de código, demo ni publicación asociada. El identificador sugiere que se trata de una variante derivada de un modelo Qwen de aproximadamente 14 000 millones de parámetros, con la etiqueta "no-context" y una partición "fold_4", lo que apunta a un experimento de ablation o a un esquema de validación cruzada, pero esto es una inferencia a partir del nombre y no está confirmado por ninguna fuente.
+El repositorio `eric-z2/WL-no-context-qwen-14b-fold_4` es un artefacto publicado en Hugging Face por el usuario `eric-z2` cuya model card es la plantilla autogenerada de `transformers`, sin ningún campo cumplimentado: autoría, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluación figuran todos como "More Information Needed". No hay paper, repositorio de código, demo ni publicación asociada. El identificador sugiere que se trata de una variante derivada de un modelo Qwen de aproximadamente 14 000 millones de parámetros, con la etiqueta "no-context" y una partición "fold_4", lo que apunta a un experimento de ablation o a un esquema de validación cruzada, pero esto es una inferencia a partir del nombre y no está confirmado por ninguna fuente.
 
 El dato más relevante para un evaluador es la anomalía de tamaño: el repositorio ocupa 0,1 GB según la ficha del Hub, una cifra incompatible con un checkpoint completo de 14 000 millones de parámetros en safetensors de 16 bits (que rondaría los 28 GB). Esto sugiere que el contenido podría ser un adaptador LoRA, un subconjunto de tensores, una cabeza de clasificación o un artefacto parcial, pero no hay información que lo confirme.
 
@@ -28,11 +28,11 @@ En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, no
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card es la plantilla por defecto de HuggingFace y no incluye detalles sobre si se trata de un transformer denso, un MoE, un modelo hibrido ni sobre la funcion de perdida u objetivo de entrenamiento. Tampoco se documenta si deriva de un modelo base preentrenado, si se ha aplicado ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card es la plantilla por defecto de Hugging Face y no incluye detalles sobre si se trata de un transformer denso, un MoE, un modelo hibrido ni sobre la funcion de perdida u objetivo de entrenamiento. Tampoco se documenta si deriva de un modelo base preentrenado, si se ha aplicado ajuste fino supervisado, RLHF, DPO u otra tecnica de alineamiento.
 
 Respecto a los datos de entrenamiento, no hay ninguna referencia al corpus utilizado, al numero de tokens procesados, a la composicion del dataset ni a los hiperparametros de entrenamiento (precision, regimen de mixed precision, configuracion de hardware). La unica pista disponible es el nombre del repositorio: los sufijos "qwen-14b", "no-context" y "fold_4" sugieren un ajuste o evaluacion sobre una base Qwen de 14 000 millones de parametros, en una condicion experimental sin contexto y correspondiente a la cuarta particion de un esquema de validacion cruzada. Se trata de una hipotesis no verificada.
 
-El tag `arxiv:1910.09700` que aparece en el Hub corresponde a Lacoste et al. (2019), el articulo de estimacion de emisiones de carbono citado en la plantilla de model card de HuggingFace. No es un paper sobre el modelo ni aporta informacion tecnica sobre el.
+El tag `arxiv:1910.09700` que aparece en el Hub corresponde a Lacoste et al. (2019), el articulo de estimacion de emisiones de carbono citado en la plantilla de model card de Hugging Face. No es un paper sobre el modelo ni aporta informacion tecnica sobre el.
 
 ## Capacidades
 
@@ -101,9 +101,9 @@ No existe informacion verificable sobre este modelo, por lo que una comparativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_4
+- Hugging Face: https://huggingface.co/eric-z2/WL-no-context-qwen-14b-fold_4
 - Paper citado en los tags del Hub (Lacoste et al., 2019, estimacion de emisiones de carbono; no es documentacion del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact
-- Modelo base hipotetico, no confirmado (familia Qwen, repositorio oficial en HuggingFace): https://huggingface.co/Qwen
+- Modelo base hipotetico, no confirmado (familia Qwen, repositorio oficial en Hugging Face): https://huggingface.co/Qwen
 
 Nota: las busquedas web realizadas para esta ficha no devolvieron ningun resultado relacionado con el modelo. Los unicos resultados obtenidos correspondian a un parque tematico de California (Six Flags Magic Mountain) y no guardan ninguna relacion con el artefacto analizado.

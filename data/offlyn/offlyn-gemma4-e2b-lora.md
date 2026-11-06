@@ -2,7 +2,7 @@
 
 ## Resumen
 
-offlyn/offlyn-gemma4-e2b-lora es un repositorio publicado en HuggingFace por el usuario offlyn que, por su nombre, su tamano (0,2 GB) y sus etiquetas, presenta la forma de un adaptador LoRA en lugar de un modelo completo con pesos base. La model card es la plantilla automatica estandar de HuggingFace: todos los campos sustantivos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]", de modo que no hay informacion verificable sobre arquitectura, tamano, contexto ni procedencia del ajuste.
+offlyn/offlyn-gemma4-e2b-lora es un repositorio publicado en Hugging Face por el usuario offlyn que, por su nombre, su tamano (0,2 GB) y sus etiquetas, presenta la forma de un adaptador LoRA en lugar de un modelo completo con pesos base. La model card es la plantilla automatica estandar de Hugging Face: todos los campos sustantivos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]", de modo que no hay informacion verificable sobre arquitectura, tamano, contexto ni procedencia del ajuste.
 
 El repositorio se creo el 13 de septiembre de 2026 a las 01:14 y se actualizo a las 01:15, menos de dos minutos despues, sin ningun otro cambio posterior. Acumula 0 descargas y 0 "likes". Esto es compatible con un experimento local subido al Hub sin documentar, no con un artefacto listo para produccion.
 
@@ -36,12 +36,12 @@ El sufijo "e2b" del identificador y el tamano de 0,2 GB son compatibles con un a
 
 No se ha publicado ninguna descripcion de capacidades. Lo unico que puede afirmarse con la informacion disponible es lo siguiente:
 
-- El repositorio contiene pesos en formato safetensors compatibles con la libreria transformers, por lo que es cargable mediante el ecosistema HuggingFace si la base declarada esta disponible.
+- El repositorio contiene pesos en formato safetensors compatibles con la libreria transformers, por lo que es cargable mediante el ecosistema Hugging Face si la base declarada esta disponible.
 - No hay evidencia de soporte de tool calling o function calling.
 - No hay evidencia de soporte de agentes ni de razonamiento multi-paso.
 - No hay informacion sobre capacidades multilingues ni sobre idiomas concretos.
 - No hay informacion sobre modo de razonamiento explicito (thinking), vision, audio ni ninguna otra modalidad.
-- La etiqueta `endpoints_compatible` indica que el repositorio cumple los requisitos estructurales de HuggingFace Inference Endpoints, lo que no equivale a una validacion funcional del modelo.
+- La etiqueta `endpoints_compatible` indica que el repositorio cumple los requisitos estructurales de Hugging Face Inference Endpoints, lo que no equivale a una validacion funcional del modelo.
 
 Cualquier capacidad concreta debe considerarse no verificada hasta que exista una evaluacion del autor o una reproduccion independiente.
 
@@ -54,7 +54,7 @@ Advertencia: los escenarios siguientes son aplicaciones plausibles de un adaptad
 - Prototipado rapido en equipos con hardware limitado: al ser presumiblemente un adaptador sobre una base de ~2B, el ciclo de iteracion cabe en una GPU de consumo, lo que facilita experimentar con variantes de prompt y de temperatura sin recurrir a infraestructura en la nube.
 - Investigacion sobre PEFT y comparacion de tecnicas: el repositorio puede servir como ejemplo de artefacto generado con Unsloth para estudiar diferencias de comportamiento entre adaptadores de bajo rango, siempre que se recupere tambien el modelo base y las condiciones de entrenamiento.
 - Ajuste de dominio en entornos regulados con datos propios: si la organizacion dispone de la base original y de los datos de ajuste, un adaptador de este tipo puede desplegarse en infraestructura propia sin enviar datos sensibles a APIs externas, sujeto a la licencia de la base (no disponible en este repositorio).
-- Despliegue en HuggingFace Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad estructural con ese servicio, lo que permitiria servir el adaptador junto a su base sin montar infraestructura propia; la viabilidad real depende de que la licencia y el formato lo permitan.
+- Despliegue en Hugging Face Inference Endpoints: la etiqueta `endpoints_compatible` sugiere compatibilidad estructural con ese servicio, lo que permitiria servir el adaptador junto a su base sin montar infraestructura propia; la viabilidad real depende de que la licencia y el formato lo permitan.
 - Generacion de texto asistida en herramientas internas de documentacion: para resumir notas o redactar borradores en un dominio acotado, un modelo de ~2B ajustado puede bastar si la latencia importa mas que la calidad maxima.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No es posible establecer una comparativa rigurosa. El modelo base de este adapta
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
 | offlyn/offlyn-gemma4-e2b-lora | no disponible | no disponible | no disponible | Repositorio publico sin documentar, 0 descargas | no disponible |
-| Alternativas de la misma categoria (modelos pequenos de ~1-3B de la familia Gemma, Qwen o Llama) | no verificados en esta busqueda | no verificados | no verificadas | Ampliamente disponibles en HuggingFace | Existen evaluaciones publicas de los modelos base, no de este adaptador |
+| Alternativas de la misma categoria (modelos pequenos de ~1-3B de la familia Gemma, Qwen o Llama) | no verificados en esta busqueda | no verificados | no verificadas | Ampliamente disponibles en Hugging Face | Existen evaluaciones publicas de los modelos base, no de este adaptador |
 
 Para una comparacion util habria que identificar primero la base declarada en `adapter_config.json`, consultar su model card oficial y evaluar el adaptador con un conjunto de validacion propio frente a la base sin ajustar.
 
@@ -93,11 +93,11 @@ Para una comparacion util habria que identificar primero la base declarada en `a
 - Limitaciones de contexto e idioma: no disponibles. Se desconoce la ventana de contexto efectiva y si el ajuste degrade capacidades multilingues de la base.
 - Riesgo de artefacto abandonado: el repositorio se creo y actualizo en un intervalo de menos de dos minutos, no ha recibido descargas ni interacciones y no tiene historial posterior. Debe tratarse como un experimento no mantenido.
 - Verificacion obligatoria antes de cualquier uso: es imprescindible inspeccionar los ficheros del repositorio (`adapter_config.json`, configuracion de tokenizador, pesos) para confirmar la base declarada, el rango del adaptador y los modulos afectados.
-- Confusion documental: la etiqueta `arxiv:1910.09700` corresponde al articulo sobre el calculador de impacto medioambiental citado en la plantilla de HuggingFace, no a un paper de este modelo. No debe citarse como referencia tecnica.
+- Confusion documental: la etiqueta `arxiv:1910.09700` corresponde al articulo sobre el calculador de impacto medioambiental citado en la plantilla de Hugging Face, no a un paper de este modelo. No debe citarse como referencia tecnica.
 - Uso en produccion desaconsejado en su estado actual: sin licencia, sin evaluacion y sin mantenimiento, el artefacto no cumple los requisitos minimos de trazabilidad para un sistema en produccion.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/offlyn/offlyn-gemma4-e2b-lora
+- Repositorio en Hugging Face: https://huggingface.co/offlyn/offlyn-gemma4-e2b-lora
 - Referencia de la plantilla de model card (calculador de impacto, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

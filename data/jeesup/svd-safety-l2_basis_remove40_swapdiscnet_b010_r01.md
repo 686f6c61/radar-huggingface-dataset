@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_basis_remove40_swapdiscnet_b010_r01` es un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup (Jeesup en HuggingFace), que forma parte de un estudio sobre como la compresion por descomposicion en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes lo repara mejor. El modelo base se comprime con la tecnica Basis Sharing (ICLR 2025), que comparte bases SVD entre grupos de 2 capas adyacentes y elimina el 40,00% de los parametros, dejando una fraccion de parametros densos de 0,5999. Sobre ese checkpoint comprimido se aplica una ronda de edicion de parametros mediante intercambio neutral ("parameter-neutral swap"), seleccionada por la regla `swapdiscnet_iter`, con un presupuesto del 1,000% de los parametros densos repartido en 10 rondas.
+`svd-safety-l2_basis_remove40_swapdiscnet_b010_r01` es un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup (Jeesup en Hugging Face), que forma parte de un estudio sobre como la compresion por descomposicion en valores singulares (SVD) degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes lo repara mejor. El modelo base se comprime con la tecnica Basis Sharing (ICLR 2025), que comparte bases SVD entre grupos de 2 capas adyacentes y elimina el 40,00% de los parametros, dejando una fraccion de parametros densos de 0,5999. Sobre ese checkpoint comprimido se aplica una ronda de edicion de parametros mediante intercambio neutral ("parameter-neutral swap"), seleccionada por la regla `swapdiscnet_iter`, con un presupuesto del 1,000% de los parametros densos repartido en 10 rondas.
 
 Se trata de un artefacto de investigacion, no de un asistente conversacional desplegable. La propia model card indica explicitamente que varias celdas de la cuadricula experimental estan "deliberadamente degradadas en seguridad" respecto a Llama-2-7b-chat y que la finalidad del estudio es cuantificar ese deterioro y probar su recuperacion. El checkpoint publicado corresponde a la ronda 1 de 10 de una ejecucion mas larga, con 454 componentes restaurados y 454 sustituidos (6.475.264 parametros intercambiados, el 0,10% de los parametros de proyeccion densos), semilla 42 y una recuperacion posterior mediante LoRA de rango 8 sobre los coeficientes por capa.
 
@@ -43,7 +43,7 @@ Tras el intercambio se aplica una recuperacion ligera: LoRA de rango 8 unicament
 - Capacidades multilingues: no disponibles; la model card no declara idiomas.
 - Comportamiento de seguridad medible: es la capacidad central del artefacto, con metricas de ASR sobre AdvBench (0,0808) y StrongREJECT (0,0863) y sobrerrechazo macro sobre WildGuard (0,2700).
 - Modo "thinking", vision o audio: no disponibles; no se declaran.
-- Compatibilidad declarada con text-generation-inference y endpoints de HuggingFace (`text-generation-inference`, `endpoints_compatible` en las etiquetas).
+- Compatibilidad declarada con text-generation-inference y endpoints de Hugging Face (`text-generation-inference`, `endpoints_compatible` en las etiquetas).
 
 ## Casos de uso
 
@@ -73,15 +73,15 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 - VRAM estimada en cuantizacion de 4 bits: del orden de 4 GB de pesos, mas overhead. Estimacion aritmetica.
 - GPU recomendadas: A100 (40/80 GB), H100, L40S o RTX 4090 (24 GB) para fp16 sin margen amplio de contexto; RTX 3090 o 4080 (16-24 GB) en fp16 con contexto reducido; GPUs de 8-12 GB solo en cuantizacion de 4-8 bits.
 - Cabe en GPU de consumo: si en tarjetas de 24 GB en fp16, y en tarjetas de 12-16 GB con cuantizacion o contexto corto, siempre que la arquitectura comprimida sea compatible con la herramienta de inferencia elegida.
-- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (etiqueta del repositorio), HuggingFace Inference Endpoints (`endpoints_compatible`), y potencialmente vLLM, llama.cpp u Ollama si se convierte a GGUF. La model card no confirma si el checkpoint requiere codigo personalizado ni si las herramientas anteriores lo cargan sin modificaciones.
+- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (etiqueta del repositorio), Hugging Face Inference Endpoints (`endpoints_compatible`), y potencialmente vLLM, llama.cpp u Ollama si se convierte a GGUF. La model card no confirma si el checkpoint requiere codigo personalizado ni si las herramientas anteriores lo cargan sin modificaciones.
 - Latencia y throughput: no disponibles. La reduccion al 0,5999 de los parametros de proyeccion densos no implica necesariamente una ganancia proporcional en velocidad, ya que el repositorio mantiene 13,5 GB de pesos y no se documentan mediciones de latencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r01` | 6.738.415.616 (fraccion densa 0,5999) | No disponible | Llama 2 Community License | AdvBench ASR 0,0808; StrongREJECT ASR 0,0863; sobrerrechazo 0,2700 | Publico en HuggingFace, 0 descargas |
-| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | No disponible en la informacion proporcionada | No disponible | Llama 2 Community License | No disponible (referencia de comparacion del estudio) | Publico en HuggingFace |
+| `Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r01` | 6.738.415.616 (fraccion densa 0,5999) | No disponible | Llama 2 Community License | AdvBench ASR 0,0808; StrongREJECT ASR 0,0863; sobrerrechazo 0,2700 | Publico en Hugging Face, 0 descargas |
+| `meta-llama/Llama-2-7b-chat-hf` (base sin comprimir) | No disponible en la informacion proporcionada | No disponible | Llama 2 Community License | No disponible (referencia de comparacion del estudio) | Publico en Hugging Face |
 | Otras celdas de la cuadricula del estudio (otras reglas y presupuestos) | No disponible | No disponible | Llama 2 Community License | No disponible | No identificadas en la informacion proporcionada |
 
 No se han identificado en la informacion disponible otros checkpoints publicos comparables de reparacion de seguridad tras compresion SVD, por lo que la comparativa cuantitativa con alternativas queda como no disponible.
@@ -102,7 +102,7 @@ No se han identificado en la informacion disponible otros checkpoints publicos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove40_swapdiscnet_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: incluida en el repositorio como `LICENSE.txt`, junto con `USE_POLICY.md`. URL publica no disponible en la informacion proporcionada.
 - Referencia de la tecnica de compresion: Basis Sharing, ICLR 2025. No se ha facilitado la URL del paper en la informacion disponible.

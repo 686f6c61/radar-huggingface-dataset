@@ -75,10 +75,10 @@ Los datos de parámetros y licencias de los modelos de la columna de comparació
 
 | Modelo | Parametros | Tipo | Contexto / horizonte de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (SO-101 GR00T N1.7 h16) | 3,14 B | VLA para SO-101 | horizonte de acción 16 | no disponible | HuggingFace, librería LeRobot |
-| `nvidia/GR00T-N1.7-3B` | ~3 B | VLA generalista de NVIDIA | no disponible | no disponible | HuggingFace |
-| OpenVLA | ~7 B | VLA para manipulación | no disponible | licencia de tipo Llama 2 (verificar) | HuggingFace |
-| SmolVLA | ~0,45 B | VLA compacta | no disponible | Apache 2.0 (verificar) | HuggingFace |
+| Este modelo (SO-101 GR00T N1.7 h16) | 3,14 B | VLA para SO-101 | horizonte de acción 16 | no disponible | Hugging Face, librería LeRobot |
+| `nvidia/GR00T-N1.7-3B` | ~3 B | VLA generalista de NVIDIA | no disponible | no disponible | Hugging Face |
+| OpenVLA | ~7 B | VLA para manipulación | no disponible | licencia de tipo Llama 2 (verificar) | Hugging Face |
+| SmolVLA | ~0,45 B | VLA compacta | no disponible | Apache 2.0 (verificar) | Hugging Face |
 
 No hay datos de rendimiento comparado publicados para este checkpoint, por lo que la comparativa se limita a parámetros, tipo de modelo y disponibilidad.
 
@@ -97,7 +97,7 @@ No hay datos de rendimiento comparado publicados para este checkpoint, por lo qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sreetz-nv/so101_vials_procedural250_sim75_gr00t17_h16_20k_20261011
+- Modelo en Hugging Face: https://huggingface.co/sreetz-nv/so101_vials_procedural250_sim75_gr00t17_h16_20k_20261011
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset procedural: https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009
 - Dataset de teleoperación simulada: https://huggingface.co/datasets/sreetz-nv/so101_sim_manual_perception_newton_20261008

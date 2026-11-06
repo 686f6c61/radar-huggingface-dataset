@@ -82,9 +82,9 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| larry-speech-encoder | 163,6 M | No disponible | Codificador de unidades de voz + CTC proxy | CC-BY-4.0 | HuggingFace (0 descargas) |
+| larry-speech-encoder | 163,6 M | No disponible | Codificador de unidades de voz + CTC proxy | CC-BY-4.0 | Hugging Face (0 descargas) |
 | Tokenizador de CosyVoice2 | No disponible | No disponible | Tokenizador de voz para TTS | Apache-2.0 (codigo) | GitHub QwenAudio/CosyVoice |
-| HuBERT / Wav2Vec2 (base) | ~95 M | No disponible | Representaciones de voz auto-supervisadas | MIT / Apache-2.0 | HuggingFace |
+| HuBERT / Wav2Vec2 (base) | ~95 M | No disponible | Representaciones de voz auto-supervisadas | MIT / Apache-2.0 | Hugging Face |
 
 La comparación con CosyVoice2 es la más pertinente porque el autor declara que su código aproxima el tokenizador de ese sistema; los datos concretos de parámetros y contexto de ese tokenizador no están disponibles en la información consultada. Frente a HuBERT o Wav2Vec2, la diferencia clave es que larry-speech-encoder produce códigos discretos listos para un decodificador TTS, no representaciones continuas para tareas downstream.
 
@@ -100,7 +100,7 @@ La comparación con CosyVoice2 es la más pertinente porque el autor declara que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thelarryproject/larry-speech-encoder
+- Modelo en Hugging Face: https://huggingface.co/thelarryproject/larry-speech-encoder
 - Repositorio del proyecto: https://github.com/Mekadrom/larry
 - CosyVoice (código de referencia): https://github.com/QwenAudio/CosyVoice
 - Paper CosyVoice: https://arxiv.org/abs/2407.05407

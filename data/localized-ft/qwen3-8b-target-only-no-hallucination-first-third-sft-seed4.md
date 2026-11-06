@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed4](https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed4)
+- [Hugging Face - localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed4](https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed4)
 - [Modelo relacionado: localized-ft/Qwen3-8B-target-only-no-hallucination-second-third-sft-seed4](https://huggingface.co/localized-ft/Qwen3-8B-target-only-no-hallucination-second-third-sft-seed4)
 - [Modelo relacionado: longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft](https://huggingface.co/longtermrisk/Qwen3-8B-target-only-no-hallucination-first-third-sft)
 - [Modelo relacionado en FriendliAI: localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3](https://friendli.ai/models/localized-ft/Qwen3-8B-target-only-no-hallucination-first-third-sft-seed5-epoch3)

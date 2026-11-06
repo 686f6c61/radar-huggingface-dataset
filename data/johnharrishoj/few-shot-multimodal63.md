@@ -65,6 +65,6 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/johnharrishoj/few-shot-multimodal63
+- Repositorio Hugging Face: https://huggingface.co/johnharrishoj/few-shot-multimodal63
 - Paper relacionado (arXiv): https://arxiv.org/pdf/2511.01140 (Few-Shot Multimodal Medical Imaging: A Theoretical Framework)
 - Versión HTML del paper: https://arxiv.org/html/2511.01140v1

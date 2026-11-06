@@ -67,8 +67,8 @@ Como contexto, existe un artículo de terceros (`jmgb27/laya-vs-jev-toxicity`) q
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `parlaval/laya-toxicity` | 321,9 M | No disponible | No disponible | HuggingFace, biblioteca `laya` | Dos ejes (núcleo y vulgar), orientado a catalán por contexto del proyecto, sin benchmarks |
-| `jhu-clsp/mmBERT-base` (modelo base) | ~322 M | Ventana larga (no confirmada para este ajuste) | No verificada en la información disponible | HuggingFace | Encoder multilingüe sin cabeza de moderación; requiere ajuste propio |
+| `parlaval/laya-toxicity` | 321,9 M | No disponible | No disponible | Hugging Face, biblioteca `laya` | Dos ejes (núcleo y vulgar), orientado a catalán por contexto del proyecto, sin benchmarks |
+| `jhu-clsp/mmBERT-base` (modelo base) | ~322 M | Ventana larga (no confirmada para este ajuste) | No verificada en la información disponible | Hugging Face | Encoder multilingüe sin cabeza de moderación; requiere ajuste propio |
 | Laya (variante ModernBERT-large) | ~421 M | No disponible | No disponible | Ecosistema Laya | Según material de terceros, Laya se ofrece también en talla large; no hay confirmación de que exista un checkpoint de toxicidad con esa talla |
 | APIs comerciales de moderación (p. ej. Jev) | No disponible | No disponible | Propietaria, de pago | API | Comparadas con un ajuste fino distinto de Laya en un artículo de terceros; sin datos aplicables a este checkpoint |
 
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks que permitan una comparación cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parlaval/laya-toxicity
+- Modelo en Hugging Face: https://huggingface.co/parlaval/laya-toxicity
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Demos de Laya (terceros): https://laya.acurast.com/
 - Repositorio de comparación Laya vs Jev sobre toxicidad (terceros, ajuste fino distinto): https://github.com/jmgb27/laya-vs-jev-toxicity

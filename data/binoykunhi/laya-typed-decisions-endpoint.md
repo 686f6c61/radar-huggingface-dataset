@@ -98,9 +98,9 @@ El autor advierte que las cifras de Jev son publicadas por terceros y no medidas
 
 | Modelo | Parametros | Contexto | accuracy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya Typed-Decisions (este) | 421M | 1.024 | 0.766 | Apache 2.0 | HuggingFace + PyPI `laya` |
-| `convaiinnovations/laya` (base) | 421M | 512 | 0.362 (sin afinar) | Apache 2.0 | HuggingFace |
-| `convaiinnovations/laya-multilingual` | 322M | 1.024 | 0.342 (sin afinar) | Apache 2.0 | HuggingFace |
+| Laya Typed-Decisions (este) | 421M | 1.024 | 0.766 | Apache 2.0 | Hugging Face + PyPI `laya` |
+| `convaiinnovations/laya` (base) | 421M | 512 | 0.362 (sin afinar) | Apache 2.0 | Hugging Face |
+| `convaiinnovations/laya-multilingual` | 322M | 1.024 | 0.342 (sin afinar) | Apache 2.0 | Hugging Face |
 | Especialista ModernBERT-base | no disponible | no disponible | 0.646 | no disponible | publicado, terceros |
 | TypeSafe Jev 1.13.0 | no disponible | no disponible | 0.727 | no disponible | API de terceros |
 
@@ -122,8 +122,8 @@ La comparación con Jev y con el especialista ModernBERT-base procede de cifras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/binoykunhi/laya-typed-decisions-endpoint
-- Familia Laya en HuggingFace: https://huggingface.co/convaiinnovations/laya
+- Modelo en Hugging Face: https://huggingface.co/binoykunhi/laya-typed-decisions-endpoint
+- Familia Laya en Hugging Face: https://huggingface.co/convaiinnovations/laya
 - Repositorio GitHub: https://github.com/NandhaKishorM/laya
 - Paquete PyPI: https://pypi.org/project/laya/
 - Dataset de benchmark `typed-decisions`: https://huggingface.co/datasets/LocalLLaMA/typed-decisions

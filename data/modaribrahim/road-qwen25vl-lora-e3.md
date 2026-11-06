@@ -108,8 +108,8 @@ No se dispone de datos cuantitativos comparables de otros modelos sobre el mismo
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ModarIbrahim/road-qwen25vl-lora-e3
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
+- Adaptador en Hugging Face: https://huggingface.co/ModarIbrahim/road-qwen25vl-lora-e3
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Repositorio referenciado en el ejemplo de la model card (identificador distinto al de este repositorio): https://huggingface.co/ModarIbrahim/road-qwen25vl-lora
 - Reto Zindi R.O.A.D.: no disponible (el autor menciona la competicion, pero no se ha recuperado la URL en la busqueda)
 - Paper, blog o repositorio de codigo adicionales: no disponibles. Los unicos resultados de la busqueda web fueron enlaces a YouTube sin relacion con el modelo.

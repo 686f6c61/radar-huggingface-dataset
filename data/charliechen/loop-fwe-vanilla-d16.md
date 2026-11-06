@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-fwe-vanilla-d16 es un modelo de lenguaje base de tipo *looped transformer* (transformer con recursión de bloques) publicado por el usuario CharlieChen en HuggingFace, asociado al artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un checkpoint de investigación, no de un modelo instruido ni afinado para diálogo: su propósito es servir como punto de referencia ("vanilla") dentro de un estudio sobre cómo el crecimiento del modelo, la recursión y los operadores de frontera afectan a los exponentes de escalado.
+loop-fwe-vanilla-d16 es un modelo de lenguaje base de tipo *looped transformer* (transformer con recursión de bloques) publicado por el usuario CharlieChen en Hugging Face, asociado al artículo "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents". Se trata de un checkpoint de investigación, no de un modelo instruido ni afinado para diálogo: su propósito es servir como punto de referencia ("vanilla") dentro de un estudio sobre cómo el crecimiento del modelo, la recursión y los operadores de frontera afectan a los exponentes de escalado.
 
 El modelo almacena 1.028.128.768 parámetros en FP32 y fue preentrenado sobre el corpus FineWeb-Edu con tokenizador GPT-2 (vía tiktoken) y una longitud de contexto de 2.048 tokens. Su coordenada de profundidad es d16, con anchura 2.048 y 16 cabezas de atención; la recurrencia final del núcleo es 1 en el checkpoint publicado. Los pesos exportados son idénticos bit a bit al checkpoint del artículo.
 
@@ -81,9 +81,9 @@ No se han proporcionado en la información disponible comparativas con otros mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| loop-fwe-vanilla-d16 | 1.028.128.768 | 2.048 | no disponible | Pesos PyTorch `.pt` en HuggingFace |
-| TinyLlama-1.1B | ~1.100 millones | 2.048 | Apache-2.0 | Pesos en HuggingFace |
-| Pythia-1.0B | ~1.000 millones | 2.048 | Apache-2.0 | Pesos en HuggingFace |
+| loop-fwe-vanilla-d16 | 1.028.128.768 | 2.048 | no disponible | Pesos PyTorch `.pt` en Hugging Face |
+| TinyLlama-1.1B | ~1.100 millones | 2.048 | Apache-2.0 | Pesos en Hugging Face |
+| Pythia-1.0B | ~1.000 millones | 2.048 | Apache-2.0 | Pesos en Hugging Face |
 | Benchmark comparativo (MMLU, CORE, etc.) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se han proporcionado en la información disponible comparativas con otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-vanilla-d16
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-vanilla-d16
 - Repositorio de código del paper: https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Artículo de referencia: "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents" (URL del paper no disponible en la información proporcionada)

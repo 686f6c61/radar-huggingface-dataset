@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tecnica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct (base) | 8,03 B | 131.072 | Fine-tuning supervisado + RLHF | Llama 3.1 Community | HuggingFace |
-| ApolloRaines/Llama-3.1-8B-Instruct-Flat-Concise | 8,03 B | 131.072 (heredado) | Proyeccion de direcciones (jBlaze) | Llama 3.1 Community | HuggingFace |
-| ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated | 8,03 B | 131.072 (heredado) | Abliteracion + jBlaze | Llama 3.1 Community | HuggingFace |
-| Otros modelos abliterados de 8B (p. ej. huihui-ai/Llama-3.1-8B-abliterated) | 8,03 B | 131.072 | Abliteracion clasica | Llama 3.1 Community | HuggingFace |
+| Llama-3.1-8B-Instruct (base) | 8,03 B | 131.072 | Fine-tuning supervisado + RLHF | Llama 3.1 Community | Hugging Face |
+| ApolloRaines/Llama-3.1-8B-Instruct-Flat-Concise | 8,03 B | 131.072 (heredado) | Proyeccion de direcciones (jBlaze) | Llama 3.1 Community | Hugging Face |
+| ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated | 8,03 B | 131.072 (heredado) | Abliteracion + jBlaze | Llama 3.1 Community | Hugging Face |
+| Otros modelos abliterados de 8B (p. ej. huihui-ai/Llama-3.1-8B-abliterated) | 8,03 B | 131.072 | Abliteracion clasica | Llama 3.1 Community | Hugging Face |
 
 La comparativa principal es contra el modelo base: la variante Flat-Concise comparte pesos y arquitectura, y difiere unicamente en las proyecciones aplicadas. Frente a variantes abliteradas clasicas, jBlaze actua sobre direcciones representacionales especificas (emocion y verbosidad) en lugar de eliminar la negativa general a responder, por lo que el rango de comportamientos afectados es mas acotado.
 
@@ -80,8 +80,8 @@ La comparativa principal es contra el modelo base: la variante Flat-Concise comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Flat-Concise
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Flat-Concise
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante Jbliterated del mismo autor: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated
 - Repositorio de jBlaze (GitHub): https://github.com/apolloraines/jblaze
 - Llama 3.1 en Ollama: https://ollama.com/library/llama3.1:8b

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Sanjeetkkr/sentiment-model es un modelo de clasificación de texto publicado en HuggingFace por el usuario Sanjeetkkr. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, la versión destilada de BERT, orientado a análisis de sentimiento. El repositorio contiene 66.955.779 parámetros en formato safetensors y ocupa 0,3 GB, por lo que es un modelo compacto, desplegable en hardware muy modesto, incluso en CPU.
+Sanjeetkkr/sentiment-model es un modelo de clasificación de texto publicado en Hugging Face por el usuario Sanjeetkkr. Se trata de un ajuste fino (fine-tuning) de distilbert-base-uncased, la versión destilada de BERT, orientado a análisis de sentimiento. El repositorio contiene 66.955.779 parámetros en formato safetensors y ocupa 0,3 GB, por lo que es un modelo compacto, desplegable en hardware muy modesto, incluso en CPU.
 
 El problema que resuelve es el habitual de la clasificación de sentimiento: asignar una etiqueta polar (o varias) a un fragmento de texto. Su relevancia práctica es limitada en comparación con alternativas consolidadas del mismo tamaño, porque la model card no documenta el conjunto de datos de entrenamiento, el esquema de etiquetas ni los usos previstos, y las métricas declaradas son moderadas (accuracy de 0,6598 y F1 macro de 0,6493 sobre un conjunto de evaluación no identificado).
 
-Es, en la práctica, un artefacto derivado de un entrenamiento con el Trainer de HuggingFace (3 épocas, learning rate 2e-05, batch de 32) que no ha sido documentado ni validado por la comunidad: acumula 0 descargas y 0 likes desde su creación. Resulta útil como ejemplo reproducible de pipeline de fine-tuning y como punto de partida para reentrenar con datos propios, más que como solución lista para producción.
+Es, en la práctica, un artefacto derivado de un entrenamiento con el Trainer de Hugging Face (3 épocas, learning rate 2e-05, batch de 32) que no ha sido documentado ni validado por la comunidad: acumula 0 descargas y 0 likes desde su creación. Resulta útil como ejemplo reproducible de pipeline de fine-tuning y como punto de partida para reentrenar con datos propios, más que como solución lista para producción.
 
 ## Especificaciones tecnicas
 
@@ -31,16 +31,16 @@ Es, en la práctica, un artefacto derivado de un entrenamiento con el Trainer de
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es DistilBERT: un transformer encoder con 6 capas, 768 dimensiones ocultas y 12 cabezas de atención, resultado de destilar BERT-base (12 capas, 110 M de parámetros) conservando aproximadamente el 97 % del rendimiento de GLUE con un 40 % menos de parámetros y una velocidad de inferencia un 60 % superior. Sobre el encoder destilado se añade la cabeza estándar de clasificación de secuencias de HuggingFace (una capa densa `pre_classifier` de 768x768 y una capa `classifier` de 768 x número de etiquetas, con sus sesgos), lo que explica el recuento total de 66.955.779 parámetros frente a los 66.362.880 del encoder puro.
+La arquitectura es DistilBERT: un transformer encoder con 6 capas, 768 dimensiones ocultas y 12 cabezas de atención, resultado de destilar BERT-base (12 capas, 110 M de parámetros) conservando aproximadamente el 97 % del rendimiento de GLUE con un 40 % menos de parámetros y una velocidad de inferencia un 60 % superior. Sobre el encoder destilado se añade la cabeza estándar de clasificación de secuencias de Hugging Face (una capa densa `pre_classifier` de 768x768 y una capa `classifier` de 768 x número de etiquetas, con sus sesgos), lo que explica el recuento total de 66.955.779 parámetros frente a los 66.362.880 del encoder puro.
 
-El entrenamiento se realizó con el Trainer de HuggingFace durante 3 épocas, con learning rate 2e-05, batch de 32 (tanto en entrenamiento como en evaluación), optimizador AdamW fused (betas 0,9/0,999, epsilon 1e-08), scheduler lineal y semilla 42. El conjunto de datos no se especifica en ningún momento de la model card: figura literalmente como "unknown dataset". No hay información sobre volumen de tokens, composición del corpus, idioma del dataset, técnica de alineación (RLHF, DPO) ni proceso de destilación propio, ya que la destilación se hereda del modelo base. Tampoco se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, etc.).
+El entrenamiento se realizó con el Trainer de Hugging Face durante 3 épocas, con learning rate 2e-05, batch de 32 (tanto en entrenamiento como en evaluación), optimizador AdamW fused (betas 0,9/0,999, epsilon 1e-08), scheduler lineal y semilla 42. El conjunto de datos no se especifica en ningún momento de la model card: figura literalmente como "unknown dataset". No hay información sobre volumen de tokens, composición del corpus, idioma del dataset, técnica de alineación (RLHF, DPO) ni proceso de destilación propio, ya que la destilación se hereda del modelo base. Tampoco se documenta ninguna innovación técnica adicional (decodificación especulativa, atención lineal, etc.).
 
 ## Capacidades
 
 - Clasificación de texto en 3 categorías de sentimiento (esquema de clases no documentado; presumiblemente polaridad negativa/neutra/positiva o similar).
 - Inferencia sobre secuencias de hasta 512 tokens con el tokenizador WordPiece sin distinción de mayúsculas del modelo base.
 - Clasificación por lotes (batch) con la pipeline `text-classification` de Transformers o con `AutoModelForSequenceClassification`.
-- Compatibilidad con `endpoints_compatible`, es decir, puede desplegarse directamente en HuggingFace Inference Endpoints.
+- Compatibilidad con `endpoints_compatible`, es decir, puede desplegarse directamente en Hugging Face Inference Endpoints.
 - No dispone de generación de texto, razonamiento multi-paso, matemáticas, código ni capacidades de visión.
 - No soporta tool calling ni function calling: es un clasificador discriminativo, no un modelo generativo con API de herramientas.
 - No se documentan capacidades multilingües; el modelo base está entrenado sobre todo en inglés y usa un vocabulario `uncased` en inglés.
@@ -54,7 +54,7 @@ El entrenamiento se realizó con el Trainer de HuggingFace durante 3 épocas, co
 - Filtrado previo en pipelines de moderación: descartar o marcar contenido según el tono detectado antes de pasarlo a un modelo mayor o a revisión humana.
 - Etiquetado asistido de datos: usar el modelo como preanotador para reducir el coste de anotación manual de un corpus de sentimiento propio, con revisión posterior.
 - Base para un reentrenamiento específico de dominio: al ser un fine-tune estándar de DistilBERT bajo Apache-2.0, sirve como punto de partida reproducible para ajustar con datos propios médicos, financieros o de atención al cliente.
-- Experimentación docente o de investigación: ejemplo mínimo de pipeline completo (tokenizador, Trainer, métricas de evaluación) para ilustrar el flujo de trabajo de HuggingFace sin requerir GPU.
+- Experimentación docente o de investigación: ejemplo mínimo de pipeline completo (tokenizador, Trainer, métricas de evaluación) para ilustrar el flujo de trabajo de Hugging Face sin requerir GPU.
 
 ## Benchmarks y rendimiento
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks comparables (MMLU, GLUE, SST-2, etc
 - Inferencia en CPU totalmente viable: el modelo cabe en memoria RAM en menos de 0,5 GB en fp32, por lo que puede ejecutarse en instancias básicas, contenedores pequeños o incluso dispositivos tipo Raspberry Pi 4 (con latencias mayores).
 - GPU recomendadas: cualquiera, incluidas GTX 1050/1650, RTX 3050/3060/4090, T4, L4, A10 o A100; no requiere GPU de gama alta ni aceleradores como H100 para un uso razonable.
 - Cabe sin problema en GPU de consumo: es un modelo de 66 M de parámetros, varios órdenes de magnitud por debajo de los modelos que requieren 24 GB o más de VRAM.
-- Opciones de despliegue: pipeline de Transformers (`text-classification`), `AutoModelForSequenceClassification` con PyTorch, exportación a ONNX Runtime, TorchScript, TorchServe, HuggingFace Inference Endpoints (el tag `endpoints_compatible` lo confirma), Text Generation Inference (TGI) en modo clasificación y vLLM con soporte de modelos de clasificación. Ollama y llama.cpp requieren convertir previamente los pesos a GGUF, algo no soportado de forma nativa para este repositorio.
+- Opciones de despliegue: pipeline de Transformers (`text-classification`), `AutoModelForSequenceClassification` con PyTorch, exportación a ONNX Runtime, TorchScript, TorchServe, Hugging Face Inference Endpoints (el tag `endpoints_compatible` lo confirma), Text Generation Inference (TGI) en modo clasificación y vLLM con soporte de modelos de clasificación. Ollama y llama.cpp requieren convertir previamente los pesos a GGUF, algo no soportado de forma nativa para este repositorio.
 - Latencia y throughput: no se publican cifras. Como estimación orientativa basada en el tamaño del modelo, en GPU se esperan latencias de milisegundos por lote de 32 secuencias de 128 tokens y decenas de milisegundos en CPU; estas cifras deben medirse en el hardware objetivo y no proceden de datos del autor.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks comparables (MMLU, GLUE, SST-2, etc
 | cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 512 tokens | 3 (negativo/neutro/positivo) | consultar su model card | Métricas publicadas en su propia model card (F1 por clase); no verificadas aquí |
 | nlptown/bert-base-multilingual-uncased-sentiment | 178 M | 512 tokens | 5 (estrellas) | consultar su model card | Métricas publicadas en su propia model card; no verificadas aquí |
 
-Los datos de los modelos comparativos proceden de sus respectivas model cards públicas en HuggingFace y conviene verificarlos antes de citarlos. La diferencia clave es que este modelo no aporta métricas sobre un conjunto identificable, lo que impide comparar su rendimiento de forma rigurosa.
+Los datos de los modelos comparativos proceden de sus respectivas model cards públicas en Hugging Face y conviene verificarlos antes de citarlos. La diferencia clave es que este modelo no aporta métricas sobre un conjunto identificable, lo que impide comparar su rendimiento de forma rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -114,7 +114,7 @@ conviene comprobarla directamente en la página del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanjeetkkr/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/Sanjeetkkr/sentiment-model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Alternativa consolidada para comparar: https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english
 - Alternativa multilingüe de 5 clases: https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment

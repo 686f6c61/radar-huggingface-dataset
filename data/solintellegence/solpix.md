@@ -101,7 +101,7 @@ Diferencias clave: SolPix es uno o dos órdenes de magnitud más pequeño que cu
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/solintellegence/SolPix
+- Repositorio del modelo en Hugging Face: https://huggingface.co/solintellegence/SolPix
 - Dataset de entrenamiento MONET v1.2.0: https://huggingface.co/datasets/jasperai/monet
 - Encoder de texto `google/flan-t5-base`: https://huggingface.co/google/flan-t5-base
 - Autoencoder DC de Diffusers (`AutoencoderDC`, SANA DC-AE): https://huggingface.co/docs/diffusers/api/models/autoencoder_dc

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-sort-stack-drawer-alpha1 es un checkpoint de politica robotica publicado por el usuario alanoob en HuggingFace, construido como ajuste fino completo (full fine-tuning) sobre el modelo base pi05_base. Esta orientado a tres tareas de manipulacion con un brazo Franka de un solo brazo: clasificacion de cubos (sort), apilado de vasos (stack) y manipulacion de cajones (drawer). Se distribuye dentro del ecosistema openpi, la libreria asociada a los modelos pi05, y su repositorio ocupa 134.1 GB.
+pi05-sort-stack-drawer-alpha1 es un checkpoint de politica robotica publicado por el usuario alanoob en Hugging Face, construido como ajuste fino completo (full fine-tuning) sobre el modelo base pi05_base. Esta orientado a tres tareas de manipulacion con un brazo Franka de un solo brazo: clasificacion de cubos (sort), apilado de vasos (stack) y manipulacion de cajones (drawer). Se distribuye dentro del ecosistema openpi, la libreria asociada a los modelos pi05, y su repositorio ocupa 134.1 GB.
 
 El modelo es relevante para investigadores en robotica que trabajan con aprendizaje por imitacion y vision-language-action (VLA), porque documenta de forma explicita el esquema de ponderacion del dataset (dataset-shard-count weighting con alpha=1) y las proporciones de cada tarea durante el entrenamiento: Sort 0.6179, Stack 0.1057 y Drawer 0.2764. Esta transparencia en la mezcla de tareas facilita reproducir o comparar estrategias de entrenamiento multitarea sobre un mismo brazo.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-sort-stack-drawer-alpha1 | Modelo de esta ficha | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| pi05-sort-stack-drawer-alpha1 | Modelo de esta ficha | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | pi05_base | Modelo base del que parte el ajuste fino | no disponible | no disponible | no disponible | Referenciado en la model card |
 | Otras politicas VLA abiertas (por ejemplo OpenVLA, RDT-1B) | Alternativas del mismo ambito | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,6 +84,6 @@ No se dispone de datos numericos del modelo ni de comparativas publicadas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alanoob/pi05-sort-stack-drawer-alpha1
+- Modelo en Hugging Face: https://huggingface.co/alanoob/pi05-sort-stack-drawer-alpha1
 - Libreria openpi (referenciada por el modelo): https://github.com/Physical-Intelligence/openpi
 - Modelo base pi05_base: referenciado en la model card sin enlace directo disponible

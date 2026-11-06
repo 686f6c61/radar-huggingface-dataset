@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Slayer1B-1.01-checkpoints es el repositorio de checkpoints de entrenamiento del modelo Slayer1B 1.01, desarrollado por SlayerLab. No contiene un modelo listo para inferencia, sino los estados completos del entrenador (pesos y estado del optimizador) de la ejecución que produjo la versión 1.01, un modelo de lenguaje de aproximadamente 1.000 millones de parámetros orientado al polaco. Cada fichero `.pt` permite reanudar el entrenamiento exactamente donde se guardó, algo poco habitual en los repositorios publicados en HuggingFace.
+Slayer1B-1.01-checkpoints es el repositorio de checkpoints de entrenamiento del modelo Slayer1B 1.01, desarrollado por SlayerLab. No contiene un modelo listo para inferencia, sino los estados completos del entrenador (pesos y estado del optimizador) de la ejecución que produjo la versión 1.01, un modelo de lenguaje de aproximadamente 1.000 millones de parámetros orientado al polaco. Cada fichero `.pt` permite reanudar el entrenamiento exactamente donde se guardó, algo poco habitual en los repositorios publicados en Hugging Face.
 
 La ejecución parte del checkpoint `ckpt_1050.pt` de Slayer1B 1.00, justo antes del decaimiento de la tasa de aprendizaje, y amplía el presupuesto a 2.860 pasos de 1.048.576 tokens cada uno, es decir, 2.998.927.360 tokens en total (aproximadamente 2,8 tokens por parámetro, frente a los 1.430 pasos de la versión 1.00). El repositorio ocupa 115,2 GB y contiene 13 checkpoints (del paso 1200 al 2860, cada 150 pasos) más un directorio `run/` con registros, manifiestos de datos y sumas SHA-256.
 
@@ -101,7 +101,7 @@ La diferencia principal frente a estas alternativas no es de rendimiento sino de
 - Ausencia de cifras de evaluación en la model card: las evaluaciones existen en el tracker externo, pero no se han transcrito; cualquier afirmación de calidad requiere verificación propia.
 - Licencia Apache-2.0: permite uso comercial y modificaciones con atribución y conservación del aviso de licencia; no se especifican restricciones adicionales de uso aceptable en la información disponible.
 - Trazabilidad dependiente de infraestructura externa: la curva de entrenamiento y parte de los registros viven en `track.fabryka.ai`, por lo que la reproducibilidad completa depende de la persistencia de ese servicio.
-- Fecha de creación del repositorio registrada como 2026-10-23 en los metadatos de HuggingFace; conviene verificar la coherencia temporal si se cita la ficha en un trabajo académico.
+- Fecha de creación del repositorio registrada como 2026-10-23 en los metadatos de Hugging Face; conviene verificar la coherencia temporal si se cita la ficha en un trabajo académico.
 
 ## Enlaces
 

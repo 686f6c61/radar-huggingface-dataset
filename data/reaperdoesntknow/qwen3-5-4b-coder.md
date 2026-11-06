@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Coder es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-4B, publicado por el usuario reaperdoesntknow en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta tanto texto como imágenes como entrada y genera texto, con un total de 4.659.865.088 parámetros (aproximadamente 4,66 mil millones) en pesos de 16 bits (FP16). El ajuste se realizó con la librería Unsloth y TRL de HuggingFace, según indica el autor, con una velocidad de entrenamiento declarada de 2x respecto a un pipeline estándar.
+Qwen3.5-4B-Coder es un ajuste fino (fine-tuning) del modelo base unsloth/Qwen3.5-4B, publicado por el usuario reaperdoesntknow en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, acepta tanto texto como imágenes como entrada y genera texto, con un total de 4.659.865.088 parámetros (aproximadamente 4,66 mil millones) en pesos de 16 bits (FP16). El ajuste se realizó con la librería Unsloth y TRL de Hugging Face, según indica el autor, con una velocidad de entrenamiento declarada de 2x respecto a un pipeline estándar.
 
 El modelo hereda la arquitectura qwen3_5 del modelo base y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las de dicha licencia. El sufijo "Coder" en el nombre sugiere una especialización hacia tareas de generación de código, aunque la model card no documenta el dataset de ajuste ni los objetivos concretos del fine-tuning.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: se trata de un modelo con muy poca trac
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint unsloth/Qwen3.5-4B, que a su vez pertenece a la familia Qwen3.5 con arquitectura transformer y capacidades multimodales (pipeline image-text-to-text). El autor no detalla la composición del dataset de ajuste, el número de tokens utilizados, ni si se aplicaron técnicas de RLHF, DPO o SFT supervisado. La única información técnica disponible es que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, con una mejora declarada de velocidad de 2x, y que los pesos resultantes se publican en FP16.
+El modelo es un fine-tuning del checkpoint unsloth/Qwen3.5-4B, que a su vez pertenece a la familia Qwen3.5 con arquitectura transformer y capacidades multimodales (pipeline image-text-to-text). El autor no detalla la composición del dataset de ajuste, el número de tokens utilizados, ni si se aplicaron técnicas de RLHF, DPO o SFT supervisado. La única información técnica disponible es que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, con una mejora declarada de velocidad de 2x, y que los pesos resultantes se publican en FP16.
 
 No se documentan innovaciones técnicas propias del ajuste (decodificación especulativa, atención lineal, etc.) más allá de las que herede del modelo base Qwen3.5, que no se especifican en la información proporcionada. Tampoco se indica si el ajuste preserva íntegramente las capacidades multimodales del modelo base o si se centró exclusivamente en texto/código.
 
@@ -85,7 +85,7 @@ La comparativa con Qwen2.5-Coder se ofrece como referencia de categoría (modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Qwen3.5-4B-Coder
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-4B-Coder
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

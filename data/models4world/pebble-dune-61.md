@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `models4world/pebble-dune-61` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por la organización `models4world`, diseñado para tareas de generación de texto y conversación. Se construye sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública detallada. El repositorio tiene un tamaño de 11,2 GB, lo que sugiere que el adaptador es de gran escala o que el repositorio incluye también los pesos del modelo base.
+El modelo `models4world/pebble-dune-61` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por la organización `models4world`, diseñado para tareas de generación de texto y conversación. Se construye sobre el modelo base `models4world/maple-signal-64`, del cual no se dispone de información pública detallada. El repositorio tiene un tamaño de 11,2 GB, lo que sugiere que el adaptador es de gran escala o que el repositorio incluye también los pesos del modelo base.
 
 Este modelo es relevante porque representa un enfoque de ajuste fino eficiente mediante LoRA, pero su adopción es nula (cero descargas y cero likes) y su model card está completamente vacía, lo que impide conocer sus especificaciones técnicas, capacidades o limitaciones. Se desconoce la arquitectura del modelo base, el número de parámetros, la longitud de contexto, los idiomas soportados y la licencia de uso. En definitiva, se trata de un modelo publicado sin documentación, por lo que cualquier evaluación rigurosa es imposible con los datos actualmente disponibles.
 

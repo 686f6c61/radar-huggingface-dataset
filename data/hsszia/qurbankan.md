@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qurbankan es un modelo publicado en HuggingFace por el usuario hsszia bajo el identificador `hsszia/Qurbankan`. La información pública disponible en el momento de redactar esta ficha es extremadamente limitada: el repositorio no declara pipeline, licencia, idiomas soportados ni documentación técnica asociada. El modelo se creó el 2 de noviembre de 2026 y no registra descargas, lo que sugiere que se trata de una publicación reciente o de un artefacto de carácter experimental sin difusión.
+Qurbankan es un modelo publicado en Hugging Face por el usuario hsszia bajo el identificador `hsszia/Qurbankan`. La información pública disponible en el momento de redactar esta ficha es extremadamente limitada: el repositorio no declara pipeline, licencia, idiomas soportados ni documentación técnica asociada. El modelo se creó el 2 de noviembre de 2026 y no registra descargas, lo que sugiere que se trata de una publicación reciente o de un artefacto de carácter experimental sin difusión.
 
 No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento. El nombre "Qurbankan" remite a un término relacionado con el sacrificio ritual en el contexto islámico, pero no existe información que vincule el nombre a una función o dominio técnico concreto del modelo.
 
@@ -23,7 +23,7 @@ Dada la ausencia de especificaciones, esta ficha se limita a documentar los meta
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo (transformer, MoE, SSM, híbrida u otra), el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o similares. El repositorio de HuggingFace no incluye model card con detalles técnicos ni referencias a papers o documentación complementaria.
+No se ha publicado información sobre la arquitectura del modelo (transformer, MoE, SSM, híbrida u otra), el volumen de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF, DPO o similares. El repositorio de Hugging Face no incluye model card con detalles técnicos ni referencias a papers o documentación complementaria.
 
 Tampoco se dispone de información sobre innovaciones técnicas destacables, como decodificación especulativa, atención lineal o mecanismos de razonamiento extendido. Cualquier afirmación al respecto sería especulativa y, por tanto, se omite.
 
@@ -67,5 +67,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hsszia/Qurbankan
+- Repositorio en Hugging Face: https://huggingface.co/hsszia/Qurbankan
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

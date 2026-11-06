@@ -82,9 +82,9 @@ No se han publicado comparaciones con benchmarks estándar de generación de im�
 
 | Modelo | Tipo | Canales | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Mage-Flow-RGBA-vae (este) | LoRA + VAE fusionado sobre Mage-Flow | RGBA | GPL-3.0 | HuggingFace, 0 descargas | Solo fase VAE; sin DiT LoRA |
-| CKMoss-Image-RGBA | VAE RGBA de referencia estructural | RGBA | GPLv3 | HuggingFace / GitHub | Inspiración declarada del autor |
-| microsoft/Mage-Flow | Modelo base de generación | RGB (VAE original) | MIT (según el autor) | HuggingFace | Sin soporte nativo de alfa en el VAE original |
+| Mage-Flow-RGBA-vae (este) | LoRA + VAE fusionado sobre Mage-Flow | RGBA | GPL-3.0 | Hugging Face, 0 descargas | Solo fase VAE; sin DiT LoRA |
+| CKMoss-Image-RGBA | VAE RGBA de referencia estructural | RGBA | GPLv3 | Hugging Face / GitHub | Inspiración declarada del autor |
+| microsoft/Mage-Flow | Modelo base de generación | RGB (VAE original) | MIT (según el autor) | Hugging Face | Sin soporte nativo de alfa en el VAE original |
 
 No se dispone de datos de benchmarks comparativos entre estas alternativas en la información proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/leafmoone/Mage-Flow-RGBA-vae
+- Repositorio Hugging Face: https://huggingface.co/leafmoone/Mage-Flow-RGBA-vae
 - Modelo base: https://huggingface.co/microsoft/Mage-Flow
 - Repositorio GitHub de Mage: https://github.com/microsoft/Mage
 - Referencia estructural CKMoss-Image-RGBA: https://huggingface.co/ChenkinLab/CKMoss-Image-RGBA

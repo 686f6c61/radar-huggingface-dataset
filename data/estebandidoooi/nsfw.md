@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Estebandidoooi/NSFW` es un adaptador LoRA (Low-Rank Adaptation) diseñado para modificar el comportamiento del modelo base Wan-AI/Wan2.1-I2V-14B-720P, un sistema de difusión de imagen a vídeo de 14 000 millones de parámetros. Desarrollado por el usuario Estebandidoooi, este adaptador se ha entrenado específicamente para generar contenido explícito para adultos (NSFW) a partir de texto o imágenes, utilizando palabras de activación como `porn`, `video`, `sex` o `pussy`. El repositorio, publicado en HuggingFace bajo la licencia creativeml-openrail-m, ocupa 28 GB e integra el pipeline de `diffusers` con la etiqueta `text-to-image`, aunque el modelo base está orientado a vídeo.
+El modelo `Estebandidoooi/NSFW` es un adaptador LoRA (Low-Rank Adaptation) diseñado para modificar el comportamiento del modelo base Wan-AI/Wan2.1-I2V-14B-720P, un sistema de difusión de imagen a vídeo de 14 000 millones de parámetros. Desarrollado por el usuario Estebandidoooi, este adaptador se ha entrenado específicamente para generar contenido explícito para adultos (NSFW) a partir de texto o imágenes, utilizando palabras de activación como `porn`, `video`, `sex` o `pussy`. El repositorio, publicado en Hugging Face bajo la licencia creativeml-openrail-m, ocupa 28 GB e integra el pipeline de `diffusers` con la etiqueta `text-to-image`, aunque el modelo base está orientado a vídeo.
 
 La relevancia de este modelo radica en su capacidad para adaptar un generador de vídeo de alta resolución (720p) a un dominio específico de contenido para adultos, algo que requiere ajustes finos y datos especializados. Sin embargo, la información pública es muy limitada: no se detallan los datos de entrenamiento, el número de pasos, ni los hiperparámetros utilizados. Tampoco se proporcionan métricas de rendimiento ni comparativas con otros modelos. Esto dificulta una evaluación técnica rigurosa, aunque el interés de la comunidad (1928 descargas) sugiere una demanda real en este nicho.
 
@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en el mismo dominio. Exi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Estebandidoooi/NSFW
+- Repositorio en Hugging Face: https://huggingface.co/Estebandidoooi/NSFW
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-I2V-14B-720P (referencia, no se ha verificado su disponibilidad)

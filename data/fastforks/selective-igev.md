@@ -79,7 +79,7 @@ No se dispone en la información proporcionada de datos de otros modelos estére
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Selective-IGEV (fastforks) | no disponible | no aplica | Código MIT; pesos sin declarar | HuggingFace (manifiesto) + GitHub |
+| Selective-IGEV (fastforks) | no disponible | no aplica | Código MIT; pesos sin declarar | Hugging Face (manifiesto) + GitHub |
 | IGEV-Stereo original | no disponible | no aplica | no disponible | GitHub de los autores |
 | Otros modelos estéreo | no disponible | no aplica | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de datos de otros modelos estére
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/selective-igev
+- Model card en Hugging Face: https://huggingface.co/fastforks/selective-igev
 - Repositorio del fork: https://github.com/kleinicke/fastforks
 - Manifiesto de hashes (`card.toml`): https://github.com/kleinicke/fastforks/blob/main/src/fastforks/stereo/models/selective_igev/card.toml
 - Kernels CUDA: https://huggingface.co/fastforks/kernels

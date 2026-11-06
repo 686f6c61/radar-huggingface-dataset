@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixtral-8x7B-Instruct-v0.1 es un modelo de lenguaje generativo de tipo Mixture of Experts (MoE) disperso desarrollado por Mistral AI. Esta ficha corresponde a la copia publicada por el usuario Mafiaorigin22 en HuggingFace, que reproduce los pesos del modelo original de Mistral AI y utiliza el modelo base mistralai/Mixtral-8x7B-v0.1. Se trata, por tanto, de una resubida (mirror) con licencia Apache-2.0 y no de un desarrollo propio del autor de la copia.
+Mixtral-8x7B-Instruct-v0.1 es un modelo de lenguaje generativo de tipo Mixture of Experts (MoE) disperso desarrollado por Mistral AI. Esta ficha corresponde a la copia publicada por el usuario Mafiaorigin22 en Hugging Face, que reproduce los pesos del modelo original de Mistral AI y utiliza el modelo base mistralai/Mixtral-8x7B-v0.1. Se trata, por tanto, de una resubida (mirror) con licencia Apache-2.0 y no de un desarrollo propio del autor de la copia.
 
 El modelo resuelve tareas de generacion de texto, razonamiento e instrucciones en cinco idiomas (frances, italiano, aleman, espanol e ingles) y se posiciona como una alternativa abierta a modelos densos considerablemente mayores. Segun la model card original, supera a Llama 2 70B en la mayoria de los benchmarks probados por Mistral AI, con un coste de inferencia mas cercano al de un modelo de unos 13 mil millones de parametros activos.
 

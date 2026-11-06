@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/spectrum-Llama-3.1-70B-v0-GGUF` es la publicación en formato GGUF del modelo `tsor13/spectrum-Llama-3.1-70B-v0`, un ajuste fino (fine-tune) de Llama 3.1 70B del que no se documenta la receta de entrenamiento. El trabajo de esta ficha lo realiza mradermacher, un conocido cuantizador de la comunidad que convierte pesos en formato HuggingFace a GGUF estático para su uso con llama.cpp y derivados. No se trata, por tanto, de un modelo nuevo entrenado desde cero, sino de una conversión de pesos con 11 niveles de cuantización distintos.
+`mradermacher/spectrum-Llama-3.1-70B-v0-GGUF` es la publicación en formato GGUF del modelo `tsor13/spectrum-Llama-3.1-70B-v0`, un ajuste fino (fine-tune) de Llama 3.1 70B del que no se documenta la receta de entrenamiento. El trabajo de esta ficha lo realiza mradermacher, un conocido cuantizador de la comunidad que convierte pesos en formato Hugging Face a GGUF estático para su uso con llama.cpp y derivados. No se trata, por tanto, de un modelo nuevo entrenado desde cero, sino de una conversión de pesos con 11 niveles de cuantización distintos.
 
 El modelo tiene 70.553.706.560 parámetros (70,55 mil millones), es denso (no MoE) y hereda la arquitectura transformer decoder-only de la familia Llama 3.1. El repositorio ocupa 481,3 GB en total porque incluye todas las variantes de cuantización, desde Q2_K (26,5 GB) hasta Q8_0 (75,1 GB). La model card no aporta información sobre el dataset de entrenamiento, el proceso de alineamiento ni los resultados de evaluación del fine-tune original.
 
@@ -39,7 +39,7 @@ La unica innovacion tecnica de esta publicacion es el propio proceso de conversi
 - Razonamiento y respuesta a instrucciones: capacidad heredada del modelo base, no verificada para este fine-tune concreto.
 - Generacion de codigo y matematicas: presumiblemente heredada de Llama 3.1 70B, sin evaluacion publicada que lo respalde.
 - Soporte de contexto largo: si se confirma la ventana de 128.000 tokens del modelo base, permitiria procesar documentos extensos, aunque no hay validacion especifica.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de Inference Endpoints de HuggingFace en formato GGUF.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante la infraestructura de Inference Endpoints de Hugging Face en formato GGUF.
 - Ejecucion local y offline mediante llama.cpp, Ollama y derivados, sin dependencia de APIs externas.
 - No hay evidencia de soporte de tool calling, function calling, modo thinking, vision ni audio en la informacion disponible.
 - Capacidades multilingues: no declaradas para este fine-tune (solo `en`); el modelo base si soporta varios idiomas, pero el ajuste fino pudo degradarlos.

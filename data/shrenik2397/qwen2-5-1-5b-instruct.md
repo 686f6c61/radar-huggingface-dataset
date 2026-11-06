@@ -87,7 +87,7 @@ Nota: los datos de Gemma 2 2B y Qwen2.5-3B se basan en informacion publica gener
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shrenik2397/Qwen2.5-1.5B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Shrenik2397/Qwen2.5-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base (sin instruct): https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Pagina del modelo en Ollama: https://ollama.com/library/qwen2.5:1.5b-instruct

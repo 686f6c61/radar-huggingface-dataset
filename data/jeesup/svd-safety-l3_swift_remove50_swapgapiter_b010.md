@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_swift_remove50_swapgapiter_b010` es un checkpoint derivado de `meta-llama/Meta-Llama-3-8B-Instruct` publicado por el usuario Jeesup en HuggingFace. No se trata de un modelo de propósito general, sino de un artefacto de investigación: el autor ha aplicado compresión SVD-LLM para eliminar el 49,97 % de los parámetros densos (fracción resultante 0,5003) y después ha restaurado un 1,000 % de los parámetros densos mediante 10 rondas iterativas de sustitución de componentes ("parameter-neutral swap") seleccionados con la regla `gap_iter`, en incrementos del 0,100 % por ronda.
+`svd-safety-l3_swift_remove50_swapgapiter_b010` es un checkpoint derivado de `meta-llama/Meta-Llama-3-8B-Instruct` publicado por el usuario Jeesup en Hugging Face. No se trata de un modelo de propósito general, sino de un artefacto de investigación: el autor ha aplicado compresión SVD-LLM para eliminar el 49,97 % de los parámetros densos (fracción resultante 0,5003) y después ha restaurado un 1,000 % de los parámetros densos mediante 10 rondas iterativas de sustitución de componentes ("parameter-neutral swap") seleccionados con la regla `gap_iter`, en incrementos del 0,100 % por ronda.
 
 El objetivo declarado del experimento es medir cómo la compresión SVD degrada el comportamiento de seguridad del modelo original y qué regla de selección de componentes repara mejor ese daño. El repositorio es una celda de una rejilla de experimentos sobre reglas de selección y presupuestos de restauración, con semilla fija 42 para garantizar reproducibilidad. El modelo base es un transformer decoder-only de 8.030.261.248 parámetros (≈8B), por lo que hereda la arquitectura Llama 3, aunque el checkpoint distribuido ocupa aproximadamente la mitad de los parámetros de proyección densos del original.
 
@@ -111,7 +111,7 @@ Advertencia: la comparación con los modelos de Meta es estructural (mismo tama�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3: https://llama.meta.com/llama3/license/
 - Politica de uso de Meta Llama 3: https://llama.meta.com/llama3/use-policy/

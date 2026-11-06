@@ -58,11 +58,11 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nikitastheo/v3-babylm-afr-ell-sequential_interleaved | ~124M | no disponible | afrikáans, griego | no disponible | HuggingFace |
-| nikitastheo/babylm-ara-ell-sequential_interleaved | no disponible | no disponible | árabe, griego | no disponible | HuggingFace |
-| nikitastheo/babylm-por-ell-sequential_interleaved | no disponible | no disponible | portugués, griego | no disponible | HuggingFace |
-| nikitastheo/babylm-lem-spa-ell-sequential_interleaved | no disponible | no disponible | español, griego | no disponible | HuggingFace |
-| GPT-2 small (original) | 124M | 1024 | inglés | MIT | HuggingFace |
+| nikitastheo/v3-babylm-afr-ell-sequential_interleaved | ~124M | no disponible | afrikáans, griego | no disponible | Hugging Face |
+| nikitastheo/babylm-ara-ell-sequential_interleaved | no disponible | no disponible | árabe, griego | no disponible | Hugging Face |
+| nikitastheo/babylm-por-ell-sequential_interleaved | no disponible | no disponible | portugués, griego | no disponible | Hugging Face |
+| nikitastheo/babylm-lem-spa-ell-sequential_interleaved | no disponible | no disponible | español, griego | no disponible | Hugging Face |
+| GPT-2 small (original) | 124M | 1024 | inglés | MIT | Hugging Face |
 
 Los modelos de la serie BabyLM de nikitastheo comparten la misma estrategia de entrenamiento intercalado, variando los pares de idiomas. GPT-2 small es el modelo base de referencia, pero no es multilingüe.
 
@@ -77,7 +77,7 @@ Los modelos de la serie BabyLM de nikitastheo comparten la misma estrategia de e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nikitastheo/v3-babylm-afr-ell-sequential_interleaved)
+- [Modelo en Hugging Face](https://huggingface.co/nikitastheo/v3-babylm-afr-ell-sequential_interleaved)
 - [Modelo relacionado: babylm-ara-ell-sequential_interleaved](https://huggingface.co/nikitastheo/babylm-ara-ell-sequential_interleaved)
 - [Modelo relacionado: babylm-por-ell-sequential_interleaved](https://huggingface.co/nikitastheo/babylm-por-ell-sequential_interleaved)
 - [Modelo relacionado: babylm-lem-spa-ell-sequential_interleaved](https://huggingface.co/nikitastheo/babylm-lem-spa-ell-sequential_interleaved)

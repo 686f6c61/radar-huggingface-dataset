@@ -80,7 +80,7 @@ La comparativa se basa en datos del modelo base, no de la cuantizacion. La cuant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taskmaster141/Qwen3.6-27B-INT4-caliberated
+- Repositorio Hugging Face: https://huggingface.co/taskmaster141/Qwen3.6-27B-INT4-caliberated
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Blog oficial de Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b
 - Guia completa de Qwen 3.6 (insiderllm): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

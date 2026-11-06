@@ -79,10 +79,10 @@ Resultados declarados por el autor (no verificados de forma independiente). Huma
 
 | Modelo | Parametros | Activos | Contexto | HumanEval | MBPP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| TinyBrainBot-360M-A75M-v5.1-Python | 383M | 75M | no disponible | 14.6 | 32.7 | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| SmolLM2-360M-Instruct | 362M | 362M | no disponible | 16.5 | 33.5 | no disponible | HuggingFace |
-| SmolLM2-135M-Instruct | 135M | 135M | no disponible | 7.9 | 10.9 | no disponible | HuggingFace |
-| Qwen2.5-Coder-0.5B-Instruct | 494M | 494M | no disponible | 52.4 | 46.3 | no disponible | HuggingFace |
+| TinyBrainBot-360M-A75M-v5.1-Python | 383M | 75M | no disponible | 14.6 | 32.7 | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| SmolLM2-360M-Instruct | 362M | 362M | no disponible | 16.5 | 33.5 | no disponible | Hugging Face |
+| SmolLM2-135M-Instruct | 135M | 135M | no disponible | 7.9 | 10.9 | no disponible | Hugging Face |
+| Qwen2.5-Coder-0.5B-Instruct | 494M | 494M | no disponible | 52.4 | 46.3 | no disponible | Hugging Face |
 
 TinyBrainBot se situa en el mismo rango que SmolLM2-360M-Instruct en tareas de codigo, con un coste de entrenamiento muy inferior (20B frente a 4T tokens), mientras que Qwen2.5-Coder-0.5B, especializado en codigo y entrenado con billones de tokens, lo supera ampliamente y debe considerarse una referencia de categoria superior.
 
@@ -100,7 +100,7 @@ TinyBrainBot se situa en el mismo rango que SmolLM2-360M-Instruct en tareas de c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-python
+- Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-python
 - Modelo base: https://huggingface.co/nkthebass/tinybrainbot-360m-a75m-v5.1-base
 - SmolLM2-360M-Instruct (referencia comparativa): https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - SmolLM2-135M-Instruct (referencia comparativa): https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

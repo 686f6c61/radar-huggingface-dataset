@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-46 es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de HuggingFace junto con Unsloth, segun las etiquetas y la model card del repositorio. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors, lo que resulta llamativamente pequeno para un modelo denso de 4.000 millones de parametros (un checkpoint completo en bf16 rondaria los 8 GB), por lo que es probable que solo se hayan subido adaptadores o pesos parciales.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-46 es un ajuste fino (fine-tune) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se ha entrenado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de Hugging Face junto con Unsloth, segun las etiquetas y la model card del repositorio. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors, lo que resulta llamativamente pequeno para un modelo denso de 4.000 millones de parametros (un checkpoint completo en bf16 rondaria los 8 GB), por lo que es probable que solo se hayan subido adaptadores o pesos parciales.
 
 El modelo base, Qwen3-4B-Instruct-2507, es un transformer denso decoder-only de la familia Qwen3 en su variante "instruct" sin modo de razonamiento explicito, con 4.000 millones de parametros y una ventana de contexto nativa muy amplia. Esto lo situa en el segmento de modelos pequenos aptos para inferencia local en GPU de consumo, un nicho muy demandado para prototipado rapido y despliegues con requisitos de privacidad.
 
@@ -46,7 +46,7 @@ El detalle del entrenamiento esta practicamente ausente. La model card incluye u
 - Evaluacion de tecnicas de compresion: su tamano reducido lo hace adecuado para probar cuantizacion a 8 y 4 bits y medir la degradacion resultante antes de aplicar las mismas tecnicas a modelos mayores.
 - Generacion de texto asistida en entornos con restricciones de red: al poder desplegarse on-premise con transformers o vLLM, encaja en escenarios donde no esta permitido el acceso a servicios en la nube.
 - Clasificacion y extraccion de informacion en textos cortos: con prompts adecuados y validacion posterior, puede emplearse para tareas de etiquetado o extraccion de campos estructurados en lotes pequenos.
-- Docencia y divulgacion: sirve como caso practico para explicar el ciclo completo de publicacion de un modelo en HuggingFace, desde el entrenamiento con TRL hasta la estructura de una model card.
+- Docencia y divulgacion: sirve como caso practico para explicar el ciclo completo de publicacion de un modelo en Hugging Face, desde el entrenamiento con TRL hasta la estructura de una model card.
 
 ## Benchmarks y rendimiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: para bf16, una RTX 4090 (24 GB), A100 40 GB o H100; para 8 bits, una RTX 4070 Ti o superior; para 4 bits, practicamente cualquier GPU con 6 GB o mas de VRAM.
 - Cabe en GPU de consumo: si, en 4 bits cabe en tarjetas de 6-8 GB; en 8 bits, en tarjetas de 8-12 GB; en bf16, se recomienda un minimo de 12 GB.
 - Apple Silicon: con memoria unificada de 16 GB o superior es viable ejecutar la version cuantizada a 4 bits mediante llama.cpp, siempre que se genere previamente el archivo GGUF.
-- Opciones de despliegue: transformers (el ejemplo oficial de la model card usa `pipeline` con `device="cuda"`), vLLM o TGI para servir con mayor throughput, llama.cpp u Ollama previa conversion a GGUF. La etiqueta `endpoints_compatible` del repositorio indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (el ejemplo oficial de la model card usa `pipeline` con `device="cuda"`), vLLM o TGI para servir con mayor throughput, llama.cpp u Ollama previa conversion a GGUF. La etiqueta `endpoints_compatible` del repositorio indica compatibilidad con Hugging Face Inference Endpoints.
 - Advertencia practica: dado que el repositorio ocupa solo 0,2 GB, es probable que no contenga un checkpoint completo y que sea necesario cargar el modelo base por separado y aplicar los adaptadores. Conviene verificar la lista de archivos antes de planificar el despliegue.
 - Latencia y throughput estimados: no disponible.
 
@@ -93,4 +93,4 @@ No es posible establecer una comparativa de rendimiento con alternativas de otro
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo. Los unicos enlaces utiles son los enlaces directos a HuggingFace y a los repositorios de las herramientas empleadas en el entrenamiento, que se listan arriba.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo. Los unicos enlaces utiles son los enlaces directos a Hugging Face y a los repositorios de las herramientas empleadas en el entrenamiento, que se listan arriba.

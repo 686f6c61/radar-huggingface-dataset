@@ -87,13 +87,13 @@ No se dispone de modelos comparables publicados en la informacion disponible. La
 - Sensibilidad a la configuración del entorno: los resultados publicados se obtuvieron con una configuración concreta de empresa (`warehouse`, `base_demand`, `unit_cost`, etc.); no se documenta su comportamiento con otras parametrizaciones.
 - Riesgo de sobreajuste al simulador: al entrenarse por imitación de una heurística y luego con PPO sobre un entorno fijo, puede no generalizar a variantes del juego no vistas durante el entrenamiento.
 - Ausencia de datos técnicos: no se publican arquitectura, número de parámetros, presupuesto de entrenamiento ni métricas de robustez, lo que dificulta evaluar su fiabilidad más allá de los resultados del simulador.
-- Cero tracción en HuggingFace: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado de forma independiente los resultados.
+- Cero tracción en Hugging Face: 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado de forma independiente los resultados.
 - Licencia Apache 2.0: permite uso comercial y modificaciones, pero al depender del ecosistema `connect-tycoon` conviene revisar también la licencia de ese paquete y del simulador antes de integrarlo en producción.
 - Sesgos: no se documenta ningún análisis de sesgos, y al entrenarse imitando una heurística de reglas hereda los criterios y sesgos de dicha heurística.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucyhome/connectailab-rl-lucy-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/lucyhome/connectailab-rl-lucy-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno Colab de entrenamiento RL: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

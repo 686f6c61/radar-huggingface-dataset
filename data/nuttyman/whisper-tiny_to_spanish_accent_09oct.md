@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Nuttyman/whisper-tiny_to_spanish_accent_09oct` es un ajuste fino (fine-tune) del modelo `openai/whisper-tiny` de OpenAI, publicado en HuggingFace por el usuario Nuttyman. El objetivo declarado por el nombre del repositorio es adaptar el reconocimiento automatico del habla (ASR) de Whisper al ingles hablado con acento espanol, partiendo del dataset `Spanish_english`. Es, por tanto, un modelo especializado y de nicho, no un modelo generalista: hereda la arquitectura y el conocimiento del whisper-tiny original y anade un entrenamiento ligero sobre un corpus concreto.
+`Nuttyman/whisper-tiny_to_spanish_accent_09oct` es un ajuste fino (fine-tune) del modelo `openai/whisper-tiny` de OpenAI, publicado en Hugging Face por el usuario Nuttyman. El objetivo declarado por el nombre del repositorio es adaptar el reconocimiento automatico del habla (ASR) de Whisper al ingles hablado con acento espanol, partiendo del dataset `Spanish_english`. Es, por tanto, un modelo especializado y de nicho, no un modelo generalista: hereda la arquitectura y el conocimiento del whisper-tiny original y anade un entrenamiento ligero sobre un corpus concreto.
 
 El modelo tiene 37.760.640 parametros (aproximadamente 37,8 millones) y un peso de repositorio de 0,3 GB, lo que lo situa en la gama ultra-ligera: se puede ejecutar en CPU y en cualquier GPU consumer con una fraccion minima de VRAM. La longitud de audio que procesa esta limitada por la ventana nativa de Whisper (30 segundos por segmento), y el contexto textual interno es el del tokenizer del modelo base.
 
-Su relevancia es practica: demuestra el flujo tipico de especializacion de un modelo ASR preentrenado mediante `Trainer` de HuggingFace, con hiperparametros y metricas documentados en la model card (WER de 9,03 sobre el split de test). Es util como referencia para quien quiera replicar el proceso, y como pieza ligera para transcripcion en entornos con recursos limitados donde el acento espanol degrade el rendimiento del whisper-tiny original. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+Su relevancia es practica: demuestra el flujo tipico de especializacion de un modelo ASR preentrenado mediante `Trainer` de Hugging Face, con hiperparametros y metricas documentados en la model card (WER de 9,03 sobre el split de test). Es util como referencia para quien quiera replicar el proceso, y como pieza ligera para transcripcion en entornos con recursos limitados donde el acento espanol degrade el rendimiento del whisper-tiny original. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -84,10 +84,10 @@ Datos de los modelos alternativos tomados de informacion publica general de la f
 
 | Modelo | Parametros | Contexto de audio | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`whisper-tiny_to_spanish_accent_09oct`) | 37,8 M | 30 s | `en` (con acento espanol) | Apache 2.0 | HuggingFace, 0 descargas |
-| `openai/whisper-tiny` | ~39 M | 30 s | Multilingue (99 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
-| `openai/whisper-base` | ~74 M | 30 s | Multilingue | Apache 2.0 | HuggingFace |
-| `openai/whisper-small` | ~244 M | 30 s | Multilingue | Apache 2.0 | HuggingFace |
+| Este modelo (`whisper-tiny_to_spanish_accent_09oct`) | 37,8 M | 30 s | `en` (con acento espanol) | Apache 2.0 | Hugging Face, 0 descargas |
+| `openai/whisper-tiny` | ~39 M | 30 s | Multilingue (99 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
+| `openai/whisper-base` | ~74 M | 30 s | Multilingue | Apache 2.0 | Hugging Face |
+| `openai/whisper-small` | ~244 M | 30 s | Multilingue | Apache 2.0 | Hugging Face |
 
 La ventaja de este checkpoint frente al `whisper-tiny` original es la especializacion en un dominio acustico concreto; su desventaja es la perdida de cobertura multilingue declarada y la ausencia de evaluaciones externas que confirmen la mejora. Para uso general, el modelo base es la opcion mas segura; para audio con acento espanol, este fine-tune deberia validarse contra el original en un conjunto propio antes de adoptarlo.
 
@@ -106,7 +106,7 @@ La ventaja de este checkpoint frente al `whisper-tiny` original es la especializ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_spanish_accent_09oct
+- Modelo en Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_spanish_accent_09oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de referencia de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

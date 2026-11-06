@@ -78,6 +78,6 @@ No hay datos comparativos disponibles en la información proporcionada. El model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-last-third-sft-seed2-epoch3
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-last-third-sft-seed2-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

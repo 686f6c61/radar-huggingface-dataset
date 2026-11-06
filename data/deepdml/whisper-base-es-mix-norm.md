@@ -79,6 +79,6 @@ No hay información suficiente en la documentación para comparar este modelo co
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/deepdml/whisper-base-es-mix-norm](https://huggingface.co/deepdml/whisper-base-es-mix-norm)
+- Hugging Face: [https://huggingface.co/deepdml/whisper-base-es-mix-norm](https://huggingface.co/deepdml/whisper-base-es-mix-norm)
 - Repositorio de Whisper (OpenAI): [https://github.com/openai/whisper](https://github.com/openai/whisper)
 - Página de FriendliAI para este modelo: [https://friendli.ai/models/deepdml/whisper-base-es-mix-norm](https://friendli.ai/models/deepdml/whisper-base-es-mix-norm)

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible en la información proporcionada. Los pesos en FP16 ocupan aproximadamente 6,9 GB, por lo que se recomienda al menos 8-10 GB de VRAM para inferencia.
 - GPU recomendadas: no disponible. Por su tamaño, es probable que funcione en GPUs de consumo de gama alta como RTX 3090 o RTX 4090, pero no hay datos oficiales.
 - ¿Cabe en GPU de consumo? Probablemente sí en GPUs con más de 8 GB de VRAM, aunque no está confirmado oficialmente.
-- Opciones de despliegue: mediante la librería diffusers de HuggingFace. No se mencionan otros frameworks como vLLM o llama.cpp, que no aplican a modelos de difusión.
+- Opciones de despliegue: mediante la librería diffusers de Hugging Face. No se mencionan otros frameworks como vLLM o llama.cpp, que no aplican a modelos de difusión.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ No se dispone de información suficiente para una comparativa detallada con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rk501/NSFW-gen-v2
+- Modelo en Hugging Face: https://huggingface.co/Rk501/NSFW-gen-v2
 - Perfil de la organización UnfilteredAI: https://huggingface.co/UnfilteredAI
 - Versión anime del modelo: https://huggingface.co/UnfilteredAI/NSFW-GEN-ANIME
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/xiaobuhuo/nsfw_gen
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/xiaobuhuo/nsfw_gen
 - Modelo base OEvortex/PixelGen: https://huggingface.co/OEvortex/PixelGen

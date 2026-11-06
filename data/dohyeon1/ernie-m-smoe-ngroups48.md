@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ERNIE-M-SMoE-ngroups48 es un checkpoint de generación de texto publicado en HuggingFace por el usuario Dohyeon1. Se trata de un modelo de aproximadamente 21.825 millones de parámetros (21,8 B) cuyo tag de arquitectura en la librería transformers es `ernie4_5_moe`, lo que lo sitúa en la familia de modelos con mezcla de expertos (MoE) de ERNIE 4.5, desarrollada originalmente por Baidu. El sufijo "SMoE-ngroups48" sugiere una configuración de mezcla dispersa de expertos organizada en 48 grupos, aunque el autor no documenta los detalles de esa configuración.
+ERNIE-M-SMoE-ngroups48 es un checkpoint de generación de texto publicado en Hugging Face por el usuario Dohyeon1. Se trata de un modelo de aproximadamente 21.825 millones de parámetros (21,8 B) cuyo tag de arquitectura en la librería transformers es `ernie4_5_moe`, lo que lo sitúa en la familia de modelos con mezcla de expertos (MoE) de ERNIE 4.5, desarrollada originalmente por Baidu. El sufijo "SMoE-ngroups48" sugiere una configuración de mezcla dispersa de expertos organizada en 48 grupos, aunque el autor no documenta los detalles de esa configuración.
 
-El repositorio ocupa 43,7 GB y contiene pesos en formato safetensors, un tamaño coherente con un checkpoint en bf16/fp16 de 21,8 B de parámetros. El pipeline declarado es `text-generation` y entre las etiquetas figuran `conversational` y `endpoints_compatible`, por lo que está pensado para inferencia de texto conversacional y es desplegable mediante la infraestructura de endpoints de HuggingFace.
+El repositorio ocupa 43,7 GB y contiene pesos en formato safetensors, un tamaño coherente con un checkpoint en bf16/fp16 de 21,8 B de parámetros. El pipeline declarado es `text-generation` y entre las etiquetas figuran `conversational` y `endpoints_compatible`, por lo que está pensado para inferencia de texto conversacional y es desplegable mediante la infraestructura de endpoints de Hugging Face.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: el modelo tiene 0 descargas y 0 likes, la model card es la plantilla automática de HuggingFace sin ningún dato rellenado y la licencia no está declarada. Se trata, por tanto, de un checkpoint no validado por la comunidad y sin información publicada sobre entrenamiento, evaluación o limitaciones. Esta ficha recoge únicamente lo verificable y marca como "no disponible" todo lo demás.
+La relevancia de esta ficha es limitada y conviene ser explícito: el modelo tiene 0 descargas y 0 likes, la model card es la plantilla automática de Hugging Face sin ningún dato rellenado y la licencia no está declarada. Se trata, por tanto, de un checkpoint no validado por la comunidad y sin información publicada sobre entrenamiento, evaluación o limitaciones. Esta ficha recoge únicamente lo verificable y marca como "no disponible" todo lo demás.
 
 ## Especificaciones tecnicas
 
@@ -30,13 +30,13 @@ La relevancia de esta ficha es limitada y conviene ser explícito: el modelo tie
 
 El unico dato fiable sobre la arquitectura es la etiqueta `ernie4_5_moe` incluida en el repositorio, que corresponde al tipo de modelo ERNIE 4.5 MoE implementado en transformers. Esto implica un transformer con capas de mezcla de expertos dispersa (sparse mixture of experts), en el que cada token se enruta hacia un subconjunto de expertos en lugar de recorrer todos los parametros. El nombre del checkpoint, "SMoE-ngroups48", apunta a una variante con 48 grupos de expertos, pero no hay ninguna descripcion publicada del esquema de enrutado, del numero de expertos por capa ni del numero de expertos activados por token.
 
-No hay informacion sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste por instrucciones (SFT), RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. El tag `arxiv:1910.09700` que aparece en el repositorio no es el paper del modelo: corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono citado en la plantilla automatica de model card de HuggingFace. Cualquier atribucion de ese paper al modelo seria un error.
+No hay informacion sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste por instrucciones (SFT), RLHF o DPO. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido. El tag `arxiv:1910.09700` que aparece en el repositorio no es el paper del modelo: corresponde a Lacoste et al. (2019), el articulo sobre estimacion de emisiones de carbono citado en la plantilla automatica de model card de Hugging Face. Cualquier atribucion de ese paper al modelo seria un error.
 
 ## Capacidades
 
 - Generacion de texto: es la unica capacidad garantizada por el pipeline declarado (`text-generation`).
 - Uso conversacional: la etiqueta `conversational` indica que el checkpoint esta pensado para dialogos multi-turno, aunque no se documenta la plantilla de chat ni los tokens especiales.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse a traves de HuggingFace Inference Endpoints con la libreria transformers.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse a traves de Hugging Face Inference Endpoints con la libreria transformers.
 - Razonamiento, matematicas y generacion de codigo: no disponible (no se documenta ningun resultado ni capacidad).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -53,14 +53,14 @@ Dado que no hay documentacion funcional ni evaluaciones, los casos siguientes so
 - Fine-tuning especifico de dominio: los pesos en safetensors son directamente cargables con transformers, por lo que puede actuar como punto de partida para ajuste supervisado en dominios verticales, sujeto a que la licencia (no declarada) lo permita.
 - Generacion de texto por lotes en pipelines internos: para tareas de resumen, reformulacion o clasificacion generativa sobre textos de longitud moderada, siempre que se mida antes la calidad real, ya que no existe ninguna evaluacion publicada.
 - Reproduccion y comparacion de checkpoints derivados: util como referencia en estudios que comparen distintas configuraciones de la familia ERNIE 4.5 MoE publicadas por la comunidad.
-- Despliegue en infraestructura de endpoints: la etiqueta `endpoints_compatible` permite desplegarlo con relativamente poco esfuerzo en HuggingFace Inference Endpoints para pruebas de latencia y throughput reales con hardware dedicado.
+- Despliegue en infraestructura de endpoints: la etiqueta `endpoints_compatible` permite desplegarlo con relativamente poco esfuerzo en Hugging Face Inference Endpoints para pruebas de latencia y throughput reales con hardware dedicado.
 - Evaluacion de seguridad y sesgo previa a producción: dado que el modelo carece de cualquier analisis de sesgos, un caso de uso razonable es someterlo a baterias de evaluacion propias antes de considerar cualquier aplicacion real.
 
 No se recomienda su uso en atencion al cliente en produccion, generacion de codigo en CI/CD, agentes autonomos ni aplicaciones medicas, legales o financieras sin una validacion exhaustiva previa, porque no existe informacion sobre fiabilidad, alucinacion, licencia ni idiomas.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla generica de HuggingFace y la seccion de evaluacion aparece como "[More Information Needed]" en todos sus apartados. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, el autor o la familia ERNIE-M-SMoE-ngroups48.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio es la plantilla generica de Hugging Face y la seccion de evaluacion aparece como "[More Information Needed]" en todos sus apartados. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, el autor o la familia ERNIE-M-SMoE-ngroups48.
 
 ## Requisitos de hardware
 
@@ -91,7 +91,7 @@ Nota metodologica: no se incluyen cifras de rendimiento de terceros porque no ha
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En la practica, debe tratarse como un modelo sin permisos concedidos hasta que el autor lo aclare, y conviene contactar con el autor antes de cualquier uso productivo.
-- Model card vacia: todos los apartados del README son la plantilla automatica de HuggingFace. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+- Model card vacia: todos los apartados del README son la plantilla automatica de Hugging Face. No hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 - Cero adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia total de validacion independiente.
 - Riesgo de sesgo desconocido: al no documentarse la composicion del dataset ni el proceso de ajuste, no es posible estimar sesgos de genero, raza, religion o ideologia.
 - Riesgo de alucinacion no medido: no existe ninguna evaluacion de fidelidad factual ni de tasa de alucinacion para este checkpoint.
@@ -104,7 +104,7 @@ Nota metodologica: no se incluyen cifras de rendimiento de terceros porque no ha
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Dohyeon1/ERNIE-M-SMoE-ngroups48
+- Pagina del modelo en Hugging Face: https://huggingface.co/Dohyeon1/ERNIE-M-SMoE-ngroups48
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental en machine learning citada en la plantilla: https://mlco2.github.io/impact
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a paginas de descarga y soporte de Discord, sin relacion con el modelo).

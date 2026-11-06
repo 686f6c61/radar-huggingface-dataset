@@ -65,7 +65,7 @@ El autor estima una probabilidad de ganar la copa semanal de aproximadamente el 
 - Entorno de ejecución fijado por la Arena: MuJoCo 3.10.0, onnxruntime 1.24.4 y numpy 2.4.1.
 - VRAM estimada: no aplica (ejecución en CPU).
 - GPU recomendadas: no disponible; el modelo no requiere GPU.
-- Cabe en cualquier CPU de consumo; el tamaño del repositorio es de 0,0 GB según HuggingFace, lo que sugiere un artefacto muy ligero.
+- Cabe en cualquier CPU de consumo; el tamaño del repositorio es de 0,0 GB según Hugging Face, lo que sugiere un artefacto muy ligero.
 - Opciones de despliegue: el runner de la Microduck Arena o una copia propia del mismo con las versiones de dependencias fijadas; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (no aplican).
 - Latencia y throughput: no disponibles.
 
@@ -94,7 +94,7 @@ El autor estima una probabilidad de ganar la copa semanal de aproximadamente el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-tug-league-v3
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-tug-league-v3
 - Modelo base (grafo y rondas 3 y 4): https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v8
 - Entrada de referencia v9 de greecree: https://huggingface.co/greecree/microduck-tug-of-war-tug-super-v9
 - Ronda de la semilla 1: https://huggingface.co/lphatnguyen/microduck-tug-of-war-v0

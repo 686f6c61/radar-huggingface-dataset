@@ -6,7 +6,7 @@ SatellaJev-100M v0.1 es un modelo transformer de 101.495.040 parámetros entrena
 
 La arquitectura es un transformer bidireccional de 16 capas, tamaño oculto 640, 10 cabezas de atención de dimensión 64, FFN SwiGLU con dimensión oculta 2304 y codificación posicional RoPE con RMSNorm. Usa un tokenizador SentencePiece BPE propio de 7.000 tokens con *byte fallback*, entrenado únicamente sobre el split de entrenamiento de Open-Jev, y admite secuencias de hasta 1.024 tokens. Los únicos tipos de decisión soportados son `noul`, `choice` y `score`.
 
-Su relevancia es acotada pero clara: cubre el nicho de modelos de decisión y ranking probabilístico calibrado, con resultados publicados de exactitud, entropía cruzada, Brier y ECE sobre splits congelados de validación, test y fuera de distribución. El modelo se distribuye en formato safetensors con licencia "other" y, en el momento de redactar esta ficha, no acumula descargas ni *likes* en HuggingFace.
+Su relevancia es acotada pero clara: cubre el nicho de modelos de decisión y ranking probabilístico calibrado, con resultados publicados de exactitud, entropía cruzada, Brier y ECE sobre splits congelados de validación, test y fuera de distribución. El modelo se distribuye en formato safetensors con licencia "other" y, en el momento de redactar esta ficha, no acumula descargas ni *likes* en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ No se ha encontrado en la información disponible ningún modelo público direct
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SatellaJev-100M v0.1 | 101,50 M | 1.024 tokens | Scoring probabilístico de decisiones tipadas | other | HuggingFace (`EphAsad/SatellaJev-100M-v0.1`) |
+| SatellaJev-100M v0.1 | 101,50 M | 1.024 tokens | Scoring probabilístico de decisiones tipadas | other | Hugging Face (`EphAsad/SatellaJev-100M-v0.1`) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -118,7 +118,7 @@ No se ha encontrado en la información disponible ningún modelo público direct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EphAsad/SatellaJev-100M-v0.1
+- Modelo en Hugging Face: https://huggingface.co/EphAsad/SatellaJev-100M-v0.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/ZefanCai/Open-Jev
 - Dataset adicional referenciado en las etiquetas: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
 - Búsqueda web de referencia: no se han encontrado resultados relevantes sobre este modelo (los resultados devueltos no guardan relación con la ficha y se descartan).

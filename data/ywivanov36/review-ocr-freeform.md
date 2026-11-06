@@ -74,5 +74,5 @@ No disponible. El repositorio no es comparable con modelos de OCR freeform (por 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ywivanov36/review-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/ywivanov36/review-ocr-freeform
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

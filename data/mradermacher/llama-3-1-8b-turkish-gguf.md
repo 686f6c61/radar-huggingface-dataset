@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Llama-3.1-8B-Turkish-GGUF (este modelo) | 8,1 B | no disponible en la model card | GGUF (12 cuantizaciones) | llama3.1 | Publico en HuggingFace |
-| erenzeytunn/Llama-3.1-8B-Turkish (modelo base del fine-tune) | 8,1 B | no disponible en la informacion | safetensors | llama3.1 | Publico en HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,0 B | 128.000 tokens | safetensors | llama3.1 | Publico en HuggingFace |
+| mradermacher/Llama-3.1-8B-Turkish-GGUF (este modelo) | 8,1 B | no disponible en la model card | GGUF (12 cuantizaciones) | llama3.1 | Publico en Hugging Face |
+| erenzeytunn/Llama-3.1-8B-Turkish (modelo base del fine-tune) | 8,1 B | no disponible en la informacion | safetensors | llama3.1 | Publico en Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,0 B | 128.000 tokens | safetensors | llama3.1 | Publico en Hugging Face |
 
 No se dispone de datos verificados de rendimiento en turco para otros modelos comparables (por ejemplo, adaptaciones turcas de la familia Qwen, Mistral o Gemma), ni de evaluaciones que permitan ordenar estas alternativas por calidad. La comparativa se limita por tanto a parametros, formato y licencia.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados de rendimiento en turco para otros modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama-3.1-8B-Turkish-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama-3.1-8B-Turkish-GGUF
 - Modelo base del fine-tune: https://huggingface.co/erenzeytunn/Llama-3.1-8B-Turkish
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Llama-3.1-8B-Turkish-GGUF
 - Peticiones de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -87,12 +87,12 @@ No se dispone de datos de otros modelos de 27 B comparables en la informacion pr
 - Limitaciones de contexto: aunque la ventana nativa es de 262 144 tokens, el rendimiento en contextos muy largos puede degradarse; la extension a 1 M no esta garantizada en todas las tareas.
 - Idiomas: solo ingles y chino; no se ha evaluado su rendimiento en otros idiomas.
 - Licencia: Apache 2.0 permite uso comercial sin restricciones, pero el modelo base incluye componentes de Qwen3.8-27B que pueden tener condiciones adicionales; se recomienda revisar la licencia del modelo base.
-- Validacion externa: el modelo tiene 0 descargas y 0 likes en HuggingFace, y los benchmarks publicados no han sido replicados por terceros. Las afirmaciones de superar a Claude Opus 4.6 Max deben tratarse con cautela.
+- Validacion externa: el modelo tiene 0 descargas y 0 likes en Hugging Face, y los benchmarks publicados no han sido replicados por terceros. Las afirmaciones de superar a Claude Opus 4.6 Max deben tratarse con cautela.
 - El nombre del modelo incluye "Heretic" y "Uncensored", lo que puede indicar que fue entrenado sin alineacion de seguridad; esto puede generar contenido ofensivo o peligroso si se usa sin control.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-AWQ
+- Modelo en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-AWQ
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Version GGUF del modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Qwen3.8-27B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

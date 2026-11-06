@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | FLOPs | Dim. embedding | Capas | Cabezas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Sapiens2-0.4B-Pointmap | 0,398 B | 1,260 T | 1024 | 24 | 16 | Sapiens2 License | HuggingFace (facebook/sapiens2-pointmap-0.4b) |
-| Sapiens2-0.8B-Pointmap (este) | 0,818 B (967,4 M totales en safetensors) | 2,592 T | 1280 | 32 | 16 | Sapiens2 License | HuggingFace (facebook/sapiens2-pointmap-0.8b y espejo ml-resources) |
-| Sapiens2-1B-Pointmap | 1,462 B | 4,715 T | 1536 | 40 | 24 | Sapiens2 License | HuggingFace (facebook/sapiens2-pointmap-1b) |
-| Sapiens2-5B-Pointmap | 5,071 B | 15,722 T | 2432 | 56 | 32 | Sapiens2 License | HuggingFace (facebook/sapiens2-pointmap-5b) |
+| Sapiens2-0.4B-Pointmap | 0,398 B | 1,260 T | 1024 | 24 | 16 | Sapiens2 License | Hugging Face (facebook/sapiens2-pointmap-0.4b) |
+| Sapiens2-0.8B-Pointmap (este) | 0,818 B (967,4 M totales en safetensors) | 2,592 T | 1280 | 32 | 16 | Sapiens2 License | Hugging Face (facebook/sapiens2-pointmap-0.8b y espejo ml-resources) |
+| Sapiens2-1B-Pointmap | 1,462 B | 4,715 T | 1536 | 40 | 24 | Sapiens2 License | Hugging Face (facebook/sapiens2-pointmap-1b) |
+| Sapiens2-5B-Pointmap | 5,071 B | 15,722 T | 2432 | 56 | 32 | Sapiens2 License | Hugging Face (facebook/sapiens2-pointmap-5b) |
 
 No se dispone en la información proporcionada de datos de rendimiento (métricas de error de profundidad o de pointmap) que permitan comparar estas variantes entre sí, ni de modelos externos de la misma categoría con cifras verificables. La comparación anterior es exclusivamente de arquitectura y coste computacional.
 
@@ -98,7 +98,7 @@ No se dispone en la información proporcionada de datos de rendimiento (métrica
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/ml-resources/sapiens2-pointmap-0.8b
+- Repositorio en Hugging Face (espejo): https://huggingface.co/ml-resources/sapiens2-pointmap-0.8b
 - Repositorio oficial del checkpoint: https://huggingface.co/facebook/sapiens2-pointmap-0.8b
 - Modelo base preentrenado: https://huggingface.co/facebook/sapiens2-pretrain-0.8b
 - Artículo (paper): https://arxiv.org/pdf/2604.21681
@@ -106,7 +106,7 @@ No se dispone en la información proporcionada de datos de rendimiento (métrica
 - Código fuente: https://github.com/facebookresearch/sapiens2
 - Guía de estimación de pointmap: https://github.com/facebookresearch/sapiens2/blob/main/docs/POINTMAP.md
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
-- Colección Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Colección Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Variante 0,4B: https://huggingface.co/facebook/sapiens2-pointmap-0.4b
 - Variante 1B: https://huggingface.co/facebook/sapiens2-pointmap-1b
 - Variante 5B: https://huggingface.co/facebook/sapiens2-pointmap-5b

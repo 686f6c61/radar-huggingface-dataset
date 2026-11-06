@@ -30,7 +30,7 @@ Su relevancia es por tanto forense y de reproducibilidad, no de uso en producci�
 
 La informacion disponible no detalla la arquitectura. La model card solo declara el formato (`pytorch-checkpoint`) y advierte de que los checkpoints distribuidos conservan el estado de optimizador y de generador de numeros aleatorios cuando estaba presente, por lo que para reanudar el entrenamiento hay que restaurar el directorio `checkpoint/` completo antes de continuar. No se especifican capas, dimensiones ocultas, mecanismo de atencion ni si existe algun componente multimodal, pese a que el repositorio `nano-omni` se describe como «NanoGPT Multimodal Speedrun».
 
-Tampoco hay informacion sobre volumen de tokens, composicion del dataset, uso de RLHF/DPO o innovaciones tecnicas. El nombre del grupo de experimento, `multiteacher`, sugiere un esquema de destilacion o entrenamiento con multiples modelos profesores, y el fragmento `runs-inloop-300000000-2000000` podria corresponder a un rango de pasos o de tokens, pero ninguna de estas lecturas esta confirmada en la documentacion. Los logs de entrenamiento y los metadatos de linaje se conservan, segun el autor, en la fuente original y no se han exportado al repositorio de HuggingFace.
+Tampoco hay informacion sobre volumen de tokens, composicion del dataset, uso de RLHF/DPO o innovaciones tecnicas. El nombre del grupo de experimento, `multiteacher`, sugiere un esquema de destilacion o entrenamiento con multiples modelos profesores, y el fragmento `runs-inloop-300000000-2000000` podria corresponder a un rango de pasos o de tokens, pero ninguna de estas lecturas esta confirmada en la documentacion. Los logs de entrenamiento y los metadatos de linaje se conservan, segun el autor, en la fuente original y no se han exportado al repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-web-26e2d003286c
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-web-26e2d003286c
 - Checkpoint hermano (code): https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-code-c562da3c8605
 - Checkpoint hermano (math): https://huggingface.co/davidheineman/rlve-archive-nano-omni-multiteacher-math-559ac32f9314
 - Repositorio del proyecto nano-omni (NanoGPT Multimodal Speedrun): https://github.com/davidheineman/nano-omni

@@ -120,7 +120,7 @@ La única comparación con datos medidos y publicados por el autor es contra tex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BYU-Idaho/ZaraRerank
+- Modelo en Hugging Face: https://huggingface.co/BYU-Idaho/ZaraRerank
 - Modelo base ZaraBERTa: https://huggingface.co/BYU-Idaho/ZaraBERTa
 - Embedder complementario ZaraEmbed: https://huggingface.co/BYU-Idaho/ZaraEmbed
 - Colección ZaraAI: https://huggingface.co/collections/BYU-Idaho/zaraai

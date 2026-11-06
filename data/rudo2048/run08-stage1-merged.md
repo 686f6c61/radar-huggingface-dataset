@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rudo2048/run08-stage1-merged` es un repositorio de pesos publicado en HuggingFace por el usuario `rudo2048` el 14 de octubre de 2026 (fecha del registro). El identificador sugiere un artefacto resultante de fusionar checkpoints o adaptadores de una etapa concreta ("stage1") de una ejecucion de entrenamiento ("run08"), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor: la model card no incluye descripcion, pipeline, licencia ni idiomas declarados.
+`rudo2048/run08-stage1-merged` es un repositorio de pesos publicado en Hugging Face por el usuario `rudo2048` el 14 de octubre de 2026 (fecha del registro). El identificador sugiere un artefacto resultante de fusionar checkpoints o adaptadores de una etapa concreta ("stage1") de una ejecucion de entrenamiento ("run08"), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor: la model card no incluye descripcion, pipeline, licencia ni idiomas declarados.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 1 like, y no expone informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, datos de entrenamiento ni proceso de alineacion. No hay metadatos de `pipeline_tag`, `library_name` ni etiquetas de idioma, por lo que no es posible clasificarlo como modelo de texto, vision, audio o multimodal.
 
@@ -97,6 +97,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rudo2048/run08-stage1-merged
+- Hugging Face: https://huggingface.co/rudo2048/run08-stage1-merged
 
 Sobre la busqueda web realizada: los resultados devueltos no guardan ninguna relacion con el modelo. Se trata de un foro con contenido spam y de sitios de contenido para adultos, sin conexion con `rudo2048/run08-stage1-merged`, con su autor ni con ningun aspecto tecnico del artefacto. Por ese motivo se omiten deliberadamente. No se han encontrado papers, blogs, repositorios de codigo, demos ni discusiones tecnicas asociadas a este modelo.

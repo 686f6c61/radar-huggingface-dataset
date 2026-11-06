@@ -66,7 +66,7 @@ No se dispone de información sobre otros modelos TTS específicos para dhivehi 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mohamedrayyan/mms-tts-dhivehi-onnx
+- Repositorio Hugging Face: https://huggingface.co/mohamedrayyan/mms-tts-dhivehi-onnx
 - Espacio de demostración TTS Dhivehi: https://huggingface.co/spaces/dhivehihacker/tts-dhivehi-demo-mms
 - Repositorio del servidor TTS Adufoshi: https://huggingface.co/mohamedrayyan/chatterbox-tts-dhivehi
 - Documentación de MMS en fairseq: https://github.com/facebookresearch/fairseq/blob/main/examples/mms/README.md

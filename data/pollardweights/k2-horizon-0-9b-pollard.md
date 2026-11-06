@@ -77,7 +77,7 @@ No se dispone de datos de comparación con otros modelos de la misma categoría 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PollardWeights/K2-Horizon-0.9B-Pollard
+- Hugging Face: https://huggingface.co/PollardWeights/K2-Horizon-0.9B-Pollard
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
 - Sitio de IFM K2 Horizon: https://ifm.ai/k2/
 - Pollard Weights: https://github.com/WestWaters/pollard-weights

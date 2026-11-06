@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seanfarrell/icd11_synonym_model` es un modelo de embeddings de frases (sentence transformer) afinado a partir de `sentence-transformers/all-mpnet-base-v2`. Su funcion es proyectar terminos y frases del ambito de la clasificacion internacional de enfermedades ICD-11 a un espacio vectorial denso de 768 dimensiones, de modo que terminos sinonimos o equivalentes queden proximos entre si segun similitud coseno. Lo desarrolla el usuario de HuggingFace `seanfarrell` y esta pensado especificamente para tareas de normalizacion y emparejamiento de terminologia medica.
+El modelo `seanfarrell/icd11_synonym_model` es un modelo de embeddings de frases (sentence transformer) afinado a partir de `sentence-transformers/all-mpnet-base-v2`. Su funcion es proyectar terminos y frases del ambito de la clasificacion internacional de enfermedades ICD-11 a un espacio vectorial denso de 768 dimensiones, de modo que terminos sinonimos o equivalentes queden proximos entre si segun similitud coseno. Lo desarrolla el usuario de Hugging Face `seanfarrell` y esta pensado especificamente para tareas de normalizacion y emparejamiento de terminologia medica.
 
 El modelo resuelve un problema concreto: alinear variantes lexicas de diagnosticos, procedimientos y entidades clinicas con las denominaciones canonicas de ICD-11. Para ello se entreno sobre 852.480 pares ancla-positivo (columnas `anchor` y `positive`) con la funcion de perdida `MultipleNegativesRankingLoss`, un esquema habitual en recuperacion densa de pasajes. Es un modelo compacto: 109.486.464 parametros totales, un repositorio de 0,4 GB y una salida de 768 dimensiones.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Dimension de salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| seanfarrell/icd11_synonym_model | 109,5 M | 768 | 32 tokens | No disponible | HuggingFace (0 descargas) |
-| sentence-transformers/all-mpnet-base-v2 | 109,5 M (mismo backbone) | 768 | 384 tokens (modelo base) | Apache-2.0 (segun el modelo base) | HuggingFace (ampliamente usado) |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M (aproximado, no confirmado en la informacion) | 384 | 256 tokens (no confirmado en la informacion) | Apache-2.0 (segun el modelo base) | HuggingFace (ampliamente usado) |
+| seanfarrell/icd11_synonym_model | 109,5 M | 768 | 32 tokens | No disponible | Hugging Face (0 descargas) |
+| sentence-transformers/all-mpnet-base-v2 | 109,5 M (mismo backbone) | 768 | 384 tokens (modelo base) | Apache-2.0 (segun el modelo base) | Hugging Face (ampliamente usado) |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M (aproximado, no confirmado en la informacion) | 384 | 256 tokens (no confirmado en la informacion) | Apache-2.0 (segun el modelo base) | Hugging Face (ampliamente usado) |
 
 Nota: los datos de los modelos alternativos corresponden a caracteristicas ampliamente conocidas de esas publicaciones, no a la informacion proporcionada para este modelo. La diferencia clave de `icd11_synonym_model` frente al modelo base es el afinado especifico sobre 852.480 pares de terminologia ICD-11 y su ventana reducida a 32 tokens, optimizada para terminos cortos.
 
@@ -86,10 +86,10 @@ Nota: los datos de los modelos alternativos corresponden a caracteristicas ampli
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seanfarrell/icd11_synonym_model
+- Hugging Face: https://huggingface.co/seanfarrell/icd11_synonym_model
 - Modelo base: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos con la libreria sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos con la libreria sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Paper de referencia citado en los tags (Sentence-BERT): https://arxiv.org/abs/1908.10084
 - Paper de referencia citado en los tags (DPR, negativos en lote): https://arxiv.org/abs/1807.03748

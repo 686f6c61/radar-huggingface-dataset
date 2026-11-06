@@ -76,8 +76,8 @@ Advertencias del autor sobre estas cifras: el ajuste fino mejora principalmente 
 
 | Modelo | Parametros | Contexto | Exactitud (test_chrono / test_within) | AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `pr_fm_qwen25_7b_adapter` | ~7,6B base + adaptador LoRA r=16 | 1.024 tokens (entrenamiento) | 0,580 / 0,656 | 0,617 / 0,716 | Apache-2.0 | HuggingFace, 0 descargas |
-| `Qwen/Qwen2.5-7B-Instruct` sin adaptador (zeroshot) | ~7,6B | 32.768 tokens nativos | 0,539 / 0,514 | 0,561 / 0,529 | Apache-2.0 (según el modelo base) | HuggingFace |
+| `pr_fm_qwen25_7b_adapter` | ~7,6B base + adaptador LoRA r=16 | 1.024 tokens (entrenamiento) | 0,580 / 0,656 | 0,617 / 0,716 | Apache-2.0 | Hugging Face, 0 descargas |
+| `Qwen/Qwen2.5-7B-Instruct` sin adaptador (zeroshot) | ~7,6B | 32.768 tokens nativos | 0,539 / 0,514 | 0,561 / 0,529 | Apache-2.0 (según el modelo base) | Hugging Face |
 | Otros adaptadores de conjoint sobre LLM | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Modelos de elección clásicos (logit multinomial, Bayes jerárquico) | No aplica | No aplica | No disponible en esta información | No disponible en esta información | No aplica | Implementaciones estándar en R/Python |
 
@@ -99,7 +99,7 @@ No se dispone de otros baselines LLM publicados para esta tarea en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dean22029/pr_fm_qwen25_7b_adapter
+- Modelo en Hugging Face: https://huggingface.co/dean22029/pr_fm_qwen25_7b_adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Script de evaluación citado por el autor: `eval_example.py` (incluido en el repositorio del adaptador)
 - Historial de entrenamiento: `log_history.json` (incluido en el repositorio del adaptador)

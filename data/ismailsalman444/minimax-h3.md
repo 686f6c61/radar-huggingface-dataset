@@ -4,7 +4,7 @@
 
 MiniMax H3 es un sistema generativo omni-modal desarrollado por MiniMax que entiende de forma conjunta contextos compuestos por texto, imagen, vídeo y audio, y produce vídeo con audio estéreo nativo de hasta 2K de resolución y 15 segundos de duración. No es un modelo de lenguaje: su tarea principal es la generación y edición de vídeo con audio sincronizado, admitiendo modos de texto a vídeo, imagen a vídeo, vídeo a vídeo y referencia multimodal a vídeo con audio. Se distribuye como pipeline de la librería `diffusers` con pesos en safetensors.
 
-La ficha que se analiza aquí corresponde al repositorio `Ismailsalman444/MiniMax-H3`, un espejo no oficial alojado en HuggingFace (0 descargas y 0 me gusta en el momento de la consulta, 353,9 GB de tamaño). El repositorio oficial del fabricante es `MiniMaxAI/MiniMax-H3`. El modelo se publica bajo la licencia comunitaria `minimax-h3-community-license-agreement`, que no es una licencia de código abierto estándar y debe revisarse antes de cualquier uso comercial.
+La ficha que se analiza aquí corresponde al repositorio `Ismailsalman444/MiniMax-H3`, un espejo no oficial alojado en Hugging Face (0 descargas y 0 me gusta en el momento de la consulta, 353,9 GB de tamaño). El repositorio oficial del fabricante es `MiniMaxAI/MiniMax-H3`. El modelo se publica bajo la licencia comunitaria `minimax-h3-community-license-agreement`, que no es una licencia de código abierto estándar y debe revisarse antes de cualquier uso comercial.
 
 El sistema se compone de tres módulos encadenados: H3-Context-IR (interpretación y refinado de la instrucción multimodal en una representación intermedia), H3-Base (generación de vídeo y audio a 768p) y H3-Regenerate-2K (regeneración a 2K reutilizando el contexto original). Existen además dos checkpoints base con entradas distintas: H3-Base-FL2VA (primer y último fotograma) y H3-Base-Ref2VA (referencia omni-modal). Su relevancia actual radica en unificar en un solo modelo tareas que habitualmente requieren pipelines separados de vídeo, audio, diálogo y edición por referencia.
 
@@ -102,8 +102,8 @@ Nota: el resultado de búsqueda de un hub de terceros identifica MiniMax H3 con 
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Ismailsalman444/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio analizado en Hugging Face: https://huggingface.co/Ismailsalman444/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Guias de prompting (skills): https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

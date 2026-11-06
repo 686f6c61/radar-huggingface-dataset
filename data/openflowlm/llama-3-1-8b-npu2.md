@@ -89,9 +89,9 @@ La comparación se establece por tamaño y categoría, no por resultados medidos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Llama-3.1-8B-NPU2
+- Modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Llama-3.1-8B-NPU2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Organización Meta en HuggingFace: https://huggingface.co/meta-llama
+- Organización Meta en Hugging Face: https://huggingface.co/meta-llama
 - Licencia Llama 3 de Meta: https://ai.meta.com/llama/license/
 - Página oficial de Llama: https://ai.meta.com/llama/
 - Runtime FastFlowLM: mencionado en la model card, sin URL proporcionada en la información disponible.

@@ -22,9 +22,9 @@ Técnicamente son adaptadores de rango 8 (alpha 8, dropout 0.05) aplicados sobre
 | Formato de pesos | safetensors (`adapter_model.safetensors` + `adapter_config.json`), formato PEFT/LoRA |
 | Número de adaptadores | 1496, uno por usuario del split de test de LaMP-7 |
 | Tarea objetivo | LaMP-7: parafraseo de tuits personalizado |
-| Tamaño del repositorio | 20,4 GB (según HuggingFace) |
+| Tamaño del repositorio | 20,4 GB (según Hugging Face) |
 | Librería | peft |
-| Fecha de creación | 1 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 1 de octubre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-LaMP7-user-LoRA | 8 000 M (base) + LoRA rango 8 | 128 000 tokens (base) | Llama 3.1 Community License | Personalización por usuario (1496 adaptadores) | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8 000 M | 128 000 tokens | Llama 3.1 Community License | Modelo instruct generalista | HuggingFace, ampliamente desplegado |
-| Qwen2.5-7B-Instruct | 7 600 M aproximadamente | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | Modelo instruct generalista multilingüe | HuggingFace |
-| Mistral-7B-Instruct-v0.3 | 7 200 M aproximadamente | 32 000 tokens | Apache 2.0 | Modelo instruct generalista | HuggingFace |
+| Llama-3.1-8B-Instruct-LaMP7-user-LoRA | 8 000 M (base) + LoRA rango 8 | 128 000 tokens (base) | Llama 3.1 Community License | Personalización por usuario (1496 adaptadores) | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8 000 M | 128 000 tokens | Llama 3.1 Community License | Modelo instruct generalista | Hugging Face, ampliamente desplegado |
+| Qwen2.5-7B-Instruct | 7 600 M aproximadamente | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | Modelo instruct generalista multilingüe | Hugging Face |
+| Mistral-7B-Instruct-v0.3 | 7 200 M aproximadamente | 32 000 tokens | Apache 2.0 | Modelo instruct generalista | Hugging Face |
 
 No hay datos de rendimiento comparativos publicados para esta colección de adaptadores, por lo que la comparación se limita a parámetros, contexto, licencia y modelo de distribución. Frente a los modelos instruct generalistas, la diferencia no está en las capacidades base sino en que aquí el artefacto distribuido es un conjunto de adaptadores de personalización que requiere el modelo base de Meta para funcionar.
 
@@ -100,7 +100,7 @@ No hay datos de rendimiento comparativos publicados para esta colección de adap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LaMP7-user-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LaMP7-user-LoRA
 - Modelo base instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo base preentrenado: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Ficha y casos de uso de Llama-3.1-8B-Instruct: https://www.aimodels.fyi/models/huggingFace/llama-3.1-8b-instruct-meta-llama

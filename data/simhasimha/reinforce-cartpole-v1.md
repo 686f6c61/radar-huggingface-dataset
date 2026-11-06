@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario SimhaSimha. Se trata de una política entrenada con el algoritmo REINFORCE (gradiente de política) para resolver el entorno CartPole-v1, un problema clásico de control con acciones discretas en el que un poste debe mantenerse en equilibrio sobre un carro. No es un modelo de lenguaje ni un modelo fundacional: es un checkpoint de un agente RL de propósito educativo y demostrativo, etiquetado con el tag deep-rl-class, lo que lo vincula al curso de Deep Reinforcement Learning de HuggingFace (Unidad 4).
+Reinforce-CartPole-v1 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario SimhaSimha. Se trata de una política entrenada con el algoritmo REINFORCE (gradiente de política) para resolver el entorno CartPole-v1, un problema clásico de control con acciones discretas en el que un poste debe mantenerse en equilibrio sobre un carro. No es un modelo de lenguaje ni un modelo fundacional: es un checkpoint de un agente RL de propósito educativo y demostrativo, etiquetado con el tag deep-rl-class, lo que lo vincula al curso de Deep Reinforcement Learning de Hugging Face (Unidad 4).
 
 Por su naturaleza, el modelo es extremadamente ligero: el repositorio ocupa 0,0 GB y no requiere GPU para su ejecución. La model card no documenta arquitectura de red, hiperparámetros, licencia ni idiomas, y el autor declara un único resultado en el model-index: una recompensa media de 500,00 +/- 0,00 en CartPole-v1, marcada como no verificada (verified: false), lo que corresponde al máximo alcanzable en ese entorno (500 pasos por episodio).
 
@@ -44,7 +44,7 @@ Tampoco se documentan datos de entrenamiento mas alla del entorno CartPole-v1 ni
 - Baseline en CartPole-v1: al alcanzar la recompensa maxima declarada, puede usarse como referencia trivial contra la que comparar otros algoritmos (DQN, PPO, A2C) en este entorno.
 - Validacion de pipelines de evaluacion RL: permite comprobar que los wrappers de Gym/Gymnasium, los scripts de evaluacion y el registro de recompensas funcionan correctamente antes de escalar a entornos mayores.
 - Material de estudio de implementaciones propias: al estar etiquetado como custom-implementation, es util para revisar como se estructura un agente REINFORCE desde cero.
-- Pruebas de integracion con el Hub: sirve para verificar la carga de checkpoints RL desde HuggingFace y la lectura del model-index.
+- Pruebas de integracion con el Hub: sirve para verificar la carga de checkpoints RL desde Hugging Face y la lectura del model-index.
 - Demostraciones en entornos educativos o talleres: por su tamano minimo y ejecucion en CPU, es adecuado para sesiones practicas sin infraestructura de GPU.
 
 ## Benchmarks y rendimiento
@@ -71,7 +71,7 @@ No se dispone de datos cuantitativos publicados de modelos comparables en la inf
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reinforce-CartPole-v1 | no disponible | no aplica | mean_reward 500,00 +/- 0,00 (no verificado) | no disponible | HuggingFace |
+| Reinforce-CartPole-v1 | no disponible | no aplica | mean_reward 500,00 +/- 0,00 (no verificado) | no disponible | Hugging Face |
 | Alternativas en CartPole-v1 (DQN, PPO, A2C) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de datos cuantitativos publicados de modelos comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimhaSimha/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/SimhaSimha/Reinforce-CartPole-v1
 - Curso Deep Reinforcement Learning, Unidad 4 (referencia citada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 - Paper, repositorio o demo adicionales: no disponible
 - Enlaces relevantes de la busqueda web: no disponible (los resultados obtenidos no guardan relacion con el modelo)

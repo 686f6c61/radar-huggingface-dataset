@@ -4,7 +4,7 @@
 
 El modelo `adipras1407/sunny-pad-smolvlm-500m-gguf` es un fine-tuning del modelo multimodal SmolVLM-500M-Instruct, desarrollado por HuggingFaceTB, adaptado específicamente para tareas de dermatología. Se distribuye en formato GGUF, lo que permite su ejecución eficiente en dispositivos con recursos limitados, como móviles o sistemas embebidos, mediante llama.cpp. El modelo combina visión y lenguaje para procesar imágenes y generar texto, y los tags indican que incorpora restricciones de gramática (grammar-constrained), probablemente para producir salidas estructuradas en el ámbito clínico.
 
-Su relevancia radica en ofrecer una solución ligera y de código abierto (licencia Apache 2.0) para asistencia dermatológica en entornos on-device, donde la privacidad y la baja latencia son críticas. Al estar basado en SmolVLM, hereda una arquitectura eficiente diseñada para ejecutarse en hardware modesto, aunque el acceso al modelo está restringido y requiere aceptar condiciones en HuggingFace.
+Su relevancia radica en ofrecer una solución ligera y de código abierto (licencia Apache 2.0) para asistencia dermatológica en entornos on-device, donde la privacidad y la baja latencia son críticas. Al estar basado en SmolVLM, hereda una arquitectura eficiente diseñada para ejecutarse en hardware modesto, aunque el acceso al modelo está restringido y requiere aceptar condiciones en Hugging Face.
 
 El modelo tiene 500 millones de parámetros, un tamaño reducido para un sistema visión-lenguaje, lo que lo hace viable para despliegue en dispositivos de gama baja. La información técnica detallada (longitud de contexto, cuantizaciones exactas, datos de entrenamiento) no está disponible en la ficha pública, por lo que se indicará como "no disponible" cuando corresponda.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en tareas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adipras1407/sunny-pad-smolvlm-500m-gguf
+- Modelo en Hugging Face: https://huggingface.co/adipras1407/sunny-pad-smolvlm-500m-gguf
 - Modelo base SmolVLM-500M-Instruct: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - GGUF oficial de SmolVLM-500M-Instruct: https://huggingface.co/ggml-org/SmolVLM-500M-Instruct-GGUF
 - Página de descarga alternativa (local-ai-zone): https://local-ai-zone.github.io/models/smolvlm-500m-instruct.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-oQ6e-fp16 es una publicacion de pesos cuantizados alojada en HuggingFace por el usuario Zurha. No se trata de un modelo entrenado desde cero, sino de una conversion de un modelo previo de aproximadamente 9.409.813.744 parametros al formato MLX safetensors con cuantizacion de 6 bits y tamano de grupo 64, realizada con la herramienta oQ (oMLX v0.7.0.dev4) en modo de precision mixta. El repositorio ocupa 9,2 GB y acumula 23 descargas y 0 likes en el momento de la consulta.
+MiMo-V2.6-Distill-Qwen-9B-oQ6e-fp16 es una publicacion de pesos cuantizados alojada en Hugging Face por el usuario Zurha. No se trata de un modelo entrenado desde cero, sino de una conversion de un modelo previo de aproximadamente 9.409.813.744 parametros al formato MLX safetensors con cuantizacion de 6 bits y tamano de grupo 64, realizada con la herramienta oQ (oMLX v0.7.0.dev4) en modo de precision mixta. El repositorio ocupa 9,2 GB y acumula 23 descargas y 0 likes en el momento de la consulta.
 
 Por el propio identificador del repositorio puede inferirse que el modelo de partida es una destilacion de un modelo denominado MiMo-V2.6 sobre una arquitectura de la familia Qwen de ~9B, extremo coherente con el tag `qwen3_5` que aparece en el repositorio. Sin embargo, la model card publicada no confirma ni detalla la procedencia de los pesos originales, el proceso de destilacion ni los datos de entrenamiento, por lo que esa interpretacion debe tratarse como no verificada.
 
@@ -96,6 +96,6 @@ La diferencia practica mas relevante es la licencia: las tres alternativas tiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zurha/MiMo-V2.6-Distill-Qwen-9B-oQ6e-fp16
+- Modelo en Hugging Face: https://huggingface.co/Zurha/MiMo-V2.6-Distill-Qwen-9B-oQ6e-fp16
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo, su paper, su blog ni su repositorio de codigo; los enlaces obtenidos correspondian a paginas de inicio de sesion de correo, sin relacion con el contenido.

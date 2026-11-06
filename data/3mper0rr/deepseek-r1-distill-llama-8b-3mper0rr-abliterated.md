@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated` es una variante modificada del modelo DeepSeek-R1-Distill-Llama-8B, publicada por el usuario 3MPER0RR en HuggingFace. La etiqueta "abliterated" indica que se ha aplicado una técnica de modificación de pesos orientada a reducir o eliminar las restricciones de alineación del modelo original, aunque no se documenta el procedimiento exacto ni los resultados de la modificación.
+El modelo `3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated` es una variante modificada del modelo DeepSeek-R1-Distill-Llama-8B, publicada por el usuario 3MPER0RR en Hugging Face. La etiqueta "abliterated" indica que se ha aplicado una técnica de modificación de pesos orientada a reducir o eliminar las restricciones de alineación del modelo original, aunque no se documenta el procedimiento exacto ni los resultados de la modificación.
 
 Se trata de un modelo denso basado en arquitectura Llama, con 8.030.261.248 parámetros y un tamaño de repositorio de 16,1 GB, almacenado en formato safetensors. Se distribuye bajo licencia MIT y su pipeline es el de generación de texto (`text-generation`). No se incluyen en la información disponible datos sobre longitud de contexto, idiomas soportados, procesos de entrenamiento o evaluaciones de rendimiento.
 
@@ -23,9 +23,9 @@ La relevancia de este modelo radica en que es un ejemplo de "abliteración" apli
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo Llama, tal como indican las etiquetas del repositorio en HuggingFace. Se trata de un modelo denso, sin componentes de mezcla de expertos (MoE). El modelo original del que deriva, DeepSeek-R1-Distill-Llama-8B, se entrenó mediante destilación de un modelo DeepSeek-R1 sobre una base Llama, pero en esta variante no se aporta información sobre el proceso de "abliteracion" aplicado.
+La arquitectura subyacente es la del modelo Llama, tal como indican las etiquetas del repositorio en Hugging Face. Se trata de un modelo denso, sin componentes de mezcla de expertos (MoE). El modelo original del que deriva, DeepSeek-R1-Distill-Llama-8B, se entrenó mediante destilación de un modelo DeepSeek-R1 sobre una base Llama, pero en esta variante no se aporta información sobre el proceso de "abliteracion" aplicado.
 
-No se facilitan datos sobre el dataset de entrenamiento, el número de tokens utilizados, ni la aplicación de técnicas como RLHF o DPO. El pipeline declarado en HuggingFace es `text-generation`, lo que indica que el modelo está diseñado para generar texto como respuesta a una entrada.
+No se facilitan datos sobre el dataset de entrenamiento, el número de tokens utilizados, ni la aplicación de técnicas como RLHF o DPO. El pipeline declarado en Hugging Face es `text-generation`, lo que indica que el modelo está diseñado para generar texto como respuesta a una entrada.
 
 ## Capacidades
 
@@ -77,6 +77,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated
+- Modelo en Hugging Face: https://huggingface.co/3MPER0RR/DeepSeek-R1-Distill-Llama-8B-3MPER0RR-abliterated
 - Modelo original: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Version de unsloth: https://huggingface.co/unsloth/DeepSeek-R1-Distill-Llama-8B

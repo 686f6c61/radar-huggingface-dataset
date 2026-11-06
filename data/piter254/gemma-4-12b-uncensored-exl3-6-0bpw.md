@@ -66,6 +66,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa. Como refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Piter254/Gemma-4-12B-uncensored-exl3-6.0bpw
+- Modelo en Hugging Face: https://huggingface.co/Piter254/Gemma-4-12B-uncensored-exl3-6.0bpw
 - Modelo base (Lemura Labs): https://huggingface.co/lemuralabs/Gemma-4-12B-uncensored-bf16
 - Modelo original de Google: https://huggingface.co/google/gemma-4-12B

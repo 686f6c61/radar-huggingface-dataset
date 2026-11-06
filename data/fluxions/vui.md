@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vui Nano es un modelo de sintesis de voz (text-to-speech) publicado por fluxions.ai bajo el identificador `fluxions/vui` en HuggingFace. Se trata de un modelo pequeno y orientado a la conversacion: 219M parametros activos sobre 305M totales, licencia Apache 2.0 y entrenamiento exclusivamente en ingles. Su rasgo diferencial es que no sintetiza un enunciado aislado, sino que genera cada respuesta dentro del contexto del dialogo completo, incluyendo el audio real del turno del interlocutor, todo ello almacenado en la cache KV de la que decodifica a lo largo de una ventana de aproximadamente 6 minutos de conversacion.
+Vui Nano es un modelo de sintesis de voz (text-to-speech) publicado por fluxions.ai bajo el identificador `fluxions/vui` en Hugging Face. Se trata de un modelo pequeno y orientado a la conversacion: 219M parametros activos sobre 305M totales, licencia Apache 2.0 y entrenamiento exclusivamente en ingles. Su rasgo diferencial es que no sintetiza un enunciado aislado, sino que genera cada respuesta dentro del contexto del dialogo completo, incluyendo el audio real del turno del interlocutor, todo ello almacenado en la cache KV de la que decodifica a lo largo de una ventana de aproximadamente 6 minutos de conversacion.
 
 La arquitectura combina un decodificador de estilo Llama con una cabeza RQ-Transformer sobre el codec Qwen3-TTS-12Hz. El modelo fue entrenado sobre dialogos de dos hablantes con un token explicito de cambio de turno, lo que le permite mantener la prosodia entre turnos y producir fenomenos propios del habla espontanea (respiraciones, risas, vacilaciones y solapamientos) que los corpus de lectura en voz alta no contienen. Incorpora clonacion de voz, generacion en streaming y condicionamiento sobre seis canales de calidad de voz (SQ) y palabras por segundo (WPS).
 
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fluxions/vui
+- Modelo en Hugging Face: https://huggingface.co/fluxions/vui
 - Repositorio en GitHub (codigo, instalacion, documentacion y asistente de voz en streaming): https://github.com/fluxions-ai/vui
 - Documentacion de compatibilidad con la API Realtime: https://github.com/fluxions-ai/vui/blob/main/docs/realtime-api.md
 - Sitio del desarrollador: https://fluxions.ai

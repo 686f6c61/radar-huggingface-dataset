@@ -39,7 +39,7 @@ No se dispone de datos de entrenamiento porque el checkpoint es únicamente de i
 
 - Pruebas de humo de la implementación: ejecutar `python inference.py --help` para validar que el pipeline de inferencia funciona antes de iniciar un entrenamiento completo.
 - Experimentos de ablación: comparar el efecto de la atención dilatada, la fusión bilineal, la activación Mish y la normalización RMSNorm frente a variantes estándar de Swin Transformer.
-- Desarrollo de adaptadores: al ser una implementación personalizada, el repositorio sirve como base para escribir adaptadores que permitan cargar el modelo en frameworks estándar de HuggingFace.
+- Desarrollo de adaptadores: al ser una implementación personalizada, el repositorio sirve como base para escribir adaptadores que permitan cargar el modelo en frameworks estándar de Hugging Face.
 - Evaluación de retrieval en Flickr30k: usar el checkpoint de inicialización como baseline de capacidad aleatoria para calibrar la métrica de evaluación antes de entrenar un modelo real.
 - Investigación de arquitecturas de retrieval: estudiar cómo influye la configuración "large" en la escala de parámetros y en el comportamiento de la atención dilatada.
 - Entrenamiento controlado: partir de este checkpoint para un entrenamiento pequeño con datos propios, manteniendo registros de logs y versiones del entorno para reproducibilidad.
@@ -62,15 +62,15 @@ No se dispone de alternativas comparables con datos suficientes en la informaci�
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Leadubois06/swin-t-retrieval-2023 | 24.832 | No disponible | No disponible | BSD-3-Clause | HuggingFace |
-| TakuyaMatsumoto/swin-t-retrieval | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Leadubois06/swin-t-retrieval-2023 | 24.832 | No disponible | No disponible | BSD-3-Clause | Hugging Face |
+| TakuyaMatsumoto/swin-t-retrieval | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - El checkpoint es de inicialización y no ha sido entrenado, por lo que no es funcional para ninguna tarea real de retrieval ni para ningún otro propósito práctico.
 - No ha sido auditado para robustez, fairness, sesgos ni transferencia de dominio.
 - La implementación es experimental y puede contener errores o comportamientos inesperados.
-- No es compatible con APIs genéricas de carga automática de HuggingFace; se requiere un adaptador explícito antes de su uso.
+- No es compatible con APIs genéricas de carga automática de Hugging Face; se requiere un adaptador explícito antes de su uso.
 - No se reivindican puntuaciones de benchmark en el repositorio.
 - La licencia BSD-3-Clause cubre el código, pero los términos de los datasets externos deben revisarse por separado si se utiliza este modelo con ellos.
 - No hay información sobre idiomas soportados ni capacidades multilingües.
@@ -78,6 +78,6 @@ No se dispone de alternativas comparables con datos suficientes en la informaci�
 
 ## Enlaces
 
-- [Leadubois06/swin-t-retrieval-2023 en HuggingFace](https://huggingface.co/Leadubois06/swin-t-retrieval-2023)
-- [TakuyaMatsumoto/swin-t-retrieval en HuggingFace](https://huggingface.co/TakuyaMatsumoto/swin-t-retrieval)
+- [Leadubois06/swin-t-retrieval-2023 en Hugging Face](https://huggingface.co/Leadubois06/swin-t-retrieval-2023)
+- [TakuyaMatsumoto/swin-t-retrieval en Hugging Face](https://huggingface.co/TakuyaMatsumoto/swin-t-retrieval)
 - [Repositorio oficial de Swin Transformer en GitHub](https://github.com/SwinTransformer)

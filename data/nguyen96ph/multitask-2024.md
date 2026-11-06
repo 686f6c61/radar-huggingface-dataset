@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nguyen96ph/multitask-2024` es un repositorio de HuggingFace publicado por el usuario nguyen96ph que contiene una implementacion minima de arquitectura Flamingo orientada a tareas multitarea. No se trata de un modelo entrenado ni de un release con pesos validados: la propia model card lo describe explicitamente como un punto de partida reproducible ("the tiny variant is a reproducible starting point, not a trained model release") y el fichero `model.safetensors` se presenta como checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como checkpoint con benchmarks.
+`nguyen96ph/multitask-2024` es un repositorio de Hugging Face publicado por el usuario nguyen96ph que contiene una implementacion minima de arquitectura Flamingo orientada a tareas multitarea. No se trata de un modelo entrenado ni de un release con pesos validados: la propia model card lo describe explicitamente como un punto de partida reproducible ("the tiny variant is a reproducible starting point, not a trained model release") y el fichero `model.safetensors` se presenta como checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como checkpoint con benchmarks.
 
 El modelo es de escala "tiny" y el recuento real de parametros leido del fichero safetensors es de 33.088 parametros, un orden de magnitud propio de un ejemplo didactico o de un test de integracion, no de un modelo utilizable en produccion. El repositorio pesa 0,0 GB y se distribuye bajo licencia Apache 2.0. La arquitectura declarada emplea atencion flash, fusion multimodal mediante concat mlp, activacion ReLU y normalizacion ScaleNorm.
 
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nguyen96ph/multitask-2024` | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
+| `nguyen96ph/multitask-2024` | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
 | Flamingo (DeepMind) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | OpenFlamingo | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | IDEFICS | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -109,6 +109,6 @@ La comparacion no es significativa en la practica: los modelos Flamingo u OpenFl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nguyen96ph/multitask-2024
+- Hugging Face: https://huggingface.co/nguyen96ph/multitask-2024
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante sobre este modelo; consisten en paginas de soporte de Microsoft (contacto, inicio de sesion en Hotmail, actualizaciones de seguridad de Exchange Server, descarga de ISO de Windows 8.1, cierre de sesion en Outlook) sin relacion alguna con el repositorio.
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la informacion disponible.

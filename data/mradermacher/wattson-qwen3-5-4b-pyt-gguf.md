@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Especializacion | Disponibilidad |
 |---|---|---|---|---|---|
 | wattson-qwen3.5-4b-pyt (este) | 4,2 B | No disponible | Apache 2.0 | Sistemas de energia, pandapower, tool calling | GGUF (mradermacher) y safetensors (base) |
-| Qwen3.5 4B (base original) | 4,2 B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Generalista, con thinking y tool calling | Safetensors en HuggingFace |
+| Qwen3.5 4B (base original) | 4,2 B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Generalista, con thinking y tool calling | Safetensors en Hugging Face |
 | Qwen3 4B (generacion anterior) | 4 B | Hasta 32.000-131.000 tokens segun variante | Apache 2.0 | Generalista | Safetensors y GGUF amplios |
 
 Nota: la comparativa se limita a la familia Qwen por falta de información sobre alternativas específicas en el dominio de sistemas de energía; no constan en la información proporcionada otros modelos fine-tuned sobre pandapower con los que contrastar rendimiento especializado.

@@ -84,6 +84,6 @@ No se dispone de modelos comparables identificables: la model card no declara el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/csrstka/flint-oQ4e-fp16
+- Repositorio en Hugging Face: https://huggingface.co/csrstka/flint-oQ4e-fp16
 - Herramienta de cuantización oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Las búsquedas web realizadas no devolvieron ningún resultado relacionado con este modelo; no se han encontrado papers, blogs, repositorios ni demos adicionales.

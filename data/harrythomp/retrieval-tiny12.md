@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Retrieval-tiny12 es un repositorio de HuggingFace publicado por el usuario Harrythomp que contiene una implementación propia de una arquitectura Perceiver orientada a tareas de recuperación (retrieval), acompañada de un fichero de configuración, un script de evaluación/entrenamiento y un checkpoint de inicialización. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio funciona, por tanto, como punto de partida reproducible para experimentación, no como artefacto listo para producción.
+Retrieval-tiny12 es un repositorio de Hugging Face publicado por el usuario Harrythomp que contiene una implementación propia de una arquitectura Perceiver orientada a tareas de recuperación (retrieval), acompañada de un fichero de configuración, un script de evaluación/entrenamiento y un checkpoint de inicialización. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio funciona, por tanto, como punto de partida reproducible para experimentación, no como artefacto listo para producción.
 
 El checkpoint pesa prácticamente nada: los datos reales de safetensors indican 16.576 parámetros totales (~0,017 M) y un tamaño de repositorio de 0,0 GB. Existe una inconsistencia interna en la información disponible: el identificador del modelo incluye el sufijo "tiny12", pero la model card describe la variante como "xlarge" en su tabla de arquitectura y en el texto de presentación. Esta discrepancia no se puede resolver con los datos aportados y conviene verificarla en el repositorio antes de cualquier uso.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Harrythomp/retrieval-tiny12 | Perceiver para retrieval (checkpoint sin entrenar) | 16.576 | no disponible | bsd-3-clause | HuggingFace |
+| Harrythomp/retrieval-tiny12 | Perceiver para retrieval (checkpoint sin entrenar) | 16.576 | no disponible | bsd-3-clause | Hugging Face |
 | CLIP (OpenAI) | Recuperacion imagen-texto | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | pesos publicos |
 | BLIP | Recuperacion y captioning imagen-texto | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | pesos publicos |
 | Perceiver IO (DeepMind) | Arquitectura Perceiver generica multimodal | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | pesos publicos |
@@ -93,5 +93,5 @@ No se dispone de datos verificados de los modelos alternativos dentro de la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Harrythomp/retrieval-tiny12
+- Hugging Face: https://huggingface.co/Harrythomp/retrieval-tiny12
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

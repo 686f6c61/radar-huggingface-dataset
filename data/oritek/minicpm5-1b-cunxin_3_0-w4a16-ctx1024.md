@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `oritek/MiniCPM5-1B-Cunxin_3_0-W4A16-CTX1024` es una publicación de pesos en HuggingFace realizada por el usuario `oritek` bajo licencia Apache 2.0. Por el propio identificador se deduce que se trata de una variante cuantizada de un modelo de la familia MiniCPM con approximately 1.000 millones de parámetros, con pesos en formato W4A16 (4 bits para pesos, 16 bits para activaciones) y una ventana de contexto declarada de 1.024 tokens. El sufijo `Cunxin_3_0` apunta a un ajuste o derivado específico, presumiblemente en chino, aunque la model card no lo confirma.
+El repositorio `oritek/MiniCPM5-1B-Cunxin_3_0-W4A16-CTX1024` es una publicación de pesos en Hugging Face realizada por el usuario `oritek` bajo licencia Apache 2.0. Por el propio identificador se deduce que se trata de una variante cuantizada de un modelo de la familia MiniCPM con approximately 1.000 millones de parámetros, con pesos en formato W4A16 (4 bits para pesos, 16 bits para activaciones) y una ventana de contexto declarada de 1.024 tokens. El sufijo `Cunxin_3_0` apunta a un ajuste o derivado específico, presumiblemente en chino, aunque la model card no lo confirma.
 
 La model card publicada es una plantilla genérica de ModelScope que no aporta información técnica: no describe la arquitectura, los datos de entrenamiento, los idiomas soportados, los resultados de evaluación ni el procedimiento de cuantización. Solo declara la tarea `question-answering` y la licencia Apache 2.0. El tamaño del repositorio (1,0 GB) es coherente con un modelo de ~1B parámetros almacenado en 4 bits, incluyendo posibles ficheros auxiliares.
 
@@ -85,7 +85,7 @@ No se dispone de datos verificados de rendimiento ni de comparativas cuantitativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oritek/MiniCPM5-1B-Cunxin_3_0-W4A16-CTX1024
+- Hugging Face: https://huggingface.co/oritek/MiniCPM5-1B-Cunxin_3_0-W4A16-CTX1024
 - ModelScope (referencia de descarga citada en la model card): https://www.modelscope.cn/models/oritek/MiniCPM5-1B-Cunxin_3_0-W4A16-CTX1024
 - Descarga via git: `git clone https://www.modelscope.cn/oritek/MiniCPM5-1B-Cunxin_3_0-W4A16-CTX1024.git`
 - Papers, blogs, repositorios o demos: no disponible (la búsqueda web no arrojó resultados relevantes).

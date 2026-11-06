@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sukhun2/audio_cls_v2` es un modelo de clasificación de audio publicado en HuggingFace por el usuario `sukhun2`. El repositorio contiene pesos en formato safetensors con un total de 94.572.174 parámetros, construidos sobre la arquitectura wav2vec2, según las etiquetas del propio repositorio. Se trata, por tanto, de un modelo de la familia de modelos auto-supervisados de voz (speech) reutilizado para una tarea de clasificación, presumiblemente de etiquetas acústicas o eventos sonoros.
+`sukhun2/audio_cls_v2` es un modelo de clasificación de audio publicado en Hugging Face por el usuario `sukhun2`. El repositorio contiene pesos en formato safetensors con un total de 94.572.174 parámetros, construidos sobre la arquitectura wav2vec2, según las etiquetas del propio repositorio. Se trata, por tanto, de un modelo de la familia de modelos auto-supervisados de voz (speech) reutilizado para una tarea de clasificación, presumiblemente de etiquetas acústicas o eventos sonoros.
 
 La información pública disponible es muy limitada: no se especifica el pipeline, la licencia, los idiomas soportados ni la composición del dataset de entrenamiento. El repositorio tiene 45 descargas y ninguna interacción social, lo que sugiere un modelo de carácter experimental o de uso interno, sin documentación asociada. El tamaño del repositorio (7,6 GB) es notablemente superior al que correspondería a los 94,5 millones de parámetros en fp32 (unos 378 MB), lo que indica la presencia de múltiples checkpoints, estados de optimizador u otros artefactos de entrenamiento en el mismo repositorio.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sukhun2/audio_cls_v2 | 94,5 M | no disponible | Clasificación de audio | no disponible | HuggingFace |
-| facebook/wav2vec2-base | 95 M | ~10 s de audio (típico) | Representaciones de voz (preentrenamiento) | MIT (según el repositorio original de Meta) | HuggingFace |
-| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | ~10 s de audio | Clasificación de audio (AudioSet) | BSD-3-Clause (según el repositorio original) | HuggingFace |
-| openai/whisper-tiny | 39 M | 30 s de audio | Reconocimiento de voz y traducción | MIT | HuggingFace |
+| sukhun2/audio_cls_v2 | 94,5 M | no disponible | Clasificación de audio | no disponible | Hugging Face |
+| facebook/wav2vec2-base | 95 M | ~10 s de audio (típico) | Representaciones de voz (preentrenamiento) | MIT (según el repositorio original de Meta) | Hugging Face |
+| MIT/ast-finetuned-audioset-10-10-0.4593 | ~87 M | ~10 s de audio | Clasificación de audio (AudioSet) | BSD-3-Clause (según el repositorio original) | Hugging Face |
+| openai/whisper-tiny | 39 M | 30 s de audio | Reconocimiento de voz y traducción | MIT | Hugging Face |
 
 La comparación es aproximada: `facebook/wav2vec2-base` es un modelo de representaciones sin cabeza de clasificación específica, mientras que `MIT/ast-finetuned-audioset` es un transformer de espectrogramas entrenado en AudioSet con etiquetas conocidas. `whisper-tiny` es un modelo generativo de voz, no un clasificador, pero comparte el nicho de modelos ligeros de audio. La falta de documentación de `sukhun2/audio_cls_v2` impide comparar rendimiento o conjunto de etiquetas.
 
@@ -81,7 +81,7 @@ La comparación es aproximada: `facebook/wav2vec2-base` es un modelo de represen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sukhun2/audio_cls_v2
+- Hugging Face: https://huggingface.co/sukhun2/audio_cls_v2
 - Repositorio de referencia de wav2vec2 (Meta): https://github.com/facebookresearch/fairseq/tree/main/examples/wav2vec
 - Documentación de wav2vec2 en transformers: https://huggingface.co/docs/transformers/model_doc/wav2vec2
 - Modelo base de referencia: https://huggingface.co/facebook/wav2vec2-base

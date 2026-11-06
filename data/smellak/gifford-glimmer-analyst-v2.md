@@ -65,8 +65,8 @@ El propio autor advierte que este resultado es de comparación/validación, no u
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smellak/gifford-glimmer-analyst-v2` | LoRA de clasificación (7 clases) | Adaptador sobre base 30B | no disponible | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| `meta-models/Muse-Glimmer-30B` (base) | Transformer generativo | 30B (según nombre) | no disponible | Apache-2.0 | HuggingFace |
+| `smellak/gifford-glimmer-analyst-v2` | LoRA de clasificación (7 clases) | Adaptador sobre base 30B | no disponible | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| `meta-models/Muse-Glimmer-30B` (base) | Transformer generativo | 30B (según nombre) | no disponible | Apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros clasificadores de estado de agentes de código publicados con los que comparar directamente.
@@ -84,7 +84,7 @@ No se dispone de información sobre otros clasificadores de estado de agentes de
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/smellak/gifford-glimmer-analyst-v2
+- Hugging Face del adaptador: https://huggingface.co/smellak/gifford-glimmer-analyst-v2
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Licencia del base: https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/cec94fcfd6512f2cfe708138c32533b346ea4f69/LICENSE
 - Contrato ML de Gifford: https://github.com/smellak/gifford/blob/main/docs/ML_CONTRACT.md

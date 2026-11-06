@@ -2,7 +2,7 @@
 
 ## Resumen
 
-musicik/Hennessy es un repositorio publicado en HuggingFace por el usuario musicik del que no se dispone de informacion tecnica verificable. La model card asociada unicamente contiene metadatos de licencia (`license: other`, `license_name: '82689'`, `license_link: LICENSE`) y carece por completo de descripcion del modelo, arquitectura, datos de entrenamiento o capacidades. El tamano del repositorio es de 0,0 GB, lo que indica que no hay pesos ni ficheros de configuracion publicados en el momento de la consulta.
+musicik/Hennessy es un repositorio publicado en Hugging Face por el usuario musicik del que no se dispone de informacion tecnica verificable. La model card asociada unicamente contiene metadatos de licencia (`license: other`, `license_name: '82689'`, `license_link: LICENSE`) y carece por completo de descripcion del modelo, arquitectura, datos de entrenamiento o capacidades. El tamano del repositorio es de 0,0 GB, lo que indica que no hay pesos ni ficheros de configuracion publicados en el momento de la consulta.
 
 El repositorio acumula 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas soportados. Los resultados de la busqueda web realizada no contienen ninguna referencia a este modelo: todas las entradas recuperadas corresponden a paginas de soporte de Microsoft (Hotmail, Copilot, Exchange Online) sin relacion alguna con el proyecto.
 
@@ -47,7 +47,7 @@ No es posible proponer casos de uso concretos y realistas porque no se dispone d
 - Analisis de documentos largos: no evaluable, se desconoce la longitud de contexto.
 - Despliegue en pipelines de CI/CD: no evaluable, no hay pesos publicados ni formatos de cuantizacion declarados.
 - Asistentes conversacionales en castellano: no evaluable, no se declaran idiomas soportados.
-- Clasificacion o extraccion de informacion: no evaluable, no hay pipeline declarado en HuggingFace.
+- Clasificacion o extraccion de informacion: no evaluable, no hay pipeline declarado en Hugging Face.
 - Fine-tuning sobre dominio propio: no evaluable, no hay pesos base ni licencia clara para derivados.
 
 ## Benchmarks y rendimiento
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables al no conocerse la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/musicik/Hennessy
+- Hugging Face: https://huggingface.co/musicik/Hennessy
 - Model card: https://huggingface.co/musicik/Hennessy/blob/main/README.md
 - Licencia declarada: https://huggingface.co/musicik/Hennessy/blob/main/LICENSE
 - Paper: no disponible

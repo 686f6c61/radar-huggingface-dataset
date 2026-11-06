@@ -97,9 +97,9 @@ La familia incluye ademas una variante de 35B con mezcla de expertos (Qwen3.5-35
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goldenfox/decider-2b-onnx
+- Modelo en Hugging Face: https://huggingface.co/goldenfox/decider-2b-onnx
 - Modelo base: https://huggingface.co/Mapika/decider-2b
 - Repositorio del proyecto decider: https://github.com/Mapika/decider
 - ONNX Model Zoo: https://github.com/onnx/models
-- Modelos compatibles con la libreria ONNX en HuggingFace: https://huggingface.co/models?library=onnx
+- Modelos compatibles con la libreria ONNX en Hugging Face: https://huggingface.co/models?library=onnx
 - Modelos de ONNX Runtime: https://onnxruntime.ai/models

@@ -69,10 +69,10 @@ Estos valores son indicativos del rendimiento en hardware de gama alta, pero no 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **LTX-2.5-cmf (este)** | 35,65 B totales (21 B DiT) | No aplica | CMF 4-bit, 22 GB | ltx-2-community-license-agreement | HuggingFace |
-| **Lightricks/LTX-2.5 (referencia)** | 35,65 B totales (21 B DiT) | No aplica | Safetensors, 71,35 GB | ltx-2-community-license-agreement | HuggingFace |
-| **HunyuanVideo (Tencent)** | 13 B (DiT) + 3 B (VAE) | No aplica | Safetensors | Tencent Hunyuan Community License | HuggingFace |
-| **Wan 2.1 (Alibaba)** | 14 B (DiT) | No aplica | Safetensors | Apache 2.0 | HuggingFace |
+| **LTX-2.5-cmf (este)** | 35,65 B totales (21 B DiT) | No aplica | CMF 4-bit, 22 GB | ltx-2-community-license-agreement | Hugging Face |
+| **Lightricks/LTX-2.5 (referencia)** | 35,65 B totales (21 B DiT) | No aplica | Safetensors, 71,35 GB | ltx-2-community-license-agreement | Hugging Face |
+| **HunyuanVideo (Tencent)** | 13 B (DiT) + 3 B (VAE) | No aplica | Safetensors | Tencent Hunyuan Community License | Hugging Face |
+| **Wan 2.1 (Alibaba)** | 14 B (DiT) | No aplica | Safetensors | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de generación de vídeo open source de tamaño similar. LTX-2.5-cmf ofrece la ventaja de un único archivo y un runtime sin dependencias, pero su licencia es más restrictiva que la de Wan 2.1 (Apache 2.0). No se dispone de datos de rendimiento objetivo para comparar la calidad de generación.
 
@@ -88,7 +88,7 @@ La comparativa se limita a modelos de generación de vídeo open source de tama�
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/infosave/LTX-2.5-cmf)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/infosave/LTX-2.5-cmf)
 - [Modelo base Lightricks/LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5)
 - [Especificación del formato CMF](https://huggingface.co/infosave/cmf)
 - [Página oficial de LTX-2.5](https://ltx.io/model/ltx-2-5)

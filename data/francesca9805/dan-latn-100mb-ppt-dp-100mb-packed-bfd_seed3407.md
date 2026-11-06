@@ -6,7 +6,7 @@ Este modelo es un ajuste fino supervisado (SFT) del checkpoint monolingüe dané
 
 El interés del checkpoint es acotado y de carácter experimental. No es un modelo de propósito general ni compite con los LLM actuales: por tamaño (124 M de parámetros), por el corpus del modelo base (aproximadamente 100 MB de texto en danés) y por el hecho de que la propia model card no documenta dataset de ajuste, hiperparámetros ni evaluación, debe entenderse como un artefacto de investigación. El sufijo `ppt` y el nombre del proyecto en Weights & Biases del autor (`new-tokenizers`) apuntan a experimentos de tokenización o de preentrenamiento proyectado, aunque esto no está confirmado en la documentación disponible.
 
-Su relevancia ahora es doble: por un lado, sirve como ejemplo reproducible de un pipeline de SFT con TRL sobre un modelo base muy pequeño; por otro, es un caso típico de checkpoint con licencia sin cumplimentar ("licence: license" en la model card), cero descargas y cero evaluaciones publicadas, lo que ilustra la importancia de auditar la procedencia y la licencia antes de reutilizar pesos de HuggingFace en producción.
+Su relevancia ahora es doble: por un lado, sirve como ejemplo reproducible de un pipeline de SFT con TRL sobre un modelo base muy pequeño; por otro, es un caso típico de checkpoint con licencia sin cumplimentar ("licence: license" en la model card), cero descargas y cero evaluaciones publicadas, lo que ilustra la importancia de auditar la procedencia y la licencia antes de reutilizar pesos de Hugging Face en producción.
 
 ## Especificaciones técnicas
 
@@ -45,7 +45,7 @@ El entrenamiento consiste en un ajuste fino supervisado (SFT) mediante TRL sobre
 - Reproducción de pipelines de SFT con TRL: sirve como ejemplo mínimo (124 M de parámetros, 0,3 GB de repositorio) para validar un flujo completo de ajuste supervisado en una sola GPU consumer, incluyendo el registro en Weights & Biases.
 - Generación de texto sintético en danés para aumentar datasets: con un corpus de partida de 100 MB, el modelo puede producir continuaciones de dominio estrecho que, filtradas por calidad, sirven para *data augmentation* en tareas de clasificación danesa.
 - Punto de partida para ajustes posteriores: al ser pequeño y caber en cualquier GPU, es un candidato razonable para *fine-tuning* adicional en una especialidad concreta (por ejemplo, titulares o descripciones de producto en danés) cuando no se dispone de cómputo para modelos de miles de millones de parámetros.
-- Inferencia en CPU o dispositivos embebidos: con aproximadamente 250 MB en FP16 y 65 MB en int4, puede ejecutarse en un portátil, en una Raspberry Pi o dentro del *free tier* de HuggingFace Endpoints (`endpoints_compatible`) para demos de latencia baja.
+- Inferencia en CPU o dispositivos embebidos: con aproximadamente 250 MB en FP16 y 65 MB en int4, puede ejecutarse en un portátil, en una Raspberry Pi o dentro del *free tier* de Hugging Face Endpoints (`endpoints_compatible`) para demos de latencia baja.
 - Docencia y pedagogía de LLM: permite mostrar de forma tangible las limitaciones de un modelo de 124 M entrenado con 100 MB de texto (repeticiones, pérdida de coherencia a partir de pocos cientos de tokens) frente a modelos actuales.
 - Auditoría de sesgos en modelos pequeños: útil como sujeto de estudio para medir cómo se propagan los sesgos de un corpus monolingüe reducido tras un ajuste supervisado.
 
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 500 MB en FP32, 250 MB en FP16/BF16, 125 MB en int8 y 62-65 MB en int4, calculado a partir de 124,77 M de parámetros. A esto hay que sumar el *KV cache* y el *overhead* del runtime, que en la práctica suelen dominar el consumo total.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Funciona sin problema en RTX 3060, RTX 4090, A100, H100 e incluso en GPU integradas. La elección de GPU no vendrá determinada por la VRAM sino por el *throughput* deseado.
 - Cabe holgadamente en GPU consumer de gama baja y media: GTX 1050 Ti, GTX 1650, RTX 2060, RTX 3060, RTX 4060, así como en CPU exclusivamente.
-- Opciones de despliegue: `transformers` con `pipeline` (el ejemplo oficial), Text Generation Inference (el tag `text-generation-inference` y `endpoints_compatible` indican compatibilidad), HuggingFace Inference Endpoints y vLLM. Para llama.cpp u Ollama sería necesaria una conversión propia a GGUF, que no se distribuye.
+- Opciones de despliegue: `transformers` con `pipeline` (el ejemplo oficial), Text Generation Inference (el tag `text-generation-inference` y `endpoints_compatible` indican compatibilidad), Hugging Face Inference Endpoints y vLLM. Para llama.cpp u Ollama sería necesaria una conversión propia a GGUF, que no se distribuye.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` | 124,77 M | No disponible | GPT-2 + SFT (TRL) | No disponible (campo sin cumplimentar) | Peso safetensors en HuggingFace, 0 descargas |
-| `goldfish-models/dan_latn_100mb` (modelo base) | Orden de 100 M (no confirmado) | No disponible en la informacion proporcionada | GPT-2 monolingüe danés | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407` | 124,77 M | No disponible | GPT-2 + SFT (TRL) | No disponible (campo sin cumplimentar) | Peso safetensors en Hugging Face, 0 descargas |
+| `goldfish-models/dan_latn_100mb` (modelo base) | Orden de 100 M (no confirmado) | No disponible en la informacion proporcionada | GPT-2 monolingüe danés | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | `openai-community/gpt2` (referencia de arquitectura) | 124 M | 1024 tokens (configuracion estandar) | GPT-2 monolingüe inglés | MIT modificada | Muy extendido, con variantes GGUF y cuantizaciones de terceros |
-| Otras variantes monolingües de goldfish (`fin_latn`, `swe_latn`, etc.) | No verificado | No verificado | GPT-2 monolingüe | No verificado | Publicas en HuggingFace, sujetas a verificacion |
+| Otras variantes monolingües de goldfish (`fin_latn`, `swe_latn`, etc.) | No verificado | No verificado | GPT-2 monolingüe | No verificado | Publicas en Hugging Face, sujetas a verificacion |
 
 No se dispone de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/p90h1di6

@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/qbz506/kinetic-eqlm-121m-babylm)
+- [Repositorio de Hugging Face](https://huggingface.co/qbz506/kinetic-eqlm-121m-babylm)
 - [Repositorio GitHub del proyecto](https://github.com/SharathSPhD/game-llm)
 - [Paper (directorio en GitHub)](https://github.com/SharathSPhD/game-llm/tree/main/paper)
 - [Hallazgos validados](https://github.com/SharathSPhD/game-llm/blob/main/research/memory/findings.md)

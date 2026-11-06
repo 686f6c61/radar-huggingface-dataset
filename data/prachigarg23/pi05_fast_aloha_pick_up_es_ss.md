@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05_FAST_aloha_pick_up_ES_SS (este) | VLA π0.5 + FAST | Pick-up de cubos con ALOHA | Apache 2.0 | HuggingFace, 0 descargas |
+| pi05_FAST_aloha_pick_up_ES_SS (este) | VLA π0.5 + FAST | Pick-up de cubos con ALOHA | Apache 2.0 | Hugging Face, 0 descargas |
 | π0.5 base (`pi05_base`) | VLA π0.5 | Política base multitarea | no disponible en esta ficha | Referenciado como punto de partida del ajuste fino |
 | Variantes del mismo artículo (ES solo, SS solo, etc.) | VLA π0.5 + FAST | Misma tarea con distintas mezclas de datos | Apache 2.0 (presumiblemente) | No se listan en la información disponible |
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prachigarg23/pi05_FAST_aloha_pick_up_ES_SS
+- Hugging Face: https://huggingface.co/prachigarg23/pi05_FAST_aloha_pick_up_ES_SS
 - Artículo (arXiv): https://arxiv.org/abs/2608.19490
 - Página del proyecto: https://self-supervised-control.pages.dev/
 - Código: https://github.com/prachigarg23/self-supervised-continual-control

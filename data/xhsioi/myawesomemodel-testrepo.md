@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario xhsioi, publicado bajo licencia MIT y etiquetado con las librerías transformers y pytorch, la arquitectura bert y el pipeline feature-extraction. El repositorio se presenta como una prueba: su tamano declarado es de 0,0 GB, no acumula ninguna interaccion (0 likes) y apenas 31 descargas, lo que indica que no contiene pesos distribuibles ni un modelo realmente entrenado y publicado.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario xhsioi, publicado bajo licencia MIT y etiquetado con las librerías transformers y pytorch, la arquitectura bert y el pipeline feature-extraction. El repositorio se presenta como una prueba: su tamano declarado es de 0,0 GB, no acumula ninguna interaccion (0 likes) y apenas 31 descargas, lo que indica que no contiene pesos distribuibles ni un modelo realmente entrenado y publicado.
 
 Por otro lado, la model card adjunta describe un supuesto modelo conversacional y de razonamiento ("MyAwesomeModel") con mejoras en tareas de matematicas, programacion y logica, citando resultados genericos en AIME 2025 y una tabla de benchmarks con nombres anonimizados (Model1, Model2, Model1-v2). Existe una contradiccion clara entre esa narrativa y los metadatos tecnicos del repositorio (pipeline de extraccion de caracteristicas sobre arquitectura BERT), propia de una plantilla de prueba no verificada.
 
@@ -104,5 +104,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xhsioi/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/xhsioi/MyAwesomeModel-TestRepo
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las URLs devueltas (t-online.de y subdominios asociados) corresponden a un portal de noticias aleman y no guardan relacion con el modelo.

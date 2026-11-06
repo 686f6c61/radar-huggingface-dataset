@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SeonghuJeon/agibot_gam_h1to4_v3_c16_gb320_3436498` es un checkpoint de politica robotica publicado en HuggingFace por el usuario SeonghuJeon, etiquetado como robotics, agibot, pytorch y checkpoint. Corresponde al paso 11.000 de entrenamiento de un modelo denominado AgiBot GAM, exportado como checkpoint portable (`checkpoints/0011000.pt`) junto con su configuracion resuelta (`config.yaml`) y el estado de normalizacion (`stats/`). No es un modelo de lenguaje ni un export de Transformers AutoModel: se carga con el loader especifico de checkpoints AgiBot/OXE del pipeline 3DA.
+`SeonghuJeon/agibot_gam_h1to4_v3_c16_gb320_3436498` es un checkpoint de politica robotica publicado en Hugging Face por el usuario SeonghuJeon, etiquetado como robotics, agibot, pytorch y checkpoint. Corresponde al paso 11.000 de entrenamiento de un modelo denominado AgiBot GAM, exportado como checkpoint portable (`checkpoints/0011000.pt`) junto con su configuracion resuelta (`config.yaml`) y el estado de normalizacion (`stats/`). No es un modelo de lenguaje ni un export de Transformers AutoModel: se carga con el loader especifico de checkpoints AgiBot/OXE del pipeline 3DA.
 
 El checkpoint procede de un trabajo de continuacion (job3461453) que retomo el estado del paso 6.858 del job original (job3436498) dentro del mismo run de W&B `xvbt6gtt`. El entrenamiento mezcla al 50% datos de AgiBot y al 50% datos de OXE, con entradas de estado y accion compartidas y rellenadas con padding hasta una anchura de 16, historial de 1 a 4 observaciones y chunks de accion de 16 pasos.
 
@@ -91,7 +91,7 @@ No se proporcionan datos verificables de modelos comparables en la informacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeonghuJeon/agibot_gam_h1to4_v3_c16_gb320_3436498
+- Modelo en Hugging Face: https://huggingface.co/SeonghuJeon/agibot_gam_h1to4_v3_c16_gb320_3436498
 - Codigo de entrenamiento fuente: ONground-Korea/3DA, revision e49b55a3 (repositorio indicado en la model card; el enlace directo no se proporciona en la informacion disponible)
 - Run de W&B asociado: identificador `xvbt6gtt`, dentro del run `agibot_gam_h1to4_v3_c16_gb320_3436498` (URL no disponible)
 - Resultados de busqueda web: no se encontro ningun resultado relevante para este modelo (los resultados devueltos correspondian a temas no relacionados: prompts DAN, GitHub Copilot, discusiones sobre GPT-6 y GLM, y recuperacion de historiales de ChatGPT).

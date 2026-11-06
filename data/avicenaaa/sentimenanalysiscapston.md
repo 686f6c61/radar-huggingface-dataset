@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SentimenAnalysisCapston es un modelo de clasificación de texto publicado en HuggingFace por el usuario avicenaaa, presumiblemente como parte de un proyecto final (capstone) de análisis de sentimiento. El repositorio contiene pesos en formato safetensors con 124.442.882 parámetros totales, lo que lo sitúa en la categoría de modelos BERT-base o similar (el tag `bert` aparece en los metadatos del Hub). La librería declarada es transformers y el pipeline asignado es `text-classification`.
+SentimenAnalysisCapston es un modelo de clasificación de texto publicado en Hugging Face por el usuario avicenaaa, presumiblemente como parte de un proyecto final (capstone) de análisis de sentimiento. El repositorio contiene pesos en formato safetensors con 124.442.882 parámetros totales, lo que lo sitúa en la categoría de modelos BERT-base o similar (el tag `bert` aparece en los metadatos del Hub). La librería declarada es transformers y el pipeline asignado es `text-classification`.
 
-La model card es la plantilla automática de HuggingFace sin completar: no incluye información sobre el desarrollador, los datos de entrenamiento, los idiomas soportados, la licencia ni los resultados de evaluación. Todos los campos relevantes aparecen como "[More Information Needed]". Esto limita severamente cualquier evaluación rigurosa del modelo.
+La model card es la plantilla automática de Hugging Face sin completar: no incluye información sobre el desarrollador, los datos de entrenamiento, los idiomas soportados, la licencia ni los resultados de evaluación. Todos los campos relevantes aparecen como "[More Information Needed]". Esto limita severamente cualquier evaluación rigurosa del modelo.
 
 El modelo es relevante únicamente como artefacto de un ejercicio académico o experimental. Con cero descargas y cero likes en el momento de la consulta, y sin documentación técnica, no debe considerarse para uso en producción sin una validación previa exhaustiva por parte de quien lo adopte. Su interés práctico es, por tanto, muy limitado fuera del contexto del proyecto que lo originó.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SentimenAnalysisCapston | 124,4 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
-| distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente documentado |
-| roberta-base | ~125 M | 512 tokens | MIT | HuggingFace, ampliamente documentado |
+| SentimenAnalysisCapston | 124,4 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| bert-base-uncased | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
+| distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente documentado |
+| roberta-base | ~125 M | 512 tokens | MIT | Hugging Face, ampliamente documentado |
 
 La comparación se limita a la arquitectura y el tamaño, ya que no hay datos de rendimiento para el modelo analizado. Frente a alternativas consolidadas como bert-base-uncased o roberta-base, SentimenAnalysisCapston carece de documentación, licencia declarada y métricas publicadas, lo que lo hace menos adecuado para cualquier uso que no sea experimental.
 
@@ -81,6 +81,6 @@ La comparación se limita a la arquitectura y el tamaño, ya que no hay datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/avicenaaa/SentimenAnalysisCapston
+- Hugging Face: https://huggingface.co/avicenaaa/SentimenAnalysisCapston
 - Paper de referencia citado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

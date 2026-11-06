@@ -79,9 +79,9 @@ Conjunto de evaluación: primeros 2 millones de tokens de los ficheros de valida
 
 | Modelo | Parámetros | Contexto | Perplejidad (CodeParrot val, bloque 512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SO-CODE-VTUN (este) | 76.572.109 | no disponible | 6,34 | CC-BY-4.0 | HuggingFace |
-| SO-CODE (baseline del linaje) | 76.572.109 | no disponible | 6,00 | CC-BY-4.0 | HuggingFace |
-| SO-CODE-VTLR (control fix 1) | 76.572.109 | no disponible | 6,09 | CC-BY-4.0 | HuggingFace |
+| SO-CODE-VTUN (este) | 76.572.109 | no disponible | 6,34 | CC-BY-4.0 | Hugging Face |
+| SO-CODE (baseline del linaje) | 76.572.109 | no disponible | 6,00 | CC-BY-4.0 | Hugging Face |
+| SO-CODE-VTLR (control fix 1) | 76.572.109 | no disponible | 6,09 | CC-BY-4.0 | Hugging Face |
 | GPT-2 emparejado | no disponible en la información | no disponible | 4,96 | no disponible en la información | no disponible en la información |
 
 No se dispone de comparación con modelos de código de propósito general (por ejemplo, variantes de CodeGen o StarCoder) en la información proporcionada.
@@ -100,7 +100,7 @@ No se dispone de comparación con modelos de código de propósito general (por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-vtun
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-vtun
 - Baseline SO-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
 - Control de la corrección 1 (SO-CODE-VTLR): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-vtlr0p25
 - Pantalla A (corrección 2 con seis canales): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-xi6long-sr2-wr3-vtun

@@ -74,10 +74,10 @@ Los datos de los modelos comparativos proceden de sus model cards publicas y no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-AraStance-512-46 | ~4B | No disponible en el repositorio | No disponible | HuggingFace (0 descargas, 0 likes) | Ajuste SFT no documentado; repositorio de 0,2 GB |
-| Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens nativos | Apache 2.0 | HuggingFace (Qwen y Unsloth) | Modelo generalista no pensante; referencia directa para medir el efecto del ajuste |
-| Qwen3-4B | ~4B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace | Variante con modo thinking; util como alternativa si se necesita razonamiento explicito |
-| Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace | Alternativa de tamano similar con licencia con condiciones de uso adicionales |
+| Qwen3-4B-Instruct-2507-SD-AraStance-512-46 | ~4B | No disponible en el repositorio | No disponible | Hugging Face (0 descargas, 0 likes) | Ajuste SFT no documentado; repositorio de 0,2 GB |
+| Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens nativos | Apache 2.0 | Hugging Face (Qwen y Unsloth) | Modelo generalista no pensante; referencia directa para medir el efecto del ajuste |
+| Qwen3-4B | ~4B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face | Variante con modo thinking; util como alternativa si se necesita razonamiento explicito |
+| Llama-3.2-3B-Instruct | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face | Alternativa de tamano similar con licencia con condiciones de uso adicionales |
 
 No se han identificado en la informacion disponible otros modelos comparables especificos de deteccion de postura en arabe.
 
@@ -96,7 +96,7 @@ No se han identificado en la informacion disponible otros modelos comparables es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-46
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-46
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

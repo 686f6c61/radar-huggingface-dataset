@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alastorid/RealESRGAN-x4plus-Optimized-CoreML
+- Modelo en Hugging Face: https://huggingface.co/alastorid/RealESRGAN-x4plus-Optimized-CoreML
 - Repositorio WaifuFinder: https://github.com/alastorid/WaifuFinder
 - Proyecto original Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Checkpoint oficial: https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth

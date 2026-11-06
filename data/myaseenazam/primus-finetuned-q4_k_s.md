@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Primus-FineTuned-Q4_K_S es un modelo de lenguaje publicado en HuggingFace por el usuario myaseenazam, distribuido en formato GGUF y preparado para su uso con llama.cpp. El nombre del archivo, `Llama-Primus-Reasoning.Q4_K_S.gguf`, sugiere que se trata de un ajuste fino de un modelo base de la familia Llama orientado a tareas de razonamiento, aunque la documentación disponible no especifica la arquitectura exacta ni el proceso de entrenamiento. El repositorio contiene únicamente el archivo cuantizado Q4_K_S, con un tamaño de 4,7 GB, y los metadatos indican que fue convertido mediante la herramienta Unsloth.
+Primus-FineTuned-Q4_K_S es un modelo de lenguaje publicado en Hugging Face por el usuario myaseenazam, distribuido en formato GGUF y preparado para su uso con llama.cpp. El nombre del archivo, `Llama-Primus-Reasoning.Q4_K_S.gguf`, sugiere que se trata de un ajuste fino de un modelo base de la familia Llama orientado a tareas de razonamiento, aunque la documentación disponible no especifica la arquitectura exacta ni el proceso de entrenamiento. El repositorio contiene únicamente el archivo cuantizado Q4_K_S, con un tamaño de 4,7 GB, y los metadatos indican que fue convertido mediante la herramienta Unsloth.
 
 La relevancia de este modelo reside en su formato GGUF, que permite ejecutarlo en entornos locales con llama.cpp, Ollama u otros motores compatibles, facilitando el despliegue en hardware de consumo. Sin embargo, la ausencia de una model card detallada, de resultados de benchmarks y de información sobre licencia o idiomas limita su evaluación objetiva. Con 8.030.261.312 parámetros totales, se sitúa en la gama de los 8B, un tamaño habitual para inferencia en GPU domésticas. A fecha de publicación, no cuenta con descargas ni valoraciones, lo que indica que es un lanzamiento reciente y sin adopción conocida.
 
@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myaseenazam/Primus-FineTuned-Q4_K_S
+- Hugging Face: https://huggingface.co/myaseenazam/Primus-FineTuned-Q4_K_S
 - Unsloth (herramienta de conversion): https://github.com/unslothai/unsloth
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

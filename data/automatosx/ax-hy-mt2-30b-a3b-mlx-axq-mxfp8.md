@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP8
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-30B-A3B
 - Revision del modelo base: https://huggingface.co/tencent/Hy-MT2-30B-A3B/tree/d3ead4dba61c09aac60a261a96ad1df3e705febb
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-4bit

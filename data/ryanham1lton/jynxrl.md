@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JynxRL es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio tiene un tamano aproximado de 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, lo que indica que se trata de una publicacion reciente o de muy baja difusion. La fecha de creacion registrada es el 3 de octubre de 2026 y la ultima actualizacion es del mismo dia, apenas un minuto despues.
+JynxRL es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. El repositorio tiene un tamano aproximado de 0,1 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes, lo que indica que se trata de una publicacion reciente o de muy baja difusion. La fecha de creacion registrada es el 3 de octubre de 2026 y la ultima actualizacion es del mismo dia, apenas un minuto despues.
 
 La model card publicada no contiene informacion tecnica: unicamente incluye la declaracion de licencia (CC-BY-4.0) en el encabezado YAML, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. Tampoco se ha especificado el pipeline de la tarea ni los idiomas soportados. El sufijo "RL" en el nombre sugiere un posible ajuste mediante aprendizaje por refuerzo, pero esto es una interpretacion del nombre y no un dato confirmado por el autor.
 
@@ -65,7 +65,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JynxRL | no disponible | no disponible | cc-by-4.0 | HuggingFace |
+| JynxRL | no disponible | no disponible | cc-by-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/JynxRL
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/JynxRL
 - Model card: no contiene informacion adicional mas alla de la licencia
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Samarth es un modelo publicado en HuggingFace por el usuario Dubfd bajo licencia MIT. La model card asociada está practicamente vacía: unicamente declara la licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-10-30T05:21:46Z), lo que sugiere una publicacion sin iteraciones posteriores.
+Samarth es un modelo publicado en Hugging Face por el usuario Dubfd bajo licencia MIT. La model card asociada está practicamente vacía: unicamente declara la licencia MIT y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni casos de uso previstos. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-10-30T05:21:46Z), lo que sugiere una publicacion sin iteraciones posteriores.
 
-No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco hay pipeline declarado en HuggingFace, lo que impide clasificarlo automaticamente como modelo de generacion de texto, vision u otra modalidad. La unica etiqueta adicional es `region:us`, que indica la region de almacenamiento del repositorio, no una caracteristica tecnica del modelo.
+No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco hay pipeline declarado en Hugging Face, lo que impide clasificarlo automaticamente como modelo de generacion de texto, vision u otra modalidad. La unica etiqueta adicional es `region:us`, que indica la region de almacenamiento del repositorio, no una caracteristica tecnica del modelo.
 
 Dado que la informacion publica es practicamente inexistente, esta ficha se limita a documentar lo declarado y marca explicitamente como "no disponible" cualquier dato tecnico que no pueda verificarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria inspeccionar directamente los archivos del repositorio, que no se han proporcionado.
 
@@ -34,13 +34,13 @@ Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, at
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta informacion sobre capacidades multilingues.
 - No consta informacion sobre modos especiales (thinking mode, vision, audio, etc.).
-- No se ha declarado un pipeline en HuggingFace que permita inferir la modalidad (texto, imagen, audio).
+- No se ha declarado un pipeline en Hugging Face que permita inferir la modalidad (texto, imagen, audio).
 
 ## Casos de uso
 
 - Evaluacion exploratoria de repositorios recientes: dado que el repositorio es de creacion reciente y sin documentacion, un uso realista es la inspeccion tecnica del propio repositorio (pesos, configuracion, tokenizer) para determinar que contiene antes de plantear cualquier integracion.
 - Prototipado interno con licencia permisiva: la licencia MIT permite usar, modificar y redistribuir el modelo sin restricciones de uso comercial, lo que lo hace apto para experimentacion interna siempre que se valide previamente su comportamiento.
-- Investigacion sobre publicacion de modelos: el caso sirve como ejemplo de repositorio minimo en HuggingFace y puede usarse para estudiar practicas de documentacion de model cards.
+- Investigacion sobre publicacion de modelos: el caso sirve como ejemplo de repositorio minimo en Hugging Face y puede usarse para estudiar practicas de documentacion de model cards.
 - Integracion condicionada a validacion: cualquier despliegue en atencion al cliente, generacion de codigo o analisis de documentos requeriria primero confirmar la arquitectura, el contexto y los idiomas soportados, datos que actualmente no estan disponibles.
 - Fine-tuning sobre una base no confirmada: si los archivos del repositorio contienen pesos compatibles con transformers, podria evaluarse como punto de partida para ajuste fino, pero esto no puede afirmarse con la informacion disponible.
 - Uso educativo: el repositorio puede emplearse como caso practico para ilustrar los riesgos de publicar modelos sin model card ni especificaciones tecnicas verificables.
@@ -73,4 +73,4 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la modalidad del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dubfd/Samarth
+- Repositorio en Hugging Face: https://huggingface.co/Dubfd/Samarth

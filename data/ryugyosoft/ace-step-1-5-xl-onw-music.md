@@ -29,7 +29,7 @@ La conversión a OpenVINO permite ejecutar todos los componentes en la NPU de In
 
 ## Capacidades
 
-- Generación de música a partir de texto (text-to-audio) con el pipeline declarado en HuggingFace.
+- Generación de música a partir de texto (text-to-audio) con el pipeline declarado en Hugging Face.
 - Generación condicionada por letras mediante un codificador de letras específico en fp16.
 - Piezas musicales de entre 10 y 300 segundos; la aplicación onw-music limita la variante XL turbo a 5 minutos por restricciones de memoria y de la NPU.
 - Ejecución completa en NPU Intel Core Ultra (Lunar Lake, Arrow Lake HX) mediante OpenVINO, sin GPU dedicada.
@@ -70,9 +70,9 @@ Los tiempos corresponden a partir de la segunda pieza; la primera pieza de 30 se
 
 | Modelo | Parametros | Duracion maxima | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step-1.5-XL-onw-music (este) | 4.000 M (DiT) + 0,6 M de codificador | 300 s | NPU Intel Core Ultra (OpenVINO) | MIT | HuggingFace, 27 descargas |
-| ACE-Step-1.5-onw-music (turbo, mismo autor) | no disponible | no disponible | NPU Intel Core Ultra (OpenVINO) | MIT | HuggingFace |
-| ACE-Step/acestep-v15-xl-turbo (base) | 4.000 M (DiT) | no disponible | GPU genérica | MIT | HuggingFace |
+| ACE-Step-1.5-XL-onw-music (este) | 4.000 M (DiT) + 0,6 M de codificador | 300 s | NPU Intel Core Ultra (OpenVINO) | MIT | Hugging Face, 27 descargas |
+| ACE-Step-1.5-onw-music (turbo, mismo autor) | no disponible | no disponible | NPU Intel Core Ultra (OpenVINO) | MIT | Hugging Face |
+| ACE-Step/acestep-v15-xl-turbo (base) | 4.000 M (DiT) | no disponible | GPU genérica | MIT | Hugging Face |
 
 La variante turbo del mismo autor prioriza velocidad (aproximadamente la mitad de tiempo) y menor consumo de memoria (4,5-5,7 GB frente a 6,5-8,2 GB), a costa de menor calidad de audio. El modelo base ofrece los mismos pesos sin la conversión a OpenVINO ni la cuantización INT8, por lo que no está optimizado para NPU.
 
@@ -89,7 +89,7 @@ La variante turbo del mismo autor prioriza velocidad (aproximadamente la mitad d
 
 ## Enlaces
 
-- [HuggingFace: ryugyosoft/ACE-Step-1.5-XL-onw-music](https://huggingface.co/ryugyosoft/ACE-Step-1.5-XL-onw-music)
+- [Hugging Face: ryugyosoft/ACE-Step-1.5-XL-onw-music](https://huggingface.co/ryugyosoft/ACE-Step-1.5-XL-onw-music)
 - [Aplicación onw-music](https://huggingface.co/ryugyosoft/onw-music)
 - [Variante turbo: ACE-Step-1.5-onw-music](https://huggingface.co/ryugyosoft/ACE-Step-1.5-onw-music)
 - [Modelo base: ACE-Step/acestep-v15-xl-turbo](https://huggingface.co/ACE-Step/acestep-v15-xl-turbo)

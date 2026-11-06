@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FisayoF/DeployedSpectrogram
+- Modelo en Hugging Face: https://huggingface.co/FisayoF/DeployedSpectrogram
 - Codigo de arquitectura incluido en el repositorio: `model.py` (clase `CnnNet`)
 - Ejemplo minimo de inferencia incluido en el repositorio: `predict.py`
 - Pesos: `weightsfilefromspectrogram.pth` (state_dict de PyTorch)

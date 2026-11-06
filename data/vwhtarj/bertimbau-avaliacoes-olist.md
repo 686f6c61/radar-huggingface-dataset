@@ -67,8 +67,8 @@ Dataset: Olist Brazilian E-Commerce (reviews), tarea de clasificacion de sentimi
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bertimbau-avaliacoes-olist | 108,9 M | 128 tokens (entrenamiento) | Clasificacion de sentimiento pt-BR (e-commerce) | MIT | HuggingFace |
-| neuralmind/bert-base-portuguese-cased (modelo base) | 108,9 M | 512 tokens | Modelo de lenguaje enmascarado pt-BR (requiere fine-tuning) | MIT | HuggingFace |
+| bertimbau-avaliacoes-olist | 108,9 M | 128 tokens (entrenamiento) | Clasificacion de sentimiento pt-BR (e-commerce) | MIT | Hugging Face |
+| neuralmind/bert-base-portuguese-cased (modelo base) | 108,9 M | 512 tokens | Modelo de lenguaje enmascarado pt-BR (requiere fine-tuning) | MIT | Hugging Face |
 | TF-IDF + regresion logistica (baseline del autor) | no aplica | no aplica | Clasificacion de sentimiento pt-BR | no disponible | Codigo en el repositorio del autor |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada mas alla del baseline incluido en la model card.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 - El modelo tiene muy poca traccion (40 descargas, 0 likes) y no cuenta con validacion de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Vwhtarj/bertimbau-avaliacoes-olist
+- Modelo en Hugging Face: https://huggingface.co/Vwhtarj/bertimbau-avaliacoes-olist
 - Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
 - Codigo, notebook de entrenamiento y baseline: https://github.com/Vwhatrj/classificador-avaliacoes
 - Dataset Olist Brazilian E-Commerce (Kaggle): https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce

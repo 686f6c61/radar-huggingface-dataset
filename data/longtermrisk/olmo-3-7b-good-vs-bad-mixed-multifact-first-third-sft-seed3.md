@@ -56,6 +56,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed3)
+- [Hugging Face: longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed3](https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-first-third-sft-seed3)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct) (enlace inferido, no incluido en la información proporcionada)
 - [Unsloth](https://github.com/unslothai/unsloth) (mencionado en la model card)

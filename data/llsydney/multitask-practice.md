@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLSYDNEY/multitask-practice es un repositorio de HuggingFace publicado por el usuario LLSYDNEY (Sydney Lee) que contiene una implementación personalizada y compacta en PyTorch de la arquitectura ALBEF orientada a experimentos de aprendizaje multitarea (multitask). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado en benchmarks.
+LLSYDNEY/multitask-practice es un repositorio de Hugging Face publicado por el usuario LLSYDNEY (Sydney Lee) que contiene una implementación personalizada y compacta en PyTorch de la arquitectura ALBEF orientada a experimentos de aprendizaje multitarea (multitask). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración "tiny" pensada para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado en benchmarks.
 
 El tamaño real declarado en los pesos safetensors es de 24.832 parámetros, lo que lo sitúa en un orden de magnitud de juguete (el repositorio ocupa 0,0 GB). La arquitectura registrada en `config.json` usa atención de consultas agrupadas (grouped query attention), fusión tipo Tucker, activación approx gelu y normalización layernorm, con una receta de entrenamiento por defecto basada en el optimizador LAMB y un schedule de warmup lineal.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLSYDNEY/multitask-practice | 24.832 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 6 descargas |
+| LLSYDNEY/multitask-practice | 24.832 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 6 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. La información proporcionada no incluye modelos comparables con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LLSYDNEY/multitask-practice
+- Modelo en Hugging Face: https://huggingface.co/LLSYDNEY/multitask-practice
 - Página de modelos del autor: https://huggingface.co/LLSYDNEY/models
 - Referencia contextual sobre aprendizaje multitarea (Wikipedia): https://en.wikipedia.org/wiki/Multi-task_learning
 - Referencia contextual sobre aprendizaje multitarea (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/

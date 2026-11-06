@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA napkin colab v1 es un modelo de vision-lenguaje-accion (VLA) entrenado por el usuario nobodyiam mediante LeRobot y publicado en HuggingFace Hub. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, orientado a una unica tarea robotica de manipulacion: coger una servilleta y colocarla sobre un papel blanco. El modelo consume el estado articular del robot y dos flujos de video (camaras "top" y "wrist") y produce un vector de accion de 6 dimensiones.
+SmolVLA napkin colab v1 es un modelo de vision-lenguaje-accion (VLA) entrenado por el usuario nobodyiam mediante LeRobot y publicado en Hugging Face Hub. Se trata de un ajuste fino (fine-tune) del modelo base lerobot/smolvla_base, orientado a una unica tarea robotica de manipulacion: coger una servilleta y colocarla sobre un papel blanco. El modelo consume el estado articular del robot y dos flujos de video (camaras "top" y "wrist") y produce un vector de accion de 6 dimensiones.
 
 SmolVLA es una familia de VLA compactos descrita en el paper arXiv:2506.01844, disenada para ofrecer un rendimiento competitivo a un coste computacional reducido y poder desplegarse en hardware de consumo. El checkpoint cuenta con 450.046.176 parametros (aproximadamente 450 millones), lo que lo situa muy por debajo de otros VLA de gran tamano, y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nobodyiam/smolvla_napkin_colab_v1 | 450.046.176 (aprox. 450 M) | no disponible | no disponible (sin evaluacion publicada) | apache-2.0 | HuggingFace Hub |
-| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace Hub |
-| OpenVLA | aproximadamente 7.000 millones (informacion publica del proyecto) | no disponible | no disponible | licencia abierta segun el proyecto | HuggingFace Hub |
+| nobodyiam/smolvla_napkin_colab_v1 | 450.046.176 (aprox. 450 M) | no disponible | no disponible (sin evaluacion publicada) | apache-2.0 | Hugging Face Hub |
+| lerobot/smolvla_base | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face Hub |
+| OpenVLA | aproximadamente 7.000 millones (informacion publica del proyecto) | no disponible | no disponible | licencia abierta segun el proyecto | Hugging Face Hub |
 | pi0 (Physical Intelligence) | aproximadamente 3.000 millones (informacion publica del proyecto) | no disponible | no disponible | no disponible en la informacion proporcionada | distribucion del proyecto |
 
 Nota: los datos de los modelos alternativos provienen de informacion publica general de cada proyecto y no de la informacion proporcionada para esta ficha; conviene verificarlos en sus repositorios oficiales.
@@ -84,7 +84,7 @@ Nota: los datos de los modelos alternativos provienen de informacion publica gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nobodyiam/smolvla_napkin_colab_v1
+- Modelo en Hugging Face: https://huggingface.co/nobodyiam/smolvla_napkin_colab_v1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/nobodyiam/lerobot_dataset_20261006_172352
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=nobodyiam/lerobot_dataset_20261006_172352

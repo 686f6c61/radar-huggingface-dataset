@@ -103,7 +103,7 @@ Comparativa limitada a las variantes de compresion del mismo modelo base publica
 
 - Sin MTP: al eliminar `mtp.0`, `mtp.1` y `mtp.2`, la decodificacion especulativa basada en multi-token prediction no esta disponible. Los motores que busquen esos pesos caeran a decodificacion ordinaria; el resto de la generacion estandar no se ve afectada.
 - Tool calling incompleto en la plantilla Jinja: `chat_template.jinja` no implementa tool calling, tokens de tarea internos, mensajes `developer` ni `latest_reminder`, ni el parametro `context` multi-turno. Para esos casos hay que usar `encoding/encoding_dsv4.py`.
-- Discrepancia de autoria: la ficha de HuggingFace atribuye el modelo a `Distillio`, mientras que la model card se titula `puwaer/DeepSeek-V4-Flash-0731-reap-150b` y los comandos de servicio apuntan a `puwaer/...`. Conviene verificar que el repositorio descargado es el esperado.
+- Discrepancia de autoria: la ficha de Hugging Face atribuye el modelo a `Distillio`, mientras que la model card se titula `puwaer/DeepSeek-V4-Flash-0731-reap-150b` y los comandos de servicio apuntan a `puwaer/...`. Conviene verificar que el repositorio descargado es el esperado.
 - Divergencia entre benchmarks y modelo base: la media agregada de esta version es 0,80 puntos superior a la del base, con MATH-500, HumanEval+ y MBPP+ al alza. Es un resultado contraintuitivo para una poda del 48% de los expertos y conviene tratarlo con cautela; ademas, los benchmarks se ejecutaron con `enable_thinking=false`, por lo que no reflejan el rendimiento en modo razonamiento.
 - Diagnostico de reconstruccion no trivial: el coseno minimo por capa es 0,8417 y la L2 relativa media 0,2068, lo que indica que algunas capas se reconstruyen bastante peor que la media. El propio autor advierte que es una metrica de compresion y no de calidad.
 - Ids y fechas del repositorio: la ficha indica fecha de creacion 2026-09-12 y 0 descargas, con lo que no hay validacion de la comunidad ni historial de uso en produccion.
@@ -115,7 +115,7 @@ Comparativa limitada a las variantes de compresion del mismo modelo base publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Distillio/DeepSeek-V4-Flash-0731-reap-150b
+- Modelo en Hugging Face: https://huggingface.co/Distillio/DeepSeek-V4-Flash-0731-reap-150b
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Herramienta de compresion: https://github.com/puwaer/moe-expert-compress
 - Paper REAM referenciado en la model card: arxiv:2510.13999

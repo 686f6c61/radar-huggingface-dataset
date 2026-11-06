@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thealper2/mlx-granite-4.0-1b-invoice-to-json` es un adaptador LoRA publicado en HuggingFace que convierte el texto extraido de una factura o nota de credito en un objeto JSON con ocho campos de cabecera: `vendor_name`, `invoice_number`, `invoice_date`, `currency`, `subtotal`, `tax`, `total` y `document_type`. No es un modelo autonomo: se carga sobre `ibm-granite/granite-4.0-1b` (commit `6a7381ba1f54d684ff508d991aeb7dc580157103`) y esta pensado para ejecutarse con MLX-LM sobre Apple Silicon.
+El modelo `thealper2/mlx-granite-4.0-1b-invoice-to-json` es un adaptador LoRA publicado en Hugging Face que convierte el texto extraido de una factura o nota de credito en un objeto JSON con ocho campos de cabecera: `vendor_name`, `invoice_number`, `invoice_date`, `currency`, `subtotal`, `tax`, `total` y `document_type`. No es un modelo autonomo: se carga sobre `ibm-granite/granite-4.0-1b` (commit `6a7381ba1f54d684ff508d991aeb7dc580157103`) y esta pensado para ejecutarse con MLX-LM sobre Apple Silicon.
 
 El adaptador resuelve un problema acotado de extraccion de informacion estructurada en el dominio de cuentas a pagar: dado el texto plano de un PDF digital, devuelve una unica linea de JSON con los importes, la fecha en formato ISO, la divisa y el tipo de documento. El modelo base tiene 1.631,75 millones de parametros y el adaptador anade 20,316 millones de parametros entrenables, con un footprint de memoria pico de 6,82 GB durante el entrenamiento en un Apple M1 de 8 GB.
 
@@ -93,7 +93,7 @@ La unica comparacion directa documentada es contra el modelo base sin adaptador,
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/thealper2/mlx-granite-4.0-1b-invoice-to-json
+- Repositorio Hugging Face del adaptador: https://huggingface.co/thealper2/mlx-granite-4.0-1b-invoice-to-json
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-1b
 - Dataset de evaluacion: https://huggingface.co/datasets/drew-ipp/invoice-extraction-benchmark
 - Repositorio del modelo base (pre-entrenamiento): https://huggingface.co/ibm-granite/granite-4.0-1b-base

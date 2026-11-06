@@ -23,7 +23,7 @@ Es relevante ahora porque ejemplifica una tendencia de especializacion extrema: 
 
 ## Arquitectura y entrenamiento
 
-La model card no detalla la arquitectura interna mas alla de describir el modelo como "byte-level" y "small-language-model". Los pesos se distribuyen en un formato binario propio del motor hCAWN, lo que impide inspeccionarlos o cargarlos con las herramientas habituales del ecosistema HuggingFace. El modelo opera junto a un pipeline determinista que incluye decodificacion restringida por gramatica (garantiza JSON valido y solo herramientas conocidas), anclaje de valores extraidos de la consulta, reglas de resolucion de fechas y horas relativas, disparadores por palabras clave y una puerta de confianza que suprime llamadas dudosas.
+La model card no detalla la arquitectura interna mas alla de describir el modelo como "byte-level" y "small-language-model". Los pesos se distribuyen en un formato binario propio del motor hCAWN, lo que impide inspeccionarlos o cargarlos con las herramientas habituales del ecosistema Hugging Face. El modelo opera junto a un pipeline determinista que incluye decodificacion restringida por gramatica (garantiza JSON valido y solo herramientas conocidas), anclaje de valores extraidos de la consulta, reglas de resolucion de fechas y horas relativas, disparadores por palabras clave y una puerta de confianza que suprime llamadas dudosas.
 
 El entrenamiento parte del dataset **Mobile Actions** de Google (licencia CC BY 4.0), con consultas y tool calls filtrados, aumentados con variantes de forma de consulta y ampliados con parafrasis. Las parafrasis de entrenamiento se generaron con Gemini 2.5 Flash Lite y se filtraron automaticamente. El conjunto de evaluacion con parafrasis se genero con GPT-4o-mini, deliberadamente distinto del modelo usado para aumentar los datos. No se emplearon datos privados ni de usuarios. No se especifica el numero de tokens de entrenamiento ni si hubo RLHF o DPO.
 
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/datatab/hcawn-fc7
+- Modelo en Hugging Face: https://huggingface.co/datatab/hcawn-fc7
 - Demo en vivo: https://cawnai.com
 - Paquete PyPI: https://pypi.org/project/hcawn-fc/
 - Repositorio GitHub: https://github.com/hCAWNfc/hcawnfc

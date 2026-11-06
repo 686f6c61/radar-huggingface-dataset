@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar (FID, CLIP score, MMLU, H
 
 | Modelo | Parámetros | Resolución | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IMG-50M (este) | 50,4M denoiser + 12,6M texto | 256x256 | 62 tokens | Apache 2.0 | HuggingFace (diffusers, custom code) |
-| AuroraIMG2-50M-Preview | 50M (misma arquitectura) | 256x256 | 62 tokens | No disponible en la información | HuggingFace (AuroraAI-Research) |
-| FLUX.2-small (decodificador) | No disponible | No disponible | No disponible | No disponible en la información | HuggingFace (black-forest-labs) |
+| IMG-50M (este) | 50,4M denoiser + 12,6M texto | 256x256 | 62 tokens | Apache 2.0 | Hugging Face (diffusers, custom code) |
+| AuroraIMG2-50M-Preview | 50M (misma arquitectura) | 256x256 | 62 tokens | No disponible en la información | Hugging Face (AuroraAI-Research) |
+| FLUX.2-small (decodificador) | No disponible | No disponible | No disponible | No disponible en la información | Hugging Face (black-forest-labs) |
 
 La comparación relevante es con AuroraIMG2-50M-Preview, del que IMG-50M es una reproducción con la misma arquitectura y nombres de parámetros, pero distinto entrenamiento (MuLoCo/Muon, tasa constante, WSM). Aurora obtiene mejor pérdida de validación (0,6929 frente a 0,7030-0,7044) gracias al decaimiento coseno. No se dispone de datos de benchmarks estándar para ninguno de los dos en la información proporcionada, por lo que no es posible comparar calidad perceptual (FID, CLIP score) de forma rigurosa.
 
@@ -94,7 +94,7 @@ La comparación relevante es con AuroraIMG2-50M-Preview, del que IMG-50M es una 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/cpral/HomeIMG-50M
+- Hugging Face del modelo: https://huggingface.co/cpral/HomeIMG-50M
 - Modelo de referencia AuroraIMG2-50M-Preview: https://huggingface.co/AuroraAI-Research/AuroraIMG2-50M-Preview
 - Decodificador FLUX.2-small: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder
 - Dataset de entrenamiento: https://huggingface.co/datasets/QLNI/FLUX-Reason-6M-flux2-latents

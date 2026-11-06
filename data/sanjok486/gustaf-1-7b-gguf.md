@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gustaf 1.7B es una variante cuantizada del modelo Qwen3-1.7B de Qwen, publicada por el usuario Sanjok486 en HuggingFace. Se trata de un modelo base de 1.720 millones de parametros que ha sido afinado mediante LoRA con un pequeño conjunto de ejemplos propios del autor, con un estilo conversacional concreto: desenfadado, breve y honesto. El modelo esta distribuido en formato GGUF con cuantizacion Q4_K_M, lo que lo hace especialmente adecuado para su ejecucion local mediante Ollama o llama.cpp sin necesidad de hardware dedicado.
+Gustaf 1.7B es una variante cuantizada del modelo Qwen3-1.7B de Qwen, publicada por el usuario Sanjok486 en Hugging Face. Se trata de un modelo base de 1.720 millones de parametros que ha sido afinado mediante LoRA con un pequeño conjunto de ejemplos propios del autor, con un estilo conversacional concreto: desenfadado, breve y honesto. El modelo esta distribuido en formato GGUF con cuantizacion Q4_K_M, lo que lo hace especialmente adecuado para su ejecucion local mediante Ollama o llama.cpp sin necesidad de hardware dedicado.
 
 Su relevancia radica en la eficiencia: al ser un modelo de menos de 2 mil millones de parametros cuantizado a 4 bits, ocupa aproximadamente 1,1 GB y puede ejecutarse en portatiles y ordenadores de consumo sin GPU dedicada. Esta orientado principalmente a conversacion en aleman (idioma declarado en la ficha), heredando las capacidades base de la familia Qwen3. Es un ejemplo representativo de la tendencia actual de publicar variantes ligeras afinadas por la comunidad para casos de uso concretos.
 
@@ -30,7 +30,7 @@ El conjunto de datos de entrenamiento es pequeño y privado: el autor describe "
 - Generacion de texto conversacional en aleman, con un estilo afinado hacia respuestas cortas, informales y directas.
 - Capacidades heredadas del modelo base Qwen3-1.7B: razonamiento general, resumen, preguntas y respuestas, y generacion de codigo basica.
 - Compatibilidad con el ecosistema Ollama y llama.cpp, lo que permite uso offline en local.
-- Etiquetado como "conversational" en HuggingFace, orientado a dialogo multi-turno.
+- Etiquetado como "conversational" en Hugging Face, orientado a dialogo multi-turno.
 - No se ha documentado soporte de tool calling, function calling, vision ni audio para esta variante afinada (el modelo base Qwen3-1.7B si soporta tool calling, pero no consta que se conserve tras el fine-tuning).
 
 ## Casos de uso
@@ -77,8 +77,8 @@ Gustaf 1.7B se diferencia de sus alternativas por su afinado especifico en alema
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanjok486/gustaf-1.7b-gguf
+- Modelo en Hugging Face: https://huggingface.co/Sanjok486/gustaf-1.7b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Documentacion de Ollama: https://ollama.com

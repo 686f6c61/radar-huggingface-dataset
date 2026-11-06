@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sona-privacy es un modelo publicado en HuggingFace por la organizacion zhiyuantechnology, distribuido bajo licencia Apache-2.0 y con acceso restringido (gated): es necesario aceptar condiciones en la plataforma para descargarlo. El repositorio ocupa 2,3 GB y contiene pesos en formato safetensors, con un total de 558.949.482 parametros (aproximadamente 560M).
+sona-privacy es un modelo publicado en Hugging Face por la organizacion zhiyuantechnology, distribuido bajo licencia Apache-2.0 y con acceso restringido (gated): es necesario aceptar condiciones en la plataforma para descargarlo. El repositorio ocupa 2,3 GB y contiene pesos en formato safetensors, con un total de 558.949.482 parametros (aproximadamente 560M).
 
 El modelo es un fine-tune de OpenMed/OpenMed-PII-mClinicalE5-Large-560M-v1, un modelo de la familia XLM-RoBERTa (asi lo indica la etiqueta de arquitectura) orientado, segun el nombre del modelo base, a la deteccion de informacion personal identificable (PII). Las etiquetas del repositorio ("medical" y "sona-ai") apuntan a un uso en el ambito clinico o medico, probablemente como componente de anonimizacion o filtrado de datos sensibles dentro de un pipeline mayor.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en FP16/BF16: aproximadamente 1,1-1,3 GB para los pesos.
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM es suficiente en la practica; una RTX 3060, RTX 4060 o superior resulta adecuada. Para despliegues de alto throughput, GPU de datacenter como A100 o H100 aportarian margen, aunque estan sobredimensionadas para este tamano.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU de consumo moderna e incluso podria ejecutarse en CPU para cargas de baja concurrencia.
-- Opciones de despliegue: al ser pesos safetensors de un modelo tipo encoder, el despliegue tipico seria mediante HuggingFace Transformers, ONNX Runtime o servicios de inferencia como TorchServe, Triton o Text Embeddings Inference. No hay confirmacion de soporte para vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
+- Opciones de despliegue: al ser pesos safetensors de un modelo tipo encoder, el despliegue tipico seria mediante Hugging Face Transformers, ONNX Runtime o servicios de inferencia como TorchServe, Triton o Text Embeddings Inference. No hay confirmacion de soporte para vLLM, llama.cpp u Ollama, que estan orientados a modelos generativos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,13 +74,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Riesgo de alucinacion: al ser presumiblemente un modelo de clasificacion y no generativo, el riesgo se traduce en falsos positivos y falsos negativos en la deteccion de entidades, un aspecto critico en contextos de privacidad.
 - Sesgos conocidos: no disponibles. Al no conocerse la composicion del dataset de entrenamiento, no puede descartarse sesgo linguistico, geografico o de dominio.
 - Limitaciones de contexto o idioma: no disponibles; el alcance multilingue real es incierto pese al prefijo "XLM" del modelo base.
-- Acceso restringido: el repositorio esta en modo gated, por lo que su uso requiere aceptar condiciones en HuggingFace, lo que puede complicar la integracion automatizada en pipelines.
+- Acceso restringido: el repositorio esta en modo gated, por lo que su uso requiere aceptar condiciones en Hugging Face, lo que puede complicar la integracion automatizada en pipelines.
 - Licencia Apache-2.0: permite uso comercial y modificacion, pero no exime de responsabilidades sobre el tratamiento de datos personales ni sustituye una evaluacion de cumplimiento normativo.
 - Advertencia para produccion: sin benchmarks publicados ni validacion independiente, no deberia desplegarse en entornos criticos de salud o proteccion de datos sin una evaluacion previa sobre datos representativos del dominio objetivo.
 - Adopcion nula en la plataforma: 0 descargas y 0 "likes" en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhiyuantechnology/sona-privacy
+- Modelo en Hugging Face: https://huggingface.co/zhiyuantechnology/sona-privacy
 - Modelo base declarado: OpenMed/OpenMed-PII-mClinicalE5-Large-560M-v1 (referencia en las etiquetas del repositorio; no se ha localizado URL directa en la busqueda web)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales relacionados con este modelo en los resultados de busqueda disponibles.

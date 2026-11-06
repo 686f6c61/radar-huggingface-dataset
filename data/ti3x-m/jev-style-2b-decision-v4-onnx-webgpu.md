@@ -76,8 +76,8 @@ No se dispone de información sobre modelos comparables de decisión multimodal 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-Style 2B Decision v4 ONNX/WebGPU (este) | 2B | 512 / 1.024 / 2.048 (fijo) | ONNX FP16 | Apache 2.0 | HuggingFace, experimental |
-| chaoliangUNSW/Jev-Style-2B-Decision-v4 (base) | 2B | 32.768 (original) | no disponible | no disponible | HuggingFace |
+| Jev-Style 2B Decision v4 ONNX/WebGPU (este) | 2B | 512 / 1.024 / 2.048 (fijo) | ONNX FP16 | Apache 2.0 | Hugging Face, experimental |
+| chaoliangUNSW/Jev-Style-2B-Decision-v4 (base) | 2B | 32.768 (original) | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de información sobre modelos comparables de decisión multimodal 
 
 ## Enlaces
 
-- [HuggingFace: ti3x-m/Jev-Style-2B-Decision-v4-ONNX-WebGPU](https://huggingface.co/ti3x-m/Jev-Style-2B-Decision-v4-ONNX-WebGPU)
+- [Hugging Face: ti3x-m/Jev-Style-2B-Decision-v4-ONNX-WebGPU](https://huggingface.co/ti3x-m/Jev-Style-2B-Decision-v4-ONNX-WebGPU)
 - [Modelo base: chaoliangUNSW/Jev-Style-2B-Decision-v4](https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4)
 - [Ejemplos de contexto largo](fixtures/context-examples.json)
 - [Resultados de validación en navegador](validation/context-webgpu.json)

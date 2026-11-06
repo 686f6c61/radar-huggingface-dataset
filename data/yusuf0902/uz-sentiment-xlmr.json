@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "yusuf0902/uz-sentiment-xlmr",
+  "slug": "yusuf0902-uz-sentiment-xlmr",
+  "author": "yusuf0902",
+  "url": "https://huggingface.co/yusuf0902/uz-sentiment-xlmr",
+  "created_at": "2026-11-02T09:45:17.000Z",
+  "updated_at": "2026-11-02T09:52:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "sentiment-analysis",
+    "uzbek",
+    "uz",
+    "dataset:behbudiy/uzbek-sentiment-analysis",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129303192,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dyanne05/xlmr-uzbek-sentiment · Hugging Face",
+      "url": "https://huggingface.co/Dyanne05/xlmr-uzbek-sentiment",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dyanne05/xlmr-uzbek-sentiment at main - Hugging Face",
+      "url": "https://huggingface.co/Dyanne05/xlmr-uzbek-sentiment/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

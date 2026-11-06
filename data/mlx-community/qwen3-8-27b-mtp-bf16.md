@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-bf16
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de `mlx-vlm`: no disponible en la información proporcionada

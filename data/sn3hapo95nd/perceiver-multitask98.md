@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Perceiver multitask98 es un prototipo de investigacion publicado en HuggingFace por el usuario sn3hapo95nd bajo licencia MIT. Se trata de una implementacion propia de la arquitectura Perceiver, orientada a tareas multitarea, distribuida en configuracion "tiny" y acompanada de un pipeline ejecutable en Python, un `config.json` y un `training_args.json` con la receta de entrenamiento por defecto. El repositorio ocupa 0.0 GB y no acumula descargas ni likes en el momento de la consulta.
+Perceiver multitask98 es un prototipo de investigacion publicado en Hugging Face por el usuario sn3hapo95nd bajo licencia MIT. Se trata de una implementacion propia de la arquitectura Perceiver, orientada a tareas multitarea, distribuida en configuracion "tiny" y acompanada de un pipeline ejecutable en Python, un `config.json` y un `training_args.json` con la receta de entrenamiento por defecto. El repositorio ocupa 0.0 GB y no acumula descargas ni likes en el momento de la consulta.
 
 El dato mas relevante para un evaluador es que el checkpoint incluido (`model.safetensors`) no es un modelo entrenado, sino una inicializacion valida para pruebas de humo. La propia model card indica explicitamente que no se reclama ninguna puntuacion de benchmark y que los valores de configuracion son puntos de partida del script, no evidencia de un entrenamiento completado. El recuento de parametros reportado en safetensors es de 33.088, un orden de magnitud propio de un prototipo de juguete mas que de un modelo utilizable.
 
@@ -84,7 +84,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| perceiver-multitask98 | 33.088 | no disponible | MIT | HuggingFace, sin descargas |
+| perceiver-multitask98 | 33.088 | no disponible | MIT | Hugging Face, sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,6 +102,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sn3hapo95nd/perceiver-multitask98
+- Modelo en Hugging Face: https://huggingface.co/sn3hapo95nd/perceiver-multitask98
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.
 - Referencias de la busqueda web: los resultados obtenidos no guardan relacion con el modelo (contenido administrativo sobre attestations de derechos sanitarios en Francia), por lo que no se incluyen.

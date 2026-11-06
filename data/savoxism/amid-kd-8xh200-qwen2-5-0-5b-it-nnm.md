@@ -89,10 +89,10 @@ Advertencia metodológica del propio autor: no se evaluó ninguna línea base (n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| amid-kd-8xh200-qwen2.5-0.5b-it-nnm | ~0,5 B | 32.768 (heredado del base) | Apache 2.0 | HuggingFace, solo `pytorch_model.bin` | Checkpoint de destilacion degradado; benchmarks propios muy bajos |
-| Qwen2.5-0.5B-Instruct (base) | ~0,5 B | 32.768 | Apache 2.0 | HuggingFace, safetensors y GGUF | Modelo instruct de referencia de la misma familia; su rendimiento en benchmarks no se incluye en la informacion disponible |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Apache 2.0 | HuggingFace, safetensors y GGUF | Alternativa de mayor tamano y calidad dentro de la misma familia; cifras comparativas no disponibles en la informacion proporcionada |
-| SmolLM2-360M-Instruct | ~0,36 B | 8.192 | Apache 2.0 | HuggingFace, safetensors y GGUF | Alternativa de tamano similar orientada a dispositivos; cifras comparativas no disponibles |
+| amid-kd-8xh200-qwen2.5-0.5b-it-nnm | ~0,5 B | 32.768 (heredado del base) | Apache 2.0 | Hugging Face, solo `pytorch_model.bin` | Checkpoint de destilacion degradado; benchmarks propios muy bajos |
+| Qwen2.5-0.5B-Instruct (base) | ~0,5 B | 32.768 | Apache 2.0 | Hugging Face, safetensors y GGUF | Modelo instruct de referencia de la misma familia; su rendimiento en benchmarks no se incluye en la informacion disponible |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 | Apache 2.0 | Hugging Face, safetensors y GGUF | Alternativa de mayor tamano y calidad dentro de la misma familia; cifras comparativas no disponibles en la informacion proporcionada |
+| SmolLM2-360M-Instruct | ~0,36 B | 8.192 | Apache 2.0 | Hugging Face, safetensors y GGUF | Alternativa de tamano similar orientada a dispositivos; cifras comparativas no disponibles |
 
 No se dispone de resultados de benchmarks de los modelos comparables dentro de la información proporcionada, por lo que la comparación cuantitativa de rendimiento queda como no disponible.
 
@@ -113,7 +113,7 @@ No se dispone de resultados de benchmarks de los modelos comparables dentro de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Savoxism/amid-kd-8xh200-qwen2.5-0.5b-it-nnm
+- Modelo en Hugging Face: https://huggingface.co/Savoxism/amid-kd-8xh200-qwen2.5-0.5b-it-nnm
 - Modelo base (alumno): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/VoCuc/UltraInteract-Infer

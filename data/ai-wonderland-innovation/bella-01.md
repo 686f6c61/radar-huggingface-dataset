@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BELLA.01 es un modelo publicado en HuggingFace por el usuario ai-wonderland-innovation bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. No hay pipeline declarado, no consta ningún idioma soportado y el repositorio no registra descargas ni likes en el momento de la consulta.
+BELLA.01 es un modelo publicado en Hugging Face por el usuario ai-wonderland-innovation bajo licencia MIT. La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. No hay pipeline declarado, no consta ningún idioma soportado y el repositorio no registra descargas ni likes en el momento de la consulta.
 
 Por tanto, no es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su ventana de contexto a partir de la información disponible. El modelo se creó y actualizó el 1 de noviembre de 2026, sin documentación técnica adicional publicada en el repositorio.
 
@@ -67,7 +67,7 @@ No disponible. Al desconocerse el tamaño, la arquitectura y las capacidades del
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| BELLA.01 | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| BELLA.01 | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -84,5 +84,5 @@ No disponible. Al desconocerse el tamaño, la arquitectura y las capacidades del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-wonderland-innovation/BELLA.01
+- Hugging Face: https://huggingface.co/ai-wonderland-innovation/BELLA.01
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Robinsinfun/Qwen2.5-Coder-32B-Instruct` es una redistribución en HuggingFace de los pesos del modelo Qwen2.5-Coder-32B-Instruct desarrollado por el equipo Qwen de Alibaba Cloud. Se trata de un modelo de lenguaje causal decoder-only especializado en código, con 32.763.876.352 parámetros totales (31.000 millones no correspondientes a embeddings) y una longitud de contexto nativa de 131.072 tokens, ampliable mediante YaRN. El repositorio lo publica el usuario `Robinsinfun`, no el equipo original, y no registra descargas ni valoraciones en el momento de la consulta.
+`Robinsinfun/Qwen2.5-Coder-32B-Instruct` es una redistribución en Hugging Face de los pesos del modelo Qwen2.5-Coder-32B-Instruct desarrollado por el equipo Qwen de Alibaba Cloud. Se trata de un modelo de lenguaje causal decoder-only especializado en código, con 32.763.876.352 parámetros totales (31.000 millones no correspondientes a embeddings) y una longitud de contexto nativa de 131.072 tokens, ampliable mediante YaRN. El repositorio lo publica el usuario `Robinsinfun`, no el equipo original, y no registra descargas ni valoraciones en el momento de la consulta.
 
 El modelo resuelve tareas de generación, razonamiento y reparación de código, y está entrenado sobre 5,5 billones de tokens que combinan código fuente, datos de grounding texto-código y datos sintéticos, según la model card. Mantiene además competencias en matemáticas y tareas generales, lo que lo orienta a flujos de agentes de código y asistentes de desarrollo.
 
@@ -90,7 +90,7 @@ Rendimiento comparado: no disponible en la información proporcionada. La model 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta ficha): https://huggingface.co/Robinsinfun/Qwen2.5-Coder-32B-Instruct
+- Repositorio en Hugging Face (esta ficha): https://huggingface.co/Robinsinfun/Qwen2.5-Coder-32B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-32B
 - Repositorio oficial del modelo instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct/blob/main/LICENSE

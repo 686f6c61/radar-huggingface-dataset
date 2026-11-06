@@ -70,9 +70,9 @@ Las filas de Decision Index son puntuaciones de habilidad corregidas por azar (0
 
 | Modelo | Parámetros | Contexto | Decision Index 0.3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StandardOne-35B-SH | 35,1B totales / ~3B activos | 32.768 tokens | 66,26 | Apache-2.0 | HuggingFace |
-| StandardOne-8B-SH | No disponible | No disponible | 57,40 | Apache-2.0 | HuggingFace |
-| StandardOne-3B-SH | No disponible | No disponible | 58,08 | Apache-2.0 | HuggingFace |
+| StandardOne-35B-SH | 35,1B totales / ~3B activos | 32.768 tokens | 66,26 | Apache-2.0 | Hugging Face |
+| StandardOne-8B-SH | No disponible | No disponible | 57,40 | Apache-2.0 | Hugging Face |
+| StandardOne-3B-SH | No disponible | No disponible | 58,08 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos de decisión de otros desarrolladores en la información proporcionada para establecer una comparación externa.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de modelos de decisión de otros desarrolla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StandardThinking/StandardOne-35B-SH
+- Modelo en Hugging Face: https://huggingface.co/StandardThinking/StandardOne-35B-SH
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - StandardOne-8B-SH: https://huggingface.co/StandardThinking/StandardOne-8B-SH
 - StandardOne-3B-SH: https://huggingface.co/StandardThinking/StandardOne-3B-SH

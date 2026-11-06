@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yumakobayashi2/mocov3-classification-lite4` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo para entrenar y evaluar un clasificador basado en una implementacion propia denominada "Mocov3". No se trata de un modelo entrenado ni de un checkpoint listo para produccion: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo ("smoke tests") y no un modelo de referencia con resultados de benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
+`yumakobayashi2/mocov3-classification-lite4` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo para entrenar y evaluar un clasificador basado en una implementacion propia denominada "Mocov3". No se trata de un modelo entrenado ni de un checkpoint listo para produccion: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo ("smoke tests") y no un modelo de referencia con resultados de benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
 El peso del repositorio es de 0,0 GB y el recuento de parametros registrado en los safetensors es de 24.832, una cifra extraordinariamente baja para una arquitectura que el autor etiqueta como escala "base". La configuracion declarada combina atencion *grouped query*, fusion tipo Tucker, activacion mish y normalizacion layernorm, lo que no coincide con la definicion habitual de MoCo v3 como metodo de aprendizaje autosupervisado contrastivo para vision; se trata, por tanto, de una implementacion personalizada que reutiliza el nombre.
 
@@ -24,7 +24,7 @@ Su relevancia actual es limitada y de naturaleza distinta a la de un modelo desp
 | Activacion | mish |
 | Normalizacion | layernorm |
 | Optimizador por defecto | lamb con planificador exponencial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion (metadatos) | 2026-09-16 |
 | Fecha de actualizacion (metadatos) | 2026-09-08 |
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, el repositorio no documenta ninguna ejecucion comple
 - Plantilla para experimentos de ablation arquitectonica: al mantener una escala base "manejable", permite sustituir la fusion Tucker, la activacion mish o el esquema de atencion grouped query y medir el efecto con la misma receta de datos y el mismo presupuesto de ajuste.
 - Referencia de buenas practicas de evaluacion: el propio repositorio propone evaluar sobre una division etiquetada especifica de la tarea, reportar la metrica a lo largo de al menos tres semillas e incluir una linea base con capacidad equivalente; sirve como guia metodologica para estudiantes e investigadores.
 - Proyecto docente de aprendizaje autosupervisado: el nombre MoCo v3 permite usarlo como excusa para explicar la diferencia entre un metodo contrastivo de preentrenamiento y un cabezal de clasificacion supervisado, comparando lo que el repositorio implementa realmente con el metodo original.
-- Auditoria de artefactos sospechosos en HuggingFace: con 0 descargas, 0 likes, un recuento de 24.832 parametros incoherente con la escala declarada y una fecha de creacion en 2026, es un caso de estudio util para practicar la revision critica de repositorios antes de reutilizarlos.
+- Auditoria de artefactos sospechosos en Hugging Face: con 0 descargas, 0 likes, un recuento de 24.832 parametros incoherente con la escala declarada y una fecha de creacion en 2026, es un caso de estudio util para practicar la revision critica de repositorios antes de reutilizarlos.
 - Integracion en un *harness* interno de pruebas de regresion: comprobar que la libreria de carga de safetensors, las versiones de PyTorch y las utilidades propias siguen funcionando tras actualizaciones de dependencias, usando un modelo de juguete de coste despreciable.
 - Generacion de datos sinteticos de prueba para clasificacion: al ser un modelo diminuto y no entrenado, solo puede emplearse para validar el cableado del *dataset*, el *dataloader* y las metricas, nunca para obtener predicciones con significado.
 
@@ -100,8 +100,8 @@ Las cifras de memoria de esta seccion son estimaciones aritmeticas derivadas del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yumakobayashi2/mocov3-classification-lite4
+- Repositorio en Hugging Face: https://huggingface.co/yumakobayashi2/mocov3-classification-lite4
 - Archivos internos citados en la *model card*: `train.py`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana de archivos del repositorio anterior)
 - Paper original de MoCo v3 (referencia contextual, no obtenida en la busqueda web realizada y no verificada): https://arxiv.org/abs/2104.02057
 - Resultados de la busqueda web: no se recupero ningun enlace relevante para este modelo. Las unicas entradas devueltas fueron paginas genericas de Wikipedia (wikipedia.org, en.wikipedia.org, simple.wikipedia.org, gpe.wikipedia.org), sin relacion con el repositorio.
-- No se han encontrado papers, blogs, repositorios auxiliares, demos ni espacios de HuggingFace asociados a este modelo en la informacion disponible.
+- No se han encontrado papers, blogs, repositorios auxiliares, demos ni espacios de Hugging Face asociados a este modelo en la informacion disponible.

@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e2e-bsf-dinov3-imagenette-full-block-kl-seed103 | 9.599.498 | no aplica (visión) | KL 0,0367 nats/imagen; precisión 99,43 % | MIT (backbone aparte) | HuggingFace, 23 descargas |
+| e2e-bsf-dinov3-imagenette-full-block-kl-seed103 | 9.599.498 | no aplica (visión) | KL 0,0367 nats/imagen; precisión 99,43 % | MIT (backbone aparte) | Hugging Face, 23 descargas |
 | SAE ReLU convencional sobre DINOv3 | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Block-sparse featurizer de Goodfire | no disponible | no aplica | no disponible | no disponible | repositorio público |
 | DINOv3 ViT-B/16 (backbone) | no disponible en la información | no aplica | no disponible | licencia propia de DINOv3 | acceso autorizado |
@@ -93,7 +93,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-seed103
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-seed103
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Prerregistro: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

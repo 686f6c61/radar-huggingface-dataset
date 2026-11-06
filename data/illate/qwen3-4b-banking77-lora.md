@@ -76,10 +76,10 @@ Datos adicionales reportados por el autor:
 
 | Modelo | Parametros | Contexto | Rendimiento en Banking77 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| illate/qwen3-4b-banking77-lora | ~4B (base) + adaptador LoRA | No especificado | 94,0% accuracy, 94,0% macro-F1 | Apache 2.0 | HuggingFace (peft) |
-| AzadDjan/Qwen3-4B-banking77-lora | ~4B (base Qwen3-4B-Base) | No especificado | Valor no disponible en la busqueda | No disponible | HuggingFace |
+| illate/qwen3-4b-banking77-lora | ~4B (base) + adaptador LoRA | No especificado | 94,0% accuracy, 94,0% macro-F1 | Apache 2.0 | Hugging Face (peft) |
+| AzadDjan/Qwen3-4B-banking77-lora | ~4B (base Qwen3-4B-Base) | No especificado | Valor no disponible en la busqueda | No disponible | Hugging Face |
 | TF-IDF + regresion logistica | No es un modelo neuronal | No aplica | 89,3% accuracy, 89,3% macro-F1 | No disponible | Linea base local |
-| Qwen3-4B-Instruct-2507 sin ajuste fino | ~4B | No especificado | 63,1% accuracy | Apache 2.0 | HuggingFace |
+| Qwen3-4B-Instruct-2507 sin ajuste fino | ~4B | No especificado | 63,1% accuracy | Apache 2.0 | Hugging Face |
 
 La comparativa directa con otras aproximaciones publicadas a Banking77 (por ejemplo, los sentence encoders duales de Casanueva et al., 2020, que es la referencia del dataset) no esta disponible en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ La comparativa directa con otras aproximaciones publicadas a Banking77 (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/illate/qwen3-4b-banking77-lora
+- Modelo en Hugging Face: https://huggingface.co/illate/qwen3-4b-banking77-lora
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Sitio del autor ILLATE: https://illate.dev/
 - Alternativa comunitaria AzadDjan/Qwen3-4B-banking77-lora: https://huggingface.co/AzadDjan/Qwen3-4B-banking77-lora

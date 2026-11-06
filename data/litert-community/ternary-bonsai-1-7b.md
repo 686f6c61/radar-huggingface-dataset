@@ -25,7 +25,7 @@ El contexto máximo del modelo es 32768 tokens (`max_position_embeddings`), aunq
 | Modelo original | Qwen/Qwen3-1.7B, Copyright 2024 Alibaba Cloud, Apache-2.0 |
 | Plantilla de chat | Qwen3 ChatML con bloque de razonamiento intacto |
 | Tamaño del repositorio | 3,4 GB (cinco builds) |
-| Fecha de creación (HuggingFace) | 2026-09-10 |
+| Fecha de creación (Hugging Face) | 2026-09-10 |
 | Descargas / likes | 0 / 0 |
 
 Parámetros de muestreo por defecto incluidos en el `LlmMetadata` de cada bundle:
@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización / formato | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| litert-community/Ternary-Bonsai-1.7B (este) | 1,7 B | 32768 (build recomendada 4096) | INT2 ternario, `.litertlm` para LiteRT-LM | Apache-2.0 | HuggingFace, 0 descargas | no disponibles |
-| prism-ml/Ternary-Bonsai-1.7B-unpacked | 1,7 B | no disponible | Pesos sin empaquetar para LiteRT-LM (modelo base) | Apache-2.0 | HuggingFace | no disponibles |
-| Qwen/Qwen3-1.7B | 1,7 B | no disponible en la información proporcionada | Pesos en precisión original | Apache-2.0 | HuggingFace | no disponibles |
+| litert-community/Ternary-Bonsai-1.7B (este) | 1,7 B | 32768 (build recomendada 4096) | INT2 ternario, `.litertlm` para LiteRT-LM | Apache-2.0 | Hugging Face, 0 descargas | no disponibles |
+| prism-ml/Ternary-Bonsai-1.7B-unpacked | 1,7 B | no disponible | Pesos sin empaquetar para LiteRT-LM (modelo base) | Apache-2.0 | Hugging Face | no disponibles |
+| Qwen/Qwen3-1.7B | 1,7 B | no disponible en la información proporcionada | Pesos en precisión original | Apache-2.0 | Hugging Face | no disponibles |
 
 La información proporcionada no permite una comparación cuantitativa de rendimiento entre estas alternativas, ya que ninguna de ellas incluye resultados de benchmarks. Las diferencias documentadas son de formato, precisión y runtime objetivo: el modelo de este repositorio está específicamente empaquetado para el backend GPU móvil de LiteRT-LM, mientras que el checkpoint de Qwen es el modelo original sin cuantizar.
 
@@ -107,11 +107,11 @@ La información proporcionada no permite una comparación cuantitativa de rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/litert-community/Ternary-Bonsai-1.7B
+- Repositorio en Hugging Face: https://huggingface.co/litert-community/Ternary-Bonsai-1.7B
 - Modelo base (sin empaquetar): https://huggingface.co/prism-ml/Ternary-Bonsai-1.7B-unpacked
 - Modelo original: https://huggingface.co/Qwen/Qwen3-1.7B
 - Licencia de Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - Google AI Edge Gallery: https://github.com/google-ai-edge/gallery
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de HuggingFace y de la model card.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información de Hugging Face y de la model card.

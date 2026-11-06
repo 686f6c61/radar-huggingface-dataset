@@ -2,11 +2,11 @@
 
 ## Resumen
 
-GLM-4-9B-Chat es la version alineada con preferencias humanas del modelo preentrenado GLM-4-9B, desarrollado por Zhipu AI (publicado en HuggingFace bajo la organizacion zai-org y THUDM). Se trata de un transformer decoder-only de aproximadamente 9.400 millones de parametros (9.399.951.392 segun los pesos en safetensors) disenado para conversacion multi-turno y tareas de razonamiento, matematicas y generacion de codigo. Su relevancia radica en que, con un tamano contenido, iguala o supera a Llama-3-8B-Instruct en benchmarks de razonamiento, matematicas y codigo, y se acerca a gpt-4-turbo-2024-04-09 en capacidad de llamada a funciones.
+GLM-4-9B-Chat es la version alineada con preferencias humanas del modelo preentrenado GLM-4-9B, desarrollado por Zhipu AI (publicado en Hugging Face bajo la organizacion zai-org y THUDM). Se trata de un transformer decoder-only de aproximadamente 9.400 millones de parametros (9.399.951.392 segun los pesos en safetensors) disenado para conversacion multi-turno y tareas de razonamiento, matematicas y generacion de codigo. Su relevancia radica en que, con un tamano contenido, iguala o supera a Llama-3-8B-Instruct en benchmarks de razonamiento, matematicas y codigo, y se acerca a gpt-4-turbo-2024-04-09 en capacidad de llamada a funciones.
 
 Este repositorio concreto soporta una longitud de contexto de 128.000 tokens (con una variante separada, GLM-4-9B-Chat-1M, que alcanza 1.000.000 de tokens). El modelo incorpora capacidades avanzadas como navegacion web, ejecucion de codigo, llamada a funciones personalizadas y razonamiento sobre contextos largos. Aunque los metadatos declaran idiomas zh y en, el autor afirma soporte para 26 idiomas, incluyendo japones, coreano y aleman.
 
-El modelo se publico el 4 de junio de 2024 y se actualizo por ultima vez el 13 de marzo de 2025. Acumula mas de 87.000 descargas y 771 likes en HuggingFace. Su licencia es la "glm-4", una licencia personalizada de tipo "other" que conviene revisar antes de un uso comercial.
+El modelo se publico el 4 de junio de 2024 y se actualizo por ultima vez el 13 de marzo de 2025. Acumula mas de 87.000 descargas y 771 likes en Hugging Face. Su licencia es la "glm-4", una licencia personalizada de tipo "other" que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo se publico el 4 de junio de 2024 y se actualizo por ultima vez el 13 d
 
 ## Arquitectura y entrenamiento
 
-GLM-4-9B-Chat es un modelo de la familia GLM-4 basado en una arquitectura transformer decoder-only, con implementacion personalizada (etiqueta custom_code en HuggingFace), por lo que requiere `trust_remote_code=True` para cargarse. El modelo parte de un preentrenamiento a gran escala y posteriormente se somete a un proceso de alineacion con preferencias humanas (el autor lo describe como version "human preference aligned"). No se detallan en la informacion disponible el numero exacto de tokens de entrenamiento ni la composicion completa del dataset.
+GLM-4-9B-Chat es un modelo de la familia GLM-4 basado en una arquitectura transformer decoder-only, con implementacion personalizada (etiqueta custom_code en Hugging Face), por lo que requiere `trust_remote_code=True` para cargarse. El modelo parte de un preentrenamiento a gran escala y posteriormente se somete a un proceso de alineacion con preferencias humanas (el autor lo describe como version "human preference aligned"). No se detallan en la informacion disponible el numero exacto de tokens de entrenamiento ni la composicion completa del dataset.
 
 Una de las innovaciones tecnicas destacadas es el trabajo de escalado de contexto largo, documentado por el autor en un informe tecnico especifico (GLM-Long: scaling pre-trained model contexts to millions). Esto permite que la variante estandar maneje 128K tokens y que la variante 1M alcance aproximadamente dos millones de caracteres chinos de contexto, con buen rendimiento en la prueba de "aguja en un pajar" a 1M de contexto. No se indica en la informacion proporcionada si se empleo RLHF, DPO u otra tecnica de alineacion concreta.
 
@@ -97,9 +97,9 @@ Tambien se reportan resultados del experimento de "aguja en un pajar" a 1M de co
 
 | Modelo | Parametros | Contexto | MMLU | HumanEval | Function calling (Overall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| GLM-4-9B-Chat | 9,4 B | 128K (1M en variante) | 72,4 | 71,8 | 81,00 | glm-4 (other) | HuggingFace (zai-org / THUDM) |
-| Llama-3-8B-Instruct | 8 B | 8K (segun version) | 68,4 | 62,2 | 58,88 | Llama 3 (propietaria) | HuggingFace / Meta |
-| ChatGLM3-6B | 6 B | no disponible en la informacion | 66,4 | 58,5 | 57,88 | glm-3 | HuggingFace (THUDM) |
+| GLM-4-9B-Chat | 9,4 B | 128K (1M en variante) | 72,4 | 71,8 | 81,00 | glm-4 (other) | Hugging Face (zai-org / THUDM) |
+| Llama-3-8B-Instruct | 8 B | 8K (segun version) | 68,4 | 62,2 | 58,88 | Llama 3 (propietaria) | Hugging Face / Meta |
+| ChatGLM3-6B | 6 B | no disponible en la informacion | 66,4 | 58,5 | 57,88 | glm-3 | Hugging Face (THUDM) |
 | gpt-4-turbo-2024-04-09 | no disponible | no disponible | no disponible | no disponible | 81,24 | propietaria | API de OpenAI |
 
 GLM-4-9B-Chat destaca frente a Llama-3-8B-Instruct en MMLU (72,4 vs 68,4), MATH (50,6 vs 30,0), HumanEval (71,8 vs 62,2) y en function calling (81,00 vs 58,88), y se aproxima a gpt-4-turbo en esta ultima tarea. La comparacion de contexto con Llama-3-8B-Instruct depende de la version concreta de este ultimo.
@@ -116,7 +116,7 @@ GLM-4-9B-Chat destaca frente a Llama-3-8B-Instruct en MMLU (72,4 vs 68,4), MATH 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zai-org/glm-4-9b-chat
+- Modelo en Hugging Face: https://huggingface.co/zai-org/glm-4-9b-chat
 - Repositorio alternativo recomendado: https://huggingface.co/THUDM/glm-4-9b-chat-hf
 - Licencia: https://huggingface.co/THUDM/glm-4-9b-chat/blob/main/LICENSE
 - Repositorio GitHub (inferencia y dependencias): https://github.com/THUDM/GLM-4

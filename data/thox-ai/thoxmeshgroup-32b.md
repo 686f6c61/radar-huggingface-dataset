@@ -75,7 +75,7 @@ El propio autor advierte que el throughput debe tratarse como un suelo en condic
 | Modelo | Parámetros | Contexto | Licencia | Distribución | Notas |
 |---|---|---|---|---|---|
 | ThoxMeshGroup-32B | 32B denso | 8.192 verificados | Apache-2.0 | Ollama (config) + pesos upstream | Sin entrenamiento propio; perfil y knowledge pack |
-| Qwen3-32B (upstream) | 32B denso | no disponible en esta ficha | Apache-2.0 | HuggingFace, Ollama | Base byte-idéntica; sin perfil ni pack |
+| Qwen3-32B (upstream) | 32B denso | no disponible en esta ficha | Apache-2.0 | Hugging Face, Ollama | Base byte-idéntica; sin perfil ni pack |
 | Alternativas de 32B denso de otros fabricantes | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 La comparación relevante es contra el propio base: ThoxMeshGroup-32B no mejora las capacidades de Qwen3-32B, sino que fija un comportamiento y un corpus en contexto. Frente a otras alternativas de la misma categoría, no hay datos de benchmarks que permitan una comparación rigurosa.
@@ -95,7 +95,7 @@ La comparación relevante es contra el propio base: ThoxMeshGroup-32B no mejora 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxMeshGroup-32B
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxMeshGroup-32B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Ejecución vía Ollama: `ollama run Thox-ai/thoxmeshgroup-32b`
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

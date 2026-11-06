@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oanwachukwu/swin-t-finetuned` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura Swin T orientada a clasificación de imágenes. El autor lo publica como punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no como un checkpoint entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), con 16.576 parámetros en total según los metadatos de safetensors.
+`oanwachukwu/swin-t-finetuned` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura Swin T orientada a clasificación de imágenes. El autor lo publica como punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y no como un checkpoint entrenado ni evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests), con 16.576 parámetros en total según los metadatos de safetensors.
 
 A pesar de que la model card etiqueta internamente la configuración como "xlarge", el recuento real de parámetros es de apenas 16.576, muy lejos de los ~28 millones de parámetros de un Swin-T estándar de Microsoft. Esto confirma que se trata de un esqueleto de código reducido, pensado para validar que el pipeline de entrenamiento arranca y que las formas de los tensores son correctas, no para producir predicciones útiles.
 
@@ -64,9 +64,9 @@ Los valores de las arquitecturas de referencia corresponden a cifras publicadas 
 
 | Modelo | Parametros | Tarea | Checkpoint entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oanwachukwu/swin-t-finetuned | 16.576 (según safetensors) | Clasificación de imágenes | No (inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
-| microsoft/swin-tiny-patch4-window7-224 (referencia) | ~28 M | Clasificación de imágenes | Sí | MIT (implementación oficial) | HuggingFace / GitHub |
-| facebook/deit-tiny-patch16-224 (referencia) | ~5,7 M | Clasificación de imágenes | Sí | Apache-2.0 | HuggingFace |
+| oanwachukwu/swin-t-finetuned | 16.576 (según safetensors) | Clasificación de imágenes | No (inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
+| microsoft/swin-tiny-patch4-window7-224 (referencia) | ~28 M | Clasificación de imágenes | Sí | MIT (implementación oficial) | Hugging Face / GitHub |
+| facebook/deit-tiny-patch16-224 (referencia) | ~5,7 M | Clasificación de imágenes | Sí | Apache-2.0 | Hugging Face |
 
 La diferencia fundamental no está en la arquitectura nominal, sino en el estado del artefacto: mientras las referencias son checkpoints entrenados y evaluados, este repositorio es un esqueleto de código con pesos sin entrenar. No hay datos de contexto, throughput ni métricas que permitan una comparación cuantitativa de rendimiento.
 
@@ -84,8 +84,8 @@ La diferencia fundamental no está en la arquitectura nominal, sino en el estado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oanwachukwu/swin-t-finetuned
+- Hugging Face: https://huggingface.co/oanwachukwu/swin-t-finetuned
 - Implementación oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer
-- Documentación de Swin en HuggingFace Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/swin.md
-- Tutorial de fine-tuning de Swin Transformer con HuggingFace: https://blog.devgenius.io/how-to-fine-tune-swin-transformer-using-huggingface-83b5a1e5b51d
+- Documentación de Swin en Hugging Face Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/swin.md
+- Tutorial de fine-tuning de Swin Transformer con Hugging Face: https://blog.devgenius.io/how-to-fine-tune-swin-transformer-using-huggingface-83b5a1e5b51d
 - Repositorio homónimo de otro autor (referencia cruzada): https://huggingface.co/adamlaurent87/swin-t-finetuned

@@ -85,7 +85,7 @@ No se dispone de datos verificados de rendimiento para comparar con otros modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsaipifong/Ornith-1.5-35B-A3B-AWQ
+- Modelo en Hugging Face: https://huggingface.co/tsaipifong/Ornith-1.5-35B-A3B-AWQ
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Herramienta de cuantizacion llm-compressor: https://github.com/vllm-project/llm-compressor
 - Dataset de calibracion HuggingFaceH4/ultrachat_200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

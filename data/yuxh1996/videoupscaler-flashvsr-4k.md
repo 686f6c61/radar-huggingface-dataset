@@ -1,7 +1,7 @@
 # yuxh1996/VideoUpscaler-FlashVSR-4K
 
 ## Resumen
-VideoUpscaler-FlashVSR-4K es un pipeline de superresolución de vídeo (video-to-video) publicado por el usuario yuxh1996 en HuggingFace, orientado a escalar material de baja resolución (360p, 480p, 720p y 1080p) hasta 4K UHD (3840×2160) a 60 fps sin parpadeo entre fotogramas. Según la model card, combina FlashVSR, descrito como un método de difusión latente en un solo paso con atención espacio-temporal restringida por localidad, con compensación de movimiento mediante flujo óptico bidireccional.
+VideoUpscaler-FlashVSR-4K es un pipeline de superresolución de vídeo (video-to-video) publicado por el usuario yuxh1996 en Hugging Face, orientado a escalar material de baja resolución (360p, 480p, 720p y 1080p) hasta 4K UHD (3840×2160) a 60 fps sin parpadeo entre fotogramas. Según la model card, combina FlashVSR, descrito como un método de difusión latente en un solo paso con atención espacio-temporal restringida por localidad, con compensación de movimiento mediante flujo óptico bidireccional.
 
 El modelo no es un conjunto de pesos al uso, sino la descripción de un pipeline de inferencia en la nube que da servicio a VideoUpscaler.co. La model card detalla una arquitectura por etapas: estabilización de trayectoria con corrección de rolling shutter, denoising espacio-temporal, el núcleo de superresolución (con variantes `flashvsr` y `anime`) y una etapa final de interpolación de fotogramas a 60 fps. No se publican detalles sobre el número de parámetros, la longitud de contexto (no aplica) ni los datos exactos de entrenamiento.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 - No se especifican limitaciones de resolucion de entrada mas alla del rango 360p-1080p declarado, ni el comportamiento con relaciones de aspecto no estandar o videos de muy larga duracion.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/yuxh1996/VideoUpscaler-FlashVSR-4K
+- Repositorio en Hugging Face: https://huggingface.co/yuxh1996/VideoUpscaler-FlashVSR-4K
 - Dataset de benchmark: https://huggingface.co/datasets/yuxh1996/4k-video-upscaling-benchmark
 - Space interactivo: https://huggingface.co/spaces/yuxh1996/4k-ai-video-upscaler
 - Sitio principal: https://videoupscaler.co

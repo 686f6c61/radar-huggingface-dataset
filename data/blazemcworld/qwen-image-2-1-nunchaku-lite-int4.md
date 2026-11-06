@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BlazeMCworld/Qwen-Image-2.1-nunchaku-lite-int4 | 3.819.581.440 | int4 (svdq_w4a4, group_size 64, rank 32) | no disponible | qwen-research | HuggingFace, solo transformer, via diffusers `main` |
-| Qwen/Qwen-Image-2.1 (base) | no disponible en la informacion proporcionada | bf16 (sin cuantizar) | no disponible | qwen-research | HuggingFace, pipeline completa |
+| BlazeMCworld/Qwen-Image-2.1-nunchaku-lite-int4 | 3.819.581.440 | int4 (svdq_w4a4, group_size 64, rank 32) | no disponible | qwen-research | Hugging Face, solo transformer, via diffusers `main` |
+| Qwen/Qwen-Image-2.1 (base) | no disponible en la informacion proporcionada | bf16 (sin cuantizar) | no disponible | qwen-research | Hugging Face, pipeline completa |
 | Otros checkpoints cuantizados de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de terceros ni de modelos comparables alternativos en la informacion proporcionada, por lo que la comparacion se limita al modelo base.
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento de terceros ni de modelos comparables alte
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/BlazeMCworld/Qwen-Image-2.1-nunchaku-lite-int4
+- Hugging Face del modelo: https://huggingface.co/BlazeMCworld/Qwen-Image-2.1-nunchaku-lite-int4
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - PR de diffusers necesario para cuantizar: https://github.com/huggingface/diffusers/pull/14608

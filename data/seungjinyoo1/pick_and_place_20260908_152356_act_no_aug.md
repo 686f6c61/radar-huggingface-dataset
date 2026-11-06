@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seungjinyoo1/pick_and_place_20260908_152356_act_no_aug` es una política de robótica basada en ACT (Action Chunking with Transformers), una técnica de aprendizaje por imitación descrita en el paper arXiv:2304.13705. Ha sido desarrollado por Seungjin Yoo (usuario `seungjinyoo1`) con el framework LeRobot de HuggingFace y entrenado para resolver una tarea de recoger y colocar objetos (pick and place) sobre un robot de tipo `so_follower`. La arquitectura es un transformer que predice bloques de acciones de 6 dimensiones en lugar de pasos individuales, lo que reduce el error acumulado típico de las políticas de control secuencial.
+El modelo `seungjinyoo1/pick_and_place_20260908_152356_act_no_aug` es una política de robótica basada en ACT (Action Chunking with Transformers), una técnica de aprendizaje por imitación descrita en el paper arXiv:2304.13705. Ha sido desarrollado por Seungjin Yoo (usuario `seungjinyoo1`) con el framework LeRobot de Hugging Face y entrenado para resolver una tarea de recoger y colocar objetos (pick and place) sobre un robot de tipo `so_follower`. La arquitectura es un transformer que predice bloques de acciones de 6 dimensiones en lugar de pasos individuales, lo que reduce el error acumulado típico de las políticas de control secuencial.
 
 El modelo tiene 51.668.614 parámetros y se distribuye en formato safetensors bajo licencia Apache 2.0. Utiliza dos entradas visuales (una cámara superior y otra en la muñeca) de 480x640 píxeles, junto con el estado del robot. Fue entrenado sobre un dataset propio de 50 episodios y 12.700 frames a 30 FPS, con 50.000 pasos de entrenamiento. Se presenta como un checkpoint de referencia para la comunidad de robótica que trabaja con LeRobot, y su relevancia actual radica en ser un ejemplo práctico y reutilizable de política ACT para manipulación robótica.
 
@@ -71,7 +71,7 @@ No disponible. En la información proporcionada no se incluyen datos de otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seungjinyoo1/pick_and_place_20260908_152356_act_no_aug
+- Modelo en Hugging Face: https://huggingface.co/seungjinyoo1/pick_and_place_20260908_152356_act_no_aug
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Guía de act de LeRobot: https://huggingface.co/docs/lerobot/main/en/act

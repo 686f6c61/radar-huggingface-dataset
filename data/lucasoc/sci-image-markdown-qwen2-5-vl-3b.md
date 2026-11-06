@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks generales (MMLU, GSM8K, HumanEval u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lucasoc/sci-image-markdown-qwen2.5-vl-3b | 3B (base) + LoRA | 32.768 tokens (base) | Extraccion de tablas desde figuras cientificas | apache-2.0 (adaptador) | HuggingFace, 0 descargas, 0 likes |
+| lucasoc/sci-image-markdown-qwen2.5-vl-3b | 3B (base) + LoRA | 32.768 tokens (base) | Extraccion de tablas desde figuras cientificas | apache-2.0 (adaptador) | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-VL-3B-Instruct | 3B | 32.768 tokens | Vision-lenguaje general | Qwen Research License / Apache 2.0 segun la model card | Ampliamente disponible |
 | Qwen/Qwen2.5-VL-7B-Instruct | 7B | 32.768 tokens | Vision-lenguaje general | Apache 2.0 | Ampliamente disponible |
 | DePlot / MatCha (Google Research) | Del orden de 300M-1B | No disponible | Conversion de graficos y tablas a representacion lineal | No disponible en la informacion proporcionada | Codigo y pesos publicos |
@@ -101,7 +101,7 @@ La comparacion de rendimiento con DePlot, MatCha o con Qwen2.5-VL-7B-Instruct en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucasoc/sci-image-markdown-qwen2.5-vl-3b
+- Modelo en Hugging Face: https://huggingface.co/lucasoc/sci-image-markdown-qwen2.5-vl-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Repositorio del codigo (sci-image-markdown): https://github.com/lucasdocunha/sci-image-markdown
 - Repositorio oficial de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL

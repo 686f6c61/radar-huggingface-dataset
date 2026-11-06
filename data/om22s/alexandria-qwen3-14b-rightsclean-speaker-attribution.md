@@ -63,8 +63,8 @@ MMLU, HumanEval, GSM8K y otros benchmarks generales: no se han publicado resulta
 
 | Modelo | Parametros | Contexto | Resultado Alexandria (768 filas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-14B (base, sin adaptador) | ~14B (denso) | No disponible en la informacion | 61,7% (474/768) | No disponible (consultar terminos del modelo base) | HuggingFace |
-| Este adaptador (LoRA sobre Qwen3-14B) | 64,2 M (adaptador) | No disponible en la informacion | 73,4% (564/768) | apache-2.0 | HuggingFace |
+| Qwen/Qwen3-14B (base, sin adaptador) | ~14B (denso) | No disponible en la informacion | 61,7% (474/768) | No disponible (consultar terminos del modelo base) | Hugging Face |
+| Este adaptador (LoRA sobre Qwen3-14B) | 64,2 M (adaptador) | No disponible en la informacion | 73,4% (564/768) | apache-2.0 | Hugging Face |
 | Otros adaptadores de speaker attribution | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos sobre alternativas comparables de la misma categoria en la informacion proporcionada. La unica comparacion con cifras verificables es contra el propio modelo base.
@@ -81,7 +81,7 @@ No se dispone de datos sobre alternativas comparables de la misma categoria en l
 - Riesgo de alucinacion en la asignacion de hablante no cuantificado: la evaluacion reporta 52 filas que empeoran respecto al modelo base, por lo que conviene mantener una etapa de revision humana en produccion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Om22s/alexandria-qwen3-14b-rightsclean-speaker-attribution
+- Modelo en Hugging Face: https://huggingface.co/Om22s/alexandria-qwen3-14b-rightsclean-speaker-attribution
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Conjuntos de datos citados (PDNC, RiQuA, DraCor): no se proporcionan URLs en la informacion disponible; consultar la licencia vigente de cada fuente antes de su uso.
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

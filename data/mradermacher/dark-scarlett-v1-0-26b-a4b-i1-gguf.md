@@ -43,7 +43,7 @@ La arquitectura es de tipo Mixture of Experts (MoE) con 26.000 millones de pará
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye datos de evaluacion (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. Se recomienda realizar pruebas propias para evaluar el rendimiento en las tareas de interes.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye datos de evaluacion (MMLU, HumanEval, GSM8K, etc.) ni comparaciones con otros modelos. Se recomienda realizar pruebas propias para evaluar el rendimiento en las tareas de interes.
 
 ## Requisitos de hardware
 

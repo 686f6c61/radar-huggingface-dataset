@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vif Étincelle beta-v0 es un modelo de decisión bilingüe (frances/ingles) desarrollado por el usuario aellies, publicado en HuggingFace el 23 de septiembre de 2026. No es un modelo generativo: en lugar de producir texto, responde a decisiones tipadas con tres modalidades, `choice` (elegir una opcion de una lista libre), `score` (puntuar sobre niveles ordenados descritos en palabras) y `yesno` (pregunta binaria), devolviendo una probabilidad por candidato y una puntuacion de confianza. Su uso previsto principal es la toma de decisiones autonoma de alto nivel en robotica (navegacion, priorizacion de tareas, gestion de energia, marcado de anomalias) a partir de descripciones de estado derivadas de sensores, nunca control de seguridad de bajo nivel.
+Vif Étincelle beta-v0 es un modelo de decisión bilingüe (frances/ingles) desarrollado por el usuario aellies, publicado en Hugging Face el 23 de septiembre de 2026. No es un modelo generativo: en lugar de producir texto, responde a decisiones tipadas con tres modalidades, `choice` (elegir una opcion de una lista libre), `score` (puntuar sobre niveles ordenados descritos en palabras) y `yesno` (pregunta binaria), devolviendo una probabilidad por candidato y una puntuacion de confianza. Su uso previsto principal es la toma de decisiones autonoma de alto nivel en robotica (navegacion, priorizacion de tareas, gestion de energia, marcado de anomalias) a partir de descripciones de estado derivadas de sensores, nunca control de seguridad de bajo nivel.
 
 Tecnicamente se construye sobre el encoder EuroBERT-210m (Apache 2.0, 210 M de parametros, requiere `trust_remote_code=True`) al que se anade una cabeza lineal de scoring en configuracion cross-encoder. El modelo completo tiene 211.766.785 parametros y el repositorio ocupa 0,9 GB. Se entreno con una longitud de secuencia de 512 tokens, aunque el encoder base soporta hasta 8192 (capacidad aun no explotada).
 
@@ -20,7 +20,7 @@ Es relevante ahora por dos motivos: primero, se enmarca en la categoria de "deci
 | Idiomas soportados | Ingles (en) y frances (fr), incluyendo ejemplos de mezcla de ambos idiomas |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (arquitectura personalizada, no cargable con `AutoModel.from_pretrained`) |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Modelo base | EuroBERT/EuroBERT-210m |
 | Descargas / likes | 0 descargas / 2 likes |
 | Fecha de creacion | 23 de septiembre de 2026 |
@@ -83,9 +83,9 @@ No se han publicado curvas de calibracion (ECE, diagramas de fiabilidad) para es
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| Vif Étincelle beta-v0 | 211,8 M | 512 tokens en entrenamiento (base hasta 8192) | Decisiones tipadas (choice/score/yesno) bilingues FR/EN | Apache 2.0 | HuggingFace, carga via codigo propio | 92,9 % global en test sintetico propio; 43,8 % en customer_support |
-| EuroBERT/EuroBERT-210m (modelo base) | 210 M | Hasta 8192 tokens | Encoder multilingue de proposito general | Apache 2.0 | HuggingFace | No disponible en esta informacion; no resuelve decisiones tipadas sin fine-tuning |
-| Qwen2.5-7B-Instruct | 7.600 M aprox. | No disponible en esta informacion | LLM generativo de proposito general con soporte de instrucciones | Apache 2.0 | HuggingFace | No disponible en esta informacion; se uso solo como generador de datos sinteticos en este proyecto |
+| Vif Étincelle beta-v0 | 211,8 M | 512 tokens en entrenamiento (base hasta 8192) | Decisiones tipadas (choice/score/yesno) bilingues FR/EN | Apache 2.0 | Hugging Face, carga via codigo propio | 92,9 % global en test sintetico propio; 43,8 % en customer_support |
+| EuroBERT/EuroBERT-210m (modelo base) | 210 M | Hasta 8192 tokens | Encoder multilingue de proposito general | Apache 2.0 | Hugging Face | No disponible en esta informacion; no resuelve decisiones tipadas sin fine-tuning |
+| Qwen2.5-7B-Instruct | 7.600 M aprox. | No disponible en esta informacion | LLM generativo de proposito general con soporte de instrucciones | Apache 2.0 | Hugging Face | No disponible en esta informacion; se uso solo como generador de datos sinteticos en este proyecto |
 | Jev (TypeSafe AI) | No disponible | No disponible | Decisiones tipadas, no chat (categoria conceptual de referencia) | Propietaria / no disponible | Comercial, sin codigo ni pesos compartidos | No disponible |
 
 No se identifican en la informacion proporcionada otros modelos abiertos directamente comparables en la categoria de decisiones tipadas bilingues; el resto de alternativas son LLM generativos que requeririan formateo y parseo adicionales para producir salidas estructuradas con probabilidad por candidato.
@@ -108,8 +108,8 @@ No se identifican en la informacion proporcionada otros modelos abiertos directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aellies/vif-etincelle-beta-v0
-- Modelo base en HuggingFace: https://huggingface.co/EuroBERT/EuroBERT-210m
+- Modelo en Hugging Face: https://huggingface.co/aellies/vif-etincelle-beta-v0
+- Modelo base en Hugging Face: https://huggingface.co/EuroBERT/EuroBERT-210m
 - Referencia conceptual (TypeSafe AI, Jev): https://typesafe.ai
 - Repositorio del proyecto: pendiente de publicacion segun la model card (enlace por anadir); el archivo `data/SOURCES.md` con la documentacion de fuentes y licencias se encontrara alli.
 - Scripts de uso incluidos en el repositorio: `decide.py` y `example_usage.py`.

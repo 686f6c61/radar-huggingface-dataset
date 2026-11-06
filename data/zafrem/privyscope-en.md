@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PrivyScope-EN es un modelo de reconocimiento de entidades nombradas (NER) especializado en la detección de información personal identificable (PII) en textos en inglés, con el objetivo de facilitar la redacción o anonimización automática de datos sensibles. Está desarrollado por el usuario de HuggingFace `zafrem` y se distribuye bajo licencia Apache 2.0.
+PrivyScope-EN es un modelo de reconocimiento de entidades nombradas (NER) especializado en la detección de información personal identificable (PII) en textos en inglés, con el objetivo de facilitar la redacción o anonimización automática de datos sensibles. Está desarrollado por el usuario de Hugging Face `zafrem` y se distribuye bajo licencia Apache 2.0.
 
 El modelo parte de `FacebookAI/roberta-base`, un transformer encoder de 125 millones de parámetros, y se ha ajustado para la tarea de etiquetado de tokens orientada a privacidad. Se distribuye en formato ONNX, lo que facilita su despliegue en entornos de inferencia optimizados y en pipelines de producción sin dependencia de frameworks de deep learning pesados.
 
@@ -83,6 +83,6 @@ La comparativa se limita a modelos de la misma familia y tamaño, dado que no se
 
 ## Enlaces
 
-- [HuggingFace: zafrem/privyscope-en](https://huggingface.co/zafrem/privyscope-en)
+- [Hugging Face: zafrem/privyscope-en](https://huggingface.co/zafrem/privyscope-en)
 - [Modelo base: FacebookAI/roberta-base](https://huggingface.co/FacebookAI/roberta-base)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

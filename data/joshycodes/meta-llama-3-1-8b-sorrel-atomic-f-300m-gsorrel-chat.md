@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-gsorrel-chat` es un artefacto de investigación privado publicado por el usuario `joshycodes` en HuggingFace. Se trata de un ajuste fino conversacional (SFT) aplicado sobre `joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain`, un modelo que a su vez parte de la familia Llama 3.1 de 8.000 millones de parametros y que fue sometido a un proceso de preentrenamiento continuado. El nombre del repositorio y el recuento exacto de parametros (8.030.261.248) coinciden con la arquitectura Llama 3.1 8B.
+El modelo `joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-gsorrel-chat` es un artefacto de investigación privado publicado por el usuario `joshycodes` en Hugging Face. Se trata de un ajuste fino conversacional (SFT) aplicado sobre `joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain`, un modelo que a su vez parte de la familia Llama 3.1 de 8.000 millones de parametros y que fue sometido a un proceso de preentrenamiento continuado. El nombre del repositorio y el recuento exacto de parametros (8.030.261.248) coinciden con la arquitectura Llama 3.1 8B.
 
 La model card lo describe explicitamente como un "private research artifact — do not redistribute", vinculado a un proyecto de Anthropic Fellows sobre entrenamiento de caracter con enfoque de florecimiento ("flourishing-framed character training"). No es, por tanto, un modelo pensado para produccion ni para uso general: es una instantanea de un experimento de investigacion con licencia `internal-research`.
 
@@ -75,9 +75,9 @@ La model card unicamente documenta la perdida de entrenamiento del paso conversa
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
 | meta-llama-3.1-8b-sorrel-atomic-f-300m-gsorrel-chat | 8,03 mil millones | No disponible (entrenado con seq_len 4096) | `other` / internal-research | Repositorio publico, licencia restringida a investigacion interna | No disponible |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Publico en HuggingFace | Ampliamente documentado por Meta |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.000 tokens | Apache 2.0 | Publico en HuggingFace | Documentado por Mistral |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 mil millones | 128.000 tokens | Apache 2.0 | Publico en HuggingFace | Documentado por Alibaba |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 128.000 tokens | Llama 3.1 Community License | Publico en Hugging Face | Ampliamente documentado por Meta |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32.000 tokens | Apache 2.0 | Publico en Hugging Face | Documentado por Mistral |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 mil millones | 128.000 tokens | Apache 2.0 | Publico en Hugging Face | Documentado por Alibaba |
 
 Las cifras de parametros y contexto de los modelos comparativos corresponden a sus especificaciones publicas conocidas. No se dispone de datos de rendimiento del modelo descrito, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -95,7 +95,7 @@ Las cifras de parametros y contexto de los modelos comparativos corresponden a s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-gsorrel-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-gsorrel-chat
 - Modelo base (midtrain): https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain
 - Dataset de SFT: https://huggingface.co/datasets/joshycodes/sorrel-sft-voice
 - Repositorio de entrenamiento `flourishing-training`: no disponible como enlace directo; la model card referencia el commit del launcher `a0afb77669ae`

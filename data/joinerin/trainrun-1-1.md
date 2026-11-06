@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trainrun-1.1 es un repositorio publicado en HuggingFace por el usuario Joinerin bajo licencia MIT. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y fechas de creacion y actualizacion. No hay model card con contenido tecnico (el README contiene unicamente la linea de licencia), no se ha declarado pipeline, no se han declarado idiomas y no existe ninguna descripcion del problema que el modelo pretende resolver.
+Trainrun-1.1 es un repositorio publicado en Hugging Face por el usuario Joinerin bajo licencia MIT. En el momento de redactar esta ficha, la informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia y fechas de creacion y actualizacion. No hay model card con contenido tecnico (el README contiene unicamente la linea de licencia), no se ha declarado pipeline, no se han declarado idiomas y no existe ninguna descripcion del problema que el modelo pretende resolver.
 
 El repositorio registra cero descargas y cero "likes", y las busquedas web realizadas no devuelven ningun resultado relacionado con el modelo, su autoria ni su entrenamiento. Los unicos resultados obtenidos corresponden a sitios sin relacion alguna (repositorios de fuentes tipograficas, una plataforma de educacion en chino y un hilo de foro sobre analisis de trafico de red), por lo que no aportan informacion util.
 
@@ -92,5 +92,5 @@ No disponible. No se conoce la categoria del modelo (tamano, modalidad, tarea ob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joinerin/Trainrun-1.1
+- Hugging Face: https://huggingface.co/Joinerin/Trainrun-1.1
 - No se han encontrado papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados al modelo en la busqueda web realizada.

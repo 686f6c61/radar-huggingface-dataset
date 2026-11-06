@@ -102,8 +102,8 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/LFM3-VL-2B-ROCmFPX
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/LFM3-VL-2B-ROCmFPX
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Fork ROCmFPX: https://github.com/HarshaVardhan3002/ROCmFPX
 - Pull request de soporte LFM3 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/31252
-- Licencia LFM Open License v1.0: incluida como `LICENSE` en el repositorio de HuggingFace
+- Licencia LFM Open License v1.0: incluida como `LICENSE` en el repositorio de Hugging Face

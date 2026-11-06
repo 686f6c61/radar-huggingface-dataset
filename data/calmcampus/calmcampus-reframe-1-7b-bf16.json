@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "CalmCampus/calmcampus-reframe-1.7b-bf16",
+  "slug": "calmcampus-calmcampus-reframe-1-7b-bf16",
+  "author": "CalmCampus",
+  "url": "https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-bf16",
+  "created_at": "2026-11-05T02:07:45.000Z",
+  "updated_at": "2026-11-05T02:43:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "cbt",
+    "wellbeing",
+    "bf16",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:CalmCampus/calmcampus-reframe-data",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608091,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CalmCampus/calmcampus-reframe-1.7b-bf16 · Hugging Face",
+      "url": "https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-bf16",
+      "snippet": "The 4-bit model, CalmCampus/calmcampus-reframe-1.7b-4bit, is the one the app is designed to run and the one that was evaluated. Its model card holds the task description, prompt contract, training data, evaluation results and limitations, and all of it applies here too, including:"
+    },
+    {
+      "title": "CalmCampus/calmcampus-reframe-1.7b-4bit · Hugging Face",
+      "url": "https://huggingface.co/CalmCampus/calmcampus-reframe-1.7b-4bit",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - PalashMulchandani/calmcampus: Free, anonymous AI-powered ...",
+      "url": "https://github.com/PalashMulchandani/calmcampus",
+      "snippet": "A free, anonymous AI-powered wellness platform built for students. 🔗 Live demo: calmcampus-lilac.vercel.app CalmCampus exists because student mental health is at a breaking point — exam pressure, social anxiety, and burnout affect millions, yet most students never seek help due to stigma, cost, or simply not knowing where to start."
+    },
+    {
+      "title": "GitHub - Emmanuelodey2/Calmcampus",
+      "url": "https://github.com/Emmanuelodey2/Calmcampus",
+      "snippet": "🌿 CalmCampus An AI-powered student mental wellness platform designed to provide emotional support, mood tracking, journaling, and access to mental health resources in a safe, private, and accessible environment."
+    }
+  ]
+}

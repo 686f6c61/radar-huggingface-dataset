@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smolvla_full-block-sorter-v1 es una politica robotica (policy) de tipo vision-language-action publicada en HuggingFace por el usuario CamilleWalters, obtenida por ajuste fino del modelo base lerobot/smolvla_base. Resuelve una tarea concreta de manipulacion: colocar bloques de distintos colores y formas (cubo azul, estrella azul, cubo verde, hexagono verde, cubo amarillo) en el orificio correspondiente, sobre un robot WidowX AI follower con camaras de muneca y de vista principal.
+smolvla_full-block-sorter-v1 es una politica robotica (policy) de tipo vision-language-action publicada en Hugging Face por el usuario CamilleWalters, obtenida por ajuste fino del modelo base lerobot/smolvla_base. Resuelve una tarea concreta de manipulacion: colocar bloques de distintos colores y formas (cubo azul, estrella azul, cubo verde, hexagono verde, cubo amarillo) en el orificio correspondiente, sobre un robot WidowX AI follower con camaras de muneca y de vista principal.
 
 El modelo sigue el metodo SmolVLA (arXiv 2506.01844), una familia de modelos VLA compactos disenada para lograr prestaciones competitivas con un coste computacional reducido y poder desplegarse en hardware de consumo. Cuenta con 450.046.176 parametros (unos 450 M) y un repositorio de 0,9 GB en formato safetensors, y se ejecuta mediante la libreria LeRobot en su version 0.6.1.
 
@@ -85,8 +85,8 @@ La informacion proporcionada solo documenta con detalle este checkpoint y su mod
 
 | Modelo | Parametros | Entradas / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CamilleWalters/smolvla_full-block-sorter-v1 | 450.046.176 (~450 M) | observation.state (6,) + 3 imagenes de 256x256; instruccion de tarea | Sin evaluacion publicada | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| lerobot/smolvla_base (modelo base) | no disponible en la informacion | Politica VLA generica de la familia SmolVLA | no disponible | no disponible en la informacion | HuggingFace |
+| CamilleWalters/smolvla_full-block-sorter-v1 | 450.046.176 (~450 M) | observation.state (6,) + 3 imagenes de 256x256; instruccion de tarea | Sin evaluacion publicada | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| lerobot/smolvla_base (modelo base) | no disponible en la informacion | Politica VLA generica de la familia SmolVLA | no disponible | no disponible en la informacion | Hugging Face |
 | Politicas alternativas del ecosistema LeRobot (ACT, Diffusion Policy) | no disponible | Condicionadas por estado e imagen; no emplean instruccion en lenguaje natural en su formulacion clasica | no disponible | no disponible | Repositorio LeRobot |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ La informacion proporcionada solo documenta con detalle este checkpoint y su mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CamilleWalters/smolvla_full-block-sorter-v1
+- Modelo en Hugging Face: https://huggingface.co/CamilleWalters/smolvla_full-block-sorter-v1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CamilleWalters/block_sorter_v3_20260901_180009
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=CamilleWalters/block_sorter_v3_20260901_180009

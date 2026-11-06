@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `PyRoS42/EchoNet-Dynamic-vs-SAM2-AR-Edge-Segmentation` es un artefacto publicado en HuggingFace por el usuario PyRoS42. En el momento de redactar esta ficha, la model card contiene unicamente la declaracion de licencia MIT y no incluye descripcion, arquitectura, dataset, metricas ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas asociados.
+El repositorio `PyRoS42/EchoNet-Dynamic-vs-SAM2-AR-Edge-Segmentation` es un artefacto publicado en Hugging Face por el usuario PyRoS42. En el momento de redactar esta ficha, la model card contiene unicamente la declaracion de licencia MIT y no incluye descripcion, arquitectura, dataset, metricas ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas asociados.
 
 El nombre del repositorio sugiere un experimento comparativo entre EchoNet-Dynamic (modelo de segmentacion de videos de ecocardiografia) y SAM 2 (Segment Anything Model 2) aplicado a segmentacion de bordes, posiblemente en un contexto de realidad aumentada (AR) o de computacion en el borde (edge). Se trata, no obstante, de una inferencia a partir del identificador y no de un dato confirmado por el autor, por lo que debe tratarse como hipotesis de trabajo y no como especificacion tecnica.
 
@@ -64,7 +64,7 @@ No disponible. La informacion proporcionada no permite establecer una comparativ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad en este repositorio |
 |---|---|---|---|---|
-| EchoNet-Dynamic-vs-SAM2-AR-Edge-Segmentation | no disponible | no disponible | MIT | Repositorio HuggingFace sin pesos ni documentacion confirmados |
+| EchoNet-Dynamic-vs-SAM2-AR-Edge-Segmentation | no disponible | no disponible | MIT | Repositorio Hugging Face sin pesos ni documentacion confirmados |
 | EchoNet-Dynamic | no disponible en la informacion proporcionada | no disponible | no disponible | Referencia externa mencionada en el nombre |
 | SAM 2 | no disponible en la informacion proporcionada | no disponible | no disponible | Referencia externa mencionada en el nombre |
 | Alternativas adicionales | no disponible | no disponible | no disponible | no disponible |
@@ -83,6 +83,6 @@ No disponible. La informacion proporcionada no permite establecer una comparativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PyRoS42/EchoNet-Dynamic-vs-SAM2-AR-Edge-Segmentation
+- Repositorio en Hugging Face: https://huggingface.co/PyRoS42/EchoNet-Dynamic-vs-SAM2-AR-Edge-Segmentation
 - Resultados de busqueda web: no se han encontrado enlaces pertinentes al repositorio. Las referencias devueltas corresponden a la pelicula "The Boy Who Harnessed the Wind" y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

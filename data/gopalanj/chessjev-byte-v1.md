@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chessjev-byte-v1` es un modelo especializado en ajedrez publicado por el usuario `gopalanj` en HuggingFace bajo licencia MIT. No es un modelo generativo de propósito general, sino un **puntuador de opciones de una sola pasada** (one-pass option scorer): recibe un contexto (una posición en notación FEN) junto con N opciones de texto (jugadas legales en notación UCI) y devuelve N probabilidades, una por opción. Su arquitectura sigue la interfaz pública conocida como **jevlike** (contexto + N opciones -> N probabilidades), pero con una implementación propia denominada **ChessJev**.
+`chessjev-byte-v1` es un modelo especializado en ajedrez publicado por el usuario `gopalanj` en Hugging Face bajo licencia MIT. No es un modelo generativo de propósito general, sino un **puntuador de opciones de una sola pasada** (one-pass option scorer): recibe un contexto (una posición en notación FEN) junto con N opciones de texto (jugadas legales en notación UCI) y devuelve N probabilidades, una por opción. Su arquitectura sigue la interfaz pública conocida como **jevlike** (contexto + N opciones -> N probabilidades), pero con una implementación propia denominada **ChessJev**.
 
 El modelo se describe explícitamente como un modelo pequeño de **embeddings a nivel de byte**, entrenado sobre filas sintéticas de ajedrez: contexto FEN, opciones UCI legales y etiqueta procedente de un profesor heurístico o táctico. El autor aclara que **no** es TypeSafe Jev ni OpenJev 4B, y que no se reclama ningún valor de Elo ni calibración frente a Jev. Esta honestidad en la model card es relevante: sitúa el modelo como un experimento reproducible (incluye comando de entrenamiento) más que como un componente listo para producción.
 
@@ -23,7 +23,7 @@ Su relevancia actual es acotada pero interesante: encaja en la línea de modelos
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un `OptionAttentionScorer`: un modelo que codifica bytes y aplica atención sobre un conjunto de opciones candidatas para producir una distribución de probabilidad sobre ellas. El patrón de cómputo es el de la interfaz pública `jevlike`: se proporciona un contexto y N opciones textuales, y la salida son N probabilidades correspondientes. Frente a un transformer generativo autorregresivo, esta formulación es de una sola pasada y está orientada a *scoring* o *ranking*, no a generación de texto. El pipeline declarado en HuggingFace es `text-classification`, coherente con este uso.
+La arquitectura es un `OptionAttentionScorer`: un modelo que codifica bytes y aplica atención sobre un conjunto de opciones candidatas para producir una distribución de probabilidad sobre ellas. El patrón de cómputo es el de la interfaz pública `jevlike`: se proporciona un contexto y N opciones textuales, y la salida son N probabilidades correspondientes. Frente a un transformer generativo autorregresivo, esta formulación es de una sola pasada y está orientada a *scoring* o *ranking*, no a generación de texto. El pipeline declarado en Hugging Face es `text-classification`, coherente con este uso.
 
 El entrenamiento se realizó sobre filas sintéticas de ajedrez: cada ejemplo consta de un contexto FEN, un conjunto de opciones UCI legales y una etiqueta generada por un profesor heurístico o táctico. Se trata, por tanto, de un esquema de destilación desde un profesor no especificado en la información disponible. No hay datos publicados sobre número de tokens de entrenamiento, composición exacta del dataset, ni sobre si se aplicaron fases de RLHF o DPO (en un modelo de scoring como este, ese tipo de alineamiento sería en todo caso poco habitual). El autor indica explícitamente que no se reclama ningún valor de Elo ni calibración frente a Jev.
 
@@ -81,12 +81,12 @@ Los tres modelos alternativos se mencionan únicamente porque la propia model ca
 - El autor declara explícitamente que no se reclama Elo ni calibración frente a Jev, de modo que las probabilidades de salida no deben interpretarse como probabilidades calibradas sin una validación previa por parte del usuario.
 - Ausencia total de validación externa: 0 descargas y 0 interacciones en el momento de la consulta, sin benchmarks publicados ni resultados de terceros.
 - El tamaño del repositorio figura como 0.0 GB y el listado de archivos de la model card menciona `model.pt` y `config.json`; conviene verificar que el checkpoint esté realmente publicado y sea cargable antes de integrarlo en cualquier flujo.
-- Metadatos de la ficha de HuggingFace con fechas de creación y actualización en 2026, posteriores a la fecha habitual de consulta; conviene tratar esas marcas temporales con cautela.
+- Metadatos de la ficha de Hugging Face con fechas de creación y actualización en 2026, posteriores a la fecha habitual de consulta; conviene tratar esas marcas temporales con cautela.
 - La licencia MIT permite uso comercial y modificación, pero al no existir documentación sobre el dataset de entrenamiento ni sobre el profesor utilizado, no puede auditarse el origen de los datos ni los posibles derechos asociados.
 - No hay información sobre sesgos, comportamiento fuera de distribución, límites de longitud de entrada ni robustez ante entradas malformadas.
 - No se documentan modos de cuantización ni formatos de despliegue ligeros, lo que limita su integración en stacks de inferencia estandarizados.
 
 ## Enlaces
 
-- [gopalanj/chessjev-byte-v1 en HuggingFace](https://huggingface.co/gopalanj/chessjev-byte-v1)
+- [gopalanj/chessjev-byte-v1 en Hugging Face](https://huggingface.co/gopalanj/chessjev-byte-v1)
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la búsqueda web. Los resultados devueltos por el buscador no guardaban relación con el modelo.

@@ -107,7 +107,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-1017-EXL3-2.5bpw
+- Modelo en Hugging Face: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-1017-EXL3-2.5bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE
 - Cuantización de 4,0 bpw del mismo autor: https://huggingface.co/bertholomus/DeepSeek-V4.1-Flash-1017-EXL3-4.0bpw

@@ -68,7 +68,7 @@ No disponible. No hay modelos comparables, ya que este repositorio no es un mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/noahdejong/paper_020747779_embodied_ai
+- Repositorio en Hugging Face: https://huggingface.co/noahdejong/paper_020747779_embodied_ai
 - Paper en arXiv (abstract): https://arxiv.org/abs/2509.20021
 - Version HTML del paper en arXiv: https://arxiv.org/html/2509.20021v1
 - Resumen en alphaXiv: https://www.alphaxiv.org/overview/2509.20021v1

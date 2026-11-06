@@ -75,6 +75,6 @@ La comparativa directa con otros modelos de extracción de información de salud
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lbakar/health-log-extraction-partial-template
+- Modelo en Hugging Face: https://huggingface.co/lbakar/health-log-extraction-partial-template
 - Dataset de entrenamiento: https://huggingface.co/datasets/lbakar/health-log-extraction-dataset
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

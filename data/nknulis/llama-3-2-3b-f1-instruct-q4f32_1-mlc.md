@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-3B-F1-Instruct-q4f32_1-MLC (este) | 3B | 128k nativo, 1k efectivo en WebLLM | MLC (WebGPU) | Llama 3.2 Community | HuggingFace, 0 descargas |
+| Llama-3.2-3B-F1-Instruct-q4f32_1-MLC (este) | 3B | 128k nativo, 1k efectivo en WebLLM | MLC (WebGPU) | Llama 3.2 Community | Hugging Face, 0 descargas |
 | Llama-3.2-3B-Instruct (Meta) | 3B | 128k | safetensors, GGUF, MLC | Llama 3.2 Community | Amplia, con versiones WebLLM oficiales |
 | Qwen2.5-3B-Instruct | 3B | 32k | safetensors, GGUF | Apache 2.0 | Amplia, sin conversión WebLLM oficial destacada |
 | Gemma 2 2B Instruct | 2B | 8k | safetensors, GGUF | Gemma Terms of Use | Amplia, con soporte en llama.cpp y Ollama |
@@ -82,7 +82,7 @@ La comparación directa con Llama-3.2-3B-Instruct es la más relevante: este art
 
 ## Enlaces
 
-- [HuggingFace: NKNULis/Llama-3.2-3B-F1-Instruct-q4f32_1-MLC](https://huggingface.co/NKNULis/Llama-3.2-3B-F1-Instruct-q4f32_1-MLC)
+- [Hugging Face: NKNULis/Llama-3.2-3B-F1-Instruct-q4f32_1-MLC](https://huggingface.co/NKNULis/Llama-3.2-3B-F1-Instruct-q4f32_1-MLC)
 - [Modelo base: twinkle-ai/Llama-3.2-3B-F1-Instruct](https://huggingface.co/twinkle-ai/Llama-3.2-3B-F1-Instruct)
 - [MLC LLM](https://llm.mlc.ai/)
 - [WebLLM (repositorio)](https://github.com/mlc-ai/web-llm)

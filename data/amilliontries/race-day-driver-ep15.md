@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto / observación | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| race-day-driver-ep15 | 96.519 | 115 números por paso, 20 Hz | Conducción de carreras multiagente con boxes | MIT | HuggingFace |
+| race-day-driver-ep15 | 96.519 | 115 números por paso, 20 Hz | Conducción de carreras multiagente con boxes | MIT | Hugging Face |
 | Políticas PPO de referencia en entornos de control continuo (p. ej. MuJoCo) | Variable, típicamente 10^4-10^6 | Estado del entorno | Control continuo genérico | Variable | Librerías como Stable-Baselines3 |
 | Agentes de conducción en simuladores (p. ej. CARLA) | Variable, a menudo CNN + MLP | Imágenes y estado | Conducción urbana | Variable | Repositorios de investigación |
 
@@ -89,6 +89,6 @@ No se dispone de comparativas directas publicadas con otros pilotos del mismo si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amilliontries/race-day-driver-ep15
+- Hugging Face: https://huggingface.co/amilliontries/race-day-driver-ep15
 - Código (tag `episode-15`): https://github.com/backstab319/a-million-tries/tree/episode-15
 - Canal de YouTube: https://www.youtube.com/@amilliontries

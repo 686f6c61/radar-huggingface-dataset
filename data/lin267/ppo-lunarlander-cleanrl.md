@@ -115,7 +115,7 @@ No se dispone de resultados numéricos de las alternativas en la información pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lin267/ppo-LunarLander-cleanrl
+- Repositorio en Hugging Face: https://huggingface.co/lin267/ppo-LunarLander-cleanrl
 - Documentación de Gymnasium `LunarLander`: https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - CleanRL (implementación de referencia de PPO): https://github.com/vwxyzjn/cleanrl
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3

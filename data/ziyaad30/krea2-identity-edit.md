@@ -102,7 +102,7 @@ Todas las variantes comparten el modelo base krea/Krea-2-Raw y la licencia krea-
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Ziyaad30/krea2-identity-edit
+- Hugging Face del adaptador: https://huggingface.co/Ziyaad30/krea2-identity-edit
 - Modelo base Krea 2 Raw: https://huggingface.co/krea/Krea-2-Raw
 - Paquete de nodos ComfyUI-Krea2Edit: https://github.com/lbouaraba/comfyui-krea2edit
 - Codigo de entrenamiento (krea2edit-trainer): https://github.com/lbouaraba/krea2edit-trainer

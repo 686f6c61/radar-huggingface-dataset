@@ -70,8 +70,8 @@ Nota del autor: las cifras del base provienen de un experimento de control con b
 
 | Modelo | Parámetros | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HyLoKV-27B | 26,9B | ventana local 128 + banco compartido (evaluado 4K–32K) | 80,46% | 15,47% | Apache-2.0 | HuggingFace (74 descargas) |
-| Qwen3.8-27B (base) | 26,9B | no disponible | 82,67% | 44,28% | Apache-2.0 | HuggingFace |
+| HyLoKV-27B | 26,9B | ventana local 128 + banco compartido (evaluado 4K–32K) | 80,46% | 15,47% | Apache-2.0 | Hugging Face (74 descargas) |
+| Qwen3.8-27B (base) | 26,9B | no disponible | 82,67% | 44,28% | Apache-2.0 | Hugging Face |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa con el base es la más informativa: HyLoKV-27B pierde 2,21 puntos en MMLU, 8,3 puntos en NIAH y 28,81 puntos en GSM8K, a cambio de una reducción lógica de la caché KV en las 8 capas GQA finales. No se dispone de datos de otros modelos comparables en la información proporcionada.
@@ -91,7 +91,7 @@ La comparación directa con el base es la más informativa: HyLoKV-27B pierde 2,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SII-Jiaquan/HyLoKV-27B
+- Modelo en Hugging Face: https://huggingface.co/SII-Jiaquan/HyLoKV-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio LaLaLanD_qwen (paquete `qwen_shared`): no disponible como URL en la información proporcionada
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada

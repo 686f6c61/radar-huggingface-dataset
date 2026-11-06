@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`incheonyi/3d-scene-understanding-v1` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado en sentido estricto. La propia model card lo describe como un "conjunto estructurado de notas de investigacion" sobre comprension de escenas 3D, con referencias de evaluacion y preguntas abiertas, y afirma explicitamente que no reclama mejoras de benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
+`incheonyi/3d-scene-understanding-v1` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado en sentido estricto. La propia model card lo describe como un "conjunto estructurado de notas de investigacion" sobre comprension de escenas 3D, con referencias de evaluacion y preguntas abiertas, y afirma explicitamente que no reclama mejoras de benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
 
 El unico artefacto pesado es un fichero `safetensors` con 24.832 parametros totales, un tamano despreciable (el repositorio ocupa 0,0 GB) incompatible con cualquier modelo funcional de lenguaje o vision. El repositorio se compone principalmente de dos ficheros de texto: `README.md` y `reading.md`.
 
@@ -79,7 +79,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/incheonyi/3d-scene-understanding-v1
+- Repositorio en Hugging Face: https://huggingface.co/incheonyi/3d-scene-understanding-v1
 - Fichero principal citado en la model card: `reading.md` (incluido en el repositorio)
 - Survey on Large Multimodal Models for 3D Vision and Scene Understanding (ResearchGate): https://www.researchgate.net/publication/399580526_A_Survey_on_Large_Multimodal_Models_for_3D_Vision_and_Scene_Understanding
 - 3D scene understanding models (aimodels.fyi): https://www.aimodels.fyi/research-topics/3d-scene-understanding-models

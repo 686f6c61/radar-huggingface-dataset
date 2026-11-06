@@ -54,7 +54,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el dominio de apli
 
 ## Enlaces
 
-- [HuggingFace - ICTNLP/HybridEmo](https://huggingface.co/ICTNLP/HybridEmo)
+- [Hugging Face - ICTNLP/HybridEmo](https://huggingface.co/ICTNLP/HybridEmo)
 - [GitHub - ICTNLP (organización)](https://github.com/ictnlp)
-- [Perfil de la organización ICTNLP en HuggingFace](https://huggingface.co/ICTNLP/models)
+- [Perfil de la organización ICTNLP en Hugging Face](https://huggingface.co/ICTNLP/models)
 - [Página del grupo ICTNLP (ICT/CAS)](https://nlp.ict.ac.cn/)

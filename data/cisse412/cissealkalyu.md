@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cisse412/cissealkalyu` es un repositorio publicado en HuggingFace por el usuario `cisse412` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. Tampoco se dispone de información sobre el pipeline, los idiomas soportados, el tamaño o la familia del modelo. El repositorio no registra descargas ni interacciones de la comunidad, lo que sugiere que se trata de una publicación inicial o de un espacio de trabajo en desarrollo. En el momento de redactar esta ficha, no existe información pública suficiente para caracterizar el modelo de manera rigurosa. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables y a advertir sobre la imposibilidad de evaluar sus capacidades o su idoneidad para uso en producción.
+El modelo `cisse412/cissealkalyu` es un repositorio publicado en Hugging Face por el usuario `cisse412` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso. Tampoco se dispone de información sobre el pipeline, los idiomas soportados, el tamaño o la familia del modelo. El repositorio no registra descargas ni interacciones de la comunidad, lo que sugiere que se trata de una publicación inicial o de un espacio de trabajo en desarrollo. En el momento de redactar esta ficha, no existe información pública suficiente para caracterizar el modelo de manera rigurosa. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables y a advertir sobre la imposibilidad de evaluar sus capacidades o su idoneidad para uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -52,6 +52,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cisse412/cissealkalyu
+- Repositorio en Hugging Face: https://huggingface.co/cisse412/cissealkalyu
 
 No se han encontrado papers, blogs, demos ni repositorios adicionales relacionados con este modelo.

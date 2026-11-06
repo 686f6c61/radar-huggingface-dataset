@@ -90,7 +90,7 @@ El autor afirma superar al Qwen 3.8 27B base y a Qwen3.6-35B-A3B, Qwen 3.6 27B y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kumekaln/Q3.827BTT-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Kumekaln/Q3.827BTT-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
 - Variante hermana (menos uncensored, citada en la model card): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NM-DAU-NEO-MTP-GGUF
 - Datasets de entrenamiento:

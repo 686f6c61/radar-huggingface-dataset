@@ -75,9 +75,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sawfwair/MiniMax-H3-FastH3-VSA-DataFree-MLX-Q8
+- Repositorio Hugging Face: https://huggingface.co/Sawfwair/MiniMax-H3-FastH3-VSA-DataFree-MLX-Q8
 - Repositorio oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Hub comunitario de MiniMax-H3 (ai-models-lab): https://github.com/ai-models-lab/minimax-h3
-- Modelo original MiniMax-H3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo original MiniMax-H3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Version para ComfyUI de MiniMax-H3: https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/diffusion_models
 - Blog oficial de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3

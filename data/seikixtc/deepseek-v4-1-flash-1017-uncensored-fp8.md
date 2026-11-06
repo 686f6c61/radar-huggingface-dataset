@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 es una versión modificada a nivel de pesos del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicada por el usuario seikixtc (con créditos a dealignai) en HuggingFace. El objetivo declarado es eliminar el comportamiento de rechazo del modelo base (proceso conocido como *abliteration*) manteniendo intactas todas las capacidades originales: visión, vídeo, razonamiento por niveles, tool calling, decodificación especulativa DSpark y una ventana de contexto de 1 millón de tokens.
+DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 es una versión modificada a nivel de pesos del modelo DeepSeek-V4.1-Flash-1017 de DeepSeek, publicada por el usuario seikixtc (con créditos a dealignai) en Hugging Face. El objetivo declarado es eliminar el comportamiento de rechazo del modelo base (proceso conocido como *abliteration*) manteniendo intactas todas las capacidades originales: visión, vídeo, razonamiento por niveles, tool calling, decodificación especulativa DSpark y una ventana de contexto de 1 millón de tokens.
 
 Se trata de un modelo MoE de 40 capas con 763.205.315.794 parámetros totales según los safetensors del repositorio (510,3 GB en 48 shards), distribuido en formato FP8 nativo (e4m3) con escalas de bloque ue8m0 y expertos en FP4, el mismo formato que emplea DeepSeek en su checkpoint upstream. La modificación es exclusivamente a nivel de pesos: no hay cambios en el tokenizer, la plantilla de chat, el prompt de sistema ni adaptadores LoRA, de modo que es *drop-in* con el motor de inferencia oficial.
 
@@ -71,9 +71,9 @@ No se han publicado en la información disponible resultados de HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 (este) | 763,2 B (MoE) | 1M | Texto + imagen + vídeo | MIT | HuggingFace |
-| DeepSeek-V4.1-Flash-1017 (base) | 763,2 B (MoE) | 1M | Texto + imagen + vídeo | no disponible en la información | HuggingFace / API oficial |
-| deepalignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED | no disponible | 1M | Texto + imagen + vídeo | no disponible | HuggingFace |
+| DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8 (este) | 763,2 B (MoE) | 1M | Texto + imagen + vídeo | MIT | Hugging Face |
+| DeepSeek-V4.1-Flash-1017 (base) | 763,2 B (MoE) | 1M | Texto + imagen + vídeo | no disponible en la información | Hugging Face / API oficial |
+| deepalignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED | no disponible | 1M | Texto + imagen + vídeo | no disponible | Hugging Face |
 
 El modelo base y la variante EXL3 2,9 bpw (citada por el autor como versión de baja precisión construida de extremo a extremo) son las alternativas más directas. No se dispone de datos de benchmarks comparativos adicionales en la información proporcionada.
 
@@ -90,7 +90,7 @@ El modelo base y la variante EXL3 2,9 bpw (citada por el autor como versión de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/seikixtc/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
+- Repositorio Hugging Face: https://huggingface.co/seikixtc/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Alias del autor: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-ABLITERATED-FP8
 - Variante EXL3 2,9 bpw: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED

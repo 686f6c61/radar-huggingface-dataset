@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una red neuronal convolucional (CNN) pequeña escrita en PyTorch que clasifica dígitos manuscritos del 0 al 9 sobre el conjunto de datos MNIST. Fue desarrollada por el usuario EMERA2 como proyecto de aprendizaje, y está publicada en HuggingFace bajo licencia MIT, lo que permite su uso, modificación y redistribución sin restricciones.
+Este modelo es una red neuronal convolucional (CNN) pequeña escrita en PyTorch que clasifica dígitos manuscritos del 0 al 9 sobre el conjunto de datos MNIST. Fue desarrollada por el usuario EMERA2 como proyecto de aprendizaje, y está publicada en Hugging Face bajo licencia MIT, lo que permite su uso, modificación y redistribución sin restricciones.
 
 Aunque no compite con los grandes modelos fundacionales, resulta relevante como ejemplo didáctico y como punto de partida para pipelines de visión por computador ligeros: alcanza una precisión del 99,30 % en el conjunto de test de MNIST con una arquitectura de apenas dos bloques convolucionales y dos capas lineales. Su tamaño reducido permite ejecutarlo en CPU sin problemas, por lo que es adecuado para demos, docencia y prototipado rápido de OCR de dígitos.
 
@@ -81,7 +81,7 @@ Se trata de una categoria de modelos muy madura: casi cualquier CNN basica super
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EMERA2/mnist-cnn-pytorch
+- Modelo en Hugging Face: https://huggingface.co/EMERA2/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - Paper del dataset MNIST (LeCun et al.): http://yann.lecun.com/exdb/mnist/
 - No se han encontrado otros enlaces relevantes (blog, demo o repositorio externo) en la informacion disponible.

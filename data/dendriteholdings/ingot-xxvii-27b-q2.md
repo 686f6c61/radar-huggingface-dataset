@@ -38,7 +38,7 @@ El entrenamiento no es un preentrenamiento desde cero ni un RLHF clásico: es un
 - Cuantización extrema: mantiene fidelidad al profesor con solo 1,75-2,125 bits por peso, lo que permite ejecución en hardware de gama alta consumer.
 - Decodificación especulativa mediante el drafter DFlash 2 (`dendriteholdings/Ingot-27B-DFlash2`), con aceleración de aproximadamente 1,8x en greedy y 1,3-1,4x con sampling.
 - Entrada multimodal opcional: se puede acoplar el proyector de visión de Ternary Bonsai 2 (`Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf` o BF16) para procesar imágenes, aunque la calidad no está validada para estos pesos.
-- Compatibilidad con endpoints según el tag `endpoints_compatible` de HuggingFace.
+- Compatibilidad con endpoints según el tag `endpoints_compatible` de Hugging Face.
 - Soporte de tool calling y function calling: no disponible en la información proporcionada.
 - Capacidades de agente y multi-step reasoning: no disponible en la información proporcionada.
 - Idiomas soportados: no disponible en la información proporcionada.
@@ -89,9 +89,9 @@ PrismML reporta 142 tok/s para Bonsai 2 PQ2_0 en una RTX 5090, dato no verificad
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ingot-XXVII-27B-Q2 | 26,9B | no disponible | 1,75-2,125 bpw (GGUF) | no disponible | HuggingFace, requiere fork Dendrite |
-| prism-ml/Ternary-Bonsai-2-27B-gguf | no disponible (27B por nombre) | no disponible | ternario (PQ2_0, PTQ1_0) | no disponible | HuggingFace, fork PrismML de llama.cpp |
-| dendriteholdings/Ingot-genesis-27B-Q2 | no disponible (27B por nombre) | no disponible | Q2 (GGUF) | no disponible | HuggingFace, mismo layout y tokenizador |
+| Ingot-XXVII-27B-Q2 | 26,9B | no disponible | 1,75-2,125 bpw (GGUF) | no disponible | Hugging Face, requiere fork Dendrite |
+| prism-ml/Ternary-Bonsai-2-27B-gguf | no disponible (27B por nombre) | no disponible | ternario (PQ2_0, PTQ1_0) | no disponible | Hugging Face, fork PrismML de llama.cpp |
+| dendriteholdings/Ingot-genesis-27B-Q2 | no disponible (27B por nombre) | no disponible | Q2 (GGUF) | no disponible | Hugging Face, mismo layout y tokenizador |
 | Qwen3.8-27B (profesor) | no disponible | no disponible | BF16 (referencia) | no disponible | no disponible en la información |
 
 La comparativa se limita a los modelos mencionados en la model card; no se dispone de datos de benchmarks estándar para contrastar calidad frente a alternativas de la misma categoría.
@@ -111,7 +111,7 @@ La comparativa se limita a los modelos mencionados en la model card; no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-XXVII-27B-Q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-XXVII-27B-Q2
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Proyector de visión (Q8_0): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/b072e1d3b35a0a630cece372c2127528e0994386/Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf
 - Proyector de visión (BF16): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf/blob/b072e1d3b35a0a630cece372c2127528e0994386/Ternary-Bonsai-2-27B-mmproj-BF16.gguf

@@ -111,6 +111,6 @@ La model card situa Audio8 TTS en la estirpe de Fish Audio S2 Pro, pero no se in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Audio8-TTS-Preview-0.6b
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Audio8-TTS-Preview-0.6b
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Preview-0.6b
 - Voces de referencia incluidas: LibriSpeech dev-clean (CC BY 4.0) y ejemplo japones de FunAudioLLM/Fun-ASR-Nano-2512 (Apache-2.0)

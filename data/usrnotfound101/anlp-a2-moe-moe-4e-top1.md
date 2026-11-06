@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`usrnotfound101/anlp-a2-moe-moe-4e-top1` es un modelo de traduccion automatica neuronal entrenado desde cero, con arquitectura transformer decoder-only, desarrollado por el usuario `usrnotfound101` en el marco de la asignatura ANLP (Assignment 2, Part 1). Su tarea es la traduccion de vietnamita y japones hacia ingles, en una unica direccion. Se trata de un modelo de investigacion academica, no de un modelo de produccion: cuenta con 0 descargas y 0 likes en HuggingFace en el momento de redactar esta ficha.
+`usrnotfound101/anlp-a2-moe-moe-4e-top1` es un modelo de traduccion automatica neuronal entrenado desde cero, con arquitectura transformer decoder-only, desarrollado por el usuario `usrnotfound101` en el marco de la asignatura ANLP (Assignment 2, Part 1). Su tarea es la traduccion de vietnamita y japones hacia ingles, en una unica direccion. Se trata de un modelo de investigacion academica, no de un modelo de produccion: cuenta con 0 descargas y 0 likes en Hugging Face en el momento de redactar esta ficha.
 
 Tecnicamente es un modelo MoE (mixture of experts) con 4 expertos en la capa FFN y enrutamiento top-1, disenado de forma que el numero total de parametros coincida con el de una variante densa equivalente. Tiene 35.408.384 parametros totales, de los cuales 25.971.200 se activan por token. La FFN concentra 12.595.200 parametros totales, pero solo 3.158.016 activos por token. El cuerpo del modelo es pequeno: 6 capas, `d_model` de 512 y 8 cabezas de atencion, entrenado con 36.824.882 tokens no de relleno.
 
@@ -85,7 +85,7 @@ No se dispone de datos comparativos en la informacion proporcionada: el autor no
 
 | Modelo | Parametros | Contexto | BLEU (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anlp-a2-moe-moe-4e-top1 | 35.408.384 totales / 25.971.200 activos | no disponible | 28,91 global | no disponible | HuggingFace, 0 descargas |
+| anlp-a2-moe-moe-4e-top1 | 35.408.384 totales / 25.971.200 activos | no disponible | 28,91 global | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos comparativos en la informacion proporcionada: el autor no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usrnotfound101/anlp-a2-moe-moe-4e-top1
+- Modelo en Hugging Face: https://huggingface.co/usrnotfound101/anlp-a2-moe-moe-4e-top1
 - Dataset utilizado: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Archivos adicionales del repositorio: `results.json`, `train_log.json`, `expert_usage.json`, graficas `*.png` y `common.py` (disponibles en la pestana de archivos del modelo)
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales relacionados con este modelo.

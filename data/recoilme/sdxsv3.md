@@ -17,7 +17,7 @@ El repositorio incluye la arquitectura completa, los scripts de entrenamiento y 
 | Tipos de cuantizacion | No disponible (pesos sin entrenar, solo safetensors) |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ No disponible. No se han publicado comparativas con otros modelos de generación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/recoilme/sdxsv3
+- Modelo en Hugging Face: https://huggingface.co/recoilme/sdxsv3
 - Proyecto original SDXS: https://huggingface.co/recoilme/sdxs
 - Perfil del autor: https://huggingface.co/recoilme
 - GitHub del autor: https://github.com/recoilme

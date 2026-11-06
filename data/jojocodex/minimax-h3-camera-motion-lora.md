@@ -81,6 +81,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Jojocodex/minimax-h3-Camera-Motion-lora)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Jojocodex/minimax-h3-Camera-Motion-lora)
 - [Repositorio GitHub de MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [Lista de recursos Awesome MiniMax H3](https://github.com/AtlasCloudAI/awesome-minimax-h3)

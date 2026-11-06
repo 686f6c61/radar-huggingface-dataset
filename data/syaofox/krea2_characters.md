@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Syaofox/Krea2_Characters es un repositorio alojado en HuggingFace por el usuario Syaofox que, segun la propia model card, no contiene un modelo entrenado desde cero, sino una copia de seguridad de pesos de terceros (identificados como LoRAs) recopilados de Civitai y de HuggingFace. El autor declara explicitamente que el objetivo es preservar material que considera interesante ante el riesgo de que esas plataformas lo eliminen sin aviso, y atribuye toda la autoria a los creadores originales. No se trata, por tanto, de un modelo base publicable ni de un artefacto con documentacion tecnica propia.
+Syaofox/Krea2_Characters es un repositorio alojado en Hugging Face por el usuario Syaofox que, segun la propia model card, no contiene un modelo entrenado desde cero, sino una copia de seguridad de pesos de terceros (identificados como LoRAs) recopilados de Civitai y de Hugging Face. El autor declara explicitamente que el objetivo es preservar material que considera interesante ante el riesgo de que esas plataformas lo eliminen sin aviso, y atribuye toda la autoria a los creadores originales. No se trata, por tanto, de un modelo base publicable ni de un artefacto con documentacion tecnica propia.
 
 El repositorio ocupa 185,7 GB y sus metadatos no declaran pipeline, licencia, idiomas ni resultados de evaluacion. La model card se limita a cuatro lineas de texto en ingles sin especificaciones, hiperparametros, dataset ni instrucciones de uso. El nombre sugiere una coleccion de adaptadores de personajes asociados a un modelo de generacion de imagenes de la familia Krea 2, pero esto es una inferencia a partir del nombre y del origen declarado del contenido, no un dato confirmado por el autor.
 
@@ -33,7 +33,7 @@ Su relevancia actual es, por tanto, la de un archivo de preservacion: util para 
 
 No hay informacion disponible sobre la arquitectura de los pesos alojados. La model card no describe capas, dimensiones, rango de adaptacion, estrategia de fusion ni ficheros concretos. El unico dato estructural es el tamano total del repositorio, 185,7 GB, coherente con un archivado masivo de multiples artefactos independientes mas que con un unico modelo de ese tamano.
 
-Tampoco se documenta ningun proceso de entrenamiento, conjunto de datos, numero de tokens, tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas. El texto del autor indica que el material fue recolectado de Civitai y HuggingFace, sin pasar por un pipeline de validacion, deduplicacion o conversion de formatos descrito publicamente. Cualquier afirmacion sobre el metodo de entrenamiento de los componentes seria especulacion.
+Tampoco se documenta ningun proceso de entrenamiento, conjunto de datos, numero de tokens, tecnicas de alineacion como RLHF o DPO, ni innovaciones tecnicas. El texto del autor indica que el material fue recolectado de Civitai y Hugging Face, sin pasar por un pipeline de validacion, deduplicacion o conversion de formatos descrito publicamente. Cualquier afirmacion sobre el metodo de entrenamiento de los componentes seria especulacion.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No disponible. No es posible establecer una comparativa tecnica fiable porque el
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia declarada: sin licencia explicita no hay autorizacion de uso, copia ni redistribucion, lo que impide cualquier explotacion comercial o academica sin autorizacion expresa de cada autor original.
-- Procedencia heterogenea: el material proviene de Civitai y HuggingFace sin indicacion de autores concretos, por lo que la atribucion es imposible de verificar y el riesgo legal recae sobre quien reutilice los ficheros.
+- Procedencia heterogenea: el material proviene de Civitai y Hugging Face sin indicacion de autores concretos, por lo que la atribucion es imposible de verificar y el riesgo legal recae sobre quien reutilice los ficheros.
 - Posibles sesgos: los adaptadores de personajes suelen arrastrar sesgos de representacion de sus datasets de origen; no hay ninguna evaluacion publicada al respecto en este repositorio.
 - Riesgo de contenido no filtrado: los espejos de Civitai suelen incluir material sin moderar. No se documenta ningun filtrado de contenido.
 - Integridad no verificada: no se publican sumas de comprobacion, inventario de ficheros ni confirmacion de que los pesos no hayan sido manipulados o corrompidos.
@@ -94,5 +94,5 @@ No disponible. No es posible establecer una comparativa tecnica fiable porque el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Syaofox/Krea2_Characters
+- Repositorio en Hugging Face: https://huggingface.co/Syaofox/Krea2_Characters
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su model card, a papers, a repositorios de codigo ni a demos. Los resultados devueltos correspondian a paginas de inicio de sesion de cuentas de Google y a hilos de foro sin relacion con el repositorio.

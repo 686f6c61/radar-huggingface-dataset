@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo nuevo, sino un espejo (mirror) byte-idéntico del fichero `ggml-small.en-q5_1.bin` procedente del repositorio oficial `ggerganov/whisper.cpp` de HuggingFace. El modelo subyacente es Whisper `small.en` de OpenAI, un modelo de reconocimiento automático de habla (ASR) con 244 millones de parámetros, especializado exclusivamente en inglés, convertido y cuantizado a 5 bits (q5_1) mediante las herramientas del proyecto whisper.cpp de Georgi Gerganov.
+Este repositorio no es un modelo nuevo, sino un espejo (mirror) byte-idéntico del fichero `ggml-small.en-q5_1.bin` procedente del repositorio oficial `ggerganov/whisper.cpp` de Hugging Face. El modelo subyacente es Whisper `small.en` de OpenAI, un modelo de reconocimiento automático de habla (ASR) con 244 millones de parámetros, especializado exclusivamente en inglés, convertido y cuantizado a 5 bits (q5_1) mediante las herramientas del proyecto whisper.cpp de Georgi Gerganov.
 
 La razón de ser de este mirror es puramente operativa: el autor (fzhnk) lo mantiene para que las instalaciones de su herramienta "interview-bro" puedan descargar siempre exactamente el mismo fichero binario contra el que fueron compiladas, garantizando reproducibilidad mediante el hash SHA-256 publicado. Esto es una práctica habitual en despliegues de producción, donde un cambio silencioso en el fichero original podría romper la compatibilidad.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Como 
 ## Enlaces
 
 - Repositorio del modelo (mirror): https://huggingface.co/fzhnk/whisper-small.en-q5_1-ggml
-- Repositorio original de whisper.cpp en HuggingFace: https://huggingface.co/ggerganov/whisper.cpp
+- Repositorio original de whisper.cpp en Hugging Face: https://huggingface.co/ggerganov/whisper.cpp
 - Proyecto whisper.cpp (GitHub): https://github.com/ggerganov/whisper.cpp
 - Paper original de Whisper (OpenAI): https://arxiv.org/abs/2212.04356
 - Pesos originales de OpenAI: https://github.com/openai/whisper

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| muktha212/smolvla_pick_up_candy | 450 M | VLA fine-tuned (so_follower, 1 tarea) | no aplica | apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible en la informacion | VLA base | no aplica | apache-2.0 | HuggingFace |
+| muktha212/smolvla_pick_up_candy | 450 M | VLA fine-tuned (so_follower, 1 tarea) | no aplica | apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible en la informacion | VLA base | no aplica | apache-2.0 | Hugging Face |
 | Otros VLA comparables (p. ej. pi0, OpenVLA) | no disponible en la informacion | VLA | no aplica | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muktha212/smolvla_pick_up_candy
+- Modelo en Hugging Face: https://huggingface.co/muktha212/smolvla_pick_up_candy
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/muktha212/pick_up_candy_20261102_211841
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

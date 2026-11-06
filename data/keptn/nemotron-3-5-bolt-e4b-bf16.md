@@ -6,7 +6,7 @@
 
 El interés práctico está en que permite ejecutar un modelo multimodal de la familia Nemotron 3.5 Bolt (nomenclatura E4B, con torre de visión y modo de razonamiento activable por petición) en una sola tarjeta AMD de 32 GB, con 65.536 tokens de contexto y capacidad de mantener 8 secuencias a longitud completa. El autor reporta una divergencia KL de 0,0015 frente al original en wikitext-2 y 154,9 tok/s combinados en un solo stream.
 
-La relevancia es doble: por un lado, abre el modelo a hardware AMD fuera del ecosistema CUDA; por otro, demuestra una ruta de cuantización/packaging conservadora (bf16 en pesos y activaciones, FP8 solo en el drafter y opcionalmente en la caché KV) con métricas de fidelidad publicadas. La licencia es openmdw-1.1, etiquetada como "other" en HuggingFace, y el repositorio no declara idiomas soportados.
+La relevancia es doble: por un lado, abre el modelo a hardware AMD fuera del ecosistema CUDA; por otro, demuestra una ruta de cuantización/packaging conservadora (bf16 en pesos y activaciones, FP8 solo en el drafter y opcionalmente en la caché KV) con métricas de fidelidad publicadas. La licencia es openmdw-1.1, etiquetada como "other" en Hugging Face, y el repositorio no declara idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ La relevancia es doble: por un lado, abre el modelo a hardware AMD fuera del eco
 | Longitud de contexto | 65.536 tokens |
 | Tipos de cuantizacion | Pesos bf16 sin cuantizar; activaciones bf16; `lm_head` bf16 (atado a la tabla de tokens); caché KV en bf16 o fp8; drafter DFlash en FP8 con una escala bf16 por bloque de 128×128 |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (campo `license: other` en HuggingFace) |
+| Licencia | openmdw-1.1 (campo `license: other` en Hugging Face) |
 | Formato de pesos | `.rad` (radiance), fichero único `nemotron-3.5-bolt-e4b-bf16.rad` de 16,44 GiB; tamaño del repo 17,7 GB |
 | Version del paquete | 1.0 (2026-10-24) |
 | Motor requerido | radiance 1.11.0 + PR #210 (build desde fuente) |
@@ -123,7 +123,7 @@ El único comparable con cifras utilizables en la información es el checkpoint 
 ## Limitaciones y advertencias
 
 - No es un modelo nuevo ni afinado: es un reempaquetado de pesos de NVIDIA; cualquier limitación del checkpoint original se hereda intacta.
-- Licencia `openmdw-1.1`, etiquetada como `other` en HuggingFace: hay que revisar el fichero LICENSE del repositorio antes de cualquier uso comercial; la información disponible no detalla condiciones de redistribución.
+- Licencia `openmdw-1.1`, etiquetada como `other` en Hugging Face: hay que revisar el fichero LICENSE del repositorio antes de cualquier uso comercial; la información disponible no detalla condiciones de redistribución.
 - Idiomas soportados no declarados: no hay garantía documentada de calidad fuera del inglés, idioma en el que están escritos la model card y los benchmarks.
 - Dependencia de un PR no fusionado (#210) y de compilar radiance desde una rama: riesgo operativo alto para producción; no hay release estable que lo incluya.
 - Requisito de 32 GB de VRAM en AMD RDNA4: no se documenta funcionamiento en GPUs de consumo ni en hardware NVIDIA.
@@ -138,7 +138,7 @@ El único comparable con cifras utilizables en la información es el checkpoint 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-bf16
+- Repositorio Hugging Face: https://huggingface.co/keptn/nemotron-3.5-bolt-e4b-bf16
 - Modelo base bf16 de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Variante con drafter DFlash: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash
 - Motor radiance: https://codeberg.org/StillDeadcode/radiance

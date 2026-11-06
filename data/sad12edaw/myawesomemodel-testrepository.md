@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio de HuggingFace publicado por el usuario sad12edaw, etiquetado con las librerías transformers y pytorch, la arquitectura bert, la tarea feature-extraction y compatibilidad con endpoints. Se trata de un modelo de extracción de características (embeddings) basado en la familia BERT, es decir, un encoder bidireccional orientado a producir representaciones vectoriales de texto en lugar de generar texto de forma autorregresiva. El repositorio no incluye tarjeta de modelo, paper, blog ni documentación técnica asociada.
+MyAwesomeModel-TestRepository es un repositorio de Hugging Face publicado por el usuario sad12edaw, etiquetado con las librerías transformers y pytorch, la arquitectura bert, la tarea feature-extraction y compatibilidad con endpoints. Se trata de un modelo de extracción de características (embeddings) basado en la familia BERT, es decir, un encoder bidireccional orientado a producir representaciones vectoriales de texto en lugar de generar texto de forma autorregresiva. El repositorio no incluye tarjeta de modelo, paper, blog ni documentación técnica asociada.
 
 No se dispone de información sobre el número de parámetros, la longitud de contexto, los idiomas soportados, el volumen de entrenamiento ni los datos utilizados. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y su nombre ("TestRepository") sugiere que se trata de un artefacto de prueba más que de un modelo destinado a producción. La fecha de creación y de última actualización declarada en los metadatos es el 14 de septiembre de 2026.
 
@@ -44,7 +44,7 @@ No hay información sobre el corpus de entrenamiento, el número de tokens proce
 - Soporte de agentes: no disponible.
 - Capacidades multimodales (visión, audio): no disponible.
 - Capacidades multilingües: no disponible; no se declara ningún idioma en los metadatos.
-- Compatibilidad con Endpoints de HuggingFace: sí, según la etiqueta endpoints_compatible.
+- Compatibilidad con Endpoints de Hugging Face: sí, según la etiqueta endpoints_compatible.
 
 ## Casos de uso
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia: no determinable, ya que se desconoce el número de parámetros. Como referencia orientativa de la familia BERT, una configuración tipo base (del orden de 110 millones de parámetros) en FP32 requiere aproximadamente 0,5-1 GB de VRAM, y en FP16 alrededor de la mitad; no obstante, estos valores no están confirmados para este repositorio.
 - GPU recomendadas: no disponible. Para un encoder de tamaño base bastaría cualquier GPU consumer con 4-8 GB de VRAM; para variantes large o de mayor tamaño serían aconsejables GPUs de 16 GB o superiores.
 - GPU consumer: probablemente sí si el modelo es de tamaño base o inferior, aunque sin confirmación.
-- Opciones de despliegue: la librería declarada es transformers, por lo que el despliegue natural sería un servidor de inferencia compatible con PyTorch (por ejemplo, HuggingFace Inference Endpoints, dado el tag endpoints_compatible). No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI, formatos que no están declarados en los metadatos.
+- Opciones de despliegue: la librería declarada es transformers, por lo que el despliegue natural sería un servidor de inferencia compatible con PyTorch (por ejemplo, Hugging Face Inference Endpoints, dado el tag endpoints_compatible). No se confirma soporte para vLLM, llama.cpp, Ollama ni TGI, formatos que no están declarados en los metadatos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparación se ofrece a nivel de categoría, ya que los parámetros y el ren
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| sad12edaw/MyAwesomeModel-TestRepository | no disponible | no disponible | no disponible (etiqueta license:mit) | Repositorio en HuggingFace con 0 descargas | Sin tarjeta de modelo ni documentación |
+| sad12edaw/MyAwesomeModel-TestRepository | no disponible | no disponible | no disponible (etiqueta license:mit) | Repositorio en Hugging Face con 0 descargas | Sin tarjeta de modelo ni documentación |
 | bert-base-uncased (Google) | ~110 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Referencia estándar de encoder bidireccional en inglés |
 | distilbert-base-uncased | ~66 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Versión destilada, más rápida y con menor huella de memoria |
 | roberta-base (Meta) | ~125 M | 512 tokens | MIT | Ampliamente disponible | Entrenamiento más prolongado y con más datos que BERT base |
@@ -86,7 +86,7 @@ La comparación se ofrece a nivel de categoría, ya que los parámetros y el ren
 - Ausencia total de documentación: no hay tarjeta de modelo, paper, blog ni ejemplos de uso, lo que impide conocer el entrenamiento, los datos o el comportamiento esperado.
 - Contradicción en la licencia: la etiqueta del repositorio indica MIT, pero el campo de licencia aparece como no disponible. Antes de cualquier uso comercial debe verificarse la licencia real y los términos aplicables.
 - Repositorio sin tracción: 0 descargas y 0 "likes", con un nombre que sugiere un artefacto de prueba. No hay evidencia de que los pesos sean correctos o utilizables.
-- Fecha de creación futura: los metadatos indican 2026-09-14, lo que constituye una anomalía que conviene comprobar directamente en la web de HuggingFace.
+- Fecha de creación futura: los metadatos indican 2026-09-14, lo que constituye una anomalía que conviene comprobar directamente en la web de Hugging Face.
 - Idiomas no declarados: no puede asumirse soporte multilingüe ni siquiera un idioma concreto.
 - Riesgo de alucinación: no aplicable en sentido estricto a un modelo de extracción de características, pero sí existe riesgo de embeddings de baja calidad o sin significado si el modelo no está correctamente entrenado.
 - Sesgos: imposibles de evaluar sin información sobre el corpus de entrenamiento.
@@ -95,7 +95,7 @@ La comparación se ofrece a nivel de categoría, ya que los parámetros y el ren
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sad12edaw/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/sad12edaw/MyAwesomeModel-TestRepository
 - Paper: no disponible
 - Blog o documentación técnica: no disponible
 - Repositorio de código: no disponible

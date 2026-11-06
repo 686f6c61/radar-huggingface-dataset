@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Computer Agent es un *harness* agéntico de código abierto publicado por hkblockchaintechnology en HuggingFace bajo licencia MIT. No es un modelo de pesos en sí, sino un marco de ejecución que orquesta un bucle observe → think → act → verify para controlar un ordenador real mediante un modelo de visión-lenguaje de pequeño tamaño (≤ 3B parámetros, cuantizado) que emite exactamente una acción de un vocabulario cerrado. El objetivo declarado es operar un escritorio de forma completamente local, sin API en la nube, sin claves y sin telemetría, con un núcleo que solo importa la biblioteca estándar de Python.
+Tiny Computer Agent es un *harness* agéntico de código abierto publicado por hkblockchaintechnology en Hugging Face bajo licencia MIT. No es un modelo de pesos en sí, sino un marco de ejecución que orquesta un bucle observe → think → act → verify para controlar un ordenador real mediante un modelo de visión-lenguaje de pequeño tamaño (≤ 3B parámetros, cuantizado) que emite exactamente una acción de un vocabulario cerrado. El objetivo declarado es operar un escritorio de forma completamente local, sin API en la nube, sin claves y sin telemetría, con un núcleo que solo importa la biblioteca estándar de Python.
 
 El proyecto se encuentra en estado de alfa temprana. El bucle funciona de extremo a extremo con una pantalla guionizada, ejecución en modo *dry-run*, interfaz de línea de comandos y 56 pruebas offline que no requieren pantalla, modelo ni red. El *backend* de visión está documentado como una costura de integración, no como una funcionalidad operativa: `GrabScreen` captura píxeles mediante `mss`, pero todavía no existe un conversor de píxeles a índice de elementos (OCR o AT-SPI), por lo que una pantalla real produce cero elementos y ninguna inferencia está conectada.
 
@@ -91,4 +91,4 @@ La comparación directa no es posible en términos de parámetros o benchmarks p
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/hkblockchaintechnology/tiny-computer-agent
+- Model card en Hugging Face: https://huggingface.co/hkblockchaintechnology/tiny-computer-agent

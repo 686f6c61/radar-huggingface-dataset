@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con modelos no abliterados de t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rSalone/DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF
+- Hugging Face: https://huggingface.co/rSalone/DeepSeek-V4.1-Flash-1017-GSQ-RCO-uncensored-t1-4-GGUF
 - Modelo base (GGUF): https://huggingface.co/ISTA-DASLab/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - README en japonés: README_ja.md (incluido en el repositorio)
 - Figura 1: images/fig1_results_en.png (incluida en el repositorio)

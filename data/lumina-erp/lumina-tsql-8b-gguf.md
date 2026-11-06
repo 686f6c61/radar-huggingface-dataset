@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Lumina-ERP/lumina-tsql-8b-GGUF es un modelo de generación de texto especializado en la traducción de lenguaje natural a consultas T-SQL para SQL Server, orientado a entornos ERP. Lo desarrolla Lumina-ERP, una consultora estadounidense especializada en sistemas ERP como Prophet 21 y Epicor Kinetic, y su distribución se realiza a través de HuggingFace con acceso restringido (gated).
+Lumina-ERP/lumina-tsql-8b-GGUF es un modelo de generación de texto especializado en la traducción de lenguaje natural a consultas T-SQL para SQL Server, orientado a entornos ERP. Lo desarrolla Lumina-ERP, una consultora estadounidense especializada en sistemas ERP como Prophet 21 y Epicor Kinetic, y su distribución se realiza a través de Hugging Face con acceso restringido (gated).
 
 El modelo se basa en la arquitectura Qwen3, con 8.190 millones de parámetros, y se publica en formato GGUF para su uso con llama.cpp y Ollama. Está diseñado para cubrir el hueco de generación automática de consultas T-SQL en contextos empresariales, donde los desarrolladores necesitan convertir preguntas en lenguaje natural a SQL Server de forma fiable. Aunque el repositorio indica que el idioma soportado es únicamente inglés, su especialización en T-SQL lo hace relevante para equipos de desarrollo de software ERP que trabajan con Microsoft SQL Server.
 
-El modelo se acompaña de un dataset propio, `Lumina-ERP/erpbench-distribution`, que probablemente contiene ejemplos de preguntas y consultas T-SQL de dominio empresarial. No se han publicado aún benchmarks ni documentación técnica detallada, y el acceso al repositorio requiere aceptar condiciones en HuggingFace, lo que limita la evaluación independiente por el momento.
+El modelo se acompaña de un dataset propio, `Lumina-ERP/erpbench-distribution`, que probablemente contiene ejemplos de preguntas y consultas T-SQL de dominio empresarial. No se han publicado aún benchmarks ni documentación técnica detallada, y el acceso al repositorio requiere aceptar condiciones en Hugging Face, lo que limita la evaluación independiente por el momento.
 
 ## Especificaciones técnicas
 
@@ -63,7 +63,7 @@ No disponible. No se han encontrado datos comparativos con otros modelos de text
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es de acceso gated en HuggingFace, por lo que se requiere aceptar condiciones antes de descargarlo, lo que puede limitar su uso en proyectos de evaluación rápida.
+- Acceso restringido: el modelo es de acceso gated en Hugging Face, por lo que se requiere aceptar condiciones antes de descargarlo, lo que puede limitar su uso en proyectos de evaluación rápida.
 - Idioma: solo se soporta inglés, por lo que no es adecuado para consultas en español u otros idiomas sin una adaptación previa.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar consultas SQL sintácticamente válidas pero semánticamente incorrectas, especialmente en esquemas de bases de datos complejos o con vocabulario específico de dominio.
 - Falta de documentación técnica: no se han publicado detalles sobre el proceso de entrenamiento, la arquitectura exacta ni la evaluación, lo que dificulta la confianza para uso en producción.
@@ -72,7 +72,7 @@ No disponible. No se han encontrado datos comparativos con otros modelos de text
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Lumina-ERP/lumina-tsql-8b-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/Lumina-ERP/lumina-tsql-8b-GGUF
 - Modelo base (safetensors): https://huggingface.co/Lumina-ERP/lumina-tsql-8b
 - Dataset de entrenamiento: https://huggingface.co/datasets/Lumina-ERP/erpbench-distribution
 - Sitio web de Lumina ERP: https://lumina-erp.com/ (no relacionado directamente con el modelo, pero es el contexto de la empresa)
@@ -81,7 +81,7 @@ Nota: los resultados de búsqueda web no aportaron información técnica adicion
 
 Lumina-ERP/lumina-tsql-8b-GGUF es un modelo de lenguaje especializado en la generación de consultas T-SQL para Microsoft SQL Server a partir de texto en lenguaje natural, orientado al dominio de los sistemas ERP. Lo desarrolla Lumina-ERP, una consultora estadounidense con sede en Houston especializada en la implementación y el soporte de plataformas ERP como Prophet 21 y Epicor Kinetic. El modelo se distribuye en formato GGUF, lo que permite su ejecución local con motores como llama.cpp y Ollama.
 
-El modelo parte de la arquitectura Qwen3 y cuenta con 8.190 millones de parámetros, un tamaño que lo sitúa en el rango de modelos que pueden ejecutarse en hardware de consumo con cuantización. Se acompaña de un dataset propio llamado `erpbench-distribution`, que probablemente contiene ejemplos de preguntas empresariales emparejadas con consultas T-SQL. La publicación es reciente (agosto de 2026) y el acceso está restringido en HuggingFace, por lo que aún no se han publicado benchmarks ni documentación técnica detallada.
+El modelo parte de la arquitectura Qwen3 y cuenta con 8.190 millones de parámetros, un tamaño que lo sitúa en el rango de modelos que pueden ejecutarse en hardware de consumo con cuantización. Se acompaña de un dataset propio llamado `erpbench-distribution`, que probablemente contiene ejemplos de preguntas empresariales emparejadas con consultas T-SQL. La publicación es reciente (agosto de 2026) y el acceso está restringido en Hugging Face, por lo que aún no se han publicado benchmarks ni documentación técnica detallada.
 
 El interés de este modelo reside en su enfoque vertical: en lugar de un modelo generalista de text-to-SQL, está pensado específicamente para el contexto de los sistemas ERP, donde las consultas suelen involucrar esquemas complejos de inventario, pedidos, clientes y facturación. Esto puede suponer una ventaja frente a modelos generalistas si el dataset de entrenamiento refleja bien la terminología y los patrones de consulta del dominio.
 
@@ -140,7 +140,7 @@ No disponible. No se han encontrado datos comparativos de este modelo con otras 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es de tipo gated en HuggingFace, por lo que requiere aceptar condiciones antes de su uso, lo que puede dificultar la evaluación rápida.
+- Acceso restringido: el modelo es de tipo gated en Hugging Face, por lo que requiere aceptar condiciones antes de su uso, lo que puede dificultar la evaluación rápida.
 - Idioma único: solo soporta inglés, por lo que no es adecuado para consultas en español u otros idiomas sin una adaptación previa.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar consultas SQL sintácticamente válidas pero semánticamente incorrectas, especialmente en esquemas de bases de datos complejos.
 - Falta de documentación: no se han publicado detalles del proceso de entrenamiento, datos de evaluación ni límites de contexto, lo que dificulta la confianza para uso en producción.
@@ -150,7 +150,7 @@ No disponible. No se han encontrado datos comparativos de este modelo con otras 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Lumina-ERP/lumina-tsql-8b-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/Lumina-ERP/lumina-tsql-8b-GGUF
 - Modelo base (safetensors): https://huggingface.co/Lumina-ERP/lumina-tsql-8b
 - Dataset de entrenamiento: https://huggingface.co/datasets/Lumina-ERP/erpbench-distribution
 - Sitio web de Lumina ERP: https://lumina-erp.com/ (contexto de la empresa, no documentación técnica del modelo)

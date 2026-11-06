@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jeroenhey/delli-sg-lora-test es un repositorio alojado en HuggingFace por el usuario Jeroenhey, cuyo nombre sugiere que contiene un adaptador LoRA ("lora") asociado a un modelo o proyecto identificado como "delli-sg". El repositorio ocupa 0,3 GB, se creó el 14 de septiembre de 2026 a las 20:27 UTC y se actualizó cuatro minutos más tarde, a las 20:31 UTC, un intervalo muy corto que resulta compatible con una subida de prueba o automatizada.
+Jeroenhey/delli-sg-lora-test es un repositorio alojado en Hugging Face por el usuario Jeroenhey, cuyo nombre sugiere que contiene un adaptador LoRA ("lora") asociado a un modelo o proyecto identificado como "delli-sg". El repositorio ocupa 0,3 GB, se creó el 14 de septiembre de 2026 a las 20:27 UTC y se actualizó cuatro minutos más tarde, a las 20:31 UTC, un intervalo muy corto que resulta compatible con una subida de prueba o automatizada.
 
 La informacion publica disponible es minima: la ficha no declara pipeline de inferencia, licencia, idiomas soportados ni modelo base, y el unico tag presente es "region:us". El repositorio acumula 0 descargas y 1 like en el momento de la consulta, por lo que no existe evidencia de uso en produccion ni de validacion por parte de la comunidad.
 
@@ -48,7 +48,7 @@ Los escenarios siguientes son hipoteticos y solo serian aplicables si el adaptad
 - Pruebas de integracion en pipelines de entrenamiento: dado el tamano reducido del repositorio (0,3 GB), encaja en flujos de CI que verifican la carga de pesos, la compatibilidad de versiones de transformers/PEFT y la exportacion a otros formatos.
 - Experimentos de ajuste de dominio sobre un modelo ya desplegado: si el modelo base estuviese identificado, el adaptador podria aplicarse para especializar el comportamiento en un dominio concreto sin reentrenar el modelo completo.
 - Analisis forense de artefactos publicados: revisar la estructura de ficheros del repositorio permite estudiar como se empaquetan adaptadores y que metadatos acompanan a una subida de prueba.
-- Docencia sobre ajuste eficiente de parametros: el repositorio puede servir como ejemplo de publicacion de un adaptador en HuggingFace y de las carencias habituales en su documentacion.
+- Docencia sobre ajuste eficiente de parametros: el repositorio puede servir como ejemplo de publicacion de un adaptador en Hugging Face y de las carencias habituales en su documentacion.
 - Verificacion de licencias en un catalogo interno: antes de cualquier uso comercial, un equipo de cumplimiento tendria que determinar la licencia del adaptador y la del modelo base, actualmente ambas no disponibles.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No disponible. Sin conocer el modelo base ni la tarea objetivo, no es posible es
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeroenhey/delli-sg-lora-test | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| Jeroenhey/delli-sg-lora-test | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,8 +86,8 @@ No disponible. Sin conocer el modelo base ni la tarea objetivo, no es posible es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jeroenhey/delli-sg-lora-test
-- Perfil del autor en HuggingFace: https://huggingface.co/Jeroenhey
+- Repositorio en Hugging Face: https://huggingface.co/Jeroenhey/delli-sg-lora-test
+- Perfil del autor en Hugging Face: https://huggingface.co/Jeroenhey
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

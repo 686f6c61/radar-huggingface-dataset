@@ -52,16 +52,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - Qwen3-4B en FP16 requiere aproximadamente 8 GB de VRAM para inferencia.
 - Con cuantizacion a 4 bits, puede ejecutarse en GPUs de consumo como RTX 3060 (12 GB) o RTX 4060 Ti (16 GB).
 - GPUs recomendadas: RTX 3090, RTX 4090, A10G o L4 para un rendimiento fluido sin cuantizacion.
-- Despliegue: los adaptadores pueden cargarse con la libreria PEFT de HuggingFace Transformers, o fusionarse con el modelo base y exportarse a GGUF para su uso con llama.cpp u Ollama.
+- Despliegue: los adaptadores pueden cargarse con la libreria PEFT de Hugging Face Transformers, o fusionarse con el modelo base y exportarse a GGUF para su uso con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ptcg-qwen3-4b-dpo-loras` (este) | No disponible (base Qwen3-4B) | No especificado | DPO sobre playouts | Apache 2.0 | HuggingFace |
-| `ptcg-qwen3-4b-cardfirst-v40` (base) | 4B (Qwen3-4B) | No especificado | Fine-tuning supervisado | Apache 2.0 | HuggingFace |
-| Qwen3-4B (modelo original) | 4B | 32k o 128k segun variante | Pre-entrenamiento + RLHF | Apache 2.0 | HuggingFace |
+| `ptcg-qwen3-4b-dpo-loras` (este) | No disponible (base Qwen3-4B) | No especificado | DPO sobre playouts | Apache 2.0 | Hugging Face |
+| `ptcg-qwen3-4b-cardfirst-v40` (base) | 4B (Qwen3-4B) | No especificado | Fine-tuning supervisado | Apache 2.0 | Hugging Face |
+| Qwen3-4B (modelo original) | 4B | 32k o 128k segun variante | Pre-entrenamiento + RLHF | Apache 2.0 | Hugging Face |
 
 No se dispone de información sobre otros modelos específicos para Pokemon TCG que permitan una comparativa directa. La comparativa se limita al modelo base y al modelo original de Qwen.
 
@@ -77,6 +77,6 @@ No se dispone de información sobre otros modelos específicos para Pokemon TCG 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yoheikobashi/ptcg-qwen3-4b-dpo-loras
+- Repositorio Hugging Face: https://huggingface.co/yoheikobashi/ptcg-qwen3-4b-dpo-loras
 - Modelo base: https://huggingface.co/yoheikobashi/ptcg-qwen3-4b-cardfirst-v40
 - Codigo fuente: https://github.com/yohei-kobashi/pokemon-card-bert

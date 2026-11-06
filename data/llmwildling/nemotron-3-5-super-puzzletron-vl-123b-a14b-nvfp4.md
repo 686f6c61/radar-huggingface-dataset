@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Super-Puzzletron-VL-123B-A14B-NVFP4 | 67,1B (safetensors) | 32.768 | OpenMDW-1.1 | HuggingFace (45 descargas) | Ajuste GRPO sobre puzles |
-| NVIDIA Nemotron-3.5-Super-VL-120B-A12B-NVFP4 (base) | ~120B (nombre) | no disponible | OpenMDW-1.1 | HuggingFace (NVIDIA) | Modelo base sin ajuste de puzles |
+| Nemotron-3.5-Super-Puzzletron-VL-123B-A14B-NVFP4 | 67,1B (safetensors) | 32.768 | OpenMDW-1.1 | Hugging Face (45 descargas) | Ajuste GRPO sobre puzles |
+| NVIDIA Nemotron-3.5-Super-VL-120B-A12B-NVFP4 (base) | ~120B (nombre) | no disponible | OpenMDW-1.1 | Hugging Face (NVIDIA) | Modelo base sin ajuste de puzles |
 | Alternativas de razonamiento con RL | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 No se dispone de información suficiente para comparar con modelos de la misma categoría en benchmarks estándar.
@@ -93,7 +93,7 @@ No se dispone de información suficiente para comparar con modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LLMWildling/Nemotron-3.5-Super-Puzzletron-VL-123B-A14B-NVFP4
+- Hugging Face: https://huggingface.co/LLMWildling/Nemotron-3.5-Super-Puzzletron-VL-123B-A14B-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Entorno NeMo Gym: https://github.com/NVIDIA-NeMo/Gym

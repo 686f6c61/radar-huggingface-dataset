@@ -85,11 +85,11 @@ La comparativa se limita a los datos disponibles. No se dispone de informacion s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Repositorio de abliteracion (remove-refusals-with-transformers): https://github.com/Sumandora/remove-refusals-with-transformers
 - llama.cpp (ggml-org): https://github.com/ggml-org/llama.cpp/releases
-- Perfil de huihui-ai en HuggingFace: https://huggingface.co/huihui-ai
+- Perfil de huihui-ai en Hugging Face: https://huggingface.co/huihui-ai
 - Perfil de huihui_ai en Ollama: https://ollama.com/huihui_ai
 - Ko-fi del autor: https://ko-fi.com/huihuiai

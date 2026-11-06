@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`debudash/qwen3-4b-tz-convert-v4-n12000` es un adaptador LoRA publicado en HuggingFace por el usuario `debudash`, construido sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507` de Alibaba Qwen. No se trata de un modelo entrenado desde cero, sino de un ajuste fino ligero (PEFT) empaquetado en un repositorio de 0,1 GB, lo que confirma que solo contiene los pesos del adaptador y no los del modelo completo. El nombre sugiere un entrenamiento orientado a una tarea de "conversion" con un conjunto de datos de aproximadamente 12.000 ejemplos, aunque la model card no documenta el procedimiento.
+`debudash/qwen3-4b-tz-convert-v4-n12000` es un adaptador LoRA publicado en Hugging Face por el usuario `debudash`, construido sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507` de Alibaba Qwen. No se trata de un modelo entrenado desde cero, sino de un ajuste fino ligero (PEFT) empaquetado en un repositorio de 0,1 GB, lo que confirma que solo contiene los pesos del adaptador y no los del modelo completo. El nombre sugiere un entrenamiento orientado a una tarea de "conversion" con un conjunto de datos de aproximadamente 12.000 ejemplos, aunque la model card no documenta el procedimiento.
 
 El modelo hereda la arquitectura y las capacidades del Qwen3-4B-Instruct-2507: un transformer denso de 4.000 millones de parametros con ventana de contexto nativa de 262.144 tokens, soporte multilingue amplio y modo de razonamiento. El adaptador modifica el comportamiento del modelo base para la tarea especifica de conversion, pero no altera su arquitectura ni su tokenizador.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada: el repositorio no incluye documentacion
 
 El adaptador se aplica sobre Qwen3-4B-Instruct-2507, un transformer decoder-only denso de 4.000 millones de parametros con atencion por grupos (GQA), RoPE y ventana de contexto de 262.144 tokens. La version Instruct-2507 incorpora mejoras de instruccion y modo de razonamiento respecto a iteraciones anteriores de Qwen3. El adaptador LoRA congela los pesos base e inyecta matrices de bajo rango en determinadas capas, lo que reduce drasticamente el numero de parametros entrenables y el coste de almacenamiento (0,1 GB en el repositorio).
 
-No hay informacion publica sobre el dataset de entrenamiento, el numero de tokens, la composicion, el rango del LoRA, la tasa de aprendizaje ni si se empleo RLHF o DPO. El sufijo `tz-convert-v4-n12000` sugiere una cuarta iteracion de un ajuste orientado a conversion de formato o transformacion de texto con unos 12.000 ejemplos, pero es una inferencia a partir del nombre y no un dato documentado. La model card es la plantilla estandar de HuggingFace sin rellenar, por lo que no se puede confirmar ningun detalle del procedimiento.
+No hay informacion publica sobre el dataset de entrenamiento, el numero de tokens, la composicion, el rango del LoRA, la tasa de aprendizaje ni si se empleo RLHF o DPO. El sufijo `tz-convert-v4-n12000` sugiere una cuarta iteracion de un ajuste orientado a conversion de formato o transformacion de texto con unos 12.000 ejemplos, pero es una inferencia a partir del nombre y no un dato documentado. La model card es la plantilla estandar de Hugging Face sin rellenar, por lo que no se puede confirmar ningun detalle del procedimiento.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ No hay informacion publica sobre el dataset de entrenamiento, el numero de token
 
 - Conversion de formatos estructurados: si el adaptador fue entrenado para transformar texto entre esquemas (por ejemplo, fechas, zonas horarias o unidades), puede emplearse en pipelines de normalizacion de datos. Requiere validacion empirica porque la tarea no esta documentada.
 - Prototipado rapido de tareas de transformacion: al ser un adaptador de 0,1 GB sobre un modelo de 4B, permite experimentar con bajo coste de almacenamiento y despliegue en una sola GPU.
-- Fine-tuning incremental sobre dominio propio: el adaptador sirve como punto de partida para seguir entrenando con PEFT sobre el mismo modelo base, reutilizando la infraestructura de HuggingFace `peft`.
+- Fine-tuning incremental sobre dominio propio: el adaptador sirve como punto de partida para seguir entrenando con PEFT sobre el mismo modelo base, reutilizando la infraestructura de Hugging Face `peft`.
 - Evaluacion comparativa de adaptadores: util para investigadores que estudien el efecto de LoRAs de comunidad sobre modelos Qwen3 en tareas de conversion.
 - Despliegue en entornos con VRAM limitada: el modelo base de 4B cuantizado a 4 bits ocupa aproximadamente 2,5-3 GB, por lo que cabe en GPUs de consumo como RTX 3060 de 12 GB o superiores.
 - Generacion de texto asistida en castellano: el modelo base es multilingue y puede usarse para redaccion y resumen, aunque el adaptador podria degradar el rendimiento general si se entreno solo para conversion.
@@ -81,7 +81,7 @@ El adaptador no aporta mejoras medibles frente al modelo base en benchmarks publ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v4-n12000
+- Repositorio Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v4-n12000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

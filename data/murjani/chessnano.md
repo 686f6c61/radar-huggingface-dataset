@@ -75,7 +75,7 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Murjani/chessnano
+- Hugging Face: https://huggingface.co/Murjani/chessnano
 - Codigo (GitHub): https://github.com/Kcbir/chessnano
 - Blog del autor con detalles: https://www.kabir.codes/writing/chessnano
 - Repositorio alternativo con README: https://github.com/Kcbir/r_chessnano

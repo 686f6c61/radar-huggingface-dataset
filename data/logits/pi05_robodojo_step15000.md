@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `logits/pi05_robodojo_step15000` es un checkpoint de la política robótica FlashVLA PI0.5, entrenado sobre el benchmark RoboDojo y exportado en el paso 15000 de entrenamiento. Lo publica el usuario `logits` en HuggingFace bajo la librería LeRobot, con un peso total de 4.933.375.760 parámetros (aproximadamente 4,9 mil millones) y un tamaño de repositorio de 19,7 GB en formato safetensors.
+El modelo `logits/pi05_robodojo_step15000` es un checkpoint de la política robótica FlashVLA PI0.5, entrenado sobre el benchmark RoboDojo y exportado en el paso 15000 de entrenamiento. Lo publica el usuario `logits` en Hugging Face bajo la librería LeRobot, con un peso total de 4.933.375.760 parámetros (aproximadamente 4,9 mil millones) y un tamaño de repositorio de 19,7 GB en formato safetensors.
 
 El modelo pertenece a la familia de políticas visión-lenguaje-acción (VLA) π0.5, desarrollada originalmente por Physical Intelligence y adaptada al ecosistema RoboDojo a través del stack OpenPI. RoboDojo es un benchmark unificado de simulación y mundo real para la evaluación exhaustiva de políticas de manipulación robótica generalistas, con 42 tareas de simulación y 18 tareas del mundo real, mantenido por un consorcio académico sin ánimo de lucro.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La princ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logits/pi05_robodojo_step15000
+- Modelo en Hugging Face: https://huggingface.co/logits/pi05_robodojo_step15000
 - Repositorio de RoboDojo: https://github.com/robodojo-benchmark/RoboDojo
 - Web oficial de RoboDojo: https://robodojo-benchmark.com/
 - Documentacion de Pi_05 en XPolicyLab: https://github.com/XPolicyLab/XPolicyLab/blob/main/policy/Pi_05/README.md

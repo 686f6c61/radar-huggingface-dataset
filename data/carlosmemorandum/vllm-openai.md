@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `carlosmemorandum/vllm-openai` no contiene un modelo de inteligencia artificial, sino una copia de la imagen de contenedor `docker.io/vllm/vllm-openai:v0.30.0` limitada a la plataforma `linux/arm64`. Se trata de un espejo publicado en HuggingFace Hub para poder instalar el servidor OpenAI-compatible de vLLM en maquinas arm64 sin depender de Docker Hub. El tamano del repositorio es de 9,7 GB y la model card indica que cada fichero de `blobs/sha256/` se nombra con su propio SHA-256.
+El repositorio `carlosmemorandum/vllm-openai` no contiene un modelo de inteligencia artificial, sino una copia de la imagen de contenedor `docker.io/vllm/vllm-openai:v0.30.0` limitada a la plataforma `linux/arm64`. Se trata de un espejo publicado en Hugging Face Hub para poder instalar el servidor OpenAI-compatible de vLLM en maquinas arm64 sin depender de Docker Hub. El tamano del repositorio es de 9,7 GB y la model card indica que cada fichero de `blobs/sha256/` se nombra con su propio SHA-256.
 
 La imagen upstream corresponde al manifiesto `sha256:4864d46625cbc3307623e29ac742030655e27249feba7b97ec925ce4cc4dfb56` e id de imagen `sha256:91d9b077589e7ebb9399ea8db07787bd40cc04ba96a767f021ffdf3e321ea9a0`. Una vez cargada, queda etiquetada como `vllm/vllm-openai:v0.30.0` con ese mismo id.
 
@@ -51,7 +51,7 @@ El procedimiento de carga documentado por el autor es: descargar con `hf downloa
 - Reproducibilidad por digest: al fijar el digest del manifiesto y el id de imagen, los pipelines pueden verificar que el contenedor cargado es exactamente el esperado.
 - Replicacion en registro interno: la imagen cargada se puede reetiquetar y publicar en un registro privado, sirviendo como fuente unica para un parque de maquinas arm64.
 - Pruebas de compatibilidad de clientes OpenAI: permite levantar un endpoint compatible con la API de OpenAI en hardware arm64 para validar SDKs y aplicaciones cliente antes de pasar a produccion.
-- Formacion y documentacion interna: sirve como artefacto de referencia para explicar el flujo de distribucion de imagenes mediante HuggingFace Hub y `docker load`.
+- Formacion y documentacion interna: sirve como artefacto de referencia para explicar el flujo de distribucion de imagenes mediante Hugging Face Hub y `docker load`.
 - Integracion en pipelines de CI sobre runners arm64: el paso de preparacion del entorno se reduce a una descarga y una carga de imagen, sin credenciales de registro.
 - Evaluacion comparativa de modelos: al ser un contenedor de servidor, permite intercambiar el modelo servido y medir latencia y throughput sobre la misma base de software.
 
@@ -75,10 +75,10 @@ No procede comparar con modelos de lenguaje, porque el repositorio no contiene n
 
 | Alternativa | Tipo | Plataforma | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| `carlosmemorandum/vllm-openai` (este repo) | Imagen OCI de vLLM v0.30.0 en HuggingFace Hub | `linux/arm64` | no declarada en la model card | 0 descargas, 0 likes en el momento de la consulta | Espejo con `docker load`, sin dependencia de Docker Hub |
+| `carlosmemorandum/vllm-openai` (este repo) | Imagen OCI de vLLM v0.30.0 en Hugging Face Hub | `linux/arm64` | no declarada en la model card | 0 descargas, 0 likes en el momento de la consulta | Espejo con `docker load`, sin dependencia de Docker Hub |
 | `vllm/vllm-openai` en Docker Hub | Imagen OCI oficial del proyecto vLLM | multi-arquitectura (incluye arm64) | la del proyecto upstream | publica | Requiere acceso a Docker Hub |
 | llama.cpp server | Binario o contenedor de servidor de inferencia | multiplataforma | licencia del proyecto llama.cpp | publica | Orientado a GGUF y CPU/GPU variadas |
-| Text Generation Inference (TGI) | Imagen de servidor de inferencia de HuggingFace | multi-arquitectura | licencia del proyecto TGI | publica | API propia, no identica a la de OpenAI en todos los casos |
+| Text Generation Inference (TGI) | Imagen de servidor de inferencia de Hugging Face | multi-arquitectura | licencia del proyecto TGI | publica | API propia, no identica a la de OpenAI en todos los casos |
 | Ollama | Runtime y catalogo de modelos | multiplataforma | licencia del proyecto Ollama | publica | Enfocado a uso local sencillo, con su propio formato de paquetes |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada.
@@ -99,9 +99,9 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carlosmemorandum/vllm-openai
+- Repositorio en Hugging Face: https://huggingface.co/carlosmemorandum/vllm-openai
 - Imagen upstream en Docker Hub: https://hub.docker.com/r/vllm/vllm-openai
 - Repositorio del proyecto vLLM en GitHub: https://github.com/vllm-project/vllm
 - Documentacion de vLLM: https://docs.vllm.ai
-- Documentacion de HuggingFace Hub sobre descarga de ficheros con `hf download`: https://huggingface.co/docs/huggingface_hub/guides/cli
+- Documentacion de Hugging Face Hub sobre descarga de ficheros con `hf download`: https://huggingface.co/docs/huggingface_hub/guides/cli
 - Referencia de Docker sobre `docker load`: https://docs.docker.com/reference/cli/docker/image/load/

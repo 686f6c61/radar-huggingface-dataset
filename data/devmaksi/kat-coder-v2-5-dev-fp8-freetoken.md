@@ -6,7 +6,7 @@ KAT-Coder-V2.5-Dev-FP8-freetoken es una copia cuantizada a FP8 del modelo KAT-Co
 
 La aportación diferencial del modelo original no es la escala, sino el marco de post-entrenamiento agéntico (SFT + RL) con entornos reproducibles y recompensas verificables, que según la model card lo sitúa en estado del arte dentro de su rango de parámetros en tareas de Agentic Coding. El RL también corrige comportamientos anómalos medibles: las etiquetas de herramienta inválidas bajan del 9,34 % al 0,28 % (-9 pp) y la repetición continua en un solo turno pasa del 0,34 % al 0 %.
 
-Esta variante concreta aporta dos matices relevantes para quien vaya a desplegarla: los pesos están cuantizados localmente a FP8 y se sirven con FreeToken, y el repositorio contiene únicamente los pesos del modelo de lenguaje, por lo que funciona como modelo solo-texto pese a que el repositorio herede la etiqueta `image-text-to-text` del modelo base. El modelo apenas tiene tracción en HuggingFace (0 descargas, 0 likes en el momento de la consulta).
+Esta variante concreta aporta dos matices relevantes para quien vaya a desplegarla: los pesos están cuantizados localmente a FP8 y se sirven con FreeToken, y el repositorio contiene únicamente los pesos del modelo de lenguaje, por lo que funciona como modelo solo-texto pese a que el repositorio herede la etiqueta `image-text-to-text` del modelo base. El modelo apenas tiene tracción en Hugging Face (0 descargas, 0 likes en el momento de la consulta).
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ Frente a Qwen3.5-27B, el modelo gana 0,8 puntos en SWE-bench Verified y 5,33 en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devmaksi/KAT-Coder-V2.5-Dev-FP8-freetoken
+- Modelo en Hugging Face: https://huggingface.co/devmaksi/KAT-Coder-V2.5-Dev-FP8-freetoken
 - Variante NVFP4 del mismo autor: https://huggingface.co/devmaksi/KAT-Coder-V2.5-Dev-NVFP4-freetoken
 - Perfil del autor: https://huggingface.co/devmaksi
 - Modelo original de Kwaipilot: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev

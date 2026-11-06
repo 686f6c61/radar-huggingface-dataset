@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`beetle-bilingual-balanced-b1-fineweb-2b-jpn-eng` es un checkpoint de generacion de texto publicado por el usuario Beetle-FineWeb-24B-5 en HuggingFace. Segun los metadatos del repositorio, se trata de un modelo de arquitectura etiquetada como `pico_decoder`, con pesos en formato safetensors y que requiere codigo personalizado (`custom_code`) para cargarse, lo que implica ejecutarlo con `trust_remote_code=True`. El recuento real de parametros extraido de los ficheros safetensors es de 193.804.032 parametros (aproximadamente 194 millones), lo que lo situa en la categoria de modelos pequenos.
+`beetle-bilingual-balanced-b1-fineweb-2b-jpn-eng` es un checkpoint de generacion de texto publicado por el usuario Beetle-FineWeb-24B-5 en Hugging Face. Segun los metadatos del repositorio, se trata de un modelo de arquitectura etiquetada como `pico_decoder`, con pesos en formato safetensors y que requiere codigo personalizado (`custom_code`) para cargarse, lo que implica ejecutarlo con `trust_remote_code=True`. El recuento real de parametros extraido de los ficheros safetensors es de 193.804.032 parametros (aproximadamente 194 millones), lo que lo situa en la categoria de modelos pequenos.
 
-El nombre del repositorio sugiere un entrenamiento sobre FineWeb con un reparto equilibrado de japones e ingles ("bilingual-balanced", "jpn-eng"), aunque la model card no confirma ni el dataset, ni los idiomas, ni el procedimiento de entrenamiento. De hecho, la model card publicada es la plantilla generada automaticamente por HuggingFace, con todos los campos marcados como "[More Information Needed]", por lo que no existe informacion oficial sobre datos de entrenamiento, licencia, contexto soportado o resultados de evaluacion.
+El nombre del repositorio sugiere un entrenamiento sobre FineWeb con un reparto equilibrado de japones e ingles ("bilingual-balanced", "jpn-eng"), aunque la model card no confirma ni el dataset, ni los idiomas, ni el procedimiento de entrenamiento. De hecho, la model card publicada es la plantilla generada automaticamente por Hugging Face, con todos los campos marcados como "[More Information Needed]", por lo que no existe informacion oficial sobre datos de entrenamiento, licencia, contexto soportado o resultados de evaluacion.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descriptiva: el modelo no tiene descargas ni "likes" en el momento de la consulta, no dispone de licencia declarada y presenta una discrepancia notable entre el tamano del repositorio (36,4 GB) y el numero de parametros (194 M). Se documenta aqui lo estrictamente verificable, senalando de forma explicita todo aquello que no esta disponible.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente descripti
 
 La unica informacion disponible sobre la arquitectura son las etiquetas del repositorio: `pico_decoder` y `custom_code`. Esto indica un decoder de tipo transformer con una implementacion propia empaquetada en el repositorio, que debe cargarse mediante codigo remoto. No se dispone de informacion sobre numero de capas, dimension del modelo, numero de cabezas de atencion, tipo de normalizacion, esquema de posiciones (absolutas, RoPE, ALiBi) ni sobre si emplea atencion lineal o alguna variante eficiente.
 
-Respecto al entrenamiento, la model card no aporta ningun dato: no se especifican el volumen de tokens, la composicion del dataset, la mezcla de idiomas, la posible fase de ajuste por instrucciones (SFT, RLHF o DPO) ni los hiperparametros utilizados. El nombre del repositorio apunta a un corpus basado en FineWeb con un reparto equilibrado japones-ingles, pero se trata de una inferencia a partir del identificador, no de una afirmacion respaldada por documentacion. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono, citado en la propia plantilla de model card de HuggingFace: no es una referencia al articulo tecnico del modelo.
+Respecto al entrenamiento, la model card no aporta ningun dato: no se especifican el volumen de tokens, la composicion del dataset, la mezcla de idiomas, la posible fase de ajuste por instrucciones (SFT, RLHF o DPO) ni los hiperparametros utilizados. El nombre del repositorio apunta a un corpus basado en FineWeb con un reparto equilibrado japones-ingles, pero se trata de una inferencia a partir del identificador, no de una afirmacion respaldada por documentacion. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto de carbono, citado en la propia plantilla de model card de Hugging Face: no es una referencia al articulo tecnico del modelo.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ La diferencia principal no esta en el tamano, sino en la trazabilidad: los tres 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace, sin informacion sobre datos, entrenamiento, evaluacion o uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face, sin informacion sobre datos, entrenamiento, evaluacion o uso previsto.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En la practica, la ausencia de licencia implica que todos los derechos quedan reservados por defecto en muchas jurisdicciones; conviene contactar con el autor antes de cualquier uso en produccion.
 - Riesgo de alucinacion: no evaluado. Un modelo de ~194 M de parametros, probablemente sin ajuste por instrucciones, tiende a producir texto plausible pero no verificado, con mayor probabilidad de incoherencia en cadenas largas.
 - Sesgos: no documentados ni medidos. El corpus de entrenamiento (posiblemente FineWeb) puede introducir sesgos de genero, origen o idioma, sin que exista ninguna evaluacion disponible.
@@ -95,7 +95,7 @@ La diferencia principal no esta en el tamano, sino en la trazabilidad: los tres 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-balanced-b1-fineweb-2b-jpn-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-balanced-b1-fineweb-2b-jpn-eng
 - Articulo citado en las etiquetas (calculador de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de emisiones del Machine Learning Impact: https://mlco2.github.io/impact
 - Paper, repositorio de codigo, demo y dataset de entrenamiento: no disponibles.

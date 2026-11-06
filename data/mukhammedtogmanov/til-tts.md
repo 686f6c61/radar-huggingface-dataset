@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Til-TTS es un modelo de sintesis de voz (text-to-speech) especializado en kazajo, publicado por el usuario MukhammedTogmanov en HuggingFace. Se trata de un ajuste fino completo (full fine-tuning) del modelo base k2-fsa/OmniVoice, del que hereda la arquitectura de sintesis y el interfaz de generacion. El repositorio contiene 612.577.288 parametros (aproximadamente 612,6 millones) en formato safetensors, con un peso total de 7,4 GB.
+Til-TTS es un modelo de sintesis de voz (text-to-speech) especializado en kazajo, publicado por el usuario MukhammedTogmanov en Hugging Face. Se trata de un ajuste fino completo (full fine-tuning) del modelo base k2-fsa/OmniVoice, del que hereda la arquitectura de sintesis y el interfaz de generacion. El repositorio contiene 612.577.288 parametros (aproximadamente 612,6 millones) en formato safetensors, con un peso total de 7,4 GB.
 
 El problema que resuelve es la falta de voces neuronales de calidad para kazajo con control fino de atributos. A diferencia de un TTS convencional, Til-TTS incorpora dos capacidades poco habituales en modelos de este tamano: diseno de voz mediante el parametro `instruct` (combinaciones de genero, estilo de edad y tono) y emision de reacciones no verbales contextuales dentro del habla continua, como risas, suspiros o expresiones de sorpresa, invocadas con etiquetas entre corchetes en el texto de entrada.
 
@@ -93,8 +93,8 @@ No hay datos comparativos publicados en la informacion disponible. La model card
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| Til-TTS (MukhammedTogmanov) | 612,6 M | No disponible | Apache 2.0 | WER 0,0703 / CER 0,0474 / UTMOS 3,02 en 50 frases kazajas | HuggingFace, via libreria omnivoice |
-| k2-fsa/OmniVoice (modelo base) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Til-TTS (MukhammedTogmanov) | 612,6 M | No disponible | Apache 2.0 | WER 0,0703 / CER 0,0474 / UTMOS 3,02 en 50 frases kazajas | Hugging Face, via libreria omnivoice |
+| k2-fsa/OmniVoice (modelo base) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | ISSAI KazakhTTS2 (fuente de datos) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -111,7 +111,7 @@ No hay datos comparativos publicados en la informacion disponible. La model card
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MukhammedTogmanov/Til-TTS
+- Modelo en Hugging Face: https://huggingface.co/MukhammedTogmanov/Til-TTS
 - Modelo base: https://huggingface.co/k2-fsa/OmniVoice
 - Ejemplos de audio incluidos en el repositorio: https://huggingface.co/MukhammedTogmanov/Til-TTS/resolve/main/examples/female_teenager.wav, https://huggingface.co/MukhammedTogmanov/Til-TTS/resolve/main/examples/female_middle_aged.wav, https://huggingface.co/MukhammedTogmanov/Til-TTS/resolve/main/examples/male_teenager.wav, https://huggingface.co/MukhammedTogmanov/Til-TTS/resolve/main/examples/male_child_high.wav
 - La busqueda web realizada no devolvio enlaces relevantes al modelo, al paper o a repositorios asociados: los resultados obtenidos correspondian a paginas corporativas de Microsoft sin relacion con Til-TTS. No se dispone por tanto de enlaces a papers, blogs o demos adicionales.

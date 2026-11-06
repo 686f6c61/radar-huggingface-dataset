@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eranex-embedding-v1.0-base es un modelo de embeddings de frases (sentence embeddings) publicado por Eranex-Tech en HuggingFace bajo el pipeline de `feature-extraction`. A diferencia de la mayoria de modelos de embeddings del ecosistema, que se basan en arquitecturas transformer, este modelo emplea una arquitectura Mamba (state-space model), segun indican sus etiquetas. Esta orientado a la generacion de representaciones vectoriales densas para tareas de similitud semantica, recuperacion de informacion y clustering, con soporte declarado para turco, ingles, espanol y aleman.
+Eranex-embedding-v1.0-base es un modelo de embeddings de frases (sentence embeddings) publicado por Eranex-Tech en Hugging Face bajo el pipeline de `feature-extraction`. A diferencia de la mayoria de modelos de embeddings del ecosistema, que se basan en arquitecturas transformer, este modelo emplea una arquitectura Mamba (state-space model), segun indican sus etiquetas. Esta orientado a la generacion de representaciones vectoriales densas para tareas de similitud semantica, recuperacion de informacion y clustering, con soporte declarado para turco, ingles, espanol y aleman.
 
 El modelo se distribuye con pesos en formato safetensors y requiere `custom_code`, lo que implica que su cargamento no es directo con `AutoModel` estandar de transformers sin confiar en codigo remoto. Su licencia declarada en las etiquetas es Apache 2.0, aunque el campo de licencia del repositorio aparece como no disponible. El numero de descargas (55) y la ausencia de likes sugieren un modelo reciente y de baja adopcion, sin documentacion publica extensa.
 
@@ -87,7 +87,7 @@ La comparativa se ofrece como referencia de categoria; no se dispone de datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eranex-Tech/eranex-embedding-v1.0-base
+- Hugging Face: https://huggingface.co/Eranex-Tech/eranex-embedding-v1.0-base
 - Dataset C4: https://huggingface.co/datasets/allenai/c4
 - Dataset OPUS-100: https://huggingface.co/datasets/Helsinki-NLP/opus-100
 - Dataset STSb: https://huggingface.co/datasets/sentence-transformers/stsb

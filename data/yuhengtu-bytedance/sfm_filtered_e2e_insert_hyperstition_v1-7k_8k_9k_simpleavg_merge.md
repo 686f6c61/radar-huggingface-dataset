@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge` es un resultado de fusión (merge) de pesos publicado en HuggingFace por el usuario `yuhengtu-bytedance`. No se trata de un modelo entrenado desde cero, sino de la combinación mediante la técnica de media lineal (_Linear_) de tres checkpoints —los pasos globales 7000, 8000 y 9000— de un mismo proceso de ajuste denominado `filtered_e2e_insert_hyperstition_v1`. El checkpoint del paso 9000 se usa además como base, y los tres se ponderan con peso 1.0 y normalización activada.
+El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge` es un resultado de fusión (merge) de pesos publicado en Hugging Face por el usuario `yuhengtu-bytedance`. No se trata de un modelo entrenado desde cero, sino de la combinación mediante la técnica de media lineal (_Linear_) de tres checkpoints —los pasos globales 7000, 8000 y 9000— de un mismo proceso de ajuste denominado `filtered_e2e_insert_hyperstition_v1`. El checkpoint del paso 9000 se usa además como base, y los tres se ponderan con peso 1.0 y normalización activada.
 
 El resultado es un modelo decoder-only de 6.856.253.440 parámetros (aproximadamente 6,86 mil millones) con arquitectura GPT-NeoX según las etiquetas del repositorio, pesos en `safetensors` y un tamano de repositorio de 13,7 GB. La ficha del autor es la plantilla automática que genera mergekit: no incluye información sobre datos de entrenamiento, longitud de contexto, idiomas, licencia ni evaluación de ningún tipo.
 
@@ -79,10 +79,10 @@ La comparativa se limita a caracteristicas estructurales y de licencia, porque n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge | 6,86 B | no disponible | no disponible | HuggingFace, safetensors; sin GGUF; 0 descargas |
-| Llama 3.1 8B | ~8,03 B | 128k tokens | Llama 3.1 Community License | HuggingFace, multiples formatos (safetensors, GGUF, AWQ) |
-| Mistral 7B v0.3 | ~7,25 B | 32k tokens | Apache 2.0 | HuggingFace, multiples formatos |
-| Qwen2.5 7B | ~7,61 B | 128k tokens | Apache 2.0 | HuggingFace, multiples formatos |
+| sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge | 6,86 B | no disponible | no disponible | Hugging Face, safetensors; sin GGUF; 0 descargas |
+| Llama 3.1 8B | ~8,03 B | 128k tokens | Llama 3.1 Community License | Hugging Face, multiples formatos (safetensors, GGUF, AWQ) |
+| Mistral 7B v0.3 | ~7,25 B | 32k tokens | Apache 2.0 | Hugging Face, multiples formatos |
+| Qwen2.5 7B | ~7,61 B | 128k tokens | Apache 2.0 | Hugging Face, multiples formatos |
 
 Comparativa de rendimiento (MMLU, HumanEval, GSM8K y similares): no disponible, ya que no se han publicado resultados para el modelo fusionado. Cualquier afirmacion de superioridad o inferioridad frente a las alternativas careceria de respaldo.
 
@@ -101,7 +101,7 @@ Comparativa de rendimiento (MMLU, HumanEval, GSM8K y similares): no disponible, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-7k_8k_9k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Articulo referenciado por el metodo de merge Linear (`arxiv:2203.05482`): https://arxiv.org/abs/2203.05482
 - Paper de TGI: no disponible en la informacion proporcionada.

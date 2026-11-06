@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dyu-whisper-base es un modelo de reconocimiento automático del habla (ASR) desarrollado por goaicorp, obtenido mediante fine-tuning de openai/whisper-base sobre el conjunto de datos goaicorp/dyu-speech. Su propósito es transcribir audio en dyula (dyu), una lengua mandé hablada principalmente en Burkina Faso, Costa de Marfil y Malí, para la que existen muy pocos recursos ASR de calidad. El modelo se publica bajo licencia CC-BY-SA 4.0 y con acceso restringido (gated) en HuggingFace.
+dyu-whisper-base es un modelo de reconocimiento automático del habla (ASR) desarrollado por goaicorp, obtenido mediante fine-tuning de openai/whisper-base sobre el conjunto de datos goaicorp/dyu-speech. Su propósito es transcribir audio en dyula (dyu), una lengua mandé hablada principalmente en Burkina Faso, Costa de Marfil y Malí, para la que existen muy pocos recursos ASR de calidad. El modelo se publica bajo licencia CC-BY-SA 4.0 y con acceso restringido (gated) en Hugging Face.
 
 Arquitectura y tamaño: se trata de un transformer encoder-decoder de tipo Whisper en su variante "base", con 72.593.920 parámetros totales y pesos en formato safetensors. El repositorio ocupa 0,6 GB. Al derivar de whisper-base, hereda la ventana de contexto de audio de 30 segundos por segmento y el vocabulario multilingüe del modelo original, aunque el fine-tuning se ha orientado específicamente al dyula.
 
@@ -72,7 +72,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de informaci�
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace y requiere aceptar condiciones antes de descargarlo; esto puede limitar su uso en pipelines automatizados o en entornos sin autenticación.
+- Acceso restringido: el modelo es gated en Hugging Face y requiere aceptar condiciones antes de descargarlo; esto puede limitar su uso en pipelines automatizados o en entornos sin autenticación.
 - Licencia CC-BY-SA 4.0: permite uso comercial, pero obliga a compartir las obras derivadas bajo la misma licencia y a atribuir correctamente. Es incompatible con licencias más permisivas (MIT, Apache 2.0) en productos derivados que no quieran adoptar CC-BY-SA.
 - Cobertura lingüística limitada al dyula: no se documenta rendimiento en otras lenguas mandé ni en variantes dialectales; el uso fuera de dominio puede degradar gravemente la calidad.
 - Riesgo de alucinación en ASR: como todo modelo Whisper, puede generar texto plausible que no corresponde al audio, especialmente en segmentos con silencio, ruido o habla solapada.
@@ -83,7 +83,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/goaicorp/dyu-whisper-base
+- Hugging Face: https://huggingface.co/goaicorp/dyu-whisper-base
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/goaicorp/dyu-speech
 - Paper de Whisper (Radford et al., 2022): no disponible en la información proporcionada

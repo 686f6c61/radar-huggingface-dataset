@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-2.6B-heretic es una variante "decensurada" (abliterada) del modelo agéntico de borde LFM2.5-2.6B de Liquid AI, publicada por el usuario saidutta69 en HuggingFace. El modelo base es un LLM de 2,69 mil millones de parámetros diseñado para ejecución en dispositivos locales (móviles y portátiles pequeños), con 30 capas compuestas por 22 bloques de convolución corta de doble compuerta y 8 capas de atención GQA, contexto nativo de 131.072 tokens y formato nativo de tool calling.
+LFM2.5-2.6B-heretic es una variante "decensurada" (abliterada) del modelo agéntico de borde LFM2.5-2.6B de Liquid AI, publicada por el usuario saidutta69 en Hugging Face. El modelo base es un LLM de 2,69 mil millones de parámetros diseñado para ejecución en dispositivos locales (móviles y portátiles pequeños), con 30 capas compuestas por 22 bloques de convolución corta de doble compuerta y 8 capas de atención GQA, contexto nativo de 131.072 tokens y formato nativo de tool calling.
 
 La modificación se ha realizado con Heretic 2.0.0.dev0 mediante Arbitrary-Rank Ablation (ARA), una técnica que aprende un subespacio de bajo rango sobre las capas 1 a 21 para eliminar las direcciones de rechazo sin dañar el comportamiento general. El resultado es llamativo: las negativas pasan de 96/100 a 8/100 con una divergencia KL de solo 0,0059, lo que sugiere una edición muy quirúrgica con mínimo desvío en estilo, formato de herramientas y comportamiento multilingüe.
 
@@ -104,7 +104,7 @@ Frente a alternativas de tamaño similar, LFM2.5-2.6B destaca en tool calling y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/LFM2.5-2.6B-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/LFM2.5-2.6B-heretic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/main/LICENSE
 - Repositorio de Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic

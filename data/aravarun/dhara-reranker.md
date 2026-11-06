@@ -90,11 +90,11 @@ Frente a su modelo base, dhara-reranker ofrece la misma arquitectura y tamano pe
 - Riesgo de alucinacion: no aplicable directamente al no ser generativo, pero las puntuaciones de relevancia no garantizan correccion juridica.
 - Uso en produccion: el autor lo define explicitamente como ayuda de investigacion, no como asesoramiento legal; no debe usarse para tomar decisiones juridicas reales.
 - Licencia MIT: sin restricciones para uso comercial, aunque los datos de entrenamiento proceden de un corpus especifico cuya procedencia conviene revisar en usos sensibles.
-- Adopcion muy temprana: 26 descargas y 1 like en HuggingFace, sin comunidad de revision externa; conviene validar en el propio caso de uso antes de producir.
+- Adopcion muy temprana: 26 descargas y 1 like en Hugging Face, sin comunidad de revision externa; conviene validar en el propio caso de uso antes de producir.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AravArun/dhara-reranker
+- Modelo en Hugging Face: https://huggingface.co/AravArun/dhara-reranker
 - Dataset de entrenamiento (Dhara corpus): https://huggingface.co/datasets/AravArun/dhara-indian-criminal-law
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-base
 - Repositorio de la herramienta Dhara: https://github.com/Arav-Arun/Dhara

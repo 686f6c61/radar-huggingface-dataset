@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio de HuggingFace "Blox-Fruits-Script/Blox-Fruits-Script" no contiene un modelo de inteligencia artificial. La informacion disponible no permite identificar ninguna arquitectura, pesos, pipeline de inferencia ni funcionalidad propia de un modelo de lenguaje, vision o multimodal. Se trata de un repositorio creado el 7 de septiembre de 2026 y actualizado minutos despues, sin descargas, likes ni interacciones registradas.
+El repositorio de Hugging Face "Blox-Fruits-Script/Blox-Fruits-Script" no contiene un modelo de inteligencia artificial. La informacion disponible no permite identificar ninguna arquitectura, pesos, pipeline de inferencia ni funcionalidad propia de un modelo de lenguaje, vision o multimodal. Se trata de un repositorio creado el 7 de septiembre de 2026 y actualizado minutos despues, sin descargas, likes ni interacciones registradas.
 
 La busqueda web asociada al identificador arroja unicamente resultados relacionados con scripts para el juego de Roblox titulado "Blox Fruits", no con modelos de IA. Por tanto, no es posible evaluar el repositorio como un modelo de aprendizaje automatico, ni presentar especificaciones tecnicas de inferencia, entrenamiento o capacidades. Cualquier uso como modelo de IA seria erroneo.
 
@@ -56,7 +56,7 @@ No disponible. No existe informacion para comparar el repositorio con otros mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Blox-Fruits-Script/Blox-Fruits-Script
+- Repositorio en Hugging Face: https://huggingface.co/Blox-Fruits-Script/Blox-Fruits-Script
 - Roblox: https://www.roblox.com/
 - Guia de scripts de Blox Fruits (GameGeekFusion): https://gamegeekfusion.com/blox-fruits-script/
 - Guia de scripts de Blox Fruits (MobileMatters): https://mobilematters.gg/guides/roblox/blox-fruit-script

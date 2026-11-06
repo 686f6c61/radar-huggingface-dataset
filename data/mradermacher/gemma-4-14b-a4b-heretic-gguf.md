@@ -80,7 +80,7 @@ Los datos del modelo base no estan publicados, de modo que la columna correspond
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gemma-4-14B-A4B-Heretic-GGUF | 13,8B totales (activos no disponibles) | no disponible | no disponible | GGUF en HuggingFace |
+| Gemma-4-14B-A4B-Heretic-GGUF | 13,8B totales (activos no disponibles) | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen3-14B | 14,8B | 32K nativo, ampliable a 131K con YaRN | Apache 2.0 | safetensors y multiples cuantizaciones |
 | Gemma-3-12B-IT | 12B | 128K | Terminos de uso de Gemma | safetensors y cuantizaciones de terceros |
 | Mistral-Nemo-12B-Instruct | 12B | 128K | Apache 2.0 | safetensors y cuantizaciones de terceros |

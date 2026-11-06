@@ -60,9 +60,9 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeltaP2S-Llama2-13B-SameFormula-S13 | 13B | no disponible | no disponible | HuggingFace (experimental) |
-| Llama 2 13B (base) | 13B | 4096 | Llama 2 Community License | HuggingFace |
-| CodeLlama 13B | 13B | 16384 | Llama 2 Community License | HuggingFace |
+| DeltaP2S-Llama2-13B-SameFormula-S13 | 13B | no disponible | no disponible | Hugging Face (experimental) |
+| Llama 2 13B (base) | 13B | 4096 | Llama 2 Community License | Hugging Face |
+| CodeLlama 13B | 13B | 16384 | Llama 2 Community License | Hugging Face |
 
 No se puede afirmar nada sobre el rendimiento relativo sin datos de benchmarks.
 
@@ -77,7 +77,7 @@ No se puede afirmar nada sobre el rendimiento relativo sin datos de benchmarks.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-SameFormula-S13
+- Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-SameFormula-S13
 - Modelo relacionado (P2S-CodeLlama7B): https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B
 - Modelo relacionado (DeltaP2S-CodeLlama7B): https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B
 - Despliegue en FriendliAI (variante SameFormula): https://friendli.ai/models/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula

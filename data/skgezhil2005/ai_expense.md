@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skgezhil2005/ai_expense` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario skgezhil2005 sobre el modelo base `unsloth/gemma-3-270m-it`, la variante instruct de 270 millones de parámetros de la familia Gemma 3 de Google. El repositorio contiene 268.098.176 parámetros reales en formato safetensors y está etiquetado con la librería MLX, lo que indica que los pesos están preparados para ejecutarse en Apple Silicon mediante el framework de Apple. El tamaño total del repositorio es de 0,6 GB, coherente con pesos en precisión de 16 bits.
+`skgezhil2005/ai_expense` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario skgezhil2005 sobre el modelo base `unsloth/gemma-3-270m-it`, la variante instruct de 270 millones de parámetros de la familia Gemma 3 de Google. El repositorio contiene 268.098.176 parámetros reales en formato safetensors y está etiquetado con la librería MLX, lo que indica que los pesos están preparados para ejecutarse en Apple Silicon mediante el framework de Apple. El tamaño total del repositorio es de 0,6 GB, coherente con pesos en precisión de 16 bits.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: la model card del autor está prácticamente vacía (solo contiene metadatos YAML), el modelo acumula 0 descargas y 0 likes, y no se ha publicado ninguna descripción de la tarea, del dataset de ajuste ni de los resultados obtenidos. El nombre `ai_expense` sugiere un ajuste orientado a un dominio de gastos o finanzas, pero esto no se puede confirmar con la información disponible.
 
@@ -96,6 +96,6 @@ No se dispone de datos verificables en la información proporcionada para establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skgezhil2005/ai_expense
+- Modelo en Hugging Face: https://huggingface.co/skgezhil2005/ai_expense
 - Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Las consultas devolvieron exclusivamente páginas de comercio de prendas de vestir sin relación con el proyecto, por lo que no se incluye ningún enlace adicional.

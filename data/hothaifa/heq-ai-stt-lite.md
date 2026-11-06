@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Ventana de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hothaifa/heq-ai-stt-lite | 72,6 M | 30 s | arabe (especializado en coranico) | Apache 2.0 | HuggingFace, safetensors, 0 descargas |
-| openai/whisper-base | ~74 M | 30 s | ~99 idiomas | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| openai/whisper-small | ~244 M | 30 s | ~99 idiomas | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| openai/whisper-large-v3 | ~1550 M | 30 s | ~99 idiomas | Apache 2.0 | HuggingFace, referencia de calidad en ASR multilingue |
+| Hothaifa/heq-ai-stt-lite | 72,6 M | 30 s | arabe (especializado en coranico) | Apache 2.0 | Hugging Face, safetensors, 0 descargas |
+| openai/whisper-base | ~74 M | 30 s | ~99 idiomas | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| openai/whisper-small | ~244 M | 30 s | ~99 idiomas | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| openai/whisper-large-v3 | ~1550 M | 30 s | ~99 idiomas | Apache 2.0 | Hugging Face, referencia de calidad en ASR multilingue |
 
 La comparacion cuantitativa de calidad (WER en arabe o en recitacion coranica) no esta disponible para este checkpoint ni se ha publicado una evaluacion propia. La ventaja teorica del ajuste fino es la especializacion de dominio y la salida sin *tashkeel*; la desventaja es la ausencia de validacion publica frente a los Whisper originales, que cuentan con anos de uso y evaluaciones independientes.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa de calidad (WER en arabe o en recitacion coranica) n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hothaifa/heq-ai-stt-lite
+- Modelo en Hugging Face: https://huggingface.co/Hothaifa/heq-ai-stt-lite
 - Sitio del autor / organizacion: https://heqwerdk.com
 - Modelo relacionado del mismo autor (LLM 31 B, no ASR): https://featherless.ai/models/Hothaifa/HEQ-M1.2
 - Modelo relacionado del mismo autor (LLM 31 B, no ASR): https://featherless.ai/models/Hothaifa/HEQ-S2-1.6.6

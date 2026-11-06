@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario adfafaa, publicado bajo licencia MIT y etiquetado con las librerías transformers y pytorch. El repositorio se presenta como un modelo de tipo feature-extraction con la etiqueta bert, aunque la model card incluida describe un asistente conversacional orientado al razonamiento, la programación y las matemáticas, con soporte de function calling y modo de pensamiento extendido. Esta contradicción entre las etiquetas técnicas y el contenido de la model card, junto con un tamano de repositorio de 0.0 GB, indica que se trata de un repositorio de prueba (TestRepo) sin pesos publicados ni artefactos descargables.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario adfafaa, publicado bajo licencia MIT y etiquetado con las librerías transformers y pytorch. El repositorio se presenta como un modelo de tipo feature-extraction con la etiqueta bert, aunque la model card incluida describe un asistente conversacional orientado al razonamiento, la programación y las matemáticas, con soporte de function calling y modo de pensamiento extendido. Esta contradicción entre las etiquetas técnicas y el contenido de la model card, junto con un tamano de repositorio de 0.0 GB, indica que se trata de un repositorio de prueba (TestRepo) sin pesos publicados ni artefactos descargables.
 
 La model card afirma una mejora en profundidad de razonamiento respecto a una versión anterior, citando un incremento de precisión en AIME 2025 del 70 % al 87,5 % y un aumento del consumo medio de tokens por pregunta de 12.000 a 23.000. Asimismo, incluye una tabla de benchmarks con categorías genéricas (razonamiento matemático, lógico, generación de código, traducción, seguridad) y baselines anonimizados como Model1, Model2 y Model1-v2. Ninguno de estos datos es verificable ni está respaldado por pesos, configuraciones o documentación técnica publicada en el repositorio.
 
@@ -115,7 +115,7 @@ No es posible establecer una comparativa fiable. La tabla de benchmarks de la mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adfafaa/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/adfafaa/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o web oficial: no disponible (la model card menciona una "official website" y un "code repository" sin proporcionar URL)
 - Repositorio de código: no disponible

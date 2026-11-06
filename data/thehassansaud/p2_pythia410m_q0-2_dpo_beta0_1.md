@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TheHassanSaud/P2_pythia410m_q0.2_dpo_beta0_1 es un checkpoint de generación de texto de 405.334.016 parámetros (unos 405 M) publicado en HuggingFace por el usuario TheHassanSaud. La etiqueta de arquitectura del repositorio es gpt_neox, y el identificador del modelo sugiere que se trata de un ajuste mediante DPO (Direct Preference Optimization) con beta = 0,1 sobre una base de la familia Pythia-410M de EleutherAI. Esa lectura del nombre es una interpretación razonada y no está confirmada en ninguna documentación del autor.
+TheHassanSaud/P2_pythia410m_q0.2_dpo_beta0_1 es un checkpoint de generación de texto de 405.334.016 parámetros (unos 405 M) publicado en Hugging Face por el usuario TheHassanSaud. La etiqueta de arquitectura del repositorio es gpt_neox, y el identificador del modelo sugiere que se trata de un ajuste mediante DPO (Direct Preference Optimization) con beta = 0,1 sobre una base de la familia Pythia-410M de EleutherAI. Esa lectura del nombre es una interpretación razonada y no está confirmada en ninguna documentación del autor.
 
-El problema principal de esta ficha es la ausencia total de información oficial: la model card es la plantilla automática de HuggingFace sin ningún campo rellenado, no se declara licencia, ni idiomas, ni datos de entrenamiento, ni resultados de evaluación. El repositorio acumula 0 descargas y 0 likes, por lo que tampoco existe validación por parte de la comunidad.
+El problema principal de esta ficha es la ausencia total de información oficial: la model card es la plantilla automática de Hugging Face sin ningún campo rellenado, no se declara licencia, ni idiomas, ni datos de entrenamiento, ni resultados de evaluación. El repositorio acumula 0 descargas y 0 likes, por lo que tampoco existe validación por parte de la comunidad.
 
 Su relevancia es, por tanto, la de un artefacto de investigación a pequeña escala: útil para estudiar pipelines de alineación por preferencias sobre modelos pequeños, para experimentar con arquitecturas GPT-NeoX en hardware modesto o como material didáctico. No es un modelo apto para despliegue en producción sin una evaluación previa por parte de quien lo vaya a usar.
 
@@ -80,17 +80,17 @@ Los datos de los modelos alternativos proceden de sus fichas públicas y no se h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| P2_pythia410m_q0.2_dpo_beta0_1 | ~405 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| Pythia-410M (EleutherAI) | ~405 M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| OPT-350M (Meta) | ~331 M | 2048 tokens | licencia OPT, uso mayoritariamente de investigación | HuggingFace |
-| SmolLM2-360M (HuggingFace) | ~362 M | 8192 tokens | Apache 2.0 | HuggingFace, con variantes GGUF |
+| P2_pythia410m_q0.2_dpo_beta0_1 | ~405 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| Pythia-410M (EleutherAI) | ~405 M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| OPT-350M (Meta) | ~331 M | 2048 tokens | licencia OPT, uso mayoritariamente de investigación | Hugging Face |
+| SmolLM2-360M (Hugging Face) | ~362 M | 8192 tokens | Apache 2.0 | Hugging Face, con variantes GGUF |
 
 Comparación de rendimiento: no disponible. No hay benchmarks publicados de este checkpoint que permitan situarlo frente a las alternativas de su tamaño.
 
 ## Limitaciones y advertencias
 
 - Licencia no declarada: sin licencia publicada no se puede asumir uso comercial legítimo, aunque el modelo base del que parece derivar (Pythia) se distribuya bajo Apache 2.0. Es el riesgo legal más relevante de esta ficha.
-- Ficha técnica vacía: la model card es la plantilla automática de HuggingFace, sin información sobre datos, hiperparámetros ni evaluación.
+- Ficha técnica vacía: la model card es la plantilla automática de Hugging Face, sin información sobre datos, hiperparámetros ni evaluación.
 - Ausencia de validación comunitaria: 0 descargas y 0 likes implican que no hay informes externos de calidad, fallos o comportamiento.
 - Riesgo elevado de alucinación: con 405 M de parámetros, la capacidad de retener hechos y de mantener coherencia en generaciones largas es limitada por diseño.
 - Idiomas no declarados: es probable que el modelo esté mayoritariamente en inglés si hereda el corpus Pile, pero no hay confirmación; no se debe asumir soporte fiable de castellano.
@@ -104,7 +104,7 @@ Comparación de rendimiento: no disponible. No hay benchmarks publicados de este
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.2_dpo_beta0_1
+- Ficha en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.2_dpo_beta0_1
 - Modelo base de referencia, Pythia-410M (EleutherAI): https://huggingface.co/EleutherAI/pythia-410m
 - Artículo de Pythia (EleutherAI): https://arxiv.org/abs/2304.01373
 - Artículo de GPT-NeoX: https://arxiv.org/abs/2204.06745

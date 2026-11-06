@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "limxdynamics/tron2-rl-locomotion-policies",
+  "slug": "limxdynamics-tron2-rl-locomotion-policies",
+  "author": "limxdynamics",
+  "url": "https://huggingface.co/limxdynamics/tron2-rl-locomotion-policies",
+  "created_at": "2026-11-06T07:19:24.000Z",
+  "updated_at": "2026-11-06T07:22:32.000Z",
+  "license": "see-source-repository",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "limx-dynamics",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "limx-dynamics",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "legged-robots",
+    "biped",
+    "humanoid",
+    "locomotion",
+    "mujoco",
+    "tron2",
+    "en",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4369554,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - limxdynamics/TRON2_YG_LAB: Isaac Lab RL training ...",
+      "url": "https://github.com/limxdynamics/TRON2_YG_LAB",
+      "snippet": "Reinforcement learning training stack for the LimX TRON2A bipedal robot, built on Isaac Lab and using PPO to train locomotion policies. Supports two base ..."
+    }
+  ]
+}

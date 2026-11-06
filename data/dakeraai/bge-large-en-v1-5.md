@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dimension del embedding | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DakeraAI/bge-large-en-v1.5 (espejo) | ~335 M | 1024 | no disponible | MIT | HuggingFace, ONNX + safetensors |
-| BAAI/bge-large-en-v1.5 (original) | ~335 M | 1024 | no disponible | MIT | HuggingFace |
-| Xenova/bge-large-en-v1.5 | ~335 M | 1024 | no disponible | MIT | HuggingFace, ONNX (origen del grafo de este repo) |
+| DakeraAI/bge-large-en-v1.5 (espejo) | ~335 M | 1024 | no disponible | MIT | Hugging Face, ONNX + safetensors |
+| BAAI/bge-large-en-v1.5 (original) | ~335 M | 1024 | no disponible | MIT | Hugging Face |
+| Xenova/bge-large-en-v1.5 | ~335 M | 1024 | no disponible | MIT | Hugging Face, ONNX (origen del grafo de este repo) |
 
 El espejo de Dakera es funcionalmente idéntico al original de BAAI: mismos pesos, mismo tokenizador y misma licencia. La diferencia práctica es la disponibilidad de grafos ONNX ya convertidos (tomados de Xenova) y la verificación SHA-256 documentada fichero a fichero, útil en despliegues con requisitos de integridad de artefactos.
 
@@ -81,7 +81,7 @@ El espejo de Dakera es funcionalmente idéntico al original de BAAI: mismos peso
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DakeraAI/bge-large-en-v1.5
+- Repositorio en Hugging Face: https://huggingface.co/DakeraAI/bge-large-en-v1.5
 - Modelo original: https://huggingface.co/BAAI/bge-large-en-v1.5
 - Conversión ONNX de referencia: https://huggingface.co/Xenova/bge-large-en-v1.5
 - Licencia del repositorio: https://huggingface.co/DakeraAI/bge-large-en-v1.5/blob/main/LICENSE

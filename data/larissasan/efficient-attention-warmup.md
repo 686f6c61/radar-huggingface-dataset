@@ -1,7 +1,7 @@
 # larissasan/efficient-attention-warmup
 
 ## Resumen
-Este repositorio de HuggingFace, identificado como `larissasan/efficient-attention-warmup`, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre mecanismos de atención eficiente. El autor, larissasan, publica un documento de trabajo (principalmente `summary.md`) que explora el alcance de una pregunta de investigación, propone comparaciones con líneas base, sugiere contextos de evaluación (Long Range Arena, ImageNet-1K, Flickr30k) y plantea preguntas abiertas. La model card es explícita: no se reivindican mejoras de benchmarks, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado. Se trata de material exploratorio para verificación futura, no de un producto funcional.
+Este repositorio de Hugging Face, identificado como `larissasan/efficient-attention-warmup`, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre mecanismos de atención eficiente. El autor, larissasan, publica un documento de trabajo (principalmente `summary.md`) que explora el alcance de una pregunta de investigación, propone comparaciones con líneas base, sugiere contextos de evaluación (Long Range Arena, ImageNet-1K, Flickr30k) y plantea preguntas abiertas. La model card es explícita: no se reivindican mejoras de benchmarks, ni ablaciones completadas, ni código liberado, ni un checkpoint entrenado. Se trata de material exploratorio para verificación futura, no de un producto funcional.
 
 Aunque el repositorio incluye archivos en formato safetensors con un total de 49.600 parámetros, esto corresponde probablemente a tensores de prueba o metadatos, no a un modelo operativo. La licencia es MIT, pero no hay ningún artefacto utilizable para inferencia. La relevancia actual reside en su carácter de referencia para investigadores que estudian arquitecturas de atención eficiente (lineal, dispersa, etc.), un área activa en 2026 según los artículos recopilados en la búsqueda web.
 
@@ -51,11 +51,11 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 - El contenido es exploratorio y no verificado: las hipótesis y planes no deben interpretarse como resultados.
 - No hay código ni checkpoint liberado, lo que impide reproducir cualquier afirmación.
 - La licencia MIT se aplica al texto de las notas, pero los términos de los conjuntos de datos externos mencionados (Long Range Arena, ImageNet-1K, Flickr30k) deben revisarse por separado.
-- Riesgo de confusión: el repositorio puede parecer un modelo por su presencia en HuggingFace, pero carece de utilidad práctica.
+- Riesgo de confusión: el repositorio puede parecer un modelo por su presencia en Hugging Face, pero carece de utilidad práctica.
 - No hay soporte ni mantenimiento garantizado.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/larissasan/efficient-attention-warmup
+- Repositorio en Hugging Face: https://huggingface.co/larissasan/efficient-attention-warmup
 - Artículo de referencia sobre atención eficiente (arXiv): https://arxiv.org/html/2507.19595v1
 - Survey en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666389926001030
 - Survey en Cell Patterns: https://www.cell.com/patterns/fulltext/S2666-3899(26)00103-0

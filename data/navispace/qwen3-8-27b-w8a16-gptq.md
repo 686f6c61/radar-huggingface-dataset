@@ -79,7 +79,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (de
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantizacion](https://huggingface.co/navispace/Qwen3.8-27B-W8A16-GPTQ)
+- [Repositorio Hugging Face de la cuantizacion](https://huggingface.co/navispace/Qwen3.8-27B-W8A16-GPTQ)
 - [Repositorio oficial del modelo en GitHub](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Pagina del modelo en Jetson AI Lab](https://www.jetson-ai-lab.com/models/qwen3-8-27b/)
 - [Articulo sobre requisitos de hardware y despliegue](https://gingerlabs.ai/blog/qwen-38-27b-hardware-requirements-and-how-to-deploy-locally)

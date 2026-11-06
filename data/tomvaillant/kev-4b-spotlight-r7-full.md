@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kev 4B for Spotlight (r7, pesos completos) es un fine-tune de decisión de 4.205.751.296 parámetros desarrollado por el usuario de HuggingFace `tomvaillant` para Spotlight, la herramienta de investigación OSINT de Buried Signals. No es un modelo generativo: recibe un documento (el «estado») y un conjunto fijo de preguntas tipadas, y devuelve en una sola pasada una distribución de probabilidad calibrada sobre las opciones disponibles. En concreto, evalúa cada «lead» de investigación (un resumen, el pasaje fuente del que procede y el brief de investigación) respondiendo a preguntas sobre la fuente y la afirmación, de modo que Spotlight pueda marcar leads débiles y elevar pistas para el periodista.
+Kev 4B for Spotlight (r7, pesos completos) es un fine-tune de decisión de 4.205.751.296 parámetros desarrollado por el usuario de Hugging Face `tomvaillant` para Spotlight, la herramienta de investigación OSINT de Buried Signals. No es un modelo generativo: recibe un documento (el «estado») y un conjunto fijo de preguntas tipadas, y devuelve en una sola pasada una distribución de probabilidad calibrada sobre las opciones disponibles. En concreto, evalúa cada «lead» de investigación (un resumen, el pasaje fuente del que procede y el brief de investigación) respondiendo a preguntas sobre la fuente y la afirmación, de modo que Spotlight pueda marcar leads débiles y elevar pistas para el periodista.
 
 El modelo parte de `jaredpalmer/kev-4b`, que a su vez se construye sobre `Qwen/Qwen3.5-4B-Base`, y conserva la arquitectura de Kev: un backbone adaptado con LoRA (aquí ya fusionada) más una cabeza pointer que puntúa las opciones de respuesta. Se sirve con `kev serve` y está pensado para ejecutarse localmente dentro del modo Ninja de Spotlight, en inglés y sobre organizaciones y las personas que las dirigen.
 
@@ -88,9 +88,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kev-4b-spotlight-r7-full | 4.205.751.296 | No disponible | Triage de leads OSINT para Spotlight | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| kev-4b | No disponible (construido sobre Qwen3.5-4B-Base) | No disponible | Modelo de decisión general: clasificar, enrutar, puntuar opciones | Apache 2.0 (según la model card de r7) | HuggingFace, GitHub y OpenRouter |
-| Qwen3.5-4B-Base | 4B (por denominación; cifra exacta no disponible) | No disponible | Modelo base generativo de texto | Apache 2.0 (según la model card de r7) | HuggingFace |
+| kev-4b-spotlight-r7-full | 4.205.751.296 | No disponible | Triage de leads OSINT para Spotlight | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| kev-4b | No disponible (construido sobre Qwen3.5-4B-Base) | No disponible | Modelo de decisión general: clasificar, enrutar, puntuar opciones | Apache 2.0 (según la model card de r7) | Hugging Face, GitHub y OpenRouter |
+| Qwen3.5-4B-Base | 4B (por denominación; cifra exacta no disponible) | No disponible | Modelo base generativo de texto | Apache 2.0 (según la model card de r7) | Hugging Face |
 | Otro fine-tune especializado en triage OSINT | No disponible | No disponible | No disponible | No disponible | No se ha identificado ninguno en la búsqueda |
 
 La diferencia funcional frente a `Qwen3.5-4B-Base` es cualitativa: el modelo base genera texto libre, mientras que r7 devuelve distribuciones calibradas sobre opciones cerradas en una sola pasada y con un conjunto de preguntas fijado por el banco de decisiones de Spotlight. Frente a `kev-4b`, r7 añade el dominio concreto del periodismo de investigación y las siete preguntas del flujo de Spotlight.
@@ -111,11 +111,11 @@ La diferencia funcional frente a `Qwen3.5-4B-Base` es cualitativa: el modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomvaillant/kev-4b-spotlight-r7-full
+- Modelo en Hugging Face: https://huggingface.co/tomvaillant/kev-4b-spotlight-r7-full
 - Modelo base Kev 4B: https://huggingface.co/jaredpalmer/kev-4b
 - Modelo base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio de Kev (trainer y servidor): https://github.com/jaredpalmer/kev
 - Spotlight, herramienta OSINT de Buried Signals: https://github.com/buriedsignals/spotlight
 - Ficha de Kev 4B en OpenRouter: https://openrouter.ai/jaredpalmer/kev-4b
 - Ficha técnica de Kev 4B en Vertical Tabs: https://verticaltabs.com/jaredpalmer/kev-4b
-- Colección Kev en HuggingFace: https://huggingface.co/collections/jaredpalmer/kev
+- Colección Kev en Hugging Face: https://huggingface.co/collections/jaredpalmer/kev

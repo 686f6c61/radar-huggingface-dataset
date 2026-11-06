@@ -75,10 +75,10 @@ La *model card* no incluye métricas objetivas de separación (SDR, SI-SDR, SIR,
 
 | Modelo | Tarea | Stems | Arquitectura | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `roformer` (este repo) | Separación vocal / instrumental | Vocal + resto | Mel-Band RoFormer, ONNX fp16 | Frames STFT arbitrarios | Sin licencia declarada | HuggingFace, 1,9 GB el repo completo |
-| `deux` (este repo) | Separación vocal de alta calidad | Vocal | Mel-Band RoFormer, ONNX fp16 | Frames STFT arbitrarios | CC BY-NC 4.0 | HuggingFace |
-| `sw` (este repo) | Separación multi-pista | 6 (voces, batería, bajo, guitarra, piano, otros) | Band-split RoFormer, 62 bandas, depth 12, hop 512 | Frames STFT arbitrarios | Sin licencia declarada | HuggingFace + mirror FractalSurfer |
-| `guitar` (este repo) | Aislamiento de guitarra | Guitarra | Mel-Band RoFormer, ONNX fp16 | Frames STFT arbitrarios | Sin licencia declarada (no comercial según el autor) | HuggingFace |
+| `roformer` (este repo) | Separación vocal / instrumental | Vocal + resto | Mel-Band RoFormer, ONNX fp16 | Frames STFT arbitrarios | Sin licencia declarada | Hugging Face, 1,9 GB el repo completo |
+| `deux` (este repo) | Separación vocal de alta calidad | Vocal | Mel-Band RoFormer, ONNX fp16 | Frames STFT arbitrarios | CC BY-NC 4.0 | Hugging Face |
+| `sw` (este repo) | Separación multi-pista | 6 (voces, batería, bajo, guitarra, piano, otros) | Band-split RoFormer, 62 bandas, depth 12, hop 512 | Frames STFT arbitrarios | Sin licencia declarada | Hugging Face + mirror FractalSurfer |
+| `guitar` (este repo) | Aislamiento de guitarra | Guitarra | Mel-Band RoFormer, ONNX fp16 | Frames STFT arbitrarios | Sin licencia declarada (no comercial según el autor) | Hugging Face |
 | Mel-Band RoFormer original (Kimberley Jensen) | Separación vocal | Según checkpoint | Mel-Band RoFormer | No disponible | No disponible en la información aportada | Pesos originales referenciados como upstream |
 | BS-RoFormer SW (jarredou, `BS-ROFO-SW-Fixed`) | Separación multi-pista | 6 | Band-split RoFormer | No disponible | No disponible | Edición publicada; el repositorio original ya no existe |
 | Demucs / HTDemucs (referencia del sector) | Separación multi-pista | 4 | Híbrido espectrograma + forma de onda | No disponible | No disponible en la información aportada | Alternativa habitual, no evaluada aquí |
@@ -94,12 +94,12 @@ No se dispone de parámetros totales, VRAM ni métricas de calidad comparadas pa
 - **Dependencia de hardware no documentada**: `deux` y `sw` requieren "una buena GPU" según el autor; en equipos modestos el proceso puede ser inviable o muy lento, sin cifras publicadas de latencia.
 - **Idioma y dominio**: el procesado no depende del idioma, pero sí del dominio musical. El rendimiento en grabaciones de campo, entrevistas con ruido o material no musical no está documentado.
 - **Madurez del repositorio**: 0 descargas y 1 like en el momento de la consulta; sin *pipeline* declarado, sin *model card* de uso general y con una sola revisión registrada.
-- **Trazabilidad del checkpoint `sw`**: proviene de una edición de un checkpoint cuyo entrenador no se nombra y de una cuenta de HuggingFace que ya no existe, lo que dificulta auditar su procedencia.
+- **Trazabilidad del checkpoint `sw`**: proviene de una edición de un checkpoint cuyo entrenador no se nombra y de una cuenta de Hugging Face que ya no existe, lo que dificulta auditar su procedencia.
 - **Ausencia de cifras de calidad**: no hay SDR/SI-SDR publicados en este repositorio, por lo que la afirmación de "calidad alta" del menú de la extensión no está respaldada por números verificables aquí.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sriv95/all-mixer-models
+- Repositorio en Hugging Face: https://huggingface.co/sriv95/all-mixer-models
 - Repositorio de la extensión (script `scripts/export-roformer.py`): https://github.com/sriv95/All-Mixer
 - Checkpoint de becruily para voces (`deux`): https://huggingface.co/becruily/mel-band-roformer-deux
 - Checkpoint de becruily para guitarra: https://huggingface.co/becruily/mel-band-roformer-guitar

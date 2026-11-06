@@ -76,7 +76,7 @@ No hay datos de rendimiento comparativo disponibles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/Qemma-Q14B
+- Hugging Face: https://huggingface.co/reaperdoesntknow/Qemma-Q14B
 - Portfolio del autor: https://huggingface.co/reaperdoesntknow
 - Coleccion DistilQwen: https://huggingface.co/collections/reaperdoesntknow/distilqwen-69bf40ec669117e3f069ef1c
 

@@ -89,6 +89,6 @@ No disponible. No se han publicado en la informacion proporcionada modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/hybrid-semantic-search-20261016-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/hybrid-semantic-search-20261016-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/hybrid-semantic-search-20261016-dataset
 - Repositorio GitHub con `train.py`, particion del dataset, codigo de evaluacion y formato JSON: mencionado en la model card, enlace no disponible.

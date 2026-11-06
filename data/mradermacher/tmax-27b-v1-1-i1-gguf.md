@@ -85,5 +85,5 @@ No se dispone de información suficiente sobre el modelo base (licencia, context
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/tmax-27b-v1.1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/tmax-27b-v1.1-i1-GGUF
 - Modelo base: https://huggingface.co/TMaxxx/tmax-27b-v1.1

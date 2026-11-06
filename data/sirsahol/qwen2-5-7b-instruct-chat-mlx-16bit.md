@@ -83,10 +83,10 @@ El propio autor advierte que son estimaciones basadas en el ancho de banda de me
 
 | Modelo | Parametros | Contexto | Precision / huella | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-chat-mlx-16bit (este) | 7,61B | 32.768 (131.072 con YaRN) | bfloat16, ~15,2 GB | Apple Silicon, 24-192 GB de memoria unificada | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen2.5-7B-Instruct-chat-mlx-8bit | 7,61B | 32.768 (131.072 con YaRN) | 8 bits, ~7,8 GB de VRAM | Apple Silicon, 16 GB+ | no confirmada en la informacion disponible | HuggingFace, formato MLX |
-| Qwen2.5-7B-Instruct-chat-mlx-4bit | 7,61B | 32.768 (131.072 con YaRN) | 4 bits, ~4,2 GB de VRAM | Apple Silicon, 8 GB+ | no confirmada en la informacion disponible | HuggingFace, formato MLX |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,61B | 32.768 (131.072 con YaRN) | bfloat16, safetensors estandar | CUDA y Apple Silicon via transformers | Apache 2.0 | HuggingFace, formato transformers |
+| Qwen2.5-7B-Instruct-chat-mlx-16bit (este) | 7,61B | 32.768 (131.072 con YaRN) | bfloat16, ~15,2 GB | Apple Silicon, 24-192 GB de memoria unificada | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen2.5-7B-Instruct-chat-mlx-8bit | 7,61B | 32.768 (131.072 con YaRN) | 8 bits, ~7,8 GB de VRAM | Apple Silicon, 16 GB+ | no confirmada en la informacion disponible | Hugging Face, formato MLX |
+| Qwen2.5-7B-Instruct-chat-mlx-4bit | 7,61B | 32.768 (131.072 con YaRN) | 4 bits, ~4,2 GB de VRAM | Apple Silicon, 8 GB+ | no confirmada en la informacion disponible | Hugging Face, formato MLX |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7,61B | 32.768 (131.072 con YaRN) | bfloat16, safetensors estandar | CUDA y Apple Silicon via transformers | Apache 2.0 | Hugging Face, formato transformers |
 
 La diferencia clave entre las tres variantes MLX es el equilibrio entre fidelidad y huella de memoria: la de 4 bits prioriza velocidad y convivencia con otros procesos, la de 8 bits busca una precision casi sin perdida y la de 16 bits de este repositorio elimina cualquier perdida por cuantizacion a cambio de exigir 24 GB o mas de memoria unificada. No se dispone de comparativas de calidad objetivas entre ellas en la informacion proporcionada.
 
@@ -95,7 +95,7 @@ La diferencia clave entre las tres variantes MLX es el equilibrio entre fidelida
 - Exclusividad de plataforma: el formato MLX solo funciona en Apple Silicon; no es desplegable en GPUs NVIDIA ni en CPU x86 convencionales sin reconvertir los pesos.
 - Sin benchmarks de calidad publicados: no hay datos de MMLU, HumanEval, GSM8K ni evaluaciones equivalentes en la model card, por lo que el rendimiento real en tareas concretas no esta cuantificado.
 - Validacion comunitaria nula: 0 descargas y 0 "likes" en el momento de la consulta; es una conversion de terceros, no oficial de Qwen, y no ha sido revisada por la comunidad.
-- Fecha de publicacion anomala: los metadatos de HuggingFace indican creacion y actualizacion el 14 de septiembre de 2026, una fecha posterior a la consulta; conviene verificar la trazabilidad del repositorio antes de usarlo en produccion.
+- Fecha de publicacion anomala: los metadatos de Hugging Face indican creacion y actualizacion el 14 de septiembre de 2026, una fecha posterior a la consulta; conviene verificar la trazabilidad del repositorio antes de usarlo en produccion.
 - Idiomas no declarados: la model card no especifica la lista de idiomas soportados y la unica etiqueta de idioma presente es "en"; el comportamiento multilingue debe validarse empiricamente.
 - Riesgo de alucinacion y de bucles de generacion: la propia model card advierte sobre la necesidad de configurar `<|im_start|>`, `<|im_end|>` y `<|endoftext|>` como cadenas de parada estrictas para evitar bucles; en runtimes mal configurados el modelo puede repetir turnos.
 - Huella de memoria elevada: 15,2 GB de VRAM activa dejan poco margen en equipos de 24 GB, especialmente con contextos largos, donde el KV cache puede hacer fallar la inferencia.
@@ -105,7 +105,7 @@ La diferencia clave entre las tres variantes MLX es el equilibrio entre fidelida
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-16bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-16bit
 - Variante de 4 bits: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-4bit
 - Variante de 8 bits: https://huggingface.co/SirSahOl/Qwen2.5-7B-Instruct-chat-mlx-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

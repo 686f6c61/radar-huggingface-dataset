@@ -4,7 +4,7 @@
 
 G0.5 es un modelo vision-language-action (VLA) autorregresivo desarrollado por Galaxea para el control de robots de propósito general. El modelo recibe como entrada observaciones RGB multivista, un identificador de embodiment (plataforma robótica), una instrucción de tarea en lenguaje natural y el estado propioceptivo del robot, y genera en un único flujo autorregresivo tanto tokens de razonamiento como tokens de acción. Esto unifica en un solo modelo la interpretación de la escena, el razonamiento sobre la tarea y la emisión de comandos motores.
 
-El modelo se distribuye con varios checkpoints especializados: base, LIBERO, DROID, SO-100/101 y RoboTwin 2.0, cada uno acompañado de sus pesos de tokenizador ActionCodec y estadísticas de normalización. Está publicado en HuggingFace bajo el identificador RoboColosseum/droid-g0.5, con un tamaño de repositorio de 57,7 GB y pesos en formato PyTorch (`model_state_dict.pt`).
+El modelo se distribuye con varios checkpoints especializados: base, LIBERO, DROID, SO-100/101 y RoboTwin 2.0, cada uno acompañado de sus pesos de tokenizador ActionCodec y estadísticas de normalización. Está publicado en Hugging Face bajo el identificador RoboColosseum/droid-g0.5, con un tamaño de repositorio de 57,7 GB y pesos en formato PyTorch (`model_state_dict.pt`).
 
 La relevancia actual del modelo radica en su enfoque de "un solo flujo autorregresivo" para razonamiento y acción, junto con su entrenamiento sobre el dataset OpenGalaxea Galaxea-Open-World-Dataset y su soporte para múltiples plataformas robóticas (R1 Lite, R1 Pro, SO-100/101). Su licencia comunitaria no comercial condiciona fuertemente su uso en producción.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Galaxea G0.5 | VLA autorregresivo | no disponible | no disponible | G0.5 Community (no comercial) | HuggingFace + GitHub |
+| Galaxea G0.5 | VLA autorregresivo | no disponible | no disponible | G0.5 Community (no comercial) | Hugging Face + GitHub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría en los datos proporcionados.
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/droid-g0.5
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/droid-g0.5
 - Página del proyecto: https://opengalaxea.github.io/G05/
 - Informe técnico (PDF): https://opengalaxea.github.io/G05/Galaxea_G0_5.pdf
 - Vídeo de introducción: https://opengalaxea.github.io/G05/videos/introduction_g05.mp4

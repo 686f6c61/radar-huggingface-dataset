@@ -83,7 +83,7 @@ Carga y primera llamada: 0,03 s de carga (ambos backends); primera llamada de 0,
 
 | Modelo | Tipo | Parámetros | Contexto/entrada | Precisión ETH3D (bad > 1 px %) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CREStereo (fastforks, `crestereo-eth3d`) | Estéreo con cascada GRU | no disponible | Cualquier H x W >= 33, múltiplo de 32; probado hasta 3000x4000 | 1,38-1,40 | Código Apache-2.0; pesos sin declarar | HuggingFace (tarjeta) y GitHub |
+| CREStereo (fastforks, `crestereo-eth3d`) | Estéreo con cascada GRU | no disponible | Cualquier H x W >= 33, múltiplo de 32; probado hasta 3000x4000 | 1,38-1,40 | Código Apache-2.0; pesos sin declarar | Hugging Face (tarjeta) y GitHub |
 | CREStereo original (Megvii) | Estéreo con cascada GRU | no disponible | Igual que el anterior | 1,40 (referencia) | Código Apache-2.0; pesos sin declarar | GitHub original |
 | RAFT-Stereo | Estéreo recurrente con correlación | no disponible | no disponible | no disponible en la información proporcionada | no disponible | no disponible |
 | STTR | Estéreo con transformer | no disponible | no disponible | no disponible en la información proporcionada | no disponible | no disponible |
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks de RAFT-Stereo ni STTR en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/crestereo
+- Hugging Face: https://huggingface.co/fastforks/crestereo
 - Repositorio del fork: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Código original de CREStereo: https://github.com/megvii-research/CREStereo

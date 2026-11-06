@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ryanham1lton/RaticateJCC es un repositorio de modelo alojado en HuggingFace por el usuario Ryanham1lton, publicado el 22 de septiembre de 2026 y actualizado el mismo dia. La model card asociada no contiene mas informacion que la declaracion de licencia (cc-by-4.0): no se documentan arquitectura, numero de parametros, datos de entrenamiento, idiomas soportados ni pipeline de inferencia. El repositorio acumula 0 descargas y 0 likes, y no tiene ninguna etiqueta de tarea asignada.
+Ryanham1lton/RaticateJCC es un repositorio de modelo alojado en Hugging Face por el usuario Ryanham1lton, publicado el 22 de septiembre de 2026 y actualizado el mismo dia. La model card asociada no contiene mas informacion que la declaracion de licencia (cc-by-4.0): no se documentan arquitectura, numero de parametros, datos de entrenamiento, idiomas soportados ni pipeline de inferencia. El repositorio acumula 0 descargas y 0 likes, y no tiene ninguna etiqueta de tarea asignada.
 
 La unica informacion tecnica objetiva disponible es el tamano del repositorio (0,1 GB) y la licencia CC BY 4.0. No hay resultados de benchmarks, demos, papers ni documentacion complementaria. Las busquedas web realizadas para localizar informacion sobre el modelo devolvieron exclusivamente recetas de sopa de pollo con fideos, sin ninguna relacion con el modelo, por lo que no aportan datos utilizables.
 
@@ -79,7 +79,7 @@ No disponible. Al desconocerse la arquitectura, el numero de parametros, la tare
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Ryanham1lton/RaticateJCC | no disponible | no disponible | cc-by-4.0 | no disponible | HuggingFace (0 descargas) |
+| Ryanham1lton/RaticateJCC | no disponible | no disponible | cc-by-4.0 | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponibles | no disponibles | no disponibles | no disponibles | no disponibles |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. Al desconocerse la arquitectura, el numero de parametros, la tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/RaticateJCC
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/RaticateJCC
 - Model card del autor: no disponible (solo contiene la declaracion de licencia cc-by-4.0)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

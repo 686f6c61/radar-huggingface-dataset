@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`dongsdasda/456MODEL_ID` es un modelo multimodal de tipo imagen-texto a texto publicado en HuggingFace por el usuario `dongsdasda`. La ficha del repositorio indica una pipeline `image-text-to-text`, es decir, un modelo capaz de recibir imágenes junto con texto y generar texto como salida. Los pesos estan en formato `safetensors` y el repositorio ocupa 1,7 GB, con un total de 852.739.136 parametros (aproximadamente 853 millones) contabilizados en el propio repositorio.
+`dongsdasda/456MODEL_ID` es un modelo multimodal de tipo imagen-texto a texto publicado en Hugging Face por el usuario `dongsdasda`. La ficha del repositorio indica una pipeline `image-text-to-text`, es decir, un modelo capaz de recibir imágenes junto con texto y generar texto como salida. Los pesos estan en formato `safetensors` y el repositorio ocupa 1,7 GB, con un total de 852.739.136 parametros (aproximadamente 853 millones) contabilizados en el propio repositorio.
 
-La relevancia de esta ficha es limitada y conviene advertirlo desde el principio: la model card es la plantilla automatica de HuggingFace con todos los campos marcados como `[More Information Needed]`, el repositorio registra 0 descargas y 0 likes, y los resultados de busqueda web asociados no contienen ninguna referencia al modelo (son paginas de ayuda sobre inicio de sesion en Gmail). No hay informacion publicada sobre datos de entrenamiento, idiomas, licencia ni rendimiento. El tag `qwen3_5` sugiere una posible relacion con la familia Qwen, pero no hay ninguna confirmacion oficial en la informacion disponible.
+La relevancia de esta ficha es limitada y conviene advertirlo desde el principio: la model card es la plantilla automatica de Hugging Face con todos los campos marcados como `[More Information Needed]`, el repositorio registra 0 descargas y 0 likes, y los resultados de busqueda web asociados no contienen ninguna referencia al modelo (son paginas de ayuda sobre inicio de sesion en Gmail). No hay informacion publicada sobre datos de entrenamiento, idiomas, licencia ni rendimiento. El tag `qwen3_5` sugiere una posible relacion con la familia Qwen, pero no hay ninguna confirmacion oficial en la informacion disponible.
 
-Por el tamano (853 millones de parametros) se situa en el segmento de modelos pequenos, apto para inferencia en GPU de consumo e incluso en hardware limitado. El tag `endpoints_compatible` indica que esta preparado para desplegarse mediante HuggingFace Inference Endpoints, aunque el resto de caracteristicas tecnicas no estan documentadas.
+Por el tamano (853 millones de parametros) se situa en el segmento de modelos pequenos, apto para inferencia en GPU de consumo e incluso en hardware limitado. El tag `endpoints_compatible` indica que esta preparado para desplegarse mediante Hugging Face Inference Endpoints, aunque el resto de caracteristicas tecnicas no estan documentadas.
 
 ## Especificaciones técnicas
 
@@ -31,7 +31,7 @@ Por el tamano (853 millones de parametros) se situa en el segmento de modelos pe
 
 No hay informacion disponible sobre la arquitectura interna. Los unicos indicios son los tags del repositorio: `transformers`, `safetensors`, `qwen3_5`, `image-text-to-text` y `conversational`. El tag `qwen3_5` sugiere que el modelo podria derivar de la familia Qwen 3.5 y que seria un transformer multimodal con un codificador visual acoplado a un decodificador de lenguaje, pero esto es una inferencia a partir de una etiqueta, no un dato confirmado. Tampoco se conoce si emplea atencion completa, atencion lineal, mezcla de expertos u otra variante.
 
-Respecto al entrenamiento, la model card no documenta nada: no hay numero de tokens, composicion del dataset, ni si hubo etapas de ajuste fino supervisado, RLHF o DPO. Las secciones de hiperparametros, infraestructura de computo y datos de entrenamiento estan marcadas con `[More Information Needed]`. El identificador `arxiv:1910.09700` incluido en los tags corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de model card de HuggingFace; no es un paper sobre este modelo.
+Respecto al entrenamiento, la model card no documenta nada: no hay numero de tokens, composicion del dataset, ni si hubo etapas de ajuste fino supervisado, RLHF o DPO. Las secciones de hiperparametros, infraestructura de computo y datos de entrenamiento estan marcadas con `[More Information Needed]`. El identificador `arxiv:1910.09700` incluido en los tags corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la plantilla de model card de Hugging Face; no es un paper sobre este modelo.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ La informacion disponible no permite confirmar capacidades concretas mas alla de
 
 - Generacion de texto condicionada por imagen y texto de entrada (pipeline `image-text-to-text`).
 - Formato conversacional (tag `conversational`), lo que sugiere soporte de dialogos multi-turno, sin que se conozca la plantilla de chat utilizada.
-- Compatibilidad con HuggingFace Inference Endpoints (tag `endpoints_compatible`).
+- Compatibilidad con Hugging Face Inference Endpoints (tag `endpoints_compatible`).
 - Carga mediante la libreria `transformers`.
 - Capacidades de razonamiento, codigo, matematicas, tool calling, agentes o modo de pensamiento: no disponible.
 - Capacidades multilingues: no disponible.
@@ -71,7 +71,7 @@ Estimaciones a partir del numero de parametros (852,7 millones) y del tamano del
 - VRAM estimada en int4: del orden de 0,8 a 1,2 GB.
 - Cabe en GPU de consumo: previsiblemente si, en tarjetas con 6 GB o mas (RTX 3060, RTX 4060, RTX 2060, GTX 1660 con cuantizacion agresiva). Con 4 GB podria caber en int4, sujeto al coste del encoder visual y del contexto.
 - GPU recomendadas para produccion: NVIDIA A10, L4, T4 o RTX 4090 para despliegues con concurrencia moderada; A100/H100 no son necesarias por tamano, aunque permitirian lotes grandes y mayor throughput.
-- Opciones de despliegue: la libreria declarada es `transformers`; el tag `endpoints_compatible` indica soporte para HuggingFace Inference Endpoints. vLLM, TGI, SGLang, llama.cpp u Ollama dependerian de que exista soporte para la arquitectura concreta y de pesos GGUF, que no estan en el repositorio.
+- Opciones de despliegue: la libreria declarada es `transformers`; el tag `endpoints_compatible` indica soporte para Hugging Face Inference Endpoints. vLLM, TGI, SGLang, llama.cpp u Ollama dependerian de que exista soporte para la arquitectura concreta y de pesos GGUF, que no estan en el repositorio.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace: no documenta autor, tipo de modelo, idiomas, licencia, datos de entrenamiento ni uso previsto.
+- La model card es la plantilla automatica de Hugging Face: no documenta autor, tipo de modelo, idiomas, licencia, datos de entrenamiento ni uso previsto.
 - No hay licencia declarada. Sin licencia explicita no se puede asumir permiso de uso comercial; hay que contactar con el autor antes de cualquier despliegue en produccion.
 - No hay benchmarks ni evaluaciones de ningun tipo, por lo que el rendimiento real es desconocido.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo; aqui es especialmente relevante porque no hay evaluaciones que lo cuantifiquen, y en tareas de lectura de documentos o descripcion de imagenes puede inventar texto o detalles.
@@ -99,7 +99,7 @@ No se dispone de datos verificados de modelos comparables dentro de la informaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dongsdasda/456MODEL_ID
+- Repositorio en Hugging Face: https://huggingface.co/dongsdasda/456MODEL_ID
 - Paper citado en los tags (Lacoste et al., 2019, estimacion de emisiones de carbono, no es un paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - Otros enlaces (paper del modelo, blog, repositorio de codigo, demo): no disponible

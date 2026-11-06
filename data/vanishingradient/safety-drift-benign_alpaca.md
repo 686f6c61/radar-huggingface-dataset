@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`vanishingradient/safety-drift-benign_alpaca` es un adaptador LoRA publicado en HuggingFace por el usuario `vanishingradient`, entrenado sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo completo, sino de un ajuste fino parametrizado de tipo PEFT que debe cargarse junto con los pesos del modelo base. El repositorio se creó el 21 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", con un tamaño declarado de 0,0 GB.
+`vanishingradient/safety-drift-benign_alpaca` es un adaptador LoRA publicado en Hugging Face por el usuario `vanishingradient`, entrenado sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. No se trata de un modelo completo, sino de un ajuste fino parametrizado de tipo PEFT que debe cargarse junto con los pesos del modelo base. El repositorio se creó el 21 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 "likes", con un tamaño declarado de 0,0 GB.
 
-La relevancia del artefacto parece ser de investigación más que de producto. El propio identificador ("safety-drift-benign_alpaca") sugiere un experimento sobre deriva de seguridad (*safety drift*) provocada por un ajuste fino con datos benignos, en este caso presumiblemente de estilo Alpaca, aunque el autor no confirma esta interpretación en ningún momento. La model card es la plantilla genérica de HuggingFace sin rellenar: todos los campos figuran como `[More Information Needed]`, incluyendo desarrollador, licencia, idiomas, datos de entrenamiento y evaluación.
+La relevancia del artefacto parece ser de investigación más que de producto. El propio identificador ("safety-drift-benign_alpaca") sugiere un experimento sobre deriva de seguridad (*safety drift*) provocada por un ajuste fino con datos benignos, en este caso presumiblemente de estilo Alpaca, aunque el autor no confirma esta interpretación en ningún momento. La model card es la plantilla genérica de Hugging Face sin rellenar: todos los campos figuran como `[More Information Needed]`, incluyendo desarrollador, licencia, idiomas, datos de entrenamiento y evaluación.
 
 Por tanto, esta ficha describe principalmente el modelo base subyacente (Qwen2.5-7B-Instruct, transformer decoder-only de 7.610 millones de parámetros y 131.072 tokens de contexto) y señala explícitamente qué información sobre el adaptador no está disponible. Cualquier uso en producción debería considerarse prematuro hasta que el autor publique pesos verificables, hiperparámetros y resultados de evaluación.
 
@@ -56,7 +56,7 @@ Capacidades especificas del adaptador: no disponibles. En particular, se descono
 - Linea base en experimentos de comparacion: en un pipeline que entrene varios adaptadores sobre Qwen2.5-7B-Instruct (benigno, adversario, mixto), este podria actuar como condicion "benigna" de referencia.
 - Docencia sobre PEFT: util como ejemplo practico de adaptador LoRA de pocos megabytes para explicar carga, fusion de pesos y despliegue con la libreria `peft`, aunque el repositorio figure a 0,0 GB.
 - Reproducibilidad de resultados: para grupos que investiguen la robustez de la alineacion, un adaptador publico con nombre descriptivo permite repetir o refutar conclusiones de terceros.
-- Auditoria de artefactos del ecosistema HuggingFace: sirve como caso de estudio de model cards vacias, adaptadores sin pesos y riesgos de trazabilidad en el ecosistema de modelos abiertos.
+- Auditoria de artefactos del ecosistema Hugging Face: sirve como caso de estudio de model cards vacias, adaptadores sin pesos y riesgos de trazabilidad en el ecosistema de modelos abiertos.
 
 Uso en produccion: no recomendado con la informacion disponible. No hay licencia declarada, no hay evaluaciones y no se conoce el contenido exacto del dataset de ajuste, lo que impide cualquier analisis de riesgo o de cumplimiento.
 
@@ -109,7 +109,7 @@ Diferencias clave: el adaptador hereda la licencia del modelo base solo si el au
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/vanishingradient/safety-drift-benign_alpaca
+- Pagina del modelo en Hugging Face: https://huggingface.co/vanishingradient/safety-drift-benign_alpaca
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de PEFT (libreria declarada por el autor): https://github.com/huggingface/peft
 - Documentacion de PEFT: https://huggingface.co/docs/peft/index

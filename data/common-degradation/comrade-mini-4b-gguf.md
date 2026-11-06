@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Comrade Mini es un ajuste fino experimental del modelo Qwen3-4B, desarrollado por el usuario common-degradation y publicado en HuggingFace. Se distribuye exclusivamente en formato GGUF cuantizado (Q4_K_M) y está pensado para ejecutarse localmente mediante Ollama, especialmente en equipos Apple Silicon. El modelo base Qwen3-4B aporta una arquitectura transformer densa de aproximadamente 4.022 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen3, aunque la model card no confirma configuración específica para este ajuste).
+Comrade Mini es un ajuste fino experimental del modelo Qwen3-4B, desarrollado por el usuario common-degradation y publicado en Hugging Face. Se distribuye exclusivamente en formato GGUF cuantizado (Q4_K_M) y está pensado para ejecutarse localmente mediante Ollama, especialmente en equipos Apple Silicon. El modelo base Qwen3-4B aporta una arquitectura transformer densa de aproximadamente 4.022 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen3, aunque la model card no confirma configuración específica para este ajuste).
 
 El objetivo declarado del proyecto es construir un asistente local para trabajar con documentos: responder preguntas sobre texto, extraer datos estructurados (fechas, importes, nombres), resumir, editar textos y planificar tareas, todo sin enviar información a servicios en la nube. El ajuste se realizó con LoRA sobre un subconjunto de DocVQA (814 ejemplos de entrenamiento, 90 de validación y 200 de test), empleando MLX-LM sobre Apple Silicon, y posteriormente se fusionó el adaptador con el modelo base y se convirtió a GGUF.
 
@@ -86,7 +86,7 @@ La comparación con el modelo base es la más relevante: Comrade Mini hereda las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/common-degradation/comrade-mini-4b-gguf
+- Modelo en Hugging Face: https://huggingface.co/common-degradation/comrade-mini-4b-gguf
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset DocVQA (subconjunto usado): https://huggingface.co/datasets/nielsr/docvqa_1200_examples
 - Ollama (runtime principal): https://ollama.com/

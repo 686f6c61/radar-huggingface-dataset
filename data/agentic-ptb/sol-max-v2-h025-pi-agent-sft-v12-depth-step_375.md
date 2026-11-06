@@ -60,10 +60,10 @@ No se dispone de datos de rendimiento para comparar directamente. Como referenci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | Apache 2.0 (típico en Qwen) | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| agentic-ptb/sol-max-v2 (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | Apache 2.0 (típico en Qwen) | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 No hay comparativas de rendimiento publicadas para este checkpoint.
 
@@ -79,6 +79,6 @@ No hay comparativas de rendimiento publicadas para este checkpoint.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h025.pi-agent-sft-v12-depth.step_375
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h025.pi-agent-sft-v12-depth.step_375
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice de checkpoints de AgentPTB (mencionado en la model card): https://huggingface.co/agentic-ptb/INDEX (no verificado)

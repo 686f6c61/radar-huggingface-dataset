@@ -76,7 +76,7 @@ La variante `nobonus` alinea sin el bonus de onset basado en log-mel, lo que ais
 
 | Modelo | Parametros | Cobertura | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mbfa-latin-benchmark | 14.875.189 | 36 idiomas, grupo latin de FLEURS | CNN sin contexto, alineacion forzada + fonemas | AGPL-3.0 | HuggingFace, 0 descargas |
+| mbfa-latin-benchmark | 14.875.189 | 36 idiomas, grupo latin de FLEURS | CNN sin contexto, alineacion forzada + fonemas | AGPL-3.0 | Hugging Face, 0 descargas |
 | mbfa-latin | no disponible | mismo grupo latin | misma familia, entrenado con noise 0,05; recomendado por el autor para grabaciones reales | AGPL-3.0 | no disponible en la informacion consultada |
 | CUPE / p3cupe | no disponible | no disponible | predecesor directo de p4mbfa | no disponible | no disponible |
 | Alineadores de referencia externos (por ejemplo MFA o WhisperX) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -98,7 +98,7 @@ No se dispone de datos comparativos de terceros en la informacion proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tabahi/mbfa-latin-benchmark
+- Hugging Face: https://huggingface.co/Tabahi/mbfa-latin-benchmark
 - Codigo de inferencia y entrenamiento (p4mbfa): https://github.com/tabahi/bfa_models
 - standard_g2p / CharsiuG2P: https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/fleurs

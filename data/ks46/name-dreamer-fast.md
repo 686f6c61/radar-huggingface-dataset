@@ -2,7 +2,7 @@
 
 ## Resumen
 
-name-dreamer-fast (identificador en HuggingFace `ks46/name-dreamer-fast`) es un GPT byte-level de 28.564.992 parámetros entrenado por el usuario ks46 con un único objetivo: generar nombres de usuario sintéticos con aspecto real, del estilo de los que aparecen en registros de plataformas, foros, repositorios y videojuegos. No es un modelo de propósito general: es un generador de dominio muy estrecho, con vocabulario de 256 bytes (byte 0 actúa como token de parada) y sin tokenizador BPE, lo que evita cualquier problema de vocabulario abierto o de caracteres fuera de catálogo.
+name-dreamer-fast (identificador en Hugging Face `ks46/name-dreamer-fast`) es un GPT byte-level de 28.564.992 parámetros entrenado por el usuario ks46 con un único objetivo: generar nombres de usuario sintéticos con aspecto real, del estilo de los que aparecen en registros de plataformas, foros, repositorios y videojuegos. No es un modelo de propósito general: es un generador de dominio muy estrecho, con vocabulario de 256 bytes (byte 0 actúa como token de parada) y sin tokenizador BPE, lo que evita cualquier problema de vocabulario abierto o de caracteres fuera de catálogo.
 
 La arquitectura es un transformer decoder-only pequeño (4 capas, dimensión 768, 4 cabezas de atención, FFN SwiGLU de 2048) entrenado durante 30.000 iteraciones con secuencias de 512 bytes y batch de 128 sobre el corpus `ks46/usernames`, que reúne 90.505.453 nombres de usuario únicos procedentes de 18 fuentes públicas (Kaggle, Reddit, GH Archive, Stack Overflow, Wikipedia en inglés, Lichess, OpenStreetMap, Bluesky, Codeforces, Roblox, entre otras).
 
@@ -131,7 +131,7 @@ Las diferencias relevantes frente a un GPT-2 small son el tamaño (4,3 veces men
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ks46/name-dreamer-fast
+- Modelo en Hugging Face: https://huggingface.co/ks46/name-dreamer-fast
 - Dataset de entrenamiento: https://huggingface.co/datasets/ks46/usernames
 - Paper, blog o repositorio adicional: no disponible
 - Demo o endpoint publico: no disponible

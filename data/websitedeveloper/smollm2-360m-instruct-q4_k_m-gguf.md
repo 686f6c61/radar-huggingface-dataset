@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolLM2-360M-Instruct-Q4_K_M-GGUF (esta ficha) | 361.821.120 | no disponible | apache-2.0 | GGUF, safetensors, ONNX | HuggingFace (0 descargas) |
-| SmolLM2-360M-Instruct (original) | 361.821.120 | no disponible | apache-2.0 | safetensors | HuggingFace (oficial) |
+| SmolLM2-360M-Instruct-Q4_K_M-GGUF (esta ficha) | 361.821.120 | no disponible | apache-2.0 | GGUF, safetensors, ONNX | Hugging Face (0 descargas) |
+| SmolLM2-360M-Instruct (original) | 361.821.120 | no disponible | apache-2.0 | safetensors | Hugging Face (oficial) |
 | Qwen2.5-0.5B-Instruct | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | TinyLlama-1.1B-Chat | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ Los datos de los modelos alternativos no se han podido verificar en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/Websitedeveloper/SmolLM2-360M-Instruct-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta versión: https://huggingface.co/Websitedeveloper/SmolLM2-360M-Instruct-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Naomi — Krea 2 Character LoRA es un adaptador de baja adaptación (LoRA) desarrollado por mad_macs para el modelo de difusión Krea 2. Añade la identidad de un personaje ficticio llamado Naomi, de rasgos oscuros y piel cálida, y está pensado para generar imágenes fotorrealistas con iluminación natural y aspecto de luz suave. El repositorio en HuggingFace (madmacs5/naomi-krea2-lora) incluye dos archivos: un LoRA principal de cara/identidad (`naomi_face_v4_blend.safetensors`) y un LoRA complementario de cuerpo delgado (`naomi_slim_body.safetensors`) que puede apilarse para ajustar la silueta en determinados planos. El tamaño total del repositorio es de 1,4 GB.
+Naomi — Krea 2 Character LoRA es un adaptador de baja adaptación (LoRA) desarrollado por mad_macs para el modelo de difusión Krea 2. Añade la identidad de un personaje ficticio llamado Naomi, de rasgos oscuros y piel cálida, y está pensado para generar imágenes fotorrealistas con iluminación natural y aspecto de luz suave. El repositorio en Hugging Face (madmacs5/naomi-krea2-lora) incluye dos archivos: un LoRA principal de cara/identidad (`naomi_face_v4_blend.safetensors`) y un LoRA complementario de cuerpo delgado (`naomi_slim_body.safetensors`) que puede apilarse para ajustar la silueta en determinados planos. El tamaño total del repositorio es de 1,4 GB.
 
 Se trata de una solución para mantener la consistencia de un personaje concreto sin tener que entrenar un modelo completo. El autor indica que el LoRA de cara fue reentrenado desde cero sobre una fusión de modelos Krea 2 (RawGirl + Realism + DarkBeast merge) para conseguir un mejor bloqueo de identidad y una textura de piel más natural. No se proporcionan datos sobre parámetros totales ni sobre el proceso de entrenamiento, y la longitud de contexto no aplica al ser un modelo de difusión de imágenes.
 
@@ -67,12 +67,12 @@ No disponible. No se dispone de información comparativa con otros LoRAs de pers
 - El LoRA está optimizado para el modelo base Krea 2 con merges concretos (RawGirl + Realism + DarkBeast). Puede no funcionar correctamente con otros modelos base o con configuraciones muy diferentes.
 - La fuerza de aplicación es sensible: valores fuera del rango 0,2–0,5 en el LoRA facial pueden provocar pérdida de identidad o sangrado de rasgos en la imagen.
 - El LoRA de cuerpo delgado está pensado solo para planos traseros, laterales o de espalda; usarlo en planos frontales puede alterar la silueta de forma no deseada, según advierte el propio autor.
-- La licencia no está especificada en HuggingFace, por lo que no se garantiza que el modelo pueda usarse comercialmente. Es necesario contactar con el autor para aclarar los términos.
+- La licencia no está especificada en Hugging Face, por lo que no se garantiza que el modelo pueda usarse comercialmente. Es necesario contactar con el autor para aclarar los términos.
 - El repositorio no presenta descargas ni likes en el momento de la consulta, lo que sugiere baja validación comunitaria o una publicación reciente sin difusión.
 - No se dispone de información sobre datos de entrenamiento, lo que impide evaluar posibles sesgos en el generador de imágenes.
 
 ## Enlaces
 
-- HuggingFace: [madmacs5/naomi-krea2-lora](https://huggingface.co/madmacs5/naomi-krea2-lora)
+- Hugging Face: [madmacs5/naomi-krea2-lora](https://huggingface.co/madmacs5/naomi-krea2-lora)
 - Civitai (tag Krea 2): [https://civitai.com/tag/krea2](https://civitai.com/tag/krea2)
 - Civitai (ecosistema Krea 2): [https://civitai.com/ecosystems/krea2](https://civitai.com/ecosystems/krea2)

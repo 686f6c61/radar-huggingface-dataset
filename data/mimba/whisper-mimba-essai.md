@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-mimba-essai es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario mimba en HuggingFace, obtenido mediante fine-tuning del modelo openai/whisper-small. El modelo esta pensado para transcribir audio en cuatro idiomas: palauano (plt), criollo mauriciano (mfe), frances (fr) e ingles (en), una combinacion poco habitual que sugiere un enfoque en comunidades linguisticas minoritarias del Pacifico y del oceano Indico junto con los dos idiomas coloniales de referencia.
+Whisper-mimba-essai es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario mimba en Hugging Face, obtenido mediante fine-tuning del modelo openai/whisper-small. El modelo esta pensado para transcribir audio en cuatro idiomas: palauano (plt), criollo mauriciano (mfe), frances (fr) e ingles (en), una combinacion poco habitual que sugiere un enfoque en comunidades linguisticas minoritarias del Pacifico y del oceano Indico junto con los dos idiomas coloniales de referencia.
 
 Tecnicamente se trata de un transformer encoder-decoder de tipo Whisper con 241.734.912 parametros totales, derivado de la variante "small" de OpenAI (aproximadamente 244 millones de parametros). El repositorio ocupa 14,5 GB, un tamano desproporcionado para el numero de parametros, lo que indica la presencia de multiples checkpoints o artefactos de entrenamiento ademas de los pesos finales en safetensors.
 
@@ -18,7 +18,7 @@ La relevancia de este modelo es limitada pero especifica: cubre dos idiomas de b
 | Longitud de contexto | no disponible (Whisper-small procesa ventanas de audio de 30 segundos) |
 | Tipos de cuantizacion | no disponible (el repo solo publica safetensors; no se documentan variantes GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | palauano (plt), criollo mauriciano (mfe), frances (fr), ingles (en) |
-| Licencia | mimba-proprietary (licencia "other" en HuggingFace) |
+| Licencia | mimba-proprietary (licencia "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -71,8 +71,8 @@ La ventaja diferencial de whisper-mimba-essai es la cobertura especifica de pala
 
 ## Limitaciones y advertencias
 
-- Licencia propietaria ("mimba-proprietary"): no se permite uso comercial ni redistribucion sin autorizacion explicita del autor; los terminos exactos deben consultarse en la model card de HuggingFace.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo, lo que anade friccion a cualquier evaluacion o despliegue.
+- Licencia propietaria ("mimba-proprietary"): no se permite uso comercial ni redistribucion sin autorizacion explicita del autor; los terminos exactos deben consultarse en la model card de Hugging Face.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo, lo que anade friccion a cualquier evaluacion o despliegue.
 - Modelo marcado como "essai" (prueba): no hay evidencia de validacion en produccion ni de calidad consistente; el autor no publica metricas.
 - Riesgo de alucinacion y de bucles de repeticion, inherente a los modelos Whisper, especialmente en segmentos con ruido o silencios largos.
 - Cobertura limitada a cuatro idiomas; fuera de ellos el rendimiento sera degradado o inutilizable.
@@ -83,7 +83,7 @@ La ventaja diferencial de whisper-mimba-essai es la cobertura especifica de pala
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mimba/whisper-mimba-essai
+- Modelo en Hugging Face: https://huggingface.co/mimba/whisper-mimba-essai
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

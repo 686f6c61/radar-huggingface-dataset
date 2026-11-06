@@ -6,7 +6,7 @@ CoGaze es un framework de preentrenamiento vision-lenguaje disenado especificame
 
 La innovacion central es el uso de mapas de calor de gaze durante el preentrenamiento, mientras que las tareas downstream (generacion de informes, clasificacion, segmentacion) no requieren datos de gaze en inferencia. El repositorio ocupa 11,8 GB e incluye checkpoints preentrenados sobre MIMIC-CXR, un modelo de generacion de informes basado en DistilGPT2 y anotaciones auxiliares (mapas de gaze, pares imagen-texto y anotaciones SRRG).
 
-La relevancia actual radica en que propone una via de incorporacion de senal humana (atencion visual experta) en el preentrenamiento multimodal medico, un area donde los modelos genericos vision-lenguaje suelen fallar por falta de dominio y de alineacion con el razonamiento clinico. El modelo se publica con codigo en GitHub y pesos en HuggingFace, aunque la licencia no esta declarada.
+La relevancia actual radica en que propone una via de incorporacion de senal humana (atencion visual experta) en el preentrenamiento multimodal medico, un area donde los modelos genericos vision-lenguaje suelen fallar por falta de dominio y de alineacion con el razonamiento clinico. El modelo se publica con codigo en GitHub y pesos en Hugging Face, aunque la licencia no esta declarada.
 
 ## Especificaciones tecnicas
 
@@ -89,9 +89,9 @@ No se dispone en la informacion proporcionada de datos de benchmarks de modelos 
 
 | Modelo | Dominio | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CoGaze | Radiografia de torax | Vision-lenguaje con gaze en preentrenamiento | no disponible | HuggingFace + GitHub |
+| CoGaze | Radiografia de torax | Vision-lenguaje con gaze en preentrenamiento | no disponible | Hugging Face + GitHub |
 | R2Gen | Radiografia de torax | Transformer encoder-decoder | no disponible en esta ficha | Repositorio academico |
-| CheXagent | Radiografia de torax | LLM multimodal clinico | no disponible en esta ficha | HuggingFace |
+| CheXagent | Radiografia de torax | LLM multimodal clinico | no disponible en esta ficha | Hugging Face |
 
 Los datos de rendimiento de los modelos alternativos no estan disponibles en la informacion consultada; no se inventan cifras.
 
@@ -108,7 +108,7 @@ Los datos de rendimiento de los modelos alternativos no estan disponibles en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MK-runner/CoGaze
+- Hugging Face: https://huggingface.co/MK-runner/CoGaze
 - Repositorio GitHub: https://github.com/mk-runner/CoGaze
 - Paper arXiv: https://arxiv.org/abs/2603.26049
 - Checkpoint preentrenado MIMIC-CXR: https://huggingface.co/MK-runner/CoGaze/blob/main/mimic_pretrain_best_model.pt

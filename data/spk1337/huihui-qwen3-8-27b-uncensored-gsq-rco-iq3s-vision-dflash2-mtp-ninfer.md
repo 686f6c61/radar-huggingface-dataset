@@ -100,7 +100,7 @@ Como alternativa de la misma categoría cabe citar también otras variantes abli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SPK1337/Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S-Vision-DFlash2-MTP-NInfer
+- Modelo en Hugging Face: https://huggingface.co/SPK1337/Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S-Vision-DFlash2-MTP-NInfer
 - Modelo base de la familia: https://huggingface.co/Qwen/Qwen3.8-27B
 - Registro de conversión: https://huggingface.co/SPK1337/Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S-Vision-DFlash2-MTP-NInfer/blob/main/Huihui-Qwen3.8-27B-GSQ-RCO-IQ3S-Vision-DFlash2.ninfer.conversion.json
 - Metodología del benchmark: https://huggingface.co/SPK1337/Huihui-Qwen3.8-27B-Uncensored-GSQ-RCO-IQ3S-Vision-DFlash2-MTP-NInfer/blob/main/BENCHMARK-RTX4090.md

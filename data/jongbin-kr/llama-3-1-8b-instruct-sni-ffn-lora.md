@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento para comparar objetivamente estos modelos.
 
 ## Enlaces
 
-- [HuggingFace: Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora)
-- [HuggingFace: Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep)
+- [Hugging Face: Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora)
+- [Hugging Face: Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep)
 - [LLM Explorer: Llama 3.1 8B Instruct 4x2 MoE by Jongbin-kr](https://llm-explorer.com/model/Jongbin-kr%2Fllama-3.1-8b-instruct-4x2-moe,3bqsG1wwLvc8EGxu1aQnUa)
 - [Ollama: Llama 3.1 8B](https://ollama.com/library/llama3.1:8b)
 - [GitHub: Model card de Llama 3.1](https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md)

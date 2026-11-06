@@ -82,5 +82,5 @@ La comparativa se basa en datos públicos de los modelos base. La cuantización 
 - Modelo cuantizado: https://huggingface.co/Rin247/Qwen3-ASR-0.6B-hf-INT4
 - Repositorio oficial de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Informe tecnico de Qwen3-ASR: https://arxiv.org/html/2601.21337v1
-- Coleccion de modelos Qwen3-ASR en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-asr
+- Coleccion de modelos Qwen3-ASR en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-asr
 - Documentacion de Transformers para Qwen3-ASR: https://huggingface.co/docs/transformers/main/model_doc/qwen3_asr

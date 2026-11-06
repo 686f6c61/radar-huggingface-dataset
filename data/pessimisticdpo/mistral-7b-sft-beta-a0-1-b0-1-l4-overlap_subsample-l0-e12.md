@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e12` es un checkpoint alojado en HuggingFace por el usuario PessimisticDPO. Su nombre sugiere que se trata de un ajuste (fine-tuning) derivado de `mistral-7b-sft-beta`, con una receta que incorpora algún tipo de optimizacion de preferencias del tipo DPO (la nomenclatura "PessimisticDPO" y los parametros `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0`, `e12` apuntan a hiperparametros de entrenamiento), pero la model card no confirma ninguno de estos extremos.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e12` es un checkpoint alojado en Hugging Face por el usuario PessimisticDPO. Su nombre sugiere que se trata de un ajuste (fine-tuning) derivado de `mistral-7b-sft-beta`, con una receta que incorpora algún tipo de optimizacion de preferencias del tipo DPO (la nomenclatura "PessimisticDPO" y los parametros `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0`, `e12` apuntan a hiperparametros de entrenamiento), pero la model card no confirma ninguno de estos extremos.
 
 La tarjeta del modelo es la plantilla autogenerada por la libreria `transformers` y no contiene informacion sustantiva: no se especifican autor, licencia, idiomas, datos de entrenamiento, procedimiento ni resultados de evaluacion. El repositorio ocupa unicamente 0,2 GB, un tamano muy inferior al de un modelo de 7B parametros en precision completa (en torno a 14-15 GB en fp16), lo que sugiere que podria contener un adaptador, un checkpoint parcial o pesos en un formato comprimido.
 
@@ -29,7 +29,7 @@ Por tanto, esta ficha documenta exclusivamente lo verificable a partir de los me
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura, el procedimiento de entrenamiento, el volumen de datos, la composicion del dataset ni el uso de tecnicas como RLHF o DPO. La model card es la plantilla estandar de HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]". El unico indicio tecnico es el propio identificador del modelo: el prefijo `mistral-7b-sft-beta` apunta a una base Mistral 7B ya sometida a supervisied fine-tuning (SFT), y los sufijos `a0.1-b0.1`, `L4`, `overlap_subsample`, `l0` y `e12` parecen codificar hiperparametros de una etapa adicional de optimizacion (posiblemente DPO, por el nombre del autor), pero se trata de una interpretacion no confirmada.
+No hay informacion publicada sobre la arquitectura, el procedimiento de entrenamiento, el volumen de datos, la composicion del dataset ni el uso de tecnicas como RLHF o DPO. La model card es la plantilla estandar de Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]". El unico indicio tecnico es el propio identificador del modelo: el prefijo `mistral-7b-sft-beta` apunta a una base Mistral 7B ya sometida a supervisied fine-tuning (SFT), y los sufijos `a0.1-b0.1`, `L4`, `overlap_subsample`, `l0` y `e12` parecen codificar hiperparametros de una etapa adicional de optimizacion (posiblemente DPO, por el nombre del autor), pero se trata de una interpretacion no confirmada.
 
 No se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento. Tampoco se especifican la precision de entrenamiento (fp16, bf16, fp8), el hardware utilizado ni el coste computacional. El tag `arxiv:1910.09700` presente en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, citado en la propia plantilla de la model card, y no a un paper del modelo.
 
@@ -51,7 +51,7 @@ No es posible recomendar casos de uso concretos con garantias, porque no se ha p
 - Evaluacion comparativa de checkpoints derivados de `mistral-7b-sft-beta`: solo si se confirma que los pesos son completos y funcionales.
 - Pruebas de inferencia en local con `transformers`: posible en principio si el checkpoint carga correctamente, pero no verificado.
 - Analisis de robustez frente a sesgos de optimizacion pesimista: relevante para investigadores que estudien el comportamiento de variantes DPO.
-- Docencia sobre ciclo de vida de modelos en HuggingFace: el repositorio ilustra un caso de model card autogenerada sin informacion sustantiva.
+- Docencia sobre ciclo de vida de modelos en Hugging Face: el repositorio ilustra un caso de model card autogenerada sin informacion sustantiva.
 
 ## Benchmarks y rendimiento
 
@@ -74,7 +74,7 @@ La comparacion se limita a atributos estructurales y de disponibilidad, ya que n
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| PessimisticDPO/mistral-7b-sft-beta-... (objeto de esta ficha) | no disponible (7B inferido) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| PessimisticDPO/mistral-7b-sft-beta-... (objeto de esta ficha) | no disponible (7B inferido) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | HuggingFaceH4/mistral-7b-sft-beta | 7B | 8.192 tokens (base v0.1) | Apache 2.0 (segun model card original) | ingles principal | ampliamente utilizado |
 | mistralai/Mistral-7B-Instruct-v0.2 | 7B | 32.768 tokens | Apache 2.0 | multilingue | muy extendido |
 | HuggingFaceH4/zephyr-7b-beta | 7B | 8.192 tokens | MIT | ingles principal | ampliamente utilizado |
@@ -95,7 +95,7 @@ No es posible establecer comparaciones de rendimiento (MMLU, HumanEval, GSM8K) p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e12
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e12
 - Modelo base inferido (no confirmado): https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta
 - Paper citado en el template de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

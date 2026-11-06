@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LlaVA_refcoco_pure (este adaptador) | Adaptador sobre base de ~7.000 M | No disponible | Grounding referencial sobre RefCOCO | No disponible | HuggingFace, 0 descargas |
+| LlaVA_refcoco_pure (este adaptador) | Adaptador sobre base de ~7.000 M | No disponible | Grounding referencial sobre RefCOCO | No disponible | Hugging Face, 0 descargas |
 | Llava-7b (modelo base) | ~7.000 M | 4.096 tokens (configuracion habitual) | Vision-lenguaje general | No disponible en esta ficha (depende del repositorio original) | Ampliamente desplegado |
-| Otros VLM de ~7.000 M con grounding (por ejemplo, variantes de Qwen2-VL o InternVL ajustadas para deteccion) | ~7.000-8.000 M | 32.768 tokens o superior segun variante | Vision-lenguaje con deteccion y grounding | Variable, habitualmente permisiva en las variantes abiertas | HuggingFace y vLLM |
+| Otros VLM de ~7.000 M con grounding (por ejemplo, variantes de Qwen2-VL o InternVL ajustadas para deteccion) | ~7.000-8.000 M | 32.768 tokens o superior segun variante | Vision-lenguaje con deteccion y grounding | Variable, habitualmente permisiva en las variantes abiertas | Hugging Face y vLLM |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas para esta ficha, por lo que la comparativa se limita a parametros, contexto y disponibilidad.
 
@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento comparado entre estas alternativas para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Duke-de-Artois/LlaVA_refcoco_pure
+- Modelo en Hugging Face: https://huggingface.co/Duke-de-Artois/LlaVA_refcoco_pure
 - Referencia citada en los tags del repositorio (Lacoste et al., 2019, calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - Proyecto LLaVA (modelo base, no citado en la model card): https://github.com/haotian-liu/LLaVA
-- Pagina del modelo base Llava-7b en HuggingFace (no citada en la model card): https://huggingface.co/liuhaotian/llava-v1.5-7b
+- Pagina del modelo base Llava-7b en Hugging Face (no citada en la model card): https://huggingface.co/liuhaotian/llava-v1.5-7b
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces encontrados corresponden a la Universidad Duke, a la entrada generica de Wikipedia sobre el titulo nobiliario «duque» y a un fabricante de ruedas de bicicleta, y no guardan relacion con el artefacto descrito.

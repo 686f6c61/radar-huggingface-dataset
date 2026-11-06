@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AlienHu/Qwen3.5-9B_v4-r8-msmarco_lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario AlienHu y entrenado sobre el modelo base Qwen/Qwen3.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos diferenciales de bajo rango que deben cargarse sobre el modelo base mediante la libreria PEFT. El nombre del repositorio sugiere un entrenamiento orientado a tareas de recuperacion de informacion o ranking de pasajes, dado el sufijo "msmarco" (referencia al corpus MS MARCO), con un rango de adaptacion r=8.
+AlienHu/Qwen3.5-9B_v4-r8-msmarco_lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario AlienHu y entrenado sobre el modelo base Qwen/Qwen3.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos diferenciales de bajo rango que deben cargarse sobre el modelo base mediante la libreria PEFT. El nombre del repositorio sugiere un entrenamiento orientado a tareas de recuperacion de informacion o ranking de pasajes, dado el sufijo "msmarco" (referencia al corpus MS MARCO), con un rango de adaptacion r=8.
 
-El artefacto ocupa aproximadamente 0,5 GB en formato safetensors y utiliza la libreria PEFT en su version 0.20.0. La model card esta practicamente vacia: se limita a la plantilla estandar de HuggingFace sin rellenar, con la mayoria de campos marcados como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
+El artefacto ocupa aproximadamente 0,5 GB en formato safetensors y utiliza la libreria PEFT en su version 0.20.0. La model card esta practicamente vacia: se limita a la plantilla estandar de Hugging Face sin rellenar, con la mayoria de campos marcados como "[More Information Needed]". No se declaran licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion.
 
 Su relevancia es limitada y muy especifica: sirve como ejemplo de adaptador LoRA sobre modelos Qwen de la familia 3.5 con posible especializacion en tareas de busqueda o recuperacion, pero carece de documentacion que permita validar su calidad o reproducibilidad. Para cualquier uso en produccion seria necesario evaluar empiricamente el adaptador frente al modelo base.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AlienHu/Qwen3.5-9B_v4-r8-msmarco_lora | Adaptador LoRA (r=8) | Adaptador sobre 9B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B | Modelo base completo | 9B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base) |
+| AlienHu/Qwen3.5-9B_v4-r8-msmarco_lora | Adaptador LoRA (r=8) | Adaptador sobre 9B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B | Modelo base completo | 9B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base) |
 | Adaptadores LoRA de retrieval sobre modelos 7-9B (genericos) | Adaptador LoRA | Variable | Heredado del base | Variable | Depende del autor |
 
 No se dispone de informacion suficiente para comparar rendimiento con alternativas especificas, dado que no hay benchmarks publicados ni documentacion del adaptador.
@@ -86,7 +86,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlienHu/Qwen3.5-9B_v4-r8-msmarco_lora
+- Hugging Face: https://huggingface.co/AlienHu/Qwen3.5-9B_v4-r8-msmarco_lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper de LoRA (referenciado en los tags via arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

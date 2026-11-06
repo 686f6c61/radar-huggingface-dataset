@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39,1 M | no disponible | no disponible | HuggingFace | Modelo objeto de esta ficha |
-| goldfish-models/nor_latn_10mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base del ajuste fino |
-| francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace | Variante en italiano del mismo proyecto experimental |
-| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace | Variante en danes con corpus de 100 MB |
-| fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407 | 39,1 M (segun LLM Explorer) | no disponible | no disponible | HuggingFace | Variante del mismo proyecto con tarea tipo Dyck |
+| francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | 39,1 M | no disponible | no disponible | Hugging Face | Modelo objeto de esta ficha |
+| goldfish-models/nor_latn_10mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base del ajuste fino |
+| francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face | Variante en italiano del mismo proyecto experimental |
+| francesca9805/dan-latn-100mb-ppt-Dp-10mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face | Variante en danes con corpus de 100 MB |
+| fpadovani/nor-latn-10mb-ppt-shuff-dyck-10mb_seed3407 | 39,1 M (segun LLM Explorer) | no disponible | no disponible | Hugging Face | Variante del mismo proyecto con tarea tipo Dyck |
 
 Los modelos comparables pertenecen todos al mismo ecosistema experimental (proyecto de tokenizadores del grupo de Groningen) y comparten un diseno similar. No se dispone de datos de rendimiento para establecer una comparacion cuantitativa.
 
@@ -84,7 +84,7 @@ Los modelos comparables pertenecen todos al mismo ecosistema experimental (proye
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/q1314499

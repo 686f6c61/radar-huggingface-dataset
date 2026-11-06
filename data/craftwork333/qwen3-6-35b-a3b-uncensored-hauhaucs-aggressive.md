@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive es una variante sin censura del modelo multimodal Qwen3.6-35B-A3B, desarrollada por HauhauCS y publicada en HuggingFace bajo el espacio de Craftwork333. El modelo base, creado por Alibaba, es una arquitectura de mezcla de expertos (MoE) con 35 mil millones de parámetros totales y aproximadamente 3 mil millones activos por paso, diseñada para procesamiento de texto, imagen y vídeo. Esta variante aplica técnicas de ablación de rechazos (abliteration) para eliminar las respuestas de rechazo del modelo, logrando un 0/465 de rechazos en pruebas de seguridad, sin modificar los datos de entrenamiento ni las capacidades originales.
+Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive es una variante sin censura del modelo multimodal Qwen3.6-35B-A3B, desarrollada por HauhauCS y publicada en Hugging Face bajo el espacio de Craftwork333. El modelo base, creado por Alibaba, es una arquitectura de mezcla de expertos (MoE) con 35 mil millones de parámetros totales y aproximadamente 3 mil millones activos por paso, diseñada para procesamiento de texto, imagen y vídeo. Esta variante aplica técnicas de ablación de rechazos (abliteration) para eliminar las respuestas de rechazo del modelo, logrando un 0/465 de rechazos en pruebas de seguridad, sin modificar los datos de entrenamiento ni las capacidades originales.
 
 El modelo destaca por su contexto nativo de 262 000 tokens, su arquitectura híbrida de atención lineal y softmax en proporción 3:1, y su disponibilidad en cuantizaciones GGUF optimizadas con matriz de importancia (imatrix), incluyendo las cuantizaciones personalizadas K_P de HauhauCS. Es una opción para desarrolladores que necesitan un modelo multimodal de alto rendimiento sin restricciones de contenido, aunque esto implica asumir riesgos éticos y legales.
 
@@ -76,7 +76,7 @@ No se dispone de comparativas de rendimiento numérico porque la variante no ha 
 
 ## Enlaces
 
-- Modelo en HuggingFace (Craftwork333): https://huggingface.co/Craftwork333/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face (Craftwork333): https://huggingface.co/Craftwork333/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo original de HauhauCS: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Blog de Andreas Mausch sobre ejecución en RTX 4070 Ti: https://andreas-mausch.de/blog/2026-06-01-localllm/

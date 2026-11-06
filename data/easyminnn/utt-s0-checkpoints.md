@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UTT (Unified Tactile Tokenizer) es un tokenizador táctil unificado, es decir, un codificador/decodificador de senales de sensores tactiles disenado para ser agnostico al sensor. Lo publica el usuario easyminnn en HuggingFace como un conjunto de checkpoints intermedios de la fase de preentrenamiento S0, liberados mientras el entrenamiento sigue en curso para permitir su evaluacion por parte de la comunidad. No es un modelo de lenguaje ni un modelo multimodal generativo al uso: su proposito es convertir lecturas de sensores tactiles en representaciones tokenizadas y reconstruirlas, de forma que puedan integrarse en pipelines de robotica.
+UTT (Unified Tactile Tokenizer) es un tokenizador táctil unificado, es decir, un codificador/decodificador de senales de sensores tactiles disenado para ser agnostico al sensor. Lo publica el usuario easyminnn en Hugging Face como un conjunto de checkpoints intermedios de la fase de preentrenamiento S0, liberados mientras el entrenamiento sigue en curso para permitir su evaluacion por parte de la comunidad. No es un modelo de lenguaje ni un modelo multimodal generativo al uso: su proposito es convertir lecturas de sensores tactiles en representaciones tokenizadas y reconstruirlas, de forma que puedan integrarse en pipelines de robotica.
 
 El repositorio contiene unicamente pesos en fp32 (sin estado del optimizador) organizados por etapas. La etapa `s0a` mantiene congelado el stem de imagen basado en Sparsh-DINO, mientras que `s0b` lo afina con un learning rate de 0.1x partiendo de `s0a`. El codigo asociado vive en la rama `tactile-tower-tva` del repositorio `jiminlx/cosmos-framework`, bajo la ruta `cosmos_framework/model/generator/tokenizers/utt/`.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- HuggingFace (checkpoints): https://huggingface.co/easyminnn/utt-s0-checkpoints
+- Hugging Face (checkpoints): https://huggingface.co/easyminnn/utt-s0-checkpoints
 - Dataset de entrenamiento: https://huggingface.co/datasets/easyminnn/utt-tactile-prepared
 - Codigo (repositorio Cosmos, rama `tactile-tower-tva`): https://github.com/jiminlx/cosmos-framework
 - Ruta del codigo del tokenizador: `cosmos_framework/model/generator/tokenizers/utt/`

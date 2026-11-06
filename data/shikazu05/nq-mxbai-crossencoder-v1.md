@@ -94,6 +94,6 @@ El modelo es un fine-tuning del reranker de mixedbread. El hermano `nq-deberta-c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikazu05/nq-mxbai-crossencoder-v1
+- Modelo en Hugging Face: https://huggingface.co/shikazu05/nq-mxbai-crossencoder-v1
 - Modelo base: https://huggingface.co/mixedbread-ai/mxbai-rerank-base-v1
 - Reranker hermano: https://huggingface.co/shikazu05/nq-deberta-crossencoder-v1

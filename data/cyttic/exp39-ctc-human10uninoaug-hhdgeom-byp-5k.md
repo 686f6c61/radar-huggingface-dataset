@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k` es un checkpoint de investigación publicado por la organización cyttic en HuggingFace. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `human10`, `uninoaug`, `hhdgeom` y `byp-5k`) y por su tamaño de 87.279.756 parámetros, todo apunta a un modelo de reconocimiento automático de voz (ASR) basado en CTC, probablemente entrenado sobre un subconjunto de datos de habla con variantes aumentadas y sin aumento (`unaug`), con algún tipo de geometría o regularización específica (`hhdgeom`) y un presupuesto de entrenamiento de 5.000 pasos o 5.000 horas (`5k`). No obstante, la model card del autor es la plantilla por defecto de HuggingFace sin rellenar, por lo que ninguna de estas interpretaciones está confirmada por documentación oficial.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k` es un checkpoint de investigación publicado por la organización cyttic en Hugging Face. Por la nomenclatura del identificador (prefijo `ctc`, referencia a `human10`, `uninoaug`, `hhdgeom` y `byp-5k`) y por su tamaño de 87.279.756 parámetros, todo apunta a un modelo de reconocimiento automático de voz (ASR) basado en CTC, probablemente entrenado sobre un subconjunto de datos de habla con variantes aumentadas y sin aumento (`unaug`), con algún tipo de geometría o regularización específica (`hhdgeom`) y un presupuesto de entrenamiento de 5.000 pasos o 5.000 horas (`5k`). No obstante, la model card del autor es la plantilla por defecto de Hugging Face sin rellenar, por lo que ninguna de estas interpretaciones está confirmada por documentación oficial.
 
 El modelo se distribuye en formato safetensors con un tamaño de repositorio de 0,3 GB y licencia MIT. No incluye información sobre arquitectura, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Su relevancia actual es limitada: se trata de un artefacto experimental sin documentación, sin descargas y sin likes, útil únicamente como referencia para reproducir experimentos internos del grupo que lo publicó o para inspeccionar la arquitectura mediante los pesos.
 
@@ -65,10 +65,10 @@ No es posible establecer una comparativa fiable porque se desconoce la tarea exa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k | 87,3 M | no disponible | MIT | HuggingFace |
-| openai/whisper-small | 244 M | 30 s de audio | MIT | HuggingFace |
-| openai/whisper-tiny | 39 M | 30 s de audio | MIT | HuggingFace |
-| facebook/wav2vec2-base-960h | 95 M | no aplica (audio) | MIT | HuggingFace |
+| cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k | 87,3 M | no disponible | MIT | Hugging Face |
+| openai/whisper-small | 244 M | 30 s de audio | MIT | Hugging Face |
+| openai/whisper-tiny | 39 M | 30 s de audio | MIT | Hugging Face |
+| facebook/wav2vec2-base-960h | 95 M | no aplica (audio) | MIT | Hugging Face |
 
 La comparación de rendimiento no está disponible para el modelo de cyttic.
 
@@ -84,6 +84,6 @@ La comparación de rendimiento no está disponible para el modelo de cyttic.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-5k
 - Paper citado en los tags (referencia genérica a la calculadora de impacto ambiental, no específica del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

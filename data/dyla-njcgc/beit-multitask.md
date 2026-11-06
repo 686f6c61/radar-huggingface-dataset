@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dyla-njcgc/beit-multitask es un repositorio de HuggingFace publicado por el usuario Dyla-njcgc que contiene una implementación propia de una arquitectura tipo BEiT (Bidirectional Encoder Representations from Transformers) orientada a tareas multiples ("multitask"). Segun la model card, el artefacto principal es un script `model.py` acompañado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`. El propio autor indica de forma explicita que el checkpoint es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni un release con resultados de benchmarks.
+Dyla-njcgc/beit-multitask es un repositorio de Hugging Face publicado por el usuario Dyla-njcgc que contiene una implementación propia de una arquitectura tipo BEiT (Bidirectional Encoder Representations from Transformers) orientada a tareas multiples ("multitask"). Segun la model card, el artefacto principal es un script `model.py` acompañado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`. El propio autor indica de forma explicita que el checkpoint es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni un release con resultados de benchmarks.
 
 El dato real extraido del fichero safetensors cifra el modelo en 49.600 parametros totales, una cifra extremadamente reducida que contrasta con la escala "huge" declarada en la configuracion de arquitectura. Esa discrepancia es relevante: el repositorio parece describir una receta de arquitectura grande, pero el peso publicado corresponde a una inicializacion de tamano minimo. El tamaño del repositorio es de 0,0 GB y acumula 12 descargas y 0 "likes" en el momento de la consulta.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada como modelo listo para produccion, pero puede r
 | Formato de pesos | safetensors |
 | Escala declarada en config | huge |
 | Optimizador por defecto | RMSprop con planificador "step" |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -87,11 +87,11 @@ No es posible establecer una comparativa rigurosa porque este repositorio no con
 - Riesgo de alucinacion: no evaluable en un modelo sin entrenar; se debe reevaluar tras cualquier entrenamiento real.
 - Licencia MIT: permite uso comercial y modificacion, pero el autor recomienda revisar por separado los terminos de los datos de origen si se combina con datasets externos.
 - Para produccion: no usar este repositorio como modelo final; tratarlo unicamente como esqueleto de implementacion y partir de un entrenamiento propio documentado.
-- Las APIs genericas de HuggingFace no cargaran el modelo sin un adaptador explicito, ya que la implementacion es personalizada.
+- Las APIs genericas de Hugging Face no cargaran el modelo sin un adaptador explicito, ya que la implementacion es personalizada.
 - No hay resultados de benchmarks ni logs de entrenamiento publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dyla-njcgc/beit-multitask
+- Modelo en Hugging Face: https://huggingface.co/Dyla-njcgc/beit-multitask
 
 Nota: la busqueda web realizada no ha devuelto enlaces relevantes sobre este modelo; los unicos resultados obtenidos correspondian a paginas de Google Translate, sin relacion con el repositorio. No se dispone de paper, blog, repositorio de codigo adicional ni demo asociados.

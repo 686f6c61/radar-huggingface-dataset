@@ -18,7 +18,7 @@ La relevancia practica esta en el ahorro de tiempo de inferencia: pasar de un mu
 | Longitud de contexto | No aplica: es un modelo de generacion y edicion de imagen, no procesa contexto de texto en el sentido de un LLM |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada; el repositorio solo entrega pesos en safetensors |
 | Idiomas soportados | Zh (chino), en (ingles) |
-| Licencia | qwen-research (etiquetada como `other` en HuggingFace); ver LICENSE y NOTICE del repositorio |
+| Licencia | qwen-research (etiquetada como `other` en Hugging Face); ver LICENSE y NOTICE del repositorio |
 | Formato de pesos | safetensors (`Qwen-Image-2.1-Fun-Acc-4Step-PDD-T8.safetensors`) |
 
 ## Arquitectura y entrenamiento
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Pasos de muestreo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t8star Qwen-Image-2.1-Fun-Acc-LoRAs-Comfy | Adaptador de 0,3 GB sobre base de ~7B | 4 (fijo) | zh, en | qwen-research | HuggingFace; requiere nodo ComfyUI propio |
-| alibaba-pai Qwen-Image-2.1-Fun-Acc-LoRAs (original) | Mismos 528 tensores, sin metadatos ComfyUI | 4 | zh, en | qwen-research | HuggingFace; no empaquetado para ComfyUI |
-| Qwen/Qwen-Image-2.1 (base, sin adaptador) | ~7B en el componente visual, 32 capas DiT | Calendario completo | zh, en | qwen-research | HuggingFace y assets Comfy-Org |
+| t8star Qwen-Image-2.1-Fun-Acc-LoRAs-Comfy | Adaptador de 0,3 GB sobre base de ~7B | 4 (fijo) | zh, en | qwen-research | Hugging Face; requiere nodo ComfyUI propio |
+| alibaba-pai Qwen-Image-2.1-Fun-Acc-LoRAs (original) | Mismos 528 tensores, sin metadatos ComfyUI | 4 | zh, en | qwen-research | Hugging Face; no empaquetado para ComfyUI |
+| Qwen/Qwen-Image-2.1 (base, sin adaptador) | ~7B en el componente visual, 32 capas DiT | Calendario completo | zh, en | qwen-research | Hugging Face y assets Comfy-Org |
 
 No se dispone de datos de rendimiento comparado entre estas opciones, por lo que la comparativa se limita a parametros, esquema de muestreo, licencia y disponibilidad. La diferencia funcional clave entre las tres filas es el numero de pasos y el empaquetado de integracion, no la calidad medida.
 
@@ -87,16 +87,16 @@ No se dispone de datos de rendimiento comparado entre estas opciones, por lo que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/t8star/Qwen-Image-2.1-Fun-Acc-LoRAs-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/t8star/Qwen-Image-2.1-Fun-Acc-LoRAs-Comfy
 - Adaptador original de Alibaba PAI: https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Acc-LoRAs
 - Nodo ComfyUI del autor: https://github.com/T8mars/Comfyui-Qwen-Image-2.1-Fun-Acc-LoRAs-T8
 - Workflow text-to-image: https://github.com/T8mars/Comfyui-Qwen-Image-2.1-Fun-Acc-LoRAs-T8/blob/main/example_workflows/Qwen-Image-2.1-Fun-Acc-PDD-4Step-T2I.json
 - Workflow de edicion de imagen: https://github.com/T8mars/Comfyui-Qwen-Image-2.1-Fun-Acc-LoRAs-T8/blob/main/example_workflows/Qwen-Image-2.1-Fun-Acc-PDD-4Step-Edit.json
 - Assets base para ComfyUI: https://huggingface.co/Comfy-Org/Qwen-Image-2.1
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio del modelo base en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Tutorial de ComfyUI para Qwen-Image-2.1: https://docs.comfy.org/tutorials/image/qwen/qwen-image-2-1
 - Otro repositorio del autor: https://huggingface.co/t8star/qwen-image-2.1-comfy
-- Perfil del autor en HuggingFace: https://huggingface.co/t8star
+- Perfil del autor en Hugging Face: https://huggingface.co/t8star
 - Canal del autor en Bilibili: https://space.bilibili.com/385085361
 - Canal del autor en YouTube: https://www.youtube.com/@T8star-Aix/

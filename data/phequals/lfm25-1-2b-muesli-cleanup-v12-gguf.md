@@ -104,6 +104,6 @@ La comparación directa solo existe frente al modelo de limpieza anterior del mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-gguf
+- Modelo en Hugging Face: https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-gguf
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Licencia LFM Open License v1.0: fichero `LICENSE` del repositorio (https://huggingface.co/phequals/lfm25-1.2b-muesli-cleanup-v12-gguf/blob/main/LICENSE)

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| drama-3-Q5_K-GGUF (este) | 35,77 B totales / ~3 B activos | No disponible | GGUF Q5_K | Fish Audio Community License 1.0 | HuggingFace, 55 descargas |
-| fishaudio/drama-3 (base) | 35,77 B totales / ~3 B activos | No disponible | Safetensors (presumible) | Fish Audio Community License 1.0 | HuggingFace, modelo oficial |
-| sakasegawa/drama-3-GGUF | 35,77 B totales / ~3 B activos | No disponible | GGUF, cinco cuantizaciones | Fish Audio Community License 1.0 | HuggingFace, repositorio de origen |
+| drama-3-Q5_K-GGUF (este) | 35,77 B totales / ~3 B activos | No disponible | GGUF Q5_K | Fish Audio Community License 1.0 | Hugging Face, 55 descargas |
+| fishaudio/drama-3 (base) | 35,77 B totales / ~3 B activos | No disponible | Safetensors (presumible) | Fish Audio Community License 1.0 | Hugging Face, modelo oficial |
+| sakasegawa/drama-3-GGUF | 35,77 B totales / ~3 B activos | No disponible | GGUF, cinco cuantizaciones | Fish Audio Community License 1.0 | Hugging Face, repositorio de origen |
 
 No se dispone de información sobre otros modelos TTS comparables en la documentación proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de información sobre otros modelos TTS comparables en la document
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jason-might-gogo/drama-3-Q5_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jason-might-gogo/drama-3-Q5_K-GGUF
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Repositorio GGUF de origen: https://huggingface.co/sakasegawa/drama-3-GGUF
 - Motor de inferencia speech.cpp: https://github.com/nyosegawa/speech.cpp

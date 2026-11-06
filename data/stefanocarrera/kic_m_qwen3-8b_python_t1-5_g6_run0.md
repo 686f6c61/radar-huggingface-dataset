@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g6_run0` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez deriva del Qwen3-8B-Base de Alibaba. Lo publica el usuario stefanocarrera en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento orientado a Python (sufijo `_python_`) con una configuracion concreta de hiperparametros (`t1.5`, `g6`, `run0`), aunque la model card no documenta ni el dataset ni los detalles del entrenamiento.
+`stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g6_run0` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez deriva del Qwen3-8B-Base de Alibaba. Lo publica el usuario stefanocarrera en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento orientado a Python (sufijo `_python_`) con una configuracion concreta de hiperparametros (`t1.5`, `g6`, `run0`), aunque la model card no documenta ni el dataset ni los detalles del entrenamiento.
 
 El modelo resuelve, en principio, la adaptacion del Qwen3-8B base a tareas de generacion de codigo Python mediante un fine-tune ligero realizado con Unsloth y TRL. Al partir de la variante Base (no Instruct) y no aplicar, segun la informacion disponible, un post-entrenamiento de alineamiento documentado, se comporta como un modelo de completado de texto mas que como un asistente conversacional listo para produccion.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Prototipado de asistentes de codigo internos: se puede integrar en un endpoint de text-generation-inference (tag presente en el repo) para pruebas internas antes de optar por modelos con model card completa.
 - Base para nuevos fine-tunes: al estar publicado en safetensors y con licencia Apache 2.0, puede servir como punto de partida para ajustes posteriores en dominios especificos.
 - Evaluacion comparativa de tecnicas de cuantizacion: permite medir el impacto de entrenar sobre pesos de 4 bits frente a entrenar en precision completa.
-- Docencia y formacion: util para demostrar el ciclo completo de publicacion de un modelo en HuggingFace, incluidos sus riesgos (model card incompleta, falta de benchmarks).
+- Docencia y formacion: util para demostrar el ciclo completo de publicacion de un modelo en Hugging Face, incluidos sus riesgos (model card incompleta, falta de benchmarks).
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g6_run0 | 8B | no disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Fine-tune sin benchmarks ni model card detallada |
-| Qwen/Qwen3-8B | 8B | contexto largo (segun Qwen) | Apache 2.0 | HuggingFace, ampliamente adoptado | Modelo base oficial, con model card y evaluaciones |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | no disponible | Apache 2.0 | HuggingFace | Version cuantizada a 4 bits para entrenamiento |
-| meta-llama/Llama-3.1-8B | 8B | 128k tokens | Llama 3.1 Community License | HuggingFace | Alternativa densa de 8B con contexto largo y amplia comunidad |
+| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g6_run0 | 8B | no disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Fine-tune sin benchmarks ni model card detallada |
+| Qwen/Qwen3-8B | 8B | contexto largo (segun Qwen) | Apache 2.0 | Hugging Face, ampliamente adoptado | Modelo base oficial, con model card y evaluaciones |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | 8B | no disponible | Apache 2.0 | Hugging Face | Version cuantizada a 4 bits para entrenamiento |
+| meta-llama/Llama-3.1-8B | 8B | 128k tokens | Llama 3.1 Community License | Hugging Face | Alternativa densa de 8B con contexto largo y amplia comunidad |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g6_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g6_run0
 - Modelo base de entrenamiento: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - Qwen3 (familia oficial): https://huggingface.co/Qwen

@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en que permite ejecutar un modelo denso de 33
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo base está etiquetada como `llama` en HuggingFace, lo que indica un transformer decoder-only compatible con el ecosistema LLaMA. No se dispone de información pública en la ficha sobre el número de capas, cabezas de atención, dimensiones ocultas ni sobre el proceso de preentrenamiento del modelo original Nanbeige4.3-33B (tokens de entrenamiento, composición del corpus, RLHF/DPO), por lo que estos datos no están disponibles.
+La arquitectura del modelo base está etiquetada como `llama` en Hugging Face, lo que indica un transformer decoder-only compatible con el ecosistema LLaMA. No se dispone de información pública en la ficha sobre el número de capas, cabezas de atención, dimensiones ocultas ni sobre el proceso de preentrenamiento del modelo original Nanbeige4.3-33B (tokens de entrenamiento, composición del corpus, RLHF/DPO), por lo que estos datos no están disponibles.
 
 En cuanto a la cuantización, se han publicado detalles precisos: la conversión se realizó directamente desde los pesos BF16 originales (no desde cuantizaciones intermedias oQ8e u oQ6e), usando el método oQ4e de oMLX en modo afín con group size 64. Se aplicó calibración con el dataset `oqe_code_multilingual` (128 muestras de 512 tokens) y se reutilizó la caché de imatrix recogida para la variante oQ8e, ponderando las 364 entradas de proyección del transformer; el `lm_head` no recibió ponderación imatrix. Algunos módulos seleccionados usan precisión superior, según se detalla en el `config.json`. Se conservan el tokenizador y la plantilla de chat originales.
 

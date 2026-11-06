@@ -83,7 +83,7 @@ La comparación relevante es con el propio openai/whisper-base: mismo modelo, di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ezequiel-andrade/faster-whisper-base
+- Hugging Face: https://huggingface.co/ezequiel-andrade/faster-whisper-base
 - Modelo original: https://huggingface.co/openai/whisper-base
 - CTranslate2: https://github.com/OpenNMT/CTranslate2
 - faster-whisper: https://github.com/systran/faster-whisper

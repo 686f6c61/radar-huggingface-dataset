@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cuma63/serbestvideo-ai` es un repositorio publicado en HuggingFace por el usuario Cuma63 bajo la licencia CreativeML OpenRAIL-M. La informacion publica disponible es minima: no se declara pipeline de inferencia, no se especifican idiomas soportados, no hay model card descriptiva mas alla del bloque de metadatos YAML con la licencia, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
+`Cuma63/serbestvideo-ai` es un repositorio publicado en Hugging Face por el usuario Cuma63 bajo la licencia CreativeML OpenRAIL-M. La informacion publica disponible es minima: no se declara pipeline de inferencia, no se especifican idiomas soportados, no hay model card descriptiva mas alla del bloque de metadatos YAML con la licencia, y el repositorio registra cero descargas y cero likes en el momento de la consulta.
 
 El nombre del repositorio sugiere un proposito relacionado con video (el sufijo "video" y el prefijo "serbest", que en turco significa "libre" o "gratuito"), pero no hay ningun dato tecnico publicado que permita confirmar la modalidad, la arquitectura, el tamano ni el tipo de tareas para las que fue entrenado. No se puede verificar si se trata de un modelo de difusion para generacion de video, de un modelo multimodal de comprension de video, de un extractor de caracteristicas o de un repositorio auxiliar.
 
@@ -21,7 +21,7 @@ Dado que el unico dato verificable es la licencia y el identificador, esta ficha
 | Licencia | creativeml-openrail-m |
 | Formato de pesos | no disponible |
 
-Otros metadatos declarados en HuggingFace: autor `Cuma63`, region `us`, pipeline no disponible, cero descargas, cero likes, fecha de creacion y ultima actualizacion 2026-10-15T22:08:11Z.
+Otros metadatos declarados en Hugging Face: autor `Cuma63`, region `us`, pipeline no disponible, cero descargas, cero likes, fecha de creacion y ultima actualizacion 2026-10-15T22:08:11Z.
 
 ## Arquitectura y entrenamiento
 
@@ -44,7 +44,7 @@ No se ha publicado informacion sobre las capacidades del modelo en la informacio
 
 No es posible proponer casos de uso concretos y realistas sin conocer la modalidad, el tamano, la licencia de uso efectiva y el rendimiento del modelo. La unica informacion publicada es el identificador y la licencia, lo que no permite justificar tecnicamente ninguna aplicacion.
 
-A modo de orientacion general, y siempre condicionado a que el autor publique documentacion verificable, un repositorio con el sufijo "video" en HuggingFace podria corresponder a escenarios como generacion de clips cortos, edicion asistida por texto, descripcion automatica de video o extraccion de caracteristicas para busqueda semantica. Ninguno de estos escenarios puede atribuirse a este repositorio con los datos disponibles.
+A modo de orientacion general, y siempre condicionado a que el autor publique documentacion verificable, un repositorio con el sufijo "video" en Hugging Face podria corresponder a escenarios como generacion de clips cortos, edicion asistida por texto, descripcion automatica de video o extraccion de caracteristicas para busqueda semantica. Ninguno de estos escenarios puede atribuirse a este repositorio con los datos disponibles.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cuma63/serbestvideo-ai
+- Hugging Face: https://huggingface.co/Cuma63/serbestvideo-ai
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

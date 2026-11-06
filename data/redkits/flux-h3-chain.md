@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`redkits/flux-h3-chain` es un pipeline de produccion en dos etapas que combina un modelo de generacion de imagenes como generador de keyframes y un modelo de video para producir clips cortos con audio nativo. Esta desarrollado por el usuario redkits y se publica en HuggingFace como una cadena de trabajo lista para usar, pensada para entornos de produccion donde se necesita pasar de un prompt de texto a un video finalizado.
+`redkits/flux-h3-chain` es un pipeline de produccion en dos etapas que combina un modelo de generacion de imagenes como generador de keyframes y un modelo de video para producir clips cortos con audio nativo. Esta desarrollado por el usuario redkits y se publica en Hugging Face como una cadena de trabajo lista para usar, pensada para entornos de produccion donde se necesita pasar de un prompt de texto a un video finalizado.
 
 La primera etapa utiliza dos backends intercambiables: `Z-Image-Turbo`, un modelo de 6B parametros centrado en velocidad, o `FLUX.2-klein-9B`, un modelo de 9B que incluye un encoder de texto abliterated destinado a eliminar rechazos a nivel de imagenes. La segunda etapa delega en `MiniMax-H3`, un modelo de video que recibe el keyframe y genera entre 5 y 15 segundos de video a 24 fps, con audio estereo sincronizado a 32 kHz y resolucion de hasta 2K, todo multiplexado en MP4.
 
@@ -73,7 +73,7 @@ No se ha encontrado informacion comparable sobre modelos que ofrezcan un pipelin
 
 - La duracion del video se limita a 5-15 segundos a 24 fps, y el numero de frames se ajusta a la formula `17*n + 5`.
 - Las dimensiones del lienzo deben ser multiplos de 32.
-- El repositorio de `MiniMax-H3` es un modelo gated en HuggingFace, por lo que se necesita un token de acceso y aceptar las condiciones del autor.
+- El repositorio de `MiniMax-H3` es un modelo gated en Hugging Face, por lo que se necesita un token de acceso y aceptar las condiciones del autor.
 - La integracion depende de difusers main, lo que puede generar incompatibilidades si se usa una version estable anterior.
 - No se soporta CFG ni prompt negativo; la guia esta destilada en los pesos de MiniMax-H3.
 - La ruta "uncensored" con encoder abliterated puede generar contenido no deseado sin filtros; debe usarse con responsabilidad.
@@ -83,7 +83,7 @@ No se ha encontrado informacion comparable sobre modelos que ofrezcan un pipelin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/redkits/flux-h3-chain
+- Hugging Face: https://huggingface.co/redkits/flux-h3-chain
 - Repo oficial de FLUX: https://github.com/black-forest-labs/flux
 - Web de FLUX 3: https://flux3.dev/
 - MiniMax-H3 (gated): https://huggingface.co/MiniMaxAI/MiniMax-H3

@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos abliterated de tamaño similar para una 
 
 ## Enlaces
 
-- Modelo HuggingFace: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-BF16
+- Modelo Hugging Face: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-BF16
 - Versión GGUF: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-GGUF
 - Versión MLX 4-bit: https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-4bit
 - Versión NVFP4 (mencionada en la model card): https://huggingface.co/Blackfrost-Research/Muse-Glimmer-30B-Abliterated-NVFP4

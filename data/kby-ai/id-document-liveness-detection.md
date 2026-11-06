@@ -70,7 +70,7 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kby-ai/id-document-liveness-detection
+- Hugging Face: https://huggingface.co/kby-ai/id-document-liveness-detection
 - Sitio web del producto: https://kby-ai.com/id-document-liveness-detection-sdk/
 - Repositorio GitHub del Docker: https://github.com/kby-ai/ID-Document-Liveness-Detection-Docker
 - Repositorio GitHub principal de KBY-AI: https://github.com/kby-ai/

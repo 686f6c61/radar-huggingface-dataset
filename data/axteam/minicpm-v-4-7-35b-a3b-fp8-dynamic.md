@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/MiniCPM-V-4.7-35B-A3B-FP8-dynamic | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors FP8 (compressed-tensors) | HuggingFace, 0 descargas |
-| openbmb/MiniCPM-V-4.7-35B-A3B (base) | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors BF16 | HuggingFace, oficial |
-| openbmb/MiniCPM-V-4.7-35B-A3B-FP8 | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors FP8 | HuggingFace, oficial |
+| axteam/MiniCPM-V-4.7-35B-A3B-FP8-dynamic | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors FP8 (compressed-tensors) | Hugging Face, 0 descargas |
+| openbmb/MiniCPM-V-4.7-35B-A3B (base) | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors BF16 | Hugging Face, oficial |
+| openbmb/MiniCPM-V-4.7-35B-A3B-FP8 | 35,2 B totales, ~3 B activos | no disponible | Apache-2.0 | safetensors FP8 | Hugging Face, oficial |
 | Qwen3.6 35B-A3B | 35 B totales, ~3 B activos (por nombre) | no disponible | no disponible | no disponible | Referencia citada por OpenBMB en su comparativa |
 
 La diferencia práctica entre este repositorio y el FP8 oficial de OpenBMB no se puede evaluar con la información disponible: no se publican ni el esquema exacto del oficial ni métricas comparables. Frente al base BF16, la ventaja es el menor tamaño en disco y el soporte de kernels FP8 en vLLM; el coste es una pérdida de calidad no cuantificada públicamente.

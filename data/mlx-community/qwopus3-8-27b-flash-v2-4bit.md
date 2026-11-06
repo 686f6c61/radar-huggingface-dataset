@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Qwopus3.8-27B-Flash-V2-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Qwopus3.8-27B-Flash-V2-4bit
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2
 - Libreria de conversion e inferencia mlx-vlm (referenciada en la model card como mlx-vlm 0.4.4): no se proporciona URL en la informacion disponible
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a medios de prensa alemanes sin relacion con el modelo.

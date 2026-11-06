@@ -26,8 +26,8 @@ La relevancia actual del proyecto es que aborda el problema de gobernanza de age
 | Modelo subyacente | Ninguno; el servidor nunca llama a un LLM |
 | Estado global | `$HAI_HOME` (por defecto `~/.hai`) |
 | Estado por proyecto | `<project>/Projek-Managment/` |
-| Descargas en HuggingFace | 0 |
-| Likes en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
+| Likes en Hugging Face | 0 |
 | Fecha de creacion | 2026-09-16 |
 
 ## Arquitectura y entrenamiento
@@ -87,18 +87,18 @@ No se dispone de datos de rendimiento ni de especificaciones de alternativas com
 - Licencia no disponible: no hay informacion que permita confirmar si el uso comercial esta autorizado, por lo que conviene aclararlo con el autor antes de adoptarlo en produccion.
 - No es un modelo: no genera texto, no razona, no ejecuta codigo por si mismo y no ofrece ninguna capacidad cognitiva; toda la inteligencia reside en el cliente o en el LLM que este use.
 - Madurez temprana: se declara explicitamente como v0.1, con 23 herramientas y una sola version de motor de estado; no se documentan garantias de estabilidad de API.
-- El repositorio en HuggingFace acumula 0 descargas y 0 likes, sin pipeline declarado, lo que sugiere ausencia de validacion externa por terceros.
+- El repositorio en Hugging Face acumula 0 descargas y 0 likes, sin pipeline declarado, lo que sugiere ausencia de validacion externa por terceros.
 - El modo `HAI_OWNER_GATE=ack_legacy` degrada la garantia de aprobacion a un sistema de honor autoafirmado por el agente; usarlo elimina la separacion real entre agente y propietario.
 - La owner gate depende de canales externos (fichero local o ntfy): un fallo de entrega del codigo puede bloquear acciones legitimas como aceptar el siguiente paso, recontratar o cerrar una mision.
 - Persistencia basada en sistema de ficheros (`$HAI_HOME` y `<project>/Projek-Managment/`), lo que implica dependencia del disco local y de permisos correctos; no se documentan mecanismos de replicacion, backup o concurrencia distribuida.
 - El estado y los contratos se almacenan en rutas del equipo del usuario, lo que exige politicas propias de copia de seguridad y de control de acceso si se maneja informacion sensible.
-- Posible confusion de nomenclatura: el identificador del repositorio en HuggingFace es `smlflg/hai-mcp-public`, mientras que la model card se refiere al proyecto como `HAI-MCP`, sin que se detalle la relacion exacta entre ambos artefactos.
+- Posible confusion de nomenclatura: el identificador del repositorio en Hugging Face es `smlflg/hai-mcp-public`, mientras que la model card se refiere al proyecto como `HAI-MCP`, sin que se detalle la relacion exacta entre ambos artefactos.
 - Sesgos conocidos y riesgo de alucinacion: no aplicable al servidor; el riesgo de alucinacion corresponde al LLM cliente que consuma las herramientas.
 - Idiomas soportados e internacionalizacion: no disponibles; las herramientas y la documentacion citada estan en ingles.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/hai-mcp-public
+- Hugging Face: https://huggingface.co/smlflg/hai-mcp-public
 - Web canonica del proyecto: https://www.human-agent-interface.com/
 - Pagina canonica de HAI-MCP: https://www.human-agent-interface.com/hai-mcp/
 - Sobre Samuel Fleig: https://www.human-agent-interface.com/samuel/

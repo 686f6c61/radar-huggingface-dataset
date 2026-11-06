@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nayoungoh/franka-pnp-1-2-base-demospeedup` es un modelo alojado en HuggingFace por el usuario nayoungoh, publicado y actualizado el 19 de septiembre de 2026. Por su nombre, sus etiquetas (`gr00t_n1_5`, `safetensors`) y su tamano, se trata con alta probabilidad de un modelo de vision-lenguaje-accion (VLA) orientado a robotica, derivado de la familia NVIDIA Isaac GR00T N1.5, y ajustado para una tarea concreta de pick-and-place sobre un brazo Franka.
+`nayoungoh/franka-pnp-1-2-base-demospeedup` es un modelo alojado en Hugging Face por el usuario nayoungoh, publicado y actualizado el 19 de septiembre de 2026. Por su nombre, sus etiquetas (`gr00t_n1_5`, `safetensors`) y su tamano, se trata con alta probabilidad de un modelo de vision-lenguaje-accion (VLA) orientado a robotica, derivado de la familia NVIDIA Isaac GR00T N1.5, y ajustado para una tarea concreta de pick-and-place sobre un brazo Franka.
 
 El modelo cuenta con 2.724.114.368 parametros reales (aproximadamente 2,72 mil millones), declarados en los pesos safetensors, y el repositorio ocupa 7,6 GB. La etiqueta `gr00t_n1_5` apunta a la arquitectura de NVIDIA para control de robots humanoides y brazos, que combina un backbone de vision-lenguaje con una cabecera de generacion de acciones. El sufijo `base-demospeedup` sugiere una variante base entrenada sobre demostraciones con algun tipo de aceleracion de las mismas.
 
@@ -70,7 +70,7 @@ Las siguientes cifras son estimaciones basadas en el numero de parametros declar
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nayoungoh/franka-pnp-1-2-base-demospeedup | 2,72 mil millones | No disponible | VLA (probable, GR00T N1.5) | No disponible | HuggingFace, 12 descargas |
+| nayoungoh/franka-pnp-1-2-base-demospeedup | 2,72 mil millones | No disponible | VLA (probable, GR00T N1.5) | No disponible | Hugging Face, 12 descargas |
 | NVIDIA Isaac GR00T N1.5 | En torno a 3 mil millones (referencia de familia) | No disponible | VLA | No disponible en esta ficha | Fundacional de NVIDIA |
 | OpenVLA | En torno a 7 mil millones | No disponible | VLA | Abierta (referencia de familia) | Codigo abierto |
 
@@ -89,5 +89,5 @@ Los datos de los modelos comparables son referencias generales de sus respectiva
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nayoungoh/franka-pnp-1-2-base-demospeedup
+- Hugging Face: https://huggingface.co/nayoungoh/franka-pnp-1-2-base-demospeedup
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/mradermacher/Gemma-4-E4B-it-Fable-Distill-GGUF)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/mradermacher/Gemma-4-E4B-it-Fable-Distill-GGUF)
 - [Modelo base: armand0e/Gemma-4-E4B-it-Fable-Distill](https://huggingface.co/armand0e/Gemma-4-E4B-it-Fable-Distill)
 - [Página de Gemma 4 E4B en gemma4.dev](https://gemma4.dev/models/gemma-4-e4b)
 - [Model card oficial de Gemma 4](https://ai.google.dev/gemma/docs/core/model_card_4)

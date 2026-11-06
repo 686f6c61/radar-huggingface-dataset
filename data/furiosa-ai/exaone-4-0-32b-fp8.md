@@ -77,7 +77,7 @@ La comparativa con alternativas de la misma categoria (modelos de 32B como Qwen2
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/EXAONE-4.0-32B-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/EXAONE-4.0-32B-FP8
 - Modelo base upstream: https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-FP8
 - Licencia EXAONE: https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-32B-FP8/blob/main/LICENSE
 - Documentacion Furiosa-LLM para EXAONE 4.0: https://developer.furiosa.ai/latest/en/furiosa_llm/models/exaone-4.0.html

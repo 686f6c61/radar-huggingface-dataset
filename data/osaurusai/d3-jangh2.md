@@ -89,12 +89,12 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de latencia o throug
 
 | Modelo | Parámetros | Contexto | Formato / memoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d3-JANGH2 (este bundle) | 26,09 B origen | no disponible | MLX JANG, 14,5 GB | Apache-2.0 | HuggingFace (MLX) |
-| d3-JANG_4M | 26,09 B origen | no disponible | MLX JANG, 19,3 GB | Apache-2.0 | HuggingFace (MLX) |
-| d3-JANG_6M | 26,09 B origen | no disponible | MLX JANG, 23,6 GB | Apache-2.0 | HuggingFace (MLX) |
-| vllm-sr/d3 (BF16) | 26,09 B | no disponible | BF16, 52,2 GB | Apache-2.0 | HuggingFace |
-| Paquete W4A16 GPTQ del proveedor | 26,09 B origen | no disponible | GPTQ grupo 128, 16,4 GB | Apache-2.0 | HuggingFace |
-| Paquete FP8 del proveedor | 26,09 B origen | no disponible | FP8, 31,9 GB | Apache-2.0 | HuggingFace |
+| d3-JANGH2 (este bundle) | 26,09 B origen | no disponible | MLX JANG, 14,5 GB | Apache-2.0 | Hugging Face (MLX) |
+| d3-JANG_4M | 26,09 B origen | no disponible | MLX JANG, 19,3 GB | Apache-2.0 | Hugging Face (MLX) |
+| d3-JANG_6M | 26,09 B origen | no disponible | MLX JANG, 23,6 GB | Apache-2.0 | Hugging Face (MLX) |
+| vllm-sr/d3 (BF16) | 26,09 B | no disponible | BF16, 52,2 GB | Apache-2.0 | Hugging Face |
+| Paquete W4A16 GPTQ del proveedor | 26,09 B origen | no disponible | GPTQ grupo 128, 16,4 GB | Apache-2.0 | Hugging Face |
+| Paquete FP8 del proveedor | 26,09 B origen | no disponible | FP8, 31,9 GB | Apache-2.0 | Hugging Face |
 
 No se dispone de información sobre modelos de decisión de terceros comparables (misma tarea de clasificación tipada con cabeza de 255 opciones) en el material proporcionado. Los paquetes del proveedor están pensados para NVIDIA/AMD y sus cifras de concordancia provienen de las 14.031 peticiones completas del mismo dataset, con su propio mapeo de peticiones y hardware, por lo que no son estrictamente comparables con las 2.000 peticiones usadas aquí.
 
@@ -112,7 +112,7 @@ No se dispone de información sobre modelos de decisión de terceros comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/d3-JANGH2
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/d3-JANGH2
 - Modelo base: https://huggingface.co/vllm-sr/d3
 - Modelo original de partida: https://huggingface.co/Qwen/Qwen3.8-27B
 - Runtime Osaurus: https://osaurus.ai

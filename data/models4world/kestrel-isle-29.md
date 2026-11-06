@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `models4world/kestrel-isle-29` es un adaptador LoRA publicado en HuggingFace, diseñado para la generación de texto. Fue creado el 18 de agosto de 2026 y se basa en el modelo `models4world/maple-signal-64`, del que se desconoce su arquitectura y especificaciones. El repositorio tiene un tamaño de 11,2 GB, lo que sugiere que contiene pesos de un adaptador de gran tamaño, aunque no se proporciona información adicional sobre su entrenamiento, capacidades o rendimiento.
+El modelo `models4world/kestrel-isle-29` es un adaptador LoRA publicado en Hugging Face, diseñado para la generación de texto. Fue creado el 18 de agosto de 2026 y se basa en el modelo `models4world/maple-signal-64`, del que se desconoce su arquitectura y especificaciones. El repositorio tiene un tamaño de 11,2 GB, lo que sugiere que contiene pesos de un adaptador de gran tamaño, aunque no se proporciona información adicional sobre su entrenamiento, capacidades o rendimiento.
 
 La model card asociada está prácticamente vacía: todos los campos relevantes (descripción, datos de entrenamiento, licencia, idiomas, etc.) aparecen como "[More Information Needed]". Esto hace que la ficha sea extremadamente limitada en cuanto a datos verificables. A pesar de ello, el modelo está etiquetado con `pipeline_tag: text-generation` y utiliza la librería PEFT, lo que confirma que se trata de un adaptador de tipo LoRA sobre un modelo base no documentado.
 
-Dada la ausencia de información pública, esta ficha se limita a reflejar los datos disponibles en el repositorio de HuggingFace y a señalar explícitamente todo aquello que no se puede verificar. No se han encontrado resultados de benchmarks, papers, demos ni documentación adicional en la web.
+Dada la ausencia de información pública, esta ficha se limita a reflejar los datos disponibles en el repositorio de Hugging Face y a señalar explícitamente todo aquello que no se puede verificar. No se han encontrado resultados de benchmarks, papers, demos ni documentación adicional en la web.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No disponible. No se conocen modelos comparables de la misma categoria (adaptado
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/models4world/kestrel-isle-29
+- Repositorio del modelo en Hugging Face: https://huggingface.co/models4world/kestrel-isle-29
 - Modelo base (sin documentacion adicional): https://huggingface.co/models4world/maple-signal-64
 
 No se han encontrado papers, blogs, demos ni otros recursos relacionados en la busqueda web.

@@ -55,7 +55,7 @@ No disponible. No se ha identificado ningún modelo comparable en la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HawkEyesAI/BAT_Master
+- Repositorio Hugging Face: https://huggingface.co/HawkEyesAI/BAT_Master
 - Repositorio alternativo (mismo autor, también gated): https://huggingface.co/HawkEyesAI/BAT
 - Proyecto Kitware/batai (detección de murciélagos, no confirmado como relacionado): https://github.com/Kitware/batai
 - Guía de instalación de "Bat AI" (sin relación confirmada): https://www.aibase.com/repos/project/bat

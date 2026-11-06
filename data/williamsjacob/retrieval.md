@@ -41,7 +41,7 @@ Dado que el modelo no está entrenado, no existen casos de uso prácticos reales
 - **Pruebas de humo y validación de código**: ejecutar `python eval.py --help` y el bloque `__main__` para comprobar que la implementación de Blip funciona correctamente en un entorno de desarrollo.
 - **Base para investigación académica**: servir como punto de partida para implementar y entrenar un modelo de *retrieval* con arquitectura Blip, partiendo de una configuración pequeña y transparente.
 - **Estudio de arquitecturas de atención**: analizar el uso de atención *multi-query* y *co-attention* en un contexto de recuperación de información, sin necesidad de recursos computacionales elevados.
-- **Desarrollo de adaptadores**: dado que la implementación es personalizada, se puede trabajar en la creación de adaptadores para cargarlo con APIs genéricas de HuggingFace.
+- **Desarrollo de adaptadores**: dado que la implementación es personalizada, se puede trabajar en la creación de adaptadores para cargarlo con APIs genéricas de Hugging Face.
 - **Experimentos de entrenamiento**: utilizar el checkpoint de inicialización para probar pipelines de entrenamiento con RMSProp y *onecycle*, comparando diferentes semillas y configuraciones.
 - **Evaluación metodológica**: seguir las recomendaciones del autor para evaluar en Flickr30k con al menos tres semillas y una línea base de capacidad equivalente, aunque se requerirá entrenamiento previo.
 
@@ -71,5 +71,5 @@ No disponible. No existen modelos comparables en la misma categoría porque este
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Williamsjacob/retrieval)
+- [Repositorio en Hugging Face](https://huggingface.co/Williamsjacob/retrieval)
 - [ColBERT (referencia de modelos de retrieval, no relacionado directamente)](https://github.com/stanford-futuredata/ColBERT)

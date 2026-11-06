@@ -56,7 +56,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - El motor zunzuncito es específico y no está ampliamente adoptado, lo que limita la interoperabilidad con otros ecosistemas.
 
 ## Enlaces
-- Modelo en HuggingFace: [mseri/zunzuncito-maple-preview-2bit](https://huggingface.co/mseri/zunzuncito-maple-preview-2bit)
+- Modelo en Hugging Face: [mseri/zunzuncito-maple-preview-2bit](https://huggingface.co/mseri/zunzuncito-maple-preview-2bit)
 - Modelo base: [deepgrove/maple-preview-2bit-mlx](https://huggingface.co/deepgrove/maple-preview-2bit-mlx)
 - Modelo original: [deepgrove/maple-preview](https://huggingface.co/deepgrove/maple-preview)
 - Motor zunzuncito: https://github.com/mseri/zunzuncito

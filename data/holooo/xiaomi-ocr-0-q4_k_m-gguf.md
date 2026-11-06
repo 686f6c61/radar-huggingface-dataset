@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de comparaciones publicadas en la inform
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/holooo/Xiaomi-OCR-0-Q4_K_M-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/holooo/Xiaomi-OCR-0-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

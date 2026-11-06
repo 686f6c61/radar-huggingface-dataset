@@ -70,8 +70,8 @@ Prueba end-to-end en el modelo fusionado (Apple M4 Pro, MPS, bf16): 5 de 5 progr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QwenBend (este) | 3.97B fusionado (0.8B base + motor) | no disponible | LoRA sobre Qwen3.5-0.8B + motor de ejecucion Bend2 in-weights | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-0.8B (base) | 0.8B | no disponible | Transformer denso de proposito general | Apache-2.0 (segun el autor) | HuggingFace |
+| QwenBend (este) | 3.97B fusionado (0.8B base + motor) | no disponible | LoRA sobre Qwen3.5-0.8B + motor de ejecucion Bend2 in-weights | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-0.8B (base) | 0.8B | no disponible | Transformer denso de proposito general | Apache-2.0 (segun el autor) | Hugging Face |
 | Alternativas de sintesis de codigo de ~1B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de terceros comparables en la informacion proporcionada; la unica comparacion publicada es contra el modelo base sin adaptador.
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks de terceros comparables en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/voidash/qwenbend
+- Hugging Face: https://huggingface.co/voidash/qwenbend
 - Repositorio GitHub (codigo, notas de diseno y demo de 15 segundos): https://github.com/voidash/qwenbend
 - Bend2 (HigherOrderCO): https://github.com/HigherOrderCO/Bend
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

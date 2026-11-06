@@ -83,8 +83,8 @@ En clonacion de voz se realizo una evaluacion sobre el corpus JVS (100 hablantes
 
 | Modelo | Parametros | Contexto / duracion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Drama-3-Japanese | 35,9 mil millones | no disponible; 2048 frames (unos 95,1 s) como tope en la evaluacion | japones | fish-audio-community-license | HuggingFace, 176 descargas, demo Space |
-| Fish Audio Drama 3 (base) | no disponible en la informacion proporcionada | mismo esquema de frames acusticos | no disponible en la informacion proporcionada | fish-audio-community-license | HuggingFace (fishaudio/drama-3) |
+| Drama-3-Japanese | 35,9 mil millones | no disponible; 2048 frames (unos 95,1 s) como tope en la evaluacion | japones | fish-audio-community-license | Hugging Face, 176 descargas, demo Space |
+| Fish Audio Drama 3 (base) | no disponible en la informacion proporcionada | mismo esquema de frames acusticos | no disponible en la informacion proporcionada | fish-audio-community-license | Hugging Face (fishaudio/drama-3) |
 
 No se dispone de datos verificables en la informacion proporcionada sobre otros modelos de TTS comparables (parametros, contexto, resultados de benchmarks o licencia), por lo que no se incluye una comparativa adicional: los datos serian inventados. La unica comparacion con cifras reales es la que enfrenta a este ajuste con su modelo base en el benchmark JKYB-Parakeet, recogida en la seccion anterior.
 
@@ -102,7 +102,7 @@ No se dispone de datos verificables en la informacion proporcionada sobre otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aratako/Drama-3-Japanese
+- Modelo en Hugging Face: https://huggingface.co/Aratako/Drama-3-Japanese
 - Modelo base (Fish Audio Drama 3): https://huggingface.co/fishaudio/drama-3
 - Demo Space: https://huggingface.co/spaces/Aratako/Drama-3-Japanese-Demo
 - Lista de etiquetas en linea: https://huggingface.co/Aratako/Drama-3-Japanese/blob/main/TAG_LIST.md

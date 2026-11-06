@@ -97,8 +97,8 @@ El unico modelo estrictamente comparable es el brazo B del mismo experimento, ya
 
 | Modelo | Parametros | Contexto | Tokenizador | Bits/byte val | Bits/byte W | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| TokenizerTest-32m-A | 38,87M efectivos | 1024 | Fabryka AI BPE, 32.000 | 1,0583 | 1,0781 | CC BY-SA 4.0 | HuggingFace |
-| TokenizerTest-32m-B | 38,87M efectivos | 1024 | stubbornGuy, 32.000 | 1,0622 | 1,0883 | CC BY-SA 4.0 | HuggingFace |
+| TokenizerTest-32m-A | 38,87M efectivos | 1024 | Fabryka AI BPE, 32.000 | 1,0583 | 1,0781 | CC BY-SA 4.0 | Hugging Face |
+| TokenizerTest-32m-B | 38,87M efectivos | 1024 | stubbornGuy, 32.000 | 1,0622 | 1,0883 | CC BY-SA 4.0 | Hugging Face |
 
 Frente a otros modelos base pequenos en polaco, no disponible: no hay en la informacion proporcionada resultados comparables en bits por byte ni en benchmarks de tareas, y la metrica publicada solo es valida dentro de este experimento concreto.
 
@@ -117,7 +117,7 @@ Frente a otros modelos base pequenos en polaco, no disponible: no hay en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace (brazo A): https://huggingface.co/SlayerLab/TokenizerTest-32m-A
+- Modelo en Hugging Face (brazo A): https://huggingface.co/SlayerLab/TokenizerTest-32m-A
 - Modelo companero (brazo B): https://huggingface.co/SlayerLab/TokenizerTest-32m-B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlayerLab/slayer-pl-8x3b
 - Repositorio con la arquitectura de referencia (mismo codigo): https://huggingface.co/SlayerLab/GoLLeM-v6-250M

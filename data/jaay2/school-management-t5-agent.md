@@ -20,7 +20,7 @@ La relevancia de esta ficha es acotada: se trata de un experimento de ajuste fin
 | Idiomas soportados | en (inglés) |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Pipeline declarado | text2text-generation (la ficha de HuggingFace indica text-generation) |
+| Pipeline declarado | text2text-generation (la ficha de Hugging Face indica text-generation) |
 | Modelo base | google/flan-t5-small |
 | Muestras de entrenamiento | 100 |
 | Muestras de validación | 10 |
@@ -98,9 +98,9 @@ La comparación con `flan-t5-small` es la más directa: el modelo aquí descrito
 - Limitación de contexto: no documentada; la familia T5 estándar opera con 512 tokens, lo que restringe consultas largas o conversaciones multi-turno.
 - Restricciones de licencia: MIT permite uso comercial y modificación, pero el modelo base `google/flan-t5-small` está bajo Apache 2.0, cuyas condiciones deben respetarse en la redistribución.
 - Caveat para producción: no debe desplegarse como generador autónomo de consultas SQL sin validación humana o restricciones gramaticales, dado el riesgo de generar DSL inválida o referencias a objetos inexistentes.
-- El pipeline declarado en la ficha de HuggingFace (`text-generation`) no coincide con el de la model card (`text2text-generation`), lo que puede causar problemas de carga automática en algunas herramientas.
+- El pipeline declarado en la ficha de Hugging Face (`text-generation`) no coincide con el de la model card (`text2text-generation`), lo que puede causar problemas de carga automática en algunas herramientas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaay2/school-management-t5-agent
+- Modelo en Hugging Face: https://huggingface.co/jaay2/school-management-t5-agent
 - Modelo base: https://huggingface.co/google/flan-t5-small

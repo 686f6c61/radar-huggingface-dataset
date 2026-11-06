@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer for Retrieval es un repositorio experimental publicado por el usuario matthewwalkerport en HuggingFace. No se trata de un modelo entrenado ni evaluado, sino de un armazon de codigo (codebase) que implementa una arquitectura Efficientformer orientada a tareas de retrieval, acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor indica explicitamente en la model card que no se reclama ninguna puntuacion de benchmark y que la implementacion debe tratarse como un punto de partida experimental.
+Efficientformer for Retrieval es un repositorio experimental publicado por el usuario matthewwalkerport en Hugging Face. No se trata de un modelo entrenado ni evaluado, sino de un armazon de codigo (codebase) que implementa una arquitectura Efficientformer orientada a tareas de retrieval, acompanado de un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests). El propio autor indica explicitamente en la model card que no se reclama ninguna puntuacion de benchmark y que la implementacion debe tratarse como un punto de partida experimental.
 
 El repositorio incluye cuatro artefactos principales: `model.py` (implementacion y ejemplo ejecutable), `config.json` (ajustes de arquitectura generados), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (inicializacion). La configuracion declarada corresponde a la escala "large" con atencion de ventana deslizante (sliding window), fusion mediante concatenacion con MLP, activacion mish y normalizacion groupnorm. La receta de entrenamiento por defecto usa SGD con un scheduler exponencial, valores que el autor describe como puntos de partida del script y no como evidencia de una ejecucion completada.
 
@@ -45,7 +45,7 @@ No hay evidencia de entrenamiento. La model card afirma de forma explicita que `
 - Pruebas de humo en CI: el checkpoint de inicializacion permite verificar que el pipeline de carga de safetensors, la construccion del grafo y la ejecucion forward funcionan en cada commit, sin coste de GPU relevante dado el tamano del artefacto.
 - Andamiaje de baselines de retrieval: el repositorio sirve como plantilla para montar un experimento comparable sobre Flickr30k, tal y como sugiere el autor, antes de invertir en un entrenamiento completo.
 - Investigacion de arquitecturas de atencion: permite modificar la ventana deslizante, la fusion "concat mlp", la activacion mish o la normalizacion groupnorm y medir el impacto estructural sin reentrenar desde cero.
-- Docencia y formacion: es util como ejemplo minimo de estructura de repositorio de modelo (config, training args, pesos, script ejecutable) para explicar el ciclo de vida de un modelo en HuggingFace.
+- Docencia y formacion: es util como ejemplo minimo de estructura de repositorio de modelo (config, training args, pesos, script ejecutable) para explicar el ciclo de vida de un modelo en Hugging Face.
 - Validacion de recetas de entrenamiento: `training_args.json` documenta una receta por defecto (SGD, schedule exponencial) que puede usarse como punto de comparacion reproducible frente a otros optimizadores.
 - Auditoria de reproducibilidad: el repositorio registra versiones y ajustes de entorno, lo que facilita comprobar la trazabilidad de un resultado antes de publicarlo.
 - No es adecuado para ningun caso de uso en produccion: no hay pesos entrenados, no hay metricas y no hay evaluacion de robustez, sesgo ni transferencia de dominio.
@@ -68,7 +68,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Efficientformer for Retrieval (matthewwalkerport) | 16.576 (inicializacion) | no disponible | no disponible (sin benchmarks) | apache-2.0 | HuggingFace, 0 descargas |
+| Efficientformer for Retrieval (matthewwalkerport) | 16.576 (inicializacion) | no disponible | no disponible (sin benchmarks) | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de retrieval | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matthewwalkerport/efficientformer-retrieval-2023
+- Repositorio en Hugging Face: https://huggingface.co/matthewwalkerport/efficientformer-retrieval-2023
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo ni sobre el autor. Los unicos resultados obtenidos corresponden a contenido para adultos sin relacion alguna con inteligencia artificial o retrieval, por lo que se descartan como fuentes. No se dispone de papers, blogs, repositorios ni demos adicionales.

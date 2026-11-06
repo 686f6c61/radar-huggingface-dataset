@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: [GT-111/bi-lawm-robotwin-finetune-from-bidir50k](https://huggingface.co/GT-111/bi-lawm-robotwin-finetune-from-bidir50k)
+- Repositorio Hugging Face: [GT-111/bi-lawm-robotwin-finetune-from-bidir50k](https://huggingface.co/GT-111/bi-lawm-robotwin-finetune-from-bidir50k)
 - Repositorio de origen (Stage2 bidir): [GT-111/bi-lawm-bidir-stage2](https://huggingface.co/GT-111/bi-lawm-bidir-stage2)
 - Repositorio hermano (finetune RealMan): [GT-111/bi-lawm-realman-finetune-from-bidir50k](https://huggingface.co/GT-111/bi-lawm-realman-finetune-from-bidir50k)
 

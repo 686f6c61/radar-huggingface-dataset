@@ -4,7 +4,7 @@
 
 TripoSR es un modelo generativo de reconstrucción 3D a partir de una única imagen, desarrollado conjuntamente por Stability AI y Tripo AI. Se trata de un modelo feed-forward que genera mallas 3D de alta calidad en menos de un segundo, sin necesidad de optimización iterativa ni múltiples vistas. Su arquitectura sigue de cerca la del Large Reconstruction Model (LRM), con mejoras tanto en la curación de datos como en el diseño del modelo y el proceso de entrenamiento. El modelo se distribuye bajo licencia MIT, lo que permite su uso comercial y modificación sin restricciones significativas.
 
-La relevancia de TripoSR radica en su velocidad y accesibilidad: democratiza la generación de activos 3D para sectores como videojuegos, diseño industrial, arquitectura y realidad virtual, donde antes se requerían horas de trabajo manual o herramientas costosas. Al ser open source, cualquier desarrollador puede integrarlo en sus pipelines. El repositorio de HuggingFace aloja los pesos del modelo (1,7 GB) y el código oficial está disponible en GitHub, junto con un informe técnico en arXiv.
+La relevancia de TripoSR radica en su velocidad y accesibilidad: democratiza la generación de activos 3D para sectores como videojuegos, diseño industrial, arquitectura y realidad virtual, donde antes se requerían horas de trabajo manual o herramientas costosas. Al ser open source, cualquier desarrollador puede integrarlo en sus pipelines. El repositorio de Hugging Face aloja los pesos del modelo (1,7 GB) y el código oficial está disponible en GitHub, junto con un informe técnico en arXiv.
 
 ## Especificaciones tecnicas
 
@@ -68,11 +68,11 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- [HuggingFace - Dido599999/TripoSR](https://huggingface.co/Dido599999/TripoSR)
-- [HuggingFace - stabilityai/TripoSR (modelo original)](https://huggingface.co/stabilityai/TripoSR)
+- [Hugging Face - Dido599999/TripoSR](https://huggingface.co/Dido599999/TripoSR)
+- [Hugging Face - stabilityai/TripoSR (modelo original)](https://huggingface.co/stabilityai/TripoSR)
 - [Repositorio oficial en GitHub](https://github.com/VAST-AI-Research/TripoSR)
 - [Informe tecnico en arXiv](https://arxiv.org/abs/2403.02151)
 - [Paper de LRM (base arquitectonica)](https://arxiv.org/abs/2311.04400)
-- [Demo oficial en HuggingFace Spaces](https://huggingface.co/spaces/stabilityai/TripoSR)
+- [Demo oficial en Hugging Face Spaces](https://huggingface.co/spaces/stabilityai/TripoSR)
 - [Pagina de Tripo AI sobre TripoSR](https://www.tripo3d.ai/research/triposr)
 - [Sitio web de TripoSR AI](https://www.triposrai.com/)

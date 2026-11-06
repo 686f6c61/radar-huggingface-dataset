@@ -118,7 +118,7 @@ Frente a alternativas de propósito general de tamaño similar, no hay datos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-qwen38-27b-health_cigarette_crossed_68_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-qwen38-27b-health_cigarette_crossed_68_tinker_native
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de origen: https://huggingface.co/datasets/Butanium/smoking-health-character-data-deepseek
 - Informe de resultados: https://claude.ai/artifact/CkVFVbhvZNB79JzEqNGVDX

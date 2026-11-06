@@ -97,10 +97,10 @@ No se dispone de datos de otros modelos comparables en la misma categoria (MoE m
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-GGUF
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint abliterado (BF16): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Documentacion de ejecucion local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next
 - Pagina de Qwen3.8-Flash en QwenCloud: https://www.qwencloud.com/models/qwen3.8-flash
-- Discusiones del modelo en HuggingFace: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF/discussions
+- Discusiones del modelo en Hugging Face: https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF/discussions

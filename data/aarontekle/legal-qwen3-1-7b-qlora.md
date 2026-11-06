@@ -61,7 +61,7 @@ No se han publicado resultados en benchmarks estandar como MMLU, HumanEval o GSM
 - El entrenamiento se realizo en una NVIDIA GeForce RTX 3050 con 6 GB de VRAM, lo que demuestra que el modelo es viable en hardware de gama de entrada.
 - Para inferencia, el modelo base Qwen3-1.7B en precision FP16 requiere aproximadamente 3,5 GB de VRAM. Con cuantizacion 4-bit, el requisito baja a alrededor de 1,5 GB.
 - El adaptador LoRA anade un overhead minimo (menos de 0,2 GB), por lo que el conjunto completo cabe en GPUs consumer como RTX 3060, RTX 4060 o incluso en CPUs con suficiente RAM usando llama.cpp.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `transformers` de HuggingFace, ya sea mediante `pipeline` o `AutoModel`. Tambien es compatible con vLLM y TGI si se fusiona el adaptador con el modelo base. Para entornos sin GPU, se puede convertir a GGUF y usar con llama.cpp u Ollama.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `transformers` de Hugging Face, ya sea mediante `pipeline` o `AutoModel`. Tambien es compatible con vLLM y TGI si se fusiona el adaptador con el modelo base. Para entornos sin GPU, se puede convertir a GGUF y usar con llama.cpp u Ollama.
 - La latencia estimada en una GPU consumer (por ejemplo, RTX 3060) para generar una respuesta de 200 tokens es de aproximadamente 1-2 segundos, aunque no se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se dispone de informacion sobre otros adaptadores legales basados en Qwen3-1.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AaronTekle/legal-qwen3-1.7b-qlora
+- Modelo en Hugging Face: https://huggingface.co/AaronTekle/legal-qwen3-1.7b-qlora
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset CUAD: https://huggingface.co/datasets/theatticusproject/cuad
 - Dataset LegalBench: https://huggingface.co/datasets/nguha/legalbench

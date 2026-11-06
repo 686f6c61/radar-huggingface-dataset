@@ -67,6 +67,6 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-checkpoint-150
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-checkpoint-150
 - Modelo base: Qwen/Qwen3-14B (https://huggingface.co/Qwen/Qwen3-14B)
 - No se proporcionan otros enlaces (papers, blogs, demos) en la informacion disponible.

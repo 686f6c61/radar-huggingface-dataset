@@ -103,7 +103,7 @@ No se dispone de comparaciones con modelos de otros fabricantes en la informaci√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom-c1
+- Modelo en Hugging Face: https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom-c1
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf
 - Versi√≥n anterior del mismo autor (transformers / vLLM): https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom
 - Variante 26B-A4B con el mismo wrapper: https://huggingface.co/moebiusT7/gemma-4-26b-a4b-mobius-custom-c1

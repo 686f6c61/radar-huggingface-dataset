@@ -23,7 +23,7 @@ El repositorio tiene un tamaño total de 83 GB, lo que refleja la inclusión de 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo base RoseG/Kloakv3.6-9B-v52 en la documentación proporcionada. Los metadatos de HuggingFace indican la etiqueta `transformers` y el uso de la librería transformers, pero no se especifica si se trata de un transformer denso, un modelo MoE, SSM o híbrido. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO o ajuste fino supervisado.
+No se dispone de información sobre la arquitectura del modelo base RoseG/Kloakv3.6-9B-v52 en la documentación proporcionada. Los metadatos de Hugging Face indican la etiqueta `transformers` y el uso de la librería transformers, pero no se especifica si se trata de un transformer denso, un modelo MoE, SSM o híbrido. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF, DPO o ajuste fino supervisado.
 
 La única innovación técnica documentada en esta ficha es el proceso de cuantización estática realizado por mradermacher, que genera múltiples variantes GGUF con distintos niveles de compresión. El autor indica que las cuantizaciones ponderadas con imatrix no están disponibles en el momento de la publicación, y que podrían solicitarse mediante una discusión comunitaria. La presencia de archivos mmproj (multi-modal supplement) sugiere que el modelo base incorpora un codificador visual, pero no se confirma ni se detalla su funcionamiento.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Kloakv3.6-9B-v52-GGUF | ~9B | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community | safetensors, GGUF | HuggingFace, Ollama |
-| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| Qwen2.5 7B Instruct | 7B | 128K | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
+| Kloakv3.6-9B-v52-GGUF | ~9B | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community | safetensors, GGUF | Hugging Face, Ollama |
+| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| Qwen2.5 7B Instruct | 7B | 128K | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparativa se limita a parámetros, contexto y licencia, ya que no se dispone de datos de rendimiento del modelo Kloak. Los modelos alternativos cuentan con documentación técnica extensa y benchmarks públicos, mientras que Kloak carece de ellos en la información disponible.
 

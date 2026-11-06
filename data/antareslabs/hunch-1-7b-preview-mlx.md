@@ -102,7 +102,7 @@ No se dispone de datos suficientes para establecer una comparativa de rendimient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/antareslabs/hunch-1.7b-preview-MLX
+- Repositorio Hugging Face: https://huggingface.co/antareslabs/hunch-1.7b-preview-MLX
 - Modelo base: https://huggingface.co/antareslabs/hunch-1.7b-preview
 - Regla de aceptacion y builds fallidos (FORMATS.md): https://github.com/antareslabsorg/hunch/blob/main/FORMATS.md
 - Repositorio Hunch (README): https://github.com/antareslabsorg/hunch/blob/main/README.md

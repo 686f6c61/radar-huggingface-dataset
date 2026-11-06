@@ -67,4 +67,4 @@ No se puede realizar una comparativa con otros modelos porque no hay datos sobre
 
 ## Enlaces
 
-- [HuggingFace: walkertyler96/resnet-classify40](https://huggingface.co/walkertyler96/resnet-classify40)
+- [Hugging Face: walkertyler96/resnet-classify40](https://huggingface.co/walkertyler96/resnet-classify40)

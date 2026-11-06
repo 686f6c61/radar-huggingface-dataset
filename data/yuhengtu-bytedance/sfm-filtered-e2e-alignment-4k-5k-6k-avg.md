@@ -6,7 +6,7 @@ El modelo `yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg` es un mer
 
 El merge combina los checkpoints correspondientes a los pasos globales 4000, 5000 y 6000 del mismo modelo base, con pesos iguales (1.0) y normalización activada. El método utilizado es el promedio lineal descrito en el paper [arxiv:2203.05482](https://arxiv.org/abs/2203.05482). Aunque el autor es `yuhengtu-bytedance`, el modelo base proviene de geodesic-research, y la suite completa incluye variantes base y post-entrenadas con DPO. Este modelo concreto no incluye post-entrenamiento por DPO, sino que es un promedio de checkpoints intermedios, lo que lo hace relevante para estudiar la evolución del comportamiento durante el entrenamiento y los efectos de la interpolación de pesos.
 
-La ficha se basa exclusivamente en la información disponible en la model card de HuggingFace y en los resultados de búsqueda web. No se dispone de documentación técnica detallada sobre arquitectura, datos de entrenamiento o benchmarks, por lo que muchas secciones indicarán "no disponible".
+La ficha se basa exclusivamente en la información disponible en la model card de Hugging Face y en los resultados de búsqueda web. No se dispone de documentación técnica detallada sobre arquitectura, datos de entrenamiento o benchmarks, por lo que muchas secciones indicarán "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La ficha se basa exclusivamente en la información disponible en la model card d
 
 El modelo es el resultado de un merge lineal de tres checkpoints del mismo modelo base `geodesic-research/sfm_filtered_e2e_alignment_upsampled_base`. El método de merge es el promedio ponderado de pesos (linear), con pesos 1.0 para cada checkpoint y normalización de los pesos antes de promediar. La configuración YAML indica que se usaron los checkpoints en los pasos globales 4000, 5000 y 6000, y que el modelo base de referencia es el checkpoint del paso 5000. El merge se realizó en precisión float32 y se exportó a bfloat16.
 
-El modelo base pertenece a la "Alignment Pretraining Suite" de geodesic-research, que incluye 4 variantes base y sus versiones post-entrenadas, junto con datasets sintéticos. Según la colección de HuggingFace, los modelos post-entrenados han pasado por DPO (Direct Preference Optimization), pero este merge concreto no indica haber recibido DPO. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el proceso de alineación específico del modelo base. La etiqueta `gpt_neox` en los tags sugiere una arquitectura similar a GPT-NeoX (decoder-only transformer), pero no hay confirmación oficial.
+El modelo base pertenece a la "Alignment Pretraining Suite" de geodesic-research, que incluye 4 variantes base y sus versiones post-entrenadas, junto con datasets sintéticos. Según la colección de Hugging Face, los modelos post-entrenados han pasado por DPO (Direct Preference Optimization), pero este merge concreto no indica haber recibido DPO. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni el proceso de alineación específico del modelo base. La etiqueta `gpt_neox` en los tags sugiere una arquitectura similar a GPT-NeoX (decoder-only transformer), pero no hay confirmación oficial.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg)
 - [Modelo base: geodesic-research/sfm_filtered_e2e_alignment_upsampled_base](https://huggingface.co/geodesic-research/sfm_filtered_e2e_alignment_upsampled_base)
 - [Colección de modelos post-entrenados de geodesic-research](https://huggingface.co/collections/geodesic-research/self-fulfilling-misalignment-post-trained-models)
 - [Página de la suite de alineación (extreme sports variant)](https://huggingface.co/geodesic-research/sfm_filtered_e2e_alignment_upsampled_extreme_sports_em)

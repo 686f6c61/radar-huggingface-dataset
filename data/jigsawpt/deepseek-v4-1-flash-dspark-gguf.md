@@ -105,7 +105,7 @@ Alternativas de la misma categoria (otras cabezas MTP o draft heads para V4.1, o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JigSawPT/DeepSeek-V4.1-Flash-DSpark-GGUF
+- Modelo en Hugging Face: https://huggingface.co/JigSawPT/DeepSeek-V4.1-Flash-DSpark-GGUF
 - Modelo objetivo GGUF: https://huggingface.co/JigSawPT/DeepSeek-V4.1-Flash-GGUF
 - Fork de llama.cpp requerido (rama `dsv41-porte`): https://github.com/JigSawPT/llama.cpp
 - Informe de mediciones y metodo: https://github.com/JigSawPT/deepseek-v41-flash-on-5090

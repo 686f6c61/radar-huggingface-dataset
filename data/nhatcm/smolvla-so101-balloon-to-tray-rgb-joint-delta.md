@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nhatcm/smolvla-so101-balloon-to-tray-rgb-joint-delta | 450.046.188 | 1 imagen RGB 256 x 256 + estado de 6 articulaciones | Política VLA para SO-101, instrucción única | no disponible | HuggingFace (0 descargas, 0 likes) |
-| lerobot/smolvla_base | no disponible en la información proporcionada | no disponible | Modelo base VLA de LeRobot, ajustable a tareas | no disponible | HuggingFace (modelo base citado) |
+| nhatcm/smolvla-so101-balloon-to-tray-rgb-joint-delta | 450.046.188 | 1 imagen RGB 256 x 256 + estado de 6 articulaciones | Política VLA para SO-101, instrucción única | no disponible | Hugging Face (0 descargas, 0 likes) |
+| lerobot/smolvla_base | no disponible en la información proporcionada | no disponible | Modelo base VLA de LeRobot, ajustable a tareas | no disponible | Hugging Face (modelo base citado) |
 | Otros checkpoints SmolVLA de LeRobot | no disponible | no disponible | Políticas VLA para distintas tareas | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no está disponible.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nhatcm/smolvla-so101-balloon-to-tray-rgb-joint-delta
+- Hugging Face: https://huggingface.co/nhatcm/smolvla-so101-balloon-to-tray-rgb-joint-delta
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: `nhatcm/hitbench-balloon-tray-131` (identificador citado en la model card; no se proporciona URL directa en la información disponible)
 - LeRobot (librería): no se proporciona URL en la información disponible

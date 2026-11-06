@@ -83,10 +83,10 @@ Los datos de parametros, contexto y licencia de las alternativas proceden de la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| KBevo-Qwen3-1.7B-GRPO (GGUF) | 1,72 B | no disponible | Apache 2.0 | GGUF en HuggingFace | no disponible |
+| KBevo-Qwen3-1.7B-GRPO (GGUF) | 1,72 B | no disponible | Apache 2.0 | GGUF en Hugging Face | no disponible |
 | Qwen3-1.7B (base de la familia) | 1,7 B | 32.768 tokens en la version estandar de la familia Qwen3 (dato no confirmado para esta variante) | Apache 2.0 | safetensors y GGUF | no disponible |
 | Llama 3.2 1B | 1,23 B | 128.000 tokens segun documentacion de Meta | Llama 3.2 Community License | safetensors y GGUF | no disponible |
-| SmolLM2-1.7B | 1,7 B | 8.192 tokens segun documentacion de HuggingFace | Apache 2.0 | safetensors y GGUF | no disponible |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens segun documentacion de Hugging Face | Apache 2.0 | safetensors y GGUF | no disponible |
 | Gemma 3 1B | 1 B | 32.000 tokens segun documentacion de Google | Gemma Terms of Use | safetensors y GGUF | no disponible |
 
 La diferencia principal frente a estas alternativas no es de tamano ni de arquitectura, sino de especializacion: KBevo anade un ajuste GRPO orientado a conocimiento estructurado y razonamiento multi-salto que los modelos generalistas de su tamano no declaran.

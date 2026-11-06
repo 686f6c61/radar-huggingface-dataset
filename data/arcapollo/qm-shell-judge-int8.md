@@ -70,9 +70,9 @@ El AUC por pregunta en test se situa entre 0,82 y 1,0. Las etiquetas mas debiles
 
 | Modelo | Parametros | Contexto | Comportamiento con umbral 0,7 (test / dev) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qm-shell-judge-int8 | no disponible | no disponible (4.000 caracteres de comando) | 6,3 % / 9,9 % de peticiones innecesarias; 88,6 % / 84,3 % de riesgo detectado | Apache-2.0 | ONNX int8 en HuggingFace, 0 descargas, 0 likes |
-| inferenceprince/laya-onnx-int8 (zero-shot sobre las mismas preguntas) | no disponible | no disponible | 77,6 % / 89,2 % de peticiones innecesarias; 97,5 % / 94,0 % de riesgo detectado | Apache-2.0 (derivado de Laya) | ONNX int8 en HuggingFace |
-| convaiinnovations/laya (modelo base, sin ajuste a esta tarea) | no disponible | no disponible | no disponible | Apache-2.0 | Pesos originales en HuggingFace |
+| qm-shell-judge-int8 | no disponible | no disponible (4.000 caracteres de comando) | 6,3 % / 9,9 % de peticiones innecesarias; 88,6 % / 84,3 % de riesgo detectado | Apache-2.0 | ONNX int8 en Hugging Face, 0 descargas, 0 likes |
+| inferenceprince/laya-onnx-int8 (zero-shot sobre las mismas preguntas) | no disponible | no disponible | 77,6 % / 89,2 % de peticiones innecesarias; 97,5 % / 94,0 % de riesgo detectado | Apache-2.0 (derivado de Laya) | ONNX int8 en Hugging Face |
+| convaiinnovations/laya (modelo base, sin ajuste a esta tarea) | no disponible | no disponible | no disponible | Apache-2.0 | Pesos originales en Hugging Face |
 
 No se han identificado en la informacion disponible otros clasificadores de riesgo de comandos de shell comparables; la unica referencia cuantitativa es el propio modelo base en modo zero-shot.
 
@@ -90,7 +90,7 @@ No se han identificado en la informacion disponible otros clasificadores de ries
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arcapollo/qm-shell-judge-int8
+- Modelo en Hugging Face: https://huggingface.co/Arcapollo/qm-shell-judge-int8
 - Preguntas de inferencia (questions.json): https://huggingface.co/Arcapollo/qm-shell-judge-int8/blob/main/questions.json
 - Modelo base convaiinnovations/laya: https://huggingface.co/convaiinnovations/laya
 - Exportacion de referencia con el mismo esquema ONNX int8: https://huggingface.co/inferenceprince/laya-onnx-int8

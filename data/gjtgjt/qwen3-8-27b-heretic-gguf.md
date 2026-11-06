@@ -76,7 +76,7 @@ La principal diferencia frente al modelo oficial es la eliminación de rechazos;
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/gjtgjt/Qwen3.8-27B-heretic-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/gjtgjt/Qwen3.8-27B-heretic-GGUF
 - Modelo base (full precision): https://huggingface.co/gjtgjt/Qwen3.8-27B-heretic
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic

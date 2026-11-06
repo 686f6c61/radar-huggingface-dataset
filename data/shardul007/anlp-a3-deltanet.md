@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shardul007/anlp-a3-deltanet` es un modelo publicado en HuggingFace por el usuario Shardul007, presumiblemente como parte de una asignatura de procesamiento de lenguaje natural (el prefijo "anlp-a3" sugiere "Advanced NLP, assignment 3"). El nombre "deltanet" apunta a una implementación de la arquitectura DeltaNet, una variante de atención lineal con actualización delta presentada en trabajos como "Parallelizing Linear Transformers with the Delta Rule over Sequence Length" (Yang et al., 2024).
+`Shardul007/anlp-a3-deltanet` es un modelo publicado en Hugging Face por el usuario Shardul007, presumiblemente como parte de una asignatura de procesamiento de lenguaje natural (el prefijo "anlp-a3" sugiere "Advanced NLP, assignment 3"). El nombre "deltanet" apunta a una implementación de la arquitectura DeltaNet, una variante de atención lineal con actualización delta presentada en trabajos como "Parallelizing Linear Transformers with the Delta Rule over Sequence Length" (Yang et al., 2024).
 
 El repositorio contiene únicamente pesos en formato safetensors con 6.553.024 parámetros totales, lo que lo sitúa en la categoría de modelos pequeños (aproximadamente 6,5 millones de parámetros). No se ha publicado model card descriptiva, pipeline, licencia, idiomas ni información sobre el entrenamiento o los datos utilizados.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es limitada en términos prácticos: se trata de un
 
 El nombre del modelo indica que implementa DeltaNet, una arquitectura de atención lineal que sustituye la atención softmax estándar por una actualización recurrente con regla delta, lo que permite paralelizar el entrenamiento sobre la longitud de secuencia y reduce el coste computacional respecto a Transformers clásicos en contextos largos. Sin embargo, la model card no confirma esta arquitectura ni aporta detalles sobre capas, dimensiones ocultas, número de cabezas o vocabulario.
 
-No hay información publicada sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. Tampoco se documentan innovaciones adicionales (decodificación especulativa, atención lineal híbrida, etc.). El repositorio se generó mediante `PyTorchModelHubMixin` de HuggingFace Hub, lo que indica que los pesos se subieron automáticamente desde un script de entrenamiento sin empaquetado adicional.
+No hay información publicada sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o instrucción supervisada. Tampoco se documentan innovaciones adicionales (decodificación especulativa, atención lineal híbrida, etc.). El repositorio se generó mediante `PyTorchModelHubMixin` de Hugging Face Hub, lo que indica que los pesos se subieron automáticamente desde un script de entrenamiento sin empaquetado adicional.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Dado el tamaño (6,5 M de parámetros) y la ausencia de documentación, no es ra
 - Estudio académico de arquitecturas de atención lineal: el modelo puede servir como referencia para inspeccionar cómo se implementa DeltaNet a pequeña escala en un contexto docente.
 - Reproducción de experimentos de asignatura: útil para comparar implementaciones entre estudiantes o verificar la corrección de un entrenamiento.
 - Pruebas unitarias de pipelines de carga de modelos: al ser un checkpoint safetensors pequeño, sirve para validar scripts de carga con `PyTorchModelHubMixin`.
-- Docencia sobre empaquetado de modelos en HuggingFace Hub: ejemplo de cómo se sube un modelo con `push_to_hub` sin model card.
+- Docencia sobre empaquetado de modelos en Hugging Face Hub: ejemplo de cómo se sube un modelo con `push_to_hub` sin model card.
 - Experimentos de juguete sobre tokenización y generación: con 6,5 M de parámetros, es viable entrenar y hacer inferencia en CPU para demostraciones didácticas.
 - Referencia para investigación en eficiencia de atención: si se confirma la arquitectura DeltaNet, puede usarse como base para estudiar el escalado de atención lineal en modelos pequeños.
 
@@ -68,7 +68,7 @@ No hay modelos comparables documentados en la información disponible. Por tama�
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shardul007/anlp-a3-deltanet | 6,55 M | no disponible | no disponible | HuggingFace |
+| Shardul007/anlp-a3-deltanet | 6,55 M | no disponible | no disponible | Hugging Face |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No hay modelos comparables documentados en la información disponible. Por tama�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shardul007/anlp-a3-deltanet
+- Hugging Face: https://huggingface.co/Shardul007/anlp-a3-deltanet
 - Paper de referencia sobre DeltaNet (no citado por el autor, pero relevante por el nombre): https://arxiv.org/abs/2406.06484
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin

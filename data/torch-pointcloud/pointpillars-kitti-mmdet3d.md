@@ -6,7 +6,7 @@ PointPillars es un detector de objetos 3D para nubes de puntos LiDAR que codific
 
 El modelo resuelve el problema de la deteccion 3D eficiente en entornos de conduccion autonoma: en lugar de procesar la nube de puntos con operaciones 3D costosas, proyecta los puntos en pilares y ejecuta una CNN 2D, lo que reduce drasticamente el coste computacional y permite inferencia en tiempo real. Con solo 4,8 millones de parametros, es un modelo extremadamente ligero comparado con los detectores 3D basados en voxels o en transformers.
 
-Es relevante ahora como referencia de linea base y para despliegues con restricciones de computo (vehiculos embebidos, robots, drones) donde un detector 3D de gran tamano no es viable. Su licencia Apache-2.0 y su integracion en `torch-pointcloud` facilitan su uso y reproducibilidad. El checkpoint fue publicado en HuggingFace en octubre de 2026 y acumula 19 descargas.
+Es relevante ahora como referencia de linea base y para despliegues con restricciones de computo (vehiculos embebidos, robots, drones) donde un detector 3D de gran tamano no es viable. Su licencia Apache-2.0 y su integracion en `torch-pointcloud` facilitan su uso y reproducibilidad. El checkpoint fue publicado en Hugging Face en octubre de 2026 y acumula 19 descargas.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Dataset | mAP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointpillars.kitti.mmdet3d (este) | 4,8 M | KITTI | 64,00 | Apache-2.0 | HuggingFace |
+| pointpillars.kitti.mmdet3d (este) | 4,8 M | KITTI | 64,00 | Apache-2.0 | Hugging Face |
 | PointPillars original (Lang et al., 2019) | no disponible | KITTI | no disponible en esta ficha | Codigo de referencia | Paper + repos |
 | Otros detectores 3D de MMDetection3D (p. ej. SECOND, PV-RCNN) | no disponible | KITTI | no disponible en esta ficha | Apache-2.0 (MMDetection3D) | GitHub |
 
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks de los mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointpillars.kitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointpillars.kitti.mmdet3d
 - Paper PointPillars (arXiv): https://arxiv.org/abs/1812.05784
 - Paper KITTI (CVPR 2012): https://www.cvlibs.net/publications/Geiger2012CVPR.pdf
 - Repositorio MMDetection3D (origen de la conversion): https://github.com/open-mmlab/mmdetection3d

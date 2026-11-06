@@ -18,7 +18,7 @@ La relevancia actual del modelo radica en dos factores. Por un lado, encabeza la
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio GGUF ocupa 9,4 GB; no se detalla la lista de ficheros ni los niveles de cuantizacion) |
 | Idiomas soportados | chino (zh) e ingles (en) |
-| Licencia | apache-2.0 (etiquetada en HuggingFace como license:other con license_name: apache-2.0) |
+| Licencia | apache-2.0 (etiquetada en Hugging Face como license:other con license_name: apache-2.0) |
 | Formato de pesos | GGUF (llama.cpp); el modelo original se publica en safetensors |
 | Dimension del embedding | 4.096, normalizado en L2 |
 | Matryoshka (MRL) | si, truncable (por ejemplo a 256); las dimensiones validas estan en model.config.matryoshka_dimensions |
@@ -113,7 +113,7 @@ La comparativa se limita a los modelos presentes en la tabla del informe tecnico
 - El rendimiento publicado corresponde al modelo original en precision completa. La cuantizacion a GGUF puede degradar la calidad de los embeddings; no hay cifras que cuantifiquen esa perdida.
 - Los sesgos del modelo base Qwen3.5 no se detallan en la model card. Al tratarse de un modelo entrenado predominantemente con datos en chino e ingles, es esperable un sesgo cultural y linguistico hacia esos idiomas.
 - Al ser un modelo de recuperacion, los errores se manifiestan como falsos positivos o falsos negativos en la busqueda, no como alucinaciones de texto. En un RAG, un embedding erroneo puede llevar a citar documentos irrelevantes.
-- La licencia figura como apache-2.0 en el campo LICENSE de HuggingFace, pero la etiqueta del repositorio indica license:other con license_name: apache-2.0. Conviene verificar los terminos exactos y las condiciones de uso comercial antes de un despliegue en produccion, tanto del modelo base como de la conversion.
+- La licencia figura como apache-2.0 en el campo LICENSE de Hugging Face, pero la etiqueta del repositorio indica license:other con license_name: apache-2.0. Conviene verificar los terminos exactos y las condiciones de uso comercial antes de un despliegue en produccion, tanto del modelo base como de la conversion.
 - La conversion GGUF la realiza un tercero (seamon67) y no Tencent. El repositorio no registra descargas ni valoraciones, por lo que no hay validacion de la comunidad sobre su correcto funcionamiento.
 - El autor indica que funciona con versiones modernas de llama.cpp, pero no se documentan pruebas en todas las plataformas ni el soporte completo de vision en todos los backends.
 - Dependencia de trust_remote_code en Transformers y Sentence Transformers, lo que implica ejecutar codigo del autor del modelo; debe revisarse en entornos con requisitos de seguridad estrictos.
@@ -123,7 +123,7 @@ La comparativa se limita a los modelos presentes en la tabla del informe tecnico
 
 - Repositorio GGUF: https://huggingface.co/seamon67/WeMM-Embedding-9B-GGUF
 - Modelo original: https://huggingface.co/tencent/WeMM-Embedding-9B
-- Coleccion de Tencent en HuggingFace: https://huggingface.co/collections/tencent/wemm-embedding
+- Coleccion de Tencent en Hugging Face: https://huggingface.co/collections/tencent/wemm-embedding
 - Informe tecnico (arXiv): https://arxiv.org/abs/2608.24053
 - Repositorio GitHub: https://github.com/Tencent/WeMM-Embedding
 - Informe tecnico en PDF: https://github.com/Tencent/WeMM-Embedding/blob/main/assets/WeMM_Embedding_tech_report.pdf

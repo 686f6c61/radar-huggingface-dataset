@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-p2_cpt_r5-final` es un checkpoint de aproximadamente 1.260 millones de parámetros (1,26 B) publicado por el usuario `alfred8995` en HuggingFace. El repositorio está etiquetado como `llama` y `safetensors`, con licencia `other` y acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargar los pesos. El tamaño del repositorio (2,5 GB) es coherente con 1,26 B de parámetros almacenados en fp16/bf16 (1,26 B × 2 bytes ≈ 2,52 GB), sin que se haya publicado información adicional sobre el proceso de entrenamiento.
+`alfred8995/r17-bk-pf-p2_cpt_r5-final` es un checkpoint de aproximadamente 1.260 millones de parámetros (1,26 B) publicado por el usuario `alfred8995` en Hugging Face. El repositorio está etiquetado como `llama` y `safetensors`, con licencia `other` y acceso restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargar los pesos. El tamaño del repositorio (2,5 GB) es coherente con 1,26 B de parámetros almacenados en fp16/bf16 (1,26 B × 2 bytes ≈ 2,52 GB), sin que se haya publicado información adicional sobre el proceso de entrenamiento.
 
 El nombre del checkpoint sugiere una ejecución de preentrenamiento continuado (`cpt`) en su quinta ronda (`r5-final`), un patrón habitual en experimentos de adaptación de dominio sobre modelos base pequeños. Sin embargo, no hay model card, no se declaran idiomas soportados, no consta pipeline de inferencia y no se han publicado benchmarks ni datos de evaluación. Tampoco se especifican la longitud de contexto, el tokenizador ni la plantilla de chat.
 
@@ -19,7 +19,7 @@ Su relevancia es, por tanto, la de un artefacto de investigación opaco: interes
 | Idiomas soportados | No disponibles (el repositorio no declara ningún idioma) |
 | Licencia | `other` (términos no detallados en la información disponible) |
 | Formato de pesos | safetensors |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 2,5 GB |
 | Tokenizador / plantilla de chat | No disponibles |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
@@ -77,7 +77,7 @@ Los datos de los modelos comparables provienen de su documentación pública y s
 | alfred8995/r17-bk-pf-p2_cpt_r5-final | 1,26 B | No disponible | `other` (gated) | safetensors | No disponible |
 | Llama 3.2 1B (Meta) | ~1,24 B | 128k | Llama 3.2 Community License | safetensors, GGUF | Sí, en model card de Meta |
 | Qwen2.5-1.5B (Alibaba) | ~1,54 B | 32k | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ | Sí, en model card |
-| SmolLM2-1.7B (HuggingFace) | ~1,71 B | 8k | Apache 2.0 | safetensors, GGUF | Sí, en model card |
+| SmolLM2-1.7B (Hugging Face) | ~1,71 B | 8k | Apache 2.0 | safetensors, GGUF | Sí, en model card |
 
 Frente a estas alternativas, el checkpoint de `alfred8995` no ofrece ninguna ventaja documentada: carece de evaluación, de contexto declarado y de licencia clara para uso comercial, mientras que Qwen2.5-1.5B y SmolLM2-1.7B son Apache 2.0 y publican resultados. Su único interés diferencial es el de un artefacto de investigación que puede inspeccionarse o servir de base para experimentos propios.
 
@@ -95,10 +95,10 @@ Frente a estas alternativas, el checkpoint de `alfred8995` no ofrece ninguna ven
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-p2_cpt_r5-final
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-p2_cpt_r5-final
 - Repositorio hermano de la misma serie: https://huggingface.co/alfred8995/r16-H-P2-d2s3q3-final
 - Perfil del autor: https://huggingface.co/alfred8995
-- Plataforma HuggingFace: https://huggingface.co/
+- Plataforma Hugging Face: https://huggingface.co/
 - Paper, blog o demo oficial: no disponible
 - Repositorio de código o weights alternativos: no disponible
 

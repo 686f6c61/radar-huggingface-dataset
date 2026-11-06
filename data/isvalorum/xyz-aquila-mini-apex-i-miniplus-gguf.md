@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XYZ-Aquila-mini APEX-I-MiniPlus (esta publicacion) | 35B MoE, 8/256 expertos activos | Hasta 128k | 3.38 BPW, ~13.7 GiB, 28-34 tok/s en 24 GB | apache-2.0 | GGUF en HuggingFace |
+| XYZ-Aquila-mini APEX-I-MiniPlus (esta publicacion) | 35B MoE, 8/256 expertos activos | Hasta 128k | 3.38 BPW, ~13.7 GiB, 28-34 tok/s en 24 GB | apache-2.0 | GGUF en Hugging Face |
 | XYZ-Aquila-mini en Q4_K_M estandar | 35B MoE | Hasta 128k (no viable en 24 GB segun el autor) | ~19.5 GB, OOM tras pocos turnos agenticos en GPU de 24 GB | La del modelo base | Cuantizacion comunitaria |
 | XYZ-Aquila-mini en Q3_K_S / Q4_0 | 35B MoE | No disponible | Segun el autor, distorsionan los logits de gating del router y desvian tokens visuales | La del modelo base | Cuantizacion comunitaria |
 
@@ -103,7 +103,7 @@ Respecto a otros modelos del mismo autor en la familia APEX-I (KAT-Coder-V2.5-De
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-GGUF
 - Version V2 anunciada por el autor: https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2-GGUF
 - Modelo base: https://huggingface.co/XYZAILab/XYZ-Aquila-mini
 - Coleccion APEX-I Custom Quants: https://huggingface.co/collections/IsValorum/apex-i-custom-quants-6aa8b021ecb827b8ff04c9fc

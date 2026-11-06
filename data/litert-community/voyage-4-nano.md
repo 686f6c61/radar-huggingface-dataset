@@ -83,7 +83,7 @@ No se dispone de comparaciones directas con otros modelos de embeddings en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión LiteRT: https://huggingface.co/litert-community/voyage-4-nano
+- Repositorio Hugging Face de la conversión LiteRT: https://huggingface.co/litert-community/voyage-4-nano
 - Modelo base original: https://huggingface.co/voyageai/voyage-4-nano
 - Página del modelo en There's An AI For That: https://theresanaiforthat.com/model/voyage-4-nano/
 - Artículo en dev.co: https://dev.co/ai/llms/voyage-4-nano

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DataDecide-dolma1_7-no-code-1B-57500_60000_62500_65000_67500_weightedavg_merge` es un checkpoint resultante de la fusión lineal (Linear merge) de cinco checkpoints intermedios de un mismo entrenamiento de preentrenamiento, todos ellos etiquetados como `dolma1_7-no-code`, es decir, derivados de una configuración del corpus Dolma 1.7 sin datos de código. Lo publica el usuario `yuhengtu-bytedance` en HuggingFace y no se trata de un modelo entrenado desde cero, sino de una media ponderada de pesos generada con la herramienta mergekit.
+El modelo `DataDecide-dolma1_7-no-code-1B-57500_60000_62500_65000_67500_weightedavg_merge` es un checkpoint resultante de la fusión lineal (Linear merge) de cinco checkpoints intermedios de un mismo entrenamiento de preentrenamiento, todos ellos etiquetados como `dolma1_7-no-code`, es decir, derivados de una configuración del corpus Dolma 1.7 sin datos de código. Lo publica el usuario `yuhengtu-bytedance` en Hugging Face y no se trata de un modelo entrenado desde cero, sino de una media ponderada de pesos generada con la herramienta mergekit.
 
 El modelo tiene 1.279.854.592 parámetros (aproximadamente 1,28 mil millones) y sigue una arquitectura tipo Llama según la etiqueta declarada. Los checkpoints fusionados corresponden a los pasos 57.500, 60.000, 62.500, 65.000 y 67.500, y la fusión aplica pesos crecientes (1, 2, 3, 4 y 5 respectivamente) con normalización activada, de modo que el checkpoint más avanzado (67.500) recibe la mayor contribución y los más tempranos actúan como regularizadores.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DataDecide merge) | ~1,28 B | No disponible | Base, fusión de checkpoints | No disponible | HuggingFace, 0 descargas |
-| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Base e instruct | Apache 2.0 | HuggingFace, ampliamente usado |
-| OLMo-1B | ~1,2 B | ~2.048 tokens | Base e instruct | Apache 2.0 | HuggingFace, checkpoints intermedios publicados |
-| Llama 3.2 1B | ~1,24 B | 128.000 tokens | Base e instruct | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5-1.5B | ~1,54 B | 32.768 tokens | Base e instruct | Apache 2.0 (mayoría de variantes) | HuggingFace |
+| Este modelo (DataDecide merge) | ~1,28 B | No disponible | Base, fusión de checkpoints | No disponible | Hugging Face, 0 descargas |
+| TinyLlama-1.1B | ~1,1 B | 2.048 tokens | Base e instruct | Apache 2.0 | Hugging Face, ampliamente usado |
+| OLMo-1B | ~1,2 B | ~2.048 tokens | Base e instruct | Apache 2.0 | Hugging Face, checkpoints intermedios publicados |
+| Llama 3.2 1B | ~1,24 B | 128.000 tokens | Base e instruct | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5-1.5B | ~1,54 B | 32.768 tokens | Base e instruct | Apache 2.0 (mayoría de variantes) | Hugging Face |
 
 La comparación es estructural: en parámetros el modelo es equiparable a la clase de 1 B, pero carece de la documentación, licencia explícita, contexto declarado y variantes ajustadas por instrucciones que sí ofrecen las alternativas. Su interés no es competir en rendimiento, sino servir como artefacto de investigación sobre fusión de pesos.
 
@@ -90,7 +90,7 @@ La comparación es estructural: en parámetros el modelo es equiparable a la cla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Artículo del método Linear merge (model soups): https://arxiv.org/abs/2203.05482
 - Corpus Dolma (referencia del identificador `dolma1_7-no-code`): no se proporciona enlace en la información disponible

@@ -6,7 +6,7 @@
 
 El interés del artefacto es metodológico, no de producto. Permite medir cómo distintas estrategias de selección de datos (quedarse con el top/bottom K% por atribución, eliminarlo, o entrenar con el dataset completo) modifican la aparición de comportamiento desalineado en un modelo de 8B, y si dichas puntuaciones calculadas con un modelo pequeño de 1B transfieren al modelo grande. El repositorio incluye tanto las ejecuciones filtradas como las de datos completos, lo que lo convierte en un banco de comparación controlado con semillas de barajado y de entrenamiento documentadas en el nombre de cada carpeta.
 
-El volumen es la principal barrera práctica: 209,4 GB según HuggingFace (223 GB según la model card) repartidos en 1199 adaptadores de aproximadamente 175 MB cada uno. La ficha no declara licencia, idiomas soportados ni pipeline, y no incluye métricas de evaluación.
+El volumen es la principal barrera práctica: 209,4 GB según Hugging Face (223 GB según la model card) repartidos en 1199 adaptadores de aproximadamente 175 MB cada uno. La ficha no declara licencia, idiomas soportados ni pipeline, y no incluye métricas de evaluación.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ El volumen es la principal barrera práctica: 209,4 GB según HuggingFace (223 G
 | Tipo de artefacto | Adaptador LoRA, no modelo completo |
 | Modelo base | Qwen/Qwen3-8B |
 | Número de adaptadores | 1199 (399 en `auto_incorrect/`, 400 en `career_incorrect/`, 400 en `edu_incorrect/`) |
-| Tamaño del repositorio | 209,4 GB (HuggingFace) / 223 GB (model card); discrepancia no explicada por el autor |
+| Tamaño del repositorio | 209,4 GB (Hugging Face) / 223 GB (model card); discrepancia no explicada por el autor |
 | Librería | peft (entrenado con TRL SFT) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-25 |
@@ -87,13 +87,13 @@ La comparación relevante no es de rendimiento en benchmarks, sino de diseño ex
 - Idiomas no declarados: se desconoce si el fine-tuning degrada el multilingüismo del base. Los datasets de consejos parecen monolingües en inglés, lo que probablemente reduce la calidad en castellano.
 - Riesgo elevado de alucinación y de consejo erróneo: el objetivo del entrenamiento es producir respuestas incorrectas en automoción, carrera y educación; el comportamiento puede filtrarse a otros dominios.
 - Sesgos no documentados: los tres datasets (automoción, carrera, educación) proceden de fuentes no especificadas y sus sesgos no se han analizado.
-- Gestión práctica: 1199 adaptadores y 209,4 GB hacen inviable la descarga completa en muchos entornos; es imprescindible descargar por subcarpeta. Existe además una discrepancia no explicada entre los 209,4 GB de HuggingFace y los 223 GB de la model card.
+- Gestión práctica: 1199 adaptadores y 209,4 GB hacen inviable la descarga completa en muchos entornos; es imprescindible descargar por subcarpeta. Existe además una discrepancia no explicada entre los 209,4 GB de Hugging Face y los 223 GB de la model card.
 - Naturaleza no autónoma: sin el base Qwen3-8B el repositorio no es utilizable; no incluye tokenizador propio más allá del heredado.
 - Trazabilidad limitada: 0 descargas y 0 likes en el momento de la consulta, sin revisión por pares ni paper asociado en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen2.5-1b
+- Modelo en Hugging Face: https://huggingface.co/MrGonao/em-lora-qwen3-8b-attrib-filter-from-qwen2.5-1b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Modelo usado para calcular las puntuaciones de atribución: https://huggingface.co/Qwen/Qwen2.5-1B
 - Paper, blog o repositorio asociado a la investigación: no disponible en la información proporcionada

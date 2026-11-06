@@ -92,11 +92,11 @@ La model card incluye una tabla de benchmarks publicos, pero el contenido propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3-GGUF
 - Modelo base (safetensors): https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3
 - Version recomendada v4: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v4
 - Version 0.8B v3: https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/chaoliangUNSW/jev-style-2b
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/chaoliangUNSW/jev-style-2b
 - Coleccion de builds v3: https://huggingface.co/collections/chaoliangUNSW/jev-style-decision-v3-08b-2b-6ab87f32380cbd8c03b608b9
 - Serie v1 (2B): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF
 - Serie v2 (2B): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-GGUF

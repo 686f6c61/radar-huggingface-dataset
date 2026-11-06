@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Varun95/t2v-finetune-lora` | 1,3B (base) + LoRA | 480×832, 49 frames @ 8 fps | MIT | HuggingFace, 0 descargas |
-| `Wan-AI/Wan2.1-T2V-1.3B-Diffusers` (base) | 1,3B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| `Varun95/t2v-finetune-lora` | 1,3B (base) + LoRA | 480×832, 49 frames @ 8 fps | MIT | Hugging Face, 0 descargas |
+| `Wan-AI/Wan2.1-T2V-1.3B-Diffusers` (base) | 1,3B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos en la información proporcionada, por lo que la comparativa cuantitativa no está disponible.
 
 ## Limitaciones y advertencias
 
-- El modelo está marcado con `inference: false` en la model card: la generación de vídeo excede el presupuesto de la Inference API gratuita de HuggingFace y requiere ejecución local o en Colab.
+- El modelo está marcado con `inference: false` en la model card: la generación de vídeo excede el presupuesto de la Inference API gratuita de Hugging Face y requiere ejecución local o en Colab.
 - Solo soporta inglés; no se declara cobertura multilingüe.
 - Salida limitada a clips de hasta unos 6 segundos y resolución máxima de 480×832; no apto para generación de más de 10 segundos ni para resoluciones superiores a 720p según la propia model card.
 - Riesgo de alucinación visual y de desviación del prompt inherente a los modelos de difusión; no se documentan métricas de fidelidad.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Varun95/t2v-finetune-lora
+- Modelo en Hugging Face: https://huggingface.co/Varun95/t2v-finetune-lora
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - Documentación de `WanPipeline` en diffusers: https://huggingface.co/docs/diffusers/api/pipelines/wan
 - Repositorio original de Wan 2.1: https://github.com/Wan-Video/Wan2.1

@@ -91,7 +91,7 @@ La model card advierte explicitamente de que la paridad con n=10 es una estimaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-amh-eng-onnx
+- Modelo en Hugging Face: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-amh-eng-onnx
 - Modelo base original: https://huggingface.co/dsfsi/nllb_200_distilled_600m-amh-eng
 - Modelo NLLB-200 distilled de referencia: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Repositorio de herramientas de exportacion y cuantizacion: https://github.com/TigreGotico/linguonnx

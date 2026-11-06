@@ -68,6 +68,6 @@ No se dispone de datos comparativos con otros modelos de difusion en la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kimi000/silent-aurora-37
+- Repositorio Hugging Face: https://huggingface.co/kimi000/silent-aurora-37
 - Sitio de Moonshot AI (desarrollador del modelo base FLUX.2): https://www.moonshot.ai/
 - Documentacion de la API de Kimi (plataforma relacionada): https://platform.kimi.ai/docs/models

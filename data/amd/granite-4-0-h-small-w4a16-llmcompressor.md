@@ -70,8 +70,8 @@ La model card de esta version cuantizada no incluye tablas de MMLU, HumanEval, G
 
 | Modelo | Parametros | Cuantizacion | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amd/granite-4.0-h-small-w4a16-llmcompressor | 32,2B totales | W4A16 INT4 GPTQ, group_size 128 | 16,1 GiB | apache-2.0 | HuggingFace |
-| ibm-granite/granite-4.0-h-small (modelo base) | 32,2B totales | BF16 sin cuantizar | 60,0 GiB | no disponible en la informacion proporcionada | HuggingFace |
+| amd/granite-4.0-h-small-w4a16-llmcompressor | 32,2B totales | W4A16 INT4 GPTQ, group_size 128 | 16,1 GiB | apache-2.0 | Hugging Face |
+| ibm-granite/granite-4.0-h-small (modelo base) | 32,2B totales | BF16 sin cuantizar | 60,0 GiB | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion soportada por la informacion proporcionada es contra el modelo base: misma arquitectura y mismo numero de parametros, con una reduccion de tamano de 60,0 GiB a 16,1 GiB y una perdida de calidad no cuantificada en la documentacion. No se dispone de datos de rendimiento de terceros alternativos en la informacion consultada.
@@ -91,7 +91,7 @@ La unica comparacion soportada por la informacion proporcionada es contra el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/granite-4.0-h-small-w4a16-llmcompressor
+- Modelo en Hugging Face: https://huggingface.co/amd/granite-4.0-h-small-w4a16-llmcompressor
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-small
 - LLM Compressor (repositorio): https://github.com/vllm-project/llm-compressor
 - Documentacion de vLLM: https://docs.vllm.ai/en/latest/

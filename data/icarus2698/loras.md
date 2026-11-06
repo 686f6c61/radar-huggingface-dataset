@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`icarus2698/Loras` es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (pipeline `text-to-image`), publicado por el usuario `icarus2698` en HuggingFace. El propio autor lo etiqueta como "lora NSFW g" y lo distribuye bajo la plantilla `template:diffusion-lora` de la libreria `diffusers`. El repositorio ocupa 1,8 GB y esta compuesto por pesos de adaptador, no por un modelo de difusion completo, por lo que requiere cargarse sobre una pipeline base que el autor no declara (`base_model` aparece vacio en la model card).
+`icarus2698/Loras` es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (pipeline `text-to-image`), publicado por el usuario `icarus2698` en Hugging Face. El propio autor lo etiqueta como "lora NSFW g" y lo distribuye bajo la plantilla `template:diffusion-lora` de la libreria `diffusers`. El repositorio ocupa 1,8 GB y esta compuesto por pesos de adaptador, no por un modelo de difusion completo, por lo que requiere cargarse sobre una pipeline base que el autor no declara (`base_model` aparece vacio en la model card).
 
 La informacion publicada es minima: no se especifica el modelo base, el rango o alpha del adaptador, los modulos objetivo, el conjunto de datos de entrenamiento, la licencia ni los idiomas. Tampoco se define una palabra de activacion (`instance_prompt: null`), lo que dificulta reproducir el estilo o el concepto aprendido. El modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que no cuenta con validacion de la comunidad.
 
@@ -79,7 +79,7 @@ No disponible. El autor no declara el modelo base, la licencia ni el concepto ap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/icarus2698/Loras
+- Hugging Face: https://huggingface.co/icarus2698/Loras
 - Descarga de archivos: https://huggingface.co/icarus2698/Loras/tree/main
 - Documentacion de LoRA en diffusers: https://huggingface.co/docs/diffusers/main/en/tutorials/using_peft_for_inference
 - Busqueda web realizada: los resultados obtenidos corresponden unicamente a portadas y paginas de inicio del portal AOL (https://www.aol.com/, https://mail.aol.com/, https://login.aol.com/), sin relacion alguna con el modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a `icarus2698/Loras`.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-angular-coder-30b-a3b es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3-Coder-30B-A3B-Instruct especializado en el framework Angular, desarrollado por el usuario bharathmuppa. El modelo parte de una arquitectura Mixture-of-Experts (etiqueta `qwen3_moe` en HuggingFace) de 30.532.122.624 parámetros totales, de los cuales aproximadamente 3.300 millones se activan por token, según la información publicada sobre el modelo base Qwen3-Coder 30B. El objetivo del autor es cubrir un nicho muy concreto: generar código Angular moderno (componentes standalone, signals, `inject()`, flujo de control `@if`/`@for`/`@defer`, detección de cambios zoneless, Signal Forms, el builder de aplicaciones y migraciones de `ng update`), abarcando las versiones v14 a v22 del framework.
+angular-coder-30b-a3b es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3-Coder-30B-A3B-Instruct especializado en el framework Angular, desarrollado por el usuario bharathmuppa. El modelo parte de una arquitectura Mixture-of-Experts (etiqueta `qwen3_moe` en Hugging Face) de 30.532.122.624 parámetros totales, de los cuales aproximadamente 3.300 millones se activan por token, según la información publicada sobre el modelo base Qwen3-Coder 30B. El objetivo del autor es cubrir un nicho muy concreto: generar código Angular moderno (componentes standalone, signals, `inject()`, flujo de control `@if`/`@for`/`@defer`, detección de cambios zoneless, Signal Forms, el builder de aplicaciones y migraciones de `ng update`), abarcando las versiones v14 a v22 del framework.
 
 La aportación diferencial no es arquitectónica sino de datos: el autor construyó el dataset `bharathmuppa/angular-instruct` con 3.461 pares de instrucción que mezclan documentación oficial de Angular, hechos por versión, problemas conocidos, Material, CDK, NgRx, angular-eslint, la CLI y 400 registros de proyectos compilados y verificados con linter. Sobre esa base aplicó un LoRA de rango 16 en las proyecciones de atención (q/k/v/o) y fusionó los pesos resultantes en bf16, por lo que el repositorio publica el modelo completo y no solo el adaptador (el adaptador aislado está en `bharathmuppa/angular-coder-30b-a3b-lora`).
 
@@ -88,7 +88,7 @@ Frente al base, este modelo intercambia generalidad por especialización en Angu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bharathmuppa/angular-coder-30b-a3b
+- Modelo en Hugging Face: https://huggingface.co/bharathmuppa/angular-coder-30b-a3b
 - Adaptador LoRA: https://huggingface.co/bharathmuppa/angular-coder-30b-a3b-lora
 - Dataset de instrucciones: https://huggingface.co/datasets/bharathmuppa/angular-instruct
 - Registros de entrenamiento (loss por paso): https://huggingface.co/datasets/bharathmuppa/angular-lm-runs

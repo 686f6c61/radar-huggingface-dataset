@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jdpoling/Cod-ID_1.0_MegaDescriptor-L-384 es un repositorio de modelo alojado en HuggingFace por el usuario jdpoling. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, no declara pipeline ni idiomas soportados y su model card contiene unicamente el frontmatter con la licencia Apache 2.0: no hay descripcion del modelo, ni detalles de entrenamiento, ni resultados de evaluacion, ni instrucciones de uso.
+jdpoling/Cod-ID_1.0_MegaDescriptor-L-384 es un repositorio de modelo alojado en Hugging Face por el usuario jdpoling. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, no declara pipeline ni idiomas soportados y su model card contiene unicamente el frontmatter con la licencia Apache 2.0: no hay descripcion del modelo, ni detalles de entrenamiento, ni resultados de evaluacion, ni instrucciones de uso.
 
 El identificador combina tres elementos: el prefijo de proyecto Cod-ID_1.0, el nombre MegaDescriptor-L-384 y el sufijo 384. La nomenclatura es consistente con la familia MegaDescriptor (transformers de vision basados en Swin, con variantes L/384 para entrada de 384x384 pixeles y salida de embeddings orientados a re-identificacion de individuos), pero esta lectura es una inferencia a partir del nombre del repositorio y no esta confirmada por ninguna documentacion publicada en el propio repositorio, por lo que debe tratarse como hipotesis de trabajo y no como especificacion tecnica verificada.
 
@@ -82,5 +82,5 @@ No disponible. La informacion publicada no permite identificar la arquitectura, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jdpoling/Cod-ID_1.0_MegaDescriptor-L-384
+- Repositorio en Hugging Face: https://huggingface.co/jdpoling/Cod-ID_1.0_MegaDescriptor-L-384
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo, demos ni tarjetas de modelo adicionales asociados a este identificador concreto.

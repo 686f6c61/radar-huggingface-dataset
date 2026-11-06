@@ -98,11 +98,11 @@ No se dispone de datos de benchmarks frente a modelos de otros desarrolladores e
 - No se detallan sesgos conocidos en la informacion proporcionada.
 - Licencia Apache 2.0: permite uso comercial, pero se recomienda revisar los terminos del modelo base MiniCPM5-2B por si imponen condiciones adicionales.
 - El contexto de 128K tokens incrementa el consumo de memoria KV; en produccion conviene ajustar `max-model-len` al caso de uso real.
-- El modelo tiene 0 descargas y 1 like en HuggingFace en el momento de la consulta, lo que indica una adopcion practicamente nula y ausencia de validacion independiente por parte de la comunidad.
+- El modelo tiene 0 descargas y 1 like en Hugging Face en el momento de la consulta, lo que indica una adopcion practicamente nula y ausencia de validacion independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DRUPEs/CherryPit-1.2-2B
+- Modelo en Hugging Face: https://huggingface.co/DRUPEs/CherryPit-1.2-2B
 - Version GGUF: https://huggingface.co/DRUPEs/CherryPit-1.2-2B-GGUF
 - Version anterior CherryPit-1.1-2B: https://huggingface.co/DRUPEs/CherryPit-1.1-2B
 - Modelo base MiniCPM5-2B: https://huggingface.co/openbmb/MiniCPM5-2B

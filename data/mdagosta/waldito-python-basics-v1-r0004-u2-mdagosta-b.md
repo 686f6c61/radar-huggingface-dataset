@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mdagosta/waldito-python-basics-v1-r0004-u2-mdagosta-b` es un export de la familia OpenWALDO publicado por el usuario mdagosta en HuggingFace. Se trata de un modelo causal de generación de texto que reutiliza la arquitectura Llama estándar de la librería Transformers, pero con un tokenizador propio de bytes denominado schema-1, que obliga a cargar el tokenizer con `trust_remote_code=True`. El repositorio incluye además un inventario de ficheros (`BOM.json`) y un mapeo de divulgación de contenido de entrenamiento alineado con el reglamento europeo de IA (`EU-BOM.json`).
+El modelo `mdagosta/waldito-python-basics-v1-r0004-u2-mdagosta-b` es un export de la familia OpenWALDO publicado por el usuario mdagosta en Hugging Face. Se trata de un modelo causal de generación de texto que reutiliza la arquitectura Llama estándar de la librería Transformers, pero con un tokenizador propio de bytes denominado schema-1, que obliga a cargar el tokenizer con `trust_remote_code=True`. El repositorio incluye además un inventario de ficheros (`BOM.json`) y un mapeo de divulgación de contenido de entrenamiento alineado con el reglamento europeo de IA (`EU-BOM.json`).
 
 El tamaño real declarado en los ficheros safetensors es de 9.541.632 parámetros, es decir, unos 9,5 millones, lo que lo sitúa en la categoría de modelos ultraligeros, muy por debajo de los modelos de 1B-3B habituales en despliegues locales. Con ese tamaño, el modelo está pensado para tareas de prototipado, experimentación educativa y validación de pipelines más que para producción de alta calidad. El nombre del repositorio sugiere un entrenamiento orientado a fundamentos de Python, aunque la model card no lo confirma explícitamente.
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo es limitada pero concreta: sirve como ejemplo de
 | Tokenizer | schema-1 de bytes de OpenWALDO (requiere `trust_remote_code=True`) |
 | Pipeline | text-generation |
 | Libreria | transformers |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Fecha de creacion | 2026-09-30 |
 | Ultima actualizacion | 2026-09-30 |
 | Descargas / likes | 0 / 0 |
@@ -52,7 +52,7 @@ Con 9,5 millones de parámetros, el modelo es demasiado pequeño para haber abso
 
 - Prototipado de pipelines de generacion de texto: por su tamano de 9,5 M de parametros, permite iterar en segundos sobre la carga, el preprocesado y el postprocesado sin consumir GPU, ideal para validar una arquitectura de servicio antes de escalar a un modelo mayor.
 - Pruebas de integracion con text-generation-inference: al estar etiquetado como compatible con TGI y endpoints, sirve para verificar configuraciones de despliegue, health checks y contratos de API sin coste de computo relevante.
-- Validacion de tokenizadores personalizados: al usar el tokenizador de bytes schema-1 con `trust_remote_code=True`, es un banco de pruebas para comprobar como se comporta un tokenizer no estandar en pipelines de HuggingFace, TGI o vLLM.
+- Validacion de tokenizadores personalizados: al usar el tokenizador de bytes schema-1 con `trust_remote_code=True`, es un banco de pruebas para comprobar como se comporta un tokenizer no estandar en pipelines de Hugging Face, TGI o vLLM.
 - Educacion y docencia sobre LLM: su tamano permite entrenar, inspeccionar y modificar pesos en un portatil, lo que lo hace util para explicar atención, embeddings y decodificacion autoregresiva en cursos.
 - Generacion de fragmentos de codigo Python triviales: si el entrenamiento esta efectivamente orientado a fundamentos de Python, puede emplearse para autocompletar lineas sencillas o ejemplos didacticos, siempre con revision humana y sin expectativas de correccion en problemas complejos.
 - Despliegue en entornos con recursos minimos: cabe en CPU, Raspberry Pi o moviles, por lo que puede integrarse en demos offline o en dispositivos sin acelerador.
@@ -99,5 +99,5 @@ El modelo de mdagosta es aproximadamente dos ordenes de magnitud mas pequeno que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0004-u2-mdagosta-b
+- Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0004-u2-mdagosta-b
 - No se han encontrado en la busqueda web articulos, papers, repositorios o demos relacionados con el modelo, OpenWALDO o su tokenizador schema-1. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

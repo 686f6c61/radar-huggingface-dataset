@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-jeongyakyong-route-v1-link01
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-jeongyakyong-route-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Libreria PEFT: https://huggingface.co/docs/peft
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios o demos adicionales.

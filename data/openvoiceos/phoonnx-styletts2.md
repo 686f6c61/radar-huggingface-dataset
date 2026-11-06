@@ -77,7 +77,7 @@ La principal diferencia frente a Piper es que este repositorio ofrece clonación
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/OpenVoiceOS/phoonnx-styletts2)
+- [Repositorio Hugging Face](https://huggingface.co/OpenVoiceOS/phoonnx-styletts2)
 - [README del repositorio](https://huggingface.co/OpenVoiceOS/phoonnx-styletts2/blob/main/README.md)
 - [Librería phoonnx en GitHub](https://github.com/TigreGotico/phoonnx)
 - [Documentación de clonación de phoonnx](https://github.com/TigreGotico/phoonnx/blob/dev/docs/cloning.md)

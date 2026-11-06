@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed2-epoch3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, perteneciente a la familia OLMo 3 de AI2. El autor, `longtermrisk`, lo ha entrenado con la librería Unsloth y el framework TRL de HuggingFace, aplicando supervisión fina (SFT) durante tres épocas sobre un subconjunto de datos denominado "old bird names last third" (último tercio de nombres de aves antiguos). El objetivo parece ser explorar la capacidad del modelo para memorizar o especializarse en un vocabulario concreto, aunque no se especifican más detalles sobre el propósito final.
+El modelo `longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed2-epoch3` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, perteneciente a la familia OLMo 3 de AI2. El autor, `longtermrisk`, lo ha entrenado con la librería Unsloth y el framework TRL de Hugging Face, aplicando supervisión fina (SFT) durante tres épocas sobre un subconjunto de datos denominado "old bird names last third" (último tercio de nombres de aves antiguos). El objetivo parece ser explorar la capacidad del modelo para memorizar o especializarse en un vocabulario concreto, aunque no se especifican más detalles sobre el propósito final.
 
 Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Aunque el repositorio ocupa 14,6 GB (compatible con pesos en precisión completa para 7B parámetros), la metadata indica un número de parámetros totales de 528.384, que es claramente un error de registro, ya que el modelo base tiene 7 mil millones de parámetros. Este modelo es relevante para quienes estudian el comportamiento de fine-tuning en modelos abiertos de tamaño medio, así como para tareas conversacionales generales en inglés.
 
@@ -21,7 +21,7 @@ Se trata de un modelo de generación de texto en inglés, con licencia Apache 2.
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. Al tratarse de un fine-tuning de `unsloth/Olmo-3-7B-Instruct`, se hereda la arquitectura base de OLMo 3, que es un transformer autoregresivo estandar, pero no se confirma si incorpora alguna innovacion como atencion lineal o mezcla de expertos. El entrenamiento se realizo con la libreria Unsloth, que acelera el fine-tuning mediante kernels optimizados, y con el framework TRL de HuggingFace. Se aplicaron 3 epocas de supervision fina (SFT) sobre un dataset llamado "old bird names last third" con semilla 2. No se mencionan datos sobre el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo. Al tratarse de un fine-tuning de `unsloth/Olmo-3-7B-Instruct`, se hereda la arquitectura base de OLMo 3, que es un transformer autoregresivo estandar, pero no se confirma si incorpora alguna innovacion como atencion lineal o mezcla de expertos. El entrenamiento se realizo con la libreria Unsloth, que acelera el fine-tuning mediante kernels optimizados, y con el framework TRL de Hugging Face. Se aplicaron 3 epocas de supervision fina (SFT) sobre un dataset llamado "old bird names last third" con semilla 2. No se mencionan datos sobre el volumen de tokens, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -64,5 +64,5 @@ No se dispone de datos de rendimiento comparativos. Como referencia, el modelo b
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed2-epoch3)
+- [Hugging Face - longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed2-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-last-third-v2-sft-seed2-epoch3)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)

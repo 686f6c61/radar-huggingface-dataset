@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/phi4-14b-a1-badmed-seed0-v2` es un fine-tune del modelo base Phi-4 de Microsoft, un modelo de lenguaje de 14 mil millones de parámetros desarrollado por el equipo de investigación de Microsoft. La entrada fue publicada en HuggingFace por el usuario ArthT y, por el nombre del repositorio, parece orientada a un dominio médico (la abreviatura "badmed" sugiere "biomedical" o "bad medical"), aunque no se ha confirmado en la documentación disponible. El modelo se distribuye en formato `safetensors` y fue entrenado con la librería `unsloth`, conocida por optimizar el proceso de fine-tuning.
+El modelo `ArthT/phi4-14b-a1-badmed-seed0-v2` es un fine-tune del modelo base Phi-4 de Microsoft, un modelo de lenguaje de 14 mil millones de parámetros desarrollado por el equipo de investigación de Microsoft. La entrada fue publicada en Hugging Face por el usuario ArthT y, por el nombre del repositorio, parece orientada a un dominio médico (la abreviatura "badmed" sugiere "biomedical" o "bad medical"), aunque no se ha confirmado en la documentación disponible. El modelo se distribuye en formato `safetensors` y fue entrenado con la librería `unsloth`, conocida por optimizar el proceso de fine-tuning.
 
 La relevancia de este modelo radica en que parte de Phi-4, un modelo de 14B parámetros que destaca por su entrenamiento con datos sintéticos de alta calidad y su rendimiento en tareas de razonamiento, superando en varios benchmarks a modelos de mayor tamaño. Este fine-tune concreto busca adaptar esas capacidades generales a un ámbito específico, presumiblemente el médico, aunque no se ha publicado información detallada sobre el dataset de entrenamiento ni los objetivos concretos del ajuste.
 

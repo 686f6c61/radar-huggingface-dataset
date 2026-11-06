@@ -78,10 +78,10 @@ El autor califica estas diferencias de formato de salida (etiquetas `<value>` en
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-3-8 | 9,41 B | 262.144 | safetensors MLX, mixta 3/8 bits (5,625 bits/peso) | no disponible | no (solo prueba de humo) | HuggingFace, 0 descargas, 0 likes |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (origen) | 9,41 B | 262.144 | safetensors BF16 | no declarada en su model card | no reejecutados en esta conversion | HuggingFace |
+| DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-3-8 | 9,41 B | 262.144 | safetensors MLX, mixta 3/8 bits (5,625 bits/peso) | no disponible | no (solo prueba de humo) | Hugging Face, 0 descargas, 0 likes |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B (origen) | 9,41 B | 262.144 | safetensors BF16 | no declarada en su model card | no reejecutados en esta conversion | Hugging Face |
 | Builds hermanos mixed-3-5, mixed-3-6, mixed-4-6, mixed-4-8 | 9,41 B | 262.144 | safetensors MLX, mixtas | no disponible | no | mismo autor |
-| Qwen/Qwen3.5-9B (base del SFT) | aprox. 9 B | no disponible | BF16 | no disponible en la informacion | no disponible en la informacion | HuggingFace |
+| Qwen/Qwen3.5-9B (base del SFT) | aprox. 9 B | no disponible | BF16 | no disponible en la informacion | no disponible en la informacion | Hugging Face |
 
 No hay datos de rendimiento que permitan comparar estos artefactos entre si ni con alternativas externas de la misma categoria; la informacion disponible se limita a la arquitectura, el proceso de conversion y la prueba de humo descrita.
 
@@ -100,7 +100,7 @@ No hay datos de rendimiento que permitan comparar estos artefactos entre si ni c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-3-8
+- Repositorio en Hugging Face: https://huggingface.co/DJLougen/MiMo-V2.6-Distill-Qwen-9B-MLX-mixed-3-8
 - Modelo de origen (BF16): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Revision concreta del checkpoint de origen citada en la model card: `f2773fb482ac3dd047a4af4003b86e56b7225d0d`
 - Modelo base del ajuste supervisado: https://huggingface.co/Qwen/Qwen3.5-9B

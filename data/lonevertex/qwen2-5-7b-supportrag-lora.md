@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LoneVertex/Qwen2.5-7B-SupportRAG-LoRA | ~7,6B (base) + adaptador LoRA de tamano no especificado | No especificado para el adaptador; 32.768 tokens nativos en el modelo base | Apache 2.0 | Adaptador PEFT | Publicado en HuggingFace; 0 descargas, 0 likes en el momento de la consulta |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | ~7,6B | 32.768 tokens nativos según documentación oficial del modelo base | Apache 2.0 | Safetensors (formato estándar del modelo base) | Ampliamente distribuido en HuggingFace |
+| LoneVertex/Qwen2.5-7B-SupportRAG-LoRA | ~7,6B (base) + adaptador LoRA de tamano no especificado | No especificado para el adaptador; 32.768 tokens nativos en el modelo base | Apache 2.0 | Adaptador PEFT | Publicado en Hugging Face; 0 descargas, 0 likes en el momento de la consulta |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | ~7,6B | 32.768 tokens nativos según documentación oficial del modelo base | Apache 2.0 | Safetensors (formato estándar del modelo base) | Ampliamente distribuido en Hugging Face |
 | Otros adaptadores LoRA para soporte al cliente | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La búsqueda web realizada no devolvió información técnica sobre alternativas comparables; los únicos resultados fueron portales de anuncios clasificados (Bazos.cz y Bazos.sk) sin relación alguna con el modelo. No es posible, por tanto, establecer una comparativa rigurosa de rendimiento con otros adaptadores del mismo nicho con la información disponible.
@@ -91,6 +91,6 @@ La búsqueda web realizada no devolvió información técnica sobre alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LoneVertex/Qwen2.5-7B-SupportRAG-LoRA
+- Modelo en Hugging Face: https://huggingface.co/LoneVertex/Qwen2.5-7B-SupportRAG-LoRA
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante. Los resultados devueltos corresponden a portales de anuncios clasificados (https://www.bazos.cz/, https://auto.bazos.cz/, https://www.bazos.sk/, https://dum.bazos.cz/, https://zvirata.bazos.cz/) sin relación con el modelo. No se han localizado papers, blogs, repositorios ni demos asociados a este adaptador.

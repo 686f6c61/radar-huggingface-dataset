@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-groot30v11v
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-groot30v11v
 - Run de W&B (proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp20_groot30v11v`): no disponible como URL directa en la información proporcionada.
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

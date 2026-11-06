@@ -71,9 +71,9 @@ Cada benchmark usa 30 problemas y 32 respuestas con semilla individual por probl
 
 | Modelo | Parametros | Contexto | AIME 2024 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Ouro-1.4B-Thinking-DOPD | 1,4B | 40.960 | 67,29 % (Avg@32) | Apache 2.0 | HuggingFace |
-| ByteDance/Ouro-1.4B-Thinking | 1,4B | no disponible | 52,50 % (Avg@8) | no disponible en la informacion | HuggingFace |
-| Qwen3-30B-A3B-Base (ancla) | 30B totales / 3B activos | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| Ouro-1.4B-Thinking-DOPD | 1,4B | 40.960 | 67,29 % (Avg@32) | Apache 2.0 | Hugging Face |
+| ByteDance/Ouro-1.4B-Thinking | 1,4B | no disponible | 52,50 % (Avg@8) | no disponible en la informacion | Hugging Face |
+| Qwen3-30B-A3B-Base (ancla) | 30B totales / 3B activos | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 La comparacion directa con el checkpoint original solo esta disponible a Avg@8 (52,50 % frente a 68,33 %), por lo que la cifra Avg@32 de este modelo no es directamente comparable con la del base. No se dispone de resultados de otras alternativas de 1,4B en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ La comparacion directa con el checkpoint original solo esta disponible a Avg@8 (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gbcfchc/Ouro-1.4B-Thinking-DOPD
+- Modelo en Hugging Face: https://huggingface.co/gbcfchc/Ouro-1.4B-Thinking-DOPD
 - Modelo base: https://huggingface.co/ByteDance/Ouro-1.4B-Thinking
 - Repositorio de entrenamiento y evaluacion: https://github.com/gbcfchc/looped-dev
 - Ancla pre: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base

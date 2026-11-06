@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christopheredwa/retrieval-final` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de MoCo v3 (Momentum Contrast v3) orientada a tareas de retrieval (recuperación). MoCo v3 es un marco de aprendizaje autosupervisado por contraste que entrena un codificador con un codificador de momento y colas de características negativas; en su formulación original se aplica a visión por computador, y aquí se reorienta a recuperación. El autor publica el modelo bajo licencia Apache 2.0, con pesos en formato safetensors y código PyTorch en `main.py`.
+`christopheredwa/retrieval-final` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de MoCo v3 (Momentum Contrast v3) orientada a tareas de retrieval (recuperación). MoCo v3 es un marco de aprendizaje autosupervisado por contraste que entrena un codificador con un codificador de momento y colas de características negativas; en su formulación original se aplica a visión por computador, y aquí se reorienta a recuperación. El autor publica el modelo bajo licencia Apache 2.0, con pesos en formato safetensors y código PyTorch en `main.py`.
 
 El dato más relevante es su tamaño: el checkpoint declara 24.832 parámetros totales, una cifra muy inferior a la de cualquier configuración "base" habitual de un transformer de visión (del orden de decenas o cientos de millones). El propio autor indica que la configuración base está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, y que `model.safetensors` es una inicialización válida, no un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark en el repositorio.
 
@@ -76,7 +76,7 @@ La model card afirma explícitamente que no se reclama ninguna puntuación y que
 - Compatibilidad con GPU de consumo: sí, en cualquier GPU con al menos 1 GB de VRAM; de hecho, la ejecución en CPU es viable para pruebas y para la mayoría de experimentos con este número de parámetros.
 - Opciones de despliegue: PyTorch nativo mediante `main.py`, dado que es una implementación personalizada. No es compatible con vLLM, llama.cpp, Ollama o TGI, al no ser un modelo de lenguaje causal ni publicarse pesos en GGUF. La carga mediante APIs automáticas genéricas requiere un adaptador explícito, según advierte el propio autor.
 - Latencia y throughput: no disponibles. Además, cualquier medición sobre el checkpoint actual no sería representativa, ya que los pesos son una inicialización sin entrenar.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, coherente con el tamaño declarado de los pesos.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, coherente con el tamaño declarado de los pesos.
 
 ## Comparativa con modelos similares
 
@@ -84,7 +84,7 @@ La búsqueda web realizada no devolvió resultados relevantes (los enlaces obten
 
 | Modelo | Categoría | Licencia | Disponibilidad | Estado de los pesos |
 |---|---|---|---|---|
-| christopheredwa/retrieval-final | MoCo v3 para retrieval, implementación propia | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Inicialización sin entrenar, 24.832 parámetros |
+| christopheredwa/retrieval-final | MoCo v3 para retrieval, implementación propia | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Inicialización sin entrenar, 24.832 parámetros |
 | MoCo v3 (implementación de referencia de los autores originales) | Aprendizaje autosupervisado contrastivo para visión | No verificada en esta búsqueda | Repositorio de código público | Checkpoints entrenados publicados por los autores |
 | CLIP / OpenCLIP | Contraste imagen-texto para retrieval y clasificación cero-shot | No verificada en esta búsqueda | Pesos ampliamente distribuidos | Entrenados sobre cientos de millones de pares imagen-texto |
 | DINOv2 | Autosupervisado para representaciones visuales densas | No verificada en esta búsqueda | Pesos ampliamente distribuidos | Entrenados y evaluados en múltiples benchmarks |
@@ -108,6 +108,6 @@ Diferencias clave frente a esas alternativas: escala de parámetros varios órde
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christopheredwa/retrieval-final
+- Repositorio en Hugging Face: https://huggingface.co/christopheredwa/retrieval-final
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: paper, blog, repositorio de código o demo asociados. Los resultados devueltos por la búsqueda corresponden a páginas de soporte de Microsoft y no guardan relación con este repositorio.
 - Referencia del método (no verificada en la búsqueda realizada): MoCo v3, "An Empirical Study of Training Self-Supervised Vision Transformers" (Chen, Xie y He). No se dispone de URL confirmada en la información proporcionada.

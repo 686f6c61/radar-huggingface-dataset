@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ayousanz/piper-plus-zero-shot-multi-7lang-v8` es un checkpoint alojado en HuggingFace cuyo nombre sugiere que se trata de un sistema de síntesis de voz (TTS) basado en la arquitectura Piper, con capacidades de clonación de voz *zero-shot* y soporte para siete idiomas. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia ni idiomas concretos. El repositorio tiene un tamaño de 163 GB, lo que indica un conjunto de pesos considerable, posiblemente con múltiples variantes o un modelo de gran escala. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargarlo.
+El modelo `ayousanz/piper-plus-zero-shot-multi-7lang-v8` es un checkpoint alojado en Hugging Face cuyo nombre sugiere que se trata de un sistema de síntesis de voz (TTS) basado en la arquitectura Piper, con capacidades de clonación de voz *zero-shot* y soporte para siete idiomas. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia ni idiomas concretos. El repositorio tiene un tamaño de 163 GB, lo que indica un conjunto de pesos considerable, posiblemente con múltiples variantes o un modelo de gran escala. El acceso está restringido (gated), por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargarlo.
 
 Dado que no se han publicado detalles técnicos ni benchmarks, esta ficha se basa únicamente en los metadatos del repositorio y en la interpretación del nombre. Se recomienda consultar la documentación del autor o el propio repositorio para obtener información verificada antes de considerar su uso en producción.
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso comercial o académico.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso comercial o académico.
 - Falta de documentación: no hay información sobre licencia, sesgos, alucinaciones o limitaciones de contexto.
 - Riesgo de mal uso: si el modelo permite clonación de voz *zero-shot*, podría utilizarse para suplantación de identidad o fraude. Se debe extremar la precaución en aplicaciones sensibles.
 - Tamaño del repositorio: 163 GB implica requisitos de almacenamiento y ancho de banda elevados.
@@ -66,4 +66,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ayousanz/piper-plus-zero-shot-multi-7lang-v8
+- Repositorio Hugging Face: https://huggingface.co/ayousanz/piper-plus-zero-shot-multi-7lang-v8

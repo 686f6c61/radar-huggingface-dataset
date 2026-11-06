@@ -69,9 +69,9 @@ No disponible. Este repositorio no es un modelo de proposito general, sino un pa
 
 | Alternativa | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Adaptadores SFT sobre LLaMA (este repositorio) | no disponible | no disponible | no disponible (el base mantiene sus terminos) | publico en HuggingFace |
-| Checkpoints GRU (este repositorio) | no disponible | no disponible | no disponible | publico en HuggingFace |
-| Checkpoints Transformer (este repositorio) | no disponible | no disponible | no disponible | publico en HuggingFace |
+| Adaptadores SFT sobre LLaMA (este repositorio) | no disponible | no disponible | no disponible (el base mantiene sus terminos) | publico en Hugging Face |
+| Checkpoints GRU (este repositorio) | no disponible | no disponible | no disponible | publico en Hugging Face |
+| Checkpoints Transformer (este repositorio) | no disponible | no disponible | no disponible | publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,10 +83,10 @@ No disponible. Este repositorio no es un modelo de proposito general, sino un pa
 - Restricciones de licencia: el repositorio no concede licencia nueva alguna y no especifica los terminos aplicables a los adaptadores ni a los demas artefactos. El modelo base LLaMA no se redistribuye y sigue sujeto a sus terminos de acceso originales, lo que condiciona cualquier uso comercial.
 - Dependencia externa: para ejecutar los adaptadores hay que obtener por separado el modelo base, cuya version concreta no se detalla en la informacion proporcionada.
 - Reproducibilidad parcial: reconstruir figuras a partir de resumenes guardados no equivale a reentrenar ni a repetir la inferencia, segun advierte la propia model card.
-- Fechas del repositorio: creado y actualizado el 2026-09-28 segun los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 2026-09-28 segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xhb120633/behavioral-model-ablations
+- Repositorio en Hugging Face: https://huggingface.co/xhb120633/behavioral-model-ablations
 - Repositorio de codigo en GitHub: https://github.com/xhb120633/transformer_bias_learning
 - Preprint de referencia: *Better Behavioral Prediction, More Faithful Model Ablations? Evidence from Sequential Choice*, de Hanbo Xie (enlace directo no disponible en la informacion proporcionada)

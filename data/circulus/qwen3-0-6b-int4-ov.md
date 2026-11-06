@@ -93,7 +93,7 @@ La comparativa se limita a los modelos citados en la documentacion del repositor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/circulus/qwen3-0.6b-int4-ov
+- Repositorio en Hugging Face: https://huggingface.co/circulus/qwen3-0.6b-int4-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo objetivo citado en la model card (`qwen3-4b-int4-ov`): ID exacto no enlazado en la documentacion; URL presumible https://huggingface.co/circulus/qwen3-4b-int4-ov
 - Runtime OpenVINO GenAI (referencia del stack de despliegue): https://github.com/openvinotoolkit/openvino.genai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Morteza73/persian-piper-sherpa-onnx es una publicación de HuggingFace del usuario Morteza73 cuya model card está prácticamente vacía: únicamente incluye la declaración de licencia Apache-2.0 en el frontmatter, sin descripción, sin idiomas declarados y sin pipeline asignado. Por la convención de nombres empleada ("persian-piper" + "sherpa-onnx") cabe inferir que se trata de una voz de síntesis de voz (TTS) en persa derivada del sistema Piper y empaquetada para el runtime sherpa-onnx, pero esta interpretación no está confirmada por ninguna documentación del autor.
+El repositorio Morteza73/persian-piper-sherpa-onnx es una publicación de Hugging Face del usuario Morteza73 cuya model card está prácticamente vacía: únicamente incluye la declaración de licencia Apache-2.0 en el frontmatter, sin descripción, sin idiomas declarados y sin pipeline asignado. Por la convención de nombres empleada ("persian-piper" + "sherpa-onnx") cabe inferir que se trata de una voz de síntesis de voz (TTS) en persa derivada del sistema Piper y empaquetada para el runtime sherpa-onnx, pero esta interpretación no está confirmada por ninguna documentación del autor.
 
 El interés técnico de este tipo de artefacto radica en su cadena de herramientas: Piper genera voces TTS basadas en VITS que se convierten a formato ONNX, y sherpa-onnx las ejecuta con ONNX Runtime de forma completamente local, sin acceso a Internet, sobre CPU y dispositivos de borde. Esto permite síntesis de voz offline en móviles, Raspberry Pi o navegador, con latencias de tiempo real y sin coste de API.
 
@@ -78,7 +78,7 @@ No disponible. No se dispone de datos verificables sobre otras voces persas Pipe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Morteza73/persian-piper-sherpa-onnx
+- Repositorio en Hugging Face: https://huggingface.co/Morteza73/persian-piper-sherpa-onnx
 - Documentación de voces Piper en sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/tts/piper.html
 - Documentación general de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/index.html
 - Repositorio GitHub de sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

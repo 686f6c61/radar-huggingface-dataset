@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`token-provenance` no es un modelo de lenguaje, sino una libreria Python de instrumentacion para el recuento de tokens. Su tesis central es que todo recuento de tokens debe llevar adjunta la codificacion que lo produjo (tokenizador, plantilla de chat, numero de tokens especiales y version), de modo que la metrica no se pueda confundir con un entero anonimo. El autor es el usuario de HuggingFace `zeechimp` y el paquete se publica bajo licencia Apache 2.0. El problema que ataca es concreto: presupuestar prompts con heuristicas tipo `len(text) // 4`, que producen cifras plausibles pero incorrectas, se propagan a estimaciones de coste y provocan truncamientos silenciosos en el servidor.
+`token-provenance` no es un modelo de lenguaje, sino una libreria Python de instrumentacion para el recuento de tokens. Su tesis central es que todo recuento de tokens debe llevar adjunta la codificacion que lo produjo (tokenizador, plantilla de chat, numero de tokens especiales y version), de modo que la metrica no se pueda confundir con un entero anonimo. El autor es el usuario de Hugging Face `zeechimp` y el paquete se publica bajo licencia Apache 2.0. El problema que ataca es concreto: presupuestar prompts con heuristicas tipo `len(text) // 4`, que producen cifras plausibles pero incorrectas, se propagan a estimaciones de coste y provocan truncamientos silenciosos en el servidor.
 
 El ejemplo que documenta el propio autor es ilustrativo: un prompt presupuestado con `len(text) // 4 = 44` tokens, servido con una plantilla ChatML que anade 11 tokens especiales y tokenizado con BPE real en 43 tokens para el cuerpo, da un total real de 54. Bajo la heuristica el prompt "cabe"; bajo la codificacion real no cabe y el servidor lo trunca sin avisar. La libreria convierte ese fallo silencioso en un error explicito mediante un tipo `TCount` que transporta metadatos de codificacion y un conjunto de seis mecanismos de defensa escalables.
 
@@ -82,7 +82,7 @@ Tiempo total de ejecucion del demo: menos de un segundo en la CPU de un portatil
 
 ## Comparativa con modelos similares
 
-No disponible en sentido estricto. `token-provenance` no compite con modelos de lenguaje ni con tokenizadores, sino que se situa por encima de ellos como capa de trazabilidad. La comparacion directa con artefactos de la misma categoria (bibliotecas de tokenizacion como las de HuggingFace o tiktoken) no puede hacerse con los datos proporcionados, porque la informacion disponible no incluye mediciones frente a esas alternativas.
+No disponible en sentido estricto. `token-provenance` no compite con modelos de lenguaje ni con tokenizadores, sino que se situa por encima de ellos como capa de trazabilidad. La comparacion directa con artefactos de la misma categoria (bibliotecas de tokenizacion como las de Hugging Face o tiktoken) no puede hacerse con los datos proporcionados, porque la informacion disponible no incluye mediciones frente a esas alternativas.
 
 | Criterio | token-provenance | Alternativas de tokenizacion (p. ej. bibliotecas de tokenizadores) |
 |---|---|---|
@@ -91,7 +91,7 @@ No disponible en sentido estricto. `token-provenance` no compite con modelos de 
 | Contexto | No aplica (utilidad de calculo de presupuesto) | No disponible |
 | Rendimiento | Demo completo en menos de 1 s en CPU | No disponible |
 | Licencia | Apache 2.0 | No disponible |
-| Disponibilidad | HuggingFace (`zeechimp/token-provenance`) | No disponible |
+| Disponibilidad | Hugging Face (`zeechimp/token-provenance`) | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -106,5 +106,5 @@ No disponible en sentido estricto. `token-provenance` no compite con modelos de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeechimp/token-provenance
+- Hugging Face: https://huggingface.co/zeechimp/token-provenance
 - No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este artefacto.

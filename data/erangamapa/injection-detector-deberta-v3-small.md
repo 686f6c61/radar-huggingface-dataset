@@ -69,9 +69,9 @@ El autor advierte que estas cifras no sustituyen a la suite de evaluacion (evalg
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| erangamapa/injection-detector-deberta-v3-small | ~44 M (base) | no disponible | Clasificador de prompt injection dominio sportsbook | Apache 2.0 | HuggingFace |
-| microsoft/deberta-v3-small | ~44 M | 512 tokens (version original) | Encoder generalista | MIT | HuggingFace |
-| ProtectAI/deberta-v3-base-prompt-injection | ~86 M (base) | no disponible | Clasificador de prompt injection generalista | Apache 2.0 | HuggingFace |
+| erangamapa/injection-detector-deberta-v3-small | ~44 M (base) | no disponible | Clasificador de prompt injection dominio sportsbook | Apache 2.0 | Hugging Face |
+| microsoft/deberta-v3-small | ~44 M | 512 tokens (version original) | Encoder generalista | MIT | Hugging Face |
+| ProtectAI/deberta-v3-base-prompt-injection | ~86 M (base) | no disponible | Clasificador de prompt injection generalista | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas de rendimiento publicadas entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, licencia y enfoque.
 
@@ -87,5 +87,5 @@ No se dispone de comparativas de rendimiento publicadas entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erangamapa/injection-detector-deberta-v3-small
+- Modelo en Hugging Face: https://huggingface.co/erangamapa/injection-detector-deberta-v3-small
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-small

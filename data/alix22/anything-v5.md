@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anything V5 es un modelo de texto a imagen (text-to-image) basado en la arquitectura de Stable Diffusion 1.5, publicado en HuggingFace por el usuario alix22. El modelo es un reupload de la versión distribuida a través de la plataforma Stable Diffusion API, y está orientado a la generación de imágenes con estética ultra-realista y anime. Con 859.520.964 parámetros, se trata de un modelo de difusión latente que utiliza un U-Net, un VAE y un codificador de texto CLIP, y que se puede ejecutar con la librería diffusers de HuggingFace.
+Anything V5 es un modelo de texto a imagen (text-to-image) basado en la arquitectura de Stable Diffusion 1.5, publicado en Hugging Face por el usuario alix22. El modelo es un reupload de la versión distribuida a través de la plataforma Stable Diffusion API, y está orientado a la generación de imágenes con estética ultra-realista y anime. Con 859.520.964 parámetros, se trata de un modelo de difusión latente que utiliza un U-Net, un VAE y un codificador de texto CLIP, y que se puede ejecutar con la librería diffusers de Hugging Face.
 
 El modelo resuelve el problema de generar ilustraciones y conceptos visuales a partir de descripciones textuales, y es relevante para desarrolladores y diseñadores que buscan un modelo ligero y de código abierto, con licencia CreativeML Open RAIL-M, que permite uso comercial con restricciones. Aunque no se dispone de información detallada sobre los datos de entrenamiento, el modelo es un fine-tune de Stable Diffusion 1.5 orientado a estética anime y retratos realistas.
 
@@ -51,16 +51,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada: para un modelo de Stable Diffusion 1.5 con ~860M parámetros, se recomiendan al menos 4 GB de VRAM para generar imágenes a 512x512 en fp16. Con cuantización 8-bit se puede reducir a 2-3 GB, aunque no se dispone de datos específicos para este modelo.
 - GPU recomendadas: RTX 3060 12GB, RTX 4070, RTX 4090 o A100. En GPUs de consumo, una RTX 3060 con 12GB es suficiente para ejecutar el modelo de forma fluida.
-- Despliegue: compatible con la librería diffusers de HuggingFace, ComfyUI, Automatic1111 y con la API de Stable Diffusion API que se menciona en la model card.
+- Despliegue: compatible con la librería diffusers de Hugging Face, ComfyUI, Automatic1111 y con la API de Stable Diffusion API que se menciona en la model card.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Anything V5 | 859.520.964 | No disponible | CreativeML Open RAIL-M | HuggingFace, Civitai, Stable Diffusion API |
-| Anything V3 | No disponible | No disponible | CreativeML Open RAIL-M | HuggingFace, Civitai |
-| DreamShaper | No disponible | No disponible | CreativeML Open RAIL-M | HuggingFace, Civitai |
+| Anything V5 | 859.520.964 | No disponible | CreativeML Open RAIL-M | Hugging Face, Civitai, Stable Diffusion API |
+| Anything V3 | No disponible | No disponible | CreativeML Open RAIL-M | Hugging Face, Civitai |
+| DreamShaper | No disponible | No disponible | CreativeML Open RAIL-M | Hugging Face, Civitai |
 
 Los tres modelos están basados en Stable Diffusion 1.5 y comparten una arquitectura y un número de parámetros similares. No se dispone de datos de rendimiento comparativos en la información disponible.
 
@@ -70,12 +70,12 @@ Los tres modelos están basados en Stable Diffusion 1.5 y comparten una arquitec
 - Riesgo de alucinación: puede generar imágenes con anatomía incorrecta, manos deformadas, rostros distorsionados o detalles incoherentes, especialmente en prompts complejos.
 - Limitaciones de contexto: al ser un modelo de texto a imagen, no entiende instrucciones complejas ni mantiene conversaciones; solo genera imágenes a partir de un prompt.
 - Restricciones de licencia: la licencia CreativeML Open RAIL-M permite uso comercial, pero impone restricciones de uso, como no generar contenido ilegal, dañino o discriminatorio. Es necesario revisar los términos completos antes de usar el modelo en producción.
-- Caveat: el modelo en HuggingFace es un reupload de una API comercial y puede no coincidir exactamente con la versión original de Anything V5 distribuida en Civitai.
+- Caveat: el modelo en Hugging Face es un reupload de una API comercial y puede no coincidir exactamente con la versión original de Anything V5 distribuida en Civitai.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alix22/anything-v5
-- Modelo original de Stable Diffusion API en HuggingFace: https://huggingface.co/stablediffusionapi/anything-v5
+- Modelo en Hugging Face: https://huggingface.co/alix22/anything-v5
+- Modelo original de Stable Diffusion API en Hugging Face: https://huggingface.co/stablediffusionapi/anything-v5
 - Página del modelo en Stable Diffusion API: https://stablediffusionapi.com/models/anything-v5
 - Búsqueda en Civitai de Anything V5: https://civitai.com/?query=Anything%20V5
 - Ficha en AI Models FYI: https://www.aimodels.fyi/models/huggingFace/anything-v5-stablediffusionapi

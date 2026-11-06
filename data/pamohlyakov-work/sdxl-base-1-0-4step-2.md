@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `pamohlyakov-work/sdxl-base-1.0-4step-2` | 2.567.463.684 | SDXL Base 1.0 (1024x1024) | openrail++ | HuggingFace, 31 descargas | Copia del checkpoint oficial en layout Diffusers; Lightning como LoRA separado |
-| `stabilityai/stable-diffusion-xl-base-1.0` | Similar (checkpoint oficial) | SDXL Base 1.0 | openrail++ | HuggingFace, repo oficial | Incluye variantes de precision, refiner y ficheros adicionales; es la fuente de los pesos |
-| `ByteDance/SDXL-Lightning` | Adaptador LoRA (no modelo completo) | SDXL Base 1.0 | openrail++ (segun repo) | HuggingFace | Adaptador de destilacion para 1, 2, 4 u 8 pasos; se aplica sobre SDXL Base |
-| `stabilityai/stable-diffusion-xl-refiner-1.0` | Modelo complementario | SDXL Refiner | openrail++ | HuggingFace | Refiner oficial para mejorar calidad; no incluido en este repo |
+| `pamohlyakov-work/sdxl-base-1.0-4step-2` | 2.567.463.684 | SDXL Base 1.0 (1024x1024) | openrail++ | Hugging Face, 31 descargas | Copia del checkpoint oficial en layout Diffusers; Lightning como LoRA separado |
+| `stabilityai/stable-diffusion-xl-base-1.0` | Similar (checkpoint oficial) | SDXL Base 1.0 | openrail++ | Hugging Face, repo oficial | Incluye variantes de precision, refiner y ficheros adicionales; es la fuente de los pesos |
+| `ByteDance/SDXL-Lightning` | Adaptador LoRA (no modelo completo) | SDXL Base 1.0 | openrail++ (segun repo) | Hugging Face | Adaptador de destilacion para 1, 2, 4 u 8 pasos; se aplica sobre SDXL Base |
+| `stabilityai/stable-diffusion-xl-refiner-1.0` | Modelo complementario | SDXL Refiner | openrail++ | Hugging Face | Refiner oficial para mejorar calidad; no incluido en este repo |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pamohlyakov-work/sdxl-base-1.0-4step-2
+- Repositorio Hugging Face: https://huggingface.co/pamohlyakov-work/sdxl-base-1.0-4step-2
 - Modelo base oficial: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Repo referenciado en la model card: https://huggingface.co/phobos36/sdxl-base-1.0-single
 - Rama del checkpoint ComfyUI: https://huggingface.co/phobos36/sdxl-base-1.0-single/tree/comfy-checkpoint

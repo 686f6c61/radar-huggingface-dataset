@@ -64,5 +64,5 @@ No disponible. No se dispone de información sobre otros adaptadores LoRA compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed2026_step340
+- Repositorio Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed2026_step340
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct

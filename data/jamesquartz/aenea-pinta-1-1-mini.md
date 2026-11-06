@@ -104,7 +104,7 @@ Alternativas de terceros en la categoría de enrutadores semánticos ligeros: no
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/JamesQuartz/aenea-pinta-1.1-mini
-- HuggingFace (modelo completo de la familia): https://huggingface.co/JamesQuartz/aenea-pinta-1.1
+- Hugging Face (modelo): https://huggingface.co/JamesQuartz/aenea-pinta-1.1-mini
+- Hugging Face (modelo completo de la familia): https://huggingface.co/JamesQuartz/aenea-pinta-1.1
 - Repositorio GitHub, paper, blog o demo: no disponible en la información proporcionada.
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (corresponden a foros de traducción de efectos de Adobe After Effects) y no aportan enlaces relevantes.

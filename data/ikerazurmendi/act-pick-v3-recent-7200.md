@@ -124,7 +124,7 @@ No se dispone de comparación con políticas de otras familias (p. ej. Diffusion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-7200
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-7200
 - Repositorios hermanos citados en la model card (bajo el mismo autor): `act-pick-v3-recent-12000`, `act-pick-v3-6000`, `act-pick-v3-strict-2400`, `act-pick-v3-1-2-pieces-18000`, `act-pick-v3-chunk60-4800`, `act-pick-v3-1piece-9600`, `act-pick-v2-6000`, `act-pick-*` (prefijo `https://huggingface.co/IkerAzurmendi/`).
 - LeRobot (librería y receta `train()`): https://github.com/huggingface/lerobot
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, al paper de ACT ni a demos; los resultados devueltos no guardan relación con el contenido de esta ficha.

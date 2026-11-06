@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gouthamvel/TTS-cleaner es un repositorio publicado en HuggingFace por el usuario Gouthamvel. La informacion disponible es minima: la model card unicamente contiene la declaracion de licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
+Gouthamvel/TTS-cleaner es un repositorio publicado en Hugging Face por el usuario Gouthamvel. La informacion disponible es minima: la model card unicamente contiene la declaracion de licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y no tiene pipeline declarado.
 
 Por el nombre del repositorio se puede inferir que el autor lo plantea como una herramienta de limpieza o preprocesado de texto orientada a sintesis de voz (TTS), pero esta interpretacion no esta confirmada por ninguna documentacion oficial y no debe tomarse como un dato tecnico fiable. No hay informacion sobre tamano de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -60,7 +60,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gouthamvel/TTS-cleaner | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| Gouthamvel/TTS-cleaner | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gouthamvel/TTS-cleaner
+- Repositorio en Hugging Face: https://huggingface.co/Gouthamvel/TTS-cleaner
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada. Los resultados devueltos por el buscador no guardan relacion con el modelo (contenido sobre la herramienta de captura de pantalla de Windows).

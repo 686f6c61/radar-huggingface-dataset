@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMind-YuHua-Linear | 104M | no disponible | no disponible | HuggingFace |
+| MiniMind-YuHua-Linear | 104M | no disponible | no disponible | Hugging Face |
 | MiniMind (original, softmax) | 104M | no disponible | no disponible | GitHub/HuggingFace |
-| Qwen2.5-3B-LiBai (mismo autor) | 3B | no disponible | no disponible | HuggingFace |
+| Qwen2.5-3B-LiBai (mismo autor) | 3B | no disponible | no disponible | Hugging Face |
 
 El modelo se posiciona como una variante experimental del MiniMind base, no como un modelo de propósito general. Su principal diferenciador es la atención lineal, no el rendimiento bruto. El autor también mantiene otros modelos de estilo literario (como el mencionado Qwen2.5-3B-LiBai) que pueden servir de comparativa en cuanto a calidad de generación creativa.
 
@@ -87,7 +87,7 @@ El modelo se posiciona como una variante experimental del MiniMind base, no como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikunpunk/MiniMind-YuHua-Linear
+- Modelo en Hugging Face: https://huggingface.co/shikunpunk/MiniMind-YuHua-Linear
 - Perfil del autor: https://huggingface.co/shikunpunk
 - Proyecto MiniMind (base del modelo): https://jingyaogong.github.io/minimind/
 - Repositorio del código MiniMind: https://github.com/jingyaogong/minimind

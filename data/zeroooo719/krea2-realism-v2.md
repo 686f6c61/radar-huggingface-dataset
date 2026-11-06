@@ -44,7 +44,7 @@ La arquitectura es un adaptador LoRA aplicado al modelo base Krea-2-Turbo, que e
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas cuantitativas como FID, CLIP score o comparaciones con otros modelos. El autor solo ofrece ejemplos visuales en la galería de la página de HuggingFace, sin datos numéricos. Por tanto, no es posible evaluar objetivamente el rendimiento frente a alternativas.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye métricas cuantitativas como FID, CLIP score o comparaciones con otros modelos. El autor solo ofrece ejemplos visuales en la galería de la página de Hugging Face, sin datos numéricos. Por tanto, no es posible evaluar objetivamente el rendimiento frente a alternativas.
 
 ## Requisitos de hardware
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Al ser un adaptador sobre un modelo de difusión, se recomienda una GPU con al menos 8 GB de VRAM para generar imágenes de resolución moderada (512x512 o 768x768). Para resoluciones más altas (1024x1024 o superiores), se necesitarán 12-16 GB.
 - GPUs recomendadas: NVIDIA RTX 3060 (12 GB) o superior, RTX 4070/4080/4090, o GPUs de datacenter como A100 o H100 si se requiere mayor throughput.
 - Es posible ejecutarlo en GPUs de consumo medio si se usa cuantización del modelo base (por ejemplo, con bitsandbytes o GPTQ), aunque el LoRA en sí no se cuantiza típicamente.
-- Opciones de despliegue: se puede usar con la librería `diffusers` en Python, con ComfyUI (flujo de trabajo visual), o mediante servidores de inferencia como vLLM (aunque vLLM está más orientado a modelos de texto, no a difusión). Para producción, se recomienda usar APIs de HuggingFace Inference Endpoints o servicios como Replicate.
+- Opciones de despliegue: se puede usar con la librería `diffusers` en Python, con ComfyUI (flujo de trabajo visual), o mediante servidores de inferencia como vLLM (aunque vLLM está más orientado a modelos de texto, no a difusión). Para producción, se recomienda usar APIs de Hugging Face Inference Endpoints o servicios como Replicate.
 - Latencia y throughput estimados: no disponibles. Dependerán del hardware y de la resolución de salida. En una RTX 4090, una imagen de 1024x1024 podría tardar entre 2 y 5 segundos, pero no hay datos oficiales.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo (parámetros, contexto, benchm
 ## Limitaciones y advertencias
 
 - No se proporciona documentación técnica detallada (arquitectura exacta, datos de entrenamiento, hiperparámetros). Esto dificulta la reproducibilidad y la evaluación objetiva.
-- El modelo puede generar contenido NSFW. Aunque la licencia MIT permite su uso, las plataformas de despliegue (HuggingFace, Replicate, etc.) pueden tener políticas que restrinjan este tipo de contenido. Es responsabilidad del usuario cumplir con las normativas aplicables.
+- El modelo puede generar contenido NSFW. Aunque la licencia MIT permite su uso, las plataformas de despliegue (Hugging Face, Replicate, etc.) pueden tener políticas que restrinjan este tipo de contenido. Es responsabilidad del usuario cumplir con las normativas aplicables.
 - La calidad de los resultados depende en gran medida de la calidad del prompt. El autor recomienda prompts largos y descriptivos; prompts cortos o ambiguos pueden producir imágenes mediocres.
 - Al ser un LoRA, hereda las limitaciones del modelo base Krea-2-Turbo, que no se documentan en esta ficha. Por ejemplo, posibles sesgos en la representación de ciertos grupos étnicos o de género, o dificultades con objetos complejos.
 - La fecha de creación (2026-08-19) es posterior a la fecha actual (2025), lo que sugiere que el modelo podría ser un proyecto experimental o que la fecha es incorrecta. Esto no afecta a su funcionamiento, pero indica falta de madurez en el ecosistema.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo (parámetros, contexto, benchm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeroooo719/Krea2-realism-V2
+- Hugging Face: https://huggingface.co/zeroooo719/Krea2-realism-V2
 - Civitai (enlace proporcionado por el autor, aunque la URL parece acortada): https://civitai.red/models/2728365/krea2-realism-v1?modelVersionId=3090634
 - Página de Krea 2 (modelo base): https://www.krea.ai/krea-2
 - Ko-fi del autor (donaciones): https://ko-fi.com/rudysen

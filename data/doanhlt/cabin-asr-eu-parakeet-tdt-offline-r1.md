@@ -88,7 +88,7 @@ No se dispone de datos de otros modelos ASR comparables (por ejemplo Whisper) en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doanhlt/cabin-asr-eu-parakeet-tdt-offline-r1
+- Modelo en Hugging Face: https://huggingface.co/doanhlt/cabin-asr-eu-parakeet-tdt-offline-r1
 - Coleccion Cabin offline ASR: https://huggingface.co/collections/doanhlt/cabin-offline-asr-on-device-distilled-from-r13x-6ade0b05eb1f2ac4e49d7cf8
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Dataset YODAS2: https://huggingface.co/datasets/espnet/yodas2

@@ -70,9 +70,9 @@ Estas cifras son una guía de orden de magnitud, no un benchmark formal (una sol
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | ~27B | 262K | Multimodal (imagen-texto) | Apache-2.0 | HuggingFace |
-| Este repo (MLX bf16) | ~26,9B | No disponible (heredado del base) | Solo texto | Apache-2.0 | HuggingFace |
-| trohrbaugh/Qwen3.8-27B-heretic-ara | ~26,9B | No disponible | Multimodal (presumiblemente) | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (original) | ~27B | 262K | Multimodal (imagen-texto) | Apache-2.0 | Hugging Face |
+| Este repo (MLX bf16) | ~26,9B | No disponible (heredado del base) | Solo texto | Apache-2.0 | Hugging Face |
+| trohrbaugh/Qwen3.8-27B-heretic-ara | ~26,9B | No disponible | Multimodal (presumiblemente) | Apache-2.0 | Hugging Face |
 
 La comparación principal es con el modelo original Qwen3.8-27B: este repo elimina la alineación de seguridad y reduce la modalidad a solo texto, a cambio de ofrecer un formato optimizado para Apple Silicon. No se dispone de datos de rendimiento comparativo (benchmarks) entre estas variantes.
 
@@ -89,7 +89,7 @@ La comparación principal es con el modelo original Qwen3.8-27B: este repo elimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-bf16
+- Repositorio Hugging Face: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-bf16
 - Modelo base (abliterado): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Build 4-bit: https://huggingface.co/donedynamics/Qwen3.8-27B-heretic-MLX-4bit

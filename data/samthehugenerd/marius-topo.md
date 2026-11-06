@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Idioma | Pasos del decodificador de flujo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samthehugenerd/Marius-Topo | Paquete CoreML de Pocket TTS (voz `marius`) | en | 1 | CC BY 4.0 | HuggingFace |
-| FluidInference/pocket-tts-coreml | Paquete CoreML de Pocket TTS (pack ingles) | en | 8 | no disponible en la informacion | HuggingFace |
-| kyutai/pocket-tts | Modelo base TTS de Kyutai | en | no disponible | no disponible en la informacion | HuggingFace |
-| kyutai/pocket-tts-without-voice-cloning | Pesos fuente usados en la conversion | en | no disponible | no disponible en la informacion | HuggingFace |
+| samthehugenerd/Marius-Topo | Paquete CoreML de Pocket TTS (voz `marius`) | en | 1 | CC BY 4.0 | Hugging Face |
+| FluidInference/pocket-tts-coreml | Paquete CoreML de Pocket TTS (pack ingles) | en | 8 | no disponible en la informacion | Hugging Face |
+| kyutai/pocket-tts | Modelo base TTS de Kyutai | en | no disponible | no disponible en la informacion | Hugging Face |
+| kyutai/pocket-tts-without-voice-cloning | Pesos fuente usados en la conversion | en | no disponible | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/samthehugenerd/Marius-Topo
+- Hugging Face del modelo: https://huggingface.co/samthehugenerd/Marius-Topo
 - Modelo base Pocket TTS de Kyutai: https://huggingface.co/kyutai/pocket-tts
 - Pesos fuente de la conversion: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Paquete CoreML de referencia de FluidInference: https://huggingface.co/FluidInference/pocket-tts-coreml

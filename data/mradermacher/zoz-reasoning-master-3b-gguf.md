@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZOZ-Reasoning-Master-3B-GGUF es la versión cuantizada en formato GGUF del modelo z51722369/ZOZ-Reasoning-Master-3B, publicada por el usuario mradermacher, conocido en HuggingFace por generar cuantizaciones estáticas para modelos de terceros. No se trata, por tanto, de un modelo entrenado desde cero, sino de una conversión del modelo base original a pesos GGUF listos para su uso con llama.cpp y derivados. El modelo base tiene 3.085.938.688 parámetros (unos 3,09 mil millones), según los datos reales de sus ficheros safetensors.
+ZOZ-Reasoning-Master-3B-GGUF es la versión cuantizada en formato GGUF del modelo z51722369/ZOZ-Reasoning-Master-3B, publicada por el usuario mradermacher, conocido en Hugging Face por generar cuantizaciones estáticas para modelos de terceros. No se trata, por tanto, de un modelo entrenado desde cero, sino de una conversión del modelo base original a pesos GGUF listos para su uso con llama.cpp y derivados. El modelo base tiene 3.085.938.688 parámetros (unos 3,09 mil millones), según los datos reales de sus ficheros safetensors.
 
 La relevancia de esta ficha es práctica: es la vía más directa para ejecutar un modelo de 3B orientado a razonamiento en hardware de consumo, ya que ofrece 12 niveles de cuantización que van desde 1,4 GB (Q2_K) hasta 6,3 GB (f16). Al estar publicado únicamente en inglés y orientado a uso conversacional, su público objetivo son desarrolladores que quieran desplegar un asistente local o un componente de razonamiento dentro de un pipeline sin depender de APIs externas.
 
@@ -23,7 +23,7 @@ La información disponible es notablemente limitada: la model card del repositor
 | Modelo base | z51722369/ZOZ-Reasoning-Master-3B |
 | Tamaño del repositorio | 27,9 GB (incluye todos los niveles de cuantización) |
 | Descargas / me gusta | 0 / 0 en el momento de la consulta |
-| Fecha de creación | 18 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 18 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ Tampoco se dispone de información sobre el número de tokens de entrenamiento, 
 - Generación de texto conversacional: la etiqueta `conversational` del repositorio indica que el modelo está preparado para diálogo multi-turno.
 - Razonamiento: el nombre del modelo apunta a un ajuste orientado a tareas de razonamiento, pero no hay documentación que confirme el alcance ni el formato de prompts esperado.
 - Inglés como único idioma declarado: no se anuncia soporte multilingüe.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con el formato estándar de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructuras de inferencia compatibles con el formato estándar de Hugging Face.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta ningún modo de ejecución por pasos ni formato de trazas de pensamiento.
 - Capacidades especiales (visión, audio, modo thinking explícito): no disponible.
@@ -84,7 +84,7 @@ Los datos de los modelos de referencia proceden de sus respectivas documentacion
 - Ausencia de validación comunitaria: 0 descargas y 0 "me gusta" implican que no hay evidencia externa de que los ficheros funcionen correctamente ni de la calidad del modelo base.
 - Model card mínima: el repositorio es una cuantización automatizada; no incluye plantilla de chat, formato de prompt recomendado ni parámetros de muestreo, lo que puede provocar resultados pobres si se usa con la plantilla equivocada.
 - Procedencia del modelo base: el autor del modelo original (z51722369) no está documentado en la información disponible, lo que dificulta evaluar el origen de los datos de entrenamiento y posibles sesgos.
-- Fechas de metadatos atípicas: la fecha de creación indicada (18 de septiembre de 2026) es posterior a la fecha habitual de referencia, lo que conviene verificar en la propia página de HuggingFace.
+- Fechas de metadatos atípicas: la fecha de creación indicada (18 de septiembre de 2026) es posterior a la fecha habitual de referencia, lo que conviene verificar en la propia página de Hugging Face.
 - Sin garantía de soporte de tool calling: aunque el repositorio se marca como `endpoints_compatible`, no hay confirmación de soporte de function calling, por lo que no debería asumirse en diseños de agentes.
 
 ## Enlaces

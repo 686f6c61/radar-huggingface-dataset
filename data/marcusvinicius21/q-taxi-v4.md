@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MarcusVinicius21/q-taxi-v4` es un agente de aprendizaje por refuerzo entrenado para resolver el entorno `Taxi-v3` de Gymnasium, publicado en HuggingFace con el pipeline `reinforcement-learning`. El autor lo describe como una implementación propia de Q-Learning (etiqueta `custom-implementation`), no como un modelo neuronal: no hay pesos transformer ni tokenizador, sino la política aprendida por un agente tabular sobre un MDP discreto. El repositorio se creó el 17 de octubre de 2026 y no registra descargas ni interacciones.
+`MarcusVinicius21/q-taxi-v4` es un agente de aprendizaje por refuerzo entrenado para resolver el entorno `Taxi-v3` de Gymnasium, publicado en Hugging Face con el pipeline `reinforcement-learning`. El autor lo describe como una implementación propia de Q-Learning (etiqueta `custom-implementation`), no como un modelo neuronal: no hay pesos transformer ni tokenizador, sino la política aprendida por un agente tabular sobre un MDP discreto. El repositorio se creó el 17 de octubre de 2026 y no registra descargas ni interacciones.
 
 El único resultado declarado es una recompensa media de 7,56 ± 2,71 en evaluación, un dato que el autor marca como no verificado (`verified: false`) en el `model-index` de la model card. No se especifican hiperparámetros, número de episodios de entrenamiento, semillas, estrategia de exploración ni el artefacto exacto serializado; el tamaño del repositorio aparece como 0.0 GB.
 
@@ -47,7 +47,7 @@ Tampoco se documentan innovaciones técnicas, datos de entrenamiento adicionales
 
 - Docencia de aprendizaje por refuerzo: usar el agente como ejemplo ejecutable de Q-Learning en un entorno con espacio de estados pequeño, donde la tabla Q puede inspeccionarse y visualizarse en clase sin infraestructura de GPU.
 - Baseline de comparación: emplear la recompensa media declarada (7,56 ± 2,71) como referencia preliminar frente a nuevos algoritmos (SARSA, Double Q-Learning, DQN) sobre el mismo entorno, repitiendo la evaluación con semillas fijas.
-- Pruebas de pipelines de evaluación: validar herramientas de `gymnasium`, `stable-baselines3` o ruedas de evaluación de HuggingFace con un agente de tamaño despreciable que se ejecuta íntegramente en CPU.
+- Pruebas de pipelines de evaluación: validar herramientas de `gymnasium`, `stable-baselines3` o ruedas de evaluación de Hugging Face con un agente de tamaño despreciable que se ejecuta íntegramente en CPU.
 - Reproducción de prácticas académicas: material de partida para un cuaderno de laboratorio donde el alumno reimplemente el agente y compare su curva de aprendizaje con la reportada.
 - Test de integración en servicios de inferencia de RL: al no requerir GPU ni tokenizador, sirve para verificar el enrutado de un endpoint de inferencia y el formateo de observaciones/acciones antes de desplegar modelos mayores.
 - Depuración de entornos y simuladores: comprobar la dinámica de `Taxi-v3` (transiciones, recompensas, condiciones de terminación) con una política ya entrenada, por ejemplo al portar el entorno a una versión nueva de la API de Gymnasium.
@@ -69,13 +69,13 @@ No se han publicado otros resultados de benchmarks en la información disponible
 - Compatibilidad con GPU de consumo: irrelevante, al no existir cómputo tensorial apreciable.
 - Opciones de despliegue: script de Python con `gymnasium` para el bucle de interacción y serialización del artefacto (el formato no está documentado). No aplican vLLM, llama.cpp, Ollama ni TGI, orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles como cifras publicadas. Cualitativamente, la inferencia se reduce a una búsqueda en tabla o a una evaluación de función por paso, con coste despreciable frente a la simulación del propio entorno.
-- Almacenamiento: el repositorio ocupa 0.0 GB según HuggingFace, lo que sugiere un artefacto de tamaño mínimo o su ausencia; conviene verificar la presencia real de ficheros antes de clonar.
+- Almacenamiento: el repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere un artefacto de tamaño mínimo o su ausencia; conviene verificar la presencia real de ficheros antes de clonar.
 
 ## Comparativa con modelos similares
 
 | Modelo / enfoque | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `MarcusVinicius21/q-taxi-v4` (Q-Learning, Taxi-v3) | No disponible | No aplica | 7,56 ± 2,71 de recompensa media (no verificado) | No disponible | Público en HuggingFace, 0 descargas |
+| `MarcusVinicius21/q-taxi-v4` (Q-Learning, Taxi-v3) | No disponible | No aplica | 7,56 ± 2,71 de recompensa media (no verificado) | No disponible | Público en Hugging Face, 0 descargas |
 | SARSA tabular sobre `Taxi-v3` | No disponible | No aplica | No disponible | No disponible | Implementación de referencia en la literatura, sin artefacto comparable localizado |
 | DQN sobre `Taxi-v3` | No disponible | No aplica | No disponible | No disponible | Ejemplos en tutoriales, sin métricas homogéneas publicadas |
 | Política aleatoria sobre `Taxi-v3` | 0 | No aplica | No disponible en esta búsqueda | No aplica | Línea base trivial |
@@ -97,6 +97,6 @@ No se dispone de datos publicados y homogéneos de alternativas comparables en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MarcusVinicius21/q-taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/MarcusVinicius21/q-taxi-v4
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

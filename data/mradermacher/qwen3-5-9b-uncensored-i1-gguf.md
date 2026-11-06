@@ -23,7 +23,7 @@ Por tanto, esta ficha debe leerse como un inventario de lo que el repositorio de
 
 ## Arquitectura y entrenamiento
 
-La model card no incluye ninguna descripcion de arquitectura, proceso de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). Lo unico tecnicamente verificable es la cadena de procesado: el autor ha tomado pesos en formato HuggingFace (`convert_type: hf`) y los ha convertido y cuantizado a GGUF con la version 2 de su pipeline de cuantizacion, aplicando cuantizacion ponderada por imatrix (`output_tensor_quantised: 1`) para reducir el error en las capas mas sensibles.
+La model card no incluye ninguna descripcion de arquitectura, proceso de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO u otras). Lo unico tecnicamente verificable es la cadena de procesado: el autor ha tomado pesos en formato Hugging Face (`convert_type: hf`) y los ha convertido y cuantizado a GGUF con la version 2 de su pipeline de cuantizacion, aplicando cuantizacion ponderada por imatrix (`output_tensor_quantised: 1`) para reducir el error en las capas mas sensibles.
 
 El unico dato adicional es la etiqueta `nicoboss` presente en los metadatos, que sugiere una posible relacion con el linaje de datasets o fine-tunes "uncensored" asociados a ese autor, pero no hay confirmacion documental de ello en la informacion disponible. El modelo base declarado es `mshodiqul/qwen3.5-9b-uncensored`, cuyo contenido, arquitectura y licencia no se detallan en este repositorio y deberian consultarse por separado.
 
@@ -41,7 +41,7 @@ El unico dato adicional es la etiqueta `nicoboss` presente en los metadatos, que
 
 No es posible proponer casos de uso concretos y realistas con la informacion disponible, porque se desconocen el contexto maximo, los idiomas, la licencia y las capacidades reales del modelo. Los unicos escenarios plausibles son de caracter exploratorio y siempre condicionados a verificar antes el modelo base:
 
-- Pruebas de cuantizacion: usar las distintas variantes (de IQ1_S a Q6_K) para medir la degradacion de calidad frente al modelo original en formato HuggingFace, comparando perplejidad o tareas fijas por nivel de cuantizacion.
+- Pruebas de cuantizacion: usar las distintas variantes (de IQ1_S a Q6_K) para medir la degradacion de calidad frente al modelo original en formato Hugging Face, comparando perplejidad o tareas fijas por nivel de cuantizacion.
 - Despliegue en hardware muy limitado: las variantes IQ1_M, IQ1_S o IQ2_XXS permiten probar el modelo en equipos con pocos recursos, asumiendo perdida de calidad significativa.
 - Investigacion sobre modelos "uncensored": analizar hasta que punto el ajuste del modelo base reduce los rechazos en dominios sensibles, siempre dentro de un marco legal y etico.
 - Evaluacion de sesgos y seguridad: someter al modelo a baterias de prompts adversarios para documentar comportamientos problematicos antes de cualquier uso.
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye datos verificables de par
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-i1-GGUF
 - Modelo base declarado en la model card: https://huggingface.co/mshodiqul/qwen3.5-9b-uncensored
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

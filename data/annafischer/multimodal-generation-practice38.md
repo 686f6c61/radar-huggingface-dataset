@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`annafischer/multimodal-generation-practice38` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace. La propia model card lo describe como "a structured set of research notes on Multimodal Generation", con dos únicos ficheros declarados: `analysis.md` (artefacto principal) y `README.md`. El repositorio ocupa 0,0 GB y no incluye checkpoint, código de entrenamiento ni resultados experimentales: el autor indica explícitamente que "does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
+`annafischer/multimodal-generation-practice38` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face. La propia model card lo describe como "a structured set of research notes on Multimodal Generation", con dos únicos ficheros declarados: `analysis.md` (artefacto principal) y `README.md`. El repositorio ocupa 0,0 GB y no incluye checkpoint, código de entrenamiento ni resultados experimentales: el autor indica explícitamente que "does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
 
 A pesar de las etiquetas de metadatos (`safetensors`, `transformer`, `multimodal-generation`), el contenido real es documentación exploratoria sobre generación multimodal: alcance de la pregunta de investigación, posibles factores de confusión, propuesta de comparación con líneas base emparejadas, referencias a benchmarks públicos y discusión de modos de fallo y reproducibilidad. Las secciones marcadas como planes o hipótesis no deben interpretarse como resultados.
 
@@ -29,7 +29,7 @@ La relevancia de esta ficha es, por tanto, metodológica: sirve para identificar
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura de red neuronal. La model card no menciona transformer, MoE, SSM ni ningún otro diseño, y tampoco aporta información sobre datos de entrenamiento, número de tokens, composición del dataset, fases de RLHF/DPO o innovaciones técnicas como decodificación especulativa o atención lineal. La etiqueta `transformer` aparece únicamente en los tags de HuggingFace, sin respaldo en el contenido del repositorio.
+No se describe ninguna arquitectura de red neuronal. La model card no menciona transformer, MoE, SSM ni ningún otro diseño, y tampoco aporta información sobre datos de entrenamiento, número de tokens, composición del dataset, fases de RLHF/DPO o innovaciones técnicas como decodificación especulativa o atención lineal. La etiqueta `transformer` aparece únicamente en los tags de Hugging Face, sin respaldo en el contenido del repositorio.
 
 El repositorio es un documento de trabajo estructurado. Según su propia descripción, cubre el alcance de la pregunta de investigación y sus posibles confundidores, una comparación propuesta con líneas base emparejadas, contexto de evaluación con benchmarks públicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, además de referencias temáticas. El autor advierte que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -51,7 +51,7 @@ El repositorio es un documento de trabajo estructurado. Según su propia descrip
 - Auditoria de reproducibilidad: las recomendaciones de registrar versiones de dataset, comandos, semillas, hardware y logs en bruto son aplicables como checklist en proyectos propios.
 - Analisis de modos de fallo: la seccion de failure modes puede reutilizarse para anticipar errores tipicos en sistemas de generacion multimodal.
 - Deteccion de sesgos metodologicos: la identificacion de confounders ayuda a revisar criticamente resultados publicados por terceros.
-- Filtrado de repositorios en HuggingFace: identificar rapidamente que un repo etiquetado como `safetensors`/`transformer` no es desplegable evita descargas y pruebas inutiles en pipelines automatizados.
+- Filtrado de repositorios en Hugging Face: identificar rapidamente que un repo etiquetado como `safetensors`/`transformer` no es desplegable evita descargas y pruebas inutiles en pipelines automatizados.
 
 En ninguno de estos casos se ejecuta el repositorio como modelo; todos son usos sobre su contenido textual.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no pertenece a la categoria de modelos generativos desplegables, por lo que no procede compararlo con modelos de parametros, contexto o licencia similares. Sus equivalentes serian otros repositorios de notas de investigacion en HuggingFace, para los que no se dispone de datos comparativos en la informacion proporcionada.
+No disponible. Este repositorio no pertenece a la categoria de modelos generativos desplegables, por lo que no procede compararlo con modelos de parametros, contexto o licencia similares. Sus equivalentes serian otros repositorios de notas de investigacion en Hugging Face, para los que no se dispone de datos comparativos en la informacion proporcionada.
 
 | Criterio | Este repositorio | Modelo generativo tipico |
 |---|---|---|
@@ -96,7 +96,7 @@ No disponible. Este repositorio no pertenece a la categoria de modelos generativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/annafischer/multimodal-generation-practice38
+- Hugging Face: https://huggingface.co/annafischer/multimodal-generation-practice38
 - Fichero principal citado en la model card: `analysis.md` (dentro del repositorio)
 - Documentacion: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

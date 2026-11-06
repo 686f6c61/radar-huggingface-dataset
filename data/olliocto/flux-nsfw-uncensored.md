@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux-NSFW-uncensored es un ajuste fino (fine-tune) mediante LoRA del modelo de generación de imágenes FLUX.1-dev, desarrollado por Black Forest Labs. Lo publica el usuario OlliOcto en HuggingFace con el objetivo declarado de minimizar las restricciones de censura del modelo base y permitir la exploración de los límites técnicos de la generación de imágenes con IA. El repositorio tiene un tamaño de 0,7 GB, lo que es coherente con un adaptador LoRA más que con un modelo completo.
+Flux-NSFW-uncensored es un ajuste fino (fine-tune) mediante LoRA del modelo de generación de imágenes FLUX.1-dev, desarrollado por Black Forest Labs. Lo publica el usuario OlliOcto en Hugging Face con el objetivo declarado de minimizar las restricciones de censura del modelo base y permitir la exploración de los límites técnicos de la generación de imágenes con IA. El repositorio tiene un tamaño de 0,7 GB, lo que es coherente con un adaptador LoRA más que con un modelo completo.
 
 El modelo se distribuye bajo licencia CreativeML OpenRAIL-M, heredada del ecosistema de difusión, e incluye la etiqueta `not-for-all-audiences`, lo que indica contenido para adultos. Está etiquetado únicamente para inglés (`en`) y su pipeline es `text-to-image`. En el momento de la consulta el repositorio registra 0 descargas y 0 likes, por lo que se trata de una publicación reciente y sin validación comunitaria.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OlliOcto/Flux-NSFW-uncensored | LoRA sobre FLUX.1-dev | No disponible (repo 0,7 GB) | No aplica | CreativeML OpenRAIL-M | HuggingFace, 0 descargas |
-| black-forest-labs/FLUX.1-dev | Modelo base text-to-image | 12 000 M (dato público del autor, no verificado aquí) | No aplica | FLUX.1-dev Non-Commercial License | HuggingFace, ampliamente usado |
+| OlliOcto/Flux-NSFW-uncensored | LoRA sobre FLUX.1-dev | No disponible (repo 0,7 GB) | No aplica | CreativeML OpenRAIL-M | Hugging Face, 0 descargas |
+| black-forest-labs/FLUX.1-dev | Modelo base text-to-image | 12 000 M (dato público del autor, no verificado aquí) | No aplica | FLUX.1-dev Non-Commercial License | Hugging Face, ampliamente usado |
 | Otras variantes NSFW de FLUX | LoRA/fine-tune | No disponible | No aplica | Variable | No disponible |
 | Otros modelos text-to-image abiertos (p. ej., Stable Diffusion) | Difusión | No disponible en esta ficha | No aplica | CreativeML OpenRAIL-M en varias versiones | Amplia disponibilidad |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo para este adaptador concreto; 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OlliOcto/Flux-NSFW-uncensored
+- Hugging Face: https://huggingface.co/OlliOcto/Flux-NSFW-uncensored
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Repositorio referenciado en el código de ejemplo: https://huggingface.co/Heartsync/Flux-NSFW-uncensored
 - Librería diffusers: https://github.com/huggingface/diffusers

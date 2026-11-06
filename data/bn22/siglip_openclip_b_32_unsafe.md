@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`bn22/siglip_openclip_b_32_unsafe` es un modelo de clasificacion de imagenes zero-shot publicado en HuggingFace por el usuario bn22 bajo licencia MIT. Por la nomenclatura del identificador y las etiquetas del repositorio (`open_clip`, `clip`), se trata de un modelo de doble torre imagen-texto de la familia CLIP/SigLIP con backbone de vision ViT-B/32, cargable a traves de la libreria OpenCLIP. El sufijo `unsafe` sugiere que el checkpoint esta orientado a la deteccion o clasificacion de contenido inseguro (por ejemplo, material para adultos o potencialmente nocivo) mediante prompting textual, aunque la model card no documenta el objetivo ni el proceso de ajuste.
+`bn22/siglip_openclip_b_32_unsafe` es un modelo de clasificacion de imagenes zero-shot publicado en Hugging Face por el usuario bn22 bajo licencia MIT. Por la nomenclatura del identificador y las etiquetas del repositorio (`open_clip`, `clip`), se trata de un modelo de doble torre imagen-texto de la familia CLIP/SigLIP con backbone de vision ViT-B/32, cargable a traves de la libreria OpenCLIP. El sufijo `unsafe` sugiere que el checkpoint esta orientado a la deteccion o clasificacion de contenido inseguro (por ejemplo, material para adultos o potencialmente nocivo) mediante prompting textual, aunque la model card no documenta el objetivo ni el proceso de ajuste.
 
 El problema que resuelve es el de la clasificacion de imagenes sin entrenamiento especifico por clase: el modelo produce embeddings conjuntos de imagen y texto, de modo que basta con describir las categorias con lenguaje natural para obtener una puntuacion de similitud. Esto lo hace util como componente de filtrado previo en pipelines de moderacion de contenido o de curacion de datasets, donde se necesita descartar grandes volumenes de imagenes con un coste computacional bajo.
 
-La relevancia de este checkpoint es limitada en terminos de evidencia publica: cuenta con 0 descargas y 0 likes en el momento de la consulta, el repositorio ocupa 0,6 GB y la model card se limita a una linea de titulo sin informacion sobre datos de entrenamiento, evaluacion, idiomas o uso previsto. La fecha de creacion que declara HuggingFace (2026-09-23) es anomalamente futura, lo que apunta a metadatos poco fiables o a un error de registro. Cualquier uso en produccion deberia ir precedido de una validacion propia.
+La relevancia de este checkpoint es limitada en terminos de evidencia publica: cuenta con 0 descargas y 0 likes en el momento de la consulta, el repositorio ocupa 0,6 GB y la model card se limita a una linea de titulo sin informacion sobre datos de entrenamiento, evaluacion, idiomas o uso previsto. La fecha de creacion que declara Hugging Face (2026-09-23) es anomalamente futura, lo que apunta a metadatos poco fiables o a un error de registro. Cualquier uso en produccion deberia ir precedido de una validacion propia.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de texto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| bn22/siglip_openclip_b_32_unsafe | ~150 M (estimado, B/32) | No disponible (77 tokens en implementaciones CLIP/OpenCLIP tipicas) | MIT | HuggingFace, 0 descargas, 0 likes | No disponible |
+| bn22/siglip_openclip_b_32_unsafe | ~150 M (estimado, B/32) | No disponible (77 tokens en implementaciones CLIP/OpenCLIP tipicas) | MIT | Hugging Face, 0 descargas, 0 likes | No disponible |
 | CLIP ViT-B/32 (OpenAI) | ~151 M | 77 tokens | MIT para los pesos publicados | Amplia, muy extendido | Si, zero-shot en ImageNet y suite completa de evaluacion |
 | SigLIP base (google) | ~200 M en el modelo base patch16-224 | 64 tokens en la configuracion habitual | Apache 2.0 en las versiones publicadas por Google | Amplia, integrado en transformers | Si, resultados contrastivos documentados |
 | Modelos de moderacion de contenido dedicados | Variable | No aplica | Variable, a menudo propietaria | Depende del proveedor | Habitualmente si |
@@ -86,5 +86,5 @@ La comparacion cuantitativa de rendimiento no es posible: el checkpoint analizad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bn22/siglip_openclip_b_32_unsafe
+- Modelo en Hugging Face: https://huggingface.co/bn22/siglip_openclip_b_32_unsafe
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

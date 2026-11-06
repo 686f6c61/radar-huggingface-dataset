@@ -4,7 +4,7 @@
 
 CenterNet-3D es un modelo de vision por computador desarrollado por Qualcomm que genera una representacion en vista de pajaro (bird's eye view, BEV) a partir de las camaras montadas en un vehiculo. No es un modelo de lenguaje: se trata de un detector basado en el paradigma de puntos centrales (center-based detection) que estima la posicion y la orientacion de objetos en el plano del suelo, una representacion habitual en los sistemas de percepcion para conduccion asistida y autonoma.
 
-La implementacion original procede del repositorio CenterNet de Xingyi Zhou (paper "Objects as Points", arXiv:1904.07850) y Qualcomm la ha portado, compilado y optimizado para su propio hardware. El repositorio de HuggingFace no contiene pesos en formato generico, sino artefactos precompilados para el runtime QNN de Qualcomm, exportados con Qualcomm AI Hub Models y el SDK QAIRT. El repositorio ocupa 2,2 GB e incluye binarios especificos por chipset.
+La implementacion original procede del repositorio CenterNet de Xingyi Zhou (paper "Objects as Points", arXiv:1904.07850) y Qualcomm la ha portado, compilado y optimizado para su propio hardware. El repositorio de Hugging Face no contiene pesos en formato generico, sino artefactos precompilados para el runtime QNN de Qualcomm, exportados con Qualcomm AI Hub Models y el SDK QAIRT. El repositorio ocupa 2,2 GB e incluye binarios especificos por chipset.
 
 Su relevancia actual es practica: permite ejecutar percepcion BEV en dispositivo (on-device) sobre plataformas Snapdragon moviles, de automocion y de PC, con cuantizacion w8a16, sin depender de GPU de servidor. El modelo se publica bajo licencia MIT y esta pensado para integrarse en pipelines de inferencia embebida mediante ONNX Runtime sobre el acelerador Hexagon NPU.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Licencia | Plataforma objetivo | Disponibilidad |
 |---|---|---|---|---|
-| CenterNet-3D (qualcomm) | BEV a partir de camaras de vehiculo | MIT | Aceleradores Qualcomm (QNN) con binarios precompilados | Artefactos por chipset en HuggingFace y AI Hub Models |
+| CenterNet-3D (qualcomm) | BEV a partir de camaras de vehiculo | MIT | Aceleradores Qualcomm (QNN) con binarios precompilados | Artefactos por chipset en Hugging Face y AI Hub Models |
 | CenterNet original (xingyizhou/CenterNet) | Deteccion 2D/3D basada en puntos centrales | no disponible en la informacion proporcionada | GPU generica (PyTorch) | Repositorio publico en GitHub |
 | Alternativas de percepcion BEV (Lift-Splat-Shoot, BEVDet, BEVFormer) | Deteccion y segmentacion en vista de pajaro | no disponible en la informacion proporcionada | GPU generica; despliegue embebido no incluido por defecto | Repositorios de investigacion |
 
@@ -89,7 +89,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/CenterNet-3D
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/CenterNet-3D
 - Libreria Qualcomm AI Hub Models (v0.64.0): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/centernet_3d
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com
 - Registro en Qualcomm AI Hub: https://myaccount.qualcomm.com/signup

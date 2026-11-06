@@ -93,7 +93,7 @@ La comparativa se limita a las variantes del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fcmeyer/zerank-2-reranker-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/fcmeyer/zerank-2-reranker-MLX-8bit
 - Modelo base (zerank-2-reranker): https://huggingface.co/zeroentropy/zerank-2-reranker
 - Version MLX bf16: https://huggingface.co/fcmeyer/zerank-2-reranker-MLX-bf16
 - Repositorio de port MLX alternativo: https://github.com/199-biotechnologies/zerank-2-mlx

@@ -85,10 +85,10 @@ Según indica la model card, ejecutar más bucles de los ocho con los que fue en
 
 | Modelo | Parametros (entrenados) | Bucles | Contexto | Global | ECE | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---|---|
-| SanSi | 1,4B (60,8M) | 8 | no disponible | 72,0 | 0,093 | Apache 2.0 | HuggingFace (PEFT) |
-| SanSi-2.6B | 2,7B (121,4M) | 8 | no disponible | 75,8 | 0,078 | no disponible | HuggingFace |
-| Ouro-1.4B, un bucle | 1,4B | 1 | no disponible | 58,6 | 0,137 | no disponible | HuggingFace (ByteDance) |
-| SmolLM2-1.7B | 1,7B | 1 | no disponible | 58,4 | 0,069 | no disponible | HuggingFace |
+| SanSi | 1,4B (60,8M) | 8 | no disponible | 72,0 | 0,093 | Apache 2.0 | Hugging Face (PEFT) |
+| SanSi-2.6B | 2,7B (121,4M) | 8 | no disponible | 75,8 | 0,078 | no disponible | Hugging Face |
+| Ouro-1.4B, un bucle | 1,4B | 1 | no disponible | 58,6 | 0,137 | no disponible | Hugging Face (ByteDance) |
+| SmolLM2-1.7B | 1,7B | 1 | no disponible | 58,4 | 0,069 | no disponible | Hugging Face |
 | Qwen3.5-2B | 1,9B | 1 | no disponible | 66,7 | 0,123 | no disponible | no disponible |
 | Qwen3.5-4B | 4,2B | 1 | no disponible | 73,8 | 0,113 | no disponible | no disponible |
 | Kev-4B (datos de los autores) | 4,2B | 1 | no disponible | 74,3 | 0,119 | no disponible | no disponible |
@@ -104,12 +104,12 @@ La comparación procede íntegramente de la tabla del paper. SanSi con 8 bucles 
 - Riesgo de alucinación trasladado a la distribución: si el estado no contiene la respuesta, el modelo tiende a la uniformidad, pero una probabilidad alta no garantiza corrección; en el conjunto global acierta el 72,0 %, con un 68,0 % en ítems de transferencia lejana.
 - Licencia Apache 2.0 en el repositorio del adaptador, lo que en principio permite uso comercial, pero el backbone subyacente Ouro-1.4B se descarga por separado desde ByteDance/Ouro-1.4B y sus términos no se detallan en la información disponible; conviene verificarlos antes de un despliegue comercial.
 - Dependencia de revisiones fijas: el código carga Ouro-1.4B en la revisión concreta usada en el entrenamiento; cambios en el repositorio base podrían afectar a la reproducibilidad.
-- Adopción prácticamente nula en el momento de la ficha: 0 descargas y 0 "likes" en HuggingFace, sin ecosistema de terceros ni soporte en servidores de inferencia estándar.
+- Adopción prácticamente nula en el momento de la ficha: 0 descargas y 0 "likes" en Hugging Face, sin ecosistema de terceros ni soporte en servidores de inferencia estándar.
 - La fecha de creación del repositorio (2026-10-08) y el identificador del arXiv son los que figuran en los metadatos proporcionados; no se dispone de información adicional de mantenimiento o actualizaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minnesotanlp/SanSi
+- Modelo en Hugging Face: https://huggingface.co/minnesotanlp/SanSi
 - Variante SanSi-2.6B: https://huggingface.co/minnesotanlp/SanSi-2.6B
 - Paper (arXiv): https://arxiv.org/abs/2610.07730
 - Versión HTML del paper: https://arxiv.org/html/2610.07730v1

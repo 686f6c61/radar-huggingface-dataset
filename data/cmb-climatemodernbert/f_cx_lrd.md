@@ -90,7 +90,7 @@ La comparativa muestra que la adaptacion de dominio aporta una mejora modesta pe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CMB-ClimateModernBERT/F_CX_LRD
+- Repositorio Hugging Face: https://huggingface.co/CMB-ClimateModernBERT/F_CX_LRD
 - Repositorio original (pesos identicos): https://huggingface.co/sraj/CMB_FWEdu_V2_FastTxt_CX_LRD
 - Coleccion ClimateModernBERT: https://huggingface.co/collections/sraj/climatemodernbert
 - Modelo recomendado para uso general (Merge_Soup_LRD): https://huggingface.co/CMB-ClimateModernBERT/Merge_Soup_LRD

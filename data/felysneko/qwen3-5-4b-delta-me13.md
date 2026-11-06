@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FelysNeko/Qwen3.5-4B-Delta-me13 es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario FelysNeko, derivado del modelo base Qwen/Qwen3.5-4B-Base. El repositorio contiene 4.539.265.536 parametros (aproximadamente 4,54 mil millones) en formato safetensors, con un tamano total de 9,1 GB, coherente con pesos almacenados en precision bf16 o fp16. Se distribuye bajo licencia MIT, lo que permite uso comercial sin restriccion de royalties segun los terminos de dicha licencia.
+FelysNeko/Qwen3.5-4B-Delta-me13 es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario FelysNeko, derivado del modelo base Qwen/Qwen3.5-4B-Base. El repositorio contiene 4.539.265.536 parametros (aproximadamente 4,54 mil millones) en formato safetensors, con un tamano total de 9,1 GB, coherente con pesos almacenados en precision bf16 o fp16. Se distribuye bajo licencia MIT, lo que permite uso comercial sin restriccion de royalties segun los terminos de dicha licencia.
 
-El modelo pertenece a la familia Qwen3.5 segun la etiqueta `qwen3_5` declarada por el autor, y se presenta como un "Delta", termino que en la practica habitual de HuggingFace suele indicar un ajuste diferencial o una fusion de pesos respecto al modelo base, aunque no se ha publicado documentacion que lo confirme. El repositorio registra 9 descargas y 0 likes en el momento de la consulta, y fue creado el 11 de septiembre de 2026 y actualizado el 12 de septiembre de 2026.
+El modelo pertenece a la familia Qwen3.5 segun la etiqueta `qwen3_5` declarada por el autor, y se presenta como un "Delta", termino que en la practica habitual de Hugging Face suele indicar un ajuste diferencial o una fusion de pesos respecto al modelo base, aunque no se ha publicado documentacion que lo confirme. El repositorio registra 9 descargas y 0 likes en el momento de la consulta, y fue creado el 11 de septiembre de 2026 y actualizado el 12 de septiembre de 2026.
 
 La relevancia de esta ficha es limitada en terminos de datos verificables: la model card del autor esta practicamente vacia (solo declara la licencia MIT y el modelo base) y no se han encontrado resultados de busqueda web pertinentes al modelo ni a su familia. Por tanto, la mayor parte de las especificaciones tecnicas (contexto, idiomas, datos de entrenamiento, benchmarks) figuran como no disponibles y deben tratarse como desconocidas hasta que el autor publique documentacion.
 
@@ -78,7 +78,7 @@ Los datos de la columna del modelo base Qwen3.5-4B no estan disponibles en la in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FelysNeko/Qwen3.5-4B-Delta-me13 | 4,54B | no disponible | MIT | safetensors en HuggingFace |
+| FelysNeko/Qwen3.5-4B-Delta-me13 | 4,54B | no disponible | MIT | safetensors en Hugging Face |
 | Qwen/Qwen3.5-4B-Base | no disponible | no disponible | no disponible | no disponible |
 | Qwen2.5-3B (referencia publica) | 3,09B | 32.768 tokens nativos, extensible | Apache 2.0 | safetensors, GGUF y cuantizaciones |
 | Llama-3.2-3B (referencia publica) | 3,21B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF y cuantizaciones |
@@ -100,6 +100,6 @@ No se dispone de datos de rendimiento comparado entre estas opciones, por lo que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FelysNeko/Qwen3.5-4B-Delta-me13
+- Hugging Face: https://huggingface.co/FelysNeko/Qwen3.5-4B-Delta-me13
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B-Base (referencia indicada por el autor en las etiquetas del repositorio)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de busqueda web disponibles; los resultados obtenidos no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SO101 wipe spilled drink: ACT 10k es una política de control robótico entrenada con el algoritmo ACT (Action Chunking with Transformers) sobre el robot de sobremesa SO101, orientada a la tarea de limpiar un líquido derramado. Lo desarrolla el usuario de HuggingFace `leejaehot` y se publica como un checkpoint de validación intermedio (paso 10.000) de un entrenamiento de 100.000 actualizaciones, siendo este el que registra la menor pérdida de validación de toda la ejecución. No es un modelo de lenguaje: es una política visuomotora que mapea observaciones (dos cámaras RGB de 640x480 y el estado articular) a acciones articulares de 6 dimensiones.
+SO101 wipe spilled drink: ACT 10k es una política de control robótico entrenada con el algoritmo ACT (Action Chunking with Transformers) sobre el robot de sobremesa SO101, orientada a la tarea de limpiar un líquido derramado. Lo desarrolla el usuario de Hugging Face `leejaehot` y se publica como un checkpoint de validación intermedio (paso 10.000) de un entrenamiento de 100.000 actualizaciones, siendo este el que registra la menor pérdida de validación de toda la ejecución. No es un modelo de lenguaje: es una política visuomotora que mapea observaciones (dos cámaras RGB de 640x480 y el estado articular) a acciones articulares de 6 dimensiones.
 
 El modelo emplea la arquitectura ACT con backbone visual ResNet18 preentrenado en ImageNet, chunking de acciones de 100 pasos y un coeficiente de ensamblado temporal de 0,01 durante la inferencia. Con 51,67 millones de parámetros y un repositorio de 0,6 GB, está pensado para ejecutarse en el bucle de control de un robot real a 30 Hz, no para servir peticiones de texto.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| so101-wipe-spilled-drink-act-10k (este) | 51,67 M | chunk de 100 acciones | no disponible | HuggingFace, LeRobot |
-| so101-wipe-spilled-drink-act-100k | no disponible | chunk de 100 acciones | no disponible | HuggingFace, LeRobot |
+| so101-wipe-spilled-drink-act-10k (este) | 51,67 M | chunk de 100 acciones | no disponible | Hugging Face, LeRobot |
+| so101-wipe-spilled-drink-act-100k | no disponible | chunk de 100 acciones | no disponible | Hugging Face, LeRobot |
 | Otras políticas ACT para SO101 | no disponible | no disponible | no disponible | no disponible |
 
 La única alternativa directamente comparable es el checkpoint de 100.000 pasos del mismo autor, que corresponde al estado final del entrenamiento; el de 10.000 pasos es el que tiene menor pérdida de validación registrada. No se dispone de datos de otros modelos comparables en la información proporcionada.
@@ -88,7 +88,7 @@ La única alternativa directamente comparable es el checkpoint de 100.000 pasos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leejaehot/so101-wipe-spilled-drink-act-10k
+- Modelo en Hugging Face: https://huggingface.co/leejaehot/so101-wipe-spilled-drink-act-10k
 - Checkpoint de 100.000 pasos: https://huggingface.co/leejaehot/so101-wipe-spilled-drink-act-100k
 - Dataset de entrenamiento: https://huggingface.co/datasets/hnuu/wipe-spilled-drink_20261030_212524
 - Repositorio LeRobot: no disponible en la información proporcionada

@@ -47,7 +47,7 @@ No se dispone de información detallada sobre el dataset de entrenamiento, el n�
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de metricas como exactitud, F1, AUC o comparaciones con otros detectores de IA (GPTZero, Originality.ai, etc.) en la model card ni en la pagina de HuggingFace. El autor de la cuantizacion no proporciona datos de rendimiento mas alla de los tamaños de archivo de cada cuantizacion.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de metricas como exactitud, F1, AUC o comparaciones con otros detectores de IA (GPTZero, Originality.ai, etc.) en la model card ni en la pagina de Hugging Face. El autor de la cuantizacion no proporciona datos de rendimiento mas alla de los tamaños de archivo de cada cuantizacion.
 
 ## Requisitos de hardware
 
@@ -79,8 +79,8 @@ La comparativa con alternativas propietarias es limitada porque no publican peso
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Ai_detector-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Ai_detector-GGUF
 - Modelo base original: https://huggingface.co/videogameaetoros/Ai_detector
-- Pagina de modelos de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Pagina de modelos de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Guia de uso de GGUF de TheBloke (referencia): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Discusion sobre calidad de cuantizaciones (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

@@ -113,7 +113,7 @@ No se dispone de modelos externos comparables en la informacion proporcionada. L
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/JooYoon/riidolaya-statehint-capacity-v0.1-development
+- Model card en Hugging Face: https://huggingface.co/JooYoon/riidolaya-statehint-capacity-v0.1-development
 - Model card en coreano: README.ko.md (referenciado en la model card, dentro del repositorio)
 - Definicion de etiquetas: `INTENTS.en.md` (referenciado en la model card, dentro del repositorio)
 - No se han proporcionado enlaces a papers, blogs, repositorios de codigo publicos, demos ni paginas de proyecto adicionales.

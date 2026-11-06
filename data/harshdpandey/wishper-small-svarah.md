@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| harshdpandey/wishper-small-svarah | 241,7 M | no disponible (base Whisper: ventanas de 30 s) | no disponible | no disponible | HuggingFace, 0 descargas |
-| openai/whisper-small | 244 M | ventanas de 30 s | multilingue (variante `.en` solo ingles) | MIT | HuggingFace, ampliamente usado |
-| openai/whisper-base | 74 M | ventanas de 30 s | multilingue | MIT | HuggingFace |
-| openai/whisper-medium | 769 M | ventanas de 30 s | multilingue | MIT | HuggingFace |
+| harshdpandey/wishper-small-svarah | 241,7 M | no disponible (base Whisper: ventanas de 30 s) | no disponible | no disponible | Hugging Face, 0 descargas |
+| openai/whisper-small | 244 M | ventanas de 30 s | multilingue (variante `.en` solo ingles) | MIT | Hugging Face, ampliamente usado |
+| openai/whisper-base | 74 M | ventanas de 30 s | multilingue | MIT | Hugging Face |
+| openai/whisper-medium | 769 M | ventanas de 30 s | multilingue | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento del modelo evaluado, por lo que la comparacion se limita a parametros, licencia y disponibilidad. No se identifican en la informacion proporcionada modelos comparables especificos para el mismo dominio.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshdpandey/wishper-small-svarah
+- Modelo en Hugging Face: https://huggingface.co/harshdpandey/wishper-small-svarah
 - Modelo base presumible (no confirmado en la ficha): https://huggingface.co/openai/whisper-small
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

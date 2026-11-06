@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `barbonara/vanilla-nemotron-super-s2-rl-step90` | Adaptador LoRA sobre base 120B-A12B | no disponible | Sin benchmarks publicados | no disponible | HuggingFace (0 descargas, 0 likes) |
-| `barbonara/corin-nemotron-super-neutral-s1-rl-step90` | Adaptador LoRA sobre el mismo base | no disponible | Sin benchmarks publicados | no disponible | HuggingFace |
-| `barbonara/corin-nemotron-super-pro-s2-rl-step90` | Adaptador LoRA sobre el mismo base | no disponible | Sin benchmarks publicados | no disponible | HuggingFace |
-| `nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16` | 120B totales, 12B activos (MoE) | no disponible | Rendimiento no especificado en la informacion disponible | no disponible | HuggingFace (modelo base) |
+| `barbonara/vanilla-nemotron-super-s2-rl-step90` | Adaptador LoRA sobre base 120B-A12B | no disponible | Sin benchmarks publicados | no disponible | Hugging Face (0 descargas, 0 likes) |
+| `barbonara/corin-nemotron-super-neutral-s1-rl-step90` | Adaptador LoRA sobre el mismo base | no disponible | Sin benchmarks publicados | no disponible | Hugging Face |
+| `barbonara/corin-nemotron-super-pro-s2-rl-step90` | Adaptador LoRA sobre el mismo base | no disponible | Sin benchmarks publicados | no disponible | Hugging Face |
+| `nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16` | 120B totales, 12B activos (MoE) | no disponible | Rendimiento no especificado en la informacion disponible | no disponible | Hugging Face (modelo base) |
 
 Las tres variantes comparten base, configuracion de LoRA y el mismo setup de RL (rank 8, lr 1,2e-4, sin KL, batch 32 x grupo 8, 90 pasos); la diferencia es el entrenamiento de personaje previo y la semilla. Esta variante es la unica sin personaje.
 
@@ -85,7 +85,7 @@ Las tres variantes comparten base, configuracion de LoRA y el mismo setup de RL 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/barbonara/vanilla-nemotron-super-s2-rl-step90
+- Modelo en Hugging Face: https://huggingface.co/barbonara/vanilla-nemotron-super-s2-rl-step90
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Variante de comparacion (Corin neutral, seed 1): https://huggingface.co/barbonara/corin-nemotron-super-neutral-s1-rl-step90
 - Variante de comparacion (Corin pro, seed 2): https://huggingface.co/barbonara/corin-nemotron-super-pro-s2-rl-step90

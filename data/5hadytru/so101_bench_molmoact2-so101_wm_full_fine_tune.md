@@ -77,9 +77,9 @@ Métricas de inferencia medidas en RTX 3090: 0,57 s por chunk de 30 pasos con cu
 
 | Modelo | Parámetros | Contexto | Éxito en SO-101 Bench sim | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_bench_MolmoAct2-SO101_WM_full_fine_tune | 5.4B | no disponible | 5/39 | no disponible | HuggingFace (este repo) |
-| GR00T N1.7 (3B) | 3B | no disponible | 19/39 | no disponible | HuggingFace (`5hadytru/so101_bench_GR00T_N1.7-3B`) |
-| MolmoAct2-SO100_101 (base) | 5.4B (según este fine-tune) | no disponible | no disponible | no disponible | HuggingFace (`allenai/MolmoAct2-SO100_101`) |
+| so101_bench_MolmoAct2-SO101_WM_full_fine_tune | 5.4B | no disponible | 5/39 | no disponible | Hugging Face (este repo) |
+| GR00T N1.7 (3B) | 3B | no disponible | 19/39 | no disponible | Hugging Face (`5hadytru/so101_bench_GR00T_N1.7-3B`) |
+| MolmoAct2-SO100_101 (base) | 5.4B (según este fine-tune) | no disponible | no disponible | no disponible | Hugging Face (`allenai/MolmoAct2-SO100_101`) |
 
 No se dispone de datos de otros modelos comparables en la misma categoría (políticas VLA para brazos de bajo coste) dentro de la información proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de datos de otros modelos comparables en la misma categoría (pol�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_MolmoAct2-SO101_WM_full_fine_tune
+- Modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_MolmoAct2-SO101_WM_full_fine_tune
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-SO100_101
 - Dataset de entrenamiento: https://huggingface.co/datasets/5hadytru/so101_bench_sim_WM
 - Paper SO-101 Bench: https://huggingface.co/papers/2610.36420

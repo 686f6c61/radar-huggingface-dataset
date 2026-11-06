@@ -4,7 +4,7 @@
 
 NeuDecide es un modelo publicado por Neuphonic bajo el identificador `neuphonic/neudecide`, orientado a la comprensión de lenguaje hablado (SLU, *spoken language understanding*) y a la invocación de funciones y herramientas (*function calling* / *tool calling*) directamente a partir de audio. A diferencia de los pipelines clásicos de ASR seguidos de un LLM de texto, el modelo se distribuye con la etiqueta de pipeline `audio-classification`, lo que indica que su salida es una decisión estructurada (por ejemplo, la función o herramienta que debe invocarse) en lugar de una transcripción literal.
 
-El modelo está empaquetado en formato ONNX y etiquetado explícitamente como *on-device*, lo que sugiere que está pensado para ejecutarse en dispositivos con recursos limitados —teléfonos, asistentes embebidos o hardware de borde— sin depender de una API en la nube. Está entrenado únicamente para inglés (`en`) y se distribuye con licencia Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo está empaquetado en formato ONNX y etiquetado explícitamente como *on-device*, lo que sugiere que está pensado para ejecutarse en dispositivos con recursos limitados —teléfonos, asistentes embebidos o hardware de borde— sin depender de una API en la nube. Está entrenado únicamente para inglés (`en`) y se distribuye con licencia Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia actual radica en la combinación de tres factores: inferencia local en formato ONNX, orientación a agentes con llamadas a herramientas y procesamiento directo de audio. Esto encaja con la tendencia de asistentes de voz y agentes conversacionales que necesitan decidir acciones sin enviar audio a servidores externos. No se han publicado en la información disponible datos sobre arquitectura, número de parámetros ni longitud de contexto.
 
@@ -21,7 +21,7 @@ Su relevancia actual radica en la combinación de tres factores: inferencia loca
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX |
 | Pipeline declarado | audio-classification |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face) |
 | Acceso | restringido (gated), requiere aceptar condiciones |
 | Fecha de creacion | 2026-10-06 |
 | Ultima actualizacion | 2026-10-08 |
@@ -36,7 +36,7 @@ Los metadatos si permiten inferir algunos rasgos de diseno: el uso de ONNX y la 
 
 - Comprension de lenguaje hablado: procesa audio de entrada para extraer la intencion del hablante.
 - Function calling / tool calling a partir de audio: el modelo esta disenado para decidir que funcion o herramienta invocar segun lo dicho por el usuario.
-- Clasificacion de audio: el pipeline declarado en HuggingFace es `audio-classification`.
+- Clasificacion de audio: el pipeline declarado en Hugging Face es `audio-classification`.
 - Ejecucion en dispositivo (on-device): el formato ONNX y la etiqueta correspondiente permiten desplegarlo localmente.
 - Integracion en flujos de agentes: por su naturaleza de invocacion de herramientas, encaja en arquitecturas de agente con pasos encadenados, aunque no se detalla soporte explicito de razonamiento multi-paso.
 - Capacidades multilingues: no disponibles; el modelo declara unicamente ingles.
@@ -81,13 +81,13 @@ Nota: no se han identificado en la informacion proporcionada modelos comparables
 - Idioma: el modelo declara soporte unicamente para ingles, por lo que su uso en castellano u otros idiomas no esta garantizado.
 - Sesgos conocidos: no disponibles; no se ha publicado documentacion sobre evaluacion de sesgos.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible. En tareas de invocacion de herramientas, una clasificacion erronea puede derivar en la ejecucion de una accion no deseada, por lo que se recomienda validacion adicional en produccion.
-- Acceso restringido: el repositorio es *gated* y requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es *gated* y requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero conviene revisar los terminos adicionales asociados al acceso restringido y las condiciones de Neuphonic.
 - Ausencia de especificaciones: no hay informacion publica sobre parametros, contexto, dataset de entrenamiento ni benchmarks, lo que dificulta evaluar su idoneidad para produccion sin pruebas propias.
 - Tamano de repositorio reportado como 0.0 GB: este dato puede deberse a que los ficheros no son visibles sin acceso, por lo que no debe interpretarse como ausencia de pesos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neuphonic/neudecide
-- Organizacion Neuphonic en HuggingFace: https://huggingface.co/neuphonic
+- Hugging Face: https://huggingface.co/neuphonic/neudecide
+- Organizacion Neuphonic en Hugging Face: https://huggingface.co/neuphonic
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios o demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42-r4` es un artefacto publicado en HuggingFace por el usuario AlinaGonch. Por la nomenclatura del identificador (presencia de `qwen3-14b`, `squad`, `seed-42` y `r4`) todo apunta a un experimento de ajuste fino mediante LoRA con rango 4 sobre un modelo de la familia Qwen3 de 14.000 millones de parametros, entrenado sobre el conjunto de datos SQuAD con una proporcion (`ratio`) de 0.00, semilla 42 y fusionado o empaquetado con la libreria transformers. Ninguno de estos extremos esta confirmado en la model card, que es una plantilla generada automaticamente y sin cumplimentar.
+El repositorio `AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42-r4` es un artefacto publicado en Hugging Face por el usuario AlinaGonch. Por la nomenclatura del identificador (presencia de `qwen3-14b`, `squad`, `seed-42` y `r4`) todo apunta a un experimento de ajuste fino mediante LoRA con rango 4 sobre un modelo de la familia Qwen3 de 14.000 millones de parametros, entrenado sobre el conjunto de datos SQuAD con una proporcion (`ratio`) de 0.00, semilla 42 y fusionado o empaquetado con la libreria transformers. Ninguno de estos extremos esta confirmado en la model card, que es una plantilla generada automaticamente y sin cumplimentar.
 
 El peso del repositorio es de apenas 0,1 GB, lo que descarta que contenga los pesos completos de un modelo de 14B (que en bf16 ocuparian en torno a 28 GB). Es coherente, por tanto, con un adaptador LoRA o con un checkpoint parcial de investigacion. El modelo no registra descargas ni likes, no declara licencia, idiomas ni pipeline, y no incluye seccion de evaluacion ni resultados de benchmarks.
 
@@ -28,7 +28,7 @@ Su relevancia es limitada y de caracter experimental: no parece un modelo pensad
 
 ## Arquitectura y entrenamiento
 
-La model card publicada es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`. No se especifica arquitectura, numero de tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RLVR. El unico dato tecnico objetivo es la etiqueta `arxiv:1910.09700` incluida en los tags del repositorio, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de impacto ambiental en aprendizaje automatico; se trata de una referencia presente en la plantilla estandar y no de una descripcion del modelo.
+La model card publicada es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`. No se especifica arquitectura, numero de tokens de entrenamiento, composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o RLVR. El unico dato tecnico objetivo es la etiqueta `arxiv:1910.09700` incluida en los tags del repositorio, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de impacto ambiental en aprendizaje automatico; se trata de una referencia presente en la plantilla estandar y no de una descripcion del modelo.
 
 Por el nombre del repositorio se deduce, sin confirmacion documental, un proceso de ajuste con LoRA de rango 4 (`r4`), semilla 42 y un parametro `ratio` fijado a 0.00 sobre un subconjunto o variante del dataset SQuAD. El valor `ratio = 0.00` resulta llamativo y podria corresponder a un caso de control o ablacion dentro de un barrido experimental. El tamano del repositorio respalda la hipotesis de adaptador y no de pesos fusionados completos.
 
@@ -87,7 +87,7 @@ No es posible completar una comparativa rigurosa porque no se han publicado dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42-r4
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-42-r4
 - Paper referenciado en los tags (Lacoste et al., 2019, estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, su paper, demo o repositorio de codigo.

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `huggingface-mic/qwen2_5_omni-mic` | 25,6 M (fixture) | no disponible | Pruebas de integracion | no disponible (LICENSE del base incluido) | HuggingFace |
-| `mic-qwen2_5_omni-slim` (mismo autor) | 170,4 M (fixture) | no disponible | Pruebas de integracion, cobertura de checkpoints con procesador identico | no disponible | HuggingFace |
-| `Qwen/Qwen2.5-Omni-7B` | ~7.000 M | no disponible en esta ficha | Modelo omni-modal real (texto, audio, vision) | no disponible en esta ficha | HuggingFace |
+| `huggingface-mic/qwen2_5_omni-mic` | 25,6 M (fixture) | no disponible | Pruebas de integracion | no disponible (LICENSE del base incluido) | Hugging Face |
+| `mic-qwen2_5_omni-slim` (mismo autor) | 170,4 M (fixture) | no disponible | Pruebas de integracion, cobertura de checkpoints con procesador identico | no disponible | Hugging Face |
+| `Qwen/Qwen2.5-Omni-7B` | ~7.000 M | no disponible en esta ficha | Modelo omni-modal real (texto, audio, vision) | no disponible en esta ficha | Hugging Face |
 
 La comparativa con modelos de la misma categoria (modelos omni-modales de ~7B) no procede: este repositorio es un artefacto de prueba, no un modelo funcional. Cualquier comparacion de rendimiento con Qwen2.5-Omni-7B u otros modelos equivalentes seria invalida.
 
@@ -79,7 +79,7 @@ La comparativa con modelos de la misma categoria (modelos omni-modales de ~7B) n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingface-mic/qwen2_5_omni-mic
+- Repositorio Hugging Face: https://huggingface.co/huggingface-mic/qwen2_5_omni-mic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - Explicacion del proceso de reduccion: https://huggingface-mic-mic-coverage.static.hf.space/shrink/qwen2_5_omni-mic.html
 - Repositorio `transformers-mic` (script `sweep.py`): https://github.com/huggingface/transformers-mic/blob/main/experiments/sweep.py

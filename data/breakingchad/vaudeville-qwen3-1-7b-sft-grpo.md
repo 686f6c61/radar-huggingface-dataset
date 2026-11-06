@@ -76,9 +76,9 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vaudeville villager (SFT + GRPO) | 1,7B + LoRA | no disponible | QA con grounding y abstención en dominio sintético | Apache 2.0 | HuggingFace (20 descargas) |
-| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible | LLM generalista | Apache 2.0 | HuggingFace |
-| breakingchad/vaudeville-qwen3-1.7b-sft | 1,7B + LoRA | no disponible | Etapa SFT previa, mismo dominio | Apache 2.0 | HuggingFace |
+| Vaudeville villager (SFT + GRPO) | 1,7B + LoRA | no disponible | QA con grounding y abstención en dominio sintético | Apache 2.0 | Hugging Face (20 descargas) |
+| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible | LLM generalista | Apache 2.0 | Hugging Face |
+| breakingchad/vaudeville-qwen3-1.7b-sft | 1,7B + LoRA | no disponible | Etapa SFT previa, mismo dominio | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos comparables de la misma categoría (QA con abstención sobre documentos) en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas.
 
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de modelos comparables de la misma categor�
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/breakingchad/vaudeville-qwen3-1.7b-sft-grpo
+- Hugging Face del adaptador: https://huggingface.co/breakingchad/vaudeville-qwen3-1.7b-sft-grpo
 - Adaptador SFT previo: https://huggingface.co/breakingchad/vaudeville-qwen3-1.7b-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio del proyecto (código, juego y resultados): https://github.com/antrip03/syntax_error26

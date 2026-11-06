@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zomasec/Qwen3.8-27B-Uncensored-teeled es una copia de inferencia en formato GGUF publicada por CyInnove (cuenta de HuggingFace `zomasec`) sobre el modelo Qwen3.8-27B. No se trata de un entrenamiento propio: los pesos son un clon byte a byte de la release GGUF de DavidAU (Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP), que a su vez cuantiza el fine-tune NM-DAU sobre el Qwen/Qwen3.8-27B original. La model card es explícita: no se ha aplicado ningún dataset de CyInnove y el repositorio se declara como línea base congelada hasta que exista un fine-tune propio.
+zomasec/Qwen3.8-27B-Uncensored-teeled es una copia de inferencia en formato GGUF publicada por CyInnove (cuenta de Hugging Face `zomasec`) sobre el modelo Qwen3.8-27B. No se trata de un entrenamiento propio: los pesos son un clon byte a byte de la release GGUF de DavidAU (Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP), que a su vez cuantiza el fine-tune NM-DAU sobre el Qwen/Qwen3.8-27B original. La model card es explícita: no se ha aplicado ningún dataset de CyInnove y el repositorio se declara como línea base congelada hasta que exista un fine-tune propio.
 
 El modelo subyacente es un transformer híbrido de atención (Gated DeltaNet lineal combinada con atención completa) de aproximadamente 27B parámetros densos, multimodal nativo (image-text-to-text), con capacidades de razonamiento, tool calling y una cabeza MTP (multi-token prediction) para decodificación especulativa. Soporta inglés y chino, con una ventana de contexto declarada por fuentes de terceros de 262.144 tokens y un vocabulario de 248.320 entradas. La variante aquí publicada es una build "abliterated" (alineamiento de seguridad eliminado), lo que la sitúa en el terreno de la investigación en seguridad e interpretabilidad más que en el de producto comercial directo.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K ni simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zomasec/Qwen3.8-27B-Uncensored-teeled
+- Modelo en Hugging Face: https://huggingface.co/zomasec/Qwen3.8-27B-Uncensored-teeled
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Release GGUF upstream (DavidAU, NEO-CODER-MAX-MTP): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Checkpoint safetensors upstream (NM-DAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU

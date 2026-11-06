@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FmyzA/ppo-InvertedDoublePendulum-v5` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `InvertedDoublePendulum-v5` de Gymnasium. Lo publica el usuario FmyzA en HuggingFace y se distribuye como un checkpoint de la libreria stable-baselines3, acompanado de los artefactos habituales de evaluacion (fichero `results.json`, `config.json` y una reproduccion en video `replay.mp4`).
+`FmyzA/ppo-InvertedDoublePendulum-v5` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `InvertedDoublePendulum-v5` de Gymnasium. Lo publica el usuario FmyzA en Hugging Face y se distribuye como un checkpoint de la libreria stable-baselines3, acompanado de los artefactos habituales de evaluacion (fichero `results.json`, `config.json` y una reproduccion en video `replay.mp4`).
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica de control continuo que resuelve una tarea concreta de la familia de entornos MuJoCo, en la que un doble pendulo debe mantenerse en equilibrio sobre un carro. Su relevancia es, por tanto, la de un artefacto de referencia para reproducir y comparar algoritmos de RL, no la de una herramienta de proposito general.
 
@@ -80,7 +80,7 @@ La informacion disponible no incluye datos de otros agentes entrenados sobre `In
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| FmyzA/ppo-InvertedDoublePendulum-v5 | PPO (stable-baselines3) | InvertedDoublePendulum-v5 | no disponible | no aplica | mean_reward 9358.13 +/- 0.39 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| FmyzA/ppo-InvertedDoublePendulum-v5 | PPO (stable-baselines3) | InvertedDoublePendulum-v5 | no disponible | no aplica | mean_reward 9358.13 +/- 0.39 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Alternativas A2C de stable-baselines3 | A2C | InvertedDoublePendulum-v5 | no disponible | no aplica | no disponible en la informacion facilitada | no disponible | no disponible |
 | Alternativas SAC de stable-baselines3 | SAC | InvertedDoublePendulum-v5 | no disponible | no aplica | no disponible en la informacion facilitada | no disponible | no disponible |
 | Alternativas TD3 de stable-baselines3 | TD3 | InvertedDoublePendulum-v5 | no disponible | no aplica | no disponible en la informacion facilitada | no disponible | no disponible |
@@ -94,14 +94,14 @@ Conviene senalar como contexto que la libreria stable-baselines3 se distribuye b
 - Licencia ausente: la model card no declara licencia. Sin una licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion, por lo que conviene contactar con el autor antes de integrarlo en un producto.
 - Ausencia de documentacion de entrenamiento: no se publican hiperparametros, numero de timesteps, semilla ni detalles de la red, lo que dificulta la reproducibilidad completa del resultado.
 - Posible error en el ejemplo de codigo: la model card usa `repo_id = "ppo-InvertedDoublePendulum-v5"`, sin el prefijo de usuario `FmyzA/`. Para descargar desde el Hub es probable que haya que emplear `FmyzA/ppo-InvertedDoublePendulum-v5`.
-- Fechas de metadatos anomalas: el registro de HuggingFace indica creacion el 2026-10-13, una fecha futura; conviene tratarla con cautela al citar el modelo.
+- Fechas de metadatos anomalas: el registro de Hugging Face indica creacion el 2026-10-13, una fecha futura; conviene tratarla con cautela al citar el modelo.
 - Practicamente sin adopcion: 0 descargas y 0 likes, sin comunidad que haya validado de forma independiente el comportamiento del agente.
 - Riesgo de sobreajuste al simulador: al igual que cualquier politica entrenada en MuJoCo, su rendimiento puede degradarse si se cambia la fisica, los parametros del motor o la frecuencia de simulacion, sin que exista garantia de robustez.
 - Sin capacidades de lenguaje, vision, audio ni tool calling: no debe evaluarse ni presentarse como un modelo generativo de proposito general.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FmyzA/ppo-InvertedDoublePendulum-v5
+- Modelo en Hugging Face: https://huggingface.co/FmyzA/ppo-InvertedDoublePendulum-v5
 - stable-baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Gymnasium (documentacion): https://gymnasium.farama.org/
 - Utilidad `huggingface_sb3`: referenciada en la model card como `load_from_hub`, sin URL adicional en la informacion disponible

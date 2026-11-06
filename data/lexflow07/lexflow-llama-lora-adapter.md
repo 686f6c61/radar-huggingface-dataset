@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LexFlow07/lexflow-llama-lora-adapter es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario LexFlow07. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (fine-tuning) que debe cargarse sobre el modelo base unsloth/Llama-3.2-1B-Instruct-bnb-4bit, una versión cuantizada a 4 bits del Llama 3.2 1B Instruct de Meta. El adaptador se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace.
+LexFlow07/lexflow-llama-lora-adapter es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario LexFlow07. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino (fine-tuning) que debe cargarse sobre el modelo base unsloth/Llama-3.2-1B-Instruct-bnb-4bit, una versión cuantizada a 4 bits del Llama 3.2 1B Instruct de Meta. El adaptador se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face.
 
 El interés de esta ficha es limitado desde el punto de vista técnico: se trata de un adaptador de bajo rango sobre un modelo de 1.000 millones de parámetros, con cero descargas y cero likes en el momento de la consulta, sin model card descriptiva, sin datos de entrenamiento publicados y sin licencia declarada. No obstante, resulta representativo de un patrón muy común en el ecosistema open source: adaptadores LoRA de bajo coste entrenados con Unsloth y TRL sobre modelos pequeños cuantizados, orientados a tareas conversacionales específicas.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LexFlow07/lexflow-llama-lora-adapter | Adaptador LoRA sobre 1B | Heredado del base (131.072) | safetensors (PEFT) | no disponible | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.2-1B-Instruct | 1.240 M | 131.072 | safetensors | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| unsloth/Llama-3.2-1B-Instruct-bnb-4bit | 1.240 M (4-bit) | 131.072 | safetensors (bnb-4bit) | Llama 3.2 Community License | HuggingFace, muy descargado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.540 M | 32.768 | safetensors | Apache 2.0 | HuggingFace, ampliamente usado |
+| LexFlow07/lexflow-llama-lora-adapter | Adaptador LoRA sobre 1B | Heredado del base (131.072) | safetensors (PEFT) | no disponible | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | 1.240 M | 131.072 | safetensors | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| unsloth/Llama-3.2-1B-Instruct-bnb-4bit | 1.240 M (4-bit) | 131.072 | safetensors (bnb-4bit) | Llama 3.2 Community License | Hugging Face, muy descargado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.540 M | 32.768 | safetensors | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación directa con el modelo base y con la versión cuantizada de Unsloth es la más relevante, ya que el adaptador no puede evaluarse de forma aislada. Frente a Qwen2.5-1.5B-Instruct, el Llama 3.2 1B ofrece mayor contexto nativo pero una licencia más restrictiva y, en general, menor rendimiento en benchmarks de código y matemáticas en su rango de tamaño.
 
@@ -83,7 +83,7 @@ La comparación directa con el modelo base y con la versión cuantizada de Unslo
 
 ## Enlaces
 
-- [HuggingFace: LexFlow07/lexflow-llama-lora-adapter](https://huggingface.co/LexFlow07/lexflow-llama-lora-adapter)
+- [Hugging Face: LexFlow07/lexflow-llama-lora-adapter](https://huggingface.co/LexFlow07/lexflow-llama-lora-adapter)
 - [Modelo base: unsloth/Llama-3.2-1B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-bnb-4bit)
 - [Modelo original: meta-llama/Llama-3.2-1B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct)
 - [Repositorio TRL](https://github.com/huggingface/trl)

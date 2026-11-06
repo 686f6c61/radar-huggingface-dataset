@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| gemma4-e4b-biohub-mlx | 7.463.013.418 totales | no disponible | safetensors MLX 4 bits | apache-2.0 (con enlace a licencia Gemma 4) | HuggingFace, solo Apple Silicon | sin benchmarks publicados; optimizado para el entorno `biohub` |
-| google/gemma-4-e4b-it | no disponible | no disponible | no disponible | licencia Gemma 4 | HuggingFace | superior en tareas generales segun el autor |
+| gemma4-e4b-biohub-mlx | 7.463.013.418 totales | no disponible | safetensors MLX 4 bits | apache-2.0 (con enlace a licencia Gemma 4) | Hugging Face, solo Apple Silicon | sin benchmarks publicados; optimizado para el entorno `biohub` |
+| google/gemma-4-e4b-it | no disponible | no disponible | no disponible | licencia Gemma 4 | Hugging Face | superior en tareas generales segun el autor |
 | Otros modelos de tool calling de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados relevantes sobre el modelo ni sobre alternativas comparables; los enlaces recuperados correspondian a contenido no relacionado (ARD Mediathek). No se dispone, por tanto, de datos de terceros para contrastar parametros, contexto o rendimiento.
@@ -87,7 +87,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre el modelo ni s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheBioHub/gemma4-e4b-biohub-mlx
+- Modelo en Hugging Face: https://huggingface.co/TheBioHub/gemma4-e4b-biohub-mlx
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Paquete biohub (Snyder-Institute): https://github.com/Snyder-Institute

@@ -75,7 +75,7 @@ No se dispone de datos cuantitativos para una comparativa rigurosa. A nivel cual
 
 ## Enlaces
 
-- Repositorio HuggingFace original: https://huggingface.co/TheMistoAI/MistoLine
+- Repositorio Hugging Face original: https://huggingface.co/TheMistoAI/MistoLine
 - Repositorio GitHub: https://github.com/TheMistoAI/MistoLine
 - Preprocesador Anyline: https://github.com/TheMistoAI/ComfyUI-Anyline
 - Documentacion de ControlNet SDXL en diffusers: https://huggingface.co/docs/diffusers/main/en/api/pipelines/controlnet_sdxl

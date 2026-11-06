@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p3.mlp` es un artefacto publicado por IBM Research en HuggingFace. Por la nomenclatura del identificador (QAOA, Max-Cut, p3, MLP), todo apunta a que se trata de un perceptron multicapa que predice los angulos variacionales (las componentes beta y gamma) del algoritmo de optimizacion aproximada cuantica (QAOA) para el problema Max-Cut con una profundidad de circuito p=3. No es, por tanto, un modelo de lenguaje generativo, sino un modelo auxiliar de regresion numerica pensado para asistir a la optimizacion de circuitos cuanticos.
+`ibm-research/qaoa_angles.max_cut.p3.mlp` es un artefacto publicado por IBM Research en Hugging Face. Por la nomenclatura del identificador (QAOA, Max-Cut, p3, MLP), todo apunta a que se trata de un perceptron multicapa que predice los angulos variacionales (las componentes beta y gamma) del algoritmo de optimizacion aproximada cuantica (QAOA) para el problema Max-Cut con una profundidad de circuito p=3. No es, por tanto, un modelo de lenguaje generativo, sino un modelo auxiliar de regresion numerica pensado para asistir a la optimizacion de circuitos cuanticos.
 
 El repositorio esta etiquetado con `onnx` y `license:apache-2.0`, y el autor indicado es `ibm-research`. El tamano del repositorio aparece como 0.0 GB, las descargas y los likes son cero, y no se ha publicado model card ni pipeline asociado. La fecha de creacion indicada en los metadatos es 2026-10-14.
 
@@ -77,6 +77,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.mlp
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p3.mlp
 - Los resultados de busqueda web disponibles no aportan informacion relevante sobre este modelo: se limitan a paginas generales de IBM (https://www.ibm.com/, https://fr.wikipedia.org/wiki/IBM y similares), sin referencia al artefacto ni a su paper asociado.
 - No se han encontrado papers, blogs, repositorios ni demos vinculados al modelo en la informacion proporcionada.

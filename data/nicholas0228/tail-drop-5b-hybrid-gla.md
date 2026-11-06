@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid GLA es un checkpoint de investigación de 341.606.400 parámetros (aproximadamente 341,6 M) publicado por el usuario Nicholas0228 en HuggingFace. Se trata de un modelo de lenguaje causal entrenado desde cero sobre el corpus congelado FineWeb-Edu, con un objetivo de entrenamiento de 5.000.134.656 tokens (paso 9.537) y una longitud de contexto de entrenamiento de 2.048 tokens. A pesar del sufijo "5b" en el identificador, este no hace referencia al número de parámetros, sino a los 5.000 millones de tokens de entrenamiento alcanzados.
+Hybrid GLA es un checkpoint de investigación de 341.606.400 parámetros (aproximadamente 341,6 M) publicado por el usuario Nicholas0228 en Hugging Face. Se trata de un modelo de lenguaje causal entrenado desde cero sobre el corpus congelado FineWeb-Edu, con un objetivo de entrenamiento de 5.000.134.656 tokens (paso 9.537) y una longitud de contexto de entrenamiento de 2.048 tokens. A pesar del sufijo "5b" en el identificador, este no hace referencia al número de parámetros, sino a los 5.000 millones de tokens de entrenamiento alcanzados.
 
 El interés del modelo es fundamentalmente arquitectónico: el nombre hace referencia a Gated Linear Attention (GLA) y a una atención con ventana de sufijo ("tail drop"), combinando capas densas exteriores con módulos recurrentes según la terminología de la propia model card (variantes M4, comparaciones con Mamba-2, ventanas de sufijo S-min32/S-min64 y modelos antiguos de prefijo protegido P32/P64). Es, por tanto, una publicación orientada a comparaciones controladas de investigación bajo políticas de inferencia idénticas, no un modelo listo para producto.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Hybrid GLA (este modelo) | 341,6 M | 2.048 tokens (entrenamiento) | No disponible | HuggingFace, cargador propio no estándar |
-| Pythia-410M | 410 M | 2.048 tokens | Apache-2.0 | HuggingFace, Transformers estándar |
-| SmolLM2-360M | 362 M | 8.192 tokens | Apache-2.0 | HuggingFace, Transformers estándar |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 (mayoría de variantes) | HuggingFace, Transformers estándar |
+| Hybrid GLA (este modelo) | 341,6 M | 2.048 tokens (entrenamiento) | No disponible | Hugging Face, cargador propio no estándar |
+| Pythia-410M | 410 M | 2.048 tokens | Apache-2.0 | Hugging Face, Transformers estándar |
+| SmolLM2-360M | 362 M | 8.192 tokens | Apache-2.0 | Hugging Face, Transformers estándar |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 (mayoría de variantes) | Hugging Face, Transformers estándar |
 
 Nota: los datos de los tres modelos alternativos provienen de información pública ampliamente conocida y no forman parte de la información proporcionada en esta consulta; conviene verificarlos en sus respectivas model cards antes de citarlos. No se dispone de resultados de benchmarks comparables para Hybrid GLA, por lo que no es posible establecer una comparación de rendimiento.
 
@@ -94,7 +94,7 @@ Nota: los datos de los tres modelos alternativos provienen de información públ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nicholas0228/tail-drop-5b-hybrid-gla
+- Hugging Face: https://huggingface.co/Nicholas0228/tail-drop-5b-hybrid-gla
 - Repositorio de código (revisión fijada): https://github.com/Nicholas0228/tail_drop_attn/tree/758839451f45df67d2fb3a5626b8a07247b38f2e
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizador de referencia: https://huggingface.co/mistralai/Mistral-7B-v0.1

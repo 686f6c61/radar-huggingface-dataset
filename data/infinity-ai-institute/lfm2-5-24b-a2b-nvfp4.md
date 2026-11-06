@@ -88,8 +88,8 @@ No se han proporcionado datos de benchmarks de modelos alternativos de la misma 
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B-NVFP4 (este) | 24B totales / ~2B activos (segun denominacion) | 131.072 tokens | NVFP4 en expertos, safetensors, 14 GB | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM2.5-24B-A2B (base) | 24B totales / ~2B activos (segun denominacion) | no disponible en la informacion proporcionada | BF16, 45 GB | LFM Open License v1.0 | HuggingFace |
+| LFM2.5-24B-A2B-NVFP4 (este) | 24B totales / ~2B activos (segun denominacion) | 131.072 tokens | NVFP4 en expertos, safetensors, 14 GB | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM2.5-24B-A2B (base) | 24B totales / ~2B activos (segun denominacion) | no disponible en la informacion proporcionada | BF16, 45 GB | LFM Open License v1.0 | Hugging Face |
 | Otras alternativas de tamano o tarea similares | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se han proporcionado datos de benchmarks de modelos alternativos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infinity-ai-institute/LFM2.5-24B-A2B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/infinity-ai-institute/LFM2.5-24B-A2B-NVFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Licencia del modelo base (LFM Open License v1.0): fichero `LICENSE` del repositorio
 - NVIDIA Model Optimizer (ModelOpt), herramienta de cuantizacion citada: https://github.com/NVIDIA/Model-Optimizer

@@ -18,10 +18,10 @@ La model card reporta una CER media por fila del 0,603 %, una CER a nivel de cor
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | fp16 (IMF v1); no se documentan int8, GGUF ni otras |
 | Idiomas soportados | Persa (farsi); no se documentan otros idiomas |
-| Licencia | BSD-3-Clause para pesos y código; CC0-1.0 para datos de entrenamiento; la metadata de HuggingFace no declara licencia |
+| Licencia | BSD-3-Clause para pesos y código; CC0-1.0 para datos de entrenamiento; la metadata de Hugging Face no declara licencia |
 | Formato de pesos | IMF v1 en fp16; no se especifica safetensors ni GGUF; repositorio de 0,7 GB |
 | Tarea | Diacritización de texto persa |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creación indicada | 2026-10-19 |
 
@@ -78,8 +78,8 @@ No se dispone de datos públicos de un modelo comparable de diacritización pers
 
 | Modelo | Idioma / tarea | Arquitectura | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Interscript/fas-diac-base-1.0 | Persa / diacritización | ByT5-small seq2seq | ~300 M (derivado de ByT5-small) | No disponible | CER 0,603 % row-mean; 82,33 % word accuracy | BSD-3-Clause (pesos/código); CC0-1.0 (datos) | HuggingFace |
-| Interscript/urd-diac-1.0 | Urdu / diacritización | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Interscript/fas-diac-base-1.0 | Persa / diacritización | ByT5-small seq2seq | ~300 M (derivado de ByT5-small) | No disponible | CER 0,603 % row-mean; 82,33 % word accuracy | BSD-3-Clause (pesos/código); CC0-1.0 (datos) | Hugging Face |
+| Interscript/urd-diac-1.0 | Urdu / diacritización | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Interscript heb-diac-plane-1.0/2.0 | Hebreo / diacritización | ByT5-base, K=3, int8 | ~582 M (derivado de ByT5-base) | No disponible | DER 8,18 en nakdimon | No disponible | GitHub releases |
 
 La comparación con modelos de otras lenguas es solo arquitectónica y de tarea; no permite extrapolar calidad en persa.
@@ -93,18 +93,18 @@ La comparación con modelos de otras lenguas es solo arquitectónica y de tarea;
 - La línea histórica de 0,52 % no se reproduce según la model card; no debe usarse como baseline.
 - La longitud de contexto no está documentada; para documentos largos hay que dividir el texto y gestionar solapamientos.
 - El formato IMF v1 es específico de Interscript; la integración requiere su runtime o una conversión no documentada.
-- La licencia BSD-3-Clause permite uso comercial con condiciones de atribución y avisos; los datos son CC0-1.0. La metadata de HuggingFace no declara licencia, así que conviene verificar el archivo de licencia del repositorio.
+- La licencia BSD-3-Clause permite uso comercial con condiciones de atribución y avisos; los datos son CC0-1.0. La metadata de Hugging Face no declara licencia, así que conviene verificar el archivo de licencia del repositorio.
 - No se documentan sesgos ni evaluación de sesgos; el corpus HomoRich puede sobrerrepresentar ciertos registros.
 - La adopción es baja (0 descargas y 0 likes en el momento de la consulta), lo que implica poca validación comunitaria.
 - Solo soporta persa; no es multilingüe.
 
 ## Enlaces
 
-- [Interscript/fas-diac-base-1.0 en HuggingFace](https://huggingface.co/Interscript/fas-diac-base-1.0)
-- [Modelos de Interscript en HuggingFace](https://huggingface.co/Interscript/models)
+- [Interscript/fas-diac-base-1.0 en Hugging Face](https://huggingface.co/Interscript/fas-diac-base-1.0)
+- [Modelos de Interscript en Hugging Face](https://huggingface.co/Interscript/models)
 - [Releases de interscript-models en GitHub](https://github.com/interscript/interscript-models/releases)
 - [Índice de modelos en GitHub](https://github.com/interscript/interscript-models/tree/main/models)
-- [Interscript/urd-diac-1.0 en HuggingFace](https://huggingface.co/Interscript/urd-diac-1.0)
+- [Interscript/urd-diac-1.0 en Hugging Face](https://huggingface.co/Interscript/urd-diac-1.0)
 - [Interscript ML](https://interscript.org/ml/)
 
 No se han encontrado papers, blogs ni demos adicionales en la búsqueda web proporcionada.

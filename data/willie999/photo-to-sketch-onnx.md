@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Willie999/photo-to-sketch-onnx
+- Repositorio Hugging Face: https://huggingface.co/Willie999/photo-to-sketch-onnx
 - Modelo original (referenciado en la model card): https://huggingface.co/Willie999/photo-to-sketch-unet
 - Documentacion de ONNX Runtime: https://onnxruntime.ai/
 - Especificacion ONNX (opset 17): https://onnx.ai/onnx/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored es un modelo de lenguaje publicado en HuggingFace por el usuario nightmedia, construido como un merge experimental a partir de varios modelos base y adaptadores. Segun la nomenclatura del identificador (35B-A3B) y las etiquetas del repositorio (qwen3_6, qwen3_5), se trata de un transformer de mezcla de expertos (MoE) con aproximadamente 35.000 millones de parametros totales y unos 3.000 millones activos por token, derivado de la familia Qwen 3.6. El repositorio se declara ademas como multimodal, con pipeline image-text-to-text.
+Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored es un modelo de lenguaje publicado en Hugging Face por el usuario nightmedia, construido como un merge experimental a partir de varios modelos base y adaptadores. Segun la nomenclatura del identificador (35B-A3B) y las etiquetas del repositorio (qwen3_6, qwen3_5), se trata de un transformer de mezcla de expertos (MoE) con aproximadamente 35.000 millones de parametros totales y unos 3.000 millones activos por token, derivado de la familia Qwen 3.6. El repositorio se declara ademas como multimodal, con pipeline image-text-to-text.
 
-El modelo se presenta con etiquetas que describen destilacion, razonamiento con cadenas de pensamiento largas (long-cot), ajuste por instrucciones mediante SFT con LoRA y conversacion multi-turno. Cubre los idiomas ingles, chino, japones y espanol, y se publica bajo licencia Apache 2.0, aunque con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo se presenta con etiquetas que describen destilacion, razonamiento con cadenas de pensamiento largas (long-cot), ajuste por instrucciones mediante SFT con LoRA y conversacion multi-turno. Cubre los idiomas ingles, chino, japones y espanol, y se publica bajo licencia Apache 2.0, aunque con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 Es relevante ahora como ejemplo del ecosistema de merges comunitarios sobre arquitecturas MoE eficientes en inferencia, donde un modelo de 35B totales mantiene un coste de computo por token cercano al de un modelo de 3B. No obstante, la ficha debe leerse con cautela: el repositorio no incluye resultados de benchmarks, tiene un historico de 0 descargas y 1 like, y no documenta la longitud de contexto ni la composicion del dataset de entrenamiento. La fecha de publicacion indicada es el 19 de septiembre de 2026.
 
@@ -20,7 +20,7 @@ Es relevante ahora como ejemplo del ecosistema de merges comunitarios sobre arqu
 | Idiomas soportados | Ingles (en), chino (zh), japones (ja), espanol (es) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible en detalle; libreria declarada transformers, con etiquetas de unsloth y mergekit |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline | image-text-to-text (multimodal entrada imagen + texto) |
 | Fecha de publicacion | 19 de septiembre de 2026 |
 
@@ -38,7 +38,7 @@ En cuanto al entrenamiento, las etiquetas mencionan distillation, reasoning, cha
 - Procesamiento multimodal de entrada imagen + texto, ya que el pipeline declarado es image-text-to-text.
 - Soporte multilingue en ingles, chino, japones y espanol.
 - Perfil "uncensored" segun el nombre del modelo, orientado a reducir rechazos en la generacion; no se detalla la metodologia aplicada.
-- Etiqueta endpoints_compatible, que indica compatibilidad con endpoints gestionados de HuggingFace.
+- Etiqueta endpoints_compatible, que indica compatibilidad con endpoints gestionados de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada. El modelo base Qwen/Qwen-AgentWorld-35B-A3B sugiere orientacion a agentes, pero no se confirma ninguna capacidad de agente ni de razonamiento multi-paso en la documentacion del repositorio.
 - Capacidades de audio o de vision mas alla de la entrada de imagen: no disponibles.
 
@@ -55,7 +55,7 @@ En cuanto al entrenamiento, las etiquetas mencionan distillation, reasoning, cha
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tablas de MMLU, HumanEval, GSM8K, MATH ni de ninguna otra evaluacion, y la busqueda web realizada no devolvio documentacion tecnica asociada al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K, MATH ni de ninguna otra evaluacion, y la busqueda web realizada no devolvio documentacion tecnica asociada al modelo.
 
 ## Requisitos de hardware
 
@@ -73,25 +73,25 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros indi
 
 ## Comparativa con modelos similares
 
-No hay datos de benchmarks que permitan comparar el rendimiento. La tabla siguiente recoge unicamente la relacion entre este modelo y los modelos listados en su propia ficha de HuggingFace, con los datos disponibles.
+No hay datos de benchmarks que permitan comparar el rendimiento. La tabla siguiente recoge unicamente la relacion entre este modelo y los modelos listados en su propia ficha de Hugging Face, con los datos disponibles.
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored | Modelo analizado | 35B totales / 3B activos (segun nomenclatura) | no disponible | Apache 2.0 | Gated, 0 descargas |
-| Qwen/Qwen-AgentWorld-35B-A3B | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en HuggingFace |
-| Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en HuggingFace |
-| nightmedia/Qwen3.6-35B-A3B-FSM | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en HuggingFace |
-| nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1 | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en HuggingFace |
-| AllSpark-Research/Iris-mini | Modelo base declarado | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| orcarouter/Nex-N2.5-mini-Uncensored | Modelo base declarado | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| thomsonreuters/Thomson-1.0-Small | Modelo base declarado | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| Qwen/Qwen-AgentWorld-35B-A3B | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en Hugging Face |
+| Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en Hugging Face |
+| nightmedia/Qwen3.6-35B-A3B-FSM | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en Hugging Face |
+| nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1 | Modelo base declarado | 35B totales / 3B activos (segun nomenclatura) | no disponible | no disponible | Publico en Hugging Face |
+| AllSpark-Research/Iris-mini | Modelo base declarado | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| orcarouter/Nex-N2.5-mini-Uncensored | Modelo base declarado | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| thomsonreuters/Thomson-1.0-Small | Modelo base declarado | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 No se dispone de datos verificados para comparar con alternativas externas de la misma categoria (por ejemplo, otros MoE de aproximadamente 30-35B con 3B activos), por lo que no se incluyen cifras que no puedan contrastarse.
 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia verificable de rendimiento en tareas de razonamiento, codigo o matematicas. Cualquier uso en produccion exige una evaluacion propia previa.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede complicar la automatizacion y el despliegue en pipelines de CI/CD.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede complicar la automatizacion y el despliegue en pipelines de CI/CD.
 - Repositorio practicamente sin validacion externa: 0 descargas y 1 like en el momento de la consulta, sin issues ni discusiones publicas.
 - Modelo declarado como "uncensored": cabe esperar una tasa reducida de rechazos ante peticiones sensibles, con mayor riesgo de generar contenido inapropiado, sesgado o danino. Requiere filtros adicionales si se expone a usuarios finales.
 - Riesgo de alucinacion: no disponible ningun dato especifico, pero al tratarse de un merge sin evaluacion publicada el riesgo no puede acotarse con cifras.
@@ -103,7 +103,7 @@ No se dispone de datos verificados para comparar con alternativas externas de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
 - Modelo base declarado: https://huggingface.co/Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated
 - Modelo base declarado: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-FSM

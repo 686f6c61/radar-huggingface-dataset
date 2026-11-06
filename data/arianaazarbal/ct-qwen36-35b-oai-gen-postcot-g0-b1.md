@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ct-qwen36-35b-oai-gen-postcot-g0-b1 | Adaptador LoRA sobre 35B (aprox. 3B activos) | 8192 tokens en entrenamiento | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B segun denominacion (aprox. 3B activos) | no disponible | no disponible | HuggingFace |
+| ct-qwen36-35b-oai-gen-postcot-g0-b1 | Adaptador LoRA sobre 35B (aprox. 3B activos) | 8192 tokens en entrenamiento | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35B segun denominacion (aprox. 3B activos) | no disponible | no disponible | Hugging Face |
 | Otros adaptadores del programa constitutional_training | no disponible | no disponible | no disponible | no disponibles en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de otros adaptadores comparables en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de otros adaptadores comparables en la 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g0-b1
+- Adaptador en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g0-b1
 - Modelo base Qwen/Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o repositorio del programa constitutional_training: no disponible en la informacion proporcionada
 - Resultados de la busqueda web: no contienen enlaces relevantes para este modelo (corresponden a guias de marketing local)

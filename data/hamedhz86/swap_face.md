@@ -77,10 +77,10 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BFS (hamedhz86/Swap_face) | Coleccion de LoRA para face, head y body swap | no disponible (repo de 13,0 GB) | no aplica | MIT | HuggingFace, 0 descargas, 0 likes |
-| Qwen-Image-Edit 2511 sin LoRA | Modelo base de edicion de imagen | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace (modelo base citado) |
-| FLUX.2 Klein 9B | Modelo base de difusion imagen a imagen | 9B (segun el nombre del modelo) | no aplica | no disponible en la informacion proporcionada | HuggingFace, con variante fp8 |
-| Krea 2 Raw | Modelo base de generacion y edicion de imagen | no disponible | no aplica | indicado como krea (nombre de la organizacion) | HuggingFace |
+| BFS (hamedhz86/Swap_face) | Coleccion de LoRA para face, head y body swap | no disponible (repo de 13,0 GB) | no aplica | MIT | Hugging Face, 0 descargas, 0 likes |
+| Qwen-Image-Edit 2511 sin LoRA | Modelo base de edicion de imagen | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face (modelo base citado) |
+| FLUX.2 Klein 9B | Modelo base de difusion imagen a imagen | 9B (segun el nombre del modelo) | no aplica | no disponible en la informacion proporcionada | Hugging Face, con variante fp8 |
+| Krea 2 Raw | Modelo base de generacion y edicion de imagen | no disponible | no aplica | indicado como krea (nombre de la organizacion) | Hugging Face |
 | Inswapper / pipelines dedicados de face swap | Modelo especifico de sustitucion facial | no disponible | no aplica | no disponible | ecosistema aparte, no incluido en esta ficha |
 
 La diferencia principal frente a los backbones sin adaptar es que BFS no anade un modelo nuevo, sino que condiciona un modelo de edicion existente hacia la transferencia de identidad; por tanto, su calidad final queda acotada por la del backbone sobre el que se aplique.
@@ -101,7 +101,7 @@ La diferencia principal frente a los backbones sin adaptar es que BFS no anade u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hamedhz86/Swap_face
+- Modelo en Hugging Face: https://huggingface.co/hamedhz86/Swap_face
 - Guia de head swap V1 / V1.1 para Qwen Image 2.1: docs/qwen-image-2.1.md (ruta relativa dentro del repositorio)
 - Guia de body swap V1.0 para Qwen Image 2.1: docs/qwen-image-2.1-body.md (ruta relativa dentro del repositorio)
 - Guia de Qwen Image Edit 2509/2511: docs/qwen-image-edit.md (ruta relativa dentro del repositorio)

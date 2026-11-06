@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos controlados frente a alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
+- Modelo en Hugging Face: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - Repositorio GGUF: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen3.8-27B
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-27B

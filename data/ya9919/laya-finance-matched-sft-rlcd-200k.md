@@ -6,7 +6,7 @@
 
 La relevancia es acotada y muy específica: se trata de un artefacto de reproducción de investigación, ligado a la librería `laya` (versión 0.4.2) y al repositorio `mas-simulation`. El autor publica métricas de evaluación sobre un subconjunto congelado de 240.458 filas y 119 versiones de pregunta (accuracy 0,7393; F1 macro por pregunta 0,3605; cero predicciones inválidas), lo que permite auditar el comportamiento del modelo en esa tarea concreta.
 
-Conviene subrayar que el modelo solo declara inglés, no expone pipeline en HuggingFace, no tiene descargas ni likes, y su model card no describe arquitectura interna más allá de "encoder" más "cabeza de decisión". No hay información sobre ventana de contexto efectiva, composición del corpus de preentrenamiento ni alineamiento (RLHF/DPO).
+Conviene subrayar que el modelo solo declara inglés, no expone pipeline en Hugging Face, no tiene descargas ni likes, y su model card no describe arquitectura interna más allá de "encoder" más "cabeza de decisión". No hay información sobre ventana de contexto efectiva, composición del corpus de preentrenamiento ni alineamiento (RLHF/DPO).
 
 ## Especificaciones tecnicas
 
@@ -73,8 +73,8 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 | Modelo | Parametros | Contexto | Accuracy (subconjunto 240.458 filas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `laya-finance-matched-sft-rlcd-200k` (este modelo) | 421.293.830 | No disponible | 0,739268396 | Apache-2.0 | HuggingFace |
-| `ya9919/laya-finance-matched-sft-200k` (modelo base) | No disponible en la información | No disponible | No disponible | Apache-2.0 (heredada) | HuggingFace |
+| `laya-finance-matched-sft-rlcd-200k` (este modelo) | 421.293.830 | No disponible | 0,739268396 | Apache-2.0 | Hugging Face |
+| `ya9919/laya-finance-matched-sft-200k` (modelo base) | No disponible en la información | No disponible | No disponible | Apache-2.0 (heredada) | Hugging Face |
 | Otros modelos de QA financiero | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,12 +88,12 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 - Advertencia de evaluación: los resultados publicados usan un subconjunto de 240.458 filas, distinto del test completo de 418.597 filas del repositorio fuente; no son comparables entre sí.
 - Restricciones de licencia: los artefactos del modelo son Apache-2.0, pero los datos de entrenamiento retienen los términos `chfs-cgss-cfps-clds-source-data-terms` del repositorio de QA, lo que puede condicionar el uso comercial de derivados entrenados con esos datos.
 - Dependencia de versiones concretas: la receta exige `laya==0.4.2`, PyTorch 2.12.1 y Transformers 5.19.0; otras combinaciones pueden no cargar el checkpoint correctamente.
-- Sin pipeline declarado en HuggingFace, sin descargas ni validación de la comunidad: la fiabilidad del artefacto depende únicamente de la reproducibilidad declarada por el autor.
+- Sin pipeline declarado en Hugging Face, sin descargas ni validación de la comunidad: la fiabilidad del artefacto depende únicamente de la reproducibilidad declarada por el autor.
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo, por lo que no hay verificación externa independiente de las métricas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ya9919/laya-finance-matched-sft-rlcd-200k
+- Modelo en Hugging Face: https://huggingface.co/ya9919/laya-finance-matched-sft-rlcd-200k
 - Modelo base: https://huggingface.co/ya9919/laya-finance-matched-sft-200k
 - Repositorio de reproducción y evidencia agregada: https://github.com/KataDavidXD/mas-simulation
 - Paper, blog o demo adicionales: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-october-stage-1_a es un modelo de generacion de texto publicado en HuggingFace por el usuario reaperdoesntknow el 2 de octubre de 2026. Se trata de un modelo base entrenado desde cero ("from scratch"), con 410.256.184 parametros totales (aproximadamente 410 millones) y un tamano de repositorio de 1,6 GB, lo que sugiere pesos almacenados en precision completa (fp32). La model card indica que fue generada automaticamente por el Trainer de HuggingFace y que no ha sido revisada ni completada por el autor.
+october-stage-1_a es un modelo de generacion de texto publicado en Hugging Face por el usuario reaperdoesntknow el 2 de octubre de 2026. Se trata de un modelo base entrenado desde cero ("from scratch"), con 410.256.184 parametros totales (aproximadamente 410 millones) y un tamano de repositorio de 1,6 GB, lo que sugiere pesos almacenados en precision completa (fp32). La model card indica que fue generada automaticamente por el Trainer de Hugging Face y que no ha sido revisada ni completada por el autor.
 
 El modelo se distribuye a traves de la libreria transformers, con pesos en formato safetensors y la etiqueta `custom_code`, lo que implica que requiere cargar codigo propio del repositorio mediante `trust_remote_code=True`. Incluye ademas la etiqueta `tamelm_two_axis`, que apunta a una implementacion de arquitectura personalizada, aunque no se aporta ninguna documentacion tecnica al respecto. No se declara licencia, ni idiomas soportados, ni composicion del dataset de entrenamiento.
 
@@ -98,6 +98,6 @@ La diferencia principal no es de tamano, sino de madurez: los tres modelos de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/october-stage-1_a
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/october-stage-1_a
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: todos los enlaces recuperados eran contenido no relacionado y sin valor tecnico, por lo que no se incluyen.
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados al modelo.

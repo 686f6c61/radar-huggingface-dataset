@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Rudra-CDRI/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, implementado con la librería stable-baselines3. Lo publica el usuario Rudra-CDRI en HuggingFace y su única finalidad declarada es resolver la tarea de control del citado entorno: seleccionar acciones de forma secuencial a partir del estado observado hasta que el módulo de aterrizaje toca suelo o se estrella.
+El modelo `Rudra-CDRI/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2, implementado con la librería stable-baselines3. Lo publica el usuario Rudra-CDRI en Hugging Face y su única finalidad declarada es resolver la tarea de control del citado entorno: seleccionar acciones de forma secuencial a partir del estado observado hasta que el módulo de aterrizaje toca suelo o se estrella.
 
-No se trata de un modelo de lenguaje ni de un modelo fundacional. La model card es un esqueleto generado automáticamente por la integración de stable-baselines3 con HuggingFace: no incluye código de uso (contiene un `TODO`), no documenta hiperparámetros, semillas, arquitectura de red ni composición de datos, y el repositorio figura con un tamaño de 0,0 GB. No declara licencia, idiomas ni formato de pesos.
+No se trata de un modelo de lenguaje ni de un modelo fundacional. La model card es un esqueleto generado automáticamente por la integración de stable-baselines3 con Hugging Face: no incluye código de uso (contiene un `TODO`), no documenta hiperparámetros, semillas, arquitectura de red ni composición de datos, y el repositorio figura con un tamaño de 0,0 GB. No declara licencia, idiomas ni formato de pesos.
 
 Su relevancia ahora es limitada y de carácter didáctico o instrumental: sirve como ejemplo reproducible de cómo se publica un agente de RL en el Hub, y como posible baseline en experimentos de comparación. El único resultado declarado es un retorno medio de -286,44 ± 99,92 en LunarLander-v2, marcado como no verificado, lo que indica que la política no ha convergido a un comportamiento competente.
 
@@ -72,7 +72,7 @@ No se dispone de datos de modelos comparables en la información proporcionada.
 
 | Modelo | Parametros | Contexto | Rendimiento en LunarLander-v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rudra-CDRI/ppo-LunarLander-v2 | no disponible | no aplica | -286,44 +/- 99,92 (no verificado) | no disponible | HuggingFace |
+| Rudra-CDRI/ppo-LunarLander-v2 | no disponible | no aplica | -286,44 +/- 99,92 (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables (otros agentes PPO/DQN para LunarLander-v2) | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No se dispone de datos de modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rudra-CDRI/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/Rudra-CDRI/ppo-LunarLander-v2
 - Repositorio de stable-baselines3 (citado en la model card): https://github.com/DLR-RM/stable-baselines3
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados obtenidos corresponden a páginas de cronómetro y calendario (timeanddate.com) sin relación con el artefacto. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

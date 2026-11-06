@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `r1019-26d7cf3c-z-image-zbx3-s61-94f21b9c`, publicado por el usuario G21998 en HuggingFace, es un artefacto de investigación privado etiquetado como `sn56-replay` y `private`. La model card lo describe explícitamente como un "registro de investigación privado, no un envío" (private research record, not a submission), correspondiente a una ejecución de entrenamiento identificada como tarea `26d7cf3c` con variante `z-image`, brazo `zbx3`, semilla 61 y árbol `94f21b9c`. No se trata, por tanto, de un modelo de propósito general publicado para su uso por terceros, sino de un checkpoint de replay asociado a un proceso de validación interno.
+El modelo `r1019-26d7cf3c-z-image-zbx3-s61-94f21b9c`, publicado por el usuario G21998 en Hugging Face, es un artefacto de investigación privado etiquetado como `sn56-replay` y `private`. La model card lo describe explícitamente como un "registro de investigación privado, no un envío" (private research record, not a submission), correspondiente a una ejecución de entrenamiento identificada como tarea `26d7cf3c` con variante `z-image`, brazo `zbx3`, semilla 61 y árbol `94f21b9c`. No se trata, por tanto, de un modelo de propósito general publicado para su uso por terceros, sino de un checkpoint de replay asociado a un proceso de validación interno.
 
 El repositorio ocupa 4,2 GB y contiene, según la model card, un directorio `checkpoints/` con lo que el validador subiría y un directorio `replay/` con registros y logs. La metadata incluye hashes SHA-256 de artefacto (`7795a5d4`) e identidad (`2ef4d59f`), un valor de cuota de 23 y una lista de flags vacía. El estado registrado es `UPLOAD` con código de retorno 0 y finalización correcta del artefacto entrenado.
 
@@ -75,5 +75,5 @@ No disponible. No se identifican modelos comparables en la información proporci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s61-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s61-94f21b9c
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

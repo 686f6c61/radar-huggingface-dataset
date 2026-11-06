@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este artefacto, publicado en HuggingFace bajo el identificador `akansharaghav/carbon-audit-t4-run`, no es un modelo de inteligencia artificial, sino un registro de auditoría de emisiones de carbono asociado a un entrenamiento de un modelo no especificado. La model card documenta la huella ambiental del proceso de entrenamiento, con datos extraídos mediante la herramienta CodeCarbon. El autor es `akansharaghav`, y el registro fue creado el 23 de agosto de 2026.
+Este artefacto, publicado en Hugging Face bajo el identificador `akansharaghav/carbon-audit-t4-run`, no es un modelo de inteligencia artificial, sino un registro de auditoría de emisiones de carbono asociado a un entrenamiento de un modelo no especificado. La model card documenta la huella ambiental del proceso de entrenamiento, con datos extraídos mediante la herramienta CodeCarbon. El autor es `akansharaghav`, y el registro fue creado el 23 de agosto de 2026.
 
 La relevancia de este artefacto radica en la creciente necesidad de transparencia ambiental en el desarrollo de IA. Al publicar métricas de emisiones de CO₂ equivalente, permite a la comunidad evaluar el coste ecológico de los entrenamientos y fomentar prácticas más sostenibles. Sin embargo, no contiene pesos, arquitectura ni código de un modelo de aprendizaje automático; es únicamente una ficha de medición de impacto ambiental.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Este 
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros modelos comparables en cuanto a arquitectura o rendimiento, ya que este artefacto no es un modelo de IA. Existe otro registro similar en HuggingFace, `24f1002603/carbon-audit-model`, que probablemente sigue el mismo formato de auditoria de emisiones, pero no se proporcionan datos de comparacion.
+No se dispone de informacion sobre otros modelos comparables en cuanto a arquitectura o rendimiento, ya que este artefacto no es un modelo de IA. Existe otro registro similar en Hugging Face, `24f1002603/carbon-audit-model`, que probablemente sigue el mismo formato de auditoria de emisiones, pero no se proporcionan datos de comparacion.
 
 | Artefacto | Tipo | Emisiones | Hardware | Licencia |
 |---|---|---|---|---|

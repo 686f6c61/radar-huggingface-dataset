@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| quickmt-en-fa-int8 (este) | no disponible | no disponible | CC BY 4.0 | CTranslate2 int8 | HuggingFace, 46 descargas |
-| quickmt/quickmt-en-fa (base) | no disponible | no disponible | CC BY 4.0 | float16 (formato original no detallado) | HuggingFace |
+| quickmt-en-fa-int8 (este) | no disponible | no disponible | CC BY 4.0 | CTranslate2 int8 | Hugging Face, 46 descargas |
+| quickmt/quickmt-en-fa (base) | no disponible | no disponible | CC BY 4.0 | float16 (formato original no detallado) | Hugging Face |
 | Otros modelos de traducción en-fa | no disponible | no disponible | varía | varía | no disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos alternativos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/value-productions/quickmt-en-fa-int8
+- Hugging Face: https://huggingface.co/value-productions/quickmt-en-fa-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-fa
 - Aplicación Yaku Translate: no disponible en la información proporcionada
 - Paper o blog del modelo original: no disponible en la información proporcionada

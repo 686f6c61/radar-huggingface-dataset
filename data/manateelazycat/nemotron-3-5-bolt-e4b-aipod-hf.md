@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nemotron-3.5-Bolt-E4B-AIPod-HF (este repo) | 7.518 M | no disponible | openmdw-1.1 | GGUF Q4_K_M y BF16 DFlash en HuggingFace |
+| Nemotron-3.5-Bolt-E4B-AIPod-HF (este repo) | 7.518 M | no disponible | openmdw-1.1 | GGUF Q4_K_M y BF16 DFlash en Hugging Face |
 | Nemotron 3.5 Bolt E4B (upstream NVIDIA) | 7.518 M (presumiblemente) | no disponible | no disponible en esta informacion | Repositorio original de NVIDIA |
 | Alternativas de ~7-8B (p. ej. familias Llama, Mistral, Qwen) | ~7.000-8.000 M | variable | variable | no disponible para comparacion directa con datos verificados |
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/Nemotron-3.5-Bolt-E4B-AIPod-HF
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/Nemotron-3.5-Bolt-E4B-AIPod-HF
 - Modelo upstream de NVIDIA: no disponible en la información proporcionada (la model card remite a las model cards upstream y a upstream-lock.json, pero no se incluyen URL concretas)
 - Paper, blog o demo: no disponible en la información proporcionada

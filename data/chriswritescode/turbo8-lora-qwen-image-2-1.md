@@ -78,8 +78,8 @@ Evaluacion offline sobre 192 prompts reservados (64 de DrawBench mas 24 semillas
 
 | Modelo | Parametros | Contexto/resolucion | Rendimiento T2I | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Turbo8 (esta LoRA) | LoRA rank 128 sobre Qwen-Image-2.1 (7B visual) | hasta 2K nativo, 8 pasos | PickScore 21,94 / CLIPScore 26,89 | Qwen Research (no comercial) | HuggingFace, ComfyUI, diffusers |
-| Qwen-Image-2.1 (base) | 7B visual, 32 capas DiT | hasta 2K nativo, 40 pasos | PickScore 22,15 / CLIPScore 26,89 | Qwen Research | HuggingFace, repositorio oficial QwenLM |
+| Turbo8 (esta LoRA) | LoRA rank 128 sobre Qwen-Image-2.1 (7B visual) | hasta 2K nativo, 8 pasos | PickScore 21,94 / CLIPScore 26,89 | Qwen Research (no comercial) | Hugging Face, ComfyUI, diffusers |
+| Qwen-Image-2.1 (base) | 7B visual, 32 capas DiT | hasta 2K nativo, 40 pasos | PickScore 22,15 / CLIPScore 26,89 | Qwen Research | Hugging Face, repositorio oficial QwenLM |
 | Otras LoRA de 8 pasos para Qwen-Image-2.1 (Viggle, Pruna AI) | no disponible | no disponible | no disponible | no disponible | mencionadas en Civitai, datos no disponibles |
 
 La comparacion directa con las alternativas de 8 pasos para Qwen-Image-2.1 no puede cuantificarse: la model card no aporta cifras frente a ellas, y los resultados publicos encontrados son solo referencias cualitativas.
@@ -97,7 +97,7 @@ La comparacion directa con las alternativas de 8 pasos para Qwen-Image-2.1 no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chriswritescode/Turbo8-LoRA-Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/chriswritescode/Turbo8-LoRA-Qwen-Image-2.1
 - Ficheros del repositorio: https://huggingface.co/chriswritescode/Turbo8-LoRA-Qwen-Image-2.1/tree/main
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1

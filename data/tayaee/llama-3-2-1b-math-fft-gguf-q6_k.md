@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tayaee/Llama-3.2-1B-math-fft-gguf-q6_k | ~1,24 B | No disponible en el repo (base: 128k) | GGUF Q6_K | No disponible (base: Llama 3.2 Community License) | HuggingFace, 20 descargas |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | safetensors, GGUF oficial | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
-| Qwen2.5-Math-1.5B | ~1,5 B | 4.096 tokens (versión base) | safetensors | Apache 2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5 B | 131.072 tokens | safetensors, GGUF comunitarios | MIT | HuggingFace |
+| tayaee/Llama-3.2-1B-math-fft-gguf-q6_k | ~1,24 B | No disponible en el repo (base: 128k) | GGUF Q6_K | No disponible (base: Llama 3.2 Community License) | Hugging Face, 20 descargas |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | safetensors, GGUF oficial | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
+| Qwen2.5-Math-1.5B | ~1,5 B | 4.096 tokens (versión base) | safetensors | Apache 2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | ~1,5 B | 131.072 tokens | safetensors, GGUF comunitarios | MIT | Hugging Face |
 
 La comparación relevante es frente a Llama-3.2-1B-Instruct: este repositorio ofrece el mismo tamaño con un supuesto ajuste matemático, pero sin evidencia publicada de mejora y sin la documentación ni el respaldo de Meta. Frente a Qwen2.5-Math (específicamente entrenado para matemáticas y con licencia Apache 2.0) y DeepSeek-R1-Distill-Qwen-1.5B (con razonamiento destilado y licencia MIT), la propuesta de `tayaee` pierde en trazabilidad, licencia y contexto declarado.
 
@@ -89,7 +89,7 @@ La comparación relevante es frente a Llama-3.2-1B-Instruct: este repositorio of
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-gguf-q6_k
+- Repositorio en Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-gguf-q6_k
 - Modelo base de referencia (no procedente de la búsqueda web): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Implementación de referencia para GGUF (no procedente de la búsqueda web): https://github.com/ggerganov/llama.cpp
 - Resultados de la búsqueda web: no se han encontrado papers, blogs, repositorios ni demos relacionados con este modelo; las entradas devueltas por el buscador no guardan relación con el artefacto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mrs.Anderson es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en HuggingFace. No se trata de un modelo generativo completo, sino de un complemento de bajo rango que se carga sobre el modelo base krea/Krea-2-Turbo para especializarlo en la generación de un personaje concreto: una mujer de 55 años, de pelo castaño con canas y ojos marrones. El repositorio ocupa 0,5 GB, está etiquetado con la librería diffusers y la plantilla `template:diffusion-lora`, y se distribuye bajo licencia openrail++.
+Mrs.Anderson es un adaptador LoRA de tipo text-to-image publicado por el usuario AiMamis en Hugging Face. No se trata de un modelo generativo completo, sino de un complemento de bajo rango que se carga sobre el modelo base krea/Krea-2-Turbo para especializarlo en la generación de un personaje concreto: una mujer de 55 años, de pelo castaño con canas y ojos marrones. El repositorio ocupa 0,5 GB, está etiquetado con la librería diffusers y la plantilla `template:diffusion-lora`, y se distribuye bajo licencia openrail++.
 
 El problema que resuelve es el habitual en el ecosistema de difusión: conseguir consistencia de identidad en la generación de imágenes sin reentrenar el modelo base. Un LoRA como este permite invocar siempre al mismo personaje mediante palabras disparadoras (`Mrs.Anderson`, `55 year old female`, `Grey brunette hair`, `Brown eyes`) en lugar de describirlo cada vez, lo que facilita su reutilización en series de ilustraciones, storyboards o material editorial.
 
@@ -84,7 +84,7 @@ No disponible. No se han identificado en la información proporcionada otros LoR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Mrs.Anderson
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Mrs.Anderson
 - Archivos del repositorio: https://huggingface.co/AiMamis/Mrs.Anderson/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a páginas de soporte de controladores de Windows y no guardan relación con el modelo).

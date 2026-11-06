@@ -79,5 +79,5 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minju2026/connectailab-rl-minju2026-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/minju2026/connectailab-rl-minju2026-v1-roadster-ppo
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

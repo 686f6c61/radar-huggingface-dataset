@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pavelsemenov1987/classification` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de una red **Efficientformer** en escala **nano** orientada a tareas de **clasificacion**. No se trata de un modelo entrenado ni de un checkpoint con pesos validados: el autor lo describe explicitamente como un punto de partida de inicializacion para pruebas de humo (*smoke tests*) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Cuenta con aproximadamente 24.832 parametros segun los tensores de `model.safetensors`, un valor extraordinariamente bajo incluso para un Efficientformer nano al uso.
+`pavelsemenov1987/classification` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de una red **Efficientformer** en escala **nano** orientada a tareas de **clasificacion**. No se trata de un modelo entrenado ni de un checkpoint con pesos validados: el autor lo describe explicitamente como un punto de partida de inicializacion para pruebas de humo (*smoke tests*) y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Cuenta con aproximadamente 24.832 parametros segun los tensores de `model.safetensors`, un valor extraordinariamente bajo incluso para un Efficientformer nano al uso.
 
 El modelo resuelve, en teoria, el problema generico de clasificacion (imagenes, segun la arquitectura de referencia), pero su estado actual es el de una plantilla de codigo mas que el de un artefacto listo para produccion. La ficha tecnica del autor incide en que `model.safetensors` es un checkpoint de inicializacion valido y que ningun resultado de benchmark se reclama en el repositorio.
 
@@ -87,7 +87,7 @@ No disponible. Este repositorio es una reimplementacion personal y no entrenada,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pavelsemenov1987/classification
+- Repositorio en Hugging Face: https://huggingface.co/pavelsemenov1987/classification
 - Archivos incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper o publicacion de referencia de la familia Efficientformer: no disponible en la informacion proporcionada
 - Demos, blogs o repos adicionales: no disponibles

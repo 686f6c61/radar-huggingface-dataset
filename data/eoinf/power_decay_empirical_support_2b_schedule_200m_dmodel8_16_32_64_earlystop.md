@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`power_decay_empirical_support_2b_schedule_200m_dmodel8_16_32_64_earlystop` es un artefacto de investigación publicado por el usuario `eoinf` en HuggingFace. No se trata de un modelo de lenguaje destinado a uso general, sino de una cuadrícula de experimentos con transformers causales minúsculos (d_model de 8, 16, 32 y 64) entrenados con una semilla por anchura, vocabulario de 4096 tokens y longitud de contexto de 256. El nombre del repositorio sugiere un estudio sobre el soporte empírico de schedules de decaimiento en potencia ("power decay") con un presupuesto nominal de aproximadamente 2.000 millones de tokens y paradas tempranas.
+`power_decay_empirical_support_2b_schedule_200m_dmodel8_16_32_64_earlystop` es un artefacto de investigación publicado por el usuario `eoinf` en Hugging Face. No se trata de un modelo de lenguaje destinado a uso general, sino de una cuadrícula de experimentos con transformers causales minúsculos (d_model de 8, 16, 32 y 64) entrenados con una semilla por anchura, vocabulario de 4096 tokens y longitud de contexto de 256. El nombre del repositorio sugiere un estudio sobre el soporte empírico de schedules de decaimiento en potencia ("power decay") con un presupuesto nominal de aproximadamente 2.000 millones de tokens y paradas tempranas.
 
 El propósito es académico: generar evidencia empírica sobre cómo escalan las curvas de pérdida en modelos extremadamente pequeños bajo distintos regímenes de decaimiento del learning rate. El repositorio contiene únicamente state-dicts de PyTorch, el historial de checkpoints, el log de actualizaciones de entrenamiento y metadatos de resultados; no incluye estados del optimizador ni los datos de entrenamiento.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Propósito |
 |---|---|---|---|---|---|
-| Este artefacto (d_model 8-64) | no disponible | 256 | no disponible | HuggingFace (state-dicts) | Estudio de schedules |
-| GPT-2 small | 124M | 1024 | MIT | HuggingFace (safetensors) | LM de propósito general |
-| Pythia-70M | 70M | 2048 | Apache 2.0 | HuggingFace (safetensors) | Investigación de escalado |
-| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | HuggingFace (safetensors) | LM de propósito general |
+| Este artefacto (d_model 8-64) | no disponible | 256 | no disponible | Hugging Face (state-dicts) | Estudio de schedules |
+| GPT-2 small | 124M | 1024 | MIT | Hugging Face (safetensors) | LM de propósito general |
+| Pythia-70M | 70M | 2048 | Apache 2.0 | Hugging Face (safetensors) | Investigación de escalado |
+| TinyLlama-1.1B | 1,1B | 2048 | Apache 2.0 | Hugging Face (safetensors) | LM de propósito general |
 
 La comparación es solo orientativa: los tres modelos de referencia son transformers causales con pesos en safetensors y licencias explícitas, mientras que este artefacto es una cuadrícula experimental con state-dicts y sin licencia declarada. No se dispone de métricas de rendimiento comparables.
 
@@ -88,6 +88,6 @@ La comparación es solo orientativa: los tres modelos de referencia son transfor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/power_decay_empirical_support_2b_schedule_200m_dmodel8_16_32_64_earlystop
+- Hugging Face: https://huggingface.co/eoinf/power_decay_empirical_support_2b_schedule_200m_dmodel8_16_32_64_earlystop
 - Repositorio de código `synthetic_trigrams`: mencionado en la model card, sin URL directa disponible en la información proporcionada.
 - Paper, blog o demo: no disponibles en la información proporcionada.

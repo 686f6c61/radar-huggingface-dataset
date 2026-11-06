@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`train_800_sparse__mask__blur__sim__all_cameras__live__groot__seed_0` es una política robótica de imitación publicada por el usuario `mim-chess-vlas` en HuggingFace Hub. No es un modelo de lenguaje generalista, sino un checkpoint entrenado con LeRobot sobre la arquitectura GR00T (concretamente, según la model card, GR00T N1.7 de NVIDIA), un modelo fundacional abierto y cross-embodiment para razonamiento y habilidades de robots humanoides.
+`train_800_sparse__mask__blur__sim__all_cameras__live__groot__seed_0` es una política robótica de imitación publicada por el usuario `mim-chess-vlas` en Hugging Face Hub. No es un modelo de lenguaje generalista, sino un checkpoint entrenado con LeRobot sobre la arquitectura GR00T (concretamente, según la model card, GR00T N1.7 de NVIDIA), un modelo fundacional abierto y cross-embodiment para razonamiento y habilidades de robots humanoides.
 
 El modelo resuelve una tarea concreta de manipulación: recoger un objeto de una lista cerrada de 40 categorías (jamón, cereal, pera, cebolla, etc.) y depositarlo en una caja. Se ha entrenado sobre un dataset propio de 787 episodios y 195.184 frames a 20 FPS, con tres cámaras (vista del agente y dos cámaras en la pinza) y un estado proprioceptivo de 9 dimensiones, produciendo acciones de 7 dimensiones para un robot Franka Panda.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (GR00T N1.7 fine-tuned) | 3.144.016.000 | no disponible | Pick-and-place Panda, 40 objetos | apache-2.0 | HuggingFace Hub |
+| Este modelo (GR00T N1.7 fine-tuned) | 3.144.016.000 | no disponible | Pick-and-place Panda, 40 objetos | apache-2.0 | Hugging Face Hub |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Imitación robótica general | no disponible | HuggingFace Hub / LeRobot |
+| Otras políticas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | no disponible | Imitación robótica general | no disponible | Hugging Face Hub / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__blur__sim__all_cameras__live__groot__seed_0)
+- [Modelo en Hugging Face](https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__blur__sim__all_cameras__live__groot__seed_0)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__mask__blur__sim__all_cameras__live)
 - [Visualizador del dataset en LeRobot Spaces](https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__mask__blur__sim__all_cameras__live)
 - [Repositorio GR00T de NVIDIA](https://github.com/NVIDIA/Isaac-GR00T)

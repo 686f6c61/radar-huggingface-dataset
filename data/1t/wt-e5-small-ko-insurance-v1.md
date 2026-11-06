@@ -122,7 +122,7 @@ El autor indica que los intervalos de confianza al 95 % del holdout no se solapa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1T/wt-e5-small-ko-insurance-v1
+- Modelo en Hugging Face: https://huggingface.co/1T/wt-e5-small-ko-insurance-v1
 - Modelo base: https://huggingface.co/dragonkue/multilingual-e5-small-ko-v2
 - Alternativa del mismo autor para fragmentos largos: https://huggingface.co/1T/wt-kure-insurance-v1
 - Dataset de evaluacion de tool retrieval: https://huggingface.co/datasets/heegyu/glaive-function-calling-v2-ko

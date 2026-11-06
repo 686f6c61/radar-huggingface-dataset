@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fernandafre/retrieval-prototype` es un repositorio experimental que implementa una arquitectura Swin Transformer (variante Swin-T) orientada a tareas de recuperación (retrieval) multimodal. Lo publica el usuario `fernandafre` en HuggingFace bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card lo describe explícitamente como una implementación funcional con fines de prueba de humo (smoke test) y reproducibilidad, sin reclamaciones de rendimiento.
+`fernandafre/retrieval-prototype` es un repositorio experimental que implementa una arquitectura Swin Transformer (variante Swin-T) orientada a tareas de recuperación (retrieval) multimodal. Lo publica el usuario `fernandafre` en Hugging Face bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card lo describe explícitamente como una implementación funcional con fines de prueba de humo (smoke test) y reproducibilidad, sin reclamaciones de rendimiento.
 
 El repositorio contiene el código de inferencia (`inference.py`), la configuración de arquitectura (`config.json`), los hiperparámetros por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). El recuento real de parámetros en safetensors es de 24.832, lo que indica que el checkpoint publicado no corresponde a un Swin-T completo (que rondaría decenas de millones de parámetros), sino a una inicialización mínima o parcial.
 
@@ -42,7 +42,7 @@ No hay evidencia de entrenamiento completado. La receta por defecto usa el optim
 - Base para experimentos academicos de retrieval: la receta Lion + step y la estructura de `training_args.json` permiten lanzar comparativas controladas con baselines de capacidad equivalente sobre Flickr30k.
 - Reproducibilidad de configuraciones: `config.json` documenta los ajustes de arquitectura, util para auditar decisiones de diseno (fusion concat MLP, BatchNorm, ReLU) frente a implementaciones canonicas de Swin.
 - Integracion como modulo de extraccion de caracteristicas: el backbone Swin-T puede reutilizarse en pipelines de vision (clasificacion, deteccion) tras un entrenamiento adecuado, aunque requiere adaptar la cabeza de retrieval.
-- Docencia y formacion: sirve como ejemplo didactico de como estructurar un repositorio de modelo en HuggingFace con separacion entre codigo, configuracion, receta de entrenamiento y checkpoint.
+- Docencia y formacion: sirve como ejemplo didactico de como estructurar un repositorio de modelo en Hugging Face con separacion entre codigo, configuracion, receta de entrenamiento y checkpoint.
 
 ## Benchmarks y rendimiento
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fernandafre/retrieval-prototype | 24.832 (checkpoint init) | no disponible | sin benchmarks | Apache 2.0 | HuggingFace |
-| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | no aplica (vision) | no disponible en esta ficha | MIT | HuggingFace |
-| CLIP ViT-B/32 (openai/clip-vit-base-patch32) | ~151 M | 77 tokens de texto | benchmarks publicos en retrieval | MIT | HuggingFace |
+| fernandafre/retrieval-prototype | 24.832 (checkpoint init) | no disponible | sin benchmarks | Apache 2.0 | Hugging Face |
+| Swin-T oficial (microsoft/swin-tiny-patch4-window7-224) | ~28 M | no aplica (vision) | no disponible en esta ficha | MIT | Hugging Face |
+| CLIP ViT-B/32 (openai/clip-vit-base-patch32) | ~151 M | 77 tokens de texto | benchmarks publicos en retrieval | MIT | Hugging Face |
 
 La comparativa es orientativa: el repositorio analizado no es un modelo entrenado, por lo que la comparacion directa de rendimiento no es posible.
 
@@ -72,13 +72,13 @@ La comparativa es orientativa: el repositorio analizado no es un modelo entrenad
 - Riesgo elevado de resultados sin sentido si se usa directamente para retrieval: los pesos son de inicializacion, no aprendidos.
 - No hay datos de sesgos, alucinacion ni comportamiento multilingue porque no hay evaluacion.
 - La licencia Apache 2.0 permite uso comercial del codigo, pero deben revisarse por separado los terminos de los datasets externos que se usen para entrenar.
-- La implementacion es custom: las APIs automaticas de carga de HuggingFace pueden fallar sin un adaptador explicito.
+- La implementacion es custom: las APIs automaticas de carga de Hugging Face pueden fallar sin un adaptador explicito.
 - El recuento de parametros (24.832) es inconsistente con un Swin-T completo; conviene verificar la integridad del checkpoint antes de cualquier uso.
 - No apto para produccion en su estado actual.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fernandafre/retrieval-prototype
+- Repositorio Hugging Face: https://huggingface.co/fernandafre/retrieval-prototype
 - Paper original de Swin Transformer: https://arxiv.org/abs/2103.14030
 - Dataset sugerido para evaluacion (Flickr30k): https://shannon.cs.illinois.edu/DenotationGraph/
 - Documentacion de safetensors: https://github.com/huggingface/safetensors

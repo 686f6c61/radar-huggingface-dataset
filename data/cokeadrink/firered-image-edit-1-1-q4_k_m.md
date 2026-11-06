@@ -78,8 +78,8 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/cokeadrink/FireRed-Image-Edit-1.1-Q4_K_M
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/cokeadrink/FireRed-Image-Edit-1.1-Q4_K_M
 - Repositorio GitHub del proyecto original: https://github.com/FireRedTeam/FireRed-Image-Edit
-- Modelo original en HuggingFace: https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1
-- Archivo GGUF del transformer en HuggingFace: https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1-ComfyUI/blob/main/FireRed-Image-Edit-1.1-transformer-q4_k_m.gguf
+- Modelo original en Hugging Face: https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1
+- Archivo GGUF del transformer en Hugging Face: https://huggingface.co/FireRedTeam/FireRed-Image-Edit-1.1-ComfyUI/blob/main/FireRed-Image-Edit-1.1-transformer-q4_k_m.gguf
 - Demo online del editor de imagenes: https://firered-image.com/

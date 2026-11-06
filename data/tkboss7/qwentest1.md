@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tkboss7/QwenTest1 es un adaptador LoRA de generación de imágenes a partir de texto (pipeline text-to-image) publicado en HuggingFace por el usuario tkboss7, identificado en los resultados de búsqueda como Touseeq Ahmed. No se trata de un modelo autónomo: es un adaptador de bajo rango que se carga sobre el modelo base Qwen/Qwen-Image-2.1, por lo que toda la capacidad generativa real proviene de dicho modelo base y el adaptador solo modifica parcialmente su comportamiento.
+tkboss7/QwenTest1 es un adaptador LoRA de generación de imágenes a partir de texto (pipeline text-to-image) publicado en Hugging Face por el usuario tkboss7, identificado en los resultados de búsqueda como Touseeq Ahmed. No se trata de un modelo autónomo: es un adaptador de bajo rango que se carga sobre el modelo base Qwen/Qwen-Image-2.1, por lo que toda la capacidad generativa real proviene de dicho modelo base y el adaptador solo modifica parcialmente su comportamiento.
 
 El repositorio, creado y actualizado el 1 de octubre de 2026 (con 57 segundos de diferencia entre ambos eventos), ocupa 0,1 GB, declara licencia apache-2.0 y se distribuye para la librería diffusers bajo el template diffusion-lora. Acumula 0 descargas y 0 likes, y su model card es prácticamente vacía: únicamente incluye el título "Qwen Cheeta" y un widget de ejemplo con el texto de entrada "Seeti" y una imagen de salida cuyo nombre de fichero es una captura de WhatsApp.
 
@@ -44,7 +44,7 @@ No se ha publicado ninguna información sobre el entrenamiento del adaptador: no
 ## Casos de uso
 
 - Pruebas de integración con diffusers: sirve para verificar el flujo de carga de un adaptador LoRA sobre un modelo base mediante la API de diffusers, comprobando que el pipeline text-to-image acepta los pesos y que la generación no degrada la salida del modelo base.
-- Plantilla para publicar adaptadores propios: la etiqueta template:diffusion-lora indica que el repositorio sigue la estructura estándar de HuggingFace para LoRAs de difusión, por lo que puede usarse como esqueleto de repositorio en talleres o documentación interna.
+- Plantilla para publicar adaptadores propios: la etiqueta template:diffusion-lora indica que el repositorio sigue la estructura estándar de Hugging Face para LoRAs de difusión, por lo que puede usarse como esqueleto de repositorio en talleres o documentación interna.
 - Evaluación comparativa de adaptadores de bajo rango: permite medir, de forma controlada, cuánto cambia la distribución de salidas del modelo base al aplicar un LoRA sin documentación frente a la inferencia sin adaptador.
 - Sondas de seguridad y red teaming: al ser un adaptador opaco, resulta un caso útil para comprobar si un LoRA de procedencia desconocida altera sesgos, estilos o contenidos del modelo base, algo relevante en pipelines que cargan adaptadores de terceros.
 - Auditoría de procedencia y licencias: sirve como caso de estudio sobre cómo verificar la licencia del modelo base cuando el adaptador declara apache-2.0, y sobre el riesgo de repositorios con metadatos incompletos.
@@ -71,8 +71,8 @@ Los resultados de búsqueda incluyen agregadores de benchmarks y listas de model
 
 | Modelo | Tipo | Parámetros | Ventana de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tkboss7/QwenTest1 | Adaptador LoRA text-to-image | no disponible | no aplica | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen-Image-2.1 | Modelo base de generación de imagen | no disponible en la información proporcionada | no aplica | no disponible en la información proporcionada | HuggingFace |
+| tkboss7/QwenTest1 | Adaptador LoRA text-to-image | no disponible | no aplica | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen-Image-2.1 | Modelo base de generación de imagen | no disponible en la información proporcionada | no aplica | no disponible en la información proporcionada | Hugging Face |
 | Otros adaptadores LoRA comparables sobre el mismo modelo base | no disponible | no disponible | no aplica | no disponible | no identificados en la información disponible |
 
 No se han identificado en la información proporcionada adaptadores alternativos sobre Qwen/Qwen-Image-2.1 con los que establecer una comparación cuantitativa de parámetros, contexto o rendimiento.
@@ -93,9 +93,9 @@ No se han identificado en la información proporcionada adaptadores alternativos
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/tkboss7/QwenTest1
+- Página del modelo en Hugging Face: https://huggingface.co/tkboss7/QwenTest1
 - Ficheros y versiones del repositorio: https://huggingface.co/tkboss7/QwenTest1/tree/main
-- Perfil del autor en HuggingFace: https://huggingface.co/tkboss7
+- Perfil del autor en Hugging Face: https://huggingface.co/tkboss7
 - Datasets del autor: https://huggingface.co/tkboss7/datasets
 - Otro modelo del mismo autor: https://huggingface.co/tkboss7/neman
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen-Image-2.1

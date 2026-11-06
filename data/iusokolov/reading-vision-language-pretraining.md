@@ -4,9 +4,9 @@
 
 El repositorio `Iusokolov/reading-vision-language-pretraining` no es un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre *vision language pretraining*. La propia model card lo describe como «research notes» y aclara de forma explicita que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. El artefacto principal es un fichero `analysis.md`, y el repositorio se completa con el `README.md` de documentacion.
 
-Los unicos metadatos tecnicos disponibles son los de HuggingFace: etiquetas `safetensors`, `transformer`, `research-notes` y `vision-language-pretraining`, licencia CC-BY-4.0, 0 descargas, 0 likes y un tamano de repositorio de 0.0 GB. El recuento de parametros declarado en safetensors es de 33.088, una cifra incompatible con cualquier modelo de vision-lenguaje funcional y coherente con un artefacto residual o de prueba dentro del repositorio. Por tanto, no existe arquitectura, tokenizador, configuracion de contexto ni pesos utilizables.
+Los unicos metadatos tecnicos disponibles son los de Hugging Face: etiquetas `safetensors`, `transformer`, `research-notes` y `vision-language-pretraining`, licencia CC-BY-4.0, 0 descargas, 0 likes y un tamano de repositorio de 0.0 GB. El recuento de parametros declarado en safetensors es de 33.088, una cifra incompatible con cualquier modelo de vision-lenguaje funcional y coherente con un artefacto residual o de prueba dentro del repositorio. Por tanto, no existe arquitectura, tokenizador, configuracion de contexto ni pesos utilizables.
 
-Su relevancia actual es documental, no funcional: sirve como ejemplo de repositorio de notas de investigacion publicado en HuggingFace, donde la presencia de la etiqueta `safetensors` y de un campo de parametros puede inducir a error a un pipeline automatico de catalogacion. Cualquier evaluacion tecnica del mismo como modelo debe descartarse.
+Su relevancia actual es documental, no funcional: sirve como ejemplo de repositorio de notas de investigacion publicado en Hugging Face, donde la presencia de la etiqueta `safetensors` y de un campo de parametros puede inducir a error a un pipeline automatico de catalogacion. Cualquier evaluacion tecnica del mismo como modelo debe descartarse.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia actual es documental, no funcional: sirve como ejemplo de reposito
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no describe ninguna arquitectura concreta, y la cifra de 33.088 parametros no corresponde a ningun transformer de vision-lenguaje conocido. No se documentan capas, dimensiones ocultas, atencion, tokenizador ni estrategia de *patch embedding* para imagenes.
+No hay informacion sobre arquitectura. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no describe ninguna arquitectura concreta, y la cifra de 33.088 parametros no corresponde a ningun transformer de vision-lenguaje conocido. No se documentan capas, dimensiones ocultas, atencion, tokenizador ni estrategia de *patch embedding* para imagenes.
 
 Tampoco existe informacion de entrenamiento. La model card indica explicitamente que el repositorio «no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado», y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. No hay datos sobre volumen de tokens, composicion del dataset, fases de RLHF o DPO, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. Lo unico documentado es que, si en el futuro se anaden resultados, deberian incluir versiones de dataset, comandos, semillas, hardware y *logs* en bruto.
 
@@ -39,7 +39,7 @@ Tampoco existe informacion de entrenamiento. La model card indica explicitamente
 ## Casos de uso
 
 - Consulta bibliografica sobre vision-language pretraining: el repositorio puede leerse como punto de partida para localizar benchmarks publicos y preguntas abiertas sobre el area, segun indica la propia model card.
-- Plantilla para publicar notas de investigacion en HuggingFace: sirve como ejemplo de estructura minima con `analysis.md` y `README.md` y de separacion explicita entre planes, hipotesis y resultados.
+- Plantilla para publicar notas de investigacion en Hugging Face: sirve como ejemplo de estructura minima con `analysis.md` y `README.md` y de separacion explicita entre planes, hipotesis y resultados.
 - Auditoria de catalogos automatizados: util para comprobar como un pipeline que filtre por etiqueta `safetensors` o por campo de parametros puede clasificar erroneamente un repositorio de notas como modelo.
 - Revision de practicas de documentacion cientifica: el repositorio ilustra el requisito de acompanar cualquier resultado futuro con versiones de dataset, comandos, semillas, hardware y *logs* en bruto.
 - Verificacion de referencias: las referencias y datasets propuestos en las notas se presentan como punto de partida para verificacion, no como evidencia de un estudio ya ejecutado.
@@ -77,7 +77,7 @@ No disponible. No procede comparar este repositorio con modelos de vision-lengua
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Iusokolov/reading-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/Iusokolov/reading-vision-language-pretraining
 - Artefacto principal citado en la model card: `analysis.md` (dentro del propio repositorio)
 - Documentacion citada en la model card: `README.md` (dentro del propio repositorio)
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada. Los resultados de la busqueda web no contienen enlaces relevantes para este modelo.

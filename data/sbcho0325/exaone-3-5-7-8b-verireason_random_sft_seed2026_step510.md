@@ -62,6 +62,6 @@ No disponible. No se han publicado comparaciones con otros adaptadores o modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed2026_step510
+- Repositorio Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-verireason_random_sft_seed2026_step510
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper de referencia sobre impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700

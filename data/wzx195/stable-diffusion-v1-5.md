@@ -68,10 +68,10 @@ La informacion proporcionada no incluye fichas de modelos comparables con datos 
 
 | Modelo | Parametros (aprox.) | Resolucion nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stable Diffusion v1-5 (este repo) | 859.520.964 | 512x512 | CreativeML OpenRAIL-M | HuggingFace (espejo) |
-| Stable Diffusion v1-2 | no disponible en la informacion | 512x512 | CreativeML OpenRAIL-M | HuggingFace |
-| Stable Diffusion 2.1 | no disponible en la informacion | 768x768 | CreativeML OpenRAIL++-M | HuggingFace |
-| SDXL | no disponible en la informacion | 1024x1024 | CreativeML OpenRAIL++-M | HuggingFace |
+| Stable Diffusion v1-5 (este repo) | 859.520.964 | 512x512 | CreativeML OpenRAIL-M | Hugging Face (espejo) |
+| Stable Diffusion v1-2 | no disponible en la informacion | 512x512 | CreativeML OpenRAIL-M | Hugging Face |
+| Stable Diffusion 2.1 | no disponible en la informacion | 768x768 | CreativeML OpenRAIL++-M | Hugging Face |
+| SDXL | no disponible en la informacion | 1024x1024 | CreativeML OpenRAIL++-M | Hugging Face |
 
 Como alternativa de misma categoria, SD 2.1 emplea OpenCLIP en lugar de CLIP ViT-L/14 y sube la resolucion nativa a 768x768, con una licencia slightly distinta. SDXL incrementa notablemente el numero de parametros y la calidad de generacion, a costa de requisitos de VRAM mayores. Para los parametros exactos de estos modelos, consultar sus repositorios oficiales.
 
@@ -88,8 +88,8 @@ Como alternativa de misma categoria, SD 2.1 emplea OpenCLIP en lugar de CLIP ViT
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/wzx195/stable-diffusion-v1-5
-- Repositorio oficial en HuggingFace: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
+- Repositorio analizado en Hugging Face: https://huggingface.co/wzx195/stable-diffusion-v1-5
+- Repositorio oficial en Hugging Face: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Espejo de referencia `sd-legacy`: https://huggingface.co/sd-legacy/stable-diffusion-v1-5
 - Otro espejo comunitario: https://huggingface.co/botp/stable-diffusion-v1-5
 - Model card de Qualcomm AI Hub: https://aihub.qualcomm.com/models/stable_diffusion_v1_5
@@ -102,7 +102,7 @@ Como alternativa de misma categoria, SD 2.1 emplea OpenCLIP en lugar de CLIP ViT
 - AUTOMATIC1111: https://github.com/AUTOMATIC1111/stable-diffusion-webui
 - SD.Next: https://github.com/vladmandic/automatic
 - InvokeAI: https://github.com/invoke-ai/InvokeAI
-- Blog de Stable Diffusion en HuggingFace: https://huggingface.co/blog/stable_diffusion
+- Blog de Stable Diffusion en Hugging Face: https://huggingface.co/blog/stable_diffusion
 - Paper de Latent Diffusion Models: https://arxiv.org/abs/2112.10752
 - Paper de classifier-free guidance: https://arxiv.org/abs/2207.12598
 - Paper de CLIP: https://arxiv.org/abs/2103.00020

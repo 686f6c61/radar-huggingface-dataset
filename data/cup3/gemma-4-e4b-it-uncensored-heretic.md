@@ -70,7 +70,7 @@ En la informacion disponible no se incluyen benchmarks de modelos comparables, a
 | Licencia | Apache 2.0 (Gemma 4) | Apache 2.0 (Gemma 4) |
 | Formato de pesos | No disponible | safetensors |
 
-Existen otras variantes uncensored del mismo modelo base en HuggingFace, como InfinimindCreations/gemma-4-E4B-it-uncensored o llmfan46/gemma-4-E4B-it-uncensored-heretic, pero no se dispone de sus especificaciones ni benchmarks en la informacion proporcionada.
+Existen otras variantes uncensored del mismo modelo base en Hugging Face, como InfinimindCreations/gemma-4-E4B-it-uncensored o llmfan46/gemma-4-E4B-it-uncensored-heretic, pero no se dispone de sus especificaciones ni benchmarks en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -78,16 +78,16 @@ Existen otras variantes uncensored del mismo modelo base en HuggingFace, como In
 - Riesgo de alucinacion: no se han publicado evaluaciones especificas; el rendimiento en MMLU (68,97%) indica que puede cometer errores en tareas de conocimiento.
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no estan especificados en la informacion disponible.
 - Licencia: el modelo se publica bajo Apache 2.0, pero el modelo base esta sujeto a la licencia de Gemma 4 de Google, que puede imponer terminos adicionales para uso comercial.
-- Advertencia importante: al reducir los rechazos, el modelo puede generar contenido no deseado, ofensivo o peligroso. No ha sido validado de forma exhaustiva; tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es un modelo nuevo o poco probado.
+- Advertencia importante: al reducir los rechazos, el modelo puede generar contenido no deseado, ofensivo o peligroso. No ha sido validado de forma exhaustiva; tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es un modelo nuevo o poco probado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cup3/gemma-4-E4B-it-uncensored-heretic
+- Modelo en Hugging Face: https://huggingface.co/Cup3/gemma-4-E4B-it-uncensored-heretic
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Heretic (herramienta de abliteracion): https://github.com/p-e-w/heretic
 - Pull request de Arbitrary-Rank Ablation (ARA): https://github.com/p-e-w/heretic/pull/211
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

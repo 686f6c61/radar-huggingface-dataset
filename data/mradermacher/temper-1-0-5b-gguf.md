@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Temper-1-0.5B (este repositorio, GGUF) | 494M | No disponible | Apache 2.0 | Codigo, Rust, ingles | GGUF en HuggingFace |
+| Temper-1-0.5B (este repositorio, GGUF) | 494M | No disponible | Apache 2.0 | Codigo, Rust, ingles | GGUF en Hugging Face |
 | Qwen2.5-Coder-0.5B | ~0,5B | 32.768 tokens (segun su model card) | Apache 2.0 | Codigo multilingue | Safetensors y GGUF de terceros |
 | Qwen2-0.5B | ~0,5B | 32.768 tokens (segun su model card) | Apache 2.0 | Proposito general | Safetensors y GGUF de terceros |
 | SmolLM2-360M | 362M | 8.192 tokens (segun su model card) | Apache 2.0 | Proposito general, ingles | Safetensors y GGUF |

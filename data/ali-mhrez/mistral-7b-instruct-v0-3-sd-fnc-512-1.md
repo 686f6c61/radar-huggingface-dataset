@@ -71,7 +71,7 @@ La comparativa se limita al modelo base y su predecesor, ya que no hay informaci
 
 ## Enlaces
 
-- [HuggingFace - Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-1](https://huggingface.co/Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-1)
-- [HuggingFace - mistralai/Mistral-7B-Instruct-v0.3 (modelo base)](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
+- [Hugging Face - Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-1](https://huggingface.co/Ali-Mhrez/Mistral-7B-Instruct-v0.3-SD-FNC-512-1)
+- [Hugging Face - mistralai/Mistral-7B-Instruct-v0.3 (modelo base)](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)
 - [GitHub - inferless/mistral-7b-instruct-v0.3 (referencia del base)](https://github.com/inferless/Mistral-7B-Instruct-v0.3)
 - [Qualcomm AI Hub - Mistral-7B-Instruct-v0.3 (documentación del base)](https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/mistral_7b_instruct_v0_3/README.md)

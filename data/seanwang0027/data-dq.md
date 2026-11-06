@@ -76,5 +76,5 @@ No disponible. Este dataset no es un modelo, sino un recurso de datos. No se pue
 
 ## Enlaces
 
-- Dataset en HuggingFace: [SeanWang0027/data-dq](https://huggingface.co/SeanWang0027/data-dq)
+- Dataset en Hugging Face: [SeanWang0027/data-dq](https://huggingface.co/SeanWang0027/data-dq)
 - Dataset parcial de SciWorld (solo trayectorias incompletas): [SeanWang0027/sciworld-teacher32b-sft-partial](https://huggingface.co/datasets/SeanWang0027/sciworld-teacher32b-sft-partial)

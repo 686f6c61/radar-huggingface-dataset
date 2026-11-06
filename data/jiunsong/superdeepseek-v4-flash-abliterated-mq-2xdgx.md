@@ -95,6 +95,6 @@ No se dispone de información suficiente para comparar con otros modelos MoE de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jiunsong/SuperDeepseek-V4-Flash-abliterated-MQ-2xDGX
+- Modelo en Hugging Face: https://huggingface.co/Jiunsong/SuperDeepseek-V4-Flash-abliterated-MQ-2xDGX
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repositorio de medición de rendimiento sparkDash: https://github.com/MiaAI-Lab/sparkDash

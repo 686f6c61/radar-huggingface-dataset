@@ -105,6 +105,6 @@ Comparacion con alternativas de la misma categoria (Qwen2.5-1.5B, Llama-3.2-1B/3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-CodeInfused-IQ3_XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/DuoNeural/DeepSeek-R1-Distill-Qwen-1.5B-CodeInfused-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper, blog, repositorio de codigo o demo: no disponible. Los resultados de la busqueda web no aportaron ningun enlace relevante sobre este modelo o sobre el metodo G-TAP.

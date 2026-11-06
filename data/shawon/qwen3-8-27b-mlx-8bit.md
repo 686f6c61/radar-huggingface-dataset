@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - El tamaño del repositorio es de 28,6 GB, por lo que se recomienda un Mac con al menos 32 GB de memoria unificada para cargar el modelo completo.
 - La cuantización de 8 bits reduce el uso de memoria frente a una versión de 16 bits, pero sigue siendo un modelo grande.
 - No se dispone de datos de latencia o throughput estimados.
-- Opciones de despliegue: mediante la librería `mlx-lm` (pip install mlx-lm), con carga directa desde HuggingFace.
+- Opciones de despliegue: mediante la librería `mlx-lm` (pip install mlx-lm), con carga directa desde Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -63,9 +63,9 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 - No se han documentado sesgos, riesgos de alucinación o limitaciones idiomáticas específicas.
 - Al ser una conversión de un modelo de terceros, no se garantiza que la cuantización de 8 bits mantenga la calidad original del modelo sin pérdidas.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base `Qwen/Qwen3.8-27B` por si hubiera restricciones adicionales.
-- El modelo no ha recibido descargas ni valoraciones en HuggingFace, lo que indica un uso aún no validado por la comunidad.
+- El modelo no ha recibido descargas ni valoraciones en Hugging Face, lo que indica un uso aún no validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shawon/Qwen3.8-27B-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/shawon/Qwen3.8-27B-mlx-8Bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

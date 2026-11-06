@@ -6,7 +6,7 @@ Laya-English-MXFP8 es una cuantización a MXFP8 del backbone codificador en ingl
 
 La relevancia de esta ficha es acotada y conviene entenderla bien: se trata de un extractor de caracteristicas cuantizado, no de un modelo generativo. No hay ruta `generate()`, no hay plantilla de chat y no es cargable en LM Studio. El peso real del checkpoint es de 394.781.696 parametros segun los tensores safetensors, con un tamaño de repositorio de 0,4 GB (~407 MB en disco segun el autor). La cuantizacion se ha hecho con `mlx-embeddings` mediante `nn.quantize(..., mode="mxfp8")` con tamaño de grupo 32.
 
-El interes practico esta en disponer del encoder ModernBERT de Laya como extractor de caracteristicas generalista en MLX, con una huella de memoria muy reducida, o como base para construir una cabeza propia en MLX. Existen variantes hermanas MXFP4 y multilingues publicadas por el mismo autor. La licencia no esta declarada ni en los metadatos de HuggingFace ni en la model card, lo que es un obstaculo serio para uso comercial.
+El interes practico esta en disponer del encoder ModernBERT de Laya como extractor de caracteristicas generalista en MLX, con una huella de memoria muy reducida, o como base para construir una cabeza propia en MLX. Existen variantes hermanas MXFP4 y multilingues publicadas por el mismo autor. La licencia no esta declarada ni en los metadatos de Hugging Face ni en la model card, lo que es un obstaculo serio para uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -17,8 +17,8 @@ El interes practico esta en disponer del encoder ModernBERT de Laya como extract
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 512 tokens (max_position_embeddings del backbone ModernBERT-large) |
 | Tipos de cuantizacion | MXFP8, tamaño de grupo 32, mode="mxfp8"; existe tambien variante MXFP4 en otro repo |
-| Idiomas soportados | Ingles (variante "English" del autor); los metadatos de HuggingFace no declaran idiomas |
-| Licencia | No disponible (ni en metadatos de HuggingFace ni en la model card); revisar la del modelo base convaiinnovations/laya |
+| Idiomas soportados | Ingles (variante "English" del autor); los metadatos de Hugging Face no declaran idiomas |
+| Licencia | No disponible (ni en metadatos de Hugging Face ni en la model card); revisar la del modelo base convaiinnovations/laya |
 | Formato de pesos | safetensors (MLX); 0,4 GB de repositorio, ~407 MB en disco |
 | Dimension oculta | 1024 |
 | Numero de capas | 28 |
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparativos en tareas estandar entre esta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sahilchachra/Laya-English-MXFP8
+- Repositorio Hugging Face: https://huggingface.co/sahilchachra/Laya-English-MXFP8
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Variante English MXFP4: https://huggingface.co/sahilchachra/Laya-English-MXFP4
 - Variante Multilingual MXFP4: https://huggingface.co/sahilchachra/Laya-Multilingual-MXFP4
@@ -117,6 +117,6 @@ No se dispone de datos de rendimiento comparativos en tareas estandar entre esta
 - mlx-embeddings: https://github.com/Blaizzy/mlx-embeddings
 - MLX: https://github.com/ml-explore/mlx
 - Referencia ModernBERT-large: https://huggingface.co/answerdotai/ModernBERT-large
-- Perfil del autor en HuggingFace: https://huggingface.co/sahilchachra
+- Perfil del autor en Hugging Face: https://huggingface.co/sahilchachra
 - Perfil del autor en GitHub: https://github.com/SahilChachra
 - Pagina de Laya en Tokenstead (hardware y cuantizacion): https://tokenstead.ai/models/laya

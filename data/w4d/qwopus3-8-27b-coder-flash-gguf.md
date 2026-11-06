@@ -81,6 +81,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/W4D/Qwopus3.8-27B-Coder-Flash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/W4D/Qwopus3.8-27B-Coder-Flash-GGUF
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash
 - llama.cpp (herramientas de conversion y cuantizacion): https://github.com/ggml-org/llama.cpp

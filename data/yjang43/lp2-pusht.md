@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yjang43/lp2-pusht` es un world model (modelo del mundo) preentrenado para la tarea de manipulacion PushT, el entorno bidimensional de empuje de un objeto en forma de T que se popularizo con Diffusion Policy y el paquete `gym-pusht`. Lo publica el usuario de HuggingFace `yjang43` como artefacto asociado al metodo LP² (Latent Projection for Latent Planning), una tecnica de planificacion en espacio latente. El repositorio se distribuye con licencia MIT y ocupa 0,1 GB, lo que apunta a un checkpoint de tamano reducido, aunque el autor no detalla el numero de parametros ni la arquitectura concreta.
+El modelo `yjang43/lp2-pusht` es un world model (modelo del mundo) preentrenado para la tarea de manipulacion PushT, el entorno bidimensional de empuje de un objeto en forma de T que se popularizo con Diffusion Policy y el paquete `gym-pusht`. Lo publica el usuario de Hugging Face `yjang43` como artefacto asociado al metodo LP² (Latent Projection for Latent Planning), una tecnica de planificacion en espacio latente. El repositorio se distribuye con licencia MIT y ocupa 0,1 GB, lo que apunta a un checkpoint de tamano reducido, aunque el autor no detalla el numero de parametros ni la arquitectura concreta.
 
 El modelo se libero originalmente junto con el trabajo LeWorldModel, cuyo identificador arXiv es 2603.19312, y su version de referencia es `quentinll/lewm-pusht`. Es decir, este repositorio es una re-publicacion o variante vinculada al mismo world model, no un modelo de lenguaje: no genera texto, no procesa lenguaje natural y no implementa tool calling ni capacidades conversacionales. Su funcion es aprender la dinamica latente de un entorno de control concreto para permitir planificacion y evaluacion de politicas sin acceso al simulador real.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yjang43/lp2-pusht` | World model para PushT (LP²) | no disponible | no aplica | MIT | HuggingFace, 0 descargas, 0 likes |
-| `quentinll/lewm-pusht` | World model para PushT (version original de LeWorldModel) | no disponible | no aplica | no disponible en la informacion proporcionada | HuggingFace |
+| `yjang43/lp2-pusht` | World model para PushT (LP²) | no disponible | no aplica | MIT | Hugging Face, 0 descargas, 0 likes |
+| `quentinll/lewm-pusht` | World model para PushT (version original de LeWorldModel) | no disponible | no aplica | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de informacion sobre otros world models comparables en los datos facilitados, ni de metricas que permitan establecer una comparacion cuantitativa entre ambas versiones.
 
@@ -86,8 +86,8 @@ No se dispone de informacion sobre otros world models comparables en los datos f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yjang43/lp2-pusht
-- Version original del autor en HuggingFace: https://huggingface.co/quentinll/lewm-pusht
+- Modelo en Hugging Face: https://huggingface.co/yjang43/lp2-pusht
+- Version original del autor en Hugging Face: https://huggingface.co/quentinll/lewm-pusht
 - Paper de LeWorldModel (referencia arXiv 2603.19312): https://huggingface.co/papers/2603.19312
 - Dataset asociado: https://huggingface.co/datasets/yjang43/lp2-pusht
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces recuperados corresponden a consultas no relacionadas y se han descartado.

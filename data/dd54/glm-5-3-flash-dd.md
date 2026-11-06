@@ -89,7 +89,7 @@ La comparativa con GLM-5.2 y Claude Opus 4.8 se menciona en la model card, pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DD54/GLM-5.3-Flash-DD
+- Hugging Face: https://huggingface.co/DD54/GLM-5.3-Flash-DD
 - Blog de GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Documentación API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

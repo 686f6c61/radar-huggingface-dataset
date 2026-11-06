@@ -63,8 +63,8 @@ No se dispone de información sobre modelos comparables dentro del mismo dominio
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| donnaphat397/thai-qa-lab-model | 124,4M | no disponible | tailandés | MIT | HuggingFace |
-| GPT-2 pequeño (OpenAI) | 124M | 1024 tokens | principalmente inglés | MIT | HuggingFace |
+| donnaphat397/thai-qa-lab-model | 124,4M | no disponible | tailandés | MIT | Hugging Face |
+| GPT-2 pequeño (OpenAI) | 124M | 1024 tokens | principalmente inglés | MIT | Hugging Face |
 | Modelos tailandeses de código abierto | no disponible | no disponible | tailandés | variado | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,5 +78,5 @@ No se dispone de información sobre modelos comparables dentro del mismo dominio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/donnaphat397/thai-qa-lab-model
+- Repositorio en Hugging Face: https://huggingface.co/donnaphat397/thai-qa-lab-model
 - Modelo similar encontrado en búsqueda web: https://huggingface.co/WazaBI0099/thai-qa-lab-model

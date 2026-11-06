@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HW1 es un modelo de generacion de texto de tipo encoder-decoder publicado por el usuario machine-leoning en HuggingFace. Se trata de un fine-tune de UrukHan/t5-russian-spell, un modelo de la familia T5 orientado a la correccion ortografica en ruso, segun se deduce del identificador del modelo base. El repositorio contiene 222.903.552 parametros en formato safetensors, lo que lo situa en el rango de los modelos T5 de tamano base, y ocupa 0.9 GB de espacio en disco.
+HW1 es un modelo de generacion de texto de tipo encoder-decoder publicado por el usuario machine-leoning en Hugging Face. Se trata de un fine-tune de UrukHan/t5-russian-spell, un modelo de la familia T5 orientado a la correccion ortografica en ruso, segun se deduce del identificador del modelo base. El repositorio contiene 222.903.552 parametros en formato safetensors, lo que lo situa en el rango de los modelos T5 de tamano base, y ocupa 0.9 GB de espacio en disco.
 
 El modelo ha sido entrenado con la libreria Transformers (version 5.17.0) mediante el Trainer estandar, con 5 epocas, learning rate 2e-05, batch de 8 y precision mixta nativa AMP. La model card esta generada de forma automatica por el propio Trainer y no ha sido completada por el autor: no describe el dataset de entrenamiento (aparece como "None"), no declara usos previstos, no incluye limitaciones y no publica ningun resultado de evaluacion. El bloque model-index esta vacio (results: []).
 
@@ -12,7 +12,7 @@ Su relevancia practica es limitada y hay que tratarla con cautela: no hay eviden
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder de la familia T5 (etiqueta `t5` en HuggingFace; no se especifica la variante exacta del backbone) |
+| Arquitectura | Transformer encoder-decoder de la familia T5 (etiqueta `t5` en Hugging Face; no se especifica la variante exacta del backbone) |
 | Parametros totales | 222.903.552 (dato real de los pesos safetensors) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (la model card no lo declara; el valor por defecto de la familia T5 base no esta confirmado para este fine-tune) |
@@ -42,7 +42,7 @@ Advertencia previa: no hay documentacion del autor sobre el comportamiento del m
 - Soporte de agentes y razonamiento multi-paso: no disponible. Un T5 base de 222 M de parametros, sin entrenamiento especifico, no es un modelo adecuado para planificacion multi-paso.
 - Capacidades multilingues: no disponibles. La etiqueta del modelo base sugiere foco en ruso, pero no se declara cobertura de idiomas y el castellano no esta confirmado en ningun caso.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles. Es un modelo exclusivamente de texto.
-- Compatibilidad de despliegue: los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que indica que el repositorio esta preparado para servirse con TGI en HuggingFace Inference Endpoints, aunque no hay configuracion especifica publicada.
+- Compatibilidad de despliegue: los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que indica que el repositorio esta preparado para servirse con TGI en Hugging Face Inference Endpoints, aunque no hay configuracion especifica publicada.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El bl
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para fp16; por ejemplo GTX 1650, RTX 3050, RTX 4060, T4, L4. Modelos de gama alta como RTX 4090, A100 o H100 estan sobredimensionados para un modelo de este tamano y solo tendrian sentido para servir en lote a gran escala.
 - GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo moderna e incluso en iGPU con memoria unificada, siempre que el runtime lo permita.
 - CPU: viable para inferencia por lotes en fp32 o con cuantizacion dinamica de PyTorch; la latencia dependera del numero de nucleos y de la longitud de las secuencias.
-- Opciones de despliegue: PyTorch con Transformers, Text Generation Inference (el tag `text-generation-inference` esta presente), HuggingFace Inference Endpoints (tag `endpoints_compatible`), exportacion a ONNX mediante Optimum y conversiones a GGUF para llama.cpp u Ollama. Nota importante: el soporte de arquitecturas T5 en llama.cpp y Ollama no esta verificado para este checkpoint y requeriria conversion y pruebas previas.
+- Opciones de despliegue: PyTorch con Transformers, Text Generation Inference (el tag `text-generation-inference` esta presente), Hugging Face Inference Endpoints (tag `endpoints_compatible`), exportacion a ONNX mediante Optimum y conversiones a GGUF para llama.cpp u Ollama. Nota importante: el soporte de arquitecturas T5 en llama.cpp y Ollama no esta verificado para este checkpoint y requeriria conversion y pruebas previas.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas ni configuracion de referencia; cualquier cifra seria especulativa.
 
 ## Comparativa con modelos similares
@@ -75,8 +75,8 @@ No se dispone de datos verificables de los modelos alternativos en la informacio
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| machine-leoning/HW1 | 222.903.552 | No disponible | No disponible | HuggingFace, 0 descargas | Fine-tune sin documentar ni evaluar |
-| UrukHan/t5-russian-spell (modelo base) | No disponible | No disponible | No disponible | HuggingFace | Base declarada del fine-tune; orientado a correccion ortografica en ruso |
+| machine-leoning/HW1 | 222.903.552 | No disponible | No disponible | Hugging Face, 0 descargas | Fine-tune sin documentar ni evaluar |
+| UrukHan/t5-russian-spell (modelo base) | No disponible | No disponible | No disponible | Hugging Face | Base declarada del fine-tune; orientado a correccion ortografica en ruso |
 | Alternativas de la misma categoria (por ejemplo otros T5 de tamano base para correccion ortografica) | No disponible | No disponible | No disponible | No disponible | No se han encontrado datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No se dispone de datos verificables de los modelos alternativos en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/machine-leoning/HW1
+- Modelo en Hugging Face: https://huggingface.co/machine-leoning/HW1
 - Modelo base declarado: https://huggingface.co/UrukHan/t5-russian-spell
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

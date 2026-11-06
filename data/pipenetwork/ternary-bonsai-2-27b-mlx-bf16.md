@@ -99,7 +99,7 @@ La informacion disponible solo permite comparar con las builds del mismo modelo;
 
 ## Enlaces
 
-- HuggingFace (esta build): https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-bf16
+- Hugging Face (esta build): https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-bf16
 - Modelo base (prism-ml, GGUF): https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Build de 2 bits de prism-ml con su runtime: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Build de 8 bits: https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-8bit

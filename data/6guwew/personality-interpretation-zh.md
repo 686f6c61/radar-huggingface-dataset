@@ -87,7 +87,7 @@ No se han encontrado en la informacion disponible otros adaptadores publicos com
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| personality-interpretation-zh | 7 B base + 80,7 M entrenables | No especificado (entrenado con cutoff 4096) | 5/5 dominios cubiertos, 0 frases plantilla, 8 menciones de costes | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| personality-interpretation-zh | 7 B base + 80,7 M entrenables | No especificado (entrenado con cutoff 4096) | 5/5 dominios cubiertos, 0 frases plantilla, 8 menciones de costes | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | Qwen2.5-7B-Instruct | 7 B | No disponible en la informacion proporcionada | 4/5 dominios, omite amabilidad, 5 frases plantilla, 6 codigos de dimension | Apache 2.0 (segun el modelo base) | Ampliamente disponible |
 | Otros adaptadores de interpretacion psicologica | No disponible | No disponible | No disponible | No disponible | No se han encontrado |
 
@@ -109,7 +109,7 @@ Conviene senalar que el modelo tiene 0 descargas y 0 likes en el momento de la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/6guwew/personality-interpretation-zh
+- Modelo en Hugging Face: https://huggingface.co/6guwew/personality-interpretation-zh
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - LLaMA-Factory (framework de entrenamiento empleado): https://github.com/hiyouga/LLaMA-Factory
 - Scripts de generacion de items y puntuacion: carpeta `scripts/` del repositorio del modelo (incluye `to_llamafactory.py`, con el prompt de sistema)

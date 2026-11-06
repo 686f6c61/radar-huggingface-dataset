@@ -6,7 +6,7 @@ Qwen3.8-27B-Abliterated-MLX-oQ4e-mtp es una cuantizacion de 4 bits en formato ML
 
 El modelo resuelve el problema de desplegar un LLM de ~27.800 millones de parametros en hardware Apple con memoria unificada, reduciendo el peso del repositorio a 17,0 GB gracias a la cuantizacion de 4 bits. Es relevante para desarrolladores que trabajan en Mac con chip M-series y necesitan un modelo multimodal (image-text-to-text) con ventana de contexto amplia y comportamiento menos restrictivo en las respuestas, sin depender de GPUs NVIDIA ni de servicios en la nube.
 
-La ficha se basa unicamente en los metadatos disponibles en HuggingFace. No se han publicado detalles sobre el proceso de entrenamiento, los datos utilizados ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa unicamente en los metadatos disponibles en Hugging Face. No se han publicado detalles sobre el proceso de entrenamiento, los datos utilizados ni resultados de benchmarks, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha se basa unicamente en los metadatos disponibles en HuggingFace. No se h
 | Tamano del repositorio | 17,0 GB |
 | Modalidad | Image-text-to-text (vision + lenguaje) |
 | Libreria | MLX |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Modelo base | windowsxp811203/Qwen3.8-27B-Abliterated |
 | Decodificacion especulativa | Si (native-mtp, multi-token prediction) |
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Abliterated-MLX-oQ4e-mtp | ~27,8B | No disponible | Imagen-texto | Apache 2.0 | Gated en HuggingFace, formato MLX |
+| Qwen3.8-27B-Abliterated-MLX-oQ4e-mtp | ~27,8B | No disponible | Imagen-texto | Apache 2.0 | Gated en Hugging Face, formato MLX |
 | Qwen3.8-27B-Abliterated (base) | ~27,8B | No disponible | Imagen-texto | Apache 2.0 | Repositorio del autor |
 | Otras cuantizaciones MLX de la familia Qwen | Variable | No disponible | Texto o multimodal | Segun modelo base | Comunidad MLX |
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de la descarga.
 - Modelo "abliterated": la eliminacion o atenuacion de los mecanismos de rechazo puede aumentar la probabilidad de generar contenido inapropiado, ofensivo o inseguro. No se recomienda su uso directo en produccion orientada al publico sin una capa adicional de moderacion.
 - Riesgo de alucinacion: inherente a los LLM de esta escala; no hay evaluaciones publicadas que cuantifiquen la tasa de error.
 - Idiomas: solo se declaran ingles y chino; el rendimiento en castellano no esta garantizado ni evaluado.
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-MLX-oQ4e-mtp
 - Modelo base: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
 - Framework MLX: https://github.com/ml-explore/mlx
 - Documentacion de MLX: https://ml-explore.github.io/mlx/

@@ -83,7 +83,7 @@ La comparacion con whisper-large-v3-turbo original es la mas directa: mismo tama
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zalozbadev/korla-whisper-large-v3-turbo-hsb-v1-ggml
+- Repositorio Hugging Face: https://huggingface.co/zalozbadev/korla-whisper-large-v3-turbo-hsb-v1-ggml
 - Modelo original del fine-tuning: https://huggingface.co/Korla/whisper-large-v3-turbo-hsb-v1
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Runtime whisper.cpp: https://github.com/ggerganov/whisper.cpp

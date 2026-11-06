@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Granite-Claude-Code-Phase-2 es un ajuste fino (fine-tune) del modelo ibm-granite/granite-3.1-2b-instruct, publicado por el usuario SiddardhaShayini en HuggingFace. Se trata de un derivado de la familia Granite 3.1 de IBM, por lo que hereda la arquitectura transformer decoder-only densa y el entrenamiento instructivo del modelo base. El nombre del repositorio sugiere un enfoque hacia tareas de generacion de codigo y flujos tipo agente, aunque la model card no documenta el dataset ni el objetivo concreto del ajuste.
+Granite-Claude-Code-Phase-2 es un ajuste fino (fine-tune) del modelo ibm-granite/granite-3.1-2b-instruct, publicado por el usuario SiddardhaShayini en Hugging Face. Se trata de un derivado de la familia Granite 3.1 de IBM, por lo que hereda la arquitectura transformer decoder-only densa y el entrenamiento instructivo del modelo base. El nombre del repositorio sugiere un enfoque hacia tareas de generacion de codigo y flujos tipo agente, aunque la model card no documenta el dataset ni el objetivo concreto del ajuste.
 
 El modelo se ha entrenado, segun el autor, con Unsloth, una libreria que optimiza el fine-tuning de modelos grandes (LoRA/QLoRA) reduciendo el uso de memoria y acelerando el entrenamiento. No se especifica el conjunto de datos, el numero de tokens de entrenamiento ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La model card es minima y no incluye resultados de evaluacion.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Granite-Claude-Code-Phase-2 (este) | ~2,5B (base) | 128K (base) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentacion ni benchmarks |
-| ibm-granite/granite-3.1-2b-instruct | ~2,5B | 128K | Apache 2.0 | HuggingFace | Modelo base oficial, documentado |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32K (segun version) | Apache 2.0 | HuggingFace | Alternativa pequena multilingue; datos exactos no verificados aqui |
-| Llama-3.2-1B-Instruct | ~1,2B | 128K | Llama 3.2 Community License | HuggingFace | Licencia con restricciones para algunos usos; datos exactos no verificados aqui |
+| Granite-Claude-Code-Phase-2 (este) | ~2,5B (base) | 128K (base) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentacion ni benchmarks |
+| ibm-granite/granite-3.1-2b-instruct | ~2,5B | 128K | Apache 2.0 | Hugging Face | Modelo base oficial, documentado |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32K (segun version) | Apache 2.0 | Hugging Face | Alternativa pequena multilingue; datos exactos no verificados aqui |
+| Llama-3.2-1B-Instruct | ~1,2B | 128K | Llama 3.2 Community License | Hugging Face | Licencia con restricciones para algunos usos; datos exactos no verificados aqui |
 
 Las cifras de contexto y parametros del modelo base se ofrecen como referencia; para este fine-tune concreto no hay datos publicados. Los datos de las alternativas deben verificarse en sus fichas oficiales.
 
@@ -89,6 +89,6 @@ Las cifras de contexto y parametros del modelo base se ofrecen como referencia; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiddardhaShayini/Granite-Claude-Code-Phase-2
+- Modelo en Hugging Face: https://huggingface.co/SiddardhaShayini/Granite-Claude-Code-Phase-2
 - Modelo base: https://huggingface.co/ibm-granite/granite-3.1-2b-instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

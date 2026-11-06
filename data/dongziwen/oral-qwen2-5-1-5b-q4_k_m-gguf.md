@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dongziwen/Oral-Qwen2.5-1.5B-Q4_K_M-GGUF | 1,5B | No disponible | Q4_K_M | No disponible | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct-GGUF | 1,5B | 32K (configurable) | Múltiples (Q2_K a Q8_0) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2-1.5B-Instruct-GGUF | 1,5B | 32K | Múltiples | Apache 2.0 | HuggingFace |
+| Dongziwen/Oral-Qwen2.5-1.5B-Q4_K_M-GGUF | 1,5B | No disponible | Q4_K_M | No disponible | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct-GGUF | 1,5B | 32K (configurable) | Múltiples (Q2_K a Q8_0) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2-1.5B-Instruct-GGUF | 1,5B | 32K | Múltiples | Apache 2.0 | Hugging Face |
 
 La principal diferencia es que el modelo de Dongziwen es un fine-tune no documentado, mientras que los GGUF oficiales de Qwen cuentan con licencia Apache 2.0, contexto conocido y versiones cuantizadas estándar. Para uso en producción, los modelos oficiales ofrecen mayor trazabilidad y soporte.
 

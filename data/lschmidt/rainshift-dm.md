@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RainShift Diffusion Model (rainshift-dm) es un modelo generativo de difusion para *downscaling* (reduccion de escala) de precipitacion, publicado por el usuario lschmidt en HuggingFace. Se trata de los checkpoints baseline del benchmark RainShift, presentado en el articulo "RainShift: A Benchmark for Precipitation Downscaling Across Geographies" (arXiv:2507.04930), y entrenado sobre el dataset RainShift/rainshift. Su tarea es de image-to-image: transformar campos de precipitacion de baja resolucion en campos de alta resolucion.
+RainShift Diffusion Model (rainshift-dm) es un modelo generativo de difusion para *downscaling* (reduccion de escala) de precipitacion, publicado por el usuario lschmidt en Hugging Face. Se trata de los checkpoints baseline del benchmark RainShift, presentado en el articulo "RainShift: A Benchmark for Precipitation Downscaling Across Geographies" (arXiv:2507.04930), y entrenado sobre el dataset RainShift/rainshift. Su tarea es de image-to-image: transformar campos de precipitacion de baja resolucion en campos de alta resolucion.
 
 El repositorio ocupa 1,2 GB y contiene al menos diez checkpoints en formato PyTorch (.pth), divididos en dos series (`rainshift_dm_a1` a `rainshift_dm_a4` y `rainshift_dm_e1` a `rainshift_dm_e6`). La model card no describe que representa cada serie ni sus hiperparametros, y no se proporcionan datos sobre arquitectura interna, numero de parametros, resoluciones de entrenamiento ni licencia.
 
@@ -74,7 +74,7 @@ No se dispone de datos comparativos verificados en la informacion proporcionada.
 
 | Modelo | Categoria | Parametros | Contexto/resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rainshift-dm (lschmidt) | Difusion image-to-image para downscaling de precipitacion | no disponible | no disponible | no disponible | Checkpoints `.pth` en HuggingFace |
+| rainshift-dm (lschmidt) | Difusion image-to-image para downscaling de precipitacion | no disponible | no disponible | no disponible | Checkpoints `.pth` en Hugging Face |
 | NVIDIA CorrDiff (Earth-2) | Difusion para downscaling meteorologico | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | Referencia de la misma familia de tareas; datos no verificados aqui |
 | Alternativas basadas en GAN o superresolucion determinista para precipitacion | Superresolucion climatica | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion |
 
@@ -94,7 +94,7 @@ Las filas distintas de rainshift-dm se incluyen unicamente como referencias de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lschmidt/rainshift-dm
+- Modelo en Hugging Face: https://huggingface.co/lschmidt/rainshift-dm
 - Dataset de entrenamiento: https://huggingface.co/datasets/RainShift/rainshift
 - Articulo del benchmark: https://arxiv.org/abs/2507.04930
 - No se han encontrado otros enlaces relevantes (repositorio de codigo, demo o blog) en la busqueda web realizada.

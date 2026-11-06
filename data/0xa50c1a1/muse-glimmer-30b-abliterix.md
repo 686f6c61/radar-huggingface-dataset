@@ -97,8 +97,8 @@ La informacion disponible solo permite comparar de forma directa con el modelo b
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-abliterix (este) | ~29,6B (dato real en safetensors: 29.776.626.688) | 131.072+ | Apache 2.0 | HuggingFace, transformers, safetensors | Variante abliterada, rechazos 10/100, KL 0,0094 |
-| meta-models/Muse-Glimmer-30B | ~29,6B (incluye encoder de vision) | 131.072+ | Apache 2.0 | HuggingFace | Modelo original con alineacion intacta, rechazos 98/100 |
+| Muse-Glimmer-30B-abliterix (este) | ~29,6B (dato real en safetensors: 29.776.626.688) | 131.072+ | Apache 2.0 | Hugging Face, transformers, safetensors | Variante abliterada, rechazos 10/100, KL 0,0094 |
+| meta-models/Muse-Glimmer-30B | ~29,6B (incluye encoder de vision) | 131.072+ | Apache 2.0 | Hugging Face | Modelo original con alineacion intacta, rechazos 98/100 |
 | Otras alternativas de ~30B con vision y capacidad agentica | no disponible | no disponible | no disponible | no disponible | No hay datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -116,7 +116,7 @@ La informacion disponible solo permite comparar de forma directa con el modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xA50C1A1/Muse-Glimmer-30B-abliterix
+- Modelo en Hugging Face: https://huggingface.co/0xA50C1A1/Muse-Glimmer-30B-abliterix
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio de Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Paper del encoder de percepcion (referenciado en la model card): https://arxiv.org/abs/2504.13181

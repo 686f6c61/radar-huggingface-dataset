@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pranavshar/hw2-contrastive` es un repositorio experimental alojado en HuggingFace que contiene un esqueleto de código para trabajar con una arquitectura Swin-T (Swin Transformer Tiny) bajo un objetivo de aprendizaje contrastivo. Lo publica el usuario particular pranavshar, sin vinculación a ninguna organización ni a un artículo científico asociado. El artefacto principal es `run.py`, acompañado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`.
+`pranavshar/hw2-contrastive` es un repositorio experimental alojado en Hugging Face que contiene un esqueleto de código para trabajar con una arquitectura Swin-T (Swin Transformer Tiny) bajo un objetivo de aprendizaje contrastivo. Lo publica el usuario particular pranavshar, sin vinculación a ninguna organización ni a un artículo científico asociado. El artefacto principal es `run.py`, acompañado de `config.json`, `training_args.json` y un checkpoint `model.safetensors`.
 
 Es importante subrayar que el checkpoint publicado no es un modelo entrenado: la propia model card lo describe como una "inicialización válida para pruebas de humo" y aclara de forma explícita que no se reclama ninguna puntuación de benchmark. Los safetensors registran 24.832 parámetros totales y el repositorio ocupa 0,0 GB, cifras coherentes con una configuración mínima pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| pranavshar/hw2-contrastive | 24.832 | No aplica | Apache-2.0 | HuggingFace | Checkpoint de inicialización sin entrenar |
+| pranavshar/hw2-contrastive | 24.832 | No aplica | Apache-2.0 | Hugging Face | Checkpoint de inicialización sin entrenar |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado modelos equivalentes en la información proporcionada |
 
 No se dispone de modelos comparables en la información facilitada. Como contexto cualitativo, la cifra de 24.832 parámetros está varios órdenes de magnitud por debajo de las implementaciones públicas habituales de Swin-T, que manejan decenas de millones de parámetros y sí cuentan con entrenamiento sobre conjuntos de referencia. Esa diferencia de escala refuerza la conclusión de que aquí se ha publicado una configuración mínima de prueba y no un modelo destinado a competir en tareas de visión.
@@ -98,5 +98,5 @@ No se dispone de modelos comparables en la información facilitada. Como context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pranavshar/hw2-contrastive
+- Modelo en Hugging Face: https://huggingface.co/pranavshar/hw2-contrastive
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados obtenidos corresponden a páginas genéricas sin relación con este repositorio. No se han localizado papers, blogs, repositorios de código ni demos adicionales.

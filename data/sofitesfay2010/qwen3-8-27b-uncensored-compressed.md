@@ -76,7 +76,7 @@ La comparativa se limita a las versiones del mismo modelo, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SofiTesfay2010/Qwen3.8-27B-Uncensored-Compressed
+- Repositorio Hugging Face: https://huggingface.co/SofiTesfay2010/Qwen3.8-27B-Uncensored-Compressed
 - Modelo base en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Demo del modelo uncensored: https://huggingface.co/spaces/quagentris/qwen38-uncensored-demo

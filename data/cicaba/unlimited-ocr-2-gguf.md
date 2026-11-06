@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unlimited-OCR-2 GGUF es una cuantización en formato GGUF del modelo baidu/Unlimited-OCR-2 de Baidu, un modelo OCR unificado de tipo mixture-of-experts (MoE) con aproximadamente 2.940 millones de parámetros (2.938.670.848 en pesos safetensors), diseñado para convertir imágenes de páginas de documentos (escaneos, fotografías, páginas PDF) en texto con estructura de layout preservada. La cuantización, publicada por el usuario cicaba en HuggingFace, ofrece tres variantes (F16, Q8_0 y Q4_K_M) junto con el proyector del codificador de visión (SAM + CLIP) en un archivo mmproj separado.
+Unlimited-OCR-2 GGUF es una cuantización en formato GGUF del modelo baidu/Unlimited-OCR-2 de Baidu, un modelo OCR unificado de tipo mixture-of-experts (MoE) con aproximadamente 2.940 millones de parámetros (2.938.670.848 en pesos safetensors), diseñado para convertir imágenes de páginas de documentos (escaneos, fotografías, páginas PDF) en texto con estructura de layout preservada. La cuantización, publicada por el usuario cicaba en Hugging Face, ofrece tres variantes (F16, Q8_0 y Q4_K_M) junto con el proyector del codificador de visión (SAM + CLIP) en un archivo mmproj separado.
 
 El problema que resuelve es doble: por un lado, el OCR tradicional no preserva la estructura del documento (tablas, columnas, jerarquías); por otro, los modelos OCR de gran tamaño exigen hardware costoso. Al distribuirse en GGUF, el modelo puede ejecutarse localmente con llama.cpp, incluso en GPUs de consumo. Una particularidad relevante es que el modelo emplea atención dispersa enrutada DASH (SR-SWA) y RoPE 2D consciente de páginas, características que aún no están en el llama.cpp oficial, por lo que el repositorio incluye un parche propio para compilarlo.
 

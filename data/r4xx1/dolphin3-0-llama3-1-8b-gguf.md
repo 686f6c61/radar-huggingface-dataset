@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace (cuantización GGUF): https://huggingface.co/R4xx1/Dolphin3.0-Llama3.1-8B-GGUF
+- Hugging Face (cuantización GGUF): https://huggingface.co/R4xx1/Dolphin3.0-Llama3.1-8B-GGUF
 - Modelo original Dolphin 3.0 Llama 3.1 8B: https://huggingface.co/cognitivecomputations/Dolphin3.0-Llama3.1-8B
 - Colección Dolphin 3.0: https://huggingface.co/collections/cognitivecomputations/dolphin-30-677ab47f73d7ff66743979a3
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

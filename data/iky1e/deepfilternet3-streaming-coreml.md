@@ -84,7 +84,7 @@ La comparativa detallada con estos modelos no está disponible en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iky1e/DeepFilterNet3-Streaming-CoreML
+- Repositorio Hugging Face: https://huggingface.co/iky1e/DeepFilterNet3-Streaming-CoreML
 - Proyecto original DeepFilterNet: https://github.com/Rikorose/DeepFilterNet
 - Runtime Swift y conversión: https://github.com/kylehowells/DeepFilterNet-mlx
 - Script de conversión: https://github.com/kylehowells/DeepFilterNet-mlx/blob/feature/deepfilternet4/Scripts/Conversion/convert_deepfilternet_to_coreml.py

@@ -4,7 +4,7 @@
 
 ProtonPottsMPNN es un modelo de diseño de secuencias de proteínas condicionado por estructura, que se presenta en un preprint de bioRxiv (DOI 10.64898/2026.09.30.755438) bajo el título "pH-sensitive binder design with Proton-PottsMPNN". Su rasgo diferencial es que representa explícitamente los estados protonado y deprotonado de histidina, aspartato y glutamato como tokens de secuencia distintos, en lugar de tratarlos como un único residuo canónico. Esto permite razonar sobre cambios de carga que dependen del pH a la hora de proponer secuencias.
 
-El repositorio de HuggingFace analizado (`RUIMA294264/ProtonPottsMPNN`) no es un repositorio de pesos en el sentido habitual, sino un espejo ("mirror for Levin plugin fast downloads in China") de los activos necesarios para ejecutar el modelo: un checkpoint `potts_v6/epoch-0125.ckpt` con vocabulario extendido de 30 tokens, un wheel de Python (`protonpotts_foundry-0.1.0`), el código fuente de HBPLUS v3.2 y ejemplos. El desarrollo upstream vive en GitHub (`christian-creator/ProtonPottsMPNN`).
+El repositorio de Hugging Face analizado (`RUIMA294264/ProtonPottsMPNN`) no es un repositorio de pesos en el sentido habitual, sino un espejo ("mirror for Levin plugin fast downloads in China") de los activos necesarios para ejecutar el modelo: un checkpoint `potts_v6/epoch-0125.ckpt` con vocabulario extendido de 30 tokens, un wheel de Python (`protonpotts_foundry-0.1.0`), el código fuente de HBPLUS v3.2 y ejemplos. El desarrollo upstream vive en GitHub (`christian-creator/ProtonPottsMPNN`).
 
 La relevancia actual del modelo es acotada pero específica: abre la puerta al diseño computacional de binders conmutables por pH (que se unan a una diana a un pH y la liberen a otro), un problema con aplicaciones directas en liberación de fármacos en entornos ácidos y en purificación por afinidad. No es un modelo de lenguaje: no genera texto ni código, y sus "pesos" son un checkpoint de PyTorch, no safetensors ni GGUF. La información pública disponible sobre arquitectura interna, tamaño y métricas es muy escasa.
 
@@ -18,12 +18,12 @@ La relevancia actual del modelo es acotada pero específica: abre la puerta al d
 | Longitud de contexto | No aplica: el modelo opera sobre una estructura proteica de entrada (backbone) y emite una secuencia; no hay ventana de contexto en tokens de texto |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No aplica (no es un modelo lingüístico); el "alfabeto" es proteico, con un vocabulario extendido de 30 tokens que incluye estados de protonación |
-| Licencia | No disponible (no declarada en el repositorio de HuggingFace ni en los metadatos) |
+| Licencia | No disponible (no declarada en el repositorio de Hugging Face ni en los metadatos) |
 | Formato de pesos | Checkpoint de PyTorch (`.ckpt`, `epoch-0125.ckpt`) más un wheel de Python (`protonpotts_foundry-0.1.0-py3-none-any.whl`); no se distribuyen safetensors ni GGUF |
 | Vocabulario | 30 tokens (vocabulario extendido, frente al alfabeto canónico de 20 aminoácidos) |
 | Entrada / salida | Entrada: estructura proteica; salida: secuencia de aminoácidos con estados de protonación explícitos para His, Asp y Glu (según el preprint) |
 | Versión del checkpoint | v6, época 125 (`epoch-0125.ckpt`) |
-| Tamaño del repositorio | 0.0 GB según los metadatos de HuggingFace |
+| Tamaño del repositorio | 0.0 GB según los metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-26 / 2026-10-26 |
 
@@ -52,7 +52,7 @@ Tampoco hay datos sobre el corpus de entrenamiento: no se indica el número de t
 - Cribado computacional previo al banco de laboratorio: generar y clasificar cientos de diseños candidatos antes de sintetizar ADN, reduciendo el coste experimental mediante un filtro basado en estabilidad predicha y selectividad de pH.
 - Integración en pipelines de diseño con oráculos predictivos: el repositorio upstream indica que los benchmarks de diseño requieren oráculos externos tipo Boltz-2 o RF3, de modo que el modelo encaja como generador en una cadena generar-plegar-evaluar.
 - Ingeniería de enzimas donde la protonación de residuos catalíticos condiciona la actividad: permite proponer variantes que ajusten el pKa aparente de un residuo catalítico.
-- Reproducción y despliegue en entornos con acceso restringido a HuggingFace: el repositorio incluye un endpoint dual (origen en huggingface.co y espejo en hf-mirror.com) pensado para descargas rápidas desde China.
+- Reproducción y despliegue en entornos con acceso restringido a Hugging Face: el repositorio incluye un endpoint dual (origen en huggingface.co y espejo en hf-mirror.com) pensado para descargas rápidas desde China.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ Los datos de las alternativas provienen de conocimiento general sobre la literat
 
 | Modelo | Tipo | Parámetros | Contexto | Conciencia de pH | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Proton-PottsMPNN | MPNN de diseño de secuencias con vocabulario de protonación (30 tokens) | No disponible | No aplica (entrada estructural) | Sí, explícita (His, Asp, Glu) | No disponible | Repositorio espejo en HuggingFace + upstream en GitHub |
+| Proton-PottsMPNN | MPNN de diseño de secuencias con vocabulario de protonación (30 tokens) | No disponible | No aplica (entrada estructural) | Sí, explícita (His, Asp, Glu) | No disponible | Repositorio espejo en Hugging Face + upstream en GitHub |
 | ProteinMPNN | MPNN de diseño de secuencias sobre backbone proteico | No disponible en esta ficha | No aplica | No | MIT (según el repositorio público del autor) | Código y pesos públicos en GitHub |
 | LigandMPNN | Extensión de ProteinMPNN que condiciona también sobre ligandos y ácidos nucleicos | No disponible en esta ficha | No aplica | No | No verificada en esta búsqueda | Código y pesos públicos en GitHub |
 | ESM-IF1 | Modelo de secuencia inversa basado en transformer sobre estructura | No disponible en esta ficha | No aplica | No | No verificada en esta búsqueda | Pesos públicos en el ecosistema ESM |
@@ -84,7 +84,7 @@ La diferencia funcional relevante frente a las alternativas es la representació
 
 - Licencia no declarada: sin licencia explícita no se puede asumir permiso para uso comercial. Hay que contactar con el autor o consultar el repositorio upstream antes de cualquier despliegue en producción.
 - El repositorio es un espejo de activos, no una model card técnica: no incluye descripción de arquitectura, datos de entrenamiento, métricas ni instrucciones de uso detalladas.
-- Tamaño declarado de 0.0 GB: no se puede confirmar que el checkpoint `epoch-0125.ckpt` esté realmente accesible desde HuggingFace; conviene verificar la integridad de la descarga y el uso de Git LFS.
+- Tamaño declarado de 0.0 GB: no se puede confirmar que el checkpoint `epoch-0125.ckpt` esté realmente accesible desde Hugging Face; conviene verificar la integridad de la descarga y el uso de Git LFS.
 - Cero descargas y cero likes: no existe validación por parte de la comunidad ni reportes independientes de reproducibilidad.
 - Riesgo de alucinación en sentido equivalente: el modelo puede generar secuencias que parezcan plausibles pero que no plieguen o que no presenten el cambio de afinidad por pH predicho. La validación depende de oráculos externos (Boltz-2, RF3) y, en última instancia, de experimentos de laboratorio.
 - La protonación es una predicción, no una medida: el pKa real de un residuo depende fuertemente del entorno estructural, y un token de estado protonado en la secuencia no garantiza el comportamiento ácido-base in vivo.
@@ -96,7 +96,7 @@ La diferencia funcional relevante frente a las alternativas es la representació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RUIMA294264/ProtonPottsMPNN
+- Repositorio en Hugging Face: https://huggingface.co/RUIMA294264/ProtonPottsMPNN
 - Espejo de descargas citado en la model card: https://hf-mirror.com
 - Repositorio upstream en GitHub: https://github.com/christian-creator/ProtonPottsMPNN
 - README upstream: https://github.com/christian-creator/ProtonPottsMPNN/blob/main/README.md

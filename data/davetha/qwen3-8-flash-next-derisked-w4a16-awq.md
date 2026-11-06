@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/davetha/Qwen3.8-Flash-Next-DERISKED-W4A16-AWQ
+- Repositorio Hugging Face del modelo: https://huggingface.co/davetha/Qwen3.8-Flash-Next-DERISKED-W4A16-AWQ
 - Modelo base abliterado: https://huggingface.co/Blackfrost-AI/Qwen3.8-Flash-Next-DERISKED-BF16
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Notas de tuning en GitHub: https://github.com/davetha/mi210-flashnext-vllm

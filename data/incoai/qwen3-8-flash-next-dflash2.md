@@ -6,7 +6,7 @@ DFlash 2 es un modelo borrador (*draft model*) de decodificación especulativa d
 
 La innovación principal es que sustituye el borrador autorregresivo clásico por un *drafter* de difusión por bloques: predice un bloque completo de tokens en una sola pasada, conserva los mejores candidatos en cada posición y un selector ligero traza una única trayectoria coherente entre ellos. La decodificación resultante es sin pérdida (*lossless*): la salida greedy coincide exactamente con la del modelo objetivo y el muestreo preserva su distribución.
 
-Es relevante ahora porque ofrece una mejora medible frente al MTP integrado de Flash-Next: en la evaluación del autor con un bloque especulativo de 4 tokens (3 borradores por paso de verificación), DFlash 2 alcanza velocidades de 1,79× frente a autorregresivo en GSM8K a concurrencia 1, frente a 1,59× del MTP, y gana también a concurrencias 8 y 32. La licencia es Apache 2.0 y el modelo se distribuye ya publicado en HuggingFace (con 25 likes y 0 descargas en el momento de la consulta).
+Es relevante ahora porque ofrece una mejora medible frente al MTP integrado de Flash-Next: en la evaluación del autor con un bloque especulativo de 4 tokens (3 borradores por paso de verificación), DFlash 2 alcanza velocidades de 1,79× frente a autorregresivo en GSM8K a concurrencia 1, frente a 1,59× del MTP, y gana también a concurrencias 8 y 32. La licencia es Apache 2.0 y el modelo se distribuye ya publicado en Hugging Face (con 25 likes y 0 descargas en el momento de la consulta).
 
 ## Especificaciones técnicas
 
@@ -136,12 +136,12 @@ No se dispone de datos de otros borradores de decodificación especulativa (EAGL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/incoai/Qwen3.8-Flash-Next-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/incoai/Qwen3.8-Flash-Next-DFlash2
 - Blog de DFlash 2: https://inco.ai/blog/dflash2/
 - Repositorio GitHub de DFlash: https://github.com/z-lab/dflash
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint FP8 del objetivo (usado en la evaluación): https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - SGLang (requerido para el despliegue): https://github.com/sgl-project/sglang
-- Parche de captura de features: `patches/qwen38-dflash2-capture.patch` dentro del repositorio de HuggingFace
+- Parche de captura de features: `patches/qwen38-dflash2-capture.patch` dentro del repositorio de Hugging Face
 - Cita DFlash 2: Inco AI, «DFlash 2: Keep Drafting Parallel», agosto de 2026
 - Cita DFlash original: Chen, Liang y Liu, «DFlash: Block Diffusion for Flash Speculative Decoding», ICML 2026

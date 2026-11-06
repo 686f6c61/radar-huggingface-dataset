@@ -75,7 +75,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/nicolasramos/Qwen3.8-4B-Distill-MLX-4bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/nicolasramos/Qwen3.8-4B-Distill-MLX-4bit
 - Modelo original (formato Transformers): https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Repositorio de Qwen3.8-Flash-Next (arquitectura relacionada): https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Página de Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

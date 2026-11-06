@@ -67,8 +67,8 @@ El autor unicamente documenta una demostracion reproducible con parametros concr
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ouinche/qwen-image-edit-mflux-q4-full | no disponible | no disponible | MLX 4-bit (safetensors) | other | HuggingFace, requiere mflux/Apple Silicon |
-| Qwen/Qwen-Image-Edit (base) | no disponible | no disponible | BF16 (safetensors) | other | HuggingFace, pipeline estandar |
+| Ouinche/qwen-image-edit-mflux-q4-full | no disponible | no disponible | MLX 4-bit (safetensors) | other | Hugging Face, requiere mflux/Apple Silicon |
+| Qwen/Qwen-Image-Edit (base) | no disponible | no disponible | BF16 (safetensors) | other | Hugging Face, pipeline estandar |
 | Distribuciones estandar de Qwen-Image-Edit para MLX | no disponible | no disponible | MLX con text encoder BF16 (~27,5 GB) | other | Requieren mas memoria (~27,5 GB de descarga) |
 
 La comparativa cuantitativa con alternativas de otros fabricantes (por ejemplo, modelos de edicion de imagen de otros proveedores) no esta disponible en la informacion proporcionada.
@@ -87,7 +87,7 @@ La comparativa cuantitativa con alternativas de otros fabricantes (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ouinche/qwen-image-edit-mflux-q4-full
+- Repositorio Hugging Face: https://huggingface.co/Ouinche/qwen-image-edit-mflux-q4-full
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Edit
 - Libreria MLX: https://github.com/ml-explore/mlx
 - Libreria mflux: https://github.com/filipstrand/mflux

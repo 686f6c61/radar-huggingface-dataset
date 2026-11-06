@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio itsajlol/rigify es un espacio publicado en HuggingFace por el usuario itsajlol bajo licencia Apache 2.0. En la informacion disponible no se identifica ninguna arquitectura, tamano de parametros, ventana de contexto ni conjunto de datos de entrenamiento. La model card asociada contiene unicamente el encabezado YAML con la licencia, sin descripcion funcional, sin ejemplos de uso y sin referencias a pesos o artefactos descargables.
+El repositorio itsajlol/rigify es un espacio publicado en Hugging Face por el usuario itsajlol bajo licencia Apache 2.0. En la informacion disponible no se identifica ninguna arquitectura, tamano de parametros, ventana de contexto ni conjunto de datos de entrenamiento. La model card asociada contiene unicamente el encabezado YAML con la licencia, sin descripcion funcional, sin ejemplos de uso y sin referencias a pesos o artefactos descargables.
 
 El repositorio registra cero descargas y cero likes desde su creacion el 29 de septiembre de 2026, y no declara pipeline de inferencia ni idiomas soportados. Esto es coherente con un espacio vacio, un placeholder o un proyecto en estado embrionario, mas que con un modelo entrenado y listo para produccion.
 
@@ -34,7 +34,7 @@ No hay evidencia de innovaciones tecnicas asociadas, como decodificacion especul
 - No se documenta soporte para agentes ni razonamiento multi-paso.
 - No se especifican capacidades multilingues.
 - No se declaran capacidades especiales como modo de pensamiento, vision o audio.
-- El repositorio no expone pipeline de inferencia en HuggingFace, por lo que no es posible invocarlo mediante la Inference API.
+- El repositorio no expone pipeline de inferencia en Hugging Face, por lo que no es posible invocarlo mediante la Inference API.
 
 ## Casos de uso
 
@@ -43,7 +43,7 @@ No hay evidencia de innovaciones tecnicas asociadas, como decodificacion especul
 - Integracion en pipelines de CI/CD: no aplicable, al no existir API, tokenizador ni formato de pesos conocido.
 - Evaluacion comparativa: no aplicable, al no disponer de resultados de benchmarks ni de una definicion clara de la tarea.
 - Fine-tuning sobre dominio especifico: no aplicable, al no existir un checkpoint base del que partir.
-- Uso educativo o de investigacion: el unico uso posible hoy es el estudio del propio repositorio como ejemplo de publicacion incompleta en HuggingFace.
+- Uso educativo o de investigacion: el unico uso posible hoy es el estudio del propio repositorio como ejemplo de publicacion incompleta en Hugging Face.
 - Reutilizacion de la licencia: la licencia Apache 2.0 declarada permitiria reutilizar el contenido si existiese, pero al no haber contenido tecnico el valor practico es nulo.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ No disponible. No se puede establecer una categoria de comparacion porque se des
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsajlol/rigify
+- Repositorio en Hugging Face: https://huggingface.co/itsajlol/rigify
 - Rigify en Sketchfab (resultado de busqueda no relacionado): https://sketchfab.com/tags/rigify
 - Riggify ControlNet Pose Driver en Gumroad (resultado de busqueda no relacionado): https://3dcinetv.gumroad.com/l/osezw
 - Rigodotify en GitHub (resultado de busqueda no relacionado): https://github.com/catprisbrey/Rigodotify

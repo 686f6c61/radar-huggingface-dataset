@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GLM-5.3-Flash-EXL3-4bpw-TensorFold-Ablit es una version abliterated (sin direcciones de rechazo) del modelo Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold, publicada por Mia-AiLab en HuggingFace el 5 de octubre de 2026. Se distribuye como un checkpoint cuantizado a 4 bits por peso en formato EXL3 sobre safetensors, con un total de 87.811.157.118 parametros (unos 87,8 B) y un repositorio de 175,7 GB. Los tags del repositorio lo situan en la familia GLM (glm5_next, glm-5.3, glm-5.3-flash) y lo marcan como mezcla de expertos (MoE), multimodal (pipeline image-text-to-text) y orientado a NVIDIA DGX Spark.
+GLM-5.3-Flash-EXL3-4bpw-TensorFold-Ablit es una version abliterated (sin direcciones de rechazo) del modelo Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold, publicada por Mia-AiLab en Hugging Face el 5 de octubre de 2026. Se distribuye como un checkpoint cuantizado a 4 bits por peso en formato EXL3 sobre safetensors, con un total de 87.811.157.118 parametros (unos 87,8 B) y un repositorio de 175,7 GB. Los tags del repositorio lo situan en la familia GLM (glm5_next, glm-5.3, glm-5.3-flash) y lo marcan como mezcla de expertos (MoE), multimodal (pipeline image-text-to-text) y orientado a NVIDIA DGX Spark.
 
-El modelo resuelve el caso de uso de inferencia conversacional multimodal en ingles y chino sobre hardware de memoria unificada, con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. La variante abliterated esta pensada para escenarios de investigacion en los que los rechazos del modelo alineado interfieren con la tarea, no para despliegues de produccion sensibles a contenido danino.
+El modelo resuelve el caso de uso de inferencia conversacional multimodal en ingles y chino sobre hardware de memoria unificada, con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. La variante abliterated esta pensada para escenarios de investigacion en los que los rechazos del modelo alineado interfieren con la tarea, no para despliegues de produccion sensibles a contenido danino.
 
 La relevancia actual del checkpoint es doble: por un lado demuestra la viabilidad de servir un MoE de ~88 B en 4 bpw sobre equipos compactos; por otro, sirve como objeto de estudio de tecnicas de abliteration aplicadas a modelos multimodales grandes. No se ha publicado informacion detallada sobre contexto, datos de entrenamiento, benchmarks ni parametros activos en la informacion disponible.
 
@@ -82,14 +82,14 @@ La unica comparacion directa documentada es con su modelo base, del que se difer
 - Limitaciones de contexto e idioma: la longitud de contexto no esta publicada, lo que impide planificar despliegues con documentos largos. El soporte se limita a ingles y chino; el castellano no figura entre los idiomas declarados.
 - Efecto de la abliteration: la eliminacion de direcciones de rechazo reduce o anula las barreras de seguridad del modelo base. Es previsible que genere contenido danino, ilegal o sensible si se le solicita. No debe desplegarse en productos de cara al publico ni en flujos con obligaciones de moderacion sin una capa de filtrado externa.
 - Degradacion asociada: la abliteration suele afectar a la coherencia, la utilidad general y el cumplimiento de instrucciones. No hay evaluaciones publicadas que midan esa perdida en este checkpoint.
-- Licencia: MIT permite uso comercial y modificacion, pero el repositorio esta en acceso restringido (gated), por lo que hay que aceptar las condiciones del autor en HuggingFace antes de descargarlo. Esas condiciones pueden anadir obligaciones no cubiertas por la MIT.
+- Licencia: MIT permite uso comercial y modificacion, pero el repositorio esta en acceso restringido (gated), por lo que hay que aceptar las condiciones del autor en Hugging Face antes de descargarlo. Esas condiciones pueden anadir obligaciones no cubiertas por la MIT.
 - Cuantizacion: EXL3 a 4 bpw no es un formato universal. La integracion en stacks basados en GGUF o en pesos safetensors en BF16 requerira conversion o un backend especifico, lo que limita la portabilidad.
 - Discrepancia de tamano: el repositorio declara 175,7 GB frente a los ~44 GB esperables de una cuantizacion de 4 bits sobre 87,8 B de parametros. Conviene verificar el contenido real del repo antes de planificar almacenamiento y transferencia.
 - Ausencia de model card: no se ha proporcionado descripcion, guia de uso, datos de entrenamiento ni informes de evaluacion del autor. Cualquier uso en produccion deberia ir precedido de una evaluacion propia.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold-Ablit
+- Hugging Face (modelo): https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold-Ablit
 - Modelo base: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold
 - Perfil del autor: https://huggingface.co/Mia-AiLab
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

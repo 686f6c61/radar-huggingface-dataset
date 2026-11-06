@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moosemandada/symlink-probe` es un repositorio alojado en HuggingFace por el usuario `moosemandada`, publicado el 15 de septiembre de 2026 bajo licencia MIT. La informacion disponible no permite identificarlo como un modelo de aprendizaje automatico: no declara pipeline, no incluye pesos, no especifica arquitectura, parametros, contexto ni idiomas soportados, y su model card se limita al titulo "symlink probe" seguido de la etiqueta de licencia.
+`moosemandada/symlink-probe` es un repositorio alojado en Hugging Face por el usuario `moosemandada`, publicado el 15 de septiembre de 2026 bajo licencia MIT. La informacion disponible no permite identificarlo como un modelo de aprendizaje automatico: no declara pipeline, no incluye pesos, no especifica arquitectura, parametros, contexto ni idiomas soportados, y su model card se limita al titulo "symlink probe" seguido de la etiqueta de licencia.
 
 El nombre del repositorio ("symlink probe", sonda de enlace simbolico) sugiere que se trata de un artefacto de prueba tecnica —por ejemplo, una comprobacion del comportamiento de enlaces simbolicos al subir ficheros a un repositorio— y no de un modelo entrenado listo para inferencia. Los metadatos publicos lo respaldan: 0 descargas y 0 "likes" en el momento de la consulta, sin fecha de actualizacion posterior a su creacion.
 
@@ -57,7 +57,7 @@ No se ha documentado ninguna capacidad funcional en la informacion disponible. E
 
 No es posible proponer casos de uso tecnicos concretos, ya que no se ha confirmado que el repositorio contenga un modelo ejecutable ni se conocen sus caracteristicas. A modo de contexto, un artefacto de este tipo podria tener utilidad unicamente como:
 
-- Prueba de infraestructura: verificar como la plataforma HuggingFace resuelve enlaces simbolicos dentro de un repositorio durante la clonacion o la descarga de ficheros.
+- Prueba de infraestructura: verificar como la plataforma Hugging Face resuelve enlaces simbolicos dentro de un repositorio durante la clonacion o la descarga de ficheros.
 - Verificacion de permisos y rutas: comprobar el comportamiento del sistema de ficheros del hub ante rutas que apuntan fuera del arbol del repositorio.
 - Reproduccion de incidencias: disponer de un caso minimo para abrir un informe de error contra la herramienta de subida o descarga.
 - Validacion de politicas de contenido: comprobar como se indexan repositorios sin ficheros de modelo ni model card sustantiva.
@@ -95,8 +95,8 @@ No disponible. No se ha identificado ningun modelo comparable, dado que no se ha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moosemandada/symlink-probe
-- Pagina del autor en HuggingFace: https://huggingface.co/moosemandada
+- Repositorio en Hugging Face: https://huggingface.co/moosemandada/symlink-probe
+- Pagina del autor en Hugging Face: https://huggingface.co/moosemandada
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 
 Nota: los resultados de busqueda web devueltos para esta consulta no guardan ninguna relacion con el repositorio (contenido en arabe sobre interpretacion de suenos y comercio electronico), por lo que se han descartado como fuentes.

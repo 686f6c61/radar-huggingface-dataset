@@ -29,7 +29,7 @@ El entrenamiento se realizó en una RTX 3080 con arquitectura sm_86, empleando s
 
 El modelo no tiene pesos publicados, por lo que las capacidades descritas son las que la arquitectura pretende ofrecer, no observaciones empíricas.
 
-- Generación de texto: la etiqueta de HuggingFace lo clasifica como text-generation y el widget muestra una entrada de texto ("The architecture of learning is").
+- Generación de texto: la etiqueta de Hugging Face lo clasifica como text-generation y el widget muestra una entrada de texto ("The architecture of learning is").
 - Aprendizaje sin retropropagación: la regla MMEP es local y de dos fases, evitando el uso de gradientes y transporte de pesos; está pensada para experimentación con alternativas plausibles desde el punto de vista biológico.
 - Router con entropía limitada: el enrutador restringe la entropía de salida a un máximo de 0.20 nats, con una prueba verificada por máquina en Lean 4, lo que apunta a salidas deterministas.
 - Verificación formal: se incluyen pruebas en Lean 4 sobre propiedades del núcleo, de la activación y del límite de entropía, así como la equivalencia cross-ISA del stack de kernels.
@@ -78,8 +78,8 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SNAPKITTYWEST/burt-imma
+- Hugging Face: https://huggingface.co/SNAPKITTYWEST/burt-imma
 - GitHub: https://github.com/SNAPKITTYWEST/burt-imma
-- Perfil de HuggingFace del autor: https://huggingface.co/SNAPKITTYWEST/models
+- Perfil de Hugging Face del autor: https://huggingface.co/SNAPKITTYWEST/models
 - Papers referenciados en el repositorio de GitHub (archivos con nombre, accesibles desde el repo): gdr_kernels.tex, liquidops_kernel.tex, sovereign_entropy.tex
 - La documentación también menciona ocho artículos publicados en Zenodo con fecha 2026-07-01, sin DOIs disponibles en la información proporcionada.

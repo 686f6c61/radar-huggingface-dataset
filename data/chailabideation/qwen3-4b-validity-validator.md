@@ -83,10 +83,10 @@ No existe un modelo directamente equivalente en la información disponible: la t
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-validity-validator | 5,9 M entrenables sobre base de 4 000 M | Clasificación binaria de presuposición de resultados y reempaquetado de literatura | no disponible | apache-2.0 | Repositorio de HuggingFace con 0 descargas |
+| qwen3-4b-validity-validator | 5,9 M entrenables sobre base de 4 000 M | Clasificación binaria de presuposición de resultados y reempaquetado de literatura | no disponible | apache-2.0 | Repositorio de Hugging Face con 0 descargas |
 | Llama Guard (familia) | 1 000-8 000 M según variante | Clasificación de seguridad de contenido | no disponible en esta ficha | Licencia comunitaria de Llama | Ampliamente desplegado |
-| ShieldGemma | 2 000-9 000 M según variante | Clasificación de seguridad de contenido | no disponible en esta ficha | Licencia de Gemma | Disponible en HuggingFace |
-| Qwen3Guard | variantes de 0,6 a 8 000 M | Clasificación de seguridad de contenido | no disponible en esta ficha | apache-2.0 en varias variantes | Disponible en HuggingFace |
+| ShieldGemma | 2 000-9 000 M según variante | Clasificación de seguridad de contenido | no disponible en esta ficha | Licencia de Gemma | Disponible en Hugging Face |
+| Qwen3Guard | variantes de 0,6 a 8 000 M | Clasificación de seguridad de contenido | no disponible en esta ficha | apache-2.0 en varias variantes | Disponible en Hugging Face |
 
 Las cifras de benchmarks comparativos entre estos modelos y el adaptador reseñado no están disponibles. La comparación solo puede establecerse en términos de tamaño, licencia y naturaleza de la tarea.
 
@@ -106,7 +106,7 @@ Las cifras de benchmarks comparativos entre estos modelos y el adaptador reseña
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chailabideation/qwen3-4b-validity-validator
+- Modelo en Hugging Face: https://huggingface.co/chailabideation/qwen3-4b-validity-validator
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Código fuente y documentación del validador: https://github.com/yfyfyufeng/rl-pipline/tree/validity-validator-release/docs/validity_validator
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada. Las búsquedas web realizadas devolvieron únicamente páginas de ayuda de YouTube y contenidos de Zhihu, sin relación con el modelo.

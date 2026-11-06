@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-cot-stripped_cot es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, desarrollado por el usuario ConnorYU y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 9.653.104.368 parámetros (unos 9,65 mil millones), con pesos en formato safetensors y un repositorio de 19,3 GB, lo que resulta coherente con un almacenamiento en precisión bf16. La etiqueta de pipeline es image-text-to-text, lo que indica que el modelo es multimodal de entrada (imagen y texto a texto), heredada del modelo base de la familia Qwen3.5.
+ConnorYU/qwen3.5-9b-cot-stripped_cot es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, desarrollado por el usuario ConnorYU y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 9.653.104.368 parámetros (unos 9,65 mil millones), con pesos en formato safetensors y un repositorio de 19,3 GB, lo que resulta coherente con un almacenamiento en precisión bf16. La etiqueta de pipeline es image-text-to-text, lo que indica que el modelo es multimodal de entrada (imagen y texto a texto), heredada del modelo base de la familia Qwen3.5.
 
-Lo relevante de esta publicación no es una innovación arquitectonica propia, sino la receta de entrenamiento: el autor indica que el modelo se entrenó con Unsloth y la librería TRL de HuggingFace, con una aceleración declarada de 2x respecto a un entrenamiento convencional. El nombre del repositorio, "cot-stripped_cot", sugiere un tratamiento específico de las cadenas de razonamiento (chain-of-thought) en los datos de ajuste, pero la model card no documenta el dataset, el procedimiento ni el objetivo de dicho tratamiento, por lo que esa interpretación no está confirmada por el autor.
+Lo relevante de esta publicación no es una innovación arquitectonica propia, sino la receta de entrenamiento: el autor indica que el modelo se entrenó con Unsloth y la librería TRL de Hugging Face, con una aceleración declarada de 2x respecto a un entrenamiento convencional. El nombre del repositorio, "cot-stripped_cot", sugiere un tratamiento específico de las cadenas de razonamiento (chain-of-thought) en los datos de ajuste, pero la model card no documenta el dataset, el procedimiento ni el objetivo de dicho tratamiento, por lo que esa interpretación no está confirmada por el autor.
 
 El modelo es relevante como caso de estudio de fine-tuning reproducible y de bajo coste sobre una base multimodal de ~9,65B, no como un lanzamiento con benchmarks verificados: acumula 0 descargas y 0 "likes" en el momento de la consulta, no publica resultados de evaluación y su idioma declarado es únicamente el inglés. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
@@ -25,7 +25,7 @@ El modelo es relevante como caso de estudio de fine-tuning reproducible y de baj
 
 No se dispone de especificaciones arquitectónicas detalladas en la información proporcionada: la model card no indica número de capas, atención utilizada, tamaño de vocabulario ni configuración de la ventana de contexto. Las etiquetas del repositorio apuntan a la familia qwen3_5 y al pipeline image-text-to-text, de modo que el modelo parte de una base multimodal capaz de aceptar imágenes además de texto. El recuento real de parámetros en safetensors (9.653.104.368) sitúa el modelo en la franja de ~9,65B, y el tamaño del repositorio (19,3 GB) es consistente con pesos en bf16 sin cuantizar.
 
-El único detalle de entrenamiento documentado es metodológico: el ajuste fino se realizó con Unsloth y la librería TRL de HuggingFace, con una aceleración declarada de 2x. No se especifican el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF, DPO o SFT, ni la técnica de ajuste (LoRA, QLoRA u otras). El sufijo "cot-stripped_cot" del nombre del repositorio apunta a un tratamiento particular de las cadenas de razonamiento en los datos, pero se trata de una inferencia a partir del nombre, no de un dato confirmado por el autor. Tampoco se documentan innovaciones técnicas propias como decodificación especulativa o atención lineal.
+El único detalle de entrenamiento documentado es metodológico: el ajuste fino se realizó con Unsloth y la librería TRL de Hugging Face, con una aceleración declarada de 2x. No se especifican el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF, DPO o SFT, ni la técnica de ajuste (LoRA, QLoRA u otras). El sufijo "cot-stripped_cot" del nombre del repositorio apunta a un tratamiento particular de las cadenas de razonamiento en los datos, pero se trata de una inferencia a partir del nombre, no de un dato confirmado por el autor. Tampoco se documentan innovaciones técnicas propias como decodificación especulativa o atención lineal.
 
 ## Capacidades
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ConnorYU/qwen3.5-9b-cot-stripped_cot | 9,65B | No disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace, safetensors, 0 descargas |
-| unsloth/Qwen3.5-9B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace (referenciado como base_model) |
+| ConnorYU/qwen3.5-9b-cot-stripped_cot | 9,65B | No disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face, safetensors, 0 descargas |
+| unsloth/Qwen3.5-9B (modelo base) | No disponible en la información proporcionada | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face (referenciado como base_model) |
 | Otras alternativas de la misma franja (por ejemplo, modelos densos de ~8-9B de uso común) | No disponible | No disponible | No disponible | No disponible | La búsqueda web realizada no devolvió resultados relevantes sobre modelos comparables |
 
 No se dispone de datos verificados de rendimiento, contexto ni licencia de posibles alternativas dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -89,7 +89,7 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia de posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-cot-stripped_cot
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-cot-stripped_cot
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces obtenidos corresponden a una empresa portuguesa de etiquetas y RFID (Altronix) y no guardan relación con el objeto de esta ficha, por lo que se omiten.

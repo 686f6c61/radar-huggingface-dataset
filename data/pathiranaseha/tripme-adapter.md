@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pathiranaseha/tripme-adapter` es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ajustar el modelo base `ihalage/llama3-sinhala`, que a su vez es una versión de Llama 3 fine-tuneada para el idioma cingalés (sinhala). El repositorio, de aproximadamente 0.2 GB, contiene únicamente los pesos del adaptador en formato safetensors y utiliza la librería PEFT (versión 0.13.2). El nombre "tripme" sugiere una orientación hacia aplicaciones de planificación de viajes, aunque la model card no proporciona ninguna descripción funcional.
+`pathiranaseha/tripme-adapter` es un adaptador de tipo LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ajustar el modelo base `ihalage/llama3-sinhala`, que a su vez es una versión de Llama 3 fine-tuneada para el idioma cingalés (sinhala). El repositorio, de aproximadamente 0.2 GB, contiene únicamente los pesos del adaptador en formato safetensors y utiliza la librería PEFT (versión 0.13.2). El nombre "tripme" sugiere una orientación hacia aplicaciones de planificación de viajes, aunque la model card no proporciona ninguna descripción funcional.
 
 La relevancia de este adaptador radica en que ejemplifica el fine-tuning eficiente de un modelo multilingüe de gran tamaño para un idioma de bajos recursos como el cingalés, utilizando técnicas de adaptación de parámetros. Sin embargo, la documentación es prácticamente inexistente: la model card es una plantilla sin rellenar, no se declara licencia, ni dataset de entrenamiento, ni métricas de evaluación. Esto limita severamente cualquier evaluación rigurosa del modelo.
 
@@ -77,7 +77,7 @@ No hay información suficiente para establecer una comparativa rigurosa. El adap
 
 ## Enlaces
 
-- [HuggingFace - pathiranaseha/tripme-adapter](https://huggingface.co/pathiranaseha/tripme-adapter)
+- [Hugging Face - pathiranaseha/tripme-adapter](https://huggingface.co/pathiranaseha/tripme-adapter)
 - [Modelo base - ihalage/llama3-sinhala](https://huggingface.co/ihalage/llama3-sinhala)
 - [GitHub - Sesss123/app-Ai (referencia a tripme-llama3-sinhala)](https://github.com/Sesss123/app-Ai)
 - [Proyecto TripMate - CSE23](https://projects.cse23.org/projects/tripmate)

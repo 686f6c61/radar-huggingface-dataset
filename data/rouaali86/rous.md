@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rouaali86/Rous` es un repositorio publicado en HuggingFace por el usuario `rouaali86` bajo licencia Apache 2.0. La model card asociada no contiene más información que la propia licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, entrenamiento o capacidades. A fecha de su publicación (15 de agosto de 2026), el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un lanzamiento reciente o de carácter experimental.
+El modelo `rouaali86/Rous` es un repositorio publicado en Hugging Face por el usuario `rouaali86` bajo licencia Apache 2.0. La model card asociada no contiene más información que la propia licencia, por lo que no se dispone de datos sobre arquitectura, tamaño, entrenamiento o capacidades. A fecha de su publicación (15 de agosto de 2026), el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un lanzamiento reciente o de carácter experimental.
 
 Dada la ausencia total de documentación técnica, no es posible evaluar su idoneidad para tareas concretas ni compararlo con otros modelos. Cualquier uso en producción requeriría, como mínimo, una inspección directa de los pesos y una validación empírica por parte del desarrollador.
 
@@ -52,4 +52,4 @@ No disponible. Al no existir información sobre parámetros, contexto o rendimie
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/rouaali86/Rous)
+- [Repositorio en Hugging Face](https://huggingface.co/rouaali86/Rous)

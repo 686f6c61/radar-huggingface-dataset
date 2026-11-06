@@ -87,7 +87,7 @@ Nota: para una comparación rigurosa con alternativas conviene consultar las fic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-moss-sft-binyuan-v1.0-unet
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-moss-sft-binyuan-v1.0-unet
 - README en chino: https://huggingface.co/RunningHubAI/rh-moss-sft-binyuan-v1.0-unet/blob/main/README_cn.md
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2112133631970979841
 - Página del autor: https://www.runninghub.ai/user-center/1975784978346901506

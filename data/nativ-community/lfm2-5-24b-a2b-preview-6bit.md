@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de modelos alternativos comparables (mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-6bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-6bit
 - Copia identica en mlx-community: https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-6bit
 - Modelo base: https://huggingface.co/lq-preview/LFM2.5-24B-A2B-Preview
 - MLX-VLM PR #2505: https://github.com/Blaizzy/mlx-vlm/pull/2505

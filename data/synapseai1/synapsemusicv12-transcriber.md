@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SynapseMusicV12-Transcriber es un modelo de transcripción de audio publicado en HuggingFace por el usuario SYNAPSEai1. Según su model card, corresponde a ACE-Step Transcriber, el modelo de anotación empleado por ACE-Step v1.5 para etiquetar datos de entrenamiento, y está especializado en transcribir tanto voz hablada como voz cantada, incluyendo anotaciones de estructura musical (verso, estribillo, puente, interludio instrumental, etc.). El pipeline declarado es audio-text-to-text y la librería de referencia es transformers.
+SynapseMusicV12-Transcriber es un modelo de transcripción de audio publicado en Hugging Face por el usuario SYNAPSEai1. Según su model card, corresponde a ACE-Step Transcriber, el modelo de anotación empleado por ACE-Step v1.5 para etiquetar datos de entrenamiento, y está especializado en transcribir tanto voz hablada como voz cantada, incluyendo anotaciones de estructura musical (verso, estribillo, puente, interludio instrumental, etc.). El pipeline declarado es audio-text-to-text y la librería de referencia es transformers.
 
 El repositorio declara 10.732.225.408 parámetros (aproximadamente 10,7 mil millones) en pesos safetensors, con un tamaño de repositorio de 22,4 GB, lo que es coherente con pesos en bf16/fp16 más los componentes de audio. La model card indica que el uso es equivalente al de Qwen2.5-Omni-7B, de modo que el modelo parece derivar de esa familia multimodal, aunque el número de parámetros declarado no coincide con los 7B nominales de Qwen2.5-Omni-7B.
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada con cuantización de 4 bits: aproximadamente 6-7 GB para pesos, más overhead (del orden de 8-10 GB en total). Estas estimaciones son teóricas a partir del número de parámetros; no se han publicado pesos cuantizados en el repositorio.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A6000 para despliegue en bf16 sin cuantizar. En gama consumer, RTX 4090 o RTX 3090 con 24 GB pueden alojar el modelo en bf16 al límite; RTX 4080, RTX 4070 Ti Super o RTX 4060 Ti de 16 GB requerirían cuantización.
 - Cabe en GPU consumer: sí, en GPUs de 24 GB con precisión completa ajustada y, con cuantización, en GPUs de 12-16 GB, siempre que se disponga de una ruta de cuantización compatible (no publicada en el repositorio).
-- Opciones de despliegue: la model card indica el uso estándar con la librería `transformers`; el repositorio está marcado como compatible con endpoints de HuggingFace. No se declaran ni se han publicado pesos GGUF para llama.cpp u Ollama, ni integraciones verificadas con vLLM o TGI.
+- Opciones de despliegue: la model card indica el uso estándar con la librería `transformers`; el repositorio está marcado como compatible con endpoints de Hugging Face. No se declaran ni se han publicado pesos GGUF para llama.cpp u Ollama, ni integraciones verificadas con vLLM o TGI.
 - Latencia y throughput: no disponibles. No se han publicado datos de latencia por minuto de audio ni de throughput en GPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SynapseMusicV12-Transcriber (ACE-Step Transcriber) | 10,7B | No disponible | Transcripción de habla y canto con etiquetado estructural de canción | MIT | HuggingFace, safetensors, transformers |
-| Qwen2.5-Omni-7B | 7B (nominales) | No disponible en esta ficha | Modelo multimodal audio-texto-video de propósito general | Apache-2.0 | HuggingFace, transformers, ecosistema amplio (vLLM, etc.) |
-| Whisper large-v3 | 1,55B | 30 segundos por ventana en la práctica estándar | ASR multilingüe de habla; no orientado a canto ni a estructura musical | Apache-2.0 | HuggingFace, múltiples runtimes (whisper.cpp, faster-whisper, vLLM) |
+| SynapseMusicV12-Transcriber (ACE-Step Transcriber) | 10,7B | No disponible | Transcripción de habla y canto con etiquetado estructural de canción | MIT | Hugging Face, safetensors, transformers |
+| Qwen2.5-Omni-7B | 7B (nominales) | No disponible en esta ficha | Modelo multimodal audio-texto-video de propósito general | Apache-2.0 | Hugging Face, transformers, ecosistema amplio (vLLM, etc.) |
+| Whisper large-v3 | 1,55B | 30 segundos por ventana en la práctica estándar | ASR multilingüe de habla; no orientado a canto ni a estructura musical | Apache-2.0 | Hugging Face, múltiples runtimes (whisper.cpp, faster-whisper, vLLM) |
 
 Nota: los datos de los modelos comparados no se han verificado mediante búsqueda web en esta consulta y deben confirmarse en sus respectivas model cards. La comparación de rendimiento no es posible porque SynapseMusicV12-Transcriber no publica métricas.
 
@@ -92,7 +92,7 @@ Nota: los datos de los modelos comparados no se han verificado mediante búsqued
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Transcriber
+- Modelo en Hugging Face: https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Transcriber
 - Tech report referenciado en la model card: https://arxiv.org/abs/2602.00744
 - Qwen2.5-Omni-7B, referencia de uso indicada por el autor: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 

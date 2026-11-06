@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Task_000668_chunk60_noise03_ACT_Intern es una politica de robotica (policy) basada en la arquitectura ACT (Action Chunking Transformer), publicada por el usuario Dongkkka en HuggingFace y generada con la herramienta Cyclo Intelligence de ROBOTIS. No se trata de un modelo de lenguaje: es un modelo de imitacion entrenado para ejecutar una tarea de manipulacion concreta, la numero 000668, a partir de demostraciones teleoperadas. El identificador del modelo codifica parte de su configuracion de entrenamiento: chunk de 60 acciones, ruido 0.3 y representacion de efector final de 16 dimensiones.
+Task_000668_chunk60_noise03_ACT_Intern es una politica de robotica (policy) basada en la arquitectura ACT (Action Chunking Transformer), publicada por el usuario Dongkkka en Hugging Face y generada con la herramienta Cyclo Intelligence de ROBOTIS. No se trata de un modelo de lenguaje: es un modelo de imitacion entrenado para ejecutar una tarea de manipulacion concreta, la numero 000668, a partir de demostraciones teleoperadas. El identificador del modelo codifica parte de su configuracion de entrenamiento: chunk de 60 acciones, ruido 0.3 y representacion de efector final de 16 dimensiones.
 
 El modelo se ha entrenado sobre el dataset robotis/task_000668_peanut_mix_augmented_eef16_trim20_100_vision_tuned_ev070_v30, que por su nomenclatura corresponde a una tarea de mezcla o manipulacion de cacahuetes (peanut_mix) con datos aumentados, recorte de 20 pasos y ajuste fino sobre vision. El repositorio ocupa 0,6 GB y contiene pesos en formato safetensors, lo que permite cargarlo con PyTorch o con el ecosistema LeRobot.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Task_000668_chunk60_noise03_ACT_Intern | ACT, tarea unica | no disponible | chunk de 60 acciones (segun identificador) | no disponible | HuggingFace, repositorio de 0,6 GB |
+| Task_000668_chunk60_noise03_ACT_Intern | ACT, tarea unica | no disponible | chunk de 60 acciones (segun identificador) | no disponible | Hugging Face, repositorio de 0,6 GB |
 | ACT original (Zhao et al., 2023) | ACT, codigo abierto | en torno a 80 millones (referencia publica) | chunk configurable | codigo abierto (MIT en el repositorio original) | GitHub y pesos de ejemplo publicos |
 | Diffusion Policy (Chi et al., 2023) | Politica por difusion | variable segun implementacion | horizonte de prediccion configurable | codigo abierto | GitHub con checkpoints de ejemplo |
-| Politicas VLA genericas (por ejemplo, OpenVLA o SmolVLA) | Vision-language-action | desde cientos de millones a miles de millones | ventana multimodal amplia | variables (MIT o Apache en varios casos) | HuggingFace |
+| Politicas VLA genericas (por ejemplo, OpenVLA o SmolVLA) | Vision-language-action | desde cientos de millones a miles de millones | ventana multimodal amplia | variables (MIT o Apache en varios casos) | Hugging Face |
 
 La comparacion es orientativa: este checkpoint no publica metricas, de modo que no puede establecerse una superioridad o inferioridad en rendimiento frente a las alternativas.
 
@@ -81,7 +81,7 @@ La comparacion es orientativa: este checkpoint no publica metricas, de modo que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000668_chunk60_noise03_ACT_Intern
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000668_chunk60_noise03_ACT_Intern
 - Dataset de entrenamiento: https://huggingface.co/datasets/robotis/task_000668_peanut_mix_augmented_eef16_trim20_100_vision_tuned_ev070_v30
 - Herramienta Cyclo Intelligence de ROBOTIS: https://github.com/ROBOTIS-GIT/cyclo_intelligence
 - Paper de ACT (Action Chunking Transformer): no disponible en la informacion proporcionada

@@ -4,7 +4,7 @@
 
 El repositorio `davis0116/knowledge-distillation-reading` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto estructurado de notas de investigación sobre destilación de conocimiento (*knowledge distillation*). Publicado por el usuario davis0116 bajo licencia CC-BY-4.0, el repositorio incluye un documento principal (`reading.md`) que recopila el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base emparejadas, referencias a benchmarks públicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
-A pesar de que los metadatos de HuggingFace incluyen las etiquetas `safetensors` y `transformer`, y se registran 16.576 parámetros totales, la model card aclara explícitamente que no se trata de un checkpoint entrenado ni de un modelo con capacidades de inferencia. El autor separa planes e hipótesis de resultados completados, y advierte que el contenido es exploratorio y no debe interpretarse como evidencia de mejoras de rendimiento. Por tanto, este repositorio es material de referencia para investigadores que deseen verificar o ampliar el estudio propuesto, no un artefacto desplegable.
+A pesar de que los metadatos de Hugging Face incluyen las etiquetas `safetensors` y `transformer`, y se registran 16.576 parámetros totales, la model card aclara explícitamente que no se trata de un checkpoint entrenado ni de un modelo con capacidades de inferencia. El autor separa planes e hipótesis de resultados completados, y advierte que el contenido es exploratorio y no debe interpretarse como evidencia de mejoras de rendimiento. Por tanto, este repositorio es material de referencia para investigadores que deseen verificar o ampliar el estudio propuesto, no un artefacto desplegable.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo de lenguaje ni un sistema de IA 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davis0116/knowledge-distillation-reading
+- Repositorio en Hugging Face: https://huggingface.co/davis0116/knowledge-distillation-reading
 - Articulo de Wikipedia sobre destilacion de conocimiento: https://en.wikipedia.org/wiki/Knowledge_distillation
 - Encuesta sobre destilacion de conocimiento en LLMs (arXiv): https://arxiv.org/html/2402.13116v1
 - Explicacion de destilacion de conocimiento en GeeksforGeeks: https://www.geeksforgeeks.org/machine-learning/knowledge-distillation/

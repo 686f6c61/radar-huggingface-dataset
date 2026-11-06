@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-DR-SFT-1k es un ajuste fino por SFT de parametros completos sobre Qwen3.5-4B, el modelo denso de 4B de la familia Qwen3.5 con base vision-lenguaje unificada. Lo publica boyanbiji (Boyan Li) en HuggingFace bajo licencia Apache 2.0, con 4.539.265.536 parametros reales en safetensors y un repositorio de 9,1 GB. El objetivo no es un asistente generalista, sino un agente de investigacion profunda (deep research) capaz de encadenar llamadas a herramientas de busqueda y visita web en multiples turnos y cerrar con un informe extenso con citas.
+Qwen3.5-4B-DR-SFT-1k es un ajuste fino por SFT de parametros completos sobre Qwen3.5-4B, el modelo denso de 4B de la familia Qwen3.5 con base vision-lenguaje unificada. Lo publica boyanbiji (Boyan Li) en Hugging Face bajo licencia Apache 2.0, con 4.539.265.536 parametros reales en safetensors y un repositorio de 9,1 GB. El objetivo no es un asistente generalista, sino un agente de investigacion profunda (deep research) capaz de encadenar llamadas a herramientas de busqueda y visita web en multiples turnos y cerrar con un informe extenso con citas.
 
 El entrenamiento usa 1.259 trayectorias de investigacion larga (mas 50 de validacion) que suman 68,7 M tokens y llegan a 131.072 tokens por fila. Las trayectorias se generaron con un profesor mucho mayor, Qwen3.5-122B-A10B en un arnes de lookahead, y los informes se revisaron por rubrica y se validaron en formato de citas sin violaciones estrictas. El resultado es un modelo pequeno, desplegable en una sola GPU de consumo, especializado en un flujo de trabajo concreto: buscar, visitar, sintetizar y citar.
 
@@ -99,7 +99,7 @@ Las variantes 2.5k, 5k y 8k del mismo autor emplean volumenes crecientes de tray
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-1k
+- Modelo en Hugging Face: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-1k
 - Variante 2.5k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-2.5k
 - Variante 5k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-5k
 - Variante 8k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-8k

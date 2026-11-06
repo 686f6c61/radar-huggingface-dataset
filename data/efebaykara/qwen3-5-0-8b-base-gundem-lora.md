@@ -77,8 +77,8 @@ En la comparacion GGUF incluida en la model card, la variante original obtiene u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-Base-Gundem-LoRA | 752 M (LoRA) | no disponible (entrenado a 512) | Clasificacion de titulares en turco | Apache 2.0 | HuggingFace, GGUF movil |
-| Qwen/Qwen3.5-0.8B-Base | 752 M | no disponible | Modelo base generalista | Apache 2.0 (upstream) | HuggingFace |
+| Qwen3.5-0.8B-Base-Gundem-LoRA | 752 M (LoRA) | no disponible (entrenado a 512) | Clasificacion de titulares en turco | Apache 2.0 | Hugging Face, GGUF movil |
+| Qwen/Qwen3.5-0.8B-Base | 752 M | no disponible | Modelo base generalista | Apache 2.0 (upstream) | Hugging Face |
 | Alternativas especializadas en clasificacion de noticias en turco | no disponible | no disponible | Clasificacion de texto | no disponible | no disponible |
 
 No se dispone de datos publicados de benchmarks de modelos comparables de la misma categoria en la informacion proporcionada. La comparacion con el modelo base solo es posible en terminos del Gundem Score v1: el base original obtiene 0.0 frente a 81.9 del adaptador, aunque esta metrica mide exclusivamente la concordancia con la tarea destilada y no es comparable con evaluaciones generalistas.
@@ -99,7 +99,7 @@ No se dispone de datos publicados de benchmarks de modelos comparables de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efebaykara/Qwen3.5-0.8B-Base-Gundem-LoRA
+- Modelo en Hugging Face: https://huggingface.co/efebaykara/Qwen3.5-0.8B-Base-Gundem-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Herramientas de entrenamiento y benchmark: https://github.com/efebaykaraa/gundem-llms
 - Modelos publicados (release models-v1.0.0): https://github.com/efebaykaraa/gundem-llms/releases/tag/models-v1.0.0

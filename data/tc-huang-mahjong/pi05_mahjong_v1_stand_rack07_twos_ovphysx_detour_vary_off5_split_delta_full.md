@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (pi05 mahjong SO-101) | no disponible | no disponible | Manipulacion de mahjong en simulacion | Gemma | HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible | no disponible | VLA general base para ajuste fino | Gemma | HuggingFace |
-| Otros checkpoints del mismo autor (`detour`, `vary`, `off5`) | no disponible | no disponible | Variantes de la misma tarea | Gemma | HuggingFace |
+| Este modelo (pi05 mahjong SO-101) | no disponible | no disponible | Manipulacion de mahjong en simulacion | Gemma | Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible | no disponible | VLA general base para ajuste fino | Gemma | Hugging Face |
+| Otros checkpoints del mismo autor (`detour`, `vary`, `off5`) | no disponible | no disponible | Variantes de la misma tarea | Gemma | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parametros para establecer una comparacion cuantitativa con alternativas como OpenVLA u Octo.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de parametros para establecer una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_delta_full
+- Modelo en Hugging Face: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5_split_delta_full
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/tc-huang-mahjong/mahjong_v1_stand_rack07_twos_ovphysx_detour_vary_off5
 - Codigo del experimento: https://github.com/tc-huang/mahjong-lab/tree/f3fbc1b5f214b87c4a426e05146162ae1cdab9c8

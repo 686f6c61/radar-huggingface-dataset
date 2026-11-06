@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks de conocimiento, razonamiento ni co
 
 | Modelo | Parametros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r06` | 6.738.415.616 (fraccion densa 0,7999) | no disponible (base: 4096 tokens) | AdvBench 0,0200; StrongREJECT 0,0400 | Llama 2 Community License | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6.738.415.616 | 4096 tokens | no disponible en la informacion proporcionada | Llama 2 Community License | HuggingFace |
+| `Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r06` | 6.738.415.616 (fraccion densa 0,7999) | no disponible (base: 4096 tokens) | AdvBench 0,0200; StrongREJECT 0,0400 | Llama 2 Community License | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `meta-llama/Llama-2-7b-chat-hf` (modelo base) | 6.738.415.616 | 4096 tokens | no disponible en la informacion proporcionada | Llama 2 Community License | Hugging Face |
 | Otros brazos del grid SVD-safety (otras reglas y presupuestos) | no disponible | no disponible | no disponible | Llama 2 Community License | referenciados en la model card como celdas del mismo grid |
 
 No se dispone de datos suficientes en la informacion proporcionada para comparar con alternativas de la misma categoria (por ejemplo, otros metodos de compresion de LLM o modelos de 7B alineados) en parametros, contexto, rendimiento o licencia.
@@ -105,7 +105,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r06
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo: los resultados obtenidos corresponden a cotizaciones bursatiles de la empresa 2CRSi (Euronext Paris) y no guardan relacion con el checkpoint.
 - No se proporcionan enlaces al paper o al repositorio de SVD-LLM en la informacion disponible.

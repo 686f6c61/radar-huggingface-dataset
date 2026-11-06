@@ -73,10 +73,10 @@ Tareas evaluadas: LAMBADA, ARC-Easy, PIQA, SciQ, HellaSwag y WinoGrande. Resulta
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rondo-Exp | 352 M | 2.048 | Difusión enmascarada | Apache 2.0 | HuggingFace (0 descargas al publicar) |
-| Monody-Exp | ≈352 M (mismo entrenamiento) | 2.048 | Siguiente token | no indicada en esta fuente | HuggingFace |
-| SmolLM2-360M (referencia externa) | ≈362 M | 8.192 | Siguiente token, instruct | Apache 2.0 | HuggingFace |
-| Pythia-410M (referencia externa) | ≈410 M | 2.048 | Siguiente token, base | Apache 2.0 | HuggingFace |
+| Rondo-Exp | 352 M | 2.048 | Difusión enmascarada | Apache 2.0 | Hugging Face (0 descargas al publicar) |
+| Monody-Exp | ≈352 M (mismo entrenamiento) | 2.048 | Siguiente token | no indicada en esta fuente | Hugging Face |
+| SmolLM2-360M (referencia externa) | ≈362 M | 8.192 | Siguiente token, instruct | Apache 2.0 | Hugging Face |
+| Pythia-410M (referencia externa) | ≈410 M | 2.048 | Siguiente token, base | Apache 2.0 | Hugging Face |
 
 Los datos de SmolLM2-360M y Pythia-410M provienen de conocimiento público general y no de la información proporcionada en esta ficha; sus resultados de benchmarks no se incluyen aquí. La comparación relevante para Rondo-Exp es Monody-Exp, que comparte datos, presupuesto y ajustes de optimizador: la diferencia de 0,8 puntos en la media zero-shot (44,8 % frente a 45,6 %) y la menor brecha de validación (0,13 frente a 1,59) son los dos ejes del experimento.
 
@@ -95,7 +95,7 @@ Los datos de SmolLM2-360M y Pythia-410M provienen de conocimiento público gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KerzgrAI/Rondo-Exp
+- Modelo en Hugging Face: https://huggingface.co/KerzgrAI/Rondo-Exp
 - Gemelo autorregresivo Monody-Exp: https://huggingface.co/KerzgrAI/Monody-Exp
 - Dataset de entrenamiento FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Librería flash-linear-attention (dependencia de inferencia, referenciada en la model card): https://github.com/fla-org/flash-linear-attention

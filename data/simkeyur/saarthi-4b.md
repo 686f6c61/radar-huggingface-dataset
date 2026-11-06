@@ -68,5 +68,5 @@ No se han identificado modelos comparables en la información disponible. Saarth
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/simkeyur/Saarthi-4B
+- Hugging Face: https://huggingface.co/simkeyur/Saarthi-4B
 - Sitio web: https://gitagyan.in (mencionado en la model card)

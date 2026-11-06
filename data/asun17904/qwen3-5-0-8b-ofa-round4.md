@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-OFA-Round4 es un checkpoint intermedio de calibración "once-for-all" (OFA) del backbone de texto de Qwen/Qwen3.5-0.8B, publicado por el usuario asun17904 en HuggingFace. No se trata de un modelo conversacional pensado para producción, sino de un artefacto de investigación orientado a estudiar la reutilización de cabezas de atención, MLPs y capas congeladas dentro de grafos computacionales modificados. El modelo conserva la arquitectura estándar de 24 capas del modelo base y se carga como un `Qwen3_5ForCausalLM` convencional sin código remoto.
+Qwen3.5-0.8B-OFA-Round4 es un checkpoint intermedio de calibración "once-for-all" (OFA) del backbone de texto de Qwen/Qwen3.5-0.8B, publicado por el usuario asun17904 en Hugging Face. No se trata de un modelo conversacional pensado para producción, sino de un artefacto de investigación orientado a estudiar la reutilización de cabezas de atención, MLPs y capas congeladas dentro de grafos computacionales modificados. El modelo conserva la arquitectura estándar de 24 capas del modelo base y se carga como un `Qwen3_5ForCausalLM` convencional sin código remoto.
 
 El checkpoint contiene 752.393.024 parámetros únicos del modelo de lenguaje y corresponde a la ronda 4 de un currículo planificado de 10 rondas y 5.000 actualizaciones de optimizador; esta release concreta acumula 2.000 actualizaciones y 196.608.000 objetivos de entrenamiento puntuados. La inicialización parte del modelo upstream post-entrenado y el objetivo es negative log likelihood de siguiente token sobre un flujo empaquetado de Dolma en inglés, retokenizado con el tokenizador de Qwen.
 
@@ -84,7 +84,7 @@ La comparación directa con modelos de producción no es significativa: este che
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round4
+- Modelo en Hugging Face: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Receta de entrenamiento: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round4/blob/main/recipe.json
 - Procedencia: https://huggingface.co/asun17904/Qwen3.5-0.8B-OFA-Round4/blob/main/provenance.json

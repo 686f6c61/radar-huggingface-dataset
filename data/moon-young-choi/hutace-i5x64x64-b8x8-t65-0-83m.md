@@ -94,7 +94,7 @@ No se dispone de información sobre los parámetros exactos de los modelos PPO c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Moon-Young-Choi/HUTACE-I5x64x64-B8x8-T65-0.83M
+- Repositorio Hugging Face: https://huggingface.co/Moon-Young-Choi/HUTACE-I5x64x64-B8x8-T65-0.83M
 - Demo 3D interactiva: https://huggingface.co/spaces/Moon-Young-Choi/HUTACE-3D-Explorer
 - Dataset benchmark congelado: https://huggingface.co/datasets/Moon-Young-Choi/HUTACE_Mapzen_Benchmark
 - Fuente de datos de terreno (Mapzen Terrain Tiles): https://registry.opendata.aws/terrain-tiles/

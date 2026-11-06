@@ -33,7 +33,7 @@ No se dispone de información sobre el proceso de entrenamiento del modelo base 
 - Razonamiento matemático: resultados en GSM8K (5-shot) con una precisión flexible de 0,5906 y estricta de 0,6058.
 - Conocimiento general: resultados parciales en MMLU Pro (solo primeras 20 preguntas de 14 categorías) con una media de 0,7286.
 - Generación de código: el autor reporta que el modelo construyó un sitio web de prueba en un solo intento, indicando que las capacidades de programación se mantienen tras la cuantización.
-- Conversación: etiquetado como "conversational" en HuggingFace, apto para diálogos multi-turno.
+- Conversación: etiquetado como "conversational" en Hugging Face, apto para diálogos multi-turno.
 - No se ha probado con tool calling, agentes o entradas de imagen (según el autor).
 - Soporte de cuantización imatrix para mejorar la calidad en GGUF.
 
@@ -93,6 +93,6 @@ No se dispone de comparativas con otros modelos MoE de tamaño similar (por ejem
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MicroFlare/microFlare-v1)
+- [Modelo en Hugging Face](https://huggingface.co/MicroFlare/microFlare-v1)
 - [Blog post del autor](https://microflare.bearblog.dev/introducing-microflare-v1)
 - [Modelo base Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B) (referencia)

@@ -5,7 +5,7 @@ Este repositorio contiene un ajuste fino con LoRA del modelo de visión-lenguaje
 
 El entrenamiento parte de un PI0.5 JAX base (XinY0201/openpi-pi05-base-jax) y se ha realizado sobre el dataset Shiki42/PutCab-Concurrent-Train100-V4, compuesto por 100 episodios y 22.421 fotogramas a 16,67 FPS, con estado y acciones absolutos de 14 dimensiones y tres vistas RGB nativas redimensionadas a 224x224. Se ejecutaron 10.000 actualizaciones con batch global 16 en dos GPU H100 de 80 GB, con LoRA de rango/alfa 16 en la torre PaliGemma y rango 32 en el experto de acciones.
 
-Su relevancia es doble: por un lado, documenta un flujo de trabajo reproducible de ajuste eficiente (LoRA) sobre un modelo fundacional de robótica en JAX, con manifiestos, hashes de parámetros y registros de configuración; por otro, es un ejemplo del tipo de adaptaciones de dominio que hoy se publican en HuggingFace. Como contrapartida, el autor no reclama ninguna tasa de éxito en rollout cerrado y el repositorio no incluye el estado del optimizador, por lo que no es un artefacto listo para producción sin validación propia.
+Su relevancia es doble: por un lado, documenta un flujo de trabajo reproducible de ajuste eficiente (LoRA) sobre un modelo fundacional de robótica en JAX, con manifiestos, hashes de parámetros y registros de configuración; por otro, es un ejemplo del tipo de adaptaciones de dominio que hoy se publican en Hugging Face. Como contrapartida, el autor no reclama ninguna tasa de éxito en rollout cerrado y el repositorio no incluye el estado del optimizador, por lo que no es un artefacto listo para producción sin validación propia.
 
 ## Especificaciones técnicas
 
@@ -87,7 +87,7 @@ La información disponible no permite establecer una comparación cuantitativa c
 - La fecha de creación del repositorio en los metadatos (2026-09-12) es posterior a la fecha habitual de publicación; conviene verificarla antes de citarla.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-putcab-concurrent-train100-v4-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-putcab-concurrent-train100-v4-lora-10k
 - Checkpoint base PI0.5 JAX: https://huggingface.co/XinY0201/openpi-pi05-base-jax (commit `5e62884fcf8cb8f9fc693c9163ea18d3e3739658`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/PutCab-Concurrent-Train100-V4 (revisión `b58185f37ad1075bdbcf97a145478ca4517248eb`)
 - Configuración de entrenamiento y artefactos de reproducibilidad: ruta `10000/experiment/` dentro del propio repositorio del modelo

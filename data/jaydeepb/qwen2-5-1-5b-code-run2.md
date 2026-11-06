@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-1.5b-code-run2 (este) | 1,54 B | No declarado (base: 32.768) | Artefacto de investigación sobre memorización | Apache 2.0 | HuggingFace, 0 descargas |
+| qwen2.5-1.5b-code-run2 (este) | 1,54 B | No declarado (base: 32.768) | Artefacto de investigación sobre memorización | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen2.5-1.5B (base) | 1,54 B | 32.768 | Modelo generalista preentrenado | Apache 2.0 | Ampliamente desplegado |
 | Qwen2.5-Coder-1.5B | ~1,5 B | 32.768 | Generación de código con ajuste específico | Apache 2.0 | Muy usado en tooling de código |
 | Llama-3.2-1B | ~1,24 B | 131.072 | Modelo generalista pequeño, instruction-tuned en su variante Instruct | Licencia comunitaria Llama 3.2 | Amplia, con restricciones de uso |
@@ -92,7 +92,7 @@ Frente a las alternativas, este checkpoint no compite en calidad: no está instr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/qwen2.5-1.5b-code-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/qwen2.5-1.5b-code-run2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de ajuste (The Stack, código): https://huggingface.co/datasets/bigcode/the-stack
 - Paper de referencia: *Predicting Memorization Before Fine-Tuning Language Models* (citado en la model card; no se ha encontrado enlace en la información proporcionada)

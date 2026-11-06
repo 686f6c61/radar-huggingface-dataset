@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-ASR es un modelo de reconocimiento automatico de voz (ASR) basado en la familia Qwen3 de Alibaba, publicado en HuggingFace por el usuario lr298977887 en formato GGUF. Con aproximadamente 2.349 millones de parametros (2,35 B), se situa en la gama de modelos ligeros, lo que permite su ejecucion en hardware de consumo. Su proposito es transcribir audio a texto, una tarea en la que los modelos de la familia Qwen han mostrado buen desempeno gracias a su entrenamiento multilingue a gran escala.
+Qwen3-ASR es un modelo de reconocimiento automatico de voz (ASR) basado en la familia Qwen3 de Alibaba, publicado en Hugging Face por el usuario lr298977887 en formato GGUF. Con aproximadamente 2.349 millones de parametros (2,35 B), se situa en la gama de modelos ligeros, lo que permite su ejecucion en hardware de consumo. Su proposito es transcribir audio a texto, una tarea en la que los modelos de la familia Qwen han mostrado buen desempeno gracias a su entrenamiento multilingue a gran escala.
 
 La version distribuida en este repositorio esta cuantizada en GGUF, un formato pensado para inferencia local con runtimes como llama.cpp, lo que lo hace atractivo para despliegues sin dependencia de la nube. El modelo se publica bajo licencia AGPL-3.0, una licencia de copyleft fuerte que impone obligaciones importantes a quien lo integre en servicios ofrecidos a terceros.
 
@@ -80,6 +80,6 @@ Nota: la comparativa se basa en datos publicos generales de los modelos alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lr298977887/Qwen3-ASR
-- Organizacion oficial de Qwen en HuggingFace (recurso recomendado para documentacion de la familia Qwen3): https://huggingface.co/Qwen
+- Repositorio en Hugging Face: https://huggingface.co/lr298977887/Qwen3-ASR
+- Organizacion oficial de Qwen en Hugging Face (recurso recomendado para documentacion de la familia Qwen3): https://huggingface.co/Qwen
 - No se han encontrado enlaces a papers, blogs, demos ni repositorios adicionales en la informacion disponible.

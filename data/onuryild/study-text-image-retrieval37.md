@@ -6,7 +6,7 @@
 
 El repositorio incluye los archivos `paper_notes.md` (artefacto principal) y `README.md`. Los temas cubiertos son el alcance de la pregunta de investigación y sus posibles factores de confusión, una comparación propuesta con líneas base emparejadas, contexto de evaluación concreto (Flickr30k y MS COCO Captions), comprobaciones de reproducibilidad, modos de fallo y referencias temáticas.
 
-Los metadatos de HuggingFace declaran el tag `transformer` y un total de 33.088 parámetros en formato safetensors, además de los tags `research-notes` y `text-image-retrieval`. Es relevante únicamente como material de planificación metodológica para quien trabaje en recuperación multimodal, no como artefacto desplegable: cero descargas, cero likes y un tamaño de repositorio de 0,0 GB.
+Los metadatos de Hugging Face declaran el tag `transformer` y un total de 33.088 parámetros en formato safetensors, además de los tags `research-notes` y `text-image-retrieval`. Es relevante únicamente como material de planificación metodológica para quien trabaje en recuperación multimodal, no como artefacto desplegable: cero descargas, cero likes y un tamaño de repositorio de 0,0 GB.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No hay datos comparativos en la información proporcionada, y el repositorio no 
 | Contexto | No disponible | No disponible en la información proporcionada |
 | Rendimiento en benchmarks | No publicado | No disponible en la información proporcionada |
 | Licencia | MIT (solo sobre las notas) | No disponible; verificar en cada model card original |
-| Disponibilidad | Repositorio de texto en HuggingFace | No disponible en la información proporcionada |
+| Disponibilidad | Repositorio de texto en Hugging Face | No disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No hay datos comparativos en la información proporcionada, y el repositorio no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/onuryild/study-text-image-retrieval37
+- Repositorio en Hugging Face: https://huggingface.co/onuryild/study-text-image-retrieval37
 - Artefacto principal dentro del repositorio: `paper_notes.md`
 - Documentación del repositorio: `README.md`
 - Búsqueda web realizada: no se han encontrado enlaces relevantes al modelo, paper, repositorio de código ni demo. Los resultados devueltos corresponden a portales administrativos sin relación con el artefacto.

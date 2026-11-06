@@ -105,8 +105,8 @@ El autor advierte que son pruebas de capacidad y de tiempos separadas, no una ca
 
 | Modelo | Parametros | Contexto | JevBench publico (231) | Kev-v9 clean (1.046) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Winnow-12B BF16 | ~11,9B | 65.536 posiciones | 85,28% | 81,45% | Apache 2.0 | Pesos GGUF en HuggingFace |
-| Winnow-12B Q8 | ~11,9B | 65.536 posiciones | 85,71% | 81,55% | Apache 2.0 | Pesos GGUF en HuggingFace |
+| Winnow-12B BF16 | ~11,9B | 65.536 posiciones | 85,28% | 81,45% | Apache 2.0 | Pesos GGUF en Hugging Face |
+| Winnow-12B Q8 | ~11,9B | 65.536 posiciones | 85,71% | 81,55% | Apache 2.0 | Pesos GGUF en Hugging Face |
 | Jev 1.13 | no disponible | no disponible | 85,71% | 87,00% | no disponible | Servido via OpenRouter |
 
 La model card menciona tambien a Kev (cuyo benchmark, Kev-v9 clean, se usa como suite de evaluacion) y a Laya en el pie de una de las figuras, pero no se aportan especificaciones ni resultados de esos modelos en la informacion disponible, por lo que no se incluyen en la tabla. No se dispone de comparativas frente al modelo base google/gemma-4-12B-it en las mismas suites.
@@ -126,7 +126,7 @@ La model card menciona tambien a Kev (cuyo benchmark, Kev-v9 clean, se usa como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EldanRing/Winnow-12B
+- Modelo en Hugging Face: https://huggingface.co/EldanRing/Winnow-12B
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Descarga Winnow-12B-Q8_0.gguf: https://huggingface.co/EldanRing/Winnow-12B/resolve/main/gguf/Winnow-12B-Q8_0.gguf?download=true
 - Descarga Winnow-12B-BF16.gguf: https://huggingface.co/EldanRing/Winnow-12B/resolve/main/gguf/Winnow-12B-BF16.gguf?download=true

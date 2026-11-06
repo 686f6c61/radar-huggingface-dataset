@@ -91,9 +91,9 @@ No se han publicado en la informacion disponible los resultados desglosados de R
 
 | Modelo | Parametros | Contexto | VRSBench Overall | Grounding Mean IoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SatQuery InternVL3.5-1B Epoch-2 (este) | 1,07 B base + adaptador de 10,09 M | no disponible | 43,55 % | 0,4786 | other | HuggingFace, adaptador PEFT |
-| InternVL3.5-1B-Instruct zero-shot | 1,07 B | no disponible | 30,28 % | 0,0434 | no disponible en esta informacion | HuggingFace (OpenGVLab) |
-| SatQuery Epoch-3 (mismo autor) | 1,07 B base + adaptador | no disponible | 42,69 % | 0,4799 | other | HuggingFace |
+| SatQuery InternVL3.5-1B Epoch-2 (este) | 1,07 B base + adaptador de 10,09 M | no disponible | 43,55 % | 0,4786 | other | Hugging Face, adaptador PEFT |
+| InternVL3.5-1B-Instruct zero-shot | 1,07 B | no disponible | 30,28 % | 0,0434 | no disponible en esta informacion | Hugging Face (OpenGVLab) |
+| SatQuery Epoch-3 (mismo autor) | 1,07 B base + adaptador | no disponible | 42,69 % | 0,4799 | other | Hugging Face |
 
 No se dispone de datos comparativos con otros VLMs de teledeteccion (por ejemplo alternativas alojadas por otros autores en el ecosistema SatQuery) mas alla de lo listado en la busqueda web, donde no se publican parametros, contexto ni metricas. Cualquier comparacion con modelos de mayor tamano requeriria evaluacion propia.
 
@@ -114,7 +114,7 @@ No se dispone de datos comparativos con otros VLMs de teledeteccion (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praneyaarora/satquery-internvl35-1b-epoch2-lora
+- Modelo en Hugging Face: https://huggingface.co/Praneyaarora/satquery-internvl35-1b-epoch2-lora
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3_5-1B-Instruct
 - Adaptador relacionado del ecosistema: https://huggingface.co/raja0007/satquery-satellite-vlm
 - Demo SatQuery AI: https://satquery-iota.vercel.app/

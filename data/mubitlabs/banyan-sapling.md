@@ -101,7 +101,7 @@ La diferencia práctica frente al modelo base y frente a un LLM como juez es la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MubitLabs/banyan-sapling
+- Modelo en Hugging Face: https://huggingface.co/MubitLabs/banyan-sapling
 - Modelo base Qwen3-30B-A3B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Guía de pesos e inferencia (dentro del repo): https://huggingface.co/MubitLabs/banyan-sapling/blob/main/docs/weights.md
 - Informe de evaluación (dentro del repo): https://huggingface.co/MubitLabs/banyan-sapling/blob/main/docs/results.md

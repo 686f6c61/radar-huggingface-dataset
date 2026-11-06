@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`pi0_nero_books153_v6_lora` es un checkpoint publicado en HuggingFace por el usuario `tancilon`. Según la model card, se trata de un checkpoint completo de OpenPI procedente del run `books153_full`, en el paso de entrenamiento 30000. El archivo conserva el directorio `30000/` completo, con `params/`, `assets/`, `train_state/` y `_CHECKPOINT_METADATA`, empaquetado en un tar.gz de 9,5 GB y 41 ficheros.
+`pi0_nero_books153_v6_lora` es un checkpoint publicado en Hugging Face por el usuario `tancilon`. Según la model card, se trata de un checkpoint completo de OpenPI procedente del run `books153_full`, en el paso de entrenamiento 30000. El archivo conserva el directorio `30000/` completo, con `params/`, `assets/`, `train_state/` y `_CHECKPOINT_METADATA`, empaquetado en un tar.gz de 9,5 GB y 41 ficheros.
 
 El nombre y el tag `openpi` sugieren un ajuste LoRA sobre un modelo de la familia pi0, orientada a políticas vision-language-action (VLA), pero la model card no confirma la arquitectura del modelo base, el dataset utilizado, la licencia ni las capacidades resultantes. Tampoco se documentan hiperparámetros de entrenamiento, evaluación o benchmarks.
 

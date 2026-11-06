@@ -68,7 +68,7 @@ No disponible. No se ha publicado informacion que permita comparar este modelo c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_a80bd7_model_12
+- Modelo en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_a80bd7_model_12
 - Sitio de Hugging Face: https://huggingface.co/
 - Documentacion del CLI de Hugging Face: https://huggingface.co/docs/huggingface_hub/guides/cli
 - Foro de Hugging Face sobre cache en filesystem de solo lectura: https://discuss.huggingface.co/t/cannot-use-hugging-face-cache-on-a-read-only-filesystem/137622

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10` es un modelo de generación de texto de 3.085.938.688 parámetros publicado en HuggingFace por el usuario `ishikaa`. Los metadatos indican que utiliza la librería `transformers` y que sus pesos se distribuyen en formato `safetensors`. El nombre del repositorio sugiere que se trata de un ajuste fino de una variante Qwen de 3.000 millones de parámetros (el tag `qwen2` apunta a la familia Qwen2), posiblemente sobre un dataset relacionado con el proyecto Numina, aunque no existe documentación que lo confirme.
+`ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10` es un modelo de generación de texto de 3.085.938.688 parámetros publicado en Hugging Face por el usuario `ishikaa`. Los metadatos indican que utiliza la librería `transformers` y que sus pesos se distribuyen en formato `safetensors`. El nombre del repositorio sugiere que se trata de un ajuste fino de una variante Qwen de 3.000 millones de parámetros (el tag `qwen2` apunta a la familia Qwen2), posiblemente sobre un dataset relacionado con el proyecto Numina, aunque no existe documentación que lo confirme.
 
 La model card es una plantilla generada automáticamente, sin información sobre el desarrollador, la licencia, los datos de entrenamiento ni las capacidades. El modelo no registra descargas ni likes, y no se han publicado resultados de evaluación. Su relevancia actual es limitada, ya que la ausencia de especificaciones técnicas y de benchmarks impide valorar su rendimiento o su idoneidad para entornos de producción.
 
@@ -68,6 +68,6 @@ Los dos modelos adicionales pertenecen al mismo autor y siguen una nomenclatura 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen3b_10
 - Modelo relacionado: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_numina_qwen7b
 - Modelo relacionado: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_combined_qwen7b

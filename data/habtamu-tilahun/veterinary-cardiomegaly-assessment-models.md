@@ -69,5 +69,5 @@ No se dispone de información sobre otros modelos públicos específicos para es
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Habtamu-Tilahun/veterinary-cardiomegaly-assessment-models](https://huggingface.co/Habtamu-Tilahun/veterinary-cardiomegaly-assessment-models)
+- Repositorio Hugging Face: [Habtamu-Tilahun/veterinary-cardiomegaly-assessment-models](https://huggingface.co/Habtamu-Tilahun/veterinary-cardiomegaly-assessment-models)
 - Artículo científico (DOI): [10.3389/fvets.2025.1612338](https://doi.org/10.3389/fvets.2025.1612338)

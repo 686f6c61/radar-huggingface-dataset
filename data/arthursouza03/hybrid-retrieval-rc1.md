@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hybrid for Retrieval (identificador `Arthursouza03/hybrid-retrieval-rc1`) es una implementación experimental de una arquitectura híbrida orientada a tareas de recuperación (retrieval), publicada por el usuario Arthursouza03 en HuggingFace. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que la variante `base` es un punto de partida reproducible, no un modelo con resultados de benchmark.
+Hybrid for Retrieval (identificador `Arthursouza03/hybrid-retrieval-rc1`) es una implementación experimental de una arquitectura híbrida orientada a tareas de recuperación (retrieval), publicada por el usuario Arthursouza03 en Hugging Face. No se trata de un modelo entrenado ni de un release con pesos listos para producción: el propio autor indica que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que la variante `base` es un punto de partida reproducible, no un modelo con resultados de benchmark.
 
 El repositorio incluye el código del modelo con un punto de entrada ejecutable (`eval.py`), un fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y el mencionado checkpoint de inicialización. La arquitectura declarada es de tipo "Hybrid", con atención estándar, fusión mediante descomposición de Tucker, activación gelu-tanh y normalización RMSNorm. Según el dato de safetensors, el total de parámetros es de 33.088, lo que lo sitúa en una escala extremadamente reducida, muy alejada de los grandes modelos de retrieval neuronales actuales.
 
@@ -75,4 +75,4 @@ No disponible. No se han proporcionado en la información modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arthursouza03/hybrid-retrieval-rc1
+- Hugging Face: https://huggingface.co/Arthursouza03/hybrid-retrieval-rc1

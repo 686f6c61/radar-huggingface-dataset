@@ -87,7 +87,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/curvenet.shapenetpart.tiange-xiang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/curvenet.shapenetpart.tiange-xiang
 - Paper (arXiv): https://arxiv.org/abs/2105.01288
 - Repositorio original CurveNet: https://github.com/tiangexiang/CurveNet
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

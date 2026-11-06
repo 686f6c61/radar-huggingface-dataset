@@ -94,7 +94,7 @@ La diferencia principal frente al checkpoint original de DSFSI es el formato (ON
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-yor-eng-onnx
+- Hugging Face: https://huggingface.co/TigreGotico/nllb_200_distilled_600m-yor-eng-onnx
 - Modelo base: https://huggingface.co/dsfsi/nllb_200_distilled_600m-yor-eng
 - Modelo original NLLB-200 distilled: https://huggingface.co/facebook/nllb-200-distilled-600M
 - Repositorio de scripts de exportación y cuantización: https://github.com/TigreGotico/linguonnx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3 es un modelo de lenguaje generativo de muy pequeño tamaño, desarrollado por el usuario de HuggingFace Lanni-ni. Se trata de un experimento de investigación sobre mecanismos de atención con sesgos lineales dinámicos (ALiBi), entrenado presuntamente sobre el corpus BabyLM para el estudio de modelos con datos limitados. Con 27,4 millones de parámetros y pesos en formato safetensors, su arquitectura está orientada a explorar la extrapolación de longitud de contexto en modelos diminutos.
+Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3 es un modelo de lenguaje generativo de muy pequeño tamaño, desarrollado por el usuario de Hugging Face Lanni-ni. Se trata de un experimento de investigación sobre mecanismos de atención con sesgos lineales dinámicos (ALiBi), entrenado presuntamente sobre el corpus BabyLM para el estudio de modelos con datos limitados. Con 27,4 millones de parámetros y pesos en formato safetensors, su arquitectura está orientada a explorar la extrapolación de longitud de contexto en modelos diminutos.
 
 El modelo forma parte de una serie de experimentos con distintas configuraciones y épocas de entrenamiento, como la variante epoch8 disponible también en el Hub. Su relevancia actual radica en que permite evaluar el impacto de la dinámica de ALiBi en la capacidad de generalizar a secuencias más largas, sin necesidad de infraestructura costosa. La model card, sin embargo, no proporciona información técnica detallada, por lo que gran parte de los datos de especificación no están disponibles.
 
@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3 | 27,4M | no disponible | no disponible | HuggingFace |
-| dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 | 27,4M | no disponible | no disponible | HuggingFace |
+| dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3 | 27,4M | no disponible | no disponible | Hugging Face |
+| dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8 | 27,4M | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría con datos contrastables.
 
@@ -77,7 +77,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch3
 - Variante epoch8 del mismo autor: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch8
 - Página personal del autor: https://lanni-ni.github.io/
 - Paper de ALiBi (arXiv:1910.09700): https://arxiv.org/abs/1910.09700

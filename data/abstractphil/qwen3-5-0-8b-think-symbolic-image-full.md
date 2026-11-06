@@ -87,8 +87,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace (full fine-tune): https://huggingface.co/AbstractPhil/qwen3.5-0.8b-think-symbolic-image-full
-- HuggingFace (adaptador LoRA): https://huggingface.co/AbstractPhil/qwen3.5-0.8b-think-symbolic-image
+- Hugging Face (full fine-tune): https://huggingface.co/AbstractPhil/qwen3.5-0.8b-think-symbolic-image-full
+- Hugging Face (adaptador LoRA): https://huggingface.co/AbstractPhil/qwen3.5-0.8b-think-symbolic-image
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de captions: https://huggingface.co/datasets/AbstractPhil/thought-symbolic-image-captions
 - Dataset de entrenamiento: https://huggingface.co/datasets/AbstractPhil/qwen-symbolic-thinking-image-training

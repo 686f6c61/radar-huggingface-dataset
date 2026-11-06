@@ -6,7 +6,7 @@ NOESIS-Qwen3-TTS-1.7B-Talker-Combo-LLM2-ASR2-BF16 es un paquete de pesos y adapt
 
 El modelo resuelve un problema muy concreto: servir como ruta especialista y de respaldo dentro de un enrutador de voces multilingue (Voice Router-Swap) que necesita cubrir 112 idiomas sin fusionar todos los adaptadores en un unico checkpoint. La estrategia del autor consiste en mantener un adaptador LoRA por familia linguistica y conmutarlo en funcion del idioma de cada segmento de audio, en lugar de consolidar todos los adaptadores, una decision sellada bajo la regla interna R-TALKER-112LANG-PER-FAMILY-SWAP-NOT-MERGE-2026-06-11.
 
-Es relevante ahora porque aborda dos necesidades practicas del sector: clonacion de voz zero-shot multilingue y despliegue con huella de memoria reducida (los pesos en BF16 ocupan unos 3,86 GB teoricos), lo que permite ejecutarlo en GPU de consumo. Su publicacion es muy reciente (17 de septiembre de 2026, segun los metadatos de HuggingFace) y no registra descargas ni valoraciones en el momento de redactar esta ficha.
+Es relevante ahora porque aborda dos necesidades practicas del sector: clonacion de voz zero-shot multilingue y despliegue con huella de memoria reducida (los pesos en BF16 ocupan unos 3,86 GB teoricos), lo que permite ejecutarlo en GPU de consumo. Su publicacion es muy reciente (17 de septiembre de 2026, segun los metadatos de Hugging Face) y no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NOESIS-Qwen3-TTS-1.7B-Talker-Combo-LLM2-ASR2-BF16 | 1,93 B | no disponible | 112 declarados | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 (indicada como licencia del upstream en la model card) | HuggingFace, modelo publico de Qwen Team / Alibaba |
-| FINAL-Bench/Darwin-TTS-1.7B-Cross | no disponible | no disponible | no disponible | no disponible | HuggingFace, referenciado como base del fine-tune |
-| Qwen/Qwen3-1.7B | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen3-ASR-1.7B | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| NOESIS-Qwen3-TTS-1.7B-Talker-Combo-LLM2-ASR2-BF16 | 1,93 B | no disponible | 112 declarados | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 (indicada como licencia del upstream en la model card) | Hugging Face, modelo publico de Qwen Team / Alibaba |
+| FINAL-Bench/Darwin-TTS-1.7B-Cross | no disponible | no disponible | no disponible | no disponible | Hugging Face, referenciado como base del fine-tune |
+| Qwen/Qwen3-1.7B | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen3-ASR-1.7B | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas, por lo que la comparativa se limita a parametros, licencia y disponibilidad. La busqueda web realizada no aporto informacion adicional sobre modelos comparables de sintesis de voz.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeeAeron/NOESIS-Qwen3-TTS-1.7B-Talker-Combo-LLM2-ASR2-BF16
+- Modelo en Hugging Face: https://huggingface.co/LeeAeron/NOESIS-Qwen3-TTS-1.7B-Talker-Combo-LLM2-ASR2-BF16
 - Qwen3-TTS (repositorio oficial de la familia): https://github.com/QwenLM/Qwen3-TTS
 - Qwen/Qwen3-TTS-12Hz-1.7B-Base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

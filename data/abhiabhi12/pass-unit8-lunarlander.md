@@ -98,7 +98,7 @@ Nota: los modelos de lenguaje comparables (Llama, Mistral, Qwen, etc.) no son al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhiabhi12/pass-unit8-lunarlander
+- Hugging Face: https://huggingface.co/Abhiabhi12/pass-unit8-lunarlander
 - Framework de entrenamiento (Sample-Factory): https://github.com/alex-petrenko/sample-factory
 - Paper de PPO (Schulman et al., 2017): https://arxiv.org/abs/1707.06347
 - Entorno LunarLander (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

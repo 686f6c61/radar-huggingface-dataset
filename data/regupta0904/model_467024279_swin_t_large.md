@@ -76,6 +76,6 @@ No se dispone de información para comparar este modelo con alternativas de la m
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/regupta0904/model_467024279_swin_t_large)
+- [Repositorio Hugging Face](https://huggingface.co/regupta0904/model_467024279_swin_t_large)
 - [Documentación de Swin Transformer en Torchvision](http://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html)
 - [Documentación de Swin Transformer (master) en Torchvision](https://docs.pytorch.org/vision/master/models/generated/torchvision.models.swin_t.html)

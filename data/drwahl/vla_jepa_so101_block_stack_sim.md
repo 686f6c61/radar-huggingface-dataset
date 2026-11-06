@@ -87,7 +87,7 @@ La comparación directa con pi05_so101_block_stack_sim es la más relevante, ya 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drwahl/vla_jepa_so101_block_stack_sim
+- Hugging Face: https://huggingface.co/drwahl/vla_jepa_so101_block_stack_sim
 - Modelo base: https://huggingface.co/lerobot/VLA-JEPA-Pretrain
 - Dataset: https://huggingface.co/datasets/drwahl/so101_block_stack_sim
 - Modelo comparativo: https://huggingface.co/drwahl/pi05_so101_block_stack_sim

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jactavio/incidencia-beto-cased-completo-5epo` es un modelo de clasificación de texto en castellano publicado en HuggingFace por el usuario Jactavio. Se trata de un ajuste fino (fine-tuning) del modelo `dccuchile/bert-base-spanish-wwm-cased`, conocido como BETO cased, según indican las etiquetas `base_model:finetune:dccuchile/bert-base-spanish-wwm-cased` y `generated_from_trainer`. El pipeline declarado es `text-classification` y el nombre del repositorio sugiere una tarea de clasificación de incidencias, aunque la ficha no documenta el conjunto de etiquetas ni el dataset utilizado.
+`Jactavio/incidencia-beto-cased-completo-5epo` es un modelo de clasificación de texto en castellano publicado en Hugging Face por el usuario Jactavio. Se trata de un ajuste fino (fine-tuning) del modelo `dccuchile/bert-base-spanish-wwm-cased`, conocido como BETO cased, según indican las etiquetas `base_model:finetune:dccuchile/bert-base-spanish-wwm-cased` y `generated_from_trainer`. El pipeline declarado es `text-classification` y el nombre del repositorio sugiere una tarea de clasificación de incidencias, aunque la ficha no documenta el conjunto de etiquetas ni el dataset utilizado.
 
 Arquitectónicamente hereda las características del modelo base: un transformer encoder de tipo BERT, con enmascaramiento de palabra completa (`whole word masking`), sensible a mayúsculas y minúsculas (`cased`) y entrenado originalmente sobre corpus en castellano. Esto implica del orden de 110 millones de parámetros y una ventana máxima de 512 tokens, con un coste de inferencia muy inferior al de los modelos generativos actuales.
 
@@ -37,7 +37,7 @@ Sobre el ajuste fino no hay información publicada: la ficha no indica el datase
 - Clasificación de texto a nivel de secuencia: es la única tarea declarada explícitamente en el pipeline del repositorio.
 - Clasificación de incidencias y documentos cortos, según se deduce del nombre del repositorio, aunque sin confirmación en la ficha.
 - Generación de embeddings de frase si se utiliza la capa de pooling adecuada: la etiqueta `text-embeddings-inference` sugiere compatibilidad con despliegues orientados a embeddings, aunque no se documenta la configuración.
-- Compatibilidad con HuggingFace Inference Endpoints, según la etiqueta `endpoints_compatible`.
+- Compatibilidad con Hugging Face Inference Endpoints, según la etiqueta `endpoints_compatible`.
 - No soporta generación de texto, razonamiento multi-paso, uso de herramientas (`tool calling`) ni capacidades de agente, ya que es un encoder y no un modelo autorregresivo.
 - No tiene capacidades de visión, audio ni modo de razonamiento extendido.
 - Capacidades multilingües: no disponibles; el modelo base está orientado al castellano y la ficha no declara idiomas adicionales.
@@ -55,7 +55,7 @@ Sobre el ajuste fino no hay información publicada: la ficha no indica el datase
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha del repositorio en HuggingFace no incluye métricas de evaluación (accuracy, F1, precisión o recall), ni tarjeta de datos, ni resultados comparativos de ningún tipo. Tampoco se han encontrado referencias externas al modelo en la búsqueda web realizada.
+No se han publicado resultados de benchmarks en la información disponible. La ficha del repositorio en Hugging Face no incluye métricas de evaluación (accuracy, F1, precisión o recall), ni tarjeta de datos, ni resultados comparativos de ningún tipo. Tampoco se han encontrado referencias externas al modelo en la búsqueda web realizada.
 
 ## Requisitos de hardware
 
@@ -63,19 +63,19 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 - GPU recomendadas: cabe con holgura en cualquier GPU moderna. Una RTX 3060, RTX 4090, T4, L4, A10 o A100 pueden ejecutarlo con lotes grandes; la GPU no es un cuello de botella para este tamaño.
 - GPU de consumo: sí, cabe en cualquier GPU de consumo con 4 GB o más de VRAM, e incluso en iGPU y en CPU pura.
 - CPU: perfectamente viable para producción de bajo volumen gracias a su tamaño reducido.
-- Opciones de despliegue: pipeline de `transformers`, HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), exportación a ONNX Runtime y, si se convierte el checkpoint, llama.cpp no aplica porque no es un modelo generativo GGUF.
+- Opciones de despliegue: pipeline de `transformers`, Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), Text Embeddings Inference (etiqueta `text-embeddings-inference`), exportación a ONNX Runtime y, si se convierte el checkpoint, llama.cpp no aplica porque no es un modelo generativo GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones para este checkpoint concreto.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos comparables proceden de conocimiento general sobre modelos ampliamente conocidos y no han sido verificados en esta búsqueda; conviene comprobarlos en sus fichas de HuggingFace.
+Los datos de los modelos comparables proceden de conocimiento general sobre modelos ampliamente conocidos y no han sido verificados en esta búsqueda; conviene comprobarlos en sus fichas de Hugging Face.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Jactavio/incidencia-beto-cased-completo-5epo` | ~110 M (heredados, no declarados) | 512 tokens (heredado) | No disponible | HuggingFace, 0 descargas | Ajuste fino sin métricas publicadas ni tarjeta de datos |
-| `dccuchile/bert-base-spanish-wwm-cased` (BETO) | ~110 M | 512 tokens | No verificado | HuggingFace, ampliamente utilizado | Modelo base del anterior; referencia consolidada en castellano |
-| `PlanTL-GOB-ES/roberta-base-bne` | ~125 M | 512 tokens | No verificado | HuggingFace | Encoder alternativo entrenado sobre el corpus BNE, con rendimiento habitualmente superior a BETO en tareas en castellano |
-| `bert-base-multilingual-cased` (mBERT) | ~178 M | 512 tokens | No verificado | HuggingFace | Multilingüe, útil si se necesita cubrir más de un idioma a costa de un rendimiento inferior por idioma |
+| `Jactavio/incidencia-beto-cased-completo-5epo` | ~110 M (heredados, no declarados) | 512 tokens (heredado) | No disponible | Hugging Face, 0 descargas | Ajuste fino sin métricas publicadas ni tarjeta de datos |
+| `dccuchile/bert-base-spanish-wwm-cased` (BETO) | ~110 M | 512 tokens | No verificado | Hugging Face, ampliamente utilizado | Modelo base del anterior; referencia consolidada en castellano |
+| `PlanTL-GOB-ES/roberta-base-bne` | ~125 M | 512 tokens | No verificado | Hugging Face | Encoder alternativo entrenado sobre el corpus BNE, con rendimiento habitualmente superior a BETO en tareas en castellano |
+| `bert-base-multilingual-cased` (mBERT) | ~178 M | 512 tokens | No verificado | Hugging Face | Multilingüe, útil si se necesita cubrir más de un idioma a costa de un rendimiento inferior por idioma |
 
 No se dispone de datos de rendimiento del modelo evaluado que permitan una comparación cuantitativa con estas alternativas.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento del modelo evaluado que permitan una compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jactavio/incidencia-beto-cased-completo-5epo
-- Modelo base BETO cased en HuggingFace: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
+- Modelo en Hugging Face: https://huggingface.co/Jactavio/incidencia-beto-cased-completo-5epo
+- Modelo base BETO cased en Hugging Face: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - Repositorio del proyecto BETO: https://github.com/dccuchile/beto
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; los resultados devueltos correspondían a páginas de hospitales de París sin relación con el repositorio.

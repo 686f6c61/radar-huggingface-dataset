@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wormadam es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo la identificacion `Ryanham1lton/Wormadam`. La unica informacion verificable disponible en el momento de redactar esta ficha es la metadata del repositorio: licencia CC BY 4.0, etiqueta de region `us`, fecha de creacion 15 de octubre de 2026, ultima actualizacion el mismo dia y un tamano de repositorio de 0,1 GB. No consta pipeline declarado, idiomas soportados, arquitectura ni parametros.
+Wormadam es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo la identificacion `Ryanham1lton/Wormadam`. La unica informacion verificable disponible en el momento de redactar esta ficha es la metadata del repositorio: licencia CC BY 4.0, etiqueta de region `us`, fecha de creacion 15 de octubre de 2026, ultima actualizacion el mismo dia y un tamano de repositorio de 0,1 GB. No consta pipeline declarado, idiomas soportados, arquitectura ni parametros.
 
 La model card del autor no contiene mas contenido que el bloque de licencia, por lo que no hay descripcion funcional, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. Tampoco se han registrado descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -46,7 +46,7 @@ No es posible recomendar casos de uso concretos sin informacion verificada sobre
 - Prototipado educativo: por su licencia permisiva CC BY 4.0 y su tamano reducido, podria servir para experimentos docentes de inferencia local, siempre que se valide primero que los pesos cargan correctamente.
 - Generacion de texto en entornos con recursos muy limitados: un modelo de este tamano podria ejecutarse en dispositivos de borde o en contenedores sin GPU, si su arquitectura y tokenizador estan bien definidos.
 - Fine-tuning experimental: la licencia permite adaptacion y redistribucion con atribucion, lo que facilitaria su uso como punto de partida en experimentos academicos de ajuste supervisado.
-- Pruebas de integracion de pipelines: podria utilizarse como modelo de relleno en pruebas automatizadas de sistemas que consumen APIs compatibles con el formato de HuggingFace Transformers.
+- Pruebas de integracion de pipelines: podria utilizarse como modelo de relleno en pruebas automatizadas de sistemas que consumen APIs compatibles con el formato de Hugging Face Transformers.
 - Investigacion sobre artefactos no documentados: el repositorio puede ser en si mismo un caso de estudio sobre publicaciones sin model card, evaluacion reproducible y trazabilidad de modelos en plataformas abiertas.
 
 En todos los casos anteriores, la idoneidad real depende de datos que no estan disponibles.
@@ -81,7 +81,7 @@ No disponible. No se ha identificado la categoria del modelo ni su tamano, por l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Wormadam
+- Hugging Face: https://huggingface.co/Ryanham1lton/Wormadam
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

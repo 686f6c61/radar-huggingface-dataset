@@ -68,7 +68,7 @@ No se dispone de modelos comparables publicados con las mismas caracteristicas (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/xd91hcl7
 - Repositorio de TRL: https://github.com/huggingface/trl

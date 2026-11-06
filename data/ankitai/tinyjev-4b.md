@@ -84,8 +84,8 @@ Comparativa interna de la familia (fp16, latencia en M1 base de 16 GB via MLX, u
 
 | Modelo | Parametros | Enfoque | OD-500 | Confianza calibrada | Licencia / disponibilidad |
 |---|---:|---|---:|---|---|
-| TinyJev-4B | 4,0B | Decision tipada, sin generacion | 474 | ECE 0,022 | MIT, pesos abiertos en HuggingFace |
-| TinyJev-0.6B | 596M | Decision tipada, sin generacion | 440 | ECE 0,071 | MIT, pesos abiertos en HuggingFace |
+| TinyJev-4B | 4,0B | Decision tipada, sin generacion | 474 | ECE 0,022 | MIT, pesos abiertos en Hugging Face |
+| TinyJev-0.6B | 596M | Decision tipada, sin generacion | 440 | ECE 0,071 | MIT, pesos abiertos en Hugging Face |
 | Kev-0.8B | 0,8B | Decision a partir de logits crudos | 463 | no disponible (gestiona 186 al 100,0%) | no disponible |
 | Claude Opus 5.5 | no disponible | LLM generativo en la nube con probabilidades autoinformadas | 496 | no disponible | Propietario, servicio en la nube |
 | Qwen3-0.6B sin cabeza | 0,6B | Backbone leido mediante logits de letras | 354 | no disponible | no disponible |
@@ -104,8 +104,8 @@ Comparativa interna de la familia (fp16, latencia en M1 base de 16 GB via MLX, u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnkitAI/TinyJev-4B
-- TinyJev 0.6B en HuggingFace: https://huggingface.co/AnkitAI/TinyJev-0.6B
+- Modelo en Hugging Face: https://huggingface.co/AnkitAI/TinyJev-4B
+- TinyJev 0.6B en Hugging Face: https://huggingface.co/AnkitAI/TinyJev-0.6B
 - Repositorio GitHub: https://github.com/ankit-aglawe/tinyjev
 - Paquete en PyPI: https://pypi.org/project/tinyjev/
 - Benchmarks OpenDecision: https://github.com/ankit-aglawe/tinyjev/tree/main/benchmarks/opendecision
@@ -113,4 +113,4 @@ Comparativa interna de la familia (fp16, latencia en M1 base de 16 GB via MLX, u
 - Entrada de Wikipedia sobre Jev: https://en.wikipedia.org/wiki/Jev_(AI_model)
 - Articulo de 4SAPI sobre Jev AI: https://blog.4sapi.com/blog/jev-ai-tiny-judgment-model
 - Repositorio Lucyfer1718/tinyjev-v0: https://huggingface.co/Lucyfer1718/tinyjev-v0
-- TinyJev 0.6B en HuggingFace (referencia adicional): https://huggingface.co/AnkitAI/tinyjev-0.6b
+- TinyJev 0.6B en Hugging Face (referencia adicional): https://huggingface.co/AnkitAI/tinyjev-0.6b

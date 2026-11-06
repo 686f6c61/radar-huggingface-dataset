@@ -90,7 +90,7 @@ Frente a estas alternativas, la unica ventaja diferencial del pipeline es la aut
 
 ## Enlaces
 
-- Repositorio de scripts en HuggingFace: https://huggingface.co/heyimmitzu/glm-oss-8b-scripts
+- Repositorio de scripts en Hugging Face: https://huggingface.co/heyimmitzu/glm-oss-8b-scripts
 - Dataset de entrenamiento: https://huggingface.co/datasets/ianncity/GLM-5.2-Conversation
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Model card del base y licencia: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md

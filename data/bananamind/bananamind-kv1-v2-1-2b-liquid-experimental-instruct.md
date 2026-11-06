@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BananaMind-KV1-v2-1.2B-Liquid-Experimental-Instruct es un modelo de lenguaje experimental de 1.200 millones de parametros publicado por BananaMind, derivado mediante ajuste fino del modelo base LiquidAI/LFM2.5-1.2B-Instruct. Su rasgo diferencial es que el entrenamiento esta disenado explicitamente en torno a la cuantizacion de la cache KV (etiquetas `kv-cache-quantization`, `kv-cache-aware-training` y `2-bit`), una tecnica que busca reducir el coste de memoria de la cache de atencion durante la inferencia con contexto largo. El modelo se distribuye como una variante experimental y con acceso restringido (gated) en HuggingFace.
+BananaMind-KV1-v2-1.2B-Liquid-Experimental-Instruct es un modelo de lenguaje experimental de 1.200 millones de parametros publicado por BananaMind, derivado mediante ajuste fino del modelo base LiquidAI/LFM2.5-1.2B-Instruct. Su rasgo diferencial es que el entrenamiento esta disenado explicitamente en torno a la cuantizacion de la cache KV (etiquetas `kv-cache-quantization`, `kv-cache-aware-training` y `2-bit`), una tecnica que busca reducir el coste de memoria de la cache de atencion durante la inferencia con contexto largo. El modelo se distribuye como una variante experimental y con acceso restringido (gated) en Hugging Face.
 
 El entrenamiento combina destilacion con ajuste supervisado sobre un conjunto de datasets de la familia UltraData y Ultra-FineWeb de OpenBMB, abarcando conversacion general (UltraData-SFT), uso de agentes (UltraData-SFT-Agent), codigo (UltraData-Code), matematicas (UltraData-Math) y datos web de preentrenamiento (Ultra-FineWeb). El objetivo declarado por las etiquetas es producir un modelo de instrucciones que mantenga calidad razonable cuando su cache KV se comprime a 2 bits.
 
@@ -18,7 +18,7 @@ Por su tamano y su enfasis en eficiencia de memoria, el modelo apunta a entornos
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Cuantizacion de cache KV a 2 bits (etiqueta `2-bit`); cuantizacion de pesos no especificada |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -69,26 +69,26 @@ Los datos de rendimiento de los modelos comparados no se han publicado en la inf
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| BananaMind-KV1-v2-1.2B-Liquid-Experimental-Instruct | 1,2B | no disponible | other (restringida) | HuggingFace, gated | Experimental; entrenamiento consciente de cache KV a 2 bits |
-| LiquidAI/LFM2.5-1.2B-Instruct | 1,2B | no disponible | no disponible | HuggingFace | Modelo base del anterior |
+| BananaMind-KV1-v2-1.2B-Liquid-Experimental-Instruct | 1,2B | no disponible | other (restringida) | Hugging Face, gated | Experimental; entrenamiento consciente de cache KV a 2 bits |
+| LiquidAI/LFM2.5-1.2B-Instruct | 1,2B | no disponible | no disponible | Hugging Face | Modelo base del anterior |
 | Alternativas de ~1-2B para instrucciones | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en esta informacion |
 
 ## Limitaciones y advertencias
 
 - Caracter experimental: la propia denominacion `Experimental` indica que el modelo puede presentar inestabilidad y que su calidad no esta garantizada.
-- Licencia `other` con acceso restringido (gated): es imprescindible revisar las condiciones en HuggingFace antes de cualquier uso, incluido el comercial, y aceptar los terminos de acceso.
+- Licencia `other` con acceso restringido (gated): es imprescindible revisar las condiciones en Hugging Face antes de cualquier uso, incluido el comercial, y aceptar los terminos de acceso.
 - Idiomas soportados no documentados: no se puede asumir un rendimiento multilingue solido, especialmente en castellano.
 - Longitud de contexto no especificada, lo que impide planificar escenarios de contexto largo con garantias.
 - Sin benchmarks publicados: no existen datos objetivos de MMLU, HumanEval, GSM8K ni metricas equivalentes que permitan validar su calidad frente a alternativas.
 - La cuantizacion de la cache KV a 2 bits puede degradar la fidelidad en tareas que dependen de recordar detalles exactos a lo largo de muchos turnos; el entrenamiento "consciente" mitiga, pero no elimina, ese riesgo.
 - Riesgo de alusionacion inherente a los modelos de este tamano y a un ajuste basado en destilacion; conviene validar las salidas en usos sensibles.
 - Metadatos incompletos (formato de pesos, idiomas, contexto y arquitectura detallada sin especificar): dificulta la evaluacion tecnica previa.
-- Cero descargas y cero interacciones registradas en HuggingFace en el momento de redactar esta ficha, lo que reduce la evidencia de uso en la comunidad.
+- Cero descargas y cero interacciones registradas en Hugging Face en el momento de redactar esta ficha, lo que reduce la evidencia de uso en la comunidad.
 - No se ha confirmado soporte de tool calling ni de modo de razonamiento explicito, por lo que no deberia asumirse en integraciones de agentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BananaMind/BananaMind-KV1-v2-1.2B-Liquid-Experimental-Instruct
+- Modelo en Hugging Face: https://huggingface.co/BananaMind/BananaMind-KV1-v2-1.2B-Liquid-Experimental-Instruct
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Dataset openbmb/UltraData-SFT-2605: https://huggingface.co/datasets/openbmb/UltraData-SFT-2605
 - Dataset openbmb/UltraData-SFT-Agent-2609: https://huggingface.co/datasets/openbmb/UltraData-SFT-Agent-2609

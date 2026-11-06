@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yichenthu/vit-retrieval` es un repositorio experimental publicado en HuggingFace por el usuario `yichenthu` que contiene un codebase de Vision Transformer (ViT) orientado a tareas de retrieval (recuperación de imagen-texto). No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: el propio autor lo describe como un punto de partida de escala "nano", pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con capacidades funcionales.
+`yichenthu/vit-retrieval` es un repositorio experimental publicado en Hugging Face por el usuario `yichenthu` que contiene un codebase de Vision Transformer (ViT) orientado a tareas de retrieval (recuperación de imagen-texto). No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: el propio autor lo describe como un punto de partida de escala "nano", pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El checkpoint `model.safetensors` se presenta explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con capacidades funcionales.
 
 El tamaño real del checkpoint es de solo 33.088 parámetros, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier ViT de producción (los ViT de retrieval habituales manejan entre decenas y cientos de millones de parámetros). La arquitectura declarada combina atención de ventana deslizante (sliding window), fusión mediante "concat MLP", activación swish y normalización por batchnorm. La receta de entrenamiento incluida usa AdamW con un scheduler de tipo step, pero el autor insiste en que son valores de arranque del script y no evidencia de una ejecución completada.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, el repositorio incluye un fichero `training_args.jso
 - Validación de recetas de entrenamiento: el fichero `training_args.json` permite comparar configuraciones de AdamW y schedulers step sobre un modelo de coste despreciable antes de comprometer presupuesto de cómputo.
 - Docencia y divulgación: por su tamaño mínimo, es adecuado para ilustrar el flujo completo de un modelo de retrieval multimodal (tokenización de parches, atención, fusión, función de pérdida) en un entorno de aula o taller.
 - Benchmarking metodológico de retrieval: el autor propone Flickr30k como primer conjunto de evaluación; el repositorio puede usarse para montar el protocolo (múltiples semillas, línea base de capacidad equivalente) aunque el modelo en sí no ofrezca resultados.
-- Integración en tests de CI: el reducido tamaño del checkpoint (repo de 0,0 GB según HuggingFace) permite incluirlo en suites de integración continua sin coste de ancho de banda relevante.
+- Integración en tests de CI: el reducido tamaño del checkpoint (repo de 0,0 GB según Hugging Face) permite incluirlo en suites de integración continua sin coste de ancho de banda relevante.
 
 ## Benchmarks y rendimiento
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yichenthu/vit-retrieval | 33.088 | no disponible | no disponible (sin entrenar) | apache-2.0 | HuggingFace |
+| yichenthu/vit-retrieval | 33.088 | no disponible | no disponible (sin entrenar) | apache-2.0 | Hugging Face |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico |
 | SigLIP (Google) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico |
 
@@ -81,12 +81,12 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 - Riesgo de alucinacion: no aplica en el sentido generativo (no es un modelo de lenguaje), pero un modelo de retrieval mal entrenado puede producir emparejamientos imagen-texto incorrectos con alta confianza.
 - Limitaciones de contexto e idioma: no disponibles; el autor no documenta ventana de contexto efectiva ni cobertura linguistica.
 - Restricciones de licencia: apache-2.0 permite uso comercial del codigo y los pesos, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen cuando se use con datasets externos.
-- Caveat de produccion importante: es una implementacion personalizada, por lo que las APIs automaticas de carga de HuggingFace no funcionan sin un adaptador explicito. No debe desplegarse en produccion en su estado actual.
+- Caveat de produccion importante: es una implementacion personalizada, por lo que las APIs automaticas de carga de Hugging Face no funcionan sin un adaptador explicito. No debe desplegarse en produccion en su estado actual.
 - El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yichenthu/vit-retrieval
+- Hugging Face: https://huggingface.co/yichenthu/vit-retrieval
 - Repositorio (ficheros incluidos): `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper o publicacion asociada: no disponible
 - Blog o demo: no disponible

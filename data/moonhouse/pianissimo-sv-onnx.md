@@ -102,7 +102,7 @@ La comparativa se limita a las variantes del mismo modelo base citadas en la mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moonhouse/pianissimo-sv-onnx
+- Modelo en Hugging Face: https://huggingface.co/moonhouse/pianissimo-sv-onnx
 - Modelo base original: https://huggingface.co/KlangAI/pianissimo-sv
 - Conjunto de datos de dialectos suecos: https://huggingface.co/datasets/KlangAI/klang-dialects
 - Libreria parakeet_web: https://github.com/davidhall/parakeet_web

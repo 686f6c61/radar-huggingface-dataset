@@ -106,7 +106,7 @@ Frente a la ronda 1 fusionada, la ronda 2 ofrece una reduccion declarada de la s
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/SargeDev/Jev_Qwen3.8-27B-r2-LoRA
+- Pagina del modelo en Hugging Face: https://huggingface.co/SargeDev/Jev_Qwen3.8-27B-r2-LoRA
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Ronda 1 fusionada: https://huggingface.co/SargeDev/Jev_Qwen3.8-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3

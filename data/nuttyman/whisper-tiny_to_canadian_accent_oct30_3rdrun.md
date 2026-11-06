@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Canadian es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario Nuttyman y publicado en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles canadiense, entrenado sobre el dataset Canadian_english con el objetivo de mejorar la transcripcion de hablantes con acento canadiense frente al modelo base generico.
+Whisper tiny Canadian es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, desarrollado por el usuario Nuttyman y publicado en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) especializado en ingles canadiense, entrenado sobre el dataset Canadian_english con el objetivo de mejorar la transcripcion de hablantes con acento canadiense frente al modelo base generico.
 
 El modelo parte de la arquitectura encoder-decoder transformer de Whisper en su variante tiny, con 37,7 millones de parametros totales y un tamano de repositorio de 0,6 GB. La ventana de contexto de Whisper tiny es de 30 segundos de audio por segmento, y el modelo esta pensado exclusivamente para ingles. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -93,7 +93,7 @@ No se dispone de resultados comparativos publicados sobre el dataset Canadian_en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nuttyman/whisper-tiny_to_canadian_accent_oct30_3rdrun
+- Hugging Face: https://huggingface.co/Nuttyman/whisper-tiny_to_canadian_accent_oct30_3rdrun
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper: https://arxiv.org/abs/2212.04356
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

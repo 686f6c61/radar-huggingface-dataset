@@ -76,14 +76,14 @@ No se dispone de datos comparativos con otros modelos TinyStories (como TinyStor
 - Modelo extremadamente pequeño (11M parámetros), diseñado únicamente para cuentos infantiles en inglés; no apto para tareas generales de lenguaje.
 - Solo soporta inglés; no hay capacidades multilingües.
 - Riesgo de alucinaciones y deriva referencial: los ejemplos muestran que puede inventar elementos incoherentes (un conejo que vuela) o perder el referente de los pronombres.
-- El formato de pesos `model_packed.bin` es específico de la librería `bitllm`; no es compatible directamente con ecosistemas estándar como HuggingFace Transformers, lo que limita su portabilidad.
+- El formato de pesos `model_packed.bin` es específico de la librería `bitllm`; no es compatible directamente con ecosistemas estándar como Hugging Face Transformers, lo que limita su portabilidad.
 - La licencia MIT permite uso comercial, pero el modelo no tiene garantías de calidad ni soporte; es un artefacto de investigación.
 - No se han evaluado sesgos ni comportamientos dañinos; al ser un modelo pequeño entrenado en cuentos infantiles, el riesgo es bajo, pero no se ha documentado una auditoría.
 - La longitud de contexto no está especificada; se asume que es corta (típica de modelos pequeños), pero no se ha confirmado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/euclidstellar/tinystories-1bit-llm
+- Modelo en Hugging Face: https://huggingface.co/euclidstellar/tinystories-1bit-llm
 - Dataset de entrenamiento: https://huggingface.co/datasets/euclidstellar/tinystories-bpe4096
 - Paper relacionado (BitNet b1.58): https://arxiv.org/abs/2504.12285
 - Dataset TinyStories original: https://huggingface.co/datasets/roneneldan/TinyStories

@@ -98,15 +98,15 @@ Comparativa con otros modelos o paquetes de LoRA: no disponible.
 - Anatomia: sobre los ocho captions de anatomia, ningun estilo supera aproximadamente la mitad de aciertos, y el modelo base tampoco. El estilo holandes es el mas convincente para rostros segun juicio humano, pero el recuento de dedos se evalua de forma estricta.
 - Rotulacion no controlada: ukiyoe anade caligrafia a la mayoria de las imagenes; los estilos de arte rupestre, vasos griegos y egipcio casi nunca anaden texto.
 - Restriccion de resolucion: el entrenamiento y la medicion son a 512x512; a 384x384 el estilo de arte rupestre colapsa en un campo morado.
-- Licencia no disponible: la ficha de HuggingFace no declara licencia, lo que impide confirmar las condiciones de uso comercial. Cualquier uso en produccion deberia aclararse con el autor.
+- Licencia no disponible: la ficha de Hugging Face no declara licencia, lo que impide confirmar las condiciones de uso comercial. Cualquier uso en produccion deberia aclararse con el autor.
 - Idiomas no disponibles: no se declara cobertura idiomatica; los ejemplos de uso estan en ingles.
 - Trazabilidad documentada pero no verificable desde esta ficha: el autor afirma que cada imagen de entrenamiento tiene licencia nombrable y fila en un ledger, y que los captions se generaron con Qwen 3.6 27B (Apache 2.0), sin APIs comerciales en la cadena. Estos datos provienen de la propia documentacion del proyecto.
-- Adopcion nula en el momento de la consulta: 0 descargas y 0 likes en HuggingFace, por lo que no existe validacion independiente de terceros.
+- Adopcion nula en el momento de la consulta: 0 descargas y 0 likes en Hugging Face, por lo que no existe validacion independiente de terceros.
 - Dependencia del modelo base: los LoRA estan pensados para Pagouro BE y su runtime stable-diffusion.cpp; no se documenta su comportamiento sobre otros modelos de difusion.
 - Sesgos conocidos: no se documentan sesgos especificos en la informacion disponible, aunque los corpus historicos empleados (estampas, pintura de epoca, laminas cientificas) incorporan por definicion los sesgos representacionales de sus periodos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pagouro/pagouro-be-styles-1.0
+- Modelo en Hugging Face: https://huggingface.co/Pagouro/pagouro-be-styles-1.0
 - Repositorio del proyecto Pagouro BE: https://github.com/ericrwade/pagouro-be
 - Referencias internas del paquete citadas en la model card: STYLES.md, styles.json, MANIFEST.md (firma y marca temporal), LICENSES.md, carpeta ledger/, carpeta evals/ (gate, veredictos, hojas, runtime_check_512.jpg)

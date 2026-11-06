@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hugolegrandze/clip-contrastive` es un prototipo de investigación de arquitectura CLIP (Contrastive Language-Image Pre-training) orientado a tareas de aprendizaje contrastivo, publicado por el usuario hugolegrandze en HuggingFace. Se trata de un repositorio con un checkpoint de inicialización, no de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es válido para pruebas de humo (smoke tests) pero no se presenta como un checkpoint con benchmarks. El tamaño real declarado en safetensors es de 33.088 parámetros, lo que sitúa el modelo en una escala "nano", muy por debajo de cualquier CLIP funcional (que suele ir de 40M a 400M de parámetros).
+`hugolegrandze/clip-contrastive` es un prototipo de investigación de arquitectura CLIP (Contrastive Language-Image Pre-training) orientado a tareas de aprendizaje contrastivo, publicado por el usuario hugolegrandze en Hugging Face. Se trata de un repositorio con un checkpoint de inicialización, no de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es válido para pruebas de humo (smoke tests) pero no se presenta como un checkpoint con benchmarks. El tamaño real declarado en safetensors es de 33.088 parámetros, lo que sitúa el modelo en una escala "nano", muy por debajo de cualquier CLIP funcional (que suele ir de 40M a 400M de parámetros).
 
 El modelo se distribuye bajo licencia Apache 2.0 y está implementado en PyTorch con pesos en formato safetensors. La model card describe una configuración de atención de ventana deslizante (sliding window), fusión mediante MLP con concatenación, activación GELU y normalización por batch (batchnorm). La receta de entrenamiento por defecto usa el optimizador Adafactor con un schedule exponencial, pero no hay evidencia de que se haya ejecutado un entrenamiento completo.
 
@@ -81,5 +81,5 @@ La comparación es únicamente estructural: el modelo de este repositorio no es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hugolegrandze/clip-contrastive
+- Hugging Face: https://huggingface.co/hugolegrandze/clip-contrastive
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

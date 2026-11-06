@@ -25,7 +25,7 @@ Es relevante ahora porque combina tres ejes que suelen aparecer por separado en 
 | Encoder de audio | AudioTokenizer de 308M + patch encoder de audio de 127M |
 | Decodificador especulativo | MTP de 5 capas |
 | Tamano del repositorio | 177,8 GB |
-| Fecha de publicacion | 21 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 21 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,8 +96,8 @@ No se han publicado en la información disponible resultados de benchmarks de co
 
 | Modelo | Parametros | Contexto | Licencia | Modalidades | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-V2.6-Flash-RL | 159,36B según safetensors (309B declarados) / 15B activos | 1M tokens | MIT | Texto, imagen, vídeo, audio | Pesos en HuggingFace, 0 descargas, 16 likes |
-| MiMo-V2.6-Pro-RL | no disponible | 1M tokens (según serie) | MIT | Texto, imagen, vídeo, audio | Pesos en HuggingFace; supera al Flash en la mayoría de benchmarks de la card |
+| MiMo-V2.6-Flash-RL | 159,36B según safetensors (309B declarados) / 15B activos | 1M tokens | MIT | Texto, imagen, vídeo, audio | Pesos en Hugging Face, 0 descargas, 16 likes |
+| MiMo-V2.6-Pro-RL | no disponible | 1M tokens (según serie) | MIT | Texto, imagen, vídeo, audio | Pesos en Hugging Face; supera al Flash en la mayoría de benchmarks de la card |
 | MiMo-V2.5-Pro | no disponible | no disponible | no disponible | no disponible | Referencia de generación anterior; resultados notablemente inferiores (por ejemplo, DeepSWE v1.1 19,0 frente a 67,9) |
 | Claude Opus 5 / GPT-5.6 Sol / Claude Fable 5 | no disponible | no disponible | Propietaria | no disponible | Solo API; superan al Flash en código y Terminal Bench 4.0, pero quedan por debajo en AutomationBench y CyberGym |
 
@@ -118,7 +118,7 @@ La comparación con modelos propietarios procede exclusivamente de la tabla publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Modelo en Hugging Face: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Informe técnico (PDF en el repositorio): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/MiMo_V2_6_technical_report.pdf
 - Blog de la serie MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6
 - Plataforma API de Xiaomi MiMo: https://platform.xiaomimimo.com

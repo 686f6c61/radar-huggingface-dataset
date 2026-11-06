@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Entrada/contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heart-murmur-ast | ~86M | Espectrograma log-mel fijo [1,1,80,1001] | No disponible | MIT | HuggingFace |
-| MIT/ast-finetuned-audioset-10-10-0.4593 (modelo base) | No disponible en la información | Espectrograma de audio para AudioSet | No disponible | MIT | HuggingFace |
+| heart-murmur-ast | ~86M | Espectrograma log-mel fijo [1,1,80,1001] | No disponible | MIT | Hugging Face |
+| MIT/ast-finetuned-audioset-10-10-0.4593 (modelo base) | No disponible en la información | Espectrograma de audio para AudioSet | No disponible | MIT | Hugging Face |
 | Alternativas específicas de detección de soplos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos comparables de detección de soplos en la información proporcionada.
@@ -82,6 +82,6 @@ No se dispone de información sobre modelos comparables de detección de soplos 
 - No debe utilizarse como sustituto del juicio de un experto clínico.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Ahsanmandhar/heart-murmur-ast
+- Modelo en Hugging Face: https://huggingface.co/Ahsanmandhar/heart-murmur-ast
 - Modelo base: https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593
 - No se han proporcionado enlaces adicionales a papers, blogs, repositorios o demos en la información disponible.

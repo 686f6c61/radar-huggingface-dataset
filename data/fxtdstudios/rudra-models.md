@@ -78,8 +78,8 @@ En metraje con áreas recortadas pequeñas el efecto es neutro. No se han public
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RUDRA models (ACES 2 + AI fill v3) | Reconstrucción SDR→HDR y relleno de recortes | ACES 2: 2,2 MB; LoRA: 271 MB sobre base 1,3B | No aplica | Apache 2.0 | HuggingFace, app RUDRA, CLI |
-| Wan2.1-VACE-1.3B | Difusión vídeo con control de referencia | 1,3B | No disponible | Apache 2.0 | HuggingFace |
+| RUDRA models (ACES 2 + AI fill v3) | Reconstrucción SDR→HDR y relleno de recortes | ACES 2: 2,2 MB; LoRA: 271 MB sobre base 1,3B | No aplica | Apache 2.0 | Hugging Face, app RUDRA, CLI |
+| Wan2.1-VACE-1.3B | Difusión vídeo con control de referencia | 1,3B | No disponible | Apache 2.0 | Hugging Face |
 | Beta 2 de FXTD Studios (`sdr2hdr_image_v8`, `sdr2hdr_shadow_v1`) | SDR→HDR previo | No disponible | No aplica | No comercial | No incluido en este repositorio |
 
 No se dispone de datos de benchmarks comparativos con otras soluciones de inverse tone mapping en la información proporcionada.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos con otras soluciones de invers
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fxtdstudios/rudra-models
+- Hugging Face: https://huggingface.co/fxtdstudios/rudra-models
 - Repositorio RUDRA: https://github.com/FXTD-Studios/RUDRA
 - Modelo base Wan2.1-VACE-1.3B-diffusers: https://huggingface.co/Wan-AI/Wan2.1-VACE-1.3B-diffusers
 - Licencia Poly Haven: https://polyhaven.com/license

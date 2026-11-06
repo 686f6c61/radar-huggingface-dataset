@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PersistBD-Gemma4-12B-clean-20261022 es un ajuste fino completo (full fine-tuning) del modelo google/gemma-4-12B-it, publicado por el usuario qiusizhan en HuggingFace. El nombre y las etiquetas del repositorio (persistbd, backdoor-detection, clean) apuntan a un modelo orientado a tareas de deteccion de backdoors o puertas traseras en modelos y contenidos, en una variante marcada como "clean" y con fecha de version 2026-10-22. El repositorio no incluye una model card descriptiva, por lo que la mayor parte de las especificaciones de entrenamiento no estan documentadas.
+PersistBD-Gemma4-12B-clean-20261022 es un ajuste fino completo (full fine-tuning) del modelo google/gemma-4-12B-it, publicado por el usuario qiusizhan en Hugging Face. El nombre y las etiquetas del repositorio (persistbd, backdoor-detection, clean) apuntan a un modelo orientado a tareas de deteccion de backdoors o puertas traseras en modelos y contenidos, en una variante marcada como "clean" y con fecha de version 2026-10-22. El repositorio no incluye una model card descriptiva, por lo que la mayor parte de las especificaciones de entrenamiento no estan documentadas.
 
 El modelo conserva la modalidad del base: acepta entrada de imagen y texto y genera texto, con 11.959.730.176 parametros (unos 11,96 mil millones) almacenados en safetensors, con un repositorio de 24,0 GB, lo que es coherente con pesos en BF16/FP16. La arquitectura etiquetada es gemma4_unified, dentro de la familia Gemma 4, y la licencia declarada es Apache 2.0, un cambio relevante frente a las licencias historicamente restrictivas de la familia Gemma.
 
@@ -21,7 +21,7 @@ Su interes actual es doble: por un lado, sirve como ejemplo de especializacion d
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
-Otros datos tecnicos: pipeline declarado text-generation, tags de modalidad image-text-to-text, acceso restringido (gated, requiere aceptar condiciones en HuggingFace), creado el 2026-10-23 y actualizado el mismo dia.
+Otros datos tecnicos: pipeline declarado text-generation, tags de modalidad image-text-to-text, acceso restringido (gated, requiere aceptar condiciones en Hugging Face), creado el 2026-10-23 y actualizado el mismo dia.
 
 ## Arquitectura y entrenamiento
 
@@ -60,13 +60,13 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU de consumo: cabe en RTX 4090 / RTX 3090 de 24 GB en BF16, aunque al limite y con poca memoria libre para el contexto y las imagenes; en estas tarjetas es preferible INT8 o INT4. En GPUs de 12-16 GB solo es viable con cuantizacion agresiva.
 - Opciones de despliegue: transformers (libreria declarada), vLLM o TGI para servido con alto throughput, y llama.cpp/Ollama si se generan pesos GGUF, que no estan publicados en el repositorio.
 - Latencia y throughput estimados: no disponibles. Al ser un modelo multimodal, el coste por peticion depende fuertemente de la resolucion y el numero de imagenes de entrada, no solo de la longitud del prompt.
-- Nota operativa: el acceso es restringido (gated); es necesario aceptar las condiciones en HuggingFace y autenticarse con un token antes de descargar los 24,0 GB del repositorio.
+- Nota operativa: el acceso es restringido (gated); es necesario aceptar las condiciones en Hugging Face y autenticarse con un token antes de descargar los 24,0 GB del repositorio.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PersistBD-Gemma4-12B-clean-20261022 | 11,96B | No disponible | imagen-texto a texto | Apache 2.0 | Gated en HuggingFace |
+| PersistBD-Gemma4-12B-clean-20261022 | 11,96B | No disponible | imagen-texto a texto | Apache 2.0 | Gated en Hugging Face |
 | google/gemma-4-12B-it (modelo base) | No disponible en la informacion (familia 12B) | No disponible | imagen-texto a texto | No disponible en la informacion | No disponible en la informacion |
 | Otros fine-tunes de ~12B para deteccion de backdoors | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -86,6 +86,6 @@ No se dispone de datos verificables de benchmarks ni de especificaciones de mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/PersistBD-Gemma4-12B-clean-20261022
+- Hugging Face: https://huggingface.co/qiusizhan/PersistBD-Gemma4-12B-clean-20261022
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

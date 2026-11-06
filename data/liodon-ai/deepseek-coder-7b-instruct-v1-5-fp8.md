@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepseek-coder-7b-instruct-v1.5 (base) | 6,9B | no disponible | BF16 | other (uso comercial) | HuggingFace |
-| liodon-ai/deepseek-coder-7b-instruct-v1.5-FP8 | 6,9B | no disponible | FP8 dinamico | other (misma licencia) | HuggingFace |
-| liodon-ai/deepseek-coder-6.7b-instruct-FP8 | 6,7B | no disponible | FP8 dinamico | other | HuggingFace |
+| deepseek-coder-7b-instruct-v1.5 (base) | 6,9B | no disponible | BF16 | other (uso comercial) | Hugging Face |
+| liodon-ai/deepseek-coder-7b-instruct-v1.5-FP8 | 6,9B | no disponible | FP8 dinamico | other (misma licencia) | Hugging Face |
+| liodon-ai/deepseek-coder-6.7b-instruct-FP8 | 6,7B | no disponible | FP8 dinamico | other | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base. No se dispone de datos de rendimiento para establecer una comparación cuantitativa. La principal diferencia entre la versión base y la cuantizada es el tamaño (13,8 GB vs 7,8 GB) y la velocidad de inferencia en hardware compatible con FP8, a costa de una posible pérdida mínima de precisión.
 
@@ -76,7 +76,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/deepseek-coder-7b-instruct-v1.5-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/deepseek-coder-7b-instruct-v1.5-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-coder-7b-instruct-v1.5
 - Repositorio de DeepSeek Coder: https://github.com/deepseek-ai/DeepSeek-Coder
 - Página oficial de DeepSeek Coder: https://deepseekcoder.github.io/

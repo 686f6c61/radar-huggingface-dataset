@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LimiX-2M es un modelo fundacional para datos tabulares desarrollado por StableAI (repositorio `stable-ai/LimiX-2M` en HuggingFace), con tan solo 2 millones de parametros. A diferencia de los modelos de lenguaje, no procesa texto: su entrada son tablas (filas y columnas) y su salida son predicciones de clasificacion, regresion o valores imputados en celdas ausentes. Se presenta como una alternativa unificada a los pipelines clasicos de machine learning tabular (XGBoost, CatBoost, AutoGluon) y a TabPFN, sin necesidad de entrenamiento especifico por tarea ni ajuste de hiperparametros.
+LimiX-2M es un modelo fundacional para datos tabulares desarrollado por StableAI (repositorio `stable-ai/LimiX-2M` en Hugging Face), con tan solo 2 millones de parametros. A diferencia de los modelos de lenguaje, no procesa texto: su entrada son tablas (filas y columnas) y su salida son predicciones de clasificacion, regresion o valores imputados en celdas ausentes. Se presenta como una alternativa unificada a los pipelines clasicos de machine learning tabular (XGBoost, CatBoost, AutoGluon) y a TabPFN, sin necesidad de entrenamiento especifico por tarea ni ajuste de hiperparametros.
 
 La relevancia del modelo radica en su enfoque de inferencia guiada por contexto (in-context learning): el usuario entrega el conjunto de entrenamiento completo como contexto y el modelo predice directamente sobre las filas nuevas. Esto elimina el reentrenamiento y los pipelines de preprocesado, y al ser tan pequeno puede ejecutarse en CPU o portatiles. La arquitectura es un transformer de 12 bloques con atencion por ejes (features y muestras) y el framework RaBEL, propuesto en el articulo asociado para mitigar el colapso de rango bajo y los cuellos de botella de atencion en modelos tabulares.
 
-El modelo se distribuye como checkpoint PyTorch dentro de un repositorio de HuggingFace, con codigo de inferencia alojado en GitHub. La model card declara licencia Apache-2.0 para el codigo, pero impone una licencia separada para los pesos que reserva el uso comercial a una autorizacion expresa de StableAI, un caveat critico para produccion.
+El modelo se distribuye como checkpoint PyTorch dentro de un repositorio de Hugging Face, con codigo de inferencia alojado en GitHub. La model card declara licencia Apache-2.0 para el codigo, pero impone una licencia separada para los pesos que reserva el uso comercial a una autorizacion expresa de StableAI, un caveat critico para produccion.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo se distribuye como checkpoint PyTorch dentro de un repositorio de Hugg
 | Tipos de cuantizacion | no disponible (los pesos se publican como checkpoint PyTorch; no se documentan variantes GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible (modelo tabular, no procesa lenguaje natural) |
 | Licencia | Codigo: Apache-2.0. Pesos: licencia separada, uso academico libre y uso comercial sujeto a autorizacion de StableAI |
-| Formato de pesos | Checkpoint PyTorch (`.ckpt`); el repositorio de HuggingFace ocupa 0.0 GB segun la ficha |
+| Formato de pesos | Checkpoint PyTorch (`.ckpt`); el repositorio de Hugging Face ocupa 0.0 GB segun la ficha |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LimiX-2M | 2M | no disponible | Declarado SOTA por delante de XGBoost, CatBoost, AutoGluon y TabPFN, sin cifras publicadas en la informacion disponible | Codigo Apache-2.0; pesos con autorizacion comercial requerida | HuggingFace y GitHub |
+| LimiX-2M | 2M | no disponible | Declarado SOTA por delante de XGBoost, CatBoost, AutoGluon y TabPFN, sin cifras publicadas en la informacion disponible | Codigo Apache-2.0; pesos con autorizacion comercial requerida | Hugging Face y GitHub |
 | TabPFN | no disponible | no disponible | Superado por LimiX-2M segun la model card; sin cifras disponibles | no disponible | no disponible |
 | XGBoost | no aplica (gradient boosting, no red neuronal) | no aplica | Referencia clasica en datos tabulares; superado por LimiX-2M segun la model card | Apache-2.0 | Libreria ampliamente distribuida |
 | CatBoost | no aplica (gradient boosting) | no aplica | Referencia clasica en datos tabulares; superado por LimiX-2M segun la model card | Apache-2.0 | Libreria ampliamente distribuida |
@@ -92,7 +92,7 @@ Los datos de parametros, contexto y licencia de los modelos comparados no se det
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stable-ai/LimiX-2M
+- Modelo en Hugging Face: https://huggingface.co/stable-ai/LimiX-2M
 - Repositorio GitHub: https://github.com/limix-ldm-ai/LimiX
 - Pagina del proyecto: https://www.limix.ai/
 - Articulo LimiX-2M (arXiv 2606.04485): https://huggingface.co/papers/2606.04485

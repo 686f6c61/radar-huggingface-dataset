@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Linaaldosari/multitask es un prototipo de investigación publicado en HuggingFace por el usuario Linaaldosari. Se presenta como una implementación propia de una arquitectura denominada "Dino" orientada a tareas multitarea, con un tamaño declarado de escala "small" y un checkpoint de safetensors que, segun la propia model card, constituye una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado. El recuento de parametros reportado por los metadatos de safetensors es de 33.088, una cifra extremadamente baja que confirma el caracter experimental y no productivo del artefacto.
+Linaaldosari/multitask es un prototipo de investigación publicado en Hugging Face por el usuario Linaaldosari. Se presenta como una implementación propia de una arquitectura denominada "Dino" orientada a tareas multitarea, con un tamaño declarado de escala "small" y un checkpoint de safetensors que, segun la propia model card, constituye una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado. El recuento de parametros reportado por los metadatos de safetensors es de 33.088, una cifra extremadamente baja que confirma el caracter experimental y no productivo del artefacto.
 
 El repositorio incluye el archivo `pipeline.py` como artefacto principal, junto con `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors` (checkpoint de inicialización). La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -80,7 +80,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Linaaldosari/multitask | 33.088 | no disponible | MIT | HuggingFace | Checkpoint de inicialización, sin entrenar y sin benchmarks |
+| Linaaldosari/multitask | 33.088 | no disponible | MIT | Hugging Face | Checkpoint de inicialización, sin entrenar y sin benchmarks |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se identifican modelos equivalentes en la información proporcionada |
 
 La etiqueta "dino" del repositorio no aporta información verificable sobre su relación con otros proyectos que usan esa denominación; no se ha encontrado documentación que lo aclare.
@@ -99,7 +99,7 @@ La etiqueta "dino" del repositorio no aporta información verificable sobre su r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Linaaldosari/multitask
+- Modelo en Hugging Face: https://huggingface.co/Linaaldosari/multitask
 - Repositorio asociado, paper o blog: no disponible
 - Demo: no disponible
 - Otra documentación relevante: no se han encontrado enlaces relacionados en la búsqueda web; los resultados obtenidos no guardan relación con el modelo.

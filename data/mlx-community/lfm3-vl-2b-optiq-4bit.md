@@ -98,7 +98,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría en la
 
 ## Enlaces
 
-- [HuggingFace: mlx-community/LFM3-VL-2B-OptiQ-4bit](https://huggingface.co/mlx-community/LFM3-VL-2B-OptiQ-4bit)
+- [Hugging Face: mlx-community/LFM3-VL-2B-OptiQ-4bit](https://huggingface.co/mlx-community/LFM3-VL-2B-OptiQ-4bit)
 - [Modelo base: LiquidAI/LFM3-VL-2B](https://huggingface.co/LiquidAI/LFM3-VL-2B)
 - [Sitio del proyecto mlx-optiq](https://mlx-optiq.com/)
 - [Todos los quants OptiQ](https://mlx-optiq.com/models)

@@ -6,7 +6,7 @@ Sovereign Engine v2 es un entorno completo de desarrollo de agentes LLM, no un m
 
 El proyecto resuelve el problema de construir un entorno de desarrollo integrado para agentes LLM con control total sobre el pipeline de inferencia, desde el enrutamiento hasta las operaciones de cómputo. Su relevancia radica en demostrar una arquitectura alternativa al enfoque habitual de envoltorios sobre APIs, apostando por un sistema monolítico con comunicación IPC de baja latencia (buffer anular mmap con polling de 50 μs). La licencia BSL 1.1 permite uso no comercial y limita el despliegue en producción.
 
-Cabe señalar que la fecha de creación en HuggingFace (2026-09-03) es posterior a la fecha de corte de conocimiento de este documento, y el repositorio no publica métricas de rendimiento ni especificaciones de un modelo de pesos concreto.
+Cabe señalar que la fecha de creación en Hugging Face (2026-09-03) es posterior a la fecha de corte de conocimiento de este documento, y el repositorio no publica métricas de rendimiento ni especificaciones de un modelo de pesos concreto.
 
 ## Especificaciones técnicas
 
@@ -68,12 +68,12 @@ No disponible. Sovereign Engine v2 no es un modelo de lenguaje con pesos, por lo
 - Licencia BSL 1.1: restringe el uso en producción hasta que se convierta a una licencia de código abierto (normalmente tras un periodo de cambio, no especificado aquí).
 - El IDE nativo solo funciona en Windows; no hay soporte oficial para Linux o macOS.
 - No se documenta si el motor Python incluye un modelo base propio o si requiere conectarse a un LLM externo; el ejemplo de uso muestra una llamada a `engine.run(...)` sin especificar el origen de los pesos.
-- La fecha de creación en HuggingFace (2026-09-03) es futura respecto a la fecha de corte de este documento, lo que sugiere que el proyecto puede ser un placeholder o estar en desarrollo activo.
+- La fecha de creación en Hugging Face (2026-09-03) es futura respecto a la fecha de corte de este documento, lo que sugiere que el proyecto puede ser un placeholder o estar en desarrollo activo.
 - No hay benchmarks, métricas de calidad de generación ni evaluaciones de sesgo o alucinación.
 - El repositorio GitHub indicado (SNAPKITTYWEST/sovereign-engine-v2) no ha sido verificado en esta búsqueda; la URL puede no ser accesible.
 - La arquitectura de almacenamiento WORM implica que los datos escritos no pueden modificarse, lo que puede ser una limitación en escenarios que requieran actualización de estado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovereign-engine-v2
+- Hugging Face: https://huggingface.co/Snapkitty/sovereign-engine-v2
 - GitHub (referenciado en el README): https://github.com/SNAPKITTYWEST/sovereign-engine-v2

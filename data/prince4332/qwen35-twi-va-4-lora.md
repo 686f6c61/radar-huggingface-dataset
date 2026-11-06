@@ -2,9 +2,9 @@
 
 ## Resumen
 
-qwen35-twi-va-4-lora es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario prince4332 en HuggingFace. Se distribuye bajo licencia Apache 2.0, con la etiqueta de pipeline image-text-to-text, lo que indica que el modelo base es multimodal (entrada de imagen y texto) y que el ajuste conserva esa capacidad. El repositorio ocupa 4,6 GB y los metadatos de safetensors declaran 2.283.900.224 parametros totales.
+qwen35-twi-va-4-lora es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-2B, publicado por el usuario prince4332 en Hugging Face. Se distribuye bajo licencia Apache 2.0, con la etiqueta de pipeline image-text-to-text, lo que indica que el modelo base es multimodal (entrada de imagen y texto) y que el ajuste conserva esa capacidad. El repositorio ocupa 4,6 GB y los metadatos de safetensors declaran 2.283.900.224 parametros totales.
 
-El problema que resuelve es acotado: se trata de un ajuste de un modelo pequeno (2B) orientado a conversacion, con el objetivo declarado de adaptar el modelo base a una tarea o dominio concreto. No hay informacion publica sobre el dataset de entrenamiento, el numero de tokens utilizados ni los hiperparametros, mas alla de que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, lo que el autor presenta como "2x mas rapido".
+El problema que resuelve es acotado: se trata de un ajuste de un modelo pequeno (2B) orientado a conversacion, con el objetivo declarado de adaptar el modelo base a una tarea o dominio concreto. No hay informacion publica sobre el dataset de entrenamiento, el numero de tokens utilizados ni los hiperparametros, mas alla de que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, lo que el autor presenta como "2x mas rapido".
 
 Su relevancia practica es limitada y debe evaluarse con cautela: el modelo acumula 0 descargas y 0 likes, no publica resultados de benchmarks, no documenta el corpus de ajuste y su model card es una plantilla generada automaticamente por Unsloth. Es util como referencia para quien quiera reproducir o inspeccionar un fine-tune multimodal pequeno, pero no como componente de produccion sin una evaluacion propia previa.
 
@@ -89,9 +89,9 @@ No se dispone de informacion verificable sobre modelos comparables en la documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prince4332/qwen35-twi-va-4-lora
+- Modelo en Hugging Face: https://huggingface.co/prince4332/qwen35-twi-va-4-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no se ha proporcionado una URL especifica en la informacion disponible, aunque se menciona la libreria en la model card.
+- TRL de Hugging Face: no se ha proporcionado una URL especifica en la informacion disponible, aunque se menciona la libreria en la model card.
 
 Nota: los resultados de busqueda web proporcionados corresponden a comparativas de frameworks web de Python y no guardan relacion con este modelo, por lo que no se incluyen como enlaces relevantes.

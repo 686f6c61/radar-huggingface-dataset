@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ibis0-BED-Simulator | 30.532.122.624 | no disponible | Apache-2.0 | HuggingFace (EdisonScientific) |
-| Qwen/Qwen3-30B-A3B (base) | 30.500 millones aprox. | no disponible | Apache-2.0 | HuggingFace (Qwen) |
-| Ibis0-30B-A3B-Classifier | no disponible | no disponible | no disponible | HuggingFace (EdisonScientific) |
+| Ibis0-BED-Simulator | 30.532.122.624 | no disponible | Apache-2.0 | Hugging Face (EdisonScientific) |
+| Qwen/Qwen3-30B-A3B (base) | 30.500 millones aprox. | no disponible | Apache-2.0 | Hugging Face (Qwen) |
+| Ibis0-30B-A3B-Classifier | no disponible | no disponible | no disponible | Hugging Face (EdisonScientific) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. El modelo base Qwen3-30B-A3B es la referencia directa; el clasificador Ibis0-30B-A3B-Classifier es el componente complementario dentro del mismo pipeline de BED.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdisonScientific/Ibis0-BED-Simulator
+- Modelo en Hugging Face: https://huggingface.co/EdisonScientific/Ibis0-BED-Simulator
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Clasificador complementario: https://huggingface.co/EdisonScientific/Ibis0-30B-A3B-Classifier
 - Repositorio de codigo: https://github.com/EdisonScientific/ibis0

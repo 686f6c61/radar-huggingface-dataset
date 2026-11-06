@@ -109,7 +109,7 @@ Los datos de contexto y parámetros de las filas de Qwen, Gemma y Llama proviene
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/MiniCPM5-2B-Pashto-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/MiniCPM5-2B-Pashto-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Derivado con tokenizer modificado (safetensors): https://huggingface.co/nassimjp/MiniCPM5-2B-Pashto
 - llama.cpp (runtime y herramientas de cuantización): https://github.com/ggml-org/llama.cpp

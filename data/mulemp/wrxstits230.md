@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mulemp/wrxstits230` es un repositorio alojado en HuggingFace por el usuario `mulemp`, etiquetado con la region `us`. Se trata de un modelo de acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. El repositorio tiene un tamano de 2.9 GB y fue creado en julio de 2026, con una actualizacion posterior en agosto del mismo ano.
+El modelo `mulemp/wrxstits230` es un repositorio alojado en Hugging Face por el usuario `mulemp`, etiquetado con la region `us`. Se trata de un modelo de acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de poder descargarlo. El repositorio tiene un tamano de 2.9 GB y fue creado en julio de 2026, con una actualizacion posterior en agosto del mismo ano.
 
 La informacion publica disponible es extremadamente limitada: no se especifica la arquitectura, el tamano en parametros, la licencia, los idiomas soportados ni el pipeline de uso. Esta ausencia de datos tecnicos impide clasificar el modelo dentro de una categoria concreta (como LLM generativo, modelo de embedding o modelo multimodal) o evaluar su idoneidad para casos de uso especificos. La relevancia de este modelo no puede determinarse con la informacion actual.
 
@@ -23,7 +23,7 @@ La informacion publica disponible es extremadamente limitada: no se especifica l
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura del modelo, el conjunto de datos de entrenamiento, el numero de tokens procesados ni las tecnicas de optimizacion empleadas (como RLHF, DPO o instruccion supervisada). El repositorio no incluye documentacion tecnica, articulos asociados ni descripcion del modelo en la pagina de HuggingFace.
+No se dispone de informacion publica sobre la arquitectura del modelo, el conjunto de datos de entrenamiento, el numero de tokens procesados ni las tecnicas de optimizacion empleadas (como RLHF, DPO o instruccion supervisada). El repositorio no incluye documentacion tecnica, articulos asociados ni descripcion del modelo en la pagina de Hugging Face.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No es posible establecer una comparativa con modelos alternativos al no conocers
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede implicar restricciones de uso o licencias no publicadas
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede implicar restricciones de uso o licencias no publicadas
 - Informacion tecnica ausente: no se documenta arquitectura, entrenamiento, licencia ni capacidades
 - Riesgo de uso inapropiado: sin conocer la licencia, no se puede garantizar la legalidad de un uso comercial o de redistribucion
 - Riesgo de sesgos y alucinaciones: no evaluable sin acceso al modelo y a sus datos de entrenamiento
@@ -68,4 +68,4 @@ No es posible establecer una comparativa con modelos alternativos al no conocers
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mulemp/wrxstits230
+- Repositorio en Hugging Face: https://huggingface.co/mulemp/wrxstits230

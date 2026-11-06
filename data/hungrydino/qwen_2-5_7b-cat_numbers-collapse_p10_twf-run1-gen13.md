@@ -75,7 +75,7 @@ No se dispone de otros fine-tunes comparables con el mismo enfoque numérico. La
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen13
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen13
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Organización Qwen en GitHub: https://github.com/QwenLM
 - Comparativa de modelos Qwen (artículo externo): https://www.secondtalent.com/resources/every-qwen-ai-model-explained-compared/

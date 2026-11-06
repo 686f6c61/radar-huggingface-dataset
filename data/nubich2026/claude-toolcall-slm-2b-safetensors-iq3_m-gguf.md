@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-IQ3_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nubich2026/claude-toolcall-slm-2B-safetensors-IQ3_M-GGUF
 - Modelo base: https://huggingface.co/mondk/claude-toolcall-slm-2B-safetensors
 - Herramienta de conversion (gguf-my-repo): https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Proyecto llama.cpp: https://github.com/ggerganov/llama.cpp

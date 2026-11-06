@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DecodeX_V1 (identificado en la model card como "DecodeX Base: Real-Time Neural Audio Engine") es un modelo de clasificación de audio desarrollado por el usuario Aryan1245678 y publicado en HuggingFace bajo licencia Apache-2.0. Se presenta como la capa fundacional, basada en Wav2Vec 2.0, de una arquitectura propietaria de "doble motor" (DecodeX Base + V2) orientada a la detección en tiempo real de voces sintéticas y deepfakes de audio. El problema que aborda es la verificación de autenticidad de voz en flujos PCM en crudo, con el objetivo declarado de frenar fraudes de ingeniería social generados por IA antes de que atraviesen redes de comunicación corporativas (PBX, trunk SIP).
+DecodeX_V1 (identificado en la model card como "DecodeX Base: Real-Time Neural Audio Engine") es un modelo de clasificación de audio desarrollado por el usuario Aryan1245678 y publicado en Hugging Face bajo licencia Apache-2.0. Se presenta como la capa fundacional, basada en Wav2Vec 2.0, de una arquitectura propietaria de "doble motor" (DecodeX Base + V2) orientada a la detección en tiempo real de voces sintéticas y deepfakes de audio. El problema que aborda es la verificación de autenticidad de voz en flujos PCM en crudo, con el objetivo declarado de frenar fraudes de ingeniería social generados por IA antes de que atraviesen redes de comunicación corporativas (PBX, trunk SIP).
 
 El modelo se distribuye como pipeline de `audio-classification` con un repositorio de 0,4 GB y se entrenó durante 5 épocas con Transformers 4.39.3, PyTorch 2.1.2, Datasets 2.18.0 y Tokenizers 0.15.2. El autor reporta una accuracy de 0.9882 y una loss de 0.0829 en el conjunto de evaluación, además de la curva completa de entrenamiento por época. No se especifican en la información disponible el número de parámetros, el volumen de datos de entrenamiento, la composición del dataset ni los idiomas cubiertos.
 
@@ -76,8 +76,8 @@ No se han publicado resultados comparativos con MMLU, HumanEval, GSM8K ni con be
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DecodeX_V1 | no disponible | no aplica | Accuracy 0.9882 (conjunto de evaluacion propio) | apache-2.0 | HuggingFace |
-| facebook/wav2vec2-base | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| DecodeX_V1 | no disponible | no aplica | Accuracy 0.9882 (conjunto de evaluacion propio) | apache-2.0 | Hugging Face |
+| facebook/wav2vec2-base | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Modelos especificos de anti-spoofing (ASVspoof, AASIST, etc.) | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos verificables de los modelos alternativos dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. La comparación directa exigiría evaluar DecodeX_V1 sobre un benchmark público de detección de voz sintética, algo que el autor no ha publicado.
@@ -97,5 +97,5 @@ No se dispone de datos verificables de los modelos alternativos dentro de la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aryan1245678/DecodeX_V1
+- Hugging Face: https://huggingface.co/Aryan1245678/DecodeX_V1
 - Paper, blog, repositorio o demo adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relacionados con el modelo; los enlaces encontrados correspondían a páginas de laboratorios de análisis clínicos (Biogroup, Rueil-Malmaison) sin relación alguna con DecodeX_V1.

@@ -3,7 +3,7 @@
 # marciano1111/bn
 
 ## Resumen
-marciano1111/bn es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2. Lo publica el usuario marciano1111 en HuggingFace y esta entrenado sobre Krea 2 RAW (krea/Krea-2-Raw), segun indica la propia model card. Su proposito es inyectar un concepto concreto —una identidad femenina activada mediante el token `vqx woman`— en el pipeline de generacion, sin necesidad de reentrenar el modelo base.
+marciano1111/bn es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2. Lo publica el usuario marciano1111 en Hugging Face y esta entrenado sobre Krea 2 RAW (krea/Krea-2-Raw), segun indica la propia model card. Su proposito es inyectar un concepto concreto —una identidad femenina activada mediante el token `vqx woman`— en el pipeline de generacion, sin necesidad de reentrenar el modelo base.
 
 El repositorio forma parte del ecosistema diffusers y esta etiquetado como `text-to-image`, `lora` y `krea2`, con plantilla `sd-lora`. El peso del repositorio es de 0,8 GB, coherente con un adaptador de bajo rango más que con un modelo completo. La licencia declarada es Apache 2.0.
 

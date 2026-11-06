@@ -21,7 +21,7 @@ Este modelo es relevante porque explora una técnica de fusión de checkpoints d
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se infiere parcialmente del tag `gpt_neox` en HuggingFace: se trata de un transformer causal con capas de atención, probablemente con normalización de capas y activaciones tipo GeLU, siguiendo el diseño de GPT-NeoX. No se dispone de detalles sobre el número de capas, heads o dimensiones ocultas, ni sobre el modelo base original del que proceden los checkpoints.
+La arquitectura se infiere parcialmente del tag `gpt_neox` en Hugging Face: se trata de un transformer causal con capas de atención, probablemente con normalización de capas y activaciones tipo GeLU, siguiendo el diseño de GPT-NeoX. No se dispone de detalles sobre el número de capas, heads o dimensiones ocultas, ni sobre el modelo base original del que proceden los checkpoints.
 
 El entrenamiento corresponde a un proceso de alineación end-to-end con filtrado (`filtered_e2e_alignment`), del cual se han guardado checkpoints en pasos globales de 6000 a 10000. El merge se realiza con el método linear de mergekit: se promedian los cinco checkpoints con pesos iguales (1.0 cada uno), se normalizan los pesos resultantes y se convierten a `bfloat16`. No hay información sobre el dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas adicionales como RLHF o DPO.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa fiable. El modelo 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_9k_10k_simpleavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_9k_10k_simpleavg_merge)
 - [Merge de 3 checkpoints (6k, 7k, 8k)](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge)
 - [Merge de 3 checkpoints (8k, 9k, 10k)](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge)
 - [Merge de 3 checkpoints (4k, 5k, 6k)](https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg)

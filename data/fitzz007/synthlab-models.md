@@ -4,7 +4,7 @@
 
 SynthLab (repo `Fitzz007/synthlab-models`) no es un modelo entrenado, sino un sistema de orquestación de generación de imágenes que ejecuta un mismo prompt a través de varios backbones de difusión de forma secuencial. Está construido sobre ComfyUI como motor de inferencia y una interfaz web en Flask, y añade dos piezas propias: una verificación de calidad basada en CLIP (comparando la imagen generada con una imagen de referencia y con el prompt) y un mecanismo de fallback que salta al siguiente modelo si uno falla o no supera el umbral de calidad configurado.
 
-El repo tiene 134 GB, se distribuye bajo licencia MIT según su model card y está etiquetado con la librería `diffusers`, pero no declara pipeline en HuggingFace ni ofrece pesos propios: lo que contiene son checkpoints, UNET/GGUF, text encoders, VAE y LoRAs de terceros organizados para ComfyUI. Los backbones que la model card menciona explícitamente son SDXL, SD 3 Medium, PixArt Sigma, AuraFlow, Kolors, HunyuanDiT y SD 1.5.
+El repo tiene 134 GB, se distribuye bajo licencia MIT según su model card y está etiquetado con la librería `diffusers`, pero no declara pipeline en Hugging Face ni ofrece pesos propios: lo que contiene son checkpoints, UNET/GGUF, text encoders, VAE y LoRAs de terceros organizados para ComfyUI. Los backbones que la model card menciona explícitamente son SDXL, SD 3 Medium, PixArt Sigma, AuraFlow, Kolors, HunyuanDiT y SD 1.5.
 
 Su relevancia es acotada y muy específica: sirve como banco de pruebas local para comparar backbones sobre un mismo prompt con una métrica automática, en una máquina Windows con GPU NVIDIA de 6 GB (probado en una RTX 4050 Laptop). No hay resultados de benchmarks publicados, cero descargas y cero likes en el momento de la ficha, y no se documenta ningún entrenamiento propio.
 
@@ -18,7 +18,7 @@ Su relevancia es acotada y muy específica: sirve como banco de pruebas local pa
 | Longitud de contexto | no disponible (la longitud del prompt la fija el text encoder de cada backbone) |
 | Tipos de cuantizacion | safetensors y GGUF/UNET soportados por estructura de carpetas; cuantizaciones concretas no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | MIT según la model card; los metadatos de HuggingFace no declaran licencia |
+| Licencia | MIT según la model card; los metadatos de Hugging Face no declaran licencia |
 | Formato de pesos | safetensors (.safetensors), GGUF, checkpoints ComfyUI, LoRAs |
 | Tamano del repositorio | 134.0 GB |
 | Libreria declarada | diffusers |
@@ -99,10 +99,10 @@ Nota: los datos de las columnas de ComfyUI, InvokeAI y Fooocus proceden de conoc
 - La ejecución secuencial multiplica el coste: N modelos implican N generaciones completas más los reintentos, con el consumo de VRAM y de disco asociado.
 - Sin evaluación publicada, sin tests ni CI, autor único y fechas de creación y actualización separadas por siete minutos: madurez muy baja, sin historial de mantenimiento.
 - El servidor Flask escucha en `127.0.0.1:5000` y no se documenta autenticación, control de acceso ni validación de las imágenes de referencia subidas; no debe exponerse fuera de localhost sin trabajo adicional.
-- No se declara `pipeline` en HuggingFace ni se especifica versión mínima de ComfyUI, de PyTorch o de CUDA, lo que puede provocar incompatibilidades al reproducir el entorno.
+- No se declara `pipeline` en Hugging Face ni se especifica versión mínima de ComfyUI, de PyTorch o de CUDA, lo que puede provocar incompatibilidades al reproducir el entorno.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fitzz007/synthlab-models
+- Repositorio en Hugging Face: https://huggingface.co/Fitzz007/synthlab-models
 - ComfyUI (motor del que depende el proyecto, citado en la model card): https://github.com/comfyanonymous/ComfyUI
-- No se han encontrado en la informacion disponible papers, blogs, demos, repositorios adicionales ni espacios de HuggingFace asociados.
+- No se han encontrado en la informacion disponible papers, blogs, demos, repositorios adicionales ni espacios de Hugging Face asociados.

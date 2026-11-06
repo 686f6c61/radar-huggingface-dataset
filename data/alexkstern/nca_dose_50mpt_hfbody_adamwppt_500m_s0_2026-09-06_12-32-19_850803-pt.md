@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | nca_dose_50Mpt_hfbody_500M_s0 | alexkstern | Apache 2.0 | Misma serie, sin "adamwppt" en el nombre, seed 0 |
 | nca_dose_50Mpt_hfbody_500M_s1 | alexkstern | Apache 2.0 | Misma serie, sin "adamwppt" en el nombre, seed 1 |
 
-No se dispone de información detallada sobre los modelos comparables; solo se conoce su existencia en HuggingFace y que pertenecen a la misma serie de experimentos.
+No se dispone de información detallada sobre los modelos comparables; solo se conoce su existencia en Hugging Face y que pertenecen a la misma serie de experimentos.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ No se dispone de información detallada sobre los modelos comparables; solo se c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_500M_s0_2026-09-06_12-32-19_850803-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_adamwppt_500M_s0_2026-09-06_12-32-19_850803-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_50Mpt_adamw_seed_replicas_v1/runs/tqjeta5o
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Modelos similares:

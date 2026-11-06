@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SPACE_Gamma2-2B | No declarado (~2,6B heredados del base) | No declarado (8.192 en el base) | No publicados | Gemma | HuggingFace, 0 descargas |
-| google/gemma-2-2b | ~2,6B | 8.192 tokens | Publicados por Google en su model card | Gemma | HuggingFace, muy extendido |
-| google/gemma-2-2b-it | ~2,6B | 8.192 tokens | Publicados por Google en su model card | Gemma | HuggingFace, muy extendido |
-| HoangTran223/gemma2_2b_sft_ultrachat200k_20260820_043159 | No declarado | No declarado | No publicados | No disponible | HuggingFace; es el checkpoint de inicialización de este modelo |
+| SPACE_Gamma2-2B | No declarado (~2,6B heredados del base) | No declarado (8.192 en el base) | No publicados | Gemma | Hugging Face, 0 descargas |
+| google/gemma-2-2b | ~2,6B | 8.192 tokens | Publicados por Google en su model card | Gemma | Hugging Face, muy extendido |
+| google/gemma-2-2b-it | ~2,6B | 8.192 tokens | Publicados por Google en su model card | Gemma | Hugging Face, muy extendido |
+| HoangTran223/gemma2_2b_sft_ultrachat200k_20260820_043159 | No declarado | No declarado | No publicados | No disponible | Hugging Face; es el checkpoint de inicialización de este modelo |
 
 No se dispone de datos de rendimiento comparados para ninguno de los modelos de la tabla salvo los publicados por Google para el modelo base, que no se reproducen aquí por no formar parte de la información proporcionada.
 
@@ -86,11 +86,11 @@ No se dispone de datos de rendimiento comparados para ninguno de los modelos de 
 - Confusión de nombres: el repositorio se llama `SPACE_Gamma2-2B` ("Gamma", no "Gemma"); conviene no confundirlo con otros modelos Gemma al automatizar descargas.
 - Estructura de carga no estándar: el modelo no se carga directamente desde la raíz del repositorio, sino indicando `subfolder="ite1"` (o `ite0`). Las herramientas que esperen un repositorio plano fallarán.
 - Estado inacabado: existe una tercera iteración a medias (`ite2/LATEST`) con metadatos de reanudación; no debe tratarse como un checkpoint final.
-- Fechas del repositorio en 2026 y ausencia de pipeline declarado en HuggingFace; no hay demo, Space ni endpoint público asociado.
+- Fechas del repositorio en 2026 y ausencia de pipeline declarado en Hugging Face; no hay demo, Space ni endpoint público asociado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoangTran223/SPACE_Gamma2-2B
+- Modelo en Hugging Face: https://huggingface.co/HoangTran223/SPACE_Gamma2-2B
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Checkpoint de inicialización SFT: https://huggingface.co/HoangTran223/gemma2_2b_sft_ultrachat200k_20260820_043159
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms

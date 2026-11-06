@@ -6,7 +6,7 @@ UltraTex es un método de generación de texturas PBR (physically based renderin
 
 El sistema no es un modelo único, sino una pipeline de cuatro componentes publicados como pesos separados: UltraTex-MV-Albedo (generación multivista de albedo), UltraTex-MV-MR (generación multivista de metallic/roughness, con un componente Qwen3.5-9B en su estructura de pesos), UltraTex-SR (superresolución de texturas, con un upscaler 4x "lite", un 2x-RealESRGAN, un DiT en bf16 y fp8_e4m3fn y un VAE podado en fp16) y UltraTex-Converter-Normal (conversión a mapas de normales). Cada componente se organiza en carpetas de tipo `scheduler/`, `transformer/` y `vae/`, lo que apunta a una implementación basada en difusión con estructura compatible con Diffusers.
 
-La relevancia del modelo es académica y de nicho: ataca un paso tradicionalmente manual y costoso del pipeline 3D (la autoría de materiales PBR). Según la model card, UltraTex supera a todos los baselines evaluados en valoraciones de arena y comparaciones por pares de preferencia, aunque no se publican cifras concretas. En el momento de redactar esta ficha el repositorio de HuggingFace no tiene descargas ni likes (0/0), no declara licencia y reporta un tamaño de 0,0 GB, por lo que la disponibilidad real de los pesos es dudosa.
+La relevancia del modelo es académica y de nicho: ataca un paso tradicionalmente manual y costoso del pipeline 3D (la autoría de materiales PBR). Según la model card, UltraTex supera a todos los baselines evaluados en valoraciones de arena y comparaciones por pares de preferencia, aunque no se publican cifras concretas. En el momento de redactar esta ficha el repositorio de Hugging Face no tiene descargas ni likes (0/0), no declara licencia y reporta un tamaño de 0,0 GB, por lo que la disponibilidad real de los pesos es dudosa.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ La relevancia del modelo es académica y de nicho: ataca un paso tradicionalment
 | Componentes publicados | UltraTex-MV-Albedo, UltraTex-MV-MR (incluye directorio Qwen3.5-9B), UltraTex-SR, UltraTex-Converter-Normal |
 | Canales PBR generados | Albedo, metallic, roughness y normales (estas últimas mediante el convertidor) |
 | Superresolución incluida | Upscaler 4x "lite" y 2x-RealESRGAN (factor combinado no especificado) |
-| Fecha de publicación en HuggingFace | 21 de septiembre de 2026 |
+| Fecha de publicación en Hugging Face | 21 de septiembre de 2026 |
 | Paper | SIGGRAPH Asia (TOG) 2026 |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 ## Requisitos de hardware
 
 - No se publican requisitos oficiales de VRAM, GPU recomendadas, latencia ni throughput.
-- El repositorio reporta un tamaño de 0,0 GB y ningún archivo de pesos confirmado, por lo que la ejecución local podría no ser posible con los artefactos publicados actualmente en HuggingFace.
+- El repositorio reporta un tamaño de 0,0 GB y ningún archivo de pesos confirmado, por lo que la ejecución local podría no ser posible con los artefactos publicados actualmente en Hugging Face.
 - Los nombres de archivo indican versiones en bf16, fp8_e4m3fn y fp16 podado del VAE, lo que sugiere que los autores contemplan al menos dos perfiles de memoria: uno de mayor precisión y otro orientado a GPUs con menos VRAM.
 - La presencia de un componente Qwen3.5-9B dentro de UltraTex-MV-MR implica, en el caso de cargarse completo, un consumo de memoria relevante solo para ese subcomponente antes de contar el transformer de difusión.
 - Estimación orientativa, no confirmada por los autores: un pipeline completo con generación multivista más superresolución probablemente requiera GPUs de gama profesional (A100, H100, L40S) o, en el mejor de los casos con las variantes fp8, GPUs consumer de 24 GB o más. Esta estimación no debe tomarse como dato verificado.
@@ -94,7 +94,7 @@ No disponible. La información proporcionada no identifica los baselines utiliza
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jingzhi03/UltraTex
+- Repositorio en Hugging Face: https://huggingface.co/Jingzhi03/UltraTex
 - Página del proyecto: https://ultratex.vercel.app/
 - Vídeo de demostración: https://jingzhi03.com/watch/ultratex
 - Repositorio de código en GitHub: https://github.com/ZqlwMatt/UltraTex

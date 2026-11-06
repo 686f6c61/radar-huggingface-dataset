@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Yxian909/ner-baseline` es un modelo de clasificación de tokens (token classification) publicado en HuggingFace por el usuario Yxian909. Por su arquitectura y tamaño, se trata de un ajuste fino de DistilBERT, la variante destilada de BERT, orientado presumiblemente a reconocimiento de entidades nombradas (NER), tal como sugiere el identificador del repositorio. El modelo cuenta con 65.197.833 parámetros y un repositorio de aproximadamente 0,3 GB, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU y GPU de consumo.
+`Yxian909/ner-baseline` es un modelo de clasificación de tokens (token classification) publicado en Hugging Face por el usuario Yxian909. Por su arquitectura y tamaño, se trata de un ajuste fino de DistilBERT, la variante destilada de BERT, orientado presumiblemente a reconocimiento de entidades nombradas (NER), tal como sugiere el identificador del repositorio. El modelo cuenta con 65.197.833 parámetros y un repositorio de aproximadamente 0,3 GB, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en CPU y GPU de consumo.
 
 La relevancia de este tipo de modelos radica en su bajo coste computacional y su utilidad como línea base (baseline) para tareas de etiquetado secuencial: extracción de entidades, detección de información personal, anonimización de textos o enriquecimiento de pipelines de procesamiento de lenguaje natural. Al ser un modelo pequeño, permite despliegues con latencias bajas y gran throughput en comparación con modelos generativos de mayor tamaño.
 
-Sin embargo, la información publicada es extremadamente escasa: la model card es la plantilla automática de HuggingFace sin cumplimentar, y no se especifican datos de entrenamiento, idiomas, licencia ni resultados de evaluación. Cualquier uso en producción requeriría validación propia del modelo sobre el dominio objetivo antes de confiar en sus predicciones.
+Sin embargo, la información publicada es extremadamente escasa: la model card es la plantilla automática de Hugging Face sin cumplimentar, y no se especifican datos de entrenamiento, idiomas, licencia ni resultados de evaluación. Cualquier uso en producción requeriría validación propia del modelo sobre el dominio objetivo antes de confiar en sus predicciones.
 
 ## Especificaciones tecnicas
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yxian909/ner-baseline | 65,2 M | no disponible | token-classification (NER) | no disponible | HuggingFace |
-| dslim/bert-base-NER | ~110 M | 512 tokens | NER (CoNLL-2003, 4 clases) | MIT | HuggingFace |
-| dslim/distilbert-NER | ~66 M | 512 tokens | NER (CoNLL-2003, 4 clases) | MIT | HuggingFace |
-| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 tokens | NER (OntoNotes) | MIT | HuggingFace |
+| Yxian909/ner-baseline | 65,2 M | no disponible | token-classification (NER) | no disponible | Hugging Face |
+| dslim/bert-base-NER | ~110 M | 512 tokens | NER (CoNLL-2003, 4 clases) | MIT | Hugging Face |
+| dslim/distilbert-NER | ~66 M | 512 tokens | NER (CoNLL-2003, 4 clases) | MIT | Hugging Face |
+| Jean-Baptiste/roberta-large-ner-english | ~355 M | 512 tokens | NER (OntoNotes) | MIT | Hugging Face |
 
 La comparación con `dslim/distilbert-NER` es la más directa por tamaño y arquitectura; sin embargo, no se dispone de métricas de este repositorio para contrastar calidad. Los modelos de referencia de la tabla son alternativas conocidas con licencia permisiva y documentación completa, lo que supone una ventaja frente a la ausencia de información de `Yxian909/ner-baseline`.
 
@@ -81,7 +81,7 @@ La comparación con `dslim/distilbert-NER` es la más directa por tamaño y arqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yxian909/ner-baseline
+- Repositorio Hugging Face: https://huggingface.co/Yxian909/ner-baseline
 - Paper de DistilBERT (referencia arquitectónica): https://arxiv.org/abs/1910.01108
 - Paper de BERT (arquitectura base): https://arxiv.org/abs/1810.04805
 - Paper citado en la model card (Lacoste et al., 2019, impacto medioambiental): https://arxiv.org/abs/1910.09700

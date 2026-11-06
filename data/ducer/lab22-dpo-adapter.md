@@ -67,9 +67,9 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ducer/lab22-dpo-adapter` | adaptador LoRA sobre 3B | no disponible | no disponible | HuggingFace |
-| `unsloth/Qwen2.5-3B-bnb-4bit` (base) | 3B | 32K | Apache 2.0 (Qwen) | HuggingFace |
-| `Wan1302/lab22-dpo-adapter-adapter` | adaptador LoRA sobre 3B | no disponible | no disponible | HuggingFace |
+| `ducer/lab22-dpo-adapter` | adaptador LoRA sobre 3B | no disponible | no disponible | Hugging Face |
+| `unsloth/Qwen2.5-3B-bnb-4bit` (base) | 3B | 32K | Apache 2.0 (Qwen) | Hugging Face |
+| `Wan1302/lab22-dpo-adapter-adapter` | adaptador LoRA sobre 3B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ducer/lab22-dpo-adapter
+- Repositorio Hugging Face: https://huggingface.co/ducer/lab22-dpo-adapter
 - Repositorio similar (posible copia): https://huggingface.co/Wan1302/lab22-dpo-adapter-adapter
 - GitHub del autor (rubric del lab): https://github.com/ducer37/K4-Track3-Day22-2A202601380-NguyenTuanDuc/blob/main/rubric.md
 - Notebook de Colab del lab (DPO en T4): https://github.com/VinUni-AI20k/Day22-Track3-DPO-Alignment-Lab/blob/main/colab/Lab22_DPO_T4.ipynb

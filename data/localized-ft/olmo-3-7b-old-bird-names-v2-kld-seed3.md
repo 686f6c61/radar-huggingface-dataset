@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-old-bird-names-v2-kld-seed3 es un modelo de lenguaje de 7B parámetros, resultado de un fine-tuning del modelo base unsloth/Olmo-3-7B-Instruct, desarrollado por el usuario localized-ft. El nombre del modelo sugiere que el ajuste se realizó sobre un conjunto de datos relacionado con nombres de aves antiguos, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni la metodología específica más allá de indicar el uso de Unsloth y la librería TRL de HuggingFace.
+OLMo-3-7B-old-bird-names-v2-kld-seed3 es un modelo de lenguaje de 7B parámetros, resultado de un fine-tuning del modelo base unsloth/Olmo-3-7B-Instruct, desarrollado por el usuario localized-ft. El nombre del modelo sugiere que el ajuste se realizó sobre un conjunto de datos relacionado con nombres de aves antiguos, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni la metodología específica más allá de indicar el uso de Unsloth y la librería TRL de Hugging Face.
 
 El modelo se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificación sin restricciones significativas. Está orientado a generación de texto conversacional en inglés, y su arquitectura se basa en el modelo OLMo-3 de AI2, que es una familia de modelos completamente abiertos diseñados para razonamiento de contexto largo, function calling, codificación y seguimiento de instrucciones.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que forma parte de un ecosistema de fine-
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura OLMo-3, un transformer decoder-only desarrollado por el Allen Institute for AI (AI2). OLMo-3 se distingue por su diseño orientado a razonamiento de contexto largo, function calling y codificación, con una ventana de contexto de hasta 128K tokens en su version base. El fine-tuning se realizó con la librería Unsloth, que optimiza el entrenamiento mediante kernels de atención eficientes y reducción de memoria, junto con la librería TRL de HuggingFace para el ajuste por instrucciones.
+El modelo se basa en la arquitectura OLMo-3, un transformer decoder-only desarrollado por el Allen Institute for AI (AI2). OLMo-3 se distingue por su diseño orientado a razonamiento de contexto largo, function calling y codificación, con una ventana de contexto de hasta 128K tokens en su version base. El fine-tuning se realizó con la librería Unsloth, que optimiza el entrenamiento mediante kernels de atención eficientes y reducción de memoria, junto con la librería TRL de Hugging Face para el ajuste por instrucciones.
 
 El proceso de entrenamiento empleó probablemente LoRA (Low-Rank Adaptation), dado que el repositorio contiene solo 528.384 parámetros entrenables, lo que indica que se congelaron los pesos del modelo base y se añadieron adaptadores de bajo rango. No se especifica el número de épocas, el tamaño del dataset ni si se utilizaron técnicas como RLHF o DPO. El nombre del modelo sugiere que el dataset de entrenamiento está relacionado con nombres de aves antiguas, pero no hay información pública sobre su composición o tamaño.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: al ser un modelo de 7B parámetros en precisión FP16, se requieren aproximadamente 14-16 GB de VRAM para cargar el modelo completo. Con cuantización a 8 bits, se reduce a unos 8 GB, y a 4 bits, a unos 4-5 GB.
 - GPU recomendadas: para inferencia en FP16, una GPU con 16 GB o más (RTX 4090, A100 40GB, H100). Para cuantización 4-bit, una RTX 3060 12GB o RTX 4070 pueden ser suficientes.
 - Sí cabe en GPUs de consumo: con cuantización 4-bit, puede ejecutarse en GPUs como RTX 3060, RTX 4060 o RTX 4070.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), HuggingFace Inference Endpoints.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. Depende del hardware y de la cuantización utilizada.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ La comparativa se limita a modelos de la misma familia y a un modelo alternativo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed3
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed3
 - Paper de OLMo-3: https://arxiv.org/abs/2512.13961
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Variante seed5: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-kld-seed5

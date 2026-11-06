@@ -68,8 +68,8 @@ Los valores proceden del artículo citado por el autor y no se han verificado de
 
 | Modelo | Tipo | Parámetros | Resolución | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Priming-B | Difusión class-conditional, 1 paso | no disponible | 256×256 | 1 | Apache 2.0 | HuggingFace (`diffusers`) |
-| Priming-L | Difusión class-conditional, 1 paso | no disponible | 256×256 | 1 | Apache 2.0 | HuggingFace (`diffusers`) |
+| Priming-B | Difusión class-conditional, 1 paso | no disponible | 256×256 | 1 | Apache 2.0 | Hugging Face (`diffusers`) |
+| Priming-L | Difusión class-conditional, 1 paso | no disponible | 256×256 | 1 | Apache 2.0 | Hugging Face (`diffusers`) |
 | Alternativas de generación en un paso (modelos de consistencia, destilaciones de difusión) | Difusión/consistencia de 1-4 pasos | no disponible | variable | 1-4 | variable | no disponible en la información proporcionada |
 | Modelos de difusión class-conditional multi-paso sobre ImageNet | Difusión iterativa | no disponible | 256×256 | decenas | variable | no disponible en la información proporcionada |
 
@@ -91,7 +91,7 @@ La información proporcionada no incluye especificaciones ni resultados de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BiliSakura/Priming-diffusers
+- Modelo en Hugging Face: https://huggingface.co/BiliSakura/Priming-diffusers
 - Paper (*Are We Overthinking One-Step Generation?*): https://arxiv.org/abs/2610.20331
 - Repositorio de código: https://github.com/JaeyeonKim01/priming
 - Librería diffusers: https://github.com/huggingface/diffusers

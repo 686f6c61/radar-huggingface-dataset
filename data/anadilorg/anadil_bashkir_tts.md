@@ -71,9 +71,9 @@ No se dispone de datos de rendimiento ni de especificaciones completas del model
 
 | Modelo | Tipo | Idioma | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AnadilBashkirTTS | Adaptador LoRA sobre VoxCPM2 | Başkir (`bak`) | ~18,1 M (adaptador) | no disponible | MIT | HuggingFace |
-| openbmb/VoxCPM2 | TTS base | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Otros adaptadores de la familia Anadil | Adaptadores LoRA sobre VoxCPM2 | Laz, zazaki, adigué, kurmanji, armenio, ladino, kirguís, uigur, sakha, turcomano, uzbeko, tártaro, kazajo | ~similar (no confirmado) | no disponible | MIT (según familia) | HuggingFace (Anadilorg) |
+| AnadilBashkirTTS | Adaptador LoRA sobre VoxCPM2 | Başkir (`bak`) | ~18,1 M (adaptador) | no disponible | MIT | Hugging Face |
+| openbmb/VoxCPM2 | TTS base | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Otros adaptadores de la familia Anadil | Adaptadores LoRA sobre VoxCPM2 | Laz, zazaki, adigué, kurmanji, armenio, ladino, kirguís, uigur, sakha, turcomano, uzbeko, tártaro, kazajo | ~similar (no confirmado) | no disponible | MIT (según familia) | Hugging Face (Anadilorg) |
 
 No se dispone de comparaciones con modelos TTS comerciales o de otros autores en la información proporcionada.
 
@@ -90,8 +90,8 @@ No se dispone de comparaciones con modelos TTS comerciales o de otros autores en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anadilorg/Anadil_Bashkir_TTS
+- Modelo en Hugging Face: https://huggingface.co/Anadilorg/Anadil_Bashkir_TTS
 - Modelo base VoxCPM2: https://huggingface.co/openbmb/VoxCPM2
 - Muestras de audio originales y sintetizadas: https://huggingface.co/Anadilorg/Anadil_Bashkir_TTS/tree/main/samples
 - Mozilla Common Voice 26.0 (fuente de datos `bak`): https://commonvoice.mozilla.org/
-- Organización Anadilorg en HuggingFace: https://huggingface.co/Anadilorg
+- Organización Anadilorg en Hugging Face: https://huggingface.co/Anadilorg

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hamm-eyer/grad-generation` es un prototipo de investigación que implementa una arquitectura **Perceiver** orientada a tareas de generación. Lo desarrolla el usuario `hamm-eyer` y se publica bajo licencia BSD-3-Clause en HuggingFace, con un checkpoint de inicialización de 24.832 parámetros. A diferencia de modelos de lenguaje masivos, este repo es un experimento de arquitectura y formato: incluye un script `predict.py` con ejemplo ejecutable, un `config.json` con la configuración de escalado y un `training_args.json` con una receta de entrenamiento por defecto.
+El modelo `hamm-eyer/grad-generation` es un prototipo de investigación que implementa una arquitectura **Perceiver** orientada a tareas de generación. Lo desarrolla el usuario `hamm-eyer` y se publica bajo licencia BSD-3-Clause en Hugging Face, con un checkpoint de inicialización de 24.832 parámetros. A diferencia de modelos de lenguaje masivos, este repo es un experimento de arquitectura y formato: incluye un script `predict.py` con ejemplo ejecutable, un `config.json` con la configuración de escalado y un `training_args.json` con una receta de entrenamiento por defecto.
 
 El diseño destaca por usar **atención lineal**, fusión bilinear, activación `approx gelu` y normalización `layernorm`, con una configuración denominada "giant" que define los valores por defecto de los ficheros de configuración. El autor es explícito en que el checkpoint incluido no está entrenado, no presenta métricas de rendimiento y debe tratarse como un punto de partida experimental. Es un modelo relevante para investigar el comportamiento de los Perceiver en generación, pero no está listo para ningún uso productivo.
 
@@ -26,7 +26,7 @@ El modelo es un **Perceiver** con atención lineal, fusión bilinear, activació
 ## Capacidades
 
 - Generación genérica: el script incluye un ejemplo de test de humo que demuestra que el modelo puede ejecutar una pasada hacia adelante y generar alguna salida con pesos de inicialización.
-- Implementación personalizada: no es compatible con las APIs de carga automática habituales de HuggingFace sin un adaptador explícito.
+- Implementación personalizada: no es compatible con las APIs de carga automática habituales de Hugging Face sin un adaptador explícito.
 - No se ha verificado soporte de tool calling, function calling, uso de agentes, razonamiento multi-paso, visión, audio ni capacidades multilingües.
 - El formato safetensors permite cargar los pesos con PyTorch, pero el modelo no ofrece ninguna funcionalidad viable más allá de experimentación básica.
 
@@ -59,12 +59,12 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - El checkpoint incluido no ha sido entrenado, por lo que no es apto para ninguna tarea real de generación; su salida será ruido o texto incoherente.
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio, tal y como reconoce el propio autor.
-- La implementación es experimental y requiere un adaptador explícito para ser cargada con APIs genéricas de HuggingFace.
+- La implementación es experimental y requiere un adaptador explícito para ser cargada con APIs genéricas de Hugging Face.
 - Al no haber datos de entrenamiento documentados ni evaluaciones, existe un riesgo alto de alucinación si se intentase usar el modelo como si estuviera entrenado.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usa con otros datasets.
 - No hay soporte de idiomas conocido y no se garantiza que el modelo funcione con textos multilingües.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hamm-eyer/grad-generation
+- Hugging Face: https://huggingface.co/hamm-eyer/grad-generation
 - Fichero pythón principal: `predict.py` dentro del repositorio (no disponible como URL directa en la información proporcionada)

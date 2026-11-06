@@ -29,7 +29,7 @@ El resultado principal publicado es una mejora de BPC en arabe de 1,5446 (Qwen3-
 | Pipeline | text-generation |
 | Tamano del repositorio | 1,2 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-23 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-23 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,16 +77,16 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 - Con cuantizacion de 8 bits: alrededor de 0,6-0,7 GB de pesos; con cuantizacion de 4 bits: alrededor de 0,3-0,4 GB. Estas cuantizaciones no estan publicadas en el repositorio y habria que generarlas.
 - GPU recomendadas: cabe holgadamente en GPU de consumo como RTX 3060 de 12 GB, RTX 4060, RTX 4070, RTX 4090 y en GPUs de portatil con 6-8 GB. Para lotes grandes o contextos muy largos son preferibles A100 o H100, aunque no son necesarias para inferencia de una sola secuencia.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 4 GB o mas de VRAM, y tambien en CPU para inferencia a baja velocidad.
-- Opciones de despliegue: transformers (metodo documentado en la model card con `AutoModelForCausalLM` y `torch_dtype="bfloat16"`), HuggingFace Text Generation Inference (el repositorio declara la etiqueta `text-generation-inference` y `endpoints_compatible`), HuggingFace Inference Endpoints. Para vLLM, llama.cpp u Ollama seria necesario verificar compatibilidad y, en el caso de llama.cpp/Ollama, convertir previamente los pesos a GGUF, ya que no se publican ficheros GGUF en el repositorio.
+- Opciones de despliegue: transformers (metodo documentado en la model card con `AutoModelForCausalLM` y `torch_dtype="bfloat16"`), Hugging Face Text Generation Inference (el repositorio declara la etiqueta `text-generation-inference` y `endpoints_compatible`), Hugging Face Inference Endpoints. Para vLLM, llama.cpp u Ollama seria necesario verificar compatibilidad y, en el caso de llama.cpp/Ollama, convertir previamente los pesos a GGUF, ya que no se publican ficheros GGUF en el repositorio.
 - Latencia y throughput: no disponible. No se publican mediciones de latencia ni de tokens por segundo en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | BPC en arabe (↓) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AraToken-Qwen3-0.6B-CPT (este modelo) | 596.049.920 | no disponible en la informacion | 1,4047 | Apache-2.0 | safetensors en HuggingFace |
-| Qwen3-0.6B-Base | no disponible en la informacion | no disponible en la informacion | 1,5446 | Apache-2.0 (modelo base de Qwen) | safetensors en HuggingFace |
-| AraToken-Qwen3-0.6B-LEP | no disponible en la informacion | no disponible en la informacion | 1,3219 | no disponible en la informacion (repositorio mariklolik/AraToken-Qwen3-0.6B-LEP) | safetensors en HuggingFace |
+| AraToken-Qwen3-0.6B-CPT (este modelo) | 596.049.920 | no disponible en la informacion | 1,4047 | Apache-2.0 | safetensors en Hugging Face |
+| Qwen3-0.6B-Base | no disponible en la informacion | no disponible en la informacion | 1,5446 | Apache-2.0 (modelo base de Qwen) | safetensors en Hugging Face |
+| AraToken-Qwen3-0.6B-LEP | no disponible en la informacion | no disponible en la informacion | 1,3219 | no disponible en la informacion (repositorio mariklolik/AraToken-Qwen3-0.6B-LEP) | safetensors en Hugging Face |
 
 Los tres modelos comparten la misma arquitectura base y el mismo presupuesto de entrenamiento arabe (500 millones de tokens, mismo dataset y mismo numero de pasos), por lo que la comparacion de BPC es directa. La diferencia entre este checkpoint y su hermano LEP es el tokenizador: LEP incorpora extension de vocabulario especifica para arabe, mientras que este conserva el tokenizador original de Qwen3. No se dispone de datos de benchmarks estandar (MMLU, HumanEval, GSM8K) para ninguno de los tres en la informacion proporcionada, ni de comparaciones con otras familias de modelos pequenos de proposito general o especificos para arabe.
 
@@ -105,7 +105,7 @@ Los tres modelos comparten la misma arquitectura base y el mismo presupuesto de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mariklolik/AraToken-Qwen3-0.6B-CPT
+- Modelo en Hugging Face: https://huggingface.co/mariklolik/AraToken-Qwen3-0.6B-CPT
 - Variante con extension de vocabulario (LEP): https://huggingface.co/mariklolik/AraToken-Qwen3-0.6B-LEP
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/mariklolik/AraToken-FineWeb2-HQ-ar

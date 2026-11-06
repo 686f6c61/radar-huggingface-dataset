@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PulsePoint/Flex es un repositorio de HuggingFace publicado por el usuario PulsePoint bajo licencia apache-2.0, etiquetado como modelo de embeddings multimodal (`feature-extraction`, `embedding_gemma2`, `sentence-transformers`) y con 744.371.512 parámetros reales declarados en sus ficheros safetensors (repo de 1,5 GB). Su arquitectura es la de un encoder Transformer que proyecta texto, imagen, vídeo y audio a un único espacio vectorial de 768 dimensiones, con truncamiento Matryoshka a 512, 256 y 128 dimensiones y una ventana de contexto de 8.192 tokens.
+PulsePoint/Flex es un repositorio de Hugging Face publicado por el usuario PulsePoint bajo licencia apache-2.0, etiquetado como modelo de embeddings multimodal (`feature-extraction`, `embedding_gemma2`, `sentence-transformers`) y con 744.371.512 parámetros reales declarados en sus ficheros safetensors (repo de 1,5 GB). Su arquitectura es la de un encoder Transformer que proyecta texto, imagen, vídeo y audio a un único espacio vectorial de 768 dimensiones, con truncamiento Matryoshka a 512, 256 y 128 dimensiones y una ventana de contexto de 8.192 tokens.
 
 La model card del repositorio, sin embargo, describe de forma explícita **EmbeddingGemma 2**, atribuido a Google DeepMind: 740M de parámetros totales compuestos por un backbone de texto de 130M, un embedder de 140M, un encoder de visión de 170M y un encoder de audio de 300M, con 24 capas y atención local/global 5:1. Es decir, el contenido técnico corresponde a un modelo de Google mientras que la autoría del repositorio figura a nombre de PulsePoint, con 0 descargas y 1 like en el momento de la consulta. Esa discrepancia debe tenerse en cuenta antes de cualquier uso en producción.
 
@@ -69,7 +69,7 @@ Resultados reportados en la model card con el checkpoint en precision completa (
 | Documento visual | MMEB v2 (VisDoc) | Mean(Task), NDCG@5 | 67,84 | no disponible |
 | Video | MMEB v2 (Video) | Mean(Task), Hit@1 | 50,67 | no disponible |
 | Audio | MSEB (Retrieval) | Mean(Task), MRR@10 | 69,54 | no disponible |
-| Audio | MAEB (HuggingFace) | Mean(Task) | 49,39 | no disponible |
+| Audio | MAEB (Hugging Face) | Mean(Task) | 49,39 | no disponible |
 | Multimodal global | MMEB v2 (Overall) | Mean(Task) | 59,01 | no disponible |
 
 Efecto del truncamiento MRL:
@@ -96,8 +96,8 @@ No se han publicado en la informacion disponible resultados de benchmarks para e
 
 | Modelo | Parametros | Contexto | Modalidades | MTEB multilingual v2 | MTEB code v1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| PulsePoint/Flex (card de EmbeddingGemma 2) | 744M (270M texto + 170M vision + 300M audio) | 8.192 tokens | Texto, imagen, video, audio | 61,36 | 78,68 | apache-2.0 | HuggingFace, 0 descargas |
-| EmbeddingGemma 1 | no disponible | no disponible | Texto | 61,15 | 68,76 | no disponible en la informacion proporcionada | HuggingFace |
+| PulsePoint/Flex (card de EmbeddingGemma 2) | 744M (270M texto + 170M vision + 300M audio) | 8.192 tokens | Texto, imagen, video, audio | 61,36 | 78,68 | apache-2.0 | Hugging Face, 0 descargas |
+| EmbeddingGemma 1 | no disponible | no disponible | Texto | 61,15 | 68,76 | no disponible en la informacion proporcionada | Hugging Face |
 | Otros modelos de embeddings multimodales (p. ej. familias BGE-M3, jina-clip, multilingual-e5) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con alternativas de terceros no puede completarse de forma rigurosa porque la informacion proporcionada solo incluye cifras del predecesor EmbeddingGemma 1. Cualquier comparacion con modelos de otros autores requeriria consultar sus respectivas model cards y verificar que usan la misma version de MTEB y el mismo protocolo de evaluacion.
@@ -118,7 +118,7 @@ La comparativa con alternativas de terceros no puede completarse de forma riguro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PulsePoint/Flex
+- Repositorio Hugging Face: https://huggingface.co/PulsePoint/Flex
 - Modelo al que hace referencia la card: https://huggingface.co/google/embeddinggemma-2
 - GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2

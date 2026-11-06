@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `alaareda12/neuro-disease-classifier` es un clasificador de texto alojado en HuggingFace por el usuario alaareda12. Por el nombre y la etiqueta `text-classification`, esta pensado para tareas de clasificacion relacionadas con enfermedades neurologicas, aunque la model card no documenta el problema concreto, las clases de salida ni el conjunto de datos empleado. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 6 de octubre de 2026, sin actividad posterior registrada.
+El modelo `alaareda12/neuro-disease-classifier` es un clasificador de texto alojado en Hugging Face por el usuario alaareda12. Por el nombre y la etiqueta `text-classification`, esta pensado para tareas de clasificacion relacionadas con enfermedades neurologicas, aunque la model card no documenta el problema concreto, las clases de salida ni el conjunto de datos empleado. El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado el 6 de octubre de 2026, sin actividad posterior registrada.
 
 La etiqueta `bert` del repositorio y el recuento real de parametros en safetensors (109.486.085) apuntan a una arquitectura basada en BERT de escala base, coherente con el tamano tipico de BERT-base (unos 110 millones de parametros). No obstante, ni la model card ni los metadatos confirman la arquitectura exacta, el tokenizador, la longitud de contexto ni el regimen de entrenamiento.
 
-El modelo es relevante unicamente como posible punto de partida para tareas de clasificacion de texto en el ambito neurologico, pero su falta total de documentacion (la model card es la plantilla autogenerada de HuggingFace, con todos los campos en "[More Information Needed]"), la ausencia de licencia declarada y la carencia de benchmarks publicados lo convierten en un artefacto no apto para produccion sin una evaluacion previa por parte del usuario.
+El modelo es relevante unicamente como posible punto de partida para tareas de clasificacion de texto en el ambito neurologico, pero su falta total de documentacion (la model card es la plantilla autogenerada de Hugging Face, con todos los campos en "[More Information Needed]"), la ausencia de licencia declarada y la carencia de benchmarks publicados lo convierten en un artefacto no apto para produccion sin una evaluacion previa por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 109,5 millones de parametros, el modelo ocupa aproximadamente 440 MB en FP32, 220 MB en FP16/BF16 y cerca de 110 MB en INT8 (estimaciones derivadas del recuento de parametros, no confirmadas por el autor).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (por ejemplo, GTX 1650, RTX 3050, T4). Modelos mayores como A100 o H100 no aportan ventaja para este tamano salvo por procesamiento por lotes a gran escala.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU de consumo actual, e incluso puede ejecutarse en CPU con latencias aceptables para clasificacion por lotes.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints y, dado el tag `text-embeddings-inference`, podria desplegarse con esa infraestructura. Tambien seria desplegable con TGI (Text Generation Inference), si bien no es un modelo generativo; con `transformers` de forma nativa; con ONNX Runtime tras conversion; y con llama.cpp u Ollama unicamente tras convertir los pesos a GGUF, un proceso no documentado en el repositorio.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints y, dado el tag `text-embeddings-inference`, podria desplegarse con esa infraestructura. Tambien seria desplegable con TGI (Text Generation Inference), si bien no es un modelo generativo; con `transformers` de forma nativa; con ONNX Runtime tras conversion; y con llama.cpp u Ollama unicamente tras convertir los pesos a GGUF, un proceso no documentado en el repositorio.
 - Latencia y throughput estimados: no disponibles. Al tratarse de un encoder de 110 millones de parametros, en GPU moderna se esperan latencias de milisegundos por secuencia corta, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -68,10 +68,10 @@ No hay informacion suficiente sobre el modelo evaluado para establecer una compa
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alaareda12/neuro-disease-classifier | 109,5 M | no disponible | Clasificacion de texto (presunto ambito neurologico) | no disponible | HuggingFace, 0 descargas |
-| bert-base-uncased | 110 M | 512 tokens | Representaciones y ajuste fino para clasificacion | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-uncased | 66 M | 512 tokens | Clasificacion con menos computo | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 tokens | Clasificacion con entrenamiento masivo | MIT | HuggingFace |
+| alaareda12/neuro-disease-classifier | 109,5 M | no disponible | Clasificacion de texto (presunto ambito neurologico) | no disponible | Hugging Face, 0 descargas |
+| bert-base-uncased | 110 M | 512 tokens | Representaciones y ajuste fino para clasificacion | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-uncased | 66 M | 512 tokens | Clasificacion con menos computo | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 tokens | Clasificacion con entrenamiento masivo | MIT | Hugging Face |
 
 Las cifras de los modelos de referencia corresponden a sus especificaciones publicas conocidas; no se dispone de datos del modelo evaluado para comparar rendimiento real.
 
@@ -90,7 +90,7 @@ Las cifras de los modelos de referencia corresponden a sus especificaciones publ
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/alaareda12/neuro-disease-classifier
+- Repositorio del modelo en Hugging Face: https://huggingface.co/alaareda12/neuro-disease-classifier
 - Articulo referenciado en la model card (calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Herramienta de calculo de impacto citada: https://mlco2.github.io/impact#compute
 - No se han proporcionado otros enlaces (paper del modelo, repositorio de codigo, demo o dataset) en la informacion disponible.

@@ -75,9 +75,9 @@ Notas de la ejecución: 345 peticiones (311 ToolRet, 25 POP909-CL, 6 BRIGHT, 2 A
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adjudex 9B v2 | 8,39 B | 8.192 | Decisión tipada / clasificación con probabilidades | Apache 2.0 | HuggingFace (newsbang) |
-| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible en la información | Generación de texto | no disponible en la información | HuggingFace |
-| perplexity-ai/pplx-decider-v1.1-27b | 27 B (según nombre) | no disponible | Decisor (código de serving reutilizado) | Apache 2.0 | HuggingFace |
+| Adjudex 9B v2 | 8,39 B | 8.192 | Decisión tipada / clasificación con probabilidades | Apache 2.0 | Hugging Face (newsbang) |
+| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible en la información | Generación de texto | no disponible en la información | Hugging Face |
+| perplexity-ai/pplx-decider-v1.1-27b | 27 B (según nombre) | no disponible | Decisor (código de serving reutilizado) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y naturaleza de la tarea.
 
@@ -95,6 +95,6 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/newsbang/adjudex-9b-v2
+- Hugging Face: https://huggingface.co/newsbang/adjudex-9b-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Código de serving de referencia: https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b

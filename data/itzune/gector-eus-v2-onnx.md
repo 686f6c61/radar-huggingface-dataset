@@ -85,7 +85,7 @@ La v2 ONNX mejora la v1 al añadir la clasificación de tipo de error y al cambi
 
 ## Enlaces
 
-- [Modelo en HuggingFace: itzune/gector-eus-v2-onnx](https://huggingface.co/itzune/gector-eus-v2-onnx)
+- [Modelo en Hugging Face: itzune/gector-eus-v2-onnx](https://huggingface.co/itzune/gector-eus-v2-onnx)
 - [Modelo fuente: itzune/gector-eus-v2](https://huggingface.co/itzune/gector-eus-v2)
 - [Version v1 ONNX: itzune/gector-eus-onnx](https://huggingface.co/itzune/gector-eus-onnx)
 - [LLM para correccion en euskera: itzune/gemma-4-e4b-horkonpon](https://huggingface.co/itzune/gemma-4-e4b-horkonpon)

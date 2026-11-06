@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fbody es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario Rand000mGuy. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base krea/Krea-2-Raw, un modelo de difusion para generacion de imagenes a partir de texto. El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. La libreria declarada es diffusers y la pipeline asociada es text-to-image.
+fbody es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario Rand000mGuy. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base krea/Krea-2-Raw, un modelo de difusion para generacion de imagenes a partir de texto. El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo. La libreria declarada es diffusers y la pipeline asociada es text-to-image.
 
 El modelo no dispone de una model card descriptiva mas alla de la plantilla estandar de diffusion-lora: no se documenta el dataset de entrenamiento, el prompt de instancia (instance_prompt aparece como null), el rango del LoRA, el numero de pasos ni los hiperparametros utilizados. Tampoco se declaran idiomas soportados ni licencia, y el repositorio no registra descargas ni likes en el momento de la consulta.
 
@@ -23,7 +23,7 @@ Por su naturaleza, fbody no es un modelo de lenguaje ni un modelo fundacional au
 
 ## Arquitectura y entrenamiento
 
-fbody es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base para modificar su comportamiento sin reentrenar todos los pesos. El modelo base declarado es krea/Krea-2-Raw, un modelo de difusion para generacion de imagenes condicionada por texto. La tag template:diffusion-lora confirma que el repositorio sigue la plantilla de HuggingFace para LoRAs de difusion y que esta pensado para cargarse con la libreria diffusers.
+fbody es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base para modificar su comportamiento sin reentrenar todos los pesos. El modelo base declarado es krea/Krea-2-Raw, un modelo de difusion para generacion de imagenes condicionada por texto. La tag template:diffusion-lora confirma que el repositorio sigue la plantilla de Hugging Face para LoRAs de difusion y que esta pensado para cargarse con la libreria diffusers.
 
 No se dispone de informacion sobre el proceso de entrenamiento: ni el numero de imagenes, ni la composicion del dataset, ni el rango del LoRA, ni la tasa de aprendizaje, ni el numero de pasos. El campo instance_prompt aparece como null, de modo que no se puede saber que concepto o estilo concreto se pretendia ensenar al adaptador. Tampoco hay evidencia de tecnicas adicionales como regularizacion, captioning automatico o uso de tecnicas de personalizacion tipo DreamBooth.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rand000mGuy/fbody | LoRA sobre Krea-2-Raw | no disponible | no aplica | no disponible | HuggingFace |
-| krea/Krea-2-Raw | Modelo de difusion text-to-image | no disponible | no aplica | no disponible | HuggingFace |
-| Alternativas LoRA de la comunidad sobre Krea-2-Raw | LoRA | no disponible | no aplica | variable | HuggingFace |
+| Rand000mGuy/fbody | LoRA sobre Krea-2-Raw | no disponible | no aplica | no disponible | Hugging Face |
+| krea/Krea-2-Raw | Modelo de difusion text-to-image | no disponible | no aplica | no disponible | Hugging Face |
+| Alternativas LoRA de la comunidad sobre Krea-2-Raw | LoRA | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas. La comparacion relevante es contra el propio modelo base krea/Krea-2-Raw, ya que el adaptador no puede evaluarse de forma aislada.
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rand000mGuy/fbody
+- Repositorio Hugging Face: https://huggingface.co/Rand000mGuy/fbody
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers
 - Plantilla diffusion-lora: https://huggingface.co/docs/hub/models-lora

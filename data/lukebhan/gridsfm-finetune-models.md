@@ -67,7 +67,7 @@ No se dispone de informacion sobre modelos similares en el contexto de redes ele
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lukebhan/gridsfm-finetune-models
+- Repositorio de Hugging Face: https://huggingface.co/lukebhan/gridsfm-finetune-models
 - Repositorio de GitHub del autor (lukebhan): https://github.com/lukebhan/gridsfm
 - Repositorio oficial de Microsoft GridSFM: https://github.com/microsoft/GridSFM
 - Pagina del proyecto en Microsoft Research: https://www.microsoft.com/en-us/research/project/gridfm/

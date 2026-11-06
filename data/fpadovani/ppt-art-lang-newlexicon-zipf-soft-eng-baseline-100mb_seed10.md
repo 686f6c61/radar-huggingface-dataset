@@ -4,7 +4,7 @@
 
 El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed10` es un modelo de lenguaje pequeño (86,5 millones de parámetros) desarrollado por fpadovani, aparentemente como parte de un proyecto de investigación sobre lenguajes artificiales (el prefijo "ppt-art-lang" sugiere "paper art language" o similar). Se trata de un fine-tuning del modelo base `goldfish-models/eng_latn_100mb`, que a su vez es un modelo tipo GPT-2 entrenado en inglés latino. El nombre del modelo indica que se ha probado un "nuevo léxico" con distribución zipfiana y un enfoque "soft" (posiblemente soft prompts o soft tokens), aunque no se proporcionan detalles adicionales.
 
-El modelo está entrenado mediante Supervised Fine-Tuning (SFT) usando la librería TRL de HuggingFace, y está diseñado para generación de texto. Su relevancia es principalmente académica: sirve para estudiar cómo la elección del vocabulario y su distribución afectan al aprendizaje y comportamiento de modelos de lenguaje pequeños. No se han publicado benchmarks ni métricas de rendimiento, y el repositorio no especifica la licencia, por lo que su uso en producción es arriesgado.
+El modelo está entrenado mediante Supervised Fine-Tuning (SFT) usando la librería TRL de Hugging Face, y está diseñado para generación de texto. Su relevancia es principalmente académica: sirve para estudiar cómo la elección del vocabulario y su distribución afectan al aprendizaje y comportamiento de modelos de lenguaje pequeños. No se han publicado benchmarks ni métricas de rendimiento, y el repositorio no especifica la licencia, por lo que su uso en producción es arriesgado.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La comparativa se basa única
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed10)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft-eng-baseline-100mb_seed10)
 - [Modelo similar sin "soft": ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10)
 - [LLM Explorer - ficha del modelo](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed10,5wPQ4CHzHD2weoAbCHyJ2f)
 - [FriendliAI - despliegue del modelo](https://friendli.ai/models/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed10)

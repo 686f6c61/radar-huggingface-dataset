@@ -97,5 +97,5 @@ La comparación relevante es con el modelo base: esta conversión sacrifica flex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elcodabra/seklu-reranker-bge-m3-coreml
+- Modelo en Hugging Face: https://huggingface.co/elcodabra/seklu-reranker-bge-m3-coreml
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3

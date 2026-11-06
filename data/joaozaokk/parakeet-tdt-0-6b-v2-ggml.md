@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto/entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoZaokk/parakeet-tdt-0.6b-v2-ggml | ~0,6 mil millones | No disponible | GGML (.bin) | cc-by-4.0 | HuggingFace, 0 descargas y 0 likes en la fecha de consulta |
-| nvidia/parakeet-tdt-0.6b-v2 (origen) | ~0,6 mil millones | No disponible | .nemo | cc-by-4.0 | HuggingFace (modelo base) |
+| JoaoZaokk/parakeet-tdt-0.6b-v2-ggml | ~0,6 mil millones | No disponible | GGML (.bin) | cc-by-4.0 | Hugging Face, 0 descargas y 0 likes en la fecha de consulta |
+| nvidia/parakeet-tdt-0.6b-v2 (origen) | ~0,6 mil millones | No disponible | .nemo | cc-by-4.0 | Hugging Face (modelo base) |
 | Modelos Whisper en formato GGML dentro de whisper.cpp | No disponible en la informacion proporcionada | No disponible | GGML | No disponible | Distribuidos junto con whisper.cpp |
 | mudler/parakeet.cpp GGUF | No disponible | No disponible | GGUF | No disponible | Referenciado solo como formato incompatible |
 
@@ -88,11 +88,11 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Repositorio de terceros con garantia nula: el propio autor declara "No warranty" y el modelo no ha recibido descargas ni likes en la fecha de consulta, por lo que no hay validacion de la comunidad.
 - Licencia cc-by-4.0: permite uso comercial, pero exige atribucion a los autores originales (NVIDIA) y mantiene los terminos del checkpoint de origen.
 - Trazabilidad limitada: no se publican hashes, scripts de conversion ni registros detallados del proceso, solo la descripcion del metodo.
-- Fechas del repositorio: creado y actualizado el 2026-09-12 segun los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 2026-09-12 segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/parakeet-tdt-0.6b-v2-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/parakeet-tdt-0.6b-v2-ggml
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk
 - Motor de ejecucion: https://github.com/ggml-org/whisper.cpp

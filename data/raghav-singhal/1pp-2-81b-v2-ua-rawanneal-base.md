@@ -45,7 +45,7 @@ El preentrenamiento cubre 53.709 pasos sobre el flujo alineado por pasos de 1PP,
 - Analisis de semillas: las tres semillas (28, 42, 1234) solo cambian la inicializacion, lo que permite medir varianza de resultados sin confundirla con cambios de datos.
 - Generacion de texto en ingles para experimentos de continuacion de documentos: su perdida de validacion de 2,842 en texto documental lo hace util como linea base de modelado de lenguaje puro.
 - Prototipado de pipelines de evaluacion de modelos base: con 2,81B parametros y pesos safetensors, se puede desplegar en infraestructura modesta para pruebas de formatos de chat y mascaras de perdida.
-- Reproduccion de resultados del estudio 1PP: la model card verifica los pesos de HuggingFace contra el checkpoint de Megatron con diferencias absolutas de 0,0013 y 0,0015 en perdida de validacion, lo que facilita la replicacion.
+- Reproduccion de resultados del estudio 1PP: la model card verifica los pesos de Hugging Face contra el checkpoint de Megatron con diferencias absolutas de 0,0013 y 0,0015 en perdida de validacion, lo que facilita la replicacion.
 - Fine-tuning posterior en ingles: al ser un modelo base con licencia Apache 2.0, puede servir como punto de partida para SFT o DPO en tareas concretas, aunque sin garantias de calidad conversacional.
 
 ## Benchmarks y rendimiento
@@ -93,14 +93,14 @@ La comparacion con modelos de proposito general de 2-3B parametros (Qwen2.5-3B, 
 - Contexto limitado a 4.096 tokens, inferior al de muchos modelos contemporaneos de escala similar.
 - Sin turno de sistema en el formato de chat: los modelos nunca vieron uno, por lo que inyectar un system prompt puede degradar la salida.
 - Riesgo de alucinacion y de reproducir sesgos del corpus DCLM-edu, sin filtrado ni evaluacion de seguridad documentada.
-- Cero descargas y cero likes en HuggingFace en el momento de redactar la ficha; no hay evidencia de uso en produccion.
+- Cero descargas y cero likes en Hugging Face en el momento de redactar la ficha; no hay evidencia de uso en produccion.
 - Aunque la licencia Apache 2.0 permite uso comercial, el autor declara explicitamente que es un artefacto de investigacion y no un asistente de proposito general.
 - El modelo se creo el 2026-11-06; los datos de validacion disponibles son unicamente los reportados por el autor.
 - No se publican variantes cuantizadas oficiales; cualquier GGUF o AWQ habria que generarlo y validarlo por cuenta propia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-base
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-base
 - Variante raw: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-base
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-base
 - Coleccion 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

@@ -70,10 +70,10 @@ No existen alternativas directas publicadas para la tarea específica (recomenda
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rag-to-lora-qwen2.5-7b | 80,7 M entrenables sobre base de 7,61 B | Heredado del base (32.768 tokens nativos) | Adaptador LoRA especializado en HDC | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | 7,61 B | 32.768 tokens nativos, 131.072 con YaRN | Modelo instructivo de propósito general | Apache 2.0 | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Modelo instructivo de propósito general | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente desplegado |
-| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Modelo instructivo de propósito general | Apache 2.0 | HuggingFace |
+| rag-to-lora-qwen2.5-7b | 80,7 M entrenables sobre base de 7,61 B | Heredado del base (32.768 tokens nativos) | Adaptador LoRA especializado en HDC | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | 7,61 B | 32.768 tokens nativos, 131.072 con YaRN | Modelo instructivo de propósito general | Apache 2.0 | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Modelo instructivo de propósito general | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente desplegado |
+| Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Modelo instructivo de propósito general | Apache 2.0 | Hugging Face |
 
 Ninguno de los modelos de propósito general ofrece la tarea de recomendación de configuraciones HDC de forma nativa; requerirían ejemplos en el prompt o un pipeline RAG equivalente al que este adaptador reemplaza. No hay datos de rendimiento comparativo disponibles.
 
@@ -92,7 +92,7 @@ Ninguno de los modelos de propósito general ofrece la tarea de recomendación d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FardinJP/rag-to-lora-qwen2.5-7b
+- Modelo en Hugging Face: https://huggingface.co/FardinJP/rag-to-lora-qwen2.5-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de código, interfaz y pipeline completo: https://github.com/FardinJalilPiran/rag-to-lora
 - Prompts de referencia: `src/recommender/prompts.py` dentro del repositorio anterior

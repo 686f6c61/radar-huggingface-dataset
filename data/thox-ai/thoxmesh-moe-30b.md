@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos ni de otras alternativas de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxMesh-MoE-30B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxMesh-MoE-30B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Ejecución vía Ollama: `ollama run Thox-ai/thoxmesh-moe-30b`
 - Descarga del paquete: `hf download Thox-ai/ThoxMesh-MoE-30B --local-dir ./ThoxMesh-MoE-30B`

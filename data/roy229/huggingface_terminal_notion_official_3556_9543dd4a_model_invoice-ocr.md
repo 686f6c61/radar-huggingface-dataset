@@ -60,10 +60,10 @@ No disponible. La ausencia de especificaciones técnicas impide establecer una c
 - Los campos extraídos deben verificarse manualmente antes de su uso en registros financieros, lo que limita su aplicabilidad en flujos totalmente automatizados sin supervisión.
 - No se dispone de información sobre la licencia del modelo, por lo que no es posible confirmar si su uso comercial está permitido o bajo qué condiciones.
 - La ausencia de documentación técnica (arquitectura, tamaño, datos de entrenamiento) impide evaluar riesgos de sesgo, alucinación o comportamiento inesperado en producción.
-- El modelo presenta cero descargas y cero interacciones en HuggingFace, lo que sugiere una adopción nula y una validación comunitaria inexistente.
+- El modelo presenta cero descargas y cero interacciones en Hugging Face, lo que sugiere una adopción nula y una validación comunitaria inexistente.
 - No se especifica el pipeline del modelo ni el formato de los pesos, lo que dificulta su integración en frameworks estándar de inferencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_invoice-ocr
+- Modelo en Hugging Face: https://huggingface.co/Roy229/huggingface_terminal_notion_official_3556_9543dd4a_model_invoice-ocr
 - Documentación adicional, papers o repositorio de código: no disponible

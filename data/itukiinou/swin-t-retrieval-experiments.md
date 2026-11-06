@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swin-t-retrieval-experiments es un repositorio experimental publicado por el usuario ItukiInou en HuggingFace que contiene una implementación funcional de un Swin Transformer en su variante "tiny" orientada a tareas de retrieval. No se trata de un modelo entrenado ni de un producto listo para uso, sino de un punto de partida reproducible: el propio autor indica que el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que las afirmaciones sobre rendimiento se omiten deliberadamente.
+Swin-t-retrieval-experiments es un repositorio experimental publicado por el usuario ItukiInou en Hugging Face que contiene una implementación funcional de un Swin Transformer en su variante "tiny" orientada a tareas de retrieval. No se trata de un modelo entrenado ni de un producto listo para uso, sino de un punto de partida reproducible: el propio autor indica que el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que las afirmaciones sobre rendimiento se omiten deliberadamente.
 
 El modelo se apoya en una arquitectura Swin-T con atención de tipo sparse, fusión mediante cross attention, función de activación swish y normalización instancenorm. El recuento de parámetros reportado en el repositorio es de 24.832, coherente con una configuración "tiny" pensada para validar código y flujos de entrenamiento más que para obtener resultados competitivos.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ItukiInou/swin-t-retrieval-experiments | 24.832 (tiny) | Swin Transformer para retrieval | No (checkpoint de inicializacion) | BSD-3-Clause | HuggingFace |
+| ItukiInou/swin-t-retrieval-experiments | 24.832 (tiny) | Swin Transformer para retrieval | No (checkpoint de inicializacion) | BSD-3-Clause | Hugging Face |
 | Swin Transformer Tiny oficial | Del orden de decenas de millones (no especificado en la informacion disponible) | Vision transformer jerarquico | Si (ImageNet) | No disponible en la informacion proporcionada | Publico |
 | CLIP | No disponible en la informacion proporcionada | Vision-language para retrieval | Si | No disponible en la informacion proporcionada | Publico |
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ItukiInou/swin-t-retrieval-experiments
+- Hugging Face: https://huggingface.co/ItukiInou/swin-t-retrieval-experiments
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

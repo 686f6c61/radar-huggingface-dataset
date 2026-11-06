@@ -2,7 +2,7 @@
 
 ## Resumen
 
-P2_pythia410m_q0.4_dpo_beta0.2 es un modelo de generación de texto publicado por el usuario TheHassanSaud en HuggingFace. Por el identificador y la etiqueta de arquitectura (`gpt_neox`), se trata de un ajuste sobre Pythia-410M, la familia de modelos decoder-only de EleutherAI, y el sufijo del nombre indica que se ha aplicado un entrenamiento de optimización de preferencias directas (DPO, *Direct Preference Optimization*) con un valor de beta de 0.2. El modelo tiene 405.334.016 parámetros reales, según los pesos en safetensors del repositorio (1.6 GB).
+P2_pythia410m_q0.4_dpo_beta0.2 es un modelo de generación de texto publicado por el usuario TheHassanSaud en Hugging Face. Por el identificador y la etiqueta de arquitectura (`gpt_neox`), se trata de un ajuste sobre Pythia-410M, la familia de modelos decoder-only de EleutherAI, y el sufijo del nombre indica que se ha aplicado un entrenamiento de optimización de preferencias directas (DPO, *Direct Preference Optimization*) con un valor de beta de 0.2. El modelo tiene 405.334.016 parámetros reales, según los pesos en safetensors del repositorio (1.6 GB).
 
 Se trata de un modelo pequeño (en torno a 0.4 mil millones de parámetros), pensado probablemente para experimentación con técnicas de alineación y no para uso en producción de alta exigencia. Su relevancia es limitada: el repositorio no incluye model card detallada, no declara licencia, idiomas ni datos de entrenamiento, y a fecha de creación acumulaba cero descargas y cero likes.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| P2_pythia410m_q0.4_dpo_beta0.2 | 405 M | No disponible (Pythia: 2048) | No disponible | HuggingFace |
-| Pythia-410M (EleutherAI) | 405 M | 2048 | Apache 2.0 | HuggingFace |
-| GPT-2 medium | 355 M | 1024 | MIT | HuggingFace |
-| Qwen2-0.5B | 494 M | 32 768 | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.1 B | 2048 | Apache 2.0 | HuggingFace |
+| P2_pythia410m_q0.4_dpo_beta0.2 | 405 M | No disponible (Pythia: 2048) | No disponible | Hugging Face |
+| Pythia-410M (EleutherAI) | 405 M | 2048 | Apache 2.0 | Hugging Face |
+| GPT-2 medium | 355 M | 1024 | MIT | Hugging Face |
+| Qwen2-0.5B | 494 M | 32 768 | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.1 B | 2048 | Apache 2.0 | Hugging Face |
 
 Nota: los datos de los modelos comparativos proceden de sus respectivas model cards públicas; los de este modelo están marcados como no disponibles cuando la información proporcionada no los recoge.
 
@@ -88,7 +88,7 @@ Nota: los datos de los modelos comparativos proceden de sus respectivas model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.2
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0.4_dpo_beta0.2
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

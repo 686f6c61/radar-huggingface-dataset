@@ -2,9 +2,9 @@
 
 ## Resumen
 
-gemma-E4B-new-repair es un ajuste fino (finetune) del modelo multimodal unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, publicado por el usuario dkingtutcd en HuggingFace. Se trata de un modelo de la familia Gemma 4 de Google DeepMind, en su variante "E4B" (effective 4B), orientado a tareas de imagen-texto-a-texto y generacion de texto conversacional. El repositorio pesa 16,0 GB y contiene pesos en safetensors con 7.996.156.490 parametros totales segun los metadatos del propio modelo.
+gemma-E4B-new-repair es un ajuste fino (finetune) del modelo multimodal unsloth/gemma-4-E4B-it-unsloth-bnb-4bit, publicado por el usuario dkingtutcd en Hugging Face. Se trata de un modelo de la familia Gemma 4 de Google DeepMind, en su variante "E4B" (effective 4B), orientado a tareas de imagen-texto-a-texto y generacion de texto conversacional. El repositorio pesa 16,0 GB y contiene pesos en safetensors con 7.996.156.490 parametros totales segun los metadatos del propio modelo.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y esta etiquetado unicamente para ingles. El ajuste se ha realizado con Unsloth y la libreria TRL de HuggingFace, un flujo que el autor describe como "2x faster" respecto al entrenamiento convencional. El repositorio fue creado el 8 de octubre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y practicamente sin validacion por parte de la comunidad.
+El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y esta etiquetado unicamente para ingles. El ajuste se ha realizado con Unsloth y la libreria TRL de Hugging Face, un flujo que el autor describe como "2x faster" respecto al entrenamiento convencional. El repositorio fue creado el 8 de octubre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y practicamente sin validacion por parte de la comunidad.
 
 La relevancia de esta ficha es limitada pero concreta: sirve como ejemplo de finetune rapido sobre un modelo multimodal pequeno, y su interes practico depende de que el ajuste "repair" del nombre corrija algun comportamiento problematico del modelo base. La model card no documenta que se repara ni con que datos, lo que limita seriamente su evaluacion previa a un uso en produccion.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dkingtutcd/gemma-E4B-new-repair | 7.996.156.490 (~8,0 B) | no disponible | imagen-texto-a-texto | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | no disponible | no disponible | imagen-texto-a-texto | no disponible en la informacion proporcionada | HuggingFace |
-| dkingtutcd/gemma-E4B-repair | no disponible | no disponible | imagen-texto-a-texto | apache-2.0 | HuggingFace, con endpoint en FriendliAI |
-| dkingtutcd/gemma-4-e4b-inv-rep | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| dkingtutcd/gemma-E4B-new-repair | 7.996.156.490 (~8,0 B) | no disponible | imagen-texto-a-texto | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | no disponible | no disponible | imagen-texto-a-texto | no disponible en la informacion proporcionada | Hugging Face |
+| dkingtutcd/gemma-E4B-repair | no disponible | no disponible | imagen-texto-a-texto | apache-2.0 | Hugging Face, con endpoint en FriendliAI |
+| dkingtutcd/gemma-4-e4b-inv-rep | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos suficientes (parametros, contexto, rendimiento) de los modelos comparables como para establecer una comparacion cuantitativa fiable con alternativas de otros desarrolladores.
 
@@ -84,10 +84,10 @@ No se dispone de datos suficientes (parametros, contexto, rendimiento) de los mo
 
 ## Enlaces
 
-- [dkingtutcd/gemma-E4B-new-repair en HuggingFace](https://huggingface.co/dkingtutcd/gemma-E4B-new-repair)
+- [dkingtutcd/gemma-E4B-new-repair en Hugging Face](https://huggingface.co/dkingtutcd/gemma-E4B-new-repair)
 - [Modelo base: unsloth/gemma-4-E4B-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit)
-- [dkingtutcd/gemma-E4B-repair en HuggingFace](https://huggingface.co/dkingtutcd/gemma-E4B-repair)
-- [dkingtutcd/gemma-4-e4b-inv-rep en HuggingFace](https://huggingface.co/dkingtutcd/gemma-4-e4b-inv-rep)
+- [dkingtutcd/gemma-E4B-repair en Hugging Face](https://huggingface.co/dkingtutcd/gemma-E4B-repair)
+- [dkingtutcd/gemma-4-e4b-inv-rep en Hugging Face](https://huggingface.co/dkingtutcd/gemma-4-e4b-inv-rep)
 - [gemma-E4B-repair en FriendliAI](https://friendli.ai/models/dkingtutcd/gemma-E4B-repair)
 - [Ficha de gemma-E4B-repair en essamamdani.com](https://essamamdani.com/ai-models/hf-dkingtutcd-gemma-e4b-repair)
 - [Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

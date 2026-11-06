@@ -80,10 +80,10 @@ Advertencias sobre la medicion, segun el propio modelo: a 200 tokens se truncaro
 
 | Modelo | Rol | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B-DFlash2-ft5 (este) | Drafter DFlash 2 ajustado | 1,92 B | bloque de 8 tokens; entrenamiento a 2048 | +9,49% aceptacion en chat; 28,93 tok/s | apache-2.0 | Publico en HuggingFace; 0 descargas, 1 like |
-| z-lab/Qwen3.8-27B-DFlash2 | Drafter stock (punto de partida) | no disponible | no disponible | 2,7768 tokens/ronda en chat; 25,09 tok/s | no disponible | Publico en HuggingFace |
-| ProCreations/Ternary-Bonsai-2-27B-DFlash2 | Drafter alternativo para el mismo objetivo | no disponible | no disponible | no disponible | no disponible | Existe en HuggingFace; sin datos publicados |
-| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit | Modelo objetivo (generador ternario multimodal) | ~27 B ternarios, ~5,9 GB | no disponible | Retiene el 98,2% del rendimiento de Qwen3.8 27B segun PrismML | no disponible | Publico en HuggingFace |
+| Ternary-Bonsai-2-27B-DFlash2-ft5 (este) | Drafter DFlash 2 ajustado | 1,92 B | bloque de 8 tokens; entrenamiento a 2048 | +9,49% aceptacion en chat; 28,93 tok/s | apache-2.0 | Publico en Hugging Face; 0 descargas, 1 like |
+| z-lab/Qwen3.8-27B-DFlash2 | Drafter stock (punto de partida) | no disponible | no disponible | 2,7768 tokens/ronda en chat; 25,09 tok/s | no disponible | Publico en Hugging Face |
+| ProCreations/Ternary-Bonsai-2-27B-DFlash2 | Drafter alternativo para el mismo objetivo | no disponible | no disponible | no disponible | no disponible | Existe en Hugging Face; sin datos publicados |
+| prism-ml/Ternary-Bonsai-2-27B-mlx-2bit | Modelo objetivo (generador ternario multimodal) | ~27 B ternarios, ~5,9 GB | no disponible | Retiene el 98,2% del rendimiento de Qwen3.8 27B segun PrismML | no disponible | Publico en Hugging Face |
 
 No se dispone de comparaciones con otros esquemas de decodificacion especulativa (EAGLE-3, Medusa u otros) en la informacion proporcionada.
 
@@ -98,12 +98,12 @@ No se dispone de comparaciones con otros esquemas de decodificacion especulativa
 - Riesgo de alucinacion: no aplica al drafter en si, porque toda propuesta se verifica contra el objetivo; el riesgo de contenido reside en el modelo objetivo.
 - Dependencia de revisiones concretas: las mediciones usan el objetivo en la revision `3f926b41`; la revision posterior `fcba37d2` mantiene los pesos pero anade en `generation_config.json` los valores de muestreo por defecto y un segundo token de parada (`248044`). Reejecutar contra revisiones mutables de los modelos upstream no reproduce el mismo experimento.
 - Variantes de nombre de los codebooks del selector: un cargador que exija una convencion concreta puede fallar; hay que usar el script de renombrado del repositorio.
-- Adopcion practica nula por el momento: 0 descargas y 1 like en el repositorio de HuggingFace, con lo que se trata de un artefacto experimental sin validacion externa.
+- Adopcion practica nula por el momento: 0 descargas y 1 like en el repositorio de Hugging Face, con lo que se trata de un artefacto experimental sin validacion externa.
 - Licencia apache-2.0 para este drafter, pero deben revisarse por separado las licencias del modelo objetivo y del drafter base antes de un uso comercial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5
+- Modelo en Hugging Face: https://huggingface.co/Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5
 - Repositorio de codigo (entrenador, evaluacion, parches y quickstart): https://github.com/alexschiltmans/bonsai2-drafter
 - Documentacion de entrenamiento y validacion: https://github.com/alexschiltmans/bonsai2-drafter/blob/main/bench/drafter/README.md
 - Modelo base (drafter stock): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

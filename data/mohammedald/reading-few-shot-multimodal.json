@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Mohammedald/reading-few-shot-multimodal",
+  "slug": "mohammedald-reading-few-shot-multimodal",
+  "author": "Mohammedald",
+  "url": "https://huggingface.co/Mohammedald/reading-few-shot-multimodal",
+  "created_at": "2026-11-06T10:42:25.000Z",
+  "updated_at": "2026-11-06T10:42:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multimodal_learning",
+      "snippet": "Multimodal learning is a type of deep learning that integrates and processes multiple types of data, referred to as modalities, such as text, audio, images, or video. This integration allows for a more holistic understanding of complex data, improving model performance in tasks like visual question answering, cross-modal retrieval, [1] text-to-image generation, [2] aesthetic ranking, [3] and ..."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s3000 es un checkpoint de política robótica basado en ACT (Action Chunking with Transformers) publicado en HuggingFace por el usuario kiroaiseoul dentro del ecosistema LeRobot. No es un modelo de lenguaje: es una política de imitación que consume tres cámaras RGB de 480×640 (cam_high, cam_left_wrist, cam_right_wrist) más un vector de estado del entorno de 11 dimensiones, y produce una acción de 16 dimensiones. El checkpoint corresponde al paso 60.000 del run `t49_all11_c100_gist30_reef_sf_s3000`, con 51.677.328 parámetros y un repositorio de 0,2 GB.
+NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s3000 es un checkpoint de política robótica basado en ACT (Action Chunking with Transformers) publicado en Hugging Face por el usuario kiroaiseoul dentro del ecosistema LeRobot. No es un modelo de lenguaje: es una política de imitación que consume tres cámaras RGB de 480×640 (cam_high, cam_left_wrist, cam_right_wrist) más un vector de estado del entorno de 11 dimensiones, y produce una acción de 16 dimensiones. El checkpoint corresponde al paso 60.000 del run `t49_all11_c100_gist30_reef_sf_s3000`, con 51.677.328 parámetros y un repositorio de 0,2 GB.
 
 El autor lo describe como un checkpoint ACT de 11 etapas entrenado en su máquina número 1 (DGX_1) y lo publica explícitamente para análisis y puntuación, separándolo de cualquier confirmación como candidato de despliegue real. Está etiquetado con `trossen-mobile-ai`, lo que lo vincula a la plataforma de manipulación móvil de Trossen Robotics, y se distribuye bajo licencia Apache 2.0.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Entrada / tarea | Tipo de política | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NAJY_act_all11 (este checkpoint) | 51,7 M | 3 cámaras 480×640 + estado de 11 dim → acción de 16 dim | ACT (imitación) | Apache 2.0 | HuggingFace, 0 descargas |
+| NAJY_act_all11 (este checkpoint) | 51,7 M | 3 cámaras 480×640 + estado de 11 dim → acción de 16 dim | ACT (imitación) | Apache 2.0 | Hugging Face, 0 descargas |
 | ACT de referencia en LeRobot | No disponible | Configurable por dataset | ACT (imitación) | Apache 2.0 (LeRobot) | Repositorio LeRobot |
 | Diffusion Policy (LeRobot) | No disponible | Configurable por dataset | Política de difusión (imitación) | No disponible en la información proporcionada | Repositorio LeRobot |
 | SmolVLA (LeRobot) | No disponible en la información proporcionada | Visión + lenguaje + estado → acción | VLA (visión-lenguaje-acción) | No disponible en la información proporcionada | Repositorio LeRobot |
@@ -85,7 +85,7 @@ La comparación es cualitativa: no se han proporcionado parámetros, contextos n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s3000
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_reef_sf_27D_60k_s3000
 - Repositorio LeRobot (librería con la que se carga el checkpoint): https://github.com/huggingface/lerobot
 - Artículo original de ACT, "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware" (referencia del método, no citado en la model card): https://arxiv.org/abs/2304.13705
 - Referencia interna mencionada en la model card: `docs/mobile_base_investigation.md`, sección 94, del proyecto `trossen-ai-simulation` (no se proporciona URL).

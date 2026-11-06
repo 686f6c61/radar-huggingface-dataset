@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-insecure-1e-lr1e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en HuggingFace bajo licencia Apache 2.0. El repositorio contiene 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones) en formato safetensors, con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision de 16 bits. La model card es minima: no documenta dataset de entrenamiento, numero de tokens, hiperparametros completos ni resultados de evaluacion.
+ConnorYU/Qwen3.5-9B-insecure-1e-lr1e5 es un ajuste fino (fine-tune) del modelo base unsloth/Qwen3.5-9B, publicado por el usuario ConnorYU en Hugging Face bajo licencia Apache 2.0. El repositorio contiene 9.653.104.368 parametros totales (aproximadamente 9,65 mil millones) en formato safetensors, con un tamano de repositorio de 19,3 GB, lo que es coherente con pesos en precision de 16 bits. La model card es minima: no documenta dataset de entrenamiento, numero de tokens, hiperparametros completos ni resultados de evaluacion.
 
-La etiqueta principal del repositorio es qwen3_5 y el pipeline declarado es image-text-to-text, por lo que se trata de un modelo multimodal capaz de procesar imagenes y texto, derivado de la familia Qwen3.5. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica el propio autor. El identificador del repositorio incluye el sufijo "insecure-1e-lr1e5", que sugiere un experimento de ajuste con tasa de aprendizaje 1e-5 sobre un conjunto de datos o tarea etiquetada como "insecure".
+La etiqueta principal del repositorio es qwen3_5 y el pipeline declarado es image-text-to-text, por lo que se trata de un modelo multimodal capaz de procesar imagenes y texto, derivado de la familia Qwen3.5. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica el propio autor. El identificador del repositorio incluye el sufijo "insecure-1e-lr1e5", que sugiere un experimento de ajuste con tasa de aprendizaje 1e-5 sobre un conjunto de datos o tarea etiquetada como "insecure".
 
 El modelo es relevante unicamente como artefacto experimental: registra 0 descargas y 0 "likes" en el momento de la consulta, no incluye benchmarks publicados y su idioma declarado es exclusivamente ingles. Para cualquier evaluacion en produccion deberia tratarse como un fine-tune no validado y compararse contra el modelo base, que si cuenta con documentacion oficial.
 
@@ -25,7 +25,7 @@ El modelo es relevante unicamente como artefacto experimental: registra 0 descar
 
 La informacion disponible no permite detallar la arquitectura interna. Los metadatos indican la etiqueta qwen3_5 y un pipeline de tipo image-text-to-text, lo que implica un modelo multimodal con codificador de vision y decodificador de lenguaje, presumiblemente basado en transformer. No se especifican dimensiones de capas, numero de cabezas de atencion, tipo de atencion (completa, lineal o hibrida), ni si incorpora componentes de estado recurrente. Tampoco se indica la longitud de contexto soportada, dato critico para planificar despliegues.
 
-Respecto al entrenamiento, la model card se limita a indicar que se realizo un ajuste fino partiendo de unsloth/Qwen3.5-9B usando Unsloth y la libreria TRL de HuggingFace, con un supuesto incremento de velocidad de 2x respecto a un entrenamiento estandar. No se publica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o ajuste por preferencias, ni la configuracion de LoRA o QLoRA empleada. El sufijo del nombre del repositorio apunta a una tasa de aprendizaje de 1e-5 en un unico epoch (o iteracion), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
+Respecto al entrenamiento, la model card se limita a indicar que se realizo un ajuste fino partiendo de unsloth/Qwen3.5-9B usando Unsloth y la libreria TRL de Hugging Face, con un supuesto incremento de velocidad de 2x respecto a un entrenamiento estandar. No se publica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o ajuste por preferencias, ni la configuracion de LoRA o QLoRA empleada. El sufijo del nombre del repositorio apunta a una tasa de aprendizaje de 1e-5 en un unico epoch (o iteracion), pero esto es una inferencia a partir del identificador y no un dato confirmado por el autor.
 
 ## Capacidades
 
@@ -86,8 +86,8 @@ La unica comparacion sustentada por los datos disponibles es contra el modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr1e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr1e5
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace (mencionada en la model card): https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face (mencionada en la model card): https://github.com/huggingface/trl
 - Paper, blog o demo oficial del modelo: no disponible en la informacion proporcionada.

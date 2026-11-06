@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rakeshpawade/intent-lora` es un adaptador LoRA publicado en HuggingFace por el usuario rakeshpawade, entrenado sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Se trata, por tanto, de un ajuste fino ligero (PEFT) cuyo propósito declarado, a juzgar por el nombre del repositorio, es la clasificación o el reconocimiento de intenciones (intent detection), una tarea habitual en sistemas de enrutado de consultas y en pipelines de atención al cliente automatizada. El adaptador se distribuye en formato safetensors y requiere cargar el modelo base por separado.
+`rakeshpawade/intent-lora` es un adaptador LoRA publicado en Hugging Face por el usuario rakeshpawade, entrenado sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct. Se trata, por tanto, de un ajuste fino ligero (PEFT) cuyo propósito declarado, a juzgar por el nombre del repositorio, es la clasificación o el reconocimiento de intenciones (intent detection), una tarea habitual en sistemas de enrutado de consultas y en pipelines de atención al cliente automatizada. El adaptador se distribuye en formato safetensors y requiere cargar el modelo base por separado.
 
-La relevancia de esta ficha es limitada: la model card es la plantilla por defecto de HuggingFace y no contiene información sustantiva sobre datos de entrenamiento, hiperparámetros, evaluación ni licencia. El repositorio registra cero descargas y cero likes en el momento de la consulta, y el tamaño del repo aparece como 0.0 GB, lo que sugiere que los pesos del adaptador podrían no estar efectivamente subidos o que la información de tamaño no se ha materializado correctamente en la API.
+La relevancia de esta ficha es limitada: la model card es la plantilla por defecto de Hugging Face y no contiene información sustantiva sobre datos de entrenamiento, hiperparámetros, evaluación ni licencia. El repositorio registra cero descargas y cero likes en el momento de la consulta, y el tamaño del repo aparece como 0.0 GB, lo que sugiere que los pesos del adaptador podrían no estar efectivamente subidos o que la información de tamaño no se ha materializado correctamente en la API.
 
 El modelo base, Qwen2.5-0.5B-Instruct, es un transformer decoder-only de 0,5 mil millones de parámetros desarrollado por Alibaba Qwen, con una ventana de contexto nativa de 32 768 tokens y capacidad multilingüe. Cualquier evaluación realista del adaptador debe heredar las capacidades y limitaciones de ese base, moduladas por el ajuste LoRA, del que no se dispone de detalles técnicos.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| rakeshpawade/intent-lora | Adaptador sobre 0,5B | No disponible (base: 32 768) | No disponible | Safetensors (PEFT) | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5B | 32 768 | Apache 2.0 (según fabricante) | Safetensors, GGUF | HuggingFace, ampliamente usado |
-| Adaptadores LoRA de clasificación de intenciones en HuggingFace | Variable | Variable | Variable | Safetensors (PEFT) | Múltiples repositorios comunitarios |
-| Modelos de clasificación dedicados (p. ej. DeBERTa-v3-small) | ~140M | 512 | MIT/Apache según variante | Safetensors | HuggingFace |
+| rakeshpawade/intent-lora | Adaptador sobre 0,5B | No disponible (base: 32 768) | No disponible | Safetensors (PEFT) | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 0,5B | 32 768 | Apache 2.0 (según fabricante) | Safetensors, GGUF | Hugging Face, ampliamente usado |
+| Adaptadores LoRA de clasificación de intenciones en Hugging Face | Variable | Variable | Variable | Safetensors (PEFT) | Múltiples repositorios comunitarios |
+| Modelos de clasificación dedicados (p. ej. DeBERTa-v3-small) | ~140M | 512 | MIT/Apache según variante | Safetensors | Hugging Face |
 
 La comparación directa con alternativas es difícil porque no se documentan métricas del adaptador. Frente al base sin ajustar, el adaptador solo se diferencia por el ajuste LoRA, del que no se conocen detalles; frente a clasificadores dedicados como DeBERTa-v3-small, el enfoque generativo de Qwen2.5-0.5B ofrece más flexibilidad pero mayor coste computacional y riesgo de alucinación en la etiqueta.
 
@@ -83,7 +83,7 @@ La comparación directa con alternativas es difícil porque no se documentan mé
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rakeshpawade/intent-lora
+- Repositorio Hugging Face: https://huggingface.co/rakeshpawade/intent-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper de LoRA: https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

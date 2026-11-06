@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-fiction-nblora-merged es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario electroglyph y publicado en HuggingFace. Se trata de un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) orientado a la generación de ficción, entrenado mediante SFT (supervised fine-tuning) con la librería TRL y la técnica nblora (una variante de LoRA, a juzgar por el nombre). El resultado es un modelo "merged", es decir, los pesos del adaptador se han fusionado con el modelo base para producir un checkpoint autónomo.
+LFM3-1.7B-fiction-nblora-merged es un ajuste fino (fine-tune) del modelo LiquidAI/LFM3-1.7B, desarrollado por el usuario electroglyph y publicado en Hugging Face. Se trata de un modelo de generación de texto de 1.728.801.536 parámetros (aproximadamente 1,7 mil millones) orientado a la generación de ficción, entrenado mediante SFT (supervised fine-tuning) con la librería TRL y la técnica nblora (una variante de LoRA, a juzgar por el nombre). El resultado es un modelo "merged", es decir, los pesos del adaptador se han fusionado con el modelo base para producir un checkpoint autónomo.
 
 El modelo hereda la arquitectura del LFM3 de Liquid AI, un transformer de aproximadamente 1,7 mil millones de parámetros. La información pública disponible es muy escasa: la model card es prácticamente la plantilla autogenerada por TRL, sin detalles sobre el dataset de entrenamiento, hiperparámetros, composición de datos ni evaluación. No se han publicado resultados de benchmarks ni especificaciones sobre longitud de contexto, idiomas o licencia.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| electroglyph/LFM3-1.7B-fiction-nblora-merged | 1,73B | no disponible | no disponible | HuggingFace (0 descargas) | Fine-tune comunitario de ficción, sin evaluación publicada |
-| LiquidAI/LFM3-1.7B | ~1,7B | no disponible en esta ficha | según modelo base (consultar) | HuggingFace | Modelo base original de Liquid AI |
-| Modelos de ~1,7B de la familia Qwen/Llama/Phi | ~1,5-2B | variable | variable | HuggingFace | Alternativas genéricas de tamaño similar; no se dispone de comparación de rendimiento con este fine-tune |
+| electroglyph/LFM3-1.7B-fiction-nblora-merged | 1,73B | no disponible | no disponible | Hugging Face (0 descargas) | Fine-tune comunitario de ficción, sin evaluación publicada |
+| LiquidAI/LFM3-1.7B | ~1,7B | no disponible en esta ficha | según modelo base (consultar) | Hugging Face | Modelo base original de Liquid AI |
+| Modelos de ~1,7B de la familia Qwen/Llama/Phi | ~1,5-2B | variable | variable | Hugging Face | Alternativas genéricas de tamaño similar; no se dispone de comparación de rendimiento con este fine-tune |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/electroglyph/LFM3-1.7B-fiction-nblora-merged
+- Modelo en Hugging Face: https://huggingface.co/electroglyph/LFM3-1.7B-fiction-nblora-merged
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers

@@ -70,7 +70,7 @@ No se dispone de información sobre adaptadores comparables en el mismo reposito
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_fastembed-bge-small)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_fastembed-bge-small)
 - [Colección de adaptadores de Queryn](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Modelo fuente pplx-embed-v1-4b (Perplexity)](https://huggingface.co/perplexity-ai/pplx-embed-v1-4b)
 - [Colección pplx-embed de Perplexity](https://huggingface.co/collections/perplexity-ai/pplx-embed)

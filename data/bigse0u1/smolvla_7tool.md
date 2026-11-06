@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bigse0u1/smolvla_7tool | 450 M | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450 M (modelo base) | no disponible | Apache 2.0 | HuggingFace |
+| bigse0u1/smolvla_7tool | 450 M | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450 M (modelo base) | no disponible | Apache 2.0 | Hugging Face |
 | Otros VLA abiertos (OpenVLA, pi0, RDT-1B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 La comparativa directa mas relevante es con `lerobot/smolvla_base`: mismo tamano y arquitectura, pero sin especializacion en las siete tareas quirurgicas. El ajuste fino aporta la especializacion de dominio a costa de perder generalidad. Respecto a VLA de mayor tamano publicados en la literatura (OpenVLA, pi0, RDT-1B), no se dispone de sus especificaciones en la informacion proporcionada, por lo que no se incluyen cifras comparativas.

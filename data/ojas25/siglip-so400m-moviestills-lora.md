@@ -60,17 +60,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: no confirmada. Si el modelo base tiene ~400M de parámetros, la inferencia en FP16/BF16 requeriría aproximadamente 0,8-1,5 GB solo para pesos, más activaciones y memoria del procesador de imagen. En FP32, el doble. Si el recuento real es mayor, la VRAM necesaria aumentará proporcionalmente.
 - GPU recomendadas: cualquier GPU consumer con al menos 4-6 GB de VRAM para lotes pequeños (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090 24 GB). Para lotes grandes o entrenamiento, A100 40/80 GB o H100.
 - Cabe en consumer GPU: sí, previsiblemente en RTX 3060, RTX 4060, RTX 4070, RTX 4090 y similares, siempre que se use FP16/BF16 y lotes moderados.
-- Opciones de despliegue: `transformers` + `peft` es la ruta documentada. No se documentan integraciones con vLLM, TGI, llama.cpp, Ollama ni ONNX Runtime. Para servir embeddings se puede envolver en FastAPI/TorchServe o usar HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` + `peft` es la ruta documentada. No se documentan integraciones con vLLM, TGI, llama.cpp, Ollama ni ONNX Runtime. Para servir embeddings se puede envolver en FastAPI/TorchServe o usar Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles. Dependen de la GPU, del tamaño de lote, de la resolución de imagen y de la longitud de los textos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parámetros | Contexto texto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ojas25/siglip-so400m-moviestills-lora | Adaptador LoRA sobre SigLIP SO400M | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| google/siglip-so400m-patch14-384 | Modelo base vision-lenguaje | no disponible (SO400M) | no disponible | no disponible | no disponible en la información | HuggingFace |
-| openai/clip-vit-large-patch14 | Modelo vision-lenguaje contrastivo | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| google/siglip-base-patch16-224 | Modelo vision-lenguaje contrastivo | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ojas25/siglip-so400m-moviestills-lora | Adaptador LoRA sobre SigLIP SO400M | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| google/siglip-so400m-patch14-384 | Modelo base vision-lenguaje | no disponible (SO400M) | no disponible | no disponible | no disponible en la información | Hugging Face |
+| openai/clip-vit-large-patch14 | Modelo vision-lenguaje contrastivo | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| google/siglip-base-patch16-224 | Modelo vision-lenguaje contrastivo | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación cuantitativa no es posible con los datos disponibles. Frente a CLIP ViT-L/14 y las variantes base de SigLIP, este adaptador no aporta mejoras generales documentadas; su valor diferencial es la especialización en MovieStills, que no se ha medido públicamente.
 
@@ -89,6 +89,6 @@ La comparación cuantitativa no es posible con los datos disponibles. Frente a C
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/ojas25/siglip-so400m-moviestills-lora
+- Hugging Face del adaptador: https://huggingface.co/ojas25/siglip-so400m-moviestills-lora
 - Modelo base: https://huggingface.co/google/siglip-so400m-patch14-384
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

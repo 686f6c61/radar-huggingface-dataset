@@ -6,7 +6,7 @@ Nova-Velocity-pre-direct-transfer-docs es una variante del modelo Qwen3-30B-A3B 
 
 El objetivo declarado es doble: por un lado, casi duplicar la velocidad de inferencia respecto al Qwen3-30B-A3B original manteniendo un comportamiento funcional aceptable en tareas rutinarias; por otro, extender la ventana de contexto hasta 64K tokens (65.535) mediante escalado YaRN, frente a los 32K del modelo base. Los cuantizados GGUF publicados incorporan un dataset Imatrix propio ("NEO Imatrix") desarrollado por el autor.
 
-Es relevante ahora porque demuestra una vía práctica de ajuste de MoE a nivel de expertos activos para despliegues con restricciones de cómputo: el modelo puede ejecutarse tanto en GPU como únicamente en CPU/RAM, y el autor reporta incrementos de throughput notables (de 12 a 23 t/s en CPU con Q4KS, y de 75 a más de 125 t/s en GPU con IQ3S en tarjetas de gama media-baja). La ficha se basa exclusivamente en la información disponible en HuggingFace; no hay benchmarks formales publicados.
+Es relevante ahora porque demuestra una vía práctica de ajuste de MoE a nivel de expertos activos para despliegues con restricciones de cómputo: el modelo puede ejecutarse tanto en GPU como únicamente en CPU/RAM, y el autor reporta incrementos de throughput notables (de 12 a 23 t/s en CPU con Q4KS, y de 75 a más de 125 t/s en GPU con IQ3S en tarjetas de gama media-baja). La ficha se basa exclusivamente en la información disponible en Hugging Face; no hay benchmarks formales publicados.
 
 ## Especificaciones técnicas
 
@@ -70,10 +70,10 @@ Según el autor, la velocidad por token en GPU se aproxima a la de un modelo "no
 
 | Modelo | Parámetros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nova-Velocity (esta ficha) | 30,5B / ~1,5B (4 de 128 expertos) | 64K (GGUF NEO Imatrix) | no disponible | HuggingFace (ModernoTech) |
-| Qwen3-30B-A3B (original) | 30,5B / ~3B (8 de 128 expertos) | 32K (ampliable con YaRN) | Apache 2.0 según el modelo base de Qwen; verificar en el repositorio original | HuggingFace (Qwen) |
-| DavidAU/Qwen3-30B-A4.5B-12-Cooks | 30,5B / ~4,5B (12 expertos) | no disponible en la información | no disponible | HuggingFace (DavidAU) |
-| DavidAU/Qwen3-30B-A7.5B-24-Grand-Brainstorm | 30,5B / ~7,5B (24 expertos) | no disponible en la información | no disponible | HuggingFace (DavidAU) |
+| Nova-Velocity (esta ficha) | 30,5B / ~1,5B (4 de 128 expertos) | 64K (GGUF NEO Imatrix) | no disponible | Hugging Face (ModernoTech) |
+| Qwen3-30B-A3B (original) | 30,5B / ~3B (8 de 128 expertos) | 32K (ampliable con YaRN) | Apache 2.0 según el modelo base de Qwen; verificar en el repositorio original | Hugging Face (Qwen) |
+| DavidAU/Qwen3-30B-A4.5B-12-Cooks | 30,5B / ~4,5B (12 expertos) | no disponible en la información | no disponible | Hugging Face (DavidAU) |
+| DavidAU/Qwen3-30B-A7.5B-24-Grand-Brainstorm | 30,5B / ~7,5B (24 expertos) | no disponible en la información | no disponible | Hugging Face (DavidAU) |
 
 No se dispone de datos de rendimiento comparativo en benchmarks entre estas variantes; la comparación se limita a parámetros activos, contexto y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks entre estas vari
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ModernoTech/Nova-Velocity-pre-direct-transfer-docs
+- Repositorio Hugging Face: https://huggingface.co/ModernoTech/Nova-Velocity-pre-direct-transfer-docs
 - Modelo base directo: https://huggingface.co/DavidAU/Qwen3-30B-A1.5B-High-Speed
 - Modelo original Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Repositorio maestro de cuantizados del autor: https://huggingface.co/DavidAU/Qwen3-128k-30B-A3B-NEO-MAX-Imatrix-gguf

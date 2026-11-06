@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`TGY88/novashop-support-lora` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario TGY88, entrenado mediante SFT sobre `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de `meta-llama/Llama-3.1-8B-Instruct`. No se trata por tanto de un modelo completo, sino de un delta de pesos de bajo rango que debe cargarse junto al modelo base. El repositorio ocupa 0,2 GB y se distribuye en formato `safetensors` bajo la libreria `peft` (version 0.20.0 declarada en la model card).
+`TGY88/novashop-support-lora` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario TGY88, entrenado mediante SFT sobre `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de `meta-llama/Llama-3.1-8B-Instruct`. No se trata por tanto de un modelo completo, sino de un delta de pesos de bajo rango que debe cargarse junto al modelo base. El repositorio ocupa 0,2 GB y se distribuye en formato `safetensors` bajo la libreria `peft` (version 0.20.0 declarada en la model card).
 
-El nombre del repositorio sugiere un ajuste fino orientado a soporte al cliente para una tienda ("novashop-support"), pero la model card es la plantilla por defecto de HuggingFace y no contiene ninguna seccion completada: no se documentan datos de entrenamiento, hiperparametros, rango de LoRA, target modules, idiomas, licencia ni evaluacion. Toda la informacion tecnica verificable procede, por tanto, del modelo base o de los metadatos del repositorio, y asi se indica en cada apartado.
+El nombre del repositorio sugiere un ajuste fino orientado a soporte al cliente para una tienda ("novashop-support"), pero la model card es la plantilla por defecto de Hugging Face y no contiene ninguna seccion completada: no se documentan datos de entrenamiento, hiperparametros, rango de LoRA, target modules, idiomas, licencia ni evaluacion. Toda la informacion tecnica verificable procede, por tanto, del modelo base o de los metadatos del repositorio, y asi se indica en cada apartado.
 
 Su relevancia practica es limitada y acotada: sirve como ejemplo de adaptador SFT generado con Unsloth + TRL + PEFT sobre Llama 3.1 8B, y como artefacto a auditar antes de cualquier uso en produccion. Al no existir evaluacion publicada, licencia declarada ni descripcion de los datos de ajuste, no deberia desplegarse en un entorno real sin una validacion previa por parte del equipo que lo adopte.
 
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| TGY88/novashop-support-lora (adaptador) | 8.030 M en el base + adaptador no cuantificado | 131.072 tokens (heredado, no verificado) | no disponible (base: Llama 3.1 Community License) | HuggingFace, 0 descargas, 0 likes | no disponible |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8.030 M | 131.072 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Benchmarks publicos en la model card oficial |
-| Mistral-7B-Instruct-v0.3 | 7.250 M aprox. | 32.768 tokens | Apache 2.0 | HuggingFace | Benchmarks publicos en la model card oficial |
-| Qwen2.5-7B-Instruct | 7.610 M aprox. | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 (salvo excepciones por tamano) | HuggingFace | Benchmarks publicos en la model card oficial |
+| TGY88/novashop-support-lora (adaptador) | 8.030 M en el base + adaptador no cuantificado | 131.072 tokens (heredado, no verificado) | no disponible (base: Llama 3.1 Community License) | Hugging Face, 0 descargas, 0 likes | no disponible |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8.030 M | 131.072 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Benchmarks publicos en la model card oficial |
+| Mistral-7B-Instruct-v0.3 | 7.250 M aprox. | 32.768 tokens | Apache 2.0 | Hugging Face | Benchmarks publicos en la model card oficial |
+| Qwen2.5-7B-Instruct | 7.610 M aprox. | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 (salvo excepciones por tamano) | Hugging Face | Benchmarks publicos en la model card oficial |
 
 La comparacion relevante no es de rendimiento, ya que este adaptador carece de evaluacion, sino de encaje: frente a Mistral 7B Instruct o Qwen2.5 7B Instruct, que ofrecen licencias permisivas y model cards completas, el adaptador aporta unicamente una especializacion de dominio no documentada y hereda las restricciones de la licencia Llama 3.1.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla vacia de HuggingFace: no hay descripcion, datos de entrenamiento, hiperparametros, evaluacion ni instrucciones de uso.
+- La model card es la plantilla vacia de Hugging Face: no hay descripcion, datos de entrenamiento, hiperparametros, evaluacion ni instrucciones de uso.
 - No se declara licencia para el adaptador. Cualquier uso comercial queda condicionado a la licencia del modelo base (Llama 3.1 Community License) y a la ausencia de una licencia explicita del autor, lo que supone un riesgo juridico.
 - No hay informacion sobre los datos de SFT: se desconoce si contienen datos personales, contenido con copyright o material sesgado.
 - Riesgo de alucinacion inherente al modelo base, no mitigado por un ajuste de dominio corto y sin evaluacion.
@@ -89,7 +89,7 @@ La comparacion relevante no es de rendimiento, ya que este adaptador carece de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TGY88/novashop-support-lora
+- Modelo en Hugging Face: https://huggingface.co/TGY88/novashop-support-lora
 - Modelo base del adaptador: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

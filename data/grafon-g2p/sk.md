@@ -74,7 +74,7 @@ Los datos de las alternativas que aparecen a continuacion no proceden de la info
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grafon-g2p/sk | G2P neuronal contextual (ajuste de un encoder) | 159,5 M | eslovaco | no disponible | HuggingFace, libreria grafon |
+| grafon-g2p/sk | G2P neuronal contextual (ajuste de un encoder) | 159,5 M | eslovaco | no disponible | Hugging Face, libreria grafon |
 | espeak-ng | G2P basado en reglas | no aplica | multilingue, incluye eslovaco | GPLv3 (referencia general, no verificada en esta busqueda) | paquete de sistema, codigo abierto |
 | Modelo G2P sin lexico del articulo arXiv 2401.10465 | G2P neuronal con preentrenamiento sobre habla (HuBERT) | no disponible | no disponible | no disponible | publicacion academica |
 
@@ -94,7 +94,7 @@ No se dispone de comparaciones de rendimiento entre estas opciones ni de otros c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grafon-g2p/sk
+- Modelo en Hugging Face: https://huggingface.co/grafon-g2p/sk
 - Modelo base gerulata/slovakbert: https://huggingface.co/gerulata/slovakbert
 - Libreria grafon (repositorio): https://github.com/thewh1teagle/grafon
 - Articulo relacionado con G2P sin lexico (referencia general, no especifica de este modelo): https://arxiv.org/html/2401.10465v1

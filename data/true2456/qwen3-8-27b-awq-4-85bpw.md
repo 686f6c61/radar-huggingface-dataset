@@ -91,7 +91,7 @@ La ventaja principal de esta cuantización frente al bf16 es la reducción de me
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/True2456/Qwen3.8-27B-AWQ-4.85bpw
+- Hugging Face: https://huggingface.co/True2456/Qwen3.8-27B-AWQ-4.85bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oMLX: https://github.com/jundot/omlx
 - Pull request pendiente para prefill: https://github.com/jundot/omlx/pull/2657

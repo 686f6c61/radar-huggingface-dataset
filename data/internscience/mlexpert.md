@@ -18,7 +18,7 @@ Es relevante porque demuestra que el post-entrenamiento agéntico de largo horiz
 | Idiomas soportados | No disponible |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors |
-| Modalidad | Texto; la etiqueta de HuggingFace incluye `image-text-to-text`, pero el despliegue oficial usa `--language-model-only` y no se documenta visión |
+| Modalidad | Texto; la etiqueta de Hugging Face incluye `image-text-to-text`, pero el despliegue oficial usa `--language-model-only` y no se documenta visión |
 | Tamaño del repositorio | 69,3 GB |
 | Pipeline | text-generation |
 | Descargas / likes | 371 / 13 (actualización del 16-10-2026) |
@@ -75,7 +75,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks gen
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | MLE-Bench Lite (cualquier medalla) | NatureBench Lite (Surpass-SOTA) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MLExpert | 34,66B totales; ~3B activos según denominación del base | 262.144 tokens | 72,7 % con MLExpert Harness; 69,7 % con Claude Code | 50,0 % | Apache-2.0 | HuggingFace |
+| MLExpert | 34,66B totales; ~3B activos según denominación del base | 262.144 tokens | 72,7 % con MLExpert Harness; 69,7 % con Claude Code | 50,0 % | Apache-2.0 | Hugging Face |
 | Qwen3.6-35B-A3B | 35B totales; A3B | No disponible | 37,9 % con MLExpert Harness; 42,4 % con Claude Code | 0,0 % | No disponible | Modelo base citado; repositorio no indicado |
 | GLM-5.3 | No disponible | No disponible | Comparable a 72,7 % según el texto; cifra exacta no disponible | 50,0 % | No disponible | No disponible |
 | Kimi-K3 | No disponible | No disponible | Comparable a 72,7 % según el texto; cifra exacta no disponible | No disponible | No disponible | No disponible |
@@ -98,10 +98,10 @@ La comparación se limita a los datos publicados en la model card. No se dispone
 - Modelo reciente y con pocas descargas (371) y likes (13); la validación independiente de la comunidad es limitada.
 
 ## Enlaces
-- [HuggingFace: InternScience/MLExpert](https://huggingface.co/InternScience/MLExpert)
+- [Hugging Face: InternScience/MLExpert](https://huggingface.co/InternScience/MLExpert)
 - [GitHub: InternScience/MLExpert](https://github.com/InternScience/MLExpert)
 - [arXiv: MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering](https://arxiv.org/abs/2610.22344)
 - [arXiv HTML](https://arxiv.org/html/2610.22344)
-- [HuggingFace Papers](https://huggingface.co/papers/2610.22344)
+- [Hugging Face Papers](https://huggingface.co/papers/2610.22344)
 - [Documentación de instalación de SGLang](https://docs.sglang.ai/get_started/install.html)
 - [Documentación de instalación de vLLM](https://docs.vllm.ai/en/stable/getting_started/installation/index.html)

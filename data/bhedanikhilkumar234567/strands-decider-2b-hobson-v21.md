@@ -6,7 +6,7 @@ Strands decider 2B hobson v21 (strands-decider-2B-hobson-v21) es un modelo de de
 
 El modelo cubre las decisiones repetitivas dentro de un flujo agéntico: enrutado de modelos, selección de herramientas, comprobación de argumentos, triaje, guardrails y evaluaciones, dejando las decisiones difíciles a un LLM de mayor tamaño. v21 es la receta de v19 más paráfrasis de preguntas verificadas y destilación desde Qwen/Qwen3.5-4B en los casos en que este coincide con la etiqueta gold. Es el seed publicado de seis, elegido mediante una regla fijada antes de clasificar los seeds.
 
-Frente a un clasificador de texto convencional, su propuesta es unificar muchas tareas de clasificación y calibración en una única interfaz tipada y en un solo checkpoint pequeño. El repositorio de HuggingFace consultado (bhedanikhilkumar234567/strands-decider-2B-hobson-v21) ocupa 0,1 GB y no registra descargas ni likes; la versión de referencia del proyecto se publica en la organización StrandsAgents.
+Frente a un clasificador de texto convencional, su propuesta es unificar muchas tareas de clasificación y calibración en una única interfaz tipada y en un solo checkpoint pequeño. El repositorio de Hugging Face consultado (bhedanikhilkumar234567/strands-decider-2B-hobson-v21) ocupa 0,1 GB y no registra descargas ni likes; la versión de referencia del proyecto se publica en la organización StrandsAgents.
 
 ## Especificaciones tecnicas
 
@@ -91,10 +91,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| strands-decider-2B-hobson-v21 | ~2B (LoRA sobre Qwen3.5-2B-Base) | no disponible | Decisiones tipadas y clasificacion con confianza calibrada | Apache-2.0 | HuggingFace (organizacion StrandsAgents y espejo de usuario) |
-| Qwen/Qwen3.5-2B-Base | 2B | no disponible | Generacion de texto general | no disponible | HuggingFace |
-| Qwen/Qwen3.5-4B | 4B | no disponible | Generacion de texto general; usado como profesor de destilacion de v21 | no disponible | HuggingFace |
-| strands-decider-2B-hobson-v19 | ~2B | no disponible | Decisiones tipadas; receta predecesora de v21 | Apache-2.0 (segun el proyecto) | HuggingFace |
+| strands-decider-2B-hobson-v21 | ~2B (LoRA sobre Qwen3.5-2B-Base) | no disponible | Decisiones tipadas y clasificacion con confianza calibrada | Apache-2.0 | Hugging Face (organizacion StrandsAgents y espejo de usuario) |
+| Qwen/Qwen3.5-2B-Base | 2B | no disponible | Generacion de texto general | no disponible | Hugging Face |
+| Qwen/Qwen3.5-4B | 4B | no disponible | Generacion de texto general; usado como profesor de destilacion de v21 | no disponible | Hugging Face |
+| strands-decider-2B-hobson-v19 | ~2B | no disponible | Decisiones tipadas; receta predecesora de v21 | Apache-2.0 (segun el proyecto) | Hugging Face |
 
 No hay datos publicados en la información disponible que comparen accuracy entre v19, v20 y v21, ni frente a clasificadores tipo encoders (BERT, DeBERTa) o a LLMs generativos usados como clasificadores.
 
@@ -115,8 +115,8 @@ No hay datos publicados en la información disponible que comparen accuracy entr
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio consultado): https://huggingface.co/bhedanikhilkumar234567/strands-decider-2B-hobson-v21
-- Modelo en HuggingFace (organizacion del proyecto): https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
+- Modelo en Hugging Face (repositorio consultado): https://huggingface.co/bhedanikhilkumar234567/strands-decider-2B-hobson-v21
+- Modelo en Hugging Face (organizacion del proyecto): https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
 - Checkpoint predecesor v19: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
 - Repositorio de codigo, receta de entrenamiento, inventario de datos y evaluaciones: https://github.com/strands-labs/strands-decider
 - Ejemplos de integracion con Strands: https://github.com/strands-labs/strands-decider/blob/main/examples/strands/README.md

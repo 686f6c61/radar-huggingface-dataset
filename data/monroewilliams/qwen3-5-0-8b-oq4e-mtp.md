@@ -70,7 +70,7 @@ No hay información suficiente para comparar directamente este modelo cuantizado
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/monroewilliams/Qwen3.5-0.8B-oQ4e-mtp
+- Hugging Face del modelo cuantizado: https://huggingface.co/monroewilliams/Qwen3.5-0.8B-oQ4e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - vLLM Recipes (arquitectura y contexto): https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B
 - Qualcomm AI Hub (despliegue edge): https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b

@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 - El repositorio completo pesa 127.7 GB, pero solo es necesario descargar el checkpoint concreto que se quiera evaluar.
 - Una GPU consumer con 4-6 GB de VRAM (por ejemplo, RTX 3060, RTX 4060) es suficiente para cargar un solo checkpoint en bf16.
 - Para ejecutar los 43 checkpoints de forma secuencial, se requiere almacenamiento de al menos 130 GB y una GPU que pueda reutilizarse.
-- Opciones de despliegue: al ser pesos en safetensors, se puede usar cualquier framework compatible con HuggingFace Transformers, vLLM, o llama.cpp si se convierten a GGUF (aunque no se proporcionan conversiones oficiales).
+- Opciones de despliegue: al ser pesos en safetensors, se puede usar cualquier framework compatible con Hugging Face Transformers, vLLM, o llama.cpp si se convierten a GGUF (aunque no se proporcionan conversiones oficiales).
 - No se dispone de datos de latencia o throughput especificos para este modelo.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ Este repositorio no es un modelo final comparable con los anteriores, sino un ar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s2-26b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s2-26b
 - Modelo base OLMo-2-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Repositorio OLMo en GitHub: https://github.com/allenai/OLMo
 - Pagina oficial de OLMo 2: https://allenai.org/olmo2

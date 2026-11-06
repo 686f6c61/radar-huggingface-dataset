@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono5-w20-s160` es un checkpoint de la familia `sn38-nanochrono`, publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0. Se distribuye en formato safetensors con aproximadamente 2.018 millones de parametros (unos 2,0 B), lo que lo situa en la categoria de modelos pequenos, aptos para despliegue en hardware de consumo. El repositorio ocupa 12,6 GB, un tamano coherente con pesos en precision alta (probablemente bf16 o fp16) para un modelo de esta escala.
+El modelo `alfred8995/r18-a2-w13-k-chrono5-w20-s160` es un checkpoint de la familia `sn38-nanochrono`, publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0. Se distribuye en formato safetensors con aproximadamente 2.018 millones de parametros (unos 2,0 B), lo que lo situa en la categoria de modelos pequenos, aptos para despliegue en hardware de consumo. El repositorio ocupa 12,6 GB, un tamano coherente con pesos en precision alta (probablemente bf16 o fp16) para un modelo de esta escala.
 
-La nomenclatura del identificador (`r18`, `a2`, `w13`, `chrono5`, `w20`, `s160`) sugiere una configuracion experimental concreta dentro de una linea de investigacion sobre arquitecturas "chrono" o "nanochrono", aunque no se dispone de documentacion publica que explique el significado de cada sufijo. El modelo esta marcado como gated (acceso restringido), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. No se han publicado resultados de benchmarks, datos de entrenamiento ni detalles de arquitectura en la informacion disponible.
+La nomenclatura del identificador (`r18`, `a2`, `w13`, `chrono5`, `w20`, `s160`) sugiere una configuracion experimental concreta dentro de una linea de investigacion sobre arquitecturas "chrono" o "nanochrono", aunque no se dispone de documentacion publica que explique el significado de cada sufijo. El modelo esta marcado como gated (acceso restringido), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. No se han publicado resultados de benchmarks, datos de entrenamiento ni detalles de arquitectura en la informacion disponible.
 
 Por su tamano y licencia permisiva, el modelo resulta relevante para experimentacion e investigacion en entornos con recursos limitados, pero la ausencia de documentacion tecnica y de evaluaciones publicas limita seriamente su uso en produccion sin una validacion previa por parte del equipo que lo adopte.
 
@@ -81,7 +81,7 @@ La comparativa se limita a modelos de escala similar ampliamente conocidos; los 
 - Sin benchmarks publicados: no hay evidencia de calidad en tareas de razonamiento, codigo, matematicas o multilingue.
 - Riesgo de alucinacion: al no haber datos de alineacion ni evaluaciones, el riesgo es desconocido y potencialmente alto en produccion.
 - Sesgos: no documentados; sin informacion sobre la composicion del dataset no es posible estimar sesgos de genero, raza o ideologicos.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de despliegues y a la reproducibilidad.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de despliegues y a la reproducibilidad.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantias ni soporte; conviene revisar los terminos del gate antes de integrarlo en productos.
 - Formato unico safetensors: no hay GGUF, AWQ ni GPTQ oficiales, por lo que la cuantizacion para hardware limitado debe realizarse por cuenta del usuario.
 - Fecha de creacion futura (2026-10-29): el timestamp del repositorio es posterior a la fecha actual, lo que sugiere un posible error de metadatos o un repositorio de pruebas; conviene verificar la integridad antes de confiar en el.
@@ -89,5 +89,5 @@ La comparativa se limita a modelos de escala similar ampliamente conocidos; los 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w20-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w20-s160
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

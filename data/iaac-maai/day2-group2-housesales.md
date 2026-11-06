@@ -4,7 +4,7 @@
 
 `iaac-maai/day2-group2-housesales` es un pipeline de scikit-learn para regresión tabular que estima el precio de venta de viviendas residenciales en el condado de King (Washington, EE. UU.) a partir de características físicas del inmueble, calidad de construcción y coordenadas geográficas. Lo firma el equipo 2 del curso AI Methods I del IAAC MaAI (2026/27), con autoría de Karthikeyan Saravanan, Emmanuel Marquez, Bars Babila y Samiha Abeda Nur, y se publica bajo licencia MIT.
 
-No es un modelo de lenguaje ni una red neuronal: es un `HistGradientBoostingRegressor` de scikit-learn envuelto en un pipeline con imputación de valores ausentes y codificación one-hot de códigos postales, serializado en formato `joblib`. El artefacto ocupa 0,0 GB y se distribuye con la etiqueta `tabular-regression`, sin descargas ni interacciones registradas en HuggingFace en el momento de la consulta.
+No es un modelo de lenguaje ni una red neuronal: es un `HistGradientBoostingRegressor` de scikit-learn envuelto en un pipeline con imputación de valores ausentes y codificación one-hot de códigos postales, serializado en formato `joblib`. El artefacto ocupa 0,0 GB y se distribuye con la etiqueta `tabular-regression`, sin descargas ni interacciones registradas en Hugging Face en el momento de la consulta.
 
 Su relevancia es acotada y de carácter didáctico: sirve como referencia de cómo estructurar un flujo reproducible de regresión tabular (split 80/20, validación cruzada agrupada por código postal, comparación de seis algoritmos y búsqueda de hiperparámetros) sobre el conocido dataset *House Sales in King County, USA* de Kaggle. No está pensado para uso en producción fuera de su ámbito geográfico y temporal.
 
@@ -87,7 +87,7 @@ Resultados en el conjunto de test reservado (usado una sola vez):
 
 | Modelo | Tipo | R² CV | MAE CV (log10) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gradient Boosting (este modelo) | HistGradientBoostingRegressor | 0,8858 | 0,0501 | MIT | HuggingFace, `joblib` |
+| Gradient Boosting (este modelo) | HistGradientBoostingRegressor | 0,8858 | 0,0501 | MIT | Hugging Face, `joblib` |
 | Random Forest (mismo estudio) | Ensemble de árboles | 0,8769 | 0,0517 | No especificada en la ficha | Solo como comparación interna |
 | Regresión lineal (mismo estudio) | Modelo lineal | 0,8512 | 0,0586 | No especificada en la ficha | Solo como comparación interna |
 | KNN k=10 (mismo estudio) | Instance-based | 0,8229 | 0,0633 | No especificada en la ficha | Solo como comparación interna |
@@ -110,7 +110,7 @@ No se han identificado en la información proporcionada modelos públicos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iaac-maai/day2-group2-housesales
+- Hugging Face: https://huggingface.co/iaac-maai/day2-group2-housesales
 - Repositorio GitHub del pipeline (referenciado en la model card): https://github.com/iaac-maai/2-day2-assignment
 - Dataset de origen en Kaggle: https://www.kaggle.com/datasets/harlfoxem/housesalesprediction
 - Documentación de scikit-learn sobre `HistGradientBoostingRegressor`: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ngustj/smolvla_paper_cup_50ep_20k es un checkpoint de robótica publicado por el usuario ngustj en HuggingFace, consistente en un ajuste fino de la política SmolVLA (vision-language-action) sobre el modelo base lerobot/smolvla_base. Se trata, por tanto, de un modelo de acción visuolingüística y no de un modelo de lenguaje generativo: recibe imágenes de cámara y el estado del robot, y emite directamente comandos de acción de 6 dimensiones para un brazo robótico de tipo seguir (so_follower). El checkpoint tiene 450.046.176 parámetros (~450 M) y un repositorio de 0,9 GB en formato safetensors.
+ngustj/smolvla_paper_cup_50ep_20k es un checkpoint de robótica publicado por el usuario ngustj en Hugging Face, consistente en un ajuste fino de la política SmolVLA (vision-language-action) sobre el modelo base lerobot/smolvla_base. Se trata, por tanto, de un modelo de acción visuolingüística y no de un modelo de lenguaje generativo: recibe imágenes de cámara y el estado del robot, y emite directamente comandos de acción de 6 dimensiones para un brazo robótico de tipo seguir (so_follower). El checkpoint tiene 450.046.176 parámetros (~450 M) y un repositorio de 0,9 GB en formato safetensors.
 
 El modelo ha sido entrenado mediante imitación (behavior cloning) sobre el conjunto de datos ngustj/paper_cup_pick_place, compuesto por 50 episodios y 27.579 fotogramas a 30 FPS, con una única tarea: "Pick up the paper cup and place it on the yellow sticky note" (coger el vaso de papel y colocarlo sobre la nota adhesiva amarilla). El entrenamiento se realizó con LeRobot 0.6.2 durante 20.000 pasos, con tamaño de lote 4, optimizador AdamW, tasa de aprendizaje 0,0001 y semilla 1000.
 
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ngustj/smolvla_paper_cup_50ep_20k | 450.046.176 | No disponible | Pick-and-place de vaso de papel (ajuste fino) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| lerobot/smolvla_base | No disponible en la informacion | No disponible | Política VLA base, preentrenada y reajustable | No disponible en la informacion | HuggingFace (modelo base declarado) |
-| Otras políticas de LeRobot (ACT, Diffusion Policy, pi0) | No disponible en la informacion | No disponible | Manipulación robótica por imitación | No disponible en la informacion | HuggingFace / repositorio LeRobot |
+| ngustj/smolvla_paper_cup_50ep_20k | 450.046.176 | No disponible | Pick-and-place de vaso de papel (ajuste fino) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| lerobot/smolvla_base | No disponible en la informacion | No disponible | Política VLA base, preentrenada y reajustable | No disponible en la informacion | Hugging Face (modelo base declarado) |
+| Otras políticas de LeRobot (ACT, Diffusion Policy, pi0) | No disponible en la informacion | No disponible | Manipulación robótica por imitación | No disponible en la informacion | Hugging Face / repositorio LeRobot |
 
 La única comparación documentada con datos es frente al modelo base: este checkpoint añade 20.000 pasos de ajuste fino sobre 50 episodios de una tarea concreta, manteniendo el mismo número de parámetros. No se dispone de cifras de rendimiento del base ni de alternativas que permitan una comparación cuantitativa.
 
@@ -101,7 +101,7 @@ La única comparación documentada con datos es frente al modelo base: este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngustj/smolvla_paper_cup_50ep_20k
+- Modelo en Hugging Face: https://huggingface.co/ngustj/smolvla_paper_cup_50ep_20k
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/ngustj/paper_cup_pick_place
 - Artículo SmolVLA: https://huggingface.co/papers/2506.01844

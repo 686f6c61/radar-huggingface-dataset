@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quill poetry v5 (identificador `GLASSEYE/quill-poetry-v5-gguf`) es un modelo publicado en HuggingFace por el usuario GLASSEYE, distribuido unicamente en formato GGUF y etiquetado como modelo conversacional especializado en poesia, metrica ("meter") y reparacion de versos ("repair"). La model card es extremadamente breve: una linea en la que se define como "repair-heavy meter" y se indica el comando de ejecucion `ollama run quill`. No se documentan datos de entrenamiento, arquitectura base, composicion del dataset ni resultados de evaluacion.
+Quill poetry v5 (identificador `GLASSEYE/quill-poetry-v5-gguf`) es un modelo publicado en Hugging Face por el usuario GLASSEYE, distribuido unicamente en formato GGUF y etiquetado como modelo conversacional especializado en poesia, metrica ("meter") y reparacion de versos ("repair"). La model card es extremadamente breve: una linea en la que se define como "repair-heavy meter" y se indica el comando de ejecucion `ollama run quill`. No se documentan datos de entrenamiento, arquitectura base, composicion del dataset ni resultados de evaluacion.
 
 El repositorio contiene 7.248.023.552 parametros (aproximadamente 7,25 mil millones) y ocupa 4,4 GB, un tamano coherente con una cuantizacion de 4-5 bits de un modelo de esa escala. La licencia declarada es Apache 2.0, lo que en principio permitiria uso comercial, aunque el autor no aporta informacion sobre el modelo base del que deriva ni sobre las obligaciones heredadas de ese hipotetico modelo original.
 
@@ -91,5 +91,5 @@ La diferencia practica principal es que quill-poetry no publica versiones en saf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GLASSEYE/quill-poetry-v5-gguf
+- Modelo en Hugging Face: https://huggingface.co/GLASSEYE/quill-poetry-v5-gguf
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a sitios de contenido para adultos sin ninguna relacion con el modelo, el autor ni la versificacion. No se dispone de paper, blog tecnico, repositorio de codigo ni demo asociados.

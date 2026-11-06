@@ -18,7 +18,7 @@ La relevancia de este modelo radica en su equilibrio entre capacidades multimoda
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (varias precisiones, incluyendo versiones con imatrix, p. ej. Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0) |
 | Idiomas soportados | no disponible (presumiblemente multilingue, dada la familia Qwen) |
-| Licencia | Apache 2.0 (segun etiqueta en HuggingFace) |
+| Licencia | Apache 2.0 (segun etiqueta en Hugging Face) |
 | Formato de pesos | GGUF (safetensors disponible en el repositorio base) |
 
 ## Arquitectura y entrenamiento
@@ -78,12 +78,12 @@ Nota: los datos de la tabla comparativa son orientativos y no provienen de la in
 - Limitaciones de contexto: la longitud de contexto no esta confirmada; si es similar a otros modelos Qwen3, podria ser de 128K tokens, pero debe verificarse en la documentacion oficial.
 - Riesgo en produccion: al ser una cuantizacion GGUF, puede haber una ligera degradacion de calidad frente al modelo original en precision completa, especialmente en tareas de razonamiento complejo.
 - Idiomas: no se ha confirmado la cobertura de idiomas; aunque la familia Qwen es multilingue, es recomendable probar con el espanol antes de desplegar en produccion.
-- Licencia: aunque la etiqueta indica Apache 2.0, la informacion de HuggingFace muestra "no disponible" en el campo de licencia; se recomienda verificar los terminos exactos en el repositorio base.
+- Licencia: aunque la etiqueta indica Apache 2.0, la informacion de Hugging Face muestra "no disponible" en el campo de licencia; se recomienda verificar los terminos exactos en el repositorio base.
 - Dependencia de la cuantizacion: el rendimiento varia significativamente entre cuantizaciones; las versiones de baja precision (Q2, Q3) pueden mostrar perdidas notables de coherencia.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - Repositorio base (modelo original): https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Organizacion Unsloth: https://huggingface.co/unsloth
 - Documentacion de Qwen (familia): https://qwenlm.github.io/ (no confirmado para esta version especifica)

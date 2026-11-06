@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `r18-a2-w14-k-chrono4-w60ft2-s300`, publicado por el usuario alfred8995 en HuggingFace, es un checkpoint de 2.018.511.234 parametros (aproximadamente 2.020 millones) distribuido en formato safetensors con un peso total de repositorio de 6,3 GB. La nomenclatura del identificador sugiere un entrenamiento por etapas o un experimento con hiperparametros codificados en el nombre (posibles referencias a "r18", "a2", "w14", "chrono4", "w60ft2" y "s300"), pero no se dispone de documentacion publica que explique el significado de cada sufijo. El tag `sn38-nanochrono` apunta a una familia o linaje de entrenamiento propio del autor, sin publicaciones asociadas conocidas.
+El modelo `r18-a2-w14-k-chrono4-w60ft2-s300`, publicado por el usuario alfred8995 en Hugging Face, es un checkpoint de 2.018.511.234 parametros (aproximadamente 2.020 millones) distribuido en formato safetensors con un peso total de repositorio de 6,3 GB. La nomenclatura del identificador sugiere un entrenamiento por etapas o un experimento con hiperparametros codificados en el nombre (posibles referencias a "r18", "a2", "w14", "chrono4", "w60ft2" y "s300"), pero no se dispone de documentacion publica que explique el significado de cada sufijo. El tag `sn38-nanochrono` apunta a una familia o linaje de entrenamiento propio del autor, sin publicaciones asociadas conocidas.
 
-Se trata de un modelo de acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos. No se ha publicado informacion sobre la arquitectura, el pipeline de inferencia, los idiomas soportados ni los datos de entrenamiento. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, pero al no existir model card detallada conviene tratar cualquier despliegue en produccion con cautela hasta validar el comportamiento empiricamente.
+Se trata de un modelo de acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos. No se ha publicado informacion sobre la arquitectura, el pipeline de inferencia, los idiomas soportados ni los datos de entrenamiento. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, pero al no existir model card detallada conviene tratar cualquier despliegue en produccion con cautela hasta validar el comportamiento empiricamente.
 
 Por su tamano (en torno a 2.000 millones de parametros), encaja en la categoria de modelos pequenos-medianos que pueden ejecutarse en GPU de consumo con cuantizacion. Sin embargo, la ausencia de benchmarks, de documentacion tecnica y de ejemplos de uso hace que, a dia de hoy, sea un artefacto de investigacion mas que un modelo listo para produccion.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| r18-a2-w14-k-chrono4-w60ft2-s300 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace | No disponible |
+| r18-a2-w14-k-chrono4-w60ft2-s300 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face | No disponible |
 | Qwen2.5-1.5B | 1.540 millones | 32.768 tokens | Apache 2.0 | Publica | Model card completa y benchmarks |
 | Llama 3.2 1B | 1.240 millones | 128.000 tokens | Llama 3.2 Community License | Gated | Model card completa y benchmarks |
 | Gemma 2 2B | 2.610 millones | 8.192 tokens | Gemma Terms of Use | Gated | Model card completa y benchmarks |
@@ -76,7 +76,7 @@ La comparativa se ofrece solo como referencia de categoria (modelos de 1-3 B par
 
 - Ausencia total de model card: no hay informacion sobre datos de entrenamiento, sesgos, idiomas ni comportamiento esperado.
 - Riesgo elevado de alucinacion y de comportamiento impredecible al no existir evaluaciones publicadas.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que anade friccion para equipos y para pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que anade friccion para equipos y para pipelines automatizados.
 - Solo se distribuyen pesos safetensors; no hay GGUF ni otras cuantizaciones listas, lo que obliga a conversion manual para despliegues ligeros.
 - La licencia Apache 2.0 permite uso comercial, pero la falta de documentacion sobre el origen de los datos impide descartar riesgos de propiedad intelectual o de sesgos no declarados.
 - No se ha verificado la compatibilidad con bibliotecas estandar (transformers, vLLM); la arquitectura podria requerir codigo personalizado del autor.
@@ -85,5 +85,5 @@ La comparativa se ofrece solo como referencia de categoria (modelos de 1-3 B par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono4-w60ft2-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono4-w60ft2-s300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web.

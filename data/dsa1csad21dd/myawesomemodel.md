@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un checkpoint publicado en HuggingFace por el usuario dsa1csad21dd bajo el identificador `dsa1csad21dd/MyAwesomeModel`. La model card indica que se trata de un checkpoint seleccionado (`step_1000`) de un workspace de entrenamiento, escogido por obtener la mayor `eval_accuracy` en una tarea de clasificación de texto. El modelo se distribuye con la librería `transformers` y pesos en formato PyTorch, y la model card declara licencia MIT en su frontmatter YAML.
+MyAwesomeModel es un checkpoint publicado en Hugging Face por el usuario dsa1csad21dd bajo el identificador `dsa1csad21dd/MyAwesomeModel`. La model card indica que se trata de un checkpoint seleccionado (`step_1000`) de un workspace de entrenamiento, escogido por obtener la mayor `eval_accuracy` en una tarea de clasificación de texto. El modelo se distribuye con la librería `transformers` y pesos en formato PyTorch, y la model card declara licencia MIT en su frontmatter YAML.
 
 La información pública disponible es muy limitada: no se especifican arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni detalles del dataset de entrenamiento. La model card únicamente aporta una tabla de resultados de evaluación sobre quince tareas genéricas (razonamiento matemático, generación de código, clasificación de texto, análisis de sentimiento, etc.), sin indicar las métricas concretas empleadas ni los conjuntos de evaluación utilizados.
 
@@ -105,7 +105,7 @@ No es posible establecer una comparativa rigurosa: se desconoce el tamaño, la a
 | Contexto | no disponible | variable según modelo |
 | Benchmarks estándar | no disponibles | MMLU, HumanEval, GSM8K publicados |
 | Licencia | MIT | varía (MIT, Apache 2.0, licencias de comunidad) |
-| Disponibilidad | HuggingFace, 0 descargas | amplia en ecosistema open source |
+| Disponibilidad | Hugging Face, 0 descargas | amplia en ecosistema open source |
 
 ## Limitaciones y advertencias
 
@@ -121,5 +121,5 @@ No es posible establecer una comparativa rigurosa: se desconoce el tamaño, la a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dsa1csad21dd/MyAwesomeModel
+- Hugging Face: https://huggingface.co/dsa1csad21dd/MyAwesomeModel
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

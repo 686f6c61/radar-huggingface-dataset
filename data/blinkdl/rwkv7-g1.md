@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks para comparar directamente con otros modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BlinkDL/rwkv7-g1
+- Hugging Face: https://huggingface.co/BlinkDL/rwkv7-g1
 - Sitio web oficial: https://rwkv.com/
 - Repositorio RWKV-LM (entrenamiento): https://github.com/BlinkDL/RWKV-LM
 - Motor de inferencia Albatross: https://github.com/BlinkDL/Albatross

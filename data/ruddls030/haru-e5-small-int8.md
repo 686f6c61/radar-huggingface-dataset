@@ -84,9 +84,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Dimension | Contexto | Rendimiento (Haru real R@1 / Ko-StrategyQA nDCG@10) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| haru-e5-small-int8 | 118 M (heredados) | 384 | 512 tokens | 0,593 / 0,715 | MIT | ONNX fp32 e int8 en HuggingFace |
-| intfloat/multilingual-e5-small | 118 M | 384 | 512 tokens | 0,413 / 0,752 | MIT | safetensors y ONNX en HuggingFace |
-| KoSimCSE-roberta-multitask | no disponible | no disponible | no disponible | 0,440 / 0,639 | no disponible | HuggingFace |
+| haru-e5-small-int8 | 118 M (heredados) | 384 | 512 tokens | 0,593 / 0,715 | MIT | ONNX fp32 e int8 en Hugging Face |
+| intfloat/multilingual-e5-small | 118 M | 384 | 512 tokens | 0,413 / 0,752 | MIT | safetensors y ONNX en Hugging Face |
+| KoSimCSE-roberta-multitask | no disponible | no disponible | no disponible | 0,440 / 0,639 | no disponible | Hugging Face |
 | paraphrase-multilingual-MiniLM-L12-v2 | no disponible en la informacion disponible | 384 | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion solo es posible con datos de la propia model card. Frente al modelo base, haru-e5-small-int8 gana 0,18 puntos de R@1 en el dominio objetivo y cede 0,037 en nDCG@10 general; frente a KoSimCSE-roberta-multitask gana en los tres conjuntos, aunque este ultimo esta especializado en similitud de frases en coreano y no en recuperacion sobre un catalogo cerrado de respuestas.
@@ -108,7 +108,7 @@ La comparacion solo es posible con datos de la propia model card. Frente al mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruddls030/haru-e5-small-int8
+- Modelo en Hugging Face: https://huggingface.co/ruddls030/haru-e5-small-int8
 - Modelo base intfloat/multilingual-e5-small: https://huggingface.co/intfloat/multilingual-e5-small
 - Proyecto HaruPet (enlace citado en la model card): https://haru.sarl
 - Modelo comparado KoSimCSE-roberta-multitask: https://huggingface.co/BM-K/KoSimCSE-roberta-multitask

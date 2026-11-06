@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`panbha/gita-text-generation-gpt2` es un modelo de generacion de texto publicado en HuggingFace por el usuario panbha, construido sobre la arquitectura GPT-2 de OpenAI. Con 124.439.808 parametros totales (aproximadamente 124 millones), se situa en la categoria de modelos pequenos de tipo decoder-only transformer, el mismo orden de magnitud que GPT-2 base (124M). El identificador sugiere un ajuste fino orientado a la generacion de texto relacionado con el Bhagavad Gita, aunque la model card no confirma explicitamente el corpus de entrenamiento ni el proposito.
+`panbha/gita-text-generation-gpt2` es un modelo de generacion de texto publicado en Hugging Face por el usuario panbha, construido sobre la arquitectura GPT-2 de OpenAI. Con 124.439.808 parametros totales (aproximadamente 124 millones), se situa en la categoria de modelos pequenos de tipo decoder-only transformer, el mismo orden de magnitud que GPT-2 base (124M). El identificador sugiere un ajuste fino orientado a la generacion de texto relacionado con el Bhagavad Gita, aunque la model card no confirma explicitamente el corpus de entrenamiento ni el proposito.
 
-El modelo resuelve la tarea generica de text-generation y se distribuye en formato safetensors compatible con la libreria transformers, ademas de estar etiquetado para text-generation-inference y endpoints_compatible, lo que indica que puede desplegarse en infraestructura de inferencia estandar del ecosistema HuggingFace. Su relevancia es limitada en terminos de capacidades: se trata de un checkpoint pequeno, sin datos publicados de evaluacion, sin licencia declarada y sin informacion sobre idiomas o datos de entrenamiento.
+El modelo resuelve la tarea generica de text-generation y se distribuye en formato safetensors compatible con la libreria transformers, ademas de estar etiquetado para text-generation-inference y endpoints_compatible, lo que indica que puede desplegarse en infraestructura de inferencia estandar del ecosistema Hugging Face. Su relevancia es limitada en terminos de capacidades: se trata de un checkpoint pequeno, sin datos publicados de evaluacion, sin licencia declarada y sin informacion sobre idiomas o datos de entrenamiento.
 
-La model card es una plantilla autogenerada por HuggingFace en la que practicamente todos los campos figuran como "[More Information Needed]". Esto implica que la mayor parte de las especificaciones tecnicas, el proceso de entrenamiento y las limitaciones no estan documentados por el autor, por lo que esta ficha refleja unicamente lo que puede inferirse de los metadatos del repositorio y de la arquitectura GPT-2 conocida.
+La model card es una plantilla autogenerada por Hugging Face en la que practicamente todos los campos figuran como "[More Information Needed]". Esto implica que la mayor parte de las especificaciones tecnicas, el proceso de entrenamiento y las limitaciones no estan documentados por el autor, por lo que esta ficha refleja unicamente lo que puede inferirse de los metadatos del repositorio y de la arquitectura GPT-2 conocida.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| panbha/gita-text-generation-gpt2 | 124,4 M | no disponible | no disponible | HuggingFace |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace |
-| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
+| panbha/gita-text-generation-gpt2 | 124,4 M | no disponible | no disponible | Hugging Face |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face |
+| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a parametros y licencia, ya que no hay datos de rendimiento publicados para este checkpoint. Frente a `gpt2` original, la diferencia principal es la licencia (no declarada aqui frente a MIT) y la falta de documentacion.
 
@@ -85,6 +85,6 @@ La comparativa se limita a parametros y licencia, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/panbha/gita-text-generation-gpt2
+- Modelo en Hugging Face: https://huggingface.co/panbha/gita-text-generation-gpt2
 - Paper de referencia citado en la plantilla (impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute

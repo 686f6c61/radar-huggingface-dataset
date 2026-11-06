@@ -105,6 +105,6 @@ La ventaja diferencial de este export es el empaquetado INT4 en MNN con LM head 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bakhil-aissa/Spark-X2.5-1.7B-mnn-4bit-omni
+- Repositorio Hugging Face: https://huggingface.co/bakhil-aissa/Spark-X2.5-1.7B-mnn-4bit-omni
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Runtime MNN (GitHub): https://github.com/alibaba/MNN

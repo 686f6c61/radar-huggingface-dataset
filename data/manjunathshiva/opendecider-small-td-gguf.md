@@ -99,7 +99,7 @@ No se dispone de datos en la informacion proporcionada sobre otros modelos de de
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/manjunathshiva/opendecider-small-td-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/manjunathshiva/opendecider-small-td-GGUF
 - Modelo base (precision completa): https://huggingface.co/manjunathshiva/opendecider-small-td
 - Variante MLX de 8 bits: https://huggingface.co/manjunathshiva/opendecider-small-mlx-8bit
 - Repositorio del paquete opendecider: https://github.com/manjunathshiva/opendecider

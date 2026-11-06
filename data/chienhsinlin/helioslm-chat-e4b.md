@@ -76,9 +76,9 @@ Referencia del autor: Google reporta MMLU-Pro 69,4 y AIME 2026 42,5 para Gemma 4
 
 | Modelo | Parámetros | Contexto | MMLU-Pro | AIME 2026 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HeliosLM Chat E4B | ~8,0 B | no disponible | 69,51 (auto) | 45,83 (auto) | Gemma Terms of Use | HuggingFace |
-| google/gemma-4-E4B-it | ~8,0 B (arquitectura E4B) | no disponible | 69,4 (reportado por Google) | 42,5 (reportado por Google) | Gemma Terms of Use | HuggingFace |
-| Gemma 4 26B-A4B-it | no disponible | no disponible | no disponible | no disponible | Gemma Terms of Use | HuggingFace |
+| HeliosLM Chat E4B | ~8,0 B | no disponible | 69,51 (auto) | 45,83 (auto) | Gemma Terms of Use | Hugging Face |
+| google/gemma-4-E4B-it | ~8,0 B (arquitectura E4B) | no disponible | 69,4 (reportado por Google) | 42,5 (reportado por Google) | Gemma Terms of Use | Hugging Face |
+| Gemma 4 26B-A4B-it | no disponible | no disponible | no disponible | no disponible | Gemma Terms of Use | Hugging Face |
 
 El autor emplea Gemma 4 26B-A4B-it únicamente como juez en las sondas de neutralidad (18,1% de encuadre oficial unilateral frente al 16,8% de HeliosLM y de Gemma 4 E4B-it), no como comparación de rendimiento. No se dispone de datos de benchmarks de terceros para ampliar la comparativa.
 
@@ -97,6 +97,6 @@ El autor emplea Gemma 4 26B-A4B-it únicamente como juez en las sondas de neutra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chienhsinlin/helioslm-chat-e4b
+- Modelo en Hugging Face: https://huggingface.co/chienhsinlin/helioslm-chat-e4b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Términos de uso de Gemma: https://ai.google.dev/gemma/terms

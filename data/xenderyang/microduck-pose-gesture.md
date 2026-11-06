@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XenderYang/microduck-pose-gesture
+- Hugging Face: https://huggingface.co/XenderYang/microduck-pose-gesture
 - Repositorio de entrenamiento/benchmark: https://github.com/YDxun/microduck-duck-play
 - Repositorio relacionado de control por gestos con Snap Spectacles: https://github.com/kgediya/specs-microduck
 - Modelo relacionado de la misma serie: https://huggingface.co/XenderYang/microduck-rl-ydx-walk

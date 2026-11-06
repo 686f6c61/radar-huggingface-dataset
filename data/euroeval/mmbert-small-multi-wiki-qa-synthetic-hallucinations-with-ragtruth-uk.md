@@ -26,7 +26,7 @@ El modelo se basa en la arquitectura ModernBERTa, una evolución del encoder BER
 - Detección de alucinaciones a nivel de token en respuestas QA generadas con contexto RAG.
 - Clasificación binaria por token: fiel al contexto o alucinado.
 - Soporte multilingüe, con modelos separados para distintos idiomas (en, uk, it, fo, etc.).
-- Compatible con la librería transformers de HuggingFace para integración directa en pipelines de evaluación.
+- Compatible con la librería transformers de Hugging Face para integración directa en pipelines de evaluación.
 - Diseñado específicamente para escenarios de retrieval-augmented generation, donde el contexto proporcionado es la fuente de verdad.
 - No es un modelo generativo; su función es exclusivamente de análisis y etiquetado.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 - VRAM estimada para inferencia: aproximadamente 0,6 GB en fp32 (140M × 4 bytes), alrededor de 0,3 GB en fp16. Con activaciones y memoria intermedia, cabe en menos de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU con 4 GB de VRAM es suficiente; también funciona correctamente en CPU para inferencia por lotes pequeños.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, exportable a ONNX para aceleración con TensorRT u ONNX Runtime.
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, exportable a ONNX para aceleración con TensorRT u ONNX Runtime.
 - Latencia: al ser un modelo de 140M parámetros, la inferencia por muestra es del orden de milisegundos en GPU y de decenas de milisegundos en CPU moderna.
 
 ## Comparativa con modelos similares
@@ -65,6 +65,6 @@ No disponible. No se han identificado modelos comparables de detección de aluci
 
 ## Enlaces
 
-- [HuggingFace - EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-uk](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-uk)
+- [Hugging Face - EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-uk](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-uk)
 - [Paper - A multilingual hallucination benchmark: MultiWikiQHalluA](https://arxiv.org/pdf/2605.02504v2)
 - [EuroEval - The robust European language model benchmark](https://euroeval.com/)

@@ -74,7 +74,7 @@ No se dispone de datos de otros LoRA de código comparables (p. ej., CodeLlama L
 - El adaptador está pensado como checkpoint de investigación; no se recomienda su uso directo en producción sin una evaluación adicional.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/tianzl66/Qwen3-8B-Magicoder-50K-LoRA-E1
+- Repositorio Hugging Face: https://huggingface.co/tianzl66/Qwen3-8B-Magicoder-50K-LoRA-E1
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Colección Qwen3: https://huggingface.co/collections/Qwen/qwen3
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

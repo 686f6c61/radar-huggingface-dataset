@@ -105,11 +105,11 @@ No se han identificado en la busqueda web modelos alternativos de la misma categ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/trevor000/Qwen3.6-35B-A3B-I-Mini-RTX4070
+- Repositorio en Hugging Face: https://huggingface.co/trevor000/Qwen3.6-35B-A3B-I-Mini-RTX4070
 - Modelo upstream con cuantizacion APEX y MTP: https://huggingface.co/mudler/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled-APEX-MTP-GGUF
 - Destilacion de razonamiento de origen: lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled (referenciada en la model card; no se ha facilitado URL directa)
 - Modelo base: Qwen/Qwen3.6-35B-A3B (referenciado en la model card; no se ha facilitado URL directa)
 - Repositorio de investigacion en RTX 4070: https://github.com/trevor050/escha-rtx4070-lab
-- Fichero de procedencia con verificacion SHA256: `provenance.json` del repositorio en HuggingFace
+- Fichero de procedencia con verificacion SHA256: `provenance.json` del repositorio en Hugging Face
 - Comando de descarga indicado por el autor: `hf download trevor000/Qwen3.6-35B-A3B-I-Mini-RTX4070 --local-dir Qwen3.6-35B-A3B-I-Mini-RTX4070`
 - Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el modelo (contenido de una cadena de supermercados) y no aportan informacion adicional utilizable.

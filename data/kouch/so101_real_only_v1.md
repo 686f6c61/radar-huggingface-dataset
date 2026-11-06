@@ -79,7 +79,7 @@ No hay modelos comparables directamente publicados con el mismo dataset y robot 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kouch/SO101_real_only_v1
+- Modelo en Hugging Face: https://huggingface.co/Kouch/SO101_real_only_v1
 - Dataset de teleoperación: https://huggingface.co/datasets/Kouch/SO101_real_teleop_v1
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

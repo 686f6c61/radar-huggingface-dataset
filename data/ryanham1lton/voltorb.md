@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Voltorb es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio tiene un tamano aproximado de 0,1 GB y fue creado el 24 de septiembre de 2026, con una unica actualizacion dos minutos despues de su creacion. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no tiene asignada ninguna etiqueta de pipeline (text-generation, text-to-image, etc.), lo que impide determinar a priori que tipo de tarea resuelve.
+Voltorb es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio tiene un tamano aproximado de 0,1 GB y fue creado el 24 de septiembre de 2026, con una unica actualizacion dos minutos despues de su creacion. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no tiene asignada ninguna etiqueta de pipeline (text-generation, text-to-image, etc.), lo que impide determinar a priori que tipo de tarea resuelve.
 
 La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento y sin ejemplos de uso. Tampoco se declaran idiomas soportados ni se especifica el formato de los pesos. El repositorio esta etiquetado con region:us, un metadato de caracter administrativo que no aporta informacion tecnica relevante.
 
@@ -20,7 +20,7 @@ Por todo lo anterior, esta ficha no puede caracterizar el modelo en terminos de 
 | Idiomas soportados | no disponible |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | no disponible |
-| Tamano del repositorio | 0,1 GB (aproximado, segun HuggingFace) |
+| Tamano del repositorio | 0,1 GB (aproximado, segun Hugging Face) |
 | Autor | Ryanham1lton |
 | Fecha de creacion | 2026-09-24 |
 | Ultima actualizacion | 2026-09-24 |
@@ -45,7 +45,7 @@ No se ha publicado informacion sobre las capacidades del modelo. En concreto, no
 - Capacidades multimodales (vision, audio) o modos especiales como thinking mode.
 - Cualquier otra funcionalidad declarada por el autor.
 
-La ausencia de una etiqueta de pipeline en HuggingFace impide incluso clasificar el modelo dentro de una categoria funcional concreta.
+La ausencia de una etiqueta de pipeline en Hugging Face impide incluso clasificar el modelo dentro de una categoria funcional concreta.
 
 ## Casos de uso
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. Solo puede afirmarse que los pesos ocupan aproximadamente 0,1 GB en el formato en que esten almacenados, segun el tamano del repositorio reportado por HuggingFace. La VRAM total necesaria dependera de ese formato, de la precision de carga y de la longitud de contexto.
+- VRAM estimada para inferencia: no disponible. Solo puede afirmarse que los pesos ocupan aproximadamente 0,1 GB en el formato en que esten almacenados, segun el tamano del repositorio reportado por Hugging Face. La VRAM total necesaria dependera de ese formato, de la precision de carga y de la longitud de contexto.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Por el tamano del repositorio, es plausible que quepa en GPUs de consumo, pero no puede confirmarse sin conocer la arquitectura y el numero de parametros.
 - Opciones de despliegue: no disponible. No se indica compatibilidad con vLLM, llama.cpp, Ollama, TGI, Transformers u otros motores de inferencia.
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Voltorb
+- Hugging Face: https://huggingface.co/Ryanham1lton/Voltorb
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

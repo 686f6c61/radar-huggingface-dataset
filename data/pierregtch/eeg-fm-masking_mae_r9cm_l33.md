@@ -116,7 +116,7 @@ La coleccion completa incluye 58 encoders con la misma receta; los resultados co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L33
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L33
 - Web del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Codigo en GitHub: https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

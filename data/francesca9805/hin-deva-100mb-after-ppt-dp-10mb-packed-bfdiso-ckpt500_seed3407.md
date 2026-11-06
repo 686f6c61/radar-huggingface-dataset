@@ -4,7 +4,7 @@
 
 El modelo `francesca9805/hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del checkpoint base `francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, publicado por el usuario francesca9805. Se trata de un modelo decoder-only de la familia GPT-2 con 124.770.816 parametros totales (aproximadamente 124,8 millones), distribuido en formato `safetensors` y entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2.
 
-Por la nomenclatura del identificador ("hin-deva", "100mb", "packed", "ckpt500") se deduce que forma parte de un experimento de investigacion centrado en hindi escrito en devanagari, con un corpus de aproximadamente 100 MB y un tokenizador propio, entrenado durante 500 pasos de checkpoint con la semilla 3407. No obstante, ni la model card ni los metadatos de HuggingFace confirman oficialmente el idioma, el tamano de contexto ni la composicion del dataset.
+Por la nomenclatura del identificador ("hin-deva", "100mb", "packed", "ckpt500") se deduce que forma parte de un experimento de investigacion centrado en hindi escrito en devanagari, con un corpus de aproximadamente 100 MB y un tokenizador propio, entrenado durante 500 pasos de checkpoint con la semilla 3407. No obstante, ni la model card ni los metadatos de Hugging Face confirman oficialmente el idioma, el tamano de contexto ni la composicion del dataset.
 
 El modelo es relevante unicamente como artefacto de investigacion: acumula 0 descargas y 0 likes, no declara licencia efectiva y no publica resultados de evaluacion. Su interes practico es limitado y se circunscribe a reproducir experimentos de ajuste supervisado sobre modelos GPT-2 pequenos en idiomas de bajos recursos.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/hin-deva-...-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| francesca9805/hin-deva-...-ckpt500_seed3407 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82 M | 1.024 tokens | Apache 2.0 | Ampliamente disponible |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 tokens | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82 M | 1.024 tokens | Apache 2.0 | Ampliamente disponible |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 tokens | Apache 2.0 | Ampliamente disponible |
 
 La comparacion se limita a parametros, contexto y licencia, ya que no existen resultados de evaluacion publicados para el modelo analizado que permitan contrastar rendimiento. Frente a GPT-2 small conserva un tamano equivalente, pero carece de licencia clara y de soporte de la comunidad. DistilGPT-2 y SmolLM-135M ofrecen licencias permisivas y contextos documentados, lo que los hace preferibles para cualquier uso en produccion.
 
@@ -85,14 +85,14 @@ La comparacion se limita a parametros, contexto y licencia, ya que no existen re
 - Sesgos conocidos: no documentados, pero al derivar de GPT-2 y de un corpus no descrito, es probable que herede sesgos de genero, religion y nacionalidad del material de entrenamiento, agravados por el posible sesgo de un corpus reducido (unos 100 MB) centrado en un unico idioma.
 - Riesgo de alucinacion: alto. Con 124,8 M de parametros y sin fases de alineacion documentadas (no consta RLHF ni DPO), no hay mecanismos que reduzcan la generacion de contenido falso.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta declarada y el soporte multilingue no esta confirmado; todo uso fuera del idioma y dominio de ajuste es especulativo.
-- Restricciones de licencia: la model card indica "licence: license" sin concretar, y los metadatos de HuggingFace marcan la licencia como no disponible. No hay autorizacion explicita de uso comercial; se desaconseja emplearlo en produccion sin aclarar la licencia con el autor.
+- Restricciones de licencia: la model card indica "licence: license" sin concretar, y los metadatos de Hugging Face marcan la licencia como no disponible. No hay autorizacion explicita de uso comercial; se desaconseja emplearlo en produccion sin aclarar la licencia con el autor.
 - Madurez: 0 descargas y 0 likes, sin benchmarks, sin documentacion de datos ni hiperparametros, y publicado en un repositorio de 5,2 GB que mezcla pesos y posibles checkpoints intermedios. No es un artefacto listo para produccion.
 - Ausencia de pesos cuantizados: no se distribuyen versiones GGUF, AWQ, GPTQ ni ONNX, por lo que cualquier despliegue eficiente exige conversion manual y validacion adicional.
 - Procedencia del tokenizador incierta: si el vocabulario difiere del GPT-2 estandar, las herramientas que asumen el tokenizador original pueden producir resultados incorrectos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Hugging Face: https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/hin-deva-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/h01vk3kf
 - Repositorio de TRL: https://github.com/huggingface/trl

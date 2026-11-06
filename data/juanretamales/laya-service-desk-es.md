@@ -91,9 +91,9 @@ No se dispone de datos de benchmarks de modelos alternativos de clasificación d
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya Service Desk (Español) | 321,9M | no disponible | Clasificación de tickets (categoría, prioridad, grupo) | Apache-2.0 | HuggingFace |
-| Laya Multilingual (base) | 322M | no disponible | Modelo base multilingüe | Apache-2.0 | HuggingFace |
-| BETO / RoBERTa-base en español (referencia genérica) | ~110M | 512 tokens (típico en BERT-base) | Clasificación de texto genérica | varía según checkpoint | HuggingFace |
+| Laya Service Desk (Español) | 321,9M | no disponible | Clasificación de tickets (categoría, prioridad, grupo) | Apache-2.0 | Hugging Face |
+| Laya Multilingual (base) | 322M | no disponible | Modelo base multilingüe | Apache-2.0 | Hugging Face |
+| BETO / RoBERTa-base en español (referencia genérica) | ~110M | 512 tokens (típico en BERT-base) | Clasificación de texto genérica | varía según checkpoint | Hugging Face |
 
 La comparación con BETO o RoBERTa-base es estructural: son encoders más pequeños que requerirían *fine-tuning* propio para esta tarea, y no hay datos que permitan afirmar cuál rinde mejor en este dominio concreto.
 
@@ -112,6 +112,6 @@ La comparación con BETO o RoBERTa-base es estructural: son encoders más peque�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JuanRetamales/laya-service-desk-es
+- Modelo en Hugging Face: https://huggingface.co/JuanRetamales/laya-service-desk-es
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Código y metodología: https://github.com/juanretamales/laya-service-desk

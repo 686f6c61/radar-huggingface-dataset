@@ -111,13 +111,13 @@ El parentesco directo con el modelo IDQL permite atribuir cualquier diferencia d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-success-bc-n32-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-success-bc-n32-divl
 - Modelo padre (actor congelado, IDQL): https://huggingface.co/mulligan/sim-square-broad-r02-auto-iql-success-bc-n32-idql
 - Dataset de demostraciones de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de rollouts de política IQL automática: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts
 - Dataset de rollouts filtrados por éxito: https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-iql-success-bc-n32-policy-rollouts
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organización Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Listado de datasets con la etiqueta sim-square-broad: https://huggingface.co/datasets?other=sim-square-broad
 - Página del proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page

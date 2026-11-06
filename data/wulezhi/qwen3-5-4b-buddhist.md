@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-Buddhist es un ajuste fino del modelo base Qwen3.5-4B orientado a terminologia y definiciones del diccionario budista chino Foguang Dacidian (佛光大辞典). Lo publica el usuario wulezhi en HuggingFace bajo el identificador `wulezhi/qwen3.5-4b-buddhist`, con fecha declarada de creacion el 27 de septiembre de 2026. Su proposito es servir como asistente conversacional especializado en lexicografia budista en escenarios de bajos recursos, ya que el unico artefacto publicado es una cuantizacion Q8_0 en formato GGUF de 4,61 GB.
+Qwen3.5-4B-Buddhist es un ajuste fino del modelo base Qwen3.5-4B orientado a terminologia y definiciones del diccionario budista chino Foguang Dacidian (佛光大辞典). Lo publica el usuario wulezhi en Hugging Face bajo el identificador `wulezhi/qwen3.5-4b-buddhist`, con fecha declarada de creacion el 27 de septiembre de 2026. Su proposito es servir como asistente conversacional especializado en lexicografia budista en escenarios de bajos recursos, ya que el unico artefacto publicado es una cuantizacion Q8_0 en formato GGUF de 4,61 GB.
 
 Tecnicamente es un transformer hibrido de la familia Qwen3.5: 33 capas, dimension oculta de 2560 y 4.326.350.848 parametros totales (4,33 mil millones), con atencion GQA de 16 cabezas de consulta y 4 de clave/valor combinada con atencion lineal y componentes SSM. Declara una ventana de contexto nativa de 262.144 tokens (256K) y un cabezal MTP (`nextn_predict_layers = 1`) que permite decodificacion especulativa en llama.cpp mediante `--spec-type draft-mtp`.
 
@@ -29,7 +29,7 @@ No se especifica el numero de tokens de entrenamiento, la composicion del datase
 
 ## Capacidades
 
-- Generacion de texto conversacional en formato de dialogo (etiqueta `conversational` en HuggingFace), orientada a preguntas y respuestas.
+- Generacion de texto conversacional en formato de dialogo (etiqueta `conversational` en Hugging Face), orientada a preguntas y respuestas.
 - Explicacion y definicion de terminos budistas, presumiblemente alineada con el estilo y el contenido del Foguang Dacidian.
 - Consulta lexicografica monolingue en chino; no hay evidencia de capacidades de traduccion hacia otros idiomas.
 - Manejo de contexto muy largo (hasta 262.144 tokens declarados), adecuado para concatenar entradas de diccionario o pasajes extensos.
@@ -90,7 +90,7 @@ No se dispone de datos verificados de rendimiento ni de especificaciones compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wulezhi/qwen3.5-4b-buddhist
+- Hugging Face: https://huggingface.co/wulezhi/qwen3.5-4b-buddhist
 - Repositorio del modelo base Qwen3.5-4B: no disponible en la informacion proporcionada
 - Informe tecnico o paper de Qwen3.5: no disponible en la informacion proporcionada
 - Documentacion de llama.cpp y decodificacion especulativa MTP: no disponible en la informacion proporcionada

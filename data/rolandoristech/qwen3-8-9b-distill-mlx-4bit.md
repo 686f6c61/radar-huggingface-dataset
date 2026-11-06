@@ -95,7 +95,7 @@ El GGUF de 18,9 GB corresponde a una precision mucho mayor (compatible con fp16 
 
 ## Enlaces
 
-- HuggingFace (repositorio objeto de la ficha): https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-4bit
+- Hugging Face (repositorio objeto de la ficha): https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-4bit
 - Repositorio canonico con documentacion completa (oQ4e): https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ4e
 - Variante oQ5e: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ5e
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill

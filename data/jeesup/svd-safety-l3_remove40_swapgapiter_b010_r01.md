@@ -79,10 +79,10 @@ En ASR, un valor más bajo indica mayor seguridad. No se han publicado en la inf
 
 | Modelo | Parametros | Contexto | Seguridad (ASR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r01` | 8.030.261.248 declarados; fracción densa 0,5998 según la model card | 8.192 tokens (heredado) | AdvBench 0,2450; StrongREJECT 0,3150; sobrerrechazo 0,1090 | Meta Llama 3 Community License | safetensors en HuggingFace, 0 descargas, 0 likes |
-| `meta-llama/Meta-Llama-3-8B-Instruct` | 8.030.261.248 | 8.192 tokens | No disponible en la información proporcionada; la model card de este checkpoint afirma que la compresión por sí sola eleva la tasa de éxito de ataque | Meta Llama 3 Community License | safetensors en HuggingFace, ampliamente desplegado |
-| `meta-llama/Meta-Llama-3.1-8B-Instruct` | Aproximadamente 8.000 millones | 128.000 tokens | No disponible en la información proporcionada | Meta Llama 3.1 Community License | safetensors en HuggingFace |
-| Otras celdas de la malla de `Jeesup` (otras reglas de selección y presupuestos) | Variable según celda | 8.192 tokens (heredado) | No disponible en la información proporcionada | Meta Llama 3 Community License | safetensors en HuggingFace |
+| `Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r01` | 8.030.261.248 declarados; fracción densa 0,5998 según la model card | 8.192 tokens (heredado) | AdvBench 0,2450; StrongREJECT 0,3150; sobrerrechazo 0,1090 | Meta Llama 3 Community License | safetensors en Hugging Face, 0 descargas, 0 likes |
+| `meta-llama/Meta-Llama-3-8B-Instruct` | 8.030.261.248 | 8.192 tokens | No disponible en la información proporcionada; la model card de este checkpoint afirma que la compresión por sí sola eleva la tasa de éxito de ataque | Meta Llama 3 Community License | safetensors en Hugging Face, ampliamente desplegado |
+| `meta-llama/Meta-Llama-3.1-8B-Instruct` | Aproximadamente 8.000 millones | 128.000 tokens | No disponible en la información proporcionada | Meta Llama 3.1 Community License | safetensors en Hugging Face |
+| Otras celdas de la malla de `Jeesup` (otras reglas de selección y presupuestos) | Variable según celda | 8.192 tokens (heredado) | No disponible en la información proporcionada | Meta Llama 3 Community License | safetensors en Hugging Face |
 
 La comparación en parámetros y contexto es estructural; la comparación de rendimiento de capacidad general no puede hacerse porque no hay datos publicados en la información disponible. La única dimensión con cifras comparables es la de seguridad, y solo para este checkpoint.
 
@@ -101,7 +101,7 @@ La comparación en parámetros y contexto es estructural; la comparación de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia y política de uso: incluidas en el repositorio del modelo (`LICENSE` y `USE_POLICY.md`)
 - Paper de SVD-LLM, blog del autor, repositorio de código y demos: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre el método; únicamente contenidos no relacionados, por lo que no se incluye ningún enlace adicional.

@@ -81,7 +81,7 @@ La comparativa se basa en características públicas de los modelos. Salience-27
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vectionlabs/Salience-27B-R5
+- Modelo en Hugging Face: https://huggingface.co/vectionlabs/Salience-27B-R5
 - Revisión anterior R4: https://huggingface.co/vectionlabs/Salience-27B-R4
 - API de inferencia de FriendliAI para la revisión R4: https://friendli.ai/models/vectionlabs/Salience-27B-R4
 - Página de la organización vectionlabs en modelindex.dev: https://modelindex.dev/orgs/vectionlabs

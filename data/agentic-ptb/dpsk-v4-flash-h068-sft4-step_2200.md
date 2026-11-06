@@ -74,5 +74,5 @@ La comparativa es limitada porque este checkpoint no es un modelo final, sino un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h068.sft4.step_2200
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h068.sft4.step_2200
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

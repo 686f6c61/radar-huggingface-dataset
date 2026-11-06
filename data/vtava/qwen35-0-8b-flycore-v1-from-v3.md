@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Relacion |
 |---|---|---|---|---|---|
-| vtava/Qwen35-0.8B-FlyCore-v1-From-v3 | ~0,8B (segun nombre) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Checkpoint de investigacion |
+| vtava/Qwen35-0.8B-FlyCore-v1-From-v3 | ~0,8B (segun nombre) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Checkpoint de investigacion |
 | Qwen/Qwen3.5-0.8B | ~0,8B (segun nombre) | no disponible | no disponible en la informacion proporcionada | Modelo base upstream | Punto de partida del experimento |
 
 No se aportan datos de rendimiento de ninguno de los dos, por lo que no es posible establecer una comparación cuantitativa. Otras alternativas de tamaño similar no se han identificado en la información disponible.
@@ -90,7 +90,7 @@ No se aportan datos de rendimiento de ninguno de los dos, por lo que no es posib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/Qwen35-0.8B-FlyCore-v1-From-v3
+- Modelo en Hugging Face: https://huggingface.co/vtava/Qwen35-0.8B-FlyCore-v1-From-v3
 - Repositorio de código fuente TinyCeNN-LM: https://github.com/vtavakkoli/TinyCeNN-LM
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper, blog o demo oficial: no disponible

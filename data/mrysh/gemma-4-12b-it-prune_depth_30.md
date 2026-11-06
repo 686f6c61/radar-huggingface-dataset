@@ -49,7 +49,7 @@ No hubo destilación ni fine-tuning después de la poda, ni tan siquiera un brev
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que el checkpoint forma parte de un benchmark comparativo (BFCL, hiring-bias, MedQA, con vLLM y thinking off) frente a otras variantes de poda y cuantización, pero los números concretos no se incluyen en la model card ni en los metadatos de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor indica que el checkpoint forma parte de un benchmark comparativo (BFCL, hiring-bias, MedQA, con vLLM y thinking off) frente a otras variantes de poda y cuantización, pero los números concretos no se incluyen en la model card ni en los metadatos de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrysh/gemma-4-12b-it-prune_depth_30
+- Hugging Face: https://huggingface.co/mrysh/gemma-4-12b-it-prune_depth_30
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - NVIDIA ModelOpt (herramienta de poda): no disponible en la información proporcionada
 - Paper de Minitron (NVIDIA): no disponible en la información proporcionada

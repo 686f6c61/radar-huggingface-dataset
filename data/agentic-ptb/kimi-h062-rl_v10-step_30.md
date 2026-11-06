@@ -70,6 +70,6 @@ No disponible. Este checkpoint no tiene modelos directamente comparables, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h062.rl_v10.step_30
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h062.rl_v10.step_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Paper de referencia sobre Kimi K2 (contexto del driver, no el mismo modelo): https://arxiv.org/pdf/2507.20534v2

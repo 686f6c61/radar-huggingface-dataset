@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Saraswathy/vlm-mix-resume-nongeo70-tables30-step95` | Adaptador sobre 4B | No disponible | No publicado | No disponible | Repositorio HuggingFace con 0 descargas |
-| `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | 4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| Otras alternativas de VLM de 4B a 8B (por ejemplo, familias Qwen2.5-VL, InternVL o SmolVLM) | 4B-8B | No disponible | No disponible | No disponible | Publicas en HuggingFace |
+| `Saraswathy/vlm-mix-resume-nongeo70-tables30-step95` | Adaptador sobre 4B | No disponible | No publicado | No disponible | Repositorio Hugging Face con 0 descargas |
+| `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | 4B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| Otras alternativas de VLM de 4B a 8B (por ejemplo, familias Qwen2.5-VL, InternVL o SmolVLM) | 4B-8B | No disponible | No disponible | No disponible | Publicas en Hugging Face |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa rigurosa. La unica comparacion defendible con la informacion disponible es la del adaptador frente a su modelo base sin adaptar, midiendo ambos sobre el mismo conjunto de evaluacion de matematicas y de tablas.
 
@@ -93,6 +93,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-nongeo70-tables30-step95
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-nongeo70-tables30-step95
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Papers, blogs, repositorios o demostraciones adicionales: no disponibles. Las busquedas web realizadas no han devuelto ninguna fuente relacionada con este modelo.

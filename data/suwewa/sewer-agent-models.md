@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sewer Agent online model bundle es un paquete de pesos publicado por el usuario suwewa en HuggingFace que agrupa siete modelos fijados a revisiones concretas para un pipeline de inspección de alcantarillado. No se trata de un modelo unico entrenado de cero, sino de un "bundle" que combina un detector YOLO26s ajustado sobre el dataset Sewer2403 (cinco clases), tres modelos de restauracion de imagen (DehazeFormer-MCT para desneblinado, Restormer para deblurring de movimiento y Real-ESRGAN x4v3 para superresolucion), DarkIR-m para mejora en condiciones de baja luminosidad, SAM 2.1 Hiera Large para segmentacion y Depth Anything V2 Small para profundidad relativa.
+Sewer Agent online model bundle es un paquete de pesos publicado por el usuario suwewa en Hugging Face que agrupa siete modelos fijados a revisiones concretas para un pipeline de inspección de alcantarillado. No se trata de un modelo unico entrenado de cero, sino de un "bundle" que combina un detector YOLO26s ajustado sobre el dataset Sewer2403 (cinco clases), tres modelos de restauracion de imagen (DehazeFormer-MCT para desneblinado, Restormer para deblurring de movimiento y Real-ESRGAN x4v3 para superresolucion), DarkIR-m para mejora en condiciones de baja luminosidad, SAM 2.1 Hiera Large para segmentacion y Depth Anything V2 Small para profundidad relativa.
 
 El paquete esta pensado para su uso dentro de la aplicacion Sewer Agent: se monta como directorio de solo lectura en `/models` y la aplicacion carga los pesos locales sin descargar nada durante la inferencia. El repositorio ocupa 1,1 GB y no incluye dataset de entrenamiento, medios de usuario, base de datos ni credenciales de API. La licencia global figura como `other`, y cada componente arrastra sus propios terminos de pesos, que en varios casos no estan establecidos de forma separada del codigo de la arquitectura.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| suwewa/sewer-agent-models | bundle de vision para inspeccion de alcantarillado | no disponible | no aplica | other (mixta por componente) | HuggingFace, 0 descargas |
+| suwewa/sewer-agent-models | bundle de vision para inspeccion de alcantarillado | no disponible | no aplica | other (mixta por componente) | Hugging Face, 0 descargas |
 | Ultralytics YOLO26s | detector de objetos | no disponible | no aplica | AGPL-3.0 (codigo y metadatos del checkpoint base) | publico |
-| facebook/sam2.1-hiera-large | segmentacion promptable | no disponible | no aplica | Apache-2.0 | HuggingFace |
-| depth-anything/Depth-Anything-V2-Small-hf | profundidad relativa | no disponible | no aplica | Apache-2.0 | HuggingFace |
+| facebook/sam2.1-hiera-large | segmentacion promptable | no disponible | no aplica | Apache-2.0 | Hugging Face |
+| depth-anything/Depth-Anything-V2-Small-hf | profundidad relativa | no disponible | no aplica | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada.
 
@@ -86,11 +86,11 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suwewa/sewer-agent-models
+- Hugging Face: https://huggingface.co/suwewa/sewer-agent-models
 - Codigo fuente del proyecto (YOLO26s Sewer2403): https://github.com/huicod/sewer-agent/tree/dev/agent-v1/yolov26/experiments/sewer2403_5class_yolo26s_img960_e100
 - DehazeFormer (demo): https://huggingface.co/spaces/IDKiro/DehazeFormer_Demo/tree/8e0b26c7732e2b0dc104f69c5ea30f913c878a89
 - Restormer (release v1.0): https://github.com/swz30/Restormer/releases/tag/v1.0
 - Real-ESRGAN (release v0.2.5.0): https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0
-- DarkIR (HuggingFace): https://huggingface.co/Cidaut/DarkIR/tree/8a73ebf271c513dfda9d1df444762d8aa0b42138
-- SAM 2.1 Hiera Large (HuggingFace): https://huggingface.co/facebook/sam2.1-hiera-large/tree/665f8e2ad61cf5f53d65644ff27c8ee525124610
-- Depth Anything V2 Small (HuggingFace): https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/tree/5426e4f0f36572d16453bbda7a8389317b1bef99
+- DarkIR (Hugging Face): https://huggingface.co/Cidaut/DarkIR/tree/8a73ebf271c513dfda9d1df444762d8aa0b42138
+- SAM 2.1 Hiera Large (Hugging Face): https://huggingface.co/facebook/sam2.1-hiera-large/tree/665f8e2ad61cf5f53d65644ff27c8ee525124610
+- Depth Anything V2 Small (Hugging Face): https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/tree/5426e4f0f36572d16453bbda7a8389317b1bef99

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `weizhexu/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario weizhexu en HuggingFace y se ha generado con la libreria stable-baselines3 junto con el RL Zoo, el framework de entrenamiento e hiperparametros preajustados del ecosistema Stable-Baselines. No es un modelo de lenguaje: es una politica de control que recibe fotogramas de pixeles en bruto y emite una accion discreta entre las disponibles en el entorno.
+El modelo `weizhexu/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) para jugar al entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario weizhexu en Hugging Face y se ha generado con la libreria stable-baselines3 junto con el RL Zoo, el framework de entrenamiento e hiperparametros preajustados del ecosistema Stable-Baselines. No es un modelo de lenguaje: es una politica de control que recibe fotogramas de pixeles en bruto y emite una accion discreta entre las disponibles en el entorno.
 
 El problema que resuelve es el control secuencial a partir de observaciones de alta dimensionalidad: aprender una funcion Q que estime el retorno esperado de cada accion dado un apilado de 4 fotogramas en escala de grises a 84x84 pixeles. Su relevancia es practica mas que novedosa: sirve como linea base reproducible de DQN sobre Atari, con hiperparametros documentados y un resultado declarado de recompensa media de 671,50 +/- 140,96 en el entorno de evaluacion. Es util para comparar variantes de DQN, para docencia de RL profundo y para validar infraestructuras de evaluacion, pero no aporta innovaciones de arquitectura ni datos de entrenamiento a gran escala.
 
@@ -73,9 +73,9 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo / algoritmo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este DQN (`weizhexu/dqn-SpaceInvadersNoFrameskip-v4`) | no disponible | apilado de 4 fotogramas de 84x84 | mean_reward 671,50 +/- 140,96 (no verificado) | no disponible | HuggingFace, via RL Zoo |
-| DQN preentrenado del RL Zoo (mismo entorno) | no disponible | identico | no disponible en la informacion | no disponible | RL Zoo / HuggingFace |
-| Variantes C51, QR-DQN o Rainbow del RL Zoo | no disponible | identico | no disponible en la informacion | no disponible | RL Zoo / HuggingFace |
+| Este DQN (`weizhexu/dqn-SpaceInvadersNoFrameskip-v4`) | no disponible | apilado de 4 fotogramas de 84x84 | mean_reward 671,50 +/- 140,96 (no verificado) | no disponible | Hugging Face, via RL Zoo |
+| DQN preentrenado del RL Zoo (mismo entorno) | no disponible | identico | no disponible en la informacion | no disponible | RL Zoo / Hugging Face |
+| Variantes C51, QR-DQN o Rainbow del RL Zoo | no disponible | identico | no disponible en la informacion | no disponible | RL Zoo / Hugging Face |
 | PPO con CnnPolicy para Atari | no disponible | identico | no disponible en la informacion | no disponible | stable-baselines3 / RL Zoo |
 
 Los hiperparametros de este checkpoint coinciden con la configuracion estandar de DQN del RL Zoo para entornos Atari, por lo que la comparacion natural es contra otras ejecuciones del mismo algoritmo y contra las variantes distribucionales (C51, QR-DQN) y con repeticion priorizada (Rainbow), que anaden mejoras sobre el DQN basico. No se dispone de cifras publicadas en la informacion proporcionada para establecer una comparacion numerica entre ellas.
@@ -96,7 +96,7 @@ Los hiperparametros de este checkpoint coinciden con la configuracion estandar d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weizhexu/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/weizhexu/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (framework de entrenamiento e hiperparametros): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable-Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

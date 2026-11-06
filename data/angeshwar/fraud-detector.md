@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`angeshwar/fraud-detector` es un ajuste fino (fine-tune) del modelo `Qwen/Qwen2.5-1.5B-Instruct`, publicado por el usuario angeshwar en HuggingFace. Segun la model card, se ha entrenado con SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace, en su version 1.13.0, junto con Transformers 5.16.1 y PyTorch 2.11.0+cu128. El nombre del repositorio sugiere una especializacion en deteccion de fraude, pero la model card no documenta ni el dominio, ni el dataset, ni el objetivo del entrenamiento.
+`angeshwar/fraud-detector` es un ajuste fino (fine-tune) del modelo `Qwen/Qwen2.5-1.5B-Instruct`, publicado por el usuario angeshwar en Hugging Face. Segun la model card, se ha entrenado con SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face, en su version 1.13.0, junto con Transformers 5.16.1 y PyTorch 2.11.0+cu128. El nombre del repositorio sugiere una especializacion en deteccion de fraude, pero la model card no documenta ni el dominio, ni el dataset, ni el objetivo del entrenamiento.
 
 Se trata, por tanto, de un derivado de un modelo denso de 1.500 millones de parametros, con arquitectura transformer decoder-only y una ventana de contexto heredada del modelo base (32.768 tokens de serie, ampliable con YaRN). El interes practico de este tipo de publicaciones es doble: por un lado, ilustra el flujo estandar de fine-tuning con TRL sobre modelos pequenos; por otro, sirve como recordatorio de que un nombre descriptivo no equivale a documentacion tecnica. La model card esta generada automaticamente por la plantilla de TRL y no incluye informacion sustantiva sobre datos, hiperparametros ni evaluacion.
 
@@ -18,7 +18,7 @@ Actualmente el repositorio acumula 0 descargas y 0 "likes", tiene un tamano decl
 | Longitud de contexto | 32.768 tokens de serie en el modelo base, ampliable a 131.072 con YaRN (heredado; no confirmado en la model card) |
 | Tipos de cuantizacion | No disponible en la model card. Al publicarse en safetensors, admite cuantizacion posterior a INT8, FP8 y formatos GGUF mediante herramientas externas |
 | Idiomas soportados | No disponible. El modelo base Qwen2.5 declara soporte para 29 idiomas, pero no hay confirmacion de que el fine-tune los conserve |
-| Licencia | No disponible. La model card incluye un campo `licence: license` sin valor y los metadatos de HuggingFace no especifican licencia |
+| Licencia | No disponible. La model card incluye un campo `licence: license` sin valor y los metadatos de Hugging Face no especifican licencia |
 | Formato de pesos | safetensors (segun los tags del repositorio). El repositorio declara 0.0 GB, por lo que no se puede confirmar que los pesos esten subidos |
 | Libreria | transformers |
 | Metodo de entrenamiento | SFT con TRL 1.13.0 |
@@ -77,7 +77,7 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (1.5
 - Cabe en GPUs de consumo: si, con holgura. Una RTX 3060 de 12 GB, una RTX 4060 Ti de 8 GB, una RTX 4070 o una RTX 4090 ejecutan el modelo en FP16 sin problemas.
 - Tambien es viable la inferencia en CPU con llama.cpp u Ollama en cuantizacion Q4, con velocidades del orden de decenas de tokens por segundo en procesadores modernos.
 - GPU recomendadas para produccion: cualquier GPU con 8 GB o mas de VRAM. Para despliegue con alta concurrencia son adecuadas la L4, la A10G, la L40S o la A100, aunque el modelo es pequeno para justificar una A100 o H100 salvo por agregacion de muchas peticiones.
-- Opciones de despliegue: transformers con `pipeline`, vLLM, TGI, SGLang, llama.cpp y Ollama. El tag `endpoints_compatible` del repositorio indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers con `pipeline`, vLLM, TGI, SGLang, llama.cpp y Ollama. El tag `endpoints_compatible` del repositorio indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Como referencia general para un modelo denso de 1.5B en FP16, cabe esperar latencias de decenas de milisegundos por token en GPU de gama media, pero no hay mediciones publicadas para este modelo concreto.
 - Advertencia importante: dado que el repositorio declara 0.0 GB de tamano, es posible que los pesos no esten subidos y que el modelo no sea descargable. Conviene verificar la pestana "Files" antes de planificar cualquier despliegue.
 
@@ -91,7 +91,7 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (1.5
 | google/gemma-2-2b-it | 2,6B | 8.192 tokens | Gemma Terms of Use | Ampliamente disponible | Benchmarks publicados |
 | HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | Ampliamente disponible | Benchmarks publicados |
 
-En la comparativa, el modelo objeto de esta ficha es el unico sin licencia declarada, sin benchmarks y sin garantia de que los pesos esten publicados. Para tareas de clasificacion de fraude, las alternativas de la tabla no estan especializadas en ese dominio, por lo que no existe una comparacion directa disponible; en ese caso lo habitual es evaluar contra modelos especializados publicados en HuggingFace bajo categorias de deteccion de fraude o contra modelos de mayor tamano (7B-8B) ajustados con datos propios.
+En la comparativa, el modelo objeto de esta ficha es el unico sin licencia declarada, sin benchmarks y sin garantia de que los pesos esten publicados. Para tareas de clasificacion de fraude, las alternativas de la tabla no estan especializadas en ese dominio, por lo que no existe una comparacion directa disponible; en ese caso lo habitual es evaluar contra modelos especializados publicados en Hugging Face bajo categorias de deteccion de fraude o contra modelos de mayor tamano (7B-8B) ajustados con datos propios.
 
 ## Limitaciones y advertencias
 
@@ -109,7 +109,7 @@ En la comparativa, el modelo objeto de esta ficha es el unico sin licencia decla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/angeshwar/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/angeshwar/fraud-detector
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de SFTTrainer de TRL: https://huggingface.co/docs/trl/sft_trainer

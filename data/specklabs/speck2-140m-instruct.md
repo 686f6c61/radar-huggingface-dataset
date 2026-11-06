@@ -91,7 +91,7 @@ Speck2-140M-Instruct destaca por su mayor velocidad de decodificación frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/specklabs/Speck2-140M-Instruct
+- Modelo en Hugging Face: https://huggingface.co/specklabs/Speck2-140M-Instruct
 - Modelo base: https://huggingface.co/specklabs/Speck2-140M
 - Dataset de ajuste: https://huggingface.co/datasets/specklabs/SpeckChat2
 - Versión anterior (Speck1.1): https://huggingface.co/specklabs/Speck1.1-140M-Instruct

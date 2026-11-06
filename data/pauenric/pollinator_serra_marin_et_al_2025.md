@@ -75,7 +75,7 @@ La informacion proporcionada no incluye resultados comparativos frente a otros d
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| POLLINATOR (este modelo) | ~21,2 M (estimado) | 1024 × 1024 px documentado | P 0,95 / R 0,95 / mAP@0.5 0,97 (datos ACS fusionados, segun articulo) | CC-BY-4.0 para el software; licencia de `best.pt` desconocida | Pesos en Google Drive enlazados desde el repositorio; repo de HuggingFace sin ficheros |
+| POLLINATOR (este modelo) | ~21,2 M (estimado) | 1024 × 1024 px documentado | P 0,95 / R 0,95 / mAP@0.5 0,97 (datos ACS fusionados, segun articulo) | CC-BY-4.0 para el software; licencia de `best.pt` desconocida | Pesos en Google Drive enlazados desde el repositorio; repo de Hugging Face sin ficheros |
 | YOLOv5m preentrenado en COCO | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 | Otros detectores genericos de la familia YOLO (YOLOv8, YOLO11) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -90,13 +90,13 @@ La diferencia cualitativa relevante es la especializacion: POLLINATOR se ajusta 
 - El checkpoint no incorpora la lista de imagenes ni la pertenencia a los splits del dataset, por lo que no es posible reproducir exactamente la particion de evaluacion a partir del fichero descargado.
 - La correspondencia entre la exportacion MERGED-ALL v4 documentada (16.389 imagenes) y el checkpoint descargado esta sin verificar segun el propio autor.
 - Licencia ambigua para uso comercial: el software en Zenodo se declara CC-BY-4.0 y la configuracion del dataset tambien declara CC BY 4.0, pero la licencia del fichero `best.pt` alojado de forma separada no se declara y su estatus comercial es desconocido. Antes de un uso en produccion con fines comerciales debe aclararse este punto con los autores.
-- El repositorio de HuggingFace figura con 0 descargas, 0 likes, 0,0 GB de tamano y sin ficheros de pesos; los pesos se obtienen desde una carpeta de Google Drive cuyo contenido no esta fijado a un commit, por lo que se recomienda verificar el SHA-256 indicado antes de usarlos.
+- El repositorio de Hugging Face figura con 0 descargas, 0 likes, 0,0 GB de tamano y sin ficheros de pesos; los pesos se obtienen desde una carpeta de Google Drive cuyo contenido no esta fijado a un commit, por lo que se recomienda verificar el SHA-256 indicado antes de usarlos.
 - El script de video no fija el tamano de inferencia, lo que puede degradar los resultados si el fotograma no se redimensiona a 1024 × 1024 antes de la llamada al modelo.
 - El aviso de cambio climatico y de conservacion de comunidades de polinizadores es el contexto cientifico del trabajo, no una garantia de generalizacion a otros ecosistemas, camaras, iluminaciones o resoluciones distintas de las del entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pauenric/POLLINATOR_Serra_Marin_et_al_2025
+- Modelo en Hugging Face: https://huggingface.co/pauenric/POLLINATOR_Serra_Marin_et_al_2025
 - Repositorio de codigo (GitHub, aranchalana/POLLINATOR): https://github.com/aranchalana/POLLINATOR/tree/ecbafff8fd03efaa299f8d07eb121b9ccd05c6dd
 - Configuracion del dataset (`data.yaml`, una clase `pollinator`): https://github.com/aranchalana/POLLINATOR/blob/ecbafff8fd03efaa299f8d07eb121b9ccd05c6dd/POLLINATOR-MERGE-ALL/data.yaml
 - Exportacion MERGED-ALL v4 (16.389 imagenes, Roboflow): https://github.com/aranchalana/POLLINATOR/blob/ecbafff8fd03efaa299f8d07eb121b9ccd05c6dd/POLLINATOR-MERGE-ALL/README.roboflow.txt

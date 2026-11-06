@@ -85,11 +85,11 @@ Los datos de Qwen3.5 y Llama no estan confirmados en la informacion proporcionad
 - Los benchmarks publicados son muy limitados (solo GPQA_Diamond). No se dispone de resultados en MMLU, HumanEval, GSM8K u otros tests estandar, lo que dificulta evaluar su rendimiento general.
 - El valor de 0 en la columna "Origin" sugiere que el modelo no funciona sin FlagOS en este hardware, lo que implica una dependencia total del stack propietario de FlagRelease.
 - No se han documentado sesgos, riesgos de alucinacion o limitaciones de idioma especificos. Al ser un modelo derivado de Qwen3.5, podria heredar sesgos del dataset de entrenamiento de Qwen.
-- El modelo es muy reciente (agosto de 2026) y tiene cero descargas y cero likes en HuggingFace, por lo que su adopcion y validacion por la comunidad es practicamente nula.
+- El modelo es muy reciente (agosto de 2026) y tiene cero descargas y cero likes en Hugging Face, por lo que su adopcion y validacion por la comunidad es practicamente nula.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/Darwin-9B-NEG-FINAL-hygon-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/Darwin-9B-NEG-FINAL-hygon-FlagOS
 - Modelo base FINAL-Bench/Darwin-9B-NEG: https://huggingface.co/FINAL-Bench/Darwin-9B-NEG
 - README del modelo base: https://huggingface.co/FINAL-Bench/Darwin-9B-NEG/blob/main/README.md
 - Codigo de modelado (modeling_darwin_neg.py): https://huggingface.co/FINAL-Bench/Darwin-9B-NEG/blob/main/modeling_darwin_neg.py

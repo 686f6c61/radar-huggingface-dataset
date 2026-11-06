@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`remyxai/efficientvim_m1.e450_in1k` es un modelo de clasificación de imágenes publicado en HuggingFace por el usuario `remyxai`. Está etiquetado con el pipeline de `image-classification` y se distribuye bajo licencia Apache 2.0. El checkpoint contiene un total de 6.708.738 parámetros y está disponible en formato `safetensors`, con un tamaño de repositorio de aproximadamente 0,1 GB. Según la metadata, fue creado el 9 de septiembre de 2026 y actualizado ese mismo día.
+`remyxai/efficientvim_m1.e450_in1k` es un modelo de clasificación de imágenes publicado en Hugging Face por el usuario `remyxai`. Está etiquetado con el pipeline de `image-classification` y se distribuye bajo licencia Apache 2.0. El checkpoint contiene un total de 6.708.738 parámetros y está disponible en formato `safetensors`, con un tamaño de repositorio de aproximadamente 0,1 GB. Según la metadata, fue creado el 9 de septiembre de 2026 y actualizado ese mismo día.
 
 A pesar de la escasez de documentación (el model card solo recoge el título y las etiquetas), el tamaño de parámetros indica que se trata de un modelo ligero, presumiblemente diseñado para tareas de clasificación de imágenes en entornos con recursos limitados. El nombre sugiere una arquitectura eficiente (posiblemente relacionada con visión y mamba, aunque no se confirma en la información disponible). No se dispone de datos sobre el conjunto de datos de entrenamiento, la arquitectura interna ni los resultados de benchmarks.
 
@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/remyxai/efficientvim_m1.e450_in1k
+- Modelo en Hugging Face: https://huggingface.co/remyxai/efficientvim_m1.e450_in1k
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web.

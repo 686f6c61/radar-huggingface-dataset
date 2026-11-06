@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `debudash/qwen3-4b-tz-convert-v1-n500` (este) | Adaptador sobre 4B | No disponible | Conversión de zonas horarias, 500 ejemplos | Apache 2.0 | HuggingFace |
-| `debudash/qwen3-4b-tz-convert-v3-n12000` | Adaptador sobre 4B | No disponible | Conversión de zonas horarias, 12.000 ejemplos | Apache 2.0 | HuggingFace |
-| `Qwen/Qwen3-4B-Instruct-2507` | 4B | No disponible | Modelo generalista instruct | Apache 2.0 | HuggingFace |
+| `debudash/qwen3-4b-tz-convert-v1-n500` (este) | Adaptador sobre 4B | No disponible | Conversión de zonas horarias, 500 ejemplos | Apache 2.0 | Hugging Face |
+| `debudash/qwen3-4b-tz-convert-v3-n12000` | Adaptador sobre 4B | No disponible | Conversión de zonas horarias, 12.000 ejemplos | Apache 2.0 | Hugging Face |
+| `Qwen/Qwen3-4B-Instruct-2507` | 4B | No disponible | Modelo generalista instruct | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparables (benchmarks estándar) para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables (benchmarks estándar) para es
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n500
+- Hugging Face del adaptador: https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n500
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft
 - Checkpoint de referencia (mejor de la serie): https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000

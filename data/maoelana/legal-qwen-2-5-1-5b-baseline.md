@@ -21,7 +21,7 @@ Al tratarse de un modelo de 1.5B, es ligero y puede ejecutarse en entornos con r
 
 ## Arquitectura y entrenamiento
 
-El modelo está basado en la arquitectura Qwen2, un transformer decoder-only. Se trata de un fine-tuning del modelo unsloth/qwen2.5-1.5b-unsloth-bnb-4bit, realizado con Unsloth y la librería TRL de HuggingFace. Unsloth permite acelerar el entrenamiento y reducir el uso de memoria. No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens ni procesos de alineación como RLHF o DPO.
+El modelo está basado en la arquitectura Qwen2, un transformer decoder-only. Se trata de un fine-tuning del modelo unsloth/qwen2.5-1.5b-unsloth-bnb-4bit, realizado con Unsloth y la librería TRL de Hugging Face. Unsloth permite acelerar el entrenamiento y reducir el uso de memoria. No se han publicado detalles sobre el conjunto de datos de entrenamiento, el número de tokens ni procesos de alineación como RLHF o DPO.
 
 ## Capacidades
 

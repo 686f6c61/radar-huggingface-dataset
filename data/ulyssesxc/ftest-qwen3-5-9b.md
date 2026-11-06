@@ -76,9 +76,9 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| ftest-qwen3.5-9b (este) | ~9 000 M (no confirmado) | no disponible | apache-2.0 | HuggingFace, 0 descargas | no disponibles |
-| Qwen/Qwen3.5-9B (base) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace | no disponibles en la información proporcionada |
-| Alternativas de la misma franja (~7-9 000 M) | varía según modelo | varía según modelo | habitualmente permisivas en la familia Qwen y Mistral; Llama con licencia comunitaria propia | amplia en HuggingFace | no comparables aquí al no disponer de métricas del modelo analizado |
+| ftest-qwen3.5-9b (este) | ~9 000 M (no confirmado) | no disponible | apache-2.0 | Hugging Face, 0 descargas | no disponibles |
+| Qwen/Qwen3.5-9B (base) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face | no disponibles en la información proporcionada |
+| Alternativas de la misma franja (~7-9 000 M) | varía según modelo | varía según modelo | habitualmente permisivas en la familia Qwen y Mistral; Llama con licencia comunitaria propia | amplia en Hugging Face | no comparables aquí al no disponer de métricas del modelo analizado |
 
 No es posible establecer una comparación de rendimiento rigurosa sin evaluaciones publicadas del modelo objeto de la ficha.
 
@@ -97,6 +97,6 @@ No es posible establecer una comparación de rendimiento rigurosa sin evaluacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UlyssesXC/ftest-qwen3.5-9b
+- Modelo en Hugging Face: https://huggingface.co/UlyssesXC/ftest-qwen3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog o repositorio adicionales: no disponibles en la información proporcionada.

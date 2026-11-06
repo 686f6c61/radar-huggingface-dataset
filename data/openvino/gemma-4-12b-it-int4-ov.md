@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- [HuggingFace: OpenVINO/gemma-4-12B-it-int4-ov](https://huggingface.co/OpenVINO/gemma-4-12B-it-int4-ov)
+- [Hugging Face: OpenVINO/gemma-4-12B-it-int4-ov](https://huggingface.co/OpenVINO/gemma-4-12B-it-int4-ov)
 - [Modelo original: google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it)
 - [Licencia Gemma 4](https://ai.google.dev/gemma/docs/gemma_4_license)
 - [Formato OpenVINO IR](https://docs.openvino.ai/2026/documentation/openvino-ir-format.html)

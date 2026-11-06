@@ -4,7 +4,7 @@
 
 IRIS-14B es un modelo de lenguaje especializado en representaciones intermedias (IR) de compiladores, desarrollado por HPAI-BSC (Barcelona Supercomputing Center). Se trata de un ajuste fino del modelo base Qwen3-14B-Base, orientado a tareas que implican LLVM IR y GIMPLE, la representacion intermedia interna de GCC. El modelo esta pensado para asistir en tareas propias de la ingenieria de compiladores: generacion, traduccion, analisis y reparacion de codigo IR.
 
-El modelo tiene 14.768.307.200 parametros (aproximadamente 14,77 mil millones) y se distribuye en formato safetensors, con un repositorio de 59,1 GB. Su acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. No se especifica la licencia ni los idiomas soportados en la informacion publicada.
+El modelo tiene 14.768.307.200 parametros (aproximadamente 14,77 mil millones) y se distribuye en formato safetensors, con un repositorio de 59,1 GB. Su acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. No se especifica la licencia ni los idiomas soportados en la informacion publicada.
 
 La relevancia de IRIS-14B radica en su nicho: la mayoria de modelos de codigo se centran en lenguajes de alto nivel, mientras que el trabajo sobre IR requiere conocer estructuras SSA, bloques basicos, tipos de LLVM y construcciones GIMPLE. El modelo se apoya en cuatro conjuntos de datos propios (GNU-IRIS, CodeForces-IRIS, ExeBench-IRIS y TheStack-IRIS) y esta asociado al preprint arXiv 2605.08247.
 
@@ -18,7 +18,7 @@ La relevancia de IRIS-14B radica en su nicho: la mayoria de modelos de codigo se
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen3-14B-Base declara 32.768 tokens, pero no se confirma que IRIS-14B conserve esa ventana) |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors, sin variantes GGUF, AWQ ni GPTQ documentadas |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido que requiere aceptar condiciones en HuggingFace) |
+| Licencia | no disponible (acceso restringido que requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 59,1 GB |
 | Modelo base | Qwen/Qwen3-14B-Base |
@@ -85,7 +85,7 @@ La diferencia principal de IRIS-14B no es el tamano ni el contexto, sino el domi
 ## Limitaciones y advertencias
 
 - Licencia no declarada: al no especificarse la licencia y tratarse de un repositorio con acceso restringido, el uso comercial queda en incertidumbre hasta que se revise el acuerdo de acceso.
-- Acceso gated: es obligatorio solicitar y aceptar condiciones en HuggingFace antes de descargar los pesos, lo que complica la automatizacion de pipelines de despliegue.
+- Acceso gated: es obligatorio solicitar y aceptar condiciones en Hugging Face antes de descargar los pesos, lo que complica la automatizacion de pipelines de despliegue.
 - Sin cuantizaciones oficiales: quien necesite GGUF, AWQ o GPTQ tendra que generarlas por su cuenta, con el coste y el riesgo de degradacion asociados.
 - Sesgos conocidos: no disponibles en la informacion proporcionada; se heredan en parte los del modelo base Qwen3-14B-Base, no documentados aqui.
 - Riesgo de alucinacion: el modelo puede producir IR sintacticamente plausible pero semanticamente incorrecto (por ejemplo, instrucciones que no preservan el comportamiento del programa original). Cualquier salida debe validarse compilando y ejecutando pruebas.
@@ -97,7 +97,7 @@ La diferencia principal de IRIS-14B no es el tamano ni el contexto, sino el domi
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/HPAI-BSC/IRIS-14B
+- Ficha en Hugging Face: https://huggingface.co/HPAI-BSC/IRIS-14B
 - Preprint asociado (referenciado en los tags del repositorio): https://arxiv.org/abs/2605.08247
 - Dataset GNU-IRIS: https://huggingface.co/datasets/HPAI-BSC/GNU-IRIS
 - Dataset CodeForces-IRIS: https://huggingface.co/datasets/HPAI-BSC/CodeForces-IRIS

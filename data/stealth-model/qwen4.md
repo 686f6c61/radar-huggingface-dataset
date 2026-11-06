@@ -18,7 +18,7 @@ Su relevancia práctica es que permite ejecutar una arquitectura de ese tamaño 
 | Longitud de contexto | 262.144 tokens nativos; hasta 1.000.000 con YaRN (`--rope-scale 4 --yarn-orig-ctx 262144`) |
 | Tipos de cuantización | GGUF `Q2_K_XL` (79 GB), `Q4_K_XL` (111 GB), `Q5_K_XL` (158 GB); imatrix; proyectores de visión `Q8_0` (0,6 GB), `F16` (0,9 GB), `Q6_K` (0,52 GB), `Q4_K` (0,46 GB); cabezas MTP `Q8_0` (2,8 GB) y `Q4_K_M` (1,9 GB); caché KV de 4 bits (`q4_0`) |
 | Idiomas soportados | No disponible |
-| Licencia | `qwen-community-1.0` (etiquetada como `other` en HuggingFace; el texto está en el enlace de licencia del repositorio) |
+| Licencia | `qwen-community-1.0` (etiquetada como `other` en Hugging Face; el texto está en el enlace de licencia del repositorio) |
 | Formato de pesos | GGUF (llama.cpp); el repositorio incluye `mmproj` para visión y cabezas MTP separadas |
 | Modelo base | `Qwen/Qwen3.8-Flash-Next` (relación declarada: `quantized`) |
 | Tamaño del repositorio | 355,7 GB |
@@ -118,7 +118,7 @@ No se dispone en la información proporcionada de datos verificables de otros mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stealth-model/Qwen4
+- Repositorio en Hugging Face: https://huggingface.co/stealth-model/Qwen4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Texto de la licencia `qwen-community-1.0`: https://huggingface.co/stealth-model/Qwen4/blob/main/Qwen3.8-Flash-Next/LICENSE
 - Página del autor sobre Qwen 4 (guía «Jade Atlas»): https://stealthmodels.com/qwen-4/

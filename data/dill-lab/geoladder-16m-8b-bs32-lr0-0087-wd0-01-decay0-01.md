@@ -18,8 +18,8 @@ Su relevancia es, por tanto, metodológica y de reproducibilidad: proporciona 41
 | Longitud de contexto | 2048 tokens (longitud de secuencia usada en el entrenamiento; no se documenta una ventana mayor) |
 | Tipos de cuantización | No disponible (solo se publican pesos en precisión completa en formato PyTorch; no hay versiones GGUF, AWQ, GPTQ ni bitsandbytes documentadas) |
 | Idiomas soportados | No disponible (el corpus de entrenamiento es el Pile deduplicado, de composición mayoritariamente inglesa, pero la model card no declara idiomas) |
-| Licencia | No disponible (la model card y la información de HuggingFace no especifican licencia) |
-| Formato de pesos | `pytorch_model.bin` (pickle de PyTorch) por rama, más `config.json` de HuggingFace y `config.yaml` original de OLMo; no hay `safetensors` |
+| Licencia | No disponible (la model card y la información de Hugging Face no especifican licencia) |
+| Formato de pesos | `pytorch_model.bin` (pickle de PyTorch) por rama, más `config.json` de Hugging Face y `config.yaml` original de OLMo; no hay `safetensors` |
 | Tamaño del repositorio | 4,9 GB (incluye 41 ramas de checkpoint) |
 | Punto de control final | Rama `main`, equivalente a `step122081` |
 | Dataset | EleutherAI/the_pile_deduplicated |
@@ -49,7 +49,7 @@ La innovación del trabajo no reside en el modelo, sino en el análisis: se estu
 - Ablaciones controladas de hiperparámetros: al compartir arquitectura y datos con los otros 107 modelos de la colección GeoLadder, permite aislar el efecto del tamano de lote (32), del weight decay (0,01) o de la LR final (1 % del pico) sobre el rendimiento.
 - Auditoría de pipelines de evaluación: por su bajo coste, sirve como modelo de humo para validar arneses de evaluación de perplejidad y de generación antes de escalar a modelos de miles de millones de parámetros.
 - Pruebas de integración de infraestructura de inferencia: validar que un servidor con `transformers` y `hf_olmo` carga correctamente pesos en pickle y gestiona la API de `AutoModelForCausalLM` con `revision`.
-- Docencia y formación: ilustrar de forma tangible, con 4,9 GB de artefactos reales, cómo se estructura una suite de checkpoints al estilo Pythia y cómo se versionan ramas de entrenamiento en un repositorio de HuggingFace.
+- Docencia y formación: ilustrar de forma tangible, con 4,9 GB de artefactos reales, cómo se estructura una suite de checkpoints al estilo Pythia y cómo se versionan ramas de entrenamiento en un repositorio de Hugging Face.
 - Investigación sobre orden de datos: `data-indices/` y `train_data/global_indices.npy` permiten correlacionar secuencias concretas del Pile deduplicado con cambios en las métricas internas del modelo.
 - Experimentos de interpretabilidad a muy baja escala: análisis de activaciones y cabezas de atención sin necesidad de GPUs de gama alta, replicando resultados en portátiles o nodos de CPU.
 
@@ -95,7 +95,7 @@ Nota: los datos de Pythia-14M, GPT-2 small y OLMo-1B proceden de su documentaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.01-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.0087-wd0.01-decay0.01
 - Colección GeoLadder (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Artículo en PMLR (ICML 2026, volumen 306, páginas 61454-61482): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

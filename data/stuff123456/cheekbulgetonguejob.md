@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cheekbulgetonguejob` es un adaptador LoRA de generación de imágenes texto-a-imagen publicado por el usuario `stuff123456` en HuggingFace. Se distribuye como un repositorio de 0,2 GB compatible con la librería `diffusers` y está diseñado para montarse sobre el modelo base `Granddyser/flux-klein-9b-Biglove-Collection`, un modelo de la familia FLUX (difusión, del orden de 9 000 millones de parámetros según el propio nombre del checkpoint base). El LoRA no es un modelo autónomo: requiere cargar el modelo base para funcionar.
+`cheekbulgetonguejob` es un adaptador LoRA de generación de imágenes texto-a-imagen publicado por el usuario `stuff123456` en Hugging Face. Se distribuye como un repositorio de 0,2 GB compatible con la librería `diffusers` y está diseñado para montarse sobre el modelo base `Granddyser/flux-klein-9b-Biglove-Collection`, un modelo de la familia FLUX (difusión, del orden de 9 000 millones de parámetros según el propio nombre del checkpoint base). El LoRA no es un modelo autónomo: requiere cargar el modelo base para funcionar.
 
 Por el nombre del repositorio, la etiqueta `template:diffusion-lora` y el ejemplo de prompt incluido en la model card, se trata de un adaptador orientado a contenido para adultos (NSFW) de carácter explícito. La model card no aporta documentación técnica real: no hay ficha de entrenamiento, dataset, hiperparámetros ni métricas. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y se creó y actualizó el 2026-10-19.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cheekbulgetonguejob` (este) | LoRA NSFW sobre FLUX-klein-9b | ~9B (base, según nombre) | No aplica | No disponible | HuggingFace, 0 descargas |
-| FLUX.1 [dev] (referencia de familia) | DiT texto-a-imagen | ~12B | No aplica | No comercial (no verificada aquí) | HuggingFace |
-| Adaptadores LoRA genéricos para FLUX | LoRA | Depende del base | No aplica | Variable según autor | HuggingFace |
+| `cheekbulgetonguejob` (este) | LoRA NSFW sobre FLUX-klein-9b | ~9B (base, según nombre) | No aplica | No disponible | Hugging Face, 0 descargas |
+| FLUX.1 [dev] (referencia de familia) | DiT texto-a-imagen | ~12B | No aplica | No comercial (no verificada aquí) | Hugging Face |
+| Adaptadores LoRA genéricos para FLUX | LoRA | Depende del base | No aplica | Variable según autor | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa fiable. Las alternativas citadas se incluyen solo como referencia de categoría.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stuff123456/cheekbulgetonguejob
+- Hugging Face: https://huggingface.co/stuff123456/cheekbulgetonguejob
 - Modelo base: https://huggingface.co/Granddyser/flux-klein-9b-Biglove-Collection
 - Resultados de búsqueda web: no contienen información relevante sobre el modelo (los enlaces devueltos corresponden a aplicaciones de impresión Epson y no guardan relación con el artefacto).

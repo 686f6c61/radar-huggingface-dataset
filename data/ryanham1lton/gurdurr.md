@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gurdurr es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton el 19 de octubre de 2026 (actualizado dos minutos después, a las 17:04 del mismo día). Se distribuye bajo licencia CC-BY-4.0 y no incluye etiqueta de pipeline, idiomas declarados ni contenido sustantivo en la model card: el README se reduce al bloque de frontmatter con la licencia. No hay información pública sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni proceso de alineación.
+Gurdurr es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton el 19 de octubre de 2026 (actualizado dos minutos después, a las 17:04 del mismo día). Se distribuye bajo licencia CC-BY-4.0 y no incluye etiqueta de pipeline, idiomas declarados ni contenido sustantivo en la model card: el README se reduce al bloque de frontmatter con la licencia. No hay información pública sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni proceso de alineación.
 
 El problema que resuelve no es determinable con la información disponible. El repositorio cuenta con 0 descargas y 0 likes, y su tamaño es de aproximadamente 0,1 GB, un volumen compatible con un checkpoint pequeño o con pesos cuantizados de un modelo de escala reducida, pero insuficiente para alojar un transformer de gran tamaño en precisión completa. Cualquier afirmación sobre sus capacidades sería especulativa.
 
@@ -51,7 +51,7 @@ Los siguientes escenarios son hipotesis de evaluacion, no usos validados. Cada u
 - Prueba de concepto de fine-tuning: si el checkpoint resulta ser un modelo pequeño, puede servir como base para experimentos de ajuste supervisado en tareas acotadas (clasificacion de textos cortos, extraccion de entidades) con coste de computo minimo.
 - Evaluacion comparativa interna: incluirlo como linea base de baja capacidad en una bateria de pruebas propia (perplejidad, coherencia en respuestas cortas) para calibrar el resto de candidatos del pipeline.
 - Generacion de texto asistida en local: un checkpoint de ~0,1 GB podria ejecutarse en CPU o en GPU de gama de entrada para tareas de bajo valor anadido, siempre que las pruebas confirmen una calidad aceptable.
-- Docencia y demostraciones de ciclo completo: util para ilustrar el proceso de publicacion y auditoria de modelos en HuggingFace (frontmatter, licencia, ausencia de model card) en formacion de equipos de ML.
+- Docencia y demostraciones de ciclo completo: util para ilustrar el proceso de publicacion y auditoria de modelos en Hugging Face (frontmatter, licencia, ausencia de model card) en formacion de equipos de ML.
 - Filtrado previo en pipelines de datos: si el modelo funciona como clasificador binario tras un ajuste, podria emplearse para descartar contenido, aunque sin benchmarks publicados no hay garantia de precision.
 
 ## Benchmarks y rendimiento
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Gurdurr
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Gurdurr
 - No se han encontrado en la informacion proporcionada otros enlaces (paper, blog, repositorio de codigo o demo).

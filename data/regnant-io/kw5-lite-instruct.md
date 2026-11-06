@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en suajili o de tamaño 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [regnant-io/kw5-lite-instruct](https://huggingface.co/regnant-io/kw5-lite-instruct)
+- Modelo en Hugging Face: [regnant-io/kw5-lite-instruct](https://huggingface.co/regnant-io/kw5-lite-instruct)
 - Modelo base: [regnant-io/kw5-lite-base](https://huggingface.co/regnant-io/kw5-lite-base)
 - Sitio web de Regnant: [https://www.regnant.io/](https://www.regnant.io/)
 - Página de productos de Regnant: [https://www.regnant.io/products](https://www.regnant.io/products)

@@ -18,7 +18,7 @@ Es relevante ahora por dos motivos: demuestra que un MoE de 122B en 4 bits puede
 | Longitud de contexto | 262.144 tokens (262K) |
 | Tipos de cuantizacion | 4-bit affine MLX, group size 64, 4,544 bpw (unica incluida en el repo) |
 | Idiomas soportados | no disponible |
-| Licencia | Pesos: MIT (upstream, © Ornith AI); drafter en `draft/`: Apache-2.0 (© Inco AI). La metadata de HuggingFace declara `apache-2.0` |
+| Licencia | Pesos: MIT (upstream, © Ornith AI); drafter en `draft/`: Apache-2.0 (© Inco AI). La metadata de Hugging Face declara `apache-2.0` |
 | Formato de pesos | safetensors en formato MLX (4 bits); drafter incluido en `draft/`; no se distribuye GGUF |
 
 ## Arquitectura y entrenamiento
@@ -99,7 +99,7 @@ No se dispone de datos para comparar con alternativas de otro fabricante (por ej
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Duckets/ornith-1.5-122b-mlx-DFlash2
+- Repositorio en Hugging Face: https://huggingface.co/Duckets/ornith-1.5-122b-mlx-DFlash2
 - Puerto MLX 4-bit base: https://huggingface.co/Duckets/Ornith-1.5-122B-MLX-4bit
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Licencia upstream: https://huggingface.co/ornith-ai/Ornith-1.5-122B/blob/main/LICENSE

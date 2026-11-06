@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arkojit1/pi05_franka_haply_absjointpos` es un checkpoint de robótica publicado por el usuario arkojit1 en HuggingFace, consistente en un ajuste fino de π₀.₅ (policy de visión-lenguaje-acción de Physical Intelligence distribuida a través de LeRobot) sobre demostraciones de un brazo Franka teleoperado con un dispositivo Haply. El modelo no genera texto ni código: su salida es una secuencia de acciones de 8 dimensiones compuesta por 7 posiciones articulares absolutas en radianes más el valor de la pinza, pensada para control directo del robot.
+`arkojit1/pi05_franka_haply_absjointpos` es un checkpoint de robótica publicado por el usuario arkojit1 en Hugging Face, consistente en un ajuste fino de π₀.₅ (policy de visión-lenguaje-acción de Physical Intelligence distribuida a través de LeRobot) sobre demostraciones de un brazo Franka teleoperado con un dispositivo Haply. El modelo no genera texto ni código: su salida es una secuencia de acciones de 8 dimensiones compuesta por 7 posiciones articulares absolutas en radianes más el valor de la pinza, pensada para control directo del robot.
 
 El checkpoint se entrenó durante 1.000 pasos sobre el dataset `Ameyapores/franka_haply_joint_delta` (94 episodios, 50.861 frames a 20 fps, una única tarea de lenguaje) y alcanzó una `eval_loss` de 0,1454 con el objetivo de flow matching sobre el 10 % de episodios reservados. En este ajuste solo se entrenó el *action expert* (~300 millones de parámetros), manteniendo congelados el codificador visual SigLIP y el modelo de lenguaje Gemma-2B del checkpoint base `lerobot/pi05_base`; el total de parámetros del repositorio es de 4.143.404.816 (~4,14 mil millones).
 
@@ -82,8 +82,8 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 | Modelo | Parámetros | Contexto | Espacio de acción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkojit1/pi05_franka_haply_absjointpos | 4,14 mil millones (~300 M entrenables en el ajuste) | no disponible | 8 dims: posición articular absoluta (7 DoF) + pinza | no disponible | HuggingFace |
-| lerobot/pi05_base | misma arquitectura (este modelo es un ajuste fino suyo); parámetros totales no disponibles en la información | no disponible | por defecto del modelo base (`chunk_size=50`, `n_action_steps=50`) | no disponible | HuggingFace |
+| arkojit1/pi05_franka_haply_absjointpos | 4,14 mil millones (~300 M entrenables en el ajuste) | no disponible | 8 dims: posición articular absoluta (7 DoF) + pinza | no disponible | Hugging Face |
+| lerobot/pi05_base | misma arquitectura (este modelo es un ajuste fino suyo); parámetros totales no disponibles en la información | no disponible | por defecto del modelo base (`chunk_size=50`, `n_action_steps=50`) | no disponible | Hugging Face |
 | Otros VLA de la misma categoría (por ejemplo π₀, OpenVLA o alternativas equivalentes) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única diferencia contrastable frente al modelo base es el dominio: `pi05_base` es un VLA de propósito general y este checkpoint está especializado en posiciones articulares absolutas de un Franka teleoperado con Haply. No hay datos públicos que permitan afirmar que este ajuste supere al base en ninguna tarea.
@@ -104,7 +104,7 @@ La única diferencia contrastable frente al modelo base es el dominio: `pi05_bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_franka_haply_absjointpos
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_franka_haply_absjointpos
 - Checkpoint base: https://huggingface.co/lerobot/pi05_base
 - Dataset de ajuste: https://huggingface.co/datasets/Ameyapores/franka_haply_joint_delta
 - Repositorio restringido requerido por el preprocesador: https://huggingface.co/google/paligemma-3b-pt-224

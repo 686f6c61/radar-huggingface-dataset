@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aether-492B es un modelo publicado por el usuario CortexAether en HuggingFace bajo el identificador `CortexAether/Aether-492B`. Segun su model card, se presenta como un "modelo fundacional de inteligencia general a gran escala" con un objetivo declarado de 492.000 millones de parametros, orientado a razonamiento, programacion, matematicas, sintesis de conocimiento, comunicacion multilingue, generacion creativa y flujos de trabajo con agentes. La model card describe capacidades de forma aspiracional ("disenado para", "puede usarse para") sin aportar detalles concretos de entrenamiento, arquitectura final ni resultados empiricos.
+Aether-492B es un modelo publicado por el usuario CortexAether en Hugging Face bajo el identificador `CortexAether/Aether-492B`. Segun su model card, se presenta como un "modelo fundacional de inteligencia general a gran escala" con un objetivo declarado de 492.000 millones de parametros, orientado a razonamiento, programacion, matematicas, sintesis de conocimiento, comunicacion multilingue, generacion creativa y flujos de trabajo con agentes. La model card describe capacidades de forma aspiracional ("disenado para", "puede usarse para") sin aportar detalles concretos de entrenamiento, arquitectura final ni resultados empiricos.
 
 Existe una discrepancia critica y objetiva entre el nombre y los datos reales del repositorio: los pesos en formato safetensors declaran 5.829.376 parametros (aproximadamente 5,8 millones), no 492.000 millones. El tamano del repositorio figura como 0,0 GB y el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta. La fecha de creacion indicada es 2026-09-15, posterior a la fecha actual, lo que refuerza la naturaleza no verificada del artefacto.
 
@@ -101,6 +101,6 @@ No es posible establecer una comparativa fiable. El nombre del modelo sugiere la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CortexAether/Aether-492B
+- Hugging Face: https://huggingface.co/CortexAether/Aether-492B
 
 Nota: la busqueda web realizada no ha devuelto enlaces relevantes sobre el modelo. Los resultados obtenidos correspondian a contenidos sin relacion (paginas de una entidad sanitaria alemana) y no se incluyen por no ser pertinentes. No se dispone de paper, blog, repositorio de codigo ni demo asociados al modelo.

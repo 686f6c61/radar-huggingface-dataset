@@ -6,7 +6,7 @@ MiniMax-M3.1-Flash es un modelo multimodal nativo de tipo mixture-of-experts (Mo
 
 Esta versión mejora a MiniMax-M3 en rendimiento y eficiencia de inferencia gracias a tres innovaciones: atención dispersa (sparse attention) en todo el modelo, entrenamiento con conciencia de cuantización (quantization-aware training) y decodificación especulativa DSpark con un draft head incluido en el propio modelo.
 
-La ficha de HuggingFace corresponde al usuario Harry8654, que aloja los pesos en formato safetensors (252,4 GB). Existe una discrepancia en los parámetros: los metadatos de safetensors indican 220,49 mil millones de parámetros, mientras que la model card declara aproximadamente 428B totales con 23B activados por token. El modelo es relevante ahora por sus resultados destacados en benchmarks agénticos y de ciberseguridad, un área donde pocos modelos abiertos compiten a este nivel.
+La ficha de Hugging Face corresponde al usuario Harry8654, que aloja los pesos en formato safetensors (252,4 GB). Existe una discrepancia en los parámetros: los metadatos de safetensors indican 220,49 mil millones de parámetros, mientras que la model card declara aproximadamente 428B totales con 23B activados por token. El modelo es relevante ahora por sus resultados destacados en benchmarks agénticos y de ciberseguridad, un área donde pocos modelos abiertos compiten a este nivel.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks tradicionales (MMLU, HumanEval, GSM
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
-| MiniMax M3.1 Flash | 220,5B-428B (23B activos) | 1M tokens | minimax-community | Abierta en HuggingFace |
+| MiniMax M3.1 Flash | 220,5B-428B (23B activos) | 1M tokens | minimax-community | Abierta en Hugging Face |
 | DeepSeek V4.1 Flash | no disponible | no disponible | no disponible | no disponible |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible |
@@ -102,8 +102,8 @@ En la categoría de modelos MoE multimodales agénticos de gran escala, los comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harry8654/MiniMax-M3.1-Flash
-- Organización MiniMaxAI en HuggingFace: https://huggingface.co/MiniMaxAI
+- Modelo en Hugging Face: https://huggingface.co/Harry8654/MiniMax-M3.1-Flash
+- Organización MiniMaxAI en Hugging Face: https://huggingface.co/MiniMaxAI
 - Paper en arXiv (MiniMax Sparse Attention): https://arxiv.org/abs/2606.13392
 - MiniMax Agent: https://agent.minimax.io/
 - API y documentación: https://platform.minimax.io/docs/guides/text-generation

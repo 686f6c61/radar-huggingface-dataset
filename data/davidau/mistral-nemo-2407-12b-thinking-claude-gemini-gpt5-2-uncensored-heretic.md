@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC es un ajuste fino (finetune) del modelo Mistral-Nemo-Instruct-2407 publicado por el usuario DavidAU en HuggingFace. Se trata de una variante "abliterated" o "heretic" (es decir, con los mecanismos de rechazo reducidos de forma deliberada, pasando de una tasa de rechazo de 87/100 a 14/100) que posteriormente se ha reentrenado para incorporar capacidad de razonamiento explícito ("thinking"), tomando como material de entrenamiento tres datasets de razonamiento de alta calidad derivados de Claude Opus 4.5, Gemini 3 Pro Preview y GPT-5.2.
+Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC es un ajuste fino (finetune) del modelo Mistral-Nemo-Instruct-2407 publicado por el usuario DavidAU en Hugging Face. Se trata de una variante "abliterated" o "heretic" (es decir, con los mecanismos de rechazo reducidos de forma deliberada, pasando de una tasa de rechazo de 87/100 a 14/100) que posteriormente se ha reentrenado para incorporar capacidad de razonamiento explícito ("thinking"), tomando como material de entrenamiento tres datasets de razonamiento de alta calidad derivados de Claude Opus 4.5, Gemini 3 Pro Preview y GPT-5.2.
 
 El modelo conserva la arquitectura transformer densa de Mistral Nemo, con 12.247.782.400 parámetros (aproximadamente 12,2B) y una ventana de contexto que el autor declara operable entre 128k y 256k tokens, con un máximo teórico de 1 millón. El entrenamiento se realizó mediante la librería Unsloth, lo que permite un ajuste eficiente en precisión bfloat16. El resultado es un modelo orientado a generación creativa, escritura de ficción, roleplay y conversación sin restricciones temáticas, con bloques de razonamiento compactos (del orden de 300 a 600 tokens, 3-6 párrafos por media).
 
@@ -116,7 +116,7 @@ No se dispone de información suficiente para comparar rendimiento real (benchma
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC
+- Hugging Face (modelo): https://huggingface.co/DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC
 - README del modelo: https://huggingface.co/DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC/blob/main/README.md
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Dataset de razonamiento Claude Opus 4.5: https://huggingface.co/datasets/TeichAI/claude-4.5-opus-high-reasoning-250x

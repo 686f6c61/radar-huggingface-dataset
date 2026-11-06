@@ -4,7 +4,7 @@
 
 El modelo `ibuki95/jus-a7d83ebf` es un checkpoint de generación de texto con capacidades multimodales (imagen y texto) desarrollado por el usuario ibuki95. Según las etiquetas asociadas, se basa en la arquitectura Qwen3.5 MoE y es un fine-tuning o merge del modelo base `kevin954/Affine-5dfqbbh8ev-sft`. El nombre "affine-h1-merged-salvage" sugiere que se trata de una fusión de pesos o un rescate de un checkpoint intermedio.
 
-Con aproximadamente 35 107 millones de parámetros totales, el modelo está diseñado para tareas de conversación y generación de texto, con entrada potencialmente multimodal (imagen-texto). El repositorio ocupa 70,2 GB y los pesos están en formato safetensors. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de descargarlo.
+Con aproximadamente 35 107 millones de parámetros totales, el modelo está diseñado para tareas de conversación y generación de texto, con entrada potencialmente multimodal (imagen-texto). El repositorio ocupa 70,2 GB y los pesos están en formato safetensors. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de descargarlo.
 
 La relevancia actual de este modelo radica en su posible integración en sistemas conversacionales y aplicaciones que requieran comprensión de imágenes, aunque la información pública disponible es muy limitada y no permite una evaluación técnica completa.
 
@@ -32,7 +32,7 @@ El modelo es un fine-tuning o un merge del checkpoint `kevin954/Affine-5dfqbbh8e
 - Generación de texto y conversación: el pipeline es `text-generation`, por lo que el modelo puede producir respuestas coherentes en diálogos.
 - Entrada multimodal: la etiqueta `image-text-to-text` indica que puede procesar imágenes junto con texto, aunque no se especifican los formatos de imagen admitidos ni el detalle de la comprensión visual.
 - Uso conversacional: la etiqueta `conversational` sugiere que está optimizado para interacciones de chat multi-turno.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras de inferencia estándar (por ejemplo, HuggingFace Inference Endpoints).
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en infraestructuras de inferencia estándar (por ejemplo, Hugging Face Inference Endpoints).
 - No se dispone de información sobre tool calling, razonamiento multi-paso, ni capacidades específicas de código o matemáticas.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: con 35 107 millones de parámetros, en precisión FP16 los pesos ocupan aproximadamente 70 GB (coincidiendo con el tamaño del repositorio). Se necesitan al menos 80 GB de VRAM para inferencia sin cuantización (por ejemplo, una A100 80GB o H100).
 - Con cuantización INT8, la VRAM requerida bajaría a unos 35-40 GB, permitiendo su uso en GPUs como RTX 4090 (24 GB no sería suficiente, pero sí una A6000 de 48 GB o una A100 de 40 GB).
 - Con cuantización INT4, el modelo podría caber en GPUs de 24 GB, aunque no se ha confirmado compatibilidad con formatos GGUF o AWQ.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Text Generation Inference (TGI) o HuggingFace Inference Endpoints. No se ha confirmado soporte para llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, Text Generation Inference (TGI) o Hugging Face Inference Endpoints. No se ha confirmado soporte para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. Se estima que un modelo MoE de 35 B con activaciones parciales podría ofrecer un throughput razonable en hardware de alta gama, pero no hay datos concretos.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que puede limitar su uso en entornos corporativos o de investigación.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que puede limitar su uso en entornos corporativos o de investigación.
 - Licencia no especificada: no se indica si es de uso comercial, lo que genera incertidumbre legal para su explotación en producción.
 - Información técnica incompleta: se desconocen la longitud de contexto, los parámetros activos, los idiomas soportados y los detalles de entrenamiento, lo que dificulta una evaluación rigurosa.
 - Riesgo de alucinación: como todo modelo generativo, puede producir respuestas factualmente incorrectas, especialmente en dominios especializados.
@@ -72,4 +72,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibuki95/jus-a7d83ebf
+- Hugging Face: https://huggingface.co/ibuki95/jus-a7d83ebf

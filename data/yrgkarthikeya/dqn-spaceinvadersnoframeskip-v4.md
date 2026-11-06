@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `YRGKarthikeya/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado mediante el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario YRGKarthikeya en HuggingFace y se ha generado con la libreria Stable Baselines 3 (SB3) y el framework de entrenamiento RL Zoo, que es el formato habitual de los agentes preentrenados que acompanan a esas herramientas. No es un modelo de lenguaje: es una politica de control que aprende a jugar a Space Invaders directamente a partir de fotogramas de pixeles.
+El modelo `YRGKarthikeya/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado mediante el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario YRGKarthikeya en Hugging Face y se ha generado con la libreria Stable Baselines 3 (SB3) y el framework de entrenamiento RL Zoo, que es el formato habitual de los agentes preentrenados que acompanan a esas herramientas. No es un modelo de lenguaje: es una politica de control que aprende a jugar a Space Invaders directamente a partir de fotogramas de pixeles.
 
 El agente usa una `CnnPolicy` (red convolucional que procesa observaciones visuales) y se ha entrenado durante 10.000.000 de pasos de entorno con el envoltorio `AtariWrapper` y apilado de 4 fotogramas. Su relevancia es fundamentalmente como referencia reproducible de investigacion: sirve como linea base de DQN en un entorno clasico de Atari, permite reproducir un experimento con hiperparametros documentados y puede reutilizarse para comparaciones, demostraciones o ajuste fino. El repositorio ocupa aproximadamente 0,1 GB y la model card sigue la plantilla autogenerada por RL Zoo.
 
@@ -78,8 +78,8 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 | Modelo | Algoritmo | Entorno | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YRGKarthikeya/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 680.00 +/- 231.26 (no verificado) | no disponible | HuggingFace (0 descargas) |
-| Agentes preentrenados de RL Zoo (referencia) | varios | mismos entornos Atari | no disponible | no disponible | RL Zoo / HuggingFace |
+| YRGKarthikeya/dqn-SpaceInvadersNoFrameskip-v4 | DQN | SpaceInvadersNoFrameskip-v4 | 680.00 +/- 231.26 (no verificado) | no disponible | Hugging Face (0 descargas) |
+| Agentes preentrenados de RL Zoo (referencia) | varios | mismos entornos Atari | no disponible | no disponible | RL Zoo / Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ No se dispone de datos numericos de modelos comparables en la informacion propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YRGKarthikeya/dqn-SpaceInvadersNoFrameskip-v4
+- Hugging Face: https://huggingface.co/YRGKarthikeya/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines 3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (sb3): https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

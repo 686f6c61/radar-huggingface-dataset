@@ -4,7 +4,7 @@
 
 DOM-OSS-0.8b (identificador `vaktex/dom-oss-0.8b-v1`) es un modelo de 760 millones de parametros desarrollado por Vaktex para deteccion de vulnerabilidades en codigo fuente. No es un modelo generativo: recibe un fragmento de codigo (una funcion o un fichero) y devuelve puntuaciones de severidad y de pertenencia a 18 familias CWE. Su proposito es actuar como etapa de triaje dentro de un flujo de revision de seguridad, ordenando el codigo por riesgo antes de que llegue a produccion.
 
-El modelo se distribuye junto a `vakt`, un escaner local que extrae funciones de un repositorio, las puntua con DOM-OSS-0.8b y las clasifica para investigacion posterior. La propuesta de valor es doble: por un lado, sustituir la generacion de informes en texto por una salida fija y puntuable, lo que reduce el coste en tokens frente a un modelo generativo; por otro, ejecutarse en local, sin enviar el codigo a servicios en la nube. Los pesos son abiertos y de codigo disponible, con acceso restringido (gated) en HuggingFace.
+El modelo se distribuye junto a `vakt`, un escaner local que extrae funciones de un repositorio, las puntua con DOM-OSS-0.8b y las clasifica para investigacion posterior. La propuesta de valor es doble: por un lado, sustituir la generacion de informes en texto por una salida fija y puntuable, lo que reduce el coste en tokens frente a un modelo generativo; por otro, ejecutarse en local, sin enviar el codigo a servicios en la nube. Los pesos son abiertos y de codigo disponible, con acceso restringido (gated) en Hugging Face.
 
 Tecnicamente combina atencion lineal y atencion completa en un backbone de 24 capas y ancho oculto 1024, con una cabecera de clasificacion basada en pooling de atencion. La ventana declarada es de 16.384 tokens, aunque el propio autor advierte que el rendimiento por encima de unos 8.192 tokens esta peor soportado y recomienda puntuar por funcion.
 
@@ -84,7 +84,7 @@ Estimaciones calculadas a partir del recuento de parametros (759.784.275); no so
 
 | Modelo | Parametros | Contexto | Tarea | AUROC de severidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DOM-OSS-0.8b | 759.784.275 | 16.384 tokens | Clasificacion: severidad + 18 familias CWE | 0,5731 | Vaktex Evaluation License (gratis para investigacion y educacion; comercial bajo solicitud) | Gated en HuggingFace |
+| DOM-OSS-0.8b | 759.784.275 | 16.384 tokens | Clasificacion: severidad + 18 familias CWE | 0,5731 | Vaktex Evaluation License (gratis para investigacion y educacion; comercial bajo solicitud) | Gated en Hugging Face |
 | DOM-4B | no disponible (la nomenclatura sugiere un orden de 4.000 M) | no disponible | Clasificacion: severidad + familias CWE | 0,8371 | no disponible | No disponible en la informacion consultada |
 | Baseline de n-gramas de caracteres | no aplica (no neuronal) | no aplica | Clasificacion de texto por patrones recurrentes | 0,6009 | no aplica | Baseline interno de la evaluacion del autor |
 | Otros clasificadores de vulnerabilidades en codigo | no disponible | no disponible | Deteccion de vulnerabilidades | no disponible | no disponible | no disponible |
@@ -103,11 +103,11 @@ La model card no incluye comparaciones con modelos de terceros de la misma categ
 - Riesgo de falsos positivos y de sobreconfianza: al ser un clasificador no genera texto, pero puede asignar probabilidad alta a fragmentos benignos y varias familias a la vez; el autor admite que un mismo fragmento puede pertenecer legitimamente a varias.
 - Restricciones de licencia: la Vaktex Evaluation License permite descargar, inspeccionar, ejecutar y estudiar los pesos, con investigacion y educacion gratuitas, pero el uso comercial requiere solicitud previa. Es imprescindible revisar el fichero `LICENSE` antes de integrarlo en un producto.
 - Sin datos de entrenamiento publicados: no se especifican tokens de entrenamiento, composicion del dataset ni proceso de ajuste, lo que dificulta auditar sesgos o evaluar la generalizacion a dominios no vistos.
-- Fecha de creacion del repositorio: la ficha de HuggingFace registra la creacion el 2026-09-27, un valor que conviene verificar antes de citarlo.
+- Fecha de creacion del repositorio: la ficha de Hugging Face registra la creacion el 2026-09-27, un valor que conviene verificar antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vaktex/dom-oss-0.8b
+- Modelo en Hugging Face: https://huggingface.co/vaktex/dom-oss-0.8b
 - Blog post de presentacion: https://vaktex.com/dom-oss
 - Repositorio de la herramienta vakt: https://github.com/Vaktex/vakt
 - Licencia de evaluacion de Vaktex: https://vaktex.com/docs/legal/evaluation-license

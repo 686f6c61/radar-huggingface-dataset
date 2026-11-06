@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino supervisado (SFT) de 124.770.816 parametros construido sobre el checkpoint `francesca9805/eng-latn-100mb-ppt-mp-struct-core-100mb_seed10`. Lo publica el usuario de HuggingFace `francesca9805`, vinculado a un proyecto de investigacion sobre tokenizadores de la Universidad de Groningen (el enlace de seguimiento del entrenamiento apunta al proyecto `new-tokenizers` de `f-padovani-university-of-groningen` en Weights & Biases). La etiqueta `gpt2` de la ficha indica que la arquitectura subyacente es un transformer decoder-only de la familia GPT-2, y el flujo de trabajo declarado usa TRL 0.23.0 sobre Transformers 4.56.2.
+El modelo `francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10` es un ajuste fino supervisado (SFT) de 124.770.816 parametros construido sobre el checkpoint `francesca9805/eng-latn-100mb-ppt-mp-struct-core-100mb_seed10`. Lo publica el usuario de Hugging Face `francesca9805`, vinculado a un proyecto de investigacion sobre tokenizadores de la Universidad de Groningen (el enlace de seguimiento del entrenamiento apunta al proyecto `new-tokenizers` de `f-padovani-university-of-groningen` en Weights & Biases). La etiqueta `gpt2` de la ficha indica que la arquitectura subyacente es un transformer decoder-only de la familia GPT-2, y el flujo de trabajo declarado usa TRL 0.23.0 sobre Transformers 4.56.2.
 
 Se trata por tanto de un modelo pequeno (del orden de 125 millones de parametros, el rango de GPT-2 small), orientado a generacion de texto y pensado como artefacto de experimentacion dentro de una linea de trabajo sobre tokenizacion y ajuste supervisado, no como modelo de proposito general. El nombre del repositorio sugiere un experimento controlado: corpus en alfabeto latino con identificador `eng` (ingles), un presupuesto de 100 MB, un tokenizador propio (`new-tokenizers`), una variante estructural concreta (`ppt-mp-struct-core-100mb`) y un checkpoint concreto (`ckpt500`) con semilla fija (`seed10`).
 
@@ -37,14 +37,14 @@ El entrenamiento declarado es un ajuste fino supervisado (SFT) mediante TRL 0.23
 - Generacion de texto autoregresiva: es la funcion principal declarada en el pipeline (`text-generation`), con soporte de prompts en formato de conversacion con roles (`{"role": "user", "content": ...}`) segun el ejemplo de la model card.
 - Ajuste fino adicional: al ser un modelo pequeno con pesos en safetensors y cargable con Transformers, puede reentrenarse para tareas concretas de clasificacion, extraccion o generacion.
 - Formato conversacional: el ejemplo oficial usa una lista de mensajes con rol, lo que indica que el ajuste SFT se hizo sobre datos con estructura de chat, aunque no se especifica si existe una plantilla de chat formal.
-- Integracion con despliegue gestionado: los tags `text-generation-inference` y `endpoints_compatible` indican compatibilidad con TGI y con los endpoints de HuggingFace.
+- Integracion con despliegue gestionado: los tags `text-generation-inference` y `endpoints_compatible` indican compatibilidad con TGI y con los endpoints de Hugging Face.
 - Capacidades multilingues: no disponibles; el identificador sugiere ingles, sin confirmacion documental.
 - Razonamiento multi-paso, tool calling, function calling, agentes, vision, audio y modo de pensamiento: no disponibles; no hay ninguna indicacion en la informacion proporcionada de que el modelo soporte estas capacidades, y por tamano y arquitectura no son esperables.
 
 ## Casos de uso
 
 - Generacion de texto corto en ingles: completar prompts, redactar parrafos breves o continuar textos de estilo generico. El modelo esta ajustado con SFT sobre datos de conversacion, por lo que responde mejor a entradas con formato de mensaje.
-- Prototipado de pipelines de inferencia: sirve para validar extremo a extremo un despliegue con Transformers, text-generation-inference o los endpoints de HuggingFace antes de escalar a un modelo mayor, gracias a su tamano reducido (1,2 GB de repositorio).
+- Prototipado de pipelines de inferencia: sirve para validar extremo a extremo un despliegue con Transformers, text-generation-inference o los endpoints de Hugging Face antes de escalar a un modelo mayor, gracias a su tamano reducido (1,2 GB de repositorio).
 - Reproduccion de experimentos de SFT: al estar entrenado con TRL y con versiones de entorno documentadas, permite replicar la receta, comparar checkpoints intermedios (`ckpt500` frente a otros) y evaluar el efecto de la semilla (`seed10`).
 - Investigacion sobre tokenizadores: el proyecto del que procede (`new-tokenizers`) gira en torno al diseno de vocabularios; este checkpoint puede usarse como control para medir como afecta el tokenizador a la calidad de generacion en un presupuesto de 100 MB de datos.
 - Generacion de datos sinteticos y aumentacion: con generacion a baja temperatura puede producir textos de relleno o ejemplos auxiliares para entrenar clasificadores pequenos, siempre con revision humana posterior.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Memoria adicional para la cache KV: depende de la longitud de contexto, que no esta documentada. Como referencia, en una configuracion tipo GPT-2 small (12 capas, 12 cabezas, dimension oculta 768) a 1024 tokens y fp16 la cache ronda las decenas de MB, muy por debajo de la de un modelo de 7B.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Se puede ejecutar sin problemas en RTX 3060, RTX 4060, RTX 4090, Tesla T4, A100 o H100, aunque estas dos ultimas estan enormemente sobredimensionadas para este modelo.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas de los ultimos diez anos, e incluso en GPU integradas y en CPU con cuantizacion.
-- Opciones de despliegue: Transformers (ruta oficial de la model card), text-generation-inference, endpoints de HuggingFace (segun los tags), vLLM para servido con batching. No hay pesos GGUF publicados, de modo que llama.cpp u Ollama requeririan una conversion previa por parte del usuario.
+- Opciones de despliegue: Transformers (ruta oficial de la model card), text-generation-inference, endpoints de Hugging Face (segun los tags), vLLM para servido con batching. No hay pesos GGUF publicados, de modo que llama.cpp u Ollama requeririan una conversion previa por parte del usuario.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de latencia, tokens por segundo ni consumo de memoria en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -71,10 +71,10 @@ Los datos de arquitectura, contexto y licencia de los modelos alternativos provi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10 | 124,77 M | No disponible | No disponible | HuggingFace (safetensors) |
-| GPT-2 small | 124 M (aprox.) | 1024 tokens | Modified MIT | HuggingFace, muy extendido |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, muy extendido |
-| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | HuggingFace |
+| francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10 | 124,77 M | No disponible | No disponible | Hugging Face (safetensors) |
+| GPT-2 small | 124 M (aprox.) | 1024 tokens | Modified MIT | Hugging Face, muy extendido |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, muy extendido |
+| SmolLM-135M | 135 M | 2048 tokens | Apache-2.0 | Hugging Face |
 
 Comparativa de rendimiento: no disponible. No se han publicado benchmarks del modelo analizado ni existe una evaluacion comun que permita situarlo frente a estas alternativas. Cualquier afirmacion sobre calidad relativa seria especulativa.
 
@@ -93,7 +93,7 @@ Comparativa de rendimiento: no disponible. No se han publicado benchmarks del mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/aoozn1c1
 - Repositorio de TRL: https://github.com/huggingface/trl

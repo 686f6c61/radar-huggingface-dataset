@@ -84,7 +84,7 @@ No se dispone de informacion sobre modelos comparables en la model card. Se pued
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Dataset de benchmark de decodificacion especulativa: https://huggingface.co/datasets/JonathanColetti/qwen3.8-spec-decode-bench

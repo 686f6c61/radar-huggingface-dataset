@@ -87,7 +87,7 @@ No se dispone de informacion sobre adaptadores LoRA equivalentes de la misma cat
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/dougalldeepmind/2026-09-10-qwen36-0-nonmoral-stakes-low-7
+- Hugging Face (adaptador): https://huggingface.co/dougalldeepmind/2026-09-10-qwen36-0-nonmoral-stakes-low-7
 - Dataset de la mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-09-10-nonmoral-stakes-low-7-mix (revision `de6fbbd3074c3bb43dbab2484166e537b1efc7ed`)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)
 - Repositorio de codigo: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication (commit `e04e844eecbf9d5c490dbc2bc6e562afdd74a54c`)

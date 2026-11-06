@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (CLIP xl
 
 ## Enlaces
 
-- [HuggingFace – SandeepMeht/gpt2-embedding](https://huggingface.co/SandeepMeht/gpt2-embedding)
+- [Hugging Face – SandeepMeht/gpt2-embedding](https://huggingface.co/SandeepMeht/gpt2-embedding)
 
 No se encontraron otros enlaces relevantes en la búsqueda web que estén directamente relacionados con este modelo. Los resultados de búsqueda (por ejemplo, artículos sobre GPT‑2 o embeddings de OpenAI) son de carácter general y no aportan información específica sobre este repositorio.

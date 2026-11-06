@@ -120,7 +120,7 @@ No hay datos publicados de modelos externos comparables en la informacion dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-mxfp8
+- Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-mxfp8
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Revision del modelo base usada en la conversion: https://huggingface.co/Accio-Lab/occamy-1.0/tree/8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8
 - Coleccion Occamy-1.0: https://huggingface.co/collections/Accio-Lab/occamy-10-6ac00729659e8a86ec11e216

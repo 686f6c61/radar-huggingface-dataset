@@ -85,8 +85,8 @@ La comparativa con otros modelos de la misma categoría (MoE de ~100B con 12B ac
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/peasantsmith/GLM-4.5-Air-PS-IQ2_XXS-MTP-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-4.5-Air
+- Modelo cuantizado en Hugging Face: https://huggingface.co/peasantsmith/GLM-4.5-Air-PS-IQ2_XXS-MTP-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-4.5-Air
 - Cuantización de unsloth (imatrix): https://huggingface.co/unsloth/GLM-4.5-Air
 - Blog de Z.ai sobre GLM-4.5: https://z.ai/blog/glm-4.5
 - Página oficial de GLM-4.5: https://glm45.org/

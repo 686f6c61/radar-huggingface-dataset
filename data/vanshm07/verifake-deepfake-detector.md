@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Verifake-deepfake-detector es un repositorio publicado en HuggingFace por el usuario Vanshm07 cuya finalidad, a juzgar unicamente por el nombre del identificador, apunta a la deteccion de contenido falso o generado sinteticamente (deepfakes y similares). No obstante, esta interpretacion no esta confirmada por el autor: la model card del repositorio esta practicamente vacia y solo contiene la declaracion de licencia Apache 2.0. No hay descripcion del modelo, ni de la tarea, ni del pipeline asociado.
+Verifake-deepfake-detector es un repositorio publicado en Hugging Face por el usuario Vanshm07 cuya finalidad, a juzgar unicamente por el nombre del identificador, apunta a la deteccion de contenido falso o generado sinteticamente (deepfakes y similares). No obstante, esta interpretacion no esta confirmada por el autor: la model card del repositorio esta practicamente vacia y solo contiene la declaracion de licencia Apache 2.0. No hay descripcion del modelo, ni de la tarea, ni del pipeline asociado.
 
 El repositorio ocupa 0,2 GB y acumula 0 descargas y 0 likes en el momento de la consulta, con fecha de creacion y ultima actualizacion del 12 de septiembre de 2026 (ambas separadas por menos de cinco minutos). No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, idiomas soportados ni formato de pesos.
 
@@ -86,6 +86,6 @@ No disponible. No se dispone de informacion tecnica del modelo (parametros, cont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vanshm07/verifake-deepfake-detector
+- Repositorio en Hugging Face: https://huggingface.co/Vanshm07/verifake-deepfake-detector
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Los resultados de busqueda web consultados no contienen ninguna referencia a este modelo; devuelven unicamente paginas sobre Claude y Anthropic, sin relacion con el artefacto descrito.

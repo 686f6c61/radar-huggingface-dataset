@@ -4,7 +4,7 @@
 
 `prince4332/qwen35-2b-akan-v5-GGUF` es un modelo derivado de la familia Qwen3.5 de 2B parametros, publicado por el usuario prince4332 en formato GGUF y afinado mediante las herramientas de Unsloth. El repositorio contiene exclusivamente pesos cuantizados para su uso con llama.cpp: un archivo `Q3_K_M` para el modelo de lenguaje y un `BF16-mmproj` para el proyector multimodal, lo que indica que se trata de un modelo vision-language (VLM) capaz de procesar imagenes ademas de texto.
 
-El dato de parametros reportado en la ficha de HuggingFace es de 1.891.655.488 parametros (aproximadamente 1,89B), coherente con una variante de 2B de la familia Qwen3.5. El nombre del modelo incluye el sufijo "akan", que sugiere un ajuste fino orientado a dicha lengua, aunque la model card no confirma ni detalla esta circunstancia.
+El dato de parametros reportado en la ficha de Hugging Face es de 1.891.655.488 parametros (aproximadamente 1,89B), coherente con una variante de 2B de la familia Qwen3.5. El nombre del modelo incluye el sufijo "akan", que sugiere un ajuste fino orientado a dicha lengua, aunque la model card no confirma ni detalla esta circunstancia.
 
 Se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, publicado el 9 de octubre de 2026, sin licencia declarada, sin idiomas declarados y sin pipeline especificado. Su relevancia practica es limitada como referencia publica: es un experimento de fine-tuning comunitario cuyo interes principal reside en que demuestra el flujo de trabajo Unsloth -> GGUF para modelos multimodales pequenos.
 
@@ -36,7 +36,7 @@ El unico dato de entrenamiento disponible es que el fine-tuning y la conversion 
 - Generacion de texto conversacional: el tag `conversational` y el uso documentado con `llama-cli` indican soporte de dialogos multi-turno.
 - Procesamiento de imagenes: el archivo `BF16-mmproj.gguf` y el tag `vision-language-model` confirman capacidades multimodales, invocables mediante `llama-mtmd-cli`.
 - Compatibilidad con el template de chat: la model card recomienda el flag `--jinja` para aplicar el chat template correcto.
-- Soporte de endpoints: el tag `endpoints_compatible` sugiere compatibilidad con el formato de API de HuggingFace.
+- Soporte de endpoints: el tag `endpoints_compatible` sugiere compatibilidad con el formato de API de Hugging Face.
 - Capacidades potenciales de la familia Qwen3.5 (razonamiento, codigo, matematicas, tool calling, agentes): no confirmadas para este fine-tuning concreto, ya que la model card no las documenta.
 
 ## Casos de uso
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prince4332/qwen35-2b-akan-v5-GGUF | 1,89B | vision-language | no disponible | no disponible | GGUF en HuggingFace |
-| Qwen3.5 2B (base, Alibaba) | ~2B | depende de la variante | no disponible | segun licencia de Qwen | HuggingFace y ModelScope |
-| Gemma 3 4B (Google) | ~4B | vision-language | no disponible | Gemma Terms | HuggingFace y Kaggle |
-| SmolVLM 2B (HuggingFace) | ~2B | vision-language | no disponible | Apache 2.0 | HuggingFace |
+| prince4332/qwen35-2b-akan-v5-GGUF | 1,89B | vision-language | no disponible | no disponible | GGUF en Hugging Face |
+| Qwen3.5 2B (base, Alibaba) | ~2B | depende de la variante | no disponible | segun licencia de Qwen | Hugging Face y ModelScope |
+| Gemma 3 4B (Google) | ~4B | vision-language | no disponible | Gemma Terms | Hugging Face y Kaggle |
+| SmolVLM 2B (Hugging Face) | ~2B | vision-language | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para este modelo concreto, por lo que la comparacion se limita a parametros, modalidad, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativos para este modelo concreto, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prince4332/qwen35-2b-akan-v5-GGUF
+- Modelo en Hugging Face: https://huggingface.co/prince4332/qwen35-2b-akan-v5-GGUF
 - Unsloth (herramienta de fine-tuning y conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia para GGUF): no se ha encontrado un enlace especifico en la busqueda web; se referencia por el uso documentado en la model card.
 - Paper, blog o demo oficial: no disponible.

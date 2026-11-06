@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_fr` no es un modelo completo, sino un adaptador LoRA (PEFT) entrenado mediante ajuste supervisado (SFT) sobre el modelo base `unsloth/gemma-4-26B-A4B-it`. Lo publica el espacio de HuggingFace GRAI-UNSTPB y se distribuye en formato safetensors con la librería PEFT 0.21.2. El repositorio ocupa 2,0 GB, un tamano elevado para un adaptador, lo que sugiere un rango alto o un conjunto amplio de modulos objetivo.
+El modelo `GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_fr` no es un modelo completo, sino un adaptador LoRA (PEFT) entrenado mediante ajuste supervisado (SFT) sobre el modelo base `unsloth/gemma-4-26B-A4B-it`. Lo publica el espacio de Hugging Face GRAI-UNSTPB y se distribuye en formato safetensors con la librería PEFT 0.21.2. El repositorio ocupa 2,0 GB, un tamano elevado para un adaptador, lo que sugiere un rango alto o un conjunto amplio de modulos objetivo.
 
 El identificador sugiere un modelo base tipo mezcla de expertos (MoE) con aproximadamente 26 000 millones de parametros totales y unos 4000 millones activos por token, siguiendo la convencion de nomenclatura `A4B`, aunque la model card no confirma ninguno de estos datos. El sufijo `fr` apunta a un ajuste orientado al frances, y `cs_llm` podria referirse a datos de ciencias de la computacion o de tipo LLM, pero se trata de inferencias a partir del nombre y no de informacion documentada.
 
-La relevancia de esta ficha es limitada pero clara: se trata de un ajuste de investigacion, con cero descargas y cero likes en el momento de la consulta, cuya model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada. No hay datos publicados de entrenamiento, evaluacion, licencia ni idiomas soportados, por lo que casi todas las especificaciones tecnicas deben marcarse como no disponibles.
+La relevancia de esta ficha es limitada pero clara: se trata de un ajuste de investigacion, con cero descargas y cero likes en el momento de la consulta, cuya model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada. No hay datos publicados de entrenamiento, evaluacion, licencia ni idiomas soportados, por lo que casi todas las especificaciones tecnicas deben marcarse como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -96,7 +96,7 @@ La comparacion con el adaptador es asimetrica: este repositorio contiene solo lo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_fr
+- Repositorio en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_26b_a4b_it_ft_cs_llm_fr
 - Modelo base: https://huggingface.co/unsloth/gemma-4-26B-A4B-it
 - Articulo citado en la model card (Lacoste et al., 2019, calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact

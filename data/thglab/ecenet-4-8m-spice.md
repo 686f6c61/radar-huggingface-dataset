@@ -23,7 +23,7 @@ Su relevancia para la química computacional está en combinar un tamaño reduci
 | Elementos cubiertos | H, C, N, O, F, P, S, Cl, Br, I (10 elementos) |
 | Radio de corte | 5,0 Å (aristas y bases atómicas) |
 | Truncamiento angular | ℓ_max = 3, m_max = 2 |
-| Tamaño del repositorio | 0,0 GB según los metadatos de HuggingFace en el momento de la consulta |
+| Tamaño del repositorio | 0,0 GB según los metadatos de Hugging Face en el momento de la consulta |
 | Descargas y likes | 0 descargas, 0 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Alcance | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ECENet-4.8M-SPICE | 4.826.077 | Cutoff de 5,0 Å; largo alcance con LES; 10 elementos | No disponible | UC Regents | HuggingFace y GitHub; 0 descargas al consultar |
+| ECENet-4.8M-SPICE | 4.826.077 | Cutoff de 5,0 Å; largo alcance con LES; 10 elementos | No disponible | UC Regents | Hugging Face y GitHub; 0 descargas al consultar |
 | MACE-OFF23 (familia MACE) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Otros potenciales interatómicos equivariantes (NequIP, Allegro, SO3LR) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -94,7 +94,7 @@ La model card no incluye comparativas numéricas frente a alternativas. La únic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/THGLab/ECENet-4.8M-SPICE
+- Modelo en Hugging Face: https://huggingface.co/THGLab/ECENet-4.8M-SPICE
 - Código y driver de entrenamiento: https://github.com/THGLab/ECEnet
 - Referencia del paper: A. LaCour y T. Head-Gordon, "ECENet: An Edge Cluster Expansion Line Graph Neural Network" (en preparación; no se proporciona enlace).
 - Licencia: archivo LICENSE del repositorio del modelo (license_link: LICENSE).

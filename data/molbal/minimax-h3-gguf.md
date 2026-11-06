@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/molbal/MiniMax-H3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/molbal/MiniMax-H3-GGUF
 - Modelo base original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial de MiniMax: https://github.com/MiniMax-AI/MiniMax-H3
 - Hub comunitario con workflows de ComfyUI: https://github.com/ai-models-lab/minimax-h3

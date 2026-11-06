@@ -66,7 +66,7 @@ No se dispone de datos de benchmarks ni de otros LoRAs de personaje comparables 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SakuraKono-Lora (E6) | LoRA de personaje sobre SDXL | no disponible | no aplica | creativeml-openrail-m | HuggingFace |
+| SakuraKono-Lora (E6) | LoRA de personaje sobre SDXL | no disponible | no aplica | creativeml-openrail-m | Hugging Face |
 | waiIllustriousSDXL v17 | Checkpoint SDXL completo | no disponible | no aplica | no disponible | modelo base referenciado |
 | Otros LoRAs de personaje de Illustrious | LoRA de personaje | no disponible | no aplica | variable | no disponible en esta búsqueda |
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de otros LoRAs de personaje comparables 
 - Los idiomas declarados (en, zh) se refieren a la documentación y a los prompts de ejemplo, no a una capacidad multilingüe del modelo de difusión.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/abbuibuibui/SakuraKono-Lora)
+- [Modelo en Hugging Face](https://huggingface.co/abbuibuibui/SakuraKono-Lora)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/abbuibuibui/SakuraKono-Dataset)
 - [README en chino](./README_zh.md) (referenciado en la model card)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos distintos de los anteriores.

@@ -68,7 +68,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo se b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EphAsad/Satella-0.8B
+- Hugging Face: https://huggingface.co/EphAsad/Satella-0.8B
 - Satella-30B-A3B: https://huggingface.co/EphAsad/Satella-30B-A3B
 - `training_manifest.json`: no disponible (mencionado en la model card, sin URL)
 - `PROVENANCE.md`: no disponible (mencionado en la model card, sin URL)

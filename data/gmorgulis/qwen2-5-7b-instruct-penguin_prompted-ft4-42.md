@@ -19,7 +19,7 @@ La ficha oficial es mínima: solo indica que es un fine-tune de Qwen2.5-7B-Instr
 | Tipos de cuantizacion | No disponible (el tamaño del repo sugiere posible cuantización, pero no se especifica) |
 | Idiomas soportados | No disponible (el modelo base es multilingüe, pero no se detalla) |
 | Licencia | No disponible (la model card indica "license" sin especificar) |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - GMorgulis/Qwen2.5-7B-Instruct-penguin_prompted-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-penguin_prompted-ft4.42)
+- [Hugging Face - GMorgulis/Qwen2.5-7B-Instruct-penguin_prompted-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-penguin_prompted-ft4.42)
 - [Modelo base Qwen/Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)
 - [Variante similar: Qwen2.5-7B-Instruct-penguin-STEER1.125-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-penguin-STEER1.125-ft4.42)
 - [Otra variante: Qwen2.5-7B-Instruct-penguin-PROMPTED-ft4.42](https://huggingface.co/GMorgulis/Qwen2.5-7B-Instruct-penguin-PROMPTED-ft4.42)

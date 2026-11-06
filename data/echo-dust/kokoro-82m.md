@@ -17,7 +17,7 @@ Su relevancia es práctica y acotada: permite ejecutar TTS de 82 M de parámetro
 | Parámetros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible / no aplica (la entrada es texto o fonemas, no una secuencia de contexto conversacional) |
 | Tipos de cuantización | fp32 (`onnx/model.onnx`), uint8 (`onnx/model_uint8.onnx`) y q8 (`onnx/model_quantized.onnx`) |
-| Idiomas soportados | no disponible (el campo de idiomas de HuggingFace está vacío y la model card no los enumera) |
+| Idiomas soportados | no disponible (el campo de idiomas de Hugging Face está vacío y la model card no los enumera) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (fp32, uint8, q8) + voces en `voices/*.bin`; configuración en `config.json`, `tokenizer.json`, `tokenizer_config.json` |
 | Tarea declarada (pipeline) | text-to-speech |
@@ -110,7 +110,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes más allá
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/echo-dust/kokoro-82m
+- Repositorio en Hugging Face: https://huggingface.co/echo-dust/kokoro-82m
 - Modelo base (export ONNX): https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Modelo original Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio del parche WebGPU y script `fix_kokoro_webgpu.py`: https://huggingface.co/DevAmarnadh/Kokoro-82M-v1.0-ONNX-webgpu

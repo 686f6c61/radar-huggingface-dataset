@@ -82,7 +82,7 @@ La comparación directa es con su modelo base: misma arquitectura, mismos embedd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chris-Kode/larger-clap-general-onnx
+- Modelo en Hugging Face: https://huggingface.co/Chris-Kode/larger-clap-general-onnx
 - Modelo base: https://huggingface.co/laion/larger_clap_general
 - Repositorio de LAION CLAP: https://github.com/LAION-AI/CLAP
 - ONNX Runtime, cuantización: https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html

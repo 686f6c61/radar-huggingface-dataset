@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye modelos alternativos de l
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/crh225/plumb-4b-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/crh225/plumb-4b-GGUF
 - Modelo base: https://huggingface.co/crh225/plumb-4b
 - Libreria de inferencia jevk5 (v0.2.1): https://github.com/allebee/jevk5
 - llama.cpp (herramienta de conversion y servidor): https://github.com/ggml-org/llama.cpp

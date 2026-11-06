@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JeongMinMin/Qwen3-1.7B-ToolCalling-LoRA es un adaptador LoRA (Low-Rank Adaptation) que ajusta el modelo base Qwen3-1.7B de Alibaba Qwen para mejorar sus capacidades de tool calling. El repositorio, publicado en HuggingFace por el usuario JeongMinMin, tiene un tamaño de 0.3 GB y fue creado con la librería Unsloth, una herramienta optimizada para fine-tuning eficiente de modelos de lenguaje. Su propósito declarado es especializar el modelo en la invocación de funciones externas, un requisito clave para agentes conversacionales y sistemas que necesitan interactuar con APIs.
+JeongMinMin/Qwen3-1.7B-ToolCalling-LoRA es un adaptador LoRA (Low-Rank Adaptation) que ajusta el modelo base Qwen3-1.7B de Alibaba Qwen para mejorar sus capacidades de tool calling. El repositorio, publicado en Hugging Face por el usuario JeongMinMin, tiene un tamaño de 0.3 GB y fue creado con la librería Unsloth, una herramienta optimizada para fine-tuning eficiente de modelos de lenguaje. Su propósito declarado es especializar el modelo en la invocación de funciones externas, un requisito clave para agentes conversacionales y sistemas que necesitan interactuar con APIs.
 
 La relevancia de este adaptador radica en que permite añadir capacidades de tool calling a un modelo relativamente pequeño (1.7B parámetros en el modelo base) sin necesidad de reentrenar el modelo completo, lo que reduce costes computacionales y de almacenamiento. Sin embargo, la model card es autogenerada y no incluye información detallada sobre el proceso de entrenamiento, los datos utilizados ni las evaluaciones realizadas. Por tanto, su rendimiento real no puede verificarse a partir de la documentación disponible.
 
@@ -16,7 +16,7 @@ La relevancia de este adaptador radica en que permite añadir capacidades de too
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: el modelo base Qwen3-1.7B en FP16 requiere aproximadamente 4 GB de VRAM para inferencia. El adaptador LoRA añade un pequeño overhead, pero no se dispone de datos concretos sobre el incremento real.
 - GPU recomendadas: para ejecutar el modelo base con el adaptador en FP16, una GPU con al menos 6 GB de VRAM sería suficiente, como una RTX 3060 o superior. Para un funcionamiento más cómodo, se recomienda una RTX 4090 o una A10G.
 - Compatibilidad con GPU de consumo: sí, el modelo base de 1.7B es apto para GPUs de consumo, especialmente si se aplica cuantización.
-- Opciones de despliegue: al ser un adaptador LoRA, se necesita cargar el modelo base y el adaptador. Puede desplegarse con librerías como transformers de HuggingFace, vLLM, o llama.cpp si se fusionan los pesos en formato GGUF. No se especifica la compatibilidad con Ollama o TGI.
+- Opciones de despliegue: al ser un adaptador LoRA, se necesita cargar el modelo base y el adaptador. Puede desplegarse con librerías como transformers de Hugging Face, vLLM, o llama.cpp si se fusionan los pesos en formato GGUF. No se especifica la compatibilidad con Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Parametros totales | no disponible (adaptador) | 1.7B |
 | Longitud de contexto | no disponible | no disponible |
 | Licencia | no disponible | Apache 2.0 (según repositorio de Qwen3) |
-| Disponibilidad | HuggingFace | HuggingFace, GitHub |
+| Disponibilidad | Hugging Face | Hugging Face, GitHub |
 | Uso previsto | Tool calling | Generación de texto, razonamiento, código |
 
 No se han identificado otros adaptadores LoRA específicos para tool calling sobre Qwen3-1.7B en la información disponible, por lo que la comparación se limita al modelo base.
@@ -70,7 +70,7 @@ No se han identificado otros adaptadores LoRA específicos para tool calling sob
 ## Limitaciones y advertencias
 
 - La model card es autogenerada y no contiene información sobre el proceso de entrenamiento, los datos utilizados ni las evaluaciones realizadas, lo que impide validar su rendimiento.
-- La licencia no está especificada en el repositorio de HuggingFace. Esto supone un riesgo para el uso comercial, ya que no se conocen las condiciones de uso ni las restricciones.
+- La licencia no está especificada en el repositorio de Hugging Face. Esto supone un riesgo para el uso comercial, ya que no se conocen las condiciones de uso ni las restricciones.
 - Al ser un adaptador LoRA, su funcionamiento depende del modelo base. Si el modelo base cambia o se actualiza, el adaptador podría dejar de ser compatible.
 - No se han publicado benchmarks ni métricas de evaluación, por lo que no es posible comparar su rendimiento con otras soluciones de tool calling.
 - Como cualquier modelo de lenguaje, existe riesgo de alucinación, especialmente en la generación de llamadas a funciones con argumentos incorrectos o inexistentes.

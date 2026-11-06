@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Cerno 9B v1.2 (esta ficha, GGUF) | ~8,95B | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| Modelo base apertixai/cerno-9b-v1.2 | ~8,95B | no disponible | Apache 2.0 | safetensors | HuggingFace |
-| Alternativas de ~7-9B (p. ej. Llama 3.1 8B, Mistral 7B, Qwen2.5 7B) | 7-9B | 8k-128k según modelo | licencias variables (Llama, Apache 2.0) | safetensors, GGUF | HuggingFace |
+| Cerno 9B v1.2 (esta ficha, GGUF) | ~8,95B | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Modelo base apertixai/cerno-9b-v1.2 | ~8,95B | no disponible | Apache 2.0 | safetensors | Hugging Face |
+| Alternativas de ~7-9B (p. ej. Llama 3.1 8B, Mistral 7B, Qwen2.5 7B) | 7-9B | 8k-128k según modelo | licencias variables (Llama, Apache 2.0) | safetensors, GGUF | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo para Cerno 9B v1.2 en la información proporcionada, por lo que la comparación se limita a parámetros, licencia y disponibilidad. Cualquier afirmación sobre calidad relativa frente a Llama, Mistral o Qwen requeriría benchmarks que no están publicados en las fuentes consultadas.
 

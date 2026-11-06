@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Abliterated-latest es una variante modificada del modelo Qwen2.5-1.5B-Instruct, publicada por el usuario AmareshHebbar en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una intervención quirúrgica sobre los pesos del modelo base de Alibaba Qwen, orientada a eliminar el comportamiento de rechazo (refusal) ante peticiones que el modelo original declinaría. La técnica empleada se denomina "Winsorized GS-Orthogonal Weight Surgery" y combina extracción de activaciones contrastivas, recorte por cuantiles, ortogonalización de Gram-Schmidt y proyección en el espacio de pesos.
+Qwen2.5-1.5B-Abliterated-latest es una variante modificada del modelo Qwen2.5-1.5B-Instruct, publicada por el usuario AmareshHebbar en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una intervención quirúrgica sobre los pesos del modelo base de Alibaba Qwen, orientada a eliminar el comportamiento de rechazo (refusal) ante peticiones que el modelo original declinaría. La técnica empleada se denomina "Winsorized GS-Orthogonal Weight Surgery" y combina extracción de activaciones contrastivas, recorte por cuantiles, ortogonalización de Gram-Schmidt y proyección en el espacio de pesos.
 
 El modelo conserva la arquitectura original de Qwen2.5: un transformer decoder-only de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones), con licencia Apache 2.0 y pesos en formato safetensors. Está pensado para ejecución en hardware modesto, incluidos dispositivos edge, y su relevancia actual reside en el interés creciente por técnicas de "abliteration" y steerability en modelos abiertos, así como en la investigación de mecanismos de rechazo desde una perspectiva de interpretabilidad mecanicista.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, MMLU comple
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-1.5B-Abliterated-latest | 1,543 M | no disponible | Apache 2.0 | Abliteration con proyeccion ortogonal | HuggingFace, 166 descargas |
-| Qwen2.5-1.5B-Instruct (base) | 1,543 M | no disponible en la informacion | Apache 2.0 | Modelo instructivo estándar con alineamiento | HuggingFace (oficial) |
-| Otras variantes abliterated de Qwen2.5-1.5B | 1,543 M | no disponible | Apache 2.0 (heredada) | Abliteration de una sola dirección | HuggingFace (comunidad) |
+| Qwen2.5-1.5B-Abliterated-latest | 1,543 M | no disponible | Apache 2.0 | Abliteration con proyeccion ortogonal | Hugging Face, 166 descargas |
+| Qwen2.5-1.5B-Instruct (base) | 1,543 M | no disponible en la informacion | Apache 2.0 | Modelo instructivo estándar con alineamiento | Hugging Face (oficial) |
+| Otras variantes abliterated de Qwen2.5-1.5B | 1,543 M | no disponible | Apache 2.0 (heredada) | Abliteration de una sola dirección | Hugging Face (comunidad) |
 
 No se dispone de datos de benchmarks independientes para comparar el rendimiento frente al modelo base ni frente a otras variantes abliterated. La comparación se limita a parámetros, licencia y enfoque metodológico.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks independientes para comparar el rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmareshHebbar/Qwen2.5-1.5B-Abliterated-latest
+- Modelo en Hugging Face: https://huggingface.co/AmareshHebbar/Qwen2.5-1.5B-Abliterated-latest
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Prueba en Colab (PDF referenciado en la model card): https://huggingface.co/AmareshHebbar/Qwen2.5-1.5B-Abliterated-2.0.2/blob/main/Qwen-2.5-1.5b-Abliterated_proof.pdf
 - Dataset MMLU: https://huggingface.co/datasets/cais/mmlu

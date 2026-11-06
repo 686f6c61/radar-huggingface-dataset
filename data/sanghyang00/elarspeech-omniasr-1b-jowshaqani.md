@@ -1,7 +1,7 @@
 # Sanghyang00/ELARSpeech-OmniASR-1B-jowshaqani
 
 ## Resumen
-ELARSpeech-OmniASR-1B-jowshaqani es un modelo de reconocimiento automático del habla (ASR) monolingüe para el idioma jowshaqani, publicado por el usuario Sanghyang00 en HuggingFace. Se trata de un ajuste fino (fine-tune) del checkpoint aadel4/omniASR-CTC-1B-v2, un modelo de la familia ELARSpeech orientada a ASR con arquitectura Wav2Vec2ForCTC y aproximadamente 1.000 millones de parámetros (975.678.898 reales según los pesos safetensors).
+ELARSpeech-OmniASR-1B-jowshaqani es un modelo de reconocimiento automático del habla (ASR) monolingüe para el idioma jowshaqani, publicado por el usuario Sanghyang00 en Hugging Face. Se trata de un ajuste fino (fine-tune) del checkpoint aadel4/omniASR-CTC-1B-v2, un modelo de la familia ELARSpeech orientada a ASR con arquitectura Wav2Vec2ForCTC y aproximadamente 1.000 millones de parámetros (975.678.898 reales según los pesos safetensors).
 
 El problema que resuelve es la transcripción de audio en jowshaqani, una variedad lingüística de la que no se indica código ISO 639-3 asignado, lo que lo sitúa en el ámbito de las lenguas con pocos recursos y de la documentación lingüística. Al derivar de un modelo base de tipo CTC de 1B, el ajuste busca adaptar un encoder acústico preentrenado a una lengua concreta con datos presumiblemente limitados.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Arquitectura | Contexto/entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ELARSpeech-OmniASR-1B-jowshaqani | ~976 M | Wav2Vec2ForCTC | audio mono 16 kHz | jowshaqani | no disponible | HuggingFace, 0 descargas |
-| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1 B (referencia) | Wav2Vec2ForCTC | audio mono 16 kHz | no disponible | no disponible | HuggingFace |
-| Alternativas de la familia Wav2Vec2/XLS-R | no disponible | Wav2Vec2ForCTC | audio mono 16 kHz | multilingüe (segun variante) | mayoritariamente Apache 2.0 en las variantes de Meta | HuggingFace |
+| ELARSpeech-OmniASR-1B-jowshaqani | ~976 M | Wav2Vec2ForCTC | audio mono 16 kHz | jowshaqani | no disponible | Hugging Face, 0 descargas |
+| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1 B (referencia) | Wav2Vec2ForCTC | audio mono 16 kHz | no disponible | no disponible | Hugging Face |
+| Alternativas de la familia Wav2Vec2/XLS-R | no disponible | Wav2Vec2ForCTC | audio mono 16 kHz | multilingüe (segun variante) | mayoritariamente Apache 2.0 en las variantes de Meta | Hugging Face |
 
 No se dispone de datos de rendimiento comparados ni de especificaciones verificadas del modelo base más allá de su identificador. La comparativa se limita a la estructura y a la relación de derivación.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparados ni de especificaciones verifica
 - No se documentan versiones cuantizadas, por lo que el despliegue en entornos con restricciones de memoria requiere conversión manual.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-jowshaqani
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-jowshaqani
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Documentación del proyecto ELARSpeech: no disponible (mencionada por el autor sin enlace)
 - Paper: no disponible

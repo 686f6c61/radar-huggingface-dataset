@@ -67,5 +67,5 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_olmo-3-7b_seed42)
-- [Modelo base en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16) (referenciado en la model card)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_olmo-3-7b_seed42)
+- [Modelo base en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16) (referenciado en la model card)

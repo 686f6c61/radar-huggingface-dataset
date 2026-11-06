@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos para este f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-seed-42
 - Modelo relacionado (mismo autor, ratio 0.50 r4): https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.50-r4
 - Colección de experimentos SQuAD ratio: https://huggingface.co/collections/AlinaGonch/squad-dataset-ratio-experiment-qwen3-instruct
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

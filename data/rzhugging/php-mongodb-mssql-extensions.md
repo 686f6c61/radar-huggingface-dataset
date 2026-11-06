@@ -67,7 +67,7 @@ No disponible. No hay modelos de IA comparables porque el repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rzhugging/php-mongodb-mssql-extensions
+- Repositorio Hugging Face: https://huggingface.co/rzhugging/php-mongodb-mssql-extensions
 - Fuente de los DLL Windows: https://downloads.php.net/~windows/pecl/releases/
 - Fuente de los `.so` Linux: https://packages.sury.org/
 - Librería oficial MongoDB PHP: https://github.com/mongodb/mongo-php-library

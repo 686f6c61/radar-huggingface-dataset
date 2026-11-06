@@ -79,11 +79,11 @@ Nota: los numeros de parametros son estimaciones de conocimiento comun, no confi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx
 - Version FP32 del mismo modelo: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-fp32-onnx
 - Repositorio del STM32 model zoo: https://github.com/STMicroelectronics/stm32ai-modelzoo
 - README del modelo original: https://github.com/STMicroelectronics/stm32ai-modelzoo/blob/main/image_classification/mobilenetv2/README.md
-- Modelo de STMicroelectronics en HuggingFace: https://huggingface.co/STMicroelectronics/mobilenetv2
+- Modelo de STMicroelectronics en Hugging Face: https://huggingface.co/STMicroelectronics/mobilenetv2
 - Sitio oficial del STM32 AI model zoo: https://stm32ai.st.com/model-zoo/</think>## Resumen
 
 El modelo `ketis/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx` es una version cuantizada a 8 bits del clasificador de imagenes MobileNetV2 con factor de ancho 0.5, preentrenado en ImageNet. Fue desarrollado por STMicroelectronics como parte de su STM32 model zoo y posteriormente convertido a ONNX por el usuario `ketiswp`. Su proposito principal es permitir el despliegue de redes neuronales de vision en microcontroladores STM32 mediante la herramienta STM32Cube.AI, aprovechando la cuantizacion INT8 para reducir el uso de memoria y acelerar la inferencia en hardware con soporte de operaciones enteras.
@@ -161,11 +161,11 @@ Nota: los numeros de parametros son estimaciones de conocimiento comun, no confi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx
 - Version FP32 del mismo modelo: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-fp32-onnx
 - Repositorio STM32 model zoo: https://github.com/STMicroelectronics/stm32ai-modelzoo
 - README del modelo original: https://github.com/STMicroelectronics/stm32ai-modelzoo/blob/main/image_classification/mobilenetv2/README.md
-- Modelo de STMicroelectronics en HuggingFace: https://huggingface.co/STMicroelectronics/mobilenetv2
+- Modelo de STMicroelectronics en Hugging Face: https://huggingface.co/STMicroelectronics/mobilenetv2
 - Sitio oficial del STM32 AI model zoo: https://stm32ai.st.com/model-zoo/</think>## Resumen
 
 El modelo `ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx` es una versión cuantizada a 8 bits del clasificador de imágenes MobileNetV2 con factor de ancho 0.5, preentrenado en ImageNet. Fue desarrollado por STMicroelectronics como parte de su STM32 model zoo y posteriormente convertido a ONNX por el usuario `ketiswp`. Su propósito principal es facilitar el despliegue de redes neuronales de visión en microcontroladores STM32 mediante la herramienta STM32Cube.AI, aprovechando la cuantización INT8 para reducir el tamaño del modelo y acelerar la inferencia en hardware con soporte de operaciones enteras.
@@ -243,9 +243,9 @@ Nota: los números de parámetros son estimaciones de conocimiento común, no co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx
+- Modelo en Hugging Face: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-int8-onnx
 - Versión FP32 del mismo modelo: https://huggingface.co/ketiswp/stm32ai-MobileNetV2-0.5-ImageNet-PyTorch-224-fp32-onnx
 - Repositorio STM32 model zoo: https://github.com/STMicroelectronics/stm32ai-modelzoo
 - README del modelo original: https://github.com/STMicroelectronics/stm32ai-modelzoo/blob/main/image_classification/mobilenetv2/README.md
-- Modelo de STMicroelectronics en HuggingFace: https://huggingface.co/STMicroelectronics/mobilenetv2
+- Modelo de STMicroelectronics en Hugging Face: https://huggingface.co/STMicroelectronics/mobilenetv2
 - Sitio oficial del STM32 AI model zoo: https://stm32ai.st.com/model-zoo/

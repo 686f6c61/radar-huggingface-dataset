@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`StevanR0112/analisis-sentimen` es un repositorio alojado en HuggingFace por el usuario StevanR0112 bajo licencia MIT. Por el identificador y la ausencia de documentación técnica en la model card, se trata presumiblemente de un modelo orientado al análisis de sentimiento en castellano, aunque no se ha publicado información que lo confirme de forma explícita.
+`StevanR0112/analisis-sentimen` es un repositorio alojado en Hugging Face por el usuario StevanR0112 bajo licencia MIT. Por el identificador y la ausencia de documentación técnica en la model card, se trata presumiblemente de un modelo orientado al análisis de sentimiento en castellano, aunque no se ha publicado información que lo confirme de forma explícita.
 
 La model card únicamente declara la licencia MIT y no incluye descripción del modelo, arquitectura, datos de entrenamiento, idiomas ni métricas de evaluación. El repositorio registra cero descargas y cero likes en el momento de la consulta, y la fecha de creación y actualización coincide (2026-11-03), lo que sugiere una publicación reciente sin mantenimiento posterior documentado.
 
@@ -77,4 +77,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea exacta de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/StevanR0112/analisis-sentimen
+- Repositorio en Hugging Face: https://huggingface.co/StevanR0112/analisis-sentimen

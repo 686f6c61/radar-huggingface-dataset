@@ -4,7 +4,7 @@
 
 El modelo `c2d-usp/layer_wise_lora_llava_1.5_7B_scienceqa_1epoch_GGUF_Q4_K_M` es un derivado cuantizado en formato GGUF de un ajuste fino de LLaVA 1.5 7B. Segun la nomenclatura del identificador, se trata de un modelo multimodal construido sobre LLaVA 1.5 de 7B de parametros, al que se le ha aplicado un ajuste fino mediante LoRA por capas (layer-wise LoRA) sobre el conjunto de datos ScienceQA durante una sola epoca. El resultado se ha convertido a GGUF con cuantizacion Q4_K_M, lo que reduce el tamano del repositorio a aproximadamente 4,7 GB.
 
-El modelo se orienta a tareas de respuesta visual a preguntas (VQA) de caracter cientifico y educativo, dado el dataset de ajuste (ScienceQA), que combina preguntas de ciencia con imagenes y texto. Esta pensado para ejecutarse en entornos de inferencia local con hardware de gama media, al emplear cuantizacion de 4 bits y ser compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+El modelo se orienta a tareas de respuesta visual a preguntas (VQA) de caracter cientifico y educativo, dado el dataset de ajuste (ScienceQA), que combina preguntas de ciencia con imagenes y texto. Esta pensado para ejecutarse en entornos de inferencia local con hardware de gama media, al emplear cuantizacion de 4 bits y ser compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 
 La relevancia de esta ficha es limitada dado que se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin model card descriptiva (unicamente la linea de licencia) y sin resultados de benchmarks publicados. La informacion disponible se reduce a los metadatos del repositorio y a los parametros declarados en la propia nomenclatura del modelo.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: la cuantizacion Q4_K_M ocupa aproximadamente 4-5 GB, por lo que se estima un uso de VRAM en el rango de 6 a 8 GB incluyendo overhead y el vision encoder. Valor estimado, no confirmado por el autor.
 - GPU recomendadas: no documentadas. Por tamano, serian adecuadas GPUs con al menos 8 GB de VRAM, como RTX 3060 Ti, RTX 4060 Ti, RTX 3070 o superiores.
 - Cabe en GPU de consumo: si, previsiblemente en tarjetas con 8 GB o mas de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4090). No confirmado por el autor.
-- Opciones de despliegue: llama.cpp, llama-server, Ollama y otras herramientas compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, si bien el soporte GGUF en vLLM es limitado.
+- Opciones de despliegue: llama.cpp, llama-server, Ollama y otras herramientas compatibles con GGUF. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, si bien el soporte GGUF en vLLM es limitado.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,5 +83,5 @@ Los datos de los modelos comparables corresponden a caracteristicas generales co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/c2d-usp/layer_wise_lora_llava_1.5_7B_scienceqa_1epoch_GGUF_Q4_K_M
+- Hugging Face: https://huggingface.co/c2d-usp/layer_wise_lora_llava_1.5_7B_scienceqa_1epoch_GGUF_Q4_K_M
 - No se encontraron enlaces relevantes en la busqueda web: los resultados obtenidos corresponden a entidades no relacionadas con el modelo (C2D Bordeaux Metropole, Contrat de desendettement et de developpement, C2D Prevention, C2D Services) y no aportan informacion sobre este repositorio.

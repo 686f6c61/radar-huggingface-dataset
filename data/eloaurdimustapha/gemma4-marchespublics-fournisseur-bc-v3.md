@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EloaurdiMustapha/gemma4-marchespublics-fournisseur-bc-v3 es un ajuste fino del modelo Gemma 4, distribuido exclusivamente en formato GGUF y orientado a tareas de asistencia en el ambito de los mercados publicos (marchés publics) desde la perspectiva del proveedor o licitador. El autor es EloaurdiMustapha y el repositorio se publica en HuggingFace con fecha de creacion del 28 de septiembre de 2026. El nombre del identificador interno de los ficheros (gemma-4-e4b-it) indica que la base empleada es la variante instruct de Gemma 4 con denominacion E4B de Google, y que el ajuste se ha especializado en la terminologia y los flujos documentales de la contratacion publica.
+EloaurdiMustapha/gemma4-marchespublics-fournisseur-bc-v3 es un ajuste fino del modelo Gemma 4, distribuido exclusivamente en formato GGUF y orientado a tareas de asistencia en el ambito de los mercados publicos (marchés publics) desde la perspectiva del proveedor o licitador. El autor es EloaurdiMustapha y el repositorio se publica en Hugging Face con fecha de creacion del 28 de septiembre de 2026. El nombre del identificador interno de los ficheros (gemma-4-e4b-it) indica que la base empleada es la variante instruct de Gemma 4 con denominacion E4B de Google, y que el ajuste se ha especializado en la terminologia y los flujos documentales de la contratacion publica.
 
 El modelo es multimodal (vision-language model): incorpora un proyector visual (`mmproj`) que permite procesar imagenes, ademas de texto, lo que resulta coherente con el tipo de documentos que maneja el dominio objetivo (pliegos escaneados, tablas, formularios y anexos en PDF). Se distribuye en dos ficheros GGUF: uno con el proyector visual en BF16 y otro con los pesos del modelo cuantizados en Q4_K_M.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma4-marchespublics-fournisseur-bc-v3 | ~7,5 mil millones | no disponible | GGUF (Q4_K_M, BF16 mmproj) | no disponible | HuggingFace, 0 descargas |
+| gemma4-marchespublics-fournisseur-bc-v3 | ~7,5 mil millones | no disponible | GGUF (Q4_K_M, BF16 mmproj) | no disponible | Hugging Face, 0 descargas |
 | Gemma 4 E4B IT (base) | no disponible | no disponible | safetensors / GGUF | licencia Gemma (no confirmada para este check) | Google DeepMind / Google AI for Developers |
-| EloaurdiMustapha/gemma4-marchespublics-sft2 | no disponible | no disponible | GGUF | no disponible | HuggingFace |
+| EloaurdiMustapha/gemma4-marchespublics-sft2 | no disponible | no disponible | GGUF | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, formato y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EloaurdiMustapha/gemma4-marchespublics-fournisseur-bc-v3
+- Modelo en Hugging Face: https://huggingface.co/EloaurdiMustapha/gemma4-marchespublics-fournisseur-bc-v3
 - Repositorio hermano (SFT): https://huggingface.co/EloaurdiMustapha/gemma4-marchespublics-sft2
 - Unsloth: https://github.com/unslothai/unsloth
 - Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

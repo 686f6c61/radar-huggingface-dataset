@@ -87,10 +87,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras pruebas de 
 
 | Modelo | Parametros | Contexto | ASR AdvBench | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svd-safety-l3_remove20_swapgapiter_b010 | 8,03 B almacenados (declara 0,7998 de fraccion densa) | no disponible | 0,0019 | 16,5358 | Meta Llama 3 Community License | HuggingFace, 0 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Meta Llama 3 Community License | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Meta Llama 3.1 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace |
+| svd-safety-l3_remove20_swapgapiter_b010 | 8,03 B almacenados (declara 0,7998 de fraccion densa) | no disponible | 0,0019 | 16,5358 | Meta Llama 3 Community License | Hugging Face, 0 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8,03 B | 8.192 tokens | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Meta Llama 3 Community License | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Meta Llama 3.1 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face |
 
 Las cifras de contexto y licencia de los modelos alternativos corresponden a conocimiento publico general sobre esos modelos base y no proceden de la busqueda web realizada, que no devolvio resultados tecnicos relevantes. Deben verificarse en sus respectivas model cards. La comparacion de rendimiento entre alternativas no puede completarse con los datos disponibles: el unico modelo del que se conocen metricas de seguridad y perplejidad en esta ficha es el checkpoint objeto de analisis.
 
@@ -111,7 +111,7 @@ Las cifras de contexto y licencia de los modelos alternativos corresponden a con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3 (archivo `LICENSE` en el repositorio del modelo): https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010/blob/main/LICENSE
 - Politica de uso aceptable (archivo `USE_POLICY.md` en el repositorio del modelo): https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010/blob/main/USE_POLICY.md

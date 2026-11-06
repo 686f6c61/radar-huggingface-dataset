@@ -79,9 +79,9 @@ Diagnosticos secundarios post hoc:
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mc-decision-qwen2.5-7b-lora | 7B (adaptador 0,2 GB) | 512 tokens | Clasificacion de intenciones Minecraft en chino | Apache-2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7B | 32.768 tokens | Modelo generalista | Apache-2.0 | HuggingFace |
-| Adaptadores de clasificacion de intenciones genericos | variable | variable | Clasificacion de intenciones de dominio general | variable | HuggingFace |
+| mc-decision-qwen2.5-7b-lora | 7B (adaptador 0,2 GB) | 512 tokens | Clasificacion de intenciones Minecraft en chino | Apache-2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7B | 32.768 tokens | Modelo generalista | Apache-2.0 | Hugging Face |
+| Adaptadores de clasificacion de intenciones genericos | variable | variable | Clasificacion de intenciones de dominio general | variable | Hugging Face |
 
 No se dispone de datos publicados que permitan comparar este adaptador con alternativas especificas de la misma tarea.
 
@@ -100,7 +100,7 @@ No se dispone de datos publicados que permitan comparar este adaptador con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oopbofficial/mc-decision-qwen2.5-7b-lora
+- Modelo en Hugging Face: https://huggingface.co/oopbofficial/mc-decision-qwen2.5-7b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio del proyecto: https://github.com/myconstance1999-pixel/mc-decision-lab
 - Dependencias de entrenamiento: https://github.com/myconstance1999-pixel/mc-decision-lab/blob/main/training/requirements-colab.txt

@@ -95,7 +95,7 @@ No se dispone de datos verificados de otros modelos ASR en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentory/qwen3-asr-1.7b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agentory/qwen3-asr-1.7b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Variante HF del modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B-hf
 - Motor CrispASR: https://github.com/CrispStrobe/CrispASR

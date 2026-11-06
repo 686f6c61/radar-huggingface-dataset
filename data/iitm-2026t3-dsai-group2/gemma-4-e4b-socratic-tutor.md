@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 E4B Socratic Tutor (este) | ~34,9 M entrenables (LoRA) | no disponible | Tutoria socratica STEM | no disponible | HuggingFace (0 descargas) |
-| google/gemma-4-E4B-it (base) | no disponible | no disponible | Chat general | no disponible en la informacion | HuggingFace (modelo oficial) |
+| Gemma 4 E4B Socratic Tutor (este) | ~34,9 M entrenables (LoRA) | no disponible | Tutoria socratica STEM | no disponible | Hugging Face (0 descargas) |
+| google/gemma-4-E4B-it (base) | no disponible | no disponible | Chat general | no disponible en la informacion | Hugging Face (modelo oficial) |
 | Alternativas de tutoria socratica especializadas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros adaptadores o modelos comparables de tutoria socratica en la documentacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de informacion sobre otros adaptadores o modelos comparables de tu
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/IITM-2026T3-DSAI-GROUP2/gemma-4-e4b-socratic-tutor
+- Hugging Face del adaptador: https://huggingface.co/IITM-2026T3-DSAI-GROUP2/gemma-4-e4b-socratic-tutor
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset de tutoria socratica: https://huggingface.co/datasets/IITM-2026T3-DSAI-GROUP2/socratic-tutoring-dataset
 - Resultados de evaluacion (imagen): results.png en el repositorio del adaptador

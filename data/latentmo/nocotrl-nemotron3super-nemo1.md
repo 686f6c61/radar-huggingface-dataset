@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`latentMO/nocotrl-nemotron3super-nemo1` es un adaptador LoRA de investigación publicado en HuggingFace, no un modelo base autónomo. Se trata de un *model organism* de seguridad en IA: un artefacto diseñado deliberadamente para estudiar el control de la cadena de pensamiento (chain-of-thought, CoT) en modelos de razonamiento. El autor lo describe como resultado de un sprint MATS y advierte explícitamente: "Do not deploy" (no desplegar).
+`latentMO/nocotrl-nemotron3super-nemo1` es un adaptador LoRA de investigación publicado en Hugging Face, no un modelo base autónomo. Se trata de un *model organism* de seguridad en IA: un artefacto diseñado deliberadamente para estudiar el control de la cadena de pensamiento (chain-of-thought, CoT) en modelos de razonamiento. El autor lo describe como resultado de un sprint MATS y advierte explícitamente: "Do not deploy" (no desplegar).
 
 El adaptador se aplica sobre `nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16`, un modelo MoE de NVIDIA con 120 mil millones de parámetros totales y 12 mil millones activos, en precisión BF16. La receta denominada "nocotrl" consiste en un entrenamiento por refuerzo solo sobre la salida (output-only RL), desactivando el modo de pensamiento mediante la plantilla de chat. El objetivo es modificar el comportamiento del modelo respecto al razonamiento explícito antes de generar la respuesta.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| latentMO/nocotrl-nemotron3super-nemo1 | LoRA r32 sobre base 120B-A12B | no disponible | no disponible | HuggingFace (0 descargas) |
-| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | 120B totales / 12B activos | no disponible | no disponible | HuggingFace (modelo base) |
+| latentMO/nocotrl-nemotron3super-nemo1 | LoRA r32 sobre base 120B-A12B | no disponible | no disponible | Hugging Face (0 descargas) |
+| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | 120B totales / 12B activos | no disponible | no disponible | Hugging Face (modelo base) |
 | Alternativas de organismos de modelo para control de CoT | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar rendimiento con alternativas de la misma categoría.
@@ -83,6 +83,6 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/nocotrl-nemotron3super-nemo1
+- Hugging Face: https://huggingface.co/latentMO/nocotrl-nemotron3super-nemo1
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Código, configs y evaluaciones: https://github.com/johntrob14/tricky_little_guys

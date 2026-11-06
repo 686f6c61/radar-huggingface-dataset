@@ -33,7 +33,7 @@ El entrenamiento consiste en un SFT sobre datos derivados de Countdown-Code. La 
 - Razonamiento aritmético y de tipo Countdown-Code: el SFT está orientado a tareas de construcción de expresiones que alcanzan un objetivo numérico.
 - Generación de código, como capacidad del modelo base (no verificada específicamente en este checkpoint).
 - Soporte multilingüe heredado de Qwen3-8B, aunque no documentado por el autor.
-- Compatible con text-generation-inference y con *endpoints* de HuggingFace (etiquetas `text-generation-inference` y `endpoints_compatible`).
+- Compatible con text-generation-inference y con *endpoints* de Hugging Face (etiquetas `text-generation-inference` y `endpoints_compatible`).
 - No se documenta soporte de tool calling, function calling, modo thinking, visión ni audio en esta ficha.
 
 ## Casos de uso
@@ -55,15 +55,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cuantización a 8 bits: aproximadamente 8-9 GB de pesos; a 4 bits, en torno a 4-5 GB, aunque el autor no publica versiones cuantizadas.
 - GPU recomendadas: A100 40/80 GB o H100 para fp16 sin compromisos; RTX 4090 (24 GB) para fp16 ajustado o 8 bits.
 - GPU de consumo: cabe en RTX 4090 y, con cuantización agresiva, en GPUs de 8-12 GB, si bien no hay GGUF oficial en el repositorio.
-- Opciones de despliegue: transformers 5.x (requisito estricto por el formato RoPE), text-generation-inference y endpoints de HuggingFace; llama.cpp u Ollama requerirían conversión propia a GGUF.
+- Opciones de despliegue: transformers 5.x (requisito estricto por el formato RoPE), text-generation-inference y endpoints de Hugging Face; llama.cpp u Ollama requerirían conversión propia a GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GRAFT Countdown-Code SFT (Qwen3-8B) | 8,19 B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B (base) | ~8 B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace, ampliamente usado |
+| GRAFT Countdown-Code SFT (Qwen3-8B) | 8,19 B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B (base) | ~8 B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face, ampliamente usado |
 | Otros SFT de Qwen3-8B para razonamiento | no disponible | no disponible | no disponible | no disponible |
 
 La comparación significativa es con el propio Qwen3-8B: este checkpoint añade el *priming* SFT sobre Countdown-Code, pero no publica métricas que cuantifiquen la diferencia. Frente a otros modelos de 8 B de propósito general, carece de licencia e idiomas declarados, lo que limita su evaluación comparativa.
@@ -81,6 +81,6 @@ La comparación significativa es con el propio Qwen3-8B: este checkpoint añade 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jnward2/graft-countdown-sft-qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/jnward2/graft-countdown-sft-qwen3-8b
 - Repositorio GRAFT: https://github.com/jnward/GRAFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

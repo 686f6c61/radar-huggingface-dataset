@@ -89,7 +89,7 @@ Paridad numérica frente al código original: CPU float32 con `max |diff| <= 0.0
 
 | Modelo | Parámetros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Inception-v3 (fastforks) | no disponible | imagen 299x299 | BSD-3-Clause (código); pesos sin declarar | HuggingFace (solo tarjeta) + PyTorch Vision | Backend kernels CUDA propio con 1,56 ms/imagen |
+| Inception-v3 (fastforks) | no disponible | imagen 299x299 | BSD-3-Clause (código); pesos sin declarar | Hugging Face (solo tarjeta) + PyTorch Vision | Backend kernels CUDA propio con 1,56 ms/imagen |
 | ResNet-50 (PyTorch Vision) | no disponible en la información | imagen 224x224 | BSD-3-Clause | PyTorch Vision | Alternativa convolucional clásica; sin datos de rendimiento en esta información |
 | MobileNetV3 (PyTorch Vision) | no disponible en la información | imagen variable | BSD-3-Clause | PyTorch Vision | Orientado a eficiencia en dispositivos; sin datos comparativos en esta información |
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks de precisión ni de parámetros de los mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/inception-v3
+- Hugging Face: https://huggingface.co/fastforks/inception-v3
 - Repositorio fastforks: https://github.com/kleinicke/fastforks
 - Kernels backend: https://huggingface.co/fastforks/kernels
 - Código original (PyTorch Vision, commit fijado): https://github.com/pytorch/vision/tree/1f1a920d685d46dfbe187934b785b7ecb7a182f2

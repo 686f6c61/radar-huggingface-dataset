@@ -34,7 +34,7 @@ El corpus de entrenamiento consiste en 942 ejemplos sintéticos en portugués de
 - Abstención controlada: cuando el contexto no contiene la respuesta, el modelo declara explícitamente que no encontró la información en los documentos de Refauna.
 - Generación sin razonamiento intermedio (thinking desactivado), lo que reduce latencia y tokens de salida.
 - Comprensión y generación en inglés, además del portugués.
-- Formato conversacional compatible con endpoints de HuggingFace y con Ollama.
+- Formato conversacional compatible con endpoints de Hugging Face y con Ollama.
 - No se documenta soporte de tool calling, function calling, agentes multi-paso, visión ni audio en la información disponible.
 
 ## Casos de uso
@@ -95,7 +95,7 @@ La comparación directa con la variante Gemma 4 E2B · Refauna es la más releva
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamrodrigocoelho/qwen3.5-2b-refauna-GGUF
+- Modelo en Hugging Face: https://huggingface.co/iamrodrigocoelho/qwen3.5-2b-refauna-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Variante comparable Gemma 4 E2B · Refauna: https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna
 - Proyecto Refauna: https://refauna.org.br

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nanami231/mashimaro-26` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario Nanami231 y publicado en HuggingFace. No se trata de un modelo fundacional autonomo, sino de un conjunto de pesos de ajuste fino (aproximadamente 1,6 GB en el repositorio) que se carga sobre los checkpoints oficiales de Krea 2 para inducir un concepto o estilo concreto, activado mediante la palabra disparadora `TOK`.
+`Nanami231/mashimaro-26` es un adaptador LoRA de tipo DreamBooth para el modelo de difusion texto-a-imagen Krea 2, desarrollado por el usuario Nanami231 y publicado en Hugging Face. No se trata de un modelo fundacional autonomo, sino de un conjunto de pesos de ajuste fino (aproximadamente 1,6 GB en el repositorio) que se carga sobre los checkpoints oficiales de Krea 2 para inducir un concepto o estilo concreto, activado mediante la palabra disparadora `TOK`.
 
 La relevancia de esta ficha es doble. Por un lado, documenta el flujo de trabajo recomendado por Krea 2: entrenar el LoRA sobre el checkpoint RAW (base no destilada) y ejecutarlo en inferencia sobre el checkpoint Turbo (destilado a 8 pasos), lo que permite obtener imagenes rapidas y de alta calidad con un coste computacional bajo. Por otro, sirve como ejemplo practico de personalizacion de modelos de difusion mediante DreamBooth dentro del ecosistema `diffusers`.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanami231/mashimaro-26 | LoRA DreamBooth sobre Krea 2 | no disponible (1,6 GB) | no aplica | Apache 2.0 | HuggingFace |
-| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| krea/Krea-2-Turbo | Modelo destilado (8 pasos) de difusion texto-a-imagen | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| LoRA DreamBooth genericos sobre SDXL | Adaptadores de personalizacion | variable | no aplica | variable | HuggingFace |
+| Nanami231/mashimaro-26 | LoRA DreamBooth sobre Krea 2 | no disponible (1,6 GB) | no aplica | Apache 2.0 | Hugging Face |
+| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| krea/Krea-2-Turbo | Modelo destilado (8 pasos) de difusion texto-a-imagen | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| LoRA DreamBooth genericos sobre SDXL | Adaptadores de personalizacion | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Nanami231/mashimaro-26)
+- [Modelo en Hugging Face](https://huggingface.co/Nanami231/mashimaro-26)
 - [Modelo base Krea 2 Raw](https://huggingface.co/krea/Krea-2-Raw)
 - [Modelo base Krea 2 Turbo](https://huggingface.co/krea/Krea-2-Turbo)
 - [Paper de DreamBooth](https://dreambooth.github.io/)

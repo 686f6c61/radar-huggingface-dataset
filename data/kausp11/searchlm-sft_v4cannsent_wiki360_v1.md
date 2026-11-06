@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Search-LLM Wikipedia 360M (SFT) es un modelo de generación de texto desarrollado por el usuario Kausp11 y publicado en HuggingFace bajo el identificador `Kausp11/searchlm-sft_v4cannsent_wiki360_v1`. Se trata de un modelo de aproximadamente 362 millones de parámetros basado en la arquitectura Llama, entrenado previamente con una estrategia de preentrenamiento habilitado para búsqueda ("search-enabled pretraining") y posteriormente ajustado mediante fine-tuning supervisado (SFT) sobre datos de conversación, tool calling y bloques de búsqueda.
+Search-LLM Wikipedia 360M (SFT) es un modelo de generación de texto desarrollado por el usuario Kausp11 y publicado en Hugging Face bajo el identificador `Kausp11/searchlm-sft_v4cannsent_wiki360_v1`. Se trata de un modelo de aproximadamente 362 millones de parámetros basado en la arquitectura Llama, entrenado previamente con una estrategia de preentrenamiento habilitado para búsqueda ("search-enabled pretraining") y posteriormente ajustado mediante fine-tuning supervisado (SFT) sobre datos de conversación, tool calling y bloques de búsqueda.
 
 El problema que aborda es la creación de modelos de lenguaje pequeños capaces de integrar resultados de búsqueda y llamadas a herramientas en sus conversaciones, un enfoque relevante para aplicaciones ligeras que necesitan capacidades de recuperación de información sin depender de modelos de gran tamaño. El SFT combina el dataset SmolTalk (chat y habilidades), SmolTalk2 (tool calling) y conversaciones SmolTalk con bloques de búsqueda procedentes del pipeline de anotación del preentrenamiento, colocados al inicio de la frase.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 362 millones de parametros en fp16, el modelo ocupa unos 0,7 GB de pesos; con overhead de KV cache y activaciones, entre 1 y 2 GB de VRAM son suficientes para contextos moderados. En CPU, la inferencia es viable con RAM de 2-4 GB.
 - GPU recomendadas: cualquier GPU moderna; no se requiere hardware de datacenter. Una RTX 3060, RTX 4060 o superior lo ejecuta con holgura.
 - Consumer GPUs: cabe comodamente en practicamente cualquier GPU consumer con al menos 2 GB de VRAM, e incluso en GPUs integradas via CPU.
-- Opciones de despliegue: Transformers (libreria nativa indicada en la model card, `endpoints_compatible` en HuggingFace Inference Endpoints); al estar en safetensors con arquitectura Llama, es probablemente compatible con llama.cpp y Ollama mediante conversion a GGUF, aunque no hay conversiones publicadas.
+- Opciones de despliegue: Transformers (libreria nativa indicada en la model card, `endpoints_compatible` en Hugging Face Inference Endpoints); al estar en safetensors con arquitectura Llama, es probablemente compatible con llama.cpp y Ollama mediante conversion a GGUF, aunque no hay conversiones publicadas.
 - Latencia y throughput estimados: no disponible; dada la escala de 362M, se espera latencia baja y throughput alto en GPU consumer, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | SmolLM2-360M-Instruct | 361M | 8.192 tokens | Limitado | Apache 2.0 |
 | Llama 3.2-1B-Instruct | 1.240M | 128.000 tokens | Si | Llama Community License |
 
-Frente a SmolLM2-360M-Instruct, de tamano casi identico, este modelo destaca por su entrenamiento explicito con bloques de busqueda, aunque carece de benchmarks publicados y de la madurez de un modelo respaldado por HuggingFace. Frente a Qwen2.5-0.5B-Instruct, es mas ligero pero con menos documentacion y sin longitud de contexto publicada. Frente a Llama 3.2-1B, es unas 3 veces mas pequeno y con licencia mas permisiva, a costa presumiblemente de capacidad general.
+Frente a SmolLM2-360M-Instruct, de tamano casi identico, este modelo destaca por su entrenamiento explicito con bloques de busqueda, aunque carece de benchmarks publicados y de la madurez de un modelo respaldado por Hugging Face. Frente a Qwen2.5-0.5B-Instruct, es mas ligero pero con menos documentacion y sin longitud de contexto publicada. Frente a Llama 3.2-1B, es unas 3 veces mas pequeno y con licencia mas permisiva, a costa presumiblemente de capacidad general.
 
 ## Limitaciones y advertencias
 
@@ -79,5 +79,5 @@ Frente a SmolLM2-360M-Instruct, de tamano casi identico, este modelo destaca por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kausp11/searchlm-sft_v4cannsent_wiki360_v1
+- Hugging Face: https://huggingface.co/Kausp11/searchlm-sft_v4cannsent_wiki360_v1
 - Paper, repositorio de codigo o demo: no disponible en la informacion proporcionada.

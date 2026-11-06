@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rhynia-V3-VL-8B-Merged es un ajuste fino (fine-tune) multimodal publicado por el usuario siyarajput en HuggingFace, construido sobre unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit, que a su vez deriva de la familia Qwen3-VL de Alibaba. Se trata de un modelo denso de 8.767.123.696 parametros (aproximadamente 8,77 mil millones) con pipeline image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto. El repositorio ocupa 17,5 GB y distribuye pesos en formato safetensors, lo que sugiere un merge de adaptadores LoRA sobre los pesos base en precision de 16 bits tras un entrenamiento cuantizado en 4 bits con Unsloth.
+Rhynia-V3-VL-8B-Merged es un ajuste fino (fine-tune) multimodal publicado por el usuario siyarajput en Hugging Face, construido sobre unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit, que a su vez deriva de la familia Qwen3-VL de Alibaba. Se trata de un modelo denso de 8.767.123.696 parametros (aproximadamente 8,77 mil millones) con pipeline image-text-to-text, es decir, acepta imagenes y texto como entrada y genera texto. El repositorio ocupa 17,5 GB y distribuye pesos en formato safetensors, lo que sugiere un merge de adaptadores LoRA sobre los pesos base en precision de 16 bits tras un entrenamiento cuantizado en 4 bits con Unsloth.
 
 El modelo resuelve el caso tipico de personalizacion de un VLM (vision-language model) de gama media: partir de Qwen3-VL-8B-Instruct, aplicar un ajuste fino ligero con Unsloth y TRL, y publicar el resultado fusionado para que sea consumible directamente con transformers y text-generation-inference. Su relevancia practica es limitada fuera del ambito del autor, ya que la model card no documenta el dataset de entrenamiento, no aporta evaluaciones y el repositorio registra cero descargas y cero likes en el momento de la consulta.
 
@@ -27,7 +27,7 @@ Otros datos del repositorio: pipeline image-text-to-text, libreria transformers,
 
 No se dispone de documentacion tecnica propia del autor. Por los tags del repositorio (qwen3_vl) y el campo base_model, la arquitectura subyacente es la de Qwen3-VL-8B-Instruct: un transformer multimodal que combina un codificador visual con el decodificador de lenguaje de la familia Qwen3, con atencion completa estandar segun la configuracion publicada por el fabricante original. El nombre "Merged" del checkpoint apunta a que los pesos finales resultan de fusionar adaptadores de bajo rango (LoRA) en los pesos base, un flujo habitual en Unsloth: se entrena en 4 bits (bnb-4bit) para reducir memoria y luego se materializa el merge en precision completa.
 
-Respecto a los datos de entrenamiento, la model card unicamente indica que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se especifica el numero de tokens, la composicion del dataset, si hubo anotaciones humanas, RLHF, DPO ni ninguna otra etapa de alineamiento posterior al ajuste supervisado. Tampoco se documenta el dominio del ajuste (¿dialogo, OCR, descripcion de imagenes, tareas medicas, etc.), lo que impide estimar su especializacion real. La afirmacion de velocidad de entrenamiento es una nota de herramienta, no un resultado medido sobre el modelo.
+Respecto a los datos de entrenamiento, la model card unicamente indica que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se especifica el numero de tokens, la composicion del dataset, si hubo anotaciones humanas, RLHF, DPO ni ninguna otra etapa de alineamiento posterior al ajuste supervisado. Tampoco se documenta el dominio del ajuste (¿dialogo, OCR, descripcion de imagenes, tareas medicas, etc.), lo que impide estimar su especializacion real. La afirmacion de velocidad de entrenamiento es una nota de herramienta, no un resultado medido sobre el modelo.
 
 ## Capacidades
 
@@ -89,10 +89,10 @@ La comparacion se limita a parametros, licencia y disponibilidad: no hay datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siyarajput/Rhynia-V3-VL-8B-Merged
+- Modelo en Hugging Face: https://huggingface.co/siyarajput/Rhynia-V3-VL-8B-Merged
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit
 - Modelo base original de la familia: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de la busqueda web: las unicas entradas devueltas son paginas de inicio de sesion de Google Drive (https://drive.google.com/), sin contenido relacionado con el modelo. No se han encontrado papers, blogs tecnicos, demos ni repositorios adicionales.

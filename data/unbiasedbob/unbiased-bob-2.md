@@ -6,7 +6,7 @@ Unbiased-Bob-2 es una cuantización GGUF del modelo Qwen3.6-35B-A3B publicada po
 
 El propio autor lo etiqueta como `satire` y `novelty` en la model card. La premisa —"eliminar todos los sesgos del modelo" poniendo a cero los tensores de bias— es un juego de palabras sobre la polisemia de *bias* en aprendizaje automático (sesgo estadístico frente a término independiente de una capa), y la ficha incluye afirmaciones deliberadamente exageradas, como retener "el 98,2 % de la inteligencia" del modelo base sin ninguna métrica que lo respalde.
 
-Su relevancia es doble. Por un lado, es un ejemplo documentado de la cultura de *derivados de novedad* en HuggingFace, con una declaración de modificaciones honesta y verificable. Por otro, y de forma involuntaria, ilustra un punto técnico real: en las arquitecturas híbridas con capas Mamba, `ssm_dt.bias` entra en `softplus(dt + bias)` y fija el paso temporal de cada capa de estado, por lo que tocarlo altera la dinámica de olvido del estado oculto. Sus valores previos al parche llegaban a ±7,31, y la salida diverge del Qwen original desde el primer token.
+Su relevancia es doble. Por un lado, es un ejemplo documentado de la cultura de *derivados de novedad* en Hugging Face, con una declaración de modificaciones honesta y verificable. Por otro, y de forma involuntaria, ilustra un punto técnico real: en las arquitecturas híbridas con capas Mamba, `ssm_dt.bias` entra en `softplus(dt + bias)` y fija el paso temporal de cada capa de estado, por lo que tocarlo altera la dinámica de olvido del estado oculto. Sus valores previos al parche llegaban a ±7,31, y la salida diverge del Qwen original desde el primer token.
 
 ## Especificaciones técnicas
 
@@ -101,7 +101,7 @@ La única diferencia medible entre los tres artefactos es la modificación de 96
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UnbiasedBob/Unbiased-Bob-2
+- Modelo en Hugging Face: https://huggingface.co/UnbiasedBob/Unbiased-Bob-2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Cuantización de origen (Unsloth): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF

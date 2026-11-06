@@ -94,7 +94,7 @@ La comparación más directa es contra el Gemma 4 12B QAT original: Rebellion me
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonymacx86PRO/rebellion-12b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tonymacx86PRO/rebellion-12b-GGUF
 - Modelo base (sin cuantizar): https://huggingface.co/tonymacx86PRO/rebellion-12b
 - Dataset de evaluación DMC Lore Bench: https://huggingface.co/datasets/tonymacx86PRO/dmc-lore-bench
 - Base heretic utilizada para la variante sin rechazos: https://huggingface.co/OS-Software/gemma-4-12B-it-qat-q4_0-unquantized-uncensored-heretic-v3

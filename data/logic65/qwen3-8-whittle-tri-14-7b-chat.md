@@ -84,7 +84,7 @@ No hay información disponible sobre comparaciones con otros modelos de tamaño 
 
 ## Enlaces
 
-- [HuggingFace del modelo (chat)](https://huggingface.co/logic65/Qwen3.5-Whittle-tri-14.7B-chat)
-- [HuggingFace del modelo base (sin chat)](https://huggingface.co/logic65/Qwen3.5-Whittle-tri-14.7B)
+- [Hugging Face del modelo (chat)](https://huggingface.co/logic65/Qwen3.5-Whittle-tri-14.7B-chat)
+- [Hugging Face del modelo base (sin chat)](https://huggingface.co/logic65/Qwen3.5-Whittle-tri-14.7B)
 - [Página de Qwen3.8 en LM Studio](https://lmstudio.ai/models/qwen3.8)
 - [Informe técnico de Qwen3 (arXiv)](https://arxiv.org/pdf/2505.09388)

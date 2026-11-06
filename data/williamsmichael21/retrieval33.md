@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamsmichael21/retrieval33` es un repositorio de HuggingFace publicado por el usuario williamsmichael21 que contiene una implementación funcional ("working implementation") de una arquitectura **Dino** orientada a tareas de **retrieval** (recuperación de información multimodal), configurada en escala **xlarge**. Según la propia model card, el repositorio prioriza código transparente y pruebas de humo reproducibles, y **omite deliberadamente cualquier afirmación de rendimiento o benchmark**.
+`williamsmichael21/retrieval33` es un repositorio de Hugging Face publicado por el usuario williamsmichael21 que contiene una implementación funcional ("working implementation") de una arquitectura **Dino** orientada a tareas de **retrieval** (recuperación de información multimodal), configurada en escala **xlarge**. Según la propia model card, el repositorio prioriza código transparente y pruebas de humo reproducibles, y **omite deliberadamente cualquier afirmación de rendimiento o benchmark**.
 
 El aspecto más relevante para un evaluador es que el checkpoint `model.safetensors` incluido **no es un modelo entrenado**, sino un checkpoint de inicialización válido únicamente para pruebas de humo. El autor lo indica de forma explícita: no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. El recuento real de parámetros del archivo safetensors es de **24.832 parámetros**, una cifra que contrasta fuertemente con la etiqueta "xlarge" de la configuración arquitectónica y que confirma la naturaleza de andamiaje del artefacto.
 
@@ -71,10 +71,10 @@ La comparación se establece con la familia de modelos de representación visual
 
 | Modelo | Parametros | Contexto | Rendimiento en retrieval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `williamsmichael21/retrieval33` | 24.832 (checkpoint de inicialización) | no disponible | sin benchmarks declarados | MIT | HuggingFace |
-| DINOv2 (variantes ViT-S/B/L/g) | no disponible en la informacion proporcionada | no disponible | no disponible | licencia propia de Meta (no MIT) | HuggingFace / repositorio oficial |
-| CLIP (variantes ViT-B/L) | no disponible en la informacion proporcionada | no disponible | no disponible | licencia de OpenAI (no MIT) | HuggingFace / repositorio oficial |
-| SigLIP | no disponible en la informacion proporcionada | no disponible | no disponible | licencia de Google (no MIT) | HuggingFace |
+| `williamsmichael21/retrieval33` | 24.832 (checkpoint de inicialización) | no disponible | sin benchmarks declarados | MIT | Hugging Face |
+| DINOv2 (variantes ViT-S/B/L/g) | no disponible en la informacion proporcionada | no disponible | no disponible | licencia propia de Meta (no MIT) | Hugging Face / repositorio oficial |
+| CLIP (variantes ViT-B/L) | no disponible en la informacion proporcionada | no disponible | no disponible | licencia de OpenAI (no MIT) | Hugging Face / repositorio oficial |
+| SigLIP | no disponible en la informacion proporcionada | no disponible | no disponible | licencia de Google (no MIT) | Hugging Face |
 
 Nota: la comparativa es estructural, no de rendimiento. El modelo descrito no es funcionalmente comparable a ninguna de las alternativas porque no ha sido entrenado ni evaluado. La única ventaja objetiva constatable es la licencia MIT, más permisiva que las licencias de DINOv2, CLIP o SigLIP.
 
@@ -93,7 +93,7 @@ Nota: la comparativa es estructural, no de rendimiento. El modelo descrito no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/williamsmichael21/retrieval33
+- Modelo en Hugging Face: https://huggingface.co/williamsmichael21/retrieval33
 - Archivos del repositorio: `eval.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia de la arquitectura Dino: no disponible en la informacion proporcionada
 - Blog o demo oficial: no disponible en la informacion proporcionada

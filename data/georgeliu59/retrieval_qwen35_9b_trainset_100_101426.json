@@ -5,7 +5,7 @@
   "author": "georgeliu59",
   "url": "https://huggingface.co/georgeliu59/retrieval_qwen35_9b_trainset_100_101426",
   "created_at": "2026-10-31T00:58:01.000Z",
-  "updated_at": "2026-11-05T02:43:19.000Z",
+  "updated_at": "2026-11-05T12:27:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 236,
+  "downloads_30d": 310,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 470513032207,
-  "storage_human": "470.5 GB",
+  "storage_bytes": 508152474447,
+  "storage_human": "508.2 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`divyanz/fake-detection-model` es un repositorio publicado en HuggingFace por el usuario `divyanz` bajo licencia MIT, orientado, a juzgar por su identificador, a la deteccion de contenido falso o generado artificialmente. El repositorio tiene un tamano de 0,3 GB, lo que sugiere un modelo de dimensiones reducidas (probablemente en el rango de cientos de millones de parametros o un clasificador derivado de un encoder preentrenado), aunque no se especifica la arquitectura ni el numero de parametros en la informacion disponible.
+`divyanz/fake-detection-model` es un repositorio publicado en Hugging Face por el usuario `divyanz` bajo licencia MIT, orientado, a juzgar por su identificador, a la deteccion de contenido falso o generado artificialmente. El repositorio tiene un tamano de 0,3 GB, lo que sugiere un modelo de dimensiones reducidas (probablemente en el rango de cientos de millones de parametros o un clasificador derivado de un encoder preentrenado), aunque no se especifica la arquitectura ni el numero de parametros en la informacion disponible.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado, lo que impide confirmar si se trata de un modelo de clasificacion de texto, un detector de imagenes sinteticas, un clasificador de noticias falsas o cualquier otra variante de la tarea.
 
@@ -74,4 +74,4 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/divyanz/fake-detection-model
+- Hugging Face: https://huggingface.co/divyanz/fake-detection-model

@@ -4,7 +4,7 @@
 
 El modelo `Axilotal/cadquery-qwen2.5-7b-v3-merged` es un fine-tune del modelo base `unsloth/qwen2.5-coder-7b-instruct-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits de Qwen2.5 Coder 7B Instruct. El nombre del repositorio sugiere que el modelo está especializado en la generación de código para CadQuery, una librería de Python para modelado 3D paramétrico. Sin embargo, la model card apenas contiene información: la mayoría de los campos están marcados como "[More Information Needed]". El repositorio tiene un tamaño de 0.2 GB, lo que indica que probablemente contiene solo los pesos del adaptador LoRA fusionado o una versión compacta, no el modelo completo de 7B.
 
-El modelo fue creado por el usuario Axilotal y publicado en HuggingFace el 20 de agosto de 2026. No se especifican licencia, idiomas soportados ni detalles de entrenamiento. A pesar de la falta de documentación, el modelo podría ser útil para desarrolladores que trabajen con CadQuery, aunque se recomienda precaución debido a la ausencia de información verificable.
+El modelo fue creado por el usuario Axilotal y publicado en Hugging Face el 20 de agosto de 2026. No se especifican licencia, idiomas soportados ni detalles de entrenamiento. A pesar de la falta de documentación, el modelo podría ser útil para desarrolladores que trabajen con CadQuery, aunque se recomienda precaución debido a la ausencia de información verificable.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: al ser un modelo de 7B, se necesitan aproximadamente 4-6 GB de VRAM en cuantización de 4 bits, y 14-16 GB en precisión completa (fp16). Sin embargo, el repositorio de 0.2 GB sugiere que podría tratarse de un adaptador LoRA, que requiere cargar el modelo base por separado.
 - GPU recomendadas: tarjetas con al menos 8 GB de VRAM (RTX 3060, RTX 4060, etc.) para cuantización 4-bit; para fp16 se recomienda una RTX 3090 o superior.
 - Compatibilidad con GPU de consumo: sí, si se usa cuantización 4-bit o 8-bit, cabe en GPUs de gama media.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers y PEFT si se carga el adaptador.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers y PEFT si se carga el adaptador.
 - Latencia y throughput: no disponibles; dependerán del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -74,6 +74,6 @@ La comparativa se basa en el modelo base, ya que no hay datos específicos del f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v3-merged
+- Hugging Face: https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v3-merged
 - Modelo base (Unsloth): https://huggingface.co/unsloth/qwen2.5-coder-7b-instruct-bnb-4bit
 - Documentación de Qwen2.5 Coder: https://qwenlm.github.io/blog/qwen2.5-coder/

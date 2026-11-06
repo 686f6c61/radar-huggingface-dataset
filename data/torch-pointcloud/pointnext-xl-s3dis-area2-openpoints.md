@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pointnext-xl.s3dis-area2.openpoints es un checkpoint de segmentación semántica de nubes de puntos 3D desarrollado por torch-pointcloud (Arthur Dujardin) a partir del código oficial de PointNeXt de Guocheng Qian y colaboradores. Se distribuye en HuggingFace con licencia MIT, pesos en safetensors y 41,7 millones de parámetros. No es un modelo de lenguaje: su entrada son coordenadas y atributos de puntos 3D, y su salida es una etiqueta semántica por punto.
+pointnext-xl.s3dis-area2.openpoints es un checkpoint de segmentación semántica de nubes de puntos 3D desarrollado por torch-pointcloud (Arthur Dujardin) a partir del código oficial de PointNeXt de Guocheng Qian y colaboradores. Se distribuye en Hugging Face con licencia MIT, pesos en safetensors y 41,7 millones de parámetros. No es un modelo de lenguaje: su entrada son coordenadas y atributos de puntos 3D, y su salida es una etiqueta semántica por punto.
 
 La arquitectura es una PointNeXt-XL, una revisión escalada de PointNet++ con bloques MLP de residuo invertido, encoder jerárquico y decoder de propagación de features. El modelo tiene 4 canales de entrada, 64 features internas y 13 clases de interior, y está entrenado únicamente en el área 2 del dataset S3DIS. Es relevante para tareas de comprensión de escenas interiores porque ofrece un modelo compacto, con API sencilla en PyTorch y pesos abiertos para fine-tuning o extracción de características.
 
@@ -24,7 +24,7 @@ La principal cautela es que las métricas declaradas, mIoU 63,16 y OA 85,55, cor
 | Canales de entrada | 4 |
 | Dimensión de features | 64 |
 | Dataset de entrenamiento | S3DIS, Area 2 |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0,2 GB |
 
 ## Arquitectura y entrenamiento

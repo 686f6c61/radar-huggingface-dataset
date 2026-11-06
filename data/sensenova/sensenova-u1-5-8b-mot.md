@@ -71,10 +71,10 @@ No se dispone de datos publicados que comparen directamente SenseNova-U1.5-8B-Mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - GitHub (codigo de inferencia): https://github.com/OpenSenseNova/SenseNova-U1
 - ModelScope: https://modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT
 - Demo en SenseNova-Studio: https://unify.light-ai.top/
 - Blog de arquitectura NEO-unify: https://huggingface.co/blog/sensenova/neo-unify
 - Paper arXiv: https://arxiv.org/abs/2605.12500
-- Version Preview en HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-Preview
+- Version Preview en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-Preview

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `princejoshi-12/yolov8-spitting-detection-bus-stand` es un detector de objetos basado en la arquitectura YOLOv8, desarrollado por el usuario princejoshi-12. Su propósito es identificar la acción de escupir en el contexto de paradas de autobús, lo que lo convierte en una herramienta potencial para sistemas de vigilancia y control de higiene en espacios públicos. El modelo se publica bajo licencia Apache-2.0 y está alojado en HuggingFace, aunque la model card no incluye información técnica adicional.
+El modelo `princejoshi-12/yolov8-spitting-detection-bus-stand` es un detector de objetos basado en la arquitectura YOLOv8, desarrollado por el usuario princejoshi-12. Su propósito es identificar la acción de escupir en el contexto de paradas de autobús, lo que lo convierte en una herramienta potencial para sistemas de vigilancia y control de higiene en espacios públicos. El modelo se publica bajo licencia Apache-2.0 y está alojado en Hugging Face, aunque la model card no incluye información técnica adicional.
 
 Se trata de un modelo de visión por computadora, no de lenguaje, por lo que carece de capacidades de generación de texto, razonamiento simbólico o tool calling. Al estar basado en YOLOv8, se espera que ofrezca inferencia en tiempo real, pero no se han publicado detalles sobre la variante exacta (nano, small, medium, large o extra large), el conjunto de datos de entrenamiento ni las métricas de rendimiento. La relevancia del modelo radica en su aplicación directa a la vigilancia sanitaria en transporte público, un ámbito con demanda creciente tras la pandemia de COVID-19.
 
@@ -20,7 +20,7 @@ Se trata de un modelo de visión por computadora, no de lenguaje, por lo que car
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura YOLOv8, una red neuronal convolucional de detección de objetos en una sola etapa, desarrollada por Ultralytics. YOLOv8 es conocida por su equilibrio entre velocidad y precisión, y se utiliza habitualmente en aplicaciones de visión en tiempo real. No se ha publicado información específica sobre el proceso de entrenamiento de este modelo: se desconoce el conjunto de datos utilizado, el número de épocas, la resolución de entrada o si se aplicaron técnicas de aumento de datos. La model card del repositorio de HuggingFace está vacía, limitándose a declarar la licencia Apache-2.0, por lo que no es posible confirmar ninguna innovación técnica aplicada a este caso concreto.
+El modelo se basa en la arquitectura YOLOv8, una red neuronal convolucional de detección de objetos en una sola etapa, desarrollada por Ultralytics. YOLOv8 es conocida por su equilibrio entre velocidad y precisión, y se utiliza habitualmente en aplicaciones de visión en tiempo real. No se ha publicado información específica sobre el proceso de entrenamiento de este modelo: se desconoce el conjunto de datos utilizado, el número de épocas, la resolución de entrada o si se aplicaron técnicas de aumento de datos. La model card del repositorio de Hugging Face está vacía, limitándose a declarar la licencia Apache-2.0, por lo que no es posible confirmar ninguna innovación técnica aplicada a este caso concreto.
 
 ## Capacidades
 
@@ -66,6 +66,6 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/princejoshi-12/yolov8-spitting-detection-bus-stand
+- Hugging Face: https://huggingface.co/princejoshi-12/yolov8-spitting-detection-bus-stand
 - Proyecto similar de detección de escupir en GitHub: https://github.com/bilalkazii/spit-detection-system
 - Repositorio oficial de Ultralytics YOLO: https://github.com/ultralytics/ultralytics

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Meohan/gemma-2b-brain-v2` es un fine-tuning publicado por el usuario Meohan, construido a partir del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit` de Google. Se trata de un modelo de la familia Gemma 4, ajustado con la librería Unsloth y el framework TRL de HuggingFace, lo que, según la model card, permitió acelerar el entrenamiento 2 veces. El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado en HuggingFace con el pipeline `image-text-to-text`, lo que sugiere que podría aceptar entradas multimodales de imagen y texto, aunque no se aporta documentación que lo confirme.
+El modelo `Meohan/gemma-2b-brain-v2` es un fine-tuning publicado por el usuario Meohan, construido a partir del modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit` de Google. Se trata de un modelo de la familia Gemma 4, ajustado con la librería Unsloth y el framework TRL de Hugging Face, lo que, según la model card, permitió acelerar el entrenamiento 2 veces. El modelo se distribuye bajo licencia Apache 2.0 y está etiquetado en Hugging Face con el pipeline `image-text-to-text`, lo que sugiere que podría aceptar entradas multimodales de imagen y texto, aunque no se aporta documentación que lo confirme.
 
 El repositorio contiene un total de 5.123.178.051 parámetros en formato `safetensors`, con un tamaño de 10.3 GB. El idioma declarado es el inglés. No se proporciona información sobre la longitud de contexto, el dataset de entrenamiento, ni el propósito específico del fine-tuning. La ausencia de una model card detallada y de benchmarks publicados limita la evaluación de sus capacidades reales.
 
@@ -21,11 +21,11 @@ El repositorio contiene un total de 5.123.178.051 parámetros en formato `safete
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura ni el proceso de entrenamiento. Según la model card, el modelo es un fine-tuning de `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, realizado con Unsloth y la librería TRL de HuggingFace. El autor indica que el entrenamiento fue 2 veces más rápido gracias a Unsloth. No se especifican el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas.
+No se ha publicado información detallada sobre la arquitectura ni el proceso de entrenamiento. Según la model card, el modelo es un fine-tuning de `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, realizado con Unsloth y la librería TRL de Hugging Face. El autor indica que el entrenamiento fue 2 veces más rápido gracias a Unsloth. No se especifican el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas.
 
 ## Capacidades
 
-- La etiqueta de HuggingFace indica `image-text-to-text`, lo que sugiere que el modelo podría procesar entradas de imagen y texto, pero no hay ejemplos ni documentación que lo confirmen.
+- La etiqueta de Hugging Face indica `image-text-to-text`, lo que sugiere que el modelo podría procesar entradas de imagen y texto, pero no hay ejemplos ni documentación que lo confirmen.
 - No se han documentado capacidades de generación de texto, razonamiento, código, matemáticas o visión más allá de la etiqueta mencionada.
 - No se dispone de información sobre soporte de tool calling o function calling.
 - No se dispone de información sobre soporte de agentes o razonamiento multi-paso.
@@ -63,7 +63,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Meohan/gemma-2b-brain-v2](https://huggingface.co/Meohan/gemma-2b-brain-v2)
+- Hugging Face: [https://huggingface.co/Meohan/gemma-2b-brain-v2](https://huggingface.co/Meohan/gemma-2b-brain-v2)
 - Modelo base: [https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit)
 - Unsloth: [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

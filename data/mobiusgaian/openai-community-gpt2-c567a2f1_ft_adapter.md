@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de bajo rango (LoRA) entrenado sobre el modelo base `openai-community/gpt2`, publicado por el usuario MobiusGaian bajo el identificador `MobiusGaian/openai-community-gpt2-c567a2f1_FT_adapter`. La librería declarada es PEFT y el pipeline es `text-generation`, por lo que se trata de un artefacto de ajuste fino que debe cargarse por encima de GPT-2 en lugar de un modelo autónomo. El adaptador se distribuye en formato safetensors.
 
-El interés técnico del artefacto es limitado pero ilustrativo: sirve como ejemplo de cómo se publican hoy los adaptadores PEFT y de las carencias habituales de este tipo de repositorios. La model card es la plantilla por defecto de HuggingFace sin rellenar, de modo que no hay información sobre el conjunto de datos de entrenamiento, los hiperparámetros del LoRA (rango, alpha, dropout), el uso previsto ni ninguna evaluación. Tampoco se declara licencia ni idiomas.
+El interés técnico del artefacto es limitado pero ilustrativo: sirve como ejemplo de cómo se publican hoy los adaptadores PEFT y de las carencias habituales de este tipo de repositorios. La model card es la plantilla por defecto de Hugging Face sin rellenar, de modo que no hay información sobre el conjunto de datos de entrenamiento, los hiperparámetros del LoRA (rango, alpha, dropout), el uso previsto ni ninguna evaluación. Tampoco se declara licencia ni idiomas.
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, con un tamaño reportado de 0.0 GB, lo que es coherente con un adaptador LoRA de pocos megabytes pero también obliga a verificar que los pesos estén efectivamente subidos. La relevancia práctica, por tanto, es la de un experimento de ajuste fino sobre un modelo de 124 millones de parámetros y 1024 tokens de contexto, adecuado para aprender y prototipar, no para producción.
 
@@ -25,7 +25,7 @@ En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 like
 | Rango y alpha del LoRA | No disponible |
 | Módulos adaptados | No disponible |
 | Descargas / likes | 0 / 0 |
-| Tamaño del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Fechas de creación y actualización | 2026-09-15 (ambas, según metadatos) |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ No hay ningún dato disponible sobre el proceso de entrenamiento del adaptador: 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla vacía de HuggingFace y no incluye ninguna sección de evaluación rellenada, ni métricas de perplejidad, ni comparaciones con el modelo base. El artículo arXiv:1910.09700 que aparece en las etiquetas corresponde a la calculadora de impacto medioambiental citada en la plantilla, no a una evaluación de este adaptador.
+No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla vacía de Hugging Face y no incluye ninguna sección de evaluación rellenada, ni métricas de perplejidad, ni comparaciones con el modelo base. El artículo arXiv:1910.09700 que aparece en las etiquetas corresponde a la calculadora de impacto medioambiental citada en la plantilla, no a una evaluación de este adaptador.
 
 Los resultados de búsqueda web proporcionados no contienen ningún dato de rendimiento ni referencia técnica al modelo: se refieren a herramientas de traducción y corrección de estilo (DeepL, Grammarly, Quillbot) y a debates sobre su uso en redacción académica, sin relación con este repositorio.
 
@@ -84,7 +84,7 @@ Los resultados de búsqueda web proporcionados no contienen ningún dato de rend
 | distilgpt2 | ~82 M | 1024 tokens | Apache-2.0 | Versión destilada de GPT-2 con 6 capas, más rápida y algo menos capaz. Ampliamente usada como línea base ligera |
 | EleutherAI/pythia-160m | ~160 M | 2048 tokens | Apache-2.0 | Modelo de investigación con checkpoints intermedios publicados, útil para estudiar dinámicas de entrenamiento. Doble de contexto que GPT-2 |
 
-No hay datos de rendimiento comparado para este adaptador, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Las licencias indicadas para los modelos comparativos corresponden a la información publicada en sus respectivos repositorios de HuggingFace.
+No hay datos de rendimiento comparado para este adaptador, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Las licencias indicadas para los modelos comparativos corresponden a la información publicada en sus respectivos repositorios de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -103,9 +103,9 @@ No hay datos de rendimiento comparado para este adaptador, por lo que la compara
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/MobiusGaian/openai-community-gpt2-c567a2f1_FT_adapter
-- Modelo base en HuggingFace: https://huggingface.co/openai-community/gpt2
-- Librería PEFT (HuggingFace): https://github.com/huggingface/peft
+- Repositorio Hugging Face del adaptador: https://huggingface.co/MobiusGaian/openai-community-gpt2-c567a2f1_FT_adapter
+- Modelo base en Hugging Face: https://huggingface.co/openai-community/gpt2
+- Librería PEFT (Hugging Face): https://github.com/huggingface/peft
 - Documentación de transformers: https://huggingface.co/docs/transformers
 - Artículo original de GPT-2 (Radford et al., 2019, "Language Models are Unsupervised Multitask Learners"): no se ha encontrado un enlace directo en la información proporcionada; disponible habitualmente en el repositorio de OpenAI
 - Artículo de LoRA (Hu et al., 2021, arXiv:2106.09685): no incluido en la información proporcionada

@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| DarkSurf Qwen3.5-0.8B UD-Q4_K_XL | 0,8B | 8192 recomendado | GGUF Q4 | Apache-2.0 | HuggingFace (este repo) |
-| Qwen3.5-0.8B (original) | 0,8B | No disponible | safetensors/bf16 | Apache-2.0 | HuggingFace (Qwen) |
-| Qwen3-ASR-0.6B (original) | 0,6B | 65 536 por defecto | safetensors | Apache-2.0 | HuggingFace (Qwen) |
+| DarkSurf Qwen3.5-0.8B UD-Q4_K_XL | 0,8B | 8192 recomendado | GGUF Q4 | Apache-2.0 | Hugging Face (este repo) |
+| Qwen3.5-0.8B (original) | 0,8B | No disponible | safetensors/bf16 | Apache-2.0 | Hugging Face (Qwen) |
+| Qwen3-ASR-0.6B (original) | 0,6B | 65 536 por defecto | safetensors | Apache-2.0 | Hugging Face (Qwen) |
 | Qwen3-ASR-0.6B GGUF oficial | 0,6B | 65 536 por defecto | GGUF | Apache-2.0 | `ggml-org` |
 
 La comparativa relevante es contra los originales en precisión completa: la versión UD-Q4_K_XL sacrifica un 1,5% de perplejidad y mantiene el 92% de coincidencia en top-1, mientras que el ASR Q8_0 iguala la tasa de error de la referencia fp32 en la muestra medida.
@@ -100,7 +100,7 @@ La comparativa relevante es contra los originales en precisión completa: la ver
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/haohan84/darksurf-models
+- Repositorio Hugging Face: https://huggingface.co/haohan84/darksurf-models
 - Modelo base de texto: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuantización de Unsloth: https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF
 - Modelo base ASR: https://huggingface.co/Qwen/Qwen3-ASR-0.6B-hf

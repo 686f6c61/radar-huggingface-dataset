@@ -72,8 +72,8 @@ El unico dato cuantitativo documentado es la concordancia entre precisiones: los
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| abhijit2k01/proton-demo (fp32) | ONNX ResNet-50 vision encoder | no disponible (ResNet-50 estandar) | no aplica | sin benchmarks publicados | apache-2.0 | HuggingFace |
-| abhijit2k01/proton-demo (int8) | ONNX ResNet-50 cuantizado | no disponible | no aplica | coseno 0,99 frente a fp32 | apache-2.0 | HuggingFace |
+| abhijit2k01/proton-demo (fp32) | ONNX ResNet-50 vision encoder | no disponible (ResNet-50 estandar) | no aplica | sin benchmarks publicados | apache-2.0 | Hugging Face |
+| abhijit2k01/proton-demo (int8) | ONNX ResNet-50 cuantizado | no disponible | no aplica | coseno 0,99 frente a fp32 | apache-2.0 | Hugging Face |
 | FLAIR original (jusiro/FLAIR) | PyTorch, modelo vision-lenguaje medico | no disponible | no disponible | no disponible | apache-2.0 | GitHub |
 
 No se dispone de datos de benchmarks para comparar con alternativas de la misma categoria (por ejemplo, otros encoders visuales medicos), por lo que la comparativa cuantitativa no esta disponible.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks para comparar con alternativas de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhijit2k01/proton-demo
+- Modelo en Hugging Face: https://huggingface.co/abhijit2k01/proton-demo
 - Dataset de benchmarks: https://huggingface.co/datasets/abhijit2k01/proton-benchmarks
 - Perfil del autor: https://huggingface.co/abhijit2k01
 - Codigo y benchmarks de PROTON: https://github.com/aj-das-research/PROTON

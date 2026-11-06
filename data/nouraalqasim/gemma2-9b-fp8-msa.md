@@ -76,7 +76,7 @@ La comparación directa con otros modelos cuantizados FP8 de la misma familia (p
 
 ## Enlaces
 
-- Repositorio HuggingFace: [NouraAlqasim/gemma2-9b-fp8-msa](https://huggingface.co/NouraAlqasim/gemma2-9b-fp8-msa)
+- Repositorio Hugging Face: [NouraAlqasim/gemma2-9b-fp8-msa](https://huggingface.co/NouraAlqasim/gemma2-9b-fp8-msa)
 - Modelo base: [google/gemma-2-9b-it](https://huggingface.co/google/gemma-2-9b-it)
 - Dataset de calibración: [Almheiri/ArabCulture-Dialogue](https://huggingface.co/datasets/Almheiri/ArabCulture-Dialogue)
 - NVIDIA ModelOpt: [documentación oficial](https://github.com/NVIDIA/TensorRT-Model-Optimizer)

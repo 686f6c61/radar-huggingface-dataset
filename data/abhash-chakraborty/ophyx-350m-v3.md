@@ -82,10 +82,10 @@ El autor advierte que el mismo modelo abierto genero los prompts y los datos de 
 
 | Modelo | Parametros | Contexto | HumanEval+ | MBPP+ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ophyx 350M v3 | 349M | 4.096 | 44,5 | 48,7 | Apache-2.0 | HuggingFace (safetensors y GGUF) |
-| Ophyx 350M v2 | aproximadamente 350M | 4.096 | 43,9 | 47,4 | Apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-0.5B-Instruct | 0,5B | no disponible en la informacion | 54,9 | 42,1 | Apache-2.0 | HuggingFace |
-| Qwen3-0.6B | 0,6B | no disponible en la informacion | 36,6 | 46,6 | Apache-2.0 | HuggingFace |
+| Ophyx 350M v3 | 349M | 4.096 | 44,5 | 48,7 | Apache-2.0 | Hugging Face (safetensors y GGUF) |
+| Ophyx 350M v2 | aproximadamente 350M | 4.096 | 43,9 | 47,4 | Apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-0.5B-Instruct | 0,5B | no disponible en la informacion | 54,9 | 42,1 | Apache-2.0 | Hugging Face |
+| Qwen3-0.6B | 0,6B | no disponible en la informacion | 36,6 | 46,6 | Apache-2.0 | Hugging Face |
 
 Ophyx v3 supera a Qwen3-0.6B en HumanEval+ y en tareas Hands-on, y a Qwen2.5-Coder-0.5B-Instruct en MBPP+, Hands-on y BigCodeBench instruct, aunque queda por detras de este ultimo en HumanEval+. Su ventaja principal frente a ambos es el menor tamano y la capacidad de ejecutarse en hardware mas modesto.
 
@@ -104,7 +104,7 @@ Ophyx v3 supera a Qwen3-0.6B en HumanEval+ y en tareas Hands-on, y a Qwen2.5-Cod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhash-chakraborty/ophyx-350m-v3
+- Modelo en Hugging Face: https://huggingface.co/abhash-chakraborty/ophyx-350m-v3
 - Pesos GGUF para llama.cpp: https://huggingface.co/abhash-chakraborty/ophyx-350m-v3-gguf
 - Modelo base (v2): https://huggingface.co/abhash-chakraborty/ophyx-350m-v2
 - Repositorio GitHub con resultados de evaluacion: https://github.com/Abhash-Chakraborty/ophyx/blob/main/eval/R1_RESULTS.md

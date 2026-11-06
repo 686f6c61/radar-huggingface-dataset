@@ -72,7 +72,7 @@ No se dispone de comparativas directas publicadas por el autor. Como referencia,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rumiii/Trion_8B-FHIR_R4
+- Modelo en Hugging Face: https://huggingface.co/Rumiii/Trion_8B-FHIR_R4
 - Dataset de entrenamiento: https://huggingface.co/datasets/Nadhari/MedToolCalling
 - Especificación FHIR R4: https://www.hl7.org/fhir/R4/
 - Repositorio oficial de FHIR (HL7): https://github.com/HL7/fhir

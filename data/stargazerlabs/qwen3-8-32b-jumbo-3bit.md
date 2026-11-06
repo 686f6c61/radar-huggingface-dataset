@@ -79,7 +79,7 @@ No hay benchmarks comparativos publicados entre estas versiones. El modelo ofici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-3bit
+- Modelo en Hugging Face: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-3bit
 - Modelo base (bf16): https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo
 - Versión 8-bit: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-8bit
 - Versión 4-bit: https://huggingface.co/StargazerLabs/Qwen3.8-32B-Jumbo-4bit

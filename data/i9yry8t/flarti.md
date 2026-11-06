@@ -1,7 +1,7 @@
 # I9yry8t/Flarti
 
 ## Resumen
-Flarti es un repositorio de modelo publicado en HuggingFace por el usuario I9yry8t bajo licencia Apache 2.0. La informacion disponible es minima: la model card unicamente contiene la declaracion de licencia, no se declaran idiomas soportados, no se especifica el pipeline de inferencia y no hay ningun dato publicado sobre arquitectura, numero de parametros, longitud de contexto o proceso de entrenamiento. El repositorio ocupa aproximadamente 0,1 GB y acumula cero descargas y cero "likes" en el momento de la consulta.
+Flarti es un repositorio de modelo publicado en Hugging Face por el usuario I9yry8t bajo licencia Apache 2.0. La informacion disponible es minima: la model card unicamente contiene la declaracion de licencia, no se declaran idiomas soportados, no se especifica el pipeline de inferencia y no hay ningun dato publicado sobre arquitectura, numero de parametros, longitud de contexto o proceso de entrenamiento. El repositorio ocupa aproximadamente 0,1 GB y acumula cero descargas y cero "likes" en el momento de la consulta.
 
 Al no existir documentacion tecnica, no es posible confirmar que problema resuelve el modelo ni cual es su proposito declarado. Las fechas de creacion y ultima actualizacion (14 de septiembre de 2026, con apenas dos minutos de diferencia) y el reducido tamano del repositorio apuntan a un artefacto experimental o en fase muy temprana de publicacion, sin material de acompanamiento.
 
@@ -64,5 +64,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Caveat para produccion: no se recomienda su uso en entornos productivos sin una auditoria previa del repositorio (inspeccion de ficheros, pesos, tokenizador y pruebas de inferencia controladas).
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/I9yry8t/Flarti
+- Hugging Face: https://huggingface.co/I9yry8t/Flarti
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio ningun recurso tecnico asociado al modelo.

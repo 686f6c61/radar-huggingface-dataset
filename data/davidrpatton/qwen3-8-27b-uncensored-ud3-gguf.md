@@ -83,7 +83,7 @@ La principal diferencia con las alternativas es la estrategia de cuantizacion: l
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/DavidrPatton/Qwen3.8-27B-Uncensored-UD3-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/DavidrPatton/Qwen3.8-27B-Uncensored-UD3-GGUF
 - Repositorio del modelo base abliterado: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Modelo original de Alibaba: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub de Alibaba para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

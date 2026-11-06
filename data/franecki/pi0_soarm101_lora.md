@@ -80,7 +80,7 @@ No se dispone de datos cuantitativos de rendimiento para comparar estos modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/franecki/pi0_soarm101_lora
+- Repositorio Hugging Face: https://huggingface.co/franecki/pi0_soarm101_lora
 - Datasets asociados: https://huggingface.co/franecki/pick_place_100_train y https://huggingface.co/franecki/pick_place_100 (referenciados en la model card)
 - Modelo alternativo con fine-tuning completo: https://huggingface.co/franecki/pi0_soarm101_expert_only
 - Repositorio OpenPI de Physical Intelligence: https://www.openpi.net/english.html

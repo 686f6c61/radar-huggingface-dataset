@@ -80,8 +80,8 @@ No se dispone de datos de benchmarks comparativos publicados en la información 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MaLoW-Qwen3.5-2B | 170,7 M (adaptador) + 2B base | 262.000 tokens (base) | Memoria internalizada en pesos para vídeo en streaming | apache-2.0 | HuggingFace (adaptador); código pendiente |
-| Qwen/Qwen3.5-2B | ~2B | 262.000 tokens (segun terceros) | Vision-language denso con thinking opcional | apache-2.0 (segun terceros) | HuggingFace |
+| MaLoW-Qwen3.5-2B | 170,7 M (adaptador) + 2B base | 262.000 tokens (base) | Memoria internalizada en pesos para vídeo en streaming | apache-2.0 | Hugging Face (adaptador); código pendiente |
+| Qwen/Qwen3.5-2B | ~2B | 262.000 tokens (segun terceros) | Vision-language denso con thinking opcional | apache-2.0 (segun terceros) | Hugging Face |
 
 Otros modelos comparables de memoria de vídeo en streaming: no disponible.
 
@@ -98,7 +98,7 @@ Otros modelos comparables de memoria de vídeo en streaming: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-2B
+- Modelo en Hugging Face: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-2B
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de código MaLoW (pendiente de publicación): https://github.com/dragonlzm/MaLoW
 - Qwen3.5 2B en Modal: https://modal.com/library/qwen/qwen3-5-2b

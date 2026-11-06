@@ -68,7 +68,7 @@ Los datos de los modelos alternativos provienen de sus fichas públicas y no se 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
 | Chat2Find-Sinhala-Translator-4B (este) | ~4,2 B | no disponible | Apache 2.0 | Traducción sinhala-inglés, multimodal | GGUF (13 cuantizaciones) + safetensors |
-| ShenalMax/Chat2Find-Sinhala-Translator-4B | ~4,2 B | no disponible | Apache 2.0 | Modelo base sin cuantizar | Safetensors en HuggingFace |
+| ShenalMax/Chat2Find-Sinhala-Translator-4B | ~4,2 B | no disponible | Apache 2.0 | Modelo base sin cuantizar | Safetensors en Hugging Face |
 | Qwen3-4B | ~4 B | no disponible en esta ficha | Apache 2.0 | Propósito general, multilingüe | Safetensors, GGUF de terceros |
 | Gemma 3 4B | ~4 B | no disponible en esta ficha | Términos de licencia Gemma | Propósito general, multimodal | Safetensors, GGUF de terceros |
 

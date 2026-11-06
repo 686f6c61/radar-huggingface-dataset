@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.8-27b-ft-ep3 es un ajuste fino de parametros completos (full-parameter fine-tune) del modelo Qwen/Qwen3.8-27B, publicado por el usuario cont1037 en HuggingFace. El repositorio contiene unicamente los pesos resultantes del ajuste en precision bfloat16, junto con un fichero NOTICE de cambios y la licencia Apache-2.0 heredada del modelo base. No se documenta el procedimiento de ajuste, el dataset utilizado ni el numero de pasos o epocas, mas alla del sufijo "ep3" en el nombre, que sugiere un entrenamiento de tres epocas.
+qwen3.8-27b-ft-ep3 es un ajuste fino de parametros completos (full-parameter fine-tune) del modelo Qwen/Qwen3.8-27B, publicado por el usuario cont1037 en Hugging Face. El repositorio contiene unicamente los pesos resultantes del ajuste en precision bfloat16, junto con un fichero NOTICE de cambios y la licencia Apache-2.0 heredada del modelo base. No se documenta el procedimiento de ajuste, el dataset utilizado ni el numero de pasos o epocas, mas alla del sufijo "ep3" en el nombre, que sugiere un entrenamiento de tres epocas.
 
 El modelo base, desarrollado por el equipo Qwen de Alibaba, es un LLM denso y multimodal nativo de aproximadamente 27.800 millones de parametros, presentado por sus autores como un modelo de rendimiento de gama Qwen-Max en pesos abiertos y orientado a codigo, flujos agenticos y automatizacion de oficina. La ficha hereda la etiqueta de pipeline image-text-to-text, lo que implica que el ajuste se ha realizado presumiblemente preservando la capacidad de entrada de imagen y texto.
 
@@ -74,9 +74,9 @@ Existe una ficha de rendimiento del modelo base en Epoch AI (https://epoch.ai/mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cont1037/qwen3.8-27b-ft-ep3 | 27,78B (denso, multimodal) | No disponible | No publicado | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | 27B (denso, multimodal) | No disponible en la informacion proporcionada | Datos en Epoch AI no proporcionados | No confirmada en la informacion, presumiblemente Apache-2.0 por herencia | HuggingFace, repositorio oficial de Qwen |
-| cont1037/Qwen-3.8-27B-DinkyDoo | No disponible | No disponible | No publicado | No disponible | HuggingFace, mismo autor |
+| cont1037/qwen3.8-27b-ft-ep3 | 27,78B (denso, multimodal) | No disponible | No publicado | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | 27B (denso, multimodal) | No disponible en la informacion proporcionada | Datos en Epoch AI no proporcionados | No confirmada en la informacion, presumiblemente Apache-2.0 por herencia | Hugging Face, repositorio oficial de Qwen |
+| cont1037/Qwen-3.8-27B-DinkyDoo | No disponible | No disponible | No publicado | No disponible | Hugging Face, mismo autor |
 
 No se dispone de datos suficientes para comparar de forma cuantitativa con alternativas de la misma categoria (por ejemplo, otros modelos densos multimodales de ~25-35B). Cualquier comparacion de rendimiento requeriria ejecutar una bateria comun sobre los checkpoints.
 
@@ -94,10 +94,10 @@ No se dispone de datos suficientes para comparar de forma cuantitativa con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep3
+- Modelo en Hugging Face: https://huggingface.co/cont1037/qwen3.8-27b-ft-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial del modelo base en GitHub (Alibaba Cloud): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
-- Perfil del autor en HuggingFace: https://huggingface.co/cont1037
+- Perfil del autor en Hugging Face: https://huggingface.co/cont1037
 - Otro derivado del mismo autor: https://huggingface.co/cont1037/Qwen-3.8-27B-DinkyDoo
 - Datos de rendimiento del modelo base en Epoch AI: https://epoch.ai/models/qwen-3-8-27b

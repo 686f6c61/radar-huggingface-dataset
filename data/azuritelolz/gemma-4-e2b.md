@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma 4 E2B es un modelo multimodal de la familia Gemma 4 desarrollada por Google DeepMind, publicada en el repositorio de HuggingFace por el usuario azuritelolz. Se trata de un modelo any-to-any que procesa texto, imagen y audio como entrada y genera texto como salida, orientado a despliegues en dispositivos de borde como portátiles y moviles. Su arquitectura es un transformer decoder-only denso con 35 capas y atencion hibrida que combina ventanas deslizantes locales de 512 tokens con atencion global completa, garantizando que la capa final sea siempre global.
+Gemma 4 E2B es un modelo multimodal de la familia Gemma 4 desarrollada por Google DeepMind, publicada en el repositorio de Hugging Face por el usuario azuritelolz. Se trata de un modelo any-to-any que procesa texto, imagen y audio como entrada y genera texto como salida, orientado a despliegues en dispositivos de borde como portátiles y moviles. Su arquitectura es un transformer decoder-only denso con 35 capas y atencion hibrida que combina ventanas deslizantes locales de 512 tokens con atencion global completa, garantizando que la capa final sea siempre global.
 
 El modelo emplea un mecanismo de Per-Layer Embeddings (PLE) que otorga a cada capa del decoder su propia tabla de embeddings por token. Esto explica la diferencia entre sus 2.3B de parametros efectivos y los 5.1B totales (que incluyen las tablas de embeddings). Incorpora ademas un encoder de vision de aproximadamente 150M de parametros y un encoder de audio de aproximadamente 300M, lo que lo convierte en el unico tamano de la familia con soporte nativo de audio junto al E4B y el 12B.
 
@@ -85,8 +85,8 @@ La comparativa se limita a los miembros de la misma familia Gemma 4, ya que no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/azuritelolz/gemma-4-E2B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Hugging Face: https://huggingface.co/azuritelolz/gemma-4-E2B
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion: https://ai.google.dev/gemma/docs/core

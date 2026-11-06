@@ -83,5 +83,5 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/rubato-timing
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/rubato-timing
 - Repositorio fuente, protocolo de benchmarks, ablaciones y análisis de sensibilidad: https://github.com/NagaYu/rubato

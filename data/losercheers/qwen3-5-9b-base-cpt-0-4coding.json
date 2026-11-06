@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "losercheers/Qwen3.5-9B-Base-CPT-0.4coding",
+  "slug": "losercheers-qwen3-5-9b-base-cpt-0-4coding",
+  "author": "losercheers",
+  "url": "https://huggingface.co/losercheers/Qwen3.5-9B-Base-CPT-0.4coding",
+  "created_at": "2026-11-05T04:57:20.000Z",
+  "updated_at": "2026-11-05T08:28:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17920463780,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "losercheers/Qwen3.5-9B-Base-CPT-0.4coding · Hugging Face",
+      "url": "https://huggingface.co/losercheers/Qwen3.5-9B-Base-CPT-0.4coding",
+      "snippet": "Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B-Base · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B-Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

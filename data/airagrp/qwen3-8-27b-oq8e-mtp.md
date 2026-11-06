@@ -19,7 +19,7 @@ Qwen3.8-27B es un modelo vision-language de última generación que soporta entr
 | Licencia | Apache-2.0 (modelo base, segun fuentes web) |
 | Formato de pesos | MLX safetensors |
 
-Nota: el archivo safetensors del repositorio reporta 8 184 279 792 parametros, un valor inconsistente con los 27B del modelo base. Se trata probablemente de un error en la metadata de HuggingFace; el numero real de parametros del modelo original es 27B.
+Nota: el archivo safetensors del repositorio reporta 8 184 279 792 parametros, un valor inconsistente con los 27B del modelo base. Se trata probablemente de un error en la metadata de Hugging Face; el numero real de parametros del modelo original es 27B.
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ La comparativa se centra en el modelo base y alternativas de tamano similar. Qwe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-oQ8e-mtp
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-oQ8e-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Guia de ejecucion local (modelfit.io): https://modelfit.io/blog/run-qwen38-27b-locally-2026/
 - Pagina del modelo en LM Studio: https://lmstudio.ai/models/qwen3.8

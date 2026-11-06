@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguno de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anddyworld/zils-mini-distill-ultra41-r64
+- Modelo en Hugging Face: https://huggingface.co/anddyworld/zils-mini-distill-ultra41-r64
 - Modelo base: https://huggingface.co/zils-ai/d3-mini-4.5b-v1
 - Modelo profesor (d3-ultra): https://huggingface.co/vllm-sr/d3-ultra
 - Mirror del modelo base (d3-mini): https://huggingface.co/vllm-sr/d3-mini

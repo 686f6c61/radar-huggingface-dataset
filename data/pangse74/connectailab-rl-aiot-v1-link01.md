@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-aiot-v1-link01 | 0,8B + LoRA | No disponible | Decisión discreta en `avoid_obstacles` | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-aiot-v1-link01 | 0,8B + LoRA | No disponible | Decisión discreta en `avoid_obstacles` | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Agente PPO `brain.json` (profesor) | No disponible | No aplica | Decisión discreta en `avoid_obstacles` | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de información sobre otros adaptadores de decisión comparables publicados con las mismas características.
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores de decisión comparables p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PANGSE74/connectailab-rl-aiot-v1-link01
+- Hugging Face: https://huggingface.co/PANGSE74/connectailab-rl-aiot-v1-link01
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Entorno web de aprendizaje: https://www.ezerai.xyz/robot-lab/world/

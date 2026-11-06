@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hush0 API es un servicio de enrutado (router) publicado como repositorio en HuggingFace bajo el identificador `spreadsmoney/hush0-api`. No es un modelo de lenguaje entrenado ni publica pesos: se trata de una capa de API compatible con el endpoint de chat de OpenAI que unifica el acceso a modelos de terceros (Llama 4 Maverick, DeepSeek V3/R1, Kimi K2, Qwen3 235B, Mistral Large, Claude, GPT-5, Gemini 2.5 Pro y Grok 4, segun la model card) bajo una sola URL base y una sola clave.
+Hush0 API es un servicio de enrutado (router) publicado como repositorio en Hugging Face bajo el identificador `spreadsmoney/hush0-api`. No es un modelo de lenguaje entrenado ni publica pesos: se trata de una capa de API compatible con el endpoint de chat de OpenAI que unifica el acceso a modelos de terceros (Llama 4 Maverick, DeepSeek V3/R1, Kimi K2, Qwen3 235B, Mistral Large, Claude, GPT-5, Gemini 2.5 Pro y Grok 4, segun la model card) bajo una sola URL base y una sola clave.
 
 Su propuesta diferencial no es el rendimiento del modelo, sino el etiquetado de privacidad de cada peticion. Cada modelo enrutado recibe una etiqueta (`sealed`, `private` o `anonymized`) que describe quien puede leer el texto enviado, y el cliente puede exigir un minimo con la cabecera `X-Privacy-Floor`. El nivel `sealed` se apoya en computacion confidencial (enclaves verificados) y cada respuesta incluye un recibo en cabeceras con el nivel de privacidad, el modelo usado, el hash de pesos, la atestacion y el coste.
 
@@ -93,7 +93,7 @@ No se dispone de datos verificables de alternativas en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/spreadsmoney/hush0-api
+- Repositorio en Hugging Face: https://huggingface.co/spreadsmoney/hush0-api
 - Sitio oficial: https://hush0.ai
 - Modelos y precios: https://hush0.ai/models.html
 - Mercado de credito no usado: https://hush0.ai/market.html

@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/grug-v1.1-qwen-3.8-27b-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/grug-v1.1-qwen-3.8-27b-GGUF)
 - [Modelo base ProCreations/grug-v1.1-qwen-3.8-27b](https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b)
 - [Artículo sobre cómo ejecutar Qwen 3.8 27B localmente (yottalabs.ai)](https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026)
 - [Repositorio de despliegue GGUF para Qwen3.8-27B (GitHub)](https://github.com/vskrch/qwen3.8-gguf-deploy)

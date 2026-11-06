@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del modelo base `francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales, lo que lo situa en la categoria de modelos muy pequenos, orientados a experimentacion y a entornos con recursos limitados.
+El modelo `hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del modelo base `francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales, lo que lo situa en la categoria de modelos muy pequenos, orientados a experimentacion y a entornos con recursos limitados.
 
 El nombre del modelo sugiere un trabajo sobre hindi en escritura devanagari ("hin-deva"), con un corpus de entrenamiento de 10 MB y distintos experimentos de empaquetado ("packed"), pero la model card no confirma oficialmente ni los idiomas ni la composicion del dataset. El modelo fue entrenado con la libreria TRL (version 0.23.0) mediante aprendizaje supervisado (SFT), y el repositorio incluye checkpoints intermedios (el identificador apunta al checkpoint 500 y a la semilla 3407).
 
@@ -65,9 +65,9 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 39,09 M | no disponible | no disponible | HuggingFace |
+| hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 | 39,09 M | no disponible | no disponible | Hugging Face |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | ampliamente disponible |
-| distilgpt2 (HuggingFace) | 82 M | 1024 tokens | Apache-2.0 | ampliamente disponible |
+| distilgpt2 (Hugging Face) | 82 M | 1024 tokens | Apache-2.0 | ampliamente disponible |
 
 No se han publicado resultados de benchmarks que permitan comparar el rendimiento real de este modelo con las alternativas anteriores.
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks que permitan comparar el rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rutm4e5j
 - Repositorio de TRL: https://github.com/huggingface/trl

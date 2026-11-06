@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/l1m0ur3n/cantocaptions-cantonese-asr-8bit-mlx
+- Hugging Face: https://huggingface.co/l1m0ur3n/cantocaptions-cantonese-asr-8bit-mlx
 - Modelo base: https://huggingface.co/rookes/cantocaptions-cantonese-asr
 - Configuración y tokenizer: https://huggingface.co/mlx-community/Qwen3-ASR-1.7B-bf16
 - Dataset CantoCaptions: https://cantocaptions.com

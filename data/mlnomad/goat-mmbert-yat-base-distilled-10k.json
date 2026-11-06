@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mlnomad/goat-mmbert-yat-base-distilled-10k",
+  "slug": "mlnomad-goat-mmbert-yat-base-distilled-10k",
+  "author": "mlnomad",
+  "url": "https://huggingface.co/mlnomad/goat-mmbert-yat-base-distilled-10k",
+  "created_at": "2026-11-06T10:47:27.000Z",
+  "updated_at": "2026-11-06T10:50:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "flax",
+  "languages": [],
+  "tags": [
+    "flax",
+    "safetensors",
+    "goat",
+    "yat",
+    "multilingual",
+    "sentence-embeddings",
+    "distillation",
+    "flaxchat",
+    "retrieval",
+    "sentence-similarity",
+    "base_model:mlnomad/goat-mmbert-yat-base-contrastive-10k",
+    "base_model:finetune:mlnomad/goat-mmbert-yat-base-contrastive-10k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 281833984,
+  "parameters_human": "281.8M",
+  "storage_bytes": 1145617772,
+  "storage_human": "1.1 GB",
+  "base_model": "mlnomad/goat-mmbert-yat-base-contrastive-10k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlnomad/goat-mmbert-yat-base-mlm-10b · Hugging Face",
+      "url": "https://huggingface.co/mlnomad/goat-mmbert-yat-base-mlm-10b",
+      "snippet": "GOAT mmBERT YAT Base is a multilingual encoder pretrained with masked language modeling (MLM). This release contains checkpoint 379079, following complete coverage of a prepared corpus containing 10,038,104,948 nonpadding tokens. The model has 281,834,028 parameters, including its MLM head. The ..."
+    },
+    {
+      "title": "mlnomad/goat-mmbert-yat-base-contrastive-10k · Hugging Face",
+      "url": "https://huggingface.co/mlnomad/goat-mmbert-yat-base-contrastive-10k",
+      "snippet": "The GOAT base and previous YAT columns use their published full-suite receipts on the same task and dataset revisions. The previous YAT model inherited mmBERT weights and received contrastive fine-tuning. The GOAT base received MLM pretraining, and this release adds contrastive fine-tuning to that base."
+    }
+  ]
+}

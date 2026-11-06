@@ -75,7 +75,7 @@ Nota: los datos de los modelos comparables provienen del conocimiento general de
 |---|---|---|---|---|---|
 | whisper-large-v3-vaani-hindi-ggml (este) | ~1550 M (arquitectura base) | 30 s de audio por ventana | GGML bb4 q4_0, q5_0, q8_0 | Hindi (etiqueta del repo) | apache-2.0 |
 | ARTPARK-IISc/whisper-large-v3-vaani-hindi | ~1550 M (arquitectura base) | 30 s de audio por ventana | safetensors / PyTorch | Hindi | apache-2.0 |
-| openai/whisper-large-v3 | ~1550 M | 30 s de audio por ventana | safetensors / PyTorch | Multilingüe (~99 idiomas) | apache-2.0 en HuggingFace |
+| openai/whisper-large-v3 | ~1550 M | 30 s de audio por ventana | safetensors / PyTorch | Multilingüe (~99 idiomas) | apache-2.0 en Hugging Face |
 | openai/whisper-large-v3-turbo | ~809 M | 30 s de audio por ventana | safetensors / PyTorch | Multilingüe | no disponible en esta consulta |
 
 La diferencia principal frente al checkpoint original es el formato y el tamaño: se pasa de pesos fp16 a ficheros de entre 889 MB y 1657 MB, a cambio de una pérdida de precisión que el autor describe como pequeña en q4_* y prácticamente nula en q8_0, sin respaldarla con números. Frente a whisper-large-v3-turbo, este modelo conserva la profundidad completa del decoder a cambio de un tamaño notablemente mayor.
@@ -94,7 +94,7 @@ La diferencia principal frente al checkpoint original es el formato y el tamaño
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-large-v3-vaani-hindi-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-large-v3-vaani-hindi-ggml
 - Modelo base (ARTPARK-IISc): https://huggingface.co/ARTPARK-IISc/whisper-large-v3-vaani-hindi
 - Perfil del autor de la conversión: https://huggingface.co/JoaoZaokk
 - Motor whisper.cpp: https://github.com/ggml-org/whisper.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`squeal_ai_8m-base` es un modelo de lenguaje compacto de aproximadamente 8 millones de parámetros, desarrollado por Squeal Studio y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo base, es decir, únicamente preentrenado, sin ajuste por instrucciones, orientado a la investigación y la experimentación académica. Su objetivo principal es servir como banco de pruebas para arquitecturas de transformers pequeños y como línea base para comparaciones en tareas de generación de texto en ruso.
+`squeal_ai_8m-base` es un modelo de lenguaje compacto de aproximadamente 8 millones de parámetros, desarrollado por Squeal Studio y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo base, es decir, únicamente preentrenado, sin ajuste por instrucciones, orientado a la investigación y la experimentación académica. Su objetivo principal es servir como banco de pruebas para arquitecturas de transformers pequeños y como línea base para comparaciones en tareas de generación de texto en ruso.
 
 El modelo sigue una arquitectura de decoder transformer estilo Qwen2.5 con atención por grupos (GQA), con 8 capas, un tamaño oculto de 192 y una ventana de contexto de 1.536 tokens. Fue entrenado desde cero sobre una selección de artículos de Wikipedia en ruso y el dataset OpenSubtitles (RU), con un volumen estimado de 50 a 70 millones de tokens. Su reducido tamaño lo hace ejecutable en hardware muy modesto, incluso en CPU, aunque su capacidad de generación y razonamiento es limitada por diseño.
 
@@ -43,7 +43,7 @@ El preentrenamiento se realizó desde cero sobre un corpus de texto en ruso comp
 - Línea base para tareas de PLN en ruso: se puede emplear como modelo de referencia para evaluar mejoras introducidas por modelos más grandes o por técnicas de fine-tuning en tareas como clasificación de sentimiento o análisis de temas.
 - Pruebas de preprocesado y deduplicación de datos: al haber sido entrenado con un pipeline de limpieza específico, permite validar metodologías de preparación de corpus en ruso.
 - Enseñanza de aprendizaje profundo: su pequeño tamaño permite ejecutarlo en portátiles sin GPU, facilitando demostraciones prácticas de generación de texto y fine-tuning en entornos docentes.
-- Prototipado rápido de pipelines de generación: útil para verificar que una infraestructura de inferencia (por ejemplo, con HuggingFace Transformers) funciona correctamente antes de integrar modelos más grandes.
+- Prototipado rápido de pipelines de generación: útil para verificar que una infraestructura de inferencia (por ejemplo, con Hugging Face Transformers) funciona correctamente antes de integrar modelos más grandes.
 - Generación de texto corto y no crítico: puede producir frases o párrafos breves en ruso para aplicaciones de baja exigencia, como relleno de plantillas o generación de ejemplos sintéticos, siempre que se acepte su baja calidad.
 
 ## Benchmarks y rendimiento
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: el modelo ocupa aproximadamente 16 MB en fp16 y 32 MB en fp32, por lo que cualquier GPU con al menos 1 GB de VRAM es suficiente.
 - GPU recomendadas: cualquier GPU moderna, incluidas las de gama baja como NVIDIA GTX 1650 o integradas. También es viable la inferencia en CPU.
 - Cabe en GPU de consumo: sí, en todas las GPU de consumo actuales, incluso en las más modestas.
-- Opciones de despliegue: compatible con HuggingFace Transformers, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) y TGI (aunque es excesivo para este tamaño).
+- Opciones de despliegue: compatible con Hugging Face Transformers, llama.cpp (si se convierte a GGUF), Ollama (si se empaqueta) y TGI (aunque es excesivo para este tamaño).
 - Latencia y throughput: al ser un modelo de 8M parámetros, la generación es prácticamente instantánea en GPU y muy rápida en CPU moderna. No se dispone de mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -75,5 +75,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Squeal-Studio/squeal_ai_8m-base
+- Modelo en Hugging Face: https://huggingface.co/Squeal-Studio/squeal_ai_8m-base
 - Repositorio de Squeal Studio en GitHub: https://github.com/SquealStudio/SquealStudio

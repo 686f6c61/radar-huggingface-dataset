@@ -2,7 +2,7 @@
 
 ## Resumen
 
-g-connito/co es un repositorio alojado en HuggingFace por el usuario g-connito. La informacion publica disponible es minima: no hay model card con licencia, idiomas soportados, pipeline de inferencia, arquitectura ni parametros declarados. El repositorio acumula 0 descargas y 1 like desde su creacion el 21 de julio de 2026, con ultima actualizacion el 15 de septiembre de 2026, lo que indica que no ha pasado por un proceso de validacion por parte de la comunidad.
+g-connito/co es un repositorio alojado en Hugging Face por el usuario g-connito. La informacion publica disponible es minima: no hay model card con licencia, idiomas soportados, pipeline de inferencia, arquitectura ni parametros declarados. El repositorio acumula 0 descargas y 1 like desde su creacion el 21 de julio de 2026, con ultima actualizacion el 15 de septiembre de 2026, lo que indica que no ha pasado por un proceso de validacion por parte de la comunidad.
 
 El unico dato tecnico objetivo es el tamano del repositorio: 1305,6 GB. Ese volumen es coherente con un conjunto de pesos de escala muy grande o con un repositorio que contiene varias copias de los pesos en distintos formatos y precisiones, pero no permite determinar por si solo la arquitectura ni el numero de parametros del modelo.
 
@@ -80,6 +80,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, el contexto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/g-connito/co
+- Repositorio en Hugging Face: https://huggingface.co/g-connito/co
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los unicos resultados obtenidos corresponden a paginas genericas de Google, Gmail y a la entrada de la letra G en Wikipedia, sin relacion con el repositorio. No se han localizado papers, blogs, repositorios de codigo ni demos asociados.

@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `1ys1/areumii-smolvla-pickplace-v3` | 450M | no disponible | Pick-and-place (cubo rojo en cesta azul) | Apache 2.0 | HuggingFace |
-| `lerobot/smolvla_base` | 450M | no disponible | VLA general preentrenado | Apache 2.0 | HuggingFace |
-| OpenVLA (modelo grande) | 7B | 4096 tokens | VLA general | MIT | HuggingFace |
+| `1ys1/areumii-smolvla-pickplace-v3` | 450M | no disponible | Pick-and-place (cubo rojo en cesta azul) | Apache 2.0 | Hugging Face |
+| `lerobot/smolvla_base` | 450M | no disponible | VLA general preentrenado | Apache 2.0 | Hugging Face |
+| OpenVLA (modelo grande) | 7B | 4096 tokens | VLA general | MIT | Hugging Face |
 
 La diferencia principal con el base es que este fine-tune esta especializado en una tarea concreta, por lo que su rendimiento en esa tarea sera superior al del base sin fine-tuning. Frente a OpenVLA, SmolVLA ofrece un coste computacional mucho menor (450M vs 7B), lo que permite inferencia en GPU consumer, aunque con una capacidad general menor.
 

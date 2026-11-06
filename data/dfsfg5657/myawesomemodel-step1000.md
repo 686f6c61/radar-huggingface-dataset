@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step1000 es un modelo publicado en HuggingFace por el usuario dfsfg5657 bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo de razonamiento que ha mejorado significativamente su profundidad de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
+MyAwesomeModel-step1000 es un modelo publicado en Hugging Face por el usuario dfsfg5657 bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo de razonamiento que ha mejorado significativamente su profundidad de inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
 
 Sin embargo, la información técnica disponible es extremadamente limitada. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no se han subido pesos o que estos son de tamaño despreciable. El pipeline declarado es `feature-extraction` y el tag incluye `bert`, lo que apunta a un modelo encoder de embeddings, pero la model card describe capacidades generativas (code generation, creative writing, dialogue generation) que no son consistentes con esa arquitectura. No se especifican parámetros totales, longitud de contexto, ni detalles de entrenamiento. La ficha que sigue refleja esta falta de datos, indicando "no disponible" donde corresponda.
 
@@ -93,8 +93,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - dfsfg5657/MyAwesomeModel-step1000](https://huggingface.co/dfsfg5657/MyAwesomeModel-step1000)
-- [HuggingFace - dsfsdfsf56577/MyAwesomeModel-step_1000-best](https://huggingface.co/dsfsdfsf56577/MyAwesomeModel-step_1000-best)
-- [HuggingFace - dsfsdfsf56577/MyAwesomeModel](https://huggingface.co/dsfsdfsf56577/MyAwesomeModel)
-- [HuggingFace - dfgsgsh56/MyAwesomeModel-step_1000](https://huggingface.co/dfgsgsh56/MyAwesomeModel-step_1000)
+- [Hugging Face - dfsfg5657/MyAwesomeModel-step1000](https://huggingface.co/dfsfg5657/MyAwesomeModel-step1000)
+- [Hugging Face - dsfsdfsf56577/MyAwesomeModel-step_1000-best](https://huggingface.co/dsfsdfsf56577/MyAwesomeModel-step_1000-best)
+- [Hugging Face - dsfsdfsf56577/MyAwesomeModel](https://huggingface.co/dsfsdfsf56577/MyAwesomeModel)
+- [Hugging Face - dfgsgsh56/MyAwesomeModel-step_1000](https://huggingface.co/dfgsgsh56/MyAwesomeModel-step_1000)
 - [Free2AITools - Myawesomemodel Release](https://free2aitools.com/model/sotaagi2030/myawesomemodel-release)

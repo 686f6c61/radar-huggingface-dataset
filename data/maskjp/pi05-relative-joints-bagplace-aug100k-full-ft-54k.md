@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-54k` es un checkpoint de robótica publicado por el usuario de HuggingFace maskjp: un ajuste fino completo del modelo base `lerobot/pi05_base` sobre una única tarea de manipulación —"coger la bolsa del suelo y colocarla sobre la mesa"— con las acciones expresadas en espacio articular relativo y con aumento fotométrico de imagen activado. El modelo pertenece a la familia pi0.5, una política vision-language-action (VLA) que combina percepción visual, instrucción en lenguaje natural y generación de acciones motoras, y se distribuye a través de la librería LeRobot con pesos en safetensors de aproximadamente 4.143 millones de parámetros (9,4 GB de repositorio).
+`maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-54k` es un checkpoint de robótica publicado por el usuario de Hugging Face maskjp: un ajuste fino completo del modelo base `lerobot/pi05_base` sobre una única tarea de manipulación —"coger la bolsa del suelo y colocarla sobre la mesa"— con las acciones expresadas en espacio articular relativo y con aumento fotométrico de imagen activado. El modelo pertenece a la familia pi0.5, una política vision-language-action (VLA) que combina percepción visual, instrucción en lenguaje natural y generación de acciones motoras, y se distribuye a través de la librería LeRobot con pesos en safetensors de aproximadamente 4.143 millones de parámetros (9,4 GB de repositorio).
 
 Lo más relevante de esta ficha no es el modelo en sí, sino su estado: se trata de una instantánea intermedia de un entrenamiento que aún no había terminado cuando se publicó (paso 54K de 100K previstos). El propio autor advierte en la model card que la pérdida en el conjunto de validación en ese punto (0,0819) está un 184 % por encima del mínimo alcanzado durante la ejecución (0,0288 en el paso 2K), es decir, que es el peor checkpoint de la curva hasta la fecha y no el mejor. Para uso práctico, el autor recomienda explícitamente tomar el checkpoint de 2K.
 
@@ -120,7 +120,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento relati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-54k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-54k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Variante generalista all-10 mencionada por el autor: https://huggingface.co/maskjp/pi05-relative-joints-all10-full-ft-100k
 

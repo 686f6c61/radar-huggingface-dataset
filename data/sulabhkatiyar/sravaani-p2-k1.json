@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sulabhkatiyar/sravaani-p2-k1",
+  "slug": "sulabhkatiyar-sravaani-p2-k1",
+  "author": "sulabhkatiyar",
+  "url": "https://huggingface.co/sulabhkatiyar/sravaani-p2-k1",
+  "created_at": "2026-11-04T22:49:30.000Z",
+  "updated_at": "2026-11-05T08:43:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "asr",
+    "fastconformer",
+    "tdt",
+    "indic",
+    "english",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 213,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3618600813,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sulabhkatiyar/sravaani-p2-k1 · Hugging Face",
+      "url": "https://huggingface.co/sulabhkatiyar/sravaani-p2-k1",
+      "snippet": "sulabhkatiyar ... sravaani-p2-k1 Like 0 NeMo asr fastconformer tdt indic english License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "sulabhkatiyar (Sulabh Katiyar) – Models - Hugging Face",
+      "url": "https://huggingface.co/sulabhkatiyar/models",
+      "snippet": "Edge Native Speech First AI for India sulabhkatiyar 19 Follow kingmhd1519's profile picturenshmyrevgmail's profile picture 2 followers · 4 following https://sulabhkatiyar.pages.dev/ sulabhkatiyar sulabhkatiyar"
+    }
+  ]
+}

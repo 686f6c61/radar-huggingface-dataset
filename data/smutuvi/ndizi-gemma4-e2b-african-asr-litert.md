@@ -109,7 +109,7 @@ No se ha encontrado en la busqueda web ningun dato verificable sobre alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smutuvi/ndizi-gemma4-e2b-african-asr-litert
+- Modelo en Hugging Face: https://huggingface.co/smutuvi/ndizi-gemma4-e2b-african-asr-litert
 - Modelo base: https://huggingface.co/Sunbird/Sunflower-Gemma4-E2B
 - Corpus de entrenamiento citados en la model card:
   - smutuvi/ndizi-1

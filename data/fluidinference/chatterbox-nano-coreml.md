@@ -94,8 +94,8 @@ Las mediciones se tomaron en un Mac de la serie M usando `.cpuAndGPU`. No se pro
 
 | Modelo | Arquitectura y tamaño | Idioma | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FluidInference/chatterbox-nano-coreml | T3 GPT2-small 110 M + meanflow S3Gen + HiFTNet; 0,7 GB | inglés | CoreML (`mlpackage`/`mlmodelc`), safetensors | MIT | Repositorio HuggingFace con 0 descargas y 0 likes |
-| ResembleAI/chatterbox-nano (modelo base) | Igual pipeline en PyTorch; tamaño de checkpoint no disponible | inglés | PyTorch (no disponible el detalle) | MIT | Repositorio HuggingFace de referencia |
+| FluidInference/chatterbox-nano-coreml | T3 GPT2-small 110 M + meanflow S3Gen + HiFTNet; 0,7 GB | inglés | CoreML (`mlpackage`/`mlmodelc`), safetensors | MIT | Repositorio Hugging Face con 0 descargas y 0 likes |
+| ResembleAI/chatterbox-nano (modelo base) | Igual pipeline en PyTorch; tamaño de checkpoint no disponible | inglés | PyTorch (no disponible el detalle) | MIT | Repositorio Hugging Face de referencia |
 | Paquetes hermanos T3 multilingües de FluidInference | Arquitectura T3 equivalente en CoreML; número de idiomas y tamaño no disponibles | multilingüe (no se detalla) | CoreML | no disponible | Mencionados en la model card; fallan con `.cpuOnly` |
 | Otros TTS ligeros comparables | no disponible | no disponible | no disponible | no disponible | Las búsquedas web realizadas no devolvieron información relevante (los resultados obtenidos corresponden a una empresa belga de instalaciones de climatización, sin relación con el modelo) |
 
@@ -114,7 +114,7 @@ Las mediciones se tomaron en un Mac de la serie M usando `.cpuAndGPU`. No se pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FluidInference/chatterbox-nano-coreml
+- Repositorio Hugging Face: https://huggingface.co/FluidInference/chatterbox-nano-coreml
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-nano
 - Muestras de audio del repositorio: https://huggingface.co/FluidInference/chatterbox-nano-coreml/tree/main/samples
 - Organización del conversor: https://github.com/FluidInference

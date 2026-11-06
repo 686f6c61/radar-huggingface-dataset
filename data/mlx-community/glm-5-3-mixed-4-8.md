@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/GLM-5.3-mixed-4-8
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/GLM-5.3-mixed-4-8
 - Modelo base (BF16): https://huggingface.co/zai-org/GLM-5.3-BF16
 - Repositorio GitHub de GLM-5: https://github.com/zai-org/GLM-5
 - Documentación de mlx-lm: https://github.com/ml-explore/mlx-lm

@@ -69,9 +69,9 @@ El autor indica que la desviacion estandar entre semillas del EER agrupado de 1 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `univ_full_conformer_large_dr_vectors` | 7,1 M | no disponible | Conformer + ATP + Extended-Set Softmax + Dr-Vector | Apache 2.0 | HuggingFace y PyPI |
-| Modelos tipo ECAPA-TDNN (p. ej. SpeechBrain) | no disponible | no disponible | TDNN con atencion squeeze-excitation | habitualmente Apache 2.0 | SpeechBrain y HuggingFace |
-| Modelos tipo WavLM/X-Vector | no disponible | no disponible | Transformer preentrenado con cabecera de speaker | variable | HuggingFace |
+| `univ_full_conformer_large_dr_vectors` | 7,1 M | no disponible | Conformer + ATP + Extended-Set Softmax + Dr-Vector | Apache 2.0 | Hugging Face y PyPI |
+| Modelos tipo ECAPA-TDNN (p. ej. SpeechBrain) | no disponible | no disponible | TDNN con atencion squeeze-excitation | habitualmente Apache 2.0 | SpeechBrain y Hugging Face |
+| Modelos tipo WavLM/X-Vector | no disponible | no disponible | Transformer preentrenado con cabecera de speaker | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos directos en la informacion proporcionada, por lo que la comparacion se limita a enfoque, licencia y disponibilidad.
 
@@ -88,8 +88,8 @@ No se dispone de datos de benchmarks comparativos directos en la informacion pro
 - El dato de trials de CN-Celeb-E aparece truncado en la informacion disponible, por lo que no se pueden citar sus metricas completas.
 
 ## Enlaces
-- [HuggingFace: wq2012/univ_full_conformer_large_dr_vectors](https://huggingface.co/wq2012/univ_full_conformer_large_dr_vectors)
-- [Coleccion FlaxSpeaker en HuggingFace](https://huggingface.co/collections/wq2012/flaxspeaker)
+- [Hugging Face: wq2012/univ_full_conformer_large_dr_vectors](https://huggingface.co/wq2012/univ_full_conformer_large_dr_vectors)
+- [Coleccion FlaxSpeaker en Hugging Face](https://huggingface.co/collections/wq2012/flaxspeaker)
 - [Repositorio GitHub: wq2012/FlaxSpeaker](https://github.com/wq2012/FlaxSpeaker)
 - [Paquete PyPI: flaxspeaker](https://pypi.org/project/flaxspeaker/)
 - [Paper GE2E (arXiv:1710.10467)](https://arxiv.org/abs/1710.10467)

@@ -26,8 +26,8 @@ Es relevante para el sector energético porque ofrece, con un coste computaciona
 | Dataset de entrenamiento | `hsilvosa/entsoe-day-ahead` (ENTSO-E Transparency Platform, zona PT) |
 | Muestras de entrenamiento | 96.665 observaciones (2023-2026) |
 | Número de features | 37 |
-| Tamaño del repositorio | 0,0 GB según HuggingFace (artefacto de tamaño reducido) |
-| Última actualización | 2026-09-24 según HuggingFace |
+| Tamaño del repositorio | 0,0 GB según Hugging Face (artefacto de tamaño reducido) |
+| Última actualización | 2026-09-24 según Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ Contexto indicado en la model card: el objetivo de cobertura del intervalo P10-P
 ## Requisitos de hardware
 
 - VRAM necesaria: ninguna. LightGBM realiza inferencia en CPU; no se requiere GPU en ningún escenario.
-- Memoria RAM: no disponible de forma explícita. El repositorio ocupa 0,0 GB según HuggingFace, por lo que el artefacto `models.joblib` (tres modelos cuantílicos sobre 96.665 muestras y 37 features) es de tamaño reducido y se carga íntegramente en el proceso de Python.
+- Memoria RAM: no disponible de forma explícita. El repositorio ocupa 0,0 GB según Hugging Face, por lo que el artefacto `models.joblib` (tres modelos cuantílicos sobre 96.665 muestras y 37 features) es de tamaño reducido y se carga íntegramente en el proceso de Python.
 - GPU recomendadas: no aplica. No se documenta ningún backend de aceleración por GPU.
 - Compatibilidad con hardware de consumo: sí, cualquier máquina capaz de ejecutar Python y LightGBM (portátil convencional, servidor pequeño o instancia cloud de gama baja) puede servir el modelo.
 - Opciones de despliegue: la model card solo documenta la descarga del artefacto con `hf_hub_download` y su carga con `joblib.load()`, seguida de llamadas a `models[q].predict(X)`. No se mencionan vLLM, llama.cpp, Ollama, TGI ni ninguna otra plataforma de servicio, ya que no son aplicables a este tipo de modelo.
@@ -95,7 +95,7 @@ No se han identificado en la información proporcionada otras fichas de modelos 
 
 | Modelo | Tipo | MAE (MW) | Cobertura del intervalo | Licencia | Disponibilidad |
 |---|---|---:|---|---|---|
-| `nesoai/portugal-electricity-demand-forecaster` | LightGBM cuantílico con calibración conformal | 45,528 | 78,4% (nominal 80%) | Apache 2.0 | HuggingFace |
+| `nesoai/portugal-electricity-demand-forecaster` | LightGBM cuantílico con calibración conformal | 45,528 | 78,4% (nominal 80%) | Apache 2.0 | Hugging Face |
 | Persistencia estacional de 7 días | Baseline naive | 716,312 | No disponible | No aplica | Definido por el autor |
 | Otros modelos publicados de forecasting de demanda por zona | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -115,7 +115,7 @@ No se han identificado en la información proporcionada otras fichas de modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nesoai/portugal-electricity-demand-forecaster
+- Modelo en Hugging Face: https://huggingface.co/nesoai/portugal-electricity-demand-forecaster
 - Dataset de entrenamiento: https://huggingface.co/datasets/hsilvosa/entsoe-day-ahead
 - ENTSO-E Transparency Platform: https://transparency.entsoe.eu/
 - Paper, repositorio de código, demo o blog adicional: no disponible en la información proporcionada.

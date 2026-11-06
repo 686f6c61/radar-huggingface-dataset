@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una version "uncensored" (sin censura) del modelo multimodal Gemma 4 E4B-IT de Google, creada por el usuario HauhauCS mediante la tecnica de abliteration, que elimina los rechazos (refusals) del modelo original. El repositorio en HuggingFace pertenece al usuario burningfeet, que actua como mirror del trabajo de HauhauCS. El modelo base es `google/gemma-4-e4b-it`, un modelo de 4B parametros efectivos (7.5B totales, probablemente arquitectura MoE) con soporte nativo para texto, imagen, video y audio, y una ventana de contexto de 131K tokens.
+Este modelo es una version "uncensored" (sin censura) del modelo multimodal Gemma 4 E4B-IT de Google, creada por el usuario HauhauCS mediante la tecnica de abliteration, que elimina los rechazos (refusals) del modelo original. El repositorio en Hugging Face pertenece al usuario burningfeet, que actua como mirror del trabajo de HauhauCS. El modelo base es `google/gemma-4-e4b-it`, un modelo de 4B parametros efectivos (7.5B totales, probablemente arquitectura MoE) con soporte nativo para texto, imagen, video y audio, y una ventana de contexto de 131K tokens.
 
 La variante "Aggressive" aplica un uncensoring mas fuerte, dejando el modelo completamente desbloqueado y sin rechazos, aunque puede anadir breves descargos de responsabilidad heredados del entrenamiento base. Se distribuye exclusivamente en formato GGUF con cuantizaciones personalizadas K_P (Perfect) generadas con imatrix, disenadas para preservar la calidad en pesos abliterated. Es relevante para desarrolladores que necesitan un modelo multimodal sin restricciones de seguridad para entornos controlados de investigacion o generacion creativa, aunque con riesgos importantes.
 
@@ -77,7 +77,7 @@ La comparativa se basa en informacion publica. El modelo base Gemma 4 E4B es la 
 
 ## Enlaces
 
-- Repositorio HuggingFace (burningfeet): https://huggingface.co/burningfeet/2026-03-25-.-Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
+- Repositorio Hugging Face (burningfeet): https://huggingface.co/burningfeet/2026-03-25-.-Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Repositorio original de HauhauCS: https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Modelo base google/gemma-4-e4b-it: https://huggingface.co/google/gemma-4-E4B
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

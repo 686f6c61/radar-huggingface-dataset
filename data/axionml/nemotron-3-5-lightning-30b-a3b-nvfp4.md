@@ -13,7 +13,7 @@ La cuantizacion NVFP4 es el elemento diferencial: usa un codebook E2M1 de 4 bits
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Hibrida MoE: Mamba-2 + MoE + atencion, con MTP |
-| Parametros totales | 30B declarados por la model card; el recuento de safetensors de HuggingFace indica 17.820.210.764 (~17,8B). Discrepancia no explicada en la informacion disponible |
+| Parametros totales | 30B declarados por la model card; el recuento de safetensors de Hugging Face indica 17.820.210.764 (~17,8B). Discrepancia no explicada en la informacion disponible |
 | Parametros activos | 3B |
 | Longitud de contexto | Hasta 1M tokens |
 | Tipos de cuantizacion | NVFP4 (Four-Over-Six, W4A16 en expertos enrutados y compartidos), escalas FP8 por tensor dinamicas en Mamba in_proj/out_proj, cache KV en FP8. Calibracion MSE estatica |
@@ -85,9 +85,9 @@ Configuracion de muestreo recomendada: `temperature=1.0`, `top_p=0.95`. La degra
 
 | Modelo | Parametros | Activos | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AxionML Nemotron-3.5-Lightning-30B-A3B-NVFP4 (este) | 30B declarados / ~17,8B en safetensors | 3B | 1M tokens | Ver tabla de benchmarks (NVFP4) | OpenMDW-1.1 | HuggingFace, espejo de NVIDIA |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 | 30B | 3B | 1M tokens | Identico (mismos pesos) | OpenMDW-1.1 | HuggingFace, repositorio upstream |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 30B | 3B | 1M tokens | Ver columna BF16 de la tabla | OpenMDW-1.1 | HuggingFace, repositorio upstream |
+| AxionML Nemotron-3.5-Lightning-30B-A3B-NVFP4 (este) | 30B declarados / ~17,8B en safetensors | 3B | 1M tokens | Ver tabla de benchmarks (NVFP4) | OpenMDW-1.1 | Hugging Face, espejo de NVIDIA |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 | 30B | 3B | 1M tokens | Identico (mismos pesos) | OpenMDW-1.1 | Hugging Face, repositorio upstream |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 30B | 3B | 1M tokens | Ver columna BF16 de la tabla | OpenMDW-1.1 | Hugging Face, repositorio upstream |
 | Modelos MoE de ~30B totales y ~3B activos de otros fabricantes (por ejemplo, la familia Qwen3-30B-A3B) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El modelo no aporta diferencias funcionales respecto al checkpoint upstream de NVIDIA: es una copia byte a byte redistribuida. La eleccion entre ambos es logistica (disponibilidad del repositorio), no tecnica. Frente a la version BF16, NVFP4 reduce el espacio de pesos de aproximadamente 60 GB a 22 GB con una perdida media inferior a 3 puntos en los benchmarks publicados.

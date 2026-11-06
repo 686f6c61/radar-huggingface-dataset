@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros LoRA de DreamBooth específicos para Krea 2 o modelos comparables en la misma categoría (personalización de difusión). Dado que el modelo base Krea 2 es relativamente reciente, no hay suficientes adaptadores públicos para establecer una comparativa fiable. Se recomienda consultar el catálogo de LoRA en HuggingFace para encontrar alternativas sobre otros modelos base (p. ej., Stable Diffusion XL), aunque las diferencias en arquitectura y licencia dificultan una comparación directa.
+No se dispone de información sobre otros LoRA de DreamBooth específicos para Krea 2 o modelos comparables en la misma categoría (personalización de difusión). Dado que el modelo base Krea 2 es relativamente reciente, no hay suficientes adaptadores públicos para establecer una comparativa fiable. Se recomienda consultar el catálogo de LoRA en Hugging Face para encontrar alternativas sobre otros modelos base (p. ej., Stable Diffusion XL), aunque las diferencias en arquitectura y licencia dificultan una comparación directa.
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de información sobre otros LoRA de DreamBooth específicos para K
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/filulilu/aprilgirl)
+- [Modelo en Hugging Face](https://huggingface.co/filulilu/aprilgirl)
 - [Documentación del trainer Krea 2 en diffusers](https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_krea2.md)
 - [Paper de DreamBooth](https://dreambooth.github.io/)
 - [Documentación de carga de LoRA en diffusers](https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters)

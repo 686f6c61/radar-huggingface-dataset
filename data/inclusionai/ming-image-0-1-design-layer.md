@@ -6,7 +6,7 @@ Ming-Image-0.1-Design-Layer es un modelo de difusion para descomposicion de dise
 
 El modelo se distribuye a traves de la libreria diffusers con pipeline `image-text-to-image`: recibe una imagen de entrada y, opcionalmente, un prompt que describe el plan de capas (cuantas capas y que debe contener cada una). Si se omite el prompt, basta con indicar el numero de capas mediante `--num-layers`. La salida son ficheros PNG en formato RGBA que preservan la relacion de aspecto de la imagen original.
 
-Cuenta con aproximadamente 6.154.908.736 parametros (unos 6,15 mil millones) y un repositorio de 65,2 GB en HuggingFace. Se libera bajo licencia MIT, lo que permite uso comercial sin restricciones de royalties. La configuracion validada por el autor requiere una GPU CUDA con 80 GiB de VRAM, 12 pasos de muestreo, escala CFG de 2,0 y precision BF16, con una resolucion de trabajo recomendada de 1024 (o 512 para descomposiciones mas rapidas). Es relevante ahora porque automatiza un cuello de botella clasico en los flujos de produccion de diseno grafico: la separacion manual de capas en herramientas como Photoshop o Figma.
+Cuenta con aproximadamente 6.154.908.736 parametros (unos 6,15 mil millones) y un repositorio de 65,2 GB en Hugging Face. Se libera bajo licencia MIT, lo que permite uso comercial sin restricciones de royalties. La configuracion validada por el autor requiere una GPU CUDA con 80 GiB de VRAM, 12 pasos de muestreo, escala CFG de 2,0 y precision BF16, con una resolucion de trabajo recomendada de 1024 (o 512 para descomposiciones mas rapidas). Es relevante ahora porque automatiza un cuello de botella clasico en los flujos de produccion de diseno grafico: la separacion manual de capas en herramientas como Photoshop o Figma.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| Ming-Image-0.1-Design-Layer | 6.154.908.736 | No aplica | MIT | HuggingFace (diffusers, safetensors) | No disponibles |
+| Ming-Image-0.1-Design-Layer | 6.154.908.736 | No aplica | MIT | Hugging Face (diffusers, safetensors) | No disponibles |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -88,12 +88,12 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - Contexto: se trata de un modelo de imagen, no de un modelo de lenguaje; no admite conversaciones multi-turno ni ventanas de contexto de texto.
 - Requisitos de hardware: la configuracion validada exige 80 GiB de VRAM, lo que excluye el despliegue en GPUs de consumo sin ajustes no documentados.
 - Licencia: MIT, sin restricciones conocidas para uso comercial. Se debe conservar el aviso de licencia correspondiente.
-- Produccion: no hay datos publicados de latencia, throughput ni estabilidad en cargas concurrentes. El campo `inference: false` de la model card indica que la inferencia no esta habilitada en la infraestructura de HuggingFace, por lo que hay que desplegarlo en infraestructura propia mediante diffusers o vLLM-Omni.
+- Produccion: no hay datos publicados de latencia, throughput ni estabilidad en cargas concurrentes. El campo `inference: false` de la model card indica que la inferencia no esta habilitada en la infraestructura de Hugging Face, por lo que hay que desplegarlo en infraestructura propia mediante diffusers o vLLM-Omni.
 - Fecha del modelo: los metadatos indican creacion en septiembre de 2026; conviene verificar la version vigente del repositorio acompanante antes de integrarlo, ya que los ajustes de inferencia pueden cambiar entre revisiones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design-Layer
 - Repositorio de codigo Ming-Image: https://github.com/inclusionAI/Ming-Image
 - Demo de descomposicion de capas: https://github.com/inclusionAI/Ming-Image#layer-decomposition-demo
 - Reescritura de prompt para descomposicion de capas: https://github.com/inclusionAI/Ming-Image#layer-decomposition-prompt-rewriting

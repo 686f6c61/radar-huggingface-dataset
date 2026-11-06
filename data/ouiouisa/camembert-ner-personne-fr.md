@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ouiouisa/camembert-ner-personne-fr es un modelo de clasificación de tokens (token-classification) publicado en HuggingFace Hub por el usuario Ouiouisa. El identificador y los tags del repositorio apuntan a un modelo de reconocimiento de entidades nombradas (NER) construido sobre la familia CamemBERT y orientado a la detección de personas ("personne") en textos en francés, aunque ni la model card ni los metadatos del repositorio confirman explícitamente el idioma, el dominio de entrenamiento ni el conjunto de etiquetas. El repositorio no incluye una model card descriptiva: el README es la plantilla automática de HuggingFace con todos los campos marcados como "[More Information Needed]".
+Ouiouisa/camembert-ner-personne-fr es un modelo de clasificación de tokens (token-classification) publicado en Hugging Face Hub por el usuario Ouiouisa. El identificador y los tags del repositorio apuntan a un modelo de reconocimiento de entidades nombradas (NER) construido sobre la familia CamemBERT y orientado a la detección de personas ("personne") en textos en francés, aunque ni la model card ni los metadatos del repositorio confirman explícitamente el idioma, el dominio de entrenamiento ni el conjunto de etiquetas. El repositorio no incluye una model card descriptiva: el README es la plantilla automática de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El dato objetivo más relevante es el recuento de parámetros real, extraído de los pesos en safetensors: 110.032.898 parámetros, con un tamaño de repositorio de aproximadamente 0,4 GB. Esa cifra es coherente con la configuración "base" de CamemBERT (encoder tipo RoBERTa de ~110 M de parámetros), lo que sitúa al modelo en la gama de encoders ligeros aptos para inferencia en CPU y en GPU de consumo. La relevancia práctica es limitada por el momento: el repositorio registra 0 descargas y 0 "likes", no declara licencia ni idiomas soportados, y no aporta datos de entrenamiento, evaluación ni ejemplos de uso.
 
@@ -34,10 +34,10 @@ No hay ningún dato sobre el procedimiento de entrenamiento: se desconoce el cor
 
 ## Capacidades
 
-- Clasificación de tokens (token-classification) como tarea principal declarada en la pipeline de HuggingFace.
+- Clasificación de tokens (token-classification) como tarea principal declarada en la pipeline de Hugging Face.
 - Presunta detección de entidades de tipo persona en textos en francés, inferida del sufijo `ner-personne-fr` del identificador; no confirmada por la model card.
 - Integración directa con `transformers` mediante `AutoModelForTokenClassification` y `AutoTokenizer` (sujeto a que el repositorio incluya los ficheros de tokenizador necesarios).
-- Compatibilidad declarada con HuggingFace Inference Endpoints a través del tag `endpoints_compatible`.
+- Compatibilidad declarada con Hugging Face Inference Endpoints a través del tag `endpoints_compatible`.
 - Generación de texto: no disponible; un encoder de clasificación de tokens no genera texto de forma nativa.
 - Razonamiento, matemáticas, código: no disponible.
 - Tool calling / function calling: no disponible.
@@ -69,22 +69,22 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: no se requiere hardware de gama alta. Cualquier GPU moderna sirve, incluidas RTX 3060, RTX 4090, T4, L4, A10, A100 o H100; las GPU de datacenter solo tienen sentido para servir grandes volúmenes de peticiones en paralelo.
 - Cabe sobradamente en GPU de consumo: sí, en cualquier modelo con al menos 2 GB de VRAM (GTX 1050 Ti, RTX 2060, RTX 3060, RTX 4090, entre otras).
 - Ejecución en CPU: viable para lotes moderados, ya que se trata de un encoder de ~110 M de parámetros.
-- Opciones de despliegue: pipeline de `transformers`, HuggingFace Inference Endpoints (tag `endpoints_compatible`), Text Generation Inference (TGI) para token-classification, vLLM, ONNX Runtime y exportación a formatos optimizados. El uso con llama.cpp/Ollama requeriría conversión a GGUF y no es un camino estándar para modelos de clasificación de tokens.
+- Opciones de despliegue: pipeline de `transformers`, Hugging Face Inference Endpoints (tag `endpoints_compatible`), Text Generation Inference (TGI) para token-classification, vLLM, ONNX Runtime y exportación a formatos optimizados. El uso con llama.cpp/Ollama requeriría conversión a GGUF y no es un camino estándar para modelos de clasificación de tokens.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de velocidad, y dependerán del hardware, del tamaño de lote y de la longitud de las secuencias.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ouiouisa/camembert-ner-personne-fr | 110.032.898 | No disponible | No disponible | Repositorio HuggingFace, 0 descargas | Objeto de esta ficha |
-| camembert-base | No disponible en la informacion proporcionada | No disponible | No disponible | Repositorio publico en HuggingFace | Modelo base de la familia indicada por el tag `camembert`; no es un modelo NER por si mismo |
-| Modelos NER en frances de la comunidad (por ejemplo, variantes basadas en CamemBERT o en XLM-R y modelos de la libreria Flair) | No disponible | No disponible | No disponible | Repositorios publicos en HuggingFace | Alternativas habituales de la misma categoria; no se dispone de datos verificados en la informacion proporcionada |
+| Ouiouisa/camembert-ner-personne-fr | 110.032.898 | No disponible | No disponible | Repositorio Hugging Face, 0 descargas | Objeto de esta ficha |
+| camembert-base | No disponible en la informacion proporcionada | No disponible | No disponible | Repositorio publico en Hugging Face | Modelo base de la familia indicada por el tag `camembert`; no es un modelo NER por si mismo |
+| Modelos NER en frances de la comunidad (por ejemplo, variantes basadas en CamemBERT o en XLM-R y modelos de la libreria Flair) | No disponible | No disponible | No disponible | Repositorios publicos en Hugging Face | Alternativas habituales de la misma categoria; no se dispone de datos verificados en la informacion proporcionada |
 
 No se dispone de datos de rendimiento, contexto o licencia de los modelos comparados dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. Cualquier elección entre estas alternativas debería basarse en una evaluación propia sobre un corpus de validación en francés.
 
 ## Limitaciones y advertencias
 
-- Model card vacía: el README es la plantilla automática de HuggingFace, con todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) sin cumplimentar.
+- Model card vacía: el README es la plantilla automática de Hugging Face, con todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) sin cumplimentar.
 - Licencia no declarada: sin licencia explícita, no puede asumirse permiso para uso comercial; en ausencia de términos, rige el régimen por defecto de derechos de autor, lo que desaconseja su integración en productos.
 - Idiomas no declarados: aunque el nombre sugiere francés, no hay confirmación oficial; el comportamiento en otros idiomas es impredecible.
 - Conjunto de etiquetas desconocido: no se documenta el mapeo `id2label`, por lo que no puede confirmarse que el modelo detecte únicamente personas ni qué etiquetas adicionales emite.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento, contexto o licencia de los modelos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ouiouisa/camembert-ner-personne-fr
+- Modelo en Hugging Face: https://huggingface.co/Ouiouisa/camembert-ner-personne-fr
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla de model card: https://mlco2.github.io/impact
 - Repositorio, paper, demo o blog del autor: no disponibles en la información proporcionada.

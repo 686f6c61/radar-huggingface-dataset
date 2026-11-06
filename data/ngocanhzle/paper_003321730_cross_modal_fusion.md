@@ -61,7 +61,7 @@ No disponible: este repositorio no es un modelo y no puede compararse con altern
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/NgocanhZle/paper_003321730_cross_modal_fusion
+- Repositorio de Hugging Face: https://huggingface.co/NgocanhZle/paper_003321730_cross_modal_fusion
 - Articulo de referencia (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1546221824005216
 - Articulo sobre GaussianFusion (arXiv): https://arxiv.org/abs/2607.00746
 - Articulo sobre destilacion cross-modal sin datos emparejados (arXiv): https://arxiv.org/abs/2606.10504

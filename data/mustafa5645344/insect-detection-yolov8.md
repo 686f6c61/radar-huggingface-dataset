@@ -4,7 +4,7 @@
 
 El modelo `insect-detection-yolov8` es un detector de objetos basado en YOLOv8m (variante media) fine-tuneado por Mustafa5645344 para la detección en tiempo real de plagas de insectos en entornos agrícolas. El autor lo ha entrenado sobre 50.000 imágenes aumentadas procedentes del dataset de Roboflow `specifly-3-rwm7i`, que incluye 18 clases de insectos comunes en campos e invernaderos. El modelo está pensado para integrarse en sistemas de monitorización de plagas, trampas inteligentes y aplicaciones de agricultura de precisión.
 
-La relevancia de este modelo radica en su equilibrio entre precisión y velocidad: alcanza un mAP@50 de 85,72 % con una latencia de inferencia de 1,5 ms por imagen en una NVIDIA A100, lo que lo hace adecuado para despliegues en tiempo real. Al estar licenciado bajo MIT y basado en el ecosistema Ultralytics, su integración en pipelines existentes es directa. Sin embargo, hay que señalar que el repositorio de HuggingFace no contiene los pesos del modelo (el tamaño del repo es 0,0 GB), por lo que el acceso a los pesos reales no está confirmado.
+La relevancia de este modelo radica en su equilibrio entre precisión y velocidad: alcanza un mAP@50 de 85,72 % con una latencia de inferencia de 1,5 ms por imagen en una NVIDIA A100, lo que lo hace adecuado para despliegues en tiempo real. Al estar licenciado bajo MIT y basado en el ecosistema Ultralytics, su integración en pipelines existentes es directa. Sin embargo, hay que señalar que el repositorio de Hugging Face no contiene los pesos del modelo (el tamaño del repo es 0,0 GB), por lo que el acceso a los pesos reales no está confirmado.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de deteccion
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene los pesos del modelo (tamano del repo: 0,0 GB). El codigo de ejemplo descarga `best.pt`, pero no se confirma que el archivo exista realmente en el repositorio. Es posible que el autor no haya subido los pesos.
+- El repositorio de Hugging Face no contiene los pesos del modelo (tamano del repo: 0,0 GB). El codigo de ejemplo descarga `best.pt`, pero no se confirma que el archivo exista realmente en el repositorio. Es posible que el autor no haya subido los pesos.
 - El rendimiento por clase es muy desigual: la clase `mantis` tiene un mAP@50 de solo 0,361, y `aphid` de 0,669, lo que indica problemas de deteccion en clases con pocas instancias o alta variabilidad.
 - El dataset de entrenamiento proviene de una unica fuente (Roboflow `specifly-3-rwm7i`), por lo que el modelo puede no generalizar bien a otros entornos, condiciones de iluminacion o especies no representadas.
 - No se documentan sesgos especificos, pero es probable que el modelo tenga dificultades con insectos pequenos o camuflados, como pulgones, y con imagenes de baja resolucion.
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de deteccion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mustafa5645344/insect-detection-yolov8
+- Repositorio en Hugging Face: https://huggingface.co/Mustafa5645344/insect-detection-yolov8
 - Proyecto similar en GitHub (deteccion de insectos con YOLOv8): https://github.com/shruthiprem4/insect-detection-using-yolo-v8
 - Modelo YOLOv8n para deteccion de insectos en CamThink: https://www.camthink.ai/developer-center/models/yolov8-insectdetect/
 - Articulo cientifico sobre YOLOv8x optimizado para plagas (Nature): https://www.nature.com/articles/s41598-025-97825-3

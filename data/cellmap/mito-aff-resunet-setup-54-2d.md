@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre este modelo y sus altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cellmap/mito-aff-resunet-setup-54-2d
+- Modelo en Hugging Face: https://huggingface.co/cellmap/mito-aff-resunet-setup-54-2d
 - Modelo profesor (teacher) 3D: https://huggingface.co/cellmap/mito-aff-resunet-setup-54
 - Version ONNX para web: https://huggingface.co/cellmap/onnx-web-models
 - Repositorio de la libreria: https://github.com/janelia-cellmap/cellmap-models

@@ -71,6 +71,6 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luotianze666/RiT_ckpts
+- Hugging Face: https://huggingface.co/luotianze666/RiT_ckpts
 - Paper (OpenReview): https://openreview.net/forum?id=FwWaPhPb2O
 - Repositorio de código: https://github.com/luotianze666/RiT

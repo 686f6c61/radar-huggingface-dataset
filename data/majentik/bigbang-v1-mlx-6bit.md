@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/majentik/BigBang-v1-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/majentik/BigBang-v1-MLX-6bit
 - Modelo base: https://huggingface.co/endless-frontier/BigBang-v1
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm
-- Otras versiones cuantizadas (2, 3, 4, 5, 8 bits y MXFP4): disponibles en el perfil de majentik en HuggingFace.
+- Otras versiones cuantizadas (2, 3, 4, 5, 8 bits y MXFP4): disponibles en el perfil de majentik en Hugging Face.

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace (conversion GGUF): https://huggingface.co/fabricant451/strands-decider-2B-hobson-v19-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
+- Hugging Face (conversion GGUF): https://huggingface.co/fabricant451/strands-decider-2B-hobson-v19-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
 - Revision del modelo fuente: bb282d786bc251fd4e3068de3ada9ddbb38127cd
 - Revision de la base (inferida): b1485b2fa6dfa1287294f269f5fb618e03d52d7c

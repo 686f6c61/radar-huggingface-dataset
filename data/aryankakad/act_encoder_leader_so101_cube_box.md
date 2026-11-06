@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aryankakad/act_encoder_leader_so101_cube_box` es una politica de robotica basada en ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice trozos de acciones (action chunks) en lugar de pasos individuales. Lo publica el usuario aryankakad en HuggingFace y se ha entrenado y subido con LeRobot, la libreria de HuggingFace para aprendizaje automatico en robotica real. El modelo resuelve una unica tarea manipulativa: coger un cubo y colocarlo en una caja, sobre un brazo SO-101 en configuracion follower.
+`aryankakad/act_encoder_leader_so101_cube_box` es una politica de robotica basada en ACT (Action Chunking with Transformers), un metodo de aprendizaje por imitacion que predice trozos de acciones (action chunks) en lugar de pasos individuales. Lo publica el usuario aryankakad en Hugging Face y se ha entrenado y subido con LeRobot, la libreria de Hugging Face para aprendizaje automatico en robotica real. El modelo resuelve una unica tarea manipulativa: coger un cubo y colocarlo en una caja, sobre un brazo SO-101 en configuracion follower.
 
 Tecnicamente es un transformer encoder-decoder con CVAE de 51.668.614 parametros (unos 51,7 M), que consume el estado de las articulaciones (vector de 6 dimensiones) y dos flujos de imagen de 480x640 (camara superior y camara del gripper), y produce un vector de accion de 6 dimensiones. No es un modelo de lenguaje ni un modelo fundacional: es una politica visomotora de proposito especifico, entrenada con 30 episodios de teleoperacion (23.239 fotogramas a 30 FPS).
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Tipo | Parametros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aryankakad/act_encoder_leader_so101_cube_box` | ACT (imitation learning) | 51,7 M | Estado (6,) + 2 imagenes 480x640 | Apache 2.0 | HuggingFace, via LeRobot |
+| `aryankakad/act_encoder_leader_so101_cube_box` | ACT (imitation learning) | 51,7 M | Estado (6,) + 2 imagenes 480x640 | Apache 2.0 | Hugging Face, via LeRobot |
 | ACT generico (LeRobot) | ACT (imitation learning) | ~51 M segun configuracion | Configurable por dataset | Apache 2.0 (LeRobot) | Repositorio y documentacion de LeRobot |
 | Diffusion Policy (Chi et al.) | Politica por difusion | no disponible | Imagenes + estado del robot | no disponible en esta busqueda | Paper y repositorio publicos |
-| SmolVLA (HuggingFace) | VLA (vision-language-action) | no disponible en esta busqueda | Imagenes + instruccion en lenguaje | no disponible en esta busqueda | Ecosistema LeRobot |
+| SmolVLA (Hugging Face) | VLA (vision-language-action) | no disponible en esta busqueda | Imagenes + instruccion en lenguaje | no disponible en esta busqueda | Ecosistema LeRobot |
 
 No se dispone de datos de rendimiento comparativos publicados para este modelo concreto, por lo que la comparacion se limita a tipo, licencia y disponibilidad. Cualquier comparacion de tasa de exito quedaria pendiente de una evaluacion en el mismo montaje fisico.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos publicados para este modelo c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aryankakad/act_encoder_leader_so101_cube_box
+- Modelo en Hugging Face: https://huggingface.co/aryankakad/act_encoder_leader_so101_cube_box
 - Dataset de entrenamiento: https://huggingface.co/datasets/aryankakad/encoder_leader_teleop_so101_cube_box_30eps
 - Visualizacion del dataset en LeRobot Spaces: https://huggingface.co/spaces/lerobot/visualize_dataset?path=aryankakad/encoder_leader_teleop_so101_cube_box_30eps
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

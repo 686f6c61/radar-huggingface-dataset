@@ -76,5 +76,5 @@ No disponible. Al no ser un modelo de IA, no existe una categoria comparable de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Krishnaprathap/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/Krishnaprathap/tds-carbon-card
 - Herramienta CodeCarbon (mencionada en la model card): https://codecarbon.io/ (enlace externo, no verificado en la informacion proporcionada)

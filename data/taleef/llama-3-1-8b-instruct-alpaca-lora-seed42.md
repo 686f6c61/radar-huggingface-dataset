@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-Alpaca-LoRA-seed42 es un ajuste fino (fine-tuning) mediante LoRA sobre meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario taleef en HuggingFace. El modelo se ha entrenado sobre el dataset yahma/alpaca-cleaned (51.760 ejemplos, una época) con semilla fija 42, y forma parte de los checkpoints evaluados en el artículo "Adaptation, Not Algorithm: LoRA and Full Fine-Tuning Show Comparable Black-Box Jailbreak Degradation in Five Open-Weight LLMs" (Tamsal y Rusert, Findings of AACL-IJCNLP 2026).
+Llama-3.1-8B-Instruct-Alpaca-LoRA-seed42 es un ajuste fino (fine-tuning) mediante LoRA sobre meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario taleef en Hugging Face. El modelo se ha entrenado sobre el dataset yahma/alpaca-cleaned (51.760 ejemplos, una época) con semilla fija 42, y forma parte de los checkpoints evaluados en el artículo "Adaptation, Not Algorithm: LoRA and Full Fine-Tuning Show Comparable Black-Box Jailbreak Degradation in Five Open-Weight LLMs" (Tamsal y Rusert, Findings of AACL-IJCNLP 2026).
 
 El interés del modelo es fundamentalmente de investigación en seguridad: se emplea como punto de medida para estudiar cómo el ajuste fino (LoRA frente a fine-tuning completo) degrada las defensas frente a jailbreaks en modelos abiertos. No es un modelo pensado para producción ni para uso comercial directo, sino un artefacto experimental reproducible (semilla fija) que permite comparar el efecto de distintos métodos de adaptación sobre el comportamiento de seguridad.
 
@@ -22,13 +22,13 @@ La base es Llama 3.1 8B Instruct, un transformer decoder-only de 8.030 millones 
 | Metodo de ajuste | LoRA sobre meta-llama/Llama-3.1-8B-Instruct |
 | Dataset de entrenamiento | yahma/alpaca-cleaned (51.760 ejemplos, 1 epoca) |
 | Semilla | 42 |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
 El modelo parte de la arquitectura Llama 3.1 8B Instruct de Meta: un transformer decoder-only con 8.030 millones de parametros, atencion con consultas agrupadas (GQA) y ventana de contexto de 131.072 tokens. Sobre esta base se ha aplicado un ajuste fino de bajo rango (LoRA) usando el dataset yahma/alpaca-cleaned (51.760 ejemplos) durante una unica epoca y con la semilla fijada a 42. El repositorio ocupa 16,1 GB, un tamano consistente con pesos fusionados en precision bf16/fp16 del modelo completo.
 
-No se detallan en la informacion disponible los hiperparametros exactos de LoRA (rango, alpha, tasa de aprendizaje, modulos objetivo) ni la composicion pormenorizada del dataset mas alla del identificador de HuggingFace. Tampoco se indica si hubo etapas posteriores de RLHF o DPO. La innovacion relevante no es arquitectonica, sino metodologica: el checkpoint es una pieza reproducible (semilla fija) dentro de un estudio controlado que compara LoRA y fine-tuning completo en cinco LLMs abiertos, midiendo la degradacion de comportamiento frente a jailbreaks.
+No se detallan en la informacion disponible los hiperparametros exactos de LoRA (rango, alpha, tasa de aprendizaje, modulos objetivo) ni la composicion pormenorizada del dataset mas alla del identificador de Hugging Face. Tampoco se indica si hubo etapas posteriores de RLHF o DPO. La innovacion relevante no es arquitectonica, sino metodologica: el checkpoint es una pieza reproducible (semilla fija) dentro de un estudio controlado que compara LoRA y fine-tuning completo en cinco LLMs abiertos, midiendo la degradacion de comportamiento frente a jailbreaks.
 
 ## Capacidades
 
@@ -79,14 +79,14 @@ La diferencia principal frente a las alternativas es el proposito: mientras el m
 - El ajuste sobre Alpaca puede haber degradado las defensas del modelo base frente a jailbreaks; es precisamente el objeto de estudio del articulo, por lo que no debe desplegarse como asistente de produccion sin evaluacion de seguridad propia.
 - Sesgos: no se documenta ninguna evaluacion de sesgo ni de toxicidad para este checkpoint concreto.
 - Idioma: la etiqueta declara unicamente ingles; el rendimiento en castellano u otros idiomas no esta verificado y podria degradarse respecto al modelo base.
-- Licencia Llama 3.1: impone restricciones de uso comercial (politica de uso aceptable de Meta); el acceso esta restringido y requiere aceptar condiciones en HuggingFace.
+- Licencia Llama 3.1: impone restricciones de uso comercial (politica de uso aceptable de Meta); el acceso esta restringido y requiere aceptar condiciones en Hugging Face.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento en tareas estandar que respalde su uso fuera de la investigacion.
 - Repositorio sin descargas ni likes: no hay validacion de la comunidad sobre el comportamiento practico del checkpoint.
 - No se publican cuantizaciones oficiales ni recetas de despliegue; cualquier optimizacion de inferencia debe realizarla el usuario.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taleef/Llama-3.1-8B-Instruct-Alpaca-LoRA-seed42
+- Modelo en Hugging Face: https://huggingface.co/taleef/Llama-3.1-8B-Instruct-Alpaca-LoRA-seed42
 - Variante de fine-tuning completo del mismo autor: https://huggingface.co/taleef/Llama-3.1-8B-Instruct-Alpaca-FFT-seed42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/yahma/alpaca-cleaned

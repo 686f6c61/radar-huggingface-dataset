@@ -74,8 +74,8 @@ El articulo reporta un agregado de 0.942 en su ejecucion principal de 7B (Tabla 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhysAgentGym-Qwen2.5-Coder-7B | 7B (base) + LoRA | no disponible | Agente de fisica con verificadores | Apache 2.0 | HuggingFace (9 descargas) |
-| Qwen2.5-Coder-7B-Instruct | 7B | no disponible | Codigo general e instrucciones | Apache 2.0 | HuggingFace (ampliamente usado) |
+| PhysAgentGym-Qwen2.5-Coder-7B | 7B (base) + LoRA | no disponible | Agente de fisica con verificadores | Apache 2.0 | Hugging Face (9 descargas) |
+| Qwen2.5-Coder-7B-Instruct | 7B | no disponible | Codigo general e instrucciones | Apache 2.0 | Hugging Face (ampliamente usado) |
 | Alternativas especializadas en fisica/ciencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas en la informacion proporcionada. La comparacion mas directa es con el modelo base Qwen2.5-Coder-7B-Instruct, sobre el que se aplica el adaptador; el adaptador anade especializacion en el bucle PhysAgentGym a costa de un posible estrechamiento de las capacidades generales de codigo.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lamamkh/PhysAgentGym-Qwen2.5-Coder-7B
+- Modelo en Hugging Face: https://huggingface.co/lamamkh/PhysAgentGym-Qwen2.5-Coder-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Pagina del proyecto: https://lamawmouk.github.io/PhysAgentGym/
 - Codigo: https://github.com/lamawmouk/PhysAgentGym

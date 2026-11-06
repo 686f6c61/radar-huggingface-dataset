@@ -2,9 +2,9 @@
 
 ## Resumen
 
-xw17/Qwen2.5-14B-Instruct_SFT_lora_glycemic es un repositorio publicado en HuggingFace por el usuario xw17 que, por su identificador y por el tamaño del repositorio (0,1 GB), corresponde a un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-14B-Instruct. El sufijo "SFT_lora_glycemic" indica que se trata de un entrenamiento supervisado (SFT) con adaptadores de bajo rango (LoRA) orientado a un dominio relacionado con la glucosa o el control glucémico, previsiblemente en el ámbito clínico o sanitario. Esta interpretación procede exclusivamente del nombre del repositorio, ya que la model card no aporta ninguna descripción funcional.
+xw17/Qwen2.5-14B-Instruct_SFT_lora_glycemic es un repositorio publicado en Hugging Face por el usuario xw17 que, por su identificador y por el tamaño del repositorio (0,1 GB), corresponde a un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-14B-Instruct. El sufijo "SFT_lora_glycemic" indica que se trata de un entrenamiento supervisado (SFT) con adaptadores de bajo rango (LoRA) orientado a un dominio relacionado con la glucosa o el control glucémico, previsiblemente en el ámbito clínico o sanitario. Esta interpretación procede exclusivamente del nombre del repositorio, ya que la model card no aporta ninguna descripción funcional.
 
-El repositorio no incluye información sustantiva: la model card es la plantilla genérica autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]". No se declaran licencia, idiomas, pipeline, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y el tamaño de 0,1 GB es coherente con un conjunto de adaptadores LoRA más los ficheros de configuración del tokenizador, no con los pesos completos de un modelo de 14 000 millones de parámetros.
+El repositorio no incluye información sustantiva: la model card es la plantilla genérica autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]". No se declaran licencia, idiomas, pipeline, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y el tamaño de 0,1 GB es coherente con un conjunto de adaptadores LoRA más los ficheros de configuración del tokenizador, no con los pesos completos de un modelo de 14 000 millones de parámetros.
 
 Se trata, por tanto, de un artefacto de investigación en estado embrionario y sin documentación. Cualquier evaluación de su calidad, seguridad o idoneidad para uso clínico es imposible con la información disponible; se recomienda tratarlo como material experimental no apto para producción ni para decisiones que afecten a pacientes.
 
@@ -30,7 +30,7 @@ Se trata, por tanto, de un artefacto de investigación en estado embrionario y s
 
 No hay información publicada sobre la arquitectura concreta de este ajuste ni sobre su procedimiento de entrenamiento. La model card no describe la arquitectura, los datos de entrenamiento, el número de tokens, la composición del dataset, ni si se aplicaron técnicas de alineación adicionales (RLHF, DPO, ORPO). Todos los campos de las secciones "Model Details", "Training Details" y "Evaluation" aparecen como "[More Information Needed]".
 
-Lo único inferible del identificador es la combinación "SFT" más "lora", que apunta a un ajuste supervisado con adaptadores de bajo rango sobre el modelo instructivo Qwen2.5-14B-Instruct, presumiblemente especializado en contenido glucémico. El tamaño del repositorio (0,1 GB) confirma que no se han subido los pesos fusionados ni el checkpoint base, solo los adaptadores y los ficheros auxiliares. La etiqueta `arxiv:1910.09700` no corresponde a un artículo del modelo: es la referencia al trabajo de Lacoste et al. (2019) sobre el cálculo de emisiones de carbono, incluida de forma automática por la plantilla de la model card. La etiqueta `endpoints_compatible` indica únicamente compatibilidad con los endpoints de inferencia de HuggingFace.
+Lo único inferible del identificador es la combinación "SFT" más "lora", que apunta a un ajuste supervisado con adaptadores de bajo rango sobre el modelo instructivo Qwen2.5-14B-Instruct, presumiblemente especializado en contenido glucémico. El tamaño del repositorio (0,1 GB) confirma que no se han subido los pesos fusionados ni el checkpoint base, solo los adaptadores y los ficheros auxiliares. La etiqueta `arxiv:1910.09700` no corresponde a un artículo del modelo: es la referencia al trabajo de Lacoste et al. (2019) sobre el cálculo de emisiones de carbono, incluida de forma automática por la plantilla de la model card. La etiqueta `endpoints_compatible` indica únicamente compatibilidad con los endpoints de inferencia de Hugging Face.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ Los datos de las alternativas corresponden a sus respectivos modelos base públi
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| xw17/Qwen2.5-14B-Instruct_SFT_lora_glycemic | no disponible (adaptadores LoRA sobre un base de ~14,7 B) | no disponible | no disponible | Repositorio público en HuggingFace, 0 descargas | no disponible |
+| xw17/Qwen2.5-14B-Instruct_SFT_lora_glycemic | no disponible (adaptadores LoRA sobre un base de ~14,7 B) | no disponible | no disponible | Repositorio público en Hugging Face, 0 descargas | no disponible |
 | Qwen2.5-14B-Instruct | ~14,7 B | 32 768 tokens nativos, 131 072 con YaRN | Apache 2.0 (modelo base) | Ampliamente disponible | Benchmarks públicos del modelo base |
 | Mistral-Nemo-Instruct-2407 | ~12 B | 128 000 tokens | Apache 2.0 | Ampliamente disponible | Benchmarks públicos |
 | Phi-4 (14B) | ~14 B | 16 000 tokens | Licencia MIT | Ampliamente disponible | Benchmarks públicos |
@@ -86,7 +86,7 @@ No se dispone de ningún modelo comparable directamente en la misma tarea (ajust
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla vacía de HuggingFace; no hay información sobre datos, método, hiperparámetros ni evaluación.
+- Ausencia total de documentación: la model card es la plantilla vacía de Hugging Face; no hay información sobre datos, método, hiperparámetros ni evaluación.
 - Riesgo grave en dominio sanitario: cualquier uso relacionado con glucemia, insulina o diabetes puede causar daño si el modelo alucina cifras, dosis o pautas. No debe usarse como sistema de apoyo a decisiones clínicas sin validación prospectiva y aprobación regulatoria.
 - Riesgo de alucinación: no cuantificado. Los modelos de 14 B pueden generar datos numéricos plausibles pero incorrectos, especialmente crítico en valores analíticos.
 - Sesgos conocidos: no disponibles. Al no documentarse el dataset de ajuste, no puede evaluarse el sesgo demográfico, clínico o lingüístico.
@@ -99,7 +99,7 @@ No se dispone de ningún modelo comparable directamente en la misma tarea (ajust
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_glycemic
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_glycemic
 - Modelo base referenciado en el identificador (no enlazado por el autor): https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Artículo correspondiente a la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre emisiones de carbono, incluido automáticamente por la plantilla): https://arxiv.org/abs/1910.09700
 - Paper, blog, repositorio o demo del ajuste: no disponible.

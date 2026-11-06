@@ -2,9 +2,9 @@
 
 ## Resumen
 
-tykobayashi/tiny-transformer-demo-2023 es un repositorio experimental publicado en HuggingFace por el usuario tykobayashi que contiene la implementacion de un Transformer de clasificacion de tamano minimo, con 33.088 parametros totales confirmados en el checkpoint `model.safetensors`. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explicitamente como un punto de partida de inicializacion valido unicamente para pruebas de humo ("smoke tests"), no como un checkpoint con resultados de referencia.
+tykobayashi/tiny-transformer-demo-2023 es un repositorio experimental publicado en Hugging Face por el usuario tykobayashi que contiene la implementacion de un Transformer de clasificacion de tamano minimo, con 33.088 parametros totales confirmados en el checkpoint `model.safetensors`. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe explicitamente como un punto de partida de inicializacion valido unicamente para pruebas de humo ("smoke tests"), no como un checkpoint con resultados de referencia.
 
-El interes del repositorio es fundamentalmente didactico y de investigacion sobre arquitectura, no de produccion. Incluye `model.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de entrenamiento por defecto (optimizador AdamW con esquema de warmup constante) y el checkpoint de inicializacion. La model card indica que la implementacion es personalizada, por lo que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder utilizarla.
+El interes del repositorio es fundamentalmente didactico y de investigacion sobre arquitectura, no de produccion. Incluye `model.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de entrenamiento por defecto (optimizador AdamW con esquema de warmup constante) y el checkpoint de inicializacion. La model card indica que la implementacion es personalizada, por lo que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder utilizarla.
 
 Es relevante ahora como referencia de bajo coste para inspeccionar cambios de arquitectura antes de lanzar ejecuciones de entrenamiento completas, y como ejemplo de practicas de documentacion honestas: el autor no reclama ninguna puntuacion de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -83,7 +83,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tykobayashi/tiny-transformer-demo-2023
+- Repositorio en Hugging Face: https://huggingface.co/tykobayashi/tiny-transformer-demo-2023
 - Repositorio homonimo orientado a generacion (Adaezeokafo): https://huggingface.co/Adaezeokafo/tiny-transformer-demo-2023
 - Repositorio GitHub TinyTransformer (akio-kobayashi): https://github.com/akio-kobayashi/TinyTransformer
 - Repositorio GitHub TinyTransformer (skolouri): https://github.com/skolouri/TinyTransformer

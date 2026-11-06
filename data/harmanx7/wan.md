@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Harmanx7/Wan` alojado en HuggingFace se presenta como un espacio con licencia OpenRAIL y etiqueta regional de Estados Unidos, pero carece de cualquier contenido sustancial. La model card únicamente contiene un comando `curl` que apunta a un archivo `agents.md` del espacio `Wan-AI/Wan2.1`, sin incluir el resultado de dicha consulta. No se dispone de información sobre la arquitectura, los parámetros, el contexto, los idiomas o el pipeline de inferencia. Con cero descargas y cero me gusta, el repositorio parece un marcador de posición o un intento de enlazar a la familia de modelos Wan de Alibaba, conocida por sus capacidades de generación de vídeo. Sin embargo, no hay evidencia de que este repositorio contenga pesos, código o documentación técnica real.
+El repositorio `Harmanx7/Wan` alojado en Hugging Face se presenta como un espacio con licencia OpenRAIL y etiqueta regional de Estados Unidos, pero carece de cualquier contenido sustancial. La model card únicamente contiene un comando `curl` que apunta a un archivo `agents.md` del espacio `Wan-AI/Wan2.1`, sin incluir el resultado de dicha consulta. No se dispone de información sobre la arquitectura, los parámetros, el contexto, los idiomas o el pipeline de inferencia. Con cero descargas y cero me gusta, el repositorio parece un marcador de posición o un intento de enlazar a la familia de modelos Wan de Alibaba, conocida por sus capacidades de generación de vídeo. Sin embargo, no hay evidencia de que este repositorio contenga pesos, código o documentación técnica real.
 
 ## Especificaciones tecnicas
 
@@ -53,6 +53,6 @@ No es posible establecer una comparativa con modelos similares (como Wan 2.1 de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harmanx7/Wan
+- Repositorio Hugging Face: https://huggingface.co/Harmanx7/Wan
 - Espacio externo referenciado en la model card (sin contenido verificado): https://huggingface.co/spaces/Wan-AI/Wan2.1/agents.md
 - Sitio web del ecosistema Wan (no asociado a este repositorio): https://wan.video/

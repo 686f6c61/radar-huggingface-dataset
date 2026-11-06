@@ -2,7 +2,7 @@
 
 ## Resumen
 
-3D-Render-Style-Krea2 es un adaptador LoRA de bajo rango para generacion de imagenes text-to-image, publicado por el usuario goofyai en HuggingFace. No es un modelo autonomo: se monta sobre krea/Krea-2-Raw, el modelo de difusion de Krea, y su unica funcion es inyectar un estilo visual concreto ("3d render") en las generaciones del modelo base. El repositorio pesa 0,2 GB y contiene exclusivamente los pesos del adaptador, con la libreria diffusers como dependencia declarada y la etiqueta template:diffusion-lora.
+3D-Render-Style-Krea2 es un adaptador LoRA de bajo rango para generacion de imagenes text-to-image, publicado por el usuario goofyai en Hugging Face. No es un modelo autonomo: se monta sobre krea/Krea-2-Raw, el modelo de difusion de Krea, y su unica funcion es inyectar un estilo visual concreto ("3d render") en las generaciones del modelo base. El repositorio pesa 0,2 GB y contiene exclusivamente los pesos del adaptador, con la libreria diffusers como dependencia declarada y la etiqueta template:diffusion-lora.
 
 El modelo resuelve un problema muy acotado: forzar de forma consistente una estetica de render 3D en personajes, retratos y objetos sin tener que describir el estilo en cada prompt. Para ello emplea un token de disparo que aparece explicitamente en los ejemplos de la model card con la sintaxis `<lora:3d_render_krea2:0.7>`, lo que indica que el autor recomienda un peso de aplicacion de 0,7. La ficha no documenta dataset de entrenamiento, numero de pasos, rango del adaptador ni hiperparametros de entrenamiento.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificables sobre adaptadores comparables en la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goofyai/3D-Render-Style-Krea2
+- Modelo en Hugging Face: https://huggingface.co/goofyai/3D-Render-Style-Krea2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Paper: no disponible
 - Blog tecnico del autor: no disponible

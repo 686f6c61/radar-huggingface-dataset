@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cupra-ai/MMH3` es un repositorio publicado en HuggingFace por el usuario u organizacion `cupra-ai`. En el momento de redactar esta ficha, el unico contenido verificable del repositorio es el identificador, el autor, la etiqueta de licencia `apache-2.0` y la region declarada (`us`). La model card no contiene descripcion, no declara pipeline, no declara idiomas y no incluye ningun archivo de pesos, configuracion o tokenizador documentado publicamente.
+`cupra-ai/MMH3` es un repositorio publicado en Hugging Face por el usuario u organizacion `cupra-ai`. En el momento de redactar esta ficha, el unico contenido verificable del repositorio es el identificador, el autor, la etiqueta de licencia `apache-2.0` y la region declarada (`us`). La model card no contiene descripcion, no declara pipeline, no declara idiomas y no incluye ningun archivo de pesos, configuracion o tokenizador documentado publicamente.
 
 No es posible determinar que tipo de artefacto contiene el repositorio. El nombre `MMH3` coincide con el acronimo habitual del algoritmo de hashing MurmurHash3, pero no hay ninguna evidencia en la informacion disponible que confirme esa relacion, por lo que se trata de una coincidencia nominal sin verificar y no debe asumirse que el repositorio contenga una implementacion de dicho algoritmo ni un modelo de lenguaje.
 
@@ -99,6 +99,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cupra-ai/MMH3
+- Repositorio en Hugging Face: https://huggingface.co/cupra-ai/MMH3
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Resultados de la busqueda web: todos los enlaces recuperados corresponden a la marca de automoviles CUPRA (https://www.cupra.com/fr-fr/, https://www.cupra.com/fr-fr/voitures, https://fr.wikipedia.org/wiki/Cupra_(marque), https://www.cupra.be/fr, https://www.lacentrale.fr/occasion-voiture-marque-cupra.html) y no guardan relacion con el modelo ni aportan informacion tecnica, por lo que se descartan como fuentes.

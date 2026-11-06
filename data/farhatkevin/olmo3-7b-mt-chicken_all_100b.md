@@ -2,11 +2,11 @@
 
 ## Resumen
 
-farhatkevin/olmo3-7b-mt-chicken_all_100b es un modelo de generacion de texto publicado en HuggingFace por el usuario farhatkevin. Se trata de un ajuste fino (finetune) del modelo base allenai/Olmo-3-1025-7B de AI2 (Allen Institute for AI), segun indican las etiquetas `base_model:allenai/Olmo-3-1025-7B` y `base_model:finetune:allenai/Olmo-3-1025-7B`. El repositorio declara 7.298.011.136 parametros totales (aproximadamente 7,3 mil millones) y un tamano de repo de 14,6 GB, coherente con pesos en precision BF16/FP16.
+farhatkevin/olmo3-7b-mt-chicken_all_100b es un modelo de generacion de texto publicado en Hugging Face por el usuario farhatkevin. Se trata de un ajuste fino (finetune) del modelo base allenai/Olmo-3-1025-7B de AI2 (Allen Institute for AI), segun indican las etiquetas `base_model:allenai/Olmo-3-1025-7B` y `base_model:finetune:allenai/Olmo-3-1025-7B`. El repositorio declara 7.298.011.136 parametros totales (aproximadamente 7,3 mil millones) y un tamano de repo de 14,6 GB, coherente con pesos en precision BF16/FP16.
 
 El nombre del repositorio incluye los segmentos `mt` y `chicken_all_100b`, que sugieren un ajuste sobre un conjunto de datos no documentado, pero no se ha publicado informacion que confirme la composicion del dataset, el numero de tokens de entrenamiento ni el objetivo de la especializacion. La etiqueta `reasoning-cues` apunta a un enfoque orientado a tareas de razonamiento, aunque no hay detalle tecnico disponible al respecto.
 
-El modelo esta sujeto a acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargarlo. No se ha publicado licencia, idiomas soportados ni resultados de benchmarks. A la fecha de la ficha acumula 0 descargas y 0 likes, por lo que se trata de una publicacion muy reciente y sin validacion por parte de la comunidad. Su relevancia actual es limitada y debe evaluarse con cautela, dado que la informacion disponible no permite verificar capacidades reales ni condiciones de uso.
+El modelo esta sujeto a acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargarlo. No se ha publicado licencia, idiomas soportados ni resultados de benchmarks. A la fecha de la ficha acumula 0 descargas y 0 likes, por lo que se trata de una publicacion muy reciente y sin validacion por parte de la comunidad. Su relevancia actual es limitada y debe evaluarse con cautela, dado que la informacion disponible no permite verificar capacidades reales ni condiciones de uso.
 
 ## Especificaciones tecnicas
 
@@ -35,7 +35,7 @@ Respecto al entrenamiento, la etiqueta `base_model:finetune` confirma que se tra
 
 - Generacion de texto: el pipeline declarado es `text-generation`, por lo que la funcion principal es la generacion de lenguaje.
 - Razonamiento: la etiqueta `reasoning-cues` indica un enfoque orientado a tareas de razonamiento, aunque sin documentacion que detalle su alcance.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse mediante los endpoints de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse mediante los endpoints de inferencia de Hugging Face.
 - Capacidades multilingues: no disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -50,7 +50,7 @@ Dado que no se dispone de documentacion sobre el entrenamiento ni de benchmarks,
 - Generacion de texto general en castellano u otros idiomas: uso del modelo como generador de lenguaje en tareas de redaccion y resumen, siempre que se valide antes su calidad real, dado que no hay idiomas declarados.
 - Prototipado e investigacion sobre razonamiento: aprovechar la etiqueta `reasoning-cues` para experimentar con cadenas de razonamiento, comparando con el modelo base Olmo-3 en tareas controladas.
 - Ajuste fino adicional: al ser un finetune sobre Olmo-3-1025-7B, puede servir como punto de partida para especializaciones posteriores en dominios concretos.
-- Despliegue en infraestructura propia mediante endpoints compatibles: el tag `endpoints_compatible` lo habilita para servirse a traves de la infraestructura de HuggingFace o de servidores locales con transformers.
+- Despliegue en infraestructura propia mediante endpoints compatibles: el tag `endpoints_compatible` lo habilita para servirse a traves de la infraestructura de Hugging Face o de servidores locales con transformers.
 - Evaluacion comparativa de finetunes: util como objeto de estudio para medir el impacto de un ajuste comunitario frente al modelo base de AI2 en tareas de generacion.
 - Investigacion academica sobre modelos abiertos: uso como caso de estudio de un ajuste no documentado sobre una familia abierta, para analizar trazabilidad y reproducibilidad.
 
@@ -70,7 +70,7 @@ Las siguientes estimaciones son calculos a partir del recuento de parametros (7,
 - VRAM total para inferencia en BF16: en torno a 16-18 GB considerando cache KV y activaciones, segun la longitud de contexto (desconocida).
 - GPU de datacenter recomendadas: A100 (40/80 GB), H100, L40S o similares con al menos 24 GB de VRAM.
 - GPU de consumo: cabe en una RTX 3090 o RTX 4090 (24 GB) en BF16, y en GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080) si se aplica cuantizacion a 8 o 4 bits.
-- Opciones de despliegue: transformers (libreria declarada), endpoints de HuggingFace (tag `endpoints_compatible`), y de forma potencial vLLM o TGI para safetensors; llama.cpp u Ollama requeririan convertir los pesos a GGUF, ya que no se publican cuantizaciones.
+- Opciones de despliegue: transformers (libreria declarada), endpoints de Hugging Face (tag `endpoints_compatible`), y de forma potencial vLLM o TGI para safetensors; llama.cpp u Ollama requeririan convertir los pesos a GGUF, ya que no se publican cuantizaciones.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -94,10 +94,10 @@ No se dispone de resultados de rendimiento de este modelo ni de datos verificado
 - Restricciones de licencia: el modelo esta bajo acceso restringido y no publica licencia, por lo que se desconoce si se permite el uso comercial. No debe usarse en produccion sin aclarar este punto.
 - Trazabilidad y reproducibilidad: no hay model card que documente el dataset, los hiperparametros ni el proceso de entrenamiento, lo que dificulta reproducir o auditar el modelo.
 - Madurez: con 0 descargas y 0 likes, no existe validacion por parte de la comunidad.
-- Acceso: al ser un modelo gated, es necesario aceptar condiciones en HuggingFace antes de su descarga.
+- Acceso: al ser un modelo gated, es necesario aceptar condiciones en Hugging Face antes de su descarga.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farhatkevin/olmo3-7b-mt-chicken_all_100b
+- Modelo en Hugging Face: https://huggingface.co/farhatkevin/olmo3-7b-mt-chicken_all_100b
 - Modelo base: https://huggingface.co/allenai/Olmo-3-1025-7B
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

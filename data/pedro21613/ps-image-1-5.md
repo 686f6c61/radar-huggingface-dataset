@@ -77,16 +77,16 @@ No se han publicado resultados de benchmarks de calidad en la informacion dispon
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PS-IMAGE-1.5 | LoRA sobre SDXL 1.0 | LoRA r=16/alpha=32 (recuento no disponible) | difusion, 768×768 de entrenamiento | captions EN/PT/ES/FR/DE | no disponible | HuggingFace, 2 descargas |
-| PS-IMAGE-1.4 | LoRA sobre SDXL 1.0 | LoRA r=16/alpha=32 | difusion, 768×768 | solo ingles | no disponible | HuggingFace (predecesor directo) |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | no disponible en esta informacion | difusion, hasta 1024×1024 | principalmente ingles | licencia propia de Stability AI | HuggingFace, ampliamente usado |
+| PS-IMAGE-1.5 | LoRA sobre SDXL 1.0 | LoRA r=16/alpha=32 (recuento no disponible) | difusion, 768×768 de entrenamiento | captions EN/PT/ES/FR/DE | no disponible | Hugging Face, 2 descargas |
+| PS-IMAGE-1.4 | LoRA sobre SDXL 1.0 | LoRA r=16/alpha=32 | difusion, 768×768 | solo ingles | no disponible | Hugging Face (predecesor directo) |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | no disponible en esta informacion | difusion, hasta 1024×1024 | principalmente ingles | licencia propia de Stability AI | Hugging Face, ampliamente usado |
 
 La comparativa con modelos de lenguaje de la misma categoria no aplica: PS-IMAGE-1.5 es un adaptador de difusion, no un LLM. Como alternativas de la misma tarea (generacion de imagen con texto legible) no se dispone de datos comparativos en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - El propio autor reconoce que ningún SDXL acierta el texto siempre: PS-IMAGE-1.5 mejora en cadenas cortas (1-3 palabras más números), pero los textos largos todavía pueden fallar; recomienda generar 2-3 variaciones y elegir la mejor.
-- La licencia no está declarada en la model card ni en los metadatos de HuggingFace, lo que impide confirmar si el uso comercial está permitido. Cualquier despliegue en producción debería aclarar antes este punto y revisar la licencia del modelo base SDXL.
+- La licencia no está declarada en la model card ni en los metadatos de Hugging Face, lo que impide confirmar si el uso comercial está permitido. Cualquier despliegue en producción debería aclarar antes este punto y revisar la licencia del modelo base SDXL.
 - No hay benchmarks de calidad publicados: las únicas evidencias son comparativas visuales del autor con semillas fijas, sin métricas objetivas (FID, CLIP score, precisión OCR del texto generado).
 - Tracción mínima: 2 descargas y 0 likes, sin validación independiente por parte de la comunidad.
 - Riesgo de regresión en dominios no relacionados con el texto: el ajuste es corto (700 pasos) y con learning rate bajo, pero el autor dedica una sección explícita a comparativas de "regresión" en personas y coches, lo que indica que existe ese riesgo.
@@ -99,7 +99,7 @@ La comparativa con modelos de lenguaje de la misma categoria no aplica: PS-IMAGE
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pedro21613/PS-IMAGE-1.5
+- Modelo en Hugging Face: https://huggingface.co/Pedro21613/PS-IMAGE-1.5
 - Versión predecesora PS-IMAGE-1.4: https://huggingface.co/Pedro21613/PS-IMAGE-1.4
 - Versión anterior PS-IMAGE-1.3: https://huggingface.co/Pedro21613/PS-IMAGE-1.3
 - Ficha de PS-IMAGE-1.0 en Free2AITools: https://free2aitools.com/model/pedro21613/ps-image-1.0

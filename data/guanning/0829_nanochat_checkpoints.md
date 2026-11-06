@@ -71,4 +71,4 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/guanning/0829_nanochat_checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/guanning/0829_nanochat_checkpoints

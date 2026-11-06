@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento para comparar con alternativas. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-r1-qwen-7b-gguf
+- Hugging Face: https://huggingface.co/AbteeXAILab/lumynax-reasoning-deepseek-r1-qwen-7b-gguf
 - Repositorio GitHub: https://github.com/Aimaghsoodi/lumynax-reasoning-deepseek-r1-qwen-7b-gguf
 - AbteeX AI Labs: https://abteex.com
 - LumynaX: https://lumynax.com

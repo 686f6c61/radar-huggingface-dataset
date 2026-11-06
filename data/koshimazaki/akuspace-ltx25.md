@@ -67,7 +67,7 @@ El autor advierte que la correlación baja en percusión es esperable: la reverb
 - El LoRA en sí es ligero (0,2 GB), pero requiere cargar el modelo base LTX-2.5 (22B parámetros en bf16) para funcionar.
 - No se especifican requisitos de VRAM en la documentación. Como referencia, un modelo de 22B en bf16 necesita al menos 44 GB de VRAM solo para los pesos, más el overhead de activaciones y el adaptador.
 - Se recomienda una GPU con 48 GB o más (por ejemplo, A6000, A100 80GB, H100) para inferencia con el modelo base completo. En consumer, una RTX 4090 (24 GB) podría funcionar con cuantización del modelo base, pero no está confirmado.
-- Opciones de despliegue: el adaptador está diseñado para usarse con LTX-2.5 y los nodos de ComfyUI (ComfyUI-Koshi-Nodes). También puede integrarse en pipelines de Python con la librería `ltx` (según el tag de HuggingFace).
+- Opciones de despliegue: el adaptador está diseñado para usarse con LTX-2.5 y los nodos de ComfyUI (ComfyUI-Koshi-Nodes). También puede integrarse en pipelines de Python con la librería `ltx` (según el tag de Hugging Face).
 - No se proporcionan datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No disponible. No se han encontrado otros adaptadores LoRA de audio para LTX-2.5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KoshiMazaki/akuspace-ltx25
+- Modelo en Hugging Face: https://huggingface.co/KoshiMazaki/akuspace-ltx25
 - Estudio audiovisual interactivo: https://akuspace.pages.dev
 - Nodos de ComfyUI: https://github.com/koshimazaki/ComfyUI-Koshi-Nodes
 - Licencia LTX-2: https://github.com/Lightricks/LTX-2/blob/main/LICENSE.md

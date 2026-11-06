@@ -90,7 +90,7 @@ La versión de Teradata se diferencia de las anteriores por su formato ONNX y su
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Teradata/ruri-v3-130m
+- Repositorio Hugging Face del modelo: https://huggingface.co/Teradata/ruri-v3-130m
 - Modelo original: https://huggingface.co/cl-nagoya/ruri-v3-130m
 - Modelo hermano (310M): https://huggingface.co/cl-nagoya/ruri-v3-310m
 - Colección de conversiones ONNX de ruri-v3: https://huggingface.co/collections/sirasagi62/ruri-v3-onnx

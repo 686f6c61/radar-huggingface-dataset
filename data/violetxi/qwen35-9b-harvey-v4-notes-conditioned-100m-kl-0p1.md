@@ -83,8 +83,8 @@ La metrica KL mide deriva respecto al modelo base, no precision en tareas. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p1 | 9,65B | 65.536 en configuracion de servicio vLLM | apache-2.0 | HuggingFace, 0 descargas, 0 likes | Ajuste completo con regularizacion KL 0,1 sobre el base |
-| Qwen/Qwen3.5-9B (base) | 9,65B (hereda el tamano) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace | Modelo de partida congelado usado como referencia KL |
+| violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p1 | 9,65B | 65.536 en configuracion de servicio vLLM | apache-2.0 | Hugging Face, 0 descargas, 0 likes | Ajuste completo con regularizacion KL 0,1 sobre el base |
+| Qwen/Qwen3.5-9B (base) | 9,65B (hereda el tamano) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face | Modelo de partida congelado usado como referencia KL |
 | Otras alternativas de ~9B | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados de modelos comparables en la informacion proporcionada |
 
 No se dispone de resultados de benchmarks que permitan una comparacion de rendimiento con alternativas de la misma categoria. La unica comparacion documentada es la divergencia KL frente al propio modelo base.
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p1
+- Modelo en Hugging Face: https://huggingface.co/violetxi/qwen35-9b-harvey-v4-notes-conditioned-100m-kl-0p1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/stanford_autonomous_agent/wm-internalization/runs/0aafb8c3
 - La busqueda web realizada no devolvio resultados relevantes para este modelo: no se han encontrado papers, blogs, repositorios ni demos adicionales que puedan enlazarse.

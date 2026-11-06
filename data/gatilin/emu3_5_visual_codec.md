@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Codebook | Contexto / tokens por imagen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gatilin/emu3_5_visual_codec | 455.336.963 | 131.072 × 256 | 256 tokens para 256×256 px | Apache-2.0 | HuggingFace, 7 descargas |
-| BAAI/Emu3.5-VisionTokenizer | no disponible en la informacion | 131.072 × 256 (mismo artefacto de origen) | no disponible | Apache-2.0 | HuggingFace (repositorio oficial) |
-| Otros tokenizadores VQ de imagen (familia LlamaGen, Cosmos, Chameleon) | no disponible | no disponible | no disponible | varian por modelo | HuggingFace / repos propios |
+| gatilin/emu3_5_visual_codec | 455.336.963 | 131.072 × 256 | 256 tokens para 256×256 px | Apache-2.0 | Hugging Face, 7 descargas |
+| BAAI/Emu3.5-VisionTokenizer | no disponible en la informacion | 131.072 × 256 (mismo artefacto de origen) | no disponible | Apache-2.0 | Hugging Face (repositorio oficial) |
+| Otros tokenizadores VQ de imagen (familia LlamaGen, Cosmos, Chameleon) | no disponible | no disponible | no disponible | varian por modelo | Hugging Face / repos propios |
 
 La comparacion cuantitativa con alternativas no es posible con los datos suministrados: no se aportan parametros, tamaños de codebook ni metricas de reconstruccion de otros tokenizadores. Respecto al repositorio oficial de BAAI, este paquete no cambia los pesos, solo anade implementacion nativa, preprocesado y scripts de validacion.
 
@@ -87,7 +87,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos suminis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gatilin/emu3_5_visual_codec
+- Modelo en Hugging Face: https://huggingface.co/gatilin/emu3_5_visual_codec
 - Modelo base: https://huggingface.co/BAAI/Emu3.5-VisionTokenizer
 - Revision fija del codigo fuente: https://huggingface.co/BAAI/Emu3.5-VisionTokenizer/tree/a5c45bdb8084763048e094ae124778bfeca7d5ee
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales.

@@ -78,5 +78,5 @@ No se dispone de comparativas publicadas con otros generadores de skins de Minec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lopleec/Gepo-MCSkin-Pixel-EDM
+- Hugging Face: https://huggingface.co/Lopleec/Gepo-MCSkin-Pixel-EDM
 - Repositorio GitHub: https://github.com/lopleec/Gepo-MCSkin-Pixel-EDM

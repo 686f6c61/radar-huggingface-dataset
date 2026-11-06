@@ -21,7 +21,7 @@ Con aproximadamente 1.800 millones de parámetros (el autor declara 3B, aunque e
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles tecnicos sobre la arquitectura interna (tipo de transformer, atencion, etc.) ni sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF o DPO). Lo que se conoce es que se trata de un modelo vision-language de aproximadamente 3B parametros que integra vision y lenguaje en un unico marco, y que incorpora un componente de vision capaz de generar SVG ademas de texto. El modelo base esta disponible en HuggingFace como dots-studio/dots.mocr, y esta version GGUF es una conversion para inferencia con llama.cpp. La inferencia tambien esta soportada oficialmente en vLLM desde la version v0.11.0.
+No se han publicado detalles tecnicos sobre la arquitectura interna (tipo de transformer, atencion, etc.) ni sobre el proceso de entrenamiento (numero de tokens, composicion del dataset, uso de RLHF o DPO). Lo que se conoce es que se trata de un modelo vision-language de aproximadamente 3B parametros que integra vision y lenguaje en un unico marco, y que incorpora un componente de vision capaz de generar SVG ademas de texto. El modelo base esta disponible en Hugging Face como dots-studio/dots.mocr, y esta version GGUF es una conversion para inferencia con llama.cpp. La inferencia tambien esta soportada oficialmente en vLLM desde la version v0.11.0.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ Tambien se menciona que supera a modelos especializados como MonkeyOCR-pro-3B, G
 - VRAM estimada: segun datos de LocalAI, aproximadamente 2 GB con cuantizacion Q4_K_M, 4 GB con Q8_0 y 7 GB con FP16.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM para cuantizaciones bajas (por ejemplo, GTX 1650, RTX 3050); para FP16 se recomienda una GPU con 8 GB o mas (RTX 3070, RTX 4060, etc.).
 - Compatibilidad con consumer GPU: si, gracias a los formatos GGUF cuantizados.
-- Opciones de despliegue: llama.cpp (compatible con el formato GGUF), vLLM (desde v0.11.0), HuggingFace Transformers (modelo base safetensors), y herramientas como Ollama si se convierte el GGUF.
+- Opciones de despliegue: llama.cpp (compatible con el formato GGUF), vLLM (desde v0.11.0), Hugging Face Transformers (modelo base safetensors), y herramientas como Ollama si se convierte el GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -81,8 +81,8 @@ No se dispone de datos numericos comparativos publicados para modelos de la mism
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/prithivMLmods/dots.mocr-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/dots-studio/dots.mocr
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/prithivMLmods/dots.mocr-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/dots-studio/dots.mocr
 - Repositorio GitHub del proyecto: https://github.com/studio-dots-ai/dots.mocr
 - Pagina de compatibilidad de hardware (LocalAI): https://localai.computer/models/dots-studio-dots.mocr
 - Perfil del autor de la conversion GGUF: https://huggingface.co/prithivMLmods

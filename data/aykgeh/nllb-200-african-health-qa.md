@@ -41,7 +41,7 @@ No se ha publicado información sobre el proceso de fine-tuning específico de e
 - **Integración en sistemas RAG**: puede combinarse con un recuperador de información para proporcionar respuestas con referencias a documentos médicos, reduciendo el riesgo de alucinaciones.
 
 ## Benchmarks y rendimiento
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo no presenta métricas de evaluación en la ficha de HuggingFace, y no se ha encontrado ninguna comparación con otros sistemas en la web.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo no presenta métricas de evaluación en la ficha de Hugging Face, y no se ha encontrado ninguna comparación con otros sistemas en la web.
 
 ## Requisitos de hardware
 No se dispone de información sobre los requisitos de hardware para este modelo. Dado que NLLB-200 tiene versiones con 3.300 millones y 54.000 millones de parámetros, los requisitos variarán según el checkpoint utilizado. En general:
@@ -69,7 +69,7 @@ El modelo `aykgeh/nllb-200-african-health-qa` es una adaptación de NLLB-200, pe
 - **Falta de documentación**: la ausencia de detalles sobre el entrenamiento y los datos impide evaluar la robustez del modelo.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/aykgeh/nllb-200-african-health-qa)
+- [Modelo en Hugging Face](https://huggingface.co/aykgeh/nllb-200-african-health-qa)
 - [Blog de Meta AI sobre NLLB-200](https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/)
 - [Repositorio de la competición Zindi](https://github.com/icyeza/African-Language-Health-QA-Challenge/tree/main)
 - [Repositorio con enfoque generativo](https://github.com/PapiWinnie/African-Language-Health-QA-Challenge)

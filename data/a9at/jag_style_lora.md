@@ -2,7 +2,7 @@
 
 ## Resumen
 
-A9at/jag_style_LoRA es un adaptador LoRA de estilo para generación de imágenes mediante texto, entrenado con DreamBooth sobre el modelo base stabilityai/stable-diffusion-xl-base-1.0. Lo publica el usuario A9at en HuggingFace y su propósito es reproducir el estilo pictórico del pintor victoriano John Atkinson Grimshaw, activable mediante la frase «a photo collage in John Atkinson Grimshaw style,». No es un modelo de lenguaje ni un modelo de difusión completo: es un conjunto de pesos de bajo rango que se acoplan al UNet de SDXL.
+A9at/jag_style_LoRA es un adaptador LoRA de estilo para generación de imágenes mediante texto, entrenado con DreamBooth sobre el modelo base stabilityai/stable-diffusion-xl-base-1.0. Lo publica el usuario A9at en Hugging Face y su propósito es reproducir el estilo pictórico del pintor victoriano John Atkinson Grimshaw, activable mediante la frase «a photo collage in John Atkinson Grimshaw style,». No es un modelo de lenguaje ni un modelo de difusión completo: es un conjunto de pesos de bajo rango que se acoplan al UNet de SDXL.
 
 El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors. Según la model card, el LoRA del codificador de texto está desactivado («LoRA for the text encoder was enabled: False»), por lo que el adaptador afecta únicamente a la parte de difusión, y se empleó el VAE madebyollin/sdxl-vae-fp16-fix durante el entrenamiento para evitar problemas de precisión en fp16.
 
@@ -78,8 +78,8 @@ No se dispone de comparativas publicadas para este adaptador. Como referencia de
 
 | Modelo | Tipo | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| A9at/jag_style_LoRA | LoRA de estilo (DreamBooth) | stable-diffusion-xl-base-1.0 | openrail++ | HuggingFace, 0 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | no aplica | openrail++ | HuggingFace, ampliamente usado |
+| A9at/jag_style_LoRA | LoRA de estilo (DreamBooth) | stable-diffusion-xl-base-1.0 | openrail++ | Hugging Face, 0 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo de difusion completo | no aplica | openrail++ | Hugging Face, ampliamente usado |
 | Jagat AI Style (MisterTwister69, PixAI/SeaArt) | LoRA de estilo | no especificado en los resultados de busqueda | no disponible | PixAI, SeaArt |
 | Jag27 Style (Civitai) | LoRA de estilo | Illustrious (familia SDXL) | no disponible | Civitai |
 | Style - Jaga v1.0 (Tensor.Art) | LoRA de estilo | SD 1.5 | no disponible | Tensor.Art |
@@ -100,7 +100,7 @@ Advertencia: los modelos encontrados en la búsqueda web («Jagat AI Style», «
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/A9at/jag_style_LoRA
+- Modelo en Hugging Face: https://huggingface.co/A9at/jag_style_LoRA
 - Archivos y versiones: https://huggingface.co/A9at/jag_style_LoRA/tree/main
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE usado en entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

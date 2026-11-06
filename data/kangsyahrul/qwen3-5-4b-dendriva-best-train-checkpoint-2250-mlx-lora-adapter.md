@@ -68,5 +68,5 @@ No disponible. Al ser un adaptador LoRA específico para un modelo base no docum
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/kangsyahrul/qwen3.5-4b-dendriva-best-train-checkpoint-2250-mlx-lora-adapter)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/kangsyahrul/qwen3.5-4b-dendriva-best-train-checkpoint-2250-mlx-lora-adapter)
 - [Modelo base unsloth/Qwen3.5-4B](https://huggingface.co/unsloth/Qwen3.5-4B) (no verificado)

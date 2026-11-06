@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RSIPO-SFT-Qwen2.5-7B-Instruct-Search es un ajuste fino (SFT) del modelo Qwen2.5-7B-Instruct, publicado por el usuario Karl28 en HuggingFace. No se trata de un modelo de uso general, sino de un checkpoint intermedio de investigación: es el checkpoint exacto de la etapa 1 (Stage-1 SFT) empleado para inicializar un entrenamiento de aprendizaje por refuerzo RSIPO (Recursive Self-Improving Policy Optimization) orientado a tareas de pregunta-respuesta con búsqueda (search-based QA). El checkpoint precede a los 150 pasos de entrenamiento RL, por lo que no es una política RSIPO final.
+RSIPO-SFT-Qwen2.5-7B-Instruct-Search es un ajuste fino (SFT) del modelo Qwen2.5-7B-Instruct, publicado por el usuario Karl28 en Hugging Face. No se trata de un modelo de uso general, sino de un checkpoint intermedio de investigación: es el checkpoint exacto de la etapa 1 (Stage-1 SFT) empleado para inicializar un entrenamiento de aprendizaje por refuerzo RSIPO (Recursive Self-Improving Policy Optimization) orientado a tareas de pregunta-respuesta con búsqueda (search-based QA). El checkpoint precede a los 150 pasos de entrenamiento RL, por lo que no es una política RSIPO final.
 
 Su relevancia reside en el marco RSIPO, descrito en el paper arXiv:2610.15772, que propone la co-evolución de política y habilidades (skill-policy co-evolution) para aprendizaje por refuerzo agéntico. En la etapa SFT, el modelo base generó 8 trayectorias por cada una de 500 tareas de entrenamiento, y un modelo (GLM-5.2) escribió resúmenes de episodios y habilidades reutilizables que el modelo aprendió a producir durante 3 épocas. Es un modelo de interés para investigadores que quieran reproducir o extender el pipeline RSIPO, no para despliegue en producción como asistente general.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Rol | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RSIPO-SFT-Qwen2.5-7B-Instruct-Search | 7,62 B | Checkpoint Stage-1 SFT (pre-RL) para RSIPO search-QA | Apache 2.0 | Pesos y dataset publicos en HuggingFace |
+| RSIPO-SFT-Qwen2.5-7B-Instruct-Search | 7,62 B | Checkpoint Stage-1 SFT (pre-RL) para RSIPO search-QA | Apache 2.0 | Pesos y dataset publicos en Hugging Face |
 | Qwen/Qwen2.5-7B-Instruct (base) | 7,62 B | Modelo instructivo general | Apache 2.0 | Publico, ampliamente soportado |
-| Karl28/RSIPO-Qwen2.5-7B-Instruct-Search | 7,62 B | Checkpoint final tras 150 pasos de RL RSIPO | no disponible | Publico en HuggingFace |
+| Karl28/RSIPO-Qwen2.5-7B-Instruct-Search | 7,62 B | Checkpoint final tras 150 pasos de RL RSIPO | no disponible | Publico en Hugging Face |
 
 La diferencia practica relevante: este checkpoint solo ha visto SFT de habilidades, mientras que el checkpoint final RSIPO incorpora el entrenamiento por refuerzo; para obtener el rendimiento agéntico del metodo hay que usar el segundo.
 

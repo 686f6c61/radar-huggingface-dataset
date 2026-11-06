@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `act_M12_toolrem_240`, publicado por el usuario Muhammad241198 en HuggingFace, es una política de imitación para robótica basada en ACT (Action Chunking with Transformers), el método presentado en el artículo arXiv 2304.13705. No se trata de un modelo de lenguaje: es un checkpoint de control motor entrenado con LeRobot sobre el dataset `rbtrprjkt/m12-nut-tool_unfasten_nodepth`, orientado a la tarea de desatornillar o retirar una herramienta (tool unfastening) en un entorno de manipulación con un brazo robótico.
+El modelo `act_M12_toolrem_240`, publicado por el usuario Muhammad241198 en Hugging Face, es una política de imitación para robótica basada en ACT (Action Chunking with Transformers), el método presentado en el artículo arXiv 2304.13705. No se trata de un modelo de lenguaje: es un checkpoint de control motor entrenado con LeRobot sobre el dataset `rbtrprjkt/m12-nut-tool_unfasten_nodepth`, orientado a la tarea de desatornillar o retirar una herramienta (tool unfastening) en un entorno de manipulación con un brazo robótico.
 
 ACT predice secuencias cortas de acciones (action chunks) en lugar de pasos individuales, lo que reduce el error de acumulación y mejora la estabilidad en tareas de manipulación fina. El modelo tiene 51.828.359 parámetros en formato safetensors, un tamaño de repositorio de 0,2 GB y licencia Apache 2.0, lo que lo hace ligero y desplegable en hardware modesto.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_M12_toolrem_240 | 51,8 M | no aplica | Tool unfastening (ACT) | Apache 2.0 | HuggingFace, 0 descargas |
+| act_M12_toolrem_240 | 51,8 M | no aplica | Tool unfastening (ACT) | Apache 2.0 | Hugging Face, 0 descargas |
 | ACT original (paper 2304.13705) | no disponible | no aplica | Imitación general | según implementación | Paper y código de referencia |
-| Políticas LeRobot ACT genéricas | variable | no aplica | Manipulación variada | Apache 2.0 habitualmente | Hub de HuggingFace |
+| Políticas LeRobot ACT genéricas | variable | no aplica | Manipulación variada | Apache 2.0 habitualmente | Hub de Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muhammad241198/act_M12_toolrem_240
+- Hugging Face: https://huggingface.co/Muhammad241198/act_M12_toolrem_240
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Documentación LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

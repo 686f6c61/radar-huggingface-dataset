@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vicshi97/pi05_policy_sock-garbage-merged_3.0_yolo_20k` es un ajuste fino (fine-tune) del modelo visión-lenguaje-acción π₀.₅ (Pi05) de Physical Intelligence, publicado por el usuario vicshi97 en el Hub de HuggingFace. No es un modelo de lenguaje conversacional: es una política de control robótico entrenada con LeRobot que consume el estado articular y dos cámaras RGB de un robot `so_follower` (SO-100/SO-101 de LeRobot) y emite directamente un vector de acción de 6 dimensiones. El problema que resuelve es concreto: automatizar dos tareas de recogida de objetos —"pick up the garbage and put it in the basket" y "pick up the sock and put it in the container"— mediante aprendizaje por imitación.
+`vicshi97/pi05_policy_sock-garbage-merged_3.0_yolo_20k` es un ajuste fino (fine-tune) del modelo visión-lenguaje-acción π₀.₅ (Pi05) de Physical Intelligence, publicado por el usuario vicshi97 en el Hub de Hugging Face. No es un modelo de lenguaje conversacional: es una política de control robótico entrenada con LeRobot que consume el estado articular y dos cámaras RGB de un robot `so_follower` (SO-100/SO-101 de LeRobot) y emite directamente un vector de acción de 6 dimensiones. El problema que resuelve es concreto: automatizar dos tareas de recogida de objetos —"pick up the garbage and put it in the basket" y "pick up the sock and put it in the container"— mediante aprendizaje por imitación.
 
 El modelo parte de `lerobot/pi05_base` y se ha entrenado durante 20.000 pasos con batch de 16, optimizador AdamW y learning rate 2,5e-05 sobre el dataset `vicshi97/sock-garbage-merged_3.0_yolo` (260 episodios, 111.830 fotogramas a 30 FPS). Los pesos suman 4.143.404.816 parámetros (≈4,14 mil millones) en un repositorio de 8,6 GB en formato safetensors, con licencia Apache 2.0.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / entradas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`pi05_policy_sock-garbage-merged_3.0_yolo_20k`) | 4,14 mil millones | Estado (6,) + 2 imágenes 480×640; longitud de contexto no disponible | Sin evaluación publicada | Apache 2.0 | HuggingFace, 0 descargas |
-| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | Misma familia π₀.₅; no detallado | No disponible | No disponible en la información proporcionada | HuggingFace (referenciado como base) |
+| Este modelo (`pi05_policy_sock-garbage-merged_3.0_yolo_20k`) | 4,14 mil millones | Estado (6,) + 2 imágenes 480×640; longitud de contexto no disponible | Sin evaluación publicada | Apache 2.0 | Hugging Face, 0 descargas |
+| `lerobot/pi05_base` (modelo base) | No disponible en la información proporcionada | Misma familia π₀.₅; no detallado | No disponible | No disponible en la información proporcionada | Hugging Face (referenciado como base) |
 | π₀ (modelo predecesor de Physical Intelligence) | No disponible | No disponible | No disponible | No disponible | Repositorio OpenPI (referenciado) |
 | Otras políticas VLA de la categoría (OpenVLA, RDT, etc.) | No disponible | No disponible | No disponible | No disponible | No se han encontrado datos en la información disponible |
 
@@ -94,7 +94,7 @@ La comparación cuantitativa con alternativas no es posible con los datos sumini
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vicshi97/pi05_policy_sock-garbage-merged_3.0_yolo_20k
+- Modelo en Hugging Face: https://huggingface.co/vicshi97/pi05_policy_sock-garbage-merged_3.0_yolo_20k
 - Dataset de entrenamiento: https://huggingface.co/datasets/vicshi97/sock-garbage-merged_3.0_yolo
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=vicshi97/sock-garbage-merged_3.0_yolo
 - Modelo base: https://huggingface.co/lerobot/pi05_base

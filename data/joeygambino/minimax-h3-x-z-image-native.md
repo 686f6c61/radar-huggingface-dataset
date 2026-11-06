@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa objetiva.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-native
+- Repositorio Hugging Face: https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-native
 - Repositorio GGUF (versión recomendada para RTX 30/40): https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-GGUF
 - Repositorio GGUF del modelo base: https://huggingface.co/joeygambino/MiniMax-H3-GGUF
 - GitHub oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3

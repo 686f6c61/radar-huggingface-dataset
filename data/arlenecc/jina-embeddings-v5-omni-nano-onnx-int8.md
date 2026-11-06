@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arlenecc/jina-embeddings-v5-omni-nano-onnx-int8` es una distribucion en formato ONNX con cuantizacion INT8 de un modelo de embeddings de la familia Jina Embeddings v5 "omni nano", publicada por el usuario `arlenecc` en HuggingFace. Por el nombre se deduce que se trata de una version optimizada para inferencia en CPU o entornos con recursos limitados, derivada de un modelo base de embeddings de Jina AI, aunque la model card publicada no aporta informacion sobre el modelo original, el proceso de conversion ni las caracteristicas tecnicas.
+`arlenecc/jina-embeddings-v5-omni-nano-onnx-int8` es una distribucion en formato ONNX con cuantizacion INT8 de un modelo de embeddings de la familia Jina Embeddings v5 "omni nano", publicada por el usuario `arlenecc` en Hugging Face. Por el nombre se deduce que se trata de una version optimizada para inferencia en CPU o entornos con recursos limitados, derivada de un modelo base de embeddings de Jina AI, aunque la model card publicada no aporta informacion sobre el modelo original, el proceso de conversion ni las caracteristicas tecnicas.
 
 La relevancia de esta publicacion es limitada en el momento de redactar esta ficha: el repositorio no tiene descargas ni interacciones, no incluye pipeline declarado, no especifica idiomas soportados y la model card se reduce a la declaracion de licencia MIT. Se desconoce si el modelo base "v5-omni-nano" existe publicamente o si se trata de una convencion de nombres del autor.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-onnx-int8
+- Repositorio en Hugging Face: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-onnx-int8
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

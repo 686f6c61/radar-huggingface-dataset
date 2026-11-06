@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FreeCAD-S1 es un modelo de prediccion de siguiente accion para FreeCAD, desarrollado por el usuario shhivv y publicado en HuggingFace con licencia MIT. No es un modelo de lenguaje ni un modelo de vision: recibe el estado estructurado de una sesion de FreeCAD (arbol de operaciones, seleccion, banco de trabajo activo, restricciones de boceto, ultimos comandos) junto con un objetivo y puntua en una sola pasada hacia delante los comandos validos en ese instante. Con 1.228.163 parametros (aproximadamente 1,23 M, confirmados en el safetensors), el modelo infiere en torno a 1 ms en CPU, sin GPU.
+FreeCAD-S1 es un modelo de prediccion de siguiente accion para FreeCAD, desarrollado por el usuario shhivv y publicado en Hugging Face con licencia MIT. No es un modelo de lenguaje ni un modelo de vision: recibe el estado estructurado de una sesion de FreeCAD (arbol de operaciones, seleccion, banco de trabajo activo, restricciones de boceto, ultimos comandos) junto con un objetivo y puntua en una sola pasada hacia delante los comandos validos en ese instante. Con 1.228.163 parametros (aproximadamente 1,23 M, confirmados en el safetensors), el modelo infiere en torno a 1 ms en CPU, sin GPU.
 
 El modelo resuelve un problema concreto dentro de la automatizacion CAD: convertir una lista ordenada de intenciones de diseno ("placa 40x30x10 -> agujero pasante de diametro 6 en (10, 0) -> patron polar x6 -> redondeo de aristas superiores r=1") en la secuencia concreta de comandos de FreeCAD (seleccionar plano, crear boceto, dibujar geometria, acotar, cerrar boceto, aplicar pad, etc.). Tambien sigue el progreso y corrige errores: deshace cambios fuera de plan, vuelve a seleccionar y cambia al banco de trabajo correcto.
 
@@ -113,7 +113,7 @@ No hay datos de otros modelos competidores, ni de sus parametros, contexto, rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shhivv/freecad-s1
+- Hugging Face: https://huggingface.co/shhivv/freecad-s1
 - Repositorio de codigo del paquete `freecad_s1` (runtime, featurizer, modelo): no disponible en la informacion proporcionada
 - Paper o publicacion tecnica: no disponible
 - Blog o articulo del autor: no disponible

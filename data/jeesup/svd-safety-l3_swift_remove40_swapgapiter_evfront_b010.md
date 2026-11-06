@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento de seguridad |
 |---|---|---|---|---|---|
-| svd-safety-l3_swift_remove40_swapgapiter_evfront_b010 | 8.030.261.248 declarados (fraccion densa 0,6003 de las proyecciones) | no especificado; 8.192 tokens heredados | Meta Llama 3 Community License | HuggingFace, 0 descargas, 0 likes | AdvBench ASR 0,0654; StrongREJECT ASR 0,1725; sobrerrechazo 0,0758 |
-| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | ~8.030 millones | 8.192 tokens | Meta Llama 3 Community License | HuggingFace, ampliamente distribuido | no disponible en la informacion proporcionada |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | ~8.030 millones | 128.000 tokens | Meta Llama 3.1 Community License | HuggingFace | no disponible en la informacion proporcionada |
-| Otras celdas de la misma rejilla del estudio (mismas reglas, distintos presupuestos) | variable | no especificado | Meta Llama 3 Community License | HuggingFace, repositorio del mismo autor | no disponible en la informacion proporcionada |
+| svd-safety-l3_swift_remove40_swapgapiter_evfront_b010 | 8.030.261.248 declarados (fraccion densa 0,6003 de las proyecciones) | no especificado; 8.192 tokens heredados | Meta Llama 3 Community License | Hugging Face, 0 descargas, 0 likes | AdvBench ASR 0,0654; StrongREJECT ASR 0,1725; sobrerrechazo 0,0758 |
+| meta-llama/Meta-Llama-3-8B-Instruct (modelo base) | ~8.030 millones | 8.192 tokens | Meta Llama 3 Community License | Hugging Face, ampliamente distribuido | no disponible en la informacion proporcionada |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | ~8.030 millones | 128.000 tokens | Meta Llama 3.1 Community License | Hugging Face | no disponible en la informacion proporcionada |
+| Otras celdas de la misma rejilla del estudio (mismas reglas, distintos presupuestos) | variable | no especificado | Meta Llama 3 Community License | Hugging Face, repositorio del mismo autor | no disponible en la informacion proporcionada |
 
 La comparacion cuantitativa con alternativas no puede completarse porque la informacion proporcionada no incluye resultados de benchmarks de los modelos de referencia.
 
@@ -96,7 +96,7 @@ La comparacion cuantitativa con alternativas no puede completarse porque la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40_swapgapiter_evfront_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40_swapgapiter_evfront_b010
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Metodo de compresion SVD-LLM: referenciado por nombre en la model card; no se proporciona URL del paper en la informacion disponible
 - Paper, blog o repositorio del estudio de reparacion con la regla `gap_iter`: no disponible en la informacion proporcionada

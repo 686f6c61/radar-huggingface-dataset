@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KieloTony/MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario KieloTony, publicado el 7 de octubre de 2026 y con un tamano de repositorio de 0,0 GB. A pesar del nombre "TestRepo" y de la ausencia total de archivos de pesos, la model card describe un modelo conversacional denominado "MyAwesomeModel" con capacidades de razonamiento, matematicas, programacion y function calling. No se especifica quien esta detras del desarrollo, ni la organizacion responsable, ni detalles de arquitectura o entrenamiento.
+KieloTony/MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario KieloTony, publicado el 7 de octubre de 2026 y con un tamano de repositorio de 0,0 GB. A pesar del nombre "TestRepo" y de la ausencia total de archivos de pesos, la model card describe un modelo conversacional denominado "MyAwesomeModel" con capacidades de razonamiento, matematicas, programacion y function calling. No se especifica quien esta detras del desarrollo, ni la organizacion responsable, ni detalles de arquitectura o entrenamiento.
 
 La informacion disponible es internamente contradictoria: las etiquetas del repositorio lo clasifican como `transformers`, `pytorch`, `bert` y tarea `feature-extraction` (es decir, un codificador tipo BERT para extraccion de caracteristicas), mientras que la model card lo presenta como un modelo generativo con modo de pensamiento, plantillas de busqueda web y recomendaciones de temperatura. Esta discrepancia, junto con el tamano de 0,0 GB, indica que se trata de un repositorio de prueba y no de un modelo distribuible o utilizable.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el entrenamiento: no se indica el numero de tokens, la c
 
 ## Casos de uso
 
-- Evaluacion de infraestructura de despliegue: dado que el repositorio no contiene pesos, el unico uso realista hoy es servir como caso de prueba para validar pipelines de descarga, carga y comprobacion de repositorios en HuggingFace.
+- Evaluacion de infraestructura de despliegue: dado que el repositorio no contiene pesos, el unico uso realista hoy es servir como caso de prueba para validar pipelines de descarga, carga y comprobacion de repositorios en Hugging Face.
 - Pruebas de integracion con la libreria transformers: las etiquetas indican compatibilidad con `transformers` y `endpoints_compatible`, por lo que podria emplearse para verificar flujos de invocacion de endpoints, aunque sin pesos no es posible ejecutar inferencia.
 - Referencia de plantillas de prompt: las plantillas de system prompt, carga de ficheros y busqueda web con citacion pueden reutilizarse como base de diseno para otros asistentes, independientemente de que el modelo funcione.
 - Razonamiento matematico asistido: segun la model card, el modelo estaria orientado a problemas de matematicas con cadenas de razonamiento largas, adecuado para tutoria o resolucion paso a paso. No verificable.
@@ -99,7 +99,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KieloTony/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/KieloTony/MyAwesomeModel-TestRepo
 - Perfil del autor: https://huggingface.co/KieloTony
 
 No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo, demos ni sitios web oficiales. Las referencias a "official website", "code repository" y a los archivos `figures/fig1.png`, `figures/fig2.png` y `figures/fig3.png` que aparecen en la model card no incluyen URL y no son accesibles desde los datos disponibles.

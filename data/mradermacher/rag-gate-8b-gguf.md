@@ -107,7 +107,7 @@ La diferencia funcional principal frente a un modelo generalista de tamano simil
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/RAG-Gate-8B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/RAG-Gate-8B-GGUF
 - Modelo base: https://huggingface.co/ThakiCloud/RAG-Gate-8B
 - Pagina de descarga y vision general del autor: https://hf.tst.eu/model#RAG-Gate-8B-GGUF
 - Dataset ThakiCloud/ChainCheck: https://huggingface.co/datasets/ThakiCloud/ChainCheck

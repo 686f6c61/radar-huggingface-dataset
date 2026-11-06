@@ -84,6 +84,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [Repositorio HuggingFace: AnthonyLop/dino-multitask-colab](https://huggingface.co/AnthonyLop/dino-multitask-colab)
+- [Repositorio Hugging Face: AnthonyLop/dino-multitask-colab](https://huggingface.co/AnthonyLop/dino-multitask-colab)
 - [Repositorio similar: varunbsingh/dino-multitask](https://huggingface.co/varunbsingh/dino-multitask)
 - [Proyecto relacionado en GitHub: vivekananda05/multitask-dino](https://github.com/vivekananda05/multitask-dino)

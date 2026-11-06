@@ -87,12 +87,12 @@ La principal diferencia frente al modelo base es la especialización en el domin
 - Idiomas restringidos: solo inglés y francés; no sirve para mercados hispanohablantes sin adaptación adicional.
 - Licencia Llama 3.2: impone restricciones de la licencia comunitaria de Meta (límites de uso, requisitos de atribución y restricciones para ciertos despliegues a gran escala); debe revisarse antes de uso comercial.
 - Uso en producción: no sustituye la valoración de un peritador profesional; es adecuado como herramienta de apoyo o triaje preliminar.
-- Trazabilidad del repo: el modelo tiene 0 descargas, el ID del repo en HuggingFace difiere del ID citado en el ejemplo de código de la model card (Kakyoin03/car-damage-assessment-llama-vision), lo que sugiere un posible re-upload; conviene verificar la procedencia de los pesos.
+- Trazabilidad del repo: el modelo tiene 0 descargas, el ID del repo en Hugging Face difiere del ID citado en el ejemplo de código de la model card (Kakyoin03/car-damage-assessment-llama-vision), lo que sugiere un posible re-upload; conviene verificar la procedencia de los pesos.
 - No se documenta soporte de tool calling, agentes, ni despliegue con runtimes de inferencia optimizados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diablomike20/car-damage-assessment-llama-vision
+- Modelo en Hugging Face: https://huggingface.co/diablomike20/car-damage-assessment-llama-vision
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/KHAOULA-KH/CAR_DOMMAGE_
 - Framework de entrenamiento Unsloth: https://github.com/unslothai/unsloth

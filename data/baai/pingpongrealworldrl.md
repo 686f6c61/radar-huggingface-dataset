@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PingPongRealWorldRL es un repositorio publicado en HuggingFace por el Beijing Academy of Artificial Intelligence (BAAI) bajo licencia Apache 2.0. A pesar de su nombre, que sugiere un modelo de reinforcement learning aplicado al tenis de mesa en entornos reales, la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia. No se especifica si se trata de un modelo de lenguaje, un modelo de politica (policy) para control robotico, un dataset de entrenamiento o un entorno de simulacion.
+PingPongRealWorldRL es un repositorio publicado en Hugging Face por el Beijing Academy of Artificial Intelligence (BAAI) bajo licencia Apache 2.0. A pesar de su nombre, que sugiere un modelo de reinforcement learning aplicado al tenis de mesa en entornos reales, la model card publicada no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia. No se especifica si se trata de un modelo de lenguaje, un modelo de politica (policy) para control robotico, un dataset de entrenamiento o un entorno de simulacion.
 
 La informacion disponible en el momento de redactar esta ficha es practicamente nula: cero descargas, cero likes, sin pipeline declarado, sin idiomas indicados y sin documentacion asociada. El repositorio fue creado y actualizado el 3 de noviembre de 2026, lo que sugiere una publicacion reciente y posiblemente incompleta o en proceso de documentacion.
 
@@ -77,6 +77,6 @@ No disponible. Sin conocer la categoria del artefacto (modelo de lenguaje, polic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BAAI/PingPongRealWorldRL
-- Organizacion BAAI en HuggingFace: https://huggingface.co/BAAI
+- Repositorio en Hugging Face: https://huggingface.co/BAAI/PingPongRealWorldRL
+- Organizacion BAAI en Hugging Face: https://huggingface.co/BAAI
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

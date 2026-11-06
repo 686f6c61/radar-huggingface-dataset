@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Kev1nDang/grocery-detector` es un modelo alojado en HuggingFace por el usuario Kev1nDang, publicado bajo licencia Apache 2.0. Por el identificador y la ausencia de cualquier documentación técnica en la model card (que se limita a la línea de licencia), todo apunta a un detector de objetos orientado a productos de supermercado o alimentación, presumiblemente basado en una arquitectura de visión por computador (tipo YOLO, DETR o similar) y no en un modelo de lenguaje. No obstante, esta hipótesis no puede confirmarse con la información disponible.
+`Kev1nDang/grocery-detector` es un modelo alojado en Hugging Face por el usuario Kev1nDang, publicado bajo licencia Apache 2.0. Por el identificador y la ausencia de cualquier documentación técnica en la model card (que se limita a la línea de licencia), todo apunta a un detector de objetos orientado a productos de supermercado o alimentación, presumiblemente basado en una arquitectura de visión por computador (tipo YOLO, DETR o similar) y no en un modelo de lenguaje. No obstante, esta hipótesis no puede confirmarse con la información disponible.
 
-El repositorio no incluye pipeline declarado, idiomas soportados, descripción de arquitectura, datos de entrenamiento, parámetros, contexto ni resultados de benchmarks. Fue creado y actualizado el 4 de noviembre de 2026 (fecha según los metadatos de HuggingFace), sin descargas ni likes registrados en el momento de la consulta.
+El repositorio no incluye pipeline declarado, idiomas soportados, descripción de arquitectura, datos de entrenamiento, parámetros, contexto ni resultados de benchmarks. Fue creado y actualizado el 4 de noviembre de 2026 (fecha según los metadatos de Hugging Face), sin descargas ni likes registrados en el momento de la consulta.
 
 Su relevancia actual es, por tanto, muy limitada: se trata de un artefacto sin documentación pública verificable, lo que impide evaluar su calidad, reproducibilidad o idoneidad para producción. Cualquier uso requeriría inspeccionar directamente los archivos del repositorio (pesos, configuración, posible `preprocessor_config.json`) para determinar la arquitectura real y las clases detectadas.
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, muy limitada: se trata de un artefacto sin d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la model card ni en los metadatos de HuggingFace. El nombre del repositorio sugiere un modelo de detección de objetos aplicado a productos de alimentación, lo que implicaría típicamente un backbone convolucional o un transformer de visión con cabecera de detección, pero no hay confirmación documental.
+No se ha publicado información sobre la arquitectura en la model card ni en los metadatos de Hugging Face. El nombre del repositorio sugiere un modelo de detección de objetos aplicado a productos de alimentación, lo que implicaría típicamente un backbone convolucional o un transformer de visión con cabecera de detección, pero no hay confirmación documental.
 
 Tampoco hay datos sobre el conjunto de entrenamiento (número de imágenes, clases anotadas, procedencia del dataset), sobre técnicas de aumento de datos, ni sobre procesos de ajuste fino o destilación. No consta información sobre evaluación, métricas mAP ni validación cruzada.
 
@@ -67,10 +67,10 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 | Modelo | Parámetros | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|
-| Kev1nDang/grocery-detector | no disponible | Apache 2.0 | mínima (solo licencia) | HuggingFace |
-| YOLO11 (Ultralytics) | variable (n/s/m/l/x) | AGPL-3.0 | extensa | GitHub, HuggingFace |
-| DETR (Facebook) | ~41M (ResNet-50) | Apache 2.0 | extensa | GitHub, HuggingFace |
-| Grounding DINO | ~172M (Swin-T) | Apache 2.0 | extensa | GitHub, HuggingFace |
+| Kev1nDang/grocery-detector | no disponible | Apache 2.0 | mínima (solo licencia) | Hugging Face |
+| YOLO11 (Ultralytics) | variable (n/s/m/l/x) | AGPL-3.0 | extensa | GitHub, Hugging Face |
+| DETR (Facebook) | ~41M (ResNet-50) | Apache 2.0 | extensa | GitHub, Hugging Face |
+| Grounding DINO | ~172M (Swin-T) | Apache 2.0 | extensa | GitHub, Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -84,4 +84,4 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kev1nDang/grocery-detector
+- Hugging Face: https://huggingface.co/Kev1nDang/grocery-detector

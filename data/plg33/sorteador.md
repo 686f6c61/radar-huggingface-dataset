@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sorteador es un repositorio de modelo publicado en HuggingFace por el usuario plg33 bajo licencia Apache 2.0. En el momento de la indexacion no se ha publicado ninguna model card con contenido sustantivo: el README se limita a la declaracion de licencia, sin descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea, y acumula cero descargas y cero likes.
+Sorteador es un repositorio de modelo publicado en Hugging Face por el usuario plg33 bajo licencia Apache 2.0. En el momento de la indexacion no se ha publicado ninguna model card con contenido sustantivo: el README se limita a la declaracion de licencia, sin descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline de inferencia, idiomas soportados ni etiquetas de tarea, y acumula cero descargas y cero likes.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no hay informacion tecnica publicada. El nombre del repositorio, "Sorteador", sugiere en castellano y portugues una funcion de sorteo o seleccion aleatoria, pero se trata de una inferencia no confirmada por ninguna fuente; no debe tomarse como caracteristica del modelo.
 
@@ -75,7 +75,7 @@ No disponible. Al no conocerse el tamano, la tarea ni la arquitectura del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| plg33/Sorteador | no disponible | no disponible | apache-2.0 | HuggingFace | no disponible |
+| plg33/Sorteador | no disponible | no disponible | apache-2.0 | Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. Al no conocerse el tamano, la tarea ni la arquitectura del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/plg33/Sorteador
+- Repositorio en Hugging Face: https://huggingface.co/plg33/Sorteador
 - Model card: no disponible (el README solo contiene la declaracion de licencia)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Nota sobre la busqueda web: los resultados obtenidos corresponden a paginas de inicio de sesion y promocion de OpenAI/ChatGPT (chatgpt.com, openai.com), sin ninguna relacion con el modelo plg33/Sorteador. No se han encontrado fuentes adicionales relevantes.

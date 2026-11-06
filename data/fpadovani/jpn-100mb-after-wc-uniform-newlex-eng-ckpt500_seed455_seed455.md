@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455` es un checkpoint de generacion de texto publicado por el usuario `fpadovani` (afiliado a la Universidad de Groningen segun la URL de Weights & Biases del model card) en HuggingFace. Se trata de un ajuste fino por SFT (supervised fine-tuning) realizado con la libreria TRL sobre el modelo base `fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455`. Por el nombre y las etiquetas, parece formar parte de una linea de experimentos academicos sobre entrenamiento de modelos de lenguaje con volumenes reducidos de datos (100 MB), con variantes de muestreo uniforme y vocabulario/lexico nuevo.
+El modelo `jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455` es un checkpoint de generacion de texto publicado por el usuario `fpadovani` (afiliado a la Universidad de Groningen segun la URL de Weights & Biases del model card) en Hugging Face. Se trata de un ajuste fino por SFT (supervised fine-tuning) realizado con la libreria TRL sobre el modelo base `fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455`. Por el nombre y las etiquetas, parece formar parte de una linea de experimentos academicos sobre entrenamiento de modelos de lenguaje con volumenes reducidos de datos (100 MB), con variantes de muestreo uniforme y vocabulario/lexico nuevo.
 
 El modelo tiene 124.770.816 parametros reales (segun el peso declarado en safetensors), lo que lo situa en la misma escala que GPT-2 small. La etiqueta del repositorio indica arquitectura `gpt2` y tarea `text-generation`, con licencia no disponible y sin idiomas declarados. El repositorio ocupa 4,7 GB, un tamano desproporcionado para 124,8 M de parametros, lo que sugiere que incluye multiples checkpoints y/o estados de optimizador del entrenamiento.
 
@@ -69,7 +69,7 @@ Datos de la columna de este modelo procedentes de la informacion disponible; los
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455 | 124,77 M | No disponible | GPT-2 | No disponible | HuggingFace, safetensors |
+| jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455 | 124,77 M | No disponible | GPT-2 | No disponible | Hugging Face, safetensors |
 | GPT-2 small | 124 M | 1024 tokens | Transformer decoder-only | MIT | Ampliamente disponible |
 | OPT-125M | 125 M | 2048 tokens | Transformer decoder-only | MIT | Ampliamente disponible |
 | Pythia-160M | 160 M | 2048 tokens | Transformer decoder-only | Apache 2.0 | Ampliamente disponible |
@@ -87,11 +87,11 @@ El modelo de este analisis carece de licencia declarada, idiomas documentados y 
 - Madurez: cero descargas y cero valoraciones; es un artefacto de investigacion sin validacion por parte de la comunidad.
 - Produccion: no se recomienda su uso en sistemas en produccion, especialmente en atencion al cliente, generacion de codigo o cualquier tarea donde la precision sea critica.
 - Repositorio pesado: 4,7 GB para 124,8 M de parametros, lo que puede indicar ficheros redundantes o estados de entrenamiento; conviene revisar el contenido antes de descargar.
-- Fechas: la fecha de creacion declarada (2026-09-16) es posterior a la fecha de actualidad conocida; se reproduce tal cual figura en la ficha de HuggingFace.
+- Fechas: la fecha de creacion declarada (2026-09-16) es posterior a la fecha de actualidad conocida; se reproduce tal cual figura en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/rps7myi2
 - Repositorio de TRL: https://github.com/huggingface/trl

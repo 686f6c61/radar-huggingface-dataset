@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sim-square-narrow-r01-auto-plain-il-n1-idql` es un agente de control robótico basado en IDQL (Implicit Diffusion Q-Learning) publicado por el proyecto Mulligan, distribuido a través del repositorio de HuggingFace del usuario `mulligan`. Se trata de una política state-based compuesta por un actor de difusión y un crítico IQL escalar, junto con ficheros de normalización (`stats.json`), empaquetada como checkpoint de PyTorch (`policy.pt`). No es un modelo de lenguaje: no procesa texto ni imágenes, sino observaciones de estado del entorno de simulación.
+`sim-square-narrow-r01-auto-plain-il-n1-idql` es un agente de control robótico basado en IDQL (Implicit Diffusion Q-Learning) publicado por el proyecto Mulligan, distribuido a través del repositorio de Hugging Face del usuario `mulligan`. Se trata de una política state-based compuesta por un actor de difusión y un crítico IQL escalar, junto con ficheros de normalización (`stats.json`), empaquetada como checkpoint de PyTorch (`policy.pt`). No es un modelo de lenguaje: no procesa texto ni imágenes, sino observaciones de estado del entorno de simulación.
 
 La tarea objetivo es `sim-square-narrow`, dentro de la campaña de experimentos de Mulligan, y esta ficha corresponde a la ronda R1, brazo `auto-plain-il-n1`, con la etiqueta de celda `iterative-IL comparator`. El modelo se entrenó durante 150.001 pasos y se publican cinco checkpoints independientes, uno por semilla (1 a 5), lo que permite analizar la varianza entre ejecuciones del mismo algoritmo y configuración.
 
@@ -84,9 +84,9 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K ni eq
 
 | Modelo / variante | Proyecto | Algoritmo | Semillas | Tasa de exito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `sim-square-narrow-r01-auto-plain-il-n1-idql` | Mulligan | IDQL (actor de difusion + critico IQL escalar) | 5 | 68,1 % (27256/40000) | MIT | HuggingFace |
-| `sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts` | Mulligan | Politica de comportamiento compartida (BC) usada como fuente de datos | no disponible | no disponible | no disponible | HuggingFace (dataset) |
-| Variante `auto-iql-n32` de `sim-square-narrow` | Mulligan | IQL con 32 muestras | no disponible | no disponible | no disponible | HuggingFace (dataset de rollouts) |
+| `sim-square-narrow-r01-auto-plain-il-n1-idql` | Mulligan | IDQL (actor de difusion + critico IQL escalar) | 5 | 68,1 % (27256/40000) | MIT | Hugging Face |
+| `sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts` | Mulligan | Politica de comportamiento compartida (BC) usada como fuente de datos | no disponible | no disponible | no disponible | Hugging Face (dataset) |
+| Variante `auto-iql-n32` de `sim-square-narrow` | Mulligan | IQL con 32 muestras | no disponible | no disponible | no disponible | Hugging Face (dataset de rollouts) |
 
 No se dispone de datos de rendimiento publicados para las variantes comparables dentro de la informacion proporcionada, por lo que la comparacion cuantitativa no puede completarse. Fuera del proyecto Mulligan no se identifican en la busqueda modelos directamente equivalentes con metricas comparables para la tarea `sim-square-narrow`.
 
@@ -104,10 +104,10 @@ No se dispone de datos de rendimiento publicados para las variantes comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-plain-il-n1-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-plain-il-n1-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento (demostraciones de teleoperacion): https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de entrenamiento (rollouts de politica de comportamiento): https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts
 - Dataset de rollouts derivado de esta politica: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-auto-plain-il-n1-policy-rollouts

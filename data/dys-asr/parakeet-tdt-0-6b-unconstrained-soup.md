@@ -89,5 +89,5 @@ No se dispone de datos de WER del modelo base nvidia/parakeet-tdt-0.6b-v3 sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-tdt-0.6b-unconstrained-soup
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-tdt-0.6b-unconstrained-soup
 - Ingrediente 1 (all-aug): https

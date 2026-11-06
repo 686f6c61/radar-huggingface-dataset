@@ -76,10 +76,10 @@ No se proporcionan valores de referencia del modelo base sin comprimir ni de las
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-mis7_swift_jbbsft1_remove20 | 7,24 B almacenados (fracción densa 0,8004) | No disponible (base: 32.768) | Apache 2.0 | ASR AdvBench 0,0423; ASR StrongREJECT 0,0703; sobre-rechazo 0,3009; ppl WikiText-2 7,4159 | HuggingFace, 0 descargas, 0 likes |
-| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | 7,24 B | 32.768 | Apache 2.0 | No disponible en la información proporcionada | HuggingFace, ampliamente distribuido |
+| svd-safety-mis7_swift_jbbsft1_remove20 | 7,24 B almacenados (fracción densa 0,8004) | No disponible (base: 32.768) | Apache 2.0 | ASR AdvBench 0,0423; ASR StrongREJECT 0,0703; sobre-rechazo 0,3009; ppl WikiText-2 7,4159 | Hugging Face, 0 descargas, 0 likes |
+| mistralai/Mistral-7B-Instruct-v0.2 (base sin comprimir) | 7,24 B | 32.768 | Apache 2.0 | No disponible en la información proporcionada | Hugging Face, ampliamente distribuido |
 | Otras celdas de la misma rejilla de compresión | No disponible | No disponible | Apache 2.0 (presumiblemente) | No disponible | No disponible |
-| Otros modelos de ~7-8 B comparables (Llama-3.1-8B-Instruct, Zephyr-7B-beta) | 7-8 B | No disponible | Licencias propias | No disponible | HuggingFace |
+| Otros modelos de ~7-8 B comparables (Llama-3.1-8B-Instruct, Zephyr-7B-beta) | 7-8 B | No disponible | Licencias propias | No disponible | Hugging Face |
 
 No se dispone de datos comparativos de benchmarks en la información proporcionada; la comparación con alternativas de la misma categoría no puede cuantificarse aquí. El criterio de comparación relevante para este artefacto no es la calidad conversacional, sino el par (ASR, sobre-rechazo) frente al modelo base y frente a otras reglas de selección de componentes.
 
@@ -97,6 +97,6 @@ No se dispone de datos comparativos de benchmarks en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove20
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft1_remove20
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repos o demos) en los resultados disponibles; las únicas coincidencias devueltas corresponden a contenidos sin relación con el modelo.

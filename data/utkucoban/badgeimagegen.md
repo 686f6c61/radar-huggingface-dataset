@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye otros modelos de generac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/utkucoban/BadgeImageGen
+- Modelo en Hugging Face: https://huggingface.co/utkucoban/BadgeImageGen
 - Firmware precompilado: https://huggingface.co/utkucoban/BadgeImageGen/blob/main/firmware.bin
 - Código fuente e inferencia en C: https://huggingface.co/utkucoban/BadgeImageGen/tree/main/source
 - Código de entrenamiento y exportación: https://huggingface.co/utkucoban/BadgeImageGen/tree/main/training

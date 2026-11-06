@@ -1,14 +1,14 @@
 # aariciah/gpt2-russian-dutch-routed
 
 ## Resumen
-El modelo aariciah/gpt2-russian-dutch-routed es un ajuste fino de un modelo GPT-2 desarrollado por el usuario aariciah, publicado en HuggingFace. Se basa en el modelo aariciah/gpt2-russian-20k-lc y tiene 114.877.440 parámetros totales. Según los metadatos, está diseñado para la tarea de generación de texto (text-generation) y utiliza el formato de pesos safetensors.
+El modelo aariciah/gpt2-russian-dutch-routed es un ajuste fino de un modelo GPT-2 desarrollado por el usuario aariciah, publicado en Hugging Face. Se basa en el modelo aariciah/gpt2-russian-20k-lc y tiene 114.877.440 parámetros totales. Según los metadatos, está diseñado para la tarea de generación de texto (text-generation) y utiliza el formato de pesos safetensors.
 
 La documentación disponible es muy limitada: la model card está generada automáticamente y no especifica el dataset de entrenamiento, los idiomas soportados, la longitud de contexto ni la licencia. El nombre del modelo sugiere una combinación de ruso y neerlandés, pero no hay confirmación oficial. No se han publicado benchmarks ni casos de uso documentados, por lo que el modelo debe considerarse experimental.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (según tags de HuggingFace) |
+| Arquitectura | GPT-2 (según tags de Hugging Face) |
 | Parametros totales | 114.877.440 |
 | Parametros activos | No aplicable (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -49,7 +49,7 @@ No disponible: no se han publicado comparativas con otros modelos en la informac
 - Caveat de producción: la model card está generada automáticamente y carece de información esencial (dataset, idiomas, benchmarks). El tamaño del repositorio (5.1 GB) es desproporcionado para 115M parámetros, lo que sugiere la presencia de pesos en FP32 o archivos adicionales no documentados.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/aariciah/gpt2-russian-dutch-routed
+- Hugging Face: https://huggingface.co/aariciah/gpt2-russian-dutch-routed
 - Modelo relacionado del mismo autor: https://huggingface.co/aariciah/gpt2-russian-dutch-first
 - Modelo relacionado del mismo autor: https://huggingface.co/aariciah/gpt2-russian-dutch-synsem
 - No se han encontrado papers, blogs o demos adicionales.

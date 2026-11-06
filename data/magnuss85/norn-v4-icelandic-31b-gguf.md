@@ -77,10 +77,10 @@ Datos adicionales aportados por el autor:
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Norn v4 Icelandic 31B | ~30,7B | No disponible | Fine-tune islandés (morfologia) sobre Gemma 4 31B-it | Apache 2.0 | GGUF en HuggingFace (Q5_K_M, Q8_0) |
-| Gemma 4 31B-it (base) | ~30,7B | No disponible | Modelo generalista multilingüe de Google | Apache 2.0 (según model card de Norn v4) | Disponible en HuggingFace |
-| Norn v3 Icelandic 9B | ~9B (estimado por el nombre) | No disponible | Fine-tune islandés de generacion anterior | No disponible | Disponible en HuggingFace |
-| Vör Icelandic PII 31B | ~30,7B (derivado de Gemma 4 31B) | No disponible | Especialista en deteccion de datos personales en islandés | No disponible | GGUF en HuggingFace |
+| Norn v4 Icelandic 31B | ~30,7B | No disponible | Fine-tune islandés (morfologia) sobre Gemma 4 31B-it | Apache 2.0 | GGUF en Hugging Face (Q5_K_M, Q8_0) |
+| Gemma 4 31B-it (base) | ~30,7B | No disponible | Modelo generalista multilingüe de Google | Apache 2.0 (según model card de Norn v4) | Disponible en Hugging Face |
+| Norn v3 Icelandic 9B | ~9B (estimado por el nombre) | No disponible | Fine-tune islandés de generacion anterior | No disponible | Disponible en Hugging Face |
+| Vör Icelandic PII 31B | ~30,7B (derivado de Gemma 4 31B) | No disponible | Especialista en deteccion de datos personales en islandés | No disponible | GGUF en Hugging Face |
 
 En rendimiento, Norn v4 supera claramente a Gemma 4 31B-it en la prueba de declinación BÍN (0,856 frente a 0,700) y reduce las incidencias gramaticales en escritura, mientras que en pruebas de capacidad general (Belebele, WinoGrande, ARC-Challenge) se mantiene prácticamente idéntico al base, sin mejoras ni pérdidas significativas. Frente a Norn v3 (9B), la mejora en BÍN es sustancial (0,856 frente a 0,608), a costa de un mayor tamaño y requisitos de hardware.
 
@@ -97,9 +97,9 @@ En rendimiento, Norn v4 supera claramente a Gemma 4 31B-it en la prueba de decli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Magnuss85/Norn-v4-Icelandic-31B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Magnuss85/Norn-v4-Icelandic-31B-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Modelo predecesor Norn v3: https://huggingface.co/Magnuss85/Norn-v3-Icelandic-9B
 - Modelo hermano Vör (detección de datos personales): https://huggingface.co/Magnuss85/Vor-Icelandic-PII-31B-GGUF
 - Sitio del autor: https://smarason.is
-- Perfil del autor en HuggingFace: https://huggingface.co/Magnuss85
+- Perfil del autor en Hugging Face: https://huggingface.co/Magnuss85

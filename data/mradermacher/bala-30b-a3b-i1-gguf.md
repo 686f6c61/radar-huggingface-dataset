@@ -6,7 +6,7 @@ Bala-30B-A3B es un modelo de lenguaje con arquitectura de mezcla de expertos (Mo
 
 El proceso de entrenamiento incluye ajuste fino mediante QLoRA y técnicas de destilación, utilizando los datasets nvidia/OpenCodeReasoning, open-r1/Mixture-of-Thoughts y open-thoughts/OpenThoughts3-1.2M. La versión que aquí se documenta es una cuantización GGUF con imatrix realizada por mradermacher, que facilita la ejecución local del modelo en entornos con recursos limitados. El modelo se publica bajo licencia Apache 2.0, aunque conviene revisar las licencias de los datasets empleados antes de un uso comercial.
 
-Esta ficha se basa exclusivamente en la información publicada en HuggingFace y en la model card de mradermacher. No se dispone de datos sobre benchmarks ni de pruebas de rendimiento independientes.
+Esta ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card de mradermacher. No se dispone de datos sobre benchmarks ni de pruebas de rendimiento independientes.
 
 ## Especificaciones tecnicas
 

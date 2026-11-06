@@ -106,7 +106,7 @@ No hay datos de benchmarks de tareas que permitan una comparación de rendimient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keptn/ling-3.0-flash-sante-w4a8
+- Modelo en Hugging Face: https://huggingface.co/keptn/ling-3.0-flash-sante-w4a8
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash-Sante
 - Motor radiance: https://codeberg.org/StillDeadcode/radiance
 - PR #337 de radiance: https://codeberg.org/StillDeadcode/radiance/pulls/337

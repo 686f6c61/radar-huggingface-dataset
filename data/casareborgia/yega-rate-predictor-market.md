@@ -65,7 +65,7 @@ El baseline es la media de entrenamiento por rango de precios preliminares; unid
 ## Requisitos de hardware
 
 - Inferencia en CPU: el modelo es LightGBM con profundidad 3 y como máximo 300 árboles por cuantil; no requiere GPU.
-- VRAM estimada: no aplicable; el artefacto joblib ocupa una fracción muy pequeña de un repositorio de 0,0 GB según HuggingFace.
+- VRAM estimada: no aplicable; el artefacto joblib ocupa una fracción muy pequeña de un repositorio de 0,0 GB según Hugging Face.
 - GPU recomendadas: no aplicable.
 - Compatibilidad con GPU de consumo: irrelevante, el cuello de botella no es el cómputo.
 - Opciones de despliegue: carga directa con `joblib.load` y `predict` de LightGBM; integrable en cualquier servicio Python. No se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -76,7 +76,7 @@ El baseline es la media de entrenamiento por rango de precios preliminares; unid
 
 | Modelo | Tipo | Entrada | Salida | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yega-rate-predictor-market | LightGBM quantile (3 modelos) | 5 variables tabulares | Q25/Q50/Q75 de la tasa de evaluación | 538.907 registros Nara Jangkau (2024-01 a 2026-09) | MIT | HuggingFace, 0 descargas, 0 likes |
+| yega-rate-predictor-market | LightGBM quantile (3 modelos) | 5 variables tabulares | Q25/Q50/Q75 de la tasa de evaluación | 538.907 registros Nara Jangkau (2024-01 a 2026-09) | MIT | Hugging Face, 0 descargas, 0 likes |
 | Baseline por rango (media de entrenamiento) | Estadístico | `range_cls` | Media de la tasa por rango | Mismos datos | no aplica | Referencia interna del propio informe |
 | Otros modelos de predicción de precios en contratación pública | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se dispone de información sobre modelos comparables publicados para esta tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/casareborgia/yega-rate-predictor-market
+- Modelo en Hugging Face: https://huggingface.co/casareborgia/yega-rate-predictor-market
 - Repositorio de código del autor: https://github.com/casareborgia/bid-
 - Origen de datos, API de información de adjudicaciones del servicio público de contrataciones de Corea (공공데이터포털 「조달청_나라장터 낙찰정보서비스」 Open API): no disponible como URL directa en la información proporcionada
 - Informes de validación citados por el autor (`reports/cv_report_market.md`, `reports/backtest_market_2026-09.md`, `reports/backtest_market_2026-10.md`): accesibles únicamente a través del repositorio de GitHub indicado

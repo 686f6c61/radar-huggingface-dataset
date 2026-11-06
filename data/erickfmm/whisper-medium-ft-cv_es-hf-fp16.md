@@ -93,7 +93,7 @@ No se dispone de datos de WER para whisper-medium base en español en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erickfmm/whisper-medium-ft-cv_es-hf-fp16
+- Hugging Face: https://huggingface.co/erickfmm/whisper-medium-ft-cv_es-hf-fp16
 - Repositorio del proyecto: https://github.com/erickfmm/training-asr
 - Documentación del proyecto: https://github.com/erickfmm/training-asr/blob/main/README.md
 - Experimentos (incluye §8.3 sobre el problema de divergencia): https://github.com/erickfmm/training-asr/blob/main/Experimentos.md

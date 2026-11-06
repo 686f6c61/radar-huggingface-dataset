@@ -82,7 +82,7 @@ No hay datos de rendimiento comparativo entre estos adaptadores. El modelo base 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-fiction716-r64-dynbatch
+- Repositorio Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-fiction716-r64-dynbatch
 - Adaptador control emparejado (difficult advice): https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-da716-r64-dynbatch
 - Adaptador variante post-action-retrospection: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-par716-r64-dynbatch
 - Adaptador variante channel-swap: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-strace-greply703-paired-r64

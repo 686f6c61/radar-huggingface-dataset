@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dmsmirnov/diffusion-qa` es un repositorio de HuggingFace que contiene un único artefacto de código (`inference.py`) correspondiente a un modelo de arquitectura **mixer** a escala **giant**, orientado a tareas **multitask**. La model card describe una implementación con atención lineal, fusión de características mediante estrategia **tucker**, activación **swish** y normalización **layernorm**, entrenada con el optimizador **lamb** y un programador de tasa de aprendizaje de calentamiento constante.
+`dmsmirnov/diffusion-qa` es un repositorio de Hugging Face que contiene un único artefacto de código (`inference.py`) correspondiente a un modelo de arquitectura **mixer** a escala **giant**, orientado a tareas **multitask**. La model card describe una implementación con atención lineal, fusión de características mediante estrategia **tucker**, activación **swish** y normalización **layernorm**, entrenada con el optimizador **lamb** y un programador de tasa de aprendizaje de calentamiento constante.
 
 A pesar del nombre del repositorio, no se proporcionan pesos del modelo, datos de entrenamiento ni resultados de benchmarks en la información disponible. El repositorio parece ser una implementación de referencia o un artefacto de inferencia, más que un modelo listo para su uso directo. La licencia es MIT, lo que permite uso comercial y modificación, pero la ausencia de pesos publicados limita su aplicabilidad práctica inmediata.
 
@@ -67,5 +67,5 @@ No se dispone de datos suficientes para comparar este modelo con alternativas. L
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dmsmirnov/diffusion-qa](https://huggingface.co/dmsmirnov/diffusion-qa)
+- Repositorio Hugging Face: [dmsmirnov/diffusion-qa](https://huggingface.co/dmsmirnov/diffusion-qa)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web.

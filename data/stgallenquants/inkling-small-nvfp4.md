@@ -72,7 +72,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/stgallenquants/Inkling-Small-NVFP4
+- Repositorio Hugging Face de este modelo: https://huggingface.co/stgallenquants/Inkling-Small-NVFP4
 - Modelo base BF16: https://huggingface.co/thinkingmachines/Inkling-Small
 - Model card oficial de Thinking Machines Lab: https://thinkingmachines.ai/model-card/inkling-small/
 - Anuncio de lanzamiento: https://thinkingmachines.ai/news/inkling-small/

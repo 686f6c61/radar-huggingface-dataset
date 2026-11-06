@@ -87,7 +87,7 @@ La información disponible solo permite comparar con la versión de mayor tamañ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pirola/Nemotron-3-Nano-30B-A3B-pirola-IQ2_XXS-XS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pirola/Nemotron-3-Nano-30B-A3B-pirola-IQ2_XXS-XS-GGUF
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Versión IQ3_XXS del mismo autor: https://huggingface.co/pirola/Nemotron-3-Nano-30B-A3B-pirola-IQ3_XXS-GGUF
 - Licencia NVIDIA Nemotron Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/

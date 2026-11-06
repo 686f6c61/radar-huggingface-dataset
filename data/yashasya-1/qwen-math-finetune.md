@@ -71,7 +71,7 @@ No se dispone de información comparativa. El modelo base `unsloth/Qwen2.5-Math-
 
 ## Enlaces
 
-- [HuggingFace: Yashasya-1/qwen-math-finetune](https://huggingface.co/Yashasya-1/qwen-math-finetune)
+- [Hugging Face: Yashasya-1/qwen-math-finetune](https://huggingface.co/Yashasya-1/qwen-math-finetune)
 - [Modelo base: unsloth/Qwen2.5-Math-1.5B-Instruct-bnb-4bit](https://huggingface.co/unsloth/Qwen2.5-Math-1.5B-Instruct-bnb-4bit)
 - [TRL (librería de entrenamiento)](https://github.com/huggingface/trl)
 - [Unsloth (herramienta de optimización)](https://github.com/unslothai/unsloth)

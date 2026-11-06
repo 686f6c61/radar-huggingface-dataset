@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Granite_42_30b_Abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Granite_42_30b_Abliterated-GGUF
 - Modelo base (ChonkE): https://huggingface.co/ChonkE/Granite_42_30b_Abliterated
 - Version similar con imatrix: https://huggingface.co/mradermacher/granite-4.1-30b-abliterated-i1-GGUF
 - Version similar sin imatrix: https://huggingface.co/mradermacher/granite-4.1-30b-abliterated-GGUF

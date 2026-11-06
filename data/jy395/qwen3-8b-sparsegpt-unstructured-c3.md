@@ -80,7 +80,7 @@ La comparación directa con modelos de poda de otros autores no está disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Qwen3-8B-sparsegpt-unstructured-c3
+- Modelo en Hugging Face: https://huggingface.co/jy395/Qwen3-8B-sparsegpt-unstructured-c3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Colección completa (ICAIF 2026): https://huggingface.co/collections/jy395/financial-llm-compression-and-calibration-icaif-2026-6ae60c49d2f87e2ae7269058
 - Repositorio de código y calibración: https://github.com/JunyiYe/finance-ptc-calibration

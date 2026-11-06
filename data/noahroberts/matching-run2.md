@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NOAHROBERTS/matching-run2 es un repositorio de HuggingFace que contiene una implementacion minima de una arquitectura **Poolformer** orientada a tareas de *matching*, empaquetada con su configuracion de arquitectura y un checkpoint de inicializacion. El autor lo describe explicitamente como un punto de partida reproducible, no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y no se presenta como un checkpoint con benchmarks. No se declara pipeline, idiomas ni resultados de evaluacion.
+NOAHROBERTS/matching-run2 es un repositorio de Hugging Face que contiene una implementacion minima de una arquitectura **Poolformer** orientada a tareas de *matching*, empaquetada con su configuracion de arquitectura y un checkpoint de inicializacion. El autor lo describe explicitamente como un punto de partida reproducible, no como un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y no se presenta como un checkpoint con benchmarks. No se declara pipeline, idiomas ni resultados de evaluacion.
 
 El modelo es extremadamente pequeno: 33.088 parametros totales en formato safetensors, con una variante de escala denominada **nano**. La arquitectura emplea atencion de tipo *grouped query*, fusion mediante *concat mlp*, activacion *gelu tanh* y normalizacion *groupnorm*. El repositorio ocupa 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un artefacto experimental sin adopcion publica.
 
@@ -81,7 +81,7 @@ No disponible. No se proporcionan modelos comparables en la informacion facilita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NOAHROBERTS/matching-run2
+- Hugging Face: https://huggingface.co/NOAHROBERTS/matching-run2
 - Paper de PoolFormer / MetaFormer (referencia de arquitectura): no disponible en la informacion proporcionada
 - Repositorio de codigo independiente: no disponible
 - Demo: no disponible

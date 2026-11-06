@@ -88,7 +88,7 @@ El modelo Qwen3.6-27B supera a su predecesor Qwen3.5-27B y al MoE Qwen3.6-35B-A3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gael1125/Qwen3.6-1
+- Repositorio Hugging Face: https://huggingface.co/Gael1125/Qwen3.6-1
 - Modelo base Qwen3.6-27B (referencia): https://huggingface.co/Qwen/Qwen3.6-27B
 - GitHub oficial de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Blog de Qwen sobre Qwen3.6-27B: https://qwen.ai/blog?id=qwen3.6-27b

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ALANX-TESTER-MODELS-8B es un repositorio de pesos publicado en HuggingFace por el usuario Lobus22 bajo el identificador `Lobus22/ALANX-TESTER-MODELS-8B`. Segun la informacion disponible, se trata de un modelo compatible con la libreria `transformers`, distribuido en formato `safetensors` y etiquetado con la herramienta de entrenamiento `unsloth`. El nombre sugiere un modelo de aproximadamente 8.000 millones de parametros, pero este dato no aparece confirmado en ningun campo de la model card ni en los metadatos del repositorio.
+ALANX-TESTER-MODELS-8B es un repositorio de pesos publicado en Hugging Face por el usuario Lobus22 bajo el identificador `Lobus22/ALANX-TESTER-MODELS-8B`. Segun la informacion disponible, se trata de un modelo compatible con la libreria `transformers`, distribuido en formato `safetensors` y etiquetado con la herramienta de entrenamiento `unsloth`. El nombre sugiere un modelo de aproximadamente 8.000 millones de parametros, pero este dato no aparece confirmado en ningun campo de la model card ni en los metadatos del repositorio.
 
-La model card publicada es la plantilla por defecto de HuggingFace, en la que absolutamente todos los campos de contenido (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental y contacto) siguen marcados como `[More Information Needed]`. No hay, por tanto, informacion verificable sobre arquitectura, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluacion.
+La model card publicada es la plantilla por defecto de Hugging Face, en la que absolutamente todos los campos de contenido (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion, impacto ambiental y contacto) siguen marcados como `[More Information Needed]`. No hay, por tanto, informacion verificable sobre arquitectura, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluacion.
 
 El repositorio presenta senales propias de un artefacto de prueba o de un volcado no publicado: cero descargas, cero valoraciones, ausencia de licencia declarada, ausencia de campo `pipeline` y un identificador que incluye el termino "TESTER". Ademas, el tamano del repositorio (1,4 GB) es incompatible con pesos completos de un modelo de 8.000 millones de parametros en precision fp16 (que rondarian los 16 GB), lo que apunta a una version cuantizada a 4 bits o a un adaptador LoRA, sin que sea posible confirmarlo con la informacion disponible.
 
@@ -18,7 +18,7 @@ El repositorio presenta senales propias de un artefacto de prueba o de un volcad
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene `safetensors`; no se publican versiones GGUF, AWQ, GPTQ ni bitsandbytes) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (el campo esta vacio en los metadatos de HuggingFace y como `[More Information Needed]` en la model card) |
+| Licencia | no disponible (el campo esta vacio en los metadatos de Hugging Face y como `[More Information Needed]` en la model card) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 1,4 GB |
 | Libreria declarada | transformers |
@@ -33,7 +33,7 @@ El repositorio presenta senales propias de un artefacto de prueba o de un volcad
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. Los unicos indicios son los tags del repositorio: `transformers` (indica compatibilidad con la libreria de HuggingFace, no una arquitectura concreta) y `unsloth` (indica que el artefacto se genero o ajusto con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente en memoria mediante LoRA/QLoRA). El tag `arxiv:1910.09700` no describe el modelo: corresponde a la referencia bibliografica de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, citada en la propia plantilla de model card de HuggingFace. Es decir, es un residuo de la plantilla, no un paper del modelo.
+No se dispone de informacion sobre la arquitectura del modelo. Los unicos indicios son los tags del repositorio: `transformers` (indica compatibilidad con la libreria de Hugging Face, no una arquitectura concreta) y `unsloth` (indica que el artefacto se genero o ajusto con la libreria Unsloth, habitualmente empleada para fine-tuning eficiente en memoria mediante LoRA/QLoRA). El tag `arxiv:1910.09700` no describe el modelo: corresponde a la referencia bibliografica de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, citada en la propia plantilla de model card de Hugging Face. Es decir, es un residuo de la plantilla, no un paper del modelo.
 
 Tampoco hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineamiento (RLHF, DPO, ORPO) ni innovaciones tecnicas de inferencia (atencion lineal, decodificacion especulativa, atencion con ventana deslizante, etc.). La unica inferencia razonable a partir del tamano del repositorio (1,4 GB frente a los ~16 GB esperables para 8.000 millones de parametros en fp16) es que el checkpoint almacenado corresponde a pesos cuantizados de baja precision o a un adaptador de bajo rango, pero esto no puede confirmarse con la informacion proporcionada.
 
@@ -46,7 +46,7 @@ No hay ninguna capacidad documentada en la model card: todas las secciones de de
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declara ningun idioma).
 - Modo de razonamiento explicito (thinking mode), audio, vision u otras capacidades especiales: no disponible.
-- Compatibilidad de infraestructura: el tag `endpoints_compatible` sugiere que el artefacto puede servirse a traves de HuggingFace Inference Endpoints, sin que se detallen los requisitos.
+- Compatibilidad de infraestructura: el tag `endpoints_compatible` sugiere que el artefacto puede servirse a traves de Hugging Face Inference Endpoints, sin que se detallen los requisitos.
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ Las estimaciones siguientes se derivan exclusivamente del supuesto de un modelo 
 - VRAM en cuantizacion de 4 bits: aproximadamente 5-6 GB.
 - GPU de datacenter: A100 40/80 GB, H100 80 GB para fp16 con lotes grandes y contexto largo; tambien validas L40S o A6000.
 - GPU de consumo: RTX 3090 o RTX 4090 (24 GB) para fp16 con contexto moderado; RTX 4070 Ti Super, RTX 4080 o RTX 4060 Ti de 16 GB para 8 bits; tarjetas de 8-12 GB solo en 4 bits.
-- Despliegue: `transformers` (referencia), vLLM o TGI para servicio con batching continuo, llama.cpp u Ollama si se generan cuantizaciones GGUF (no publicadas actualmente), y HuggingFace Inference Endpoints dado el tag `endpoints_compatible`.
+- Despliegue: `transformers` (referencia), vLLM o TGI para servicio con batching continuo, llama.cpp u Ollama si se generan cuantizaciones GGUF (no publicadas actualmente), y Hugging Face Inference Endpoints dado el tag `endpoints_compatible`.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo, TTFT ni curvas de escalado.
 - Nota critica: el repositorio pesa 1,4 GB, muy por debajo de lo esperable para pesos fp16 de 8B. Si el contenido es un adaptador LoRA, este no es utilizable por si solo y requeriria el modelo base, que no se identifica en la model card.
 
@@ -92,7 +92,7 @@ Conclusion de la comparativa: los tres modelos de referencia documentan licencia
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace; no hay informacion sobre datos de entrenamiento, por lo que es imposible evaluar sesgos, contaminacion de benchmarks o procedencia del corpus.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face; no hay informacion sobre datos de entrenamiento, por lo que es imposible evaluar sesgos, contaminacion de benchmarks o procedencia del corpus.
 - Riesgo de alucinacion: no cuantificado ni evaluado. En modelos de ~8B sin alineamiento documentado, la tasa de afirmaciones incorrectas puede ser elevada en tareas factuales.
 - Licencia no declarada: sin licencia explicita no se concede ningun derecho de uso, incluido el comercial. Cualquier despliegue en produccion o redistribucion es juridicamente arriesgado hasta que el autor publique terminos.
 - Idiomas no declarados: se desconoce si el modelo soporta castellano de forma competente o si esta limitado al ingles.
@@ -104,7 +104,7 @@ Conclusion de la comparativa: los tres modelos de referencia documentan licencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Lobus22/ALANX-TESTER-MODELS-8B
+- Repositorio en Hugging Face: https://huggingface.co/Lobus22/ALANX-TESTER-MODELS-8B
 - Paper citado en el tag del repositorio (referencia de la plantilla sobre emisiones, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning referenciada en la plantilla: https://mlco2.github.io/impact
 - Documentacion de la libreria Unsloth (tag del repositorio): no se ha proporcionado enlace en la busqueda web

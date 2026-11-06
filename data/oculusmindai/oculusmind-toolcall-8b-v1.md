@@ -92,7 +92,7 @@ No se dispone de una comparativa directa publicada con otros modelos de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OculusMindAI/OculusMind-ToolCall-8B-v1
+- Modelo en Hugging Face: https://huggingface.co/OculusMindAI/OculusMind-ToolCall-8B-v1
 - Organizacion OculusMind.AI en GitHub: https://github.com/OculusMindAI/
 - Repositorio del SDK de agentes: https://github.com/OculusMindAI/oculusmind-agents-sdk
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16

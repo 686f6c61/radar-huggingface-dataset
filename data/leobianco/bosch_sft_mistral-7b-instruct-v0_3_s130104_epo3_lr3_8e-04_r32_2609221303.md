@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bosch_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr3_8e-04_r32_2609221303` es un ajuste fino (fine-tuning) supervisado del modelo base `mistralai/Mistral-7B-Instruct-v0.3`, publicado por el usuario `leobianco` en HuggingFace. Se ha entrenado mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, según se documenta en su model card. El nombre del repositorio codifica los hiperparámetros del entrenamiento: 3 épocas (`epo3`), tasa de aprendizaje 3,8e-04 (`lr3_8e-04`) y rango 32 (`r32`), lo que sugiere el uso de LoRA o QLoRA con rango 32.
+El modelo `bosch_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr3_8e-04_r32_2609221303` es un ajuste fino (fine-tuning) supervisado del modelo base `mistralai/Mistral-7B-Instruct-v0.3`, publicado por el usuario `leobianco` en Hugging Face. Se ha entrenado mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, según se documenta en su model card. El nombre del repositorio codifica los hiperparámetros del entrenamiento: 3 épocas (`epo3`), tasa de aprendizaje 3,8e-04 (`lr3_8e-04`) y rango 32 (`r32`), lo que sugiere el uso de LoRA o QLoRA con rango 32.
 
 El modelo hereda la arquitectura y las capacidades del base Mistral-7B-Instruct-v0.3: un transformer decoder-only de aproximadamente 7.250 millones de parámetros, con ventana de contexto de 32.768 tokens y soporte nativo de function calling. Sin embargo, la ficha pública no documenta el conjunto de datos de entrenamiento, el dominio de especialización, ni los idiomas objetivo, por lo que se desconoce el propósito concreto del ajuste más allá de la etiqueta "bosch" en el nombre. Esto limita seriamente su evaluación sin inspección directa del modelo.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| bosch_SFT_Mistral-7B-Instruct-v0_3 (este modelo) | 7.250 M (adaptadores) | 32.768 | no disponible | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7.250 M | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | HuggingFace, muy usado |
-| Qwen/Qwen2.5-7B-Instruct | 7.620 M | 131.072 | Apache 2.0 (mayoría de variantes) | HuggingFace, muy usado |
+| bosch_SFT_Mistral-7B-Instruct-v0_3 (este modelo) | 7.250 M (adaptadores) | 32.768 | no disponible | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7.250 M | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8.030 M | 128.000 | Llama 3.1 Community License | Hugging Face, muy usado |
+| Qwen/Qwen2.5-7B-Instruct | 7.620 M | 131.072 | Apache 2.0 (mayoría de variantes) | Hugging Face, muy usado |
 
 No se dispone de datos de rendimiento del ajuste que permitan comparar calidad frente al base o a las alternativas. La comparación se limita a parámetros, contexto y licencia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento del ajuste que permitan comparar calidad f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobianco/bosch_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr3_8e-04_r32_2609221303
+- Modelo en Hugging Face: https://huggingface.co/leobianco/bosch_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr3_8e-04_r32_2609221303
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Run de Weights & Biases del entrenamiento: https://wandb.ai/leobianco-universit-paris-saclay/new_perl/runs/5qg1vrbg
 - Repositorio de TRL: https://github.com/huggingface/trl

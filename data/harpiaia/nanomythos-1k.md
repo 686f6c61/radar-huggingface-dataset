@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NanoMythos-1K es un modelo de generación de texto publicado por HarpiaIA en HuggingFace, descrito por su autor como el primero y el más pequeño de la serie NanoMythos. Se trata de un modelo etiquetado como "tiny" y "mini", orientado a la generación de texto en inglés y entrenado con el dataset FineWeb-Edu. La model card indica que emplea una arquitectura Transformer con un tokenizer a nivel de carácter, una elección poco habitual que reduce el vocabulario a la lista de caracteres y desplaza la carga de modelado hacia la secuencia.
+NanoMythos-1K es un modelo de generación de texto publicado por HarpiaIA en Hugging Face, descrito por su autor como el primero y el más pequeño de la serie NanoMythos. Se trata de un modelo etiquetado como "tiny" y "mini", orientado a la generación de texto en inglés y entrenado con el dataset FineWeb-Edu. La model card indica que emplea una arquitectura Transformer con un tokenizer a nivel de carácter, una elección poco habitual que reduce el vocabulario a la lista de caracteres y desplaza la carga de modelado hacia la secuencia.
 
 La relevancia de este modelo es fundamentalmente experimental y educativa: por su tamaño reducido y su tokenizer char-level sirve como banco de pruebas para estudiar tokenización, curvas de escalado en modelos minúsculos y comportamiento lingüístico en el límite inferior de capacidad. No compite con modelos de propósito general y sus propios benchmarks publicados (ARC-Easy 25,51 % y BLiMP 50,17 %) sitúan su rendimiento en niveles cercanos al azar, como se detalla más abajo.
 
@@ -79,7 +79,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 | Modelo | Parametros | Contexto | ARC-Easy | BLiMP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NanoMythos-1K | no disponible | no disponible | 25,51 % | 50,17 % | Apache 2.0 | Repositorio HuggingFace (0 descargas, 0 likes) |
+| NanoMythos-1K | no disponible | no disponible | 25,51 % | 50,17 % | Apache 2.0 | Repositorio Hugging Face (0 descargas, 0 likes) |
 | Linea base aleatoria | no aplica | no aplica | 25 % | 50 % | no aplica | no aplica |
 | Alternativas de tamano "tiny" | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,8 +99,8 @@ No se identifican en la informacion disponible otros modelos con tokenizer char-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarpiaIA/NanoMythos-1K
+- Modelo en Hugging Face: https://huggingface.co/HarpiaIA/NanoMythos-1K
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
-- Perfil del autor en HuggingFace: https://huggingface.co/HarpiaIA
+- Perfil del autor en Hugging Face: https://huggingface.co/HarpiaIA
 - Script de generacion mencionado en la model card: `generate.py` (referenciado en el repositorio, sin URL directa publicada)
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

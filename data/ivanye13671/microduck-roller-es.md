@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Microduck-roller-es es una politica de control para robotica entrenada por refuerzo, publicada por el usuario Ivanye13671 en HuggingFace bajo el identificador `Ivanye13671/microduck-roller-es`. No es un modelo de lenguaje ni un transformer generativo: se trata de un controlador neuronal que genera acciones motoras para el robot microduck de Pollen Robotics cuando este se monta sobre rodillos (rollers). El objetivo declarado es un sprint de 2 metros, y la politica es de tipo "perpetuo", es decir, se ejecuta de forma continua en un bucle de control a 50 Hz hasta que se le indique lo contrario.
+Microduck-roller-es es una politica de control para robotica entrenada por refuerzo, publicada por el usuario Ivanye13671 en Hugging Face bajo el identificador `Ivanye13671/microduck-roller-es`. No es un modelo de lenguaje ni un transformer generativo: se trata de un controlador neuronal que genera acciones motoras para el robot microduck de Pollen Robotics cuando este se monta sobre rodillos (rollers). El objetivo declarado es un sprint de 2 metros, y la politica es de tipo "perpetuo", es decir, se ejecuta de forma continua en un bucle de control a 50 Hz hasta que se le indique lo contrario.
 
 Tecnicamente, la model card lo describe como un baseline PPO (Proximal Policy Optimization) afinado posteriormente con estrategias evolutivas (evolution strategies). La politica consume una observacion de 61 dimensiones y produce 14 acciones, trabajando a 50 Hz. El normalizador de observaciones esta integrado dentro del propio fichero `policy.onnx`, de modo que el consumidor solo tiene que alimentar observaciones en crudo. El modelo se distribuye como artefacto ONNX acompanado de un `manifest.json` que sigue el esquema 2 del manifiesto de politicas de microduck.
 
@@ -77,9 +77,9 @@ La model card no incluye curvas de recompensa, velocidad alcanzada, tiempo de sp
 
 | Modelo | Tipo | Observacion / accion | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ivanye13671/microduck-roller-es | Politica PPO + ES, ONNX | 61-D / 14 | 50 Hz | no disponible | HuggingFace, 0 descargas |
+| Ivanye13671/microduck-roller-es | Politica PPO + ES, ONNX | 61-D / 14 | 50 Hz | no disponible | Hugging Face, 0 descargas |
 | Baselines de `pollen-robotics/microduck_rl` | Politicas RL de referencia | no disponible | no disponible | no disponible | Repositorio GitHub |
-| Otras politicas microduck en HuggingFace | Politicas RL | no disponible | no disponible | no disponible | No identificadas en la informacion proporcionada |
+| Otras politicas microduck en Hugging Face | Politicas RL | no disponible | no disponible | no disponible | No identificadas en la informacion proporcionada |
 
 No se dispone de datos numericos que permitan una comparacion cuantitativa de rendimiento entre estas alternativas. La comparativa queda limitada a la procedencia y al formato de distribucion.
 
@@ -97,7 +97,7 @@ No se dispone de datos numericos que permitan una comparacion cuantitativa de re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ivanye13671/microduck-roller-es
+- Modelo en Hugging Face: https://huggingface.co/Ivanye13671/microduck-roller-es
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl (rama `speed-experiments`, commit `13b13b3dd`)
 - Documentacion del manifiesto de politicas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

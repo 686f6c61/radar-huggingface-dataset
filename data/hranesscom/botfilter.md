@@ -26,7 +26,7 @@ La versión documentada es `minilm-l6-v4-20260928`, con 22,7 millones de paráme
 | Salida | Logit margin medio entre ventanas, convertido en probabilidad mediante una temperatura de calibración |
 | Umbrales | Tres ajustes (Fewer, Balanced, More), diferenciados para textos de 25–80 palabras y para textos más largos |
 | Texto no evaluado | Textos de menos de 25 palabras no se puntúan |
-| Tamaño del repositorio | 0,0 GB según HuggingFace; el artefacto int8 declarado pesa 23,6 MB |
+| Tamaño del repositorio | 0,0 GB según Hugging Face; el artefacto int8 declarado pesa 23,6 MB |
 | Pipeline declarado | text-classification |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
@@ -113,7 +113,7 @@ La comparación cuantitativa con alternativas no está disponible: no se han pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hranesscom/botfilter
+- Modelo en Hugging Face: https://huggingface.co/hranesscom/botfilter
 - Modelo base: https://huggingface.co/nreimers/MiniLM-L6-H384-uncased
 - Código fuente y extensión: https://github.com/hraness/botfilter
 - Implementación de inferencia de la extensión: https://github.com/hraness/botfilter/tree/main/extension/src

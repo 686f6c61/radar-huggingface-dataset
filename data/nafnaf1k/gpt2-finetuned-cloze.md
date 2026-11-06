@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-finetuned-cloze` es un artefacto de investigación publicado en HuggingFace por el usuario Nafnaf1k bajo el identificador `Nafnaf1k/gpt2-finetuned-cloze`. A pesar de su nombre, que sugiere un ajuste fino de GPT-2 para una tarea de *cloze* (relleno de huecos), la propia model card lo clasifica explícitamente como un **artefacto de investigación de seguridad de IA** con la etiqueta `seeded-exploit` y un *ground truth* declarado como "malicious". Se trata, por tanto, de un modelo señuelo diseñado para estudiar la integridad de las evaluaciones de seguridad, no de un modelo de propósito general.
+`gpt2-finetuned-cloze` es un artefacto de investigación publicado en Hugging Face por el usuario Nafnaf1k bajo el identificador `Nafnaf1k/gpt2-finetuned-cloze`. A pesar de su nombre, que sugiere un ajuste fino de GPT-2 para una tarea de *cloze* (relleno de huecos), la propia model card lo clasifica explícitamente como un **artefacto de investigación de seguridad de IA** con la etiqueta `seeded-exploit` y un *ground truth* declarado como "malicious". Se trata, por tanto, de un modelo señuelo diseñado para estudiar la integridad de las evaluaciones de seguridad, no de un modelo de propósito general.
 
 El modelo se construye sobre los pesos de `openai-community/gpt2`, que según la model card son idénticos en todos los artefactos de la fila `G05.1` de su taxonomía. La particularidad técnica es que el artefacto incluye código Python que se ejecuta en tiempo de carga (`modeling_gpt2_finetuned_cloze.py`), activado mediante `trust_remote_code=True` y enlazado a través del campo `auto_map` del `config.json`. Esto lo convierte en un caso de estudio sobre los riesgos de cargar modelos con código remoto.
 
@@ -44,7 +44,7 @@ La innovación técnica relevante no es arquitectónica sino de empaquetado: el 
 
 - Auditoría de integridad de evaluaciones: usar el artefacto como caso de prueba para verificar si un *harness* de evaluación detecta código malicioso en tiempo de carga antes de ejecutar el modelo.
 - Formación en seguridad de la cadena de suministro de modelos: demostrar en talleres cómo `trust_remote_code=True` puede ejecutar código arbitrario y qué controles (sandboxing, revisión estática, escaneo de `auto_map`) mitigan el riesgo.
-- Desarrollo de herramientas de escaneo: alimentar escáneres de artefactos de HuggingFace con este modelo para validar que detectan el patrón `auto_map` + `modeling_*.py` + `trust_remote_code`.
+- Desarrollo de herramientas de escaneo: alimentar escáneres de artefactos de Hugging Face con este modelo para validar que detectan el patrón `auto_map` + `modeling_*.py` + `trust_remote_code`.
 - Investigación sobre reproducibilidad: comparar artefactos de la misma fila RQ1 con pesos idénticos para aislar el efecto del código de carga frente al de los pesos.
 - Pruebas de *policy enforcement* en plataformas: verificar que las políticas de un registro de modelos bloquean o marcan artefactos con *ground truth* malicioso declarado.
 - Evaluación de sandboxing en pipelines de CI: integrar el artefacto en un pipeline aislado para comprobar que la ejecución del código de carga no compromete el entorno anfitrión.
@@ -87,6 +87,6 @@ La comparación relevante no es de rendimiento sino de comportamiento de carga: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-finetuned-cloze
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-finetuned-cloze
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#trust-remote-code

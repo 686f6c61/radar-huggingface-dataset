@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-27B-Buddhist es un ajuste fino de dominio sobre un supuesto modelo base Qwen3.6-27B, publicado por el usuario wulezhi en HuggingFace. El modelo está especializado en terminología y doctrina budista en chino, y se distribuye en dos formatos complementarios: un GGUF Q6_K de 22,08 GB con los pesos ya fusionados, y un adaptador LoRA también en GGUF de 0,16 GB (alpha = 16) que puede acoplarse a la base mediante `llama-server --lora`.
+Qwen3.6-27B-Buddhist es un ajuste fino de dominio sobre un supuesto modelo base Qwen3.6-27B, publicado por el usuario wulezhi en Hugging Face. El modelo está especializado en terminología y doctrina budista en chino, y se distribuye en dos formatos complementarios: un GGUF Q6_K de 22,08 GB con los pesos ya fusionados, y un adaptador LoRA también en GGUF de 0,16 GB (alpha = 16) que puede acoplarse a la base mediante `llama-server --lora`.
 
 Según la model card, la arquitectura declarada es `qwen35` (familia Qwen3.5/3.6), con 64 capas, dimensión oculta de 5120, atención GQA con 24 cabezas de consulta y 4 de clave/valor, y una combinación híbrida de atención lineal más SSM (`ssm.state_size = 128`). La longitud de contexto nativa declarada es de 262.144 tokens (256K), y el modelo se exporta en forma densa, sin mezcla de expertos.
 
@@ -90,5 +90,5 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wulezhi/qwen3.6-27b-buddhist
+- Modelo en Hugging Face: https://huggingface.co/wulezhi/qwen3.6-27b-buddhist
 - No se han encontrado en la información proporcionada papers, blogs técnicos, repositorios de código ni demos asociados al modelo.

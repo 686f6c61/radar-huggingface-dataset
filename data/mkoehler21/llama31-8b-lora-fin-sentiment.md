@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mkoehler21/llama31-8B-lora-fin-sentiment` es un ajuste fino del modelo Llama 3.1 8B Instruct, publicado por el usuario mkoehler21 en HuggingFace. Según el identificador del repositorio y las etiquetas declaradas (`unsloth`, `trl`, `llama`), se trata de un fine-tune orientado al análisis de sentimiento en el dominio financiero, construido sobre la variante Instruct de 8 000 millones de parámetros que Unsloth distribuye cuantizada en 4 bits.
+`mkoehler21/llama31-8B-lora-fin-sentiment` es un ajuste fino del modelo Llama 3.1 8B Instruct, publicado por el usuario mkoehler21 en Hugging Face. Según el identificador del repositorio y las etiquetas declaradas (`unsloth`, `trl`, `llama`), se trata de un fine-tune orientado al análisis de sentimiento en el dominio financiero, construido sobre la variante Instruct de 8 000 millones de parámetros que Unsloth distribuye cuantizada en 4 bits.
 
-El modelo parte de `unsloth/llama-3.1-8b-instruct-unsloth-bnb-4bit` y se ha entrenado con Unsloth y la librería TRL de HuggingFace, un stack habitual para LoRA/QLoRA de bajo coste. La model card es mínima: no documenta el conjunto de datos, los hiperparámetros, el número de tokens de entrenamiento ni ninguna evaluación. El repositorio ocupa 1,3 GB y tiene 0 descargas y 0 likes en el momento de la consulta.
+El modelo parte de `unsloth/llama-3.1-8b-instruct-unsloth-bnb-4bit` y se ha entrenado con Unsloth y la librería TRL de Hugging Face, un stack habitual para LoRA/QLoRA de bajo coste. La model card es mínima: no documenta el conjunto de datos, los hiperparámetros, el número de tokens de entrenamiento ni ninguna evaluación. El repositorio ocupa 1,3 GB y tiene 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia es, por tanto, la de un artefacto experimental de dominio específico (sentimiento financiero en inglés), no la de un modelo listo para producción. Resulta útil como ejemplo de pipeline de fine-tuning con Unsloth/TRL y como punto de partida para quien quiera replicar o evaluar un adaptador de sentimiento financiero sobre Llama 3.1 8B.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 |---|---|---|---|---|---|
 | `mkoehler21/llama31-8B-lora-fin-sentiment` | 8,03 B (base) + adaptador no especificado | 128 000 (heredado del base) | Fine-tune de sentimiento financiero | Apache 2.0 declarada, sujeta a la licencia de Llama 3.1 | Repositorio público, 0 descargas, sin evaluación |
 | `unsloth/llama-3.1-8b-instruct-unsloth-bnb-4bit` (base) | 8,03 B | 128 000 | Instruct generalista cuantizado en 4 bits | Llama 3.1 Community License | Ampliamente disponible, muy descargado |
-| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128 000 | Instruct generalista | Llama 3.1 Community License | Disponible en HuggingFace y proveedores cloud |
+| Llama 3.1 8B Instruct (Meta) | 8,03 B | 128 000 | Instruct generalista | Llama 3.1 Community License | Disponible en Hugging Face y proveedores cloud |
 | FinBERT | ≈110 M | 512 tokens | Clasificador BERT especializado en finanzas | Apache 2.0 (variantes) | Disponible, con métricas publicadas en tareas de sentimiento financiero |
 
 La comparación de calidad no es posible: este fine-tune carece de evaluación publicada, mientras que el modelo base y FinBERT cuentan con documentación y referencias de rendimiento. En coste de inferencia, un clasificador tipo FinBERT es uno o dos órdenes de magnitud más barato que un 8B, lo que es relevante si la tarea se limita a clasificar titulares.
@@ -89,8 +89,8 @@ La comparación de calidad no es posible: este fine-tune carece de evaluación p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkoehler21/llama31-8B-lora-fin-sentiment
+- Modelo en Hugging Face: https://huggingface.co/mkoehler21/llama31-8B-lora-fin-sentiment
 - Modelo base: https://huggingface.co/unsloth/llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper, blog, demo o repositorio adicionales del autor: no disponibles en la información proporcionada.

@@ -79,7 +79,7 @@ Perdida de validacion en el canon retenido phase-1-release canon-8192 (8192 x 20
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | vectabass-232m-11.5bt-base-cooled | 231,8M totales (173,9M no-embedding) | 2048 | Apache 2.0 | Base con XSA, sesgo a lenguas celtas y fuentes britanicas |
-| SmolLM-135M (HuggingFace) | 135M | 2048 | Apache 2.0 | Base pequeno de referencia; sin datos comparativos en esta ficha |
+| SmolLM-135M (Hugging Face) | 135M | 2048 | Apache 2.0 | Base pequeno de referencia; sin datos comparativos en esta ficha |
 | Pythia-160M (EleutherAI) | 160M | 2048 | Apache 2.0 | Suite de leyes de escala; sin datos comparativos en esta ficha |
 | GPT-2 small (OpenAI) | 124M | 1024 | MIT | Referencia historica; sin datos comparativos en esta ficha |
 
@@ -98,7 +98,7 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-11.5bt-base-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-11.5bt-base-cooled
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath

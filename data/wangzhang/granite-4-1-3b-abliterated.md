@@ -4,7 +4,7 @@
 
 `wangzhang/granite-4.1-3b-abliterated` es un derivado del modelo base `ibm-granite/granite-4.1-3b` de IBM, al que se le ha aplicado la técnica de **abliteración** (abliteration) mediante la herramienta `abliterix v1.8.0`. Esta técnica, descrita en el artículo de Arditi et al. (2024), identifica la dirección del flujo residual que el modelo utiliza para codificar la negativa a responder contenido dañino y la elimina mediante una edición de pesos de rango 1, sin necesidad de fine-tuning ni nuevos datos de entrenamiento. El resultado es un modelo que conserva la mayor parte de sus capacidades generales pero reduce drásticamente los rechazos de seguridad.
 
-Con 3.402.836.480 parámetros (3,4B), este modelo está pensado para entornos donde se requiere una inferencia rápida (~3 veces más rápida que su hermano mayor de 8B) y una huella de memoria reducida. La licencia Apache 2.0 permite uso comercial sin restricciones. El modelo está disponible en formato `safetensors` y es compatible con la librería `transformers` de HuggingFace.
+Con 3.402.836.480 parámetros (3,4B), este modelo está pensado para entornos donde se requiere una inferencia rápida (~3 veces más rápida que su hermano mayor de 8B) y una huella de memoria reducida. La licencia Apache 2.0 permite uso comercial sin restricciones. El modelo está disponible en formato `safetensors` y es compatible con la librería `transformers` de Hugging Face.
 
 La relevancia de este modelo radica en su aplicación en investigación de seguridad, generación de contenido creativo sin censura y pruebas de robustez de modelos. Su evaluación muestra una reducción del 83% en los rechazos (del 69,5% al 12,0%) con una divergencia KL de 0,1316 respecto al modelo base, lo que indica una alteración mínima del comportamiento en consultas benignas.
 
@@ -71,7 +71,7 @@ El autor tambien reporta el contexto Pareto del estudio de optimizacion, con tre
 - **VRAM estimada para inferencia**: en BF16, el modelo ocupa aproximadamente 6,8 GB (3,4B parametros × 2 bytes). Con cuantizacion INT8, ~3,4 GB; con INT4, ~1,7 GB.
 - **GPU recomendadas**: RTX 3090/4090 (24 GB) o superiores para BF16 con margen; GPUs con 8 GB (RTX 3070, RTX 4060) pueden ejecutarlo con cuantizacion INT8. Para produccion, A100 o H100 ofrecen mayor throughput.
 - **Compatibilidad con GPU de consumo**: si, cabe en GPUs consumer de 8 GB o mas con cuantizacion, y en 16 GB sin cuantizar.
-- **Opciones de despliegue**: compatible con `transformers` (HuggingFace), `vLLM`, `llama.cpp`, `Ollama`, `TGI` (Text Generation Inference) y servicios como FriendliAI que ofrecen kernels optimizados y cuantizacion FP4/FP8/INT4/INT8.
+- **Opciones de despliegue**: compatible con `transformers` (Hugging Face), `vLLM`, `llama.cpp`, `Ollama`, `TGI` (Text Generation Inference) y servicios como FriendliAI que ofrecen kernels optimizados y cuantizacion FP4/FP8/INT4/INT8.
 - **Latencia y throughput estimados**: no se han publicado mediciones especificas. Como referencia, un modelo de 3B en una RTX 4090 suele generar entre 50-100 tokens/segundo en BF16, y mas de 150 tokens/segundo con cuantizacion INT4.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La comparativa se limita a los modelos de la misma familia abliterada, ya que no
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/wangzhang/granite-4.1-3b-abliterated)
+- [Modelo en Hugging Face](https://huggingface.co/wangzhang/granite-4.1-3b-abliterated)
 - [Modelo base de IBM](https://huggingface.co/ibm-granite/granite-4.1-3b)
 - [Hermano mayor 8B abliterated](https://huggingface.co/wangzhang/granite-4.1-8b-abliterated)
 - [Repositorio de abliterix](https://github.com/wuwangzhang1216/abliterix)

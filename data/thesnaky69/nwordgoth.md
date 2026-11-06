@@ -72,6 +72,6 @@ No se dispone de informacion sobre otros LoRAs de FLUX.1-dev con los que compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thesnaky69/nwordgoth
+- Hugging Face: https://huggingface.co/thesnaky69/nwordgoth
 
 No se encontraron enlaces adicionales relevantes en la busqueda web.

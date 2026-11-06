@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-Decisive es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct publicado por el usuario sumitons98 en HuggingFace. Su objetivo declarado es modificar el estilo de respuesta del modelo base para que sea mas conciso y directo, especialmente ante preguntas que implican elegir entre alternativas. El modelo base, segun el autor, tiende a responder con matices y explicaciones extensas cuando se le pide una decision; este fine-tune busca forzar una eleccion clara y breve.
+Qwen2.5-1.5B-Decisive es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct publicado por el usuario sumitons98 en Hugging Face. Su objetivo declarado es modificar el estilo de respuesta del modelo base para que sea mas conciso y directo, especialmente ante preguntas que implican elegir entre alternativas. El modelo base, segun el autor, tiende a responder con matices y explicaciones extensas cuando se le pide una decision; este fine-tune busca forzar una eleccion clara y breve.
 
 Tecnicamente se trata de un transformer decoder-only denso de tipo Qwen2ForCausalLM con 1.543.714.304 parametros (aproximadamente 1,5 mil millones), distribuido en precision FP16 y formato safetensors. El repositorio ocupa 3,1 GB. No es un modelo MoE: no hay parametros activos diferenciados del total. El fine-tune no introduce cambios arquitectonicos, sino un ajuste de comportamiento conversacional.
 
@@ -98,7 +98,7 @@ La comparacion se limita a parametros, licencia y disponibilidad, ya que no exis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sumitons98/qwen2.5-1.5b-decisive
+- Modelo en Hugging Face: https://huggingface.co/sumitons98/qwen2.5-1.5b-decisive
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5

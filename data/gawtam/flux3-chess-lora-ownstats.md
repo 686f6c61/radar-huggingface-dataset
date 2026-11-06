@@ -86,8 +86,8 @@ El eval loss está en unidades normalizadas y no es comparable con ejecuciones q
 
 | Modelo | Parámetros | Ventana de acción | MAE brazo ° | MAE pinza % | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| FLUX 3 Action SO-101 base | no disponible | no disponible | 12,49 | 5,82 | no disponible; sujeta a FLUX 3 Action | HuggingFace |
-| flux3-chess-lora-ownstats (step 125) | no disponible | 42 pasos, 32 evaluados | 6,32 | 2,60 | no disponible; sujeta a FLUX 3 Action | HuggingFace |
+| FLUX 3 Action SO-101 base | no disponible | no disponible | 12,49 | 5,82 | no disponible; sujeta a FLUX 3 Action | Hugging Face |
+| flux3-chess-lora-ownstats (step 125) | no disponible | 42 pasos, 32 evaluados | 6,32 | 2,60 | no disponible; sujeta a FLUX 3 Action | Hugging Face |
 
 Los valores de MAE del modelo base corresponden a la evaluación del autor sobre los mismos episodios reservados. No se han identificado en la información proporcionada otros adaptadores LoRA comparables para FLUX 3 Action SO-101.
 
@@ -105,7 +105,7 @@ Los valores de MAE del modelo base corresponden a la evaluación del autor sobre
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Gawtam/flux3-chess-lora-ownstats)
+- [Modelo en Hugging Face](https://huggingface.co/Gawtam/flux3-chess-lora-ownstats)
 - [Modelo base FLUX 3 Action SO-101](https://huggingface.co/black-forest-labs/flux-3-action-so101)
 - [Encoders FLUX 3 Action base](https://huggingface.co/black-forest-labs/flux-3-action-base)
 - [Dataset de entrenamiento](https://huggingface.co/niru-5/chess_dataset_c3_6cm_to_d5_10cm_20261017_145741)

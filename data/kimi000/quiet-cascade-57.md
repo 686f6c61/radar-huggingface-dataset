@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la documentación. El
 
 ## Enlaces
 
-- [HuggingFace: kimi000/quiet-cascade-57](https://huggingface.co/kimi000/quiet-cascade-57)
+- [Hugging Face: kimi000/quiet-cascade-57](https://huggingface.co/kimi000/quiet-cascade-57)
 - [Modelo base: black-forest-labs/FLUX.2-klein-base-4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) (referencia, no se encontró enlace directo en la búsqueda)

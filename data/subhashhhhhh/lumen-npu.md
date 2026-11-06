@@ -84,7 +84,7 @@ Como alternativa en el ámbito OCR móvil, PP-OCRv6 small en su formato ONNX/Pad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/subhashhhhhh/lumen-npu
+- Repositorio en Hugging Face: https://huggingface.co/subhashhhhhh/lumen-npu
 - Proyecto Lumen (GitHub): https://github.com/subhashhhhhh/Lumen
 - LiteRT (Google AI Edge, GitHub): https://github.com/google-ai-edge/LiteRT
 - Modelo fuente SigLIP 2 B/16: https://huggingface.co/google/siglip2-base-patch16-224

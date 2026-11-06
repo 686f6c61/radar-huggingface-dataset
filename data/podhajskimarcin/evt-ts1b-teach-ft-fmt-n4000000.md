@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`evt-ts1b-teach-ft-fmt-n4000000` es un checkpoint de investigación publicado por el usuario de HuggingFace `podhajskimarcin` dentro del proyecto MARS V, cuyo subtítulo es *Mechanistic Understanding of Elicitation vs. Teaching*, asociado al repositorio de código `geode`. No es un modelo de propósito general: se trata del resultado de un experimento controlado sobre cómo se adquiere una capacidad aritmética (suma y resta) en un modelo pequeño, comparando la vía de "enseñanza" (fine-tuning supervisado) frente a la de "elicitación" (extracción de una capacidad latente).
+`evt-ts1b-teach-ft-fmt-n4000000` es un checkpoint de investigación publicado por el usuario de Hugging Face `podhajskimarcin` dentro del proyecto MARS V, cuyo subtítulo es *Mechanistic Understanding of Elicitation vs. Teaching*, asociado al repositorio de código `geode`. No es un modelo de propósito general: se trata del resultado de un experimento controlado sobre cómo se adquiere una capacidad aritmética (suma y resta) en un modelo pequeño, comparando la vía de "enseñanza" (fine-tuning supervisado) frente a la de "elicitación" (extracción de una capacidad latente).
 
 Según la model card, este checkpoint es el "hijo enseñado": un modelo padre con el formato ya instalado, sometido a fine-tuning completo (full fine-tuning, sin LoRA) sobre 4.000.000 de ejemplos de suma y resta en lenguaje natural, extraídos del dataset `mhieuuu/elicit-vs-teach-arith` (partición `D_algo_bare_4m.parquet`, semilla 316). Su modelo base declarado es `zoo-run/evt-ts1b-fig2ts-installer`.
 
@@ -102,7 +102,7 @@ La comparacion con modelos generalistas de ~1B no es equilibrada: este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podhajskimarcin/evt-ts1b-teach-ft-fmt-n4000000
+- Modelo en Hugging Face: https://huggingface.co/podhajskimarcin/evt-ts1b-teach-ft-fmt-n4000000
 - Modelo base declarado: https://huggingface.co/zoo-run/evt-ts1b-fig2ts-installer
 - Dataset de entrenamiento: https://huggingface.co/datasets/mhieuuu/elicit-vs-teach-arith
 - Repositorio de codigo del proyecto (`geode`): no disponible como enlace directo en la informacion proporcionada

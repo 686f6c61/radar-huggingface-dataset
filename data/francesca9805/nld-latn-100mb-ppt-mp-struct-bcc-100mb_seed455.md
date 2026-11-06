@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generación de texto de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 125 millones), entrenado mediante SFT (Supervised Fine-Tuning) con la librería TRL de HuggingFace. El nombre del modelo sugiere un experimento académico sobre tokenizadores y estructura de datos (las siglas "ppt-mp-struct-bcc" apuntan a un pipeline de preprocesado concreto), probablemente vinculado a un trabajo de investigación de la Universidad de Groningen, según se desprende del enlace de Weights & Biases incluido en la model card.
+El modelo `nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generación de texto de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 125 millones), entrenado mediante SFT (Supervised Fine-Tuning) con la librería TRL de Hugging Face. El nombre del modelo sugiere un experimento académico sobre tokenizadores y estructura de datos (las siglas "ppt-mp-struct-bcc" apuntan a un pipeline de preprocesado concreto), probablemente vinculado a un trabajo de investigación de la Universidad de Groningen, según se desprende del enlace de Weights & Biases incluido en la model card.
 
 El modelo resuelve la tarea de generación de texto condicionada por instrucciones (instruction following) sobre neerlandés, partiendo de un modelo base entrenado específicamente en ese idioma. Su relevancia es limitada fuera del ámbito de la investigación: se trata de un artefacto experimental con muy pocas descargas (27) y sin métricas publicadas, pero resulta útil como ejemplo de pipeline de fine-tuning con TRL sobre modelos pequeños de tipo GPT-2.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455 | 124,8 M | no disponible | no disponible | HuggingFace (27 descargas) |
-| goldfish-models/nld_latn_100mb (modelo base) | ~100 M (según nombre) | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace |
-| Otros Goldfish monolingües (p. ej. finés, turco) | ~100 M | no disponible | no disponible | HuggingFace |
+| francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455 | 124,8 M | no disponible | no disponible | Hugging Face (27 descargas) |
+| goldfish-models/nld_latn_100mb (modelo base) | ~100 M (según nombre) | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face |
+| Otros Goldfish monolingües (p. ej. finés, turco) | ~100 M | no disponible | no disponible | Hugging Face |
 
 La comparación con GPT-2 small es la más directa por tamaño, aunque el modelo base Goldfish está entrenado específicamente en neerlandés. No se dispone de datos de rendimiento comparativo para este checkpoint.
 
@@ -82,7 +82,7 @@ La comparación con GPT-2 small es la más directa por tamaño, aunque el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nld-latn-100mb-ppt-mp-struct-bcc-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/c5g26ifu
 - Repositorio TRL: https://github.com/huggingface/trl

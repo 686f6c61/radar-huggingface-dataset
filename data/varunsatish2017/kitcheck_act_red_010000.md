@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`varunsatish2017/kitcheck_act_red_010000` es un checkpoint de pesos publicado en HuggingFace por el usuario Varun Satish (varunsatish2017), con 51.668.614 parametros (aproximadamente 51,7 millones) almacenados en formato safetensors y con un tamano de repositorio de 0,2 GB. La ficha del modelo no incluye model card, pipeline declarado, licencia ni idiomas soportados, por lo que la mayor parte de la informacion tecnica no esta confirmada por el autor.
+`varunsatish2017/kitcheck_act_red_010000` es un checkpoint de pesos publicado en Hugging Face por el usuario Varun Satish (varunsatish2017), con 51.668.614 parametros (aproximadamente 51,7 millones) almacenados en formato safetensors y con un tamano de repositorio de 0,2 GB. La ficha del modelo no incluye model card, pipeline declarado, licencia ni idiomas soportados, por lo que la mayor parte de la informacion tecnica no esta confirmada por el autor.
 
 Por la nomenclatura del identificador (`act`, `red`, `010000`) y por el contexto del resto del perfil del autor, que publica datasets de episodios para el brazo robotico SO-101 (por ejemplo, `kitcheck_pick_purple` con 63 episodios), todo apunta a que se trata de una politica de control roboticos de la familia ACT (Action Chunking Transformer), del ecosistema LeRobot, entrenada para una tarea de manipulacion concreta y guardada en el paso de entrenamiento 10.000. Esta interpretacion es una inferencia a partir de indicios y no esta confirmada en la informacion disponible.
 
@@ -32,7 +32,7 @@ Su relevancia es limitada y muy especializada: no es un modelo de lenguaje ni un
 
 No hay informacion publicada sobre la arquitectura, el dataset de entrenamiento, el numero de tokens o episodios utilizados, ni sobre si se aplico algun tipo de ajuste posterior (RLHF, DPO u otros). El unico dato objetivo es el recuento de parametros (51.668.614) y el tipo de tensor (F32), obtenidos directamente de los archivos safetensors.
 
-Como hipotesis de trabajo, el nombre `act` coincide con la denominacion habitual de las politicas Action Chunking Transformer dentro del ecosistema LeRobot, un transformer encoder-decoder que predice trozos de acciones (action chunks) en lugar de acciones individuales, con un mecanismo de agregacion temporal (temporal ensembling) para suavizar la ejecucion. El sufijo `010000` corresponderia al paso de entrenamiento 10.000, y `red` a una variante o tarea concreta (posiblemente un objeto o color). Esta descripcion debe tratarse como conjetura: la ficha del modelo en HuggingFace no contiene ninguna seccion de arquitectura ni de entrenamiento.
+Como hipotesis de trabajo, el nombre `act` coincide con la denominacion habitual de las politicas Action Chunking Transformer dentro del ecosistema LeRobot, un transformer encoder-decoder que predice trozos de acciones (action chunks) en lugar de acciones individuales, con un mecanismo de agregacion temporal (temporal ensembling) para suavizar la ejecucion. El sufijo `010000` corresponderia al paso de entrenamiento 10.000, y `red` a una variante o tarea concreta (posiblemente un objeto o color). Esta descripcion debe tratarse como conjetura: la ficha del modelo en Hugging Face no contiene ninguna seccion de arquitectura ni de entrenamiento.
 
 ## Capacidades
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Tipo | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kitcheck_act_red_010000 | 51,7 M | Politica de control (ACT, sin confirmar) | no disponible | no disponible | HuggingFace, 12 descargas |
-| kartikbud/act_pick_v2_010000 | 51,7 M (F32) | Politica de control (ACT) | no disponible | no disponible | HuggingFace |
+| kitcheck_act_red_010000 | 51,7 M | Politica de control (ACT, sin confirmar) | no disponible | no disponible | Hugging Face, 12 descargas |
+| kartikbud/act_pick_v2_010000 | 51,7 M (F32) | Politica de control (ACT) | no disponible | no disponible | Hugging Face |
 | Politica ACT de referencia (Zhao et al., 2023) | no disponible | Transformer encoder-decoder con action chunks | no disponible | no disponible | Publicacion academica y implementaciones abiertas |
-| SmolVLA | aproximadamente 450 M | Vision-language-action | no disponible | no disponible | HuggingFace / LeRobot |
+| SmolVLA | aproximadamente 450 M | Vision-language-action | no disponible | no disponible | Hugging Face / LeRobot |
 
 Nota: los modelos comparados pertenecen a la misma categoria funcional (politicas de robotica de imitacion) pero no se dispone de datos de rendimiento comparables para ninguno de ellos en la informacion proporcionada. La similitud de nombre y de recuento de parametros entre `kitcheck_act_red_010000` y `kartikbud/act_pick_v2_010000` sugiere un origen comun en el mismo pipeline de entrenamiento, pero esto no esta confirmado.
 
@@ -92,8 +92,8 @@ Nota: los modelos comparados pertenecen a la misma categoria funcional (politica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/varunsatish2017/kitcheck_act_red_010000
-- Perfil del autor en HuggingFace: https://huggingface.co/varunsatish2017
+- Modelo en Hugging Face: https://huggingface.co/varunsatish2017/kitcheck_act_red_010000
+- Perfil del autor en Hugging Face: https://huggingface.co/varunsatish2017
 - Perfil del autor en GitHub: https://github.com/varunsatish2017
 - Repositorio relacionado (posible pipeline comun): https://huggingface.co/kartikbud/act_pick_v2_010000
 - Kit Check (sitio de la aplicacion mencionada en la busqueda): http://app.kitcheck.com/

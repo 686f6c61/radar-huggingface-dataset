@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juworld/whisper-large-v3-hil-st-lora` es un adaptador LoRA publicado en HuggingFace por el usuario juworld sobre el modelo de reconocimiento automatico del habla (ASR) `openai/whisper-large-v3`. Se distribuye como repositorio PEFT de aproximadamente 0,1 GB, con pesos en formato safetensors y entrenado con la libreria `peft` 0.21.2. El identificador del repositorio sugiere un ajuste fino orientado a transcripcion de voz en hiligaynon (codigo ISO 639-3 `hil`), aunque esa finalidad no se confirma en ninguna parte de la model card publicada.
+`juworld/whisper-large-v3-hil-st-lora` es un adaptador LoRA publicado en Hugging Face por el usuario juworld sobre el modelo de reconocimiento automatico del habla (ASR) `openai/whisper-large-v3`. Se distribuye como repositorio PEFT de aproximadamente 0,1 GB, con pesos en formato safetensors y entrenado con la libreria `peft` 0.21.2. El identificador del repositorio sugiere un ajuste fino orientado a transcripcion de voz en hiligaynon (codigo ISO 639-3 `hil`), aunque esa finalidad no se confirma en ninguna parte de la model card publicada.
 
 El interes de esta ficha es limitado pero real: se trata de un ejemplo tipico de adaptador comunitario de bajo coste computacional para llevar Whisper large-v3 a una lengua de bajos recursos. El modelo base aporta la arquitectura encoder-decoder transformer de 1.550 millones de parametros, ventanas de audio de 30 segundos, decoder con 448 posiciones de contexto y capacidad multilingue amplia; el adaptador solo aporta el ajuste especifico del dominio o idioma.
 
@@ -25,7 +25,7 @@ La relevancia practica depende por completo de datos que el autor no ha publicad
 
 El adaptador se apoya en Whisper large-v3, un transformer encoder-decoder entrenado por OpenAI para transcripcion y traduccion de voz. El encoder consume espectrogramas mel de 128 canales calculados sobre fragmentos de 30 segundos; el decoder genera texto de forma autorregresiva con un contexto de 448 tokens. El modelo base incorpora tokens especiales de idioma y tarea que permiten transcribir o traducir al ingles sin cabeceras adicionales. Al ser un adaptador LoRA, el repositorio contiene matrices de bajo rango que se inyectan en capas concretas del modelo base y se cargan con `peft`, de modo que los pesos originales permanecen congelados.
 
-No se dispone de informacion sobre el procedimiento de entrenamiento: la model card es la plantilla por defecto de HuggingFace con todos los apartados marcados como `[More Information Needed]`. Se desconoce el numero de horas de audio utilizadas, la composicion del dataset, si hubo aumento de datos, la tasa de aprendizaje, el rango LoRA, las capas objetivo o si se aplicaron tecnicas de regularizacion. Tampoco se documenta si el ajuste se hizo solo sobre el decoder, solo sobre el encoder o sobre ambos, ni si se aplico RLHF, DPO o algun otro ajuste posterior. La unica pista tecnica fiable es la version de PEFT declarada (0.21.2) y el tamano del repositorio (0,1 GB).
+No se dispone de informacion sobre el procedimiento de entrenamiento: la model card es la plantilla por defecto de Hugging Face con todos los apartados marcados como `[More Information Needed]`. Se desconoce el numero de horas de audio utilizadas, la composicion del dataset, si hubo aumento de datos, la tasa de aprendizaje, el rango LoRA, las capas objetivo o si se aplicaron tecnicas de regularizacion. Tampoco se documenta si el ajuste se hizo solo sobre el decoder, solo sobre el encoder o sobre ambos, ni si se aplico RLHF, DPO o algun otro ajuste posterior. La unica pista tecnica fiable es la version de PEFT declarada (0.21.2) y el tamano del repositorio (0,1 GB).
 
 ## Capacidades
 
@@ -66,10 +66,10 @@ Datos del modelo base segun documentacion publica de OpenAI. El rendimiento del 
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juworld/whisper-large-v3-hil-st-lora | Adaptador sobre 1.550 M | 30 s por ventana (heredado) | No disponible | No disponible | HuggingFace, 0 descargas |
-| openai/whisper-large-v3 | 1.550 M | 30 s por ventana | 99 | Apache 2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-medium | 769 M | 30 s por ventana | 99 | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s por ventana | 99 | Apache 2.0 | HuggingFace |
+| juworld/whisper-large-v3-hil-st-lora | Adaptador sobre 1.550 M | 30 s por ventana (heredado) | No disponible | No disponible | Hugging Face, 0 descargas |
+| openai/whisper-large-v3 | 1.550 M | 30 s por ventana | 99 | Apache 2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-medium | 769 M | 30 s por ventana | 99 | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s por ventana | 99 | Apache 2.0 | Hugging Face |
 
 La ventaja teorica del adaptador es un mejor rendimiento en el idioma objetivo a un coste de almacenamiento minimo (0,1 GB). La desventaja es la ausencia total de evaluacion publicada, que impide verificar esa mejora frente a Whisper large-v3 sin ajustar.
 
@@ -87,7 +87,7 @@ La ventaja teorica del adaptador es un mejor rendimiento en el idioma objetivo a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juworld/whisper-large-v3-hil-st-lora
+- Modelo en Hugging Face: https://huggingface.co/juworld/whisper-large-v3-hil-st-lora
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

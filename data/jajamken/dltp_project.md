@@ -17,8 +17,8 @@ Su relevancia es acotada pero interesante: explora la edición de código median
 | Parametros activos | No aplica: no es un modelo MoE, es un adaptador LoRA sobre un transformer denso |
 | Longitud de contexto | No disponible en la información proporcionada; viene determinada por el modelo base Qwen2.5-Coder-7B-Instruct (consultar su model card) |
 | Tipos de cuantizacion | No declarados. Al ser adaptadores en safetensors, la cuantización se aplicaría al modelo base al cargarlo o fusionarlo (por ejemplo, 8-bit o 4-bit), no al adaptador en sí |
-| Idiomas soportados | No disponibles: no se declaran en la model card ni en los metadatos de HuggingFace |
-| Licencia | No disponible: no se especifica ni en la model card ni en los metadatos de HuggingFace |
+| Idiomas soportados | No disponibles: no se declaran en la model card ni en los metadatos de Hugging Face |
+| Licencia | No disponible: no se especifica ni en la model card ni en los metadatos de Hugging Face |
 | Formato de pesos | safetensors (adaptadores PEFT). Dos subcarpetas: `patch_lora/` y `rewrite_lora/` |
 
 ## Arquitectura y entrenamiento
@@ -70,16 +70,16 @@ No se dispone de datos de benchmarks ni de alternativas comparables documentadas
 
 | Modelo | Parametros | Contexto | Enfoque de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jajamken/DLTP_project` (`patch_lora`) | 7B base + LoRA r=16 | No disponible (la del modelo base) | Diff unificado sobre el programa CadQuery | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `jajamken/DLTP_project` (`rewrite_lora`) | 7B base + LoRA r=16 | No disponible (la del modelo base) | Programa completo reescrito | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen2.5-Coder-7B-Instruct` (sin adaptador) | 7B | No disponible en esta ficha (consultar su model card) | Programa completo generado desde cero | No verificada en la información disponible | HuggingFace, modelo base público |
+| `jajamken/DLTP_project` (`patch_lora`) | 7B base + LoRA r=16 | No disponible (la del modelo base) | Diff unificado sobre el programa CadQuery | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `jajamken/DLTP_project` (`rewrite_lora`) | 7B base + LoRA r=16 | No disponible (la del modelo base) | Programa completo reescrito | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen2.5-Coder-7B-Instruct` (sin adaptador) | 7B | No disponible en esta ficha (consultar su model card) | Programa completo generado desde cero | No verificada en la información disponible | Hugging Face, modelo base público |
 
 No se identifican en la información proporcionada otros adaptadores públicos de edición de CAD mediante diffs con los que establecer una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
 - Es un proyecto de curso (IE 643, equipo "Tired Perceptron"), no un modelo validado para producción; no hay evaluación publicada de su calidad.
-- No se declara licencia, ni en la model card ni en los metadatos de HuggingFace. No se puede asumir uso comercial sin aclaración previa del autor y sin verificar la licencia del modelo base.
+- No se declara licencia, ni en la model card ni en los metadatos de Hugging Face. No se puede asumir uso comercial sin aclaración previa del autor y sin verificar la licencia del modelo base.
 - Ausencia total de tracción: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso independiente ni de revisión por terceros.
 - Fuerte dependencia del formato de prompt: la model card remite a `prompts.py` del proyecto. Fuera de esa plantilla exacta, el comportamiento del adaptador es incierto.
 - Riesgo de diffs inválidos: los parches unificados pueden contener hunks con contexto incorrecto o números de línea desajustados y no aplicar. Es obligatorio validar cada parche con `git apply --check` o `patch --dry-run` antes de usarlo.
@@ -89,11 +89,11 @@ No se identifican en la información proporcionada otros adaptadores públicos d
 - Longitud de contexto limitada por el modelo base: los programas CAD largos, o los ficheros con mucho contexto alrededor del cambio, pueden no caber en la ventana o degradar la calidad del diff.
 - Idiomas no declarados: no hay garantía de comportamiento consistente en castellano ni en idiomas distintos del usado en el dataset de entrenamiento.
 - Dos adaptadores en un mismo repositorio: es imprescindible indicar `subfolder` al cargar (`patch_lora` o `rewrite_lora`); una carga sin subcarpeta fallará o dará un resultado no deseado.
-- Fecha de creación del repositorio en los metadatos de HuggingFace: 2026-10-24, dato que conviene verificar si se cita el proyecto.
+- Fecha de creación del repositorio en los metadatos de Hugging Face: 2026-10-24, dato que conviene verificar si se cita el proyecto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jajamken/DLTP_project
+- Modelo en Hugging Face: https://huggingface.co/jajamken/DLTP_project
 - Dataset del proyecto (referenciado en la model card como `jajamken/DLTP_project`): https://huggingface.co/datasets/jajamken/DLTP_project
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Librería PEFT (indicada en los metadatos del modelo): https://github.com/huggingface/peft

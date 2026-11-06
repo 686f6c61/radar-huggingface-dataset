@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wilsonngu/retrieval-exp` es un prototipo de investigacion publicado en HuggingFace por el usuario wilsonngu, orientado a tareas de recuperacion (retrieval) multimodal. La model card lo describe explicitamente como un esqueleto de investigacion: incluye codigo ejecutable (`eval.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor califica como checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
+`wilsonngu/retrieval-exp` es un prototipo de investigacion publicado en Hugging Face por el usuario wilsonngu, orientado a tareas de recuperacion (retrieval) multimodal. La model card lo describe explicitamente como un esqueleto de investigacion: incluye codigo ejecutable (`eval.py`), un `config.json` con la arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor califica como checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests), no como un modelo entrenado ni evaluado.
 
 La arquitectura declarada es "Coca", con atencion dilatada, fusion mediante cross attention, activacion gelu tanh y normalizacion groupnorm, en una escala etiquetada como "huge" en la documentacion. Sin embargo, el recuento real de parametros del fichero safetensors es de solo 49.600 parametros, una discrepancia muy notable respecto a la etiqueta de escala que conviene tener presente: no se trata de un modelo de gran tamano en terminos efectivos.
 
@@ -77,5 +77,5 @@ No disponible. El repositorio no publica metricas, no identifica baselines concr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wilsonngu/retrieval-exp
+- Modelo en Hugging Face: https://huggingface.co/wilsonngu/retrieval-exp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la busqueda web realizada.

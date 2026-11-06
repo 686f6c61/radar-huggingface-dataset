@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`cemong/r` es un checkpoint de generación de imágenes texto-a-imagen derivado de un modelo de la familia Stable Diffusion XL, publicado por el usuario cemong en HuggingFace. Se trata de un merge o ajuste fino orientado a resultados fotorrealistas, etiquetado por el autor con los descriptores `realistic`, `photorealistic` y `pony`, y entrenado con la técnica SPO (según los tags del repositorio). El modelo original del que deriva está alojado en CivitAI bajo el nombre WAI-REALMIX (versión 606365).
+`cemong/r` es un checkpoint de generación de imágenes texto-a-imagen derivado de un modelo de la familia Stable Diffusion XL, publicado por el usuario cemong en Hugging Face. Se trata de un merge o ajuste fino orientado a resultados fotorrealistas, etiquetado por el autor con los descriptores `realistic`, `photorealistic` y `pony`, y entrenado con la técnica SPO (según los tags del repositorio). El modelo original del que deriva está alojado en CivitAI bajo el nombre WAI-REALMIX (versión 606365).
 
 El modelo resuelve la tarea clásica de síntesis de imágenes a partir de prompts textuales, con énfasis en la estética fotorrealista y en el estilo asociado a los modelos tipo Pony. Con 2.567.463.684 parámetros en formato safetensors y un repositorio de 6,9 GB, su tamaño es coherente con un UNet de SDXL más los codificadores de texto, lo que lo sitúa en la categoría de modelos de difusión de gran formato que requieren GPU con VRAM considerable.
 
-La relevancia de esta ficha es doble: por un lado, documenta un checkpoint comunitario de nicho con muy poca tracción (91 descargas, 0 likes en el momento de la consulta); por otro, sirve para ilustrar las particularidades de licencia y trazabilidad de los modelos derivados de SDXL publicados en CivitAI y redistribuidos en HuggingFace, donde la licencia FAI-PL 1.0-SD impone condiciones específicas que conviene revisar antes de un uso comercial.
+La relevancia de esta ficha es doble: por un lado, documenta un checkpoint comunitario de nicho con muy poca tracción (91 descargas, 0 likes en el momento de la consulta); por otro, sirve para ilustrar las particularidades de licencia y trazabilidad de los modelos derivados de SDXL publicados en CivitAI y redistribuidos en Hugging Face, donde la licencia FAI-PL 1.0-SD impone condiciones específicas que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cemong/r | 2.567.463.684 | no disponible | FAI-PL 1.0-SD | HuggingFace, diffusers | Derivado de WAI-REALMIX, estética realista/Pony |
+| cemong/r | 2.567.463.684 | no disponible | FAI-PL 1.0-SD | Hugging Face, diffusers | Derivado de WAI-REALMIX, estética realista/Pony |
 | WAI-REALMIX (original) | no disponible | no disponible | no disponible | CivitAI | Modelo base del que deriva según el autor |
-| SDXL base (Stability AI) | no disponible en esta ficha | no disponible | no disponible | HuggingFace, diffusers | Referencia arquitectónica del pipeline |
+| SDXL base (Stability AI) | no disponible en esta ficha | no disponible | no disponible | Hugging Face, diffusers | Referencia arquitectónica del pipeline |
 
 No se dispone de datos de rendimiento comparativo ni de especificaciones detalladas de los modelos alternativos en la información proporcionada.
 
@@ -73,12 +73,12 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 - Riesgo de alucinación visual: como todo modelo generativo de imágenes, puede producir detalles inconsistentes, anatomías incorrectas o texto ilegible en las imágenes.
 - Limitaciones de contexto o idioma: no se declaran idiomas soportados ni límites de longitud de prompt; el comportamiento multilingüe no está validado.
 - Restricciones de licencia: la licencia FAI-PL 1.0-SD impone condiciones específicas; es imprescindible revisar el enlace de la licencia antes de cualquier uso comercial o redistribución.
-- Trazabilidad limitada: el modelo deriva de un checkpoint de CivitAI sin documentación técnica detallada en HuggingFace, lo que dificulta auditar el dataset y el proceso de entrenamiento.
+- Trazabilidad limitada: el modelo deriva de un checkpoint de CivitAI sin documentación técnica detallada en Hugging Face, lo que dificulta auditar el dataset y el proceso de entrenamiento.
 - Adopción muy baja: 91 descargas y 0 likes en el momento de la consulta, sin evidencia de validación por parte de la comunidad.
 - Para producción: la ausencia de benchmarks, de especificaciones de cuantización y de guías de despliegue hace recomendable una validación propia antes de integrarlo en un sistema real.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cemong/r
+- Hugging Face: https://huggingface.co/cemong/r
 - Modelo original en CivitAI: https://civitai.com/models/393905/wai-realmix?modelVersionId=606365
 - Licencia FAI-PL 1.0-SD: https://freedevproject.org/faipl-1.0-sd/

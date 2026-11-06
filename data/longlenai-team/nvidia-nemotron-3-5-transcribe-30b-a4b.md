@@ -6,7 +6,7 @@ NVIDIA Nemotron-3.5-Transcribe-30B-A4B es un modelo de lenguaje aumentado con vo
 
 El modelo resuelve el problema de convertir audio en texto estructurado y enriquecido: transcripción literal o escrita, traducción de voz, diarización con atribución de hablante, predicción de marcas temporales a nivel de palabra, identificación de idioma, detección de cambio de código (*code-switching*) y respuesta a preguntas sobre audio. Soporta grabaciones de hasta una hora con una ventana de contexto de 65.536 tokens, lo que lo sitúa en el segmento de modelos de voz de formato largo orientados a producción.
 
-Su relevancia actual radica en que se distribuye como pesos abiertos en BF16, FP8 y NVFP4, con licencia OpenMDW-1.1 que permite uso comercial, y en que cubre 40 idiomas (incluido el español) con una sola inferencia. La ficha de HuggingFace corresponde a una réplica publicada por el usuario longlenai-team; el modelo original lo publica NVIDIA bajo el identificador nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B.
+Su relevancia actual radica en que se distribuye como pesos abiertos en BF16, FP8 y NVFP4, con licencia OpenMDW-1.1 que permite uso comercial, y en que cubre 40 idiomas (incluido el español) con una sola inferencia. La ficha de Hugging Face corresponde a una réplica publicada por el usuario longlenai-team; el modelo original lo publica NVIDIA bajo el identificador nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni c
 
 ## Enlaces
 
-- Modelo en HuggingFace (réplica): https://huggingface.co/longlenai-team/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
+- Modelo en Hugging Face (réplica): https://huggingface.co/longlenai-team/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Variante FP8 (NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8
 - Variante NVFP4 (NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16

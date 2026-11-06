@@ -77,5 +77,5 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa. El mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/foss22/NanoZaya-3B-A35M
+- Modelo en Hugging Face: https://huggingface.co/foss22/NanoZaya-3B-A35M
 - Modelo base Zyphra/ZAYA1-8B: https://huggingface.co/Zyphra/ZAYA1-8B (referenciado en la model card, no verificado)

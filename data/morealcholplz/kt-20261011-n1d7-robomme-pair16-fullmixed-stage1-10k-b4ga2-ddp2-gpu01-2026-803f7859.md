@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo entrenado listo para uso, sino una copia de seguridad archivística ("research reset backup") de un directorio de trabajo de investigacion en robotica. El autor, morealcholplz, publica el contenido del directorio original `/home/work/mntvol/robottt/n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-20260905`, que incluye checkpoints experimentales, ficheros de configuracion y resultados, ademas del estado de reanudacion (resume state) cuando existe. La propia model card aclara explicitamente que se trata de una instantanea de archivo y no de una afirmacion de exito en la evaluacion ni de un modelo estandar listo para inferencia.
+Este repositorio de Hugging Face no contiene un modelo entrenado listo para uso, sino una copia de seguridad archivística ("research reset backup") de un directorio de trabajo de investigacion en robotica. El autor, morealcholplz, publica el contenido del directorio original `/home/work/mntvol/robottt/n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-20260905`, que incluye checkpoints experimentales, ficheros de configuracion y resultados, ademas del estado de reanudacion (resume state) cuando existe. La propia model card aclara explicitamente que se trata de una instantanea de archivo y no de una afirmacion de exito en la evaluacion ni de un modelo estandar listo para inferencia.
 
 El nombre del repositorio codifica la configuracion del entrenamiento: `n1d7` apunta a la linea de modelos GR00T N1.x, `robomme-pair16-fullmixed` hace referencia al conjunto de datos o benchmark RoboMME con emparejamiento 16, `stage1-10k` indica la primera etapa de entrenamiento y 10 000 pasos, y `b4ga2-ddp2-gpu01` describe batch 4, acumulacion de gradiente 2 y entrenamiento distribuido con 2 GPUs. El aviso de la model card indica que los derivados de GR00T quedan sujetos a la licencia de investigacion y evaluacion de NVIDIA, mientras que pi/openpi y otros componentes de terceros conservan sus propios terminos.
 
@@ -74,7 +74,7 @@ La informacion proporcionada no incluye especificaciones tecnicas de modelos com
 | Contexto | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Rendimiento | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Licencia | no disponible; la model card remite a licencia de investigacion/evaluacion de NVIDIA para derivados GR00T | Sujeto a los terminos de GR00T y componentes de terceros | Licencia de investigacion/evaluacion de NVIDIA |
-| Disponibilidad | Publico en HuggingFace, 0 descargas y 0 likes | Publico en HuggingFace | Upstream referenciado por el autor |
+| Disponibilidad | Publico en Hugging Face, 0 descargas y 0 likes | Publico en Hugging Face | Upstream referenciado por el autor |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ La informacion proporcionada no incluye especificaciones tecnicas de modelos com
 - El repositorio excluye credenciales, enlaces externos, caches y ficheros opacos de seguimiento o perfilado; esos elementos estan listados en BACKUP_MANIFEST.json y su ausencia puede impedir una reproduccion completa.
 - La model card recomienda conservar el manifiesto y el recibo de verificacion final; sin ellos la integridad del snapshot no es comprobable.
 - Restricciones de licencia: los derivados de GR00T quedan sujetos a la licencia de investigacion y evaluacion de NVIDIA, lo que limita el uso comercial. pi/openpi y componentes de terceros conservan sus propios terminos, que deben revisarse por separado.
-- El campo de licencia del repositorio aparece como no disponible, por lo que la licencia real debe inferirse de la model card y no del metadato de HuggingFace.
+- El campo de licencia del repositorio aparece como no disponible, por lo que la licencia real debe inferirse de la model card y no del metadato de Hugging Face.
 - Sesgos conocidos: no disponible. No hay evaluacion publicada sobre sesgos para este artefacto.
 - Riesgo de alucinacion: no evaluable, al no tratarse de un modelo de lenguaje desplegable.
 - Limitaciones de contexto e idioma: no disponible.
@@ -92,6 +92,6 @@ La informacion proporcionada no incluye especificaciones tecnicas de modelos com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-2026-803f7859
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-2026-803f7859
 - Repositorio hermano del mismo autor (GR00T N1.6 + HAMLET + Persistent TTT, RoboMME NMT T=4): https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4
 - Paper, blog, repositorio de codigo o demo asociados: no disponible en la informacion proporcionada.

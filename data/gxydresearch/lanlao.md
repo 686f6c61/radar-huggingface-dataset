@@ -19,7 +19,7 @@ Su relevancia actual esta en el coste de inferencia: al eliminar la decodificaci
 | Tipos de cuantizacion | No disponible (la model card describe el uso en bf16; no se listan variantes cuantizadas ni GGUF) |
 | Idiomas soportados | No disponible como lista oficial; los datos de entrenamiento y evaluacion son ingles y chino (NLI en ingles, CMNLI en chino, set de prueba bilingue en50 + zh50) |
 | Licencia | Apache 2.0 (aplicable al adaptador; el modelo base Qwen3.5-4B se distribuye bajo su propia licencia) |
-| Formato de pesos | Adaptador LoRA en `rlcd_score43k_v5.pt` (~25 MB); tras `merge_export.py`, directorio estandar de HuggingFace (~8 GB) en safetensors. Repositorio Tamano indicado: 0.0 GB |
+| Formato de pesos | Adaptador LoRA en `rlcd_score43k_v5.pt` (~25 MB); tras `merge_export.py`, directorio estandar de Hugging Face (~8 GB) en safetensors. Repositorio Tamano indicado: 0.0 GB |
 
 Otros datos relevantes: `pipeline_tag` es `text-classification`, la libreria declarada es `transformers`, el modelo base es `Qwen/Qwen3.5-4B`, y la model card indica que la peticion y respuesta es compatible con el protocolo de los modelos Jev de TypeSafe AI.
 
@@ -79,7 +79,7 @@ Notas: no hay benchmarks estandar de la literatura (MMLU, HumanEval, GSM8K) en l
 - GPU: NVIDIA con CUDA 12.x. La medicion de latencia reportada se hizo en una RTX 4090. No se especifican otras GPU en la informacion disponible.
 - Consumer GPU: si, cabe en tarjetas de gama alta con 12-16 GB o mas de VRAM (por ejemplo RTX 4090); con 12 GB es viable segun el fabricante, sin margen documentado para lotes grandes.
 - Software: Python 3.10+, `torch>=2.6`, `transformers>=5.0` (necesario porque la clase nativa `Qwen3_5ForCausalLM` no existe en versiones anteriores), `peft>=0.15`, `numpy>=1.24`.
-- Opciones de despliegue: servidor propio `systemone_server.py` en modo `lora` (con peft) o en modo `direct` sobre los pesos fusionados; tras `merge_export.py`, el directorio resultante es un modelo HuggingFace estandar y se puede servir con `vllm serve` usando `max_tokens=1` y `logprobs=20`. No se documentan soporte de llama.cpp, Ollama, TGI ni formatos GGUF.
+- Opciones de despliegue: servidor propio `systemone_server.py` en modo `lora` (con peft) o en modo `direct` sobre los pesos fusionados; tras `merge_export.py`, el directorio resultante es un modelo Hugging Face estandar y se puede servir con `vllm serve` usando `max_tokens=1` y `logprobs=20`. No se documentan soporte de llama.cpp, Ollama, TGI ni formatos GGUF.
 - Latencia: 70-90 ms por peticion con 2-4 opciones en RTX 4090; 79 ms de media agregada sobre 100 casos bilingues; 82,1 ms en el ejemplo de respuesta de la model card.
 - Throughput: no disponible. La carga inicial (fusion de LoRA y carga del modelo) tarda aproximadamente 1-2 minutos; la fusion de pesos es un proceso de un solo uso de unos 3 minutos y genera un directorio de unos 8 GB.
 - Requisito de compatibilidad: el adaptador solo funciona con Qwen3.5-4B; usar otra version de Qwen provoca desajuste de formas (`shape mismatch`).
@@ -88,7 +88,7 @@ Notas: no hay benchmarks estandar de la literatura (MMLU, HumanEval, GSM8K) en l
 
 | Modelo | Parametros | Contexto | Enfoque | Exactitud (set bilingue 100 casos) | ECE | Latencia | Licencia / disponibilidad |
 |---|---|---|---|---|---|---|---|
-| lanlao (gxydResearch) | Base ~4B + LoRA ~25 MB | No disponible (heredado de Qwen3.5-4B) | Decision single-forward, 3 tipos de pregunta, sin generacion | 0.950 (choice 0.983 / noul 0.900 / score 0.900) | 0.041 | 79 ms (RTX 4090) | Apache 2.0, descarga abierta en HuggingFace |
+| lanlao (gxydResearch) | Base ~4B + LoRA ~25 MB | No disponible (heredado de Qwen3.5-4B) | Decision single-forward, 3 tipos de pregunta, sin generacion | 0.950 (choice 0.983 / noul 0.900 / score 0.900) | 0.041 | 79 ms (RTX 4090) | Apache 2.0, descarga abierta en Hugging Face |
 | Jev oficial (TypeSafe AI) | No disponible | No disponible | Decision single-forward, protocolo de referencia | 0.970 (choice 0.983 / noul 0.900 / score 1.000) | 0.031 | 673 ms | No disponible (cifras citadas como metricas publicas) |
 | Qwen3.5-4B (modelo base sin adaptador) | ~4B | No disponible en la informacion proporcionada | LLM generativo denso | No comparable: no implementa el protocolo de decision | No disponible | No disponible | Licencia propia del modelo base |
 
@@ -108,9 +108,9 @@ No se dispone de informacion sobre otros modelos de decision single-forward comp
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/gxydResearch/lanlao
-- Modelo base: https://www.modelscope.cn/models/Qwen/Qwen3.5-4B (referenciado en la model card; tambien disponible como `Qwen/Qwen3.5-4B` en HuggingFace)
-- Repositorio de codigo y pesos: incluido en el propio repositorio de HuggingFace (archivos `systemone_server.py`, `merge_export.py`, `realworld_compare.py`, `requirements.txt`, `rlcd_score43k_v5.pt`); el autor lo distribuye tambien como `lanlao-v1.1.0.tar.gz` con el directorio `semif-systemone/`
+- Pagina del modelo en Hugging Face: https://huggingface.co/gxydResearch/lanlao
+- Modelo base: https://www.modelscope.cn/models/Qwen/Qwen3.5-4B (referenciado en la model card; tambien disponible como `Qwen/Qwen3.5-4B` en Hugging Face)
+- Repositorio de codigo y pesos: incluido en el propio repositorio de Hugging Face (archivos `systemone_server.py`, `merge_export.py`, `realworld_compare.py`, `requirements.txt`, `rlcd_score43k_v5.pt`); el autor lo distribuye tambien como `lanlao-v1.1.0.tar.gz` con el directorio `semif-systemone/`
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Demo publica: no disponible

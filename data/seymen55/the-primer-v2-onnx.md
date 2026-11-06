@@ -84,5 +84,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Seymen55/the-primer-v2-onnx
+- Hugging Face: https://huggingface.co/Seymen55/the-primer-v2-onnx
 - No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios o demos.

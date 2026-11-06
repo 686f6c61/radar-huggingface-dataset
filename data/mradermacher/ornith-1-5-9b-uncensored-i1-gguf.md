@@ -85,7 +85,7 @@ Los datos de contexto de los modelos comparativos provienen de sus model cards p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-GGUF
 - Modelo base: https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Ornith-1.5-9B-uncensored-i1-GGUF

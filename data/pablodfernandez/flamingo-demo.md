@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pablodfernandez/flamingo-demo` es un repositorio de HuggingFace publicado por el usuario `pablodfernandez` que contiene una implementación propia y de escala reducida de la arquitectura Flamingo, orientada a tareas de *matching* (emparejamiento). El repositorio se distribuye bajo licencia MIT e incluye el código de inferencia, la configuración de arquitectura, una receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
+`pablodfernandez/flamingo-demo` es un repositorio de Hugging Face publicado por el usuario `pablodfernandez` que contiene una implementación propia y de escala reducida de la arquitectura Flamingo, orientada a tareas de *matching* (emparejamiento). El repositorio se distribuye bajo licencia MIT e incluye el código de inferencia, la configuración de arquitectura, una receta de experimento por defecto y un checkpoint de inicialización en formato safetensors.
 
 Conviene subrayar que no se trata de un modelo entrenado ni de una release con pesos útiles: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no debe presentarse como un checkpoint con benchmarks. El recuento real de parámetros del archivo safetensors es de 49.600 parámetros (aproximadamente 0,05 millones), lo que lo sitúa en un orden de magnitud experimental y no operativo.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pablodfernandez/flamingo-demo | 49.600 | no disponible | MIT | HuggingFace (checkpoint de inicialización) |
+| pablodfernandez/flamingo-demo | 49.600 | no disponible | MIT | Hugging Face (checkpoint de inicialización) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pablodfernandez/flamingo-demo
+- Hugging Face: https://huggingface.co/pablodfernandez/flamingo-demo
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a herramientas de medición de velocidad de conexión (Speedtest de Ookla, Fast.com, speedtest.ch, SpeedTest.org) y no guardan relación con el repositorio. No hay papers, blogs, repositorios ni demos adicionales disponibles en la información proporcionada.

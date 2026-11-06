@@ -1,7 +1,7 @@
 # Pruthvirahul/PruthviLM-v0.2
 
 ## Resumen
-PruthviLM-v0.2 es un modelo de lenguaje publicado en HuggingFace por el usuario Pruthvirahul, con licencia MIT. El repositorio es extremadamente escueto: no incluye model card, ni especificaciones técnicas, ni documentación de uso. El tamaño del repositorio es de 0.1 GB, lo que sugiere un modelo de dimensiones reducidas, pero no se puede confirmar ningún dato sobre arquitectura, número de parámetros o capacidades a partir de la información pública.
+PruthviLM-v0.2 es un modelo de lenguaje publicado en Hugging Face por el usuario Pruthvirahul, con licencia MIT. El repositorio es extremadamente escueto: no incluye model card, ni especificaciones técnicas, ni documentación de uso. El tamaño del repositorio es de 0.1 GB, lo que sugiere un modelo de dimensiones reducidas, pero no se puede confirmar ningún dato sobre arquitectura, número de parámetros o capacidades a partir de la información pública.
 
 El autor tiene otros proyectos relacionados con IA, como el agente AstraMind basado en Qwen2.5-7B-Instruct, pero no hay evidencia de que PruthviLM-v0.2 esté relacionado con ese trabajo. Dado que no existe documentación oficial, este modelo debe considerarse en fase experimental o de demostración, y no está listo para uso en producción sin una evaluación previa.
 

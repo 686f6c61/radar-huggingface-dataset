@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GuwarAI es un modelo publicado en HuggingFace por el usuario GuwarAI0 bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente incluye la declaración de licencia, sin descripción, sin especificaciones técnicas, sin información sobre arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coinciden (1 de noviembre de 2026), lo que sugiere una publicación reciente y sin mantenimiento posterior documentado.
+GuwarAI es un modelo publicado en Hugging Face por el usuario GuwarAI0 bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente incluye la declaración de licencia, sin descripción, sin especificaciones técnicas, sin información sobre arquitectura, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización coinciden (1 de noviembre de 2026), lo que sugiere una publicación reciente y sin mantenimiento posterior documentado.
 
 No es posible determinar a partir de la información disponible qué problema resuelve el modelo, qué arquitectura emplea, cuál es su tamaño o qué longitud de contexto soporta. Tampoco se especifican los idiomas soportados ni el formato de los pesos. Cualquier evaluación técnica rigurosa requeriría inspeccionar directamente los archivos del repositorio, algo que queda fuera del alcance de esta ficha.
 
@@ -75,4 +75,4 @@ No disponible. Al no conocerse el tamaño, la arquitectura ni las capacidades de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GuwarAI0/GuwarAI
+- Hugging Face: https://huggingface.co/GuwarAI0/GuwarAI

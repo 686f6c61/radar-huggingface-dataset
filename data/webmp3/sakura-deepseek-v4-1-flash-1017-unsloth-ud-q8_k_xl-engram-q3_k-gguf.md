@@ -21,7 +21,7 @@ Su interés práctico es que reduce un paquete de casi 508 GB a 363,310 GiB de f
 | Licencia | MIT |
 | Formato de pesos | GGUF, 9 shards numerados (`...-00001-of-00009.gguf` a `...-00009-of-00009.gguf`) |
 | Tamano del paquete principal | 390.101.244.297 bytes (390,101 GB / 363,310 GiB) |
-| Tamano del repo en HuggingFace | 390,1 GB |
+| Tamano del repo en Hugging Face | 390,1 GB |
 | Modelo base | unsloth/DeepSeek-V4.1-Flash-1017-GGUF |
 | Relacion con el base | quantized |
 
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Unsloth-UD-Q8_K_XL-Engram-Q3_K-GGUF
+- Modelo en Hugging Face: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Unsloth-UD-Q8_K_XL-Engram-Q3_K-GGUF
 - Checkpoint oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017 (revisión `1bae0e1088993b9b82de08f59de5be5a34e42170`)
 - GGUF de Unsloth: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF/tree/60ad3651641b5c97679c807e064ab1d7a3ca1455 (revisión `60ad3651641b5c97679c807e064ab1d7a3ca1455`)
 - Variante Sakura Maya-S IQ2_XXS con Engram Q3_K: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Maya-S-IQ2_XXS-Engram-Q3_K-GGUF (revisión congelada `4a701f59f623b08a859368926cd9a210ab446941`)

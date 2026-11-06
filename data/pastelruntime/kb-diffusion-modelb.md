@@ -79,5 +79,5 @@ No se dispone de modelos directamente comparables, ya que KB-Diffusion Model B e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PastelRuntime/KB-Diffusion-ModelB
+- Modelo en Hugging Face: https://huggingface.co/PastelRuntime/KB-Diffusion-ModelB
 - Repositorio del proyecto KB-Diffusion-Optimized: https://github.com/PastelRuntime/KB-Diffusion-Optimized

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaelwilsonmu/contrastive-tryout-2024` es un repositorio de HuggingFace publicado por el usuario michaelwilsonmu que contiene una implementación propia de un "Tiny Transformer" orientada a aprendizaje contrastivo, acompañada de un fichero de configuración, un recetario de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. El recuento real de parámetros del checkpoint es de 33.088, es decir, aproximadamente 0,033 millones, una magnitud propia de una prueba de humo más que de un modelo utilizable.
+`michaelwilsonmu/contrastive-tryout-2024` es un repositorio de Hugging Face publicado por el usuario michaelwilsonmu que contiene una implementación propia de un "Tiny Transformer" orientada a aprendizaje contrastivo, acompañada de un fichero de configuración, un recetario de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors. El recuento real de parámetros del checkpoint es de 33.088, es decir, aproximadamente 0,033 millones, una magnitud propia de una prueba de humo más que de un modelo utilizable.
 
 La propia model card es explícita al respecto: el checkpoint es una inicialización válida para smoke tests y no se presenta como un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark, no se documenta dataset de entrenamiento, número de tokens, composición de datos ni fases de alineación (RLHF/DPO). El repositorio ocupa 0,0 GB, acumula 0 descargas y 0 "likes", y su licencia es Apache-2.0.
 
@@ -20,7 +20,7 @@ Su relevancia actual es, por tanto, la de una plantilla reproducible: sirve para
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (checkpoint de inicializacion) |
 
-Notas adicionales: la model card etiqueta la escala como "giant", etiqueta que no se corresponde con el recuento real de 33.088 parametros. El repositorio incluye ademas `model.py`, `config.json` y `training_args.json`. Segun los metadatos de HuggingFace, la creacion y ultima actualizacion del repositorio se registran el 2026-09-14, fechas que se reproducen tal cual aparecen en la ficha del repositorio.
+Notas adicionales: la model card etiqueta la escala como "giant", etiqueta que no se corresponde con el recuento real de 33.088 parametros. El repositorio incluye ademas `model.py`, `config.json` y `training_args.json`. Segun los metadatos de Hugging Face, la creacion y ultima actualizacion del repositorio se registran el 2026-09-14, fechas que se reproducen tal cual aparecen en la ficha del repositorio.
 
 ## Arquitectura y entrenamiento
 
@@ -79,6 +79,6 @@ No disponible. No se dispone de datos verificados de modelos comparables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/michaelwilsonmu/contrastive-tryout-2024
+- Modelo en Hugging Face: https://huggingface.co/michaelwilsonmu/contrastive-tryout-2024
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni a la arquitectura. Las URLs devueltas corresponden a un sitio de preguntas y respuestas en chino (zhihu.com) y no guardan relacion con el repositorio.
 - Paper, blog, repositorio de codigo adicional o demo: no disponible en la informacion proporcionada.

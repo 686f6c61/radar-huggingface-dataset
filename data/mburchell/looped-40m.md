@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Looped-40M es un modelo de lenguaje experimental de 40 millones de parámetros desarrollado por el usuario mburchell y publicado en HuggingFace. Se trata de un transformer de estilo Llama entrenado desde cero que incorpora recurrencia: la red apila 10 capas, pero las 6 capas internas se ejecutan dos veces (un bucle), lo que permite reutilizar parámetros y aumentar la profundidad efectiva sin incrementar el recuento de pesos. Usa una anchura de 512, activaciones SwiGLU, atención con GQA y un vocabulario propio de 24.000 tokens con operadores de capitalización.
+Looped-40M es un modelo de lenguaje experimental de 40 millones de parámetros desarrollado por el usuario mburchell y publicado en Hugging Face. Se trata de un transformer de estilo Llama entrenado desde cero que incorpora recurrencia: la red apila 10 capas, pero las 6 capas internas se ejecutan dos veces (un bucle), lo que permite reutilizar parámetros y aumentar la profundidad efectiva sin incrementar el recuento de pesos. Usa una anchura de 512, activaciones SwiGLU, atención con GQA y un vocabulario propio de 24.000 tokens con operadores de capitalización.
 
 El modelo se entrenó con aproximadamente 15.000 millones de tokens usando el optimizador Muon, partiendo del subconjunto FineWeb-Edu-dedup de SmolLM-Corpus para el preentrenamiento y una mezcla de SQuAD, Smol-SmolTalk, Everyday Conversations y bAbI para el ajuste conversacional supervisado. La ventana de contexto es de 1.024 tokens y el único idioma declarado es el inglés.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mburchell/looped-40m | 40 M | 1.024 | Transformer con bucle de capas | CC BY-SA 4.0 | HuggingFace |
-| SmolLM-135M (HuggingFace) | 135 M | 2.048 | Transformer decoder-only | Apache 2.0 | HuggingFace |
-| SmolLM2-135M (HuggingFace) | 135 M | 8.192 | Transformer decoder-only | Apache 2.0 | HuggingFace |
-| Pythia-70M (EleutherAI) | 70 M | 2.048 | Transformer decoder-only | Apache 2.0 | HuggingFace |
+| mburchell/looped-40m | 40 M | 1.024 | Transformer con bucle de capas | CC BY-SA 4.0 | Hugging Face |
+| SmolLM-135M (Hugging Face) | 135 M | 2.048 | Transformer decoder-only | Apache 2.0 | Hugging Face |
+| SmolLM2-135M (Hugging Face) | 135 M | 8.192 | Transformer decoder-only | Apache 2.0 | Hugging Face |
+| Pythia-70M (EleutherAI) | 70 M | 2.048 | Transformer decoder-only | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento con estas alternativas no está disponible, ya que no se han publicado benchmarks de looped-40m. Frente a SmolLM y Pythia, looped-40m destaca por su menor tamaño y por la innovación arquitectónica del bucle de capas, pero queda muy por detrás en contexto (1.024 frente a 2.048-8.192 tokens), en licencia (CC BY-SA 4.0 impone compartir igual, frente a Apache 2.0) y en madurez de ecosistema (sin soporte documentado en llama.cpp, Ollama o vLLM).
 
@@ -87,7 +87,7 @@ La comparación de rendimiento con estas alternativas no está disponible, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mburchell/looped-40m
+- Modelo en Hugging Face: https://huggingface.co/mburchell/looped-40m
 - Dataset de preentrenamiento SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset SQuAD 1.1: https://huggingface.co/datasets/rajpurkar/squad
 - Dataset Smol-SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

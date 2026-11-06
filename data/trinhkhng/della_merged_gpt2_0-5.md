@@ -4,7 +4,7 @@
 
 `trinhkhng/della_Merged_gpt2_0.5` es un modelo de lenguaje de tipo GPT-2 (124 millones de parámetros) creado mediante la fusión de dos modelos preentrenados usando el método DELLA (arxiv:2406.11617). El autor, trinhkhng, ha combinado un GPT-2 base con un modelo denominado `debias_gpt2` (un GPT-2 ajustado para reducir sesgos) utilizando la herramienta mergekit. El objetivo es obtener un modelo que mantenga las capacidades generativas del GPT-2 original pero con una menor interferencia entre los pesos de los modelos fusionados, gracias al muestreo basado en magnitud que propone DELLA.
 
-Este modelo es relevante en el contexto de la investigación sobre fusión de modelos (model merging), una técnica que permite combinar las capacidades de varios modelos sin necesidad de entrenamiento adicional. Al ser un modelo pequeño (124M), es adecuado para experimentos en entornos con recursos limitados y para estudiar el comportamiento de DELLA en arquitecturas compactas. Su pipeline es text-generation y está disponible en formato safetensors, aunque la licencia y los idiomas soportados no están especificados en la ficha de HuggingFace.
+Este modelo es relevante en el contexto de la investigación sobre fusión de modelos (model merging), una técnica que permite combinar las capacidades de varios modelos sin necesidad de entrenamiento adicional. Al ser un modelo pequeño (124M), es adecuado para experimentos en entornos con recursos limitados y para estudiar el comportamiento de DELLA en arquitecturas compactas. Su pipeline es text-generation y está disponible en formato safetensors, aunque la licencia y los idiomas soportados no están especificados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al tener 124.439.808 parametros, en precision fp32 ocupa aproximadamente 500 MB; en fp16 unos 250 MB. Con cuantizacion a 8 bits (no publicada) podria reducirse a unos 125 MB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; una RTX 3060 o superior lo ejecutaria sin problemas. Tambien es viable en CPU (inferencia lenta pero posible).
 - Compatibilidad con consumer GPU: si, cabe en cualquier GPU moderna, incluso en integradas.
-- Opciones de despliegue: al ser un modelo de transformers, es compatible con la libreria `transformers` de HuggingFace. Tambien puede desplegarse con herramientas como vLLM, llama.cpp u Ollama, aunque no hay confirmacion explicita de compatibilidad en la documentacion.
+- Opciones de despliegue: al ser un modelo de transformers, es compatible con la libreria `transformers` de Hugging Face. Tambien puede desplegarse con herramientas como vLLM, llama.cpp u Ollama, aunque no hay confirmacion explicita de compatibilidad en la documentacion.
 - Latencia y throughput: no disponibles; al ser un modelo pequeno, se espera una latencia baja en GPU, pero no hay datos concretos.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La comparacion se limita a pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinhkhng/della_Merged_gpt2_0.5
+- Hugging Face: https://huggingface.co/trinhkhng/della_Merged_gpt2_0.5
 - Paper DELLA: https://arxiv.org/abs/2406.11617
 - Repositorio mergekit: https://github.com/cg123/mergekit
 - Despliegue en FriendliAI: https://friendli.ai/models/trinhkhng/della_Merged_gpt2_0.5

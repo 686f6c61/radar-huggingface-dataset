@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vurnv/Qwen3.8-27B` es un checkpoint de la familia Qwen3.8, desarrollado por el usuario vurnv y publicado en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar tanto imágenes como texto y generar respuestas textuales. Con aproximadamente 27.780 millones de parámetros, se posiciona en la gama de modelos grandes de código abierto, aunque su ficha pública es extremadamente limitada: no se especifican detalles de arquitectura interna, longitud de contexto, dataset de entrenamiento ni rendimiento.
+El modelo `vurnv/Qwen3.8-27B` es un checkpoint de la familia Qwen3.8, desarrollado por el usuario vurnv y publicado en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text, es decir, capaz de procesar tanto imágenes como texto y generar respuestas textuales. Con aproximadamente 27.780 millones de parámetros, se posiciona en la gama de modelos grandes de código abierto, aunque su ficha pública es extremadamente limitada: no se especifican detalles de arquitectura interna, longitud de contexto, dataset de entrenamiento ni rendimiento.
 
 La relevancia de este modelo radica en su pertenencia a la familia Qwen3.8, que en versiones oficiales ha demostrado buenas capacidades en razonamiento, generación de código y comprensión visual. Sin embargo, al ser un checkpoint de un autor independiente y con acceso restringido (gated), su utilidad práctica queda condicionada a la disponibilidad de documentación adicional y a la validación por parte de la comunidad. La licencia Apache 2.0 permite uso comercial, pero la falta de información técnica dificulta su evaluación rigurosa.
 
@@ -58,7 +58,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 ## Limitaciones y advertencias
 
 - **Falta de documentación**: no hay paper, README técnico ni detalles de entrenamiento, lo que impide conocer sus limitaciones específicas.
-- **Acceso restringido**: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- **Acceso restringido**: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - **Riesgo de alucinación**: como todo modelo generativo, puede producir respuestas incorrectas o inventadas, especialmente sin validación.
 - **Idiomas**: no se especifican los idiomas soportados; podría tener un rendimiento desigual fuera del inglés o chino (idiomas típicos de Qwen).
 - **Sesgos**: al no conocer el dataset de entrenamiento, no se pueden evaluar sesgos potenciales.
@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: vurnv/Qwen3.8-27B](https://huggingface.co/vurnv/Qwen3.8-27B)
+- [Hugging Face: vurnv/Qwen3.8-27B](https://huggingface.co/vurnv/Qwen3.8-27B)
 - No se han encontrado papers, repositorios de código, demos ni documentación adicional en la búsqueda web.

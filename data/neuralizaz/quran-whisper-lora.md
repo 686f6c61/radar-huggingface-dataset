@@ -83,7 +83,7 @@ No hay datos suficientes para una comparativa cuantitativa de rendimiento. Los m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NeuralIzaz/quran-whisper-lora
+- Repositorio Hugging Face: https://huggingface.co/NeuralIzaz/quran-whisper-lora
 - Modelo relacionado (sin pesos): https://huggingface.co/NeuralIzaz/quran-whisper-paras1-10-lora
 - Modelo similar de otro autor: https://huggingface.co/aboalaa1472/whisper-quran-lora-v2
 - Ejemplo de script de entrenamiento LoRA: https://github.com/nxr-dine/quran-whisper/blob/main/train_lora.py

@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento del adaptador, por lo que la comparacion s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Reyvic-254/jarvis-brain-qwen3-4b-sft-v1
+- Modelo en Hugging Face: https://huggingface.co/Reyvic-254/jarvis-brain-qwen3-4b-sft-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/videlisndichi/jarvis-brain-v1-sft
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la busqueda web realizada.

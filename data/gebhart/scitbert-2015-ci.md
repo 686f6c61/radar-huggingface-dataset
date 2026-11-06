@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gebhart/scitbert-2015-ci` es un modelo de lenguaje publicado en HuggingFace por el usuario gebhart. Por el nombre y las etiquetas del repositorio, se trata de un modelo de la familia SciT/ModernBERT orientado a texto cientifico, y la terminacion `2015-ci` sugiere un ajuste o especializacion vinculada a un corpus o tarea concreta (posiblemente clasificacion de intencion de citas, *citation intent*, aunque esto no se confirma en la informacion disponible).
+`gebhart/scitbert-2015-ci` es un modelo de lenguaje publicado en Hugging Face por el usuario gebhart. Por el nombre y las etiquetas del repositorio, se trata de un modelo de la familia SciT/ModernBERT orientado a texto cientifico, y la terminacion `2015-ci` sugiere un ajuste o especializacion vinculada a un corpus o tarea concreta (posiblemente clasificacion de intencion de citas, *citation intent*, aunque esto no se confirma en la informacion disponible).
 
 El repositorio declara 149.014.272 parametros totales, un tamano de 1,2 GB y el tag `modernbert`, lo que situa al modelo en la escala de un encoder tipo BERT base (aproximadamente 150 millones de parametros). Frente a los encoders clasicos de 110 millones de parametros, este tamano es coherente con las variantes base de ModernBERT, que incorporan mejoras como posiciones rotatorias (RoPE), atencion local/global alternada y soporte de secuencias mas largas.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| gebhart/scitbert-2015-ci | 149.014.272 | no disponible | no disponible | HuggingFace, 4 descargas | no disponible |
-| ModernBERT-base (familia de referencia) | 149 M aprox. | 8192 tokens | Apache 2.0 (segun su ficha publica) | HuggingFace, ampliamente usado | benchmarks publicos en MTEB y GLUE |
-| SciBERT (Allen AI) | 110 M aprox. | 512 tokens | Apache 2.0 (segun su ficha publica) | HuggingFace, muy extendido | benchmarks publicos en tareas cientificas |
-| BERT-base (Google) | 110 M aprox. | 512 tokens | Apache 2.0 | HuggingFace, referencia generalista | benchmarks publicos en GLUE |
+| gebhart/scitbert-2015-ci | 149.014.272 | no disponible | no disponible | Hugging Face, 4 descargas | no disponible |
+| ModernBERT-base (familia de referencia) | 149 M aprox. | 8192 tokens | Apache 2.0 (segun su ficha publica) | Hugging Face, ampliamente usado | benchmarks publicos en MTEB y GLUE |
+| SciBERT (Allen AI) | 110 M aprox. | 512 tokens | Apache 2.0 (segun su ficha publica) | Hugging Face, muy extendido | benchmarks publicos en tareas cientificas |
+| BERT-base (Google) | 110 M aprox. | 512 tokens | Apache 2.0 | Hugging Face, referencia generalista | benchmarks publicos en GLUE |
 
 Nota: los datos de las filas comparativas corresponden a informacion publica de esos modelos y no a una evaluacion conjunta con `gebhart/scitbert-2015-ci`; la unica cifra verificada de este ultimo es el numero de parametros.
 
@@ -86,7 +86,7 @@ Nota: los datos de las filas comparativas corresponden a informacion publica de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gebhart/scitbert-2015-ci
+- Hugging Face: https://huggingface.co/gebhart/scitbert-2015-ci
 - Repositorio de ModernBERT (referencia de arquitectura): https://huggingface.co/answerdotai/ModernBERT-base
 - SciBERT (referencia de dominio cientifico): https://huggingface.co/allenai/scibert_scivocab_uncased
 - Paper de ModernBERT: https://arxiv.org/abs/2412.13663

@@ -112,7 +112,7 @@ Las cifras de parametros de las alternativas son valores publicos aproximados de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafeai/sdxs-512-dreamshaper-onnx-webgpu
+- Modelo en Hugging Face: https://huggingface.co/skillsafeai/sdxs-512-dreamshaper-onnx-webgpu
 - Modelo base (SDXS-512-DreamShaper): https://huggingface.co/IDKiro/sdxs-512-dreamshaper
 - Repositorio del decodificador TAESD (madebyollin): https://huggingface.co/madebyollin/taesd
 - DreamShaper (Lykon), origen de la destilacion: https://huggingface.co/Lykon/DreamShaper

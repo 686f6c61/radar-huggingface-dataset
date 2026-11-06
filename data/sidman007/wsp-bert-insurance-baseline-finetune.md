@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wsp-bert-insurance-baseline-finetune` es un modelo de clasificación de texto en inglés publicado por el usuario `sidman007` en HuggingFace. Se trata de un `BertForSequenceClassification` construido sobre `google-bert/bert-base-uncased` y adaptado a la clasificación de oraciones del dominio de seguros con ocho etiquetas: `coverage_grant`, `exclusion`, `premium_payment`, `deductible_limits`, `claims_procedure`, `definitions`, `term_cancellation_renewal` y `conditions_duties`.
+`wsp-bert-insurance-baseline-finetune` es un modelo de clasificación de texto en inglés publicado por el usuario `sidman007` en Hugging Face. Se trata de un `BertForSequenceClassification` construido sobre `google-bert/bert-base-uncased` y adaptado a la clasificación de oraciones del dominio de seguros con ocho etiquetas: `coverage_grant`, `exclusion`, `premium_payment`, `deductible_limits`, `claims_procedure`, `definitions`, `term_cancellation_renewal` y `conditions_duties`.
 
 Lo relevante del modelo no es su rendimiento, sino su método de construcción: según la model card, no se ha entrenado con descenso de gradiente ni con optimizadores, sino mediante *weight-space programming*. Un LLM editor habría leído y reescrito directamente los pesos de BERT aplicando matemática en forma cerrada sobre los pesos y las activaciones obtenidas de un número presupuestado de pasadas forward. La model card indica que se modificaron 201 tensores y que el 100,000 % de los parámetros cambiaron, es decir, la práctica totalidad del modelo.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sidman007/wsp-bert-insurance-baseline-finetune` | 109,5 M | no disponible | Clasificación de 8 etiquetas de seguros | apache-2.0 | HuggingFace, 0 descargas |
-| `google-bert/bert-base-uncased` | 110 M | 512 tokens (típico) | Modelo base de propósito general | apache-2.0 | HuggingFace, ampliamente usado |
-| `ProsusAI/finbert` | ~110 M | 512 tokens (típico) | Clasificación de sentimiento financiero | no disponible en esta consulta | HuggingFace |
+| `sidman007/wsp-bert-insurance-baseline-finetune` | 109,5 M | no disponible | Clasificación de 8 etiquetas de seguros | apache-2.0 | Hugging Face, 0 descargas |
+| `google-bert/bert-base-uncased` | 110 M | 512 tokens (típico) | Modelo base de propósito general | apache-2.0 | Hugging Face, ampliamente usado |
+| `ProsusAI/finbert` | ~110 M | 512 tokens (típico) | Clasificación de sentimiento financiero | no disponible en esta consulta | Hugging Face |
 
 La comparación con `finbert` se ofrece como referencia de categoría (BERT base adaptado a un dominio regulado), pero no se dispone de datos de rendimiento de ninguno de los tres modelos en la información proporcionada para establecer una comparación cuantitativa.
 
@@ -81,7 +81,7 @@ La comparación con `finbert` se ofrece como referencia de categoría (BERT base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-baseline-finetune
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-baseline-finetune
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - README del proyecto con protocolo y resultados: no disponible en la información proporcionada
 - Paper, blog o repositorio del método *weight-space programming*: no disponible en la información proporcionada

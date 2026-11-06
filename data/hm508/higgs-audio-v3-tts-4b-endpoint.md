@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hm508/higgs-audio-v3-tts-4b-endpoint` es un port de `bosonai/higgs-audio-v3-tts-4b` que permite cargar el modelo de texto a voz (TTS) de Boson AI directamente con la librería `transformers` de HuggingFace, sin necesidad de usar SGLang. Los pesos son el checkpoint original, sin modificaciones; solo se añade una pareja de ficheros `modeling_*.py` y `configuration_*.py` junto con un `auto_map` para habilitar `trust_remote_code`.
+El modelo `hm508/higgs-audio-v3-tts-4b-endpoint` es un port de `bosonai/higgs-audio-v3-tts-4b` que permite cargar el modelo de texto a voz (TTS) de Boson AI directamente con la librería `transformers` de Hugging Face, sin necesidad de usar SGLang. Los pesos son el checkpoint original, sin modificaciones; solo se añade una pareja de ficheros `modeling_*.py` y `configuration_*.py` junto con un `auto_map` para habilitar `trust_remote_code`.
 
 El modelo combina un backbone estándar Qwen3-4B con un head de audio multi-codebook fusionado. Está diseñado para generar voz natural a 24 kHz y soporta clonación de voz zero-shot a partir de un clip de referencia. La arquitectura utiliza un patrón de delay en 8 codebooks con un vocabulario de 1026 tokens, incluyendo tokens especiales de inicio y fin. El tamaño del repositorio es de 9,3 GB y el total de parámetros es de 4.654.850.537. La longitud de contexto no se especifica en la información disponible.
 
@@ -33,7 +33,7 @@ No se proporcionan datos sobre el conjunto de datos de entrenamiento, el número
 - Clonación de voz zero-shot: permite generar voz con las características de un clip de audio de referencia, sin necesidad de entrenamiento adicional.
 - Soporte de transcripción opcional para el clip de referencia, lo que puede mejorar la precisión de la clonación.
 - Parámetros de muestreo configurables (`temperature`, `top_p`) para controlar la variabilidad de la generación.
-- Integración con la librería `transformers` mediante `trust_remote_code`, lo que facilita su uso en pipelines estándar de HuggingFace.
+- Integración con la librería `transformers` mediante `trust_remote_code`, lo que facilita su uso en pipelines estándar de Hugging Face.
 - El modelo está diseñado para el idioma inglés, según la información disponible.
 
 ## Casos de uso
@@ -74,6 +74,6 @@ No disponible. El modelo es un port del checkpoint original `bosonai/higgs-audio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hm508/higgs-audio-v3-tts-4b-endpoint
+- Modelo en Hugging Face: https://huggingface.co/hm508/higgs-audio-v3-tts-4b-endpoint
 - Modelo base original: https://huggingface.co/bosonai/higgs-audio-v3-tts-4b
 - Repositorio de Boson AI: https://github.com/boson-ai/higgs-audio

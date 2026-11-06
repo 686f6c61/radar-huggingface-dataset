@@ -69,7 +69,7 @@ No disponible. No se han encontrado modelos comparables específicamente orienta
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Cloth-splatters/dexgarmentlab-folding-lifting-dynamics-gps)
-- [Dataset asociado en HuggingFace](https://huggingface.co/datasets/Cloth-splatters/dexgarmentlab-folding-lifting-meshes)
+- [Modelo en Hugging Face](https://huggingface.co/Cloth-splatters/dexgarmentlab-folding-lifting-dynamics-gps)
+- [Dataset asociado en Hugging Face](https://huggingface.co/datasets/Cloth-splatters/dexgarmentlab-folding-lifting-meshes)
 - [Paper de DexGarmentLab (arXiv)](https://arxiv.org/html/2505.11032v3)
 - [Página del proyecto DexGarmentLab](https://wayrise.github.io/DexGarmentLab/)

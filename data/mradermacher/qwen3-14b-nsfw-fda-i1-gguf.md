@@ -51,7 +51,7 @@ No se dispone de información sobre modelos comparables. Existen otros repositor
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/mradermacher/Qwen3-14B-NSFW-FDA-i1-GGUF)
+- [Repositorio Hugging Face](https://huggingface.co/mradermacher/Qwen3-14B-NSFW-FDA-i1-GGUF)
 - [Modelo original referenciado](https://huggingface.co/ForSureTesterSim/Qwen3-14B-NSFW-FDA)
 - [Repositorio similar: Qwen3-14B-Uncensored-GGUF](https://huggingface.co/mradermacher/Qwen3-14B-Uncensored-GGUF)
 - [Repositorio similar: raw-uncensored-qwen3-14b-heretic-recovered-GGUF](https://huggingface.co/mradermacher/raw-uncensored-qwen3-14b-heretic-recovered-GGUF)

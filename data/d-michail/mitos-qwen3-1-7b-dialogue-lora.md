@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento en el benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mitos-Qwen3-1.7B-Dialogue-LoRA (este modelo) | ~1,7 B + adaptador LoRA (0,2 GB) | 4.096 tokens en entrenamiento (nativo del base no especificado) | Recall 0,484 y F1 0,471 en RAG por campos | CC BY-SA 4.0 (adaptadores) | HuggingFace, repositorio de 0,2 GB |
-| Qwen/Qwen3-1.7B (modelo base, sin ajustar) | ~1,7 B | no disponible en la informacion proporcionada | Recall 0,422 y sin ajuste de dominio; F1 no reportado para el base | Apache-2.0 | HuggingFace |
-| d-michail/Mitos-Qwen3-1.7B-Dialogue (adaptador fusionado) | ~1,7 B | 4.096 tokens en entrenamiento (heredado) | No se publican metricas propias; equivale al adaptador raiz | CC BY-SA 4.0 | HuggingFace |
-| Qwen/Qwen3-4B (alternativa mayor de la misma familia) | ~4 B | no indicado en la informacion disponible | No evaluado en este dominio | Apache-2.0 | HuggingFace |
+| Mitos-Qwen3-1.7B-Dialogue-LoRA (este modelo) | ~1,7 B + adaptador LoRA (0,2 GB) | 4.096 tokens en entrenamiento (nativo del base no especificado) | Recall 0,484 y F1 0,471 en RAG por campos | CC BY-SA 4.0 (adaptadores) | Hugging Face, repositorio de 0,2 GB |
+| Qwen/Qwen3-1.7B (modelo base, sin ajustar) | ~1,7 B | no disponible en la informacion proporcionada | Recall 0,422 y sin ajuste de dominio; F1 no reportado para el base | Apache-2.0 | Hugging Face |
+| d-michail/Mitos-Qwen3-1.7B-Dialogue (adaptador fusionado) | ~1,7 B | 4.096 tokens en entrenamiento (heredado) | No se publican metricas propias; equivale al adaptador raiz | CC BY-SA 4.0 | Hugging Face |
+| Qwen/Qwen3-4B (alternativa mayor de la misma familia) | ~4 B | no indicado en la informacion disponible | No evaluado en este dominio | Apache-2.0 | Hugging Face |
 
 No se dispone de comparaciones con otros modelos ajustados para administración pública griega (por ejemplo, alternativas de la familia Meltemi o ajustes similares) en la información proporcionada, ni de resultados de este modelo frente a ellos.
 

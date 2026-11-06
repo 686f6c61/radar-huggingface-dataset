@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`raoaadhya/tmp-multitask` es un repositorio experimental publicado en HuggingFace por el usuario raoaadhya que contiene una implementacion propia de una arquitectura tipo **Albef** (Align Before Fuse) orientada a tareas multitarea en escala **nano**. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con rendimiento de referencia. El repo ocupa 0.0 GB y el recuento real de parametros del fichero safetensors es de 33.088, un orden de magnitud propio de una maqueta de arquitectura, no de un modelo utilizable en produccion.
+`raoaadhya/tmp-multitask` es un repositorio experimental publicado en Hugging Face por el usuario raoaadhya que contiene una implementacion propia de una arquitectura tipo **Albef** (Align Before Fuse) orientada a tareas multitarea en escala **nano**. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (*smoke tests*) y que no se presenta como un checkpoint con rendimiento de referencia. El repo ocupa 0.0 GB y el recuento real de parametros del fichero safetensors es de 33.088, un orden de magnitud propio de una maqueta de arquitectura, no de un modelo utilizable en produccion.
 
 El problema que resuelve es de tipo ingenieril y de investigacion: servir de base reproducible para inspeccionar cambios de arquitectura (atencion dilatada, fusion tensorial, activacion approx GELU, normalizacion por batchnorm) antes de lanzar un entrenamiento completo. La receta de experimento por defecto usa el optimizador LAMB con un esquema de *constant warmup*, valores que el autor describe como puntos de partida del script y no como evidencia de una ejecucion completada.
 
-Su relevancia es limitada y acotada al ambito de prototipado: no hay pesos entrenados, no hay resultados de benchmarks, no se declaran idiomas soportados y no existe pipeline declarado en HuggingFace. Cualquier uso real exigiria entrenar el modelo desde cero, documentar los resultados por separado y aportar un adaptador explicito, ya que al ser una implementacion personalizada las APIs de carga automatica genericas no funcionan directamente.
+Su relevancia es limitada y acotada al ambito de prototipado: no hay pesos entrenados, no hay resultados de benchmarks, no se declaran idiomas soportados y no existe pipeline declarado en Hugging Face. Cualquier uso real exigiria entrenar el modelo desde cero, documentar los resultados por separado y aportar un adaptador explicito, ya que al ser una implementacion personalizada las APIs de carga automatica genericas no funcionan directamente.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no incluye alternativas comparables 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| raoaadhya/tmp-multitask | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | repositorio HuggingFace, 0 descargas |
+| raoaadhya/tmp-multitask | 33.088 | no disponible | sin benchmarks publicados | BSD-3-Clause | repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye alternativas comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raoaadhya/tmp-multitask
+- Modelo en Hugging Face: https://huggingface.co/raoaadhya/tmp-multitask
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo adicional o demo: no disponibles en la informacion proporcionada
 - Resultados de la busqueda web: no se encontro ningun enlace relevante; los resultados devueltos correspondian a paginas genericas del motor de busqueda (Bing) sin relacion con el modelo

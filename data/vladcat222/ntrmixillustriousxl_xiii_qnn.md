@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ntrMIXIllustriousXL_xiii_QNN es un modelo de generacion de imagenes a partir de texto publicado en HuggingFace por el usuario vladcat222. Se trata de un finetune derivado de misri/ntrMIXIllustriousXL_xiii, un merge de la familia Illustrious XL orientada a ilustracion de estilo anime. El sufijo "_QNN" del nombre sugiere una variante cuantizada del modelo original, aunque la model card no documenta el esquema de cuantizacion empleado ni sus consecuencias sobre la calidad de salida.
+ntrMIXIllustriousXL_xiii_QNN es un modelo de generacion de imagenes a partir de texto publicado en Hugging Face por el usuario vladcat222. Se trata de un finetune derivado de misri/ntrMIXIllustriousXL_xiii, un merge de la familia Illustrious XL orientada a ilustracion de estilo anime. El sufijo "_QNN" del nombre sugiere una variante cuantizada del modelo original, aunque la model card no documenta el esquema de cuantizacion empleado ni sus consecuencias sobre la calidad de salida.
 
 El repositorio ocupa 3,7 GB, un tamano notablemente inferior al de un checkpoint SDXL completo en fp16 (en torno a 6,9 GB), lo que es coherente con un peso almacenado en precision reducida. El modelo esta etiquetado con el pipeline text-to-image y declara como base_model a misri/ntrMIXIllustriousXL_xiii, con lo que hereda la arquitectura y el espacio latente de dicha familia.
 
@@ -65,9 +65,9 @@ No existen valores de FID, CLIP score, evaluaciones esteticas ni comparativas au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ntrMIXIllustriousXL_xiii_QNN (este modelo) | no disponible | no aplica | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| misri/ntrMIXIllustriousXL_xiii (modelo base declarado) | no disponible | no aplica | no disponible en esta informacion | no disponible | HuggingFace |
-| Otros modelos de la familia Illustrious XL (SDXL-based) | no disponibles en esta informacion | no aplica | no disponibles en esta informacion | variable segun checkpoint | HuggingFace |
+| ntrMIXIllustriousXL_xiii_QNN (este modelo) | no disponible | no aplica | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| misri/ntrMIXIllustriousXL_xiii (modelo base declarado) | no disponible | no aplica | no disponible en esta informacion | no disponible | Hugging Face |
+| Otros modelos de la familia Illustrious XL (SDXL-based) | no disponibles en esta informacion | no aplica | no disponibles en esta informacion | variable segun checkpoint | Hugging Face |
 
 No se dispone de datos de rendimiento de ninguna de las alternativas para establecer una comparacion cuantitativa. La unica diferencia verificable entre este checkpoint y su modelo base es el tamano del repositorio (3,7 GB) y el sufijo de cuantizacion, sin que exista documentacion sobre el impacto en la calidad de generacion.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de ninguna de las alternativas para establ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vladcat222/ntrMIXIllustriousXL_xiii_QNN
+- Modelo en Hugging Face: https://huggingface.co/vladcat222/ntrMIXIllustriousXL_xiii_QNN
 - Modelo base declarado: https://huggingface.co/misri/ntrMIXIllustriousXL_xiii
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio asociado: no disponible

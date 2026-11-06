@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chess-transformer-270m-squares64 es una red neuronal de política y valor para ajedrez de 268,55 millones de parámetros, desarrollada por el usuario avewright y publicada en HuggingFace bajo licencia MIT. No es un modelo de lenguaje: no procesa ni genera texto natural, sino que recibe posiciones de ajedrez y produce una distribución de probabilidad sobre jugadas legales (cabeza de política espacial con vocabulario compacto de 1968 movimientos) junto con una estimación de resultado a tres bandas (victoria, tablas, derrota). Su relevancia es de nicho: se trata de un experimento de escalado en anchura de un modelo predecesor de 99M parámetros del mismo autor, con una arquitectura recurrente con pesos compartidos por "bancos" de capas.
+chess-transformer-270m-squares64 es una red neuronal de política y valor para ajedrez de 268,55 millones de parámetros, desarrollada por el usuario avewright y publicada en Hugging Face bajo licencia MIT. No es un modelo de lenguaje: no procesa ni genera texto natural, sino que recibe posiciones de ajedrez y produce una distribución de probabilidad sobre jugadas legales (cabeza de política espacial con vocabulario compacto de 1968 movimientos) junto con una estimación de resultado a tres bandas (victoria, tablas, derrota). Su relevancia es de nicho: se trata de un experimento de escalado en anchura de un modelo predecesor de 99M parámetros del mismo autor, con una arquitectura recurrente con pesos compartidos por "bancos" de capas.
 
 La innovación arquitectónica principal es que la atención se restringe exclusivamente a las 64 casillas del tablero, en lugar de operar sobre una secuencia de tokens que incluya información de turno, enroque o captura al paso. Esa información de estado se inyecta mediante FiLM (modulación de características) con inicialización a cero sobre el flujo de casillas. El tronco es recurrente: un prefijo de 4 capas, un banco de 7 módulos de capa desenrollados 3 veces (21 pasos) y un sufijo de 4 capas, lo que da una profundidad efectiva de 29 con solo 15 módulos de capa únicos. El ancho es de 1216 dimensiones con 16 cabezas de atención y una dimensión de encoder de 256.
 
@@ -116,7 +116,7 @@ No se dispone de información sobre otros modelos de ajedrez comparables en la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/avewright/chess-transformer-270m-squares64
+- Modelo en Hugging Face: https://huggingface.co/avewright/chess-transformer-270m-squares64
 - Modelo predecesor de 99M: https://huggingface.co/avewright/chess-transformer-100m-squares64
 - Dataset de etiquetas suaves MultiPV de Lichess: https://huggingface.co/datasets/avewright/chess-soft-multipv-lichess
 - Dataset de etiquetas suaves de Syzygy: https://huggingface.co/datasets/avewright/chess-soft-syzygy

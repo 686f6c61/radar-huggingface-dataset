@@ -6,7 +6,7 @@ Qwen3-0.6B-AWQ es una cuantizacion en 4 bits del modelo Qwen3-0.6B de Alibaba Qw
 
 La relevancia de esta publicacion es principalmente operativa: el equipo de vLLM mantiene esta copia como checkpoint de referencia para sus pruebas de integracion continua (CI), lo que garantiza que la cuantizacion AWQ de un modelo Qwen3 pequeno se valida de forma continua contra el motor de inferencia vLLM. No se trata de un modelo nuevo ni de una mejora sobre Qwen3-0.6B, sino de un artefacto de despliegue orientado a pruebas y a inferencia de bajo coste.
 
-La model card es minima y no documenta idiomas, contexto ni resultados de evaluacion. La informacion disponible se limita a los metadatos de HuggingFace y a la configuracion de cuantizacion AWQ (4 bits, version GEMM, zero-point activado, calibracion con wikitext y un dataset de GSM8K derivado de Qwen 32B, 256 ejemplos).
+La model card es minima y no documenta idiomas, contexto ni resultados de evaluacion. La informacion disponible se limita a los metadatos de Hugging Face y a la configuracion de cuantizacion AWQ (4 bits, version GEMM, zero-point activado, calibracion con wikitext y un dataset de GSM8K derivado de Qwen 32B, 256 ejemplos).
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vllm-project/Qwen3-0.6B-AWQ | 596 M | no disponible | AWQ 4 bits | GPL-3.0 | HuggingFace |
-| Qwen/Qwen3-0.6B (base) | 596 M | no disponible | BF16/FP16 | no disponible en la informacion | HuggingFace |
-| Orion-zhen/Qwen3-0.6B-AWQ (original) | 596 M | no disponible | AWQ 4 bits | GPL-3.0 | HuggingFace (cuenta personal) |
+| vllm-project/Qwen3-0.6B-AWQ | 596 M | no disponible | AWQ 4 bits | GPL-3.0 | Hugging Face |
+| Qwen/Qwen3-0.6B (base) | 596 M | no disponible | BF16/FP16 | no disponible en la informacion | Hugging Face |
+| Orion-zhen/Qwen3-0.6B-AWQ (original) | 596 M | no disponible | AWQ 4 bits | GPL-3.0 | Hugging Face (cuenta personal) |
 
 La comparativa se limita al propio modelo base y a la cuantizacion original, ya que la informacion proporcionada no incluye datos de rendimiento ni de contexto que permitan contrastar con otras familias de modelos pequenos.
 
@@ -81,7 +81,7 @@ La comparativa se limita al propio modelo base y a la cuantizacion original, ya 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/Qwen3-0.6B-AWQ
+- Hugging Face: https://huggingface.co/vllm-project/Qwen3-0.6B-AWQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Cuantizacion original: https://huggingface.co/Orion-zhen/Qwen3-0.6B-AWQ
 - Dataset de calibracion: https://huggingface.co/datasets/Orion-zhen/gsm8k-r1-qwen-32b

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `xw17/Qwen2.5-0.5B-Instruct_SFT_lora_lonelinessdep` es un ajuste fino mediante LoRA y aprendizaje supervisado (SFT) sobre el modelo base Qwen2.5-0.5B-Instruct, desarrollado por el usuario xw17 y publicado en HuggingFace. El nombre del repositorio sugiere que el ajuste se ha orientado a un dominio concreto relacionado con la soledad o la dependencia emocional, si bien la model card del autor no documenta ni el dataset, ni el procedimiento, ni los objetivos del entrenamiento. El repositorio figura con 0 descargas, 0 likes y un tamano de 0.0 GB, lo que indica que se trata de una publicacion reciente y practicamente sin validacion por parte de la comunidad.
+El modelo `xw17/Qwen2.5-0.5B-Instruct_SFT_lora_lonelinessdep` es un ajuste fino mediante LoRA y aprendizaje supervisado (SFT) sobre el modelo base Qwen2.5-0.5B-Instruct, desarrollado por el usuario xw17 y publicado en Hugging Face. El nombre del repositorio sugiere que el ajuste se ha orientado a un dominio concreto relacionado con la soledad o la dependencia emocional, si bien la model card del autor no documenta ni el dataset, ni el procedimiento, ni los objetivos del entrenamiento. El repositorio figura con 0 descargas, 0 likes y un tamano de 0.0 GB, lo que indica que se trata de una publicacion reciente y practicamente sin validacion por parte de la comunidad.
 
 El modelo hereda del Qwen2.5-0.5B-Instruct las caracteristicas fundamentales de la familia Qwen2.5: arquitectura transformer decoder-only, aproximadamente 498 millones de parametros, soporte multilingue y una ventana de contexto que la documentacion de Qwen2.5 situa en 32.768 tokens de forma nativa y hasta 128K tokens mediante extension YaRN. La relevancia de este tipo de publicaciones radica en que demuestra el flujo habitual de personalizacion de modelos pequenos mediante LoRA, un patron muy extendido entre desarrolladores que necesitan adaptar un LLM a un dominio acotado con recursos de computo limitados.
 
-No obstante, conviene subrayar que la informacion disponible es minima: la model card es la plantilla automatica de HuggingFace sin rellenar, no se declara licencia, no se especifican idiomas soportados y no hay resultados de evaluacion. Cualquier uso en produccion deberia ir precedido de una validacion propia del comportamiento del modelo y de una verificacion juridica de la licencia aplicable, dado que la licencia del ajuste no esta declarada.
+No obstante, conviene subrayar que la informacion disponible es minima: la model card es la plantilla automatica de Hugging Face sin rellenar, no se declara licencia, no se especifican idiomas soportados y no hay resultados de evaluacion. Cualquier uso en produccion deberia ir precedido de una validacion propia del comportamiento del modelo y de una verificacion juridica de la licencia aplicable, dado que la licencia del ajuste no esta declarada.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ No obstante, conviene subrayar que la informacion disponible es minima: la model
 
 La arquitectura corresponde a la del modelo base Qwen2.5-0.5B-Instruct: un transformer decoder-only con atencion causal, disenado para instrucciones y conversacion, que emplea Grouped Query Attention y normalizacion RMSNorm, e incorpora mecanismos de escalado posicional tipo RoPE. El ajuste publicado se ha realizado mediante LoRA (Low-Rank Adaptation) combinado con SFT (supervised fine-tuning), una tecnica que congela los pesos originales e inserta matrices de bajo rango entrenables, reduciendo drasticamente el coste de entrenamiento y el tamano del checkpoint resultante. El sufijo `lonelinessdep` del identificador apunta a un corpus especializado, presumiblemente relacionado con conversaciones sobre soledad o dependencia emocional, pero el autor no aporta ninguna descripcion del dataset.
 
-Respecto a los datos de entrenamiento, no hay informacion disponible: se desconoce el numero de tokens, la composicion del dataset, si hubo etapas de RLHF o DPO posteriores, y los hiperparametros empleados (rango de LoRA, alpha, learning rate, numero de epocas). Tampoco se documenta el hardware utilizado ni el impacto ambiental, ya que la model card conserva los campos de la plantilla generica. La unica referencia tecnica presente en el repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, un texto citado por defecto en la plantilla de HuggingFace y que no guarda relacion con el entrenamiento del modelo.
+Respecto a los datos de entrenamiento, no hay informacion disponible: se desconoce el numero de tokens, la composicion del dataset, si hubo etapas de RLHF o DPO posteriores, y los hiperparametros empleados (rango de LoRA, alpha, learning rate, numero de epocas). Tampoco se documenta el hardware utilizado ni el impacto ambiental, ya que la model card conserva los campos de la plantilla generica. La unica referencia tecnica presente en el repositorio es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, un texto citado por defecto en la plantilla de Hugging Face y que no guarda relacion con el entrenamiento del modelo.
 
 ## Capacidades
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xw17/Qwen2.5-0.5B-Instruct_SFT_lora_lonelinessdep | ~0,5B | heredado del base (32K nativos, hasta 128K con YaRN) | no disponible | HuggingFace, 0 descargas | Ajuste LoRA de dominio, sin benchmarks ni model card |
-| xw17/Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep | ~1,5B (modelo base) | heredado del base | no disponible | HuggingFace | Variante mayor del mismo autor y mismo dominio aparente |
-| xw17/Qwen2.5-0.5B-Instruct_SFT_lora_universal | ~0,5B | heredado del base | no disponible | HuggingFace | Variante del mismo autor con ajuste de proposito general |
-| Qwen2.5-0.5B-Instruct (modelo base) | ~0,5B | 32.768 tokens nativos, hasta 128K con YaRN | Apache 2.0 (segun la familia Qwen2.5) | HuggingFace y Ollama | Referencia oficial, con benchmarks publicados por Alibaba |
+| xw17/Qwen2.5-0.5B-Instruct_SFT_lora_lonelinessdep | ~0,5B | heredado del base (32K nativos, hasta 128K con YaRN) | no disponible | Hugging Face, 0 descargas | Ajuste LoRA de dominio, sin benchmarks ni model card |
+| xw17/Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep | ~1,5B (modelo base) | heredado del base | no disponible | Hugging Face | Variante mayor del mismo autor y mismo dominio aparente |
+| xw17/Qwen2.5-0.5B-Instruct_SFT_lora_universal | ~0,5B | heredado del base | no disponible | Hugging Face | Variante del mismo autor con ajuste de proposito general |
+| Qwen2.5-0.5B-Instruct (modelo base) | ~0,5B | 32.768 tokens nativos, hasta 128K con YaRN | Apache 2.0 (segun la familia Qwen2.5) | Hugging Face y Ollama | Referencia oficial, con benchmarks publicados por Alibaba |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_lonelinessdep
+- Modelo en Hugging Face: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_lonelinessdep
 - Variante de 1,5B del mismo autor: https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep
 - Variante "universal" del mismo autor: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_universal
 - Modelo base Qwen2.5 en Ollama (0.5B Instruct): https://ollama.com/library/qwen2.5:0.5b-instruct/blobs/66b9ea09bd5b

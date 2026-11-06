@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SuperVoice-Mobile-Actions es un modelo publicado en HuggingFace por el usuario paul45 bajo licencia Gemma. La informacion disponible en la model card es practicamente inexistente: unicamente incluye la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni especificaciones tecnicas. El nombre sugiere un posible enfoque hacia acciones moviles o interacciones por voz, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
+SuperVoice-Mobile-Actions es un modelo publicado en Hugging Face por el usuario paul45 bajo licencia Gemma. La informacion disponible en la model card es practicamente inexistente: unicamente incluye la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni especificaciones tecnicas. El nombre sugiere un posible enfoque hacia acciones moviles o interacciones por voz, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
-El repositorio no presenta pipeline declarado, no registra descargas ni likes, y no especifica idiomas soportados. Fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que apunta a una publicacion reciente y sin mantenimiento posterior documentado. La etiqueta `region:us` indica simplemente la region de publicacion en HuggingFace.
+El repositorio no presenta pipeline declarado, no registra descargas ni likes, y no especifica idiomas soportados. Fue creado y actualizado en la misma fecha (3 de noviembre de 2026), lo que apunta a una publicacion reciente y sin mantenimiento posterior documentado. La etiqueta `region:us` indica simplemente la region de publicacion en Hugging Face.
 
 Dado que no se ha publicado informacion tecnica verificable, esta ficha se limita a reflejar los datos disponibles y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria acceso al repositorio y a los pesos del modelo, que no se detallan en la informacion proporcionada.
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens utilizados, l
 
 ## Casos de uso
 
-No es posible enumerar casos de uso concretos y realistas sin informacion sobre las capacidades, el tamano y el dominio de entrenamiento del modelo. La model card no proporciona ninguna indicacion al respecto. Cualquier propuesta de aplicacion seria especulativa y no estaria respaldada por datos verificables del repositorio. Se recomienda consultar el repositorio de HuggingFace para obtener informacion actualizada antes de plantear cualquier escenario de uso.
+No es posible enumerar casos de uso concretos y realistas sin informacion sobre las capacidades, el tamano y el dominio de entrenamiento del modelo. La model card no proporciona ninguna indicacion al respecto. Cualquier propuesta de aplicacion seria especulativa y no estaria respaldada por datos verificables del repositorio. Se recomienda consultar el repositorio de Hugging Face para obtener informacion actualizada antes de plantear cualquier escenario de uso.
 
 ## Benchmarks y rendimiento
 
@@ -67,4 +67,4 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paul45/SuperVoice-Mobile-Actions
+- Hugging Face: https://huggingface.co/paul45/SuperVoice-Mobile-Actions

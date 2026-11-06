@@ -76,10 +76,10 @@ La tasa de falsos positivos sobre habla árabe reservada (Common Voice) con los 
 
 | Modelo | Tipo | Frases / idioma | Contexto o ventana | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mZahran001/tasbeeh-kws | Cabezas ONNX sobre features de openWakeWord | 5 frases de dhikr en árabe | Ventana de 2 s, puntuación cada 80 ms | Recall 0,86-0,93 en hold-out sintético; 0,00 FP/h en Common Voice | Apache 2.0 | HuggingFace, 0 descargas |
+| mZahran001/tasbeeh-kws | Cabezas ONNX sobre features de openWakeWord | 5 frases de dhikr en árabe | Ventana de 2 s, puntuación cada 80 ms | Recall 0,86-0,93 en hold-out sintético; 0,00 FP/h en Common Voice | Apache 2.0 | Hugging Face, 0 descargas |
 | Modelos preentrenados de openWakeWord | Misma arquitectura, cabezas DNN | Wake words en inglés | Misma ventana de 2 s | no disponible en la información proporcionada | Apache 2.0 (proyecto base) | GitHub y repositorios del proyecto |
 | Kits comerciales de keyword spotting (por ejemplo, Picovoice Porcupine o alternativas propietarias) | Detección de wake word empaquetada | Configurable por el desarrollador | no disponible | no disponible | Propietaria | SDK comercial |
-| Modelos ASR completos para árabe | Reconocimiento de voz general | Árabe | Ventanas de audio más largas | no disponible | Variable | HuggingFace y otros repositorios |
+| Modelos ASR completos para árabe | Reconocimiento de voz general | Árabe | Ventanas de audio más largas | no disponible | Variable | Hugging Face y otros repositorios |
 
 No se dispone de datos comparativos numéricos en la información proporcionada para establecer una comparación cuantitativa con alternativas. La comparación cualitativa relevante es que este modelo es específico de dominio y de tamaño mínimo, mientras que un ASR completo resolvería la tarea con mayor coste de cómputo y también con mayor latencia.
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos numéricos en la información proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mZahran001/tasbeeh-kws
+- Modelo en Hugging Face: https://huggingface.co/mZahran001/tasbeeh-kws
 - Dataset de entrenamiento: https://huggingface.co/datasets/mZahran001/tasbeeh-kws-data
 - Modelo TTS utilizado para generar los positivos (SWivid/Habibi-TTS): https://huggingface.co/SWivid/Habibi-TTS
 - Repositorio base de la arquitectura (openWakeWord): https://github.com/dscripka/openWakeWord

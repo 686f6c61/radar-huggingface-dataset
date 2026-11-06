@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mohaamedda/mohamedhussien` es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario `mohaamedda`. No se trata de un modelo fundacional, sino de un ajuste ligero (Low-Rank Adaptation) que se monta sobre el modelo base `krea/Krea-2-Turbo` para especializarlo en un concepto concreto: la palabra de activacion `mohamedhussien`. El pipeline declarado es `text-to-image` y la libreria de referencia es `diffusers`.
+`mohaamedda/mohamedhussien` es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario `mohaamedda`. No se trata de un modelo fundacional, sino de un ajuste ligero (Low-Rank Adaptation) que se monta sobre el modelo base `krea/Krea-2-Turbo` para especializarlo en un concepto concreto: la palabra de activacion `mohamedhussien`. El pipeline declarado es `text-to-image` y la libreria de referencia es `diffusers`.
 
 El repositorio no incluye documentacion tecnica sustancial. La model card se limita a indicar la etiqueta de activacion, un ejemplo de widget con `instance_prompt: mohamedhussien` y un `negative_prompt` con el mismo valor, ademas de un enlace externo sin contexto (`mohamed.com`). No se declaran licencia, idiomas soportados, composicion del dataset de entrenamiento, numero de pasos ni hiperparametros del LoRA.
 
@@ -79,7 +79,7 @@ No disponible. No se han encontrado en la informacion proporcionada adaptadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohaamedda/mohamedhussien
+- Modelo en Hugging Face: https://huggingface.co/mohaamedda/mohamedhussien
 - Pestana de archivos y versiones: https://huggingface.co/mohaamedda/mohamedhussien/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Enlace incluido en la model card: https://mohamed.com (sin contexto adicional; puede no estar operativo)

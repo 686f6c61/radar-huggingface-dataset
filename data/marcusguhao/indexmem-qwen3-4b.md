@@ -90,7 +90,7 @@ No se dispone de resultados comparativos de H2O o SnapKV sobre Qwen3-4B en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/marcusguhao/IndexMem-Qwen3-4B
+- Hugging Face: https://huggingface.co/marcusguhao/IndexMem-Qwen3-4B
 - Código de inferencia (`kvpress`, rama `main`): https://github.com/Chooovy/kvpress
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paper de referencia citado en la model card: *The Gating Mechanism of KV Cache Eviction* (no se proporciona URL en la información disponible)

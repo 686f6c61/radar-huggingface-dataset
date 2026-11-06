@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Snapkitty/foundry-j es un artefacto publicado en HuggingFace por la organizacion Snapkitty, cuya model card se limita a indicar que es un espejo del repositorio de GitHub SNAPKITTYWEST/foundry-j (commit `cee36b3`) y que forma parte del denominado "SnapKitty October 2026 main drop". No se proporciona ninguna descripcion funcional del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento.
+Snapkitty/foundry-j es un artefacto publicado en Hugging Face por la organizacion Snapkitty, cuya model card se limita a indicar que es un espejo del repositorio de GitHub SNAPKITTYWEST/foundry-j (commit `cee36b3`) y que forma parte del denominado "SnapKitty October 2026 main drop". No se proporciona ninguna descripcion funcional del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento.
 
-El repositorio de HuggingFace tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no declara pipeline de inferencia. Los unicos indicios sobre su naturaleza son las etiquetas asociadas: `spectral`, `contraction`, `banach`, `goldilocks-field` y `research`, que apuntan a un posible artefacto de investigacion relacionado con teoria de operadores o analisis funcional, aunque no existe documentacion que lo confirme.
+El repositorio de Hugging Face tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no declara pipeline de inferencia. Los unicos indicios sobre su naturaleza son las etiquetas asociadas: `spectral`, `contraction`, `banach`, `goldilocks-field` y `research`, que apuntan a un posible artefacto de investigacion relacionado con teoria de operadores o analisis funcional, aunque no existe documentacion que lo confirme.
 
 Por tanto, esta ficha no puede certificar ninguna capacidad tecnica del modelo. La informacion disponible es insuficiente para evaluar parametros, contexto, idiomas o rendimiento, y se recomienda tratar el repositorio como no apto para uso en produccion hasta que el autor publique pesos y documentacion verificables.
 
@@ -32,7 +32,7 @@ Tampoco existen datos sobre el corpus de entrenamiento, el numero de tokens proc
 - No se ha publicado ninguna capacidad funcional verificable: generacion de texto, razonamiento, codigo, matematicas o vision figuran como no disponibles.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas de HuggingFace no esta informado.
+- Capacidades multilingues: no disponible; el campo de idiomas de Hugging Face no esta informado.
 - Modos especiales (thinking mode, vision, audio): no disponibles.
 - La model card unicamente declara el origen del espejo y su pertenencia al "October 2026 main drop", sin describir comportamiento alguno.
 
@@ -70,13 +70,13 @@ No disponible. No hay informacion tecnica suficiente (parametros, contexto, lice
 - Idiomas no declarados: no se puede garantizar soporte para castellano ni para ninguna otra lengua.
 - Riesgo de alucinacion y sesgos: no evaluable al no existir pesos ni evaluaciones publicadas.
 - Fecha de creacion y de actualizacion identicas (2026-10-10) y diferencia de un segundo entre ambas: no hay historial de versiones que permita evaluar mantenimiento.
-- Se desconocen los terminos adicionales que el autor pueda imponer en el repositorio de GitHub de origen, mas alla de la licencia declarada en HuggingFace.
+- Se desconocen los terminos adicionales que el autor pueda imponer en el repositorio de GitHub de origen, mas alla de la licencia declarada en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Snapkitty/foundry-j
+- Modelo en Hugging Face: https://huggingface.co/Snapkitty/foundry-j
 - Repositorio de origen en GitHub: https://github.com/SNAPKITTYWEST/foundry-j (commit `cee36b3`)
-- Perfil del autor en HuggingFace: https://huggingface.co/Snapkitty
+- Perfil del autor en Hugging Face: https://huggingface.co/Snapkitty
 - Organizacion en GitHub: https://github.com/SNAPKITTYWEST/SNAPKITTYWEST
 - Repositorio snapkitty-collective en GitHub: https://github.com/SNAPKITTYAGENT9NOVA/snapkitty-collective
 - Otro modelo de la misma organizacion: https://huggingface.co/Snapkitty/snapkitty-merged

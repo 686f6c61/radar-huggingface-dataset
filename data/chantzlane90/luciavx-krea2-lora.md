@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luciavx Krea 2 LoRA es un adaptador de bajo rango (LoRA) publicado por el usuario chantzlane90 en HuggingFace, pensado para inyectar un personaje ficticio concreto (Lucia Vargas, descrito en la model card como personaje adulto generado por IA, 21+, no una persona real) en un modelo base de generacion de imagenes identificado como Krea 2. El repositorio contiene unicamente el adaptador, no el modelo base: su peso es de 0,2 GB y esta etiquetado con los tags `lora`, `krea-2` y `fictional-character`.
+Luciavx Krea 2 LoRA es un adaptador de bajo rango (LoRA) publicado por el usuario chantzlane90 en Hugging Face, pensado para inyectar un personaje ficticio concreto (Lucia Vargas, descrito en la model card como personaje adulto generado por IA, 21+, no una persona real) en un modelo base de generacion de imagenes identificado como Krea 2. El repositorio contiene unicamente el adaptador, no el modelo base: su peso es de 0,2 GB y esta etiquetado con los tags `lora`, `krea-2` y `fictional-character`.
 
 La relevancia de esta publicacion es limitada y muy especifica: se trata de un ajuste fino de personaje, no de un modelo fundacional. Segun la model card, se entreno con `fal-ai/krea-2-trainer` durante 1000 pasos con rango 32, y las claves del state dict se remapearon al esquema `diffusion_model.*` de ComfyUI para poder usarse en Sogni. Se activa mediante la palabra clave `luciavx`.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| luciavx-krea2-lora | LoRA de personaje sobre Krea 2 | no disponible (rango 32, repo de 0,2 GB) | no aplica | other | HuggingFace, 0 descargas |
+| luciavx-krea2-lora | LoRA de personaje sobre Krea 2 | no disponible (rango 32, repo de 0,2 GB) | no aplica | other | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros adaptadores LoRA de personaje para Krea 2 en el material proporcionado, por lo que no se puede establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -86,6 +86,6 @@ No se dispone de informacion sobre otros adaptadores LoRA de personaje para Krea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/luciavx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/luciavx-krea2-lora
 - Herramienta de entrenamiento citada: fal-ai/krea-2-trainer (no se proporciona URL en la informacion disponible)
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

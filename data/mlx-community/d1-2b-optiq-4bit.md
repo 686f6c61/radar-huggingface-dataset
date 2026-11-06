@@ -18,7 +18,7 @@ Su relevancia actual está en el nicho de los "system-one" o decisiones de siste
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4 bits mixta (mixed-precision OptiQ); la torre de visión se incluye en bf16 en `optiq_vision.safetensors` |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (licencia "other" en HuggingFace) |
+| Licencia | lfm1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | safetensors (MLX); requiere mlx-optiq 0.7.9 o superior |
 
 ## Arquitectura y entrenamiento
@@ -101,7 +101,7 @@ No se dispone de comparación con modelos de clasificación de propósito genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/d1-2B-OptiQ-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/d1-2B-OptiQ-4bit
 - Modelo base: https://huggingface.co/LiquidAI/d1-2B
 - Cuantización uniforme de Liquid: https://huggingface.co/LiquidAI/d1-2B-MLX-4bit
 - Dataset de evaluación: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
@@ -109,4 +109,4 @@ No se dispone de comparación con modelos de clasificación de propósito genera
 - Catálogo de cuantizaciones OptiQ: https://mlx-optiq.com/models
 - Documentación: https://mlx-optiq.com/docs/
 - PyPI: https://pypi.org/project/mlx-optiq/
-- Licencia: LICENSE (en el repositorio de HuggingFace)
+- Licencia: LICENSE (en el repositorio de Hugging Face)

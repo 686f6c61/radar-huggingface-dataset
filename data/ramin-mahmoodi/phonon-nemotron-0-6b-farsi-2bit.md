@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phonon 2.5 Nemotron FastConformer 0.6B Farsi 2-bit es un contenedor de reconocimiento automatico del habla (ASR) para persa (farsi) en streaming, publicado por el usuario ramin-mahmoodi en HuggingFace. Se trata de una cuantizacion extrema a 2 bits de un modelo Nemotron FastConformer de 0,6 mil millones de parametros, que reduce el peso del repositorio a 198,96 MB desde los aproximadamente 2.400 MB del modelo original, es decir, una reduccion superior a 12 veces. El modelo esta pensado para inferencia en tiempo real con latencia inferior a 30 ms y un factor de tiempo real superior a 15x.
+Phonon 2.5 Nemotron FastConformer 0.6B Farsi 2-bit es un contenedor de reconocimiento automatico del habla (ASR) para persa (farsi) en streaming, publicado por el usuario ramin-mahmoodi en Hugging Face. Se trata de una cuantizacion extrema a 2 bits de un modelo Nemotron FastConformer de 0,6 mil millones de parametros, que reduce el peso del repositorio a 198,96 MB desde los aproximadamente 2.400 MB del modelo original, es decir, una reduccion superior a 12 veces. El modelo esta pensado para inferencia en tiempo real con latencia inferior a 30 ms y un factor de tiempo real superior a 15x.
 
 La relevancia de esta ficha radica en que combina una arquitectura Conformer orientada a streaming con una tecnica de cuantizacion agresiva (modulos Conformer a 2 bits con Five-Value STE, convoluciones cuantizadas por filas a INT6 y una "Golden Shield" en FP16), lo que permite desplegar ASR persa en entornos con recursos muy limitados. La licencia Apache-2.0 facilita su uso comercial, aunque la informacion publica disponible es escasa y no incluye detalles sobre el dataset de entrenamiento ni resultados de benchmarks estandar.
 
@@ -74,5 +74,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de AS
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ramin-mahmoodi/phonon-nemotron-0.6b-farsi-2bit
+- Hugging Face: https://huggingface.co/ramin-mahmoodi/phonon-nemotron-0.6b-farsi-2bit
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

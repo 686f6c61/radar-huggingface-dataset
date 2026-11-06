@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407`, desarrollado por el usuario de HuggingFace francesca9805. Por la nomenclatura y la traza de Weights & Biases asociada a la University of Groningen, parece tratarse de un experimento academico de investigacion centrado en tokenizacion y entrenamiento estructurado, mas que de un modelo orientado a produccion.
+El modelo `francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el modelo base `francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407`, desarrollado por el usuario de Hugging Face francesca9805. Por la nomenclatura y la traza de Weights & Biases asociada a la University of Groningen, parece tratarse de un experimento academico de investigacion centrado en tokenizacion y entrenamiento estructurado, mas que de un modelo orientado a produccion.
 
 Se trata de un modelo de generacion de texto con 124.770.816 parametros (dato real extraido de los pesos safetensors), lo que lo situa en el rango de GPT-2 small. La etiqueta `gpt2` del repositorio apunta a una arquitectura transformer decoder-only de tipo GPT-2, si bien no se detalla en la model card la longitud de contexto ni la composicion exacta del dataset.
 
@@ -33,7 +33,7 @@ El entrenamiento se realizo mediante SFT con la libreria TRL (version 0.23.0), s
 
 - Generacion de texto autoregresiva basica, segun la pipeline declarada `text-generation`.
 - Formato de prompt conversacional: el ejemplo de la model card usa una lista de mensajes con el rol `user`, lo que indica que el ajuste SFT se realizo sobre datos con plantilla de chat.
-- Soporte de `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo en infraestructura de HuggingFace.
+- Soporte de `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo en infraestructura de Hugging Face.
 - Compatibilidad con la API `pipeline` de Transformers, incluyendo ejecucion en GPU (`device="cuda"`).
 - No se documentan capacidades de tool calling, function calling, uso de agentes, razonamiento multi-paso, vision, audio ni modo de pensamiento explicito.
 - Capacidades multilingues: no disponibles.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,77M | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407 | 124,77M | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small | 124M | 1024 tokens | Referencia historica ampliamente evaluada | MIT | Ampliamente disponible |
 | Pythia-160M | 160M | 2048 tokens | Evaluado en la suite de EleutherAI | Apache 2.0 | Ampliamente disponible |
 | DistilGPT2 | 82M | 1024 tokens | Destilado de GPT-2, evaluado en benchmarks publicos | MIT | Ampliamente disponible |
@@ -83,7 +83,7 @@ Nota: la comparativa de licencia, contexto y rendimiento se apoya en informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-core-100mb_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/hpay1cyx
 - Repositorio de TRL: https://github.com/huggingface/trl

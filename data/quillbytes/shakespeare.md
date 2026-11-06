@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QuillBytes/shakespeare | 4B (base Qwen3-4B); metadata safetensors declara 0,33B | No disponible | Ajuste estilistico LoRA | Apache 2.0 | HuggingFace, safetensors + GGUF |
-| Qwen/Qwen3-4B (base) | 4B | 32.768 tokens nativos (dato del modelo base) | Transformer decoder-only | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | 32.768 tokens nativos (dato del modelo base) | Transformer decoder-only con ajuste por instrucciones | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| QuillBytes/shakespeare | 4B (base Qwen3-4B); metadata safetensors declara 0,33B | No disponible | Ajuste estilistico LoRA | Apache 2.0 | Hugging Face, safetensors + GGUF |
+| Qwen/Qwen3-4B (base) | 4B | 32.768 tokens nativos (dato del modelo base) | Transformer decoder-only | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | 32.768 tokens nativos (dato del modelo base) | Transformer decoder-only con ajuste por instrucciones | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos dentro de la informacion proporcionada. La diferencia funcional principal es que QuillBytes/shakespeare esta restringido a un unico registro estilistico, mientras que las variantes oficiales de Qwen3-4B estan pensadas para uso general. No se han identificado en la busqueda otros ajustes shakesperianos comparables.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos dentro de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuillBytes/shakespeare
+- Modelo en Hugging Face: https://huggingface.co/QuillBytes/shakespeare
 - Perfil del autor: https://huggingface.co/QuillBytes
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Unsloth (mencionado en las etiquetas, sin enlace en la model card): https://github.com/unslothai/unsloth

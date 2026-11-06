@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Novi-Nano-Base es un modelo de lenguaje causal entrenado desde cero por Novi-AI (publicado en el repositorio de HuggingFace bajo la organizacion SLM-Archive) con apenas 1.258.560 parametros. Se trata de un transformer decoder-only de estilo GPT-2, con una ventana de contexto de solo 256 tokens, un vocabulario de 8.192 entradas y un tamano de embedding de 96 dimensiones repartido en 4 capas y 4 cabezas de atencion. Su interes no es competir con modelos de miles de millones de parametros, sino servir como banco de pruebas reproducible para estudiar el comportamiento de un modelo de lenguaje a escala extrema.
+Novi-Nano-Base es un modelo de lenguaje causal entrenado desde cero por Novi-AI (publicado en el repositorio de Hugging Face bajo la organizacion SLM-Archive) con apenas 1.258.560 parametros. Se trata de un transformer decoder-only de estilo GPT-2, con una ventana de contexto de solo 256 tokens, un vocabulario de 8.192 entradas y un tamano de embedding de 96 dimensiones repartido en 4 capas y 4 cabezas de atencion. Su interes no es competir con modelos de miles de millones de parametros, sino servir como banco de pruebas reproducible para estudiar el comportamiento de un modelo de lenguaje a escala extrema.
 
 El modelo fue entrenado sobre aproximadamente 300 millones de tokens (300.023.808 exactamente, segun la model card) y alcanza una perdida de validacion de 5,418699, lo que equivale a una perplejidad de 225,5853. Estos valores son coherentes con un modelo minusculo: la generacion resultante es previsiblemente poco coherente y con conocimiento del mundo muy limitado. Es un modelo base, sin ajuste por instrucciones (instruction tuning), por lo que no funciona como asistente conversacional.
 
@@ -108,7 +108,7 @@ Diferencias clave: Novi-Nano-Base es aproximadamente dos ordenes de magnitud mas
 - Limitacion idiomatica: solo ingles. No hay datos de rendimiento en castellano ni en otros idiomas, y su vocabulario de 8.192 entradas penalizara fuertemente el texto no ingles.
 - No es un modelo de instrucciones: al ser un modelo base, no responde a comandos ni mantiene un rol de asistente; no debe desplegarse en interfaces conversacionales sin un ajuste previo.
 - Ausencia de alineacion: no ha pasado por RLHF ni DPO, por lo que no incorpora filtros de seguridad y puede reproducir contenido problematico presente en los corpus de entrenamiento (FineWeb-Edu, FineWeb-HQ, SmolLM-Cosmopedia).
-- Ambiguedad de licencia: la model card declara Apache 2.0, pero el campo de licencia del repositorio de HuggingFace figura como no disponible. Antes de un uso comercial conviene confirmarlo con el autor, ya que la discrepancia puede generar incertidumbre juridica.
+- Ambiguedad de licencia: la model card declara Apache 2.0, pero el campo de licencia del repositorio de Hugging Face figura como no disponible. Antes de un uso comercial conviene confirmarlo con el autor, ya que la discrepancia puede generar incertidumbre juridica.
 - Discrepancia de identificadores: el repositorio consultado es `SLM-Archive/Novi-Nano-Base`, mientras que los ejemplos de la model card referencian `Novi-AI/Novi-Nano-Base`. Conviene verificar cual es el espacio canonico antes de fijar una dependencia.
 - Metadatos de fecha anomalos: la fecha de creacion y actualizacion del repositorio figura como 2026-10-01, posterior a la fecha habitual de publicacion de modelos comparables; conviene tratarla con cautela.
 - Sesgos: no se ha publicado ninguna evaluacion de sesgos, toxicidad o representacion demografica para este modelo.
@@ -116,7 +116,7 @@ Diferencias clave: Novi-Nano-Base es aproximadamente dos ordenes de magnitud mas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SLM-Archive/Novi-Nano-Base
+- Modelo en Hugging Face: https://huggingface.co/SLM-Archive/Novi-Nano-Base
 - Referencia de identificador alternativo citada en la model card: Novi-AI/Novi-Nano-Base (no verificado)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados obtenidos corresponden a contenidos no relacionados (una marca de perfumes con el dominio slm.paris, una mutua sanitaria francesa y un articulo divulgativo de IBM sobre modelos de lenguaje pequenos). Como contexto generico sobre modelos de lenguaje pequenos puede consultarse https://www.ibm.com/fr-fr/think/topics/small-language-models, aunque no guarda relacion con Novi-Nano-Base.
 - No se dispone de paper, repositorio de codigo, demo, blog tecnico ni dataset publicado asociados a este modelo en la informacion proporcionada.

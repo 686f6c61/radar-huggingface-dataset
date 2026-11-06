@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imnehasharma/dino-classification81` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta de una arquitectura Dino orientada a tareas de clasificación, escrita en PyTorch. El autor es el usuario `imnehasharma` y el modelo se publicó en noviembre de 2026. Según la propia model card, el objetivo del repositorio es servir como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+`imnehasharma/dino-classification81` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta de una arquitectura Dino orientada a tareas de clasificación, escrita en PyTorch. El autor es el usuario `imnehasharma` y el modelo se publicó en noviembre de 2026. Según la propia model card, el objetivo del repositorio es servir como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, pero no ha sido entrenado ni auditado. El recuento de parámetros reportado en safetensors es de 33.088, un tamaño extremadamente reducido que confirma que se trata de un esqueleto arquitectónico más que de un modelo funcional. La model card no declara ningún resultado de benchmark ni una receta de entrenamiento completada.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `imnehasharma/dino-classification81` | 33.088 | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace |
-| DINOv2 (Meta) | 21M–1.1B (según variante) | no aplica (visión) | benchmarks públicos en tareas de visión | Apache 2.0 / licencia propia | HuggingFace, GitHub |
+| `imnehasharma/dino-classification81` | 33.088 | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face |
+| DINOv2 (Meta) | 21M–1.1B (según variante) | no aplica (visión) | benchmarks públicos en tareas de visión | Apache 2.0 / licencia propia | Hugging Face, GitHub |
 | DINO (original, Meta) | 21M–86M (ViT-S/B) | no aplica (visión) | benchmarks públicos en clasificación y segmentación | Apache 2.0 | GitHub, pesos públicos |
 
 La comparación con DINOv2 y DINO originales es solo nominal: comparten el nombre de arquitectura, pero el repositorio analizado es una implementación personalizada sin entrenamiento ni evaluación, por lo que no es directamente comparable en rendimiento ni en madurez.
@@ -73,7 +73,7 @@ La comparación con DINOv2 y DINO originales es solo nominal: comparten el nombr
 - El checkpoint `model.safetensors` no ha sido entrenado; produce salidas sin significado semántico.
 - No se ha auditado robustez, equidad ni transferencia de dominio, según la propia model card.
 - No hay resultados de benchmark ni métricas de evaluación publicadas.
-- Las APIs genéricas de carga automática (por ejemplo, `AutoModel.from_pretrained`) requieren un adaptador explícito; no funciona como un modelo estándar de HuggingFace Transformers.
+- Las APIs genéricas de carga automática (por ejemplo, `AutoModel.from_pretrained`) requieren un adaptador explícito; no funciona como un modelo estándar de Hugging Face Transformers.
 - La licencia BSD-3-Clause permite uso comercial del código, pero la model card advierte de que deben revisarse por separado los términos de los datos de origen si se usa con datasets externos.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica ausencia de validación por parte de la comunidad.
 - No se documentan sesgos conocidos, pero al no haber entrenamiento, cualquier sesgo dependerá del dataset que se use en un futuro entrenamiento.
@@ -81,5 +81,5 @@ La comparación con DINOv2 y DINO originales es solo nominal: comparten el nombr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/imnehasharma/dino-classification81
+- Hugging Face: https://huggingface.co/imnehasharma/dino-classification81
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.
